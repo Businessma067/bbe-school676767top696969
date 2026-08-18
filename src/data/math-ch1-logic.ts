@@ -30,2907 +30,5361 @@ export const MATH_CH1_SUBSECTIONS = [
 
 export const MATH_CH1_LOGIC: MathTask[] = [
   {
-    id: "math-1-1",
-    case_id: "MATH 1.01",
-    title: "Basic operations on explicit sets",
-    subsection: "1.1",
-    context:
-      "Let $A = \\{1, 2, 3, 4, 5\\}$, $B = \\{3, 4, 5, 6, 7\\}$, and $C = \\{5, 6, 7, 8, 9\\}$.",
+    id: `math-1-1`,
+    case_id: `MATH 1.01`,
+    title: `Basic operations on explicit sets`,
+    subsection: `1.1`,
+    context: `Let $A = \\{1, 2, 3, 4, 5\\}$, $B = \\{3, 4, 5, 6, 7\\}$, and $C = \\{5, 6, 7, 8, 9\\}$.`,
     statements: [
-      "$A \\cap B = \\{3, 4, 5\\}$.",
-      "$A \\cup C = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$.",
-      "$(A \\cap B) \\cap C = \\{5\\}$.",
-      "$A \\setminus C = \\{1, 2, 3\\}$.",
-      "B and C are disjoint sets.",
+      `$A \\cap B = \\{3, 4, 5\\}$.`,
+      `$A \\cup C = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$.`,
+      `$(A \\cap B) \\cap C = \\{5\\}$.`,
+      `$A \\setminus C = \\{1, 2, 3\\}$.`,
+      `B and C are disjoint sets.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe given sets are $A=\\{1,2,3,4,5\\}$ and $B=\\{3,4,5,6,7\\}$. Intersection $A\\cap B$ keeps a number only when it sits in both lists.\n\nScan each member of $A$ against $B$:\n\n- $1\\in A$ but $1\\notin B$, drop it.\n- $2\\in A$ but $2\\notin B$, drop it.\n- $3\\in A$ and $3\\in B$, keep it.\n- $4\\in A$ and $4\\in B$, keep it.\n- $5\\in A$ and $5\\in B$, keep it.\n\nSo\n\n$$A\\cap B=\\{3,4,5\\}.$$\n\nThat is exactly the claimed set, so the statement holds.",
-      "**B.** → False\n\nThe given sets are $A=\\{1,2,3,4,5\\}$ and $C=\\{5,6,7,8,9\\}$. Union keeps every number that sits in at least one of the two lists.\n\nStart from $A$ and add each member of $C$ that is new:\n\n- From $A$: $1,2,3,4,5$.\n- From $C$: $5$ is already listed; then $6$, $7$, $8$, and $9$ are new.\n\nThe full union is therefore\n\n$$A\\cup C=\\{1,2,3,4,5,6,7,8,9\\}.$$\n\nA union must keep **every** member of $C$, including $9$. The claim stops at $8$ and drops $9$, so it is wrong.\n\nCheck against the given lists: $C=\\{5,6,7,8,9\\}$, so $9\\in C$. Any correct union $A\\cup C$ is forced to contain every member of $C$, and the claimed set stops before $9$. That single missing element is enough to make the equality false.",
-      "**C.** → True\n\nWe already have $A\\cap B=\\{3,4,5\\}$ from scanning $A$ against $B$. Now intersect that result with the given $C=\\{5,6,7,8,9\\}$.\n\nScan $\\{3,4,5\\}$ against $C$:\n\n- $3\\notin C$, drop it.\n- $4\\notin C$, drop it.\n- $5\\in C$, keep it.\n\nIntersecting with $C$ keeps only the numbers that also sit in $C$, and that is just **$5$**. The claim matches:\n\n$$(A\\cap B)\\cap C=\\{5\\}.$$",
-      "**D.** → False\n\nFrom $A=\\{1,2,3,4,5\\}$ we delete only what is also in $C=\\{5,6,7,8,9\\}$. Difference keeps a member of $A$ precisely when it is missing from $C$.\n\nScan each member of $A$:\n\n- $1\\in A$ and $1\\notin C$, keep it.\n- $2\\in A$ and $2\\notin C$, keep it.\n- $3\\in A$ and $3\\notin C$, keep it.\n- $4\\in A$ and $4\\notin C$, keep it.\n- $5\\in A$ and $5\\in C$, drop it.\n\nThe only overlap is $5$, so\n\n$$A\\setminus C=\\{1,2,3,4\\}.$$\n\nThe claim also drops $4$, but $4\\in A$ and $4\\notin C$, so $4$ must stay. **False.**\n\nExplicit check: $4\\in A$ and $4\\notin C$, so the difference rule keeps $4$. The claimed set $\\{1,2,3\\}$ pretends $4$ was deleted, but nothing in $C$ justifies deleting it. So the claim is too small.",
-      "**E.** → False\n\n**Disjoint** means $B\\cap C=\\emptyset$. The given lists are $B=\\{3,4,5,6,7\\}$ and $C=\\{5,6,7,8,9\\}$.\n\nScan $B$ against $C$:\n\n- $3\\notin C$, drop it.\n- $4\\notin C$, drop it.\n- $5\\in C$, keep it.\n- $6\\in C$, keep it.\n- $7\\in C$, keep it.\n\nSo $B\\cap C=\\{5,6,7\\}\\ne\\emptyset$. They share three elements; the statement fails.\n\nA quick trap is to notice that $B$ and $C$ are \"different lists\" and call them disjoint. Disjointness is about shared members, not about looking different. Because $\\{5,6,7\\}$ sits in both, the sets are not disjoint.",
+      `**A.** → True
+
+Intersection keeps only the numbers that clear both lists. Scan $A$ against $B$: $1$ and $2$ miss $B$, while $3$, $4$, and $5$ sit in both, so
+
+$$A\\cap B=\\{3,4,5\\}$$
+
+That is the claimed set, so the statement is True.`,
+      `**B.** → False
+
+A union must contain every member of each input. Putting $A$ and $C$ together gives $1,2,3,4,5$ from $A$ and $6,7,8,9$ from $C$:
+
+$$A\\cup C=\\{1,2,3,4,5,6,7,8,9\\}$$
+
+The claimed set stops at $8$ and drops $9$, even though $9\\in C$. A union cannot be smaller than either input, so the statement is False.`,
+      `**C.** → True
+
+First form $A\\cap B=\\{3,4,5\\}$. The remaining filter is membership in $C$. Of that trio only $5$ sits in $C$:
+
+$$(A\\cap B)\\cap C=\\{5\\}$$
+
+Chaining two intersections is the same as intersecting all three sets at once, so the statement is True.`,
+      `**D.** → False
+
+Difference $A\\setminus C$ deletes a member of $A$ only when that member also sits in $C$. Scanning $A$ against $C$ leaves $1,2,3,4$, because only $5$ is shared:
+
+$$A\\setminus C=\\{1,2,3,4\\}$$
+
+The claim also drops $4$, but $4\\in A$ and $4\\notin C$, so the statement is False.`,
+      `**E.** → False
+
+Disjointness means the intersection is empty. Scan $B$ against $C$:
+
+$$B\\cap C=\\{5,6,7\\}$$
+
+Three shared numbers are three too many, so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 1,
-    solution_overview:
-      "Start with the three lists:\n\n$$A=\\{1,2,3,4,5\\},\\quad B=\\{3,4,5,6,7\\},\\quad C=\\{5,6,7,8,9\\}.$$\n\n**Intersection** keeps numbers that sit in both sets; **union** keeps anything that sits in at least one; **difference** $X\\setminus Y$ keeps members of $X$ that are missing from $Y$; two sets are **disjoint** only when they share nothing.\n\nScan $A$ against $B$: $1$ and $2$ miss $B$, while $3$, $4$, and $5$ sit in both, so $A\\cap B=\\{3,4,5\\}$. Of those three, only $5$ is also in $C$ ($3\\notin C$ and $4\\notin C$), so $(A\\cap B)\\cap C=\\{5\\}$. Putting $A$ and $C$ together: $A$ contributes $1,2,3,4,5$ and $C$ adds $6,7,8,9$, giving $\\{1,2,3,4,5,6,7,8,9\\}$. From $A$, scan against $C$: only $5$ is shared, so $1,2,3,4$ stay and $A\\setminus C=\\{1,2,3,4\\}$. Finally scan $B$ against $C$: $5$, $6$, and $7$ sit in both, so $B\\cap C=\\{5,6,7\\}$ and they are not disjoint."
+    solution_overview: `Let $A=\\{1,2,3,4,5\\}$, $B=\\{3,4,5,6,7\\}$, and $C=\\{5,6,7,8,9\\}$.
+
+Intersection keeps numbers that sit in both lists. Union keeps anything in at least one. Difference $X\\setminus Y$ keeps members of $X$ that are missing from $Y$. Two sets are disjoint only when they share nothing.`,
   },
   {
-    id: "math-1-2",
-    case_id: "MATH 1.02",
-    title: "Set-builder notation and equality of sets",
-    subsection: "1.1",
-    context: "Let $A = \\{x \\in Z : x^2 = 9\\}$ (Z = integers) and $B = \\{3, -3\\}$.",
+    id: `math-1-2`,
+    case_id: `MATH 1.02`,
+    title: `Set-builder notation and equality of sets`,
+    subsection: `1.1`,
+    context: `Let $A = \\{x \\in Z : x^2 = 9\\}$ (Z = integers) and $B = \\{3, -3\\}$.`,
     statements: [
-      "A = B.",
-      "$3 \\in A$.",
-      "$A = \\{3\\}$ (only the positive root).",
-      "$\\lvert A \\rvert = 2$.",
-      "The set $C = \\{x \\in N : x^2 = 9\\}$ (N = natural numbers) is equal to $\\{3, -3\\}$.",
+      `A = B.`,
+      `$3 \\in A$.`,
+      `$A = \\{3\\}$ (only the positive root).`,
+      `$\\lvert A \\rvert = 2$.`,
+      `The set $C = \\{x \\in N : x^2 = 9\\}$ (N = natural numbers) is equal to $\\{3, -3\\}$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe set-builder for $A$ keeps every integer $x$ with $x^2=9$. Solve first, then filter.\n\n$$x^2=9\\implies x=3\\quad\\text{or}\\quad x=-3.$$\n\nCheck each root against the universe $Z$:\n\n- $3\\in Z$ and $3^2=9$, so $3\\in A$.\n- $-3\\in Z$ and $(-3)^2=9$, so $-3\\in A$.\n\nNo other integer squares to $9$, so $A=\\{-3,3\\}$. The given $B=\\{3,-3\\}$ lists the same two numbers. Sets ignore order, so **$A=B$**.",
-      "**B.** → True\n\nDirect check against the defining rule of $A=\\{x\\in Z:x^2=9\\}$:\n\n- $3$ is an integer, so $3\\in Z$.\n- $3^2=9$, so the equation holds.\n\nBoth parts of the set-builder succeed, hence **$3\\in A$**.",
-      "**C.** → False\n\nThe trap is keeping “only the positive root.” Check both integer roots of $x^2=9$:\n\n- $3\\in Z$ and $3^2=9$, so $3\\in A$.\n- $-3\\in Z$ and $(-3)^2=9$, so $-3\\in A$.\n\nBoth $3$ and $-3$ square to $9$, and both are integers, so $A=\\{-3,3\\}$, not $\\{3\\}$.\n\nWhy the trap fails: the set-builder uses the universe $Z$, not \"positive integers.\" Squaring does not discard the negative root, and $-3\\in Z$ with $(-3)^2=9$, so $-3$ must stay in $A$. Writing $\\{3\\}$ quietly changes the universe.",
-      "**D.** → True\n\nFrom the set-builder we already have the two surviving integers $A=\\{-3,3\\}$. Cardinality $|A|$ counts distinct members:\n\n- $-3$ and $3$ are different integers,\n- so there are two of them.\n\nThus $|A|=2$, matching the claim.",
-      "**E.** → False\n\nNow the universe is the natural numbers $N$, not $Z$. The same equation $x^2=9$ still has roots $\\pm 3$, but each must be re-filtered:\n\n- $3\\in N$ and $3^2=9$, so $3\\in C$.\n- $-3\\notin N$, so $-3$ is rejected even though $(-3)^2=9$.\n\nNatural numbers do not include negatives. With the filter $x\\in N$, the root $-3$ is thrown out and $C=\\{3\\}$. That is not equal to $\\{3,-3\\}$.\n\nCompare the two filters carefully. In $A$ the universe is $Z$, so both $\\pm 3$ survive. In $C$ the universe is $N$, so the same equation is re-filtered and $-3$ is rejected. Equality would require $C$ to contain $-3$, which it cannot.",
+      `**A.** → True
+
+The equation $x^2=9$ has two roots. Test $x=3$:
+
+$$3^2=9$$
+
+and $3$ is an integer, so $3\\in A$. Test $x=-3$:
+
+$$(-3)^2=9$$
+
+and $-3$ is an integer, so $-3\\in A$. Thus
+
+$$A=\\{-3,3\\}$$
+
+$B=\\{3,-3\\}$ lists the same two numbers. Sets ignore order, so $A=B$, so the statement is True.`,
+      `**B.** → True
+
+Membership in a set-builder is a test, not a printed roster. $3$ is an integer and $3^2=9$, so $3\\in A$.
+
+so the statement is True.`,
+      `**C.** → False
+
+Square-root language sometimes keeps only the positive root. Over the integers both $3$ and $-3$ satisfy $x^2=9$, so $A=\\{-3,3\\}$. The claimed roster $\\{3\\}$ drops $-3$, which the universe $Z$ never excluded.
+
+so the statement is False.`,
+      `**D.** → True
+
+Cardinality counts distinct members, not distinct squares. The integers solving $x^2=9$ are $-3$ and $3$, two different points on the number line, so
+
+$$\\lvert A\\rvert=2$$
+
+so the statement is True.`,
+      `**E.** → False
+
+This letter switches the universe to the natural numbers $N=\\{1,2,3,\\ldots\\}$ and keeps solutions of $x^2=9$. Then $3\\in N$ stays, while $-3\\notin N$ is dropped, so $C=\\{3\\}$. Equality with $\\{3,-3\\}$ would require a negative natural number.
+
+so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 2,
-    solution_overview:
-      "The set-builder $A=\\{x\\in Z:x^2=9\\}$ means: solve the equation, then keep only the solutions that are **integers**.\n\n$x^2=9$ has two roots, $x=3$ and $x=-3$. Check each against $Z$:\n\n- $3\\in Z$ and $3^2=9$, keep it.\n- $-3\\in Z$ and $(-3)^2=9$, keep it.\n\nBoth survive, so\n\n$$A=\\{-3,3\\}.$$\n\n$B$ is given as $\\{3,-3\\}$. In a set, order does not matter, so the same two numbers make $A=B$. Cardinally, two distinct members give $|A|=2$.\n\nStatement E switches the universe to the **natural numbers** $N=\\{1,2,3,\\ldots\\}$. Re-filter the same roots: $3\\in N$ stays, but $-3\\notin N$ is dropped, so only $C=\\{3\\}$ survives."
+    solution_overview: `Let $A=\\{x\\in Z:x^2=9\\}$, with $Z$ the integers, and let $B=\\{3,-3\\}$.
+
+A set-builder keeps those members of the named universe that satisfy the stated equation. Changing the universe, or adding an extra inequality, produces a different set. Rosters that list the same members in a different order still name one set.`,
   },
   {
-    id: "math-1-3",
-    case_id: "MATH 1.03",
-    title: "Subsets, elements, and the power set",
-    subsection: "1.1",
-    context: "Let $A = \\{a, b, c\\}$.",
+    id: `math-1-3`,
+    case_id: `MATH 1.03`,
+    title: `Subsets, elements, and the power set`,
+    subsection: `1.1`,
+    context: `Let $A = \\{a, b, c\\}$.`,
     statements: [
-      "The power set of A has 8 elements.",
-      "$\\{a, b\\}$ is an element of A.",
-      "$\\emptyset$ is a subset of A.",
-      "A is a proper subset of A.",
-      "There are exactly 3 subsets of A that contain exactly 2 elements.",
+      `The power set of A has 8 elements.`,
+      `$\\{a, b\\}$ is an element of A.`,
+      `$\\emptyset$ is a subset of A.`,
+      `A is a proper subset of A.`,
+      `There are exactly 3 subsets of A that contain exactly 2 elements.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe claim asks for $|\\mathcal P(A)|$ given $A=\\{a,b,c\\}$. Each of the three letters may be kept or left out of a subset, independently, which is $2^3=8$ subsets.\n\nWriting them all out confirms eight:\n\n$$\\mathcal P(A)=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},A\\}.$$\n\nCount: $1$ empty, $3$ singletons, $3$ pairs, $1$ full set, total $1+3+3+1=8$. That is the size of the power set, so the claim holds.",
-      "**B.** → False\n\nThe elements of $A$ are the letters $a$, $b$, $c$, not sets. The box $\\{a,b\\}$ is a **subset** of $A$, but it is not listed as an element. Membership and subsethood are different.\n\nConcrete check against $A=\\{a,b,c\\}$: the membership list is just three letters. Scan it:\n\n- $a\\in A$, yes.\n- $b\\in A$, yes.\n- $c\\in A$, yes.\n- $\\{a,b\\}$ is not one of those three letters.\n\nYou will find $a\\in A$, but you will not find the set-object $\\{a,b\\}$ on that list. Confusing \"$\\{a,b\\}\\subseteq A$\" (true, because $a\\in A$ and $b\\in A$) with \"$\\{a,b\\}\\in A$\" (false) is the classic mix-up here.",
-      "**C.** → True\n\n$\\emptyset$ has no elements at all, so the subset test “every element of $\\emptyset$ lies in $A$” has nothing that can fail. Hence **$\\emptyset\\subseteq A$** (and $\\emptyset$ appears in $\\mathcal P(A)$).\n\nAgainst the given $A=\\{a,b,c\\}$, there is no member of $\\emptyset$ to check for membership in $A$, so the inclusion cannot fail.",
-      "**D.** → False\n\nProper inclusion needs both $A\\subseteq A$ *and* $A\\ne A$. The second demand is impossible. A set is never a proper subset of itself.\n\nBy definition, $X$ is a proper subset of $Y$ only when $X\\subseteq Y$ and $X\\ne Y$. Taking $X=Y=A=\\{a,b,c\\}$ makes the second half $A\\ne A$, which is absurd. The member lists are identical ($a$, $b$, $c$ on both sides), so \"$A$ is a proper subset of $A$\" can never hold.",
-      "**E.** → True\n\nThe claim counts $2$-element subsets of the given $A=\\{a,b,c\\}$. From those three letters the pairs are obtained by choosing two letters at a time:\n\n- $\\{a,b\\}$ (omit $c$),\n- $\\{a,c\\}$ (omit $b$),\n- $\\{b,c\\}$ (omit $a$).\n\nThree subsets, matching $\\binom{3}{2}=3$.",
+      `**A.** → True
+
+Each of the three letters is an independent keep-or-drop choice, so
+
+$$\\lvert\\mathcal P(A)\\rvert=2^3=8$$
+
+The power set therefore has $8$ elements, so the statement is True.`,
+      `**B.** → False
+
+The elements of $A$ are the letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a set of letters, not a letter, so $\\{a,b\\}\\notin A$ even though $\\{a,b\\}\\subseteq A$.
+
+so the statement is False.`,
+      `**C.** → True
+
+The empty set has no member that could sit outside $A$, so $\\emptyset\\subseteq A$ cannot fail.
+
+so the statement is True.`,
+      `**D.** → False
+
+Proper inclusion needs $A\\subseteq A$ and $A\\ne A$. The second half is impossible, because both sides are the same three-letter list.
+
+so the statement is False.`,
+      `**E.** → True
+
+A two-element subset of a three-element set omits exactly one letter. The three omissions give $\\{a,b\\}$, $\\{a,c\\}$, and $\\{b,c\\}$, matching
+
+$$\\binom{3}{2}=3$$
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 3,
-    solution_overview:
-      "Here $A=\\{a,b,c\\}$ has three objects. Two different relations matter:\n\n• $x\\in A$ means $x$ is one of those three objects.\n\n• $S\\subseteq A$ means every object inside $S$ is also one of those three.\n\nThe **power set** $\\mathcal P(A)$ is the set of *all* subsets. Each of the three objects can be kept or left out, so there are $2^3=8$ subsets:\n\n$$\\mathcal P(A)=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},A\\}.$$\n\nA **proper** subset must also be unequal to $A$, so $A$ itself is never a proper subset of $A$. The two-element subsets are the three pairs $\\{a,b\\}$, $\\{a,c\\}$, $\\{b,c\\}$.",
+    solution_overview: `Let $A=\\{a,b,c\\}$. Membership $x\\in A$ asks whether $x$ is one of those three letters. Subsethood $S\\subseteq A$ asks whether every member of $S$ is one of those letters.
+
+The power set $\\mathcal P(A)$ is the set of all subsets of $A$. Each of the $|A|$ elements may be kept or left out, so
+
+$$\\lvert\\mathcal P(A)\\rvert=2^{\\lvert A\\rvert}$$
+
+A proper subset must also be unequal to $A$.`,
   },
   {
-    id: "math-1-4",
-    case_id: "MATH 1.04",
-    title: "Let",
-    subsection: "1.1",
-    context: "Let $D = \\{a, b, c\\}$.",
+    id: `math-1-4`,
+    case_id: `MATH 1.04`,
+    title: `Membership vs. Subset for a Three-Element Set`,
+    subsection: `1.1`,
+    context: `Let $D = \\{a, b, c\\}$.`,
     statements: [
-      "$\\emptyset \\subseteq D$",
-      "$\\emptyset \\in D$",
-      "D has exactly 8 subsets",
-      "Both $\\{a\\} \\subseteq D$ and $\\{a\\} \\in D$ are true",
-      "$D \\subseteq D$",
+      `$\\emptyset \\subseteq D$`,
+      `$\\emptyset \\in D$`,
+      `D has exactly 8 subsets`,
+      `Both $\\{a\\} \\subseteq D$ and $\\{a\\} \\in D$ are true`,
+      `$D \\subseteq D$`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe claim is $\\emptyset\\subseteq D$ for the given $D=\\{a,b,c\\}$. Subsethood asks whether every element of the left-hand set sits in $D$. The empty set has no elements to check, so the test cannot fail. The empty set passes the subset test vacuously: it has no element that could sit outside $D$. So **$\\emptyset\\subseteq D$**.",
-      "**B.** → False\n\nLook at the element list of $D=\\{a,b,c\\}$: only $a$, $b$, $c$. Scan for the empty set among those three objects:\n\n- $a$ is a letter, not $\\emptyset$.\n- $b$ is a letter, not $\\emptyset$.\n- $c$ is a letter, not $\\emptyset$.\n\nThe empty set is not among them, so **$\\emptyset\\notin D$** even though it is a subset.\n\nThis is the empty-set membership trap. Subsethood ($\\emptyset\\subseteq D$) is automatic, but membership ($\\emptyset\\in D$) would require $\\emptyset$ to appear as one of the written elements $a$, $b$, or $c$. It does not, so the claim fails.",
-      "**C.** → True\n\n$D=\\{a,b,c\\}$ has three members, so each subset is an include/exclude choice for $a$, $b$, and $c$. That produces $2^3=8$ subsets. Writing them all out confirms eight:\n\n$$\\mathcal P(D)=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},D\\}.$$\n\nThe power-set list has eight entries, matching the claim.",
-      "**D.** → False\n\nSplit the \"both\" claim against $D=\\{a,b,c\\}$.\n\nHalf one: $\\{a\\}\\subseteq D$. The only member of $\\{a\\}$ is $a$, and $a\\in D$, so this half is true.\n\nHalf two: $\\{a\\}\\in D$. Scan the element list $a$, $b$, $c$: none of those letters is the singleton set $\\{a\\}$. So $\\{a\\}\\notin D$.\n\nA claim that needs **both** is false as soon as one half fails.",
-      "**E.** → True\n\nThe claim is $D\\subseteq D$. Check the given list $\\{a,b,c\\}$ member by member:\n\n- $a\\in D$,\n- $b\\in D$,\n- $c\\in D$.\n\nEach of $a$, $b$, $c$ appears in $D$ by construction. Reflexive inclusion always holds: **$D\\subseteq D$**.",
+      `**A.** → True
+
+Subsethood asks whether every member of the left-hand set sits in $D$. The empty set has no member that could fail that test, so $\\emptyset\\subseteq D$.
+
+so the statement is True.`,
+      `**B.** → False
+
+Membership reads the written roster: $a$, $b$, $c$. None of those letters is the empty set, so $\\emptyset\\notin D$.
+
+so the statement is False.`,
+      `**C.** → True
+
+Three independent include-or-exclude choices give
+
+$$2^3=8$$
+
+subsets of $D$. That count includes $\\emptyset$ and $D$ itself, so the statement is True.`,
+      `**D.** → False
+
+Split the "both" demand. $\\{a\\}\\subseteq D$ holds because its only member $a$ sits in $D$. $\\{a\\}\\in D$ fails because the roster is three letters, not a singleton set. A conjunction dies as soon as one half dies.
+
+so the statement is False.`,
+      `**E.** → True
+
+Every member of $D$ is, by construction, a member of $D$, so $D\\subseteq D$. That is ordinary inclusion, not proper self-inclusion.
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 4,
-    solution_overview:
-      "Membership table for $D=\\{a,b,c\\}$:\n\n| Object | Element of $D$? | Subset of $D$? |\n| --- | --- | --- |\n| $a$, $b$, or $c$ | yes | (singletons are subsets) |\n| $\\emptyset$ | **no** | **yes** |\n| $\\{a\\}$ | **no** | **yes** |\n| $D$ itself | no (not listed as an element) | **yes** |\n\nThe power set has $2^3=8$ members:\n\n$$\\mathcal P(D)=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},D\\}.$$\n\nThe recurring trap is confusing $\\in$ with $\\subseteq$.",
+    solution_overview: `Let $D=\\{a,b,c\\}$. An object belongs to $D$ only when it is one of the three listed letters. A collection $S$ is a subset of $D$ when every member of $S$ is one of those letters.
+
+The power set collects every such $S$, and its size is $2^{\\lvert D\\rvert}$. Ordinary inclusion $D\\subseteq D$ always holds; membership of $D$ in $D$ would require $D$ to appear as a listed letter.`,
   },
   {
-    id: "math-1-5",
-    case_id: "MATH 1.05",
-    title: "Let and",
-    subsection: "1.1",
-    context: "Let $E = \\{1, 3, 5, 7\\}$ and $F = \\{3, 4, 5, 6\\}$.",
+    id: `math-1-5`,
+    case_id: `MATH 1.05`,
+    title: `Set Difference Between Two Overlapping Lists`,
+    subsection: `1.1`,
+    context: `Let $E = \\{1, 3, 5, 7\\}$ and $F = \\{3, 4, 5, 6\\}$.`,
     statements: [
-      "$E \\setminus F = \\{1, 7\\}$",
-      "$F \\setminus E = \\{4, 6\\}$",
-      "$E \\setminus F = F \\setminus E$",
-      "$(E \\setminus F) \\cup (F \\setminus E) = \\{1, 4, 6, 7\\}$",
-      "$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$",
+      `$E \\setminus F = \\{1, 7\\}$`,
+      `$F \\setminus E = \\{4, 6\\}$`,
+      `$E \\setminus F = F \\setminus E$`,
+      `$(E \\setminus F) \\cup (F \\setminus E) = \\{1, 4, 6, 7\\}$`,
+      `$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\n$E\\setminus F$ keeps members of $E=\\{1,3,5,7\\}$ that are missing from $F=\\{3,4,5,6\\}$. Scan each member of $E$:\n\n- $1\\in E$ and $1\\notin F$, keep it.\n- $3\\in E$ and $3\\in F$, drop it.\n- $5\\in E$ and $5\\in F$, drop it.\n- $7\\in E$ and $7\\notin F$, keep it.\n\nThe overlap is $\\{3,5\\}$, so deleting those two leaves $\\{1,7\\}$, as claimed.",
-      "**B.** → True\n\n$F\\setminus E$ keeps members of $F=\\{3,4,5,6\\}$ that are missing from $E=\\{1,3,5,7\\}$. Scan each member of $F$:\n\n- $3\\in F$ and $3\\in E$, drop it.\n- $4\\in F$ and $4\\notin E$, keep it.\n- $5\\in F$ and $5\\in E$, drop it.\n- $6\\in F$ and $6\\notin E$, keep it.\n\nAfter deleting the same overlap $\\{3,5\\}$, what remains is $\\{4,6\\}$.",
-      "**C.** → False\n\nThe two differences live in opposite leftover regions. From the scans above, $E\\setminus F=\\{1,7\\}$ and $F\\setminus E=\\{4,6\\}$. Compare those lists member by member:\n\n- $1$ sits in the first but not the second,\n- $7$ sits in the first but not the second,\n- $4$ sits in the second but not the first,\n- $6$ sits in the second but not the first.\n\n$\\{1,7\\}$ and $\\{4,6\\}$ do not match. Already $1$ sits in the first but not the second, so the two differences are unequal.",
-      "**D.** → True\n\nThe claim joins the two leftover piles already computed: $E\\setminus F=\\{1,7\\}$ and $F\\setminus E=\\{4,6\\}$. Union keeps every number from either leftover:\n\n- from $E\\setminus F$: $1$, $7$,\n- from $F\\setminus E$: $4$, $6$ (both new).\n\nTheir union is $\\{1,4,6,7\\}$, which matches.",
-      "**E.** → True\n\nIf a number were in both differences, it would have to be outside $F$ (to sit in $E\\setminus F$) and outside $E$ (to sit in $F\\setminus E$) while somehow belonging to both leftover piles. Compare the two leftover lists $\\{1,7\\}$ and $\\{4,6\\}$: no number repeats. That forces the intersection to be empty, matching the claim.",
+      `**A.** → True
+
+Difference deletes a member of $E$ only when that member also sits in $F$. Scanning $E$ against $F$, the shared $3$ and $5$ leave while $1$ and $7$ stay:
+
+$$E\\setminus F=\\{1,7\\}$$
+
+That is the claimed set, so the statement is True.`,
+      `**B.** → True
+
+The opposite leftover is members of $F$ missing from $E$. Scanning $F$ against $E$ drops $3$ and $5$ and keeps $4$ and $6$:
+
+$$F\\setminus E=\\{4,6\\}$$
+
+so the statement is True.`,
+      `**C.** → False
+
+The two leftover piles are $\\{1,7\\}$ and $\\{4,6\\}$. Already $1$ sits in the first and misses the second, so the sets cannot be equal. Difference is not commutative: $X\\setminus Y$ lives in $X$, while $Y\\setminus X$ lives in $Y$.
+
+so the statement is False.`,
+      `**D.** → True
+
+Join the two leftover piles:
+
+$$\\{1,7\\}\\cup\\{4,6\\}=\\{1,4,6,7\\}$$
+
+Union of the outer cells never picks up the overlap $\\{3,5\\}$, because those numbers were deleted from both differences.
+
+so the statement is True.`,
+      `**E.** → True
+
+A number in both differences would have to be outside $F$ (to sit in $E\\setminus F$) and inside $F$ (to sit in $F\\setminus E$). That is impossible, so
+
+$$(E\\setminus F)\\cap(F\\setminus E)=\\emptyset$$
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 5,
-    solution_overview:
-      "Picture the two lists side by side:\n\n| | in $E$ | not in $E$ |\n| --- | --- | --- |\n| **in $F$** | $\\{3,5\\}$ (overlap) | $\\{4,6\\}$ |\n| **not in $F$** | $\\{1,7\\}$ | outside both |\n\nSo $E\\setminus F=\\{1,7\\}$ (left column, bottom row) and $F\\setminus E=\\{4,6\\}$ (right column, top row). Their **union** is the two leftover piles together, $\\{1,4,6,7\\}$. Their **intersection** is empty: a number cannot be both “outside $F$” and “inside $F$” at once. In particular the two differences are different sets.",
+    solution_overview: `Let $E=\\{1,3,5,7\\}$ and $F=\\{3,4,5,6\\}$.
+
+Difference $X\\setminus Y$ keeps members of $X$ that are missing from $Y$. The two leftover piles $E\\setminus F$ and $F\\setminus E$ live on opposite sides of the overlap and need not be equal. Their union is the symmetric leftovers; their intersection is empty because a number cannot be both outside $F$ and inside $F$.`,
   },
   {
-    id: "math-1-6",
-    case_id: "MATH 1.06",
-    title: "Let , , and",
-    subsection: "1.1",
-    context:
-      "Let $A = \\{2, 4, 6, 8, 10\\}$, $B = \\{3, 6, 9, 12\\}$, and $C = \\{1, 2, 3, 4, 5\\}$.",
+    id: `math-1-6`,
+    case_id: `MATH 1.06`,
+    title: `Intersections, Union Size, and a Difference Trap`,
+    subsection: `1.1`,
+    context: `Let $A = \\{2, 4, 6, 8, 10\\}$, $B = \\{3, 6, 9, 12\\}$, and $C = \\{1, 2, 3, 4, 5\\}$.`,
     statements: [
-      "$A \\cap B = \\{6\\}$",
-      "$A \\cup B$ has 8 elements",
-      "$C \\setminus A = \\{1, 3\\}$",
-      "$B \\setminus C = \\{3, 6, 9, 12\\}$",
-      "$A \\cap C = \\{2, 4, 6\\}$",
+      `$A \\cap B = \\{6\\}$`,
+      `$A \\cup B$ has 8 elements`,
+      `$C \\setminus A = \\{1, 3\\}$`,
+      `$B \\setminus C = \\{3, 6, 9, 12\\}$`,
+      `$A \\cap C = \\{2, 4, 6\\}$`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nIntersection keeps numbers that sit in both given lists $A=\\{2,4,6,8,10\\}$ and $B=\\{3,6,9,12\\}$. Scan $A$ against $B$:\n\n- $2\\notin B$, drop it.\n- $4\\notin B$, drop it.\n- $6\\in B$, keep it.\n- $8\\notin B$, drop it.\n- $10\\notin B$, drop it.\n\nOnly $6$ appears in both, so $A\\cap B=\\{6\\}$.",
-      "**B.** → True\n\nUnion lists every distinct number from $A=\\{2,4,6,8,10\\}$ or $B=\\{3,6,9,12\\}$. Start from $A$ and add what is new in $B$:\n\n- From $A$: $2,4,6,8,10$.\n- From $B$: $3$ is new; $6$ is already listed; $9$ is new; $12$ is new.\n\nWriting them out gives $\\{2,3,4,6,8,9,10,12\\}$. Count the distinct entries: $2,3,4,6,8,9,10,12$ is eight numbers (the shared $6$ counted once), matching the claim.",
-      "**C.** → False\n\nWalk through $C=\\{1,2,3,4,5\\}$ against $A=\\{2,4,6,8,10\\}$. Difference $C\\setminus A$ keeps a member of $C$ only when it is missing from $A$:\n\n- $1\\notin A$, keep it.\n- $2\\in A$, drop it.\n- $3\\notin A$, keep it.\n- $4\\in A$, drop it.\n- $5\\notin A$, keep it.\n\nSo $C\\setminus A=\\{1,3,5\\}$. The claim lists only $\\{1,3\\}$ and silently deletes $5$, even though $5\\notin A$. That is the trap.",
-      "**D.** → False\n\n$B\\setminus C$ means \"members of $B=\\{3,6,9,12\\}$ that are missing from $C=\\{1,2,3,4,5\\}$.\" Scan each member of $B$:\n\n- $3\\in C$, drop it.\n- $6\\notin C$, keep it.\n- $9\\notin C$, keep it.\n- $12\\notin C$, keep it.\n\nSince $3\\in B$ and $3\\in C$, $3$ must leave. The claim copies all of $B$, as if nothing overlapped with $C$. The corrected list is $\\{6,9,12\\}$.",
-      "**E.** → False\n\nCheck each candidate from $A=\\{2,4,6,8,10\\}$ against $C=\\{1,2,3,4,5\\}$:\n\n- $2\\in C$, keep it.\n- $4\\in C$, keep it.\n- $6\\notin C$ ($C$ only goes up to $5$), drop it.\n- $8\\notin C$, drop it.\n- $10\\notin C$, drop it.\n\nSo $A\\cap C=\\{2,4\\}$. Padding the intersection with $6$ invents an overlap that the given sets do not have.",
+      `**A.** → True
+
+Intersection is the stricter combine. Scan $A$ against $B$: $2,4,8,10$ miss $B$, and $B$'s $3,9,12$ miss $A$. Only $6$ sits in both, so
+
+$$A\\cap B=\\{6\\}$$
+
+so the statement is True.`,
+      `**B.** → True
+
+Start from $A$'s five numbers and add $B$'s newcomers $3,9,12$; the shared $6$ is not a second copy. That is eight distinct members, matching
+
+$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert=5+4-1=8$$
+
+so the statement is True.`,
+      `**C.** → False
+
+Scan $C=\\{1,2,3,4,5\\}$ against $A$. Drop $2$ and $4$ (both in $A$), and keep $1$, $3$, and $5$:
+
+$$C\\setminus A=\\{1,3,5\\}$$
+
+The claimed $\\{1,3\\}$ quietly deletes $5$, even though $5\\notin A$.
+
+so the statement is False.`,
+      `**D.** → False
+
+$B\\setminus C$ is not a copy of $B$. Scan $\\{3,6,9,12\\}$ against $C$: drop $3$ because $3\\in C$, and keep $6,9,12$:
+
+$$B\\setminus C=\\{6,9,12\\}$$
+
+The claimed roster copies all of $B$ and ignores the witness $3$.
+
+so the statement is False.`,
+      `**E.** → False
+
+Scan $A$ against $C$: $2$ and $4$ sit in $C$, while $6,8,10$ do not, because $C$ stops at $5$. So
+
+$$A\\cap C=\\{2,4\\}$$
+
+The extra $6$ in the claim is in $A$ but not in $C$.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 6,
-    solution_overview:
-      "Compute each operation directly from the lists $A=\\{2,4,6,8,10\\}$, $B=\\{3,6,9,12\\}$, $C=\\{1,2,3,4,5\\}$.\n\n**Shared with $B$:** scan $A$'s members against $B$: $2,4,8,10$ miss $B$; only $6$ sits in both, so $A\\cap B=\\{6\\}$.\n\n**Union $A\\cup B$:** start from $A$'s five numbers and add $B$'s new ones $3,9,12$ ($6$ already listed), giving $\\{2,3,4,6,8,9,10,12\\}$, eight numbers ($6$ once).\n\n**$C$ minus $A$:** scan $\\{1,2,3,4,5\\}$: drop $2$ and $4$ (both in $A$), keep $1$, $3$, and $5$, leaving $\\{1,3,5\\}$.\n\n**$B$ minus $C$:** scan $\\{3,6,9,12\\}$: drop $3$ (the only member also in $C$), keep $6,9,12$.\n\n**$A$ with $C$:** scan $A$ against $C$: $2$ and $4$ sit in $C$; $6,8,10$ do not ($C$ stops at $5$), so $A\\cap C=\\{2,4\\}$.",
+    solution_overview: `Let $A=\\{2,4,6,8,10\\}$, $B=\\{3,6,9,12\\}$, and $C=\\{1,2,3,4,5\\}$.
+
+Intersection keeps numbers that sit in both lists. Union keeps anything in at least one, counting a shared member once. Difference $X\\setminus Y$ keeps members of $X$ that are missing from $Y$.`,
   },
   {
-    id: "math-1-7",
-    case_id: "MATH 1.07",
-    title: "In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Ec",
-    subsection: "1.1",
-    context:
-      "In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so $\\lvert M \\cap E \\rvert = 12$.",
+    id: `math-1-7`,
+    case_id: `MATH 1.07`,
+    title: `Two-Course Enrollment via Inclusion-Exclusion`,
+    subsection: `1.1`,
+    context: `In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so $\\lvert M \\cap E \\rvert = 12$.`,
     statements: [
-      "$\\lvert M \\cup E \\rvert = 43$",
-      "The number of students taking neither Mathematics nor Economics is 7",
-      "$M \\setminus E$ has 18 students (those taking only Mathematics)",
-      "$E \\subseteq M$",
-      "M and E are disjoint sets",
+      `$\\lvert M \\cup E \\rvert = 43$`,
+      `The number of students taking neither Mathematics nor Economics is 7`,
+      `$M \\setminus E$ has 18 students (those taking only Mathematics)`,
+      `$E \\subseteq M$`,
+      `M and E are disjoint sets`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe claim asks for $|M\\cup E|$. The survey gives $|M|=30$, $|E|=25$, and overlap $|M\\cap E|=12$. Inclusion-exclusion subtracts the double-counted overlap once:\n\n$$|M\\cup E|=|M|+|E|-|M\\cap E|=30+25-12=43.$$\n\nThat is the claimed union size.",
-      "**B.** → True\n\n\"Neither course\" means outside the union, inside the cohort of $50$. We already have $|M\\cup E|=43$ from $30+25-12$, so\n\n$$50-|M\\cup E|=50-43=7$$\n\nstudents take neither, matching the claim.",
-      "**C.** → True\n\nOnly-Mathematics is the Math total minus those also in Economics. From the given $|M|=30$ and $|M\\cap E|=12$,\n\n$$|M\\setminus E|=|M|-|M\\cap E|=30-12=18.$$\n\nThat region has $18$ students.",
-      "**D.** → False\n\nSubsethood $E\\subseteq M$ would require every Economics student to also take Mathematics. Compute the only-Economics region from the given counts:\n\n$$|E\\setminus M|=|E|-|M\\cap E|=25-12=13.$$\n\nThose $13$ witnesses sit in $E$ but not in $M$, so **$E\\nsubseteq M$**. The nonempty witness region falsifies the inclusion on the given survey numbers.",
-      "**E.** → False\n\nDisjoint sets would need $|M\\cap E|=0$. The problem states the opposite: twelve students sit in both courses, so $|M\\cap E|=12\\ne 0$. That single given fact already falsifies the claim, with no further arithmetic needed.",
+      `**A.** → True
+
+Adding $30+25$ counts the $12$ shared students twice. Subtracting once restores a single copy:
+
+$$\\lvert M\\cup E\\rvert=30+25-12=43$$
+
+so the statement is True.`,
+      `**B.** → True
+
+"Neither" is whoever sits outside the union. First form the union by inclusion-exclusion:
+
+$$\\lvert M\\cup E\\rvert=30+25-12=43$$
+
+Inside a cohort of $50$, the leftover is
+
+$$50-43=7$$
+
+so the statement is True.`,
+      `**C.** → True
+
+Only-Mathematics is the Mathematics headline minus the overlap:
+
+$$\\lvert M\\setminus E\\rvert=30-12=18$$
+
+Those $18$ sit in $M$ and not in $E$, so the statement is True.`,
+      `**D.** → False
+
+$E\\subseteq M$ would need the only-Economics region empty. That region is the Economics headline minus the overlap:
+
+$$\\lvert E\\setminus M\\rvert=25-12=13$$
+
+Those $13$ students are in $E$ and not in $M$, so the inclusion fails.
+
+so the statement is False.`,
+      `**E.** → False
+
+Disjointness means empty intersection. The stem already states $|M\\cap E|=12$, and twelve shared students are twelve too many.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 7,
-    solution_overview:
-      "Fill the Venn regions from the given counts $|M|=30$, $|E|=25$, $|M\\cap E|=12$, cohort size $50$.\n\n| Region | How to get it | Size |\n| --- | --- | --- |\n| only Mathematics | $30-12$ | **18** |\n| only Economics | $25-12$ | **13** |\n| both | given | **12** |\n| at least one (union) | $30+25-12$ | **43** |\n| neither | $50-43$ | **7** |\n\n**Inclusion-exclusion** subtracts the double-counted overlap once. Disjointness would need overlap $0$; $E\\subseteq M$ would need the only-Economics region to be empty, neither is true here.",
+    solution_overview: `A cohort of $50$ students has $|M|=30$ taking Mathematics, $|E|=25$ taking Economics, and overlap $|M\\cap E|=12$.
+
+Inclusion-exclusion counts the union by adding the two headlines and subtracting the overlap once:
+
+$$\\lvert M\\cup E\\rvert=\\lvert M\\rvert+\\lvert E\\rvert-\\lvert M\\cap E\\rvert$$
+
+Only-Mathematics is the Mathematics headline minus the overlap. Students taking neither course sit outside the union.`,
   },
   {
-    id: "math-1-8",
-    case_id: "MATH 1.08",
-    title: "Let , and let , ,",
-    subsection: "1.1",
-    context:
-      "Let $U = \\{1, 2,..., 9\\}$, and let $A = \\{1, 2, 3\\}$, $B = \\{4, 5, 6\\}$, $C = \\{7, 8, 9\\}$.",
+    id: `math-1-8`,
+    case_id: `MATH 1.08`,
+    title: `Pairwise Disjoint Blocks and a Partition of U`,
+    subsection: `1.1`,
+    context: `Let $U = \\{1, 2,..., 9\\}$, and let $A = \\{1, 2, 3\\}$, $B = \\{4, 5, 6\\}$, $C = \\{7, 8, 9\\}$.`,
     statements: [
-      "A, B, and C are pairwise disjoint",
-      "$\\{A, B, C\\}$ forms a partition of U, since $A \\cup B \\cup C = U$ and the sets are pairwise disjoint",
-      "$A \\cap B \\cap C = \\emptyset$",
-      "$A \\setminus B = \\emptyset$",
-      "Since $A \\cap B = \\emptyset$, it follows that $A = \\emptyset$ or $B = \\emptyset$",
+      `A, B, and C are pairwise disjoint`,
+      `$\\{A, B, C\\}$ forms a partition of U, since $A \\cup B \\cup C = U$ and the sets are pairwise disjoint`,
+      `$A \\cap B \\cap C = \\emptyset$`,
+      `$A \\setminus B = \\emptyset$`,
+      `Since $A \\cap B = \\emptyset$, it follows that $A = \\emptyset$ or $B = \\emptyset$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nPairwise disjointness asks whether each pair of the given blocks shares nothing. Check $A=\\{1,2,3\\}$, $B=\\{4,5,6\\}$, $C=\\{7,8,9\\}$ pair by pair.\n\n$A$ against $B$: scan $1,2,3$ against $\\{4,5,6\\}$. None of $1,2,3$ appears in $B$, so $A\\cap B=\\emptyset$.\n\n$A$ against $C$: none of $1,2,3$ appears in $\\{7,8,9\\}$, so $A\\cap C=\\emptyset$.\n\n$B$ against $C$: none of $4,5,6$ appears in $\\{7,8,9\\}$, so $B\\cap C=\\emptyset$.\n\nAll three pairwise intersections are empty, which is the definition of **pairwise disjoint**.",
-      "**B.** → True\n\nA partition of $U=\\{1,\\ldots,9\\}$ needs nonempty blocks, pairwise disjointness, and union equal to $U$. Check each condition on the given $A=\\{1,2,3\\}$, $B=\\{4,5,6\\}$, $C=\\{7,8,9\\}$.\n\n- Nonempty: each block has three numbers.\n- Pairwise disjoint: already checked, every pair uses different numbers.\n- Union: $A$ contributes $1,2,3$; $B$ adds $4,5,6$; $C$ adds $7,8,9$. Together that is $\\{1,2,3,4,5,6,7,8,9\\}=U$.\n\nAll three conditions hold, so $\\{A,B,C\\}$ partitions $U$.",
-      "**C.** → True\n\nThe triple intersection sits inside every pairwise one. From the lists, scan $A=\\{1,2,3\\}$ against $B=\\{4,5,6\\}$: already $A\\cap B=\\emptyset$, so intersecting further with $C$ stays empty. **$A\\cap B\\cap C=\\emptyset$**.",
-      "**D.** → False\n\nDifference $A\\setminus B$ keeps members of $A=\\{1,2,3\\}$ that are missing from $B=\\{4,5,6\\}$. Scan $A$:\n\n- $1\\notin B$, keep it.\n- $2\\notin B$, keep it.\n- $3\\notin B$, keep it.\n\nBecause $A$ and $B$ share nothing, subtracting $B$ does not remove any of $1$, $2$, or $3$. So $A\\setminus B=\\{1,2,3\\}\\ne\\emptyset$. The claim confuses \"empty intersection\" with \"empty difference.\"",
-      "**E.** → False\n\nThe false leap is \"empty intersection ⇒ one factor is empty.\" These blocks $A=\\{1,2,3\\}$ and $B=\\{4,5,6\\}$ are a concrete counterexample.\n\nScan: $A\\cap B=\\emptyset$ as above, yet $A$ still contains $1,2,3$ and $B$ still contains $4,5,6$. Overlap is empty while neither set is empty. Disjointness only bans shared members; it does not erase the sets.",
+      `**A.** → True
+
+The three blocks occupy separate thirds of $U$. Scan each pair: $1,2,3$ never meet $4,5,6$ or $7,8,9$, and $4,5,6$ never meet $7,8,9$. Every pairwise intersection is empty, so $A$, $B$, and $C$ are pairwise disjoint.
+
+so the statement is True.`,
+      `**B.** → True
+
+A partition needs nonempty blocks, pairwise disjointness, and union $U$. Each block has three numbers, no pair shares a number, and
+
+$$A\\cup B\\cup C=\\{1,2,\\ldots,9\\}=U$$
+
+so $\\{A,B,C\\}$ partitions $U$, so the statement is True.`,
+      `**C.** → True
+
+The triple intersection sits inside every pairwise one. Once $A\\cap B=\\emptyset$, intersecting further with $C$ cannot create a member, so $A\\cap B\\cap C=\\emptyset$.
+
+so the statement is True.`,
+      `**D.** → False
+
+Empty intersection is not empty difference. Because $A$ and $B$ share nothing, subtracting $B$ deletes nobody from $A$:
+
+$$A\\setminus B=\\{1,2,3\\}$$
+
+The claim treats "no overlap" as "nothing left," which would be true of $A\\cap B$, not of $A\\setminus B$.
+
+so the statement is False.`,
+      `**E.** → False
+
+The leap "empty intersection, so one factor is empty" is the product-zero habit from arithmetic, not a set identity. Here both $A$ and $B$ have three members and still miss each other. Disjointness bans shared members; it does not erase the sets.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 8,
-    solution_overview:
-      "The three blocks sit in separate thirds of $U=\\{1,\\ldots,9\\}$:\n\n$$A=\\{1,2,3\\},\\quad B=\\{4,5,6\\},\\quad C=\\{7,8,9\\}.$$\n\n**Pairwise check.** Every pair of blocks uses different numbers, so $A\\cap B=A\\cap C=B\\cap C=\\emptyset$. The triple intersection is then empty too.\n\n**Coverage.** $A\\cup B\\cup C=\\{1,\\ldots,9\\}=U$, and each block is nonempty. That is exactly a **partition** of $U$.\n\n**What disjointness does *not* say.** $A\\setminus B=A$ because nothing is shared, and an empty intersection never forces either set to be empty, here both $A$ and $B$ have three elements.",
+    solution_overview: `Let $U=\\{1,2,\\ldots,9\\}$, $A=\\{1,2,3\\}$, $B=\\{4,5,6\\}$, and $C=\\{7,8,9\\}$.
+
+A collection of blocks is pairwise disjoint when every pair of blocks has empty intersection. It partitions $U$ when the blocks are nonempty, pairwise disjoint, and their union is $U$. Empty intersection never forces either set itself to be empty, and it does not empty a difference.`,
   },
   {
-    id: "math-1-9",
-    case_id: "MATH 1.09",
-    title: "Among U = 12 employees (numbered 1-12), let be those who know Python,",
-    subsection: "1.1",
-    context:
-      "Among U = 12 employees (numbered 1-12), let $X = \\{1,2,3,4,5,6\\}$ be those who know Python, and $Y = \\{4,5,6,7,8,9\\}$ be those who know SQL. Complements are taken relative to U.",
+    id: `math-1-9`,
+    case_id: `MATH 1.09`,
+    title: `Complements of Overlapping Skill Sets`,
+    subsection: `1.1`,
+    context: `Among U = 12 employees (numbered 1-12), let $X = \\{1,2,3,4,5,6\\}$ be those who know Python, and $Y = \\{4,5,6,7,8,9\\}$ be those who know SQL. Complements are taken relative to U.`,
     statements: [
-      "$X^{c} = \\{7, 8, 9, 10, 11, 12\\}$",
-      "$(X \\cup Y)^{c} = \\{10, 11, 12\\}$",
-      "$X^{c} \\cap Y^{c} = \\{10, 11, 12\\}$",
-      "$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$",
-      "$X^{c} \\cup Y^{c} = \\{1, 2, 3, 10, 11, 12\\}$",
+      `$X^{c} = \\{7, 8, 9, 10, 11, 12\\}$`,
+      `$(X \\cup Y)^{c} = \\{10, 11, 12\\}$`,
+      `$X^{c} \\cap Y^{c} = \\{10, 11, 12\\}$`,
+      `$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$`,
+      `$X^{c} \\cup Y^{c} = \\{1, 2, 3, 10, 11, 12\\}$`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe complement $X^c$ is everyone in $U=\\{1,\\ldots,12\\}$ who is not in $X=\\{1,2,3,4,5,6\\}$. Scan $U$ and drop whoever sits in $X$:\n\n- $1$ through $6$ sit in $X$, drop them.\n- $7,8,9,10,11,12$ miss $X$, keep them.\n\nStripping $1$ through $6$ leaves $\\{7,8,9,10,11,12\\}$, matching the claim.",
-      "**B.** → True\n\nFirst form the union from the given lists $X=\\{1,2,3,4,5,6\\}$ and $Y=\\{4,5,6,7,8,9\\}$. Start from $X$ and add what is new in $Y$:\n\n- From $X$: $1,2,3,4,5,6$.\n- From $Y$: $4,5,6$ already listed; $7,8,9$ are new.\n\nSo $X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$. Complements of that union inside $U=\\{1,\\ldots,12\\}$ can only be the remaining employees $10$, $11$, and $12$.",
-      "**C.** → True\n\nFrom A, $X^c=\\{7,8,9,10,11,12\\}$. For $Y^c$, drop $Y=\\{4,5,6,7,8,9\\}$ from $U$:\n\n- drop $4,5,6,7,8,9$,\n- keep $1,2,3,10,11,12$.\n\nSo $Y^c=\\{1,2,3,10,11,12\\}$. Numbers in both complements are those missing from Python and from SQL. Scan $X^c$ against $Y^c$:\n\n- $7,8,9$ sit in $X^c$ but also sit in $Y$, so they miss $Y^c$.\n- $10,11,12$ sit in both complements.\n\nHence $X^c\\cap Y^c=\\{10,11,12\\}$. That equals $(X\\cup Y)^c$, as De Morgan says.",
-      "**D.** → True\n\nExplicitly form both sides from the given lists. First $X\\cap Y$: scan $X=\\{1,2,3,4,5,6\\}$ against $Y=\\{4,5,6,7,8,9\\}$. Only $4,5,6$ sit in both, so $X\\cap Y=\\{4,5,6\\}$ and $(X\\cap Y)^c$ is everyone in $U$ except those three:\n\n$$(X\\cap Y)^c=\\{1,2,3,7,8,9,10,11,12\\}.$$\n\nOn the other side, $X^c\\cup Y^c$ joins $\\{7,8,9,10,11,12\\}$ with $\\{1,2,3,10,11,12\\}$:\n\n- from $X^c$: $7,8,9,10,11,12$,\n- from $Y^c$: $1,2,3$ are new; $10,11,12$ already listed.\n\nThe two sides match, so **$(X\\cap Y)^c=X^c\\cup Y^c$**.",
-      "**E.** → False\n\n$X^c\\cup Y^c$ must keep every member of $X^c=\\{7,8,9,10,11,12\\}$ and every member of $Y^c=\\{1,2,3,10,11,12\\}$. Joining those lists gives\n\n$$X^c\\cup Y^c=\\{1,2,3,7,8,9,10,11,12\\}.$$\n\nThe claimed list $\\{1,2,3,10,11,12\\}$ is only $Y^c$, missing $7$, $8$, and $9$ (Python-non-knowers who still may know SQL). Omitting them makes the claimed set too small.",
+      `**A.** → True
+
+Complement is a scan of $U$, not of $X$ rewritten backwards. Drop $1$ through $6$ from $\\{1,\\ldots,12\\}$:
+
+$$X^c=\\{7,8,9,10,11,12\\}$$
+
+so the statement is True.`,
+      `**B.** → True
+
+Union $X\\cup Y$ covers $1$ through $9$. Complement inside a $12$-person $U$ can only be the three people who miss both skills:
+
+$$(X\\cup Y)^c=\\{10,11,12\\}$$
+
+so the statement is True.`,
+      `**C.** → True
+
+De Morgan identifies $(X\\cup Y)^c$ with $X^c\\cap Y^c$. Members of both complements are people who know neither Python nor SQL. Scanning $X^c=\\{7,8,9,10,11,12\\}$ against $Y^c=\\{1,2,3,10,11,12\\}$ leaves
+
+$$X^c\\cap Y^c=\\{10,11,12\\}$$
+
+so the statement is True.`,
+      `**D.** → True
+
+The second De Morgan identity says escaping an intersection takes only escaping one of the two sets:
+
+$$(X\\cap Y)^c=X^c\\cup Y^c$$
+
+Both sides name the people missing Python or missing SQL (or both). The identity holds on these lists, so the statement is True.`,
+      `**E.** → False
+
+The union of complements must keep every member of each complement. $X^c=\\{7,8,9,10,11,12\\}$ still contributes $7,8,9$. Joining with $Y^c=\\{1,2,3,10,11,12\\}$ gives
+
+$$X^c\\cup Y^c=\\{1,2,3,7,8,9,10,11,12\\}$$
+
+The claimed list $\\{1,2,3,10,11,12\\}$ is $Y^c$ alone, so it undercounts.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 9,
-    solution_overview:
-      "Employees $1$ to $12$; Python knowers $X=\\{1,\\ldots,6\\}$; SQL knowers $Y=\\{4,\\ldots,9\\}$. Complements are “everyone else in $U$.”\n\n| Set | Members |\n| --- | --- |\n| $X^c$ | $\\{7,8,9,10,11,12\\}$ |\n| $Y^c$ | $\\{1,2,3,10,11,12\\}$ |\n| $X\\cup Y$ | $\\{1,\\ldots,9\\}$ |\n| $(X\\cup Y)^c$ | $\\{10,11,12\\}$ |\n| $X\\cap Y$ | $\\{4,5,6\\}$ |\n| $(X\\cap Y)^c$ | $\\{1,2,3,7,8,9,10,11,12\\}$ |\n\n**De Morgan:** $(X\\cup Y)^c=X^c\\cap Y^c$ and $(X\\cap Y)^c=X^c\\cup Y^c$. Both hold on these lists. Watch statement E, it quietly wrote $Y^c$ alone instead of the full union of complements.",
+    solution_overview: `Among $U=\\{1,2,\\ldots,12\\}$, let $X=\\{1,2,3,4,5,6\\}$ be the Python knowers and $Y=\\{4,5,6,7,8,9\\}$ the SQL knowers. Complements are taken inside $U$: $X^c$ is everyone in $U$ missing from $X$.
+
+De Morgan's identities swap union and intersection under complement:
+
+$$(X\\cup Y)^c=X^c\\cap Y^c,\\qquad (X\\cap Y)^c=X^c\\cup Y^c$$`,
   },
   {
-    id: "math-1-10",
-    case_id: "MATH 1.10",
-    title: "Let the universal set be . Let and , with complements taken relative",
-    subsection: "1.1",
-    context:
-      "Let the universal set be $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{4, 5, 6, 7, 8\\}$, with complements taken relative to U.",
+    id: `math-1-10`,
+    case_id: `MATH 1.10`,
+    title: `Union and Intersection Complements for Two Overlapping Sets`,
+    subsection: `1.1`,
+    context: `Let the universal set be $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{4, 5, 6, 7, 8\\}$, with complements taken relative to U.`,
     statements: [
-      "$(A \\cup B)^{c} = \\{8, 9, 10\\}$",
-      "$(A \\cap B)^{c} = A^{c} \\cup B^{c}$",
-      "$A^{c} \\cap B^{c} = \\{6, 7, 8, 9, 10\\}$",
-      "$(A \\cap B)^{c} = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$",
-      "$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$",
+      `$(A \\cup B)^{c} = \\{8, 9, 10\\}$`,
+      `$(A \\cap B)^{c} = A^{c} \\cup B^{c}$`,
+      `$A^{c} \\cap B^{c} = \\{6, 7, 8, 9, 10\\}$`,
+      `$(A \\cap B)^{c} = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$`,
+      `$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
-      "**A.** → False\n\nRebuild the union first from $A=\\{1,2,3,4,5\\}$ and $B=\\{4,5,6,7,8\\}$. Start from $A$ and add what is new in $B$:\n\n- From $A$: $1,2,3,4,5$.\n- From $B$: $4,5$ already listed; $6,7,8$ are new.\n\nSo $A\\cup B=\\{1,2,3,4,5,6,7,8\\}$. Complements of that union inside $U=\\{1,\\ldots,10\\}$ can only be $9$ and $10$. Including $8$ would require $8\\notin A\\cup B$, but $8\\in B$, so the claim's extra element is illegal. The true complement is $\\{9,10\\}$, not $\\{8,9,10\\}$.",
-      "**B.** → True\n\nDe Morgan's second law claims $(A\\cap B)^c=A^c\\cup B^c$. From the given $A=\\{1,\\ldots,5\\}$ and $B=\\{4,\\ldots,8\\}$, scan $A$ against $B$: only $4$ and $5$ sit in both, so $A\\cap B=\\{4,5\\}$ and the left side is $U$ minus those two:\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nNow the complements: drop $A$ from $U$ to get $A^c=\\{6,7,8,9,10\\}$; drop $B$ from $U$ to get $B^c=\\{1,2,3,9,10\\}$. Join them:\n\n- from $A^c$: $6,7,8,9,10$,\n- from $B^c$: $1,2,3$ are new; $9,10$ already listed.\n\nBoth sides equal $\\{1,2,3,6,7,8,9,10\\}$.",
-      "**C.** → False\n\nDe Morgan says $A^c\\cap B^c=(A\\cup B)^c$. From A we already have $(A\\cup B)^c=\\{9,10\\}$. Directly: $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$. Scan $A^c$ against $B^c$:\n\n- $6,7,8$ sit in $A^c$ but also sit in $B$, so they miss $B^c$.\n- $9$ and $10$ sit in both complements.\n\nSo $A^c\\cap B^c=\\{9,10\\}$, not $\\{6,7,8,9,10\\}$. Numbers like $6$, $7$, $8$ belong to $A^c$ but still sit inside $B$, so they fail the \"in both complements\" test.",
-      "**D.** → True\n\nThe claim lists the complement of the overlap. Scan $A=\\{1,2,3,4,5\\}$ against $B=\\{4,5,6,7,8\\}$: $1,2,3$ miss $B$; $4,5$ sit in both. So $A\\cap B=\\{4,5\\}$. Removing $4$ and $5$ from $U=\\{1,\\ldots,10\\}$ leaves exactly $\\{1,2,3,6,7,8,9,10\\}$.",
-      "**E.** → False\n\n$A^c=\\{6,7,8,9,10\\}$ must contribute to the union of complements. Join $A^c$ with $B^c=\\{1,2,3,9,10\\}$:\n\n$$A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nThe claimed list $\\{1,2,3,9,10\\}$ is exactly $B^c$ alone, so it drops $6$, $7$, and $8$. That is the undercount trap.",
+      `**A.** → False
+
+Putting $A$ and $B$ together covers $1$ through $8$:
+
+$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
+
+Complement inside $U=\\{1,\\ldots,10\\}$ is therefore $\\{9,10\\}$. The claimed $\\{8,9,10\\}$ illegally keeps $8$, but $8\\in B$ and therefore $8\\in A\\cup B$.
+
+so the statement is False.`,
+      `**B.** → True
+
+The overlap is $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves $\\{1,2,3,6,7,8,9,10\\}$. The same list is $A^c\\cup B^c$, because escaping an intersection takes only escaping one of the two sets. De Morgan's second law therefore holds, so the statement is True.`,
+      `**C.** → False
+
+$A^c\\cap B^c$ is "outside both," which De Morgan identifies with $(A\\cup B)^c$. Form $A\\cup B=\\{1,\\ldots,8\\}$, so the complement is $\\{9,10\\}$. The claimed $\\{6,7,8,9,10\\}$ is $A^c$ alone: those extra $6,7,8$ miss $A$ but still sit in $B$.
+
+so the statement is False.`,
+      `**D.** → True
+
+$A\\cap B=\\{4,5\\}$. Removing those two from $U=\\{1,\\ldots,10\\}$ leaves
+
+$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}$$
+
+That list keeps $A$-only, $B$-only, and neither, so the statement is True.`,
+      `**E.** → False
+
+$A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$. Their union must include every member of $A^c$:
+
+$$A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}$$
+
+The claimed $\\{1,2,3,9,10\\}$ is $B^c$ alone, so it drops $6,7,8$.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 10,
-    solution_overview:
-      "Same De Morgan toolkit on $U=\\{1,\\ldots,10\\}$, $A=\\{1,\\ldots,5\\}$, $B=\\{4,\\ldots,8\\}$.\n\nBuild the pieces once:\n\n$$A^c=\\{6,7,8,9,10\\},\\quad B^c=\\{1,2,3,9,10\\},$$\n\n$$A\\cup B=\\{1,\\ldots,8\\}\\Rightarrow(A\\cup B)^c=\\{9,10\\},$$\n\n$$A\\cap B=\\{4,5\\}\\Rightarrow(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nThen $A^c\\cap B^c=\\{9,10\\}$ and $A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}$, matching the two De Morgan identities. Several false claims pad those lists with numbers that belong on the *inside* of a set, not the outside.",
+    solution_overview: `Let $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$, with complements taken inside $U$.
+
+De Morgan's identities are
+
+$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c$$
+
+Complement of a union is "outside both." Complement of an intersection is "outside at least one."`,
   },
   {
-    id: "math-1-11",
-    case_id: "MATH 1.11",
-    title: "Partitions of a set",
-    subsection: "1.1",
-    context:
-      "Let $A = \\{1, 2, 3, 4, 5, 6\\}$. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.",
+    id: `math-1-11`,
+    case_id: `MATH 1.11`,
+    title: `Partitions of a set`,
+    subsection: `1.1`,
+    context: `Let $A = \\{1, 2, 3, 4, 5, 6\\}$. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.`,
     statements: [
-      "$P = \\{\\{1,2\\}, \\{3,4\\}, \\{5,6\\}\\}$ is a partition of A.",
-      "Every partition of a set must have exactly the same number of blocks as the set has elements.",
-      "$Q = \\{\\{1,2,3\\}, \\{3,4,5,6\\}\\}$ is a partition of A.",
-      "$R = \\{\\{1,2\\}, \\{3,4\\}, \\{5\\}\\}$ is a partition of A.",
-      "A set with $n \\ge 2$ elements always has more than one possible partition.",
+      `$P = \\{\\{1,2\\}, \\{3,4\\}, \\{5,6\\}\\}$ is a partition of A.`,
+      `Every partition of a set must have exactly the same number of blocks as the set has elements.`,
+      `$Q = \\{\\{1,2,3\\}, \\{3,4,5,6\\}\\}$ is a partition of A.`,
+      `$R = \\{\\{1,2\\}, \\{3,4\\}, \\{5\\}\\}$ is a partition of A.`,
+      `A set with $n \\ge 2$ elements always has more than one possible partition.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nCheck $P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ against $A=\\{1,2,3,4,5,6\\}$.\n\n- Nonempty: each pair has two numbers.\n- Pairwise disjoint: $\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$, $\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$, $\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$ (no number repeats across blocks).\n- Cover: $\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}=A$.\n\nAll three partition conditions hold, so $P$ **is** a partition.",
-      "**B.** → False\n\nPartitions are allowed to clump elements. On the given $A=\\{1,2,3,4,5,6\\}$ two valid partitions already disagree about block count:\n\n- the single-block collection $\\{A\\}=\\{\\{1,2,3,4,5,6\\}\\}$ covers everything with $1$ block,\n- the six singletons $\\{\\{1\\},\\{2\\},\\{3\\},\\{4\\},\\{5\\},\\{6\\}\\}$ use $6$ blocks.\n\nBoth are valid partitions of the same six-element set, so the \"must equal $n$\" rule is false.",
-      "**C.** → False\n\nPairwise disjointness fails as soon as one shared element appears. Check $Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$:\n\nScan $\\{1,2,3\\}$ against $\\{3,4,5,6\\}$: $1$ and $2$ miss the second block, but $3$ sits in both. So $\\{1,2,3\\}\\cap\\{3,4,5,6\\}=\\{3\\}\\ne\\emptyset$. Coverage is irrelevant once that condition is already broken.",
-      "**D.** → False\n\nEven though the listed blocks of $R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$ are nonempty, check coverage against $A=\\{1,2,3,4,5,6\\}$:\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}.$$\n\nScan $A$: $1,2,3,4,5$ appear, but $6\\in A$ is missing. Coverage fails, so $R$ is not a partition.",
-      "**E.** → True\n\nFor the given $A$ with $n=6\\ge 2$, the one-block partition $\\{A\\}$ and the singleton partition $\\{\\{1\\},\\{2\\},\\{3\\},\\{4\\},\\{5\\},\\{6\\}\\}$ are two different valid partitions (different block counts, both covering $A$ without overlap). The same two constructions work for any set with $n\\ge 2$ elements. So there is always more than one.",
+      `**A.** → True
+
+The three pairs $\\{1,2\\}$, $\\{3,4\\}$, $\\{5,6\\}$ use distinct numbers and cover $A=\\{1,\\ldots,6\\}$. Each block is nonempty, every pairwise intersection is empty, and the union is $A$. That is the definition of a partition.
+
+so the statement is True.`,
+      `**B.** → False
+
+Block count is free. The same six-element $A$ admits the one-block partition $\\{A\\}$ and the six-singleton partition, both valid. Forcing "number of blocks equals $n$" would ban clumping, which the definition never does.
+
+so the statement is False.`,
+      `**C.** → False
+
+$Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$ fails pairwise disjointness: the two blocks share $3$. One broken condition already disqualifies a partition, even though the union still equals $A$.
+
+so the statement is False.`,
+      `**D.** → False
+
+$R$'s blocks are nonempty and disjoint, but the union is $\\{1,2,3,4,5\\}$, which misses $6\\in A$. Coverage is the third partition demand, and a hole kills it.
+
+so the statement is False.`,
+      `**E.** → True
+
+For this $A$ with $n=6\\ge 2$, the one-block partition $\\{A\\}$ and the six-singleton partition are two different partitions. The same two constructions work for any set with at least two elements.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 11,
-    solution_overview:
-      "A collection partitions $A=\\{1,2,3,4,5,6\\}$ only when **all three** hold: (i) every block nonempty, (ii) blocks pairwise disjoint, (iii) union equals $A$.\n\n**Case $P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$.** Pairs use distinct numbers and cover everything → partition.\n\n**Case $Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$.** Blocks share $3$ → fails (ii).\n\n**Case $R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$.** Union misses $6$ → fails (iii).\n\nBlock count is free: $\\{A\\}$ is a $1$-block partition, and six singletons is a $6$-block partition. For any set with $n\\ge 2$ elements those two constructions are different, so more than one partition always exists.",
+    solution_overview: `Let $A=\\{1,2,3,4,5,6\\}$. A collection of blocks partitions $A$ only when all three hold: every block is nonempty, the blocks are pairwise disjoint, and their union equals $A$.
+
+Block count is free: one block $\\{A\\}$ and six singletons are both legal partitions of a six-element set. A shared member in two blocks, or a hole in the union, is enough to disqualify a candidate.`,
   },
   {
-    id: "math-1-12",
-    case_id: "MATH 1.12",
-    title: "Counting subsets",
-    subsection: "1.1",
-    context: "Let A be a set with $\\lvert A \\rvert = 5$.",
+    id: `math-1-12`,
+    case_id: `MATH 1.12`,
+    title: `Counting subsets`,
+    subsection: `1.1`,
+    context: `Let A be a set with $\\lvert A \\rvert = 5$.`,
     statements: [
-      "The number of subsets of A is 32.",
-      "The number of proper subsets of A is 31.",
-      "The number of subsets of A containing exactly 4 elements is 10.",
-      "The number of nonempty subsets of A is 31.",
-      "The number of subsets of A containing an even number of elements (0, 2, or 4) is 15.",
+      `The number of subsets of A is 32.`,
+      `The number of proper subsets of A is 31.`,
+      `The number of subsets of A containing exactly 4 elements is 10.`,
+      `The number of nonempty subsets of A is 31.`,
+      `The number of subsets of A containing an even number of elements (0, 2, or 4) is 15.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe task gives $|A|=5$. Each subset is an include/exclude choice for every element, so there are\n\n$$2^5=32$$\n\nsubsets in all. That matches the claim.",
-      "**B.** → True\n\nProper subsets are all subsets except $A$ itself. From $|A|=5$ we have $2^5=32$ subsets total, so dropping the one copy of $A$ leaves\n\n$$32-1=31.$$\n\nThat is the number of proper subsets.",
-      "**C.** → False\n\nChoosing $4$ elements out of $5$ is the same as choosing which one element to omit, and there are five choices for the omitted element. The binomial is\n\n$$\\binom{5}{4}=\\frac{5!}{4!\\,1!}=5,$$\n\nnot $10$. The claim's $10$ looks like $\\binom{5}{2}$ or a double-count, but the correct count is $5$.",
-      "**D.** → True\n\nNonempty subsets exclude only $\\emptyset$. With $32$ subsets in total from $|A|=5$, that leaves\n\n$$32-1=31$$\n\nnonempty subsets, matching the claim.",
-      "**E.** → False\n\nBreak the even sizes $0$, $2$, and $4$ with binomial coefficients:\n\n$$\\binom{5}{0}=1,\\qquad \\binom{5}{2}=\\frac{5\\cdot 4}{2}=10,\\qquad \\binom{5}{4}=5.$$\n\nSumming gives $1+10+5=16$ even-sized subsets. Saying $15$ is the classic off-by-one from forgetting the empty set or mis-adding the binomials.",
+      `**A.** → True
+
+Each of five elements is an independent include-or-exclude, so
+
+$$2^5=32$$
+
+subsets in total, so the statement is True.`,
+      `**B.** → True
+
+Proper subsets are all subsets except $A$ itself:
+
+$$32-1=31$$
+
+so the statement is True.`,
+      `**C.** → False
+
+Choosing $4$ out of $5$ is choosing which one element to omit:
+
+$$\\binom{5}{4}=5$$
+
+not $10$. The $10$ looks like $\\binom{5}{2}$, the two-element count.
+
+so the statement is False.`,
+      `**D.** → True
+
+Nonempty subsets drop only $\\emptyset$, leaving
+
+$$32-1=31$$
+
+so the statement is True.`,
+      `**E.** → False
+
+Even sizes $0,2,4$ add as
+
+$$\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}=1+10+5=16$$
+
+not $15$. For any finite set the even-sized and odd-sized subsets are equally many, here $16$ and $16$.
+
+so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 12,
-    solution_overview:
-      "No need to name the five elements. Each subset is an include/exclude choice for every element, so\n\n$$2^5=32$$\n\nsubsets in total.\n\n| Kind of subset | Count |\n| --- | --- |\n| all subsets | $32$ |\n| proper ($\\ne A$) | $32-1=31$ |\n| nonempty | $32-1=31$ |\n| size exactly $4$ | $\\binom{5}{4}=5$ |\n| even size $\\{0,2,4\\}$ | $\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}=1+10+5=16$ |\n\nChoosing $4$ out of $5$ is the same as choosing which one element to leave out, five ways, not ten.",
+    solution_overview: `Let $A$ be a set with $|A|=5$. Each subset is an include-or-exclude choice for every element, so the power set has size $2^{|A|}$.
+
+Proper subsets drop $A$ itself. Nonempty subsets drop $\\emptyset$. Subsets of a fixed size $k$ are counted by $\\binom{5}{k}$.`,
   },
   {
-    id: "math-1-13",
-    case_id: "MATH 1.13",
-    title: "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated",
-    subsection: "1.1",
-    context: "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.",
+    id: `math-1-13`,
+    case_id: `MATH 1.13`,
+    title: `Interval Notation: Half-Open Intersections and a Universal Claim`,
+    subsection: `1.1`,
+    context: `Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.`,
     statements: [
-      "$A \\cap B = [5, 10]$",
-      "$A \\cup B = (0, 15]$",
-      "$10 \\in A \\cap B$",
-      "$5 \\in A \\setminus B$",
-      'The statement "$x \\in A \\Rightarrow x \\in B$" is true for all x.',
+      `$A \\cap B = [5, 10]$`,
+      `$A \\cup B = (0, 15]$`,
+      `$10 \\in A \\cap B$`,
+      `$5 \\in A \\setminus B$`,
+      `The statement "$x \\in A \\Rightarrow x \\in B$" is true for all x.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nTranslate the given intervals: $A=(0,10]$ means $0<x\\le 10$, and $B=[5,15)$ means $5\\le x<15$. Intersection keeps numbers that satisfy both inequalities at once.\n\nCheck the candidate endpoints:\n\n- At $x=5$: $0<5\\le 10$ so $5\\in A$, and $5\\le 5<15$ so $5\\in B$. Keep $5$ (closed).\n- At $x=10$: $0<10\\le 10$ so $10\\in A$, and $5\\le 10<15$ so $10\\in B$. Keep $10$ (closed).\n- Below $5$, say $x=4$: $4\\in A$ but $4<5$ so $4\\notin B$. Drop it.\n- Above $10$, say $x=11$: $11\\in B$ but $11>10$ so $11\\notin A$. Drop it.\n\nThe tighter bounds are $5\\le x\\le 10$, which is **$[5,10]$**.",
-      "**B.** → False\n\nUnion keeps numbers in $A$ or in $B$ (or both). From $0<x\\le 10$ or $5\\le x<15$, coverage runs from just above $0$ up to just below $15$.\n\nEndpoint check at the right: $15$ satisfies $x\\ge 5$ but fails $x<15$, so $15\\notin B$. Also $15\\notin A$ because $15>10$. Therefore $15\\notin A\\cup B$. The claimed interval $(0,15]$ illegally closes the right end. The correct union is the half-open $(0,15)$.",
-      "**C.** → True\n\nCheck $10$ against both given intervals:\n\n- $A=(0,10]$: $0<10\\le 10$, so $10\\in A$.\n- $B=[5,15)$: $5\\le 10<15$, so $10\\in B$.\n\nBoth memberships hold, so **$10\\in A\\cap B$**.",
-      "**D.** → False\n\n$A\\setminus B$ keeps points of $A=(0,10]$ that fail membership in $B=[5,15)$. Check $x=5$:\n\n- $0<5\\le 10$, so $5\\in A$.\n- $5$ is the left endpoint of $B=[5,15)$, so $5\\in B$.\n\nOnce $5$ is in $B$, it is removed by the difference and cannot sit in $A\\setminus B$.",
-      "**E.** → False\n\nThe claim is universal: every $x\\in A$ would need $x\\in B$, i.e. $A\\subseteq B$. Any point in $(0,5)$ is in $A$ yet below $B$'s left endpoint. Explicit witness: $x=1$.\n\n- $0<1\\le 10$, so $1\\in A$.\n- $1<5$, so $1\\notin B$.\n\nOne counterexample falsifies the \"for all $x$\" statement.",
+      `**A.** → True
+
+A point sits in both intervals when $0<x\\le 10$ and $5\\le x<15$. The tighter bounds are $5\\le x\\le 10$, i.e.
+
+$$A\\cap B=[5,10]$$
+
+Both endpoints survive: $5$ is the closed left end of $B$ and sits in $A$, and $10$ is the closed right end of $A$ and sits in $B$.
+
+so the statement is True.`,
+      `**B.** → False
+
+Union runs from just above $0$ to just below $15$, so $(0,15)$, not $(0,15]$. The right end $15$ fails $x<15$ in $B$ and fails $x\\le 10$ in $A$, so $15\\notin A\\cup B$. A union cannot include a point that both inputs excluded.
+
+so the statement is False.`,
+      `**C.** → True
+
+$10$ is the right endpoint of $A=(0,10]$, hence $10\\in A$. Also $5\\le 10<15$, hence $10\\in B$. Both memberships hold, so $10\\in A\\cap B$.
+
+so the statement is True.`,
+      `**D.** → False
+
+$A\\setminus B$ keeps points of $A$ that miss $B$. The leftover of $A$ below $B$ is $(0,5)$. The point $5$ sits in $A$ and in $B$ (it is $B$'s closed left end), so difference deletes it. $5\\in A\\setminus B$ would require $5\\notin B$.
+
+so the statement is False.`,
+      `**E.** → False
+
+The universal implication $x\\in A\\Rightarrow x\\in B$ is $A\\subseteq B$. Any witness in $(0,5)$ breaks it: $x=1$ is in $A$ and below $B$'s left end. One counterexample kills the inclusion.
+
+so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 13,
-    solution_overview:
-      "Translate brackets into inequalities first.\n\n$$A=(0,10]\\iff 0<x\\le 10,\\qquad B=[5,15)\\iff 5\\le x<15.$$\n\n**Both at once (intersection):** the tighter bounds give $5\\le x\\le 10$, i.e. $[5,10]$.\n\n**Either (union):** from just above $0$ up to just below $15$, i.e. $(0,15)$. Note $15$ is excluded because $B$ excludes it.\n\n**In $A$ but not $B$:** $0<x<5$, i.e. $(0,5)$.\n\nSo $10$ sits in the intersection (both endpoints of $[5,10]$ are closed), while $5$ is in $B$ and therefore **not** in $A\\setminus B$. The implication “$x\\in A\\Rightarrow x\\in B$ for all $x$” is just $A\\subseteq B$; any witness in $(0,5)$, say $x=1$, breaks it.",
+    solution_overview: `Translate the brackets into inequalities. $A=(0,10]$ means $0<x\\le 10$, and $B=[5,15)$ means $5\\le x<15$.
+
+Intersection takes the tighter bounds that satisfy both. Union takes the outer bounds that satisfy at least one, without closing an endpoint that both inputs excluded. Difference $A\\setminus B$ is the part of $A$ that $B$ has not yet started.`,
   },
   {
-    id: "math-1-14",
-    case_id: "MATH 1.14",
-    title: "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum",
-    subsection: "1.1",
-    context:
-      "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.",
+    id: `math-1-14`,
+    case_id: `MATH 1.14`,
+    title: `Three-Way Museum Visits and Inclusion-Exclusion`,
+    subsection: `1.1`,
+    context: `A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.`,
     statements: [
-      "$\\lvert A \\cup B \\cup C \\rvert = 155$",
-      "The number of tourists who visited none of the three museums is 5",
-      "The number who visited exactly A and B (but not C) is 30",
-      "The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30",
-      "The number who visited at least two of the three museums is 65",
+      `$\\lvert A \\cup B \\cup C \\rvert = 155$`,
+      `The number of tourists who visited none of the three museums is 5`,
+      `The number who visited exactly A and B (but not C) is 30`,
+      `The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30`,
+      `The number who visited at least two of the three museums is 65`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
-      "**A.** → False\n\nRun inclusion-exclusion on the given counts $|A|=80$, $|B|=70$, $|C|=60$, pair totals $30,25,20$, and triple $10$:\n\n$$|A\\cup B\\cup C|=80+70+60-30-25-20+10.$$\n\n$$80+70+60=210,\\qquad 30+25+20=75,\\qquad 210-75+10=145.$$\n\nThe claim's $155$ overshoots both the correct formula and the survey size $150$, so it cannot be the union size.",
-      "**B.** → True\n\n\"None of the three museums\" is the survey size minus the union. Inclusion-exclusion already gave $|A\\cup B\\cup C|=145$ among $150$ tourists, so\n\n$$150-145=5$$\n\nvisited none.",
-      "**C.** → False\n\nThe pair total \"visited both $A$ and $B$\" still includes people who also saw $C$. To get exactly $A$ and $B$ (not $C$), subtract the triple count from the given pair total $30$:\n\n$$|A\\cap B\\setminus C|=30-10=20.$$\n\nLeaving the raw $30$ counts some triple visitors in the exact-pair region. The claim's $30$ overstates that region.",
-      "**D.** → False\n\nOnly-$A$ is $|A|$ minus the $A\\cap B$ and $A\\cap C$ pair totals, then plus the triple once (because those $10$ were removed twice):\n\n$$|A\\setminus(B\\cup C)|=80-30-20+10=40.$$\n\nThe claim's $80-30-20=30$ forgets that $+10$ correction.",
-      "**E.** → False\n\n\"At least two museums\" means the three exact-pair regions plus the triple. From the given pair totals $\\{30,25,20\\}$ and triple $10$:\n\n- exact $A$ and $B$ not $C$: $30-10=20$,\n- exact $B$ and $C$ not $A$: $25-10=15$,\n- exact $A$ and $C$ not $B$: $20-10=10$,\n- all three: $10$.\n\nAdding: $20+15+10+10=55$, not the claimed $65$.",
+      `**A.** → False
+
+Inclusion-exclusion on the given counts is
+
+$$80+70+60-30-25-20+10=145$$
+
+not $155$. The $155$ overshoots both the formula and the survey size $150$.
+
+so the statement is False.`,
+      `**B.** → True
+
+"None" is survey size minus the union. First form the union:
+
+$$80+70+60-30-25-20+10=145$$
+
+Then
+
+$$150-145=5$$
+
+so the statement is True.`,
+      `**C.** → False
+
+The pair total $30$ still includes the $10$ who also saw $C$. Exact $A$ and $B$ not $C$ is
+
+$$30-10=20$$
+
+not $30$. Leaving the raw $30$ mixes "at least those two" with "exactly those two."
+
+so the statement is False.`,
+      `**D.** → False
+
+Only-$A$ subtracts both pair totals from $80$ and adds the triple back once (it was removed twice):
+
+$$80-30-20+10=40$$
+
+The claimed $80-30-20=30$ forgets the $+10$.
+
+so the statement is False.`,
+      `**E.** → False
+
+At least two museums is the three exact-pair regions plus the triple. Exact pairs are $30-10=20$, $25-10=15$, and $20-10=10$, so
+
+$$20+15+10+10=55$$
+
+not $65$.
+
+so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 14,
-    solution_overview:
-      "Three-set survey with $|A|=80$, $|B|=70$, $|C|=60$, pair totals $\\{30,25,20\\}$, and triple overlap $10$, among $150$ tourists.\n\n**Inclusion-exclusion** for the union:\n\n$$|A\\cup B\\cup C|=80+70+60-30-25-20+10=145.$$\n\nThen “none” is $150-145=5$.\n\nPair totals still include the triple visitors, so the **exact-pair** regions are $30-10=20$, $25-10=15$, $20-10=10$.\n\nOnly-$A$ needs care: subtract both pair totals from $80$, then **add the triple back once** (it was removed twice):\n\n$$80-30-20+10=40.$$\n\n“At least two museums” = three exact pairs + the triple $=20+15+10+10=55$.",
+    solution_overview: `A survey of $150$ tourists has $|A|=80$, $|B|=70$, $|C|=60$, pair totals $|A\\cap B|=30$, $|B\\cap C|=25$, $|A\\cap C|=20$, and triple overlap $|A\\cap B\\cap C|=10$.
+
+Three-set inclusion-exclusion counts the union by adding the headlines, subtracting the pair totals, then adding the triple back once:
+
+$$\\lvert A\\cup B\\cup C\\rvert=\\lvert A\\rvert+\\lvert B\\rvert+\\lvert C\\rvert-\\lvert A\\cap B\\rvert-\\lvert B\\cap C\\rvert-\\lvert A\\cap C\\rvert+\\lvert A\\cap B\\cap C\\rvert$$
+
+Pair totals still include the triple visitors. An exact-pair region subtracts the triple; an only-$A$ region subtracts both pair totals and adds the triple back once.`,
   },
   {
-    id: "math-1-15",
-    case_id: "MATH 1.15",
-    title: "Infinite sets and cardinality",
-    subsection: "1.1",
-    context:
-      "Let $N = \\{1, 2, 3,...\\}$ be the natural numbers and $E = \\{2, 4, 6,...\\}$ be the even natural numbers.",
+    id: `math-1-15`,
+    case_id: `MATH 1.15`,
+    title: `Infinite sets and cardinality`,
+    subsection: `1.1`,
+    context: `Let $N = \\{1, 2, 3,...\\}$ be the natural numbers and $E = \\{2, 4, 6,...\\}$ be the even natural numbers.`,
     statements: [
-      "E is a proper subset of N.",
-      "Since E is a proper subset of N, E must have strictly fewer elements than N.",
-      "The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.",
-      "The fact that $E \\subsetneq N$ yet has the same cardinality as N shows that the finite-set intuition “proper subset $\\Rightarrow$ fewer elements” does not carry over to infinite sets.",
-      "Every infinite subset of N is equal to N itself (contains all the natural numbers).",
+      `E is a proper subset of N.`,
+      `Since E is a proper subset of N, E must have strictly fewer elements than N.`,
+      `The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.`,
+      `The fact that $E \\subsetneq N$ yet has the same cardinality as N shows that the finite-set intuition “proper subset $\\Rightarrow$ fewer elements” does not carry over to infinite sets.`,
+      `Every infinite subset of N is equal to N itself (contains all the natural numbers).`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe claim is that $E$ is a proper subset of $N$. Check both halves against $N=\\{1,2,3,\\ldots\\}$ and $E=\\{2,4,6,\\ldots\\}$.\n\n- Subset: every even natural $2,4,6,\\ldots$ is already a natural number, so $E\\subseteq N$.\n- Proper: the odd $1$ sits in $N$ but $1\\notin E$, so $E\\ne N$.\n\nHence $E$ is a **proper** subset of $N$.",
-      "**B.** → False\n\nFinite intuition says \"proper subset ⇒ fewer elements,\" but here the map $f(n)=2n$ pairs each natural with a unique even:\n\n- $f(1)=2$, $f(2)=4$, $f(3)=6$, and so on.\n- Different inputs give different evens (one-to-one).\n- Every even $2k$ is $f(k)$ (onto $E$).\n\nThat bijection forces $|E|=|N|$ despite $E\\subsetneq N$. The \"must have fewer\" claim fails for this infinite pair.",
-      "**C.** → False\n\nA bijection onto the odds would need odd outputs. Check the formula $f(n)=2n$ on actual values:\n\n- $f(1)=2$ (even),\n- $f(2)=4$ (even),\n- $f(3)=6$ (even).\n\nEvery value $2n$ is even. No odd natural is reached, so $f$ is not a bijection onto the odds. The formula is the standard bijection onto the *evens*, not onto the odds.",
-      "**D.** → True\n\nThe claim restates two facts already in hand: $E\\subsetneq N$ (odds such as $1,3,5$ are missing from $E$) while $f(n)=2n$ is a bijection $N\\to E$, so $|E|=|N|$. That pair is precisely why the finite slogan \"proper subset $\\Rightarrow$ fewer elements\" fails here.",
-      "**E.** → False\n\nCounterexample: $E$ itself. Scan $N$ against $E$:\n\n- $2,4,6,\\ldots$ sit in $E$, so $E$ is infinite (no last even),\n- $1,3,5,\\ldots$ sit in $N$ but miss $E$.\n\nSo an infinite subset of $N$ need not equal $N$.",
+      `**A.** → True
+
+Every even natural is already a natural, and $1\\in N\\setminus E$, so $E$ is a proper subset of $N$. Proper needs both inclusion and inequality; missing the odd $1$ supplies the inequality.
+
+so the statement is True.`,
+      `**B.** → False
+
+Finite intuition says a proper subset is smaller. The map $f(n)=2n$ pairs each natural with a unique even and hits every even, so $|E|=|N|$ despite $E\\subsetneq N$. "Must have fewer" is a finite-set slogan.
+
+so the statement is False.`,
+      `**C.** → False
+
+$f(n)=2n$ always outputs an even: $f(1)=2$, $f(2)=4$, never an odd. So it is the standard bijection onto the evens, not onto the odds. A bijection onto the odds would need something like $2n-1$.
+
+so the statement is False.`,
+      `**D.** → True
+
+Two facts sit together: $E\\subsetneq N$ because odds are missing, and $f(n)=2n$ is a bijection, so $|E|=|N|$. That pair is exactly why "proper subset implies fewer elements" fails for infinite sets.
+
+so the statement is True.`,
+      `**E.** → False
+
+$E$ itself is the counterexample: infinite (no last even) and still missing every odd, so not equal to $N$. Infinite subset does not mean "the whole set."
+
+so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 15,
-    solution_overview:
-      "Let $N=\\{1,2,3,\\ldots\\}$ and $E=\\{2,4,6,\\ldots\\}$.\n\n**Proper subset, yes.** Every even natural is natural, but $1\\in N\\setminus E$, so $E\\subsetneq N$.\n\n**Same size anyway.** The map $f(n)=2n$ is a **bijection** $N\\to E$: different inputs give different evens, and every even is hit. So $|E|=|N|$ even though $E$ is a proper subset, the finite-set slogan “proper subset ⇒ fewer elements” fails for infinite sets.\n\n**Wrong target.** The same formula $2n$ always outputs an even number, so it is *not* a bijection onto the odd naturals (those need $2n-1$).\n\n**Infinite proper subsets exist.** $E$ itself is infinite (no last even) and still misses every odd, so it is not equal to $N$.",
+    solution_overview: `Let $N=\\{1,2,3,\\ldots\\}$ and $E=\\{2,4,6,\\ldots\\}$. For finite sets a proper subset is strictly smaller. For infinite sets, equal cardinality means a bijection exists, even if one set sits properly inside the other.
+
+The map $f(n)=2n$ is the standard pairing of each natural with an even. A different target (the odds) needs a different formula.`,
   },
   {
-    id: "math-1-16",
-    case_id: "MATH 1.16",
-    title: "Elements vs. Subsets of an Even-Number Set",
-    subsection: "1.1",
-    context: "Let $A = \\{2, 4, 6, 8, 10, 12\\}$.",
+    id: `math-1-16`,
+    case_id: `MATH 1.16`,
+    title: `Elements vs. Subsets of an Even-Number Set`,
+    subsection: `1.1`,
+    context: `Let $A = \\{2, 4, 6, 8, 10, 12\\}$.`,
     statements: [
-      "$6 \\in A$.",
-      "$\\{6\\} \\in A$.",
-      "$\\{6, 8\\} \\subseteq A$.",
-      "$\\emptyset \\subseteq A$.",
-      "A has exactly $63$ proper subsets.",
+      `$6 \\in A$.`,
+      `$\\{6\\} \\in A$.`,
+      `$\\{6, 8\\} \\subseteq A$.`,
+      `$\\emptyset \\subseteq A$.`,
+      `A has exactly $63$ proper subsets.`,
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nMembership $6\\in A$ asks whether $6$ is one of the written elements of $A=\\{2,4,6,8,10,12\\}$. Scan the list:\n\n- $2$, $4$, then $6$, then $8$, $10$, $12$.\n\nYes, $6$ appears, so the claim holds.",
-      "**B.** → False\n\nMembership asks whether the object $\\{6\\}$ appears in the written list $\\{2,4,6,8,10,12\\}$. Scan those six numbers: each is an even integer, none is a set. The list contains the number $6$, not the singleton set $\\{6\\}$. The true statement nearby is $\\{6\\}\\subseteq A$ (because $6\\in A$), which is a different relation.",
-      "**C.** → True\n\nSubsethood $\\{6,8\\}\\subseteq A$ asks whether each of $6$ and $8$ appears in the given list $A=\\{2,4,6,8,10,12\\}$. Scan:\n\n- $6$ is on the list, so $6\\in A$.\n- $8$ is on the list, so $8\\in A$.\n\nBoth members sit in $A$, so the inclusion holds.",
-      "**D.** → True\n\nThe claim is $\\emptyset\\subseteq A$ for $A=\\{2,4,6,8,10,12\\}$. The empty set has no members that could sit outside $A$, so the subset test passes vacuously.",
-      "**E.** → True\n\nCount the given list $A=\\{2,4,6,8,10,12\\}$: six distinct numbers, so $|A|=6$. There are\n\n$$2^6=64$$\n\nsubsets in all. Proper subsets exclude only the full set $A$ itself, leaving $64-1=63$. The count matches the claim.",
+      `**A.** → True
+
+$6$ is written on the roster $\\{2,4,6,8,10,12\\}$, so $6\\in A$. Membership is that lookup, not a subset test.
+
+so the statement is True.`,
+      `**B.** → False
+
+$\\{6\\}$ is a set, and $A$'s roster is six even integers, none of them a set. So $\\{6\\}\\notin A$ even though $\\{6\\}\\subseteq A$ because $6\\in A$.
+
+so the statement is False.`,
+      `**C.** → True
+
+$\\{6,8\\}\\subseteq A$ asks whether each of $6$ and $8$ sits on the roster; both do. Subsethood never asks whether the box $\\{6,8\\}$ itself appears as an element.
+
+so the statement is True.`,
+      `**D.** → True
+
+$\\emptyset$ has no member that could sit outside $A$, so $\\emptyset\\subseteq A$ vacuously. This is not $\\emptyset\\in A$; the empty set is not one of the six even numbers.
+
+so the statement is True.`,
+      `**E.** → True
+
+Six distinct numbers give $2^6=64$ subsets. Proper subsets drop only $A$ itself, leaving
+
+$$64-1=63$$
+
+so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 16,
-    solution_overview:
-      "$A=\\{2,4,6,8,10,12\\}$, six even numbers, nothing else.\n\nAsk of each claim: is the thing an **element** (one of those six numbers) or a **subset** (a collection of them)?\n\n• $6$ is on the list → $6\\in A$.\n\n• The singleton object $\\{6\\}$ is a set, not a number on the list → $\\{6\\}\\notin A$, even though $\\{6\\}\\subseteq A$.\n\n• $\\{6,8\\}$ has both members in $A$ → subset.\n\n• $\\emptyset$ always subsets every set.\n\n• Total subsets: $2^6=64$; drop $A$ itself to get $63$ proper subsets.",
+    solution_overview: `Let $A=\\{2,4,6,8,10,12\\}$, six even numbers and nothing else.
+
+Membership $x\\in A$ asks whether $x$ is one of those six numbers. Subsethood $S\\subseteq A$ asks whether every member of $S$ is one of those numbers. The two questions disagree as soon as the left-hand object is a set rather than a number.
+
+A set of $n$ elements has $2^n$ subsets. Proper subsets drop $A$ itself.`,
   },
   {
-    id: "math-1-17",
-    case_id: "MATH 1.17",
-    title: "Set-Builder Notation from a Quadratic Condition",
-    subsection: "1.1",
-    context: "Let $A = \\{x \\in \\mathbb{Z} : x^2 - 5x + 6 = 0\\}$ and $B = \\{2, 3\\}$.",
+    id: `math-1-17`,
+    case_id: `MATH 1.17`,
+    title: `Set-Builder Notation from a Quadratic Condition`,
+    subsection: `1.1`,
+    context: `Let $A = \\{x \\in \\mathbb{Z} : x^2 - 5x + 6 = 0\\}$ and $B = \\{2, 3\\}$.`,
     statements: [
-      "$A = B$.",
-      "$3 \\in A$.",
-      "$A = \\{2\\}$ (only the smaller root).",
-      "$\\lvert A\\rvert = 2$.",
-      "$C = \\{x \\in \\mathbb{N} : x^2 - 5x + 6 = 0 \\land x > 2\\}$ satisfies $C = \\{3\\}$.",
+      `$A = B$.`,
+      `$3 \\in A$.`,
+      `$A = \\{2\\}$ (only the smaller root).`,
+      `$\\lvert A\\rvert = 2$.`,
+      `$C = \\{x \\in \\mathbb{N} : x^2 - 5x + 6 = 0 \\land x > 2\\}$ satisfies $C = \\{3\\}$.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe set-builder keeps integer roots of $x^2-5x+6=0$. Factor and check each root against $Z$:\n\n$$x^2-5x+6=(x-2)(x-3)=0\\implies x=2\\text{ or }x=3.$$\n\n- $2\\in Z$ and $2^2-5\\cdot 2+6=4-10+6=0$, so $2\\in A$.\n- $3\\in Z$ and $3^2-5\\cdot 3+6=9-15+6=0$, so $3\\in A$.\n\nNo other integer roots exist, so $A=\\{2,3\\}$. The given $B=\\{2,3\\}$ is the same list, hence $A=B$.",
-      "**B.** → True\n\nThe claim is $3\\in A$. Check the defining rule $A=\\{x\\in Z:x^2-5x+6=0\\}$:\n\n- $3$ is an integer, so $3\\in Z$.\n- $3^2-5\\cdot 3+6=9-15+6=0$, so the equation holds.\n\nBoth parts succeed, so $3$ belongs to $A$.",
-      "**C.** → False\n\nFactorization $(x-2)(x-3)=0$ produces two integer roots. Check both:\n\n- $2\\in Z$ and the quadratic vanishes at $2$, so $2\\in A$.\n- $3\\in Z$ and the quadratic vanishes at $3$, so $3\\in A$.\n\nKeeping \"only the smaller root\" would describe $\\{2\\}$, but $A$ is defined by the full equation over $Z$, so both $2$ and $3$ stay. The trap quietly deletes a valid root.",
-      "**D.** → True\n\nCardinality counts distinct members of $A$. The quadratic contributes two different integer roots, already checked: $2$ and $3$. So $|A|=2$.",
-      "**E.** → True\n\nNatural roots of the quadratic are still $2$ and $3$; the extra filter $x>2$ then re-checks each:\n\n- $2\\in\\mathbb N$ but $2>2$ fails, so $2\\notin C$.\n- $3\\in\\mathbb N$, $3>2$, and $3$ solves the equation, so $3\\in C$.\n\nDirect check leaves only $C=\\{3\\}$ as claimed.",
+      `**A.** → True
+
+Factor the quadratic:
+
+$$x^2-5x+6=(x-2)(x-3)=0$$
+
+so the roots are $x=2$ and $x=3$. Both are integers, hence
+
+$$A=\\{2,3\\}$$
+
+The given $B=\\{2,3\\}$ is the same set, so the statement is True.`,
+      `**B.** → True
+
+$3$ is an integer and the quadratic vanishes at $3$:
+
+$$3^2-5\\cdot 3+6=9-15+6=0$$
+
+so $3\\in A$. Membership is that defining test succeeding, not a second roster scan.
+
+so the statement is True.`,
+      `**C.** → False
+
+Both $2$ and $3$ solve the equation over $\\mathbb{Z}$, so $A=\\{2,3\\}$, not $\\{2\\}$. Keeping "only the smaller root" quietly adds an extra constraint $x<3$ that the set-builder never wrote.
+
+so the statement is False.`,
+      `**D.** → True
+
+Two distinct integer roots give
+
+$$\\lvert A\\rvert=2$$
+
+Cardinality counts members, not the degree of the polynomial in some other sense.
+
+so the statement is True.`,
+      `**E.** → True
+
+$C$ keeps natural-number roots of the same quadratic that also satisfy $x>2$. Of the two roots, $2>2$ fails and $3>2$ holds, so $C=\\{3\\}$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 17,
-    solution_overview:
-      "Start from the given facts in the task, then check each claim against them.\n\nSolve first, filter second.\n\n$$x^2-5x+6=(x-2)(x-3)=0\\implies x=2\\text{ or }x=3.$$\n\nBoth roots are integers, so $A=\\{2,3\\}$. The given $B=\\{2,3\\}$ is the same set, and $|A|=2$.\n\nFor $C$, keep natural-number roots that also satisfy $x>2$: that drops $2$ and leaves **$\\{3\\}$**.",
+    solution_overview: `Let $A=\\{x\\in\\mathbb{Z}:x^2-5x+6=0\\}$ and $B=\\{2,3\\}$.
+
+Solve the quadratic first, then keep those roots that lie in the named universe. The same equation with a tighter universe, or with an extra inequality, produces a different set.`,
   },
   {
-    id: "math-1-18",
-    case_id: "MATH 1.18",
-    title: "Counting the Power Set of a Four-Letter Set",
-    subsection: "1.1",
-    context: "Let $D = \\{w, x, y, z\\}$.",
+    id: `math-1-18`,
+    case_id: `MATH 1.18`,
+    title: `Counting the Power Set of a Four-Letter Set`,
+    subsection: `1.1`,
+    context: `Let $D = \\{w, x, y, z\\}$.`,
     statements: [
-      "$\\mathcal{P}(D)$ has $16$ elements.",
-      "$\\{w, x\\} \\in \\mathcal{P}(D)$.",
-      "There are exactly $4$ subsets of D containing exactly $3$ elements.",
-      "$D \\in \\mathcal{P}(D)$.",
-      "There are exactly $5$ subsets of D containing exactly $2$ elements.",
+      `$\\mathcal{P}(D)$ has $16$ elements.`,
+      `$\\{w, x\\} \\in \\mathcal{P}(D)$.`,
+      `There are exactly $4$ subsets of D containing exactly $3$ elements.`,
+      `$D \\in \\mathcal{P}(D)$.`,
+      `There are exactly $5$ subsets of D containing exactly $2$ elements.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\n$D=\\{w,x,y,z\\}$ has four letters. Each subset is an include/exclude choice for every letter, giving\n\n$$2^4=16$$\n\nsubsets. That is $|\\mathcal P(D)|$, matching the claim.",
-      "**B.** → True\n\nAn object sits in $\\mathcal P(D)$ precisely when it is a subset of $D=\\{w,x,y,z\\}$. Check the two members of $\\{w,x\\}$:\n\n- $w$ is a letter of $D$, so $w\\in D$.\n- $x$ is a letter of $D$, so $x\\in D$.\n\nBoth sit in $D$, so $\\{w,x\\}\\subseteq D$ and therefore $\\{w,x\\}\\in\\mathcal P(D)$.",
-      "**C.** → True\n\nEach $3$-element subset of $D=\\{w,x,y,z\\}$ omits exactly one letter:\n\n- omit $w$: $\\{x,y,z\\}$,\n- omit $x$: $\\{w,y,z\\}$,\n- omit $y$: $\\{w,x,z\\}$,\n- omit $z$: $\\{w,x,y\\}$.\n\nFour subsets, matching $\\binom{4}{3}=4$ and supporting the claim.",
-      "**D.** → True\n\nThe power set contains every subset of $D$, including $D$ itself. Check $D\\subseteq D$ on the given letters: $w,x,y,z$ all sit in $D$ by construction. Since $D\\subseteq D$ always, we have $D\\in\\mathcal P(D)$.",
-      "**E.** → False\n\nList the pairs of $D=\\{w,x,y,z\\}$ to see the undercount:\n\n- $\\{w,x\\}$, $\\{w,y\\}$, $\\{w,z\\}$,\n- $\\{x,y\\}$, $\\{x,z\\}$,\n- $\\{y,z\\}$.\n\nSix of them. Binomial $\\binom{4}{2}=\\frac{4\\cdot 3}{2}=6$ confirms the list. Claiming $5$ drops one pair with no justification.",
+      `**A.** → True
+
+Four letters, each kept or left out independently, give
+
+$$2^4=16$$
+
+subsets, so $|\\mathcal P(D)|=16$.
+
+so the statement is True.`,
+      `**B.** → True
+
+$S\\in\\mathcal P(D)$ means $S\\subseteq D$. Both $w$ and $x$ are letters of $D$, so $\\{w,x\\}\\subseteq D$ and therefore $\\{w,x\\}\\in\\mathcal P(D)$. That is not $\\{w,x\\}\\in D$; $D$'s elements are letters, not pairs.
+
+so the statement is True.`,
+      `**C.** → True
+
+Each $3$-element subset omits exactly one of the four letters, so there are four of them, matching
+
+$$\\binom{4}{3}=4$$
+
+so the statement is True.`,
+      `**D.** → True
+
+The power set contains every subset of $D$, including $D$ itself, because $D\\subseteq D$. This is $D\\in\\mathcal P(D)$, not $D\\in D$.
+
+so the statement is True.`,
+      `**E.** → False
+
+The pairs of four letters number
+
+$$\\binom{4}{2}=6$$
+
+not $5$. Claiming $5$ drops one pair with no justification.
+
+so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 18,
-    solution_overview:
-      "Four letters $D=\\{w,x,y,z\\}$ mean $2^4=16$ subsets, i.e. $|\\mathcal P(D)|=16$.\n\nA set $S$ belongs to the power set precisely when $S\\subseteq D$. In particular both $\\{w,x\\}$ and $D$ itself are subsets, hence elements of $\\mathcal P(D)$.\n\nSize counts use binomial coefficients:\n\n| Size $k$ | Number of subsets |\n| --- | --- |\n| $3$ | $\\binom{4}{3}=4$ |\n| $2$ | $\\binom{4}{2}=6$ |\n\n(Choosing $3$ out of $4$ is the same as choosing which one letter to omit.)",
+    solution_overview: `Let $D=\\{w,x,y,z\\}$. Four letters mean $2^4$ subsets, which is the size of the power set $\\mathcal P(D)$.
+
+A set $S$ belongs to $\\mathcal P(D)$ precisely when $S\\subseteq D$. Subsets of a fixed size $k$ are counted by $\\binom{4}{k}$.`,
   },
   {
-    id: "math-1-19",
-    case_id: "MATH 1.19",
-    title: "Subset, Proper Subset, and Self-Containment",
-    subsection: "1.1",
-    context: "Let $E = \\{1, 2, 3\\}$ and $F = \\{1, 2, 3, 4\\}$.",
+    id: `math-1-19`,
+    case_id: `MATH 1.19`,
+    title: `Subset, Proper Subset, and Self-Containment`,
+    subsection: `1.1`,
+    context: `Let $E = \\{1, 2, 3\\}$ and $F = \\{1, 2, 3, 4\\}$.`,
     statements: [
-      "$E \\subseteq F$.",
-      "$E \\subsetneq F$ (E is a proper subset of F).",
-      "$F \\subseteq E$.",
-      "$E \\subseteq E$.",
-      "$E \\subsetneq E$.",
+      `$E \\subseteq F$.`,
+      `$E \\subsetneq F$ (E is a proper subset of F).`,
+      `$F \\subseteq E$.`,
+      `$E \\subseteq E$.`,
+      `$E \\subsetneq E$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nFrom the lists, $E=\\{1,2,3\\}$ and $F=\\{1,2,3,4\\}$. Subsethood $E\\subseteq F$ asks whether each member of $E$ appears in $F$.\n\n$1$ is written in $F$, $2$ is written in $F$, and $3$ is written in $F$. Nothing in $E$ sits outside $F$, so $E\\subseteq F$.",
-      "**B.** → True\n\nWe already have $E\\subseteq F$ because $1,2,3$ all appear in $F=\\{1,2,3,4\\}$. Proper inclusion also needs $E\\ne F$. The extra element $4$ sits in $F$ and is missing from $E=\\{1,2,3\\}$, so the member lists differ and $E\\subsetneq F$.",
-      "**C.** → False\n\n$F\\subseteq E$ would require every member of the larger set $F=\\{1,2,3,4\\}$ to sit in $E=\\{1,2,3\\}$. The first three numbers $1,2,3$ do appear in $E$, but $4\\in F$ is absent from $E$. That single witness $4$ kills reverse inclusion.",
-      "**D.** → True\n\nThe claim is $E\\subseteq E$ for $E=\\{1,2,3\\}$. Check the same list against itself: $1$ appears in $E$, $2$ appears in $E$, and $3$ appears in $E$. Reflexive inclusion holds. (This is not the same as proper self-inclusion.)",
-      "**E.** → False\n\nProper self-inclusion would need both $E\\subseteq E$ (true, as in D) and $E\\ne E$. The two sides are the same list $\\{1,2,3\\}$, so $E=E$ and the inequality half is impossible. Hence $E\\not\\subsetneq E$, even though ordinary $E\\subseteq E$ does hold.",
+      `**A.** → True
+
+Walk through the members of $E$: $1,2,3$ all appear in $F=\\{1,2,3,4\\}$, so $E\\subseteq F$. A counterexample would have to be a member of $E$ missing from $F$, and there is none.
+
+so the statement is True.`,
+      `**B.** → True
+
+Proper inclusion is $E\\subseteq F$ together with $E\\ne F$. Every member of $E$ sits in $F$, and the extra $4\\in F\\setminus E$ supplies the inequality. So $E\\subsetneq F$.
+
+so the statement is True.`,
+      `**C.** → False
+
+Reverse inclusion would need every member of the larger $F$ to sit in $E$. The same $4$ is now a counterexample: $4\\in F$ and $4\\notin E$. One witness kills $F\\subseteq E$.
+
+so the statement is False.`,
+      `**D.** → True
+
+$E\\subseteq E$ is reflexive: $1,2,3$ all sit in $E$ by construction. This is ordinary inclusion, not proper.
+
+so the statement is True.`,
+      `**E.** → False
+
+Proper self-inclusion would need $E\\ne E$ as well. The two sides are the same list $\\{1,2,3\\}$, so the inequality half is impossible.
+
+so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 19,
-    solution_overview:
-      "Compare $E=\\{1,2,3\\}$ with the larger $F=\\{1,2,3,4\\}$ by walking through the members.\n\n**$E$ into $F$:** $\\{1,2,3\\}$ all appear in $F$, so $E\\subseteq F$. The extra element $4\\in F\\setminus E$ proves the sets differ, hence the inclusion is **proper**: $E\\subsetneq F$.\n\n**$F$ into $E$:** that same $4$ is a counterexample, so $F\\nsubseteq E$.\n\n**Self-tests:** $E\\subseteq E$ always (reflexive). Proper self-inclusion would also need $E\\ne E$, which never happens.",
+    solution_overview: `Let $E=\\{1,2,3\\}$ and $F=\\{1,2,3,4\\}$.
+
+Ordinary inclusion $X\\subseteq Y$ asks whether every member of $X$ sits in $Y$. Proper inclusion $X\\subsetneq Y$ needs that inclusion and $X\\ne Y$. Subsethood is not symmetric. Ordinary self-inclusion always holds; proper self-inclusion would need $X\\ne X$.`,
   },
   {
-    id: "math-1-20",
-    case_id: "MATH 1.20",
-    title: "Testing Whether a Collection Partitions a Set",
-    subsection: "1.1",
-    context:
-      "Let $G = \\{1, 2, 3, 4, 5, 6\\}$, and consider the collection $\\mathcal{S} = \\{\\{1, 2\\}, \\{3, 4\\}, \\{5, 6\\}\\}$.",
+    id: `math-1-20`,
+    case_id: `MATH 1.20`,
+    title: `Testing Whether a Collection Partitions a Set`,
+    subsection: `1.1`,
+    context: `Let $G = \\{1, 2, 3, 4, 5, 6\\}$, and consider the collection $\\mathcal{S} = \\{\\{1, 2\\}, \\{3, 4\\}, \\{5, 6\\}\\}$.`,
     statements: [
-      "The blocks of $\\mathcal{S}$ are pairwise disjoint.",
-      "The union of the blocks of $\\mathcal{S}$ equals G.",
-      "$\\mathcal{S}$ is a partition of G.",
-      "$\\mathcal{S}' = \\{\\{1, 2\\}, \\{2, 3, 4\\}, \\{5, 6\\}\\}$ is also a partition of G.",
-      "Replacing $\\{5, 6\\}$ with $\\{5, 6, 7\\}$ would still give a partition of G.",
+      `The blocks of $\\mathcal{S}$ are pairwise disjoint.`,
+      `The union of the blocks of $\\mathcal{S}$ equals G.`,
+      `$\\mathcal{S}$ is a partition of G.`,
+      `$\\mathcal{S}' = \\{\\{1, 2\\}, \\{2, 3, 4\\}, \\{5, 6\\}\\}$ is also a partition of G.`,
+      `Replacing $\\{5, 6\\}$ with $\\{5, 6, 7\\}$ would still give a partition of G.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nPairwise disjointness for $\\mathcal S=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ asks whether any two blocks share a number. Compare the three pairs:\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset,\\qquad \\{1,2\\}\\cap\\{5,6\\}=\\emptyset,\\qquad \\{3,4\\}\\cap\\{5,6\\}=\\emptyset.$$\n\nThe numbers $1$ through $6$ each appear in exactly one block, so every pairwise intersection is empty.",
-      "**B.** → True\n\nCoverage asks whether the blocks of $\\mathcal S$ reunite as $G=\\{1,2,3,4,5,6\\}$. Write the union out:\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}.$$\n\nEach of $1,2,3,4,5,6$ appears exactly once on the right-hand side, so the union equals $G$.",
-      "**C.** → True\n\nA partition needs nonempty blocks, pairwise disjointness, and union equal to $G$. The given $\\mathcal S$ has three nonempty pairs $\\{1,2\\}$, $\\{3,4\\}$, $\\{5,6\\}$. From A those pairs share no numbers, and from B their union is $\\{1,2,3,4,5,6\\}=G$. All three conditions hold, so $\\mathcal S$ partitions $G$.",
-      "**D.** → False\n\nIn $\\mathcal S'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ the first two blocks both contain $2$:\n\n$$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}\\ne\\emptyset.$$\n\nPartition blocks must be pairwise disjoint. That one shared $2$ disqualifies $\\mathcal S'$, even though $\\{1,2\\}\\cup\\{2,3,4\\}\\cup\\{5,6\\}$ still covers $G$.",
-      "**E.** → False\n\nEvery block of a partition of $G=\\{1,2,3,4,5,6\\}$ must itself be a subset of $G$. The proposed block $\\{5,6,7\\}$ contains $5$ and $6$ (both in $G$) but also $7$, and $7$ is not among $1$ through $6$. So $\\{5,6,7\\}\\nsubseteq G$. Coverage and disjointness cannot rescue an element from outside $G$.",
+      `**A.** → True
+
+The three pairs use distinct numbers: $1,2$ never meet $3,4$ or $5,6$, and $3,4$ never meet $5,6$. Every pairwise intersection is empty.
+
+so the statement is True.`,
+      `**B.** → True
+
+Join the three pairs:
+
+$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}=G$$
+
+so the union of the blocks equals $G$, so the statement is True.`,
+      `**C.** → True
+
+The blocks of $\\mathcal S$ are nonempty, pairwise disjoint, and their union is $G$. All three partition conditions hold, so $\\mathcal S$ partitions $G$.
+
+so the statement is True.`,
+      `**D.** → False
+
+$\\mathcal S'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ overlaps at $2$:
+
+$$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}$$
+
+Pairwise disjointness fails, so $\\mathcal S'$ is not a partition even though the union still covers $G$.
+
+so the statement is False.`,
+      `**E.** → False
+
+A block of a partition of $G$ must be a subset of $G$. Replacing $\\{5,6\\}$ by $\\{5,6,7\\}$ smuggles $7\\notin G$. Disjointness and a union that happens to cover $G$ cannot legalize an outsider.
+
+so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 20,
-    solution_overview:
-      "Test the candidate $\\mathcal S=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ against $G=\\{1,\\ldots,6\\}$ with the three partition checks.\n\n1. **Disjoint?** The blocks are three different pairs, every pairwise intersection is empty.\n2. **Cover?** $\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$.\n3. **Nonempty subsets of $G$?** Yes.\n\nAll three pass, so $\\mathcal S$ is a partition.\n\nNow break the impostors: $\\mathcal S'$ overlaps at $2$, and swapping in $\\{5,6,7\\}$ smuggles $7\\notin G$ into a supposed block of $G$.",
+    solution_overview: `Let $G=\\{1,2,3,4,5,6\\}$ and $\\mathcal S=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$.
+
+A collection partitions $G$ when the blocks are nonempty subsets of $G$, pairwise disjoint, and their union equals $G$. An overlap, a hole, or an outsider smuggled into a block is enough to fail.`,
   },
   {
-    id: "math-1-21",
-    case_id: "MATH 1.21",
-    title: "Even Numbers Inside the Naturals: A Cardinality Trap",
-    subsection: "1.1",
-    context:
-      "Let $\\mathbb{N} = \\{1, 2, 3, \\dots\\}$ and let $H = \\{2, 4, 6, 8, \\dots\\}$ be the set of positive even integers.",
+    id: `math-1-21`,
+    case_id: `MATH 1.21`,
+    title: `Even Numbers Inside the Naturals: A Cardinality Trap`,
+    subsection: `1.1`,
+    context: `Let $\\mathbb{N} = \\{1, 2, 3, \\dots\\}$ and let $H = \\{2, 4, 6, 8, \\dots\\}$ be the set of positive even integers.`,
     statements: [
-      "$H \\subseteq \\mathbb{N}$.",
-      "H is a finite set.",
-      "$H = \\mathbb{N}$.",
-      "The map $f(n) = 2n$ pairs every natural number with exactly one element of H and vice versa.",
-      "Since $H \\subsetneq \\mathbb{N}$, H must have strictly fewer elements than $\\mathbb{N}$.",
+      `$H \\subseteq \\mathbb{N}$.`,
+      `H is a finite set.`,
+      `$H = \\mathbb{N}$.`,
+      `The map $f(n) = 2n$ pairs every natural number with exactly one element of H and vice versa.`,
+      `Since $H \\subsetneq \\mathbb{N}$, H must have strictly fewer elements than $\\mathbb{N}$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe claim is $H\\subseteq\\mathbb N$. By definition $H=\\{2,4,6,8,\\ldots\\}$ is the positive even integers, and $\\mathbb N=\\{1,2,3,\\ldots\\}$ already contains every positive integer. In particular $2,4,6,8,\\ldots$ all sit in $\\mathbb N$, so every member of $H$ is a natural number and **$H\\subseteq\\mathbb N$**.",
-      "**B.** → False\n\nIf $H$ were finite it would have a largest element, say $2N$. The next even $2(N+1)$ is still positive and even, hence still in $H$, and strictly larger than $2N$. That contradiction shows $H$ has no last member. The list $2,4,6,8,\\ldots$ never ends, so $H$ is infinite.",
-      "**C.** → False\n\nEquality of sets needs the same members. Odd $1$ is written in $\\mathbb N=\\{1,2,3,\\ldots\\}$ but is not even, so $1\\notin H$. The same goes for $3,5,7,\\ldots$. Already $1\\in\\mathbb N\\setminus H$ forces $H\\ne\\mathbb N$, even though $H\\subseteq\\mathbb N$.",
-      "**D.** → True\n\nThe map is $f(n)=2n$ from $\\mathbb N$ into $H$. Sample values: $f(1)=2$, $f(2)=4$, $f(3)=6$. If $f(n)=f(m)$ then $2n=2m$, so $n=m$ (one-to-one). If $2k$ is any positive even, then $2k=f(k)$ with $k\\in\\mathbb N$ (onto). That pairing matches the claim.",
-      "**E.** → False\n\nProper inclusion is true: $H\\subsetneq\\mathbb N$ because odds such as $1$ are missing. The same map $f(n)=2n$ still pairs every natural with a unique even and hits every even, so $|H|=|\\mathbb N|$. Same cardinality with a proper subset is exactly why the \"strictly fewer\" slogan fails for infinite sets.",
+      `**A.** → True
+
+Every positive even is already a natural number, so $H\\subseteq\\mathbb N$. Subsethood does not require $H$ to contain the odds; it only requires that nothing in $H$ sit outside $\\mathbb N$. A counterexample would have to be a positive even that was not a natural, and there is none, so the statement is True.`,
+      `**B.** → False
+
+If $H$ were finite it would have a largest even $2N$, but $2(N+1)$ is still in $H$ and strictly larger. The list $2,4,6,\\ldots$ never ends, so $H$ is infinite. Finiteness is not inherited from being a subset of $\\mathbb N$; $\\mathbb N$ itself is infinite, and so is this subset, so the statement is False.`,
+      `**C.** → False
+
+Equality needs the same members. Odd $1$ sits in $\\mathbb N$ and is not even, so $1\\in\\mathbb N\\setminus H$. That single witness forces $H\\ne\\mathbb N$ even though $H\\subseteq\\mathbb N$. $H=\\mathbb N$ would require every natural to be even, so the statement is False.`,
+      `**D.** → True
+
+The map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$, and it is onto $H$ because every positive even is $f$ of half of it. That is a bijection $\\mathbb N\\to H$, which is what "pairs every natural with exactly one even and vice versa" says. The formula always outputs an even, so the codomain really is $H$, not $\\mathbb N$, so the statement is True.`,
+      `**E.** → False
+
+Proper inclusion is true: odds such as $1$ are missing. The same bijection $f(n)=2n$ still forces $|H|=|\\mathbb N|$. Same cardinality with a proper subset is why "strictly fewer" fails for infinite sets. The slogan is a finite-set habit; it would hold if $H$ were finite, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 21,
-    solution_overview:
-      "Same infinite-set theme with $\\mathbb N=\\{1,2,3,\\ldots\\}$ and $H=\\{2,4,6,\\ldots\\}$.\n\n**Narrative.** Every positive even is a natural number, so $H\\subseteq\\mathbb N$. Odd $1$ is missing, so $H\\ne\\mathbb N$ and the inclusion is proper. The list of evens never ends, after $2n$ comes $2(n+1)$, so $H$ is infinite, not finite.\n\n**Matching sizes.** $f(n)=2n$ sends each natural to a unique even and hits every even, a bijection. Therefore $|H|=|\\mathbb N|$ even though $H\\subsetneq\\mathbb N$. The slogan “proper subset ⇒ strictly fewer elements” is a finite-set habit that does not survive here.",
+    solution_overview: `Let $\\mathbb N=\\{1,2,3,\\ldots\\}$ and let $H=\\{2,4,6,\\ldots\\}$ be the positive even integers.
+
+Subsethood $H\\subseteq\\mathbb N$ asks whether every even is a natural. Equality needs the same members. Finiteness would require a largest even. Cardinality of infinite sets is decided by bijections: the map
+
+$$f(n)=2n$$
+
+sends each natural to a unique even. For infinite sets, a proper subset can still have the same cardinality as the whole.`,
   },
   {
-    id: "math-1-22",
-    case_id: "MATH 1.22",
-    title: "An Object and Its Singleton in the Same Set",
-    subsection: "1.1",
-    context: "Let a be an object and let $K = \\{a, \\{a\\}\\}$.",
+    id: `math-1-22`,
+    case_id: `MATH 1.22`,
+    title: `An Object and Its Singleton in the Same Set`,
+    subsection: `1.1`,
+    context: `Let a be an object and let $K = \\{a, \\{a\\}\\}$.`,
     statements: [
-      "$a \\in K$.",
-      "$\\{a\\} \\in K$.",
-      "$\\{a\\} \\subseteq K$.",
-      "$\\{\\{a\\}\\} \\subseteq K$.",
-      "$\\lvert K\\rvert = 2$.",
+      `$a \\in K$.`,
+      `$\\{a\\} \\in K$.`,
+      `$\\{a\\} \\subseteq K$.`,
+      `$\\{\\{a\\}\\} \\subseteq K$.`,
+      `$\\lvert K\\rvert = 2$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given list is $K=\\{a,\\{a\\}\\}$. Membership $a\\in K$ asks whether the bare object $a$ appears among those two listed objects. The first listed member is exactly $a$, so the claim holds.",
-      "**B.** → True\n\nThe same list $K=\\{a,\\{a\\}\\}$ has two objects: the bare $a$, and the singleton set $\\{a\\}$. The second listed member is $\\{a\\}$ itself, so $\\{a\\}\\in K$.",
-      "**C.** → True\n\nSubsethood $\\{a\\}\\subseteq K$ only asks whether the unique member of the left-hand singleton sits in $K$. That unique member is $a$, and $a$ is the first listed element of $K=\\{a,\\{a\\}\\}$. This is not the same question as \"$\\{a\\}\\in K$,\" though that happens to be true here as well.",
-      "**D.** → True\n\nNow the left-hand set is $\\{\\{a\\}\\}$, whose only member is the object $\\{a\\}$. Because $\\{a\\}$ is the second listed element of $K=\\{a,\\{a\\}\\}$, the subset test passes. The extra braces matter: you are testing membership of $\\{a\\}$, not of $a$.",
-      "**E.** → True\n\nThe written list of $K$ is $a$ together with $\\{a\\}$. Those are different objects: one is an element, the other is a one-element set containing that element. Two distinct members give $|K|=2$.",
+      `**A.** → True
+
+$K$ lists two objects: the bare $a$, and the singleton $\\{a\\}$. Membership $a\\in K$ is the first of those. Braces matter: this letter asks about the unwrapped object, not about $\\{a\\}$. The two questions part company in general; here both happen to be true, so the statement is True.`,
+      `**B.** → True
+
+The second listed object is $\\{a\\}$ itself, so $\\{a\\}\\in K$. That is membership of a set-object, not subsethood. A roster that listed only $a$ would make this false. The extra braces on the second member are what make $K$ unusual, so the statement is True.`,
+      `**C.** → True
+
+$\\{a\\}\\subseteq K$ asks whether $a\\in K$. The roster of $K$ begins with the bare object $a$, so $a\\in K$ holds, and the singleton is a subset. This is a different question from $\\{a\\}\\in K$, though that happens to be true here as well. In a set such as $\\{a\\}$ the $\\in$ version would fail while this $\\subseteq$ version still held, so the statement is True.`,
+      `**D.** → True
+
+$\\{\\{a\\}\\}\\subseteq K$ asks whether $\\{a\\}\\in K$. The second listed object of $K$ is exactly $\\{a\\}$, so the test succeeds. One extra pair of braces shifts the test from $a$ to $\\{a\\}$. Miscounting braces here is the usual error: testing $a\\in K$ instead of $\\{a\\}\\in K$, so the statement is True.`,
+      `**E.** → True
+
+The two listed objects are different: an element and a one-element set containing that element. Two distinct members give $|K|=2$. Collapsing them because "they both mention $a$" would report $|K|=1$ and destroy every $\\in$ distinction the other letters use, so the statement is True.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 22,
-    solution_overview:
-      "Read the braces carefully. In $K=\\{a,\\{a\\}\\}$ there are **two** listed objects:\n\n1. the bare object $a$,\n2. the singleton set $\\{a\\}$.\n\nThose are different things, so $|K|=2$.\n\nMembership is immediate from the list: $a\\in K$ and $\\{a\\}\\in K$.\n\nSubset tests ask about *members of the left-hand set*:\n\n• $\\{a\\}\\subseteq K$ asks whether $a\\in K$, yes.\n\n• $\\{\\{a\\}\\}\\subseteq K$ asks whether $\\{a\\}\\in K$, yes.",
+    solution_overview: `Read the braces carefully. In $K=\\{a,\\{a\\}\\}$ there are two listed objects: the bare object $a$, and the singleton set $\\{a\\}$. Those are different things.
+
+Membership $\\in$ reads the roster. Subsethood $S\\subseteq K$ asks whether every member of $S$ sits in $K$. In particular $\\{x\\}\\subseteq K$ is the same test as $x\\in K$. Cardinality counts distinct members.`,
   },
   {
-    id: "math-1-23",
-    case_id: "MATH 1.23",
-    title: "De Morgan's laws with a universal set",
-    subsection: "1.2",
-    context:
-      "Let $U = \\{1, 2,..., 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    id: `math-1-23`,
+    case_id: `MATH 1.23`,
+    title: `De Morgan's laws with a universal set`,
+    subsection: `1.2`,
+    context: `Let $U = \\{1, 2,..., 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.`,
     statements: [
-      "$(A \\cup B)^{c} = \\{9, 10\\}$.",
-      "$(A \\cup B)^{c} = A^{c} \\cap B^{c}$.",
-      "$(A \\cap B)^{c} = A^{c} \\cup B^{c}$.",
-      "$A \\cap B = \\{4, 5, 6\\}$.",
-      "$(A \\cap B)^{c} = \\{1, 2, 3, 4, 5, 9, 10\\}$.",
+      `$(A \\cup B)^{c} = \\{9, 10\\}$.`,
+      `$(A \\cup B)^{c} = A^{c} \\cap B^{c}$.`,
+      `$(A \\cap B)^{c} = A^{c} \\cup B^{c}$.`,
+      `$A \\cap B = \\{4, 5, 6\\}$.`,
+      `$(A \\cap B)^{c} = \\{1, 2, 3, 4, 5, 9, 10\\}$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe complement $(A\\cup B)^c$ is everyone in $U=\\{1,\\ldots,10\\}$ missing from the union. Form $A\\cup B$ from $A=\\{1,2,3,4,5\\}$ and $B=\\{4,5,6,7,8\\}$: $A$ contributes $1,2,3,4,5$ and $B$ adds the new numbers $6,7,8$, so $A\\cup B=\\{1,2,3,4,5,6,7,8\\}$. What $U$ still has left is $9$ and $10$. That is exactly the claimed complement.",
-      "**B.** → True\n\nDe Morgan's first law says $(A\\cup B)^c=A^c\\cap B^c$. From A the left side is $\\{9,10\\}$. Now the complements: drop $A$ from $U$ to get $A^c=\\{6,7,8,9,10\\}$; drop $B$ from $U$ to get $B^c=\\{1,2,3,9,10\\}$. Numbers sitting in both complements are $9$ and $10$ only ($6,7,8$ miss $B^c$ because they sit in $B$). The two sides match.",
-      "**C.** → True\n\nThe second De Morgan identity is $(A\\cap B)^c=A^c\\cup B^c$. Overlap first: $4$ and $5$ sit in both $A$ and $B$, while $1,2,3$ miss $B$ and $6,7,8$ miss $A$, so $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves $\\{1,2,3,6,7,8,9,10\\}$. Joining $A^c=\\{6,7,8,9,10\\}$ with $B^c=\\{1,2,3,9,10\\}$ produces the same eight numbers.",
-      "**D.** → False\n\nIntersection requires membership in both $A=\\{1,2,3,4,5\\}$ and $B=\\{4,5,6,7,8\\}$. The number $4$ sits in both, and $5$ sits in both, but $6$ sits only in $B$ ($6\\notin A$). Padding $A\\cap B$ with $6$ is the trap; the true overlap is $\\{4,5\\}$.",
-      "**E.** → False\n\nOnce $A\\cap B=\\{4,5\\}$, the complement in $U=\\{1,\\ldots,10\\}$ must drop $4$ and $5$ and keep everything else: $\\{1,2,3,6,7,8,9,10\\}$. The claimed list keeps $4$ and $5$ while omitting $6$, $7$, and $8$. That is the opposite of a complement.",
+      `**A.** → True
+
+Union $A\\cup B$ keeps every number in at least one of the two lists:
+
+$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
+
+Complement inside $U=\\{1,\\ldots,10\\}$ is whatever remains:
+
+$$(A\\cup B)^c=\\{9,10\\}$$
+
+Including $8$ would require $8\\notin B$, which is false. Complement of a union is "outside both," so the statement is True.`,
+      `**B.** → True
+
+De Morgan's first law says the complement of a union is the intersection of the complements:
+
+$$(A\\cup B)^c=A^c\\cap B^c$$
+
+Scan $U$: $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so the intersection is $\\{9,10\\}$, matching $(A\\cup B)^c$. The numbers $6,7,8$ miss $A$ but sit in $B$, so they fail $B^c$, so the statement is True.`,
+      `**C.** → True
+
+De Morgan's second law says the complement of an intersection is the union of the complements:
+
+$$(A\\cap B)^c=A^c\\cup B^c$$
+
+Here $A\\cap B=\\{4,5\\}$, so the complement in $U$ is $\\{1,2,3,6,7,8,9,10\\}$. Escaping an intersection takes only escaping one set, so the union of complements is large. Copying $(A\\cup B)^c$ here would undercount to $\\{9,10\\}$, so the statement is True.`,
+      `**D.** → False
+
+Intersection keeps only numbers that sit in both lists. Scan $A$ against $B$: $4$ and $5$ are shared, while $6$ sits in $B$ and misses $A$:
+
+$$A\\cap B=\\{4,5\\}$$
+
+The claimed $\\{4,5,6\\}$ pads the overlap with a neighbour. $A$ would have to list $6$ for that extra element to survive, so the statement is False.`,
+      `**E.** → False
+
+Once $A\\cap B=\\{4,5\\}$, the complement in $U$ must drop $4$ and $5$ and keep everything else, including $6,7,8$:
+
+$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}$$
+
+The claimed list keeps $4$ and $5$ while omitting $6,7,8$: the opposite of a complement. Complement of the overlap cannot contain the overlap, so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 1,
-    solution_overview:
-      "Complements inside $U=\\{1,\\ldots,10\\}$ with $A=\\{1,\\ldots,5\\}$ and $B=\\{4,\\ldots,8\\}$.\n\nFirst the overlap and the complements:\n\n$$A\\cap B=\\{4,5\\},\\quad A^c=\\{6,7,8,9,10\\},\\quad B^c=\\{1,2,3,9,10\\}.$$\n\nUnion of $A$ and $B$ is $\\{1,\\ldots,8\\}$, so\n\n$$(A\\cup B)^c=\\{9,10\\}=A^c\\cap B^c,$$\n\nwhich is De Morgan’s first law. Removing the overlap from $U$ gives\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}=A^c\\cup B^c,$$\n\nDe Morgan’s second law. False claims either pad the intersection with $6$ or scramble which numbers belong in the complement of the intersection.",
+    solution_overview: `Complements are taken inside $U=\\{1,\\ldots,10\\}$ with $A=\\{1,\\ldots,5\\}$ and $B=\\{4,\\ldots,8\\}$.
+
+De Morgan's two identities are
+
+$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c$$
+
+Complement of a union is "outside both." Complement of an intersection is "outside at least one." Intersection itself keeps only the shared members.`,
   },
   {
-    id: "math-1-24",
-    case_id: "MATH 1.24",
-    title: "Cartesian products",
-    subsection: "1.2",
-    context: "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    id: `math-1-24`,
+    case_id: `MATH 1.24`,
+    title: `Cartesian products`,
+    subsection: `1.2`,
+    context: `Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.`,
     statements: [
-      "$\\lvert A \\times B \\rvert = 6$.",
-      "$(2, x) \\in A \\times B$.",
-      "$(x, 2) \\in A \\times B$.",
-      "$A \\times B = B \\times A$.",
-      "The number of elements in $B \\times A$ equals the number of elements in $A \\times B$.",
+      `$\\lvert A \\times B \\rvert = 6$.`,
+      `$(2, x) \\in A \\times B$.`,
+      `$(x, 2) \\in A \\times B$.`,
+      `$A \\times B = B \\times A$.`,
+      `The number of elements in $B \\times A$ equals the number of elements in $A \\times B$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nStart from the given sizes: $|A|=2$ for $A=\\{1,2\\}$ and $|B|=3$ for $B=\\{x,y,z\\}$. An ordered pair in $A\\times B$ picks one first coordinate from $A$ and one second from $B$. The six pairs are $(1,x)$, $(1,y)$, $(1,z)$, $(2,x)$, $(2,y)$, $(2,z)$. The product rule $2\\cdot 3=6$ matches that list and the claim.",
-      "**B.** → True\n\nMembership $(2,x)\\in A\\times B$ requires the first slot in $A=\\{1,2\\}$ and the second in $B=\\{x,y,z\\}$. The number $2$ is the second member of $A$, and the letter $x$ is the first member of $B$. Both slots are filled correctly, so the pair is in the product.",
-      "**C.** → False\n\nOrdered pairs in $A\\times B$ must have first coordinate from $A=\\{1,2\\}$. The pair $(x,2)$ starts with $x$, and $x$ is a letter of $B$, not a member of $A$. So $(x,2)\\notin A\\times B$. The same symbols in reverse order land in $B\\times A$, a different product.",
-      "**D.** → False\n\nSet equality would need the same ordered pairs on both sides. From B we have $(2,x)\\in A\\times B$. For $(2,x)$ to sit in $B\\times A$ the first slot would have to come from $B=\\{x,y,z\\}$, but $2\\notin B$. Different members mean $A\\times B\\ne B\\times A$, even though both have size $6$.",
-      "**E.** → True\n\nThe claim compares counts, not the pairs themselves. $|A\\times B|=|A|\\cdot|B|=2\\cdot 3=6$ and $|B\\times A|=|B|\\cdot|A|=3\\cdot 2=6$. Equal sizes do not require $A\\times B=B\\times A$.",
+      `**A.** → True
+
+Product size is the number of cells in a $2$ by $3$ grid:
+
+$$|A\\times B|=2\\cdot 3=6$$
+
+The six pairs are $(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)$. Product size is cells, not the five distinct symbols. $(1,x)$ and $(2,x)$ are different cells even though they share a letter, so the statement is True.`,
+      `**B.** → True
+
+$(2,x)$ has first slot in $A=\\{1,2\\}$ and second in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$. Swapping the slots would exit this product: $(x,2)$ has a letter first, which $A\\times B$ never allows. A solver who treated pairs as unordered would keep both orientations, so the statement is True.`,
+      `**C.** → False
+
+$(x,2)$ starts with a letter, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$. Having both symbols available somewhere is not enough unless they sit in the required slots, so the statement is False.`,
+      `**D.** → False
+
+$(2,x)\\in A\\times B$ but $2\\notin B$, so that pair cannot sit in $B\\times A$. Different members mean unequal sets, even though both products have size $6$. Equal cardinality never forces equal Cartesian products when the factor order flips, so the statement is False.`,
+      `**E.** → True
+
+Counts agree by the product rule:
+
+$$|B\\times A|=3\\cdot 2=6=|A\\times B|$$
+
+Member lists do not agree. Size equality is commutative; set equality of $A\\times B$ with $B\\times A$ would need $A=B$ (or a degenerate empty factor), which these two sets are not, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 2,
-    solution_overview:
-      "An ordered pair $(a,b)$ lands in $A\\times B$ only when the **first** slot is from $A=\\{1,2\\}$ and the **second** from $B=\\{x,y,z\\}$.\n\nList them:\n\n$$A\\times B=\\{(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)\\}.$$\n\nSix pairs, matching $|A|\\cdot|B|=2\\cdot 3=6$.\n\nReverse the factors and the pairs flip roles:\n\n$$B\\times A=\\{(x,1),(x,2),(y,1),(y,2),(z,1),(z,2)\\}.$$\n\nSame count $3\\cdot 2=6$, but different ordered pairs, so the sets $A\\times B$ and $B\\times A$ are unequal. In particular $(x,2)$ has a letter first, which $A\\times B$ never allows.",
+    solution_overview: `An ordered pair $(a,b)$ lands in $A\\times B$ only when the first slot is from $A=\\{1,2\\}$ and the second from $B=\\{x,y,z\\}$.
+
+The product rule gives the count:
+
+$$|A\\times B|=|A|\\cdot|B|$$
+
+Reversing the factors produces $B\\times A$, whose pairs have a letter first. Same count does not force equal sets: $(2,x)$ and $(x,2)$ are different ordered pairs.`,
   },
   {
-    id: "math-1-25",
-    case_id: "MATH 1.25",
-    title: "Sets defined by inequalities",
-    subsection: "1.2",
-    context: "Let $A = \\{x \\in R : 1 < x < 5\\}$ and $B = \\{x \\in R : x \\ge 3\\}$.",
+    id: `math-1-25`,
+    case_id: `MATH 1.25`,
+    title: `Sets defined by inequalities`,
+    subsection: `1.2`,
+    context: `Let $A = \\{x \\in R : 1 < x < 5\\}$ and $B = \\{x \\in R : x \\ge 3\\}$.`,
     statements: [
-      "$A \\subseteq B$.",
-      "$A \\cap B = \\{x \\in R : 3 \\le x < 5\\}$, i.e. the interval $[3, 5)$.",
-      "$B \\subseteq A$.",
-      "$A \\cup B = \\{x \\in R : x > 1\\}$, i.e. the interval $(1, \\infty)$.",
-      "There exists a real number that belongs to A but not to B.",
+      `$A \\subseteq B$.`,
+      `$A \\cap B = \\{x \\in R : 3 \\le x < 5\\}$, i.e. the interval $[3, 5)$.`,
+      `$B \\subseteq A$.`,
+      `$A \\cup B = \\{x \\in R : x > 1\\}$, i.e. the interval $(1, \\infty)$.`,
+      `There exists a real number that belongs to A but not to B.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nRewrite the given set-builders: $A=(1,5)$ means $1<x<5$, and $B=[3,\\infty)$ means $x\\ge 3$. Subsethood $A\\subseteq B$ would require every number in $(1,5)$ to satisfy $x\\ge 3$. Take $x=2$: $1<2<5$ so $2\\in A$, but $2<3$ so $2\\notin B$. That witness in $(1,3)$ shows $A\\nsubseteq B$.",
-      "**B.** → True\n\nIntersection keeps numbers that satisfy both given inequalities at once: $1<x<5$ and $x\\ge 3$. The tighter lower bound is $3$ (and $3$ itself qualifies: $1<3<5$ and $3\\ge 3$). The upper bound stays $5$ and stays open, because $5\\notin A$. So the overlap is $3\\le x<5$, the interval $[3,5)$.",
-      "**C.** → False\n\n$B=[3,\\infty)$ is unbounded above, so it contains numbers far past $A=(1,5)$. Take $x=10$: $10\\ge 3$ puts $10$ in $B$, but $10>5$ so $10\\notin A$. That witness shows reverse inclusion $B\\subseteq A$ is false.",
-      "**D.** → True\n\nFor any $x>1$, split into two ranges. If $1<x<5$ then $x\\in A$. If $x\\ge 5$ then also $x\\ge 3$, so $x\\in B$. In every case $x$ lands in the union, giving $(1,\\infty)$ as claimed. (The point $x=1$ itself is excluded from $A$ and from $B$, matching the open left end.)",
-      "**E.** → True\n\nThe claim asks for some $x$ in $A$ but not $B$. From $A=(1,5)$ and $B=[3,\\infty)$, the leftover strip is $(1,3)$. Explicitly $x=2$ satisfies $1<2<5$ but $2<3$, so $2\\in A\\setminus B$. One witness is enough.",
+      `**A.** → False
+
+Subsethood would need every point of $(1,5)$ to satisfy $x\\ge 3$. The leftover strip $(1,3)$ is the obstruction; $x=2$ sits in $A$ and misses $B$. The inclusion would hold if $A$ had started at $3$, so the statement is False.`,
+      `**B.** → True
+
+Numbers satisfying both $1<x<5$ and $x\\ge 3$ form the tighter interval $[3,5)$:
+
+$$A\\cap B=[3,5)$$
+
+The lower end $3$ is closed because $3\\in A$ and $3\\in B$; the upper end $5$ stays open because $5\\notin A$. Closing $5$ would include a point $A$ excluded. Opening $3$ would throw out a point both sets contain, so the statement is True.`,
+      `**C.** → False
+
+$B$ is unbounded above, so it contains numbers far past $A$. Witness $x=10$: in $B$, not in $A$. Reverse inclusion would require $B$ to stop at $5$, which $[3,\\infty)$ does not. One large witness kills $B\\subseteq A$, so the statement is False.`,
+      `**D.** → True
+
+From just above $1$ onward there is always coverage: $A$ handles $(1,5)$, $B$ handles $[3,\\infty)$. So
+
+$$A\\cup B=(1,\\infty)$$
+
+The point $1$ itself is excluded from both inputs, matching the open left end. Including $1$ would require one of the two sets to contain it, and neither does, so the statement is True.`,
+      `**E.** → True
+
+$A\\setminus B=(1,3)$, which is nonempty. Explicitly $x=2$ satisfies $1<2<5$ but $2<3$. One witness is all an existence claim needs. The leftover strip would vanish only if $A$ had started at $3$, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 3,
-    solution_overview:
-      "Rewrite in interval notation: $A=(1,5)$ and $B=[3,\\infty)$.\n\n**Overlap.** Numbers satisfying both $1<x<5$ and $x\\ge 3$ form $[3,5)$.\n\n**Joined.** From just above $1$ onward there is always coverage ($A$ handles $(1,5)$, $B$ handles $[3,\\infty)$), so $A\\cup B=(1,\\infty)$.\n\n**Left-only strip.** $A\\setminus B=(1,3)$, which is nonempty, e.g. $2$.\n\nThat same $2$ shows $A\\nsubseteq B$. A large number such as $10$ shows $B\\nsubseteq A$.",
+    solution_overview: `Rewrite in interval notation: $A=(1,5)$ and $B=[3,\\infty)$.
+
+Intersection keeps numbers that satisfy both inequalities. Union keeps numbers that satisfy at least one. Difference $A\\setminus B$ is the leftover strip of $A$ to the left of $B$. Subsethood $A\\subseteq B$ fails as soon as a point of $A$ misses $B$.`,
   },
   {
-    id: "math-1-26",
-    case_id: "MATH 1.26",
-    title: "Symmetric difference",
-    subsection: "1.2",
-    context:
-      "For two sets, define the symmetric difference $A\\triangle B = (A \\setminus B) \\cup (B \\setminus A)$, the elements belonging to exactly one of the two sets. Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{3, 4, 5, 6\\}$.",
+    id: `math-1-26`,
+    case_id: `MATH 1.26`,
+    title: `Symmetric difference`,
+    subsection: `1.2`,
+    context: `For two sets, define the symmetric difference $A\\triangle B = (A \\setminus B) \\cup (B \\setminus A)$, the elements belonging to exactly one of the two sets. Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{3, 4, 5, 6\\}$.`,
     statements: [
-      "$A\\triangle B = \\{1, 2, 5, 6\\}$.",
-      "The symmetric difference can also be written as $A\\triangle B = (A \\setminus B) \\cap (B \\setminus A)$.",
-      "$A \\cap B \\subseteq A\\triangle B$.",
-      "If A and B are disjoint, then $A\\triangle B = A \\cup B$.",
-      "$\\lvert A \\triangle B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - 2\\lvert A \\cap B\\rvert$.",
+      `$A\\triangle B = \\{1, 2, 5, 6\\}$.`,
+      `The symmetric difference can also be written as $A\\triangle B = (A \\setminus B) \\cap (B \\setminus A)$.`,
+      `$A \\cap B \\subseteq A\\triangle B$.`,
+      `If A and B are disjoint, then $A\\triangle B = A \\cup B$.`,
+      `$\\lvert A \\triangle B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - 2\\lvert A \\cap B\\rvert$.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nBy definition $A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$. From $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$, walk $A$ against $B$: $1$ and $2$ miss $B$, while $3$ and $4$ sit in both, so $A\\setminus B=\\{1,2\\}$. Walk $B$ against $A$: $5$ and $6$ miss $A$, so $B\\setminus A=\\{5,6\\}$. Joining those leftovers gives $\\{1,2,5,6\\}$, matching the claim.",
-      "**B.** → False\n\nBy definition the two one-sided differences are joined by $\\cup$. Their intersection is empty because no element can be both \"only in $A$\" and \"only in $B$.\" On these lists that is $\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$. Replacing union by intersection therefore collapses the symmetric difference to $\\emptyset$, contradicting the four-element set $\\{1,2,5,6\\}$ in A.",
-      "**C.** → False\n\nSymmetric difference excludes the overlap. Walk $A$ against $B$: $3$ and $4$ sit in both, so $A\\cap B=\\{3,4\\}$. Neither $3$ nor $4$ appears in $\\{1,2,5,6\\}=A\\triangle B$. So the overlap is not a subset of the symmetric difference.",
-      "**D.** → True\n\nIf $A$ and $B$ share nothing, then every member of $A$ misses $B$ and every member of $B$ misses $A$, so $A\\setminus B=A$ and $B\\setminus A=B$. The definition then says $A\\triangle B=A\\cup B$. The claim is this general fact, and it holds.",
-      "**E.** → True\n\nEach element in the overlap is counted in both $|A|$ and $|B|$ but is excluded from $A\\triangle B$, so both copies must be subtracted:\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|.$$\n\nHere $|A|=4$, $|B|=4$, and $|A\\cap B|=2$ from the shared pair $\\{3,4\\}$, so $4+4-2\\cdot 2=4$, matching the four-element set in A.",
+      `**A.** → True
+
+Difference $A\\setminus B$ deletes the shared $3,4$ from $A$, leaving $\\{1,2\\}$. Difference $B\\setminus A$ leaves $\\{5,6\\}$. Join the leftovers:
+
+$$A\\triangle B=\\{1,2\\}\\cup\\{5,6\\}=\\{1,2,5,6\\}$$
+
+Symmetric difference is "exactly one," not "at least one." Including $3$ would rebuild the union, so the statement is True.`,
+      `**B.** → False
+
+The definition joins the leftovers by $\\cup$, not $\\cap$. Those leftovers $\\{1,2\\}$ and $\\{5,6\\}$ are disjoint, so replacing union by intersection collapses to $\\emptyset$, contradicting the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagram never overlap, so the statement is False.`,
+      `**C.** → False
+
+Symmetric difference excludes the overlap. Here $A\\cap B=\\{3,4\\}$ and $A\\triangle B=\\{1,2,5,6\\}$, which share nothing. So $A\\cap B\\nsubseteq A\\triangle B$. The inclusion would hold only if the overlap were empty, so the statement is False.`,
+      `**D.** → True
+
+If $A$ and $B$ share nothing, then $A\\setminus B=A$ and $B\\setminus A=B$, so
+
+$$A\\triangle B=A\\cup B$$
+
+There is no middle bucket to discard. This is a general identity, not a scan of the given lists; the given lists are not disjoint, which is why $A\\triangle B$ and the union differ here, so the statement is True.`,
+      `**E.** → True
+
+$|A|+|B|$ double-counts the overlap, and $A\\triangle B$ throws both copies away:
+
+$$|A\\triangle B|=4+4-2\\cdot 2$$
+
+$$=4$$
+
+That matches the four-element set $\\{1,2,5,6\\}$. Subtracting the overlap only once would give the union size $6$ instead, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 4,
-    solution_overview:
-      "Symmetric difference keeps what is in **exactly one** of the two sets:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A).$$\n\nWith $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$:\n\n| Piece | Result |\n| --- | --- |\n| $A\\cap B$ | $\\{3,4\\}$ |\n| $A\\setminus B$ | $\\{1,2\\}$ |\n| $B\\setminus A$ | $\\{5,6\\}$ |\n| $A\\triangle B$ | $\\{1,2,5,6\\}$ |\n\nThe one-sided differences are disjoint, so replacing $\\cup$ by $\\cap$ in the definition collapses to $\\emptyset$, wrong. Shared elements $\\{3,4\\}$ are *excluded* from the symmetric difference, so $A\\cap B\\nsubseteq A\\triangle B$.\n\nIf the sets were disjoint, each difference would equal the whole set and $A\\triangle B$ would equal $A\\cup B$. Counting-wise, $|A|+|B|$ double-counts the overlap, and the symmetric difference throws both copies away: $|A\\triangle B|=|A|+|B|-2|A\\cap B|=4+4-4=4$.",
+    solution_overview: `Symmetric difference keeps what is in exactly one of the two sets:
+
+$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$$
+
+With $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$, the overlap is $A\\cap B$, the two leftovers are $A\\setminus B$ and $B\\setminus A$, and those leftovers are joined by union, not intersection. Shared elements are excluded. If the sets are disjoint, each difference equals the whole set. Counting-wise,
+
+$$|A\\triangle B|=|A|+|B|-2|A\\cap B|$$`,
   },
   {
-    id: "math-1-27",
-    case_id: "MATH 1.27",
-    title: "Sales rep to client account coverage",
-    subsection: "1.2",
-    context:
-      'A consulting firm has 5 sales reps and 8 client accounts. A "coverage assignment" is an ordered pair (rep, account) meaning that rep is the point of contact for that account. The firm wants to know how many distinct coverage assignments are possible, and how the count changes if the team grows.',
+    id: `math-1-27`,
+    case_id: `MATH 1.27`,
+    title: `Sales rep to client account coverage`,
+    subsection: `1.2`,
+    context: `A consulting firm has 5 sales reps and 8 client accounts. A "coverage assignment" is an ordered pair (rep, account) meaning that rep is the point of contact for that account. The firm wants to know how many distinct coverage assignments are possible, and how the count changes if the team grows.`,
     statements: [
-      "The total number of possible (rep, account) pairs is 40.",
-      "The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).",
-      "If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.",
-      'In the pair (rep, account), the statement "(Maria, Account 3) belongs to Reps $\\times$ Accounts" means Maria $\\in$ Accounts and Account $3 \\in$ Reps.',
-      "If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48.",
+      `The total number of possible (rep, account) pairs is 40.`,
+      `The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).`,
+      `If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.`,
+      `In the pair (rep, account), the statement "(Maria, Account 3) belongs to Reps $\\times$ Accounts" means Maria $\\in$ Accounts and Account $3 \\in$ Reps.`,
+      `If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nStart from the task: $5$ reps and $8$ accounts. Coverage is an ordered pair (rep, account), so each of the $5$ reps can be paired with each of the $8$ accounts. The product rule gives\n\n$$5\\cdot 8=40$$\n\npossible pairs, matching the claim.",
-      "**B.** → False\n\nCoverage assignments are ordered pairs $(\\text{rep},\\text{account})$. The pair $(\\text{Maria},\\text{Account 3})$ puts Maria in the rep slot and Account 3 in the account slot. Swapping coordinates produces $(\\text{Account 3},\\text{Maria})$, which treats Account 3 as the rep. Those are different objects. Order is essential; commutativity fails.",
-      "**C.** → True\n\nThe product rule still applies: if there are $r$ reps and $0$ accounts, the number of ordered pairs is $r\\cdot 0=0$. With no account slot to fill, no coverage assignment exists, regardless of how many reps are hired (even $r=5$ or $r=100$).",
-      "**D.** → False\n\nMembership in a product $X\\times Y$ always means \"first factor in $X$, second in $Y$.\" For $(\\text{Maria},\\text{Account 3})\\in\\text{Reps}\\times\\text{Accounts}$, Maria must be a rep and Account 3 an account. The claim swaps both tests (Maria in Accounts, Account 3 in Reps) and is therefore false.",
-      "**E.** → True\n\nThe firm now has $6$ reps and still $8$ accounts. The same product rule gives\n\n$$6\\cdot 8=48$$\n\nordered pairs. Equivalently, the new rep adds $8$ new pairs to the old $40$, and $40+8=48$.",
+      `**A.** → True
+
+An ordered pair (rep, account) is a cell in a $5$ by $8$ grid:
+
+$$5\\cdot 8=40$$
+
+Product size is cells, not $5+8=13$. Each rep can be paired with each account independently, so the statement is True.`,
+      `**B.** → False
+
+Coverage pairs are ordered: first slot is the rep, second is the account. $(\\text{Maria},\\text{Account 3})$ and $(\\text{Account 3},\\text{Maria})$ are different objects; the second treats Account $3$ as the rep. Order is the whole point of a Cartesian product. Commutativity would hold only if the two coordinates were the same type and the pair happened to be a diagonal, so the statement is False.`,
+      `**C.** → True
+
+Zero accounts means the second factor is empty, so $r\\cdot 0=0$ for any number $r$ of reps. Without a second coordinate there is no ordered pair. Hiring more reps cannot create an account slot that does not exist, so the statement is True.`,
+      `**D.** → False
+
+Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$. The claim swaps both tests. That swapped reading would put Maria among the accounts. The pair (Maria, Account $3$) is in the product only under the original slot tests, so the statement is False.`,
+      `**E.** → True
+
+Six reps and eight accounts:
+
+$$6\\cdot 8=48$$
+
+Equivalently the new rep adds eight new pairs to the old forty. The product rule scales with either factor; growing the first factor by one multiplies by the second factor, not by $1$, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 5,
-    solution_overview:
-      "A coverage assignment is an ordered pair $(\\text{rep},\\text{account})$ in the Cartesian product $\\text{Reps}\\times\\text{Accounts}$.\n\n**Product rule.** With $5$ reps and $8$ accounts there are\n\n$$5\\cdot 8=40$$\n\npossible pairs. Hiring a sixth rep raises the count to $6\\cdot 8=48$.\n\n**Order is the point.** First coordinate = rep, second = account. Swapping Maria with Account 3 changes the pair and usually exits the product entirely. Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$, never the reverse.\n\n**Zero accounts.** For any number $r$ of reps, $r\\cdot 0=0$: without a second coordinate there is no assignment.",
+    solution_overview: `A coverage assignment is an ordered pair $(\\text{rep},\\text{account})$ in the Cartesian product $\\text{Reps}\\times\\text{Accounts}$.
+
+The product rule gives the count:
+
+$$|\\text{Reps}\\times\\text{Accounts}|=(\\text{number of reps})\\cdot(\\text{number of accounts})$$
+
+First coordinate is the rep, second is the account. Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$. An empty factor forces the product to be empty.`,
   },
   {
-    id: "math-1-28",
-    case_id: "MATH 1.28",
-    title: "Frost protection and irrigation",
-    subsection: "1.2",
-    context:
-      "A vineyard defines two conditions for its automated systems. Let $A = \\{T \\in R : T^2 < 16\\}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let $B = \\{T \\in R : T \\ge -1\\}$ be the set of temperatures at which the irrigation system is switched on. Note that A is the open interval $(-4, 4)$ and B is the closed-below interval $[-1, \\infty)$.",
+    id: `math-1-28`,
+    case_id: `MATH 1.28`,
+    title: `Frost protection and irrigation`,
+    subsection: `1.2`,
+    context: `A vineyard defines two conditions for its automated systems. Let $A = \\{T \\in R : T^2 < 16\\}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let $B = \\{T \\in R : T \\ge -1\\}$ be the set of temperatures at which the irrigation system is switched on. Note that A is the open interval $(-4, 4)$ and B is the closed-below interval $[-1, \\infty)$.`,
     statements: [
-      "$A \\cap B = [-1, 4)$.",
-      "4 is an element of $A \\cap B$.",
-      "The complement of A in R is $\\{T \\in R : T < -4 \\lor T > 4\\}$.",
-      "$A \\cup B$ is equal to the entire set of real numbers R.",
-      "There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B).",
+      `$A \\cap B = [-1, 4)$.`,
+      `4 is an element of $A \\cap B$.`,
+      `The complement of A in R is $\\{T \\in R : T < -4 \\lor T > 4\\}$.`,
+      `$A \\cup B$ is equal to the entire set of real numbers R.`,
+      `There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B).`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe frost-safe temperatures are $A=(-4,4)$ and irrigation runs on $B=[-1,\\infty)$. Intersection keeps only temperatures that satisfy both rules, so the claim is that this overlap equals $[-1,4)$.\n\nBoth conditions must hold, so keep the tighter limit at each end. The lower end becomes $-1$, and $-1$ itself qualifies ($-1\\ge-1$, and $(-1)^2=1<16$); the upper end stays at $4$ and stays excluded, since $4^2=16$. That is exactly $[-1,4)$, so **the claimed interval is correct**.",
-      "**B.** → False\n\nBelonging to $A\\cap B$ requires both memberships, and $4$ only has one. It satisfies $4\\ge-1$, so it is in B, but $4^2=16$ is not less than $16$, so it is not in A. **Failing one half is enough, $4$ sits outside the intersection.** Check the claimed interval $[-1,4)$ as well: that upper end is open, so $4$ is excluded from $A\\cap B$ for the same reason it failed A's test. Being in B alone never rescues a temperature that A rejects.",
-      "**C.** → False\n\nThe trap is in the strict inequality signs. Writing $T<-4$ or $T>4$ quietly discards the two boundary temperatures, but A excluded them, so the complement has to **collect** them: $A^c=(-\\infty,-4]\\cup[4,\\infty)$. Since $-4$ and $4$ are missing from the claimed set, it is not the complement of A. Explicitly: $(-4)^2=16$ is not $<16$, so $-4\\notin A$, and likewise $4\\notin A$; both must land in $A^c$. The claimed set leaves those two points out, which is exactly how an open-interval complement gets miswritten as a pair of strict inequalities.",
-      "**D.** → False\n\nA union reaches only as far as its pieces do, and both pieces stop above $-4$, so $A\\cup B=(-4,\\infty)$. Take $T=-5$: it is not frost-safe ($25\\ge16$) and not irrigating ($-5<-1$), yet it is a perfectly good real number. **One missing real number is enough to show $A\\cup B\\ne R$.** The same gap covers every $T\\le-4$: none of those temperatures sit in A (because $T^2\\ge16$) and none sit in B (because $T<-1$), so the whole ray $(-\\infty,-4]$ lies outside the union.",
+      `**A.** → True
 
-      "**E.** → True\n\nThe claim is that some temperature is frost-safe yet does not trigger irrigation, that is, that $A\\setminus B$ is nonempty. From the given intervals that leftover slice is $(-4,-1)$.\n\nA single example settles this one. At $T=-2$ we have $(-2)^2=4<16$, so the vines are frost-safe, and $-2<-1$, so irrigation stays off. That is a temperature in $A\\setminus B=(-4,-1)$, and **such temperatures really do exist**.",
+A temperature must satisfy $-4<T<4$ and $T\\ge-1$. Keep the tighter limit at each end: the lower limit becomes $-1$ (included, because $-1$ is frost-safe: $1<16$, and irrigation allows $-1$), the upper limit stays $4$ (excluded, because $4^2=16$ is not strictly less than $16$):
+
+$$A\\cap B=[-1,4)$$
+
+Closing $4$ would include a temperature $A$ rejects, so the statement is True.`,
+      `**B.** → False
+
+$4$ sits in $B$ because $4\\ge-1$, but it fails $T^2<16$, so $4\\notin A$ and therefore $4\\notin A\\cap B$. The interval $[-1,4)$ is open at $4$ for the same reason. Being in $B$ alone never rescues a temperature that $A$ rejects. The endpoint $4$ is the whole issue, so the statement is False.`,
+      `**C.** → False
+
+$A=(-4,4)$ already excluded $\\pm 4$, so the complement must collect them:
+
+$$A^c=(-\\infty,-4]\\cup[4,\\infty)$$
+
+The claimed strict inequalities $T<-4$ or $T>4$ discard those two boundary temperatures. Open-interval complements are closed on the outside; flipping both inequalities to strict is the classic miswrite, so the statement is False.`,
+      `**D.** → False
+
+$A$ covers $(-4,4)$ and $B$ carries on upward from $-1$, so together they reach every temperature above $-4$:
+
+$$A\\cup B=(-4,\\infty)$$
+
+Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). One missing real is enough. The whole ray $(-\\infty,-4]$ lies outside both pieces, so the statement is False.`,
+      `**E.** → True
+
+$A\\setminus B=(-4,-1)$, frost-safe yet dry. At $T=-2$ we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough. That leftover slice would vanish if irrigation started at $-4$ instead of $-1$, so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 6,
-    solution_overview:
-      "The two rules are already intervals, so every question here is really a question about **endpoints**: which boundary temperature is inside, and which one is just outside.\n\n**Turn each rule into an interval**\n\nThe frost condition $T^2<16$ holds exactly when $-4<T<4$. Both boundaries fail, because $(-4)^2=4^2=16$ and $16$ is not *less* than $16$, so the frost set keeps both of its ends open:\n\n$$A = (-4, 4)$$\n\nThe irrigation condition $T\\ge-1$ allows $-1$ itself, so $B=[-1,\\infty)$ with a closed left end.\n\n**Where both rules hold at once**\n\nA temperature must satisfy $-4<T<4$ *and* $T\\ge-1$. Keep the tighter limit at each end: the lower limit becomes $-1$ (included), the upper limit stays $4$ (excluded).\n\n$$A\\cap B=[-1,4)$$\n\nThe left end is closed because $-1$ passes both rules, and the right end stays open because $4$ fails the frost rule.\n\n**Where at least one rule holds**\n\n$A$ covers $(-4,4)$ and $B$ carries on upward from $-1$; the two pieces overlap, so together they reach every temperature above $-4$, giving $A\\cup B=(-4,\\infty)$. Nothing at $-4$ or colder is covered.\n\n**Outside A**\n\nThe **complement** $A^c$ collects every real number that A missed: $A^c=(-\\infty,-4]\\cup[4,\\infty)$. Since $-4$ and $4$ were never in A, they land here, and both of them are included on this outer side.\n\n**Frost-safe but dry**\n\nSubtracting one set from the other gives $A\\setminus B=(-4,-1)$, cold yet safe temperatures, such as $-2$, where irrigation stays off.",
+    solution_overview: `The frost set is $A=\\{T\\in\\mathbb R:T^2<16\\}=(-4,4)$ and the irrigation set is $B=\\{T\\in\\mathbb R:T\\ge-1\\}=[-1,\\infty)$.
+
+Intersection keeps temperatures that pass both rules; the tighter bound wins at each end, and an endpoint is included only if it passes both tests. Union covers temperatures that pass at least one rule. Complement $A^c$ collects every real that $A$ missed, including the endpoints $A$ excluded. Difference $A\\setminus B$ is frost-safe yet dry.`,
   },
   {
-    id: "math-1-29",
-    case_id: "MATH 1.29",
-    title: "Customer survey overlap",
-    subsection: "1.2",
-    context:
-      "A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with $\\lvert A \\rvert = 120$. Let B be the set of customers who like Product B, with $\\lvert B \\rvert = 90$. It is found that $\\lvert A \\cap B \\rvert = 50$ customers like both products.",
+    id: `math-1-29`,
+    case_id: `MATH 1.29`,
+    title: `Customer survey overlap`,
+    subsection: `1.2`,
+    context: `A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with $\\lvert A \\rvert = 120$. Let B be the set of customers who like Product B, with $\\lvert B \\rvert = 90$. It is found that $\\lvert A \\cap B \\rvert = 50$ customers like both products.`,
     statements: [
-      "The number of customers who like at least one of the two products, $\\lvert A \\cup B \\rvert$, is 170.",
-      "The number of customers who like neither product is 40.",
-      "The number of customers who like only Product A (A but not B) is 90.",
-      "$A \\cap B \\subseteq A$.",
-      "Since $\\lvert A \\rvert$ + $\\lvert B \\rvert = 210$ exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible.",
+      `The number of customers who like at least one of the two products, $\\lvert A \\cup B \\rvert$, is 170.`,
+      `The number of customers who like neither product is 40.`,
+      `The number of customers who like only Product A (A but not B) is 90.`,
+      `$A \\cap B \\subseteq A$.`,
+      `Since $\\lvert A \\rvert$ + $\\lvert B \\rvert = 210$ exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
-      "**A.** → False\n\nA total of $170$ would mean only $40$ of the double-counted customers had been removed. All $50$ must go: $120+90-50=160$. **The claim overshoots by ten people.** The trap is treating $|A|+|B|-40$ as if only the excess over 200 needed deleting; inclusion-exclusion removes the whole overlap once, so the correct subtraction is $50$, not $40$.",
-      '**B.** → True\n\nThe firm surveyed 200 customers, and the union of the two product groups is $|A\\cup B|=160$. "Neither" means the customers who sit outside that union.\n\n"Neither" is whatever the survey has left once the union is taken away: $200-160=40$. **Forty customers like no product**, exactly as claimed.',
-      "**C.** → False\n\nThe 120 who like Product A already contain the 50 who like both, so A-only is $120-50=70$. The figure 90 would be right only if the two products shared no customers at all. **A-only is 70, not 90.** Check the arithmetic against the other side as well: B-only is $90-50=40$, and $70+50+40=160$, which recovers the true union; using 90 for A-only would invent ten phantom customers.",
-      "**D.** → True\n\nThe data give $|A\\cap B|=50$ customers who like both products, and those 50 already sit inside the 120 who like A. The claim is the inclusion $A\\cap B\\subseteq A$.\n\nBeing in $A\\cap B$ means liking A *and* liking B, so each of those 50 customers is automatically one of the 120 in A. That is all the **subset** symbol $\\subseteq$ asks for, and it would hold whatever the numbers were.",
-      '**E.** → False\n\nThe reasoning confuses a **lower bound** with an exact value. With only 200 customers available, $120+90=210$ forces at least 10 of them to be shared, but nothing prevents a larger overlap, and the survey reports 50. Since $50\\ge10$ is perfectly consistent, **"exactly 10" is neither forced nor correct here.** The excess $|A|+|B|-200=10$ is only a floor on $|A\\cap B|$; any overlap from 10 up to $\\min(120,90)=90$ could fit the headline counts, and the given data already picks 50.',
+      `**A.** → False
+
+Inclusion-exclusion removes the whole overlap once:
+
+$$|A\\cup B|=120+90-50$$
+
+$$=160$$
+
+The claimed $170$ subtracts only $40$, as if only the excess over $200$ needed deleting. The correct subtraction is the given $50$. Union size $170$ would also make "neither" equal $30$, disagreeing with the four-region split, so the statement is False.`,
+      `**B.** → True
+
+First the union:
+
+$$|A\\cup B|=120+90-50=160$$
+
+Neither is survey minus union:
+
+$$200-160=40$$
+
+Using $170$ for the union would report $30$ instead. The four regions $70+50+40+40=200$ confirm this leftover, so the statement is True.`,
+      `**C.** → False
+
+A-only peels the overlap out of $A$:
+
+$$|A\\setminus B|=120-50=70$$
+
+not $90$. The $90$ would be right only if the products shared nobody. Using $90$ for A-only would invent ten phantom customers and fail to rebuild the union $160$, so the statement is False.`,
+      `**D.** → True
+
+The $50$ who like both already sit inside the $120$ who like $A$. That is all $A\\cap B\\subseteq A$ asks, and it holds for any pair of sets, whatever the numbers. Intersection is always a subset of each factor; the survey figures are not needed for this one, so the statement is True.`,
+      `**E.** → False
+
+$120+90=210$ exceeds $200$ by $10$, which is only a floor on the overlap, not an exact value. Any overlap from $10$ up to $\\min(120,90)=90$ could fit the headlines, and the survey already reports $50$. "Exactly $10$" confuses a lower bound with a measurement, so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 7,
-    solution_overview:
-      "Two customer groups overlap, so the cleanest way to answer everything at once is to split the 200 people into the **four regions** of a two-set picture and check that the parts add back up.\n\nThe key observation is that the 50 customers who like both products were already counted inside the 120 and again inside the 90. Counting them once instead of twice is the **inclusion-exclusion rule**:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|=120+90-50=160.$$\n\nSubtracting the overlap from each group splits the survey like this:\n\n| Region | Meaning | Count |\n| --- | --- | --- |\n| A only | likes A, not B | $120-50=70$ |\n| Both | likes A and B | $50$ |\n| B only | likes B, not A | $90-50=40$ |\n| Neither | likes no product | $200-160=40$ |\n\nThe four regions total $70+50+40+40=200$, the whole survey, which confirms the arithmetic.\n\nA warning about the headline totals: $120+90=210$ exceeds the 200 people surveyed by 10. That excess proves the overlap is **at least** 10; it does not measure the overlap, which the problem itself fixes at 50.",
+    solution_overview: `A survey of $200$ customers has $|A|=120$ who like product A, $|B|=90$ who like product B, and $|A\\cap B|=50$ who like both.
+
+Inclusion-exclusion counts each liker once:
+
+$$|A\\cup B|=|A|+|B|-|A\\cap B|$$
+
+A-only is $|A|-|A\\cap B|$. Neither is survey size minus the union. Intersection is always a subset of each factor. The excess $|A|+|B|-200$ is only a floor on the overlap, not a measurement of it.`,
   },
   {
-    id: "math-1-30",
-    case_id: "MATH 1.30",
-    title: "Union, Intersection, and Difference of Three Sets",
-    subsection: "1.2",
-    context: "Let $A = \\{1, 2, 3, 4\\}$, $B = \\{3, 4, 5, 6\\}$, and $C = \\{7, 8, 9\\}$.",
+    id: `math-1-30`,
+    case_id: `MATH 1.30`,
+    title: `Union, Intersection, and Difference of Three Sets`,
+    subsection: `1.2`,
+    context: `Let $A = \\{1, 2, 3, 4\\}$, $B = \\{3, 4, 5, 6\\}$, and $C = \\{7, 8, 9\\}$.`,
     statements: [
-      "$A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$.",
-      "$A \\cap B = \\{3, 4\\}$.",
-      "$A \\setminus B = \\{1, 2\\}$.",
-      "$B \\setminus A = A \\setminus B$.",
-      "A and C are disjoint sets.",
+      `$A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$.`,
+      `$A \\cap B = \\{3, 4\\}$.`,
+      `$A \\setminus B = \\{1, 2\\}$.`,
+      `$B \\setminus A = A \\setminus B$.`,
+      `A and C are disjoint sets.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given lists are $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$. Union keeps every number that appears in at least one list, and the claim is that this collection is $\\{1,2,3,4,5,6\\}$.\n\nStart from $A$: $1,2,3,4$ all stay. From $B$, $3$ and $4$ are already listed, while $5$ and $6$ are new. **The union is $\\{1,2,3,4,5,6\\}$, the six numbers claimed.**",
-      "**B.** → True\n\nThe same two lists: $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$. Intersection keeps only numbers that appear in both, and the claim is that this shared part is $\\{3,4\\}$.\n\nWalk $A$ against $B$: $1\\notin B$, $2\\notin B$, $3\\in B$, $4\\in B$. So $1$ and $2$ live only in A, $5$ and $6$ only in B, and the shared part is $\\{3,4\\}$. **Exactly the claimed pair.**",
-      "**C.** → True\n\nDifference $A\\setminus B$ keeps members of the given $A=\\{1,2,3,4\\}$ that do not sit in $B=\\{3,4,5,6\\}$. The claim is that what remains is $\\{1,2\\}$.\n\nWalk $A$: $1$ misses $B$ (keep), $2$ misses $B$ (keep), $3$ sits in $B$ (drop), $4$ sits in $B$ (drop). Deleting $3$ and $4$ from $\\{1,2,3,4\\}$ leaves $\\{1,2\\}$, **the claim is right**.",
-      "**D.** → False\n\nSwapping the order changes the answer. From C we have $A\\setminus B=\\{1,2\\}$. Now walk $B=\\{3,4,5,6\\}$ against $A$: $3$ and $4$ sit in $A$ (drop), $5$ and $6$ miss $A$ (keep), so $B\\setminus A=\\{5,6\\}$. The two leftovers $\\{1,2\\}$ and $\\{5,6\\}$ share nothing, so **they are certainly not equal**. The trap is treating set difference like a commutative operation.",
-      "**E.** → True\n\nThe given sets are $A=\\{1,2,3,4\\}$ and $C=\\{7,8,9\\}$. Disjointness means their intersection is empty, so we check whether any number appears in both lists.\n\nWalk $C$: $7\\notin A$, $8\\notin A$, $9\\notin A$. Not one of them appears in $\\{1,2,3,4\\}$. An empty intersection is the definition of disjoint, so **A and C are disjoint**.",
+      `**A.** → True
+
+Putting $A$ and $B$ together keeps $1,2,3,4$ from $A$ and the newcomers $5,6$ from $B$. The shared $3,4$ are not second copies:
+
+$$A\\cup B=\\{1,2,3,4,5,6\\}$$
+
+Stopping at $4$ would throw $5$ and $6$ away, so the statement is True.`,
+      `**B.** → True
+
+Shared numbers are $3$ and $4$ only. $1,2$ miss $B$, and $5,6$ miss $A$:
+
+$$A\\cap B=\\{3,4\\}$$
+
+Intersection is that overlap, not the combined six-number list. A union-minded scan would report six instead of two, so the statement is True.`,
+      `**C.** → True
+
+Difference $A\\setminus B$ deletes a member of $A$ only when it also sits in $B$. Deleting the shared pair $3,4$ leaves
+
+$$A\\setminus B=\\{1,2\\}$$
+
+Dropping $2$ because it sits next to $3$ would be treating nearness as membership, so the statement is True.`,
+      `**D.** → False
+
+$B\\setminus A=\\{5,6\\}$, while $A\\setminus B=\\{1,2\\}$. The two leftovers share nothing, so they are not equal. Difference is not commutative: the two private regions are opposite sides of the overlap. Equality would hold only if those private regions were the same set, so the statement is False.`,
+      `**E.** → True
+
+Scan $A$ against $C$:
+
+$$A\\cap C=\\emptyset$$
+
+None of $7,8,9$ appears in $\\{1,2,3,4\\}$. Disjointness is that empty overlap. A single shared number such as $4\\in C$ would kill it, so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 8,
-    solution_overview:
-      "Everything here is settled by reading the three lists side by side: $A=\\{1,2,3,4\\}$, $B=\\{3,4,5,6\\}$, $C=\\{7,8,9\\}$.\n\nTo settle each claim, compare those lists: shared members for intersection, the combined list for union, leftovers after deleting the shared part for each difference, and an empty overlap for disjointness.\n\nOnly $3$ and $4$ are written in both A and B, and C shares nothing with A at all. From that single comparison every operation follows.\n\n$A\\cap B=\\{3,4\\}$, the shared part (**intersection**).\n\n$A\\cup B=\\{1,2,3,4,5,6\\}$, everything from either list, repeats written once (**union**).\n\n$A\\setminus B=\\{1,2\\}$, A after deleting the shared part (**difference**).\n\n$B\\setminus A=\\{5,6\\}$, B after deleting the same shared part.\n\n$A\\cap C=\\emptyset$, nothing in common, which is exactly what **disjoint** means.\n\nNotice that the two differences point in opposite directions: subtracting sets, like subtracting numbers, is not reversible.",
+    solution_overview: `Let $A=\\{1,2,3,4\\}$, $B=\\{3,4,5,6\\}$, and $C=\\{7,8,9\\}$.
+
+Union keeps every tagged number once. Intersection keeps the shared part. Difference $X\\setminus Y$ keeps members of $X$ missing from $Y$; the two directions $A\\setminus B$ and $B\\setminus A$ are opposite private regions. Two sets are disjoint when their intersection is empty.`,
   },
   {
-    id: "math-1-31",
-    case_id: "MATH 1.31",
-    title: "Set Operations on Multiples of Ten",
-    subsection: "1.2",
-    context:
-      "Let $A = \\{10, 20, 30, 40, 50\\}$, $B = \\{30, 40, 50, 60\\}$, and $C = \\{1, 2, 3\\}$.",
+    id: `math-1-31`,
+    case_id: `MATH 1.31`,
+    title: `Set Operations on Multiples of Ten`,
+    subsection: `1.2`,
+    context: `Let $A = \\{10, 20, 30, 40, 50\\}$, $B = \\{30, 40, 50, 60\\}$, and $C = \\{1, 2, 3\\}$.`,
     statements: [
-      "$A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$.",
-      "$A \\cap B = \\{30, 40, 50\\}$.",
-      "$A \\setminus B = \\{10, 20\\}$.",
-      "$B \\setminus A = A \\setminus B$.",
-      "A and C are disjoint sets.",
+      `$A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$.`,
+      `$A \\cap B = \\{30, 40, 50\\}$.`,
+      `$A \\setminus B = \\{10, 20\\}$.`,
+      `$B \\setminus A = A \\setminus B$.`,
+      `A and C are disjoint sets.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given lists are $A=\\{10,20,30,40,50\\}$ and $B=\\{30,40,50,60\\}$. Union keeps every tagged number once, and the claim is $\\{10,20,30,40,50,60\\}$.\n\nFrom A keep $10,20,30,40,50$. From B the numbers $30,40,50$ are already listed and $60$ is new. **All six numbers, exactly as claimed.**",
-      "**B.** → True\n\nIntersection keeps the numbers that sit in both given lists $A=\\{10,20,30,40,50\\}$ and $B=\\{30,40,50,60\\}$. The claim is that this overlap is $\\{30,40,50\\}$.\n\nWalk $A$: $10\\notin B$, $20\\notin B$, $30\\in B$, $40\\in B$, $50\\in B$. Those three shared multiples make up the intersection. **The claimed set matches.**",
-      "**C.** → True\n\nFrom the given $A=\\{10,20,30,40,50\\}$, difference $A\\setminus B$ deletes whatever also sits in $B=\\{30,40,50,60\\}$. The claim is that $\\{10,20\\}$ remains.\n\nKeep $10$ and $20$ (both miss $B$); drop $30$, $40$, and $50$ (all sit in $B$). **What remains is $\\{10,20\\}$**.",
-      "**D.** → False\n\nFrom C we have $A\\setminus B=\\{10,20\\}$. Walk $B$ the other way: $30,40,50$ sit in $A$ (drop) and $60$ misses $A$ (keep), so $B\\setminus A=\\{60\\}$. One side has two members, the other has one. Sets of different sizes cannot be equal, so **the order of subtraction genuinely matters here**.",
-      "**E.** → True\n\nThe given sets are $A=\\{10,20,30,40,50\\}$ and $C=\\{1,2,3\\}$. Disjointness requires $A\\cap C=\\emptyset$, so we check for a shared number.\n\nWalk $C$ against $A$: $1\\notin A$, $2\\notin A$, $3\\notin A$. Every member of A is at least $10$, while C stops at $3$. **The intersection is empty, and the sets are disjoint.**",
+      `**A.** → True
+
+A union must contain every member of each input. Putting $A$ and $B$ together gives $10,20,30,40,50$ from $A$ and the newcomer $60$ from $B$:
+
+$$A\\cup B=\\{10,20,30,40,50,60\\}$$
+
+The overlap $30,40,50$ is not written twice. That is the claimed set, so the statement is True.`,
+      `**B.** → True
+
+Intersection keeps only the numbers that clear both lists. Scan $A$ against $B$: $10$ and $20$ miss $B$, while $30,40,50$ sit in both, and $60$ misses $A$. So
+
+$$A\\cap B=\\{30,40,50\\}$$
+
+so the statement is True.`,
+      `**C.** → True
+
+Difference $A\\setminus B$ deletes a member of $A$ only when that member also sits in $B$. Scanning $A$ against $B$ leaves $10,20$, because $30,40,50$ are shared:
+
+$$A\\setminus B=\\{10,20\\}$$
+
+so the statement is True.`,
+      `**D.** → False
+
+The opposite leftover is $B\\setminus A=\\{60\\}$, while $A\\setminus B=\\{10,20\\}$. Already the sizes disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
+
+so the statement is False.`,
+      `**E.** → True
+
+Disjointness means the intersection is empty. Every member of $A$ is at least $10$, while $C$ stops at $3$, so $A\\cap C=\\emptyset$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 9,
-    solution_overview:
-      'With short explicit lists, the fastest route is to tag every number with the sets it belongs to and then read each operation straight off the tags.\n\n| Number | in $A$ | in $B$ |\n| --- | --- | --- |\n| 10 | yes | no |\n| 20 | yes | no |\n| 30 | yes | yes |\n| 40 | yes | yes |\n| 50 | yes | yes |\n| 60 | no | yes |\n\nRows with two "yes" answers form the **intersection**, $A\\cap B=\\{30,40,50\\}$. Every row of the table belongs to the **union**, $A\\cup B=\\{10,20,30,40,50,60\\}$. Rows that say yes to A and no to B form $A\\setminus B=\\{10,20\\}$, while the single row that says no to A and yes to B forms $B\\setminus A=\\{60\\}$.\n\nThe third set $C=\\{1,2,3\\}$ never enters the table at all: none of its members is a multiple of ten, so $A\\cap C=\\emptyset$.',
+    solution_overview: `Let $A=\\{10,20,30,40,50\\}$, $B=\\{30,40,50,60\\}$, and $C=\\{1,2,3\\}$.
+
+Intersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged number once. Difference $A\\setminus B$ keeps the $A$-only numbers; $B\\setminus A$ keeps the $B$-only numbers. Two sets are disjoint when they share nothing.`,
   },
   {
-    id: "math-1-32",
-    case_id: "MATH 1.32",
-    title: "Set Operations with Letters",
-    subsection: "1.2",
-    context: "Let $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$, and $C = \\{x, y\\}$.",
+    id: `math-1-32`,
+    case_id: `MATH 1.32`,
+    title: `Set Operations with Letters`,
+    subsection: `1.2`,
+    context: `Let $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$, and $C = \\{x, y\\}$.`,
     statements: [
-      "$A \\cup B = \\{a, b, c, d, e\\}$.",
-      "$A \\cap B = \\{c, d\\}$.",
-      "$A \\setminus B = \\{a, b\\}$.",
-      "$B \\setminus A = A \\setminus B$.",
-      "A and C are disjoint sets.",
+      `$A \\cup B = \\{a, b, c, d, e\\}$.`,
+      `$A \\cap B = \\{c, d\\}$.`,
+      `$A \\setminus B = \\{a, b\\}$.`,
+      `$B \\setminus A = A \\setminus B$.`,
+      `A and C are disjoint sets.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given letter lists are $A=\\{a,b,c,d\\}$ and $B=\\{c,d,e\\}$. Union writes each letter once, and the claim is $\\{a,b,c,d,e\\}$.\n\nA contributes $a,b,c,d$. From B the letters $c$ and $d$ are already listed and $e$ is new. **The union is $\\{a,b,c,d,e\\}$, as claimed.**",
-      "**B.** → True\n\nIntersection keeps letters that appear in both $A=\\{a,b,c,d\\}$ and $B=\\{c,d,e\\}$. The claim is that this shared part is $\\{c,d\\}$.\n\nWalk $A$: $a\\notin B$, $b\\notin B$, $c\\in B$, $d\\in B$. Only $c$ and $d$ are written in both lists. **Claim confirmed.**",
-      "**C.** → True\n\nDifference $A\\setminus B$ keeps letters of $A=\\{a,b,c,d\\}$ that do not sit in $B=\\{c,d,e\\}$. The claim is $\\{a,b\\}$.\n\nKeep $a$ and $b$ (both miss $B$); strike $c$ and $d$ (both sit in $B$). **That is $A\\setminus B$.**",
-      "**D.** → False\n\nFrom C we have $A\\setminus B=\\{a,b\\}$. Walk $B=\\{c,d,e\\}$ against $A$: $c$ and $d$ sit in $A$ (drop) and $e$ misses $A$ (keep), so $B\\setminus A=\\{e\\}$. The leftovers $\\{a,b\\}$ and $\\{e\\}$ have nothing in common, and even the sizes disagree ($2$ versus $1$). **The two differences are different sets.**",
-      "**E.** → True\n\nThe given sets are $A=\\{a,b,c,d\\}$ and $C=\\{x,y\\}$. Disjointness means no letter of C appears in A.\n\nCheck $x$ against $\\{a,b,c,d\\}$: not there. Check $y$: not there either. The two sets overlap in nothing at all. **They are disjoint.**",
+      `**A.** → True
+
+Putting $A$ and $B$ together keeps $a,b,c,d$ from $A$ and the newcomer $e$ from $B$:
+
+$$A\\cup B=\\{a,b,c,d,e\\}$$
+
+The shared $c$ and $d$ are not written twice, so the statement is True.`,
+      `**B.** → True
+
+Shared letters are $c$ and $d$ only. $a$ and $b$ miss $B$, and $e$ misses $A$, so
+
+$$A\\cap B=\\{c,d\\}$$
+
+so the statement is True.`,
+      `**C.** → True
+
+$A\\setminus B$ keeps $A$'s private letters. $c$ and $d$ sit in $B$, so they leave, and $a,b$ stay:
+
+$$A\\setminus B=\\{a,b\\}$$
+
+so the statement is True.`,
+      `**D.** → False
+
+$B\\setminus A=\\{e\\}$, a singleton, while $A\\setminus B=\\{a,b\\}$. Different sizes already forbid equality, and $a$ sits in one leftover but not the other.
+
+so the statement is False.`,
+      `**E.** → True
+
+$C=\\{x,y\\}$ shares no letter with $A=\\{a,b,c,d\\}$, so $A\\cap C=\\emptyset$. Disjointness is that empty overlap.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 10,
-    solution_overview:
-      "The task gives three letter lists $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$, and $C=\\{x,y\\}$. Each claim is a direct comparison: shared letters, the combined list, leftovers after a difference, or an empty overlap.\n\nThree short letter lists, so a single careful comparison answers all five claims.\n\nLining $A=\\{a,b,c,d\\}$ up against $B=\\{c,d,e\\}$: the letters $c$ and $d$ appear in both, $a$ and $b$ only in A, and $e$ only in B. That one observation gives the **intersection** $A\\cap B=\\{c,d\\}$, the **union** $A\\cup B=\\{a,b,c,d,e\\}$ with each letter written once, and the two **differences** $A\\setminus B=\\{a,b\\}$ and $B\\setminus A=\\{e\\}$, which are plainly not the same collection.\n\nThe third set $C=\\{x,y\\}$ shares no letter with A, so $A\\cap C=\\emptyset$ and those two sets are **disjoint**.",
+    solution_overview: `Let $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$, and $C=\\{x,y\\}$.
+
+Lining $A$ up against $B$, shared letters form the intersection, every letter written once forms the union, and each set's private letters form the two differences. Disjointness of $A$ and $C$ is empty overlap.`,
   },
   {
-    id: "math-1-33",
-    case_id: "MATH 1.33",
-    title: "De Morgan's Laws with a Ten-Element Universe",
-    subsection: "1.2",
-    context:
-      "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    id: `math-1-33`,
+    case_id: `MATH 1.33`,
+    title: `De Morgan's Laws with a Ten-Element Universe`,
+    subsection: `1.2`,
+    context: `Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.`,
     statements: [
-      "$(A \\cup B)^c = \\{9, 10\\}$.",
-      "$(A \\cup B)^c = A^c \\cap B^c$.",
-      "$(A \\cap B)^c = A^c \\cup B^c$.",
-      "$A^c = \\{6, 7, 8, 9, 10\\}$.",
-      "$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$.",
+      `$(A \\cup B)^c = \\{9, 10\\}$.`,
+      `$(A \\cup B)^c = A^c \\cap B^c$.`,
+      `$(A \\cap B)^c = A^c \\cup B^c$.`,
+      `$A^c = \\{6, 7, 8, 9, 10\\}$.`,
+      `$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe universe is $U=\\{1,2,\\ldots,10\\}$, with $A=\\{1,2,3,4,5\\}$ and $B=\\{4,5,6,7,8\\}$. The claim is that the complement of their union is $\\{9,10\\}$, so first form $A\\cup B$ and then take what U still has left.\n\nA contributes $1,2,3,4,5$ and B adds $6,7,8$ ($4$ and $5$ already listed), so $A\\cup B=\\{1,2,3,4,5,6,7,8\\}$. The only numbers of $U$ they never touch are $9$ and $10$. **The complement of the union is $\\{9,10\\}$.**",
-      "**B.** → True\n\nThis is De Morgan's first law, and the numbers bear it out. Drop $A$ from $U$ to get $A^c=\\{6,7,8,9,10\\}$; drop $B$ from $U$ to get $B^c=\\{1,2,3,9,10\\}$. Those two lists share exactly $9$ and $10$, the same set found for $(A\\cup B)^c$. Cross-check: $6$ is outside A but inside B, so it fails the \"outside both\" test; only $9$ and $10$ clear both complements.",
-      '**C.** → True\n\nDe Morgan\'s second law. Walk $A$ against $B$: $4$ and $5$ sit in both, so $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves $\\{1,2,3,6,7,8,9,10\\}$. Building the same list as $A^c\\cup B^c$ reunites $\\{6,7,8,9,10\\}$ with $\\{1,2,3,9,10\\}$, which is the same eight numbers. **Both sides match.**',
-      "**D.** → True\n\nComplement $A^c$ is everything in the given universe $U=\\{1,2,\\ldots,10\\}$ that is missing from $A=\\{1,2,3,4,5\\}$. The claim lists $\\{6,7,8,9,10\\}$.\n\nDelete $1,2,3,4,5$ from $U$ and what remains is $6,7,8,9,10$. **That is $A^c$, just as claimed.**",
-      "**E.** → True\n\nThe claim is the complement of the intersection. From C the overlap is $\\{4,5\\}$, so only those two get removed from $U=\\{1,\\ldots,10\\}$. Everything else stays: $1,2,3$ (in A only), $6,7,8$ (in B only), and $9,10$ (in neither). **The claimed list $\\{1,2,3,6,7,8,9,10\\}$ is right.**",
+      `**A.** → True
+
+Putting $A$ and $B$ together covers $1$ through $8$:
+
+$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
+
+Complement inside $U=\\{1,\\ldots,10\\}$ is therefore $\\{9,10\\}$. Those two numbers sit in neither $A$ nor $B$.
+
+so the statement is True.`,
+      `**B.** → True
+
+De Morgan's first law says $(A\\cup B)^c=A^c\\cap B^c$. Form $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$. Their intersection is $\\{9,10\\}$, matching the complement of the union $A\\cup B=\\{1,\\ldots,8\\}$.
+
+so the statement is True.`,
+      `**C.** → True
+
+The overlap is $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves $\\{1,2,3,6,7,8,9,10\\}$. Joining $A^c=\\{6,7,8,9,10\\}$ with $B^c=\\{1,2,3,9,10\\}$ produces the same list, so $(A\\cap B)^c=A^c\\cup B^c$.
+
+so the statement is True.`,
+      `**D.** → True
+
+$A^c$ is $U$ minus $A$: drop $1$ through $5$, keep
+
+$$A^c=\\{6,7,8,9,10\\}$$
+
+Complement is a scan of the universe, not of $A$ rewritten backwards.
+
+so the statement is True.`,
+      `**E.** → True
+
+$A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves
+
+$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}$$
+
+That list keeps $A$-only, $B$-only, and neither.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 11,
-    solution_overview:
-      'The universe here is $U=\\{1,2,\\ldots,10\\}$, and a **complement** $X^c$ means "everything in U that X leaves out".\n\nThe given sets are $A=\\{1,2,3,4,5\\}$ and $B=\\{4,5,6,7,8\\}$. Build the union, the intersection, and the two complements from those lists before testing De Morgan.\n\nStart with the four basic sets:\n\n$A\\cup B=\\{1,2,3,4,5,6,7,8\\},\\quad A\\cap B=\\{4,5\\},\\quad A^c=\\{6,7,8,9,10\\},\\quad B^c=\\{1,2,3,9,10\\}.$\n\n**De Morgan\'s laws** say that taking complements swaps union and intersection. Both can be verified number by number:\n\n| Identity | Left side | Right side | Agree? |\n| --- | --- | --- | --- |\n| $(A\\cup B)^c=A^c\\cap B^c$ | $\\{9,10\\}$ | $\\{9,10\\}$ | yes |\n| $(A\\cap B)^c=A^c\\cup B^c$ | $\\{1,2,3,6,7,8,9,10\\}$ | $\\{1,2,3,6,7,8,9,10\\}$ | yes |\n\nThe idea behind the first row: escaping a union means escaping **both** sets at once. Behind the second: escaping an intersection takes only escaping **one** of them.',
+    solution_overview: `Let $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$. A complement $X^c$ is everything in $U$ that $X$ leaves out.
+
+De Morgan's laws say taking complements swaps union and intersection:
+
+$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c$$
+
+Escaping a union means escaping both sets at once. Escaping an intersection takes only escaping one of them.`,
   },
   {
-    id: "math-1-34",
-    case_id: "MATH 1.34",
-    title: "Complements of Disjoint Odd and Even Sets",
-    subsection: "1.2",
-    context:
-      "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ be the universal set, $A = \\{1, 3, 5, 7, 9, 11\\}$, and $B = \\{2, 4, 6, 8, 10, 12\\}$.",
+    id: `math-1-34`,
+    case_id: `MATH 1.34`,
+    title: `Complements of Disjoint Odd and Even Sets`,
+    subsection: `1.2`,
+    context: `Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ be the universal set, $A = \\{1, 3, 5, 7, 9, 11\\}$, and $B = \\{2, 4, 6, 8, 10, 12\\}$.`,
     statements: [
-      "$(A \\cup B)^c = \\emptyset$.",
-      "$(A \\cup B)^c = A^c \\cap B^c$.",
-      "$(A \\cap B)^c = A^c \\cup B^c$.",
-      "$A^c = \\{2, 4, 6, 8, 10, 12\\}$.",
-      "$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$.",
+      `$(A \\cup B)^c = \\emptyset$.`,
+      `$(A \\cup B)^c = A^c \\cap B^c$.`,
+      `$(A \\cap B)^c = A^c \\cup B^c$.`,
+      `$A^c = \\{2, 4, 6, 8, 10, 12\\}$.`,
+      `$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe universe is $U=\\{1,2,\\ldots,12\\}$, with $A=\\{1,3,5,7,9,11\\}$ the odds and $B=\\{2,4,6,8,10,12\\}$ the evens. The claim is that $(A\\cup B)^c$ is empty, so check whether the union already covers all of U.\n\nJoin the two lists: odds $1,3,5,7,9,11$ together with evens $2,4,6,8,10,12$ reconstruct $\\{1,2,\\ldots,12\\}=U$. Nothing is left outside, and **the complement is therefore empty**.",
-      "**B.** → True\n\nDe Morgan's first law, in an extreme case. Complement of the odds is the evens: $A^c=\\{2,4,6,8,10,12\\}$. Complement of the evens is the odds: $B^c=\\{1,3,5,7,9,11\\}$. Those two lists have no number in common (nothing is even and odd at once), so $A^c\\cap B^c=\\emptyset$, the same answer as $(A\\cup B)^c$. **The identity survives.**",
-      "**C.** → True\n\nWalk $A$ against $B$: every member of $A$ is odd and every member of $B$ is even, so $A\\cap B=\\emptyset$. Complementing the empty set relative to $U$ restores $U$. On the other side, $A^c\\cup B^c$ is the evens joined with the odds, which is again $U$. **Both sides give U, so the law checks out.**",
-      "**D.** → True\n\nComplement $A^c$ deletes the given odds $A=\\{1,3,5,7,9,11\\}$ from $U=\\{1,2,\\ldots,12\\}$. The claim is that the evens $\\{2,4,6,8,10,12\\}$ remain.\n\nDrop $1,3,5,7,9,11$ from $U$ and what survives is $2,4,6,8,10,12$. **So $A^c=\\{2,4,6,8,10,12\\}$**, which here happens to be the set B itself.",
-      "**E.** → True\n\nFrom C, no number is odd and even at once, so $A\\cap B=\\emptyset$. Removing nothing from $U=\\{1,2,\\ldots,12\\}$ leaves the universe. **$(A\\cap B)^c=U$.** The easy mix-up is to think an empty intersection somehow leaves a smaller complement; complementing the empty set relative to U always restores U in full.",
+      `**A.** → True
 
+Odds union evens reconstructs all of $U$, so $A\\cup B=U$ and
+
+$$(A\\cup B)^c=U^c=\\emptyset$$
+
+There is no leftover integer between $1$ and $12$.
+
+so the statement is True.`,
+      `**B.** → True
+
+$A^c$ is the evens and $B^c$ is the odds, so their intersection is empty: nothing is even and odd at once. That matches $(A\\cup B)^c=\\emptyset$, which is De Morgan in this extreme case.
+
+so the statement is True.`,
+      `**C.** → True
+
+$A\\cap B=\\emptyset$ because no integer is odd and even, so $(A\\cap B)^c=U$. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
+
+so the statement is True.`,
+      `**D.** → True
+
+Deleting the odds from $U$ leaves the evens, so
+
+$$A^c=\\{2,4,6,8,10,12\\}$$
+
+Complement of a partition block is the other block.
+
+so the statement is True.`,
+      `**E.** → True
+
+Removing nothing from $U$ leaves $U$, so $(A\\cap B)^c=U$. The claimed list is that full $\\{1,\\ldots,12\\}$. Complementing $\\emptyset$ relative to a universe always gives the universe back.
+
+so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 12,
-    solution_overview:
-      "This pair of sets is special: A holds every odd number of $U=\\{1,2,\\ldots,12\\}$ and B holds every even one, so between them they **partition** the universe, no overlap, no gaps.\n\nNo whole number is odd and even at once, so $A\\cap B=\\emptyset$. Every whole number is one or the other, so $A\\cup B=U$.\n\nThose two facts drive all five answers. Complementing A removes the odds and leaves the evens, so $A^c=B=\\{2,4,6,8,10,12\\}$, and symmetrically $B^c=A$. Complementing the union leaves nothing at all,\n\n$$(A\\cup B)^c=U^c=\\emptyset,$$\n\nwhile complementing the empty intersection removes nothing, so $(A\\cap B)^c=\\emptyset^c=U$.\n\n**De Morgan's laws** come through these extreme cases untouched: $A^c\\cap B^c=B\\cap A=\\emptyset$ matches the first result, and $A^c\\cup B^c=B\\cup A=U$ matches the second.",
+    solution_overview: `Let $U=\\{1,2,\\ldots,12\\}$, with $A=\\{1,3,5,7,9,11\\}$ the odds and $B=\\{2,4,6,8,10,12\\}$ the evens.
+
+This pair partitions $U$: no overlap, no gaps. No whole number is odd and even at once, so $A\\cap B=\\emptyset$. Every whole number in $U$ is one or the other, so $A\\cup B=U$. Complements of partition blocks swap the two blocks. De Morgan's identities still apply in these extreme cases.`,
   },
   {
-    id: "math-1-35",
-    case_id: "MATH 1.35",
-    title: "De Morgan's Laws with Letter Sets",
-    subsection: "1.2",
-    context:
-      "Let $U = \\{p, q, r, s, t, u\\}$ be the universal set, $A = \\{p, q, r\\}$, and $B = \\{r, s\\}$.",
+    id: `math-1-35`,
+    case_id: `MATH 1.35`,
+    title: `De Morgan's Laws with Letter Sets`,
+    subsection: `1.2`,
+    context: `Let $U = \\{p, q, r, s, t, u\\}$ be the universal set, $A = \\{p, q, r\\}$, and $B = \\{r, s\\}$.`,
     statements: [
-      "$(A \\cup B)^c = \\{t, u\\}$.",
-      "$(A \\cup B)^c = A^c \\cap B^c$.",
-      "$(A \\cap B)^c = A^c \\cup B^c$.",
-      "$A^c = \\{s, t, u\\}$.",
-      "$(A \\cap B)^c = \\{p, q, s, t, u\\}$.",
+      `$(A \\cup B)^c = \\{t, u\\}$.`,
+      `$(A \\cup B)^c = A^c \\cap B^c$.`,
+      `$(A \\cap B)^c = A^c \\cup B^c$.`,
+      `$A^c = \\{s, t, u\\}$.`,
+      `$(A \\cap B)^c = \\{p, q, s, t, u\\}$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe universe is $U=\\{p,q,r,s,t,u\\}$, with $A=\\{p,q,r\\}$ and $B=\\{r,s\\}$. The claim is that $(A\\cup B)^c=\\{t,u\\}$, so form the union and see which letters of U are left out.\n\nA contributes $p,q,r$ and B adds $s$ ($r$ already listed), so $A\\cup B=\\{p,q,r,s\\}$. Of the six letters in $U$, that leaves only $t$ and $u$ untouched. **So $(A\\cup B)^c=\\{t,u\\}$.**",
-      "**B.** → True\n\nCheck the right-hand side directly. Drop $A$ from $U$: $A^c=\\{s,t,u\\}$. Drop $B$ from $U$: $B^c=\\{p,q,t,u\\}$. Those lists share $t$ and $u$, the same answer the left-hand side gave. Letter $s$ fails the test because $s\\in B$, so $s\\notin B^c$. **De Morgan's first law holds here.**",
-      "**C.** → True\n\nWalk $A$ against $B$: $p$ and $q$ miss $B$, while $r$ sits in both, so $A\\cap B=\\{r\\}$. Every other letter of $U$ escapes the intersection. Building the same thing from the other direction, $\\{s,t,u\\}\\cup\\{p,q,t,u\\}=\\{p,q,s,t,u\\}$. **Identical results, so the law holds.**",
-      "**D.** → True\n\nComplement $A^c$ is the letters of $U=\\{p,q,r,s,t,u\\}$ missing from $A=\\{p,q,r\\}$. The claim lists $\\{s,t,u\\}$.\n\nWalk $U$: $p,q,r$ sit in $A$ (drop); $s,t,u$ miss $A$ (keep). **The claim lists exactly those three letters.**",
-      "**E.** → True\n\nThe claim is $(A\\cap B)^c=\\{p,q,s,t,u\\}$. From C the intersection is the single shared letter $r$, so remove $r$ from $U=\\{p,q,r,s,t,u\\}$. What remains is $p,q,s,t,u$. Notice $r$ is the only letter deleted; $p$ and $q$ stay because they miss B, while $s$ stays because it misses A. **That is what the claim says.**",
+      `**A.** → True
 
+Putting $A$ and $B$ together covers $\\{p,q,r,s\\}$. Of the six letters in $U$ only $t$ and $u$ are left out:
+
+$$(A\\cup B)^c=\\{t,u\\}$$
+
+so the statement is True.`,
+      `**B.** → True
+
+$A^c=\\{s,t,u\\}$ and $B^c=\\{p,q,t,u\\}$ share $t$ and $u$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
+
+so the statement is True.`,
+      `**C.** → True
+
+$A\\cap B=\\{r\\}$, so $(A\\cap B)^c$ is every letter of $U$ except $r$. Joining the two complements $A^c=\\{s,t,u\\}$ and $B^c=\\{p,q,t,u\\}$ produces the same five letters $\\{p,q,s,t,u\\}$.
+
+so the statement is True.`,
+      `**D.** → True
+
+Drop $p,q,r$ from $U$ and $\\{s,t,u\\}$ remain:
+
+$$A^c=\\{s,t,u\\}$$
+
+Complement does not also drop $s$ just because $s\\in B$; that would be $A^c\\cap B^c$.
+
+so the statement is True.`,
+      `**E.** → True
+
+Remove the single shared letter $r$ from $U$ and $\\{p,q,s,t,u\\}$ stay. $p$ and $q$ stay because they miss $B$; $s$ stays because it misses $A$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 13,
-    solution_overview:
-      "Six letters make up the universe $U=\\{p,q,r,s,t,u\\}$, and $A=\\{p,q,r\\}$ overlaps $B=\\{r,s\\}$ in the single letter $r$.\n\nThe four sets needed are:\n\n$$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qquad B^c=\\{p,q,t,u\\}.$$\n\nComplementing the union leaves the two letters that no set reached, $(A\\cup B)^c=\\{t,u\\}$. Complementing the intersection removes only $r$, giving $(A\\cap B)^c=\\{p,q,s,t,u\\}$.\n\nPut in plain words, **De Morgan's laws** say a letter is outside a union when it is outside *both* sets, and outside an intersection when it is outside *at least one* of them. Checking that against the letters: $A^c\\cap B^c=\\{t,u\\}$ and $A^c\\cup B^c=\\{p,q,s,t,u\\}$, matching the direct computations above.",
+    solution_overview: `Let $U=\\{p,q,r,s,t,u\\}$, $A=\\{p,q,r\\}$, and $B=\\{r,s\\}$. Complements are taken inside $U$.
+
+De Morgan says a letter is outside a union when it is outside both sets, and outside an intersection when it is outside at least one of them.`,
   },
   {
-    id: "math-1-36",
-    case_id: "MATH 1.36",
-    title: "Cartesian Products and Ordered Pairs",
-    subsection: "1.2",
-    context: "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    id: `math-1-36`,
+    case_id: `MATH 1.36`,
+    title: `Cartesian Products and Ordered Pairs`,
+    subsection: `1.2`,
+    context: `Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.`,
     statements: [
-      "$\\lvert A \\times B\\rvert = 6$.",
-      "$(1, x) \\in A \\times B$.",
-      "$(x, 1) \\in A \\times B$.",
-      "$A \\times B = B \\times A$.",
-      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.",
+      `$\\lvert A \\times B\\rvert = 6$.`,
+      `$(1, x) \\in A \\times B$.`,
+      `$(x, 1) \\in A \\times B$.`,
+      `$A \\times B = B \\times A$.`,
+      `$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given sets are $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. The claim is $|A\\times B|=6$, so count the ordered pairs whose first slot comes from A and whose second comes from B.\n\nThe pairs are $(1,x)$, $(1,y)$, $(1,z)$, $(2,x)$, $(2,y)$, $(2,z)$. Six of them, and the product rule agrees: $2\\cdot 3=6$. **The size is 6.**",
-      "**B.** → True\n\nThe product $A\\times B$ is built from $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Membership of $(1,x)$ requires the first coordinate in A and the second in B.\n\nThe number $1$ is the first member of $A$, and the letter $x$ is the first member of $B$. Both slots are filled correctly, so **$(1,x)$ really does belong to $A\\times B$**.",
-      "**C.** → False\n\nThe right objects, but in the wrong seats. The first slot has to be filled from $A=\\{1,2\\}$, and $x$ is a letter of $B$, not a member of $A$. **$(x,1)$ is a member of $B\\times A$, not of $A\\times B$.** Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects, so swapping the coordinates moves the pair into the opposite product.",
-      "**D.** → False\n\nEvery pair in $A\\times B$ reads (number, letter), while every pair in $B\\times A$ reads (letter, number). In particular $(1,x)$ appears in $A\\times B$ (from B) but cannot appear in $B\\times A$, because $1\\notin B$. **The products are different sets.** Equal size does not rescue equality of sets: both products have six members, yet they share no ordered pair at all.",
-      "**E.** → True\n\nSize ignores order: $|A\\times B|=|A|\\cdot|B|$ and $|B\\times A|=|B|\\cdot|A|$. With $|A|=2$ and $|B|=3$, counting gives $2\\cdot 3=6$ one way and $3\\cdot 2=6$ the other. **Both products hold six pairs, even though the pairs themselves differ.**",
+      `**A.** → True
 
+Two choices for the first slot and three for the second give
+
+$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
+
+Product size is the number of cells, not the number of distinct symbols used.
+
+so the statement is True.`,
+      `**B.** → True
+
+$(1,x)$ has first slot from $A$ and second from $B$, so $(1,x)\\in A\\times B$. Both membership tests succeed.
+
+so the statement is True.`,
+      `**C.** → False
+
+$(x,1)$ has a letter in the first slot, and $x\\notin A$. Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects; the second lives in $B\\times A$, not in $A\\times B$.
+
+so the statement is False.`,
+      `**D.** → False
+
+Every pair in $A\\times B$ reads (number, letter); every pair in $B\\times A$ reads (letter, number). In particular $(1,x)$ sits in the first product and cannot sit in the second, because $1\\notin B$. Equal size does not rescue set equality.
+
+so the statement is False.`,
+      `**E.** → True
+
+Size ignores order:
+
+$$2\\cdot 3=6,\\qquad 3\\cdot 2=6$$
+
+Both products hold six pairs even though the pairs themselves differ.
+
+so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 14,
-    solution_overview:
-      "The task gives $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about the ordered pairs formed from those two sets.\n\nAn **ordered pair** $(\\text{first},\\text{second})$ records not just which two objects were chosen but which one plays which role. The **Cartesian product** $A\\times B$ is the set of all pairs whose first entry comes from A and whose second comes from B.\n\nLaying the pairs out as a grid makes both the count and the ordering visible:\n\n| $A\\times B$ | $x$ | $y$ | $z$ |\n| --- | --- | --- | --- |\n| **1** | $(1,x)$ | $(1,y)$ | $(1,z)$ |\n| **2** | $(2,x)$ | $(2,y)$ | $(2,z)$ |\n\nTwo rows times three columns is six cells, which is the product rule:\n\n$|A\\times B|=|A|\\cdot|B|=2\\cdot3=6.$\n\nTurning the grid on its side produces $B\\times A$, whose cells read $(x,1)$ and so on: three rows, two columns, still six cells. The two products therefore have **the same size but no member in common**.",
+    solution_overview: `Let $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. An ordered pair records which object plays which role. The Cartesian product $A\\times B$ is the set of all pairs whose first entry comes from $A$ and whose second comes from $B$.
+
+The product rule counts the cells:
+
+$$\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$$
+
+Turning the product around gives $B\\times A$, the same count and a different set of pairs.`,
   },
   {
-    id: "math-1-37",
-    case_id: "MATH 1.37",
-    title: "Cartesian Product Size vs. Pair Membership",
-    subsection: "1.2",
-    context: "Let $A = \\{m, n, p\\}$ and $B = \\{1, 2\\}$.",
+    id: `math-1-37`,
+    case_id: `MATH 1.37`,
+    title: `Cartesian Product Size vs. Pair Membership`,
+    subsection: `1.2`,
+    context: `Let $A = \\{m, n, p\\}$ and $B = \\{1, 2\\}$.`,
     statements: [
-      "$\\lvert A \\times B\\rvert = 6$.",
-      "$(m, 1) \\in A \\times B$.",
-      "$(1, m) \\in A \\times B$.",
-      "$A \\times B = B \\times A$.",
-      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.",
+      `$\\lvert A \\times B\\rvert = 6$.`,
+      `$(m, 1) \\in A \\times B$.`,
+      `$(1, m) \\in A \\times B$.`,
+      `$A \\times B = B \\times A$.`,
+      `$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given sets are $A=\\{m,n,p\\}$ and $B=\\{1,2\\}$. The claim is $|A\\times B|=6$, so count letter-then-number pairs.\n\nCount the list: three choices of letter, two of number, so $3\\cdot2=6$ pairs. **Six is right.**\n\nWrite every letter-then-number pair from the given lists:\n\n- $m$ with $1$ and with $2$: $(m,1)$, $(m,2)$.\n- $n$ with $1$ and with $2$: $(n,1)$, $(n,2)$.\n- $p$ with $1$ and with $2$: $(p,1)$, $(p,2)$.\n\n$$A\\times B=\\{(m,1),(m,2),(n,1),(n,2),(p,1),(p,2)\\}.$$\n\nCount the six pairs, or use the product rule $|A|\\cdot|B|=3\\cdot2=6$. Either route matches the claim.",
-      "**B.** → True\n\nA pair belongs to $A\\times B$ only when its first entry comes from $A=\\{m,n,p\\}$ and its second from $B=\\{1,2\\}$. The claim is that $(m,1)$ meets both tests.\n\nFirst entry $m$ comes from A, second entry $1$ comes from B, both slots are filled correctly, and $(m,1)$ is the pair that opens the list. **It is a member.**\n\nCheck the two slots of $(m,1)$ against the given sets:\n\n- first coordinate: $m\\in A=\\{m,n,p\\}$, yes;\n- second coordinate: $1\\in B=\\{1,2\\}$, yes.\n\nBoth membership tests succeed, so $(m,1)\\in A\\times B$. The pair also appears as the first entry of the explicit product list.",
-      "**C.** → False\n\nSame two objects, swapped roles. $A\\times B$ demands a letter first, but here the first entry is the number $1$, which lives in B. **So $(1,m)\\notin A\\times B$**; it belongs to $B\\times A$ instead. The trap is forgetting that ordered pairs care about position: having $m$ and $1$ available somewhere is not enough unless they sit in the slots $A\\times B$ requires.\n\nRun the same two-slot test on $(1,m)$:\n\n- first coordinate must lie in $A=\\{m,n,p\\}$, but $1\\notin A$;\n- second coordinate would need $m\\in B=\\{1,2\\}$, and $m\\notin B$ either.\n\nThe first slot already fails, so $(1,m)\\notin A\\times B$. (It does sit in $B\\times A$, where the number comes first.)",
-      "**D.** → False\n\nCompare a single member: $A\\times B$ contains $(m,1)$, whereas $B\\times A$ contains $(1,m)$, and for ordered pairs those are not the same object. **The two products are not equal.** In fact none of the six letter-first pairs equals any of the six number-first pairs, so the sets are disjoint as well as unequal.\n\nList both products from the given sets:\n\n$$A\\times B=\\{(m,1),(m,2),(n,1),(n,2),(p,1),(p,2)\\},$$\n$$B\\times A=\\{(1,m),(1,n),(1,p),(2,m),(2,n),(2,p)\\}.$$\n\nPick one witness of inequality: $(m,1)$ is on the first list and missing from the second, because ordered pairs treat $(m,1)$ and $(1,m)$ as different objects. The two sets are not equal.",
-      "**E.** → True\n\nThe claim compares counts, not members. With $|A|=3$ and $|B|=2$, check $|A|\\cdot|B|$ against $|B|\\cdot|A|$.\n\nThis claim asks only *how many*, not *which*. Since $3\\cdot2$ and $2\\cdot3$ both give $6$, **the two products are the same size** even though they share no pair at all.\n\nPlug the given sizes into the product rule:\n\n$$|A\\times B|=|A|\\cdot|B|=3\\cdot2=6,$$\n$$|B\\times A|=|B|\\cdot|A|=2\\cdot3=6.$$\n\nThe two counts agree, even though the member lists in D share no pair. Size equality is not set equality.",
+      `**A.** → True
 
+Three letters with two numbers each give
+
+$$3\\cdot 2=6$$
+
+ordered pairs, so $|A\\times B|=6$.
+
+so the statement is True.`,
+      `**B.** → True
+
+$(m,1)$ has $m\\in A$ and $1\\in B$, so both slots of $A\\times B$ are filled correctly. Membership is that two-slot test.
+
+so the statement is True.`,
+      `**C.** → False
+
+$(1,m)$ puts a number first, and $1\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$).
+
+so the statement is False.`,
+      `**D.** → False
+
+$A\\times B$ is letter-first; $B\\times A$ is number-first. Witness: $(m,1)$ is on the first list and missing from the second, because $m\\notin B$. Set equality needs identical members, not identical counts.
+
+so the statement is False.`,
+      `**E.** → True
+
+The product rule is commutative as a count:
+
+$$3\\cdot 2=6,\\qquad 2\\cdot 3=6$$
+
+The counts agree while the member lists share no pair.
+
+so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 15,
-    solution_overview:
-      "Pair every letter of $A=\\{m,n,p\\}$ with every number of $B=\\{1,2\\}$, always keeping the letter first:\n\n$$A\\times B=\\{(m,1),(m,2),(n,1),(n,2),(p,1),(p,2)\\}.$$\n\nThree letters with two numbers each gives $3\\cdot2=6$ ordered pairs, which is the **product rule** $|A\\times B|=|A|\\cdot|B|$.\n\nThe word **ordered** is the one that matters. A pair belongs to $A\\times B$ only when its *first* entry comes from A and its *second* from B, so $(m,1)$ qualifies and $(1,m)$ does not. Writing the product the other way round,\n\n$$B\\times A=\\{(1,m),(1,n),(1,p),(2,m),(2,n),(2,p)\\},$$\n\ngives six completely different pairs: the same count, a different set.",
+    solution_overview: `Let $A=\\{m,n,p\\}$ and $B=\\{1,2\\}$. Pair every letter of $A$ with every number of $B$, always keeping the letter first. The product rule is $|A\\times B|=|A|\\cdot|B|$.
+
+A pair belongs to $A\\times B$ only when its first entry comes from $A$ and its second from $B$. Writing the product the other way round gives six different pairs: the same count, a different set.`,
   },
   {
-    id: "math-1-38",
-    case_id: "MATH 1.38",
-    title: "Symmetric Difference of Two Odd-Number Sets",
-    subsection: "1.2",
-    context: "Let $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{3, 5, 7, 11, 13\\}$.",
+    id: `math-1-38`,
+    case_id: `MATH 1.38`,
+    title: `Symmetric Difference of Two Odd-Number Sets`,
+    subsection: `1.2`,
+    context: `Let $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{3, 5, 7, 11, 13\\}$.`,
     statements: [
-      "$A \\setminus B = \\{1, 9\\}$.",
-      "$B \\setminus A = \\{11, 13\\}$.",
-      "$A \\triangle B = \\{1, 9, 11, 13\\}$.",
-      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
-      "$A \\triangle B = A \\cup B$.",
+      `$A \\setminus B = \\{1, 9\\}$.`,
+      `$B \\setminus A = \\{11, 13\\}$.`,
+      `$A \\triangle B = \\{1, 9, 11, 13\\}$.`,
+      `$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.`,
+      `$A \\triangle B = A \\cup B$.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe given sets are $A=\\{1,3,5,7,9\\}$ and $B=\\{3,5,7,11,13\\}$. Difference $A\\setminus B$ keeps members of A that do not sit in B, and the claim is $\\{1,9\\}$.\n\nStrip the shared $\\{3,5,7\\}$ out of A and the left bucket holds $1$ and $9$. **That is $A\\setminus B$.**\n\nScan each member of $A=\\{1,3,5,7,9\\}$ against $B=\\{3,5,7,11,13\\}$:\n\n- $1\\in A$ and $1\\notin B$, keep it.\n- $3\\in A$ and $3\\in B$, drop it.\n- $5\\in A$ and $5\\in B$, drop it.\n- $7\\in A$ and $7\\in B$, drop it.\n- $9\\in A$ and $9\\notin B$, keep it.\n\nSo $A\\setminus B=\\{1,9\\}$, matching the claim.",
-      "**B.** → True\n\nThe same two lists. Difference $B\\setminus A$ keeps members of B missing from A, and the claim is $\\{11,13\\}$.\n\nThe same shared numbers removed from the other side leave B with $11$ and $13$. **The right bucket matches the claim.**\n\nNow scan $B=\\{3,5,7,11,13\\}$ against $A=\\{1,3,5,7,9\\}$:\n\n- $3\\in B$ and $3\\in A$, drop it.\n- $5\\in B$ and $5\\in A$, drop it.\n- $7\\in B$ and $7\\in A$, drop it.\n- $11\\in B$ and $11\\notin A$, keep it.\n- $13\\in B$ and $13\\notin A$, keep it.\n\nSo $B\\setminus A=\\{11,13\\}$.",
-      "**C.** → True\n\nSymmetric difference $A\\triangle B$ joins the two outer leftovers $A\\setminus B$ and $B\\setminus A$. With those leftovers already $\\{1,9\\}$ and $\\{11,13\\}$, the claim is that $A\\triangle B=\\{1,9,11,13\\}$.\n\nJoining the two outer buckets gives $\\{1,9,11,13\\}$, and each of those four numbers really does appear in only one of the original sets. **The claimed set is the symmetric difference.**\n\nSymmetric difference is the union of those two leftovers:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)=\\{1,9\\}\\cup\\{11,13\\}=\\{1,9,11,13\\}.$$\n\nEach of $1,9,11,13$ sits in exactly one of the original sets, so the claimed list is the full symmetric difference.",
-      "**D.** → True\n\nNo arithmetic is needed for this one. Anything in $A\\setminus B$ is outside B, anything in $B\\setminus A$ is inside B, and nothing can be both, so the intersection is forced to be empty. The lists confirm it: $\\{1,9\\}$ and $\\{11,13\\}$ share nothing. **Empty, as claimed.** This emptiness is structural, not a coincidence of these particular numbers: the two outer buckets of a Venn diagram never overlap.\n\nIntersect the two leftover lists member by member. From $\\{1,9\\}$ ask whether either number sits in $\\{11,13\\}$: $1$ does not, $9$ does not. From the other side, $11$ and $13$ are missing from $\\{1,9\\}$. The intersection is empty, as claimed.",
-      "**E.** → False\n\nThe union keeps the middle bucket $\\{3,5,7\\}$ and the symmetric difference throws it away, so $\\{1,9,11,13\\}\\ne\\{1,3,5,7,9,11,13\\}$. **The two operations agree only when the sets share nothing, which is not the case here.** Explicitly, $3\\in A\\cup B$ because $3$ sits in both original sets, yet $3\\notin A\\triangle B$ because belonging to both is exactly what the symmetric difference rejects.\n\nBuild the union from the same three buckets:\n\n$$A\\cup B=\\{1,9\\}\\cup\\{3,5,7\\}\\cup\\{11,13\\}=\\{1,3,5,7,9,11,13\\}.$$\n\nCompare with $A\\triangle B=\\{1,9,11,13\\}$. The middle bucket $\\{3,5,7\\}$ sits in the union and is missing from the symmetric difference, so the two sets are not equal.",
+      `**A.** → True
 
+Shared $3,5,7$ leave $A$; $1$ and $9$ stay because they miss $B$:
+
+$$A\\setminus B=\\{1,9\\}$$
+
+so the statement is True.`,
+      `**B.** → True
+
+The opposite leftover deletes the same shared triple from $B$ and keeps $B$'s private numbers:
+
+$$B\\setminus A=\\{11,13\\}$$
+
+so the statement is True.`,
+      `**C.** → True
+
+Symmetric difference joins the two outer piles:
+
+$$A\\triangle B=\\{1,9\\}\\cup\\{11,13\\}=\\{1,9,11,13\\}$$
+
+Each of those four sits in exactly one of the original sets. Including $3$ would be keeping the overlap, which $A\\triangle B$ rejects.
+
+so the statement is True.`,
+      `**D.** → True
+
+A number in $A\\setminus B$ is outside $B$; a number in $B\\setminus A$ is inside $B$. Those demands cannot hold together, so
+
+$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$
+
+so the statement is True.`,
+      `**E.** → False
+
+Union keeps the middle bucket $\\{3,5,7\\}$; symmetric difference throws it away. So
+
+$$A\\triangle B=\\{1,9,11,13\\}\\ne\\{1,3,5,7,9,11,13\\}=A\\cup B$$
+
+The two operations agree only when the overlap is empty, which it is not.
+
+so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 16,
-    solution_overview:
-      "The **symmetric difference** $A\\triangle B$ keeps the numbers belonging to exactly one of the two sets, the ones the sets disagree about.\n\nSort every number of $A=\\{1,3,5,7,9\\}$ and $B=\\{3,5,7,11,13\\}$ into one of three buckets:\n\n| Bucket | Numbers |\n| --- | --- |\n| Only in A, that is $A\\setminus B$ | $1,\\ 9$ |\n| In both, that is $A\\cap B$ | $3,\\ 5,\\ 7$ |\n| Only in B, that is $B\\setminus A$ | $11,\\ 13$ |\n\nThe symmetric difference is the two outer buckets joined together:\n\n$$A\\triangle B=\\{1,9\\}\\cup\\{11,13\\}=\\{1,9,11,13\\}.$$\n\nThe **union** takes all three buckets, $A\\cup B=\\{1,3,5,7,9,11,13\\}$, so the two operations differ by exactly the middle bucket. Note as well that the outer buckets can never overlap: a number in the left one is outside B, a number in the right one is inside B.",
+    solution_overview: `Let $A=\\{1,3,5,7,9\\}$ and $B=\\{3,5,7,11,13\\}$.
+
+The symmetric difference $A\\triangle B$ keeps the numbers belonging to exactly one of the two sets. It is the union of the two leftover piles $A\\setminus B$ and $B\\setminus A$. Union keeps the overlap as well; symmetric difference throws the overlap away. The two leftover piles cannot overlap.`,
   },
   {
-    id: "math-1-39",
-    case_id: "MATH 1.39",
-    title: "Symmetric Difference of Disjoint Sets",
-    subsection: "1.2",
-    context: "Let $A = \\{2, 4, 6\\}$ and $B = \\{1, 3, 5\\}$.",
+    id: `math-1-39`,
+    case_id: `MATH 1.39`,
+    title: `Symmetric Difference of Disjoint Sets`,
+    subsection: `1.2`,
+    context: `Let $A = \\{2, 4, 6\\}$ and $B = \\{1, 3, 5\\}$.`,
     statements: [
-      "$A \\setminus B = \\{2, 4, 6\\}$.",
-      "$B \\setminus A = \\{1, 3, 5\\}$.",
-      "$A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.",
-      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
-      "$A \\triangle B = A \\cup B$.",
+      `$A \\setminus B = \\{2, 4, 6\\}$.`,
+      `$B \\setminus A = \\{1, 3, 5\\}$.`,
+      `$A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.`,
+      `$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.`,
+      `$A \\triangle B = A \\cup B$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given sets are $A=\\{2,4,6\\}$ (evens) and $B=\\{1,3,5\\}$ (odds). Difference $A\\setminus B$ deletes from A whatever also sits in B, and the claim is that A comes through unchanged.\n\nSubtracting B from A means deleting whatever A shares with B, and it shares nothing. **A comes through untouched: $A\\setminus B=\\{2,4,6\\}$.**\n\nScan $A=\\{2,4,6\\}$ against $B=\\{1,3,5\\}$:\n\n- $2\\notin B$, keep it.\n- $4\\notin B$, keep it.\n- $6\\notin B$, keep it.\n\nNothing is deleted, so $A\\setminus B=\\{2,4,6\\}=A$.",
-      "**B.** → True\n\nThe same disjoint pair. Difference $B\\setminus A$ deletes from B whatever sits in A, and the claim is $B\\setminus A=\\{1,3,5\\}$.\n\nThe same reasoning in reverse: none of $\\{1,3,5\\}$ is even, so nothing gets deleted from B. **$B\\setminus A=\\{1,3,5\\}$.**\n\nScan $B=\\{1,3,5\\}$ against $A=\\{2,4,6\\}$:\n\n- $1\\notin A$, keep it.\n- $3\\notin A$, keep it.\n- $5\\notin A$, keep it.\n\nSo $B\\setminus A=\\{1,3,5\\}=B$.",
-      "**C.** → True\n\nEach of the six numbers belongs to exactly one of the two sets, which is the entry condition for the symmetric difference. **All six get in: $\\{1,2,3,4,5,6\\}$.** Because $A\\cap B=\\emptyset$, there is no middle bucket to discard, so the symmetric difference simply glues the two whole sets together.\n\nJoin the two leftover piles:\n\n$$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}.$$\n\nEach of those six numbers sits in exactly one of $A$ or $B$, which is the entry rule for symmetric difference.",
-      "**D.** → True\n\nThe two differences are $A\\setminus B=\\{2,4,6\\}$ and $B\\setminus A=\\{1,3,5\\}$. The claim is that those leftover piles share nothing.\n\nThe two differences are $\\{2,4,6\\}$ and $\\{1,3,5\\}$, and even numbers never coincide with odd ones. **Their intersection is empty.**\n\nThe leftover piles are $\\{2,4,6\\}$ and $\\{1,3,5\\}$. Check for a shared member: $2$ is even, $1$ is odd, and so on down the lists. No even number equals an odd number, so the intersection is $\\emptyset$.",
-      "**E.** → True\n\nNormally the union is the bigger set, because it also keeps the shared members. Here the shared part is empty, so there is nothing extra for the union to add and both sides come to $\\{1,2,3,4,5,6\\}$. **Disjointness is exactly what makes this equality work.** Contrast with a typical overlapping pair: whenever $A\\cap B$ is nonempty, the union keeps those shared elements while $A\\triangle B$ throws them away, so the two operations split apart.\n\nUnion of the same two lists is\n\n$$A\\cup B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}.$$\n\nThat is identical to $A\\triangle B$ from C. The missing middle bucket is $A\\cap B$. Scan $A$ against $B$: $2,4,6$ all miss $B$, so $A\\cap B=\\emptyset$, and with an empty overlap the two operations coincide.",
+      `**A.** → True
 
+$A$ is evens and $B$ is odds, so they share nothing. Subtracting $B$ from $A$ therefore deletes nobody:
+
+$$A\\setminus B=A=\\{2,4,6\\}$$
+
+so the statement is True.`,
+      `**B.** → True
+
+The same disjointness the other way: none of $B$'s odds is even, so nothing is deleted:
+
+$$B\\setminus A=B=\\{1,3,5\\}$$
+
+so the statement is True.`,
+      `**C.** → True
+
+With an empty middle bucket, symmetric difference is the two whole sets glued together:
+
+$$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}$$
+
+Each of the six numbers sits in exactly one of $A$ or $B$.
+
+so the statement is True.`,
+      `**D.** → True
+
+The leftovers are the two whole sets, evens and odds. No even equals an odd, so their intersection is empty.
+
+so the statement is True.`,
+      `**E.** → True
+
+Usually the union is bigger than the symmetric difference because it also keeps the shared members. Here the shared part is empty, so there is nothing extra for the union to add, and both sides equal $\\{1,2,3,4,5,6\\}$. Disjointness is exactly the situation in which $A\\triangle B=A\\cup B$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 17,
-    solution_overview:
-      "$A=\\{2,4,6\\}$ contains only even numbers and $B=\\{1,3,5\\}$ only odd ones, so no number can belong to both: the sets are **disjoint**, $A\\cap B=\\emptyset$.\n\nDisjointness makes the subtractions do nothing at all. There is no shared member to delete, so $A\\setminus B=A=\\{2,4,6\\}$ and $B\\setminus A=B=\\{1,3,5\\}$.\n\nThe **symmetric difference**, the members lying in exactly one set, therefore becomes the two whole sets glued together:\n\n$$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}=A\\cup B.$$\n\nUsually $A\\triangle B$ is smaller than $A\\cup B$, because the union additionally keeps whatever the sets share. Here there is nothing shared to keep, so the two operations coincide. Disjointness is precisely the situation in which that happens.",
+    solution_overview: `Let $A=\\{2,4,6\\}$ and $B=\\{1,3,5\\}$. Evens and odds share nothing, so the sets are disjoint: $A\\cap B=\\emptyset$.
+
+Disjointness makes subtraction delete nobody. Symmetric difference then glues the two whole sets together, which is also the union, because there is no overlap to discard.`,
   },
   {
-    id: "math-1-40",
-    case_id: "MATH 1.40",
-    title: "Chess and Checkers Club Overlap",
-    subsection: "1.2",
-    context:
-      "Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.",
+    id: `math-1-40`,
+    case_id: `MATH 1.40`,
+    title: `Chess and Checkers Club Overlap`,
+    subsection: `1.2`,
+    context: `Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.`,
     statements: [
-      "$\\lvert A \\cup B\\rvert = 31$.",
-      "Exactly $16$ people are in A only (not B).",
-      "Exactly $9$ people are in neither A nor B.",
-      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
-      "Exactly $9$ people are in B only (not A).",
+      `$\\lvert A \\cup B\\rvert = 31$.`,
+      `Exactly $16$ people are in A only (not B).`,
+      `Exactly $9$ people are in neither A nor B.`,
+      `$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.`,
+      `Exactly $9$ people are in B only (not A).`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe club has $|A|=22$ chess players, $|B|=15$ checkers players, and $|A\\cap B|=6$ who play both. The claim is that the union has size $31$.\n\nAdding $22+15$ counts the six two-game players twice, so one copy must go: $22+15-6=31$. **Thirty-one students play at least one of the games.**\n\nPlug the given counts into inclusion-exclusion:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|=22+15-6.$$\n\nFirst $22+15=37$, then $37-6=31$. The six two-game players were counted twice in $37$ and are restored to a single copy by the subtraction. The union size is $31$.",
-      "**B.** → True\n\n\"A only\" means chess without checkers: from the given $|A|=22$, subtract the $|A\\cap B|=6$ two-game players. The claim is that $16$ remain.\n\nThe 22 chess players include the 6 who also play checkers; take those out and $16$ pure chess players remain. **The claim matches.**\n\nChess-only is the chess headline minus the overlap:\n\n$$|A\\setminus B|=|A|-|A\\cap B|=22-6=16.$$\n\nThose $16$ sit in $A$ and not in $B$. The claim matches.",
-      "**C.** → True\n\nThe club has 40 members and the union of the two games is $31$. \"Neither\" is whoever is left outside that union, and the claim is $9$.\n\nOf the 40 members, 31 play something, so the other $40-31=9$ play neither. **Nine is correct.** The same $9$ also equals $40-(16+6+9)$ once the three playing regions are peeled apart, which is a useful cross-check that neither was not double-counted with the union.\n\nNeither is the club total minus the union:\n\n$$40-|A\\cup B|=40-31=9.$$\n\nCross-check by adding the four regions: chess-only $16$, both $6$, checkers-only $9$, neither $9$, and $16+6+9+9=40$. The leftover region is $9$.",
-      '**D.** → False\n\nThink about who is in each group: everyone playing both games is also someone playing at least one, so the "both" group sits **inside** the union and cannot be bigger. The counts say the same thing, $6<31$. **The inequality points the wrong way.** The trap is treating intersection and union as if they were unrelated totals; structurally $A\\cap B\\subseteq A\\cup B$ always, so $|A\\cap B|>|A\\cup B|$ is impossible for any pair of sets.\n\nCompare the two given (or already computed) sizes: $|A\\cap B|=6$ and $|A\\cup B|=31$. Then $6>31$ is false. Containment $A\\cap B\\subseteq A\\cup B$ already forbids the intersection from beating the union.',
-      "**E.** → True\n\n\"B only\" means checkers without chess: from the given $|B|=15$, subtract the overlap $6$. The claim is $9$.\n\nThe same peeling on the checkers side: $15-6=9$ students play checkers without ever touching chess. **Nine again, exactly as claimed.**\n\nCheckers-only is the checkers headline minus the overlap:\n\n$$|B\\setminus A|=|B|-|A\\cap B|=15-6=9.$$\n\nNine students play checkers and not chess, matching the claim.",
+      `**A.** → True
 
+Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy:
+
+$$\\lvert A\\cup B\\rvert=22+15-6=31$$
+
+so the statement is True.`,
+      `**B.** → True
+
+Chess-only is the chess headline minus the overlap:
+
+$$22-6=16$$
+
+Those $16$ sit in $A$ and not in $B$.
+
+so the statement is True.`,
+      `**C.** → True
+
+Neither is the club total minus the union. First form the union:
+
+$$22+15-6=31$$
+
+Then
+
+$$40-31=9$$
+
+so the statement is True.`,
+      `**D.** → False
+
+Everyone playing both games is already someone playing at least one, so $A\\cap B\\subseteq A\\cup B$ always. Here $6<31$. Intersection cannot outnumber the union that contains it.
+
+so the statement is False.`,
+      `**E.** → True
+
+Checkers-only is the checkers headline minus the overlap:
+
+$$15-6=9$$
+
+Those $9$ sit in $B$ and not in $A$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 18,
-    solution_overview:
-      '**Start from the overlap.** Six students play both games, and those six are hiding inside both headline numbers: they are part of the 22 chess players and part of the 15 checkers players.\n\n**Peel the groups apart.** Removing the shared six from each headline number gives chess-only $=22-6=16$ and checkers-only $=15-6=9$.\n\n**Add up everyone who plays something.** The three playing groups come to $16+6+9=31$, which is what inclusion-exclusion delivers in a single step:\n\n$$|A\\cup B|=22+15-6=31.$$\n\n**Account for the rest of the club.** There are 40 members, so $40-31=9$ students play neither game. Everyone is now placed, and $16+6+9+9=40$ confirms it.\n\nOne structural point to carry away: the "both games" group is *part of* the "at least one game" group, so $|A\\cap B|$ can never exceed $|A\\cup B|$, here $6$ against $31$.',
+    solution_overview: `Of $40$ students, $|A|=22$ play chess, $|B|=15$ play checkers, and $|A\\cap B|=6$ play both.
+
+Inclusion-exclusion counts the union by adding the headlines and subtracting the overlap once:
+
+$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
+
+Chess-only is the chess headline minus the overlap; checkers-only is the checkers headline minus the overlap. "Neither" is the club total minus the union. The both-games group is part of the at-least-one group, so the intersection cannot outnumber the union.`,
   },
   {
-    id: "math-1-41",
-    case_id: "MATH 1.41",
-    title: "Two Language Courses in One Cohort",
-    subsection: "1.2",
-    context:
-      "Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.",
+    id: `math-1-41`,
+    case_id: `MATH 1.41`,
+    title: `Two Language Courses in One Cohort`,
+    subsection: `1.2`,
+    context: `Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.`,
     statements: [
-      "$\\lvert A \\cup B\\rvert = 50$.",
-      "Exactly $22$ people are in A only (not B).",
-      "Exactly $10$ people are in neither A nor B.",
-      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
-      "Exactly $16$ people are in B only (not A).",
+      `$\\lvert A \\cup B\\rvert = 50$.`,
+      `Exactly $22$ people are in A only (not B).`,
+      `Exactly $10$ people are in neither A nor B.`,
+      `$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.`,
+      `Exactly $16$ people are in B only (not A).`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe cohort has $|A|=34$ in Spanish, $|B|=28$ in French, and $|A\\cap B|=12$ in both. The claim is that $|A\\cup B|=50$.\n\nInclusion-exclusion strips out the double count once: $34+28-12=50$. **Fifty students take at least one language.**\n\nSubstitute the survey numbers:\n\n$$|A\\cup B|=34+28-12.$$\n\n$34+28=62$, then $62-12=50$. Fifty students take at least one language.",
-      '**B.** → True\n\n"A only" is Spanish minus the overlap: the given $|A|=34$ already includes the $12$ double-enrolled students. The claim is that $22$ take Spanish alone.\n\n"Spanish only" means Spanish with the double-enrolled students removed: $34-12=22$. **The claim is exact.**\n\nSpanish-only:\n\n$$34-12=22.$$\n\nThose $22$ are in $A$ and not in $B$.',
-      "**C.** → True\n\nThe cohort has 60 students and the language union is $50$. \"Neither\" is the remainder, and the claim is $10$.\n\nSixty students, fifty of them accounted for inside the union, so $60-50=10$ are left with no language at all. **Ten, as claimed.**\n\nNeither:\n\n$$60-50=10.$$\n\nThe cohort has $60$ students and $50$ sit in the union, so $10$ take neither language.",
-      "**D.** → False\n\nThe 12 double-enrolled students are themselves part of the 50 who take at least one course, so the intersection is contained in the union and $12<50$. **A part can never outnumber the whole it belongs to.** Any claim of the form $|A\\cap B|>|A\\cup B|$ fails for the same structural reason, regardless of the particular enrolment numbers.\n\nThe overlap is $12$ and the union is $50$. Check $12>50$: false. The $12$ double-enrolled students are already among the $50$.",
-      "**E.** → True\n\n\"B only\" is French minus the overlap: from $|B|=28$ subtract the $12$ who also take Spanish. The claim is $16$.\n\nFrench minus the overlap: $28-12=16$ students take French and nothing else. **Sixteen matches the claim.** Cross-check: $22+12+16=50$ rebuilds the union from the three regions, confirming the peel was consistent.\n\nFrench-only:\n\n$$28-12=16.$$\n\nRebuild the union from the three regions: $22+12+16=50$, which matches A, so the peel is consistent.",
+      `**A.** → True
 
+Inclusion-exclusion counts each bilingual student once. Plug in the headlines $|A|=34$, $|B|=28$ and the overlap $12$:
+
+$$|A\\cup B|=34+28-12$$
+
+$$=50$$
+
+Adding $34+28$ without subtracting would count the $12$ shared students twice. The claim is $|A\\cup B|=50$, so the statement is True.`,
+      `**B.** → True
+
+Spanish-only peels the overlap out of $A$:
+
+$$|A\\setminus B|=34-12=22$$
+
+Those $22$ sit in $A$ and not in $B$. Using $34-28$ would compare course sizes instead of removing the shared $12$, so the statement is True.`,
+      `**C.** → True
+
+Neither is whoever sits outside the union. First recover the union:
+
+$$|A\\cup B|=34+28-12=50$$
+
+Then subtract from the cohort of $60$:
+
+$$60-50=10$$
+
+Subtracting both headlines from $60$ without restoring the overlap would overcount this leftover, so the statement is True.`,
+      `**D.** → False
+
+Intersection is a subset of the union, so its size cannot exceed the union size. Here $|A\\cap B|=12$ and
+
+$$|A\\cup B|=34+28-12=50$$
+
+Already $12<50$. The claimed $|A\\cap B|>|A\\cup B|$ would need people in both languages who somehow missed the union, which is impossible, so the statement is False.`,
+      `**E.** → True
+
+French-only peels the overlap out of $B$:
+
+$$|B\\setminus A|=28-12=16$$
+
+Spanish-only is $34-12=22$, so the three playing regions rebuild the union: $22+12+16=50$. The claim is exactly $16$ in $B$ only, so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 19,
-    solution_overview:
-      "**How many students take at least one language?** The 12 students taking both were counted twice, once among the 34 and once among the 28, so one copy has to come off:\n\n$$|A\\cup B|=34+28-12=50.$$\n\n**How many take just one?** Spanish minus the overlap is $34-12=22$; French minus the overlap is $28-12=16$. Together with the 12 who take both that is $22+12+16=50$, the same total as above, a good sign the pieces are right.\n\n**How many take nothing?** The cohort has 60 students and 50 of them sit inside the union, so $60-50=10$ take neither language.\n\n**Could the overlap ever beat the union?** No. Taking both courses is a stronger requirement than taking at least one, so those 12 students are part of the 50 and can never outnumber them.",
+    solution_overview: `Of $60$ students, $34$ take Spanish ($A$) and $28$ take French ($B$), with $|A\\cap B|=12$ in both.
+
+Two-set counting uses inclusion-exclusion:
+
+$$|A\\cup B|=|A|+|B|-|A\\cap B|$$
+
+Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is the cohort minus the union. The overlap sits inside the union, so it cannot outnumber it.`,
   },
   {
-    id: "math-1-42",
-    case_id: "MATH 1.42",
-    title: "Gym Members Using Two Facilities",
-    subsection: "1.2",
-    context:
-      "Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.",
+    id: `math-1-42`,
+    case_id: `MATH 1.42`,
+    title: `Gym Members Using Two Facilities`,
+    subsection: `1.2`,
+    context: `Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.`,
     statements: [
-      "$\\lvert A \\cup B\\rvert = 33$.",
-      "Exactly $15$ people are in A only (not B).",
-      "Exactly $17$ people are in neither A nor B.",
-      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
-      "Exactly $13$ people are in B only (not A).",
+      `$\\lvert A \\cup B\\rvert = 33$.`,
+      `Exactly $15$ people are in A only (not B).`,
+      `Exactly $17$ people are in neither A nor B.`,
+      `$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.`,
+      `Exactly $13$ people are in B only (not A).`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe gym has $|A|=20$ pool users, $|B|=18$ sauna users, and $|A\\cap B|=5$ who use both. The claim is $|A\\cup B|=33$.\n\nAdd the two facility counts and remove the five members counted twice: $20+18-5=33$. **Thirty-three members use at least one facility.**\n\nPlug in the gym counts:\n\n$$|A\\cup B|=20+18-5.$$\n\n$20+18=38$, then $38-5=33$. Thirty-three members use at least one facility.",
-      "**B.** → True\n\n\"A only\" is pool without sauna: from the given $|A|=20$ subtract the $5$ who use both. The claim is $15$.\n\nThe 20 pool users already contain the 5 who also use the sauna, so pool-only is $20-5=15$. **Fifteen, exactly as stated.**\n\nPool-only:\n\n$$20-5=15.$$\n\nFifteen members use the pool and not the sauna.",
-      "**C.** → True\n\nThe gym has 50 members and the facility union is $33$. \"Neither\" is the remainder, and the claim is $17$.\n\nOut of 50 members, 33 use something, so the remaining $50-33=17$ use nothing. **The claim is right.**\n\nNeither:\n\n$$50-33=17.$$\n\nOut of $50$ members, $33$ use a facility, leaving $17$ who use neither.",
-      '**D.** → False\n\nHere $|A\\cap B|=5$ and $|A\\cup B|=33$, and those five are themselves among the 33, the "both" group is always contained in the "at least one" group. **So the intersection is the smaller number, never the larger.** The trap flips a containment into a size comparison; once $A\\cap B\\subseteq A\\cup B$ is remembered, $|A\\cap B|>|A\\cup B|$ is ruled out before any arithmetic.\n\nCompare $5>33$: false. The five “both” members are already counted inside the $33$.',
-      "**E.** → True\n\n\"B only\" is sauna without pool: from $|B|=18$ subtract the overlap $5$. The claim is $13$.\n\nSauna users minus the shared members: $18-5=13$ use the sauna only. **Thirteen matches.** Together with pool-only $15$ and both $5$, the three regions sum to $15+5+13=33$, recovering the union.\n\nSauna-only:\n\n$$18-5=13.$$\n\nThe three playing regions sum to $15+5+13=33$, recovering the union from A.",
+      `**A.** → True
 
+The five members who use both facilities appear in each headline, so one copy comes off:
+
+$$|A\\cup B|=20+18-5$$
+
+$$=33$$
+
+Adding $20+18$ without subtracting inflates the union to $38$, two copies of the overlap. The claim is $33$, so the statement is True.`,
+      `**B.** → True
+
+Pool-only is the pool headline minus the overlap:
+
+$$|A\\setminus B|=20-5=15$$
+
+Those $15$ use the pool and not the sauna. The count would stay $20$ only if the facilities shared nobody, so the statement is True.`,
+      `**C.** → True
+
+First the union of facility users:
+
+$$|A\\cup B|=20+18-5=33$$
+
+The leftover among $50$ members is
+
+$$50-33=17$$
+
+The four regions $15+5+13+17=50$ then account for the whole gym. Subtracting pool plus sauna from $50$ without restoring the five "both" members would overcount unused lockers, so the statement is True.`,
+      `**D.** → False
+
+Containment $A\\cap B\\subseteq A\\cup B$ forbids the intersection from beating the union. Compare the two sizes:
+
+$$|A\\cap B|=5,\\qquad |A\\cup B|=20+18-5=33$$
+
+Already $5<33$. Flipping a containment into a size comparison is the trap, so the statement is False.`,
+      `**E.** → True
+
+Sauna-only peels the overlap out of $B$:
+
+$$|B\\setminus A|=18-5=13$$
+
+Pool-only is $20-5=15$, so the three playing regions sum to $15+5+13=33$, recovering the union. This $13$ is the sauna-side peel, not a leftover "neither" count, so the statement is True.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 20,
-    solution_overview:
-      'Twenty members use the pool and eighteen use the sauna, but that does not describe 38 separate people: the five who use both facilities show up in each count. Removing that duplication is exactly what **inclusion-exclusion** does,\n\n$$|A\\cup B|=20+18-5=33,$$\n\nso 33 members use at least one facility.\n\nSplitting those 33 shows where they sit: $20-5=15$ use only the pool, $5$ use both, and $18-5=13$ use only the sauna. The pieces reconcile, since $15+5+13=33$.\n\nThe gym has 50 members altogether, so $50-33=17$ use neither facility, and the whole membership is now accounted for: $15+5+13+17=50$.\n\nFinally, because the five "both" members are themselves part of the 33, the intersection is always the **smaller** of those two counts.',
+    solution_overview: `Of $50$ gym members, $20$ use the pool ($A$) and $18$ use the sauna ($B$), with $|A\\cap B|=5$ using both.
+
+The same two-set census applies:
+
+$$|A\\cup B|=|A|+|B|-|A\\cap B|$$
+
+Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is membership minus the union. The five "both" members already sit inside the union.`,
   },
   {
-    id: "math-1-43",
-    case_id: "MATH 1.43",
-    title: "Three Overlapping Hobby Clubs",
-    subsection: "1.2",
-    context:
-      "In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.",
+    id: `math-1-43`,
+    case_id: `MATH 1.43`,
+    title: `Three Overlapping Hobby Clubs`,
+    subsection: `1.2`,
+    context: `In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.`,
     statements: [
-      "$\\lvert A \\cup B \\cup C\\rvert = 53$.",
-      "Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.",
-      "The number who do photography and hiking but not cooking is $7$.",
-      "$\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.",
-      "$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$.",
+      `$\\lvert A \\cup B \\cup C\\rvert = 53$.`,
+      `Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.`,
+      `The number who do photography and hiking but not cooking is $7$.`,
+      `$\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.`,
+      `$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe survey gives $|A|=30$, $|B|=25$, $|C|=20$, pairwise overlaps $10$, $8$, $7$, and triple overlap $3$. The claim is that the three-set union has size $53$.\n\nRun the three-set formula: $30+25+20=75$, minus the pairwise overlaps $10+8+7=25$ leaves $50$, plus the $3$ who were over-subtracted gives $53$. **Fifty-three members do at least one activity**, the claimed figure.\n\nWrite every term of the three-set formula with the survey numbers:\n\n$$|A\\cup B\\cup C|=30+25+20-10-8-7+3.$$\n\nSum of the three headlines: $30+25+20=75$.\nSum of the pairwise overlaps: $10+8+7=25$.\nThen $75-25=50$, and adding the triple overlap back: $50+3=53$.",
-      "**B.** → True\n\nSomeone who does photography, hiking and cooking automatically does each *pair* of those activities. So the same 3 people are already inside the 10, inside the 8 and inside the 7. **They are counted in all three pairwise totals**, which is precisely why inclusion-exclusion has to add them back at the end.\n\nThe $3$ members who do all three activities sit in $A\\cap B$, in $A\\cap C$, and in $B\\cap C$ at once. So they are already inside the pairwise totals $10$, $8$, and $7$. That is why the $+3$ at the end of inclusion-exclusion is needed: those three people were subtracted once too often.",
-      "**C.** → True\n\nThe 10 photographer-hikers include the 3 who cook as well, so removing them isolates those who skip cooking: $10-3=7$. **Seven do photography and hiking only.** Without that subtraction the pairwise total would still mix \"exactly two\" with \"all three\", which is the usual trap when reading a two-set overlap off a three-set survey.\n\nPhotography-and-hiking including cooks is $|A\\cap B|=10$. The three who also cook must be removed to isolate “exactly those two”:\n\n$$|A\\cap B\\cap C^c|=10-3=7.$$\n\nSeven members do photography and hiking but not cooking.",
-      "**D.** → True\n\nThe triple group is a subset of each pairwise group, and a subset is never larger than the set containing it. Numerically $3\\le10$, $3\\le8$ and $3\\le7$, so $3\\le\\min(10,8,7)$. **The inequality holds, and it would hold for any three sets, not just these.**\n\nThe triple group is contained in each pair, so its size cannot exceed any pairwise size. Check the three inequalities:\n\n- $3\\le 10$ (versus $|A\\cap B|$),\n- $3\\le 8$ (versus $|A\\cap C|$),\n- $3\\le 7$ (versus $|B\\cap C|$).\n\nAll three hold, and $3\\le\\min(10,8,7)=7$.",
-      "**E.** → False\n\nThe raw sum $30+25+20=75$ counts overlapping members several times over, while the union counts each member once, so the union is the smaller number: $53<75$. **The claimed inequality is backwards**; a union can only match the raw sum when the three groups are completely separate. Here the overlaps are substantial ($10$, $8$, $7$, and $3$ in the middle), so inclusion-exclusion must pull the total down from $75$ to $53$.\n\nThe raw sum is $30+25+20=75$. The union, after the overlap corrections, is $53$. The claimed comparison is $53>75$, which is false: $53<75$. Overlaps make the union strictly smaller than the raw sum.",
+      `**A.** → True
 
+Write the three-set formula and substitute the survey counts:
+
+$$|A\\cup B\\cup C|=30+25+20-10-8-7+3$$
+
+$$=53$$
+
+The closing $+3$ puts back the all-three members who were subtracted once too often. Stopping after the pairwise subtractions would leave $50$ and undercount the union, so the statement is True.`,
+      `**B.** → True
+
+Someone who does all three activities automatically does each pair. Those $3$ people already sit inside the pairwise totals $10$, $8$, and $7$. That is why inclusion-exclusion adds them back at the end: they were subtracted once too often. They are not a fourth disjoint group hiding outside the pairs, so the statement is True.`,
+      `**C.** → True
+
+The pairwise total $|A\\cap B|=10$ still includes the cooks. Removing the triple isolates the exact-pair region:
+
+$$|A\\cap B\\cap C^c|=10-3=7$$
+
+Leaving the raw $10$ mixes "at least those two" with "exactly those two." Every pairwise headline in a three-set survey needs that triple subtracted before it names an exact-pair region, so the statement is True.`,
+      `**D.** → True
+
+The triple group is a subset of each pair, so its size cannot exceed any pairwise size. Check the three comparisons:
+
+$$3\\le 10,\\qquad 3\\le 8,\\qquad 3\\le 7$$
+
+Hence $3\\le\\min(10,8,7)$. A triple larger than a pair would mean people in all three who somehow missed one of the pairs, which is impossible, so the statement is True.`,
+      `**E.** → False
+
+The raw sum counts overlapping members several times:
+
+$$|A|+|B|+|C|=30+25+20=75$$
+
+The union counts each person once:
+
+$$|A\\cup B\\cup C|=30+25+20-10-8-7+3=53$$
+
+Already $53<75$. The claimed $53>75$ is backwards. A union matches the raw sum only when the three groups are completely separate, so the statement is False.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 21,
-    solution_overview:
-      'With three overlapping groups, counting each person exactly once takes two rounds of correction.\n\nAdding $|A|+|B|+|C|=30+25+20=75$ counts anyone in two groups twice and anyone in all three groups three times. Subtracting the three pairwise overlaps repairs the two-group members, but it now removes the all-three members once too often, so they have to be added back:\n\n$$|A\\cup B\\cup C|=30+25+20-10-8-7+3=53.$$\n\nThose 3 members who do everything are the reason for the closing $+3$. They also sit inside *each* pairwise total, which is why the pairwise counts must be trimmed to isolate the "exactly two activities" regions: photography and hiking only $=10-3=7$, photography and cooking only $=8-3=5$, hiking and cooking only $=7-3=4$.\n\nTwo consequences are worth naming. Since the all-three group is contained in every pair, its size can never exceed the smallest pairwise count, so $3\\le\\min(10,8,7)=7$. And since the union counts each person once while the raw sum $75$ counts some people repeatedly, the union has to be the **smaller** figure.',
+    solution_overview: `Three hobby groups overlap: $|A|=30$ photography, $|B|=25$ hiking, $|C|=20$ cooking, with pairwise totals $|A\\cap B|=10$, $|A\\cap C|=8$, $|B\\cap C|=7$, and triple overlap $|A\\cap B\\cap C|=3$.
+
+Three-set inclusion-exclusion corrects the raw sum twice, once for the pairs and once for the people counted in all three:
+
+$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$
+
+An exact-pair region is the pairwise total minus the triple. The triple group sits inside every pair, so its size cannot exceed any pairwise size. The union counts each person once, while $|A|+|B|+|C|$ counts overlapping members repeatedly.`,
   },
   {
-    id: "math-1-44",
-    case_id: "MATH 1.44",
-    title: "Prime and even properties of the number 7",
-    subsection: "1.3",
-    context: "The number 7 is prime and is not even.",
+    id: `math-1-44`,
+    case_id: `MATH 1.44`,
+    title: `Prime and even properties of the number 7`,
+    subsection: `1.3`,
+    context: `The number 7 is prime and is not even.`,
     statements: [
-      "7 is both prime and even.",
-      "7 is prime or even.",
-      "It is not true that 7 is both prime and even.",
-      "7 is neither prime nor even.",
-      "It is not true that 7 is prime or even.",
+      `7 is both prime and even.`,
+      `7 is prime or even.`,
+      `It is not true that 7 is both prime and even.`,
+      `7 is neither prime nor even.`,
+      `It is not true that 7 is prime or even.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
-      '**A.** → False\n\nThe task states that 7 is prime and is not even. Write P for "7 is prime" (true) and Q for "7 is even" (false). The claim is the conjunction $P\\land Q$.\n\n"And" tolerates no weak link. P holds, but Q does not, so **$P\\land Q$ collapses to false**, 7 cannot be both prime and even.\n\nAssign the given facts: $P$ (“7 is prime”) is true, $Q$ (“7 is even”) is false. Conjunction needs both true:\n\n$$P\\land Q = \\text{T}\\land\\text{F} = \\text{F}.$$\n\nThe claim “both prime and even” is false.',
-      '**B.** → True\n\nThe same two facts: P is true and Q is false. The claim is the disjunction $P\\lor Q$, which needs only one true side.\n\n"Or" needs only one side. P is true, and that by itself makes **$P\\lor Q$ true**; Q\'s falsity does no damage.\n\nDisjunction needs only one true side:\n\n$$P\\lor Q = \\text{T}\\lor\\text{F} = \\text{T}.$$\n\n“7 is prime or even” holds because the prime side is true.',
-      "**C.** → True\n\nThe inner conjunction $P\\land Q$ was already false, because 7 is not even. The claim is the negation $\\neg(P\\land Q)$.\n\nRead it in two steps: inside the bracket $P\\land Q$ is false, and $\\neg$ turns false into true. **So $\\neg(P\\land Q)$ is true**, it is indeed *not* the case that 7 is both prime and even.\n\nFrom A, the inner conjunction is already false. Negation flips it:\n\n$$\\neg(P\\land Q)=\\neg\\text{F}=\\text{T}.$$\n\nIt is not true that 7 is both prime and even.",
-      '**D.** → False\n\nHere the negations come first: $\\neg P$ is false (7 *is* prime) and $\\neg Q$ is true. An "and" with one false part is false, so **$\\neg P\\land\\neg Q$ is false**. This is the classic mix-up with the previous statement, negating the bracket and negating the parts give different answers. De Morgan says $\\neg(P\\land Q)\\equiv\\neg P\\lor\\neg Q$, an *or* of negations, not an *and*; with P true and Q false that or is true while the and of negations is false, which is exactly the split between claims C and D.\n\nEvaluate each negated atom first: $\\neg P=\\neg\\text{T}=\\text{F}$ (7 is prime), $\\neg Q=\\neg\\text{F}=\\text{T}$ (7 is not even). Then\n\n$$\\neg P\\land\\neg Q=\\text{F}\\land\\text{T}=\\text{F}.$$\n\n“Neither prime nor even” fails because 7 is prime.',
-      "**E.** → False\n\n$P\\lor Q$ came out true, and negation flips it, so **$\\neg(P\\lor Q)$ is false**. Claiming otherwise would mean 7 is neither prime nor even, which fails on the first count. Equivalently, $\\neg(P\\lor Q)\\equiv\\neg P\\land\\neg Q$, the same false conjunction already evaluated in D.\n\nFrom B, $P\\lor Q$ is true. Negating the whole disjunction:\n\n$$\\neg(P\\lor Q)=\\neg\\text{T}=\\text{F}.$$\n\nDe Morgan confirms the same value as D: $\\neg(P\\lor Q)\\equiv\\neg P\\land\\neg Q$, already false.",
+      `**A.** → False
+
+Conjunction needs both halves true. Here $P$ is true ($7$ is prime) and $Q$ is false ($7$ is not even), so
+
+$$P\\land Q=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+"Both prime and even" therefore fails. An "or" would survive on the prime side alone, so the statement is False.`,
+      `**B.** → True
+
+Inclusive or needs only one true side. $P$ is true, so
+
+$$P\\lor Q=\\mathrm{T}\\lor\\mathrm{F}=\\mathrm{T}$$
+
+even though $Q$ is false. Exclusive or would reject this row; mathematical "or" does not. The even side being false does no damage, so the statement is True.`,
+      `**C.** → True
+
+The inner conjunction $P\\land Q$ is already false, and negation flips it:
+
+$$\\neg(P\\land Q)=\\neg\\mathrm{F}=\\mathrm{T}$$
+
+It is indeed not the case that $7$ is both prime and even. This is $\\neg(P\\land Q)$, not $\\neg P\\land\\neg Q$, so the statement is True.`,
+      `**D.** → False
+
+"Neither prime nor even" is $\\neg P\\land\\neg Q$. But $\\neg P$ is false because $7$ is prime, so
+
+$$\\neg P\\land\\neg Q=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+De Morgan says $\\neg(P\\land Q)\\equiv\\neg P\\lor\\neg Q$, an or of negations. Replacing that or by an and is the mix-up with $\\neg(P\\land Q)$, so the statement is False.`,
+      `**E.** → False
+
+$P\\lor Q$ is true, so its negation is false:
+
+$$\\neg(P\\lor Q)\\equiv\\neg P\\land\\neg Q=\\mathrm{F}$$
+
+Claiming this would mean $7$ is neither prime nor even, which already fails because $7$ is prime, so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 1,
-    solution_overview:
-      'The task states that 7 is prime and is not even. Write P for "7 is prime" and Q for "7 is even".\n\nBoth letters have known truth values: **P is true** (7 really is prime) and **Q is false** (7 is not even). Nothing has to be assumed, every compound statement can simply be evaluated.\n\nThree connectives do all the work. **Conjunction** $\\land$ ("and") is true only when both parts are true. **Disjunction** $\\lor$ ("or") is true when at least one part is true; in logic "or" always includes the case where both hold. **Negation** $\\neg$ ("not") flips a truth value.\n\nFilling in the one row that matters:\n\n| $P$ | $Q$ | $P\\land Q$ | $P\\lor Q$ | $\\neg(P\\land Q)$ | $\\neg P\\land\\neg Q$ | $\\neg(P\\lor Q)$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| T | F | F | T | T | F | F |\n\nCompare the last two columns with the third: negating a whole bracket is not the same operation as negating each part separately.',
+    solution_overview: `The number $7$ is prime and is not even. Write $P$ for "$7$ is prime" and $Q$ for "$7$ is even". Then $P$ is true and $Q$ is false.
+
+Conjunction $\\land$ is true only when both parts are true. Inclusive disjunction $\\lor$ is true when at least one part is true. Negation $\\neg$ flips a truth value. De Morgan identifies $\\neg(P\\land Q)$ with $\\neg P\\lor\\neg Q$, and $\\neg(P\\lor Q)$ with $\\neg P\\land\\neg Q$.`,
   },
   {
-    id: "math-1-45",
-    case_id: "MATH 1.45",
-    title: "Primes greater than 2",
-    subsection: "1.3",
-    context:
-      "Consider the statement: “For every prime number p greater than 2, p is an odd number.”",
+    id: `math-1-45`,
+    case_id: `MATH 1.45`,
+    title: `Primes greater than 2`,
+    subsection: `1.3`,
+    context: `Consider the statement: “For every prime number p greater than 2, p is an odd number.”`,
     statements: [
-      "The statement is true.",
-      "The number 2 is a counterexample to the statement.",
-      "The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”",
-      "Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.",
-      "There are infinitely many primes greater than 2.",
+      `The statement is true.`,
+      `The number 2 is a counterexample to the statement.`,
+      `The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”`,
+      `Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.`,
+      `There are infinitely many primes greater than 2.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe statement to test is: every prime $p>2$ is odd. The given restriction $p>2$ already excludes the even prime $2$, so the check is whether any remaining prime can be even.\n\nAn even number above $2$ is divisible by $1$, by $2$ and by itself, three divisors, one too many for a prime. The only even prime is $2$, and the statement deliberately excludes it. **Every prime greater than 2 is odd.**\n\nSuppose $p>2$ were even. Then $2$ divides $p$, and the positive divisors would include $1$, $2$, and $p$. That is at least three divisors, so $p$ would not be prime. The only even prime is $2$, which the statement excludes by the restriction $p>2$. Every remaining prime is odd, so the universal claim holds.",
-      "**B.** → False\n\nThe trap is that $2$ *is* an even prime, which looks like a perfect counterexample. But the statement never made a claim about $2$: its domain is primes **greater than** $2$, and $2$ does not clear that bar. **A number outside the domain cannot refute the statement.** A genuine counterexample would need to be prime, greater than $2$, and even all at once; no such integer exists, which is why the original universal claim survives.\n\nA counterexample must satisfy the domain and fail the conclusion. Check $2$ against the domain “prime greater than $2$”:\n\n$$2>2\\quad\\text{is false.}$$\n\nSo $2$ never enters the quantified range. It cannot refute a claim that was never made about it.",
-      '**C.** → True\n\nDenying a "for every" claim means producing one exception, so $\\forall$ turns into $\\exists$ and "is odd" turns into "is not odd", which for integers means even, with the condition $p>2$ left in place. **The quoted sentence is the correct negation** (and, being the negation of a true statement, it is itself false).\n\nNegate by swapping the quantifier and the conclusion:\n\n$$\\neg(\\forall\\text{ prime }p>2,\\ p\\text{ is odd})\\equiv\\exists\\text{ prime }p>2\\text{ with }p\\text{ even}.$$\n\nThat is the quoted sentence. (The original is true, so this negation is false, but it is still the correct negation.)',
-      "**D.** → False\n\nThis reverses the implication into its **converse**, and a true statement offers no guarantee about its converse. Test it: $9$ is odd and greater than $2$, yet $9=3\\cdot3$ is not prime. **One counterexample is enough to sink the claim.** The original says \"prime $>2$ $\\Rightarrow$ odd\"; the converse says \"odd $>2$ $\\Rightarrow$ prime\", a different arrow that $9$, $15$, or $21$ all break.\n\nThe converse would say: every odd integer greater than $2$ is prime. Test $x=9$:\n\n$$9>2,\\quad 9\\text{ is odd},\\quad 9=3\\cdot 3.$$\n\nSo $9$ is odd and not prime. One counterexample kills the converse. The original implication never claimed this reverse arrow.",
-      "**E.** → True\n\nThe claim is that infinitely many primes exceed $2$. Euclid's theorem already supplies infinitely many primes in total; the check is whether dropping the single prime $2$ leaves an infinite collection.\n\nEuclid's theorem says the supply of primes never runs out. Remove the single prime $2$ from that infinite collection and what remains is still infinite, with every member greater than $2$. **So infinitely many primes exceed 2.**\n\nEuclid’s theorem supplies infinitely many primes. The list includes $2,3,5,7,\\ldots$. Removing the single prime $2$ leaves $3,5,7,\\ldots$, still an infinite set, and every remaining member is greater than $2$.",
+      `**A.** → True
 
+If an integer larger than $2$ were even, then $2$ would divide it as well, giving it at least three divisors. So it could not be prime. The only even prime is $2$, and the statement excludes it by $p>2$. Every remaining prime is odd. The restriction $p>2$ is load-bearing; without it, $2$ would be a counterexample, so the statement is True.`,
+      `**B.** → False
+
+A counterexample must live inside the domain and fail the conclusion. The test $2>2$ is false, so $2$ never enters the quantified range. It is an even prime, which looks perfect, but the statement never claimed anything about $2$. A genuine counterexample would need to be an even prime greater than $2$, and none exists, so the statement is False.`,
+      `**C.** → True
+
+Negating a universal swaps $\\forall$ for $\\exists$ and "odd" for "even," keeping $p>2$:
+
+$$\\neg\\big(\\forall\\ \\text{prime } p>2,\\ p\\text{ is odd}\\big)\\equiv\\exists\\ \\text{prime } p>2\\text{ with } p\\text{ even}$$
+
+The quoted sentence is that negation. The original is true, so this existential is false, but it is still the correctly formed negation, so the statement is True.`,
+      `**D.** → False
+
+This reverses the implication into its converse: every odd number above $2$ is prime. Test $9$: odd, greater than $2$, and $9=3\\cdot 3$ is not prime. One counterexample kills "every odd above $2$ is prime." The original arrow is prime $\\Rightarrow$ odd, not the reverse, so the statement is False.`,
+      `**E.** → True
+
+Euclid supplies infinitely many primes. Dropping the single prime $2$ leaves $3,5,7,\\ldots$, still infinite, all greater than $2$. Removing one element from an infinite set leaves an infinite set. Finiteness would require the primes above $2$ to run out, which Euclid forbids, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 2,
-    solution_overview:
-      '**Why the statement holds.** A **prime** has exactly two positive divisors, $1$ and itself. If an integer larger than $2$ were even, then $2$ would divide it as well, giving it at least three divisors, $1$, $2$ and itself, so it could not be prime. Every prime above $2$ must therefore be odd.\n\n**What a counterexample would have to look like.** The statement speaks only about numbers satisfying $p>2$; that restriction is its **domain**. A counterexample has to live inside the domain and still fail the conclusion, meaning it would have to be an even prime greater than $2$. The number $2$ never passes the entry test $2>2$, so it is not eligible.\n\n**Negating it.** "For every" becomes "there exists", and the conclusion is reversed:\n\n$$\\neg\\big(\\forall\\ \\text{prime } p>2,\\ p \\text{ is odd}\\big)\\ \\equiv\\ \\exists\\ \\text{prime } p>2 \\text{ with } p \\text{ even}.$$\n\n**The reverse direction.** Swapping the two halves produces the **converse**, "every odd number above 2 is prime", which is a genuinely different claim, and a false one, since $9=3\\cdot3$.\n\n**How many such primes there are.** Euclid proved the primes never run out; dropping the single prime $2$ from an infinite list still leaves infinitely many, all of them greater than $2$.',
+    solution_overview: `The statement is: for every prime $p>2$, $p$ is odd. A prime has exactly two positive divisors, $1$ and itself. An even integer larger than $2$ would also be divisible by $2$, hence would have at least three divisors and could not be prime.
+
+The domain is primes strictly greater than $2$. A counterexample must live in that domain and fail the conclusion. Negating a universal swaps $\\forall$ for $\\exists$ and reverses the conclusion, keeping $p>2$. The converse swaps the two halves. Euclid's theorem says there are infinitely many primes.`,
   },
   {
-    id: "math-1-46",
-    case_id: "MATH 1.46",
-    title: "University prerequisite chain",
-    subsection: "1.3",
-    context:
-      "A university's rules state:\n\n(1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics.\n\n(2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics.\n\nMaria is currently enrolled in Advanced Macroeconomics.",
+    id: `math-1-46`,
+    case_id: `MATH 1.46`,
+    title: `University prerequisite chain`,
+    subsection: `1.3`,
+    context: `A university's rules state:
+
+(1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics.
+
+(2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics.
+
+Maria is currently enrolled in Advanced Macroeconomics.`,
     statements: [
-      "Maria has passed Intermediate Macroeconomics.",
-      "Maria has passed Principles of Economics.",
-      "Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.",
-      "Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.",
-      "We may conclude that Maria passed Principles of Economics with a perfect grade.",
+      `Maria has passed Intermediate Macroeconomics.`,
+      `Maria has passed Principles of Economics.`,
+      `Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.`,
+      `Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.`,
+      `We may conclude that Maria passed Principles of Economics with a perfect grade.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nMaria is enrolled in Advanced Macroeconomics, and rule (1) says that enrolment is possible only if Intermediate has already been passed. The claim is that Maria has that Intermediate pass.\n\nRule (1) makes an Advanced enrolment impossible without an Intermediate pass. Maria is enrolled in Advanced, so following that arrow, **the Intermediate pass must already be in place**.\n\nRule (1) is “enrolled in Advanced $\\Rightarrow$ passed Intermediate.” Maria is enrolled in Advanced, so the antecedent is true. Modus ponens yields the Intermediate pass. Without that pass, rule (1) would have forbidden the enrolment she currently has.",
-      "**B.** → True\n\nMaria is enrolled in Advanced, so rule (1) already forces an Intermediate pass. Rule (2) then says Intermediate itself requires a Principles pass. The claim is that Maria has passed Principles as well.\n\nFollow the chain one link further: Advanced gives Intermediate by rule (1), and Intermediate gives Principles by rule (2). **Maria must have passed Principles as well.**\n\nFrom A, Maria passed Intermediate. Rule (2) is “enrolled in Intermediate $\\Rightarrow$ passed Principles.” The same arrow now fires on that Intermediate pass and yields a Principles pass. The chain is\n\n$$\\text{Advanced}\\Rightarrow\\text{Intermediate}\\Rightarrow\\text{Principles}.$$",
-      '**C.** → True\n\nThe two rules chain to "enrolled in Advanced $\\Rightarrow$ passed Principles". "Necessary" means Advanced cannot occur without Principles, which is exactly that arrow.\n\n"Necessary" means the outcome cannot occur without the condition. The chain gives "enrolled in Advanced $\\Rightarrow$ passed Principles", so nobody reaches Advanced without Principles behind them. **Necessary indeed.**\n\nComposing the two arrows gives “enrolled in Advanced $\\Rightarrow$ passed Principles.” A necessary condition is the consequent of that implication: Advanced cannot occur unless Principles has already been passed. That is exactly the composed arrow.',
-      '**D.** → False\n\nThe arrow is being read backwards. "Sufficient" would require "passed Principles $\\Rightarrow$ may enrol in Advanced", but a student who has passed Principles still has to get through Intermediate first. **Principles is necessary for Advanced, not sufficient**, the classic necessary/sufficient swap. Concrete counter-picture: a student may pass Principles and then never take Intermediate, which satisfies the proposed sufficient condition while still blocking Advanced enrolment.\n\nSufficient would require the reverse arrow “passed Principles $\\Rightarrow$ enrolled in Advanced.” The given rules never supply it. A student can pass Principles, skip Intermediate, and never reach Advanced. Principles is on the necessary side of the chain, not the sufficient side.',
-      '**E.** → False\n\nThe rules deal in passes and enrolments; no grade appears anywhere in them. A pass is anything from the minimum mark upwards, so **"perfect grade" is information these rules simply do not carry**. From Maria\'s Advanced enrolment we recover that she passed Intermediate and Principles, but both conclusions are only yes/no pass facts, never a score.\n\nThe two rules mention only “passed” and “enrolled.” No grade, mark, or “perfect” appears in either sentence. From Maria’s enrolment we recover two pass/fail facts, not a score. A perfect grade is extra information the premises do not carry.',
+      `**A.** → True
 
+Rule (1) is "enrolled in Advanced $\\Rightarrow$ passed Intermediate." Maria is enrolled in Advanced, so modus ponens yields the Intermediate pass:
+
+$$A\\Rightarrow I,\\qquad A\\text{ true}\\quad\\Rightarrow\\quad I\\text{ true}$$
+
+Without that pass, rule (1) would have forbidden the enrolment she currently has. The rule does not say she passed with any particular grade, so the statement is True.`,
+      `**B.** → True
+
+Compose the two rules: Advanced $\\Rightarrow$ Intermediate $\\Rightarrow$ Principles. Maria is in Advanced, so the first arrow forces Intermediate and the second forces Principles:
+
+$$A\\Rightarrow I\\Rightarrow P$$
+
+Skipping Intermediate in the chain would leave Principles unforced, which the two rules do not allow, so the statement is True.`,
+      `**C.** → True
+
+Composing the two arrows gives "enrolled in Advanced $\\Rightarrow$ passed Principles." Necessary means Advanced cannot occur without Principles, which is exactly that composed implication. Sufficient would be the reverse arrow $P\\Rightarrow A$, which is a different claim, so the statement is True.`,
+      `**D.** → False
+
+Sufficient would require "passed Principles $\\Rightarrow$ enrolled in Advanced." A student may pass Principles, skip Intermediate, and never reach Advanced. Principles sits on the necessary side of the chain, not the sufficient side. The classic swap of those two words is the trap, so the statement is False.`,
+      `**E.** → False
+
+The two rules mention only "passed" and "enrolled." No grade, mark, or "perfect" appears. From Maria's enrolment we recover two pass/fail facts, not a score. A perfect grade is extra information the premises do not carry, so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 3,
-    solution_overview:
-      'The phrase "only if" is the one to get right. "You may enrol in X only if you have passed Y" does **not** promise that passing Y gets you into X; it says X cannot happen without Y. In symbols that is $X\\Rightarrow Y$, and Y is called a **necessary** condition for X.\n\nThe two rules therefore form a chain. Write $A$ for enrolling in Advanced, $I$ for passing Intermediate and $P$ for passing Principles:\n\n$$A \\Rightarrow I \\Rightarrow P$$\n\nMaria is enrolled in Advanced, so following the arrows from left to right settles both questions about her record: she passed Intermediate, and before that she passed Principles.\n\nThe arrows do not run backwards. A **sufficient** condition would be an arrow pointing the other way, $P \\Rightarrow A$, and nothing in the rules supplies it, a student may pass Principles and stop there without ever enrolling in Advanced.\n\nOne last caution: the rules speak only of passing and enrolling. They record no marks, so nothing whatsoever follows about *how well* Maria did.',
+    solution_overview: `"You may enrol in $X$ only if you have passed $Y$" is $X\\Rightarrow Y$: $Y$ is necessary for $X$, not sufficient. Write $A$ for enrolling in Advanced Macroeconomics, $I$ for passing Intermediate, and $P$ for passing Principles. The two rules form the chain
+
+$$A\\Rightarrow I\\Rightarrow P$$
+
+Maria is enrolled in Advanced, so the arrows run left to right from that observation. The reverse arrow $P\\Rightarrow A$ is not supplied. The rules speak only of passing and enrolling; they record no marks.`,
   },
   {
-    id: "math-1-47",
-    case_id: "MATH 1.47",
-    title: "Let the primes less than 15) and the even numbers less than 15)",
-    subsection: "1.3",
-    context:
-      "Let $P = \\{2, 3, 5, 7, 11, 13\\}$ (the primes less than 15) and $E = \\{2, 4, 6, 8, 10, 12, 14\\}$ (the even numbers less than 15).",
+    id: `math-1-47`,
+    case_id: `MATH 1.47`,
+    title: `Primes and Even Numbers Below Fifteen`,
+    subsection: `1.3`,
+    context: `Let $P = \\{2, 3, 5, 7, 11, 13\\}$ (the primes less than 15) and $E = \\{2, 4, 6, 8, 10, 12, 14\\}$ (the even numbers less than 15).`,
     statements: [
-      "$P \\cap E = \\{2\\}$",
-      "$P \\setminus E = \\{3, 5, 7, 11, 13\\}$",
-      '"$\\forall x \\in P$, x is odd" is a true statement',
-      "For every $x$, if $x \\in P$ and $x \\neq 2$, then $x$ is odd.",
-      "$P \\subseteq E$",
+      `$P \\cap E = \\{2\\}$`,
+      `$P \\setminus E = \\{3, 5, 7, 11, 13\\}$`,
+      `"$\\forall x \\in P$, x is odd" is a true statement`,
+      `For every $x$, if $x \\in P$ and $x \\neq 2$, then $x$ is odd.`,
+      `$P \\subseteq E$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe given lists are $P=\\{2,3,5,7,11,13\\}$ and $E=\\{2,4,6,8,10,12,14\\}$. Intersection keeps numbers in both, and the claim is $\\{2\\}$.\n\nRunning down the prime list against the even list, $2$ is the only number appearing in both; every other prime here is odd. **So $P\\cap E=\\{2\\}$.**\n\nScan $P=\\{2,3,5,7,11,13\\}$ against $E=\\{2,4,6,8,10,12,14\\}$:\n\n- $2\\in E$, keep it.\n- $3\\notin E$, drop it.\n- $5\\notin E$, drop it.\n- $7\\notin E$, drop it.\n- $11\\notin E$, drop it.\n- $13\\notin E$, drop it.\n\nThe only survivor is $2$, so $P\\cap E=\\{2\\}$.",
-      "**B.** → True\n\nDifference $P\\setminus E$ keeps primes from $P$ that are not even. From the same two lists, the claim is that $\\{3,5,7,11,13\\}$ remains.\n\n$P\\setminus E$ throws out of P whatever E also owns, and that is just the number $2$. The five primes $\\{3,5,7,11,13\\}$ remain. **The claimed list is correct.**\n\nScan $P$ again, this time keeping what $E$ misses:\n\n- $2\\in E$, drop it.\n- $3\\notin E$, keep it.\n- $5\\notin E$, keep it.\n- $7\\notin E$, keep it.\n- $11\\notin E$, keep it.\n- $13\\notin E$, keep it.\n\nSo $P\\setminus E=\\{3,5,7,11,13\\}$.",
-      '**C.** → False\n\nA "for every" sentence needs a clean sweep, and this one stumbles on its very first member: $2$ is in P and $2$ is even. **That single counterexample makes the sentence false.** Every other prime in the list is odd, which is why the claim looks tempting; universal claims do not forgive a single exception inside the domain.\n\nThe universal claim asks every member of $P$ to be odd. Test $x=2$ first: $2\\in P$ and $2$ is even, so “$x$ is odd” fails at this one value. A single counterexample inside the domain makes $\\forall x\\in P$ false.',
-      '**D.** → True\n\nThe restricted claim only asks about members of $P$ other than $2$. After dropping $2$ from the given prime list, what remains is $\\{3,5,7,11,13\\}$.\n\nAdding the condition $x\\ne2$ removes precisely the troublesome case. What is left to check is $\\{3,5,7,11,13\\}$, and every one of them is odd, so no value of x makes the "if" part true while the "then" part fails. **The restricted statement holds.**\n\nThe extra hypothesis $x\\ne 2$ removes the even prime. The remaining members of $P$ are $3,5,7,11,13$. Each is odd:\n\n- $3=2\\cdot 1+1$, odd;\n- $5,7,11,13$ likewise odd.\n\nNo remaining $x$ makes the “if” true and the “then” false, so the restricted implication holds.',
-      "**E.** → False\n\n$P\\subseteq E$ would require every prime in the list to be an even number below 15, and it is not: $3$ is in P but nowhere in E, and the same goes for $\\{5,7,11,13\\}$. **P is not a subset of E.** Only the overlap $P\\cap E=\\{2\\}$ sits inside E; five of the six primes lie outside, so subsethood fails immediately.\n\nSubsethood $P\\subseteq E$ needs every member of $P$ to sit in $E$. Check $3$: $3\\in P$ and $3\\notin E$. That one miss already kills the inclusion. The same miss occurs at $5,7,11,13$. Only $2$ from $P$ lives in $E$.",
+      `**A.** → True
 
+Scan $P$ against $E$. The only shared number is $2$, the even prime in these lists:
+
+$$P\\cap E=\\{2\\}$$
+
+Every other prime here is odd, so it misses $E$. Intersection is that single shared number, not a claim that all primes are even, so the statement is True.`,
+      `**B.** → True
+
+Difference $P\\setminus E$ deletes a member of $P$ only when it also sits in $E$. Throwing $2$ out of $P$ leaves the five odd primes:
+
+$$P\\setminus E=\\{3,5,7,11,13\\}$$
+
+Dropping $3$ as well would be treating "small" as "even," so the statement is True.`,
+      `**C.** → False
+
+A "for every" sentence needs a clean sweep, and this one stumbles at $x=2$: in $P$ and even. One counterexample inside the domain makes $\\forall x\\in P$ false. Every other prime in the list is odd, which is why the claim looks tempting; universal claims do not forgive a single exception, so the statement is False.`,
+      `**D.** → True
+
+The extra hypothesis $x\\ne 2$ removes the even prime. What remains is $\\{3,5,7,11,13\\}$, all odd, so no remaining $x$ makes the "if" true and the "then" false. Restricting the domain is what repairs the unrestricted universal; without $x\\ne 2$ the same $2$ would still kill it, so the statement is True.`,
+      `**E.** → False
+
+$P\\subseteq E$ would need every prime in the list to be even. Already $3\\in P$ and $3\\notin E$. One miss kills the inclusion. Only the overlap $\\{2\\}$ sits inside $E$; five of the six primes lie outside, so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 4,
-    solution_overview:
-      '$P=\\{2,3,5,7,11,13\\}$ and $E=\\{2,4,6,8,10,12,14\\}$ overlap in a single number, $2$, the only even prime. The set arithmetic follows immediately:\n\n$$P\\cap E=\\{2\\},\\qquad P\\setminus E=\\{3,5,7,11,13\\}.$$\n\nThe remaining claims are about **quantifiers**. A sentence starting $\\forall x\\in P$ ("for every x in P") makes a promise about all six members, so one bad member destroys it. A **subset** claim $P\\subseteq E$ is judged the same way: one member of P found outside E is fatal.\n\nTesting "every member of P is odd" therefore stops at once, at $x=2$. Testing the restricted version, which sets $2$ aside, leaves $\\{3,5,7,11,13\\}$, all odd, so that version survives every case. Testing $P\\subseteq E$ fails at $3$, and in fact at every prime except $2$.',
+    solution_overview: `Let $P=\\{2,3,5,7,11,13\\}$ be the primes less than $15$ and $E=\\{2,4,6,8,10,12,14\\}$ the evens less than $15$. They overlap in the single even prime $2$.
+
+Intersection keeps numbers in both lists. Difference $P\\setminus E$ keeps members of $P$ missing from $E$. A sentence $\\forall x\\in P$ makes a promise about all six members, so one bad member destroys it. A subset claim $P\\subseteq E$ fails as soon as one member of $P$ sits outside $E$.`,
   },
   {
-    id: "math-1-48",
-    case_id: "MATH 1.48",
-    title: "Comparing the conditions x > 10 and x > 5",
-    subsection: "1.3",
-    context: "Let x be a real number. Compare the conditions $x>10$ and $x>5$.",
+    id: `math-1-48`,
+    case_id: `MATH 1.48`,
+    title: `Comparing the conditions x > 10 and x > 5`,
+    subsection: `1.3`,
+    context: `Let x be a real number. Compare the conditions $x>10$ and $x>5$.`,
     statements: [
-      "The condition $x>10$ is sufficient for $x>5$.",
-      "The condition $x>10$ is necessary for $x>5$.",
-      "The condition $x>5$ is necessary for $x>10$.",
-      "The conditions $x>10$ and $x>5$ are equivalent.",
-      "$x=7$ is a counterexample to the claim that $x>5$ implies $x>10$.",
+      `The condition $x>10$ is sufficient for $x>5$.`,
+      `The condition $x>10$ is necessary for $x>5$.`,
+      `The condition $x>5$ is necessary for $x>10$.`,
+      `The conditions $x>10$ and $x>5$ are equivalent.`,
+      `$x=7$ is a counterexample to the claim that $x>5$ implies $x>10$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      '**A.** → True\n\nWrite P for $x>10$ and Q for $x>5$. "P is sufficient for Q" means the arrow $P\\Rightarrow Q$: whenever the stronger inequality holds, the weaker one must hold too.\n\nIf $x$ is bigger than $10$, it is certainly bigger than $5$. That is the arrow $P\\Rightarrow Q$, and "sufficient" is simply the name for that arrow. **P guarantees Q.**\n\nTake any $x$ with $x>10$, for instance $x=11$. Then $11>5$ holds automatically. In general, $x>10$ forces $x>5$ because $10>5$. That is $P\\Rightarrow Q$, which is what “$P$ is sufficient for $Q$” means.',
-      '**B.** → False\n\n"P necessary for Q" is the *other* arrow, $Q\\Rightarrow P$, which would mean Q cannot hold without P. But $x=7$ makes Q true and P false, so Q manages perfectly well on its own. **P is not necessary for Q.** Necessary would require every number above $5$ to clear $10$ as well, and the whole open interval $(5,10]$ is a supply of counterexamples.\n\nNecessary would require $Q\\Rightarrow P$: every $x>5$ would have to satisfy $x>10$. Test $x=7$:\n\n$$7>5\\quad\\text{true},\\qquad 7>10\\quad\\text{false}.$$\n\nSo $Q$ holds while $P$ fails. $P$ is not necessary for $Q$. The whole interval $(5,10]$ supplies further counterexamples.',
-      "**C.** → True\n\nThe same two conditions. \"Q is necessary for P\" is the arrow $P\\Rightarrow Q$ read from the other end: $x>10$ cannot hold unless $x>5$ also holds.\n\nThis is the same fact as the first claim, worded from the other side: since every $x$ past $10$ is past $5$, P can never hold while Q fails. **Q is necessary for P.**\n\n“$Q$ is necessary for $P$” is the same arrow $P\\Rightarrow Q$ as in A. If $x>10$, then $x>5$ cannot fail. So $x>5$ is required whenever $x>10$ holds.",
-      "**D.** → False\n\nEquivalence demands both arrows, and only one of them survives: $x=7$ breaks $Q\\Rightarrow P$. **The two conditions are not interchangeable, $x>5$ is a genuinely weaker requirement than $x>10$.** Any $x$ in $(5,10]$ satisfies the weaker condition alone, so the biconditional $P\\Leftrightarrow Q$ fails on a whole interval of real numbers.\n\nEquivalence $P\\Leftrightarrow Q$ needs both arrows. $P\\Rightarrow Q$ holds, but $Q\\Rightarrow P$ fails at $x=7$ (and at every $x$ in $(5,10]$). The two inequalities are not interchangeable: $x>5$ is strictly weaker.",
-      '**E.** → True\n\nThe claim that $Q\\Rightarrow P$ would require every $x>5$ to satisfy $x>10$. A counterexample must make $x>5$ true and $x>10$ false; the proposed value is $x=7$.\n\nA counterexample to $Q\\Rightarrow P$ must make the "if" part true and the "then" part false, and $7$ does both: $7>5$ holds, $7>10$ does not. **It is a valid counterexample.**\n\nA counterexample to “$x>5$ implies $x>10$” must make the hypothesis true and the conclusion false. Plug in $x=7$:\n\n- $7>5$ holds,\n- $7>10$ fails.\n\nThat is exactly the required pattern, so $x=7$ is a valid counterexample.',
+      `**A.** → True
 
+If $x>10$, then $x>5$ automatically because $10>5$. That is $P\\Rightarrow Q$, which is what "$P$ is sufficient for $Q$" means. A number past $10$ cannot fail to be past $5$. The reverse arrow is a different claim, so the statement is True.`,
+      `**B.** → False
+
+Necessary would require $Q\\Rightarrow P$: every $x>5$ would have to satisfy $x>10$. Test $x=7$:
+
+$$7>5\\quad\\text{holds},\\qquad 7>10\\quad\\text{fails}$$
+
+The whole interval $(5,10]$ supplies further counterexamples. $P$ is stronger than $Q$, not required by it, so the statement is False.`,
+      `**C.** → True
+
+"$Q$ is necessary for $P$" is the same arrow $P\\Rightarrow Q$, read from the other end: $x>10$ cannot hold unless $x>5$ also holds. One true arrow supports two true vocabulary sentences. The necessary condition is the one the arrow points at, so the statement is True.`,
+      `**D.** → False
+
+Equivalence needs both arrows. $P\\Rightarrow Q$ holds, but $Q\\Rightarrow P$ fails at $x=7$ (and on the whole interval $(5,10]$). So $x>5$ is strictly weaker than $x>10$. The two inequalities are not interchangeable, so the statement is False.`,
+      `**E.** → True
+
+A counterexample to "$x>5$ implies $x>10$" must make the hypothesis true and the conclusion false. Check $x=7$:
+
+$$7>5\\quad\\text{true},\\qquad 7>10\\quad\\text{false}$$
+
+Any other point of $(5,10]$ would work equally well; $7$ is a perfectly good witness, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 5,
-    solution_overview:
-      'Two conditions on a real number: P says $x>10$, Q says $x>5$. Everything here comes down to testing the two possible arrows between them.\n\n| Direction | Holds? | Reason |\n| --- | --- | --- |\n| $P\\Rightarrow Q$ | yes | anything past $10$ is already past $5$ |\n| $Q\\Rightarrow P$ | no | $x=7$ satisfies Q but not P |\n\nThe vocabulary is just a way of naming those arrows. "P is **sufficient** for Q" is the arrow $P\\Rightarrow Q$: P on its own is enough to force Q. "Q is **necessary** for P" is the very same arrow read from the other end: P cannot happen unless Q does. So one true arrow supports two true statements.\n\nThe reverse arrow fails, and $x=7$ is the witness, $7>5$ is true while $7>10$ is false. That single value also rules out **equivalence** $P\\Leftrightarrow Q$, which would need both arrows at once.',
+    solution_overview: `Two conditions on a real number: $P$ says $x>10$ and $Q$ says $x>5$. "$P$ is sufficient for $Q$" is the arrow $P\\Rightarrow Q$. "$Q$ is necessary for $P$" is the same arrow read from the other end. Equivalence $P\\Leftrightarrow Q$ needs both arrows. A counterexample to $Q\\Rightarrow P$ is a number that satisfies $Q$ and fails $P$.`,
   },
   {
-    id: "math-1-49",
-    case_id: "MATH 1.49",
-    title: "Loan approval",
-    subsection: "1.3",
-    context:
-      "A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below 40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720 and a debt-to-income ratio of 45%.",
+    id: `math-1-49`,
+    case_id: `MATH 1.49`,
+    title: `Loan approval`,
+    subsection: `1.3`,
+    context: `A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below 40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720 and a debt-to-income ratio of 45%.`,
     statements: [
-      "Applicant P satisfies both required conditions.",
-      "We may conclude that P's loan will be approved.",
-      "Applicant Q does not satisfy both required conditions.",
-      "Since Q fails one of the required conditions, Q's loan will not be approved.",
-      "If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of credit score.",
+      `Applicant P satisfies both required conditions.`,
+      `We may conclude that P's loan will be approved.`,
+      `Applicant Q does not satisfy both required conditions.`,
+      `Since Q fails one of the required conditions, Q's loan will not be approved.`,
+      `If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of credit score.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nApplicant P has score $750$ and ratio $35\\%$. The bank requires score at least $700$ and ratio below $40\\%$, joined by \"and\". The claim is that P meets both halves.\n\nBoth tests pass for P: $750\\ge700$, and $35\\%<40\\%$. **P meets the bank's requirement in full.**\n\nCheck P’s numbers against both halves of R:\n\n- score: $750\\ge 700$, true;\n- ratio: $35\\%<40\\%$, true.\n\nAn “and” with two true parts is true, so P satisfies R.",
-      '**B.** → False\n\nThe rule reads "approved **only if** R", which makes R a hurdle rather than a promise. P has cleared the hurdle, but the bank never committed to approving everyone who clears it. **Satisfying a necessary condition does not entail approval.** The missing reverse arrow is $R\\Rightarrow L$; without it, P\'s $(750,35\\%)$ profile keeps the application eligible but does not force a yes.\n\nThe bank’s wording is “approved only if R”, i.e. $L\\Rightarrow R$. Meeting R is necessary, not sufficient. P has $R$ true, but that does not force $L$. The reverse arrow $R\\Rightarrow L$ is not in the rule, so we cannot conclude approval.',
-      '**C.** → True\n\nApplicant Q has score $720$ and ratio $45\\%$. The same two-part requirement R is an "and", so check each half.\n\nQ clears the score test, $720\\ge700$, but not the ratio test, since $45\\%$ is not below $40\\%$. The two requirements are joined by "and", so **one failure means R is not satisfied**.\n\nCheck Q’s numbers:\n\n- score: $720\\ge 700$, true;\n- ratio: $45\\%<40\\%$? $45$ is not less than $40$, false.\n\nOne false conjunct makes $R$ false. Q does not satisfy both required conditions.',
-      "**D.** → True\n\nThe rule is $L\\Rightarrow R$ (approval only if R). Q fails R, as the ratio $45\\%$ is not below $40\\%$. The claim is that this failure forces refusal.\n\nThis is the rule read through negation, the **contrapositive** $\\neg R\\Rightarrow\\neg L$, which is always exactly as reliable as the original. Q fails R, so **Q's loan cannot be approved**.\n\nThe contrapositive of $L\\Rightarrow R$ is $\\neg R\\Rightarrow\\neg L$. From C, Q has $\\neg R$. Therefore $\\neg L$: Q’s loan is not approved. Failing a necessary condition is enough to force refusal.",
-      "**E.** → False\n\nTwo separate problems here. A low ratio is only half of R, and even the full R was shown above not to guarantee approval. **One satisfied condition guarantees nothing at all.** An applicant with ratio $30\\%$ but score $650$ already fails R, and even an applicant who clears both halves still only meets a necessary condition, never a sufficient one under this wording.\n\nA ratio below $40\\%$ is only one conjunct of R. An applicant with ratio $30\\%$ and score $650$ already fails $650\\ge 700$, so R is false and approval is blocked. Even a full R would still be only necessary, not sufficient. One half of R never guarantees a loan.",
-    ],
-    difficulty_level: "1/5",
-    sort_order: 6,
-    solution_overview:
-      'Write R for the bank\'s requirement, credit score at least $700$ **and** debt-to-income ratio below $40\\%$, and L for "the loan is approved".\n\nThe rule says approval happens **only if** R, which is the arrow\n\n$$L\\Rightarrow R.$$\n\nRead that carefully: R is **necessary** for approval, but the rule never promises the reverse arrow $R\\Rightarrow L$. Meeting the requirements keeps an application alive; it does not force a yes.\n\nWhat the arrow does deliver at full strength is its **contrapositive**, $\\neg R\\Rightarrow\\neg L$: fail R and the loan is certainly refused.\n\nChecking the two applicants against R:\n\n| Applicant | Score at least 700? | Ratio below 40%? | Meets R? |\n| --- | --- | --- | --- |\n| P (750, 35%) | yes | yes | yes |\n| Q (720, 45%) | yes | no | no |\n\nBecause R joins its two tests with "and", Q\'s single failure sinks the whole requirement.',
-  },
-  {
-    id: "math-1-50",
-    case_id: "MATH 1.50",
-    title: "The universe of discourse is the set of real numbers, ℝ",
-    subsection: "1.3",
-    context: "The universe of discourse is the set of real numbers, ℝ.",
-    statements: [
-      'The negation of "$\\forall x\\, (x^2 \\ge 0)$" is "$\\exists x\\, (x^2 < 0)$."',
-      'The statement "$\\exists x\\, (x^2 = -1)$" is true.',
-      'The negation of "$\\exists x\\, (x > 100)$" is "$\\forall x\\, (x \\le 100)$."',
-      '"$\\forall x > 0\\, \\exists y\\, (y > x)$" is a true statement.',
-      '"$\\exists y\\, \\forall x > 0\\, (y > x)$" is a true statement.',
-    ],
-    answer_key: [true, false, true, true, false],
-    tactical_explanations: [
-      '**A.** → True\n\nDenying "every real square is at least zero" means claiming that one square slips below zero: $\\forall$ becomes $\\exists$, and $x^2\\ge0$ becomes $x^2<0$. **That is precisely the sentence given**, a correct negation, even though the negation itself is a false statement.\n\nApply the negation rule $\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x)$ with $P(x)$ equal to $x^2\\ge 0$. The negation of $x^2\\ge 0$ is $x^2<0$. So\n\n$$\\neg\\forall x\\,(x^2\\ge 0)\\equiv\\exists x\\,(x^2<0),$$\n\nwhich is the quoted sentence.',
-      "**B.** → False\n\nSquaring never produces a negative result: positives and negatives alike square to positives, and $0^2=0$. No real number satisfies $x^2=-1$, so **the existence claim fails** in this universe (over the complex numbers it would succeed, but the universe here is R).\n\nTest squares of sample reals: $0^2=0$, $1^2=1$, $(-1)^2=1$. None equals $-1$. For any real $x$, $x^2\\ge 0$, so $x^2=-1$ has no solution in $\\mathbb{R}$. The existence claim is false in this universe.",
-      "**C.** → True\n\nThe original sentence says some real number exceeds $100$. Its negation must rule out every such number. The claimed negation is $\\forall x\\,(x\\le 100)$.\n\nTo deny that *some* number exceeds $100$, you have to say *every* number stays at or below it: $\\exists$ becomes $\\forall$, and $x>100$ becomes $x\\le100$. **The stated negation is correct.**\n\nApply $\\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)$ with $P(x)$ equal to $x>100$. The negation of $x>100$ is $x\\le 100$. So\n\n$$\\neg\\exists x\\,(x>100)\\equiv\\forall x\\,(x\\le 100).$$",
-      "**D.** → True\n\nThe universe is the reals, and the quantifiers come in the order \"for every positive $x$, there is a $y$\". The claim is that such a $y$ always exists.\n\nBecause x is announced first, y may be chosen afterwards with full knowledge of x, and the recipe $y=x+1$ works for every positive x. **A bigger number always exists.** The order $\\forall x\\,\\exists y$ is what licenses that dependence: each x gets its own y.\n\nFix an arbitrary $x>0$. Choose $y=x+1$. Then $y>x$ holds, and $y$ is a real number. Because $x$ was arbitrary, every positive $x$ has such a $y$. The $\\forall x\\,\\exists y$ sentence is true.",
-      "**E.** → False\n\nNow the order is reversed: a single y must be fixed in advance and then outrank *every* positive number. Whatever y is offered, $x=y+1$ is a positive number bigger than it. **No such champion exists.** This is the classic quantifier-order trap: $\\exists y\\,\\forall x$ asks for one y that works uniformly, which is far stronger than the true $\\forall x\\,\\exists y$ statement in D.\n\nNow a single $y$ must work for every $x>0$. Suppose some real $y$ is offered. Set $x=\\max(y+1,1)$. Then $x>0$ and $x>y$, so this $x$ defeats that $y$. No champion $y$ exists, and $\\exists y\\,\\forall x>0\\,(y>x)$ is false.",
+      `**A.** → True
 
+P's file is score $750\\ge 700$ and ratio $35\\%<40\\%$. Both halves of $R$ hold, so P meets the bank's requirement in full. Meeting $R$ is not yet approval; that is a different claim. An "and" with two true parts is true, so the statement is True.`,
+      `**B.** → False
+
+The wording is "approved only if $R$," i.e. $L\\Rightarrow R$. Meeting $R$ is necessary, not sufficient. P has $R$ true, but that does not force $L$. The reverse arrow $R\\Rightarrow L$ is not in the rule, so clearing the hurdle keeps the application alive without forcing a yes, so the statement is False.`,
+      `**C.** → True
+
+Q clears the score test $720\\ge 700$ but fails the ratio: $45\\%$ is not below $40\\%$. One false conjunct makes $R$ false. The two requirements are joined by "and," so one failure means Q does not satisfy both, so the statement is True.`,
+      `**D.** → True
+
+The contrapositive of $L\\Rightarrow R$ is $\\neg R\\Rightarrow\\neg L$. Q fails the ratio test, so $R$ is false, and the loan is not approved. Failing a necessary condition is enough to force refusal. The original "only if" is at full strength when read backwards through negation, so the statement is True.`,
+      `**E.** → False
+
+A ratio below $40\\%$ is only one conjunct of $R$. An applicant with ratio $30\\%$ and score $650$ already fails the score test, so $R$ is false and approval is blocked. Even a full $R$ would still be only necessary, not sufficient. One half of $R$ never guarantees a loan, so the statement is False.`,
     ],
-    difficulty_level: "1/5",
-    sort_order: 7,
-    solution_overview:
-      'Two different skills are being tested: negating a quantified sentence, and reading the **order** in which quantifiers appear.\n\nNegation follows a pair of mirror rules,\n\n$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x),\\qquad \\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x).$$\n\nTo deny "every x has the property" you produce one exception; to deny "some x has it" you must rule out every x. Applying them, the negation of $\\forall x\\,(x^2\\ge0)$ is $\\exists x\\,(x^2<0)$, and the negation of $\\exists x\\,(x>100)$ is $\\forall x\\,(x\\le100)$.\n\nAs for what is actually true of real numbers: a positive times itself is positive, a negative times itself is positive, and $0^2=0$, so $x^2\\ge0$ always holds and $x^2=-1$ has no real solution.\n\nOrder matters just as much as the symbols. Whichever variable is written first is chosen first, and later choices may depend on it:\n\n| Sentence | Who moves first | Verdict |\n| --- | --- | --- |\n| $\\forall x>0\\ \\exists y\\,(y>x)$ | x first, so y may be built from x | true, take $y=x+1$ |\n| $\\exists y\\ \\forall x>0\\,(y>x)$ | y first, so one y must beat them all | false, $x=y+1$ defeats it |\n\nSame symbols, opposite answers, swapping quantifiers is not a cosmetic change.',
+    difficulty_level: `1/5`,
+    sort_order: 6,
+    solution_overview: `Write $R$ for the bank's requirement (credit score at least $700$ and debt-to-income ratio below $40\\%$) and $L$ for "the loan is approved." The wording is "approved only if $R$," which is the arrow
+
+$$L\\Rightarrow R$$
+
+So $R$ is necessary for approval; the reverse arrow $R\\Rightarrow L$ is not in the rule. The contrapositive $\\neg R\\Rightarrow\\neg L$ is guaranteed: fail $R$ and the loan is refused. Because $R$ joins its two tests with "and", a single failure sinks the whole requirement.`,
   },
   {
-    id: "math-1-51",
-    case_id: "MATH 1.51",
-    title: "A medical diagnostic criterion",
-    subsection: "1.3",
-    context:
-      "A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B; however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out. Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.",
+    id: `math-1-50`,
+    case_id: `MATH 1.50`,
+    title: `The universe of discourse is the set of real numbers, ℝ`,
+    subsection: `1.3`,
+    context: `The universe of discourse is the set of real numbers, ℝ.`,
     statements: [
-      "Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).",
-      "Patient S can be diagnosed with condition X.",
-      "Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.",
-      "If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other symptoms.",
-      "It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X.",
+      `The negation of "$\\forall x\\, (x^2 \\ge 0)$" is "$\\exists x\\, (x^2 < 0)$."`,
+      `The statement "$\\exists x\\, (x^2 = -1)$" is true.`,
+      `The negation of "$\\exists x\\, (x > 100)$" is "$\\forall x\\, (x \\le 100)$."`,
+      `"$\\forall x > 0\\, \\exists y\\, (y > x)$" is a true statement.`,
+      `"$\\exists y\\, \\forall x > 0\\, (y > x)$" is a true statement.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Negating a universal produces an existential of the negated predicate:
+
+$$\\neg\\forall x\\,(x^2\\ge 0)\\equiv\\exists x\\,(x^2<0)$$
+
+The quoted sentence is that negation, correctly formed, even though no real number actually has a negative square. Shape of the negation is a separate question from whether the negation is true, so the statement is True.`,
+      `**B.** → False
+
+Squares of reals are never negative: $0^2=0$, $1^2=1$, $(-1)^2=1$. No real $x$ satisfies $x^2=-1$. The existence claim would succeed over the complex numbers, but the universe here is $\\mathbb R$. One missing solution in the universe is enough, so the statement is False.`,
+      `**C.** → True
+
+Negating an existential produces a universal of the negated predicate:
+
+$$\\neg\\exists x\\,(x>100)\\equiv\\forall x\\,(x\\le 100)$$
+
+To deny that some number exceeds $100$, every number must stay at or below it. The inequality flips from $>$ to $\\le$, not to $<$; $x=100$ must be included in the negation, so the statement is True.`,
+      `**D.** → True
+
+Because $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every positive $x$. The order $\\forall x\\,\\exists y$ licenses that dependence: each $x$ gets its own $y$. A bigger real always exists, so the statement is True.`,
+      `**E.** → False
+
+Now a single $y$ must be fixed first and then outrank every positive $x$. Whatever $y$ is offered, $x=\\max(y+1,1)$ is a positive number bigger than it. No champion exists. This is the classic quantifier-order trap: $\\exists y\\,\\forall x$ is far stronger than the true $\\forall x\\,\\exists y$, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 7,
+    solution_overview: `The universe is $\\mathbb R$. Negation of quantifiers follows the mirror rules
+
+$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x),\\qquad \\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)$$
+
+Squares of reals are never negative. Quantifier order matters: whichever variable is written first is chosen first, and later choices may depend on it. $\\forall x\\,\\exists y$ lets $y$ be built from $x$; $\\exists y\\,\\forall x$ freezes one $y$ that must work for every $x$.`,
+  },
+  {
+    id: `math-1-51`,
+    case_id: `MATH 1.51`,
+    title: `A medical diagnostic criterion`,
+    subsection: `1.3`,
+    context: `A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B; however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out. Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.`,
+    statements: [
+      `Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).`,
+      `Patient S can be diagnosed with condition X.`,
+      `Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.`,
+      `If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other symptoms.`,
+      `It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X.`,
     ],
     answer_key: [false, false, false, true, false],
     tactical_explanations: [
-      "**A.** → False\n\nR holds the diagnosis, and the criterion lets nobody hold it without *both* symptoms. The situation described, diagnosed on symptom A alone, is not merely unlikely, it is **ruled out by the criterion itself**. From $D\\Rightarrow S$ and the fact that S demands A and B together, R must exhibit both symptoms; a diagnosis with only A would break the necessary condition.\n\nThe criterion is $D\\Rightarrow S$, with $S$ meaning “symptom A and symptom B.” Patient R has $D$ true, so $S$ must be true: R exhibits both symptoms. A diagnosis on A alone would be $D$ with $\\neg B$, which falsifies $S$ and breaks $D\\Rightarrow S$. That situation is ruled out.",
-      '**B.** → False\n\nPatient S exhibits A but not B. The required pair is an "and", so check whether S meets both halves of the necessary condition.\n\nPatient S is missing symptom B, so the required "A and B" fails, and the contrapositive $\\neg S\\Rightarrow\\neg D$ closes the door. **S cannot be diagnosed with condition X.**\n\nPatient S has symptom A and not symptom B, so the conjunction $S$ is false. The contrapositive $\\neg S\\Rightarrow\\neg D$ then yields $\\neg D$. Patient S cannot be diagnosed with condition X.',
-      '**C.** → False\n\nThis is exactly the claim the doctor warns against. "Sufficient" would mean $S\\Rightarrow D$, but other conditions still have to be excluded, so the two symptoms settle nothing on their own. **They are necessary, not sufficient.** The wording "exhibiting both symptoms does not guarantee the diagnosis" is an explicit refusal of that reverse arrow.\n\nSufficient would be $S\\Rightarrow D$. The doctor states the opposite: both symptoms do not guarantee the diagnosis, because other conditions must still be ruled out. So $S$ is necessary and not sufficient.',
-      '**D.** → True\n\nThe criterion is diagnosis only if both symptoms A and B appear. The claim is that missing A alone already blocks the diagnosis, regardless of other symptoms.\n\nThe requirement is an "and", and an "and" is destroyed by either half. No symptom A means no S, and no S means no diagnosis, whatever else the patient presents. **The contrapositive gives this conclusion directly.**\n\nMissing symptom A makes the conjunction $S$ false, regardless of symptom B. Then $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis. No symptom A means no diagnosis with X.',
-      "**E.** → False\n\nFar from impossible, that case is written into the criterion: showing both symptoms leaves the diagnosis open until other conditions are ruled out. **A patient with A and B may well remain undiagnosed.** That open gap is precisely what separates a necessary condition from a sufficient one.\n\nThe doctor explicitly allows $S$ without $D$: both symptoms can appear while other conditions are still being excluded. That is a patient with A and B who remains undiagnosed. The situation is possible, so the “impossible” claim is false.",
+      `**A.** → False
+
+The criterion is $D\\Rightarrow S$, and $S$ demands both symptoms. Patient R holds the diagnosis, so both symptoms must be present. A diagnosis on A alone would be $D$ with $\\neg B$, which breaks the necessary condition.
+
+so the statement is False.`,
+      `**B.** → False
+
+Patient S has A but not B, so the conjunction $S$ is false. The contrapositive $\\neg S\\Rightarrow\\neg D$ then blocks the diagnosis. Missing either half of an "and" is enough.
+
+so the statement is False.`,
+      `**C.** → False
+
+Sufficient would be $S\\Rightarrow D$. The doctor states the opposite: both symptoms do not guarantee the diagnosis, because other conditions must still be ruled out. So $S$ is necessary and not sufficient.
+
+so the statement is False.`,
+      `**D.** → True
+
+Missing symptom A makes the conjunction $S$ false, regardless of B. Then $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis. An "and" is destroyed by either half, so no A means no diagnosis with X.
+
+so the statement is True.`,
+      `**E.** → False
+
+The doctor explicitly allows both symptoms while other conditions are still being excluded: $S$ without $D$. That open gap is what separates a necessary condition from a sufficient one.
+
+so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 8,
-    solution_overview:
-      'Let D mean "diagnosed with condition X" and S mean "shows symptom A **and** symptom B".\n\n**What the criterion says.** "Diagnosed only if S" is the arrow $D\\Rightarrow S$: no diagnosis without both symptoms, which makes S a **necessary** condition.\n\n**What the criterion explicitly denies.** The doctor adds that both symptoms do *not* guarantee the diagnosis, since other conditions must first be ruled out. So the reverse arrow $S\\Rightarrow D$ is refused outright: S is necessary but **not sufficient**.\n\n**Patient R, who has the diagnosis.** Following $D\\Rightarrow S$, R must show symptom A and symptom B, both, because S is an "and".\n\n**Patient S, who shows A but not B.** Use the **contrapositive** $\\neg S\\Rightarrow\\neg D$: missing either symptom breaks the "and", and a broken "and" blocks the diagnosis. The same argument covers anyone missing symptom A.\n\n**The gap left open.** A patient may show both symptoms and still go undiagnosed while other conditions are being excluded, unusual, perhaps, but entirely allowed by the criterion.',
+    solution_overview: `Let $D$ mean diagnosed with condition X, and let $S$ mean the patient shows symptom A and symptom B.
+
+"Diagnosed only if $S$" is the arrow $D\\Rightarrow S$: no diagnosis without both symptoms, which makes $S$ necessary. The doctor also says both symptoms do not guarantee the diagnosis, so the reverse arrow $S\\Rightarrow D$ is refused: $S$ is necessary but not sufficient.
+
+The contrapositive $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis the moment either symptom is missing.`,
   },
   {
-    id: "math-1-52",
-    case_id: "MATH 1.52",
-    title: "The universe is the set of integers from 1 to 20, i.e",
-    subsection: "1.3",
-    context: "The universe is the set of integers from 1 to 20, i.e. $\\{1, 2,..., 20\\}$.",
+    id: `math-1-52`,
+    case_id: `MATH 1.52`,
+    title: `Existential and Universal Claims Over Integers 1 to 20`,
+    subsection: `1.3`,
+    context: `The universe is the set of integers from 1 to 20, i.e. $\\{1, 2,..., 20\\}$.`,
     statements: [
-      '"$\\exists x \\in \\{1,\\ldots,20\\}$ such that x is divisible by both 3 and 5" is true',
-      '"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 4, then x is divisible by 2" is true',
-      '"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 2, then x is divisible by 4" is true',
-      'The negation of "$\\forall x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\Rightarrow \\mathrm{Odd}(x))$" is "$\\exists x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\land \\mathrm{Even}(x))$"',
-      "The negated statement in (d) is itself true",
+      `"$\\exists x \\in \\{1,\\ldots,20\\}$ such that x is divisible by both 3 and 5" is true`,
+      `"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 4, then x is divisible by 2" is true`,
+      `"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 2, then x is divisible by 4" is true`,
+      `The negation of "$\\forall x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\Rightarrow \\mathrm{Odd}(x))$" is "$\\exists x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\land \\mathrm{Even}(x))$"`,
+      `The negated statement in (d) is itself true`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      '**A.** → True\n\nThe universe is $\\{1,\\ldots,20\\}$. An existence claim needs one witness that is divisible by both $3$ and $5$. The claim is that such an $x$ sits in the range.\n\nDivisible by $3$ and by $5$ means divisible by $15$, and $15$ sits comfortably inside $\\{1,\\ldots,20\\}$. **One witness is all an "exists" sentence needs.**\n\nNeed one $x$ in $\\{1,\\ldots,20\\}$ divisible by $3$ and by $5$, i.e. by $15$. The multiples of $15$ in the range are $15$ itself. Check: $15=3\\cdot 5$, and $1\\le 15\\le 20$. One witness makes the $\\exists$ sentence true.',
-      "**B.** → True\n\nThe universe is still $\\{1,\\ldots,20\\}$. The implication says: if $x$ is divisible by $4$, then it is divisible by $2$. Check every multiple of $4$ in the range.\n\nEvery multiple of four is $4k=2(2k)$, twice a whole number and therefore even, so no exception is possible. Spot-checking the range confirms it: $\\{4,8,12,16,20\\}$ are all even. **The implication holds throughout.**\n\nList every multiple of $4$ in the universe: $4,8,12,16,20$. Check divisibility by $2$:\n\n- $4=2\\cdot 2$, even;\n- $8=2\\cdot 4$, even;\n- $12=2\\cdot 6$, even;\n- $16=2\\cdot 8$, even;\n- $20=2\\cdot 10$, even.\n\nEvery antecedent case has an even value, so the implication holds throughout the range.",
-      "**C.** → False\n\nThe direction has been flipped, and the flipped version breaks at the smallest possible case: $x=2$ is divisible by $2$ but not by $4$. **One counterexample inside the range settles it.** Other even non-multiples of four in the universe, such as $6$, $10$, $14$, and $18$, fail the same way; any one of them refutes \"divisible by $2$ $\\Rightarrow$ divisible by $4$\".\n\nThe reverse implication fails at $x=2$: $2$ is divisible by $2$, but $\\frac{2}{4}=0.5$ is not an integer, so $2$ is not divisible by $4$. One counterexample in $\\{1,\\ldots,20\\}$ makes the $\\forall$ sentence false. (The same break occurs at $6,10,14,18$.)",
-      '**D.** → True\n\nAn if-then rule can fail only where the "if" holds and the "then" does not, so its negation asserts that such a case exists: some x that is prime and not odd. For whole numbers, "not odd" means even. **The proposed sentence is the correct negation.**\n\nNegate $\\forall x\\,(P\\Rightarrow Q)$ by asserting a failure of the implication: $\\exists x\\,(P\\land\\neg Q)$. Here $P$ is “prime” and $Q$ is “odd”, so $\\neg Q$ is “even”. The quoted sentence $\\exists x\\,(\\mathrm{Prime}(x)\\land\\mathrm{Even}(x))$ is that negation, still restricted to $\\{1,\\ldots,20\\}$.',
-      "**E.** → True\n\nThe negation asks for an even prime in the range, and $2$ is one: its only positive divisors are $1$ and $2$, and it is divisible by $2$. **So the negation is true, meaning the original claim that every prime is odd is false in this universe.** Inside $\\{1,\\ldots,20\\}$ the even prime $2$ is available, so the universal \"every prime is odd\" does not survive here.\n\nThe negated sentence asks for an even prime in the range. Take $x=2$: its only positive divisors are $1$ and $2$, so it is prime, and it is even. Thus the negation is true in this universe, and the original “every prime is odd” is false here.",
+      `**A.** → True
 
+Divisible by $3$ and by $5$ means divisible by $15$, and $15$ sits inside $\\{1,\\ldots,20\\}$. One witness is all an existential sentence needs.
+
+so the statement is True.`,
+      `**B.** → True
+
+Every multiple of four can be written $4k=2(2k)$, hence even. In this range the multiples of four are $\\{4,8,12,16,20\\}$, all even, so the implication holds everywhere.
+
+so the statement is True.`,
+      `**C.** → False
+
+The flipped implication breaks at $x=2$: divisible by $2$, not by $4$. One counterexample inside the range kills a universal. Direction of the arrow is the whole issue.
+
+so the statement is False.`,
+      `**D.** → True
+
+An implication fails only where the "if" holds and the "then" fails, so its negation is "some prime in the range is even":
+
+$$\\exists x\\,(\\mathrm{Prime}(x)\\land\\mathrm{Even}(x))$$
+
+The quoted sentence is that negation, still restricted to $\\{1,\\ldots,20\\}$.
+
+so the statement is True.`,
+      `**E.** → True
+
+The negation asks for an even prime in the range, and $2$ is one: divisors $1$ and $2$ only, and even. So the negated statement is true in this universe.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 9,
-    solution_overview:
-      'Everything is checked inside the finite universe $\\{1,2,\\ldots,20\\}$, where two opposite habits apply: an $\\exists$ ("there exists") sentence needs one working example, while a $\\forall$ ("for every") sentence is destroyed by one counterexample.\n\n**One example is enough.** Being divisible by $3$ and by $5$ is the same as being divisible by $15$, and $15$ sits inside the range. Witness found.\n\n**A rule that never fails.** Every multiple of four can be written $4k=2(2k)$, twice a whole number, hence even. In this range the multiples of four are $\\{4,8,12,16,20\\}$, all even, so "divisible by 4 $\\Rightarrow$ divisible by 2" holds everywhere.\n\n**A rule that fails immediately.** Reverse it and try $x=2$: divisible by $2$, not divisible by $4$. One counterexample is all it takes.\n\n**Negating an if-then rule.** An implication breaks only where the "if" holds and the "then" fails, which gives\n\n$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))\\ \\equiv\\ \\exists x\\,(P(x)\\land\\neg Q(x)).$$\n\nWith $P(x)$ meaning "x is prime" and $Q(x)$ meaning "x is odd", the negation reads "some x in the range is prime and even", and $x=2$ makes it come true, so "every prime is odd" is false in this universe.',
+    solution_overview: `The universe is the finite set $\\{1,2,\\ldots,20\\}$. An existential sentence needs one working example. A universal sentence is destroyed by one counterexample.
+
+An implication $P\\Rightarrow Q$ fails only where $P$ holds and $Q$ fails, so its negation is an existential $P\\land\\neg Q$.`,
   },
   {
-    id: "math-1-53",
-    case_id: "MATH 1.53",
-    title: "A club membership rule",
-    subsection: "1.3",
-    context:
-      "A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.",
+    id: `math-1-53`,
+    case_id: `MATH 1.53`,
+    title: `A club membership rule`,
+    subsection: `1.3`,
+    context: `A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.`,
     statements: [
-      "Person T is a member of the club.",
-      "Person U is a member of the club.",
-      "The banned list and the membership list are complementary (every person is in exactly one of the two).",
-      "If a person has exactly 3 violations, they could either be a member or banned, depending on additional unstated factors.",
-      "There exists some number of violations for which it is genuinely ambiguous, from the given rule alone, whether a person is banned.",
+      `Person T is a member of the club.`,
+      `Person U is a member of the club.`,
+      `The banned list and the membership list are complementary (every person is in exactly one of the two).`,
+      `If a person has exactly 3 violations, they could either be a member or banned, depending on additional unstated factors.`,
+      `There exists some number of violations for which it is genuinely ambiguous, from the given rule alone, whether a person is banned.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      '**A.** → True\n\nPerson T has $2$ violations. The banned list is exactly those with $v\\ge 3$, and membership is the exact opposite of being banned. The claim is that T is a member.\n\nT has two violations, below the threshold of three, so T is not on the banned list, and the "if and only if" does the rest, since not being banned forces membership. **T is a member.**\n\nBanned means $v\\ge 3$. Person T has $v=2$. Check $2\\ge 3$: false, so T is not banned. The biconditional “member iff not banned” then forces membership. T is a member.',
-      "**B.** → False\n\nPerson U has $4$ violations. The same threshold $v\\ge 3$ decides the banned list, and the biconditional then decides membership as the opposite.\n\nFour violations clears the $v\\ge3$ bar, so U is banned, and banned and member are exact opposites under this rule. **U is not a member.**\n\nPerson U has $v=4$. Check $4\\ge 3$: true, so U is banned. The same biconditional makes “banned” the exact opposite of “member.” U is not a member.",
-      "**C.** → True\n\nThe rule is \"member if and only if not banned\". The claim is that those two lists are complements: every person sits in exactly one of them.\n\nRead the biconditional both ways: being banned rules membership out, and not being banned forces membership in. Nobody can be on both lists, and nobody can escape both. **That is precisely what complementary lists means.**\n\n“Member iff not banned” means the two lists never overlap and never leave a gap: every person is in exactly one of them. That is the definition of complementary sets.",
-      '**D.** → False\n\nThe wording "3 or more" already covers three, so $v=3$ satisfies $3\\ge3$ and the person is banned outright. **The rule leaves no discretion and admits no unstated factors.** The trap is treating the threshold as if $v=3$ were a grey zone; once banned $\\iff v\\ge3$ is fixed, membership is forced to the opposite side with no leftover cases.\n\nThe threshold is “$3$ or more”, which includes $v=3$. Check $3\\ge 3$: true, so a person with exactly $3$ violations is banned, and therefore not a member. No extra factor is mentioned, and none is needed.',
-      "**E.** → False\n\nEvery person has one definite violation count, and the test $v\\ge3$ returns a yes or no for each count without exception; the biconditional then fixes membership as the exact opposite. **No violation count leaves the status undecided.** Counts $0$, $1$, and $2$ are members; counts $3$, $4$, $5$, and beyond are banned; the partition is exhaustive.\n\nFor each integer $v$, the test $v\\ge 3$ returns a definite yes or no. Counts $0,1,2$ are unbanned (hence members); counts $3,4,5,\\ldots$ are banned (hence not members). No $v$ is left undecided.",
+      `**A.** → True
 
+Banned means $v\\ge 3$. Person T has $v=2$, so $2\\ge 3$ fails and T is not banned. The biconditional "member iff not banned" then forces membership.
+
+so the statement is True.`,
+      `**B.** → False
+
+Person U has $v=4$, and $4\\ge 3$, so U is banned. The same biconditional makes banned the exact opposite of member, so U is not a member.
+
+so the statement is False.`,
+      `**C.** → True
+
+"Member iff not banned" means the two lists never overlap and never leave a gap: every person is in exactly one of them. That is the definition of complementary sets.
+
+so the statement is True.`,
+      `**D.** → False
+
+"Three or more" includes $v=3$. Check $3\\ge 3$: true, so a person with exactly $3$ violations is banned, hence not a member. Once banned means $v\\ge 3$, the count $v=3$ is not discretionary.
+
+so the statement is False.`,
+      `**E.** → False
+
+For each integer $v$, the test $v\\ge 3$ returns a definite yes or no. Counts $0,1,2$ are members; counts $3,4,5,\\ldots$ are banned. No $v$ is left undecided.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 10,
-    solution_overview:
-      'The club rule is a **biconditional**, "a member **if and only if** not banned", which is stronger than a one-way rule. It works in both directions at once: anyone not banned *must* be a member, and any member *must* be unbanned. No third possibility is left open.\n\nThe banned list itself is defined by a sharp numerical test on a person\'s violation count $v$:\n\n$$\\text{banned}\\iff v\\ge3,\\qquad \\text{member}\\iff v\\le2.$$\n\nApplying it, person T has $v=2$, and $2<3$, so T is unbanned and therefore a member. Person U has $v=4$, and $4\\ge3$, so U is banned and therefore not a member.\n\nBecause the two conditions are exact opposites, the banned list and the membership list are **complements**: they never overlap, and together they cover everybody.\n\nThe borderline deserves naming. "Three or more" includes three, so $v=3$ is banned; the rule leaves no room for extra factors, and since every person has a definite violation count, the test always returns a clear yes or no.',
+    solution_overview: `The club rule is a biconditional: a person is a member if and only if they are not on the banned list. The banned list is the people with $3$ or more rule violations. Writing $v$ for the violation count, banned means $v\\ge 3$, and membership is the exact opposite.
+
+Because the two conditions are exact opposites, the two lists never overlap and never leave a gap.`,
   },
   {
-    id: "math-1-54",
-    case_id: "MATH 1.54",
-    title: 'Consider the universal claim: "All prime numbers are odd," and the irr',
-    subsection: "1.3",
-    context:
-      'Consider the universal claim: "All prime numbers are odd," and the irrationality of √2.',
+    id: `math-1-54`,
+    case_id: `MATH 1.54`,
+    title: `One Counterexample Against "All Primes Are Odd"`,
+    subsection: `1.3`,
+    context: `Consider the universal claim: "All prime numbers are odd," and the irrationality of √2.`,
     statements: [
-      'To disprove the universal statement "all prime numbers are odd," it suffices to give one counterexample.',
-      'The number 2 is a valid counterexample to "all prime numbers are odd."',
-      "A contradiction proof of an implication assumes that its condition holds while its conclusion fails, then derives a contradiction.",
-      "A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.",
-      "If a statement is confirmed true for one specific example, this proves it is true for all cases.",
+      `To disprove the universal statement "all prime numbers are odd," it suffices to give one counterexample.`,
+      `The number 2 is a valid counterexample to "all prime numbers are odd."`,
+      `A contradiction proof of an implication assumes that its condition holds while its conclusion fails, then derives a contradiction.`,
+      `A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.`,
+      `If a statement is confirmed true for one specific example, this proves it is true for all cases.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe universal claim under discussion is \"all prime numbers are odd.\" A universal claim is refuted by a single counterexample, and the statement says that one such example is enough.\n\nA universal claim says *every* case works, so exhibiting one case that does not is already a complete refutation. **One counterexample suffices; nothing further is required.**\n\nA universal claim $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. That one counterexample is a complete disproof. Nothing further (no second example, no general argument) is required.",
-      '**B.** → True\n\nA counterexample to "all primes are odd" must itself be prime and fail to be odd. The candidate offered is the number $2$.\n\nA counterexample must be a genuine case of the claim and must fail its conclusion, and $2$ does both: it is prime, with divisors $1$ and $2$ only, and it is even. **So "all primes are odd" is refuted by 2.**\n\nCheck $2$ against both halves of the claim “all primes are odd”:\n\n- prime: the only positive divisors of $2$ are $1$ and $2$, so $2$ is prime;\n- odd: $2$ is divisible by $2$, so $2$ is even, not odd.\n\nIt is a prime that fails to be odd, hence a valid counterexample.',
-      "**C.** → True\n\nThe method in question is proof by contradiction for an implication $P\\Rightarrow Q$. The claim describes the opening move: assume $P$ and $\\neg Q$, then derive an impossibility.\n\n$P\\Rightarrow Q$ is false in exactly one situation, where P holds and Q fails. Assuming that situation and reaching an absurdity shows it can never occur, which leaves the implication standing. **The description given is the standard method.**\n\n$P\\Rightarrow Q$ fails only in the case $P\\land\\neg Q$. A contradiction proof assumes that unique failure case and derives an impossibility, showing the failure cannot occur. The description in the statement is that method.",
-      '**D.** → False\n\nThe assumption runs in the wrong direction. A contradiction proof begins with the **negation** of the target, so here it starts from "$\\sqrt2$ is rational", writing $\\sqrt2=\\frac{a}{b}$ in lowest terms. **Assuming irrationality at the outset would be assuming the conclusion.** The whole point of the method is to derive a contradiction from that rational assumption (for instance that $a$ and $b$ are both even), which then forces the irrationality claim.\n\nTo prove “$\\sqrt{2}$ is irrational” by contradiction, assume the negation: $\\sqrt{2}$ is rational, so $\\sqrt{2}=\\frac{a}{b}$ in lowest terms. Assuming irrationality at the start would assume the conclusion rather than its negation. The opening move in the statement is the wrong direction.',
-      '**E.** → False\n\nExamples and counterexamples are not symmetric: one bad case kills a universal claim, but one good case says nothing about the rest. "All primes are odd" survives the example $3$ and still falls to $2$. **Confirmation by example is not proof.** Checking finitely many primes that happen to be odd never rules out an even prime elsewhere, which is why a universal claim needs a general argument, not a single favourable specimen.\n\nOne confirming example never proves a universal claim. The odd prime $3$ fits “all primes are odd” and still leaves $2$ untested. Checking $x=1$ or $x=3$ does not cover every prime. A universal claim needs an argument about all cases, or it remains open to a later counterexample.',
+      `**A.** → True
 
+A universal $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. That one counterexample is a complete disproof. Nothing further is required.
+
+so the statement is True.`,
+      `**B.** → True
+
+A counterexample to "all primes are odd" must be prime and fail to be odd. The number $2$ has divisors $1$ and $2$ only, so it is prime, and it is even. Both halves succeed.
+
+so the statement is True.`,
+      `**C.** → True
+
+$P\\Rightarrow Q$ fails only in the case $P\\land\\neg Q$. A contradiction proof assumes that unique failure case and derives an impossibility, showing the failure cannot occur. The description in the statement is that method.
+
+so the statement is True.`,
+      `**D.** → False
+
+To prove "$\\sqrt{2}$ is irrational" by contradiction, assume the negation: $\\sqrt{2}$ is rational, so $\\sqrt{2}=\\frac{a}{b}$ in lowest terms. Assuming irrationality at the start would assume the conclusion rather than its opposite.
+
+so the statement is False.`,
+      `**E.** → False
+
+One confirming example never proves a universal claim. The odd prime $3$ fits "all primes are odd" and still leaves $2$ untested. Checking finitely many favourable cases never rules out a later counterexample.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 11,
-    solution_overview:
-      'Two proof techniques are on trial here, and the point is knowing what each one can and cannot do.\n\n**Disproving a universal claim.** "All primes are odd" promises something about every single prime, so one prime lacking the property breaks the promise. A single **counterexample** is a complete disproof, and $2$ is one: its only positive divisors are $1$ and itself, so it is prime, and it is divisible by $2$, so it is even.\n\n**Confirming a universal claim.** The reverse does not work. Checking that $3$ is an odd prime leaves every other prime untested, and no finite pile of examples can settle a claim about infinitely many cases.\n\n**Proof by contradiction.** An implication $P\\Rightarrow Q$ has exactly one way to fail: P true while Q is false. The method assumes that single failure case, $P\\land\\neg Q$, and drives it into an impossibility; once the only escape route is closed, the implication must hold.\n\n**The classic example.** To prove "$\\sqrt2$ is irrational" you assume its **negation**, that $\\sqrt2$ is rational, write $\\sqrt2=\\frac{a}{b}$ as a fraction in lowest terms, and derive a contradiction. Beginning from "$\\sqrt2$ is irrational" would mean assuming the very thing to be proved.',
+    solution_overview: `A universal claim $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. One counterexample is a complete disproof. The reverse does not work: a pile of confirming examples never proves a universal.
+
+A contradiction proof of an implication assumes the unique failure case $P\\land\\neg Q$ and derives an impossibility. To prove a claim by contradiction, assume its negation, not the claim itself.`,
   },
   {
-    id: "math-1-55",
-    case_id: "MATH 1.55",
-    title: 'An event organizer\'s rule is : "If it rains, the picnic is cancelled."',
-    subsection: "1.3",
-    context: 'An event organizer states: "If it rains, the picnic is cancelled."',
+    id: `math-1-55`,
+    case_id: `MATH 1.55`,
+    title: `An event organizer's rule is : "If it rains, the picnic is cancelled."`,
+    subsection: `1.3`,
+    context: `An event organizer states: "If it rains, the picnic is cancelled."`,
     statements: [
-      'The negation of this rule is: "It rains and the picnic is not cancelled."',
-      'The converse, "If the picnic is cancelled, then it rained," is guaranteed true whenever the organizer\'s rule holds.',
-      'The inverse, "If it does not rain, the picnic is not cancelled," is logically equivalent to the original rule.',
-      "Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse statement but does not contradict the organizer's rule.",
-      'The contrapositive, "If the picnic was not cancelled, then it did not rain," is logically equivalent to the original rule and must also hold.',
+      `The negation of this rule is: "It rains and the picnic is not cancelled."`,
+      `The converse, "If the picnic is cancelled, then it rained," is guaranteed true whenever the organizer's rule holds.`,
+      `The inverse, "If it does not rain, the picnic is not cancelled," is logically equivalent to the original rule.`,
+      `Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse statement but does not contradict the organizer's rule.`,
+      `The contrapositive, "If the picnic was not cancelled, then it did not rain," is logically equivalent to the original rule and must also hold.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe only way to break a promise of the form “if $P$ then $Q$” is to have $P$ happen while $Q$ does not, that is $P \\land \\neg Q$. Spelled out, it is rain **plus** an uncancelled picnic, word for word the sentence offered here. **The negation is correctly stated.**\n\nWrite $P$ for rain and $Q$ for cancellation. The rule is $P\\Rightarrow Q$. An implication is false only in the row $P$ true, $Q$ false. That row is $P\\land\\neg Q$: it rains and the picnic is not cancelled. The quoted negation is that unique failure case.",
-      "**B.** → False\n\nThis is the **converse**, $Q \\Rightarrow P$, which reads the rule backwards from the cancellation to the rain. The organizer never promised that rain is the *only* thing that can cancel a picnic, and the venue conflict cancels one under a clear sky. Check the two claims on that day: rain is false while cancellation is true, so $P \\Rightarrow Q$ holds vacuously, yet $Q \\Rightarrow P$ fails because a cancellation occurred without rain. **A true rule does not drag its converse along with it.**\n\nThe converse is $Q\\Rightarrow P$. On a dry venue-conflict day: $P$ false, $Q$ true. Then $P\\Rightarrow Q$ holds (false antecedent), while $Q\\Rightarrow P$ fails (true antecedent, false consequent). One scenario where the two split shows they are not equivalent.",
-      "**C.** → False\n\n**The sentence:** $\\neg P \\Rightarrow \\neg Q$, the inverse.\n\n**The test:** on the dry, cancelled day the inverse insists the picnic went ahead, and it did not, while the original rule says nothing at all. One is false and the other true in the same situation, so **the two cannot be equivalent.** Equivalence would require matching truth values in every scenario; a single split like this dry cancellation is already enough to separate them.\n\nThe inverse is $\\neg P\\Rightarrow\\neg Q$. Same dry cancelled day: $\\neg P$ is true and $\\neg Q$ is false, so the inverse fails, while the original still holds. Matching truth values in every case would be required for equivalence; this one split already separates them.",
-      "**D.** → True\n\nA dry day with a cancellation is $P$ false, $Q$ true. The inverse had demanded “no rain, so no cancellation”, and the cancellation happened anyway, **the inverse is broken**. The original rule speaks only about rainy days, and this was not one, so it is not even put to the test. Explicitly: $P \\Rightarrow Q$ is true whenever $P$ is false, regardless of $Q$, so the venue-conflict day never threatens the organizer's promise. Both halves of the statement are right.\n\nAssign the venue-conflict day: rain false, cancelled true. The inverse demanded “no rain, so no cancellation” and the cancellation happened, so the inverse is false. The original $P\\Rightarrow Q$ is true whenever $P$ is false, so a dry cancellation never tests the organizer’s promise.",
-      "**E.** → True\n\nThe contrapositive is the one relative that always carries the same truth value as the original, so once the organizer's rule is granted, **“not cancelled, therefore no rain” comes free with it.**\n\nStart from the given sentence “If it rains, the picnic is cancelled.” Swap the two halves and negate each: “If the picnic was not cancelled, then it did not rain.” That is $\\neg Q \\Rightarrow \\neg P$, word for word the sentence in the claim, so the equivalence holds.\n\nStart from $P\\Rightarrow Q$, swap and negate: $\\neg Q\\Rightarrow\\neg P$. In words: if the picnic was not cancelled, then it did not rain. That is the contrapositive, which always shares the original’s truth value.",
+      `**A.** → True
+
+The rule is $P\\Rightarrow Q$. An implication is false only in the row $P$ true, $Q$ false, i.e. rain and an uncancelled picnic. The quoted negation is that unique failure case.
+
+so the statement is True.`,
+      `**B.** → False
+
+The converse $Q\\Rightarrow P$ reads the rule backwards. On a dry venue-conflict day, $P$ is false and $Q$ is true: the original holds vacuously, while the converse fails. The organizer never promised that rain is the only cancelling cause.
+
+so the statement is False.`,
+      `**C.** → False
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$. On that same dry cancelled day, $\\neg P$ is true and $\\neg Q$ is false, so the inverse fails while the original still holds. Inverse pairs with converse, not with the original.
+
+so the statement is False.`,
+      `**D.** → True
+
+Assign the venue-conflict day: rain false, cancelled true. The inverse demanded "no rain, so no cancellation" and the cancellation happened, so the inverse is broken. The original $P\\Rightarrow Q$ is true whenever $P$ is false, so a dry cancellation never tests the organizer's promise.
+
+so the statement is True.`,
+      `**E.** → True
+
+Swap and negate: $\\neg Q\\Rightarrow\\neg P$, "if the picnic was not cancelled, then it did not rain." That is the contrapositive, which always shares the original's truth value. Once the organizer's rule is granted, this rewriting comes free with it.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 12,
-    solution_overview:
-      "The organizer's promise is a **conditional**: it fires only when it rains. Write $P$ for “it rains” and $Q$ for “the picnic is cancelled”, so the rule is $P \\Rightarrow Q$.\n\nA conditional makes **no promise at all** when its “if” part is false. That single fact settles most of this task, and it also pins down the only way the rule can be broken:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\n**The rule and its three relatives**\n\n| Form | Symbols | In plain words | Follows from the rule? |\n| --- | --- | --- | --- |\n| Original | $P \\Rightarrow Q$ | if it rains, the picnic is cancelled | given as true |\n| Converse | $Q \\Rightarrow P$ | if cancelled, then it rained | no |\n| Inverse | $\\neg P \\Rightarrow \\neg Q$ | if no rain, then not cancelled | no |\n| Contrapositive | $\\neg Q \\Rightarrow \\neg P$ | if not cancelled, then no rain | **yes, always** |\n\n**The test day.** On the venue-conflict day it did not rain ($P$ false) but the picnic was cancelled ($Q$ true). Feed that day into the table: the inverse had promised “no cancellation”, so it breaks; the original promised nothing, because it never rained, so it comes through untouched.",
+    solution_overview: `Write $P$ for "it rains" and $Q$ for "the picnic is cancelled." The organizer's rule is $P\\Rightarrow Q$.
+
+A conditional makes no promise when its "if" part is false. The unique failure is rain with an uncancelled picnic:
+
+$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
+
+The contrapositive $\\neg Q\\Rightarrow\\neg P$ always shares the original's truth value. The converse $Q\\Rightarrow P$ and the inverse $\\neg P\\Rightarrow\\neg Q$ are a different pair.`,
   },
   {
-    id: "math-1-56",
-    case_id: "MATH 1.56",
-    title: "A market survey of 100 consumers found that 40 bought product X, 35 bo",
-    subsection: "1.3",
-    context:
-      "A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought both X and Y.",
+    id: `math-1-56`,
+    case_id: `MATH 1.56`,
+    title: `Inclusive Or in a Two-Product Purchase Survey`,
+    subsection: `1.3`,
+    context: `A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought both X and Y.`,
     statements: [
-      'In mathematical logic, the statement "a consumer bought X or Y" includes consumers who bought both.',
-      "The number of consumers who bought X or Y (in the inclusive sense) is 60.",
-      'If "or" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying "X or Y" would be 45.',
-      "A biconditional means that its two components always have the same truth value.",
-      "A biconditional is true whenever at least one of its two components is true.",
+      `In mathematical logic, the statement "a consumer bought X or Y" includes consumers who bought both.`,
+      `The number of consumers who bought X or Y (in the inclusive sense) is 60.`,
+      `If "or" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying "X or Y" would be 45.`,
+      `A biconditional means that its two components always have the same truth value.`,
+      `A biconditional is true whenever at least one of its two components is true.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nMathematical “or” is inclusive by default: “bought X or Y” asks for *at least one*, so the 15 shoppers holding both products are counted in, not out. Nothing in the survey wording narrows it to “exactly one”. **The reading in the statement is the standard one.**\n\nInclusive “or” means at least one of $X,Y$. The $15$ both-buyers have $X$ true and $Y$ true, so they satisfy “at least one.” They stay inside the inclusive count.",
-      "**B.** → True\n\nInclusion-exclusion gives $40 + 35 - 15 = 60$, the subtraction removing the double count of the 15 both-buyers. **60 is right.**\n\nThe survey gives $|X|=40$, $|Y|=35$, and $|X \\cap Y|=15$. The claim asks for the inclusive count of people who bought at least one of the two products. Inclusive union keeps the 15 both-buyers once: $40+35-15=60$. That is the figure claimed.\n\nPeel the three buying regions from the survey numbers:\n\n- both: $15$,\n- X only: $40-15=25$,\n- Y only: $35-15=20$.\n\nInclusive union is $25+15+20=60$. The same figure is $40+35-15=60$.",
-      "**C.** → True\n\nUnder the exclusive reading the both-buyers are dropped, leaving 25 X-only and 20 Y-only shoppers, and $25 + 20 = 45$. Another route to the same number: inclusive union 60 minus the 15 both-buyers gives $60 - 15 = 45$. **The exclusive count matches the figure claimed.**\n\nExclusive or keeps only the two outer regions: $25+20=45$. Equivalently, drop the both-buyers from the inclusive union: $60-15=45$. Either route matches the claimed exclusive count.",
-      "**D.** → True\n\n“$P$ if and only if $Q$” is a statement about agreement: true when both parts are true, true when both are false, false in the two mixed cases. Saying the two “always have the same truth value” is that description in words. **An accurate definition.**\n\nThe four truth rows of $P\\Leftrightarrow Q$ are TT true, FF true, TF false, FT false. The two true rows are exactly the rows where $P$ and $Q$ agree. “Always the same truth value” is that description.",
-      "**E.** → False\n\nThe trap is that this describes **or**, not **if and only if**. Take $P$ true and $Q$ false: at least one part is true, yet the two disagree, so $P \\Leftrightarrow Q$ is false. The same split appears with $P$ false and $Q$ true. Inclusive OR is happy in both mixed cases; the biconditional is false in both. **One true part is nowhere near enough for a biconditional.**\n\n“At least one true” is the truth condition for $P\\lor Q$, not for $P\\Leftrightarrow Q$. The mixed row $P$ true, $Q$ false has at least one true part, yet $P\\Leftrightarrow Q$ is false there. One true component is not enough for a biconditional.",
+      `**A.** → True
+
+Inclusive "or" means at least one of $X,Y$. The $15$ both-buyers have both true, so they satisfy "at least one" and stay inside the count. Exclusive or would drop those $15$; mathematical or does not.
+
+so the statement is True.`,
+      `**B.** → True
+
+Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
+
+$$\\lvert X\\cup Y\\rvert=40+35-15=60$$
+
+so the statement is True.`,
+      `**C.** → True
+
+Exclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only is $35-15=20$, so
+
+$$25+20=45$$
+
+Equivalently, drop the both-buyers from the inclusive union: $60-15=45$.
+
+so the statement is True.`,
+      `**D.** → True
+
+The four truth rows of $P\\Leftrightarrow Q$ are TT true, FF true, TF false, FT false. The two true rows are exactly the rows where $P$ and $Q$ agree. "Always the same truth value" is that description.
+
+so the statement is True.`,
+      `**E.** → False
+
+"At least one true" is the truth condition for $P\\lor Q$, not for $P\\Leftrightarrow Q$. The mixed row $P$ true, $Q$ false has at least one true part, yet the biconditional is false there.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 13,
-    solution_overview:
-      "Two quite different things are being tested here: how many shoppers the word “or” actually covers, and what a **biconditional** promises.\n\n**Sorting the 100 shoppers.** With $|X| = 40$, $|Y| = 35$ and $|X \\cap Y| = 15$, the survey splits into 15 people who bought both products, $40 - 15 = 25$ who bought only X, and $35 - 15 = 20$ who bought only Y.\n\n**Inclusive “or”.** In mathematics “X or Y” always means *at least one of them*, so the 15 both-buyers are inside the group. Adding 40 and 35 counts those 15 twice, so subtract them once:\n\n$$|X \\cup Y| = 40 + 35 - 15 = 60$$\n\n**Exclusive “or” (XOR).** If “or” were meant as *exactly one*, the both-buyers drop out and only the two outer groups remain: $25 + 20 = 45$.\n\n**And the biconditional.** $P \\Leftrightarrow Q$ is a far stricter connective than “or”. It is true when both parts are true and also when both are false, in short, whenever the two agree, and **false the moment their truth values differ.**",
+    solution_overview: `A survey of $100$ consumers has $|X|=40$, $|Y|=35$, and $|X\\cap Y|=15$. Inclusive "or" means at least one; exclusive "or" means exactly one.
+
+Inclusion-exclusion counts the inclusive union:
+
+$$\\lvert X\\cup Y\\rvert=\\lvert X\\rvert+\\lvert Y\\rvert-\\lvert X\\cap Y\\rvert$$
+
+A biconditional $P\\Leftrightarrow Q$ is true when $P$ and $Q$ agree, and false the moment their truth values differ.`,
   },
   {
-    id: "math-1-57",
-    case_id: "MATH 1.57",
-    title: "Passing a course: attendance and the final exam",
-    subsection: "1.3",
-    context:
-      "A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of classes and scored 90 on the final.",
+    id: `math-1-57`,
+    case_id: `MATH 1.57`,
+    title: `Passing a course: attendance and the final exam`,
+    subsection: `1.3`,
+    context: `A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of classes and scored 90 on the final.`,
     statements: [
-      "Student K passes the course.",
-      "Student L passes the course.",
-      "A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.",
-      "If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how close their score is to 50.",
-      "There could exist a student who passes despite having a lower combined average performance than another student who fails, since the rule checks each threshold separately rather than an overall average.",
+      `Student K passes the course.`,
+      `Student L passes the course.`,
+      `A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.`,
+      `If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how close their score is to 50.`,
+      `There could exist a student who passes despite having a lower combined average performance than another student who fails, since the rule checks each threshold separately rather than an overall average.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nK cleared attendance comfortably but scored 48, so $F$ is false and $A \\land F$ collapses with it. **K does not pass.**\n\nThe pass rule is $A \\land F$: attendance at least 80% and a final of at least 50. K's file is the pair $(85\\%, 48)$. Attendance clears the first gate, but $48<50$ fails the second. One false conjunct makes the whole condition false.\n\nCheck K against both thresholds:\n\n- attendance: $85\\%\\ge 80\\%$, true;\n- final: $48\\ge 50$? $48<50$, false.\n\nThen $A\\land F=\\text{T}\\land\\text{F}=\\text{F}$. K does not pass.",
-      "**B.** → False\n\nL's 90 is an excellent mark, but 75% attendance leaves $A$ false, and one false half is fatal in a conjunction. **L does not pass either.**\n\nL's file is $(75\\%, 90)$. The same two gates apply: $75\\%<80\\%$ fails attendance, even though 90 clears the exam. The conjunction never lets the strong half rescue the weak half.\n\nCheck L:\n\n- attendance: $75\\%\\ge 80\\%$? $75<80$, false;\n- final: $90\\ge 50$, true.\n\nThen $A\\land F=\\text{F}\\land\\text{T}=\\text{F}$. L does not pass.",
-      "**C.** → False\n\nThis is the compensation idea, and the rule has no room for it: the two conditions are tested separately, never pooled or averaged. Student L is the proof, 90 on the final, still no pass. K shows the symmetric failure: 85% attendance with a 48 on the exam also fails. In both files, the strong half never rescues the weak half. **Exam points cannot repair attendance.**\n\nCompensation would let a high exam score repair low attendance. L is the test file: $90$ on the exam with $75\\%$ attendance still yields $A$ false, so $A\\land F$ is false. The two numbers are never added or averaged.",
-      "**D.** → True\n\n**What the rule needs:** $F$ true, meaning a score of 50 or more.\n\n**What a 49 delivers:** $F$ false, exactly as a 10 would. A threshold recognises no near-misses, so **the student fails no matter how narrow the gap is**, which is precisely K's situation. K's 48 is only two points short, yet $A \\land F$ is still false because $F$ is false.\n\nA score below $50$ makes $F$ false, whether the score is $49$ or $10$. For K, $48<50$ already falsifies $F$, so $A\\land F$ is false even though attendance cleared $85\\%\\ge 80\\%$. Near-misses do not count.",
-      "**E.** → True\n\nCompare $(80\\%, 50)$ with $(79\\%, 100)$. The first clears both tests; the second fails on attendance, yet its numbers are far higher overall. Because the rule checks two thresholds instead of one average, **reversals like this really can happen.** Nothing in the “if and only if” wording averages the two scores; each gate is pass/fail on its own number.\n\nCompare two files the rule actually distinguishes. Student $(80\\%,50)$: $80\\ge 80$ and $50\\ge 50$, both true, pass. Student $(79\\%,100)$: $79<80$, fail. The second file looks stronger on an average, yet fails because each threshold is checked separately.",
+      `**A.** → False
+
+K cleared attendance ($85\\%\\ge 80\\%$) but scored $48<50$, so $F$ is false and $A\\land F$ collapses. One false conjunct makes the whole pass condition false. Near-misses do not count: $48$ is not $50$.
+
+so the statement is False.`,
+      `**B.** → False
+
+L's $90$ clears the exam, but $75\\%<80\\%$ fails attendance. The conjunction never lets the strong half rescue the weak half, so L does not pass.
+
+so the statement is False.`,
+      `**C.** → False
+
+Compensation would let a high exam score repair low attendance. L is the test file: $90$ on the exam with $75\\%$ attendance still yields $A$ false, so $A\\land F$ is false. Exam points cannot repair attendance.
+
+so the statement is False.`,
+      `**D.** → True
+
+A score below $50$ makes $F$ false, whether the score is $49$ or $10$. For K, $48<50$ already falsifies $F$, so $A\\land F$ is false even though attendance cleared. A threshold recognises no near-misses.
+
+so the statement is True.`,
+      `**E.** → True
+
+Compare $(80\\%,50)$ with $(79\\%,100)$. The first clears both tests and passes; the second fails on attendance, yet looks far stronger on an average. Because the rule checks two thresholds instead of one average, reversals like this really can happen.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 14,
-    solution_overview:
-      "Passing is governed by an **and**: attendance of at least 80% *and* a final score of at least 50. Writing $A$ and $F$ for those two conditions,\n\n$$\\text{Pass} \\Leftrightarrow A \\land F$$\n\nThe words “if and only if” mean the list is complete, nothing else earns a pass and nothing else blocks one. And $\\land$ is unforgiving: **one false part sinks the whole condition**, however comfortably the other part is satisfied.\n\n**Student K**, 85% attendance, so $A$ is true; 48 on the final, so $F$ is false. True and false gives false: **K does not pass.**\n\n**Student L**, 75% attendance, so $A$ is false; 90 on the final, so $F$ is true. False again: **L does not pass.**\n\nNotice what the rule never does: it never adds the two numbers together. A student at $(80\\%, 50)$ passes while a student at $(79\\%, 100)$ fails, even though the second looks far stronger on paper. **Two separate thresholds are not an average.**",
+    solution_overview: `Passing is governed by an "and": attendance of at least $80\\%$ and a final score of at least $50$. Writing $A$ and $F$ for those two conditions, the student passes if and only if $A\\land F$.
+
+The words "if and only if" mean the list is complete. One false part sinks the whole condition, however comfortably the other part is satisfied. The rule never adds or averages the two numbers.`,
   },
   {
-    id: "math-1-58",
-    case_id: "MATH 1.58",
-    title: "Online store filter (De Morgan)",
-    subsection: "1.3",
-    context:
-      'An online store\'s "clearance-free, in-stock only" filter displays an item exactly when NOT (the item is on sale OR the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on sale and is in stock.',
+    id: `math-1-58`,
+    case_id: `MATH 1.58`,
+    title: `Online store filter (De Morgan)`,
+    subsection: `1.3`,
+    context: `An online store's "clearance-free, in-stock only" filter displays an item exactly when NOT (the item is on sale OR the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on sale and is in stock.`,
     statements: [
-      "Item M is displayed by the filter.",
-      "Item N is displayed by the filter.",
-      'The filter condition "NOT (on sale OR out of stock)" is logically equivalent to "NOT on sale OR NOT out of stock."',
-      'The filter condition is logically equivalent to "NOT on sale AND NOT out of stock," meaning an item is displayed only if it is neither on sale nor out of stock.',
-      "Item K is displayed by the filter.",
+      `Item M is displayed by the filter.`,
+      `Item N is displayed by the filter.`,
+      `The filter condition "NOT (on sale OR out of stock)" is logically equivalent to "NOT on sale OR NOT out of stock."`,
+      `The filter condition is logically equivalent to "NOT on sale AND NOT out of stock," meaning an item is displayed only if it is neither on sale nor out of stock.`,
+      `Item K is displayed by the filter.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nM is on sale, so $\\neg S$ is false and the conjunction dies immediately. **The filter hides M.**\n\nThe filter displays an item only when $\\neg S \\land \\neg O$. Item M is on sale and in stock, so $S$ is true and $O$ is false. Then $\\neg S$ is already false, and a false half kills the AND.\n\nItem M: on sale and in stock, so $S$ true, $O$ false. The filter is $\\neg S\\land\\neg O$. Compute $\\neg S=\\neg\\text{T}=\\text{F}$. A false conjunct hides M.",
-      "**B.** → False\n\nN's problem is the other half: not on sale, but out of stock, so $\\neg O$ fails. **N is hidden too.**\n\nItem N is not on sale and is out of stock: $S$ false, $O$ true. The filter still needs both $\\neg S$ and $\\neg O$. $\\neg O$ fails, so N stays hidden.\n\nItem N: not on sale, out of stock, so $S$ false, $O$ true. Then $\\neg O=\\neg\\text{T}=\\text{F}$. The same conjunction fails on the other half, so N is hidden.",
-      "**C.** → False\n\nThe error is keeping the OR while moving the NOT inside, De Morgan's law swaps the connective. Item M exposes the difference: the true condition $\\neg S \\land \\neg O$ rejects it, while the claimed $\\neg S \\lor \\neg O$ would accept it, because M is at least in stock. Item N splits them the other way around the same trap: $\\neg S$ is true for N, so the wrong OR form would still display N, yet $\\neg O$ fails and the real filter hides N. **Two conditions that disagree on one item are not equivalent.**\n\nDe Morgan requires the connective to flip: $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$, not $\\neg S\\lor\\neg O$. On item M, $\\neg S\\lor\\neg O=\\text{F}\\lor\\text{T}=\\text{T}$ would display M, while the real AND hides M. The two formulas disagree, so they are not equivalent.",
-      "**D.** → True\n\nThis is De Morgan's law applied correctly, $\\neg(S \\lor O) \\equiv \\neg S \\land \\neg O$, read back into English as “neither on sale nor out of stock”. Checking K against that reading: not on sale and not out of stock, so both conjuncts hold. **A faithful translation of the filter.**\n\nPush the NOT inside with the connective flip:\n\n$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O.$$\n\nIn English that is “not on sale and not out of stock,” i.e. neither on sale nor out of stock. That is the claimed reading.",
-      "**E.** → True\n\nK is not on sale and is in stock, so both halves are true. **K is the one item of the three that the shopper actually sees.**\n\nItem K is not on sale and is in stock: $S$ false, $O$ false. Both $\\neg S$ and $\\neg O$ hold, so $\\neg S \\land \\neg O$ is true and the filter displays K.\n\nItem K: not on sale and in stock, so $S$ false, $O$ false. Then $\\neg S$ true and $\\neg O$ true, and $\\text{T}\\land\\text{T}=\\text{T}$. The filter displays K.",
+      `**A.** → False
+
+The filter is $\\neg S\\land\\neg O$. Item M is on sale, so $\\neg S$ is already false, and a false conjunct hides M. Being in stock does not rescue an on-sale item.
+
+so the statement is False.`,
+      `**B.** → False
+
+Item N is out of stock, so $\\neg O$ fails. The same conjunction fails on the other half, so N is hidden too. Not being on sale is not enough.
+
+so the statement is False.`,
+      `**C.** → False
+
+De Morgan requires the connective to flip: $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$, not $\\neg S\\lor\\neg O$. On item M, the wrong OR form would display M (in stock), while the real AND hides M. Two formulas that disagree on one item are not equivalent.
+
+so the statement is False.`,
+      `**D.** → True
+
+Push the NOT inside with the connective flip:
+
+$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$
+
+In English that is "not on sale and not out of stock," i.e. neither on sale nor out of stock.
+
+so the statement is True.`,
+      `**E.** → True
+
+Item K is not on sale and is in stock, so both $\\neg S$ and $\\neg O$ hold. The filter displays K.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 15,
-    solution_overview:
-      "The filter is stated with a negated “or”, which is exactly the shape **De Morgan's law** is built for. Let $S$ mean “the item is on sale” and $O$ mean “the item is out of stock”; the filter displays an item when $\\neg(S \\lor O)$ is true.\n\n**Push the NOT inside.** De Morgan's law turns a negated OR into an AND of the two negations:\n\n$$\\neg(S \\lor O) \\equiv \\neg S \\land \\neg O$$\n\nSo in plain English the filter shows an item **only if it is neither on sale nor out of stock**. The connective flips as the NOT moves in; keeping the OR and writing $\\neg S \\lor \\neg O$ instead would let almost the whole catalogue through, since nearly every item fails at most one of the two tests.\n\n**Running the three items through $\\neg S \\land \\neg O$:**\n\n• **M** is on sale, so $\\neg S$ is false, hidden.\n\n• **N** is out of stock, so $\\neg O$ is false, hidden.\n\n• **K** is neither on sale nor out of stock, so both halves hold, **displayed**.",
+    solution_overview: `Let $S$ mean the item is on sale and $O$ mean the item is out of stock. The filter displays an item when $\\neg(S\\lor O)$ is true.
+
+De Morgan's law turns a negated OR into an AND of the two negations:
+
+$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$
+
+So the filter shows an item only if it is neither on sale nor out of stock.`,
   },
   {
-    id: "math-1-59",
-    case_id: "MATH 1.59",
-    title: "Inflation and central-bank interest rates",
-    subsection: "1.3",
-    context: "If a country's inflation rate exceeds 10%, the central bank raises interest rates.",
+    id: `math-1-59`,
+    case_id: `MATH 1.59`,
+    title: `Inflation and central-bank interest rates`,
+    subsection: `1.3`,
+    context: `If a country's inflation rate exceeds 10%, the central bank raises interest rates.`,
     statements: [
-      'The contrapositive is: "If the central bank does not raise interest rates, then inflation is at most 10%."',
-      'The converse, "If the central bank raises interest rates, then inflation exceeds 10%," is logically equivalent to the original statement.',
-      "Inflation above 10% is sufficient for the central bank to raise interest rates.",
-      "Inflation above 10% is necessary for the central bank to raise interest rates.",
-      "If the bank raised interest rates, we may validly conclude that inflation exceeded 10%.",
+      `The contrapositive is: "If the central bank does not raise interest rates, then inflation is at most 10%."`,
+      `The converse, "If the central bank raises interest rates, then inflation exceeds 10%," is logically equivalent to the original statement.`,
+      `Inflation above 10% is sufficient for the central bank to raise interest rates.`,
+      `Inflation above 10% is necessary for the central bank to raise interest rates.`,
+      `If the bank raised interest rates, we may validly conclude that inflation exceeded 10%.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nSwap the halves and negate each: $\\neg Q \\Rightarrow \\neg P$, no rate rise implying inflation not above 10%. “Not above 10%” is just another way of writing “at most 10%”, so **the sentence is the contrapositive, correctly built.**\n\nFrom $P\\Rightarrow Q$, the contrapositive is $\\neg Q\\Rightarrow\\neg P$. Here $\\neg Q$ is “the bank does not raise rates” and $\\neg P$ is “inflation does not exceed $10\\%$,” i.e. inflation is at most $10\\%$. That is the quoted sentence.",
-      "**B.** → False\n\nThat sentence is the converse $Q \\Rightarrow P$, and rate rises have other causes, propping up a falling currency while inflation sits at 4%, for instance. In that situation the rule holds and the converse fails, so **the two are not equivalent.** Equivalence would demand that every rate rise come from inflation above 10%, and the currency-defence story is already a counterexample to that demand.\n\nThe converse $Q\\Rightarrow P$ would say every rate rise comes from inflation above $10\\%$. A currency-defence rise at $4\\%$ inflation has $Q$ true and $P$ false: the original $P\\Rightarrow Q$ is untouched (because $P$ is false), while the converse fails. Not equivalent.",
-      "**C.** → True\n\nSufficient means “enough on its own to guarantee”, which is exactly what an arrow from $P$ to $Q$ asserts. **$P$ is a sufficient condition for $Q$.**\n\nThe given rule is $P \\Rightarrow Q$: inflation above 10% forces a rate rise. “Sufficient” asks whether $P$ alone is enough to guarantee $Q$. That is exactly what the arrow asserts: once inflation exceeds 10%, the bank must raise rates.\n\n“$P$ is sufficient for $Q$” means $P\\Rightarrow Q$. The given rule is exactly that arrow: inflation above $10\\%$ forces a rate rise. $P$ alone guarantees $Q$.",
-      "**D.** → False\n\n**What is claimed:** $P$ is necessary for $Q$, which in symbols is $Q \\Rightarrow P$.\n\n**What is given:** $P \\Rightarrow Q$, in which the necessary condition is $Q$, not $P$. The vocabulary has been attached to the wrong end of the arrow, so **the statement misreads the rule.** Necessary means “without this, the other cannot happen”; here the rule only forces a rate rise when inflation is high, it does not force high inflation whenever rates rise.\n\n“$P$ is necessary for $Q$” would be $Q\\Rightarrow P$, the converse. The given arrow points the other way: $Q$ is necessary for $P$, not $P$ for $Q$. The vocabulary is attached to the wrong end.",
-      "**E.** → False\n\nArguing from an observed $Q$ back to $P$ is the converse once more, and the 4%-inflation rate rise is a case where the rule holds while that conclusion is false. The premise licenses $P \\Rightarrow Q$, never $Q \\Rightarrow P$, so walking backwards along the arrow is the classic trap. **The inference is not valid.**\n\nObserving a rate rise ($Q$ true) and inferring inflation above $10\\%$ ($P$ true) is affirming the consequent. The premises give $P\\Rightarrow Q$, never $Q\\Rightarrow P$. The $4\\%$ currency-defence rise is a case where that inference fails.",
+      `**A.** → True
+
+From $P\\Rightarrow Q$, the contrapositive is $\\neg Q\\Rightarrow\\neg P$: no rate rise, therefore inflation does not exceed $10\\%$, i.e. at most $10\\%$. That is the quoted sentence. "Not above $10$" and "at most $10$" are the same cutoff.
+
+so the statement is True.`,
+      `**B.** → False
+
+The converse $Q\\Rightarrow P$ would say every rate rise comes from inflation above $10\\%$. A currency-defence rise at $4\\%$ inflation has $Q$ true and $P$ false: the original is untouched (because $P$ is false), while the converse fails.
+
+so the statement is False.`,
+      `**C.** → True
+
+"$P$ is sufficient for $Q$" means $P\\Rightarrow Q$. The given rule is exactly that arrow: inflation above $10\\%$ forces a rate rise. $P$ alone guarantees $Q$.
+
+so the statement is True.`,
+      `**D.** → False
+
+"$P$ is necessary for $Q$" would be $Q\\Rightarrow P$, the converse. The given arrow points the other way: $Q$ is necessary for $P$, not $P$ for $Q$. The rule does not force high inflation whenever rates rise.
+
+so the statement is False.`,
+      `**E.** → False
+
+Observing a rate rise ($Q$ true) and inferring inflation above $10\\%$ ($P$ true) is affirming the consequent. The premises give $P\\Rightarrow Q$, never $Q\\Rightarrow P$. Walking backwards along the arrow is the classic trap.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 16,
-    solution_overview:
-      "$P$: a country's inflation rate exceeds 10%. $Q$: the central bank raises interest rates. The given rule is $P \\Rightarrow Q$.\n\n**What the arrow actually promises.** High inflation forces a rate rise. It says nothing about what *else* might cause one, and nothing at all about quiet years when inflation stays low.\n\n**The one safe rewriting.** Swap the two halves and negate each, and you get the **contrapositive**\n\n$$\\neg Q \\Rightarrow \\neg P$$\n\nthat is, “no rate rise, so inflation is at most 10%”, which always carries the same truth value as the original. Reading the rule the other way round gives the **converse** $Q \\Rightarrow P$, and that is a genuinely different claim: a bank may raise rates at 4% inflation to defend a sliding currency, which leaves the rule intact and the converse in ruins.\n\n**Necessary versus sufficient.** These two words point at opposite ends of the arrow. In $P \\Rightarrow Q$, $P$ is **sufficient** for $Q$, its presence alone guarantees $Q$, while $Q$ is **necessary** for $P$, since $P$ cannot occur without it. Claiming that $P$ is necessary for $Q$ would mean $Q \\Rightarrow P$: the converse again.",
+    solution_overview: `$P$: a country's inflation rate exceeds $10\\%$. $Q$: the central bank raises interest rates. The given rule is $P\\Rightarrow Q$.
+
+High inflation forces a rate rise. The rule says nothing about what else might cause one. The contrapositive $\\neg Q\\Rightarrow\\neg P$ always carries the same truth value. In $P\\Rightarrow Q$, $P$ is sufficient for $Q$, while $Q$ is necessary for $P$.`,
   },
   {
-    id: "math-1-60",
-    case_id: "MATH 1.60",
-    title: "A chain of biconditionals",
-    subsection: "1.3",
-    context:
-      "Three propositions have matching truth values: the first matches the second, and the second matches the third. The first proposition is true.",
+    id: `math-1-60`,
+    case_id: `MATH 1.60`,
+    title: `A chain of biconditionals`,
+    subsection: `1.3`,
+    context: `Three propositions have matching truth values: the first matches the second, and the second matches the third. The first proposition is true.`,
     statements: [
-      "The second proposition is true.",
-      "The third proposition is true.",
-      "The first and third propositions must also have the same truth value.",
-      "If the third proposition were false, the first would also be false.",
-      "Knowing only that the first and third propositions match is enough to conclude that the second always matches them.",
+      `The second proposition is true.`,
+      `The third proposition is true.`,
+      `The first and third propositions must also have the same truth value.`,
+      `If the third proposition were false, the first would also be false.`,
+      `Knowing only that the first and third propositions match is enough to conclude that the second always matches them.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\n$P$ is true, and the first link forbids $Q$ from differing from it. **$Q$ is true.**\n\nThe data give $P \\Leftrightarrow Q$ and “$P$ is true.” A biconditional forbids the two sides from differing, so a true $P$ forces $Q$ true. The second proposition is true.\n\nThe first link is $P\\Leftrightarrow Q$ and $P$ is given true. Agreement forbids $Q$ from being false, so $Q$ is true. The second proposition matches the first.",
-      "**B.** → True\n\nOne step further along the chain: $Q$ has just been pinned as true, and the second link ties $R$ to $Q$. **$R$ is true as well.**\n\nThe second given link is $Q \\Leftrightarrow R$. With $Q$ already forced true, the same agreement rule now pins $R$. The third proposition is true as well.\n\nThe second link is $Q\\Leftrightarrow R$. From A, $Q$ is true, so $R$ must be true as well. The third proposition is true.",
-      "**C.** → True\n\nAgreement is passed along the chain. If $P$ never differs from $Q$, and $Q$ never differs from $R$, then $P$ and $R$ can never differ either. The link is not written in the data, but **it is an unavoidable consequence of the two links that are.** Transitivity of “same truth value” is what makes $P \\Leftrightarrow R$ fall out of $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R$.\n\nIf $P$ agrees with $Q$ and $Q$ agrees with $R$, then $P$ agrees with $R$. In symbols, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$ yield $P\\Leftrightarrow R$. The first and third must share a truth value.",
-      "**D.** → True\n\nBiconditionals work in both directions, so the chain can be walked from either end: a false $R$ would force $Q$ false, and a false $Q$ would force $P$ false. **The backwards reading is just as sound as the forwards one.**\n\nWalk the chain backwards. If $R$ were false, $Q\\Leftrightarrow R$ would force $Q$ false, and $P\\Leftrightarrow Q$ would force $P$ false. A false third proposition would drag the first down with it.",
-      "**E.** → False\n\nHere the derived link is being asked to do more than it can. $P \\Leftrightarrow R$ constrains only $P$ and $R$; set both of them true and $Q$ false, and it is still perfectly satisfied. The original chain needed both middle links; dropping the middle and keeping only the ends leaves $Q$ free to disagree with them. **$Q$ is left undetermined, so the conclusion does not follow.**\n\n$P\\Leftrightarrow R$ alone does not mention $Q$. The assignment $P$ true, $R$ true, $Q$ false satisfies $P\\Leftrightarrow R$ while breaking $P\\Leftrightarrow Q$. Knowing only the end link leaves the middle free, so we cannot conclude that the second always matches.",
+      `**A.** → True
+
+The first link is $P\\Leftrightarrow Q$ and $P$ is given true. Agreement forbids $Q$ from being false, so $Q$ is true. A biconditional is a two-way weld; a true $P$ cannot sit next to a false $Q$.
+
+so the statement is True.`,
+      `**B.** → True
+
+The second link is $Q\\Leftrightarrow R$. From $P\\Leftrightarrow Q$ and $P$ true, $Q$ is true, so $R$ must be true as well. The extra fact "$P$ is true" has now travelled the whole chain.
+
+so the statement is True.`,
+      `**C.** → True
+
+If $P$ agrees with $Q$ and $Q$ agrees with $R$, then $P$ agrees with $R$. In symbols, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$ yield $P\\Leftrightarrow R$. The first and third must share a truth value.
+
+so the statement is True.`,
+      `**D.** → True
+
+Biconditionals work in both directions, so the chain can be walked from either end. If $R$ were false, $Q\\Leftrightarrow R$ would force $Q$ false, and $P\\Leftrightarrow Q$ would force $P$ false.
+
+so the statement is True.`,
+      `**E.** → False
+
+$P\\Leftrightarrow R$ alone does not mention $Q$. The assignment $P$ true, $R$ true, $Q$ false satisfies $P\\Leftrightarrow R$ while breaking $P\\Leftrightarrow Q$. Knowing only the end link leaves the middle free.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 17,
-    solution_overview:
-      "A **biconditional** $A \\Leftrightarrow B$ is a two-way link: $A$ and $B$ must always carry the same truth value, and the link can be read from either end.\n\nHere two links are given, $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R$, so the three propositions are welded into one chain\n\n$$P \\Leftrightarrow Q \\Leftrightarrow R$$\n\nand the extra fact “$P$ is true” travels along it. A true $P$ forces $Q$ true through the first link, and a true $Q$ forces $R$ true through the second. Because $P$ can never differ from $Q$ and $Q$ can never differ from $R$, the unstated link $P \\Leftrightarrow R$ holds as well; and pulling the chain from the far end works just as smoothly, since a false $R$ would drag $Q$ and then $P$ down with it.\n\nOne caution for the last statement: the derived link is **weaker** than the pair it came from. On its own, $P \\Leftrightarrow R$ mentions only $P$ and $R$, so it leaves $Q$ entirely free, $P$ and $R$ both true with $Q$ false satisfies it without complaint.",
+    solution_overview: `A biconditional $A\\Leftrightarrow B$ is a two-way link: $A$ and $B$ must carry the same truth value, and the link can be read from either end.
+
+Here two links are given, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$, so the three propositions are welded into one chain. A fact about $P$ travels along the chain. The derived end-to-end link $P\\Leftrightarrow R$ mentions only $P$ and $R$, so on its own it leaves $Q$ free.`,
   },
   {
-    id: "math-1-61",
-    case_id: "MATH 1.61",
-    title: "Cancelling a concert",
-    subsection: "1.3",
-    context:
-      "A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is cancelled”, S: “the rain stops before 6 PM.”",
+    id: `math-1-61`,
+    case_id: `MATH 1.61`,
+    title: `Cancelling a concert`,
+    subsection: `1.3`,
+    context: `A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is cancelled”, S: “the rain stops before 6 PM.”`,
     statements: [
-      "The rule translates to: $\\neg S \\Rightarrow C$.",
-      "The rule is logically equivalent to: $S \\Rightarrow \\neg C$.",
-      "The rule is logically equivalent to: $C \\lor S$.",
-      "If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).",
-      "If the concert is not cancelled, then the rain must have stopped before 6 PM.",
+      `The rule translates to: $\\neg S \\Rightarrow C$.`,
+      `The rule is logically equivalent to: $S \\Rightarrow \\neg C$.`,
+      `The rule is logically equivalent to: $C \\lor S$.`,
+      `If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).`,
+      `If the concert is not cancelled, then the rain must have stopped before 6 PM.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\n“$C$ unless $S$” means the cancellation stands unless the exception rescues it, so the failure of the exception triggers the cancellation: $\\neg S \\Rightarrow C$. **The translation is right.**\n\n“Cancelled unless $S$” means: if the exception $S$ fails, cancellation occurs. That is $\\neg S\\Rightarrow C$. If the rain does not stop before 6 PM, the concert is cancelled.",
-      "**B.** → False\n\nThis version has the rain rescuing the concert, which the rule never promised. Concretely: the rain stops at 5 PM and a power failure cancels the show anyway, making $S$ and $C$ both true. Then $S \\lor C$, the rule, holds, while $S \\Rightarrow \\neg C$ fails. The same day shows why “unless” is not a two-way guarantee: stopping rain removes one reason to cancel, not every reason. **Not an equivalent form.**\n\n$S\\Rightarrow\\neg C$ would say that stopping rain guarantees the concert happens. A 5 PM stop plus a power failure has $S$ true and $C$ true. Then $S\\lor C$ (the rule) holds, while $S\\Rightarrow\\neg C$ fails. Not equivalent.",
-      "**C.** → True\n\nRewriting the implication as an OR gives $\\neg(\\neg S) \\lor C$, that is $S \\lor C$, and an OR reads the same in either order. **$C \\lor S$ is the same rule in different clothing.**\n\nThe given unless-rule is $\\neg S \\Rightarrow C$. Rewrite an implication as an OR: $A \\Rightarrow B$ is $\\neg A \\lor B$, so $\\neg S \\Rightarrow C$ becomes $S \\lor C$. OR is symmetric, so $C \\lor S$ is the same formula.\n\nRewrite $\\neg S\\Rightarrow C$ as an OR: $A\\Rightarrow B$ is $\\neg A\\lor B$, so $\\neg(\\neg S)\\lor C$, i.e. $S\\lor C$. OR is symmetric, so $C\\lor S$ is the same formula.",
-      "**D.** → False\n\nA guarantee is being read into a direction the rule never covers. Once the rain has stopped, $\\neg S$ is false and the promise says nothing whatsoever; a power cut could still end the evening. $S \\Rightarrow \\neg C$ would forbid that evening, but “$C$ unless $S$” never asserted it. **No such guarantee exists.**\n\nOnce $S$ is true, the antecedent $\\neg S$ of the rule is false, so the implication is silent. It does not assert $\\neg C$. A power cut can still cancel the concert after the rain stops. No guarantee that the concert happens.",
-      "**E.** → True\n\nThis is the contrapositive $\\neg C \\Rightarrow S$, and a contrapositive is always as true as the statement it came from. If the concert ran, $\\neg C$ is true, so $S$ must be true: the rain really did stop before 6 PM. **A concert that took place proves the rain stopped before 6 PM.**\n\nThe contrapositive of $\\neg S\\Rightarrow C$ is $\\neg C\\Rightarrow S$. If the concert is not cancelled, the rain must have stopped before 6 PM. A concert that went ahead proves $S$.",
+      `**A.** → True
+
+"Cancelled unless $S$" means: if the exception $S$ fails, cancellation occurs. That is $\\neg S\\Rightarrow C$. If the rain does not stop before 6 PM, the concert is cancelled. The unless-clause is an escape, not a two-way guarantee. This translation is the rule in implication form, so the statement is True.`,
+      `**B.** → False
+
+$S\\Rightarrow\\neg C$ would say that stopping rain guarantees the concert happens. A 5 PM stop plus a power failure has $S$ true and $C$ true: $S\\lor C$ (the rule) holds, while $S\\Rightarrow\\neg C$ fails. Stopping rain removes one reason to cancel, not every reason. Not an equivalent form, so the statement is False.`,
+      `**C.** → True
+
+Rewrite $\\neg S\\Rightarrow C$ as an OR. The identity is $A\\Rightarrow B\\equiv\\neg A\\lor B$, so
+
+$$\\neg(\\neg S)\\lor C\\equiv S\\lor C$$
+
+OR is symmetric, so $C\\lor S$ is the same formula. This is the rule in different clothing, not a stronger promise, so the statement is True.`,
+      `**D.** → False
+
+Once $S$ is true, the antecedent $\\neg S$ of the rule is false, so the implication is silent. It does not assert $\\neg C$. A power cut can still cancel the concert after the rain stops. No guarantee that the concert happens. Reading a rescue into the escape clause is the trap, so the statement is False.`,
+      `**E.** → True
+
+The contrapositive of $\\neg S\\Rightarrow C$ is $\\neg C\\Rightarrow S$. If the concert is not cancelled, the rain must have stopped before 6 PM. A concert that went ahead proves $S$. This is the one relative that always shares the original's truth value, so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 18,
-    solution_overview:
-      "“Cancelled **unless** the rain stops” is a promise with an escape clause. The escape clause is $S$ (“the rain stops before 6 PM”), and if the escape clause does not apply, the cancellation is guaranteed:\n\n$$\\neg S \\Rightarrow C$$\n\nThat single implication can be dressed in three outfits, all saying the same thing:\n\n• $\\neg S \\Rightarrow C$, the rain does not stop, so the concert is cancelled;\n\n• $S \\lor C$, at least one of “the rain stopped” and “the concert was cancelled” is true, using $A \\Rightarrow B \\equiv \\neg A \\lor B$;\n\n• $\\neg C \\Rightarrow S$, the contrapositive: a concert that went ahead proves the rain stopped in time.\n\n**What the rule never covers** is the day the rain *does* stop. There the promise falls silent, so the concert may go ahead, or be cancelled for a completely unrelated reason, say a power failure. Any reading that forbids that second possibility, such as $S \\Rightarrow \\neg C$, is claiming more than the organizer ever said.",
+    solution_overview: `"Cancelled unless the rain stops" is a promise with an escape clause. Write $C$ for "the concert is cancelled" and $S$ for "the rain stops before 6 PM." If the escape $S$ fails, cancellation is guaranteed:
+
+$$\\neg S\\Rightarrow C$$
+
+The rewrite $A\\Rightarrow B\\equiv\\neg A\\lor B$ turns this into $S\\lor C$. The contrapositive is $\\neg C\\Rightarrow S$. When $S$ is true the original implication is silent, so it does not assert $\\neg C$.`,
   },
   {
-    id: "math-1-62",
-    case_id: "MATH 1.62",
-    title: "A senior transit discount rule",
-    subsection: "1.3",
-    context:
-      "A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an annual income below \\$20,000). Rider P is 70, has no disability, and earns \\$18,000. Rider Q is 67, has a qualifying disability, and earns \\$50,000.",
+    id: `math-1-62`,
+    case_id: `MATH 1.62`,
+    title: `A senior transit discount rule`,
+    subsection: `1.3`,
+    context: `A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an annual income below \\$20,000). Rider P is 70, has no disability, and earns \\$18,000. Rider Q is 67, has a qualifying disability, and earns \\$50,000.`,
     statements: [
-      "Rider P qualifies for the discount.",
-      "Rider Q, who is 67, has a qualifying disability, but earns \\$50,000, does NOT qualify for the discount because the income exceeds \\$20,000.",
-      "Having an income above \\$20,000 automatically disqualifies a senior rider from the discount, even if they have a qualifying disability.",
-      "There exists a scenario where a 70-year-old rider with no disability and an income of \\$25,000 would NOT qualify for the discount.",
-      "Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or income status.",
+      `Rider P qualifies for the discount.`,
+      `Rider Q, who is 67, has a qualifying disability, but earns \\$50,000, does NOT qualify for the discount because the income exceeds \\$20,000.`,
+      `Having an income above \\$20,000 automatically disqualifies a senior rider from the discount, even if they have a qualifying disability.`,
+      `There exists a scenario where a 70-year-old rider with no disability and an income of \\$25,000 would NOT qualify for the discount.`,
+      `Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or income status.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nRider P is 70, so the age gate opens, and the \\$18,000 income fills the bracket on its own. **P gets the discount.**\n\nThe discount is $A \\land (D \\lor L)$. Rider P is 70 (so $A$ holds), has no disability ($D$ false), and earns \\$18,000 (so $L$ holds). The age gate opens and the income fills the bracket, so $A \\land (D \\lor L)$ is true. P qualifies.\n\nPlug rider P into $A\\land(D\\lor L)$:\n\n- age $70\\ge 65$, so $A$ true;\n- no disability, so $D$ false;\n- income $\\$18,000<\\$20,000$, so $L$ true.\n\nThen $D\\lor L=\\text{F}\\lor\\text{T}=\\text{T}$, and $A\\land(D\\lor L)=\\text{T}\\land\\text{T}=\\text{T}$. P qualifies.",
-      "**B.** → False\n\nThe arithmetic in the statement is fine, \\$50,000 really does fail the income test, but the logic is not. The bracket is an **or**, and Q's qualifying disability satisfies it single-handedly, so **Q does qualify** and the claim is wrong. Explicitly: $A$ is true (age 67), $D$ is true, $L$ is false, yet $D \\lor L$ is still true, and $A \\land (D \\lor L)$ holds.\n\nRider Q: age $67\\ge 65$ ($A$ true), qualifying disability ($D$ true), income $\\$50,000$ so $L$ false. Then $D\\lor L=\\text{T}\\lor\\text{F}=\\text{T}$, and $A\\land(D\\lor L)$ is true. Q does qualify. The claim that income above $\\$20,000$ blocks Q ignores the OR in the bracket.",
-      "**C.** → False\n\nRider Q is the counterexample in person: a high income alongside a disability still clears the bracket. The income threshold is only one of two interchangeable options inside $D \\lor L$; failing $L$ while $D$ holds leaves the OR true. **An income above \\$20,000 disqualifies nobody by itself.**\n\nQ is the counterexample: income $\\$50,000$ fails $L$, yet $D$ is true, so $D\\lor L$ remains true and the discount still applies. Failing the income test does not by itself disqualify a senior who has a qualifying disability.",
-      "**D.** → True\n\nAge 70 opens the gate, but with no disability and \\$25,000 of income both bracket options are false, so $D \\lor L$ fails. **This rider is refused, so the scenario described genuinely exists.**\n\nInvent the rider in the claim: age $70$ ($A$ true), no disability ($D$ false), income $\\$25,000$ so $L$ false. Then $D\\lor L=\\text{F}\\lor\\text{F}=\\text{F}$, and $A\\land(D\\lor L)$ is false. That 70-year-old does not qualify, so the scenario exists.",
-      "**E.** → False\n\nAge is the gate everyone must pass, not a ticket that skips the rest of the rule. The 70-year-old just described has the age and nothing else, and gets no discount, so **age is necessary but far from sufficient.** Being at least 65 makes $A$ true; without $D \\lor L$ the conjunction still fails.\n\nAge alone makes $A$ true but leaves the bracket untouched. The rider in D has $A$ true and $D\\lor L$ false, so the conjunction fails. Being at least $65$ is necessary, not sufficient.",
+      `**A.** → True
+
+Rider P: age $70\\ge 65$, so $A$ is true; no disability, so $D$ is false; income $\\$18{,}000<\\$20{,}000$, so $L$ is true. Then $D\\lor L$ holds on the income half, and the conjunction holds:
+
+$$A\\land(D\\lor L)=\\mathrm{T}\\land(\\mathrm{F}\\lor\\mathrm{T})=\\mathrm{T}$$
+
+The bracket is an or; income alone fills it. Disability is not required once $L$ holds, so the statement is True.`,
+      `**B.** → False
+
+Q is $67$, has a qualifying disability, and earns $\\$50{,}000$. Then $A$ is true, $D$ is true, and $L$ is false, so $D\\lor L$ is true on the disability half. Q does qualify. The claim that income above $\\$20{,}000$ blocks Q ignores the OR in the bracket. Failing $L$ while $D$ holds leaves the OR true, so the statement is False.`,
+      `**C.** → False
+
+Q is the counterexample: income $\\$50{,}000$ fails $L$, yet $D$ is true, so the discount still applies. The income threshold is only one of two interchangeable options inside $D\\lor L$. An income above $\\$20{,}000$ disqualifies nobody by itself, so the statement is False.`,
+      `**D.** → True
+
+Invent the rider: age $70$ ($A$ true), no disability, income $\\$25{,}000$ so both bracket options are false. Then $D\\lor L$ fails and the conjunction is false. That $70$-year-old does not qualify, so the scenario exists. Age opens the gate; it does not fill the bracket, so the statement is True.`,
+      `**E.** → False
+
+Age alone makes $A$ true but leaves the bracket untouched. A $70$-year-old with no disability and income $\\$25{,}000$ has $A$ true and $D\\lor L$ false, so the conjunction fails. Being at least $65$ is necessary, not sufficient. A ticket that skipped the hardship tests would need a different rule, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 19,
-    solution_overview:
-      "The discount rule has one gate and one bracket: a rider must be at least 65 **and** satisfy at least one of the two hardship conditions. Writing $A$ for the age test, $D$ for a qualifying disability and $L$ for income below \\$20,000,\n\n$$\\text{Discount} \\Leftrightarrow A \\land (D \\lor L)$$\n\nThe bracket is an **or**, so $D$ and $L$ are interchangeable and either one alone fills it. The age test sits outside the bracket, where nothing can substitute for it.\n\n| Rider | $A$ (65+) | $D$ (disability) | $L$ (income < \\$20k) | $D \\lor L$ | Discount? |\n| --- | --- | --- | --- | --- | --- |\n| P, 70, none, \\$18,000 | true | false | true | true | **yes** |\n| Q, 67, yes, \\$50,000 | true | true | false | true | **yes** |\n| 70, none, \\$25,000 | true | false | false | false | **no** |\n\nThe third row is not one of the given riders; it is a rider we invent to see what happens when the bracket is empty and only the age gate is passed.",
+    solution_overview: `The discount applies to riders who are at least $65$ and satisfy at least one of two hardship tests. Write $A$ for age at least $65$, $D$ for a qualifying disability, and $L$ for income below $\\$20{,}000$:
+
+$$\\text{Discount}\\Leftrightarrow A\\land(D\\lor L)$$
+
+The bracket is an or, so $D$ and $L$ are interchangeable. The age test sits outside the bracket, where nothing can substitute for it. Rider P is $70$, no disability, income $\\$18{,}000$. Rider Q is $67$, has a disability, income $\\$50{,}000$.`,
   },
   {
-    id: "math-1-63",
-    case_id: "MATH 1.63",
-    title: 'Consider the claim: "For all positive integers n, 1 + 2 + ... + n = n(',
-    subsection: "1.3",
-    context: 'Consider the claim: "For all positive integers n, 1 + 2 +... + n = n(n+1)/2."',
+    id: `math-1-63`,
+    case_id: `MATH 1.63`,
+    title: `Proving the Triangular-Number Formula by Induction`,
+    subsection: `1.3`,
+    context: `Consider the claim: "For all positive integers n, 1 + 2 +... + n = n(n+1)/2."`,
     statements: [
-      "The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds",
-      "The inductive step assumes the formula holds for n = k and proves it for n = k + 1",
-      "Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction",
-      "If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the inductive step",
-      "For n = 10, the formula gives 1+2+...+10 = 55",
+      `The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds`,
+      `The inductive step assumes the formula holds for n = k and proves it for n = k + 1`,
+      `Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction`,
+      `If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the inductive step`,
+      `For n = 10, the formula gives 1+2+...+10 = 55`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe claim ranges over the positive integers, so the first domino is $n = 1$, and the check is the one quoted: $1 = \\frac{1 \\cdot 2}{2} = 1$. **Right base case, correctly verified.**",
-      "**B.** → True\n\nAssume at $k$, prove at $k+1$, that is the definition of the inductive step, and it is what makes the dominoes topple in sequence. **The description is accurate.**\n\nThe claim is $\\forall n$, so after the $n=1$ check you still need a step that covers every later integer. That step is: assume the formula at $n=k$, then prove it at $n=k+1$. The statement describes exactly that move.\n\nAfter verifying $n=1$, the remaining infinitely many $n$ are covered by one step: assume the formula at $n=k$, then prove it at $n=k+1$. That is the inductive step as stated.",
-      "**C.** → False\n\nFive checks are five dominoes pushed over by hand; the sixth is still standing, and so are infinitely many behind it. Without the general step from $k$ to $k+1$ there is no proof, only evidence. Checking $n = 1$ through $n = 5$ never even mentions $n = 6$, let alone every larger $n$. **This is not a proof by induction.**\n\nChecking $n=1,2,3,4,5$ confirms five instances and says nothing about $n=6$. A proof by induction needs the general step from $k$ to $k+1$. Five numerical checks are evidence, not a complete inductive proof.",
-      "**D.** → True\n\nThe algebra quoted is precisely the inductive step: add $(k+1)$ to the hypothesis, factor, and $\\frac{(k+1)(k+2)}{2}$ appears, which is the formula with $n = k+1$ substituted. Writing the middle line out: $\\frac{k(k+1)}{2} + (k+1) = \\frac{k(k+1) + 2(k+1)}{2} = \\frac{(k+1)(k+2)}{2}$. **The step is confirmed.**",
-      "**E.** → True\n\nSubstituting $n = 10$ gives $\\frac{10 \\cdot 11}{2} = 55$. **The value checks out.**\n\nThe claimed formula is $1+2+\\cdots+n=\\frac{n(n+1)}{2}$. Plug in the given $n=10$: $\\frac{10\\cdot 11}{2}=55$. That is the value stated, so the check holds.",
+      `**A.** → True
+
+The claim ranges over the positive integers, so the first domino is $n=1$. Check both sides:
+
+$$1=\\frac{1\\cdot 2}{2}=1$$
+
+Right base case, correctly verified. Starting at $n=0$ would be a different domain; starting at $n=2$ would skip the first positive integer, so the statement is True.`,
+      `**B.** → True
+
+After verifying $n=1$, the remaining infinitely many $n$ are covered by one step: assume the formula at $n=k$, then prove it at $n=k+1$. That is the inductive step as stated. Checking $k$ and $k+1$ as two numerical examples is not the same as a general step from $k$ to $k+1$, so the statement is True.`,
+      `**C.** → False
+
+Checking $n=1,2,3,4,5$ confirms five instances and says nothing about $n=6$. A proof by induction needs the general step from $k$ to $k+1$. Five numerical checks are evidence, not a complete inductive proof. Infinitely many unchecked $n$ remain, so the statement is False.`,
+      `**D.** → True
+
+Assume the formula at $n=k$ and add the next term. One algebraic step at a time:
+
+$$\\frac{k(k+1)}{2}+(k+1)=\\frac{k(k+1)+2(k+1)}{2}$$
+
+$$=\\frac{(k+1)(k+2)}{2}$$
+
+That is the formula at $n=k+1$, so the inductive step holds, so the statement is True.`,
+      `**E.** → True
+
+Substitute $n=10$ into the closed form:
+
+$$\\frac{10\\cdot 11}{2}=55$$
+
+That is a sanity check on the formula, not a substitute for the inductive step. Adding $1$ through $10$ by hand would agree, but the formula is the point, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 20,
-    solution_overview:
-      "The claim packs infinitely many cases into one formula:\n\n$$1 + 2 + \\cdots + n = \\frac{n(n+1)}{2}$$\n\n**Induction** proves such a claim with two moves, like a line of dominoes: knock over the first one (the **base case**), then show that any falling domino knocks over its neighbour (the **inductive step**).\n\n**Base case, $n = 1$.** The left side is just $1$, and the right side is $\\frac{1 \\cdot 2}{2} = 1$. They agree, so the first domino falls.\n\n**Inductive step.** Assume the formula holds at some $n = k$, this assumption is called the *induction hypothesis*, and add the next number to both sides:\n\n$$1 + 2 + \\cdots + k + (k+1) = \\frac{k(k+1)}{2} + (k+1) = \\frac{k(k+1) + 2(k+1)}{2} = \\frac{(k+1)(k+2)}{2}$$\n\nThe result is the original formula with $n$ replaced by $k+1$, so the neighbouring domino really does fall.\n\n**Why examples are no substitute.** Checking $n = 1, 2, 3, 4, 5$ topples five dominoes by hand and says nothing about the sixth; the inductive step is what covers all of them at once. As a sanity check on the formula itself, $n = 10$ gives $\\frac{10 \\cdot 11}{2} = 55$.",
+    solution_overview: `The claim is that for every positive integer $n$,
+
+$$1+2+\\cdots+n=\\frac{n(n+1)}{2}$$
+
+Induction uses two moves: a base case at the first positive integer $n=1$, and an inductive step that assumes the formula at $n=k$ and proves it at $n=k+1$. Checking finitely many numerical values is evidence, not a complete inductive proof. Substituting a particular $n$ into the closed form is a sanity check, not a substitute for the step.`,
   },
   {
-    id: "math-1-64",
-    case_id: "MATH 1.64",
-    title: 'Consider the (debatable) economic claim : "If inflation increases, the',
-    subsection: "1.3",
-    context:
-      'Consider the economic claim: "If inflation increases, then unemployment decreases." Decide whether each statement is logically equivalent to this claim.',
+    id: `math-1-64`,
+    case_id: `MATH 1.64`,
+    title: `Logical Equivalents of an Inflation-Unemployment Claim`,
+    subsection: `1.3`,
+    context: `Consider the economic claim: "If inflation increases, then unemployment decreases." Decide whether each statement is logically equivalent to this claim.`,
     statements: [
-      '"For unemployment to decrease, inflation must increase" is equivalent to the original claim.',
-      '"A sufficient condition for unemployment to decrease is that inflation increases" is equivalent to the original claim.',
-      '"Unemployment can only decrease if inflation increases" is equivalent to the original claim.',
-      '"If unemployment does not decrease, then inflation does not increase" is equivalent to the original claim.',
-      '"A necessary condition for inflation to increase is that unemployment decreases" is equivalent to the original claim.',
+      `"For unemployment to decrease, inflation must increase" is equivalent to the original claim.`,
+      `"A sufficient condition for unemployment to decrease is that inflation increases" is equivalent to the original claim.`,
+      `"Unemployment can only decrease if inflation increases" is equivalent to the original claim.`,
+      `"If unemployment does not decrease, then inflation does not increase" is equivalent to the original claim.`,
+      `"A necessary condition for inflation to increase is that unemployment decreases" is equivalent to the original claim.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\n“Inflation *must* increase for unemployment to decrease” makes inflation the necessary condition, and the necessary condition is the one the arrow points at, so this sentence is $Q \\Rightarrow P$. That flips the original $P \\Rightarrow Q$ into its converse. **That is the converse, a different claim.**\n\nLet $P$ be “inflation increases” and $Q$ be “unemployment decreases.” “For $Q$ to happen, $P$ must happen” makes $P$ necessary for $Q$, which is $Q\\Rightarrow P$. The original is $P\\Rightarrow Q$. That is the converse, not an equivalent form.",
-      "**B.** → True\n\n“Sufficient condition” names the tail of the arrow. Inflation increasing is offered as the sufficient condition and falling unemployment as what follows, which is $P \\Rightarrow Q$ itself. **Same claim, new wording.**\n\n“$P$ is sufficient for $Q$” is $P\\Rightarrow Q$. The original claim is “if inflation increases, then unemployment decreases,” the same arrow. Equivalent wording.",
-      "**C.** → False\n\n“Only if” is the phrase most often misread. “$Q$ only if $P$” restricts $Q$ to situations where $P$ already holds, giving $Q \\Rightarrow P$, the converse once again. Compare: the original says inflation rising is enough for unemployment to fall; “only if” says unemployment can fall *only when* inflation rises. **Not equivalent to the original.**\n\n“$Q$ can only decrease if $P$” is “$Q$ only if $P$,” i.e. $Q\\Rightarrow P$. Again the converse. The original does not restrict unemployment decreases to inflation-increase days.",
-      "**D.** → True\n\nBoth halves have been negated and swapped, producing $\\neg Q \\Rightarrow \\neg P$: the contrapositive, which always matches the original in truth value. **A faithful rewording.**\n\nThe original claim is $P \\Rightarrow Q$: if inflation increases, unemployment decreases. The sentence offered negates both halves and swaps them: “if unemployment does not decrease, then inflation does not increase.” That is $\\neg Q \\Rightarrow \\neg P$, the contrapositive of the original, so the two are equivalent.\n\nNegate both halves and swap: $\\neg Q\\Rightarrow\\neg P$, “if unemployment does not decrease, then inflation does not increase.” That is the contrapositive of $P\\Rightarrow Q$, hence equivalent.",
-      "**E.** → True\n\nThis time the necessary condition is falling unemployment, so the arrow must point at it: $P \\Rightarrow Q$. Saying “$Q$ is necessary for $P$” is exactly the original arrow, not the converse. **It says exactly what the original says.**\n\n“$Q$ is necessary for $P$” is $P\\Rightarrow Q$: the arrow points at the necessary condition. Falling unemployment is named as necessary for inflation to increase, which is exactly the original implication.",
+      `**A.** → False
+
+"For $Q$ to happen, $P$ must happen" makes $P$ necessary for $Q$, which is $Q\\Rightarrow P$. The original is $P\\Rightarrow Q$. That is the converse, not an equivalent form. Inflation *must* increase for unemployment to decrease is the reverse arrow, so the statement is False.`,
+      `**B.** → True
+
+"$P$ is sufficient for $Q$" is $P\\Rightarrow Q$. The original claim is "if inflation increases, then unemployment decreases," the same arrow. Sufficient names the tail of the arrow. Equivalent wording, not a stronger claim, so the statement is True.`,
+      `**C.** → False
+
+"$Q$ can only decrease if $P$" is "$Q$ only if $P$," i.e. $Q\\Rightarrow P$. Again the converse. The original does not restrict unemployment decreases to inflation-increase days. "Only if" is the phrase most often misread as the original arrow, so the statement is False.`,
+      `**D.** → True
+
+Negate both halves and swap: $\\neg Q\\Rightarrow\\neg P$, "if unemployment does not decrease, then inflation does not increase." That is the contrapositive of $P\\Rightarrow Q$, hence equivalent. It is the one rewriting that always matches, so the statement is True.`,
+      `**E.** → True
+
+"$Q$ is necessary for $P$" is $P\\Rightarrow Q$: the arrow points at the necessary condition. Falling unemployment is named as necessary for inflation to increase, which is exactly the original implication. Necessary names the head of the arrow, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 21,
-    solution_overview:
-      "Every statement here is the same claim in different clothing, so the work is translation rather than calculation. Take $P$ = “inflation increases” and $Q$ = “unemployment decreases”; the original is $P \\Rightarrow Q$.\n\nOnly two sentences are ever equivalent to $P \\Rightarrow Q$: the statement itself, and its contrapositive $\\neg Q \\Rightarrow \\neg P$. The converse $Q \\Rightarrow P$ is a different claim no matter how natural it sounds in English.\n\n**A dictionary for the awkward phrases:**\n\n| English phrase | Symbols |\n| --- | --- |\n| “$P$ is sufficient for $Q$” | $P \\Rightarrow Q$ |\n| “$Q$ is necessary for $P$” | $P \\Rightarrow Q$ |\n| “$P$ is necessary for $Q$”, “$P$ must happen for $Q$ to happen” | $Q \\Rightarrow P$ |\n| “$Q$ only if $P$”, “$Q$ can only happen if $P$” | $Q \\Rightarrow P$ |\n| “if not $Q$, then not $P$” | $\\neg Q \\Rightarrow \\neg P$ |\n\nThe pattern worth memorising: **the necessary condition is the one the arrow points at, and the sufficient condition is the one it starts from.**",
+    solution_overview: `Take $P$ = "inflation increases" and $Q$ = "unemployment decreases". The original claim is $P\\Rightarrow Q$.
+
+Only two sentences are equivalent to $P\\Rightarrow Q$: the statement itself, and its contrapositive $\\neg Q\\Rightarrow\\neg P$. The converse $Q\\Rightarrow P$ is a different claim. Vocabulary: "$P$ is sufficient for $Q$" is $P\\Rightarrow Q$; "$Q$ is necessary for $P$" is $P\\Rightarrow Q$; "$P$ must happen for $Q$" and "$Q$ only if $P$" are $Q\\Rightarrow P$. The necessary condition is the one the arrow points at; the sufficient condition is the one it starts from.`,
   },
   {
-    id: "math-1-65",
-    case_id: "MATH 1.65",
-    title: "Airline delay chain",
-    subsection: "1.3",
-    context:
-      "An airline's operations log records:\n\n(1) If Flight 202 is delayed, then Flight 305 is cancelled.\n\n(2) If Flight 305 is cancelled, then the ground crew works overtime.\n\n(3) Flight 202 is delayed today.",
+    id: `math-1-65`,
+    case_id: `MATH 1.65`,
+    title: `Airline delay chain`,
+    subsection: `1.3`,
+    context: `An airline's operations log records:
+
+(1) If Flight 202 is delayed, then Flight 305 is cancelled.
+
+(2) If Flight 305 is cancelled, then the ground crew works overtime.
+
+(3) Flight 202 is delayed today.`,
     statements: [
-      "Flight 305 is cancelled today.",
-      "The ground crew works overtime today.",
-      "Statement (2) is essential to concluding that the crew works overtime today - without it, that conclusion could not be reached from (1) and (3) alone.",
-      "If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.",
-      "There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime.",
+      `Flight 305 is cancelled today.`,
+      `The ground crew works overtime today.`,
+      `Statement (2) is essential to concluding that the crew works overtime today - without it, that conclusion could not be reached from (1) and (3) alone.`,
+      `If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.`,
+      `There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nRule (1) is loaded and its trigger has fired: Flight 202 is delayed, so modus ponens delivers the cancellation. **Flight 305 is cancelled today.**\n\nThe log gives $D \\Rightarrow C$ and today's observation that $D$ is true (Flight 202 is delayed). Modus ponens on that pair yields $C$. Flight 305 is cancelled today.\n\nPremises: $D\\Rightarrow C$ and $D$ true (Flight 202 delayed). Modus ponens yields $C$. Flight 305 is cancelled today.",
-      "**B.** → True\n\nThe cancellation just established becomes the trigger for rule (2), which hands over the overtime. **The ground crew works overtime today.**\n\nFrom A we already have $C$ true, and clue (2) is $C \\Rightarrow O$. The same rule fires again: cancellation forces overtime. The ground crew works overtime today.\n\nFrom A, $C$ is true. Premise (2) is $C\\Rightarrow O$. Modus ponens again yields $O$. The ground crew works overtime today.",
-      "**C.** → True\n\nOvertime appears in exactly one clue. Strip (2) away and the reasoning still reaches the cancellation but has no way to travel further, because (1) and (3) speak only of the delay and the cancellation. With only $D \\Rightarrow C$ and $D$, modus ponens yields $C$ and then stops; the letter $O$ never appears. **Clue (2) is the indispensable bridge.**\n\nClues (1) and (3) mention only $D$ and $C$. From those two you obtain $C$ and then stop: the letter $O$ never appears. Without (2) there is no bridge from cancellation to overtime.",
-      "**D.** → False\n\nThis reads rule (1) as if a delay were the *only* thing that could cancel Flight 305. A conditional with a false “if” part is silent, not negative, the flight might still be cancelled by a crew shortage. From $\\neg D$ you cannot extract $\\neg C$; that would be the inverse, which is not equivalent to (1). **The guarantee claimed here does not exist.**\n\nIf $D$ is false, rule (1) has a false antecedent and is silent. It does not yield $\\neg C$. Inferring “no delay, so no cancellation” is the inverse of (1), which is not equivalent. A crew shortage could still cancel Flight 305.",
-      "**E.** → False\n\nThe three clues force the cancellation and then the overtime, so a day without overtime would have to break clue (2) outright. Once $D$ is true, (1) forces $C$, and (2) forces $O$; there is no leftover freedom to set $O$ false while keeping all three clues. **No scenario satisfying (1), (2) and (3) leaves the crew off duty.**\n\nFrom (3), $D$ is true. Then (1) forces $C$, and (2) forces $O$. Any assignment with $O$ false would have to break (2) once $C$ is true. There is no model of (1), (2), and (3) in which the crew is off duty.",
+      `**A.** → True
+
+Premises: $D\\Rightarrow C$ and $D$ true (Flight $202$ delayed). Modus ponens yields $C$. Flight $305$ is cancelled today. Rule (1) is loaded and its trigger has fired. No other clue is needed for this one conclusion, so the statement is True.`,
+      `**B.** → True
+
+From $D\\Rightarrow C$ and $D$ true, cancellation $C$ follows. Premise (2) is $C\\Rightarrow O$. Modus ponens again yields $O$. The ground crew works overtime today. The cascade is $D\\to C\\to O$, so the statement is True.`,
+      `**C.** → True
+
+Clues (1) and (3) mention only $D$ and $C$. From those two you obtain $C$ and then stop: the letter $O$ never appears. Without (2) there is no bridge from cancellation to overtime. Clue (2) is the indispensable bridge, so the statement is True.`,
+      `**D.** → False
+
+If $D$ is false, rule (1) has a false antecedent and is silent. It does not yield $\\neg C$. Inferring "no delay, so no cancellation" is the inverse of (1), which is not equivalent. A crew shortage could still cancel Flight $305$. The guarantee claimed here does not exist, so the statement is False.`,
+      `**E.** → False
+
+From (3), $D$ is true. Then (1) forces $C$, and (2) forces $O$. Any assignment with $O$ false would have to break (2) once $C$ is true. There is no model of (1), (2), and (3) in which the crew is off duty. The three clues leave no leftover freedom, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 22,
-    solution_overview:
-      "Three facts sit in the log: two rules and one observation.\n\n$$D \\Rightarrow C, \\qquad C \\Rightarrow O, \\qquad D \\text{ is true}$$\n\nwith $D$ = Flight 202 is delayed, $C$ = Flight 305 is cancelled, $O$ = the ground crew works overtime.\n\nThe engine is **modus ponens**: when you know “if $A$ then $B$” and you also know $A$, you may write down $B$. Fire it twice and the facts cascade, the delay is real, so rule (1) hands over the cancellation; the cancellation is now real, so rule (2) hands over the overtime.\n\n$$D \\;\\longrightarrow\\; C \\;\\longrightarrow\\; O$$\n\nTwo further checks are worth making. **Is any clue load-bearing?** Rules (1) and (3) mention only $D$ and $C$, the word “overtime” never appears in them, so without rule (2) the reasoning stops dead at the cancellation. **What would a quiet day tell us?** If Flight 202 ran on time, rule (1) would have a false “if” part and would simply fall silent: Flight 305 could still be cancelled by a crew shortage.",
+    solution_overview: `Three facts sit in the log. Write $D$ for Flight $202$ delayed, $C$ for Flight $305$ cancelled, and $O$ for overtime:
+
+$$D\\Rightarrow C,\\qquad C\\Rightarrow O,\\qquad D\\text{ is true}$$
+
+Modus ponens: from $A\\Rightarrow B$ and $A$, infer $B$. Rules (1) and (3) mention only $D$ and $C$. If $D$ is false, rule (1) has a false antecedent and is silent.`,
   },
   {
-    id: "math-1-66",
-    case_id: "MATH 1.66",
-    title: "A professor's claim is : \"If a student studies at least 10 hours, they",
-    subsection: "1.3",
-    context: 'A professor claims: "If a student studies at least 10 hours, they pass the exam."',
+    id: `math-1-66`,
+    case_id: `MATH 1.66`,
+    title: `Negation, Converse, and Contrapositive of a Study-Hours Rule`,
+    subsection: `1.3`,
+    context: `A professor claims: "If a student studies at least 10 hours, they pass the exam."`,
     statements: [
-      'The negation of this claim is: "A student studies at least 10 hours and does not pass."',
-      'The converse, "If a student passes, they studied at least 10 hours," must be true whenever the original claim is true.',
-      "Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the converse, but not to the original claim.",
-      'The inverse, "If a student studies less than 10 hours, they do not pass," is the logical equivalent of the contrapositive.',
-      "If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less than 10 hours.",
+      `The negation of this claim is: "A student studies at least 10 hours and does not pass."`,
+      `The converse, "If a student passes, they studied at least 10 hours," must be true whenever the original claim is true.`,
+      `Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the converse, but not to the original claim.`,
+      `The inverse, "If a student studies less than 10 hours, they do not pass," is the logical equivalent of the contrapositive.`,
+      `If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less than 10 hours.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nA student who studied and still failed is the unique way the professor's promise can break, and $P \\land \\neg Q$ is that student written in symbols. **The negation is correctly stated.**\n\nThe professor asserts $P\\Rightarrow Q$. The unique false row is $P$ true and $Q$ false: studied at least $10$ hours and did not pass. That is $P\\land\\neg Q$, matching the quoted negation.",
-      "**B.** → False\n\nThe converse claims that *only* 10-hour students pass, which the professor never said, Anna passed on prior knowledge alone. Checking symbols: Anna has $P$ false and $Q$ true, so $Q \\Rightarrow P$ fails while $P \\Rightarrow Q$ is untouched. **A true claim does not make its converse true.**\n\nThe converse is $Q\\Rightarrow P$. Anna: $P$ false (no studying), $Q$ true (pass). Then $Q\\Rightarrow P$ fails, while $P\\Rightarrow Q$ holds because its antecedent is false. A true original does not force a true converse.",
-      "**C.** → True\n\nAnna is $P$ false, $Q$ true. That combination is fatal to the converse “every passer studied 10 hours”, while the original, which addresses only students who did study, never makes a promise about her. The original is false only for a studier who fails; Anna is the opposite shape. **Both halves of the statement hold.**\n\nAnna is $P$ false, $Q$ true. The converse “every passer studied $10$ hours” is false of her. The original only constrains students with $P$ true, so she is outside its scope. She is a counterexample to the converse and not to the original.",
-      "**D.** → False\n\nInverse and contrapositive are easy to confuse because both carry two negations, but their arrows run in opposite directions: $\\neg P \\Rightarrow \\neg Q$ against $\\neg Q \\Rightarrow \\neg P$. Anna makes the first false and leaves the second true. The inverse says “under 10 hours implies fail”; Anna studied under 10 hours and passed, so the inverse dies while the contrapositive (which talks about failures) never sees her. **They are not the same statement**, the inverse pairs with the converse, not with the contrapositive.\n\nThe inverse is $\\neg P\\Rightarrow\\neg Q$. The contrapositive is $\\neg Q\\Rightarrow\\neg P$. The arrows run opposite ways. Anna makes the inverse false ($\\neg P$ true, $\\neg Q$ false) and leaves the contrapositive untouched (she is not a failure). They are not equivalent.",
-      "**E.** → True\n\nA failure is $\\neg Q$, and the contrapositive $\\neg Q \\Rightarrow \\neg P$ inherits the professor's guarantee, so it delivers $\\neg P$. **The inference is valid.**\n\nThe professor's claim is $P \\Rightarrow Q$. Its contrapositive is $\\neg Q \\Rightarrow \\neg P$: anyone who failed studied under 10 hours. The claim here starts from a known failure ($\\neg Q$) and asks whether $\\neg P$ follows. That is exactly the contrapositive, so the inference is valid.\n\nFrom a known failure $\\neg Q$, the contrapositive $\\neg Q\\Rightarrow\\neg P$ yields $\\neg P$: the student studied less than $10$ hours. That is modus tollens on the professor’s claim, a valid inference.",
+      `**A.** → True
+
+The professor asserts $P\\Rightarrow Q$. The unique false row is $P$ true and $Q$ false: studied at least $10$ hours and did not pass. That is $P\\land\\neg Q$, matching the quoted negation. It is a single counterexample, not another if-then rule, so the statement is True.`,
+      `**B.** → False
+
+The converse is $Q\\Rightarrow P$. Anna: $P$ false (no studying), $Q$ true (pass). Then $Q\\Rightarrow P$ fails, while $P\\Rightarrow Q$ holds because its antecedent is false. A true original does not force a true converse. The professor never said that *only* $10$-hour students pass, so the statement is False.`,
+      `**C.** → True
+
+Anna is $P$ false, $Q$ true. The converse "every passer studied $10$ hours" is false of her. The original only constrains students with $P$ true, so she is outside its scope. She is a counterexample to the converse and not to the original. Both halves of the statement hold, so the statement is True.`,
+      `**D.** → False
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$. The contrapositive is $\\neg Q\\Rightarrow\\neg P$. The arrows run opposite ways. Anna makes the inverse false ($\\neg P$ true, $\\neg Q$ false) and leaves the contrapositive untouched (she is not a failure). They are not equivalent; the inverse pairs with the converse, so the statement is False.`,
+      `**E.** → True
+
+From a known failure $\\neg Q$, the contrapositive $\\neg Q\\Rightarrow\\neg P$ yields $\\neg P$: the student studied less than $10$ hours. That is modus tollens on the professor's claim. The inference is valid because the contrapositive inherits the original's guarantee, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 23,
-    solution_overview:
-      "$P$ = “the student studies at least 10 hours”, $Q$ = “the student passes”. The professor asserts $P \\Rightarrow Q$: ten hours buys a pass.\n\n**Breaking that promise** takes one very specific student, one who put in the hours and failed anyway. In symbols the negation is $P \\land \\neg Q$, and note that it is not another if-then rule but a single counterexample.\n\n**Anna has the opposite shape:** she did not study ($P$ false) yet passed ($Q$ true). Feed her to each version of the claim in turn.\n\nThe **original** never speaks about students who skipped the studying, so Anna falls outside its scope and it survives her intact.\n\nThe **converse** $Q \\Rightarrow P$, “every passer studied 10 hours”, is refuted by her on the spot.\n\nThe **inverse** $\\neg P \\Rightarrow \\neg Q$, “skip the hours and you fail”, is refuted by her too. That is no coincidence: converse and inverse are contrapositives of each other, so they always stand or fall together.\n\nThe **contrapositive** $\\neg Q \\Rightarrow \\neg P$, “anyone who failed studied under 10 hours”, is untouched, and it is the one form the professor's claim actually guarantees.",
+    solution_overview: `Write $P$ for "the student studies at least $10$ hours" and $Q$ for "the student passes." The professor asserts $P\\Rightarrow Q$.
+
+The unique false row of an implication is $P\\land\\neg Q$. The converse is $Q\\Rightarrow P$, the inverse is $\\neg P\\Rightarrow\\neg Q$, and the contrapositive is $\\neg Q\\Rightarrow\\neg P$. The original pairs with the contrapositive; the converse pairs with the inverse. Anna: no studying ($P$ false) yet passed ($Q$ true).`,
   },
   {
-    id: "math-1-67",
-    case_id: "MATH 1.67",
-    title: "A contract penalty clause",
-    subsection: "1.3",
-    context:
-      "A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.”",
+    id: `math-1-67`,
+    case_id: `MATH 1.67`,
+    title: `A contract penalty clause`,
+    subsection: `1.3`,
+    context: `A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.”`,
     statements: [
-      "Failing to complete the project by the deadline is sufficient for a penalty fee to apply.",
-      "The converse, “If a penalty fee applies, then the contractor missed the deadline,” must also be true simply because the original clause is true.",
-      "The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline,” is logically guaranteed by the original clause.",
-      "The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies,” must also be true given the original clause.",
-      "The inverse of a conditional statement is always logically equivalent to its converse, even though neither is generally equivalent to the original.",
+      `Failing to complete the project by the deadline is sufficient for a penalty fee to apply.`,
+      `The converse, “If a penalty fee applies, then the contractor missed the deadline,” must also be true simply because the original clause is true.`,
+      `The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline,” is logically guaranteed by the original clause.`,
+      `The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies,” must also be true given the original clause.`,
+      `The inverse of a conditional statement is always logically equivalent to its converse, even though neither is generally equivalent to the original.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe missed deadline is the condition and the penalty is the promised consequence, so condition-first gives $F \\Rightarrow P$. **The symbolisation is correct.**\n\nThe clause says: if the contractor misses the deadline, a penalty applies. That is condition $F$ first, consequence $P$ second. “$F$ is sufficient for $P$” is the same arrow $F \\Rightarrow P$. The reading matches the signed clause.\n\nThe clause is $F\\Rightarrow P$: miss the deadline, then a penalty applies. “$F$ is sufficient for $P$” is that same arrow. Missing the deadline is enough, on its own, to trigger the fee.",
-      "**B.** → False\n\nThe converse would make every penalty proof of lateness, and contracts fine people for other things, defective workmanship, for one. An on-time but faulty job has $F$ false and $P$ true: the original $F \\Rightarrow P$ holds, while $P \\Rightarrow F$ fails. **The clause carries no such guarantee.**\n\nThe converse $P\\Rightarrow F$ would make every penalty a proof of lateness. An on-time but faulty job has $F$ false and $P$ true: the original holds, the converse fails. The clause does not guarantee the converse.",
-      "**C.** → True\n\n“No penalty, therefore no missed deadline” is $\\neg P \\Rightarrow \\neg F$, the contrapositive, which is logically the very same statement as the clause. **Signing the clause commits you to this too.**\n\nSwap and negate: $\\neg P\\Rightarrow\\neg F$, “no penalty, therefore the contractor did not miss the deadline.” That is the contrapositive of $F\\Rightarrow P$, so it is guaranteed by the clause.",
-      "**D.** → False\n\nThe inverse promises that punctual contractors are never fined, a promise about *other* breaches that the clause never made. The on-time but faulty job refutes it: $\\neg F$ is true yet $P$ is still true, so $\\neg F \\Rightarrow \\neg P$ fails. **Not guaranteed by the clause.**\n\nThe inverse $\\neg F\\Rightarrow\\neg P$ says punctual contractors are never fined. The same on-time faulty job has $\\neg F$ true and $P$ true, so the inverse fails while the original stands. Not guaranteed.",
-      "**E.** → True\n\nSwap and negate the halves of the converse $P \\Rightarrow F$ and the inverse $\\neg F \\Rightarrow \\neg P$ appears, so each is the contrapositive of the other and their truth values are locked together, here they are false together. The original and its contrapositive form the other locked pair; mixing the two pairs is the usual mix-up. **The pairing described is a general fact about conditionals.**\n\nThe converse $P\\Rightarrow F$ has contrapositive $\\neg F\\Rightarrow\\neg P$, which is the inverse. Those two always share a truth value. Neither pair is equivalent to the original $F\\Rightarrow P$ in general.",
+      `**A.** → True
+
+The clause is $F\\Rightarrow P$: miss the deadline, then a penalty applies. "$F$ is sufficient for $P$" is that same arrow. Missing the deadline is enough, on its own, to trigger the fee. Sufficient names the tail of the signed clause, not every other breach, so the statement is True.`,
+      `**B.** → False
+
+The converse $P\\Rightarrow F$ would make every penalty a proof of lateness. An on-time but faulty job has $F$ false and $P$ true: the original holds, the converse fails. The clause does not guarantee the converse. Contracts fine people for other things, so the statement is False.`,
+      `**C.** → True
+
+Swap and negate: $\\neg P\\Rightarrow\\neg F$, "no penalty, therefore the contractor did not miss the deadline." That is the contrapositive of $F\\Rightarrow P$, so it is guaranteed by the clause. Signing the clause commits you to this rewriting too, so the statement is True.`,
+      `**D.** → False
+
+The inverse $\\neg F\\Rightarrow\\neg P$ says punctual contractors are never fined. The same on-time faulty job has $\\neg F$ true and $P$ true, so the inverse fails while the original stands. The inverse is a promise about *other* breaches that the clause never made, so the statement is False.`,
+      `**E.** → True
+
+The converse $P\\Rightarrow F$ has contrapositive $\\neg F\\Rightarrow\\neg P$, which is the inverse. Those two always share a truth value. Neither pair is equivalent to the original $F\\Rightarrow P$ in general. The pairing described is a general fact about conditionals, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 24,
-    solution_overview:
-      "With $F$ = “the contractor misses the deadline” and $P$ = “a penalty fee applies”, the clause is the conditional $F \\Rightarrow P$: condition first, promised consequence second.\n\nFrom any conditional you can build three relatives, and they fall into **two equivalence pairs**. The first pair holds the original clause together with its contrapositive:\n\n$$F \\Rightarrow P \\;\\equiv\\; \\neg P \\Rightarrow \\neg F$$\n\nThe second pair holds the converse together with the inverse:\n\n$$P \\Rightarrow F \\;\\equiv\\; \\neg F \\Rightarrow \\neg P$$\n\nThe second pairing is easy to verify: swap and negate the two halves of the converse $P \\Rightarrow F$ and the inverse falls out. So converse and inverse always share a truth value, but that shared value has nothing to do with the truth of the clause itself.\n\n**Why the second pair can fail here.** Contracts punish other breaches too. A contractor who finishes on time but delivers faulty work can still be fined: $F$ false, $P$ true. That one situation makes the converse and the inverse false together, while the clause the parties actually signed stands untouched.",
+    solution_overview: `Write $F$ for "the contractor misses the deadline" and $P$ for "a penalty fee applies." The clause is $F\\Rightarrow P$.
+
+Relatives fall into two equivalence pairs:
+
+$$F\\Rightarrow P\\equiv\\neg P\\Rightarrow\\neg F$$
+
+$$P\\Rightarrow F\\equiv\\neg F\\Rightarrow\\neg P$$
+
+"$F$ is sufficient for $P$" is the original arrow. Contracts can punish other breaches, so $F$ false and $P$ true is possible.`,
   },
   {
-    id: "math-1-68",
-    case_id: "MATH 1.68",
-    title: "A scholarship eligibility rule with a waiver",
-    subsection: "1.3",
-    context:
-      "A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60 credit hours - unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.",
+    id: `math-1-68`,
+    case_id: `MATH 1.68`,
+    title: `A scholarship eligibility rule with a waiver`,
+    subsection: `1.3`,
+    context: `A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60 credit hours - unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.`,
     statements: [
-      "Student M is eligible for the scholarship.",
-      "Student N is eligible for the scholarship.",
-      "If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become eligible.",
-      "The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.",
-      "It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient credit hours.",
+      `Student M is eligible for the scholarship.`,
+      `Student N is eligible for the scholarship.`,
+      `If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become eligible.`,
+      `The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.`,
+      `It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient credit hours.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
-      "**A.** → False\n\nM's GPA is fine, but with 50 credits and no waiver there is nothing true inside the bracket $C \\lor W$. Checking the numbers: $G$ true (3.7), $C$ false ($50 < 60$), $W$ false, so $G \\land (C \\lor W)$ fails. **M is not eligible.**\n\nEligibility is $G\\land(C\\lor W)$. Student M: GPA $3.7\\ge 3.5$ so $G$ true; credits $50<60$ so $C$ false; no waiver so $W$ false. Then $C\\lor W=\\text{F}$, and $G\\land(C\\lor W)$ is false. M is not eligible.",
-      "**B.** → True\n\nN is 15 credits short, and the waiver exists for exactly that shortfall; the 3.6 GPA satisfies the condition outside the bracket. **N is eligible.**\n\nEligibility is $G \\land (C \\lor W)$. Student N has GPA 3.6 (so $G$ holds), 45 credits (so $C$ fails), and a Dean's waiver (so $W$ holds). The GPA sits outside the bracket and is fine; the waiver fills the bracket in place of the missing credits. N is eligible.\n\nStudent N: GPA $3.6\\ge 3.5$ so $G$ true; credits $45<60$ so $C$ false; waiver granted so $W$ true. Then $C\\lor W=\\text{T}$, and $G\\land(C\\lor W)$ is true. N is eligible.",
-      "**C.** → True\n\nThe waiver is the one thing missing from M's file. Add it and the bracket becomes true, while the 3.7 GPA goes on satisfying $G$. **M would indeed become eligible.**\n\nKeep M’s GPA $3.7$ and $50$ credits, and set $W$ true. Then $C\\lor W$ becomes true while $G$ stays true, so $G\\land(C\\lor W)$ turns true. M would become eligible.",
-      "**D.** → False\n\nHere is the trap in the wording: the Dean waives the **credit-hour** requirement, and nothing else. A waiver fills the bracket but cannot touch $G$, so a student with a 3.0 GPA and a waiver in hand stays ineligible. Explicitly $G$ false makes $G \\land (C \\lor W)$ false no matter how $W$ is set. **The waiver is never sufficient on its own.**\n\nA waiver fills only the bracket $C\\lor W$. It cannot make $G$ true. A student with GPA $3.0$ and a waiver has $G$ false, so the conjunction is false no matter how $W$ is set. The waiver is not sufficient by itself.",
-      "**E.** → False\n\nA GPA below 3.5 makes $G$ false, and $G$ guards the entrance every eligible student must pass through. Credits and waivers work inside the bracket and cannot repair it. Even a waiver plus 60 credits leaves the outer conjunct false when GPA is weak. **No such student can exist.**\n\nGPA below $3.5$ makes $G$ false. Credits and waiver live inside the bracket and cannot repair a false outer conjunct. Even $W$ true and $C$ true leave $G\\land(C\\lor W)$ false when $G$ is false. No such eligible student exists.",
+      `**A.** → False
+
+Eligibility is $G\\land(C\\lor W)$. Student M: GPA $3.7$ so $G$ true; credits $50<60$ so $C$ false; no waiver so $W$ false. Then $C\\lor W$ is false, and the conjunction fails. M is not eligible. The GPA sits outside the bracket and cannot fill it, so the statement is False.`,
+      `**B.** → True
+
+Student N: GPA $3.6$ so $G$ true; credits $45<60$ so $C$ false; waiver granted so $W$ true. Then $C\\lor W$ is true and the conjunction holds. N is eligible despite being $15$ credits short. The waiver exists for exactly that shortfall, so the statement is True.`,
+      `**C.** → True
+
+Keep M's GPA $3.7$ and $50$ credits, and set $W$ true. Then $C\\lor W$ becomes true while $G$ stays true, so $G\\land(C\\lor W)$ turns true. M would become eligible. The waiver is the one thing missing from M's file, so the statement is True.`,
+      `**D.** → False
+
+A waiver fills only the bracket $C\\lor W$. It cannot make $G$ true. A student with GPA $3.0$ and a waiver has $G$ false, so the conjunction is false no matter how $W$ is set. The Dean waives the credit-hour requirement, nothing else. The waiver is never sufficient on its own, so the statement is False.`,
+      `**E.** → False
+
+GPA below $3.5$ makes $G$ false. Credits and waiver live inside the bracket and cannot repair a false outer conjunct. Even $W$ true and $C$ true leave $G\\land(C\\lor W)$ false when $G$ is false. No such eligible student exists. $G$ guards every entrance, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 25,
-    solution_overview:
-      "Read this rule slowly, because the waiver does less than it first appears to. The default requirement is “GPA at least 3.5 **and** at least 60 credit hours”, and the Dean may waive **only the credit-hour half**. So with $G$, $C$ and $W$ for the GPA condition, the credit condition and the waiver:\n\n$$\\text{Eligible} \\Leftrightarrow G \\land (C \\lor W)$$\n\nThe GPA condition sits **outside** the bracket, where no waiver can reach it. Inside the bracket, credits and waiver are alternatives, either one is enough.\n\n**Student M** (GPA 3.7, 50 credits, no waiver): $G$ is true, but $C$ and $W$ are both false, so the bracket is empty and **M is not eligible**. Grant M a waiver and nothing else changes: the bracket fills and M becomes eligible.\n\n**Student N** (GPA 3.6, 45 credits, waiver granted): $G$ is true and the waiver fills the bracket, so **N is eligible** despite being 15 credits short.\n\nThe two limits of the waiver follow from the shape of the formula. A waiver alone can never carry a student with a weak GPA, and no combination of credits and waivers rescues a GPA below 3.5, because a false $G$ makes the whole conjunction false.",
+    solution_overview: `The default requirement is GPA at least $3.5$ and at least $60$ credit hours. The Dean may waive only the credit-hour half. Write $G$, $C$, and $W$ for those three tests:
+
+$$\\text{Eligible}\\Leftrightarrow G\\land(C\\lor W)$$
+
+The GPA condition sits outside the bracket, where no waiver can reach it. Inside the bracket, credits and waiver are alternatives. Student M: GPA $3.7$, $50$ credits, no waiver. Student N: GPA $3.6$, $45$ credits, waiver granted.`,
   },
   {
-    id: "math-1-69",
-    case_id: "MATH 1.69",
-    title: "Travel insurance payout",
-    subsection: "1.3",
-    context:
-      "A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before departure.",
+    id: `math-1-69`,
+    case_id: `MATH 1.69`,
+    title: `Travel insurance payout`,
+    subsection: `1.3`,
+    context: `A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before departure.`,
     statements: [
-      "M's claim will be paid out.",
-      "N's claim will be paid out.",
-      "If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out, regardless of the reason for cancellation.",
-      "Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.",
-      "It is possible for a claim to be paid out without a documented medical emergency AND without the policy being purchased at least 14 days in advance, provided the airline cancelled the flight.",
+      `M's claim will be paid out.`,
+      `N's claim will be paid out.`,
+      `If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out, regardless of the reason for cancellation.`,
+      `Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.`,
+      `It is possible for a claim to be paid out without a documented medical emergency AND without the policy being purchased at least 14 days in advance, provided the airline cancelled the flight.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nA documented medical emergency fills the reason bracket, and 20 days comfortably beats the 14-day deadline. Both hurdles cleared, so **M's claim is paid.**\n\nPayout is $(M\\lor A)\\land T$. Traveler M: documented medical emergency so $M$ true; purchased $20$ days before departure, and $20\\ge 14$, so $T$ true. Then $M\\lor A$ is true and the conjunction is true. M is paid.",
-      "**B.** → False\n\nN has an impeccable reason and a fatal purchase date: 5 days is under 14, so $T$ is false and the conjunction fails. The airline cancellation makes $A$ true, so $M \\lor A$ holds, yet $(M \\lor A) \\land T$ still dies on $T$. **N's claim is refused.**\n\nTraveler N: airline cancellation so $A$ true, hence $M\\lor A$ true; purchased $5$ days out, and $5\\ge 14$ is false, so $T$ false. Then $(M\\lor A)\\land T$ is false. N is not paid.",
-      "**C.** → True\n\n$T$ is attached with **and**, outside the bracket, so a false $T$ makes the whole condition false and the reason for cancelling never gets weighed at all. **A late purchase blocks every claim.**\n\n$T$ sits outside the bracket, joined by AND. If the policy was bought fewer than $14$ days out, $T$ is false and the whole condition is false. The reason for cancellation is never reached. A late purchase blocks every claim.",
-      "**D.** → False\n\nTiming is one hurdle of two, not a free pass. Buy 30 days early and then simply change your mind: the bracket stays empty and nothing is paid. Early purchase makes $T$ true, but without $M$ or $A$ the OR is false and the whole conjunction fails. **Necessary, certainly; sufficient, no.**\n\nEarly purchase makes $T$ true but leaves the reason bracket empty unless $M$ or $A$ holds. A change of mind $30$ days out has $T$ true and $M\\lor A$ false, so no payout. Timing is necessary, not sufficient.",
-      "**E.** → False\n\nAn airline cancellation substitutes for the *medical reason*, not for the *purchase date*, the two live on opposite sides of the AND. Traveler N is this exact scenario, and N receives nothing. The statement asks for a payout with $\\neg M$ and $\\neg T$ while relying on $A$; that still leaves $T$ false. **No payout is possible here.**\n\nThe claim asks for a payout with $\\neg M$ and $\\neg T$, using only $A$. Even with $A$ true, $\\neg T$ still falsifies the outer AND. Traveler N is this pattern (airline cancel, late purchase) and receives nothing. No such payout is possible.",
+      `**A.** → True
+
+Payout is $(M\\lor A)\\land T$. Traveler M: documented medical emergency so $M$ true; purchased $20$ days out, and $20\\ge 14$, so $T$ true. Both hurdles cleared:
+
+$$(M\\lor A)\\land T=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
+
+The reason bracket is an or; medical emergency alone fills it, so the statement is True.`,
+      `**B.** → False
+
+Traveler N: airline cancellation so $A$ true, hence $M\\lor A$ true; purchased $5$ days out, so $T$ false. Then $(M\\lor A)\\land T$ is false. N is not paid. An impeccable reason does not repair a late purchase. $T$ sits outside the bracket, joined by AND, so the statement is False.`,
+      `**C.** → True
+
+$T$ sits outside the bracket, joined by AND. If the policy was bought fewer than $14$ days out, $T$ is false and the whole condition is false. The reason for cancellation is never reached. A late purchase blocks every claim, medical or airline, so the statement is True.`,
+      `**D.** → False
+
+Early purchase makes $T$ true but leaves the reason bracket empty unless $M$ or $A$ holds. A change of mind $30$ days out has $T$ true and $M\\lor A$ false, so no payout. Timing is necessary, not sufficient. One hurdle of two is not a free pass, so the statement is False.`,
+      `**E.** → False
+
+The claim asks for a payout with $\\neg M$ and $\\neg T$, using only $A$. Even with $A$ true, $\\neg T$ still falsifies the outer AND. Traveler N is this pattern (airline cancel, late purchase) and receives nothing. An accepted reason substitutes for the other reason, never for the purchase date, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 26,
-    solution_overview:
-      "The policy sets two independent hurdles, and both must be cleared:\n\n$$\\text{Payout} \\Leftrightarrow (M \\lor A) \\land T$$\n\nwhere $M$ = a documented medical emergency, $A$ = the airline cancelled the flight, $T$ = the policy was bought at least 14 days before departure.\n\nInside the bracket sits an **or**, so the two accepted reasons for cancelling are interchangeable. Outside it sits an **and**, which makes the 14-day timing condition non-negotiable: it applies to every claim, whatever the reason behind it.\n\n**Traveler M**, medical emergency, so the bracket is true; bought 20 days out, so $T$ is true. Both hurdles cleared: **the claim is paid.**\n\n**Traveler N**, airline cancellation, so the bracket is true; bought only 5 days out, so $T$ is false. The second hurdle fails: **nothing is paid**, however blameless the cancellation was.\n\nN's file is the general lesson in miniature. An accepted *reason* can substitute for the other reason, never for the *timing*, and the trade does not work the other way either: buying early with no accepted reason, say a simple change of mind, leaves the bracket empty and the claim unpaid.",
+    solution_overview: `The policy sets two independent hurdles, and both must be cleared:
+
+$$\\text{Payout}\\Leftrightarrow(M\\lor A)\\land T$$
+
+where $M$ is a documented medical emergency, $A$ is airline cancellation, and $T$ is purchase at least $14$ days before departure. Inside the bracket sits an or, so the two accepted reasons are interchangeable. Outside it sits an and, which makes the $14$-day timing non-negotiable. Traveler M: medical emergency, bought $20$ days out. Traveler N: airline cancellation, bought $5$ days out.`,
   },
   {
-    id: "math-1-70",
-    case_id: "MATH 1.70",
-    title: 'An election law states : "If a person is a citizen, they are eligible',
-    subsection: "1.3",
-    context: 'An election law states: "If a person is a citizen, they are eligible to vote."',
+    id: `math-1-70`,
+    case_id: `MATH 1.70`,
+    title: `Contrapositive Reasoning in a Citizenship Voting Law`,
+    subsection: `1.3`,
+    context: `An election law states: "If a person is a citizen, they are eligible to vote."`,
     statements: [
-      'The negation of this law is: "A person is a citizen and is not eligible to vote."',
-      "John is not eligible to vote; by the contrapositive, we may conclude that John is not a citizen. This reasoning is logically valid.",
-      "Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a counterexample disproving the law.",
-      'The converse, "If a person is eligible to vote, they are a citizen," could be false in a country that grants voting rights to certain non-citizen long-term residents.',
-      'The inverse, "If a person is not a citizen, they are not eligible to vote," always has the same truth value as the converse.',
+      `The negation of this law is: "A person is a citizen and is not eligible to vote."`,
+      `John is not eligible to vote; by the contrapositive, we may conclude that John is not a citizen. This reasoning is logically valid.`,
+      `Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a counterexample disproving the law.`,
+      `The converse, "If a person is eligible to vote, they are a citizen," could be false in a country that grants voting rights to certain non-citizen long-term residents.`,
+      `The inverse, "If a person is not a citizen, they are not eligible to vote," always has the same truth value as the converse.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe law is broken only by a citizen who is denied eligibility, and $P \\land \\neg Q$ is that person in symbols. **The negation is correctly formed.**\n\nThe law is $P\\Rightarrow Q$. Its unique failure is $P\\land\\neg Q$: a citizen who is not eligible to vote. The quoted sentence is that failure case, so it is the correct negation.",
-      "**B.** → True\n\nJohn's ineligibility is $\\neg Q$, and $\\neg Q \\Rightarrow \\neg P$ is the contrapositive, which inherits the law's truth. **The conclusion that John is not a citizen is validly drawn.**\n\nJohn has $\\neg Q$ (not eligible). The contrapositive $\\neg Q\\Rightarrow\\neg P$ yields $\\neg P$: John is not a citizen. That is modus tollens on the law, a valid inference.",
-      "**C.** → False\n\nThe statement quietly swaps “eligible” for “votes”. Maria keeps her eligibility whether or not she registers, so she is a citizen with $Q$ still true, the law is honoured, not broken. A counterexample needs $P$ true and $Q$ false: a citizen barred from voting. Maria has $P$ true and $Q$ true; skipping the ballot box never flips $Q$. **A counterexample would have to be a citizen who is barred from voting.**\n\n$Q$ is eligibility, not the act of voting. Maria is a citizen who keeps her eligibility whether or not she registers. She has $P$ true and $Q$ true, which satisfies $P\\Rightarrow Q$. A counterexample would need a citizen barred from voting. Staying home does not flip $Q$.",
-      "**D.** → True\n\nA long-term resident who is allowed to vote has $Q$ true and $P$ false, which is precisely how a converse fails. The original law only forces eligibility for citizens; it never forbids eligibility for non-citizens. **In such a country the converse would indeed be false.**\n\nA non-citizen long-term resident who may vote has $Q$ true and $P$ false. That is exactly how $Q\\Rightarrow P$ fails. The original law never forbids eligibility for non-citizens, so the converse can be false in such a country.",
-      "**E.** → True\n\nNegate and swap the halves of the inverse $\\neg P \\Rightarrow \\neg Q$ and you land on the converse $Q \\Rightarrow P$; statements that are contrapositives of each other always agree. The long-term resident who may vote makes both false together; in a country with no such residents both could be true together. **The two forms share a truth value in every situation.**\n\nThe inverse $\\neg P\\Rightarrow\\neg Q$ has contrapositive $Q\\Rightarrow P$, the converse. Those two always agree. The long-term resident who may vote makes both false together.",
+      `**A.** → True
+
+The law is $P\\Rightarrow Q$. Its unique failure is $P\\land\\neg Q$: a citizen who is not eligible to vote. The quoted sentence is that failure case, so it is the correct negation. Eligibility, not the act of voting, is the predicate $Q$, so the statement is True.`,
+      `**B.** → True
+
+John has $\\neg Q$ (not eligible). The contrapositive $\\neg Q\\Rightarrow\\neg P$ yields $\\neg P$: John is not a citizen. That is modus tollens on the law. The conclusion is validly drawn because the contrapositive inherits the law's truth, so the statement is True.`,
+      `**C.** → False
+
+$Q$ is eligibility, not the act of voting. Maria is a citizen who keeps her eligibility whether or not she registers. She has $P$ true and $Q$ true, which satisfies $P\\Rightarrow Q$. A counterexample would need a citizen barred from voting. Staying home does not flip $Q$, so the statement is False.`,
+      `**D.** → True
+
+A non-citizen long-term resident who may vote has $Q$ true and $P$ false. That is exactly how $Q\\Rightarrow P$ fails. The original law never forbids eligibility for non-citizens, so the converse can be false in such a country. The original only forces eligibility for citizens, so the statement is True.`,
+      `**E.** → True
+
+The inverse $\\neg P\\Rightarrow\\neg Q$ has contrapositive $Q\\Rightarrow P$, the converse. Those two always agree. The long-term resident who may vote makes both false together. In a country with no such residents both could be true together. Shared truth value is the pairing, not a claim that either is true here, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 27,
-    solution_overview:
-      "$P$ = “the person is a citizen”, $Q$ = “the person is **eligible** to vote”. The law is $P \\Rightarrow Q$.\n\n**The word to watch is “eligible”.** $Q$ is about holding the right, not about using it. Registering, queueing and marking a ballot are later choices, and skipping them does not make $Q$ false. Maria, a citizen who stays home, therefore has $P$ true and $Q$ true, a perfectly law-abiding pair, not a violation.\n\n**Breaking the law** would take a citizen who is barred from voting, $P \\land \\neg Q$. That case, and nothing else, is the negation of $P \\Rightarrow Q$.\n\n**Reasoning safely with the law.** The contrapositive $\\neg Q \\Rightarrow \\neg P$ is guaranteed, so John's ineligibility really does prove he is not a citizen. The converse $Q \\Rightarrow P$ is not guaranteed, and in a country where long-term residents may vote it is plainly false: eligible, yet not a citizen. The inverse $\\neg P \\Rightarrow \\neg Q$ says exactly what that converse says, swap and negate its halves and the converse comes back, so those two always rise and fall together.",
+    solution_overview: `Write $P$ for "the person is a citizen" and $Q$ for "the person is eligible to vote." The law is $P\\Rightarrow Q$.
+
+$Q$ is about holding the right, not about using it. The unique failure of $P\\Rightarrow Q$ is $P\\land\\neg Q$. The contrapositive $\\neg Q\\Rightarrow\\neg P$ is guaranteed. The converse $Q\\Rightarrow P$ and the inverse $\\neg P\\Rightarrow\\neg Q$ form the other pair and always share a truth value.`,
   },
   {
-    id: "math-1-71",
-    case_id: "MATH 1.71",
-    title: "A business memo's reasoning",
-    subsection: "1.3",
-    context:
-      "A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this quarter. Therefore, we must have increased our marketing budget.”",
+    id: `math-1-71`,
+    case_id: `MATH 1.71`,
+    title: `A business memo's reasoning`,
+    subsection: `1.3`,
+    context: `A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this quarter. Therefore, we must have increased our marketing budget.”`,
     statements: [
-      "The memo's argument is logically valid.",
-      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”",
-      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”",
-      "For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a biconditional: “We increase our marketing budget if and only if sales increase.”",
-      "The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains, the ground gets wet” and “The ground is wet.”",
+      `The memo's argument is logically valid.`,
+      `The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”`,
+      `The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”`,
+      `For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a biconditional: “We increase our marketing budget if and only if sales increase.”`,
+      `The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains, the ground gets wet” and “The ground is wet.”`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nThe memo observes the *consequence* and infers the *cause*, affirming the consequent. Sales might have risen because a rival quit the market, leaving the premise true and the conclusion false. Premises $P \\Rightarrow Q$ and $Q$ do not entail $P$; that would require the missing converse. **The argument is invalid.**\n\nThe memo’s skeleton is: $P\\Rightarrow Q$, $Q$, therefore $P$. That is affirming the consequent. A rival leaving the market can make $Q$ true while $P$ stays false: both premises hold and the conclusion fails. Invalid.",
-      "**B.** → False\n\nThis restatement runs from $\\neg P$ to $\\neg Q$, the inverse, and the same rival-exit story defeats it: no extra budget, sales up regardless. From “we did not increase the budget” the original conditional says nothing about sales; concluding that sales fell is another walk in the wrong direction. **Still invalid.**\n\nThe restatement is $P\\Rightarrow Q$, $\\neg P$, therefore $\\neg Q$: the inverse. The same rival-exit story has $\\neg P$ true and $Q$ true, so $\\neg Q$ is false. Still invalid.",
-      "**C.** → True\n\nFrom “sales did not rise” to “the budget did not rise” is modus tollens, which is just the contrapositive $\\neg Q \\Rightarrow \\neg P$ used forwards. **This version of the argument is valid.**\n\nNow the premises are $P\\Rightarrow Q$ and $\\neg Q$, concluding $\\neg P$. That is modus tollens, equivalently running the contrapositive $\\neg Q\\Rightarrow\\neg P$. Valid.",
-      "**D.** → True\n\nThe memo needs the direction $Q \\Rightarrow P$, and a biconditional supplies it alongside the original arrow. With $P \\Leftrightarrow Q$ as the premise, observing $Q$ really does force $P$. **The memo's conclusion would follow legitimately.**\n\nThe memo needs the missing arrow $Q\\Rightarrow P$. Upgrading the premise to $P\\Leftrightarrow Q$ supplies both directions. Then observing $Q$ really does force $P$, and the original conclusion follows.",
-      "**E.** → True\n\nWet ground plus the rain rule, concluding rain: premises $P \\Rightarrow Q$ and $Q$, conclusion $P$, the memo's skeleton exactly, with a garden sprinkler playing the part of the departing competitor. **Same fallacy, different story.**\n\n“If it rains, the ground gets wet; the ground is wet; therefore it is raining” is $P\\Rightarrow Q$, $Q$, therefore $P$. Same form as the memo. A sprinkler plays the role of the departing competitor.",
+      `**A.** → False
+
+The memo's skeleton is: $P\\Rightarrow Q$, $Q$, therefore $P$. That is affirming the consequent. A rival leaving the market can make $Q$ true while $P$ stays false: both premises hold and the conclusion fails. The premise licenses traffic in one direction only, and walking back along the arrow is not allowed. Invalid, so the statement is False.`,
+      `**B.** → False
+
+The restatement is $P\\Rightarrow Q$, $\\neg P$, therefore $\\neg Q$: the inverse. The same rival-exit story has $\\neg P$ true and $Q$ true, so $\\neg Q$ is false. Still invalid. From "we did not increase the budget" the original conditional says nothing about sales. Concluding that sales fell is another walk in the wrong direction, so the statement is False.`,
+      `**C.** → True
+
+Now the premises are $P\\Rightarrow Q$ and $\\neg Q$, concluding $\\neg P$. That is modus tollens, equivalently running the contrapositive $\\neg Q\\Rightarrow\\neg P$. Valid. From "sales did not rise" to "the budget did not rise" is the one reshuffle that is safe, so the statement is True.`,
+      `**D.** → True
+
+The memo needs the missing arrow $Q\\Rightarrow P$. Upgrading the premise to $P\\Leftrightarrow Q$ supplies both directions. Then observing $Q$ really does force $P$, and the original conclusion follows. A biconditional is the cheapest honest way to buy the converse alongside the original, so the statement is True.`,
+      `**E.** → True
+
+"If it rains, the ground gets wet; the ground is wet; therefore it is raining" is $P\\Rightarrow Q$, $Q$, therefore $P$. Same form as the memo. A sprinkler plays the role of the departing competitor. Same fallacy, different story. Wet ground does not prove rain any more than rising sales prove a bigger marketing budget, so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 28,
-    solution_overview:
-      "Strip the memo down to its skeleton, with $P$ = “we increased the marketing budget” and $Q$ = “sales increased”:\n\npremise $P \\Rightarrow Q$; premise $Q$; conclusion $P$.\n\nThat is the classic error called **affirming the consequent**. The premise licenses traffic in one direction only, and walking back along the arrow is not allowed. Concretely: a competitor may have left the market, lifting sales while the budget never moved. No premise is violated, yet the conclusion is false, which is exactly what “invalid” means.\n\n**Which reshuffles are safe?**\n\nFrom $\\neg P$ (no extra budget) to $\\neg Q$ (no sales growth) is the **inverse**, the same mistake in a different hat, and the departing competitor refutes it too.\n\nFrom $\\neg Q$ (sales did not rise) to $\\neg P$ (the budget did not rise) is **modus tollens**, and it is valid, because it merely runs the contrapositive $\\neg Q \\Rightarrow \\neg P$ forwards.\n\n**The repair.** What the memo helps itself to is the missing direction $Q \\Rightarrow P$, and the cheapest way to buy it honestly is to upgrade the premise to a biconditional $P \\Leftrightarrow Q$, which contains both arrows at once.",
+    solution_overview: `Strip the memo to $P$ = "we increased the marketing budget" and $Q$ = "sales increased." The original argument is: premise $P\\Rightarrow Q$, premise $Q$, conclusion $P$. That form is affirming the consequent.
+
+Safe traffic on $P\\Rightarrow Q$ is modus ponens ($P$, therefore $Q$) and modus tollens ($\\neg Q$, therefore $\\neg P$). The inverse is $\\neg P$, therefore $\\neg Q$. A biconditional $P\\Leftrightarrow Q$ supplies both arrows. The same skeleton with rain and wet ground is the same fallacy.`,
   },
   {
-    id: "math-1-72",
-    case_id: "MATH 1.72",
-    title: 'Consider the claim: "The sum of two irrational numbers is always irrat',
-    subsection: "1.3",
-    context:
-      'Consider the claim: "The sum of two irrational numbers is always irrational," and the classical proof that there is no largest prime number.',
+    id: `math-1-72`,
+    case_id: `MATH 1.72`,
+    title: `A Counterexample to "The Sum of Two Irrationals Is Irrational"`,
+    subsection: `1.3`,
+    context: `Consider the claim: "The sum of two irrational numbers is always irrational," and the classical proof that there is no largest prime number.`,
     statements: [
-      '√2 + (-√2) = 0 is a valid counterexample to "the sum of two irrational numbers is always irrational," since √2 and -√2 are irrational but their sum, 0, is rational',
-      "Finding this one counterexample is enough to show the claim is not a true universal statement",
-      "A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and then derives a contradiction",
-      "To prove a universal statement, it suffices to check it for $x=1$ and $x=2$.",
-      "To prove an existential statement, it suffices to exhibit one value for which the stated property holds.",
+      `√2 + (-√2) = 0 is a valid counterexample to "the sum of two irrational numbers is always irrational," since √2 and -√2 are irrational but their sum, 0, is rational`,
+      `Finding this one counterexample is enough to show the claim is not a true universal statement`,
+      `A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and then derives a contradiction`,
+      `To prove a universal statement, it suffices to check it for $x=1$ and $x=2$.`,
+      `To prove an existential statement, it suffices to exhibit one value for which the stated property holds.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nBoth numbers qualify as inputs, since each is irrational, and their sum $0$ is rational, so the promised property fails on a legitimate pair. $\\sqrt2$ is irrational, $-\\sqrt2$ is irrational, and $0 = \\tfrac{0}{1}$ is rational. **A genuine counterexample.**\n\nCheck each ingredient of the pair:\n\n- $\\sqrt{2}$ is not a ratio of integers, so irrational;\n- $-\\sqrt{2}$ likewise irrational;\n- $\\sqrt{2}+(-\\sqrt{2})=0=\\tfrac{0}{1}$, which is rational.\n\nTwo irrational inputs, rational sum: the universal claim fails on this pair.",
-      "**B.** → True\n\nA claim carrying the word “always” is destroyed by a single failure, and there is nothing left to repair. **One counterexample settles the matter.**\n\nThe claim under attack is a universal one: “the sum of two irrationals is always irrational.” A $\\forall$ statement dies as soon as one pair fails. The pair $\\sqrt{2}+(-\\sqrt{2})=0$ is that failure, so the single counterexample is enough.\n\nA $\\forall$ claim dies at the first counterexample. The pair in A is that counterexample, so no further pairs need be checked. One failure shows the statement is not a true universal.",
-      "**C.** → True\n\nContradiction proofs open with the negation of the target, and the negation of “there is no largest prime” is “there is one, call it $p$”. **That is the correct opening move.**\n\nThe target is “there is no largest prime.” Its negation is “there is a largest prime.” A contradiction proof opens with that negation, names the supposed largest prime $p$, and derives a contradiction. That is the correct first line.",
-      "**D.** → False\n\nTwo confirmations are not a proof of a universal claim. Take $P(x)$ to be $x^2 < 9$: it holds at $x = 1$ and at $x = 2$, and collapses at $x = 3$. Any finite checklist leaves unchecked values that may fail. **Checking a couple of values proves nothing about all of them.**\n\nChecking $x=1$ and $x=2$ proves those two instances only. Let $P(x)$ be $x^2<9$: it holds at $1$ and $2$ and fails at $3$. A universal claim needs an argument covering every $x$, not a two-point checklist.",
-      "**E.** → True\n\n“There exists” asks for one witness and nothing more, so exhibiting a single $x$ with $P(x)$ true completes the proof. That is the mirror image of the universal case: one example proves $\\exists$, one counterexample kills $\\forall$. **This is the standard way to establish an existential claim.**\n\nAn $\\exists$ claim asks for one witness. Exhibiting a single $x$ with $P(x)$ true completes the proof. That is the standard existence argument, the mirror image of using one counterexample to kill a $\\forall$ claim.",
+      `**A.** → True
+
+$\\sqrt{2}$ is not a ratio of integers, so irrational; $-\\sqrt{2}$ likewise. Their sum is
+
+$$\\sqrt{2}+(-\\sqrt{2})=0=\\frac{0}{1}$$
+
+which is rational. Two irrational inputs, rational sum: the universal claim fails on this pair. Both numbers qualify as inputs, and the promised property fails on a legitimate pair, so the statement is True.`,
+      `**B.** → True
+
+A $\\forall$ claim dies at the first counterexample. The pair $\\sqrt{2}$ and $-\\sqrt{2}$ is that counterexample, so no further pairs need be checked. One failure shows the statement is not a true universal. A claim carrying the word "always" is destroyed by a single failure, so the statement is True.`,
+      `**C.** → True
+
+The target is "there is no largest prime." Its negation is "there is a largest prime." A contradiction proof opens with that negation, names the supposed largest prime $p$, and derives a contradiction. That is the correct first line. Opening with "there is no largest prime" would assume the conclusion, so the statement is True.`,
+      `**D.** → False
+
+Checking $x=1$ and $x=2$ proves those two instances only. Let $P(x)$ be $x^{2}<9$: it holds at $1$ and $2$ and fails at $3$. A universal claim needs an argument covering every $x$, not a two-point checklist. Any finite checklist leaves unchecked values that may fail, so the statement is False.`,
+      `**E.** → True
+
+An $\\exists$ claim asks for one witness. Exhibiting a single $x$ with $P(x)$ true completes the proof. That is the standard existence argument, the mirror image of using one counterexample to kill a $\\forall$ claim. "There exists" asks for one witness and nothing more, so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 29,
-    solution_overview:
-      "Two lopsided facts drive this whole task: **one example can destroy a “for all” claim but can never establish one**, while for a “there exists” claim a single example is the entire job.\n\n| Claim | To prove it | To disprove it |\n| --- | --- | --- |\n| $\\forall x\\, P(x)$ | an argument covering every $x$ | one counterexample |\n| $\\exists x\\, P(x)$ | one witness | an argument covering every $x$ |\n\n**The irrational sums.** “The sum of two irrational numbers is always irrational” is a $\\forall$ claim, so one bad pair finishes it. Take $\\sqrt2$ and $-\\sqrt2$: both are irrational, and\n\n$$\\sqrt2 + (-\\sqrt2) = 0,$$\n\nwhich is rational, since $0 = \\tfrac{0}{1}$. The word “always” cannot survive that.\n\n**The largest prime.** A **proof by contradiction** always opens with the negation of the target. The target “there is no largest prime” is negated by “there is a largest prime, call it $p$”, so that is the first line; the proof then manufactures a prime larger than $p$ and the assumption collapses.",
+    solution_overview: `A universal $\\forall x\\,P(x)$ is proved by an argument covering every $x$, and disproved by one counterexample. An existential $\\exists x\\,P(x)$ is proved by one witness. A proof by contradiction of a claim opens with the negation of that claim.
+
+The irrational-sum claim is a universal about every pair of irrationals. Euclid's "no largest prime" is proved by assuming a largest prime $p$ and manufacturing a larger one.`,
   },
   {
-    id: "math-1-73",
-    case_id: "MATH 1.73",
-    title: 'A biology rule states : "If an animal is a fish, then it lives in wate',
-    subsection: "1.3",
-    context: 'A biology rule states: "If an animal is a fish, then it lives in water."',
+    id: `math-1-73`,
+    case_id: `MATH 1.73`,
+    title: `Converse and Contrapositive of a Fish-Habitat Rule`,
+    subsection: `1.3`,
+    context: `A biology rule states: "If an animal is a fish, then it lives in water."`,
     statements: [
-      '"This dolphin lives in water, so it must be a fish" uses the converse of the rule and is an invalid argument.',
-      '"This lizard does not live in water, so it is not a fish" uses the contrapositive of the rule and is a valid argument.',
-      '"This snake is not a fish, so it does not live in water" uses the inverse of the rule, and inverse-based reasoning is always guaranteed to be valid.',
-      'The negation of the broader claim "All fish live in water" is "There exists a fish that does not live in water."',
-      'The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving "All fish live in water."',
+      `"This dolphin lives in water, so it must be a fish" uses the converse of the rule and is an invalid argument.`,
+      `"This lizard does not live in water, so it is not a fish" uses the contrapositive of the rule and is a valid argument.`,
+      `"This snake is not a fish, so it does not live in water" uses the inverse of the rule, and inverse-based reasoning is always guaranteed to be valid.`,
+      `The negation of the broader claim "All fish live in water" is "There exists a fish that does not live in water."`,
+      `The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving "All fish live in water."`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nArguing from water back to fish is $Q$ to $P$, the converse, and the dolphin refutes that pattern while being the very subject of the argument. The dolphin lives in water ($Q$ true) yet is not a fish ($P$ false), so $Q \\Rightarrow P$ fails. **Correctly named and correctly rejected.**\n\nWrite $P$ for “is a fish” and $Q$ for “lives in water.” The given rule is $P\\Rightarrow Q$. The dolphin argument runs the other way: it lives in water, therefore it must be a fish, which is $Q\\Rightarrow P$.\n\nPlug the dolphin in: $Q$ is true (it lives in water) and $P$ is false (a dolphin is a mammal, not a fish). An implication with a true “if” and a false “then” is false, so the converse fails and the argument is invalid.",
-      "**B.** → True\n\nFrom “no water” to “no fish” is $\\neg Q$ to $\\neg P$, the contrapositive, which is logically identical to the biology rule. **The lizard argument is sound.**\n\nThe biology rule is $P \\Rightarrow Q$: fish live in water. The lizard argument starts from “does not live in water” ($\\neg Q$) and concludes “is not a fish” ($\\neg P$). That is the contrapositive $\\neg Q \\Rightarrow \\neg P$, which is equivalent to the given rule, so the argument is valid.",
-      "**C.** → False\n\nThe first half is right, this is the inverse, but the claim that inverse reasoning is always valid is not. A water snake is no fish and lives in water all the same: $\\neg P$ true and $\\neg Q$ false, so $\\neg P \\Rightarrow \\neg Q$ fails. **The pattern carries no guarantee.**\n\nThe biology rule is $P\\Rightarrow Q$. The snake argument starts from “not a fish” ($\\neg P$) and concludes “does not live in water” ($\\neg Q$). That is the inverse, not the original and not the contrapositive.\n\nA water snake is not a fish and still lives in water: $\\neg P$ true, $Q$ true, so $\\neg Q$ false. The inverse therefore has a true hypothesis and a false conclusion. Inverse reasoning is not guaranteed.",
-      "**D.** → True\n\nNegating a universal statement produces an existential one, and negating an implication keeps its condition while denying its conclusion: $\\exists x\\,(P(x) \\land \\neg Q(x))$, a fish out of water. **The sentence given is that negation.**\n\n“All fish live in water” is $\\forall x\\,(P(x)\\Rightarrow Q(x))$. Negate by flipping the quantifier and rewriting the implication as its failure case:\n\n$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))\\equiv\\exists x\\,(P(x)\\land\\neg Q(x)).$$\n\nIn words: there exists a fish that does not live in water. That is the quoted sentence.",
-      "**E.** → False\n\nA counterexample would have to be a fish that does not live in water. The dolphin is the reverse, not a fish, and living in water, so it never touches the claim. To kill “all fish live in water” you need $P$ true and $Q$ false; the dolphin has $P$ false and $Q$ true. **It disproves nothing here.**\n\nA counterexample to $\\forall x\\,(P(x)\\Rightarrow Q(x))$ must satisfy $P$ and fail $Q$: some fish that does not live in water. The dolphin is not a fish, so $P$ is already false. It therefore never enters the “if” half of the universal claim, and living in water cannot refute “all fish live in water.”",
+      `**A.** → True
+
+The given rule is $P\\Rightarrow Q$. The dolphin argument runs the other way: it lives in water, therefore it must be a fish, which is $Q\\Rightarrow P$. Plug the dolphin in: $Q$ is true and $P$ is false. An implication with a true "if" and a false "then" is false, so the converse fails and the argument is invalid, so the statement is True.`,
+      `**B.** → True
+
+The lizard argument starts from "does not live in water" ($\\neg Q$) and concludes "is not a fish" ($\\neg P$). That is the contrapositive $\\neg Q\\Rightarrow\\neg P$, which is equivalent to the given rule, so the argument is valid. From "no water" to "no fish" is the one form logically identical to the biology rule, so the statement is True.`,
+      `**C.** → False
+
+The snake argument starts from "not a fish" ($\\neg P$) and concludes "does not live in water" ($\\neg Q$). That is the inverse. A water snake is not a fish and still lives in water: $\\neg P$ true, $Q$ true, so $\\neg Q$ false. The inverse therefore has a true hypothesis and a false conclusion. Inverse reasoning is not guaranteed. The first half of the claim (this is the inverse) is right; the "always valid" half is not, so the statement is False.`,
+      `**D.** → True
+
+"All fish live in water" is $\\forall x\\,(P(x)\\Rightarrow Q(x))$. Negate by flipping the quantifier and rewriting the implication as its failure case:
+
+$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))\\equiv\\exists x\\,(P(x)\\land\\neg Q(x))$$
+
+In words: there exists a fish that does not live in water. That is the quoted sentence, so the statement is True.`,
+      `**E.** → False
+
+A counterexample to $\\forall x\\,(P(x)\\Rightarrow Q(x))$ must satisfy $P$ and fail $Q$: some fish that does not live in water. The dolphin is not a fish, so $P$ is already false. It therefore never enters the "if" half of the universal claim, and living in water cannot refute "all fish live in water." The dolphin is the reverse of what is needed, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 30,
-    solution_overview:
-      "The rule is $P(x) \\Rightarrow Q(x)$: if $x$ is a fish, then $x$ lives in water. Each animal below tests a different way of using it.\n\n**Dolphin**, “it lives in water, so it must be a fish” argues from $Q$ back to $P$. That is the **converse**, and the dolphin refutes it in person: it lives in water and is a mammal.\n\n**Lizard**, “it does not live in water, so it is not a fish” argues from $\\neg Q$ to $\\neg P$. That is the **contrapositive**, the one form logically equivalent to the rule, so the argument is airtight.\n\n**Snake**, “it is not a fish, so it does not live in water” argues from $\\neg P$ to $\\neg Q$, the **inverse**. Water snakes exist, so this pattern is unreliable.\n\n**Negating the universal claim.** “All fish live in water” is $\\forall x\\,(P(x) \\Rightarrow Q(x))$, and its negation is\n\n$$\\exists x\\,(P(x) \\land \\neg Q(x)),$$\n\na fish that does not live in water. That is the shape any counterexample must have, which is exactly why the dolphin, with $P$ false and $Q$ true, cannot serve as one: it is the mirror image of what is needed.",
+    solution_overview: `Write $P$ for "is a fish" and $Q$ for "lives in water." The biology rule is $P\\Rightarrow Q$.
+
+The converse is $Q\\Rightarrow P$, the inverse is $\\neg P\\Rightarrow\\neg Q$, and the contrapositive is $\\neg Q\\Rightarrow\\neg P$. Negating the universal "all fish live in water" produces $\\exists x\\,(P(x)\\land\\neg Q(x))$: a fish that does not live in water. A counterexample to the universal must have $P$ true and $Q$ false.`,
   },
   {
-    id: "math-1-74",
-    case_id: "MATH 1.74",
-    title: "A store's policy is : \"If a customer pays within 30 days, they receive",
-    subsection: "1.3",
-    context:
-      'A store policy states: "If a customer pays within 30 days, they receive a 5% discount."',
+    id: `math-1-74`,
+    case_id: `MATH 1.74`,
+    title: `Negating a Store's Early-Payment Discount Policy`,
+    subsection: `1.3`,
+    context: `A store policy states: "If a customer pays within 30 days, they receive a 5% discount."`,
     statements: [
-      'The negation of the policy is: "A customer paid within 30 days and received the discount."',
-      'The converse, "If a customer receives the discount, they paid within 30 days," is necessarily true given the policy.',
-      "Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original policy and does NOT serve as a counterexample.",
-      'The inverse, "If a customer does not pay within 30 days, they do not receive the discount," is logically guaranteed to be true by the original policy.',
-      'The contrapositive, "If a customer does not receive the discount, they did not pay within 30 days," is NOT guaranteed to be true, since only the original conditional itself carries any real guarantee.',
+      `The negation of the policy is: "A customer paid within 30 days and received the discount."`,
+      `The converse, "If a customer receives the discount, they paid within 30 days," is necessarily true given the policy.`,
+      `Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original policy and does NOT serve as a counterexample.`,
+      `The inverse, "If a customer does not pay within 30 days, they do not receive the discount," is logically guaranteed to be true by the original policy.`,
+      `The contrapositive, "If a customer does not receive the discount, they did not pay within 30 days," is NOT guaranteed to be true, since only the original conditional itself carries any real guarantee.`,
     ],
     answer_key: [false, false, true, false, false],
     tactical_explanations: [
-      "**A.** → False\n\nThe sentence offered, “paid on time and received the discount”, is $P \\land Q$: a satisfied customer, the policy working as intended. A negation must keep the payment and remove the discount, $P \\land \\neg Q$. The trap is flipping the wrong half of the conjunction, or worse, writing another conditional. **The wrong half has been negated.**\n\nThe policy is $P\\Rightarrow Q$ with $P$ = paid within 30 days and $Q$ = received the 5% discount. The unique failure row is $P$ true and $Q$ false, that is $P\\land\\neg Q$: paid on time and did **not** get the discount.\n\nThe offered sentence keeps both halves true ($P\\land Q$). That is the policy being honoured, not denied.",
-      "**B.** → False\n\nThe converse would mean the discount is reachable *only* through prompt payment, and a holiday promotion for a late payer breaks that while the policy itself stays intact. Late payer with a promotional discount: $P$ false, $Q$ true, so $Q \\Rightarrow P$ fails and $P \\Rightarrow Q$ does not. **Not necessarily true.**\n\nThe policy $P\\Rightarrow Q$ constrains only punctual payers. It never says the discount arrives *only* through prompt payment.\n\nA late payer who still gets a holiday 5% has $P$ false and $Q$ true. Then $P\\Rightarrow Q$ holds (false antecedent), while the converse $Q\\Rightarrow P$ fails. One such customer separates the two.",
-      "**C.** → True\n\nAlex is $P$ false, $Q$ false, a late payer who got nothing, which is just what one would expect. The policy promises something only for payments inside 30 days. **Consistent with the policy, and no counterexample to it.**\n\nAlex paid on day 45. Compare with the 30-day line: $45>30$, so $P$ is false. Alex did not receive the discount, so $Q$ is false.\n\nAn implication $P\\Rightarrow Q$ is true whenever $P$ is false, whatever $Q$ does. Alex therefore sits outside the policy’s promise and cannot serve as a counterexample. A counterexample would need $P$ true and $Q$ false: paid within 30 days and no discount.",
-      "**D.** → False\n\nThe inverse forbids discounts to late payers, and once again the promotion shows the store may hand one out anyway. **The policy does not guarantee this.**\n\nThe policy is $P \\Rightarrow Q$: pay within 30 days and you get the discount. The inverse is $\\neg P \\Rightarrow \\neg Q$: pay late and you get nothing. The policy never speaks about late payers. A holiday promotion can still give a late payer the 5%, making $\\neg P$ true and $Q$ true, so the inverse fails while the policy stands.",
-      "**E.** → False\n\nThis statement denies the single rewriting that *is* guaranteed. “No discount, therefore the payment was late” is the contrapositive $\\neg Q \\Rightarrow \\neg P$, which always carries the same truth value as the policy. Claiming that “only the original itself” is guaranteed is exactly wrong: the contrapositive is locked to it. **The contrapositive does hold, so the statement is mistaken.**",
+      `**A.** → False
+
+The policy is $P\\Rightarrow Q$. The unique failure row is $P$ true and $Q$ false, that is $P\\land\\neg Q$: paid on time and did *not* get the discount. The offered sentence keeps both halves true ($P\\land Q$). That is the policy being honoured, not denied. The trap is flipping the wrong half of the conjunction, so the statement is False.`,
+      `**B.** → False
+
+The policy $P\\Rightarrow Q$ constrains only punctual payers. It never says the discount arrives *only* through prompt payment. A late payer who still gets a holiday $5\\%$ has $P$ false and $Q$ true. Then $P\\Rightarrow Q$ holds (false antecedent), while the converse $Q\\Rightarrow P$ fails. One such customer separates the two, so the statement is False.`,
+      `**C.** → True
+
+Alex paid on day $45$. Compare with the $30$-day line: $45>30$, so $P$ is false. Alex did not receive the discount, so $Q$ is false. An implication $P\\Rightarrow Q$ is true whenever $P$ is false, whatever $Q$ does. Alex therefore sits outside the policy's promise and cannot serve as a counterexample. A counterexample would need $P$ true and $Q$ false, so the statement is True.`,
+      `**D.** → False
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$: pay late and you get nothing. The policy never speaks about late payers. A holiday promotion can still give a late payer the $5\\%$, making $\\neg P$ true and $Q$ true, so the inverse fails while the policy stands. The inverse forbids discounts to late payers, which the store is free to hand out anyway, so the statement is False.`,
+      `**E.** → False
+
+This statement denies the single rewriting that *is* guaranteed. "No discount, therefore the payment was late" is the contrapositive $\\neg Q\\Rightarrow\\neg P$, which always carries the same truth value as the policy. Claiming that "only the original itself" is guaranteed is exactly wrong: the contrapositive is locked to it. The contrapositive does hold, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 31,
-    solution_overview:
-      "$P$ = “the customer pays within 30 days”, $Q$ = “the customer gets the 5% discount”, and the policy is $P \\Rightarrow Q$.\n\n**The negation trap.** To deny a promise you keep its condition and destroy its result:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nA customer who paid on time **and** received the discount is the policy being honoured, not broken; that sentence is $P \\land Q$, and slipping it in as the negation is exactly the mistake the first statement invites.\n\n**Alex** paid on day 45 and received nothing, so $P$ is false and $Q$ is false. The policy makes promises only about punctual payers, so Alex falls outside it entirely, no violation, and no counterexample.\n\n**Which rewritings survive?** Only the contrapositive $\\neg Q \\Rightarrow \\neg P$, “no discount, therefore the payment was late”, is guaranteed. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ both assume the discount can arrive *only* through punctuality, and a holiday promotion handing 5% to a late payer breaks both while leaving the policy untouched.",
+    solution_overview: `Write $P$ for "the customer pays within $30$ days" and $Q$ for "the customer gets the $5\\%$ discount." The policy is $P\\Rightarrow Q$.
+
+Negation is the unique failure row $P\\land\\neg Q$. The converse is $Q\\Rightarrow P$, the inverse is $\\neg P\\Rightarrow\\neg Q$, and the contrapositive is $\\neg Q\\Rightarrow\\neg P$. The original pairs with the contrapositive. Alex paid on day $45$ and received nothing, so $P$ false and $Q$ false.`,
   },
   {
-    id: "math-1-75",
-    case_id: "MATH 1.75",
-    title: "A regulation states : \"If a company's annual revenue exceeds $1 millio",
-    subsection: "1.3",
-    context:
-      'A regulation states: "If a company\'s annual revenue exceeds \\$1 million, then it must file an annual audit."',
+    id: `math-1-75`,
+    case_id: `MATH 1.75`,
+    title: `Negating a Revenue-Based Audit Regulation`,
+    subsection: `1.3`,
+    context: `A regulation states: "If a company's annual revenue exceeds \\$1 million, then it must file an annual audit."`,
     statements: [
-      'The negation of this statement is: "If a company\'s revenue exceeds \\$1 million, then it does not file an audit."',
-      'The converse, "If a company files an annual audit, then its revenue exceeds \\$1 million," is guaranteed true whenever the original regulation holds.',
-      'The inverse, "If a company\'s revenue does not exceed \\$1 million, then it does not file an audit," is logically equivalent to the original statement.',
-      'The contrapositive, "If a company does not file an audit, then its revenue does not exceed \\$1 million," is equivalent to the original and must also be true.',
-      "Company X has revenue of \\$2 million but did not file an audit. This is a valid counterexample that would prove the original regulation false.",
+      `The negation of this statement is: "If a company's revenue exceeds \\$1 million, then it does not file an audit."`,
+      `The converse, "If a company files an annual audit, then its revenue exceeds \\$1 million," is guaranteed true whenever the original regulation holds.`,
+      `The inverse, "If a company's revenue does not exceed \\$1 million, then it does not file an audit," is logically equivalent to the original statement.`,
+      `The contrapositive, "If a company does not file an audit, then its revenue does not exceed \\$1 million," is equivalent to the original and must also be true.`,
+      `Company X has revenue of \\$2 million but did not file an audit. This is a valid counterexample that would prove the original regulation false.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nThe proposed sentence is another regulation, $P \\Rightarrow \\neg Q$, binding every large company. The negation is far more modest: **one** company with high revenue and no audit, $P \\land \\neg Q$. A rival “if... then not...” rule is stronger than the negation and is the classic wrong shape. **The wrong shape entirely.**\n\nThe regulation is $P\\Rightarrow Q$: revenue above $\\$1$ million forces an audit. Its negation is the single failure row $P\\land\\neg Q$: some company with revenue above $\\$1$ million that did not file.\n\nThe quoted sentence is $P\\Rightarrow\\neg Q$, a rival rule about *every* large company. That is a different (and stronger) claim, not $\\neg(P\\Rightarrow Q)$.",
-      "**B.** → False\n\nThe converse claims that only large firms file audits, which the regulation never says, a \\$300,000 company may audit voluntarily. That voluntary filer has $Q$ true and $P$ false, so $Q \\Rightarrow P$ fails while $P \\Rightarrow Q$ still holds. **Not guaranteed.**\n\nThe converse claims that filing an audit forces revenue above $\\$1$ million. Take a firm with $\\$300,000$ of revenue that files voluntarily: $P$ false, $Q$ true.\n\nThen $Q\\Rightarrow P$ fails, while the original $P\\Rightarrow Q$ is idle because the revenue gate never opened. The regulation does not lock the converse.",
-      "**C.** → False\n\nThe inverse tells small companies not to file, and the voluntary filer contradicts it while the regulation stands. Different truth values in the same scenario rule out equivalence. The inverse $\\neg P \\Rightarrow \\neg Q$ dies on that filer; the original does not. **The inverse is a separate claim.**\n\nThe inverse is $\\neg P\\Rightarrow\\neg Q$: revenue at most $\\$1$ million, therefore no audit. The same voluntary filer has $\\neg P$ true (revenue $\\$300,000$) and $\\neg Q$ false (an audit was filed).\n\nTrue hypothesis, false conclusion: the inverse fails. Equivalence would require matching truth values in every scenario; this one split already separates them.",
-      "**D.** → True\n\n“No audit, therefore revenue at most \\$1 million” is the contrapositive, which always tracks the truth of the original. **Given the regulation, this must hold too.**\n\nThe regulation is $P \\Rightarrow Q$: revenue above \\$1 million forces an audit. Swap and negate: “no audit, therefore revenue does not exceed \\$1 million.” That sentence is $\\neg Q \\Rightarrow \\neg P$, the contrapositive, so it is equivalent to the regulation and must hold with it.",
-      "**E.** → True\n\nCompany X has $P$ true and $Q$ false, the one combination a conditional cannot survive. Revenue \\$2 million with no audit is exactly $P \\land \\neg Q$, which is the negation of $P \\Rightarrow Q$. **A valid counterexample, and the regulation is refuted by it.**\n\nCompany X has revenue $\\$2$ million. Compare with the threshold: $2>1$, so $P$ is true. X did not file an audit, so $Q$ is false.\n\nThat is exactly $P\\land\\neg Q$, the unique failure of $P\\Rightarrow Q$. One such company is enough to prove the regulation false.",
+      `**A.** → False
+
+The regulation is $P\\Rightarrow Q$: revenue above $\\$1$ million forces an audit. Its negation is the single failure row $P\\land\\neg Q$: some company with revenue above $\\$1$ million that did not file. The quoted sentence is $P\\Rightarrow\\neg Q$, a rival rule about *every* large company. That is a different (and stronger) claim, not $\\neg(P\\Rightarrow Q)$. A rival "if then not" rule is the classic wrong shape, so the statement is False.`,
+      `**B.** → False
+
+The converse claims that filing an audit forces revenue above $\\$1$ million. Take a firm with $\\$300{,}000$ of revenue that files voluntarily: $P$ false, $Q$ true. Then $Q\\Rightarrow P$ fails, while the original $P\\Rightarrow Q$ is idle because the revenue gate never opened. The regulation does not lock the converse. Only large firms file is a claim the regulation never made, so the statement is False.`,
+      `**C.** → False
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$: revenue at most $\\$1$ million, therefore no audit. The same voluntary filer has $\\neg P$ true and $\\neg Q$ false. True hypothesis, false conclusion: the inverse fails. Equivalence would require matching truth values in every scenario; this one split already separates them. The inverse tells small companies not to file, which the regulation never said, so the statement is False.`,
+      `**D.** → True
+
+Swap and negate: "no audit, therefore revenue does not exceed $\\$1$ million." That sentence is $\\neg Q\\Rightarrow\\neg P$, the contrapositive, so it is equivalent to the regulation and must hold with it. This is the one rewriting that inherits the regulation's truth, so the statement is True.`,
+      `**E.** → True
+
+Company X has revenue $\\$2$ million. Compare with the threshold: $2>1$, so $P$ is true. X did not file an audit, so $Q$ is false. That is exactly $P\\land\\neg Q$, the unique failure of $P\\Rightarrow Q$. One such company is enough to prove the regulation false. Revenue $\\$2$ million with no audit is the shape the negation calls for, so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 32,
-    solution_overview:
-      "$P$ = “a company's annual revenue exceeds \\$1 million”, $Q$ = “the company files an annual audit”. The regulation is $P \\Rightarrow Q$.\n\n**Negating a rule does not produce another rule.** A regulation is overturned by a single offender, so\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nthat is, *some* company with revenue above \\$1 million filed no audit. The sentence “if revenue exceeds \\$1 million, then no audit is filed” is a rival regulation binding *every* large company; that is a far stronger claim, and not the negation at all.\n\n**Small companies may still audit.** Nothing forbids a firm with \\$300,000 of revenue from filing voluntarily, giving $Q$ true with $P$ false. That case is fatal to the converse $Q \\Rightarrow P$ (“filing proves high revenue”) and equally fatal to the inverse $\\neg P \\Rightarrow \\neg Q$, while the regulation itself is untouched.\n\n**Company X**, at \\$2 million with no audit, has $P$ true and $Q$ false, precisely the shape the negation calls for, so it really does prove the regulation broken. Meanwhile the contrapositive $\\neg Q \\Rightarrow \\neg P$ is the only rewriting that inherits the regulation's truth.",
+    solution_overview: `Write $P$ for "annual revenue exceeds $\\$1$ million" and $Q$ for "the company files an annual audit." The regulation is $P\\Rightarrow Q$.
+
+Negation is a single offender $P\\land\\neg Q$, not a rival rule $P\\Rightarrow\\neg Q$. The converse is $Q\\Rightarrow P$ and the inverse is $\\neg P\\Rightarrow\\neg Q$; both fail if a small firm files voluntarily. The contrapositive $\\neg Q\\Rightarrow\\neg P$ inherits the regulation's truth. Company X has revenue $\\$2$ million and did not file.`,
   },
   {
-    id: "math-1-76",
-    case_id: "MATH 1.76",
-    title: "Commercial pilot license",
-    subsection: "1.3",
-    context:
-      "To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.",
+    id: `math-1-76`,
+    case_id: `MATH 1.76`,
+    title: `Commercial pilot license`,
+    subsection: `1.3`,
+    context: `To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.`,
     statements: [
-      "Pilot A is granted the license.",
-      "Pilot B is granted the license.",
-      "Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.",
-      "If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250 hours and passed the written exam.",
-      "There exists a pilot with more than 250 flight hours who is not granted the license.",
+      `Pilot A is granted the license.`,
+      `Pilot B is granted the license.`,
+      `Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.`,
+      `If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250 hours and passed the written exam.`,
+      `There exists a pilot with more than 250 flight hours who is not granted the license.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nThe failed practical test makes $T$ false, and one false conjunct is enough. Checking the row: $H$ true ($300 \\ge 250$), $W$ true, $T$ false, so $H \\land W \\land T$ fails. **A is not licensed, 300 hours notwithstanding.**\n\nThe license rule is $H\\land W\\land T$: hours, written exam, and practical test, all three. Pilot A’s file: $300\\ge 250$ so $H$ is true; written exam passed so $W$ is true; practical test failed so $T$ is false.\n\nThen $H\\land W\\land T=\\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$. One failed conjunct denies the license.",
-      "**B.** → False\n\nB passed both exams but stopped 10 hours short, so $H$ is false. With $240 < 250$, the hours gate fails even though $W$ and $T$ are true. **No license.**\n\nThe license needs $H \\land W \\land T$. Pilot B has 240 hours ($H$ false) but passed both the written exam and the practical test. Hours are necessary: $240<250$ already kills the conjunction, so B is not licensed.",
-      "**C.** → False\n\nHours are one requirement of three. Pilot A has 300 of them and no license, which settles it: **the flight hours are necessary, never sufficient.** Necessary means you cannot be licensed without them; sufficient would mean hours alone force a license, and A's file kills that reading.\n\nNecessary means: no license unless $H$ holds. Sufficient would mean: $H$ alone forces a license, regardless of $W$ and $T$.\n\nPilot A has $H$ true ($300\\ge 250$) and still fails because $T$ is false. Hours by themselves never grant the license.",
-      "**D.** → True\n\nThe practical test is joined to the rest with **and**, so failing it makes the whole conjunction false whatever the other two columns say. Pilot A is the concrete check: 300 hours, written passed, practical failed, still unlicensed. **No license, whatever the hours and the written result.**\n\nThe grant condition is the conjunction $H\\land W\\land T$. If the practical test fails, $T$ is false, and a false conjunct makes the whole conjunction false even when $H$ and $W$ both hold.\n\nPilot A is that row: 300 hours, written passed, practical failed, unlicensed. Failing the practical test is an absolute bar.",
-      "**E.** → True\n\nPilot A is the required example: 300 hours, no license. **Such a pilot exists.**\n\nThe claim is existential: some pilot with more than 250 hours is still unlicensed. Pilot A's file is the witness: 300 hours, written passed, practical failed. $H$ is true and $T$ is false, so $H \\land W \\land T$ fails. That one file proves such a pilot exists.",
+      `**A.** → False
+
+Pilot A's file: $300\\ge 250$ so $H$ is true; written exam passed so $W$ is true; practical test failed so $T$ is false. Then
+
+$$H\\land W\\land T=\\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+One failed conjunct denies the license. $300$ hours notwithstanding, A is not licensed, so the statement is False.`,
+      `**B.** → False
+
+Pilot B has $240$ hours ($H$ false) but passed both exams. Hours are necessary: $240<250$ already kills the conjunction, so B is not licensed. Both exams cannot repair a shortfall of $10$ hours. The hours gate is not optional, so the statement is False.`,
+      `**C.** → False
+
+Necessary means: no license unless $H$ holds. Sufficient would mean: $H$ alone forces a license, regardless of $W$ and $T$. Pilot A has $H$ true ($300\\ge 250$) and still fails because $T$ is false. Hours by themselves never grant the license. Hours are one requirement of three, so the statement is False.`,
+      `**D.** → True
+
+The grant condition is the conjunction $H\\land W\\land T$. If the practical test fails, $T$ is false, and a false conjunct makes the whole conjunction false even when $H$ and $W$ both hold. Pilot A is that row: $300$ hours, written passed, practical failed, unlicensed. Failing the practical test is an absolute bar, so the statement is True.`,
+      `**E.** → True
+
+The claim is existential: some pilot with more than $250$ hours is still unlicensed. Pilot A's file is the witness: $300$ hours, written passed, practical failed. $H$ is true and $T$ is false, so $H\\land W\\land T$ fails. That one file proves such a pilot exists, so the statement is True.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 33,
-    solution_overview:
-      "“If and only if” fixes the requirements exactly: flight hours, written exam and practical test, all three joined by **and**.\n\n$$\\text{Licensed} \\Leftrightarrow H \\land W \\land T$$\n\nIn a conjunction every part is **necessary** and no part is **sufficient** on its own, a single failure anywhere sinks the application, however strong the other results are. (The opening sentence of the task says the hours are necessary; that is true, and it is all they are.)\n\n| Pilot | $H$ (250+ hours) | $W$ (written exam) | $T$ (practical test) | Licensed? |\n| --- | --- | --- | --- | --- |\n| A, 300 hours | true | true | **false** | no |\n| B, 240 hours | **false** | true | true | no |\n\nBoth applicants fail, for opposite reasons. Pilot A is worth keeping in view: a pilot well past 250 hours who still walks away without a license.",
+    solution_overview: `The license is granted if and only if three tests all hold. Write $H$ for at least $250$ flight hours, $W$ for the written exam, and $T$ for the practical test:
+
+$$\\text{Licensed}\\Leftrightarrow H\\land W\\land T$$
+
+In a conjunction every part is necessary and no part is sufficient on its own. Pilot A: $300$ hours, written passed, practical failed. Pilot B: $240$ hours, both exams passed.`,
   },
   {
-    id: "math-1-77",
-    case_id: "MATH 1.77",
-    title: "Bank loan approval",
-    subsection: "1.3",
-    context:
-      "A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a debt-to-income ratio of 45%.",
+    id: `math-1-77`,
+    case_id: `MATH 1.77`,
+    title: `Bank loan approval`,
+    subsection: `1.3`,
+    context: `A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a debt-to-income ratio of 45%.`,
     statements: [
-      "Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT approved for the loan because their credit score alone is below 700.",
-      "Applicant Q is approved for the loan.",
-      "If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income ratio.",
-      "If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit score or a co-signer.",
-      "It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer and a debt-to-income ratio below 40%.",
+      `Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT approved for the loan because their credit score alone is below 700.`,
+      `Applicant Q is approved for the loan.`,
+      `If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income ratio.`,
+      `If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit score or a co-signer.`,
+      `It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer and a debt-to-income ratio below 40%.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
-      "**A.** → False\n\nThe reasoning stops one step too early. The 650 score does fail $S$, but $C$ is true, and an OR needs only one true part; with the 35% ratio also satisfied, **P is approved**, so the claim is wrong. Explicitly: $S$ false, $C$ true, $D$ true ($35\\% < 40\\%$), so $(S \\lor C) \\land D$ holds.",
-      "**B.** → False\n\nQ satisfies the bracket easily with a 720 score, but the 45% ratio fails $D$, which is chained on outside the bracket. $S$ true makes $S \\lor C$ true, yet $D$ false sinks the conjunction. **Q is denied.**\n\nQ’s file: credit score $720$, so $S$ holds because $720\\ge 700$; no co-signer, so $C$ is false; debt-to-income $45\\%$, and $45\\ge 40$, so $D$ is false.\n\nThe rule is $(S\\lor C)\\land D$. The bracket is true ($S$ alone fills it), but the outer AND still needs $D$:\n\n$$(\\mathrm{T}\\lor\\mathrm{F})\\land\\mathrm{F}=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}.$$\n\nQ is not approved.",
-      "**C.** → False\n\nA good score fills the bracket and does nothing else; $D$ must still hold on its own. Applicant Q, at 720 with a 45% ratio, is the counterexample sitting right in the data. Score $\\ge 700$ never bypasses the debt-ratio gate. **A high score guarantees nothing by itself.**\n\nA score of at least 700 makes $S$ true, which fills $S\\lor C$. Approval still requires the outer conjunct $D$: ratio below $40\\%$.\n\nApplicant Q is the check: $720\\ge 700$ but $45\\%\\ge 40\\%$. The score cannot override a failed ratio, so “always approved regardless of DTI” is false.",
-      "**D.** → True\n\nA false $D$ makes $(S \\lor C) \\land D$ false regardless of what is inside the bracket, so neither a strong score nor a co-signer can rescue the application. **A ratio of 40% or above is an absolute bar.**\n\nThe approval formula is $(S\\lor C)\\land D$. If the ratio is $40\\%$ or above, $D$ is false, and\n\n$$(S\\lor C)\\land\\mathrm{F}=\\mathrm{F}$$\n\nno matter whether $S$ or $C$ holds. A 720 score or a co-signer can fill the bracket and still leave the outer AND false.",
-      "**E.** → True\n\nThat is Applicant P's file exactly: 650, a co-signer, 35%. The co-signer fills the OR when the score is weak, and the ratio clears the outer AND. **A weak score is survivable when the bracket is filled another way and the ratio holds.**\n\nApplicant P is the witness: score $650<700$ so $S$ is false; a qualified co-signer so $C$ is true; ratio $35\\%<40\\%$ so $D$ is true.\n\nThen $(S\\lor C)\\land D=(\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}=\\mathrm{T}$. A score below 700 is allowed whenever the co-signer fills the OR and the ratio clears $40\\%$.",
+      `**A.** → False
+
+The $650$ score does fail $S$, but $C$ is true, and an OR needs only one true part. With the $35\\%$ ratio also satisfied:
+
+$$(S\\lor C)\\land D=(\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}=\\mathrm{T}$$
+
+P is approved. The claim that credit score alone blocks P ignores the OR in the bracket, so the statement is False.`,
+      `**B.** → False
+
+Q's file: credit score $720$, so $S$ holds; no co-signer, so $C$ is false; debt-to-income $45\\%$, so $D$ is false. The bracket is true ($S$ alone fills it), but the outer AND still needs $D$:
+
+$$(S\\lor C)\\land D=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+Q is not approved. The excellent score cannot buy off the ratio, so the statement is False.`,
+      `**C.** → False
+
+A score of at least $700$ makes $S$ true, which fills $S\\lor C$. Approval still requires the outer conjunct $D$: ratio below $40\\%$. Applicant Q is the check: $720\\ge 700$ but $45\\%\\ge 40\\%$. The score cannot override a failed ratio, so "always approved regardless of DTI" is false, so the statement is False.`,
+      `**D.** → True
+
+The approval formula is $(S\\lor C)\\land D$. If the ratio is $40\\%$ or above, $D$ is false, and $(S\\lor C)\\land\\mathrm{F}=\\mathrm{F}$ no matter whether $S$ or $C$ holds. A $720$ score or a co-signer can fill the bracket and still leave the outer AND false. A ratio of $40\\%$ or above is an absolute bar, so the statement is True.`,
+      `**E.** → True
+
+Applicant P is the witness: score $650<700$ so $S$ is false; a qualified co-signer so $C$ is true; ratio $35\\%<40\\%$ so $D$ is true. Then
+
+$$(S\\lor C)\\land D=(\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}=\\mathrm{T}$$
+
+A score below $700$ is allowed whenever the co-signer fills the OR and the ratio clears $40\\%$, so the statement is True.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 34,
-    solution_overview:
-      "The approval rule mixes both connectives, and the bracket is where the meaning lives:\n\n$$\\text{Approved} \\Leftrightarrow (S \\lor C) \\land D$$\n\nwith $S$ = credit score at least 700, $C$ = a qualified co-signer, $D$ = debt-to-income ratio below 40%.\n\n**Inside the bracket**, score and co-signer are alternatives; an **or** is satisfied by either one, so a weak score is not fatal when a co-signer is present. **Outside the bracket**, $D$ is chained on with **and**, which turns the debt ratio into an absolute requirement that nothing can offset.\n\n**Applicant P**, score 650, so $S$ is false, but the co-signer makes $C$ true and the bracket holds; the 35% ratio makes $D$ true. Both parts hold, so **P is approved**, and the low score never comes up again.\n\n**Applicant Q**, score 720, so the bracket holds easily; the 45% ratio makes $D$ false. The excellent score cannot buy off the ratio, so **Q is denied**.\n\nThe pair demonstrates both halves of the rule at once: a below-700 score is survivable, a ratio of 40% or more never is.",
+    solution_overview: `The approval rule mixes both connectives:
+
+$$\\text{Approved}\\Leftrightarrow(S\\lor C)\\land D$$
+
+with $S$ = credit score at least $700$, $C$ = a qualified co-signer, $D$ = debt-to-income ratio below $40\\%$. Inside the bracket, score and co-signer are alternatives. Outside the bracket, $D$ is chained on with and, so the ratio is an absolute requirement. Applicant P: score $650$, co-signer, ratio $35\\%$. Applicant Q: score $720$, no co-signer, ratio $45\\%$.`,
   },
   {
-    id: "math-1-78",
-    case_id: "MATH 1.78",
-    title: "A restaurant's policy is : \"If a customer orders dessert, they receive",
-    subsection: "1.3",
-    context:
-      'A restaurant policy states: "If a customer orders dessert, they receive one loyalty point." Diner Sam received a loyalty point despite not ordering dessert; he got one as part of a birthday promotion.',
+    id: `math-1-78`,
+    case_id: `MATH 1.78`,
+    title: `Sam's Loyalty Point and the Converse of a Dessert Rule`,
+    subsection: `1.3`,
+    context: `A restaurant policy states: "If a customer orders dessert, they receive one loyalty point." Diner Sam received a loyalty point despite not ordering dessert; he got one as part of a birthday promotion.`,
     statements: [
-      "Sam's case is exactly what's needed to disprove the converse, \"If a customer receives a loyalty point, they ordered dessert.\"",
-      'A proof by contradiction of "not every point-earning diner ordered dessert" would begin by assuming the opposite - "every diner who received a point ordered dessert" - and then show Sam\'s case violates that assumption.',
-      "Sam's case also disproves the policy that ordering dessert guarantees a loyalty point.",
-      "The correctly formed negation of the original policy would require finding a diner who ordered dessert and did NOT receive a point - a completely different scenario from Sam's.",
-      'The inverse, "If a customer does not order dessert, they do not receive a point," is directly contradicted by Sam\'s case.',
+      `Sam's case is exactly what's needed to disprove the converse, "If a customer receives a loyalty point, they ordered dessert."`,
+      `A proof by contradiction of "not every point-earning diner ordered dessert" would begin by assuming the opposite - "every diner who received a point ordered dessert" - and then show Sam's case violates that assumption.`,
+      `Sam's case also disproves the policy that ordering dessert guarantees a loyalty point.`,
+      `The correctly formed negation of the original policy would require finding a diner who ordered dessert and did NOT receive a point - a completely different scenario from Sam's.`,
+      `The inverse, "If a customer does not order dessert, they do not receive a point," is directly contradicted by Sam's case.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe converse says every point-earner ordered dessert; Sam earned a point without dessert, so its condition is true and its conclusion false. Sam's shape is $P$ false, $Q$ true, which is exactly how $Q \\Rightarrow P$ fails. **He is the ideal refutation of the converse.**\n\nThe converse is $Q\\Rightarrow P$: every loyalty-point diner ordered dessert. Sam received a point ($Q$ true) as a birthday promotion and did not order dessert ($P$ false).\n\nTrue “if”, false “then”: $Q\\Rightarrow P$ fails on Sam. That is the unique failure row of the converse.",
-      "**B.** → True\n\nThe target is “not every point-earner ordered dessert”, so the assumption to be contradicted is “every point-earner ordered dessert”, the converse, and Sam is the immediate contradiction. **The proof is set up correctly.**\n\nThe target is “not every point-earning diner ordered dessert.” Its opposite is “every diner who received a point ordered dessert,” which is $Q\\Rightarrow P$.\n\nAssume that opposite. Sam received a point without ordering dessert, so the assumption is false. That is a correctly opened proof by contradiction, with Sam as the colliding case.",
-      "**C.** → False\n\nSam has the mirror image of the shape needed. Breaking the policy takes dessert with no point; Sam had a point with no dessert, and the policy makes no promise about diners who skip dessert. To kill $P \\Rightarrow Q$ you need $P \\land \\neg Q$; Sam offers $\\neg P \\land Q$. **The policy survives him.**\n\nThe original policy is $P\\Rightarrow Q$: order dessert, get a point. It fails only on dessert with no point.\n\nSam skipped dessert and still got a birthday point: $\\neg P\\land Q$. The policy never promised anything about diners who skip dessert, so Sam does not touch $P\\Rightarrow Q$.",
-      "**D.** → True\n\nThe negation is $P \\land \\neg Q$: dessert ordered, point withheld. That diner differs from Sam in both coordinates. Sam's coordinates are the opposite pair, so he cannot serve as that negation. **The statement gets the negation and the contrast right.**\n\nNegating $P\\Rightarrow Q$ produces $P\\land\\neg Q$: a diner who ordered dessert and did not receive a point. Sam’s coordinates are the opposite pair (no dessert, got a point).\n\nFinding Sam therefore cannot be the correctly formed negation of the policy. The claim names both the right shape and the contrast with Sam.",
-      "**E.** → True\n\nThe inverse promises no point to anyone skipping dessert, and Sam walked out with one. With $\\neg P$ true and $\\neg Q$ false, $\\neg P \\Rightarrow \\neg Q$ fails on the spot. **His birthday point refutes it directly.**\n\nThe inverse says: skip dessert, therefore receive no point. Sam skipped dessert ($\\neg P$ true) and still received a birthday point ($\\neg Q$ false).\n\nTrue hypothesis, false conclusion: the inverse is false, and Sam is the witness.",
+      `**A.** → True
+
+The converse is $Q\\Rightarrow P$: every loyalty-point diner ordered dessert. Sam received a point ($Q$ true) as a birthday promotion and did not order dessert ($P$ false). True "if", false "then": $Q\\Rightarrow P$ fails on Sam. That is the unique failure row of the converse. He is the ideal refutation, so the statement is True.`,
+      `**B.** → True
+
+The target is "not every point-earning diner ordered dessert." Its opposite is "every diner who received a point ordered dessert," which is $Q\\Rightarrow P$. Assume that opposite. Sam received a point without ordering dessert, so the assumption is false. That is a correctly opened proof by contradiction, with Sam as the colliding case, so the statement is True.`,
+      `**C.** → False
+
+The original policy is $P\\Rightarrow Q$: order dessert, get a point. It fails only on dessert with no point. Sam skipped dessert and still got a birthday point: $\\neg P\\land Q$. The policy never promised anything about diners who skip dessert, so Sam does not touch $P\\Rightarrow Q$. To kill $P\\Rightarrow Q$ you need $P\\land\\neg Q$; Sam offers the opposite pair, so the statement is False.`,
+      `**D.** → True
+
+Negating $P\\Rightarrow Q$ produces $P\\land\\neg Q$: a diner who ordered dessert and did not receive a point. Sam's coordinates are the opposite pair (no dessert, got a point). Finding Sam therefore cannot be the correctly formed negation of the policy. The diner who would negate the policy differs from Sam in both coordinates, so the statement is True.`,
+      `**E.** → True
+
+The inverse says: skip dessert, therefore receive no point. Sam skipped dessert ($\\neg P$ true) and still received a birthday point ($\\neg Q$ false). True hypothesis, false conclusion: the inverse is false, and Sam is the witness. The inverse promises no point to anyone skipping dessert, and Sam walked out with one, so the statement is True.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 35,
-    solution_overview:
-      "$P$ = “the diner orders dessert”, $Q$ = “the diner receives a loyalty point”, and the policy is $P \\Rightarrow Q$. Sam's birthday point gives him $P$ false, $Q$ true.\n\nEverything in this task turns on comparing **Sam's shape** with the shape each statement needs.\n\nTo refute a conditional you need its “if” half true and its “then” half false. For the **converse** $Q \\Rightarrow P$ (“every point-earner ordered dessert”) that means a point without dessert, Sam exactly. For the **inverse** $\\neg P \\Rightarrow \\neg Q$ (“no dessert, no point”) it means no dessert but a point anyway, Sam again. For the **original policy** it would mean dessert with no point, $P \\land \\neg Q$, which is not Sam at all; the restaurant's promise therefore stands.\n\nThe contradiction argument mentioned in the statements is the same observation in formal dress: to prove “not every point-earning diner ordered dessert”, assume the opposite, that is the converse $Q \\Rightarrow P$, then produce Sam and watch the assumption die.",
+    solution_overview: `Write $P$ for "the diner orders dessert" and $Q$ for "the diner receives a loyalty point." The policy is $P\\Rightarrow Q$. Sam's birthday point gives him $P$ false and $Q$ true.
+
+To refute a conditional you need its "if" half true and its "then" half false. The converse is $Q\\Rightarrow P$, the inverse is $\\neg P\\Rightarrow\\neg Q$, and the original fails only on $P\\land\\neg Q$. A contradiction proof of "not every point-earner ordered dessert" opens by assuming the converse.`,
   },
   {
-    id: "math-1-79",
-    case_id: "MATH 1.79",
-    title: "Nested quantifiers with a product equation",
-    subsection: "1.4",
-    context:
-      "Consider the statement: “For every positive integer m, there exists a positive integer n such that $m \\cdot n = 100$.”",
+    id: `math-1-79`,
+    case_id: `MATH 1.79`,
+    title: `Nested quantifiers with a product equation`,
+    subsection: `1.4`,
+    context: `Consider the statement: “For every positive integer m, there exists a positive integer n such that $m \\cdot n = 100$.”`,
     statements: [
-      "The statement holds when m = 4 (there exists n with 4n = 100).",
-      "The statement holds when m = 3 (there exists n with 3n = 100).",
-      "The overall statement (“for every m, there exists n...”) is true.",
-      "The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, $m \\cdot n \\neq 100$.”",
-      "Reversing the quantifiers to “There exists n such that for every m, $m \\cdot n = 100$” would also produce a false statement.",
+      `The statement holds when m = 4 (there exists n with 4n = 100).`,
+      `The statement holds when m = 3 (there exists n with 3n = 100).`,
+      `The overall statement (“for every m, there exists n...”) is true.`,
+      `The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, $m \\cdot n \\neq 100$.”`,
+      `Reversing the quantifiers to “There exists n such that for every m, $m \\cdot n = 100$” would also produce a false statement.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\n$4$ divides 100, so $n = 25$ is available and $4 \\cdot 25 = 100$. **The condition holds at $m = 4$.**\n\nThe inner claim at $m=4$ asks for a positive integer $n$ with $4n=100$. Dividing gives $n=25$, and $25$ is a positive integer. Check: $4\\cdot 25=100$. So the statement holds at $m=4$.",
-      "**B.** → False\n\n$\\frac{100}{3}$ is not a whole number, and the equation offers no second candidate to try. Solving $3n = 100$ forces $n = \\frac{100}{3}$, which is not a positive integer, and a linear equation has only that one solution. **No positive integer $n$ pairs with $m = 3$.**\n\nFix $m=3$. The inner claim asks for a positive integer $n$ with $3n=100$. Solving gives\n\n$$n=\\frac{100}{3}=33.\\overline{3},$$\n\nwhich is not an integer. No other $n$ can satisfy a linear equation with a unique root, so the statement fails at $m=3$.",
-      "**C.** → False\n\n“For every $m$” admits no exceptions, and $m = 3$ is one. A single failing $m$ is enough to kill a universal claim about every positive integer $m$. **The overall statement fails.**\n\nThe overall claim is $\\forall m\\,\\exists n:\\,mn=100$: every positive integer $m$ must have some positive integer partner $n$.\n\nAt $m=3$ that partner would have to be $\\frac{100}{3}$, which is not an integer. One failing $m$ is enough, so the “for every $m$” sentence is false.",
-      "**D.** → True\n\nPushing a negation through nested quantifiers flips each one and negates the core: $\\forall$ becomes $\\exists$, $\\exists$ becomes $\\forall$, and $mn = 100$ becomes $mn \\neq 100$. The witness $m = 3$ works: for every positive integer $n$, $3n \\neq 100$. **The sentence given is the correct negation**, and $m = 3$ is the witness it promises.",
-      "**E.** → True\n\nWith the quantifiers reversed, a single $n$ must work for every $m$ at once: $m = 1$ demands $n = 100$ and $m = 2$ demands $n = 50$. No number is both. The original allowed $n$ to depend on $m$; the reversal freezes one $n$ for all $m$. **The reversed statement is false, just as claimed.**",
+      `**A.** → True
+
+The inner claim at $m=4$ asks for a positive integer $n$ with $4n=100$. Dividing gives $n=25$, and $25$ is a positive integer. Check:
+
+$$4\\cdot 25=100$$
+
+The inner existential is satisfied at $m=4$. $4$ divides $100$, which is what that $n$ needs, so the statement is True.`,
+      `**B.** → False
+
+Fix $m=3$. The inner claim asks for a positive integer $n$ with $3n=100$. Solving gives $n=100/3$, which is not an integer. No other $n$ can satisfy a linear equation with a unique root, so $m=3$ has no partner. $100/3$ is not a whole number, and the equation offers no second candidate, so the statement is False.`,
+      `**C.** → False
+
+The overall claim is $\\forall m\\,\\exists n:\\, mn=100$: every positive integer $m$ must have some positive integer partner $n$. At $m=3$ that partner would have to be $100/3$, which is not an integer. One failing $m$ is enough, so the "for every $m$" sentence is false. "For every" admits no exceptions, so the statement is False.`,
+      `**D.** → True
+
+Pushing a negation through nested quantifiers flips each one and negates the core: $\\forall$ becomes $\\exists$, $\\exists$ becomes $\\forall$, and $mn=100$ becomes $mn\\ne 100$. The witness $m=3$ works: for every positive integer $n$, $3n\\ne 100$. The sentence given is the correct negation, and $m=3$ is the witness it promises, so the statement is True.`,
+      `**E.** → True
+
+With the quantifiers reversed, a single $n$ must work for every $m$ at once: $m=1$ demands $n=100$ and $m=2$ demands $n=50$. No number is both. The original allowed $n$ to depend on $m$; the reversal freezes one $n$ for all $m$. The reversed statement is false. Same symbols, opposite strength, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 1,
-    solution_overview:
-      "The statement is $\\forall m\\, \\exists n : m \\cdot n = 100$, and the order matters: **first** someone hands you $m$, **then** you go hunting for a matching $n$. So the choice of $n$ is allowed to depend on $m$.\n\nFor a given $m$ the equation forces $n = \\frac{100}{m}$, and that is a legal answer only when $m$ **divides** 100.\n\n$m = 4$: $n = 25$, a positive integer, and $4 \\cdot 25 = 100$. Fine.\n\n$m = 3$: $n = \\frac{100}{3} = 33.\\overline{3}$, not an integer, and no other value can rescue it, since the equation has just one solution. So $m = 3$ has no partner, and one failure is enough to sink a “for every” claim: **the overall statement is false.**\n\n**Negating it** flips each quantifier and negates the equation:\n\n$$\\neg\\big(\\forall m\\, \\exists n : mn = 100\\big) \\equiv \\exists m\\, \\forall n : mn \\neq 100$$\n\nand $m = 3$ is a ready-made witness for that.\n\n**Swapping the quantifiers** produces a much bolder claim, $\\exists n\\, \\forall m : mn = 100$: one fixed $n$ serving every $m$ at once. Since $m = 1$ demands $n = 100$ while $m = 2$ demands $n = 50$, no such $n$ exists, so the reversed statement is false as well.",
+    solution_overview: `The statement is $\\forall m\\,\\exists n:\\, m\\cdot n=100$ over positive integers. First $m$ is given, then $n$ may depend on $m$. For a given $m$ the equation forces $n=100/m$, which is a legal answer only when $m$ divides $100$.
+
+Negation flips each quantifier and the equation:
+
+$$\\neg(\\forall m\\,\\exists n:\\, mn=100)\\equiv\\exists m\\,\\forall n:\\, mn\\ne 100$$
+
+Reversing the quantifiers produces $\\exists n\\,\\forall m:\\, mn=100$: one fixed $n$ serving every $m$ at once.`,
   },
   {
-    id: "math-1-80",
-    case_id: "MATH 1.80",
-    title: "A theft investigation",
-    subsection: "1.4",
-    context:
-      "A theft occurred, and exactly one of four suspects - Ann, Ben, Cara, Dan - is guilty. It is known that:\n\n(1) If Ann is guilty, then Dan is innocent.\n\n(2) If Ben is innocent, then Cara is innocent.\n\n(3) Dan is guilty.\n\n(4) If Cara is guilty, then Ann is guilty.",
+    id: `math-1-80`,
+    case_id: `MATH 1.80`,
+    title: `A theft investigation`,
+    subsection: `1.4`,
+    context: `A theft occurred, and exactly one of four suspects - Ann, Ben, Cara, Dan - is guilty. It is known that:
+
+(1) If Ann is guilty, then Dan is innocent.
+
+(2) If Ben is innocent, then Cara is innocent.
+
+(3) Dan is guilty.
+
+(4) If Cara is guilty, then Ann is guilty.`,
     statements: [
-      "Dan is guilty.",
-      "Ann is guilty.",
-      "Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.",
-      "Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.",
-      "Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty.",
+      `Dan is guilty.`,
+      `Ann is guilty.`,
+      `Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.`,
+      `Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.`,
+      `Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nClue (3) states it outright, with no reasoning required. **Dan is guilty.**\n\nThe investigation lists four clues. Clue (3) is not an implication; it asserts outright that Dan is guilty. No other clue is needed to read that sentence. Dan is guilty.\n\nClue (3) is the atomic sentence “Dan is guilty,” not an implication. Combined with “exactly one of Ann, Ben, Cara, Dan is guilty,” Dan occupies the unique guilty slot.\n\nSo Dan is guilty, and the other three are innocent. Statement A asks only about Dan, which clue (3) already settles.",
-      "**B.** → False\n\nThe guilty slot holds one person and Dan occupies it, so the remaining three are cleared. Ann cannot be guilty once Dan already fills the unique guilty place. **Ann is innocent.**\n\nThe setup says exactly one of the four is guilty. Clue (3) names Dan as guilty. Uniqueness then clears Ann, Ben, and Cara.\n\nAnn is therefore innocent. The claim that Ann is guilty contradicts both clue (3) and the “exactly one” constraint.",
-      "**C.** → False\n\nCara's innocence arrives from clue (3) together with “exactly one is guilty”, without clue (2) being consulted at all. Once Dan is guilty, Cara is automatically innocent by the uniqueness constraint; clue (2) is never needed for that step. Clue (2) is consistent with the solution, but nothing here rests on it. **It is not essential.**\n\nCara’s innocence is forced without opening clue (2). Clue (3) makes Dan guilty; “exactly one guilty” then makes Cara innocent.\n\nClue (2) says: if Ben is innocent, then Cara is innocent. After uniqueness, Ben is already innocent, so clue (2) holds, but it is not the step that established Cara’s innocence. Dropping clue (2) leaves Cara still innocent.",
-      "**D.** → True\n\nWith Ann innocent, clue (1) has a false “if” part, so it is automatically satisfied and produces nothing. Its contrapositive $D \\Rightarrow \\neg A$ could in principle have cleared Ann, but the counting had already done that job. A conditional with a false antecedent yields no new fact about anyone. **Clue (1) adds no information in this puzzle.**",
-      "**E.** → True\n\nClue (3) is a flat assertion rather than a conditional, so it needs no supporting premises. The “exactly one guilty” condition was needed only to clear the other three suspects. **Dan's guilt rests on clue (3) alone.**\n\nClue (3) asserts Dan’s guilt with no “if.” Even if the “exactly one guilty” constraint were dropped, clue (3) would still say Dan is guilty.\n\nUniqueness is used only to clear Ann, Ben, and Cara. Dan’s guilt does not depend on it.",
+      `**A.** → True
+
+Clue (3) is the atomic sentence "Dan is guilty," not an implication. No other clue is needed to read that sentence. Combined with "exactly one of Ann, Ben, Cara, Dan is guilty," Dan occupies the unique guilty slot. Statement A asks only about Dan, which clue (3) already settles, so the statement is True.`,
+      `**B.** → False
+
+The setup says exactly one of the four is guilty. Clue (3) names Dan as guilty. Uniqueness then clears Ann, Ben, and Cara. Ann is therefore innocent. The claim that Ann is guilty contradicts both clue (3) and the "exactly one" constraint. The guilty slot holds one person and Dan occupies it, so the statement is False.`,
+      `**C.** → False
+
+Cara's innocence is forced without opening clue (2). Clue (3) makes Dan guilty; "exactly one guilty" then makes Cara innocent. Clue (2) says: if Ben is innocent, then Cara is innocent. After uniqueness, Ben is already innocent, so clue (2) holds, but it is not the step that established Cara's innocence. Dropping clue (2) leaves Cara still innocent, so the statement is False.`,
+      `**D.** → True
+
+With Ann innocent, clue (1) has a false "if" part, so it is automatically satisfied and produces nothing. Its contrapositive $D\\Rightarrow\\neg A$ could in principle have cleared Ann, but the counting had already done that job. A conditional with a false antecedent yields no new fact about anyone. Clue (1) adds no information in this puzzle, so the statement is True.`,
+      `**E.** → True
+
+Clue (3) asserts Dan's guilt with no "if." Even if the "exactly one guilty" constraint were dropped, clue (3) would still say Dan is guilty. Uniqueness is used only to clear Ann, Ben, and Cara. Dan's guilt does not depend on it. Clue (3) is a flat assertion rather than a conditional, so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 2,
-    solution_overview:
-      "Four suspects, exactly one guilty, and one clue that simply hands the answer over.\n\n**Clue (3) is not a conditional at all.** It is a plain assertion: Dan is guilty. Combine it with “exactly one of the four is guilty” and the whole picture is fixed before the if-then clues are even read.\n\n| Suspect | Verdict | Where it comes from |\n| --- | --- | --- |\n| Dan | **guilty** | clue (3), stated outright |\n| Ann | innocent | only one can be guilty, and Dan holds that place |\n| Ben | innocent | same reason |\n| Cara | innocent | same reason |\n\n**Do the conditional clues add anything?** Check each against the verdicts. Clue (1), $A \\Rightarrow \\neg D$, has a false “if” part, so it is automatically satisfied and yields nothing new. Clue (2), $\\neg B \\Rightarrow \\neg C$, only re-confirms Cara's innocence, which the counting had already given us. Clue (4), $C \\Rightarrow A$, is likewise vacuous with $C$ false. All three are consistent with the solution, and all three are redundant here.",
+    solution_overview: `Exactly one of Ann, Ben, Cara, Dan is guilty. The clues are:
+
+$$(1)\\ A\\Rightarrow\\neg D,\\qquad (2)\\ \\neg B\\Rightarrow\\neg C,\\qquad (3)\\ D,\\qquad (4)\\ C\\Rightarrow A$$
+
+Clue (3) is a plain assertion, not a conditional. Combined with uniqueness, it fills the unique guilty slot and clears the other three. A conditional with a false antecedent yields no new fact.`,
   },
   {
-    id: "math-1-81",
-    case_id: "MATH 1.81",
-    title: "An island of truth-tellers and liars",
-    subsection: "1.4",
-    context:
-      "On an island, every inhabitant either always tells the truth or always lies. Two inhabitants make statements: X says, “Y always lies.” Y says, “X and I are both liars.”",
+    id: `math-1-81`,
+    case_id: `MATH 1.81`,
+    title: `An island of truth-tellers and liars`,
+    subsection: `1.4`,
+    context: `On an island, every inhabitant either always tells the truth or always lies. Two inhabitants make statements: X says, “Y always lies.” Y says, “X and I are both liars.”`,
     statements: [
-      "X is a truth-teller.",
-      "Y is a truth-teller.",
-      "Y's statement (“X and I are both liars”) is false.",
-      "There are two equally valid solutions for the types of X and Y.",
-      "If X were a liar, this would lead to a logical contradiction.",
+      `X is a truth-teller.`,
+      `Y is a truth-teller.`,
+      `Y's statement (“X and I are both liars”) is false.`,
+      `There are two equally valid solutions for the types of X and Y.`,
+      `If X were a liar, this would lead to a logical contradiction.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nAssuming X lies makes Y a truth-teller whose own sentence then forces Y to be a liar, which is impossible; the other assumption runs into no trouble at all. Step through: if X is a liar, then “Y always lies” is false, so Y is truthful; but then “X and I are both liars” would be true, forcing Y to be a liar. Contradiction. **X is a truth-teller.**",
-      "**B.** → False\n\nX is truthful, so X's sentence “Y always lies” is true. **Y is a liar.**\n\nFrom A, X is a truth-teller, so X's sentence “Y always lies” must itself be true. That sentence is $\\neg y$, so Y is a liar, not a truth-teller. The claim that Y tells the truth is false.\n\nX’s sentence is “Y always lies,” that is $\\neg y$. From the surviving case, X is a truth-teller, so that sentence is true, and Y is a liar.\n\nA liar cannot be a truth-teller. Statement B is therefore false. (The other case, X a liar, already collapsed, so this assignment is forced.)",
-      "**C.** → True\n\nY claimed $\\neg x \\land \\neg y$, and $\\neg x$ is false because X is truthful; an AND with a false half is false. That is exactly what a liar's sentence should be. Checking the other half is unnecessary once one conjunct fails. **Y's statement is false.**\n\nY said “X and I are both liars,” that is $\\neg x\\land\\neg y$. In the surviving assignment X is a truth-teller, so $\\neg x$ is false.\n\nA conjunction with a false half is false. That matches Y being a liar: a liar’s sentence must be false. Y’s statement is false.",
-      "**D.** → False\n\nOne of the two cases self-destructs, leaving only the assignment “X truthful, Y lying”. The liar-X case collapses, and the truth-teller-X case is consistent, so there is no second surviving solution. **The solution is unique, not doubled.**\n\nTwo types for X were tested. X a liar forces Y to be both a truth-teller (because X’s sentence is then false) and a liar (because Y’s true sentence would require $\\neg y$). Contradiction.\n\nX a truth-teller forces Y to be a liar, and Y’s false conjunction is consistent. One surviving assignment is not two.",
-      "**E.** → True\n\nA lying X makes “Y always lies” false, so Y would have to be truthful; but a truthful Y's sentence demands that Y be a liar. The two demands on Y cannot both hold, so the opening assumption that X lies must be rejected. **The assumption collapses, which is precisely why that case was ruled out.**",
+      `**A.** → True
+
+Suppose X is a liar. Then X's sentence "$Y$ always lies" is false, so Y is a truth-teller. A truth-teller's sentence must be true, so $\\neg x\\land\\neg y$ holds, which requires $\\neg y$ and makes Y a liar. Y cannot be both. The liar-X case is impossible, so X is a truth-teller.
+
+so the statement is True.`,
+      `**B.** → False
+
+Suppose Y is a truth-teller. Then Y's sentence is true: both X and Y are liars. That requires Y to be a liar, contradicting the opening assumption. So Y is not a truth-teller.
+
+so the statement is False.`,
+      `**C.** → True
+
+Y said that X and Y are both liars. If that sentence were true, Y would be a liar, so the sentence would be false. A sentence cannot be true and false, so Y's statement is false.
+
+so the statement is True.`,
+      `**D.** → False
+
+Two types for X can be tested. X a liar forces Y to be both a truth-teller and a liar: contradiction. X a truth-teller forces Y to be a liar, and Y's false conjunction is consistent because $\\neg x$ is already false. One surviving assignment is not two.
+
+so the statement is False.`,
+      `**E.** → True
+
+A lying X makes "Y always lies" false, so Y would have to be truthful; but a truthful Y's sentence demands that Y be a liar. The two demands on Y cannot both hold, so the opening assumption that X lies must be rejected.
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 3,
-    solution_overview:
-      "Every islander is either a **truth-teller**, whose every sentence is true, or a **liar**, whose every sentence is false. Write $x$ for “X is a truth-teller” and $y$ for “Y is a truth-teller”. X's sentence claims $\\neg y$; Y's sentence claims $\\neg x \\land \\neg y$.\n\nThere are only two possibilities for X, so test them both.\n\n**Case 1: X is a liar.** Then X's sentence is false, so $\\neg y$ is false and Y is a truth-teller. But a truth-teller's sentence must be true, so $\\neg x \\land \\neg y$ holds, and that requires $\\neg y$, making Y a liar. Y cannot be both. **This case is impossible.**\n\n**Case 2: X is a truth-teller.** Then X's sentence is true, so Y is a liar. Check Y for consistency: a liar's sentence must be false, and $\\neg x \\land \\neg y$ is indeed false, because $\\neg x$ is false. Nothing clashes. **This case works.**\n\nOne case collapses and one survives, so the answer is forced and unique: **X tells the truth and Y lies**, which also makes Y's sentence “X and I are both liars” false, as it had to be, given who said it.",
+    solution_overview: `Every islander is either a truth-teller, whose every sentence is true, or a liar, whose every sentence is false. Write $x$ for "X is a truth-teller" and $y$ for "Y is a truth-teller".
+
+X's sentence claims $\\neg y$. Y's sentence claims $\\neg x\\land\\neg y$. Each type assignment must make a truth-teller's sentence true and a liar's sentence false.`,
   },
   {
-    id: "math-1-82",
-    case_id: "MATH 1.82",
-    title: "Quantifier order: exam scores",
-    subsection: "1.4",
-    context:
-      "Compare two statements about a class of students and several exams: Statement 1: “There exists a student who scored above 90 on every exam.” Statement 2: “For every exam, there exists a student who scored above 90.”",
+    id: `math-1-82`,
+    case_id: `MATH 1.82`,
+    title: `Quantifier order: exam scores`,
+    subsection: `1.4`,
+    context: `Compare two statements about a class of students and several exams: Statement 1: “There exists a student who scored above 90 on every exam.” Statement 2: “For every exam, there exists a student who scored above 90.”`,
     statements: [
-      "Statement 1 logically implies Statement 2.",
-      "Statement 2 logically implies Statement 1.",
-      "The two statements are logically equivalent.",
-      "If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.",
-      "If there is only one exam, the two statements become logically equivalent.",
+      `Statement 1 logically implies Statement 2.`,
+      `Statement 2 logically implies Statement 1.`,
+      `The two statements are logically equivalent.`,
+      `If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.`,
+      `If there is only one exam, the two statements become logically equivalent.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nStatement 1 is $\\exists s\\,\\forall e\\, G(s,e)$: some student scored above 90 on every exam. Fix that student $s_0$, then pick an arbitrary exam $e$: $G(s_0,e)$ holds, so $\\forall e\\,\\exists s\\, G(s,e)$ follows at once.\n\nTake the student who beat 90 on every exam and hand that same student to whichever exam you are asked about; the requirement of Statement 2 is met every time. No class can make Statement 1 true and Statement 2 false, so the implication **holds**.",
-      "**B.** → False\n\n**The class that breaks it:** X is above 90 only on Exam 1, Y only on Exam 2.\n\n**What happens there:** each exam has its own high scorer, so Statement 2 is true, yet nobody clears both exams, so Statement 1 fails. Check the numbers against each claim in turn: Exam 1 has X, Exam 2 has Y, so $\\forall e\\,\\exists s\\,G(s,e)$ holds, but neither X nor Y satisfies $\\forall e\\,G(s,e)$, so $\\exists s\\,\\forall e\\,G(s,e)$ fails. A single such class is enough, **the implication does not hold**.",
-      "**C.** → False\n\nEquivalence needs both arrows. The arrow from Statement 1 to Statement 2 is fine, but the two-student class sends Statement 2 true and Statement 1 false, so the arrow back is missing. The trap is thinking \"same predicates, so same meaning\": the predicates match, but the quantifier order does not, and that alone breaks equivalence. **One-way implication, not equivalence.**",
-      '**D.** → True\n\n"Each exam has a high scorer, but the high scorer keeps changing" is a description of exactly the two-student class above, and nothing in it breaks any rule about scores. So yes, Statement 2 can be true while Statement 1 is false, **this really can happen**. The claim is just naming the counterexample pattern already used against B and C; it does not invent a new class of students.',
-      "**E.** → True\n\nRestrict the exam domain to a singleton $\\{e_1\\}$. Then $\\forall e\\, G(s,e)$ and the inner existential in Statement 2 both collapse to the single condition $G(s,e_1)$.\n\nWith a single exam there is nothing for the two quantifiers to disagree about: both statements shrink to $\\exists s\\; G(s,e_1)$, and identical sentences always share a truth value. **Equivalent in that special case.**",
+      `**A.** → True
+
+Statement 1 is $\\exists s\\,\\forall e\\, G(s,e)$. Fix that student $s_0$, then pick an arbitrary exam $e$: $G(s_0,e)$ holds, so $\\forall e\\,\\exists s\\, G(s,e)$ follows at once. Hand that same student to whichever exam you are asked about.
+
+so the statement is True.`,
+      `**B.** → False
+
+Two exams, two students: X tops Exam 1 only, Y tops Exam 2 only. Each exam has a high scorer, so Statement 2 is true, yet nobody clears both exams, so Statement 1 fails. A single such class is enough. The reverse arrow does not hold.
+
+so the statement is False.`,
+      `**C.** → False
+
+Equivalence needs both arrows. Statement 1 implies Statement 2, but a two-student class with a different top scorer on each exam sends Statement 2 true and Statement 1 false, so the arrow back is missing. Same predicates, different quantifier order.
+
+so the statement is False.`,
+      `**D.** → True
+
+"Each exam has a high scorer, but the high scorer keeps changing" is exactly that split: Statement 2 can be true while Statement 1 is false. One class with a rotating top scorer is a witness.
+
+so the statement is True.`,
+      `**E.** → True
+
+Restrict the exam domain to a singleton $\\{e_1\\}$. Then $\\forall e\\, G(s,e)$ and the inner existential in Statement 2 both collapse to $G(s,e_1)$. With a single exam there is nothing for the two quantifiers to disagree about: both statements shrink to $\\exists s\\; G(s,e_1)$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 4,
-    solution_overview:
-      'The two statements use the same ingredients in a different order, and the order is the whole story. Write $G(s,e)$ for "student $s$ scored above 90 on exam $e$".\n\n**Both statements in symbols**\n\n$$S_1:\\ \\exists s\\,\\forall e\\; G(s,e) \\qquad\\text{and}\\qquad S_2:\\ \\forall e\\,\\exists s\\; G(s,e).$$\n\nIn $S_1$ the student is picked **first** and must then survive every exam. In $S_2$ the exam is named first, so the student is allowed to be a different person for each exam.\n\n**One direction comes for free**\n\nSuppose some student $s_0$ scored above 90 on every exam. Name any exam you like: that same $s_0$ works for it. So $S_1$ always drags $S_2$ along behind it.\n\n**A class that pulls them apart**\n\nTwo exams, two students, scores as shown.\n\n| | Exam 1 | Exam 2 |\n| --- | --- | --- |\n| Student X | above 90 | below 90 |\n| Student Y | below 90 | above 90 |\n\nEvery exam has somebody above 90, so $S_2$ is **true**; but X fails Exam 2 and Y fails Exam 1, so no single student covers both and $S_1$ is **false**. One class like this is enough to show that $S_2$ does not imply $S_1$, and therefore that the two statements are **not equivalent**.\n\n**The one-exam case**\n\nWith only one exam $e_1$, "on every exam" and "for every exam" both shrink to that single exam, and each statement turns into $\\exists s\\; G(s,e_1)$, literally the same sentence, so the two now stand or fall together.',
+    solution_overview: `Write $G(s,e)$ for "student $s$ scored above $90$ on exam $e$". Statement 1 picks the student first:
+
+$$S_1:\\ \\exists s\\,\\forall e\\; G(s,e)$$
+
+Statement 2 names the exam first, so the student is allowed to change:
+
+$$S_2:\\ \\forall e\\,\\exists s\\; G(s,e)$$
+
+In $S_1$ one student must survive every exam. In $S_2$ a different student may cover each exam.`,
   },
   {
-    id: "math-1-83",
-    case_id: "MATH 1.83",
-    title: "A hiring committee's voting rule",
-    subsection: "1.4",
-    context:
-      "A hiring committee of four reviewers (R1, R2, R3, R4) approves a candidate if at least three of the four vote yes, OR if exactly two vote yes and R1 is one of the two yes-votes (R1 has tie-breaking authority in that specific case only). For one candidate, R1 and R2 voted yes, while R3 and R4 voted no.",
+    id: `math-1-83`,
+    case_id: `MATH 1.83`,
+    title: `A hiring committee's voting rule`,
+    subsection: `1.4`,
+    context: `A hiring committee of four reviewers (R1, R2, R3, R4) approves a candidate if at least three of the four vote yes, OR if exactly two vote yes and R1 is one of the two yes-votes (R1 has tie-breaking authority in that specific case only). For one candidate, R1 and R2 voted yes, while R3 and R4 voted no.`,
     statements: [
-      "The candidate is approved.",
-      "If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the same rule.",
-      "If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.",
-      "R1's yes-vote is necessary for approval in every possible voting scenario.",
-      "There exists a scenario with exactly 2 yes-votes where the candidate is not approved.",
+      `The candidate is approved.`,
+      `If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the same rule.`,
+      `If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.`,
+      `R1's yes-vote is necessary for approval in every possible voting scenario.`,
+      `There exists a scenario with exactly 2 yes-votes where the candidate is not approved.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe given votes are R1 yes, R2 yes, R3 no, R4 no, so $Y = 2$. Gate 1 asks whether $Y \\ge 3$: $2 \\ge 3$ fails, so that gate stays closed. Gate 2 asks whether $Y = 2$ and R1 is among the yes-votes: both hold, so gate 2 opens.\n\nTwo yes-votes with R1 inside the pair is precisely the row where gate 2 opens. **Approved.**",
-      '**B.** → False\n\nThe trap is treating the tie-breaking power as belonging to "any two reviewers". It is written for R1 by name. With yes-votes from R2 and R3 the count is still 2, so gate 1 stays shut, and gate 2 asks for R1 specifically, who voted no. Compare with the given candidate (R1 and R2 yes): same $Y = 2$, but R1\'s presence flips the outcome. **Rejected, not approved.**\n\nThe hypothetical votes are R2 yes, R3 yes, R1 no, R4 no. Count: $Y=2$.\n\nGate 1: $2\\ge 3$? No. Gate 2: $Y=2$ and R1 among the yes-votes? R1 voted no, so gate 2 stays closed. Both gates closed: not approved. The given candidate (R1 and R2 yes) had the same count but R1 inside the pair, which is why that one passed.',
-      "**C.** → True\n\nThe first gate of the rule is $Y \\ge 3$, and names are ignored there. Any three yes-votes give $Y = 3$, which meets that count, so gate 1 opens no matter which three reviewers they are.\n\nGate 1 counts votes and never reads names, so any three yes-votes clear it. **All four possible triples give approval.**",
-      '**D.** → False\n\n"Necessary in every scenario" is a strong claim, and one counter-scenario sinks it: yes-votes from R2, R3 and R4 give $Y = 3$, gate 1 opens, and R1 voted no. R1 is decisive only in the two-vote case. The trap is confusing "sometimes decisive" with "always required"; the three-yes table row shows approval without R1. **Not necessary.**\n\nNecessary in every scenario would mean: no approval unless R1 votes yes. Test the triple {R2, R3, R4} with R1 voting no.\n\nThen $Y=3$, so gate 1 opens on the count alone and names are ignored. The candidate is approved while R1 voted no. R1’s yes-vote is therefore not necessary in every scenario.',
-      '**E.** → True\n\nYes from R2 and R3 only: $2 < 3$ closes gate 1, and R1\'s absence closes gate 2. That is one scenario with exactly two yes-votes and no approval, which is all an "there exists" claim needs. The same pair already appeared in B as a rejection case, so the existence claim is not hypothetical. **Such a scenario exists.**\n\nNeed one two-yes board that fails. Take R2 and R3 yes, R1 and R4 no.\n\n$Y=2<3$ closes gate 1. R1 is not among the yes-votes, so gate 2 is closed too. Exactly two yes-votes and no approval: the existence claim holds. Any two-yes pair that excludes R1 works the same way.',
+      `**A.** → True
+
+The given votes are R1 yes, R2 yes, R3 no, R4 no, so $Y=2$. Gate 1 asks $Y\\ge 3$: $2\\ge 3$ fails. Gate 2 asks whether $Y=2$ and R1 is among the yes-votes: both hold, so gate 2 opens. The candidate is approved.
+
+so the statement is True.`,
+      `**B.** → False
+
+The tie-breaking power is written for R1 by name, not for any two reviewers. With yes-votes from R2 and R3 the count is still $2$, so gate 1 stays shut, and R1 voted no, so gate 2 stays shut. Same $Y=2$ as the given candidate, but R1's absence flips the outcome.
+
+so the statement is False.`,
+      `**C.** → True
+
+Gate 1 is $Y\\ge 3$, and names are ignored there. Any three yes-votes give $Y=3$, which meets that count, so gate 1 opens no matter which three reviewers they are.
+
+so the statement is True.`,
+      `**D.** → False
+
+"Necessary in every scenario" is a strong claim, and one counter-scenario sinks it: yes-votes from R2, R3 and R4 give $Y=3$, gate 1 opens, and R1 voted no. R1 is decisive only in the two-vote case.
+
+so the statement is False.`,
+      `**E.** → True
+
+Yes from R2 and R3 only: $2<3$ closes gate 1, and R1's absence closes gate 2. That is one scenario with exactly two yes-votes and no approval, which is all an "there exists" claim needs.
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 5,
-    solution_overview:
-      "The committee rule has two independent gates, and a candidate is approved the moment **one** of them opens. Let $Y$ be the number of yes-votes.\n\n**Gate 1.** $Y \\ge 3$. Only the count matters here; names are ignored.\n\n**Gate 2.** $Y = 2$ **and** R1 is one of the two. Here the name matters.\n\n**Checking this candidate**\n\nR1 yes, R2 yes, R3 no, R4 no, so $Y = 2$.\n\n• Gate 1: is $2 \\ge 3$? No, closed.\n\n• Gate 2: is $Y = 2$? Yes. Is R1 among the yes-votes? Yes. **Gate 2 opens, so the candidate is approved.**\n\n**Every other shape of vote**\n\n| Yes-votes | Gate 1 | Gate 2 | Outcome |\n| --- | --- | --- | --- |\n| 3 or 4, any names | opens | n/a | approved |\n| exactly 2, R1 inside | closed | opens | approved |\n| exactly 2, R1 outside | closed | closed | rejected |\n| 1 or 0 | closed | closed | rejected |\n\nThe table shows where R1's special power actually lives: in the two middle rows only. With three yes-votes the count alone decides, so {R2, R3, R4} is approved while R1 votes no; with two yes-votes and R1 outside, such as {R2, R3}, the candidate is turned down.",
+    solution_overview: `The committee rule has two independent gates, and a candidate is approved the moment one of them opens. Let $Y$ be the number of yes-votes.
+
+Gate 1: $Y\\ge 3$. Only the count matters; names are ignored.
+
+Gate 2: $Y=2$ and R1 is one of the two. Here the name matters.
+
+R1's special power lives only in the two-vote rows. With three yes-votes the count alone decides.`,
   },
   {
-    id: "math-1-84",
-    case_id: "MATH 1.84",
-    title: "A warranty voiding clause",
-    subsection: "1.4",
-    context:
-      "A product warranty: “The warranty is void if the product is used commercially, except if the manufacturer has explicitly approved commercial use in writing, in which case the warranty remains valid provided the product is serviced annually.” Company Z uses the product commercially, has written approval from the manufacturer, but has never had the product serviced.",
+    id: `math-1-84`,
+    case_id: `MATH 1.84`,
+    title: `A warranty voiding clause`,
+    subsection: `1.4`,
+    context: `A product warranty: “The warranty is void if the product is used commercially, except if the manufacturer has explicitly approved commercial use in writing, in which case the warranty remains valid provided the product is serviced annually.” Company Z uses the product commercially, has written approval from the manufacturer, but has never had the product serviced.`,
     statements: [
-      "Company Z's warranty is void.",
-      "Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite commercial use.",
-      "The rule's exception requires both approval AND annual servicing to keep the warranty valid under commercial use - satisfying only one of the two is not enough.",
-      "If a company uses the product commercially without any manufacturer approval at all, the warranty could still remain valid provided they service it annually.",
-      "If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in the clause would still apply to it.",
+      `Company Z's warranty is void.`,
+      `Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite commercial use.`,
+      `The rule's exception requires both approval AND annual servicing to keep the warranty valid under commercial use - satisfying only one of the two is not enough.`,
+      `If a company uses the product commercially without any manufacturer approval at all, the warranty could still remain valid provided they service it annually.`,
+      `If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in the clause would still apply to it.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nCompany Z uses the product commercially ($C$ true), has written approval ($W$ true), and has never serviced it ($S$ false). The exception keeps cover only when $W$ and $S$ both hold, and $S$ is missing, so the rescue never opens.\n\nCommercial use puts Z inside the voiding clause, and the rescue needs approval **and** servicing; Z has only the approval. **The warranty is void.**",
-      '**B.** → False\n\nZ is the living counterexample: written approval in hand, warranty gone. Approval is one half of the rescue, and half of an "and" rescues nothing. Match the facts: $C$ true, $W$ true, $S$ false, so "$W$ and $S$" fails and the rescue never opens. **Not sufficient on its own.**\n\nCompany Z already has written approval ($W$ true) and uses the product commercially ($C$ true), yet has never serviced it ($S$ false). The rescue is $W\\land S$, so\n\n$$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}.$$\n\nApproval alone does not keep the warranty valid. Z is the counterexample sitting in the task.',
-      "**C.** → True\n\nThe rescue formula is $W$ and $S$: both halves of the exception must hold. Check the one-sided cases against that formula. Approval without servicing ($W$ true, $S$ false) leaves the conjunction false; servicing without approval ($S$ true, $W$ false) does the same.\n\nThe middle rows of the table say it directly, approval without servicing is void, servicing without approval is void, so the two are needed together. That is exactly the reading the claim gives. **Correct.**",
-      "**D.** → False\n\nThe trap here is treating servicing as a second, independent way to keep cover. It is not: servicing appears only inside the exception, and the exception opens with written approval. Without approval the row is void whatever the service history. Annual servicing alone never reaches the rescue clause, so it cannot keep commercial use covered. **The warranty would not survive.**\n\nWithout written approval, $W$ is false. The exception is $W\\land S$, and a false $W$ makes the conjunction false even if $S$ is true.\n\nCommercial use with servicing but no approval therefore stays in the voiding clause. Annual servicing is not an independent escape hatch.",
-      "**E.** → False\n\nThe servicing requirement sits inside an exception to the commercial-use clause, and an owner who never uses the product commercially never reaches that clause at all. Nothing in the warranty then asks them to service anything. The trap is reading a nested proviso as a freestanding duty that applies to every owner. **The requirement would not apply.**\n\nThe servicing condition sits inside the exception to the commercial-use voiding clause. If Company Z never used the product commercially, $C$ is false and that clause never fires.\n\nNothing in the quoted warranty then asks for annual servicing. The nested proviso is not a global duty.",
+      `**A.** → True
+
+Company Z uses the product commercially ($C$ true), has written approval ($W$ true), and has never serviced it ($S$ false). The rescue needs $W$ and $S$ together, and $S$ is missing, so the rescue never opens. Commercial use puts Z inside the voiding clause. The warranty is void.
+
+so the statement is True.`,
+      `**B.** → False
+
+Approval is one half of the rescue, and half of an "and" rescues nothing. Z has $W$ true and $S$ false, so $W\\land S$ is false. Z is the living counterexample: written approval in hand, warranty gone.
+
+so the statement is False.`,
+      `**C.** → True
+
+The rescue formula is $W$ and $S$: both halves of the exception must hold. Approval without servicing leaves the conjunction false; servicing without approval does the same. Satisfying only one of the two is not enough.
+
+so the statement is True.`,
+      `**D.** → False
+
+Servicing appears only inside the exception, and the exception opens with written approval. Without approval, $W$ is false, so $W\\land S$ is false even if $S$ is true. Annual servicing is not an independent escape hatch.
+
+so the statement is False.`,
+      `**E.** → False
+
+The servicing requirement sits inside an exception to the commercial-use clause. If Z never used the product commercially, $C$ is false and that clause never fires. Nothing in the quoted warranty then asks for annual servicing.
+
+so the statement is False.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 6,
-    solution_overview:
-      'Read the clause as a short decision path. Let $C$ = the product is used commercially, $W$ = the manufacturer approved commercial use in writing, $S$ = the product is serviced every year.\n\nIf $C$ is false the clause never fires, it has nothing to say about that owner. If $C$ is true the warranty is void **unless** the rescue clause applies, and the rescue clause needs $W$ and $S$ together. For a commercially used product the warranty survives exactly when both halves hold:\n\n$$W \\wedge S$$\n\nThe word "and" is unforgiving: one missing half sinks the whole rescue.\n\n**Company Z on this path**\n\nZ uses the product commercially, so the path enters the voiding clause. Z has written approval but has never serviced the product, so $W \\wedge S$ is false and the rescue does not apply. **Z\'s warranty is void.**\n\n**All four commercially used cases**\n\n| Written approval | Serviced annually | Warranty |\n| --- | --- | --- |\n| yes | yes | valid |\n| yes | no | void, this is Company Z |\n| no | yes | void |\n| no | no | void |\n\nOnly the first row survives, which is another way of saying that approval alone and servicing alone are each worth nothing on their own.',
+    solution_overview: `Let $C$ mean the product is used commercially, $W$ mean the manufacturer approved commercial use in writing, and $S$ mean the product is serviced every year.
+
+If $C$ is false the clause never fires. If $C$ is true the warranty is void unless the rescue clause applies, and the rescue needs $W$ and $S$ together. For a commercially used product the warranty survives exactly when both halves hold:
+
+$$W\\land S$$
+
+One missing half sinks the whole rescue.`,
   },
   {
-    id: "math-1-85",
-    case_id: "MATH 1.85",
-    title: "Several independent mini-scenarios testing whether a proof or negation",
-    subsection: "1.4",
-    context:
-      "Several independent mini-scenarios testing whether a proof or negation is correctly constructed.",
+    id: `math-1-85`,
+    case_id: `MATH 1.85`,
+    title: `Five Independent Checks on Proof and Negation Technique`,
+    subsection: `1.4`,
+    context: `Several independent mini-scenarios testing whether a proof or negation is correctly constructed.`,
     statements: [
-      'Proving "there is no smallest positive real number" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.',
-      'A "proof" of "√3 is irrational" that begins "Assume √3 is irrational..." and proceeds from there is a valid proof by contradiction.',
-      'The negation of "All flights are delayed and all trains are on time" is "No flight is delayed and no train is on time."',
-      'For "Some employee always arrives late" (some employee is late every day), the correct negation is "All employees are never late."',
-      "One satisfying value proves an existential claim; a universal claim needs an argument for an arbitrary value, not a finite check.",
+      `Proving "there is no smallest positive real number" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.`,
+      `A "proof" of "√3 is irrational" that begins "Assume √3 is irrational..." and proceeds from there is a valid proof by contradiction.`,
+      `The negation of "All flights are delayed and all trains are on time" is "No flight is delayed and no train is on time."`,
+      `For "Some employee always arrives late" (some employee is late every day), the correct negation is "All employees are never late."`,
+      `One satisfying value proves an existential claim; a universal claim needs an argument for an arbitrary value, not a finite check.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe target is \"there is no smallest positive real number\", so the legal opening is the opposite: suppose such an $x > 0$ exists. Then $\\frac{x}{2}$ is still positive and strictly smaller than $x$, so $x$ was not smallest after all.\n\nThe proof opens with the negation of the target and ends in an impossibility, the two things a contradiction proof must do. **The reasoning is legitimate.**",
-      '**B.** → False\n\n**What it assumes:** "$\\sqrt{3}$ is irrational", the very claim to be proved.\n\n**What it should assume:** "$\\sqrt{3} = \\frac{p}{q}$ in lowest terms".\n\nStarting from the goal makes the argument circular, so it is **not** a proof by contradiction. The trap is copying the opening phrase "assume ..." without checking that the assumption is the *opposite* of the target.\n\nA contradiction proof of “$\\sqrt{3}$ is irrational” must assume the negation: $\\sqrt{3}$ is rational, so $\\sqrt{3}=\\frac{p}{q}$ in lowest terms.\n\nOpening with “assume $\\sqrt{3}$ is irrational” assumes the conclusion itself. There is then nothing left to contradict, so the write-up is not a proof by contradiction.',
-      '**C.** → False\n\nTwo mistakes in one sentence: the "and" should have turned into an "or", and "all are" should have turned into "some is not". The offered sentence is much stronger than the negation. A world with one on-time flight and every train on time already falsifies the original while leaving the offered "negation" false, so the two cannot be negations of each other. **Wrongly formed.**\n\nThe original is $(\\forall f\\,D(f))\\land(\\forall t\\,O(t))$. Negating an AND yields an OR, and negating “all” yields “some not”:\n\n$$\\exists f\\,\\neg D(f)\\ \\lor\\ \\exists t\\,\\neg O(t).$$\n\nThe offered sentence is “no flight delayed and no train on time,” which keeps the AND and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false.',
-      '**D.** → False\n\n"All employees are never late" bans lateness completely, while the real negation only says each employee has one non-late day. In an office where everybody is late sometimes but nobody is late daily, the original is false and this sentence is false too, and two sentences that are false together cannot be negations of each other. The trap is stacking "all" with "never" when the correct flips are $\\exists \\to \\forall$ and $\\forall \\to \\exists$. **Not the negation.**\n\n“Some employee always arrives late” is $\\exists x\\,\\forall d\\,L(x,d)$. Flip both quantifiers and negate inside:\n\n$$\\forall x\\,\\exists d\\,\\neg L(x,d),$$\n\nevery employee has at least one on-time day. “All employees are never late” is $\\forall x\\,\\forall d\\,\\neg L(x,d)$, a much stronger ban. An office where everyone is late some days but nobody is late every day makes the original false and the offered “negation” false together.',
-      '**E.** → True\n\nAn existential $\\exists x\\, P(x)$ is settled by exhibiting one value that works. A universal $\\forall x\\, P(x)$ is not settled by any finite list of successes, because unchecked values remain; it needs an argument that runs for an arbitrary $x$.\n\nOne witness for "there exists", a general argument for "for all": that is exactly the asymmetry between the two quantifiers, and the claim states it correctly, reason included. **Right on both counts.**',
+      `**A.** → True
+
+The target is "there is no smallest positive real," so the legal opening is the opposite: suppose such an $x>0$ exists. Then $\\frac{x}{2}$ is still positive and strictly smaller than $x$, so $x$ was not smallest after all. The proof opens with the negation of the target and ends in an impossibility.
+
+so the statement is True.`,
+      `**B.** → False
+
+A contradiction proof of "$\\sqrt{3}$ is irrational" must assume the negation: $\\sqrt{3}=\\frac{p}{q}$ in lowest terms. Opening with "assume $\\sqrt{3}$ is irrational" assumes the conclusion itself. There is then nothing left to contradict.
+
+so the statement is False.`,
+      `**C.** → False
+
+The original is $(\\forall f\\,D(f))\\land(\\forall t\\,O(t))$. Negating an AND yields an OR, and negating "all" yields "some not":
+
+$$\\exists f\\,\\neg D(f)\\ \\lor\\ \\exists t\\,\\neg O(t)$$
+
+The offered sentence keeps the AND and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false.
+
+so the statement is False.`,
+      `**D.** → False
+
+"Some employee always arrives late" is $\\exists x\\,\\forall d\\,L(x,d)$. Flip both quantifiers and negate inside: $\\forall x\\,\\exists d\\,\\neg L(x,d)$, every employee has at least one on-time day. "All employees are never late" is $\\forall x\\,\\forall d\\,\\neg L(x,d)$, a much stronger ban.
+
+so the statement is False.`,
+      `**E.** → True
+
+An existential $\\exists x\\, P(x)$ is settled by exhibiting one value that works. A universal $\\forall x\\, P(x)$ is not settled by any finite list of successes, because unchecked values remain; it needs an argument that runs for an arbitrary $x$.
+
+so the statement is True.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: `1/5`,
     sort_order: 7,
-    solution_overview:
-      'These five items share no data, so treat them as five separate checks. Two ideas do most of the work: a **proof by contradiction** must open by assuming the *opposite* of what you want to prove, and negating a sentence flips "for all" into "there exists" and "and" into "or".\n\n**Item A, halving the smallest positive number.** The target is "there is no smallest positive real number", so the legal opening is "suppose there is one, call it $x$". Then $\\frac{x}{2}$ is positive, real and smaller than $x$, so $x$ was not smallest after all. Correct opening, genuine impossibility: this is a proper proof.\n\n**Item B, the circular opening.** The target is "$\\sqrt{3}$ is irrational". Its opposite is "$\\sqrt{3}$ is rational", that is $\\sqrt{3} = \\frac{p}{q}$ in lowest terms, and that is where the proof must start. Opening with "assume $\\sqrt{3}$ is irrational" assumes the conclusion, so there is nothing to contradict and nothing gets proved.\n\n**Item C, negating an "and".** The original is (all flights delayed) **and** (all trains on time). Denying an "and" only needs one half to fail, and denying "all" gives "some ... not":\n\n$$\\neg\\bigl(\\forall f\\,D(f) \\land \\forall t\\,O(t)\\bigr) \\equiv \\exists f\\,\\neg D(f) \\lor \\exists t\\,\\neg O(t).$$\n\nIn words: some flight is not delayed, **or** some train is not on time.\n\n**Item D, negating two stacked quantifiers.** "Some employee always arrives late" is $\\exists x\\,\\forall d\\,L(x,d)$. Flip both quantifiers and negate inside to get $\\forall x\\,\\exists d\\,\\neg L(x,d)$: every employee has at least one day of arriving on time. That is far weaker than "all employees are never late".\n\n**Item E, how much evidence each quantifier needs.** One good example settles $\\exists x\\,P(x)$. For $\\forall x\\,P(x)$ a pile of successful checks proves nothing about the values you did not check, so the argument has to run for an arbitrary $x$.',
+    solution_overview: `Two ideas do most of the work here. A proof by contradiction must open by assuming the opposite of what you want to prove. Negating a sentence flips "for all" into "there exists" and "and" into "or".
+
+An existential claim is settled by one witness. A universal claim needs an argument that runs for an arbitrary value, not a finite list of successes.`,
   },
   {
-    id: "math-1-86",
-    case_id: "MATH 1.86",
-    title: "Validity versus soundness",
-    subsection: "1.4",
-    context:
-      "Consider the argument: Premise 1: All economists study human behavior. Premise 2: Some economists specialize in game theory. Conclusion: Therefore, some people who specialize in game theory study human behavior.",
+    id: `math-1-86`,
+    case_id: `MATH 1.86`,
+    title: `Validity versus soundness`,
+    subsection: `1.4`,
+    context: `Consider the argument: Premise 1: All economists study human behavior. Premise 2: Some economists specialize in game theory. Conclusion: Therefore, some people who specialize in game theory study human behavior.`,
     statements: [
-      "The argument is logically valid (the conclusion necessarily follows from the premises).",
-      "The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.” 39",
-      "Validity means the conclusion is guaranteed true whenever the premises are true - it does not require the premises to actually be true in reality.",
-      "If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be unsound.",
-      "This argument is an example of the fallacy of “affirming the consequent.”",
+      `The argument is logically valid (the conclusion necessarily follows from the premises).`,
+      `The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.” 39`,
+      `Validity means the conclusion is guaranteed true whenever the premises are true - it does not require the premises to actually be true in reality.`,
+      `If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be unsound.`,
+      `This argument is an example of the fallacy of “affirming the consequent.”`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe person supplied by Premise 2 is an economist, and Premise 1 turns every economist into someone who studies human behaviour, so that same person satisfies the conclusion. The step works in any situation where the premises hold. **Valid.**\n\nPremise 2 gives a person $a$ who is an economist and a game theorist: $E(a)\\land G(a)$. Premise 1 says every economist studies human behaviour: $E(a)\\Rightarrow H(a)$, so $H(a)$ follows.\n\nThen $G(a)\\land H(a)$, which is the conclusion $\\exists x\\,(G(x)\\land H(x))$. The same three steps work for any $a$ supplied by Premise 2, so the argument is valid.",
-      "**B.** → False\n\nImagine a world with no game theorists whatsoever, in which all economists study human behaviour. Both modified premises come out true, and the conclusion, which insists that some game theorist exists, comes out false. Premises true and conclusion false is the definition of invalidity, so the change to Premise 2 is fatal. **That one world is enough: the modified argument is invalid.**\n\nReplace Premise 2 by “no economists specialize in game theory”: $\\forall x\\,(E(x)\\Rightarrow\\neg G(x))$. Picture a world with economists who all study human behaviour and with nobody at all in game theory.\n\nBoth modified premises hold, yet the conclusion $\\exists x\\,(G(x)\\land H(x))$ fails because there is no game theorist. Premises true, conclusion false: the modified argument is invalid.",
-      '**C.** → True\n\nValidity asks only: whenever the premises are true, must the conclusion be true? It does not inspect whether Premise 1 or Premise 2 actually holds in the real world. Soundness is the stricter label that adds "and the premises are in fact true".\n\nThis is the definition of validity stated correctly: a promise about what follows *if* the premises hold, not a claim that they do hold. Adding "and the premises really are true" would give soundness instead.',
-      "**D.** → True\n\n**Validity:** untouched, because the three-move derivation never consults reality.\n\n**Soundness:** lost, because soundness needs true premises on top of validity.\n\nThe pairing the claim describes is exactly right.\n\nValidity is about the three-move derivation from the premises: it never inspects whether Premise 1 is true in the real world. If Premise 1 happened to be false, the argument would remain valid and lose soundness, because soundness needs valid form *and* true premises.\n\nThat is exactly the pairing the claim describes for this argument.",
-      '**E.** → False\n\nAffirming the consequent needs a premise shaped "if $p$ then $q$" plus the bare claim $q$. Here the premises are a universal statement and an existential one, with no conditional in sight, and the argument is valid anyway, while that fallacy is always invalid. The trap is sticking a familiar fallacy label on any argument involving people and professions. **Wrong label.**\n\nAffirming the consequent is the invalid pattern $P\\Rightarrow Q$, $Q$, therefore $P$. The given premises are a universal implication about economists and an existential about game theory, with no bare consequent used to recover the antecedent.\n\nThe argument was already shown valid in A. An instance of affirming the consequent would be invalid, so the label does not fit.',
+      `**A.** → True
+
+Premise 2 gives a person $a$ who is an economist and a game theorist. Premise 1 says every economist studies human behaviour, so $H(a)$ follows. Then $G(a)\\land H(a)$, which is the conclusion. The same three steps work for any $a$ supplied by Premise 2, so the argument is valid.
+
+so the statement is True.`,
+      `**B.** → False
+
+Replace Premise 2 by "no economists specialize in game theory." Picture a world with economists who all study human behaviour and with nobody at all in game theory. Both modified premises hold, yet the conclusion $\\exists x\\,(G(x)\\land H(x))$ fails because there is no game theorist. Premises true, conclusion false: the modified argument is invalid.
+
+so the statement is False.`,
+      `**C.** → True
+
+Validity asks only: whenever the premises are true, must the conclusion be true? It does not inspect whether Premise 1 or Premise 2 actually holds in the real world. Soundness is the stricter label that adds "and the premises are in fact true."
+
+so the statement is True.`,
+      `**D.** → True
+
+Validity is about the derivation from the premises: it never inspects whether Premise 1 is true in the real world. If Premise 1 happened to be false, the argument would remain valid and lose soundness, because soundness needs valid form and true premises.
+
+so the statement is True.`,
+      `**E.** → False
+
+Affirming the consequent is the invalid pattern $P\\Rightarrow Q$, $Q$, therefore $P$. The given premises are a universal implication about economists and an existential about game theory, with no bare consequent used to recover the antecedent. An instance of affirming the consequent would be invalid, so the label does not fit.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 8,
-    solution_overview:
-      'Write $E(x)$ for "$x$ is an economist", $H(x)$ for "$x$ studies human behaviour", $G(x)$ for "$x$ specializes in game theory". The argument is\n\n$$\\text{P1: } \\forall x\\,(E(x) \\Rightarrow H(x)), \\qquad \\text{P2: } \\exists x\\,(E(x) \\land G(x)), \\qquad \\text{Conclusion: } \\exists x\\,(G(x) \\land H(x)).$$\n\n**The argument in three moves**\n\n1. Premise 2 hands us a particular person, call her $a$, who is an economist and works on game theory.\n2. Premise 1 applies to everyone, so it applies to $a$: being an economist, $a$ studies human behaviour.\n3. Therefore $a$ works on game theory *and* studies human behaviour, which is what the conclusion asks for.\n\nNothing in those three moves used any special feature of $a$, so the conclusion follows in **every** situation where the premises hold. That is what **validity** means.\n\n**Validity is about shape, not about the world**\n\nA valid argument promises only this: *if* the premises are true, the conclusion cannot be false. Whether the premises are true in reality is a separate question, and an argument that is valid **and** has true premises is called **sound**. So a false Premise 1 would cost the argument its soundness and leave its validity untouched.\n\n**Where the argument would break**\n\nReplace Premise 2 by "no economists specialize in game theory" and picture a world in which every economist studies human behaviour and nobody at all does game theory. Both premises come out true, yet the conclusion demands a game theorist and there is none. Premises true with a false conclusion is the definition of **invalid**.\n\nOne last label to reject: "affirming the consequent" is the faulty pattern "$p \\Rightarrow q$; $q$; therefore $p$". This argument contains no conditional premise at all, so it is not an instance of that pattern.',
+    solution_overview: `Write $E(x)$ for "$x$ is an economist", $H(x)$ for "$x$ studies human behaviour", and $G(x)$ for "$x$ specializes in game theory". The argument is
+
+P1: $\\forall x\\,(E(x)\\Rightarrow H(x))$.
+
+P2: $\\exists x\\,(E(x)\\land G(x))$.
+
+Conclusion: $\\exists x\\,(G(x)\\land H(x))$.
+
+Validity asks only: whenever the premises are true, must the conclusion be true? Soundness adds that the premises are in fact true. Affirming the consequent is the invalid pattern $P\\Rightarrow Q$, $Q$, therefore $P$.`,
   },
   {
-    id: "math-1-87",
-    case_id: "MATH 1.87",
-    title: 'A sports fan claims : "If a player scores over 30 points in a game, th',
-    subsection: "1.4",
-    context:
-      'A sports fan claims: "If a player scores over 30 points in a game, the team wins." In one game, Player X scored 35 points, but the team lost 90-95.',
+    id: `math-1-87`,
+    case_id: `MATH 1.87`,
+    title: `One Losing Game as a Counterexample to a Scoring Rule`,
+    subsection: `1.4`,
+    context: `A sports fan claims: "If a player scores over 30 points in a game, the team wins." In one game, Player X scored 35 points, but the team lost 90-95.`,
     statements: [
-      "This specific game is a valid counterexample that disproves the fan's general rule.",
-      'Given this counterexample, the statement "there exists a game where a player scored over 30 points and the team did not win" is true.',
-      'Since the original rule is false, its contrapositive, "If the team does not win, then no player scored over 30 points," must also be false.',
-      'Because the original rule is false, its converse, "If the team wins, then some player scored over 30 points," is therefore also automatically false.',
-      'The inverse, "If a player does not score over 30 points, the team does not win," has a truth value that is independent of the original rule\'s truth value.',
+      `This specific game is a valid counterexample that disproves the fan's general rule.`,
+      `Given this counterexample, the statement "there exists a game where a player scored over 30 points and the team did not win" is true.`,
+      `Since the original rule is false, its contrapositive, "If the team does not win, then no player scored over 30 points," must also be false.`,
+      `Because the original rule is false, its converse, "If the team wins, then some player scored over 30 points," is therefore also automatically false.`,
+      `The inverse, "If a player does not score over 30 points, the team does not win," has a truth value that is independent of the original rule's truth value.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nThe fan's rule is: if a player scores over 30, the team wins. In the given game Player X scored 35, so the hypothesis holds, and the team lost 90-95, so the conclusion fails.\n\n35 points clears 30 and a 90-95 defeat is not a win, so this game lands in the one combination the fan's rule forbids. **A textbook counterexample.**",
-      '**B.** → True\n\nThe existential asks for one game in which some player scored over 30 and the team did not win. The reported game has a 35-point scorer and a 90-95 loss, which is exactly that pair of facts.\n\nAn "there exists" sentence needs a single example, and the reported game supplies it: over 30 points, no win. **True.**',
-      '**C.** → True\n\nThe contrapositive is the same claim wearing different clothes, so it dies with the original. You can also read it off the game directly: the team did not win, yet a player scored 35, exactly what "no win means nobody over 30" forbids. Matching the numbers: $\\neg Q$ holds (loss) while $\\neg P$ fails (35 > 30), so the contrapositive is false in this game.',
-      "**D.** → False\n\nThe trap is assuming that falsity spreads to all four relatives. It does not: the converse sits in the other pair, and deciding it would take a game the team **won**. The reported game is a defeat, so it says nothing here at all. A 90-95 loss with a 35-point scorer is evidence against $P \\Rightarrow Q$, not against $Q \\Rightarrow P$.\n\nThe converse $Q\\Rightarrow P$ is tested only by games the team **won** ($Q$ true). The reported game is a 90-95 loss, so $Q$ is false and the converse is idle.\n\nFalsity of $P\\Rightarrow Q$ therefore does not force falsity of $Q\\Rightarrow P$. The two live in different equivalence pairs. The claim that the converse is “automatically” false is wrong.",
-      "**E.** → True\n\nThe inverse travels with the converse, not with the original, and it is tested by games in which nobody scored over 30, evidence this game simply does not provide. Its truth value is genuinely a separate question. The reported game has a 35-point scorer, so it never enters the \"nobody over 30\" hypothesis the inverse needs. **Independent.**\n\nThe inverse $\\neg P\\Rightarrow\\neg Q$ pairs with the converse, not with the original. It is tested by games with no 30-point scorer ($\\neg P$).\n\nThe reported game has a 35-point scorer, so $P$ is true and the inverse is not even evaluated. Its truth value is a separate question from the fan’s false rule.",
+      `**A.** → True
+
+The fan's rule is: if a player scores over $30$, the team wins. In the given game Player X scored $35$, so the hypothesis holds, and the team lost $90$-$95$, so the conclusion fails. That is the one combination an implication forbids.
+
+so the statement is True.`,
+      `**B.** → True
+
+The existential asks for one game in which some player scored over $30$ and the team did not win. The reported game has a $35$-point scorer and a $90$-$95$ loss, which is exactly that pair of facts. An "there exists" sentence needs a single example, and this game supplies it.
+
+so the statement is True.`,
+      `**C.** → True
+
+The contrapositive is the same claim wearing different clothes, so it dies with the original. You can also read it off the game: the team did not win, yet a player scored $35$, exactly what "no win means nobody over $30$" forbids.
+
+so the statement is True.`,
+      `**D.** → False
+
+Falsity does not spread to all four relatives. The converse sits in the other pair, and deciding it would take a game the team won. The reported game is a defeat, so $Q$ is false and the converse is idle. Falsity of $P\\Rightarrow Q$ therefore does not force falsity of $Q\\Rightarrow P$.
+
+so the statement is False.`,
+      `**E.** → True
+
+The inverse $\\neg P\\Rightarrow\\neg Q$ pairs with the converse, not with the original. It is tested by games with no $30$-point scorer. The reported game has a $35$-point scorer, so $P$ is true and the inverse is not even evaluated. Its truth value is a separate question from the fan's false rule.
+
+so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 9,
-    solution_overview:
-      'For a single game let $P$ mean "some player scored over 30 points" and $Q$ mean "the team won". The fan claims $P \\Rightarrow Q$ for **every** game.\n\n**One game is enough to sink it**\n\nIn the reported game a player scored 35, so $P$ is true, and the team lost 90-95, so $Q$ is false. An implication has exactly one way of failing, true hypothesis, false conclusion, and this game is it. The rule is therefore **false**, and the sentence "there is a game with a 30-plus scorer and no win", which is precisely the negation of the rule, is **true**, witnessed by that same game.\n\n**The family of four sentences**\n\n| Sentence | Reads as | Status |\n| --- | --- | --- |\n| Original, $P \\Rightarrow Q$ | 30-plus scorer, so a win | false (this game) |\n| Contrapositive, $\\neg Q \\Rightarrow \\neg P$ | no win, so nobody over 30 | false; always agrees with the original |\n| Converse, $Q \\Rightarrow P$ | a win, so somebody over 30 | not decided by this game |\n| Inverse, $\\neg P \\Rightarrow \\neg Q$ | nobody over 30, so no win | not decided; always agrees with the converse |\n\nThe top two always share a truth value and so do the bottom two, but the two pairs are independent of each other.\n\n**What the reported game cannot tell us**\n\nJudging the converse takes games the team **won**; judging the inverse takes games with **no** 30-point scorer. A 90-95 loss with a 35-point scorer is neither kind of evidence, so it leaves the bottom half of the table completely open.',
+    solution_overview: `For a single game let $P$ mean "some player scored over $30$ points" and $Q$ mean "the team won". The fan claims $P\\Rightarrow Q$ for every game.
+
+An implication has exactly one way of failing: true hypothesis, false conclusion. The contrapositive $\\neg Q\\Rightarrow\\neg P$ always agrees with the original. The converse $Q\\Rightarrow P$ and the inverse $\\neg P\\Rightarrow\\neg Q$ form a separate pair, independent of the original.`,
   },
   {
-    id: "math-1-88",
-    case_id: "MATH 1.88",
-    title: "A grading curve rule",
-    subsection: "1.4",
-    context:
-      "A professor's rule: “A student receives a B or higher if and only if their exam score is at least 70 - unless the professor applies a curve, in which case a score of at least 60 suffices for a B or higher.” In a particular exam, the professor did apply a curve. Student W scored 65.",
+    id: `math-1-88`,
+    case_id: `MATH 1.88`,
+    title: `A grading curve rule`,
+    subsection: `1.4`,
+    context: `A professor's rule: “A student receives a B or higher if and only if their exam score is at least 70 - unless the professor applies a curve, in which case a score of at least 60 suffices for a B or higher.” In a particular exam, the professor did apply a curve. Student W scored 65.`,
     statements: [
-      "Student W receives a B or higher on this exam.",
-      "If the curve had not been applied, Student W would still receive a B or higher.",
-      "The curve strictly lowers the threshold needed for a B or higher - it never raises it, based on how the rule is described.",
-      "A student who scored 62 would receive a B or higher only if the curve is applied.",
-      "The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B or higher under all circumstances, curve or no curve.",
+      `Student W receives a B or higher on this exam.`,
+      `If the curve had not been applied, Student W would still receive a B or higher.`,
+      `The curve strictly lowers the threshold needed for a B or higher - it never raises it, based on how the rule is described.`,
+      `A student who scored 62 would receive a B or higher only if the curve is applied.`,
+      `The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B or higher under all circumstances, curve or no curve.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe task states that the professor did apply a curve, so the live cut-off is $s \\ge 60$. Student W scored 65, and $65 \\ge 60$ holds.\n\nCurve on, so the bar sits at 60, and 65 clears it. **W gets the B.**",
-      "**B.** → False\n\nTake the curve away and the bar jumps back to 70, leaving W's 65 five points short. W's score sits in the band that depends entirely on the curve. Check: $60 \\le 65 < 70$, so the grade is earned only while the curve is on. **No B without it.**\n\nWithout a curve the live cut-off is $s\\ge 70$. Student W scored 65, and $65<70$, so the baseline biconditional denies the B.\n\nW’s 65 sits in the band $60\\le s<70$ that the curve alone unlocks. Removing the curve removes the B.",
-      "**C.** → True\n\nThe baseline rule uses the cut-off 70; the curve replaces it with 60. Compare the two numbers: $60 < 70$, so the threshold moves down, not up. Anyone with $s \\ge 70$ still has $s \\ge 60$, so a B already earned under the baseline is never taken away.\n\n$60 < 70$, so the bar moves down, and every score that passed at 70 still passes at 60, so nobody loses a grade they had. **Lowered, never raised.**",
-      '**D.** → True\n\n62 falls in the middle band: above the curved cut-off, below the baseline one. Read the "only if" carefully, it says the curve is *needed* for that grade, not that the curve *guarantees* a grade, since a score of 55 would still fail. **Correctly stated.**\n\nA score of 62 satisfies $60\\le 62<70$. Under a curve the cut-off is 60, so $62\\ge 60$ earns the B. Without a curve the cut-off is 70, so $62<70$ denies it.\n\nThe B at 62 therefore occurs only if the curve is applied. A still lower score such as 55 fails even with the curve, so the claim is an “only if,” not a guarantee for every score.',
-      '**E.** → False\n\nW is the counterexample sitting right there in the problem: 65 points, no 70, and a B all the same. The "if and only if" describes the baseline regime and the unless-clause overrides it under a curve, so 70 is not necessary in *all* circumstances. The trap is reading the baseline biconditional as surviving the exception that the sentence itself announces. **Overstated.**\n\nThe baseline biconditional is $B\\Leftrightarrow s\\ge 70$, and the “unless” clause replaces the cut-off by 60 when a curve is applied. This exam used a curve, and W scored 65, which is below 70 and still a B.\n\nSo “at least 70 is necessary in all circumstances” is false: the exception the rule itself writes already drops the necessity of 70.',
+      `**A.** → True
+
+The task states that the professor did apply a curve, so the live cut-off is $s\\ge 60$. Student W scored $65$, and $65\\ge 60$ holds. Curve on, so the bar sits at $60$, and $65$ clears it. W gets the B.
+
+so the statement is True.`,
+      `**B.** → False
+
+Without a curve the live cut-off is $s\\ge 70$. Student W scored $65$, and $65<70$, so the baseline biconditional denies the B. W's $65$ sits in the band $60\\le s<70$ that the curve alone unlocks.
+
+so the statement is False.`,
+      `**C.** → True
+
+The baseline uses $70$; the curve replaces it with $60$. Compare: $60<70$, so the threshold moves down, not up. Anyone with $s\\ge 70$ still has $s\\ge 60$, so a B already earned under the baseline is never taken away.
+
+so the statement is True.`,
+      `**D.** → True
+
+A score of $62$ satisfies $60\\le 62<70$. Under a curve the cut-off is $60$, so $62\\ge 60$ earns the B. Without a curve the cut-off is $70$, so $62<70$ denies it. The B at $62$ therefore occurs only if the curve is applied.
+
+so the statement is True.`,
+      `**E.** → False
+
+The baseline biconditional is $B$ iff $s\\ge 70$, and the "unless" clause replaces the cut-off by $60$ when a curve is applied. This exam used a curve, and W scored $65$, which is below $70$ and still a B. So "at least $70$ is necessary in all circumstances" is false.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 10,
-    solution_overview:
-      'Everything turns on which cut-off is switched on. Writing $s$ for the score:\n\n$$B \\iff s \\ge 70$$\n\nThat is the baseline rule, the one that applies when no curve is used. When the curve is switched on the bar drops by ten points:\n\n$$B \\iff s \\ge 60$$\n\n"If and only if" runs in both directions, clearing the active cut-off earns the grade, missing it denies the grade.\n\n**This exam.** The curve was applied, so the live cut-off is 60. Student W scored 65 and $65 \\ge 60$, so **W earns a B or higher**. Had the curve not been applied, the cut-off would sit at 70 and W\'s 65 would fall short.\n\n**Three bands of scores**\n\n• $s \\ge 70$: a B either way.\n\n• $60 \\le s < 70$: a B **only** when the curve is applied. Both 62 and W\'s 65 live here.\n\n• $s < 60$: no B in either regime.\n\nSince the curve moves the bar from 70 down to 60, everybody who already had a B keeps it and the middle band gains one, which is precisely what "lowers the threshold and never raises it" means.\n\n**A word on the "if and only if".** It is written for the baseline regime, and the "unless" clause overrides it whenever a curve is used. So "at least 70" is necessary and sufficient only in the no-curve case, as W, with 65 and a B, demonstrates.',
+    solution_overview: `Writing $s$ for the score, the baseline rule (no curve) is $B$ if and only if $s\\ge 70$. When a curve is applied the bar drops by ten points: $B$ if and only if $s\\ge 60$.
+
+"If and only if" runs in both directions: clearing the active cut-off earns the grade, missing it denies the grade. Scores in $60\\le s<70$ earn a B only when the curve is on.`,
   },
   {
-    id: "math-1-89",
-    case_id: "MATH 1.89",
-    title: "Gear teeth and coprimality",
-    subsection: "1.4",
-    context:
-      "Two meshing gears wear evenly over time only if their tooth counts m and n are coprime, meaning gcd(m, n) = 1 (equivalently, no prime number divides both m and n). A machinist is checking two candidate gear pairs: Pair 1 has tooth counts 15 and 28. Pair 2 has tooth counts 24 and 36.",
+    id: `math-1-89`,
+    case_id: `MATH 1.89`,
+    title: `Gear teeth and coprimality`,
+    subsection: `1.4`,
+    context: `Two meshing gears wear evenly over time only if their tooth counts m and n are coprime, meaning gcd(m, n) = 1 (equivalently, no prime number divides both m and n). A machinist is checking two candidate gear pairs: Pair 1 has tooth counts 15 and 28. Pair 2 has tooth counts 24 and 36.`,
     statements: [
-      "Pair 1 (15 and 28) is coprime, so this pair will wear evenly.",
-      "Pair 2 (24 and 36) is coprime.",
-      'The correct negation of "m and n are coprime" is: "there exists a prime p such that p divides m and p divides n."',
-      "If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.",
-      "Every coprime pair of integers greater than 1 must include at least one prime number.",
+      `Pair 1 (15 and 28) is coprime, so this pair will wear evenly.`,
+      `Pair 2 (24 and 36) is coprime.`,
+      `The correct negation of "m and n are coprime" is: "there exists a prime p such that p divides m and p divides n."`,
+      `If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.`,
+      `Every coprime pair of integers greater than 1 must include at least one prime number.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\n$15 = 3 \\times 5$ and $28 = 2^2 \\times 7$ share no prime factor, so their greatest common divisor is 1, which is exactly the machinist's condition. **Pair 1 passes.**\n\nPair 1 has tooth counts 15 and 28. Factor them:\n\n$$15=3\\times 5,\\qquad 28=2^{2}\\times 7.$$\n\nThe prime lists $\\{3,5\\}$ and $\\{2,7\\}$ are disjoint, so $\\gcd(15,28)=1$. Coprime tooth counts wear evenly, so Pair 1 passes the even-wear test.",
-      "**B.** → False\n\nBoth numbers are even, which settles it on the spot, and in fact they share a factor 3 as well: $\\gcd(24,36) = 12$. Explicitly: $24 = 2^3 \\times 3$ and $36 = 2^2 \\times 3^2$, so 2 and 3 both divide both counts. **Nowhere near coprime.**\n\nPair 2: $24=2^{3}\\times 3$ and $36=2^{2}\\times 3^{2}$. Shared primes are 2 and 3. The gcd takes the smaller powers:\n\n$$\\gcd(24,36)=2^{2}\\times 3=12\\ne 1.$$\n\nPair 2 is not coprime. Both counts are even, so 2 alone already kills coprimality.",
-      '**C.** → True\n\nCoprime means $\\gcd(m,n) = 1$, equivalently: for every prime $p$, $p$ does not divide both $m$ and $n$. Negating a universal claim produces an existential one: there exists a prime $p$ such that $p$ divides $m$ and $p$ divides $n$.\n\nNegating "no prime divides both" turns a universal claim into an existential one, and the quoted sentence is precisely that. Pair 2 is a live example of it.',
-      "**D.** → True\n\nGiven $\\gcd(m,n) = 1$ with both greater than 1, suppose toward a contradiction that $m$ and $n$ are both even. Then the prime 2 divides each of them.\n\nIf both numbers were even, 2 would divide both, forcing $\\gcd(m,n) \\ge 2$ and contradicting $\\gcd(m,n) = 1$. **So a coprime pair is never two even numbers.**",
-      "**E.** → False\n\n15 and 28 refute this immediately: both composite, still coprime. Coprimality forbids *shared* prime factors, not prime factors as such. Pair 1 already shows two composites can wear evenly; the claim confuses \"no common prime\" with \"at least one prime among the pair\". **The claim asks for too much.**\n\nCoprime means no *shared* prime factor, not “at least one of $m,n$ is prime.” Pair 1 is the counterexample: $15=3\\times 5$ and $28=2^{2}\\times 7$ are both composite, yet $\\gcd(15,28)=1$.\n\nSo a coprime pair of integers greater than 1 need not include a prime.",
+      `**A.** → True
+
+Factor the two counts:
+
+$$15=3\\times 5,\\qquad 28=2^2\\times 7$$
+
+The prime lists $\\{3,5\\}$ and $\\{2,7\\}$ are disjoint, so $\\mathrm{gcd}(15,28)=1$. Coprime tooth counts wear evenly, so Pair 1 passes.
+
+so the statement is True.`,
+      `**B.** → False
+
+Factor Pair 2:
+
+$$24=2^3\\times 3,\\qquad 36=2^2\\times 3^2$$
+
+Both $2$ and $3$ appear on each side. Taking the smaller power of each shared prime gives $\\mathrm{gcd}(24,36)=2^2\\times 3=12\\ne 1$. Pair 2 is not coprime.
+
+so the statement is False.`,
+      `**C.** → True
+
+Coprime means: for every prime $p$, $p$ does not divide both $m$ and $n$. Negating a universal claim produces an existential one: there exists a prime $p$ such that $p$ divides $m$ and $p$ divides $n$.
+
+so the statement is True.`,
+      `**D.** → True
+
+Given $\\mathrm{gcd}(m,n)=1$ with both greater than $1$, suppose both were even. Then the prime $2$ would divide each of them, forcing $\\mathrm{gcd}(m,n)\\ge 2$ and contradicting $\\mathrm{gcd}=1$. So a coprime pair is never two even numbers.
+
+so the statement is True.`,
+      `**E.** → False
+
+Coprime means no shared prime factor, not "at least one of $m,n$ is prime." Pair 1 is the counterexample: $15=3\\times 5$ and $28=2^2\\times 7$ are both composite, yet $\\mathrm{gcd}(15,28)=1$.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 11,
-    solution_overview:
-      'Two whole numbers are **coprime** when the only positive number dividing both of them is 1, written $\\gcd(m,n) = 1$. The quickest test is to break each number into prime factors and look for anything shared.\n\n**Pair 1: 15 and 28**\n\n$$15 = 3 \\times 5, \\qquad 28 = 2^2 \\times 7.$$\n\nThe prime lists $\\{3,5\\}$ and $\\{2,7\\}$ have nothing in common, so $\\gcd(15,28) = 1$ and **the pair is coprime**, it passes the even-wear test.\n\n**Pair 2: 24 and 36**\n\n$$24 = 2^3 \\times 3, \\qquad 36 = 2^2 \\times 3^2.$$\n\nBoth 2 and 3 appear on each side. Taking the smaller power of each shared prime gives $\\gcd(24,36) = 2^2 \\times 3 = 12$, a long way from 1, so **this pair is not coprime**.\n\n**Reading the definition backwards.** "Coprime" says: *for every* prime $p$, $p$ does not divide both numbers. Its negation therefore says: *there exists* a prime $p$ dividing both. Pair 2 shows that negation in action, with $p = 2$ (and $p = 3$ as well).\n\nTwo consequences worth remembering. Two even numbers always share the prime 2, so a coprime pair can never consist of two even numbers. But coprime numbers need not be prime themselves, 15 and 28 are both composite and still share nothing.',
+    solution_overview: `Two whole numbers are coprime when $\\mathrm{gcd}(m,n)=1$, equivalently when no prime divides both. The quickest test is to break each number into prime factors and look for anything shared.
+
+Pair 1 has tooth counts $15$ and $28$. Pair 2 has tooth counts $24$ and $36$. The negation of "coprime" is "there exists a prime dividing both." Two even numbers always share the prime $2$. Coprime numbers need not themselves be prime.`,
   },
   {
-    id: "math-1-90",
-    case_id: "MATH 1.90",
-    title: "A subscription renewal and refund policy",
-    subsection: "1.4",
-    context:
-      "A policy: “If a subscriber cancels at least 3 days before the renewal date, the subscription does not renew and no charge applies. If a subscriber cancels fewer than 3 days before the renewal date, the subscription still renews, but a partial refund is issued afterward if and only if the subscriber had used less than 10% of the service during that period.” Subscriber K cancelled 2 days before the renewal date and had used 15% of the service that period.",
+    id: `math-1-90`,
+    case_id: `MATH 1.90`,
+    title: `A subscription renewal and refund policy`,
+    subsection: `1.4`,
+    context: `A policy: “If a subscriber cancels at least 3 days before the renewal date, the subscription does not renew and no charge applies. If a subscriber cancels fewer than 3 days before the renewal date, the subscription still renews, but a partial refund is issued afterward if and only if the subscriber had used less than 10% of the service during that period.” Subscriber K cancelled 2 days before the renewal date and had used 15% of the service that period.`,
     statements: [
-      "Subscriber K's subscription renews (K is charged for the next period).",
-      "Subscriber K receives a partial refund.",
-      "If K had used only 5% of the service instead, K would have received a partial refund.",
-      "If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and the 15% usage figure would then be irrelevant to any refund consideration.",
-      "The refund condition (usage below 10%) applies regardless of how many days before the renewal date the subscriber cancels.",
+      `Subscriber K's subscription renews (K is charged for the next period).`,
+      `Subscriber K receives a partial refund.`,
+      `If K had used only 5% of the service instead, K would have received a partial refund.`,
+      `If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and the 15% usage figure would then be irrelevant to any refund consideration.`,
+      `The refund condition (usage below 10%) applies regardless of how many days before the renewal date the subscriber cancels.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      '**A.** → True\n\nCancelling two days out counts as "fewer than three", which drops K straight into the late branch, where the policy renews and charges regardless of how much service was used. **Renewed.**\n\nK cancelled 2 days before renewal. The early branch needs $d\\ge 3$; here $2<3$, so K is in the late branch.\n\nLate branch: the subscription still renews (and a charge applies). Usage $15\\%$ is irrelevant to whether it renews; usage is consulted only for the later refund test. K’s subscription renews.',
-      '**B.** → False\n\nThe refund is granted exactly when usage falls under 10%, and K used 15%. An "if and only if" leaves no room for a discretionary refund. Check the late-branch test: $15\\% < 10\\%$ is false, so the refund side is closed. **None is due.**\n\nK is in the late branch ($d=2<3$), so a partial refund is issued if and only if $u<10\\%$. K used $15\\%$ of the service, and $15<10$ is false.\n\nThe biconditional therefore withholds the refund. K does not receive a partial refund.',
-      "**C.** → True\n\nK still cancelled 2 days out, so $d < 3$ and the late branch still applies: the subscription renews, and a partial refund is issued if and only if $u < 10\\%$. Change only the usage to 5%. Then $5\\% < 10\\%$ holds, so the refund side of that biconditional opens.\n\nSame timing, so K is still in the late branch, and 5% is under the 10% line, which is all the refund clause asks for. **Refund issued.**",
-      "**D.** → True\n\n**Timing:** four days out clears the three-day line, so nothing renews and nothing is charged.\n\n**Usage:** the refund clause lives in the other branch, and with no charge there would be nothing to refund anyway.\n\nBoth halves of the claim hold.\n\nChange only the timing to 4 days: $4\\ge 3$, so K moves into the early branch. Early branch: no renewal and no charge. The $15\\%$ usage figure is never read, because the refund biconditional sits only in the late branch.\n\nBoth halves of the claim hold: the subscription would not have renewed, and the usage number would then be irrelevant.",
-      "**E.** → False\n\nThe 10% test appears only in the late-cancellation branch. Cancel three or more days ahead and the outcome is decided by timing alone, heavy usage or light, there is no charge and no refund question. The trap is treating a branch-local condition as a global policy that follows the subscriber into every cancellation timeline. **The condition is branch-specific.**\n\nThe $10\\%$ usage test is written only in the late-cancellation paragraph ($d<3$). If a subscriber cancels 3 or more days ahead, the early branch settles everything by timing: no renewal, no charge, and no refund question.\n\nUsage below $10\\%$ therefore does not apply “regardless of how many days” before renewal the subscriber cancels.",
+      `**A.** → True
+
+K cancelled $2$ days before renewal. The early branch needs $d\\ge 3$; here $2<3$, so K is in the late branch. Late branch: the subscription still renews (and a charge applies). Usage $15\\%$ is irrelevant to whether it renews; usage is consulted only for the later refund test.
+
+so the statement is True.`,
+      `**B.** → False
+
+K cancelled $2$ days out, so $d<3$ and the late branch applies. A partial refund is issued if and only if $u<10\\%$. K used $15\\%$ of the service, and $15<10$ is false. The biconditional therefore withholds the refund.
+
+so the statement is False.`,
+      `**C.** → True
+
+K still cancelled $2$ days out, so $d<3$ and the late branch still applies. Change only the usage to $5\\%$. Then $5\\%<10\\%$ holds, so the refund side of that biconditional opens.
+
+so the statement is True.`,
+      `**D.** → True
+
+Change only the timing to $4$ days: $4\\ge 3$, so K moves into the early branch. Early branch: no renewal and no charge. The $15\\%$ usage figure is never read, because the refund biconditional sits only in the late branch.
+
+so the statement is True.`,
+      `**E.** → False
+
+The $10\\%$ usage test is written only in the late-cancellation paragraph ($d<3$). If a subscriber cancels $3$ or more days ahead, the early branch settles everything by timing: no renewal, no charge, and no refund question.
+
+so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 12,
-    solution_overview:
-      'The policy splits into two branches, and which branch you land in depends only on the timing. Let $d$ be the number of days between cancelling and the renewal date, and $u$ the share of the service used.\n\n**Branch 1, cancelled early, $d \\ge 3$.** No renewal and no charge. Usage is never mentioned in this branch, so it plays no part whatsoever.\n\n**Branch 2, cancelled late, $d < 3$.** The subscription renews and the subscriber is charged. Afterwards a partial refund is issued exactly when the share of the service used stayed below a tenth:\n\n$$u < 10\\%$$\n\nBecause this is an "if and only if", low usage both triggers the refund and is required for it.\n\n**Subscriber K.** $d = 2$, which is under 3, so K is in branch 2: **the subscription renews and K is charged**. Then the refund test: $u = 15\\%$, and $15\\% < 10\\%$ is false, so **no refund**.\n\n**Two what-ifs.** Change only the usage to 5%: K stays in branch 2, the test now passes, and the refund is issued. Change only the timing to 4 days: $4 \\ge 3$ moves K into branch 1, where the subscription never renews, no charge is made, and the refund clause is never reached, so the 15% figure becomes irrelevant.\n\nNotice where the usage condition lives: inside branch 2 only. Subscribers who cancel three or more days ahead are settled by timing alone.',
+    solution_overview: `Let $d$ be the number of days between cancelling and the renewal date, and $u$ the share of the service used.
+
+Branch 1, cancelled early, $d\\ge 3$: no renewal and no charge. Usage is never mentioned in this branch.
+
+Branch 2, cancelled late, $d<3$: the subscription renews and the subscriber is charged. Afterwards a partial refund is issued exactly when $u<10\\%$. Because this is an "if and only if", low usage both triggers the refund and is required for it.`,
   },
   {
-    id: "math-1-91",
-    case_id: "MATH 1.91",
-    title: 'A clinical guideline states : "If a patient has a fever above 38°C, th',
-    subsection: "1.4",
-    context:
-      'A clinical guideline states: "If a patient has a fever above 38°C, then antibiotics are prescribed."',
+    id: `math-1-91`,
+    case_id: `MATH 1.91`,
+    title: `Negation and Violation of a Fever-Antibiotics Guideline`,
+    subsection: `1.4`,
+    context: `A clinical guideline states: "If a patient has a fever above 38°C, then antibiotics are prescribed."`,
     statements: [
-      'The negation of the guideline is: "A patient has a fever above 38°C and is not prescribed antibiotics." If observed, this would show the guideline was violated.',
-      "A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to the guideline.",
-      'The inverse, "If a patient\'s fever is not above 38°C, they are not prescribed antibiotics," could be false in practice - e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.',
-      'The converse, "If a patient is prescribed antibiotics, their fever is above 38°C," is logically guaranteed by the original guideline.',
-      'A proof by contradiction of "not every patient prescribed antibiotics has a fever above 38°C" would begin by assuming the opposite - that every such patient DOES have a fever above 38°C - and then exhibit a real case (like the one in part c) that violates that assumption.',
+      `The negation of the guideline is: "A patient has a fever above 38°C and is not prescribed antibiotics." If observed, this would show the guideline was violated.`,
+      `A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to the guideline.`,
+      `The inverse, "If a patient's fever is not above 38°C, they are not prescribed antibiotics," could be false in practice - e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.`,
+      `The converse, "If a patient is prescribed antibiotics, their fever is above 38°C," is logically guaranteed by the original guideline.`,
+      `A proof by contradiction of "not every patient prescribed antibiotics has a fever above 38°C" would begin by assuming the opposite - that every such patient DOES have a fever above 38°C - and then exhibit a real case (like the one in part c) that violates that assumption.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      "**A.** → True\n\nAn implication fails in exactly one situation, and the quoted sentence describes it: high fever, no antibiotics. Finding such a patient on a ward would indeed mean the guideline had been broken. **Correctly negated.**\n\nThe guideline is $P\\Rightarrow Q$: fever above $38^{\\circ}\\mathrm{C}$ forces antibiotics. An implication fails only on $P\\land\\neg Q$.\n\nThe quoted sentence is exactly that row: a patient with fever above $38^{\\circ}\\mathrm{C}$ who is not prescribed antibiotics. Observing such a patient would violate the guideline.",
-      '**B.** → False\n\nThe trap is the word **above**. A reading of 38.0°C is not above 38, so the guideline\'s "if" part is false and the guideline promises nothing about this patient, whatever the prescription. An implication fails only when the hypothesis is true and the conclusion false; here the hypothesis never fires. **No counterexample here.**\n\n“Above $38$” is a strict inequality. A reading of $38.0^{\\circ}\\mathrm{C}$ is not above $38$, so $P$ is false. The guideline $P\\Rightarrow Q$ is then idle, whatever the prescription.\n\nA counterexample needs $P$ true and $Q$ false: fever strictly above $38$ and no antibiotics. This patient never fires the hypothesis.',
-      "**C.** → True\n\nA patient at 37.5°C with a bacterial infection who receives antibiotics has no high fever and yet gets the drug, which is precisely what the inverse forbids. Patients like that are entirely ordinary in a clinic, so **the inverse really can fail in practice.**\n\nThe inverse is $\\neg P\\Rightarrow\\neg Q$: fever not above $38$, therefore no antibiotics. A patient at $37.5^{\\circ}\\mathrm{C}$ with a bacterial infection who still receives antibiotics has $\\neg P$ true and $\\neg Q$ false.\n\nThat is the failure row of the inverse. Such patients are ordinary in a clinic, so the inverse can be false in practice while the original guideline still holds.",
-      "**D.** → False\n\nThe guideline constrains only patients with high fevers; it says nothing about why anybody else might be prescribed antibiotics. The same 37.5°C patient refutes the converse outright: antibiotics given ($Q$ true) while fever is not above 38 ($P$ false). The trap is treating an implication as if it also forced its converse. **Not guaranteed.**\n\nThe converse is $Q\\Rightarrow P$: antibiotics, therefore fever above $38$. The $37.5^{\\circ}\\mathrm{C}$ patient who receives antibiotics has $Q$ true and $P$ false.\n\nTrue “if”, false “then”: the converse fails. The original guideline only constrains high-fever patients, so it does not lock this converse.",
-      "**E.** → True\n\nThe target is \"not every patient prescribed antibiotics has a fever above 38°C\". Its opposite is \"every such patient does have a fever above 38°C\", which is the assumption the claim describes. A patient at 37.5°C who still receives antibiotics is a case that assumption cannot allow.\n\nThe opening assumption described is the exact negation of the target claim, which is the legal way to start, and the 37.5°C patient is a case that assumption cannot tolerate. **The proof is correctly set up.**",
+      `**A.** → True
+
+The guideline is $P\\Rightarrow Q$: fever above $38^{\\circ}\\mathrm{C}$ forces antibiotics. An implication fails only on $P\\land\\neg Q$. The quoted sentence is exactly that row: a patient with fever above $38^{\\circ}\\mathrm{C}$ who is not prescribed antibiotics. Observing such a patient would violate the guideline. That is the unique failure case, not another if-then rule, so the statement is True.`,
+      `**B.** → False
+
+"Above $38$" is a strict inequality. A reading of $38.0^{\\circ}\\mathrm{C}$ is not above $38$, so $P$ is false. The guideline $P\\Rightarrow Q$ is then idle, whatever the prescription. A counterexample needs $P$ true and $Q$ false: fever strictly above $38$ and no antibiotics. This patient never fires the hypothesis. The trap is the word *above*, so the statement is False.`,
+      `**C.** → True
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$: fever not above $38$, therefore no antibiotics. A patient at $37.5^{\\circ}\\mathrm{C}$ with a bacterial infection who still receives antibiotics has $\\neg P$ true and $\\neg Q$ false. That is the failure row of the inverse. Such patients are ordinary in a clinic, so the inverse can be false in practice while the original guideline still holds, so the statement is True.`,
+      `**D.** → False
+
+The converse is $Q\\Rightarrow P$: antibiotics, therefore fever above $38$. The $37.5^{\\circ}\\mathrm{C}$ patient who receives antibiotics has $Q$ true and $P$ false. True "if", false "then": the converse fails. The original guideline only constrains high-fever patients, so it does not lock this converse. The trap is treating an implication as if it also forced its converse, so the statement is False.`,
+      `**E.** → True
+
+The target is "not every patient prescribed antibiotics has a fever above $38^{\\circ}\\mathrm{C}$." Its opposite is "every such patient does have a fever above $38^{\\circ}\\mathrm{C}$," which is the assumption the claim describes. A patient at $37.5^{\\circ}\\mathrm{C}$ who still receives antibiotics is a case that assumption cannot allow. The opening described is the legal way to start a contradiction proof, so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 13,
-    solution_overview:
-      'The guideline is a promise about every patient: fever above 38°C, therefore antibiotics. Call the two halves $P$ (fever above 38°C) and $Q$ (antibiotics prescribed). An implication can be broken in only one way, $P$ true with $Q$ false, so its negation reads: **some patient has a fever above 38°C and is not prescribed antibiotics.** A patient like that would be a genuine violation.\n\n**Patient 1: exactly 38.0°C, no antibiotics.** "Above 38" is strict, and 38.0 is not above 38, so $P$ is false here. When the "if" part is false the guideline makes no demand at all, so this patient cannot violate it. **Not a counterexample**, simply a case the guideline never spoke about.\n\n**Patient 2: 37.5°C with a bacterial infection, antibiotics given.** Now $P$ is false and $Q$ is true. This patient breaks no rule either, but look what the patient does refute:\n\n• the **inverse**, "no fever above 38, so no antibiotics", false, since this patient has no high fever yet receives the drug;\n\n• the **converse**, "antibiotics, so a fever above 38", false for the same reason.\n\nNone of that is surprising: antibiotics are prescribed for infections, not for thermometer readings, and the converse and the inverse are independent of the guideline.\n\n**A proof by contradiction.** To argue that "not every patient prescribed antibiotics has a fever above 38°C", assume the opposite, every such patient does have one, and then produce Patient 2, whom that assumption forbids. The assumption collapses and the original claim stands.',
+    solution_overview: `The guideline is $P\\Rightarrow Q$: $P$ = fever above $38^{\\circ}\\mathrm{C}$, $Q$ = antibiotics prescribed. An implication fails only on $P\\land\\neg Q$.
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$, the converse is $Q\\Rightarrow P$, and the contrapositive is $\\neg Q\\Rightarrow\\neg P$. "Above $38$" is a strict inequality, so a reading of exactly $38.0$ makes $P$ false. A proof by contradiction of a claim opens by assuming the opposite of that claim.`,
   },
   {
-    id: "math-1-92",
-    case_id: "MATH 1.92",
-    title: 'A security policy claims : "If a password is at least 12 characters, i',
-    subsection: "1.4",
-    context:
-      'A security policy claims: "If a password is at least 12 characters, it is classified as strong." The password "aaaaaaaaaaaa" has 12 identical letters and is not classified as strong because of its low complexity.',
+    id: `math-1-92`,
+    case_id: `MATH 1.92`,
+    title: `A Weak Password That Meets a Length-Only Security Rule`,
+    subsection: `1.4`,
+    context: `A security policy claims: "If a password is at least 12 characters, it is classified as strong." The password "aaaaaaaaaaaa" has 12 identical letters and is not classified as strong because of its low complexity.`,
     statements: [
-      'The password "aaaaaaaaaaaa" is a genuine counterexample showing that the policy is false as an absolute rule.',
-      'The converse, "If a password is strong, it is at least 12 characters," is a logically separate claim whose truth must be checked independently of the original.',
-      "An 8-character, highly randomized password not classified as strong under this system directly disproves the converse.",
-      'The inverse, "If a password is under 12 characters, it is not strong," is logically equivalent to the contrapositive - so its truth cannot be inferred from the converse.',
-      'Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether "If a password is not strong, it is under 12 characters" is true or false without checking it separately from the original policy.',
+      `The password "aaaaaaaaaaaa" is a genuine counterexample showing that the policy is false as an absolute rule.`,
+      `The converse, "If a password is strong, it is at least 12 characters," is a logically separate claim whose truth must be checked independently of the original.`,
+      `An 8-character, highly randomized password not classified as strong under this system directly disproves the converse.`,
+      `The inverse, "If a password is under 12 characters, it is not strong," is logically equivalent to the contrapositive - so its truth cannot be inferred from the converse.`,
+      `Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether "If a password is not strong, it is under 12 characters" is true or false without checking it separately from the original policy.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nTwelve characters ($P$ true) and not classified as strong ($Q$ false) is the one row that refutes an implication. Whatever other long passwords do, the rule can no longer be stated absolutely. **A real counterexample.**\n\nCount the letters in “aaaaaaaaaaaa”: twelve identical a’s, so length $12$ and $P$ is true. The system does not classify it as strong, so $Q$ is false.\n\nThat is the unique failure row of $P\\Rightarrow Q$. One such password is enough to show the policy is false as an absolute rule.",
-      "**B.** → True\n\nThe converse belongs to the other equivalence pair, so the collapse of the policy leaves it untouched. Settling it needs its own evidence: a strong password under 12 characters, or a demonstration that none exists. **A separate question indeed.**\n\nThe converse $Q\\Rightarrow P$ (“strong, therefore at least 12 characters”) lives in the other equivalence pair. Collapse of the original $P\\Rightarrow Q$ does not decide it.\n\nSettling the converse needs a strong password shorter than 12 characters, or a proof that none exists. Neither is supplied by “aaaaaaaaaaaa.”",
-      "**C.** → False\n\nThe converse makes a demand only about passwords that *are* strong. An 8-character password that is not strong has both parts false, so the converse is satisfied automatically and learns nothing from it. The trap is thinking any short password tests \"$Q \\Rightarrow P$\"; only a *strong* short password would. **Untested, not disproved.**\n\nThe converse $Q\\Rightarrow P$ asks something only when $Q$ is true, that is, only of passwords that *are* classified as strong. An 8-character password that is not strong has $P$ false and $Q$ false.\n\nFalse antecedent: the converse holds vacuously on that password and learns nothing. Only a *strong* short password would refute $Q\\Rightarrow P$.",
-      "**D.** → False\n\nBoth halves of this claim go wrong: the inverse pairs with the **converse**, not with the contrapositive, and precisely because of that pairing the inverse *can* be read straight off the converse. Mixing up which relatives travel together is the whole mistake here. **The family has been mis-sorted.**\n\nThe inverse $\\neg P\\Rightarrow\\neg Q$ is equivalent to the converse $Q\\Rightarrow P$, not to the contrapositive $\\neg Q\\Rightarrow\\neg P$. The contrapositive travels with the original policy.\n\nBecause the inverse pairs with the converse, its truth *can* be read off the converse. Both halves of the claim reverse that pairing.",
-      '**E.** → False\n\n"If a password is not strong, it is under 12 characters" is the contrapositive of the policy, and a contrapositive never disagrees with its original. The policy is false, so this sentence is false, no separate check needed, and "aaaaaaaaaaaa" illustrates it directly: not strong, yet length 12, so "under 12" fails. The trap is inventing a loophole where none exists for contrapositives. **Already determined.**\n\n“If a password is not strong, it is under 12 characters” is $\\neg Q\\Rightarrow\\neg P$, the contrapositive of the policy. A contrapositive always shares the original’s truth value.\n\nThe policy is false (witness “aaaaaaaaaaaa”), so this sentence is false too. The same password shows it: not strong, yet length 12, so “under 12” fails. No separate check is needed.',
+      `**A.** → True
+
+Count the letters in "aaaaaaaaaaaa": twelve identical a's, so length $12$ and $P$ is true. The system does not classify it as strong, so $Q$ is false. That is the unique failure row of $P\\Rightarrow Q$. One such password is enough to show the policy is false as an absolute rule. Other long passwords cannot rescue it, so the statement is True.`,
+      `**B.** → True
+
+The converse $Q\\Rightarrow P$ ("strong, therefore at least $12$ characters") lives in the other equivalence pair. Collapse of the original $P\\Rightarrow Q$ does not decide it. Settling the converse needs a strong password shorter than $12$ characters, or a proof that none exists. Neither is supplied by "aaaaaaaaaaaa," so the statement is True.`,
+      `**C.** → False
+
+The converse $Q\\Rightarrow P$ asks something only when $Q$ is true, that is, only of passwords that *are* classified as strong. An $8$-character password that is not strong has $P$ false and $Q$ false. False antecedent: the converse holds vacuously on that password and learns nothing. Only a *strong* short password would refute $Q\\Rightarrow P$, so the statement is False.`,
+      `**D.** → False
+
+The inverse $\\neg P\\Rightarrow\\neg Q$ is equivalent to the converse $Q\\Rightarrow P$, not to the contrapositive $\\neg Q\\Rightarrow\\neg P$. The contrapositive travels with the original policy. Because the inverse pairs with the converse, its truth *can* be read off the converse. Both halves of the claim reverse that pairing, so the statement is False.`,
+      `**E.** → False
+
+"If a password is not strong, it is under $12$ characters" is $\\neg Q\\Rightarrow\\neg P$, the contrapositive of the policy. A contrapositive always shares the original's truth value. The policy is false (witness "aaaaaaaaaaaa"), so this sentence is false too. The same password shows it: not strong, yet length $12$, so "under $12$" fails. No separate check is needed, so the statement is False.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 14,
-    solution_overview:
-      'Let $P$ = "the password has at least 12 characters" and $Q$ = "it is classified as strong". The policy claims $P \\Rightarrow Q$ for every password.\n\n**"aaaaaaaaaaaa" does all the damage.** It is 12 characters long, so $P$ holds, and the system does not call it strong, so $Q$ fails. That is the single combination an implication cannot survive, so **the policy is false as an absolute rule**.\n\n**Which relatives fall with it**\n\n$$\\underbrace{P \\Rightarrow Q}_{\\text{original}} \\equiv \\underbrace{\\neg Q \\Rightarrow \\neg P}_{\\text{contrapositive}}, \\qquad\\qquad \\underbrace{Q \\Rightarrow P}_{\\text{converse}} \\equiv \\underbrace{\\neg P \\Rightarrow \\neg Q}_{\\text{inverse}}.$$\n\nThe contrapositive reads "if a password is not strong, it is under 12 characters". Being equivalent to the policy it is false too, and the same password shows it: not strong, yet a full 12 characters long. No separate investigation is needed.\n\nThe converse and the inverse form the other camp. Their truth value is simply not settled by what happened to the policy, and whatever we learn about one of them transfers instantly to the other.\n\n**What would test the converse?** Only a **strong** password shorter than 12 characters. An 8-character password that the system does *not* call strong has both $P$ and $Q$ false; the converse asks nothing of such a password, so it leaves the question exactly where it was.',
+    solution_overview: `Write $P$ for "the password has at least $12$ characters" and $Q$ for "it is classified as strong." The policy claims $P\\Rightarrow Q$ for every password.
+
+The original pairs with the contrapositive $\\neg Q\\Rightarrow\\neg P$. The converse $Q\\Rightarrow P$ pairs with the inverse $\\neg P\\Rightarrow\\neg Q$. The password "aaaaaaaaaaaa" has length $12$ and is not classified as strong.`,
   },
   {
-    id: "math-1-93",
-    case_id: "MATH 1.93",
-    title: "Factory batch inspection",
-    subsection: "1.4",
-    context:
-      'A factory manager claims: "All 500 microchips in Batch 12 pass the stress test." During inspection, chip #317 in Batch 12 is found to have failed the stress test. Separately, Batch 13 was cancelled before production began, so it contains zero chips.',
+    id: `math-1-93`,
+    case_id: `MATH 1.93`,
+    title: `Factory batch inspection`,
+    subsection: `1.4`,
+    context: `A factory manager claims: "All 500 microchips in Batch 12 pass the stress test." During inspection, chip #317 in Batch 12 is found to have failed the stress test. Separately, Batch 13 was cancelled before production began, so it contains zero chips.`,
     statements: [
-      "The manager's claim about Batch 12 is false.",
-      'The correct negation of the manager\'s claim is: "All chips in Batch 12 fail the stress test."',
-      'The statement "All chips in Batch 13 pass the stress test" is vacuously true.',
-      '"For every chip that failed, there exists a defect code explaining that specific failure" means exactly the same thing as "There exists a single defect code that explains every chip that failed."',
-      'The fact that chip #317 failed is, by itself, enough to prove that "some chip in Batch 12 failed" is true.',
+      `The manager's claim about Batch 12 is false.`,
+      `The correct negation of the manager's claim is: "All chips in Batch 12 fail the stress test."`,
+      `The statement "All chips in Batch 13 pass the stress test" is vacuously true.`,
+      `"For every chip that failed, there exists a defect code explaining that specific failure" means exactly the same thing as "There exists a single defect code that explains every chip that failed."`,
+      `The fact that chip #317 failed is, by itself, enough to prove that "some chip in Batch 12 failed" is true.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      '**A.** → True\n\nThe manager claims that all 500 chips in Batch 12 pass the stress test. Inspection found chip #317 in Batch 12 failed that test. A universal claim fails as soon as one member fails it.\n\nOne failing chip is all it takes against an "all" claim, and #317 failed. **The manager is wrong.**',
-      '**B.** → False\n\nThe negation of "all pass" is "at least one fails", which the inspection has already established. "All 500 fail" is a far bigger claim that nobody has evidence for. The trap is replacing $\\exists$ with $\\forall$ when flipping a universal claim. **Wrong negation.**\n\nThe manager’s claim is $\\forall x\\,\\mathrm{Pass}(x)$ on Batch 12. Negating a universal gives an existential:\n\n$$\\neg\\forall x\\,\\mathrm{Pass}(x)\\equiv\\exists x\\,\\neg\\mathrm{Pass}(x),$$\n\n“at least one chip fails.” Chip #317 already witnesses that. “All chips fail” would be $\\forall x\\,\\neg\\mathrm{Pass}(x)$, which needs all 500 failures and is a different sentence.',
-      "**C.** → True\n\nBatch 13 was cancelled before production, so it contains zero chips. To falsify \"all chips in Batch 13 pass\" you would have to point at a chip in Batch 13 that failed. There is no such chip, so the universal cannot be made false.\n\nNo chips means no possible failures, and therefore nothing that could make the sentence false. That is exactly the situation described by the phrase **vacuously true**.",
-      "**D.** → False\n\nWatch the order. In the first sentence the code is chosen after the chip is known, so different chips may get different codes; the second insists on one code covering all of them. Ten failures with ten codes make the first true and the second false. Quantifier order alone separates \"$\\forall$ chip $\\exists$ code\" from \"$\\exists$ code $\\forall$ chip\". **Different meanings.**\n\nWrite $F$ for failed chips and $C$ for defect codes. Sentence 1 is $\\forall f\\,\\exists c\\,\\mathrm{Explains}(c,f)$: after the chip is named, a code may be chosen. Sentence 2 is $\\exists c\\,\\forall f\\,\\mathrm{Explains}(c,f)$: one code is chosen first and must cover every failure.\n\nTen failures with ten different codes make sentence 1 true and sentence 2 false. Quantifier order is the whole difference.",
-      "**E.** → True\n\n\"Some chip in Batch 12 failed\" is $\\exists x\\,\\neg\\mathrm{Pass}(x)$. Chip #317 is in Batch 12 and failed the stress test, which is one witness for that existential.\n\nExistence claims are proved by exhibiting one example, and #317 is a chip in Batch 12 that failed. Nothing else about the batch matters. **Proved.**",
+      `**A.** → True
+
+The manager claims that all $500$ chips in Batch $12$ pass. Inspection found chip #$317$ in Batch $12$ failed. A universal claim fails as soon as one member fails it. The other $499$ chips have no bearing on that verdict. The manager is wrong, so the statement is True.`,
+      `**B.** → False
+
+The manager's claim is $\\forall x\\,\\mathrm{Pass}(x)$ on Batch $12$. Negating a universal gives an existential:
+
+$$\\neg\\forall x\\,\\mathrm{Pass}(x)\\equiv\\exists x\\,\\neg\\mathrm{Pass}(x)$$
+
+"at least one chip fails." Chip #$317$ already witnesses that. "All chips fail" would be $\\forall x\\,\\neg\\mathrm{Pass}(x)$, which needs all $500$ failures and is a different sentence. The trap is replacing $\\exists$ with $\\forall$ when flipping a universal, so the statement is False.`,
+      `**C.** → True
+
+Batch $13$ was cancelled before production, so it contains zero chips. To falsify "all chips in Batch $13$ pass" you would have to point at a chip in Batch $13$ that failed. There is no such chip, so the universal cannot be made false. No chips means no possible failures. That is exactly the situation described by *vacuously true*, so the statement is True.`,
+      `**D.** → False
+
+Sentence 1 is $\\forall f\\,\\exists c\\,\\mathrm{Explains}(c,f)$: after the chip is named, a code may be chosen. Sentence 2 is $\\exists c\\,\\forall f\\,\\mathrm{Explains}(c,f)$: one code is chosen first and must cover every failure. Ten failures with ten different codes make sentence 1 true and sentence 2 false. Quantifier order is the whole difference, so the statement is False.`,
+      `**E.** → True
+
+"Some chip in Batch $12$ failed" is $\\exists x\\,\\neg\\mathrm{Pass}(x)$. Chip #$317$ is in Batch $12$ and failed the stress test, which is one witness for that existential. Existence claims are proved by exhibiting one example. Nothing else about the batch matters, so the statement is True.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: `2/5`,
     sort_order: 15,
-    solution_overview:
-      'The manager\'s sentence is a universal claim: **every** chip in Batch 12 passes. Universal claims are fragile, one bad member destroys them, and that is what the inspection found. Chip #317 is in Batch 12 and failed, so the claim is **false**, and the other 499 chips have no bearing on that verdict.\n\n**The correct negation.** Denying "all pass" gives "at least one fails", not "all fail":\n\n$$\\neg\\,\\forall x\\,\\mathrm{Pass}(x) \\equiv \\exists x\\,\\neg\\mathrm{Pass}(x).$$\n\n"All chips fail" would demand 500 failures. The inspection found one, which is already enough for the negation and nowhere near enough for that stronger sentence.\n\n**The empty batch.** Batch 13 has no chips at all. To make "all chips in Batch 13 pass" false you would have to point at a chip in Batch 13 that failed, and there is nothing to point at, so the claim is **vacuously true**. By the same emptiness, "some chip in Batch 13 passed" is false.\n\n**Two defect-code sentences that look alike.** "For every failed chip there exists a code explaining it" lets the code be chosen after the chip is named, so ten failures may carry ten different codes. "There exists one code that explains every failure" fixes a single code in advance. The second is much stronger and implies the first; the reverse does not hold.\n\nFinally, "some chip in Batch 12 failed" is an existence claim, and chip #317 proves it single-handedly.',
+    solution_overview: `The manager's sentence is a universal: every chip in Batch $12$ passes. Universal claims fail at one counterexample. Negating $\\forall x\\,\\mathrm{Pass}(x)$ yields $\\exists x\\,\\neg\\mathrm{Pass}(x)$, not $\\forall x\\,\\neg\\mathrm{Pass}(x)$.
+
+Batch $13$ is empty. A universal over an empty domain is vacuously true: there is no member that could fail it. Quantifier order: $\\forall f\\,\\exists c$ lets the code depend on the chip; $\\exists c\\,\\forall f$ freezes one code for every failure. An existential is proved by one witness.`,
   },
   {
-    id: "math-1-94",
-    case_id: "MATH 1.94",
-    title: 'In number theory: : "If n is divisible by 6, then n is divisible by 3',
-    subsection: "1.4",
-    context: 'In number theory: "If n is divisible by 6, then n is divisible by 3."',
+    id: `math-1-94`,
+    case_id: `MATH 1.94`,
+    title: `Divisibility by Six Versus Divisibility by Three`,
+    subsection: `1.4`,
+    context: `In number theory: "If n is divisible by 6, then n is divisible by 3."`,
     statements: [
-      'The negation, "n is divisible by 6 and n is not divisible by 3," describes a situation that occurs for infinitely many integers n.',
-      'The converse, "If n is divisible by 3, then n is divisible by 6," is false - n = 9 is a counterexample (divisible by 3, not by 6).',
-      'The inverse, "If n is not divisible by 6, then n is not divisible by 3," is logically equivalent to the converse, so it is also false, with n = 9 again serving as its counterexample.',
-      'The contrapositive, "If n is not divisible by 3, then n is not divisible by 6," is false for some integers n.',
-      'Since the converse is false, the original statement "n divisible by $6 \\Rightarrow n$ divisible by 3" must also be false.',
+      `The negation, "n is divisible by 6 and n is not divisible by 3," describes a situation that occurs for infinitely many integers n.`,
+      `The converse, "If n is divisible by 3, then n is divisible by 6," is false - n = 9 is a counterexample (divisible by 3, not by 6).`,
+      `The inverse, "If n is not divisible by 6, then n is not divisible by 3," is logically equivalent to the converse, so it is also false, with n = 9 again serving as its counterexample.`,
+      `The contrapositive, "If n is not divisible by 3, then n is not divisible by 6," is false for some integers n.`,
+      `Since the converse is false, the original statement "n divisible by $6 \\Rightarrow n$ divisible by 3" must also be false.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
-      '**A.** → False\n\nEvery multiple of 6 can be written $3(2k)$, so it is automatically a multiple of 3. The described situation occurs for **no** integer at all, which makes "infinitely many" doubly wrong. The negation of a true universal implication is empty; there is no $n$ with $6 \\mid n$ and $3 \\nmid n$.\n\nIf $6\\mid n$, write $n=6k=3(2k)$. Then $2k$ is an integer, so $3\\mid n$ automatically. The pair “divisible by 6 and not by 3” is empty.\n\nThe claim says that empty situation occurs for infinitely many $n$. Empty is not infinite. The negation of a true universal implication never happens.',
-      "**B.** → True\n\nThe converse claims: if $n$ is divisible by 3, then $n$ is divisible by 6. Test $n = 9$: $9 = 3 \\times 3$, so $3$ divides 9, but $9 = 6 \\times 1 + 3$, so 6 does not.\n\n$3 \\mid 9$ but $6 \\nmid 9$: hypothesis true, conclusion false. **9 is a perfectly good counterexample.**",
-      '**C.** → True\n\n**The pairing:** the inverse always matches the converse, and the converse has just been shown false.\n\n**The witness:** at $n = 9$, "$6 \\nmid 9$" is true while "$3 \\nmid 9$" is false.\n\nBoth halves of the claim are accurate.\n\nThe inverse is $6\\nmid n\\Rightarrow 3\\nmid n$. Test $n=9$: $9=6\\times 1+3$, so $6\\nmid 9$ (hypothesis true), yet $9=3\\times 3$, so $3\\mid 9$ and $3\\nmid 9$ is false.\n\nTrue hypothesis, false conclusion: the inverse fails at 9, matching the already-false converse. Both halves of the claim hold.',
-      "**D.** → False\n\nThe original is $6 \\mid n \\Rightarrow 3 \\mid n$, proved by writing $n = 6k = 3(2k)$. Its contrapositive is $3 \\nmid n \\Rightarrow 6 \\nmid n$, the same implication in other clothes. A statement true for every integer cannot fail for some $n$.\n\nThe contrapositive is the original in disguise, and the original was proved for every integer, so there is no integer left that could falsify it. **No such $n$ exists.**",
-      "**E.** → False\n\nHere is the classic mix-up: the converse lives in the other pair. The original has a direct proof, $n = 6k = 3(2k)$, and no failure of the converse can reach it. The trap is thinking \"converse false, therefore original false\"; those two statements are independent. **The original stands.**\n\nThe original $6\\mid n\\Rightarrow 3\\mid n$ was proved by $n=6k=3(2k)$, for every integer $n$. The converse $3\\mid n\\Rightarrow 6\\mid n$ is a different implication, already refuted by $n=9$.\n\nFalsity of the converse never leaks into the original. The two statements are independent, and the original remains true.",
+      `**A.** → False
+
+If $6\\mid n$, write $n=6k=3(2k)$. Then $2k$ is an integer, so $3\\mid n$ automatically. The pair "divisible by $6$ and not by $3$" is empty. The claim says that empty situation occurs for infinitely many $n$. Empty is not infinite. The negation of a true universal implication never happens, so the statement is False.`,
+      `**B.** → True
+
+The converse claims: if $n$ is divisible by $3$, then $n$ is divisible by $6$. Test $n=9$: $9=3\\times 3$, so $3$ divides $9$, but $9=6\\times 1+3$, so $6$ does not. Hypothesis true, conclusion false. $9$ is a perfectly good counterexample. The reason is that $6$ also demands a factor $2$, and $9$ is odd, so the statement is True.`,
+      `**C.** → True
+
+The inverse is $6\\nmid n\\Rightarrow 3\\nmid n$. Test $n=9$: $6\\nmid 9$ (hypothesis true), yet $3\\mid 9$, so $3\\nmid 9$ is false. True hypothesis, false conclusion: the inverse fails at $9$, matching the already-false converse. Inverse and converse always march together. Both halves of the claim hold, so the statement is True.`,
+      `**D.** → False
+
+The original is $6\\mid n\\Rightarrow 3\\mid n$, proved by $n=6k=3(2k)$. Its contrapositive is $3\\nmid n\\Rightarrow 6\\nmid n$, the same implication in other clothes. A statement true for every integer cannot fail for some $n$. Directly: a number untouched by $3$ cannot be a multiple of $6$. No such $n$ exists, so the statement is False.`,
+      `**E.** → False
+
+The original $6\\mid n\\Rightarrow 3\\mid n$ holds for every integer $n$. The converse $3\\mid n\\Rightarrow 6\\mid n$ is a different implication, already refuted by $n=9$. Falsity of the converse never leaks into the original. The two statements are independent, and the original remains true. That is the classic mix-up of the two equivalence pairs, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 16,
-    solution_overview:
-      'The original statement is easy to prove outright. If $6 \\mid n$, write $n = 6k$; then\n\n$$n = 6k = 3(2k),$$\n\nand $2k$ is a whole number, so $3 \\mid n$. This works for every integer with no exceptions, which immediately kills the negation "$n$ is divisible by 6 but not by 3": **no** integer fits that description, let alone infinitely many.\n\n**One number handles the other three sentences, and that number is 9.**\n\n• **Converse**, "$3 \\mid n$ implies $6 \\mid n$": at $n = 9$ the hypothesis holds ($3 \\mid 9$) and the conclusion fails ($6 \\nmid 9$), so the converse is **false**. The reason is that 6 also demands a factor 2, and 9 is odd.\n\n• **Inverse**, "$6 \\nmid n$ implies $3 \\nmid n$": at $n = 9$ the hypothesis holds ($6 \\nmid 9$) and the conclusion fails ($3 \\mid 9$), so it is **false** as well, as expected, since the inverse and the converse always march together.\n\n• **Contrapositive**, "$3 \\nmid n$ implies $6 \\nmid n$": equivalent to the original, hence **true** for every integer. Directly: a multiple of 6 is always $3(2k)$, so a number untouched by 3 cannot be a multiple of 6.\n\nSo the true pair is the original with its contrapositive, the false pair is the converse with the inverse, and knowing about one pair tells you nothing about the other.',
+    solution_overview: `The original statement is $6\\mid n\\Rightarrow 3\\mid n$. If $6\\mid n$, write $n=6k=3(2k)$, so $3\\mid n$ automatically.
+
+The converse is $3\\mid n\\Rightarrow 6\\mid n$, the inverse is $6\\nmid n\\Rightarrow 3\\nmid n$, and the contrapositive is $3\\nmid n\\Rightarrow 6\\nmid n$. Original pairs with contrapositive; converse pairs with inverse. A number divisible by $3$ but not by $2$ (such as $9$) tests the second pair.`,
   },
   {
-    id: "math-1-95",
-    case_id: "MATH 1.95",
-    title: "ID number verification rule",
-    subsection: "1.4",
-    context:
-      "A system rule states: if the square of an ID number is even, then the ID number itself is even. A verifier is checking two IDs: 1234 and 4321. Note that 1234^2 = 1,522,756 (even) and 4321^2 = 18,671,041 (odd).",
+    id: `math-1-95`,
+    case_id: `MATH 1.95`,
+    title: `ID number verification rule`,
+    subsection: `1.4`,
+    context: `A system rule states: if the square of an ID number is even, then the ID number itself is even. A verifier is checking two IDs: 1234 and 4321. Note that 1234^2 = 1,522,756 (even) and 4321^2 = 18,671,041 (odd).`,
     statements: [
-      "Since $1234^2$ is even, the rule guarantees that 1234 itself is even - which is indeed true.",
-      "To prove the rule by contraposition, one should assume the ID number is even and derive that its square is even.",
-      "Since $4321^2$ is odd, the contrapositive form of the rule guarantees that 4321 itself is odd - which is indeed true.",
-      'The rule ("if $n^2$ is even, then n is even") and its converse ("if n is even, then $n^2$ is even") are logically the same statement.',
-      "A proof of this rule by contradiction would begin by assuming that $n^2$ is even AND n is odd, then deriving a contradiction from that assumption.",
+      `Since $1234^2$ is even, the rule guarantees that 1234 itself is even - which is indeed true.`,
+      `To prove the rule by contraposition, one should assume the ID number is even and derive that its square is even.`,
+      `Since $4321^2$ is odd, the contrapositive form of the rule guarantees that 4321 itself is odd - which is indeed true.`,
+      `The rule ("if $n^2$ is even, then n is even") and its converse ("if n is even, then $n^2$ is even") are logically the same statement.`,
+      `A proof of this rule by contradiction would begin by assuming that $n^2$ is even AND n is odd, then deriving a contradiction from that assumption.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      '**A.** → True\n\n$1,522,756$ is even, so the rule\'s "if" part holds and the rule delivers "1234 is even". A direct look agrees: $1234 = 2 \\times 617$. **The rule is applied in its stated direction and the conclusion checks out.\n\nThe given square is $1234^{2}=1,522,756$, which ends in 6, so it is even. Rule $R$ says: even square implies even ID. Applying it in the stated direction gives that 1234 is even.\n\nDirect check: $1234=2\\times 617$. Hypothesis true, conclusion true: the rule is used correctly on this ID.**',
-      '**B.** → False\n\nContraposition of the rule starts from the **denial of its conclusion**, "$n$ is odd", and finishes at the denial of its hypothesis, "$n^2$ is odd". The plan described runs the other way and proves the companion statement $C$ instead, leaving the rule itself unproved. The trap is starting from the hypothesis of the rule rather than from the denial of its conclusion. **Wrong starting point.**\n\nThe rule is $n^{2}$ even $\\Rightarrow$ $n$ even. Contraposition starts from the denial of the conclusion ($n$ odd) and derives the denial of the hypothesis ($n^{2}$ odd).\n\nThe plan in the claim assumes $n$ even and derives that $n^{2}$ is even. That proves the converse $C$, not $R$. The opening assumption is the wrong half of the implication.',
-      '**C.** → True\n\nThe fact doing the work is "$n^2$ odd implies $n$ odd", which is the contrapositive of "$n$ even implies $n^2$ even" rather than of the rule itself, a distinction worth noticing. Since that statement is proved too, an odd square really does force an odd ID, and $4321 = 2 \\times 2160 + 1$ confirms it. **The conclusion holds.**',
-      "**D.** → False\n\nThe two point in opposite directions and each needed its own proof, one starting from $n = 2k$ and the other from $n = 2k + 1$. Two statements that happen to be true together are still two statements. The trap is treating \"both true\" as \"logically the same\". **Not the same.**\n\nRule $R$ is $n^{2}$ even $\\Rightarrow$ $n$ even. Its converse $C$ is $n$ even $\\Rightarrow$ $n^{2}$ even. They point opposite ways.\n\n$C$ is proved from $n=2k$, giving $n^{2}=4k^{2}$. $R$ is proved from $n=2k+1$, giving $n^{2}$ odd. Two true statements with two proofs are still two statements, not “logically the same.”",
-      '**E.** → True\n\nA contradiction proof denies the rule, and the only way to deny an implication is to keep its hypothesis and reject its conclusion: "$n^2$ even and $n$ odd". From $n = 2k + 1$ the square comes out odd, colliding with the assumption. **Correctly framed.**\n\nAn implication $R$ fails only on $n^{2}$ even and $n$ odd. A contradiction proof of $R$ therefore assumes exactly that pair, then derives an impossibility.\n\nFrom $n=2k+1$ one gets $n^{2}=4k^{2}+4k+1=2(2k^{2}+2k)+1$, odd, colliding with “$n^{2}$ even.” The opening the claim describes is the legal one.',
+      `**A.** → True
+
+The given square is $1234^{2}=1{,}522{,}756$, which ends in $6$, so it is even. Rule $R$ says: even square implies even ID. Applying it in the stated direction gives that $1234$ is even. Direct check: $1234=2\\times 617$. Hypothesis true, conclusion true: the rule is used correctly on this ID, so the statement is True.`,
+      `**B.** → False
+
+The rule is $n^{2}$ even $\\Rightarrow$ $n$ even. Contraposition starts from the denial of the conclusion ($n$ odd) and derives the denial of the hypothesis ($n^{2}$ odd). The plan in the claim assumes $n$ even and derives that $n^{2}$ is even. That proves the converse $C$, not $R$. The opening assumption is the wrong half of the implication, so the statement is False.`,
+      `**C.** → True
+
+The fact doing the work is "$n^{2}$ odd implies $n$ odd," the contrapositive of "$n$ even implies $n^{2}$ even." An odd square really does force an odd ID, and $4321=2\\times 2160+1$ confirms it. The given square $4321^{2}=18{,}671{,}041$ ends in $1$, so it is odd. The conclusion holds, so the statement is True.`,
+      `**D.** → False
+
+Rule $R$ is $n^{2}$ even $\\Rightarrow$ $n$ even. Its converse $C$ is $n$ even $\\Rightarrow$ $n^{2}$ even. They point opposite ways. $C$ is proved from $n=2k$, giving $n^{2}=4k^{2}$. $R$ is proved from $n=2k+1$, giving $n^{2}$ odd. Two true statements with two proofs are still two statements, not "logically the same." The trap is treating "both true" as "logically the same," so the statement is False.`,
+      `**E.** → True
+
+An implication $R$ fails only on $n^{2}$ even and $n$ odd. A contradiction proof of $R$ therefore assumes exactly that pair, then derives an impossibility. From $n=2k+1$ one gets $n^{2}=4k^{2}+4k+1=2(2k^{2}+2k)+1$, odd, colliding with "$n^{2}$ even." The opening the claim describes is the legal one, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 17,
-    solution_overview:
-      'Two statements are circulating here, and it pays to keep them apart:\n\n$$R:\\ n^2 \\text{ even} \\Rightarrow n \\text{ even}, \\qquad\\qquad C:\\ n \\text{ even} \\Rightarrow n^2 \\text{ even}.$$\n\n$C$ is the converse of $R$. Both are true for integers, but each needs its own proof.\n\n**Proving $C$.** If $n = 2k$ then $n^2 = 4k^2 = 2(2k^2)$, an even number. Done.\n\n**Proving $R$ by contraposition.** Contraposition means proving "$n$ odd implies $n^2$ odd" instead. Take $n = 2k + 1$:\n\n$$n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1,$$\n\nwhich is odd. So an odd number never has an even square, and that is exactly $R$.\n\n**The two spin-offs, and which is which.** Contraposing $R$ gives "$n$ odd implies $n^2$ odd", the statement just proved. Contraposing $C$ gives "$n^2$ odd implies $n$ odd". They read parity in opposite directions, so it is worth naming them carefully.\n\n**Checking the IDs.** $1234^2 = 1,522,756$ ends in 6, so it is even; rule $R$ then says 1234 is even, and indeed $1234 = 2 \\times 617$. $4321^2 = 18,671,041$ ends in 1, so it is odd; the fact "$n^2$ odd implies $n$ odd", the contrapositive of $C$, then says 4321 is odd, and indeed $4321 = 2 \\times 2160 + 1$.\n\n**Contradiction, for comparison.** A contradiction proof of $R$ opens by assuming both halves of its failure, "$n^2$ is even **and** $n$ is odd", and the computation above turns "$n$ odd" into "$n^2$ odd", colliding with "$n^2$ is even".',
+    solution_overview: `Two statements are in play:
+
+$$R:\\ n^2\\text{ even}\\Rightarrow n\\text{ even},\\qquad C:\\ n\\text{ even}\\Rightarrow n^2\\text{ even}$$
+
+$C$ is the converse of $R$. Contraposition of $R$ starts from $n$ odd and derives $n^2$ odd. A contradiction proof of $R$ assumes $n^2$ even and $n$ odd. Given: $1234^2=1{,}522{,}756$ (even) and $4321^2=18{,}671{,}041$ (odd).`,
   },
   {
-    id: "math-1-96",
-    case_id: "MATH 1.96",
-    title: "Thales' theorem gives the universal statement: \"Every triangle inscrib",
-    subsection: "1.4",
-    context:
-      'Thales\' theorem gives the universal statement: "Every triangle inscribed in a semicircle, with the diameter as one side, has a right angle at the third vertex."',
+    id: `math-1-96`,
+    case_id: `MATH 1.96`,
+    title: `Negating Thales' Theorem About Right Angles in a Semicircle`,
+    subsection: `1.4`,
+    context: `Thales' theorem gives the universal statement: "Every triangle inscribed in a semicircle, with the diameter as one side, has a right angle at the third vertex."`,
     statements: [
-      'The negation of this universal claim is: "There exists such a triangle without a right angle."',
-      "Since Thales' theorem proves the original statement true, the negation formed above must be a false statement.",
-      'The converse, "If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the diameter," is also a true geometric fact.',
-      "Because both the original statement and its converse are true here, this is an example where the implication is effectively a biconditional, even though converses are not true in general.",
-      "Since the original statement is true, the inverse must also be true, because the inverse and the original are always logically equivalent to each other.",
+      `The negation of this universal claim is: "There exists such a triangle without a right angle."`,
+      `Since Thales' theorem proves the original statement true, the negation formed above must be a false statement.`,
+      `The converse, "If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the diameter," is also a true geometric fact.`,
+      `Because both the original statement and its converse are true here, this is an example where the implication is effectively a biconditional, even though converses are not true in general.`,
+      `Since the original statement is true, the inverse must also be true, because the inverse and the original are always logically equivalent to each other.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      '**A.** → True\n\nThe theorem is $\\forall t\\,(P(t) \\Rightarrow Q(t))$: every such inscribed triangle has a right angle at the third vertex. Negating a universal implication yields $\\exists t\\,(P(t) \\land \\neg Q(t))$, one inscribed triangle without a right angle.\n\nTo deny a claim about every triangle you need only promise a single misbehaving triangle, and "there exists such a triangle without a right angle" says precisely that. **Correctly formed.**',
-      "**B.** → True\n\nThales' theorem establishes the original universal. A statement and its negation cannot both hold, so the existential \"there exists such a triangle without a right angle\" must be false.\n\nThe theorem is proved, so the misbehaving triangle the negation demands does not exist. A proved statement always leaves its negation false. **False, as the claim says.**",
-      "**C.** → True\n\nThe midpoint of the hypotenuse is equidistant from all three vertices, so the circle around it catches the whole triangle and the hypotenuse becomes a diameter. The construction works for every right triangle. Explicitly: place $M$ at the midpoint of the hypotenuse and the equal radii force the third vertex onto that circle. **The converse holds.**\n\nStart with an arbitrary right triangle, hypotenuse $AB$, right angle at $C$. Let $M$ be the midpoint of $AB$. Then $MA=MB$ by construction, and a classical theorem gives $MC=MA$ as well.\n\nThe circle centred at $M$ with radius $MA$ therefore passes through $A$, $B$, and $C$, and $AB$ is a diameter. Every right triangle can be inscribed that way, so the converse is true.",
-      "**D.** → True\n\n**What was shown:** the theorem gives one direction and the midpoint construction gives the other.\n\n**What that means:** the two properties pick out the same triangles, so here the implication upgrades to a biconditional.\n\nThe claim is also right to flag this as a proved special case rather than a general law.\n\nThales’ theorem gives $P\\Rightarrow Q$: inscribed on a diameter, therefore a right angle. The midpoint construction gives $Q\\Rightarrow P$: a right angle, therefore inscribable on the hypotenuse as diameter.\n\nBoth directions hold, so here $P\\Leftrightarrow Q$. That is a proved geometric fact, not a free gift of every implication. Most converses fail.",
-      "**E.** → False\n\nThe inverse does hold here, but the reason offered is wrong: the inverse is equivalent to the **converse**, while the original pairs with the contrapositive. Since the statement asserts an equivalence that does not exist, **it is false as written.** Truth of the original never hands you the inverse for free; here the inverse rides on the midpoint construction that proves the converse.\n\nThe inverse is $\\neg P\\Rightarrow\\neg Q$: not inscribed that way, therefore no right angle. That sentence is equivalent to the converse, never to the original.\n\nThe original pairs with the contrapositive. Truth of Thales’ theorem therefore does not hand over the inverse; here the inverse is true only because the midpoint construction makes the converse true. The claimed reason (“inverse always equivalent to the original”) is false.",
+      `**A.** → True
+
+The theorem is $\\forall t\\,(P(t)\\Rightarrow Q(t))$: every such inscribed triangle has a right angle at the third vertex. Negating a universal implication yields $\\exists t\\,(P(t)\\land\\neg Q(t))$, one inscribed triangle without a right angle. To deny a claim about every triangle you need only promise a single misbehaving triangle. Correctly formed, so the statement is True.`,
+      `**B.** → True
+
+Thales' theorem establishes the original universal. A statement and its negation cannot both hold, so the existential "there exists such a triangle without a right angle" must be false. The theorem is proved, so the misbehaving triangle the negation demands does not exist. A proved statement always leaves its negation false, so the statement is True.`,
+      `**C.** → True
+
+Start with an arbitrary right triangle, hypotenuse $AB$, right angle at $C$. Let $M$ be the midpoint of $AB$. Then $MA=MB$ by construction, and a classical theorem gives $MC=MA$ as well. The circle centred at $M$ with radius $MA$ therefore passes through $A$, $B$, and $C$, and $AB$ is a diameter. Every right triangle can be inscribed that way, so the converse is true, so the statement is True.`,
+      `**D.** → True
+
+Thales' theorem gives $P\\Rightarrow Q$: inscribed on a diameter, therefore a right angle. The midpoint construction gives $Q\\Rightarrow P$: a right angle, therefore inscribable on the hypotenuse as diameter. Both directions hold, so here $P\\Leftrightarrow Q$. That is a proved geometric fact, not a free gift of every implication. Most converses fail, so the statement is True.`,
+      `**E.** → False
+
+The inverse is $\\neg P\\Rightarrow\\neg Q$: not inscribed that way, therefore no right angle. That sentence is equivalent to the converse, never to the original. The original pairs with the contrapositive. Truth of Thales' theorem therefore does not hand over the inverse; here the inverse is true only because the midpoint construction makes the converse true. The claimed reason ("inverse always equivalent to the original") is false, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 18,
-    solution_overview:
-      'Thales\' theorem is a universal statement: for every triangle $t$, if $t$ is inscribed in a semicircle with the diameter as one side, then $t$ has a right angle at the third vertex. In symbols, $\\forall t\\,(P(t) \\Rightarrow Q(t))$.\n\n**Negating it.** Denying "every triangle behaves" means promising one triangle that misbehaves:\n\n$$\\neg\\,\\forall t\\,(P(t) \\Rightarrow Q(t)) \\equiv \\exists t\\,(P(t) \\land \\neg Q(t)),$$\n\nthat is, "there exists such a triangle without a right angle". Since Thales\' theorem is proved, no triangle can play that role, so this negation is **false**, a statement and its negation never hold together.\n\n**The converse is true as well, and here is the construction.** Start with any right triangle and let $M$ be the midpoint of its hypotenuse. A classical argument shows $M$ is the same distance from all three vertices, so the circle centred at $M$ with radius half the hypotenuse passes through every vertex, and the hypotenuse, running through $M$, is a diameter of that circle. The triangle therefore sits in a semicircle with the diameter as one side.\n\n**Both arrows, so a biconditional.** With the theorem going one way and the midpoint construction coming back, the two properties describe exactly the same triangles. That is a proved geometric fact, not something that arrives free with every implication, most implications have false converses.\n\n**One caution about the inverse.** "Not inscribed that way, so no right angle" is equivalent to the **converse**, never to the original. It is true here only on the strength of the midpoint construction; in a setting where the converse failed, the inverse would fail with it while the original carried on holding.',
+    solution_overview: `Thales' theorem is $\\forall t\\,(P(t)\\Rightarrow Q(t))$: every triangle inscribed in a semicircle with the diameter as one side has a right angle at the third vertex.
+
+Negation is $\\exists t\\,(P(t)\\land\\neg Q(t))$. The converse $Q\\Rightarrow P$ is the midpoint construction: the circle centred at the midpoint of the hypotenuse with that radius passes through all three vertices. Both directions give a biconditional. The inverse $\\neg P\\Rightarrow\\neg Q$ pairs with the converse, not with the original.`,
   },
   {
-    id: "math-1-97",
-    case_id: "MATH 1.97",
-    title: 'A number-theory theorem states : "If a number is a perfect square, the',
-    subsection: "1.4",
-    context:
-      'A number-theory theorem states: "If a number is a perfect square, then it has an odd number of positive divisors."',
+    id: `math-1-97`,
+    case_id: `MATH 1.97`,
+    title: `A number-theory theorem states : "If a number is a perfect square, the`,
+    subsection: `1.4`,
+    context: `A number-theory theorem states: "If a number is a perfect square, then it has an odd number of positive divisors."`,
     statements: [
-      'The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of divisors."',
-      "36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.",
-      'The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true statement, so both directions of the implication hold here.',
-      "Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\} (6$ divisors, even), 20 is a valid counterexample disproving the original theorem.",
-      'The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case, since the converse is true.',
+      `The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of divisors."`,
+      `36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.`,
+      `The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true statement, so both directions of the implication hold here.`,
+      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\} (6$ divisors, even), 20 is a valid counterexample disproving the original theorem.`,
+      `The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case, since the converse is true.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      '**A.** → True\n\nDenying an implication always means keeping the "if" and rejecting the "then", which produces exactly this sentence. Correct formation is a question of shape, so it stays the right negation even though nothing satisfies it. Shape first: perfect square and even divisor count is the only way the implication can fail. **Correct.**\n\nThe theorem is $S\\Rightarrow O$: perfect square, therefore an odd number of positive divisors. Negating an implication keeps the “if” and rejects the “then”: $S\\land\\neg O$, a perfect square with an even divisor count.\n\nThat is the quoted sentence. Correct formation is about shape; the pairing argument later shows no integer actually fits it.',
-      "**B.** → True\n\n36 is a square and has 9 divisors: hypothesis satisfied, conclusion satisfied. That is a supporting example, a counterexample would need the divisor count to come out even. **Consistent with the theorem.**\n\n36 is $6^{2}$, so the hypothesis “perfect square” holds. The listed divisors are $1,2,3,4,6,9,12,18,36$: count them, nine, which is odd.\n\nHypothesis true and conclusion true: 36 supports the theorem. A counterexample would need a square with an even divisor count, which this is not.",
-      "**C.** → True\n\nDivisors pair as $d$ with $\\frac{n}{d}$. A divisor is its own partner only when $n$ is a perfect square. So if the divisor count is odd, that leftover partner must exist, and $n$ is a square. That is the converse, and it sits beside the original theorem.\n\nA non-square has all its divisors in distinct couples, so its count is even; turn that round and an odd count becomes impossible unless the number is a square. **Both directions hold here.**",
-      '**D.** → False\n\n20 is not a perfect square, so the theorem\'s "if" part is false and the theorem says nothing whatever about 20. Its even divisor count is exactly what the pairing predicts for a non-square. The trap is treating a non-square with an even divisor list as if it broke "square $\\Rightarrow$ odd count"; that implication never fires when the hypothesis fails. **It refutes nothing.**\n\nThe theorem speaks only about perfect squares. 20 sits between $4^{2}=16$ and $5^{2}=25$, so 20 is not a square and the hypothesis is false.\n\nIts divisors $\\{1,2,4,5,10,20\\}$ number 6, even, as the pairing for non-squares predicts. An implication with a false “if” is not tested, let alone refuted, by 20.',
-      "**E.** → True\n\nThe inverse is the converse in disguise, so the truth of one hands over the truth of the other, and the pairing argument gives it directly as well: with no square root to stand alone, the divisors pair off and the count comes out even. Check 20 again: not a square, six divisors, even, exactly as the inverse predicts. **True.**\n\nThe inverse is “not a square, therefore even divisor count,” equivalent to the converse. 20 is not a square and has 6 divisors, even, matching it.\n\nThe pairing argument gives the same conclusion in general: with no leftover square-root partner, every divisor has a distinct mate and the count is even. The inverse holds here because the converse does.",
+      `**A.** → True
+
+The theorem is $S\\Rightarrow O$: perfect square, therefore an odd number of positive divisors. Negating an implication keeps the "if" and rejects the "then": $S\\land\\neg O$, a perfect square with an even divisor count. That is the quoted sentence. Correct formation is about shape; the pairing argument later shows no integer actually fits it, so the statement is True.`,
+      `**B.** → True
+
+$36$ is $6^{2}$, so the hypothesis "perfect square" holds. The listed divisors are $1,2,3,4,6,9,12,18,36$: nine, which is odd. Hypothesis true and conclusion true: $36$ supports the theorem. A counterexample would need a square with an even divisor count, which this is not, so the statement is True.`,
+      `**C.** → True
+
+Divisors pair as $d$ with $n/d$. A divisor is its own partner only when $n$ is a perfect square. So if the divisor count is odd, that leftover partner must exist, and $n$ is a square. That is the converse, and it sits beside the original theorem. Both directions hold here, so the statement is True.`,
+      `**D.** → False
+
+The theorem speaks only about perfect squares. $20$ sits between $4^{2}=16$ and $5^{2}=25$, so $20$ is not a square and the hypothesis is false. Its divisors number $6$, even, as the pairing for non-squares predicts. An implication with a false "if" is not tested, let alone refuted, by $20$. The trap is treating a non-square with an even list as if it broke "square $\\Rightarrow$ odd count," so the statement is False.`,
+      `**E.** → True
+
+The inverse is "not a square, therefore even divisor count," equivalent to the converse. $20$ is not a square and has $6$ divisors, even, matching it. The pairing argument gives the same conclusion in general: with no leftover square-root partner, every divisor has a distinct mate and the count is even. The inverse holds here because the converse does, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 19,
-    solution_overview:
-      'Divisors come in couples. For any $n$, pair each divisor $d$ with its partner $\\frac{n}{d}$, so that the two multiply back to $n$. A divisor is its **own** partner exactly when $d = \\frac{n}{d}$, that is when $d^2 = n$, which can only happen if $n$ is a perfect square.\n\nThat single observation settles almost everything:\n\n• if $n$ is **not** a perfect square, every divisor has a different partner, the divisors split cleanly into couples, and the count is **even**;\n\n• if $n = m^2$, the divisor $m$ stands alone while all the others couple up, so the count is **odd**.\n\nThe second bullet is the theorem. The first bullet, read backwards, is its converse: an odd divisor count is only possible for a perfect square. And the first bullet stated directly is the inverse, "not a perfect square, so an even number of divisors", true for the same reason.\n\n**Negating the theorem.** Denying "perfect square, so an odd divisor count" keeps the hypothesis and rejects the conclusion: "a number is a perfect square **and** has an even number of divisors". That is the right *shape* for a negation, even though the bullets show that no number actually fits it.\n\n**The two sample numbers.** $36 = 6^2$: couples $1 \\cdot 36$, $2 \\cdot 18$, $3 \\cdot 12$, $4 \\cdot 9$, with 6 left over on its own, 9 divisors, odd, exactly as promised. And 20 is not a square, since $4^2 = 16$ and $5^2 = 25$; its couples $1 \\cdot 20$, $2 \\cdot 10$, $4 \\cdot 5$ give 6 divisors, an even count, so it never even reaches the theorem\'s hypothesis.',
+    solution_overview: `Divisors pair as $d$ with $n/d$. A divisor is its own partner only when $d^{2}=n$, that is when $n$ is a perfect square. So a square has an odd divisor count (the square-root partner stands alone), and a non-square has an even count.
+
+The theorem is $S\\Rightarrow O$: perfect square, therefore odd divisor count. The converse is odd count $\\Rightarrow$ square. The inverse is not a square $\\Rightarrow$ even count. Negation of the theorem is $S\\land\\neg O$. Sample $36=6^{2}$; sample $20$ sits between $4^{2}$ and $5^{2}$.`,
   },
   {
-    id: "math-1-98",
-    case_id: "MATH 1.98",
-    title: "Four friends and their jobs",
-    subsection: "1.4",
-    context:
-      "Four friends - Emma, Felix, Grace, and Hugo - each have a different job: Doctor, Engineer, Teacher, or Lawyer.\n\n(1) Emma is a doctor if and only if Felix is not an engineer.\n\n(2) Felix is an engineer if and only if Grace is a teacher.\n\n(3) Grace is not a teacher.\n\n(4) Hugo is a lawyer.",
+    id: `math-1-98`,
+    case_id: `MATH 1.98`,
+    title: `Four friends and their jobs`,
+    subsection: `1.4`,
+    context: `Four friends - Emma, Felix, Grace, and Hugo - each have a different job: Doctor, Engineer, Teacher, or Lawyer.
+
+(1) Emma is a doctor if and only if Felix is not an engineer.
+
+(2) Felix is an engineer if and only if Grace is a teacher.
+
+(3) Grace is not a teacher.
+
+(4) Hugo is a lawyer.`,
     statements: [
-      "Emma is a doctor.",
-      "Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.",
-      "Grace is an engineer.",
-      "Clue (3) is redundant - the full job assignment could be determined without it.",
-      "If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone.",
+      `Emma is a doctor.`,
+      `Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.`,
+      `Grace is an engineer.`,
+      `Clue (3) is redundant - the full job assignment could be determined without it.`,
+      `If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone.`,
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      "**A.** → True\n\nGrace is not the teacher, so by clue (2) Felix is not the engineer, so by clue (1) Emma *is* the doctor. Each link is a biconditional, which leaves no room for choice. **Emma is the doctor.**\n\nOpen clue (3): Grace is not a teacher. Clue (2) is a biconditional, so “Felix is an engineer” must match “Grace is a teacher.” The right-hand side is false, therefore Felix is not an engineer.\n\nClue (1) is the biconditional “Emma is a doctor $\\Leftrightarrow$ Felix is not an engineer.” The right-hand side is now true, so Emma is a doctor. Each link is forced; there is no other job for her.",
-      '**B.** → False\n\nFelix does teach, but the justification attached to the claim is broken. Clue (2) connects two unknowns and on its own names nobody; even with clue (3) it yields only "Felix is not the engineer", and pinning him to Teacher needs Emma placed by clue (1) and Hugo placed by clue (4). The trap is treating a correct conclusion as if a single clue delivered it. **A right job with a wrong reason makes the statement false.**',
-      "**C.** → True\n\nClue (3) says Grace is not a teacher, so clue (2) forces Felix not to be an engineer, and clue (1) then makes Emma the doctor. Clue (4) places Hugo as the lawyer. Two jobs remain, Engineer and Teacher, for Felix and Grace, and Felix is already barred from Engineer.\n\nWith Doctor taken by Emma and Lawyer by Hugo, only Engineer and Teacher remain, and Felix cannot be the engineer. **Grace engineers.**",
-      "**D.** → True\n\nPut Grace in the teaching post and watch it collapse: Felix becomes the engineer, clue (1) then denies Emma the doctorate, and yet Doctor is the only job left for her. Clues (1), (2) and (4) rule that world out on their own, so **clue (3) adds nothing new.** That contradiction shows the \"Grace is the teacher\" branch is already impossible without ever citing clue (3).\n\nDrop clue (3) and try Grace as teacher. Clue (2) then makes Felix the engineer. Clue (1) then makes “Emma is a doctor” false. Clue (4) already placed Hugo as lawyer, so the four jobs would be: Felix engineer, Grace teacher, Hugo lawyer, and the only job left for Emma is Doctor.\n\nThat contradicts “Emma is not a doctor.” Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant.",
-      "**E.** → True\n\nThe path to \"Emma is the doctor\" ran through clues (3), (2) and (1) and never mentioned Hugo. Clue (4) matters only later, when Felix's and Grace's jobs are separated. **Emma's job survives its removal.**\n\nThe chain to Emma’s job used only clues (3), (2), and (1): Grace not teacher $\\Rightarrow$ Felix not engineer $\\Rightarrow$ Emma is doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher between Felix and Grace.\n\nRemove clue (4) and Emma is still the doctor. The claim holds.",
+      `**A.** → True
+
+Open clue (3): Grace is not a teacher. Clue (2) is a biconditional, so "Felix is an engineer" must match "Grace is a teacher." The right-hand side is false, therefore Felix is not an engineer. Clue (1) is "Emma is a doctor $\\Leftrightarrow$ Felix is not an engineer." The right-hand side is now true, so Emma is a doctor. Each link is forced; there is no other job for her, so the statement is True.`,
+      `**B.** → False
+
+Felix does teach, but the justification attached to the claim is broken. Clue (2) connects two unknowns and on its own names nobody; even with clue (3) it yields only "Felix is not the engineer," and pinning him to Teacher needs Emma placed by clue (1) and Hugo placed by clue (4). The trap is treating a correct conclusion as if a single clue delivered it. A right job with a wrong reason makes the statement false, so the statement is False.`,
+      `**C.** → True
+
+Clue (3) says Grace is not a teacher, so clue (2) forces Felix not to be an engineer, and clue (1) then makes Emma the doctor. Clue (4) places Hugo as the lawyer. Two jobs remain, Engineer and Teacher, for Felix and Grace, and Felix is already barred from Engineer. With Doctor taken by Emma and Lawyer by Hugo, Grace engineers, so the statement is True.`,
+      `**D.** → True
+
+Drop clue (3) and try Grace as teacher. Clue (2) then makes Felix the engineer. Clue (1) then makes "Emma is a doctor" false. Clue (4) already placed Hugo as lawyer, so the only job left for Emma is Doctor. That contradicts "Emma is not a doctor." Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant, so the statement is True.`,
+      `**E.** → True
+
+The chain to Emma's job used only clues (3), (2), and (1): Grace not teacher $\\Rightarrow$ Felix not engineer $\\Rightarrow$ Emma is doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher between Felix and Grace. Remove clue (4) and Emma is still the doctor. The path never mentioned Hugo, so the statement is True.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 20,
-    solution_overview:
-      'An "if and only if" welds two sentences together: they must have the same truth value, so knowing either one settles the other. Clue (3) hands us a fixed truth value, which starts the chain.\n\n**The chain.** Grace is not a teacher, by clue (3). Clue (2) forces "Felix is an engineer" to agree with that, so it is false too. Clue (1) forces "Emma is a doctor" to agree with "Felix is not an engineer", which is now true, so **Emma is the doctor**. Note that only clues (3), (2) and (1) have been used; clue (4) has not been touched.\n\nNow bring in clue (4): Hugo is the lawyer. Two jobs are left, Engineer and Teacher, for Felix and Grace, and Felix is not the engineer, so Felix teaches and Grace engineers.\n\n| Person | Job |\n| --- | --- |\n| Emma | Doctor |\n| Felix | Teacher |\n| Grace | Engineer |\n| Hugo | Lawyer |\n\n**Was clue (3) needed at all?** Suppose Grace *were* the teacher. Clue (2) would make Felix the engineer, and clue (1) would then make "Emma is a doctor" false. But Hugo holds Lawyer, Felix holds Engineer and Grace holds Teacher, so the only job left for Emma is Doctor, a flat contradiction. Clues (1), (2), (4) plus one job each therefore already force Grace out of the teaching post: **clue (3) is redundant.**',
+    solution_overview: `Four friends, four distinct jobs. The clues are two biconditionals and two facts:
+
+$$(1)\\ \\text{Emma doctor}\\Leftrightarrow\\text{Felix not engineer}$$
+
+$$(2)\\ \\text{Felix engineer}\\Leftrightarrow\\text{Grace teacher}$$
+
+$$(3)\\ \\text{Grace is not a teacher},\\qquad (4)\\ \\text{Hugo is a lawyer}$$
+
+A biconditional forces matching truth values. Clue (3) supplies a fixed truth value that can start a chain. Jobs are a permutation: each job is held by exactly one person.`,
   },
   {
-    id: "math-1-99",
-    case_id: "MATH 1.99",
-    title: 'A real-analysis theorem states : "If a sequence converges, then it is',
-    subsection: "1.4",
-    context: 'A real-analysis theorem states: "If a sequence converges, then it is bounded."',
+    id: `math-1-99`,
+    case_id: `MATH 1.99`,
+    title: `A real-analysis theorem states : "If a sequence converges, then it is`,
+    subsection: `1.4`,
+    context: `A real-analysis theorem states: "If a sequence converges, then it is bounded."`,
     statements: [
-      'The negation, "a sequence converges and is not bounded," describes an impossible situation, since the theorem holds for every sequence.',
-      'The converse, "If a sequence is bounded, then it converges," is false - the sequence (-1)ⁿ (that is, -1, 1, -1, 1,...) is bounded but does not converge, serving as a counterexample.',
-      'The inverse, "If a sequence does not converge, then it is not bounded," is logically equivalent to the converse, and is therefore also false, using the same sequence (-1)ⁿ as its counterexample.',
-      'The contrapositive, "If a sequence is not bounded, then it does not converge," is true, and is in fact the version most commonly used to prove specific unbounded sequences (like n, 2n, $n^2$) do not converge.',
-      "Because the converse is false, the original theorem itself must also be false.",
+      `The negation, "a sequence converges and is not bounded," describes an impossible situation, since the theorem holds for every sequence.`,
+      `The converse, "If a sequence is bounded, then it converges," is false - the sequence (-1)ⁿ (that is, -1, 1, -1, 1,...) is bounded but does not converge, serving as a counterexample.`,
+      `The inverse, "If a sequence does not converge, then it is not bounded," is logically equivalent to the converse, and is therefore also false, using the same sequence (-1)ⁿ as its counterexample.`,
+      `The contrapositive, "If a sequence is not bounded, then it does not converge," is true, and is in fact the version most commonly used to prove specific unbounded sequences (like n, 2n, $n^2$) do not converge.`,
+      `Because the converse is false, the original theorem itself must also be false.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nThe theorem says: if a sequence converges, then it is bounded. Its negation would be a sequence that converges and is not bounded. Because the theorem is proved for every sequence, that combination never occurs.\n\nThe theorem holds for every sequence, so nothing can converge while running off to infinity. The description picks out an empty collection. **Impossible, as stated.**",
-      "**B.** → True\n\n$(-1)^n$ never leaves $[-1,1]$, so it is bounded, and it alternates forever, so it has no limit. Explicitly: the terms hop between $-1$ and $1$ and never settle near a single value. **Bounded but divergent: the converse is refuted.**\n\nThe converse claims: bounded, therefore convergent. For $a_{n}=(-1)^{n}$ the terms are only $-1$ and $1$, so every term lies in $[-1,1]$ and the sequence is bounded.\n\nIt never settles near a single limit: odd and even subsequences stay at different values. Bounded with no limit: the converse fails, and this sequence is the witness.",
-      '**C.** → True\n\n**The pairing:** inverse and converse always share a truth value, and the converse is false.\n\n**The witness:** $(-1)^n$ diverges yet stays bounded, which is exactly what "diverges, therefore unbounded" forbids.\n\nBoth parts of the claim are right.\n\nThe inverse is “does not converge, therefore not bounded,” equivalent to the converse. The same sequence $(-1)^{n}$ diverges (alternating) and stays inside $[-1,1]$ (bounded).\n\nHypothesis of the inverse true, conclusion false. The inverse is false for the same reason the converse is, with the same witness.',
-      "**D.** → True\n\nEquivalent to the proved theorem, so true, and genuinely useful, because for sequences like $n$, $2n$ or $n^2$ unboundedness is the easy thing to check and divergence drops out immediately. **Accurate on both counts.**\n\nThe contrapositive is “not bounded, therefore does not converge,” equivalent to the proved theorem, hence true.\n\nFor the sequences $n$, $2n$, and $n^{2}$, unboundedness is immediate ($n\\to\\infty$), and the contrapositive then yields divergence without a separate $\\varepsilon$-argument. Both halves of the claim hold.",
-      "**E.** → False\n\nThe two statements sit in different camps, and both facts live together happily: every convergent sequence is bounded, and some bounded sequences wander forever. The theorem also has its own proof, which no failure of the converse can undo. The trap is the same classic mix-up as with converses elsewhere: falsity does not leak across the two pairs. **The theorem is safe.**\n\nThe theorem $P\\Rightarrow Q$ (convergent $\\Rightarrow$ bounded) sits with its contrapositive. The converse $Q\\Rightarrow P$ sits with the inverse. Falsity of the converse (witness $(-1)^{n}$) does not touch the theorem.\n\nA convergent sequence is still bounded; some bounded sequences (this one) fail to converge. The original theorem remains true.",
+      `**A.** → True
+
+The theorem says: if a sequence converges, then it is bounded. Its negation would be a sequence that converges and is not bounded. Because the theorem is proved for every sequence, that combination never occurs. The theorem holds for every sequence, so nothing can converge while running off to infinity. The description picks out an empty collection, so the statement is True.`,
+      `**B.** → True
+
+The converse claims: bounded, therefore convergent. For $a_{n}=(-1)^{n}$ the terms are only $-1$ and $1$, so every term lies in $[-1,1]$ and the sequence is bounded. It never settles near a single limit: odd and even subsequences stay at different values. Bounded with no limit: the converse fails, and this sequence is the witness, so the statement is True.`,
+      `**C.** → True
+
+The inverse is "does not converge, therefore not bounded," equivalent to the converse. The same sequence $(-1)^{n}$ diverges (alternating) and stays inside $[-1,1]$ (bounded). Hypothesis of the inverse true, conclusion false. The inverse is false for the same reason the converse is, with the same witness. Inverse and converse always share a truth value, so the statement is True.`,
+      `**D.** → True
+
+The contrapositive is "not bounded, therefore does not converge," equivalent to the proved theorem, hence true. For the sequences $n$, $2n$, and $n^{2}$, unboundedness is immediate ($n\\to\\infty$), and the contrapositive then yields divergence without a separate $\\varepsilon$-argument. Both halves of the claim hold: true, and genuinely useful, so the statement is True.`,
+      `**E.** → False
+
+The theorem $P\\Rightarrow Q$ (convergent $\\Rightarrow$ bounded) sits with its contrapositive. The converse $Q\\Rightarrow P$ sits with the inverse. Falsity of the converse (witness $(-1)^{n}$) does not touch the theorem. A convergent sequence is still bounded; some bounded sequences (this one) fail to converge. The original theorem remains true. Falsity does not leak across the two pairs, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 21,
-    solution_overview:
-      'The theorem says: convergent, therefore bounded. Reading it as $P \\Rightarrow Q$ with $P$ = "the sequence converges" and $Q$ = "the sequence is bounded", here is the whole landscape.\n\n**The negation is empty.** Denying the theorem would require a sequence that converges and is unbounded, and the theorem is proved for every sequence, so no such object exists. The intuition: a convergent sequence eventually huddles within distance 1 of its limit, leaving only finitely many terms outside, and finitely many numbers always fit inside some window.\n\n**The converse fails, and the standard witness is**\n\n$$a_n = (-1)^n: \\quad -1,\\ 1,\\ -1,\\ 1,\\ \\dots$$\n\nEvery term lies in $[-1,1]$, so the sequence is bounded; but it keeps hopping between two values and never settles, so it does not converge. Bounded with no limit, the converse "bounded, therefore convergent" is **false**. Being trapped in a window is not the same as coming to rest inside it.\n\n**The inverse fails for free.** "Diverges, therefore unbounded" is equivalent to the converse, so the same $(-1)^n$ refutes it: it diverges while staying comfortably bounded.\n\n**The contrapositive is the workhorse.** "Unbounded, therefore divergent" is equivalent to the theorem, hence true, and it is the form analysts actually use: for $n$, $2n$ or $n^2$, unboundedness is obvious at a glance and divergence follows at once.\n\nSo the true pair is the theorem with its contrapositive, the false pair is the converse with the inverse, and the failure of one pair never leaks into the other.',
+    solution_overview: `The theorem is $P\\Rightarrow Q$: a sequence converges, therefore it is bounded. Negation would be a sequence that converges and is unbounded.
+
+The converse is $Q\\Rightarrow P$ (bounded, therefore convergent). The inverse is $\\neg P\\Rightarrow\\neg Q$. The contrapositive is $\\neg Q\\Rightarrow\\neg P$. Original pairs with contrapositive; converse pairs with inverse. The oscillating sequence $a_n=(-1)^n$ is bounded and does not converge.`,
   },
   {
-    id: "math-1-100",
-    case_id: "MATH 1.100",
-    title: "Three inhabitants of the island",
-    subsection: "1.4",
-    context:
-      "On the same island (truth-tellers always tell the truth, liars always lie), three inhabitants speak. J says: “Exactly one of us is a truth-teller.” K says: “J is lying.” L says: “K and I are the same type (both truth-tellers or both liars).”",
+    id: `math-1-100`,
+    case_id: `MATH 1.100`,
+    title: `Three inhabitants of the island`,
+    subsection: `1.4`,
+    context: `On the same island (truth-tellers always tell the truth, liars always lie), three inhabitants speak. J says: “Exactly one of us is a truth-teller.” K says: “J is lying.” L says: “K and I are the same type (both truth-tellers or both liars).”`,
     statements: [
-      "J is a liar.",
-      "K is a truth-teller.",
-      "L is a truth-teller.",
-      "Exactly one of the three inhabitants is a truth-teller.",
-      "There is another consistent assignment of types (besides the one found) that also satisfies all three statements.",
+      `J is a liar.`,
+      `K is a truth-teller.`,
+      `L is a truth-teller.`,
+      `Exactly one of the three inhabitants is a truth-teller.`,
+      `There is another consistent assignment of types (besides the one found) that also satisfies all three statements.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nIf J told the truth, K and L would both be liars, and then L's \"we are the same type\" would be an accurate sentence out of a liar's mouth. Impossible, so **J lies.** That branch is the only place J could have been a truth-teller, and it self-destructs immediately.\n\nBranch: suppose J tells the truth. Then “exactly one truth-teller” is true, and J is that one, so K and L are both liars. L said “K and I are the same type.” Both liars really are the same type, so L’s sentence would be true.\n\nA liar cannot say a true sentence. The J-truthful branch is impossible, so J is a liar.",
-      '**B.** → True\n\nThe only surviving branch has J as a liar, so J\'s sentence is false. K\'s sentence is "J is lying", which is then true. A true sentence can come only from a truth-teller.\n\nK says "J is lying", and J is indeed lying. Only a truth-teller can say something true. **K is a truth-teller.**',
-      "**C.** → True\n\nJ's sentence is false, so the count of truth-tellers cannot be exactly one, and K is already one, so a second is needed and L is all that is left. L's own sentence then checks out: K and L really are the same type. If L were a liar instead, K would be the sole truth-teller and J's \"exactly one\" claim would become true, which a liar cannot say. **L is a truth-teller.**",
-      '**D.** → False\n\nJ said "exactly one of us is a truth-teller". J is a liar, so that count is wrong. In the surviving assignment K and L are both truth-tellers, so the actual count is two, not one.\n\n"Exactly one" is J\'s own line, and J is a liar, so that sentence has to be false. The real count is two, namely K and L. **Not one.**',
-      "**E.** → False\n\nThe J-truthful branch self-destructs, and in the surviving branch K is forced truthful while L cannot be a liar without making J's sentence come true. Every alternative closes off. Branch 1 is dead; inside Branch 2 flipping L or K breaks a spoken sentence. **There is no second solution.**\n\nThe J-truthful branch died on L’s sentence. In the surviving branch J is a liar, so K’s “J is lying” is true and K is a truth-teller. The count of truth-tellers is then not exactly one (J’s sentence is false), so L must also be a truth-teller.\n\nIf instead L were a liar, K would be the sole truth-teller and J’s “exactly one” would become true, which a liar cannot say. Every alternative closes. The assignment is unique.",
+      `**A.** → True
+
+Suppose J tells the truth. Then "exactly one truth-teller" is true, and J is that one, so K and L are both liars. L said "K and I are the same type." Both liars really are the same type, so L's sentence would be true. A liar cannot say a true sentence. The J-truthful branch is impossible, so J is a liar, so the statement is True.`,
+      `**B.** → True
+
+Suppose J tells the truth. Then K and L are both liars, but L's "same type" sentence would be true, which a liar cannot say. So J is a liar. K's sentence is "J is lying," which is then true. A true sentence can come only from a truth-teller. K is a truth-teller. Equivalently, K talks about J, so J and K always have opposite types, so the statement is True.`,
+      `**C.** → True
+
+J's sentence is false, so the count of truth-tellers cannot be exactly one, and K is already one, so a second is needed and L is all that is left. L's own sentence then checks out: K and L really are the same type. If L were a liar instead, K would be the sole truth-teller and J's "exactly one" claim would become true, which a liar cannot say, so the statement is True.`,
+      `**D.** → False
+
+J said "exactly one of us is a truth-teller." J is a liar, so that count is wrong. In the surviving assignment K and L are both truth-tellers, so the actual count is two, not one. "Exactly one" is J's own line, and a liar's sentence has to be false. The real count is two, so the statement is False.`,
+      `**E.** → False
+
+The J-truthful branch died on L's sentence. In the surviving branch J is a liar, so K's "J is lying" is true and K is a truth-teller. The count of truth-tellers is then not exactly one, so L must also be a truth-teller. If instead L were a liar, K would be the sole truth-teller and J's "exactly one" would become true, which a liar cannot say. Every alternative closes. The assignment is unique, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 22,
-    solution_overview:
-      'Each islander\'s type must match the accuracy of what they say: a truth-teller\'s sentence is true, a liar\'s sentence is false. One observation before testing anything: K talks about J, so K\'s sentence is true exactly when J lies. **J and K always have opposite types.**\n\n**Branch 1: suppose J tells the truth.** Then "exactly one of us is a truth-teller" is true, and J is that one, so K and L are both liars. But then L\'s sentence, "K and I are the same type", would be accurate, both would indeed be liars, and liars cannot say accurate things. This branch destroys itself.\n\n**Branch 2: J is a liar.** By the observation above, K\'s sentence "J is lying" is true, so **K is a truth-teller**. And because J is a liar, J\'s own sentence is false, so the number of truth-tellers is *not* exactly one. K already makes one, so a second is required, and L is the only candidate: **L is a truth-teller too.**\n\n**Verification.** J (liar) said "exactly one truth-teller", there are two, so the sentence is false ✓. K (truth-teller) said "J is lying", true ✓. L (truth-teller) said "K and I are the same type", both are truth-tellers, so true ✓.\n\nNothing else survives. Branch 1 is dead, and inside branch 2 making L a liar would leave K as the only truth-teller and turn J\'s sentence true, which a liar cannot manage. The solution, J a liar, K and L truth-tellers, is **unique**.',
+    solution_overview: `Each islander's type must match the accuracy of what they say: a truth-teller's sentence is true, a liar's sentence is false. J says "exactly one of us is a truth-teller." K says "J is lying." L says "K and I are the same type."
+
+K talks about J, so K's sentence is true exactly when J lies: J and K always have opposite types. Test the two branches for J. A liar cannot say a true sentence, and a truth-teller cannot say a false one.`,
   },
   {
-    id: "math-1-101",
-    case_id: "MATH 1.101",
-    title: "Conference attendance rules",
-    subsection: "1.4",
-    context:
-      "Four colleagues - Ana, Boris, Ceci, Dmitri - are deciding whether to attend a conference.\n\n(1) If Ana attends, then Boris does not attend.\n\n(2) If Boris does not attend, then Ceci attends.\n\n(3) If Ceci attends, then Dmitri does not attend - unless Ana also attends, in which case Dmitri's attendance is unrestricted.\n\n(4) Dmitri attends.",
+    id: `math-1-101`,
+    case_id: `MATH 1.101`,
+    title: `Conference attendance rules`,
+    subsection: `1.4`,
+    context: `Four colleagues - Ana, Boris, Ceci, Dmitri - are deciding whether to attend a conference.
+
+(1) If Ana attends, then Boris does not attend.
+
+(2) If Boris does not attend, then Ceci attends.
+
+(3) If Ceci attends, then Dmitri does not attend - unless Ana also attends, in which case Dmitri's attendance is unrestricted.
+
+(4) Dmitri attends.`,
     statements: [
-      "Dmitri attends the conference.",
-      "The rules uniquely determine whether Ana attends.",
-      "In at least one solution consistent with the rules, exactly three of the four colleagues attend.",
-      "It is possible for both Ana and Boris to not attend simultaneously.",
-      "Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends.",
+      `Dmitri attends the conference.`,
+      `The rules uniquely determine whether Ana attends.`,
+      `In at least one solution consistent with the rules, exactly three of the four colleagues attend.`,
+      `It is possible for both Ana and Boris to not attend simultaneously.`,
+      `Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nOpen with the given facts: rule (4) is the sentence \"Dmitri attends\". Case A (Ana in) and Case B (Ana out) are the only two legal rosters, and both keep Dmitri because dropping him would violate rule (4) immediately.\n\nRule (4) states it outright, so it needs no derivation and holds in both solutions. **Dmitri attends.**",
-      "**B.** → False\n\nAna is in one valid roster and out of the other, so the rules leave her decision open. Case A has Ana in; Case B has Ana out; both satisfy all four rules. **Not determined.**\n\nCase A: Ana attends. Rule (1) then drops Boris. Rule (2), with Boris out, brings Ceci in. Rule (3)’s unless-clause is on because Ana attends, so Dmitri may stay; rule (4) keeps him. Roster {Ana, Ceci, Dmitri}.\n\nCase B: Ana stays away. Rule (3) is then strict, so Ceci cannot attend while Dmitri does; rule (4) keeps Dmitri, hence Ceci is out. Rule (2) contraposed then forces Boris in. Roster {Boris, Dmitri}.\n\nAna is in one legal roster and out of the other. The rules do not uniquely determine whether she attends.",
-      "**C.** → True\n\nThe claim asks for at least one legal roster of size 3. Start from Ana attending: rule (1) drops Boris, rule (2) then brings Ceci, and rule (4) keeps Dmitri. That roster is {Ana, Ceci, Dmitri}.\n\nCase A puts Ana, Ceci and Dmitri in the room with Boris away, count them: three. One example is all an existence claim needs. **Such a solution exists.**",
-      "**D.** → False\n\nTry it: with Ana away, rule (3) loses its exception, so Dmitri's attendance drives Ceci out; and with Ceci out, rule (2) can only survive if Boris attends. Assuming both are absent ends with Boris in the room. The attempted roster collapses into Case B, where Boris is present. **The combination is impossible.**\n\nTry Ana out and Boris out together. Rule (4) still puts Dmitri in. With Ana out, rule (3) has no unless-exception, so Ceci attending would force Dmitri out, contradicting rule (4). Thus Ceci is out.\n\nRule (2) says: if Boris is out, then Ceci attends. Boris out and Ceci out make rule (2) fail. So the attempted pair “both absent” collapses: Boris is forced in. That is Case B, not a third roster.",
-      "**E.** → False\n\nThe exception matters only when Ceci attends, and the roster {Boris, Dmitri} has no Ceci at all, so it survives the stricter rule perfectly well. Only Case A would be lost. The trap is thinking the unless-clause is load-bearing for every solution, when Case B never uses it. **The rules stay satisfiable.**\n\nDelete the unless-exception, so Ceci attending always forces Dmitri out. Case A had Ceci and Dmitri both in, so Case A dies.\n\nCase B is {Boris, Dmitri} with Ceci out. Rule (3) is idle because Ceci is absent, so the stricter version still holds. One legal roster remains. The rules do not become impossible.",
+      `**A.** → True
+
+Rule (4) states it outright: Dmitri attends. Split on Ana. If Ana attends, rule (1) sends Boris away, rule (2) brings Ceci, and the unless-clause of (3) leaves Dmitri free, matching rule (4). If Ana stays away, Ceci cannot attend (else (3) would push Dmitri out), so Boris is forced in by (2), and Dmitri still attends. Both legal rosters keep Dmitri, so the statement is True.`,
+      `**B.** → False
+
+Two legal rosters survive. Ana in: {Ana, Ceci, Dmitri}, because (1) drops Boris, (2) brings Ceci, and the unless-clause saves Dmitri. Ana out: {Boris, Dmitri}, because (3) then forbids Ceci, and (2) forces Boris in. Ana is in one roster and out of the other. The rules leave her decision open. Uniqueness would require the two cases to agree about Ana, so the statement is False.`,
+      `**C.** → True
+
+The claim asks for at least one legal roster of size $3$. The Ana-in case puts Ana, Ceci and Dmitri in the room with Boris away: three attendees. Check the rules: (1) holds (Boris out), (2) holds (Ceci in), (3) is waived by Ana, (4) holds. One example is all an existence claim needs. The other legal roster has size $2$, which is irrelevant to an "at least one" claim, so the statement is True.`,
+      `**D.** → False
+
+Try Ana out and Boris out together. Rule (4) still puts Dmitri in. With Ana out, rule (3) has no unless-exception, so Ceci attending would force Dmitri out, contradicting rule (4). Thus Ceci is out. Rule (2) says: if Boris is out, then Ceci attends. Boris out and Ceci out make rule (2) fail. The attempted pair "both absent" collapses: Boris is forced in. That is the Ana-out roster, not a third one, so the statement is False.`,
+      `**E.** → False
+
+Delete the unless-exception, so Ceci attending always forces Dmitri out. The Ana-in roster had Ceci and Dmitri both in, so that case dies. The Ana-out roster is {Boris, Dmitri} with Ceci out. Rule (3) is idle because Ceci is absent, so the stricter version still holds. One legal roster remains. The trap is thinking the unless-clause is load-bearing for every solution, when the Ana-out case never uses it, so the statement is False.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: `3/5`,
     sort_order: 23,
-    solution_overview:
-      "Rule (4) is a flat fact, **Dmitri attends**, and it holds in every solution. The only real question is Ana, so split on her.\n\n**Case A: Ana attends.** Rule (1) sends Boris away. Rule (2), triggered by Boris's absence, brings Ceci in. Rule (3) would normally push Dmitri out when Ceci attends, but its \"unless\" exception is switched on precisely because Ana is here, so Dmitri is unrestricted and rule (4) is satisfied.\n\nRoster: **Ana, Ceci, Dmitri**, three attendees, Boris away.\n\n**Case B: Ana stays away.** Now rule (3) applies in its plain form, so Ceci attending would force Dmitri out. Dmitri is in, so **Ceci is out**. Reading rule (2) backwards, if Ceci is absent then Boris cannot be absent, puts Boris in, and rule (1) is content because Ana is away.\n\nRoster: **Boris, Dmitri**, two attendees.\n\nBoth cases work, so there are exactly two solutions and they disagree about Ana. Two things follow. Ana and Boris are never absent together: dropping Ana forces Ceci out and then Boris in. And deleting rule (3)'s exception would kill only Case A, since the Case B roster contains no Ceci and so satisfies the stricter rule untouched.",
+    solution_overview: `Write $A,B,C,D$ for attendance of Ana, Boris, Ceci, Dmitri. The rules translate as:
+
+$$(1)\\ A\\Rightarrow\\neg B,\\qquad (2)\\ \\neg B\\Rightarrow C$$
+
+$$(3)\\ C\\Rightarrow\\neg D\\text{ unless }A,\\qquad (4)\\ D$$
+
+Rule (4) is a flat fact. Split on Ana. When Ana is out, rule (3) has no unless-exception, so Ceci attending would force Dmitri out. When Ana is in, the unless-clause leaves Dmitri unrestricted.`,
   },
   {
-    id: "math-1-102",
-    case_id: "MATH 1.102",
-    title: "A Study Group's Attendance",
-    subsection: "1.4",
-    context:
-      "Four students - Noah, Maria, Leo, and Zoe - are deciding whether to join a study session. Their attendance follows these rules:\n\n1. If Noah joins, then Maria joins.\n\n2. Leo joins only if Zoe joins.\n\n3. At least one of Maria or Leo joins.\n\n4. If Zoe joins, then Noah does not join.",
+    id: `math-1-102`,
+    case_id: `MATH 1.102`,
+    title: `A Study Group's Attendance`,
+    subsection: `1.4`,
+    context: `Four students - Noah, Maria, Leo, and Zoe - are deciding whether to join a study session. Their attendance follows these rules:
+
+1. If Noah joins, then Maria joins.
+
+2. Leo joins only if Zoe joins.
+
+3. At least one of Maria or Leo joins.
+
+4. If Zoe joins, then Noah does not join.`,
     statements: [
-      "If Noah joins, then Zoe does not join.",
-      "Leo and Noah can join the study session together.",
-      "It is possible that Maria joins but Leo does not.",
-      "If Maria does not join, then Noah does not join.",
-      "Zoe must join the study session.",
+      `If Noah joins, then Zoe does not join.`,
+      `Leo and Noah can join the study session together.`,
+      `It is possible that Maria joins but Leo does not.`,
+      `If Maria does not join, then Noah does not join.`,
+      `Zoe must join the study session.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nRule (4) says: if Zoe joins, then Noah does not. Contrapose it: if Noah joins, then Zoe does not. That is the claimed implication, taken from a numbered rule.\n\nThis is rule (4) turned around, and a rule and its contrapositive never disagree. The single Noah roster, {Noah, Maria}, duly has no Zoe in it.",
-      "**B.** → False\n\nLeo cannot come without Zoe, and Zoe cannot be in the room with Noah, so the chain closes the door on that pairing, and indeed no legal roster holds both. Follow the chain: Leo $\\Rightarrow$ Zoe by rule (2), Zoe $\\Rightarrow$ no Noah by rule (4), so Leo and Noah together is impossible. **They cannot join together.**\n\nSuppose Leo and Noah both join. Rule (2): Leo joins only if Zoe joins, so Zoe must join. Rule (4): if Zoe joins, then Noah does not join.\n\nZoe in and Noah in contradict rule (4). The chain is Leo $\\Rightarrow$ Zoe $\\Rightarrow$ not Noah, so Leo and Noah cannot share a roster. None of the five legal rosters contains both.",
-      "**C.** → True\n\nTry the roster {Maria}. Noah is out, so rule (1) is idle; Leo is out, so rule (2) is idle; Zoe is out, so rule (4) is idle. Rule (3) asks for Maria or Leo, and Maria is in, so all four rules hold.\n\nMaria on her own is legal: with Noah, Leo and Zoe absent, three of the rules ask for nothing and Maria alone satisfies rule (3). **Possible.**",
-      "**D.** → True\n\nRule (1) says: if Noah joins, then Maria joins. Contrapose it: if Maria does not join, then Noah does not join. That is the claimed sentence, equivalent to a given rule, so it holds in every legal roster.\n\nContrapositive of rule (1), so it holds in every roster automatically, with no case work required. **True.**",
-      '**E.** → False\n\nZoe is needed only as Leo\'s companion, and rule (3) can be met by Maria instead. The roster {Maria} is legal without her, which is enough to defeat a "must". Compare with the five legal rosters: Zoe appears in some but not all. **Zoe is optional.**\n\nRule (3) needs Maria or Leo. Maria alone satisfies it, and with Noah, Leo, and Zoe all out, rules (1), (2), and (4) are idle. The roster {Maria} is legal and omits Zoe.\n\nA “must join” claim fails as soon as one legal roster leaves Zoe out. Zoe appears in some of the five rosters, not all.',
+      `**A.** → True
+
+Rule (4) says: if Zoe joins, then Noah does not. Contrapose it: if Noah joins, then Zoe does not. That is the claimed implication, taken from a numbered rule. A rule and its contrapositive never disagree. If Noah joins, Maria comes by (1) and Zoe is out by this contrapositive, so the statement is True.`,
+      `**B.** → False
+
+Suppose Leo and Noah both join. Rule (2): Leo joins only if Zoe joins, so Zoe must join. Rule (4): if Zoe joins, then Noah does not join. Zoe in and Noah in contradict rule (4). The chain is Leo $\\Rightarrow$ Zoe $\\Rightarrow$ not Noah, so Leo and Noah cannot share a roster. None of the legal rosters contains both, so the statement is False.`,
+      `**C.** → True
+
+Try the roster {Maria}. Noah is out, so rule (1) is idle; Leo is out, so rule (2) is idle; Zoe is out, so rule (4) is idle. Rule (3) asks for Maria or Leo, and Maria is in, so all four rules hold. Maria on her own is legal. Possible, so the statement is True.`,
+      `**D.** → True
+
+Rule (1) says: if Noah joins, then Maria joins. Contrapose it: if Maria does not join, then Noah does not join. That is the claimed sentence, equivalent to a given rule, so it holds in every legal roster. No case work is required; a rule and its contrapositive never disagree, so the statement is True.`,
+      `**E.** → False
+
+Rule (3) needs Maria or Leo. Maria alone satisfies it, and with Noah, Leo, and Zoe all out, rules (1), (2), and (4) are idle. The roster {Maria} is legal and omits Zoe. A "must join" claim fails as soon as one legal roster leaves Zoe out. Zoe appears in some legal rosters, not all, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 24,
-    solution_overview:
-      'Four rules, all cheap to apply once you notice that a rule whose "if" part is false demands nothing at all.\n\n$$\\text{(1) Noah} \\Rightarrow \\text{Maria}, \\quad \\text{(2) Leo} \\Rightarrow \\text{Zoe}, \\quad \\text{(3) Maria or Leo}, \\quad \\text{(4) Zoe} \\Rightarrow \\neg\\,\\text{Noah}.$$\n\n**A chain worth spotting.** Leo brings Zoe by rule (2), and Zoe expels Noah by rule (4), so Leo leads to Zoe leads to no Noah: **Leo and Noah can never be in the same session.**\n\n**If Noah joins**, Maria comes with him by rule (1), Zoe is excluded by rule (4) read backwards, and therefore Leo is excluded too. Rule (3) is satisfied by Maria, so there is exactly one Noah roster.\n\n**If Noah stays out**, rule (3) still needs Maria or Leo, and Leo drags Zoe along whenever he joins.\n\n| Roster | Why it is legal |\n| --- | --- |\n| Noah, Maria | Maria satisfies rule (3); Zoe and Leo are out |\n| Maria | rules (1), (2), (4) are idle; Maria satisfies rule (3) |\n| Maria, Zoe | Zoe is harmless with Noah away |\n| Maria, Leo, Zoe | Leo has his Zoe |\n| Leo, Zoe | rule (3) satisfied by Leo |\n\nFive legal rosters, and no student appears in all five, so nobody is actually forced to join, Zoe included.',
+    solution_overview: `Four students, four rules:
+
+$$(1)\\ N\\Rightarrow M,\\qquad (2)\\ L\\Rightarrow Z,\\qquad (3)\\ M\\lor L,\\qquad (4)\\ Z\\Rightarrow\\neg N$$
+
+A rule whose "if" part is false demands nothing. Chaining (2) then (4) gives $L\\Rightarrow Z\\Rightarrow\\neg N$. Contrapositives of (1) and (4) are available whenever the originals are.`,
   },
   {
-    id: "math-1-103",
-    case_id: "MATH 1.103",
-    title: "Board Game Night",
-    subsection: "1.4",
-    context:
-      "Four friends - Ben, Carla, Dan, and Ella - are deciding whether to play a board game. Their participation follows these rules:\n\n1. If Ben plays, then Carla plays.\n\n2. Dan plays only if Ella plays.\n\n3. If Carla plays, then Dan does not play.\n\n4. At least one of Ben or Ella plays.",
+    id: `math-1-103`,
+    case_id: `MATH 1.103`,
+    title: `Board Game Night`,
+    subsection: `1.4`,
+    context: `Four friends - Ben, Carla, Dan, and Ella - are deciding whether to play a board game. Their participation follows these rules:
+
+1. If Ben plays, then Carla plays.
+
+2. Dan plays only if Ella plays.
+
+3. If Carla plays, then Dan does not play.
+
+4. At least one of Ben or Ella plays.`,
     statements: [
-      "If Ben plays, then Dan does not play.",
-      "Ben and Dan can play together.",
-      "It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.",
-      "If Dan plays, then Carla does not play.",
-      "Carla must play the game.",
+      `If Ben plays, then Dan does not play.`,
+      `Ben and Dan can play together.`,
+      `It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.`,
+      `If Dan plays, then Carla does not play.`,
+      `Carla must play the game.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nOpen with rule (1): Ben $\\Rightarrow$ Carla. Then rule (3): Carla $\\Rightarrow$ not Dan. Chain them: Ben $\\Rightarrow$ Carla $\\Rightarrow$ not Dan, so Ben playing forces Dan out.\n\nBen pulls Carla in and Carla shuts Dan out, two rules in a row, no exceptions. Both Ben rosters confirm it. **Dan stays home whenever Ben plays.**",
-      "**B.** → False\n\nApproach it from either end and the answer is the same: Ben forces Carla and Carla forbids Dan; or Dan forbids Carla, and no Carla means no Ben. The two chains are Ben $\\Rightarrow$ Carla $\\Rightarrow$ no Dan and Dan $\\Rightarrow$ no Carla $\\Rightarrow$ no Ben. **The pair is impossible.**\n\nSuppose Ben and Dan both play. Rule (1) forces Carla in with Ben. Rule (3) then says: if Carla plays, Dan does not.\n\nCarla in and Dan in contradict rule (3). Equivalently: Ben $\\Rightarrow$ Carla $\\Rightarrow$ not Dan. The two Ben rosters are {Ben, Carla} and {Ben, Carla, Ella}; neither contains Dan.",
-      "**C.** → True\n\nCheck {Ella} against the four rules. Ben is out, so rule (1) is idle; Dan is out, so rule (2) is idle; Carla is out, so rule (3) is idle. Rule (4) needs Ben or Ella, and Ella is in.\n\n{Ella} passes every rule: three of them are idle with Ben, Carla and Dan away, and rule (4) only ever asked for Ben *or* Ella. **Ella can play alone.**",
-      "**D.** → True\n\nRule (3) says: if Carla plays, then Dan does not. Contrapose it: if Dan plays, then Carla does not. That is the claimed sentence.\n\nStraight contrapositive of rule (3). The only roster containing Dan, {Dan, Ella}, has no Carla, just as it must.\n\nRule (3) is Carla $\\Rightarrow$ not Dan. Contrapose: Dan $\\Rightarrow$ not Carla. That is the claimed sentence, taken from a numbered rule.\n\nThe only legal roster containing Dan is {Dan, Ella}: rule (2) is satisfied because Ella plays, rule (4) is satisfied by Ella, and Carla is out, matching the contrapositive.",
-      "**E.** → False\n\nCarla is required only as Ben's companion, so rosters without Ben can leave her out, and {Ella} and {Dan, Ella} both do. A \"must\" fails as soon as one legal roster omits her. **Not compulsory.**\n\nCarla is pulled in only by rule (1), and only when Ben plays. Without Ben, rule (4) still needs Ella, and Carla may sit out.\n\n{Ella} and {Dan, Ella} are both legal and omit Carla. A “must play” claim fails on either roster.",
+      `**A.** → True
+
+Open with rule (1): Ben $\\Rightarrow$ Carla. Then rule (3): Carla $\\Rightarrow$ not Dan. Chain them: Ben $\\Rightarrow$ Carla $\\Rightarrow$ not Dan, so Ben playing forces Dan out. Ben pulls Carla in and Carla shuts Dan out, two rules in a row, no exceptions, so the statement is True.`,
+      `**B.** → False
+
+Suppose Ben and Dan both play. Rule (1) forces Carla in with Ben. Rule (3) then says: if Carla plays, Dan does not. Carla in and Dan in contradict rule (3). Equivalently: Ben $\\Rightarrow$ Carla $\\Rightarrow$ not Dan. The pair is impossible, so the statement is False.`,
+      `**C.** → True
+
+Check {Ella} against the four rules. Ben is out, so rule (1) is idle; Dan is out, so rule (2) is idle; Carla is out, so rule (3) is idle. Rule (4) needs Ben or Ella, and Ella is in. {Ella} passes every rule. Ella can play alone, so the statement is True.`,
+      `**D.** → True
+
+Rule (3) is Carla $\\Rightarrow$ not Dan. Contrapose: Dan $\\Rightarrow$ not Carla. That is the claimed sentence, taken from a numbered rule. The only legal roster containing Dan is {Dan, Ella}: rule (2) is satisfied because Ella plays, rule (4) is satisfied by Ella, and Carla is out, matching the contrapositive, so the statement is True.`,
+      `**E.** → False
+
+Carla is pulled in only by rule (1), and only when Ben plays. Without Ben, rule (4) still needs Ella, and Carla may sit out. {Ella} and {Dan, Ella} are both legal and omit Carla. A "must play" claim fails on either roster. Carla is required only as Ben's companion, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 25,
-    solution_overview:
-      "Start with the rule that has the longest reach. Ben brings Carla in by rule (1), and Carla pushes Dan out by rule (3):\n\n$$\\text{Ben} \\Rightarrow \\text{Carla} \\Rightarrow \\neg\\,\\text{Dan}.$$\n\nSo a game with Ben in it never has Dan. Read from the other end the same fact says: if Dan plays then Carla stays out, which is rule (3)'s contrapositive, and with no Carla there can be no Ben either.\n\n**With Ben playing:** Carla joins, Dan is out, rule (4) is already satisfied by Ben, so Ella may please herself. Two rosters.\n\n**Without Ben:** rule (4) forces Ella in. Carla and Dan cannot both play, so we may take Carla, or Dan, or neither. Three rosters, and in the Dan one rule (2) is content because Ella is there.\n\nThe complete list:\n\n• {Ben, Carla}\n\n• {Ben, Carla, Ella}\n\n• {Carla, Ella}\n\n• {Dan, Ella}\n\n• {Ella}\n\nTwo things are worth reading off that list. Ella alone is legal, since with Ben, Carla and Dan away three of the rules ask for nothing and Ella satisfies rule (4) by herself. And Carla is missing from two of the five rosters, so nobody can call her compulsory.",
+    solution_overview: `Four friends, four rules:
+
+$$(1)\\ B\\Rightarrow C,\\qquad (2)\\ D\\Rightarrow E,\\qquad (3)\\ C\\Rightarrow\\neg D,\\qquad (4)\\ B\\lor E$$
+
+Chaining (1) then (3) gives $B\\Rightarrow C\\Rightarrow\\neg D$. The contrapositive of (3) is $D\\Rightarrow\\neg C$. Rule (4) is satisfied by either Ben or Ella.`,
   },
   {
-    id: "math-1-104",
-    case_id: "MATH 1.104",
-    title: "Splitting the Cooking Duty",
-    subsection: "1.4",
-    context:
-      "Three roommates - Owen, Priya, and Quinn - are deciding who cooks dinner tonight. The arrangement follows these rules:\n\n1. If Owen cooks, then Priya does not cook.\n\n2. At least one of Owen or Priya cooks.\n\n3. If Priya cooks, then Quinn also cooks.\n\n4. Quinn cooks only if Owen does not cook.",
+    id: `math-1-104`,
+    case_id: `MATH 1.104`,
+    title: `Splitting the Cooking Duty`,
+    subsection: `1.4`,
+    context: `Three roommates - Owen, Priya, and Quinn - are deciding who cooks dinner tonight. The arrangement follows these rules:
+
+1. If Owen cooks, then Priya does not cook.
+
+2. At least one of Owen or Priya cooks.
+
+3. If Priya cooks, then Quinn also cooks.
+
+4. Quinn cooks only if Owen does not cook.`,
     statements: [
-      "If Owen cooks, then Quinn does not cook.",
-      "Owen and Priya can both cook tonight.",
-      "It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.",
-      "Priya cooking guarantees that Quinn also cooks.",
-      "Owen must cook tonight.",
+      `If Owen cooks, then Quinn does not cook.`,
+      `Owen and Priya can both cook tonight.`,
+      `It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.`,
+      `Priya cooking guarantees that Quinn also cooks.`,
+      `Owen must cook tonight.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nRule (4) is: Quinn cooks only if Owen does not, that is Quinn $\\Rightarrow$ not Owen. Contrapose it: Owen $\\Rightarrow$ not Quinn. That is the claimed implication, taken from a numbered rule.\n\nRule (4) says Quinn cooks only if Owen does not; turn it round and Owen cooking means Quinn does not. **Quinn is out whenever Owen is in.**",
-      "**B.** → False\n\nRule (1) says: if Owen cooks, then Priya does not. A night with both cooking would make that hypothesis true and the conclusion false, violating rule (1) on the spot. No later rule is allowed to override a broken numbered rule.\n\nRule (1) blocks that pairing in a single line, and no later rule can undo it. **Never both.**",
-      '**C.** → False\n\nRule (2) demands Owen or Priya every night, and "Quinn alone" supplies neither. Quinn is not permitted to stand in for them. The proposed evening breaks the Owen-or-Priya pivot before rules (3) or (4) are even checked. **Not a valid arrangement.**\n\nCheck {Quinn} against the four rules. Rule (2) requires Owen or Priya; neither is cooking, so rule (2) fails immediately.\n\nRule (1) is idle (Owen out). Rule (3) is idle (Priya out). Rule (4) is Quinn $\\Rightarrow$ not Owen, which holds, but a single broken numbered rule is enough. Quinn cannot cook alone.',
-      "**D.** → True\n\nRule (3) says: if Priya cooks, then Quinn also cooks. That is exactly the claimed guarantee. The only Priya evening the other rules allow is {Priya, Quinn}, which includes Quinn.\n\nThat is rule (3) quoted back, and the arrangement it produces, {Priya, Quinn}, satisfies the other three rules as well. **Guaranteed.**",
-      "**E.** → False\n\nThe rules insist that one of Owen and Priya cooks, not that it must be Owen: {Priya, Quinn} is a perfectly legal evening with Owen resting. Exactly one of Owen and Priya cooks each night, so Owen's absence is allowed whenever Priya covers rule (2). **Not compulsory.**\n\nRules (1) and (2) together force exactly one of Owen or Priya. The Priya evening is {Priya, Quinn}: rule (3) brings Quinn, rule (4) holds because Owen is out, and rule (1) is idle.\n\nThat legal evening omits Owen. Owen therefore is not required every night.",
+      `**A.** → True
+
+Rule (4) is: Quinn cooks only if Owen does not, that is Quinn $\\Rightarrow$ not Owen. Contrapose it: Owen $\\Rightarrow$ not Quinn. That is the claimed implication, taken from a numbered rule. Quinn is out whenever Owen is in. Turn the "only if" around and Owen cooking means Quinn does not, so the statement is True.`,
+      `**B.** → False
+
+Rule (1) says: if Owen cooks, then Priya does not. A night with both cooking would make that hypothesis true and the conclusion false, violating rule (1) on the spot. No later rule is allowed to override a broken numbered rule. Never both. Rule (1) blocks that pairing in a single line, so the statement is False.`,
+      `**C.** → False
+
+Check {Quinn} against the four rules. Rule (2) requires Owen or Priya; neither is cooking, so rule (2) fails immediately. Rule (1) is idle (Owen out). Rule (3) is idle (Priya out). Rule (4) holds, but a single broken numbered rule is enough. Quinn cannot cook alone. Rule (2) demands Owen or Priya every night, so the statement is False.`,
+      `**D.** → True
+
+Rule (3) says: if Priya cooks, then Quinn also cooks. That is exactly the claimed guarantee. The only Priya evening the other rules allow is {Priya, Quinn}, which includes Quinn: Owen is out by (1) and (2), and (4) holds because Owen is away. That is rule (3) quoted back, so the statement is True.`,
+      `**E.** → False
+
+Rules (1) and (2) together force exactly one of Owen or Priya. The Priya evening is {Priya, Quinn}: rule (3) brings Quinn, rule (4) holds because Owen is out, and rule (1) is idle. That legal evening omits Owen. Owen therefore is not required every night. The rules insist that one of Owen and Priya cooks, not that it must be Owen, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 26,
-    solution_overview:
-      "Rules (1) and (2) sit together and do most of the work. Rule (1) forbids Owen and Priya from both cooking; rule (2) forbids them from both sitting out. Put them together and you get the pivot of the whole puzzle:\n\n**exactly one of Owen and Priya cooks.**\n\nSo there are only two evenings to inspect.\n\n**Owen cooks.** Priya is out by rule (1). Rule (4) says Quinn cooks only when Owen does not, so Quinn is out as well, and rule (3) is idle because Priya is not cooking. Owen cooks alone: {Owen}.\n\n**Priya cooks.** Owen is out. Rule (3) brings Quinn in, and rule (4) is satisfied because Owen is away: {Priya, Quinn}.\n\nThat is the complete list. Notice what it rules out, an evening in which Quinn cooks while neither Owen nor Priya does would break rule (2), which insists that one of those two is always in the kitchen. And since no single person appears in both arrangements, nobody is obliged to cook.",
+    solution_overview: `Three roommates, four rules:
+
+$$(1)\\ O\\Rightarrow\\neg P,\\qquad (2)\\ O\\lor P,\\qquad (3)\\ P\\Rightarrow Q,\\qquad (4)\\ Q\\Rightarrow\\neg O$$
+
+Rules (1) and (2) together force exactly one of Owen or Priya. Rule (4) contraposed is $O\\Rightarrow\\neg Q$.`,
   },
   {
-    id: "math-1-105",
-    case_id: "MATH 1.105",
-    title: "A Five-Person Day Trip",
-    subsection: "1.4",
-    context:
-      "Five club members - Diego, Fatima, Grace, Hugo, and Iris - are deciding whether to join a day trip. Their attendance follows these rules:\n\n1. If Diego goes, then Fatima goes.\n\n2. Grace goes unless Hugo goes.\n\n3. If Fatima goes, then Grace does not go.\n\n4. At least one of Diego or Hugo goes.\n\n5. If Iris goes, then Diego does not go.\n\n6. Hugo goes only if Fatima does not go.",
+    id: `math-1-105`,
+    case_id: `MATH 1.105`,
+    title: `A Five-Person Day Trip`,
+    subsection: `1.4`,
+    context: `Five club members - Diego, Fatima, Grace, Hugo, and Iris - are deciding whether to join a day trip. Their attendance follows these rules:
+
+1. If Diego goes, then Fatima goes.
+
+2. Grace goes unless Hugo goes.
+
+3. If Fatima goes, then Grace does not go.
+
+4. At least one of Diego or Hugo goes.
+
+5. If Iris goes, then Diego does not go.
+
+6. Hugo goes only if Fatima does not go.`,
     statements: [
-      "Diego attends the trip in at least one valid scenario.",
-      "If Fatima goes, then Hugo does not go.",
-      "Hugo must go on the trip.",
-      "It is possible for both Grace and Iris to attend together.",
-      "If Iris goes, then Fatima goes.",
+      `Diego attends the trip in at least one valid scenario.`,
+      `If Fatima goes, then Hugo does not go.`,
+      `Hugo must go on the trip.`,
+      `It is possible for both Grace and Iris to attend together.`,
+      `If Iris goes, then Fatima goes.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
-      "**A.** → False\n\nDiego's attendance forces Fatima in through rule (1) and then straight back out through rules (3), (2) and (6). No branch survives, so there is no scenario for the claim to point at. Spell the collision: Diego $\\Rightarrow$ Fatima $\\Rightarrow$ no Grace $\\Rightarrow$ Hugo $\\Rightarrow$ no Fatima, contradicting Fatima's presence. **Diego never goes.**",
-      "**B.** → True\n\nOpen with rule (6): Hugo goes only if Fatima does not, that is Hugo $\\Rightarrow$ not Fatima. Contrapose it: Fatima $\\Rightarrow$ not Hugo. That is the claimed implication, equivalent to a given rule.\n\nRule (6) says Hugo goes only if Fatima does not; contraposed, Fatima going means Hugo staying home. A rule and its contrapositive are the same claim, so no case work is needed.",
-      "**C.** → True\n\nDiego is impossible: Diego $\\Rightarrow$ Fatima by rule (1), Fatima $\\Rightarrow$ no Grace by rule (3), then rule (2) forces Hugo, and rule (6) then forces Fatima out, a contradiction. With Diego gone, rule (4) still needs Diego or Hugo, so Hugo must go in every remaining roster.\n\nRule (4) needs Diego or Hugo, and Diego is off the table entirely, so the whole burden falls on Hugo. He appears in all four rosters. **Hugo always goes.**",
-      "**D.** → True\n\nWith Diego and Fatima out and Hugo in, the rules that mention them fall silent, rule (2) is already satisfied, and nothing ties Grace to Iris. The roster {Hugo, Grace, Iris} passes all six rules. **They can go together.**\n\nDiego is already impossible, so Fatima is out by the same collapse, and Hugo is forced by rule (4). Test {Hugo, Grace, Iris} against the six rules:\n\nRule (1) idle (Diego out). Rule (2): Grace goes unless Hugo goes; Hugo is in, so the unless-clause is satisfied. Rule (3) idle (Fatima out). Rule (4): Hugo is in. Rule (5): Iris $\\Rightarrow$ not Diego; Diego is out. Rule (6): Hugo $\\Rightarrow$ not Fatima; Fatima is out.\n\nAll six hold, so Grace and Iris can attend together.",
-      '**E.** → False\n\nFatima goes in no scenario at all, while Iris goes in two of them. Take {Hugo, Grace, Iris}: the "if" part is satisfied and the "then" part is not, which is exactly how an implication dies. Iris never forces Fatima, because Fatima is already excluded by the Diego collapse. **False.**\n\nThe claimed implication is Iris $\\Rightarrow$ Fatima. Fatima goes in no legal roster (Hugo is always in, and rule (6) then keeps Fatima out). Iris goes in {Hugo, Iris} and {Hugo, Grace, Iris}.\n\nTake {Hugo, Grace, Iris}: Iris in, Fatima out. True “if”, false “then.” The implication fails, and Iris never forces Fatima.',
+      `**A.** → False
+
+Suppose Diego goes. Rule (1) brings Fatima. Rule (3) then pushes Grace out. Rule (2) needs Grace or Hugo, so Hugo goes. Rule (6): Hugo goes only if Fatima does not, so Fatima is out. Line 1 put Fatima in and the last line took her out. The assumption is impossible, so Diego never goes. There is no scenario for the claim to point at, so the statement is False.`,
+      `**B.** → True
+
+Rule (6) says Hugo goes only if Fatima does not; contraposed, Fatima going means Hugo staying home. A rule and its contrapositive are the same claim, so no case work is needed. That is the claimed implication, equivalent to a given rule, so the statement is True.`,
+      `**C.** → True
+
+Diego cannot go: $D\\Rightarrow F\\Rightarrow\\neg G\\Rightarrow H\\Rightarrow\\neg F$ collides. With Diego gone, rule (4) still needs Diego or Hugo, so Hugo must go in every remaining roster. Rule (4) needs Diego or Hugo, and Diego is off the table entirely, so the whole burden falls on Hugo, so the statement is True.`,
+      `**D.** → True
+
+Diego is impossible, so Fatima is out by the same collapse ($H$ is forced and then (6) keeps Fatima out). Test {Hugo, Grace, Iris}: rules (1) and (3) are idle, rule (2) is satisfied because Hugo is in, rule (4) is satisfied by Hugo, rule (5) holds because Diego is out, and rule (6) holds because Fatima is out. All six hold, so Grace and Iris can attend together, so the statement is True.`,
+      `**E.** → False
+
+The claimed implication is Iris $\\Rightarrow$ Fatima. Hugo is always in (Diego is impossible, so (4) forces Hugo), and rule (6) then keeps Fatima out of every legal roster. Iris goes in {Hugo, Iris} and {Hugo, Grace, Iris}. Take {Hugo, Grace, Iris}: Iris in, Fatima out. True "if", false "then." The implication fails, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 27,
-    solution_overview:
-      'Six rules, but one assumption blows up immediately and after that the puzzle almost solves itself.\n\n**Diego cannot go.** Suppose he does.\n\n1. Rule (1): Fatima goes.\n2. Rule (3): Fatima going pushes Grace out.\n3. Rule (2) needs Grace or Hugo, and Grace is out, so Hugo goes.\n4. Rule (6): Hugo goes only if Fatima does not, so Fatima is out.\n\nLine 1 put Fatima in and line 4 took her out again. The assumption is impossible, so **Diego never goes**.\n\n**What follows immediately.** Rule (4) wants Diego or Hugo, and Diego is unavailable, so **Hugo goes in every scenario**. Rule (6) then keeps **Fatima out in every scenario**. With Diego and Fatima gone, rules (1), (3) and (5) all have false "if" parts and demand nothing.\n\n**What is left free.** Rule (2) is already satisfied by Hugo, and no rule connects Grace with Iris, so each of them may come or not, independently:\n\n$$\\{\\text{Hugo}\\}, \\quad \\{\\text{Hugo}, \\text{Grace}\\}, \\quad \\{\\text{Hugo}, \\text{Iris}\\}, \\quad \\{\\text{Hugo}, \\text{Grace}, \\text{Iris}\\}.$$\n\nFour valid rosters, every one containing Hugo, none containing Diego or Fatima.',
+    solution_overview: `Five members, six rules:
+
+$$(1)\\ D\\Rightarrow F,\\qquad (2)\\ G\\lor H,\\qquad (3)\\ F\\Rightarrow\\neg G$$
+
+$$(4)\\ D\\lor H,\\qquad (5)\\ I\\Rightarrow\\neg D,\\qquad (6)\\ H\\Rightarrow\\neg F$$
+
+Chaining Diego in through (1), (3), (2), (6) produces a collision on Fatima. Rule (6) contraposed is $F\\Rightarrow\\neg H$.`,
   },
   {
-    id: "math-1-106",
-    case_id: "MATH 1.106",
-    title: "Six Interns and the Conference Talk",
-    subsection: "1.4",
-    context:
-      "Six interns - Aiden, Bella, Caleb, Daisy, Ethan, and Faye - are deciding who will present at a conference. Their participation follows these rules:\n\n1. If Aiden presents, then both Bella and Caleb present.\n\n2. At least one of Daisy or Ethan presents.\n\n3. If Bella presents, then Daisy does not present.\n\n4. Caleb presents only if Ethan presents.\n\n5. If Faye presents, then Aiden presents.\n\n6. Ethan presents only if Bella does not present.",
+    id: `math-1-106`,
+    case_id: `MATH 1.106`,
+    title: `Six Interns and the Conference Talk`,
+    subsection: `1.4`,
+    context: `Six interns - Aiden, Bella, Caleb, Daisy, Ethan, and Faye - are deciding who will present at a conference. Their participation follows these rules:
+
+1. If Aiden presents, then both Bella and Caleb present.
+
+2. At least one of Daisy or Ethan presents.
+
+3. If Bella presents, then Daisy does not present.
+
+4. Caleb presents only if Ethan presents.
+
+5. If Faye presents, then Aiden presents.
+
+6. Ethan presents only if Bella does not present.`,
     statements: [
-      "Aiden is forced to NOT present in every valid scenario.",
-      "It is possible for Bella to present in some valid scenario.",
-      "If Caleb presents, then Ethan also presents.",
-      "It is possible for Faye to present at the conference.",
-      "There is exactly one valid way to decide who presents, consistent with all six rules.",
+      `Aiden is forced to NOT present in every valid scenario.`,
+      `It is possible for Bella to present in some valid scenario.`,
+      `If Caleb presents, then Ethan also presents.`,
+      `It is possible for Faye to present at the conference.`,
+      `There is exactly one valid way to decide who presents, consistent with all six rules.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nAiden cannot present without Bella, and Bella's presence leaves rule (2) with nobody to satisfy it. The first domino knocks over the second. Explicitly: Aiden $\\Rightarrow$ Bella, then Bella removes Daisy and Ethan, leaving rule (2) empty. **Aiden is excluded everywhere.**\n\nSuppose Aiden presents. Rule (1) then forces both Bella and Caleb in. Bella in triggers rule (3) (Daisy out) and rule (6) (Ethan out, because Ethan presents only if Bella does not).\n\nRule (2) needs Daisy or Ethan, and both are now out. Contradiction. So Aiden never presents, in every valid scenario.",
-      "**B.** → False\n\nPut Bella on the roster and she takes Daisy out by rule (3) and Ethan out by rule (6), but rule (2) needs one of those two. Every Bella roster is illegal. The collision is immediate: Bella $\\Rightarrow$ no Daisy and no Ethan, contradicting \"Daisy or Ethan\". **Not possible.**\n\nPut Bella on the roster. Rule (3): Bella $\\Rightarrow$ not Daisy, so Daisy is out. Rule (6): Ethan presents only if Bella does not, so Ethan is out.\n\nRule (2) still needs Daisy or Ethan. Both missing: every Bella roster is illegal. Bella cannot present in any valid scenario.",
-      '**C.** → True\n\nRule (4) is the given sentence: Caleb presents only if Ethan presents, which is Caleb $\\Rightarrow$ Ethan. The claim quotes that implication. Both surviving Caleb rosters, {Caleb, Ethan} and {Caleb, Daisy, Ethan}, include Ethan.\n\n"Caleb presents only if Ethan presents" *is* the implication "Caleb, therefore Ethan"; there is nothing to derive. Both Caleb rosters duly contain Ethan.',
-      "**D.** → False\n\nRule (5) says Faye $\\Rightarrow$ Aiden. Rule (1) says Aiden $\\Rightarrow$ Bella (and Caleb). Bella is already impossible: she would remove Daisy by rule (3) and Ethan by rule (6), leaving rule (2) with nobody. So Aiden is out, and therefore Faye is out.\n\nFaye depends on Aiden, Aiden depends on Bella, and Bella is impossible. The dependency chain leaves Faye with no way in. **She never presents.**",
-      "**E.** → False\n\nFive rosters survive, among them {Daisy} and {Caleb, Ethan}. Two would already be too many for a uniqueness claim. Listing them: {Daisy}, {Ethan}, {Daisy, Ethan}, {Caleb, Ethan}, {Caleb, Daisy, Ethan}. **Far from unique.**\n\nAfter Bella, Aiden, and Faye are excluded, the live people are Caleb, Daisy, and Ethan, with rule (2) (Daisy or Ethan) and rule (4) (Caleb $\\Rightarrow$ Ethan).\n\nFive rosters survive: {Daisy}, {Ethan}, {Daisy, Ethan}, {Caleb, Ethan}, {Caleb, Daisy, Ethan}. Five is already more than one, so uniqueness fails.",
+      `**A.** → True
+
+Suppose Aiden presents. Rule (1) then forces both Bella and Caleb in. Bella in triggers rule (3) (Daisy out) and rule (6) (Ethan out). Rule (2) needs Daisy or Ethan, and both are now out. Contradiction. So Aiden never presents, in every valid scenario. Aiden cannot present without Bella, and Bella's presence leaves rule (2) with nobody to satisfy it, so the statement is True.`,
+      `**B.** → False
+
+Put Bella on the roster. Rule (3): Bella $\\Rightarrow$ not Daisy, so Daisy is out. Rule (6): Ethan presents only if Bella does not, so Ethan is out. Rule (2) still needs Daisy or Ethan. Both missing: every Bella roster is illegal. Bella cannot present in any valid scenario. The collision is immediate, so the statement is False.`,
+      `**C.** → True
+
+Rule (4) is the given sentence: Caleb presents only if Ethan presents, which is Caleb $\\Rightarrow$ Ethan. The claim quotes that implication. There is nothing to derive; "only if" *is* that implication. Both surviving Caleb rosters include Ethan, so the statement is True.`,
+      `**D.** → False
+
+Rule (5) says Faye $\\Rightarrow$ Aiden. Rule (1) says Aiden $\\Rightarrow$ Bella (and Caleb). Bella is already impossible: she would remove Daisy by rule (3) and Ethan by rule (6), leaving rule (2) with nobody. So Aiden is out, and therefore Faye is out. Faye depends on Aiden, Aiden depends on Bella, and Bella is impossible, so the statement is False.`,
+      `**E.** → False
+
+After Bella, Aiden, and Faye are excluded, the live people are Caleb, Daisy, and Ethan, with rule (2) (Daisy or Ethan) and rule (4) (Caleb $\\Rightarrow$ Ethan). Five rosters survive: {Daisy}, {Ethan}, {Daisy, Ethan}, {Caleb, Ethan}, {Caleb, Daisy, Ethan}. Five is already more than one, so uniqueness fails, so the statement is False.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: `4/5`,
     sort_order: 28,
-    solution_overview:
-      'Three of the six interns can be eliminated one after another, like dominoes.\n\n**Bella falls first.** Suppose Bella presents. Rule (3) removes Daisy, and rule (6), "Ethan presents only if Bella does not", removes Ethan. But rule (2) insists on Daisy **or** Ethan, and both are now gone. So **Bella never presents**.\n\n**Aiden falls next.** Rule (1) says Aiden brings both Bella and Caleb with him. Bella is impossible, so **Aiden never presents**.\n\n**Faye falls last.** Rule (5) says Faye can only present if Aiden does. Aiden is impossible, so **Faye never presents**.\n\nThat leaves Caleb, Daisy and Ethan, with just two live rules: at least one of Daisy or Ethan (rule 2), and Caleb needs Ethan (rule 4). Counting the possibilities:\n\n• Caleb out: {Daisy}, {Ethan}, {Daisy, Ethan}\n\n• Caleb in, so Ethan in too: {Caleb, Ethan}, {Caleb, Daisy, Ethan}\n\n**Five valid rosters**, comfortably more than one, and every roster containing Caleb also contains Ethan, exactly as rule (4) demands.',
+    solution_overview: `Six interns, six rules:
+
+$$(1)\\ A\\Rightarrow(B\\land C),\\qquad (2)\\ D\\lor E,\\qquad (3)\\ B\\Rightarrow\\neg D$$
+
+$$(4)\\ C\\Rightarrow E,\\qquad (5)\\ F\\Rightarrow A,\\qquad (6)\\ E\\Rightarrow\\neg B$$
+
+Bella in would remove Daisy by (3) and Ethan by (6), leaving (2) empty. Aiden needs Bella by (1). Faye needs Aiden by (5). The live people after those exclusions are Caleb, Daisy, and Ethan, with (2) and (4) still in force.`,
   },
   {
-    id: "math-1-107",
-    case_id: "MATH 1.107",
-    title: "Assigning Paper Reviewers",
-    subsection: "1.4",
-    context:
-      "Five researchers - Petra, Quinn, Ravi, Sana, and Theo - are being assigned to review a paper. The assignment follows these rules:\n\n1. If Petra reviews, then Quinn does not review.\n\n2. Ravi reviews unless Sana reviews.\n\n3. If Quinn does not review, then Theo reviews.\n\n4. At least one of Petra or Sana reviews.\n\n5. If Theo reviews, then Ravi does not review.\n\n6. Sana reviews only if Petra reviews.",
+    id: `math-1-107`,
+    case_id: `MATH 1.107`,
+    title: `Assigning Paper Reviewers`,
+    subsection: `1.4`,
+    context: `Five researchers - Petra, Quinn, Ravi, Sana, and Theo - are being assigned to review a paper. The assignment follows these rules:
+
+1. If Petra reviews, then Quinn does not review.
+
+2. Ravi reviews unless Sana reviews.
+
+3. If Quinn does not review, then Theo reviews.
+
+4. At least one of Petra or Sana reviews.
+
+5. If Theo reviews, then Ravi does not review.
+
+6. Sana reviews only if Petra reviews.`,
     statements: [
-      "Petra must review the paper in every valid assignment.",
-      "If Quinn reviews, then Petra does not review.",
-      "It is possible for Ravi to review the paper in some valid assignment.",
-      "In the (unique) valid assignment, both Theo and Sana review the paper.",
-      "There are multiple different valid ways to assign reviewers consistent with all six rules.",
+      `Petra must review the paper in every valid assignment.`,
+      `If Quinn reviews, then Petra does not review.`,
+      `It is possible for Ravi to review the paper in some valid assignment.`,
+      `In the (unique) valid assignment, both Theo and Sana review the paper.`,
+      `There are multiple different valid ways to assign reviewers consistent with all six rules.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      "**A.** → True\n\nDrop Petra and rule (6) drops Sana with her, leaving rule (4) with nobody at all. The alternative is self-defeating. Without Petra the pair {Petra, Sana} is empty, so rule (4) fails at once. **Petra always reviews.**\n\nSuppose Petra does not review. Rule (6): Sana reviews only if Petra reviews, so Sana is out too. Rule (4) needs Petra or Sana, and both are gone.\n\nContradiction. Therefore Petra reviews in every valid assignment. That is the first forced switch in the chain.",
-      "**B.** → True\n\nRule (1) says: if Petra reviews, then Quinn does not. Contrapose it: if Quinn reviews, then Petra does not. That is the claimed sentence. Combined with Petra reviewing in every valid assignment, Quinn is excluded as well.\n\nContrapositive of rule (1), so it holds automatically. There is a bonus in it: since Petra reviews every time, this also tells us Quinn never does.",
-      "**C.** → False\n\nFollow the chain, Petra in, Quinn out, Theo in, and rule (5) then bars Ravi. It fires the same way in every assignment, and rule (2) is covered by Sana instead. There is no branch where Ravi sneaks back in once Theo is forced. **Ravi never reviews.**\n\nFrom Petra in, rule (1) drops Quinn. Rule (3): Quinn out $\\Rightarrow$ Theo in. Rule (5): Theo in $\\Rightarrow$ Ravi out.\n\nThe chain is the same in the only surviving assignment. Rule (2) is then carried by Sana, not by Ravi. There is no legal assignment in which Ravi reviews.",
-      "**D.** → True\n\n**Theo:** brought in by rule (3) as soon as Quinn is excluded.\n\n**Sana:** brought in by rule (2) once Ravi is excluded, and welcomed by rule (6) because Petra reviews.\n\nSo the assignment is {Petra, Sana, Theo}, exactly as described.\n\nPetra is forced, as in A. Then: rule (1) excludes Quinn; rule (3) brings Theo; rule (5) excludes Ravi; rule (2), with Ravi out, brings Sana; rule (6) is content because Petra already reviews.\n\nThe unique assignment is therefore {Petra, Sana, Theo}. Both Theo and Sana review, as claimed.",
-      "**E.** → False\n\nA second assignment would need somebody whose status was a matter of choice, and there is no such person: Petra is forced, and each of the others follows from her by a single rule. Quinn out, Theo in, Ravi out, Sana in: every status is pinned. **The assignment is unique.**\n\nEvery status is pinned by a numbered rule once Petra is forced: Quinn out by (1), Theo in by (3), Ravi out by (5), Sana in by (2). No reviewer is left with a free yes/no choice.\n\nA second valid assignment would need at least one optional person. There is none, so uniqueness holds and “multiple different valid ways” is false.",
+      `**A.** → True
+
+Suppose Petra does not review. Rule (6): Sana reviews only if Petra reviews, so Sana is out too. Rule (4) needs Petra or Sana, and both are gone. Contradiction. Therefore Petra reviews in every valid assignment. Drop Petra and rule (6) drops Sana with her, leaving rule (4) with nobody at all, so the statement is True.`,
+      `**B.** → True
+
+Rule (1) says: if Petra reviews, then Quinn does not. Contrapose it: if Quinn reviews, then Petra does not. That is the claimed sentence. Combined with Petra reviewing in every valid assignment (else (6) and (4) collide), Quinn is excluded as well. Contrapositive of rule (1), so it holds automatically, so the statement is True.`,
+      `**C.** → False
+
+Petra is forced (else (6) and (4) collide). Then rule (1) drops Quinn. Rule (3): Quinn out $\\Rightarrow$ Theo in. Rule (5): Theo in $\\Rightarrow$ Ravi out. Rule (2) is then carried by Sana, not by Ravi. There is no legal assignment in which Ravi reviews. There is no branch where Ravi sneaks back in once Theo is forced, so the statement is False.`,
+      `**D.** → True
+
+Petra is forced. Then: rule (1) excludes Quinn; rule (3) brings Theo; rule (5) excludes Ravi; rule (2), with Ravi out, brings Sana; rule (6) is content because Petra already reviews. The unique assignment is therefore {Petra, Sana, Theo}. Both Theo and Sana review. Theo is brought in by rule (3); Sana is brought in by rule (2), so the statement is True.`,
+      `**E.** → False
+
+Every status is pinned by a numbered rule once Petra is forced: Quinn out by (1), Theo in by (3), Ravi out by (5), Sana in by (2). No reviewer is left with a free yes/no choice. A second valid assignment would need at least one optional person. There is none, so uniqueness holds and "multiple different valid ways" is false, so the statement is False.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 29,
-    solution_overview:
-      "Begin with the question the rules answer most sharply: does Petra review?\n\nSuppose she does not. Rule (6) says Sana reviews only if Petra does, so Sana is out too, and rule (4) demanded at least one of Petra and Sana. Contradiction, so **Petra reviews in every valid assignment**.\n\nFrom there the rules fall like a row of switches:\n\n• **Rule (1):** Petra in, so Quinn out.\n\n• **Rule (3):** Quinn out, so Theo in.\n\n• **Rule (5):** Theo in, so Ravi out.\n\n• **Rule (2):** Ravi is out, so Sana must carry that rule, Sana in.\n\n• **Rule (6):** Sana needs Petra, who is already in. ✓\n\n**Reviewers: Petra, Sana and Theo. Not reviewing: Quinn and Ravi.**\n\nEvery single status was forced; there was never a moment where two options both survived, so this assignment is the **only** one. In particular Ravi is squeezed out by the chain every time, and Quinn, whom Petra always excludes, never reviews either.",
+    solution_overview: `Five researchers, six rules:
+
+$$(1)\\ P\\Rightarrow\\neg Q,\\qquad (2)\\ R\\lor S,\\qquad (3)\\ \\neg Q\\Rightarrow T$$
+
+$$(4)\\ P\\lor S,\\qquad (5)\\ T\\Rightarrow\\neg R,\\qquad (6)\\ S\\Rightarrow P$$
+
+If Petra is out, (6) drops Sana and (4) is empty. From Petra in, the remaining rules act as a chain of forced switches.`,
   },
   {
-    id: "math-1-108",
-    case_id: "MATH 1.108",
-    title: "Seven Finalists and the Tournament Roster",
-    subsection: "1.4",
-    context:
-      "Seven finalists - Uma, Victor, Wendy, Xavier, Yara, Zane, and Bianca - are deciding whether to compete in a tournament. Their participation follows these rules:\n\n1. Uma competes if and only if Victor competes.\n\n2. If Victor competes, then Wendy competes.\n\n3. Exactly one of Wendy or Xavier competes (never both, never neither).\n\n4. If Xavier competes, then Yara does not compete.\n\n5. At least one of Yara or Zane competes.\n\n6. Zane competes only if Bianca does not compete.\n\n7. If Bianca competes, then Uma competes.\n\n8. At least four of the seven finalists compete.",
+    id: `math-1-108`,
+    case_id: `MATH 1.108`,
+    title: `Seven Finalists and the Tournament Roster`,
+    subsection: `1.4`,
+    context: `Seven finalists - Uma, Victor, Wendy, Xavier, Yara, Zane, and Bianca - are deciding whether to compete in a tournament. Their participation follows these rules:
+
+1. Uma competes if and only if Victor competes.
+
+2. If Victor competes, then Wendy competes.
+
+3. Exactly one of Wendy or Xavier competes (never both, never neither).
+
+4. If Xavier competes, then Yara does not compete.
+
+5. At least one of Yara or Zane competes.
+
+6. Zane competes only if Bianca does not compete.
+
+7. If Bianca competes, then Uma competes.
+
+8. At least four of the seven finalists compete.`,
     statements: [
-      "Victor must compete in every valid roster.",
-      "It is possible for Xavier to compete in some valid roster.",
-      "If Bianca competes, then Zane does not compete.",
-      "There is exactly one valid way to build the roster, consistent with all eight rules.",
-      "It is possible for exactly six of the seven finalists to compete.",
+      `Victor must compete in every valid roster.`,
+      `It is possible for Xavier to compete in some valid roster.`,
+      `If Bianca competes, then Zane does not compete.`,
+      `There is exactly one valid way to build the roster, consistent with all eight rules.`,
+      `It is possible for exactly six of the seven finalists to compete.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      "**A.** → True\n\nWithout Victor the roster also loses Uma and Bianca, and neither remaining branch can scrape together the four competitors rule (8) insists on. **Victor is in every roster.** Spell the two branches under \"no Victor\": Wendy in and Xavier out leaves at most Wendy, Yara and Zane (size $\\le 3$); Xavier in and Wendy out removes Yara by rule (4), forces Zane by rule (5), and yields only Xavier and Zane (size 2). Both fall short of four, so Victor must compete.",
-      "**B.** → False\n\nVictor is forced, because both no-Victor branches fall short of the four competitors in rule (8). Rule (1) then brings Uma, and rule (2) brings Wendy. Rule (3) allows exactly one of Wendy or Xavier, and Wendy is already in, so Xavier is out in every valid roster.\n\nVictor always competes, so rule (2) always brings Wendy in, and rule (3) permits exactly one of Wendy and Xavier. Xavier is shut out every time. **No roster contains him.**",
-      "**C.** → True\n\nOpen with rule (6): Zane competes only if Bianca does not, that is Zane $\\Rightarrow$ not Bianca. Contrapose it: Bianca $\\Rightarrow$ not Zane. That is the claimed implication. The four surviving extras never pair Bianca with Zane.\n\nRule (6) says Zane competes only if Bianca does not, and the quoted sentence is that rule read backwards. The two never appear together, and in the four rosters Bianca only ever turns up alongside Yara.",
-      "**D.** → False\n\nThe forced core is Uma, Victor, Wendy in and Xavier out. Among Yara, Zane and Bianca, rule (5) asks for Yara or Zane and rule (6) forbids Zane with Bianca, leaving four extras: {Yara}, {Zane}, {Yara, Bianca}, {Yara, Zane}. Four legal rosters is already more than one.\n\nOnly Uma, Victor, Wendy and Xavier have their fate decided. Yara, Zane and Bianca still allow four different endings, so the roster is far from pinned down. **Not unique.**",
-      "**E.** → False\n\nSix competitors means exactly one absentee, and that absentee is forced to be Xavier, which would put Yara, Zane and Bianca in the tournament together, and rule (6) forbids Zane alongside Bianca. **Sizes four and five are all that is available.** With the forced core Uma, Victor, Wendy already in and Xavier already out, a size-6 roster would need all three of Yara, Zane and Bianca; rule (5) is fine, but rule (6) blocks the Zane and Bianca pair, so six is unreachable. The surviving extras are only {Yara}, {Zane}, {Yara, Bianca} and {Yara, Zane}, giving sizes 4 or 5.",
+      `**A.** → True
+
+Without Victor the roster also loses Uma (by (1)) and Bianca (by (7) read backwards). Wendy in and Xavier out leaves at most Wendy, Yara and Zane (size $\\le 3$). Xavier in and Wendy out removes Yara by rule (4), forces Zane by rule (5), and yields only Xavier and Zane (size $2$). Both fall short of four, so Victor must compete, so the statement is True.`,
+      `**B.** → False
+
+Victor always competes (else the head count under (8) fails). Rule (2) then always brings Wendy in, and rule (3) permits exactly one of Wendy and Xavier. Xavier is shut out every time. No roster contains him. Rule (3) allows exactly one of Wendy or Xavier, and Wendy is already in, so the statement is False.`,
+      `**C.** → True
+
+Rule (6) says Zane competes only if Bianca does not, that is Zane $\\Rightarrow$ not Bianca. Contrapose it: Bianca $\\Rightarrow$ not Zane. That is the claimed implication. The two never appear together. Among Yara, Zane and Bianca, rule (6) forbids the Zane and Bianca pair, so the statement is True.`,
+      `**D.** → False
+
+The forced core is Uma, Victor, Wendy in and Xavier out. Among Yara, Zane and Bianca, rule (5) asks for Yara or Zane and rule (6) forbids Zane with Bianca, leaving four extras: {Yara}, {Zane}, {Yara, Bianca}, {Yara, Zane}. Four legal rosters is already more than one. Only four of the seven have their fate decided, so the statement is False.`,
+      `**E.** → False
+
+With the forced core Uma, Victor, Wendy already in and Xavier already out, a size-$6$ roster would need all three of Yara, Zane and Bianca; rule (5) is fine, but rule (6) blocks the Zane and Bianca pair, so six is unreachable. The surviving extras are only {Yara}, {Zane}, {Yara, Bianca} and {Yara, Zane}, giving sizes $4$ or $5$, so the statement is False.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: `5/5`,
     sort_order: 30,
-    solution_overview:
-      'Rule (8), at least four competitors, is the hinge here, so keep an eye on the head count throughout.\n\n**Victor has to compete.** Suppose he does not. Rule (1) then removes Uma, and rule (7) read backwards ("no Uma, no Bianca") removes Bianca. Rule (3) allows only one of Wendy and Xavier, so we are choosing from a badly shrunken pool:\n\n• Wendy in, Xavier out: only Wendy, Yara and Zane are available, **at most 3**.\n\n• Xavier in, Wendy out: rule (4) removes Yara, rule (5) then requires Zane, and only Xavier and Zane are left, **exactly 2**.\n\nBoth branches fall below the floor of four, so **Victor competes**. Rule (1) then brings Uma, rule (2) brings Wendy, and rule (3) therefore locks Xavier **out**.\n\n**The forced core** is Uma, Victor and Wendy, three people, so at least one more is needed, which rule (5) supplies in any case.\n\n**Filling the last places.** Among Yara, Zane and Bianca, rule (5) asks for Yara or Zane and rule (6) forbids Zane and Bianca together. Four combinations survive:\n\n| Extra competitors | Roster size |\n| --- | --- |\n| Yara | 4 |\n| Yara and Bianca | 5 |\n| Zane | 4 |\n| Yara and Zane | 5 |\n\nSo there are four rosters, of size 4 or 5. A six-person roster would have to leave exactly one finalist out, and that finalist would have to be Xavier, but then Yara, Zane and Bianca would all compete, which rule (6) will not allow.',
+    solution_overview: `Seven finalists, eight rules. The hinge is (8): at least four competitors. Write the live constraints:
+
+$$(1)\\ U\\Leftrightarrow V,\\qquad (2)\\ V\\Rightarrow W,\\qquad (3)\\ \\text{exactly one of }W,X$$
+
+$$(4)\\ X\\Rightarrow\\neg Y,\\qquad (5)\\ Y\\lor Z,\\qquad (6)\\ Z\\Rightarrow\\neg B,\\qquad (7)\\ B\\Rightarrow U$$
+
+If Victor is out, (1) removes Uma and (7) removes Bianca, after which (3) cannot reach four people. Rule (6) contraposed is $B\\Rightarrow\\neg Z$.`,
   },
 ];
