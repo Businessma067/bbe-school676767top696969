@@ -809,7 +809,7 @@ def polish_task(task: dict) -> dict:
         task["statements"] = [humanize_statement(s, ctx) for s in task.get("statements", [])]
     overview = sanitize_explanation(task.get("solution_overview") or "")
     task["solution_overview"] = overview
-    if not locked:
+    if not locked and not task.get("_pdf_locked_expl"):
         task["tactical_explanations"] = [
             sanitize_explanation(e, overview) for e in task.get("tactical_explanations", [])
         ]
@@ -843,7 +843,25 @@ def validate_tasks(tasks: list[dict]) -> list[str]:
                 flags.append(f"{tid}: statement {LETTERS[i]} still has leftover markup")
             if len(body) < 12:
                 flags.append(f"{tid}: statement {LETTERS[i]} is too short to be a complete sentence")
-        for i, e in enumerate(t.get("tactical_explanations") or []):
+        expls = t.get("tactical_explanations") or []
+        bodies = []
+        for e in expls:
+            raw = (e or "").replace("**", "")
+            lines = raw.splitlines()
+            if lines and lines[0].lower().startswith("statement "):
+                lines = lines[1:]
+            bodies.append("\n".join(lines).strip())
+        seen: dict[str, list[str]] = {}
+        for i, body in enumerate(bodies):
+            if not body:
+                continue
+            seen.setdefault(body, []).append(LETTERS[i])
+        for body, letters in seen.items():
+            if len(letters) >= 2:
+                flags.append(
+                    f"{tid}: identical explanation text shared by statements {', '.join(letters)}"
+                )
+        for i, e in enumerate(expls):
             if "Question " in e and "Statement" in e and len(e) > 1200:
                 flags.append(f"{tid}: explanation {LETTERS[i]} looks like leaked later questions")
     return flags

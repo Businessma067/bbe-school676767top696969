@@ -16,7 +16,15 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ch12_pdf_stems import overlay_pdf_stems, parse_conditional_pdf, parse_ev_pdf
+from ch12_pdf_stems import (
+    overlay_pdf_explanations,
+    overlay_pdf_stems,
+    parse_conditional_explanations,
+    parse_conditional_pdf,
+    parse_ev_explanations,
+    parse_ev_pdf,
+    parse_incl_explanations,
+)
 from ch12_polish import polish_task, validate_tasks
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +56,7 @@ SUBSECTIONS = [
 ]
 
 LETTERS = "ABCDE"
+PDF_EXPL_MISMATCHES: list[str] = []
 
 
 def latexify(text: str) -> str:
@@ -616,7 +625,14 @@ def parse_incl_excl() -> list[dict]:
             continue
         by_num[qnum] = _parse_incl_pdf_question(qnum, norm)
 
-    return [by_num[k] for k in sorted(by_num)]
+    tasks = [by_num[k] for k in sorted(by_num)]
+    pdf_expls = parse_incl_explanations()
+    for t in tasks:
+        qn = t.get("_qnum")
+        if qn not in pdf_expls:
+            continue
+        overlay_pdf_explanations([t], [pdf_expls[qn]], f"incl-excl Q{qn}", PDF_EXPL_MISMATCHES)
+    return tasks
 
 
 def split_questions(text: str, heading_re: str) -> list[tuple[str, str]]:
@@ -656,7 +672,12 @@ def parse_conditional() -> list[dict]:
                 "subsection": "12.3",
             }
         )
-    return overlay_pdf_stems(tasks, parse_conditional_pdf(), "conditional")
+    return overlay_pdf_explanations(
+        overlay_pdf_stems(tasks, parse_conditional_pdf(), "conditional"),
+        parse_conditional_explanations(),
+        "conditional",
+        PDF_EXPL_MISMATCHES,
+    )
 
 
 def parse_ev() -> list[dict]:
@@ -698,7 +719,12 @@ def parse_ev() -> list[dict]:
                     "subsection": "12.4",
                 }
             )
-    return overlay_pdf_stems(tasks, parse_ev_pdf(), "expected value")
+    return overlay_pdf_explanations(
+        overlay_pdf_stems(tasks, parse_ev_pdf(), "expected value"),
+        parse_ev_explanations(),
+        "expected value",
+        PDF_EXPL_MISMATCHES,
+    )
 
 
 def _strip_latex_text(s: str) -> str:
@@ -1152,13 +1178,14 @@ def finalize(tasks: list[dict], start_index: int = 1) -> list[dict]:
             "statement contains worked-solution content",
         )
         overview = clean_overview(t["solution_overview"] or "")
-        t["tactical_explanations"] = enrich_tactical(
-            t["tactical_explanations"],
-            overview,
-            t["answer_key"],
-            t["statements"],
-            t["subsection"],
-        )
+        if not t.get("_pdf_locked_expl") and not t.get("_venn_locked"):
+            t["tactical_explanations"] = enrich_tactical(
+                t["tactical_explanations"],
+                overview,
+                t["answer_key"],
+                t["statements"],
+                t["subsection"],
+            )
         t["solution_overview"] = trim_solution_overview(
             overview, t["tactical_explanations"], t["subsection"]
         )
@@ -1223,6 +1250,12 @@ def main() -> None:
     )
 
     all_tasks = finalize(comb + incl + cond + ev)
+    if PDF_EXPL_MISMATCHES:
+        print(f"PDF explanation flags ({len(PDF_EXPL_MISMATCHES)}):")
+        for line in PDF_EXPL_MISMATCHES:
+            print(" -", line)
+    else:
+        print("PDF explanation flags: none (stored answer_key matches PDF verdicts; arithmetic sentences hold)")
     flags = validate_tasks(all_tasks)
     if flags:
         print(f"validation flags ({len(flags)}):")
