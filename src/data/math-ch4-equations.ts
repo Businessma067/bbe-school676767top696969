@@ -10,7 +10,7 @@ import type { MathTask } from "@/data/math-chapters";
 export const MATH_CH4_SUBSECTIONS = [
   { id: "4.1", title: "Linear equations in one unknown" },
   { id: "4.2", title: "Quadratic equations" },
-  // 4.3 Rational, radical and absolute-value equations
+  { id: "4.3", title: "Rational, radical and absolute-value equations" },
   // 4.4 Exponential and logarithmic equations
   // 4.5 Applied word problems and mixed exam sets
 ] as const;
@@ -2763,6 +2763,972 @@ so $t = 12$ or $t = 8$. Check: $8 + 12 = 20$ and $8 \\cdot 12 = 96$. The stateme
     difficulty_level: `5/5`,
     sort_order: 56,
     solution_overview: `Five independent quadratic stories: a $4$ by $9$ rectangle, consecutive integers with product $132$, a $5t^{2}$ motion reading, $x^{2} - x + 1 = 0$ with negative discriminant, and the pair with sum $20$ and product $96$.`,
+  },
+  {
+    id: `math-4-57`,
+    case_id: `MATH 4.57`,
+    title: `A number and its reciprocal`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Two numbers multiply to $1$. One of them is $5$. The other is $\\frac{1}{5}$.`,
+      `The reciprocal of $2$ is $2$.`,
+      `The reciprocal of $\\frac{1}{4}$ is $4$.`,
+      `Zero has a reciprocal.`,
+      `If the reciprocal of a number is $\\frac{1}{6}$, then the number itself is $6$.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Two numbers that multiply to $1$ are reciprocals of each other. If one is $5$, the other is $\\frac{1}{5}$, because $5 \\cdot \\frac{1}{5} = 1$. The statement is True.`,
+      `**B.** → False
+
+The reciprocal of $2$ is $\\frac{1}{2}$, not $2$. Two times two is $4$, not $1$. The statement is False.`,
+      `**C.** → True
+
+$\\frac{1}{4} \\cdot 4 = 1$, so $4$ is the reciprocal of $\\frac{1}{4}$. Turning a fraction upside down gives the same reading. The statement is True.`,
+      `**D.** → False
+
+The reciprocal of $x$ is $\\frac{1}{x}$. Division by zero is not allowed, so $0$ has no reciprocal. The statement is False.`,
+      `**E.** → True
+
+If $\\frac{1}{x} = \\frac{1}{6}$, then $x = 6$. Check: the reciprocal of $6$ is $\\frac{1}{6}$. The statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 57,
+    solution_overview: `Five independent claims about reciprocals. The reciprocal of a nonzero number $x$ is $\\frac{1}{x}$. Zero is excluded because you cannot divide by zero.`,
+  },
+  {
+    id: `math-4-58`,
+    case_id: `MATH 4.58`,
+    title: `A number over four more than itself`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A number, divided by $2$ more than the number, equals $\\frac{1}{3}$. That number is $1$.`,
+      `That fraction is undefined when the number is $-2$.`,
+      `The number $4$ also satisfies the same ratio $\\frac{1}{3}$.`,
+      `Cross-multiplying $3x = x + 2$ is allowed for every value except $x = -2$.`,
+      `The number that works is $3$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the number be $x$. Then
+
+$$\\frac{x}{x + 2} = \\frac{1}{3}$$
+
+For $x \\neq -2$, cross-multiply:
+
+$$3x = x + 2$$
+
+$$2x = 2$$
+
+$$x = 1$$
+
+Check: $\\frac{1}{3} = \\frac{1}{3}$. The statement is True.`,
+      `**B.** → True
+
+The denominator $x + 2$ is zero at $x = -2$. The original fraction is not a number there. The statement is True.`,
+      `**C.** → False
+
+$\\frac{4}{6} = \\frac{2}{3}$, not $\\frac{1}{3}$. Four would fit a ratio of $2$ to $3$, not $1$ to $3$. The statement is False.`,
+      `**D.** → True
+
+Clearing denominators is valid precisely when those denominators are not zero. Here that forbids only $x = -2$. The statement is True.`,
+      `**E.** → False
+
+At $x = 3$ the fraction is $\\frac{3}{5}$, not $\\frac{1}{3}$. The recovered value is $1$. The statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 58,
+    solution_overview: `Five independent claims about $\\frac{x}{x + 2} = \\frac{1}{3}$. Cross-multiply only after ruling out $x = -2$. The solution is $x = 1$.`,
+  },
+  {
+    id: `math-4-59`,
+    case_id: `MATH 4.59`,
+    title: `When a denominator forbids a candidate`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The equation $\\frac{1}{x - 2} = \\frac{3}{x - 2}$ has no solution.`,
+      `$x = 2$ is a solution of that equation.`,
+      `The equation $\\frac{5}{x + 1} = \\frac{5}{x + 1}$ is true for every real $x$ except $x = -1$.`,
+      `The equation $\\frac{2}{x} = 0$ has solution $x = 0$.`,
+      `The equation $\\frac{6}{x} = 2$ has solution $x = 3$.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+If $x \\neq 2$, both sides have the same nonzero denominator, so the equation says $1 = 3$, which is never true. If $x = 2$, both sides are undefined. There is nowhere left for a solution. The statement is True.`,
+      `**B.** → False
+
+At $x = 2$ you are dividing by zero. That value is not in the domain, so it cannot be a solution. The statement is False.`,
+      `**C.** → True
+
+When $x \\neq -1$ the two sides are the same number, so the equation holds. At $x = -1$ it is undefined. An identity with a hole, not a solution at the hole. The statement is True.`,
+      `**D.** → False
+
+A fraction is zero only when the numerator is zero and the denominator is not. Here the numerator is $2$, never zero, and $x = 0$ is undefined anyway. No solution. The statement is False.`,
+      `**E.** → True
+
+$$\\frac{6}{x} = 2 \\quad \\Rightarrow \\quad 6 = 2x \\quad \\Rightarrow \\quad x = 3$$
+
+provided $x \\neq 0$. Check: $\\frac{6}{3} = 2$. The statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 59,
+    solution_overview: `Five independent rational equations. A value that makes a denominator zero is never a solution. Two fractions with the same denominator are equal only when their numerators are equal, and only where the denominator is allowed.`,
+  },
+  {
+    id: `math-4-60`,
+    case_id: `MATH 4.60`,
+    title: `A square bed after 3 extra square metres`,
+    subsection: `4.3`,
+    context: `A gardener adds $3$ m$^{2}$ of soil to a square bed. The new bed is still square, and each side is $4$ m. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The new area is $16$ m$^{2}$.`,
+      `The original area was $13$ m$^{2}$.`,
+      `The original side was $4$ m.`,
+      `The equation $\\sqrt{x + 3} = 4$ has solution $x = 13$.`,
+      `The original area was $19$ m$^{2}$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+A square of side $4$ m has area $4 \\cdot 4 = 16$ m$^{2}$. That is the bed after the extra soil. The statement is True.`,
+      `**B.** → True
+
+The extra soil is $3$ m$^{2}$, so the original area is $16 - 3 = 13$ m$^{2}$. The statement is True.`,
+      `**C.** → False
+
+The original area is $13$ m$^{2}$, so the original side is $\\sqrt{13}$ m, not $4$. Four metres is the side after the addition. The statement is False.`,
+      `**D.** → True
+
+Let $x$ be the original area in square metres. The new side is $\\sqrt{x + 3}$, and that equals $4$.
+
+$$\\sqrt{x + 3} = 4$$
+
+$$x + 3 = 16$$
+
+$$x = 13$$
+
+The principal square root is nonnegative, and $4$ is nonnegative, so squaring is safe here. Check: $\\sqrt{16} = 4$. The statement is True.`,
+      `**E.** → False
+
+Nineteen would be $16 + 3$, adding instead of subtracting. The original area is $13$ m$^{2}$. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 60,
+    solution_overview: `One square bed, five checks. After $3$ m$^{2}$ of soil the side is $4$ m, so the new area is $16$ m$^{2}$. The original area $x$ satisfies $\\sqrt{x + 3} = 4$.`,
+  },
+  {
+    id: `math-4-61`,
+    case_id: `MATH 4.61`,
+    title: `Five units from $3$ on the number line`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A number that is $5$ units from $3$ on the number line is $8$ or $-2$.`,
+      `The equation $\\lvert x - 3 \\rvert = 5$ has both of those solutions.`,
+      `The only number $5$ units from $3$ is $8$.`,
+      `The equation $\\lvert x \\rvert = 0$ has solution $x = 0$.`,
+      `The equation $\\lvert x \\rvert = -2$ has two real solutions.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Distance on the line is absolute value. Five units to the right of $3$ is $8$. Five units to the left is $3 - 5 = -2$. The statement is True.`,
+      `**B.** → True
+
+$\\lvert x - 3 \\rvert = 5$ means $x - 3 = 5$ or $x - 3 = -5$, so $x = 8$ or $x = -2$. Both distances equal $5$. The statement is True.`,
+      `**C.** → False
+
+Distance does not choose a side. The left-hand point $-2$ is just as far from $3$ as $8$ is. The statement is False.`,
+      `**D.** → True
+
+Absolute value is zero only at zero. $\\lvert 0 \\rvert = 0$. The statement is True.`,
+      `**E.** → False
+
+Absolute value is never negative. $\\lvert x \\rvert = -2$ has no real $x$. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 61,
+    solution_overview: `Five independent claims about absolute value as distance. $\\lvert x - a \\rvert = b$ with $b > 0$ gives two points, $a + b$ and $a - b$. A negative right-hand side is impossible.`,
+  },
+  {
+    id: `math-4-62`,
+    case_id: `MATH 4.62`,
+    title: `To town at 40 km/h and back at 60`,
+    subsection: `4.3`,
+    context: `A courier rides $120$ km to town at $40$ km/h and returns the same $120$ km at $60$ km/h. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The ride to town takes $3$ hours.`,
+      `The ride back takes $2$ hours.`,
+      `The average speed for the round trip is $50$ km/h.`,
+      `The average speed for the round trip is $48$ km/h.`,
+      `The whole trip takes $4$ hours.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Time is distance over speed.
+
+$$\\frac{120}{40} = 3$$
+
+Three hours to town. The statement is True.`,
+      `**B.** → True
+
+$$\\frac{120}{60} = 2$$
+
+Two hours back. The statement is True.`,
+      `**C.** → False
+
+Average speed is total distance over total time, not the arithmetic mean of $40$ and $60$. The two speeds are not held for equal times, so $\\frac{40 + 60}{2} = 50$ is the wrong average. The statement is False.`,
+      `**D.** → True
+
+Total distance $240$ km, total time $3 + 2 = 5$ hours.
+
+$$\\frac{240}{5} = 48$$
+
+The average is $48$ km/h. Equivalently the harmonic mean of the two speeds for equal distances:
+
+$$\\frac{2}{\\frac{1}{40} + \\frac{1}{60}} = \\frac{2}{\\frac{3 + 2}{120}} = 48$$
+
+The statement is True.`,
+      `**E.** → False
+
+The two legs take $5$ hours, not $4$. Four hours would be a $60$ km/h average on $240$ km. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 62,
+    solution_overview: `One round trip, five checks. Times are $\\frac{120}{40}$ and $\\frac{120}{60}$. Average speed is $\\frac{240}{5}$, the harmonic mean of the two speeds, not their arithmetic mean.`,
+  },
+  {
+    id: `math-4-63`,
+    case_id: `MATH 4.63`,
+    title: `A in 6 days, B in 12, working together`,
+    subsection: `4.3`,
+    context: `A can finish a job in $6$ days and B can finish the same job in $12$ days. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Working together they finish the job in $4$ days.`,
+      `In $2$ days together they complete half the job.`,
+      `In the same time A does twice as much as B.`,
+      `Working together they finish in $9$ days.`,
+      `B alone would finish the job in $6$ days.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+A's rate is $\\frac{1}{6}$ of the job per day, B's is $\\frac{1}{12}$. Together
+
+$$\\frac{1}{6} + \\frac{1}{12} = \\frac{2}{12} + \\frac{1}{12} = \\frac{1}{4}$$
+
+of the job per day, so the job takes $4$ days. The statement is True.`,
+      `**B.** → True
+
+Two days at $\\frac{1}{4}$ of a job per day is $\\frac{1}{2}$ of the job. The statement is True.`,
+      `**C.** → True
+
+A's rate is twice B's, because $\\frac{1}{6} = 2 \\cdot \\frac{1}{12}$. In any common stretch of time A does twice the work B does. The statement is True.`,
+      `**D.** → False
+
+Nine is the arithmetic mean of $6$ and $12$. Work rates add as reciprocals of the times, not as an average of the times. Together they take $4$ days, which is shorter than either worker alone. The statement is False.`,
+      `**E.** → False
+
+B's time alone is $12$ days, not $6$. Six days is A's time. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 63,
+    solution_overview: `One job, five checks. Rates $\\frac{1}{6}$ and $\\frac{1}{12}$ add to $\\frac{1}{4}$ of a job per day. Together the job takes $4$ days. Averaging the two times is the usual trap.`,
+  },
+  {
+    id: `math-4-64`,
+    case_id: `MATH 4.64`,
+    title: `A square lawn of side 5 m`,
+    subsection: `4.3`,
+    context: `A square lawn has side $5$ m. Its area is $1$ m$^{2}$ more than twice a certain number of square metres. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `That number is $12$.`,
+      `The area of the lawn is $25$ m$^{2}$.`,
+      `The equation $\\sqrt{2x + 1} = 5$ has solution $x = 12$.`,
+      `The number is $-12$.`,
+      `Every solution of the squared equation $2x + 1 = 25$ automatically solves $\\sqrt{2x + 1} = -5$.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The area is $5^{2} = 25$ m$^{2}$, and that is $1$ more than twice the number $x$.
+
+$$2x + 1 = 25$$
+
+$$2x = 24$$
+
+$$x = 12$$
+
+Check: $2 \\cdot 12 + 1 = 25$. The statement is True.`,
+      `**B.** → True
+
+Side $5$ m gives area $25$ m$^{2}$. The statement is True.`,
+      `**C.** → True
+
+The side is the principal square root of the area, so $\\sqrt{2x + 1} = 5$. Squaring (both sides nonnegative) returns $2x + 1 = 25$ and $x = 12$. Check: $\\sqrt{25} = 5$. The statement is True.`,
+      `**D.** → False
+
+Negative twelve would make $2x + 1 = -23$, which cannot be an area and cannot be a square of $5$. The recovered number is $12$. The statement is False.`,
+      `**E.** → False
+
+The principal square root is never negative, so $\\sqrt{2x + 1} = -5$ has no real solution at all. Squaring would still produce $2x + 1 = 25$, whose root $x = 12$ does not satisfy the equation with $-5$ on the right. Squaring can invent extras, and a negative right-hand side is already impossible. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 64,
+    solution_overview: `One lawn, five checks. Area $25$ is $2x + 1$, so $x = 12$. The same relation written as $\\sqrt{2x + 1} = 5$ is a radical equation whose squared form must be checked against the principal root.`,
+  },
+  {
+    id: `math-4-65`,
+    case_id: `MATH 4.65`,
+    title: `A reading 4 off twice the true value`,
+    subsection: `4.3`,
+    context: `A gauge is supposed to show twice a true reading $x$. Instead, the absolute error from $4$ is $6$: $\\lvert 2x - 4 \\rvert = 6$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The true reading is $5$ or $-1$.`,
+      `Both possible readings are positive.`,
+      `$2x - 4$ equals $6$ or $-6$.`,
+      `If the true reading is $2$, the equation holds.`,
+      `The distance from $2x$ to $4$ is $6$.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$$\\lvert 2x - 4 \\rvert = 6$$
+
+splits into two linear equations.
+
+$$2x - 4 = 6 \\quad \\text{or} \\quad 2x - 4 = -6$$
+
+$$2x = 10 \\quad \\text{or} \\quad 2x = -2$$
+
+$$x = 5 \\quad \\text{or} \\quad x = -1$$
+
+Check: $\\lvert 10 - 4 \\rvert = 6$ and $\\lvert -2 - 4 \\rvert = 6$. The statement is True.`,
+      `**B.** → False
+
+$5$ is positive, but $-1$ is not. The statement is False.`,
+      `**C.** → True
+
+That is the definition of absolute value equal to $6$: the inside is $6$ or $-6$. The statement is True.`,
+      `**D.** → False
+
+At $x = 2$ the inside is $4 - 4 = 0$, and $\\lvert 0 \\rvert = 0$, not $6$. Two is where the error would be zero. The statement is False.`,
+      `**E.** → True
+
+$\\lvert 2x - 4 \\rvert$ is the distance between $2x$ and $4$. The equation says that distance is $6$. The statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 65,
+    solution_overview: `One absolute-value equation, five checks. $\\lvert 2x - 4 \\rvert = 6$ opens into $2x - 4 = \\pm 6$, so $x = 5$ or $x = -1$.`,
+  },
+  {
+    id: `math-4-66`,
+    case_id: `MATH 4.66`,
+    title: `Flour divided by 4 cups less than the flour`,
+    subsection: `4.3`,
+    context: `A baker uses a number of cups of flour that, divided by $4$ cups less than that number, equals $3$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The baker uses $6$ cups of flour.`,
+      `Four cups less than the flour is $2$ cups.`,
+      `The ratio is also defined when the flour is $4$ cups.`,
+      `If the baker used $8$ cups of flour, the same ratio $3$ would still hold.`,
+      `The flour is three times that $2$-cup remainder.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let flour be $x$ cups. Then
+
+$$\\frac{x}{x - 4} = 3$$
+
+with $x \\neq 4$. Cross-multiply:
+
+$$x = 3(x - 4)$$
+
+$$x = 3x - 12$$
+
+$$12 = 2x$$
+
+$$x = 6$$
+
+Check: $\\frac{6}{2} = 3$. The statement is True.`,
+      `**B.** → True
+
+$6 - 4 = 2$ cups. That is the denominator. The statement is True.`,
+      `**C.** → False
+
+If the flour is $4$ cups, the denominator $x - 4$ is zero. The ratio is undefined, so $x = 4$ is not a solution and not a legal recipe. The working amount is $6$ cups. The statement is False.`,
+      `**D.** → False
+
+Eight cups would give leftover $4$ and ratio $\\frac{8}{4} = 2$, not $3$. The statement is False.`,
+      `**E.** → True
+
+Flour $6$ cups is three times the $2$-cup remainder, which is the same as $\\frac{6}{2} = 3$. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 66,
+    solution_overview: `One recipe, five checks. $\\frac{x}{x - 4} = 3$ with $x \\neq 4$ gives $x = 6$ cups of flour and a $2$-cup remainder.`,
+  },
+  {
+    id: `math-4-67`,
+    case_id: `MATH 4.67`,
+    title: `Two square gardens that differ by 3 square metres`,
+    subsection: `4.3`,
+    context: `Two square gardens. The smaller has area $3$ m$^{2}$ less than the larger. The side of the smaller, plus $1$ m, equals $4$ m. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The larger garden has area $12$ m$^{2}$.`,
+      `The smaller garden has area $9$ m$^{2}$.`,
+      `The smaller garden has side $4$ m.`,
+      `The larger garden has side $4$ m.`,
+      `The two areas differ by $3$ m$^{2}$.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the larger area be $x$ m$^{2}$. Then the smaller area is $x - 3$, and its side plus $1$ is $4$:
+
+$$\\sqrt{x - 3} + 1 = 4$$
+
+$$\\sqrt{x - 3} = 3$$
+
+$$x - 3 = 9$$
+
+$$x = 12$$
+
+The larger area is $12$ m$^{2}$. The statement is True.`,
+      `**B.** → True
+
+Smaller area $12 - 3 = 9$ m$^{2}$, and $\\sqrt{9} = 3$, so $3 + 1 = 4$. The statement is True.`,
+      `**C.** → False
+
+The smaller side is $3$ m, not $4$. Four metres is that side plus one. The statement is False.`,
+      `**D.** → False
+
+The larger side is $\\sqrt{12} = 2\\sqrt{3}$ m, about $3.46$ m, not $4$. The statement is False.`,
+      `**E.** → True
+
+That is the opening relation: the areas differ by $3$ m$^{2}$. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 67,
+    solution_overview: `Two square gardens, five checks. The smaller side satisfies $\\sqrt{x - 3} + 1 = 4$, so the larger area is $12$ m$^{2}$ and the smaller is $9$ m$^{2}$.`,
+  },
+  {
+    id: `math-4-68`,
+    case_id: `MATH 4.68`,
+    title: `Two pipes, one twice as fast as the other`,
+    subsection: `4.3`,
+    context: `Pipe A fills a tank in $3$ hours. Pipe B fills the same tank in $6$ hours. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Together the two pipes fill the tank in $2$ hours.`,
+      `In $1$ hour together they fill half the tank.`,
+      `Together they fill the tank in $4.5$ hours.`,
+      `In the same time A pours twice as much as B.`,
+      `Together they take $9$ hours.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Rates add.
+
+$$\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{1}{2}$$
+
+of the tank per hour, so the tank is full in $2$ hours. The statement is True.`,
+      `**B.** → True
+
+One hour at half a tank per hour is half a tank. The statement is True.`,
+      `**C.** → False
+
+$4.5$ is the arithmetic mean of $3$ and $6$. Combined work is faster than either pipe, not a compromise between the two times. They take $2$ hours together. The statement is False.`,
+      `**D.** → True
+
+A's rate $\\frac{1}{3}$ is twice B's rate $\\frac{1}{6}$. In any common hour A pours twice B's volume. The statement is True.`,
+      `**E.** → False
+
+Nine hours is $3 + 6$, as if they took turns for a full tank each. Together they share one tank and finish in $2$ hours. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 68,
+    solution_overview: `One tank, five checks. Reciprocal times $\\frac{1}{3}$ and $\\frac{1}{6}$ add to $\\frac{1}{2}$ of a tank per hour, so together the job takes $2$ hours.`,
+  },
+  {
+    id: `math-4-69`,
+    case_id: `MATH 4.69`,
+    title: `A number equal to the square root of two more than itself`,
+    subsection: `4.3`,
+    context: `A number equals the square root of two more than the number. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The number $2$ works.`,
+      `The number $-1$ works.`,
+      `Squaring both sides of $\\sqrt{x + 2} = x$ produces $x^{2} - x - 2 = 0$.`,
+      `Both roots of that quadratic solve the original equation.`,
+      `The original equation has only one real solution.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim is $\\sqrt{x + 2} = x$. At $x = 2$:
+
+$$\\sqrt{4} = 2$$
+
+Both sides match, and $2$ is nonnegative, which a principal square root requires on the right as well. The statement is True.`,
+      `**B.** → False
+
+At $x = -1$:
+
+$$\\sqrt{1} = 1 \\neq -1$$
+
+The left side is $1$, the right side is $-1$. Also a principal square root cannot equal a negative number. Minus one is an extra root of the squared equation, not of the original. The statement is False.`,
+      `**C.** → True
+
+Square both sides (after requiring $x \\geq 0$, because the right side is a principal root):
+
+$$x + 2 = x^{2}$$
+
+$$x^{2} - x - 2 = 0$$
+
+The statement is True.`,
+      `**D.** → False
+
+$$(x - 2)(x + 1) = 0$$
+
+gives $x = 2$ and $x = -1$. Only $x = 2$ survives the check. Squaring is not reversible: it can add a false candidate. The statement is False.`,
+      `**E.** → True
+
+After the check, only $x = 2$ remains. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 69,
+    solution_overview: `Five independent checks of $\\sqrt{x + 2} = x$. Squaring produces $x^{2} - x - 2 = 0$, whose roots are $2$ and $-1$. Only the nonnegative candidate $x = 2$ solves the original.`,
+  },
+  {
+    id: `math-4-70`,
+    case_id: `MATH 4.70`,
+    title: `Equally far from kilometre posts minus 1 and 5`,
+    subsection: `4.3`,
+    context: `A depot on a straight road is equally far from kilometre post $-1$ and kilometre post $5$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The depot is at kilometre $2$.`,
+      `Its distance to each of those posts is $3$ km.`,
+      `The depot is at kilometre $3$.`,
+      `The equation $\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$ has exactly one real solution.`,
+      `Every point on the road is equally far from those two posts.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Equal distance from two points on a line means the midpoint.
+
+$$\\frac{-1 + 5}{2} = 2$$
+
+Check: $\\lvert 2 - (-1) \\rvert = 3$ and $\\lvert 2 - 5 \\rvert = 3$. The depot is at km $2$. The statement is True.`,
+      `**B.** → True
+
+Both distances are $3$ km. The statement is True.`,
+      `**C.** → False
+
+Kilometre $3$ is $4$ km from $-1$ and $2$ km from $5$. Those are not equal. The midpoint is $2$, not $3$. The statement is False.`,
+      `**D.** → True
+
+$\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$ means $x + 1 = x - 5$ (impossible) or $x + 1 = -(x - 5)$.
+
+$$x + 1 = -x + 5$$
+
+$$2x = 4$$
+
+$$x = 2$$
+
+One real solution. The statement is True.`,
+      `**E.** → False
+
+Only the midpoint is equally far from both posts. Any other point is closer to one of them. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 70,
+    solution_overview: `One depot, five checks. Equal distance from $-1$ and $5$ is the midpoint $2$, which is the unique solution of $\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$.`,
+  },
+  {
+    id: `math-4-71`,
+    case_id: `MATH 4.71`,
+    title: `A 40 litre vat of 20 percent acid, drained and refilled`,
+    subsection: `4.3`,
+    context: `A vat holds $40$ litres of a $20\\%$ acid solution. A worker drains some litres and refills the vat with water. The new mixture is $12\\%$ acid. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$16$ litres were drained.`,
+      `After the swap, $4.8$ litres of acid remain.`,
+      `$20$ litres were drained.`,
+      `After the swap the vat is still $40$ litres in all.`,
+      `The new mixture is $15\\%$ acid.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The original acid is $0.20 \\cdot 40 = 8$ litres. Let $x$ litres be drained. Then $0.20x$ litres of acid leave, and $8 - 0.20x$ litres of acid remain in $40$ litres of mixture.
+
+$$\\frac{8 - 0.20x}{40} = 0.12$$
+
+$$8 - 0.20x = 4.8$$
+
+$$0.20x = 3.2$$
+
+$$x = 16$$
+
+Sixteen litres were drained. The statement is True.`,
+      `**B.** → True
+
+Acid left: $8 - 0.20 \\cdot 16 = 8 - 3.2 = 4.8$ litres, which is $12\\%$ of $40$. The statement is True.`,
+      `**C.** → False
+
+Twenty litres drained would leave $0.20 \\cdot 20 = 4$ litres of acid in $40$ litres, which is $10\\%$, not $12\\%$. The recovered volume is $16$ litres. The statement is False.`,
+      `**D.** → True
+
+The worker refills with water up to the original mark, so the vat is $40$ litres again. Only the acid concentration has changed. The statement is True.`,
+      `**E.** → False
+
+The new concentration is $12\\%$, not $15\\%$. Fifteen percent would need $6$ litres of acid still in the vat, which would mean draining only $10$ litres. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 71,
+    solution_overview: `One vat, five checks. Drain $x$ litres of a $20\\%$ mix from $40$ litres and refill with water. The new concentration $12\\%$ recovers $x = 16$.`,
+  },
+  {
+    id: `math-4-72`,
+    case_id: `MATH 4.72`,
+    title: `A number plus its reciprocal is 13 over 6`,
+    subsection: `4.3`,
+    context: `A number plus its reciprocal equals $\\frac{13}{6}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `One such number is $\\frac{3}{2}$.`,
+      `The other is $\\frac{2}{3}$.`,
+      `The two numbers are reciprocals of each other.`,
+      `Their sum is $2$.`,
+      `The number $1$ works.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the number be $x \\neq 0$. Then
+
+$$x + \\frac{1}{x} = \\frac{13}{6}$$
+
+Multiply through by $6x$:
+
+$$6x^{2} + 6 = 13x$$
+
+$$6x^{2} - 13x + 6 = 0$$
+
+$$\\Delta = 169 - 144 = 25$$
+
+$$x = \\frac{13 \\pm 5}{12}$$
+
+so $x = \\frac{18}{12} = \\frac{3}{2}$ or $x = \\frac{8}{12} = \\frac{2}{3}$. Check: $\\frac{3}{2} + \\frac{2}{3} = \\frac{9 + 4}{6} = \\frac{13}{6}$. The statement is True.`,
+      `**B.** → True
+
+That is the other root. The statement is True.`,
+      `**C.** → True
+
+$\\frac{3}{2} \\cdot \\frac{2}{3} = 1$. Each is the reciprocal of the other, which is why both solve the same reciprocal equation. The statement is True.`,
+      `**D.** → False
+
+$\\frac{3}{2} + \\frac{2}{3} = \\frac{13}{6}$, not $2$. Two would be $1 + 1$. The statement is False.`,
+      `**E.** → False
+
+$1 + \\frac{1}{1} = 2 = \\frac{12}{6}$, which is not $\\frac{13}{6}$. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 72,
+    solution_overview: `Five independent claims about $x + \\frac{1}{x} = \\frac{13}{6}$. Clearing the denominator gives $6x^{2} - 13x + 6 = 0$, whose roots $\\frac{3}{2}$ and $\\frac{2}{3}$ are reciprocals.`,
+  },
+  {
+    id: `math-4-73`,
+    case_id: `MATH 4.73`,
+    title: `The principal square root is never negative`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A square garden of area $9$ m$^{2}$ has side $3$ m, not $-3$ m.`,
+      `For every real number $x$, $\\sqrt{x^{2}} = x$.`,
+      `For every real number $x$, $\\sqrt{x^{2}} = \\lvert x \\rvert$.`,
+      `A square of area $9$ m$^{2}$ can have side $-3$ m.`,
+      `The equation $\\sqrt{x} = -3$ has no real solution.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+A length is positive. $\\sqrt{9} = 3$, the principal (nonnegative) square root. The statement is True.`,
+      `**B.** → False
+
+If $x = -3$, then $\\sqrt{(-3)^{2}} = \\sqrt{9} = 3$, not $-3$. The identity $\\sqrt{x^{2}} = x$ fails for negative $x$. The statement is False.`,
+      `**C.** → True
+
+$\\sqrt{x^{2}}$ is the principal square root of a square, which is $\\lvert x \\rvert$. For $x = 3$ both sides are $3$; for $x = -3$ both sides are $3$. The statement is True.`,
+      `**D.** → False
+
+A geometric side cannot be negative. The equation $s^{2} = 9$ as a number sentence has $s = -3$, but a side of a garden does not. The statement is False.`,
+      `**E.** → True
+
+The symbol $\\sqrt{x}$ already means the nonnegative root. It cannot equal $-3$. Squaring would give $x = 9$, and $\\sqrt{9} = 3 \\neq -3$. No real solution. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 73,
+    solution_overview: `Five independent claims about the principal square root. $\\sqrt{x^{2}} = \\lvert x \\rvert$, not $x$. A negative right-hand side for $\\sqrt{x}$ is impossible.`,
+  },
+  {
+    id: `math-4-74`,
+    case_id: `MATH 4.74`,
+    title: `A recipe with one extra cup of flour`,
+    subsection: `4.3`,
+    context: `A recipe uses $1$ cup more flour than sugar. The amount of flour, divided by the amount of sugar, is $\\frac{5}{4}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The recipe uses $4$ cups of sugar.`,
+      `It uses $5$ cups of flour.`,
+      `Sugar is $5$ cups.`,
+      `The two amounts add to $8$ cups.`,
+      `If sugar were $8$ cups, flour would be $9$ cups and the ratio would still be $\\frac{5}{4}$.`,
+    ],
+    answer_key: [true, true, false, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Let sugar be $s$ cups. Then flour is $s + 1$, and
+
+$$\\frac{s + 1}{s} = \\frac{5}{4}$$
+
+with $s \\neq 0$. Cross-multiply:
+
+$$4(s + 1) = 5s$$
+
+$$4s + 4 = 5s$$
+
+$$4 = s$$
+
+Four cups of sugar. Check: flour $5$, and $\\frac{5}{4}$ matches. The statement is True.`,
+      `**B.** → True
+
+Flour is $4 + 1 = 5$ cups. The statement is True.`,
+      `**C.** → False
+
+Five cups is the flour, not the sugar. The statement is False.`,
+      `**D.** → False
+
+$4 + 5 = 9$ cups, not $8$. Eight would be $4 + 4$. The statement is False.`,
+      `**E.** → False
+
+Sugar $8$ and flour $9$ give ratio $\\frac{9}{8}$, not $\\frac{5}{4}$. The extra cup is a fixed $1$, so the ratio $\\frac{s + 1}{s}$ falls toward $1$ as $s$ grows. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 74,
+    solution_overview: `One recipe, five checks. Flour $s + 1$ over sugar $s$ equals $\\frac{5}{4}$, so $s = 4$ and flour is $5$ cups.`,
+  },
+  {
+    id: `math-4-75`,
+    case_id: `MATH 4.75`,
+    title: `A 10 m ladder, foot pulled from 6 m to 8 m`,
+    subsection: `4.3`,
+    context: `A $10$ m ladder leans against a wall, foot $6$ m from the wall. The foot is then pulled out to $8$ m from the wall. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `At first the top is $8$ m up the wall.`,
+      `After the move the top is $6$ m up the wall.`,
+      `The top drops by $4$ m.`,
+      `The first position is a $6$-$8$-$10$ triangle.`,
+      `The area of the first triangle is $48$ m$^{2}$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Pythagoras with hypotenuse $10$ and base $6$:
+
+$$h^{2} + 6^{2} = 10^{2}$$
+
+$$h^{2} = 100 - 36 = 64$$
+
+$$h = \\sqrt{64} = 8$$
+
+(the positive root). The top is $8$ m up. The statement is True.`,
+      `**B.** → True
+
+With the foot at $8$ m:
+
+$$h_{1}^{2} + 8^{2} = 10^{2}$$
+
+$$h_{1}^{2} = 100 - 64 = 36$$
+
+$$h_{1} = \\sqrt{36} = 6$$
+
+The top is $6$ m up. The statement is True.`,
+      `**C.** → False
+
+The drop is $8 - 6 = 2$ m, not $4$. Four would be the difference of the two bases, $8 - 4$, or a mix-up with $10 - 6$. Heights come from square roots, not from subtracting the bases from the hypotenuse. The statement is False.`,
+      `**D.** → True
+
+$6^{2} + 8^{2} = 36 + 64 = 100 = 10^{2}$. It is the $3$-$4$-$5$ triple scaled by $2$. The statement is True.`,
+      `**E.** → False
+
+Area is half the product of the legs:
+
+$$\\frac{1}{2} \\cdot 6 \\cdot 8 = 24$$
+
+Forty-eight is the product without the half. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 75,
+    solution_overview: `One ladder, five checks. Heights are $\\sqrt{10^{2} - 6^{2}} = 8$ and $\\sqrt{10^{2} - 8^{2}} = 6$. The top drops by $2$ m, not $4$ m.`,
+  },
+  {
+    id: `math-4-76`,
+    case_id: `MATH 4.76`,
+    title: `A part that must be 50 mm, off by exactly 2 mm`,
+    subsection: `4.3`,
+    context: `A machine part is specified at $50$ mm. The inspector flags pieces whose length $x$ satisfies $\\lvert x - 50 \\rvert = 2$, the exact $2$ mm boundary. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The two boundary lengths are $48$ mm and $52$ mm.`,
+      `A piece of $50$ mm satisfies $\\lvert x - 50 \\rvert = 2$.`,
+      `A piece of $54$ mm is not on that $2$ mm boundary.`,
+      `The equation $\\lvert x - 50 \\rvert = 2$ has only one solution.`,
+      `The two boundary lengths are centred at $50$ mm.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$$\\lvert x - 50 \\rvert = 2$$
+
+means $x - 50 = 2$ or $x - 50 = -2$, so $x = 52$ or $x = 48$. Those are the two exact-boundary lengths. The statement is True.`,
+      `**B.** → False
+
+At $50$ mm the error is $0$, and $\\lvert 0 \\rvert = 0$, not $2$. Fifty millimetres is the target, not the boundary. The statement is False.`,
+      `**C.** → True
+
+$\\lvert 54 - 50 \\rvert = 4$, which is $4$ mm off, not $2$. Fifty-four millimetres is outside that boundary equation. The statement is True.`,
+      `**D.** → False
+
+Absolute value equal to a positive number always gives two solutions, one on each side of the centre. Here $48$ and $52$. The statement is False.`,
+      `**E.** → True
+
+The midpoint of $48$ and $52$ is $50$. That is the specified length. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 76,
+    solution_overview: `One tolerance, five checks. $\\lvert x - 50 \\rvert = 2$ is the $2$ mm boundary, so the lengths are $48$ mm and $52$ mm. The target $50$ mm itself is not on that boundary.`,
+  },
+  {
+    id: `math-4-77`,
+    case_id: `MATH 4.77`,
+    title: `A reciprocal, a square root, and a distance of 5`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Twice a number, divided by one less than the number, equals $1$. Then the number is $3$.`,
+      `The square root of one less than a number equals one less than the number. The only real solution is $2$.`,
+      `A number is $5$ units from $3$ on the line. The number is $-2$ or $8$.`,
+      `A number's reciprocal, plus $\\frac{1}{6}$, equals $\\frac{1}{2}$. Then the number is $3$.`,
+      `The equation $\\sqrt{2x - 3} = -1$ has a real solution.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$\\frac{2}{x - 1} = 1$$
+
+with $x \\neq 1$. Then $2 = x - 1$, so $x = 3$. Check: $\\frac{2}{2} = 1$. The statement is True.`,
+      `**B.** → False
+
+$$\\sqrt{x - 1} = x - 1$$
+
+Let $u = x - 1$. The domain needs $u \\geq 0$, and $\\sqrt{u} = u$ gives $u = 0$ or $u = 1$. So $x = 1$ or $x = 2$. Check: $\\sqrt{0} = 0$ and $\\sqrt{1} = 1$. Two real solutions, not only $2$. The statement is False.`,
+      `**C.** → True
+
+$\\lvert x - 3 \\rvert = 5$ gives $x = 8$ or $x = -2$. Distance $5$ from $3$. The statement is True.`,
+      `**D.** → True
+
+$$\\frac{1}{x} + \\frac{1}{6} = \\frac{1}{2}$$
+
+$$\\frac{1}{x} = \\frac{1}{2} - \\frac{1}{6} = \\frac{3 - 1}{6} = \\frac{1}{3}$$
+
+so $x = 3$, and $x \\neq 0$. Check: $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2}$. The statement is True.`,
+      `**E.** → False
+
+A principal square root is never negative. No real $x$ makes $\\sqrt{2x - 3} = -1$. (Squaring would give $2x - 3 = 1$, so $x = 2$, and $\\sqrt{1} = 1 \\neq -1$.) The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 77,
+    solution_overview: `Five independent stories: a rational equation $\\frac{2}{x - 1} = 1$, a radical $\\sqrt{x - 1} = x - 1$ with two surviving roots, a distance $5$ from $3$, a reciprocal plus $\\frac{1}{6}$, and a square root equal to $-1$ which is impossible.`,
+  },
+  {
+    id: `math-4-78`,
+    case_id: `MATH 4.78`,
+    title: `Half a 240 km trip at 40 km/h, average 60`,
+    subsection: `4.3`,
+    context: `A $240$ km journey is driven in two equal $120$ km halves. The first half is at $40$ km/h. The driver wants an average of $60$ km/h for the whole $240$ km. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The second half must be driven at $120$ km/h.`,
+      `The first $120$ km take $3$ hours.`,
+      `The average speed of the whole trip is then $80$ km/h.`,
+      `The whole trip takes $4$ hours.`,
+      `The second $120$ km then take $3$ hours.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Average $60$ km/h on $240$ km means total time $4$ hours. The first half already used
+
+$$\\frac{120}{40} = 3$$
+
+hours, so $1$ hour remains for the second $120$ km.
+
+$$\\frac{120}{1} = 120$$
+
+The second half must be at $120$ km/h. Equivalently, equal distances give the harmonic mean
+
+$$\\frac{2}{\\frac{1}{40} + \\frac{1}{v}} = 60 \\quad \\Rightarrow \\quad \\frac{1}{v} = \\frac{1}{30} - \\frac{1}{40} = \\frac{1}{120}$$
+
+so $v = 120$. The statement is True.`,
+      `**B.** → True
+
+$\\frac{120}{40} = 3$ hours. The statement is True.`,
+      `**C.** → False
+
+The arithmetic mean of $40$ and $120$ is $80$, but the car spends $3$ hours slow and only $1$ hour fast, so the trip average is $60$ km/h, not $80$. The statement is False.`,
+      `**D.** → True
+
+That is the $60$ km/h average on $240$ km:
+
+$$\\frac{240}{60} = 4$$
+
+hours. Also $3 + 1 = 4$. The statement is True.`,
+      `**E.** → False
+
+The second $120$ km have only $1$ hour left, so they take $1$ hour at $120$ km/h, not $3$. Three hours is the first-half time. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 78,
+    solution_overview: `One journey in two equal distances, five checks. First half at $40$ km/h uses $3$ of the $4$ hours allowed by a $60$ km/h average, so the second half must be at $120$ km/h. The arithmetic mean $80$ is the trap.`,
   },
 ];
 
