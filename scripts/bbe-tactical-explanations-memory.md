@@ -135,9 +135,18 @@ Do:
 
 - Calm tutor English. Short and medium sentences.
 - English outside math; math inside `$...$` / `$$...$$`.
+- Wrap every `\frac{...}{...}` in live **statements** (and matching explanation headers) in `$...$`. Bare `\frac` on a T/F card is not KaTeX; the student sees raw LaTeX.
 - Escape currency as `\$12.00` outside math.
 - Use one backslash in KaTeX commands inside the string content: `\frac`, `\qquad`, `\approx`.
 - Keep verdict language plain: “so the statement is true/false.”
+
+**No hypothetical solver.** Do not write “A solver who…”, “A rushed solver…”, “how a solver could…”. State the detour as the calculation itself, then return to the recovered figure:
+
+```markdown
+Rounding the rate to $0.09$ first gives $1/0.09 \approx 11.11$, and nearest-hour rounding would send $11.11$ down to $11$. The recovered rate is $0.085$, so $1/0.085 \approx 11.765$, which rounds up to $12$.
+```
+
+Keep every numerical contrast. Length must stay at least the previous text; vary length across letters by adding the actual fork (what the mix lands on, why the recovered isolation is the one the claim names), not by repeating a shared slogan.
 
 **Never put English words inside math.** The practice renderer sends a `$…$` / `$$…$$` span to KaTeX only when it holds pure math; a span with two consecutive English words is printed as raw LaTeX instead. So `$$\text{discount factor} = e^{-rt}$$` reaches the student as literal `\text{discount factor} = e^{-rt}`.
 
@@ -169,6 +178,7 @@ Avoid:
 - Fake enthusiasm.
 - Prose rendered as math, or math that swallows English.
 - Over-escaped LaTeX that reaches KaTeX as `\\frac` / line-break scars.
+- “A solver who…”, “A rushed solver…”, or any other hypothetical-person frame for a wrong mix.
 
 ---
 
@@ -226,6 +236,8 @@ Avoid:
 | Show the extra arithmetic the claim needs | Reprint “Part 2: The model” after already translating the rows |
 | Compare explicitly to the claim | End with a bare True/False and no check |
 | Escape `\$` outside math; `\frac` inside math | Leave `\\frac` scars or unpaired `$` |
+| Wrap `\frac` in live statements with `$...$` | Leave bare `\frac` on T/F cards |
+| Name the wrong mix as a calculation | Write “A solver who…” / “A rushed solver…” |
 | Make underdetermined assumptions explicit | Fake uniqueness the stem does not give |
 
 ---

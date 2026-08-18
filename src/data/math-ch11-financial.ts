@@ -57,7 +57,7 @@ The recovered effective rate is about $7.44\\%$, so the statement is True.`,
 
 Once the growth factor $1.074424$ is in hand, the year-end balance is the principal times that factor, which is the overview's $FV \\approx 6{,}446.54$. This letter is reading that product, not rebuilding $(1.006)^{12}$.
 
-**1.** A solver who multiplied $\\$6,000$ by $1.072$ instead, using the nominal rate as if it compounded once, would get $\\$6,432$ and miss the extra $\\$14.54$ that the twelve intra-year credits produce.
+**1.** Multiplying $\\$6,000$ by $1.072$ instead, using the nominal rate as if it compounded once, would get $\\$6,432$ and miss the extra $\\$14.54$ that the twelve intra-year credits produce. Once $1.072$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **2.** The extra $\\$14.54$ is exactly the gap between monthly and annual compounding on this principal. Letter D asks which schedule is stronger; this letter asks for the monthly schedule's dollar balance.
 
@@ -186,7 +186,7 @@ $$9,860.00 - 9,650.61 = 209.39$$
 
 so the wording overstates the account by $\\$209.39$.
 
-**1.** A rushed solver who multiplied $\\$6,000$ by $1.08^6$ would be using annual compounding at the same 8% quote. That is a different clock from the stem. Annual compounding at a fixed nominal rate is weaker than quarterly compounding, so it cannot be the source of a figure *above* $\\$9,650.61$. The $\\$9,860$ guess is not that weaker schedule either.
+**1.** Multiplying $\\$6,000$ by $1.08^6$ would be using annual compounding at the same 8% quote. The path that matches the stem therefore holds $1.08^6$ fixed and only then reads the claim. That is a different clock from the stem. Annual compounding at a fixed nominal rate is weaker than quarterly compounding, so it cannot be the source of a figure *above* $\\$9,650.61$. The $\\$9,860$ guess is not that weaker schedule either.
 
 **2.** Another mix-up is $6,000 \\times 1.08 \\times 6$, a simple-interest product that ignores compounding entirely and also ignores that interest is paid quarterly. That linear shortcut overshoots even more. The recovered $\\$9,650.61$ already includes the intra-year credits. It does not need to be rebuilt from $(1.02)^{24}$.
 
@@ -223,7 +223,7 @@ The three-year account is larger than half of the six-year account by about $\\$
 
 In the story of the stem, the owner is comparing two holding periods on the same deposit, not two different rates. The recovered objects are $S(3)$ and $S(6)$. The claim's extra move is to take half of $S(6)$ and set it next to $S(3)$. That extra move is the only new arithmetic.
 
-A rushed solver who computed $S(6)/2$ first and never computed $S(3)$ would have no three-year figure to compare. Someone who computed $S(3)$ and then halved *that* would be answering a different question: half the three-year balance, which is not this claim.
+Computing $S(6)/2$ first and never computed $S(3)$ would have no three-year figure to compare. After isolating the unknown, the check is against $S(6)/2$. The figure $S(3)$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $S(6)/2$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who computed $S(3)$ and then halved *that* would be answering a different question: half the three-year balance, which is not this claim.
 
 What would have to change for the opposite verdict is the interest model itself. Under simple interest the dollar gain is proportional to time, so a three-year balance would sit at $6,000 + 3,650.61/2 = 7,825.31$, still not $4,825.31$, because even simple interest keeps the original principal intact. The only way $S(3)$ equals $S(6)/2$ is if the original principal is zero, which it is not.
 
@@ -240,7 +240,7 @@ $$65\\% - 60.84\\% = 4.16$$
 
 so the deposit is $4.16$ percentage points short of $65\\%$.
 
-**1.** A solver who compared the *balance* $9,650.61$ with $65$ as if those were like units would not even have a percentage to test. The claim is a growth rate. Another trap is reading the nominal $8\\% \\times 6 = 48\\%$ simple-interest total, which undershoots both $60.84\\%$ and $65\\%$. Simple interest is the wrong clock.
+**1.** Comparing the *balance* $9,650.61$ with $65$ as if those were like units would not even have a percentage to test. The recovered comparison therefore keeps $9,650.61$ and does not substitute $65$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim is a growth rate. Another trap is reading the nominal $8\\% \\times 6 = 48\\%$ simple-interest total, which undershoots both $60.84\\%$ and $65\\%$. Simple interest is the wrong clock.
 
 **2.** A third mix-up is treating the growth factor $1.608435$ as $160.84\\%$ growth. That would double-count the original principal as if it were part of the gain. Growth is the factor minus one, $60.84\\%$, which is what Part 3.4 reported.
 
@@ -248,7 +248,7 @@ so the deposit is $4.16$ percentage points short of $65\\%$.
 
 In the story of the stem, "total percentage growth" is the owner's gain as a share of the $\\$6,000$ that went in, after six years of quarterly credits. The recovered object is the $60.84\\%$ from Part 3.4. The claim's extra arithmetic is only the comparison of that $60.84\\%$ with a $65\\%$ cutoff.
 
-A rushed solver who used $8\\% \\times 6 = 48\\%$ would miss the cutoff from below by even more, and would also be using simple interest. Someone who used the growth *factor* $1.6084$ as $160.84\\%$ would clear $65\\%$ easily and would be counting the principal as growth.
+Using $8\\% \\times 6 = 48\\%$ would miss the cutoff from below by even more, and would also be using simple interest. Once $8\\% \\times 6 = 48\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Someone who used the growth *factor* $1.6084$ as $160.84\\%$ would clear $65\\%$ easily and would be counting the principal as growth.
 
 What would have to change for the opposite verdict is either a higher quote or a longer wait. At the recovered 8% quarterly, six years produce $60.84\\%$. Seven years would produce more than $65\\%$, but the stem is six years.
 
@@ -335,7 +335,7 @@ $$6.55\\% - 6.40\\% = 0.15$$
 
 so quarterly crediting lifts the quote by about $0.15$ of a point.
 
-**1.** A solver who reported the nominal $6.4\\%$ as if it were already effective would understate Offer (i) by that $0.15$ point. The stem pays quarterly, so the printed quote is not the yearly yield.
+**1.** Reporting the nominal $6.4\\%$ as if it were already effective would understate Offer (i) by that $0.15$ point. The stem's recovered values line up with $6.4\\%$, whereas $0.15$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $6.4\\%$ stays in the write-up. The stem pays quarterly, so the printed quote is not the yearly yield.
 
 **2.** Another trap is compounding $6.4\\%$ four times without first splitting it, as if each quarter credited the full annual rate. That would explode the yield. The overview's $i = 0.016$ is the split that Part 3.1 already made.
 
@@ -343,7 +343,7 @@ so quarterly crediting lifts the quote by about $0.15$ of a point.
 
 In the story of the stem, Offer (i) is the quarterly 6.4% term deposit sitting next to a semi-annual 6.5% rival. The recovered object that answers this letter is $R_i$, because an effective annual rate is how a quarterly schedule is made comparable to any other one-year offer.
 
-A rushed solver who converted with $n = 2$ instead of $n = 4$ would be using Offer (ii)'s clock on Offer (i)'s quote. That mix-up would not produce $6.55\\%$. The overview's $n_i = 4$ is the right clock.
+Converting with $n = 2$ instead of $n = 4$ would be using Offer (ii)'s clock on Offer (i)'s quote. The recovered comparison therefore keeps $n = 2$ and does not substitute $n = 4$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That mix-up would not produce $6.55\\%$. The overview's $n_i = 4$ is the right clock.
 
 What would have to change for the opposite verdict is a different recovered $R_i$, for example if the quote were $6.0\\%$ quarterly. Under the stem's $6.4\\%$ paid quarterly, the yearly yield is about $6.55\\%$.
 
@@ -370,7 +370,7 @@ If compounding had been annual, the effective rate would have stayed $6.50\\%$. 
 
 In the story of the stem, Offer (ii) is the twice-a-year 6.5% deposit. The recovered object is $R_{ii}$, the one-year yield that makes this offer comparable to Offer (i). Citing $6.61\\%$ is citing Part 3.4, not a second independent formula.
 
-A rushed solver who squared $1.065$ instead of $1.0325$ would be compounding the annual quote twice without splitting it, and would overstate the yield. The overview already split $6.5\\%$ in half before squaring.
+Squaring $1.065$ instead of $1.0325$ would be compounding the annual quote twice without splitting it, and would overstate the yield. So the letter reads the claim against $1.065$; $1.0325$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.065$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The overview already split $6.5\\%$ in half before squaring.
 
 What would have to change for the opposite verdict is a recovered $R_{ii}$ that is not about $6.61\\%$. Annual compounding at $6.5\\%$ would stay $6.50\\%$. Quarterly compounding at $6.5\\%$ would sit a little above $6.61\\%$. The stem is semi-annual, and the recovered figure is $6.61\\%$.
 
@@ -397,7 +397,7 @@ so the saver who takes Offer (ii) finishes about $\\$5.23$ ahead.
 
 In the story of the stem, the saver has $\\$10,000$ for one year and must pick a term deposit. The recovered objects are $R_i$ and $R_{ii}$. The extra arithmetic that is this letter's own is the dollar gap $I_{ii} - I_i = 5.23$, which translates the rate ranking into money.
 
-A rushed solver who picked Offer (i) because four credits sound more generous than two would have the frequency fallacy that letter D names. A solver who picked Offer (ii) only because $6.5 > 6.4$ would have the right offer and the wrong reason. The right reason is $6.61\\% > 6.55\\%$.
+Picking Offer (i) because four credits sound more generous than two would have the frequency fallacy that letter D names. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Picking Offer (ii) only because $6.5 > 6.4$ would have the right offer and the wrong reason. The recovered isolation is checked against the claim using $6.5 > 6.4$, which is the figure the sessions actually produce. The right reason is $6.61\\% > 6.55\\%$.
 
 What would have to change for the opposite verdict is a quarterly quote high enough that $R_i$ clears $6.61\\%$. Holding both printed quotes fixed, Offer (ii) remains the better choice by about $\\$5.23$ on $\\$10,000$.
 
@@ -414,7 +414,7 @@ so Offer (i)'s four quarterly credits do not produce the higher effective rate.
 
 **1.** The wording treats "more often" as a trump card. It would be a trump card if both offers quoted 6.4%, or both quoted 6.5%. At a shared nominal rate, quarterly compounding beats semi-annual compounding. The stem does not share the nominal rate. Offer (ii) starts $0.10$ of a point higher, and that gap survives the conversion.
 
-**2.** A rushed solver who converted only Offer (i) and then assumed the extra dates must win would never look at $R_{ii}$. The overview already looked. The $0.06$ point edge for Offer (ii) is small, but it is the wrong direction for this claim.
+**2.** Converting only Offer (i) and then assuming the extra dates must win would never look at $R_{ii}$. The recovered isolation is checked against the claim using $R_{ii}$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The overview already looked. The $0.06$ point edge for Offer (ii) is small, but it is the wrong direction for this claim.
 
 **3.** The opposite verdict would need either equal nominal rates, or a quarterly quote high enough that $(1 + r_i/4)^{4} - 1$ clears $6.61\\%$. Holding the printed 6.4% and 6.5% fixed, more frequent compounding on the cheaper quote is not enough.
 
@@ -422,7 +422,7 @@ Letter C asked which offer is better. This letter asks whether frequency alone f
 
 In the story of the stem, Offer (i) really does compound more often: four dates against two. The recovered objects are still $R_i$ and $R_{ii}$. Frequency is a property of the clock. Effective rate is a property of the whole year. They are not the same property when the printed quotes differ.
 
-A rushed solver who learned "more frequent is better" from a textbook example where $r$ was held fixed would apply that slogan here. That slogan is true at a shared nominal rate. It is not true when the more frequent offer is the cheaper quote by $0.10$ of a point.
+Learning "more frequent is better" from a textbook example where $r$ was held fixed would apply that slogan here. Keeping $r$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. That slogan is true at a shared nominal rate. It is not true when the more frequent offer is the cheaper quote by $0.10$ of a point.
 
 What would have to change for the opposite verdict is equal nominal rates, or a smaller gap between $6.4\\%$ and $6.5\\%$ combined with an even larger frequency gap. Under the stem, $6.55\\% < 6.61\\%$.
 
@@ -447,7 +447,7 @@ $$660.56 - 660 = 0.56$$
 
 so Offer (ii) clears $\\$660$ by fifty-six cents.
 
-**1.** A solver who used the nominal 6.5% as if it compounded once would get $10,000 \\times 0.065 = 650$, which sits $\\$10$ *below* the cutoff. That is the annual-compounding companion, not Offer (ii). The extra $\\$10.56$ is the intra-year compounding on the 6.5% quote.
+**1.** Using the nominal 6.5% as if it compounded once would get $10,000 \\times 0.065 = 650$, which sits $\\$10$ *below* the cutoff. Once $10,000 \\times 0.065 = 650$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is the annual-compounding companion, not Offer (ii). The extra $\\$10.56$ is the intra-year compounding on the 6.5% quote.
 
 **2.** Another trap is comparing Offer (i)'s $\\$655.33$ with $\\$660$ and then attaching that miss to Offer (ii). Offer (i) does fall short of $\\$660$. Offer (ii) does not. The claim is about Offer (ii) only.
 
@@ -457,7 +457,7 @@ For the opposite verdict the recovered interest would have to sit at or below $\
 
 In the story of the stem, the saver deposits $\\$10,000$ for one year in Offer (ii). Interest is the year-end balance minus $\\$10,000$, which is the same as principal times $R_{ii}$. The recovered object is $I_{ii} = 660.56$. The extra arithmetic is the $0.56$ gap versus $\\$660$.
 
-A rushed solver who used $10,000 \\times 0.0661 = 661$ would still clear the cutoff, just with a coarser rounding. A solver who used $10,000 \\times 0.065 = 650$ would miss, because that ignores the two intra-year credits.
+Using $10,000 \\times 0.0661 = 661$ would still clear the cutoff, just with a coarser rounding. The recovered isolation is checked against the claim using $10,000 \\times 0.0661 = 661$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. Using $10,000 \\times 0.065 = 650$ would miss, because that ignores the two intra-year credits. Keeping $10,000 \\times 0.065 = 650$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 What would have to change for the opposite verdict is a smaller principal, for example $\\$9,990$, or a weaker $R_{ii}$. At $\\$10,000$ and $6.61\\%$, the interest is $\\$660.56$, which is more than $\\$660$.
 
@@ -583,7 +583,7 @@ so the wording understates the card's true annual cost by about $1.39$ points.
 
 **1.** $21.75\\%$ looks like $21.00\\%$ plus a small garnish, as if someone added three-quarters of a point by hand instead of compounding. Monthly interest-on-interest at $1.75\\%$ a month is more than a $0.75$ point garnish. The overview's $23.14\\%$ is that compounding.
 
-**2.** A solver who reported the recovered nominal $21.00\\%$ as if it were already effective would also miss, though in a different direction. The claim's $21.75\\%$ is neither the nominal $21.00\\%$ nor the effective $23.14\\%$.
+**2.** Reporting the recovered nominal $21.00\\%$ as if it were already effective would also miss, though in a different direction. The path that matches the stem therefore holds $21.00\\%$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim's $21.75\\%$ is neither the nominal $21.00\\%$ nor the effective $23.14\\%$.
 
 **3.** Rebuilding $(1.0175)^{12}$ is not this letter's job. Part 3.2 already did that conversion. This letter only asks whether the recovered $23.14\\%$ is approximately $21.75\\%$. It is not.
 
@@ -591,7 +591,7 @@ The opposite verdict would need the twelve-month yield to land near $21.75\\%$. 
 
 In the story of the stem, the cardholder wants the true annual cost of a 1.75% monthly charge, not the twelvefold multiple from letter A. The recovered object is $R \\approx 23.14\\%$. The claim's $21.75\\%$ is a nearby number that sits between the nominal $21.00\\%$ and the true effective rate.
 
-A rushed solver who added $1.75\\%$ twelve times without compounding would stop at $21.00\\%$. Someone who averaged $21\\%$ with $22.5\\%$ might invent $21.75\\%$. Neither of those is $(1.0175)^{12} - 1$.
+Adding $1.75\\%$ twelve times without compounding would stop at $21.00\\%$. So the letter reads the claim against $1.75\\%$; $21.00\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.75\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who averaged $21\\%$ with $22.5\\%$ might invent $21.75\\%$. Neither of those is $(1.0175)^{12} - 1$.
 
 What would have to change for the opposite verdict is a monthly charge near $1.66\\%$, whose twelve-month yield is about $21.75\\%$. The stem charges $1.75\\%$ a month. The recovered yearly cost is $23.14\\%$.
 
@@ -610,7 +610,7 @@ so the wording understates the year-end balance by about $\\$43$.
 
 **1.** $\\$2,420$ is exactly $2,000 \\times 1.21$, the nominal $21\\%$ applied once. That is annual compounding at the nominal quote, not twelve monthly charges of $1.75\\%$. The extra $\\$42.86$ is the intra-year compounding the card actually charges.
 
-**2.** A solver who used the false $22\\%$ from letter A would get $2,000 \\times 1.22 = 2,440$, which is still not $\\$2,462.86$ and still not the claim. The claim is the once-a-year nominal product.
+**2.** Using the false $22\\%$ from letter A would get $2,000 \\times 1.22 = 2,440$, which is still not $\\$2,462.86$ and still not the claim. The stem's recovered values line up with $22\\%$, whereas $2,000 \\times 1.22 = 2,440$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $22\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim is the once-a-year nominal product.
 
 **3.** The recovered cents, $86$, come from $2,000 \\times 1.231430$. Rounding to the nearest ten dollars would still be $2,460$, not $2,420$. The claimed figure is not a rounding of the recovered balance.
 
@@ -618,7 +618,7 @@ For the opposite verdict the unpaid balance would have to grow at the nominal ra
 
 In the story of the stem, an unpaid $\\$2,000$ rides on the card for a year at $1.75\\%$ a month. The recovered object is $FV \\approx 2,462.86$. The claim's $\\$2,420$ is the nominal $21\\%$ applied once.
 
-A rushed solver who used $2,000 \\times 1.175$ would get $\\$2,350$, mixing a $17.5\\%$ annual guess with the monthly $1.75\\%$. Someone who used $2,000 \\times (1.0175)^{12}$ correctly would land on the recovered $\\$2,462.86$ and then see that $\\$2,420$ is the wrong companion.
+Using $2,000 \\times 1.175$ would get $\\$2,350$, mixing a $17.5\\%$ annual guess with the monthly $1.75\\%$. So the letter reads the claim against $2,000 \\times 1.175$; $1.75\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2,000 \\times 1.175$ stays in the write-up. Someone who used $2,000 \\times (1.0175)^{12}$ correctly would land on the recovered $\\$2,462.86$ and then see that $\\$2,420$ is the wrong companion.
 
 What would have to change for the opposite verdict is annual compounding at $21\\%$, which is not how the card works. The stem charges every month. Monthly charges produce $\\$2,462.86$.
 
@@ -645,7 +645,7 @@ Letter B recovered the $23.14\\%$. Letter A recovered the $21.00\\%$. This lette
 
 In the story of the stem, the cardholder is asking how much worse the true yearly cost is than the printed twelvefold multiple. The recovered objects are $R \\approx 23.14\\%$ and $r_{\\mathrm{nom}} = 21.00\\%$. The extra arithmetic is the $0.14$ point clearance over a $2.00$-point cutoff.
 
-A rushed solver who used the false $22\\%$ nominal from letter A would compute $23.14 - 22 = 1.14$ and miss the cutoff. That is why letter A had to be settled first. The nominal quote is $21\\%$, not $22\\%$.
+Using the false $22\\%$ nominal from letter A would compute $23.14 - 22 = 1.14$ and miss the cutoff. The stem's recovered values line up with $22\\%$, whereas $23.14 - 22 = 1.14$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $22\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That is why letter A had to be settled first. The nominal quote is $21\\%$, not $22\\%$.
 
 What would have to change for the opposite verdict is a smaller monthly charge, so that interest-on-interest added less than two points. At $1.75\\%$ a month, twelve credits add $2.14$ points.
 
@@ -662,7 +662,7 @@ $$20\\% - 19.56\\% = 0.44$$
 
 so the hypothetical effective rate sits $0.44$ of a point short of $20\\%$.
 
-**1.** A solver who annualized $1.50\\%$ without compounding would get a nominal $18.00\\%$, which also misses $20\\%$, but that is the wrong object. The claim is about the *effective* rate. The overview's $19.56\\%$ is that effective rate, and it still misses.
+**1.** Annualizing $1.50\\%$ without compounding would get a nominal $18.00\\%$, which also misses $20\\%$, but that is the wrong object. The recovered comparison therefore keeps $1.50\\%$ and does not substitute $20\\%$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim is about the *effective* rate. The overview's $19.56\\%$ is that effective rate, and it still misses.
 
 **2.** Another trap is keeping the original $23.14\\%$ and asking whether *that* exceeds $20\\%$. Of course it does, but the claim replaced the monthly charge. The $1.75\\%$ card is not this letter.
 
@@ -672,7 +672,7 @@ The opposite verdict would hold if the cutoff were $19\\%$, or if the monthly ch
 
 In the story of the stem, the hypothetical replaces the monthly charge with $1.50\\%$ and asks whether the true yearly cost would still top $20\\%$. That is a new conversion. Part 3.5 already built it and left $R \\approx 19.56\\%$. The extra arithmetic is the $0.44$ point miss versus $20\\%$.
 
-A rushed solver who annualized $1.50 \\times 12 = 18\\%$ would miss $20\\%$ from farther below and would also be answering a nominal-rate question. The claim is about the effective rate. The recovered effective rate at $1.50\\%$ a month is $19.56\\%$.
+Annualizing $1.50 \\times 12 = 18\\%$ would miss $20\\%$ from farther below and would also be answering a nominal-rate question. Working from the isolated values, $1.50 \\times 12 = 18\\%$ is the figure that is checked, not the detour that produced $20\\%$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is about the effective rate. The recovered effective rate at $1.50\\%$ a month is $19.56\\%$.
 
 Another mix-up is keeping $23.14\\%$ from the original card and asking whether that exceeds $20\\%$. It does, but the monthly charge was swapped. This letter is the $1.50\\%$ card.
 
@@ -774,7 +774,7 @@ $$5.72\\% - 5.60\\% = 0.12$$
 
 so quarterly crediting lifts the quote by about $0.12$ of a point.
 
-**1.** A solver who reported the nominal $5.6\\%$ as if it were already effective would understate the yield by that $0.12$ point. The stem pays quarterly, so the printed quote is not the yearly yield.
+**1.** Reporting the nominal $5.6\\%$ as if it were already effective would understate the yield by that $0.12$ point. After isolating the unknown, the check is against $5.6\\%$. The figure $0.12$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $5.6\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem pays quarterly, so the printed quote is not the yearly yield.
 
 **2.** Rounding $0.057187$ to $5.72\\%$ is the approximation the claim uses. It is not $5.60\\%$ and not $5.70\\%$. Letter E asks whether that $0.12$ point gap exceeds $0.20$. This letter only asks for the effective rate itself.
 
@@ -782,7 +782,7 @@ so quarterly crediting lifts the quote by about $0.12$ of a point.
 
 In the story of the stem, the clinic wants the true one-year yield on a 5.6% quarterly account, not the printed quote. The recovered object is $R \\approx 5.72\\%$. Citing that figure is citing Part 3.2.
 
-A rushed solver who left the yield at $5.6\\%$ would be describing annual compounding. Someone who used $e^{0.056} - 1 \\approx 5.76\\%$ would be describing continuous compounding, which is not the stem's clock.
+Leaving the yield at $5.6\\%$ would be describing annual compounding. The opposite verdict would need a different isolation than $5.6\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Someone who used $e^{0.056} - 1 \\approx 5.76\\%$ would be describing continuous compounding, which is not the stem's clock.
 
 What would have to change for the opposite verdict is a recovered $R$ that is not about $5.72\\%$. Monthly compounding at the same 5.6% sits near $5.75\\%$, which is letter D. This letter is the quarterly conversion, and it is $5.72\\%$.
 
@@ -795,7 +795,7 @@ The recovered effective rate is about $5.72\\%$, so the statement is True.`,
 
 Once the four-quarter growth factor is in hand, the year-end balance is the $\\$15,000$ deposit times that factor. Part 3.3 already applied $1.057187$ and left $FV \\approx 15,857.81$. This letter is reading that product, not rebuilding $(1.014)^{4}$.
 
-**1.** A solver who multiplied $\\$15,000$ by $1.056$ instead, using the nominal rate as if it compounded once, would get $\\$15,840$ and miss the extra $\\$17.81$ that the four intra-year credits produce.
+**1.** Multiplying $\\$15,000$ by $1.056$ instead, using the nominal rate as if it compounded once, would get $\\$15,840$ and miss the extra $\\$17.81$ that the four intra-year credits produce. The recovered isolation is checked against the claim using $1.056$, which is the figure the sessions actually produce.
 
 **2.** That extra $\\$17.81$ is exactly the dollar gap between quarterly and annual compounding on this principal. Letter D asks which *rate* is stronger under a monthly swap. This letter asks for the quarterly schedule's dollar balance.
 
@@ -803,7 +803,7 @@ Once the four-quarter growth factor is in hand, the year-end balance is the $\\$
 
 In the story of the stem, the clinic deposits $\\$15,000$ for one year. The recovered object is $FV \\approx 15,857.81$. That is principal times the quarterly growth factor already in Part 3.2.
 
-A rushed solver who used $15,000 \\times 1.056 = 15,840$ would miss the extra $\\$17.81$. Someone who used $15,000 \\times 1.0572$ with a rounded $5.72\\%$ would land within a dollar of the recovered cents.
+Using $15,000 \\times 1.056 = 15,840$ would miss the extra $\\$17.81$. That is why $15,000 \\times 1.056 = 15,840$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who used $15,000 \\times 1.0572$ with a rounded $5.72\\%$ would land within a dollar of the recovered cents.
 
 What would have to change for the opposite verdict is a different deposit or a different quote. Under $\\$15,000$ at 5.6% quarterly for one year, the balance is $\\$15,857.81$.
 
@@ -834,7 +834,7 @@ The dollar gap on $\\$15,000$ is only a few dollars, but the direction is unambi
 
 In the story of the stem, the clinic is asked what would happen if the same 5.6% were credited twelve times a year instead of four. That is a swapped frequency, so it is new arithmetic relative to the quarterly conversion, but Part 3.4 already performed it. The recovered monthly effective rate is about $5.746\\%$.
 
-A rushed solver who thought "smaller monthly slices mean a smaller yearly yield" would agree with the claim. The slices are smaller. There are three times as many of them. The net effect at a fixed nominal rate is a slightly higher effective rate.
+Thinking "smaller monthly slices mean a smaller yearly yield" would agree with the claim. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The slices are smaller. There are three times as many of them. The net effect at a fixed nominal rate is a slightly higher effective rate.
 
 What would have to change for the opposite verdict is a lower nominal rate on the monthly account, or holding the *effective* rate fixed while raising frequency. The stem holds the nominal 5.6% fixed.
 
@@ -859,7 +859,7 @@ so the premium is $0.08$ of a point short of the cutoff.
 
 In the story of the stem, the clinic is asking how far the true yearly yield sits above the printed 5.6%. The recovered object is the $0.12$ point gap from Part 3.5. The extra arithmetic is the miss versus a $0.20$-point cutoff.
 
-A rushed solver who used $5.72 - 5.00 = 0.72$ would clear the cutoff and would also be subtracting from the wrong baseline. The nominal rate is $5.60\\%$, not $5.00\\%$.
+Using $5.72 - 5.00 = 0.72$ would clear the cutoff and would also be subtracting from the wrong baseline. The recovered isolation is checked against the claim using $5.72 - 5.00 = 0.72$, which is the figure the sessions actually produce. The nominal rate is $5.60\\%$, not $5.00\\%$.
 
 What would have to change for the opposite verdict is a higher quote or a more frequent clock that lifted $R$ by more than $0.20$ points. Even monthly compounding at 5.6% only lifts by about $0.15$. The quarterly lift is $0.12$.
 
@@ -957,7 +957,7 @@ $$115.85 - 108 = 7.85$$
 
 so the wording undershoots the wait by almost eight months.
 
-**1.** $108$ months is nine years exactly. The Rule of $72$ at $8\\%$ would give $72/8 = 9$ years, and $7.2\\%$ is close enough to $8\\%$ that a solver might grab nine years. The Rule of $72$ is a rough annual approximation. It is not the logarithm of $2$ over $\\ln 1.006$.
+**1.** $108$ months is nine years exactly. The Rule of $72$ at $8\\%$ would give $72/8 = 9$ years, and $7.2\\%$ is close enough to $8\\%$ that it is tempting to grab nine years. The Rule of $72$ is a rough annual approximation. It is not the logarithm of $2$ over $\\ln 1.006$.
 
 **2.** Another trap is $72 / 0.60 = 120$ months, applying the Rule of $72$ to the *monthly* rate as if $0.60$ were a percent per year. That overshoots. The claim's $108$ undershoots. Neither is the recovered $115.85$.
 
@@ -967,7 +967,7 @@ The opposite verdict would need a higher monthly rate, so that doubling arrived 
 
 In the story of the stem, the investor wants the wait until a deposit doubles at 7.2% monthly. The recovered object is $t \\approx 115.85$ months. The claim's $108$ months is a nine-year Rule-of-$72$ companion, not the logarithm.
 
-A rushed solver who used $72 / 7.2 = 10$ years, or $120$ months, would overshoot in the other direction. Someone who used $72 / 8 = 9$ years because $7.2$ is "close to $8$" would land on $108$ months and think the claim was right.
+Using $72 / 7.2 = 10$ years, or $120$ months, would overshoot in the other direction. The stem's recovered values line up with $72 / 7.2 = 10$, whereas $120$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $72 / 7.2 = 10$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Someone who used $72 / 8 = 9$ years because $7.2$ is "close to $8$" would land on $108$ months and think the claim was right.
 
 What would have to change for the opposite verdict is a higher monthly rate, so that doubling arrived near nine years. At $0.60\\%$ a month, the recovered wait is $9.65$ years, not $9.00$.
 
@@ -994,7 +994,7 @@ so the wording is almost a full doubling-time too short.
 
 In the story of the stem, $58$ months is being offered as a doubling time. The recovered doubling time is $115.85$ months. Fifty-eight months is the halfway calendar, where the growth factor is $\\sqrt{2}$, not $2$.
 
-A rushed solver who halved $116$ because "half the money takes half the time" would invent this claim. Half the money from a doubling would be the original principal, which is already there at time zero, not at $58$ months.
+Halving $116$ because "half the money takes half the time" would invent this claim. The recovered isolation is checked against the claim using $116$, which is the figure the sessions actually produce. Half the money from a doubling would be the original principal, which is already there at time zero, not at $58$ months.
 
 What would have to change for the opposite verdict is a target of $1.414$ times the deposit, which is reached near $58$ months. The stem's target is a doubling.
 
@@ -1017,7 +1017,7 @@ so doubling the nominal quote more than doubles the effective yield. The extra i
 
 **1.** The trap is treating the map from nominal to effective as a straight line through the origin. It is convex. Raising $r$ raises both the periodic slice and the interest-on-interest on that slice, so the effective rate accelerates.
 
-**2.** A solver who doubled $7.44\\%$ to $14.88\\%$ and stopped would think the claim was true. The overview's $15.38\\%$ is the actual conversion at $i_m = 0.012$, and it is not $14.88\\%$.
+**2.** Doubling $7.44\\%$ to $14.88\\%$ and stopping would think the claim was true. So the letter reads the claim against $7.44\\%$; $14.88\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $7.44\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The overview's $15.38\\%$ is the actual conversion at $i_m = 0.012$, and it is not $14.88\\%$.
 
 **3.** Letter E says the same logarithm works for any target multiple. That is a statement about $t$, not about scaling $R$ with $r$. This letter is the $R$ against $r$ relationship, and it is not linear.
 
@@ -1025,7 +1025,7 @@ The opposite verdict would need a linear conversion $R = r$, which holds only fo
 
 In the story of the stem, the investor is asking whether doubling the printed quote doubles the true yearly yield. That is a new conversion at $14.4\\%$ monthly. Part 3.4 already built it and left $R \\approx 15.38\\%$. Twice the original $7.44\\%$ is $14.88\\%$. Those are not equal.
 
-A rushed solver who treated $R \\approx r$ would think doubling $r$ doubles $R$, and at $7.2\\%$ the two are close enough that the error is only $0.24$ points. At $14.4\\%$ the error is $0.50$ points on the doubled $R$, and $15.38\\%$ is not $14.88\\%$.
+Treating $R \\approx r$ would think doubling $r$ doubles $R$, and at $7.2\\%$ the two are close enough that the error is only $0.24$ points. That is the fork: $R \\approx r$ belongs to the recovered isolation, $0.24$ belongs to the discarded mix. At $14.4\\%$ the error is $0.50$ points on the doubled $R$, and $15.38\\%$ is not $14.88\\%$.
 
 What would have to change for the opposite verdict is annual compounding, where $R = r$ exactly, so doubling $r$ would double $R$. The stem compounds monthly.
 
@@ -1046,7 +1046,7 @@ Because $\\ln(1.006) > 0$, the factor $(1.006)^{t}$ is strictly increasing in $t
 
 In the story of the stem, the investor who just found a doubling time is asking whether that logarithm is a one-trick method. It is not. The same inversion finds the wait to triple, to grow by half, or to reach any other $M > 1$.
 
-A rushed solver who treats the Rule of $72$ as the method would think only doublings are allowed. The Rule of $72$ is a doubling approximation. The logarithm is general.
+Treating the Rule of $72$ as the method would think only doublings are allowed. Keeping $72$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The Rule of $72$ is a doubling approximation. The logarithm is general.
 
 What would have to change for the opposite verdict is a growth factor that was not strictly increasing, which would take a negative rate. The stem's $i_m = 0.006$ is positive.
 
@@ -1141,7 +1141,7 @@ $$15.56\\% - 15.00\\% = 0.56$$
 
 so two intra-year credits lift the quote by $0.56$ of a point.
 
-**1.** A solver who left the yield at $15\\%$ would be describing annual compounding, $n = 1$, which is not this letter. Semi-annual means $n = 2$, and Part 3.1 already split $15\\%$ as $i = 0.075$.
+**1.** Leaving the yield at $15\\%$ would be describing annual compounding, $n = 1$, which is not this letter. That is the fork: $15\\%$ belongs to the recovered isolation, $n = 1$ belongs to the discarded mix. Semi-annual means $n = 2$, and Part 3.1 already split $15\\%$ as $i = 0.075$.
 
 **2.** Rounding $0.155625$ to $15.56\\%$ is exact to two hundredths. It is not $15.50\\%$ and not $15.75\\%$. Letters B and C take the quarterly and monthly clocks. This letter is only the two-credit clock.
 
@@ -1149,7 +1149,7 @@ so two intra-year credits lift the quote by $0.56$ of a point.
 
 In the story of the stem, the student is publishing three effective rates at a shared 15% nominal. This letter is the twice-a-year clock. The recovered object is $R = 15.56\\%$.
 
-A rushed solver who used $15.00\\%$ would be on the annual clock. Someone who used $(1.15)^{2} - 1 = 32.25\\%$ would have compounded the annual quote twice without splitting it.
+Using $15.00\\%$ would be on the annual clock. The opposite verdict would need a different isolation than $15.00\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Someone who used $(1.15)^{2} - 1 = 32.25\\%$ would have compounded the annual quote twice without splitting it.
 
 What would have to change for the opposite verdict is a different recovered $R$ for $n = 2$. At 15% semi-annual, the yield is $15.5625\\%$, which rounds to $15.56\\%$.
 
@@ -1159,7 +1159,7 @@ The exact product is $(1.075)^{2} = 1.155625$, so $15.5625\\%$ rounds to $15.56\
 
 Fifteen point five six percent is $(1.075)^{2} - 1$, already in Part 3. On a $\\$1,000$ thought experiment that is $\\$155.60$ of interest against $\\$150$ once a year. The extra $\\$5.60$ is the second 7.5% credit riding on the first.
 
-A solver who reported $15\\%$ even would be naming the nominal quote, not the semi-annual conversion. A solver who reported $16.08\\%$ would be answering letter C's monthly clock. This letter is only the $n = 2$ yield.
+Reporting $15\\%$ even would be naming the nominal quote, not the semi-annual conversion. The path that matches the stem therefore holds $15\\%$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Reporting $16.08\\%$ would be answering letter C's monthly clock. That is why $16.08\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. This letter is only the $n = 2$ yield.
 
 The recovered semi-annual effective rate is $15.56\\%$, so the statement is True.`,
       `**B) The effective rate under quarterly compounding is approximately 15.87%.**  (true)
@@ -1180,7 +1180,7 @@ so four credits lift the quote by about $0.87$ of a point, more than the $0.56$ 
 
 In the story of the stem, this is the four-credit clock at the same 15%. The recovered object is $R \\approx 15.87\\%$. Citing it is citing Part 3.2.
 
-A rushed solver who reused $15.56\\%$ would be stuck on the semi-annual clock. Someone who used $4 \\times 3.75\\% = 15\\%$ would be adding periodic rates instead of compounding them.
+Reusing $15.56\\%$ would be stuck on the semi-annual clock. The recovered isolation is checked against the claim using $15.56\\%$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $4 \\times 3.75\\% = 15\\%$ would be adding periodic rates instead of compounding them.
 
 What would have to change for the opposite verdict is a recovered quarterly yield that is not about $15.87\\%$. The overview's $(1.0375)^{4} - 1$ is that yield.
 
@@ -1203,7 +1203,7 @@ $$16.08\\% - 15.00\\% = 1.08$$
 
 so twelve credits lift the quote by about $1.08$ points, the largest of the three lifts.
 
-**1.** A solver who stopped at the quarterly $15.87\\%$ would understate the monthly yield by about $0.21$ of a point. Monthly is more frequent than quarterly, so at a fixed 15% it must finish higher.
+**1.** Stopping at the quarterly $15.87\\%$ would understate the monthly yield by about $0.21$ of a point. The stem's recovered values line up with $15.87\\%$, whereas $0.21$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $15.87\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Monthly is more frequent than quarterly, so at a fixed 15% it must finish higher.
 
 **2.** Another trap is $e^{0.15} - 1 \\approx 16.18\\%$, the continuous ceiling. Continuous compounding is not on the stem. The stem's most frequent clock is monthly, and Part 3.3 left about $16.08\\%$, a tenth of a point below that ceiling.
 
@@ -1211,7 +1211,7 @@ so twelve credits lift the quote by about $1.08$ points, the largest of the thre
 
 In the story of the stem, this is the twelve-credit clock at the same 15%. The recovered object is $R \\approx 16.08\\%$. Citing it is citing Part 3.3.
 
-A rushed solver who stopped at $15.87\\%$ would be one clock behind. Someone who used $e^{0.15} - 1 \\approx 16.18\\%$ would be one clock ahead, on the continuous ceiling.
+Stopping at $15.87\\%$ would be one clock behind. Keeping $15.87\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Someone who used $e^{0.15} - 1 \\approx 16.18\\%$ would be one clock ahead, on the continuous ceiling.
 
 What would have to change for the opposite verdict is a recovered monthly yield that is not about $16.08\\%$. At $i = 0.0125$ through twelve months, it is $16.08\\%$.
 
@@ -1240,7 +1240,7 @@ Each step up in frequency is a step up in effective rate. The rises get smaller,
 
 In the story of the stem, the student is asked whether the three published yields rise as the clock speeds up. The recovered objects are $15.56\\%$, $15.87\\%$, and $16.08\\%$. The extra arithmetic is only the chain of inequalities already in Part 3.4.
 
-A rushed solver who compared periodic rates $7.5 > 3.75 > 1.25$ would think the effective rates must fall. Periodic rates fall as $n$ rises. Effective rates rise.
+Comparing periodic rates $7.5 > 3.75 > 1.25$ would think the effective rates must fall. That is why $7.5 > 3.75 > 1.25$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Periodic rates fall as $n$ rises. Effective rates rise.
 
 What would have to change for the opposite verdict is a drop in $R$ as $n$ rises, which cannot happen at a fixed positive nominal rate. The stem holds 15% fixed.
 
@@ -1254,7 +1254,7 @@ The three recovered yields $15.56\\% < 15.87\\% < 16.08\\%$ have no tie and no n
 
 On a $\\$10,000$ thought experiment the extra from semi-annual to monthly is about $\\$52$ of interest. That extra is interest-on-interest from four extra dates, then eight more. Frequency at a fixed 15% quote is a one-way lever.
 
-A solver who thought monthly must *lower* the yield, confusing this with a fixed *effective* quote, would reverse the ladder. The stem holds the *nominal* rate fixed. More dates raise $R$.
+Thinking monthly must *lower* the yield, confusing this with a fixed *effective* quote, would reverse the ladder. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The stem holds the *nominal* rate fixed. More dates raise $R$.
 
 The opposite verdict would need a shared effective rate, where more frequency lowers the printed quote. That is a different convention. Under this stem the ladder rises, matching the claim.
 
@@ -1271,13 +1271,13 @@ so the first step is the larger one, not the smaller. The claim has the ranking 
 
 **1.** This is the usual diminishing-returns pattern: each further increase in compounding frequency adds progressively less to the effective rate. The jump from $n = 2$ to $n = 4$ still has a lot of intra-year compounding left to capture. The jump from $n = 4$ to $n = 12$ is already closer to the continuous ceiling, so it adds less.
 
-**2.** The trap is counting the change in $n$ instead of the change in $R$. From 2 to 4 is a doubling of frequency, from 4 to 12 is a tripling, so a rushed solver might think the second jump must be larger. The effective-rate function is concave in $n$. Tripling $n$ later adds less than doubling $n$ earlier.
+**2.** The trap is counting the change in $n$ instead of the change in $R$. From 2 to 4 is a doubling of frequency, from 4 to 12 is a tripling, so it is tempting to think The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the second jump must be larger. The effective-rate function is concave in $n$. Tripling $n$ later adds less than doubling $n$ earlier.
 
 **3.** The opposite verdict would hold if the gaps ran $0.31 < 0.21$. They do not. The recovered pair is $0.31$ against $0.21$.
 
 In the story of the stem, the student is asked which step up in frequency adds more to the yield. The recovered gaps are $0.31$ and $0.21$. The extra arithmetic is $0.31 > 0.21$.
 
-A rushed solver who counted the jump in $n$ ($\\times 2$ then $\\times 3$) would expect the second gap to be larger. The effective-rate curve is concave in $n$, so later jumps add less.
+Counting the jump in $n$ ($\\times 2$ then $\\times 3$) would expect the second gap to be larger. The recovered comparison therefore keeps $n$ and does not substitute $\\times 3$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The effective-rate curve is concave in $n$, so later jumps add less.
 
 What would have to change for the opposite verdict is a pair of gaps with the second larger than the first. At 15%, moving from $n = 2$ to $n = 4$ still captures a lot of intra-year compounding. Moving from $n = 4$ to $n = 12$ is already near the continuous ceiling at about $16.18\\%$, so it adds only $0.21$.
 
@@ -1385,7 +1385,7 @@ The exponent in a compound formula counts interest dates, not calendar years. Th
 
 In the story of the stem, the grandchild's trust sits for a decade of monthly credits. The recovered object is $nt$, the number of those credits. Twelve times ten is $120$, which is not a compounding calculation and not a new conversion.
 
-A rushed solver who used $12 \\times 12 = 144$ would be counting months in a year twice. Someone who used $6 \\times 10 = 60$ would be mixing the $6\\%$ quote into the date count. The date count does not use the rate.
+Using $12 \\times 12 = 144$ would be counting months in a year twice. That is why $12 \\times 12 = 144$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $6 \\times 10 = 60$ would be mixing the $6\\%$ quote into the date count. The date count does not use the rate.
 
 What would have to change for the opposite verdict is a different clock or a different horizon. Quarterly credits for ten years would be $40$. Monthly credits for five years would be $60$. The stem is monthly for ten years.
 
@@ -1394,7 +1394,7 @@ The recovered number of months is $120$, so the statement is True.`,
 
 The ten-year balance is the $\\$4,000$ deposit times the 120-month growth factor. Part 3.2 already applied $(1.005)^{120} \\approx 1.8194$ and left $S(10) \\approx 7,277.60$. This letter is reading that product, not rebuilding the 120-month factor.
 
-**1.** A solver who multiplied $\\$4,000$ by $1.06^{10}$ instead would be using annual compounding at the same 6% quote. That weaker clock is letter E, and it finishes near $\\$7,163$, not $\\$7,278$.
+**1.** Multiplying $\\$4,000$ by $1.06^{10}$ instead would be using annual compounding at the same 6% quote. The path that matches the stem therefore holds $1.06^{10}$ fixed and only then reads the claim. That weaker clock is letter E, and it finishes near $\\$7,163$, not $\\$7,278$.
 
 **2.** Another mix-up is $4,000 \\times 1.06 \\times 10$, a simple-interest product that ignores compounding and gives $\\$6,400$, well below the recovered balance. The extra above $\\$6,400$ is compound interest on a ten-year monthly schedule.
 
@@ -1402,7 +1402,7 @@ The ten-year balance is the $\\$4,000$ deposit times the 120-month growth factor
 
 In the story of the stem, a grandparent parks $\\$4,000$ for ten years at 6% monthly. The recovered object is $S(10) \\approx 7,277.60$. Citing that balance is citing Part 3.2, not a second 120-month power.
 
-A rushed solver who used $4,000 \\times 1.06^{10} \\approx 7,163$ would be on the annual clock of letter E. Someone who used $4,000 \\times 1.80 = 7,200$ would be a rounded-factor guess near the claim but still not $\\$7,277.60$.
+Using $4,000 \\times 1.06^{10} \\approx 7,163$ would be on the annual clock of letter E. That is why $4,000 \\times 1.06^{10} \\approx 7,163$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $4,000 \\times 1.80 = 7,200$ would be a rounded-factor guess near the claim but still not $\\$7,277.60$.
 
 What would have to change for the opposite verdict is a different recovered product. Under $\\$4,000$ at $0.50\\%$ a month for $120$ months, the balance is about $\\$7,277.60$.
 
@@ -1435,7 +1435,7 @@ about $\\$722$ short of a doubling.
 
 In the story of the stem, doubling would mean the grandchild's trust hits $\\$8,000$. The recovered object is a factor of $1.8194$, about $\\$7,277.60$. The extra arithmetic is the $\\$722$ shortfall against $\\$8,000$.
 
-A rushed solver who used the Rule of $72$ at $6\\%$ would already expect about $12$ years, so ten years should fail. Someone who treated $1.82$ as "basically $2$" would agree with the claim. An $82\\%$ gain is not a doubling.
+Using the Rule of $72$ at $6\\%$ would already expect about $12$ years, so ten years should fail. The stem's recovered values line up with $72$, whereas $12$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $72$ stays in the write-up. Someone who treated $1.82$ as "basically $2$" would agree with the claim. An $82\\%$ gain is not a doubling.
 
 What would have to change for the opposite verdict is about $139$ months at this rate, or a higher quote that doubles in $120$ months. The stem is ten years at $0.50\\%$ a month.
 
@@ -1462,7 +1462,7 @@ so annual compounding finishes about $\\$114$ behind, not ahead.
 
 In the story of the stem, the grandparent is asked whether switching the same 6% to once-a-year credits would grow the trust *more*. That is a swapped frequency. Part 3.4 already ran it and left $\\$7,163.39$. The extra arithmetic is $7,163.39 < 7,277.60$.
 
-A rushed solver who thought a 6% annual credit is "the full rate" while $0.50\\%$ a month is "only half a percent" would agree with the claim. The annual credit is larger per date. There are $110$ fewer dates, and no intra-year compounding.
+Thinking a 6% annual credit is "the full rate" while $0.50\\%$ a month is "only half a percent" would agree with the claim. Once $0.50\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The annual credit is larger per date. There are $110$ fewer dates, and no intra-year compounding.
 
 What would have to change for the opposite verdict is a higher nominal rate on the annual account, or holding the effective rate fixed. The stem holds 6% fixed.
 
@@ -1549,7 +1549,7 @@ The fund must turn $\\$50,000$ into $\\$80,000$ over eight years with quarterly 
 
 In the story of the stem, the fund manager is reverse-engineering the quarterly quote that turns $\\$50,000$ into $\\$80,000$ in eight years. The recovered object is $r \\approx 5.92\\%$. Citing it is citing Part 3.1.
 
-A rushed solver who used $60\\%/8 = 7.5\\%$ would be using simple interest. Someone who used $\\ln(1.6)/8 \\approx 5.88\\%$ would be using continuous compounding, a nearby but different clock.
+Using $60\\%/8 = 7.5\\%$ would be using simple interest. Keeping $60\\%/8 = 7.5\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $\\ln(1.6)/8 \\approx 5.88\\%$ would be using continuous compounding, a nearby but different clock.
 
 What would have to change for the opposite verdict is a recovered quarterly quote that is not about $5.92\\%$. At $32$ quarters and a factor of $1.6$, it is $5.92\\%$.
 
@@ -1593,7 +1593,7 @@ so the four-year quote is about double, not lower.
 
 In the story of the stem, the same $\\$80,000$ is now required in four years instead of eight. That is a new horizon, so it is this letter's own conversion. The recovered original quote is $5.92\\%$. The new quote is about $11.92\\%$.
 
-A rushed solver who halved $5.92\\%$ to $2.96\\%$ would have "half the time, half the rate" and would agree with the claim. Roots do not work that way. The same $1.6$ in half the quarters needs about twice the rate.
+Halving $5.92\\%$ to $2.96\\%$ would have "half the time, half the rate" and would agree with the claim. The stem's recovered values line up with $5.92\\%$, whereas $2.96\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $5.92\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Roots do not work that way. The same $1.6$ in half the quarters needs about twice the rate.
 
 What would have to change for the opposite verdict is a smaller four-year target, so that the required rate really did fall. The stem keeps the $\\$80,000$ target.
 
@@ -1620,7 +1620,7 @@ so monthly compounding needs a slightly lower nominal rate.
 
 In the story of the stem, the manager is asked whether switching from quarterly to monthly credits would force a *higher* printed quote to hit the same $\\$80,000$. That is a swapped frequency. The new conversion left about $5.89\\%$.
 
-A rushed solver who thought monthly slices are smaller, so the annual quote must be raised, would agree with the claim. Smaller slices come with more dates. The extra dates are an advantage, so the required printed quote falls.
+Thinking monthly slices are smaller, so the annual quote must be raised, would agree with the claim. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Smaller slices come with more dates. The extra dates are an advantage, so the required printed quote falls.
 
 What would have to change for the opposite verdict is a weaker monthly clock, which does not exist at a shared target and shared horizon: more frequent compounding is stronger.
 
@@ -1645,7 +1645,7 @@ so the increase is five percentage points short of $65\\%$.
 
 In the story of the stem, growing from $\\$50,000$ to $\\$80,000$ is a $60\\%$ increase, independent of the compounding clock. The recovered object is Part 3.5's $60\\%$. The extra arithmetic is the five-point miss versus $65\\%$.
 
-A rushed solver who read $1.6$ as $160\\%$ growth would clear $65\\%$ and would be counting the principal as gain. Someone who computed $80/50 - 1$ correctly would land on $60\\%$ and see the miss.
+Reading $1.6$ as $160\\%$ growth would clear $65\\%$ and would be counting the principal as gain. After isolating the unknown, the check is against $1.6$. The figure $65\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $1.6$ stays in the write-up. Someone who computed $80/50 - 1$ correctly would land on $60\\%$ and see the miss.
 
 What would have to change for the opposite verdict is a target of at least $\\$82,500$. The stem's target is $\\$80,000$.
 
@@ -1750,7 +1750,7 @@ so option (a) is not the higher effective rate. It is the slightly cheaper loan.
 
 In the story of the stem, a borrower is ranking two loans: $10.80\\%$ paid once a year against $10.40\\%$ paid four times a year. The recovered objects are $R_a = 10.80\\%$ and $R_b \\approx 10.81\\%$. The extra arithmetic is $10.80 < 10.81$.
 
-A rushed solver who ranked the printed quotes would call (a) higher and would agree with the claim. Printed quotes are not effective rates when the clocks differ.
+Ranking the printed quotes would call (a) higher and would agree with the claim. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Printed quotes are not effective rates when the clocks differ.
 
 What would have to change for the opposite verdict is annual compounding on (b), or quarterly compounding on (a). Under the stem, (b) is slightly higher as an effective rate.
 
@@ -1777,11 +1777,11 @@ so quarterly crediting lifts the quote by about $0.41$ of a point, enough to ove
 
 **2.** Rounding $0.108127$ to $10.81\\%$ is the claim's approximation. It is not $10.40\\%$ and not $10.80\\%$. Letter A ranks this $10.81\\%$ against (a). This letter only asks for (b)'s own effective rate.
 
-**3.** A solver who split $10.40/12$ as if the loan were monthly would get a different conversion. The stem pays quarterly, $n = 4$, and Part 3.2 already split $i_b = 0.026$.
+**3.** Splitting $10.40/12$ as if the loan were monthly would get a different conversion. The opposite verdict would need a different isolation than $10.40/12$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The stem pays quarterly, $n = 4$, and Part 3.2 already split $i_b = 0.026$.
 
 In the story of the stem, option (b) is the quarterly 10.40% loan. The recovered object is $R_b \\approx 10.81\\%$. Citing it is citing Part 3.3.
 
-A rushed solver who left the yield at $10.40\\%$ would be ignoring four intra-year credits. Someone who used $10.40 \\times 4$ without splitting would explode the rate.
+Leaving the yield at $10.40\\%$ would be ignoring four intra-year credits. Once $10.40\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Someone who used $10.40 \\times 4$ without splitting would explode the rate.
 
 What would have to change for the opposite verdict is a recovered quarterly conversion that is not about $10.81\\%$. At $i_b = 0.026$ through four quarters, it is $10.81\\%$.
 
@@ -1808,13 +1808,13 @@ so the lower printed quote is the slightly more expensive loan.
 
 **1.** The wording treats "lower nominal" as a trump card. It would be a trump card if both options used the same compounding clock. They do not. Option (a) compounds once. Option (b) compounds four times. The extra dates on (b) more than eat the $0.40$ point hole in the printed quote.
 
-**2.** A rushed solver who never converted (b) would agree with the claim. The overview converted it. The $0.013$ point edge against the borrower is small, but it is the wrong direction for "must be cheaper."
+**2.** Never converting (b) would agree with the claim. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The overview converted it. The $0.013$ point edge against the borrower is small, but it is the wrong direction for "must be cheaper."
 
 **3.** The opposite verdict would hold if (b) also compounded annually, in which case $10.40\\% < 10.80\\%$ would settle the comparison. The stem pays (b) quarterly.
 
 In the story of the stem, option (b) really does quote a lower nominal rate. The recovered objects are still $R_a$ and $R_b$. Nominal is not cost. Cost to the borrower is the effective rate.
 
-A rushed solver who stopped at $10.40 < 10.80$ would agree with the claim. After converting (b), $10.81 > 10.80$, so the cheaper print is the dearer loan.
+Stopping at $10.40 < 10.80$ would agree with the claim. That is why $10.40 < 10.80$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. After converting (b), $10.81 > 10.80$, so the cheaper print is the dearer loan.
 
 What would have to change for the opposite verdict is the same compounding clock on both options. Then the lower nominal would be the cheaper loan. The stem mixes annual with quarterly.
 
@@ -1841,7 +1841,7 @@ so option (a) is the cheaper of the two, not the more expensive.
 
 In the story of the stem, "more expensive" means a higher effective rate for the borrower. The recovered ranking is $R_a < R_b$. Option (a) is cheaper.
 
-A rushed solver who read $10.80 > 10.40$ on the page would agree with the claim. That is the nominal ranking, not the effective ranking.
+Reading $10.80 > 10.40$ on the page would agree with the claim. That is why $10.80 > 10.40$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That is the nominal ranking, not the effective ranking.
 
 What would have to change for the opposite verdict is $R_a > R_b$, which would take a higher quote on (a) or annual compounding on (b). Under the stem, (a) is the cheaper effective rate.
 
@@ -1878,7 +1878,7 @@ so the gap is $0.037$ of a point short of the cutoff. The two loans are close.
 
 In the story of the stem, the two loans look $0.40$ points apart on the page and about $0.013$ points apart after conversion. The recovered object is Part 3.5's $0.013$ point gap. The extra arithmetic is the miss versus a $0.05$-point cutoff.
 
-A rushed solver who used the nominal spread $0.40$ would clear $0.05$ easily and would be answering the wrong comparison. The claim is about effective rates.
+Using the nominal spread $0.40$ would clear $0.05$ easily and would be answering the wrong comparison. So the letter reads the claim against $0.40$; $0.05$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.40$ stays in the write-up. The claim is about effective rates.
 
 What would have to change for the opposite verdict is a wider effective spread, for example if (b) compounded monthly instead of quarterly. Under quarterly compounding, the recovered gap is $0.013$, which does not exceed $0.05$.
 
@@ -1978,9 +1978,9 @@ so the statement is True.`,
 
 The trustee wants today's $\\$40,000$ pulled back six years at 4.5% annual compounding. That original deposit is the target divided by the recovered growth factor. Part 3.2 already did the division and left $S_0 \\approx 30,715.86$. This letter is reading that present value, not rebuilding $(1.045)^{6}$.
 
-**1.** A rushed solver who multiplied $\\$40,000$ by $1.302253$ would be rolling the target forward instead of back, and would land near $\\$52,090$. That is a future value of an already-future $\\$40,000$, which is not the question.
+**1.** Multiplying $\\$40,000$ by $1.302253$ would be rolling the target forward instead of back, and would land near $\\$52,090$. Once $1.302253$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. That is a future value of an already-future $\\$40,000$, which is not the question.
 
-**2.** A solver who used $40,000 / 1.27 \\approx 31,496$ would be discounting at the simple-interest factor from letter A. The recovered deposit is $\\$30,715.86$, about $\\$780$ smaller, because compound growth is stronger and therefore needs less money up front.
+**2.** Using $40,000 / 1.27 \\approx 31,496$ would be discounting at the simple-interest factor from letter A. The path that matches the stem therefore holds $40,000 / 1.27 \\approx 31,496$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered deposit is $\\$30,715.86$, about $\\$780$ smaller, because compound growth is stronger and therefore needs less money up front.
 
 **3.** The cents, $86$, match $40,000 / 1.302253$ as Part 3.2 rounded it. A table that stopped at $\\$30,716$ would still be this deposit. A table that printed $\\$32,000$ would not.
 
@@ -2007,7 +2007,7 @@ $$32,000 - 30,715.86 = 1,284.14$$
 
 so the present value sits about $\\$1,284$ below $\\$32,000$.
 
-**1.** A rushed solver who used the simple-interest companion $\\$31,496$ from letter B would still sit below $\\$32,000$, so the verdict would happen to survive a wrong discount. The recovered figure is $\\$30,715.86$, which clears the cutoff from below by more.
+**1.** Using the simple-interest companion $\\$31,496$ from letter B would still sit below $\\$32,000$, so the verdict would happen to survive a wrong discount. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The recovered figure is $\\$30,715.86$, which clears the cutoff from below by more.
 
 **2.** Another mix-up is comparing $\\$40,000$ with $\\$32,000$ and calling the target itself the present value. The target is the future amount. The present value is the smaller opening deposit.
 
@@ -2040,7 +2040,7 @@ so the 5.5% path needs about $\\$1,706$ less up front, not more.
 
 **1.** The trap is thinking "higher rate, more money," which is true of a future value on a *fixed* deposit. Here the *target* is fixed and the deposit is the unknown. Higher rate means less money today.
 
-**2.** A rushed solver who multiplied $\\$30,715.86$ by $1.055/1.045$ would be scaling the deposit up with the rate, which is the wrong direction.
+**2.** Multiplying $\\$30,715.86$ by $1.055/1.045$ would be scaling the deposit up with the rate, which is the wrong direction. Once $1.055/1.045$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **3.** The opposite verdict would hold if the question were about the six-year *balance* on a fixed $\\$30,716$ deposit. That future value would indeed be higher at 5.5%. The claim is about the required present value of a fixed $\\$40,000$ target.
 
@@ -2048,7 +2048,7 @@ Faster growth means a smaller opening balance. The recovered 5.5% deposit is abo
 
 In the story of the stem, the 5.5% hypothetical asks whether a faster account needs more money today to hit the same $\\$40,000$. It needs less. The new conversion left about $\\$29,010$.
 
-A rushed solver who computed a 5.5% *future* value of the original $\\$30,716$ would see a larger six-year balance and might think "higher" applies to the present value too. Future value on a fixed deposit rises with the rate. Present value of a fixed target falls with the rate.
+Computing a 5.5% *future* value of the original $\\$30,716$ would see a larger six-year balance and might think "higher" applies to the present value too. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Future value on a fixed deposit rises with the rate. Present value of a fixed target falls with the rate.
 
 The $\\$1,706$ drop from $\\$30,716$ to $\\$29,010$ is the dollar meaning of an extra point of annual compounding over six years. The claim has that meaning backwards.
 
@@ -2059,7 +2059,7 @@ so the statement is False.`,
 
 Interest is the target minus the original deposit. Part 3.2 recovered $S_0 \\approx 30,715.86$. Part 3.5 already subtracted and left $9,284.14$. This letter is reading that difference, not rebuilding the growth factor.
 
-**1.** A rushed solver who used $40,000 - 32,000 = 8,000$ would be subtracting the cutoff from letter C instead of the recovered deposit. That undershoots the interest by about $\\$1,284$.
+**1.** Using $40,000 - 32,000 = 8,000$ would be subtracting the cutoff from letter C instead of the recovered deposit. The path that matches the stem therefore holds $40,000 - 32,000 = 8,000$ fixed and only then reads the claim. That undershoots the interest by about $\\$1,284$.
 
 **2.** Another mix-up is $40,000 \\times 0.045 \\times 6 = 10,800$, simple interest on the *target* rather than compound interest on the opening deposit. Simple interest overstates the gain and also uses the wrong principal.
 
@@ -2071,7 +2071,7 @@ The recovered interest is $\\$9,284.14$
 
 In the story of the stem, interest is what the opening deposit earns on the way to $\\$40,000$. The recovered object is $9,284.14$. That is the complement of letter B: $40,000 - 30,715.86$.
 
-A rushed solver who used $6 \\times 0.045 \\times 30,716 \\approx 8,293$ would be using simple interest on the opening deposit and would undershoot. Compounding adds the extra $\\$991$ above that simple-interest companion.
+Using $6 \\times 0.045 \\times 30,716 \\approx 8,293$ would be using simple interest on the opening deposit and would undershoot. Keeping $6 \\times 0.045 \\times 30,716 \\approx 8,293$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Compounding adds the extra $\\$991$ above that simple-interest companion.
 
 The cents on $9,284.14$ are forced by the cents on $30,715.86$. If B is right, E is the same arithmetic in reverse. The claim names that reverse.
 
@@ -2167,7 +2167,7 @@ $$81.30 - 72 = 9.30$$
 
 so the wording is about nine months too short.
 
-**1.** A rushed solver who used $6,000/4,000 = 1.5$ and then $0.06 \\times t = 0.5$ would get $t \\approx 8.3$ years of simple interest, which overshoots. Someone who used the Rule of $72$ at $6\\%$ for a doubling and then scaled by $0.5/1$ would get $6$ years and would invent this claim.
+**1.** Using $6,000/4,000 = 1.5$ and then $0.06 \\times t = 0.5$ would get $t \\approx 8.3$ years of simple interest, which overshoots. So the letter reads the claim against $6,000/4,000 = 1.5$; $t \\approx 8.3$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6,000/4,000 = 1.5$ stays in the write-up. Someone who used the Rule of $72$ at $6\\%$ for a doubling and then scaled by $0.5/1$ would get $6$ years and would invent this claim.
 
 **2.** After $72$ months the balance is $4,000 \\times (1.005)^{72} \\approx 5,746$, still about £254 short of £6,000. The extra $9.30$ months are not decoration. They are needed to close that gap.
 
@@ -2196,7 +2196,7 @@ That is still about £918 short of £6,000.
 
 **1.** The trap is treating $1.5$ as "50% growth" and then taking $50\\%$ of a 96-month doubling-time guess. Forty-eight months is a round four years, which is why it looks plausible and why it is wrong.
 
-**2.** A solver who used $4,000 \\times 1.06^{4} \\approx 5,050$ would be on an annual clock and would still miss £6,000. Both clocks need more than four years.
+**2.** Using $4,000 \\times 1.06^{4} \\approx 5,050$ would be on an annual clock and would still miss £6,000. The recovered isolation is checked against the claim using $4,000 \\times 1.06^{4} \\approx 5,050$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. Both clocks need more than four years.
 
 **3.** The opposite verdict would hold if the target were about £5,080, which is the four-year balance. The stem's target is £6,000.
 
@@ -2231,7 +2231,7 @@ so growing by $50\\%$ takes longer than half a doubling, not less.
 
 **1.** The trap is thinking "1.5 is halfway from 1 to 2, so the wait is halfway." Halfway in the *factor* is $1.5$. Halfway in the *logarithm* is $\\sqrt{2} \\approx 1.414$. A $50\\%$ gain is more growth than a $41.4\\%$ gain, so it takes more than half the doubling time.
 
-**2.** A rushed solver who computed only $t_{1.5}$ and then halved $t_{1.5}$ would be answering a different question. The claim compares $t_{1.5}$ with $t_2 / 2$.
+**2.** Computing only $t_{1.5}$ and then halving $t_{1.5}$ would be answering a different question. That is why $t_{1.5}$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The claim compares $t_{1.5}$ with $t_2 / 2$.
 
 **3.** The opposite verdict would hold for a target of $1.414$ times the deposit. The stem's target is $1.5$ times.
 
@@ -2260,7 +2260,7 @@ so the balance would be about £6,587, overshooting £6,000 by about £587.
 
 **1.** The trap is picking a round $100$ because $81.30$ "looks close to $80$" and then adding a safety margin. The logarithm is not a safety margin. It is the exact inversion.
 
-**2.** A solver who used $\\ln 1.5 / 0.005 \\approx 81.1$ without converting $0.005$ to $\\ln 1.005$ would still land near $81$, not $100$. Getting $100$ requires a different target or a different rate.
+**2.** Using $\\ln 1.5 / 0.005 \\approx 81.1$ without converting $0.005$ to $\\ln 1.005$ would still land near $81$, not $100$. After isolating the unknown, the check is against $\\ln 1.5 / 0.005 \\approx 81.1$. The figure $100$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\ln 1.5 / 0.005 \\approx 81.1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Getting $100$ requires a different target or a different rate.
 
 **3.** The opposite verdict would hold if the target were about £6,587. The stem's target is £6,000.
 
@@ -2268,7 +2268,7 @@ The recovered wait is $81.30$ months, not $100$
 
 In the story of the stem, 100 months is a round overshoot of $81.30$. The extra arithmetic is the £6,587 balance at 100 months, about £587 too high.
 
-A solver who wanted a safety margin past the target would land here and think the logarithm had a built-in buffer. It does not. The logarithm hits £6,000 at $81.30$ months. Extra months produce extra money, not a rounding of the same date.
+Wanting a safety margin past the target would land here and think the logarithm had a built-in buffer. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. It does not. The logarithm hits £6,000 at $81.30$ months. Extra months produce extra money, not a rounding of the same date.
 
 The opposite verdict would hold for a £6,587 target. The stem's target is £6,000.
 
@@ -2388,7 +2388,7 @@ $$4.34\\% - 4.25\\% = 0.09$$
 
 so daily crediting lifts the quote by about $0.09$ of a point.
 
-**1.** A solver who reported the nominal $4.25\\%$ as if it were already effective would understate the yield by that $0.09$ point. The stem pays daily.
+**1.** Reporting the nominal $4.25\\%$ as if it were already effective would understate the yield by that $0.09$ point. Working from the isolated values, $4.25\\%$ is the figure that is checked, not the detour that produced $0.09$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The stem pays daily.
 
 **2.** Another trap is $e^{0.0425} - 1 \\approx 4.34\\%$ as well, which happens to round to the same hundredth. Continuous compounding is the ceiling. Daily compounding at $365$ days sits just under that ceiling. The overview's $4.34\\%$ is the daily conversion.
 
@@ -2400,7 +2400,7 @@ The recovered effective rate is about $4.34\\%$
 
 In the story of the stem, the retiree wants the true one-year yield on a 4.25% daily money-market account. The recovered object is $R \\approx 4.34\\%$. Citing it is citing Part 3.2.
 
-A solver who used $4.25 \\times 365 / 360$ as a day-count adjustment would be answering a different quoting convention. The stem divides by 365 and then compounds 365 times. That conversion is $4.34\\%$.
+Using $4.25 \\times 365 / 360$ as a day-count adjustment would be answering a different quoting convention. Keeping $4.25 \\times 365 / 360$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The stem divides by 365 and then compounds 365 times. That conversion is $4.34\\%$.
 
 The $0.09$ point lift is modest because 4.25% is a modest quote, even with daily credits. Letter E will ask whether that lift exceeds $0.20$. It does not. This letter only names the $4.34\\%$ yield.
 
@@ -2413,7 +2413,7 @@ so the statement is True.`,
 
 The year-end balance is the $\\$20,000$ deposit times the recovered annual factor $1.043413$. Part 3.3 already applied that factor and left $FV \\approx 20,868.26$. This letter is reading that product.
 
-**1.** A solver who multiplied $\\$20,000$ by $1.0425$ would get $\\$20,850$ and miss the extra $\\$18.26$ that daily credits produce.
+**1.** Multiplying $\\$20,000$ by $1.0425$ would get $\\$20,850$ and miss the extra $\\$18.26$ that daily credits produce. That is why $1.0425$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 **2.** That extra $\\$18.26$ is the dollar gap between daily and annual compounding on this principal. Letter D asks which *rate* is stronger under a monthly swap. This letter asks for the daily schedule's dollar balance.
 
@@ -2460,7 +2460,7 @@ Monthly compounding is weaker here
 
 In the story of the stem, the retiree is asked whether switching the same 4.25% to monthly credits would raise the yearly yield. It would lower it. Part 3.4 recovered $R_{\\mathrm{mon}} \\approx 4.33\\%$ against the daily $4.34\\%$.
 
-A rushed solver who thought monthly slices are larger, so monthly must win, would agree with the claim. Larger slices, fewer dates. At a fixed nominal rate the more frequent clock wins, and daily is more frequent than monthly.
+Thinking monthly slices are larger, so monthly must win, would agree with the claim. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Larger slices, fewer dates. At a fixed nominal rate the more frequent clock wins, and daily is more frequent than monthly.
 
 The $0.01$ point gap is tiny in dollars on $\\$20,000$, a couple of dollars, but the direction is the whole letter. Monthly is not higher.
 
@@ -2593,7 +2593,7 @@ $$25.34\\% - 22.80\\% = 2.54$$
 
 so monthly compounding lifts the quote by about $2.54$ points.
 
-**1.** A solver who reported the nominal $22.80\\%$ as if it were already effective would understate the card's true annual cost by those $2.54$ points. Letter C is that confusion written as a claim.
+**1.** Reporting the nominal $22.80\\%$ as if it were already effective would understate the card's true annual cost by those $2.54$ points. The stem's recovered values line up with $22.80\\%$, whereas $2.54$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $22.80\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Letter C is that confusion written as a claim.
 
 **2.** Rounding $0.253408$ to $25.34\\%$ is the claim's approximation. It is not $22.80\\%$ and not $25.00\\%$.
 
@@ -2605,7 +2605,7 @@ The recovered effective rate is about $25.34\\%$
 
 In the story of the stem, the shopper wants the true annual cost of a 1.9% monthly store card. The recovered object is $R \\approx 25.34\\%$. Citing it is citing Part 3.2.
 
-A solver who added $1.9\\%$ twelve times would stop at $22.80\\%$ and would be answering letter A. Someone who averaged $22.80$ with $28$ might invent a number near $25$, but the overview's $25.34\\%$ is $(1.019)^{12} - 1$, not an average.
+Adding $1.9\\%$ twelve times would stop at $22.80\\%$ and would be answering letter A. The stem's recovered values line up with $1.9\\%$, whereas $22.80\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $1.9\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who averaged $22.80$ with $28$ might invent a number near $25$, but the overview's $25.34\\%$ is $(1.019)^{12} - 1$, not an average.
 
 On an unpaid $\\$3,000$, that $25.34\\%$ is about $\\$760$ of interest in a year. Letter D will apply it. This letter only names the rate.
 
@@ -2626,7 +2626,7 @@ so the printed twelvefold multiple is $2.54$ points below the rate that actually
 
 **1.** The trap is treating "12 times the monthly rate" as if it already included compounding. That product is a nominal quote by definition. Compounding is the extra in $(1.019)^{12} - 1$.
 
-**2.** A solver who stopped at letter A and reused $22.80\\%$ for every later letter would agree with this claim. Letter B already converted. The yearly cost is $25.34\\%$.
+**2.** Stopping at letter A and reusing $22.80\\%$ for every later letter would agree with this claim. The opposite verdict would need a different isolation than $22.80\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Letter B already converted. The yearly cost is $25.34\\%$.
 
 **3.** The opposite verdict would hold if the card charged $22.80\\%$ once a year. The stem charges $1.9\\%$ a month.
 
@@ -2659,7 +2659,7 @@ so the wording understates the year-end balance by about $\\$76$.
 
 **1.** $\\$3,684$ is exactly $3,000 \\times 1.228$, the nominal $22.80\\%$ applied once. That is annual compounding at the nominal quote, not twelve monthly charges of $1.9\\%$. The extra $\\$76$ is the intra-year compounding the card actually charges.
 
-**2.** A solver who used $3,000 \\times 1.2534$ correctly would land on the recovered $\\$3,760$ and then see that $\\$3,684$ is the wrong companion.
+**2.** Using $3,000 \\times 1.2534$ correctly would land on the recovered $\\$3,760$ and then see that $\\$3,684$ is the wrong companion. That is why $3,000 \\times 1.2534$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does.
 
 **3.** The opposite verdict would need annual compounding at $22.80\\%$, which is not how the card works. The stem charges every month.
 
@@ -2779,7 +2779,7 @@ $$10.25\\% - 10.00\\% = 0.25$$
 
 so two intra-year credits lift the quote by a quarter-point. The product is exact: $(1.05)^{2} = 1.1025$.
 
-**1.** A solver who left the yield at $10\\%$ would be describing annual compounding. Semi-annual means $n = 2$, and Part 3.1 already split $10\\%$ as $i = 0.05$.
+**1.** Leaving the yield at $10\\%$ would be describing annual compounding. The recovered isolation is checked against the claim using $10\\%$, which is the figure the sessions actually produce. Semi-annual means $n = 2$, and Part 3.1 already split $10\\%$ as $i = 0.05$.
 
 **2.** Rounding is not an issue here. $10.25\\%$ is exact. Letters B and C take the quarterly and monthly clocks.
 
@@ -2795,9 +2795,9 @@ Ten point two five percent is exact: $(1.05)^{2} = 1.1025$. On $\\$1,000$ that i
 
 Ten point two five percent is exact: $(1.05)^{2} = 1.1025$. On $\\$1,000$ that is $\\$102.50$ of interest against $\\$100$ annually. Every later ranking in this task uses $10.25\\%$ as the left-hand figure.
 
-Annual compounding would have left $10\\%$. Two credits are what lift it. A solver who reported $10.38\\%$ would be answering letter B. This letter is only the semi-annual yield.
+Annual compounding would have left $10\\%$. Two credits are what lift it. Reporting $10.38\\%$ would be answering letter B. Keeping $10.38\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. This letter is only the semi-annual yield.
 
-Two 5% half-year credits are an exact square, not a table interpolation. A solver who added $2 \\times 5\\%$ would report $10\\%$ and would be naming the nominal quote. The extra $0.25$ of a point is the second credit riding on the first.
+Two 5% half-year credits are an exact square, not a table interpolation. Adding $2 \\times 5\\%$ would report $10\\%$ and would be naming the nominal quote. The stem's recovered values line up with $2 \\times 5\\%$, whereas $10\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $2 \\times 5\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The extra $0.25$ of a point is the second credit riding on the first.
 
 This letter is only that $10.25\\%$ figure. Letters B and C climb from here.
 
@@ -2832,7 +2832,7 @@ Ten point three eight percent sits $0.13$ of a point above $10.25\\%$. On $\\$1,
 
 Adding $4 \\times 2.5\\%$ would erase compounding and return $10\\%$. The recovered quarterly yield is $10.38\\%$. This letter names that figure.
 
-Four 2.5% quarter-year credits produce $10.38\\%$, already in Part 3. The $0.13$ point step from $10.25\\%$ is letter E's first measured jump. A solver who reported $10.47\\%$ would be skipping to monthly.
+Four 2.5% quarter-year credits produce $10.38\\%$, already in Part 3. The $0.13$ point step from $10.25\\%$ is letter E's first measured jump. Reporting $10.47\\%$ would be skipping to monthly. The opposite verdict would need a different isolation than $10.47\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 This letter names the quarterly stop.
 
@@ -2847,7 +2847,7 @@ $$10.47\\% - 10.00\\% = 0.47$$
 
 so twelve credits lift the quote by about $0.47$ points, the largest of the three lifts.
 
-**1.** A solver who stopped at the quarterly $10.38\\%$ would understate the monthly yield by about $0.09$ of a point. Monthly is more frequent than quarterly, so at a fixed 10% it must finish higher.
+**1.** Stopping at the quarterly $10.38\\%$ would understate the monthly yield by about $0.09$ of a point. The stem's recovered values line up with $10.38\\%$, whereas $0.09$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $10.38\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Monthly is more frequent than quarterly, so at a fixed 10% it must finish higher.
 
 **2.** Another trap is $e^{0.10} - 1 \\approx 10.52\\%$, the continuous ceiling. The stem's most frequent clock is monthly, and Part 3.3 left about $10.47\\%$, a few hundredths below that ceiling.
 
@@ -2907,7 +2907,7 @@ so the first step is the larger one, not the smaller. The claim has the ranking 
 
 **1.** This is diminishing returns: each further increase in compounding frequency adds progressively less. The jump from $n = 2$ to $n = 4$ still has intra-year compounding left to capture. The jump from $n = 4$ to $n = 12$ is already closer to the continuous ceiling near $10.52\\%$, so it adds less.
 
-**2.** The trap is counting the change in $n$ instead of the change in $R$. From 2 to 4 is a doubling of frequency, from 4 to 12 is a tripling, so a rushed solver might think the second jump must be larger. The effective-rate function is concave in $n$.
+**2.** The trap is counting the change in $n$ instead of the change in $R$. From 2 to 4 is a doubling of frequency, from 4 to 12 is a tripling, so it is tempting to think The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the second jump must be larger. The effective-rate function is concave in $n$.
 
 **3.** The opposite verdict would hold if the gaps ran $0.13 < 0.09$. They do not. The recovered pair is $0.13$ against $0.09$.
 
@@ -2915,7 +2915,7 @@ The first gap is larger than the second
 
 In the story of the stem, the bank is asked which step up in frequency adds more to the yield. The recovered gaps are $0.13$ and $0.09$. The extra arithmetic is $0.13 > 0.09$.
 
-A rushed solver who counted $\\times 2$ then $\\times 3$ in $n$ would expect the second gap to be larger. The effective-rate curve is concave in $n$, so later jumps add less.
+Counting $\\times 2$ then $\\times 3$ in $n$ would expect the second gap to be larger. That is the fork: $\\times 2$ belongs to the recovered isolation, $n$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The effective-rate curve is concave in $n$, so later jumps add less.
 
 The claim has those two gaps backwards. The first step, semi-annual to quarterly, is the larger one.
 
@@ -3045,7 +3045,7 @@ more than twice the target of $50$. The extra rate overshoots the multiple badly
 
 **1.** Linear thinking says "50 times in 80 years is $62.5\\%$ a year" or some cousin of $6.25\\%$. Exponential thinking takes a root. The overview took the root.
 
-**2.** A solver who used $\\ln 50 / 80$ without the $e^{\\cdot} - 1$ conversion would get about $4.91\\%$, nearby but not $6.25\\%$. Getting $6.25\\%$ requires the linear shortcut.
+**2.** Using $\\ln 50 / 80$ without the $e^{\\cdot} - 1$ conversion would get about $4.91\\%$, nearby but not $6.25\\%$. The stem's recovered values line up with $\\ln 50 / 80$, whereas $6.25\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $\\ln 50 / 80$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Getting $6.25\\%$ requires the linear shortcut.
 
 **3.** The opposite verdict would need a target near $128$ times, which is not the stem's $50$.
 
@@ -3115,7 +3115,7 @@ Part 3.4 already wrote that square. A factor of $100$ would be only twice $50$ a
 
 **1.** The trap is thinking "double the time, double the multiple." Double the time squares the multiple. $50 \\times 50 = 2,500$, not $50 \\times 2 = 100$.
 
-**2.** A solver who wanted a factor of $100$ at $5.01\\%$ would solve $t = \\ln 100 / \\ln(1.050115) \\approx 93.4$ years, not $160$.
+**2.** Wanting a factor of $100$ at $5.01\\%$ would solve $t = \\ln 100 / \\ln(1.050115) \\approx 93.4$ years, not $160$. After isolating the unknown, the check is against $100$. The figure $160$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $100$ stays in the write-up.
 
 **3.** The opposite verdict would hold for a target of $2,500$ times after 160 years. The claim named $100$.
 
@@ -3150,7 +3150,7 @@ so less time to grow means a faster rate.
 
 **1.** The trap is "half the time, half the rate." Roots do not work that way. The same $50$ in 40 years is a much harder annual job than in 80 years.
 
-**2.** A rushed solver who halved $5.01\\%$ to $2.50\\%$ would have the claim's direction and a number that would produce a factor near $2.7$ in 40 years, not $50$.
+**2.** Halving $5.01\\%$ to $2.50\\%$ would have the claim's direction and a number that would produce a factor near $2.7$ in 40 years, not $50$. That is the fork: $5.01\\%$ belongs to the recovered isolation, $50$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **3.** The opposite verdict would hold if the 40-year target were a smaller multiple. The stem keeps the $50\\times$ target and only cuts the wait.
 
@@ -3239,9 +3239,9 @@ Half the time requires a higher rate, not a lower one, because the same target m
 
 Account X is the 5.00% monthly account. The parent is discounting a $\\$25,000$ tuition bill through $84$ monthly periods. Part 3.1 recovered $S_{0,X} \\approx 17,629.99$. This letter is reading that present value, not rebuilding $(1 + 0.05/12)^{84}$.
 
-**1.** A rushed solver who multiplied $\\$25,000$ by the growth factor would be rolling the bill forward instead of back. The question is how much to deposit today.
+**1.** Multiplying $\\$25,000$ by the growth factor would be rolling the bill forward instead of back. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The question is how much to deposit today.
 
-**2.** A solver who used $25,000 / 1.05^{7} \\approx 17,760$ would be on an annual 5% clock, a nearby but weaker discount. Monthly 5% is stronger, so it needs a little less today. The recovered $\\$17,629.99$ is that stronger discount.
+**2.** Using $25,000 / 1.05^{7} \\approx 17,760$ would be on an annual 5% clock, a nearby but weaker discount. The path that matches the stem therefore holds $25,000 / 1.05^{7} \\approx 17,760$ fixed and only then reads the claim. Monthly 5% is stronger, so it needs a little less today. The recovered $\\$17,629.99$ is that stronger discount.
 
 **3.** The cents, $99$, match Part 3.1's rounding. Letter C will compare this deposit with Account Y. This letter only asks for X's own opening amount.
 
@@ -3266,9 +3266,9 @@ so the statement is True.`,
 
 Account Y is the 5.10% quarterly account. The parent is discounting the same $\\$25,000$ through $28$ quarterly periods. Part 3.2 recovered $S_{0,Y} \\approx 17,534.28$. This letter is reading that present value.
 
-**1.** A rushed solver who reused $\\$17,629.99$ from Account X would be ignoring Y's higher quote. Y grows faster, so it needs less today.
+**1.** Reusing $\\$17,629.99$ from Account X would be ignoring Y's higher quote. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Y grows faster, so it needs less today.
 
-**2.** A solver who used $25,000 / 1.051^{7} \\approx 17,620$ would be on an annual 5.10% clock. Quarterly 5.10% is stronger than annual 5.10%, so the recovered $\\$17,534.28$ is a bit smaller.
+**2.** Using $25,000 / 1.051^{7} \\approx 17,620$ would be on an annual 5.10% clock. That is why $25,000 / 1.051^{7} \\approx 17,620$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Quarterly 5.10% is stronger than annual 5.10%, so the recovered $\\$17,534.28$ is a bit smaller.
 
 **3.** The cents, $28$, match Part 3.2. Together with letter A's $\\$17,629.99$, the two deposits are the ranking letter C will read.
 
@@ -3334,9 +3334,9 @@ $$5.20\\% - 5.12\\% = 0.08$$
 
 so Y's yearly yield sits about $0.08$ of a point above X's.
 
-**1.** A rushed solver who compared the printed $5.10$ with $5.00$ would have the right ranking for the wrong reason. Printed quotes are not effective rates. After conversion, $5.20\\% > 5.12\\%$ still favors Y.
+**1.** Comparing the printed $5.10$ with $5.00$ would have the right ranking for the wrong reason. Working from the isolated values, $5.10$ is the figure that is checked, not the detour that produced $5.00$. Printed quotes are not effective rates. After conversion, $5.20\\% > 5.12\\%$ still favors Y.
 
-**2.** A solver who thought monthly compounding must produce the higher effective rate would pick X. Frequency loses here because the quotes differ.
+**2.** Thinking monthly compounding must produce the higher effective rate would pick X. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Frequency loses here because the quotes differ.
 
 **3.** The opposite verdict would need $R_X > R_Y$, which would take a higher monthly quote on X. Under the stem, Y has the higher effective rate.
 
@@ -3498,7 +3498,7 @@ Part 3.2 already raised the recovered quarterly rate $0.011$ through $36$ period
 
 In the story of the stem, nine years of quarterly $1.1\\%$ credits are a single growth factor sitting in front of the original deposit. The recovered object is that $1.4827$. Citing it is citing Part 3.2.
 
-A rushed solver who used $4.4\\% \\times 9 = 39.6\\%$ and then wrote $1.396$ has the simple-interest miss above. Someone who used $1.011^{9} \\approx 1.103$ treated nine years as nine quarters.
+Using $4.4\\% \\times 9 = 39.6\\%$ and then writing $1.396$ has the simple-interest miss above. After isolating the unknown, the check is against $4.4\\% \\times 9 = 39.6\\%$. The figure $1.396$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $4.4\\% \\times 9 = 39.6\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Someone who used $1.011^{9} \\approx 1.103$ treated nine years as nine quarters.
 
 What would have to change for the opposite verdict is a recovered factor that is not about $1.4827$. A $5.0\\%$ nominal quote would produce a larger factor, which is why letter D's required present value would then be smaller. At $4.4\\%$ quarterly for nine years, the factor is about $1.4827$.
 
@@ -3507,9 +3507,9 @@ The recovered nine-year growth factor is about $1.4827$, so the statement is Tru
 
 The original investment is the $\\$60,000$ target divided by the recovered factor. Part 3.2 already did that division and left $S_0 \\approx 40,467.83$. This letter is reading that present value, not rebuilding $(1.011)^{36}$.
 
-**1.** A rushed solver who multiplied $\\$60,000$ by $1.4827$ would be rolling the target forward instead of back, and would land near $\\$89,000$.
+**1.** Multiplying $\\$60,000$ by $1.4827$ would be rolling the target forward instead of back, and would land near $\\$89,000$. That is why $1.4827$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
-**2.** A solver who used $60,000 / 1.474 \\approx 40,705$ would be discounting on the annual clock. Quarterly discounting is slightly stronger, so the recovered $\\$40,467.83$ is a little smaller.
+**2.** Using $60,000 / 1.474 \\approx 40,705$ would be discounting on the annual clock. That is why $60,000 / 1.474 \\approx 40,705$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Quarterly discounting is slightly stronger, so the recovered $\\$40,467.83$ is a little smaller.
 
 **3.** The cents, $83$, match Part 3.2. Letter C will test this deposit against $\\$45,000$. Letter E will subtract it from $\\$60,000$.
 
@@ -3544,7 +3544,7 @@ so the present value sits about $\\$4,532$ *below* $\\$45,000$, not above it.
 
 **1.** The trap is rounding $\\$40,468$ up to $\\$45,000$ as a "nearby round number," or confusing the $\\$60,000$ target with a present-value cutoff.
 
-**2.** A solver who used simple-interest discounting would get a larger opening amount, still not above $\\$45,000$ at this rate. The recovered compound figure is $\\$40,467.83$.
+**2.** Using simple-interest discounting would get a larger opening amount, still not above $\\$45,000$ at this rate. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered compound figure is $\\$40,467.83$.
 
 **3.** The opposite verdict would need a recovered $S_0$ above $\\$45,000$, which would take a lower rate or a shorter wait. At 4.4% quarterly for nine years, $S_0$ is $\\$40,467.83$.
 
@@ -3579,7 +3579,7 @@ so the 5.0% path needs about $\\$2,100$ less up front, not more.
 
 **1.** The trap is thinking "higher rate, more money," which is true of a future value on a *fixed* deposit. Here the target is fixed. Higher rate means less money today.
 
-**2.** A rushed solver who scaled $\\$40,468$ up by $5.0/4.4$ would have the wrong direction.
+**2.** Scaling $\\$40,468$ up by $5.0/4.4$ would have the wrong direction. Keeping $5.0/4.4$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **3.** The opposite verdict would hold if the question were about the nine-year *balance* on a fixed $\\$40,468$ deposit. That future value would be higher at 5.0%. The claim is about the required present value.
 
@@ -3606,7 +3606,7 @@ $$20,000 - 19,532.17 = 467.83$$
 
 so the interest sits about $\\$468$ short of $\\$20,000$.
 
-**1.** A rushed solver who used $60,000 - 40,000 = 20,000$ would hit the cutoff by rounding the deposit to a round $\\$40,000$. The recovered deposit is $\\$40,467.83$, and the interest is $\\$19,532.17$.
+**1.** Using $60,000 - 40,000 = 20,000$ would hit the cutoff by rounding the deposit to a round $\\$40,000$. Once $60,000 - 40,000 = 20,000$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered deposit is $\\$40,467.83$, and the interest is $\\$19,532.17$.
 
 **2.** Another mix-up is $60,000 \\times 0.044 \\times 9 = 23,760$, simple interest on the *target*. That overshoots $\\$20,000$ and uses the wrong principal.
 
@@ -3715,7 +3715,7 @@ $$6.49\\% - 6.30\\% = 0.19$$
 
 so monthly crediting lifts CD1 by about $0.19$ of a point.
 
-**1.** A solver who left the yield at $6.30\\%$ would be describing annual compounding. The stem pays monthly.
+**1.** Leaving the yield at $6.30\\%$ would be describing annual compounding. Keeping $6.30\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The stem pays monthly.
 
 **2.** Rounding $0.064852$ to $6.49\\%$ is the claim's approximation. It is not $6.30\\%$ and not $6.55\\%$.
 
@@ -3727,7 +3727,7 @@ In the story of the stem, a saver is comparing three one-year CDs on $\\$20,000$
 
 On $\\$20,000$ that yield is about $\\$1,297$ of interest, which letter E will use. This letter only names the $6.49\\%$ rate.
 
-A solver who left CD1 at the printed $6.30\\%$ would understate the monthly certificate by $0.19$ of a point and would also understate the interest by about $\\$38$.
+Leaving CD1 at the printed $6.30\\%$ would understate the monthly certificate by $0.19$ of a point and would also understate the interest by about $\\$38$. After isolating the unknown, the check is against $6.30\\%$. The figure $0.19$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $6.30\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 CD1's $6.49\\%$ is the weakest of the three converted yields, even after monthly compounding does its work. On $\\$20,000$ that is $\\$1,297$ of interest, about $\\$38$ more than a once-a-year 6.30% credit, and about $\\$14$ less than CD2.
 
@@ -3739,7 +3739,7 @@ This letter names $6.49\\%$. Letter D will put CD1 last on both printed and conv
 
 Monthly 6.30% is the weakest converted yield of the three certificates, $6.49\\%$. Winning on frequency does not repair a printed hole of $0.10$ to $0.15$ points. On $\\$20,000$ that $6.49\\%$ is about $\\$1,297$ of interest.
 
-A solver who reported $6.30\\%$ would be naming the quote, not the conversion. Letter D will put CD1 last on both columns. This letter names $6.49\\%$.
+Reporting $6.30\\%$ would be naming the quote, not the conversion. The opposite verdict would need a different isolation than $6.30\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Letter D will put CD1 last on both columns. This letter names $6.49\\%$.
 
 so the statement is True.`,
       `**B) CD2's effective annual rate is approximately 6.55%..**  (true)
@@ -3756,7 +3756,7 @@ so four quarterly credits lift CD2 by about $0.15$ of a point.
 
 **2.** Rounding $0.065533$ to $6.55\\%$ is the claim's approximation. Letter C will find CD3 at essentially the same hundredth.
 
-**3.** A solver who split $6.40/12$ as if CD2 were monthly would get a different conversion. The stem pays CD2 quarterly.
+**3.** Splitting $6.40/12$ as if CD2 were monthly would get a different conversion. The recovered isolation is checked against the claim using $6.40/12$, which is the figure the sessions actually produce. The stem pays CD2 quarterly.
 
 The recovered CD2 effective rate is about $6.55\\%$
 
@@ -3774,7 +3774,7 @@ This letter names $6.55\\%$ for CD2. On $\\$20,000$ that is about $\\$1,311$ of 
 
 On $\\$20,000$, CD2's $6.55\\%$ is about $\\$1,311$ of interest. CD1's $6.49\\%$ is about $\\$1,297$. The $\\$13.61$ extra is letter E. This letter only names CD2's converted yield.
 
-A solver who reported $6.40\\%$ would be naming the printed quote, not the quarterly conversion.
+Reporting $6.40\\%$ would be naming the printed quote, not the quarterly conversion. The recovered isolation is checked against the claim using $6.40\\%$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
       `**C) CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's..**  (true)
@@ -3787,7 +3787,7 @@ $$0.065540 - 0.065533 = 0.000007$$
 
 about $0.0007$ of a percentage point, far below a published hundredth.
 
-**1.** A rushed solver who ranked the printed quotes $6.45 > 6.40$ would expect CD3 to win clearly. After conversion they tie, because CD2 compounds four times and CD3 only twice.
+**1.** Ranking the printed quotes $6.45 > 6.40$ would expect CD3 to win clearly. Keeping $6.45 > 6.40$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. After conversion they tie, because CD2 compounds four times and CD3 only twice.
 
 **2.** "Essentially the same" is the right reading of two $6.55\\%$ figures that differ in the fifth decimal of $R$.
 
@@ -3811,7 +3811,7 @@ At published precision they are the same $6.55\\%$. This letter is that tie.
 
 CD3's unrounded conversion sits $0.000007$ from CD2's, less than a cent on $\\$20,000$. Ranking $6.45 > 6.40$ on the page is ranking a tie after conversion. Frequency on CD2 closes the $0.05$ point nominal hole.
 
-At published precision both are $6.55\\%$. This letter is that tie. A solver who reported $6.45\\%$ would be naming CD3's printed quote, not the converted yield.
+At published precision both are $6.55\\%$. This letter is that tie. Reporting $6.45\\%$ would be naming CD3's printed quote, not the converted yield. Once $6.45\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is True.`,
       `**D) CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs..**  (true)
@@ -3857,7 +3857,7 @@ $$1,310.66 - 1,297.04 = 13.62$$
 
 which matches the claimed approximately $\\$13.61$.
 
-**1.** A rushed solver who used the nominal spread $0.10\\% \\times 20,000 = 20$ would overstate the extra. After conversion the effective spread is only about $0.068$ of a point, which is $\\$13.60$ on $\\$20,000$.
+**1.** Using the nominal spread $0.10\\% \\times 20,000 = 20$ would overstate the extra. Once $0.10\\% \\times 20,000 = 20$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. After conversion the effective spread is only about $0.068$ of a point, which is $\\$13.60$ on $\\$20,000$.
 
 **2.** Another mix-up is comparing CD3 with CD1 and attaching that extra to this claim. The claim names CD2 over CD1.
 
@@ -4014,7 +4014,7 @@ Seventy-six point eight months is $6.40$ years of monthly 6% from $\\$15,000$ to
 
 Seventy-six point eight months is $6.40$ years of monthly 6% from $\\$15,000$ to $\\$22,000$. Account Q will beat this wait by about a month and a half. This letter only names M's inversion, $t_M \\approx 76.81$ months rounded to $76.8$.
 
-A solver who reported $72$ months would be a six-year guess. The logarithm is $76.8$, not $72$.
+Reporting $72$ months would be a six-year guess. The opposite verdict would need a different isolation than $72$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The logarithm is $76.8$, not $72$.
 
 so the statement is True.`,
       `**B) It would take Account Q the same amount of time as Account M to reach the same target..**  (false)
@@ -4029,7 +4029,7 @@ so Account Q arrives about a month and a half earlier.
 
 **1.** The trap is thinking equal targets and similar quotes must produce equal waits. The quotes differ, and the clocks differ. Q's higher 6.15% outweighs M's extra monthly dates.
 
-**2.** A rushed solver who converted both waits to months without converting Q's quarters would compare $25.10$ with $76.8$ and think they were wildly different units. In years they are close, but not equal.
+**2.** Converting both waits to months without converting Q's quarters would compare $25.10$ with $76.8$ and think they were wildly different units. Working from the isolated values, $25.10$ is the figure that is checked, not the detour that produced $76.8$. In years they are close, but not equal.
 
 **3.** The opposite verdict would hold if $R_Q = R_M$. Under the stem, $R_Q > R_M$, so Q is faster.
 
@@ -4099,7 +4099,7 @@ so Account M does not have the higher effective rate.
 
 **1.** The trap is ranking by frequency: monthly looks stronger than quarterly. Frequency loses when Q's quote is $0.15$ points higher.
 
-**2.** A solver who converted only M and then assumed monthly must win would never look at $R_Q$. The overview looked. Q is higher.
+**2.** Converting only M and then assuming monthly must win would never look at $R_Q$. The recovered isolation is checked against the claim using $R_Q$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. The overview looked. Q is higher.
 
 **3.** The opposite verdict would need $R_M > R_Q$, which would take a higher monthly quote on M. Under the stem, Q has the higher effective rate, which is why Q wins the race in letters B and C.
 
@@ -4261,7 +4261,7 @@ $$e^{0.05}\\approx 1.051271,\\qquad S(1)\\approx 4{,}730.72$$
 
 In the story of the stem, Ms. Delgado parks $\\$4,500$ for one year at 5% compounded continuously. The recovered object is $S(1) \\approx 4,730.72$. Citing that balance is citing Part 3.1, not a second evaluation of $e^{0.05}$.
 
-**1.** A solver who used $4,500 \\times 1.05 = 4,725$ would be on the annual clock of letter C. The extra $\\$5.72$ is continuous compounding on this principal, which is letter D.
+**1.** Using $4,500 \\times 1.05 = 4,725$ would be on the annual clock of letter C. Keeping $4,500 \\times 1.05 = 4,725$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The extra $\\$5.72$ is continuous compounding on this principal, which is letter D.
 
 **2.** Another mix-up is $4,500 \\times 1.04 = 4,680$, as if $e^{0.05}$ rounded to $1.04$. That rounding is letter E's false claim. The factor is $1.051271$.
 
@@ -4292,7 +4292,7 @@ $$4{,}730.72-4{,}500.00=230.72$$
 
 Interest is the year-end balance minus the $\\$4,500$ deposit. Part 3.1 recovered $S(1) \\approx 4,730.72$. Part 3.2 already subtracted and left $\\$230.72$. This letter is that difference.
 
-**1.** A solver who used $4,500 \\times 0.05 = 225$ would be using simple interest, missing the extra $\\$5.72$ that continuous compounding adds. That extra is letter D.
+**1.** Using $4,500 \\times 0.05 = 225$ would be using simple interest, missing the extra $\\$5.72$ that continuous compounding adds. The recovered isolation is checked against the claim using $4,500 \\times 0.05 = 225$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That extra is letter D.
 
 **2.** Another mix-up is reporting $\\$4,730.72$ as the interest, forgetting to subtract the principal. Interest is the gain, not the balance.
 
@@ -4362,7 +4362,7 @@ The dollar gap is the two one-year balances subtracted. Continuous compounding g
 
 **1.** That $\\$5.72$ is the extra from crediting interest continuously rather than once. On $\\$4,500$ at 5% for one year, the extra is small but positive.
 
-**2.** A solver who used $4,730.72 - 4,735.00$ would be subtracting the false annual figure from letter C and would get a negative gap. The true annual figure is $\\$4,725$.
+**2.** Using $4,730.72 - 4,735.00$ would be subtracting the false annual figure from letter C and would get a negative gap. Once $4,730.72 - 4,735.00$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The true annual figure is $\\$4,725$.
 
 **3.** The opposite verdict would need the two clocks to agree, which happens only at a 0% rate. At 5%, continuous wins by $\\$5.72$.
 
@@ -4500,7 +4500,7 @@ $$e^{0.48}\\approx 1.616074,\\qquad S(6)\\approx 5{,}171.44$$
 
 In the story of the stem, the roaster parks $\\$3,200$ for six years at 8% continuous. The recovered object is $S(6) \\approx 5,171.44$. Citing it is citing Part 3.1, not a second $e^{0.48}$.
 
-**1.** A solver who used $3,200 \\times 1.08^{6} \\approx 5,077$ would be on an annual clock, about $\\$94$ light.
+**1.** Using $3,200 \\times 1.08^{6} \\approx 5,077$ would be on an annual clock, about $\\$94$ light. The opposite verdict would need a different isolation than $3,200 \\times 1.08^{6} \\approx 5,077$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** Another mix-up is $3,200 \\times (1 + 0.08 \\times 6) = 4,736$, simple interest, even lighter.
 
@@ -4576,7 +4576,7 @@ The gap is
 
 $$2,000.00 - 1,971.44 = 28.56$$
 
-**1.** A solver who used $3,200 \\times 0.08 \\times 6 = 1,536$ would undershoot with simple interest. The claim overshoots. Neither is $\\$1,971.44$.
+**1.** Using $3,200 \\times 0.08 \\times 6 = 1,536$ would undershoot with simple interest. Keeping $3,200 \\times 0.08 \\times 6 = 1,536$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The claim overshoots. Neither is $\\$1,971.44$.
 
 **2.** Rounding $\\$1,971.44$ to the nearest hundred is $\\$2,000$, which is how the claim likely appeared. The overview kept the cents. The claim said "approximately $\\$2,000.00$," but $\\$29$ is a large "approximately" next to a figure that already has cents in letter A.
 
@@ -4652,7 +4652,7 @@ about $\\$1,985$ short of a doubled six-year balance.
 
 **1.** Why it sits below: $S(12) / S(6) = e^{0.48} \\approx 1.616$, which is the same six-year factor again, not $2$. Each extra six years multiplies by $1.616$, not by $2$.
 
-**2.** A solver who thought "less than double" meant "less than $S(6)$" would be comparing the wrong pair. The claim compares $S(12)$ with $2 S(6)$.
+**2.** Thinking "less than double" meant "less than $S(6)$" would be comparing the wrong pair. Keeping $S(6)$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The claim compares $S(12)$ with $2 S(6)$.
 
 **3.** The opposite verdict would need $e^{0.48} > 2$, a six-year doubling, which would take $r = (\\ln 2)/6 \\approx 11.6\\%$. The stem is $8\\%$.
 
@@ -4759,7 +4759,7 @@ $$e^{0.09}\\approx 1.094174,\\qquad R\\approx 0.094174\\approx 9.42\\%$$
 
 In the story of the stem, the client wants the true yearly yield on a 9% continuously compounded bond fund. The recovered object is $EAR \\approx 9.42\\%$. Citing it is citing Part 3.1, not a second $e^{0.09}$.
 
-**1.** A solver who left the yield at $9\\%$ would be describing annual compounding. Continuous compounding lifts 9% to about $9.42\\%$.
+**1.** Leaving the yield at $9\\%$ would be describing annual compounding. Keeping $9\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Continuous compounding lifts 9% to about $9.42\\%$.
 
 **2.** The extra against the printed 9% is $0.42$ of a point, which letter C will test against a $0.75$-point cutoff.
 
@@ -4796,7 +4796,7 @@ $$15{,}000\\times 1.094174\\approx 16{,}412.61$$
 
 The year-end balance is $\\$15,000$ times $e^{0.09}$. Part 3.2 recovered $S(1) = 16,412.61$. This letter is reading that product.
 
-**1.** A solver who used $15,000 \\times 1.09 = 16,350$ would miss the extra $\\$62.61$ that continuous compounding adds.
+**1.** Using $15,000 \\times 1.09 = 16,350$ would miss the extra $\\$62.61$ that continuous compounding adds. That is why $15,000 \\times 1.09 = 16,350$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 **2.** The cents, $61$, match $15,000 \\times 1.094174$. Letter A recovered the $9.42\\%$ that produces this dollar figure.
 
@@ -4874,7 +4874,7 @@ The extra is about $0.88$ of a point of convexity.
 
 **1.** The trap is treating $EAR = r$ as linear through the origin. The map $r \\mapsto e^{r} - 1$ bends up. Doubling $r$ more than doubles $EAR$.
 
-**2.** A solver who doubled $9.42\\%$ to $18.84\\%$ and stopped would think the claim was false. The overview's $19.72\\%$ is the actual 18% conversion.
+**2.** Doubling $9.42\\%$ to $18.84\\%$ and stopping would think the claim was false. That is the fork: $9.42\\%$ belongs to the recovered isolation, $18.84\\%$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The overview's $19.72\\%$ is the actual 18% conversion.
 
 **3.** The opposite verdict would hold for annual compounding, where $EAR = r$ so doubling $r$ doubles $EAR$. The stem compounds continuously.
 
@@ -4907,7 +4907,7 @@ $$19.72\\% - 19.50\\% = 0.22$$
 
 so the hypothetical yield clears $19.5\\%$ by about $0.22$ of a point.
 
-**1.** A solver who used $2 \\times 9.42\\% = 18.84\\%$ would miss $19.5\\%$ and would be testing the linear companion, not the exponential conversion.
+**1.** Using $2 \\times 9.42\\% = 18.84\\%$ would miss $19.5\\%$ and would be testing the linear companion, not the exponential conversion. So the letter reads the claim against $2 \\times 9.42\\% = 18.84\\%$; $19.5\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2 \\times 9.42\\% = 18.84\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** Letter D asked whether $19.72\\%$ exceeds $18.84\\%$. This letter asks whether $19.72\\%$ exceeds $19.5\\%$. Both comparisons hold.
 
@@ -5018,19 +5018,19 @@ Yearly compounding at 10% is one plus the quote. Part 3.1 recovered $K_{y} = 1.1
 
 The recovered yearly factor is $1.1000$
 
-Yearly compounding at 10% is the floor of the three clocks: $K = 1.1000$ exactly. Semi-annual will sit at $1.1025$ and continuous at about $1.1052$. This letter is only the yearly factor. On $\\$75,000$ it produces $\\$82,500$ after one year, which letters D and E will compare with the other two clocks. A solver who jumped to $e^{0.10}$ would be answering letter C. The stem's yearly clock is $1 + 0.10 = 1.1000$.
+Yearly compounding at 10% is the floor of the three clocks: $K = 1.1000$ exactly. Semi-annual will sit at $1.1025$ and continuous at about $1.1052$. This letter is only the yearly factor. On $\\$75,000$ it produces $\\$82,500$ after one year, which letters D and E will compare with the other two clocks. Jumping to $e^{0.10}$ would be answering letter C. Once $e^{0.10}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's yearly clock is $1 + 0.10 = 1.1000$.
 
 Yearly compounding at 10% is the floor of the three clocks: $K = 1.1000$ exactly. Semi-annual will sit at $1.1025$ and continuous at about $1.1052$. This letter is only the yearly factor.
 
-On $\\$75,000$ it produces $\\$82,500$ after one year, which letters D and E will compare with the other two clocks. A solver who jumped to $e^{0.10}$ would be answering letter C. The stem's yearly clock is $1 + 0.10 = 1.1000$.
+On $\\$75,000$ it produces $\\$82,500$ after one year, which letters D and E will compare with the other two clocks. Jumping to $e^{0.10}$ would be answering letter C. Once $e^{0.10}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's yearly clock is $1 + 0.10 = 1.1000$.
 
 One plus ten percent is the yearly growth factor, $1.1000$, with no intra-year credits. On $\\$75,000$ that is $\\$82,500$ exactly. Letters B and C will raise the factor. This letter is the floor.
 
-A solver who wrote $1.10^{2}$ would be treating two years as one. The stem's yearly clock for one year is $1.1000$.
+Writing $1.10^{2}$ would be treating two years as one. The path that matches the stem therefore holds $1.10^{2}$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The stem's yearly clock for one year is $1.1000$.
 
 Yearly compounding at 10% is the floor of the three clocks. The factor is $1.1000$ exactly, with no intra-year credits. On $\\$75,000$ that produces $\\$82,500$ after one year.
 
-A solver who jumped to $1.1025$ would be answering letter B. A solver who jumped to $e^{0.10}$ would be answering letter C. This letter is only the yearly factor. Letters D and E will subtract the three recovered balances.
+Jumping to $1.1025$ would be answering letter B. The recovered isolation is checked against the claim using $1.1025$, which is the figure the sessions actually produce. Jumping to $e^{0.10}$ would be answering letter C. Once $e^{0.10}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. This letter is only the yearly factor. Letters D and E will subtract the three recovered balances.
 
 The stem's yearly clock for one year is $1 + 0.10 = 1.1000$, matching the claim.
 
@@ -5067,7 +5067,7 @@ Two 5% half-year credits square to $1.1025$ exactly. On $\\$75,000$ that is $\\$
 
 Leaving $K$ at $1.10$ would erase those two intra-year credits. The recovered semi-annual factor is $(1.05)^{2}$, already in Part 3, and it is exact. No rounding is hiding in $1.1025$. This letter names that factor.
 
-Two half-year 5% credits are an exact square. A solver who added $2 \\times 5\\%$ would report $1.10$ and would be naming the yearly factor. The extra $0.0025$ of factor is the second credit riding on the first, $\\$187.50$ on this $\\$75,000$ contract.
+Two half-year 5% credits are an exact square. Adding $2 \\times 5\\%$ would report $1.10$ and would be naming the yearly factor. After isolating the unknown, the check is against $2 \\times 5\\%$. The figure $1.10$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2 \\times 5\\%$ stays in the write-up. The extra $0.0025$ of factor is the second credit riding on the first, $\\$187.50$ on this $\\$75,000$ contract.
 
 This letter names $1.1025$. Letter E will compare that first gap with the last step to continuous.
 
@@ -5104,7 +5104,7 @@ This letter names $1.1052$. Rounding $1.105171$ to four decimals matches the cla
 
 The continuous ceiling at 10% is already in Part 3 as $1.1052$. On $\\$75,000$ that is about $\\$82,888$. The extra over yearly is about $\\$388$. The extra over semi-annual is letter D's $\\$200.32$.
 
-Rounding $1.105171$ to four decimals matches the claim. This letter names that ceiling factor. A solver who wrote $1.10$ would be collapsing back to the yearly clock.
+Rounding $1.105171$ to four decimals matches the claim. This letter names that ceiling factor. Writing $1.10$ would be collapsing back to the yearly clock. The opposite verdict would need a different isolation than $1.10$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 That matches the claimed continuous factor, so the statement is True.`,
       `**D) On the \\$75,000 balance, continuous compounding exceeds semi-annual compounding by \\$250.32.**  (false)
@@ -5121,7 +5121,7 @@ $$250.32 - 200.32 = 50.00$$
 
 **1.** $\\$250.32$ looks like $\\$200.32$ with a $\\$50$ slip, or $75,000 \\times 0.003337$. The recovered factor gap is $0.002671$, which is $\\$200.32$.
 
-**2.** A solver who used $K_{c} - K_{y}$ instead of $K_{c} - K_{s}$ would get $75,000 \\times 0.005171 \\approx 388$, even farther away.
+**2.** Using $K_{c} - K_{y}$ instead of $K_{c} - K_{s}$ would get $75,000 \\times 0.005171 \\approx 388$, even farther away. The recovered comparison therefore keeps $K_{c} - K_{y}$ and does not substitute $75,000 \\times 0.005171 \\approx 388$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **3.** The opposite verdict would hold if the claim had named $\\$200.32$. It named $\\$250.32$.
 
@@ -5269,7 +5269,7 @@ $$99,372.65 - 98,500.00 = 872.65$$
 
 **1.** $\\$98,500$ looks like $95,000 \\times 1.0368$, or a 3.7% simple bump. The recovered factor is $e^{0.045} \\approx 1.046028$.
 
-**2.** A solver who used $95,000 \\times 1.045 = 99,275$ would be on an annual clock, still above $\\$98,500$ and still not $\\$99,372.65$.
+**2.** Using $95,000 \\times 1.045 = 99,275$ would be on an annual clock, still above $\\$98,500$ and still not $\\$99,372.65$. Keeping $95,000 \\times 1.045 = 99,275$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **3.** The opposite verdict would hold if the claim had named $\\$99,372.65$. It named $\\$98,500.00$.
 
@@ -5302,7 +5302,7 @@ $$e^{0.09}\\approx 1.094174,\\qquad S(2)\\approx 103{,}946.56$$
 
 Two years double the exponent to $0.09$. Part 3.2 recovered $S(2) \\approx 103,946.56$. This letter is reading that product.
 
-**1.** A solver who doubled the false $\\$98,500$ would get $\\$197,000$, which is not a two-year continuous path. Two years multiply by $e^{0.09} \\approx 1.09417$, not by $2$.
+**1.** Doubling the false $\\$98,500$ would get $\\$197,000$, which is not a two-year continuous path. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Two years multiply by $e^{0.09} \\approx 1.09417$, not by $2$.
 
 **2.** Another mix-up is $S(1)^{2} / 95,000$, which actually does give $S(2)$ because $S(1) = 95,000 e^{0.045}$ and squaring the factor is $e^{0.09}$. Using the recovered $S(1) \\approx 99,372.65$ that way lands on $\\$103,946.56$.
 
@@ -5518,7 +5518,7 @@ $$e^{-0.40}\\approx 0.670320,\\qquad v(4)\\approx 40{,}219.20$$
 
 Four years of continuous 10% depreciation on $\\$60,000$ carry the exponent $-0.40$. Part 3.1 recovered $v(4) \\approx 40,219.20$. This letter is reading that value.
 
-**1.** A solver who used $60,000 \\times 0.90^{4} \\approx 39,366$ would be on an annual discrete 10% clock, about $\\$853$ light.
+**1.** Using $60,000 \\times 0.90^{4} \\approx 39,366$ would be on an annual discrete 10% clock, about $\\$853$ light. That is why $60,000 \\times 0.90^{4} \\approx 39,366$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** Another mix-up is $60,000 \\times (1 - 0.10 \\times 4) = 36,000$, simple depreciation, even lighter.
 
@@ -5551,7 +5551,7 @@ $$e^{-0.70}\\approx 0.496585,\\qquad v(7)\\approx 29{,}795.12$$
 
 Seven years carry the exponent $-0.70$. Part 3.2 recovered $v(7) \\approx 29,795.12$. This letter is reading that value.
 
-**1.** A solver who used $40,219 \\times e^{-0.30}$ from the four-year value would actually land on $v(7)$, because the extra three years multiply by $e^{-0.30}$. Using the recovered $v(4)$ that way is consistent. Rebuilding from $v_0$ is what Part 3.2 did.
+**1.** Using $40,219 \\times e^{-0.30}$ from the four-year value would actually land on $v(7)$, because the extra three years multiply by $e^{-0.30}$. The stem's recovered values line up with $40,219 \\times e^{-0.30}$, whereas $e^{-0.30}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $40,219 \\times e^{-0.30}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using the recovered $v(4)$ that way is consistent. Rebuilding from $v_0$ is what Part 3.2 did.
 
 **2.** Another mix-up is half of $\\$60,000$ at seven years, $\\$30,000$, which is nearby but not $e^{-0.70} \\approx 0.4966$.
 
@@ -5795,7 +5795,7 @@ Twelve point six zero years is $\\ln 2 / 0.055$, about $12.6027$ rounded. The Ru
 
 Twelve point six zero years is $\\ln 2 / 0.055$, about $12.6027$ rounded. The Rule of $72$ at $5.5\\%$ gives $13.1$ years, a useful cousin, not the recovered logarithm. Letter C will halve this wait at $11\\%$. Letter B will check the balance at this date.
 
-This letter only names the doubling time at the quoted $5.5\\%$. A solver who reported $12$ years even would be a rounded guess. The inversion is $12.60$.
+This letter only names the doubling time at the quoted $5.5\\%$. Reporting $12$ years even would be a rounded guess. The path that matches the stem therefore holds $12$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. The inversion is $12.60$.
 
 The doubling time $(\\ln 2)/0.055 \\approx 12.60$ years is already in Part 3. Rule of $72$ at $5.5\\%$ gives $13.1$ years, a cousin. This letter names the logarithm, $12.60$.
 
@@ -5814,7 +5814,7 @@ $$S(12.60)=18{,}000\\times 2=36{,}000.00$$
 
 By construction $e^{0.055 \\times 12.60} = 2$, so the balance at the doubling time is $18,000 \\times 2 = 36,000.00$. Part 3.4 already checked that product.
 
-**1.** A solver who used $18,000 e^{0.055 \\times 12} \\approx 34,870$ would be stopping at 12 years, about $1,130$ short of a doubling.
+**1.** Using $18,000 e^{0.055 \\times 12} \\approx 34,870$ would be stopping at 12 years, about $1,130$ short of a doubling. Working from the isolated values, $18,000 e^{0.055 \\times 12} \\approx 34,870$ is the figure that is checked, not the detour that produced $1,130$.
 
 **2.** The cents, $00$, are exact because doubling is exact at $t = \\ln 2 / r$, even if $12.60$ is a rounded calendar.
 
@@ -6077,7 +6077,7 @@ $$\\ln 2.5\\approx 0.916291,\\qquad t\\approx 5.09$$
 
 At $\\delta = 0.18$ the same logarithm is $t = \\ln 2.5 / 0.18$. Part 3.2 recovered $t \\approx 5.09$ years.
 
-**1.** A solver who used $\\ln 0.60 / 0.18$ would be inverting the *lost* share instead of the remaining share.
+**1.** Using $\\ln 0.60 / 0.18$ would be inverting the *lost* share instead of the remaining share. That is why $\\ln 0.60 / 0.18$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 **2.** Another mix-up is $0.60 / 0.18 = 3.33$ years, a linear write-down. Continuous depreciation is a logarithm, not a ratio of percentages.
 
@@ -6108,7 +6108,7 @@ $$v=0.40\\times 120{,}000=48{,}000.00$$
 
 Forty percent of $\\$120,000$ is $\\$48,000.00$. Part 3.3 already checked that remaining value. This letter is that product, not a new exponential.
 
-**1.** A solver who used $120,000 e^{-0.18 \\times 5.09}$ would land on the same $\\$48,000$ by construction. Using $0.40 \\times 120,000$ is the direct route.
+**1.** Using $120,000 e^{-0.18 \\times 5.09}$ would land on the same $\\$48,000$ by construction. The path that matches the stem therefore holds $120,000 e^{-0.18 \\times 5.09}$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $0.40 \\times 120,000$ is the direct route.
 
 **2.** The cents, $00$, are exact because 40% of a round $\\$120,000$ is round.
 
@@ -6161,11 +6161,11 @@ Halving $\\delta$ doubles $t$ because time sits in the denominator. A 9% write-d
 
 Less happening per year means more years to reach the same remaining 40%. The recovered 9% wait is double the original, matching the claim.
 
-A solver who thought a slower rate finishes sooner would have the inequality backwards.
+Thinking a slower rate finishes sooner would have the inequality backwards. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 Time sits in the denominator, so halving $\\delta$ doubles $t$. A 9% write-down takes $10.18$ years to lose 60%, twice $5.09$. Slower is longer, not shorter.
 
-The recovered 9% wait matches the claim. A solver who thought a slower rate finishes sooner would reverse the inequality.
+The recovered 9% wait matches the claim. Thinking a slower rate finishes sooner would reverse the inequality. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 Halving $\\delta$ doubles $t$ because time sits in the denominator. A 9% write-down takes about $10.18$ years to lose 60%, twice $5.09$. Slower is not shorter.
 
@@ -6313,7 +6313,7 @@ At 3% over one year on $\\$25,000$, Part 3.1 recovered a continuous balance of $
 
 **1.** That $\\$11.36$ is the extra from continuous crediting at a modest 3% quote. Small, which is why letter C's "30 times" test against the 15% gap will fail.
 
-**2.** A solver who used $25,000 (e^{0.03} - 1.03)$ directly would land on the same $\\$11.36$.
+**2.** Using $25,000 (e^{0.03} - 1.03)$ directly would land on the same $\\$11.36$. The path that matches the stem therefore holds $25,000 (e^{0.03} - 1.03)$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **3.** The recovered 3% one-year gap is $\\$11.36$.
 
@@ -6350,7 +6350,7 @@ At 15% over one year, Part 3.4 recovered a continuous balance of $\\$29,045.86$ 
 
 **1.** The extra is much larger than $\\$11.36$ because 15% is a much higher quote. Convexity of $e^{r} - (1+r)$ grows with $r$.
 
-**2.** A solver who scaled $\\$11.36$ by $15/3 = 5$ would get $\\$56.80$, far below $\\$295.86$. The gap does not scale linearly with the rate.
+**2.** Scaling $\\$11.36$ by $15/3 = 5$ would get $\\$56.80$, far below $\\$295.86$. Working from the isolated values, $15/3 = 5$ is the figure that is checked, not the detour that produced $295.86$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The gap does not scale linearly with the rate.
 
 **3.** The recovered 15% one-year gap is $\\$295.86$.
 
@@ -6426,7 +6426,7 @@ Eight years at 3% carry the exponent $0.24$. Part 3.8 recovered a continuous bal
 
 **1.** The one-year 3% gap was $\\$11.36$. Eight years raise it to $\\$111.98$, about ten times, not eight times, because both balances grow.
 
-**2.** A solver who used $8 \\times 11.36 = 90.88$ would undershoot the eight-year gap. The extra above $\\$90.88$ is compounding of the gap itself.
+**2.** Using $8 \\times 11.36 = 90.88$ would undershoot the eight-year gap. The recovered isolation is checked against the claim using $8 \\times 11.36 = 90.88$, which is the figure the sessions actually produce. The extra above $\\$90.88$ is compounding of the gap itself.
 
 **3.** The recovered eight-year 3% gap is $\\$111.98$.
 
@@ -6606,7 +6606,7 @@ $$e^{0.095}\\approx 1.099659,\\qquad S_{A}\\approx 439{,}863.54$$
 
 Fund A is continuous compounding at 9.5% on $\\$400,000$. Part 3.1 recovered $S_A \\approx 439,863.54$. This letter is reading that year-end value.
 
-**1.** A solver who used $400,000 \\times 1.095 = 438,000$ would be on an annual clock, about $\\$1,864$ light.
+**1.** Using $400,000 \\times 1.095 = 438,000$ would be on an annual clock, about $\\$1,864$ light. The path that matches the stem therefore holds $400,000 \\times 1.095 = 438,000$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does.
 
 **2.** The cents, $54$, match $400,000 e^{0.095}$. Letters B, D, and E will put Fund B's monthly and daily figures under this ceiling.
 
@@ -6653,7 +6653,7 @@ $$439,750.00 - 439,699.03 = 50.97$$
 
 **1.** $\\$439,750$ looks like a round figure between monthly and continuous. It is not the monthly product. The monthly product is $\\$439,699.03$.
 
-**2.** A solver who used $400,000 \\times 1.09925$ with a rounded factor might invent $\\$439,700$. The claim's $\\$439,750$ is still too high.
+**2.** Using $400,000 \\times 1.09925$ with a rounded factor might invent $\\$439,700$. The path that matches the stem therefore holds $400,000 \\times 1.09925$ fixed and only then reads the claim. The claim's $\\$439,750$ is still too high.
 
 **3.** The opposite verdict would hold if the claim had named $\\$439,699.03$. It named $\\$439,750.00$.
 
@@ -6899,7 +6899,7 @@ $$r\\approx\\frac{0.200021}{3}=0.066674\\approx 6.67\\%$$
 
 The observed pair inverts as a continuous rate. Part 3.1 recovered $r \\approx 6.67\\%$. This letter is reading that implied rate, not rebuilding $\\ln(34,200/28,000)/3$.
 
-**1.** A solver who used $(34,200/28,000 - 1)/3 \\approx 7.38\\%$ would be using simple interest. The recovered continuous rate is $6.67\\%$.
+**1.** Using $(34,200/28,000 - 1)/3 \\approx 7.38\\%$ would be using simple interest. Keeping $(34,200/28,000 - 1)/3 \\approx 7.38\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered continuous rate is $6.67\\%$.
 
 **2.** Another mix-up is $\\ln(34,200/28,000) \\approx 0.20$ reported as $20\\%$. That $0.20$ is the three-year exponent, which Part 3.1 already divided by $3$.
 
@@ -6934,7 +6934,7 @@ $$e^{0.333370}\\approx 1.395661,\\qquad S(5)\\approx 39{,}078.52$$
 
 Five years at the implied $6.67\\%$ is $28,000 e^{0.33337}$. Part 3.2 recovered $S(5) \\approx 39,078.52$. This letter is reading that projection.
 
-**1.** A solver who used $34,200 \\times e^{0.06667 \\times 2} \\approx 39,078$ would be rolling the observed three-year value forward two more years, which is the same path and the same $\\$39,078.52$.
+**1.** Using $34,200 \\times e^{0.06667 \\times 2} \\approx 39,078$ would be rolling the observed three-year value forward two more years, which is the same path and the same $\\$39,078.52$. Once $34,200 \\times e^{0.06667 \\times 2} \\approx 39,078$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **2.** Letter C's straight-line companion is $\\$38,333$. The exponential projection sits about $\\$745$ above that line.
 
@@ -7174,7 +7174,7 @@ $$e^{0.136}\\approx 1.145682,\\qquad S_X\\approx 68{,}740.91$$
 
 Bank X compounds continuously at 6.8% for two years. Part 3.1 recovered $S_X \\approx 68,740.91$. This letter is reading that value.
 
-**1.** A solver who used $60,000 \\times 1.068^{2} \\approx 68,438$ would be on an annual 6.8% clock, about $\\$303$ light.
+**1.** Using $60,000 \\times 1.068^{2} \\approx 68,438$ would be on an annual 6.8% clock, about $\\$303$ light. Keeping $60,000 \\times 1.068^{2} \\approx 68,438$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** The cents, $91$, match $60,000 e^{0.136}$. Letters B and C will put Y and Z above this figure.
 
@@ -7213,7 +7213,7 @@ Bank Y compounds monthly at 6.9% over 24 periods. Part 3.2 recovered $S_Y \\appr
 
 **1.** Y quotes $0.10$ points more than X and compounds monthly rather than continuously. The extra quote outweighs X's continuous clock, so Y finishes about $\\$110$ above X.
 
-**2.** A solver who used $60,000 e^{0.069 \\times 2}$ would be giving Y a continuous clock it does not have, and would overshoot the recovered $S_Y$.
+**2.** Using $60,000 e^{0.069 \\times 2}$ would be giving Y a continuous clock it does not have, and would overshoot the recovered $S_Y$. After isolating the unknown, the check is against $60,000 e^{0.069 \\times 2}$. The figure $S_Y$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $60,000 e^{0.069 \\times 2}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **3.** The recovered Bank Y value is $\\$68,851.32$.
 
@@ -7482,7 +7482,7 @@ $$e^{0.42}\\approx 1.521962,\\qquad S(6)\\approx 3{,}043{,}923$$
 
 Six years at the 7% net rate is $2,000,000 e^{0.42}$. Part 3.2 recovered $S(6) \\approx 3,043,923$. The claim is $\\$3,100,000$, about $\\$56,000$ too high.
 
-**1.** A solver who used $2,000,000 e^{0.09 \\times 6}$ without the fee would get about $\\$3,430,000$, even higher. The claim sits between the net path and the gross path.
+**1.** Using $2,000,000 e^{0.09 \\times 6}$ without the fee would get about $\\$3,430,000$, even higher. Keeping $2,000,000 e^{0.09 \\times 6}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim sits between the net path and the gross path.
 
 **2.** Another mix-up is $2,000,000 \\times 1.07^{6} \\approx 3,000,730$, annual 7%, nearby but not $\\$3,043,923$ and not $\\$3,100,000$.
 
@@ -7708,7 +7708,7 @@ The rates add because A grows and B decays, so the ratio $A/B$ grows at $0.16$. 
 
 The rates add because A grows and B decays, so the ratio $A/B$ grows at $0.16$. Subtracting $\\delta_B$ would describe two growing assets racing, which is not this stem. The displayed inversion is the Part 2 algebra, and it matches the claim.
 
-Letter B will plug in $\\ln 5 / 0.16$. This letter is the algebra. A solver who subtracted the rates would wait for a crossing that never arrives at the right date.
+Letter B will plug in $\\ln 5 / 0.16$. This letter is the algebra. Subtracting the rates would wait for a crossing that never arrives at the right date. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The displayed formula is that same quotient. The rates add because A is growing while B is decaying, so the statement is True.`,
       `**B) The crossover occurs at approximately t ≈ 10.06 years, at which point both assets are worth approximately \\$74,767.44.**  (true)
@@ -7723,7 +7723,7 @@ $$A(10.06)=50{,}000\\times e^{0.04\\times 10.06}\\approx 74{,}767.44$$
 
 The starting ratio is $250,000/50,000 = 5$ and the combined rate is $0.16$. Part 3.1 recovered $t \\approx 10.06$ years, at which both holdings equal about $\\$74,767.44$.
 
-**1.** A solver who used $\\ln 5 / 0.04 = 40.2$ years would be ignoring B's decay. B is falling as A is rising, so they meet much sooner than A's own growth to $\\$250,000$ would take.
+**1.** Using $\\ln 5 / 0.04 = 40.2$ years would be ignoring B's decay. The opposite verdict would need a different isolation than $\\ln 5 / 0.04 = 40.2$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. B is falling as A is rising, so they meet much sooner than A's own growth to $\\$250,000$ would take.
 
 **2.** Checking $A(10.06) = 50,000 e^{0.04 \\times 10.06} \\approx 74,767$ matches $B(10.06) = 250,000 e^{-0.12 \\times 10.06}$.
 
@@ -7927,11 +7927,11 @@ Annual compounding at 7% is a single credit: $40,000 \\times 1.07 = 42,800.00$. 
 
 The recovered annual-compounding value is $\\$42,800.00$
 
-Forty thousand dollars times $1.07$ is $\\$42,800$ exactly. That is the floor of the four-clock ladder. Continuous compounding will sit at $\\$42,900.33$. This letter is only the annual credit. A solver who jumped to $e^{0.07}$ would be answering letter E's ceiling. The recovered annual value is $\\$42,800.00$, matching the claim.
+Forty thousand dollars times $1.07$ is $\\$42,800$ exactly. That is the floor of the four-clock ladder. Continuous compounding will sit at $\\$42,900.33$. This letter is only the annual credit. Jumping to $e^{0.07}$ would be answering letter E's ceiling. Once $e^{0.07}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered annual value is $\\$42,800.00$, matching the claim.
 
 Forty thousand dollars times $1.07$ is $\\$42,800$ exactly. That is the floor of the four-clock ladder. Continuous compounding will sit at $\\$42,900.33$. This letter is only the annual credit.
 
-A solver who jumped to $e^{0.07}$ would be answering letter E's ceiling. The recovered annual value is $\\$42,800.00$, matching the claim.
+Jumping to $e^{0.07}$ would be answering letter E's ceiling. Once $e^{0.07}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered annual value is $\\$42,800.00$, matching the claim.
 
 That is the claimed annual value, so the statement is True.`,
       `**B) The quarterly-compounding value is approximately \\$42,874.36, and the monthly-compounding value is approximately \\$42,891.60.**  (true)
@@ -7948,7 +7948,7 @@ Quarterly compounding uses $i = 0.0175$: Part 3.2 recovered $S_4 \\approx 42,874
 
 **1.** Both sit above the annual $\\$42,800$ and below the continuous $\\$42,900.33$, which is the ladder letter C will name.
 
-**2.** A solver who swapped the two figures would still have them in the right order by accident if they kept quarterly below monthly. The recovered pair is $42,874.36$ then $42,891.60$.
+**2.** Swapping the two figures would still have them in the right order by accident if they kept quarterly below monthly. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The recovered pair is $42,874.36$ then $42,891.60$.
 
 **3.** The recovered quarterly and monthly values match the claim.
 
@@ -8005,7 +8005,7 @@ Annual < quarterly < monthly < continuous is the textbook ranking at a shared 7%
 
 Annual < quarterly < monthly < continuous is the textbook ranking at a shared 7% quote: $42,800.00 < 42,874.36 < 42,891.60 < 42,900.33$. Monthly cannot overtake continuous, because continuous is the limit.
 
-The four recovered values rise with frequency and stop at the ceiling, matching the claim. A solver who ranked by a guessed table would still need this order at a shared nominal rate.
+The four recovered values rise with frequency and stop at the ceiling, matching the claim. Ranking by a guessed table would still need this order at a shared nominal rate. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The four recovered values rise with frequency: $42,800.00 < 42,874.36 < 42,891.60 < 42,900.33$. Monthly cannot overtake continuous at a shared 7% quote. The ranking matches the claim.
 
@@ -8015,7 +8015,7 @@ The four recovered values rise with frequency and stop at the ceiling, matching 
 
 The four recovered values rise with frequency: $42,800.00 < 42,874.36 < 42,891.60 < 42,900.33$. Monthly cannot overtake continuous at a shared 7% quote.
 
-The ranking matches the claim. A solver who ranked by a guessed table would still need this order at a shared nominal rate.
+The ranking matches the claim. Ranking by a guessed table would still need this order at a shared nominal rate. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 With the nominal rate held fixed, more frequent crediting raises the accumulation, so the statement is True.`,
       `**D) The dollar gap between monthly and quarterly compounding is smaller than the dollar gap between continuous and monthly compounding.**  (false)
@@ -8184,7 +8184,7 @@ $$e^{-0.36}\\approx 0.697676,\\qquad S_0\\approx 69{,}767.63$$
 
 Option 1 discounts $\\$100,000$ continuously at 4.5% for eight years: $100,000 e^{-0.36}$. Part 3.1 recovered $S_0 \\approx 69,767.63$. This letter is reading that deposit.
 
-**1.** A solver who used $100,000 / 1.045^{8} \\approx 70,188$ would be on an annual clock, about $\\$420$ too high.
+**1.** Using $100,000 / 1.045^{8} \\approx 70,188$ would be on an annual clock, about $\\$420$ too high. The path that matches the stem therefore holds $100,000 / 1.045^{8} \\approx 70,188$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** The cents, $63$, match $100,000 e^{-0.36}$. Letter B will put Option 2 below this figure.
 
@@ -8223,7 +8223,7 @@ Option 2 uses the faster 6% continuous rate over the same eight years: $100,000 
 
 **1.** Faster growth means less money today. Option 2 needs about $\\$7,889$ less than Option 1, which is letter D's gap with the ranking reversed.
 
-**2.** A solver who reused $\\$69,768$ would be ignoring the extra $1.5$ points of rate.
+**2.** Reusing $\\$69,768$ would be ignoring the extra $1.5$ points of rate. The opposite verdict would need a different isolation than $1.5$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 **3.** The recovered Option 2 deposit is $\\$61,878.34$.
 
@@ -8297,7 +8297,7 @@ The gap between the two deposits is $69,767.63 - 61,878.34 = 7,889.29$. Part 3.3
 
 **1.** The claim overstates the gap and assigns it to the wrong option. Both errors fail the statement.
 
-**2.** A solver who used $9,000$ as a round $69,768 - 60,768$ would be inventing Option 2's figure. The recovered Option 2 is $\\$61,878$.
+**2.** Using $9,000$ as a round $69,768 - 60,768$ would be inventing Option 2's figure. The recovered comparison therefore keeps $9,000$ and does not substitute $69,768 - 60,768$. The recovered Option 2 is $\\$61,878$.
 
 **3.** The opposite verdict would need Option 2 larger by about $\\$9,000$. Option 2 is smaller by about $\\$7,889$.
 
@@ -8443,7 +8443,7 @@ $$e^{0.40}\\approx 1.491825,\\qquad S(4)\\approx 2{,}685{,}284.46$$
 
 Four years of continuous 10% carry the exponent $0.40$. Part 3.1 recovered $S(4) \\approx 2,685,284.46$. This letter is reading that expansion-phase endpoint.
 
-**1.** A solver who used $1,800,000 \\times 1.10^{4} \\approx 2,635,800$ would be on an annual clock, about $\\$49,000$ light.
+**1.** Using $1,800,000 \\times 1.10^{4} \\approx 2,635,800$ would be on an annual clock, about $\\$49,000$ light. Once $1,800,000 \\times 1.10^{4} \\approx 2,635,800$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **2.** The cents, $46$, match $1,800,000 e^{0.40}$. Letter B will multiply this by $e^{0.12}$ for the maturity phase.
 
@@ -8471,7 +8471,7 @@ Letter B will grow this through the 4% maturity phase. The cents, $46$, match th
 
 Year-4 revenue is $\\$2,685,284.46$ after four years of 10% continuous on $\\$1,800,000$. Annual 10% would have left about $\\$2,636,000$. This letter names the expansion-phase endpoint.
 
-Letter B will grow this through the 4% maturity phase. The cents, $46$, match the exponential product. A solver who reported $\\$2,700,000$ would be rounding past the recovered figure.
+Letter B will grow this through the 4% maturity phase. The cents, $46$, match the exponential product. Reporting $\\$2,700,000$ would be rounding past the recovered figure. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 That is the claimed expansion-phase endpoint, so the statement is True.`,
       `**B) Revenue at the end of year 7 is approximately \\$3,027,649.77.**  (true)
@@ -8484,7 +8484,7 @@ $$e^{0.52}\\approx 1.682027,\\qquad S(7)\\approx 3{,}027{,}649.77$$
 
 Three further years at 4% multiply the year-4 figure by $e^{0.12}$. Equivalently, $S(7) = 1,800,000 e^{0.52}$. Part 3.2 recovered $S(7) \\approx 3,027,649.77$.
 
-**1.** A solver who used $2,685,284 \\times 1.04^{3} \\approx 3,021,000$ would be on an annual 4% clock for the second phase, a little light.
+**1.** Using $2,685,284 \\times 1.04^{3} \\approx 3,021,000$ would be on an annual 4% clock for the second phase, a little light. Keeping $2,685,284 \\times 1.04^{3} \\approx 3,021,000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** Letter C will spread the combined exponent $0.52$ across seven years as a $7.43\\%$ constant rate. This letter only names the seven-year revenue.
 
@@ -8688,7 +8688,7 @@ The unweighted $7.00\\%$ does not equal the time-weighted $7.43\\%$, because the
     subsection: `11.2`,
     context: `A construction equipment reseller has a crane currently valued at \\$85,000 that, per accounting policy, must be written down to a resale value of \\$32,000 after 6 years of continuous depreciation. The reseller wants to know the implied annual depreciation rate δ, and compare the crane's value retention to a second, otherwise identical crane with a known δ = 15%.`,
     statements: [
-      `Solving $v_0 \\times e^{-\\delta t} = v(t)$ for δ gives δ = ln(\\frac{v(t)}{v_0})/t.`,
+      `Solving $v_0 \\times e^{-\\delta t} = v(t)$ for δ gives δ = ln($\\frac{v(t)}{v_0}$)/t.`,
       `The implied depreciation rate for the first crane is approximately 16.28% per year.`,
       `A second, otherwise identical crane purchased for the same \\$85,000 but depreciating continuously at a known rate of 15% per year would be worth approximately \\$36,000.00 after the same 6 years.`,
       `The first crane retains more of its value after 6 years than the second crane.`,
@@ -8718,7 +8718,7 @@ The growth-rate inversion $\\ln(S(t)/S_0)/t$ has the ratio backwards for a write
 
 The claim's formula is the false one. The recovered formula swaps the ratio. Later letters use the positive $16.28\\%$.
 
-A solver who used the displayed formula would report a negative depreciation rate.
+Using the displayed formula would report a negative depreciation rate. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The displayed formula $\\ln(v(t)/v_0)/t$ would return a negative rate, which describes growth rather than a write-down, so the statement is False.`,
       `**B) The implied depreciation rate for the first crane is approximately 16.28% per year.**  (true)
@@ -8731,7 +8731,7 @@ $$\\delta\\approx\\frac{0.976915}{6}=0.162819\\approx 16.28\\%$$
 
 The same inversion with the policy values is $\\delta = \\ln(85,000/32,000)/6$. Part 3.1 recovered $\\delta \\approx 16.28\\%$. This letter is reading that implied rate.
 
-**1.** A solver who used the false formula from letter A would get $-16.28\\%$, a growth rate, which is not a write-down.
+**1.** Using the false formula from letter A would get $-16.28\\%$, a growth rate, which is not a write-down. That is why $-16.28\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does.
 
 **2.** Another mix-up is $(1 - 32/85)/6 \\approx 10.4\\%$, a linear write-down. Continuous depreciation is a logarithm.
 
@@ -8955,17 +8955,17 @@ Ten point six six years is $\\ln 2 / 0.065$, about $10.6638$ rounded. The Rule o
 
 Ten point six six years is $\\ln 2 / 0.065$, about $10.6638$ rounded. The Rule of $72$ at $6.5\\%$ gives $11.1$ years, a cousin, not the recovered logarithm. Letters C and E will compare tripling and quadrupling with this $10.66$.
 
-This letter only names the doubling time at $6.5\\%$ continuous. A solver who reported $11$ years would be the Rule-of-72 cousin. The inversion is $10.66$.
+This letter only names the doubling time at $6.5\\%$ continuous. Reporting $11$ years would be the Rule-of-72 cousin. The opposite verdict would need a different isolation than $11$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The inversion is $10.66$.
 
 Doubling at $6.5\\%$ takes $10.66$ years. Rule of $72$ gives $11.1$ years, a cousin. This letter names the logarithm. Letters C and E will compare quadrupling and tripling with this $10.66$.
 
 Ten point six six years is $\\ln 2 / 0.065$. Rule of $72$ at $6.5\\%$ gives $11.1$ years, a cousin, not the recovered logarithm. This letter names the doubling time.
 
-Letters C and E will compare quadrupling and tripling with this $10.66$. A solver who reported $11$ years would be the Rule-of-72 cousin.
+Letters C and E will compare quadrupling and tripling with this $10.66$. Reporting $11$ years would be the Rule-of-72 cousin. The opposite verdict would need a different isolation than $11$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 Doubling at $6.5\\%$ takes $10.66$ years. Rule of $72$ gives $11.1$ years, a cousin. This letter names the logarithm.
 
-Letters C and E will compare quadrupling and tripling with this $10.66$. A solver who reported $11$ years would be the Rule-of-72 cousin.
+Letters C and E will compare quadrupling and tripling with this $10.66$. Reporting $11$ years would be the Rule-of-72 cousin. The opposite verdict would need a different isolation than $11$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 That matches the claimed $10.66$ years, so the statement is True.`,
       `**B) The tripling time at 6.5% is approximately 16.90 years.**  (true)
@@ -8978,7 +8978,7 @@ $$t_{3}\\approx\\frac{1.098612}{0.065}\\approx 16.90$$
 
 Tripling swaps in $\\ln 3$. Part 3.2 recovered $t_3 \\approx 16.90$ years. This letter is reading that wait.
 
-**1.** A solver who used $1.5 \\times 10.66 = 15.99$ would be letter E's false linear scale. The recovered tripling time is $16.90$, about $0.91$ years later than that linear guess.
+**1.** Using $1.5 \\times 10.66 = 15.99$ would be letter E's false linear scale. The path that matches the stem therefore holds $1.5 \\times 10.66 = 15.99$ fixed and only then reads the claim. The recovered tripling time is $16.90$, about $0.91$ years later than that linear guess.
 
 **2.** Rounding $16.9017$ to $16.90$ is the claim's approximation.
 
@@ -9004,7 +9004,7 @@ This letter names $16.90$. Rounding $16.9017$ to $16.90$ is the approximation th
 
 Tripling at $6.5\\%$ takes $16.90$ years. Linear $1.5 \\times 10.66 = 15.99$ undershoots by $0.91$ years, which is letter E's comparison.
 
-The recovered tripling time is $16.90$ years. This letter names that wait. A solver who reported $17$ years even would be rounding past the inversion.
+The recovered tripling time is $16.90$ years. This letter names that wait. Reporting $17$ years even would be rounding past the inversion. Once $17$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Tripling is not a power of two, so the wait is not a simple multiple of the doubling time. $\\ln 3 / 0.065 \\approx 16.90$ years. Linear $1.5 \\times 10.66$ undershoots because $\\ln 3 / \\ln 2 \\approx 1.585$, not $1.5$.
 
@@ -9052,7 +9052,7 @@ $$12{,}000\\times 4=48{,}000.00$$
 
 Four times the $\\$12,000$ deposit is $\\$48,000.00$. By definition of quadrupling time, that is the balance at $t \\approx 21.33$ years. Part 3.5 already wrote that product.
 
-**1.** A solver who used $12,000 e^{0.065 \\times 21.33}$ would land on $\\$48,000$ by construction. Using $12,000 \\times 4$ is the direct route.
+**1.** Using $12,000 e^{0.065 \\times 21.33}$ would land on $\\$48,000$ by construction. Keeping $12,000 e^{0.065 \\times 21.33}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using $12,000 \\times 4$ is the direct route.
 
 **2.** The cents, $00$, are exact because quadrupling a round $\\$12,000$ is round.
 
@@ -9204,7 +9204,7 @@ $$e^{0.30}\\approx 1.349859,\\qquad A(5)\\approx 202{,}478.82$$
 
 Asset A grows continuously at 6% for five years: $150,000 e^{0.30}$. Part 3.1 recovered $A(5) \\approx 202,478.82$. This letter is reading that value.
 
-**1.** A solver who used $150,000 \\times 1.06^{5} \\approx 200,734$ would be on an annual clock, about $\\$1,745$ light.
+**1.** Using $150,000 \\times 1.06^{5} \\approx 200,734$ would be on an annual clock, about $\\$1,745$ light. That is why $150,000 \\times 1.06^{5} \\approx 200,734$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does.
 
 **2.** The cents, $82$, match $150,000 e^{0.30}$. Letters D and E will add this to B and C.
 
@@ -9243,7 +9243,7 @@ $$e^{-0.45}\\approx 0.637628,\\qquad B(5)\\approx 140{,}278.19$$
 
 Asset B depreciates continuously at 9% for five years: $220,000 e^{-0.45}$. Part 3.1 recovered $B(5) \\approx 140,278.19$. This letter is reading that value.
 
-**1.** A solver who used $220,000 \\times 0.91^{5} \\approx 137,600$ would be on an annual discrete 9% clock, a little light.
+**1.** Using $220,000 \\times 0.91^{5} \\approx 137,600$ would be on an annual discrete 9% clock, a little light. That is why $220,000 \\times 0.91^{5} \\approx 137,600$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 **2.** Letter E will flip the sign on this exponent and turn decay into growth of the same 9% magnitude.
 
@@ -9500,7 +9500,7 @@ The overview recovered $\\mathrm{PDV}\\approx \\$7{,}619.05$ from the $\\$8,000$
 
 In the story, Kettering could take that $\\$7,619.05$ today, invest it at $5\\%$, and match the bonus next year. That is why the present value sits below the face: waiting has a price. The agency that books the bonus at $\\$8,000$ today would overstate current resources by the cost of that wait.
 
-**1.** A rushed solver who multiplied $\\$8,000$ by $0.95$, taking a $5\\%$ haircut off the top, would land on $\\$7,600$. That is close to $\\$7,619.05$, which is why the trap is tempting, but it is the linear shortcut rather than the reciprocal discount.
+**1.** Multiplying $\\$8,000$ by $0.95$, taking a $5\\%$ haircut off the top, would land on $\\$7,600$. After isolating the unknown, the check is against $0.95$. The figure $5\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $0.95$ stays in the write-up. That contrast is the reason the verdict goes the way it does. That is close to $\\$7,619.05$, which is why the trap is tempting, but it is the linear shortcut rather than the reciprocal discount.
 
 **2.** Someone who added $5\\%$ instead of discounting would report $\\$8,400$, as if the bonus were already in hand and growing. Present value shrinks a future sum. It does not grow it.
 
@@ -9527,7 +9527,7 @@ A higher opportunity cost makes waiting more expensive. If Kettering can earn $1
 
 **1.** The trap is thinking "higher rate, higher value," as if the bonus were a deposit that grows. The bonus is a future inflow being discounted. Rate and present value move in opposite directions.
 
-**2.** A solver who compared $10\\%$ with $5\\%$ as if those percentages themselves were the present values would never look at the recovered pair $\\$7,273$ versus $\\$7,619$. The comparison lives in the dollars, not in the quoted rates.
+**2.** Comparing $10\\%$ with $5\\%$ as if those percentages themselves were the present values would never look at the recovered pair $\\$7,273$ versus $\\$7,619$. Working from the isolated values, $10\\%$ is the figure that is checked, not the detour that produced $5\\%$. The comparison lives in the dollars, not in the quoted rates.
 
 **3.** The gap is about $\\$346$. That is not a rounding issue. It is the extra discount that the doubled rate takes off the same face.
 
@@ -9550,7 +9550,7 @@ The overview recovered $\\mathrm{PDV}\\approx \\$7{,}619.05$ and the waiting cos
 $$8{,}000-7{,}619.05=380.95.$$
 The claim puts that gap at $\\$423.81$, which is about $\\$43$ too high.
 
-**1.** The figure $\\$423.81$ is what you get if you take $5\\%$ of $\\$8,476$, or if you mix a $5.3\\%$ haircut with the face. Neither of those is $8{,}000$ minus the recovered PDV. A rushed solver who computed $8{,}000\\times 0.052976$ would manufacture a neighbour of $423.81$ without ever subtracting.
+**1.** The figure $\\$423.81$ is what you get if you take $5\\%$ of $\\$8,476$, or if you mix a $5.3\\%$ haircut with the face. Neither of those is $8{,}000$ minus the recovered PDV. Computing $8{,}000\\times 0.052976$ would manufacture a neighbour of $423.81$ without ever subtracting. Working from the isolated values, $8{,}000\\times 0.052976$ is the figure that is checked, not the detour that produced $423.81$.
 
 **2.** Another mix-up is taking $5\\%$ of $\\$8,000$ itself, which is $\\$400$. That linear interest on the face sits near both $380.95$ and the claimed $423.81$, which is why a one-line "$5\\%$ of the bonus" shortcut looks plausible and still misses.
 
@@ -9560,7 +9560,7 @@ The opposite verdict would need a recovered PDV near $\\$7,576$, because $8{,}00
 
 In an agency's cash plan, that $\\$381$ is the financing cost of letting a client pay late. It is not a fee the client named, and it is not $5\\%$ of $\\$8,000$. It is whatever is left after the recovered present value is subtracted from the face.
 
-Why $\\$423.81$ shows up at all is worth a moment. It is the sort of number a calculator gives if you discount at about $5.6\\%$ for one year, or if you mix $8{,}000/1.047$ with a second subtraction. It is not $8{,}000-7{,}619.05$. Naming the false figure matters: a solver who cannot say where $423.81$ came from is guessing, and the guess does not match the recovered gap.
+Why $\\$423.81$ shows up at all is worth a moment. It is the sort of number a calculator gives if you discount at about $5.6\\%$ for one year, or if you mix $8{,}000/1.047$ with a second subtraction. It is not $8{,}000-7{,}619.05$. Naming the false figure matters: cannoting say where $423.81$ came from is guessing, and the guess does not match the recovered gap. Keeping $423.81$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Letter B's job was the level $\\$7,619.05$. This letter's job is the distance down from $\\$8,000$. Mixing those two jobs, and reporting $\\$7,619$ as if it were the gap, is another way to miss. The gap is the smaller number, $\\$380.95$.
 
@@ -9575,7 +9575,7 @@ The overview recovered that at $r=0$ the discount factor is $1$, so
 $$\\mathrm{PDV}=8{,}000.$$
 Waiting is free when money does not grow. The claimed $\\$7,500$ is $\\$500$ too low.
 
-A rushed solver might knock $\\$500$ off the face as a round "waiting penalty," or might reuse a $6.25\\%$ haircut from some other problem. Neither move is the $r=0$ model. At a zero rate, next year's dollar is this year's dollar.
+It is tempting to knock The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $\\$500$ off the face as a round "waiting penalty," or might reuse a $6.25\\%$ haircut from some other problem. Neither move is the $r=0$ model. At a zero rate, next year's dollar is this year's dollar.
 
 The opposite verdict would need a positive rate large enough to pull $\\$8,000$ down to $\\$7,500$, which is a $6.67\\%$ one-year discount, not the stem's $0\\%$.
 
@@ -9585,7 +9585,7 @@ The claimed $\\$7,500$ looks like a round "$\\$500$ courtesy haircut" or like $8
 
 Compare this with the original $5\\%$ case. There the recovered PDV was $\\$7,619.05$, already below $\\$8,000$. Moving the rate from $5\\%$ to $0\\%$ must *raise* present value toward the face, not cut it further to $\\$7,500$. The claim moves PDV in the wrong direction as $r$ falls.
 
-A rushed solver who still divided by $1.05$ after setting $r=0$ would report $\\$7,619$ again and would at least be using the original problem. The $\\$7,500$ is a third, unrelated number.
+Still dividing by $1.05$ after setting $r=0$ would report $\\$7,619$ again and would at least be using the original problem. So the letter reads the claim against $1.05$; $r=0$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.05$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $\\$7,500$ is a third, unrelated number.
 
 For the opposite verdict, the stem would need a positive rate of $\\frac{8{,}000}{7{,}500}-1=6.67\\%$ for one year. That is not $0\\%$. The recovered zero-rate PDV is the full bonus.
 
@@ -9679,7 +9679,7 @@ The overview recovered $\\mathrm{PDV}\\approx \\$10{,}023.24$ as $12{,}000$ time
 
 In the story, the consultant who books $\\$12,000$ as if it were cash today would overstate current resources. The finance department's continuous clock takes about $\\$1,977$ off the face for the three-year wait.
 
-**1.** A rushed solver who used annual compounding instead would land near the overview's other figure, about $\\$10,075$. That is the same quoted $6\\%$ on a slower clock, and it is not this letter's claim.
+**1.** Using annual compounding instead would land near the overview's other figure, about $\\$10,075$. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is the same quoted $6\\%$ on a slower clock, and it is not this letter's claim.
 
 **2.** Someone who subtracted $6\\%\\times 3=18\\%$ of $\\$12,000$ linearly would report $\\$9,840$. Continuous discounting is not a straight $18\\%$ haircut. The recovered $\\$10,023$ sits above that linear shortcut.
 
@@ -9704,7 +9704,7 @@ The overview recovered both: about $\\$10,023.24$ continuously and about $\\$10,
 
 **1.** The trap is thinking "continuous is always better for the person receiving money." Continuous is better for a deposit that you own and that is growing. Here the consultant is waiting on someone else's payment. A stronger growth clock on the discounting side pulls today's value down.
 
-**2.** A solver who compared the factors $0.8353$ and $0.8396$ in the wrong order, or who treated $e^{0.18}$ as a discount rather than a growth factor, would agree with the wording. The recovered pair already blocks that reading: $10{,}023<10{,}076$.
+**2.** Comparing the factors $0.8353$ and $0.8396$ in the wrong order, or treating $e^{0.18}$ as a discount rather than a growth factor, would agree with the wording. The recovered comparison therefore keeps $0.8353$ and does not substitute $e^{0.18}$. The recovered pair already blocks that reading: $10{,}023<10{,}076$.
 
 **3.** The gap is only about $\\$52$. That small dollar difference is why the ranking is easy to flip in one's head. The ranking itself is not small: it is the qualitative fact that more frequent compounding, at a fixed nominal rate, is the stronger clock.
 
@@ -9712,7 +9712,7 @@ The opposite verdict would need the *effective* rate held fixed while frequency 
 
 The consultant cares about this ranking because it decides which quoting convention is tougher on deferred payables. Continuous $6\\%$ is the tougher convention, so it produces the smaller advance against the milestone. Annual $6\\%$ leaves about $\\$52$ more on the table today.
 
-That $\\$52$ is small next to $\\$12,000$, which is why a solver can flip the ranking in their head and not notice. Small is not the same as reversed. $10{,}023<10{,}076$ is still the order, and it is the order the chapter's clocks always produce when the nominal rate is held fixed and frequency rises.
+That $\\$52$ is small next to $\\$12,000$, which is why the ranking can flip the ranking in their head and not notice. Small is not the same as reversed. $10{,}023<10{,}076$ is still the order, and it is the order the chapter's clocks always produce when the nominal rate is held fixed and frequency rises.
 
 Someone who compared $e^{0.18}\\approx 1.197$ with $(1.06)^{3}\\approx 1.191$ and then treated the larger growth factor as the larger *present* value would get the ranking backwards in a different way. Growth factors and discount factors are reciprocals. The larger growth clock is the smaller PDV.
 
@@ -9727,7 +9727,7 @@ The statement accepts that annual compounding gives a higher present value than 
 
 The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx \\$10{,}075.66$ and $\\mathrm{PDV}_{\\mathrm{cont}}\\approx \\$10{,}023.24$. Their difference is about $\\$52.42$, not $\\$60$.
 
-**1.** The ranking in the wording is right. The dollar amount is wrong. A rushed solver who rounded $10{,}076-10{,}023$ as "$\\$50$ something, call it $\\$60$" would sign off on the claim. The overview's subtraction is $52.42$.
+**1.** The ranking in the wording is right. The dollar amount is wrong. Rounding $10{,}076-10{,}023$ as "$\\$50$ something, call it $\\$60$" would sign off on the claim. That is why $10{,}076-10{,}023$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The overview's subtraction is $52.42$.
 
 **2.** Another mix-up is taking $0.5\\%$ of $\\$12,000$, which is $\\$60$ exactly. That is a round $60$ basis-point haircut on the face, not the gap between two recovered present values.
 
@@ -9754,7 +9754,7 @@ The overview recovered the six-year figure as about $\\$8,372.11$, against the t
 
 **2.** The extra arithmetic this letter needs is only the comparison $8{,}372<10{,}023$. The factor $e^{-0.36}\\approx 0.6977$ is already in the overview. This letter is reading that recovered pair, not rebuilding the exponent.
 
-**3.** A rushed solver who thought "twice the wait, twice the discount" might expect PDV to fall by another $\\$1,977$, landing near $\\$8,046$. The actual six-year figure is $\\$8,372$. The extra three years discount a smaller remaining present value, so they take off less than the first three years did.
+**3.** Thinking "twice the wait, twice the discount" might expect PDV to fall by another $\\$1,977$, landing near $\\$8,046$. That is why $8,046$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The actual six-year figure is $\\$8,372$. The extra three years discount a smaller remaining present value, so they take off less than the first three years did.
 
 If the rate were $0\\%$, stretching the horizon would not change PDV at all. The stem's $r=0.06$ is what forces the six-year value down.
 
@@ -9762,7 +9762,7 @@ Sign-off in six years instead of three is a worse receivable for the consultant,
 
 That $\\$1,651$ is less than the first three years' discount of about $\\$1,977$, which is the exponential pattern. Each extra year discounts a smaller remaining present value, so the second three-year block cannot cost as much present value as the first. A linear mind expects equal blocks. The recovered pair does not.
 
-A rushed solver who halved $\\$10,023$ to $\\$5,012$ would overstate how much damage the extra wait does. The milestone is still $\\$12,000$ at year six. Only the discount factor changed, from $0.8353$ to $0.6977$, not from $0.8353$ to $0.4176$.
+Halving $\\$10,023$ to $\\$5,012$ would overstate how much damage the extra wait does. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The milestone is still $\\$12,000$ at year six. Only the discount factor changed, from $0.8353$ to $0.6977$, not from $0.8353$ to $0.4176$.
 
 Letter C compared clocks at a fixed horizon. This letter compares horizons at a fixed continuous clock. Both comparisons use the recovered three-year PDV of $\\$10,023.24$ as the base.
 
@@ -9864,7 +9864,7 @@ The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx \\$26{,}190.41$ as
 
 In the story, the landlord who treats $\\$45,000$ as if it were already in hand would overstate current wealth by about $\\$18,810$. Title-dispute money eight years out is not cash today.
 
-**1.** A rushed solver who used the continuous factor $0.5712$ instead would land near $\\$25,704$, the other recovered present value. That is letter C's object, not this one.
+**1.** Using the continuous factor $0.5712$ instead would land near $\\$25,704$, the other recovered present value. The recovered isolation is checked against the claim using $0.5712$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is letter C's object, not this one.
 
 **2.** Someone who took $7\\%\\times 8=56\\%$ off the face linearly would report $\\$19,800$. The recovered $\\$26,190$ is much higher, because compound discounting is not an $56\\%$ haircut.
 
@@ -9889,7 +9889,7 @@ The overview recovered $\\mathrm{PDV}_{\\mathrm{cont}}\\approx \\$25{,}704.41$ f
 
 **1.** Continuous discounting uses the exponent $rt=0.07\\times 8=0.56$ and the factor $e^{-0.56}\\approx 0.5712$. Those are already in the overview. This letter is checking the dollar product, not rebuilding the exponent.
 
-**2.** The figure $\\$24,900$ is what you get if you take $44.67\\%$ off the face, or if you round $45{,}000\\times 0.553$ by hand. It is not $45{,}000\\times 0.5712$. A rushed solver who mixed the annual factor $0.5820$ with a further $4\\%$ haircut could manufacture a neighbour of $24{,}900$.
+**2.** The figure $\\$24,900$ is what you get if you take $44.67\\%$ off the face, or if you round $45{,}000\\times 0.553$ by hand. It is not $45{,}000\\times 0.5712$. Mixing the annual factor $0.5820$ with a further $4\\%$ haircut could manufacture a neighbour of $24{,}900$. The stem's recovered values line up with $0.5820$, whereas $24{,}900$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.5820$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 **3.** Relative to the annual PDV of about $\\$26,190$, the continuous figure should sit a few hundred dollars lower, not $\\$1,290$ lower. The claimed $\\$24,900$ overshoots that ranking.
 
@@ -9912,7 +9912,7 @@ The statement ranks the two recovered present values and names their gap as abou
 
 The overview recovered $\\$26,190.41$ annually and $\\$25,704.41$ continuously. The difference is $\\$486.00$, not $\\$650$.
 
-**1.** The ranking is right: annual compounding discounts less hard than continuous compounding at the same quoted $7\\%$. The dollar amount is wrong. A rushed solver who rounded "$\\$500$ something" up to $\\$650$ would sign off.
+**1.** The ranking is right: annual compounding discounts less hard than continuous compounding at the same quoted $7\\%$. The dollar amount is wrong. Rounding "$\\$500$ something" up to $\\$650$ would sign off. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 **2.** Another mix-up is taking $1.44\\%$ of $\\$45,000$, which is $\\$648$. That is a round gap invented from the face, not $26{,}190-25{,}704$.
 
@@ -9937,7 +9937,7 @@ The statement resets the rate to $0\\%$ and claims that both clocks would then g
 
 The overview recovered that at $r=0$ both discount factors collapse to $1$, so both methods return the full $\\$45,000$. The claimed $\\$40,000$ is $\\$5,000$ too low.
 
-A rushed solver might knock $\\$5,000$ off as a round "escrow haircut," or might reuse some other problem's $\\$40,000$ face. At a zero rate, eight years from now is the same as today.
+It is tempting to knock The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $\\$5,000$ off as a round "escrow haircut," or might reuse some other problem's $\\$40,000$ face. At a zero rate, eight years from now is the same as today.
 
 The opposite verdict would need a positive rate that pulls $\\$45,000$ down to $\\$40,000$. The stem's $r=0$ does not.
 
@@ -10046,7 +10046,7 @@ The overview recovered $rt=0.225$ and $e^{-0.225}\\approx 0.7985$. The claimed $
 
 The factor $0.7985$ is the unique continuous discount that turns a five-year $\\$150,000$ goal into today's deposit at $4.5\\%$. The claimed $0.8125$ would require a milder rate, about $4.15\\%$ continuous over five years, or a shorter wait. The stem has $r=0.045$ and $t=5$.
 
-A rushed solver who computed $1-0.045\\times 4.17$ or who split $e^{-0.225}$ with $(1.045)^{-5}$ and averaged $0.7985$ with $0.8025$ toward $0.80$ and then "a bit more" can manufacture $0.8125$. None of those is $e^{-0.225}$.
+Computing $1-0.045\\times 4.17$ or splitting $e^{-0.225}$ with $(1.045)^{-5}$ and averaging $0.7985$ with $0.8025$ toward $0.80$ and then "a bit more" can manufacture $0.8125$. That is the fork: $1-0.045\\times 4.17$ belongs to the recovered isolation, $0.8125$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. None of those is $e^{-0.225}$.
 
 Letter B multiplies this factor by $\\$150,000$. Getting $0.7985$ rather than $0.8125$ is what lets the recovered deposit come out as $\\$119,777$ rather than $\\$121,875$.
 
@@ -10059,7 +10059,7 @@ The overview recovered $A\\approx \\$119{,}777.40$ as $150{,}000$ times the reco
 
 In the story, $\\$119,777$ parked today at continuous $4.5\\%$ is the unique amount that hits the imaging target on date. Depositing the full $\\$150,000$ today would overfund the purchase. Depositing nothing would miss it.
 
-**1.** A rushed solver who used the false factor $0.8125$ from letter A would report about $\\$121,875$. That is why A and B are linked: the wrong factor produces a nearby but wrong deposit.
+**1.** Using the false factor $0.8125$ from letter A would report about $\\$121,875$. Once $0.8125$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. That is why A and B are linked: the wrong factor produces a nearby but wrong deposit.
 
 **2.** Someone who divided $\\$150,000$ by $1.045\\times 5$ or by $1.225$ would land in a different neighbourhood. The recovered deposit uses $e^{-0.225}$, already computed in the overview.
 
@@ -10086,7 +10086,7 @@ The overview already grew that trial deposit forward: $e^{0.225}\\approx 1.2523$
 
 **2.** The trap is thinking "$\\$110,000$ is close to $\\$119,777$, so it should be close enough." Being $\\$9,777$ light on the opening deposit is not a rounding error. At this rate it becomes a $\\$12,245$ miss on the target.
 
-**3.** A solver who compared $\\$110,000$ with $\\$150,000$ without growing it would say the deposit is "obviously too small" without naming the $\\$137,756$ landing point. The recovered future value is what makes the miss precise.
+**3.** Comparing $\\$110,000$ with $\\$150,000$ without growing it would say the deposit is "obviously too small" without naming the $\\$137,756$ landing point. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The recovered future value is what makes the miss precise.
 
 The opposite verdict would need the trial deposit to be at least the recovered $\\$119,777$, or the rate to be high enough that $\\$110,000$ grows to $\\$150,000$ in five years. That rate would be $r=\\frac{1}{5}\\ln(150/110)\\approx 6.19\\%$, not $4.5\\%$.
 
@@ -10107,7 +10107,7 @@ The overview recovered the annual-clock deposit as about $\\$120,367.90$, agains
 
 **1.** The trap is thinking "annual compounding is simpler, so you need less money." Simpler is not stronger. At a fixed nominal rate, fewer compounding dates grow the account more slowly, so you must start with more.
 
-**2.** A rushed solver who compared $0.8025$ with $0.7985$ in the wrong direction would agree with the wording. The smaller discount factor (continuous) is the one that permits the smaller deposit.
+**2.** Comparing $0.8025$ with $0.7985$ in the wrong direction would agree with the wording. That is the fork: $0.8025$ belongs to the recovered isolation, $0.7985$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The smaller discount factor (continuous) is the one that permits the smaller deposit.
 
 **3.** The gap is about $\\$590$. That is the extra the practice must put up if the bank switches from continuous to annual crediting.
 
@@ -10115,7 +10115,7 @@ The opposite verdict would need the *effective* rate held fixed while frequency 
 
 The practice might prefer annual compounding because the statement of account looks simpler. Simpler is not cheaper here. At a fixed $4.5\\%$ nominal rate, annual crediting grows the balance more slowly, so the opening cheque has to be larger: $\\$120,368$ rather than $\\$119,777$.
 
-That $\\$590$ extra is the price of the slower clock. A rushed solver who thought "annual means you earn $4.5\\%$ once, so you need less" has the inequality backwards. Needing less would require a *stronger* clock, which is continuous, already used in letter B.
+That $\\$590$ extra is the price of the slower clock. Thinking "annual means you earn $4.5\\%$ once, so you need less" has the inequality backwards. The opposite verdict would need a different isolation than $4.5\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Needing less would require a *stronger* clock, which is continuous, already used in letter B.
 
 Letter E will change time. This letter changes frequency. Both hold the $\\$150,000$ target and the $4.5\\%$ quote fixed.
 
@@ -10130,7 +10130,7 @@ The overview recovered the ten-year deposit as about $\\$95,644.20$. Half of the
 
 **1.** Exponential discounting does not halve when time doubles. The ten-year factor is $e^{-0.45}\\approx 0.6376$, not half of $0.7985$. Half of $0.7985$ would be $0.3993$, which would require a much longer wait.
 
-**2.** A rushed solver who treated present value as inverse-linear in time would sign off on "twice the wait, half the deposit." The recovered pair $\\$95,644$ versus $\\$59,889$ is the extra arithmetic that blocks that reading.
+**2.** Treating present value as inverse-linear in time would sign off on "twice the wait, half the deposit." After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.The recovered pair $\\$95,644$ versus $\\$59,889$ is the extra arithmetic that blocks that reading.
 
 **3.** The ten-year deposit is still about $64\\%$ of the five-year deposit, not $50\\%$. Extra years help, but each extra year discounts a smaller remaining present value.
 
@@ -10244,7 +10244,7 @@ This letter is reading that recovered wait. It is not rebuilding the ratio $1.35
 
 In the story, $5.17$ years is the unique maturity that makes the $\\$18,500$ purchase price consistent with a $\\$25,000$ payoff at $6\\%$ annual compounding. A shorter note at the same price would be a bargain. A longer one would be rich.
 
-**1.** A rushed solver who divided $0.3514$ by $0.06$ would report about $5.86$ years, treating the extra $35\\%$ as simple interest. The logarithm is what converts a growth multiple into a compound wait.
+**1.** Dividing $0.3514$ by $0.06$ would report about $5.86$ years, treating the extra $35\\%$ as simple interest. So the letter reads the claim against $0.3514$; $35\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.3514$ stays in the write-up. The logarithm is what converts a growth multiple into a compound wait.
 
 **2.** The rule of $72$ at $6\\%$ gives a doubling time of $12$ years. This note only grows by a factor $1.3514$, not $2$, so the wait must be well under $12$ years. The recovered $5.17$ sits in that range. The claim's $5.17$ matches the overview, not a rule-of-$72$ guess.
 
@@ -10273,7 +10273,7 @@ The overview recovered the new wait as about $3.83$ years, against the original 
 
 **2.** The trap is thinking "you paid more, so you must wait more." Price and maturity move in opposite directions when $K$ and $r$ are held fixed. Paying more for the same future payoff is how you buy a shorter-dated note.
 
-**3.** A solver who compared $\\$20,000$ with $\\$18,500$ as if those were times, or who added $1.5$ years because the price rose $8\\%$, would agree with the wording. The recovered pair blocks that.
+**3.** Comparing $\\$20,000$ with $\\$18,500$ as if those were times, or adding $1.5$ years because the price rose $8\\%$, would agree with the wording. So the letter reads the claim against $1.5$; $8\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.5$ stays in the write-up. The recovered pair blocks that.
 
 The opposite verdict would need a *lower* price, which enlarges the required multiple and lengthens $t$. Raising the price shortens $t$.
 
@@ -10281,7 +10281,7 @@ Paying $\\$1,500$ more for the same $\\$25,000$ payoff is how the investor buys 
 
 The extra arithmetic is the ranking $3.83<5.17$. The new ratio $1.25$ and its logarithm are already in the overview. This letter does not rebuild them.
 
-A rushed solver who thought "a more expensive note must last longer" is mixing price with duration in the wrong direction. Holding $K$ and $r$ fixed, price and maturity are substitutes: more price, less wait.
+Thinking "a more expensive note must last longer" is mixing price with duration in the wrong direction. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Holding $K$ and $r$ fixed, price and maturity are substitutes: more price, less wait.
 
 Someone who added $20{,}000/18{,}500\\approx 8\\%$ of $5.17$ years, about $0.41$ years, onto $5.17$ would report $5.58$ and would agree with "longer." That proportional scaling is not how the logarithm works.
 
@@ -10329,7 +10329,7 @@ The opposite verdict would need annual compounding to be the stronger clock, whi
 
 The ranking follows from the clocks: at a fixed quoted rate, continuous compounding is stronger, so a fixed multiple is reached sooner. $5.02<5.17$ is that ranking. The claim has it backwards.
 
-A solver who used the false $5.45$ from letter D would still be claiming continuous is longer, and would still be wrong relative to $5.17$. The recovered pair is $5.02$ versus $5.17$, and continuous is the short side.
+Using the false $5.45$ from letter D would still be claiming continuous is longer, and would still be wrong relative to $5.17$. Working from the isolated values, $5.45$ is the figure that is checked, not the detour that produced $5.17$. That contrast is the reason the verdict goes the way it does. The recovered pair is $5.02$ versus $5.17$, and continuous is the short side.
 
 Letter C changed price at a fixed clock. This letter changes clock at a fixed price. Both use the recovered annual $t\\approx 5.17$ as the base.
 
@@ -10424,7 +10424,7 @@ That factor is exact, not an approximation.
 
 The factor $0.45$ is exact because $27$ and $60$ share a factor of $3$: $27/60=9/20=0.45$. It is not a rounded $e^{-rt}$. Rounding is what happens *after* this factor, when $r$ is recovered from $-\\ln 0.45/12$.
 
-A rushed solver who wrote $27{,}000/60{,}000=0.0045$ by losing two zeros, or $0.54$ by swapping digits, would throw every later rate off. The recovered factor is exactly $0.45$.
+Writing $27{,}000/60{,}000=0.0045$ by losing two zeros, or $0.54$ by swapping digits, would throw every later rate off. That is the fork: $27{,}000/60{,}000=0.0045$ belongs to the recovered isolation, $0.54$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The recovered factor is exactly $0.45$.
 
 Letter B converts this factor into $r\\approx 6.65\\%$. Getting $0.45$ right is what lets that rate come out.
 
@@ -10439,7 +10439,7 @@ This letter is reading that recovered rate. It is not rebuilding the factor $0.4
 
 In the story, $6.65\\%$ is the unique continuous discount rate at which the collector's $\\$27,000$ bid equals the present value of the gallery's $\\$60,000$ future sale. A higher implied rate would mean the collector is paying *less* relative to the payoff. A lower rate would mean the bid is richer.
 
-**1.** A rushed solver who computed $0.55/12\\approx 4.58\\%$, treating the $55\\%$ haircut as linear, would understate the continuous rate. Logarithms convert a $12$-year factor of $0.45$ into an annual rate near $6.65\\%$, not $4.58\\%$.
+**1.** Computing $0.55/12\\approx 4.58\\%$, treating the $55\\%$ haircut as linear, would understate the continuous rate. The stem's recovered values line up with $0.55/12\\approx 4.58\\%$, whereas $55\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.55/12\\approx 4.58\\%$ stays in the write-up. Logarithms convert a $12$-year factor of $0.45$ into an annual rate near $6.65\\%$, not $4.58\\%$.
 
 **2.** The rule of $72$ is a doubling shortcut. This painting *more than doubles* in nominal terms ($60/27\\approx 2.22$), so a $72/12=6\\%$ guess is in the neighbourhood but is not the recovered $6.65\\%$.
 
@@ -10493,7 +10493,7 @@ The overview recovered the new rate as about $5.78\\%$, against the original $6.
 
 **2.** The trap is thinking "you paid more, so the rate must be more." Price and implied discount rate move in opposite directions when $K$ and $t$ are held fixed. Paying more for the same future payoff is how you accept a *lower* required return.
 
-**3.** A solver who compared $\\$30,000$ with $\\$27,000$ and added $0.3$ percentage points because the bid rose $11\\%$ would agree with the wording. The recovered pair blocks that.
+**3.** Comparing $\\$30,000$ with $\\$27,000$ and adding $0.3$ percentage points because the bid rose $11\\%$ would agree with the wording. The recovered comparison therefore keeps $0.3$ and does not substitute $11\\%$. That contrast is the reason the verdict goes the way it does. The recovered pair blocks that.
 
 The opposite verdict would need a *lower* bid, which deepens the discount and raises $r$. Raising the bid lowers $r$.
 
@@ -10501,7 +10501,7 @@ Paying $\\$3,000$ more for the same $\\$60,000$ in twelve years is how the colle
 
 The extra arithmetic is the ranking $5.78<6.65$. The new factor $0.5$ and $r=-\\ln 0.5/12$ are already in the overview. This letter reads that ranking.
 
-A rushed solver who thought "a higher bid must imply a higher rate" is treating price as a return. Holding $K$ and $t$ fixed, price and implied $r$ are substitutes: more price, less required return.
+Thinking "a higher bid must imply a higher rate" is treating price as a return. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Holding $K$ and $t$ fixed, price and implied $r$ are substitutes: more price, less required return.
 
 Someone who scaled $6.65\\%$ by $30/27$ would report $7.39\\%$ and would agree with "higher." That proportional scaling is not how $-\\ln(\\mathrm{PDV}/K)/t$ works.
 
@@ -10518,11 +10518,11 @@ That is exactly half of $6.65\\%$, because the same logarithm is now divided by 
 
 **1.** This is one case where doubling time *does* halve the rate, because $r=\\ln(K/\\mathrm{PDV})/t$ is inverse-linear in $t$ when the factor is held fixed. That is different from doubling time in a present-value *level*, which is not linear.
 
-**2.** A rushed solver who thought "twice the wait cannot simply halve $r$" might reject $3.33\\%$ and look for a square-root adjustment. For a rate recovered from a fixed factor, halving is exact.
+**2.** Thinking "twice the wait cannot simply halve $r$" might reject $3.33\\%$ and look for a square-root adjustment. So the letter reads the claim against $r$; $3.33\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $r$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. For a rate recovered from a fixed factor, halving is exact.
 
 This is the special case where doubling time *does* halve the recovered rate, because the discount factor is held fixed at $0.45$ and $r$ is inverse-linear in $t$. That is different from doubling time in a present-value *level*, which is not linear, as letter C already showed.
 
-Half of $6.65\\%$ is $3.325\\%$, which rounds to the claimed $3.33\\%$. A solver who expected a square-root adjustment from letter C's logic would reject $3.33\\%$ and look for about $6.65/\\sqrt{2}\\approx 4.70\\%$. That would be right for a different question. For a rate recovered from a fixed factor, halving $t$'s partner is exact.
+Half of $6.65\\%$ is $3.325\\%$, which rounds to the claimed $3.33\\%$. Expecting a square-root adjustment from letter C's logic would reject $3.33\\%$ and look for about $6.65/\\sqrt{2}\\approx 4.70\\%$. Working from the isolated values, $3.33\\%$ is the figure that is checked, not the detour that produced $6.65/\\sqrt{2}\\approx 4.70\\%$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That would be right for a different question. For a rate recovered from a fixed factor, halving $t$'s partner is exact.
 
 The recovered $24$-year rate is about $3.33\\%$.
 
@@ -10646,7 +10646,7 @@ The overview recovered $\\mathrm{PDV}_{2}\\approx \\$50{,}930.87$ from $65{,}000
 
 In the story, a $\\$65,000$ cheque five years out is not $\\$65,000$ today. Five years of $5\\%$ take about $\\$14,069$ off the face.
 
-**1.** A rushed solver who discounted the $\\$65,000$ for only two years, copying the first payment's horizon, would report about $\\$58,957$. The two payments do not share a horizon.
+**1.** Discounting the $\\$65,000$ for only two years, copying the first payment's horizon, would report about $\\$58,957$. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The two payments do not share a horizon.
 
 **2.** Someone who compared face amounts and concluded that $\\$65,000$ must have a larger PDV than $\\$40,000$ would be right about the ranking but would still need the recovered $\\$50,931$ to check the claim's cents. Letter D is the ranking. This letter is the dollar level.
 
@@ -10656,7 +10656,7 @@ If the $\\$65,000$ were due in two years like the first payment, its PDV would b
 
 Five years of $5\\%$ take more off the $\\$65,000$ than two years take off the $\\$40,000$, but not enough to invert the ranking of the two present values. This letter is only the five-year *level*, $\\$50,931$, not that ranking.
 
-A rushed solver who used $(1.05)^{4}$ or $(1.05)^{6}$ by miscounting the wait would land near $\\$53,477$ or $\\$48,504$. The horizon is five years. The recovered figure uses $(1.05)^{5}\\approx 1.276282$, already in the overview.
+Using $(1.05)^{4}$ or $(1.05)^{6}$ by miscounting the wait would land near $\\$53,477$ or $\\$48,504$. That is the fork: $(1.05)^{4}$ belongs to the recovered isolation, $(1.05)^{6}$ belongs to the discarded mix. The horizon is five years. The recovered figure uses $(1.05)^{5}\\approx 1.276282$, already in the overview.
 
 Someone who discounted $\\$65,000$ continuously at $e^{-0.25}$ would report about $\\$50,622$, letter E's companion, about $\\$309$ too low for this annual question.
 
@@ -10677,7 +10677,7 @@ This letter is reading that sum. It is not re-discounting either payment.
 
 **2.** Another mix-up is adding $40{,}000$ to the five-year PDV, or $65{,}000$ to the two-year PDV, mixing one discounted piece with one face. Either hybrid lands in the $\\$90{,}000$ to $\\$101{,}000$ range, not at $\\$87,212$.
 
-**3.** Rounding $36{,}281+50{,}931$ to $\\$87,212$ matches the claim. A solver who used the slightly different $50{,}929.20$ from a coarser $(1.05)^{5}$ would still be within a couple of dollars of $\\$87,212$.
+**3.** Rounding $36{,}281+50{,}931$ to $\\$87,212$ matches the claim. Using the slightly different $50{,}929.20$ from a coarser $(1.05)^{5}$ would still be within a couple of dollars of $\\$87,212$. The recovered comparison therefore keeps $50{,}929.20$ and does not substitute $(1.05)^{5}$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need one of the two recovered pieces to be wrong by thousands. Both pieces are already locked in letters A and B.
 
@@ -10702,7 +10702,7 @@ The overview recovered $\\mathrm{PDV}_{2}\\approx \\$50{,}930.87$ and $\\mathrm{
 
 **1.** Face and horizon pull in opposite directions. Five years of $5\\%$ is not enough of a discount to make $\\$65,000$ worth less than $\\$40,000$ two years out. The recovered pair is the comparison.
 
-**2.** The trap is "later always means smaller PDV," which would be true for *equal* faces. The faces are not equal. A solver who discounted both as if they were $\\$40,000$ would find the five-year piece smaller and would agree with the wording.
+**2.** The trap is "later always means smaller PDV," which would be true for *equal* faces. The faces are not equal. Discounting both as if they were $\\$40,000$ would find the five-year piece smaller and would agree with the wording. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 **3.** The gap is about $\\$14,650$ in favour of the later payment. That is not a rounding issue.
 
@@ -10710,7 +10710,7 @@ The opposite verdict would need a longer second horizon, a higher rate, or a sma
 
 Face and wait pull against each other. The later payment is $62.5\\%$ larger in face and three years later. At $5\\%$, three extra years of discount are not enough to offset a $62.5\\%$ larger face. The recovered pair is $\\$50,931>\\$36,281$.
 
-The trap slogan is "later always means smaller PDV." That slogan is true for *equal* faces. These faces are not equal. A solver who replaced $K_{2}$ with $\\$40,000$ would find the five-year piece smaller and would agree with the wording. The stem's $K_{2}$ is $\\$65,000$.
+The trap slogan is "later always means smaller PDV." That slogan is true for *equal* faces. These faces are not equal. Replacing $K_{2}$ with $\\$40,000$ would find the five-year piece smaller and would agree with the wording. Once $K_{2}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's $K_{2}$ is $\\$65,000$.
 
 The gap in favour of the later payment is about $\\$14,650$. That is the extra the controller should still attribute to the year-five cheque after discounting.
 
@@ -10727,7 +10727,7 @@ The overview recovered the continuous pieces as about $\\$36,193.48$ and $\\$50,
 
 **1.** Continuous discounting *does* pull the total down from the annual $\\$87,212$, but not all the way through the $\\$86,000$ cutoff. The claim has the direction right and the threshold wrong.
 
-**2.** A rushed solver who rounded $\\$86,816$ down to "$\\$86{,}000$ something, call it under $86$k" would sign off. Full precision keeps it above.
+**2.** Rounding $\\$86,816$ down to "$\\$86{,}000$ something, call it under $86$k" would sign off. That is why $86$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Full precision keeps it above.
 
 **3.** The extra arithmetic this letter needs is only the comparison $86{,}816>86{,}000$. The continuous sum is already in the overview.
 
@@ -10735,7 +10735,7 @@ The opposite verdict would need a recovered continuous total below $\\$86,000$, 
 
 Continuous $5\\%$ is a slightly tougher clock, so the combined PDV should fall from $\\$87,212$ toward something still near $\\$87,000$, not through a $\\$86,000$ floor. The recovered continuous total $\\$86,816$ is that companion. It clears $\\$86,000$ by about $\\$816$.
 
-A rushed solver who rounded $\\$86,816$ to "$\\$86$k and a bit, call it under" would sign off. Full precision stays above the cutoff. Threshold claims die on the recovered side of the cutoff, not on a rounded nickname.
+Rounding $\\$86,816$ to "$\\$86$k and a bit, call it under" would sign off. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Full precision stays above the cutoff. Threshold claims die on the recovered side of the cutoff, not on a rounded nickname.
 
 The extra arithmetic is only $86{,}816>86{,}000$. The continuous pieces $\\$36,193$ and $\\$50,622$ are already in the overview.
 
@@ -10846,7 +10846,7 @@ The overview recovered $\\mathrm{PDV}_{B}\\approx \\$21{,}410.30$ from $25{,}500
 
 The $\\$21,410$ is what a factor would pay today for the right to the architect's $\\$25,500$ in three years at $6\\%$. It is the object that must be compared with the immediate $\\$22,000$, and it already sits below that immediate cash.
 
-A rushed solver who grew $\\$22,000$ forward at $6\\%$ for three years would report about $\\$26,191$ and would think Option B is "almost that," which is a different question: that would be the future value of A, not the present value of B.
+Growing $\\$22,000$ forward at $6\\%$ for three years would report about $\\$26,191$ and would think Option B is "almost that," which is a different question: that would be the future value of A, not the present value of B. The path that matches the stem therefore holds $6\\%$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Discounting for one year only, $25{,}500/1.06\\approx \\$24,057$, would put B above $\\$22,000$ and would flip letter B's ranking. Three years need $(1.06)^{3}\\approx 1.191016$, already in the overview.
 
@@ -10867,7 +10867,7 @@ Option A is the better present-value choice at $6\\%$.
 
 **1.** The trap is choosing B because $\\$25,500>\\$22,000$ on the face. Faces are not comparable across time. After discounting, B is the *smaller* present value.
 
-**2.** A solver who discounted $\\$25,500$ at $6\\%$ for one year, or who used $3\\%$ by mistake, would push B above $\\$22,000$ and would agree that B wins. At the stem's $r=0.06$ and $t=3$, B loses.
+**2.** Discounting $\\$25,500$ at $6\\%$ for one year, or using $3\\%$ by mistake, would push B above $\\$22,000$ and would agree that B wins. The stem's recovered values line up with $6\\%$, whereas $3\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $6\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. At the stem's $r=0.06$ and $t=3$, B loses.
 
 **3.** The gap is about $\\$590$. That is the premium the architect gets for taking cash on delivery rather than waiting three years.
 
@@ -10919,7 +10919,7 @@ That cannot be. Present value of a fixed future sum falls as the rate rises, and
 
 **2.** There *is* a rate at which B beats $\\$22,000$: the overview's $3\\%$ figure of about $\\$23,336$ is one. There is also a break-even rate near $5\\%$, where letter E's recovered PDV is about $\\$22,029$, just above $\\$22,000$. "Regardless of which rate" erases that dependence.
 
-**3.** A rushed solver who only looked at faces, $\\$25,500>\\$22,000$, would think B always wins. Discounting is what makes the ranking rate-dependent.
+**3.** Only looking at faces, $\\$25,500>\\$22,000$, would think B always wins. Once $22,000$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Discounting is what makes the ranking rate-dependent.
 
 The opposite verdict would need $\\mathrm{PDV}_{B}>22{,}000$ at every $r\\ge 0$, which would require the future payment itself to exceed $\\$22,000$ even after infinite discounting, i.e. an immediate payment. Option B is three years out.
 
@@ -10927,7 +10927,7 @@ A universal ranking is a strong claim. It dies as soon as one recovered present 
 
 There is a break-even rate near $5\\%$, where letter E's recovered PDV is about $\\$22,029$, just above $\\$22,000$. Below that rate B wins. Above it A wins. "Regardless of which rate" erases that hinge.
 
-A rushed solver who only compared $\\$25,500$ with $\\$22,000$ thinks B always wins because the face is larger. Discounting is what makes the ranking depend on $r$.
+Only comparing $\\$25,500$ with $\\$22,000$ thinks B always wins because the face is larger. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Discounting is what makes the ranking depend on $r$.
 
 The opposite verdict would need B to be an immediate payment of more than $\\$22,000$, so that even $r\\to\\infty$ could not pull it below. Option B is three years out.
 
@@ -11051,11 +11051,11 @@ The overview recovered $t^{*}=23$ from the first-order condition $P'(t)=rP(t)$. 
 
 **2.** Another mix-up is harvesting when $P$ itself is maximised. $P(t)$ grows forever in $t$, so there is no maximum of $P$. The object being maximised is $f(t)=P(t)e^{-rt}$, and that interior peak is at $t^{*}=23$.
 
-**3.** A solver who used $t^{*}=2/r=25$ and forgot to subtract the shift $2$ would report $25$ years. The recovered date is $23$.
+**3.** Using $t^{*}=2/r=25$ and forgetting to subtract the shift $2$ would report $25$ years. The recovered comparison therefore keeps $t^{*}=2/r=25$ and does not substitute $25$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered date is $23$.
 
 Twenty-three years is a long rotation, and that is what an $8\\%$ continuous rate plus this quadratic $P(t)$ produce. Cutting at year $10$ would leave too much growth on the table. Cutting at year $40$ would leave too much capital tied up. The first-order condition picks the unique interior date $t^{*}=23$.
 
-A solver who maximised $P(t)$ itself would never cut, because $P$ climbs forever. The object is $f(t)=P(t)e^{-0.08t}$, and that discounted value peaks at $23$. Another solver who used $t^{*}=1/r=12.5$ (a different family's shortcut) would cut too soon.
+Maximising $P(t)$ itself would never cut, because $P$ climbs forever. So the letter reads the claim against $P(t)$; $P$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $P(t)$ stays in the write-up. The object is $f(t)=P(t)e^{-0.08t}$, and that discounted value peaks at $23$. Using $t^{*}=1/r=12.5$ (a different family's shortcut) would cut too soon. The path that matches the stem therefore holds $t^{*}=1/r=12.5$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Letter B checks which equation produced $23$. Letter C values $f(23)$. Letter D asks how $t^{*}$ moves with $r$. Letter E checks a nearby date $t=25$. All four start from this recovered $t^{*}=23$.
 
@@ -11084,7 +11084,7 @@ Units are the quickest way to see the inversion is wrong. $P'$ is dollars per ye
 
 For this stand the inverted rule does not even produce a future date: it gave $t^{*}\\approx -0.4$ in the sketch above. The recovered $t^{*}=23$ came from $P'=rP$, after cancelling $(t+2)$ and getting $t+2=25$.
 
-A rushed solver who remembered "divide by $r$" from the doubling-time formula $t=\\ln 2/r$ is in the wrong chapter tool. Harvest timing equates two flows, $P'$ and $rP$. Doubling time inverts a growth factor.
+Remembering "divide by $r$" from the doubling-time formula $t=\\ln 2/r$ is in the wrong chapter tool. After isolating the unknown, the check is against $r$. The figure $t=\\ln 2/r$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $r$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Harvest timing equates two flows, $P'$ and $rP$. Doubling time inverts a growth factor.
 
 The opposite verdict would need the chapter's FOC to be $P'=P/r$. It is $P'=rP$.
 
@@ -11097,7 +11097,7 @@ The statement names the present value of the stand at the optimal harvest as abo
 
 The overview recovered $f(23)\\approx \\$496{,}219$ from $P(23)=3{,}125{,}000$ and $e^{-1.84}\\approx 0.1588$. The claimed $\\$623,000$ overstates this by about $\\$127,000$.
 
-**1.** At $t^{*}=23$ the trees are worth $5{,}000\\times 25^{2}=3{,}125{,}000$ on the stump. That stumpage is not the present value. Present value discounts $23$ years of continuous $8\\%$. A rushed solver who reported stumpage, or a round fraction of it, would land near $623{,}000$ only by accident.
+**1.** At $t^{*}=23$ the trees are worth $5{,}000\\times 25^{2}=3{,}125{,}000$ on the stump. That stumpage is not the present value. Present value discounts $23$ years of continuous $8\\%$. Reporting stumpage, or a round fraction of it, would land near $623{,}000$ only by accident. Keeping $623{,}000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** The factor $e^{-1.84}$ is already in the overview. This letter is reading the product $3{,}125{,}000\\times 0.1588\\approx 496{,}000$, not rebuilding $t^{*}$.
 
@@ -11107,7 +11107,7 @@ The opposite verdict would need $e^{-1.84}\\approx 0.20$, which would require a 
 
 Stumpage at the optimum is $\\$3,125,000$. Present value is that stumpage times $e^{-1.84}\\approx 0.1588$, about $\\$496,000$. The claimed $\\$623,000$ is $20\\%$ of stumpage, or a round $\\$3.125\\mathrm{e}6\\times 0.20$. The recovered discount factor is $0.1588$, not $0.20$.
 
-A solver who reported stumpage, or who discounted at $e^{-1.60}$ as if $t^{*}$ were $20$ years, would land near $\\$630,000$, a neighbour of $\\$623,000$. The recovered date is $23$ years, the exponent is $1.84$, and $f(23)\\approx \\$496{,}219$.
+Reporting stumpage, or discounting at $e^{-1.60}$ as if $t^{*}$ were $20$ years, would land near $\\$630,000$, a neighbour of $\\$623,000$. The stem's recovered values line up with $e^{-1.60}$, whereas $623,000$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $e^{-1.60}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered date is $23$ years, the exponent is $1.84$, and $f(23)\\approx \\$496{,}219$.
 
 Letter E's $f(25)\\approx \\$493{,}296$ sits in the same $\\$490{,}000$ band. Neither nearby date produces $\\$623,000$. The claim is not a rounding of the maximum.
 
@@ -11126,7 +11126,7 @@ For this family the overview recorded $t^{*}=2/r-2$. A higher $r$ makes waiting 
 
 **1.** Comparative statics for an interior harvest have $\\mathrm{d}t^{*}/\\mathrm{d}r<0$ when the second-order condition holds. Letter-level intuition: if the bank starts paying more, you are less willing to leave capital tied up in growing trees.
 
-**2.** A rushed solver who thought "higher rate, trees grow faster" would delay the cut. The trees' growth $P'(t)$ did not change. Only the opportunity cost $rP$ rose, so the crossing $P'=rP$ happens sooner.
+**2.** Thinking "higher rate, trees grow faster" would delay the cut. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The trees' growth $P'(t)$ did not change. Only the opportunity cost $rP$ rose, so the crossing $P'=rP$ happens sooner.
 
 **3.** At $r=0.08$, $t^{*}=23$. At $r=0.10$, the same formula gives $t^{*}=18$. That is five years earlier, not later. The extra arithmetic is that one substitution, which the general relation $t^{*}=2/r-2$ already licences.
 
@@ -11136,7 +11136,7 @@ Opportunity cost is the whole comparative-static story. If the market starts pay
 
 At $r=0.10$, $t^{*}=18$, five years earlier than $23$. At $r=0.05$, $t^{*}=38$, much later. The claim has the slope backwards.
 
-A rushed solver who thought "higher rates make everything grow faster, so wait for bigger trees" is applying $r$ to $P(t)$ as if it were a growth bonus. $P(t)$ did not change. Only the financing cost $rP$ rose, so $P'=rP$ crosses sooner.
+Thinking "higher rates make everything grow faster, so wait for bigger trees" is applying $r$ to $P(t)$ as if it were a growth bonus. So the letter reads the claim against $r$; $P(t)$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $r$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $P(t)$ did not change. Only the financing cost $rP$ rose, so $P'=rP$ crosses sooner.
 
 The extra arithmetic is that one substitution into $t^{*}=2/r-2$, which the overview already recorded as the simplified FOC. This letter reads the sign of $\\mathrm{d}t^{*}/\\mathrm{d}r$.
 
@@ -11153,7 +11153,7 @@ By construction $t^{*}$ maximises $f(t)=P(t)e^{-rt}$. The overview recovered $f(
 
 **2.** The extra arithmetic is the comparison of two recovered $f$ values already in the overview. This letter does not re-solve the FOC. It only checks that a nearby date is worse, which is what a maximum requires.
 
-**3.** A solver who thought "the function is still climbing at $23$, so $25$ should be better" is looking at $P(t)$, not at $f(t)$. After $t^{*}$, $P'$ is still positive but is smaller than $rP$, so the discounted value falls.
+**3.** Thinking "the function is still climbing at $23$, so $25$ should be better" is looking at $P(t)$, not at $f(t)$. The recovered comparison therefore keeps $23$ and does not substitute $f(t)$. After $t^{*}$, $P'$ is still positive but is smaller than $rP$, so the discounted value falls.
 
 The opposite verdict would need $f(25)>f(23)$, which would mean $t^{*}=23$ was not a maximum. The recovered pair says it is.
 
@@ -11161,7 +11161,7 @@ A maximum has to be worse on both sides. The overview already computed the right
 
 The trap is staring at $P(25)=\\$3,645,000>P(23)=\\$3,125,000$ and concluding later is better. Stumpage is not the objective. Present value is. After $t^{*}$, $P'$ is still positive but smaller than $rP$, so $f$ falls.
 
-A solver who thought $23$ was a minimum would expect $f(25)$ to be higher. The recovered pair shows a maximum.
+Thinking $23$ was a minimum would expect $f(25)$ to be higher. That is the fork: $23$ belongs to the recovered isolation, $f(25)$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered pair shows a maximum.
 
 The opposite verdict would need $f(25)>f(23)$. The recovered values run the other way.
 
@@ -11275,7 +11275,7 @@ The overview recovered $\\mathrm{PDV}_{2}\\approx \\$18{,}287.13$ from $30{,}000
 
 In the story, a $\\$30,000$ supplier bill nine years out is not $\\$30,000$ today. Nine years of continuous $5.5\\%$ take about $\\$11,713$ off the face.
 
-**1.** A rushed solver who discounted the $\\$30,000$ for only four years, copying the first invoice's horizon, would report about $\\$24,075$. The two invoices do not share a due date.
+**1.** Discounting the $\\$30,000$ for only four years, copying the first invoice's horizon, would report about $\\$24,075$. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The two invoices do not share a due date.
 
 **2.** Someone who compared faces and concluded that $\\$30,000$ must have a larger PDV than $\\$18,000$ would be right about the ranking (letter D) but would still need the recovered $\\$18,287$ to check this claim's cents.
 
@@ -11285,7 +11285,7 @@ If the $\\$30,000$ were due in four years like the first invoice, its PDV would 
 
 Nine years of continuous $5.5\\%$ take about $\\$11,713$ off the $\\$30,000$ face, leaving $\\$18,287$ today. That is still more than the nearer invoice's $\\$14,445$, which is letter D's ranking, but this letter is only the nine-year *level*.
 
-A rushed solver who used the four-year exponent $0.22$ on the $\\$30,000$ would report about $\\$24,075$. The due dates are different. The nine-year exponent is $0.495$.
+Using the four-year exponent $0.22$ on the $\\$30,000$ would report about $\\$24,075$. Once $0.22$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The due dates are different. The nine-year exponent is $0.495$.
 
 Someone who used annual compounding, $30{,}000/(1.055)^{9}\\approx \\$18,513$, would be about $\\$226$ too high for this continuous question. The supplier's agreement specified continuous $5.5\\%$.
 
@@ -11333,7 +11333,7 @@ The overview recovered $\\mathrm{PDV}_{2}\\approx \\$18{,}287.13$ and $\\mathrm{
 
 **1.** Face and horizon pull in opposite directions. Nine years of $5.5\\%$ is not enough of a discount to make $\\$30,000$ worth less than $\\$18,000$ four years out. The recovered pair is the comparison.
 
-**2.** The trap is "later always means smaller PDV," which would be true for *equal* faces. The faces are not equal. A solver who discounted both as if they were $\\$18,000$ would find the nine-year piece smaller and would agree with the wording.
+**2.** The trap is "later always means smaller PDV," which would be true for *equal* faces. The faces are not equal. Discounting both as if they were $\\$18,000$ would find the nine-year piece smaller and would agree with the wording. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **3.** The gap is about $\\$3,842$ in favour of the later invoice. That is not a rounding issue.
 
@@ -11341,7 +11341,7 @@ The opposite verdict would need a longer second horizon, a higher rate, or a sma
 
 Face and wait pull against each other again. The later invoice is $67\\%$ larger in face and five years later. At $5.5\\%$ continuous, those five extra years are not enough to offset the larger face. The recovered pair is $\\$18,287>\\$14,445$.
 
-The trap slogan is the same as in the licensing problem: "later always means smaller PDV." True for equal faces, false here. A solver who replaced $K_{2}$ with $\\$18,000$ would find the nine-year piece smaller and would agree with the wording. The stem's $K_{2}$ is $\\$30,000$.
+The trap slogan is the same as in the licensing problem: "later always means smaller PDV." True for equal faces, false here. Replacing $K_{2}$ with $\\$18,000$ would find the nine-year piece smaller and would agree with the wording. The recovered isolation is checked against the claim using $K_{2}$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The stem's $K_{2}$ is $\\$30,000$.
 
 The gap in favour of the later invoice is about $\\$3,842$. That is the extra the winery should still attribute to the year-nine bill after discounting.
 
@@ -11360,13 +11360,13 @@ Waiting is free when money does not grow. The two due dates stop mattering, and 
 
 **1.** This is one of the few letters where the "undiscounted total" *is* the right present value, because the rate is zero. At the stem's $5.5\\%$ that same $\\$48,000$ would be the trap from letter C.
 
-**2.** A rushed solver who still applied $e^{-0.22}$ and $e^{-0.495}$ after setting $r=0$ would report $\\$32,732$ again and would reject $\\$48,000$. The exponent $rt$ is zero when $r$ is zero.
+**2.** Still applying $e^{-0.22}$ and $e^{-0.495}$ after setting $r=0$ would report $\\$32,732$ again and would reject $\\$48,000$. The recovered comparison therefore keeps $e^{-0.22}$ and does not substitute $r=0$. The exponent $rt$ is zero when $r$ is zero.
 
 Zero interest is the settlement check: both $e^{-rt}$ factors become $1$, so the lump sum is the sum of the faces, $\\$48,000$. The due dates stop mattering because waiting is free.
 
 At the original $5.5\\%$ that same $\\$48,000$ is the trap from letter C. At $r=0$ it is the right answer. The rate is what switches $\\$48,000$ from a mistake into the recovered value.
 
-A rushed solver who still applied $e^{-0.22}$ and $e^{-0.495}$ after setting $r=0$ would report $\\$32,732$ again. The exponent $rt$ is zero when $r$ is zero.
+Still applying $e^{-0.22}$ and $e^{-0.495}$ after setting $r=0$ would report $\\$32,732$ again. Working from the isolated values, $e^{-0.22}$ is the figure that is checked, not the detour that produced $r=0$. That contrast is the reason the verdict goes the way it does. The exponent $rt$ is zero when $r$ is zero.
 
 The recovered zero-rate settlement is exactly $\\$48,000$.
 
@@ -11467,7 +11467,7 @@ The overview recovered $\\mathrm{PDV}\\approx \\$35{,}234.40$ from $50{,}000e^{-
 
 In the manager's file, $\\$35,234$ is what the seven-year promise is worth today on the continuous clock. Booking $\\$50,000$ would ignore the wait. Booking $\\$33,100$ would discount too hard, as if the exponent were larger than $0.35$.
 
-**1.** A rushed solver who used $e^{-0.40}$ (eight years of $5\\%$) would land near $\\$33,516$, a neighbour of $\\$33,100$. The horizon is seven years. The exponent is $0.35$.
+**1.** Using $e^{-0.40}$ (eight years of $5\\%$) would land near $\\$33,516$, a neighbour of $\\$33,100$. That is the fork: $e^{-0.40}$ belongs to the recovered isolation, $33,100$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The horizon is seven years. The exponent is $0.35$.
 
 **2.** Linear discounting $50{,}000\\times(1-0.05\\times 7)=\\$32,500$ is another neighbour. Continuous discounting is not a $35\\%$ haircut. The recovered factor $0.7047$ leaves $\\$35,234$.
 
@@ -11520,7 +11520,7 @@ A shorter wait at a positive rate must raise present value. The seven-year PDV w
 
 **1.** The trap is thinking the equivalent rate depends on the horizon, so a three-year conversion would be a different $r_{a}$. The conversion $1+r_{a}=e^{r}$ cancelled $t$. The same $5.13\\%$ is the matching annual quote at three years and at seven.
 
-**2.** A solver who discounted three years at the unconverted $5\\%$ annually, $50{,}000/(1.05)^{3}\\approx \\$43,192$, would be close to $\\$43,035$ but would have used the wrong clock. The claim's cents match the converted pair, not that nearby annual-$5\\%$ figure.
+**2.** Discounting three years at the unconverted $5\\%$ annually, $50{,}000/(1.05)^{3}\\approx \\$43,192$, would be close to $\\$43,035$ but would have used the wrong clock. So the letter reads the claim against $5\\%$; $43,035$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $5\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim's cents match the converted pair, not that nearby annual-$5\\%$ figure.
 
 **3.** Halving seven years is not three years, and halving $\\$35,234$ is not $\\$43,035$. The extra arithmetic is the comparison with the recovered seven-year PDV: $43{,}035>35{,}234$, with the three-year level already in the overview.
 
@@ -11530,7 +11530,7 @@ The three-year PDV has to sit between $\\$35,234$ and $\\$50,000$, and it does: 
 
 If $r$ were $0\\%$, shortening the horizon would not change PDV. The recovered $5\\%$ continuous clock is what lifts the three-year value above $\\$35,234$.
 
-The converted annual clock and the continuous clock are built to agree at every $t$, including $t=3$. That is the point of $1+r_{a}=e^{r}$. The recovered three-year PDV is $\\$43,035.40$ on both clocks. A solver who thinks the conversion depends on seven years has not cancelled $t$.
+The converted annual clock and the continuous clock are built to agree at every $t$, including $t=3$. That is the point of $1+r_{a}=e^{r}$. The recovered three-year PDV is $\\$43,035.40$ on both clocks. Thinking the conversion depends on seven years has not cancelled $t$. The path that matches the stem therefore holds $t$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered three-year PDV is about $\\$43,035.40$, so the statement is True.`,
       `**E) The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point.**  (false)
@@ -11675,7 +11675,7 @@ In the negotiation, $\\$64,736$ is the amount of *today's* value the new receiva
 
 **2.** Another mix-up is reporting $\\$35,264$ itself as the amount still needed. That is the contribution already in hand, the opposite piece.
 
-**3.** A solver who used $100{,}000-42{,}000/(1.06)$ would mix a one-year discount with a three-year invoice. The recovered residual uses the three-year PDV.
+**3.** Using $100{,}000-42{,}000/(1.06)$ would mix a one-year discount with a three-year invoice. The recovered isolation is checked against the claim using $100{,}000-42{,}000/(1.06)$, which is the figure the sessions actually produce. The recovered residual uses the three-year PDV.
 
 The opposite verdict would need the known receivable to contribute more than $\\$35,264$ today, which would require a nearer due date or a lower rate. The stem has $t_{1}=3$ and $r=0.06$.
 
@@ -11696,7 +11696,7 @@ The overview recovered $K_{2}\\approx \\$91{,}829.24$ from $64{,}735.99\\times(1
 
 In the story, $\\$91,829$ is the cheque dated six years from now that is worth $\\$64,736$ today at $6\\%$. Writing $\\$64,736$ on the contract would underfund the covenant, because a six-year face equal to a present value has not been grown.
 
-**1.** A rushed solver who grew the residual for only three years would report about $\\$77,102$, letter D's shorter-horizon face. Six years need $(1.06)^{6}\\approx 1.418519$.
+**1.** Growing the residual for only three years would report about $\\$77,102$, letter D's shorter-horizon face. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Six years need $(1.06)^{6}\\approx 1.418519$.
 
 **2.** Someone who reported $\\$100,000-42{,}000=\\$58,000$ grown for six years would start from the wrong residual. The residual is $\\$64,736$, after discounting the known invoice.
 
@@ -11723,7 +11723,7 @@ The overview recovered the three-year face as about $\\$77,101.60$. A nearer due
 
 **2.** The trap is thinking "sooner means you must write a bigger cheque because there is less time to grow." That slogan has the inequality backwards when the *present* value is held fixed. Less time to grow means you start closer to the present-value target, so the face is smaller.
 
-**3.** A solver who compared three years with six years as if those were discounts of a fixed face would expect the three-year PDV to be larger and would confuse PDV with face. This letter is about the required face, not about PDV.
+**3.** Comparing three years with six years as if those were discounts of a fixed face would expect the three-year PDV to be larger and would confuse PDV with face. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. This letter is about the required face, not about PDV.
 
 The opposite verdict would need a *later* due date, which requires more face. Pulling the due date in requires less face.
 
@@ -11862,7 +11862,7 @@ The overview recovered $K\\approx \\$45{,}392.55$ from $35{,}000e^{0.26}$. The c
 
 In the story, $\\$45,393$ in four years is the unique cheque that matches $\\$35,000$ cash today at continuous $6.5\\%$. Asking for $\\$49,851$ would overpay the delayed option.
 
-**1.** A rushed solver who used the false factor $0.8112$ from letter A would divide $\\$35,000$ by $0.8112$ and land near $\\$43,147$, a different wrong neighbour. The recovered factor $0.7711$ produces $\\$45,393$.
+**1.** Using the false factor $0.8112$ from letter A would divide $\\$35,000$ by $0.8112$ and land near $\\$43,147$, a different wrong neighbour. That is why $0.8112$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. The recovered factor $0.7711$ produces $\\$45,393$.
 
 **2.** Growing $\\$35,000$ at simple $6.5\\%\\times 4=26\\%$ gives $\\$44,100$, close to $\\$45,393$ but not the claim's $\\$49,851$. The claim overshoots even the linear companion.
 
@@ -11889,7 +11889,7 @@ The overview recovered $K\\approx \\$45{,}392.55$, so the premium is $10{,}392.5
 
 **2.** Using the false $\\$49,851$ from letter B would have cleared $\\$11,000$ by about $\\$3,851$. That is why the false level and this threshold are linked. The recovered level does not clear.
 
-**3.** A rushed solver who computed $35{,}000\\times 0.065\\times 5$ or $35{,}000\\times 0.32$ can manufacture $\\$11,200$. The premium is $35{,}000(e^{0.26}-1)\\approx \\$10,393$.
+**3.** Computing $35{,}000\\times 0.065\\times 5$ or $35{,}000\\times 0.32$ can manufacture $\\$11,200$. That is the fork: $35{,}000\\times 0.065\\times 5$ belongs to the recovered isolation, $35{,}000\\times 0.32$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The premium is $35{,}000(e^{0.26}-1)\\approx \\$10,393$.
 
 The opposite verdict would need a higher rate or a longer wait. At $r=0.065$ and $t=4$, the premium is $\\$10,393$, not more than $\\$11,000$.
 
@@ -11899,7 +11899,7 @@ The opposite verdict would need $e^{0.26}-1>11{,}000/35{,}000\\approx 0.314$, so
 
 More than $\\$11,000$ would require $rt$ a bit above $0.26$. The stem has $0.26$. The recovered premium $\\$10,393$ is the four-year, $6.5\\%$ figure, about $\\$607$ short of the cutoff. The statement is a threshold claim, and the recovered side is below.
 
-Thresholds are strict. $\\$10,393$ is not more than $\\$11,000$. A solver who rounded to $\\$10,400$ and then to $\\$11,000$ would still be rounding in the wrong direction. The recovered premium sits about $\\$607$ short. The opposite verdict would need a slightly larger $rt$ than $0.26$.
+Thresholds are strict. $\\$10,393$ is not more than $\\$11,000$. Rounding to $\\$10,400$ and then to $\\$11,000$ would still be rounding in the wrong direction. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The recovered premium sits about $\\$607$ short. The opposite verdict would need a slightly larger $rt$ than $0.26$.
 
 The cutoff is a strict inequality. Sitting $\\$607$ short is a fail, not an approximation of a pass. The recovered four-year premium is $\\$10,392.55$, which is not more than $\\$11,000$.
 
@@ -11914,7 +11914,7 @@ The overview recovered the $9\\%$ payment as about $\\$50,166.53$, about $\\$4,7
 
 **1.** The trap is thinking indifference is a property of $\\$35,000$ and four years alone, independent of $r$. Indifference is $K=35{,}000e^{rt}$. Changing $r$ changes $K$.
 
-**2.** A solver who reused $e^{0.26}$ after setting $r=0.09$ would report $\\$45,393$ again and would agree with "unchanged." The $9\\%$ exponent is $0.36$, already in the overview.
+**2.** Reusing $e^{0.26}$ after setting $r=0.09$ would report $\\$45,393$ again and would agree with "unchanged." That is the fork: $e^{0.26}$ belongs to the recovered isolation, $r=0.09$ belongs to the discarded mix.The $9\\%$ exponent is $0.36$, already in the overview.
 
 **3.** Letter E will shorten the wait at the original rate. This letter raises the rate at the original wait. Both move $K$, in opposite directions.
 
@@ -12070,7 +12070,7 @@ The statement names the present value of selling in ten years as about $\\$29,63
 
 The overview recovered $f(10)=40{,}000e^{-0.30}\\approx \\$29{,}632.73$. Ten years of net $3\\%$ decay, growth $5\\%$ minus discount $8\\%$, produces that figure.
 
-**1.** A rushed solver who grew $P$ at $5\\%$ and forgot to discount would report $40{,}000e^{0.50}\\approx \\$65,947$. The objective is present value, not future market value.
+**1.** Growing $P$ at $5\\%$ and forgetting to discount would report $40{,}000e^{0.50}\\approx \\$65,947$. That is the fork: $P$ belongs to the recovered isolation, $40{,}000e^{0.50}\\approx \\$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The objective is present value, not future market value.
 
 **2.** Someone who discounted at the full $8\\%$ without the $5\\%$ growth, $40{,}000e^{-0.80}\\approx \\$17,973$, would understate $f(10)$. The recovered net exponent is $-0.03\\times 10=-0.30$.
 
@@ -12244,7 +12244,7 @@ The recovered denominator is $-\\$1,092$ in the supplied monetary units. This le
 
 **1.** The trap is subtracting in the wrong order, $4,212 - 3,120 = 1,092$, and dropping the minus. The second-order condition in letter E needs the signed quantity, and it is negative. Another mix-up is $0.09 \\times 3,120$ instead of $0.09 \\times 46,800$, pairing the rate with curvature rather than with the first derivative.
 
-**2.** A rushed solver who used $0.09 \\times 520,000 = 46,800$ and then stopped has checked letter A's first-order condition, which does hold, but has not formed the denominator. $P'(t^*) = r P(t^*)$ is a different object from $P''(t^*) - r P'(t^*)$.
+**2.** Using $0.09 \\times 520,000 = 46,800$ and then stopping has checked letter A's first-order condition, which does hold, but has not formed the denominator. The opposite verdict would need a different isolation than $0.09 \\times 520,000 = 46,800$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $P'(t^*) = r P(t^*)$ is a different object from $P''(t^*) - r P'(t^*)$.
 
 **3.** Letter C will divide $520,000$ by this $-1,092$ and recover $\\frac{dt^*}{dr} \\approx -476.19$. Getting the denominator's sign wrong would flip the harvest-timing response. This letter only asks for the denominator itself.
 
@@ -12265,7 +12265,7 @@ This letter is reading that quotient. It is not rebuilding the FOC.
 
 In words, a one-point increase in $r$ (from $0.09$ to $0.10$, say) would pull $t^{*}$ forward by about $4.76$ years. The negative sign is the whole comparative-static story: higher rates bring the harvest forward.
 
-**1.** A rushed solver who used $+1{,}092$ in the denominator would report $+476$ and would agree with letter D's false "lengthen" claim. The second-order denominator is negative.
+**1.** Using $+1{,}092$ in the denominator would report $+476$ and would agree with letter D's false "lengthen" claim. That is the fork: $+1{,}092$ belongs to the recovered isolation, $+476$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The second-order denominator is negative.
 
 **2.** Another mix-up is $46{,}800/-1{,}092\\approx -42.9$, putting $P'$ in the numerator. The formula uses $P(t^{*})$ in the numerator.
 
@@ -12294,7 +12294,7 @@ The overview recovered $\\mathrm{d}t^{*}/\\mathrm{d}r\\approx -476$, a negative 
 
 **2.** Letter C already locked the magnitude and the sign. This letter is only the verbal ranking: lengthen versus shorten. Negative sensitivity means shorten.
 
-**3.** A solver who reported $+476$ from flipping the denominator would agree with "lengthen." The recovered denominator $-1{,}092$ forbids that.
+**3.** Reporting $+476$ from flipping the denominator would agree with "lengthen." The opposite verdict would need a different isolation than $+476$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.The recovered denominator $-1{,}092$ forbids that.
 
 The opposite verdict would need $\\mathrm{d}t^{*}/\\mathrm{d}r>0$, which would require a minimum of $f$, not a maximum.
 
@@ -12447,7 +12447,7 @@ The statement names the present value of the timber at $t^{*}$ as about $\\$250,
 
 The overview recovered $P(t^{*})\\approx \\$1{,}481{,}481$ and $f(t^{*})\\approx \\$287{,}378$. The claimed $\\$250,000$ understates present value by about $\\$37,000$. Stumpage and present value are different jobs.
 
-**1.** A rushed solver who reported a round $\\$250,000$ as "$20\\%$ of stumpage" used $0.20$ in place of $e^{-1.64}\\approx 0.194$. The recovered discount factor is $0.194$, and $1{,}481{,}481\\times 0.194\\approx 287{,}000$.
+**1.** Reporting a round $\\$250,000$ as "$20\\%$ of stumpage" used $0.20$ in place of $e^{-1.64}\\approx 0.194$. The stem's recovered values line up with $20\\%$, whereas $e^{-1.64}\\approx 0.194$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $20\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered discount factor is $0.194$, and $1{,}481{,}481\\times 0.194\\approx 287{,}000$.
 
 **2.** Someone who reported stumpage $\\$1.48$ million as present value would miss by a factor of five. This letter is $f(t^{*})$, not $P(t^{*})$.
 
@@ -12546,7 +12546,7 @@ not $36.44$, and not $2\\times 18.22=36.44$. The shift $-4$ stops doubling from 
 
 **1.** If the formula were $t^{*}=2/r$ with no shift, halving $r$ would double $t^{*}$. The orchard's $P(t)=3{,}000(t+4)^{2}$ carries a shift $4$. Double $2/r$ and the shift still subtracts once, so $t^{*}$ more than doubles.
 
-**2.** A rushed solver who computed $2\\times 18.22=36.44$ applied linearity to a relation that is inverse in $r$ plus a constant. The recovered $40.44$ is four years later than that slogan.
+**2.** Computing $2\\times 18.22=36.44$ applied linearity to a relation that is inverse in $r$ plus a constant. That is the fork: $2\\times 18.22=36.44$ belongs to the recovered isolation, $r$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered $40.44$ is four years later than that slogan.
 
 **3.** Letter A used $r=0.09$ to get $18.22$. This letter uses the same formula at $r=0.045$. Both letters need $t^{*}=2/r-4$, not "$t^{*}$ scales with $1/r$ ignoring the shift."
 
@@ -12781,7 +12781,7 @@ The overview recovered that at $r=0$ both factors are $1$, so $\\mathrm{PDV}=250
 
 **1.** At the original $11\\%$ that same $\\$290,000$ is the trap from letter C. At $r=0$ it is the right answer. The rate is what switches $\\$290,000$ from a mistake into the recovered value.
 
-**2.** A rushed solver who still applied $e^{-0.275}$ and $e^{-0.064}$ after setting $r=0$ would report $\\$227,407$ again. The exponent $rt$ is zero when $r$ is zero.
+**2.** Still applying $e^{-0.275}$ and $e^{-0.064}$ after setting $r=0$ would report $\\$227,407$ again. After isolating the unknown, the check is against $e^{-0.275}$. The figure $r=0$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $e^{-0.275}$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The exponent $rt$ is zero when $r$ is zero.
 
 At $11\\%$ the combined PDV was $\\$227,407$. A zero rate must lift that figure to the faces, $\\$290,000$. Reapplying $e^{-0.275}$ after setting $r=0$ would freeze the $11\\%$ total. The exponent is zero when $r$ is zero. The recovered zero-rate combined PDV is $\\$290,000$.
 
@@ -12992,7 +12992,7 @@ The overview recovered $r=-\\ln 0.625/9\\approx 0.0522=5.22\\%$, half of $10.44\
 
 **1.** This is the inverse-linear case: doubling $t$ at a fixed factor halves $r$. It is not the square-root case of a present-value *level*.
 
-**2.** A rushed solver who expected $10.44/\\sqrt{2}\\approx 7.38\\%$ from mixing letter C's level logic with this rate logic would reject $5.22\\%$. For a rate recovered from a fixed factor, halving is exact.
+**2.** Expecting $10.44/\\sqrt{2}\\approx 7.38\\%$ from mixing letter C's level logic with this rate logic would reject $5.22\\%$. After isolating the unknown, the check is against $10.44/\\sqrt{2}\\approx 7.38\\%$. The figure $5.22\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10.44/\\sqrt{2}\\approx 7.38\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. For a rate recovered from a fixed factor, halving is exact.
 
 When the factor is held fixed, $r$ scales as $1/t$. Doubling $4.5$ to $9$ halves $10.44\\%$ to $5.22\\%$. A square-root adjustment would be right for a present-value *level*, not for this rate. The recovered $9$-year rate is $5.22\\%$.
 
@@ -13167,7 +13167,7 @@ The statement names the present value at $t^{*}$ as about $\\$195,500$.
 
 The overview recovered $P(t^{*})\\approx \\$853{,}333$ and $f(t^{*})\\approx \\$168{,}031$. The claimed $\\$195,500$ overstates present value by about $\\$27,469$.
 
-**1.** A rushed solver who used $e^{-1.5}\\approx 0.223$ in place of $e^{-1.625}\\approx 0.197$ would land near $\\$190,000$, a neighbour of $\\$195,500$. The exponent is $0.075\\times 21.67=1.625$.
+**1.** Using $e^{-1.5}\\approx 0.223$ in place of $e^{-1.625}\\approx 0.197$ would land near $\\$190,000$, a neighbour of $\\$195,500$. Working from the isolated values, $e^{-1.5}\\approx 0.223$ is the figure that is checked, not the detour that produced $195,500$. That contrast is the reason the verdict goes the way it does. The exponent is $0.075\\times 21.67=1.625$.
 
 **2.** Reporting stumpage $\\$853,333$ as present value would miss by a factor of five. This letter is $f(t^{*})$, not $P(t^{*})$.
 
@@ -13235,7 +13235,7 @@ The overview recovered $t^{*}=2/0.15-5\\approx 8.33$. Half of $21.67$ is about $
 
 **1.** The shift $-k$ is why doubling $r$ more than halves $t^{*}$. If $t^{*}$ were $2/r$ with $k=0$, doubling $r$ would exactly halve $t^{*}$. Subtracting $5$ from both $26.67$ and $13.33$ leaves $21.67$ and $8.33$, and $8.33$ is less than half of $21.67$.
 
-**2.** A rushed solver who computed $21.67/2=10.83$ and compared $13.33$ (the unshifted $2/0.15$) with $10.83$ would think "more than half." After subtracting $k$, the ranking flips.
+**2.** Computing $21.67/2=10.83$ and comparing $13.33$ (the unshifted $2/0.15$) with $10.83$ would think "more than half." Working from the isolated values, $21.67/2=10.83$ is the figure that is checked, not the detour that produced $10.83$.After subtracting $k$, the ranking flips.
 
 **3.** Letter D changed $k$ at fixed $r$. This letter changes $r$ at fixed $k$. The recovered $15\\%$ date is $8.33$ years, below half of $21.67$.
 
@@ -13378,7 +13378,7 @@ The statement names the present value of the $\\$30,000$ payment as about $\\$21
 
 The overview recovered $\\mathrm{PV}_{1}\\approx \\$20{,}109.60$ from $30{,}000\\times 0.6703$. The claimed $\\$21,500$ overstates this by about $\\$1,390$.
 
-**1.** A rushed solver who used $30{,}000\\times 0.7167$ or $30{,}000/1.40$ would land near $\\$21,429$, a neighbour of $\\$21,500$. The recovered factor is $0.6703$, not $0.717$.
+**1.** Using $30{,}000\\times 0.7167$ or $30{,}000/1.40$ would land near $\\$21,429$, a neighbour of $\\$21,500$. Working from the isolated values, $30{,}000\\times 0.7167$ is the figure that is checked, not the detour that produced $21,500$. The recovered factor is $0.6703$, not $0.717$.
 
 **2.** Letter A locked $0.6703$. This letter only multiplies by $\\$30,000$. Mixing the ten-year factor $0.4493$ with $\\$30,000$ would understate at about $\\$13,479$.
 
@@ -13411,7 +13411,7 @@ The statement names the present value of the $\\$55,000$ payment as about $\\$26
 
 The overview recovered $\\mathrm{PV}_{2}\\approx \\$24{,}713.09$ from $55{,}000\\times 0.4493$. The claimed $\\$26,000$ overstates this by about $\\$1,287$.
 
-**1.** A rushed solver who used the five-year factor $0.6703$ on the $\\$55,000$ would report about $\\$36,867$. The second payment waits ten years, not five.
+**1.** Using the five-year factor $0.6703$ on the $\\$55,000$ would report about $\\$36,867$. The opposite verdict would need a different isolation than $0.6703$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The second payment waits ten years, not five.
 
 **2.** Another mix-up is $55{,}000\\times 0.473$, a neighbour that produces $\\$26,000$ exactly. The recovered factor is $0.4493$.
 
@@ -13586,7 +13586,7 @@ The overview recovered $a_5 \\approx 73.21$ from $50 \\times (1.10)^{4}$. This l
 
 **2.** Another mix-up is reporting the five-year total $305.26$ as if it were a single year's revenue. Letter C is the sum. This letter is the last term.
 
-Four steps at 10% turn \\$50 million into about \\$73.21 million. A solver who used three steps would land near \\$66.55 million and would miss the claim's cents.
+Four steps at 10% turn \\$50 million into about \\$73.21 million. Using three steps would land near \\$66.55 million and would miss the claim's cents. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The recovered year-5 revenue is about \\$73.21 million, Year 5 is the last term the founder will book in this window. Citing $73.21$ million is citing Part 3, not a second power of $1.10$. A sixth year would be five growth steps and would sit near $80.53$ million, which is not this letter.
 
@@ -13618,13 +13618,13 @@ so growth adds about \\$55.26 million, not \\$60 million. The ranking is right. 
 
 **1.** Why the extra arithmetic is only a subtraction: both totals are already in the overview. This letter does not rebuild $(1.10)^{5}$. It only tests the named \\$60 million cutoff against the recovered \\$55.26 million gap.
 
-**2.** A rushed solver who rounded $305.26$ to $310$ and subtracted $250$ would manufacture exactly $\\$60$ million. Rounding the total first is how the false gap appears. Full precision keeps the extra at $\\$55.26$ million.
+**2.** Rounding $305.26$ to $310$ and subtracting $250$ would manufacture exactly $\\$60$ million. The stem's recovered values line up with $305.26$, whereas $250$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $305.26$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Rounding the total first is how the false gap appears. Full precision keeps the extra at $\\$55.26$ million.
 
 **3.** Another mix-up is treating 10% of $\\$50$ million times five years as $\\$25$ million of extra, or 10% of $\\$250$ million as $\\$25$ million, and then adding that to something to reach $\\$60$. Linear 10% of the opening year, five times, ignores that years 3 through 5 grow on a larger base. The geometric extra is $\\$55.26$ million, already larger than a naive $\\$25$ million and smaller than the claimed $\\$60$ million.
 
 In the story, the founder is asking how much the 10% path is worth relative to a no-growth plan. The recovered objects are $s_5 \\approx 305.26$ and the flat $250$. The claim's own move is to name the difference as $\\$60$ million exactly. That named difference overshoots the recovered gap by about $\\$4.74$ million.
 
-A solver who compared only the last year, $73.21$ versus $50$, and then multiplied the $\\$23.21$ million year-5 extra by something, would also miss. Extra revenue is spread across years 2 through 5, not concentrated in year 5.
+Comparing only the last year, $73.21$ versus $50$, and then multiplying the $\\$23.21$ million year-5 extra by something, would also miss. After isolating the unknown, the check is against $73.21$. The figure $50$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $73.21$ stays in the write-up. Extra revenue is spread across years 2 through 5, not concentrated in year 5.
 
 What would have to change for the opposite verdict is a recovered growing total near $\\$310$ million, because $310 - 250 = 60$. At 10% for five years starting from $\\$50$ million, the recovered total is $\\$305.26$ million. A higher growth rate, or a sixth year, could push the extra through $\\$60$ million. The stem has five years at 10%.
 
@@ -13655,7 +13655,7 @@ is larger still, or if you add year 5 twice: $305.26 + 23.21 \\approx 328.47$, a
 
 In the story, the founder is still asking for five-year revenue under 10% growth. The recovered object is $s_5$. The claim's extra arithmetic is the $\\$23.60$ million gap versus a nearby round-looking total.
 
-A rushed solver who used $n = 6$ in the exponent of the last term and then summed five copies of something near $\\$65.8$ million could also invent $\\$329$ million. The stem's $n$ is $5$.
+Using $n = 6$ in the exponent of the last term and then summed five copies of something near $\\$65.8$ million could also invent $\\$329$ million. Keeping $n = 6$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The stem's $n$ is $5$.
 
 What would have to change for the opposite verdict is a recovered five-year sum near $\\$328.86$ million. That would take a higher growth rate, near 12%, or an extra year. Under 10% for five years starting at $\\$50$ million, the total is $\\$305.26$ million.
 
@@ -13776,13 +13776,13 @@ The recovered four-month pile is $\\$3,750.00$. This letter is that addition.
 
 **1.** The trap is reporting the infinite sum $\\$4,000$ from letter B as if four months already captured the whole stream. Four months capture $\\$3,750$, and the tail after month $4$ is the remaining $\\$250$. Another mix-up is $4 \\times 2,000 = 8,000$, treating every month as the opening profit.
 
-**2.** A solver who used $s_4 = 2,000 \\times (1 - 0.5^4)/(1 - 0.5)$ would get the same $\\$3,750$, which is a check, not a new conversion this letter needs to display. The four explicit month figures already add to $3,750$. Rebuilding the infinite-sum formula is letter B's job.
+**2.** Using $s_4 = 2,000 \\times (1 - 0.5^4)/(1 - 0.5)$ would get the same $\\$3,750$, which is a check, not a new conversion this letter needs to display. The path that matches the stem therefore holds $s_4 = 2,000 \\times (1 - 0.5^4)/(1 - 0.5)$ fixed and only then reads the claim. The four explicit month figures already add to $3,750$. Rebuilding the infinite-sum formula is letter B's job.
 
 **3.** Letter D asks whether $\\$3,750$ exceeds the infinite $\\$4,000$. It does not. This letter only asks whether the four-month total is $\\$3,750$. It is.
 
 In the story of the stem, renewals halve every month, so the early months are almost the whole story. The recovered object is $s_4 = 3,750$. Citing it is citing Part 3.3.
 
-A rushed solver who stopped after three months at $2,000 + 1,000 + 500 = 3,500$ dropped the fourth $\\$250$. Someone who included a fifth month of $\\$125$ would overshoot to $\\$3,875$.
+Stopping after three months at $2,000 + 1,000 + 500 = 3,500$ dropped the fourth $\\$250$. Once $2,000 + 1,000 + 500 = 3,500$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who included a fifth month of $\\$125$ would overshoot to $\\$3,875$.
 
 What would have to change for the opposite verdict is a different opening profit or a different quotient. At $a = 2,000$ and $k = 0.5$, the first four months total $\\$3,750$.
 
@@ -13805,7 +13805,7 @@ $$\\frac{125}{1-0.5} = 250$$
 
 which is exactly the $\\$250$ gap. That tail is positive, so the infinite sum must sit above the partial sum.
 
-**3.** A rushed solver who used $k = -0.5$ and cancelled terms, or who dropped the opening $\\$2,000$, could manufacture a partial sum above $\\$4,000$. The stem's profits are positive and halved, not signed.
+**3.** Using $k = -0.5$ and cancelling terms, or dropping the opening $\\$2,000$, could manufacture a partial sum above $\\$4,000$. That is the fork: $k = -0.5$ belongs to the recovered isolation, $4,000$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's profits are positive and halved, not signed.
 
 In the story, the subscription line earns less each month but never earns a negative month. Adding later months can only raise the total. The recovered objects are the four-month $\\$3,750$ and the infinite $\\$4,000$. The claim's extra move is to say the smaller pile exceeds the larger one.
 
@@ -13840,7 +13840,7 @@ which is exactly the claimed figure. That algebraic extension is not a sum of pr
 
 In the story, $k = 1.5$ would mean each month's profit is $50\\%$ larger than the last. Renewals would explode, not decay. An exploding series of positive terms cannot converge to a finite sum, and it cannot converge to a negative sum.
 
-A rushed solver who remembered "the formula gave $-4{,}000$ on the calculator" would agree with the wording and would have skipped the $|k|<1$ test. The overview already ran that test and failed it.
+Remembering "the formula gave $-4{,}000$ on the calculator" would agree with the wording and would have skipped the $|k|<1$ test. The recovered comparison therefore keeps $-4{,}000$ and does not substitute $|k|<1$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The overview already ran that test and failed it.
 
 What would have to change for the opposite verdict is a quotient with $|k|<1$. The stem's hypothetical is $k = 1.5$. At that quotient the series diverges.
 
@@ -13968,7 +13968,7 @@ $$\\frac{5{,}210.57}{8{,}000} \\approx 0.6513$$
 
 which is about $65\\%$. This letter is reading that recovered share. It is not rebuilding $0.90^{10}$.
 
-**1.** A rushed solver who used $10/\\infty$ as if time-shares were linear would have no percentage at all. Ten years is not $65\\%$ of forever in calendar terms. It is $65\\%$ in dollars because the later deposits are small.
+**1.** Using $10/\\infty$ as if time-shares were linear would have no percentage at all. Once $10/\\infty$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Ten years is not $65\\%$ of forever in calendar terms. It is $65\\%$ in dollars because the later deposits are small.
 
 **2.** Another mix-up is $5{,}210.57 / 8{,}000$ reported as $52\\%$, dropping a digit, or as $75\\%$ from $1-0.90^{10} \\approx 0.651$ misread as $0.75$. The recovered share is $65.13\\%$, which the claim rounds to $65\\%$.
 
@@ -14102,7 +14102,7 @@ The mine's lithium reserve is $18{,}000{,}000$ tons, and the current plan extrac
 
 In the story of the stem, the company is asking how long the reserve lasts if this year's $300{,}000$-ton pace never changes. The recovered object is $t = 60$. Citing it is citing Part 3.1.
 
-A rushed solver who used $18 / 0.3 = 60$ in millions would get the right life with the units cancelled. Someone who used $18{,}000{,}000 / 300 = 60{,}000$ dropped three zeros from the annual take.
+Using $18 / 0.3 = 60$ in millions would get the right life with the units cancelled. That is why $18 / 0.3 = 60$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Someone who used $18{,}000{,}000 / 300 = 60{,}000$ dropped three zeros from the annual take.
 
 What would have to change for the opposite verdict is a different reserve or a different constant take. At $18$ million tons and $300{,}000$ a year, the life is exactly $60$ years.
 
@@ -14111,7 +14111,7 @@ The recovered constant-rate life is $60$ years, so the statement is True.`,
 
 The same $18{,}000{,}000$-ton reserve is now drawn at a faster constant pace, $500{,}000$ tons a year. Exhaustion time is again reserve divided by the annual take. Part 3.1 already formed that second quotient and left $t = 36$ years. This letter is reading that count.
 
-**1.** The trap is scaling the $60$-year life from letter A by $3/5$ and then rounding the wrong way: $60 \\times 300/500 = 36$ is in fact exact, because both lives are linear in $1/E$. A solver who used $60 - 10 = 50$, treating the extra $200{,}000$ tons a year as ten years of the original pace, has mixed a flow with a stock.
+**1.** The trap is scaling the $60$-year life from letter A by $3/5$ and then rounding the wrong way: $60 \\times 300/500 = 36$ is in fact exact, because both lives are linear in $1/E$. Using $60 - 10 = 50$, treating the extra $200{,}000$ tons a year as ten years of the original pace, has mixed a flow with a stock. So the letter reads the claim against $60 - 10 = 50$; $200{,}000$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $60 - 10 = 50$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 **2.** Another wrong life is $18{,}000{,}000 / 50{,}000 = 360$, a dropped zero, or $500{,}000 / 18{,}000{,}000$, the inverted quotient. The growth scenario at $k = 1.05$ is not this letter. This letter holds extraction constant at $500{,}000$.
 
@@ -14147,7 +14147,7 @@ so the wording is not a rounding of the recovered geometric total.
 
 **1.** The figure $3{,}900{,}000$ is what you get from $300{,}000 \\times 10 \\times 1.30$, a $30\\%$ garnish on the constant ten-year take, or from $300{,}000 \\times (1.05)^{10} \\times 8$. Neither is the finite-sum formula. The recovered total already sits in Part 3.
 
-**2.** A rushed solver who used $300{,}000 \\times 10 \\times 1.05 = 3{,}150{,}000$ would understate, applying one year of growth to all ten years. Someone who used $a(k^{n}-1)/k$ without subtracting $1$ in the right place could overshoot toward $3.9$ million.
+**2.** Using $300{,}000 \\times 10 \\times 1.05 = 3{,}150{,}000$ would understate, applying one year of growth to all ten years. The path that matches the stem therefore holds $300{,}000 \\times 10 \\times 1.05 = 3{,}150{,}000$ fixed and only then reads the claim. Someone who used $a(k^{n}-1)/k$ without subtracting $1$ in the right place could overshoot toward $3.9$ million.
 
 **3.** Letter E will subtract this growing total from the constant $3{,}000{,}000$. This letter only asks whether the growing ten-year take is about $3{,}900{,}000$. It is about $3{,}773{,}368$.
 
@@ -14182,7 +14182,7 @@ which sits about $226{,}632$ tons short of a $1{,}000{,}000$-ton cutoff.
 
 In the story, the analysts are asking how much extra lithium a 5% ramp removes in ten years relative to holding extraction flat. The recovered extra is $773{,}368$ tons. That is a real extra, and it is not more than a million tons.
 
-A rushed solver who compared year-10 extraction $300{,}000 \\times 1.05^{9} \\approx 465{,}000$ with $300{,}000$ and then multiplied the $165{,}000$-ton year-10 extra by six would invent about $1{,}000{,}000$ tons. Extra tons are spread across the decade, and the recovered sum of those extras is $773{,}368$.
+Comparing year-10 extraction $300{,}000 \\times 1.05^{9} \\approx 465{,}000$ with $300{,}000$ and then multiplying the $165{,}000$-ton year-10 extra by six would invent about $1{,}000{,}000$ tons. Working from the isolated values, $300{,}000 \\times 1.05^{9} \\approx 465{,}000$ is the figure that is checked, not the detour that produced $1{,}000{,}000$. Extra tons are spread across the decade, and the recovered sum of those extras is $773{,}368$.
 
 What would have to change for the opposite verdict is a recovered extra above $1{,}000{,}000$ tons, which would take faster growth or more years. At 5% for ten years from $300{,}000$ tons, the extra is about $773{,}000$ tons.
 
@@ -14304,7 +14304,7 @@ The recovered infinite extraction is $6{,}000$ million tons. This letter is read
 
 **1.** The trap is reporting the reserve $9{,}000$ as if the mine will extract every last ton. Under a $3\\%$ decline the stream converges below the reserve, and letter C will call the leftover $3{,}000$ million tons stranded. Another mix-up is $180 / 0.97 \\approx 186$, which is next year's output scaled as a level, not an infinite sum.
 
-**2.** A rushed solver who used $180 / 0.3 = 600$ dropped a zero in the decline rate, treating $3\\%$ as $30\\%$. Someone who used $180 / 0.03$ correctly to get $6{,}000$ and then multiplied by years has already finished this letter. Rebuilding $0.97^{n}$ is letter E's finite-horizon job.
+**2.** Using $180 / 0.3 = 600$ dropped a zero in the decline rate, treating $3\\%$ as $30\\%$. After isolating the unknown, the check is against $180 / 0.3 = 600$. The figure $30\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $180 / 0.3 = 600$ stays in the write-up. Someone who used $180 / 0.03$ correctly to get $6{,}000$ and then multiplied by years has already finished this letter. Rebuilding $0.97^{n}$ is letter E's finite-horizon job.
 
 **3.** The $5\\%$ decline companion in Part 3.3 totals only $3{,}600$ million tons. Copying that $3{,}600$ onto this letter would understate the $3\\%$ stream. The claim is the $3\\%$ infinite total, recovered as $6{,}000$.
 
@@ -14333,7 +14333,7 @@ million tons remain. That leftover is 3 billion tons, and because the infinite s
 
 In the story, the region has 9 billion tons in the ground and a path that takes 6 billion tons over all future years. The recovered objects are the reserve $9{,}000$ and the infinite take $6{,}000$. The claim's extra arithmetic is the $3{,}000$ million-ton remainder.
 
-A rushed solver who used $180 / 0.03 = 6{,}000$ as if it were the leftover, or who reported $9{,}000 - 180 = 8{,}820$, would miss. The leftover is reserve minus the infinite sum, not reserve minus this year's output.
+Using $180 / 0.03 = 6{,}000$ as if it were the leftover, or reporting $9{,}000 - 180 = 8{,}820$, would miss. The recovered comparison therefore keeps $180 / 0.03 = 6{,}000$ and does not substitute $9{,}000 - 180 = 8{,}820$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The leftover is reserve minus the infinite sum, not reserve minus this year's output.
 
 What would have to change for the opposite verdict is an infinite take at or above $9{,}000$ million tons, which would need a slower decline or a larger opening output. At $k = 0.97$ from 180 million tons, the path strands 3 billion tons.
 
@@ -14362,7 +14362,7 @@ so the steeper path strands more coal, not less.
 
 **2.** The trap is thinking "steeper decline uses the reserve faster, so less is left." Steeper decline uses the reserve more slowly in later years, because output collapses sooner. The recovered 5% take $3{,}600$ sits well below the 3% take $6{,}000$.
 
-**3.** A rushed solver who compared $3{,}600$ with $3{,}000$ and thought "less extracted means less stranded" swapped extracted with stranded. Extracted fell. Stranded rose.
+**3.** Comparing $3{,}600$ with $3{,}000$ and thinking "less extracted means less stranded" swapped extracted with stranded. So the letter reads the claim against $3{,}600$; $3{,}000$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $3{,}600$ stays in the write-up. Extracted fell. Stranded rose.
 
 In the story, the region's leftover coal is what the infinite path does not take. Cutting the path's lifetime take from $6{,}000$ to $3{,}600$ million tons raises the stranded pile from $3{,}000$ to $5{,}400$. That is more stranded, not less.
 
@@ -14553,7 +14553,7 @@ The overview recovered $|k| = 0.5 < 1$, so this particular alternating series co
 
 **1.** The trap is a slogan from $k = -1$, where partial sums oscillate and never settle. That is letter E. Here $|k| = 0.5$, so the oscillation damps.
 
-**2.** A rushed solver who learned "alternating geometric series diverge" skipped the $|k|<1$ gate. Letter A already opened that gate.
+**2.** Learning "alternating geometric series diverge" skipped the $|k|<1$ gate. The recovered isolation is checked against the claim using $|k|<1$, which is the figure the sessions actually produce. Letter A already opened that gate.
 
 The recovered $k = -0.5$ series converges, so it does not necessarily diverge, Alternation is not an automatic divergence. Magnitude $|k|<1$ damps the oscillation, and the recovered net is about $2,666.67$. The slogan "alternating series diverge" belongs to $k = -1$, letter E, not to $k = -0.5$.
 
@@ -14683,7 +14683,7 @@ Part 2 already recorded $s_n = a \\times n$ for this degenerate case, and Part 3
 
 **1.** The trap is forcing $\\frac{k^n - 1}{k - 1}$ at $k = 1$ and declaring the total undefined. The series is defined; the general formula is not. Letter E will say that applying the general formula directly would divide by zero. This letter says what to use instead: $n$ copies of $a$.
 
-**2.** A rushed solver who treated $k = 1$ as "no contributions" has misread a unit quotient as a zero contribution. $k = 1$ means each year matches the last. Another mix-up is copying the $4\\%$ growth plan's formula onto the flat plan.
+**2.** Treating $k = 1$ as "no contributions" has misread a unit quotient as a zero contribution. The recovered isolation is checked against the claim using $k = 1$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. $k = 1$ means each year matches the last. Another mix-up is copying the $4\\%$ growth plan's formula onto the flat plan.
 
 **3.** Fifteen equal $\\$12$ million payments are $\\$12 + 12 + \\cdots + 12$, fifteen times. That is the $k = 1$ case of a geometric sequence. The recovered description is exactly the claim.
 
@@ -14702,7 +14702,7 @@ The recovered pile is $\\$180.00$ million. This letter is that product.
 
 **1.** The trap is reporting the growing plan's $\\$240.28$ million from Part 3.3 as if the flat plan already included $4\\%$ raises. The flat plan has no raises. Another mix-up is $12 + 15 = 27$, adding instead of multiplying, or $12 \\times 14 = 168$, counting fourteen gaps instead of fifteen payments.
 
-**2.** A solver who used the illegal $\\frac{1^{15} - 1}{1 - 1}$ and then guessed a round $\\$200$ million has left the $k = 1$ identity. Fifteen twelves are one hundred eighty.
+**2.** Using the illegal $\\frac{1^{15} - 1}{1 - 1}$ and then guessed a round $\\$200$ million has left the $k = 1$ identity. After isolating the unknown, the check is against $\\frac{1^{15} - 1}{1 - 1}$. The figure $k = 1$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\frac{1^{15} - 1}{1 - 1}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Fifteen twelves are one hundred eighty.
 
 **3.** Letter D will compare $\\$240.28$ with $\\$180$ and recover a $\\$60.28$ million gap. This letter only asks for the no-growth total. It is $\\$180$ million.
 
@@ -14764,7 +14764,7 @@ which sits about $\\$4.72$ million short of a $\\$65$ million cutoff.
 
 In the story, the managers are asking how much extra the 4% ramp adds relative to staying at $\\$12$ million a year. The recovered extra is $\\$60.28$ million. That is a real extra, and it is not more than $\\$65$ million.
 
-A rushed solver who used $12 \\times (1.04)^{15} \\approx 21.61$ as if it were the extra, or who used $240.28 - 180$ rounded to $60$ and then "more than $65$ because of rounding," would miss. The cutoff is $65$, and $60.28$ is not more than $65$.
+Using $12 \\times (1.04)^{15} \\approx 21.61$ as if it were the extra, or using $240.28 - 180$ rounded to $60$ and then "more than $65$ because of rounding," would miss. So the letter reads the claim against $12 \\times (1.04)^{15} \\approx 21.61$; $65$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $12 \\times (1.04)^{15} \\approx 21.61$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The cutoff is $65$, and $60.28$ is not more than $65$.
 
 What would have to change for the opposite verdict is a recovered extra above $\\$65$ million, which would take a faster growth rate or more years. At 4% for 15 years from $\\$12$ million, the extra is about $\\$60.28$ million.
 
@@ -14872,7 +14872,7 @@ The recovered second cheque is $\\$13,200.00$. This letter is that product, not 
 
 **1.** The trap is subtracting $12\\%$ of $\\$15,000$ from the wrong base, or computing $15,000 \\times 0.12 = 1,800$ and then reporting $1,800$ as the second payment. The $12\\%$ is the amount that disappears; the second cheque is what remains, $\\$13,200$. Another mix-up is $15,000 \\times 0.88^2$, which is the third payment, not the second.
 
-**2.** A rushed solver who used $15,000 - 88 = 14,912$ treated $88$ as dollars rather than as a percent. Someone who used $15,000 \\times 1.12$ grew the cheque instead of shrinking it.
+**2.** Using $15,000 - 88 = 14,912$ treated $88$ as dollars rather than as a percent. That is the fork: $15,000 - 88 = 14,912$ belongs to the recovered isolation, $88$ belongs to the discarded mix. Someone who used $15,000 \\times 1.12$ grew the cheque instead of shrinking it.
 
 **3.** Letter B will sum eight such declining cheques. This letter only asks for the second term. The recovered $a_2$ is $13,200$.
 
@@ -14889,7 +14889,7 @@ Part 3.3 already substituted $0.88^8 \\approx 0.359635$ into the finite-sum form
 
 **1.** The trap is reporting the infinite total $\\$125,000$ from Part 3.4 as if eight years already captured the perpetuity. Eight years capture about $64\\%$ of the perpetuity, letter D's companion, not $100\\%$. Another mix-up is $8 \\times 15,000 = 120,000$, treating every cheque as the first.
 
-**2.** A rushed solver who used $15,000 \\times (1 - 0.88)/0.12$ computed a one-step drop rather than an eight-step sum. Someone who used $15,000 / 0.12 = 125,000$ reported the perpetuity. The finite $s_8$ is the smaller recovered $\\$80,045.68$.
+**2.** Using $15,000 \\times (1 - 0.88)/0.12$ computed a one-step drop rather than an eight-step sum. The path that matches the stem therefore holds $15,000 \\times (1 - 0.88)/0.12$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $15,000 / 0.12 = 125,000$ reported the perpetuity. The finite $s_8$ is the smaller recovered $\\$80,045.68$.
 
 **3.** The claimed cents, $68$, match the overview's rounding of $15,000 \\times 5.336379$. A table that stopped at $\\$80,046$ would still be the same dollar. The printed figure includes the cents.
 
@@ -14980,7 +14980,7 @@ so a slower decline raises the infinite total, not lowers it.
 
 **2.** The trap is thinking "less steep means smaller numbers." Less steep means later payments stay larger, so the lifetime pile grows. The recovered $k = 0.95$ total is $\\$300,000$.
 
-**3.** A rushed solver who compared $0.95$ with $0.88$ and thought "smaller decay rate, smaller sum" mixed the decay rate $1-k$ with the total. The decay rate fell from $12\\%$ to $5\\%$, and the total rose.
+**3.** Comparing $0.95$ with $0.88$ and thinking "smaller decay rate, smaller sum" mixed the decay rate $1-k$ with the total. The stem's recovered values line up with $0.95$, whereas $1-k$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.95$ stays in the write-up. The decay rate fell from $12\\%$ to $5\\%$, and the total rose.
 
 In the story, a settlement that shrinks by 5% a year instead of 12% keeps paying meaningful amounts for much longer. The recovered infinite pile triples from $\\$125,000$ to $\\$300,000$.
 
@@ -15168,7 +15168,7 @@ so the wording is not a rounding of the recovered year-12 term.
 
 **2.** The figure $\\$20,715.85$ is what you get from $9{,}000 \\times (1.08)^{10} \\approx 19{,}434$ plus a $6.6\\%$ garnish, or from using $(1.08)^{12}/1.08^{0.1}$. The recovered factor is $(1.08)^{11} \\approx 2.3316$.
 
-**3.** A rushed solver who used $(1.08)^{12}$ on the first royalty would report about $\\$22,664$, the year-13 term. Year 12 is four steps short of that.
+**3.** Using $(1.08)^{12}$ on the first royalty would report about $\\$22,664$, the year-13 term. Keeping $(1.08)^{12}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Year 12 is four steps short of that.
 
 In the story, the last royalty of the 12-year window is the opening $\\$9,000$ grown for 11 years. The recovered object is $a_{12}$. The claim's extra move is a nearby $\\$20,716$.
 
@@ -15207,7 +15207,7 @@ which matches the claimed extra exactly.
 
 In the story, the franchisor is asking how much the 8% ramp is worth relative to a no-growth location. The recovered extra is $\\$62,794.15$. That is the claim's figure.
 
-A rushed solver who rounded $170{,}794$ to $171{,}000$ would report $\\$63,000$ and would still be describing the same extra, just with worse cents. The claim includes the cents that match the overview.
+Rounding $170{,}794$ to $171{,}000$ would report $\\$63,000$ and would still be describing the same extra, just with worse cents. The recovered comparison therefore keeps $170{,}794$ and does not substitute $171{,}000$. The claim includes the cents that match the overview.
 
 The recovered growth extra is \\$62,794.15, The extra $62,794.15$ is $170,794.15 - 108,000$, the recovered growing total minus twelve flat copies of $9,000$. Using letter B's false $175,000$ would invent a $67,000$ extra. The claim's cents match the recovered pair, not that false companion.
 
@@ -15386,7 +15386,7 @@ which sits about $\\$6.08$ million above a $\\$100$ million cutoff.
 
 In the story, the cap table cares about the six growth years plus the declining tail. The recovered combined value is $\\$106.08$ million, which is not less than $\\$100$ million.
 
-A rushed solver who used $a_T = 4$ would get a terminal $26.67$ and a combined $66.39$, which would miss $100$ from below. The terminal first payment is year-6 revenue, about $\\$9.95$ million.
+Using $a_T = 4$ would get a terminal $26.67$ and a combined $66.39$, which would miss $100$ from below. The stem's recovered values line up with $a_T = 4$, whereas $100$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $a_T = 4$ stays in the write-up. The terminal first payment is year-6 revenue, about $\\$9.95$ million.
 
 What would have to change for the opposite verdict is a recovered combined value at or below $100$, which would take a smaller year-6 revenue or a steeper terminal decline. Under the stem, $106.08 > 100$.
 
@@ -15526,7 +15526,7 @@ so the wording is not a rounding of the recovered late-window total.
 
 **2.** The figure $\\$37,930$ is what you get from $6{,}625.74 \\times (k^{3}+k^{4}+k^{5}+k^{2})$, folding month 3 into the late window, or from $58{,}000 \\times 0.654$. Months 4 through 6 use only the last three powers.
 
-**3.** A rushed solver who used $13{,}326.73 \\times 3 \\approx 39{,}980$ would treat all three late months as if they were month 6. The recovered sum is $\\$34,992$, because months 4 and 5 are smaller.
+**3.** Using $13{,}326.73 \\times 3 \\approx 39{,}980$ would treat all three late months as if they were month 6. Once $13{,}326.73 \\times 3 \\approx 39{,}980$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered sum is $\\$34,992$, because months 4 and 5 are smaller.
 
 In the story, the retailer is asking how much of the $\\$58,000$ sits in the expensive late months. The recovered object is about $\\$34,992$. That is a little more than half the six-month total, which is the point of a rising schedule: the last three months outweigh the first three.
 
@@ -15668,7 +15668,7 @@ The recovered year-$2$ payout is $\\$490,000.00$. This letter is that product, n
 
 **1.** The trap is subtracting $2\\%$ of $\\$500,000$ and then reporting the $\\$10,000$ drop as the payout. The drop is $\\$10,000$; the remaining scholarship budget is $\\$490,000$. Another mix-up is $500,000 \\times 0.98^2$, which is year $3$, not year $2$.
 
-**2.** A rushed solver who used $500,000 \\times 1.02$ grew the payout instead of shrinking it. Someone who used $500,000 - 2 = 499,998$ treated $2$ as dollars.
+**2.** Using $500,000 \\times 1.02$ grew the payout instead of shrinking it. Keeping $500,000 \\times 1.02$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Someone who used $500,000 - 2 = 499,998$ treated $2$ as dollars.
 
 **3.** Letter B will sum the infinite declining stream to $\\$25$ million. This letter only asks for the second term. The recovered $a_2$ is $490,000$.
 
@@ -15689,7 +15689,7 @@ The recovered perpetual scholarship total is $\\$25$ million. This letter is rea
 
 **1.** The trap is reporting $500,000 / 0.98 \\approx 510,204$ as if the infinite total were next year's payout scaled as a level. Another mix-up is $500,000 / 0.2 = 2,500,000$, dropping a zero in the $2\\%$ decline.
 
-**2.** A rushed solver who used the finite $s_{10} \\approx 4,573,180$ from Part 3.4 as the "total" has stopped at ten years. Forever is much larger. Letter C's companion will say those ten years are only about $18\\%$ of the $\\$25$ million.
+**2.** Using the finite $s_{10} \\approx 4,573,180$ from Part 3.4 as the "total" has stopped at ten years. Once $s_{10} \\approx 4,573,180$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Forever is much larger. Letter C's companion will say those ten years are only about $18\\%$ of the $\\$25$ million.
 
 **3.** The alternative $k = 0.95$ stream in Part 3.6 totals only $\\$10$ million. Copying that $\\$10$ million onto this letter would understate the $2\\%$ decline. The claim is the $k = 0.98$ perpetuity, recovered as $\\$25,000,000$.
 
@@ -15778,7 +15778,7 @@ so the steeper path's lifetime total is less than half, not more.
 
 **2.** The trap is thinking a 3-point steeper decline (2% to 5%) should cut the total by 3/5 or by 40%, landing near $15$ million, which would beat half. The infinite-sum formula is $a/(1-k)$, so tripling $1-k$ from $0.02$ to $0.05$ cuts the total to $2/5$ of the original, which is $10$ million, below half.
 
-**3.** A rushed solver who compared $k = 0.95$ with $0.98$ as if those were the totals would never look at $10$ million versus $12.5$ million.
+**3.** Comparing $k = 0.95$ with $0.98$ as if those were the totals would never look at $10$ million versus $12.5$ million. After isolating the unknown, the check is against $k = 0.95$. The figure $12.5$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $k = 0.95$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 In the story, a 5% declining scholarship plan pays out $10$ million over all future years, against $25$ million at 2% decline. Half of $25$ million is $12.5$ million. The recovered $10$ million does not clear that half.
 
@@ -15887,7 +15887,7 @@ The recovered year-$2$ budget is $\\$224,000.00$. This letter is that product, n
 
 **1.** The trap is adding $12\\%$ as $\\$12,000$ onto a $\\$200,000$ that was already misread as $\\$212,000$, or reporting the $\\$24,000$ increase as the budget. The increase is $\\$24,000$; the year-$2$ budget is $\\$224,000$. Another mix-up is $200,000 \\times 1.12^2$, which is year $3$.
 
-**2.** A rushed solver who used $200,000 \\times 0.12 = 24,000$ reported the increment. Someone who used $200,000 + 12 = 200,012$ treated $12$ as dollars.
+**2.** Using $200,000 \\times 0.12 = 24,000$ reported the increment. The path that matches the stem therefore holds $200,000 \\times 0.12 = 24,000$ fixed and only then reads the claim. Someone who used $200,000 + 12 = 200,012$ treated $12$ as dollars.
 
 **3.** Later letters ask how many years of this growth it takes to pass $\\$3$ million cumulative. Those letters use $s_n$, not $a_2$. This letter only asks for the second term.
 
@@ -15914,7 +15914,7 @@ $$3{,}000{,}000 - 2{,}955{,}131.26 = 44{,}868.74$$
 
 so nine years are about $\\$44,869$ short. Close in calendar is not close enough in dollars for a "surpassed" verdict.
 
-**3.** A rushed solver who used nine flat copies of $\\$200{,}000$, or nine copies of the year-2 budget $\\$224{,}000$, would manufacture a neighbour of $\\$1.8$ million or $\\$2.0$ million without matching the recovered $s_9$. The recovered object is the geometric nine-year pile $\\$2,955,131$.
+**3.** Using nine flat copies of $\\$200{,}000$, or nine copies of the year-2 budget $\\$224{,}000$, would manufacture a neighbour of $\\$1.8$ million or $\\$2.0$ million without matching the recovered $s_9$. That is the fork: $224{,}000$ belongs to the recovered isolation, $s_9$ belongs to the discarded mix. The recovered object is the geometric nine-year pile $\\$2,955,131$.
 
 Letter D will ask for the smallest $n$. That smallest $n$ cannot be $9$ while this miss stands. Letter C will show that year 10 jumps to about $\\$3,509,747$, well above the cutoff. The bracket is this letter plus letter C.
 
@@ -16133,7 +16133,7 @@ The recovered perpetual grant total is $\\$1.25$ million. This letter is reading
 
 **1.** The trap is reporting $50,000 / 0.96 \\approx 52,083$ as a level, or $50,000 / 0.4 = 125,000$, dropping a zero in the $4\\%$ decline. Another mix-up is $50,000 \\times 25 = 1,250,000$ for the right number with a guessed $25$-year flat run. The right reason is $a / (1 - k)$.
 
-**2.** A rushed solver who used the finite $s_{15} \\approx 572,392$ from Part 3.4 as the "total" has stopped at fifteen grants. Forever is larger. Letter C is that fifteen-grant pile. This letter is the perpetuity.
+**2.** Using the finite $s_{15} \\approx 572,392$ from Part 3.4 as the "total" has stopped at fifteen grants. The opposite verdict would need a different isolation than $s_{15} \\approx 572,392$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Forever is larger. Letter C is that fifteen-grant pile. This letter is the perpetuity.
 
 **3.** The steeper $k = 0.90$ companion in Part 3.6 totals only $\\$500,000$. Copying that $\\$500,000$ onto this letter would understate the $4\\%$ decline. The claim is the $k = 0.96$ infinite total, recovered as $\\$1,250,000$.
 
@@ -16152,7 +16152,7 @@ Part 3.4 already substituted $0.96^{15} \\approx 0.542086$ into the finite-sum f
 
 **1.** The trap is reporting the infinite $\\$1,250,000$ from letter B as if fifteen grants already captured the perpetuity. Fifteen grants are about $45.8\\%$ of the perpetuity, Part 3.5's companion, not $100\\%$. Another mix-up is $15 \\times 50,000 = 750,000$, treating every grant as the first.
 
-**2.** A rushed solver who used $50,000 \\times (1 - 0.96)/0.04$ computed a one-step drop rather than a fifteen-step sum. Someone who used $s_\\infty \\times 0.96^{15}$ mixed the tail with the partial sum. The recovered $s_{15}$ is $572,392.03$.
+**2.** Using $50,000 \\times (1 - 0.96)/0.04$ computed a one-step drop rather than a fifteen-step sum. The recovered isolation is checked against the claim using $50,000 \\times (1 - 0.96)/0.04$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who used $s_\\infty \\times 0.96^{15}$ mixed the tail with the partial sum. The recovered $s_{15}$ is $572,392.03$.
 
 **3.** The claimed cents, $03$, match the overview's rounding of $50,000 \\times 11.447840$. A table that stopped at $\\$572,392$ would still be the same dollar. The printed figure includes the cents.
 
@@ -16317,7 +16317,7 @@ The recovered second-quarter yield is $9{,}800.00$ lbs. This letter is that prod
 
 **1.** The trap is treating the $2\\%$ as an annual decline and leaving quarter $2$ at $10{,}000$, as if nothing happened until year-end. The stem declines every quarter. Another mix-up is $10,000 \\times 0.98^2$, which is quarter $3$, or $10,000 - 2 = 9,998$, treating $2$ as pounds.
 
-**2.** A rushed solver who used $10,000 \\times 0.02 = 200$ reported the drop instead of the remaining yield. The drop is $200$ lbs; the remaining yield is $9{,}800$ lbs.
+**2.** Using $10,000 \\times 0.02 = 200$ reported the drop instead of the remaining yield. Keeping $10,000 \\times 0.02 = 200$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The drop is $200$ lbs; the remaining yield is $9{,}800$ lbs.
 
 **3.** Letter B will sum twenty quarterly yields. This letter only asks for the second term. The recovered $a_2$ is $9,800$.
 
@@ -16334,7 +16334,7 @@ Part 3.3 already substituted $0.98^{20} \\approx 0.667608$ into the finite-sum f
 
 **1.** The unit-conversion trap is using $n = 5$ because the horizon is "five years." Part 3.4 already ran that wrong exponent and left about $48{,}040$ lbs, which is only the first five quarters, about $1.25$ years. The stem's span is twenty quarters. Five is the number of years, not the number of decline steps.
 
-**2.** A rushed solver who used $20 \\times 10,000 = 200,000$ treated every quarter as the first. Someone who used the infinite $s_\\infty = 500,000$ from Part 3.6 reported a forever-yield that the five-year window never reaches.
+**2.** Using $20 \\times 10,000 = 200,000$ treated every quarter as the first. That is why $20 \\times 10,000 = 200,000$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Someone who used the infinite $s_\\infty = 500,000$ from Part 3.6 reported a forever-yield that the five-year window never reaches.
 
 **3.** The claimed hundredths, $01$, match the overview's $10,000 \\times 16.619601$. A table that stopped at $166{,}196$ lbs would still be the same pound. The printed figure includes the hundredths.
 
@@ -16504,7 +16504,7 @@ Part 3.1 already substituted $1.06^8 \\approx 1.593848$ into the finite-sum form
 
 **1.** The trap is $8 \\times 80,000 = 640,000$, treating every year as the first. Growth of $6\\%$ a year lifts the total well above that flat $\\$640,000$. Another mix-up is copying Territory B's $\\$815,382$ onto A. B starts higher and grows slower; its eight-year total is a different object.
 
-**2.** A rushed solver who reported year $8$'s payment $a_{A,8} \\approx 120,290$ as the eight-year total has named a level instead of a sum. Letter D's companion is that year-$8$ cheque. This letter is the cumulative $s_{A,8}$.
+**2.** Reporting year $8$'s payment $a_{A,8} \\approx 120,290$ as the eight-year total has named a level instead of a sum. The recovered comparison therefore keeps $8$ and does not substitute $a_{A,8} \\approx 120,290$. Letter D's companion is that year-$8$ cheque. This letter is the cumulative $s_{A,8}$.
 
 **3.** The claimed cents, $43$, match the overview's rounding of $80,000 \\times 9.897468$. A table that stopped at $\\$791,797$ would still be the same dollar. The printed figure includes the cents.
 
@@ -16523,7 +16523,7 @@ Part 3.2 already substituted $1.02^8 \\approx 1.171659$ into the finite-sum form
 
 **1.** The trap is $8 \\times 95,000 = 760,000$, the no-growth companion. Two percent a year still lifts B above that flat total. Another mix-up is copying A's $\\$791,797$ onto B. The two openings and the two growth rates are different, so the totals are different.
 
-**2.** A rushed solver who reported year $8$'s payment $a_{B,8} \\approx 109,125$ as the eight-year total has named a level instead of a sum. This letter is the cumulative $s_{B,8}$. Letter C will compare $s_{A,8}$ with $s_{B,8}$ and find B larger in total even though A's year-$8$ cheque is larger.
+**2.** Reporting year $8$'s payment $a_{B,8} \\approx 109,125$ as the eight-year total has named a level instead of a sum. That is the fork: $8$ belongs to the recovered isolation, $a_{B,8} \\approx 109,125$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. This letter is the cumulative $s_{B,8}$. Letter C will compare $s_{A,8}$ with $s_{B,8}$ and find B larger in total even though A's year-$8$ cheque is larger.
 
 **3.** The claimed cents, $06$, match the overview's rounding of $95,000 \\times 8.582969$. A table that stopped at $\\$815,382$ would still be the same dollar. The printed figure includes the cents.
 
@@ -16581,7 +16581,7 @@ so by year 8 the faster-growing territory has the larger *annual* payment, even 
 
 **2.** The trap is mixing this snapshot with letter C's cumulative ranking. Cumulative and year-8 can disagree when paths cross. They do disagree here: B wins the pile, A wins year 8.
 
-**3.** A rushed solver who compared opening royalties $80{,}000 < 95{,}000$ and concluded A can never catch B in any single year would miss the crossing. Seven years of 6% versus 2% is enough for the annual payments to cross.
+**3.** Comparing opening royalties $80{,}000 < 95{,}000$ and concluding A can never catch B in any single year would miss the crossing. That is why $80{,}000 < 95{,}000$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Seven years of 6% versus 2% is enough for the annual payments to cross.
 
 In the story, the franchisor who looks only at year 8 would pick A, and the franchisor who looks at eight-year totals would pick B. The recovered objects are the two year-8 royalties. A's year-8 payment is larger.
 
@@ -16790,7 +16790,7 @@ The overview recovered $a_{100} = 5{,}000 / 100 = 5.00$, so the dollar figure is
 
 **2.** The trap is the slogan "if the general term goes to zero, the series converges." Letter E will repeat that slogan at $p = 0.5$. The $p$-series rule is the actual test, and $p = 1$ fails it.
 
-**3.** A rushed solver who computed $a_{100} = 5$ and stopped would never look at $p$. The exponent is $1$, which is not greater than $1$.
+**3.** Computing $a_{100} = 5$ and stopping would never look at $p$. Working from the isolated values, $a_{100} = 5$ is the figure that is checked, not the detour that produced $p$. The exponent is $1$, which is not greater than $1$.
 
 In the story, the hundredth campaign adding only $\\$5$ sounds small, and small is not the same as a finite infinite-total. The recovered objects are $a_{100} = 5$ and the harmonic divergence. The claim's extra move is "this alone is enough."
 
@@ -16912,7 +16912,7 @@ Part 3.1 already recovered $s_{R,12} = 1,902,375.45$. This letter is reading tha
 
 **1.** The trap is $12 \\times 150,000 = 1,800,000$, treating every year as the first. One percent a year still lifts the twelve-year total by about $\\$102,375$ above that flat companion. Another mix-up is copying the maintenance total $s_{C,12} = 1,703,043.55$ onto revenue. Maintenance is a different series with a $3\\%$ growth rate.
 
-**2.** A rushed solver who reported year-$12$ revenue $\\$167,350.25$ as the twelve-year total has named a level instead of a sum. The cumulative is the recovered $s_{R,12}$. Letter C will subtract maintenance from revenue and recover twelve-year profit about $\\$199,332$. This letter only asks for the revenue column.
+**2.** Reporting year-$12$ revenue $\\$167,350.25$ as the twelve-year total has named a level instead of a sum. The recovered isolation is checked against the claim using $12$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The cumulative is the recovered $s_{R,12}$. Letter C will subtract maintenance from revenue and recover twelve-year profit about $\\$199,332$. This letter only asks for the revenue column.
 
 **3.** The claimed cents, $45$, match the overview. A table that stopped at $\\$1,902,375$ would still be the same dollar. The printed figure includes the cents.
 
@@ -16929,7 +16929,7 @@ Part 3.1 already recovered $s_{C,12} = 1,703,043.55$. This letter is reading tha
 
 **1.** The trap is $12 \\times 120,000 = 1,440,000$, treating every year as the first. Three percent a year lifts the twelve-year total by about $\\$263,044$ above that flat companion. Another mix-up is copying revenue's $\\$1,902,375$ onto maintenance. The two series have different openings and different growth rates.
 
-**2.** A rushed solver who reported year-$12$ maintenance $\\$166,108.06$ as the twelve-year total has named a level instead of a sum. The cumulative is the recovered $s_{C,12}$. Letter A is the revenue companion. Subtracting the two recovered piles is the profit letter, not this one.
+**2.** Reporting year-$12$ maintenance $\\$166,108.06$ as the twelve-year total has named a level instead of a sum. Once $12$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The cumulative is the recovered $s_{C,12}$. Letter A is the revenue companion. Subtracting the two recovered piles is the profit letter, not this one.
 
 **3.** The claimed cents, $55$, match the overview. A table that stopped at $\\$1,703,044$ would still be the same dollar. The printed figure includes the cents.
 
@@ -16990,7 +16990,7 @@ so the longer window *reduces* cumulative profit by about $\\$120,926$. Maintena
 
 **2.** The trap is thinking more years of still-positive operations must raise cumulative profit. Letter D showed year 12 still positive. After year 12 the annual net turns and then stays negative enough that years 13 through 20 subtract more than they add. Cumulative profit falls.
 
-**3.** A rushed solver who added eight more years of $\\$1,242$ would report a larger 20-year profit. The year-12 margin is not a perpetual add-on. Maintenance is still growing at 3%.
+**3.** Adding eight more years of $\\$1,242$ would report a larger 20-year profit. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The year-12 margin is not a perpetual add-on. Maintenance is still growing at 3%.
 
 In the story, stretching the farm from 12 years to 20 years is not a free lunch. The recovered objects are $\\Pi_{12}$ and $\\Pi_{20}$. The longer horizon leaves a smaller cumulative profit, about $\\$78,406$ against $\\$199,332$.
 
@@ -17093,7 +17093,7 @@ The recovered infinite recession total is $\\$40$ million. This letter is readin
 
 **1.** The trap is reporting $2,400,000 / 0.94 \\approx 2,553,191$ as a level, or $2,400,000 / 0.6 = 4,000,000$, dropping a zero in the $6\\%$ decline. Another mix-up is $2,400,000 \\times 15 = 36,000,000$, a flat fifteen-year guess sitting near the true infinite total for the wrong reason.
 
-**2.** A rushed solver who used the finite $s_{15} \\approx 24,188,328$ from Part 3.2 as the "total" has stopped at fifteen years. Forever is larger. Later letters compare that fifteen-year pile with $\\$40$ million. This letter is the perpetuity.
+**2.** Using the finite $s_{15} \\approx 24,188,328$ from Part 3.2 as the "total" has stopped at fifteen years. Once $s_{15} \\approx 24,188,328$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Forever is larger. Later letters compare that fifteen-year pile with $\\$40$ million. This letter is the perpetuity.
 
 **3.** The seven-year recovery companion in Part 3.4 totals about $\\$20.15$ million, which is a growing finite stream, not this declining infinite one. Copying $\\$20$ million onto the recession perpetuity would understate it.
 
@@ -17184,7 +17184,7 @@ so seven years of 6% growth do not overtake the never-ending 6% decline. The cla
 
 **2.** The trap is thinking "growth beats decline, so seven growth years beat an infinite decline." Infinite decline still adds the long tail. Fifteen recession years already total about $\\$24.2$ million, which itself exceeds the seven-year recovery pile.
 
-**3.** A rushed solver who compared $k = 1.06$ with $k = 0.94$ and declared growth the winner without looking at $n$ versus infinity would agree with the wording. The recovered pair is $20.1$ million versus $40$ million.
+**3.** Comparing $k = 1.06$ with $k = 0.94$ and declared growth the winner without looking at $n$ versus infinity would agree with the wording. After isolating the unknown, the check is against $k = 1.06$. The figure $n$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $k = 1.06$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered pair is $20.1$ million versus $40$ million.
 
 In the story, the fund is ranking a 7-year growing exit path against a perpetual shrinking path. The recovered objects are $s_7$ and the recession $s_{\\infty}$. Seven growth years collect about half of the infinite recession pile, not more than all of it.
 
@@ -17211,7 +17211,7 @@ so the wording is a round $\\$2.9$ million, not a rounding of the recovered $a_7
 
 **2.** The figure $\\$2,900,000$ is what you get from $2{,}400{,}000 \\times 1.06 \\times 1.14$, or from $2{,}400{,}000 + 7 \\times 70{,}000$. Simple add-ons miss compounding. The recovered year-7 flow is about $\\$3,404,446$.
 
-**3.** A rushed solver who used $(1.06)^{7}$ on the opening cash flow would report about $\\$3,609,000$, the year-8 term. Year 7 carries six growth steps, not seven.
+**3.** Using $(1.06)^{7}$ on the opening cash flow would report about $\\$3,609,000$, the year-8 term. Once $(1.06)^{7}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Year 7 carries six growth steps, not seven.
 
 In the story, the last year before exit is the opening $\\$2.4$ million grown for six years at 6%. The recovered object is $a_7$. The claim's extra move is a nearby $\\$2.9$ million.
 
@@ -17225,7 +17225,7 @@ $$3{,}404{,}446 - 2{,}900{,}000 = 504{,}446$$
 
 About $\\$504{,}000$ too low is not a rounding of $\\$3,404,446$. Rounding to the nearest hundred thousand would be $\\$3.4$ million, not $\\$2.9$ million. Year 7 carries six growth steps past $\\$2.4$ million, already recovered as about $\\$3,404,446$. Simple add-ons of $\\$70,000$ a year miss compounding.
 
-A solver who used $(1.06)^{7}$ on the opening $\\$2.4$ million would report about $\\$3,609,000$, the year-8 term. Year 7 carries six growth steps, not seven. The recovered year-7 recovery cash flow is about $\\$3,404,446$, not $\\$2,900,000$.
+Using $(1.06)^{7}$ on the opening $\\$2.4$ million would report about $\\$3,609,000$, the year-8 term. Keeping $(1.06)^{7}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Year 7 carries six growth steps, not seven. The recovered year-7 recovery cash flow is about $\\$3,404,446$, not $\\$2,900,000$.
 
 so the statement is False.`,
     ],
@@ -17379,7 +17379,7 @@ The overview recovered $225{,}000 + 215{,}603.80 = 440{,}603.80$ for Tranches 1 
 
 **2.** The trap is mixing Tranche 3 with letter E's harmonic fee stream. Tranche 3 has $|k| = 0.92 < 1$, so it converges. The fee stream $1{,}000/n$ is $p = 1$ and diverges. Convergence is the gate for inclusion, and Tranche 3 passes.
 
-**3.** A rushed solver who saw "forever" and excluded every infinite stream would drop a perfectly finite $\\$375,000$. Forever with decay at 8% a year still sums.
+**3.** Seeing "forever" and excluding every infinite stream would drop a perfectly finite $\\$375,000$. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Forever with decay at 8% a year still sums.
 
 In the story, the lender is adding three nominal piles. The recovered combined total is $\\$815,603.80$. The claimed $\\$440,603.80$ is only Tranches 1 and 2.
 
@@ -17530,7 +17530,7 @@ The claim asks what happens to today's oven-fund deposit if the bakery's account
 
 The overview recovered the 7% deposit as about \\$4,081.49. At 5% the same three-year bill needs about \\$4,319.19. That 5% figure sits about \\$237.70 above the 7% figure, not below it.
 
-**1.** Present value moves opposite to the rate. The oven price is locked. A smaller growth factor leaves a larger share of that \\$5,000 to be funded in cash today. A solver who thought "worse rate, smaller number" was thinking of a future-value problem, where a lower rate grows a fixed deposit by less. This problem is the reverse: the future pile is fixed and the deposit is the unknown.
+**1.** Present value moves opposite to the rate. The oven price is locked. A smaller growth factor leaves a larger share of that \\$5,000 to be funded in cash today. Thinking "worse rate, smaller number" was thinking of a future-value problem, where a lower rate grows a fixed deposit by less. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. This problem is the reverse: the future pile is fixed and the deposit is the unknown.
 
 **2.** The trap figure is \\$4,081.49 itself, reused as if the rate did not enter the discount. Another wrong figure is \\$3,750, which is \\$5,000 minus three times 7% of \\$5,000, then somehow reused at 5%. Neither of those is the 5% deposit.
 
@@ -17559,7 +17559,7 @@ so the wording overstates the three-year interest by a round $\\$10$.
 
 **1.** $\\$928.51$ looks like $\\$918.51$ with a transcription slip in the tens digit, or like $5,000 - 4,071.49$ from a slightly smaller present value. The overview's $x$ is $4,081.49$, and $5,000$ minus that $x$ is $918.51$. Another mix-up is $0.07 \\times 3 \\times 4,081.49 \\approx 857$, simple interest on the deposit, which understates because it ignores compounding on the interest.
 
-**2.** A rushed solver who used $5,000 - 4,081.49$ correctly and then rounded to $\\$920$ would still not land on $\\$928.51$. Someone who used $7\\% \\times 5,000 \\times 3 = 1,050$ computed simple interest on the future target rather than on the deposit.
+**2.** Using $5,000 - 4,081.49$ correctly and then rounding to $\\$920$ would still not land on $\\$928.51$. That is why $5,000 - 4,081.49$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $7\\% \\times 5,000 \\times 3 = 1,050$ computed simple interest on the future target rather than on the deposit.
 
 **3.** Letter A recovered $x \\approx 4,081.49$. This letter is the companion subtraction. Getting $x$ right and then adding $\\$10$ of invented interest is the whole miss. Rounding $918.51$ to the nearest ten dollars is $920$, not $929$.
 
@@ -17580,13 +17580,13 @@ That is exactly the deposit needed for a $\\$10,000$ target at the same $7\\%$ a
 
 **1.** The trap is thinking compound interest makes a doubled target require *more* than a doubled deposit, as if the extra $\\$5,000$ were a second horizon. It is not. Both dollars of target ride on the same three-year factor. Another mix-up is letter E's six-year companion, where stretching time to six years takes the deposit to about $\\$3,332$, which is *not* half of $\\$4,081$. Time-doubling is not linear. Target-doubling is.
 
-**2.** A rushed solver who recomputed $(1.07)^3$ for the doubled target has done extra work the linearity does not need. Someone who used $10,000 / 1.07 \\approx 9,346$ discounted only one year. The recovered double is $8,162.98$, matching $10,000 / 1.225043$.
+**2.** Recomputing $(1.07)^3$ for the doubled target has done extra work the linearity does not need. That is why $(1.07)^3$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Someone who used $10,000 / 1.07 \\approx 9,346$ discounted only one year. The recovered double is $8,162.98$, matching $10,000 / 1.225043$.
 
 **3.** The opposite verdict would need a nonlinear present-value rule, for example a fee that does not scale with the target, or a rate that changed with deposit size. The stem's $7\\%$ is a quoted rate, not a sliding rate. Linearity holds.
 
 In the story of the stem, Ms. Delgado is asking whether a twice-as-large oven requires twice the cash today. The recovered objects are $x \\approx 4,081.49$ and $2x = 8,162.98$. The extra arithmetic is that doubling, which is this letter's own step; the factor $(1.07)^3$ is not rebuilt.
 
-A solver who answered from the six-year half-time intuition would say no, deposits do not scale that way. That intuition is right for *time* and wrong for *target*. Letter E is the time question. This letter is the target question.
+Answering from the six-year half-time intuition would say no, deposits do not scale that way. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. That intuition is right for *time* and wrong for *target*. Letter E is the time question. This letter is the target question.
 
 What would have to change for the opposite verdict is a cost that does not scale, or a different rate on the larger deposit. Under the stem, doubling the target doubles the deposit to $\\$8,162.98$.
 
@@ -17601,7 +17601,7 @@ The overview recovered the three-year deposit as about \\$4,081.49. At six years
 
 **2.** The trap figure is \\$2,040.75, the literal half. Another wrong figure is \\$0, as if six years at 7% paid the whole oven. Neither is the six-year deposit of about \\$3,331.71.
 
-**3.** A solver who multiplied the three-year deposit by 2, confusing a longer wait with a larger present bill, would overshoot in the other direction. More time to compound means less cash today, but the drop from \\$4,081.49 to \\$3,331.71 is only about 18%, not 50%.
+**3.** Multiplying the three-year deposit by 2, confusing a longer wait with a larger present bill, would overshoot in the other direction. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. More time to compound means less cash today, but the drop from \\$4,081.49 to \\$3,331.71 is only about 18%, not 50%.
 
 **4.** The opposite verdict would need a much higher rate, high enough that three years really did double the money. At 7% that is not the story. The oven is still \\$5,000; only the wait changed.
 
@@ -17736,7 +17736,7 @@ The overview recovered $F(5) \\approx 8{,}698.47$ and $F(10) \\approx 11{,}640.5
 
 **2.** The trap figure is \\$17,396.94, twice the five-year balance. Another wrong figure is \\$13,000, twice the original deposit with no interest. Neither is the recovered ten-year balance of about \\$11,640.51.
 
-**3.** A solver who added another \\$2,198.47 of first-block interest onto the five-year pile would get about \\$10,897, still short of the true ten-year value, because the second block earns more than the first. That is letter D. This letter only asks whether the ten-year pile is double the five-year pile. It is not.
+**3.** Adding another \\$2,198.47 of first-block interest onto the five-year pile would get about \\$10,897, still short of the true ten-year value, because the second block earns more than the first. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That is letter D. This letter only asks whether the ten-year pile is double the five-year pile. It is not.
 
 **4.** The opposite verdict would need a rate high enough that five years really doubled the money. At 6% that is not the designer's account. The deposit is still \\$6,500; only the wait doubled.
 
@@ -17770,7 +17770,7 @@ The overview recovered the 6% five-year pile as about \\$8,698.47. At 3% the sam
 
 **2.** The trap figure is \\$4,349.24, the literal half. Another wrong figure is \\$3,250, half the original deposit. Both treat the whole balance as if it were interest. Most of \\$8,698.47 is still the original \\$6,500.
 
-**3.** A solver who halved the 6% rate inside the growth factor and wrote $(1.03)^5$ as half of $(1.06)^5$ would also miss. The factors are about $1.159$ and $1.338$. Their ratio is not $1/2$.
+**3.** Halving the 6% rate inside the growth factor and writing $(1.03)^5$ as half of $(1.06)^5$ would also miss. So the letter reads the claim against $(1.03)^5$; $(1.06)^5$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $(1.03)^5$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The factors are about $1.159$ and $1.338$. Their ratio is not $1/2$.
 
 **4.** The opposite verdict would need a model in which the entire pile scaled with the rate, as if there were no principal. That is not compound interest. The designer's \\$6,500 is still in the account at either rate.
 
@@ -17865,7 +17865,7 @@ Part 3.1 already evaluated the ordinary-annuity future-value formula and left $F
 
 **1.** The trap is $6 \\times 2,000 = 12,000$, the no-interest total of the six deposits. The extra $\\$1,603.84$ is interest, letter B's companion (with a false figure there). Another mix-up is $2,000 \\times 1.05^6 \\approx 2,680$, treating a single deposit as if it were the whole plan.
 
-**2.** A rushed solver who used $2,000 \\times 6 \\times 1.05 = 12,600$ applied one year of interest to the whole pile. Ordinary-annuity deposits do not all sit for six years. The last one sits for zero years of interest.
+**2.** Using $2,000 \\times 6 \\times 1.05 = 12,600$ applied one year of interest to the whole pile. The recovered isolation is checked against the claim using $2,000 \\times 6 \\times 1.05 = 12,600$, which is the figure the sessions actually produce. Ordinary-annuity deposits do not all sit for six years. The last one sits for zero years of interest.
 
 **3.** The claimed cents, $84$, match the overview. A table that stopped at $\\$13,604$ would still be the same dollar. The printed figure includes the cents.
 
@@ -17892,7 +17892,7 @@ so the wording overstates the six-year interest by a round $\\$100$.
 
 **1.** $\\$1,703.84$ looks like $\\$1,603.84$ with a transcription slip in the hundreds digit, or like $13,703.84 - 12,000$ from a slightly larger future value. The overview's $F_6$ is $13,603.84$, and $F_6$ minus $12,000$ is $1,603.84$. Another mix-up is $0.05 \\times 6 \\times 12,000 = 3,600$, simple interest on the whole pile as if every dollar sat six years.
 
-**2.** A rushed solver who used $13,603.84 - 11,900$ invented an eleven-thousand-nine deposit total, as if one deposit were $\\$1,900$. Six deposits of $\\$2,000$ are $\\$12,000$. Someone who reported $F_6$ itself as interest counted principal as gain.
+**2.** Using $13,603.84 - 11,900$ invented an eleven-thousand-nine deposit total, as if one deposit were $\\$1,900$. The recovered isolation is checked against the claim using $13,603.84 - 11,900$, which is the figure the sessions actually produce. Six deposits of $\\$2,000$ are $\\$12,000$. Someone who reported $F_6$ itself as interest counted principal as gain.
 
 **3.** Letter A recovered $F_6 \\approx 13,603.84$. This letter is the companion subtraction. Getting $F_6$ right and then adding $\\$100$ of invented interest is the whole miss. Rounding $1,603.84$ to the nearest hundred is $1,600$, not $1,700$.
 
@@ -17926,7 +17926,7 @@ $$13{,}603.84 \\times 1.5 = 20{,}405.76$$
 
 The claim writes \\$21,405.76, which is \\$1,000 too high. The 50% scale is the right idea. The arithmetic on that scale is not.
 
-**1.** The extra thousand is a transcription slip on an otherwise correct proportion. A solver who added \\$1,000 to \\$20,405.76, or who treated seven deposits of \\$3,000, would manufacture it.
+**1.** The extra thousand is a transcription slip on an otherwise correct proportion. Adding \\$1,000 to \\$20,405.76, or treating seven deposits of \\$3,000, would manufacture it. Keeping $1,000 to \\$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** Linearity would fail only if the rate or the number of deposits changed with the deposit size. The stem holds both fixed. The error is not conceptual. It is the printed dollar figure.
 
@@ -17941,7 +17941,7 @@ The overview recovered $F_6 \\approx 13{,}603.84$. At 12 years the same \\$2,000
 
 **2.** The trap figure is \\$27,207.68, twice the six-year fund, treated as a ceiling. Another wrong figure is \\$24,000, twelve deposits with no interest. The recovered twelve-year fund of about \\$31,834 sits above both.
 
-**3.** A solver who thought "later deposits have less time to grow, so doubling the term must underperform a double" has a true piece of timing intuition and the wrong global comparison. Later deposits do grow less than early ones, but there are more of them, and the early pile keeps growing. The net is more than double, not less.
+**3.** Thinking "later deposits have less time to grow, so doubling the term must underperform a double" has a true piece of timing intuition and the wrong global comparison. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Later deposits do grow less than early ones, but there are more of them, and the early pile keeps growing. The net is more than double, not less.
 
 **4.** The opposite verdict would need a declining deposit, a withdrawal program, or a negative rate. The clinic keeps depositing \\$2,000 a year at a positive 5%.
 
@@ -18034,7 +18034,7 @@ Part 3.1 already evaluated the ordinary-annuity future-value formula and left $F
 
 **1.** The trap is $10 \\times 3,500 = 35,000$, the no-interest total of the ten deposits. The extra $\\$15,702.97$ is interest, letter B's companion. Another mix-up is $3,500 \\times 1.08^{10} \\approx 7,556$, treating a single deposit as if it were the whole plan.
 
-**2.** A rushed solver who used $3,500 \\times 10 \\times 1.08 = 37,800$ applied one year of interest to the whole pile. Ordinary-annuity deposits do not all sit for ten years. The last one sits for zero years of interest.
+**2.** Using $3,500 \\times 10 \\times 1.08 = 37,800$ applied one year of interest to the whole pile. Keeping $3,500 \\times 10 \\times 1.08 = 37,800$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Ordinary-annuity deposits do not all sit for ten years. The last one sits for zero years of interest.
 
 **3.** The claimed cents, $97$, match the overview's rounding of $43,750 \\times 1.158925$. A table that stopped at $\\$50,703$ would still be the same dollar. The printed figure includes the cents.
 
@@ -18074,7 +18074,7 @@ The overview recovered $F_{10} \\approx 50{,}702.97$. At 20 years the same \\$3,
 
 **2.** The trap figure is \\$101,405.94, twice the ten-year fund, treated as a ceiling. Another wrong figure is \\$70,000, twenty deposits with no interest. The recovered twenty-year fund of about \\$160,167 sits above both, by a wide margin, because $(1.08)^{20}$ is already about $4.66$.
 
-**3.** A solver who thought later deposits have less time to grow, so doubling the term must underperform a double, has a true piece of timing intuition and the wrong global comparison. At 8% for twenty years the early money has a long time to snowball. The net is more than triple the ten-year fund, not less than double.
+**3.** Thinking later deposits have less time to grow, so doubling the term must underperform a double, has a true piece of timing intuition and the wrong global comparison. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. At 8% for twenty years the early money has a long time to snowball. The net is more than triple the ten-year fund, not less than double.
 
 **4.** The opposite verdict would need a declining deposit, a withdrawal, or a rate near zero. The fleet account keeps taking \\$3,500 a year at 8%.
 
@@ -18102,7 +18102,7 @@ $$55{,}780.97 > 55{,}000$$
 
 The higher-rate fund clears the cutoff by about \\$781.
 
-**2.** The overview's 8% fund was about \\$50,702.97, which sits below \\$55,000. The rate increase is what carries the fund over the line. A solver who reused \\$50,702.97 against the \\$55,000 cutoff would call the claim false and miss the 10% rebuild.
+**2.** The overview's 8% fund was about \\$50,702.97, which sits below \\$55,000. The rate increase is what carries the fund over the line. Reusing \\$50,702.97 against the \\$55,000 cutoff would call the claim false and miss the 10% rebuild. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 **3.** The trap figure is \\$53,500, a round stand-in between the two rates, or \\$35,000 \\times 1.10^{10} \\approx 90{,}780$, which treats the whole principal as if it had been deposited on day one. Neither is the 10% annuity value of about \\$55,781.
 
@@ -18199,7 +18199,7 @@ Part 3.1 already evaluated the ordinary-annuity present-value formula and left $
 
 **1.** The trap is $15 \\times 2,400 = 36,000$, the nominal withdrawal total, as if future dollars were already today's dollars. Letter B will compare that $\\$36,000$ with this $\\$25,775$. Another mix-up is $2,400 / 0.045 = 53,333$, the perpetuity companion, which funds withdrawals forever rather than for fifteen years.
 
-**2.** A rushed solver who used $2,400 \\times 15 / 1.045^{15}$ discounted the *total* as a single year-$15$ lump sum. Withdrawals arrive every year, so each has its own discount factor. The annuity formula already does that.
+**2.** Using $2,400 \\times 15 / 1.045^{15}$ discounted the *total* as a single year-$15$ lump sum. So the letter reads the claim against $2,400 \\times 15 / 1.045^{15}$; $15$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2,400 \\times 15 / 1.045^{15}$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Withdrawals arrive every year, so each has its own discount factor. The annuity formula already does that.
 
 **3.** The claimed cents, $15$, match the overview's rounding of $53,333.33 \\times 0.483284$. A table that stopped at $\\$25,775$ would still be the same dollar. The printed figure includes the cents.
 
@@ -18220,7 +18220,7 @@ so the nominal pile is larger, as the claim says. Future dollars are worth less 
 
 **1.** The trap is thinking the retiree is "getting something for nothing" because $\\$36,000$ comes out of $\\$25,775$. The missing $\\$10,225$ is interest the remaining balance earns while the withdrawals are still in the future. It is not a gift. Letter D will misstate that gap as $\\$11,224.85$.
 
-**2.** A rushed solver who compared $\\$36,000$ with the perpetuity $\\$53,333$ would find the nominal fifteen-year total *below* a forever fund, which is a different comparison. This letter compares nominal withdrawals with the *fifteen-year* present value, not with a perpetuity.
+**2.** Comparing $\\$36,000$ with the perpetuity $\\$53,333$ would find the nominal fifteen-year total *below* a forever fund, which is a different comparison. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. This letter compares nominal withdrawals with the *fifteen-year* present value, not with a perpetuity.
 
 **3.** If the rate were zero, present value would equal $\\$36,000$ and the claim's illustration would collapse. The stem's $4.5\\%$ is positive, so the inequality holds. At a negative rate the ranking would flip, which is not this account.
 
@@ -18239,7 +18239,7 @@ The overview recovered $P_{15} \\approx 25{,}775.15$ and $P_{30} \\approx 39{,}0
 
 **2.** The trap figure is \\$51,550.30, twice the fifteen-year present value. Another wrong figure is \\$72,000, thirty undiscounted withdrawals. Neither is the recovered 30-year present value.
 
-**3.** A solver who thought "twice the checks, twice the fund" was treating the withdrawals as a present bill. They are a future stream. Time is the discount, and the later half of the stream is the cheaper half in present-value terms.
+**3.** Thinking "twice the checks, twice the fund" was treating the withdrawals as a present bill. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. They are a future stream. Time is the discount, and the later half of the stream is the cheaper half in present-value terms.
 
 **4.** The opposite verdict would need a 0% rate, so that every withdrawal counted at face value and 30 years would be exactly double 15 years. The account earns 4.5%, not 0%.
 
@@ -18262,7 +18262,7 @@ so the wording overstates the discount by a round $\\$1,000$.
 
 **1.** $\\$11,224.85$ looks like $\\$10,224.85$ with a transcription slip in the thousands digit, or like $36,000 - 24,775.15$ from a $\\$1,000$-smaller present value. The overview's $P_{15}$ is $25,775.15$, and $36,000$ minus that $P_{15}$ is $10,224.85$. Another mix-up is $36,000 - 25,775.15$ computed as $11,224.85$ by a $36{,}000 - 25{,}000 = 11{,}000$ then a leftover-cents slip.
 
-**2.** A rushed solver who used $2,400 \\times 15 - 2,400 / 0.045$ mixed the perpetuity $\\$53,333$ into the subtraction and would get a *negative* gap, which is a different mistake. Someone who reported $P_{15}$ itself as the gap has named the deposit rather than the discount.
+**2.** Using $2,400 \\times 15 - 2,400 / 0.045$ mixed the perpetuity $\\$53,333$ into the subtraction and would get a *negative* gap, which is a different mistake. The recovered isolation is checked against the claim using $2,400 \\times 15 - 2,400 / 0.045$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who reported $P_{15}$ itself as the gap has named the deposit rather than the discount.
 
 **3.** Letter B already used the ranking $36,000 > 25,775.15$. This letter asks for the dollar distance. Getting the two ends right and then adding $\\$1,000$ is the whole miss. Rounding $10,224.85$ to the nearest thousand is $10,000$, not $11,000$.
 
@@ -18277,7 +18277,7 @@ The claim says that a higher interest rate would raise the required present-valu
 
 The overview recovered the 4.5% deposit as about \\$25,775.15. At 6% the same 15-year plan needs about \\$23,309.40. Then $23{,}309.40 < 25{,}775.15$. The required deposit falls, it does not rise.
 
-**1.** Present value of a withdrawal stream moves opposite to the rate. The retiree's annual check is still \\$2,400. A larger growth factor means the account earns more while the checks are going out, so a smaller opening balance can support the same withdrawals. A solver who thought "higher rate, higher number" was thinking of a future-value problem, or of the interest dollars earned, not of the deposit required today.
+**1.** Present value of a withdrawal stream moves opposite to the rate. The retiree's annual check is still \\$2,400. A larger growth factor means the account earns more while the checks are going out, so a smaller opening balance can support the same withdrawals. Thinking "higher rate, higher number" was thinking of a future-value problem, or of the interest dollars earned, not of the deposit required today. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** The trap figure is something above \\$25,775, as if the 6% present value had to sit near the undiscounted \\$36,000. Another wrong figure is \\$2,400 / 0.06 = 40{,}000, the perpetuity value, which is a different (infinite) plan. Neither is the 15-year 6% annuity of about \\$23,309.
 
@@ -18368,7 +18368,7 @@ The overview recovered that ordinary-annuity present value as about $\\$57{,}349
 
 **1.** The trap is $5{,}000 / 0.06 = 83{,}333.33$, the perpetual fund. Twenty years is finite. Forever of $\\$5{,}000$ at $6\\%$ is a larger pile because the payments never stop.
 
-**2.** Another trap is $5{,}000 \\times 20 = 100{,}000$, the undiscounted cheque total. Discounting is what cuts that pile to about $\\$57{,}350$. A solver who used $5{,}000 \\times 20 / 1.06$ would under-discount, treating twenty years as one year.
+**2.** Another trap is $5{,}000 \\times 20 = 100{,}000$, the undiscounted cheque total. Discounting is what cuts that pile to about $\\$57{,}350$. Using $5{,}000 \\times 20 / 1.06$ would under-discount, treating twenty years as one year. The path that matches the stem therefore holds $5{,}000 \\times 20 / 1.06$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need a different rate or a different horizon. At $6\\%$ for $20$ years the recovered fund is about $\\$57{,}349.67$, not the perpetuity and not the raw $20$-year sum. This letter asks for the $20$-year annuity only.
 
@@ -18385,7 +18385,7 @@ The recovered extra cost of forever is $\\$25,983.66$. This letter is that compa
 
 **1.** The trap is thinking a perpetuity should cost only a little more than twenty years, because "twenty years is already a long time." At $6\\%$, twenty years still leaves about $31\\%$ of the perpetuity's value in the tail after year $20$. That tail is the recovered $\\$25,984$. Another mix-up is reporting $83,333.33$ as the gap, naming the perpetuity instead of the difference.
 
-**2.** A rushed solver who used $5,000 / 0.06 - 5,000 \\times 20 = 83,333 - 100,000$ mixed nominal twenty-year cash with a present perpetuity and got a negative gap. Nominal cash is not present value. Someone who used $P_{40} - P_{20}$ from Part 3.4 is measuring a forty-versus-twenty gap, about $\\$17,882$, not the forever-versus-twenty gap.
+**2.** Using $5,000 / 0.06 - 5,000 \\times 20 = 83,333 - 100,000$ mixed nominal twenty-year cash with a present perpetuity and got a negative gap. The path that matches the stem therefore holds $5,000 / 0.06 - 5,000 \\times 20 = 83,333 - 100,000$ fixed and only then reads the claim. Nominal cash is not present value. Someone who used $P_{40} - P_{20}$ from Part 3.4 is measuring a forty-versus-twenty gap, about $\\$17,882$, not the forever-versus-twenty gap.
 
 **3.** Letter E will say the perpetuity is the limit of the annuity formula as $n$ grows. This letter only asks whether $83,333.33$ exceeds $57,349.67$ by about $25,983.66$. It does. The extra arithmetic is that subtraction; neither present value is rebuilt.
 
@@ -18434,7 +18434,7 @@ The recovered perpetuity $\\$83,333.33$ is that limit. This letter is the meanin
 
 **1.** The trap is thinking the annuity formula "breaks" at infinity and must be replaced by an unrelated rule. The $a/r$ formula is the same $a/r$ that already sits in front of the twenty-year calculation, $83,333.33 \\times 0.688195$. The finite case multiplies by a factor less than one; the infinite case multiplies by one.
 
-**2.** A rushed solver who used $P_{40} = 75,231.50$ from Part 3.4 as if forty years were already infinity would still be $8{,}102$ short of $83,333$. Forty years is about $90\\%$ of the perpetuity, not $100\\%$. Someone who used $5,000 / 1.06 \\approx 4,717$ discounted a single payment instead of a stream.
+**2.** Using $P_{40} = 75,231.50$ from Part 3.4 as if forty years were already infinity would still be $8{,}102$ short of $83,333$. Working from the isolated values, $P_{40} = 75,231.50$ is the figure that is checked, not the detour that produced $83,333$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Forty years is about $90\\%$ of the perpetuity, not $100\\%$. Someone who used $5,000 / 1.06 \\approx 4,717$ discounted a single payment instead of a stream.
 
 **3.** Letter B used $83,333.33$ as a level to compare with $P_{20}$. This letter explains why that level is the ceiling of every finite $P_n$. No finite horizon reaches $83,333.33$; the sequence of $P_n$ only approaches it.
 
@@ -18533,7 +18533,7 @@ The overview recovered that ordinary-annuity present cost as about $\\$16{,}288.
 
 **1.** The trap is $2{,}500 \\times 9 = 22{,}500$, the undiscounted instalments. Discounting is what cuts that pile to about $\\$16{,}288$.
 
-**2.** A solver who reported Option 1's $\\$18{,}000$ here would be reading cash, not the instalment stream. A solver who treated the nine payments as due (beginning of year) would overstate today's cost, because due payments arrive earlier.
+**2.** Reporting Option 1's $\\$18{,}000$ here would be reading cash, not the instalment stream. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Treating the nine payments as due (beginning of year) would overstate today's cost, because due payments arrive earlier. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 Option 2's recovered present value sits below the $\\$18{,}000$ cash price, which is why instalments win at $7\\%$. That ranking is a later letter. This letter only pins Option 2 at about $\\$16{,}288$. The opposite verdict would need a different rate or a different payment.
 
@@ -18556,7 +18556,7 @@ so the wording overstates the saving by a round $\\$100$.
 
 **1.** Cheaper is the right verdict. The false figure is the dollar gap. $\\$1,811.82$ looks like $\\$1,711.82$ with a hundreds-digit slip, or like $18,000 - 16,188.18$. The overview's $P_9$ is $16,288.18$.
 
-**2.** A rushed solver who picked Option 1 because "paying it off today avoids interest" has ignored that Option 2's payments are themselves discounted at $7\\%$. Someone who used the nominal $9 \\times 2,500 = 22,500$ against $18,000$ would pick Option 1 for the wrong, undiscounted reason. Letter D is that nominal comparison, with its own false $\\$4,600$ gap.
+**2.** Picking Option 1 because "paying it off today avoids interest" has ignored that Option 2's payments are themselves discounted at $7\\%$. Once $7\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used the nominal $9 \\times 2,500 = 22,500$ against $18,000$ would pick Option 1 for the wrong, undiscounted reason. Letter D is that nominal comparison, with its own false $\\$4,600$ gap.
 
 **3.** The claim bundles a true ranking with a false saving. A statement that names a wrong quantity is false even when the qualitative ranking is right. The recovered saving is $1,711.82$, and the claim's $1,811.82$ does not match it.
 
@@ -18571,7 +18571,7 @@ The claim says that cutting the discount rate from 7% to 4% would lower Option 2
 
 The overview recovered the 7% present value as about \\$16,288.18. At 4% the same nine payments are worth about \\$18,588.31. Then $18{,}588.31 > 16{,}288.18$. At 4% the instalment plan is even dearer than the \\$18,000 cash price.
 
-**1.** Present value of a payment stream moves opposite to the rate. The supplier still wants nine checks of \\$2,500. A smaller discount factor means those later checks are worth more today. A solver who thought "worse rate, smaller number" was thinking of a future-value problem, or of the interest the company could earn on cash it keeps. This letter asks for the present cost of Option 2, which goes up when the rate goes down.
+**1.** Present value of a payment stream moves opposite to the rate. The supplier still wants nine checks of \\$2,500. A smaller discount factor means those later checks are worth more today. Thinking "worse rate, smaller number" was thinking of a future-value problem, or of the interest the company could earn on cash it keeps. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. This letter asks for the present cost of Option 2, which goes up when the rate goes down.
 
 **2.** The trap figure is something below \\$16,288, as if 4% had cheapened the instalments. Another wrong figure is \\$22,500, the undiscounted total, which is the 0% present value, not the 4% one. The recovered 4% value of about \\$18,588 sits between \\$16,288 and \\$22,500, as it must.
 
@@ -18600,7 +18600,7 @@ so the wording overstates the undiscounted extra by a round $\\$100$.
 
 **2.** This letter is *not* asking which option is cheaper in present value. That is letter B, and Option 2 wins there by $\\$1,711.82$. Nominal cash can rank the other way: $\\$22,500$ exceeds $\\$18,000$. Both rankings can be true at once because one discounts and one does not. The claimed $\\$4,600$ is still the wrong nominal gap.
 
-**3.** A rushed solver who used $2,500 \\times 8 = 20,000$ counted eight payments instead of nine and would report a $\\$2,000$ excess. Someone who used $2,500 \\times 9.04$ invented a fractional extra payment.
+**3.** Using $2,500 \\times 8 = 20,000$ counted eight payments instead of nine and would report a $\\$2,000$ excess. Keeping $2,500 \\times 8 = 20,000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $2,500 \\times 9.04$ invented a fractional extra payment.
 
 In the story of the stem, the company is comparing undiscounted cash out the door, not the $7\\%$ present values of letter B. The recovered object is $22,500 - 18,000 = 4,500$. The extra arithmetic is the $\\$100$ gap versus $\\$4,600$. Nine times $\\$2,500$ cannot be $\\$23,100$, which is the only way to manufacture a $\\$4,600$ excess against $\\$18,000$.
 
@@ -18696,7 +18696,7 @@ The overview recovered that lump-sum future value as $\\$19{,}126.18$. This lett
 
 **1.** The trap is $12{,}000 \\times 1.48 = 17{,}760$, eight years of simple $6\\%$. Compounding adds the extra that the claim includes. Simple interest never credits interest on interest.
 
-**2.** A solver who reported Strategy B's recovered $\\$13{,}856$ here would be reading the annuity, not the lump. A solver who used $(1.06)^7$ would stop a year early and undershoot.
+**2.** Reporting Strategy B's recovered $\\$13{,}856$ here would be reading the annuity, not the lump. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $(1.06)^7$ would stop a year early and undershoot. Keeping $(1.06)^7$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need a different opening deposit or a different rate. With $\\$12{,}000$ at $6\\%$ for eight compounding years, Strategy A's recovered pile is $\\$19{,}126.18$. Eight copies of $\\$1{,}400$ are not this letter.
 
@@ -18709,7 +18709,7 @@ The overview recovered $F_B \\approx 13{,}856.46$. The claim writes $\\$14{,}856
 
 **1.** Eight copies of $\\$1{,}400$ are $\\$11{,}200$ of principal. Interest makes up the rest. The recovered pile is about $\\$13{,}856$, so interest is about $\\$2{,}656$, not $\\$3{,}656$.
 
-**2.** A solver who added an extra $\\$1{,}000$ onto a correct annuity value, or who treated nine deposits, would land on the claim. A solver who used Strategy A's $\\$19{,}126$ here would overshoot in the other direction.
+**2.** Adding an extra $\\$1{,}000$ onto a correct annuity value, or treating nine deposits, would land on the claim. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using Strategy A's $\\$19{,}126$ here would overshoot in the other direction. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 The ranking against Strategy A still holds either way: even the inflated $\\$14{,}856$ sits below $\\$19{,}126$. The printed Strategy B figure is still $\\$1{,}000$ too high. The opposite verdict would need the recovered annuity to be $\\$14{,}856$, and it is not.
 
@@ -18732,7 +18732,7 @@ so the wording overstates A's lead by a round $\\$500$.
 
 **1.** $\\$5,769.72$ looks like $\\$5,269.72$ with a hundreds-digit slip, or like $19,126.18 - 13,356.46$ from a $\\$500$-smaller $F_B$. The overview's $F_B$ is $13,856.46$, and letter B already rejected a false $F_B$ of $14,856.46$. Using that false $F_B$ would have made the gap $4,269.72$, a different miss.
 
-**2.** A rushed solver who used $12,000 - 11,200 = 800$, the difference in cash committed, has named letter D's objects rather than the year-$8$ balances. Someone who used $19,126 - 13,856 = 5,270$ and then added $\\$500$ of "rounding" invented the claim.
+**2.** Using $12,000 - 11,200 = 800$, the difference in cash committed, has named letter D's objects rather than the year-$8$ balances. Working from the isolated values, $12,000 - 11,200 = 800$ is the figure that is checked, not the detour that produced $8$. Someone who used $19,126 - 13,856 = 5,270$ and then added $\\$500$ of "rounding" invented the claim.
 
 **3.** The claim bundles a true ranking with a false dollar gap. A statement that names a wrong quantity is false even when A really does win. The recovered lead is $5,269.72$.
 
@@ -18759,7 +18759,7 @@ A puts in $\\$800$ more cash than B, and still finishes about $\\$5,270$ ahead a
 
 **1.** The trap is thinking eight deposits must exceed one deposit because there are more of them. Eight $\\$1,400$ deposits are $\\$11,200$, which is still $\\$800$ short of $\\$12,000$. Another mix-up is comparing *future values* $F_B$ and $\\$12,000$ and noticing $13,856 > 12,000$, then attaching that ranking to cash committed. Future value is not cash committed.
 
-**2.** A rushed solver who used $1,400 \\times 9 = 12,600$ counted nine deposits and would then agree that B commits more. The stem is eight years of year-end deposits. Someone who used $1,400 \\times 8 \\times 1.06$ mixed interest into a cash-committed figure.
+**2.** Using $1,400 \\times 9 = 12,600$ counted nine deposits and would then agree that B commits more. The path that matches the stem therefore holds $1,400 \\times 9 = 12,600$ fixed and only then reads the claim. The stem is eight years of year-end deposits. Someone who used $1,400 \\times 8 \\times 1.06$ mixed interest into a cash-committed figure.
 
 **3.** Letter C asked which strategy *finishes* ahead. A does, by about $\\$5,270$. This letter asks which strategy *puts in* more cash. A does, by $\\$800$. Both can be true at once: A invests more, and invests it earlier, so A also finishes ahead.
 
@@ -18873,7 +18873,7 @@ Part 3.1 already scaled the ordinary $F_{\\mathrm{ordinary}} = 20,405.76$ by $1.
 
 **1.** The trap is reporting the ordinary $\\$20,405.76$ as if beginning-of-year deposits were the same as end-of-year deposits. They are not. Each due deposit sits one extra year. Another mix-up is $6 \\times 3,000 = 18,000$, the no-interest total.
 
-**2.** A rushed solver who used $3,000 \\times 1.05^6 \\approx 4,020$ treated a single deposit as the whole plan. Someone who used $20,405.76 / 1.05$ moved the deposits the wrong way, later instead of earlier.
+**2.** Using $3,000 \\times 1.05^6 \\approx 4,020$ treated a single deposit as the whole plan. That is why $3,000 \\times 1.05^6 \\approx 4,020$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $20,405.76 / 1.05$ moved the deposits the wrong way, later instead of earlier.
 
 **3.** The claimed cents, $05$, match the overview's $20,405.76 \\times 1.05$. Letter B will say the ordinary result is lower. Letter C will misstate the gap as $\\$1,120.29$. This letter only asks for the due future value.
 
@@ -18898,7 +18898,7 @@ and $1.05 > 1$, so the due pile is strictly larger.
 
 **1.** The trap is thinking year-end deposits "catch up" because they still sit until the end of year $6$. They do not catch up. The last ordinary deposit is made on the valuation date and earns nothing; the last due deposit has already earned a full year. That timing identity is Part 3.4.
 
-**2.** A rushed solver who compared $6 \\times 3,000 = 18,000$ with itself under both timings has ignored interest entirely. Someone who used $F_{\\mathrm{ordinary}} \\times 1.05^6$ over-grew the ordinary pile.
+**2.** Comparing $6 \\times 3,000 = 18,000$ with itself under both timings has ignored interest entirely. The opposite verdict would need a different isolation than $6 \\times 3,000 = 18,000$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Someone who used $F_{\\mathrm{ordinary}} \\times 1.05^6$ over-grew the ordinary pile.
 
 **3.** Letter C will put a false dollar amount on this gap. This letter only asks for the direction. Direction is forced by $r > 0$. If the rate were zero, the two future values would tie at $\\$18,000$. The stem's $5\\%$ is positive.
 
@@ -18925,7 +18925,7 @@ so the wording overstates the timing advantage by a round $\\$100$.
 
 **1.** $\\$1,120.29$ looks like $\\$1,020.29$ with a hundreds-digit slip, or like $0.05 \\times 22,405.76$, interest on a pile that is $\\$1,000$ too large. The identity is $F_{\\mathrm{due}} - F_{\\mathrm{ordinary}} = 0.05 \\times 20,405.76 = 1,020.29$. Another mix-up is $3,000 \\times 0.05 \\times 6 = 900$, simple interest on six deposits as if each earned a full extra year on the original $\\$3,000$ only.
 
-**2.** A rushed solver who used $21,426.05 - 20,305.76$ invented a $\\$100$-smaller ordinary value. Someone who reported $3,000 \\times 1.05 - 3,000 = 150$ named one extra year on a single deposit rather than on the whole ordinary pile.
+**2.** Using $21,426.05 - 20,305.76$ invented a $\\$100$-smaller ordinary value. The recovered isolation is checked against the claim using $21,426.05 - 20,305.76$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who reported $3,000 \\times 1.05 - 3,000 = 150$ named one extra year on a single deposit rather than on the whole ordinary pile.
 
 **3.** Letters A and B recovered the two future values and the direction of the ranking. This letter asks for the dollar distance. Getting both ends right and then adding $\\$100$ is the whole miss. Rounding $1,020.29$ to the nearest hundred is $1,000$, not $1,100$.
 
@@ -18946,7 +18946,7 @@ The overview recovered the six-year due fund as \\$21,426.05. At 12 years the or
 
 **3.** The trap figure is \\$42,852.10, twice the six-year due result. Another wrong figure is \\$42,000, twelve deposits of \\$3,000 with a little rounding. Neither is the recovered twelve-year due fund of about \\$50,139.
 
-**4.** A solver who doubled the ordinary six-year pile instead, $2 \\times 20{,}405.76 = 40{,}811.52$, and then scaled by $1.05$ would still land on \\$42,852.10, the same trap. Doubling first and then applying the due identity is algebraically the same as doubling the due result. Both routes assume linearity in $n$, which an accumulating annuity does not have.
+**4.** Doubling the ordinary six-year pile instead, $2 \\times 20{,}405.76 = 40{,}811.52$, and then scaling by $1.05$ would still land on \\$42,852.10, the same trap. After isolating the unknown, the check is against $2 \\times 20{,}405.76 = 40{,}811.52$. The figure $1.05$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2 \\times 20{,}405.76 = 40{,}811.52$ stays in the write-up. Doubling first and then applying the due identity is algebraically the same as doubling the due result. Both routes assume linearity in $n$, which an accumulating annuity does not have.
 
 **5.** What would have to change for the opposite verdict? A 0% rate would make the due fund equal to $n \\times 3{,}000$, so 12 years would be exactly double 6 years. The gym's account pays 5%, not 0%. A sinking fund with a cap, or a plan that stopped depositing after year 6 and only compounded, would also scale differently. The stem keeps depositing every year.
 
@@ -18954,7 +18954,7 @@ The overview recovered the six-year due fund as \\$21,426.05. At 12 years the or
 
 The recovered 12-year annuity-due future value is about \\$50,138.93, not double \\$21,426.05, **6.** Another way to see the failure of doubling: the six-year due fund is six beginning-of-year deposits, each grown to the end of year 6. The twelve-year due fund is those same six deposits grown six extra years, plus six new deposits grown to the end of year 12. The extra growth on the first block alone is $21{,}426.05 \\times (1.05)^6 - 21{,}426.05 \\approx 7{,}325$, already more than the \\$7,287 by which \\$50,139 exceeds \\$42,852, and that ignores the second block of deposits. Linearity in $n$ never had a chance.
 
-**7.** A rushed solver who wrote $F_{\\mathrm{due}}(12) = 2 F_{\\mathrm{due}}(6)$ was treating an accumulating fund as if it were a level rent whose present value might saturate. Future value of a growing annuity does the opposite of saturate. It accelerates.
+**7.** Writing $F_{\\mathrm{due}}(12) = 2 F_{\\mathrm{due}}(6)$ was treating an accumulating fund as if it were a level rent whose present value might saturate. Once $F_{\\mathrm{due}}(12) = 2 F_{\\mathrm{due}}(6)$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Future value of a growing annuity does the opposite of saturate. It accelerates.
 
 so the statement is False.`,
       `**E) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.**  (true)
@@ -19058,7 +19058,7 @@ Part 3.1 already scaled the ordinary $P_{\\mathrm{ordinary}} = 101,096.80$ by $1
 
 **1.** The trap is reporting the ordinary $\\$101,096.80$ as if beginning-of-year rent were the same as end-of-year rent. The first due payment is today and is not discounted at all. Another mix-up is $5 \\times 24,000 = 120,000$, the undiscounted lease total.
 
-**2.** A rushed solver who used $24,000 / 0.06 = 400,000$ named a perpetuity of $\\$24,000$ a year, not a five-year lease. Someone who used $101,096.80 / 1.06$ moved the payments later instead of earlier.
+**2.** Using $24,000 / 0.06 = 400,000$ named a perpetuity of $\\$24,000$ a year, not a five-year lease. Once $24,000 / 0.06 = 400,000$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Someone who used $101,096.80 / 1.06$ moved the payments later instead of earlier.
 
 **3.** The claimed cents, $61$, match the overview's $101,096.80 \\times 1.06$. Letter B will say the ordinary present value is lower. Letter C will misstate the gap as $\\$7,065.81$. This letter only asks for the due present value.
 
@@ -19079,7 +19079,7 @@ so end-of-year rent is worth less today. For any positive rate, $P_{\\mathrm{due
 
 **1.** The trap is thinking later rent "must be worth more because the tenant keeps the cash longer." From the *landlord's* side, later cash is discounted more, so it is worth less today. Another mix-up is comparing undiscounted $120,000$ with itself under both timings.
 
-**2.** A rushed solver who used $P_{\\mathrm{ordinary}} \\times 1.06^5$ over-grew the ordinary present value. Someone who thought due payments should be smaller because "they start immediately and there are fewer years of discounting left" has the right intuition for direction and does not need a new formula.
+**2.** Using $P_{\\mathrm{ordinary}} \\times 1.06^5$ over-grew the ordinary present value. Once $P_{\\mathrm{ordinary}} \\times 1.06^5$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Someone who thought due payments should be smaller because "they start immediately and there are fewer years of discounting left" has the right intuition for direction and does not need a new formula.
 
 **3.** Letter C will put a false dollar amount on this gap. This letter only asks for the direction. Direction is forced by $r > 0$. If the rate were zero, both present values would equal $\\$120,000$. The stem's $6\\%$ is positive.
 
@@ -19106,7 +19106,7 @@ so the wording overstates the timing advantage by a round $\\$1,000$.
 
 **1.** $\\$7,065.81$ looks like $\\$6,065.81$ with a thousands-digit slip, or like $0.06 \\times 117,763$, interest on a pile that is too large. The identity is $P_{\\mathrm{due}} - P_{\\mathrm{ordinary}} = 0.06 \\times 101,096.80 = 6,065.81$. Another mix-up is $24,000 \\times 0.06 \\times 5 = 7,200$, which sits near the false $\\$7,066$ and treats every payment as earning a full extra $6\\%$ on $\\$24,000$.
 
-**2.** A rushed solver who used $107,162.61 - 100,096.80$ invented a $\\$1,000$-smaller ordinary value. Someone who reported $24,000 \\times 0.06 = 1,440$ named one extra period on a single payment rather than on the whole ordinary present value.
+**2.** Using $107,162.61 - 100,096.80$ invented a $\\$1,000$-smaller ordinary value. The opposite verdict would need a different isolation than $107,162.61 - 100,096.80$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Someone who reported $24,000 \\times 0.06 = 1,440$ named one extra period on a single payment rather than on the whole ordinary present value.
 
 **3.** Letters A and B recovered the two present values and the direction of the ranking. This letter asks for the dollar distance. Getting both ends right and then adding $\\$1,000$ is the whole miss. Rounding $6,065.81$ to the nearest thousand is $6,000$, not $7,000$.
 
@@ -19127,7 +19127,7 @@ The overview recovered the five-year due present value as \\$107,162.61. At 10 y
 
 **3.** The trap figure is \\$214,325.22, twice the five-year due result. Another wrong figure is \\$240,000, ten undiscounted rents. Neither is the recovered ten-year due present value of about \\$187,241.
 
-**4.** A solver who doubled the ordinary five-year present value, $2 \\times 101{,}096.80 = 202{,}193.60$, and then scaled by $1.06$ would still land on \\$214,325.22, the same trap. Doubling first and then applying the due identity assumes linearity in $n$, which a discounted stream does not have. Far-off rents are cheap.
+**4.** Doubling the ordinary five-year present value, $2 \\times 101{,}096.80 = 202{,}193.60$, and then scaling by $1.06$ would still land on \\$214,325.22, the same trap. After isolating the unknown, the check is against $2 \\times 101{,}096.80 = 202{,}193.60$. The figure $1.06$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2 \\times 101{,}096.80 = 202{,}193.60$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Doubling first and then applying the due identity assumes linearity in $n$, which a discounted stream does not have. Far-off rents are cheap.
 
 **5.** What would have to change for the opposite verdict? A 0% opportunity cost would make every rent count at face value, so 10 years of due rent would be exactly double 5 years. The landlord's opportunity cost is 6%, not 0%. A growing rent, or a balloon in the second half, could also push the second block up to match the first. The stem's rent is level.
 
@@ -19146,7 +19146,7 @@ That is an equivalent identity, not a second lease. An annuity due of $n$ paymen
 
 **1.** Why this matches $P_n(1+r)$: the ordinary five-year present value discounts five end-of-year rents. Multiplying by $1.06$ moves every rent one period earlier, which is the due schedule. Splitting off the immediate \\$24,000 and discounting the other four as ordinary rents is the same cash-flow list: rent at $t=0,1,2,3,4$.
 
-**2.** The four-year ordinary present value is about \\$83,162.40. Adding the opening \\$24,000 recovers the due present value. A solver who added five remaining ordinary payments, or who discounted the first rent as well, would miss the identity.
+**2.** The four-year ordinary present value is about \\$83,162.40. Adding the opening \\$24,000 recovers the due present value. Adding five remaining ordinary payments, or discounting the first rent as well, would miss the identity. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **3.** The trap is treating the first payment as due at the end of year 1, which would be the ordinary five-year lease of \\$101,096.80, or adding $P_5$ rather than $P_4$ to the \\$24,000 and double-counting a rent.
 
@@ -19255,7 +19255,7 @@ The recovered year-$4$ perpetuity value is $\\$166,666.67$. This letter is readi
 
 **1.** The trap is $10,000 \\times 4 = 40,000$, as if four years of waiting were four payments already made. No payment occurs at years $1$ through $4$. Another mix-up is $10,000 / 1.06 \\approx 9,434$, a single discounted payment rather than a perpetuity.
 
-**2.** A rushed solver who used $10,000 / 0.06 \\times 1.06$ moved the valuation date to year $5$, one period too late. The standard perpetuity $a/r$ is the value one period before the first payment, which is the end of year $4$ here.
+**2.** Using $10,000 / 0.06 \\times 1.06$ moved the valuation date to year $5$, one period too late. After isolating the unknown, the check is against $10,000 / 0.06 \\times 1.06$. The figure $5$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10,000 / 0.06 \\times 1.06$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The standard perpetuity $a/r$ is the value one period before the first payment, which is the end of year $4$ here.
 
 **3.** Letter B will discount this $V$ through four years to today's $PV_0 \\approx 132,015.61$. This letter only asks for $V$ itself. Letter E will misstate the ratio $PV_0 / V$.
 
@@ -19272,7 +19272,7 @@ Part 3.2 already divided by the recovered four-year factor $1.262477$ and left $
 
 **1.** The trap is reporting $V = 166,666.67$ as if the donation were due at year $4$ rather than today. Four years of discounting are required. Another mix-up is $166,666.67 / 1.06 \\approx 157,233$, discounting only one year.
 
-**2.** A rushed solver who used $10,000 / 0.06 / 1.06^5$ discounted five years, to a moment one year before year $4$. The first payment is at $t = 5$, so the ordinary-perpetuity date is $t = 4$, and today is four years earlier, not five. Someone who used $132,015.61 \\times 1.06$ grew today's value instead of discounting $V$.
+**2.** Using $10,000 / 0.06 / 1.06^5$ discounted five years, to a moment one year before year $4$. After isolating the unknown, the check is against $10,000 / 0.06 / 1.06^5$. The figure $4$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10,000 / 0.06 / 1.06^5$ stays in the write-up. The first payment is at $t = 5$, so the ordinary-perpetuity date is $t = 4$, and today is four years earlier, not five. Someone who used $132,015.61 \\times 1.06$ grew today's value instead of discounting $V$.
 
 **3.** Letter C will compare this deferred $PV_0$ with an immediate perpetuity worth $166,666.67$ today. Immediate is larger, not smaller. This letter only asks for the deferred present value. The claimed cents, $61$, match the overview.
 
@@ -19287,7 +19287,7 @@ The claim says that starting the \\$10,000 checks at the end of year 1, with no 
 
 An immediate perpetuity is worth the full $10{,}000/0.06 = 166{,}666.67$ today. Then $166{,}666.67 > 132{,}015.61$. The four-year wait is what cuts the donation from about \\$166,667 down to about \\$132,016.
 
-**1.** Every check in the immediate perpetuity arrives four years earlier than the matching check in the deferred stream. Earlier cash is worth more today at a positive 6%. A solver who thought "waiting means more time to grow, so the deferred fund is larger today" was mixing a future-value story into a present-value donation. The philanthropist is funding a stream of outflows. Waiting to start those outflows makes the endowment cheaper to fund today, not more expensive.
+**1.** Every check in the immediate perpetuity arrives four years earlier than the matching check in the deferred stream. Earlier cash is worth more today at a positive 6%. Thinking "waiting means more time to grow, so the deferred fund is larger today" was mixing a future-value story into a present-value donation. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The philanthropist is funding a stream of outflows. Waiting to start those outflows makes the endowment cheaper to fund today, not more expensive.
 
 **2.** The trap figure is something below \\$132,016 for the immediate fund. Another wrong figure is \\$166,667 discounted five years, which would undershoot the deferred value and still not make the immediate fund smaller. The recovered immediate value is the year-4 fund itself, undiscounted.
 
@@ -19327,7 +19327,7 @@ so the wording overstates the discount factor by four hundredths, as if the wait
 
 **1.** $0.8321$ looks like $1 / 1.06^2 \\approx 0.8900$ mixed with $1 / 1.06^3 \\approx 0.8396$, a three-year discount factor sitting next to the claim, or like $1 - 0.06 \\times 2.8$. The stem defers four years, and $1 / 1.262477 \\approx 0.7921$. Another mix-up is $132,015.61 / 158,000$, dividing by the wrong $V$.
 
-**2.** A rushed solver who used $1 - 0.06 \\times 4 = 0.76$ applied simple discount and undershot. Someone who used $1 / 1.06^4$ correctly to get $0.7921$ and then added $0.04$ for "rounding" invented $0.8321$. Rounding $0.792094$ to four decimals is $0.7921$, not $0.8321$.
+**2.** Using $1 - 0.06 \\times 4 = 0.76$ applied simple discount and undershot. The recovered isolation is checked against the claim using $1 - 0.06 \\times 4 = 0.76$, which is the figure the sessions actually produce. Someone who used $1 / 1.06^4$ correctly to get $0.7921$ and then added $0.04$ for "rounding" invented $0.8321$. Rounding $0.792094$ to four decimals is $0.7921$, not $0.8321$.
 
 **3.** Letters A and B recovered $V$ and $PV_0$. This letter asks for their ratio. Getting both ends right and then naming $0.8321$ is the whole miss. A three-year deferral would have produced about $0.8396$, near the claim; the stem is four years.
 
@@ -19422,7 +19422,7 @@ The overview recovered $4.25/0.07 \\approx 60.71$. This letter is reading that d
 
 **1.** Fair value is the dividend over the required return, not the market price over the return. The trap is $4.25 \\times 0.07 = 0.30$, which is a dollar dividend times a rate, or $65/0.07 \\approx 929$, which puts the sticker in the numerator.
 
-**2.** A solver who used $4.25/0.065$ or $4.25/0.075$ would wander off $60.71$ by changing the required return the stem did not change. Growth is not in this preferred; a Gordon $g>0$ would be the wrong model.
+**2.** Using $4.25/0.065$ or $4.25/0.075$ would wander off $60.71$ by changing the required return the stem did not change. The stem's recovered values line up with $4.25/0.065$, whereas $60.71$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $4.25/0.065$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Growth is not in this preferred; a Gordon $g>0$ would be the wrong model.
 
 The opposite verdict would need a different dividend or a different required return. With $\\$4.25$ forever at $7\\%$, the recovered fair value is about $\\$60.71$. Trading at $\\$65$ is letter B's ranking, not this letter's price.
 
@@ -19435,7 +19435,7 @@ The overview recovered fair value as about $\\$60.71$. The stock trades at $\\$6
 
 **1.** The gap is about $\\$4.29$ of overvaluation. A buyer at $\\$65$ would be paying that extra for the same $\\$4.25$ perpetual dividend.
 
-**2.** The ranking in the claim is backwards. A solver who compared $\\$65$ with $4.25/0.065 \\approx 65.4$ after inventing a lower required return could manufacture a tiny undervaluation. The stem's required return is $7\\%$, not $6.5\\%$.
+**2.** The ranking in the claim is backwards. Comparing $\\$65$ with $4.25/0.065 \\approx 65.4$ after inventing a lower required return could manufacture a tiny undervaluation. Once $4.25/0.065 \\approx 65.4$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's required return is $7\\%$, not $6.5\\%$.
 
 The opposite verdict would need fair value above $\\$65$, which would take a required return below $4.25/65 \\approx 6.54\\%$. Investors require $7\\%$. The recovered fair value sits below the $\\$65$ sticker, so the statement is False.`,
       `**C) If the required return fell to 4%, the fair value would rise to \\$116.25 per share.**  (false)
@@ -19468,7 +19468,7 @@ A $20\\%$ cut of $\\$4.25$ leaves $\\$3.40$. Then $3.40/0.07 \\approx 48.57$, no
 
 **1.** The cut is $0.20 \\times 4.25 = 0.85$, leaving $3.40$. Feeding $3.54$ into the $7\\%$ denominator is one route to something near $\\$50.57$.
 
-**2.** A solver who cut the required return by $20\\%$ instead of the dividend would raise the price, the wrong direction. A solver who subtracted $\\$10$ from $\\$60.71$ would land near $\\$50.71$, another neighbour of the claim.
+**2.** Cutting the required return by $20\\%$ instead of the dividend would raise the price, the wrong direction. The path that matches the stem therefore holds $20\\%$ fixed and only then reads the claim. Subtracting $\\$10$ from $\\$60.71$ would land near $\\$50.71$, another neighbour of the claim. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need the cut-dividend value to be $\\$50.57$. With $D=3.40$ at $7\\%$, the recovered fair value is about $\\$48.57$, not $\\$50.57$. Linearity in the dividend is the whole extra arithmetic.
 
@@ -19555,7 +19555,7 @@ The overview recovered $15{,}000/0.045 = 333{,}333.33$. This letter is the ongoi
 
 **1.** The trap is adding the $\\$50{,}000$ renovation already, which is letter B's combined $\\$383{,}333.33$. This letter asks for maintenance alone.
 
-**2.** A solver who used $15{,}000/0.045 \\times 1.045$ would have grown the perpetuity by one extra year. A solver who used $6\\%$ here would report $\\$250{,}000$, which is letter C's maintenance piece, not the $4.5\\%$ figure.
+**2.** Using $15{,}000/0.045 \\times 1.045$ would have grown the perpetuity by one extra year. That is why $15{,}000/0.045 \\times 1.045$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Using $6\\%$ here would report $\\$250{,}000$, which is letter C's maintenance piece, not the $4.5\\%$ figure. The opposite verdict would need a different isolation than $6\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The opposite verdict would need a different annual maintenance bill or a different rate. With $\\$15{,}000$ forever at $4.5\\%$, the recovered maintenance fund is about $\\$333{,}333.33$. The renovation waits for the next letter.
 
@@ -19570,9 +19570,9 @@ The overview recovered the maintenance fund as $\\$333{,}333.33$. The extra arit
 
 $$50{,}000 + 333{,}333.33 = 383{,}333.33$$
 
-**2.** The trap is discounting the $\\$50{,}000$ as if it were also a future bill. The renovation is paid today, so it enters at face value. A solver who reported $\\$333{,}333$ here would be answering letter A.
+**2.** The trap is discounting the $\\$50{,}000$ as if it were also a future bill. The renovation is paid today, so it enters at face value. Reporting $\\$333{,}333$ here would be answering letter A. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-A solver who treated the renovation as a second perpetuity, $50{,}000/0.045$, would invent about $\\$1.11$ million and miss the claim. The opposite verdict would need the renovation to be deferred. With it due today, the recovered combined total is about $\\$383{,}333.33$.
+Treating the renovation as a second perpetuity, $50{,}000/0.045$, would invent about $\\$1.11$ million and miss the claim. Keeping $50{,}000/0.045$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would need the renovation to be deferred. With it due today, the recovered combined total is about $\\$383{,}333.33$.
 
 The recovered combined total is about $\\$383{,}333.33$, so the statement is True.`,
       `**C) If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.**  (true)
@@ -19585,7 +19585,7 @@ At $6\\%$ the maintenance perpetuity falls to $15{,}000/0.06 = 250{,}000$. Addin
 
 $$15000/0.06 + 50000 = 250000 + 50000 = 300000$$
 
-**2.** The trap is scaling the whole $\\$383{,}333$ by $4.5/6$, which would report about $\\$287{,}500$ and miss that the renovation is rate-invariant. A solver who forgot to add $\\$50{,}000$ would stop at $\\$250{,}000$.
+**2.** The trap is scaling the whole $\\$383{,}333$ by $4.5/6$, which would report about $\\$287{,}500$ and miss that the renovation is rate-invariant. Forgetting to add $\\$50{,}000$ would stop at $\\$250{,}000$. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 A higher rate cheapens future maintenance and leaves today's renovation untouched. The opposite verdict would need the renovation to be discounted too. With it paid today, the recovered $6\\%$ combined total is $\\$300{,}000$.
 
@@ -19698,7 +19698,7 @@ The overview recovered $24{,}000/(0.08-0.025) = 436{,}363.64$. The spread $5.5\\
 
 **1.** The trap is $24{,}000/0.08 = 300{,}000$, the no-growth value from letter B. Growth is in the stem and belongs in the denominator as $r-g$, not as an afterthought.
 
-**2.** A solver who used $24{,}000 \\times 1.025 / 0.055$ would have grown $D_1$ into $D_2$ and overstated the price. The stem already gave next year's cash flow, so $D_1$ is $\\$24{,}000$ as written.
+**2.** Using $24{,}000 \\times 1.025 / 0.055$ would have grown $D_1$ into $D_2$ and overstated the price. The stem's recovered values line up with $24{,}000 \\times 1.025 / 0.055$, whereas $D_2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $24{,}000 \\times 1.025 / 0.055$ stays in the write-up. The stem already gave next year's cash flow, so $D_1$ is $\\$24{,}000$ as written.
 
 The opposite verdict would need a different spread. If growth were ignored, the price would be $\\$300{,}000$. With $g=0.025$ and $r=0.08$, the recovered fair value is about $\\$436{,}363.64$.
 
@@ -19711,7 +19711,7 @@ No growth uses $r$ alone in the denominator: $24{,}000/0.08 = 300{,}000$. Then $
 
 **1.** The trap is thinking that growth is a risk that must cut today's price. In the Gordon-style model, extra future rents raise the price as long as they do not outrun the required return.
 
-**2.** A solver who compared $\\$300{,}000$ with a miscomputed growing value below $\\$300{,}000$ could manufacture the claim. The honest growing value is $\\$436{,}364$, which sits above, not below.
+**2.** Comparing $\\$300{,}000$ with a miscomputed growing value below $\\$300{,}000$ could manufacture the claim. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The honest growing value is $\\$436{,}364$, which sits above, not below.
 
 The opposite verdict would need $g$ negative, a shrinking rent. The stem's $2.5\\%$ growth is positive and below $8\\%$, so it lifts the price. The recovered no-growth value is $\\$300{,}000$, lower than the growing value, so the statement is False.`,
       `**C) If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.**  (false)
@@ -19733,7 +19733,7 @@ The new spread is $0.06-0.025=0.035$. Then $24{,}000/0.035 = 685{,}714.29$, not 
 
 **1.** The trap is $24{,}000/0.0335$ or adding $\\$30{,}000$ onto the recovered $\\$685{,}714$. The spread is $3.5\\%$, and $24{,}000/0.035 = 685{,}714.29$.
 
-**2.** A solver who kept $r-g=0.055$ and then scaled $436{,}364$ by $8/6$ would report about $\\$581{,}818$, a different wrong neighbour. The honest rewrite replaces the denominator, not a proportional scale of the old price.
+**2.** Keeping $r-g=0.055$ and then scaling $436{,}364$ by $8/6$ would report about $\\$581{,}818$, a different wrong neighbour. That is the fork: $r-g=0.055$ belongs to the recovered isolation, $8/6$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The honest rewrite replaces the denominator, not a proportional scale of the old price.
 
 The opposite verdict would need $24{,}000$ over $0.0335$. With $r=0.06$ and $g=0.025$, the recovered value is $\\$685{,}714.29$, not $\\$715{,}714.29$.
 
@@ -19829,7 +19829,7 @@ $$3.00 \\times 1.03 = 3.09$$
 
 **2.** The trap is feeding the just-paid $\\$3.00$ straight into $D_1/(r-g)$. That understates the price and is letter C's neighbourhood. Another trap is $3.00 \\times 1.09$, mixing the required return into the dividend.
 
-A solver who used $3.00 \\times 1.03^2 = 3.1827$ would have skipped ahead to $D_2$. The perpetuity formula already grows from $D_1$ onward; only one explicit growth step is needed up front. The opposite verdict would need a different $D_0$ or a different $g$.
+Using $3.00 \\times 1.03^2 = 3.1827$ would have skipped ahead to $D_2$. So the letter reads the claim against $3.00 \\times 1.03^2 = 3.1827$; $D_2$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $3.00 \\times 1.03^2 = 3.1827$ stays in the write-up. The perpetuity formula already grows from $D_1$ onward; only one explicit growth step is needed up front. The opposite verdict would need a different $D_0$ or a different $g$.
 
 The recovered next dividend is $\\$3.09$, so the statement is True.`,
       `**B) The fair value per share is approximately \\$54.50.**  (false)
@@ -19840,7 +19840,7 @@ The overview recovered $P = 3.09/0.06 = 51.50$. The claim writes $\\$54.50$, whi
 
 **1.** The recovered pair is $\\$3.09$ over $6$ points, which is $\\$51.50$. There is no leftover fraction.
 
-**2.** A solver who used $D_0=3.00$ over $0.06$ would report $\\$50.00$, too low rather than too high. A solver who used $3.09/0.0567$ after shrinking the spread would wander toward $\\$54.50$. The stem's spread is $6$ points, not $5.67$.
+**2.** Using $D_0=3.00$ over $0.06$ would report $\\$50.00$, too low rather than too high. That is the fork: $D_0=3.00$ belongs to the recovered isolation, $0.06$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $3.09/0.0567$ after shrinking the spread would wander toward $\\$54.50$. The path that matches the stem therefore holds $3.09/0.0567$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The stem's spread is $6$ points, not $5.67$.
 
 The opposite verdict would need $D_1=3.27$ at the same spread, or a $5.67$-point spread at $D_1=3.09$. With $3.09$ over $0.06$, the recovered fair value is $\\$51.50$, not $\\$54.50$.
 
@@ -19863,7 +19863,7 @@ so the wording overstates how far the $D_0$ shortcut misses by a round $\\$1$.
 
 **1.** $\\$2.50$ looks like $3.09 - 0.59$, or like $5\\%$ of the $\\$50$ mistaken price, or like $51.50 - 49.00$. The two Gordon values are $51.50$ and $50.00$, and their gap is $1.50$. That $\\$1.50$ is also $0.09 / 0.06$, the extra dividend $D_1 - D_0$ capitalized at $r - g$.
 
-**2.** A rushed solver who used $3.00 \\times 1.03 = 3.09$ and then $3.09 - 3.00 = 0.09$ as the understatement named the dividend gap rather than the *price* gap. Someone who used $P = 3.00 / (0.09 - 0.03)$ correctly as the mistaken price and then compared it with $3.09 / 0.09 = 34.33$, forgetting to subtract $g$ in the correct formula, would manufacture a huge gap.
+**2.** Using $3.00 \\times 1.03 = 3.09$ and then $3.09 - 3.00 = 0.09$ as the understatement named the dividend gap rather than the *price* gap. That is the fork: $3.00 \\times 1.03 = 3.09$ belongs to the recovered isolation, $3.09 - 3.00 = 0.09$ belongs to the discarded mix. Someone who used $P = 3.00 / (0.09 - 0.03)$ correctly as the mistaken price and then compared it with $3.09 / 0.09 = 34.33$, forgetting to subtract $g$ in the correct formula, would manufacture a huge gap.
 
 **3.** Letter A is the warning to use $D_1$. Letter B is the correct $51.50$. This letter asks how many dollars the $D_0$ shortcut misses by. It misses by $1.50$, not by $2.50$. Rounding $1.50$ does not produce $2.50$.
 
@@ -19893,7 +19893,7 @@ A zero present value would mean the stock is worthless. A zero denominator means
 
 **1.** The trap is treating a zero denominator as a zero quotient. Division by zero is undefined, not zero. If anything, a shrinking positive denominator with a positive $D_1$ sends $P$ to $+\\infty$, not to $0$. Another mix-up is setting $D_1 = 0$ when $g = r$, as if growth eating the whole required return cancelled the dividend.
 
-**2.** A rushed solver who used $P = D_1 \\times (r - g)$ inverted the formula and would then get $P = 0$ at $g = r$. That product is not the Gordon model. Someone who used $P = D_0 (1 + g) / r$ with $g = r$ would get $D_1 / r = 3.00 \\times 1.09 / 0.09 = 36.33$, a finite wrong model, still not $0$.
+**2.** Using $P = D_1 \\times (r - g)$ inverted the formula and would then get $P = 0$ at $g = r$. The recovered comparison therefore keeps $P = D_1 \\times (r - g)$ and does not substitute $g = r$. That product is not the Gordon model. Someone who used $P = D_0 (1 + g) / r$ with $g = r$ would get $D_1 / r = 3.00 \\times 1.09 / 0.09 = 36.33$, a finite wrong model, still not $0$.
 
 **3.** Letter D already showed that lifting $g$ from $3\\%$ to $5\\%$ lifts $P$ from $51.50$ to $78.75$. That is the same direction: closer $g$ to $r$ means a larger price. Continuing that path toward $g = 9\\%$ does not turn around and hit $0$.
 
@@ -19994,7 +19994,7 @@ so Deal 1 is worth $\\$10,000$ more than the ask. It is a good buy at $\\$170,00
 
 **1.** The trap is ranking by the first cheque, $\\$18,000$ versus Deal 2's $\\$14,000$, and then mixing that ranking with "good buy." A good buy is fair value versus ask, not year-$1$ cash versus the rival deal. Deal 2 is also a good buy, with a larger cushion, which is a later letter. This letter is Deal 1 against its own $\\$170,000$ price.
 
-**2.** A rushed solver who used $18,000 / 0.10 - 18,000 = 162,000$ subtracted a first payment that a perpetuity formula has already included in the standard $a/r$ timing. Someone who used $170,000 \\times 0.10 = 17,000$ and compared $17,000$ with $18,000$ has the right verdict for a yield-test reason: the deal yields more than $10\\%$. That is consistent, but the recovered object the claim is pointing at is the $\\$180,000$ fair value.
+**2.** Using $18,000 / 0.10 - 18,000 = 162,000$ subtracted a first payment that a perpetuity formula has already included in the standard $a/r$ timing. After isolating the unknown, the check is against $18,000 / 0.10 - 18,000 = 162,000$. The figure $a/r$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $18,000 / 0.10 - 18,000 = 162,000$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Someone who used $170,000 \\times 0.10 = 17,000$ and compared $17,000$ with $18,000$ has the right verdict for a yield-test reason: the deal yields more than $10\\%$. That is consistent, but the recovered object the claim is pointing at is the $\\$180,000$ fair value.
 
 **3.** If the ask had been $\\$185,000$, Deal 1 would fail the good-buy test. The stem's ask is $\\$170,000$, and $180,000 > 170,000$. Letter E will rank the two fair values; Deal 2's $233,333$ is larger than Deal 1's $180,000$. This letter does not need that ranking.
 
@@ -20015,7 +20015,7 @@ $$233{,}333.33 - 170{,}000 = 63{,}333.33$$
 
 **2.** Then $63333 > 60000$. The trap is using $14{,}000/0.10 = 140{,}000$ and calling Deal 2 a bad buy. Growth of $4\\%$ is in the stem and is what lifts the value above $\\$170{,}000$.
 
-A solver who compared Deal 1's $18{,}000/0.10 = 180{,}000$ here would report only a $\\$10{,}000$ cushion and fail the cutoff. The claim names Deal 2. The opposite verdict would need a cushion of $\\$60{,}000$ or less.
+Comparing Deal 1's $18{,}000/0.10 = 180{,}000$ here would report only a $\\$10{,}000$ cushion and fail the cutoff. The path that matches the stem therefore holds $18{,}000/0.10 = 180{,}000$ fixed and only then reads the claim. The claim names Deal 2. The opposite verdict would need a cushion of $\\$60{,}000$ or less.
 
 The recovered Deal 2 cushion is about $\\$63{,}333.33$, so the statement is True.`,
       `**C) Deal 1 offers the larger "margin of safety" of the two deals.**  (false)
@@ -20064,7 +20064,7 @@ about $\\$53,333$ of extra fair value on the growing stream.
 
 **1.** The trap is ranking by year-$1$ cash, $\\$18,000$ versus $\\$14,000$. Fair value is the discounted infinite stream, not the first cheque. Growth at $4\\%$ more than makes up for Deal 2's smaller opening royalty. Letter C already ranked the cushions ($\\$10,000$ versus about $\\$63,333$). This letter ranks the fair values themselves, and Deal 2 is larger.
 
-**2.** A rushed solver who used $14,000 / 0.10 = 140,000$ for Deal 2, forgetting to subtract $g$, would then agree that $180,000 > 140,000$ and would endorse the claim. The Gordon denominator is $r - g$, not $r$. Someone who used $18,000 / (0.10 - 0.04)$ applied growth to the deal that does not grow.
+**2.** Using $14,000 / 0.10 = 140,000$ for Deal 2, forgetting to subtract $g$, would then agree that $180,000 > 140,000$ and would endorse the claim. Working from the isolated values, $14,000 / 0.10 = 140,000$ is the figure that is checked, not the detour that produced $180,000 > 140,000$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The Gordon denominator is $r - g$, not $r$. Someone who used $18,000 / (0.10 - 0.04)$ applied growth to the deal that does not grow.
 
 **3.** Part 3.5 already showed that cutting Deal 2's growth to $1\\%$ drops $P_2'$ to $155,556$, below both the ask and Deal 1. Growth is the whole reason Deal 2 wins this comparison. Under the original $4\\%$ growth, it wins on fair value.
 
@@ -20157,7 +20157,7 @@ The overview recovered $250{,}000 e^{-0.66} \\approx 129{,}213.75$. This letter 
 
 **1.** The trap is $250{,}000 / 1.055^{12} \\approx 131{,}495$, the annual-compounding deposit from letter B. This letter asks for the continuous figure, which sits a little lower because continuous discounting is slightly stronger.
 
-**2.** A solver who used $250{,}000 e^{-0.055} \\approx 236{,}630$ would have discounted only one year. A solver who used $250{,}000 \\times e^{0.66}$ would have compounded forward and reported a future value.
+**2.** Using $250{,}000 e^{-0.055} \\approx 236{,}630$ would have discounted only one year. The recovered isolation is checked against the claim using $250{,}000 e^{-0.055} \\approx 236{,}630$, which is the figure the sessions actually produce. Using $250{,}000 \\times e^{0.66}$ would have compounded forward and reported a future value. Keeping $250{,}000 \\times e^{0.66}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a different rate or a different horizon. With $12$ years at continuous $5.5\\%$, the recovered present value is about $\\$129{,}213.75$.
 
@@ -20207,7 +20207,7 @@ One year of continuous $5.5\\%$ is $e^{-0.055} \\approx 0.9465$. About $5.35\\%$
 
 **1.** The trap is quoting $1-0.055 = 0.945$ and calling it $5.5\\%$ lost. Continuous discounting at $5.5\\%$ loses a bit less than $5.5\\%$ in the first year, about $5.35\\%$.
 
-**2.** A solver who reported $e^{0.055} \\approx 1.0565$ here would have quoted the growth factor, not the discount factor. A solver who used $e^{-0.66} \\approx 0.5169$ would have quoted the twelve-year factor from letter A.
+**2.** Reporting $e^{0.055} \\approx 1.0565$ here would have quoted the growth factor, not the discount factor. Keeping $e^{0.055} \\approx 1.0565$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using $e^{-0.66} \\approx 0.5169$ would have quoted the twelve-year factor from letter A. The path that matches the stem therefore holds $e^{-0.66} \\approx 0.5169$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need a one-year factor other than $0.9465$. With a continuous $5.5\\%$ rate, $e^{-0.055} \\approx 0.9465$, so about $5.35\\%$ is lost in the first year.
 
@@ -20300,7 +20300,7 @@ Nine years at continuous $6.25\\%$ is the exponent $0.0625 \\times 9 = 0.5625$. 
 
 **1.** The trap is the discrete lump of about $\\$129{,}426$ from letter E, or the annuity of about $\\$96{,}758$. This letter asks for the continuous lump only.
 
-**2.** A solver who used $75{,}000(1.0625)^9$ would be answering the discrete-lump neighbour. A solver who used $e^{0.0625} \\approx 1.0645$ for nine years as if the exponent were already $0.5625$ without multiplying by $9$ would stop at one year.
+**2.** Using $75{,}000(1.0625)^9$ would be answering the discrete-lump neighbour. The opposite verdict would need a different isolation than $75{,}000(1.0625)^9$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $e^{0.0625} \\approx 1.0645$ for nine years as if the exponent were already $0.5625$ without multiplying by $9$ would stop at one year. After isolating the unknown, the check is against $e^{0.0625} \\approx 1.0645$. The figure $9$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $e^{0.0625} \\approx 1.0645$ stays in the write-up.
 
 The opposite verdict would need a different rate or a different horizon. With nine years at continuous $6.25\\%$ on $\\$75{,}000$, the recovered continuous future value is about $\\$131{,}629.13$.
 
@@ -20427,7 +20427,7 @@ The overview recovered that present value as about $\\$18{,}110.94$, from the or
 
 **1.** The trap is reporting the ordinary $\\$16{,}769.39$ and stopping. Due payments are earlier, so they are worth more today. Multiplying the ordinary present value by $1.08$ is the standard due adjustment.
 
-**2.** A solver who used $4{,}200 \\times 5 = 21{,}000$ would skip discounting. A solver who discounted the first payment as well would understate a due stream. The first $\\$4{,}200$ is not discounted.
+**2.** Using $4{,}200 \\times 5 = 21{,}000$ would skip discounting. That is why $4{,}200 \\times 5 = 21{,}000$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Discounting the first payment as well would understate a due stream. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The first $\\$4{,}200$ is not discounted.
 
 The opposite verdict would need ordinary timing. With beginning-of-year payments at $8\\%$ for five years, the recovered annuity-due present value is about $\\$18{,}110.94$.
 
@@ -20446,7 +20446,7 @@ so the wording overstates the due future value by a round $\\$1,000$.
 
 **1.** The extra $\\$1,000$ is a transcription slip on a correct $\\$26,610.90$, or a sixth $\\$4,200$ imagined and then partially discounted. Five beginning-of-year deposits, grown to year $5$, are the recovered $26,610.90$. Treating six deposits would overshoot by more than $\\$1,000$. Another mix-up is adding $\\$1,000$ onto the due *present* value $18,110.94$ and then growing that hybrid forward.
 
-**2.** A rushed solver who used the ordinary future value without the due $1.08$ factor would undershoot, not land on $27,610.90$. Someone who used $4,200 \\times 5 \\times 1.08^5 \\approx 30,855$ treated every deposit as sitting five full extra years.
+**2.** Using the ordinary future value without the due $1.08$ factor would undershoot, not land on $27,610.90$. The stem's recovered values line up with $1.08$, whereas $27,610.90$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $1.08$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Someone who used $4,200 \\times 5 \\times 1.08^5 \\approx 30,855$ treated every deposit as sitting five full extra years.
 
 **3.** This letter is not the present value $18,110.94$ grown forward in some other way. It is the due future value at the end of year $5$, and that figure is about $\\$26,611$. Rounding $26,610.90$ to the nearest thousand is $27,000$, which still does not justify presenting $27,610.90$ as an equality.
 
@@ -20463,7 +20463,7 @@ The overview recovered $20{,}000 e^{0.42} \\approx 30{,}439.24$, not the claimed
 
 **1.** The trap is adding $\\$1{,}000$ onto a correct continuous pile, or using $e^{0.45}$. The recovered continuous result is about $\\$30{,}439$.
 
-**2.** A solver who used $20{,}000(1.06)^7 \\approx 30{,}073$ would be answering a discrete neighbour, still not $\\$31{,}439$. A solver who used $e^{0.06 \\times 8}$ would have run eight years.
+**2.** Using $20{,}000(1.06)^7 \\approx 30{,}073$ would be answering a discrete neighbour, still not $\\$31{,}439$. Keeping $20{,}000(1.06)^7 \\approx 30{,}073$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Using $e^{0.06 \\times 8}$ would have run eight years. Keeping $e^{0.06 \\times 8}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need $20{,}000 e^{0.42}$ to equal $31{,}439$. It equals about $30{,}439$. Adding a round thousand to a correct continuous pile is how the claim is manufactured. The recovered continuous accumulation is about $\\$30{,}439.24$, not $\\$31{,}439.24$, so the statement is False.`,
       `**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)
@@ -20576,7 +20576,7 @@ The overview recovered $150{,}000 e^{0.5} \\approx 247{,}308.20$. This letter is
 
 **1.** The trap is quoting the opening $\\$150{,}000$ as if it were already the accumulated value. This letter asks for the ten-year continuous result.
 
-**2.** A solver who used $150{,}000(1.05)^{10} \\approx 244{,}335$ would be answering a discrete neighbour. A solver who used $e^{0.05}$ without the ten-year factor would report one year of growth.
+**2.** Using $150{,}000(1.05)^{10} \\approx 244{,}335$ would be answering a discrete neighbour. The opposite verdict would need a different isolation than $150{,}000(1.05)^{10} \\approx 244{,}335$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $e^{0.05}$ without the ten-year factor would report one year of growth. Once $e^{0.05}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a different rate or horizon. With ten years at continuous $5\\%$ on $\\$150{,}000$, the recovered continuous pile is about $\\$247{,}308.20$. Components 2 through 4 do not mix into this letter.
 
@@ -20589,7 +20589,7 @@ A future $\\$80{,}000$ at $6\\%$ for six years discounts to about $\\$56{,}396.8
 
 **1.** The trap is adding $\\$1{,}000$ onto a correct discount, or using $(1.06)^5$ as if the bill were five years out. The recovered Component 2 deposit is about $\\$56{,}397$.
 
-**2.** A solver who used continuous discounting, $80{,}000 e^{-0.36}$, would report a slightly different neighbour, still not $\\$57{,}397$. A solver who reported $\\$80{,}000$ itself would skip discounting entirely.
+**2.** Using continuous discounting, $80{,}000 e^{-0.36}$, would report a slightly different neighbour, still not $\\$57{,}397$. Once $80{,}000 e^{-0.36}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Reporting $\\$80{,}000$ itself would skip discounting entirely. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The opposite verdict would need $80{,}000 / (1.06)^6$ to equal $57{,}396.85$. It equals about $56{,}396.85$. Adding a round thousand to a correct six-year discount is how the claim is manufactured. The recovered deposit today is about $\\$56{,}396.85$, not $\\$57{,}396.85$, so the statement is False.`,
       `**C) Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.**  (true)
@@ -20600,7 +20600,7 @@ The overview recovered that present value as about $\\$79{,}429.40$. This letter
 
 **1.** The trap is $10{,}000 \\times 12 = 120{,}000$, the undiscounted checks. Discounting is what cuts that pile to about $\\$79{,}429$.
 
-**2.** A solver who treated the twelve payments as due would overstate today's cost. A solver who used $10{,}000/0.07 \\approx 142{,}857$ would have quoted a perpetuity, Component 4's style of model with the wrong payment.
+**2.** Treating the twelve payments as due would overstate today's cost. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using $10{,}000/0.07 \\approx 142{,}857$ would have quoted a perpetuity, Component 4's style of model with the wrong payment. That is why $10{,}000/0.07 \\approx 142{,}857$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need a different rate or a different horizon. With twelve ordinary $\\$10{,}000$ payments at $7\\%$, the recovered Component 3 present value is about $\\$79{,}429.40$.
 
@@ -20715,7 +20715,7 @@ The overview recovered that periodic rate as $0.12$. This letter is reading the 
 
 **1.** The trap is dividing by $12$ as if the bakery paid monthly. $0.12/12=0.01$ would be the monthly rate on a different schedule. This loan has six year-end instalments, not $72$ monthly ones.
 
-**2.** A solver who used $0.12/6$ would invent a $2\\%$ period that the stem never described. A solver who used $12$ itself, rather than $0.12$, would be feeding percent into a decimal formula.
+**2.** Using $0.12/6$ would invent a $2\\%$ period that the stem never described. So the letter reads the claim against $0.12/6$; $2\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.12/6$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $12$ itself, rather than $0.12$, would be feeding percent into a decimal formula. The stem's recovered values line up with $12$, whereas $0.12$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up.
 
 The opposite verdict would need monthly or quarterly compounding. With interest charged at $12\\%$ per year, compounding annually, the recovered periodic rate is $0.12$. The payment size in letter B uses that $r$, not a monthly rewrite.
 
@@ -20730,7 +20730,7 @@ The overview recovered the equal annual payment as about $\\$14{,}593.54$. Lette
 
 **2.** Another trap is $0.12 \\times 60{,}000 = 7{,}200$, which is year-1 interest rather than the payment. Interest of $\\$7{,}200$ plus a guessed principal slice can manufacture a neighbour of $\\$14{,}593$, but the honest inversion is the recovered annuity payment.
 
-A solver who used monthly $r=0.01$ for $72$ months would quote a different instalment entirely. The opposite verdict would need a different principal, rate, or horizon. With $\\$60{,}000$ over six annual dates at $12\\%$, the recovered annual payment is about $\\$14{,}593.54$.
+Using monthly $r=0.01$ for $72$ months would quote a different instalment entirely. That is the fork: $r=0.01$ belongs to the recovered isolation, $72$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would need a different principal, rate, or horizon. With $\\$60{,}000$ over six annual dates at $12\\%$, the recovered annual payment is about $\\$14{,}593.54$.
 
 The recovered annual payment is about $\\$14{,}593.54$, so the statement is True.`,
       `**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)
@@ -20743,7 +20743,7 @@ The overview recovered that first-year interest as exactly $\\$7{,}200$. The ext
 
 $$0.12 \\times 60{,}000 = 7{,}200$$
 
-**2.** The trap is charging $12\\%$ of the instalment, $0.12 \\times 14{,}593.54 \\approx 1{,}751$, which is interest on the payment instead of on the loan. A solver who split the payment in half would report about $\\$7{,}297$ and miss the exact $\\$7{,}200$.
+**2.** The trap is charging $12\\%$ of the instalment, $0.12 \\times 14{,}593.54 \\approx 1{,}751$, which is interest on the payment instead of on the loan. Splitting the payment in half would report about $\\$7{,}297$ and miss the exact $\\$7{,}200$. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Principal in year 1 is then $14{,}593.54-7{,}200=7{,}393.54$, which is letter D's neighbourhood. This letter stops at the interest layer. The opposite verdict would need a different opening balance or a different annual rate.
 
@@ -20754,7 +20754,7 @@ Principal in year 1 is the instalment minus that interest. The overview recovere
 
 That ranking is an amortization fact, not a second inversion of the payment formula. On a six-year 12% loan the first payment is already more principal than interest, because six years is short enough, and 12% is not high enough, to keep the early years interest-heavy.
 
-**1.** Compare the two recovered slices: interest \\$7,200, principal about \\$7,394. The gap is only about \\$194. A solver who rounded the payment down to \\$14,400 would have called the split even and missed the claim. The recovered payment of about \\$14,593.54 is what pushes principal over the half.
+**1.** Compare the two recovered slices: interest \\$7,200, principal about \\$7,394. The gap is only about \\$194. Rounding the payment down to \\$14,400 would have called the split even and missed the claim. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The recovered payment of about \\$14,593.54 is what pushes principal over the half.
 
 **2.** The trap is thinking "early payments are mostly interest" as a universal mortgage slogan. That slogan is true for long, lower-rate loans (letter 108's 20-year mortgage is the contrast). It is not true for this six-year 12% van loan. Year 1 is already 50.7% principal.
 
@@ -20779,7 +20779,7 @@ After year 1 the balance is $60{,}000 - 7{,}393.54 = 52{,}606.46$. Year-2 intere
 
 **2.** The two recovered principal slices are about \\$7,394 and \\$8,281, totalling about \\$15,674 of principal in two years. Then $60{,}000 - 15{,}674 = 44{,}326$, not \\$45,000. The extra \\$674 is exactly the compounding in the schedule that a round \\$45,000 erases.
 
-**3.** A solver who stopped after year 1 and subtracted another \\$7,394 would report about \\$45,213, close to the claim from the other side. Reusing the first principal slice is the simple-interest habit. Year 2's principal is larger.
+**3.** Stopping after year 1 and subtracting another \\$7,394 would report about \\$45,213, close to the claim from the other side. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Reusing the first principal slice is the simple-interest habit. Year 2's principal is larger.
 
 **4.** The opposite verdict would need a different payment or a different rate so that two years of principal really did total \\$15,000. With $a \\approx 14{,}593.54$ and $r=0.12$, the recovered balance after payment 2 is about \\$44,326.
 
@@ -20874,7 +20874,7 @@ The overview recovered $0.09/12 = 0.0075 = 0.75\\%$. This letter is reading that
 
 $$0.09/12 = 0.0075 = 0.75\\%$$
 
-**2.** The trap is using $9\\%$ itself as the monthly rate, which would overstate every payment, or dividing by $52$ as if the dealer charged weekly. A solver who used $0.09/4$ would invent a quarterly clock the stem did not describe.
+**2.** The trap is using $9\\%$ itself as the monthly rate, which would overstate every payment, or dividing by $52$ as if the dealer charged weekly. Using $0.09/4$ would invent a quarterly clock the stem did not describe. Once $0.09/4$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need annual instalments, where $r=0.09$ would be the periodic rate. This loan pays monthly, so the recovered monthly rate is $0.75\\%$. Letter B's $\\$597.24$ uses that $r$, not $9\\%$ per month.
 
@@ -20887,7 +20887,7 @@ The overview recovered the monthly payment as about $\\$597.24$. Letter A alread
 
 **1.** The trap is $24{,}000/48 = 500$, which ignores interest. Splitting principal into forty-eight equal pieces is an interest-free story.
 
-**2.** Another trap is $0.09/12 \\times 24{,}000 = 180$, which is the first month's interest rather than the payment. A solver who used annual $r=0.09$ for four payments would quote letter E's neighbourhood, about $\\$7{,}408$, not a monthly figure.
+**2.** Another trap is $0.09/12 \\times 24{,}000 = 180$, which is the first month's interest rather than the payment. Using annual $r=0.09$ for four payments would quote letter E's neighbourhood, about $\\$7{,}408$, not a monthly figure. The opposite verdict would need a different isolation than $r=0.09$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The opposite verdict would need a different principal, rate, or term. With $\\$24{,}000$ over $48$ months at $0.75\\%$ per month, the recovered monthly payment is about $\\$597.24$.
 
@@ -20904,7 +20904,7 @@ $$597.24 \\times 48 = 28{,}667.52$$
 
 rounding to about $\\$28{,}667.57$ in the overview.
 
-**2.** The claim's $\\$29{,}500$ is what you get by rounding the payment up to $\\$615$, or by adding a loose $\\$800$ of "fees." A solver who used $500 \\times 48 + 5{,}500$ of invented interest could also manufacture $\\$29{,}500$.
+**2.** The claim's $\\$29{,}500$ is what you get by rounding the payment up to $\\$615$, or by adding a loose $\\$800$ of "fees." using $500 \\times 48 + 5{,}500$ of invented interest could also manufacture $\\$29{,}500$. The opposite verdict would need a different isolation than $500 \\times 48 + 5{,}500$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a recovered total of $\\$29{,}500$. With $a \\approx 597.24$ and $n=48$, the recovered total paid is about $\\$28{,}667.57$, not $\\$29{,}500$.
 
@@ -20921,7 +20921,7 @@ $$28{,}667.57 - 24{,}000 = 4{,}667.57$$
 
 **2.** The trap is $9\\% \\times 4 \\times 24{,}000 = 8{,}640$ of simple interest, as if the whole principal sat for four years. Amortization pays principal down along the way, so the interest bill is the recovered $\\$4{,}667.57$, not $\\$8{,}640$.
 
-A solver who used letter C's false $\\$29{,}500$ minus $\\$24{,}000$ would report $\\$5{,}500$ and miss the claim. The opposite verdict would need a different total paid. With the recovered $48$-month outlay, total interest is about $\\$4{,}667.57$.
+Using letter C's false $\\$29{,}500$ minus $\\$24{,}000$ would report $\\$5{,}500$ and miss the claim. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would need a different total paid. With the recovered $48$-month outlay, total interest is about $\\$4{,}667.57$.
 
 The recovered total interest is about $\\$4{,}667.57$, so the statement is True.`,
       `**E) If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96.**  (false)
@@ -21031,7 +21031,7 @@ The overview recovered the equal annual payment as about $\\$11{,}870.89$. This 
 
 **1.** The trap is $45{,}000/5 = 9{,}000$, which ignores interest. Splitting principal into five equal pieces is an interest-free story.
 
-**2.** Another trap is $0.10 \\times 45{,}000 = 4{,}500$, which is year-1 interest rather than the payment. A solver who added $\\$4{,}500$ onto $\\$9{,}000$ would report $\\$13{,}500$ and overshoot. A solver who used six years would quote the bakery-loan neighbourhood from the previous task.
+**2.** Another trap is $0.10 \\times 45{,}000 = 4{,}500$, which is year-1 interest rather than the payment. Adding $\\$4{,}500$ onto $\\$9{,}000$ would report $\\$13{,}500$ and overshoot. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Using six years would quote the bakery-loan neighbourhood from the previous task. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The opposite verdict would need a different principal, rate, or horizon. With $\\$45{,}000$ over five annual dates at $10\\%$, the recovered annual payment is about $\\$11{,}870.89$.
 
@@ -21046,7 +21046,7 @@ Year-1 interest is $0.10 \\times 45{,}000 = 4{,}500$. The claim writes $\\$5{,}0
 
 $$0.10 \\times 45{,}000 = 4{,}500$$
 
-**2.** The extra $\\$500$ is the tell. A solver who rounded the loan up to $\\$50{,}000$, or who took $10\\%$ of a $\\$50{,}000$ stand-in, would manufacture $\\$5{,}000$. A solver who charged $10\\%$ of the $\\$11{,}870.89$ instalment would undershoot at about $\\$1{,}187$.
+**2.** The extra $\\$500$ is the tell. Rounding the loan up to $\\$50{,}000$, or taking $10\\%$ of a $\\$50{,}000$ stand-in, would manufacture $\\$5{,}000$. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Charging $10\\%$ of the $\\$11{,}870.89$ instalment would undershoot at about $\\$1{,}187$. The path that matches the stem therefore holds $10\\%$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need an opening balance of $\\$50{,}000$. With $\\$45{,}000$ at $10\\%$, the recovered first-year interest is $\\$4{,}500$, not $\\$5{,}000$.
 
@@ -21074,7 +21074,7 @@ By year 4 the balance is the recovered \\$20,602.37, so year-4 interest is $0.10
 
 **2.** The trap is the long-mortgage slogan that "early payments are mostly interest," imported into a five-year 10% renovation loan. That slogan needs a long term. Letter 108's 20-year mortgage is the place it lives. Here, even payment 1 is already principal-heavy.
 
-**3.** A solver who used year-1 interest of \\$4,500 against the year-4 payment would still find $4{,}500 < 11{,}870.89$, and the year-4 interest is much smaller than \\$4,500 besides. The claim would need a balance above $a/(2r) = 11{,}870.89 / 0.20 \\approx 59{,}354$, larger than the original loan. That cannot happen on a paydown schedule.
+**3.** Using year-1 interest of \\$4,500 against the year-4 payment would still find $4{,}500 < 11{,}870.89$, and the year-4 interest is much smaller than \\$4,500 besides. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The claim would need a balance above $a/(2r) = 11{,}870.89 / 0.20 \\approx 59{,}354$, larger than the original loan. That cannot happen on a paydown schedule.
 
 **4.** The opposite verdict would need a much longer term so that the year-4 balance was still huge. On this five-year loan, year 4 is the second-to-last year. Almost all of the remaining payment is principal.
 
@@ -21089,7 +21089,7 @@ so the statement is False.`,
 
 Principal portions have to sum to the original loan. The overview recovered the five principal slices as about \\$7,370.89, \\$8,107.98, \\$8,918.77, \\$9,810.65, and \\$10,791.72, which add to \\$45,000, not to the claimed \\$46,200.
 
-**1.** The extra \\$1,200 would count some interest as principal. A solver who added the five payments, $5 \\times 11{,}870.89 \\approx 59{,}354$, and then subtracted a made-up interest total of \\$13,154, could manufacture \\$46,200. The definition of principal portions is that they retire the \\$45,000 loan and nothing else.
+**1.** The extra \\$1,200 would count some interest as principal. Adding the five payments, $5 \\times 11{,}870.89 \\approx 59{,}354$, and then subtracting a made-up interest total of \\$13,154, could manufacture \\$46,200. The path that matches the stem therefore holds $5 \\times 11{,}870.89 \\approx 59{,}354$ fixed and only then reads the claim. The definition of principal portions is that they retire the \\$45,000 loan and nothing else.
 
 **2.** The trap is adding the five payments and calling that "principal," which is about \\$59,354 and includes all the interest, or adding four principals plus a full payment. The recovered sum of principals is the original \\$45,000.
 
@@ -21172,7 +21172,7 @@ The overview recovered that combined present-value factor as about $6.537048$. T
 
 **1.** The trap is the ordinary ten-year annuity factor $1-(1.11)^{-10}$ over $0.11$, about $5.889$, which omits the immediate first payment. Due means the first payment is cash today, so the factor is larger.
 
-**2.** A solver who used $10$ itself would be an undiscounted count. A solver who used $1.11 \\times 5.889$ and rounded carelessly could still land near $6.537$, which is a check, not a reason to quote $5.889$ here.
+**2.** Using $10$ itself would be an undiscounted count. That is why $10$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $1.11 \\times 5.889$ and rounding carelessly could still land near $6.537$, which is a check, not a reason to quote $5.889$ here. That is the fork: $1.11 \\times 5.889$ belongs to the recovered isolation, $5.889$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need ordinary timing. With a ten-payment due stream at $11\\%$, the recovered combined factor is about $6.537048$.
 
@@ -21189,7 +21189,7 @@ $$150{,}000 / 6.537048 \\approx 22{,}946.14$$
 
 **2.** The trap is $150{,}000/10 = 15{,}000$, which ignores both interest and the immediate first payment, or the ordinary payment of about $\\$25{,}470$ from letter C, which waits a year to start and therefore has to be larger.
 
-A solver who used factor $5.889$ would quote that larger ordinary payment here. The opposite verdict would need ordinary timing or a different buy-in. With the due factor $6.537048$, the recovered equal due payment is about $\\$22{,}946.14$.
+Using factor $5.889$ would quote that larger ordinary payment here. The recovered isolation is checked against the claim using $5.889$, which is the figure the sessions actually produce. The opposite verdict would need ordinary timing or a different buy-in. With the due factor $6.537048$, the recovered equal due payment is about $\\$22{,}946.14$.
 
 The recovered equal due payment is about $\\$22{,}946.14$, so the statement is True.`,
       `**C) If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.**  (false)
@@ -21236,7 +21236,7 @@ Ten copies of $\\$22{,}946.14$ are about $\\$229{,}461.39$, not the claimed $\\$
 
 $$22{,}946.14 \\times 10 \\approx 229{,}461$$
 
-**2.** A solver who rounded the payment down to $\\$22{,}000$, or who used $22{,}000 \\times 10$, would land on the claim. A solver who reported present value $\\$150{,}000$ here would be answering the buy-in, not the undiscounted cash outlay.
+**2.** Rounding the payment down to $\\$22{,}000$, or using $22{,}000 \\times 10$, would land on the claim. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting present value $\\$150{,}000$ here would be answering the buy-in, not the undiscounted cash outlay. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a recovered payment of $\\$22{,}000$. With $a \\approx 22{,}946.14$, the recovered total of the ten due payments is about $\\$229{,}461.39$, not $\\$220{,}000$.
 
@@ -21331,13 +21331,13 @@ Four full payments are not enough. The overview's year-$4$ remaining debt is $\\
 
 **2.** Another mix-up is thinking five payments of $\\$10,000$ are all required at the full $\\$10,000$. Letter C is the smaller fifth cheque. This letter only asks whether five dates are needed, not whether the fifth date is another $\\$10,000$.
 
-**3.** A solver who compared total cash $\\$40,000$ after four payments with the original $\\$35,000$ and declared the loan dead has ignored interest. Four $\\$10,000$ cheques more than cover the original principal in undiscounted cash, but they do not cover principal plus $13\\%$ a year. The recovered year-$4$ residual is still $\\$8,568.61$.
+**3.** Comparing total cash $\\$40,000$ after four payments with the original $\\$35,000$ and declared the loan dead has ignored interest. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Four $\\$10,000$ cheques more than cover the original principal in undiscounted cash, but they do not cover principal plus $13\\%$ a year. The recovered year-$4$ residual is still $\\$8,568.61$.
 
 The extra arithmetic that is this letter's own is the ceiling step: $4.9663$ is not an integer, and the first integer that works is $5$. That is not a new logarithm. Part 3.1 already produced $4.9663$.
 
 In the story of the stem, the company keeps writing $\\$10,000$ cheques until the debt is gone. The recovered object is the smallest $n$ that satisfies the payoff inequality. It is $5$, not $4$ and not $6$.
 
-A rushed solver who used the rule of $72$ or $35,000/10,000 = 3.5$ would undercount even more. Simple-interest years $35,000/(10,000-0.13\\times 35,000)$ is a different shortcut and is not this threshold.
+Using the rule of $72$ or $35,000/10,000 = 3.5$ would undercount even more. After isolating the unknown, the check is against $72$. The figure $35,000/10,000 = 3.5$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $72$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Simple-interest years $35,000/(10,000-0.13\\times 35,000)$ is a different shortcut and is not this threshold.
 
 What would have to change for the opposite verdict is a threshold at or below $4$, which would take a lower rate or a larger annual cheque. At $13\\%$ with $\\$10,000$ a year on $\\$35,000$, the recovered $n$ is $5$.
 
@@ -21352,7 +21352,7 @@ Four full payments total $\\$40{,}000$. The overview already has that schedule: 
 
 $$4 \\times 10{,}000 = 40{,}000$$
 
-**2.** The trap is counting five full $\\$10{,}000$ payments, which is letter D's total before the smaller fifth instalment is used. A solver who included the recovered $\\$9{,}682.53$ here would be answering the life-of-loan total, not the first four years.
+**2.** The trap is counting five full $\\$10{,}000$ payments, which is letter D's total before the smaller fifth instalment is used. Including the recovered $\\$9{,}682.53$ here would be answering the life-of-loan total, not the first four years. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need a different committed payment or fewer than four full years. With $\\$10{,}000$ a year for the first four dates, the first four payments total $\\$40{,}000$.
 
@@ -21378,7 +21378,7 @@ Four full payments plus the recovered final instalment are $40{,}000 + 9{,}682.5
 
 $$40{,}000 + 9{,}682.53 = 49{,}682.53$$
 
-**2.** The trap is $5 \\times 10{,}000 = 50{,}000$, which ignores that the last payment is smaller. A solver who used $4 \\times 10{,}000 + 10{,}000$ would be that same five-copy overstatement.
+**2.** The trap is $5 \\times 10{,}000 = 50{,}000$, which ignores that the last payment is smaller. Using $4 \\times 10{,}000 + 10{,}000$ would be that same five-copy overstatement. Keeping $4 \\times 10{,}000 + 10{,}000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a final payment of $\\$10{,}000$. With the recovered stub $9{,}682.53$, the recovered life-of-loan total is about $\\$49{,}682.53$.
 
@@ -21486,7 +21486,7 @@ The overview recovered that present value as about $\\$535{,}526.07$. This lette
 
 **1.** The trap is $7 \\times 100{,}000 = 700{,}000$, the undiscounted instalments, or the ordinary seven-year present value that omits the immediate first payment.
 
-**2.** A solver who reported Option A's $\\$500{,}000$ here would be reading cash. A solver who used $13\\%$ would be answering a later cheaper ranking, not the $10\\%$ figure in this claim.
+**2.** Reporting Option A's $\\$500{,}000$ here would be reading cash. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Using $13\\%$ would be answering a later cheaper ranking, not the $10\\%$ figure in this claim. The stem's recovered values line up with $13\\%$, whereas $10\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $13\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Due means the first $\\$100{,}000$ is cash today and is rate-invariant. All of the discounting sits in the six remaining payments. The opposite verdict would need a different rate or a different instalment. At $10\\%$, the recovered present value of Option B is about $\\$535{,}526.07$.
 
@@ -21503,7 +21503,7 @@ $$535{,}526.07 > 500{,}000$$
 
 **2.** Instalments look smaller year by year, but they are not cheaper in present value at this rate. The extra $\\$35{,}526$ is the cost of stretching the same fleet purchase across seven due payments when money is only worth $10\\%$.
 
-A solver who compared $\\$700{,}000$ of undiscounted instalments with cash would still prefer A, but for the wrong reason. At a higher rate Option B can fall below cash; that is a later letter. At $10\\%$ the recovered ranking has Option A cheaper.
+Comparing $\\$700{,}000$ of undiscounted instalments with cash would still prefer A, but for the wrong reason. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. At a higher rate Option B can fall below cash; that is a later letter. At $10\\%$ the recovered ranking has Option A cheaper.
 
 The recovered $10\\%$ ranking has Option A cheaper, so the statement is True.`,
       `**C) At a 14% annual rate, the present value of Option B is approximately \\$495,000.00.**  (false)
@@ -21527,7 +21527,7 @@ That flip is the whole pedagogical point of the task. Present value of a due pay
 
 **2.** The trap is thinking a ranking at 10% is a ranking for every rate, which is letter E. Letter D is the 14% snapshot. Another trap is using the claimed \\$495,000 from letter C. That stand-in also sits below \\$500,000, so the ranking would survive the slip, but the recovered figure to cite is about \\$488,867.
 
-**3.** A solver who compared seven undiscounted payments of \\$700,000 with cash at every rate would never see a flip. Discounting is what creates the 14% win for B.
+**3.** Comparing seven undiscounted payments of \\$700,000 with cash at every rate would never see a flip. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Discounting is what creates the 14% win for B.
 
 **4.** The opposite verdict would need a 14% present value still above \\$500,000, which would need larger instalments or fewer years of wait. With seven due payments of \\$100,000, the recovered 14% cost is about \\$488,867, below cash.
 
@@ -21643,13 +21643,13 @@ so the wording overstates the intra-year pile by $\\$70$.
 
 **1.** The four deposits sit for $9$, $6$, $3$, and $0$ months before year-end crediting. Simple interest on those fractions at $8\\%$ is the $1.5r$ in the factor. That factor is $4.12$, times $\\$250$, which is $\\$1,030$. The extra $\\$70$ would need a higher intra-year factor than $4.12$.
 
-**2.** A rushed solver who took $4 \\times 250 \\times 1.10 = 1,100$ has applied a $10\\%$ garnish to the four raw deposits. The stem's rate is $8\\%$, and the intra-year garnish is $1.5 \\times 0.08 = 0.12$ of one deposit, not $10\\%$ of the pile. Another mix-up is $250 \\times 4 = 1,000$ with a round $\\$100$ of invented interest on top.
+**2.** Taking $4 \\times 250 \\times 1.10 = 1,100$ has applied a $10\\%$ garnish to the four raw deposits. After isolating the unknown, the check is against $4 \\times 250 \\times 1.10 = 1,100$. The figure $10\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $4 \\times 250 \\times 1.10 = 1,100$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's rate is $8\\%$, and the intra-year garnish is $1.5 \\times 0.08 = 0.12$ of one deposit, not $10\\%$ of the pile. Another mix-up is $250 \\times 4 = 1,000$ with a round $\\$100$ of invented interest on top.
 
 **3.** Treating the four deposits as a flat $\\$1,000$ at year-end is letter D's companion, and that $\\$1,000$ is the no-intra-year figure, not $\\$1,100$. The claim sits above both the correct $\\$1,030$ and the stripped $\\$1,000$.
 
 In the story of the stem, the owner is asking what four quarterly $\\$250$ deposits are worth on the December crediting date, after simple interest on the intra-year fractions. The recovered object is $a = 1,030$. The claim's extra arithmetic is only the $\\$70$ gap versus $\\$1,100$.
 
-A solver who used $250(4 + 4 \\times 0.08) = 1,080$ counted four full years of interest on four deposits, as if each sat a whole year. They do not. The last deposit is made at year-end and earns nothing intra-year.
+Using $250(4 + 4 \\times 0.08) = 1,080$ counted four full years of interest on four deposits, as if each sat a whole year. Keeping $250(4 + 4 \\times 0.08) = 1,080$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. They do not. The last deposit is made at year-end and earns nothing intra-year.
 
 What would have to change for the opposite verdict is a recovered $a$ near $\\$1,100$, which would take either a larger quarterly deposit or a much fatter intra-year factor. At $\\$250$ and $8\\%$, the year-end equivalent is $\\$1,030$.
 
@@ -21677,7 +21677,7 @@ Three years of the equivalent grow to about $\\$3{,}343.79$, not the claimed $\\
 
 **1.** The trap is $1{,}030 \\times 3 + 410$ of invented interest, or $250 \\times 12 = 3{,}000$ plus $\\$500$. The recovered three-year pile is about $\\$3{,}344$.
 
-**2.** A solver who took three-quarters of letter B's $\\$4{,}641$ would report about $\\$3{,}481$, a neighbour of $\\$3{,}500$, and miss that an annuity is not a linear fraction of a longer annuity.
+**2.** Taking three-quarters of letter B's $\\$4{,}641$ would report about $\\$3{,}481$, a neighbour of $\\$3{,}500$, and miss that an annuity is not a linear fraction of a longer annuity. That is why $3{,}500$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 The opposite verdict would need a recovered three-year balance of $\\$3{,}500$. With the $\\$1{,}030$ equivalent at $8\\%$ for three years, the recovered balance is about $\\$3{,}343.79$, not $\\$3{,}500$.
 
@@ -21690,7 +21690,7 @@ Four years of that lower annuity grow to about $\\$4{,}506.11$. That figure is a
 
 **1.** The trap is thinking the simplified calculation should match the correct $\\$4{,}641$. It is supposed to sit below, and it does, by the intra-year premium in letter E.
 
-**2.** A solver who used $1{,}000 \\times 4 = 4{,}000$ would skip interest. A solver who used the $\\$1{,}030$ equivalent here would be answering letter B, not this lower-bound rewrite.
+**2.** Using $1{,}000 \\times 4 = 4{,}000$ would skip interest. Keeping $1{,}000 \\times 4 = 4{,}000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using the $\\$1{,}030$ equivalent here would be answering letter B, not this lower-bound rewrite. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a different simplified annuity. With $\\$1{,}000$ at year-end for four years at $8\\%$, the recovered simplified four-year balance is about $\\$4{,}506.11$. The correct $\\$1{,}030$ path stays in letter B.
 
@@ -21788,7 +21788,7 @@ The overview recovered the payment as about $\\$1{,}432.86$. This letter does no
 
 **1.** The trap is $200{,}000 / 240 \\approx 833$, which ignores interest. Splitting principal into $240$ equal pieces is an interest-free story.
 
-**2.** Another trap is $0.005 \\times 200{,}000 = 1{,}000$, which is the first month's interest rather than the payment. A solver who used $6\\%$ as a monthly rate would invent an enormous instalment.
+**2.** Another trap is $0.005 \\times 200{,}000 = 1{,}000$, which is the first month's interest rather than the payment. Using $6\\%$ as a monthly rate would invent an enormous instalment. The path that matches the stem therefore holds $6\\%$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a different principal, rate, or term. With $\\$200{,}000$ over $240$ months at $0.5\\%$ per month, the recovered monthly payment is about $\\$1{,}432.86$.
 
@@ -21801,7 +21801,7 @@ The overview recovered that outstanding balance as about $\\$169{,}799.20$. This
 
 **1.** Guessing that one quarter of the term pays off one quarter of the principal would report $\\$150{,}000$ remaining. Early mortgage years are interest-heavy, so more than three-quarters of the principal is still outstanding.
 
-**2.** A solver who used $200{,}000 - 60 \\times 1{,}432.86 \\approx 114{,}000$ would treat every payment as pure principal and undershoot badly. The recovered $\\$169{,}799$ is the interest-heavy fact.
+**2.** Using $200{,}000 - 60 \\times 1{,}432.86 \\approx 114{,}000$ would treat every payment as pure principal and undershoot badly. The recovered isolation is checked against the claim using $200{,}000 - 60 \\times 1{,}432.86 \\approx 114{,}000$, which is the figure the sessions actually produce. The recovered $\\$169{,}799$ is the interest-heavy fact.
 
 The opposite verdict would need a linear principal clock. With $180$ remaining payments at $0.5\\%$ per month, the recovered balance after the $60$th payment is about $\\$169{,}799.20$.
 
@@ -21837,7 +21837,7 @@ $$60 \\times 1,432.86 - 30,200.80 \\approx 55,770.80$$
 
 which is the overview's about $\\$55,770.92$. That interest pile is already larger than the $\\$30,201$ of principal repaid in the same window.
 
-**1.** A solver who took $0.06 \\times 5 \\times 200,000 = 60,000$ of simple interest would overstate, because principal is falling. The recovered $\\$55,771$ is the amortizing interest bill for five years, not a flat $6\\%$ on the original $\\$200,000$.
+**1.** Taking $0.06 \\times 5 \\times 200,000 = 60,000$ of simple interest would overstate, because principal is falling. The path that matches the stem therefore holds $0.06 \\times 5 \\times 200,000 = 60,000$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered $\\$55,771$ is the amortizing interest bill for five years, not a flat $6\\%$ on the original $\\$200,000$.
 
 **2.** The trap is reporting the five-year cash paid, $60 \\times 1,432.86 \\approx 85,972$, as if it were all interest, or reporting only the $\\$30,201$ of principal. This letter asks for the interest piece of those sixty payments, not for cash out the door and not for principal retired.
 
@@ -21845,7 +21845,7 @@ which is the overview's about $\\$55,770.92$. That interest pile is already larg
 
 In the story of the stem, the family wants to know what those first five years cost in interest, not how much house they have paid for. The recovered objects are the sixty-payment cash total and the $\\$30,200.80$ of principal. The extra arithmetic is the subtraction that isolates interest.
 
-A rushed solver who used $5 \\times 12 \\times 0.005 \\times 200,000 = 60,000$ has the simple-interest overstatement named above. Someone who used $85,972 - 169,799$ mixed remaining balance into a cash-minus-balance that is not interest.
+Using $5 \\times 12 \\times 0.005 \\times 200,000 = 60,000$ has the simple-interest overstatement named above. Keeping $5 \\times 12 \\times 0.005 \\times 200,000 = 60,000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Someone who used $85,972 - 169,799$ mixed remaining balance into a cash-minus-balance that is not interest.
 
 What would have to change for the opposite verdict is a recovered five-year interest figure that is not about $\\$55,771$. A much shorter term or a much lower rate would cut that bill. Under this $6\\%$ twenty-year mortgage, the first five years cost about $\\$55,770.92$ in interest.
 
@@ -21939,7 +21939,7 @@ The payoff threshold is about $8.508$ years, so the first integer that works is 
 
 **1.** The trap is treating $8.508$ as $8$, because it is closer to $8$ than to $9$. The inequality is $n \\ge 8.508$, so $9$ is the smallest whole number that retires the loan.
 
-**2.** A solver who used $120{,}000/25{,}000 = 4.8$ would ignore interest and undercount the years. Interest keeps the balance alive longer than a principal-only split.
+**2.** Using $120{,}000/25{,}000 = 4.8$ would ignore interest and undercount the years. The recovered isolation is checked against the claim using $120{,}000/25{,}000 = 4.8$, which is the figure the sessions actually produce. Interest keeps the balance alive longer than a principal-only split.
 
 The opposite verdict would need a threshold at or below $8$. With the recovered $8.508$-year cutoff, eight full payments are not enough. The recovered smallest whole number of payments is $9$.
 
@@ -22092,7 +22092,7 @@ The overview recovered that due instalment as about $\\$16{,}176.12$. This lette
 
 **1.** The trap is the ordinary eight-year payment, which would be larger because it waits a year to start. Due means the first $\\$16{,}176.12$ is cash today.
 
-**2.** A solver who used $90{,}000/8 = 11{,}250$ would ignore interest. A solver who used $0.12 \\times 90{,}000 = 10{,}800$ would be quoting year-1 interest on an ordinary loan, not a due instalment.
+**2.** Using $90{,}000/8 = 11{,}250$ would ignore interest. That is why $90{,}000/8 = 11{,}250$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Using $0.12 \\times 90{,}000 = 10{,}800$ would be quoting year-1 interest on an ordinary loan, not a due instalment. That is why $0.12 \\times 90{,}000 = 10{,}800$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 The opposite verdict would need ordinary timing. With eight beginning-of-year payments at $12\\%$ on $\\$90{,}000$, the recovered annuity-due payment is about $\\$16{,}176.12$. The reserve fund does not mix into this letter.
 
@@ -22123,7 +22123,7 @@ The equipment loan and the reserve fund are separate books. This letter is only 
 
 Part 3.3 already formed the intra-year equivalent from $c = 300(4 + 1.5 \\times 0.09)$ and left $c = 1,240.50$. It then accumulated that equivalent for $N = 3$ and left $F_3 \\approx 4,066.48$. Both printed figures match those recovered values. This letter is reading that pair, not rebuilding $(1.09)^3$ from scratch.
 
-**1.** The four deposits sit for $9$, $6$, $3$, and $0$ months before the annual credit. Simple interest on those fractions at $9\\%$ is the $1.5R$ in the factor, which is $4.135$, times $\\$300$, which is $\\$1,240.50$. A solver who used $4 \\times 300 = 1,200$ skipped the intra-year garnish. A solver who used $300 \\times 4 \\times 1.09 = 1,308$ treated every deposit as if it sat a full year.
+**1.** The four deposits sit for $9$, $6$, $3$, and $0$ months before the annual credit. Simple interest on those fractions at $9\\%$ is the $1.5R$ in the factor, which is $4.135$, times $\\$300$, which is $\\$1,240.50$. Using $4 \\times 300 = 1,200$ skipped the intra-year garnish. Keeping $4 \\times 300 = 1,200$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $300 \\times 4 \\times 1.09 = 1,308$ treated every deposit as if it sat a full year. That is why $300 \\times 4 \\times 1.09 = 1,308$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does.
 
 **2.** The three-year balance is the ordinary-annuity future value of those $\\$1,240.50$ year-end equivalents, already in Part 3.3. A trap is multiplying $1,240.50 \\times 3 = 3,721.50$ and stopping, which ignores interest on earlier years' deposits. Another is attaching the loan's $12\\%$ clock to the reserve. The reserve credits $9\\%$, once a year.
 
@@ -22131,7 +22131,7 @@ Part 3.3 already formed the intra-year equivalent from $c = 300(4 + 1.5 \\times 
 
 In the story of the stem, the company is parking $\\$300$ a quarter for maintenance. The recovered objects are $c$ and $F_3$. Citing $\\$1,240.50$ and $\\$4,066.48$ is citing Part 3.3.
 
-A rushed solver who used $300 \\times 12 = 3,600$ counted three years of quarterly deposits with no interest. Someone who used the loan instalment $\\$16,176$ as if it belonged to the reserve mixed the two books.
+Using $300 \\times 12 = 3,600$ counted three years of quarterly deposits with no interest. The recovered isolation is checked against the claim using $300 \\times 12 = 3,600$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. Someone who used the loan instalment $\\$16,176$ as if it belonged to the reserve mixed the two books.
 
 What would have to change for the opposite verdict is a different quarterly deposit or a different reserve rate. At $\\$300$ a quarter and $9\\%$ annual crediting, the year-end equivalent is $\\$1,240.50$ and the three-year pile is about $\\$4,066.48$.
 
@@ -22231,7 +22231,7 @@ The overview recovered that present value as about $\\$521{,}162.27$. This lette
 
 **1.** The trap is $7 \\times 95{,}000 = 665{,}000$, the undiscounted instalments, or cash of $\\$500{,}000$ treated as if it were already Schedule II.
 
-**2.** A solver who used $13\\%$ here would be answering letter D, where Schedule II falls below cash. At $9\\%$ the recovered due cost still sits above $\\$500{,}000$.
+**2.** Using $13\\%$ here would be answering letter D, where Schedule II falls below cash. That is why $13\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. At $9\\%$ the recovered due cost still sits above $\\$500{,}000$.
 
 Due means the first $\\$95{,}000$ is cash today and is rate-invariant. All of the discounting sits in the wait. The opposite verdict would need a different rate or a different instalment. At $9\\%$, the recovered present value of Schedule II is about $\\$521{,}162.27$.
 
@@ -22244,7 +22244,7 @@ The overview recovered about $\\$535{,}059$, not the claimed $\\$540{,}000$. Thi
 
 **1.** The trap is $150{,}000 + 10 \\times 60{,}000$ times some loose discount, or rounding $\\$535{,}059$ up to a clean $\\$540{,}000$. The recovered $9\\%$ cost is about $\\$535{,}059$.
 
-**2.** A solver who added $150{,}000 + 600{,}000 = 750{,}000$ would skip discounting. A solver who reported Schedule II's $\\$521{,}162$ here would be answering letter A.
+**2.** Adding $150{,}000 + 600{,}000 = 750{,}000$ would skip discounting. That is why $150{,}000 + 600{,}000 = 750{,}000$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting Schedule II's $\\$521{,}162$ here would be answering letter A. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a recovered Schedule III cost of $\\$540{,}000$. With $\\$150{,}000$ down plus ten ordinary $\\$60{,}000$ payments at $9\\%$, the recovered present value is about $\\$535{,}059$, not $\\$540{,}000$.
 
@@ -22266,9 +22266,9 @@ The statement rebuilds Schedule II at $13\\%$ and claims the present value is ab
 
 The overview recovered about $\\$474{,}767.23$. That figure now sits below the $\\$500{,}000$ cash price. Raising the rate from $9\\%$ to $13\\%$ cheapens the six remaining due payments enough to pull Schedule II under cash.
 
-**1.** The immediate first $\\$95{,}000$ is rate-invariant. All of the cheapening is in the wait. A solver who discounted the first payment as well would understate a due stream.
+**1.** The immediate first $\\$95{,}000$ is rate-invariant. All of the cheapening is in the wait. Discounting the first payment as well would understate a due stream. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
-**2.** A solver who reported the $9\\%$ figure $\\$521{,}162$ here would be answering letter A. A solver who used $7 \\times 95{,}000$ would skip discounting at both rates.
+**2.** Reporting the $9\\%$ figure $\\$521{,}162$ here would be answering letter A. Once $9\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Using $7 \\times 95{,}000$ would skip discounting at both rates. That is why $7 \\times 95{,}000$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 The opposite verdict would need a $13\\%$ due cost above cash. With the recovered $\\$474{,}767.23$, Schedule II is cheaper than $\\$500{,}000$ at $13\\%$. The recovered $13\\%$ present value of Schedule II is about $\\$474{,}767.23$.
 
@@ -22356,7 +22356,7 @@ The overview recovered that present value as about $\\$944{,}529.45$. This lette
 
 **1.** The trap is $9 \\times 140{,}000 = 1{,}260{,}000$, the undiscounted instalments, or cash of $\\$850{,}000$ treated as if it were already Schedule II.
 
-**2.** A solver who used $12\\%$ here would be answering a later cheaper ranking. At $8\\%$ the recovered due cost still sits well above cash.
+**2.** Using $12\\%$ here would be answering a later cheaper ranking. Once $12\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. At $8\\%$ the recovered due cost still sits well above cash.
 
 Due means the first $\\$140{,}000$ is cash today. All of the discounting sits in the wait. The opposite verdict would need a different rate or a different instalment. At $8\\%$, the recovered present value of Schedule II is about $\\$944{,}529.45$.
 
@@ -22369,7 +22369,7 @@ The overview recovered about $\\$871{,}117.14$. This letter is reading that $8\\
 
 **1.** The trap is rounding to $\\$870{,}000$ or adding $11 \\times 80{,}000$ undiscounted onto the down payment. The recovered $8\\%$ cost is about $\\$871{,}117$.
 
-**2.** A solver who reported cash $\\$850{,}000$ here would skip the annuity layer. A solver who reported Schedule II's $\\$944{,}529$ would be answering letter A.
+**2.** Reporting cash $\\$850{,}000$ here would skip the annuity layer. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Reporting Schedule II's $\\$944{,}529$ would be answering letter A. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 The $\\$300{,}000$ down payment does not move with the rate. The tail does. The opposite verdict would need a different annuity or a different rate. At $8\\%$, the recovered present value of Schedule III is about $\\$871{,}117.14$.
 
@@ -22396,7 +22396,7 @@ so cash beats the mixed Schedule III by about $\\$21,117$ at this rate, and it b
 
 In the story of the stem, the hospital wants the cheapest schedule in present-value terms first at $8\\%$. The recovered objects are $PV_{\\mathrm{I}} = 850,000$, $PV_{\\mathrm{II}} \\approx 944,529$, and $PV_{\\mathrm{III}} \\approx 871,117$. The extra arithmetic is the $\\$21,117$ gap between cash and Schedule III.
 
-A rushed solver who picked Schedule III because $\\$300,000$ down plus $\\$80,000$ a year "looks smaller" would be ranking by the down payment, not by present value. Schedule III is the middle of the three at $8\\%$, not the cheapest.
+Picking Schedule III because $\\$300,000$ down plus $\\$80,000$ a year "looks smaller" would be ranking by the down payment, not by present value. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Schedule III is the middle of the three at $8\\%$, not the cheapest.
 
 What would have to change for the opposite verdict is a higher cash price or a higher discount rate. At $12\\%$ the ranking does change, and Schedule III wins. This letter is the $8\\%$ ranking, and cash is cheapest there.
 
@@ -22407,9 +22407,9 @@ The statement rebuilds Schedule III at $12\\%$ and claims the present value is a
 
 The overview recovered about $\\$775{,}015.93$. That figure now sits well below both cash and Schedule II. The $\\$300{,}000$ down payment does not move. The tail does.
 
-**1.** Raising the rate from $8\\%$ to $12\\%$ pulls III under the $\\$850{,}000$ cash price by about $\\$75{,}000$. A solver who scaled letter B by $8/12$ would miss that the down payment is rate-invariant.
+**1.** Raising the rate from $8\\%$ to $12\\%$ pulls III under the $\\$850{,}000$ cash price by about $\\$75{,}000$. Scaling letter B by $8/12$ would miss that the down payment is rate-invariant. The path that matches the stem therefore holds $8/12$ fixed and only then reads the claim.
 
-**2.** A solver who reported the $8\\%$ figure $\\$871{,}117$ here would be answering letter B. A solver who used $300{,}000 + 11 \\times 80{,}000$ would skip discounting at both rates.
+**2.** Reporting the $8\\%$ figure $\\$871{,}117$ here would be answering letter B. The opposite verdict would need a different isolation than $8\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $300{,}000 + 11 \\times 80{,}000$ would skip discounting at both rates. Keeping $300{,}000 + 11 \\times 80{,}000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The opposite verdict would need a $12\\%$ mixed cost above cash. With the recovered $\\$775{,}015.93$, Schedule III is cheaper than $\\$850{,}000$ at $12\\%$.
 
@@ -22495,7 +22495,7 @@ The overview recovered that present value as about $\\$2{,}508{,}821.59$. That s
 
 **1.** The trap is $10 \\times 340{,}000 = 3{,}400{,}000$, the undiscounted instalments. This letter asks for the $7.5\\%$ due present value.
 
-**2.** A solver who reported cash $\\$2.4$ million here would skip the due stream. A solver who used a higher rate would be answering a later cheaper ranking, not this $7.5\\%$ figure.
+**2.** Reporting cash $\\$2.4$ million here would skip the due stream. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using a higher rate would be answering a later cheaper ranking, not this $7.5\\%$ figure. Keeping $7.5\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 Due means the first $\\$340{,}000$ is cash today. All of the discounting sits in the nine remaining payments. The opposite verdict would need a different rate or a different instalment. At $7.5\\%$, the recovered present value of Schedule II is about $\\$2{,}508{,}821.59$.
 
@@ -22508,7 +22508,7 @@ The overview recovered about $\\$2{,}194{,}722$, not the claimed $\\$2{,}250{,}0
 
 **1.** The trap is rounding $\\$2{,}194{,}722$ up to a clean $\\$2.25$ million, or adding $9 \\times 250{,}000$ with a loose discount. The recovered $7.5\\%$ cost is about $\\$2{,}194{,}722$.
 
-**2.** A solver who added $600{,}000 + 2{,}250{,}000$ undiscounted would skip discounting. A solver who reported Schedule II's $\\$2{,}508{,}822$ here would be answering letter A.
+**2.** Adding $600{,}000 + 2{,}250{,}000$ undiscounted would skip discounting. The recovered isolation is checked against the claim using $600{,}000 + 2{,}250{,}000$, which is the figure the sessions actually produce. Reporting Schedule II's $\\$2{,}508{,}822$ here would be answering letter A. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The opposite verdict would need a recovered Schedule III cost of $\\$2{,}250{,}000$. With $\\$600{,}000$ down plus nine ordinary $\\$250{,}000$ payments at $7.5\\%$, the recovered present value is about $\\$2{,}194{,}722$, not $\\$2{,}250{,}000$.
 
@@ -22535,7 +22535,7 @@ about $\\$108,822$ of extra present cost on the instalment schedule.
 
 In the story of the stem, the company wants to know how I versus II ranks at $7.5\\%$. The recovered objects are the cash price and $PV_{\\mathrm{II}} \\approx 2,508,822$. The extra arithmetic is the $\\$108,822$ gap.
 
-A rushed solver who picked II because the first instalment is immediate and "already partly paid" would still be looking at annual burden. The first $\\$340,000$ is already inside the recovered $2,508,822$. It does not make II cheaper than cash.
+Picking II because the first instalment is immediate and "already partly paid" would still be looking at annual burden. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The first $\\$340,000$ is already inside the recovered $2,508,822$. It does not make II cheaper than cash.
 
 What would have to change for the opposite verdict at $7.5\\%$ is a higher cash price, or a higher discount rate. The stem's $11.5\\%$ case is that later flip. At $7.5\\%$, cash beats Schedule II.
 
@@ -22552,7 +22552,7 @@ so the wording understates the instalment schedule by about $\\$86,562$.
 
 **1.** $\\$2,100,000$ looks like a round number sitting near $10 \\times 340,000$ discounted by a coarse $40\\%$ haircut, or like $2,400,000$ minus a round $\\$300,000$. Neither of those is the annuity-due present value. The recovered $2,186,562$ is the Part 3.2 conversion, and this letter should not rebuild $(1.115)^{-9}$.
 
-**2.** A rushed solver who copied the $7.5\\%$ figure $2,508,822$ and then subtracted a round $\\$400,000$ for "higher rate" could manufacture something near $2,100,000$. Discounting is not a flat subtraction. Another mix-up is reporting Schedule III's $11.5\\%$ value, about $\\$1,957,766$, rounded up to $2,100,000$. The claim names Schedule II.
+**2.** Copying the $7.5\\%$ figure $2,508,822$ and then subtracting a round $\\$400,000$ for "higher rate" could manufacture something near $2,100,000$. The stem's recovered values line up with $7.5\\%$, whereas $2,100,000$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $7.5\\%$ stays in the write-up. Discounting is not a flat subtraction. Another mix-up is reporting Schedule III's $11.5\\%$ value, about $\\$1,957,766$, rounded up to $2,100,000$. The claim names Schedule II.
 
 **3.** Letter E asks whether cash still beats Schedule II at $11.5\\%$. For that ranking the recovered $2,186,562$ already sits below $2,400,000$, so II wins at the higher rate. Using the false $2,100,000$ would still pick the same winner, which is why a round understatement is tempting. It is still the wrong present value.
 
@@ -22665,7 +22665,7 @@ $$-8000 + 9600/1.15 \\approx 347.83$$
 
 **2.** The trap is thinking any rate below $20\\%$ could still produce a negative NPV if the dollars were small. For a conventional one-year project, NPV and IRR agree: test rates below IRR give positive NPV.
 
-A solver who used $9{,}600/1.20$ would be testing the IRR itself and reporting zero. A solver who skipped the outlay would report a huge surplus. The recovered $15\\%$ NPV is about $\\$347.83$, positive.
+Using $9{,}600/1.20$ would be testing the IRR itself and reporting zero. That is why $9{,}600/1.20$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Skipping the outlay would report a huge surplus. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered $15\\%$ NPV is about $\\$347.83$, positive.
 
 The recovered $15\\%$ NPV is about $\\$347.83$, positive, so the statement is True.`,
       `**C) At an interest rate of 25%, the net present value of this project is positive.**  (false)
@@ -22801,7 +22801,7 @@ The overview recovered $s \\approx 0.90153$ and $r \\approx 10.92\\%$. This lett
 
 **1.** The trap is $(7{,}000+7{,}000)/12{,}000 - 1 = 16.7\\%$, which ignores timing, or treating the project as one year of $\\$7{,}000$. Two years of discounting pull the IRR down to about $10.92\\%$.
 
-**2.** A solver who used $7{,}000/12{,}000 = 58\\%$ would have quoted a one-year stub. A solver who averaged the two $\\$7{,}000$ payoffs as a perpetuity would invent a different rate entirely.
+**2.** Using $7{,}000/12{,}000 = 58\\%$ would have quoted a one-year stub. The path that matches the stem therefore holds $7{,}000/12{,}000 = 58\\%$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Averaging the two $\\$7{,}000$ payoffs as a perpetuity would invent a different rate entirely. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The opposite verdict would need a different pair of cash flows. With two equal $\\$7{,}000$ returns on $\\$12{,}000$, the recovered IRR is about $10.92\\%$. Letters B and C then test NPV on either side of that rate.
 
@@ -22956,7 +22956,7 @@ The overview recovered $s \\approx 0.89304$ and $r \\approx 11.98\\%$. Treating 
 
 **1.** The trap is that $20\\%$ undiscounted return, or averaging $9$ and $15$ against $20$ as a one-year $20\\%$. Two years of discounting pull the IRR down to about $11.98\\%$.
 
-**2.** A solver who used only the Year-2 $\\$15{,}000$ over $\\$20{,}000$ would quote $25\\%$ with the wrong clock. The recovered pair of discount factors is what pins $11.98\\%$.
+**2.** Using only the Year-2 $\\$15{,}000$ over $\\$20{,}000$ would quote $25\\%$ with the wrong clock. The path that matches the stem therefore holds $25\\%$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. The recovered pair of discount factors is what pins $11.98\\%$.
 
 The opposite verdict would need a different cash-flow pair. With $\\$9{,}000$ then $\\$15{,}000$ on $\\$20{,}000$, the recovered IRR is about $11.98\\%$. Letters B and C test NPV on either side of that rate.
 
@@ -23016,7 +23016,7 @@ The recovered sum is $\\$4,000$. This letter is that addition.
 
 In the story of the stem, the boutique wants a sanity check: over the whole project, ignoring timing, does more cash come in than went out? The recovered object is $a_0 + a_1 + a_2 = 4,000$. Timing is what the IRR and NPV letters handle.
 
-A rushed solver who reported $4,000$ as the NPV would have the right number attached to the wrong name. The NPV at $10\\%$ is $\\$578.51$. The cash-flow sum is $\\$4,000$.
+Reporting $4,000$ as the NPV would have the right number attached to the wrong name. The recovered isolation is checked against the claim using $4,000$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. The NPV at $10\\%$ is $\\$578.51$. The cash-flow sum is $\\$4,000$.
 
 What would have to change for the opposite verdict is a different trio of cash flows. If year $2$ had been $\\$11,000$ instead of $\\$15,000$, the sum would have been $0$. The stem's year-$2$ return is $\\$15,000$.
 
@@ -23117,7 +23117,7 @@ The overview recovered $17{,}250/15{,}000 - 1 = 15\\%$. This letter is reading t
 
 $$17250/15000 - 1 = 0.15$$
 
-**2.** The trap is $(17{,}250-15{,}000)/17{,}250 \\approx 13\\%$, profit over payoff rather than over outlay. A solver who used Y's $\\$22{,}000$ here would be answering the wrong project.
+**2.** The trap is $(17{,}250-15{,}000)/17{,}250 \\approx 13\\%$, profit over payoff rather than over outlay. Using Y's $\\$22{,}000$ here would be answering the wrong project. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a different X payoff. With $\\$17{,}250$ on $\\$15{,}000$ in one year, the recovered IRR of Project X is exactly $15\\%$. Letter C then ranks X above Y even though Y makes more dollars.
 
@@ -23172,7 +23172,7 @@ Eleven percent sits below both IRRs, so both NPVs are positive. The overview rec
 
 The recovered 11% NPVs are both positive, **5.** The split-sign picture the claim wants is the picture at a test rate between the two IRRs. At 13.5%, X would still have positive NPV (13.5% < 15%) and Y would have negative NPV (13.5% > 12.5%). Eleven percent is not 13.5%. It is below both recovered rates, so both present values are surpluses, about \\$541 and \\$297.
 
-**6.** A solver who translated "Y has the lower IRR" into "Y has negative NPV" was swapping criteria. IRR ranks projects. NPV at a named rate signs a single project. At 11%, both signs are plus.
+**6.** Translating "Y has the lower IRR" into "Y has negative NPV" was swapping criteria. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. IRR ranks projects. NPV at a named rate signs a single project. At 11%, both signs are plus.
 
 **7.** The opposite verdict would need the test rate in $(12.5\\%, 15\\%)$. The stem's 11% is not in that interval, and the recovered pair $540.54 > 0$, $297.30 > 0$ is the evidence.
 
@@ -23268,9 +23268,9 @@ The statement claims that at $r=8\\%$, the manufacturing upgrade's NPV is about 
 
 The overview recovered NPV about $\\$4{,}012$. The recovered pieces are about $-2{,}778$, $+24{,}005$, and $+27{,}784$ around the $-45{,}000$ outlay. Net is about $\\$4{,}012$.
 
-**1.** A solver who treated year 1 as an inflow would overstate NPV by about $\\$5{,}556$. The stem lists $a_1$ as a cash outflow.
+**1.** Treating year 1 as an inflow would overstate NPV by about $\\$5{,}556$. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The stem lists $a_1$ as a cash outflow.
 
-**2.** A solver who reported the undiscounted $-45{,}000-3{,}000+28{,}000+35{,}000=15{,}000$ would skip discounting. Timing is what cuts that $15{,}000$ down to about $\\$4{,}012$.
+**2.** Reporting the undiscounted $-45{,}000-3{,}000+28{,}000+35{,}000=15{,}000$ would skip discounting. The recovered isolation is checked against the claim using $-45{,}000-3{,}000+28{,}000+35{,}000=15{,}000$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. Timing is what cuts that $15{,}000$ down to about $\\$4{,}012$.
 
 The opposite verdict would need a different test rate or a sign flip on year 1. At $8\\%$, the recovered NPV is about $\\$4{,}012$. Letters B and D sit at higher rates where the surplus disappears.
 
@@ -23283,7 +23283,7 @@ NPV at $12\\%$ is about $-\\$445$, negative. The recovered pieces are about $-2{
 
 **1.** The trap is copying letter A's $8\\%$ surplus onto this higher test rate. Raising the rate from $8\\%$ to $12\\%$ is what flips the sign.
 
-**2.** A solver who treated year 1 as an inflow would still overstate, perhaps enough to manufacture a surplus at $12\\%$. The stem lists $a_1=-3{,}000$.
+**2.** Treating year 1 as an inflow would still overstate, perhaps enough to manufacture a surplus at $12\\%$. Keeping $12\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The stem lists $a_1=-3{,}000$.
 
 The opposite verdict would need a test rate below the IRR, as in letter A. With $r=0.12$, the recovered $12\\%$ NPV is negative. The statement says positive, which is the wrong sign.
 
@@ -23317,7 +23317,7 @@ The overview recovered that $15\\%$ NPV as about $-\\$3{,}424$. This letter is r
 
 **1.** The trap is reporting the $12\\%$ shortfall of about $\\$445$ as if it were already the $15\\%$ figure, or dropping the minus sign. The recovered $15\\%$ NPV is about $-\\$3{,}424$.
 
-**2.** A solver who used $8\\%$ here would quote letter A's surplus with the wrong sign. A solver who skipped the year-1 outflow would understate the shortfall.
+**2.** Using $8\\%$ here would quote letter A's surplus with the wrong sign. The opposite verdict would need a different isolation than $8\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Skipping the year-1 outflow would understate the shortfall. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Raising the rate from $12\\%$ to $15\\%$ deepens the shortfall by about $\\$3{,}000$. The opposite verdict would need a different test rate. At $15\\%$, the recovered NPV is about $-\\$3{,}424$.
 
@@ -23330,7 +23330,7 @@ The stem lists year 1 as a cash outflow caused by installation disruption, then 
 
 **1.** The trap is reading "net returns of $\\$28{,}000$ and $\\$35{,}000$" back onto year 1, or treating a disruption cost as if it were already netted into the outlay. The stem lists $a_1$ as a cash outflow.
 
-**2.** A solver who folded $-3{,}000$ into the $\\$45{,}000$ outlay would then call $a_1$ missing rather than negative. The recovered $a_1$ is negative, which is why Descartes' sign pattern is not the all-positive later-flow shortcut.
+**2.** Folding $-3{,}000$ into the $\\$45{,}000$ outlay would then call $a_1$ missing rather than negative. That is the fork: $-3{,}000$ belongs to the recovered isolation, $a_1$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The recovered $a_1$ is negative, which is why Descartes' sign pattern is not the all-positive later-flow shortcut.
 
 The opposite verdict would need year 1 to be a return. With $a_1=-3{,}000$, the three later cash flows are not all positive.
 
@@ -23415,7 +23415,7 @@ so the wording overstates the project's yield by about $3.72$ points.
 
 **1.** $14.5\\%$ sits near a simple average of the two return ratios $16/34 \\approx 47\\%$ and $24/34 \\approx 71\\%$, or near the $14\\%$ test rate from letter C. Neither of those is the IRR. The IRR is the unique rate above $-100\\%$ that zeros the two-year NPV, recovered as about $10.78\\%$.
 
-**2.** A rushed solver who used $(16,000 + 24,000)/34,000 - 1 \\approx 17.6\\%$ treated the project as a one-period return on total inflows. Timing of the two inflows matters. Another mix-up is reporting the $13\\%$ test rate, where NPV is already negative $\\$1,045$, as if the IRR were a little above that test. The sign change of NPV sits between $9\\%$ (NPV $\\$879$) and $13\\%$ (NPV $-\\$1,045$), which already brackets $10.78\\%$, not $14.5\\%$.
+**2.** Using $(16,000 + 24,000)/34,000 - 1 \\approx 17.6\\%$ treated the project as a one-period return on total inflows. That is why $(16,000 + 24,000)/34,000 - 1 \\approx 17.6\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Timing of the two inflows matters. Another mix-up is reporting the $13\\%$ test rate, where NPV is already negative $\\$1,045$, as if the IRR were a little above that test. The sign change of NPV sits between $9\\%$ (NPV $\\$879$) and $13\\%$ (NPV $-\\$1,045$), which already brackets $10.78\\%$, not $14.5\\%$.
 
 **3.** Rebuilding the quadratic in $s$ is not this letter's job. Part 3 already solved it. This letter only asks whether the recovered $10.78\\%$ is approximately $14.5\\%$. It is not. Rounding $10.78\\%$ to $11\\%$ still does not look like $14.5\\%$.
 
@@ -23703,7 +23703,7 @@ The overview recovered $s \\approx 0.90346$ and $r \\approx 10.69\\%$. Averaging
 
 **1.** The trap is $(34{,}000+42{,}000)/65{,}000 - 1 \\approx 16.9\\%$, which ignores that half the cash arrives a year later. Two years of discounting pull the IRR down to about $10.69\\%$.
 
-**2.** A solver who used only Year-2 $\\$42{,}000$ over $\\$65{,}000$ would quote about $35\\%$ with the wrong clock. The recovered quadratic is what pins $10.69\\%$.
+**2.** Using only Year-2 $\\$42{,}000$ over $\\$65{,}000$ would quote about $35\\%$ with the wrong clock. That is why $35\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The recovered quadratic is what pins $10.69\\%$.
 
 The opposite verdict would need a different rent pair. With $\\$34{,}000$ then $\\$42{,}000$ on $\\$65{,}000$, the recovered IRR is about $10.69\\%$. Letters B and C test NPV on either side of that rate.
 
@@ -23856,7 +23856,7 @@ A level $\\$6{,}000$ perpetuity on $\\$50{,}000$ is $6{,}000/50{,}000 = 12\\%$. 
 
 $$6000/50000 = 0.12$$
 
-**2.** The trap is treating Option 1 as if it were Option 2's two-year stub, which has a large negative IRR. Forever of $\\$6{,}000$ on $\\$50{,}000$ is $12\\%$. A solver who used $6{,}000 \\times 2 / 50{,}000$ would be answering a two-year undiscounted return.
+**2.** The trap is treating Option 1 as if it were Option 2's two-year stub, which has a large negative IRR. Forever of $\\$6{,}000$ on $\\$50{,}000$ is $12\\%$. Using $6{,}000 \\times 2 / 50{,}000$ would be answering a two-year undiscounted return. Keeping $6{,}000 \\times 2 / 50{,}000$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The opposite verdict would need a different annual return or a different outlay. With $\\$6{,}000$ forever on $\\$50{,}000$, the recovered limiting IRR of Option 1 is $12\\%$.
 
@@ -23873,7 +23873,7 @@ That is a deeply negative yield: the two inflows never come close to returning t
 
 **1.** The trap is reporting Option 1's $12\\%$ perpetuity yield as if it also belonged to Option 2. Option 1 pays $\\$6,000$ forever; Option 2 pays $\\$6,000$ twice. Those are different cash-flow lists, and they have different IRRs. Another mix-up is the one-year truncation in Part 3.3, $6,000/50,000 - 1 = -88\\%$, which is even lower and is letter E's companion, not this letter.
 
-**2.** A rushed solver who added $6,000 + 6,000 = 12,000$ and then wrote $12,000/50,000 - 1 = -76\\%$ treated the two inflows as a single period. Timing still matters even when both rates are badly negative. The recovered $-58.84\\%$ is the two-period IRR, and it sits between $-76\\%$ and $0$ because the second $\\$6,000$ is still a real inflow.
+**2.** Adding $6,000 + 6,000 = 12,000$ and then writing $12,000/50,000 - 1 = -76\\%$ treated the two inflows as a single period. So the letter reads the claim against $6,000 + 6,000 = 12,000$; $12,000/50,000 - 1 = -76\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6,000 + 6,000 = 12,000$ stays in the write-up. Timing still matters even when both rates are badly negative. The recovered $-58.84\\%$ is the two-period IRR, and it sits between $-76\\%$ and $0$ because the second $\\$6,000$ is still a real inflow.
 
 **3.** The other quadratic root would imply $r < -1$ and was discarded. Uniqueness above $-100\\%$ is letter C. This letter only asks whether the kept root converts to about $-58.84\\%$. It does.
 
@@ -23911,7 +23911,7 @@ so the wording overstates the cash hole by $\\$2,000$.
 
 **1.** $-\\$40,000$ looks like $-50,000 + 10,000$, as if the two inflows had been combined into a single $\\$10,000$ and then someone subtracted an extra $\\$0$, or like $-50,000 + 6,000 + 4,000$ with a mistyped second return. The stem's second return is $\\$6,000$, the same as the first. Another mix-up is counting only one $\\$6,000$ and writing $-50,000 + 6,000 = -44,000$, which is a different miss.
 
-**2.** A rushed solver who reported $-\\$40,000$ as a rounded $-\\$38,000$ has rounded in the wrong direction by $\\$2,000$, which is not nearest-ten-thousand rounding (that would be $-40,000$ from $-38,000$ only if one rounded to the nearest $10{,}000$, and even then the claim presents it as an equality, not an approximation).
+**2.** Reporting $-\\$40,000$ as a rounded $-\\$38,000$ has rounded in the wrong direction by $\\$2,000$, which is not nearest-ten-thousand rounding (that would be $-40,000$ from $-38,000$ only if one rounded to the nearest $10{,}000$, and even then the claim presents it as an equality, not an approximation). Working from the isolated values, $-\\$ is the figure that is checked, not the detour that produced $10{,}000$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **3.** Letters A and B are IRRs. An undiscounted sum is not an IRR. The negative $\\$38,000$ does explain why Option 2's IRR is badly negative: more cash leaves than returns, even before discounting. The exact hole is $\\$38,000$, not $\\$40,000$.
 
@@ -24019,7 +24019,7 @@ The overview recovered $s \\approx 0.90057$ and $r_A \\approx 11.04\\%$. Treatin
 
 **1.** The trap is that $18\\%$ undiscounted return, or averaging $54$ and $88$ against $120$. Two years of discounting pull A's IRR down to about $11.04\\%$.
 
-**2.** A solver who used Design B's one-year $16\\%$ here would be answering letter B. A's longer clock is why a larger dollar payoff can still post a lower rate than B.
+**2.** Using Design B's one-year $16\\%$ here would be answering letter B. Once $16\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. A's longer clock is why a larger dollar payoff can still post a lower rate than B.
 
 The opposite verdict would need a different A cash-flow pair. With $\\$54{,}000$ then $\\$88{,}000$ on $\\$120{,}000$, the recovered IRR of Design A is about $11.04\\%$.
 
@@ -24091,7 +24091,7 @@ Cutting A's year-1 return to \\$44,000 makes a weaker two-year project. The new 
 
 The recovered cut-return IRR for A is about 5.9%, below B's 16%, **5.** Year 1's \\$54,000 was the earlier of A's two inflows. Cutting it to \\$44,000 is a hit to the cash the project earns soonest, which is the cash IRR weights most. Year 2's \\$88,000 is unchanged and still far away. The recovered drop from 11.04% to 5.9% is that timing penalty.
 
-**6.** Even the original 11.04% was 5 points short of B's 16%. A further 5-point drop does not "still exceed 16%." It falls to about 5.9%, which is not close. A solver who thought "\\$88,000 in year 2 is bigger than B's whole payoff, so A must still win" was ranking dollars, not rates, and ignoring that B's payoff arrives in one year on a \\$70,000 outlay.
+**6.** Even the original 11.04% was 5 points short of B's 16%. A further 5-point drop does not "still exceed 16%." It falls to about 5.9%, which is not close. Thinking "\\$88,000 in year 2 is bigger than B's whole payoff, so A must still win" was ranking dollars, not rates, and ignoring that B's payoff arrives in one year on a \\$70,000 outlay. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **7.** The opposite verdict would need the cut year-1 project to keep $r_A > 16\\%$. Starting from 11.04%, no cut of year-1 cash can raise the rate. Cuts lower it.
 

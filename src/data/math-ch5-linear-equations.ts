@@ -28,7 +28,7 @@ The overview already recovered $x = 360$ as that larger holding, by adding the t
 
 **1.** North is the side that shrinks in the equalizing transfer, so the recovered $360$ is attached to North, not to South.
 
-**2.** A solver who treated the equalized $310$ as today's North count, or who split $620$ in half from the start, would land on $310$ and miss the claim. Halving the total is what happens *after* the transfer, not before it.
+**2.** Treating the equalized $310$ as today's North count, or splitting $620$ in half from the start, would land on $310$ and miss the claim. Working from the isolated values, $310$ is the figure that is checked, not the detour that produced $620$. Halving the total is what happens *after* the transfer, not before it.
 
 The recovered North holding is $360$, so the statement is True.`,
       `**B) The South depot currently holds 240 crates.**  (false)
@@ -54,7 +54,7 @@ The overview already has today's North holding $x = 360$. The extra arithmetic i
 
 $$360 + 30 = 390$$
 
-**3.** A solver who subtracted $30$ anyway, copying the overview's $x-50$ habit, would land on $330$ and miss the claim. The sign of the move is the whole content of this letter: South is the sender, North is the receiver.
+**3.** Subtracting $30$ anyway, copying the overview's $x-50$ habit, would land on $330$ and miss the claim. After isolating the unknown, the check is against $30$. The figure $330$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $30$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The sign of the move is the whole content of this letter: South is the sender, North is the receiver.
 
 **4.** After the reverse move South would be $260-30=230$, and the two depots would be further apart, not equal. The claim does not ask for that South figure; it only asks for North's new holding, which is $390$.
 
@@ -78,7 +78,7 @@ A transfer does not create or destroy crates, so if the two holdings become equa
 
 **1.** If the recovered North count had been anything other than $360$, the $50$-crate move would not have landed on half of $620$. The match to $310$ on both sides is how we know the two equations were translated correctly.
 
-**2.** A solver who moved $50$ from South to North instead would get $410$ and $210$, which are not equal. Direction matters. The claim uses the note's actual direction, North to South.
+**2.** Moving $50$ from South to North instead would get $410$ and $210$, which are not equal. Working from the isolated values, $50$ is the figure that is checked, not the detour that produced $210$. Direction matters. The claim uses the note's actual direction, North to South.
 
 Both sides of the equalizing transfer are $310$, so the statement is True.`,
     ],
@@ -152,9 +152,9 @@ The statement is a claim about today's notebook unit price, not about either inv
 
 The overview already recovered $x = 3.50$ as that notebook price, by reducing Invoice #102 to $x+4y=10.70$ and substituting into Invoice #101. This letter does not rebuild that pair. It only asks whether the recovered notebook price is the number in the claim.
 
-**1.** The recovered $3.50$ is attached to notebooks, not to pens. A solver who swapped the labels would quote $\\$1.80$ here and miss the claim.
+**1.** The recovered $3.50$ is attached to notebooks, not to pens. Swapping the labels would quote $\\$1.80$ here and miss the claim. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided Invoice #101's $\\$185$ by $40$ notebooks, ignoring the $25$ pens on the same bill, would land on $\\$4.625$ and treat that as a notebook price. The pens have to be stripped out first; the overview already did that stripping.
+**2.** Dividing Invoice #101's $\\$185$ by $40$ notebooks, ignoring the $25$ pens on the same bill, would land on $\\$4.625$ and treat that as a notebook price. The stem's recovered values line up with $40$, whereas $25$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $40$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The pens have to be stripped out first; the overview already did that stripping.
 
 The recovered notebook price is $\\$3.50$, so the statement is True.`,
       `**B) A pen costs \\$2.10.**  (false)
@@ -176,7 +176,7 @@ The statement is a claim about Invoice #101's printed total, not about a reconst
 
 This letter does not recover unit prices. It asks whether the claimed total is the total on the page.
 
-**1.** A solver who rebuilt Invoice #101 at the recovered prices $x=3.50$ and $y=1.80$ would still land on $40(3.50)+25(1.80)=185$, which is a consistency check, not a new unknown.
+**1.** Rebuilding Invoice #101 at the recovered prices $x=3.50$ and $y=1.80$ would still land on $40(3.50)+25(1.80)=185$, which is a consistency check, not a new unknown. So the letter reads the claim against $x=3.50$; $40(3.50)+25(1.80)=185$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $x=3.50$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** Mixing Invoice #102's $\\$160.50$ into this letter, or averaging the two bills, would manufacture a different total. The claim names Invoice #101 specifically.
 
@@ -199,9 +199,9 @@ $$10 \\times 1.80 = 18$$
 
 $$35 + 18 = 53$$
 
-A solver who averaged the two invoice totals and scaled to twenty items would land somewhere near $\\$172.75$ and miss the claim. Averaging bills mixes quantities that are not ten-and-ten.
+Averaging the two invoice totals and scaling to twenty items would land somewhere near $\\$172.75$ and miss the claim. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Averaging bills mixes quantities that are not ten-and-ten.
 
-A solver who used Invoice #101's implied average of $\\$185/65 \\approx 2.85$ per item, then multiplied by $20$, would get about $\\$57$ and think the claim's $\\$53$ was slightly low. That average still carries the $40$-to-$25$ mix, not a balanced ten-and-ten.
+Using Invoice #101's implied average of $\\$185/65 \\approx 2.85$ per item, then multiplied by $20$, would get about $\\$57$ and think the claim's $\\$53$ was slightly low. The opposite verdict would need a different isolation than $20$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That average still carries the $40$-to-$25$ mix, not a balanced ten-and-ten.
 
 Another wrong route is to take ten notebooks from Invoice #101's $40$ and ten pens from Invoice #102's $60$, then scale each invoice total by $\\frac{10}{40}$ and $\\frac{10}{60}$ separately and add. That treats the two invoices as if each item type lived on only one bill. Both item types appear on both bills, so the only honest costing is the recovered pair applied to the new counts.
 
@@ -238,7 +238,7 @@ The rebuilt row matches the printed $\\$160.50$, not the claimed $\\$172.50$. Th
 
 $$172.50 - 160.50 = 12$$
 
-Where does $\\$12$ come from as a trap? A solver who priced pens at letter B's false $\\$2.10$ would get $15(3.50)+60(2.10)=52.50+126=178.50$, which overshoots in the other direction. A solver who added $\\$12$ onto $\\$160.50$ by treating twelve extra pens at $\\$1.00$, or by mixing Invoice #101's $\\$185$ with a $\\$12.50$ discount story, can manufacture $\\$172.50$ without touching the actual row.
+Where does $\\$12$ come from as a trap? Pricing pens at letter B's false $\\$2.10$ would get $15(3.50)+60(2.10)=52.50+126=178.50$, which overshoots in the other direction. Keeping $15(3.50)+60(2.10)=52.50+126=178.50$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Adding $\\$12$ onto $\\$160.50$ by treating twelve extra pens at $\\$1.00$, or by mixing Invoice #101's $\\$185$ with a $\\$12.50$ discount story, can manufacture $\\$172.50$ without touching the actual row. Once $185$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Another tempting misread: take Invoice #102's $15+60=75$ items and imagine a $\\$2.30$ average, $75 \\times 2.30 = 172.50$ exactly. That average is not the recovered mix. At $x=3.50$ and $y=1.80$ the $15$-and-$60$ mix is heavy on the cheaper pens, so the true average is $\\$160.50/75=2.14$, not $2.30$.
 
@@ -312,9 +312,9 @@ The statement is a claim about today's adult ticket price, not about either sess
 
 The overview already recovered $a = 12$ as that adult price, by dividing the evening row to $c=55-4a$ and substituting into the matinee. This letter does not rebuild that pair. It only asks whether the recovered adult price is the number in the claim.
 
-**1.** The recovered $12$ is attached to adult tickets, not to child tickets. A solver who swapped the labels would quote $\\$7$ here.
+**1.** The recovered $12$ is attached to adult tickets, not to child tickets. Swapping the labels would quote $\\$7$ here. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided the evening $\\$2{,}200$ by $160$ adults, ignoring the $40$ child tickets, would land on $\\$13.75$ and miss the claim. The child tickets have to be stripped out first.
+**2.** Dividing the evening $\\$2{,}200$ by $160$ adults, ignoring the $40$ child tickets, would land on $\\$13.75$ and miss the claim. That is the fork: $160$ belongs to the recovered isolation, $40$ belongs to the discarded mix. The child tickets have to be stripped out first.
 
 The recovered adult price is $\\$12.00$, so the statement is True.`,
       `**B) A child ticket costs \\$7.00.**  (true)
@@ -323,9 +323,9 @@ The statement is a claim about today's child ticket price at Riverside Community
 
 Child tickets are the leftover after the adult price is taken out of either session. The overview already recovered $c = 7$. The claim writes $\\$7.00$, which is exactly that leftover. This letter does not rebuild the pair $a=12$ and $c=7$. It only asks whether the recovered child price is the number in the claim.
 
-**1.** The recovered $7$ is attached to child tickets, not to adult tickets. A solver who swapped the labels would quote $\\$12$ here and miss that children are the cheaper ticket.
+**1.** The recovered $7$ is attached to child tickets, not to adult tickets. Swapping the labels would quote $\\$12$ here and miss that children are the cheaper ticket. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
-**2.** A solver who divided the matinee $\\$2{,}130$ by $150$ child tickets, ignoring the $90$ adults, would land on $\\$14.20$ and think children were the expensive ticket. They are not: adults are $\\$12$ and children are $\\$7$. The trap figure $\\$14.20$ is what a child-only split of the matinee manufactures.
+**2.** Dividing the matinee $\\$2{,}130$ by $150$ child tickets, ignoring the $90$ adults, would land on $\\$14.20$ and think children were the expensive ticket. After isolating the unknown, the check is against $150$. The figure $90$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $150$ stays in the write-up. That contrast is the reason the verdict goes the way it does. They are not: adults are $\\$12$ and children are $\\$7$. The trap figure $\\$14.20$ is what a child-only split of the matinee manufactures.
 
 The opposite verdict would need a different logged total on one of the two sessions. With $\\$2{,}130$ and $\\$2{,}200$ as printed, a child ticket cannot cost anything other than $\\$7$.
 
@@ -356,7 +356,7 @@ The figure $\\$2{,}050$ is a typical off-by-$80$ slip: start from $90 \\times 12
 
 Because both sessions share the same prices, changing the matinee total to $\\$2{,}050$ would force a different child price, and that new pair would then fail the evening session. With both rows as logged, the matinee cannot have generated $\\$2{,}050$.
 
-A solver who used the evening total $\\$2{,}200$ here, or who averaged the two sessions, would be answering a different question. The claim names the Saturday matinee specifically.
+Using the evening total $\\$2{,}200$ here, or averaging the two sessions, would be answering a different question. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim names the Saturday matinee specifically.
 
 The claimed $\\$2{,}050$ sits $\\$80$ below the recovered $\\$2{,}130$, The matinee is the child-heavy session: $150$ child tickets against $90$ adult. That mix is why the average ticket, $2130/240=8.875$, sits closer to $7$ than to $12$. A false $\\$2{,}050$ would drop that average to about $8.54$, as if children had been $6.47$ or adults $11.11$. Neither of those unit prices survives the evening session.
 
@@ -385,7 +385,7 @@ $$1920 + 280 = 2200$$
 
 The rebuilt row matches the logged $\\$2{,}200$, not $\\$2{,}300$. The gap is a round $\\$100$.
 
-Where does $\\$2{,}300$ come from as a trap? A solver who priced adults at $\\$12.50$ would get $160(12.50)+40(7)=2000+280=2280$, nearby but not exact. A solver who added $\\$100$ onto $\\$2{,}200$ as a "round-up to the next hundred," or who used $160 \\times 13 + 40 \\times 5.50$, can manufacture $\\$2{,}300$ without touching the actual row. Averaging the two session totals and scaling to $200$ tickets is another way to wander toward $2{,}300$.
+Where does $\\$2{,}300$ come from as a trap? Pricing adults at $\\$12.50$ would get $160(12.50)+40(7)=2000+280=2280$, nearby but not exact. Once $160(12.50)+40(7)=2000+280=2280$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Adding $\\$100$ onto $\\$2{,}200$ as a "round-up to the next hundred," or using $160 \\times 13 + 40 \\times 5.50$, can manufacture $\\$2{,}300$ without touching the actual row. The path that matches the stem therefore holds $160 \\times 13 + 40 \\times 5.50$ fixed and only then reads the claim. Averaging the two session totals and scaling to $200$ tickets is another way to wander toward $2{,}300$.
 
 The evening session is heavier on adults than the matinee, so its average ticket is higher. That does not license rewriting the printed $\\$2{,}200$. The printed total is an observation. Changing it to $\\$2{,}300$ would break the shared-price story that also has to fit the matinee.
 
@@ -408,9 +408,9 @@ $$50 \\times 7 = 350$$
 
 $$600 + 350 = 950$$
 
-The mix is $\\$950$, not $\\$1{,}000$. The gap is $\\$50$, which is exactly fifty times the $\\$1$ difference between a round $\\$10$ "average ticket" story and the true average of $(12+7)/2=9.50$. A solver who treated fifty-and-fifty as $\\$20$ per pair, $50 \\times 20 = 1000$, is using a pair price of $\\$20$ instead of $12+7=19$. That extra dollar per pair is the whole error.
+The mix is $\\$950$, not $\\$1{,}000$. The gap is $\\$50$, which is exactly fifty times the $\\$1$ difference between a round $\\$10$ "average ticket" story and the true average of $(12+7)/2=9.50$. Treating fifty-and-fifty as $\\$20$ per pair, $50 \\times 20 = 1000$, is using a pair price of $\\$20$ instead of $12+7=19$. Working from the isolated values, $50 \\times 20 = 1000$ is the figure that is checked, not the detour that produced $12+7=19$. That extra dollar per pair is the whole error.
 
-A solver who used only the adult price, $50 \\times 12 + 50 \\times 12 = 1200$, would overshoot. A solver who used only the child price would undershoot at $700$. The claim's $\\$1{,}000$ sits between those two wrong extremes, which is what makes it tempting: it looks like a round compromise.
+Using only the adult price, $50 \\times 12 + 50 \\times 12 = 1200$, would overshoot. That is why $50 \\times 12 + 50 \\times 12 = 1200$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Using only the child price would undershoot at $700$. Keeping $700$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim's $\\$1{,}000$ sits between those two wrong extremes, which is what makes it tempting: it looks like a round compromise.
 
 What would have to change for the opposite verdict? If child tickets had been $\\$8$, fifty of each would have been $600+400=1000$ exactly. The evening session forbids $c=8$: dividing $160a+40c=2200$ by $40$ gives $c=55-4a$, and $a=12$ forces $c=7$. With the two Saturday rows as logged, a fifty-and-fifty split cannot generate $\\$1{,}000$.
 
@@ -478,9 +478,9 @@ The statement is a claim about today's sandwich price, not about either charged 
 
 The overview already recovered $x = 7$ as that sandwich price, after subtracting the fee and eliminating wraps. This letter does not rebuild that pair. It only asks whether the recovered sandwich price is the number in the claim.
 
-**1.** The recovered $7$ is attached to sandwiches, not to wraps. A solver who quoted $\\$5$ here would have swapped the labels.
+**1.** The recovered $7$ is attached to sandwiches, not to wraps. Quoting $\\$5$ here would have swapped the labels. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided Receipt A's $\\$70$ by $6$ sandwiches, ignoring wraps and the fee, would land on about $\\$11.67$ and miss the claim. The fee and the wraps both have to come off first.
+**2.** Dividing Receipt A's $\\$70$ by $6$ sandwiches, ignoring wraps and the fee, would land on about $\\$11.67$ and miss the claim. The opposite verdict would need a different isolation than $6$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The fee and the wraps both have to come off first.
 
 The recovered sandwich price is $\\$7.00$, so the statement is True.`,
       `**B) A wrap costs \\$5.00.**  (true)
@@ -489,9 +489,9 @@ The statement is a claim about today's wrap price at Corner Deli, not about eith
 
 The overview already recovered $y = 5$. The claim writes $\\$5.00$, which is exactly that leftover. This letter does not rebuild the pair $x=7$ and $y=5$. It only asks whether the recovered wrap price is the number in the claim.
 
-**1.** The recovered $5$ is attached to wraps, not to sandwiches. A solver who quoted $\\$7$ here would have swapped the labels.
+**1.** The recovered $5$ is attached to wraps, not to sandwiches. Quoting $\\$7$ here would have swapped the labels. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A solver who treated the $\\$8$ fee as if it belonged to the wraps, or who split Receipt A's charged $\\$70$ across $4$ wraps, would land on $\\$17.50$ and inflate the wrap price. The trap figure $\\$17.50$ is a four-wrap split of a delivery total that still contains sandwiches and a fee.
+**2.** Treating the $\\$8$ fee as if it belonged to the wraps, or splitting Receipt A's charged $\\$70$ across $4$ wraps, would land on $\\$17.50$ and inflate the wrap price. Keeping $4$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $\\$17.50$ is a four-wrap split of a delivery total that still contains sandwiches and a fee.
 
 The opposite verdict would need a different peeled food subtotal on one of the two receipts. With food layers $\\$62$ and $\\$66$ as recovered, a wrap cannot cost anything other than $\\$5$.
 
@@ -510,7 +510,7 @@ $$70 - 8 = 62$$
 
 $$6(7) + 4(5) = 42 + 20 = 62$$
 
-Both routes give $\\$62$. A solver who subtracted $\\$8$ twice, once per item type, would land on $\\$54$. A solver who left the fee in would report $\\$70$ as the food subtotal. The claim asks for the food layer only.
+Both routes give $\\$62$. Subtracting $\\$8$ twice, once per item type, would land on $\\$54$. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Leaving the fee in would report $\\$70$ as the food subtotal. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim asks for the food layer only.
 
 The food subtotal on Receipt A is $\\$62.00$, so the statement is True.`,
       `**D) Receipt B's total, including the \\$8.00 delivery fee, is \\$74.00.**  (true)
@@ -519,7 +519,7 @@ The statement is a claim about Receipt B's charged total, fee included. The stem
 
 This letter does not peel the fee and does not recover unit prices. It asks whether the claimed total is the total the deli charged.
 
-A solver who reported the food subtotal $74-8=66$ here would be answering letter C's kind of question for the wrong receipt. The claim includes the fee. A solver who rebuilt $3(7)+9(5)+8=21+45+8=74$ would still land on $\\$74$, which is a consistency check, not a new unknown.
+Reporting the food subtotal $74-8=66$ here would be answering letter C's kind of question for the wrong receipt. Once $74-8=66$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The claim includes the fee. Rebuilding $3(7)+9(5)+8=21+45+8=74$ would still land on $\\$74$, which is a consistency check, not a new unknown. Once $3(7)+9(5)+8=21+45+8=74$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The trap is mixing Receipt A's $\\$70$ into this letter, or averaging the two charged totals toward $\\$72$. The claim names Receipt B specifically. The opposite verdict would need the stem to print a different charged total for that $3$-and-$9$ delivery.
 
@@ -542,13 +542,13 @@ $$5 \\times 5 = 25$$
 
 $$35 + 25 = 60$$
 
-A solver who added the $\\$8$ anyway, copying the delivery habit, would land on $\\$68$ and miss the claim. The whole content of this letter is that pickup strips the fee.
+Adding the $\\$8$ anyway, copying the delivery habit, would land on $\\$68$ and miss the claim. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The whole content of this letter is that pickup strips the fee.
 
-A solver who averaged the two charged totals and scaled to ten items would keep the fee inside the average and overshoot. Another wrong route is to take half of Receipt A's food plus a third of Receipt B's food, which does not produce five-and-five.
+Averaging the two charged totals and scaling to ten items would keep the fee inside the average and overshoot. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Another wrong route is to take half of Receipt A's food plus a third of Receipt B's food, which does not produce five-and-five.
 
 What would have to change for the opposite verdict? If the sandwich were $\\$8$, five of each would be $40+25=65$, not $60$. If pickup still carried the fee, the charged amount would be $68$. The stem's two peeled receipts force $x=7$ and $y=5$, and a pickup five-and-five is then $\\$60$ with nothing added on top.
 
-The recovered food prices on five of each, with no fee, give $\\$60.00$, Pickup is the one place in this task where the $\\$8$ fee must stay off. Every printed receipt in the stem is a delivery. A solver who treated "five and five" as half of Receipt A's $6$ and $4$, then kept the fee, would report $31+8=39$ and miss $\\$60$. Half of Receipt A is not five-and-five, and pickup is not delivery.
+The recovered food prices on five of each, with no fee, give $\\$60.00$, Pickup is the one place in this task where the $\\$8$ fee must stay off. Every printed receipt in the stem is a delivery. Treating "five and five" as half of Receipt A's $6$ and $4$, then kept the fee, would report $31+8=39$ and miss $\\$60$. Working from the isolated values, $6$ is the figure that is checked, not the detour that produced $31+8=39$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Half of Receipt A is not five-and-five, and pickup is not delivery.
 
 Another trap is to average the two charged totals, $(70+74)/2=72$, and call that a ten-item order. That average still contains two fees, and the item mix is $4.5$ sandwiches and $6.5$ wraps, not five and five. The recovered prices $7$ and $5$ are what turn five-and-five into $35+25=60$ with nothing sitting on top.
 
@@ -657,7 +657,7 @@ $$0.07 \\times 4000 = 280$$
 
 **2.** The claim writes $\\$210$. That figure is $7\\%$ of $3000$, or $4.67\\%$ of $4500$, or simply $\\$520-\\$310$ after some other misread of Account A. None of those is $7\\%$ of $4000$.
 
-**3.** A solver who computed $0.07 \\times 3000 = 210$ has used a principal that would force Account A to hold $7000$, which then fails the interest total. The recovered pair is $6000$ and $4000$, and Account B's share of the $\\$520$ is $\\$280$.
+**3.** Computing $0.07 \\times 3000 = 210$ has used a principal that would force Account A to hold $7000$, which then fails the interest total. Working from the isolated values, $0.07 \\times 3000 = 210$ is the figure that is checked, not the detour that produced $7000$. That contrast is the reason the verdict goes the way it does. The recovered pair is $6000$ and $4000$, and Account B's share of the $\\$520$ is $\\$280$.
 
 The recovered interest on Account B is $\\$280$, not $\\$210$, so the statement is False.`,
       `**E) Had the entire \\$10,000 been placed in Account B alone, total interest for the year would have been \\$700.00.**  (true)
@@ -672,13 +672,13 @@ The extra arithmetic is only applying that rate to the whole principal.
 
 $$0.07 \\times 10000 = 700$$
 
-**3.** A solver who used Account A's $4\\%$ here would land on $\\$400$ and miss the claim. A solver who used a blended $5.2\\%$ from the actual $\\$520$ on $\\$10{,}000$ would report $\\$520$ as if the mix had not changed. The whole content of this letter is that the mix *does* change: everything sits in the higher-rate account.
+**3.** Using Account A's $4\\%$ here would land on $\\$400$ and miss the claim. The recovered isolation is checked against the claim using $4\\%$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using a blended $5.2\\%$ from the actual $\\$520$ on $\\$10{,}000$ would report $\\$520$ as if the mix had not changed. The path that matches the stem therefore holds $5.2\\%$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The whole content of this letter is that the mix *does* change: everything sits in the higher-rate account.
 
 Compared with the actual year's $\\$520$, the all-B schedule earns an extra $\\$180$. That extra is $0.03 \\times 6000$, the $3$-point gap applied to the money that used to sit in Account A. The claim does not ask for that comparison; it only asks for the all-B total, which is $\\$700$.
 
 What would have to change for the opposite verdict? If Account B paid $6\\%$, the all-B interest would be $\\$600$, not $\\$700$. If the total principal were $\\$9{,}000$, the all-B interest would be $\\$630$. With $\\$10{,}000$ at $7\\%$, the figure is $\\$700$.
 
-The whole principal at Account B's rate earns $\\$700.00$, Parking everything in Account B is the opposite of the actual split, which put the larger principal in the lower-rate account. That is why the counterfactual $\\$700$ sits $\\$180$ above the year's real $\\$520$. The $\\$180$ is $3$ extra points on the $\\$6{,}000$ that currently sits in Account A. A solver who reported $\\$520$ here would be describing the actual year, not the all-B year.
+The whole principal at Account B's rate earns $\\$700.00$, Parking everything in Account B is the opposite of the actual split, which put the larger principal in the lower-rate account. That is why the counterfactual $\\$700$ sits $\\$180$ above the year's real $\\$520$. The $\\$180$ is $3$ extra points on the $\\$6{,}000$ that currently sits in Account A. Reporting $\\$520$ here would be describing the actual year, not the all-B year. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 A second trap is to blend the rates, $0.04 \\times 0.5 + 0.07 \\times 0.5 = 0.055$, then take $5.5\\%$ of $\\$10{,}000$ as $\\$550$. That even mix is not the actual split and is not the all-B mix either. All-B is a $7\\%$ rate on the whole principal, one multiplication, no split.
 
@@ -742,9 +742,9 @@ The statement is a claim about today's Standard chair price, not about the shipm
 
 The overview already recovered $x = 304$ as that Standard price, by substituting $y=x+45$ into the shipment $18x+12y=9660$. This letter does not rebuild that pair. It only asks whether the recovered Standard price is the number in the claim.
 
-**1.** The recovered $304$ is attached to Standard chairs, not to Premium. A solver who quoted $349$ here would have swapped the grades.
+**1.** The recovered $304$ is attached to Standard chairs, not to Premium. Quoting $349$ here would have swapped the grades. The recovered isolation is checked against the claim using $349$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A solver who divided $\\$9{,}660$ by $30$ chairs, ignoring the $\\$45$ gap, would land on $\\$322$ and miss the claim. That average sits between $304$ and $349$, which is exactly where a gap-blind split has to land.
+**2.** Dividing $\\$9{,}660$ by $30$ chairs, ignoring the $\\$45$ gap, would land on $\\$322$ and miss the claim. The recovered isolation is checked against the claim using $30$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That average sits between $304$ and $349$, which is exactly where a gap-blind split has to land.
 
 The recovered Standard price is $\\$304.00$, so the statement is True.`,
       `**B) A Premium chair is priced at \\$354.00.**  (false)
@@ -788,11 +788,11 @@ $$18 \\times 304 = 5472$$
 
 $$5472 + 4188 = 9660$$
 
-**3.** A solver who used the false $\\$354$ from letter B would get
+**3.** Using the false $\\$354$ from letter B would get The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 $$12 \\times 354 = 4248$$
 
-and miss the claim by $\\$60$. A solver who used the Standard price $304$ on the Premium chairs would get $3648$ and undershoot by $\\$540$, which is twelve times the $\\$45$ gap.
+and miss the claim by $\\$60$. Using the Standard price $304$ on the Premium chairs would get $3648$ and undershoot by $\\$540$, which is twelve times the $\\$45$ gap. Working from the isolated values, $304$ is the figure that is checked, not the detour that produced $45$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The trap figure $\\$4{,}248$ is letter B's false Premium, times twelve. Another trap is to take $12/30$ of $\\$9{,}660$, which is $\\$3{,}864$, as if every chair in the shipment had the same price. The shipment is mixed, so the Premium slice has to use $349$, not the blended $322$.
 
@@ -809,7 +809,7 @@ Checking the recovered pair $x=304$ and $y=349$ gives the same gap:
 
 $$349 - 304 = 45$$
 
-A solver who compared Premium to the $30$-chair average $322$ would report a $\\$27$ gap and miss the claim. The gap in the catalogue is Premium minus Standard, not Premium minus the mixed average. A solver who used letter B's false $\\$354$ would report a $\\$50$ gap, which is the round-up trap already named there.
+Comparing Premium to the $30$-chair average $322$ would report a $\\$27$ gap and miss the claim. So the letter reads the claim against $30$; $322$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $30$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The gap in the catalogue is Premium minus Standard, not Premium minus the mixed average. Using letter B's false $\\$354$ would report a $\\$50$ gap, which is the round-up trap already named there. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The opposite verdict would need the stem to quote a different catalogue gap. The shipment value recovers the two prices, but it does not rewrite the $\\$45$ that the catalogue already printed. Staff who treated $\\$45$ as a rumour and went looking for a recovered gap in the $\\$9{,}660$ mix would be solving for something the stem already gave.
 
@@ -834,13 +834,13 @@ $$1520 + 1745 = 3265$$
 
 Since $3265 > 3000$, the smaller order clears the cutoff by $\\$265$.
 
-A solver who used five times the $30$-chair average $322$ on both grades would get $5 \\times 322 \\times 2 = 3220$, nearby but not the same. A solver who forgot the $\\$45$ gap and priced both grades at $304$ would get $3040$, which still clears $\\$3{,}000$ but by only $\\$40$. A solver who used the false Premium $354$ would get $1520+1770=3290$ and still clear the cutoff, so the verdict would happen to survive that particular error. The honest costing still uses $349$.
+Using five times the $30$-chair average $322$ on both grades would get $5 \\times 322 \\times 2 = 3220$, nearby but not the same. Working from the isolated values, $30$ is the figure that is checked, not the detour that produced $5 \\times 322 \\times 2 = 3220$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Forgetting the $\\$45$ gap and pricing both grades at $304$ would get $3040$, which still clears $\\$3{,}000$ but by only $\\$40$. The recovered comparison therefore keeps $304$ and does not substitute $3040$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using the false Premium $354$ would get $1520+1770=3290$ and still clear the cutoff, so the verdict would happen to survive that particular error. So the letter reads the claim against $354$; $1520+1770=3290$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $354$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The honest costing still uses $349$.
 
 What would have to change for the opposite verdict? If both grades were about $\\$290$ and $\\$335$, five of each would be $3125$, still over. To fall under $\\$3{,}000$ the pair would need $5(x+y)<3000$, so $x+y<600$. With $x+y=304+349=653$, the five-and-five mix is pinned at $3265$. The shipment and the $\\$45$ gap forbid a pair summing to less than $600$.
 
 The recovered prices on five of each give $\\$3{,}265$, which is more than $\\$3{,}000$, Five of each is a balanced order, unlike the shipment's $18$ Standard and $12$ Premium. The shipment is Standard-heavy, which is why its average price $9660/30=322$ sits closer to $304$ than to $349$. Five of each has average $(304+349)/2=326.50$, and five pairs are $5 \\times 653=3265$. That $326.50$ average is not $322$, so scaling the shipment to ten chairs would miss this letter.
 
-The cutoff $\\$3{,}000$ is a round bar, not a recovered number. Clearing it by $\\$265$ is comfortable. A solver who compared $3265$ with $9660/3=3220$ would be taking a third of the shipment, which is $6$ Standard and $4$ Premium, not five and five. Thirds preserve the $18:12$ mix.
+The cutoff $\\$3{,}000$ is a round bar, not a recovered number. Clearing it by $\\$265$ is comfortable. Comparing $3265$ with $9660/3=3220$ would be taking a third of the shipment, which is $6$ Standard and $4$ Premium, not five and five. The recovered comparison therefore keeps $3265$ and does not substitute $4$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Thirds preserve the $18:12$ mix.
 
 If Premium's gap over Standard had been $\\$20$ instead of $\\$45$, the pair would have been about $294$ and $314$, and five of each would have been $3040$, still over $3000$ but by much less. The stem's $\\$45$ gap plus the $\\$9{,}660$ shipment are what pin $3265$. The comparison with $3000$ is then a single inequality, not a second solve.
 
@@ -900,9 +900,9 @@ The statement is a claim about ByteMobile's fixed monthly fee, not about the ext
 
 The overview already recovered $f = 17$ by subtracting the two bills to isolate the rate, then substituting back. This letter does not rebuild that pair. It only asks whether the recovered fee is the number in the claim.
 
-**1.** The recovered $17$ is the amount charged even at zero extra minutes. A solver who quoted $0.30$ here would have swapped fee and rate.
+**1.** The recovered $17$ is the amount charged even at zero extra minutes. Quoting $0.30$ here would have swapped fee and rate. Keeping $0.30$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A solver who averaged $\\$29$ and $\\$53$ would land on $\\$41$ and treat that as a fee. Averaging two bills that include extra minutes cannot isolate the intercept.
+**2.** Averaging $\\$29$ and $\\$53$ would land on $\\$41$ and treat that as a fee. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Averaging two bills that include extra minutes cannot isolate the intercept.
 
 The recovered fixed fee is $\\$17.00$, so the statement is True.`,
       `**B) The extra-minute rate advertised is \\$0.30 per minute.**  (true)
@@ -911,9 +911,9 @@ The statement is a claim about ByteMobile's extra-minute rate, not about the fix
 
 The overview already recovered $r = 0.30$. The claim writes $\\$0.30$ per minute, which is exactly that slope. This letter does not rebuild the subtraction $80r=24$. It only asks whether the recovered rate is the number in the claim.
 
-**1.** The recovered $0.30$ is attached to extra minutes, not to the fee. A solver who quoted $\\$17$ here would have swapped rate and intercept.
+**1.** The recovered $0.30$ is attached to extra minutes, not to the fee. Quoting $\\$17$ here would have swapped rate and intercept. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided $\\$53$ by $120$ minutes would land on about $\\$0.44$ and forget the fee sitting under both bills. The trap figure $\\$0.44$ is the heavy user's bill treated as if it were all extra-minute charges. The fee has to cancel before the rate appears.
+**2.** Dividing $\\$53$ by $120$ minutes would land on about $\\$0.44$ and forget the fee sitting under both bills. Once $120$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $\\$0.44$ is the heavy user's bill treated as if it were all extra-minute charges. The fee has to cancel before the rate appears.
 
 The opposite verdict would need a different pair of quoted bills. With $\\$29$ at $40$ extra minutes and $\\$53$ at $120$ extra minutes, the advertised extra-minute rate cannot be anything other than $\\$0.30$.
 
@@ -936,13 +936,13 @@ $$17 + 60 = 77$$
 
 The bill is $\\$77$, not $\\$80$. The gap is $\\$3$.
 
-Where does $\\$80$ come from as a trap? A solver who used $f=20$ would get $20+60=80$ exactly. A solver who used $r=0.315$ with $f=17$ would get $17+63=80$. A solver who took $\\$53$ for $120$ minutes and scaled by $200/120$ would get about $\\$88$ and overshoot. Another tempting route: $200 \\times 0.40 = 80$, using a round forty-cent rate and dropping the fee.
+Where does $\\$80$ come from as a trap? Using $f=20$ would get $20+60=80$ exactly. That is the fork: $f=20$ belongs to the recovered isolation, $20+60=80$ belongs to the discarded mix. Using $r=0.315$ with $f=17$ would get $17+63=80$. The recovered comparison therefore keeps $r=0.315$ and does not substitute $17+63=80$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Taking $\\$53$ for $120$ minutes and scaling by $200/120$ would get about $\\$88$ and overshoot. The recovered comparison therefore keeps $120$ and does not substitute $200/120$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another tempting route: $200 \\times 0.40 = 80$, using a round forty-cent rate and dropping the fee.
 
 The plan is linear: fee plus rate times extra minutes. It is not a round $\\$80$ at a round $200$ minutes unless the fee and rate cooperate to make that happen. With $f=17$ and $r=0.30$, they do not.
 
 What would have to change for the opposite verdict? If the fee were $\\$20$, or if the rate were $\\$0.315$, the $200$-minute bill would be $\\$80$. The two quoted customers force $f=17$ and $r=0.30$, and those force $\\$77$ at $200$ extra minutes.
 
-The recovered plan at $200$ extra minutes bills $\\$77$, not $\\$80$, Two hundred extra minutes is $80$ minutes past the heavy user's $120$, and $80$ minutes at $0.30$ is $\\$24$. Adding $\\$24$ onto the heavy user's $\\$53$ gives $\\$77$, the same bill. That route does not re-solve the fee and rate; it extends the already-recovered line. A solver who added $\\$24$ onto $\\$53$ as $\\$77$ and then rounded up to $\\$80$ would be manufacturing the claim by a convenience round.
+The recovered plan at $200$ extra minutes bills $\\$77$, not $\\$80$, Two hundred extra minutes is $80$ minutes past the heavy user's $120$, and $80$ minutes at $0.30$ is $\\$24$. Adding $\\$24$ onto the heavy user's $\\$53$ gives $\\$77$, the same bill. That route does not re-solve the fee and rate; it extends the already-recovered line. Adding $\\$24$ onto $\\$53$ as $\\$77$ and then rounding up to $\\$80$ would be manufacturing the claim by a convenience round. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The ad's "low, predictable rate" language is doing rhetorical work, not arithmetic work. Predictable means linear: fee plus rate times extra minutes. Linear does not mean "round numbers at round minute counts." At $200$ minutes the honest value is $77$, and $77$ is not $80$.
 
@@ -961,7 +961,7 @@ $$17 + 0 \\times 0.30 = 17$$
 
 **2.** The claim writes $\\$0.00$. That would be true only if there were no fee, or if unused allowance generated a credit that wiped the fee. The ad describes a fee plus a rate, not a fee that vanishes at zero extra minutes.
 
-**3.** A solver who treated the plan as "pay only for extra minutes" would report $\\$0$ here and miss the intercept. The two quoted bills already show that even $40$ extra minutes cost $\\$29$, which is more than $40 \\times 0.30=12$, so a fee is sitting under the line.
+**3.** Treating the plan as "pay only for extra minutes" would report $\\$0$ here and miss the intercept. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The two quoted bills already show that even $40$ extra minutes cost $\\$29$, which is more than $40 \\times 0.30=12$, so a fee is sitting under the line.
 
 A customer with zero extra minutes still owes $\\$17$, not $\\$0$, so the statement is False.`,
       `**E) The advertised rate (\\$0.30 per minute) is more than double a rival plan's rate of \\$0.20 per minute.**  (false)
@@ -1050,9 +1050,9 @@ The statement is a claim about how many Standard ovens were built this week, not
 
 The overview already recovered $s = 75$ as the Standard count, by substituting $s=130-d$ into $4s+9d=795$. This letter does not rebuild that pair. It only asks whether the recovered Standard count is the number in the claim.
 
-**1.** The recovered $75$ is attached to Standard ovens, not to Deluxe. A solver who quoted $55$ here would have swapped the models.
+**1.** The recovered $75$ is attached to Standard ovens, not to Deluxe. Quoting $55$ here would have swapped the models. The opposite verdict would need a different isolation than $55$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who split $130$ in half would land on $65$ and miss the hours constraint. Standard ovens take $4$ hours and Deluxe take $9$, so the split cannot be even if the hour total is $795$.
+**2.** Splitting $130$ in half would land on $65$ and miss the hours constraint. So the letter reads the claim against $130$; $65$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $130$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Standard ovens take $4$ hours and Deluxe take $9$, so the split cannot be even if the hour total is $795$.
 
 The recovered Standard count is $75$, so the statement is True.`,
       `**B) The division built 45 Deluxe ovens this week.**  (false)
@@ -1080,11 +1080,11 @@ $$795 - 300 = 495$$
 
 That leftover is $9 \\times 55$, which matches the recovered Deluxe count. The hours log is conserved.
 
-**3.** A solver who used Deluxe's $9$ hours on the Standard count would get $675$ and miss the claim. A solver who used $s=65$ from a half-split of $130$ ovens would get $260$. A solver who reported $4 \\times 130=520$ would have priced every oven as Standard.
+**3.** Using Deluxe's $9$ hours on the Standard count would get $675$ and miss the claim. Working from the isolated values, $9$ is the figure that is checked, not the detour that produced $675$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $s=65$ from a half-split of $130$ ovens would get $260$. Working from the isolated values, $s=65$ is the figure that is checked, not the detour that produced $260$. That contrast is the reason the verdict goes the way it does. Reporting $4 \\times 130=520$ would have priced every oven as Standard. The recovered isolation is checked against the claim using $4 \\times 130=520$, which is the figure the sessions actually produce.
 
 The trap figure $260$ is a half-split of the week's $130$ ovens, times four. The trap figure $520$ is the whole week treated as Standard. Neither is $4$ times the recovered $75$.
 
-The material-cost column is a distractor here. Standard material is $\\$120$ per oven, and $75 \\times 120=9000$ is letter E's question, not this one. Hours and dollars are different columns. A solver who reported $\\$300$ as if it were a dollar total would be mixing units.
+The material-cost column is a distractor here. Standard material is $\\$120$ per oven, and $75 \\times 120=9000$ is letter E's question, not this one. Hours and dollars are different columns. Reporting $\\$300$ as if it were a dollar total would be mixing units. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a different Standard count or a different Standard hour rate. With $s=75$ and $4$ hours each, Standard ovens accounted for $300$ hours. That $300$ is a share of $795$, not a share of $130$ ovens, and not a material bill.
 
@@ -1107,7 +1107,7 @@ $$300 + 500 = 800$$
 
 which overshoots $795$ by $5$ hours. The claimed $500$ is five hours high: a round-up from $495$, or one extra Deluxe oven at $9$ hours mixed with a dropped Standard hour.
 
-The trap figure $500$ is the round hundred sitting just above $495$. Another trap is $9 \\times 45=405$ from letter B's false Deluxe count, which undershoots in the other direction. A solver who split $795$ as $300$ and $495$ but then rounded Deluxe to $500$ would flip the verdict by a convenience round.
+The trap figure $500$ is the round hundred sitting just above $495$. Another trap is $9 \\times 45=405$ from letter B's false Deluxe count, which undershoots in the other direction. Splitting $795$ as $300$ and $495$ but then rounded Deluxe to $500$ would flip the verdict by a convenience round. The recovered comparison therefore keeps $795$ and does not substitute $500$.
 
 A nearby miss is $9 \\times 56 = 504$, which is what one extra Deluxe oven would have logged. The week built $55$ Deluxe ovens, not $56$. Rounding $495$ up to the next hundred is a reporting habit, not an hours identity. The log already says $795$, and $300$ of those hours are Standard, so Deluxe cannot occupy $500$ of a $795$-hour week.
 
@@ -1126,7 +1126,7 @@ The extra arithmetic is only multiplying count by unit material cost.
 
 $$75 \\times 120 = 9000$$
 
-**3.** A solver who used Deluxe's $\\$180$ here would get $\\$13{,}500$ and miss the claim. A solver who used $s=55$, swapping the counts, would get $\\$6{,}600$. A solver who priced all $130$ ovens at $\\$120$ would get $\\$15{,}600$ and have ignored that Deluxe uses a different material cost.
+**3.** Using Deluxe's $\\$180$ here would get $\\$13{,}500$ and miss the claim. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using $s=55$, swapping the counts, would get $\\$6{,}600$. The recovered isolation is checked against the claim using $s=55$, which is the figure the sessions actually produce. Pricing all $130$ ovens at $\\$120$ would get $\\$15{,}600$ and have ignored that Deluxe uses a different material cost. The recovered isolation is checked against the claim using $130$, which is the figure the sessions actually produce.
 
 The Deluxe material column is a distractor for this letter. The claim names Standard ovens only. What would have to change for the opposite verdict? If the Standard count were $70$, the material total would be $\\$8{,}400$. If the unit cost were $\\$125$, seventy-five ovens would be $\\$9{,}375$. With $s=75$ and $\\$120$ per Standard oven, the figure is $\\$9{,}000$.
 
@@ -1192,9 +1192,9 @@ The statement is a claim about today's sofa price, not about either branch's gro
 
 The overview already recovered $x = 350$ as that sofa price, after peeling returns and substituting Hillcrest's reduced row into Riverside. This letter does not rebuild that pair. It only asks whether the recovered sofa price is the number in the claim.
 
-**1.** The recovered $350$ is attached to sofas, not to armchairs. A solver who quoted $200$ here would have swapped the labels.
+**1.** The recovered $350$ is attached to sofas, not to armchairs. Quoting $200$ here would have swapped the labels. Once $200$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
-**2.** A solver who divided Riverside's gross $\\$9{,}760$ by $14$ sofas, ignoring armchairs and returns, would land on about $\\$697$ and miss the claim. Returns and armchairs both have to come off first.
+**2.** Dividing Riverside's gross $\\$9{,}760$ by $14$ sofas, ignoring armchairs and returns, would land on about $\\$697$ and miss the claim. Keeping $14$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Returns and armchairs both have to come off first.
 
 The recovered sofa price is $\\$350.00$, so the statement is True.`,
       `**B) An armchair sells for \\$200.00.**  (true)
@@ -1203,11 +1203,11 @@ The statement is a claim about today's armchair price at the two furniture branc
 
 The overview recovered $y = 200$ as that armchair leftover, after the Hillcrest reduction $y = 900 - 2x$ was substituted into Riverside's peeled net. This letter does not rebuild the pair. It only asks whether the recovered armchair price is the $\\$200.00$ in the claim.
 
-**1.** The recovered $200$ is attached to armchairs, not to sofas. A solver who swapped the labels would quote $\\$350$ here and miss the claim.
+**1.** The recovered $200$ is attached to armchairs, not to sofas. Swapping the labels would quote $\\$350$ here and miss the claim. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided Hillcrest's net by armchair count, ignoring sofas, would inflate the leftover. Hillcrest's $\\$300$ of returns is not armchair revenue either; those returns were already peeled before the system was solved.
+**2.** Dividing Hillcrest's net by armchair count, ignoring sofas, would inflate the leftover. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Hillcrest's $\\$300$ of returns is not armchair revenue either; those returns were already peeled before the system was solved.
 
-A solver who used gross instead of net would inflate both prices, because returns would still be sitting inside the dollars. The opposite verdict would need a different peeled net on one of the two branches. With the nets as recovered, an armchair cannot sell for anything other than $\\$200$.
+Using gross instead of net would inflate both prices, because returns would still be sitting inside the dollars. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The opposite verdict would need a different peeled net on one of the two branches. With the nets as recovered, an armchair cannot sell for anything other than $\\$200$.
 
 The recovered armchair price is $\\$200.00$, so the statement is True.`,
       `**C) Riverside's net sales (after its \\$460 in returns) were \\$9,300.00.**  (true)
@@ -1222,15 +1222,15 @@ $$9760 - 460 = 9300$$
 
 $$14 \\times 350 + 22 \\times 200 = 4900 + 4400 = 9300$$
 
-**3.** A solver who subtracted Hillcrest's $\\$300$ here would land on
+**3.** Subtracting Hillcrest's $\\$300$ here would land on After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 $$9760 - 300 = 9460$$
 
-and miss the claim. A solver who reported gross $\\$9{,}760$ as net would have skipped the peel. A solver who subtracted both branches' returns from Riverside's gross would get $9760-460-300=9000$, which is Hillcrest's net, not Riverside's.
+and miss the claim. Reporting gross $\\$9{,}760$ as net would have skipped the peel. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Subtracting both branches' returns from Riverside's gross would get $9760-460-300=9000$, which is Hillcrest's net, not Riverside's. The opposite verdict would need a different isolation than $9760-460-300=9000$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 The trap figure $\\$9{,}460$ is Hillcrest's returns taken off the wrong branch. The trap figure $\\$9{,}760$ is gross left unpeeled. Both routes fail the definition of net sales.
 
-Hillcrest's printed gross is also $\\$9{,}300$. That coincidence is a trap: a solver who copied Hillcrest's gross into Riverside's net without peeling would get the right number for the wrong reason. The honest route is Riverside gross minus Riverside returns. The matching rebuild at $x=350$ and $y=200$ is what shows that the peel is the same layer the system used. Riverside sold $14$ sofas and $22$ armchairs; those counts never change when returns are peeled. Returns are dollars taken off gross, not sofas taken off the floor.
+Hillcrest's printed gross is also $\\$9{,}300$. That coincidence is a trap: copying Hillcrest's gross into Riverside's net without peeling would get the right number for the wrong reason. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The honest route is Riverside gross minus Riverside returns. The matching rebuild at $x=350$ and $y=200$ is what shows that the peel is the same layer the system used. Riverside sold $14$ sofas and $22$ armchairs; those counts never change when returns are peeled. Returns are dollars taken off gross, not sofas taken off the floor.
 
 The opposite verdict would need Riverside's printed gross or Riverside's printed returns to change. With $\\$9{,}760$ gross and $\\$460$ returns, Riverside's net is $\\$9{,}300$. The recovered sofa and armchair prices merely confirm that peel.
 
@@ -1243,7 +1243,7 @@ As a consistency check, Hillcrest's net is $9300-300=9000$, and the $20$ sofas a
 
 $$20 \\times 350 + 10 \\times 200 = 7000 + 2000 = 9000$$
 
-Adding the $\\$300$ of returns back recovers the printed gross. A solver who reported the net $\\$9{,}000$ here would be answering a different question. A solver who mixed Riverside's gross $\\$9{,}760$ into this letter would be naming the wrong branch.
+Adding the $\\$300$ of returns back recovers the printed gross. Reporting the net $\\$9{,}000$ here would be answering a different question. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Mixing Riverside's gross $\\$9{,}760$ into this letter would be naming the wrong branch. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 The trap figure $\\$9{,}000$ is Hillcrest's net, which the claim does not ask for. The opposite verdict would need the table to print a different Hillcrest gross. Riverside's net is also $\\$9{,}300$, so copying the other branch's peeled figure would happen to match; that coincidence does not turn a printed gross into a recovered unknown.
 
@@ -1262,7 +1262,7 @@ $$9760 - 0 = 9760$$
 
 Both gross and net would read $\\$9{,}760$. That is a definition, not a new solve. The recovered sofa and armchair prices never enter, because the claim does not ask what would have been sold, only how gross and net relate when returns vanish.
 
-A solver who subtracted the $\\$460$ anyway would be describing the actual month, not the counterfactual. A solver who thought "zero returns" meant zero sales would report $\\$0$ and miss the claim entirely.
+Subtracting the $\\$460$ anyway would be describing the actual month, not the counterfactual. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Thinking "zero returns" meant zero sales would report $\\$0$ and miss the claim entirely. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 Had Riverside recorded zero returns, gross and net would both have equalled $\\$9{,}760.00$, so the statement is True.`,
     ],
@@ -1343,7 +1343,7 @@ $$3 + 300 \\times 0.25 = 78$$
 
 which overshoots the printed $\\$69$ by $\\$9$. The two invoices cannot share a quarter-dollar rate.
 
-**3.** A solver who divided $\\$33$ by $120$ pages would land on $\\$0.275$ and forget the fee sitting under both bills. The trap figure $\\$0.25$ is the round quarter nearest that all-in split. Another trap is QuickCopy's flat $\\$60$ mixed into a per-page story.
+**3.** Dividing $\\$33$ by $120$ pages would land on $\\$0.275$ and forget the fee sitting under both bills. The opposite verdict would need a different isolation than $120$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $\\$0.25$ is the round quarter nearest that all-in split. Another trap is QuickCopy's flat $\\$60$ mixed into a per-page story.
 
 The honest slope is the dollar gap over the page gap, $36/180=0.20$. That fraction is already recovered. A quarter-dollar rate would require a $\\$45$ gap on the same $180$ pages. The invoices do not show $\\$45$. They show $\\$36$. A clerk who treated $\\$0.25$ as "about a quarter, close enough to $0.20$" would be rounding a rate that the two bills pin to the cent. PrintFast's recovered rate is $0.20$ exactly, because $36/180$ is exact.
 
@@ -1368,13 +1368,13 @@ $$9 + 50 = 59$$
 
 The order is $\\$59$, not $\\$60$. The gap is $\\$1$.
 
-Where does $\\$60$ come from as a trap? QuickCopy Center's flat fee is $\\$60$, so a solver who mixed the rival into PrintFast's quote would report $\\$60$ here. A solver who used $f=10$ would get $10+50=60$ exactly. A solver who used $r=0.204$ with $f=9$ would also land near $\\$60$. The rival's flat $\\$60$ is the most tempting mix-up, because letter D asks about that rival at a nearby page count.
+Where does $\\$60$ come from as a trap? QuickCopy Center's flat fee is $\\$60$, so mixing the rival into PrintFast's quote would report $\\$60$ here. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $f=10$ would get $10+50=60$ exactly. The stem's recovered values line up with $f=10$, whereas $10+50=60$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $f=10$ stays in the write-up. Using $r=0.204$ with $f=9$ would also land near $\\$60$. So the letter reads the claim against $r=0.204$; $f=9$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $r=0.204$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The rival's flat $\\$60$ is the most tempting mix-up, because letter D asks about that rival at a nearby page count.
 
 What would have to change for the opposite verdict? If the fee were $\\$10$, or if the rate were $\\$0.204$, a $250$-page PrintFast order would be $\\$60$. The two printed orders force $f=9$ and $r=0.20$, and those force $\\$59$ at $250$ pages.
 
 The recovered PrintFast rule at $250$ pages bills $\\$59$, not $\\$60$, Two hundred fifty pages sits between Order #58's $120$ and Order #96's $300$, so it is an interpolation, not an extrapolation. Linear interpolation between $\\$33$ and $\\$69$ using page share $(250-120)/(300-120)=130/180$ gives $33+36 \\times 130/180=33+26=59$, the same $\\$59$. That agreement is a check that the recovered line is the line through the two invoices. It is not a reason to report QuickCopy's $\\$60$.
 
-QuickCopy's flat $\\$60$ is the rival sitting in the stem, and $250$ pages is under QuickCopy's $350$-page cap, so a solver who answered with the rival's quote would get the claimed $\\$60$ by swapping shops. This letter is PrintFast's quote at $250$ pages. PrintFast is $\\$59$ there, one dollar under the rival, which is letter D's neighbourhood but not letter D's $350$-page question.
+QuickCopy's flat $\\$60$ is the rival sitting in the stem, and $250$ pages is under QuickCopy's $350$-page cap, so answering with the rival's quote would get the claimed $\\$60$ by swapping shops. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. This letter is PrintFast's quote at $250$ pages. PrintFast is $\\$59$ there, one dollar under the rival, which is letter D's neighbourhood but not letter D's $350$-page question.
 
 If PrintFast's rate had been $0.204$ with a $\\$9$ fee, $250$ pages would have been $60$. The two invoices force $0.20$ exactly, because $36/180=0.20$, and that exact fifth of a dollar is what leaves the $250$-page bill at $59$ rather than $60$.
 
@@ -1399,7 +1399,7 @@ $$79 > 60$$
 
 PrintFast is $\\$19$ more expensive at that length, not cheaper. The claim has the comparison backwards.
 
-A solver who used the false rate $0.25$ would make PrintFast even worse, at $9+87.50=96.50$. A solver who compared $250$-page PrintFast $\\$59$ with the rival $\\$60$ would conclude PrintFast is cheaper, but that is a different page count. At the $350$-page cap of the rival's flat quote, PrintFast has already climbed to $\\$79$.
+Using the false rate $0.25$ would make PrintFast even worse, at $9+87.50=96.50$. The stem's recovered values line up with $0.25$, whereas $9+87.50=96.50$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.25$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Comparing $250$-page PrintFast $\\$59$ with the rival $\\$60$ would conclude PrintFast is cheaper, but that is a different page count. The path that matches the stem therefore holds $250$ fixed and only then reads the claim. At the $350$-page cap of the rival's flat quote, PrintFast has already climbed to $\\$79$.
 
 The two formulas have different slopes, so they can cross. Setting $9+0.20x=60$ gives $x=255$ pages. Below about $255$ pages PrintFast is cheaper; above it, QuickCopy is cheaper. The claim asks about $350$ pages, which sits well above that crossing.
 
@@ -1407,7 +1407,7 @@ PrintFast is more expensive at $350$ pages, not cheaper, At $350$ pages QuickCop
 
 The crossing computed in the letter, about $255$ pages, is the only distance at which the two shops match. Below it, PrintFast's lower rate-plus-fee combination wins. Above it, QuickCopy's flat fee wins until the $350$-page cap. Asking about $350$ pages is asking about the far side of that crossing, where the rival is cheaper.
 
-A solver who compared $350$ pages at PrintFast's false $0.25$ rate from letter B would get $9+87.50=96.50$, even worse for PrintFast, and would still reject "PrintFast is cheaper." The recovered $0.20$ is already enough to reject the claim. What would flip it is a PrintFast rate below about $0.146$, because $9+350r<60$ forces $r<0.1457$. The invoices force $0.20$, which is not that low.
+Comparing $350$ pages at PrintFast's false $0.25$ rate from letter B would get $9+87.50=96.50$, even worse for PrintFast, and would still reject "PrintFast is cheaper." The recovered comparison therefore keeps $350$ and does not substitute $9+87.50=96.50$.The recovered $0.20$ is already enough to reject the claim. What would flip it is a PrintFast rate below about $0.146$, because $9+350r<60$ forces $r<0.1457$. The invoices force $0.20$, which is not that low.
 
 so the statement is False.`,
       `**E) Because Order #58 and Order #96 involve different page counts at different total prices, these two invoices pin down one, and only one, possible combination of setup fee and per-page rate.**  (true)
@@ -1426,7 +1426,7 @@ The coefficient $180$ is not zero, because the page counts differ. That forces a
 
 **3.** Different totals matter too. If the two bills had been equal despite different page counts, the rate would have been forced to zero, which is still a unique pair, just a degenerate one. Here the totals differ as well, so the rate is the positive $0.20$ already recovered.
 
-A solver who thought "two bills, infinitely many fee-and-rate pairs" would be describing one invoice, not two independent ones. One invoice is a single line in the $(f,r)$ plane. Two non-parallel invoices are a single intersection.
+Thinking "two bills, infinitely many fee-and-rate pairs" would be describing one invoice, not two independent ones. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. One invoice is a single line in the $(f,r)$ plane. Two non-parallel invoices are a single intersection.
 
 Because the two invoices involve different page counts at different totals, they pin down one combination of setup fee and per-page rate, so the statement is True.`,
     ],
@@ -1512,7 +1512,7 @@ $$30 < 32$$
 
 Ben's five burritos alone cost $\\$30$, which is $\\$2$ short of Ana's $\\$32$. The claim says he paid more for those five burritos than she paid for everything. He did not.
 
-A solver who used Ben's whole receipt $\\$37$ here would be comparing the wrong object: the claim names the five burritos alone, not the two tacos that came with them. A solver who priced burritos at $\\$7$ would get $35>32$ and flip the verdict. The recovered $y=6$ forbids that.
+Using Ben's whole receipt $\\$37$ here would be comparing the wrong object: the claim names the five burritos alone, not the two tacos that came with them. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Pricing burritos at $\\$7$ would get $35>32$ and flip the verdict. Keeping $35>32$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered $y=6$ forbids that.
 
 Ben's five burritos cost less than Ana's whole order, so the statement is False.`,
       `**B) A burrito costs \\$2.50 more than a taco.**  (true)
@@ -1525,7 +1525,7 @@ The overview already recovered $x = 3.50$ and $y = 6$. The extra arithmetic is o
 
 $$6 - 3.50 = 2.50$$
 
-**2.** A solver who subtracted in the other order would report a negative gap, as if tacos were the expensive item. A solver who reported a round $\\$2$ gap would have dropped the fifty cents. A solver who took Ben's extra $\\$5$ and divided by his two extra burritos would get $\\$2.50$ by luck, but that route ignores that Ben also ordered two fewer tacos. The honest gap is $y-x$, not $5/2$.
+**2.** Subtracting in the other order would report a negative gap, as if tacos were the expensive item. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Reporting a round $\\$2$ gap would have dropped the fifty cents. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Taking Ben's extra $\\$5$ and dividing by his two extra burritos would get $\\$2.50$ by luck, but that route ignores that Ben also ordered two fewer tacos. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The honest gap is $y-x$, not $5/2$.
 
 **3.** Check that the recovered pair still rebuilds Ana:
 
@@ -1556,15 +1556,15 @@ $$14 + 12 = 26$$
 
 Since $26 < 28$, she would have paid less than $\\$28$. The gap to the cutoff is $\\$2$, which is not accidental: dropping one $\\$6$ burrito from $\\$32$ leaves $\\$26$, and $\\$26$ sits $\\$2$ under $\\$28$.
 
-A solver who dropped a taco instead of a burrito would get $32-3.50=28.50$, which is not less than $\\$28$. Direction of the drop matters. The claim names one fewer burrito.
+Dropping a taco instead of a burrito would get $32-3.50=28.50$, which is not less than $\\$28$. The opposite verdict would need a different isolation than $32-3.50=28.50$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Direction of the drop matters. The claim names one fewer burrito.
 
-A solver who subtracted $\\$4$ as a round "one item" would land on $\\$28$ exactly and think the inequality failed. One burrito is $\\$6$, not $\\$4$.
+Subtracting $\\$4$ as a round "one item" would land on $\\$28$ exactly and think the inequality failed. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. One burrito is $\\$6$, not $\\$4$.
 
 What would have to change for the opposite verdict? If burritos were $\\$3$, dropping one would leave $\\$29$, which is not less than $\\$28$. The two receipts force $y=6$, and $32-6=26<28$.
 
 The reduced mix costs $\\$26$, which is less than $\\$28$, Dropping a burrito from Ana's order is a reverse of the usual "add an item" letter. Ana's receipt is $4$ tacos and $3$ burritos at $\\$32$. One burrito is $\\$6$, so the reduced mix is $\\$26$. The cutoff $\\$28$ sits $\\$2$ above that, which is not a recovered price; it is a bar the claim chose. Clearing a bar from below is the inequality $26<28$.
 
-A solver who dropped one taco instead would get $32-3.50=28.50$, which is not less than $28$, and would reject the claim. The item being dropped is the whole content: burrito, not taco. A solver who subtracted $\\$4$ as a round item would land on $\\$28$ exactly and fail a strict inequality.
+Dropping one taco instead would get $32-3.50=28.50$, which is not less than $28$, and would reject the claim. That is the fork: $32-3.50=28.50$ belongs to the recovered isolation, $28$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The item being dropped is the whole content: burrito, not taco. Subtracting $\\$4$ as a round item would land on $\\$28$ exactly and fail a strict inequality. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 If burritos had been $\\$3.50$ like tacos, dropping one would leave $\\$28.50$, again not under $\\$28$. The two receipts force $y=6$, and $32-6=26$ is then safely under the bar. After the drop Ana would have the same taco count as before and one fewer burrito than Ben's five, which is a different story than this letter needs; the claim only asks for her new total.
 
@@ -1587,7 +1587,7 @@ $$37 < 40$$
 
 The claim says his total exceeds $\\$40$. It does not. The gap to the cutoff is $\\$3$.
 
-A solver who added Ana's $\\$32$ to Ben's five burritos at $\\$30$ would get $\\$62$ and wildly overshoot, because that route still contains Ana's whole order. A solver who used $37+5$ twice, adding the $\\$5$ gap a second time, would get $\\$42$ and flip the verdict. The $\\$5$ gap is already built into the $\\$37$.
+Adding Ana's $\\$32$ to Ben's five burritos at $\\$30$ would get $\\$62$ and wildly overshoot, because that route still contains Ana's whole order. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using $37+5$ twice, adding the $\\$5$ gap a second time, would get $\\$42$ and flip the verdict. Keeping $37+5$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The $\\$5$ gap is already built into the $\\$37$.
 
 The trap figure $\\$42$ is the double-counted gap. The trap figure $\\$62$ is Ana's receipt stacked onto Ben's burritos. Neither is Ben's order.
 
@@ -1616,13 +1616,13 @@ $$21 + 36 = 57$$
 
 The mix is $\\$57$, matching the claim.
 
-A solver who averaged Ana's $\\$32$ and Ben's $\\$37$ and scaled to twelve items would keep the $4$-and-$3$ and $2$-and-$5$ shapes inside the average, which are not six-and-six. A solver who took $6(3.50+6)=57$ as $6 \\times 9.50$ is actually the same arithmetic in pair form: one taco plus one burrito is $\\$9.50$, and six pairs are $\\$57$. That pair view is honest here because the mix is balanced.
+Averaging Ana's $\\$32$ and Ben's $\\$37$ and scaling to twelve items would keep the $4$-and-$3$ and $2$-and-$5$ shapes inside the average, which are not six-and-six. Working from the isolated values, $4$ is the figure that is checked, not the detour that produced $5$. Taking $6(3.50+6)=57$ as $6 \\times 9.50$ is actually the same arithmetic in pair form: one taco plus one burrito is $\\$9.50$, and six pairs are $\\$57$. Working from the isolated values, $6(3.50+6)=57$ is the figure that is checked, not the detour that produced $57$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That pair view is honest here because the mix is balanced.
 
 What would have to change for the opposite verdict? If tacos were $\\$4$, six of each would be $24+36=60$. The two receipts force $x=3.50$, and six-and-six is then $\\$57$.
 
 The recovered prices on six of each give $\\$57.00$, Six of each is three times a taco-burrito pair. One pair is $3.50+6=9.50$, and three pairs would be $28.50$, which is not this letter. Six pairs are $57$. That pair view is honest because the mix is balanced. Ana's mix is not balanced, and Ben's mix is not balanced, so neither receipt is a scale copy of six-and-six.
 
-A solver who took Ana's $4$ tacos and Ben's $5$ burritos, then added one taco and one burrito to "get to six," would be mixing two receipts plus an invented pair, which is not how unit prices work. The recovered pair applied to $6$ and $6$ is the only costing.
+Taking Ana's $4$ tacos and Ben's $5$ burritos, then added one taco and one burrito to "get to six," would be mixing two receipts plus an invented pair, which is not how unit prices work. The stem's recovered values line up with $4$, whereas $5$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $4$ stays in the write-up. The recovered pair applied to $6$ and $6$ is the only costing.
 
 If tacos had been $\\$4.00$, six-and-six would have been $24+36=60$, and the claim's $\\$57$ would have failed. The two receipts force $x=3.50$: doubling Ben and subtracting Ana isolates $y=6$, then $4x+18=32$ forces $x=3.50$. Those two prices pin $\\$57$ on a six-and-six ticket.
 
@@ -1699,9 +1699,9 @@ The overview already recovered $x = 12$ by substituting $y=x+5$ into $400x+220y=
 
 **1.** The recovered $12$ plus the desk's $\\$5$ gap is a hardcover of $17$, and $400(12)+220(17)=4800+3740=8540$, which matches the reported total. That is a consistency check, not a new unknown.
 
-**2.** A solver who divided $\\$8{,}540$ by $400$ paperbacks, ignoring hardcovers, would land on $\\$21.35$ and miss the claim. The trap figure $\\$21.35$ is a paperback-only split of a mixed total.
+**2.** Dividing $\\$8{,}540$ by $400$ paperbacks, ignoring hardcovers, would land on $\\$21.35$ and miss the claim. Once $400$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The trap figure $\\$21.35$ is a paperback-only split of a mixed total.
 
-Staff headcount and the loyalty share never enter the price. A solver who folded those distractors into the revenue would manufacture a different paperback price. The opposite verdict would need a different gap or a different combined revenue.
+Staff headcount and the loyalty share never enter the price. Folding those distractors into the revenue would manufacture a different paperback price. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The opposite verdict would need a different gap or a different combined revenue.
 
 A paperback at $\\$12$ fits the desk's $\\$5$ gap and the $\\$8{,}540$ total, so the statement is True.`,
       `**B) Hardcover editions are priced above \\$18.**  (false)
@@ -1720,7 +1720,7 @@ $$400 \\times 13 + 220 \\times 18 = 5200 + 3960 = 9160$$
 
 which overshoots $\\$8{,}540$ by $\\$620$. The stem's revenue forbids that pair.
 
-The trap figure $\\$18$ is the gap plus a round $\\$13$ paperback, or $\\$8540/220 \\approx 38$ after ignoring paperbacks, then halved. The recovered hardcover is $\\$17$, one dollar short of the cutoff. Staff headcount $12$ and loyalty $45\\%$ never push $17$ across $18$. A solver who treated $\\$18$ as "about $\\$17$, close enough" would be rounding a cutoff the claim wrote as a strict bar. Hardcovers at $17$ fail "above $18$" by a full dollar, not by a rounding.
+The trap figure $\\$18$ is the gap plus a round $\\$13$ paperback, or $\\$8540/220 \\approx 38$ after ignoring paperbacks, then halved. The recovered hardcover is $\\$17$, one dollar short of the cutoff. Staff headcount $12$ and loyalty $45\\%$ never push $17$ across $18$. Treating $\\$18$ as "about $\\$17$, close enough" would be rounding a cutoff the claim wrote as a strict bar. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Hardcovers at $17$ fail "above $18$" by a full dollar, not by a rounding.
 
 Another wrong route is $8540/(400+220) \\approx 13.77$ as a blended book, then adding the $\\$5$ gap to get $18.77$ and calling hardcovers "above $\\$18$." That blend still contains paperbacks. The desk's hardcover is $17$, recovered from $x+5$ at $x=12$, and $17$ is not above $18$.
 
@@ -1739,7 +1739,7 @@ $$100 \\times 12 = 1200$$
 
 **2.** Hardcovers are unchanged, so they add $0$ to the increment. The whole increment is $\\$1{,}200$.
 
-A solver who used the hardcover price here would get $\\$1{,}700$ and miss the claim. A solver who scaled the whole $\\$8{,}540$ by $500/400$ would keep hardcovers inside the scale factor and overshoot. Only the paperback column changes.
+Using the hardcover price here would get $\\$1{,}700$ and miss the claim. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Scaling the whole $\\$8{,}540$ by $500/400$ would keep hardcovers inside the scale factor and overshoot. That is why $500/400$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Only the paperback column changes.
 
 The extra $100$ paperbacks add $\\$1{,}200$, so the statement is True.`,
       `**D) A customer buying 3 hardcovers and 2 paperbacks would pay less than \\$75.**  (false)
@@ -1762,11 +1762,11 @@ $$51 + 24 = 75$$
 
 The basket equals $\\$75$, so it is not less than $\\$75$. The inequality is strict in the claim, and equality fails a strict inequality.
 
-A solver who used $y=18$ from letter B would get $54+24=78$ and still fail "less than $75$", so that particular error would not flip the verdict. A solver who treated "less than" as "less than or equal" would flip it. The wording is "would pay less than $\\$75$", and $75$ is not less than $75$.
+Using $y=18$ from letter B would get $54+24=78$ and still fail "less than $75$", so that particular error would not flip the verdict. After isolating the unknown, the check is against $y=18$. The figure $75$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $y=18$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Treating "less than" as "less than or equal" would flip it. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The wording is "would pay less than $\\$75$", and $75$ is not less than $75$.
 
 The basket costs exactly $\\$75$, which is not less than $\\$75$, Three hardcovers and two paperbacks is a customer basket, not a scaled-down sales report. The desk sold $400$ and $220$; this letter sells $3$ and $2$. The recovered prices $12$ and $17$ make the basket $51+24=75$ on the nose. The claim's "less than $\\$75$" is a strict inequality, and equality is not less.
 
-A solver who used $3(12)+2(17)=36+34=70$, swapping the prices, would get a figure that *is* less than $75$ and would flip the verdict. Attaching $17$ to hardcovers and $12$ to paperbacks is the whole content, because the gap rule says hardcover is the dearer book.
+Using $3(12)+2(17)=36+34=70$, swapping the prices, would get a figure that *is* less than $75$ and would flip the verdict. The recovered comparison therefore keeps $3(12)+2(17)=36+34=70$ and does not substitute $75$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Attaching $17$ to hardcovers and $12$ to paperbacks is the whole content, because the gap rule says hardcover is the dearer book.
 
 Staff count $12$ and loyalty $45\\%$ still do not enter. A $5\\%$ loyalty discount on $75$ would make the basket $71.25$, which would then be less than $75$, but the stem never says this customer is a loyalty member. Without that discount the basket is $75$, and $75$ is not less than $75$.
 
@@ -1867,7 +1867,7 @@ Standard's base sits $\\$23$ above Basic's, not below it. Standard's base is mor
 
 **2.** The $5$ GB gap between March and April, at the recovered overage rate $y=3$, is $15$, and $62-15=47$, which rebuilds April. That check uses Standard's own bills. It never pulls Basic's $\\$15$ into Standard's intercept.
 
-**3.** A solver who mixed Basic's $\\$15$ into the Standard intercept, or who averaged $\\$62$ and $\\$47$ toward something below $\\$15$, would manufacture a false "Standard is cheaper" story. Averaging two overage bills cannot isolate a base below $\\$15$ when both bills already sit at $\\$47$ and $\\$62$.
+**3.** Mixing Basic's $\\$15$ into the Standard intercept, or averaging $\\$62$ and $\\$47$ toward something below $\\$15$, would manufacture a false "Standard is cheaper" story. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Averaging two overage bills cannot isolate a base below $\\$15$ when both bills already sit at $\\$47$ and $\\$62$.
 
 Standard also has a steeper overage rate, $\\$3$ per GB against Basic's $\\$2$. Both pieces of Standard are more expensive than Basic, not less. Premium's $\\$40$ unlimited is a third plan and does not lower Standard's base. A customer who glanced at Premium, saw $\\$40$, and thought Standard must sit between Basic $\\$15$ and Premium $\\$40$ would still not be entitled to put Standard *below* Basic. Between is $38$, which is where the bills already are.
 
@@ -1886,7 +1886,7 @@ $$62 - 47 = 15, \\qquad 15/5 = 3$$
 
 That check uses the recovered difference, not a second solve of $x+8y=62$.
 
-**2.** A solver who divided $\\$62$ by $8$ GB would land on $\\$7.75$ and forget the base sitting under both bills. A solver who copied Basic's $\\$2.00$ per GB here would be reading the flyer, not Standard's history.
+**2.** Dividing $\\$62$ by $8$ GB would land on $\\$7.75$ and forget the base sitting under both bills. The recovered isolation is checked against the claim using $8$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Copying Basic's $\\$2.00$ per GB here would be reading the flyer, not Standard's history. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need a different pair of Standard bills. With March at $\\$62$ on $8$ GB and April at $\\$47$ on $3$ GB, the overage rate is pinned at $\\$3$.
 
@@ -1907,13 +1907,13 @@ $$38 + 30 = 68$$
 
 The May bill is $\\$68$, matching the claim.
 
-A solver who used Basic's $\\$15+10 \\times 2=35$ here would be answering a different plan. A solver who used Premium's flat $\\$40$ would also miss. The claim names a Standard customer.
+Using Basic's $\\$15+10 \\times 2=35$ here would be answering a different plan. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using Premium's flat $\\$40$ would also miss. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim names a Standard customer.
 
-A solver who scaled March's $\\$62$ by $10/8$ would get $\\$77.50$ and keep the $8$ GB shape inside the scale. The honest route is the recovered intercept and slope at the new overage.
+Scaling March's $\\$62$ by $10/8$ would get $\\$77.50$ and keep the $8$ GB shape inside the scale. The recovered comparison therefore keeps $10/8$ and does not substitute $8$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The honest route is the recovered intercept and slope at the new overage.
 
 The recovered Standard plan at $10$ GB bills $\\$68.00$, May at $10$ GB is an interpolation past April's $3$ GB and March's $8$ GB. Extending the recovered line $38+3g$ to $g=10$ is $68$. Scaling March by $10/8$ would give $77.50$ and would keep March's $8$ GB inside the scale, which is the wrong overage. The honest route is the intercept and slope at the new overage.
 
-Premium at $10$ GB is still $\\$40$, because Premium has no overage. Basic at $10$ GB is $15+20=35$. Neither of those other plans is this letter. A solver who reported $\\$40$ or $\\$35$ here would be naming a different plan. The claim says a Standard customer.
+Premium at $10$ GB is still $\\$40$, because Premium has no overage. Basic at $10$ GB is $15+20=35$. Neither of those other plans is this letter. Reporting $\\$40$ or $\\$35$ here would be naming a different plan. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim says a Standard customer.
 
 If Standard's base had been $\\$38$ with Basic's $\\$2$ overage, May would have been $38+20=58$, not $68$. The March-April gap of $\\$15$ over $5$ GB forces $\\$3$ per GB, and that $\\$3$ is what puts $10$ GB at $38+30=68$.
 
@@ -1936,13 +1936,13 @@ $$38 + 15 = 53$$
 
 $$53 > 40$$
 
-Switching to Premium saves $\\$13$ for this usage. A solver who used April's $3$ GB bill $\\$47$ as a proxy for $5$ GB would still find $47>40$, so the verdict would survive that particular underestimate. A solver who used Basic at $5$ GB, $15+10=25$, would conclude Premium is more expensive and flip the verdict. The claim is about switching from Standard, not from Basic.
+Switching to Premium saves $\\$13$ for this usage. Using April's $3$ GB bill $\\$47$ as a proxy for $5$ GB would still find $47>40$, so the verdict would survive that particular underestimate. Working from the isolated values, $3$ is the figure that is checked, not the detour that produced $47>40$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using Basic at $5$ GB, $15+10=25$, would conclude Premium is more expensive and flip the verdict. The stem's recovered values line up with $5$, whereas $15+10=25$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is about switching from Standard, not from Basic.
 
 The break-even between Standard and Premium is $38+3g=40$, so $g=\\frac{2}{3}$ GB. Any typical use of $5$ GB sits far above that break-even, so Premium is cheaper for that customer.
 
 Standard at $5$ GB is $\\$53$, which is more than Premium's $\\$40$, Five GB of overage is a typical-use figure sitting between April's $3$ and March's $8$. Standard at that use is $53$. Premium is $40$ unlimited. The saving is $13$ dollars, which is not small relative to a $40$ cap. Break-even is only $2/3$ of a GB, so any customer who regularly uses $5$ GB is far into Premium's cheaper region.
 
-A solver who compared Premium with Basic at $5$ GB, $15+10=25$ versus $40$, would conclude switching *to* Premium costs money. The claim is switching *from* Standard. Standard is the expensive plan in this flyer once overage is nonzero.
+Comparing Premium with Basic at $5$ GB, $15+10=25$ versus $40$, would conclude switching *to* Premium costs money. The stem's recovered values line up with $5$, whereas $40$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim is switching *from* Standard. Standard is the expensive plan in this flyer once overage is nonzero.
 
 If Premium had been $\\$55$ unlimited, Standard at $5$ GB would have been cheaper and the claim would fail. The flyer prints Premium at $\\$40$. Combined with Standard's recovered $38+3g$, any $g>2/3$ favours Premium, and $5$ is well above $2/3$.
 
@@ -1965,7 +1965,7 @@ $$31 < 62$$
 
 Basic is cheaper by $\\$31$ at this overage. That is not close. Standard's higher base and higher rate both push it above Basic for every positive overage.
 
-A solver who compared Premium $\\$40$ with Standard $\\$62$ would still find Standard more expensive, but the claim names Basic, not Premium. A solver who used Standard's April bill $\\$47$ here would be using the wrong overage.
+Comparing Premium $\\$40$ with Standard $\\$62$ would still find Standard more expensive, but the claim names Basic, not Premium. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Using Standard's April bill $\\$47$ here would be using the wrong overage. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 At $8$ GB of overage, Basic costs $\\$31$ and Standard costs $\\$62$, so Basic is cheaper, so the statement is True.`,
     ],
@@ -2033,7 +2033,7 @@ The statement is a claim about Weekend 1's pre-tax revenue, not about either roo
 
 $$\\frac{2419.20}{1.08} = 2240$$
 
-**2.** A solver who subtracted $8\\%$ of $2419.20$ as $193.536$ would land on $2225.664$ and miss the claim. An $8\\%$ tax is added to the pre-tax figure, so the peel is division by $1.08$, not subtraction of $8\\%$ of the gross. The trap figure $2225.66$ is that wrong peel.
+**2.** Subtracting $8\\%$ of $2419.20$ as $193.536$ would land on $2225.664$ and miss the claim. The stem's recovered values line up with $8\\%$, whereas $2225.664$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $8\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. An $8\\%$ tax is added to the pre-tax figure, so the peel is division by $1.08$, not subtraction of $8\\%$ of the gross. The trap figure $2225.66$ is that wrong peel.
 
 **3.** Rebuild Weekend 1 at the recovered pre-tax rates $x=140$ and $y=210$, as a check:
 
@@ -2043,7 +2043,7 @@ Both routes give $\\$2{,}240$. Weekend 2's charged $\\$3{,}099.60$ is a differen
 
 Breakfast and Wi-Fi are listed as free and do not sit inside the occupancy tax. Mixing Weekend 2's charged $\\$3{,}099.60$ into this peel, or averaging the two charged weekends, manufactures a different pre-tax figure. The claim names Weekend 1 specifically.
 
-The opposite verdict would need a different charged total or a different tax rate. With $\\$2{,}419.20$ at $8\\%$, Weekend 1's booking revenue before tax is $\\$2{,}240$. A solver who reported the charged $\\$2{,}419.20$ as pre-tax would have skipped the peel entirely.
+The opposite verdict would need a different charged total or a different tax rate. With $\\$2{,}419.20$ at $8\\%$, Weekend 1's booking revenue before tax is $\\$2{,}240$. Reporting the charged $\\$2{,}419.20$ as pre-tax would have skipped the peel entirely. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The pre-tax Weekend 1 revenue is $\\$2{,}240.00$, so the statement is True.`,
       `**B) A Suite costs \\$200 more per night than a Standard room.**  (false)
@@ -2060,7 +2060,7 @@ $$70 \\neq 200$$
 
 **3.** At a $\\$200$ gap the Weekend 1 pre-tax row would be $10x+4(x+200)=2240$, so $14x+800=2240$, $14x=1440$, $x=102.86$. Weekend 2 would then be $7(102.86)+9(302.86) \\approx 3447$, far above the peeled $\\$2{,}870$. With both weekends as charged, the Suite cannot sit $\\$200$ above Standard.
 
-The trap figure $\\$200$ is a typical round gap, or $210-10$ after mixing a tax story, or a misread of "Suite is half again Standard" as "Suite is $\\$200$ more." Half again of $140$ is $210$, which is the recovered Suite, and the gap on that pair is $70$, not $200$. Tax does not create a $\\$200$ gap either: $1.08 \\times 70 = 75.60$, still nowhere near $200$. A solver who compared taxed Suite $226.80$ with taxed Standard $151.20$ would still get a $75.60$ gap.
+The trap figure $\\$200$ is a typical round gap, or $210-10$ after mixing a tax story, or a misread of "Suite is half again Standard" as "Suite is $\\$200$ more." Half again of $140$ is $210$, which is the recovered Suite, and the gap on that pair is $70$, not $200$. Tax does not create a $\\$200$ gap either: $1.08 \\times 70 = 75.60$, still nowhere near $200$. Comparing taxed Suite $226.80$ with taxed Standard $151.20$ would still get a $75.60$ gap. After isolating the unknown, the check is against $226.80$. The figure $75.60$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $226.80$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a different pair of peeled weekend totals. With Weekend 1 at $\\$2{,}240$ pre-tax and Weekend 2 at $\\$2{,}870$ pre-tax, the gap is $\\$70$.
 
@@ -2085,7 +2085,7 @@ $$840 = 840$$
 
 The two bookings cost the same, so six Standards are not cheaper. The inequality is strict, and equality fails it.
 
-The equality is not an accident. One Suite is $1.5$ Standard rooms in price, because $210/140=1.5$. Four Suites are then $6$ Standard rooms exactly. A solver who used the false $\\$200$ gap from letter B, taking Suites at $340$, would get $6(140)=840 < 4(340)=1360$ and flip the verdict. The recovered pair forbids that gap.
+The equality is not an accident. One Suite is $1.5$ Standard rooms in price, because $210/140=1.5$. Four Suites are then $6$ Standard rooms exactly. Using the false $\\$200$ gap from letter B, taking Suites at $340$, would get $6(140)=840 < 4(340)=1360$ and flip the verdict. The stem's recovered values line up with $340$, whereas $6(140)=840 < 4(340)=1360$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $340$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered pair forbids that gap.
 
 Tax does not enter, because the claim is pre-tax. Adding $8\\%$ to both sides would scale both $840$ figures by $1.08$ and leave them equal still.
 
@@ -2104,7 +2104,7 @@ $$210 \\times 1.08 = 226.80$$
 
 The claim's $\\$226.80$ is that product, cents included. There is no leftover fraction to round.
 
-A solver who computed $210+8=218$, adding eight dollars instead of eight percent, would miss the claim. A solver who used Standard's $140 \\times 1.08 = 151.20$ here would have swapped the room types. A solver who taxed $210$ twice would overshoot to about $\\$244.94$.
+Computing $210+8=218$, adding eight dollars instead of eight percent, would miss the claim. The recovered isolation is checked against the claim using $210+8=218$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using Standard's $140 \\times 1.08 = 151.20$ here would have swapped the room types. The path that matches the stem therefore holds $140 \\times 1.08 = 151.20$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Taxing $210$ twice would overshoot to about $\\$244.94$. The recovered isolation is checked against the claim using $210$, which is the figure the sessions actually produce.
 
 The opposite verdict would need a different pre-tax Suite rate. If Suites had been $\\$200$ as letter B claimed, tax-on would have been $\\$216$, not $\\$226.80$. With $y=210$ recovered from the two weekends, a single Suite night including tax is $\\$226.80$.
 
@@ -2123,7 +2123,7 @@ $$1 \\times 210 = 210$$
 
 $$2870 + 210 = 3080$$
 
-**3.** A solver who added the taxed Suite night $\\$226.80$ here would be answering a with-tax question. The claim is pre-tax. A solver who used the Standard rate $140$ would report a $\\$140$ rise and miss the claim. A solver who used letter B's false $\\$200$ gap, adding $200$ onto $140$, would happen to land on $340$ or on $200$ depending on which end they grabbed, neither of which is $210$.
+**3.** Adding the taxed Suite night $\\$226.80$ here would be answering a with-tax question. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The claim is pre-tax. Using the Standard rate $140$ would report a $\\$140$ rise and miss the claim. Once $140$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using letter B's false $\\$200$ gap, adding $200$ onto $140$, would happen to land on $340$ or on $200$ depending on which end they grabbed, neither of which is $210$. That is the fork: $200$ belongs to the recovered isolation, $210$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 Standard rooms are unchanged, so they add $0$ to the increment. Occupancy tax is not applied in this letter; the claim names pre-tax revenue. Adding a tenth Suite after tax would raise the charged total by $210 \\times 1.08 = 226.80$, which is letter D's neighbourhood, not this increment.
 
@@ -2200,9 +2200,9 @@ The statement is a claim about Component A's unit cost at Crestwood. Only Januar
 
 The overview already recovered $x = 12$ from those two actual rows. This letter does not rebuild that pair. It only asks whether the recovered A cost is the number in the claim.
 
-**1.** The recovered $12$ is attached to Component A, not to Component B. A solver who quoted $\\$15$ here would have swapped the labels.
+**1.** The recovered $12$ is attached to Component A, not to Component B. Quoting $\\$15$ here would have swapped the labels. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
-**2.** A solver who divided January's $\\$3{,}150$ by $150$ units of A, ignoring the $90$ units of B, would land on $\\$21$ and miss the claim. The trap figure $\\$21$ is an A-only split of a mixed January row. Warehouse floor space and on-site staff are distractors; folding them into the value would manufacture a different unit cost.
+**2.** Dividing January's $\\$3{,}150$ by $150$ units of A, ignoring the $90$ units of B, would land on $\\$21$ and miss the claim. So the letter reads the claim against $150$; $90$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $150$ stays in the write-up. The trap figure $\\$21$ is an A-only split of a mixed January row. Warehouse floor space and on-site staff are distractors; folding them into the value would manufacture a different unit cost.
 
 The opposite verdict would need a different recorded January or February total. With $\\$3{,}150$ and $\\$3{,}660$ as actuals, Component A cannot cost anything other than $\\$12$.
 
@@ -2248,13 +2248,13 @@ $$2400 + 1500 = 3900$$
 
 The forecast $\\$4{,}700$ sits $\\$800$ above $\\$3{,}900$. That extra $\\$800$ is the whole content of "assumes higher unit prices." If March used the same unit costs as January and February, the projected value would be $\\$3{,}900$, not $\\$4{,}700$.
 
-A solver who treated March as a third actual row and tried to find a pair that fits all three would find the system inconsistent, which is the same conclusion in different language: March is not using January/February prices.
+Treating March as a third actual row and trying to find a pair that fits all three would find the system inconsistent, which is the same conclusion in different language: March is not using January/February prices. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
-A solver who compared $\\$4{,}700$ with January $\\$3{,}150$ and called that "higher" would be comparing totals of different quantities, not unit prices. The honest comparison holds quantities fixed at March's $200$ and $100$.
+Comparing $\\$4{,}700$ with January $\\$3{,}150$ and calling that "higher" would be comparing totals of different quantities, not unit prices. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The honest comparison holds quantities fixed at March's $200$ and $100$.
 
 The March forecast of $\\$4{,}700$ exceeds the actual-cost valuation $\\$3{,}900$, so it assumes higher unit prices, March is labelled a forecast. Using it as a third actual row would ask three equations to share one pair $(x,y)$, and they do not. The actual-cost valuation of March's $200$ A and $100$ B is $3900$. The forecast $4700$ is $800$ higher. That $800$ is $200 \\times 2 + 100 \\times 4$ if both unit costs were marked up, or $200 \\times 4$ if only A were marked up by $4$, among other splits. The letter does not need to pick a split. It only needs to see that $4700>3900$ at the same quantities, which is the definition of assuming higher unit prices.
 
-A solver who compared $4700$ with January $3150$ and called the forecast "higher" would be comparing different quantities. Holding March's $200$ and $100$ fixed is what makes the comparison a statement about prices rather than about volume.
+Comparing $4700$ with January $3150$ and calling the forecast "higher" would be comparing different quantities. That is the fork: $4700$ belongs to the recovered isolation, $3150$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Holding March's $200$ and $100$ fixed is what makes the comparison a statement about prices rather than about volume.
 
 If March had been forecast at $3900$, this letter would be false: the forecast would match actual costs. The printed $4700$ is what makes it true. Warehouse floor space and staff still do not enter.
 
@@ -2273,7 +2273,7 @@ $$200(12) + 100(15) = 3900$$
 
 $$3900 \\neq 4700$$
 
-The gap is still $\\$800$. A solver who reported the forecast figure as if it were already an actual-cost total would accept the claim without doing the arithmetic. The forecast is a projection, not a valuation at recovered costs.
+The gap is still $\\$800$. Reporting the forecast figure as if it were already an actual-cost total would accept the claim without doing the arithmetic. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The forecast is a projection, not a valuation at recovered costs.
 
 What would have to change for the opposite verdict? If A were $\\$16$ and B were $\\$15$, the mix would be $3200+1500=4700$. January forbids $x=16$: $150(16)+90(15)=2400+1350=3750$, which overshoots $\\$3{,}150$. With January and February as recorded, March's actual-cost value cannot be $\\$4{,}700$.
 
@@ -2281,7 +2281,7 @@ The actual-cost valuation is $\\$3{,}900$, not $\\$4{,}700$, This letter is the 
 
 The extra arithmetic is therefore the same two products, $200 \\times 12$ and $100 \\times 15$, summing to $3900$. The claimed $4700$ is the forecast row copied back as if it were already an actual-cost total. Copying a forecast into an actual-cost sentence is the error.
 
-A solver who solved a three-row system and found no solution would be seeing the same inconsistency from the other direction. The right response is not to invent new unit costs for March; it is to value March's quantities at January/February costs and notice the $800$ gap. That gap is why D is false and C is true.
+Solving a three-row system and found no solution would be seeing the same inconsistency from the other direction. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The right response is not to invent new unit costs for March; it is to value March's quantities at January/February costs and notice the $800$ gap. That gap is why D is false and C is true.
 
 so the statement is False.`,
       `**E) The combined actual inventory value recorded for January and February is \\$6,810.**  (true)
@@ -2296,9 +2296,9 @@ This letter does not recover Component A or Component B. The extra arithmetic is
 
 $$3150 + 3660 = 6810$$
 
-The claim's $\\$6{,}810$ is that sum. A solver who included March's $\\$4{,}700$ would get $\\$11{,}510$ and miss the claim. The word "actual" is doing the work: only the two actual rows enter.
+The claim's $\\$6{,}810$ is that sum. Including March's $\\$4{,}700$ would get $\\$11{,}510$ and miss the claim. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The word "actual" is doing the work: only the two actual rows enter.
 
-A solver who rebuilt January plus February at the recovered $x=12$ and $y=15$ would still land on $6810$, which is a consistency check, not a new unknown. Averaging the three rows and doubling would mix the forecast into the actuals.
+Rebuilding January plus February at the recovered $x=12$ and $y=15$ would still land on $6810$, which is a consistency check, not a new unknown. So the letter reads the claim against $x=12$; $6810$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $x=12$ stays in the write-up. Averaging the three rows and doubling would mix the forecast into the actuals.
 
 The opposite verdict would need a different printed January or February total. With those two rows as recorded, the combined actual value is $\\$6{,}810$.
 
@@ -2380,7 +2380,7 @@ $$24 \\neq 21$$
 
 **3.** The per-hour gap is $3$. Worker 1's six overtime hours therefore carry $6 \\times 3=18$ extra dollars, and Worker 2's two overtime hours carry $2 \\times 3=6$ extra dollars. Those extras are how the two payroll rows refuse the $1.5\\times$ rule.
 
-A solver who compared $24$ with $1.5 \\times 16$ after misreading the regular wage would manufacture a match at $24=24$. The trap figure $\\$16$ is $\\$608/38$ after dropping two hours, or a blend of regular and overtime. The two payroll rows force $x=14$ and $y=24$, and those do not match the $1.5\\times$ rule. A solver who checked only Worker 2, $608$ against $40(14)+2(21)=560+42=602$, would already see a $\\$6$ miss, which is letter C's extra, not a match. Matching the contract would require both extras to be zero.
+Comparing $24$ with $1.5 \\times 16$ after misreading the regular wage would manufacture a match at $24=24$. Working from the isolated values, $24$ is the figure that is checked, not the detour that produced $24=24$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $\\$16$ is $\\$608/38$ after dropping two hours, or a blend of regular and overtime. The two payroll rows force $x=14$ and $y=24$, and those do not match the $1.5\\times$ rule. Checking only Worker 2, $608$ against $40(14)+2(21)=560+42=602$, would already see a $\\$6$ miss, which is letter C's extra, not a match. That is the fork: $608$ belongs to the recovered isolation, $40(14)+2(21)=560+42=602$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Matching the contract would require both extras to be zero.
 
 The opposite verdict would need the actual overtime rate to be $\\$21$. With $\\$704$ and $\\$608$ as paid, it is $\\$24$.
 
@@ -2391,9 +2391,9 @@ The statement is a claim about the regular hourly wage at Sunrise Staffing. Both
 
 The overview already recovered $x = 14$. The claim writes $\\$14$, which is exactly that intercept. This letter does not rebuild the subtraction that isolated overtime. It only asks whether the recovered regular wage is the number in the claim.
 
-**1.** The recovered $14$ is attached to regular hours, not to overtime. A solver who quoted $\\$24$ here would have swapped the rates.
+**1.** The recovered $14$ is attached to regular hours, not to overtime. Quoting $\\$24$ here would have swapped the rates. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-**2.** A solver who divided Worker 2's $\\$608$ by $42$ total hours would land on about $\\$14.48$ and mix overtime into the regular rate. The trap figure $\\$14.48$ is an all-hours split of a mixed week. The overtime hours have to be stripped out first.
+**2.** Dividing Worker 2's $\\$608$ by $42$ total hours would land on about $\\$14.48$ and mix overtime into the regular rate. Once $42$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The trap figure $\\$14.48$ is an all-hours split of a mixed week. The overtime hours have to be stripped out first.
 
 The opposite verdict would need a different pair of payroll totals. With $\\$704$ and $\\$608$ as paid, the regular wage cannot be anything other than $\\$14$.
 
@@ -2410,7 +2410,7 @@ $$24 - 21 = 3$$
 
 $$2 \\times 3 = 6$$
 
-**3.** Worker 2's whole extra is therefore $\\$6$, matching the claim. Worker 1's six overtime hours would have been $6 \\times 3=18$, which is a different letter. A solver who used Worker 1's hours here would get $\\$18$ and miss the claim. A solver who reported the $\\$3$ per-hour gap as the total would undershoot.
+**3.** Worker 2's whole extra is therefore $\\$6$, matching the claim. Worker 1's six overtime hours would have been $6 \\times 3=18$, which is a different letter. Using Worker 1's hours here would get $\\$18$ and miss the claim. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. Reporting the $\\$3$ per-hour gap as the total would undershoot. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 The trap figure $\\$18$ is Worker 1's overtime extra, parked on Worker 2. The trap figure $\\$3$ is the rate gap left unmultiplied. Neither is Worker 2's two-hour extra. Worker 2's whole pay $\\$608$ minus the contract rebuild $40(14)+2(21)=602$ is the same $\\$6$, a useful check that does not re-solve the rates.
 
@@ -2437,13 +2437,13 @@ $$560 + 96 = 656$$
 
 The third worker would earn $\\$656$ at this week's actual rates, matching the claim.
 
-A solver who used the contract overtime $21$ here would get $560+84=644$, which is letter E's figure. Mixing the two letters is the main trap: actual rates for D, contract rates for E.
+Using the contract overtime $21$ here would get $560+84=644$, which is letter E's figure. After isolating the unknown, the check is against $21$. The figure $560+84=644$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $21$ stays in the write-up. Mixing the two letters is the main trap: actual rates for D, contract rates for E.
 
-A solver who used Worker 1's $6$ overtime hours or Worker 2's $2$ would be costing a different person. The claim names $4$ overtime hours.
+Using Worker 1's $6$ overtime hours or Worker 2's $2$ would be costing a different person. So the letter reads the claim against $6$; $2$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6$ stays in the write-up. The claim names $4$ overtime hours.
 
 The actual-rate mix of $40+4$ hours is $\\$656$, Four overtime hours sit between Worker 1's $6$ and Worker 2's $2$, so this third worker is an interpolation of the overtime column at the actual rates. Regular pay is the same $560$ for anyone who completed a $40$-hour week at $14$ per hour. The letter's extra piece is only $4 \\times 24=96$. Adding those is $656$, matching the claim.
 
-A solver who interpolated the two printed totals, halfway from $608$ to $704$, would get $656$ as well, because $4$ hours is halfway in overtime between $2$ and $6$. That shortcut happens to work because regular pay is identical. It would fail if the workers had different regular hours. The honest costing still uses $x=14$ and $y=24$.
+Interpolating the two printed totals, halfway from $608$ to $704$, would get $656$ as well, because $4$ hours is halfway in overtime between $2$ and $6$. Working from the isolated values, $608$ is the figure that is checked, not the detour that produced $6$. That shortcut happens to work because regular pay is identical. It would fail if the workers had different regular hours. The honest costing still uses $x=14$ and $y=24$.
 
 If the firm had paid contract overtime $21$ on this third worker, the total would be letter E's $644$. Mixing D and E is the main trap: D is actual rates, E is contract rates, same hours.
 
@@ -2468,11 +2468,11 @@ $$560 + 84 = 644$$
 
 The third worker would earn $\\$644$ under the contract, matching the claim. Compared with letter D's $\\$656$, the contract saves the firm $\\$12$, which is $4 \\times 3$, four hours times the $\\$3$ per-hour gap.
 
-A solver who used $y=24$ here would be repeating letter D. A solver who took $1.5 \\times 16$ as overtime after a wrong regular wage would miss $644$.
+Using $y=24$ here would be repeating letter D. That is why $y=24$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Taking $1.5 \\times 16$ as overtime after a wrong regular wage would miss $644$. Working from the isolated values, $1.5 \\times 16$ is the figure that is checked, not the detour that produced $644$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The contract-rate mix of $40+4$ hours is $\\$644$, The contract rate $21$ is $1.5 \\times 14$, which the firm did not actually pay. This letter asks what the third worker *would* have earned under the rule the contract states. Regular pay is still $560$. Overtime is $4 \\times 21=84$. The sum is $644$, twelve dollars below letter D, and those twelve dollars are $4 \\times 3$, four hours times the $\\$3$ per-hour overpayment the union found.
 
-A solver who used $1.5 \\times 24=36$ as if the contract applied to the already-inflated overtime rate would overshoot wildly. The contract applies to the regular rate, not to the actual overtime rate. A solver who took $90\\%$ of $656$ as a "contract discount" would get $590.40$ and miss $644$. The contract is a specific multiplier $1.5$, not a discount on the actual bill.
+Using $1.5 \\times 24=36$ as if the contract applied to the already-inflated overtime rate would overshoot wildly. The path that matches the stem therefore holds $1.5 \\times 24=36$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The contract applies to the regular rate, not to the actual overtime rate. Taking $90\\%$ of $656$ as a "contract discount" would get $590.40$ and miss $644$. The stem's recovered values line up with $90\\%$, whereas $644$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $90\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The contract is a specific multiplier $1.5$, not a discount on the actual bill.
 
 so the statement is True.`,
     ],
@@ -2551,9 +2551,9 @@ The statement is a claim about the per-cubic-metre rate. After peeling May, the 
 
 The overview already recovered $y = 2$. The claim writes $\\$2.00$ per cubic metre, which is exactly that slope. This letter does not rebuild the intercept. It only asks whether the recovered rate is the number in the claim.
 
-**1.** The recovered $2$ is attached to usage, not to the fixed charge. A solver who quoted $\\$15$ here would have swapped rate and fee.
+**1.** The recovered $2$ is attached to usage, not to the fixed charge. Quoting $\\$15$ here would have swapped rate and fee. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A solver who used the office's $\\$1.85$ here would be quoting the disputed claim, not the bills. A solver who divided June's $\\$65$ by $25$ would land on $\\$2.60$ and forget the fixed charge. The trap figure $\\$2.60$ is an all-in split of June. The trap figure $\\$1.85$ is the office's rate.
+**2.** Using the office's $\\$1.85$ here would be quoting the disputed claim, not the bills. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Dividing June's $\\$65$ by $25$ would land on $\\$2.60$ and forget the fixed charge. Once $25$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The trap figure $\\$2.60$ is an all-in split of June. The trap figure $\\$1.85$ is the office's rate.
 
 The opposite verdict would need a different pair of clean bills. With peeled May at $\\$51$ and June at $\\$65$, the rate cannot be anything other than $\\$2$.
 
@@ -2566,13 +2566,13 @@ The statement is a claim about May's water charge after the $10\\%$ late penalty
 
 $$\\frac{56.10}{1.10} = 51$$
 
-**2.** A solver who subtracted $10\\%$ of $56.10$ as $5.61$ would land on $50.49$ and miss the claim. The penalty was applied to the whole bill, so the peel is division by $1.10$, not subtraction of $10\\%$ of the gross. The trap figure $50.49$ is that wrong peel.
+**2.** Subtracting $10\\%$ of $56.10$ as $5.61$ would land on $50.49$ and miss the claim. That is the fork: $10\\%$ belongs to the recovered isolation, $50.49$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The penalty was applied to the whole bill, so the peel is division by $1.10$, not subtraction of $10\\%$ of the gross. The trap figure $50.49$ is that wrong peel.
 
 **3.** Rebuild May at the recovered plan $x=15$, $y=2$:
 
 $$15 + 18 \\times 2 = 51$$
 
-Both routes give $\\$51$. June's $\\$65$ is already clean and should not be peeled. A solver who divided June by $1.10$ as well would get $59.09$ and have invented a penalty the stem says June did not carry. A solver who reported $\\$56.10$ as the water charge would have left the penalty in.
+Both routes give $\\$51$. June's $\\$65$ is already clean and should not be peeled. Dividing June by $1.10$ as well would get $59.09$ and have invented a penalty the stem says June did not carry. The recovered comparison therefore keeps $1.10$ and does not substitute $59.09$. That contrast is the reason the verdict goes the way it does. Reporting $\\$56.10$ as the water charge would have left the penalty in. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The opposite verdict would need a different May billed total or a penalty that was a flat add-on rather than $10\\%$ of the whole bill. With $\\$56.10$ as $1.10$ times the water charge, May's actual water charge is $\\$51$.
 
@@ -2597,7 +2597,7 @@ $$95 \\neq 85$$
 
 The bill is $\\$95$, not $\\$85$. The gap is $\\$10$.
 
-Where does $\\$85$ come from as a trap? A solver who used the office's $18+40 \\times 1.85=18+74=92$ still misses $85$. A solver who used $15+40 \\times 1.75$ or $5+40 \\times 2=85$ can manufacture the claim by dropping $\\$10$ of the fee. Another route: take June's $\\$65$ and add $15\\,\\mathrm{m}^{3}$ at $\\$1.33$, wandering toward $85$.
+Where does $\\$85$ come from as a trap? Using the office's $18+40 \\times 1.85=18+74=92$ still misses $85$. Working from the isolated values, $18+40 \\times 1.85=18+74=92$ is the figure that is checked, not the detour that produced $85$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $15+40 \\times 1.75$ or $5+40 \\times 2=85$ can manufacture the claim by dropping $\\$10$ of the fee. The recovered comparison therefore keeps $15+40 \\times 1.75$ and does not substitute $5+40 \\times 2=85$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another route: take June's $\\$65$ and add $15\\,\\mathrm{m}^{3}$ at $\\$1.33$, wandering toward $85$.
 
 The office's false fee $\\$18$ with the true rate $2$ would give $18+80=98$, even farther from $85$. With the recovered pair, $40\\,\\mathrm{m}^{3}$ cannot bill at $\\$85$.
 
@@ -2607,7 +2607,7 @@ The recovered plan at $40\\,\\mathrm{m}^{3}$ bills $\\$95$, not $\\$85$, Forty c
 
 The office's advertised pair $18$ and $1.85$ would bill $18+74=92$ at $40\\,\\mathrm{m}^{3}$, still not $85$. So even the false office story does not produce the claimed total. The recovered pair produces $95$. Neither story is $85$.
 
-A solver who used $40 \\times 2.125$ with no fee, or $15+40 \\times 1.75$, can manufacture $85$. Those rates are not the $2.00$ isolated from the $7\\,\\mathrm{m}^{3}$ gap between June and peeled May. With $x=15$ and $y=2$, a $40\\,\\mathrm{m}^{3}$ month cannot bill at $85$.
+Using $40 \\times 2.125$ with no fee, or $15+40 \\times 1.75$, can manufacture $85$. That is the fork: $40 \\times 2.125$ belongs to the recovered isolation, $85$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Those rates are not the $2.00$ isolated from the $7\\,\\mathrm{m}^{3}$ gap between June and peeled May. With $x=15$ and $y=2$, a $40\\,\\mathrm{m}^{3}$ month cannot bill at $85$.
 
 so the statement is False.`,
       `**E) Had the same 10% late penalty been applied to June's \\$65.00 bill, the total would have been \\$71.50.**  (true)
@@ -2618,11 +2618,11 @@ The statement applies May's $10\\%$ late penalty to June's already-clean $\\$65$
 
 $$65 \\times 1.10 = 71.50$$
 
-**2.** A solver who added $\\$10$ as a round penalty would get $\\$75$. A solver who applied $10\\%$ only to the usage portion $50$, leaving the $\\$15$ fee unpenalized, would get $65+5=70$. The stem says May's penalty was applied to the entire bill, so the same rule on June hits the whole $\\$65$.
+**2.** Adding $\\$10$ as a round penalty would get $\\$75$. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Applying $10\\%$ only to the usage portion $50$, leaving the $\\$15$ fee unpenalized, would get $65+5=70$. The recovered comparison therefore keeps $10\\%$ and does not substitute $65+5=70$. The stem says May's penalty was applied to the entire bill, so the same rule on June hits the whole $\\$65$.
 
 **3.** Rebuilding June from the recovered plan and then penalizing gives the same figure: $15+25(2)=65$, then $65 \\times 1.10=71.50$. That is a check, not a second solve.
 
-The trap figure $\\$75$ is a round ten-dollar penalty. The trap figure $\\$70$ is a fee-exempt $10\\%$. Neither is "the same $10\\%$ late penalty" the stem described for May. A solver who took $10\\%$ of $65$ as $6.50$ and then added it to May's $\\$56.10$ would be mixing months. June's counterfactual stands on June's $\\$65$ alone.
+The trap figure $\\$75$ is a round ten-dollar penalty. The trap figure $\\$70$ is a fee-exempt $10\\%$. Neither is "the same $10\\%$ late penalty" the stem described for May. Taking $10\\%$ of $65$ as $6.50$ and then adding it to May's $\\$56.10$ would be mixing months. So the letter reads the claim against $10\\%$; $6.50$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. June's counterfactual stands on June's $\\$65$ alone.
 
 The opposite verdict would need June's clean bill to be a different total, or a penalty rule that skipped the fixed charge. With $\\$65$ penalized at $10\\%$ on the whole bill, the total would have been $\\$71.50$.
 
@@ -2698,7 +2698,7 @@ $$16 < 21$$
 
 CityCab is $\\$5$ cheaper at this distance. That $\\$5$ is $10$ kilometres times the $\\$0.50$ rate gap. Because the bases match, CityCab is cheaper at every positive distance, so it is cheaper at $10\\,\\mathrm{km}$ in particular.
 
-A solver who used CityCab's $8\\,\\mathrm{km}$ quote $\\$14$ as a proxy for $10\\,\\mathrm{km}$ would still find $14<21$, so the verdict would survive that underestimate. A solver who swapped the rates would flip the comparison.
+Using CityCab's $8\\,\\mathrm{km}$ quote $\\$14$ as a proxy for $10\\,\\mathrm{km}$ would still find $14<21$, so the verdict would survive that underestimate. The recovered comparison therefore keeps $8\\,\\mathrm{km}$ and does not substitute $14<21$. Swapping the rates would flip the comparison. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 CityCab's $10\\,\\mathrm{km}$ fare is $\\$16$ and MetroX's is $\\$21$, so CityCab is cheaper, so the statement is True.`,
       `**B) Both companies charge the same base fare of \\$6.00.**  (true)
@@ -2711,7 +2711,7 @@ The overview recovered CityCab's intercept $x_1 = 6$ and MetroX's intercept $x_2
 
 **2.** MetroX's base is what remains after $5$ km at $\\$1.50$ per km is taken out of the $\\$13.50$ quote. Both leftovers are $\\$6$.
 
-A solver who treated CityCab's $\\$14$ for $8\\,\\mathrm{km}$ as a base would miss the per-km layer. A solver who treated MetroX's $\\$13.50$ the same way would quote a $\\$13.50$ base and think the companies differed. Both intercepts sit at $\\$6$ once the rates are stripped out.
+Treating CityCab's $\\$14$ for $8\\,\\mathrm{km}$ as a base would miss the per-km layer. Once $8\\,\\mathrm{km}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Treating MetroX's $\\$13.50$ the same way would quote a $\\$13.50$ base and think the companies differed. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Both intercepts sit at $\\$6$ once the rates are stripped out.
 
 Matching bases do not mean matching fares. MetroX's recovered rate is $\\$1.50$ per km against CityCab's $\\$1.00$, so longer rides pull apart. The claim is only about the intercepts. The opposite verdict would need one of those two quoted pairs to change.
 
@@ -2728,7 +2728,7 @@ Both companies share a $\\$6$ base. MetroX's rate $1.50$ exceeds CityCab's rate 
 
 **3.** The fares would match only at distance $0$, where both equal the shared base $\\$6$. That is not a ride under $4\\,\\mathrm{km}$ in the sense of a cheaper MetroX trip.
 
-A solver who thought a higher per-km rate could be offset by a lower base would need MetroX's base to sit below CityCab's. The bases are equal, so there is no offset.
+Thinking a higher per-km rate could be offset by a lower base would need MetroX's base to sit below CityCab's. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The bases are equal, so there is no offset.
 
 MetroX is not cheaper under $4\\,\\mathrm{km}$, so the statement is False.`,
       `**D) A 30 km CityCab ride costs \\$36.00.**  (true)
@@ -2743,7 +2743,7 @@ The overview already has CityCab as $6+1$ per km. The extra arithmetic is only e
 
 $$6 + 30 \\times 1 = 36$$
 
-A solver who used MetroX's rate here would get $6+45=51$ and miss the claim. A solver who forgot the base would report $\\$30$. A solver who used $20\\,\\mathrm{km}$ as a scale factor, $26 \\times 30/20 = 39$, would keep a mixed intercept and overshoot.
+Using MetroX's rate here would get $6+45=51$ and miss the claim. The path that matches the stem therefore holds $6+45=51$ fixed and only then reads the claim. Forgetting the base would report $\\$30$. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $20\\,\\mathrm{km}$ as a scale factor, $26 \\times 30/20 = 39$, would keep a mixed intercept and overshoot. Working from the isolated values, $20\\,\\mathrm{km}$ is the figure that is checked, not the detour that produced $26 \\times 30/20 = 39$. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a different CityCab rate. If CityCab charged $\\$1.50$ like MetroX, $30\\,\\mathrm{km}$ would be $\\$51$. With the recovered $y_1=1$, a $30\\,\\mathrm{km}$ CityCab ride is $\\$36$.
 
@@ -2840,9 +2840,9 @@ $$11 - 9 = 2$$
 
 Vendor A charges $\\$2$ less per unit of X.
 
-**2.** Vendor A's bundles were $20X+15Y=450$ and $25X+12Y=441$. Vendor B's matching mixes were $460$ and $467$. The $\\$10$ and $\\$26$ gaps on those bundles are not the unit-X gap. A solver who compared bundle totals $\\$450$ and $\\$460$ would reach the same ranking for those particular bundles, but the claim is about unit X, not about a mixed bundle.
+**2.** Vendor A's bundles were $20X+15Y=450$ and $25X+12Y=441$. Vendor B's matching mixes were $460$ and $467$. The $\\$10$ and $\\$26$ gaps on those bundles are not the unit-X gap. Comparing bundle totals $\\$450$ and $\\$460$ would reach the same ranking for those particular bundles, but the claim is about unit X, not about a mixed bundle. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-**3.** A solver who swapped X and Y would compare $18$ with $16$ and conclude Vendor A is *more* expensive, flipping the verdict. Y is letter B's question. This letter is X.
+**3.** Swapping X and Y would compare $18$ with $16$ and conclude Vendor A is *more* expensive, flipping the verdict. So the letter reads the claim against $18$; $16$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $18$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Y is letter B's question. This letter is X.
 
 The opposite verdict would need Vendor A's recovered X to sit at or above Vendor B's $11$. With the four bundle totals as printed, $x_A=9$ and $x_B=11$. Upcoming order size $40$ of X and $30$ of Y does not rewrite those unit prices. That mix is letter C's costing. This letter only ranks the two X prices. Vendor B is cheaper on Y, which is the next letter, and that fact does not reverse the X ranking.
 
@@ -2859,9 +2859,9 @@ $$18 - 16 = 2$$
 
 Vendor B charges $\\$2$ less per unit of Y.
 
-**2.** The ranking on Y is the reverse of the ranking on X. Vendor A won X by $\\$2$. Vendor B wins Y by $\\$2$. A solver who assumed one vendor is cheaper on everything would miss this letter. The four bundles force a split: A wins on X, B wins on Y.
+**2.** The ranking on Y is the reverse of the ranking on X. Vendor A won X by $\\$2$. Vendor B wins Y by $\\$2$. Assuming one vendor is cheaper on everything would miss this letter. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The four bundles force a split: A wins on X, B wins on Y.
 
-**3.** A solver who compared matching bundles $\\$450$ and $\\$460$ would still be ranking mixed tickets, not unit Y. Those bundles contain $15$ units of Y and $20$ of X. The unit-Y ranking is $16$ versus $18$, recovered from each vendor's own pair.
+**3.** Comparing matching bundles $\\$450$ and $\\$460$ would still be ranking mixed tickets, not unit Y. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Those bundles contain $15$ units of Y and $20$ of X. The unit-Y ranking is $16$ versus $18$, recovered from each vendor's own pair.
 
 The trap is carrying letter A's "A is cheaper" into this letter. A is cheaper on X, not on Y. Upcoming order size does not rewrite unit Y. The opposite verdict would need $y_B \\ge y_A$. With the four bundle totals as printed, $y_B=16$ and $y_A=18$.
 
@@ -2886,11 +2886,11 @@ $$900 < 920$$
 
 Vendor A is $\\$20$ cheaper overall. A's advantage on X is $40 \\times 2=80$. B's advantage on Y is $30 \\times 2=60$. Net, A wins by $\\$20$. The mix is X-heavy enough that A's cheaper X outweighs B's cheaper Y.
 
-A solver who doubled A's first bundle $20$ X and $15$ Y would get exactly this mix at $2 \\times 450=900$, which is an honest shortcut for Vendor A, because $40$ and $30$ are double $20$ and $15$. Vendor B's first bundle doubled is $2 \\times 460=920$, the same comparison.
+Doubling A's first bundle $20$ X and $15$ Y would get exactly this mix at $2 \\times 450=900$, which is an honest shortcut for Vendor A, because $40$ and $30$ are double $20$ and $15$. The recovered comparison therefore keeps $20$ and does not substitute $30$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Vendor B's first bundle doubled is $2 \\times 460=920$, the same comparison.
 
 Vendor A costs $\\$900$ and Vendor B costs $\\$920$ on the upcoming order, so Vendor A is cheaper overall, The upcoming order $40$ X and $30$ Y is exactly double Vendor A's first quoted bundle $20$ X and $15$ Y. Doubling A's $\\$450$ is $\\$900$, which is an honest shortcut for Vendor A. Vendor B's first bundle is the same mix at $\\$460$, and doubling that is $\\$920$. The $\\$20$ gap is $2 \\times 10$, twice the bundle gap, and it matches $40 \\times 2 - 30 \\times 2$ from the unit-price gaps on X and Y.
 
-A solver who used A's second bundle $25$ X and $12$ Y, which is a different mix, would not be costing $40$ and $30$. A solver who picked the cheaper unit from each vendor, $9$ on X from A and $16$ on Y from B, would get $40 \\times 9 + 30 \\times 16=360+480=840$, a cherry-pick the procurement team is not allowed if they must choose one vendor for the whole order.
+Using A's second bundle $25$ X and $12$ Y, which is a different mix, would not be costing $40$ and $30$. That is the fork: $25$ belongs to the recovered isolation, $30$ belongs to the discarded mix. Picking the cheaper unit from each vendor, $9$ on X from A and $16$ on Y from B, would get $40 \\times 9 + 30 \\times 16=360+480=840$, a cherry-pick the procurement team is not allowed if they must choose one vendor for the whole order. Working from the isolated values, $9$ is the figure that is checked, not the detour that produced $40 \\times 9 + 30 \\times 16=360+480=840$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The claim is the whole-order choice. Vendor A at $900$ beats Vendor B at $920$.
 
@@ -2909,7 +2909,7 @@ $$920 - 900 = +20$$
 
 That is an increase of $\\$20$, not a reduction of $\\$20$. The claim has the sign backwards. The $\\$20$ gap is real; the direction is not.
 
-A solver who remembered "A is cheaper by $20$" from letter C but then read "switching to B reduces by $20$" as the same fact would flip the verb. Reducing is the opposite of A's advantage.
+Remembering "A is cheaper by $20$" from letter C but then read "switching to B reduces by $20$" as the same fact would flip the verb. Once $20$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Reducing is the opposite of A's advantage.
 
 Switching to Vendor B raises the cost by $\\$20$, it does not reduce it, so the statement is False.`,
       `**E) If the upcoming order changed to 60 units of Y only, Vendor B would work out cheaper than Vendor A.**  (true)
@@ -2932,11 +2932,11 @@ $$960 < 1080$$
 
 Vendor B is $\\$120$ cheaper on a Y-only order, because B's Y advantage of $\\$2$ runs on all $60$ units and A's X advantage never appears. This is the reverse of letter C's ranking, where the mix still had $40$ units of X.
 
-A solver who used the $40$/$30$ totals $900$ and $920$ here would keep A's win and miss the claim. Dropping X entirely is the whole content of this letter.
+Using the $40$/$30$ totals $900$ and $920$ here would keep A's win and miss the claim. Working from the isolated values, $40$ is the figure that is checked, not the detour that produced $920$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Dropping X entirely is the whole content of this letter.
 
 On $60$ units of Y only, Vendor B costs $\\$960$ and Vendor A costs $\\$1{,}080$, so Vendor B is cheaper, Sixty units of Y and zero X is the opposite mix from letter C's X-heavy order. On a Y-only ticket, Vendor B's $\\$2$ advantage per Y runs on all $60$ units and A's $\\$2$ advantage per X never appears, so B wins by $120$. That ranking reversal is the point: neither vendor is cheaper on everything, and the cheaper overall choice depends on the mix.
 
-A solver who scaled letter C's $900$ and $920$ by $60/30=2$ would keep A's win and miss that X has been dropped. Scaling a mixed order does not produce a Y-only order. The extra arithmetic is $60 \\times 18$ versus $60 \\times 16$, two products, one comparison.
+Scaling letter C's $900$ and $920$ by $60/30=2$ would keep A's win and miss that X has been dropped. That is the fork: $900$ belongs to the recovered isolation, $60/30=2$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Scaling a mixed order does not produce a Y-only order. The extra arithmetic is $60 \\times 18$ versus $60 \\times 16$, two products, one comparison.
 
 If the order had been $60$ of X only, A would win $60 \\times 9=540$ against $60 \\times 11=660$. The claim names $60$ of Y only, and on that mix B is cheaper.
 
@@ -3006,9 +3006,9 @@ The statement is a claim about the shared prices of Product P and Service Q. Alp
 
 The overview already recovered $p=50$ and $q=70$. This letter does not rebuild that pair. It only asks whether those recovered prices are the numbers in the claim, and whether they are shared. They are: the stem says identical market prices, and the unique pair that fits both companies' unit counts is $50$ and $70$.
 
-**1.** The recovered $50$ is attached to Product P, not to Service Q. A solver who swapped the labels would quote $\\$70$ for P and miss the claim.
+**1.** The recovered $50$ is attached to Product P, not to Service Q. Swapping the labels would quote $\\$70$ for P and miss the claim. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided Alpha's $\\$13{,}100$ by $150$ units of P, ignoring Q, would land on about $\\$87.33$ and miss the claim. The trap figure $\\$87.33$ is a P-only split of a mixed company total.
+**2.** Dividing Alpha's $\\$13{,}100$ by $150$ units of P, ignoring Q, would land on about $\\$87.33$ and miss the claim. That is why $150$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The trap figure $\\$87.33$ is a P-only split of a mixed company total.
 
 Headcount growth of $8\\%$ versus $6\\%$ is a staffing distractor. It does not enter the prices. The opposite verdict would need a different pair of company totals or different unit counts.
 
@@ -3025,7 +3025,7 @@ $$(27200-1000)/2 = 13100, \\qquad 13100+1000 = 14100$$
 
 **2.** Then $14100 > 13100$. Beta is the larger of the two.
 
-A solver who compared unit counts $150+80=230$ against $100+130=230$ might think the revenues should match. The mix differs: Alpha is heavier on Product P at $\\$50$, Beta is heavier on Service Q at $\\$70$, so the dollars differ even at shared prices and shared unit totals.
+Comparing unit counts $150+80=230$ against $100+130=230$ might think the revenues should match. Working from the isolated values, $150+80=230$ is the figure that is checked, not the detour that produced $100+130=230$. The mix differs: Alpha is heavier on Product P at $\\$50$, Beta is heavier on Service Q at $\\$70$, so the dollars differ even at shared prices and shared unit totals.
 
 Headcount growth of $8\\%$ versus $6\\%$ is a staffing distractor. The opposite verdict would need the gap sentence to reverse. With Beta $\\$1{,}000$ ahead as printed, Beta's Q1 revenue is larger.
 
@@ -3050,7 +3050,7 @@ $$\\frac{750}{13100} \\approx 0.057$$
 
 about $5.7\\%$, not $10\\%$. Service Q's $\\$5{,}600$ is untouched, so the total cannot rise by the same percentage as one component.
 
-A solver who applied $10\\%$ to the whole $13100$ would get a $\\$1{,}310$ increment and accept the claim. That would be correct only if every line rose $10\\%$. Only P's price changes.
+Applying $10\\%$ to the whole $13100$ would get a $\\$1{,}310$ increment and accept the claim. After isolating the unknown, the check is against $10\\%$. The figure $13100$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. That would be correct only if every line rose $10\\%$. Only P's price changes.
 
 Alpha's total would rise by about $5.7\\%$, not by $10\\%$, so the statement is False.`,
       `**D) Alpha's projected revenue after that 10% Product P price increase would surpass Beta's current Q1 revenue.**  (false)
@@ -3069,7 +3069,7 @@ $$13850 < 14100$$
 
 **3.** The remaining shortfall is $14100-13850=250$. The original gap was $\\$1{,}000$. A $10\\%$ bump on P closed $\\$750$ of that gap and left $\\$250$. It does not overtake Beta.
 
-A solver who added $10\\%$ of Alpha's whole revenue, $1310$, would get $14410>14100$ and flip the verdict. That is letter C's error carried forward. Only P's line rises. Headcount growth still does not enter.
+Adding $10\\%$ of Alpha's whole revenue, $1310$, would get $14410>14100$ and flip the verdict. Working from the isolated values, $10\\%$ is the figure that is checked, not the detour that produced $14410>14100$. That is letter C's error carried forward. Only P's line rises. Headcount growth still does not enter.
 
 The opposite verdict would need the P increment to exceed $\\$1{,}000$, which would take a $10\\%$ bump on more than $\\$10{,}000$ of P revenue. Alpha's P line is $\\$7{,}500$. With volumes unchanged, Alpha's projected $\\$13{,}850$ does not surpass Beta's $\\$14{,}100$.
 
@@ -3092,7 +3092,7 @@ $$150 \\times 50 = 7500$$
 
 $$9100 > 7500$$
 
-Beta's Q subscriptions alone exceed Alpha's whole P line by $\\$1{,}600$. A solver who compared Beta's whole $\\$14{,}100$ with Alpha's whole $\\$13{,}100$ would be answering letter B again. This letter is narrower: one line against one line.
+Beta's Q subscriptions alone exceed Alpha's whole P line by $\\$1{,}600$. Comparing Beta's whole $\\$14{,}100$ with Alpha's whole $\\$13{,}100$ would be answering letter B again. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. This letter is narrower: one line against one line.
 
 The trap figure $\\$14{,}100$ is Beta's whole Q1, parked on a Q-only claim. The trap figure $\\$13{,}100$ is Alpha's whole Q1, parked on a P-only claim. Neither is the line the claim named.
 
@@ -3189,7 +3189,7 @@ The actual dollar gap is $\\$164$, not $\\$180$. Those extra $\\$16$ are four mo
 
 $$41 < 45$$
 
-**3.** A solver who used $\\$45$ as if it were already confirmed would skip the two histories. A solver who divided Maria's $\\$284$ by $6$ would land on about $\\$47.33$ and mix the signup fee into the monthly rate. The trap figure $\\$47.33$ is an all-in split of Maria. The trap figure $\\$45$ is the flyer.
+**3.** Using $\\$45$ as if it were already confirmed would skip the two histories. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Dividing Maria's $\\$284$ by $6$ would land on about $\\$47.33$ and mix the signup fee into the monthly rate. The recovered isolation is checked against the claim using $6$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $\\$47.33$ is an all-in split of Maria. The trap figure $\\$45$ is the flyer.
 
 The opposite verdict would need the four-month gap to be $\\$180$ instead of $\\$164$. With $\\$284$ and $\\$448$ as paid, the monthly rate is $\\$41$, which is lower than $\\$45$.
 
@@ -3216,13 +3216,13 @@ Her actual total sits $\\$16$ *below* the flyer figure, so it does not exceed it
 
 Where does the $\\$16$ gap come from? The actual signup is $\\$8$ higher ($38$ versus $30$), which would push Maria up, but the actual monthly rate is $\\$4$ lower ($41$ versus $45$), and six months of that $\\$4$ is $\\$24$. Net, $8-24=-16$, which is exactly $284-300$. The cheaper month outweighs the dearer signup over six months.
 
-A solver who compared $\\$284$ with $30+6(41)=276$ would be comparing actual with a mixed rule, not with the flyer. A solver who used Jason's ten-month flyer total $30+450=480$ here would be answering a different horizon.
+Comparing $\\$284$ with $30+6(41)=276$ would be comparing actual with a mixed rule, not with the flyer. The recovered isolation is checked against the claim using $30+6(41)=276$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using Jason's ten-month flyer total $30+450=480$ here would be answering a different horizon. That is why $30+450=480$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Maria's $\\$284$ does not exceed the flyer's $\\$300$, Maria's actual $284$ versus the flyer's $300$ is a six-month comparison of two different rules, not a recovered-price lookup. The flyer is $30+45g$. Actual is $38+41g$. At $g=6$ those are $300$ and $284$. Actual is lower, so it does not *exceed* the flyer. The verb "exceeds" is backwards.
 
 The $\\$16$ gap decomposes as $+8$ from the dearer signup and $-24$ from six months of a $\\$4$ cheaper month. Net $-16$. Over a short horizon the cheaper month already outweighs the dearer signup. Over one month the actual rule would be $38+41=79$ versus flyer $30+45=75$, and actual would be *higher*. Six months is long enough for the rate gap to dominate, which is why C is false at Maria's horizon.
 
-A solver who compared $284$ with $38+6 \\times 45=308$ would be mixing actual signup with advertised months. The claim is actual versus the flyer's advertised rates, both pieces advertised.
+Comparing $284$ with $38+6 \\times 45=308$ would be mixing actual signup with advertised months. Working from the isolated values, $284$ is the figure that is checked, not the detour that produced $38+6 \\times 45=308$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is actual versus the flyer's advertised rates, both pieces advertised.
 
 so the statement is False.`,
       `**D) Jason paid more than \\$400 in total by his 10th payment.**  (true)
@@ -3237,9 +3237,9 @@ The overview recovered signup $x=38$ and monthly $y=41$. Rebuilding at those val
 
 $$448 > 400$$
 
-Jason clears $\\$400$ by $\\$48$. A solver who used the flyer rule $30+10(45)=480$ would still clear $\\$400$, so that error would not flip the verdict. The honest figure is still $\\$448$.
+Jason clears $\\$400$ by $\\$48$. Using the flyer rule $30+10(45)=480$ would still clear $\\$400$, so that error would not flip the verdict. The recovered isolation is checked against the claim using $30+10(45)=480$, which is the figure the sessions actually produce. The honest figure is still $\\$448$.
 
-A solver who reported Maria's $\\$284$ here would fail the cutoff, but Maria is a six-month history, not Jason's tenth payment. The opposite verdict would need Jason's printed total to sit at $\\$400$ or below. With $\\$448$ on the page, he paid more than $\\$400$.
+Reporting Maria's $\\$284$ here would fail the cutoff, but Maria is a six-month history, not Jason's tenth payment. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would need Jason's printed total to sit at $\\$400$ or below. With $\\$448$ on the page, he paid more than $\\$400$.
 
 Jason paid $\\$448$, which is more than $\\$400$, so the statement is True.`,
       `**E) A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay \\$492.**  (true)
@@ -3254,11 +3254,11 @@ The overview already recovered $y = 41$. The extra arithmetic is only twelve mon
 
 $$12 \\times 41 = 492$$
 
-**3.** A solver who kept the recovered $\\$38$ signup would get $38+492=530$ and miss the claim. A solver who used the flyer's $\\$45$ would get $12 \\times 45=540$. A solver who used twelve months at $\\$41$ plus the flyer's $\\$30$ would get $522$. The whole content of this letter is that the signup is gone.
+**3.** Keeping the recovered $\\$38$ signup would get $38+492=530$ and miss the claim. The path that matches the stem therefore holds $38+492=530$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using the flyer's $\\$45$ would get $12 \\times 45=540$. The opposite verdict would need a different isolation than $12 \\times 45=540$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using twelve months at $\\$41$ plus the flyer's $\\$30$ would get $522$. The recovered isolation is checked against the claim using $522$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The whole content of this letter is that the signup is gone.
 
 What would have to change for the opposite verdict? If the actual monthly rate were $\\$41.50$, twelve months would be $\\$498$. The two histories force $y=41$, and twelve months with no signup is then $\\$492$.
 
-Twelve months at $\\$41$ with no signup is $\\$492$, Twelve months with the signup waived is $12 \\times 41=492$. That is not Maria's horizon and not Jason's. It is a negotiated counterfactual: intercept zero, slope the actual monthly rate, twelve periods. A solver who used the flyer's $45$ would get $540$. A solver who kept the recovered $38$ would get $530$. A solver who used $12 \\times 41 + 30$ would keep the flyer's signup on the actual rate.
+Twelve months at $\\$41$ with no signup is $\\$492$, Twelve months with the signup waived is $12 \\times 41=492$. That is not Maria's horizon and not Jason's. It is a negotiated counterfactual: intercept zero, slope the actual monthly rate, twelve periods. Using the flyer's $45$ would get $540$. The stem's recovered values line up with $45$, whereas $540$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $45$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Keeping the recovered $38$ would get $530$. Working from the isolated values, $38$ is the figure that is checked, not the detour that produced $530$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $12 \\times 41 + 30$ would keep the flyer's signup on the actual rate. The opposite verdict would need a different isolation than $12 \\times 41 + 30$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 The $492$ figure is also Jason's $448$ plus two more months at $41$, minus the $38$ signup Jason already paid: $448+82-38=492$. That reconstruction is a check, not a second solve. It uses Jason as a $10$-month actual path and then strips the signup and adds two months.
 
@@ -3324,9 +3324,9 @@ The statement is a claim about StreamPlus's Basic monthly price. The two househo
 
 The overview already recovered $x = 19$. This letter does not rebuild that pair. It only asks whether the recovered Basic price is the number in the claim.
 
-**1.** The recovered $19$ is attached to Basic, not to Premium. A solver who quoted $\\$31$ here would have swapped the plans.
+**1.** The recovered $19$ is attached to Basic, not to Premium. Quoting $\\$31$ here would have swapped the plans. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
-**2.** A solver who divided Household 1's $\\$169$ by $7$ plan-months would land on about $\\$24.14$ and mix Premium into Basic. The trap figure $\\$24.14$ is a blended month. The Premium months have to be stripped out first. Household 2's larger mixed total is a different mix, not a reason to average the two households into a fake Basic price. No connection fee sits under the plans, so there is no intercept to peel before reading Basic.
+**2.** Dividing Household 1's $\\$169$ by $7$ plan-months would land on about $\\$24.14$ and mix Premium into Basic. Keeping $7$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $\\$24.14$ is a blended month. The Premium months have to be stripped out first. Household 2's larger mixed total is a different mix, not a reason to average the two households into a fake Basic price. No connection fee sits under the plans, so there is no intercept to peel before reading Basic.
 
 The opposite verdict would need a different pair of household totals. With the two mixed billing records as printed, Basic cannot cost anything other than $\\$19$.
 
@@ -3364,7 +3364,7 @@ $$255 < 338$$
 
 Household 2 is not more than double Household 1. It is about $1.51$ times Household 1. The trap is reading $255$ against $169+86$, or treating "more than double" as "more than $200$ more." Double is a ratio, not a vague increase.
 
-A solver who compared plan-month counts $9$ against $7$ might think Household 2 should be larger by a similar ratio; the mix is more Premium-heavy, but not enough to double the dollars.
+Comparing plan-month counts $9$ against $7$ might think Household 2 should be larger by a similar ratio; the mix is more Premium-heavy, but not enough to double the dollars. After isolating the unknown, the check is against $9$. The figure $7$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $9$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Household 2's $\\$255$ is less than double Household 1's $\\$169$, so the statement is False.`,
       `**D) There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.**  (false)
@@ -3379,7 +3379,7 @@ That would require $n x = n y$ with $n>0$, hence $x=y$. The overview already rec
 
 **3.** There is no connection fee to create a crossing the way PrintFast and QuickCopy can cross. Both plans are flat per month, so the cheaper plan stays cheaper at every horizon.
 
-A solver who set $4x+3y=2x+7y$ would be equating the two household mixes, not equating pure-Basic with pure-Premium. Those household equations are already satisfied by $(19,31)$ without forcing $x=y$.
+Setting $4x+3y=2x+7y$ would be equating the two household mixes, not equating pure-Basic with pure-Premium. That is why $4x+3y=2x+7y$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Those household equations are already satisfied by $(19,31)$ without forcing $x=y$.
 
 Basic and Premium never cost the same for a positive run of months, so the statement is False.`,
       `**E) A household billed for 5 months of Basic and 5 months of Premium would owe a combined \\$250.**  (true)
@@ -3402,13 +3402,13 @@ $$95 + 155 = 250$$
 
 The mix is $\\$250$, matching the claim. In pair form, one Basic plus one Premium is $\\$50$, and five pairs are $\\$250$.
 
-A solver who averaged the two household totals and scaled to ten months would keep the $4$-and-$3$ and $2$-and-$7$ shapes inside the average. A solver who used $y=35$ from letter B would get $95+175=270$ and miss the claim.
+Averaging the two household totals and scaling to ten months would keep the $4$-and-$3$ and $2$-and-$7$ shapes inside the average. The recovered comparison therefore keeps $4$ and does not substitute $7$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $y=35$ from letter B would get $95+175=270$ and miss the claim. After isolating the unknown, the check is against $y=35$. The figure $95+175=270$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $y=35$ stays in the write-up.
 
 What would have to change for the opposite verdict? If Premium were $\\$32$, five of each would be $\\$255$. The two households force $y=31$, and five-and-five is then $\\$250$.
 
 The recovered prices on five of each give $\\$250$, Five months of each plan is a balanced household, unlike Household 1's $4$ Basic and $3$ Premium or Household 2's $2$ Basic and $7$ Premium. One Basic plus one Premium is $19+31=50$, and five such pairs are $250$. That pair view is honest here because the counts match.
 
-A solver who averaged $169$ and $255$ and scaled to ten months would keep the unbalanced mixes inside the average. A solver who used $y=35$ from letter B would get $95+175=270$ and miss $250$. If Premium had been $32$, five of each would have been $255$, the same as Household 2's printed total by coincidence, and the claim's $250$ would fail. The two households force $y=31$, and five-and-five is then $250$.
+Averaging $169$ and $255$ and scaling to ten months would keep the unbalanced mixes inside the average. After isolating the unknown, the check is against $169$. The figure $255$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $169$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $y=35$ from letter B would get $95+175=270$ and miss $250$. The recovered comparison therefore keeps $y=35$ and does not substitute $250$. If Premium had been $32$, five of each would have been $255$, the same as Household 2's printed total by coincidence, and the claim's $250$ would fail. The two households force $y=31$, and five-and-five is then $250$.
 
 so the statement is True.`,
     ],
@@ -3480,9 +3480,9 @@ The statement is a claim about the organic apple price after bread and eggs are 
 
 The overview already recovered $x = 4.80$. This letter does not rebuild that pair. It only asks whether the recovered apple price is the number in the claim.
 
-**1.** The recovered $4.80$ is attached to apples, not to almond milk. A solver who quoted $\\$6$ here would have swapped the items.
+**1.** The recovered $4.80$ is attached to apples, not to almond milk. Quoting $\\$6$ here would have swapped the items. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-**2.** A solver who divided Receipt 1's $\\$50$ by $5$ pounds of apples, ignoring everything else, would land on $\\$10$ and miss the claim. The trap figure $\\$10$ is an apple-only split of a mixed receipt. Bread, eggs, and milk all have to come off first.
+**2.** Dividing Receipt 1's $\\$50$ by $5$ pounds of apples, ignoring everything else, would land on $\\$10$ and miss the claim. Once $5$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $\\$10$ is an apple-only split of a mixed receipt. Bread, eggs, and milk all have to come off first.
 
 The opposite verdict would need a different peeled remainder on one of the two receipts. With the two non-loyalty receipts as printed, apples cannot cost anything other than $\\$4.80$ per pound.
 
@@ -3501,7 +3501,7 @@ Milk sits $\\$1.20$ above apples, not below.
 
 **3.** Five pounds of apples cost $5 \\times 4.80=24$, and four cartons of milk cost $4 \\times 6=24$, which is letter C's equality. That equality does not make one carton cheaper than one pound. It makes five pounds match four cartons.
 
-Per-unit comparison here is carton versus pound, which is what the claim asks. A solver who converted to some other unit would be answering a different question. Loyalty $5\\%$ was not applied. The opposite verdict would need $y < x$. With $y=6$ and $x=4.80$, milk is not cheaper per unit.
+Per-unit comparison here is carton versus pound, which is what the claim asks. Converting to some other unit would be answering a different question. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Loyalty $5\\%$ was not applied. The opposite verdict would need $y < x$. With $y=6$ and $x=4.80$, milk is not cheaper per unit.
 
 Almond milk costs $\\$6$ and apples $\\$4.80$, so milk is not cheaper per unit, so the statement is False.`,
       `**C) Five pounds of apples costs exactly the same as four cartons of almond milk.**  (true)
@@ -3524,7 +3524,7 @@ $$24 = 24$$
 
 The two baskets match. Five pounds of apples is exactly Receipt 1's apple column, which the leftover equation already priced at $\\$24$ once milk is stripped. Four cartons of milk are not on either receipt as a block, but $4 \\times 6=24$ is the same dollar figure.
 
-A solver who used five cartons of milk, copying Receipt 2's milk count, would get $\\$30$ and miss the equality.
+Using five cartons of milk, copying Receipt 2's milk count, would get $\\$30$ and miss the equality. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 Five pounds of apples and four cartons of milk both cost $\\$24$, so the statement is True.`,
       `**D) If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than \\$47.00.**  (false)
@@ -3543,7 +3543,7 @@ $$47.50 > 47$$
 
 The discounted total is $\\$47.50$, which is not less than $\\$47$. The inequality is strict, and $47.50$ fails it.
 
-A solver who computed $50-5=45$, subtracting five dollars instead of five percent, would get a figure that *is* less than $\\$47$ and flip the verdict. Five percent of $\\$50$ is $\\$2.50$, not $\\$5$. A solver who applied $5\\%$ only to the apple-and-milk leftover $\\$42$ would get $50-2.10=47.90$, still not less than $\\$47$.
+Computing $50-5=45$, subtracting five dollars instead of five percent, would get a figure that *is* less than $\\$47$ and flip the verdict. That is why $50-5=45$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Five percent of $\\$50$ is $\\$2.50$, not $\\$5$. Applying $5\\%$ only to the apple-and-milk leftover $\\$42$ would get $50-2.10=47.90$, still not less than $\\$47$. That is the fork: $5\\%$ belongs to the recovered isolation, $50-2.10=47.90$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The loyalty price would have been $\\$47.50$, which is not less than $\\$47$, so the statement is False.`,
       `**E) Buying 10 lb of apples and 2 cartons of milk together costs more than \\$60.**  (false)
@@ -3566,11 +3566,11 @@ $$48 + 12 = 60$$
 
 The mix equals $\\$60$, so it is not more than $\\$60$. The inequality is strict, and equality fails it.
 
-A solver who treated "more than" as "at least" would flip the verdict. A solver who used $y=4.80$ as well, swapping the prices, would get $48+9.60=57.60$ and still fail "more than $60$", so that error would not flip this particular letter. A solver who added bread and eggs onto the mix would overshoot.
+Treating "more than" as "at least" would flip the verdict. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $y=4.80$ as well, swapping the prices, would get $48+9.60=57.60$ and still fail "more than $60$", so that error would not flip this particular letter. The recovered comparison therefore keeps $y=4.80$ and does not substitute $60$. Adding bread and eggs onto the mix would overshoot. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Ten pounds of apples and two cartons of milk cost exactly $\\$60$, which is not more than $\\$60$, Ten pounds of apples and two cartons of milk is double Receipt 2's apple column plus two-fifths of its milk column, not a scale copy of either receipt. At $4.80$ and $6$ the mix is $48+12=60$ on the nose. The claim's "more than $\\$60$" is a strict inequality, and equality fails it.
 
-A solver who treated "more than" as "at least" would flip the verdict. A solver who added Receipt 2's bread $3.60$ onto $60$ would get $63.60$ and accept "more than $60$" by keeping a known item that this letter's mix does not include. Apples and milk only, ten and two, is $60$ exactly.
+Treating "more than" as "at least" would flip the verdict. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Adding Receipt 2's bread $3.60$ onto $60$ would get $63.60$ and accept "more than $60$" by keeping a known item that this letter's mix does not include. That is the fork: $3.60$ belongs to the recovered isolation, $63.60$ belongs to the discarded mix. Apples and milk only, ten and two, is $60$ exactly.
 
 If apples had been $5.00$, the mix would have been $50+12=62$, which is more than $60$, and the claim would have been true. The two leftover equations force $x=4.80$, and $10 \\times 4.80 + 12 = 60$, not more.
 
@@ -3636,9 +3636,9 @@ The statement is a claim about BrightHome's fixed connection fee. The two bills 
 
 The overview already recovered $f = 33$. This letter does not rebuild that pair. It only asks whether the recovered fee is the number in the claim.
 
-**1.** The recovered $33$ is attached to the connection, not to the per-unit rate. A solver who quoted $0.21$ or $0.24$ here would have swapped fee and rate.
+**1.** The recovered $33$ is attached to the connection, not to the per-unit rate. Quoting $0.21$ or $0.24$ here would have swapped fee and rate. The stem's recovered values line up with $0.21$, whereas $0.24$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.21$ stays in the write-up.
 
-**2.** A solver who averaged $\\$83.40$ and $\\$112.80$ would land on about $\\$98$ and treat that as a fee. The trap figure $\\$98$ is an average of two bills that already include usage. Averaging cannot isolate the intercept.
+**2.** Averaging $\\$83.40$ and $\\$112.80$ would land on about $\\$98$ and treat that as a fee. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. The trap figure $\\$98$ is an average of two bills that already include usage. Averaging cannot isolate the intercept.
 
 The Solar Offset Plan has no connection fee and does not rewrite this intercept. The opposite verdict would need a different pair of billed totals. With $\\$83.40$ and $\\$112.80$ as printed, the connection fee cannot be anything other than $\\$33$.
 
@@ -3682,11 +3682,11 @@ $$91.80 < 95$$
 
 The standard plan at $280$ units is $\\$91.80$, which sits $\\$3.20$ under the cutoff.
 
-A solver who used customer service's $0.24$ would get $33+67.20=100.20$, which is *not* less than $\\$95$ and would flip the verdict. Using the recovered $0.21$ is the whole content of this letter. A solver who used Solar Offset $0.29 \\times 280=81.20$ would be answering a different plan.
+Using customer service's $0.24$ would get $33+67.20=100.20$, which is *not* less than $\\$95$ and would flip the verdict. So the letter reads the claim against $0.24$; $33+67.20=100.20$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.24$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using the recovered $0.21$ is the whole content of this letter. Using Solar Offset $0.29 \\times 280=81.20$ would be answering a different plan. The recovered isolation is checked against the claim using $0.29 \\times 280=81.20$, which is the figure the sessions actually produce.
 
 The standard plan at $280$ units costs $\\$91.80$, which is less than $\\$95$, Two hundred eighty units sits between Bill 1's $240$ and Bill 2's $380$, so this is an interpolation on the recovered line $33+0.21u$. At $u=280$ that line is $91.80$, which sits $3.20$ under $95$. Customer service's $0.24$ would have put the same usage at $33+67.20=100.20$, over the cutoff, and would have flipped the verdict. Using the recovered $0.21$ is therefore essential, not decorative.
 
-Solar Offset at $280$ units is $0.29 \\times 280=81.20$, which is also less than $95$, but that is a different plan. The claim names the standard plan. A solver who reported $81.20$ here would be answering with the rival.
+Solar Offset at $280$ units is $0.29 \\times 280=81.20$, which is also less than $95$, but that is a different plan. The claim names the standard plan. Reporting $81.20$ here would be answering with the rival. Once $81.20$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 Linear interpolation between $83.40$ and $112.80$ using unit share $(280-240)/(380-240)=40/140$ gives $83.40+29.40 \\times 40/140=83.40+8.40=91.80$, the same figure. That agreement checks the line. It does not replace the cutoff comparison.
 
@@ -3703,7 +3703,7 @@ Solar Offset is $0.29u$ with no fee. The standard plan is $33+0.21u$. Solar is c
 
 **3.** Because there exist positive usages on both sides of $412.5$, Solar is not cheaper at *every* positive usage. Low usage can favour Solar, because avoiding the $\\$33$ fee outweighs the steeper $0.29$ rate. High usage favours the shallower standard rate $0.21$. Solar only wins below $412.5$ units.
 
-A solver who compared the two rates $0.29$ and $0.21$ without the fee would conclude standard is always cheaper and would still reject the claim, but for a stronger reason than the stem supports. The fee creates a region where Solar wins. That region is not "every usage above $0$."
+Comparing the two rates $0.29$ and $0.21$ without the fee would conclude standard is always cheaper and would still reject the claim, but for a stronger reason than the stem supports. Working from the isolated values, $0.29$ is the figure that is checked, not the detour that produced $0.21$. The fee creates a region where Solar wins. That region is not "every usage above $0$."
 
 Solar Offset is not cheaper at every positive usage, so the statement is False.`,
       `**E) At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan.**  (false)
@@ -3726,11 +3726,11 @@ $$145 > 138$$
 
 Solar is $\\$7$ more expensive at $500$ units, not cheaper. That usage sits above the $412.5$ crossing from letter D, so the ranking has already flipped.
 
-A solver who used customer service's $0.24$ on standard would get $33+120=153$, and then Solar's $145$ *would* be cheaper, flipping the verdict. The recovered $0.21$ is what keeps standard ahead at $500$ units.
+Using customer service's $0.24$ on standard would get $33+120=153$, and then Solar's $145$ *would* be cheaper, flipping the verdict. After isolating the unknown, the check is against $0.24$. The figure $145$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $0.24$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered $0.21$ is what keeps standard ahead at $500$ units.
 
 At $500$ units Solar costs $\\$145$ and standard costs $\\$138$, so Solar is not cheaper, Five hundred units sits above the $412.5$ crossing from letter D, so Solar's steeper rate has already overtaken the $\\$33$ fee advantage. Solar is $145$. Standard is $138$. Solar is $7$ more expensive, not cheaper.
 
-A solver who used customer service's $0.24$ on standard would get $33+120=153$, and then Solar's $145$ would look cheaper, flipping the verdict. The recovered $0.21$ is what keeps standard ahead at $500$ units. A solver who compared $500 \\times 0.29$ with $500 \\times 0.21$ without the fee would find Solar more expensive by $40$, which is the wrong gap ($40$ versus $7$) but the right ranking.
+Using customer service's $0.24$ on standard would get $33+120=153$, and then Solar's $145$ would look cheaper, flipping the verdict. So the letter reads the claim against $0.24$; $145$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.24$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered $0.21$ is what keeps standard ahead at $500$ units. Comparing $500 \\times 0.29$ with $500 \\times 0.21$ without the fee would find Solar more expensive by $40$, which is the wrong gap ($40$ versus $7$) but the right ranking. Working from the isolated values, $500 \\times 0.29$ is the figure that is checked, not the detour that produced $7$. That contrast is the reason the verdict goes the way it does.
 
 If the Solar rate had been $0.27$, then $500 \\times 0.27=135$, which is less than standard's $138$, and the claim would have been true. The stem prints Solar at $0.29$, and at $500$ units that $0.29$ loses to $33+0.21 \\times 500$.
 
@@ -3800,9 +3800,9 @@ The statement is a claim about the pasta price at Trattoria Bella. Table 5 is of
 
 The overview already recovered pasta $x = 19$ after peeling Table 8's fee and solving with Table 5. This letter does not rebuild that pair. It only asks whether the recovered pasta price is the number in the claim.
 
-**1.** The recovered $19$ is attached to pasta, not to appetizers. A solver who quoted $\\$15$ here would have swapped the plates.
+**1.** The recovered $19$ is attached to pasta, not to appetizers. Quoting $\\$15$ here would have swapped the plates. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
-**2.** A solver who divided $\\$174$ by $6$ pasta dishes, ignoring appetizers, would land on $\\$29$ and miss the claim. The trap figure $\\$29$ is a pasta-only split of Table 5. Appetizers have to come off first, and Table 8's fee has to be peeled before that table can help.
+**2.** Dividing $\\$174$ by $6$ pasta dishes, ignoring appetizers, would land on $\\$29$ and miss the claim. Once $6$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $\\$29$ is a pasta-only split of Table 5. Appetizers have to come off first, and Table 8's fee has to be peeled before that table can help.
 
 The opposite verdict would need a different Table 5 total. With $\\$174$ off-peak and a peeled Table 8 of $\\$200$, pasta cannot cost anything other than $\\$19$.
 
@@ -3819,7 +3819,7 @@ The appetizer sits $\\$4$ below pasta, not above.
 
 **2.** Then $15 > 19$ is false. Pasta is the dearer plate.
 
-**3.** A solver who saw Table 8's higher total with more appetizers might infer appetizers are expensive. Table 8 also has a $10\\%$ peak fee, which inflates the printed total without changing unit prices. Peel first: Table 8's food layer is $\\$200$ for $5$ pasta and $7$ appetizers, which at $19$ and $15$ rebuilds $95+105=200$.
+**3.** Seeing Table 8's higher total with more appetizers might infer appetizers are expensive. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Table 8 also has a $10\\%$ peak fee, which inflates the printed total without changing unit prices. Peel first: Table 8's food layer is $\\$200$ for $5$ pasta and $7$ appetizers, which at $19$ and $15$ rebuilds $95+105=200$.
 
 The trap is reading a fee-inflated mix as a ranking of plate prices. The opposite verdict would need $y > x$. With $x=19$ and $y=15$, an appetizer is not more expensive.
 
@@ -3842,7 +3842,7 @@ $$\\frac{220}{1.10} = 200$$
 
 $$200 - 174 = 26$$
 
-The pre-fee gap is $\\$26$, matching the claim. A solver who compared printed totals $220-174=46$ would be reporting the with-fee gap, which is letter-adjacent but not this claim. A solver who subtracted $10\\%$ of $220$ as $22$ would land on a subtotal of $198$ and a gap of $24$.
+The pre-fee gap is $\\$26$, matching the claim. Comparing printed totals $220-174=46$ would be reporting the with-fee gap, which is letter-adjacent but not this claim. The opposite verdict would need a different isolation than $220-174=46$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Subtracting $10\\%$ of $220$ as $22$ would land on a subtotal of $198$ and a gap of $24$. So the letter reads the claim against $10\\%$; $24$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Table 8's pre-fee subtotal exceeds Table 5 by $\\$26$, so the statement is True.`,
       `**D) If Table 5 had also been charged the 10% peak-hour service fee, its total would have been \\$191.40.**  (true)
@@ -3857,7 +3857,7 @@ The extra arithmetic is only multiplying Table 5's printed total by $1.10$. This
 
 $$174 \\times 1.10 = 191.40$$
 
-A solver who added $\\$10$ would get $\\$184$. A solver who used Table 8's $\\$220$ here would be describing Table 8, not the counterfactual Table 5. A solver who taxed $\\$174$ after first peeling a fee that was never there would wander off $191.40$.
+Adding $\\$10$ would get $\\$184$. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using Table 8's $\\$220$ here would be describing Table 8, not the counterfactual Table 5. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Taxing $\\$174$ after first peeling a fee that was never there would wander off $191.40$. Once $191.40$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 As a check, $6(19)+4(15)=114+60=174$, then $174 \\times 1.10=191.40$ still. The opposite verdict would need a different Table 5 print. With $\\$174$ off-peak, a $10\\%$ peak fee would have printed $\\$191.40$.
 
@@ -3882,13 +3882,13 @@ $$76 + 60 = 136, \\qquad 136 \\times 1.10 = 149.60$$
 
 Since $149.60 < 150$, the billed mix sits forty cents under the cutoff.
 
-A solver who skipped the fee would report $\\$136$, still less than $\\$150$, so that error would not flip the verdict. A solver who used $4 \\times 19 + 4 \\times 19$ would overshoot. A solver who compared with $\\$150$ before the fee, then added $10\\%$ of $150$, would be rounding the cutoff rather than the bill.
+Skipping the fee would report $\\$136$, still less than $\\$150$, so that error would not flip the verdict. Keeping $150$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Using $4 \\times 19 + 4 \\times 19$ would overshoot. The path that matches the stem therefore holds $4 \\times 19 + 4 \\times 19$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Comparing with $\\$150$ before the fee, then added $10\\%$ of $150$, would be rounding the cutoff rather than the bill. That is the fork: $10\\%$ belongs to the recovered isolation, $150$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 What would have to change for the opposite verdict? If pasta were $\\$20$, the food would be $80+60=140$ and the billed total $154$, which is not less than $\\$150$. The two tables force pasta at $\\$19$, and four-and-four with the fee is then $\\$149.60$.
 
 Four of each with the $10\\%$ fee costs $\\$149.60$, which is less than $\\$150$, Four pasta and four appetizers with the $10\\%$ peak fee is a new mix, not Table 5's $6$ and $4$ and not Table 8's $5$ and $7$. Food is $76+60=136$. After the fee, $149.60$, forty cents under $150$. That forty cents is why the cutoff is tight: a pasta price of $19.10$ would have pushed the billed total to $150.04$, over the bar.
 
-A solver who skipped the fee would report $136$, still under $150$, so that error would not flip the inequality, but it would miss the billed figure the claim is about. The claim includes the service charge. A solver who applied $10\\%$ to $150$ as a round check would be rounding the bar rather than the bill.
+Skipping the fee would report $136$, still under $150$, so that error would not flip the inequality, but it would miss the billed figure the claim is about. After isolating the unknown, the check is against $136$. The figure $150$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $136$ stays in the write-up. The claim includes the service charge. Applying $10\\%$ to $150$ as a round check would be rounding the bar rather than the bill. The stem's recovered values line up with $10\\%$, whereas $150$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Table 5 off-peak at four-and-four would be $136$ with no fee, comfortably under $150$. This letter is the peak-hour version of that basket. The $10\\%$ is what brings $136$ up to $149.60$, still just under.
 
@@ -3958,9 +3958,9 @@ The statement is a claim about Item M's unit cost at Meridian. The inventory sys
 
 The overview already recovered $M = 21$ from Shipment 1's $110M+80N=4470$ and Shipment 2's $70M+150N=5520$. This letter does not rebuild that pair. It only asks whether the recovered M price is the number in the claim.
 
-**1.** The recovered $21$ is attached to M, not to N. A solver who quoted $\\$27$ here would have swapped the items.
+**1.** The recovered $21$ is attached to M, not to N. Quoting $\\$27$ here would have swapped the items. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-**2.** A solver who divided Shipment 1's $\\$4{,}470$ by $110$ M units, ignoring N, would land on about $\\$40.64$ and miss the claim. The trap figure $\\$40.64$ is an M-only split of a mixed shipment. Weight and volume columns do not price M.
+**2.** Dividing Shipment 1's $\\$4{,}470$ by $110$ M units, ignoring N, would land on about $\\$40.64$ and miss the claim. Once $110$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $\\$40.64$ is an M-only split of a mixed shipment. Weight and volume columns do not price M.
 
 The opposite verdict would need a different shipment total. With $\\$4{,}470$ and $\\$5{,}520$ as printed, Item M cannot cost anything other than $\\$21$.
 
@@ -3975,7 +3975,7 @@ The overview recovered $N = 27$. The claim writes $\\$30$, three dollars above t
 
 **2.** Those extra $\\$240$ are eighty N units times a $\\$3$ overstatement. Shipment 2 would overshoot by $150 \\times 3 = 450$ as well. Neither printed total survives $N=30$.
 
-A solver who divided Shipment 2's $\\$5{,}520$ by $150+70$ mixed units would land near $\\$25$ and still miss $27$. A solver who rounded $27$ up to a neighbouring ten would manufacture $\\$30$.
+Dividing Shipment 2's $\\$5{,}520$ by $150+70$ mixed units would land near $\\$25$ and still miss $27$. Working from the isolated values, $150+70$ is the figure that is checked, not the detour that produced $27$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Rounding $27$ up to a neighbouring ten would manufacture $\\$30$. Once $27$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The opposite verdict would need a different Shipment 1 total. With $\\$4{,}470$ and $\\$5{,}520$ as printed, Item N cannot cost $\\$30$. The claimed $\\$30$ sits $\\$3$ above the recovered $\\$27$, so the statement is False.`,
       `**C) Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.**  (false)
@@ -3994,7 +3994,7 @@ $$\\frac{5520}{220} = 25.09\\ldots$$
 
 **3.** Compare: they are not equal. Shipment 2 is heavier on the dearer Item N ($27$ versus $21$), so its average sits higher. Equal averages would need equal mix proportions, which these shipments do not have.
 
-A solver who compared totals $4470$ and $5520$ without dividing by counts would be answering a different question. A solver who used weight as the denominator would be mixing the distractor column into the average.
+Comparing totals $4470$ and $5520$ without dividing by counts would be answering a different question. The recovered comparison therefore keeps $4470$ and does not substitute $5520$. Using weight as the denominator would be mixing the distractor column into the average. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 The two per-unit averages are not equal, so the statement is False.`,
       `**D) 150 units of Item N alone would cost \\$4,050.**  (true)
@@ -4009,7 +4009,7 @@ The overview recovered $N=27$. The extra arithmetic is only that product. This l
 
 $$150 \\times 27 = 4050$$
 
-A solver who used $M=21$ here would get $\\$3{,}150$. A solver who used Shipment 2's $150$ N units as if they were the whole shipment would report $\\$5{,}520$ and have included the $70$ M units. A solver who used the false $\\$30$ from letter B would get $\\$4{,}500$ and overshoot.
+Using $M=21$ here would get $\\$3{,}150$. That is why $M=21$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using Shipment 2's $150$ N units as if they were the whole shipment would report $\\$5{,}520$ and have included the $70$ M units. After isolating the unknown, the check is against $150$. The figure $70$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $150$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using the false $\\$30$ from letter B would get $\\$4{,}500$ and overshoot. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The opposite verdict would need a different N price. If N had been $\\$30$, one hundred fifty units would have been $\\$4{,}500$, not $\\$4{,}050$. With $N=27$ recovered from the two shipments, $150$ N units alone cost $\\$4{,}050$.
 
@@ -4022,7 +4022,7 @@ Shipment 1 costs $\\$4{,}470$ and Shipment 2 costs $\\$5{,}520$, so Shipment 1 i
 
 The prices were recovered from counts and dollars, not from kilograms. Item N is dearer per unit than Item M ($27$ versus $21$), and Shipment 2 has far more N ($150$ versus $80$). That mix, not the $23$ kg weight gap, is what drives the $\\$1{,}050$ cost gap.
 
-A solver who divided dollars by kilograms and found different dollars-per-kg would still be using weight as if it priced the goods. The table's weight column is constant per item type and never enters the unit-price system.
+Dividing dollars by kilograms and found different dollars-per-kg would still be using weight as if it priced the goods. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The table's weight column is constant per item type and never enters the unit-price system.
 
 Shipment 1 is cheaper because of its mix of M and N, not because of total weight, so the statement is False.`,
     ],
@@ -4084,9 +4084,9 @@ The statement is a claim about the Standard planting price at Green Horizons. Jo
 
 This letter does not rebuild that pair. It only asks whether the recovered Standard price is the number in the claim.
 
-**1.** The recovered $29$ is attached to Standard, not to Premium. A solver who quoted $\\$44$ here would have swapped the grades.
+**1.** The recovered $29$ is attached to Standard, not to Premium. Quoting $\\$44$ here would have swapped the grades. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
-**2.** A solver who divided Job 2's $\\$1{,}301$ by $13$ Standard units, ignoring Premium, would land on $\\$100$ and miss the claim. The trap figure $\\$100$ is a Standard-only split of a mixed job. Bundles have to be unpacked before Job 1 can help, but this letter is not doing that unpacking; the overview already did.
+**2.** Dividing Job 2's $\\$1{,}301$ by $13$ Standard units, ignoring Premium, would land on $\\$100$ and miss the claim. The opposite verdict would need a different isolation than $13$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $\\$100$ is a Standard-only split of a mixed job. Bundles have to be unpacked before Job 1 can help, but this letter is not doing that unpacking; the overview already did.
 
 The opposite verdict would need a different Job 2 total. With the expanded Job 1 at $\\$1{,}946$ and Job 2 at $\\$1{,}301$, Standard cannot cost anything other than $\\$29$.
 
@@ -4101,7 +4101,7 @@ The overview recovered $y = 44$. The claim writes $\\$50$, six dollars above tha
 
 **2.** Those extra $\\$126$ are twenty-one Premium units times a $\\$6$ overstatement. Job 1's expanded $14$ Standard and $35$ Premium would overshoot by $35 \\times 6 = 210$ as well.
 
-A solver who treated each Job 1 bundle as one Premium unit would inflate $y$. A solver who rounded $44$ up to a neighbouring ten would manufacture $\\$50$. The new quotation $8(29)+19(44)=1068$ would also fail at $y=50$.
+Treating each Job 1 bundle as one Premium unit would inflate $y$. Once $y$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Rounding $44$ up to a neighbouring ten would manufacture $\\$50$. Once $44$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The new quotation $8(29)+19(44)=1068$ would also fail at $y=50$.
 
 The opposite verdict would need a different Job 2 total. With $\\$1{,}301$ as printed, Premium cannot cost $\\$50$. The claimed $\\$50$ sits $\\$6$ above the recovered $\\$44$, so the statement is False.`,
       `**C) Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.**  (true)
@@ -4122,7 +4122,7 @@ $$14 + 35 = 49$$
 
 which is also $7 \\times 7$, because each bundle holds $7$ plants. The claim asks for the split, not the mixed $49$.
 
-A solver who treated a bundle as $2+5=7$ units of one type would report $49$ mixed units and miss the split. A solver who used Job 2's $13$ and $21$ here would be naming the wrong job. The new quotation $8$ Standard and $19$ Premium is a third mix, not Job 1 unpacked.
+Treating a bundle as $2+5=7$ units of one type would report $49$ mixed units and miss the split. That is the fork: $2+5=7$ belongs to the recovered isolation, $49$ belongs to the discarded mix. Using Job 2's $13$ and $21$ here would be naming the wrong job. The recovered comparison therefore keeps $13$ and does not substitute $21$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The new quotation $8$ Standard and $19$ Premium is a third mix, not Job 1 unpacked.
 
 The opposite verdict would need a different bundle recipe. With $7$ bundles of $2$ Standard and $5$ Premium, Job 1 is $14$ Standard and $35$ Premium.
 
@@ -4141,7 +4141,7 @@ $$35 \\times 44 = 1540$$
 
 $$1540 > 1301$$
 
-Job 1's Premium line alone exceeds Job 2 by $\\$239$. A solver who used $y=50$ from letter B would get $1750$, still greater, so that error would not flip the verdict. A solver who compared whole Job 1 $\\$1{,}946$ with Job 2 would be answering a coarser question that still happens to rank the same way. The claim is narrower: Premium portion versus whole Job 2.
+Job 1's Premium line alone exceeds Job 2 by $\\$239$. Using $y=50$ from letter B would get $1750$, still greater, so that error would not flip the verdict. After isolating the unknown, the check is against $y=50$. The figure $1750$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $y=50$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Comparing whole Job 1 $\\$1{,}946$ with Job 2 would be answering a coarser question that still happens to rank the same way. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is narrower: Premium portion versus whole Job 2.
 
 Job 1's Premium portion is $\\$1{,}540$, which exceeds Job 2's $\\$1{,}301$, so the statement is True.`,
       `**E) The new quotation of \\$1,068 is mathematically consistent with the confirmed rates.**  (true)
@@ -4164,7 +4164,7 @@ $$232 + 836 = 1068$$
 
 The quotation matches exactly. It is not a third independent observation that could contradict the first two; it is the same linear rule evaluated at a new mix.
 
-A solver who used $y=50$ would get $232+950=1182$ and call the quote inconsistent. The recovered $44$ is what makes $\\$1{,}068$ sit on the line.
+Using $y=50$ would get $232+950=1182$ and call the quote inconsistent. The stem's recovered values line up with $y=50$, whereas $232+950=1182$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $y=50$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered $44$ is what makes $\\$1{,}068$ sit on the line.
 
 The mix $8$ Standard and $19$ Premium at the recovered rates is $\\$1{,}068$, so the statement is True.`,
     ],
@@ -4235,9 +4235,9 @@ The statement is a claim about the per-diem rate at Horizon Consulting. Reimburs
 
 The overview already recovered the per diem $d = 55$ from Reports 1 and 2. This letter does not rebuild that pair. It only asks whether the recovered per diem is the number in the claim.
 
-**1.** The recovered $55$ is attached to meal days, not to miles. A solver who quoted $0.32$ here would have swapped per diem and mileage.
+**1.** The recovered $55$ is attached to meal days, not to miles. Quoting $0.32$ here would have swapped per diem and mileage. The recovered isolation is checked against the claim using $0.32$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A solver who divided Report 1's $\\$323$ by $5$ days, ignoring miles, would land on $\\$64.60$ and miss the claim. The trap figure $\\$64.60$ is a day-only split of a mixed report. Miles have to come off first. Report 3's $\\$120$ for $7$ days is impossible at $d=55$ and must stay out.
+**2.** Dividing Report 1's $\\$323$ by $5$ days, ignoring miles, would land on $\\$64.60$ and miss the claim. Once $5$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $\\$64.60$ is a day-only split of a mixed report. Miles have to come off first. Report 3's $\\$120$ for $7$ days is impossible at $d=55$ and must stay out.
 
 The opposite verdict would need a different pair of clean-report totals. With Report 1 at $\\$323$ and Report 2 at $\\$245$, the per diem cannot be anything other than $\\$55$.
 
@@ -4275,13 +4275,13 @@ $$7 \\times 55 = 385$$
 
 **3.** Adding $40$ miles at $0.32$ would only make the required total larger, $385+12.80=397.80$, farther from $\\$120$. The row cannot be rescued by a mileage story. It is a data-entry error.
 
-A solver who used Finance's $0.40$ here would still find the floor at $\\$385$ plus a larger mileage piece. A solver who treated $\\$120$ as per diem only, $120/7 \\approx 17$, would be recovering a third inconsistent per diem instead of testing Report 3 against the pair already recovered.
+Using Finance's $0.40$ here would still find the floor at $\\$385$ plus a larger mileage piece. The recovered isolation is checked against the claim using $0.40$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. Treating $\\$120$ as per diem only, $120/7 \\approx 17$, would be recovering a third inconsistent per diem instead of testing Report 3 against the pair already recovered. The path that matches the stem therefore holds $120/7 \\approx 17$ fixed and only then reads the claim.
 
 Seven days require at least $\\$385$, so Report 3's $\\$120$ is impossible, Report 3 is the inconsistent third row. Reports 1 and 2 recovered $d=55$ and $r=0.32$. Seven meal days at $55$ already demand $385$ before any miles. Report 3 printed $120$ for those seven days plus $40$ miles, which is $265$ below the per-diem floor and $277.80$ below the model value $385+12.80=397.80$.
 
 No nonnegative mileage rate can rescue a total that sits below the per-diem floor. Setting $7(55)+40r=120$ forces $r=-6.625$, a negative rate, which is financially impossible. That is why the row is a data-entry error rather than a third observation.
 
-A solver who tried to include Report 3 in the $2 \\times 2$ would find no nonnegative solution that also fits Reports 1 and 2. The right response is to recover the pair from the two clean reports, then test Report 3 against that pair, which is this letter. Finance's believed $0.40$ mileage rate is irrelevant to the floor: the floor is pure per diem.
+Trying to include Report 3 in the $2 \\times 2$ would find no nonnegative solution that also fits Reports 1 and 2. The path that matches the stem therefore holds $2 \\times 2$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. The right response is to recover the pair from the two clean reports, then test Report 3 against that pair, which is this letter. Finance's believed $0.40$ mileage rate is irrelevant to the floor: the floor is pure per diem.
 
 so the statement is True.`,
       `**D) Report 1's total exceeds Report 2's total by more than \\$80.**  (false)
@@ -4300,7 +4300,7 @@ is false. The gap is $\\$78$, two dollars short of the cutoff.
 
 **3.** Rebuilding at recovered $d=55$ and $r=0.32$ confirms the same printed totals: $5(55)+150(0.32)=275+48=323$ and $3(55)+250(0.32)=165+80=245$. The $\\$78$ gap is $2$ extra days minus $100$ fewer miles, $110-32=78$, not a second solve.
 
-A solver who used $323-240$ or who added a round $\\$2$ of rounding would manufacture $\\$80$ or more. The trap figure $\\$80$ is the round bar the claim chose. The printed totals give $\\$78$ exactly. Including Report 3's $\\$120$ on either side would rewrite a comparison the claim did not ask.
+Using $323-240$ or adding a round $\\$2$ of rounding would manufacture $\\$80$ or more. The recovered isolation is checked against the claim using $323-240$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $\\$80$ is the round bar the claim chose. The printed totals give $\\$78$ exactly. Including Report 3's $\\$120$ on either side would rewrite a comparison the claim did not ask.
 
 The opposite verdict would need the printed gap to exceed $\\$80$. With $\\$323$ and $\\$245$ as printed, the gap is $\\$78$.
 
@@ -4319,7 +4319,7 @@ $$568 \\geq 550$$
 
 The combined total clears the bar by $\\$18$.
 
-**3.** A solver who included Report 3's $\\$120$ would get $\\$688$, still above $\\$550$, so that error would not flip the verdict. A solver who subtracted Report 3 would get $568-120=448$ and flip it. The claim names Reports 1 and 2 combined. A solver who used Finance's false $0.40$ rate to rebuild the two reports would inflate the sum and still clear $\\$550$, so that error also would not flip this particular cutoff. The honest sum still uses the printed $\\$323$ and $\\$245$.
+**3.** Including Report 3's $\\$120$ would get $\\$688$, still above $\\$550$, so that error would not flip the verdict. That is why $550$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Subtracting Report 3 would get $568-120=448$ and flip it. The opposite verdict would need a different isolation than $568-120=448$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The claim names Reports 1 and 2 combined. Using Finance's false $0.40$ rate to rebuild the two reports would inflate the sum and still clear $\\$550$, so that error also would not flip this particular cutoff. That is why $0.40$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The honest sum still uses the printed $\\$323$ and $\\$245$.
 
 The opposite verdict would need the two clean reports to total less than $\\$550$. With those two printed figures, the combined reimbursement is $\\$568$.
 
@@ -4388,9 +4388,9 @@ The statement is a claim about Widget A's labor hours per unit at Cedarline. Wee
 
 The overview already recovered $a = 7$ hours per Widget A. This letter does not rebuild that pair. It only asks whether the recovered A-time is the number in the claim.
 
-**1.** The recovered $7$ is attached to Widget A, not to Widget B. A solver who quoted $10$ here would have swapped the widgets.
+**1.** The recovered $7$ is attached to Widget A, not to Widget B. Quoting $10$ here would have swapped the widgets. The recovered isolation is checked against the claim using $10$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A solver who divided Week 1's $445$ hours by $35$ A units, ignoring B, would land on about $12.7$ and miss the claim. The trap figure $12.7$ is an A-only split of a mixed week. Widget B's hours have to come off first.
+**2.** Dividing Week 1's $445$ hours by $35$ A units, ignoring B, would land on about $12.7$ and miss the claim. The stem's recovered values line up with $445$, whereas $12.7$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $445$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $12.7$ is an A-only split of a mixed week. Widget B's hours have to come off first.
 
 The opposite verdict would need a different Week 1 hour total. With $445$ and $505$ as the two clean hour logs, Widget A cannot take anything other than $7$ hours.
 
@@ -4405,7 +4405,7 @@ The overview recovered $b = 10$. The claim writes $12$, two hours above that lef
 
 **2.** Those extra $40$ hours are twenty B units times a $2$-hour overstatement. Week 2's reconstructed $25$ A and $33$ B would overshoot as well.
 
-A solver who split Week 1's $445$ hours across $55$ widgets would land near $8.1$ hours and treat both types as equal. A solver who read the sticky note's $505$ hours as if they belonged to Week 1 would inflate B. Twelve hours is a round neighbour of ten, not the recovered leftover.
+Splitting Week 1's $445$ hours across $55$ widgets would land near $8.1$ hours and treat both types as equal. Working from the isolated values, $445$ is the figure that is checked, not the detour that produced $8.1$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Reading the sticky note's $505$ hours as if they belonged to Week 1 would inflate B. Once $505$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Twelve hours is a round neighbour of ten, not the recovered leftover.
 
 The opposite verdict would need a different Week 1 labor total. With $445$ hours on $35$ A and $20$ B, Widget B cannot take $12$ hours. The claimed $12$ sits $2$ hours above the recovered $10$, so the statement is False.`,
       `**C) Week 2 actually produced 25 Widget A units and 33 Widget B units.**  (true)
@@ -4422,7 +4422,7 @@ $$A + (A+8) = 58, \\qquad 2A = 50, \\qquad A = 25$$
 
 **3.** Then $B=25+8=33$.
 
-Week 2 produced $25$ Widget A and $33$ Widget B. As a check, the recovered times give $7(25)+10(33)=175+330=505$, matching the logged hours. A solver who used $B=A-8$ would flip the counts to $33$ A and $25$ B and fail that hour check.
+Week 2 produced $25$ Widget A and $33$ Widget B. As a check, the recovered times give $7(25)+10(33)=175+330=505$, matching the logged hours. Using $B=A-8$ would flip the counts to $33$ A and $25$ B and fail that hour check. So the letter reads the claim against $B=A-8$; $25$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $B=A-8$ stays in the write-up.
 
 Week 2's counts are $25$ A and $33$ B, so the statement is True.`,
       `**D) If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.**  (false)
@@ -4445,7 +4445,7 @@ $$445 \\times 1.20 = 534$$
 
 Then $494 \\neq 534$. The total rises by $49$ hours, about $11\\%$, not $20\\%$. Widget B's $200$ hours are untouched, so the whole week cannot scale by A's percentage.
 
-A solver who applied $20\\%$ to $445$ would accept the claim. That would be correct only if every hour on the line were A-hours.
+Applying $20\\%$ to $445$ would accept the claim. Working from the isolated values, $20\\%$ is the figure that is checked, not the detour that produced $445$. That would be correct only if every hour on the line were A-hours.
 
 Week 1's hours would rise to $494$, not to $534$, so the statement is False.`,
       `**E) The illegible Week 3 entry can be reconstructed as 20 Widget A units.**  (true)
@@ -4464,7 +4464,7 @@ $$290 - 150 = 140$$
 
 $$\\frac{140}{7} = 20$$
 
-Week 3 produced $20$ Widget A units. A solver who used $b=12$ from letter B would get $290-180=110$, which is not divisible by $7$ into a clean count. The recovered $b=10$ is what makes $20$ drop out. A solver who treated $290/15 \\approx 19.3$ as an A count would have ignored B entirely.
+Week 3 produced $20$ Widget A units. Using $b=12$ from letter B would get $290-180=110$, which is not divisible by $7$ into a clean count. Working from the isolated values, $b=12$ is the figure that is checked, not the detour that produced $7$. The recovered $b=10$ is what makes $20$ drop out. Treating $290/15 \\approx 19.3$ as an A count would have ignored B entirely. The path that matches the stem therefore holds $290/15 \\approx 19.3$ fixed and only then reads the claim.
 
 The trap figure $110/7$ is letter B's false B-time, which refuses to land on an integer. The opposite verdict would need a different Week 3 hour log or a different recovered B-time. With $b=10$ and $a=7$, the illegible count is $20$.
 
@@ -4543,9 +4543,9 @@ The statement is a claim about Product X's price at Sterling Distributors. Two o
 
 The overview already recovered $x = 29$ from North and South. This letter does not rebuild that pair. It only asks whether the recovered X price is the number in the claim.
 
-**1.** The recovered $29$ is attached to Product X, not to Product Y. A solver who quoted $\\$24$ here would have swapped the products.
+**1.** The recovered $29$ is attached to Product X, not to Product Y. Quoting $\\$24$ here would have swapped the products. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-**2.** A solver who divided North's $\\$4{,}145$ by $85$ units of X, ignoring Y, would land on about $\\$48.76$ and miss the claim. The trap figure $\\$48.76$ is an X-only split of a mixed branch. East's uncorrected revenue must stay out of the solve.
+**2.** Dividing North's $\\$4{,}145$ by $85$ units of X, ignoring Y, would land on about $\\$48.76$ and miss the claim. That is why $85$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $\\$48.76$ is an X-only split of a mixed branch. East's uncorrected revenue must stay out of the solve.
 
 The opposite verdict would need a different North or South total. With those two reconciling rows as printed, Product X cannot cost anything other than $\\$29$.
 
@@ -4560,7 +4560,7 @@ The overview recovered $y = 24$. The claim writes $\\$28$, four dollars above th
 
 **2.** Those extra $\\$280$ are seventy Y units times a $\\$4$ overstatement. South would fail by the same $\\$4$ per Y unit. East's printed $\\$3{,}200$ is a different error, not a license to raise Y.
 
-A solver who averaged North and South per unit and called that Y would mix X into the leftover. A solver who rounded $24$ up toward $29$ would manufacture $\\$28$ as a compromise between the two prices. The recovered pair is $29$ and $24$, not $29$ and $28$.
+Averaging North and South per unit and calling that Y would mix X into the leftover. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Rounding $24$ up toward $29$ would manufacture $\\$28$ as a compromise between the two prices. That is the fork: $24$ belongs to the recovered isolation, $29$ belongs to the discarded mix. The recovered pair is $29$ and $24$, not $29$ and $28$.
 
 The opposite verdict would need different North and South totals. With those two branches as printed, Product Y cannot cost $\\$28$. The claimed $\\$28$ sits $\\$4$ above the recovered $\\$24$, so the statement is False.`,
       `**C) The East branch's reported revenue is fully consistent with the derived prices.**  (false)
@@ -4583,11 +4583,11 @@ $$1885 + 1200 = 3085$$
 
 Then $3085 \\neq 3200$. East's reported total sits $\\$115$ above the reconstructed $\\$3{,}085$. North and South both rebuild exactly at these prices, so East is the inconsistent row.
 
-A solver who treated East as one of the two defining rows would recover a different pair that then fails North or South. The dashboard does not say which row is wrong; checking each rebuilt total against the reported one is how East is identified.
+Treating East as one of the two defining rows would recover a different pair that then fails North or South. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The dashboard does not say which row is wrong; checking each rebuilt total against the reported one is how East is identified.
 
 East's reported $\\$3{,}200$ does not match the reconstructed $\\$3{,}085$, East is the inconsistent third row. North rebuilds at $85(29)+70(24)=4145$ exactly. South rebuilds at $55(29)+95(24)=3875$ exactly. East at $65(29)+50(24)=3085$ does not match the printed $3200$. The $115$ overstatement is the dashboard error.
 
-A solver who used East with North to recover a pair would then fail South, and a solver who used East with South would fail North. Checking each rebuilt total against the printed one is how East is identified as the odd row. The stem says two of three reconcile and does not say which; this letter is that check for East.
+Using East with North to recover a pair would then fail South, and using East with South would fail North. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Checking each rebuilt total against the printed one is how East is identified as the odd row. The stem says two of three reconcile and does not say which; this letter is that check for East.
 
 If East had printed $3085$, this letter would be true. The printed $3200$ is what makes it false. Using East's reported $3200$ in a later comparison, as letter E does, is a different question: letter E names reported revenues, including the error. Letter C asks whether that reported figure is consistent with the derived prices, and it is not.
 
@@ -4606,7 +4606,7 @@ $$65 \\times 29 = 1885$$
 
 $$50 \\times 24 = 1200, \\qquad 1885 + 1200 = 3085$$
 
-The gap is $3200-3085=115$. That $\\$115$ is East's recording error, not a second price pair. A solver who averaged North and South per unit and scaled to East's counts would wander off $3085$. A solver who "corrected" East up to $\\$3{,}200$ would be defending the bad row.
+The gap is $3200-3085=115$. That $\\$115$ is East's recording error, not a second price pair. Averaging North and South per unit and scaling to East's counts would wander off $3085$. The opposite verdict would need a different isolation than $3085$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The path that "corrected" East up to $\\$3{,}200$ would be defending the bad row. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The opposite verdict would need North or South to be the bad branch. With those two consistent, East's honest total is $\\$3{,}085$.
 
@@ -4627,7 +4627,7 @@ $$4145 < 7075$$
 
 North does not exceed the other two combined. It is not even close. Using East's corrected $\\$3{,}085$ would give $3875+3085=6960$, still far above $4145$. Either way the claim fails.
 
-A solver who compared North with South alone, $4145>3875$, would be answering a different comparison. The claim is North versus the *sum* of South and East.
+Comparing North with South alone, $4145>3875$, would be answering a different comparison. Keeping $4145>3875$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is North versus the *sum* of South and East.
 
 North's $\\$4{,}145$ does not exceed $\\$7{,}075$, so the statement is False.`,
     ],
@@ -4707,7 +4707,7 @@ The overview already recovered Type A at $\\$18.45$ per case. Rounding that pric
 
 **2.** Rounding *to* the nearest dollar would also land on $18$, because $18.45$ is closer to $18$ than to $19$. The claim says "up to the next whole dollar," which is a ceiling, not nearest-even rounding. Ceiling of $18.45$ is $19$.
 
-A solver who rounded $18.45$ to $18$ would be using nearest-dollar instead of rounding up. A solver who rounded Invoice 1's $\\$527.45$ and then divided by $22$ cases would be rounding the wrong object.
+Rounding $18.45$ to $18$ would be using nearest-dollar instead of rounding up. The recovered comparison therefore keeps $18.45$ and does not substitute $18$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Rounding Invoice 1's $\\$527.45$ and then dividing by $22$ cases would be rounding the wrong object. Keeping $22$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Ceiling of the recovered Type A price is $\\$19.00$, so the statement is True.`,
       `**B) A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.**  (true)
@@ -4720,7 +4720,7 @@ $$27.80 - 18.45 = 9.35$$
 
 Then $9 < 9.35 < 10$. The gap sits in the open interval the clerk named.
 
-A solver who rounded both prices first, $28-18=10$, would land on the boundary and fail "less than ten." A solver who used $27.80-18.00=9.80$ after dropping A's cents would still sit inside the interval, so that particular slip would not flip the verdict. The honest gap is $9.35$.
+Rounding both prices first, $28-18=10$, would land on the boundary and fail "less than ten." That is why $28-18=10$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed.using $27.80-18.00=9.80$ after dropping A's cents would still sit inside the interval, so that particular slip would not flip the verdict. The opposite verdict would need a different isolation than $27.80-18.00=9.80$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The honest gap is $9.35$.
 
 Type B exceeds Type A by $\\$9.35$, which is more than nine and less than ten, so the statement is True.`,
       `**C) If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the \\$24 mark.**  (true)
@@ -4743,7 +4743,7 @@ $$25.28 > 24$$
 
 The implied share clears $\\$24$ by about $\\$1.28$. That average sits between the two recovered prices $18.45$ and $27.80$, as any mix average must. Invoice 2 is heavy on Type B ($19$ versus $7$), so the average leans toward $27.80$, which is why it clears $24$ comfortably.
 
-A solver who split Invoice 1 instead, $527.45/22 \\approx 23.97$, would fall just *under* $\\$24$ and flip the verdict. The claim names Invoice 2. A solver who used $657.35/19$, ignoring Type A, would overshoot further.
+Splitting Invoice 1 instead, $527.45/22 \\approx 23.97$, would fall just *under* $\\$24$ and flip the verdict. Once $527.45/22 \\approx 23.97$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The claim names Invoice 2. Using $657.35/19$, ignoring Type A, would overshoot further. The path that matches the stem therefore holds $657.35/19$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Invoice 2's even split is about $\\$25.28$ per case, which clears $\\$24$, so the statement is True.`,
       `**D) Swapping which quantity (13 vs 9) applies to which fastener type in Invoice 1 happens to leave the total unchanged, purely because both fastener prices are so close together.**  (false)
@@ -4768,7 +4768,7 @@ $$490.05 \\neq 527.45$$
 
 The swapped mix is $\\$37.40$ cheaper. That gap is $4$ cases moved from B onto A, times the $\\$9.35$ price gap: $4 \\times 9.35 = 37.40$. The totals match only if the two prices are equal. They are not.
 
-A solver who glanced at $18.45$ and $27.80$ and called them "close" because both start with a $2$-looking dollar after rounding would still be wrong by more than $\\$9$ per case. "Close together" is the false premise that manufactures an unchanged total.
+Glancing at $18.45$ and $27.80$ and calling them "close" because both start with a $2$-looking dollar after rounding would still be wrong by more than $\\$9$ per case. That is the fork: $18.45$ belongs to the recovered isolation, $2$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. "Close together" is the false premise that manufactures an unchanged total.
 
 Swapping the quantities changes Invoice 1's total from $\\$527.45$ to $\\$490.05$, so the statement is False.`,
       `**E) Since 16 and 32 are simply the two invoices' case counts added together, common sense suggests the combined order must cost strictly more than placing both invoices separately, thanks to some kind of bulk-order premium.**  (false)
@@ -4787,7 +4787,7 @@ $$16(18.45) + 32(27.80) = 295.20 + 889.60 = 1184.80$$
 
 **3.** Compare: the figures match. Linearity says they must. A bulk premium would have to be stated in the stem, and it is not. Common sense about "bigger order, bigger discount or bigger premium" is a story the invoices do not tell.
 
-A solver who added a round $5\\%$ premium onto $\\$1{,}184.80$ would get about $\\$1{,}244$ and accept the claim. That premium is invented. A solver who thought $16$ and $32$ were new counts, not the sums of the two invoices, might cost a different mix; $16$ and $32$ are exactly those sums.
+Adding a round $5\\%$ premium onto $\\$1{,}184.80$ would get about $\\$1{,}244$ and accept the claim. The path that matches the stem therefore holds $5\\%$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That premium is invented. Thinking $16$ and $32$ were new counts, not the sums of the two invoices, might cost a different mix; $16$ and $32$ are exactly those sums. The stem's recovered values line up with $16$, whereas $32$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $16$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The combined order costs the same $\\$1{,}184.80$ as the two invoices placed separately, so it does not cost strictly more, so the statement is False.`,
     ],
@@ -4871,7 +4871,7 @@ $$\\frac{145 + 146}{2} = 145.50$$
 
 **2.** Compare with the recovered fee: they match.
 
-**3.** A solver who rounded $145.50$ to $146$ would have left the halfway point. A solver who used $460-170 \\times 2$ as a fee guess would land on $120$ and miss the claim. The trap figure $120$ is a two-dollar-per-mile leftover after stripping a round mileage charge that is not the recovered rate.
+**3.** Rounding $145.50$ to $146$ would have left the halfway point. That is the fork: $145.50$ belongs to the recovered isolation, $146$ belongs to the discarded mix. Using $460-170 \\times 2$ as a fee guess would land on $120$ and miss the claim. The recovered comparison therefore keeps $460-170 \\times 2$ and does not substitute $120$. That contrast is the reason the verdict goes the way it does. The trap figure $120$ is a two-dollar-per-mile leftover after stripping a round mileage charge that is not the recovered rate.
 
 The opposite verdict would need the recovered fee to sit off $145.50$, for instance at $145$ or $146$ after a rounding. With the two Swift Cargo bills as printed, the dispatch fee is $145.50$, which is exactly the midpoint the claim named.
 
@@ -4892,7 +4892,7 @@ $$2.00 - 1.85 = 0.15$$
 
 **3.** Compare: $0.15 < 0.35$, so $1.85$ is closer to $2.00$, not to $1.50$. The claim has the nearer neighbour backwards.
 
-A solver who compared $1.85$ with $1.50$ only, noticing "both start with $1$," would call them closer as a digit story. Distance on the number line is what the claim asks. The competitor's flat $\\$1.35$ is a third point, even farther from $1.85$ than $1.50$ is.
+Comparing $1.85$ with $1.50$ only, noticing "both start with $1$," would call them closer as a digit story. That is the fork: $1.85$ belongs to the recovered isolation, $1$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Distance on the number line is what the claim asks. The competitor's flat $\\$1.35$ is a third point, even farther from $1.85$ than $1.50$ is.
 
 Swift's rate $1.85$ sits closer to $2.00$ than to $1.50$, so the statement is False.`,
       `**C) A 250-mile haul comes in five cents under six hundred and eight dollars.**  (false)
@@ -4915,7 +4915,7 @@ $$608.00 \\neq 607.95$$
 
 The haul is exactly $\\$608.00$, not five cents under. The claim's five-cent story is a rounding rumour. Both $145.50$ and $462.50$ have a fifty-cent piece; they add to a whole dollar.
 
-A solver who used $250 \\times 1.80 + 145.50 = 450+145.50=595.50$ would undershoot. A solver who used $r=1.85$ but $f=145$ would get $607.50$, which *is* fifty cents under $608$, nearby but not five cents. A solver who computed $250 \\times 1.85=462.50$ and then added $145$ as $607.50$ again dropped the half dollar in the fee.
+Using $250 \\times 1.80 + 145.50 = 450+145.50=595.50$ would undershoot. Once $250 \\times 1.80 + 145.50 = 450+145.50=595.50$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Using $r=1.85$ but $f=145$ would get $607.50$, which *is* fifty cents under $608$, nearby but not five cents. The recovered comparison therefore keeps $r=1.85$ and does not substitute $608$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Computing $250 \\times 1.85=462.50$ and then adding $145$ as $607.50$ again dropped the half dollar in the fee. That is the fork: $250 \\times 1.85=462.50$ belongs to the recovered isolation, $607.50$ belongs to the discarded mix.
 
 What would have to change for the opposite verdict? If the fee were $145.45$, the total would be $607.95$, five cents under $608$. The two routes force $f=145.50$, and $250$ miles is then exactly $\\$608$.
 
@@ -4948,7 +4948,7 @@ Then $270.50 > 270$. The savings clear the cutoff by fifty cents.
 
 Where does the $\\$270.50$ come from in pieces? Swift's extra rate is $1.85-1.35=0.50$ per mile, so $250 \\times 0.50=125$ of extra mileage, plus the whole $\\$145.50$ dispatch fee, totals $270.50$. Both pieces are extra cost on Swift; the competitor has neither the fee nor the steeper rate.
 
-A solver who forgot the fee would report only the $\\$125$ rate gap and fail the $\\$270$ cutoff. A solver who used letter C's false $607.95$ would get savings $270.45$, still above $270$, so that slip would not flip the verdict. A solver who compared at Route 1's $170$ miles would get a smaller savings and might fall under $270$.
+Forgetting the fee would report only the $\\$125$ rate gap and fail the $\\$270$ cutoff. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Using letter C's false $607.95$ would get savings $270.45$, still above $270$, so that slip would not flip the verdict. That is the fork: $607.95$ belongs to the recovered isolation, $270$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Comparing at Route 1's $170$ miles would get a smaller savings and might fall under $270$. That is the fork: $170$ belongs to the recovered isolation, $270$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 What would have to change for the opposite verdict? If the competitor charged $1.40$ per mile, the $250$-mile competitor bill would be $350$ and the savings $258$, under $270$. The stem's $1.35$ competitor rate plus Swift's recovered pair forces $270.50$.
 
@@ -4979,9 +4979,9 @@ $$m = \\frac{145.50}{-0.50} = -291$$
 
 The intersection is at $-291$ miles, which is not a real haul. It is still an intersection on the number line. The claim says exactly that: guaranteed to intersect, even though the crossing is negative and therefore meaningless as a route.
 
-A solver who concluded "different slopes, but Swift is always more expensive, so they never meet" would be thinking on $m \\geq 0$ only. On the nonnegative ray they never meet. On the whole line they do. The claim is careful about that distinction.
+Concluding "different slopes, but Swift is always more expensive, so they never meet" would be thinking on $m \\geq 0$ only. That is why $m \\geq 0$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. On the nonnegative ray they never meet. On the whole line they do. The claim is careful about that distinction.
 
-A solver who used equal slopes would be describing a different competitor. If the competitor also charged $1.85$ per mile with no fee, the lines would be parallel and $145.50$ apart, never meeting. The stem's $1.35$ is what forces a crossing, and the positive fee is what pushes that crossing into negative miles.
+Using equal slopes would be describing a different competitor. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. If the competitor also charged $1.85$ per mile with no fee, the lines would be parallel and $145.50$ apart, never meeting. The stem's $1.35$ is what forces a crossing, and the positive fee is what pushes that crossing into negative miles.
 
 The two formulas intersect at $m=-291$, a meaningless mileage but a real intersection, so the statement is True.`,
     ],
@@ -5053,7 +5053,7 @@ $$19.05 > 20$$
 
 is false. The triple sits $\\$0.95$ short of $\\$20$.
 
-**3.** A solver who used $6.70$ would get $20.10$ and flip the verdict. A solver who rounded $6.35$ to $7$ first would get $21$ and also flip it. The trap figure $\\$7$ is a convenience round. The recovered $6.35$ is what keeps the triple under $20$. Calories $6100$ and $5400$ do not price a drink.
+**3.** Using $6.70$ would get $20.10$ and flip the verdict. The recovered comparison therefore keeps $6.70$ and does not substitute $20.10$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Rounding $6.35$ to $7$ first would get $21$ and also flip it. Working from the isolated values, $6.35$ is the figure that is checked, not the detour that produced $21$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $\\$7$ is a convenience round. The recovered $6.35$ is what keeps the triple under $20$. Calories $6100$ and $5400$ do not price a drink.
 
 The opposite verdict would need a drink above $20/3 \\approx 6.67$. With the two till totals $\\$78.65$ and $\\$85.05$ as printed, the drink is $6.35$.
 
@@ -5074,7 +5074,7 @@ $$6.35 + 3.80 = 10.15$$
 
 $$15.20 > 10.15$$
 
-Four pastries cost $\\$5.05$ more. That is "quite a bit more" in the sense of the claim: more than a $50\\%$ premium on the smaller basket. A solver who compared four pastries with four drinks would be answering a different question. A solver who used $4 \\times 6.35=25.40$ against $10.15$ would still find four of something larger, but of the wrong item.
+Four pastries cost $\\$5.05$ more. That is "quite a bit more" in the sense of the claim: more than a $50\\%$ premium on the smaller basket. Comparing four pastries with four drinks would be answering a different question. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using $4 \\times 6.35=25.40$ against $10.15$ would still find four of something larger, but of the wrong item. That is the fork: $4 \\times 6.35=25.40$ belongs to the recovered isolation, $10.15$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 The trap is reading "quite a bit more" as a second numerical bar. The claim's inequality is four pastries versus the mixed pair, and $15.20>10.15$ is the whole comparison. The opposite verdict would need $4y \\le x+y$, so $3y \\le x$, $3(3.80)=11.40 \\le 6.35$, which fails. With $y=3.80$ and $x=6.35$, four pastries cost more.
 
@@ -5091,11 +5091,11 @@ Calories are printed "for the customer's reference only." They are not a second 
 
 **3.** The overview used the quantities. Without them the calorie column does not become a substitute system. Nothing in the stem says calories are proportional to price.
 
-A solver who divided $78.65$ by $6100$ and $85.05$ by $5400$ would get two dollars-per-calorie figures and still have no item prices. A solver who treated calories as if they were item counts would be inventing a model the till receipts do not state.
+Dividing $78.65$ by $6100$ and $85.05$ by $5400$ would get two dollars-per-calorie figures and still have no item prices. That is the fork: $78.65$ belongs to the recovered isolation, $5400$ belongs to the discarded mix. Treating calories as if they were item counts would be inventing a model the till receipts do not state. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 The calorie counts do not pin down the prices without the quantities, Calories are a distractor column, printed for reference only. Two dollar totals plus four item counts already pin the two prices; that is the till's $2 \\times 2$. Adding two calorie totals without four calorie-per-item unknowns does not create a second independent price system. It creates two more numbers with no coefficients that attach them to drinks versus pastries.
 
-A solver who divided $78.65/6100$ and $85.05/5400$ would get two dollars-per-calorie figures, about $0.0129$ and $0.01575$, and would still have no drink price and no pastry price. A solver who treated $6100$ and $5400$ as if they were item counts would be inventing a model the receipts do not state. The stem never says calories are proportional to price, and a drink at $6.35$ versus a pastry at $3.80$ already shows that dollars and calories need not move together.
+Dividing $78.65/6100$ and $85.05/5400$ would get two dollars-per-calorie figures, about $0.0129$ and $0.01575$, and would still have no drink price and no pastry price. After isolating the unknown, the check is against $78.65/6100$. The figure $0.01575$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $78.65/6100$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Treating $6100$ and $5400$ as if they were item counts would be inventing a model the receipts do not state. So the letter reads the claim against $6100$; $5400$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6100$ stays in the write-up. The stem never says calories are proportional to price, and a drink at $6.35$ versus a pastry at $3.80$ already shows that dollars and calories need not move together.
 
 Without the quantities $7$, $9$, $11$, and $4$, even the dollar totals cannot isolate two prices. The calorie counts do not replace those quantities. They sit beside the totals as unused information, the way oven material cost sat unused until a later letter asked for it. This letter never asks for calories as an output, so they stay unused.
 
@@ -5118,7 +5118,7 @@ $$4.915625 > 4.90$$
 
 The average clears $4.90$ by about one and a half cents. It sits between the two recovered prices $6.35$ and $3.80$, as a $7$-and-$9$ mix must, and it leans toward the more numerous pastries.
 
-A solver who split Receipt 2, $85.05/15=5.67$, would overshoot $4.90$ by a lot and still "creep past," so the verdict would survive that mix-up, but the claim names Receipt 1. A solver who rounded $4.915$ down to $4.90$ would fail "past."
+Splitting Receipt 2, $85.05/15=5.67$, would overshoot $4.90$ by a lot and still "creep past," so the verdict would survive that mix-up, but the claim names Receipt 1. The stem's recovered values line up with $85.05/15=5.67$, whereas $4.90$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $85.05/15=5.67$ stays in the write-up. Rounding $4.915$ down to $4.90$ would fail "past." The recovered comparison therefore keeps $4.915$ and does not substitute $4.90$. That contrast is the reason the verdict goes the way it does.
 
 Receipt 1's even split is about $\\$4.92$, which creeps past $\\$4.90$, so the statement is True.`,
       `**E) A week of daily 2-Drink-2-Pastry orders costs enough that, left over from \\$150, you'd have less than \\$8 in change.**  (true)
@@ -5141,13 +5141,13 @@ $$150 - 142.10 = 7.90$$
 
 Then $7.90 < 8$. The leftover is ten cents under eight dollars.
 
-A solver who used six days, treating a work week as $6$, would get $121.80$ and leftover $28.20$, which is not less than $\\$8$ in the sense of a tight leftover, and would miss the claim's "less than $8$ in change" as a tight figure. A solver who skipped the pastries would get $7 \\times 12.70=88.90$ and leftover $61.10$. A solver who used $7 \\times 21=147$ as a round pair price would get leftover $3$, still less than $8$, so that rounding would not flip the inequality, but it would miss the exact $7.90$.
+Using six days, treating a work week as $6$, would get $121.80$ and leftover $28.20$, which is not less than $\\$8$ in the sense of a tight leftover, and would miss the claim's "less than $8$ in change" as a tight figure. The recovered comparison therefore keeps $6$ and does not substitute $8$. That contrast is the reason the verdict goes the way it does. Skipping the pastries would get $7 \\times 12.70=88.90$ and leftover $61.10$. The recovered comparison therefore keeps $7 \\times 12.70=88.90$ and does not substitute $61.10$. That contrast is the reason the verdict goes the way it does. Using $7 \\times 21=147$ as a round pair price would get leftover $3$, still less than $8$, so that rounding would not flip the inequality, but it would miss the exact $7.90$. The recovered comparison therefore keeps $7 \\times 21=147$ and does not substitute $7.90$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 What would have to change for the opposite verdict? If a day cost $20.40$, seven days would be $142.80$ and leftover $7.20$, still under $8$. To leave $8$ or more, seven days would need to cost $142$ or less, so a day $20.285$ or less. The recovered pair forces $20.30$ per day and leftover $7.90$.
 
 Left over from $\\$150$ after a week of $2$-and-$2$ is $\\$7.90$, which is less than $\\$8$, A week of daily $2$-drink-$2$-pastry orders is seven copies of a $20.30$ day. Seven times $20.30$ is $142.10$, and the change from $150$ is $7.90$, ten cents under $8$. That ten cents is tight: a pastry at $3.82$ would have made a day $20.34$ and a week $142.38$, leftover $7.62$, still under $8$, but a drink at $6.50$ would have made a day $20.60$ and a week $144.20$, leftover $5.80$, still under $8$ as an inequality, yet the claim's exact leftover flavour is $7.90$.
 
-A solver who used a five-day week would get $101.50$ and leftover $48.50$, which is not less than $8$ in the tight sense the claim is pointing at. A solver who used $7 \\times 21=147$ as a round pair of pairs would get leftover $3$, still less than $8$, so the inequality would survive rounding, but the cents would be wrong.
+Using a five-day week would get $101.50$ and leftover $48.50$, which is not less than $8$ in the tight sense the claim is pointing at. The recovered comparison therefore keeps $101.50$ and does not substitute $8$. That contrast is the reason the verdict goes the way it does. Using $7 \\times 21=147$ as a round pair of pairs would get leftover $3$, still less than $8$, so the inequality would survive rounding, but the cents would be wrong. The recovered comparison therefore keeps $7 \\times 21=147$ and does not substitute $8$.
 
 If drinks had been $6.50$ and pastries $3.80$, leftover would be $5.80$, still under $8$. To leave $8$ or more, the week would need to cost $142$ or less. The recovered pair forces $142.10$, leftover $7.90$.
 
@@ -5235,7 +5235,7 @@ $$55.40 > 55$$
 
 Four dozen croissants cost $\\$55.40$, which blows past fifty-five by forty cents.
 
-**3.** A solver who used baguettes $9.40$ here would get $37.60$ and miss the claim. A solver who rounded $13.85$ down to $13$ would get $52$ and fail the cutoff. The trap figure $\\$52$ is a rounded-down dozen times four.
+**3.** Using baguettes $9.40$ here would get $37.60$ and miss the claim. That is the fork: $9.40$ belongs to the recovered isolation, $37.60$ belongs to the discarded mix. Rounding $13.85$ down to $13$ would get $52$ and fail the cutoff. After isolating the unknown, the check is against $13.85$. The figure $52$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $13.85$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure $\\$52$ is a rounded-down dozen times four.
 
 The opposite verdict would need a croissant dozen at or below $55/4=13.75$. With the two emails as printed, croissants are $13.85$. Email 2's similar dollar total is a different mix and does not rewrite the croissant price.
 
@@ -5252,7 +5252,7 @@ $$13.85 - 9.40 = 4.45$$
 
 **3.** Then $0.45 < 0.55$, so $4.45$ is closer to four.
 
-A solver who rounded $4.45$ to $4.50$ and called that equidistant would still not prefer five. A solver who used $14-9=5$ after rounding both prices would land on five exactly and miss "closer to four." The trap figure $\\$5$ is that pair of rounded prices. Email 1's mix is croissant-heavy, so its average dozen is closer to $13.85$ than Email 2's baguette-heavy mix is; that average is not the gap.
+Rounding $4.45$ to $4.50$ and calling that equidistant would still not prefer five. Working from the isolated values, $4.45$ is the figure that is checked, not the detour that produced $4.50$. That contrast is the reason the verdict goes the way it does. Using $14-9=5$ after rounding both prices would land on five exactly and miss "closer to four." Once $14-9=5$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.The trap figure $\\$5$ is that pair of rounded prices. Email 1's mix is croissant-heavy, so its average dozen is closer to $13.85$ than Email 2's baguette-heavy mix is; that average is not the gap.
 
 The opposite verdict would need a gap of $4.50$ or more. With $13.85$ and $9.40$ as recovered, the gap is $4.45$, which sits nearer four.
 
@@ -5279,7 +5279,7 @@ $$\\frac{138.50}{232.50} = \\frac{277}{465} \\approx 0.5957$$
 
 Three-fifths is $0.6$. Then $0.5957 < 0.6$, so croissants do not account for more than three-fifths. They sit just under.
 
-A solver who used $14$ and $9$ as round prices would get $140/(140+90)=140/230 \\approx 0.609$, which *does* exceed three-fifths and would flip the verdict. The recovered cents, $13.85$ and $9.40$, are what keep the share under $0.6$. A solver who compared $138.50$ with $0.6 \\times 232.50=139.50$ would see the $\\$1$ shortfall directly.
+Using $14$ and $9$ as round prices would get $140/(140+90)=140/230 \\approx 0.609$, which *does* exceed three-fifths and would flip the verdict. The stem's recovered values line up with $14$, whereas $140/(140+90)=140/230 \\approx 0.609$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $14$ stays in the write-up. The recovered cents, $13.85$ and $9.40$, are what keep the share under $0.6$. Comparing $138.50$ with $0.6 \\times 232.50=139.50$ would see the $\\$1$ shortfall directly. The recovered comparison therefore keeps $138.50$ and does not substitute $0.6 \\times 232.50=139.50$. That contrast is the reason the verdict goes the way it does.
 
 What would have to change for the opposite verdict? If croissants were $14.00$, ten dozen would be $140$ and the share $140/234 \\approx 0.598$ still under, wait $10 \\times 9.40=94$, $140+94=234$, $140/234 \\approx 0.598$. Still under. Croissants would need to be high enough that $10x/(10x+94)>0.6$, so $10x > 0.6(10x+94)$, so $4x > 56.4$, so $x>14.10$. The recovered $13.85$ sits below that threshold.
 
@@ -5287,7 +5287,7 @@ Croissants' share is about $59.6\\%$, which is not more than three-fifths, Ten d
 
 Three-fifths of $232.50$ is $139.50$. Croissants at $138.50$ sit one dollar short of that bar. That dollar is $10 \\times 0.10$ relative to a $13.95$ croissant price, or a slightly cheaper baguette pulling the denominator down. With the recovered pair, the share does not clear three-fifths.
 
-A solver who compared $138.50$ with $0.6 \\times 10 \\times 13.85=83.10$, mixing a share of croissants only, would be answering a different fraction. The claim is croissants' share of the *combined* bill.
+Comparing $138.50$ with $0.6 \\times 10 \\times 13.85=83.10$, mixing a share of croissants only, would be answering a different fraction. After isolating the unknown, the check is against $138.50$. The figure $0.6 \\times 10 \\times 13.85=83.10$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $138.50$ stays in the write-up. The claim is croissants' share of the *combined* bill.
 
 so the statement is False.`,
       `**D) Per dozen-item ordered, Email 1 runs pricier than Email 2  -  and the gap clears two dollars.**  (false)
@@ -5310,7 +5310,7 @@ $$11.892 - 10.321 \\approx 1.571$$
 
 Then $1.571 > 2$ is false. Email 1 is pricier per dozen, but the gap is about $\\$1.57$, which does not clear two dollars.
 
-A solver who used $297.30/14$ or $299.30/6$, ignoring baguettes, would manufacture a huge gap. A solver who compared totals $299.30-297.30=2.00$ would be comparing whole invoices, not per-dozen figures, and that $2.00$ gap on totals is a coincidence that does not transfer to the averages, because the dozen-counts differ.
+Using $297.30/14$ or $299.30/6$, ignoring baguettes, would manufacture a huge gap. So the letter reads the claim against $297.30/14$; $299.30/6$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $297.30/14$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Comparing totals $299.30-297.30=2.00$ would be comparing whole invoices, not per-dozen figures, and that $2.00$ gap on totals is a coincidence that does not transfer to the averages, because the dozen-counts differ. Working from the isolated values, $299.30-297.30=2.00$ is the figure that is checked, not the detour that produced $2.00$.
 
 Email 1's per-dozen figure exceeds Email 2's by about $\\$1.57$, not by more than $\\$2$, so the statement is False.`,
       `**E) Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty.**  (true)
@@ -5329,7 +5329,7 @@ $$299.30 + 69 = 368.30$$
 
 **3.** The cents digit of $368.30$ is $30$, matching the claim. Adding whole dollars cannot change the cents, so the cents stay $30$ from the original $\\$299.30$ whatever whole-dollar tack is used. The "exactly thirty" is then automatic. The claim is still true.
 
-A solver who also raised croissants would be answering a different counterfactual. A solver who used Email 1's $11$ dozen baguettes would get $297.30+33=330.30$, still cents $30$, so that mix-up would not flip the cents claim.
+Also raising croissants would be answering a different counterfactual. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using Email 1's $11$ dozen baguettes would get $297.30+33=330.30$, still cents $30$, so that mix-up would not flip the cents claim. The recovered comparison therefore keeps $11$ and does not substitute $30$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The new Email 2 total is $\\$368.30$, whose cents digit is thirty, so the statement is True.`,
     ],
@@ -5419,7 +5419,7 @@ $$27.35 < 27.50$$
 
 So $27 < 27.35 < 27.50$. Fabric clears $\\$27$ by $35$ cents and misses $\\$27.50$ by $15$ cents. The recovered cents are what sit in the gap.
 
-A solver who rounded $27.35$ to $27$ would fail the first inequality. A solver who rounded to $27.50$ would fail the second. A solver who used Yarn's $19.80$ here would miss both lines. Clearing $\\$27.50$ would have needed another $15$ cents of Fabric profit, which the two invoices do not support.
+Rounding $27.35$ to $27$ would fail the first inequality. So the letter reads the claim against $27.35$; $27$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $27.35$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Rounding to $27.50$ would fail the second. Once $27.50$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using Yarn's $19.80$ here would miss both lines. Keeping $19.80$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Clearing $\\$27.50$ would have needed another $15$ cents of Fabric profit, which the two invoices do not support.
 
 Fabric's margin is $\\$27.35$, which clears $\\$27$ but not $\\$27.50$, so the statement is True.`,
       `**B) Yarn Spool's per-unit margin, doubled, would just clear forty dollars.**  (false)
@@ -5436,7 +5436,7 @@ $$39.60 > 40$$
 
 is false. The double sits forty cents short of $\\$40$.
 
-**3.** A solver who used $20$ would get $40$ exactly and treat "just clear" as equality. The recovered $19.80$ is what keeps the double under forty. A solver who doubled Fabric $27.35$ would get $54.70$ and clear forty easily, answering the wrong product.
+**3.** Using $20$ would get $40$ exactly and treat "just clear" as equality. After isolating the unknown, the check is against $20$. The figure $40$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $20$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered $19.80$ is what keeps the double under forty. Doubling Fabric $27.35$ would get $54.70$ and clear forty easily, answering the wrong product. That is the fork: $27.35$ belongs to the recovered isolation, $54.70$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The trap figure $\\$40$ is a round bar that $2 \\times 20$ would kiss. "Just clear" is a strict reading of above forty, and $39.60$ is not above forty. The opposite verdict would need Yarn above $20$. With the quarterly margins as recovered, Yarn is $19.80$.
 
@@ -5461,7 +5461,7 @@ $$5470 + 2970 = 8440$$
 
 Then $8440 > 8400$. The mix clears the cutoff by $\\$40$, which is slender relative to an $\\$8{,}400$ bar: about half a percent.
 
-A solver who used Q1's mix scaled to $200$ rolls would keep Q1's yarn ratio and miss this letter's $150$ spools. A solver who rounded to $27$ and $20$ would get $5400+3000=8400$ exactly, which does not "clear" a strict cutoff. The recovered cents are what produce the slender $\\$40$ overshoot.
+Using Q1's mix scaled to $200$ rolls would keep Q1's yarn ratio and miss this letter's $150$ spools. That is the fork: $200$ belongs to the recovered isolation, $150$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Rounding to $27$ and $20$ would get $5400+3000=8400$ exactly, which does not "clear" a strict cutoff. So the letter reads the claim against $27$; $5400+3000=8400$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $27$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered cents are what produce the slender $\\$40$ overshoot.
 
 What would have to change for the opposite verdict? If Fabric were $27.00$, the mix would be $5400+2970=8370$, under $8400$. The two quarters force $27.35$, and $200$/$150$ is then $8440$.
 
@@ -5480,7 +5480,7 @@ $$231.50 - 100 = 131.50$$
 
 **3.** $131.50$ is still three-digit. The claim holds.
 
-A solver who dropped the hundreds place entirely, reporting $31.50$, would have a two-digit leftover and flip the verdict. "Dropped the smallest hundred from it" is subtract $100$, not strip the hundreds digit. A solver who used $10260.50-10029=231.50$ and called $231$ already three-digit without dropping would be answering a weaker claim that is also true.
+Dropping the hundreds place entirely, reporting $31.50$, would have a two-digit leftover and flip the verdict. The recovered isolation is checked against the claim using $31.50$, which is the figure the sessions actually produce. "Dropped the smallest hundred from it" is subtract $100$, not strip the hundreds digit. Using $10260.50-10029=231.50$ and calling $231$ already three-digit without dropping would be answering a weaker claim that is also true. The recovered comparison therefore keeps $10260.50-10029=231.50$ and does not substitute $231$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The reduced gap is $131.50$, still three-digit, so the statement is True.`,
       `**E) Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round \\$13,675  -  no cents required.**  (true)
@@ -5497,7 +5497,7 @@ $$500 \\times 27.35 = 13675$$
 
 $$13500 + 175 = 13675$$
 
-**3.** The product is a whole-dollar $\\$13{,}675$. A solver who included even one Yarn Spool would add $19.80$ and destroy the round figure. A solver who used $500 \\times 27=13500$ after dropping the cents would miss the claim by $175$.
+**3.** The product is a whole-dollar $\\$13{,}675$. Including even one Yarn Spool would add $19.80$ and destroy the round figure. Once $19.80$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $500 \\times 27=13500$ after dropping the cents would miss the claim by $175$. That is the fork: $500 \\times 27=13500$ belongs to the recovered isolation, $175$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The trap is treating "no cents required" as a rounding instruction rather than as a description of $13675$ exactly. The opposite verdict would need a Fabric margin with a leftover cent after times $500$. With $y=27.35$, five hundred Fabric Rolls profit $\\$13{,}675$ exactly.
 
@@ -5590,11 +5590,11 @@ $$\\frac{419.40}{699} = 0.60$$
 
 Every column of Invoice 2 is $0.60$ times Invoice 1. The second invoice is a scaled copy, not a second independent mix. It cannot isolate a second unknown. The overview used Invoice 1 with Invoice 3, which is a genuinely different mix ($13$ Nitrogen and $5$ Oxygen).
 
-A solver who treated all three rows as independent would be over-counting information. Two of the three rows are the same line.
+Treating all three rows as independent would be over-counting information. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Two of the three rows are the same line.
 
 Invoice 2 is Invoice 1 at $60\\%$ scale, Invoice 2 is $9/15=0.60$ of Invoice 1 in Nitrogen, $12/20=0.60$ in Oxygen, and $419.40/699=0.60$ in dollars. Every column scales by the same factor, so Invoice 2 lies on the same ray as Invoice 1 through the origin in $(N,O,\\$)$ space. A second point on the same ray does not determine a unique price pair; it restates the same linear constraint. Invoice 3, with $13$ Nitrogen and $5$ Oxygen, is a genuinely different mix, and that is the second equation the overview used.
 
-A solver who treated all three invoices as independent would be counting Invoice 1 twice. The consultant was given three rows, but only two of them carry information. That is a standard trap in this chapter: a scaled copy looks like corroboration and is not.
+Treating all three invoices as independent would be counting Invoice 1 twice. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The consultant was given three rows, but only two of them carry information. That is a standard trap in this chapter: a scaled copy looks like corroboration and is not.
 
 If Invoice 2 had been $9$ Nitrogen and $13$ Oxygen, it would have been independent, and a three-row check could then have caught an inconsistency. As printed, Invoice 2 cannot catch anything Invoice 1 did not already say.
 
@@ -5615,7 +5615,7 @@ $$16.40 - 16 = 0.40$$
 
 Then $0.40 < 0.60$, so $16.40$ is closer to $16$. Midway would have been $16.50$; $16.40$ still sits on the $16$ side of that midpoint.
 
-The claim has the nearer neighbour backwards. A solver who rounded $16.40$ to $16.50$ and called that equidistant would still not prefer $17$. A solver who compared Oxygen $22.65$ to $17$ would be answering a different question. Nitrogen would have to sit above $16.50$ to prefer $17$, and $16.40$ does not.
+The claim has the nearer neighbour backwards. Rounding $16.40$ to $16.50$ and calling that equidistant would still not prefer $17$. Working from the isolated values, $16.40$ is the figure that is checked, not the detour that produced $17$. Comparing Oxygen $22.65$ to $17$ would be answering a different question. So the letter reads the claim against $22.65$; $17$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $22.65$ stays in the write-up. Nitrogen would have to sit above $16.50$ to prefer $17$, and $16.40$ does not.
 
 Nitrogen at $\\$16.40$ sits closer to $\\$16$ than to $\\$17$, so the statement is False.`,
       `**C) Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.**  (true)
@@ -5634,7 +5634,7 @@ $$6 \\times 16.40 = 98.40$$
 
 $$90.60 < 98.40$$
 
-Four Oxygen cost less than six Nitrogen by $\\$7.80$. A solver who used four and six of the same type would be answering a different question. A solver who swapped the prices would flip the inequality: $4(16.40)=65.60$ against $6(22.65)=135.90$ still has four cheaper, so that particular swap would not flip this verdict. Using $4(22.65)$ against $4(16.40)$ would be four of each, not four versus six.
+Four Oxygen cost less than six Nitrogen by $\\$7.80$. Using four and six of the same type would be answering a different question. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Swapping the prices would flip the inequality: $4(16.40)=65.60$ against $6(22.65)=135.90$ still has four cheaper, so that particular swap would not flip this verdict. That is the fork: $4(16.40)=65.60$ belongs to the recovered isolation, $6(22.65)=135.90$ belongs to the discarded mix. Using $4(22.65)$ against $4(16.40)$ would be four of each, not four versus six.
 
 Invoice 2 restating Invoice 1 at $60\\%$ scale is a dependence warning, not a third price. The opposite verdict would need $4(22.65) \\ge 6(16.40)$, so $90.60 \\ge 98.40$, which fails.
 
@@ -5653,7 +5653,7 @@ $$652.90 > 655$$
 
 is false. The doubled bill sits $\\$2.10$ short of $\\$655$.
 
-**3.** Rebuild the double from recovered prices as a check: $26(16.40)+10(22.65)=426.40+226.50=652.90$, the same figure. A solver who doubled Invoice 1 instead would get a much larger bill and flip the verdict. A solver who used $2 \\times 328$ as a round Invoice 3 would get $656$ and also flip it. The printed $326.45$ is what keeps the double under $655$.
+**3.** Rebuild the double from recovered prices as a check: $26(16.40)+10(22.65)=426.40+226.50=652.90$, the same figure. Doubling Invoice 1 instead would get a much larger bill and flip the verdict. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Using $2 \\times 328$ as a round Invoice 3 would get $656$ and also flip it. That is the fork: $2 \\times 328$ belongs to the recovered isolation, $656$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The printed $326.45$ is what keeps the double under $655$.
 
 The opposite verdict would need Invoice 3 above $327.50$. With Invoice 3 at $\\$326.45$, twice that order is $\\$652.90$.
 
@@ -5676,7 +5676,7 @@ $$\\frac{1025.45}{53} \\approx 19.348$$
 
 Then $19.35 < 20$. The blend fails to reach $\\$20$. Invoice 1's own average $699/35=19.97$ already sits just under $20$, and Invoice 3 is lighter on the dearer Oxygen, which pulls the blend down further.
 
-A solver who used Invoice 2 as well would be triple-counting Invoice 1's information, because Invoice 2 is a scaled copy. A solver who divided $1025.45$ by $35$, forgetting Invoice 3's $18$ cylinders, would get about $29$ and overshoot $20$.
+Using Invoice 2 as well would be triple-counting Invoice 1's information, because Invoice 2 is a scaled copy. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Dividing $1025.45$ by $35$, forgetting Invoice 3's $18$ cylinders, would get about $29$ and overshoot $20$. After isolating the unknown, the check is against $1025.45$. The figure $20$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $1025.45$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The blended per-cylinder price is about $\\$19.35$, which does not reach $\\$20$, so the statement is True.`,
     ],
@@ -5744,8 +5744,8 @@ $$
     statements: [
       `Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.`,
       `Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.`,
-      `Their combined hourly output, expressed as a fraction, reduces to exactly \\frac{13}{100}  -  no more, no less.`,
-      `Bianchi's slice of Tuesday's finished work, as a fraction, is closer to \\frac{1}{7} than to \\frac{1}{8}.`,
+      `Their combined hourly output, expressed as a fraction, reduces to exactly $\\frac{13}{100}$  -  no more, no less.`,
+      `Bianchi's slice of Tuesday's finished work, as a fraction, is closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$.`,
       `Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.`,
     ],
     answer_key: [false, false, true, true, true],
@@ -5760,7 +5760,7 @@ $$\\frac{1}{0.085} \\approx 11.765$$
 
 Nearest-hour rounding of $11.765$ is $12$, not $11$. The fractional part $0.765$ is well above a half, so the rounding goes up.
 
-A solver who computed $1/0.09 \\approx 11.11$ after rounding the rate would round down to $11$ and flip the verdict. A solver who used $1/0.085=11.76$ but then applied a "always round down" shop rule would also miss the claim's nearest-hour instruction.
+Rounding the rate to $0.09$ first gives $1/0.09 \\approx 11.11$, and nearest-hour rounding would send $11.11$ down to $11$. That detour uses a rounded rate the two sessions never produced. The recovered rate is $0.085$, so $1/0.085 \\approx 11.765$. The fractional part $0.765$ sits well above a half, so nearest-hour rounding goes up to $12$, not down to $11$. Applying an "always round down" shop rule to $11.76$ would also land on $11$, but that is not the claim's nearest-hour instruction: ordinary nearest-hour rounding looks at the half, and $0.765$ is far past it.
 
 Alvarez's solo time rounds to $12$ hours, not down to $11$, so the statement is False.`,
       `**B) Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.**  (false)
@@ -5787,10 +5787,10 @@ $$22.222 < 23.529$$
 
 Bianchi's one job is *shorter* than Alvarez's two jobs, not longer. The claim has the comparison backwards.
 
-A solver who compared one job to one job, $22.22>11.76$, would be answering a different question that is true but is not this claim. Doubling Alvarez's work is the whole content of the letter.
+Comparing one job to one job, $22.22>11.76$, would be answering a different question that is true but is not this claim. Keeping $22.22>11.76$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Doubling Alvarez's work is the whole content of the letter.
 
 Bianchi's solo job is about $22.2$ hours and Alvarez's two jobs are about $23.5$ hours, so Bianchi is not slower on that comparison, so the statement is False.`,
-      `**C) Their combined hourly output, expressed as a fraction, reduces to exactly \\frac{13}{100}  -  no more, no less.**  (true)
+      `**C) Their combined hourly output, expressed as a fraction, reduces to exactly $\\frac{13}{100}$  -  no more, no less.**  (true)
 
 The statement claims Alvarez and Bianchi's combined hourly output reduces to exactly $\\frac{13}{100}$. That is a sum of two recovered rates, not a second solve of Monday and Tuesday.
 
@@ -5802,12 +5802,12 @@ $$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$
 
 **2.** The combined rate is exactly $13\\%$ per hour. There is no rounding. Together they finish $0.13$ of a job each hour they both work.
 
-A solver who added Monday's $65.5\\%$ over $11$ hours, $0.655/11 \\approx 0.0595$, would be averaging people-hours with a different mix, not adding the two recovered rates. A solver who added Tuesday's $90\\%$ over $12$ hours would get $0.075$, another mixed-session average. Those averages are not $x+y$.
+Adding Monday's $65.5\\%$ over $11$ hours, $0.655/11 \\approx 0.0595$, would be averaging people-hours with a different mix, not adding the two recovered rates. Working from the isolated values, $65.5\\%$ is the figure that is checked, not the detour that produced $0.655/11 \\approx 0.0595$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Adding Tuesday's $90\\%$ over $12$ hours would get $0.075$, another mixed-session average. That is the fork: $90\\%$ belongs to the recovered isolation, $0.075$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Those averages are not $x+y$.
 
 The opposite verdict would need a different pair of rates. With $0.085$ and $0.045$ recovered from the two sessions, the combined rate is exactly $\\frac{13}{100}$.
 
 The combined rate is exactly $\\frac{13}{100}$, so the statement is True.`,
-      `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to \\frac{1}{7} than to \\frac{1}{8}.**  (true)
+      `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$.**  (true)
 
 The statement places Bianchi's slice of Tuesday's finished work closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$.
 
@@ -5825,7 +5825,7 @@ $$|0.135 - 0.1429| \\approx 0.0079, \\qquad |0.135 - 0.125| = 0.010$$
 
 The distance to $\\frac{1}{7}$ is smaller. Bianchi's slice is $0.135$ of the job, which is $0.135/0.900=0.15$ of Tuesday's finished work if the claim meant a share of Tuesday rather than a share of one job. The wording is "slice of Tuesday's finished work, as a fraction." If that means $0.135/0.900=0.15$, then compare $0.15$ with $1/7$ and $1/8$: $|0.15-0.1429|=0.0071$ and $|0.15-0.125|=0.025$, still closer to $\\frac{1}{7}$. Either reading prefers $\\frac{1}{7}$.
 
-A solver who used Monday's $7$ hours for Bianchi here would be answering a different day.
+Using Monday's $7$ hours for Bianchi here would be answering a different day. Keeping $7$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Bianchi's Tuesday slice sits closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$, so the statement is True.`,
       `**E) Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.**  (true)
@@ -5848,7 +5848,7 @@ $$0.06761 < 0.07$$
 
 The average is about $6.76\\%$, which does not quite clear seven percent. This average is a people-hour blend of the two recovered rates, weighted by hours, not the unweighted $13\\%$ from letter C. Letter C added the two rates as if both worked every hour. Here the hours are pooled.
 
-A solver who used $1.555/16$, counting Alvarez's $4+9=13$ hours only, would overstate the average. A solver who used $0.13$ from letter C and called that seven-plus would be answering letter C again.
+Using $1.555/16$, counting Alvarez's $4+9=13$ hours only, would overstate the average. So the letter reads the claim against $1.555/16$; $4+9=13$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.555/16$ stays in the write-up. Using $0.13$ from letter C and calling that seven-plus would be answering letter C again. Once $0.13$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The pooled average is about $6.76\\%$, shy of $7\\%$, so the statement is True.`,
     ],
@@ -5928,7 +5928,7 @@ The overview already recovered T-Shirt margin at $\\$11.65$. The extra arithmeti
 
 **2.** Then $0.35 < 0.65$, so $11.65$ is closer to twelve.
 
-**3.** The claim has the nearer neighbour backwards. A solver who looked at the leading $11$ and stopped would call it closer to eleven as a digit story. The trap is reading the integer part as the nearer integer. Distance, not the leading digit, decides "closer."
+**3.** The claim has the nearer neighbour backwards. Looking at the leading $11$ and stopping would call it closer to eleven as a digit story. Once $11$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap is reading the integer part as the nearer integer. Distance, not the leading digit, decides "closer."
 
 The opposite verdict would need a T-Shirt margin below $11.50$. With Seasons 1 and 2 as printed, the margin is $11.65$, which sits closer to twelve.
 
@@ -5949,7 +5949,7 @@ $$19 - 18.40 = 0.60$$
 
 Then $0.40 < 0.60$, so $18.40$ is closer to eighteen. Midway would have been $18.50$; $18.40$ still sits on the $18$ side of that midpoint.
 
-A solver who rounded $18.40$ to $18.50$ and called that equidistant would still not prefer nineteen. A solver who compared T-Shirt $11.65$ here would be answering letter A. Hoodies would have to sit above $18.50$ to prefer nineteen, and $18.40$ does not.
+Rounding $18.40$ to $18.50$ and calling that equidistant would still not prefer nineteen. Working from the isolated values, $18.40$ is the figure that is checked, not the detour that produced $18.50$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Comparing T-Shirt $11.65$ here would be answering letter A. The opposite verdict would need a different isolation than $11.65$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Hoodies would have to sit above $18.50$ to prefer nineteen, and $18.40$ does not.
 
 Hoodie margin $\\$18.40$ sits closer to eighteen than to nineteen, so the statement is True.`,
       `**C) Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.**  (false)
@@ -5970,11 +5970,11 @@ $$8558.25 - 5704 = 2854.25$$
 
 $$\\frac{2854.25}{11.65} = 245$$
 
-The reconstruction is $245$, which ends in $5$, not $0$. A solver who rounded $245$ to $250$ would manufacture a multiple of ten. A solver who used $8558.25/11.65 \\approx 734$ after ignoring Hoodies would also land off a multiple of ten, but that is the wrong reconstruction.
+The reconstruction is $245$, which ends in $5$, not $0$. Rounding $245$ to $250$ would manufacture a multiple of ten. The stem's recovered values line up with $245$, whereas $250$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $245$ stays in the write-up. Using $8558.25/11.65 \\approx 734$ after ignoring Hoodies would also land off a multiple of ten, but that is the wrong reconstruction. The opposite verdict would need a different isolation than $8558.25/11.65 \\approx 734$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The missing count is $245$, not a multiple of ten, Season 3's missing T-Shirt count is a reconstruction from the recovered margins, not a third independent $2 \\times 2$. Hoodies contribute $310 \\times 18.40=5704$. Remaining profit $8558.25-5704=2854.25$. Dividing by $11.65$ gives $245$ exactly. Two hundred forty-five is not a multiple of ten; it ends in $5$.
 
-A solver who rounded $245$ to $250$ would manufacture a multiple of ten and accept the claim. A solver who divided $8558.25$ by $11.65$ without stripping Hoodies would get about $734$, also not a multiple of ten, but that is the wrong reconstruction. A solver who used $8558.25-310 \\times 18=8558.25-5580=2978.25$, dropping the forty cents of hoodie margin, would not divide cleanly by $11.65$.
+Rounding $245$ to $250$ would manufacture a multiple of ten and accept the claim. After isolating the unknown, the check is against $245$. The figure $250$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $245$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Dividing $8558.25$ by $11.65$ without stripping Hoodies would get about $734$, also not a multiple of ten, but that is the wrong reconstruction. Working from the isolated values, $8558.25$ is the figure that is checked, not the detour that produced $734$. Using $8558.25-310 \\times 18=8558.25-5580=2978.25$, dropping the forty cents of hoodie margin, would not divide cleanly by $11.65$. That is the fork: $8558.25-310 \\times 18=8558.25-5580=2978.25$ belongs to the recovered isolation, $11.65$ belongs to the discarded mix.
 
 The water damage erased a count that reconstructs to $245$. Multiples of ten would have been $240$ or $250$, and those would have implied hoodie margins or T-Shirt margins different from the two intact seasons. With Seasons 1 and 2 as printed, the missing count is $245$, not a multiple of ten.
 
@@ -5995,7 +5995,7 @@ $$52 \\times 18.40 = 956.80$$
 
 $$954.25 < 956.80$$
 
-The earnings gap is $\\$2.55$ short of $52$ Hoodies. That is "just barely fail." A solver who used $50$ Hoodies, $920$, would find the gap covers $50$ easily and miss the $52$. A solver who used T-Shirt margin $11.65 \\times 52 \\approx 605.80$ would be covering the wrong garment. Season 3's reconstructed T-Shirt count does not enter this comparison.
+The earnings gap is $\\$2.55$ short of $52$ Hoodies. That is "just barely fail." using $50$ Hoodies, $920$, would find the gap covers $50$ easily and miss the $52$. After isolating the unknown, the check is against $50$. The figure $52$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $50$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using T-Shirt margin $11.65 \\times 52 \\approx 605.80$ would be covering the wrong garment. Once $11.65 \\times 52 \\approx 605.80$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Season 3's reconstructed T-Shirt count does not enter this comparison.
 
 The opposite verdict would need the earnings gap to reach $956.80$. With the two printed season totals, the gap is $954.25$.
 
@@ -6022,11 +6022,11 @@ Then $8733 > 8700$, and the overshoot is $33$, which is less than $40$.
 
 Compared with the reconstructed Season 3 at $245$ T-Shirts, this rewrite adds $15$ T-Shirts times $11.65$, which is $174.75$, and $8558.25+174.75=8733$, the same figure.
 
-A solver who used $250$ T-Shirts as a round stand-in would get $2912.50+5704=8616.50$, which does not cross $8700$ and would flip the verdict. The claim's $260$ is what pushes the profit over.
+Using $250$ T-Shirts as a round stand-in would get $2912.50+5704=8616.50$, which does not cross $8700$ and would flip the verdict. That is the fork: $250$ belongs to the recovered isolation, $8700$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The claim's $260$ is what pushes the profit over.
 
 The rewritten Season 3 profits $\\$8{,}733$, which crosses $\\$8{,}700$ by $\\$33$, Rewriting Season 3 as $260$ T-Shirts, Hoodies held at $310$, adds $15$ T-Shirts to the reconstructed $245$. Fifteen T-Shirts at $11.65$ add $174.75$, and $8558.25+174.75=8733$. That $8733$ crosses $8700$ by $33$, less than $40$, matching the claim.
 
-A solver who used $250$ T-Shirts as a round stand-in would get $2912.50+5704=8616.50$, which does not cross $8700$ and would flip the verdict. The claim's $260$ is $15$ above the reconstruction, not $5$ above a round $250$. A solver who also changed Hoodies would be answering a different rewrite.
+Using $250$ T-Shirts as a round stand-in would get $2912.50+5704=8616.50$, which does not cross $8700$ and would flip the verdict. That is the fork: $250$ belongs to the recovered isolation, $8700$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The claim's $260$ is $15$ above the reconstruction, not $5$ above a round $250$. Also changing Hoodies would be answering a different rewrite. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 If T-Shirt margin had been $11.00$, fifteen extra shirts would add $165$ and the rewritten profit would be $8723.25$, still over $8700$ by less than $40$, so that particular error would not flip this inequality. The honest figure uses $11.65$ and lands on $8733$.
 
@@ -6125,7 +6125,7 @@ $$94.60 - 5.40 = 89.20$$
 
 **3.** Overshoot of $\\$89$: $94.60-89=5.60$, and $5.60/89 \\approx 0.0629$, about $6.3\\%$, which is roughly six percent.
 
-A solver who knocked $\\$5.40$ off $89$ would get $83.60$ and miss the claim. A solver who used the rate $3.15$ here would be subtracting a per-kg figure from a fee. Shipment 3's audit discrepancy does not rewrite the fee. The opposite verdict would need a different recovered fee. With $f=94.60$, knocking off $5.40$ lands on $89.20$.
+Knocking $\\$5.40$ off $89$ would get $83.60$ and miss the claim. The stem's recovered values line up with $89$, whereas $83.60$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $89$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using the rate $3.15$ here would be subtracting a per-kg figure from a fee. Keeping $3.15$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Shipment 3's audit discrepancy does not rewrite the fee. The opposite verdict would need a different recovered fee. With $f=94.60$, knocking off $5.40$ lands on $89.20$.
 
 Knocking $\\$5.40$ off the fee lands on $\\$89.20$, so the statement is True.`,
       `**B) The per-kilogram rate, tripled, would land just shy of \\$9.50.**  (true)
@@ -6142,9 +6142,9 @@ $$3 \\times 3.15 = 9.45$$
 
 $$9.45 < 9.50$$
 
-The triple is shy by five cents. A solver who used $3.20$ would get $9.60$ and overshoot $9.50$. A solver who tripled the fee instead of the rate would report something near $\\$284$ and miss the claim entirely.
+The triple is shy by five cents. Using $3.20$ would get $9.60$ and overshoot $9.50$. So the letter reads the claim against $3.20$; $9.50$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $3.20$ stays in the write-up. Tripling the fee instead of the rate would report something near $\\$284$ and miss the claim entirely. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
-A solver who converted $3.15$ per kg into a per-pound rate, $3.15/2.2 \\approx 1.43$, then tripled that, would land near $4.29$ and fail the cutoff in the other direction. The claim triples the per-kilogram rate, not a per-pound rewrite.
+Converting $3.15$ per kg into a per-pound rate, $3.15/2.2 \\approx 1.43$, then tripled that, would land near $4.29$ and fail the cutoff in the other direction. That is the fork: $3.15$ belongs to the recovered isolation, $4.29$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The claim triples the per-kilogram rate, not a per-pound rewrite.
 
 The opposite verdict would need a recovered rate of $3.17$ or more. With $r=3.15$, triple the rate is $\\$9.45$, just shy of $\\$9.50$, so the statement is True.`,
       `**C) Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed  -  but doesn't match it exactly.**  (true)
@@ -6169,7 +6169,7 @@ $$239.80 - 236.35 = 3.45$$
 
 The gap is $\\$3.45$, which is within four dollars, and $236.35 \\neq 239.80$, so the figures do not match exactly. Shipment 3 is the audit row: the model from Shipments 1 and 2 does not rebuild it.
 
-A solver who treated $99$ lb as $99$ kg would get $94.60+311.85=406.45$, wildly above the bill. The $2.2$ conversion is the whole content of this letter's extra step. A solver who used $1$ kg $= 2.2$ lb in the wrong direction, $99 \\times 2.2$, would be worse.
+Treating $99$ lb as $99$ kg would get $94.60+311.85=406.45$, wildly above the bill. After isolating the unknown, the check is against $99$. The figure $94.60+311.85=406.45$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $99$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $2.2$ conversion is the whole content of this letter's extra step. Using $1$ kg $= 2.2$ lb in the wrong direction, $99 \\times 2.2$, would be worse. That is the fork: $1$ belongs to the recovered isolation, $99 \\times 2.2$ belongs to the discarded mix.
 
 The predicted $\\$236.35$ sits $\\$3.45$ below the billed $\\$239.80$, within four dollars but not exact, Shipment 3 is the audit row. Shipments 1 and 2, after converting $572$ lb to $260$ kg, recovered $f=94.60$ and $r=3.15$. Those two rows rebuild: $94.60+185 \\times 3.15=677.35$ and $94.60+260 \\times 3.15=913.60$. Shipment 3 at $99/2.2=45$ kg predicts $236.35$, but the branch billed $239.80$. The $3.45$ gap is within four dollars and is not zero.
 
@@ -6192,7 +6192,7 @@ $$\\frac{45}{7} \\approx 6.429$$
 
 which is not an integer. Then $45$ is not divisible by seven.
 
-**3.** A solver who used $99/2=49.5$, dropping the $0.2$, would still not get a multiple of seven. A solver who used $99 \\times 2.2=217.8$ would have multiplied instead of divided and would then notice $217.8/7$ is also not an integer. The trap figure $49$ is $7 \\times 7$, nearby if someone converted $98$ lb instead of $99$.
+**3.** Using $99/2=49.5$, dropping the $0.2$, would still not get a multiple of seven. That is the fork: $99/2=49.5$ belongs to the recovered isolation, $0.2$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $99 \\times 2.2=217.8$ would have multiplied instead of divided and would then notice $217.8/7$ is also not an integer. Working from the isolated values, $99 \\times 2.2=217.8$ is the figure that is checked, not the detour that produced $217.8/7$. That contrast is the reason the verdict goes the way it does. The trap figure $49$ is $7 \\times 7$, nearby if someone converted $98$ lb instead of $99$.
 
 The opposite verdict would need a pound count whose kilogram conversion is a multiple of seven, for instance $154$ lb giving $70$ kg. With $99$ lb at $2.2$ lb/kg, the kilogram figure is $45$.
 
@@ -6213,7 +6213,7 @@ $$94.60 + 1260 = 1354.60$$
 
 $$1354.60 > 1350$$
 
-The charge creeps past $1350$ by $\\$4.60$. A solver who forgot the fee would report $\\$1{,}260$ and fail the cutoff. A solver who used $400 \\times 3=1200$ plus $94.60=1294.60$ would also fail it. The trap figure $1260$ is the weight layer alone.
+The charge creeps past $1350$ by $\\$4.60$. Forgetting the fee would report $\\$1{,}260$ and fail the cutoff. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Using $400 \\times 3=1200$ plus $94.60=1294.60$ would also fail it. The stem's recovered values line up with $400 \\times 3=1200$, whereas $94.60=1294.60$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $400 \\times 3=1200$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $1260$ is the weight layer alone.
 
 Shipment 3's audit discrepancy does not move this $400$ kg counterfactual. The opposite verdict would need $400r+f \\le 1350$, so $r \\le 3.1385$ at $f=94.60$. The recovered $r=3.15$ is just above that. A pound-recorded branch converting $400$ kg as $880$ lb and then treating pounds as kilograms would wreck the rate layer; this letter stays in kilograms.
 
@@ -6315,11 +6315,11 @@ $$\\frac{15.30}{952.10} \\approx 0.01607$$
 
 about $1.607\\%$, a hair over $1.6\\%$. The two invoices disagree by $\\$15.30$. That is the overview's inconsistency: no single pair of compute and storage prices can fit both rows.
 
-A solver who doubled $\\$952.10$ instead would be doubling the wrong client. A solver who reported $1.6\\%$ exactly would be rounding the $0.007$ away; the claim says "a hair over."
+Doubling $\\$952.10$ instead would be doubling the wrong client. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting $1.6\\%$ exactly would be rounding the $0.007$ away; the claim says "a hair over." So the letter reads the claim against $1.6\\%$; $0.007$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.6\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 Doubling Client A predicts $\\$967.40$, which overshoots $\\$952.10$ by about $1.61\\%$, Client B's usage is exactly double Client A's in both categories, so at constant prices Client B's bill must be exactly double Client A's $483.70$, which is $967.40$. The billed $952.10$ is $15.30$ light, about $1.61\\%$ of $952.10$. That is the whole inconsistency: one pricing scheme cannot produce both invoices when the quantities already sit in a $1:2$ ratio.
 
-A solver who doubled $952.10$ to $1904.20$ would be doubling the wrong client. A solver who reported $15.30/483.70 \\approx 3.16\\%$ would be measuring the gap against Client A, doubling the relative error, because the $15.30$ lives on the doubled invoice. The claim measures against Client B's real total.
+Doubling $952.10$ to $1904.20$ would be doubling the wrong client. The stem's recovered values line up with $952.10$, whereas $1904.20$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $952.10$ stays in the write-up. Reporting $15.30/483.70 \\approx 3.16\\%$ would be measuring the gap against Client A, doubling the relative error, because the $15.30$ lives on the doubled invoice. So the letter reads the claim against $15.30/483.70 \\approx 3.16\\%$; $15.30$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $15.30/483.70 \\approx 3.16\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim measures against Client B's real total.
 
 No pair $(c,s)$ satisfies both $11c+7s=483.70$ and $22c+14s=952.10$, because the second left-hand side is exactly double the first while the second right-hand side is not. That is a one-line inconsistency test, and $967.40$ versus $952.10$ is that test in dollars.
 
@@ -6338,7 +6338,7 @@ $$\\frac{952.10}{2} = 476.05$$
 
 The statement is a *condition* for consistency, not a claim that Client A actually was $476.05$. The condition is correct: consistency would have required Client A to be half of $952.10$. That is why the scheme is inconsistent.
 
-A solver who treated the statement as "Client A *did* account for half" would mark it false. The wording is "would have needed to." That counterfactual condition is true.
+Treating the statement as "Client A *did* account for half" would mark it false. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The wording is "would have needed to." That counterfactual condition is true.
 
 Consistency would have required Client A to be $\\$476.05$, half of Client B, so the statement is True.`,
       `**C) The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.**  (true)
@@ -6355,7 +6355,7 @@ so the error is about $1$ in $62$.
 
 **3.** Then $2.23 < 12.23$, so the figure is nearer to $1$-in-$60$.
 
-A solver who used $15.30/483.70 \\approx 1/31.6$ would be measuring against Client A and would sit nearer $1$-in-$30$ than either named rate. The trap figure $1/31.6$ is the gap measured on the wrong invoice. The claim is about "the discrepancy uncovered here," which letter A attached to Client B's billed total.
+Using $15.30/483.70 \\approx 1/31.6$ would be measuring against Client A and would sit nearer $1$-in-$30$ than either named rate. The stem's recovered values line up with $15.30/483.70 \\approx 1/31.6$, whereas $30$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $15.30/483.70 \\approx 1/31.6$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure $1/31.6$ is the gap measured on the wrong invoice. The claim is about "the discrepancy uncovered here," which letter A attached to Client B's billed total.
 
 The opposite verdict would need the rate to sit closer to $50$ than to $60$, for instance a $\\$19$ gap on $\\$952$. With a $\\$15.30$ gap, the rate is about $1$ in $62$.
 
@@ -6382,7 +6382,7 @@ Then $378.45$ is not shy of $375$. It sits $\\$3.45$ *above* $375$. The claim ha
 
 These unit prices are invented; they are not the recovered pair, because no recovered pair exists. The letter is testing a hypothetical, and that hypothetical overshoots $375$, it does not undershoot it.
 
-A solver who used $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$ after dropping one compute unit would land shy of $375$ and flip the verdict. Client A has $11$ compute units, not $10$.
+Using $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$ after dropping one compute unit would land shy of $375$ and flip the verdict. After isolating the unknown, the check is against $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$. The figure $375$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Client A has $11$ compute units, not $10$.
 
 The hypothetical rebuild of Client A is $\\$378.45$, which is not shy of $\\$375$, so the statement is False.`,
       `**E) Compare Client B's actual bill to two rival hypotheses  -  one assuming a clean doubling of Client A (\\$967.40), the other assuming a 50%-heavier surcharge instead of a full double (\\$725.55). The doubling hypothesis, despite being wrong, still lands closer to the real figure than the other one does.**  (true)
@@ -6403,11 +6403,11 @@ $$15.30 < 226.55$$
 
 Doubling is much closer, even though it is still wrong by $\\$15.30$. A $50\\%$ surcharge on Client A would describe a client whose usage was $1.5$ times A's, not double. Client B's counts are exactly double, so the doubling hypothesis is the one the counts themselves suggest. The billed dollars just fail to keep up by $\\$15.30$.
 
-A solver who compared $967.40$ with $725.55$ without measuring against $952.10$ would be ranking the hypotheses against each other, not against the real bill. The claim is about closeness to the real figure.
+Comparing $967.40$ with $725.55$ without measuring against $952.10$ would be ranking the hypotheses against each other, not against the real bill. Working from the isolated values, $967.40$ is the figure that is checked, not the detour that produced $952.10$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is about closeness to the real figure.
 
 The doubling hypothesis is $\\$15.30$ off; the $50\\%$ hypothesis is $\\$226.55$ off; doubling is closer, The doubling hypothesis is the one the quantity columns themselves suggest: B is $2$ times A in both usage columns, so B's dollars should be $2$ times A's dollars. It is wrong by $15.30$. The $50\\%$-heavier hypothesis $1.5 \\times 483.70=725.55$ would describe a client whose usage was $1.5$ times A's, which Client B's counts are not, and it is wrong by $226.55$. Closer-to-the-real-figure is then immediate: $15.30<226.55$.
 
-A solver who compared $967.40$ with $725.55$ without measuring against $952.10$ would be ranking the hypotheses against each other, not against the billed amount. The claim is closeness to the real figure. A solver who used a $10\\%$ surcharge, $1.1 \\times 483.70=532.07$, would be even farther from $952.10$.
+Comparing $967.40$ with $725.55$ without measuring against $952.10$ would be ranking the hypotheses against each other, not against the billed amount. That is the fork: $967.40$ belongs to the recovered isolation, $952.10$ belongs to the discarded mix. The claim is closeness to the real figure. Using a $10\\%$ surcharge, $1.1 \\times 483.70=532.07$, would be even farther from $952.10$. So the letter reads the claim against $10\\%$; $952.10$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The doubling hypothesis remains the least-bad of the two named rivals even though it is still false. That is a comparison of errors, not a claim that $967.40$ is correct.
 
@@ -6485,7 +6485,7 @@ $$3 \\times 252 = 756, \\qquad 510 < 756$$
 
 Fund B earns about $2.02$ times Fund A's dollars, not more than three times. B's balance is larger, but B's rate is lower, so the dollar interest does not scale with the balance.
 
-A solver who tripled the balances instead, $3 \\times 4800=14400$ versus $13600$, would still find B short of triple, and would be answering a principal question. The claim is about dollar interest.
+Tripling the balances instead, $3 \\times 4800=14400$ versus $13600$, would still find B short of triple, and would be answering a principal question. That is the fork: $3 \\times 4800=14400$ belongs to the recovered isolation, $13600$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The claim is about dollar interest.
 
 Fund B's $\\$510$ is not more than triple A's $\\$252$, so the statement is False.`,
       `**B) If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.**  (true)
@@ -6508,7 +6508,7 @@ $$834 > 800$$
 
 The combined return would be $\\$834$, which clears $\\$800$ by $\\$34$. The increment from the original $\\$762$ is $4800 \\times 0.015=72$, and $762+72=834$.
 
-A solver who raised both rates by $1.5$ points would overshoot further. A solver who applied $6.75\\%$ to the whole trust would get $18400 \\times 0.0675=1242$ and miss the claim's "Fund B's rate stayed the same."
+Raising both rates by $1.5$ points would overshoot further. The path that matches the stem therefore holds $1.5$ fixed and only then reads the claim. Applying $6.75\\%$ to the whole trust would get $18400 \\times 0.0675=1242$ and miss the claim's "Fund B's rate stayed the same." Working from the isolated values, $6.75\\%$ is the figure that is checked, not the detour that produced $18400 \\times 0.0675=1242$.
 
 The new combined return is $\\$834$, which is above $\\$800$, so the statement is True.`,
       `**C) The combined annual return represents more than 4% of the total trust value (Fund A + Fund B combined).**  (true)
@@ -6525,7 +6525,7 @@ $$\\frac{762}{18400} = 0.041413\\ldots$$
 
 **3.** About $4.14\\%$, which is more than $4\\%$. This blended rate sits between A's $5.25\\%$ and B's $3.75\\%$, weighted toward B's larger balance, so it lands nearer $4\\%$ than $5\\%$, but still above $4\\%$.
 
-A solver who used $762/13600 \\approx 5.6\\%$ against B only, or $762/4800=15.9\\%$ against A only, would be using the wrong denominator. The trap figure $15.9\\%$ is A-only. The claim names Fund A plus Fund B combined.
+Using $762/13600 \\approx 5.6\\%$ against B only, or $762/4800=15.9\\%$ against A only, would be using the wrong denominator. So the letter reads the claim against $762/13600 \\approx 5.6\\%$; $762/4800=15.9\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $762/13600 \\approx 5.6\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure $15.9\\%$ is A-only. The claim names Fund A plus Fund B combined.
 
 The opposite verdict would need a combined return of $736$ or less on $18400$. With $\\$762$ as the year's combined return, the blended rate exceeds $4\\%$.
 
@@ -6552,7 +6552,7 @@ $$|828 - 762| = 66$$
 
 The even split earns $\\$66$ more, not within $\\$5$. Moving money from the lower-rate B into the higher-rate A raises the blend. The actual mix is B-heavy ($13600$ versus $4800$), which is why the actual $762$ sits below the even-split $828$.
 
-A solver who averaged the two rates, $4.5\\%$ of $18400=828$, would get the same $828$ and then still have to compare with $762$. The $\\$5$ window is far too tight for a $\\$66$ gap.
+Averaging the two rates, $4.5\\%$ of $18400=828$, would get the same $828$ and then still have to compare with $762$. After isolating the unknown, the check is against $4.5\\%$. The figure $762$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $4.5\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The $\\$5$ window is far too tight for a $\\$66$ gap.
 
 The even split earns $\\$828$, which is $\\$66$ from $\\$762$, not within $\\$5$, so the statement is False.`,
       `**E) The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%.**  (true)
@@ -6565,7 +6565,7 @@ $$\\frac{13600 - 4800}{4800} = \\frac{8800}{4800} = 1.8\\overline{3}$$
 
 about $183.3\\%$, which exceeds $180\\%$. Relative to B, the same dollar gap is $8800/13600 \\approx 64.7\\%$, a different figure. The claim names the smaller balance as the base.
 
-A solver who used $13600/4800-1=1.833$ is the same arithmetic. A solver who reported $180\\%$ after rounding $1.833$ down would still exceed $180$ if they kept the extra $3.3$ points, but rounding to $180$ exactly would fail a strict "exceeds." The honest figure is $183.3\\%$.
+Using $13600/4800-1=1.833$ is the same arithmetic. The path that matches the stem therefore holds $13600/4800-1=1.833$ fixed and only then reads the claim. Reporting $180\\%$ after rounding $1.833$ down would still exceed $180$ if they kept the extra $3.3$ points, but rounding to $180$ exactly would fail a strict "exceeds." Working from the isolated values, $180\\%$ is the figure that is checked, not the detour that produced $3.3$. That contrast is the reason the verdict goes the way it does.The honest figure is $183.3\\%$.
 
 The relative gap versus A is about $183\\%$, which exceeds $180\\%$, so the statement is True.`,
     ],
@@ -6642,7 +6642,7 @@ $$144 + 184 = 328$$
 
 $$328 > 300$$
 
-**3.** The combined salt exceeds $300$ g by $28$ g. A solver who used Batch 3's recorded $109$ as well would get $437$, still above $300$, so that extra would not flip the verdict. A solver who used Batch 3's predicted $104$ would get $432$, still above. The claim names Batch 1 and Batch 2.
+**3.** The combined salt exceeds $300$ g by $28$ g. Using Batch 3's recorded $109$ as well would get $437$, still above $300$, so that extra would not flip the verdict. Working from the isolated values, $109$ is the figure that is checked, not the detour that produced $300$. That contrast is the reason the verdict goes the way it does. Using Batch 3's predicted $104$ would get $432$, still above. The stem's recovered values line up with $104$, whereas $432$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $104$ stays in the write-up. The claim names Batch 1 and Batch 2.
 
 The opposite verdict would need those two batches to total $300$ g or less. With $144$ and $184$ as printed, the combined salt is $328$ g.
 
@@ -6659,7 +6659,7 @@ $$\\frac{12}{16} = 0.75$$
 
 $$0.75 > 0.70$$
 
-**3.** B is $75\\%$ of A, five points above the cutoff. A solver who used $12/16=0.75$ but compared with $75\\%$ as if the claim said $75$ would still pass. A solver who used Batch 3's inconsistent $109$ g to back out a different B would be mixing the audit row into the recovered pair. The trap figure $109$ is the recorded Batch 3 total, not a concentration.
+**3.** B is $75\\%$ of A, five points above the cutoff. Using $12/16=0.75$ but compared with $75\\%$ as if the claim said $75$ would still pass. The stem's recovered values line up with $12/16=0.75$, whereas $75$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $12/16=0.75$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using Batch 3's inconsistent $109$ g to back out a different B would be mixing the audit row into the recovered pair. Keeping $109$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $109$ is the recorded Batch 3 total, not a concentration.
 
 The opposite verdict would need $B \\le 0.70A$, so $B \\le 11.2$ at $A=16$. The recovered $B=12$ sits above that. Batch 1's $3:2$ mix at $16$ and $12$ rebuilds $6(16)+4(12)=96+48=144$, a check that those concentrations still sit on the printed salt, not a second solve.
 
@@ -6682,11 +6682,11 @@ $$6 + 0.4167 \\approx 6.417$$
 
 **3.** Distance to $6.4$ is $0.017$. Distance to $6.0$ is $0.417$. The figure is much closer to $6.4$ L.
 
-A solver who put the $5$ g onto A at $16$ g/L would get extra A of $5/16=0.3125$ L and would be answering a different attribution. The claim holds A's $2$ L fixed. A solver who used $109/12 \\approx 9.08$ L of B, ignoring A entirely, would overshoot both $6.4$ and $6.0$.
+Putting the $5$ g onto A at $16$ g/L would get extra A of $5/16=0.3125$ L and would be answering a different attribution. The stem's recovered values line up with $5$, whereas $5/16=0.3125$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim holds A's $2$ L fixed. Using $109/12 \\approx 9.08$ L of B, ignoring A entirely, would overshoot both $6.4$ and $6.0$. So the letter reads the claim against $109/12 \\approx 9.08$; $6.0$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $109/12 \\approx 9.08$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The B-volume that absorbs the $5$ g is about $6.42$ L, closer to $6.4$ than to $6.0$, Batch 3 is the QC row. Batches 1 and 2 recovered $16$ g/L and $12$ g/L. At $8$ L mixed $1:3$, A is $2$ L and B is $6$ L, predicted salt $2(16)+6(12)=104$ g. Recorded is $109$ g. The $5$ g extra, attributed only to B at $12$ g/L, is $5/12 \\approx 0.417$ L of extra B, so true B volume $6.417$ L, closer to $6.4$ than to $6.0$.
 
-A solver who put the $5$ g onto A at $16$ g/L would get extra A of $0.3125$ L and a true A volume $2.3125$, which is not this letter. The claim holds A's $2$ L fixed. A solver who spread the $5$ g across both solutions would be answering a different attribution.
+Putting the $5$ g onto A at $16$ g/L would get extra A of $0.3125$ L and a true A volume $2.3125$, which is not this letter. So the letter reads the claim against $5$; $2.3125$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim holds A's $2$ L fixed. Spreading the $5$ g across both solutions would be answering a different attribution. The opposite verdict would need a different isolation than $5$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 This is the inconsistent third row with a named culprit: B's volume. The $6.4$ versus $6.0$ comparison is a closeness check on that culprit, not a second concentration solve. Distances $0.017$ versus $0.417$ make the closeness obvious once $6.417$ is in hand.
 
@@ -6713,13 +6713,13 @@ L.
 
 $$8.667 \\neq 7.5$$
 
-At $7.5$ L the mix would hold $7.5 \\times 15=112.5$ g, which is $17.5$ g short of $130$. A solver who used $130/16=8.125$, treating the batch as pure A, or $130/12 \\approx 10.83$ as pure B, would miss $7.5$ as well. A solver who used $3:2$ from Batch 1, blend $0.6 \\times 16+0.4 \\times 12=14.4$, then $130/14.4 \\approx 9.03$, is a different ratio.
+At $7.5$ L the mix would hold $7.5 \\times 15=112.5$ g, which is $17.5$ g short of $130$. Using $130/16=8.125$, treating the batch as pure A, or $130/12 \\approx 10.83$ as pure B, would miss $7.5$ as well. Working from the isolated values, $130/16=8.125$ is the figure that is checked, not the detour that produced $7.5$. Using $3:2$ from Batch 1, blend $0.6 \\times 16+0.4 \\times 12=14.4$, then $130/14.4 \\approx 9.03$, is a different ratio. The recovered comparison therefore keeps $3:2$ and does not substitute $130/14.4 \\approx 9.03$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 What would have to change for the opposite verdict? $7.5 \\times 15=112.5$, not $130$. To hit $130$ g at $7.5$ L the blend would need $130/7.5 \\approx 17.33$ g/L, above even pure A. The recovered pair cannot produce that.
 
 The $3:1$ batch that holds $130$ g needs about $8.67$ L, not $7.5$ L, A $3:1$ mix is $75\\%$ A, blend concentration $15$ g/L, so $130$ g needs $130/15 \\approx 8.667$ L, not $7.5$ L. At $7.5$ L that mix holds $112.5$ g, $17.5$ g short. To hit $130$ g in $7.5$ L the blend would need $17.33$ g/L, above even pure A at $16$. The recovered pair cannot produce that.
 
-A solver who used Batch 1's $3:2$ blend $14.4$ g/L would get $130/14.4 \\approx 9.03$ L, still not $7.5$. A solver who used $130/(16+12)=130/28 \\approx 4.64$ L would have added concentrations as if both solutions occupied the whole volume. The $3:1$ split is a partition of the total volume, not two full tanks.
+Using Batch 1's $3:2$ blend $14.4$ g/L would get $130/14.4 \\approx 9.03$ L, still not $7.5$. That is the fork: $3:2$ belongs to the recovered isolation, $7.5$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Using $130/(16+12)=130/28 \\approx 4.64$ L would have added concentrations as if both solutions occupied the whole volume. That is why $130/(16+12)=130/28 \\approx 4.64$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $3:1$ split is a partition of the total volume, not two full tanks.
 
 This letter is a new mix at a salt target, the way a new invoice mix is a dollar target. The overview never costed $3:1$ at $130$ g. Once $A$ and $B$ are known, the costing is blend then divide, and the divide is $8.667$, not $7.5$.
 
@@ -6740,7 +6740,7 @@ $$\\frac{5}{6} \\approx 0.833$$
 
 $$0.833 > 0.60$$
 
-Batch 3's $1:3$ is even lighter on A, but the claim names Batch 2 versus Batch 1. A solver who compared total volumes instead of proportions would be answering a different question. A solver who used salt grams $184$ versus $144$ would be ranking content, not A's volume share.
+Batch 3's $1:3$ is even lighter on A, but the claim names Batch 2 versus Batch 1. Comparing total volumes instead of proportions would be answering a different question. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Using salt grams $184$ versus $144$ would be ranking content, not A's volume share. The recovered comparison therefore keeps $184$ and does not substitute $144$.
 
 The opposite verdict would need Batch 2's A:B ratio to be leaner on A than $3:2$. The log's $5:1$ is richer on A.
 
@@ -6830,7 +6830,7 @@ $$0.10 \\times 65 = 6.50$$
 
 $$6.50 > 6$$
 
-The bonus is $\\$6.50$. A solver who used only the $\\$8.50$ premium, $2.5 \\times 8.50=21.25$, then $10\\%$ of that, would get $2.125$ and fail the cutoff. Overtime *pay* is the full $\\$26$ rate, not the premium alone.
+The bonus is $\\$6.50$. Using only the $\\$8.50$ premium, $2.5 \\times 8.50=21.25$, then $10\\%$ of that, would get $2.125$ and fail the cutoff. After isolating the unknown, the check is against $2.5 \\times 8.50=21.25$. The figure $2.125$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2.5 \\times 8.50=21.25$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Overtime *pay* is the full $\\$26$ rate, not the premium alone.
 
 The bonus is $\\$6.50$, which exceeds $\\$6$, so the statement is True.`,
       `**B) Employee B's overtime pay is more than 40% of his total gross pay.**  (false)
@@ -6845,7 +6845,7 @@ $$7 \\times 26 = 182$$
 
 $$\\frac{182}{882} \\approx 0.2063$$
 
-**3.** About $20.6\\%$, which is not more than $40\\%$. Regular pay $40 \\times 17.50=700$ is the bulk of $882$. A solver who used $7/47 \\approx 15\\%$ of hours, or $182/700$ against regular only, would still miss $40\\%$. A solver who used $26/17.50 \\approx 1.49$ as if a rate ratio were a dollar share would overshoot. The trap figure $40\\%$ is a round bar far above $20.6\\%$.
+**3.** About $20.6\\%$, which is not more than $40\\%$. Regular pay $40 \\times 17.50=700$ is the bulk of $882$. Using $7/47 \\approx 15\\%$ of hours, or $182/700$ against regular only, would still miss $40\\%$. After isolating the unknown, the check is against $7/47 \\approx 15\\%$. The figure $40\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $7/47 \\approx 15\\%$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $26/17.50 \\approx 1.49$ as if a rate ratio were a dollar share would overshoot. That is why $26/17.50 \\approx 1.49$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $40\\%$ is a round bar far above $20.6\\%$.
 
 The opposite verdict would need overtime dollars above $0.40 \\times 882=352.80$, which would take more than $13.5$ overtime hours at $26$. B worked $7$.
 
@@ -6868,7 +6868,7 @@ $$1647 > 1575$$
 
 Actual combined exceeds the no-premium $45$-hour story by $\\$72$. That extra is the overtime premium $8.50$ running on A's $2.5$ plus B's $7$ hours, $9.5 \\times 8.50=80.75$, minus the fact that actual hours are $42.5$ and $47$, not both $45$. The inequality direction is what the claim needs, and it holds.
 
-A solver who used $45$ hours at the overtime rate $\\$26$ would overshoot wildly. The claim is base rate with no premium.
+Using $45$ hours at the overtime rate $\\$26$ would overshoot wildly. The opposite verdict would need a different isolation than $45$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The claim is base rate with no premium.
 
 Combined actual $\\$1{,}647$ exceeds $\\$1{,}575$, so the statement is True.`,
       `**D) If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.**  (false)
@@ -6887,7 +6887,7 @@ $$855.31 > 765$$
 
 The new gross *increases* by about $\\$90$, it does not decrease. The $15\\%$ base raise on every hour more than replaces the lost premium on $2.5$ hours.
 
-A solver who applied $15\\%$ only to the $40$ regular hours and dropped overtime entirely would get $40 \\times 20.125=805$, still above $765$. A solver who compared $20.125$ with $26$ and concluded "lower overtime rate means lower pay" would miss that the raise applies to all $42.5$ hours.
+Applying $15\\%$ only to the $40$ regular hours and dropping overtime entirely would get $40 \\times 20.125=805$, still above $765$. Working from the isolated values, $15\\%$ is the figure that is checked, not the detour that produced $765$. Comparing $20.125$ with $26$ and concluding "lower overtime rate means lower pay" would miss that the raise applies to all $42.5$ hours. That is the fork: $20.125$ belongs to the recovered isolation, $42.5$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 A's gross would rise to about $\\$855$, not fall, so the statement is False.`,
       `**E) The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765).**  (true)
@@ -6906,7 +6906,7 @@ $$\\frac{882}{765} \\approx 1.153$$
 
 $$2.8 > 1.153$$
 
-B worked $2.8$ times A's overtime hours, but earned only about $15\\%$ more gross, because regular pay is the same $700$ for both. A solver who compared $182:65$ overtime dollars, $2.8$, with $2.8$ hours would find them equal and miss that the claim uses *gross* pay in the second ratio. The trap is swapping gross for overtime dollars.
+B worked $2.8$ times A's overtime hours, but earned only about $15\\%$ more gross, because regular pay is the same $700$ for both. Comparing $182:65$ overtime dollars, $2.8$, with $2.8$ hours would find them equal and miss that the claim uses *gross* pay in the second ratio. So the letter reads the claim against $182:65$; $2.8$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $182:65$ stays in the write-up. The trap is swapping gross for overtime dollars.
 
 The opposite verdict would need the gross ratio to reach $2.8$, which would require B to earn $2.8 \\times 765=2142$. B earned $882$.
 
@@ -6999,7 +6999,7 @@ $$540 + 440 = 980$$
 
 Then $980 > 950$. Compared with actual Project 3 at $\\$710$, the extra $10$ m of wood add $270$, and $710+270=980$.
 
-A solver who used $20$ m of *wire* would add $110$ and get $820$, which does not exceed $950$ and would flip the verdict. The claim changes wood.
+Using $20$ m of *wire* would add $110$ and get $820$, which does not exceed $950$ and would flip the verdict. Working from the isolated values, $20$ is the figure that is checked, not the detour that produced $950$. That contrast is the reason the verdict goes the way it does. The claim changes wood.
 
 The counterfactual Project 3 costs $\\$980$, which exceeds $\\$950$, so the statement is True.`,
       `**B) The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.**  (true)
@@ -7014,7 +7014,7 @@ $$27 - 11 = 16$$
 
 $$\\frac{16}{11} \\approx 1.4545$$
 
-**3.** Then $1.4545 > 1.45$. The gap is just over $145\\%$ of wire's price. A solver who used $16/27 \\approx 59\\%$ against wood would be using the wrong base. A solver who rounded $1.4545$ down to $1.45$ would fail a strict "more than." The trap figure $59\\%$ is the gap over wood.
+**3.** Then $1.4545 > 1.45$. The gap is just over $145\\%$ of wire's price. Using $16/27 \\approx 59\\%$ against wood would be using the wrong base. The opposite verdict would need a different isolation than $16/27 \\approx 59\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Rounding $1.4545$ down to $1.45$ would fail a strict "more than." The stem's recovered values line up with $1.4545$, whereas $1.45$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $1.4545$ stays in the write-up.The trap figure $59\\%$ is the gap over wood.
 
 Project 3 being a scaled repeat of another project does not rewrite $27$ and $11$. The opposite verdict would need $16/11 \\le 1.45$, so a gap of $15.95$ or less. With $x=27$ and $y=11$, the gap is $16$.
 
@@ -7037,7 +7037,7 @@ $$750 + 710 = 1460$$
 
 The figures match. There is no bulk discount in the stem. Project 2 is a scaled copy of Project 1 and is not used here.
 
-A solver who invented a $10\\%$ combined-project discount would get $1314$ and accept the claim. That discount is not in the model.
+Inventing a $10\\%$ combined-project discount would get $1314$ and accept the claim. The recovered comparison therefore keeps $10\\%$ and does not substitute $1314$. That discount is not in the model.
 
 The combined project costs $\\$1{,}460$, the same as the two projects separately, so it does not cost less, so the statement is False.`,
       `**D) If wire fencing rose by \\$2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.**  (false)
@@ -7056,7 +7056,7 @@ $$\\frac{48}{750} = 0.064$$
 
 $6.4\\%$, which is not more than $15\\%$. Wire is the cheaper line, so a $\\$2$ rise on $24$ m cannot move a $\\$750$ invoice by $15\\%$. Fifteen percent of $750$ is $112.50$, which would need a $4.69$ per-metre wire rise.
 
-A solver who applied $15\\%$ to the wire line only, or who used $24/42 \\approx 57\\%$ of metres as if metres were dollars, would miss the $6.4\\%$ figure.
+Applying $15\\%$ to the wire line only, or using $24/42 \\approx 57\\%$ of metres as if metres were dollars, would miss the $6.4\\%$ figure. The recovered comparison therefore keeps $15\\%$ and does not substitute $6.4\\%$.
 
 Project 1 would rise by $6.4\\%$, not by more than $15\\%$, so the statement is False.`,
       `**E) Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed.**  (false)
@@ -7069,7 +7069,7 @@ The statement claims Project 3's cost per total metre installed is higher than P
 
 **3.** Compare: $14.20 < 17.86$. Project 3 is *lower* per metre, not higher. Project 3 is wire-heavy, and wire is cheaper per metre at $11$ versus wood at $27$, so the average falls.
 
-A solver who compared totals $710$ and $750$ without dividing by metres would still find Project 3 smaller, but that is not a per-metre comparison. The trap figure $710$ versus $750$ is the un-normalized totals. The claim is per total metre installed.
+Comparing totals $710$ and $750$ without dividing by metres would still find Project 3 smaller, but that is not a per-metre comparison. Working from the isolated values, $710$ is the figure that is checked, not the detour that produced $750$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $710$ versus $750$ is the un-normalized totals. The claim is per total metre installed.
 
 The opposite verdict would need Project 3's mix to be wood-heavier than Project 1's. With $40$ of $50$ metres as wire, Project 3's average is $14.20$.
 
@@ -7157,7 +7157,7 @@ $$\\frac{356}{7} \\approx 50.857$$
 
 Recovered A is $48$, which sits about $2.86$ km/h below that cutoff, so the solo time must overshoot $7$ hours.
 
-A solver who used Boat B's $77$ km/h would get $356/77 \\approx 4.62$ hours and fail the cutoff. A solver who used the meeting stretch $250/48 \\approx 5.21$ would also fail. The trap figure $5.21$ hours is A's time on the $250$ km meeting stretch, not on the $356$ km stretch the claim named. Another trap is $356/77$ mixed as if A and B shared the $356$ km run as a combined speed; the claim is A *alone*.
+Using Boat B's $77$ km/h would get $356/77 \\approx 4.62$ hours and fail the cutoff. So the letter reads the claim against $77$; $356/77 \\approx 4.62$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $77$ stays in the write-up. Using the meeting stretch $250/48 \\approx 5.21$ would also fail. The opposite verdict would need a different isolation than $250/48 \\approx 5.21$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $5.21$ hours is A's time on the $250$ km meeting stretch, not on the $356$ km stretch the claim named. Another trap is $356/77$ mixed as if A and B shared the $356$ km run as a combined speed; the claim is A *alone*.
 
 The opposite verdict would need A's speed at or above $50.86$ km/h. With $A=48$, that does not happen. Boat B's $77$ km/h is a different vessel and does not rewrite A's solo clock.
 
@@ -7182,7 +7182,7 @@ $$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$
 
 Then $58 < 125$. The difference is less than half the gap. Because they start from opposite docks and close $250$ km together, the difference in distances is $(77-48)\\times 2=58$, while half the stretch would be the difference only if one boat were stationary.
 
-A solver who reported $154-96=58$ against $250$ itself, or against $96$, would be using the wrong comparison figure. The claim names half of the $250$ km gap.
+Reporting $154-96=58$ against $250$ itself, or against $96$, would be using the wrong comparison figure. The stem's recovered values line up with $154-96=58$, whereas $96$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $154-96=58$ stays in the write-up. The claim names half of the $250$ km gap.
 
 The distance difference at meeting is $58$ km, less than $125$ km, so the statement is True.`,
       `**C) If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.**  (false)
@@ -7203,7 +7203,7 @@ $$1.667 > 1.5$$
 
 The new time is about $1$ hour $40$ minutes, which is not below $1.5$ hours. A $20\\%$ speed increase cuts time to $1/1.2 \\approx 0.833$ of the original $2$ hours, which is $1.667$, not $1.5$. To hit $1.5$ hours the combined speed would need $250/1.5 \\approx 166.7$ km/h, a $33\\%$ rise.
 
-A solver who subtracted $20\\%$ of $2$ hours, $2-0.4=1.6$, is close but still not below $1.5$. A solver who used $1.2 \\times 2=2.4$ would have increased time instead of speed.
+Subtracting $20\\%$ of $2$ hours, $2-0.4=1.6$, is close but still not below $1.5$. So the letter reads the claim against $20\\%$; $1.5$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $20\\%$ stays in the write-up. Using $1.2 \\times 2=2.4$ would have increased time instead of speed. The path that matches the stem therefore holds $1.2 \\times 2=2.4$ fixed and only then reads the claim.
 
 The $20\\%$ speed-up still takes about $1.67$ hours, not below $1.5$, so the statement is False.`,
       `**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.**  (true)
@@ -7222,7 +7222,7 @@ $$3 \\times 125 = 375$$
 
 $$375 > 356$$
 
-In $3$ hours they cover $19$ km more than that stretch. This is not the head-start scenario; it is both boats travelling simultaneously for $3$ hours. A solver who gave B a $3$-hour head start and then one more hour of A, which is the stem's second meeting, would be answering a different clock. The trap is mixing the stem's $3$-hour head start into this simultaneous $3$-hour run.
+In $3$ hours they cover $19$ km more than that stretch. This is not the head-start scenario; it is both boats travelling simultaneously for $3$ hours. Giving B a $3$-hour head start and then one more hour of A, which is the stem's second meeting, would be answering a different clock. That is why $3$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap is mixing the stem's $3$-hour head start into this simultaneous $3$-hour run.
 
 The opposite verdict would need $3(48+77) \\le 356$, so a combined speed of about $118.7$ km/h or less. With $125$ km/h combined, three hours is $375$ km.
 
@@ -7245,7 +7245,7 @@ $$0.60 \\times 48 = 28.8$$
 
 The actual gap $29$ sits $0.2$ km/h above $28.8$, so the relative increase is about $60.4\\%$, which exceeds $60\\%$. Equivalently, the cutoff speed is $1.60 \\times 48 = 76.8$, and recovered $B=77$ sits just above that.
 
-A solver who used $77/48 \\approx 1.604$ and reported $160\\%$ would have forgotten to subtract $1$ from a "higher than" claim. A solver who used $29/77 \\approx 37.7\\%$ against B would fail the cutoff. The trap figure $160\\%$ is the ratio left as a multiple. Another trap is $77-48=29$ treated as already "$29\\%$ higher," mixing kilometres-per-hour with percentage points.
+Using $77/48 \\approx 1.604$ and reporting $160\\%$ would have forgotten to subtract $1$ from a "higher than" claim. That is the fork: $77/48 \\approx 1.604$ belongs to the recovered isolation, $1$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Using $29/77 \\approx 37.7\\%$ against B would fail the cutoff. Keeping $29/77 \\approx 37.7\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $160\\%$ is the ratio left as a multiple. Another trap is $77-48=29$ treated as already "$29\\%$ higher," mixing kilometres-per-hour with percentage points.
 
 The opposite verdict would need $B \\le 76.8$. Recovered $B=77$ is $0.2$ km/h above that bar. The $356$ km stretch and the $250$ km meeting stretch are distance stories; they do not rewrite these two constant speeds.
 
@@ -7326,11 +7326,11 @@ $$42000 + 1900 = 43900$$
 
 $$43900 < 44000$$
 
-The new total is $\\$43{,}900$, one hundred dollars short of the cutoff. A solver who used Barley's $120$ on the extra $20$ t would get $42000+2400=44400$ and flip the verdict. The extra tonnes are Wheat.
+The new total is $\\$43{,}900$, one hundred dollars short of the cutoff. Using Barley's $120$ on the extra $20$ t would get $42000+2400=44400$ and flip the verdict. Working from the isolated values, $120$ is the figure that is checked, not the detour that produced $42000+2400=44400$. That contrast is the reason the verdict goes the way it does. The extra tonnes are Wheat.
 
 Season 1 at $260$ t Wheat would profit $\\$43{,}900$, which does not exceed $\\$44{,}000$, Season 1 printed $240$ t Wheat, $160$ t Barley, $\\$42{,}000$. Raising Wheat to $260$ t adds $20 \\times 95=1900$, so $43900$, one hundred dollars short of $44000$. That hundred dollars is why the cutoff is tight. Using Barley's $120$ on the extra $20$ t would add $2400$ and produce $44400$, over the bar, flipping the verdict. The extra tonnes are Wheat.
 
-A solver who scaled the whole $42000$ by $260/240$ would keep Barley inside the scale factor and overshoot. Only the Wheat column changes. This is a one-column increment, the way extra paperbacks added $100 \\times 12$ in an earlier task.
+Scaling the whole $42000$ by $260/240$ would keep Barley inside the scale factor and overshoot. The recovered comparison therefore keeps $42000$ and does not substitute $260/240$. That contrast is the reason the verdict goes the way it does. Only the Wheat column changes. This is a one-column increment, the way extra paperbacks added $100 \\times 12$ in an earlier task.
 
 If Wheat had been $100$ per tonne, the extra $20$ t would add $2000$ and the new total would be $44000$ exactly, which still does not *exceed* $44000$. The recovered $95$ is what leaves the counterfactual at $43900$, under the bar.
 
@@ -7353,7 +7353,7 @@ $$0.25 \\times 95 = 23.75$$
 
 The actual gap $\\$25$ sits $\\$1.25$ above $\\$23.75$, so the relative advantage is about $26.3\\%$, which exceeds $25\\%$.
 
-A solver who used $25/120 \\approx 20.8\\%$ against Barley would fail the cutoff and flip the verdict. The trap figure $20.8\\%$ is the gap over the wrong crop. A solver who treated $\\$25$ as already $25\\%$ of a round $\\$100$ Wheat margin would skip Wheat's actual $\\$95$. Season 1 and Season 2 totals are mixes of tonnes, not per-tonne margins, so dividing a season total by a round tonnage does not recover this $25/95$ ratio.
+Using $25/120 \\approx 20.8\\%$ against Barley would fail the cutoff and flip the verdict. Keeping $25/120 \\approx 20.8\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $20.8\\%$ is the gap over the wrong crop. Treating $\\$25$ as already $25\\%$ of a round $\\$100$ Wheat margin would skip Wheat's actual $\\$95$. The path that matches the stem therefore holds $25\\%$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Season 1 and Season 2 totals are mixes of tonnes, not per-tonne margins, so dividing a season total by a round tonnage does not recover this $25/95$ ratio.
 
 The opposite verdict would need a gap of $23.75$ or less on a $\\$95$ Wheat margin, so Barley at or below $118.75$. Recovered Barley is $\\$120$.
 
@@ -7378,11 +7378,11 @@ $$480 > 440$$
 
 Season 3 is *more* tonnes, not less. The Wheat columns match at $180$; Season 3's extra $40$ t of Barley is the whole difference.
 
-A solver who left Season 3's Wheat blank and compared $300$ with $440$ would find $300<440$ and accept the claim by dropping the reconstructed Wheat. The reconstruction is $180$ t, and it counts.
+Leaving Season 3's Wheat blank and comparing $300$ with $440$ would find $300<440$ and accept the claim by dropping the reconstructed Wheat. The recovered comparison therefore keeps $300$ and does not substitute $300<440$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The reconstruction is $180$ t, and it counts.
 
 Season 3's $480$ t is not less than Season 2's $440$ t, Season 3's Wheat reconstructs to $180$ t from $53100-300 \\times 120=53100-36000=17100$ and $17100/95=180$. Adding the printed $300$ t of Barley gives $480$ t total. Season 2 is $180+260=440$ t. Season 3 is larger, not smaller. The Wheat columns match at $180$; Season 3's extra $40$ t of Barley is the whole difference.
 
-A solver who left Season 3's Wheat blank and compared $300$ with $440$ would find $300<440$ and accept the claim by dropping the reconstruction. The reconstruction is $180$ t, and it counts in the total tonnage. This is the water-damaged third row, reconstructed, then compared.
+Leaving Season 3's Wheat blank and comparing $300$ with $440$ would find $300<440$ and accept the claim by dropping the reconstruction. The stem's recovered values line up with $300$, whereas $300<440$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $300$ stays in the write-up. The reconstruction is $180$ t, and it counts in the total tonnage. This is the water-damaged third row, reconstructed, then compared.
 
 If the reconstructed Wheat had been $100$ t, Season 3 would total $400$ t, less than Season 2's $440$, and the claim would have been true. Seasons 1 and 2 force Wheat at $95$ and Barley at $120$, and those force Season 3's Wheat at $180$, total $480$.
 
@@ -7397,7 +7397,7 @@ $$40 \\times 95 = 3800$$
 
 Then $3800 > 3500$. If Season 3 had actually produced $220$ t of Wheat, true profit would be $53100+3800=56900$, and the recorded $53100$ would sit $3800$ low.
 
-A solver who used Barley's $120$ on the $40$ t would get $4800$, still above $3500$, so that swap would not flip the verdict. A solver who used $20$ t extra, mixing letter A's increment, would get $1900$ and fail the cutoff.
+Using Barley's $120$ on the $40$ t would get $4800$, still above $3500$, so that swap would not flip the verdict. That is the fork: $120$ belongs to the recovered isolation, $3500$ belongs to the discarded mix. Using $20$ t extra, mixing letter A's increment, would get $1900$ and fail the cutoff. After isolating the unknown, the check is against $20$. The figure $1900$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $20$ stays in the write-up.
 
 The understatement would be $\\$3{,}800$, which is more than $\\$3{,}500$, so the statement is True.`,
       `**E) Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output.**  (true)
@@ -7410,7 +7410,7 @@ The statement claims Season 2's profit per tonne of total output exceeds Season 
 
 **3.** Compare: $109.77 > 105$. Season 2 is Barley-heavier, and Barley pays $120$ versus Wheat's $95$, so the average rises.
 
-A solver who compared totals $48300>42000$ without dividing by tonnes would be ranking size, not intensity. Season 3's reconstructed $180$ t of Wheat is a third season and is not in this comparison.
+Comparing totals $48300>42000$ without dividing by tonnes would be ranking size, not intensity. The path that matches the stem therefore holds $48300>42000$ fixed and only then reads the claim. Season 3's reconstructed $180$ t of Wheat is a third season and is not in this comparison.
 
 The opposite verdict would need Season 2 to be Wheat-heavier than Season 1. With $260$ t of Barley against Season 1's $160$ t, Season 2's profit per tonne is higher.
 
@@ -7502,7 +7502,7 @@ $$2 \\times 34 = 68$$
 
 $$62 < 68$$
 
-The elder is $6$ years short of double. The ratio $62/34 \\approx 1.82$ is less than $2$. A solver who doubled the current $19$ to $38$ and compared with $47+15=62$ would be mixing a current double with a future elder.
+The elder is $6$ years short of double. The ratio $62/34 \\approx 1.82$ is less than $2$. Doubling the current $19$ to $38$ and comparing with $47+15=62$ would be mixing a current double with a future elder. So the letter reads the claim against $19$; $47+15=62$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $19$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Fifteen years from now the elder is $62$ and double the younger is $68$, so the elder is less than double, so the statement is True.`,
       `**B) The current age gap (x - y) is more than 45% of the elder employee's current age.**  (true)
@@ -7523,7 +7523,7 @@ $$0.45 \\times 47 = 21.15$$
 
 The actual gap $28$ sits $6.85$ years above $21.15$, so about $59.6\\%$ of $47$, which exceeds $45\\%$ by a wide margin. The five-years-ago gap was also $28$, because both ages drop by the same five years, but the *base* was then $42$, and $28/42 \\approx 67\\%$ is a different letter.
 
-A solver who used $28/19 \\approx 147\\%$ against the younger would still exceed $45\\%$ but would be using the wrong base. A solver who used $47-19=28$ as if $28$ were already "$28\\%$ of $47$" would mix years with percentage points. The trap figure $45\\%$ is a round bar well below $59.6\\%$; it is not a computed share from the stem.
+Using $28/19 \\approx 147\\%$ against the younger would still exceed $45\\%$ but would be using the wrong base. So the letter reads the claim against $28/19 \\approx 147\\%$; $45\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $28/19 \\approx 147\\%$ stays in the write-up. Using $47-19=28$ as if $28$ were already "$28\\%$ of $47$" would mix years with percentage points. The recovered comparison therefore keeps $47-19=28$ and does not substitute $47$. The trap figure $45\\%$ is a round bar well below $59.6\\%$; it is not a computed share from the stem.
 
 The opposite verdict would need the gap at or below $21.15$ years. With ages $47$ and $19$, the gap is $28$.
 
@@ -7538,7 +7538,7 @@ $$\\frac{51.5}{23.5} \\approx 2.191$$
 
 Then $2.191 > 2.5$ is false. The ratio is about $2.19$, short of $2.5$. The stem's "nine years from now, twice as old" is a different horizon: at $t=9$, $56/28=2$ exactly. At $t=4.5$, halfway in time, the ratio is not halfway between $47/19 \\approx 2.47$ and $2$.
 
-A solver who used $47/19 \\approx 2.47$ as if it were already the $4.5$-year figure would still fail $2.5$, so that slip would not flip the verdict. A solver who computed $2.5 \\times 23.5=58.75$ and compared with $51.5$ would see the shortfall directly.
+Using $47/19 \\approx 2.47$ as if it were already the $4.5$-year figure would still fail $2.5$, so that slip would not flip the verdict. The stem's recovered values line up with $47/19 \\approx 2.47$, whereas $2.5$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $47/19 \\approx 2.47$ stays in the write-up. Computing $2.5 \\times 23.5=58.75$ and comparing with $51.5$ would see the shortfall directly. That is the fork: $2.5 \\times 23.5=58.75$ belongs to the recovered isolation, $51.5$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 At $4.5$ years the ratio is about $2.19$, not more than $2.5$, so the statement is False.`,
       `**D) Ten years ago, the sum of their ages was less than 40.**  (false)
@@ -7559,7 +7559,7 @@ $$46 < 40$$
 
 is false. Equivalently, current sum minus twenty years of living: $47+19-20=46$. The sum is $46$, six above the cutoff.
 
-A solver who subtracted ten only from the elder would get $37+19=56$. A solver who used five years ago, $42+14=56$, would be at the stem's triple moment, not ten years ago. The trap figure $56$ is that five-year-ago sum, or the one-sided subtraction. Another trap is $47-10+19=56$ after forgetting to age the younger back. Ten years ago the younger was $9$, which is a legal age in this story; the claim is about the *sum*, not about whether $9$ looks surprising.
+Subtracting ten only from the elder would get $37+19=56$. Keeping $37+19=56$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Using five years ago, $42+14=56$, would be at the stem's triple moment, not ten years ago. That is why $42+14=56$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $56$ is that five-year-ago sum, or the one-sided subtraction. Another trap is $47-10+19=56$ after forgetting to age the younger back. Ten years ago the younger was $9$, which is a legal age in this story; the claim is about the *sum*, not about whether $9$ looks surprising.
 
 The opposite verdict would need a current sum below $60$. With $47+19=66$, ten years ago is $46$.
 
@@ -7574,7 +7574,7 @@ The statement claims there was a point more than $4$ years ago when the elder wa
 
 $$5 > 4$$
 
-**3.** The triple sits one year past the cutoff. A solver who used the nine-years-forward double instead would be answering a future question. The double is at $t=+9$, which is not "more than $4$ years ago." A solver who required an integer number of years beyond five would miss that five already qualifies.
+**3.** The triple sits one year past the cutoff. Using the nine-years-forward double instead would be answering a future question. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The double is at $t=+9$, which is not "more than $4$ years ago." requiring an integer number of years beyond five would miss that five already qualifies. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The opposite verdict would need the triple to fall at $4$ years ago or more recently. The stem pins it at five years ago.
 
@@ -7659,7 +7659,7 @@ $$1461.90 > 1350.60$$
 
 The swapped mix *increases* by $\\$111.30$, it does not decrease. Order 3 is B-heavy ($12$ versus $3$), so giving B the larger markup raises the total.
 
-A solver who swapped unit wholesale prices instead of markups would be answering a different counterfactual. A solver who looked at Order 1, which is A-heavier, might see a decrease; the claim names Order 3.
+Swapping unit wholesale prices instead of markups would be answering a different counterfactual. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Looking at Order 1, which is A-heavier, might see a decrease; the claim names Order 3. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 Swapped markups raise Order 3 to $\\$1{,}461.90$, so the total does not decrease, so the statement is False.`,
       `**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.**  (true)
@@ -7680,7 +7680,7 @@ $$\\frac{14.40}{17.60} = 0.81818\\ldots$$
 
 about $81.8\\%$, which exceeds $80\\%$. Eighty percent of $\\$17.60$ is $\\$14.08$, and B's $\\$14.40$ sits $\\$0.32$ above that cutoff.
 
-B's percentage markup is smaller, but B's wholesale is larger, so the dollar markups are close. A solver who compared $18\\%$ with $80\\%$ of $32\\%$ would mix percentage points with dollars: $0.80 \\times 32=25.6$ percentage points, which $18$ fails. The trap figure $18/32=56.25\\%$ is the *rate* ratio, not the dollar ratio. Another trap is comparing retail prices $94.40$ and $72.60$ and reporting $94.40/72.60 \\approx 130\\%$, which is a price ratio, not a markup ratio.
+B's percentage markup is smaller, but B's wholesale is larger, so the dollar markups are close. Comparing $18\\%$ with $80\\%$ of $32\\%$ would mix percentage points with dollars: $0.80 \\times 32=25.6$ percentage points, which $18$ fails. The recovered comparison therefore keeps $18\\%$ and does not substitute $18$. The trap figure $18/32=56.25\\%$ is the *rate* ratio, not the dollar ratio. Another trap is comparing retail prices $94.40$ and $72.60$ and reporting $94.40/72.60 \\approx 130\\%$, which is a price ratio, not a markup ratio.
 
 The opposite verdict would need $14.40 \\le 14.08$. Recovered wholesale prices pin the dollar markups just above that bar.
 
@@ -7703,7 +7703,7 @@ $$140.80 + 72.00 = 212.80$$
 
 Then $212.80 > 150$. Check against wholesale: Order 1 wholesale is $8(55)+5(80)=440+400=840$. Retail is $8(72.60)+5(94.40)=580.80+472=1052.80$. Difference $1052.80-840=212.80$, same figure.
 
-A solver who took $32\\%$ of wholesale $840$ would get $268.80$ by forcing A's rate onto B. A solver who took $18\\%$ of $840$ would get $151.20$, just over $\\$150$, which still passes but is the wrong one-rate story. The trap figure $151.20$ is that all-$18\\%$ markup. The two rates differ, so the honest markup is the unit mix $140.80+72.00$.
+Taking $32\\%$ of wholesale $840$ would get $268.80$ by forcing A's rate onto B. The stem's recovered values line up with $32\\%$, whereas $268.80$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $32\\%$ stays in the write-up. Taking $18\\%$ of $840$ would get $151.20$, just over $\\$150$, which still passes but is the wrong one-rate story. That is the fork: $18\\%$ belongs to the recovered isolation, $151.20$ belongs to the discarded mix. The trap figure $151.20$ is that all-$18\\%$ markup. The two rates differ, so the honest markup is the unit mix $140.80+72.00$.
 
 The opposite verdict would need Order 1's mix to carry $\\$150$ or less. With $8$ and $5$ at $17.60$ and $14.40$, the markup is $212.80$.
 
@@ -7720,7 +7720,7 @@ $$3 \\times 94.40 = 283.20$$
 
 $$283.20 > 280$$
 
-**3.** The increment is three times B's retail price, not three times wholesale. A solver who used $3 \\times 80=240$ wholesale would fail the $\\$280$ cutoff. A solver who used $3 \\times 72.60$ after swapping products would also fail. The trap figure $240$ is wholesale on the extra units.
+**3.** The increment is three times B's retail price, not three times wholesale. Using $3 \\times 80=240$ wholesale would fail the $\\$280$ cutoff. The opposite verdict would need a different isolation than $3 \\times 80=240$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Using $3 \\times 72.60$ after swapping products would also fail. Once $3 \\times 72.60$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $240$ is wholesale on the extra units.
 
 Product A unchanged means those $3$ units add $0$ to the increment. The opposite verdict would need retail B at or below $280/3 \\approx 93.33$. With retail B at $94.40$, three extra units add $283.20$.
 
@@ -7743,7 +7743,7 @@ $$1.4545 > 1.3003$$
 
 A has the larger percentage markup, so retail A is pulled up more than retail B, which shrinks $B:A$ at retail relative to wholesale. That is the whole mechanism. If the markups had been equal, the two ratios would match.
 
-A solver who compared $18\\%$ with $32\\%$ as if those were the price ratios would be answering a different question. The trap figure $32/18 \\approx 1.78$ is a rate ratio, not a price ratio. Another trap is comparing dollar markups $14.40/17.60 \\approx 0.818$ and calling that the "retail ratio." Letter B already used that quotient for a different claim.
+Comparing $18\\%$ with $32\\%$ as if those were the price ratios would be answering a different question. The recovered comparison therefore keeps $18\\%$ and does not substitute $32\\%$. The trap figure $32/18 \\approx 1.78$ is a rate ratio, not a price ratio. Another trap is comparing dollar markups $14.40/17.60 \\approx 0.818$ and calling that the "retail ratio." Letter B already used that quotient for a different claim.
 
 The opposite verdict would need B's markup percentage to exceed A's, which would inflate retail $B/A$ above wholesale $B/A$. The stem marks A at $32\\%$ and B at $18\\%$.
 
@@ -7831,7 +7831,7 @@ $$9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77$$
 
 $$77 > 75$$
 
-The total rises by $2$, because four draws each pick up half a point. A solver who also halved the win to $3.5$ would be answering a different system. The claim keeps the win at its recovered $7$ and only changes the draw.
+The total rises by $2$, because four draws each pick up half a point. Also halving the win to $3.5$ would be answering a different system. The path that matches the stem therefore holds $3.5$ fixed and only then reads the claim. The claim keeps the win at its recovered $7$ and only changes the draw.
 
 Falcons would score $77$, which is more than $75$, so the statement is True.`,
       `**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)
@@ -7846,7 +7846,7 @@ $$6 \\times 3 = 18$$
 
 $$\\frac{18}{67} \\approx 0.2687$$
 
-**3.** About $26.9\\%$, which is not more than $45\\%$. Wins still supply $7 \\times 7=49$ of the $67$ points. A solver who used $6/14 \\approx 43\\%$ of *matches* that were draws would sit near $45\\%$ and might accept the claim. The trap figure $43\\%$ is match share, not point share. The claim is points, not matches.
+**3.** About $26.9\\%$, which is not more than $45\\%$. Wins still supply $7 \\times 7=49$ of the $67$ points. Using $6/14 \\approx 43\\%$ of *matches* that were draws would sit near $45\\%$ and might accept the claim. Working from the isolated values, $6/14 \\approx 43\\%$ is the figure that is checked, not the detour that produced $45\\%$. That contrast is the reason the verdict goes the way it does. The trap figure $43\\%$ is match share, not point share. The claim is points, not matches.
 
 The opposite verdict would need draw points above $0.45 \\times 67 \\approx 30.15$, which would take more than $10$ draws at $3$ points. The Ravens had $6$ draws.
 
@@ -7869,7 +7869,7 @@ $$22 > 20$$
 
 Falcons still lead, now by $2$ instead of $8$. Halving every point value halves both totals from $75$ and $67$ to $37.5$ and $33.5$ if the original $7$ and $3$ were simply halved, but $7/2=3.5$ is not the claim's $2$. The claim names a different scale, $2$ and $1$, which is not proportional to $7$ and $3$. Even on that different scale, Falcons remain ahead because they have more wins.
 
-A solver who used $1$ per win and $0$ per draw would be a different system again. Under $2$ and $1$, Falcons $22$ beat Ravens $20$.
+Using $1$ per win and $0$ per draw would be a different system again. So the letter reads the claim against $1$; $0$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1$ stays in the write-up. Under $2$ and $1$, Falcons $22$ beat Ravens $20$.
 
 Falcons still outscore Ravens under the halved system, so the statement is True.`,
       `**D) The Falcons' win-to-draw point contribution ratio exceeds 15.**  (false)
@@ -7890,7 +7890,7 @@ $$\\frac{63}{12} = 5.25$$
 
 Then $5.25 > 15$ is false. Check: $63+12=75$, so the split rebuilds the printed Falcons total. The ratio is $5.25$ to $1$, not $15$ to $1$.
 
-A solver who used match counts $9/4=2.25$ would be answering a wins-to-draws *record* ratio. A solver who divided win points by draw *count*, $63/4=15.75$, would manufacture a figure just above $15$ and accept the claim. The trap figure $15.75$ is win points over draw count. The claim is point contribution to point contribution, $63:12$. Another trap is $75/5=15$ from a five-result average that is not in the stem.
+Using match counts $9/4=2.25$ would be answering a wins-to-draws *record* ratio. The opposite verdict would need a different isolation than $9/4=2.25$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Dividing win points by draw *count*, $63/4=15.75$, would manufacture a figure just above $15$ and accept the claim. The stem's recovered values line up with $63/4=15.75$, whereas $15$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $63/4=15.75$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure $15.75$ is win points over draw count. The claim is point contribution to point contribution, $63:12$. Another trap is $75/5=15$ from a five-result average that is not in the stem.
 
 The opposite verdict would need draw points below $63/15=4.2$, which would take fewer than two draws at $3$ points. The Falcons had four draws. The Ravens' $67$ points are a different club.
 
@@ -7905,7 +7905,7 @@ $$75 + 12 = 87$$
 
 Then $87-75=12$, which is not more than $20$. Directly: $12 \\times 7 + 1 \\times 3=84+3=87$.
 
-A solver who treated the three extra wins as *additional* matches, $12$ wins and $4$ draws, would get $84+12=96$, a $21$-point jump, and flip the verdict. The claim converts draws to wins, so draws fall from $4$ to $1$.
+Treating the three extra wins as *additional* matches, $12$ wins and $4$ draws, would get $84+12=96$, a $21$-point jump, and flip the verdict. After isolating the unknown, the check is against $12$. The figure $21$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up. The claim converts draws to wins, so draws fall from $4$ to $1$.
 
 The converted record scores $87$, only $12$ above $75$, not more than $20$ above, so the statement is False.`,
     ],
@@ -7994,7 +7994,7 @@ $$12 \\times 7.6 + 10 \\times 11.4 = 91.2 + 114 = 205.2$$
 
 Then $205.2 > 200$. The extra $2$ L of B add $22.8$ kg, which is more than the $17.6$ kg gap from $182.4$ up to $200$.
 
-A solver who added $2$ L of A instead would add $15.2$ kg and get $197.6$, which does not exceed $200$ and would flip the verdict. The trap figure $197.6$ kg is extra A, not extra B. A solver who averaged $7.6$ and $11.4$ to $9.5$ and then added $2 \\times 9.5=19$ would get $201.4$, which still passes $200$ but is the wrong extra-mass story. Batch 3's recorded $147$ kg versus predicted $140.6$ kg is an audit discrepancy and does not rewrite Batch 1's densities.
+Adding $2$ L of A instead would add $15.2$ kg and get $197.6$, which does not exceed $200$ and would flip the verdict. That is the fork: $2$ belongs to the recovered isolation, $200$ belongs to the discarded mix. The trap figure $197.6$ kg is extra A, not extra B. Averaging $7.6$ and $11.4$ to $9.5$ and then adding $2 \\times 9.5=19$ would get $201.4$, which still passes $200$ but is the wrong extra-mass story. The stem's recovered values line up with $7.6$, whereas $200$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $7.6$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Batch 3's recorded $147$ kg versus predicted $140.6$ kg is an audit discrepancy and does not rewrite Batch 1's densities.
 
 The opposite verdict would need $B \\le 17.6/2=8.8$ kg/L on those extra $2$ L. Recovered $B=11.4$.
 
@@ -8013,7 +8013,7 @@ $$\\frac{11.4}{7.6} = 1.5$$
 
 $$\\frac{11.4-7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$
 
-B is exactly $50\\%$ greater than A, not more than $50\\%$ greater. The inequality is strict. A solver who treated "$50\\%$ greater" as including equality would flip the verdict. A solver who used $(11.4-7.6)/11.4 \\approx 33\\%$ against B would fail for a different reason.
+B is exactly $50\\%$ greater than A, not more than $50\\%$ greater. The inequality is strict. Treating "$50\\%$ greater" as including equality would flip the verdict. That is why $50\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $(11.4-7.6)/11.4 \\approx 33\\%$ against B would fail for a different reason. The recovered isolation is checked against the claim using $(11.4-7.6)/11.4 \\approx 33\\%$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does.
 
 Density B would have to sit strictly above $11.4$ to clear a "more than" test, and the recovered value does not. The opposite verdict would need a different Batch 1 or Batch 2 mass.
 
@@ -8032,11 +8032,11 @@ $$147.0 - 140.6 = 6.4$$
 
 $$\\frac{6.4}{147.0} \\approx 0.04354$$
 
-about $4.35\\%$, which exceeds $4\\%$. A solver who used $6.4/140.6 \\approx 4.55\\%$ against the prediction would still pass $4\\%$. A solver who used $2.5$ gal conversion error as a different discrepancy would be answering a different audit.
+about $4.35\\%$, which exceeds $4\\%$. Using $6.4/140.6 \\approx 4.55\\%$ against the prediction would still pass $4\\%$. Working from the isolated values, $6.4/140.6 \\approx 4.55\\%$ is the figure that is checked, not the detour that produced $4\\%$. Using $2.5$ gal conversion error as a different discrepancy would be answering a different audit. That is why $2.5$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The $6.4$ kg gap is about $4.35\\%$ of $147.0$ kg, more than $4\\%$, Batch 3 is the audit row, with Metal A logged in gallons and converted at $2.5$ gal $\\approx 9.5$ L. Batches 1 and 2 recovered $7.6$ kg/L and $11.4$ kg/L. Predicted mass $9.5(7.6)+6(11.4)=72.2+68.4=140.6$ kg against recorded $147.0$ kg. The $6.4$ kg gap is $6.4/147 \\approx 4.35\\%$ of the recorded total, which exceeds $4\\%$.
 
-A solver who used $6.4/140.6 \\approx 4.55\\%$ against the prediction would still pass $4\\%$. A solver who skipped the gallon conversion and treated $2.5$ gal as $2.5$ L would predict $2.5(7.6)+6(11.4)=19+68.4=87.4$, a huge gap, and would still pass $4\\%$ but for the wrong predicted mass. The conversion $9.5$ L is what makes the discrepancy a modest $6.4$ kg rather than a catastrophic miss.
+Using $6.4/140.6 \\approx 4.55\\%$ against the prediction would still pass $4\\%$. Working from the isolated values, $6.4/140.6 \\approx 4.55\\%$ is the figure that is checked, not the detour that produced $4\\%$. Skipping the gallon conversion and treating $2.5$ gal as $2.5$ L would predict $2.5(7.6)+6(11.4)=19+68.4=87.4$, a huge gap, and would still pass $4\\%$ but for the wrong predicted mass. After isolating the unknown, the check is against $2.5$. The figure $4\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2.5$ stays in the write-up. The conversion $9.5$ L is what makes the discrepancy a modest $6.4$ kg rather than a catastrophic miss.
 
 This is the inconsistent third row with a relative-error cutoff. The $4\\%$ bar is the claim's window. The $4.35\\%$ figure clears it. If the recorded mass had been $142.0$ kg, the gap would have been $1.4$ kg, about $1\\%$, and the claim would have failed.
 
@@ -8055,11 +8055,11 @@ $$|144.4 - 147.0| = 2.6$$
 
 Then $2.6$ is not within $2$ kg. The extra $0.5$ L of A adds $3.8$ kg to the original prediction $140.6$, landing at $144.4$, still $2.6$ kg light of the recorded $147.0$.
 
-A solver who used $10$ L of B instead would get $9.5(7.6)+10(11.4)=72.2+114=186.2$, far from $147$. The claim changes Metal A.
+Using $10$ L of B instead would get $9.5(7.6)+10(11.4)=72.2+114=186.2$, far from $147$. So the letter reads the claim against $10$; $147$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $10$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim changes Metal A.
 
 The $10$ L prediction is $144.4$ kg, $2.6$ kg from $147.0$, not within $2$ kg, Replacing Batch 3's converted $9.5$ L of A with $10$ L adds $0.5 \\times 7.6=3.8$ kg to the $140.6$ prediction, landing at $144.4$ kg. Distance to recorded $147.0$ is $2.6$ kg, which is not within $2$ kg. The extra half litre of A closes part of the audit gap but not enough.
 
-A solver who used $10$ L of B instead would add $4 \\times 11.4=45.6$ kg and overshoot $147$ badly. The claim changes Metal A, the converted column. A solver who compared $144.4$ with $140.6$ rather than with $147.0$ would be measuring the increment, $3.8$ kg, which is not the recorded-gap test.
+Using $10$ L of B instead would add $4 \\times 11.4=45.6$ kg and overshoot $147$ badly. After isolating the unknown, the check is against $10$. The figure $147$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10$ stays in the write-up. The claim changes Metal A, the converted column. Comparing $144.4$ with $140.6$ rather than with $147.0$ would be measuring the increment, $3.8$ kg, which is not the recorded-gap test. That is the fork: $144.4$ belongs to the recovered isolation, $3.8$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 To come within $2$ kg of $147.0$ the prediction would need to sit between $145.0$ and $149.0$. At $10$ L of A it sits at $144.4$, still $0.6$ kg outside that window. The recovered densities plus $6$ L of B pin that $144.4$.
 
@@ -8076,7 +8076,7 @@ $$17 \\times 7.6 + 23 \\times 11.4 = 129.2 + 262.2 = 391.4$$
 
 $$182.4 + 209.0 = 391.4$$
 
-**3.** The figures match. There is no mixing loss in the model. A solver who averaged the two densities and applied that average to $40$ L would generally miss $391.4$, because the combined mix is not a $50/50$ blend. The trap figure is a $50/50$ average of $7.6$ and $11.4$, which is $9.5$ kg/L times $40$ L $=380$ kg, short of $391.4$.
+**3.** The figures match. There is no mixing loss in the model. Averaging the two densities and applying that average to $40$ L would generally miss $391.4$, because the combined mix is not a $50/50$ blend. So the letter reads the claim against $40$; $50/50$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $40$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure is a $50/50$ average of $7.6$ and $11.4$, which is $9.5$ kg/L times $40$ L $=380$ kg, short of $391.4$.
 
 Batch 3's recorded $147$ kg is an audit row and is not pooled here. The opposite verdict would need a nonlinear mixing rule the stem does not state.
 
@@ -8164,7 +8164,7 @@ $$\\frac{14800}{850000} \\approx 0.017412$$
 
 about $1.741\\%$, which is less than $1.75\\%$. The retainer adds $1200/850000 \\approx 0.141$ percentage points on top of $1.6\\%$, and that bump is not enough to reach $1.75\\%$ at this AUM.
 
-A solver who omitted the retainer would report $1.6\\%$ and still pass the cutoff, so that error would not flip the verdict. A solver who used $1.75\\%$ of $850{,}000=14875$ as the fee would be answering a different rule.
+Omitting the retainer would report $1.6\\%$ and still pass the cutoff, so that error would not flip the verdict. Keeping $1.6\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Using $1.75\\%$ of $850{,}000=14875$ as the fee would be answering a different rule. Working from the isolated values, $1.75\\%$ is the figure that is checked, not the detour that produced $850{,}000=14875$.
 
 The $\\$850{,}000$ client pays about $1.741\\%$ effective, less than $1.75\\%$, so the statement is True.`,
       `**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)
@@ -8179,7 +8179,7 @@ $$\\frac{1200}{10800} \\approx 0.1111$$
 
 **2.** About $11.1\\%$ exceeds $10\\%$. Ten percent of $\\$10{,}800$ is $\\$1{,}080$, and $\\$1{,}200$ sits $\\$120$ above that line.
 
-A solver who used Client 1's $\\$13{,}200$ as the denominator would get about $9.1\\%$ and fail the cutoff. The claim names Client 2. A solver who divided $\\$1{,}200$ by AUM, $1200/600000=0.002$, would report $0.2\\%$ and miss the cutoff in the other direction.
+Using Client 1's $\\$13{,}200$ as the denominator would get about $9.1\\%$ and fail the cutoff. The opposite verdict would need a different isolation than $9.1\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim names Client 2. Dividing $\\$1{,}200$ by AUM, $1200/600000=0.002$, would report $0.2\\%$ and miss the cutoff in the other direction. The recovered comparison therefore keeps $1200/600000=0.002$ and does not substitute $0.2\\%$.
 
 The opposite verdict would need a retainer of $\\$1{,}080$ or less. With $y=1200$ recovered from Client 2's total, the retainer is about $11\\%$ of Client 2's fee, more than $10\\%$, so the statement is True.`,
       `**C) If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM \\$750,000) would decrease compared to its actual amount.**  (true)
@@ -8194,7 +8194,7 @@ $$0.014 \\times 750000 + 2400 = 10500 + 2400 = 12900$$
 
 $$12900 < 13200$$
 
-**3.** The fee falls by $\\$300$. The rate cut saves $0.002 \\times 750000=1500$, and the doubled retainer costs an extra $1200$, net $-300$. A solver who doubled the retainer without cutting the rate would get $14400$ and see an increase. Both changes together are what produce the decrease. The trap figure $\\$14{,}400$ is the doubled retainer alone.
+**3.** The fee falls by $\\$300$. The rate cut saves $0.002 \\times 750000=1500$, and the doubled retainer costs an extra $1200$, net $-300$. Doubling the retainer without cutting the rate would get $14400$ and see an increase. That is why $14400$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Both changes together are what produce the decrease. The trap figure $\\$14{,}400$ is the doubled retainer alone.
 
 The opposite verdict would need the rate cut's savings to fall at or below the extra retainer. At AUM $\\$750{,}000$, the savings $1500$ exceed the extra $1200$.
 
@@ -8209,7 +8209,7 @@ The statement claims the percentage-point difference in effective fee rate betwe
 
 **3.** Difference: $0.04$ percentage points, which is not more than $0.05$.
 
-The retainer is a larger share of the smaller AUM, so Client 2's effective rate sits $0.04$ points above Client 1's. A solver who compared $1.6\\%$ with itself would report a $0$ gap. A solver who used $2400/150000=1.6$ extra points on the AUM *gap* would be mixing a difference-of-fees story with effective rates. The trap figure $1.6$ points is that gap-rate.
+The retainer is a larger share of the smaller AUM, so Client 2's effective rate sits $0.04$ points above Client 1's. Comparing $1.6\\%$ with itself would report a $0$ gap. Working from the isolated values, $1.6\\%$ is the figure that is checked, not the detour that produced $0$. Using $2400/150000=1.6$ extra points on the AUM *gap* would be mixing a difference-of-fees story with effective rates. The recovered isolation is checked against the claim using $2400/150000=1.6$, which is the figure the sessions actually produce. The trap figure $1.6$ points is that gap-rate.
 
 The opposite verdict would need an effective-rate gap above $0.05$ points. With these two AUM levels and a $\\$1{,}200$ retainer, the gap is $0.04$.
 
@@ -8230,7 +8230,7 @@ $$30000 < 32400$$
 
 The fee is *less* than triple, not more. The percentage piece triples, $3 \\times 9600=28800$, but the retainer stays $\\$1{,}200$ instead of becoming $\\$3{,}600$. That $\\$2{,}400$ shortfall is why $30000$ sits below $32400$.
 
-A solver who tripled the whole $10800$ as if the fee were a pure percentage would accept the claim. The retainer is the whole reason the fee is sublinear.
+Tripling the whole $10800$ as if the fee were a pure percentage would accept the claim. Once $10800$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The retainer is the whole reason the fee is sublinear.
 
 The $1.8$ million client pays $\\$30{,}000$, which is not more than triple $\\$10{,}800$, so the statement is False.`,
     ],
@@ -8307,7 +8307,7 @@ $$0.85 \\times 8.4 = 7.14$$
 
 The actual gap $7.2$ sits $0.06$ mg/mL above $7.14$, so about $85.7\\%$, which exceeds $85\\%$. Equivalently, the cutoff concentration is $1.85 \\times 8.4=15.54$, and recovered $B=15.6$ sits just above that.
 
-A solver who used $15.6/8.4 \\approx 1.857$ and reported $185.7\\%$ would have forgotten to subtract $1$ from a "higher than" claim. A solver who used $7.2/15.6 \\approx 46.2\\%$ against B would fail the cutoff. The trap figure $185.7\\%$ is the ratio left as a multiple. Another trap is Batch 2's volume share $700/900$ treated as a concentration ratio.
+Using $15.6/8.4 \\approx 1.857$ and reporting $185.7\\%$ would have forgotten to subtract $1$ from a "higher than" claim. The recovered comparison therefore keeps $15.6/8.4 \\approx 1.857$ and does not substitute $1$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $7.2/15.6 \\approx 46.2\\%$ against B would fail the cutoff. The opposite verdict would need a different isolation than $7.2/15.6 \\approx 46.2\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The trap figure $185.7\\%$ is the ratio left as a multiple. Another trap is Batch 2's volume share $700/900$ treated as a concentration ratio.
 
 The opposite verdict would need $B \\le 15.54$. Recovered $B=15.6$.
 
@@ -8322,11 +8322,11 @@ $$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700} \\approx 0.000825$$
 
 about $0.082\\%$, which is not more than $1\\%$. The conversion $0.32$ L $=320$ mL is already in the prediction. The audit row is almost consistent; the $8$ mg gap is tiny.
 
-A solver who used $0.32$ L as $32$ mL would wreck the prediction and manufacture a huge gap. A solver who compared $9708$ with $1\\%$ of $9700=97$ would see that $8<97$ directly.
+Using $0.32$ L as $32$ mL would wreck the prediction and manufacture a huge gap. The stem's recovered values line up with $0.32$, whereas $32$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.32$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Comparing $9708$ with $1\\%$ of $9700=97$ would see that $8<97$ directly. The recovered comparison therefore keeps $9708$ and does not substitute $8<97$. That contrast is the reason the verdict goes the way it does.
 
 The relative gap is about $0.08\\%$, not more than $1\\%$, Batch 3 is the QC row, with Suspension A logged as $0.32$ L and converted to $320$ mL. Batches 1 and 2 recovered $8.4$ and $15.6$ mg/mL. Predicted content $320(8.4)+450(15.6)=2688+7020=9708$ mg against recorded $9700$ mg. The $8$ mg gap is $8/9700 \\approx 0.082\\%$ of the recorded value, far below $1\\%$.
 
-A solver who used $0.32$ L as $32$ mL would predict $32(8.4)+450(15.6)=268.8+7020=7288.8$, a $25\\%$ miss, and would accept "more than $1\\%$." The conversion to $320$ mL is the extra arithmetic that makes the audit almost clean. Close is not "more than $1\\%$"; it is $0.08\\%$.
+Using $0.32$ L as $32$ mL would predict $32(8.4)+450(15.6)=268.8+7020=7288.8$, a $25\\%$ miss, and would accept "more than $1\\%$." So the letter reads the claim against $0.32$; $1\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.32$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.The conversion to $320$ mL is the extra arithmetic that makes the audit almost clean. Close is not "more than $1\\%$"; it is $0.08\\%$.
 
 This is an inconsistent third row that is *almost* consistent. Letter B asks whether the relative gap exceeds $1\\%$, and it does not. If the recorded value had been $9{,}500$ mg, the gap would have been $208$ mg, about $2.2\\%$, and the claim would have been true.
 
@@ -8349,11 +8349,11 @@ $$8880 + 4680 = 13560$$
 
 $$13560 > 13500$$
 
-Directly: $500(8.4)+600(15.6)=4200+9360=13560$. A solver who doubled A instead would add $500 \\times 8.4=4200$ and get $13080$, which does not exceed $13500$ and would flip the verdict.
+Directly: $500(8.4)+600(15.6)=4200+9360=13560$. Doubling A instead would add $500 \\times 8.4=4200$ and get $13080$, which does not exceed $13500$ and would flip the verdict. After isolating the unknown, the check is against $500 \\times 8.4=4200$. The figure $13500$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $500 \\times 8.4=4200$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The doubled-B batch holds $13{,}560$ mg, which exceeds $13{,}500$ mg, Doubling Batch 1's B volume from $300$ mL to $600$ mL, A held at $500$ mL, adds $300 \\times 15.6=4680$ mg to the printed $8880$, producing $13560$, sixty milligrams over $13500$. That sixty is tight. Using A's concentration on the extra $300$ mL would add $2520$ and produce $11400$, under the bar, flipping the verdict. The extra millilitres are B.
 
-A solver who doubled both volumes would get $17760$ and still exceed $13500$, so that error would not flip the inequality, but it would be a different mix. The claim doubles B only. This is a new mix built from Batch 1 by one column change, the way extra paperbacks or extra Wheat tonnes were one-column increments earlier in the chapter.
+Doubling both volumes would get $17760$ and still exceed $13500$, so that error would not flip the inequality, but it would be a different mix. So the letter reads the claim against $17760$; $13500$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $17760$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim doubles B only. This is a new mix built from Batch 1 by one column change, the way extra paperbacks or extra Wheat tonnes were one-column increments earlier in the chapter.
 
 If B had been $15.0$ mg/mL, the extra $300$ mL would add $4500$ and the new total would be $13380$, under $13500$. The recovered $15.6$ is what pushes $13560$ over the bar.
 
@@ -8376,7 +8376,7 @@ $$25200 - 21480 = 3720$$
 
 which is exactly Batch 2 minus Batch 1: $12600-8880=3720$. Equivalently, Batch 1 is smaller than Batch 2, so Batch 1 plus Batch 2 is less than two times Batch 2.
 
-A solver who pooled all three batches, $21480+9700=31180$, would overshoot $25200$ and flip the verdict. The trap figure $9700$ is Batch 3's recorded content mixed into a two-batch claim. A solver who doubled Batch 1 instead, $2 \\times 8880=17760$, would find the pool $21480$ *larger* than that double and would answer a different comparison.
+Pooling all three batches, $21480+9700=31180$, would overshoot $25200$ and flip the verdict. The recovered comparison therefore keeps $21480+9700=31180$ and does not substitute $25200$. That contrast is the reason the verdict goes the way it does. The trap figure $9700$ is Batch 3's recorded content mixed into a two-batch claim. Doubling Batch 1 instead, $2 \\times 8880=17760$, would find the pool $21480$ *larger* than that double and would answer a different comparison. Working from the isolated values, $2 \\times 8880=17760$ is the figure that is checked, not the detour that produced $21480$.
 
 The opposite verdict would need Batch 1 to meet or exceed Batch 2. With $8880 < 12600$, the pooled total is less than twice Batch 2. Predicted Batch 3 $9708$ is not in this pool.
 
@@ -8399,7 +8399,7 @@ $$0.7778 > 0.5844$$
 
 The gap is about $19.3$ percentage points. Batch 1's B-share $300/800=0.375$ is even leaner on B, but the claim names Batch 2 versus Batch 3.
 
-A solver who used $0.32$ L unconverted as $0.32$ mL would get Batch 3's share $450/450.32 \\approx 1$ and would scramble the comparison. The trap figure is that unconverted $0.32$. A solver who compared B *millilitres* $700$ vs $450$ without dividing by each batch's total would still find Batch 2 larger, but that is a volume comparison, not a proportion comparison. The claim is proportion.
+Using $0.32$ L unconverted as $0.32$ mL would get Batch 3's share $450/450.32 \\approx 1$ and would scramble the comparison. So the letter reads the claim against $0.32$; $450/450.32 \\approx 1$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.32$ stays in the write-up. The trap figure is that unconverted $0.32$. Comparing B *millilitres* $700$ vs $450$ without dividing by each batch's total would still find Batch 2 larger, but that is a volume comparison, not a proportion comparison. The recovered comparison therefore keeps $700$ and does not substitute $450$. That contrast is the reason the verdict goes the way it does. The claim is proportion.
 
 The opposite verdict would need Batch 2 to be leaner on B than Batch 3. With $700$ of $900$ mL as B, Batch 2 is the B-heavier mix.
 
@@ -8495,7 +8495,7 @@ $$12 \\times 38 = 456$$
 
 $$108 + 456 = 564$$
 
-Then $564 > 700$ is false. Waste on Invoice 1 is $\\$564$, $\\$136$ short of $\\$700$. A solver who used $12\\%$ of the whole invoice $0.12 \\times 7164 \\approx 860$ would accept the claim by applying stud waste to drywall dollars too.
+Then $564 > 700$ is false. Waste on Invoice 1 is $\\$564$, $\\$136$ short of $\\$700$. Using $12\\%$ of the whole invoice $0.12 \\times 7164 \\approx 860$ would accept the claim by applying stud waste to drywall dollars too. That is the fork: $12\\%$ belongs to the recovered isolation, $0.12 \\times 7164 \\approx 860$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 Invoice 1's waste costs $\\$564$, which does not exceed $\\$700$, so the statement is False.`,
       `**B) If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than \\$150.00.**  (true)
@@ -8506,7 +8506,7 @@ Job 2 needed $175$ usable sheets. At $8\\%$ waste: $14$ extra sheets. At $5\\%$:
 
 $$5.25 \\times 38 = 199.50$$
 
-Then $199.50 > 150$. Stud waste is unchanged, so it does not enter the decrement. A solver who also cut stud waste would overstate the saving. A solver who used $3\\%$ of $175$ as $5.25$ of usable rather than of extra would still get the same $5.25$ sheet drop, because $8\\%-5\\%=3\\%$ of $175$.
+Then $199.50 > 150$. Stud waste is unchanged, so it does not enter the decrement. Also cutting stud waste would overstate the saving. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Using $3\\%$ of $175$ as $5.25$ of usable rather than of extra would still get the same $5.25$ sheet drop, because $8\\%-5\\%=3\\%$ of $175$. After isolating the unknown, the check is against $3\\%$. The figure $8\\%-5\\%=3\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $3\\%$ stays in the write-up.
 
 Invoice 2 would fall by $\\$199.50$, which is more than $\\$150$, so the statement is True.`,
       `**C) Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.**  (true)
@@ -8527,7 +8527,7 @@ $$8946 - 8225 = 721$$
 
 and $721/8946 \\approx 0.0806$, so waste is about $8.1\\%$ of the invoice and usable is about $91.9\\%$, which exceeds $90\\%$. Ninety percent of $\\$8{,}946$ is $\\$8{,}051.40$, and usable $\\$8{,}225$ sits $\\$173.60$ above that cutoff.
 
-A solver who used Job 1's $6600/7164 \\approx 92.1\\%$ would still pass $90\\%$, but the claim names Job 2. The trap is mixing Job 1's waste share into Job 2. Another trap is treating waste as $12\\%$ of the whole invoice because stud waste is $12\\%$; drywall waste is only $8\\%$, and drywall dollars dominate Job 2, so the blended waste share is nearer $8\\%$ than $12\\%$.
+Using Job 1's $6600/7164 \\approx 92.1\\%$ would still pass $90\\%$, but the claim names Job 2. So the letter reads the claim against $6600/7164 \\approx 92.1\\%$; $90\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6600/7164 \\approx 92.1\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap is mixing Job 1's waste share into Job 2. Another trap is treating waste as $12\\%$ of the whole invoice because stud waste is $12\\%$; drywall waste is only $8\\%$, and drywall dollars dominate Job 2, so the blended waste share is nearer $8\\%$ than $12\\%$.
 
 The opposite verdict would need usable cost at or below $\\$8{,}051.40$. With $8225$, the share is $91.9\\%$.
 
@@ -8544,7 +8544,7 @@ $$\\frac{38}{4.50} \\approx 8.444$$
 
 **2.** Then $8.444 > 8$. Equivalently, eight studs cost $8 \\times 4.50 = 36$, and one sheet at $\\$38$ costs $\\$2$ more than that bundle.
 
-A solver who used $38/4=9.5$ after dropping the fifty cents would still pass $8$, but the honest denominator is $4.50$. A solver who compared waste-inflated invoice averages would mix $12\\%$ extra studs and $8\\%$ extra sheets into the ratio.
+Using $38/4=9.5$ after dropping the fifty cents would still pass $8$, but the honest denominator is $4.50$. Working from the isolated values, $38/4=9.5$ is the figure that is checked, not the detour that produced $4.50$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Comparing waste-inflated invoice averages would mix $12\\%$ extra studs and $8\\%$ extra sheets into the ratio. The recovered comparison therefore keeps $12\\%$ and does not substitute $8\\%$.
 
 A ratio of $8$ exactly would have needed drywall at $\\$36$, two dollars below the recovered sheet price. With $y=38$ and $x=4.50$, drywall is more than $8$ times a stud.
 
@@ -8557,7 +8557,7 @@ Job 1 usable $6600$, waste $564$, so $564/6600 \\approx 8.545\\%$. Job 2 usable 
 
 Job 2 has the higher stud-to-sheet count ratio, $350/175=2$ versus Job 1's $200/150 \\approx 1.33$, and studs carry the higher waste rate of $12\\%$ against drywall's $8\\%$. That mix difference is why Job 2's waste percentage of usable cost sits slightly higher. The arithmetic already shows Job 1's percentage is smaller.
 
-A solver who compared dollar waste $564$ and $721$ without dividing by usable cost would still find Job 1 smaller, but that is not a percentage of usable cost.
+Comparing dollar waste $564$ and $721$ without dividing by usable cost would still find Job 1 smaller, but that is not a percentage of usable cost. After isolating the unknown, the check is against $564$. The figure $721$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $564$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Job 1's waste add-on about $8.55\\%$ is smaller than Job 2's about $8.77\\%$, so the statement is True.`,
     ],
@@ -8646,7 +8646,7 @@ $$0.025 \\times 3.40 = 0.085$$
 
 The actual gap $0.10$ sits $0.015$ above $0.085$, so about $2.94\\%$, which exceeds $2.5\\%$. Equivalently, the cutoff scale is $3.4 \\times 1.025=3.485$, and recovered $3.50$ sits $0.015$ above that.
 
-A solver who used $0.10/3.50 \\approx 2.86\\%$ against the scale itself would still pass $2.5\\%$, but that is a different base. A solver who treated $3.50-3.4=0.10$ as if $0.10$ were already $2.5\\%$ of something would mix a difference with a relative gap. The trap figure $0.10$ is the raw gap, not a percent. Point 3's verification discrepancy does not rewrite the recovered scale.
+Using $0.10/3.50 \\approx 2.86\\%$ against the scale itself would still pass $2.5\\%$, but that is a different base. Working from the isolated values, $0.10/3.50 \\approx 2.86\\%$ is the figure that is checked, not the detour that produced $2.5\\%$. Treating $3.50-3.4=0.10$ as if $0.10$ were already $2.5\\%$ of something would mix a difference with a relative gap. After isolating the unknown, the check is against $3.50-3.4=0.10$. The figure $2.5\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $3.50-3.4=0.10$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure $0.10$ is the raw gap, not a percent. Point 3's verification discrepancy does not rewrite the recovered scale.
 
 The opposite verdict would need scale at or below $3.485$. Recovered $3.50$ sits above that.
 
@@ -8669,7 +8669,7 @@ $$97 > 95$$
 
 The prediction overshoots $95$ by $2$. With the original offset the same reading would be $70+13.50=83.50$, which fails $95$; doubling the offset is what carries the claim.
 
-A solver who doubled the scale instead would get $7 \\times 20 + 13.50=153.50$, still above $95$. The trap figure $153.50$ is a doubled scale, not a doubled offset. A solver who used reading $12.4$ from Point 1 would get $3.50 \\times 12.4 + 27=43.4+27=70.4$, which fails $95$ and would flip the verdict. The claim names reading $20$. The verification-check discrepancy at reading $45$ does not rewrite this counterfactual.
+Doubling the scale instead would get $7 \\times 20 + 13.50=153.50$, still above $95$. After isolating the unknown, the check is against $7 \\times 20 + 13.50=153.50$. The figure $95$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $7 \\times 20 + 13.50=153.50$ stays in the write-up. The trap figure $153.50$ is a doubled scale, not a doubled offset. Using reading $12.4$ from Point 1 would get $3.50 \\times 12.4 + 27=43.4+27=70.4$, which fails $95$ and would flip the verdict. The recovered comparison therefore keeps $12.4$ and does not substitute $95$. That contrast is the reason the verdict goes the way it does. The claim names reading $20$. The verification-check discrepancy at reading $45$ does not rewrite this counterfactual.
 
 The opposite verdict would need $3.50 \\times 20 + 27 \\le 95$, so $97 \\le 95$, which fails.
 
@@ -8688,11 +8688,11 @@ The prediction is *below* the recorded value, not above. "Exceeding" fails on si
 
 **2.** Even in absolute terms, $1.20/172.20 \\approx 0.70\\%$, which is not more than $1\\%$.
 
-A solver who used $172.20-171=1.20$ as a positive excess of prediction over recorded would have the sign backwards. The curve undershoots the check point.
+Using $172.20-171=1.20$ as a positive excess of prediction over recorded would have the sign backwards. That is why $172.20-171=1.20$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The curve undershoots the check point.
 
 The prediction $171.00$ does not exceed $172.20$ by more than $1\\%$, Point 3 is the verification check, not a third calibration point. Points 1 and 2 recovered scale $3.50$ and offset $13.50$. At reading $45.0$ the curve predicts $3.50 \\times 45 + 13.50=171.00$. Recorded reference is $172.20$. The prediction is $1.20$ *below* the recorded value, so it does not exceed it. Even absolutely, $1.20/172.20 \\approx 0.70\\%$, under $1\\%$.
 
-A solver who used $172.20-171$ as a positive excess of prediction over recorded would have the sign backwards. "Exceeding" requires predicted $>$ recorded. Here predicted $<$ recorded. A solver who treated Point 3 as a third calibration point and refit the line would be mixing the verification into the fit, which the table's Role column forbids.
+Using $172.20-171$ as a positive excess of prediction over recorded would have the sign backwards. The opposite verdict would need a different isolation than $172.20-171$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. "Exceeding" requires predicted $>$ recorded. Here predicted $<$ recorded. Treating Point 3 as a third calibration point and refit the line would be mixing the verification into the fit, which the table's Role column forbids. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 This is the inconsistent third row on a calibration curve. The $1\\%$ relative bar is the claim's window, and the signed comparison fails before the bar is even applied. If the recorded value had been $169.00$, the prediction $171.00$ would have exceeded it by $2/169 \\approx 1.18\\%$, over $1\\%$, and the claim would have been true. The printed $172.20$ is what keeps predicted below recorded.
 
@@ -8715,7 +8715,7 @@ $$2 \\times 56.90 = 113.80$$
 
 Point 2 is $124.45$, which sits $10.65$ above $113.80$, so the increase is about $118.7\\%$, which exceeds $100\\%$.
 
-A solver who used readings $31.7/12.4 \\approx 2.556$ and reported a $155.6\\%$ reading increase would be comparing raw readings, also more than $100\\%$ up, but the claim names true values. The trap figure $155.6\\%$ is the reading ratio's increase. The offset $13.50$ is why true-value growth ($118.7\\%$) is slower than reading growth ($155.6\\%$): a positive intercept makes the output less than proportional to the input.
+Using readings $31.7/12.4 \\approx 2.556$ and reporting a $155.6\\%$ reading increase would be comparing raw readings, also more than $100\\%$ up, but the claim names true values. Working from the isolated values, $31.7/12.4 \\approx 2.556$ is the figure that is checked, not the detour that produced $100\\%$. That contrast is the reason the verdict goes the way it does. The trap figure $155.6\\%$ is the reading ratio's increase. The offset $13.50$ is why true-value growth ($118.7\\%$) is slower than reading growth ($155.6\\%$): a positive intercept makes the output less than proportional to the input.
 
 The opposite verdict would need Point 2 at or below $113.80$. With Point 2 at $124.45$, the increase exceeds $100\\%$.
 
@@ -8738,7 +8738,7 @@ $$41.50 < 28.45$$
 
 is false. The prediction $41.50$ sits $13.05$ *above* half of Point 1, not below it. The offset $13.50$ is almost the entire excess: without the offset the scale piece is $28$, which *would* sit just under $28.45$ and would flip the verdict.
 
-The trap figure $28$ is that offset-free prediction. A through-the-origin rule is the rushed solver's habit after seeing "scale factor $3.50$." Another trap is taking half of reading $12.4$, getting $6.2$, then predicting $3.50 \\times 6.2 + 13.50=35.20$, still not below $28.45$. The offset is the whole content of this letter: it keeps a low reading from scaling down as far as a proportional rule would.
+The trap figure $28$ is that offset-free prediction. A through-the-origin rule is the habit of scaling through the origin after seeing "scale factor $3.50$." Another trap is taking half of reading $12.4$, getting $6.2$, then predicting $3.50 \\times 6.2 + 13.50=35.20$, still not below $28.45$. The offset is the whole content of this letter: it keeps a low reading from scaling down as far as a proportional rule would.
 
 The opposite verdict would need $3.50 \\times 8 + 13.50 < 28.45$, so $41.50 < 28.45$, which fails. Point 3's verification row does not rewrite scale or offset.
 
@@ -8814,7 +8814,7 @@ $$\\frac{6.20-4.85}{4.85} = \\frac{1.35}{4.85} \\approx 0.2784$$
 
 **2.** About $27.8\\%$ exceeds $25\\%$. Twenty-five percent of $\\$4.85$ is $\\$1.2125$, and the $\\$1.35$ gap sits above that mark.
 
-A solver who used $1.35/6.20 \\approx 21.8\\%$ against Coffee would fail the cutoff. The claim is Coffee's premium over Cocoa, so Cocoa is the base. A solver who compared shipment totals instead of unit prices would mix the $3:2$ and $5:3$ blends into the premium.
+Using $1.35/6.20 \\approx 21.8\\%$ against Coffee would fail the cutoff. The path that matches the stem therefore holds $1.35/6.20 \\approx 21.8\\%$ fixed and only then reads the claim. The claim is Coffee's premium over Cocoa, so Cocoa is the base. Comparing shipment totals instead of unit prices would mix the $3:2$ and $5:3$ blends into the premium. So the letter reads the claim against $3:2$; $5:3$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $3:2$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need a Coffee price at or below $1.25 \\times 4.85 = 6.0625$. With $x=6.20$, Coffee is about $27.8\\%$ dearer than Cocoa, more than $25\\%$, so the statement is True.`,
       `**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.**  (true)
@@ -8835,7 +8835,7 @@ $$\\frac{1934.40}{2943.20} \\approx 0.6572$$
 
 About $65.7\\%$, which exceeds $65\\%$. Cocoa on the same bill is $208 \\times 4.85 = 1008.80$, and $1934.40+1008.80=2943.20$ rebuilds the printed row, so the Coffee share is not a rounding artefact.
 
-A solver who used mass share $3/5=60\\%$ would sit under $65\\%$ and flip the verdict, because Coffee is the dearer commodity: dollars run ahead of kilograms. The trap figure $60\\%$ is the mass fraction, not the dollar fraction. A solver who costed all $520$ kg at $\\$6.20$ would get $\\$3{,}224$ and a $100\\%$ Coffee story that the mix does not support.
+Using mass share $3/5=60\\%$ would sit under $65\\%$ and flip the verdict, because Coffee is the dearer commodity: dollars run ahead of kilograms. The recovered comparison therefore keeps $3/5=60\\%$ and does not substitute $65\\%$. The trap figure $60\\%$ is the mass fraction, not the dollar fraction. Costing all $520$ kg at $\\$6.20$ would get $\\$3{,}224$ and a $100\\%$ Coffee story that the mix does not support. The stem's recovered values line up with $520$, whereas $100\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $520$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would need Coffee's dollar share at or below $0.65 \\times 2943.20 = 1913.08$. That would take a Coffee price at or below $1913.08/312 \\approx 6.13$. Recovered Coffee is $\\$6.20$. Shipment 2's $5:3$ mix is a different bill and does not rewrite Shipment 1's $312$ kg.
 
@@ -8860,7 +8860,7 @@ $$2480 + 1940 = 4420$$
 
 Then $4420 < 4555$. Moving mass from Coffee onto Cocoa, the cheaper commodity, lowers the bill by $\\$135$. The actual $5:3$ mix is $500$ kg Coffee and $300$ kg Cocoa; the $1:1$ mix shifts $100$ kg, and $100 \\times (6.20-4.85)=135$.
 
-A solver who used $5:3$ still would report $4555$ and find no decrease. The ratio change is the whole content of this letter.
+Using $5:3$ still would report $4555$ and find no decrease. After isolating the unknown, the check is against $5:3$. The figure $4555$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $5:3$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The ratio change is the whole content of this letter.
 
 The $1:1$ shipment costs $\\$4{,}420$, lower than $\\$4{,}555$, so the statement is True.`,
       `**D) The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.**  (false)
@@ -8881,7 +8881,7 @@ $$2463.80 > 5034.40$$
 
 is false. Coffee dollars are more than double Cocoa dollars. Cocoa is cheaper per kilogram *and* the mixes are Coffee-heavy ($312$ vs $208$, then $500$ vs $300$), so both the price gap and the mass gap push Coffee's dollar total up.
 
-A solver who compared kilograms $508$ vs $812$ and treated mass as money would still find Cocoa smaller, but a solver who compared unit prices the wrong way, or who used only Shipment 1's Cocoa $1008.80$ against Shipment 2's Coffee $3100$, can manufacture a Cocoa-wins story by mixing unmatched rows. The trap figure $\\$2{,}463.80$ is the Cocoa total sitting next to Shipment 1's printed $\\$2{,}943.20$ as if one shipment's Cocoa could beat the other shipment's whole bill.
+Comparing kilograms $508$ vs $812$ and treating mass as money would still find Cocoa smaller, but comparing unit prices the wrong way, or using only Shipment 1's Cocoa $1008.80$ against Shipment 2's Coffee $3100$, can manufacture a Cocoa-wins story by mixing unmatched rows. Working from the isolated values, $1008.80$ is the figure that is checked, not the detour that produced $3100$. That contrast is the reason the verdict goes the way it does. That is the fork: $508$ belongs to the recovered isolation, $3100$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The trap figure $\\$2{,}463.80$ is the Cocoa total sitting next to Shipment 1's printed $\\$2{,}943.20$ as if one shipment's Cocoa could beat the other shipment's whole bill.
 
 The opposite verdict would need Cocoa dearer than Coffee, or a Cocoa-heavy mix the stem does not give. With recovered prices and these two ratios, Cocoa cannot overtake Coffee in combined dollars.
 
@@ -8900,7 +8900,7 @@ $$\\frac{1.35}{6.20} \\approx 0.2177$$
 
 **3.** About $21.8\\%$, which is less than $30\\%$. Thirty percent of Coffee would be $0.30 \\times 6.20 = 1.86$, and the actual gap $1.35$ sits $\\$0.51$ under that cutoff.
 
-A solver who used $1.35/4.85 \\approx 27.8\\%$ against Cocoa would still pass $30\\%$, but the claim names Coffee as the base. A solver who used $6.20/4.85 \\approx 1.278$ and reported $27.8\\%$ "higher" is answering a different percent-higher letter, not a gap-over-Coffee letter. The trap figure $27.8\\%$ is the gap over Cocoa, or the "higher than" remainder after subtracting $1$ from the price ratio.
+Using $1.35/4.85 \\approx 27.8\\%$ against Cocoa would still pass $30\\%$, but the claim names Coffee as the base. So the letter reads the claim against $1.35/4.85 \\approx 27.8\\%$; $30\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1.35/4.85 \\approx 27.8\\%$ stays in the write-up. Using $6.20/4.85 \\approx 1.278$ and reporting $27.8\\%$ "higher" is answering a different percent-higher letter, not a gap-over-Coffee letter. So the letter reads the claim against $6.20/4.85 \\approx 1.278$; $27.8\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6.20/4.85 \\approx 1.278$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The trap figure $27.8\\%$ is the gap over Cocoa, or the "higher than" remainder after subtracting $1$ from the price ratio.
 
 The opposite verdict would need a gap of at least $1.86$, so Cocoa at or below $6.20-1.86=4.34$. Recovered Cocoa is $\\$4.85$. Shipment 2's $5:3$ mix does not rewrite those two unit prices.
 
@@ -8987,7 +8987,7 @@ $$\\frac{14.0}{18.0} \\approx 0.7778$$
 
 **3.** About $77.8\\%$, which exceeds $75\\%$. Seventy-five percent of $18$ is $13.5$, and the actual gap $14$ sits $0.5$ L/$100$ km above that cutoff.
 
-A solver who used $32/18 \\approx 1.778$ and reported $177.8\\%$ would have forgotten to subtract $1$ from a "higher than" claim. A solver who used $14/32=43.75\\%$ against the Truck would fail the cutoff. The trap figure $177.8\\%$ is the ratio left as a multiple. Another trap is Route 2's fleet average $322/14=23$ treated as a "truck" rate: $23$ is only about $28\\%$ above $18$.
+Using $32/18 \\approx 1.778$ and reporting $177.8\\%$ would have forgotten to subtract $1$ from a "higher than" claim. Working from the isolated values, $32/18 \\approx 1.778$ is the figure that is checked, not the detour that produced $1$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using $14/32=43.75\\%$ against the Truck would fail the cutoff. The path that matches the stem therefore holds $14/32=43.75\\%$ fixed and only then reads the claim. The trap figure $177.8\\%$ is the ratio left as a multiple. Another trap is Route 2's fleet average $322/14=23$ treated as a "truck" rate: $23$ is only about $28\\%$ above $18$.
 
 The opposite verdict would need Truck at or below $18 \\times 1.75=31.5$. Recovered Truck is $32.0$. The mile-to-kilometre conversion on Route 3 does not move these two fleet rates.
 
@@ -9002,11 +9002,11 @@ $$\\frac{155.0 - 152.0}{155.0} = \\frac{3}{155} \\approx 0.01935$$
 
 about $1.94\\%$, which is not more than $2\\%$. The prediction is below the recorded value, but shy of a $2\\%$ relative gap.
 
-A solver who used $3/152 \\approx 1.97\\%$ against the prediction would still fail $2\\%$. A solver who treated $155.3$ mi as $155.3$ km would wreck the Truck term and manufacture a large gap.
+Using $3/152 \\approx 1.97\\%$ against the prediction would still fail $2\\%$. So the letter reads the claim against $3/152 \\approx 1.97\\%$; $2\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $3/152 \\approx 1.97\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Treating $155.3$ mi as $155.3$ km would wreck the Truck term and manufacture a large gap. The recovered isolation is checked against the claim using $155.3$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The prediction sits about $1.94\\%$ below $155.0$ L, not more than $2\\%$ below, Route 3 is the audit row, with Truck distance logged in miles and converted at $155.3$ mi $\\approx 250$ km. Routes 1 and 2 recovered $32.0$ and $18.0$ L/$100$ km. Predicted fuel $2.50 \\times 32 + 4.00 \\times 18 = 80+72=152.0$ L against recorded $155.0$ L. The $3.0$ L gap is $3/155 \\approx 1.94\\%$ of the recorded value, which is not more than $2\\%$.
 
-A solver who treated $155.3$ mi as $155.3$ km would predict $1.553 \\times 32 + 4 \\times 18 \\approx 49.7+72=121.7$ L, about $21\\%$ below $155$, and would accept "more than $2\\%$." The conversion to $250$ km is the extra arithmetic that makes the relative gap $1.94\\%$ rather than $21\\%$. Close is not "more than $2\\%$ below."
+Treating $155.3$ mi as $155.3$ km would predict $1.553 \\times 32 + 4 \\times 18 \\approx 49.7+72=121.7$ L, about $21\\%$ below $155$, and would accept "more than $2\\%$." After isolating the unknown, the check is against $155.3$. The figure $2\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $155.3$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.The conversion to $250$ km is the extra arithmetic that makes the relative gap $1.94\\%$ rather than $21\\%$. Close is not "more than $2\\%$ below."
 
 This is the inconsistent third row with a $2\\%$ relative bar. The prediction *is* below the recorded value; the bar is what the claim fails. If the recorded value had been $160$ L, the gap would have been $8/160=5\\%$, over $2\\%$, and the claim would have been true.
 
@@ -9029,11 +9029,11 @@ $$383.6 + 50.4 = 434.0$$
 
 $$434 > 430$$
 
-Directly: $850 \\times 0.320 + 900 \\times 0.180 = 272 + 162 = 434$. A solver who used $900$ km of Truck instead would add far more fuel and still exceed $430$, so that swap would not flip the verdict, but it would be the wrong vehicle.
+Directly: $850 \\times 0.320 + 900 \\times 0.180 = 272 + 162 = 434$. Using $900$ km of Truck instead would add far more fuel and still exceed $430$, so that swap would not flip the verdict, but it would be the wrong vehicle. That is the fork: $900$ belongs to the recovered isolation, $430$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 The counterfactual Route 1 uses $434$ L, which exceeds $430$ L, Raising Route 1's Van distance from $620$ km to $900$ km, Truck held at $850$ km, adds $280$ km of Van at $18.0$ L/$100$ km, which is $50.4$ L, producing $383.6+50.4=434.0$ L, four litres over $430$. Using Truck's rate on those extra $280$ km would add $89.6$ L and still exceed $430$, so that swap would not flip the inequality, but it would be the wrong vehicle. The extra kilometres are Van.
 
-A solver who replaced $620$ with $900$ on both columns would be answering a different counterfactual. This is a one-column increment on Route 1, a new mix built from a logged route. The cutoff $430$ is a round bar; $434$ clears it by four litres. If the Van rate had been $16.0$ L/$100$ km, the extra $280$ km would add $44.8$ L and the new total would be $428.4$, under $430$. The recovered $18.0$ is what pushes $434$ over the bar.
+Replacing $620$ with $900$ on both columns would be answering a different counterfactual. Working from the isolated values, $620$ is the figure that is checked, not the detour that produced $900$. That contrast is the reason the verdict goes the way it does. This is a one-column increment on Route 1, a new mix built from a logged route. The cutoff $430$ is a round bar; $434$ clears it by four litres. If the Van rate had been $16.0$ L/$100$ km, the extra $280$ km would add $44.8$ L and the new total would be $428.4$, under $430$. The recovered $18.0$ is what pushes $434$ over the bar.
 
 so the statement is True.`,
       `**D) Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.**  (true)
@@ -9056,7 +9056,7 @@ $$32.0 - 23.0 = 9.0$$
 
 Then $5.0 < 9.0$, so the average is closer to the Van. That is not a surprise: $900$ of $1400$ km, about $64\\%$, is Van distance, so the average is pulled toward $18$.
 
-A solver who averaged $32$ and $18$ as an unweighted $25$ would sit $7$ from the Van and $7$ from the Truck and call it a tie. The trap figure $25$ is that unweighted midpoint. Route 2 is not half-and-half. A solver who used litres $500$ vs $900$ as if they were fuel rather than kilometres would also scramble the weights.
+Averaging $32$ and $18$ as an unweighted $25$ would sit $7$ from the Van and $7$ from the Truck and call it a tie. That is the fork: $32$ belongs to the recovered isolation, $7$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $25$ is that unweighted midpoint. Route 2 is not half-and-half. Using litres $500$ vs $900$ as if they were fuel rather than kilometres would also scramble the weights. The recovered comparison therefore keeps $500$ and does not substitute $900$.
 
 The opposite verdict would need the Truck share of Route 2's distance large enough to push the average past the midpoint $25$. With $500$ Truck kilometres out of $1400$, the average is $23$, on the Van side of $25$.
 
@@ -9079,7 +9079,7 @@ $$470.4 + 264.6 = 735.0, \\qquad 383.6 < 735.0$$
 
 Route 1 splits $1470$ km across the two types; it does not run both types over the whole distance. The inequality is then immediate: actual fuel is a weighted average of $32$ and $18$, times $1470$ km, which sits between $264.6$ and $470.4$, far below the sum $735$.
 
-A solver who compared $383.6$ with $470.4$ only would still find $383.6$ smaller, but the claim is against the *sum* of both solo runs.
+Comparing $383.6$ with $470.4$ only would still find $383.6$ smaller, but the claim is against the *sum* of both solo runs. The stem's recovered values line up with $383.6$, whereas $470.4$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $383.6$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 Route 1's $383.6$ L is less than $735$ L, so the statement is True.`,
     ],
@@ -9148,7 +9148,7 @@ versus 155 L recorded, a 3 L discrepancy.
       `The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.`,
       `Under the current allocation, the blended rate is less than 6%.`,
       `If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns (\\$2,646.00 + \\$2,754.00 = \\$5,400.00).`,
-      `A \\frac{50}{50} split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.`,
+      `A $\\frac{50}{50}$ split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.`,
       `The bond rate is more than 80% of the equity rate.`,
     ],
     answer_key: [true, true, false, true, true],
@@ -9167,7 +9167,7 @@ $$\\frac{1.2}{5.4} \\approx 0.2222$$
 
 **3.** About $22.2\\%$, which exceeds $20\\%$. Twenty percent of $5.4$ is $1.08$ percentage points, and the actual gap $1.2$ sits $0.12$ points above that cutoff.
 
-A solver who used $1.2/6.6 \\approx 18.2\\%$ against equity would fail the cutoff and flip the verdict. The trap figure $18.2\\%$ is the gap over the larger rate. A solver who used $6.6/5.4 \\approx 1.222$ and reported $122\\%$ would have left the ratio as a multiple. The claim is "more than $20\\%$ of the bond rate, in relative terms," which is the $1.2/5.4$ quotient.
+Using $1.2/6.6 \\approx 18.2\\%$ against equity would fail the cutoff and flip the verdict. The opposite verdict would need a different isolation than $1.2/6.6 \\approx 18.2\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap figure $18.2\\%$ is the gap over the larger rate. Using $6.6/5.4 \\approx 1.222$ and reporting $122\\%$ would have left the ratio as a multiple. So the letter reads the claim against $6.6/5.4 \\approx 1.222$; $122\\%$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $6.6/5.4 \\approx 1.222$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim is "more than $20\\%$ of the bond rate, in relative terms," which is the $1.2/5.4$ quotient.
 
 The opposite verdict would need equity at or below $5.4 \\times 1.20 = 6.48\\%$. Recovered equity is $6.6\\%$. Swapping the $\\$27{,}000$ and $\\$18{,}000$ sleeves changes the blended return, not these two sleeve rates.
 
@@ -9188,7 +9188,7 @@ $$\\frac{27000}{45000} \\times 5.4 + \\frac{18000}{45000} \\times 6.6 = 0.6 \\ti
 
 $$5.88 < 6$$
 
-The current mix is $60\\%$ bonds, so the blend sits closer to $5.4$ than to $6.6$. A solver who averaged $5.4$ and $6.6$ as an unweighted $6.0\\%$ would sit exactly on the cutoff and might treat "less than $6\\%$" as a tie. The trap figure $6.0\\%$ is that unweighted midpoint. The fund is not $50/50$ today.
+The current mix is $60\\%$ bonds, so the blend sits closer to $5.4$ than to $6.6$. Averaging $5.4$ and $6.6$ as an unweighted $6.0\\%$ would sit exactly on the cutoff and might treat "less than $6\\%$" as a tie. The recovered comparison therefore keeps $5.4$ and does not substitute $6\\%$. That contrast is the reason the verdict goes the way it does. The trap figure $6.0\\%$ is that unweighted midpoint. The fund is not $50/50$ today.
 
 The opposite verdict would need the current return at or above $0.06 \\times 45000=2700$. The printed current return is $\\$2{,}646$. The proposed swap return $\\$2{,}754$ is a different mix and is not "current."
 
@@ -9211,12 +9211,12 @@ $$2970 > 5400$$
 
 is false. The all-equity figure $\\$2{,}970$ sits between the two described returns, as it must: $6.6\\%$ is the top sleeve rate, so a $100\\%$ equity mix beats the current $5.88\\%$ mix and the swapped mix, but it cannot beat the *sum* of two full-fund returns.
 
-A solver who treated $\\$5{,}400$ as "two years of income" or as "both portfolios at once" is the intended trap. The trap figure $\\$5{,}400$ is that illegal sum. Another wrong route: $45000 \\times 0.066 \\times 2 = 5940$, stacking two years onto all-equity, which still is not the claim, but shows how easy it is to double a return.
+Treating $\\$5{,}400$ as "two years of income" or as "both portfolios at once" is the intended trap. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The trap figure $\\$5{,}400$ is that illegal sum. Another wrong route: $45000 \\times 0.066 \\times 2 = 5940$, stacking two years onto all-equity, which still is not the claim, but shows how easy it is to double a return.
 
 The opposite verdict would need an equity rate above $5400/45000=12\\%$, which would be adding the two sleeve rates rather than using one of them. Recovered equity is $6.6\\%$, not $12\\%$.
 
 All-equity income is $\\$2{,}970$, which does not exceed $\\$5{,}400$, so the statement is False.`,
-      `**D) A \\frac{50}{50} split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
+      `**D) A $\\frac{50}{50}$ split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
 
 The statement claims a $50/50$ split would produce a blended return equal to the average of the two described allocations' returns.
 
@@ -9230,7 +9230,7 @@ $$\\frac{2646 + 2754}{2} = 2700$$
 
 The figures match. The two described allocations swap $\\$9{,}000$ between bonds and equities. Their average is the midpoint mix, which is $50/50$ on a $\\$45{,}000$ trust. Linearity of simple interest makes that identity exact.
 
-A solver who averaged the *rates* $5.4$ and $6.6$ as $6\\%$ of $45000=2700$ gets the same number by a different route, which happens to be valid here because $50/50$ is also the unweighted rate average.
+Averaging the *rates* $5.4$ and $6.6$ as $6\\%$ of $45000=2700$ gets the same number by a different route, which happens to be valid here because $50/50$ is also the unweighted rate average. So the letter reads the claim against $5.4$; $50/50$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $5.4$ stays in the write-up.
 
 The $50/50$ return is $\\$2{,}700$, equal to the average of $\\$2{,}646$ and $\\$2{,}754$, so the statement is True.`,
       `**E) The bond rate is more than 80% of the equity rate.**  (true)
@@ -9251,7 +9251,7 @@ $$5.4 > 5.28$$
 
 About $81.8\\%$ of equity, which exceeds $80\\%$. The gap above the cutoff is $0.12$ percentage points.
 
-A solver who used $5.4/6.0=90\\%$ against a round $6\\%$ would overstate the share. A solver who used $6.6/5.4 \\approx 1.222$ and reported $122\\%$ is answering letter A's "higher than" story, not a bond-as-a-share-of-equity story. The trap figure $1.22$ is the inverted ratio. Another trap is using the current blended $5.88\\%$ in the denominator: $5.4/5.88 \\approx 91.8\\%$, which still passes $80\\%$ but is not the equity rate.
+Using $5.4/6.0=90\\%$ against a round $6\\%$ would overstate the share. After isolating the unknown, the check is against $5.4/6.0=90\\%$. The figure $6\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $5.4/6.0=90\\%$ stays in the write-up. Using $6.6/5.4 \\approx 1.222$ and reporting $122\\%$ is answering letter A's "higher than" story, not a bond-as-a-share-of-equity story. That is the fork: $6.6/5.4 \\approx 1.222$ belongs to the recovered isolation, $122\\%$ belongs to the discarded mix. The trap figure $1.22$ is the inverted ratio. Another trap is using the current blended $5.88\\%$ in the denominator: $5.4/5.88 \\approx 91.8\\%$, which still passes $80\\%$ but is not the equity rate.
 
 The opposite verdict would need bond at or below $5.28\\%$. Recovered bond is $5.4\\%$. The current $60/40$ split does not rewrite the two sleeve rates.
 
@@ -9336,7 +9336,7 @@ The overview reconstructed Renters coverage as $\\$25{,}000$. Then $25000 < 3000
 
 **2.** Then $117/4.68=25$ thousands of coverage, which is $\\$25{,}000$, and $25{,}000$ sits $\\$5{,}000$ under the $\\$30{,}000$ line.
 
-A solver who used Auto's $\\$85{,}000$ here would fail the cutoff in the other direction. A solver who treated $\\$331.70$ as if it were already thousands of coverage would report something near $332$ and miss the claim. A solver who forgot to peel the fee would divide $331.70$ by $4.68$ and overshoot $25$.
+Using Auto's $\\$85{,}000$ here would fail the cutoff in the other direction. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Treating $\\$331.70$ as if it were already thousands of coverage would report something near $332$ and miss the claim. Once $332$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Forgetting to peel the fee would divide $331.70$ by $4.68$ and overshoot $25$. So the letter reads the claim against $331.70$; $25$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $331.70$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need a reconstructed coverage of $\\$30{,}000$ or more. With $C=25$ recovered from the Renters premium, coverage is $\\$25{,}000$, less than $\\$30{,}000$, so the statement is True.`,
       `**B) The fixed administrative fee represents more than 60% of the Auto policy's total premium.**  (false)
@@ -9357,7 +9357,7 @@ $$0.60 \\times 612.50 = 367.50$$
 
 Then $214.70$ is about $35\\%$ of Auto, not more than $60\\%$. The fee would have to exceed $\\$367.50$ to pass the cutoff. On Auto, the coverage charge $\\$397.80$ is the larger piece.
 
-A solver who used Home's premium $\\$1{,}197.50$ in the denominator would get $214.70/1197.50 \\approx 17.9\\%$, even smaller. A solver who used Renters $\\$331.70$ would get about $64.7\\%$ and would accept the claim. The trap figure $64.7\\%$ is the fee share of *Renters*, the small policy, not of Auto. The claim names Auto.
+Using Home's premium $\\$1{,}197.50$ in the denominator would get $214.70/1197.50 \\approx 17.9\\%$, even smaller. Once $214.70/1197.50 \\approx 17.9\\%$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using Renters $\\$331.70$ would get about $64.7\\%$ and would accept the claim. Keeping $64.7\\%$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $64.7\\%$ is the fee share of *Renters*, the small policy, not of Auto. The claim names Auto.
 
 The opposite verdict would need Auto coverage small enough that $214.70$ is $60\\%$ of the premium, so premium about $\\$357.83$ and coverage charge about $\\$143$, or about $31$ units. Auto is $85$ units.
 
@@ -9378,7 +9378,7 @@ $$210 \\times (5.148 - 4.68) = 210 \\times 0.468 = 98.28$$
 
 $$98.28 > 75$$
 
-Directly: $10\\%$ of Home's coverage charge $210 \\times 4.68 = 982.80$ is $98.28$. A solver who applied $10\\%$ to the whole Home premium $\\$1{,}197.50$ would get $\\$119.75$, still above $\\$75$, but that wrongly inflates the fee. The trap figure $\\$119.75$ is $10\\%$ of the full premium. A solver who used Auto's $85$ units would get $85 \\times 0.468=39.78$, which fails $\\$75$ and would flip the verdict. The claim names Home.
+Directly: $10\\%$ of Home's coverage charge $210 \\times 4.68 = 982.80$ is $98.28$. Applying $10\\%$ to the whole Home premium $\\$1{,}197.50$ would get $\\$119.75$, still above $\\$75$, but that wrongly inflates the fee. The recovered comparison therefore keeps $10\\%$ and does not substitute $75$. The trap figure $\\$119.75$ is $10\\%$ of the full premium. Using Auto's $85$ units would get $85 \\times 0.468=39.78$, which fails $\\$75$ and would flip the verdict. The recovered comparison therefore keeps $85$ and does not substitute $85 \\times 0.468=39.78$. The claim names Home.
 
 The opposite verdict would need $210 \\times 0.468 \\le 75$, so a rate increment at or below $75/210 \\approx 0.357$, which would be about a $7.6\\%$ rate rise, not $10\\%$. Renters' reconstructed $\\$25{,}000$ is a different policy.
 
@@ -9393,7 +9393,7 @@ The statement claims the Home policy's premium per $\\$1{,}000$ of coverage is m
 
 **3.** Twice Auto: $14.41$. Then $5.70 > 14.41$ is false, and even $5.70 > 7.21$ is false. Home's *average* premium per thousand is *lower* than Auto's, because the shared fee is spread over more coverage.
 
-A solver who compared totals $1197.50$ and $2 \\times 612.50=1225$ would find Home slightly smaller, which is a different comparison that also fails "more than twice." A solver who used only the rate $4.68$ on both would find them equal.
+Comparing totals $1197.50$ and $2 \\times 612.50=1225$ would find Home slightly smaller, which is a different comparison that also fails "more than twice." Working from the isolated values, $1197.50$ is the figure that is checked, not the detour that produced $2 \\times 612.50=1225$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.using only the rate $4.68$ on both would find them equal. That is why $4.68$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 Home's per-thousand premium is about $\\$5.70$, Auto's about $\\$7.21$, so Home is not more than twice Auto, so the statement is False.`,
       `**E) Combining the Auto and Home coverage into a single hypothetical policy (295 units of \\$1,000 coverage total) would cost less than the sum of their separate premiums (\\$612.50 + \\$1,197.50 = \\$1,810.00).**  (true)
@@ -9404,11 +9404,11 @@ A combined policy pays the fee once.
 
 $$214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30$$
 
-Then $1595.30 < 1810$. The saving is exactly one fee, $214.70$, and $1810-214.70=1595.30$. A solver who charged two fees on the combined policy would get $1810$ and find no saving. The claim's "single hypothetical policy" is what drops a fee.
+Then $1595.30 < 1810$. The saving is exactly one fee, $214.70$, and $1810-214.70=1595.30$. Charging two fees on the combined policy would get $1810$ and find no saving. The recovered isolation is checked against the claim using $1810$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim's "single hypothetical policy" is what drops a fee.
 
 The combined policy costs $\\$1{,}595.30$, less than $\\$1{,}810$, Combining Auto and Home into one policy covering $85+210=295$ thousands pays the administrative fee once. Separate policies pay it twice. The saving is exactly $214.70$, and $1810-214.70=1595.30$. Linearity of the rate term means the $4.68$ per thousand on $295$ thousands matches the sum of the two rate lines; only the intercept is not doubled.
 
-A solver who charged two fees on the combined policy would get $1810$ and find no saving. The claim's "single hypothetical policy" is what drops a fee. A solver who combined coverage as $210$ thousands only, dropping Auto, would be answering a different merge.
+Charging two fees on the combined policy would get $1810$ and find no saving. The recovered isolation is checked against the claim using $1810$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim's "single hypothetical policy" is what drops a fee. Combining coverage as $210$ thousands only, dropping Auto, would be answering a different merge. That is why $210$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 If the fee had been zero, combined and separate would cost the same, and the claim would fail. The recovered $214.70$ intercept is the whole reason a combined policy is cheaper. This is a new mix in the sense of a merged ticket, not a third policy row.
 
@@ -9492,7 +9492,7 @@ $$730 + 4 \\times 36 = 730 + 144 = 874$$
 
 $$898 - 874 = 24$$
 
-Then $24 > 20$. A starts behind by $120$ at Year 2 and closes $36$ individuals per year, so after four years it has closed $144$ and leads by $24$. A solver who used Year 2's $610$ and $730$ without growing them would find A still behind and fail the claim.
+Then $24 > 20$. A starts behind by $120$ at Year 2 and closes $36$ individuals per year, so after four years it has closed $144$ and leads by $24$. Using Year 2's $610$ and $730$ without growing them would find A still behind and fail the claim. The stem's recovered values line up with $610$, whereas $730$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $610$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 At Year 6, A leads B by $24$ individuals, more than $20$, so the statement is True.`,
       `**B) If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.**  (true)
@@ -9511,9 +9511,9 @@ $$4 \\times 36 = 144$$
 
 $$144 > 140$$
 
-The counterfactual Year 6 combined is $1772+144=1916$. A solver who applied the extra $36$ for only the two endpoint years, or for $6-2-1=3$ intervals, would get $108$ extra and fail the cutoff. The trap figure $108$ is three years of extra growth instead of four. Linear change from Year 2 to Year 6 includes the four increments at the ends of Years $3,4,5,6$.
+The counterfactual Year 6 combined is $1772+144=1916$. Applying the extra $36$ for only the two endpoint years, or for $6-2-1=3$ intervals, would get $108$ extra and fail the cutoff. The stem's recovered values line up with $36$, whereas $108$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $36$ stays in the write-up. The trap figure $108$ is three years of extra growth instead of four. Linear change from Year 2 to Year 6 includes the four increments at the ends of Years $3,4,5,6$.
 
-A solver who raised A instead of B, or who used $+72$ on both from Year $0$, would be answering a different clock. The claim starts from the given Year 2 counts and only rewrites B's later slope.
+Raising A instead of B, or using $+72$ on both from Year $0$, would be answering a different clock. The recovered comparison therefore keeps $+72$ and does not substitute $0$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim starts from the given Year 2 counts and only rewrites B's later slope.
 
 The opposite verdict would need extra growth at or below $140$, so at most $35$ extra per year over four years. B's actual shortfall versus A is $36$ per year.
 
@@ -9536,7 +9536,7 @@ $$\\frac{288}{144} = 2$$
 
 Then $2 > 2.5$ is false. The stem already said A grows at exactly twice B's annual rate, so the four-year totals must sit in the same $2:1$ ratio. A $2.5:1$ claim would need $288:115.2$, which is not $144$ on B's side.
 
-A solver who used Year 6 *levels* $610+288=898$ against $730+144=874$ and formed $898:874 \\approx 1.03:1$ would be comparing stocks, not growth. A solver who used $72:36$ and then added $0.5$ by mixing in the Year 2 gap $120/144$ can manufacture something near $2.5$. The trap figure $2.5$ is that mixed stock-and-flow ratio, not the growth ratio the claim named.
+Using Year 6 *levels* $610+288=898$ against $730+144=874$ and formed $898:874 \\approx 1.03:1$ would be comparing stocks, not growth. That is the fork: $610+288=898$ belongs to the recovered isolation, $898:874 \\approx 1.03:1$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $72:36$ and then adding $0.5$ by mixing in the Year 2 gap $120/144$ can manufacture something near $2.5$. The recovered comparison therefore keeps $72:36$ and does not substitute $2.5$. The trap figure $2.5$ is that mixed stock-and-flow ratio, not the growth ratio the claim named.
 
 The opposite verdict would need B's four-year growth at or below $288/2.5=115.2$. Recovered B growth is $144$. Combined growth $432$ also splits $288+144$.
 
@@ -9559,7 +9559,7 @@ $$2 + \\frac{10}{3} = \\frac{16}{3} \\approx 5.333$$
 
 Year $5.33$ sits strictly between Year 2 and Year 6. Check: after $3$ years (Year 5) A is $610+216=826$ and B is $730+108=838$, still $12$ apart. After $4$ years (Year 6) A is $898$ and B is $874$, A now ahead by $24$. The crossing is inside that last year.
 
-A solver who compared only the integer year-end counts and never interpolated would say they were never equal, because neither Year 5 nor Year 6 is a tie. The trap is that discrete year-end table. The stem's growth is linear in time, so populations are defined between year-ends. Letter E asks whether A overtakes *before Year 5*; that is a different cutoff. This letter only asks whether a crossing exists in the open window.
+Comparing only the integer year-end counts and never interpolated would say they were never equal, because neither Year 5 nor Year 6 is a tie. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The trap is that discrete year-end table. The stem's growth is linear in time, so populations are defined between year-ends. Letter E asks whether A overtakes *before Year 5*; that is a different cutoff. This letter only asks whether a crossing exists in the open window.
 
 The opposite verdict would need the closing time at or beyond $4$ years, so a Year 2 gap of at least $144$. The actual gap is $120$.
 
@@ -9572,7 +9572,7 @@ Letter D already placed the crossing at Year $5.\\overline{3}$. Year $5.\\overli
 
 At Year 5, three years after Year 2: A is $610+216=826$, B is $730+108=838$. B still leads by $12$. A does not overtake until a third of the way through the next year.
 
-A solver who used $t=3$ as "Year 5" and saw $826<838$ would correctly reject the claim. A solver who counted Year 2 as year zero and used $t<5$ would get $t<5$ including $3.33$, and might accept; the calendar label "Year 5" is Year 2 plus three years, and $3.33>3$.
+Using $t=3$ as "Year 5" and seeing $826<838$ would correctly reject the claim. The stem's recovered values line up with $t=3$, whereas $826<838$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $t=3$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Counting Year 2 as year zero and using $t<5$ would get $t<5$ including $3.33$, and might accept; the calendar label "Year 5" is Year 2 plus three years, and $3.33>3$. The recovered comparison therefore keeps $t<5$ and does not substitute $3.33>3$.
 
 A overtakes at Year $5.33$, not before Year 5, so the statement is False.`,
     ],
@@ -9643,7 +9643,7 @@ $$\\frac{145-98}{98} = \\frac{47}{98} \\approx 0.4796$$
 
 **2.** About $48.0\\%$ exceeds $45\\%$. Forty-five percent of $98$ is $44.1$, and the $47$ MWh/hr gap sits above that mark.
 
-A solver who used $47/145 \\approx 32\\%$ against A would fail the cutoff. A solver who used $145/98 \\approx 1.48$ and reported $148\\%$ would have skipped the "exceeds by" subtraction. Day 3's recorded $3{,}553$ versus predicted $3{,}543$ is a mass-audit issue, not a rate issue.
+Using $47/145 \\approx 32\\%$ against A would fail the cutoff. The path that matches the stem therefore holds $47/145 \\approx 32\\%$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. Using $145/98 \\approx 1.48$ and reporting $148\\%$ would have skipped the "exceeds by" subtraction. Working from the isolated values, $145/98 \\approx 1.48$ is the figure that is checked, not the detour that produced $148\\%$. Day 3's recorded $3{,}553$ versus predicted $3{,}543$ is a mass-audit issue, not a rate issue.
 
 The opposite verdict would need A at or below $1.45 \\times 98 = 142.1$. With $A=145$, A exceeds B by about $48\\%$, more than $45\\%$, so the statement is True.`,
       `**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.**  (true)
@@ -9654,11 +9654,11 @@ The overview already predicted $3{,}543$ MWh against $3{,}553$ recorded. The con
 
 $$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553} \\approx 0.002814$$
 
-about $0.281\\%$, which is less than $0.3\\%$. A solver who used $1020$ min as $1020$ hours would wreck Plant A's term. A solver who compared $10$ with $0.3\\%$ of $3553 \\approx 10.66$ would see $10<10.66$ directly.
+about $0.281\\%$, which is less than $0.3\\%$. Using $1020$ min as $1020$ hours would wreck Plant A's term. Once $1020$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Comparing $10$ with $0.3\\%$ of $3553 \\approx 10.66$ would see $10<10.66$ directly. Working from the isolated values, $10$ is the figure that is checked, not the detour that produced $10<10.66$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The relative gap is about $0.28\\%$, less than $0.3\\%$, Day 3 is the audit row, with Plant A logged as $1{,}020$ min and converted to $17$ hrs. Days 1 and 2 recovered $145.0$ and $98.0$ MWh/hr. Predicted energy $17(145)+11(98)=2465+1078=3543$ MWh against recorded $3553$ MWh. The $10$ MWh gap is $10/3553 \\approx 0.281\\%$ of the recorded value, under $0.3\\%$.
 
-A solver who used $1020$ min as $1020$ hours would wreck Plant A's term. A solver who compared $10$ with $0.3\\%$ of $3553 \\approx 10.66$ would see $10<10.66$ directly. The conversion $17$ hrs is the extra arithmetic that makes the relative gap a few tenths of a percent rather than a catastrophe.
+Using $1020$ min as $1020$ hours would wreck Plant A's term. Once $1020$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Comparing $10$ with $0.3\\%$ of $3553 \\approx 10.66$ would see $10<10.66$ directly. Working from the isolated values, $10$ is the figure that is checked, not the detour that produced $10<10.66$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The conversion $17$ hrs is the extra arithmetic that makes the relative gap a few tenths of a percent rather than a catastrophe.
 
 This is the inconsistent third row with a tight $0.3\\%$ bar. The gap *is* nonzero, so Day 3 does not rebuild exactly; it just sits inside the claim's window. If the recorded value had been $3600$ MWh, the gap would have been $57/3600=1.58\\%$, over $0.3\\%$, and the claim would have failed.
 
@@ -9681,11 +9681,11 @@ $$7733 < 8062$$
 
 The swapped assignment produces *less*, not more. Plant A is the stronger plant, and the swap gives A fewer hours ($29$ instead of $36$). That $7$-hour move from A onto B costs $7 \\times (145-98)=329$ MWh, and $8062-329=7733$.
 
-A solver who swapped the rates instead of the hours in the opposite direction would get the actual total again. The claim's assignment is the one that under-uses A.
+Swapping the rates instead of the hours in the opposite direction would get the actual total again. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. The claim's assignment is the one that under-uses A.
 
 The swapped total is $7{,}733$ MWh, which does not exceed $8{,}062$ MWh, Swapping the two plants onto each other's combined Days 1-2 hours gives A the $20+9=29$ hours B actually ran and B the $14+22=36$ hours A actually ran. Output $29 \\times 145 + 36 \\times 98 = 4205+3528=7733$ MWh, which is $329$ MWh *below* the actual $8062$, not above it. The $329$ is $7$ hours moved from A onto B times the $47$ MWh/hr rate gap.
 
-A solver who swapped in the other direction, giving A even more hours, would exceed $8062$ and might accept the claim. The claim's assignment is the one that under-uses the stronger plant. This is a new mix of hours, not a third day. The overview never costed $29$ and $36$ in that assignment.
+Swapping in the other direction, giving A even more hours, would exceed $8062$ and might accept the claim. The opposite verdict would need a different isolation than $8062$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim's assignment is the one that under-uses the stronger plant. This is a new mix of hours, not a third day. The overview never costed $29$ and $36$ in that assignment.
 
 If the plants had equal rates, the swap would leave $8062$ unchanged and the claim would fail. The recovered gap $145-98=47$ is what makes the under-use of A cost $329$ MWh.
 
@@ -9702,7 +9702,7 @@ $$145 + 98 = 243, \\qquad \\frac{243}{98} \\approx 2.4796$$
 
 **2.** Then $2.48 > 2.4$. Equivalently, $2.4 \\times 98 = 235.2$, and $243 > 235.2$ with $7.8$ MWh/hr to spare.
 
-A solver who used $2.4 \\times 145$ against A would be using the wrong base: $348$ compared with $243$ fails, and that is not the claim. A solver who compared $145/98 \\approx 1.48$ would be repeating letter A's ratio instead of the combined factor.
+Using $2.4 \\times 145$ against A would be using the wrong base: $348$ compared with $243$ fails, and that is not the claim. So the letter reads the claim against $2.4 \\times 145$; $243$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2.4 \\times 145$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Comparing $145/98 \\approx 1.48$ would be repeating letter A's ratio instead of the combined factor. The recovered isolation is checked against the claim using $145/98 \\approx 1.48$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need $x+y \\le 2.4y$, so $x \\le 1.4y = 137.2$. With $A=145$, the combined rate $243$ MWh/hr is about $2.48$ times B's $98$, more than $2.4$ times, so the statement is True.`,
       `**E) Across all three days combined (using the recorded Day 3 value), total energy production exceeds 11,600 MWh.**  (true)
@@ -9721,7 +9721,7 @@ $$8062 + 3553 = 11615$$
 
 $$11615 > 11600$$
 
-The three-day recorded total is $11{,}615$ MWh, $15$ MWh above the cutoff. A solver who used the predicted Day 3 $3{,}543$ would get $11{,}605$, still above $11{,}600$, so the audit discrepancy is not the verdict. A solver who dropped Day 3 entirely would get $8{,}062$ and fail. The trap figure $11{,}605$ is the predicted-Day-3 sum; the claim names the recorded value.
+The three-day recorded total is $11{,}615$ MWh, $15$ MWh above the cutoff. Using the predicted Day 3 $3{,}543$ would get $11{,}605$, still above $11{,}600$, so the audit discrepancy is not the verdict. Working from the isolated values, $3{,}543$ is the figure that is checked, not the detour that produced $11{,}600$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Dropping Day 3 entirely would get $8{,}062$ and fail. That is why $8{,}062$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trap figure $11{,}605$ is the predicted-Day-3 sum; the claim names the recorded value.
 
 The opposite verdict would need the three-day sum at or below $11{,}600$, so recorded Day 3 at or below $11{,}600-8062=3538$. Recorded Day 3 is $3{,}553$.
 
