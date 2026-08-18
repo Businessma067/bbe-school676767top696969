@@ -1417,6 +1417,15 @@ function linspace(from: number, to: number, n: number) {
   return Array.from({ length: n }, (_, i) => from + (i / (n - 1)) * (to - from));
 }
 
+/** Dense samples near 0 so 1/x reaches the vertical asymptote. */
+function reciprocalXs(sign: 1 | -1): number[] {
+  const far = linspace(0.45, 3.2, 36);
+  const mid = linspace(0.22, 0.45, 18);
+  const near = linspace(0.12, 0.22, 16);
+  const xs = [...far, ...mid, ...near].sort((a, b) => a - b);
+  return sign === 1 ? xs : xs.map((x) => -x).reverse();
+}
+
 function PowerAxisArrowH({ x, y }: { x: number; y: number }) {
   return <polygon points={`${x},${y} ${x - 9},${y - 4} ${x - 9},${y + 4}`} fill={STROKE} />;
 }
@@ -1520,9 +1529,8 @@ function PowerReciprocal() {
   const sx = 58;
   const sy = 40;
   const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
-  const gap = 0.16;
-  const leftXs = linspace(-3.2, -gap, 70);
-  const rightXs = linspace(gap, 3.2, 70);
+  const leftXs = reciprocalXs(-1);
+  const rightXs = reciprocalXs(1);
   const invL = powerPolyline(leftXs, (x) => 1 / x, toSvg);
   const invR = powerPolyline(rightXs, (x) => 1 / x, toSvg);
   const sqL = powerPolyline(leftXs, (x) => 1 / (x * x), toSvg);
