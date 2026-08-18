@@ -140,9 +140,9 @@ The two depots do end up equal, confirming the translation was correct.
     statements: [
       `A notebook costs \\$3.50.`,
       `A pen costs \\$2.10.`,
-      `Invoice #101 (40 notebooks and 25 pens) totals \\$185.00.`,
+      `Invoice #101 totals \\$185.00.`,
       `10 notebooks and 10 pens purchased together would cost \\$53.00.`,
-      `Invoice #102 (15 notebooks and 60 pens) totals \\$172.50.`,
+      `Invoice #102 totals \\$172.50.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -170,7 +170,7 @@ The overview already recovered $y = 1.80$. The claim writes $\\$2.10$, which sit
 **3.** The opposite verdict would need a different printed total on one of the two invoices. With $\\$185.00$ and $\\$160.50$ as printed, a pen cannot cost $\\$2.10$.
 
 The claimed $\\$2.10$ sits $\\$0.30$ above the recovered $\\$1.80$, so the statement is False.`,
-      `**C) Invoice #101 (40 notebooks and 25 pens) totals \\$185.00.**  (true)
+      `**C) Invoice #101 totals \\$185.00.**  (true)
 
 The statement is a claim about Invoice #101's printed total, not about a reconstructed mix. The stem already lists $\\$185.00$ for $40$ notebooks and $25$ pens. That row is observation $(1)$ in the overview.
 
@@ -216,7 +216,7 @@ A second trap is to treat $\\$53$ as if it were a round $\\$50$ plus a $\\$3$ no
 If the supplier later changed the pen price and left notebooks alone, this letter's $\\$53$ would move by ten times that change and the two printed invoices would no longer share a common $y$. With the invoices as printed this month, the ten-and-ten quote is pinned.
 
 so the statement is True.`,
-      `**E) Invoice #102 (15 notebooks and 60 pens) totals \\$172.50.**  (false)
+      `**E) Invoice #102 totals \\$172.50.**  (false)
 
 The statement is a claim about Invoice #102's printed total. The stem already lists $\\$160.50$ for $15$ notebooks and $60$ pens. The claim writes $\\$172.50$, which is $\\$12$ above that printed figure.
 
@@ -300,8 +300,8 @@ $$
     statements: [
       `An adult ticket costs \\$12.00.`,
       `A child ticket costs \\$7.00.`,
-      `The Saturday matinee (90 adult, 150 child) generated \\$2,050.00 in revenue.`,
-      `The Saturday evening session (160 adult, 40 child) generated \\$2,300.00 in revenue.`,
+      `The Saturday matinee generated \\$2,050.00 in revenue.`,
+      `The Saturday evening session generated \\$2,300.00 in revenue.`,
       `50 adult tickets and 50 child tickets together would generate \\$1,000.00.`,
     ],
     answer_key: [true, true, false, false, false],
@@ -330,7 +330,7 @@ Child tickets are the leftover after the adult price is taken out of either sess
 The opposite verdict would need a different logged total on one of the two sessions. With $\\$2{,}130$ and $\\$2{,}200$ as printed, a child ticket cannot cost anything other than $\\$7$.
 
 The recovered child price matches the claimed $\\$7.00$, so the statement is True.`,
-      `**C) The Saturday matinee (90 adult, 150 child) generated \\$2,050.00 in revenue.**  (false)
+      `**C) The Saturday matinee generated \\$2,050.00 in revenue.**  (false)
 
 The statement is a claim about the Saturday matinee's logged revenue. The box-office already printed $\\$2{,}130$ for $90$ adult and $150$ child tickets. The claim writes $\\$2{,}050$, which is $\\$80$ below that logged figure.
 
@@ -365,7 +365,7 @@ The $\\$80$ gap is also $10$ adult tickets at $\\$8$, or about $11$ child ticket
 If the matinee really had generated $\\$2{,}050$, the overview's substitution $90a+150(55-4a)=2050$ would have produced a different adult price, and that price would then have failed $160a+40c=2200$. With both sessions as logged, the matinee total is not a free parameter.
 
 so the statement is False.`,
-      `**D) The Saturday evening session (160 adult, 40 child) generated \\$2,300.00 in revenue.**  (false)
+      `**D) The Saturday evening session generated \\$2,300.00 in revenue.**  (false)
 
 The statement is a claim about the Saturday evening session's logged revenue. The box-office already printed $\\$2{,}200$ for $160$ adult and $40$ child tickets. The claim writes $\\$2{,}300$, which is $\\$100$ above that logged figure.
 
@@ -890,7 +890,7 @@ $$
       `The extra-minute rate advertised is \\$0.30 per minute.`,
       `A customer using 200 extra minutes in a month would pay \\$80.00.`,
       `A customer using 0 extra minutes would pay \\$0.00 that month.`,
-      `The advertised rate (\\$0.30 per minute) is more than double a rival plan's rate of \\$0.20 per minute.`,
+      `The advertised extra-minute rate is more than double a rival plan's rate of \\$0.20 per minute.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -964,7 +964,7 @@ $$17 + 0 \\times 0.30 = 17$$
 **3.** Treating the plan as "pay only for extra minutes" would report $\\$0$ here and miss the intercept. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The two quoted bills already show that even $40$ extra minutes cost $\\$29$, which is more than $40 \\times 0.30=12$, so a fee is sitting under the line.
 
 A customer with zero extra minutes still owes $\\$17$, not $\\$0$, so the statement is False.`,
-      `**E) The advertised rate (\\$0.30 per minute) is more than double a rival plan's rate of \\$0.20 per minute.**  (false)
+      `**E) The advertised extra-minute rate is more than double a rival plan's rate of \\$0.20 per minute.**  (false)
 
 The statement compares ByteMobile's recovered extra-minute rate with a rival's $\\$0.20$ per minute, and claims ByteMobile is more than double the rival.
 
@@ -1180,8 +1180,8 @@ $$
     statements: [
       `A sofa sells for \\$350.00.`,
       `An armchair sells for \\$200.00.`,
-      `Riverside's net sales (after its \\$460 in returns) were \\$9,300.00.`,
-      `Hillcrest's gross sales (before its \\$300 in returns) were \\$9,300.00.`,
+      `Riverside's net sales were \\$9,300.00.`,
+      `Hillcrest's gross sales were \\$9,300.00.`,
       `Had Riverside recorded zero returns that month, its gross and net sales would both have equalled \\$9,760.00.`,
     ],
     answer_key: [true, true, true, true, true],
@@ -1210,7 +1210,7 @@ The overview recovered $y = 200$ as that armchair leftover, after the Hillcrest 
 Using gross instead of net would inflate both prices, because returns would still be sitting inside the dollars. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The opposite verdict would need a different peeled net on one of the two branches. With the nets as recovered, an armchair cannot sell for anything other than $\\$200$.
 
 The recovered armchair price is $\\$200.00$, so the statement is True.`,
-      `**C) Riverside's net sales (after its \\$460 in returns) were \\$9,300.00.**  (true)
+      `**C) Riverside's net sales were \\$9,300.00.**  (true)
 
 The statement is a claim about Riverside's net sales after its $\\$460$ in returns. Gross is printed at $\\$9{,}760$. Net is gross minus returns. The extra arithmetic is only peeling Riverside's own returns, then checking that the recovered furniture prices rebuild that net.
 
@@ -1235,7 +1235,7 @@ Hillcrest's printed gross is also $\\$9{,}300$. That coincidence is a trap: copy
 The opposite verdict would need Riverside's printed gross or Riverside's printed returns to change. With $\\$9{,}760$ gross and $\\$460$ returns, Riverside's net is $\\$9{,}300$. The recovered sofa and armchair prices merely confirm that peel.
 
 Riverside's net sales were $\\$9{,}300.00$, so the statement is True.`,
-      `**D) Hillcrest's gross sales (before its \\$300 in returns) were \\$9,300.00.**  (true)
+      `**D) Hillcrest's gross sales were \\$9,300.00.**  (true)
 
 The statement is a claim about Hillcrest's gross sales, before its $\\$300$ in returns. The table already prints Hillcrest gross at $\\$9{,}300$. This letter does not peel returns. It asks whether the claimed gross is the gross on the page.
 
@@ -1490,7 +1490,7 @@ $$
     statements: [
       `Ben paid more for his 5 burritos alone than Ana paid for her entire order.`,
       `A burrito costs \\$2.50 more than a taco.`,
-      `Had Ana ordered one fewer burrito (4 tacos and 2 burritos instead), she would have paid less than \\$28.00.`,
+      `Had Ana ordered one fewer burrito, she would have paid less than \\$28.00.`,
       `Ben's total order price exceeds \\$40.00.`,
       `Buying 6 tacos and 6 burritos together would cost \\$57.00.`,
     ],
@@ -1536,7 +1536,7 @@ Ben's mix as a second check: $2(3.50)+5(6)=7+30=37$, which is $\\$5$ above Ana, 
 The two receipts force this exact difference. The opposite verdict would need a different pair of totals. With Ana at $\\$32$ and Ben at $\\$37$, a burrito sits $\\$2.50$ above a taco. A round $\\$3$ gap would have made Ben's two-burrito swap cost $\\$6$ instead of $\\$5$, and the stem's $\\$5$ comparison forbids that. The fifty cents is not decoration; it is what ties the mix swap to the printed $\\$5$.
 
 The burrito-taco gap is the claimed $\\$2.50$, so the statement is True.`,
-      `**C) Had Ana ordered one fewer burrito (4 tacos and 2 burritos instead), she would have paid less than \\$28.00.**  (true)
+      `**C) Had Ana ordered one fewer burrito, she would have paid less than \\$28.00.**  (true)
 
 This letter is not Ana's actual order. Ana ordered $4$ tacos and $3$ burritos for $\\$32$. The claim drops one burrito, leaving $4$ tacos and $2$ burritos, and compares that counterfactual with $\\$28$.
 
@@ -1685,7 +1685,7 @@ $$
     statements: [
       `A paperback price of \\$12 is consistent with the pricing desk's \\$5 gap rule.`,
       `Hardcover editions are priced above \\$18.`,
-      `Had 500 paperbacks been sold instead of 400 (hardcover sales unchanged), revenue would have been \\$1,200 higher.`,
+      `Had 500 paperbacks been sold instead of 400, revenue would have been \\$1,200 higher.`,
       `A customer buying 3 hardcovers and 2 paperbacks would pay less than \\$75.`,
       `The reported \\$8,540 total could also have come from selling 310 hardcovers alone.`,
     ],
@@ -1727,7 +1727,7 @@ Another wrong route is $8540/(400+220) \\approx 13.77$ as a blended book, then a
 The opposite verdict would need a paperback above $\\$13$, or a gap above $\\$6$. With $x=12$ and a $\\$5$ gap, hardcovers are $\\$17$, which is not above $\\$18$.
 
 Hardcovers are $\\$17$, which is not above $\\$18$, so the statement is False.`,
-      `**C) Had 500 paperbacks been sold instead of 400 (hardcover sales unchanged), revenue would have been \\$1,200 higher.**  (true)
+      `**C) Had 500 paperbacks been sold instead of 400, revenue would have been \\$1,200 higher.**  (true)
 
 This letter is not the actual sales mix. The desk sold $400$ paperbacks and $220$ hardcovers. The claim adds $100$ paperbacks, hardcovers unchanged, and asks whether revenue would have been $\\$1{,}200$ higher.
 
@@ -2019,9 +2019,9 @@ $$
     statements: [
       `After removing the occupancy tax, Weekend 1's booking revenue was \\$2,240.00.`,
       `A Suite costs \\$200 more per night than a Standard room.`,
-      `Booking 6 Standard rooms for one night (pre-tax) costs less than booking 4 Suites.`,
+      `Booking 6 Standard rooms for one night costs less than booking 4 Suites.`,
       `Including the 8% tax, a single Suite night costs \\$226.80.`,
-      `Had Weekend 2 booked 10 Suites instead of 9 (Standard rooms unchanged), pre-tax revenue would have risen by \\$210.`,
+      `Had Weekend 2 booked 10 Suites instead of 9, pre-tax revenue would have risen by \\$210.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
@@ -2065,7 +2065,7 @@ The trap figure $\\$200$ is a typical round gap, or $210-10$ after mixing a tax 
 The opposite verdict would need a different pair of peeled weekend totals. With Weekend 1 at $\\$2{,}240$ pre-tax and Weekend 2 at $\\$2{,}870$ pre-tax, the gap is $\\$70$.
 
 The recovered gap is $\\$70$, not $\\$200$, so the statement is False.`,
-      `**C) Booking 6 Standard rooms for one night (pre-tax) costs less than booking 4 Suites.**  (false)
+      `**C) Booking 6 Standard rooms for one night costs less than booking 4 Suites.**  (false)
 
 This letter is a new mix compared with another new mix: $6$ Standard rooms versus $4$ Suites, both pre-tax, and the claim says the six Standards cost less.
 
@@ -2109,7 +2109,7 @@ Computing $210+8=218$, adding eight dollars instead of eight percent, would miss
 The opposite verdict would need a different pre-tax Suite rate. If Suites had been $\\$200$ as letter B claimed, tax-on would have been $\\$216$, not $\\$226.80$. With $y=210$ recovered from the two weekends, a single Suite night including tax is $\\$226.80$.
 
 A single Suite night including tax costs $\\$226.80$, so the statement is True.`,
-      `**E) Had Weekend 2 booked 10 Suites instead of 9 (Standard rooms unchanged), pre-tax revenue would have risen by \\$210.**  (true)
+      `**E) Had Weekend 2 booked 10 Suites instead of 9, pre-tax revenue would have risen by \\$210.**  (true)
 
 The statement is a one-Suite increment on Weekend 2: Standard rooms unchanged, one extra Suite, pre-tax. Weekend 2 actually booked $7$ Standard rooms and $9$ Suites. The claim pushes Suites from $9$ to $10$.
 
@@ -2189,7 +2189,7 @@ $$
       `Component A's unit cost is \\$12.`,
       `Component B's unit cost is \\$18.`,
       `The March forecast assumes higher unit prices than what actually applied in January and February.`,
-      `If March's forecast quantities (200 A + 100 B) were valued at the actual January/February unit costs, the result would be \\$4,700.`,
+      `If March's forecast quantities were valued at the actual January/February unit costs, the result would be \\$4,700.`,
       `The combined actual inventory value recorded for January and February is \\$6,810.`,
     ],
     answer_key: [true, false, true, false, true],
@@ -2259,7 +2259,7 @@ Comparing $4700$ with January $3150$ and calling the forecast "higher" would be 
 If March had been forecast at $3900$, this letter would be false: the forecast would match actual costs. The printed $4700$ is what makes it true. Warehouse floor space and staff still do not enter.
 
 so the statement is True.`,
-      `**D) If March's forecast quantities (200 A + 100 B) were valued at the actual January/February unit costs, the result would be \\$4,700.**  (false)
+      `**D) If March's forecast quantities were valued at the actual January/February unit costs, the result would be \\$4,700.**  (false)
 
 The statement claims that March's $200$ A and $100$ B, valued at the actual January/February costs, would equal the forecast $\\$4{,}700$.
 
@@ -2994,7 +2994,7 @@ $$
     statements: [
       `Product P is priced at \\$50 and Service Q at \\$70, identically for both companies.`,
       `Beta generated more Q1 revenue than Alpha.`,
-      `If Alpha raises Product P's price by 10% next quarter with sales volumes unchanged, its total revenue would increase by exactly 10%.`,
+      `If Alpha raises Product P's price by 10% next quarter, its total revenue would increase by exactly 10%.`,
       `Alpha's projected revenue after that 10% Product P price increase would surpass Beta's current Q1 revenue.`,
       `Beta's revenue from Service Q subscriptions alone exceeds Alpha's entire Q1 revenue from Product P.`,
     ],
@@ -3030,7 +3030,7 @@ Comparing unit counts $150+80=230$ against $100+130=230$ might think the revenue
 Headcount growth of $8\\%$ versus $6\\%$ is a staffing distractor. The opposite verdict would need the gap sentence to reverse. With Beta $\\$1{,}000$ ahead as printed, Beta's Q1 revenue is larger.
 
 Beta's Q1 revenue is larger, so the statement is True.`,
-      `**C) If Alpha raises Product P's price by 10% next quarter with sales volumes unchanged, its total revenue would increase by exactly 10%.**  (false)
+      `**C) If Alpha raises Product P's price by 10% next quarter, its total revenue would increase by exactly 10%.**  (false)
 
 The statement claims that a $10\\%$ rise in Alpha's Product P price, volumes unchanged, would raise Alpha's *total* revenue by exactly $10\\%$.
 
@@ -4377,7 +4377,7 @@ $$
       `Widget A requires 7 hours of labor to assemble.`,
       `Widget B requires 12 hours of labor to assemble.`,
       `Week 2 actually produced 25 Widget A units and 33 Widget B units.`,
-      `If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.`,
+      `If Widget A's assembly time increased by 20%, Week 1's total labor-hours would also increase by 20%.`,
       `The illegible Week 3 entry can be reconstructed as 20 Widget A units.`,
     ],
     answer_key: [true, false, true, false, true],
@@ -4425,7 +4425,7 @@ $$A + (A+8) = 58, \\qquad 2A = 50, \\qquad A = 25$$
 Week 2 produced $25$ Widget A and $33$ Widget B. As a check, the recovered times give $7(25)+10(33)=175+330=505$, matching the logged hours. Using $B=A-8$ would flip the counts to $33$ A and $25$ B and fail that hour check. So the letter reads the claim against $B=A-8$; $25$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $B=A-8$ stays in the write-up.
 
 Week 2's counts are $25$ A and $33$ B, so the statement is True.`,
-      `**D) If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.**  (false)
+      `**D) If Widget A's assembly time increased by 20%, Week 1's total labor-hours would also increase by 20%.**  (false)
 
 The statement claims that a $20\\%$ increase in Widget A's assembly time, with B unchanged, would raise Week 1's total hours by $20\\%$ as well.
 
@@ -4692,8 +4692,8 @@ which does not match East's reported \\$3,200. The $115$ discrepancy reveals Eas
       `Rounding Type A's case price up to the next whole dollar lands on exactly \\$19.00.`,
       `A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.`,
       `If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the \\$24 mark.`,
-      `Swapping which quantity (13 vs 9) applies to which fastener type in Invoice 1 happens to leave the total unchanged, purely because both fastener prices are so close together.`,
-      `Since 16 and 32 are simply the two invoices' case counts added together, common sense suggests the combined order must cost strictly more than placing both invoices separately, thanks to some kind of bulk-order premium.`,
+      `Swapping which quantity applies to which fastener type in Invoice 1 leaves the total unchanged.`,
+      `The combined order must cost strictly more than placing both invoices separately.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -4746,7 +4746,7 @@ The implied share clears $\\$24$ by about $\\$1.28$. That average sits between t
 Splitting Invoice 1 instead, $527.45/22 \\approx 23.97$, would fall just *under* $\\$24$ and flip the verdict. Once $527.45/22 \\approx 23.97$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The claim names Invoice 2. Using $657.35/19$, ignoring Type A, would overshoot further. The path that matches the stem therefore holds $657.35/19$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Invoice 2's even split is about $\\$25.28$ per case, which clears $\\$24$, so the statement is True.`,
-      `**D) Swapping which quantity (13 vs 9) applies to which fastener type in Invoice 1 happens to leave the total unchanged, purely because both fastener prices are so close together.**  (false)
+      `**D) Swapping which quantity applies to which fastener type in Invoice 1 leaves the total unchanged.**  (false)
 
 The statement claims that swapping Invoice 1's quantities $13$ and $9$ across fastener types would leave the total unchanged, "because both prices are so close together."
 
@@ -4771,7 +4771,7 @@ The swapped mix is $\\$37.40$ cheaper. That gap is $4$ cases moved from B onto A
 Glancing at $18.45$ and $27.80$ and calling them "close" because both start with a $2$-looking dollar after rounding would still be wrong by more than $\\$9$ per case. That is the fork: $18.45$ belongs to the recovered isolation, $2$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. "Close together" is the false premise that manufactures an unchanged total.
 
 Swapping the quantities changes Invoice 1's total from $\\$527.45$ to $\\$490.05$, so the statement is False.`,
-      `**E) Since 16 and 32 are simply the two invoices' case counts added together, common sense suggests the combined order must cost strictly more than placing both invoices separately, thanks to some kind of bulk-order premium.**  (false)
+      `**E) The combined order must cost strictly more than placing both invoices separately.**  (false)
 
 The statement claims that combining the two invoices into one order of $16$ A cases and $32$ B cases must cost strictly more than placing both invoices separately, because of a bulk-order premium.
 
@@ -5914,7 +5914,7 @@ $$
       `Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.`,
       `Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.`,
       `Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.`,
-      `Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count (Hoodies held at 310), and the profit crosses \\$8,700  -  clearing it by less than \\$40.`,
+      `Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count, and the profit crosses \\$8,700.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
@@ -6000,7 +6000,7 @@ The earnings gap is $\\$2.55$ short of $52$ Hoodies. That is "just barely fail."
 The opposite verdict would need the earnings gap to reach $956.80$. With the two printed season totals, the gap is $954.25$.
 
 Season 2's extra $\\$954.25$ fails to cover $52$ Hoodies at $\\$956.80$, so the statement is True.`,
-      `**E) Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count (Hoodies held at 310), and the profit crosses \\$8,700  -  clearing it by less than \\$40.**  (true)
+      `**E) Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count, and the profit crosses \\$8,700.**  (true)
 
 The statement rewrites Season 3 as $260$ T-Shirts instead of the reconstructed $245$, Hoodies held at $310$, and claims profit crosses $\\$8{,}700$ by less than $\\$40$.
 
@@ -6291,7 +6291,7 @@ but Shipment 3 was charged \\$239.80, a \\$3.45 discrepancy.
       `For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's \\$952.10 billed amount.`,
       `The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.`,
       `Plugging in a purely hypothetical \\$14.20 per compute-unit and \\$31.75 per storage-unit  -  numbers with no basis in the real contract  -  Client A's invoice would compute to a figure just shy of \\$375.`,
-      `Compare Client B's actual bill to two rival hypotheses  -  one assuming a clean doubling of Client A (\\$967.40), the other assuming a 50%-heavier surcharge instead of a full double (\\$725.55). The doubling hypothesis, despite being wrong, still lands closer to the real figure than the other one does.`,
+      `The doubling-of-Client-A hypothesis for Client B's bill lands closer to the real figure than the 50%-heavier-surcharge hypothesis.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -6385,7 +6385,7 @@ These unit prices are invented; they are not the recovered pair, because no reco
 Using $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$ after dropping one compute unit would land shy of $375$ and flip the verdict. After isolating the unknown, the check is against $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$. The figure $375$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10 \\times 14.20 + 7 \\times 31.75=142+222.25=364.25$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Client A has $11$ compute units, not $10$.
 
 The hypothetical rebuild of Client A is $\\$378.45$, which is not shy of $\\$375$, so the statement is False.`,
-      `**E) Compare Client B's actual bill to two rival hypotheses  -  one assuming a clean doubling of Client A (\\$967.40), the other assuming a 50%-heavier surcharge instead of a full double (\\$725.55). The doubling hypothesis, despite being wrong, still lands closer to the real figure than the other one does.**  (true)
+      `**E) The doubling-of-Client-A hypothesis for Client B's bill lands closer to the real figure than the 50%-heavier-surcharge hypothesis.**  (true)
 
 The statement compares Client B's actual $\\$952.10$ with two rival hypotheses: a clean doubling of Client A at $\\$967.40$, and a $50\\%$-heavier surcharge instead of a full double at $\\$725.55$. It claims the doubling hypothesis, despite being wrong, still lands closer to the real figure.
 
@@ -6458,9 +6458,9 @@ The two equations are inconsistent by $15.30$.
     context: `The Sterling Family Trust is split between two funds. Fund A pays a fixed 5.25% simple annual return; Fund B pays 3.75%. The officer's notes state Fund B's balance is \\$4,000 more than twice Fund A's balance, and the combined annual return from both funds is \\$762.00.`,
     statements: [
       `The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.`,
-      `If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.`,
-      `The combined annual return represents more than 4% of the total trust value (Fund A + Fund B combined).`,
-      `Had the trust instead been split evenly (\\$9,200.00 in each fund) at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.`,
+      `If Fund A's rate were raised by 1.5 percentage points while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.`,
+      `The combined annual return represents more than 4% of the total trust value.`,
+      `Had the trust instead been split evenly at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.`,
       `The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%.`,
     ],
     answer_key: [false, true, true, false, true],
@@ -6488,7 +6488,7 @@ Fund B earns about $2.02$ times Fund A's dollars, not more than three times. B's
 Tripling the balances instead, $3 \\times 4800=14400$ versus $13600$, would still find B short of triple, and would be answering a principal question. That is the fork: $3 \\times 4800=14400$ belongs to the recovered isolation, $13600$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The claim is about dollar interest.
 
 Fund B's $\\$510$ is not more than triple A's $\\$252$, so the statement is False.`,
-      `**B) If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.**  (true)
+      `**B) If Fund A's rate were raised by 1.5 percentage points while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.**  (true)
 
 The statement raises Fund A's rate by $1.5$ percentage points to $6.75\\%$, holds Fund B's rate, and claims combined return would rise above $\\$800$.
 
@@ -6511,7 +6511,7 @@ The combined return would be $\\$834$, which clears $\\$800$ by $\\$34$. The inc
 Raising both rates by $1.5$ points would overshoot further. The path that matches the stem therefore holds $1.5$ fixed and only then reads the claim. Applying $6.75\\%$ to the whole trust would get $18400 \\times 0.0675=1242$ and miss the claim's "Fund B's rate stayed the same." Working from the isolated values, $6.75\\%$ is the figure that is checked, not the detour that produced $18400 \\times 0.0675=1242$.
 
 The new combined return is $\\$834$, which is above $\\$800$, so the statement is True.`,
-      `**C) The combined annual return represents more than 4% of the total trust value (Fund A + Fund B combined).**  (true)
+      `**C) The combined annual return represents more than 4% of the total trust value.**  (true)
 
 The statement claims the combined annual return $\\$762$ is more than $4\\%$ of the total trust. The overview already recovered Fund A at $\\$4{,}800$ and Fund B at $\\$13{,}600$. The extra arithmetic is the combined principal, then the ratio.
 
@@ -6530,7 +6530,7 @@ Using $762/13600 \\approx 5.6\\%$ against B only, or $762/4800=15.9\\%$ against 
 The opposite verdict would need a combined return of $736$ or less on $18400$. With $\\$762$ as the year's combined return, the blended rate exceeds $4\\%$.
 
 The blended return is about $4.14\\%$ of the trust, which exceeds $4\\%$, so the statement is True.`,
-      `**D) Had the trust instead been split evenly (\\$9,200.00 in each fund) at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.**  (false)
+      `**D) Had the trust instead been split evenly at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.**  (false)
 
 The statement splits the trust evenly at $\\$9{,}200$ in each fund, original rates, and claims the total return would come within $\\$5$ of the actual $\\$762$.
 
@@ -6624,7 +6624,7 @@ $$
     statements: [
       `The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.`,
       `Solution B's concentration is more than 70% of Solution A's concentration.`,
-      `If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B (with Solution A's 2 L taken as correct), the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.`,
+      `If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B, the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.`,
       `Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.`,
       `Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did.`,
     ],
@@ -6664,7 +6664,7 @@ $$0.75 > 0.70$$
 The opposite verdict would need $B \\le 0.70A$, so $B \\le 11.2$ at $A=16$. The recovered $B=12$ sits above that. Batch 1's $3:2$ mix at $16$ and $12$ rebuilds $6(16)+4(12)=96+48=144$, a check that those concentrations still sit on the printed salt, not a second solve.
 
 B is $75\\%$ of A, which is more than $70\\%$, so the statement is True.`,
-      `**C) If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B (with Solution A's 2 L taken as correct), the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.**  (true)
+      `**C) If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B, the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.**  (true)
 
 The statement attributes Batch 3's entire $5$ g discrepancy to an error in Solution B's recorded volume, with A's $2$ L taken as correct, and claims the true B volume is closer to $6.4$ L than to $6.0$ L.
 
@@ -6808,7 +6808,7 @@ versus 109 g recorded, a 5 g discrepancy.
       `Employee B's overtime pay is more than 40% of his total gross pay.`,
       `The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.`,
       `If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.`,
-      `The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765).`,
+      `The ratio of Employee B's overtime hours to Employee A's is greater than the ratio of their gross pay amounts.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -6890,7 +6890,7 @@ The new gross *increases* by about $\\$90$, it does not decrease. The $15\\%$ ba
 Applying $15\\%$ only to the $40$ regular hours and dropping overtime entirely would get $40 \\times 20.125=805$, still above $765$. Working from the isolated values, $15\\%$ is the figure that is checked, not the detour that produced $765$. Comparing $20.125$ with $26$ and concluding "lower overtime rate means lower pay" would miss that the raise applies to all $42.5$ hours. That is the fork: $20.125$ belongs to the recovered isolation, $42.5$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 A's gross would rise to about $\\$855$, not fall, so the statement is False.`,
-      `**E) The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765).**  (true)
+      `**E) The ratio of Employee B's overtime hours to Employee A's is greater than the ratio of their gross pay amounts.**  (true)
 
 The statement compares the ratio of overtime hours $7:2.5$ with the ratio of gross pay $882:765$, and claims the hours ratio is greater. Employee A had $2.5$ overtime hours and $\\$765$ gross. Employee B had $7$ overtime hours and $\\$882$ gross. Regular pay is $40 \\times 17.50=700$ for both.
 
@@ -6971,15 +6971,15 @@ $$
 | Project 2 | 27 m | 36 m | \\$1,125.00 |
 | Project 3 | 10 m | 40 m | \\$710.00 |`,
     statements: [
-      `If Project 3 had instead used 20 m of wood (wire unchanged at 40 m), its total cost would have exceeded \\$950.00.`,
-      `The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.`,
-      `Combining Project 1 and Project 3's materials into one hypothetical project (28 m wood + 64 m wire) would cost less than the sum of their individual costs (\\$750.00 + \\$710.00).`,
-      `If wire fencing rose by \\$2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.`,
+      `If Project 3 had instead used 20 m of wood, its total cost would have exceeded \\$950.00.`,
+      `The per-meter price gap between wood and wire is more than 145% of the wire price per meter.`,
+      `Combining Project 1 and Project 3's materials into one hypothetical project would cost less than the sum of their individual costs.`,
+      `If wire fencing rose by \\$2.00 per meter, Project 1's total cost would increase by more than 15%.`,
       `Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A) If Project 3 had instead used 20 m of wood (wire unchanged at 40 m), its total cost would have exceeded \\$950.00.**  (true)
+      `**A) If Project 3 had instead used 20 m of wood, its total cost would have exceeded \\$950.00.**  (true)
 
 The statement gives Project 3 $20$ m of wood instead of $10$ m, wire unchanged at $40$ m, and claims the total would exceed $\\$950$.
 
@@ -7002,7 +7002,7 @@ Then $980 > 950$. Compared with actual Project 3 at $\\$710$, the extra $10$ m o
 Using $20$ m of *wire* would add $110$ and get $820$, which does not exceed $950$ and would flip the verdict. Working from the isolated values, $20$ is the figure that is checked, not the detour that produced $950$. That contrast is the reason the verdict goes the way it does. The claim changes wood.
 
 The counterfactual Project 3 costs $\\$980$, which exceeds $\\$950$, so the statement is True.`,
-      `**B) The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.**  (true)
+      `**B) The per-meter price gap between wood and wire is more than 145% of the wire price per meter.**  (true)
 
 The statement claims the per-metre gap $x-y$ is more than $145\\%$ of the wire price. The overview already recovered cedar wood $x=27$ and galvanized wire $y=11$. The extra arithmetic is the gap and the ratio.
 
@@ -7019,7 +7019,7 @@ $$\\frac{16}{11} \\approx 1.4545$$
 Project 3 being a scaled repeat of another project does not rewrite $27$ and $11$. The opposite verdict would need $16/11 \\le 1.45$, so a gap of $15.95$ or less. With $x=27$ and $y=11$, the gap is $16$.
 
 The gap is about $145.45\\%$ of the wire price, which exceeds $145\\%$, so the statement is True.`,
-      `**C) Combining Project 1 and Project 3's materials into one hypothetical project (28 m wood + 64 m wire) would cost less than the sum of their individual costs (\\$750.00 + \\$710.00).**  (false)
+      `**C) Combining Project 1 and Project 3's materials into one hypothetical project would cost less than the sum of their individual costs.**  (false)
 
 The statement claims combining Project 1 and Project 3 into one hypothetical project would cost less than the sum of their individual costs $\\$750+\\$710$.
 
@@ -7040,7 +7040,7 @@ The figures match. There is no bulk discount in the stem. Project 2 is a scaled 
 Inventing a $10\\%$ combined-project discount would get $1314$ and accept the claim. The recovered comparison therefore keeps $10\\%$ and does not substitute $1314$. That discount is not in the model.
 
 The combined project costs $\\$1{,}460$, the same as the two projects separately, so it does not cost less, so the statement is False.`,
-      `**D) If wire fencing rose by \\$2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.**  (false)
+      `**D) If wire fencing rose by \\$2.00 per meter, Project 1's total cost would increase by more than 15%.**  (false)
 
 The statement raises wire by $\\$2$ per metre, wood unchanged, and claims Project 1's total would increase by more than $15\\%$.
 
@@ -7300,15 +7300,15 @@ $$
 | Season 2 | 180 t | 260 t | \\$48,300 |
 | Season 3 (illegible) |  | 300 t | \\$53,100 |`,
     statements: [
-      `If Season 1's Wheat output had instead been 260 tonnes (Barley unchanged at 160 t), total profit would have exceeded \\$44,000.`,
-      `Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.`,
-      `Season 3's total tonnage (Wheat + Barley) is less than Season 2's total tonnage.`,
+      `If Season 1's Wheat output had instead been 260 tonnes, total profit would have exceeded \\$44,000.`,
+      `Barley's profit-per-tonne advantage over Wheat represents more than 25% of Wheat's profit per tonne.`,
+      `Season 3's total tonnage is less than Season 2's total tonnage.`,
       `Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of \\$53,100 would have been understated by more than \\$3,500.`,
       `Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A) If Season 1's Wheat output had instead been 260 tonnes (Barley unchanged at 160 t), total profit would have exceeded \\$44,000.**  (false)
+      `**A) If Season 1's Wheat output had instead been 260 tonnes, total profit would have exceeded \\$44,000.**  (false)
 
 The statement raises Season 1's Wheat from $240$ t to $260$ t, Barley unchanged, and claims total profit would exceed $\\$44{,}000$.
 
@@ -7335,7 +7335,7 @@ Scaling the whole $42000$ by $260/240$ would keep Barley inside the scale factor
 If Wheat had been $100$ per tonne, the extra $20$ t would add $2000$ and the new total would be $44000$ exactly, which still does not *exceed* $44000$. The recovered $95$ is what leaves the counterfactual at $43900$, under the bar.
 
 so the statement is False.`,
-      `**B) Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.**  (true)
+      `**B) Barley's profit-per-tonne advantage over Wheat represents more than 25% of Wheat's profit per tonne.**  (true)
 
 The statement claims Barley's per-tonne profit advantage over Wheat is more than $25\\%$ of Wheat's per-tonne profit. The overview already recovered Wheat $x=95$ and Barley $y=120$. Season 3's reconstructed Wheat tonnage is a different unknown and does not enter this ratio. The extra arithmetic is the gap, then the gap over Wheat.
 
@@ -7358,7 +7358,7 @@ Using $25/120 \\approx 20.8\\%$ against Barley would fail the cutoff and flip th
 The opposite verdict would need a gap of $23.75$ or less on a $\\$95$ Wheat margin, so Barley at or below $118.75$. Recovered Barley is $\\$120$.
 
 Barley's $\\$25$ advantage is about $26.3\\%$ of Wheat's $\\$95$, which exceeds $25\\%$, so the statement is True.`,
-      `**C) Season 3's total tonnage (Wheat + Barley) is less than Season 2's total tonnage.**  (false)
+      `**C) Season 3's total tonnage is less than Season 2's total tonnage.**  (false)
 
 The statement claims Season 3's total tonnage is less than Season 2's total tonnage.
 
@@ -7481,7 +7481,7 @@ $$
     context: `Bramwell's HR system flagged an "elder" and "younger" employee for a data-entry conflict: five years ago, the elder was exactly three times as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.`,
     statements: [
       `Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.`,
-      `The current age gap (x - y) is more than 45% of the elder employee's current age.`,
+      `The current age gap is more than 45% of the elder employee's current age.`,
       `Exactly 4.5 years from now, the elder employee will be more than 2.5 times the younger employee's age.`,
       `Ten years ago, the sum of their ages was less than 40.`,
       `There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age.`,
@@ -7505,7 +7505,7 @@ $$62 < 68$$
 The elder is $6$ years short of double. The ratio $62/34 \\approx 1.82$ is less than $2$. Doubling the current $19$ to $38$ and comparing with $47+15=62$ would be mixing a current double with a future elder. So the letter reads the claim against $19$; $47+15=62$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $19$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Fifteen years from now the elder is $62$ and double the younger is $68$, so the elder is less than double, so the statement is True.`,
-      `**B) The current age gap (x - y) is more than 45% of the elder employee's current age.**  (true)
+      `**B) The current age gap is more than 45% of the elder employee's current age.**  (true)
 
 The statement claims the current age gap $x-y$ is more than $45\\%$ of the elder employee's current age. The overview already recovered elder $x=47$ and younger $y=19$. This letter does not rebuild the five-years-ago triple. The extra arithmetic is the current gap over $47$.
 
@@ -7635,15 +7635,15 @@ $$
 | Order 2 | 16 | 10 | \\$2,105.60 |
 | Order 3 | 3 | 12 | \\$1,350.60 |`,
     statements: [
-      `If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual \\$1,350.60.`,
+      `If the two markup percentages were swapped, Order 3's retail total would decrease compared to its actual \\$1,350.60.`,
       `The dollar markup on Product B is more than 80% of the dollar markup on Product A.`,
       `Order 1's total retail markup exceeds \\$150.00.`,
-      `If Order 3's Product B quantity rose from 12 to 15 units (Product A unchanged at 3 units), the retail total would increase by more than \\$280.00.`,
-      `The wholesale cost ratio of Product B to Product A (y : x) is greater than the retail price ratio of Product B to Product A.`,
+      `If Order 3's Product B quantity rose from 12 to 15 units, the retail total would increase by more than \\$280.00.`,
+      `The wholesale cost ratio of Product B to Product A is greater than the retail price ratio of Product B to Product A.`,
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
-      `**A) If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual \\$1,350.60.**  (false)
+      `**A) If the two markup percentages were swapped, Order 3's retail total would decrease compared to its actual \\$1,350.60.**  (false)
 
 The statement swaps the two markup percentages and claims Order 3's retail total would decrease from $\\$1{,}350.60$.
 
@@ -7708,7 +7708,7 @@ Taking $32\\%$ of wholesale $840$ would get $268.80$ by forcing A's rate onto B.
 The opposite verdict would need Order 1's mix to carry $\\$150$ or less. With $8$ and $5$ at $17.60$ and $14.40$, the markup is $212.80$.
 
 Order 1's markup is $\\$212.80$, which exceeds $\\$150$, so the statement is True.`,
-      `**D) If Order 3's Product B quantity rose from 12 to 15 units (Product A unchanged at 3 units), the retail total would increase by more than \\$280.00.**  (true)
+      `**D) If Order 3's Product B quantity rose from 12 to 15 units, the retail total would increase by more than \\$280.00.**  (true)
 
 The statement raises Order 3's Product B from $12$ to $15$ units, Product A unchanged at $3$, and claims the retail total would increase by more than $\\$280$. Retail B is $80 \\times 1.18=94.40$. The extra arithmetic is three extra B at that retail price.
 
@@ -7725,7 +7725,7 @@ $$283.20 > 280$$
 Product A unchanged means those $3$ units add $0$ to the increment. The opposite verdict would need retail B at or below $280/3 \\approx 93.33$. With retail B at $94.40$, three extra units add $283.20$.
 
 Three extra B add $\\$283.20$, which is more than $\\$280$, so the statement is True.`,
-      `**E) The wholesale cost ratio of Product B to Product A (y : x) is greater than the retail price ratio of Product B to Product A.**  (true)
+      `**E) The wholesale cost ratio of Product B to Product A is greater than the retail price ratio of Product B to Product A.**  (true)
 
 The statement claims the wholesale cost ratio $B:A$ is greater than the retail price ratio $B:A$. Wholesale $A=55$, $B=80$ from the overview. Retail A is $55 \\times 1.32=72.60$. Retail B is $80 \\times 1.18=94.40$. This is a comparison of two ratios, not a dollar-markup letter.
 
@@ -7813,7 +7813,7 @@ $$
       `The Ravens earned more than 45% of their total points from draws alone.`,
       `Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.`,
       `The Falcons' win-to-draw point contribution ratio exceeds 15.`,
-      `A hypothetical team with the Falcons' record but 3 additional wins converted from draws (12 wins, 1 draw, 2 losses) would score more than 20 points higher than the Falcons' actual total.`,
+      `A hypothetical team with the Falcons' record but 3 additional wins converted from draws would score more than 20 points higher than the Falcons' actual total.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -7895,7 +7895,7 @@ Using match counts $9/4=2.25$ would be answering a wins-to-draws *record* ratio.
 The opposite verdict would need draw points below $63/15=4.2$, which would take fewer than two draws at $3$ points. The Falcons had four draws. The Ravens' $67$ points are a different club.
 
 The win-to-draw points ratio is $5.25$, which does not exceed $15$, so the statement is False.`,
-      `**E) A hypothetical team with the Falcons' record but 3 additional wins converted from draws (12 wins, 1 draw, 2 losses) would score more than 20 points higher than the Falcons' actual total.**  (false)
+      `**E) A hypothetical team with the Falcons' record but 3 additional wins converted from draws would score more than 20 points higher than the Falcons' actual total.**  (false)
 
 The statement converts three Falcons draws into wins, leaving $12$ wins, $1$ draw, $2$ losses, and claims that team would score more than $20$ points higher than the actual $75$.
 
@@ -7968,15 +7968,15 @@ $$
 | Batch 2 | 5 L | 15 L | 209.0 kg |
 | Batch 3 (audit) | 9.5 L (conv.) | 6 L | 147.0 kg (recorded) |`,
     statements: [
-      `If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.`,
+      `If Batch 1's Metal B volume had been 10 L instead of 8 L, the total mass would have exceeded 200 kg.`,
       `Metal B's density is more than 50% greater than Metal A's density.`,
       `The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.`,
-      `If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L (Metal B unchanged at 6 L), the predicted mass would come within 2 kg of the recorded 147.0 kg.`,
-      `Combining Batch 1 and Batch 2 into a single hypothetical batch (17 L Metal A + 23 L Metal B) would yield a total mass equal to the sum of their individual masses.`,
+      `If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L, the predicted mass would come within 2 kg of the recorded 147.0 kg.`,
+      `Combining Batch 1 and Batch 2 into a single hypothetical batch would yield a total mass equal to the sum of their individual masses.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.**  (true)
+      `**A) If Batch 1's Metal B volume had been 10 L instead of 8 L, the total mass would have exceeded 200 kg.**  (true)
 
 The statement raises Batch 1's Metal B from $8$ L to $10$ L, leaves Metal A at $12$ L, and claims total mass would exceed $200$ kg. This is a new mix, not the printed Batch 1 row. The overview already recovered $A=7.6$ kg/L and $B=11.4$ kg/L. Batch 1 printed $182.4$ kg, which is $12(7.6)+8(11.4)=91.2+91.2=182.4$. The extra arithmetic is only the extra $2$ L of B.
 
@@ -8041,7 +8041,7 @@ Using $6.4/140.6 \\approx 4.55\\%$ against the prediction would still pass $4\\%
 This is the inconsistent third row with a relative-error cutoff. The $4\\%$ bar is the claim's window. The $4.35\\%$ figure clears it. If the recorded mass had been $142.0$ kg, the gap would have been $1.4$ kg, about $1\\%$, and the claim would have failed.
 
 so the statement is True.`,
-      `**D) If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L (Metal B unchanged at 6 L), the predicted mass would come within 2 kg of the recorded 147.0 kg.**  (false)
+      `**D) If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L, the predicted mass would come within 2 kg of the recorded 147.0 kg.**  (false)
 
 The statement replaces Batch 3's converted $9.5$ L of Metal A with $10$ L, Metal B unchanged at $6$ L, and claims the predicted mass would come within $2$ kg of the recorded $147.0$ kg.
 
@@ -8064,7 +8064,7 @@ Using $10$ L of B instead would add $4 \\times 11.4=45.6$ kg and overshoot $147$
 To come within $2$ kg of $147.0$ the prediction would need to sit between $145.0$ and $149.0$. At $10$ L of A it sits at $144.4$, still $0.6$ kg outside that window. The recovered densities plus $6$ L of B pin that $144.4$.
 
 so the statement is False.`,
-      `**E) Combining Batch 1 and Batch 2 into a single hypothetical batch (17 L Metal A + 23 L Metal B) would yield a total mass equal to the sum of their individual masses.**  (true)
+      `**E) Combining Batch 1 and Batch 2 into a single hypothetical batch would yield a total mass equal to the sum of their individual masses.**  (true)
 
 The statement claims combining Batch 1 and Batch 2 into one hypothetical batch would yield a total mass equal to the sum of their individual masses. Combined volumes are $12+5=17$ L of A and $8+15=23$ L of B. At fixed densities, mass is linear in volume.
 
@@ -8142,7 +8142,7 @@ versus 147.0 kg recorded, a 6.4 kg discrepancy.
     statements: [
       `A client with AUM of \\$850,000 would pay a fee representing less than 1.75% of their AUM.`,
       `The flat retainer accounts for more than 10% of Client 2's total fee.`,
-      `If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM \\$750,000) would decrease compared to its actual amount.`,
+      `If the fee rate were reduced by 0.2 percentage points while the retainer doubled, Client 1's total fee would decrease compared to its actual amount.`,
       `The percentage-point difference in effective fee rate between Client 1 and Client 2 is more than 0.05 percentage points.`,
       `A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee.`,
     ],
@@ -8182,7 +8182,7 @@ $$\\frac{1200}{10800} \\approx 0.1111$$
 Using Client 1's $\\$13{,}200$ as the denominator would get about $9.1\\%$ and fail the cutoff. The opposite verdict would need a different isolation than $9.1\\%$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim names Client 2. Dividing $\\$1{,}200$ by AUM, $1200/600000=0.002$, would report $0.2\\%$ and miss the cutoff in the other direction. The recovered comparison therefore keeps $1200/600000=0.002$ and does not substitute $0.2\\%$.
 
 The opposite verdict would need a retainer of $\\$1{,}080$ or less. With $y=1200$ recovered from Client 2's total, the retainer is about $11\\%$ of Client 2's fee, more than $10\\%$, so the statement is True.`,
-      `**C) If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM \\$750,000) would decrease compared to its actual amount.**  (true)
+      `**C) If the fee rate were reduced by 0.2 percentage points while the retainer doubled, Client 1's total fee would decrease compared to its actual amount.**  (true)
 
 The statement cuts the fee rate by $0.2$ points to $1.4\\%$ and doubles the retainer to $\\$2{,}400$, then claims Client 1's fee (AUM $\\$750{,}000$) would decrease from its actual amount. The overview already recovered rate $1.6\\%$ and retainer $\\$1{,}200$. Actual Client 1 fee is $0.016 \\times 750000 + 1200 = 13200$.
 
@@ -8283,7 +8283,7 @@ $$
     statements: [
       `Suspension B's concentration is more than 85% higher than Suspension A's concentration.`,
       `Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.`,
-      `If Batch 1's Suspension B volume were doubled (Suspension A unchanged at 500 mL), the new total content would exceed 13,500 mg.`,
+      `If Batch 1's Suspension B volume were doubled, the new total content would exceed 13,500 mg.`,
       `The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.`,
       `Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did.`,
     ],
@@ -8331,7 +8331,7 @@ Using $0.32$ L as $32$ mL would predict $32(8.4)+450(15.6)=268.8+7020=7288.8$, a
 This is an inconsistent third row that is *almost* consistent. Letter B asks whether the relative gap exceeds $1\\%$, and it does not. If the recorded value had been $9{,}500$ mg, the gap would have been $208$ mg, about $2.2\\%$, and the claim would have been true.
 
 so the statement is False.`,
-      `**C) If Batch 1's Suspension B volume were doubled (Suspension A unchanged at 500 mL), the new total content would exceed 13,500 mg.**  (true)
+      `**C) If Batch 1's Suspension B volume were doubled, the new total content would exceed 13,500 mg.**  (true)
 
 The statement doubles Batch 1's Suspension B volume, A unchanged at $500$ mL, and claims the new total content would exceed $13{,}500$ mg.
 
@@ -8470,9 +8470,9 @@ versus 9,700 mg recorded, an 8 mg discrepancy.
     context: `Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall. Job 1 needed 200 usable studs + 150 usable sheets, invoice \\$7,164.00. Job 2 needed 350 usable studs + 175 usable sheets, invoice \\$8,946.00.`,
     statements: [
       `The total waste-related cost on Invoice 1 exceeds \\$700.00.`,
-      `If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than \\$150.00.`,
+      `If the drywall waste allowance were reduced from 8% to 5%, Invoice 2's total would decrease by more than \\$150.00.`,
       `Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.`,
-      `The drywall price (y) is more than 8 times the stud price (x).`,
+      `The drywall price is more than 8 times the stud price.`,
       `Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total.`,
     ],
     answer_key: [false, true, true, true, true],
@@ -8498,7 +8498,7 @@ $$108 + 456 = 564$$
 Then $564 > 700$ is false. Waste on Invoice 1 is $\\$564$, $\\$136$ short of $\\$700$. Using $12\\%$ of the whole invoice $0.12 \\times 7164 \\approx 860$ would accept the claim by applying stud waste to drywall dollars too. That is the fork: $12\\%$ belongs to the recovered isolation, $0.12 \\times 7164 \\approx 860$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 Invoice 1's waste costs $\\$564$, which does not exceed $\\$700$, so the statement is False.`,
-      `**B) If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than \\$150.00.**  (true)
+      `**B) If the drywall waste allowance were reduced from 8% to 5%, Invoice 2's total would decrease by more than \\$150.00.**  (true)
 
 The statement cuts drywall waste from $8\\%$ to $5\\%$, stud waste unchanged, and claims Invoice 2's total would decrease by more than $\\$150$.
 
@@ -8532,7 +8532,7 @@ Using Job 1's $6600/7164 \\approx 92.1\\%$ would still pass $90\\%$, but the cla
 The opposite verdict would need usable cost at or below $\\$8{,}051.40$. With $8225$, the share is $91.9\\%$.
 
 Usable material is about $91.9\\%$ of Invoice 2, more than $90\\%$, so the statement is True.`,
-      `**D) The drywall price (y) is more than 8 times the stud price (x).**  (true)
+      `**D) The drywall price is more than 8 times the stud price.**  (true)
 
 The statement claims Ridgeline's drywall price is more than $8$ times the stud price. Both prices are recovered leftovers after waste allowances were folded into the invoices. This letter does not rebuild Job 1's waste dollars.
 
@@ -8621,10 +8621,10 @@ $$
 | Point 3 | 45.0 | 172.20 | Verification (recorded) |`,
     statements: [
       `The scale factor exceeds 3.4 by more than 2.5%.`,
-      `If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.`,
+      `If the offset were doubled, the predicted true value at a reading of 20 would exceed 95.`,
       `The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.`,
       `The percentage increase in true value between Point 1 and Point 2 is more than 100%.`,
-      `A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value (56.90).`,
+      `A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -8651,7 +8651,7 @@ Using $0.10/3.50 \\approx 2.86\\%$ against the scale itself would still pass $2.
 The opposite verdict would need scale at or below $3.485$. Recovered $3.50$ sits above that.
 
 The scale $3.50$ exceeds $3.4$ by about $2.94\\%$, more than $2.5\\%$, so the statement is True.`,
-      `**B) If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.**  (true)
+      `**B) If the offset were doubled, the predicted true value at a reading of 20 would exceed 95.**  (true)
 
 The statement doubles the offset, holds the scale, and claims the predicted true value at a reading of $20$ would exceed $95$. This is a new-offset counterfactual, not Point 1 or Point 2. The overview already recovered scale $3.50$ and offset $13.50$. New offset is $2 \\times 13.50=27$. Reading $20$ is not a calibration point.
 
@@ -8720,7 +8720,7 @@ Using readings $31.7/12.4 \\approx 2.556$ and reporting a $155.6\\%$ reading inc
 The opposite verdict would need Point 2 at or below $113.80$. With Point 2 at $124.45$, the increase exceeds $100\\%$.
 
 The true-value increase is about $119\\%$, more than $100\\%$, so the statement is True.`,
-      `**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value (56.90).**  (false)
+      `**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value.**  (false)
 
 The statement claims a reading of $8.0$ would produce a predicted true value less than half of Point 1's true value $56.90$. This is a new-reading counterfactual plus a false half-comparison. The overview already recovered scale $3.50$ and offset $13.50$. Half of $56.90$ is $28.45$. Reading $8.0$ is not a calibration point.
 
@@ -8796,9 +8796,9 @@ versus recorded 172.20, a $1.20$ discrepancy.
     statements: [
       `Coffee costs more than 25% more per kilogram than Cocoa.`,
       `Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.`,
-      `If Shipment 2's ratio had instead been 1:1 (400 kg of each) rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.`,
+      `If Shipment 2's ratio had instead been 1:1 rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.`,
       `The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.`,
-      `The price gap between Coffee and Cocoa (x - y) is less than 30% of Coffee's price.`,
+      `The price gap between Coffee and Cocoa is less than 30% of Coffee's price.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -8840,7 +8840,7 @@ Using mass share $3/5=60\\%$ would sit under $65\\%$ and flip the verdict, becau
 The opposite verdict would need Coffee's dollar share at or below $0.65 \\times 2943.20 = 1913.08$. That would take a Coffee price at or below $1913.08/312 \\approx 6.13$. Recovered Coffee is $\\$6.20$. Shipment 2's $5:3$ mix is a different bill and does not rewrite Shipment 1's $312$ kg.
 
 Shipment 1's Coffee dollars are about $65.7\\%$ of $\\$2{,}943.20$, which is more than $65\\%$, so the statement is True.`,
-      `**C) If Shipment 2's ratio had instead been 1:1 (400 kg of each) rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.**  (true)
+      `**C) If Shipment 2's ratio had instead been 1:1 rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.**  (true)
 
 The statement changes Shipment 2 from $5:3$ to $1:1$ at the same $800$ kg, and claims the total cost would be lower than $\\$4{,}555$.
 
@@ -8886,7 +8886,7 @@ Comparing kilograms $508$ vs $812$ and treating mass as money would still find C
 The opposite verdict would need Cocoa dearer than Coffee, or a Cocoa-heavy mix the stem does not give. With recovered prices and these two ratios, Cocoa cannot overtake Coffee in combined dollars.
 
 Combined Cocoa is $\\$2{,}463.80$ against Coffee's $\\$5{,}034.40$, so Cocoa does not exceed Coffee, so the statement is False.`,
-      `**E) The price gap between Coffee and Cocoa (x - y) is less than 30% of Coffee's price.**  (true)
+      `**E) The price gap between Coffee and Cocoa is less than 30% of Coffee's price.**  (true)
 
 The statement claims the price gap $x-y$ is less than $30\\%$ of Coffee's recovered price. The overview already recovered Coffee $x=6.20$ and Cocoa $y=4.85$. The extra arithmetic is only the gap and the ratio. The two shipment totals are not re-solved.
 
@@ -8967,9 +8967,9 @@ $$
     statements: [
       `Truck fuel consumption is more than 75% higher than Van fuel consumption.`,
       `Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.`,
-      `If Route 1's Van distance had instead been 900 km (Truck unchanged at 850 km), total fuel would have exceeded 430 L.`,
+      `If Route 1's Van distance had instead been 900 km, total fuel would have exceeded 430 L.`,
       `Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.`,
-      `Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance (850 + 620 = 1,470 km) at its own rate.`,
+      `Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance at its own rate.`,
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
@@ -9011,7 +9011,7 @@ Treating $155.3$ mi as $155.3$ km would predict $1.553 \\times 32 + 4 \\times 18
 This is the inconsistent third row with a $2\\%$ relative bar. The prediction *is* below the recorded value; the bar is what the claim fails. If the recorded value had been $160$ L, the gap would have been $8/160=5\\%$, over $2\\%$, and the claim would have been true.
 
 so the statement is False.`,
-      `**C) If Route 1's Van distance had instead been 900 km (Truck unchanged at 850 km), total fuel would have exceeded 430 L.**  (true)
+      `**C) If Route 1's Van distance had instead been 900 km, total fuel would have exceeded 430 L.**  (true)
 
 The statement raises Route 1's Van distance to $900$ km, Truck unchanged at $850$ km, and claims total fuel would exceed $430$ L.
 
@@ -9061,7 +9061,7 @@ Averaging $32$ and $18$ as an unweighted $25$ would sit $7$ from the Van and $7$
 The opposite verdict would need the Truck share of Route 2's distance large enough to push the average past the midpoint $25$. With $500$ Truck kilometres out of $1400$, the average is $23$, on the Van side of $25$.
 
 Route 2's $23.0$ L/$100$ km is $5$ from the Van and $9$ from the Truck, so the statement is True.`,
-      `**E) Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance (850 + 620 = 1,470 km) at its own rate.**  (true)
+      `**E) Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance at its own rate.**  (true)
 
 The statement claims Route 1's total fuel is less than the sum of what each vehicle type would use if it alone covered the full combined distance $1470$ km at its own rate.
 
@@ -9147,8 +9147,8 @@ versus 155 L recorded, a 3 L discrepancy.
     statements: [
       `The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.`,
       `Under the current allocation, the blended rate is less than 6%.`,
-      `If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns (\\$2,646.00 + \\$2,754.00 = \\$5,400.00).`,
-      `A $\\frac{50}{50}$ split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.`,
+      `If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns.`,
+      `A $\\frac{50}{50}$ split would produce a blended return exactly equal to the average of the two described allocations' returns.`,
       `The bond rate is more than 80% of the equity rate.`,
     ],
     answer_key: [true, true, false, true, true],
@@ -9193,7 +9193,7 @@ The current mix is $60\\%$ bonds, so the blend sits closer to $5.4$ than to $6.6
 The opposite verdict would need the current return at or above $0.06 \\times 45000=2700$. The printed current return is $\\$2{,}646$. The proposed swap return $\\$2{,}754$ is a different mix and is not "current."
 
 The current blend is $5.88\\%$, which is less than $6\\%$, so the statement is True.`,
-      `**C) If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns (\\$2,646.00 + \\$2,754.00 = \\$5,400.00).**  (false)
+      `**C) If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns.**  (false)
 
 The statement places the entire $\\$45{,}000$ in equities and claims that all-equity return would exceed the *sum* of the two described allocation returns, $\\$2{,}646+\\$2{,}754=\\$5{,}400$. Those two returns are two alternative mixes of the *same* $\\$45{,}000$, not two separate funds. Adding them double-counts the principal. The overview already recovered equity at $6.6\\%$.
 
@@ -9216,7 +9216,7 @@ Treating $\\$5{,}400$ as "two years of income" or as "both portfolios at once" i
 The opposite verdict would need an equity rate above $5400/45000=12\\%$, which would be adding the two sleeve rates rather than using one of them. Recovered equity is $6.6\\%$, not $12\\%$.
 
 All-equity income is $\\$2{,}970$, which does not exceed $\\$5{,}400$, so the statement is False.`,
-      `**D) A $\\frac{50}{50}$ split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
+      `**D) A $\\frac{50}{50}$ split would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
 
 The statement claims a $50/50$ split would produce a blended return equal to the average of the two described allocations' returns.
 
@@ -9320,9 +9320,9 @@ Then $y = 5.4 + 1.2 = 6.6$.
     statements: [
       `The reconstructed Renters coverage amount is less than \\$30,000.`,
       `The fixed administrative fee represents more than 60% of the Auto policy's total premium.`,
-      `If the rate per \\$1,000 of coverage increased by 10% (fixed fee unchanged), the Home policy's premium would increase by more than \\$75.00.`,
+      `If the rate per \\$1,000 of coverage increased by 10%, the Home policy's premium would increase by more than \\$75.00.`,
       `The Home policy's premium per \\$1,000 of coverage is more than twice the Auto policy's premium per \\$1,000 of coverage.`,
-      `Combining the Auto and Home coverage into a single hypothetical policy (295 units of \\$1,000 coverage total) would cost less than the sum of their separate premiums (\\$612.50 + \\$1,197.50 = \\$1,810.00).`,
+      `Combining the Auto and Home coverage into a single hypothetical policy would cost less than the sum of their separate premiums.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -9362,7 +9362,7 @@ Using Home's premium $\\$1{,}197.50$ in the denominator would get $214.70/1197.5
 The opposite verdict would need Auto coverage small enough that $214.70$ is $60\\%$ of the premium, so premium about $\\$357.83$ and coverage charge about $\\$143$, or about $31$ units. Auto is $85$ units.
 
 The fee is about $35\\%$ of the Auto premium, not more than $60\\%$, so the statement is False.`,
-      `**C) If the rate per \\$1,000 of coverage increased by 10% (fixed fee unchanged), the Home policy's premium would increase by more than \\$75.00.**  (true)
+      `**C) If the rate per \\$1,000 of coverage increased by 10%, the Home policy's premium would increase by more than \\$75.00.**  (true)
 
 The statement raises the rate per $\\$1{,}000$ by $10\\%$, holds the fee, and claims Home's premium would rise by more than $\\$75$. Home coverage is $\\$210{,}000$, which is $210$ units. The overview already recovered rate $\\$4.68$ and fee $\\$214.70$. The extra arithmetic is only the rate increment on those $210$ units. The fee cancels out of a change.
 
@@ -9396,7 +9396,7 @@ The statement claims the Home policy's premium per $\\$1{,}000$ of coverage is m
 Comparing totals $1197.50$ and $2 \\times 612.50=1225$ would find Home slightly smaller, which is a different comparison that also fails "more than twice." Working from the isolated values, $1197.50$ is the figure that is checked, not the detour that produced $2 \\times 612.50=1225$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.using only the rate $4.68$ on both would find them equal. That is why $4.68$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 Home's per-thousand premium is about $\\$5.70$, Auto's about $\\$7.21$, so Home is not more than twice Auto, so the statement is False.`,
-      `**E) Combining the Auto and Home coverage into a single hypothetical policy (295 units of \\$1,000 coverage total) would cost less than the sum of their separate premiums (\\$612.50 + \\$1,197.50 = \\$1,810.00).**  (true)
+      `**E) Combining the Auto and Home coverage into a single hypothetical policy would cost less than the sum of their separate premiums.**  (true)
 
 The statement combines Auto and Home into one hypothetical policy covering $295$ thousands, and claims that would cost less than the sum of their separate premiums $\\$1{,}810$.
 
@@ -9468,7 +9468,7 @@ that is $25,000$ of coverage.
     statements: [
       `By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.`,
       `If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.`,
-      `The ratio of the two species' total population growth from Year 2 to Year 6 (Species A's growth: Species B's growth) is greater than 2.5: 1.`,
+      `The ratio of the two species' total population growth from Year 2 to Year 6 is greater than 2.5: 1.`,
       `At some point between Year 2 and Year 6, the two species had equal populations.`,
       `Species A overtakes Species B in total population size before Year 5.`,
     ],
@@ -9518,7 +9518,7 @@ Raising A instead of B, or using $+72$ on both from Year $0$, would be answering
 The opposite verdict would need extra growth at or below $140$, so at most $35$ extra per year over four years. B's actual shortfall versus A is $36$ per year.
 
 Rewriting B's rate as $+72$ adds $144$ individuals by Year 6, more than $140$, so the statement is True.`,
-      `**C) The ratio of the two species' total population growth from Year 2 to Year 6 (Species A's growth: Species B's growth) is greater than 2.5: 1.**  (false)
+      `**C) The ratio of the two species' total population growth from Year 2 to Year 6 is greater than 2.5: 1.**  (false)
 
 The statement claims the Year 2 to Year 6 growth ratio of Species A to Species B exceeds $2.5:1$. The overview already recovered $A=+72$ per year and $B=+36$ per year. The window is $4$ years. The extra arithmetic is the two four-year totals, then the ratio.
 
@@ -9625,9 +9625,9 @@ Year 6 populations, for later claims: $A = 610 + 4(72) = 898$ and $B = 730 + 4(3
     statements: [
       `Plant A's output rate exceeds Plant B's by more than 45%.`,
       `Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.`,
-      `If Plant A had operated for the combined time Plant B actually operated across Days 1–2 (29 hours), while Plant B operated for the combined time Plant A actually did (36 hours), the grand total would exceed the actual combined Day 1 + Day 2 total (8,062 MWh).`,
-      `The combined output rate of both plants together (x + y) is more than 2.4 times Plant B's rate alone.`,
-      `Across all three days combined (using the recorded Day 3 value), total energy production exceeds 11,600 MWh.`,
+      `If Plant A had operated for the combined time Plant B actually operated across Days 1–2, while Plant B operated for the combined time Plant A actually did, the grand total would exceed the actual combined Day 1 + Day 2 total.`,
+      `The combined output rate of both plants together is more than 2.4 times Plant B's rate alone.`,
+      `Across all three days combined, total energy production exceeds 11,600 MWh.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -9663,7 +9663,7 @@ Using $1020$ min as $1020$ hours would wreck Plant A's term. Once $1020$ is isol
 This is the inconsistent third row with a tight $0.3\\%$ bar. The gap *is* nonzero, so Day 3 does not rebuild exactly; it just sits inside the claim's window. If the recorded value had been $3600$ MWh, the gap would have been $57/3600=1.58\\%$, over $0.3\\%$, and the claim would have failed.
 
 so the statement is True.`,
-      `**C) If Plant A had operated for the combined time Plant B actually operated across Days 1–2 (29 hours), while Plant B operated for the combined time Plant A actually did (36 hours), the grand total would exceed the actual combined Day 1 + Day 2 total (8,062 MWh).**  (false)
+      `**C) If Plant A had operated for the combined time Plant B actually operated across Days 1–2, while Plant B operated for the combined time Plant A actually did, the grand total would exceed the actual combined Day 1 + Day 2 total.**  (false)
 
 The statement swaps the two plants onto each other's combined Days 1-2 hours: Plant A runs the $29$ hours Plant B actually ran, Plant B runs the $36$ hours Plant A actually ran, and claims that grand total would exceed the actual combined Day 1 + Day 2 total $8{,}062$ MWh.
 
@@ -9690,7 +9690,7 @@ Swapping in the other direction, giving A even more hours, would exceed $8062$ a
 If the plants had equal rates, the swap would leave $8062$ unchanged and the claim would fail. The recovered gap $145-98=47$ is what makes the under-use of A cost $329$ MWh.
 
 so the statement is False.`,
-      `**D) The combined output rate of both plants together (x + y) is more than 2.4 times Plant B's rate alone.**  (true)
+      `**D) The combined output rate of both plants together is more than 2.4 times Plant B's rate alone.**  (true)
 
 The statement claims the combined output rate of both plants is more than $2.4$ times Plant B's rate alone. That is a factor test on $x+y$ against $y$, not a second audit of Day 3.
 
@@ -9705,7 +9705,7 @@ $$145 + 98 = 243, \\qquad \\frac{243}{98} \\approx 2.4796$$
 Using $2.4 \\times 145$ against A would be using the wrong base: $348$ compared with $243$ fails, and that is not the claim. So the letter reads the claim against $2.4 \\times 145$; $243$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2.4 \\times 145$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Comparing $145/98 \\approx 1.48$ would be repeating letter A's ratio instead of the combined factor. The recovered isolation is checked against the claim using $145/98 \\approx 1.48$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would need $x+y \\le 2.4y$, so $x \\le 1.4y = 137.2$. With $A=145$, the combined rate $243$ MWh/hr is about $2.48$ times B's $98$, more than $2.4$ times, so the statement is True.`,
-      `**E) Across all three days combined (using the recorded Day 3 value), total energy production exceeds 11,600 MWh.**  (true)
+      `**E) Across all three days combined, total energy production exceeds 11,600 MWh.**  (true)
 
 The statement adds Day 1, Day 2, and the *recorded* Day 3 total and claims the three-day energy exceeds $11{,}600$ MWh. The printed rows are $3{,}990$, $4{,}072$, and recorded Day 3 $3{,}553$. The overview already recovered Plant A $145.0$ MWh/hr and Plant B $98.0$ MWh/hr, and a Day 3 *prediction* $3{,}543$. This letter uses the recorded $3{,}553$, not that prediction.
 

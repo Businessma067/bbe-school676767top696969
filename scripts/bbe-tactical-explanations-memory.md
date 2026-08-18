@@ -136,6 +136,7 @@ Do:
 - Calm tutor English. Short and medium sentences.
 - English outside math; math inside `$...$` / `$$...$$`.
 - Wrap every `\frac{...}{...}` in live **statements** (and matching explanation headers) in `$...$`. Bare `\frac` on a T/F card is not KaTeX; the student sees raw LaTeX.
+- Live **statements** stay dry: the claim only. No parenthetical coaching, no `(x - y)` / `(wire unchanged at 40 m)` / precomputed mixes or sums, no “purely because…” asides. Put that arithmetic in the explanation, not on the T/F card.
 - Escape currency as `\$12.00` outside math.
 - Use one backslash in KaTeX commands inside the string content: `\frac`, `\qquad`, `\approx`.
 - Keep verdict language plain: “so the statement is true/false.”
@@ -179,6 +180,7 @@ Avoid:
 - Prose rendered as math, or math that swallows English.
 - Over-escaped LaTeX that reaches KaTeX as `\\frac` / line-break scars.
 - “A solver who…”, “A rushed solver…”, or any other hypothetical-person frame for a wrong mix.
+- Parenthetical hints on live statements (`(x - y)`, `(wood unchanged)`, `($750 + $710)`).
 
 ---
 
