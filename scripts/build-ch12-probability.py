@@ -12,7 +12,11 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ch12_polish import polish_task, validate_tasks
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTRACT_DIR = ROOT / "textbook" / "output" / "ch12_extract"
@@ -143,6 +147,13 @@ def extract_statements_ae(block: str) -> list[str]:
     lines = []
     # Normalize "A. text" and "A text" and "A       text"
     chunk = block
+    # BUG 3: join a label that sits alone on a line with the following text
+    chunk = re.sub(
+        r"(?:^|\n)\s*([A-E])[.)]\s*\n+\s*(?=\S)",
+        r"\n\1. ",
+        chunk,
+    )
+    chunk = re.sub(r"#STATEMENT\s*TRUE|#STATEMENTTRUE|#STATEMENT", "\n", chunk, flags=re.I)
     # Cut at worked/answer sections
     chunk = re.split(
         r"(?=\n\s*(?:\*{0,2}Worked(?:\s+answer|\s+solution)?\*{0,2}\s*:|"
@@ -164,11 +175,12 @@ def extract_statements_ae(block: str) -> list[str]:
         # separated by a blank line, so stop at that question/solution boundary.
         body = re.split(
             r"\n\s*\n|(?=\n\s*(?:Worked(?:\s+answer|\s+solution)?|Answers?:|"
-            r"\*\*Worked|####\s*Step|\\\[))",
+            r"\*\*Worked|####\s*Step|\\\[|#STATEMENT))",
             body,
             maxsplit=1,
             flags=re.I,
         )[0]
+        body = re.sub(r"#STATEMENT\s*TRUE|#STATEMENTTRUE|#STATEMENT", "", body, flags=re.I)
         body = re.sub(r"\s+", " ", body).strip()
         # Ignore if this looks like an answer verdict line
         if re.fullmatch(r"(TRUE|FALSE|True|False)\.?", body):
@@ -417,14 +429,28 @@ def context_from_question(block: str) -> str:
         body,
         flags=re.I,
     )
-    # Cut at first statement letter
+    # Cut at first statement letter, compact A/B/C list, or answer/solution leak
     m = re.search(r"(?:^|\n)\s*A[.)]\s+", body)
     if not m:
         m = re.search(r"(?:^|\n)\s*A\s{2,}", body)
     if not m:
         m = re.search(r"(?:^|\n)\s*Statements?:", body, flags=re.I)
+    if not m:
+        m = re.search(
+            r"(?:^|\n)\s*A\s+(?:at least|exactly|none|all three|P\()",
+            body,
+            flags=re.I,
+        )
     if m:
         body = body[: m.start()]
+    body = re.split(
+        r"(?:^|\n)\s*(?:\*\*Answers?:\*\*|Answers?:|Worked(?:\s+answer|\s+solution)?|"
+        r"Only counts:|Converted values:|#STATEMENT)",
+        body,
+        maxsplit=1,
+        flags=re.I,
+    )[0]
+    body = re.sub(r"#STATEMENT\s*TRUE|#STATEMENTTRUE|#STATEMENT", "", body, flags=re.I)
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
     return latexify(body)
 
@@ -1125,35 +1151,37 @@ def finalize(tasks: list[dict], start_index: int = 1) -> list[dict]:
             "statement contains worked-solution content",
         )
         overview = clean_overview(t["solution_overview"] or "")
-        raw_stmts = [humanize_statement(s) for s in t["statements"]]
-        tactical = enrich_tactical(
+        t["tactical_explanations"] = enrich_tactical(
             t["tactical_explanations"],
             overview,
             t["answer_key"],
-            raw_stmts,
+            t["statements"],
             t["subsection"],
         )
-        overview = trim_solution_overview(overview, tactical, t["subsection"])
-        stmts = []
-        for s in raw_stmts:
-            s2 = s.replace("$", "")
-            s2 = re.sub(r"\s+", " ", s2).strip()
-            stmts.append(s2)
-        out.append(
-            {
-                "id": f"math-12-{i}",
-                "case_id": f"MATH 12.{i:02d}",
-                "title": clean_task_title(t["title"], f"Probability {i}"),
-                "context": humanize_context(t["context"]),
-                "statements": stmts,
-                "answer_key": t["answer_key"],
-                "tactical_explanations": tactical,
-                "difficulty_level": t["difficulty_level"],
-                "sort_order": i,
-                "subsection": t["subsection"],
-                "solution_overview": overview,
-            }
+        t["solution_overview"] = trim_solution_overview(
+            overview, t["tactical_explanations"], t["subsection"]
         )
+        t = polish_task(t)
+        overview = t.get("solution_overview") or ""
+        stmts = t["statements"]
+        payload = {
+            "id": f"math-12-{i}",
+            "case_id": f"MATH 12.{i:02d}",
+            "title": clean_task_title(t["title"], f"Probability {i}"),
+            "context": t["context"],
+            "statements": stmts,
+            "answer_key": t["answer_key"],
+            "tactical_explanations": t["tactical_explanations"],
+            "difficulty_level": t["difficulty_level"],
+            "sort_order": i,
+            "subsection": t["subsection"],
+            "solution_overview": overview,
+        }
+        if t.get("figure"):
+            payload["figure"] = t["figure"]
+        if t.get("tables_markdown"):
+            payload["tables_markdown"] = t["tables_markdown"]
+        out.append(payload)
     return out
 
 
@@ -1194,6 +1222,13 @@ def main() -> None:
     )
 
     all_tasks = finalize(comb + incl + cond + ev)
+    flags = validate_tasks(all_tasks)
+    if flags:
+        print(f"validation flags ({len(flags)}):")
+        for f in flags[:40]:
+            print(" -", f)
+        if len(flags) > 40:
+            print(f" - ... and {len(flags) - 40} more")
     payload = {
         "chapter": 12,
         "title": "Elementary probability",
