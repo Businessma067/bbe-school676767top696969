@@ -1,0 +1,512 @@
+[
+  {
+    "id": "math-8-81",
+    "case_id": "MATH 8.81",
+    "title": "Drag and Sustained Power on a Velodrome",
+    "context": "Aerodynamic drag on a track cyclist follows $F(v)=A v^{r}$ newtons for speed $v>0$ metres per second, with both constants unknown. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by exactly $40$ N. The power needed to overcome that drag is $P=Fv$ watts, and the rider can hold $500$ W for a full pursuit. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Absorbed power grows faster than speed.",
+      "If the rider doubles speed, absorbed power doubles.",
+      "An extra metre per second of speed adds more watts at $12$ m/s than it does at $8$ m/s.",
+      "At $8$ m/s the rider is still under $300$ W.",
+      "At $12$ m/s the rider is still under $800$ W."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $P(v)=\\frac{1}{2}v^{3}$. Power outruns speed when the leftover exponent exceeds $1$.\n\n$$3>1$$\n\nA proportional law would have carried exponent $1$. Drag itself only has exponent $2$; multiplying by speed raises that to $3$.\n\nThe leftover exponent is $3$, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered power exponent $3$. Doubling speed multiplies absorbed power by\n\n$$2^{3}=8$$\n\nThe claim is a factor of $2$. Drag itself only quadrupled, because its exponent was $2$; multiplying by the doubled speed turns that $4$ into $8$.\n\nPower rises eightfold, not twofold, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $P(v)=\\frac{1}{2}v^{3}$. Differentiating gives\n\n$$P'(v)=\\frac{3}{2}v^{2}$$\n\nAt $8$ m/s:\n\n$$P'(8)=\\frac{3}{2}\\cdot 64=96$$\n\nAt $12$ m/s:\n\n$$P'(12)=\\frac{3}{2}\\cdot 144=216$$\n\nThe claim needs $P'(12)>P'(8)$. We have $216>96$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $P(v)=\\frac{1}{2}v^{3}$. At $8$ m/s:\n\n$$P(8)=\\frac{1}{2}\\cdot 512=256$$\n\nThe claim is that this sits under $300$. We have $256<300$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $P(v)=\\frac{1}{2}v^{3}$. At $12$ m/s:\n\n$$P(12)=\\frac{1}{2}\\cdot 1728=864$$\n\nThe claim is that this sits under $800$. We have $864>800$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 81,
+    "solution_overview": "Aerodynamic drag on a track cyclist follows $F(v)=Av^{r}$ newtons for speed $v>0$. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by $40$ N. Absorbed power is $P=Fv$ watts.\n\n**Part 1: Building the model.**\n\nLet $v$ = speed in metres per second, $F$ = drag in newtons, and $P$ = absorbed power in watts. The doubling record is a ratio, so the coefficient cancels and isolates the exponent. The logged increase is a difference of two levels, which then pins the coefficient.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4 \\tag{1}$$\n\n**2. Translate: the logged increase.**\n\n$$A\\bigl(12^{r}-8^{r}\\bigr)=40 \\tag{2}$$\n\n**3. Translate: power.**\n\n$$P(v)=Av^{r+1}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$4=2^{2}$$\n\n$$r=2$$\n\nThen $(2)$ becomes a difference of squares:\n\n$$A(144-64)=40$$\n\n$$80A=40$$\n\n$$A=\\frac{1}{2}$$\n\nThe recovered laws are $F(v)=\\frac{1}{2}v^{2}$ and $P(v)=\\frac{1}{2}v^{3}$.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$ | $P(v)=\\frac{1}{2}v^{3}$"
+  },
+  {
+    "id": "math-8-82",
+    "case_id": "MATH 8.82",
+    "title": "Signal Attenuation From a Buried Cable Locator",
+    "context": "The signal a locator receives from a buried conductor follows $S(x)=A x^{r}$ millivolts, where $x>0$ is the burial depth in metres. Neither constant is posted. Doubling any burial depth cuts the received signal to $\\frac{1}{8}$, and a calibration run over a conductor buried at $2$ metres read $50$ millivolts. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The received signal is inversely proportional to burial depth.",
+      "Doubling burial depth halves the received signal.",
+      "The burial depth needed for a given reading is itself a power function of that reading.",
+      "A conductor buried at $4$ metres already returns under $7$ millivolts.",
+      "A reading of $3.2$ millivolts still corresponds to a burial depth of more than $8$ metres."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nInverse proportionality would mean exponent $-1$. The overview recovered $r=-3$.\n\n$$-3\\neq -1$$\n\nThe recovered law is $S(x)=400x^{-3}$, a reciprocal cube, not a reciprocal.\n\nThe exponent is $-3$, so the statement is False.",
+      "**B.** → False\n\nThe overview recovered $r=-3$. Doubling burial depth multiplies the signal by\n\n$$2^{-3}=\\frac{1}{8}$$\n\nThe claim is a factor of $\\frac{1}{2}$, which would have needed $r=-1$.\n\nDoubling depth leaves one eighth of the signal, not one half, so the statement is False.",
+      "**C.** → True\n\nA nonzero power inverts to another power. The overview recovered $S=400x^{-3}$, so isolating depth raises both sides to the reciprocal $-\\frac{1}{3}$ and leaves\n\n$$x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}$$\n\nBurial depth needed for a given reading is still a monomial in $S$.\n\nThe inverse is a power function of the reading, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $S(x)=400x^{-3}$. At $4$ metres:\n\n$$S(4)=\\frac{400}{64}=6.25$$\n\nThe claim is that this already sits under $7$. We have $6.25<7$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $S=400x^{-3}$. A reading of $3.2$ millivolts inverts by\n\n$$\\frac{400}{x^{3}}=3.2$$\n\n$$x^{3}=\\frac{400}{3.2}=125$$\n\n$$x=5$$\n\nThe claim is a depth of more than $8$ metres. We have $5<8$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 82,
+    "solution_overview": "The locator signal follows $S(x)=Ax^{r}$ millivolts for burial depth $x>0$. Doubling any burial depth cuts the received signal to $\\frac{1}{8}$, and a calibration at $2$ metres read $50$ millivolts.\n\n**Part 1: Building the model.**\n\nLet $x$ = burial depth in metres and $S$ = received signal in millivolts. The doubling record isolates the exponent. The calibration pair then pins the coefficient.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=\\frac{1}{8} \\tag{1}$$\n\n**2. Translate: the calibration run.**\n\n$$A\\cdot 2^{r}=50 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$\\frac{1}{8}=2^{-3}$$\n\n$$r=-3$$\n\nThen $(2)$ is $A\\cdot 2^{-3}=50$:\n\n$$\\frac{A}{8}=50$$\n\n$$A=400$$\n\nThe recovered law is $S(x)=400x^{-3}$.\n\n**Answer.** $r=-3$ | $A=400$ | $S(x)=400x^{-3}$"
+  },
+  {
+    "id": "math-8-83",
+    "case_id": "MATH 8.83",
+    "title": "Oxygen Demand and Gill Area in a Hatchery",
+    "context": "A hatchery models a fish's oxygen demand as $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour and its gill surface area as $G(m)=B m^{\\frac{2}{3}}$ square centimetres, where $m>0$ is body mass in grams. Neither coefficient is published. An $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. A tank's total demand is the sum of its fish's individual demands. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Oxygen demand grows more slowly than body mass.",
+      "Oxygen demand per square centimetre of gill falls as the fish grows.",
+      "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
+      "A $256$ g fish already demands more than $300$ millilitres per hour.",
+      "$16$ fish of $16$ g together still demand under $600$ millilitres per hour."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered demand exponent $\\frac{3}{4}$. Demand lags mass when that exponent sits below $1$.\n\n$$\\frac{3}{4}<1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $\\frac{3}{4}$, so the statement is True.",
+      "**B.** → False\n\nOxygen demand per square centimetre of gill is the ratio of the two recovered laws:\n\n$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}}$$\n\nThe leftover exponent $\\frac{1}{12}$ is positive, so intensity rises as the fish grows, rather than falling.\n\nDemand per unit gill area climbs, so the statement is False.",
+      "**C.** → False\n\nThe overview recovered $G(m)=3m^{\\frac{2}{3}}$. Two $16$ g fish have total gill area\n\n$$2G(16)=6\\cdot 16^{\\frac{2}{3}}=24\\cdot 2^{\\frac{2}{3}}$$\n\nOne $32$ g fish has\n\n$$G(32)=3\\cdot 32^{\\frac{2}{3}}=24\\cdot 2^{\\frac{1}{3}}$$\n\nBecause $2^{\\frac{2}{3}}\\neq 2^{\\frac{1}{3}}$, the two totals are not equal. The exponent $\\frac{2}{3}<1$ makes splitting mass raise total area.\n\nTwo $16$ g fish out-area one $32$ g fish, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $D(m)=5m^{\\frac{3}{4}}$. At $256$ g:\n\n$$D(256)=5\\cdot 256^{\\frac{3}{4}}=5\\cdot 64=320$$\n\nThe claim is that this already sits above $300$. We have $320>300$, so the statement is True.",
+      "**E.** → False\n\nA tank total adds individual demands. Sixteen fish of $16$ g each demand\n\n$$16\\cdot D(16)=16\\cdot 5\\cdot 16^{\\frac{3}{4}}=16\\cdot 40=640$$\n\nThe claim is that this still sits under $600$. We have $640>600$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 83,
+    "solution_overview": "Oxygen demand follows $D(m)=Am^{\\frac{3}{4}}$ millilitres per hour and gill area follows $G(m)=Bm^{\\frac{2}{3}}$ square centimetres, for body mass $m>0$ grams. An $81$ g fish demands $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. Tank totals add individual demands.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams, $D$ = oxygen demand, and $G$ = gill area. Both exponents are given, so each law needs one record: a difference for demand and a level for gill area.\n\n**1. Translate: the demand gap.**\n\n$$A\\bigl(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\bigr)=95 \\tag{1}$$\n\n**2. Translate: the gill record.**\n\n$$B\\cdot 64^{\\frac{2}{3}}=48 \\tag{2}$$\n\n**Part 2: Solve.**\n\nThe shape factors are exact:\n\n$$81^{\\frac{3}{4}}=27, \\qquad 16^{\\frac{3}{4}}=8$$\n\nso $(1)$ is $19A=95$ and $A=5$. Likewise\n\n$$64^{\\frac{2}{3}}=16$$\n\nso $(2)$ is $16B=48$ and $B=3$.\n\nThe recovered laws are $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$.\n\n**Answer.** $A=5$ | $B=3$ | $D(m)=5m^{\\frac{3}{4}}$ | $G(m)=3m^{\\frac{2}{3}}$"
+  },
+  {
+    "id": "math-8-84",
+    "case_id": "MATH 8.84",
+    "title": "Micro-Irrigation Flow Under a Fourth-Power Law",
+    "context": "Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Flow grows faster than tube radius.",
+      "Doubling the tube radius doubles the flow.",
+      "The mean velocity index is the same in every tube.",
+      "A tube of radius $3$ mm already delivers more than $200$ litres per hour.",
+      "A tube of radius $1$ mm still delivers more than $10$ litres per hour."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered flow exponent $4$. Flow outruns radius when that exponent exceeds $1$.\n\n$$4>1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $4$, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $k=4$. Doubling the tube radius multiplies flow by\n\n$$2^{4}=16$$\n\nThe claim is a factor of $2$, which would have needed $k=1$.\n\nDoubling the radius multiplies flow by $16$, not by $2$, so the statement is False.",
+      "**C.** → False\n\nThe mean velocity index spreads flow across the cross-section:\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$\n\nThe overview recovered $A=3$ and $k=4$, so the index is $\\frac{3}{\\pi}r^{2}$. The leftover exponent $2$ is not zero, so the index still depends on the tube.\n\nThe velocity index is not the same in every tube, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $Q(r)=3r^{4}$. At radius $3$ mm:\n\n$$Q(3)=3\\cdot 81=243$$\n\nThe claim is that this already sits above $200$. We have $243>200$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $Q(r)=3r^{4}$. At radius $1$ mm:\n\n$$Q(1)=3\\cdot 1=3$$\n\nThe claim is that this still sits above $10$. We have $3<10$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 84,
+    "solution_overview": "Volumetric flow follows $Q(r)=Ar^{k}$ litres per hour for internal radius $r>0$ millimetres. Doubling any tube radius multiplies flow by $16$, and a bench test at radius $2$ mm delivered $48$ litres per hour.\n\n**Part 1: Building the model.**\n\nLet $r$ = internal radius in millimetres and $Q$ = flow in litres per hour. The doubling record isolates the exponent. The bench test then pins the coefficient.\n\n**1. Translate: the doubling rule.**\n\n$$2^{k}=16 \\tag{1}$$\n\n**2. Translate: the bench test.**\n\n$$A\\cdot 2^{k}=48 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$16=2^{4}$$\n\n$$k=4$$\n\nThen $(2)$ is $A\\cdot 16=48$:\n\n$$A=3$$\n\nThe recovered law is $Q(r)=3r^{4}$.\n\n**Answer.** $k=4$ | $A=3$ | $Q(r)=3r^{4}$"
+  },
+  {
+    "id": "math-8-85",
+    "case_id": "MATH 8.85",
+    "title": "Barrier Distance for a Radiography Source",
+    "context": "Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to $\\frac{1}{16}$, and a survey meter $3$ metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the distance from the source halves the dose rate.",
+      "An extra metre cuts more dose at $3$ metres than at $6$ metres.",
+      "The distance needed for a given dose rate is itself a power of that dose rate.",
+      "At $6$ metres the dose rate is already under $25$ microsieverts per hour.",
+      "The barrier sits farther than $15$ metres from the source."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview recovered $r=-2$. Doubling the distance multiplies the dose rate by\n\n$$2^{-2}=\\frac{1}{4}$$\n\nThe claim is a factor of $\\frac{1}{2}$, which would have needed $r=-1$.\n\nDoubling the distance quarters the dose rate, not halves it, so the statement is False.",
+      "**B.** → True\n\nThe overview recovered $H(d)=720d^{-2}$. Differentiating gives\n\n$$H'(d)=-1440d^{-3}$$\n\nAt $3$ metres:\n\n$$H'(3)=-\\frac{1440}{27}=-\\frac{160}{3}$$\n\nAt $6$ metres:\n\n$$H'(6)=-\\frac{1440}{216}=-\\frac{20}{3}$$\n\nAn extra metre cuts more dose where the derivative is more negative. We have $-\\frac{160}{3}<-\\frac{20}{3}$, so the statement is True.",
+      "**C.** → True\n\nA nonzero power inverts to another power. The overview recovered $H=720d^{-2}$, so isolating distance leaves\n\n$$d=720^{\\frac{1}{2}}H^{-\\frac{1}{2}}$$\n\nDistance needed for a given dose rate is still a monomial in $H$.\n\nThe inverse is a power of the dose rate, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $H(d)=720d^{-2}$. At $6$ metres:\n\n$$H(6)=\\frac{720}{36}=20$$\n\nThe claim is that this already sits under $25$. We have $20<25$, so the statement is True.",
+      "**E.** → False\n\nThe barrier is the inversion $H(d)=5$. The overview recovered $H=720d^{-2}$, so\n\n$$\\frac{720}{d^{2}}=5$$\n\n$$d^{2}=144$$\n\n$$d=12$$\n\nThe claim is a barrier farther than $15$ metres. We have $12<15$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 85,
+    "solution_overview": "Dose rate follows $H(d)=Ad^{r}$ microsieverts per hour for distance $d>0$ metres. Quadrupling any distance cuts the dose rate to $\\frac{1}{16}$, and a survey at $3$ metres reads $80$ microsieverts per hour. The barrier sits where the dose rate has fallen to $5$ microsieverts per hour.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the source in metres and $H$ = dose rate. The quadrupling record isolates the exponent. The survey reading then pins the coefficient.\n\n**1. Translate: the quadrupling rule.**\n\n$$4^{r}=\\frac{1}{16} \\tag{1}$$\n\n**2. Translate: the survey reading.**\n\n$$A\\cdot 3^{r}=80 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$\\frac{1}{16}=4^{-2}$$\n\n$$r=-2$$\n\nThen $(2)$ is $A\\cdot 3^{-2}=80$:\n\n$$\\frac{A}{9}=80$$\n\n$$A=720$$\n\nThe recovered law is $H(d)=720d^{-2}$.\n\n**Answer.** $r=-2$ | $A=720$ | $H(d)=720d^{-2}$"
+  },
+  {
+    "id": "math-8-86",
+    "case_id": "MATH 8.86",
+    "title": "A Dye Plume Spreading Across a Shallow Lake",
+    "context": "A tracer dye released into a shallow lake spreads as a disc whose radius follows $r(t)=A t^{\\frac{2}{3}}$ metres, with $t>0$ measured in hours since release. The survey note omits the coefficient: it records only that the radius grew by exactly $45$ metres between hour $1$ and hour $8$. The stained area is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The stained area is itself a power of elapsed time.",
+      "The stained area grows faster than elapsed time.",
+      "Doubling the elapsed time doubles the stained area.",
+      "At hour $8$ the plume radius is already more than $50$ metres.",
+      "The plume radius reaches $240$ metres in under $50$ hours."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $S(t)=225\\pi t^{\\frac{4}{3}}$. That is a monomial in elapsed time, coefficient $225\\pi$ and exponent $\\frac{4}{3}$.\n\nThe stained area is a power of elapsed time, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered area exponent $\\frac{4}{3}$. Area outruns elapsed time when that exponent exceeds $1$.\n\n$$\\frac{4}{3}>1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $\\frac{4}{3}$, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered area exponent $\\frac{4}{3}$. Doubling elapsed time multiplies stained area by\n\n$$2^{\\frac{4}{3}}$$\n\nwhich is not $2$. The claim would have needed leftover exponent $1$ on $S$.\n\nDoubling time does not double the stained area, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $r(t)=15t^{\\frac{2}{3}}$. At hour $8$:\n\n$$r(8)=15\\cdot 4=60$$\n\nThe claim is that this already sits above $50$. We have $60>50$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $r(t)=15t^{\\frac{2}{3}}$. A radius of $240$ metres inverts by\n\n$$15t^{\\frac{2}{3}}=240$$\n\n$$t^{\\frac{2}{3}}=16$$\n\n$$t=64$$\n\nThe claim is that this happens in under $50$ hours. We have $64>50$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 86,
+    "solution_overview": "The plume radius follows $r(t)=At^{\\frac{2}{3}}$ metres for elapsed time $t>0$ hours. The radius grew by $45$ metres between hour $1$ and hour $8$. The stained area is the disc $S=\\pi r^{2}$.\n\n**Part 1: Building the model.**\n\nLet $t$ = hours since release and $r$ = plume radius in metres. The exponent is given, so the recorded growth is a difference of two shape factors and recovers $A$.\n\n**1. Translate: the recorded growth.**\n\n$$A\\bigl(8^{\\frac{2}{3}}-1^{\\frac{2}{3}}\\bigr)=45 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$8^{\\frac{2}{3}}=4$$\n\nso $(1)$ is $A(4-1)=45$ and $A=15$.\n\nThe recovered radius is $r(t)=15t^{\\frac{2}{3}}$. Squaring and multiplying by $\\pi$ raises the time exponent to $\\frac{4}{3}$:\n\n$$S(t)=225\\pi t^{\\frac{4}{3}}$$\n\n**Answer.** $A=15$ | $r(t)=15t^{\\frac{2}{3}}$ | $S(t)=225\\pi t^{\\frac{4}{3}}$"
+  },
+  {
+    "id": "math-8-87",
+    "case_id": "MATH 8.87",
+    "title": "A Weir Rating Curve Rewritten in New Units",
+    "context": "Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The head needed for a given discharge is itself a power of that discharge.",
+      "Discharge grows faster than head.",
+      "Doubling the head doubles the discharge.",
+      "A head of $1$ metre still discharges under $20$ cubic metres per second.",
+      "A head of $4$ metres still discharges under $100$ cubic metres per second."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA nonzero power inverts to another power. The overview recovered $Q=16h^{\\frac{3}{2}}$, so isolating head raises both sides to the reciprocal $\\frac{2}{3}$ and leaves\n\n$$h=\\left(\\frac{Q}{16}\\right)^{\\frac{2}{3}}$$\n\nHead needed for a given discharge is still a monomial in $Q$.\n\nThe inverse is a power of discharge, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered discharge exponent $\\frac{3}{2}$. Discharge outruns head when that exponent exceeds $1$.\n\n$$\\frac{3}{2}>1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $\\frac{3}{2}$, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered exponent $\\frac{3}{2}$. Doubling the head multiplies discharge by\n\n$$2^{\\frac{3}{2}}=2\\sqrt{2}$$\n\nwhich is not $2$. The claim would have needed leftover exponent $1$.\n\nDoubling the head does not double the discharge, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $Q(h)=16h^{\\frac{3}{2}}$. At a head of $1$ metre:\n\n$$Q(1)=16\\cdot 1=16$$\n\nThe claim is that this still sits under $20$. We have $16<20$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $Q(h)=16h^{\\frac{3}{2}}$. At a head of $4$ metres:\n\n$$Q(4)=16\\cdot 4^{\\frac{3}{2}}=16\\cdot 8=128$$\n\nThe claim is that this still sits under $100$. We have $128>100$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 87,
+    "solution_overview": "Discharge over the weir follows $Q(h)=Ah^{\\frac{3}{2}}$ cubic metres per second for head $h>0$ metres. A gauging at head $0.25$ metres recorded $2$ cubic metres per second.\n\n**Part 1: Building the model.**\n\nLet $h$ = head in metres and $Q$ = discharge. The exponent is given, so the gauging pair pins the coefficient.\n\n**1. Translate: the gauging.**\n\n$$A\\cdot(0.25)^{\\frac{3}{2}}=2 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$(0.25)^{\\frac{3}{2}}=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}$$\n\nso $(1)$ is $\\frac{A}{8}=2$ and $A=16$.\n\nThe recovered law is $Q(h)=16h^{\\frac{3}{2}}$.\n\n**Answer.** $A=16$ | $Q(h)=16h^{\\frac{3}{2}}$"
+  },
+  {
+    "id": "math-8-88",
+    "case_id": "MATH 8.88",
+    "title": "A Grain Dryer Calibrated From Two Recorded Ratios",
+    "context": "Fuel use in a grain dryer follows $F(x)=A x^{r}$ litres per batch, where $x>0$ is the batch mass in tonnes. Neither constant is published. Doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds exactly $96$ litres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Fuel use grows faster than batch mass.",
+      "Doubling the batch mass doubles fuel use.",
+      "Fuel use per tonne falls as the batch grows.",
+      "A $10$-tonne batch already uses more than $250$ litres.",
+      "A $6$-tonne batch still uses under $100$ litres."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered fuel exponent $2$. Fuel use outruns batch mass when that exponent exceeds $1$.\n\n$$2>1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $2$, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $r=2$. Doubling the batch mass multiplies fuel use by\n\n$$2^{2}=4$$\n\nThe claim is a factor of $2$, which would have needed $r=1$. A $300\\%$ rise is already a fourfold, not a twofold.\n\nDoubling the batch multiplies fuel by $4$, not by $2$, so the statement is False.",
+      "**C.** → False\n\nFuel use per tonne is the recovered law divided by mass:\n\n$$\\frac{F(x)}{x}=3x$$\n\nThe leftover exponent $1$ is positive, so fuel per tonne rises as the batch grows, rather than falling.\n\nFuel use per tonne climbs, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $F(x)=3x^{2}$. At $10$ tonnes:\n\n$$F(10)=3\\cdot 100=300$$\n\nThe claim is that this already sits above $250$. We have $300>250$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $F(x)=3x^{2}$. At $6$ tonnes:\n\n$$F(6)=3\\cdot 36=108$$\n\nThe claim is that this still sits under $100$. We have $108>100$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 88,
+    "solution_overview": "Fuel use follows $F(x)=Ax^{r}$ litres per batch for batch mass $x>0$ tonnes. Doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds $96$ litres.\n\n**Part 1: Building the model.**\n\nLet $x$ = batch mass in tonnes and $F$ = fuel use in litres. A $300\\%$ rise is a factor of $4$, so the doubling record isolates the exponent. The logged increase is then a difference of two levels, which pins the coefficient.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4 \\tag{1}$$\n\n**2. Translate: the logged increase.**\n\n$$A\\bigl(6^{r}-2^{r}\\bigr)=96 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$4=2^{2}$$\n\n$$r=2$$\n\nThen $(2)$ becomes\n\n$$A(36-4)=96$$\n\n$$32A=96$$\n\n$$A=3$$\n\nThe recovered law is $F(x)=3x^{2}$.\n\n**Answer.** $r=2$ | $A=3$ | $F(x)=3x^{2}$"
+  },
+  {
+    "id": "math-8-89",
+    "case_id": "MATH 8.89",
+    "title": "Kiln Flue Mass Flow into a Particulate Index",
+    "context": "A kiln's flue-gas mass flow follows $m(t)=A t^{\\frac{1}{2}}$ tonnes per hour for throttle setting $t>0$, and the particulate load index is then $P(m)=\\frac{m^{4}}{16}$. A calibration at $t=9$ recorded $m=6$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The composed particulate index is a power of the throttle setting.",
+      "The composed particulate index grows in proportion to the throttle setting.",
+      "Mass flow per unit of throttle falls as the throttle rises.",
+      "At throttle $25$ the mass flow is already above $8$ tonnes per hour.",
+      "An index of $81$ still requires a throttle setting above $20$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered the composition $P\\circ m=t^{2}$. That is a monomial in the throttle setting, coefficient $1$ and exponent $2$.\n\nThe composed index is a power of the throttle, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered composed exponent $2$. Proportionality to the throttle would have needed leftover exponent $1$.\n\n$$2\\neq 1$$\n\nThe composed index is $t^{2}$, a square, not a linear rule.\n\nThe leftover exponent is $2$, so the statement is False.",
+      "**C.** → True\n\nMass flow per unit of throttle is the recovered law divided by $t$:\n\n$$\\frac{m(t)}{t}=2t^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so that ratio falls as the throttle rises.\n\nMass flow per unit throttle falls, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $m(t)=2t^{\\frac{1}{2}}$. At throttle $25$:\n\n$$m(25)=2\\cdot 5=10$$\n\nThe claim is that this already sits above $8$. We have $10>8$, so the statement is True.",
+      "**E.** → False\n\nAn index of $81$ inverts on the recovered composition $P=t^{2}$:\n\n$$t^{2}=81$$\n\n$$t=9$$\n\nThe claim is a throttle setting above $20$. We have $9<20$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 89,
+    "solution_overview": "Flue-gas mass flow follows $m(t)=At^{\\frac{1}{2}}$ tonnes per hour for throttle $t>0$, and the particulate index is $P(m)=\\frac{m^{4}}{16}$. A calibration at $t=9$ recorded $m=6$.\n\n**Part 1: Building the model.**\n\nLet $t$ = throttle setting and $m$ = mass flow. The exponent is given, so the calibration pair pins $A$. Composition then multiplies the two exponents.\n\n**1. Translate: the calibration.**\n\n$$A\\cdot 9^{\\frac{1}{2}}=6 \\tag{1}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $3A=6$ and $A=2$. The recovered mass flow is $m(t)=2t^{\\frac{1}{2}}$. Substituting into the index:\n\n$$P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}=\\frac{16t^{2}}{16}=t^{2}$$\n\n**Answer.** $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$"
+  },
+  {
+    "id": "math-8-90",
+    "case_id": "MATH 8.90",
+    "title": "Two Shuttle Fare Timers Under a Wait Cap",
+    "context": "Two municipal shuttle apps quote wait time for a trip of distance $d>0$ kilometres. App L follows $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q follows $Q(d)=k d$ minutes, with both coefficients unpublished. A logged $25$ km trip on App L quoted $20$ minutes, and a logged $100$ km trip on App Q quoted $20$ minutes. A service-level agreement caps wait at $20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two apps quote the same wait at two different positive distances.",
+      "Once App L quotes a shorter wait than App Q, App Q never catches up.",
+      "App L's wait per kilometre falls as the trip gets longer.",
+      "Under the $20$-minute cap, App L can serve trips longer than $30$ kilometres.",
+      "At $400$ kilometres both apps already quote more than $70$ minutes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe two apps quote the same wait when $L(d)=Q(d)$. The overview recovered $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$, so\n\n$$4d^{\\frac{1}{2}}=\\frac{1}{5}d$$\n\n$$d-20d^{\\frac{1}{2}}=0$$\n\n$$d^{\\frac{1}{2}}\\bigl(d^{\\frac{1}{2}}-20\\bigr)=0$$\n\nThe roots are $d=0$ and $d=400$. On $d>0$ they meet only once.\n\nThey do not quote the same wait at two different positive distances, so the statement is False.",
+      "**B.** → True\n\nThe overview recovered $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. Their ratio is\n\n$$\\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}$$\n\nwhich is strictly increasing for $d>0$. Once the ratio passes $1$, it cannot return to $1$, so App Q cannot catch App L again.\n\nAfter App L is shorter, App Q stays longer, so the statement is True.",
+      "**C.** → True\n\nApp L's wait per kilometre is the recovered law divided by distance:\n\n$$\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so that ratio falls as the trip gets longer.\n\nWait per kilometre on App L falls, so the statement is True.",
+      "**D.** → False\n\nUnder the $20$-minute cap, App L can serve distances with $L(d)\\le 20$. The overview recovered $L(d)=4d^{\\frac{1}{2}}$, so\n\n$$4d^{\\frac{1}{2}}=20$$\n\n$$d=25$$\n\nThe longest legal App L trip is $25$ km, which is not longer than $30$ km.\n\nApp L cannot serve trips longer than $30$ kilometres under the cap, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. At $400$ kilometres:\n\n$$L(400)=4\\cdot 20=80$$\n\n$$Q(400)=\\frac{400}{5}=80$$\n\nThe claim is that both already sit above $70$. We have $80>70$ on each app, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 90,
+    "solution_overview": "App L quotes $L(d)=ad^{\\frac{1}{2}}$ minutes and App Q quotes $Q(d)=kd$ minutes, for trip distance $d>0$ kilometres. A $25$ km trip on App L quoted $20$ minutes, and a $100$ km trip on App Q quoted $20$ minutes. Wait is capped at $20$ minutes.\n\n**Part 1: Building the model.**\n\nLet $d$ = trip distance in kilometres. Each log pins one coefficient, because each exponent is given.\n\n**1. Translate: App L.**\n\n$$a\\cdot 25^{\\frac{1}{2}}=20 \\tag{1}$$\n\n**2. Translate: App Q.**\n\n$$k\\cdot 100=20 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $5a=20$ and $a=4$. From $(2)$, $k=\\frac{1}{5}$.\n\nThe recovered waits are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$.\n\n**Answer.** $a=4$ | $k=\\frac{1}{5}$ | $L(d)=4d^{\\frac{1}{2}}$ | $Q(d)=\\frac{1}{5}d$"
+  },
+  {
+    "id": "math-8-91",
+    "case_id": "MATH 8.91",
+    "title": "Wetland Evaporation Across Three Humidity Readings",
+    "context": "A field team models wetland evaporation in millimetres per day by $E(h)=A h^{r}$ against humidity deficit $h>0$, with both constants unknown. Deficits of $1$ and $4$ recorded $20$ and $40$ millimetres per day, and a third reading at deficit $9$ recorded $60$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so evaporation grows more slowly than the humidity deficit.",
+      "Doubling the humidity deficit doubles evaporation.",
+      "To double the forty-millimetre reading she must more than double the humidity deficit.",
+      "An extra unit of deficit adds more millimetres after a deficit of four than after a deficit of one.",
+      "After a humidity deficit of $25$, evaporation is already more than $90$ millimetres per day."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $r=\\frac{1}{2}$. Evaporation lags the humidity deficit when that exponent sits below $1$.\n\n$$\\frac{1}{2}<1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $\\frac{1}{2}$, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $r=\\frac{1}{2}$. Doubling the humidity deficit multiplies evaporation by\n\n$$2^{\\frac{1}{2}}=\\sqrt{2}$$\n\nwhich is not $2$. The claim would have needed leftover exponent $1$.\n\nDoubling the deficit does not double evaporation, so the statement is False.",
+      "**C.** → True\n\nThe forty-millimetre reading is $E(4)=40$. Doubling it means $E(h)=80$. The overview recovered $E(h)=20h^{\\frac{1}{2}}$, so\n\n$$20h^{\\frac{1}{2}}=80$$\n\n$$h=16$$\n\nTwice the starting deficit $4$ would have been $8$. The required $16$ sits past $8$.\n\nShe must more than double the humidity deficit, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $E(h)=20h^{\\frac{1}{2}}$. Differentiating gives\n\n$$E'(h)=10h^{-\\frac{1}{2}}$$\n\nAfter a deficit of $1$:\n\n$$E'(1)=10$$\n\nAfter a deficit of $4$:\n\n$$E'(4)=5$$\n\nThe claim needs $E'(4)>E'(1)$. We have $5<10$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $E(h)=20h^{\\frac{1}{2}}$. After a deficit of $25$:\n\n$$E(25)=20\\cdot 5=100$$\n\nThe claim is that this already sits above $90$. We have $100>90$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 91,
+    "solution_overview": "Wetland evaporation follows $E(h)=Ah^{r}$ millimetres per day against humidity deficit $h>0$. Deficits of $1$ and $4$ recorded $20$ and $40$ millimetres per day, and a third reading at deficit $9$ recorded $60$.\n\n**Part 1: Building the model.**\n\nLet $h$ = humidity deficit and $E$ = evaporation. Two unknowns need the first two readings. Their ratio cancels $A$ and isolates $r$; the unit deficit then pins $A$. The third reading is a check.\n\n**1. Translate: the ratio.**\n\n$$\\frac{40}{20}=4^{r} \\tag{1}$$\n\n**2. Translate: the unit deficit.**\n\n$$A\\cdot 1^{r}=20 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $2=4^{r}=\\bigl(2^{2}\\bigr)^{r}=2^{2r}$, so $2r=1$ and $r=\\frac{1}{2}$. From $(2)$, $A=20$.\n\nThe recovered law is $E(h)=20h^{\\frac{1}{2}}$. The third reading matches: $E(9)=20\\cdot 3=60$.\n\n**Answer.** $A=20$ | $r=\\frac{1}{2}$ | $E(h)=20h^{\\frac{1}{2}}$"
+  },
+  {
+    "id": "math-8-92",
+    "case_id": "MATH 8.92",
+    "title": "Shade-Tree Cooling Benefit Against Upkeep Cost",
+    "context": "A city parks office models annual cooling benefit by $B(n)=A n^{\\frac{1}{2}}$ thousand euros and annual upkeep by $C(n)=k n$ thousand euros, where $n>0$ is the number of thousand trees planted. Raising the planting from $4$ thousand trees to $9$ thousand increased cooling benefit by $12$ thousand euros. At $9$ thousand trees, upkeep was $18$ thousand euros. Net benefit is $N(n)=B(n)-C(n)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because upkeep is linear, net benefit is not a power function of the planting.",
+      "At nine thousand trees, net benefit is already more than $15$ thousand euros.",
+      "Once upkeep overtakes cooling benefit, planting still more trees restores a positive net.",
+      "An extra thousand trees add more to the net at four thousand trees than at nine thousand.",
+      "At four thousand trees, net benefit is already more than $20$ thousand euros."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. That is a difference of two distinct powers of $n$, not a single monomial $cn^{p}$.\n\nUpkeep is linear while benefit is a square root, so the net is not a power function of the planting.\n\nThe net is not a power of $n$, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. At nine thousand trees:\n\n$$N(9)=12\\cdot 3-18=18$$\n\nThe claim is that this already sits above $15$. We have $18>15$, so the statement is True.",
+      "**C.** → False\n\nUpkeep overtakes benefit when $12n^{\\frac{1}{2}}=2n$, so $n=36$. Differentiating the recovered net gives\n\n$$N'(n)=6n^{-\\frac{1}{2}}-2$$\n\nwhich is negative for every $n>9$. Past the crossing at $n=36$, the net is already negative and still falling, so planting more trees cannot restore a positive net.\n\nThe net stays negative after upkeep overtakes benefit, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. Differentiating gives\n\n$$N'(n)=6n^{-\\frac{1}{2}}-2$$\n\nAt four thousand trees:\n\n$$N'(4)=3-2=1$$\n\nAt nine thousand trees:\n\n$$N'(9)=2-2=0$$\n\nThe claim needs $N'(4)>N'(9)$. We have $1>0$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. At four thousand trees:\n\n$$N(4)=12\\cdot 2-8=16$$\n\nThe claim is that this already sits above $20$. We have $16<20$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 92,
+    "solution_overview": "Cooling benefit follows $B(n)=An^{\\frac{1}{2}}$ thousand euros and upkeep follows $C(n)=kn$ thousand euros, for $n>0$ thousand trees. Raising the planting from $4$ to $9$ thousand increased benefit by $12$ thousand euros, and at $9$ thousand trees upkeep was $18$ thousand euros. Net benefit is $N=B-C$.\n\n**Part 1: Building the model.**\n\nLet $n$ = thousands of trees. The benefit difference isolates $A$. The upkeep level isolates $k$.\n\n**1. Translate: the benefit gap.**\n\n$$A\\bigl(9^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=12 \\tag{1}$$\n\n**2. Translate: the upkeep level.**\n\n$$9k=18 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $A(3-2)=12$ and $A=12$. From $(2)$, $k=2$.\n\nThe recovered schedules are $B(n)=12n^{\\frac{1}{2}}$ and $C(n)=2n$, so\n\n$$N(n)=12n^{\\frac{1}{2}}-2n$$\n\n**Answer.** $A=12$ | $k=2$ | $N(n)=12n^{\\frac{1}{2}}-2n$"
+  },
+  {
+    "id": "math-8-93",
+    "case_id": "MATH 8.93",
+    "title": "Trail-Map Kiosk Demand Inverted from Price",
+    "context": "Weekly pamphlet demand at a trail-map kiosk follows $q(p)=A p^{-2}$ packs per week, where $p>0$ is the price in euros. At a price of $5$ euros the kiosk sold $80$ packs. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The price needed for a given weekly demand is itself a power function of that demand.",
+      "Doubling the five-euro price halves weekly demand.",
+      "At $10$ euros the kiosk already sells under $25$ packs a week.",
+      "Weekly revenue falls as the price rises.",
+      "A target of $125$ packs a week needs a price above $5$ euros."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA nonzero power inverts to another power. The overview recovered $q=2000p^{-2}$, so isolating price leaves\n\n$$p=2000^{\\frac{1}{2}}q^{-\\frac{1}{2}}$$\n\nPrice needed for a given weekly demand is still a monomial in $q$.\n\nThe inverse is a power function of demand, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered exponent $-2$. Doubling the five-euro price multiplies demand by\n\n$$2^{-2}=\\frac{1}{4}$$\n\nThe claim is a factor of $\\frac{1}{2}$, which would have needed exponent $-1$.\n\nDoubling the price quarters demand, not halves it, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $q(p)=2000p^{-2}$. At $10$ euros:\n\n$$q(10)=\\frac{2000}{100}=20$$\n\nThe claim is that this already sits under $25$. We have $20<25$, so the statement is True.",
+      "**D.** → True\n\nWeekly revenue is $R=pq$. Substituting the recovered demand gives\n\n$$R(p)=2000p^{-1}$$\n\nThe leftover exponent is negative, so revenue falls as the price rises.\n\nRevenue is $\\frac{2000}{p}$, so the statement is True.",
+      "**E.** → False\n\nA target of $125$ packs inverts the recovered law:\n\n$$2000p^{-2}=125$$\n\n$$p^{2}=\\frac{2000}{125}=16$$\n\n$$p=4$$\n\nThe claim is a price above $5$ euros. We have $4<5$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 93,
+    "solution_overview": "Weekly pamphlet demand follows $q(p)=Ap^{-2}$ packs per week for price $p>0$ euros. At $5$ euros the kiosk sold $80$ packs.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros and $q$ = packs per week. The exponent is given, so the recorded pair pins $A$.\n\n**1. Translate: the recorded pair.**\n\n$$A\\cdot 5^{-2}=80 \\tag{1}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $\\frac{A}{25}=80$ and $A=2000$.\n\nThe recovered law is $q(p)=2000p^{-2}$.\n\n**Answer.** $A=2000$ | $q(p)=2000p^{-2}$"
+  },
+  {
+    "id": "math-8-94",
+    "case_id": "MATH 8.94",
+    "title": "Bike-Share Passes Under a Subsidy Price Index",
+    "context": "Weekly bike-share day-pass sales follow $q(p)=A p^{\\frac{-3}{2}}$ when the pass price is $p>0$ euros. A pilot at $16$ euros sold $50$ passes. Policy indexes the pass by $p(s)=B s^{\\frac{2}{3}}$ for a positive subsidy index $s$, and at subsidy index $8$ the posted price is $16$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Composed demand is a power function of the subsidy index.",
+      "Tripling the subsidy index triples composed demand.",
+      "At subsidy index $8$, composed demand is already more than $40$ passes.",
+      "Raising the subsidy index raises composed demand.",
+      "At subsidy index $27$, composed demand stays under $16$ passes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered the composition $q\\circ p=\\frac{400}{s}$. That is a monomial in the subsidy index, coefficient $400$ and exponent $-1$.\n\nComposed demand is a power function of the subsidy index, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered composed exponent $-1$. Tripling the subsidy index multiplies composed demand by\n\n$$3^{-1}=\\frac{1}{3}$$\n\nThe claim is a factor of $3$, which would have needed leftover exponent $1$.\n\nTripling $s$ divides demand by $3$, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $q\\circ p=\\frac{400}{s}$. At subsidy index $8$:\n\n$$\\frac{400}{8}=50$$\n\nThe claim is that this already sits above $40$. We have $50>40$, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $q\\circ p=\\frac{400}{s}$. The leftover exponent $-1$ is negative, so raising the subsidy index lowers composed demand rather than raising it.\n\nComposed demand falls in $s$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $q\\circ p=\\frac{400}{s}$. At subsidy index $27$:\n\n$$\\frac{400}{27}\\approx 14.81$$\n\nThe claim is that this stays under $16$. We have $14.81<16$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 94,
+    "solution_overview": "Day-pass sales follow $q(p)=Ap^{-\\frac{3}{2}}$ for price $p>0$ euros, and a pilot at $16$ euros sold $50$ passes. Policy indexes the price by $p(s)=Bs^{\\frac{2}{3}}$, and at subsidy index $8$ the posted price is $16$ euros.\n\n**Part 1: Building the model.**\n\nLet $p$ = pass price, $q$ = weekly passes, and $s$ = subsidy index. The pilot pins $A$. The indexed price at $s=8$ pins $B$. Composition multiplies the exponents.\n\n**1. Translate: the pilot.**\n\n$$A\\cdot 16^{-\\frac{3}{2}}=50 \\tag{1}$$\n\n**2. Translate: the policy map.**\n\n$$B\\cdot 8^{\\frac{2}{3}}=16 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$16^{\\frac{3}{2}}=64$$\n\nso $(1)$ is $\\frac{A}{64}=50$ and $A=3200$. Next,\n\n$$8^{\\frac{2}{3}}=4$$\n\nso $(2)$ is $4B=16$ and $B=4$.\n\nThe recovered maps are $q(p)=3200p^{-\\frac{3}{2}}$ and $p(s)=4s^{\\frac{2}{3}}$. Composing:\n\n$$q\\bigl(p(s)\\bigr)=3200\\bigl(4s^{\\frac{2}{3}}\\bigr)^{-\\frac{3}{2}}$$\n\n$$=\\frac{400}{s}$$\n\n**Answer.** $A=3200$ | $B=4$ | $q\\circ p=\\frac{400}{s}$"
+  },
+  {
+    "id": "math-8-95",
+    "case_id": "MATH 8.95",
+    "title": "Overnight Loaves Split Across Two Oven Lines",
+    "context": "A regional bakery must bake $30$ thousand loaves overnight and can split them between two oven lines. Line 1's energy-cost index follows $C_{1}(q)=a q^{2}$ and line 2's follows $C_{2}(q)=b q^{2}$, where $q$ is that line's own output in thousands of loaves. A $10$-thousand-loaf run on line 1 scored $100$, and an $8$-thousand-loaf run on line 2 scored $16$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Concentrating the whole order on the cheaper line is the cheapest plan.",
+      "Sending all thirty thousand loaves to line 2 scores more than $200$.",
+      "The cheaper line should take the larger share of the overnight order.",
+      "Line 1's average cost index falls as its own output rises.",
+      "The six-and-twenty-four split scores under $200$."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe cheaper line is line 2, because $b=\\frac{1}{4}<a=1$. The overview recovered the cheaper-line corner at $225$ and the equal-marginal split at $180$.\n\nBecause $180<225$, the interior split beats concentrating on the cheaper line.\n\nConcentrating on the cheaper line is not the cheapest plan, so the statement is False.",
+      "**B.** → True\n\nThe overview recovered that sending all thirty thousand loaves to line 2 scores $225$. The claim is that this sits above $200$. We have $225>200$, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $a=1>b=\\frac{1}{4}$ and the equal-marginal split $q_{2}=4q_{1}$, hence $q_{2}=24$ and $q_{1}=6$. Line 2 is the cheaper line and takes the larger share.\n\nThe cheaper line takes $24$ thousand loaves against $6$ on line 1, so the statement is True.",
+      "**D.** → False\n\nLine 1's average cost index is the recovered $C_{1}(q)=q^{2}$ divided by output:\n\n$$\\frac{C_{1}(q)}{q}=q$$\n\nThe leftover exponent $1$ is positive, so that average rises as line 1's own output rises, rather than falling.\n\nAverage cost on line 1 climbs, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered that the six-and-twenty-four split scores $180$. The claim is that this sits under $200$. We have $180<200$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 95,
+    "solution_overview": "Thirty thousand loaves are split between $C_{1}(q)=aq^{2}$ and $C_{2}(q)=bq^{2}$. A run of $10$ thousand loaves on line 1 scored $100$, and a run of $8$ thousand on line 2 scored $16$.\n\n**Part 1: Building the model.**\n\nLet $q_{1}$ and $q_{2}$ be the two outputs in thousands of loaves, with $q_{1}+q_{2}=30$. Each logged run pins one coefficient. The cheapest interior split equalizes the two marginal costs.\n\n**1. Translate: line 1.**\n\n$$a\\cdot 10^{2}=100 \\tag{1}$$\n\n**2. Translate: line 2.**\n\n$$b\\cdot 8^{2}=16 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $100a=100$ and $a=1$. From $(2)$, $64b=16$ and $b=\\frac{1}{4}$.\n\nThe recovered costs are $C_{1}(q)=q^{2}$ and $C_{2}(q)=\\frac{q^{2}}{4}$. Setting the derivatives $2q_{1}$ and $\\frac{1}{2}q_{2}$ equal gives $q_{2}=4q_{1}$. With $q_{1}+q_{2}=30$,\n\n$$q_{1}=6, \\qquad q_{2}=24$$\n\nThe cheaper-line corner and the interior split then cost\n\n$$C_{2}(30)=225, \\qquad C_{1}(6)+C_{2}(24)=180$$\n\n**Answer.** $a=1$ | $b=\\frac{1}{4}$ | split $(6,24)$ | corner $225$ | split cost $180$"
+  },
+  {
+    "id": "math-8-96",
+    "case_id": "MATH 8.96",
+    "title": "Museum Tickets: Point Elasticity Versus a Finite Rise",
+    "context": "Evening museum admissions follow $q(p)=A p^{-2}$ tickets when the price is $p>0$ euros. At $10$ euros the desk sold $40$ tickets. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Demand is equally elastic at every price.",
+      "Raising the price from $10$ to $12$ euros cuts demand by more than $10$ tickets.",
+      "For a $10\\%$ price rise, the constant-elasticity shortcut overstates the exact drop in demand.",
+      "Weekly revenue is maximized by raising the price without bound.",
+      "At $5$ euros the desk already sells more than $150$ tickets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nFor a power $q=Ap^{r}$, point elasticity equals the exponent at every price. The overview recovered $r=-2$, so\n\n$$\\varepsilon=-2$$\n\nat every $p>0$. Demand is equally elastic at every price.\n\nElasticity is constantly $-2$, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $q(p)=4000p^{-2}$. Raising the price from $10$ to $12$ euros takes demand from $40$ to\n\n$$q(12)=\\frac{4000}{144}=\\frac{250}{9}$$\n\nThe drop is\n\n$$40-\\frac{250}{9}=\\frac{110}{9}\\approx 12.22$$\n\nThe claim is a cut of more than $10$ tickets. We have $12.22>10$, so the statement is True.",
+      "**C.** → True\n\nThe constant-elasticity shortcut for a $10\\%$ price rise is\n\n$$\\varepsilon\\cdot 0.10=-0.20$$\n\nThe exact relative drop uses the recovered $q\\propto p^{-2}$ with price factor $1.1$:\n\n$$1.1^{-2}-1=\\frac{100}{121}-1=-\\frac{21}{121}\\approx -0.1736$$\n\nThe shortcut $20\\%$ exceeds the exact $17.36\\%$, so it overstates the drop.\n\nThe shortcut overstates the exact drop, so the statement is True.",
+      "**D.** → False\n\nWeekly revenue is $R=pq$. Substituting the recovered demand gives\n\n$$R(p)=4000p^{-1}$$\n\nThe leftover exponent is negative, so raising the price lowers revenue rather than maximizing it.\n\nRevenue is $\\frac{4000}{p}$, which falls as $p$ grows, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $q(p)=4000p^{-2}$. At $5$ euros:\n\n$$q(5)=\\frac{4000}{25}=160$$\n\nThe claim is that this already sits above $150$. We have $160>150$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 96,
+    "solution_overview": "Evening admissions follow $q(p)=Ap^{-2}$ tickets for price $p>0$ euros. At $10$ euros the desk sold $40$ tickets.\n\n**Part 1: Building the model.**\n\nLet $p$ = admission price and $q$ = tickets. The exponent is given, so the desk record pins $A$.\n\n**1. Translate: the desk record.**\n\n$$A\\cdot 10^{-2}=40 \\tag{1}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $\\frac{A}{100}=40$ and $A=4000$.\n\nThe recovered law is $q(p)=4000p^{-2}$.\n\n**Answer.** $A=4000$ | $q(p)=4000p^{-2}$"
+  },
+  {
+    "id": "math-8-97",
+    "case_id": "MATH 8.97",
+    "title": "Annealing Lehr Throughput Under a Mis-Scaled Coefficient",
+    "context": "A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting $4$ delivered $64$ trays an hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is larger than one, so throughput grows faster than the belt setting.",
+      "An extra unit of belt setting adds more trays after setting nine than after setting four.",
+      "At belt setting $9$, throughput is already more than $200$ trays per hour.",
+      "If the coefficient were $25\\%$ larger, the scale factor $\\frac{T(2e)}{T(e)}$ would itself become $25\\%$ larger.",
+      "If the coefficient were $25\\%$ larger, throughput at belt setting $9$ would already exceed $250$ trays per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered exponent $\\frac{3}{2}$. Throughput outruns the belt setting when that exponent exceeds $1$.\n\n$$\\frac{3}{2}>1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is $\\frac{3}{2}$, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $T(e)=8e^{\\frac{3}{2}}$. Differentiating gives\n\n$$T'(e)=12e^{\\frac{1}{2}}$$\n\nAfter setting four:\n\n$$T'(4)=12\\cdot 2=24$$\n\nAfter setting nine:\n\n$$T'(9)=12\\cdot 3=36$$\n\nThe claim needs $T'(9)>T'(4)$. We have $36>24$, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $T(e)=8e^{\\frac{3}{2}}$. At belt setting $9$:\n\n$$T(9)=8\\cdot 27=216$$\n\nThe claim is that this already sits above $200$. We have $216>200$, so the statement is True.",
+      "**D.** → False\n\nThe scale factor of a power law cancels the coefficient:\n\n$$\\frac{T(2e)}{T(e)}=2^{\\frac{3}{2}}$$\n\nThat factor does not depend on $A$. Raising the coefficient by $25\\%$ leaves $2^{\\frac{3}{2}}$ unchanged, so the scale factor itself does not become $25\\%$ larger.\n\nThe doubling factor is independent of $A$, so the statement is False.",
+      "**E.** → True\n\nIf the coefficient were $25\\%$ larger, the recovered $A=8$ would become $10$. At belt setting $9$:\n\n$$T(9)=10\\cdot 27=270$$\n\nThe claim is that this already exceeds $250$. We have $270>250$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 97,
+    "solution_overview": "Lehr throughput follows $T(e)=Ae^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting $4$ delivered $64$ trays an hour.\n\n**Part 1: Building the model.**\n\nLet $e$ = belt setting and $T$ = trays per hour. The exponent is given, so the recorded run pins $A$. Levels depend on $A$; scale factors cancel it.\n\n**1. Translate: the recorded run.**\n\n$$A\\cdot 4^{\\frac{3}{2}}=64 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$4^{\\frac{3}{2}}=8$$\n\nso $(1)$ is $8A=64$ and $A=8$.\n\nThe recovered law is $T(e)=8e^{\\frac{3}{2}}$.\n\n**Answer.** $A=8$ | $T(e)=8e^{\\frac{3}{2}}$"
+  }
+]
