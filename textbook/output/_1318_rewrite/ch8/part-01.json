@@ -1,0 +1,602 @@
+[
+  {
+    "id": "math-8-1",
+    "case_id": "MATH 8.01",
+    "title": "Rebuilding a Resin Block Mass Table from the Cube Rule",
+    "context": "A cube resin block has mass $M(s)=5s^{3}$ grams for side length $s>0$ centimetres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Side $2$ cm gives mass $40$ grams.",
+      "Side $3$ cm gives mass $125$ grams.",
+      "Doubling the side multiplies the mass by $8$.",
+      "Side $1$ cm gives mass $5$ grams.",
+      "Side $4$ cm gives mass $240$ grams."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe mass at a named side is the coefficient times the cube of that side:\n\n$$M(2)=5\\cdot 2^{3}$$\n\n$$=5\\cdot 8=40$$\n\nThe claimed mass is $40$ grams, so the statement is True.",
+      "**B.** → False\n\nCube the side first, then apply the coefficient:\n\n$$3^{3}=27$$\n\n$$M(3)=5\\cdot 27=135$$\n\nThe claimed $125$ is $5^{3}$, cubing the coefficient instead of the side. The two figures disagree, so the statement is False.",
+      "**C.** → True\n\nThe scale factor of a power function depends only on the exponent, because the coefficient cancels:\n\n$$\\frac{M(2s)}{M(s)}=\\frac{5(2s)^{3}}{5s^{3}}$$\n\n$$=2^{3}=8$$\n\nDoubling the side multiplies the mass by $8$, so the statement is True.",
+      "**D.** → True\n\nAt side $1$ the cube is $1$, so the coefficient is the mass itself:\n\n$$M(1)=5\\cdot 1^{3}=5$$\n\nThe mass is $5$ grams, so the statement is True.",
+      "**E.** → False\n\nThe rule at $s=4$ is a single evaluation:\n\n$$M(4)=5\\cdot 4^{3}$$\n\n$$=5\\cdot 64=320$$\n\nThe claimed $240$ does not equal $320$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "A cube resin block has mass $M(s)=5s^{3}$ grams for side length $s>0$ centimetres.\n\nThe rule is a power function with coefficient $5$ and exponent $3$. A level is the coefficient times the cube of the side. A scale factor is the cube of the width multiplier, because the coefficient cancels:\n\n$$\\frac{M(ks)}{M(s)}=k^{3}$$"
+  },
+  {
+    "id": "math-8-2",
+    "case_id": "MATH 8.02",
+    "title": "Two Gauge Formulas and the Readings They Refuse",
+    "context": "A river gauge reports load $D(t)=6t^{\\frac{1}{2}}$ kilograms and turbidity $R(t)=50t^{-2}$ units, $t$ hours since reset. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "$D$ returns a real value at $t=0$.",
+      "$R$ returns a value at $t=0$.",
+      "$D$ returns a real value at $t=-4$.",
+      "$R(4)=3.125$ units.",
+      "$D(9)=18$ kilograms."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAn exponent of $\\frac{1}{2}$ is a square root, and the square root of zero is $0$:\n\n$$D(0)=6\\cdot 0^{\\frac{1}{2}}$$\n\n$$=6\\cdot 0=0$$\n\nThe load rule returns a real value at $t=0$, so the statement is True.",
+      "**B.** → False\n\nA negative exponent places time in a denominator:\n\n$$R(t)=\\frac{50}{t^{2}}$$\n\nAt $t=0$ that denominator is zero, and division by zero is undefined. The turbidity rule has no value at the reset, so the statement is False.",
+      "**C.** → False\n\nThe exponent $\\frac{1}{2}$ is an even root, and no real number squares to a negative:\n\n$$D(-4)=6\\sqrt{-4}$$\n\nThere is no real load at $t=-4$, so the statement is False.",
+      "**D.** → True\n\nSquare the time in the denominator, then divide:\n\n$$R(4)=\\frac{50}{4^{2}}$$\n\n$$=\\frac{50}{16}=3.125$$\n\nThe reading is $3.125$ units, so the statement is True.",
+      "**E.** → True\n\nThe square root is taken before the coefficient:\n\n$$D(9)=6\\cdot 9^{\\frac{1}{2}}$$\n\n$$=6\\cdot 3=18$$\n\nThe load is $18$ kilograms, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "The gauge reports load $D(t)=6t^{\\frac{1}{2}}$ kilograms and turbidity $R(t)=50t^{-2}$ units for $t$ hours since the reset.\n\nThe two rules are power functions in the same variable with opposite signs on the exponent. A nonnegative exponent $\\frac{1}{2}$ is an even root, so load is defined for $t\\ge 0$. A negative exponent is a reciprocal, so turbidity is\n\n$$R(t)=\\frac{50}{t^{2}}$$\n\nand needs $t>0$."
+  },
+  {
+    "id": "math-8-3",
+    "case_id": "MATH 8.03",
+    "title": "A Fading Beacon and a Rising Count at the Two Ends of the Scale",
+    "context": "A beacon gives $S(x)=80x^{-3}$ millivolts at $x>0$ metres; a reader logs $T(x)=2x^{\\frac{1}{2}}$ thousand packets over $x>0$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "As $x\\to\\infty$, $S(x)\\to 0$.",
+      "As $x\\to 0^{+}$, $S(x)$ grows without bound.",
+      "As $x\\to\\infty$, $T(x)$ approaches the ceiling $2$.",
+      "$S(2)=10$ millivolts.",
+      "As $x\\to 0^{+}$, $T(x)\\to 0$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA negative exponent puts distance in a denominator:\n\n$$S(x)=\\frac{80}{x^{3}}$$\n\nAs $x\\to\\infty$ that denominator grows without bound while the numerator stays $80$, so $S(x)\\to 0$.\n\nSignal strength tends to $0$, so the statement is True.",
+      "**B.** → True\n\nNear the mast a small positive $x$ makes the denominator $x^{3}$ arbitrarily small, so $\\frac{80}{x^{3}}$ becomes arbitrarily large.\n\nStrength grows without bound as $x\\to 0^{+}$, so the statement is True.",
+      "**C.** → False\n\nThe $2$ in $T(x)=2x^{\\frac{1}{2}}$ multiplies the power; it does not cap the output. After four minutes:\n\n$$T(4)=2\\cdot 4^{\\frac{1}{2}}$$\n\n$$=2\\cdot 2=4$$\n\nAlready $4>2$, and a positive exponent keeps climbing. There is no finite ceiling, so the statement is False.",
+      "**D.** → True\n\nCube the distance in the denominator, then divide:\n\n$$S(2)=\\frac{80}{2^{3}}$$\n\n$$=\\frac{80}{8}=10$$\n\nThe strength is $10$ millivolts, so the statement is True.",
+      "**E.** → True\n\nA positive exponent keeps $T(x)=2x^{\\frac{1}{2}}$ in the numerator. The square root of a shrinking positive input shrinks as well, so $T(x)\\to 0$ as $x\\to 0^{+}$.\n\nThe count approaches $0$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 3,
+    "solution_overview": "The beacon obeys $S(x)=80x^{-3}$ millivolts and the reader obeys $T(x)=2x^{\\frac{1}{2}}$ thousand packets, both on $x>0$.\n\nA negative exponent is a reciprocal power, so\n\n$$S(x)=\\frac{80}{x^{3}}$$\n\nA positive exponent keeps the variable in the numerator:\n\n$$T(x)=2x^{\\frac{1}{2}}$$\n\nThe two extremes are governed by those exponents alone."
+  },
+  {
+    "id": "math-8-4",
+    "case_id": "MATH 8.04",
+    "title": "Spread Overheads Against Finishing Hours on One Order Book",
+    "context": "A workshop spreads overhead $U(q)=600q^{-1}$ euros per unit and needs $V(q)=3q^{\\frac{2}{3}}$ finishing hours for order size $q>0$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "$U$ is strictly decreasing for $q>0$.",
+      "$U(q)<0$ for some order size $q>0$.",
+      "$V$ is strictly increasing for $q>0$.",
+      "$U(8)=80$ euros per unit.",
+      "$V(8)=12$ hours."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAn exponent of $-1$ writes order size in the denominator:\n\n$$U(q)=\\frac{600}{q}$$\n\nA larger positive $q$ makes a strictly smaller quotient. Overhead spread is strictly decreasing for $q>0$, so the statement is True.",
+      "**B.** → False\n\nThe numerator $600$ and the order size $q$ are both positive for every $q>0$, so $U(q)=\\frac{600}{q}$ stays positive. Falling towards zero is not the same as becoming negative.\n\nThe spread is never negative, so the statement is False.",
+      "**C.** → True\n\nThe exponent $\\frac{2}{3}$ is positive, so a larger order size raises a larger power, and the coefficient $3$ preserves that order.\n\nFinishing hours are strictly increasing for $q>0$, so the statement is True.",
+      "**D.** → False\n\nDivide the fixed overhead by eight units:\n\n$$U(8)=\\frac{600}{8}=75$$\n\nThe claimed $80$ is not this value, so the statement is False.",
+      "**E.** → True\n\nTake the cube root of $8$, then square:\n\n$$8^{\\frac{2}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{2}$$\n\n$$=2^{2}=4$$\n\n$$V(8)=3\\cdot 4=12$$\n\nThe finishing labour is $12$ hours, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 4,
+    "solution_overview": "The workshop spreads overhead $U(q)=600q^{-1}$ euros per unit and needs $V(q)=3q^{\\frac{2}{3}}$ finishing hours for order size $q>0$.\n\nBoth rules are power functions on $q>0$ with positive coefficients. The negative exponent writes order size in a denominator:\n\n$$U(q)=\\frac{600}{q}$$\n\nThe positive exponent $\\frac{2}{3}$ keeps finishing hours in a numerator. The sign of the exponent decides the direction of each rule; the positivity of the coefficient decides the sign of each output."
+  },
+  {
+    "id": "math-8-5",
+    "case_id": "MATH 8.05",
+    "title": "One Bottling Line Reading and the Coefficient It Fixes",
+    "context": "A bottling line runs at $Q(s)=As^{\\frac{1}{2}}$ crates per hour for $s>0$ staff, and $25$ staff gave $40$ crates per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient is $A=8$.",
+      "$Q(100)=80$ crates per hour.",
+      "Quadrupling the staffing doubles the output.",
+      "Doubling $A$ would double the ratio $\\frac{Q(4s)}{Q(s)}$.",
+      "$Q(4)=20$ crates per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $A=8$ from the audited shift $Q(25)=40$. The claim is that same coefficient, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $A=8$. At $100$ staff the square root is $10$:\n\n$$Q(100)=8\\cdot 100^{\\frac{1}{2}}$$\n\n$$=8\\cdot 10=80$$\n\nThe output is $80$ crates per hour, so the statement is True.",
+      "**C.** → True\n\nA staffing scale factor is fixed by the exponent alone, because $A$ cancels:\n\n$$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}$$\n\n$$=4^{\\frac{1}{2}}=2$$\n\nQuadrupling the staffing doubles the output, so the statement is True.",
+      "**D.** → False\n\nA doubled coefficient appears once above and once below in the ratio, so it cancels:\n\n$$\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}$$\n\n$$=4^{\\frac{1}{2}}=2$$\n\nThe ratio stays $2$. Doubling $A$ would double every output, not this scale factor, so the statement is False.",
+      "**E.** → False\n\nThe overview recovered $A=8$. At four staff the square root is $2$:\n\n$$Q(4)=8\\cdot 4^{\\frac{1}{2}}$$\n\n$$=8\\cdot 2=16$$\n\nThe claimed $20$ is not $16$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "The bottling line follows $Q(s)=A s^{\\frac{1}{2}}$ crates per hour, and $25$ staff gave $40$ crates per hour.\n\nThe exponent is given, so the audited shift fixes the coefficient:\n\n$$A\\cdot 25^{\\frac{1}{2}}=40$$\n\n$$5A=40$$\n\n$$A=8$$\n\nThe recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1}{2}}$, because $A$ cancels."
+  },
+  {
+    "id": "math-8-6",
+    "case_id": "MATH 8.06",
+    "title": "Two Maintenance Indices That Meet at Two Machines",
+    "context": "Two maintenance indices for $n>0$ machines are $F(n)=2n^{2}$ and $G(n)=n^{3}$ index points. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $n=2$ the indices read $8$ and $6$.",
+      "$G(n)>F(n)$ for every $n>2$.",
+      "$F(n)>G(n)$ for every $n$ with $0<n<2$.",
+      "$\\frac{G(n)}{F(n)}\\to 1$ as $n$ grows without bound.",
+      "At $n=3$ the indices read $18$ and $24$."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nSubstitute $n=2$ into each index:\n\n$$F(2)=2\\cdot 2^{2}=2\\cdot 4=8$$\n\n$$G(2)=2^{3}=8$$\n\nThe claim wants $8$ and $6$. The first figure matches, but $G(2)=8$, not $6$, so the statement is False.",
+      "**B.** → True\n\nThe overview factored $G(n)-F(n)=n^{2}(n-2)$. For every $n>0$ the square $n^{2}$ is positive, so the sign of the difference is the sign of $n-2$. Whenever $n>2$ that factor is positive, hence $G(n)>F(n)$.\n\nThe cubic index exceeds the quadratic one for every $n>2$, so the statement is True.",
+      "**C.** → True\n\nOn $0<n<2$ the overview's factor $n-2$ is negative, while $n^{2}$ is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:\n\n$$F(1)=2, \\qquad G(1)=1$$\n\nThe quadratic index leads throughout $0<n<2$, so the statement is True.",
+      "**D.** → False\n\nThe overview simplified the ratio to $\\frac{n}{2}$. As $n$ grows without bound, so does $\\frac{n}{2}$. Already at $n=20$:\n\n$$\\frac{G(20)}{F(20)}=\\frac{20}{2}=10$$\n\nThe ratio tends to infinity, not to $1$, so the statement is False.",
+      "**E.** → False\n\nSubstitute $n=3$ into each index:\n\n$$F(3)=2\\cdot 3^{2}=2\\cdot 9=18$$\n\n$$G(3)=3^{3}=27$$\n\nThe quadratic figure matches, but the cubic index is $27$, not the claimed $24$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 6,
+    "solution_overview": "Two maintenance indices for $n>0$ machines are $F(n)=2n^{2}$ and $G(n)=n^{3}$.\n\nSubtracting and factoring turns the race into one sign question:\n\n$$G(n)-F(n)=n^{2}(n-2)$$\n\nDividing instead of subtracting shows how the gap behaves as the line grows:\n\n$$\\frac{G(n)}{F(n)}=\\frac{n}{2}$$\n\nOn $n>0$ the square $n^{2}$ is positive, so the sign of $G-F$ is the sign of $n-2$."
+  },
+  {
+    "id": "math-8-7",
+    "case_id": "MATH 8.07",
+    "title": "Three Root Transforms on One Calibration Sheet",
+    "context": "A calibration sheet applies $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ and $N(x)=x^{-\\frac{1}{2}}$ to a raw sensor reading $x$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "$L(0)=0$.",
+      "$L(-4)$ has a real value.",
+      "$M(-8)=-2$.",
+      "$N(0)$ is defined.",
+      "$N(4)=2$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe exponent $\\frac{1}{2}$ is a square root, and $0^{2}=0$:\n\n$$L(0)=0^{\\frac{1}{2}}=\\sqrt{0}=0$$\n\nThe transform returns $0$ at a raw reading of zero, so the statement is True.",
+      "**B.** → False\n\nAn even root refuses a negative raw reading. No real number squares to a negative:\n\n$$L(-4)=\\sqrt{-4}$$\n\nThere is no real value at $x=-4$, so the statement is False.",
+      "**C.** → True\n\nThe exponent $\\frac{1}{3}$ is an odd root, so a negative reading is allowed. Cubing gives the inverse:\n\n$$(-2)^{3}=-8$$\n\n$$M(-8)=(-8)^{\\frac{1}{3}}=-2$$\n\nThe cube root of $-8$ is $-2$, so the statement is True.",
+      "**D.** → False\n\nA negative exponent is a reciprocal:\n\n$$N(x)=\\frac{1}{\\sqrt{x}}$$\n\nAt $x=0$ the denominator is $\\sqrt{0}=0$, and division by zero is undefined. The transform has no value at $x=0$, so the statement is False.",
+      "**E.** → False\n\nA negative exponent puts the root in the denominator:\n\n$$N(4)=4^{-\\frac{1}{2}}$$\n\n$$=\\frac{1}{\\sqrt{4}}=\\frac{1}{2}$$\n\nThe claimed $2$ is $\\sqrt{4}$, which drops the minus in the exponent. The transform returns $\\frac{1}{2}$, not $2$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 7,
+    "solution_overview": "A calibration sheet applies $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ and $N(x)=x^{-\\frac{1}{2}}$ to a raw sensor reading $x$.\n\nAll three transforms are power functions with coefficient $1$. An even root needs a nonnegative reading, while an odd root accepts every real reading. A negative exponent moves the root into a denominator:\n\n$$N(x)=\\frac{1}{\\sqrt{x}}$$\n\nso $L$ is defined for $x\\ge 0$, $M$ is defined for all real $x$, and $N$ needs $x>0$."
+  },
+  {
+    "id": "math-8-8",
+    "case_id": "MATH 8.08",
+    "title": "A Filter Bank Pressure Drop That Never Reaches Zero",
+    "context": "A filter bank's pressure drop is $P(x)=12x^{-\\frac{1}{2}}$ kilopascals for $x>0$ cartridges in service. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $x=4$ cartridges the drop is $6$ kilopascals.",
+      "$P$ is strictly decreasing on $x>0$.",
+      "$P(x)\\to 0$ as $x$ grows without bound, but never reaches $0$.",
+      "As $x\\to 0^{+}$, $P(x)$ approaches a finite limit.",
+      "At $x=9$ cartridges the drop is $4$ kilopascals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nRewrite the negative exponent as a root in the denominator, then substitute four cartridges:\n\n$$P(4)=\\frac{12}{\\sqrt{4}}$$\n\n$$=\\frac{12}{2}=6$$\n\nThe drop is $6$ kilopascals, so the statement is True.",
+      "**B.** → True\n\nThe drop is a positive constant over a strictly increasing root:\n\n$$P(x)=\\frac{12}{\\sqrt{x}}$$\n\nOn $x>0$ the numerator stays at $12$ while $\\sqrt{x}$ grows with $x$, so the quotient falls at every larger cartridge count.\n\nThe drop is strictly decreasing on $x>0$, so the statement is True.",
+      "**C.** → True\n\nAs $x$ grows, the denominator $\\sqrt{x}$ grows without bound while the numerator stays at $12$, so $P(x)\\to 0$. Setting $\\frac{12}{\\sqrt{x}}=0$ would require $12=0$, which never happens, so no $x>0$ returns a drop of $0$.\n\nThe drop approaches $0$ without reaching it, so the statement is True.",
+      "**D.** → False\n\nA tiny positive cartridge count puts a tiny number in the denominator:\n\n$$P(0.01)=\\frac{12}{\\sqrt{0.01}}$$\n\n$$=\\frac{12}{0.1}=120$$\n\nThe denominator $\\sqrt{x}$ can be made arbitrarily small as $x\\to 0^{+}$, so $P(x)$ has no finite limit.\n\nThe drop grows without bound rather than settling, so the statement is False.",
+      "**E.** → True\n\nNine cartridges give a whole square root:\n\n$$P(9)=\\frac{12}{\\sqrt{9}}$$\n\n$$=\\frac{12}{3}=4$$\n\nThe drop is $4$ kilopascals, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 8,
+    "solution_overview": "A filter bank's pressure drop is $P(x)=12x^{-\\frac{1}{2}}$ kilopascals for $x>0$ cartridges in service.\n\nA negative exponent puts the root in a denominator:\n\n$$P(x)=\\frac{12}{\\sqrt{x}}$$\n\nThe negative sign makes the drop fall on $x>0$, and the even root closes the domain at zero from below. Multiplying the bank by $k$ multiplies the drop by $k^{-\\frac{1}{2}}$."
+  },
+  {
+    "id": "math-8-9",
+    "case_id": "MATH 8.09",
+    "title": "Primer for Circular Panels from a Single Recorded Job",
+    "context": "Primer for a circular panel is $y(r)=Ar^{2}$ litres for radius $r>0$ metres, with $y(3)=45$ recorded. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient is $A=15$.",
+      "A panel of radius $6$ metres needs $180$ litres.",
+      "Increasing the radius by $50\\%$ multiplies the primer by $2.25$.",
+      "A panel of radius $1$ metre needs $5$ litres.",
+      "Halving the radius halves the primer needed."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview recovered $A=5$ from $9A=45$. The claimed $15$ is $\\frac{45}{3}$, which divides by the radius instead of by its square. The coefficient is $5$, not $15$, so the statement is False.",
+      "**B.** → True\n\nThe overview recovered $A=5$. At radius $6$ metres:\n\n$$y(6)=5\\cdot 6^{2}$$\n\n$$=5\\cdot 36=180$$\n\nThe panel needs $180$ litres, so the statement is True.",
+      "**C.** → True\n\nA fifty percent increase in radius is the width multiplier $k=1.5$. For a square power the coefficient cancels:\n\n$$\\frac{y(1.5r)}{y(r)}=\\frac{A(1.5r)^{2}}{A r^{2}}$$\n\n$$=1.5^{2}=2.25$$\n\nThe primer is multiplied by $2.25$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $A=5$. At a radius of one metre the square is $1$, so the requirement equals the coefficient:\n\n$$y(1)=5\\cdot 1^{2}=5$$\n\nA one-metre panel needs $5$ litres, so the statement is True.",
+      "**E.** → False\n\nHalving the radius is the width multiplier $k=0.5$, and the exponent $2$ acts on that whole factor:\n\n$$\\frac{y(0.5r)}{y(r)}=0.5^{2}=0.25$$\n\nThe primer is multiplied by $0.25$, not by $0.5$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 9,
+    "solution_overview": "Primer for a circular panel is $y(r)=A r^{2}$ litres for radius $r>0$ metres, with $y(3)=45$ recorded.\n\nThe exponent is given, so the recorded job fixes the coefficient:\n\n$$A\\cdot 3^{2}=45$$\n\n$$9A=45$$\n\n$$A=5$$\n\nThe recovered primer is $y(r)=5r^{2}$. Multiplying the radius by $k$ multiplies the requirement by $k^{2}$, because $A$ cancels."
+  },
+  {
+    "id": "math-8-10",
+    "case_id": "MATH 8.10",
+    "title": "A Braking Energy Index and the Ten Percent Trap",
+    "context": "A braking energy index is $E(v)=0.5v^{2}$ points for an approach speed $v>0$ in kilometres per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $v=10$ the index reads $50$.",
+      "Raising $v$ from $10$ to $20$ multiplies the index by $4$.",
+      "At $v=20$ the index reads $200$.",
+      "The index is never negative for $v>0$.",
+      "Raising $v$ by $10\\%$ raises the index by $10\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nSquare the speed, then apply the coefficient:\n\n$$E(10)=0.5\\cdot 10^{2}$$\n\n$$=0.5\\cdot 100=50$$\n\nThe index at $v=10$ is $50$, so the statement is True.",
+      "**B.** → True\n\nRaising the speed from $10$ to $20$ is the multiplier $k=2$. The coefficient cancels in the ratio:\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$\n\n$$=2^{2}=4$$\n\nDoubling the speed multiplies the index by $4$, so the statement is True.",
+      "**C.** → True\n\nAt the higher standard speed, square first:\n\n$$E(20)=0.5\\cdot 20^{2}$$\n\n$$=0.5\\cdot 400=200$$\n\nThe index reads $200$, so the statement is True.",
+      "**D.** → True\n\nA square of a nonzero real number is positive, and the coefficient $0.5$ is positive. Their product is therefore positive for every $v>0$.\n\nThe index is never negative, so the statement is True.",
+      "**E.** → False\n\nA ten percent overspeed is the speed multiplier $k=1.1$, and the exponent acts on the whole multiplier:\n\n$$\\frac{E(1.1v)}{E(v)}=1.1^{2}=1.21$$\n\nThe index is multiplied by $1.21$, a twenty-one percent rise rather than ten, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "A braking energy index is $E(v)=0.5v^{2}$ points for an approach speed $v>0$ in kilometres per hour.\n\nThe rule is a power function with coefficient $0.5$ and exponent $2$. A level squares the speed, then halves it. A speed multiplier $k$ multiplies the index by $k^{2}$, because the coefficient cancels:\n\n$$\\frac{E(kv)}{E(v)}=k^{2}$$"
+  },
+  {
+    "id": "math-8-11",
+    "case_id": "MATH 8.11",
+    "title": "Marina's Vegetable Plot",
+    "context": "Marina's harvest in kilograms follows $Y(h)=A h^{r}$ after $h>0$ hours of watering, with both constants unknown. $8$ hours give $4$ kilograms, and $27$ hours give $6$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so harvest grows more slowly than watering time.",
+      "If she doubles the watering time, she doubles the harvest.",
+      "To double the $4$-kilogram harvest she must more than double the watering time.",
+      "An extra hour adds more crop after $27$ hours of watering than it does after $8$.",
+      "The watering time needed for a given harvest is itself a power function of that harvest."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $r=\\frac{1}{3}$. An exponent smaller than one means that multiplying hours by $k$ multiplies harvest only by $k^{r}$, a smaller factor.\n\nHarvest grows more slowly than watering time, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $r=\\frac{1}{3}$. Doubling hours multiplies harvest by $2^{r}$:\n\n$$\\frac{Y(2h)}{Y(h)}=2^{\\frac{1}{3}}$$\n\n$$2^{\\frac{1}{3}}\\approx 1.26$$\n\nThe factor is about $1.26$, not $2$, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $Y(h)=2h^{\\frac{1}{3}}$. Doubling the logged $4$ kg harvest means $Y=8$:\n\n$$2h^{\\frac{1}{3}}=8$$\n\n$$h^{\\frac{1}{3}}=4$$\n\n$$h=64$$\n\nSixty-four hours is eight times the logged $8$ hours, which is more than a doubling, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $Y(h)=2h^{\\frac{1}{3}}$. The slope is\n\n$$Y'(h)=\\frac{2}{3}h^{-\\frac{2}{3}}$$\n\nThe leftover exponent is negative, so later hours add less crop. At the two logged times:\n\n$$Y'(8)=\\frac{2}{3}\\cdot 8^{-\\frac{2}{3}}=\\frac{1}{6}$$\n\n$$Y'(27)=\\frac{2}{3}\\cdot 27^{-\\frac{2}{3}}=\\frac{2}{27}$$\n\nBecause $\\frac{1}{6}>\\frac{2}{27}$, an extra hour adds less after $27$ hours than after $8$, so the statement is False.",
+      "**E.** → True\n\nA nonzero power inverts to another power. From $Y=2h^{\\frac{1}{3}}$,\n\n$$h=\\left(\\frac{Y}{2}\\right)^{3}$$\n\n$$=\\frac{1}{8}Y^{3}$$\n\nWatering time is a monomial in harvest, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 11,
+    "solution_overview": "Marina's harvest follows $Y(h)=A h^{r}$ after $h>0$ hours of watering. Eight hours give $4$ kilograms, and twenty-seven hours give $6$.\n\n**Part 1.** Two unknowns need both observations. The ratio cancels $A$:\n\n$$\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n**Part 2: Solve.** Because $\\frac{27}{8}=\\bigl(\\frac{3}{2}\\bigr)^{3}$ and $\\frac{6}{4}=\\frac{3}{2}$,\n\n$$\\left(\\frac{3}{2}\\right)^{3r}=\\frac{3}{2}$$\n\n$$r=\\frac{1}{3}$$\n\nThe eight-hour level then pins $A$:\n\n$$A\\cdot 8^{\\frac{1}{3}}=4$$\n\n$$2A=4$$\n\n$$A=2$$\n\nThe recovered harvest is $Y(h)=2h^{\\frac{1}{3}}$."
+  },
+  {
+    "id": "math-8-12",
+    "case_id": "MATH 8.12",
+    "title": "A Helpdesk Wait That Falls With the Team",
+    "context": "Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. $4$ agents on the shift produce a $24$ minute wait. Staffing cannot exceed $50$ agents. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "With $9$ agents on duty, callers wait less than $20$ minutes.",
+      "The number of agents needed for a given wait is itself a power of that wait.",
+      "An extra agent cuts more wait after $16$ agents than after $4$.",
+      "A $6$-minute wait would need more than $50$ agents.",
+      "Doubling the recorded team halves the wait."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $A=48$. At nine agents the square root is $3$:\n\n$$W(9)=\\frac{48}{\\sqrt{9}}$$\n\n$$=\\frac{48}{3}=16$$\n\nSixteen minutes is less than $20$, so the statement is True.",
+      "**B.** → True\n\nA nonzero power inverts to another power. From $W=48 n^{-\\frac{1}{2}}$,\n\n$$n=\\left(\\frac{48}{W}\\right)^{2}$$\n\nThe agent count is a monomial in the wait, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered $W(n)=48 n^{-\\frac{1}{2}}$. The slope is\n\n$$W'(n)=-24 n^{-\\frac{3}{2}}$$\n\nThe size of the cut falls as $n$ rises. At the two named staffings:\n\n$$|W'(4)|=24\\cdot 4^{-\\frac{3}{2}}=3$$\n\n$$|W'(16)|=24\\cdot 16^{-\\frac{3}{2}}=0.375$$\n\nAn extra agent cuts less wait after $16$ agents than after $4$, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $W(n)=48 n^{-\\frac{1}{2}}$. A six-minute wait inverts that rule:\n\n$$6=\\frac{48}{\\sqrt{n}}$$\n\n$$\\sqrt{n}=8$$\n\n$$n=64$$\n\nSixty-four agents exceed the cap of $50$, so the statement is True.",
+      "**E.** → False\n\nDoubling the team is the multiplier $k=2$, and the exponent $-\\frac{1}{2}$ acts on that whole factor:\n\n$$\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}$$\n\n$$=\\frac{1}{\\sqrt{2}}\\approx 0.707$$\n\nWait falls to about $0.707$ of its former value, not to $\\frac{1}{2}$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 12,
+    "solution_overview": "Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents produce a $24$ minute wait, and staffing cannot exceed $50$ agents.\n\nThe exponent is given, so the recorded wait fixes the coefficient:\n\n$$A\\cdot 4^{-\\frac{1}{2}}=24$$\n\n$$\\frac{A}{2}=24$$\n\n$$A=48$$\n\nThe recovered wait is $W(n)=48 n^{-\\frac{1}{2}}$. The cap $n\\le 50$ constrains inversions."
+  },
+  {
+    "id": "math-8-13",
+    "case_id": "MATH 8.13",
+    "title": "Leah's Well and Omar's Well",
+    "context": "Leah and Omar pump at the same depth $d>0$ metres. Leah's well follows $Q_{L}(d)=a d^{\\frac{1}{2}}$, and at $9$ metres she gets $12$ litres a minute. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, and at $4$ metres he gets $4$ litres a minute. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $4$ metres Leah already pumps more than $7$ litres a minute.",
+      "Omar overtakes Leah before they reach $10$ metres.",
+      "Once Omar is ahead, he stays ahead at every greater depth.",
+      "The two wells together still follow a single power of depth.",
+      "Omar's flow grows faster than depth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $a=4$. At $4$ metres the square root is $2$:\n\n$$Q_{L}(4)=4\\cdot 4^{\\frac{1}{2}}$$\n\n$$=4\\cdot 2=8$$\n\nEight litres a minute is more than $7$, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered the ratio $\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$. They meet when that ratio equals $1$:\n\n$$\\frac{d}{8}=1$$\n\n$$d=8$$\n\nEight metres is shallower than $10$, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$. Past $d=8$ that leftover factor exceeds $1$ and keeps climbing, because it is a positive power of $d$. A second crossing would need the ratio to return through $1$, which a strictly increasing leftover cannot do.\n\nOmar stays ahead at every greater depth, so the statement is True.",
+      "**D.** → False\n\nThe joint flow is the sum of two powers with distinct exponents:\n\n$$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$\n\nA sum of two powers is a power only when the exponents match. These exponents are $\\frac{1}{2}$ and $\\frac{3}{2}$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered Omar's exponent $\\frac{3}{2}$. Flow outruns depth whenever the exponent exceeds one: multiplying depth by $k$ multiplies Omar's flow by $k^{\\frac{3}{2}}$, a larger factor than $k$.\n\nOmar's flow grows faster than depth, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 13,
+    "solution_overview": "Leah's well follows $Q_{L}(d)=a d^{\\frac{1}{2}}$, with $12$ litres a minute at $9$ metres. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, with $4$ litres a minute at $4$ metres.\n\nEach well has a known exponent and one level, so each coefficient is recoverable:\n\n$$a\\cdot 9^{\\frac{1}{2}}=12$$\n\n$$3a=12$$\n\n$$a=4$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8k=4$$\n\n$$k=\\frac{1}{2}$$\n\nThe recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. Their ratio simplifies to $\\frac{d}{8}$."
+  },
+  {
+    "id": "math-8-14",
+    "case_id": "MATH 8.14",
+    "title": "Nora's Print Shop",
+    "context": "Nora bills a run of $n>0$ copies as a fixed setup plus a square-root charge, $C(n)=F+A n^{\\frac{1}{2}}$. A $16$-copy run costs $250$ euros, and a $64$-copy run costs $450$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because of the setup, the bill is not a power function of the run.",
+      "If she prints enough copies, the total bill starts to fall.",
+      "A longer run is cheaper per copy.",
+      "A run of $25$ copies already costs more than $280$ euros.",
+      "A run of $36$ copies costs more than $400$ euros."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $F=50$ and $A=50$, so $C(n)=50+50\\sqrt{n}$. A power of the run cannot carry a leftover constant. The setup of $50$ euros kills that shape, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $C(n)=50+50\\sqrt{n}$. The slope is\n\n$$C'(n)=25 n^{-\\frac{1}{2}}$$\n\nwhich stays positive for every $n>0$. Printing more copies never turns the total downward, so the statement is False.",
+      "**C.** → True\n\nCost per copy is the recovered bill divided by the run:\n\n$$\\frac{C(n)}{n}=\\frac{50}{n}+50 n^{-\\frac{1}{2}}$$\n\nBoth pieces decline as $n$ grows: the setup is spread over more copies, and the leftover exponent on the variable term is negative.\n\nA longer run is cheaper per copy, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $C(n)=50+50\\sqrt{n}$. Twenty-five is a perfect square:\n\n$$C(25)=50+50\\cdot 5$$\n\n$$=50+250=300$$\n\nThree hundred sits above $280$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $C(n)=50+50\\sqrt{n}$. Thirty-six is a perfect square:\n\n$$C(36)=50+50\\cdot 6$$\n\n$$=50+300=350$$\n\nThree hundred and fifty does not sit above $400$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 14,
+    "solution_overview": "Nora bills a run of $n>0$ copies as $C(n)=F+A n^{\\frac{1}{2}}$. A $16$-copy run costs $250$ euros, and a $64$-copy run costs $450$.\n\nTwo unknowns need both invoices:\n\n$$F+4A=250$$\n\n$$F+8A=450$$\n\nSubtracting isolates $A$:\n\n$$4A=200$$\n\n$$A=50$$\n\nThen $F+4\\cdot 50=250$, so $F=50$. The recovered bill is $C(n)=50+50\\sqrt{n}$."
+  },
+  {
+    "id": "math-8-15",
+    "case_id": "MATH 8.15",
+    "title": "A Refinery Against a Linear Quote",
+    "context": "A refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from $9$ to $16$ increased metal output by $296$ tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. A rival mill quotes strength directly as $1.8u+5$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After both stages, the refinery's strength is proportional to purity.",
+      "The two quotes never meet.",
+      "The rival's quote is a power function of purity.",
+      "On ore of purity $36$, the refinery's strength is more than $70$.",
+      "On ore of purity $9$, the refinery's strength is already above $20$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $S(u)=2u$. The inner exponent $\\frac{3}{2}$ and the outer exponent $\\frac{2}{3}$ multiply to $1$, so strength is a linear monomial in purity.\n\nThat is proportionality, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $S(u)=2u$. Set that equal to the rival quote:\n\n$$2u=1.8u+5$$\n\n$$0.2u=5$$\n\n$$u=25$$\n\nThe quotes meet at purity $25$, so the statement is False.",
+      "**C.** → False\n\nThe rival quote is $1.8u+5$. At purity zero the rival still equals $5$, so there is a leftover constant. A power of purity cannot carry an intercept.\n\nThe rival is affine, not a power, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $S(u)=2u$. At purity $36$:\n\n$$S(36)=2\\cdot 36=72$$\n\nSeventy-two sits above $70$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $S(u)=2u$. At purity $9$:\n\n$$S(9)=2\\cdot 9=18$$\n\nEighteen does not sit above $20$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 15,
+    "solution_overview": "Metal follows $M(u)=A u^{\\frac{3}{2}}$, and raising purity from $9$ to $16$ added $296$ tonnes. Strength is $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The rival quotes $1.8u+5$.\n\nThe audited gain is a difference of two metal outputs:\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\nComposing the strength stage with $M(u)=8u^{\\frac{3}{2}}$ multiplies the exponents $\\frac{3}{2}$ and $\\frac{2}{3}$ to $1$:\n\n$$S(u)=2u$$"
+  },
+  {
+    "id": "math-8-16",
+    "case_id": "MATH 8.16",
+    "title": "Server Peak Load Between a Doubling Rule and an Alarm",
+    "context": "A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The hardware alarm trips at a peak load of $200$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because the exponent exceeds one, peak load grows faster than the job count.",
+      "Halving the job count halves peak load.",
+      "Peak load per job rises as the job count rises.",
+      "The hardware alarm already trips at $16$ simultaneous jobs.",
+      "After $10$ simultaneous jobs, peak load is already above $40$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $r=2$. An exponent of $2$ sits above one, so multiplying jobs by $k$ multiplies load by $k^{2}$, a larger factor.\n\nPeak load grows faster than the job count, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $r=2$. Halving jobs is the multiplier $k=\\frac{1}{2}$:\n\n$$\\frac{L(x/2)}{L(x)}=\\left(\\frac{1}{2}\\right)^{2}$$\n\n$$=\\frac{1}{4}$$\n\nLoad drops to a quarter, not to a half, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $L(x)=\\frac{1}{2}x^{2}$, so load per job is\n\n$$\\frac{L(x)}{x}=\\frac{1}{2}x$$\n\nThe leftover exponent is positive, so that average climbs with the job count, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $16$ jobs:\n\n$$L(16)=\\frac{1}{2}\\cdot 16^{2}$$\n\n$$=\\frac{1}{2}\\cdot 256=128$$\n\nOne hundred and twenty-eight sits below $200$, so the alarm has not yet tripped, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $10$ jobs:\n\n$$L(10)=\\frac{1}{2}\\cdot 10^{2}$$\n\n$$=\\frac{1}{2}\\cdot 100=50$$\n\nFifty sits above $40$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 16,
+    "solution_overview": "Peak load follows $L(x)=A x^{r}$ for $x>0$ simultaneous jobs. Doubling the job count multiplies peak load by $4$, and eight jobs recorded a load of $32$. The alarm trips at $200$.\n\nThe doubling ratio cancels $A$ and isolates $r$:\n\n$$2^{r}=4$$\n\n$$r=2$$\n\nThe eight-job level then pins $A$:\n\n$$A\\cdot 8^{2}=32$$\n\n$$64A=32$$\n\n$$A=\\frac{1}{2}$$\n\nThe recovered load is $L(x)=\\frac{1}{2}x^{2}$."
+  },
+  {
+    "id": "math-8-17",
+    "case_id": "MATH 8.17",
+    "title": "Survey Reach Against a Fieldwork Budget Cap",
+    "context": "Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "An extra unit of intensity adds more usable responses at $25$ than at $100$.",
+      "Doubling outreach intensity doubles usable responses.",
+      "Usable responses per unit of intensity fall as outreach rises.",
+      "The budget cap allows at most $200$ usable responses.",
+      "At intensity $81$ the survey already yields more than $100$ usable responses."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $Q(x)=12x^{\\frac{1}{2}}$. The slope is\n\n$$Q'(x)=6 x^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so the slope falls as intensity rises. At the two named intensities:\n\n$$Q'(25)=\\frac{6}{5}=1.2$$\n\n$$Q'(100)=\\frac{6}{10}=0.6$$\n\nAn extra unit adds more at $25$ than at $100$, so the statement is True.",
+      "**B.** → False\n\nDoubling intensity is the multiplier $k=2$, and the exponent $\\frac{1}{2}$ acts on that whole factor:\n\n$$\\frac{Q(2x)}{Q(x)}=2^{\\frac{1}{2}}$$\n\n$$\\neq 2$$\n\nResponses multiply by $\\sqrt{2}$, not by $2$, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $Q(x)=12x^{\\frac{1}{2}}$, so responses per unit of intensity are\n\n$$\\frac{Q(x)}{x}=12 x^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so that average falls as outreach rises, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $Q(x)=12x^{\\frac{1}{2}}$. At the intensity cap:\n\n$$Q(400)=12\\cdot 400^{\\frac{1}{2}}$$\n\n$$=12\\cdot 20=240$$\n\nTwo hundred and forty is not a ceiling of $200$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $Q(x)=12x^{\\frac{1}{2}}$. Eighty-one is a perfect square:\n\n$$Q(81)=12\\cdot 81^{\\frac{1}{2}}$$\n\n$$=12\\cdot 9=108$$\n\nOne hundred and eight sits above $100$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 17,
+    "solution_overview": "Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. Raising intensity from $25$ to $100$ added $60$ responses, and intensity cannot exceed $400$.\n\nThe recorded gain is a difference of two square-root levels:\n\n$$A\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60$$\n\n$$A(10-5)=60$$\n\n$$5A=60$$\n\n$$A=12$$\n\nThe recovered yield is $Q(x)=12x^{\\frac{1}{2}}$. The cap constrains $x\\le 400$."
+  },
+  {
+    "id": "math-8-18",
+    "case_id": "MATH 8.18",
+    "title": "Quadratic and Linear Inspection Costs That Meet Once",
+    "context": "Two inspection procedures are costed for a batch of $n>0$ documents. The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. Records show that on a batch of $16$ documents the two procedures cost the same, $256$ each. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "For $n>0$ the two procedures cost the same only at $n=16$.",
+      "The automated procedure is cheaper than the manual one at every batch above $16$ documents.",
+      "The automated procedure's cost per document rises with the batch.",
+      "At $25$ documents the two procedures differ by less than $100$.",
+      "On a batch of $9$ documents the automated procedure costs under $100$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $C(n)-D(n)=n(n-16)$. On $n>0$ the roots are $n=0$, outside the domain, and $n=16$.\n\nThey meet only at sixteen documents, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $C(n)-D(n)=n(n-16)$. For $n>16$ that factor is positive, so $C>D$. The quadratic automated bill is the more expensive one past the meeting, not the cheaper one.\n\nAutomated is not cheaper above $16$ documents, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $C(n)=n^{2}$, so cost per document is\n\n$$\\frac{C(n)}{n}=n$$\n\nThe leftover exponent is positive, so unit cost rises with the batch, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $C(n)=n^{2}$ and $D(n)=16n$. At $25$ documents:\n\n$$C(25)=625, \\qquad D(25)=400$$\n\n$$625-400=225$$\n\nTwo hundred and twenty-five is not less than $100$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $C(n)=n^{2}$. At nine documents:\n\n$$C(9)=9^{2}=81$$\n\nEighty-one sits under $100$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 18,
+    "solution_overview": "Automated inspection costs $C(n)=a n^{2}$ and manual inspection costs $D(n)=b n$ for $n>0$ documents. At $n=16$ both bills equal $256$.\n\nEach law has a known exponent and one common level:\n\n$$a\\cdot 16^{2}=256$$\n\n$$256a=256$$\n\n$$a=1$$\n\n$$b\\cdot 16=256$$\n\n$$b=16$$\n\nThe recovered costs are $C(n)=n^{2}$ and $D(n)=16n$. Their difference factors as $n(n-16)$."
+  },
+  {
+    "id": "math-8-19",
+    "case_id": "MATH 8.19",
+    "title": "Warehouse Throughput With a Contractual Ceiling",
+    "context": "Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $16$ staff moved $32$ pallets per hour. The service contract caps billed throughput at $80$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Throughput grows more slowly than headcount.",
+      "Doubling the headcount doubles throughput.",
+      "Once the ceiling binds, billed throughput is no longer a power function of staff.",
+      "The contract ceiling is already reached with $64$ staff.",
+      "With $81$ staff, throughput is already above $70$ pallets per hour."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered exponent $\\frac{1}{2}$. An exponent smaller than one means that multiplying staff by $k$ multiplies throughput only by $k^{\\frac{1}{2}}$, a smaller factor.\n\nThroughput grows more slowly than headcount, so the statement is True.",
+      "**B.** → False\n\nDoubling headcount is the multiplier $k=2$, and the exponent $\\frac{1}{2}$ acts on that whole factor:\n\n$$\\frac{H(2s)}{H(s)}=2^{\\frac{1}{2}}$$\n\n$$\\neq 2$$\n\nThroughput multiplies by $\\sqrt{2}$, not by $2$, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered billed throughput $B(s)=\\min\\bigl(H(s),\\,80\\bigr)$. Once the cap binds, that rule is constant in $s$, not a monomial. A power of staff cannot switch from $8s^{\\frac{1}{2}}$ to a flat $80$.\n\nBilled throughput is then no longer a power function of staff, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $64$ staff:\n\n$$H(64)=8\\cdot 64^{\\frac{1}{2}}$$\n\n$$=8\\cdot 8=64$$\n\nSixty-four sits below the cap of $80$, so the ceiling is not yet reached, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $81$ staff:\n\n$$H(81)=8\\cdot 81^{\\frac{1}{2}}$$\n\n$$=8\\cdot 9=72$$\n\nSeventy-two sits above $70$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 19,
+    "solution_overview": "Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. Sixteen staff moved $32$ pallets per hour, and billed throughput cannot exceed $80$.\n\nThe exponent is given, so the recorded shift fixes the coefficient:\n\n$$A\\cdot 16^{\\frac{1}{2}}=32$$\n\n$$4A=32$$\n\n$$A=8$$\n\nThe recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H(s),\\,80\\bigr)$."
+  },
+  {
+    "id": "math-8-20",
+    "case_id": "MATH 8.20",
+    "title": "Response Time Recovered from a Server Upgrade",
+    "context": "A service's median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "An extra server cuts the median wait by more at $4$ servers than at $9$.",
+      "The number of servers needed for a given wait is itself a power of that wait.",
+      "Doubling the server count halves the median wait.",
+      "With $9$ servers the median wait is more than $10$ milliseconds.",
+      "With $4$ servers the median wait is already above $25$ milliseconds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. The slope is\n\n$$W'(k)=-324 k^{-\\frac{5}{2}}$$\n\nThe size of the cut falls as $k$ rises. At the two named staffings:\n\n$$|W'(4)|=\\frac{324}{4^{\\frac{5}{2}}}=\\frac{324}{32}=10.125$$\n\n$$|W'(9)|=\\frac{324}{9^{\\frac{5}{2}}}=\\frac{324}{243}=\\frac{4}{3}$$\n\nAn extra server cuts more wait at $4$ servers than at $9$, so the statement is True.",
+      "**B.** → True\n\nA nonzero power inverts to another power. From $W=216 k^{-\\frac{3}{2}}$,\n\n$$k=\\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}$$\n\nThe server count is a monomial in the wait, so the statement is True.",
+      "**C.** → False\n\nDoubling the server count is the multiplier $k=2$, and the exponent $-\\frac{3}{2}$ acts on that whole factor:\n\n$$\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}$$\n\n$$=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$\n\nWait falls to about $0.354$ of its former value, not to $\\frac{1}{2}$, so the statement is False.",
+      "**D.** → False\n\nThe overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. At nine servers:\n\n$$W(9)=\\frac{216}{9^{\\frac{3}{2}}}$$\n\n$$=\\frac{216}{27}=8$$\n\nEight milliseconds is not more than $10$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. At four servers:\n\n$$W(4)=\\frac{216}{4^{\\frac{3}{2}}}$$\n\n$$=\\frac{216}{8}=27$$\n\nTwenty-seven sits above $25$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 20,
+    "solution_overview": "Median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the wait by $19$ ms.\n\nThe exponent is given, so the recorded cut, a difference of two levels, recovers $A$:\n\n$$A\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19$$\n\n$$A\\left(\\frac{1}{8}-\\frac{1}{27}\\right)=19$$\n\n$$A\\cdot\\frac{19}{216}=19$$\n\n$$A=216$$\n\nThe recovered wait is $W(k)=216 k^{-\\frac{3}{2}}$."
+  }
+]
