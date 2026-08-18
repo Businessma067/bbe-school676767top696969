@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-1-61",
+    "case_id": "MATH 1.61",
+    "title": "Cancelling a concert",
+    "subsection": "1.3",
+    "context": "A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is cancelled”, S: “the rain stops before 6 PM.”",
+    "statements": [
+      "The rule translates to: $\\neg S \\Rightarrow C$.",
+      "The rule is logically equivalent to: $S \\Rightarrow \\neg C$.",
+      "The rule is logically equivalent to: $C \\lor S$.",
+      "If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).",
+      "If the concert is not cancelled, then the rain must have stopped before 6 PM."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\n“Cancelled unless $S$” requires cancellation whenever the escape fails. That is the overview’s translation\n\n$$\\neg S \\Rightarrow C$$\n\nThe claim is that same implication, so the statement is True.",
+      "**B.** → False\n\n$S \\Rightarrow \\neg C$ would say that a timely stop guarantees the concert. The overview’s rule is silent once $S$ is true. A 5 PM stop plus a power failure has $S$ true and $C$ true: $\\neg S \\Rightarrow C$ holds while $S \\Rightarrow \\neg C$ fails, so the statement is False.",
+      "**C.** → True\n\nApply the overview identity to $\\neg S \\Rightarrow C$:\n\n$$\\neg(\\neg S) \\lor C \\equiv S \\lor C$$\n\nOR is symmetric, so $C \\lor S$ is the same formula. Inclusive or still allows $S$ and $C$ together, so the statement is True.",
+      "**D.** → False\n\nOnce $S$ is true, the antecedent $\\neg S$ is false, so $\\neg S \\Rightarrow C$ does not assert $\\neg C$. A power cut can still cancel the concert after the rain stops, so the statement is False.",
+      "**E.** → True\n\nThe contrapositive of $\\neg S \\Rightarrow C$ swaps and negates both sides:\n\n$$\\neg C \\Rightarrow S$$\n\nA concert that went ahead has $\\neg C$, so the rain must have stopped before 6 PM. Contrapositive shares the original truth value, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 18,
+    "solution_overview": "The outdoor concert is cancelled unless the rain stops before 6 PM. Write $C$ for cancellation and $S$ for a stop before 6 PM.\n\n“$C$ unless $S$” is a one-way promise: if the escape fails, cancellation is required,\n\n$$\\neg S \\Rightarrow C$$\n\nAn implication rewrites as a disjunction,\n\n$$X \\Rightarrow Y \\equiv \\neg X \\lor Y$$\n\nWhen $S$ is true the antecedent $\\neg S$ is false, so the implication is silent: a power failure can still cancel the concert after the rain stops."
+  },
+  {
+    "id": "math-1-62",
+    "case_id": "MATH 1.62",
+    "title": "A senior transit discount rule",
+    "subsection": "1.3",
+    "context": "A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an annual income below \\$20,000). Rider P is 70, has no disability, and earns \\$18,000. Rider Q is 67, has a qualifying disability, and earns \\$50,000.",
+    "statements": [
+      "Rider P qualifies for the discount.",
+      "Rider Q, who is 67, has a qualifying disability, but earns \\$50,000, does NOT qualify for the discount because the income exceeds \\$20,000.",
+      "Having an income above \\$20,000 automatically disqualifies a senior rider from the discount, even if they have a qualifying disability.",
+      "There exists a scenario where a 70-year-old rider with no disability and an income of \\$25,000 would NOT qualify for the discount.",
+      "Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or income status."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nRider P is $70$ with no disability and income \\$18,000. Then $A$ is true, $D$ is false, and $L$ is true because \\$18,000 is below \\$20,000, so\n\n$$A \\land (D \\lor L) = \\mathrm{T} \\land (\\mathrm{F} \\lor \\mathrm{T}) = \\mathrm{T}$$\n\nP qualifies, so the statement is True.",
+      "**B.** → False\n\nRider Q is $67$, has a qualifying disability, and earns \\$50,000. Then $A$ is true, $D$ is true, and $L$ is false, so $D \\lor L$ holds on the disability half:\n\n$$A \\land (D \\lor L) = \\mathrm{T} \\land (\\mathrm{T} \\lor \\mathrm{F}) = \\mathrm{T}$$\n\nQ does qualify. High income is not a veto while $D$ is true, so the statement is False.",
+      "**C.** → False\n\nAutomatic disqualification by income would require $L$ to sit outside the bracket as a second gate. The overview put $L$ inside an or with $D$. Rider Q has $A$ true, $D$ true, and $L$ false, so $D \\lor L$ still holds and Q qualifies, so the statement is False.",
+      "**D.** → True\n\nTake a $70$-year-old with no disability and income \\$25,000. Then $A$ is true, $D$ is false, and $L$ is false because \\$25,000 is above the cutoff, so\n\n$$D \\lor L = \\mathrm{F} \\lor \\mathrm{F} = \\mathrm{F}$$\n\nand the conjunction fails. That rider does not qualify, so the statement is True.",
+      "**E.** → False\n\nSufficiency of age would mean every rider with $A$ true gets the discount. The formula is $A \\land (D \\lor L)$, so age leaves the bracket untouched. A $70$-year-old with no disability and income \\$25,000 has $A$ true and $D \\lor L$ false, so the discount fails. Age is necessary, not sufficient, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 19,
+    "solution_overview": "A transit discount requires age at least $65$ and at least one hardship condition. Write $A$ for the age test, $D$ for a qualifying disability, and $L$ for income below \\$20,000. The discount holds exactly when\n\n$$A \\land (D \\lor L)$$\n\nThe age test sits outside the bracket. Inside the bracket, $D$ and $L$ are joined by or, so either token alone fills it."
+  },
+  {
+    "id": "math-1-63",
+    "case_id": "MATH 1.63",
+    "title": "Proving the Triangular-Number Formula by Induction",
+    "subsection": "1.3",
+    "context": "Consider the claim: \"For all positive integers n, 1 + 2 +... + n = n(n+1)/2.\"",
+    "statements": [
+      "The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds",
+      "The inductive step assumes the formula holds for n = k and proves it for n = k + 1",
+      "Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction",
+      "If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the inductive step",
+      "For n = 10, the formula gives 1+2+...+10 = 55"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe first positive integer is $n=1$. The left side is $1$, and the right side is\n\n$$\\frac{1 \\cdot 2}{2} = 1$$\n\nThe two sides agree, so the statement is True.",
+      "**B.** → True\n\nThe inductive step is the neighbour-to-neighbour move: assume the formula at $n=k$, then prove it at $n=k+1$. That is the standard inductive step for this claim, so the statement is True.",
+      "**C.** → False\n\nChecking $n=1,2,3,4,5$ verifies five instances. Induction on the positive integers also needs the inductive step, which covers every later $n$ at once. Five examples leave $n=6$ untouched, so the statement is False.",
+      "**D.** → True\n\nAssume the formula at $n=k$:\n\n$$1+2+\\cdots+k=\\frac{k(k+1)}{2}$$\n\nAdd the next term:\n\n$$1+2+\\cdots+k+(k+1)=\\frac{k(k+1)}{2}+(k+1)$$\n\n$$=\\frac{k(k+1)+2(k+1)}{2}$$\n\n$$=\\frac{(k+1)(k+2)}{2}$$\n\nThat is the formula at $n=k+1$, so the statement is True.",
+      "**E.** → True\n\nSubstitute $n=10$ into the closed form:\n\n$$\\frac{10 \\cdot 11}{2}=55$$\n\nThe claimed sum is $55$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 20,
+    "solution_overview": "The claim is that for every positive integer $n$,\n\n$$1 + 2 + \\cdots + n = \\frac{n(n+1)}{2}$$\n\nA proof by induction has two moves. The base case checks one starting value, here $n=1$. The inductive step assumes the formula at $n=k$ and proves it at $n=k+1$. Checking finitely many values by hand is not a complete induction."
+  },
+  {
+    "id": "math-1-64",
+    "case_id": "MATH 1.64",
+    "title": "Logical Equivalents of an Inflation-Unemployment Claim",
+    "subsection": "1.3",
+    "context": "Consider the economic claim: \"If inflation increases, then unemployment decreases.\" Decide whether each statement is logically equivalent to this claim.",
+    "statements": [
+      "\"For unemployment to decrease, inflation must increase\" is equivalent to the original claim.",
+      "\"A sufficient condition for unemployment to decrease is that inflation increases\" is equivalent to the original claim.",
+      "\"Unemployment can only decrease if inflation increases\" is equivalent to the original claim.",
+      "\"If unemployment does not decrease, then inflation does not increase\" is equivalent to the original claim.",
+      "\"A necessary condition for inflation to increase is that unemployment decreases\" is equivalent to the original claim."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\n“For unemployment to decrease, inflation must increase” makes $P$ necessary for $Q$, which is\n\n$$Q \\Rightarrow P$$\n\nThat is the converse of $P \\Rightarrow Q$, not an equivalent form, so the statement is False.",
+      "**B.** → True\n\n“A sufficient condition for unemployment to decrease is that inflation increases” makes $P$ sufficient for $Q$:\n\n$$P \\Rightarrow Q$$\n\nThat is the original claim, so the statement is True.",
+      "**C.** → False\n\n“Unemployment can only decrease if inflation increases” is $Q$ only if $P$, which is\n\n$$Q \\Rightarrow P$$\n\nThat is the converse, not an equivalent of $P \\Rightarrow Q$, so the statement is False.",
+      "**D.** → True\n\n“If unemployment does not decrease, then inflation does not increase” is\n\n$$\\neg Q \\Rightarrow \\neg P$$\n\nThat is the contrapositive of $P \\Rightarrow Q$, so the statement is True.",
+      "**E.** → True\n\n“A necessary condition for inflation to increase is that unemployment decreases” makes $Q$ necessary for $P$, which is\n\n$$P \\Rightarrow Q$$\n\nThat is the original claim, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 21,
+    "solution_overview": "Write $P$ for “inflation increases” and $Q$ for “unemployment decreases.” The claim is\n\n$$P \\Rightarrow Q$$\n\nThe original and its contrapositive $\\neg Q \\Rightarrow \\neg P$ are equivalent. The converse $Q \\Rightarrow P$ is a different implication. A sufficient condition for $Q$ is an antecedent of $Q$. A necessary condition for $P$ is a consequent of $P$. “Only if” and “must” name necessary conditions and reverse the arrow."
+  },
+  {
+    "id": "math-1-65",
+    "case_id": "MATH 1.65",
+    "title": "Airline delay chain",
+    "subsection": "1.3",
+    "context": "An airline's operations log records:\n\n(1) If Flight 202 is delayed, then Flight 305 is cancelled.\n\n(2) If Flight 305 is cancelled, then the ground crew works overtime.\n\n(3) Flight 202 is delayed today.",
+    "statements": [
+      "Flight 305 is cancelled today.",
+      "The ground crew works overtime today.",
+      "Statement (2) is essential to concluding that the crew works overtime today - without it, that conclusion could not be reached from (1) and (3) alone.",
+      "If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.",
+      "There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $C$ from $D$ and $D \\Rightarrow C$. Flight 305 is cancelled today, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $O$ from $C$ and $C \\Rightarrow O$. The ground crew works overtime today, so the statement is True.",
+      "**C.** → True\n\nStatements (1) and (3) mention only $D$ and $C$. Without (2) the chain stops at the cancellation and never names overtime, so $O$ cannot be concluded, so the statement is True.",
+      "**D.** → False\n\nIf Flight 202 is not delayed, the antecedent of $D \\Rightarrow C$ is false, so (1) is silent. It does not assert $\\neg C$. Flight 305 can still be cancelled for another reason, so the statement is False.",
+      "**E.** → False\n\nThe overview’s chain forces $O$ from (1), (2), and (3). There is no model of those three facts in which the crew does not work overtime, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 22,
+    "solution_overview": "An airline log records three facts. Write $D$ for “Flight 202 is delayed,” $C$ for “Flight 305 is cancelled,” and $O$ for “the ground crew works overtime”:\n\n$$D \\Rightarrow C, \\qquad C \\Rightarrow O, \\qquad D$$\n\nModus ponens says that $X \\Rightarrow Y$ together with $X$ yields $Y$. From $D$ and $D \\Rightarrow C$ we get $C$. From $C$ and $C \\Rightarrow O$ we get $O$."
+  },
+  {
+    "id": "math-1-66",
+    "case_id": "MATH 1.66",
+    "title": "Negation, Converse, and Contrapositive of a Study-Hours Rule",
+    "subsection": "1.3",
+    "context": "A professor claims: \"If a student studies at least 10 hours, they pass the exam.\"",
+    "statements": [
+      "The negation of this claim is: \"A student studies at least 10 hours and does not pass.\"",
+      "The converse, \"If a student passes, they studied at least 10 hours,\" must be true whenever the original claim is true.",
+      "Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the converse, but not to the original claim.",
+      "The inverse, \"If a student studies less than 10 hours, they do not pass,\" is the logical equivalent of the contrapositive.",
+      "If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less than 10 hours."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview’s negation is $P \\land \\neg Q$: a student who studied at least $10$ hours and did not pass. That is the claimed sentence, so the statement is True.",
+      "**B.** → False\n\nThe converse is $Q \\Rightarrow P$. It is equivalent to the inverse, not to $P \\Rightarrow Q$. A student can pass without the $10$ hours, so the converse need not hold, so the statement is False.",
+      "**C.** → True\n\nAnna has $\\neg P$ and $Q$. The original $P \\Rightarrow Q$ is silent when $P$ is false, so she is not a counterexample to it. The converse $Q \\Rightarrow P$ has a true antecedent and a false consequent, so she refutes the converse, so the statement is True.",
+      "**D.** → False\n\nThe inverse is $\\neg P \\Rightarrow \\neg Q$. The contrapositive is $\\neg Q \\Rightarrow \\neg P$. Those two are converses of each other, not equivalents. The inverse matches the converse, not the contrapositive, so the statement is False.",
+      "**E.** → True\n\nThe contrapositive is $\\neg Q \\Rightarrow \\neg P$. From a failure ($\\neg Q$) it concludes that the student studied less than $10$ hours. That inference is licensed by the original claim, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 23,
+    "solution_overview": "Write $P$ for “the student studies at least $10$ hours” and $Q$ for “the student passes.” The professor asserts\n\n$$P \\Rightarrow Q$$\n\nThe negation of an implication is a counterexample, not another implication:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are equivalent to each other and not, in general, to the original."
+  },
+  {
+    "id": "math-1-67",
+    "case_id": "MATH 1.67",
+    "title": "A contract penalty clause",
+    "subsection": "1.3",
+    "context": "A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.”",
+    "statements": [
+      "Failing to complete the project by the deadline is sufficient for a penalty fee to apply.",
+      "The converse, “If a penalty fee applies, then the contractor missed the deadline,” must also be true simply because the original clause is true.",
+      "The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline,” is logically guaranteed by the original clause.",
+      "The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies,” must also be true given the original clause.",
+      "The inverse of a conditional statement is always logically equivalent to its converse, even though neither is generally equivalent to the original."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nIn $F \\Rightarrow P$, the antecedent $F$ is sufficient for $P$. Missing the deadline is therefore sufficient for a penalty, so the statement is True.",
+      "**B.** → False\n\nThe converse is $P \\Rightarrow F$. A contractor who finishes on time but delivers faulty work can still be fined: $F$ false and $P$ true. That case keeps the original clause true while the converse fails, so the statement is False.",
+      "**C.** → True\n\nThe contrapositive of $F \\Rightarrow P$ is $\\neg P \\Rightarrow \\neg F$: if no penalty applies, the contractor did not miss the deadline. It is equivalent to the original clause, so the statement is True.",
+      "**D.** → False\n\nThe inverse is $\\neg F \\Rightarrow \\neg P$. It belongs to the converse pair, not to the original. On-time completion with a fine for faulty work has $\\neg F$ and $P$, which refutes the inverse while the clause stands, so the statement is False.",
+      "**E.** → True\n\nSwapping and negating both sides of the converse $P \\Rightarrow F$ produces the inverse $\\neg F \\Rightarrow \\neg P$. Those two are contrapositives of each other, so they always share a truth value, even though neither is equivalent to $F \\Rightarrow P$ in general, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 24,
+    "solution_overview": "Write $F$ for “the contractor misses the deadline” and $P$ for “a penalty fee applies.” The clause is\n\n$$F \\Rightarrow P$$\n\nThe original and its contrapositive form one equivalent pair:\n\n$$F \\Rightarrow P \\equiv \\neg P \\Rightarrow \\neg F$$\n\nThe converse and the inverse form a second pair:\n\n$$P \\Rightarrow F \\equiv \\neg F \\Rightarrow \\neg P$$\n\nThe second pair need not share a truth value with the clause. The antecedent of a conditional is a sufficient condition for the consequent."
+  },
+  {
+    "id": "math-1-68",
+    "case_id": "MATH 1.68",
+    "title": "A scholarship eligibility rule with a waiver",
+    "subsection": "1.3",
+    "context": "A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60 credit hours - unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.",
+    "statements": [
+      "Student M is eligible for the scholarship.",
+      "Student N is eligible for the scholarship.",
+      "If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become eligible.",
+      "The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.",
+      "It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient credit hours."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nStudent M has GPA $3.7$, so $G$ is true, $50$ credits, so $C$ is false, and no waiver, so $W$ is false. Then\n\n$$G \\land (C \\lor W) = \\mathrm{T} \\land (\\mathrm{F} \\lor \\mathrm{F}) = \\mathrm{F}$$\n\nM is not eligible, so the statement is False.",
+      "**B.** → True\n\nStudent N has GPA $3.6$, so $G$ is true, $45$ credits, so $C$ is false, and a waiver, so $W$ is true. Then $C \\lor W$ holds and\n\n$$G \\land (C \\lor W) = \\mathrm{T}$$\n\nN is eligible, so the statement is True.",
+      "**C.** → True\n\nGive M a waiver and keep GPA $3.7$ with $50$ credits. Then $G$ is still true and $W$ fills the bracket, so $G \\land (C \\lor W)$ becomes true. M would be eligible, so the statement is True.",
+      "**D.** → False\n\nA waiver fills only $C \\lor W$. The formula still requires $G$. A student with GPA below $3.5$ and a waiver has $G$ false, so the conjunction fails, so the statement is False.",
+      "**E.** → False\n\nIf GPA is below $3.5$, then $G$ is false. For any $C$ and $W$,\n\n$$G \\land (C \\lor W) = \\mathrm{F}$$\n\nNo mix of waiver and credits rescues a low GPA, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 25,
+    "solution_overview": "The default scholarship rule is GPA at least $3.5$ and at least $60$ credit hours. The Dean may waive only the credit-hour half. Write $G$ for the GPA test, $C$ for the credit test, and $W$ for a written waiver. Eligibility holds exactly when\n\n$$G \\land (C \\lor W)$$\n\nThe GPA condition sits outside the bracket, so a waiver cannot replace it. Inside the bracket, credits and a waiver are alternatives."
+  },
+  {
+    "id": "math-1-69",
+    "case_id": "MATH 1.69",
+    "title": "Travel insurance payout",
+    "subsection": "1.3",
+    "context": "A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before departure.",
+    "statements": [
+      "M's claim will be paid out.",
+      "N's claim will be paid out.",
+      "If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out, regardless of the reason for cancellation.",
+      "Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.",
+      "It is possible for a claim to be paid out without a documented medical emergency AND without the policy being purchased at least 14 days in advance, provided the airline cancelled the flight."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nTraveler M has a documented medical emergency, so $M$ is true, and bought the policy $20$ days out, so $T$ is true. Then\n\n$$(M \\lor A) \\land T = \\mathrm{T}$$\n\nThe claim is paid, so the statement is True.",
+      "**B.** → False\n\nTraveler N has an airline cancellation, so $A$ is true, but bought the policy only $5$ days out, so $T$ is false. Then\n\n$$(M \\lor A) \\land T = \\mathrm{F}$$\n\nThe claim is not paid, so the statement is False.",
+      "**C.** → True\n\nIf the policy is bought fewer than $14$ days before departure, $T$ is false. Then $(M \\lor A) \\land T$ is false for every reason $M$ or $A$. No payout is possible, so the statement is True.",
+      "**D.** → False\n\nThe timing test $T$ is one conjunct, not the whole ticket. A traveler who buys $14$ days ahead but cancels for a reason other than $M$ or $A$ has an empty bracket, so the payout fails, so the statement is False.",
+      "**E.** → False\n\nAirline cancellation fills only the bracket. The formula still requires $T$. Without the $14$-day purchase, $(M \\lor A) \\land T$ is false even when $A$ is true, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 26,
+    "solution_overview": "The policy pays if and only if an accepted cancellation reason holds and the policy was bought at least $14$ days before departure. Write $M$ for a documented medical emergency, $A$ for an airline cancellation, and $T$ for the timing test. A payout holds exactly when\n\n$$(M \\lor A) \\land T$$\n\nInside the bracket the two reasons are alternatives. Outside it, $T$ is required of every claim."
+  },
+  {
+    "id": "math-1-70",
+    "case_id": "MATH 1.70",
+    "title": "Contrapositive Reasoning in a Citizenship Voting Law",
+    "subsection": "1.3",
+    "context": "An election law states: \"If a person is a citizen, they are eligible to vote.\"",
+    "statements": [
+      "The negation of this law is: \"A person is a citizen and is not eligible to vote.\"",
+      "John is not eligible to vote; by the contrapositive, we may conclude that John is not a citizen. This reasoning is logically valid.",
+      "Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a counterexample disproving the law.",
+      "The converse, \"If a person is eligible to vote, they are a citizen,\" could be false in a country that grants voting rights to certain non-citizen long-term residents.",
+      "The inverse, \"If a person is not a citizen, they are not eligible to vote,\" always has the same truth value as the converse."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview’s negation is $P \\land \\neg Q$: a citizen who is not eligible to vote. That is the claimed sentence, so the statement is True.",
+      "**B.** → True\n\nThe contrapositive is $\\neg Q \\Rightarrow \\neg P$. John is not eligible, so $\\neg Q$ holds, and we may conclude that John is not a citizen. That is modus ponens on the contrapositive, so the statement is True.",
+      "**C.** → False\n\nMaria is a citizen who chooses not to register. Eligibility $Q$ is the right, not the act of voting, so $Q$ remains true. The pair $P$ true and $Q$ true satisfies $P \\Rightarrow Q$ and is not a counterexample, so the statement is False.",
+      "**D.** → True\n\nThe converse is $Q \\Rightarrow P$. A country that lets certain non-citizen residents vote has $Q$ true and $P$ false, which refutes the converse while leaving $P \\Rightarrow Q$ untouched, so the statement is True.",
+      "**E.** → True\n\nThe inverse $\\neg P \\Rightarrow \\neg Q$ is the contrapositive of the converse $Q \\Rightarrow P$. Those two always share a truth value, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 27,
+    "solution_overview": "Write $P$ for “the person is a citizen” and $Q$ for “the person is eligible to vote.” The law is\n\n$$P \\Rightarrow Q$$\n\nHere $Q$ is the right to vote, not the act of casting a ballot. The negation of the law is $P \\land \\neg Q$. The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are equivalent to each other and not, in general, to the original."
+  },
+  {
+    "id": "math-1-71",
+    "case_id": "MATH 1.71",
+    "title": "A business memo's reasoning",
+    "subsection": "1.3",
+    "context": "A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this quarter. Therefore, we must have increased our marketing budget.”",
+    "statements": [
+      "The memo's argument is logically valid.",
+      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”",
+      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”",
+      "For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a biconditional: “We increase our marketing budget if and only if sales increase.”",
+      "The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains, the ground gets wet” and “The ground is wet.”"
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe memo concludes $P$ from $P \\Rightarrow Q$ and $Q$. That is affirming the consequent, which is invalid. Sales can rise for another reason, so the statement is False.",
+      "**B.** → False\n\nThe restatement argues from $P \\Rightarrow Q$ and $\\neg P$ to $\\neg Q$. That is denying the antecedent, the inverse inference. The same competitor example has $\\neg P$ and $Q$, so $\\neg Q$ need not follow, so the statement is False.",
+      "**C.** → True\n\nThe restatement argues from $P \\Rightarrow Q$ and $\\neg Q$ to $\\neg P$. That is modus tollens: it runs the contrapositive $\\neg Q \\Rightarrow \\neg P$ forward. The inference is valid, so the statement is True.",
+      "**D.** → True\n\nThe missing direction is $Q \\Rightarrow P$. A biconditional $P \\Leftrightarrow Q$ supplies both arrows, and then $Q$ really does yield $P$. That is the strengthening the original conclusion needs, so the statement is True.",
+      "**E.** → True\n\n“If it rains, the ground gets wet” with “the ground is wet” concluding “it is raining” is the same form: $P \\Rightarrow Q$ and $Q$, therefore $P$. Both arguments affirm the consequent, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28,
+    "solution_overview": "Write $P$ for “we increased the marketing budget” and $Q$ for “sales increased.” The memo argues from\n\n$$P \\Rightarrow Q, \\qquad Q$$\n\nto the conclusion $P$. That form is affirming the consequent. The premise licenses $P$ to $Q$, not the reverse. A competitor leaving the market can raise sales while the budget never moves: $Q$ true and $P$ false, with $P \\Rightarrow Q$ still true."
+  },
+  {
+    "id": "math-1-72",
+    "case_id": "MATH 1.72",
+    "title": "A Counterexample to \"The Sum of Two Irrationals Is Irrational\"",
+    "subsection": "1.3",
+    "context": "Consider the claim: \"The sum of two irrational numbers is always irrational,\" and the classical proof that there is no largest prime number.",
+    "statements": [
+      "√2 + (-√2) = 0 is a valid counterexample to \"the sum of two irrational numbers is always irrational,\" since √2 and -√2 are irrational but their sum, 0, is rational",
+      "Finding this one counterexample is enough to show the claim is not a true universal statement",
+      "A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and then derives a contradiction",
+      "To prove a universal statement, it suffices to check it for $x=1$ and $x=2$.",
+      "To prove an existential statement, it suffices to exhibit one value for which the stated property holds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBoth $\\sqrt{2}$ and $-\\sqrt{2}$ are irrational, and\n\n$$\\sqrt{2}+(-\\sqrt{2})=0$$\n\nZero is rational, so the pair is a counterexample, so the statement is True.",
+      "**B.** → True\n\nA universal statement is false as soon as one counterexample exists. One pair of irrationals that sum to a rational is enough, so the statement is True.",
+      "**C.** → True\n\nA proof by contradiction assumes the negation of the target. The target “there is no largest prime” is negated by “there is a largest prime, say $p$.” That is the opening line, so the statement is True.",
+      "**D.** → False\n\nChecking $x=1$ and $x=2$ verifies two instances of a universal claim. Every other $x$ is still untested, so two examples do not constitute a proof, so the statement is False.",
+      "**E.** → True\n\nAn existential claim $\\exists x\\, P(x)$ is proved by exhibiting one value at which $P$ holds. That one witness is the whole job, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 29,
+    "solution_overview": "A universal claim $\\forall x\\, P(x)$ is proved by an argument that covers every $x$ and is disproved by one counterexample. An existential claim $\\exists x\\, P(x)$ is proved by one witness.\n\nThe stem’s claim “the sum of two irrationals is always irrational” is universal. A proof by contradiction of “there is no largest prime” begins by assuming the negation of that target."
+  },
+  {
+    "id": "math-1-73",
+    "case_id": "MATH 1.73",
+    "title": "Converse and Contrapositive of a Fish-Habitat Rule",
+    "subsection": "1.3",
+    "context": "A biology rule states: \"If an animal is a fish, then it lives in water.\"",
+    "statements": [
+      "\"This dolphin lives in water, so it must be a fish\" uses the converse of the rule and is an invalid argument.",
+      "\"This lizard does not live in water, so it is not a fish\" uses the contrapositive of the rule and is a valid argument.",
+      "\"This snake is not a fish, so it does not live in water\" uses the inverse of the rule, and inverse-based reasoning is always guaranteed to be valid.",
+      "The negation of the broader claim \"All fish live in water\" is \"There exists a fish that does not live in water.\"",
+      "The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving \"All fish live in water.\""
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\n“This dolphin lives in water, so it must be a fish” argues from $Q$ to $P$. That is the converse. A dolphin is a counterexample to the converse, so the argument is invalid, so the statement is True.",
+      "**B.** → True\n\n“This lizard does not live in water, so it is not a fish” argues from $\\neg Q$ to $\\neg P$. That is the contrapositive, which is equivalent to the rule, so the argument is valid, so the statement is True.",
+      "**C.** → False\n\n“This snake is not a fish, so it does not live in water” argues from $\\neg P$ to $\\neg Q$, the inverse. Inverse reasoning is not equivalent to $P \\Rightarrow Q$. Water snakes exist, so the pattern is not guaranteed, so the statement is False.",
+      "**D.** → True\n\nThe overview’s negation of $\\forall x\\,(P(x) \\Rightarrow Q(x))$ is $\\exists x\\,(P(x) \\land \\neg Q(x))$: a fish that does not live in water. That is the claimed sentence, so the statement is True.",
+      "**E.** → False\n\nA counterexample to “all fish live in water” must be a fish that does not live in water. A dolphin has $\\neg P$ and $Q$, the opposite shape, so it does not refute the rule, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 30,
+    "solution_overview": "Write $P(x)$ for “$x$ is a fish” and $Q(x)$ for “$x$ lives in water.” The rule is\n\n$$P(x) \\Rightarrow Q(x)$$\n\nThe converse is $Q(x) \\Rightarrow P(x)$, the inverse is $\\neg P(x) \\Rightarrow \\neg Q(x)$, and the contrapositive is $\\neg Q(x) \\Rightarrow \\neg P(x)$. Only the contrapositive is equivalent to the original. The universal “all fish live in water” is $\\forall x\\,(P(x) \\Rightarrow Q(x))$, and its negation is $\\exists x\\,(P(x) \\land \\neg Q(x))$."
+  },
+  {
+    "id": "math-1-74",
+    "case_id": "MATH 1.74",
+    "title": "Negating a Store's Early-Payment Discount Policy",
+    "subsection": "1.3",
+    "context": "A store policy states: \"If a customer pays within 30 days, they receive a 5% discount.\"",
+    "statements": [
+      "The negation of the policy is: \"A customer paid within 30 days and received the discount.\"",
+      "The converse, \"If a customer receives the discount, they paid within 30 days,\" is necessarily true given the policy.",
+      "Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original policy and does NOT serve as a counterexample.",
+      "The inverse, \"If a customer does not pay within 30 days, they do not receive the discount,\" is logically guaranteed to be true by the original policy.",
+      "The contrapositive, \"If a customer does not receive the discount, they did not pay within 30 days,\" is NOT guaranteed to be true, since only the original conditional itself carries any real guarantee."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\n“A customer paid within $30$ days and received the discount” is $P \\land Q$, which is the policy being honoured. The negation is $P \\land \\neg Q$, so the statement is False.",
+      "**B.** → False\n\nThe converse is $Q \\Rightarrow P$. A holiday promotion can give the discount to a late payer: $Q$ true and $P$ false. That keeps the policy true while the converse fails, so the statement is False.",
+      "**C.** → True\n\nAlex paid on day $45$ and received no discount, so $P$ is false and $Q$ is false. The policy $P \\Rightarrow Q$ is silent when $P$ is false, so Alex is consistent with it and is not a counterexample, so the statement is True.",
+      "**D.** → False\n\nThe inverse is $\\neg P \\Rightarrow \\neg Q$. It is equivalent to the converse, not to the policy. A late payer who still receives a promotional discount refutes the inverse while the original stands, so the statement is False.",
+      "**E.** → False\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to $P \\Rightarrow Q$, so it is guaranteed whenever the policy is. The claim that only the original carries any guarantee is wrong, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 31,
+    "solution_overview": "Write $P$ for “the customer pays within $30$ days” and $Q$ for “the customer receives a $5\\%$ discount.” The policy is\n\n$$P \\Rightarrow Q$$\n\nIts negation is $P \\land \\neg Q$, a punctual payer who got no discount. The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are not."
+  },
+  {
+    "id": "math-1-75",
+    "case_id": "MATH 1.75",
+    "title": "Negating a Revenue-Based Audit Regulation",
+    "subsection": "1.3",
+    "context": "A regulation states: \"If a company's annual revenue exceeds \\$1 million, then it must file an annual audit.\"",
+    "statements": [
+      "The negation of this statement is: \"If a company's revenue exceeds \\$1 million, then it does not file an audit.\"",
+      "The converse, \"If a company files an annual audit, then its revenue exceeds \\$1 million,\" is guaranteed true whenever the original regulation holds.",
+      "The inverse, \"If a company's revenue does not exceed \\$1 million, then it does not file an audit,\" is logically equivalent to the original statement.",
+      "The contrapositive, \"If a company does not file an audit, then its revenue does not exceed \\$1 million,\" is equivalent to the original and must also be true.",
+      "Company X has revenue of \\$2 million but did not file an audit. This is a valid counterexample that would prove the original regulation false."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\n“If revenue exceeds \\$1 million, then the company does not file” is $P \\Rightarrow \\neg Q$, a rival rule for every large company. The negation is $P \\land \\neg Q$, one offender, so the statement is False.",
+      "**B.** → False\n\nThe converse is $Q \\Rightarrow P$. A company with revenue \\$300,000 that files voluntarily has $Q$ true and $P$ false, which refutes the converse while the regulation stands, so the statement is False.",
+      "**C.** → False\n\nThe inverse is $\\neg P \\Rightarrow \\neg Q$. It matches the converse, not $P \\Rightarrow Q$. Voluntary filing by a small company has $\\neg P$ and $Q$, so the inverse fails, so the statement is False.",
+      "**D.** → True\n\nThe contrapositive of $P \\Rightarrow Q$ is $\\neg Q \\Rightarrow \\neg P$: if a company does not file an audit, then its revenue does not exceed \\$1 million. That form is equivalent to the regulation, so the statement is True.",
+      "**E.** → True\n\nCompany X has revenue \\$2 million and filed no audit, so $P$ is true and $Q$ is false. That is exactly $P \\land \\neg Q$, which refutes $P \\Rightarrow Q$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 32,
+    "solution_overview": "Write $P$ for “annual revenue exceeds \\$1 million” and $Q$ for “the company files an annual audit.” The regulation is\n\n$$P \\Rightarrow Q$$\n\nIts negation is a single offender, not a rival if-then:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are not. A firm below the cutoff may still file voluntarily."
+  },
+  {
+    "id": "math-1-76",
+    "case_id": "MATH 1.76",
+    "title": "Commercial pilot license",
+    "subsection": "1.3",
+    "context": "To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.",
+    "statements": [
+      "Pilot A is granted the license.",
+      "Pilot B is granted the license.",
+      "Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.",
+      "If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250 hours and passed the written exam.",
+      "There exists a pilot with more than 250 flight hours who is not granted the license."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nPilot A has $300$ hours and a passed written exam but failed the practical test, so $H$ and $W$ are true and $T$ is false. Then\n\n$$H \\land W \\land T = \\mathrm{F}$$\n\nPilot A is not granted the license, so the statement is False.",
+      "**B.** → False\n\nPilot B has $240$ hours, so $H$ is false, and passed both exams. Then\n\n$$H \\land W \\land T = \\mathrm{F}$$\n\nPilot B is not granted the license, so the statement is False.",
+      "**C.** → False\n\nHours alone make $H$ true and leave $W$ and $T$ untouched. The formula still requires both exams. $H$ is necessary, not sufficient, so the statement is False.",
+      "**D.** → True\n\nIf the practical test is failed, $T$ is false. Then $H \\land W \\land T$ is false for every $H$ and $W$. Extra hours and a passed written exam cannot rescue a failed practical, so the statement is True.",
+      "**E.** → True\n\nPilot A has $300$ hours, so $H$ is true, and failed the practical test, so $T$ is false. That is a pilot with more than $250$ hours who is not licensed, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 33,
+    "solution_overview": "The license is granted if and only if three tests all hold. Write $H$ for at least $250$ flight hours, $W$ for passing the written exam, and $T$ for passing the practical test. The license is granted exactly when\n\n$$H \\land W \\land T$$\n\nIn a conjunction every conjunct is necessary and no conjunct is sufficient on its own. The stem also records that $H$ is necessary, which the formula already encodes."
+  },
+  {
+    "id": "math-1-77",
+    "case_id": "MATH 1.77",
+    "title": "Bank loan approval",
+    "subsection": "1.3",
+    "context": "A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a debt-to-income ratio of 45%.",
+    "statements": [
+      "Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT approved for the loan because their credit score alone is below 700.",
+      "Applicant Q is approved for the loan.",
+      "If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income ratio.",
+      "If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit score or a co-signer.",
+      "It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer and a debt-to-income ratio below 40%."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nApplicant P has score $650$, so $S$ is false, a qualified co-signer, so $C$ is true, and ratio $35\\%$, so $D$ is true. Then $S \\lor C$ holds and\n\n$$(S \\lor C) \\land D = \\mathrm{T}$$\n\nP is approved. The low score is not a veto while $C$ holds, so the statement is False.",
+      "**B.** → False\n\nApplicant Q has score $720$, so $S$ is true, and ratio $45\\%$, so $D$ is false. Then\n\n$$(S \\lor C) \\land D = \\mathrm{F}$$\n\nQ is not approved, so the statement is False.",
+      "**C.** → False\n\nScore at least $700$ fills only the bracket. The formula still requires $D$. Applicant Q has $S$ true and $D$ false, so Q is denied, so the statement is False.",
+      "**D.** → True\n\nA ratio of $40\\%$ or above makes $D$ false, because the rule needs a ratio strictly below $40\\%$. Then $(S \\lor C) \\land D$ is false for every $S$ and $C$. Neither a high score nor a co-signer offsets it, so the statement is True.",
+      "**E.** → True\n\nApplicant P has score $650$, a co-signer, and ratio $35\\%$. Then $S$ is false, $C$ is true, and $D$ is true, so $(S \\lor C) \\land D$ holds. That is an approval with score below $700$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 34,
+    "solution_overview": "Write $S$ for credit score at least $700$, $C$ for a qualified co-signer, and $D$ for a debt-to-income ratio below $40\\%$. Approval holds exactly when\n\n$$(S \\lor C) \\land D$$\n\nInside the bracket, score and co-signer are alternatives. Outside it, $D$ is required of every applicant and cannot be offset."
+  },
+  {
+    "id": "math-1-78",
+    "case_id": "MATH 1.78",
+    "title": "Sam's Loyalty Point and the Converse of a Dessert Rule",
+    "subsection": "1.3",
+    "context": "A restaurant policy states: \"If a customer orders dessert, they receive one loyalty point.\" Diner Sam received a loyalty point despite not ordering dessert; he got one as part of a birthday promotion.",
+    "statements": [
+      "Sam's case is exactly what's needed to disprove the converse, \"If a customer receives a loyalty point, they ordered dessert.\"",
+      "A proof by contradiction of \"not every point-earning diner ordered dessert\" would begin by assuming the opposite - \"every diner who received a point ordered dessert\" - and then show Sam's case violates that assumption.",
+      "Sam's case also disproves the policy that ordering dessert guarantees a loyalty point.",
+      "The correctly formed negation of the original policy would require finding a diner who ordered dessert and did NOT receive a point - a completely different scenario from Sam's.",
+      "The inverse, \"If a customer does not order dessert, they do not receive a point,\" is directly contradicted by Sam's case."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe converse is $Q \\Rightarrow P$. Sam has $Q$ true and $P$ false, which is exactly the counterexample the converse needs, so the statement is True.",
+      "**B.** → True\n\n“Not every point-earning diner ordered dessert” is the negation of the converse $Q \\Rightarrow P$. A proof by contradiction assumes that converse, then produces Sam, who has $Q$ and $\\neg P$, and the assumption fails, so the statement is True.",
+      "**C.** → False\n\nThe original policy fails only on $P \\land \\neg Q$: dessert with no point. Sam has $\\neg P$ and $Q$, the opposite shape, so he is consistent with $P \\Rightarrow Q$, so the statement is False.",
+      "**D.** → True\n\nThe negation of $P \\Rightarrow Q$ is $P \\land \\neg Q$: a diner who ordered dessert and did not receive a point. That is not Sam’s birthday case, so the statement is True.",
+      "**E.** → True\n\nThe inverse is $\\neg P \\Rightarrow \\neg Q$. Sam has $\\neg P$ and $Q$, so the inverse has a true antecedent and a false consequent. Sam refutes it, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 35,
+    "solution_overview": "Write $P$ for “the diner orders dessert” and $Q$ for “the diner receives a loyalty point.” The policy is\n\n$$P \\Rightarrow Q$$\n\nSam received a birthday point without ordering dessert, so $P$ is false and $Q$ is true. A conditional is refuted only by a true antecedent and a false consequent."
+  },
+  {
+    "id": "math-1-79",
+    "case_id": "MATH 1.79",
+    "title": "Nested quantifiers with a product equation",
+    "subsection": "1.4",
+    "context": "Consider the statement: “For every positive integer m, there exists a positive integer n such that $m \\cdot n = 100$.”",
+    "statements": [
+      "The statement holds when m = 4 (there exists n with 4n = 100).",
+      "The statement holds when m = 3 (there exists n with 3n = 100).",
+      "The overall statement (“for every m, there exists n...”) is true.",
+      "The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, $m \\cdot n \\neq 100$.”",
+      "Reversing the quantifiers to “There exists n such that for every m, $m \\cdot n = 100$” would also produce a false statement."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nFor $m=4$,\n\n$$n = \\frac{100}{4} = 25$$\n\nwhich is a positive integer, and $4 \\cdot 25 = 100$. A partner exists, so the statement is True.",
+      "**B.** → False\n\nFor $m=3$,\n\n$$n = \\frac{100}{3}$$\n\nwhich is not an integer. The equation has only that one solution, so no positive integer $n$ works, so the statement is False.",
+      "**C.** → False\n\nA “for every $m$” claim fails as soon as one $m$ has no partner. For $m=3$ there is no positive integer $n$ with $3n=100$, so the overall statement is false, so the statement is False.",
+      "**D.** → True\n\nNegating $\\forall m\\, \\exists n : mn=100$ flips both quantifiers and the matrix:\n\n$$\\exists m\\, \\forall n : mn \\neq 100$$\n\nThat is the claimed sentence, so the statement is True.",
+      "**E.** → True\n\nThe reversed claim is $\\exists n\\, \\forall m : mn=100$: one fixed $n$ serving every $m$. Then $m=1$ would need $n=100$ while $m=2$ would need $n=50$, so no such $n$ exists. The reversed statement is false, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "The statement is $\\forall m\\, \\exists n$ such that $m \\cdot n = 100$, with $m$ and $n$ positive integers. The order matters: $n$ is allowed to depend on $m$. For a fixed $m$ the equation forces\n\n$$n = \\frac{100}{m}$$\n\nand that $n$ is legal only when $m$ divides $100$. Negation flips each quantifier and negates the equation. Reversing the quantifiers asks for one $n$ that works for every $m$ at once."
+  },
+  {
+    "id": "math-1-80",
+    "case_id": "MATH 1.80",
+    "title": "A theft investigation",
+    "subsection": "1.4",
+    "context": "A theft occurred, and exactly one of four suspects - Ann, Ben, Cara, Dan - is guilty. It is known that:\n\n(1) If Ann is guilty, then Dan is innocent.\n\n(2) If Ben is innocent, then Cara is innocent.\n\n(3) Dan is guilty.\n\n(4) If Cara is guilty, then Ann is guilty.",
+    "statements": [
+      "Dan is guilty.",
+      "Ann is guilty.",
+      "Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.",
+      "Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.",
+      "Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $D$ from clue (3). Dan is guilty, so the statement is True.",
+      "**B.** → False\n\nExactly one suspect is guilty, and that place is already held by Dan. Ann is therefore innocent, so the statement is False.",
+      "**C.** → False\n\nCara’s innocence already follows from clue (3) together with uniqueness: Dan is guilty, so Cara is not. Clue (2) is not needed for that conclusion, so the statement is False.",
+      "**D.** → True\n\nClue (1) is $A \\Rightarrow \\neg D$. Ann is innocent, so the antecedent $A$ is false and the implication is automatically true. It does not constrain the completed roster any further, so the statement is True.",
+      "**E.** → True\n\nClue (3) is the atomic sentence $D$. Uniqueness is not required to read it: (3) alone already says that Dan is guilty, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "Exactly one of Ann, Ben, Cara, and Dan is guilty. Write $A,B,C,D$ for the four guilt atoms. The clues are\n\n$$A \\Rightarrow \\neg D, \\qquad \\neg B \\Rightarrow \\neg C, \\qquad D, \\qquad C \\Rightarrow A$$\n\nClue (3) is a plain assertion that Dan is guilty. Combined with uniqueness, Ann, Ben, and Cara are innocent."
+  }
+]

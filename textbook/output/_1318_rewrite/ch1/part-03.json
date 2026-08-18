@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-1-41",
+    "case_id": "MATH 1.41",
+    "title": "Two Language Courses in One Cohort",
+    "subsection": "1.2",
+    "context": "Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.",
+    "statements": [
+      "$\\lvert A \\cup B\\rvert = 50$.",
+      "Exactly $22$ people are in A only (not B).",
+      "Exactly $10$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $16$ people are in B only (not A)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $|A\\cup B|=50$. The claim is that same figure, so the statement is True.",
+      "**B.** → True\n\nSpanish-only peels the overlap out of $A$:\n\n$$34-12=22$$\n\nThe claim is $22$, so the statement is True.",
+      "**C.** → True\n\nNeither is the leftover outside the union. The overview recovered $|A\\cup B|=50$, and the cohort has $60$ students:\n\n$$60-50=10$$\n\nThe claim is $10$, so the statement is True.",
+      "**D.** → False\n\nThe intersection is a subset of the union, so its size cannot exceed the union size. The overview recovered $|A\\cap B|=12$ and $|A\\cup B|=50$:\n\n$$12<50$$\n\nThe claim needs $|A\\cap B|>|A\\cup B|$. The inequality runs the other way, so the statement is False.",
+      "**E.** → True\n\nFrench-only peels the overlap out of $B$:\n\n$$28-12=16$$\n\nThe claim is $16$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 19,
+    "solution_overview": "Of $60$ students, $|A|=34$ take Spanish, $|B|=28$ take French, and $|A\\cap B|=12$ take both.\n\nInclusion-exclusion counts each student once:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=34+28-12=50$$\n\nSpanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is the cohort minus the union. The intersection is a subset of the union."
+  },
+  {
+    "id": "math-1-42",
+    "case_id": "MATH 1.42",
+    "title": "Gym Members Using Two Facilities",
+    "subsection": "1.2",
+    "context": "Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.",
+    "statements": [
+      "$\\lvert A \\cup B\\rvert = 33$.",
+      "Exactly $15$ people are in A only (not B).",
+      "Exactly $17$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $13$ people are in B only (not A)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $|A\\cup B|=33$. The claim is that same figure, so the statement is True.",
+      "**B.** → True\n\nPool-only peels the overlap out of $A$:\n\n$$20-5=15$$\n\nThe claim is $15$, so the statement is True.",
+      "**C.** → True\n\nNeither is the leftover outside the union. The overview recovered $|A\\cup B|=33$, and the gym has $50$ members:\n\n$$50-33=17$$\n\nThe claim is $17$, so the statement is True.",
+      "**D.** → False\n\nThe intersection is a subset of the union, so its size cannot exceed the union size. The overview recovered $|A\\cap B|=5$ and $|A\\cup B|=33$:\n\n$$5<33$$\n\nThe claim needs $|A\\cap B|>|A\\cup B|$. The inequality runs the other way, so the statement is False.",
+      "**E.** → True\n\nSauna-only peels the overlap out of $B$:\n\n$$18-5=13$$\n\nThe claim is $13$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 20,
+    "solution_overview": "Of $50$ gym members, $|A|=20$ use the pool, $|B|=18$ use the sauna, and $|A\\cap B|=5$ use both.\n\nInclusion-exclusion counts each member once:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=20+18-5=33$$\n\nPool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is membership minus the union. The intersection is a subset of the union."
+  },
+  {
+    "id": "math-1-43",
+    "case_id": "MATH 1.43",
+    "title": "Three Overlapping Hobby Clubs",
+    "subsection": "1.2",
+    "context": "In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.",
+    "statements": [
+      "$\\lvert A \\cup B \\cup C\\rvert = 53$.",
+      "Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.",
+      "The number who do photography and hiking but not cooking is $7$.",
+      "$\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.",
+      "$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $|A\\cup B\\cup C|=53$. The claim is that same figure, so the statement is True.",
+      "**B.** → True\n\nAnyone who does all three activities does each pair, so those $3$ people already sit inside $|A\\cap B|$, $|A\\cap C|$, and $|B\\cap C|$. The claim is that containment, so the statement is True.",
+      "**C.** → True\n\nThe pairwise total $|A\\cap B|=10$ still includes the cooks. Removing the triple isolates photography and hiking but not cooking:\n\n$$10-3=7$$\n\nThe claim is $7$, so the statement is True.",
+      "**D.** → True\n\nThe triple group is a subset of each pair, so its size cannot exceed any pairwise size:\n\n$$3\\le 10,\\qquad 3\\le 8,\\qquad 3\\le 7$$\n\nHence $3\\le\\min(10,8,7)$. The claimed inequality holds, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $|A|+|B|+|C|=75$ on the way to $|A\\cup B\\cup C|=53$. Already $53<75$. The claim needs $53>75$. The inequality runs the other way, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 21,
+    "solution_overview": "Three hobby groups overlap: $|A|=30$ photography, $|B|=25$ hiking, $|C|=20$ cooking, with pairwise totals $|A\\cap B|=10$, $|A\\cap C|=8$, $|B\\cap C|=7$, and triple overlap $|A\\cap B\\cap C|=3$.\n\nThree-set inclusion-exclusion counts each person once:\n\n$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$\n\n$$30+25+20=75$$\n\n$$10+8+7=25$$\n\n$$75-25+3=53$$\n\nAn exact-pair region is the pairwise total minus the triple. The triple group sits inside every pair."
+  },
+  {
+    "id": "math-1-44",
+    "case_id": "MATH 1.44",
+    "title": "Prime and even properties of the number 7",
+    "subsection": "1.3",
+    "context": "The number 7 is prime and is not even.",
+    "statements": [
+      "7 is both prime and even.",
+      "7 is prime or even.",
+      "It is not true that 7 is both prime and even.",
+      "7 is neither prime nor even.",
+      "It is not true that 7 is prime or even."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nConjunction needs both halves true. The overview recovered $P$ true and $Q$ false, so\n\n$$P\\land Q$$\n\nis false. The claim is that $7$ is both prime and even, so the statement is False.",
+      "**B.** → True\n\nInclusive or needs only one true side. The overview recovered $P$ true, so\n\n$$P\\lor Q$$\n\nis true even though $Q$ is false. The claim is that $7$ is prime or even, so the statement is True.",
+      "**C.** → True\n\nThe inner conjunction $P\\land Q$ is already false, and negation flips it:\n\n$$\\neg(P\\land Q)$$\n\nis true. It is not the case that $7$ is both prime and even, so the statement is True.",
+      "**D.** → False\n\n\"Neither prime nor even\" is $\\neg P\\land\\neg Q$. The overview recovered $P$ true, so $\\neg P$ is false and the conjunction of negations is false. Seven is prime, so the statement is False.",
+      "**E.** → False\n\nThe overview recovered $P\\lor Q$ true, so its negation is false:\n\n$$\\neg(P\\lor Q)$$\n\nfails. De Morgan identifies this with $\\neg P\\land\\neg Q$, which already fails because $7$ is prime, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "The number $7$ is prime and is not even. Write $P$ for \"$7$ is prime\" and $Q$ for \"$7$ is even\". Then $P$ is true and $Q$ is false.\n\nConjunction $P\\land Q$ is true only when both parts are true. Inclusive disjunction $P\\lor Q$ is true when at least one part is true. Negation $\\neg$ flips a truth value.\n\nDe Morgan identifies $\\neg(P\\land Q)$ with $\\neg P\\lor\\neg Q$, and $\\neg(P\\lor Q)$ with $\\neg P\\land\\neg Q$."
+  },
+  {
+    "id": "math-1-45",
+    "case_id": "MATH 1.45",
+    "title": "Primes greater than 2",
+    "subsection": "1.3",
+    "context": "Consider the statement: “For every prime number p greater than 2, p is an odd number.”",
+    "statements": [
+      "The statement is true.",
+      "The number 2 is a counterexample to the statement.",
+      "The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”",
+      "Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.",
+      "There are infinitely many primes greater than 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview showed that every prime $p>2$ is odd: the only even prime is $2$, which the domain excludes. The claim is that same statement, so the statement is True.",
+      "**B.** → False\n\nA counterexample must live in the domain and fail the conclusion. The test $2>2$ is false, so $2$ never enters the quantified range. It is an even prime, but the statement never claimed anything about $2$, so the statement is False.",
+      "**C.** → True\n\nNegating $\\forall p>2\\,(\\mathrm{Prime}(p)\\Rightarrow\\mathrm{Odd}(p))$ produces an existential with the conclusion flipped, still restricted to $p>2$:\n\n$$\\exists p>2\\,(\\mathrm{Prime}(p)\\land\\mathrm{Even}(p))$$\n\nThe quoted sentence is that negation, so the statement is True.",
+      "**D.** → False\n\nThe converse says every odd number greater than $2$ is prime. Test $9$:\n\n$$9>2,\\qquad 9=3\\cdot 3$$\n\nThe number $9$ is odd and composite. One counterexample kills the converse, so the statement is False.",
+      "**E.** → True\n\nEuclid supplies infinitely many primes. Dropping the single prime $2$ leaves $3,5,7,\\ldots$, still infinite, all greater than $2$. Removing one element from an infinite set leaves an infinite set, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "The statement is: for every prime $p>2$, $p$ is odd.\n\nA prime has exactly two positive divisors, $1$ and itself. An even integer larger than $2$ is also divisible by $2$, so it has at least three divisors and cannot be prime. The only even prime is $2$, and the domain $p>2$ excludes it.\n\nA counterexample must sit in that domain and fail the conclusion. Negating a universal swaps $\\forall$ for $\\exists$ and negates the predicate, keeping $p>2$. The converse swaps the two halves."
+  },
+  {
+    "id": "math-1-46",
+    "case_id": "MATH 1.46",
+    "title": "University prerequisite chain",
+    "subsection": "1.3",
+    "context": "A university's rules state:\n\n(1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics.\n\n(2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics.\n\nMaria is currently enrolled in Advanced Macroeconomics.",
+    "statements": [
+      "Maria has passed Intermediate Macroeconomics.",
+      "Maria has passed Principles of Economics.",
+      "Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.",
+      "Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.",
+      "We may conclude that Maria passed Principles of Economics with a perfect grade."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered that Maria has passed Intermediate Macroeconomics. The claim is that same fact, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered that Maria has passed Principles of Economics. The claim is that same fact, so the statement is True.",
+      "**C.** → True\n\nComposing the two arrows gives $A\\Rightarrow P$: Advanced cannot occur without Principles. That is what \"Principles is necessary for Advanced\" means, so the statement is True.",
+      "**D.** → False\n\nSufficient would require $P\\Rightarrow A$. A student may pass Principles, skip Intermediate, and never reach Advanced. The recovered chain runs $A\\Rightarrow I\\Rightarrow P$, not the reverse, so the statement is False.",
+      "**E.** → False\n\nThe two rules mention only \"passed\" and \"enrolled.\" No grade, mark, or \"perfect\" appears. From Maria's enrolment we recover two pass/fail facts, not a score, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "\"You may enrol in $X$ only if you have passed $Y$\" is $X\\Rightarrow Y$: $Y$ is necessary for $X$, not sufficient.\n\nWrite $A$ for enrolling in Advanced Macroeconomics, $I$ for passing Intermediate, and $P$ for passing Principles. The two rules form the chain\n\n$$A\\Rightarrow I\\Rightarrow P$$\n\nMaria is enrolled in Advanced, so both arrows fire: she has passed Intermediate, and therefore Principles. The reverse arrow $P\\Rightarrow A$ is not supplied. The rules speak only of passing and enrolling; they record no marks."
+  },
+  {
+    "id": "math-1-47",
+    "case_id": "MATH 1.47",
+    "title": "Primes and Even Numbers Below Fifteen",
+    "subsection": "1.3",
+    "context": "Let $P = \\{2, 3, 5, 7, 11, 13\\}$ (the primes less than 15) and $E = \\{2, 4, 6, 8, 10, 12, 14\\}$ (the even numbers less than 15).",
+    "statements": [
+      "$P \\cap E = \\{2\\}$",
+      "$P \\setminus E = \\{3, 5, 7, 11, 13\\}$",
+      "\"$\\forall x \\in P$, x is odd\" is a true statement",
+      "For every $x$, if $x \\in P$ and $x \\neq 2$, then $x$ is odd.",
+      "$P \\subseteq E$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nScan $P$ against $E$. The only shared member is the even prime $2$:\n\n$$P\\cap E=\\{2\\}$$\n\nThe claim is that singleton, so the statement is True.",
+      "**B.** → True\n\nDifference $P\\setminus E$ deletes a member of $P$ only when it also sits in $E$. Throwing $2$ out of $P$ leaves\n\n$$P\\setminus E=\\{3,5,7,11,13\\}$$\n\nThe claim is that roster, so the statement is True.",
+      "**C.** → False\n\nA universal on $P$ fails at one interior point. The member $x=2$ sits in $P$ and is even, so \"every member of $P$ is odd\" is false. One counterexample is enough, so the statement is False.",
+      "**D.** → True\n\nThe extra hypothesis $x\\ne 2$ removes the even prime. What remains is $\\{3,5,7,11,13\\}$, all odd, so the implication has no false row. Restricting the domain repairs the unrestricted universal, so the statement is True.",
+      "**E.** → False\n\nSubsethood needs every member of $P$ to sit in $E$. Already $3\\in P$ and $3\\notin E$. One miss kills the inclusion, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "Let $P=\\{2,3,5,7,11,13\\}$ be the primes less than $15$ and $E=\\{2,4,6,8,10,12,14\\}$ the evens less than $15$.\n\nIntersection keeps numbers in both lists. Difference $P\\setminus E$ keeps members of $P$ missing from $E$. A sentence $\\forall x\\in P$ makes a promise about all six members. A subset claim $P\\subseteq E$ fails as soon as one member of $P$ sits outside $E$."
+  },
+  {
+    "id": "math-1-48",
+    "case_id": "MATH 1.48",
+    "title": "Comparing the conditions x > 10 and x > 5",
+    "subsection": "1.3",
+    "context": "Let x be a real number. Compare the conditions $x>10$ and $x>5$.",
+    "statements": [
+      "The condition $x>10$ is sufficient for $x>5$.",
+      "The condition $x>10$ is necessary for $x>5$.",
+      "The condition $x>5$ is necessary for $x>10$.",
+      "The conditions $x>10$ and $x>5$ are equivalent.",
+      "$x=7$ is a counterexample to the claim that $x>5$ implies $x>10$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $P\\Rightarrow Q$: a number past $10$ cannot fail to be past $5$. That is what \"$P$ is sufficient for $Q$\" means, so the statement is True.",
+      "**B.** → False\n\nNecessary would require $Q\\Rightarrow P$: every $x>5$ would have to satisfy $x>10$. Test $x=7$: $7>5$ holds and $7>10$ fails. The whole interval $(5,10]$ supplies further counterexamples, so the statement is False.",
+      "**C.** → True\n\n\"$Q$ is necessary for $P$\" is the same recovered arrow $P\\Rightarrow Q$ read from the other end: $x>10$ cannot hold unless $x>5$ also holds. The necessary condition is the one the arrow points at, so the statement is True.",
+      "**D.** → False\n\nEquivalence needs both arrows. The overview recovered $P\\Rightarrow Q$, but $Q\\Rightarrow P$ fails at $x=7$ and on the whole interval $(5,10]$. The two inequalities are not interchangeable, so the statement is False.",
+      "**E.** → True\n\nA counterexample to $Q\\Rightarrow P$ must make $x>5$ true and $x>10$ false. Check $x=7$: $7>5$ holds and $7>10$ fails. The named witness sits in $(5,10]$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "Two conditions on a real number: $P$ says $x>10$ and $Q$ says $x>5$.\n\n\"$P$ is sufficient for $Q$\" is the arrow $P\\Rightarrow Q$. \"$Q$ is necessary for $P$\" is the same arrow read from the other end. Equivalence $P\\Leftrightarrow Q$ needs both arrows. A counterexample to $Q\\Rightarrow P$ is a number that satisfies $Q$ and fails $P$.\n\nIf $x>10$, then $x>5$ automatically because $10>5$, so $P\\Rightarrow Q$ holds."
+  },
+  {
+    "id": "math-1-49",
+    "case_id": "MATH 1.49",
+    "title": "Loan approval",
+    "subsection": "1.3",
+    "context": "A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below 40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720 and a debt-to-income ratio of 45%.",
+    "statements": [
+      "Applicant P satisfies both required conditions.",
+      "We may conclude that P's loan will be approved.",
+      "Applicant Q does not satisfy both required conditions.",
+      "Since Q fails one of the required conditions, Q's loan will not be approved.",
+      "If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of credit score."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nApplicant P has score $750\\ge 700$ and ratio $35\\%<40\\%$. Both halves of $R$ hold, so P satisfies both required conditions. The claim is that file check, so the statement is True.",
+      "**B.** → False\n\nThe recovered rule is $L\\Rightarrow R$. Meeting $R$ is necessary, not sufficient. P has $R$ true, but that does not force $L$. The reverse arrow $R\\Rightarrow L$ is not in the rule, so the statement is False.",
+      "**C.** → True\n\nApplicant Q clears the score test $720\\ge 700$ but fails the ratio: $45\\%$ is not below $40\\%$. One false conjunct makes $R$ false. Q does not satisfy both required conditions, so the statement is True.",
+      "**D.** → True\n\nThe contrapositive of $L\\Rightarrow R$ is $\\neg R\\Rightarrow\\neg L$. Q fails the ratio test, so $R$ is false, and the loan is not approved. Failing a necessary condition forces refusal, so the statement is True.",
+      "**E.** → False\n\nA ratio below $40\\%$ is only one conjunct of $R$. An applicant with ratio $30\\%$ and score $650$ already fails the score test, so $R$ is false and approval is blocked. Even a full $R$ would still be only necessary, not sufficient, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 6,
+    "solution_overview": "Write $R$ for the bank's requirement (credit score at least $700$ and debt-to-income ratio below $40\\%$) and $L$ for \"the loan is approved.\" The wording is \"approved only if $R$,\" which is the arrow\n\n$$L\\Rightarrow R$$\n\nSo $R$ is necessary for approval; the reverse arrow $R\\Rightarrow L$ is not in the rule. The contrapositive $\\neg R\\Rightarrow\\neg L$ is guaranteed: fail $R$ and the loan is refused. Because $R$ joins its two tests with \"and\", a single failure sinks the whole requirement."
+  },
+  {
+    "id": "math-1-50",
+    "case_id": "MATH 1.50",
+    "title": "The universe of discourse is the set of real numbers, ℝ",
+    "subsection": "1.3",
+    "context": "The universe of discourse is the set of real numbers, ℝ.",
+    "statements": [
+      "The negation of \"$\\forall x\\, (x^2 \\ge 0)$\" is \"$\\exists x\\, (x^2 < 0)$.\"",
+      "The statement \"$\\exists x\\, (x^2 = -1)$\" is true.",
+      "The negation of \"$\\exists x\\, (x > 100)$\" is \"$\\forall x\\, (x \\le 100)$.\"",
+      "\"$\\forall x > 0\\, \\exists y\\, (y > x)$\" is a true statement.",
+      "\"$\\exists y\\, \\forall x > 0\\, (y > x)$\" is a true statement."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nNegating a universal produces an existential of the negated predicate. The inequality $\\ge$ flips to $<$:\n\n$$\\neg\\forall x\\,(x^{2}\\ge 0)\\equiv\\exists x\\,(x^{2}<0)$$\n\nThe quoted sentence is that negation, so the statement is True.",
+      "**B.** → False\n\nSquares of reals land in $[0,\\infty)$. No real $x$ satisfies $x^{2}=-1$. The existence claim would succeed over $\\mathbb C$, but the universe here is $\\mathbb R$, so the statement is False.",
+      "**C.** → True\n\nNegating an existential produces a universal of the negated predicate. The inequality $>$ flips to $\\le$, including the boundary $100$:\n\n$$\\neg\\exists x\\,(x>100)\\equiv\\forall x\\,(x\\le 100)$$\n\nThe quoted sentence is that negation, so the statement is True.",
+      "**D.** → True\n\nBecause $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every $x>0$:\n\n$$x+1>x$$\n\nEach $x$ gets its own $y$, so the statement is True.",
+      "**E.** → False\n\nNow a single $y$ must be fixed first and then outrank every positive $x$. Whatever $y$ is offered,\n\n$$x=\\max(y+1,1)$$\n\nis a positive number bigger than it. No champion exists, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 7,
+    "solution_overview": "The universe is $\\mathbb R$.\n\nNegation of quantifiers follows the mirror rules\n\n$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x),\\qquad \\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)$$\n\nSquares of reals are never negative. Quantifier order matters: whichever variable is written first is chosen first, and later choices may depend on it. $\\forall x\\,\\exists y$ lets $y$ be built from $x$; $\\exists y\\,\\forall x$ freezes one $y$ that must work for every $x$."
+  },
+  {
+    "id": "math-1-51",
+    "case_id": "MATH 1.51",
+    "title": "A medical diagnostic criterion",
+    "subsection": "1.3",
+    "context": "A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B; however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out. Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.",
+    "statements": [
+      "Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).",
+      "Patient S can be diagnosed with condition X.",
+      "Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.",
+      "If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other symptoms.",
+      "It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe criterion is $D\\Rightarrow S$, and $S$ demands both symptoms. Patient R holds the diagnosis, so both symptoms must be present. A diagnosis on A alone would be $D$ with $\\neg B$, which breaks the necessary condition, so the statement is False.",
+      "**B.** → False\n\nPatient S has A but not B, so the conjunction $S$ is false. The contrapositive $\\neg S\\Rightarrow\\neg D$ then blocks the diagnosis. Missing either half of an \"and\" is enough, so the statement is False.",
+      "**C.** → False\n\nSufficient would be $S\\Rightarrow D$. The doctor states the opposite: both symptoms do not guarantee the diagnosis, because other conditions must still be ruled out. $S$ is necessary and not sufficient, so the statement is False.",
+      "**D.** → True\n\nMissing symptom A makes the conjunction $S$ false, regardless of B. Then $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis. An \"and\" is destroyed by either half, so no A means no diagnosis with X, so the statement is True.",
+      "**E.** → False\n\nThe doctor explicitly allows both symptoms while other conditions are still being excluded: $S$ without $D$. That open gap is what separates a necessary condition from a sufficient one. Claiming the gap is impossible is claiming sufficiency, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 8,
+    "solution_overview": "Let $D$ mean diagnosed with condition X, and let $S$ mean the patient shows symptom A and symptom B.\n\n\"Diagnosed only if $S$\" is the arrow $D\\Rightarrow S$: no diagnosis without both symptoms, which makes $S$ necessary. The doctor also says both symptoms do not guarantee the diagnosis, so the reverse arrow $S\\Rightarrow D$ is refused. The contrapositive $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis the moment either symptom is missing.\n\nPatient R holds the diagnosis. Patient S has A but not B."
+  },
+  {
+    "id": "math-1-52",
+    "case_id": "MATH 1.52",
+    "title": "Existential and Universal Claims Over Integers 1 to 20",
+    "subsection": "1.3",
+    "context": "The universe is the set of integers from 1 to 20, i.e. $\\{1, 2,..., 20\\}$.",
+    "statements": [
+      "\"$\\exists x \\in \\{1,\\ldots,20\\}$ such that x is divisible by both 3 and 5\" is true",
+      "\"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 4, then x is divisible by 2\" is true",
+      "\"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 2, then x is divisible by 4\" is true",
+      "The negation of \"$\\forall x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\Rightarrow \\mathrm{Odd}(x))$\" is \"$\\exists x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\land \\mathrm{Even}(x))$\"",
+      "The negated statement in (d) is itself true"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nDivisible by $3$ and by $5$ means divisible by $15$, and $15$ sits inside $\\{1,\\ldots,20\\}$. One witness is all an existential needs, so the statement is True.",
+      "**B.** → True\n\nA counterexample would have to be a multiple of $4$ in the range that is not even. Every multiple of $4$ can be written $4k=2(2k)$, so it is even. The list in this universe is $\\{4,8,12,16,20\\}$, each even. There is no odd multiple of four, so the statement is True.",
+      "**C.** → False\n\nThe flipped implication breaks at $x=2$: divisible by $2$, not by $4$. One counterexample inside the range kills a universal, so the statement is False.",
+      "**D.** → True\n\nAn implication fails only where the \"if\" holds and the \"then\" fails, so the negation of $\\forall x\\,(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$ is\n\n$$\\exists x\\,(\\mathrm{Prime}(x)\\land\\mathrm{Even}(x))$$\n\nstill restricted to $\\{1,\\ldots,20\\}$. The quoted sentence is that negation, so the statement is True.",
+      "**E.** → True\n\nThe negation asks for an even prime in the range, and $2$ is one: divisors $1$ and $2$ only, and even. One witness settles the existential, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "The universe is the finite set $\\{1,2,\\ldots,20\\}$.\n\nAn existential sentence needs one working example. A universal sentence is destroyed by one counterexample. An implication $P\\Rightarrow Q$ fails only where $P$ holds and $Q$ fails, so its negation is an existential $P\\land\\neg Q$."
+  },
+  {
+    "id": "math-1-53",
+    "case_id": "MATH 1.53",
+    "title": "A club membership rule",
+    "subsection": "1.3",
+    "context": "A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.",
+    "statements": [
+      "Person T is a member of the club.",
+      "Person U is a member of the club.",
+      "The banned list and the membership list are complementary (every person is in exactly one of the two).",
+      "If a person has exactly 3 violations, they could either be a member or banned, depending on additional unstated factors.",
+      "There exists some number of violations for which it is genuinely ambiguous, from the given rule alone, whether a person is banned."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBanned means $v\\ge 3$. Person T has $v=2$, so $2\\ge 3$ fails and T is not banned. The biconditional \"member iff not banned\" then forces membership, so the statement is True.",
+      "**B.** → False\n\nPerson U has $v=4$, and $4\\ge 3$, so U is banned. The same biconditional makes banned the exact opposite of member, so U is not a member, so the statement is False.",
+      "**C.** → True\n\n\"Member iff not banned\" means the two lists never overlap and never leave a gap: every person is in exactly one of them. That is the definition of complementary sets, so the statement is True.",
+      "**D.** → False\n\n\"Three or more\" includes $v=3$. Check $3\\ge 3$: true, so a person with exactly $3$ violations is banned, hence not a member. The count $v=3$ is not discretionary, so the statement is False.",
+      "**E.** → False\n\nFor each integer $v$, the test $v\\ge 3$ returns a definite yes or no. Counts $0,1,2$ are members; counts $3,4,5,\\ldots$ are banned. No $v$ is left undecided, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "The club rule is a biconditional: a person is a member if and only if they are not on the banned list. The banned list is the people with $3$ or more rule violations. Writing $v$ for the violation count, banned means $v\\ge 3$, and membership is the exact opposite.\n\nBecause the two conditions are exact opposites, the two lists never overlap and never leave a gap. For each integer $v$, the test $v\\ge 3$ returns a definite yes or no."
+  },
+  {
+    "id": "math-1-54",
+    "case_id": "MATH 1.54",
+    "title": "One Counterexample Against \"All Primes Are Odd\"",
+    "subsection": "1.3",
+    "context": "Consider the universal claim: \"All prime numbers are odd,\" and the irrationality of √2.",
+    "statements": [
+      "To disprove the universal statement \"all prime numbers are odd,\" it suffices to give one counterexample.",
+      "The number 2 is a valid counterexample to \"all prime numbers are odd.\"",
+      "A contradiction proof of an implication assumes that its condition holds while its conclusion fails, then derives a contradiction.",
+      "A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.",
+      "If a statement is confirmed true for one specific example, this proves it is true for all cases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA universal $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. That one counterexample is a complete disproof. Nothing further is required, so the statement is True.",
+      "**B.** → True\n\nA counterexample to \"all primes are odd\" must be prime and fail to be odd. The number $2$ has divisors $1$ and $2$ only, so it is prime, and it is even. Both halves succeed, so the statement is True.",
+      "**C.** → True\n\n$P\\Rightarrow Q$ fails only in the case $P\\land\\neg Q$. A contradiction proof assumes that unique failure case and derives an impossibility, showing the failure cannot occur. The description in the statement is that method, so the statement is True.",
+      "**D.** → False\n\nTo prove \"$\\sqrt{2}$ is irrational\" by contradiction, assume the negation: $\\sqrt{2}$ is rational, so $\\sqrt{2}=\\frac{a}{b}$ in lowest terms. Assuming irrationality at the start would assume the conclusion rather than its opposite, so the statement is False.",
+      "**E.** → False\n\nOne confirming example never proves a universal claim. The odd prime $3$ fits \"all primes are odd\" and still leaves $2$ untested. Checking finitely many favourable cases never rules out a later counterexample, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "A universal claim $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. One counterexample is a complete disproof. The reverse does not work: a pile of confirming examples never proves a universal.\n\nA contradiction proof of an implication assumes the unique failure case $P\\land\\neg Q$ and derives an impossibility. To prove a claim by contradiction, assume its negation, not the claim itself."
+  },
+  {
+    "id": "math-1-55",
+    "case_id": "MATH 1.55",
+    "title": "An event organizer's rule is : \"If it rains, the picnic is cancelled.\"",
+    "subsection": "1.3",
+    "context": "An event organizer states: \"If it rains, the picnic is cancelled.\"",
+    "statements": [
+      "The negation of this rule is: \"It rains and the picnic is not cancelled.\"",
+      "The converse, \"If the picnic is cancelled, then it rained,\" is guaranteed true whenever the organizer's rule holds.",
+      "The inverse, \"If it does not rain, the picnic is not cancelled,\" is logically equivalent to the original rule.",
+      "Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse statement but does not contradict the organizer's rule.",
+      "The contrapositive, \"If the picnic was not cancelled, then it did not rain,\" is logically equivalent to the original rule and must also hold."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered that $P\\Rightarrow Q$ fails only as $P\\land\\neg Q$: rain and an uncancelled picnic. The quoted negation is that unique failure case, so the statement is True.",
+      "**B.** → False\n\nThe converse $Q\\Rightarrow P$ reads the rule backwards. On the overview's dry venue-conflict day, $P$ is false and $Q$ is true: the original holds, while the converse fails. The organizer never promised that rain is the only cancelling cause, so the statement is False.",
+      "**C.** → False\n\nThe inverse is $\\neg P\\Rightarrow\\neg Q$. On that same dry cancelled day, $\\neg P$ is true and $\\neg Q$ is false, so the inverse fails while the original still holds. Inverse pairs with converse, not with the original, so the statement is False.",
+      "**D.** → True\n\nOn the venue-conflict day, rain is false and cancelled is true. The inverse demanded \"no rain, so no cancellation,\" and the cancellation happened, so the inverse is broken. The original $P\\Rightarrow Q$ is true whenever $P$ is false, so a dry cancellation never tests the organizer's promise, so the statement is True.",
+      "**E.** → True\n\nSwap and negate: $\\neg Q\\Rightarrow\\neg P$, \"if the picnic was not cancelled, then it did not rain.\" That is the contrapositive, which always shares the original's truth value. Once the organizer's rule is granted, this rewriting comes with it, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 12,
+    "solution_overview": "Write $P$ for \"it rains\" and $Q$ for \"the picnic is cancelled\". The organizer's rule is $P\\Rightarrow Q$.\n\nAn implication fails only when the hypothesis holds and the conclusion fails:\n\n$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$\n\nThe contrapositive $\\neg Q\\Rightarrow\\neg P$ is equivalent to the original. The converse $Q\\Rightarrow P$ and the inverse $\\neg P\\Rightarrow\\neg Q$ are not.\n\nOn a dry venue-conflict day, $P$ is false and $Q$ is true. The original holds because $P$ is false."
+  },
+  {
+    "id": "math-1-56",
+    "case_id": "MATH 1.56",
+    "title": "Inclusive Or in a Two-Product Purchase Survey",
+    "subsection": "1.3",
+    "context": "A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought both X and Y.",
+    "statements": [
+      "In mathematical logic, the statement \"a consumer bought X or Y\" includes consumers who bought both.",
+      "The number of consumers who bought X or Y (in the inclusive sense) is 60.",
+      "If \"or\" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying \"X or Y\" would be 45.",
+      "A biconditional means that its two components always have the same truth value.",
+      "A biconditional is true whenever at least one of its two components is true."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nInclusive \"or\" means at least one of $X,Y$. The $15$ both-buyers have both true, so they satisfy \"at least one\" and stay inside the count. Exclusive or would drop those $15$; mathematical or does not, so the statement is True.",
+      "**B.** → True\n\nAdding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:\n\n$$|X\\cup Y|=40+35-15=60$$\n\nThe claim is $60$, so the statement is True.",
+      "**C.** → True\n\nExclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only is $35-15=20$, so\n\n$$25+20=45$$\n\nThe claim is $45$, so the statement is True.",
+      "**D.** → True\n\nThe four truth rows of $P\\Leftrightarrow Q$ are TT true, FF true, TF false, FT false. The two true rows are exactly the rows where $P$ and $Q$ agree. \"Always the same truth value\" is that description, so the statement is True.",
+      "**E.** → False\n\n\"At least one true\" is the truth condition for $P\\lor Q$, not for $P\\Leftrightarrow Q$. The mixed row $P$ true, $Q$ false has at least one true part, yet the biconditional is false there, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 13,
+    "solution_overview": "A market survey of $100$ consumers found $|X|=40$, $|Y|=35$, and $|X\\cap Y|=15$.\n\nInclusive \"or\" means at least one, so both-buyers stay inside. Exclusive \"or\" keeps exactly one. A biconditional is true when both parts agree and false the moment their truth values differ.\n\nX-only is $|X|-|X\\cap Y|$. Y-only is $|Y|-|X\\cap Y|$."
+  },
+  {
+    "id": "math-1-57",
+    "case_id": "MATH 1.57",
+    "title": "Passing a course: attendance and the final exam",
+    "subsection": "1.3",
+    "context": "A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of classes and scored 90 on the final.",
+    "statements": [
+      "Student K passes the course.",
+      "Student L passes the course.",
+      "A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.",
+      "If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how close their score is to 50.",
+      "There could exist a student who passes despite having a lower combined average performance than another student who fails, since the rule checks each threshold separately rather than an overall average."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nStudent K cleared attendance ($85\\%\\ge 80\\%$) but scored $48<50$, so $F$ is false and $A\\land F$ collapses. One false conjunct makes the whole pass condition false. Near-misses do not count: $48$ is not $50$, so the statement is False.",
+      "**B.** → False\n\nStudent L's $90$ clears the exam, but $75\\%<80\\%$ fails attendance. The conjunction never lets the strong half rescue the weak half, so L does not pass, so the statement is False.",
+      "**C.** → False\n\nCompensation would let a high exam score repair low attendance. Student L is the test file: $90$ on the exam with $75\\%$ attendance still yields $A$ false, so $A\\land F$ is false. Exam points cannot repair attendance, so the statement is False.",
+      "**D.** → True\n\nA score below $50$ makes $F$ false, whether the score is $49$ or $10$. For K, $48<50$ already falsifies $F$, so $A\\land F$ is false even though attendance cleared. A threshold recognises no near-misses, so the statement is True.",
+      "**E.** → True\n\nCompare $(80\\%,50)$ with $(79\\%,100)$. The first clears both tests and passes; the second fails on attendance, yet looks far stronger on an average. Because the rule checks two thresholds instead of one average, reversals like this can happen, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 14,
+    "solution_overview": "Passing is governed by an and: attendance of at least $80\\%$ and a final score of at least $50$. Writing $A$ and $F$ for those two conditions, pass holds exactly when $A\\land F$ holds.\n\nThe words \"if and only if\" mean the list is complete. Conjunction $\\land$ is unforgiving: one false part sinks the whole condition. The rule never adds the two numbers together."
+  },
+  {
+    "id": "math-1-58",
+    "case_id": "MATH 1.58",
+    "title": "Online store filter (De Morgan)",
+    "subsection": "1.3",
+    "context": "An online store's \"clearance-free, in-stock only\" filter displays an item exactly when NOT (the item is on sale OR the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on sale and is in stock.",
+    "statements": [
+      "Item M is displayed by the filter.",
+      "Item N is displayed by the filter.",
+      "The filter condition \"NOT (on sale OR out of stock)\" is logically equivalent to \"NOT on sale OR NOT out of stock.\"",
+      "The filter condition is logically equivalent to \"NOT on sale AND NOT out of stock,\" meaning an item is displayed only if it is neither on sale nor out of stock.",
+      "Item K is displayed by the filter."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe filter is $\\neg S\\land\\neg O$. Item M is on sale, so $\\neg S$ is already false, and a false conjunct hides M. Being in stock does not rescue an on-sale item, so the statement is False.",
+      "**B.** → False\n\nItem N is out of stock, so $\\neg O$ fails. The same conjunction fails on the other half, so N is hidden too. Not being on sale is not enough, so the statement is False.",
+      "**C.** → False\n\nThe overview recovered $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$, not $\\neg S\\lor\\neg O$. On item M, the wrong OR form would display M (in stock), while the real AND hides M. Two formulas that disagree on one item are not equivalent, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$. In English that is \"not on sale and not out of stock,\" i.e. neither on sale nor out of stock. The claim is that rewrite, so the statement is True.",
+      "**E.** → True\n\nItem K is not on sale and is in stock, so both $\\neg S$ and $\\neg O$ hold. The filter displays K, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 15,
+    "solution_overview": "Let $S$ mean the item is on sale and $O$ mean the item is out of stock. The filter displays an item when $\\neg(S\\lor O)$ is true.\n\nDe Morgan's law turns a negated OR into an AND of the two negations:\n\n$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$\n\nThe connective flips as the NOT moves in. Keeping the OR would be the wrong rewrite."
+  },
+  {
+    "id": "math-1-59",
+    "case_id": "MATH 1.59",
+    "title": "Inflation and central-bank interest rates",
+    "subsection": "1.3",
+    "context": "If a country's inflation rate exceeds 10%, the central bank raises interest rates.",
+    "statements": [
+      "The contrapositive is: \"If the central bank does not raise interest rates, then inflation is at most 10%.\"",
+      "The converse, \"If the central bank raises interest rates, then inflation exceeds 10%,\" is logically equivalent to the original statement.",
+      "Inflation above 10% is sufficient for the central bank to raise interest rates.",
+      "Inflation above 10% is necessary for the central bank to raise interest rates.",
+      "If the bank raised interest rates, we may validly conclude that inflation exceeded 10%."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nFrom $P\\Rightarrow Q$, the contrapositive is $\\neg Q\\Rightarrow\\neg P$: no rate rise, therefore inflation does not exceed $10\\%$, i.e. at most $10\\%$. That is the quoted sentence. \"Not above $10$\" and \"at most $10$\" are the same cutoff, so the statement is True.",
+      "**B.** → False\n\nThe converse $Q\\Rightarrow P$ would say every rate rise comes from inflation above $10\\%$. A currency-defence rise at $4\\%$ inflation has $Q$ true and $P$ false: the original is untouched because $P$ is false, while the converse fails. Equivalence would need both arrows, so the statement is False.",
+      "**C.** → True\n\n\"$P$ is sufficient for $Q$\" means $P\\Rightarrow Q$. The given rule is exactly that arrow: inflation above $10\\%$ forces a rate rise. $P$ alone guarantees $Q$, so the statement is True.",
+      "**D.** → False\n\n\"$P$ is necessary for $Q$\" would be $Q\\Rightarrow P$, the converse. The given arrow points the other way: $Q$ is necessary for $P$, not $P$ for $Q$. The rule does not force high inflation whenever rates rise, so the statement is False.",
+      "**E.** → False\n\nObserving a rate rise ($Q$ true) and inferring inflation above $10\\%$ ($P$ true) is affirming the consequent. The premises give $P\\Rightarrow Q$, never $Q\\Rightarrow P$. A $4\\%$ defence rise is a case where $Q$ holds and $P$ fails, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 16,
+    "solution_overview": "Write $P$ for \"inflation exceeds $10\\%$\" and $Q$ for \"the central bank raises interest rates.\" The given rule is $P\\Rightarrow Q$.\n\nHigh inflation forces a rate rise. The contrapositive $\\neg Q\\Rightarrow\\neg P$ always carries the same truth value. The converse $Q\\Rightarrow P$ is a different claim. In $P\\Rightarrow Q$, $P$ is sufficient for $Q$ and $Q$ is necessary for $P$."
+  },
+  {
+    "id": "math-1-60",
+    "case_id": "MATH 1.60",
+    "title": "A chain of biconditionals",
+    "subsection": "1.3",
+    "context": "Three propositions have matching truth values: the first matches the second, and the second matches the third. The first proposition is true.",
+    "statements": [
+      "The second proposition is true.",
+      "The third proposition is true.",
+      "The first and third propositions must also have the same truth value.",
+      "If the third proposition were false, the first would also be false.",
+      "Knowing only that the first and third propositions match is enough to conclude that the second always matches them."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered that $Q$ is true from $P\\Leftrightarrow Q$ and $P$ true. The claim is that same fact, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered that $R$ is true from $Q\\Leftrightarrow R$ and $Q$ true. The claim is that same fact, so the statement is True.",
+      "**C.** → True\n\nIf $P$ agrees with $Q$ and $Q$ agrees with $R$, then $P$ agrees with $R$. In symbols, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$ yield $P\\Leftrightarrow R$. The first and third must share a truth value, so the statement is True.",
+      "**D.** → True\n\nBiconditionals work in both directions, so the chain can be walked from either end. If $R$ were false, $Q\\Leftrightarrow R$ would force $Q$ false, and $P\\Leftrightarrow Q$ would force $P$ false, so the statement is True.",
+      "**E.** → False\n\n$P\\Leftrightarrow R$ alone does not mention $Q$. The assignment $P$ true, $R$ true, $Q$ false satisfies $P\\Leftrightarrow R$ while breaking $P\\Leftrightarrow Q$. Knowing only the end link leaves the middle free, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 17,
+    "solution_overview": "A biconditional $A\\Leftrightarrow B$ is a two-way link: $A$ and $B$ must always carry the same truth value. Here two links are given, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$, so the three propositions are welded into one chain\n\n$$P\\Leftrightarrow Q\\Leftrightarrow R$$\n\nand the extra fact that $P$ is true travels along it. A true $P$ forces $Q$ true through the first link, and a true $Q$ forces $R$ true through the second. The unstated link $P\\Leftrightarrow R$ holds as well, but on its own it leaves $Q$ free."
+  }
+]

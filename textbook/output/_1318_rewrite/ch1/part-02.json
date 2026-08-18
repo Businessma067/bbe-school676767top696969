@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-1-21",
+    "case_id": "MATH 1.21",
+    "title": "Even Numbers Inside the Naturals: A Cardinality Trap",
+    "subsection": "1.1",
+    "context": "Let $\\mathbb{N} = \\{1, 2, 3, \\dots\\}$ and let $H = \\{2, 4, 6, 8, \\dots\\}$ be the set of positive even integers.",
+    "statements": [
+      "$H \\subseteq \\mathbb{N}$.",
+      "H is a finite set.",
+      "$H = \\mathbb{N}$.",
+      "The map $f(n) = 2n$ pairs every natural number with exactly one element of H and vice versa.",
+      "Since $H \\subsetneq \\mathbb{N}$, H must have strictly fewer elements than $\\mathbb{N}$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nSubsethood only requires that every member of $H$ already sit in $\\mathbb{N}$. Each positive even is $2k$ for some integer $k\\ge 1$, hence a natural number. There is no positive even outside $\\mathbb{N}$, so the statement is True.",
+      "**B.** → False\n\nA finite set of positive evens would have a largest member $2N$. Then $2(N+1)$ is still even and strictly larger:\n\n$$2(N+1)=2N+2>2N$$\n\nso it would also sit in $H$. The roster $2,4,6,\\ldots$ never ends, so $H$ is infinite. Being a subset of $\\mathbb{N}$ does not make $H$ finite, so the statement is False.",
+      "**C.** → False\n\nEquality of sets needs the same members. The overview already has the leftover $1\\in\\mathbb{N}\\setminus H$. That one odd already forces $H\\neq\\mathbb{N}$, so the statement is False.",
+      "**D.** → True\n\nThe overview's map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$. It is onto $H$ because every positive even $2k$ equals $f(k)$. That is a bijection $\\mathbb{N}\\to H$, which is what pairing every natural with exactly one even (and vice versa) means, so the statement is True.",
+      "**E.** → False\n\nThe overview already has the leftover $1\\in\\mathbb{N}\\setminus H$, so the inclusion is proper: $H\\subsetneq\\mathbb{N}$. The same bijection $f(n)=2n$ still pairs the two sets, so they have the same cardinality. For infinite sets, a proper subset need not be strictly smaller. The claim treats a finite-set slogan as a law, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 21,
+    "solution_overview": "**Part 1: The sets.**\n\nLet $\\mathbb{N}=\\{1,2,3,\\ldots\\}$ and let $H=\\{2,4,6,\\ldots\\}$ be the positive even integers.\n\n**Part 2: The operations.**\n\nSubsethood $H\\subseteq\\mathbb{N}$ asks whether every even is already a natural. Equality $H=\\mathbb{N}$ needs both inclusions. For infinite sets, same cardinality means a bijection exists, not that one roster is missing no members. The pairing\n\n$$f(n)=2n$$\n\nsends each natural to an even. Odd $1$ sits in $\\mathbb{N}$ and misses $H$."
+  },
+  {
+    "id": "math-1-22",
+    "case_id": "MATH 1.22",
+    "title": "An Object and Its Singleton in the Same Set",
+    "subsection": "1.1",
+    "context": "Let a be an object and let $K = \\{a, \\{a\\}\\}$.",
+    "statements": [
+      "$a \\in K$.",
+      "$\\{a\\} \\in K$.",
+      "$\\{a\\} \\subseteq K$.",
+      "$\\{\\{a\\}\\} \\subseteq K$.",
+      "$\\lvert K\\rvert = 2$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nMembership $a\\in K$ asks whether the unwrapped object $a$ is on the roster of $K$. The first listed object is exactly $a$, so $a\\in K$, so the statement is True.",
+      "**B.** → True\n\nThe second listed object is the singleton $\\{a\\}$ itself, so $\\{a\\}\\in K$. That is membership of a set-object, not subsethood. Braces matter: $\\{a\\}$ is not the same object as $a$, so the statement is True.",
+      "**C.** → True\n\nSubsethood $\\{a\\}\\subseteq K$ asks whether the only member of $\\{a\\}$, namely $a$, sits in $K$. The roster of $K$ begins with $a$, so $a\\in K$ and the singleton is a subset, so the statement is True.",
+      "**D.** → True\n\nSubsethood $\\{\\{a\\}\\}\\subseteq K$ asks whether the only member of $\\{\\{a\\}\\}$, namely $\\{a\\}$, sits in $K$. The second listed object of $K$ is $\\{a\\}$, so $\\{a\\}\\in K$ and the test succeeds, so the statement is True.",
+      "**E.** → True\n\nThe two listed objects are distinct: an element and a one-element set containing that element. Two distinct members give\n\n$$\\lvert K\\rvert=2,$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 22,
+    "solution_overview": "**Part 1: The sets.**\n\nThe roster $K=\\{a,\\{a\\}\\}$ lists two objects: the bare object $a$, and the singleton set $\\{a\\}$. Those are different: one is an element, the other is a set containing that element.\n\n**Part 2: The operations.**\n\nMembership $x\\in K$ asks whether $x$ is one of those two listed objects. Subsethood $S\\subseteq K$ asks whether every member of $S$ is one of those two. Cardinality counts distinct listed objects."
+  },
+  {
+    "id": "math-1-23",
+    "case_id": "MATH 1.23",
+    "title": "De Morgan's laws with a universal set",
+    "subsection": "1.2",
+    "context": "Let $U = \\{1, 2,..., 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    "statements": [
+      "$(A \\cup B)^{c} = \\{9, 10\\}$.",
+      "$(A \\cup B)^{c} = A^{c} \\cap B^{c}$.",
+      "$(A \\cap B)^{c} = A^{c} \\cup B^{c}$.",
+      "$A \\cap B = \\{4, 5, 6\\}$.",
+      "$(A \\cap B)^{c} = \\{1, 2, 3, 4, 5, 9, 10\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe complement of a union is the numbers in $U$ that miss both $A$ and $B$. Putting the two lists together covers $1$ through $8$, so\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nand the leftover in $U$ is\n\n$$(A\\cup B)^c=\\{9,10\\}.$$\n\nThe claim is that same list, so the statement is True.",
+      "**B.** → True\n\nDe Morgan's first law says the complement of a union is the intersection of the complements. The overview listed $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so\n\n$$A^c\\cap B^c=\\{9,10\\}.$$\n\nNumbers $6,7,8$ miss $A$ but sit in $B$, so they fail $B^c$. The intersection matches $(A\\cup B)^c$, so the statement is True.",
+      "**C.** → True\n\nDe Morgan's second law says the complement of an intersection is the union of the complements. The overview listed $A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nJoining the complements gives the same list:\n\n$$A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nThe two sides agree, so the statement is True.",
+      "**D.** → False\n\nIntersection keeps only numbers that sit in both lists. The overview listed $A\\cap B=\\{4,5\\}$. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match, so the statement is False.",
+      "**E.** → False\n\nThe overview listed $A\\cap B=\\{4,5\\}$, so the complement in $U$ must drop $4$ and $5$ and keep everything else:\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nThe claimed list $\\{1,2,3,4,5,9,10\\}$ keeps $4$ and $5$ while omitting $6,7,8$. That is the opposite of a complement, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "**Part 1: The sets.**\n\nLet $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$.\n\n**Part 2: The operations.**\n\nComplement $X^c$ is $U\\setminus X$. Union keeps members of at least one set; intersection keeps members of both. The shared pieces are\n\n$$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$$\n\nDe Morgan's laws swap union with intersection under complements:\n\n$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$"
+  },
+  {
+    "id": "math-1-24",
+    "case_id": "MATH 1.24",
+    "title": "Cartesian products",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    "statements": [
+      "$\\lvert A \\times B \\rvert = 6$.",
+      "$(2, x) \\in A \\times B$.",
+      "$(x, 2) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "The number of elements in $B \\times A$ equals the number of elements in $A \\times B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview already counted $\\lvert A\\times B\\rvert=2\\cdot 3=6$ by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$, so the statement is True.",
+      "**B.** → True\n\nMembership in $A\\times B$ is a two-slot test. For $(2,x)$ the first slot $2$ sits in $A=\\{1,2\\}$ and the second slot $x$ sits in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$, so the statement is True.",
+      "**C.** → False\n\nThe pair $(x,2)$ puts a letter in the first slot, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$, not in $A\\times B$. The first slot already fails, so the statement is False.",
+      "**D.** → False\n\nSet equality needs identical members, not identical counts. The pair $(2,x)$ sits in $A\\times B$, but $2\\notin B$, so that pair cannot sit in $B\\times A$. One missing witness already forces $A\\times B\\neq B\\times A$, so the statement is False.",
+      "**E.** → True\n\nSize ignores order. The reverse product is\n\n$$\\lvert B\\times A\\rvert=3\\cdot 2=6=\\lvert A\\times B\\rvert.$$\n\nThe counts agree even though the member lists do not, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "**Part 1: The sets.**\n\nLet $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about ordered pairs formed from those two sets.\n\n**Part 2: The operations.**\n\nAn ordered pair $(a,b)$ lands in $A\\times B$ only when the first slot is from $A$ and the second from $B$. Size is the product rule\n\n$$\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert=2\\cdot 3=6.$$\n\nTurning the factors around produces $B\\times A$: the same count, different members."
+  },
+  {
+    "id": "math-1-25",
+    "case_id": "MATH 1.25",
+    "title": "Sets defined by inequalities",
+    "subsection": "1.2",
+    "context": "Let $A = \\{x \\in R : 1 < x < 5\\}$ and $B = \\{x \\in R : x \\ge 3\\}$.",
+    "statements": [
+      "$A \\subseteq B$.",
+      "$A \\cap B = \\{x \\in R : 3 \\le x < 5\\}$, i.e. the interval $[3, 5)$.",
+      "$B \\subseteq A$.",
+      "$A \\cup B = \\{x \\in R : x > 1\\}$, i.e. the interval $(1, \\infty)$.",
+      "There exists a real number that belongs to A but not to B."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nSubsethood would need every point of $(1,5)$ to satisfy $x\\ge 3$. The leftover strip $(1,3)$ is the obstruction. Explicitly $x=2$ sits in $A$ because $1<2<5$, and it misses $B$ because $2<3$. One witness kills $A\\subseteq B$, so the statement is False.",
+      "**B.** → True\n\nNumbers satisfying both $1<x<5$ and $x\\ge 3$ form the tighter interval $[3,5)$. The lower end $3$ is closed because $3\\in A$ and $3\\in B$. The upper end $5$ stays open because $5\\notin A$. The claimed interval is that overlap, so the statement is True.",
+      "**C.** → False\n\n$B$ is unbounded above, so it contains numbers far past $A$. Witness $x=10$: in $B$ because $10\\ge 3$, and not in $A$ because $10\\ge 5$. One large witness kills $B\\subseteq A$, so the statement is False.",
+      "**D.** → True\n\nFrom just above $1$ onward there is always coverage: $A$ handles $(1,5)$ and $B$ handles $[3,\\infty)$. The point $1$ itself is excluded from both inputs, so\n\n$$A\\cup B=(1,\\infty).$$\n\nThe claim is that same interval, so the statement is True.",
+      "**E.** → True\n\nExistence needs one point of $A$ that misses $B$. Take $x=2$: it satisfies $1<2<5$ but $2<3$, so $2\\in A\\setminus B$. The leftover strip $(1,3)$ is nonempty, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "**Part 1: The sets.**\n\nRewrite in interval notation: $A=(1,5)$ and $B=[3,\\infty)$.\n\n**Part 2: The operations.**\n\nIntersection keeps numbers that satisfy both inequalities at once. Union keeps numbers that satisfy at least one. Difference $A\\setminus B$ is the leftover strip of $A$ that misses $B$. Subsethood $A\\subseteq B$ would need that leftover empty."
+  },
+  {
+    "id": "math-1-26",
+    "case_id": "MATH 1.26",
+    "title": "Symmetric difference",
+    "subsection": "1.2",
+    "context": "For two sets, define the symmetric difference $A\\triangle B = (A \\setminus B) \\cup (B \\setminus A)$, the elements belonging to exactly one of the two sets. Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{3, 4, 5, 6\\}$.",
+    "statements": [
+      "$A\\triangle B = \\{1, 2, 5, 6\\}$.",
+      "The symmetric difference can also be written as $A\\triangle B = (A \\setminus B) \\cap (B \\setminus A)$.",
+      "$A \\cap B \\subseteq A\\triangle B$.",
+      "If A and B are disjoint, then $A\\triangle B = A \\cup B$.",
+      "$\\lvert A \\triangle B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - 2\\lvert A \\cap B\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview already joined the leftovers $A\\setminus B=\\{1,2\\}$ and $B\\setminus A=\\{5,6\\}$ into $A\\triangle B=\\{1,2,5,6\\}$. Symmetric difference is \"exactly one,\" not \"at least one\": the overlap $\\{3,4\\}$ is absent on purpose. The claim is that same four-element list, so the statement is True.",
+      "**B.** → False\n\nThe definition joins the leftovers by $\\cup$, not $\\cap$. Those leftovers $\\{1,2\\}$ and $\\{5,6\\}$ are disjoint, so\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset,$$\n\nwhich is not the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagram never overlap, so the statement is False.",
+      "**C.** → False\n\nSymmetric difference excludes the overlap. The overview listed $A\\cap B=\\{3,4\\}$ and $A\\triangle B=\\{1,2,5,6\\}$, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$, so the statement is False.",
+      "**D.** → True\n\nIf $A$ and $B$ share nothing, then $A\\setminus B=A$ and $B\\setminus A=B$, so $A\\triangle B=A\\cup B$. There is no middle bucket to discard. This is a general identity; the given lists are not disjoint, but the implication still holds, so the statement is True.",
+      "**E.** → True\n\nThe sum $\\lvert A\\rvert+\\lvert B\\rvert$ double-counts the overlap, and $A\\triangle B$ throws both copies away:\n\n$$\\lvert A\\triangle B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-2\\lvert A\\cap B\\rvert=4+4-2\\cdot 2=4.$$\n\nThat matches the four-element set $\\{1,2,5,6\\}$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "**Part 1: The sets.**\n\nSymmetric difference keeps what sits in exactly one of the two sets:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A).$$\n\nLet $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$.\n\n**Part 2: The operations.**\n\nThe shared pieces are\n\n$$A\\cap B=\\{3,4\\},\\qquad A\\setminus B=\\{1,2\\},\\qquad B\\setminus A=\\{5,6\\}.$$\n\nJoining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$."
+  },
+  {
+    "id": "math-1-27",
+    "case_id": "MATH 1.27",
+    "title": "Sales rep to client account coverage",
+    "subsection": "1.2",
+    "context": "A consulting firm has 5 sales reps and 8 client accounts. A \"coverage assignment\" is an ordered pair (rep, account) meaning that rep is the point of contact for that account. The firm wants to know how many distinct coverage assignments are possible, and how the count changes if the team grows.",
+    "statements": [
+      "The total number of possible (rep, account) pairs is 40.",
+      "The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).",
+      "If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.",
+      "In the pair (rep, account), the statement \"(Maria, Account 3) belongs to Reps $\\times$ Accounts\" means Maria $\\in$ Accounts and Account $3 \\in$ Reps.",
+      "If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview already counted $5\\cdot 8=40$ ordered pairs. Product size is cells, not $5+8=13$ people-plus-accounts. The claim is that same figure $40$, so the statement is True.",
+      "**B.** → False\n\nCoverage pairs are ordered: first slot is the rep, second is the account. The pair (Maria, Account $3$) and the pair (Account $3$, Maria) are different objects; the second treats Account $3$ as the rep. Order is the whole point of a Cartesian product, so the statement is False.",
+      "**C.** → True\n\nZero accounts means the second factor is empty, so\n\n$$r\\cdot 0=0$$\n\nfor any number $r$ of reps. Without a second coordinate there is no ordered pair. Hiring more reps cannot create an account slot that does not exist, so the statement is True.",
+      "**D.** → False\n\nMembership in the product means the first slot is a rep and the second slot is an account. The claim swaps both tests, putting Maria among the accounts and Account $3$ among the reps. Those are the tests for the reversed product, so the statement is False.",
+      "**E.** → True\n\nSix reps and eight accounts. The extra arithmetic is the increment from one new rep:\n\n$$6\\cdot 8=48.$$\n\nEquivalently the new rep adds eight new pairs to the old forty, so $40+8=48$. The claim is $48$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "**Part 1: The sets.**\n\nA coverage assignment is an ordered pair (rep, account) in the Cartesian product of the rep set with the account set. There are $5$ reps and $8$ accounts.\n\n**Part 2: The operations.**\n\nThe product rule counts the cells:\n\n$$5\\cdot 8=40.$$\n\nFirst coordinate is the rep; second is the account. Membership means the first slot is a rep and the second slot is an account."
+  },
+  {
+    "id": "math-1-28",
+    "case_id": "MATH 1.28",
+    "title": "Frost protection and irrigation",
+    "subsection": "1.2",
+    "context": "A vineyard defines two conditions for its automated systems. Let $A = \\{T \\in R : T^2 < 16\\}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let $B = \\{T \\in R : T \\ge -1\\}$ be the set of temperatures at which the irrigation system is switched on. Note that A is the open interval $(-4, 4)$ and B is the closed-below interval $[-1, \\infty)$.",
+    "statements": [
+      "$A \\cap B = [-1, 4)$.",
+      "4 is an element of $A \\cap B$.",
+      "The complement of A in R is $\\{T \\in R : T < -4 \\lor T > 4\\}$.",
+      "$A \\cup B$ is equal to the entire set of real numbers R.",
+      "There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA temperature must satisfy $-4<T<4$ and $T\\ge -1$. The lower limit becomes $-1$ (included: $(-1)^2=1<16$ and irrigation allows $-1$). The upper limit stays $4$ (excluded: $4^2=16$ is not strictly less than $16$):\n\n$$A\\cap B=[-1,4).$$\n\nThe claim is that same interval, so the statement is True.",
+      "**B.** → False\n\nThe temperature $4$ sits in $B$ because $4\\ge -1$, but it fails $T^2<16$:\n\n$$4^2=16,$$\n\nand $16$ is not strictly less than $16$, so $4\\notin A$ and therefore $4\\notin A\\cap B$. The overlap $[-1,4)$ is open at $4$ for the same reason, so the statement is False.",
+      "**C.** → False\n\n$A=(-4,4)$ already excluded $\\pm 4$, so the complement must collect them:\n\n$$A^c=(-\\infty,-4]\\cup[4,\\infty).$$\n\nThe claimed strict inequalities $T<-4$ or $T>4$ drop those two boundary temperatures. Check $T=4$: $4^2=16$ is not strictly less than $16$, so $4\\notin A$ and $4$ must sit in $A^c$. The claimed roster drops it, so the statement is False.",
+      "**D.** → False\n\n$A$ covers $(-4,4)$ and $B$ carries on upward from $-1$, so together they reach every temperature above $-4$:\n\n$$A\\cup B=(-4,\\infty).$$\n\nTake $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whole ray $(-\\infty,-4]$ lies outside both pieces, so the union is not all of $\\mathbb{R}$, so the statement is False.",
+      "**E.** → True\n\nFrost-safe yet dry is the leftover $A\\setminus B=(-4,-1)$. At $T=-2$ we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 6,
+    "solution_overview": "**Part 1: The sets.**\n\nThe frost rule $T^2<16$ is the open interval $A=(-4,4)$, because $(\\pm 4)^2=16$ is not strictly less than $16$. Irrigation $T\\ge -1$ is the closed-below ray $B=[-1,\\infty)$.\n\n**Part 2: The operations.**\n\nIntersection keeps the tighter limit at each end. Union covers every temperature that satisfies at least one rule. Complement $A^c$ collects every real that $A$ missed, including the endpoints $\\pm 4$."
+  },
+  {
+    "id": "math-1-29",
+    "case_id": "MATH 1.29",
+    "title": "Customer survey overlap",
+    "subsection": "1.2",
+    "context": "A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with $\\lvert A \\rvert = 120$. Let B be the set of customers who like Product B, with $\\lvert B \\rvert = 90$. It is found that $\\lvert A \\cap B \\rvert = 50$ customers like both products.",
+    "statements": [
+      "The number of customers who like at least one of the two products, $\\lvert A \\cup B \\rvert$, is 170.",
+      "The number of customers who like neither product is 40.",
+      "The number of customers who like only Product A (A but not B) is 90.",
+      "$A \\cap B \\subseteq A$.",
+      "Since $\\lvert A \\rvert$ + $\\lvert B \\rvert = 210$ exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview already formed the union $160$ by subtracting the given overlap $50$ once. The claimed $170$ subtracts only $40$ from $120+90$, as if a neighbouring region were the overlap. The correct subtraction is the measured $50$, so $\\lvert A\\cup B\\rvert=160\\neq 170$, so the statement is False.",
+      "**B.** → True\n\nNeither is the survey minus the union. The overview recovered $\\lvert A\\cup B\\rvert=160$, so\n\n$$200-160=40.$$\n\nThe claim is $40$, so the statement is True.",
+      "**C.** → False\n\nA-only peels the overlap out of $A$:\n\n$$\\lvert A\\setminus B\\rvert=120-50=70.$$\n\nThe claimed $90$ would be right only if the products shared nobody, or if $\\lvert B\\rvert$ were copied onto the A-only cell. The lists do not match, so the statement is False.",
+      "**D.** → True\n\nThe $50$ who like both already sit inside the $120$ who like $A$. That is all $A\\cap B\\subseteq A$ asks, and it holds for any pair of sets. Intersection is always a subset of each factor, so the statement is True.",
+      "**E.** → False\n\nThe overflow $120+90-200=10$ is only a floor on the overlap, not an exact value. Any overlap from $10$ up to $\\min(120,90)=90$ could fit the headlines, and the survey already reports $50$. \"Exactly $10$\" confuses a lower bound with a measurement, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 7,
+    "solution_overview": "**Part 1: The sets.**\n\nAmong $200$ customers, $\\lvert A\\rvert=120$ like Product A, $\\lvert B\\rvert=90$ like Product B, and $\\lvert A\\cap B\\rvert=50$ like both.\n\n**Part 2: The operations.**\n\nThe $50$ dual-likers sit inside each headline, so inclusion-exclusion subtracts the overlap once:\n\n$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert=120+90-50=160.$$\n\nA-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size minus the union."
+  },
+  {
+    "id": "math-1-30",
+    "case_id": "MATH 1.30",
+    "title": "Union, Intersection, and Difference of Three Sets",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 2, 3, 4\\}$, $B = \\{3, 4, 5, 6\\}$, and $C = \\{7, 8, 9\\}$.",
+    "statements": [
+      "$A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "$A \\cap B = \\{3, 4\\}$.",
+      "$A \\setminus B = \\{1, 2\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nUnion keeps every member of each input, repeats written once. From $A$ keep $1,2,3,4$; from $B$ add the newcomers $5,6$:\n\n$$A\\cup B=\\{1,2,3,4,5,6\\}.$$\n\nThe claimed roster matches, so the statement is True.",
+      "**B.** → True\n\nIntersection keeps only the shared numbers. The overview's scan left $3$ and $4$ in both lists, while $1,2$ miss $B$ and $5,6$ miss $A$, so\n\n$$A\\cap B=\\{3,4\\}.$$\n\nThe claimed overlap matches, so the statement is True.",
+      "**C.** → True\n\nDifference $A\\setminus B$ deletes a member of $A$ only when it also sits in $B$. Deleting the shared pair $3,4$ leaves\n\n$$A\\setminus B=\\{1,2\\}.$$\n\nThe numbers $1$ and $2$ miss $B$, so they stay. The claimed leftover matches, so the statement is True.",
+      "**D.** → False\n\nThe opposite leftover lives inside $B$:\n\n$$B\\setminus A=\\{5,6\\},$$\n\nwhile $A\\setminus B=\\{1,2\\}$. Already $1$ sits in the first leftover and misses the second. Difference is not commutative, so the statement is False.",
+      "**E.** → True\n\nDisjointness means the intersection is empty. None of $7,8,9$ appears in $\\{1,2,3,4\\}$, so\n\n$$A\\cap C=\\emptyset.$$\n\nThe two lists share nothing, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 8,
+    "solution_overview": "**Part 1: The sets.**\n\nLet $A=\\{1,2,3,4\\}$, $B=\\{3,4,5,6\\}$, and $C=\\{7,8,9\\}$.\n\n**Part 2: The operations.**\n\nIntersection keeps shared members; union keeps anything that sits in at least one list, written once; difference $X\\setminus Y$ keeps members of $X$ that miss $Y$. Two sets are disjoint when they share nothing. Scan $A$ against $B$: $3$ and $4$ sit in both, $1$ and $2$ miss $B$, and $5$ and $6$ miss $A$. Scan $A$ against $C$: no shared member."
+  },
+  {
+    "id": "math-1-31",
+    "case_id": "MATH 1.31",
+    "title": "Set Operations on Multiples of Ten",
+    "subsection": "1.2",
+    "context": "Let $A = \\{10, 20, 30, 40, 50\\}$, $B = \\{30, 40, 50, 60\\}$, and $C = \\{1, 2, 3\\}$.",
+    "statements": [
+      "$A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$.",
+      "$A \\cap B = \\{30, 40, 50\\}$.",
+      "$A \\setminus B = \\{10, 20\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA union must contain every member of each input. Keep $A$'s five multiples and the newcomer $60$ from $B$; the overlap $30,40,50$ is not written twice:\n\n$$A\\cup B=\\{10,20,30,40,50,60\\}.$$\n\nThe claimed roster matches, so the statement is True.",
+      "**B.** → True\n\nIntersection keeps only the numbers that clear both lists. The overview's scan left $\\{30,40,50\\}$. The numbers $10$ and $20$ miss $B$, and $60$ misses $A$. The claimed overlap matches, so the statement is True.",
+      "**C.** → True\n\nDifference $A\\setminus B$ deletes a member of $A$ only when that member also sits in $B$. Shared $30,40,50$ leave; private $10,20$ stay:\n\n$$A\\setminus B=\\{10,20\\}.$$\n\nThe claimed leftover matches, so the statement is True.",
+      "**D.** → False\n\nThe opposite leftover is $B\\setminus A=\\{60\\}$, while $A\\setminus B=\\{10,20\\}$. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative, so the statement is False.",
+      "**E.** → True\n\nDisjointness means the intersection is empty. Every member of $A$ is at least $10$, while $C$ stops at $3$, so\n\n$$A\\cap C=\\emptyset.$$\n\nThere is no shared multiple of ten among $1,2,3$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "**Part 1: The sets.**\n\nLet $A=\\{10,20,30,40,50\\}$, $B=\\{30,40,50,60\\}$, and $C=\\{1,2,3\\}$.\n\n**Part 2: The operations.**\n\nIntersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged number once. Difference $A\\setminus B$ keeps the $A$-only numbers; $B\\setminus A$ keeps the $B$-only numbers. Two sets are disjoint when they share nothing. Scan $A$ against $B$: shared $30,40,50$; $A$-only $10,20$; $B$-only $60$. Scan $A$ against $C$: no shared member."
+  },
+  {
+    "id": "math-1-32",
+    "case_id": "MATH 1.32",
+    "title": "Set Operations with Letters",
+    "subsection": "1.2",
+    "context": "Let $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$, and $C = \\{x, y\\}$.",
+    "statements": [
+      "$A \\cup B = \\{a, b, c, d, e\\}$.",
+      "$A \\cap B = \\{c, d\\}$.",
+      "$A \\setminus B = \\{a, b\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nPutting $A$ and $B$ together keeps $a,b,c,d$ from $A$ and the newcomer $e$ from $B$. The shared $c$ and $d$ are not written twice:\n\n$$A\\cup B=\\{a,b,c,d,e\\}.$$\n\nThe claimed roster matches, so the statement is True.",
+      "**B.** → True\n\nIntersection keeps only the letters that appear on both rosters. Letters $a$ and $b$ sit in $A$ and miss $B$; letter $e$ sits in $B$ and misses $A$. Only $c$ and $d$ clear both tests:\n\n$$A\\cap B=\\{c,d\\}.$$\n\nThe claimed overlap matches, so the statement is True.",
+      "**C.** → True\n\nDifference $A\\setminus B$ keeps $A$'s private letters. Letters $c$ and $d$ sit in $B$, so they leave:\n\n$$A\\setminus B=\\{a,b\\}.$$\n\nThe claimed leftover matches, so the statement is True.",
+      "**D.** → False\n\nThe opposite leftover is the singleton $B\\setminus A=\\{e\\}$, while $A\\setminus B=\\{a,b\\}$. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative, so the statement is False.",
+      "**E.** → True\n\n$C=\\{x,y\\}$ shares no letter with $A=\\{a,b,c,d\\}$, so\n\n$$A\\cap C=\\emptyset.$$\n\nDisjointness is that empty overlap, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "**Part 1: The sets.**\n\nThree letter lists $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$, and $C=\\{x,y\\}$.\n\n**Part 2: The operations.**\n\nShared letters give the intersection. The combined list is the union, each letter once. Leftovers after a difference are the private letters. An empty overlap is disjointness. Lining $A$ up against $B$: $c$ and $d$ appear in both, $a$ and $b$ only in $A$, and $e$ only in $B$. The third set $C=\\{x,y\\}$ shares no letter with $A$."
+  },
+  {
+    "id": "math-1-33",
+    "case_id": "MATH 1.33",
+    "title": "De Morgan's Laws with a Ten-Element Universe",
+    "subsection": "1.2",
+    "context": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    "statements": [
+      "$(A \\cup B)^c = \\{9, 10\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{6, 7, 8, 9, 10\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nPutting $A$ and $B$ together covers $1$ through $8$, so\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nand the leftover in $U$ is\n\n$$(A\\cup B)^c=\\{9,10\\}.$$\n\nThose two numbers sit in neither $A$ nor $B$. The claim is that same list, so the statement is True.",
+      "**B.** → True\n\nDe Morgan's first law says $(A\\cup B)^c=A^c\\cap B^c$. The overview listed $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so\n\n$$A^c\\cap B^c=\\{9,10\\}.$$\n\nNumbers $6,7,8$ miss $A$ but sit in $B$, so they fail the intersection of complements. The two sides agree, so the statement is True.",
+      "**C.** → True\n\nThe overview listed $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nJoining $A^c$ with $B^c$ produces the same list, so $(A\\cap B)^c=A^c\\cup B^c$, so the statement is True.",
+      "**D.** → True\n\n$A^c$ is $U$ minus $A$: drop $1$ through $5$, keep $\\{6,7,8,9,10\\}$. The overview already recorded that list. Complement is a scan of the universe, not of $A$ rewritten backwards. The claim matches, so the statement is True.",
+      "**E.** → True\n\nThe overview listed $A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$\n\nThat list keeps $A$-only, $B$-only, and neither. The claim is that same eight-number roster, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "**Part 1: The sets.**\n\nLet $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$. A complement $X^c$ is everything in $U$ that $X$ leaves out.\n\n**Part 2: The operations.**\n\nDe Morgan's laws say taking complements swaps union and intersection:\n\n$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$\n\nEscaping a union means escaping both sets at once. Escaping an intersection takes only escaping one of them. The shared pieces are\n\n$$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$$"
+  },
+  {
+    "id": "math-1-34",
+    "case_id": "MATH 1.34",
+    "title": "Complements of Disjoint Odd and Even Sets",
+    "subsection": "1.2",
+    "context": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ be the universal set, $A = \\{1, 3, 5, 7, 9, 11\\}$, and $B = \\{2, 4, 6, 8, 10, 12\\}$.",
+    "statements": [
+      "$(A \\cup B)^c = \\emptyset$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{2, 4, 6, 8, 10, 12\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nOdds union evens reconstructs all of $U$, so $A\\cup B=U$ and\n\n$$(A\\cup B)^c=U^c=\\emptyset.$$\n\nThere is no leftover integer between $1$ and $12$, so the statement is True.",
+      "**B.** → True\n\n$A^c$ is the evens and $B^c$ is the odds, so their intersection is empty: nothing is even and odd at once. That matches $(A\\cup B)^c=\\emptyset$, which is De Morgan in this extreme case:\n\n$$A^c\\cap B^c=B\\cap A=\\emptyset.$$\n\nThe two sides agree, so the statement is True.",
+      "**C.** → True\n\n$A\\cap B=\\emptyset$, so $(A\\cap B)^c=U$. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full, so the statement is True.",
+      "**D.** → True\n\nDeleting the odds from $U$ leaves the evens, so\n\n$$A^c=\\{2,4,6,8,10,12\\}.$$\n\nComplement of a partition block is the other block, which is $B$. The claim matches that list, so the statement is True.",
+      "**E.** → True\n\nRemoving nothing from $U$ leaves $U$, so\n\n$$(A\\cap B)^c=\\emptyset^c=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}.$$\n\nThe claimed list is that full universe. Complementing $\\emptyset$ relative to a universe always gives the universe back, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 12,
+    "solution_overview": "**Part 1: The sets.**\n\nThis pair is a partition of $U=\\{1,2,\\ldots,12\\}$: $A=\\{1,3,5,7,9,11\\}$ holds every odd and $B=\\{2,4,6,8,10,12\\}$ holds every even. No overlap, no gaps.\n\n**Part 2: The operations.**\n\nNo whole number is odd and even at once, so $A\\cap B=\\emptyset$. Every whole number is one or the other, so $A\\cup B=U$. Complement of a partition block is the other block. Complementing the empty set relative to $U$ restores $U$. De Morgan's laws come through these extreme cases untouched."
+  },
+  {
+    "id": "math-1-35",
+    "case_id": "MATH 1.35",
+    "title": "De Morgan's Laws with Letter Sets",
+    "subsection": "1.2",
+    "context": "Let $U = \\{p, q, r, s, t, u\\}$ be the universal set, $A = \\{p, q, r\\}$, and $B = \\{r, s\\}$.",
+    "statements": [
+      "$(A \\cup B)^c = \\{t, u\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{s, t, u\\}$.",
+      "$(A \\cap B)^c = \\{p, q, s, t, u\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nPutting $A$ and $B$ together covers $\\{p,q,r,s\\}$. Of the six letters in $U$ only $t$ and $u$ are left out, so\n\n$$(A\\cup B)^c=\\{t,u\\}.$$\n\nLetter $s$ sits in $B$, so it sits in the union and cannot sit in the complement. The claim matches, so the statement is True.",
+      "**B.** → True\n\nThe overview listed $A^c=\\{s,t,u\\}$ and $B^c=\\{p,q,t,u\\}$. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement, so the statement is True.",
+      "**C.** → True\n\nThe overview listed $A\\cap B=\\{r\\}$, so $(A\\cap B)^c$ is every letter of $U$ except $r$. Joining the two complements produces the same five letters $\\{p,q,s,t,u\\}$. Letter $p$ misses $B$ and letter $s$ misses $A$; each escapes the intersection by escaping one set. The two sides agree, so the statement is True.",
+      "**D.** → True\n\nDrop $p,q,r$ from $U$ and $\\{s,t,u\\}$ remain. The overview already recorded $A^c=\\{s,t,u\\}$. Complement does not also drop $s$ just because $s\\in B$; that would be $A^c\\cap B^c$. The claim matches, so the statement is True.",
+      "**E.** → True\n\nRemove the single shared letter $r$ from $U$ and $\\{p,q,s,t,u\\}$ stay. Letters $p$ and $q$ stay because they miss $B$; $s$ stays because it misses $A$. The claimed five-letter list matches $(A\\cap B)^c$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 13,
+    "solution_overview": "**Part 1: The sets.**\n\nSix letters make up the universe $U=\\{p,q,r,s,t,u\\}$, and $A=\\{p,q,r\\}$ overlaps $B=\\{r,s\\}$ in the single letter $r$.\n\n**Part 2: The operations.**\n\nA letter is outside a union when it is outside both sets, and outside an intersection when it is outside at least one of them. Those are De Morgan's laws in plain words. The shared pieces are\n\n$$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qquad B^c=\\{p,q,t,u\\}.$$"
+  },
+  {
+    "id": "math-1-36",
+    "case_id": "MATH 1.36",
+    "title": "Cartesian Products and Ordered Pairs",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    "statements": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(1, x) \\in A \\times B$.",
+      "$(x, 1) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview already counted $\\lvert A\\times B\\rvert=2\\cdot 3=6$. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs, so the statement is True.",
+      "**B.** → True\n\nThe pair $(1,x)$ has first slot from $A$ and second from $B$, so both membership tests succeed. Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects; this letter is the number-first pair, so $(1,x)\\in A\\times B$, so the statement is True.",
+      "**C.** → False\n\nThe pair $(x,1)$ has a letter in the first slot, and $x\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects, so the statement is False.",
+      "**D.** → False\n\nEvery pair in $A\\times B$ reads (number, letter); every pair in $B\\times A$ reads (letter, number). In particular $(1,x)$ sits in the first product and cannot sit in the second, because $1\\notin B$. Set equality needs identical members, not identical counts, so the statement is False.",
+      "**E.** → True\n\nSize ignores order: $2\\cdot 3=6$ and $3\\cdot 2=6$. Both products hold six pairs even though the pairs themselves differ:\n\n$$\\lvert A\\times B\\rvert=\\lvert B\\times A\\rvert=6.$$\n\nThe counts agree, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 14,
+    "solution_overview": "**Part 1: The sets.**\n\nThe task gives $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about the ordered pairs formed from those two sets.\n\n**Part 2: The operations.**\n\nAn ordered pair records which object plays which role. The Cartesian product $A\\times B$ is the set of all pairs whose first entry comes from $A$ and whose second comes from $B$. Size is the product rule\n\n$$\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert=2\\cdot 3=6.$$\n\nTurning the grid on its side produces $B\\times A$, same count, different members."
+  },
+  {
+    "id": "math-1-37",
+    "case_id": "MATH 1.37",
+    "title": "Cartesian Product Size vs. Pair Membership",
+    "subsection": "1.2",
+    "context": "Let $A = \\{m, n, p\\}$ and $B = \\{1, 2\\}$.",
+    "statements": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(m, 1) \\in A \\times B$.",
+      "$(1, m) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview already counted $3\\cdot 2=6$ letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells, so the statement is True.",
+      "**B.** → True\n\nMembership in $A\\times B$ is a two-slot test. For $(m,1)$ both slots succeed: $m\\in A$ and $1\\in B$. That is the letter-first convention in this stem, so $(m,1)\\in A\\times B$, so the statement is True.",
+      "**C.** → False\n\nThe pair $(1,m)$ puts a number first, and $1\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). The product $A\\times B$ is six letter-first pairs; none begins with $1$, so the statement is False.",
+      "**D.** → False\n\n$A\\times B$ is letter-first; $B\\times A$ is number-first. Witness: $(m,1)$ is on the first list and missing from the second, because $m\\notin B$. Set equality needs identical members, not identical counts. The two products share no pair, so the statement is False.",
+      "**E.** → True\n\nThe product rule is commutative as a count:\n\n$$3\\cdot 2=6,\\qquad 2\\cdot 3=6.$$\n\nThe counts agree while the member lists share no pair, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 15,
+    "solution_overview": "**Part 1: The sets.**\n\nPair every letter of $A=\\{m,n,p\\}$ with every number of $B=\\{1,2\\}$, always keeping the letter first.\n\n**Part 2: The operations.**\n\nThe product rule is $\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$. A pair belongs to $A\\times B$ only when its first entry comes from $A$ and its second from $B$. Writing the product the other way round gives $B\\times A$: the same count, a different set.\n\n$$\\lvert A\\times B\\rvert=3\\cdot 2=6.$$"
+  },
+  {
+    "id": "math-1-38",
+    "case_id": "MATH 1.38",
+    "title": "Symmetric Difference of Two Odd-Number Sets",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{3, 5, 7, 11, 13\\}$.",
+    "statements": [
+      "$A \\setminus B = \\{1, 9\\}$.",
+      "$B \\setminus A = \\{11, 13\\}$.",
+      "$A \\triangle B = \\{1, 9, 11, 13\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nShared $3,5,7$ leave $A$; $1$ and $9$ stay because they miss $B$. The overview already placed those two in the $A$-only bucket, so $A\\setminus B=\\{1,9\\}$. The claimed leftover matches, so the statement is True.",
+      "**B.** → True\n\nDifference $B\\setminus A$ lives inside $B$. The shared triple $3,5,7$ leaves $B$ because those numbers sit in $A$. The private $11$ and $13$ miss $A$, so they stay:\n\n$$B\\setminus A=\\{11,13\\}.$$\n\nThe claimed leftover matches, so the statement is True.",
+      "**C.** → True\n\nSymmetric difference joins the two outer piles. The overview listed $A\\setminus B=\\{1,9\\}$ and $B\\setminus A=\\{11,13\\}$, so\n\n$$A\\triangle B=\\{1,9,11,13\\}.$$\n\nEach of those four sits in exactly one of the original sets. Including $3$ would keep the overlap, which $A\\triangle B$ rejects. The claim matches, so the statement is True.",
+      "**D.** → True\n\nA number in $A\\setminus B$ is outside $B$; a number in $B\\setminus A$ is inside $B$. Those demands cannot hold together, so\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset.$$\n\nThe two leftover piles are disjoint by construction, so the statement is True.",
+      "**E.** → False\n\nUnion keeps the middle bucket $\\{3,5,7\\}$; symmetric difference throws it away:\n\n$$A\\triangle B=\\{1,9,11,13\\},\\qquad A\\cup B=\\{1,3,5,7,9,11,13\\}.$$\n\nThe two operations differ by exactly the overlap. They would agree only if $A$ and $B$ were disjoint. They share $3,5,7$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 16,
+    "solution_overview": "**Part 1: The sets.**\n\nThe symmetric difference $A\\triangle B$ keeps the numbers belonging to exactly one of the two sets. Let $A=\\{1,3,5,7,9\\}$ and $B=\\{3,5,7,11,13\\}$.\n\n**Part 2: The operations.**\n\nSort every number into one of three buckets: only in $A$, in both, only in $B$. Symmetric difference is the two outer buckets joined. Union takes all three buckets. The outer buckets can never overlap. The shared pieces are\n\n$$A\\setminus B=\\{1,9\\},\\qquad A\\cap B=\\{3,5,7\\},\\qquad B\\setminus A=\\{11,13\\}.$$"
+  },
+  {
+    "id": "math-1-39",
+    "case_id": "MATH 1.39",
+    "title": "Symmetric Difference of Disjoint Sets",
+    "subsection": "1.2",
+    "context": "Let $A = \\{2, 4, 6\\}$ and $B = \\{1, 3, 5\\}$.",
+    "statements": [
+      "$A \\setminus B = \\{2, 4, 6\\}$.",
+      "$B \\setminus A = \\{1, 3, 5\\}$.",
+      "$A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\n$A$ is evens and $B$ is odds, so they share nothing. Subtracting $B$ from $A$ therefore deletes nobody:\n\n$$A\\setminus B=A=\\{2,4,6\\}.$$\n\nEmpty overlap empties the middle cell, not the left cell. The claimed leftover matches, so the statement is True.",
+      "**B.** → True\n\nNone of $B$'s odds is even, so nothing is deleted:\n\n$$B\\setminus A=B=\\{1,3,5\\}.$$\n\nThe three odds all miss $A$, so they all stay. The claimed leftover matches, so the statement is True.",
+      "**C.** → True\n\nWith an empty middle bucket, symmetric difference is the two whole sets glued together:\n\n$$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}.$$\n\nEach of the six numbers sits in exactly one of $A$ or $B$. The claim matches, so the statement is True.",
+      "**D.** → True\n\nThe leftovers are the two whole sets, evens and odds. No even equals an odd, so their intersection is empty:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=A\\cap B=\\emptyset.$$\n\nTwo nonempty leftovers need not overlap, so the statement is True.",
+      "**E.** → True\n\nHere the shared part is empty, so there is nothing extra for the union to add:\n\n$$A\\triangle B=\\{1,2,3,4,5,6\\}=A\\cup B.$$\n\nDisjointness is exactly the situation in which $A\\triangle B=A\\cup B$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 17,
+    "solution_overview": "**Part 1: The sets.**\n\n$A=\\{2,4,6\\}$ contains only even numbers and $B=\\{1,3,5\\}$ only odd ones, so no number can belong to both: the sets are disjoint, $A\\cap B=\\emptyset$.\n\n**Part 2: The operations.**\n\nDisjointness makes the subtractions do nothing: there is no shared member to delete, so $A\\setminus B=A$ and $B\\setminus A=B$. Symmetric difference joins the two leftovers. Union keeps every member of either set."
+  },
+  {
+    "id": "math-1-40",
+    "case_id": "MATH 1.40",
+    "title": "Chess and Checkers Club Overlap",
+    "subsection": "1.2",
+    "context": "Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.",
+    "statements": [
+      "$\\lvert A \\cup B\\rvert = 31$.",
+      "Exactly $16$ people are in A only (not B).",
+      "Exactly $9$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $9$ people are in B only (not A)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAdding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. The overview already recovered $\\lvert A\\cup B\\rvert=31$. The claim is that same figure, so the statement is True.",
+      "**B.** → True\n\nChess-only is the chess headline minus the overlap:\n\n$$22-6=16.$$\n\nThose $16$ sit in $A$ and not in $B$. Reporting $22$ would keep the six who also play checkers. The claim is $16$, so the statement is True.",
+      "**C.** → True\n\nNeither is the club total minus the union. The overview recovered the union $31$, so\n\n$$40-31=9.$$\n\nThe leftover outside both circles is $9$, so the statement is True.",
+      "**D.** → False\n\nEveryone playing both games is already someone playing at least one, so $A\\cap B\\subseteq A\\cup B$ always. Compare the two sizes: $\\lvert A\\cap B\\rvert=6$ and $\\lvert A\\cup B\\rvert=31$. Already $6<31$. Intersection cannot outnumber the union that contains it, so the statement is False.",
+      "**E.** → True\n\nCheckers-only is the checkers headline minus the overlap:\n\n$$15-6=9.$$\n\nThose $9$ sit in $B$ and not in $A$, still inside the union. The neither-cell's $9$ sit outside the union. Same size, different membership tests. The claim is the checkers-only count $9$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 18,
+    "solution_overview": "**Part 1: The sets.**\n\nOf $40$ students, $\\lvert A\\rvert=22$ play chess, $\\lvert B\\rvert=15$ play checkers, and $\\lvert A\\cap B\\rvert=6$ play both.\n\n**Part 2: The operations.**\n\nInclusion-exclusion counts the union by adding the headlines and subtracting the overlap once:\n\n$$\\lvert A\\cup B\\rvert=22+15-6=31.$$\n\nChess-only is the chess headline minus the overlap; checkers-only is the checkers headline minus the overlap. Neither is the club total minus the union."
+  }
+]

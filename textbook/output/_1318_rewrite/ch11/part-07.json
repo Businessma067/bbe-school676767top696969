@@ -1,0 +1,95 @@
+[
+  {
+    "id": "math-11-121",
+    "case_id": "MATH 11.121",
+    "title": "A property developer invests \\$65,000 renovating a rental unit",
+    "subsection": "11.7",
+    "context": "A property developer invests \\$65,000 renovating a rental unit. Expected net rental income after expenses is \\$34,000 at the end of Year 1 and \\$42,000 at the end of Year 2.",
+    "statements": [
+      "The internal rate of return is approximately 10.69%.",
+      "At an interest rate of 9%, the net present value of the project is positive.",
+      "At an interest rate of 12%, the net present value of the project is positive.",
+      "Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.",
+      "If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return is approximately 10.69%.**  (true)\n\nThe overview recovered $r \\approx 10.69\\%$ as the renovation project's internal rate of return. The claim is that same figure, so the statement is True.",
+      "**B) At an interest rate of 9%, the net present value of the project is positive.**  (true)\n\nNet present value at the named rate uses the overview's cash-flow formula. At $9\\%$:\n\n$$(1.09)^2 = 1.1881$$\n\n$$NPV = -65{,}000 + \\frac{34{,}000}{1.09} + \\frac{42{,}000}{1.1881}$$\n\n$$= -65{,}000 + 31{,}192.66 + 35{,}350.56$$\n\n$$= 1{,}543.22$$\n\nThe claim needs $NPV > 0$. We have $1{,}543.22 > 0$, so the statement is True.",
+      "**C) At an interest rate of 12%, the net present value of the project is positive.**  (false)\n\nNet present value at the named rate uses the overview's cash-flow formula. At $12\\%$:\n\n$$(1.12)^2 = 1.2544$$\n\n$$NPV = -65{,}000 + \\frac{34{,}000}{1.12} + \\frac{42{,}000}{1.2544}$$\n\n$$= -65{,}000 + 30{,}357.14 + 33{,}482.14$$\n\n$$= -1{,}160.72$$\n\nThe claim needs $NPV > 0$. We have $-1{,}160.72 < 0$, so the statement is False.",
+      "**D) Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.**  (true)\n\nDoubling the inflows and holding the outlay fixed is a new cash-flow list. The internal-rate equation on that list is\n\n$$-65{,}000 + \\frac{68{,}000}{1+r} + \\frac{84{,}000}{(1+r)^2} = 0$$\n\nWith $s=(1+r)^{-1}$, divide by $1{,}000$:\n\n$$84s^2 + 68s - 65 = 0$$\n\nThe discriminant is\n\n$$68^2 + 4 \\cdot 84 \\cdot 65 = 4{,}624 + 21{,}840 = 26{,}464$$\n\n$$\\sqrt{26{,}464} \\approx 162.678$$\n\n$$s = \\frac{-68 + 162.678}{168} \\approx 0.5636$$\n\n$$r = \\frac{1}{0.5636} - 1 \\approx 0.774 \\approx 77.4\\%$$\n\nThe overview recovered the original rate $10.69\\%$. Twice that rate is\n\n$$2 \\times 10.69\\% = 21.38\\%$$\n\nSince $77.4\\% > 21.38\\%$, the new internal rate more than doubles, so the statement is True.",
+      "**E) If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)\n\nA smaller outlay on the same inflows is a new cash-flow list. After substituting $s=(1+r)^{-1}$ and dividing by $1{,}000$:\n\n$$42s^2 + 34s - 60 = 0$$\n\nThe discriminant is\n\n$$34^2 + 4 \\cdot 42 \\cdot 60 = 1{,}156 + 10{,}080 = 11{,}236$$\n\n$$\\sqrt{11{,}236} = 106$$\n\n$$s = \\frac{-34 + 106}{84} = \\frac{72}{84} = \\frac{6}{7}$$\n\n$$r = \\frac{7}{6} - 1 = \\frac{1}{6} \\approx 16.67\\%$$\n\nThe overview recovered the original rate $10.69\\%$. Since $16.67\\% > 10.69\\%$, the reduced-outlay rate is higher, not lower, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 121,
+    "solution_overview": "A property developer invests \\$65,000 renovating a rental unit. Expected net rental income after expenses is \\$34,000 at the end of Year 1 and \\$42,000 at the end of Year 2.\n\n**Part 1: Setup.**\n\nThe cash flows are\n\n$$a_0 = -65{,}000, \\qquad a_1 = 34{,}000, \\qquad a_2 = 42{,}000$$\n\nNet present value at a test rate $i$ is\n\n$$NPV(i) = a_0 + \\frac{a_1}{1+i} + \\frac{a_2}{(1+i)^2}$$\n\nThe internal rate of return is the root of $NPV(r)=0$. Substitute $s=(1+r)^{-1}$:\n\n$$42{,}000 s^2 + 34{,}000 s - 65{,}000 = 0$$\n\n**Part 2: Solve.**\n\nDivide by $1{,}000$:\n\n$$42s^2 + 34s - 65 = 0$$\n\nThe discriminant is\n\n$$34^2 + 4 \\cdot 42 \\cdot 65 = 1{,}156 + 10{,}920 = 12{,}076$$\n\n$$\\sqrt{12{,}076} \\approx 109.891$$\n\nThe admissible root is\n\n$$s = \\frac{-34 + 109.891}{84} \\approx 0.90346$$\n\n$$r = \\frac{1}{0.90346} - 1 \\approx 0.10685 \\approx 10.69\\%$$"
+  },
+  {
+    "id": "math-11-122",
+    "case_id": "MATH 11.122",
+    "title": "Perpetuity Versus a Two-Year Stub: Comparing Internal Rates of Return",
+    "subsection": "11.7",
+    "context": "A subscription software company spends \\$50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of \\$6,000 at the end of every year, indefinitely into the future. Option 2, the scaled-back version: the same \\$50,000 outlay, but returns of only \\$6,000 at the end of Year 1 and \\$6,000 at the end of Year 2, with nothing paid afterward.",
+    "statements": [
+      "The limiting internal rate of return of Option 1 is 12%.",
+      "The internal rate of return of Option 2 is approximately -58.84%.",
+      "Option 2 has a unique internal rate of return greater than -1.",
+      "The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.",
+      "If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The limiting internal rate of return of Option 1 is 12%.**  (true)\n\nThe overview recovered Option 1's limiting internal rate $r=12\\%$. The claim is that same figure, so the statement is True.",
+      "**B) The internal rate of return of Option 2 is approximately -58.84%.**  (true)\n\nThe overview recovered Option 2's internal rate $r \\approx -58.84\\%$. The claim is that same figure, so the statement is True.",
+      "**C) Option 2 has a unique internal rate of return greater than -1.**  (true)\n\nThe overview recovered one admissible root $r \\approx -58.84\\%$ and discarded the root with $r < -1$. That kept root is unique and greater than $-1$, so the statement is True.",
+      "**D) The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.**  (false)\n\nThe overview recovered Option 2's cash flows $a_0=-50{,}000$ and $a_1=a_2=6{,}000$. Their undiscounted sum is\n\n$$-50{,}000 + 6{,}000 + 6{,}000 = -38{,}000$$\n\nThe claim is -\\$40,000. We have -\\$38,000, so the statement is False.",
+      "**E) If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.**  (true)\n\nRemoving Year 2 leaves a one-year project with outlay \\$50,000 and return \\$6,000. The one-year internal rate is\n\n$$r = \\frac{6{,}000}{50{,}000} - 1$$\n\n$$= 0.12 - 1 = -0.88 = -88\\%$$\n\nThe overview recovered Option 2's two-year rate $r \\approx -58.84\\%$. Since $-88\\% < -58.84\\%$, the truncated project has an even lower internal rate, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 122,
+    "solution_overview": "A subscription software company spends \\$50,000 building a product. Option 1 pays a steady \\$6,000 at the end of every year forever. Option 2 pays \\$6,000 at the end of Year 1 and \\$6,000 at the end of Year 2, then nothing.\n\n**Part 1: Setup.**\n\nBoth options start with\n\n$$a_0 = -50{,}000$$\n\nOption 1 is a level perpetuity with annual payment $a=6{,}000$. Zero NPV gives\n\n$$a_0 + \\frac{a}{r} = 0, \\qquad r = \\frac{a}{-a_0}$$\n\nOption 2 has\n\n$$a_1 = a_2 = 6{,}000$$\n\nand internal rate satisfying\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$\n\nSubstitute $s=(1+r)^{-1}$.\n\n**Part 2: Solve.**\n\nOption 1:\n\n$$r = \\frac{6{,}000}{50{,}000} = 0.12 = 12\\%$$\n\nOption 2 becomes\n\n$$6{,}000 s^2 + 6{,}000 s - 50{,}000 = 0$$\n\nDivide by $2{,}000$:\n\n$$3s^2 + 3s - 25 = 0$$\n\nThe discriminant is\n\n$$3^2 + 4 \\cdot 3 \\cdot 25 = 309$$\n\n$$\\sqrt{309} \\approx 17.578$$\n\nThe admissible discount-factor root is\n\n$$s = \\frac{-3 + 17.578}{6} \\approx 2.4297$$\n\n$$r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%$$\n\nThe other root has $r < -1$ and is discarded."
+  },
+  {
+    "id": "math-11-123",
+    "case_id": "MATH 11.123",
+    "title": "Two Solar Project Designs Compared by Internal Rate of Return and NPV",
+    "subsection": "11.7",
+    "context": "A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.",
+    "statements": [
+      "The internal rate of return of Design A is approximately 11.04%.",
+      "The internal rate of return of Design B is exactly 16%.",
+      "Based on the internal rate of return criterion, Design B should be preferred over Design A.",
+      "At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.",
+      "If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return of Design A is approximately 11.04%.**  (true)\n\nThe overview recovered Design A's internal rate $r_A \\approx 11.04\\%$. The claim is that same figure, so the statement is True.",
+      "**B) The internal rate of return of Design B is exactly 16%.**  (true)\n\nThe overview recovered Design B's one-year internal rate $r_B = 16\\%$. The claim is that same figure, so the statement is True.",
+      "**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)\n\nThe internal-rate criterion ranks the designs by the recovered rates. The overview recovered $r_A \\approx 11.04\\%$ and $r_B = 16\\%$.\n\n$$16\\% > 11.04\\%$$\n\nDesign B has the higher internal rate, so the statement is True.",
+      "**D) At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.**  (true)\n\nNet present value discounts each design's cash flows at $13\\%$. For Design A:\n\n$$(1.13)^2 = 1.2769$$\n\n$$NPV_A = -120{,}000 + \\frac{54{,}000}{1.13} + \\frac{88{,}000}{1.2769}$$\n\n$$= -120{,}000 + 47{,}787.61 + 68{,}916.91$$\n\n$$= -3{,}295.48$$\n\nFor Design B:\n\n$$NPV_B = -70{,}000 + \\frac{81{,}200}{1.13}$$\n\n$$= -70{,}000 + 71{,}858.41$$\n\n$$= 1{,}858.41$$\n\nThe claim needs $NPV_A < 0$ and $NPV_B > 0$. We have $-3{,}295.48 < 0$ and $1{,}858.41 > 0$, so the statement is True.",
+      "**E) If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.**  (false)\n\nCutting Design A's Year 1 return to \\$44,000 leaves a new two-year project. After substituting $s=(1+r)^{-1}$ and dividing by $4{,}000$:\n\n$$22s^2 + 11s - 30 = 0$$\n\nThe discriminant is\n\n$$11^2 + 4 \\cdot 22 \\cdot 30 = 121 + 2{,}640 = 2{,}761$$\n\n$$\\sqrt{2{,}761} \\approx 52.545$$\n\n$$s = \\frac{-11 + 52.545}{44} \\approx 0.9442$$\n\n$$r = \\frac{1}{0.9442} - 1 \\approx 0.0591 \\approx 5.91\\%$$\n\nThe overview recovered Design B's rate $r_B = 16\\%$. Since $5.91\\% < 16\\%$, the cut-return rate does not exceed $16\\%$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 123,
+    "solution_overview": "A renewable energy cooperative compares two solar designs. Design A invests \\$120,000 and receives \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B invests \\$70,000 and receives a single \\$81,200 at the end of Year 1.\n\n**Part 1: Setup.**\n\nDesign A has cash flows\n\n$$a_0 = -120{,}000, \\qquad a_1 = 54{,}000, \\qquad a_2 = 88{,}000$$\n\nIts internal rate satisfies\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$\n\nSubstitute $s=(1+r)^{-1}$.\n\nDesign B is a one-year project with outlay $a=70{,}000$ and return $b=81{,}200$:\n\n$$r = \\frac{b}{a} - 1$$\n\n**Part 2: Solve.**\n\nDesign A's quadratic is\n\n$$88{,}000 s^2 + 54{,}000 s - 120{,}000 = 0$$\n\nDivide by $2{,}000$:\n\n$$44s^2 + 27s - 60 = 0$$\n\nThe discriminant is\n\n$$27^2 + 4 \\cdot 44 \\cdot 60 = 729 + 10{,}560 = 11{,}289$$\n\n$$\\sqrt{11{,}289} \\approx 106.250$$\n\n$$s = \\frac{-27 + 106.250}{88} \\approx 0.90057$$\n\n$$r_A = \\frac{1}{0.90057} - 1 \\approx 0.1104 \\approx 11.04\\%$$\n\nDesign B:\n\n$$r_B = \\frac{81{,}200}{70{,}000} - 1 = 0.16 = 16\\%$$"
+  }
+]

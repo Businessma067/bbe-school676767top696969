@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-11-21",
+    "case_id": "MATH 11.21",
+    "title": "Continuous Compounding on a Bakery's Business Account",
+    "subsection": "11.2",
+    "context": "Ms. Delgado, the owner of an artisan bakery, deposits \\$4,500 into a business savings account that compounds interest continuously at a nominal annual rate of 5%.",
+    "statements": [
+      "The balance after exactly 1 year is \\$4,730.72.",
+      "The interest earned during the first year is \\$230.72.",
+      "If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be \\$4,735.00.",
+      "The dollar difference between continuous compounding and annual compounding at the same nominal rate is \\$5.72.",
+      "The growth factor $e^{0.05}$ rounds to 1.0400."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The balance after exactly 1 year is \\$4,730.72.**  (true)\n\nOne year of continuous growth applies the recovered $r=0.05$:\n\n$$S(1) = 4{,}500 \\times e^{0.05}$$\n\n$$e^{0.05} \\approx 1.051271$$\n\n$$S(1) \\approx 4{,}730.72$$\n\nThe claim is \\$4,730.72, so the statement is True.",
+      "**B) The interest earned during the first year is \\$230.72.**  (true)\n\nInterest is the one-year continuous balance minus the original deposit:\n\n$$S(1) = 4{,}500 \\times e^{0.05} \\approx 4{,}730.72$$\n\n$$4{,}730.72 - 4{,}500 = 230.72$$\n\nThe claim is \\$230.72, so the statement is True.",
+      "**C) If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be \\$4,735.00.**  (false)\n\nAnnual compounding at the same 5% nominal rate uses $n=1$:\n\n$$S_{\\mathrm{ann}} = 4{,}500 \\times 1.05 = 4{,}725.00$$\n\nThe claim is \\$4,735.00. We have $4{,}725.00 \\ne 4{,}735.00$, so the statement is False.",
+      "**D) The dollar difference between continuous compounding and annual compounding at the same nominal rate is \\$5.72.**  (true)\n\nThe dollar gap is continuous minus annual at the same 5% quote:\n\n$$S(1) = 4{,}500 \\times e^{0.05} \\approx 4{,}730.72$$\n\n$$S_{\\mathrm{ann}} = 4{,}500 \\times 1.05 = 4{,}725.00$$\n\n$$4{,}730.72 - 4{,}725.00 = 5.72$$\n\nThe claim is \\$5.72, so the statement is True.",
+      "**E) The growth factor $e^{0.05}$ rounds to 1.0400.**  (false)\n\nThe one-year continuous growth factor is\n\n$$e^{0.05} \\approx 1.051271$$\n\nRounded to four decimals this is $1.0513$, not $1.0400$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 21,
+    "solution_overview": "Ms. Delgado, the owner of an artisan bakery, deposits \\$4,500 into a business savings account that compounds interest continuously at a nominal annual rate of 5%.\n\nThe bakery deposits \\$4,500 at a 5% nominal annual rate compounded continuously for one year:\n\n$$S_0 = 4{,}500, \\qquad r = 5\\% = 0.05, \\qquad t = 1$$\n\nContinuous compound growth, and annual compounding at the same nominal rate, are\n\n$$S(t) = S_0 e^{rt}, \\qquad S_{\\mathrm{ann}} = S_0(1+r)^{t}$$"
+  },
+  {
+    "id": "math-11-22",
+    "case_id": "MATH 11.22",
+    "title": "Multi-Year Continuous Compounding for a Coffee Roasting Company",
+    "subsection": "11.2",
+    "context": "A specialty coffee roasting company invests \\$3,200 of retained earnings into a fund that compounds continuously at a nominal annual rate of 8%, and plans to leave the funds untouched for 6 years.",
+    "statements": [
+      "After 6 years, the balance is approximately \\$5,171.44.",
+      "Doubling the 3-year balance gives the correct 6-year balance.",
+      "The total interest earned over the 6 years is approximately \\$2,000.00.",
+      "The 12-year balance would be exactly double the 6-year balance.",
+      "The 12-year balance is less than double the 6-year balance."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) After 6 years, the balance is approximately \\$5,171.44.**  (true)\n\nSix years of continuous $8\\%$ carry the exponent $0.48$:\n\n$$S(6) = 3{,}200 \\times e^{0.08 \\times 6} = 3{,}200 \\times e^{0.48}$$\n\n$$e^{0.48} \\approx 1.616074$$\n\n$$S(6) \\approx 5{,}171.44$$\n\nThe claim is approximately \\$5,171.44, so the statement is True.",
+      "**B) Doubling the 3-year balance gives the correct 6-year balance.**  (false)\n\nThree years of the same continuous rate give\n\n$$S(3) = 3{,}200 \\times e^{0.08 \\times 3} = 3{,}200 \\times e^{0.24}$$\n\n$$e^{0.24} \\approx 1.271249$$\n\n$$S(3) \\approx 4{,}068.00$$\n\n$$2 \\times S(3) \\approx 8{,}135.99$$\n\n$$S(6) = 3{,}200 \\times e^{0.48} \\approx 5{,}171.44$$\n\nThe claim needs $2\\,S(3)=S(6)$. We have $8{,}135.99 \\ne 5{,}171.44$, so the statement is False.",
+      "**C) The total interest earned over the 6 years is approximately \\$2,000.00.**  (false)\n\nInterest is the six-year continuous balance minus the original deposit:\n\n$$S(6) = 3{,}200 \\times e^{0.48} \\approx 5{,}171.44$$\n\n$$5{,}171.44 - 3{,}200 = 1{,}971.44$$\n\nThe claim is approximately \\$2,000.00. We have $1{,}971.44 \\ne 2{,}000.00$, so the statement is False.",
+      "**D) The 12-year balance would be exactly double the 6-year balance.**  (false)\n\nTwelve years of the same continuous rate double the six-year exponent:\n\n$$S(12) = 3{,}200 \\times e^{0.08 \\times 12} = 3{,}200 \\times e^{0.96}$$\n\n$$e^{0.96} \\approx 2.611696$$\n\n$$S(12) \\approx 8{,}357.43$$\n\n$$2 \\times S(6) \\approx 2 \\times 5{,}171.44 = 10{,}342.88$$\n\nThe claim needs $S(12)=2\\,S(6)$. We have $8{,}357.43 \\ne 10{,}342.88$, so the statement is False.",
+      "**E) The 12-year balance is less than double the 6-year balance.**  (true)\n\nThe same twelve-year and six-year balances are\n\n$$S(12) = 3{,}200 \\times e^{0.96} \\approx 8{,}357.43$$\n\n$$S(6) = 3{,}200 \\times e^{0.48} \\approx 5{,}171.44$$\n\n$$2 \\times S(6) \\approx 10{,}342.88$$\n\nThe claim needs $S(12)<2\\,S(6)$. We have $8{,}357.43 < 10{,}342.88$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 22,
+    "solution_overview": "A specialty coffee roasting company invests \\$3,200 of retained earnings into a fund that compounds continuously at a nominal annual rate of 8%, and plans to leave the funds untouched for 6 years.\n\nThe company invests \\$3,200 at an 8% nominal annual rate compounded continuously for six years:\n\n$$S_0 = 3{,}200, \\qquad r = 8\\% = 0.08, \\qquad t = 6$$\n\nThe continuous future-value model is\n\n$$S(t) = S_0 e^{rt}$$"
+  },
+  {
+    "id": "math-11-23",
+    "case_id": "MATH 11.23",
+    "title": "Effective Annual Rate on a Continuously-Compounded Bond Fund",
+    "subsection": "11.2",
+    "context": "An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.",
+    "statements": [
+      "The effective annual rate is approximately 9.42%.",
+      "On a \\$15,000 investment, the year-end balance is \\$16,412.61.",
+      "The EAR exceeds the nominal rate by more than 0.75 percentage points.",
+      "If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.",
+      "At the 18% nominal rate, the EAR exceeds 19.5%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The effective annual rate is approximately 9.42%.**  (true)\n\nThe effective annual rate converts the $9\\%$ continuous quote:\n\n$$R = e^{0.09} - 1$$\n\n$$e^{0.09} \\approx 1.094174$$\n\n$$R \\approx 0.094174 \\approx 9.42\\%$$\n\nThe claim is about $9.42\\%$, so the statement is True.",
+      "**B) On a \\$15,000 investment, the year-end balance is \\$16,412.61.**  (true)\n\nOne year of continuous $9\\%$ grows the \\$15,000 investment by $e^{0.09}$:\n\n$$S(1) = 15{,}000 \\times e^{0.09}$$\n\n$$e^{0.09} \\approx 1.094174$$\n\n$$S(1) \\approx 16{,}412.61$$\n\nThe claim is \\$16,412.61, so the statement is True.",
+      "**C) The EAR exceeds the nominal rate by more than 0.75 percentage points.**  (false)\n\nThe gap is the effective annual rate minus the $9\\%$ nominal quote:\n\n$$R = e^{0.09} - 1 \\approx 9.42\\%$$\n\n$$9.42\\% - 9.00\\% = 0.42$$\n\nThe claim needs more than $0.75$ percentage points. We have $0.42 < 0.75$, so the statement is False.",
+      "**D) If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.**  (true)\n\nAt an $18\\%$ continuous quote the effective annual rate is\n\n$$R_{18} = e^{0.18} - 1$$\n\n$$e^{0.18} \\approx 1.197217$$\n\n$$R_{18} \\approx 0.197217 \\approx 19.72\\%$$\n\nDouble the original effective rate is\n\n$$R = e^{0.09} - 1 \\approx 9.42\\%$$\n\n$$2 \\times 9.42\\% = 18.84\\%$$\n\nThe claim needs $R_{18} > 2R$. We have $19.72\\% > 18.84\\%$, so the statement is True.",
+      "**E) At the 18% nominal rate, the EAR exceeds 19.5%.**  (true)\n\nAt the $18\\%$ continuous quote,\n\n$$R_{18} = e^{0.18} - 1 \\approx 0.197217 \\approx 19.72\\%$$\n\nThe claim needs $R_{18}>19.5\\%$. We have $19.72\\% > 19.5\\%$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 23,
+    "solution_overview": "An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.\n\nThe fund quotes a 9% nominal annual rate compounded continuously:\n\n$$r = 9\\% = 0.09$$\n\nThe effective annual rate and a one-year future value under continuous compounding are\n\n$$R = e^{r} - 1, \\qquad S(t) = S_0 e^{rt}$$"
+  },
+  {
+    "id": "math-11-24",
+    "case_id": "MATH 11.24",
+    "title": "Comparing Growth Factors on an Equipment Leasing Contract",
+    "subsection": "11.2",
+    "context": "An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which \\$1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a \\$75,000 balance.",
+    "statements": [
+      "Under yearly compounding, K = 1.1000.",
+      "Under semi-annual compounding, K = 1.1025.",
+      "Under continuous compounding, K ≈ 1.1052.",
+      "On the \\$75,000 balance, continuous compounding exceeds semi-annual compounding by \\$250.32.",
+      "The gap between semi-annual and yearly compounding is larger than the gap between continuous and semi-annual compounding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Under yearly compounding, K = 1.1000.**  (true)\n\nYearly compounding grows one dollar by one plus the quote:\n\n$$K_{\\mathrm{y}} = 1 + 0.10 = 1.1000$$\n\nThe claim is $1.1000$, so the statement is True.",
+      "**B) Under semi-annual compounding, K = 1.1025.**  (true)\n\nSemi-annual compounding splits the quote in two, then squares:\n\n$$K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2} = (1.05)^{2} = 1.1025$$\n\nThe claim is $1.1025$, so the statement is True.",
+      "**C) Under continuous compounding, K ≈ 1.1052.**  (true)\n\nContinuous compounding grows one dollar by $e^{i}$:\n\n$$K_{\\mathrm{c}} = e^{0.10}$$\n\n$$e^{0.10} \\approx 1.105171 \\approx 1.1052$$\n\nThe claim is about $1.1052$, so the statement is True.",
+      "**D) On the \\$75,000 balance, continuous compounding exceeds semi-annual compounding by \\$250.32.**  (false)\n\nOn \\$75,000 the continuous-minus-semi-annual gap is\n\n$$K_{\\mathrm{c}} = e^{0.10} \\approx 1.105171$$\n\n$$K_{\\mathrm{s}} = 1.1025$$\n\n$$75{,}000 \\times (1.105171 - 1.1025) \\approx 200.32$$\n\nThe claim is \\$250.32. We have $200.32 \\ne 250.32$, so the statement is False.",
+      "**E) The gap between semi-annual and yearly compounding is larger than the gap between continuous and semi-annual compounding.**  (false)\n\nOn \\$75,000 the two successive gaps are\n\n$$K_{\\mathrm{s}} - K_{\\mathrm{y}} = 1.1025 - 1.1000 = 0.0025$$\n\n$$K_{\\mathrm{c}} - K_{\\mathrm{s}} = e^{0.10} - 1.1025 \\approx 1.105171 - 1.1025 = 0.002671$$\n\n$$75{,}000 \\times 0.0025 = 187.50$$\n\n$$75{,}000 \\times 0.002671 \\approx 200.32$$\n\nThe claim needs $187.50 > 200.32$. We have $187.50 < 200.32$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 24,
+    "solution_overview": "An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which \\$1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a \\$75,000 balance.\n\nThe contract quotes a 10% nominal annual rate. The growth factor $K$ is the amount to which \\$1 grows in one year, and the dollar comparisons apply those factors to \\$75,000:\n\n$$i = 10\\% = 0.10, \\qquad P = 75{,}000, \\qquad t = 1$$\n\nYearly, semi-annual, and continuous compounding give\n\n$$K_{\\mathrm{y}} = 1+i, \\qquad K_{\\mathrm{s}} = \\left(1+\\frac{i}{2}\\right)^{2}, \\qquad K_{\\mathrm{c}} = e^{i}$$"
+  },
+  {
+    "id": "math-11-25",
+    "case_id": "MATH 11.25",
+    "title": "Year-Over-Year Growth by a Fixed Factor in a College Endowment Sub-Fund",
+    "subsection": "11.2",
+    "context": "A college endowment's growth sub-fund is currently valued at \\$95,000 and earns continuous compounding at a nominal annual rate of 4.5%. The board wants to project the balance forward using the property that the principal is multiplied by a fixed factor each year.",
+    "statements": [
+      "One year from now, the balance will be approximately \\$98,500.00.",
+      "Two years from now, the balance will be approximately \\$103,946.56.",
+      "The dollar increase in year 1 is larger than the dollar increase in year 2.",
+      "Each year, the balance is multiplied by a different factor.",
+      "If the nominal rate were doubled to 9%, the year-over-year growth factor would also exactly double."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) One year from now, the balance will be approximately \\$98,500.00.**  (false)\n\nOne year of continuous $4.5\\%$ multiplies the principal by $e^{0.045}$:\n\n$$S(1) = 95{,}000 \\times e^{0.045}$$\n\n$$e^{0.045} \\approx 1.046028$$\n\n$$S(1) \\approx 99{,}372.65$$\n\nThe claim is approximately \\$98,500.00. We have $99{,}372.65 \\ne 98{,}500.00$, so the statement is False.",
+      "**B) Two years from now, the balance will be approximately \\$103,946.56.**  (true)\n\nTwo years of continuous $4.5\\%$ carry the exponent $0.09$:\n\n$$S(2) = 95{,}000 \\times e^{0.045 \\times 2} = 95{,}000 \\times e^{0.09}$$\n\n$$e^{0.09} \\approx 1.094174$$\n\n$$S(2) \\approx 103{,}946.56$$\n\nThe claim is approximately \\$103,946.56, so the statement is True.",
+      "**C) The dollar increase in year 1 is larger than the dollar increase in year 2.**  (false)\n\nThe dollar increase in year 1 and in year 2 are\n\n$$S(1) = 95{,}000 \\times e^{0.045} \\approx 99{,}372.65$$\n\n$$S(2) = 95{,}000 \\times e^{0.09} \\approx 103{,}946.56$$\n\n$$S(1) - S_0 \\approx 4{,}372.65$$\n\n$$S(2) - S(1) \\approx 4{,}573.91$$\n\nThe claim needs $4{,}372.65 > 4{,}573.91$. We have $4{,}372.65 < 4{,}573.91$, so the statement is False.",
+      "**D) Each year, the balance is multiplied by a different factor.**  (false)\n\nEach year multiplies the current balance by the same continuous factor\n\n$$e^{r} = e^{0.045} \\approx 1.046028$$\n\nThat factor does not change from year to year, so the statement is False.",
+      "**E) If the nominal rate were doubled to 9%, the year-over-year growth factor would also exactly double.**  (false)\n\nDoubling the nominal rate to $9\\%$ changes the year-over-year factor to\n\n$$e^{0.09} \\approx 1.094174$$\n\nDouble the original factor would be\n\n$$2 \\times e^{0.045} \\approx 2 \\times 1.046028 = 2.092056$$\n\nThe claim needs $e^{0.09}=2e^{0.045}$. We have $1.094174 \\ne 2.092056$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 25,
+    "solution_overview": "A college endowment's growth sub-fund is currently valued at \\$95,000 and earns continuous compounding at a nominal annual rate of 4.5%. The board wants to project the balance forward using the property that the principal is multiplied by a fixed factor each year.\n\nThe sub-fund is worth \\$95,000 today and earns a 4.5% nominal annual rate compounded continuously:\n\n$$S_0 = 95{,}000, \\qquad r = 4.5\\% = 0.045$$\n\nEach additional year multiplies the balance by the same factor $e^{r}$, and over $t$ years\n\n$$S(t) = S_0 e^{rt}$$"
+  },
+  {
+    "id": "math-11-26",
+    "case_id": "MATH 11.26",
+    "title": "Continuous Depreciation of a Courier Company's Van Fleet",
+    "subsection": "11.2",
+    "context": "A courier company's van fleet has a combined initial value of \\$60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.",
+    "statements": [
+      "The fleet's value after 4 years is approximately \\$40,219.20.",
+      "The fleet's value after 7 years is approximately \\$29,795.12.",
+      "The 4-year value represents about 67.03% of the original \\$60,000 value.",
+      "If the depreciation rate were instead doubled to 20%, the 4-year value would fall below \\$25,000.",
+      "The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The fleet's value after 4 years is approximately \\$40,219.20.**  (true)\n\nFour years of continuous $10\\%$ depreciation carry the exponent $-0.40$:\n\n$$v(4) = 60{,}000 \\times e^{-0.10 \\times 4} = 60{,}000 \\times e^{-0.40}$$\n\n$$e^{-0.40} \\approx 0.670320$$\n\n$$v(4) \\approx 40{,}219.20$$\n\nThe claim is approximately \\$40,219.20, so the statement is True.",
+      "**B) The fleet's value after 7 years is approximately \\$29,795.12.**  (true)\n\nSeven years of continuous $10\\%$ depreciation carry the exponent $-0.70$:\n\n$$v(7) = 60{,}000 \\times e^{-0.10 \\times 7} = 60{,}000 \\times e^{-0.70}$$\n\n$$e^{-0.70} \\approx 0.496585$$\n\n$$v(7) \\approx 29{,}795.12$$\n\nThe claim is approximately \\$29,795.12, so the statement is True.",
+      "**C) The 4-year value represents about 67.03% of the original \\$60,000 value.**  (true)\n\nThe four-year remaining share is the same exponential factor:\n\n$$v(4) = 60{,}000 \\times e^{-0.40} \\approx 40{,}219.20$$\n\n$$\\frac{40{,}219.20}{60{,}000} \\approx 0.6703 = 67.03\\%$$\n\nThe claim is about $67.03\\%$, so the statement is True.",
+      "**D) If the depreciation rate were instead doubled to 20%, the 4-year value would fall below \\$25,000.**  (false)\n\nAt a doubled $20\\%$ depreciation rate the four-year value is\n\n$$v(4) = 60{,}000 \\times e^{-0.20 \\times 4} = 60{,}000 \\times e^{-0.80}$$\n\n$$e^{-0.80} \\approx 0.449329$$\n\n$$v(4) \\approx 26{,}959.74$$\n\nThe claim needs $v(4)<25{,}000$. We have $26{,}959.74 > 25{,}000$, so the statement is False.",
+      "**E) The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.**  (true)\n\nThe first-year decline and the fourth-year decline are\n\n$$v(1) = 60{,}000 \\times e^{-0.10} \\approx 54{,}290.25$$\n\n$$v(0) - v(1) \\approx 5{,}709.75$$\n\n$$v(3) = 60{,}000 \\times e^{-0.30} \\approx 44{,}449.09$$\n\n$$v(4) = 60{,}000 \\times e^{-0.40} \\approx 40{,}219.20$$\n\n$$v(3) - v(4) \\approx 4{,}229.89$$\n\nThe claim needs $5{,}709.75 > 4{,}229.89$. We have $5{,}709.75 > 4{,}229.89$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 26,
+    "solution_overview": "A courier company's van fleet has a combined initial value of \\$60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.\n\nThe fleet starts at \\$60,000 and depreciates continuously at $\\delta=0.10$:\n\n$$v_0 = 60{,}000, \\qquad \\delta = 0.10$$\n\nContinuous depreciation follows the given model\n\n$$v(t) = v_0 e^{-\\delta t}$$"
+  },
+  {
+    "id": "math-11-27",
+    "case_id": "MATH 11.27",
+    "title": "Doubling Time for a REIT's Continuously-Compounded Reserve Account",
+    "subsection": "11.2",
+    "context": "A real estate investment trust places \\$18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.",
+    "statements": [
+      "The doubling time at 5.5% is approximately 12.60 years.",
+      "At exactly 12.60 years, the balance reaches approximately \\$36,000.00.",
+      "If the rate were instead 11%, the doubling time would also be approximately 12.60 years, unchanged.",
+      "After three full doubling periods, the balance would grow to 6 times the original principal.",
+      "A higher interest rate r gives a longer doubling time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The doubling time at 5.5% is approximately 12.60 years.**  (true)\n\nThe overview recovered $t_2 \\approx 12.60$ years as the doubling time at $5.5\\%$. The claim is that same figure, so the statement is True.",
+      "**B) At exactly 12.60 years, the balance reaches approximately \\$36,000.00.**  (true)\n\nAt the rounded doubling time $t=12.60$ years,\n\n$$S(12.60) = 18{,}000 \\times e^{0.055 \\times 12.60} = 18{,}000 \\times e^{0.693}$$\n\n$$e^{0.693} \\approx 1.9997$$\n\n$$S(12.60) \\approx 35{,}994.70$$\n\nThe claim is approximately \\$36,000.00, so the statement is True.",
+      "**C) If the rate were instead 11%, the doubling time would also be approximately 12.60 years, unchanged.**  (false)\n\nAt an $11\\%$ continuous rate the doubling time is\n\n$$t_2' = \\frac{\\ln 2}{0.11} \\approx 6.30$$\n\nThe original wait was $t_2 \\approx 12.60$. The claim needs $t_2' \\approx 12.60$. We have $6.30 \\ne 12.60$, so the statement is False.",
+      "**D) After three full doubling periods, the balance would grow to 6 times the original principal.**  (false)\n\nEach doubling multiplies the balance by $2$. Three full doubling periods therefore multiply by\n\n$$2^{3} = 8$$\n\nThe claim is a factor of $6$. We have $8 \\ne 6$, so the statement is False.",
+      "**E) A higher interest rate r gives a longer doubling time.**  (false)\n\nThe doubling time $t_2=\\frac{\\ln 2}{r}$ falls when $r$ rises. A higher interest rate shortens the wait, it does not lengthen it, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 27,
+    "solution_overview": "A real estate investment trust places \\$18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.\n\nThe trust places \\$18,000 at a 5.5% nominal annual rate compounded continuously:\n\n$$S_0 = 18{,}000, \\qquad r = 5.5\\% = 0.055$$\n\nThe balance follows $S(t)=S_0 e^{rt}$. Doubling means $e^{rt}=2$, so the doubling time is\n\n$$t_2 = \\frac{\\ln 2}{r}$$\n\n$$t_2 = \\frac{\\ln 2}{0.055} \\approx 12.60$$"
+  },
+  {
+    "id": "math-11-28",
+    "case_id": "MATH 11.28",
+    "title": "Time for a Stamping Press to Lose Value Under Continuous Depreciation",
+    "subsection": "11.2",
+    "context": "A manufacturing plant's stamping press has an initial value of \\$120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.",
+    "statements": [
+      "Setting $v_0 \\times e^{-\\delta t} = 0.40 v_0$ and solving gives $t = \\frac{\\ln(2.5)}{\\delta}$.",
+      "The press will have lost 60% of its value after approximately 5.09 years.",
+      "At that point, the press's remaining value is approximately \\$48,000.00.",
+      "If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18 years.",
+      "The time to lose 80% of the value is longer than the time to lose 60% of the value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Setting $v_0 \\times e^{-\\delta t} = 0.40 v_0$ and solving gives $t = \\frac{\\ln(2.5)}{\\delta}$.**  (true)\n\nThe overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation, so the statement is True.",
+      "**B) The press will have lost 60% of its value after approximately 5.09 years.**  (true)\n\nSubstituting the recovered $\\delta=0.18$ into the isolated time gives\n\n$$t = \\frac{\\ln 2.5}{0.18}$$\n\n$$\\ln 2.5 \\approx 0.916291$$\n\n$$t \\approx 5.09$$\n\nThe claim is about $5.09$ years, so the statement is True.",
+      "**C) At that point, the press's remaining value is approximately \\$48,000.00.**  (true)\n\nRetaining $40\\%$ of the original \\$120,000 leaves\n\n$$0.40 \\times 120{,}000 = 48{,}000$$\n\nThe claim is approximately \\$48,000.00, so the statement is True.",
+      "**D) If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18 years.**  (true)\n\nHalving the depreciation rate to $9\\%$ doubles the isolated wait:\n\n$$t' = \\frac{\\ln 2.5}{0.09} \\approx 10.18$$\n\nThe original wait was $t \\approx 5.09$, and $10.18 = 2 \\times 5.09$. The claim is that doubled time, so the statement is True.",
+      "**E) The time to lose 80% of the value is longer than the time to lose 60% of the value.**  (true)\n\nLosing $80\\%$ of value means retaining $20\\%$, so\n\n$$t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18} = \\frac{\\ln 5}{0.18} \\approx 8.94$$\n\nThe time to lose $60\\%$ was $t_{60}=\\frac{\\ln 2.5}{0.18} \\approx 5.09$. The claim needs $t_{80}>t_{60}$. We have $8.94 > 5.09$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 28,
+    "solution_overview": "A manufacturing plant's stamping press has an initial value of \\$120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.\n\nThe press starts at \\$120,000 and depreciates continuously at $\\delta=0.18$:\n\n$$v_0 = 120{,}000, \\qquad \\delta = 0.18$$\n\nLosing $60\\%$ of value means retaining $40\\%$, so $v(t)=0.40 v_0$. Continuous depreciation $v(t)=v_0 e^{-\\delta t}$ isolates as\n\n$$t = \\frac{\\ln\\bigl(\\frac{1}{0.40}\\bigr)}{\\delta} = \\frac{\\ln 2.5}{\\delta}$$"
+  },
+  {
+    "id": "math-11-29",
+    "case_id": "MATH 11.29",
+    "title": "How the Continuous-vs-Annual Gap Widens With Rate and Time at a Regional Bank",
+    "subsection": "11.2",
+    "context": "A regional bank's marketing team wants to demonstrate to clients how the dollar gap between continuous compounding and ordinary annual compounding changes with the interest rate and the holding period. It compares nominal rates of 3% and 15%, each applied for 1 year to a \\$25,000 deposit, and then extends the 3% case to an 8-year horizon.",
+    "statements": [
+      "At a 3% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$11.36.",
+      "At a 15% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$295.86.",
+      "The 1-year gap at 15% is more than 30 times larger than the 1-year gap at 3%.",
+      "Extending the 3% comparison from 1 year to 8 years increases the dollar gap to approximately \\$111.98.",
+      "Continuous compounding becomes less advantageous to the lender over longer holding periods."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At a 3% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$11.36.**  (true)\n\nAt $3\\%$ for one year the continuous-minus-annual gap is\n\n$$G(0.03,1) = 25{,}000\\bigl(e^{0.03} - 1.03\\bigr)$$\n\n$$e^{0.03} \\approx 1.030455$$\n\n$$G(0.03,1) \\approx 11.36$$\n\nThe claim is approximately \\$11.36, so the statement is True.",
+      "**B) At a 15% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$295.86.**  (true)\n\nAt $15\\%$ for one year the continuous-minus-annual gap is\n\n$$G(0.15,1) = 25{,}000\\bigl(e^{0.15} - 1.15\\bigr)$$\n\n$$e^{0.15} \\approx 1.161834$$\n\n$$G(0.15,1) \\approx 295.86$$\n\nThe claim is approximately \\$295.86, so the statement is True.",
+      "**C) The 1-year gap at 15% is more than 30 times larger than the 1-year gap at 3%.**  (false)\n\nThe one-year gaps at the two rates are\n\n$$G(0.03,1) = 25{,}000\\bigl(e^{0.03}-1.03\\bigr) \\approx 11.36$$\n\n$$G(0.15,1) = 25{,}000\\bigl(e^{0.15}-1.15\\bigr) \\approx 295.86$$\n\n$$\\frac{295.86}{11.36} \\approx 26.04$$\n\nThe claim needs a ratio greater than $30$. We have $26.04 < 30$, so the statement is False.",
+      "**D) Extending the 3% comparison from 1 year to 8 years increases the dollar gap to approximately \\$111.98.**  (true)\n\nExtending the $3\\%$ comparison to eight years gives\n\n$$G(0.03,8) = 25{,}000\\bigl(e^{0.24} - (1.03)^{8}\\bigr)$$\n\n$$e^{0.24} \\approx 1.271249, \\qquad (1.03)^{8} \\approx 1.266770$$\n\n$$G(0.03,8) \\approx 111.98$$\n\nThe claim is approximately \\$111.98, so the statement is True.",
+      "**E) Continuous compounding becomes less advantageous to the lender over longer holding periods.**  (false)\n\nThe eight-year $3\\%$ gap is larger than the one-year $3\\%$ gap:\n\n$$G(0.03,1) \\approx 11.36$$\n\n$$G(0.03,8) \\approx 111.98$$\n\nThe continuous advantage widens as $t$ grows. The claim needs it to become less advantageous over longer holding periods. We have $111.98 > 11.36$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 29,
+    "solution_overview": "A regional bank's marketing team wants to demonstrate to clients how the dollar gap between continuous compounding and ordinary annual compounding changes with the interest rate and the holding period. It compares nominal rates of 3% and 15%, each applied for 1 year to a \\$25,000 deposit, and then extends the 3% case to an 8-year horizon.\n\nThe bank compares continuous compounding with ordinary annual compounding on a \\$25,000 deposit, first at $3\\%$ and $15\\%$ for one year, then at $3\\%$ for eight years:\n\n$$P = 25{,}000$$\n\n$$r = 3\\% = 0.03, \\qquad r = 15\\% = 0.15$$\n\nThe dollar gap between the two clocks is\n\n$$G(r,t) = P\\bigl(e^{rt} - (1+r)^{t}\\bigr)$$"
+  },
+  {
+    "id": "math-11-30",
+    "case_id": "MATH 11.30",
+    "title": "Continuous Compounding as the Ceiling on a Fund's Return at an Investment Advisory Firm",
+    "subsection": "11.2",
+    "context": "An investment advisory firm is evaluating a \\$400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.",
+    "statements": [
+      "Fund A's continuous year-end value is approximately \\$439,863.54.",
+      "Fund B's monthly year-end value is approximately \\$439,750.00.",
+      "The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.",
+      "If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.",
+      "The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Fund A's continuous year-end value is approximately \\$439,863.54.**  (true)\n\nFund A's continuous year-end value is\n\n$$S_A = 400{,}000 \\times e^{0.095}$$\n\n$$e^{0.095} \\approx 1.099659$$\n\n$$S_A \\approx 439{,}863.54$$\n\nThe claim is approximately \\$439,863.54, so the statement is True.",
+      "**B) Fund B's monthly year-end value is approximately \\$439,750.00.**  (false)\n\nFund B's monthly year-end value is\n\n$$S_B = 400{,}000 \\times \\left(1+\\frac{0.095}{12}\\right)^{12}$$\n\n$$\\left(1+\\frac{0.095}{12}\\right)^{12} \\approx 1.099248$$\n\n$$S_B \\approx 439{,}699.03$$\n\nThe claim is approximately \\$439,750.00. We have $439{,}699.03 \\ne 439{,}750.00$, so the statement is False.",
+      "**C) The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.**  (false)\n\nThe continuous compounding ceiling at this $9.5\\%$ quote is\n\n$$R_{\\mathrm{c}} = e^{0.095} - 1 \\approx 0.099659 \\approx 9.97\\%$$\n\nThe claim is about $9.50\\%$, equal to the nominal rate. We have $9.97\\% \\ne 9.50\\%$, so the statement is False.",
+      "**D) If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.**  (false)\n\nDaily compounding at the same $9.5\\%$ quote uses $n=365$:\n\n$$S_{\\mathrm{day}} = 400{,}000 \\times \\left(1+\\frac{0.095}{365}\\right)^{365}$$\n\n$$\\left(1+\\frac{0.095}{365}\\right)^{365} \\approx 1.099645$$\n\n$$S_{\\mathrm{day}} \\approx 439{,}858.10$$\n\n$$S_A = 400{,}000 \\times e^{0.095} \\approx 439{,}863.54$$\n\nThe claim needs $S_{\\mathrm{day}}>S_A$. We have $439{,}858.10 < 439{,}863.54$, so the statement is False.",
+      "**E) The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.**  (true)\n\nFund A, monthly Fund B, and daily compounding at the same $9.5\\%$ give\n\n$$S_A = 400{,}000 \\times e^{0.095} \\approx 439{,}863.54$$\n\n$$S_B = 400{,}000 \\times \\left(1+\\frac{0.095}{12}\\right)^{12} \\approx 439{,}699.03$$\n\n$$S_{\\mathrm{day}} = 400{,}000 \\times \\left(1+\\frac{0.095}{365}\\right)^{365} \\approx 439{,}858.10$$\n\n$$S_A - S_B \\approx 164.51$$\n\n$$S_A - S_{\\mathrm{day}} \\approx 5.44$$\n\nThe claim needs the daily gap to be smaller. We have $5.44 < 164.51$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 30,
+    "solution_overview": "An investment advisory firm is evaluating a \\$400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.\n\nBoth funds quote a 9.5% nominal annual rate on a \\$400,000 allocation for one year. Fund A compounds continuously; Fund B compounds monthly:\n\n$$P = 400{,}000, \\qquad r = 9.5\\% = 0.095, \\qquad t = 1$$\n\n$$n_B = 12$$\n\nThe two one-year balances, and the continuous effective annual rate, are\n\n$$S_A = P e^{r}, \\qquad S_B = P\\left(1+\\frac{r}{n}\\right)^{n}, \\qquad R_{\\mathrm{c}} = e^{r}-1$$"
+  },
+  {
+    "id": "math-11-31",
+    "case_id": "MATH 11.31",
+    "title": "Reverse-Engineering the Implied Rate of a Boutique Winery's Futures Fund",
+    "subsection": "11.2",
+    "context": "A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from \\$28,000 to \\$34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future, for 5 years from the start.",
+    "statements": [
+      "The implied nominal continuously-compounded rate is approximately 6.67%.",
+      "Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately \\$39,078.52.",
+      "A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.",
+      "At the implied rate, the fund's value would double from its original \\$28,000 in approximately 12.40 years.",
+      "If the implied rate had instead been exactly 6.00%, the 3-year value would exceed the actual observed \\$34,200.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The implied nominal continuously-compounded rate is approximately 6.67%.**  (true)\n\nThe overview recovered $r \\approx 6.67\\%$ as the implied continuous rate. The claim is that same figure, so the statement is True.",
+      "**B) Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately \\$39,078.52.**  (true)\n\nFive years from the start is two years beyond the observed data:\n\n$$S(5) = 28{,}000 \\times \\left(\\frac{34{,}200}{28{,}000}\\right)^{\\frac{5}{3}}$$\n\n$$\\left(\\frac{34{,}200}{28{,}000}\\right)^{\\frac{5}{3}} \\approx 1.395662$$\n\n$$S(5) \\approx 39{,}078.52$$\n\nThe claim is approximately \\$39,078.52, so the statement is True.",
+      "**C) A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.**  (false)\n\nA straight-line extension of the observed three-year dollar gain is\n\n$$\\frac{34{,}200-28{,}000}{3} = 2{,}066.67$$\n\n$$34{,}200 + 2 \\times 2{,}066.67 = 38{,}333.33$$\n\nThe exponential projection was $S(5) \\approx 39{,}078.52$. The claim needs these to match. We have $38{,}333.33 \\ne 39{,}078.52$, so the statement is False.",
+      "**D) At the implied rate, the fund's value would double from its original \\$28,000 in approximately 12.40 years.**  (false)\n\nDoubling the original \\$28,000 at the recovered rate takes\n\n$$t_2 = \\frac{\\ln 2}{0.06667} \\approx 10.40$$\n\nThe claim is about $12.40$ years. We have $10.40 \\ne 12.40$, so the statement is False.",
+      "**E) If the implied rate had instead been exactly 6.00%, the 3-year value would exceed the actual observed \\$34,200.00.**  (false)\n\nIf the implied rate had been $6.00\\%$, the three-year value would be\n\n$$S(3) = 28{,}000 \\times e^{0.06 \\times 3} = 28{,}000 \\times e^{0.18}$$\n\n$$e^{0.18} \\approx 1.197217$$\n\n$$S(3) \\approx 33{,}522.09$$\n\nThe claim needs $S(3)>34{,}200$. We have $33{,}522.09 < 34{,}200$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 31,
+    "solution_overview": "A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from \\$28,000 to \\$34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future, for 5 years from the start.\n\nThe fund grew continuously from \\$28,000 to \\$34,200 over three years:\n\n$$S_0 = 28{,}000, \\qquad S(3) = 34{,}200, \\qquad t = 3$$\n\nContinuous growth follows $S(t)=S_0 e^{rt}$, so the implied rate is\n\n$$r = \\frac{1}{t}\\ln\\bigl(\\frac{S(t)}{S_0}\\bigr)$$\n\n$$r = \\frac{1}{3}\\ln\\bigl(\\frac{34{,}200}{28{,}000}\\bigr) \\approx 0.06667 = 6.67\\%$$\n\nA later value at time $T$ is $S(T)=S_0 e^{rT}$."
+  },
+  {
+    "id": "math-11-32",
+    "case_id": "MATH 11.32",
+    "title": "A Corporate Treasurer's Three-Bank Comparison With Differing Nominal Rates",
+    "subsection": "11.2",
+    "context": "A corporate treasurer is placing \\$60,000 for 2 years and compares three offers: Bank X compounds continuously at a nominal annual rate of 6.8%; Bank Y compounds monthly at a nominal annual rate of 6.9%; Bank Z compounds quarterly at a nominal annual rate of 7.0%.",
+    "statements": [
+      "Bank X's 2-year value is approximately \\$68,740.91.",
+      "Bank Y's 2-year value is approximately \\$68,851.32.",
+      "Bank Z's 2-year value is approximately \\$68,932.91.",
+      "Despite compounding continuously, Bank X's value is actually the lowest of the three offers.",
+      "If Bank X's nominal rate were instead also raised to 7.0%, while keeping continuous compounding, its 2-year value would exceed Bank Z's value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Bank X's 2-year value is approximately \\$68,740.91.**  (true)\n\nBank X compounds continuously at $6.8\\%$ for two years:\n\n$$S_X = 60{,}000 \\times e^{0.068 \\times 2} = 60{,}000 \\times e^{0.136}$$\n\n$$e^{0.136} \\approx 1.145682$$\n\n$$S_X \\approx 68{,}740.91$$\n\nThe claim is approximately \\$68,740.91, so the statement is True.",
+      "**B) Bank Y's 2-year value is approximately \\$68,851.32.**  (true)\n\nBank Y compounds monthly at $6.9\\%$ for $24$ periods:\n\n$$S_Y = 60{,}000 \\times \\left(1+\\frac{0.069}{12}\\right)^{24}$$\n\n$$\\left(1.00575\\right)^{24} \\approx 1.147522$$\n\n$$S_Y \\approx 68{,}851.32$$\n\nThe claim is approximately \\$68,851.32, so the statement is True.",
+      "**C) Bank Z's 2-year value is approximately \\$68,932.91.**  (true)\n\nBank Z compounds quarterly at $7.0\\%$ for $8$ periods:\n\n$$S_Z = 60{,}000 \\times \\left(1+\\frac{0.070}{4}\\right)^{8}$$\n\n$$\\left(1.0175\\right)^{8} \\approx 1.148882$$\n\n$$S_Z \\approx 68{,}932.91$$\n\nThe claim is approximately \\$68,932.91, so the statement is True.",
+      "**D) Despite compounding continuously, Bank X's value is actually the lowest of the three offers.**  (true)\n\nThe three two-year values are\n\n$$S_X = 60{,}000 \\times e^{0.136} \\approx 68{,}740.91$$\n\n$$S_Y = 60{,}000 \\times (1.00575)^{24} \\approx 68{,}851.32$$\n\n$$S_Z = 60{,}000 \\times (1.0175)^{8} \\approx 68{,}932.91$$\n\nThese satisfy $S_X < S_Y < S_Z$. Bank X is the lowest of the three, so the statement is True.",
+      "**E) If Bank X's nominal rate were instead also raised to 7.0%, while keeping continuous compounding, its 2-year value would exceed Bank Z's value.**  (true)\n\nRaising Bank X to a $7.0\\%$ continuous quote for two years gives\n\n$$S_X' = 60{,}000 \\times e^{0.07 \\times 2} = 60{,}000 \\times e^{0.14}$$\n\n$$e^{0.14} \\approx 1.150274$$\n\n$$S_X' \\approx 69{,}016.43$$\n\n$$S_Z = 60{,}000 \\times (1.0175)^{8} \\approx 68{,}932.91$$\n\nThe claim needs $S_X'>S_Z$. We have $69{,}016.43 > 68{,}932.91$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 32,
+    "solution_overview": "A corporate treasurer is placing \\$60,000 for 2 years and compares three offers: Bank X compounds continuously at a nominal annual rate of 6.8%; Bank Y compounds monthly at a nominal annual rate of 6.9%; Bank Z compounds quarterly at a nominal annual rate of 7.0%.\n\nThe treasurer places \\$60,000 for two years under three offers:\n\n$$P = 60{,}000, \\qquad t = 2$$\n\nBank X compounds continuously at $6.8\\%$:\n\n$$r_X = 6.8\\% = 0.068$$\n\nBank Y compounds monthly at $6.9\\%$:\n\n$$r_Y = 6.9\\% = 0.069, \\qquad n_Y = 12$$\n\nBank Z compounds quarterly at $7.0\\%$:\n\n$$r_Z = 7.0\\% = 0.070, \\qquad n_Z = 4$$\n\nThe three future-value models are\n\n$$S_X = P e^{r_X t}, \\qquad S_Y = P\\left(1+\\frac{r_Y}{n_Y}\\right)^{n_Y t}, \\qquad S_Z = P\\left(1+\\frac{r_Z}{n_Z}\\right)^{n_Z t}$$"
+  },
+  {
+    "id": "math-11-33",
+    "case_id": "MATH 11.33",
+    "title": "Net Growth Rate of a Hedge Fund After a Continuous Management Fee Drag",
+    "subsection": "11.2",
+    "context": "A hedge fund's gross asset value of \\$2,000,000 grows continuously at a nominal annual rate of 9%, but the fund also deducts a continuous annual management fee of 2%, which acts as a constant drag on the growth rate.",
+    "statements": [
+      "The net continuous growth rate, combining the 9% gross return and the 2% fee drag, is 11% per year.",
+      "After 6 years, the net asset value is approximately \\$3,100,000.00.",
+      "At this net rate, the fund's value would double in approximately 7.00 years.",
+      "If the management fee instead rose to 3.5%, the 6-year net value would be approximately \\$2,781,936.26, and the doubling time would shorten to approximately 12.60 years.",
+      "A higher management fee always reduces both the net growth rate and the fund's cumulative value at any future date, compared to a lower fee, all else equal."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The net continuous growth rate, combining the 9% gross return and the 2% fee drag, is 11% per year.**  (false)\n\nThe overview recovered $r_{\\mathrm{net}}=7\\%$ as the net continuous growth rate. The claim is $11\\%$. We have $7\\% \\ne 11\\%$, so the statement is False.",
+      "**B) After 6 years, the net asset value is approximately \\$3,100,000.00.**  (false)\n\nSix years at the recovered $7\\%$ net rate give\n\n$$S(6) = 2{,}000{,}000 \\times e^{0.07 \\times 6} = 2{,}000{,}000 \\times e^{0.42}$$\n\n$$e^{0.42} \\approx 1.522123$$\n\n$$S(6) \\approx 3{,}043{,}923.11$$\n\nThe claim is approximately \\$3,100,000.00. We have $3{,}043{,}923.11 \\ne 3{,}100{,}000.00$, so the statement is False.",
+      "**C) At this net rate, the fund's value would double in approximately 7.00 years.**  (false)\n\nDoubling at the recovered $7\\%$ net rate takes\n\n$$t_2 = \\frac{\\ln 2}{0.07} \\approx 9.90$$\n\nThe claim is about $7.00$ years. We have $9.90 \\ne 7.00$, so the statement is False.",
+      "**D) If the management fee instead rose to 3.5%, the 6-year net value would be approximately \\$2,781,936.26, and the doubling time would shorten to approximately 12.60 years.**  (false)\n\nA $3.5\\%$ fee leaves a net rate of $9\\% - 3.5\\% = 5.5\\%$:\n\n$$S(6) = 2{,}000{,}000 \\times e^{0.055 \\times 6} = 2{,}000{,}000 \\times e^{0.33}$$\n\n$$e^{0.33} \\approx 1.390968$$\n\n$$S(6) \\approx 2{,}781{,}936.26$$\n\nThe doubling time at this net rate is\n\n$$t_2' = \\frac{\\ln 2}{0.055} \\approx 12.60$$\n\nAt the original $7\\%$ net rate, $t_2=\\frac{\\ln 2}{0.07}\\approx 9.90$. The wait lengthens from $9.90$ to $12.60$, it does not shorten, so the statement is False.",
+      "**E) A higher management fee always reduces both the net growth rate and the fund's cumulative value at any future date, compared to a lower fee, all else equal.**  (true)\n\nRaising the fee lowers $r_{\\mathrm{net}}=r-f$ and therefore lowers $S(t)=S_0 e^{r_{\\mathrm{net}} t}$ at every $t>0$. A higher fee reduces both the net growth rate and the cumulative value, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 33,
+    "solution_overview": "A hedge fund's gross asset value of \\$2,000,000 grows continuously at a nominal annual rate of 9%, but the fund also deducts a continuous annual management fee of 2%, which acts as a constant drag on the growth rate.\n\nThe fund starts at \\$2,000,000, grows continuously at $9\\%$, and pays a continuous $2\\%$ management fee:\n\n$$S_0 = 2{,}000{,}000, \\qquad r = 9\\% = 0.09, \\qquad f = 2\\% = 0.02$$\n\nThe fee is a constant drag, so the net continuous rate is\n\n$$r_{\\mathrm{net}} = r - f = 0.09 - 0.02 = 0.07 = 7\\%$$\n\nNet asset value then follows $S(t)=S_0 e^{r_{\\mathrm{net}} t}$."
+  },
+  {
+    "id": "math-11-34",
+    "case_id": "MATH 11.34",
+    "title": "Crossover Point Between a Growing Equity Stake and Shrinking Factory Equipment",
+    "subsection": "11.2",
+    "context": "A boutique investment firm holds two assets: Asset A, a start-up equity stake currently worth \\$50,000 and growing continuously at a nominal annual rate of 4%; and Asset B, aging factory equipment currently worth \\$250,000 and depreciating continuously at an annual rate of 12%. The firm wants to know whether, and when, Asset A's value will overtake Asset B's value.",
+    "statements": [
+      "Setting $A_0 e^{r_A t} = B_0 e^{-\\delta_B t}$ and solving for t gives $t = \\ln\\frac{(\\frac{B_0}{A_0})}{(r_A + \\delta_B)}$.",
+      "The crossover occurs at approximately t ≈ 10.06 years, at which point both assets are worth approximately \\$74,767.44.",
+      "At exactly t = 10 years, Asset A is already worth more than Asset B.",
+      "Asset A can never actually overtake Asset B in value, no matter how long both trends continue.",
+      "For any time beyond the crossover point, Asset A's value remains higher than Asset B's value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Setting $A_0 e^{r_A t} = B_0 e^{-\\delta_B t}$ and solving for t gives $t = \\ln\\frac{(\\frac{B_0}{A_0})}{(r_A + \\delta_B)}$.**  (true)\n\nThe overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation, so the statement is True.",
+      "**B) The crossover occurs at approximately t ≈ 10.06 years, at which point both assets are worth approximately \\$74,767.44.**  (true)\n\nSubstituting the recovered opening values and rates gives\n\n$$t = \\frac{\\ln\\bigl(\\frac{250{,}000}{50{,}000}\\bigr)}{0.04+0.12} = \\frac{\\ln 5}{0.16}$$\n\n$$\\ln 5 \\approx 1.609438$$\n\n$$t \\approx 10.06$$\n\nAt that time Asset A is worth\n\n$$A(10.06) = 50{,}000 \\times e^{0.04 \\times 10.06} \\approx 74{,}767.44$$\n\nThe claim is about $t \\approx 10.06$ years and about \\$74,767.44, so the statement is True.",
+      "**C) At exactly t = 10 years, Asset A is already worth more than Asset B.**  (false)\n\nAt exactly $t=10$ the two values are\n\n$$A(10) = 50{,}000 \\times e^{0.04 \\times 10} = 50{,}000 \\times e^{0.40} \\approx 74{,}591.23$$\n\n$$B(10) = 250{,}000 \\times e^{-0.12 \\times 10} = 250{,}000 \\times e^{-1.20} \\approx 75{,}298.55$$\n\nThe claim needs $A(10)>B(10)$. We have $74{,}591.23 < 75{,}298.55$, so the statement is False.",
+      "**D) Asset A can never actually overtake Asset B in value, no matter how long both trends continue.**  (false)\n\nThe crossover time is finite:\n\n$$t = \\frac{\\ln 5}{0.16} \\approx 10.06$$\n\nAfter that date $A(t)>B(t)$. Asset A does overtake Asset B, so the statement is False.",
+      "**E) For any time beyond the crossover point, Asset A's value remains higher than Asset B's value.**  (true)\n\nFor $t$ larger than the crossover $t_*\\approx 10.06$, the exponent $(r_A+\\delta_B)(t-t_*)$ is positive, so $A(t)>B(t)$ stays in force. Asset A remains ahead after the crossing, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 34,
+    "solution_overview": "A boutique investment firm holds two assets: Asset A, a start-up equity stake currently worth \\$50,000 and growing continuously at a nominal annual rate of 4%; and Asset B, aging factory equipment currently worth \\$250,000 and depreciating continuously at an annual rate of 12%. The firm wants to know whether, and when, Asset A's value will overtake Asset B's value.\n\nAsset A starts at \\$50,000 and grows continuously at $4\\%$. Asset B starts at \\$250,000 and depreciates continuously at $12\\%$:\n\n$$A_0 = 50{,}000, \\qquad r_A = 4\\% = 0.04$$\n\n$$B_0 = 250{,}000, \\qquad \\delta_B = 12\\% = 0.12$$\n\nThe two paths are $A(t)=A_0 e^{r_A t}$ and $B(t)=B_0 e^{-\\delta_B t}$. Setting $A(t)=B(t)$ isolates the crossover time\n\n$$t = \\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$$"
+  },
+  {
+    "id": "math-11-35",
+    "case_id": "MATH 11.35",
+    "title": "Verifying the Compounding-Frequency Ceiling Across Four Schedules for a Municipal Reserve",
+    "subsection": "11.2",
+    "context": "A municipal finance office is comparing four compounding schedules, all at the same nominal annual rate of 7%, applied to a \\$40,000 reserve fund for exactly 1 year: annual, quarterly, monthly, and continuous. The office wants to confirm the textbook's claim that increasing compounding frequency strictly increases the year-end value, up to the continuous-compounding ceiling.",
+    "statements": [
+      "The annual-compounding value is exactly \\$42,800.00.",
+      "The quarterly-compounding value is approximately \\$42,874.36, and the monthly-compounding value is approximately \\$42,891.60.",
+      "The four values, from smallest to largest, are ordered annual < quarterly < monthly < continuous.",
+      "The dollar gap between monthly and quarterly compounding is smaller than the dollar gap between continuous and monthly compounding.",
+      "No compounding schedule, however frequent, can ever produce a 1-year value exceeding the continuous-compounding value of \\$42,900.33 at this same 7% nominal rate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The annual-compounding value is exactly \\$42,800.00.**  (true)\n\nAnnual compounding is a single $7\\%$ credit:\n\n$$S_1 = 40{,}000 \\times 1.07 = 42{,}800.00$$\n\nThe claim is \\$42,800.00, so the statement is True.",
+      "**B) The quarterly-compounding value is approximately \\$42,874.36, and the monthly-compounding value is approximately \\$42,891.60.**  (true)\n\nQuarterly and monthly compounding at the same $7\\%$ quote give\n\n$$S_4 = 40{,}000 \\times \\left(1+\\frac{0.07}{4}\\right)^{4}$$\n\n$$\\left(1.0175\\right)^{4} \\approx 1.071859$$\n\n$$S_4 \\approx 42{,}874.36$$\n\n$$S_{12} = 40{,}000 \\times \\left(1+\\frac{0.07}{12}\\right)^{12}$$\n\n$$\\left(1+\\frac{0.07}{12}\\right)^{12} \\approx 1.072290$$\n\n$$S_{12} \\approx 42{,}891.60$$\n\nThe claim is about \\$42,874.36 and about \\$42,891.60, so the statement is True.",
+      "**C) The four values, from smallest to largest, are ordered annual < quarterly < monthly < continuous.**  (true)\n\nThe four one-year values at the same $7\\%$ quote are\n\n$$S_1 = 40{,}000 \\times 1.07 = 42{,}800.00$$\n\n$$S_4 = 40{,}000 \\times (1.0175)^{4} \\approx 42{,}874.36$$\n\n$$S_{12} = 40{,}000 \\times \\left(1+\\frac{0.07}{12}\\right)^{12} \\approx 42{,}891.60$$\n\n$$S_{\\mathrm{c}} = 40{,}000 \\times e^{0.07} \\approx 42{,}900.33$$\n\nThese satisfy $S_1 < S_4 < S_{12} < S_{\\mathrm{c}}$, so the statement is True.",
+      "**D) The dollar gap between monthly and quarterly compounding is smaller than the dollar gap between continuous and monthly compounding.**  (false)\n\nThe two successive dollar gaps are\n\n$$S_{12} - S_4 \\approx 42{,}891.60 - 42{,}874.36 = 17.24$$\n\n$$S_{\\mathrm{c}} - S_{12} \\approx 42{,}900.33 - 42{,}891.60 = 8.73$$\n\nThe claim needs $17.24 < 8.73$. We have $17.24 > 8.73$, so the statement is False.",
+      "**E) No compounding schedule, however frequent, can ever produce a 1-year value exceeding the continuous-compounding value of \\$42,900.33 at this same 7% nominal rate.**  (true)\n\nContinuous compounding at this $7\\%$ quote is the ceiling:\n\n$$S_{\\mathrm{c}} = 40{,}000 \\times e^{0.07} \\approx 42{,}900.33$$\n\nEvery finite $m$ gives $S_m < S_{\\mathrm{c}}$. No schedule can exceed \\$42,900.33 at this same nominal rate, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 35,
+    "solution_overview": "A municipal finance office is comparing four compounding schedules, all at the same nominal annual rate of 7%, applied to a \\$40,000 reserve fund for exactly 1 year: annual, quarterly, monthly, and continuous. The office wants to confirm the textbook's claim that increasing compounding frequency strictly increases the year-end value, up to the continuous-compounding ceiling.\n\nThe reserve is \\$40,000 for one year at a 7% nominal annual rate, compared under annual, quarterly, monthly, and continuous compounding:\n\n$$P = 40{,}000, \\qquad i = 7\\% = 0.07, \\qquad t = 1$$\n\n$$m = 1, \\qquad m = 4, \\qquad m = 12$$\n\nFinite compounding and the continuous ceiling are\n\n$$S_m = P\\left(1+\\frac{i}{m}\\right)^{m}, \\qquad S_{\\mathrm{c}} = P e^{i}$$"
+  },
+  {
+    "id": "math-11-36",
+    "case_id": "MATH 11.36",
+    "title": "Reverse-Engineering the Upfront Deposit Needed for a Tuition Lock",
+    "subsection": "11.2",
+    "context": "A parent wants to guarantee exactly \\$100,000 available in 8 years for a child's college tuition, and is choosing between two continuously-compounded investment vehicles: Option 1 offers a nominal annual rate of 4.5%, while Option 2 offers a nominal annual rate of 6.0%. The parent wants to know how much must be deposited today under each option.",
+    "statements": [
+      "Option 1 requires an upfront deposit of approximately \\$69,767.63.",
+      "Option 2 requires an upfront deposit of approximately \\$61,878.34.",
+      "Option 2 requires a larger upfront deposit than Option 1 to reach the same \\$100,000 target in 8 years.",
+      "The difference in required upfront deposits between the two options is approximately \\$9,000.00, with Option 2 requiring the larger amount.",
+      "If the parent instead had only 4 years to reach the same \\$100,000 target under Option 1's 4.5% rate, the required upfront deposit would be smaller than the 8-year requirement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Option 1 requires an upfront deposit of approximately \\$69,767.63.**  (true)\n\nOption 1 discounts \\$100,000 continuously at $4.5\\%$ for eight years:\n\n$$S_{0,1} = 100{,}000 \\times e^{-0.045 \\times 8} = 100{,}000 \\times e^{-0.36}$$\n\n$$e^{-0.36} \\approx 0.697676$$\n\n$$S_{0,1} \\approx 69{,}767.63$$\n\nThe claim is approximately \\$69,767.63, so the statement is True.",
+      "**B) Option 2 requires an upfront deposit of approximately \\$61,878.34.**  (true)\n\nOption 2 discounts \\$100,000 continuously at $6.0\\%$ for eight years:\n\n$$S_{0,2} = 100{,}000 \\times e^{-0.06 \\times 8} = 100{,}000 \\times e^{-0.48}$$\n\n$$e^{-0.48} \\approx 0.618783$$\n\n$$S_{0,2} \\approx 61{,}878.34$$\n\nThe claim is approximately \\$61,878.34, so the statement is True.",
+      "**C) Option 2 requires a larger upfront deposit than Option 1 to reach the same \\$100,000 target in 8 years.**  (false)\n\nThe two required deposits are\n\n$$S_{0,1} = 100{,}000 \\times e^{-0.36} \\approx 69{,}767.63$$\n\n$$S_{0,2} = 100{,}000 \\times e^{-0.48} \\approx 61{,}878.34$$\n\nThe claim needs $S_{0,2}>S_{0,1}$. We have $61{,}878.34 < 69{,}767.63$, so the statement is False.",
+      "**D) The difference in required upfront deposits between the two options is approximately \\$9,000.00, with Option 2 requiring the larger amount.**  (false)\n\nThe gap in required deposits is\n\n$$S_{0,1} - S_{0,2} \\approx 69{,}767.63 - 61{,}878.34 = 7{,}889.29$$\n\nOption 2 requires the smaller deposit. The claim is about \\$9,000.00 with Option 2 larger. We have $7{,}889.29 \\ne 9{,}000.00$, so the statement is False.",
+      "**E) If the parent instead had only 4 years to reach the same \\$100,000 target under Option 1's 4.5% rate, the required upfront deposit would be smaller than the 8-year requirement.**  (false)\n\nThe same \\$100,000 target in only four years under Option 1 requires\n\n$$S_0' = 100{,}000 \\times e^{-0.045 \\times 4} = 100{,}000 \\times e^{-0.18}$$\n\n$$e^{-0.18} \\approx 0.835270$$\n\n$$S_0' \\approx 83{,}527.02$$\n\n$$S_{0,1} = 100{,}000 \\times e^{-0.36} \\approx 69{,}767.63$$\n\nThe claim needs $S_0'<S_{0,1}$. We have $83{,}527.02 > 69{,}767.63$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 36,
+    "solution_overview": "A parent wants to guarantee exactly \\$100,000 available in 8 years for a child's college tuition, and is choosing between two continuously-compounded investment vehicles: Option 1 offers a nominal annual rate of 4.5%, while Option 2 offers a nominal annual rate of 6.0%. The parent wants to know how much must be deposited today under each option.\n\nThe parent needs \\$100,000 in eight years under two continuously compounded quotes:\n\n$$T = 100{,}000, \\qquad t = 8$$\n\nOption 1 quotes $4.5\\%$ and Option 2 quotes $6.0\\%$:\n\n$$r_1 = 4.5\\% = 0.045, \\qquad r_2 = 6.0\\% = 0.06$$\n\nThe required deposit is the continuous present value\n\n$$S_0 = T e^{-rt}$$"
+  },
+  {
+    "id": "math-11-37",
+    "case_id": "MATH 11.37",
+    "title": "A Logistics Company's Two-Phase Continuous Growth: Expansion Then Maturity",
+    "subsection": "11.2",
+    "context": "A logistics company's revenue base of \\$1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years of rapid expansion, then slows to a continuous nominal rate of 4% for the following 3 years of maturity, for 7 years total.",
+    "statements": [
+      "Revenue at the end of year 4 is approximately \\$2,685,284.46.",
+      "Revenue at the end of year 7 is approximately \\$3,027,649.77.",
+      "The single constant continuous rate that would have produced the same 7-year outcome starting from \\$1,800,000 is approximately 7.43%.",
+      "The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.",
+      "If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Revenue at the end of year 4 is approximately \\$2,685,284.46.**  (true)\n\nFour years of continuous $10\\%$ carry the exponent $0.40$:\n\n$$S(4) = 1{,}800{,}000 \\times e^{0.10 \\times 4} = 1{,}800{,}000 \\times e^{0.40}$$\n\n$$e^{0.40} \\approx 1.491825$$\n\n$$S(4) \\approx 2{,}685{,}284.46$$\n\nThe claim is approximately \\$2,685,284.46, so the statement is True.",
+      "**B) Revenue at the end of year 7 is approximately \\$3,027,649.77.**  (true)\n\nThe maturity phase then applies three years of continuous $4\\%$:\n\n$$S(7) = 1{,}800{,}000 \\times e^{0.40 + 0.04 \\times 3} = 1{,}800{,}000 \\times e^{0.52}$$\n\n$$e^{0.52} \\approx 1.682028$$\n\n$$S(7) \\approx 3{,}027{,}649.77$$\n\nThe claim is approximately \\$3,027,649.77, so the statement is True.",
+      "**C) The single constant continuous rate that would have produced the same 7-year outcome starting from \\$1,800,000 is approximately 7.43%.**  (true)\n\nThe single constant rate matching the seven-year outcome is the time-weighted average of the two phase rates:\n\n$$r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7} = \\frac{0.52}{7} \\approx 0.07429 = 7.43\\%$$\n\nThe claim is about $7.43\\%$, so the statement is True.",
+      "**D) The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.**  (true)\n\nThe effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of the two phase rates is\n\n$$\\frac{0.10+0.04}{2} = 0.07 = 7\\%$$\n\nThe claim needs $r_* > 7\\%$. We have $7.43\\% > 7\\%$, so the statement is True.",
+      "**E) If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same.**  (true)\n\nReversing the phases adds the same exponents:\n\n$$S_{\\mathrm{rev}}(7) = 1{,}800{,}000 \\times e^{0.04 \\times 3 + 0.10 \\times 4} = 1{,}800{,}000 \\times e^{0.52}$$\n\nThat equals the original $S(7)$. The year-7 revenue is unchanged, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 37,
+    "solution_overview": "A logistics company's revenue base of \\$1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years of rapid expansion, then slows to a continuous nominal rate of 4% for the following 3 years of maturity, for 7 years total.\n\nRevenue starts at \\$1,800,000, grows continuously at $10\\%$ for four years, then at $4\\%$ for three years:\n\n$$S_0 = 1{,}800{,}000$$\n\n$$r_1 = 10\\% = 0.10, \\qquad t_1 = 4$$\n\n$$r_2 = 4\\% = 0.04, \\qquad t_2 = 3$$\n\nThe two-phase value, and the single constant rate matching the whole span, are\n\n$$S(t_1+t_2) = S_0 e^{r_1 t_1 + r_2 t_2}, \\qquad r_* = \\frac{r_1 t_1 + r_2 t_2}{t_1+t_2}$$"
+  },
+  {
+    "id": "math-11-38",
+    "case_id": "MATH 11.38",
+    "title": "Reverse-Engineering a Crane's Implied Depreciation Rate for a Construction Equipment Reseller",
+    "subsection": "11.2",
+    "context": "A construction equipment reseller has a crane currently valued at \\$85,000 that, per accounting policy, must be written down to a resale value of \\$32,000 after 6 years of continuous depreciation. The reseller wants to know the implied annual depreciation rate δ, and compare the crane's value retention to a second, otherwise identical crane with a known δ = 15%.",
+    "statements": [
+      "Solving $v_0 \\times e^{-\\delta t} = v(t)$ for δ gives δ = ln($\\frac{v(t)}{v_0}$)/t.",
+      "The implied depreciation rate for the first crane is approximately 16.28% per year.",
+      "A second, otherwise identical crane purchased for the same \\$85,000 but depreciating continuously at a known rate of 15% per year would be worth approximately \\$36,000.00 after the same 6 years.",
+      "The first crane retains more of its value after 6 years than the second crane.",
+      "If the first crane's target resale value had instead been set at \\$40,000 after the same 6 years, the implied depreciation rate would be higher than 16.28%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Solving $v_0 \\times e^{-\\delta t} = v(t)$ for δ gives δ = ln($\\frac{v(t)}{v_0}$)/t.**  (false)\n\nThe overview isolated $\\delta=\\frac{1}{t}\\ln\\bigl(\\frac{v_0}{v(t)}\\bigr)$. The claim writes $\\ln\\bigl(\\frac{v(t)}{v_0}\\bigr)$ in the numerator. That ratio is less than $1$ and would make $\\delta$ negative. We have $\\frac{v_0}{v(t)} \\ne \\frac{v(t)}{v_0}$, so the statement is False.",
+      "**B) The implied depreciation rate for the first crane is approximately 16.28% per year.**  (true)\n\nThe overview recovered $\\delta \\approx 16.28\\%$ as the first crane's implied rate. The claim is that same figure, so the statement is True.",
+      "**C) A second, otherwise identical crane purchased for the same \\$85,000 but depreciating continuously at a known rate of 15% per year would be worth approximately \\$36,000.00 after the same 6 years.**  (false)\n\nThe second crane depreciates continuously at $15\\%$ for six years:\n\n$$v_2(6) = 85{,}000 \\times e^{-0.15 \\times 6} = 85{,}000 \\times e^{-0.90}$$\n\n$$e^{-0.90} \\approx 0.406570$$\n\n$$v_2(6) \\approx 34{,}558.42$$\n\nThe claim is approximately \\$36,000.00. We have $34{,}558.42 \\ne 36{,}000.00$, so the statement is False.",
+      "**D) The first crane retains more of its value after 6 years than the second crane.**  (false)\n\nAfter six years the two remaining values are\n\n$$v_1(6) = 32{,}000$$\n\n$$v_2(6) = 85{,}000 \\times e^{-0.90} \\approx 34{,}558.42$$\n\nThe claim needs $v_1(6)>v_2(6)$. We have $32{,}000 < 34{,}558.42$, so the statement is False.",
+      "**E) If the first crane's target resale value had instead been set at \\$40,000 after the same 6 years, the implied depreciation rate would be higher than 16.28%.**  (false)\n\nA \\$40,000 target after the same six years would imply\n\n$$\\delta' = \\frac{1}{6}\\ln\\bigl(\\frac{85{,}000}{40{,}000}\\bigr) \\approx 0.1256 = 12.56\\%$$\n\nThe original implied rate was $16.28\\%$. The claim needs $\\delta'>16.28\\%$. We have $12.56\\% < 16.28\\%$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 38,
+    "solution_overview": "A construction equipment reseller has a crane currently valued at \\$85,000 that, per accounting policy, must be written down to a resale value of \\$32,000 after 6 years of continuous depreciation. The reseller wants to know the implied annual depreciation rate δ, and compare the crane's value retention to a second, otherwise identical crane with a known δ = 15%.\n\nThe first crane starts at \\$85,000 and must reach \\$32,000 after six years of continuous depreciation:\n\n$$v_0 = 85{,}000, \\qquad v(6) = 32{,}000, \\qquad t = 6$$\n\nThe model $v(t)=v_0 e^{-\\delta t}$ isolates the implied rate as\n\n$$\\delta = \\frac{1}{t}\\ln\\bigl(\\frac{v_0}{v(t)}\\bigr)$$\n\n$$\\delta = \\frac{1}{6}\\ln\\bigl(\\frac{85{,}000}{32{,}000}\\bigr) \\approx 0.1628 = 16.28\\%$$\n\nThe second crane uses a known $\\delta=0.15$ over the same six years."
+  },
+  {
+    "id": "math-11-39",
+    "case_id": "MATH 11.39",
+    "title": "Doubling, Tripling, and Quadrupling Times for an Impact Investing Fund",
+    "subsection": "11.2",
+    "context": "A socially-responsible impact investing fund places \\$12,000 into a continuously-compounded account at a nominal annual rate of 6.5%, and the fund's trustees want to understand exactly how the times needed to double, triple, and quadruple the initial investment relate to one another.",
+    "statements": [
+      "The doubling time at 6.5% is approximately 10.66 years.",
+      "The tripling time at 6.5% is approximately 16.90 years.",
+      "The quadrupling time at 6.5% is approximately 21.33 years, and this is exactly equal to twice the doubling time.",
+      "At the quadrupling time, the fund's value is exactly \\$48,000.00.",
+      "The tripling time must be exactly 1.5 times the doubling time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The doubling time at 6.5% is approximately 10.66 years.**  (true)\n\nDoubling is the multiple $M=2$:\n\n$$t_2 = \\frac{\\ln 2}{0.065}$$\n\n$$\\ln 2 \\approx 0.693147$$\n\n$$t_2 \\approx 10.66$$\n\nThe claim is about $10.66$ years, so the statement is True.",
+      "**B) The tripling time at 6.5% is approximately 16.90 years.**  (true)\n\nTripling is the multiple $M=3$:\n\n$$t_3 = \\frac{\\ln 3}{0.065}$$\n\n$$\\ln 3 \\approx 1.098612$$\n\n$$t_3 \\approx 16.90$$\n\nThe claim is about $16.90$ years, so the statement is True.",
+      "**C) The quadrupling time at 6.5% is approximately 21.33 years, and this is exactly equal to twice the doubling time.**  (true)\n\nQuadrupling is the multiple $M=4=2^{2}$:\n\n$$t_4 = \\frac{\\ln 4}{0.065} = \\frac{2\\ln 2}{0.065}$$\n\n$$t_4 \\approx 21.33$$\n\n$$2 \\times t_2 = 2 \\times \\frac{\\ln 2}{0.065} \\approx 21.33$$\n\nThe quadrupling time is about $21.33$ years and equals twice the doubling time, so the statement is True.",
+      "**D) At the quadrupling time, the fund's value is exactly \\$48,000.00.**  (true)\n\nQuadrupling the \\$12,000 deposit gives\n\n$$4 \\times 12{,}000 = 48{,}000$$\n\nAt the quadrupling time the fund is worth exactly \\$48,000.00, so the statement is True.",
+      "**E) The tripling time must be exactly 1.5 times the doubling time.**  (false)\n\nThe two waiting times at $r=0.065$ are\n\n$$t_3 = \\frac{\\ln 3}{0.065} \\approx 16.90$$\n\n$$t_2 = \\frac{\\ln 2}{0.065} \\approx 10.66$$\n\n$$1.5 \\times t_2 \\approx 15.99$$\n\nThe claim needs $t_3=1.5\\,t_2$. We have $16.90 \\ne 15.99$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 39,
+    "solution_overview": "A socially-responsible impact investing fund places \\$12,000 into a continuously-compounded account at a nominal annual rate of 6.5%, and the fund's trustees want to understand exactly how the times needed to double, triple, and quadruple the initial investment relate to one another.\n\nThe fund places \\$12,000 at a 6.5% nominal annual rate compounded continuously:\n\n$$S_0 = 12{,}000, \\qquad r = 6.5\\% = 0.065$$\n\nThe balance follows $S(t)=S_0 e^{rt}$. Reaching a multiple $M$ of the deposit takes\n\n$$t_M = \\frac{\\ln M}{r}$$"
+  },
+  {
+    "id": "math-11-40",
+    "case_id": "MATH 11.40",
+    "title": "Capstone: A Three-Asset Family Office Portfolio Under Continuous Growth and Decay",
+    "subsection": "11.2",
+    "context": "A family office's capstone valuation combines three holdings, all valued in nominal undiscounted dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth \\$150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth \\$220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth \\$100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years of the 5-year total.",
+    "statements": [
+      "Asset A's value after 5 years is approximately \\$202,478.82.",
+      "Asset B's value after 5 years is approximately \\$140,278.19.",
+      "Asset C's value after 5 years is approximately \\$130,000.00.",
+      "The combined portfolio value after 5 years is less than the sum of the three original principals.",
+      "If Asset B's rate had instead been a continuous growth rate of the same 9% magnitude, its 5-year value would exceed \\$340,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Asset A's value after 5 years is approximately \\$202,478.82.**  (true)\n\nAsset A grows continuously at $6\\%$ for five years:\n\n$$A(5) = 150{,}000 \\times e^{0.06 \\times 5} = 150{,}000 \\times e^{0.30}$$\n\n$$e^{0.30} \\approx 1.349859$$\n\n$$A(5) \\approx 202{,}478.82$$\n\nThe claim is approximately \\$202,478.82, so the statement is True.",
+      "**B) Asset B's value after 5 years is approximately \\$140,278.19.**  (true)\n\nAsset B depreciates continuously at $9\\%$ for five years:\n\n$$B(5) = 220{,}000 \\times e^{-0.09 \\times 5} = 220{,}000 \\times e^{-0.45}$$\n\n$$e^{-0.45} \\approx 0.637628$$\n\n$$B(5) \\approx 140{,}278.19$$\n\nThe claim is approximately \\$140,278.19, so the statement is True.",
+      "**C) Asset C's value after 5 years is approximately \\$130,000.00.**  (false)\n\nAsset C grows continuously at $8\\%$ for three years, then at $3\\%$ for two years:\n\n$$C(5) = 100{,}000 \\times e^{0.08 \\times 3 + 0.03 \\times 2} = 100{,}000 \\times e^{0.30}$$\n\n$$e^{0.30} \\approx 1.349859$$\n\n$$C(5) \\approx 134{,}985.88$$\n\nThe claim is approximately \\$130,000.00. We have $134{,}985.88 \\ne 130{,}000.00$, so the statement is False.",
+      "**D) The combined portfolio value after 5 years is less than the sum of the three original principals.**  (false)\n\nThe combined five-year value is the sum of the three terminal amounts:\n\n$$A(5) = 150{,}000 \\times e^{0.30} \\approx 202{,}478.82$$\n\n$$B(5) = 220{,}000 \\times e^{-0.45} \\approx 140{,}278.19$$\n\n$$C(5) = 100{,}000 \\times e^{0.30} \\approx 134{,}985.88$$\n\n$$A(5)+B(5)+C(5) \\approx 477{,}742.89$$\n\nThe original principals sum to $150{,}000+220{,}000+100{,}000=470{,}000$. The claim needs $477{,}742.89 < 470{,}000$. We have $477{,}742.89 > 470{,}000$, so the statement is False.",
+      "**E) If Asset B's rate had instead been a continuous growth rate of the same 9% magnitude, its 5-year value would exceed \\$340,000.00.**  (true)\n\nIf Asset B instead grew continuously at $9\\%$ for five years:\n\n$$B^{+}(5) = 220{,}000 \\times e^{0.09 \\times 5} = 220{,}000 \\times e^{0.45}$$\n\n$$e^{0.45} \\approx 1.568312$$\n\n$$B^{+}(5) \\approx 345{,}028.68$$\n\nThe claim needs $B^{+}(5)>340{,}000$. We have $345{,}028.68 > 340{,}000$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 40,
+    "solution_overview": "A family office's capstone valuation combines three holdings, all valued in nominal undiscounted dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth \\$150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth \\$220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth \\$100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years of the 5-year total.\n\nThe family office adds three five-year values in undiscounted dollars.\n\nAsset A starts at \\$150,000 and grows continuously at $6\\%$:\n\n$$A_0 = 150{,}000, \\qquad r_A = 6\\% = 0.06, \\qquad t = 5$$\n\nAsset B starts at \\$220,000 and depreciates continuously at $9\\%$:\n\n$$B_0 = 220{,}000, \\qquad \\delta_B = 9\\% = 0.09$$\n\nAsset C starts at \\$100,000, grows continuously at $8\\%$ for three years, then at $3\\%$ for two years:\n\n$$C_0 = 100{,}000, \\qquad r_{C,1}=0.08,\\; t_{C,1}=3, \\qquad r_{C,2}=0.03,\\; t_{C,2}=2$$\n\nThe three terminal values are\n\n$$A(5)=A_0 e^{r_A t}, \\qquad B(5)=B_0 e^{-\\delta_B t}, \\qquad C(5)=C_0 e^{r_{C,1}t_{C,1}+r_{C,2}t_{C,2}}$$"
+  }
+]

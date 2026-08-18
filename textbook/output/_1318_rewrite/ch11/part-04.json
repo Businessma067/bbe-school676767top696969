@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-11-61",
+    "case_id": "MATH 11.61",
+    "title": "Startup Revenue Growth Over Five Years",
+    "subsection": "11.4",
+    "context": "A newly launched e-commerce startup earns \\$50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = \\$50 million and quotient k = 1.10 over n = 5 years.",
+    "statements": [
+      "The expected revenue in year 2 is \\$55.00 million.",
+      "The expected revenue in year 5 is approximately \\$73.21 million.",
+      "The total revenue expected over the 5-year period is approximately \\$305.26 million.",
+      "If revenue had instead remained flat at \\$50 million per year for 5 years, the total would have been \\$250 million - exactly \\$60.00 million less than the actual growth-scenario total.",
+      "The total revenue expected over the 5-year period is approximately \\$328.86 million."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The expected revenue in year 2 is \\$55.00 million.**  (true)\n\nYear 2 is one growth step past the opening term:\n\n$$a_2 = 50 \\times 1.10 = 55.00$$\n\nThe claim is \\$55.00 million, so the statement is True.",
+      "**B) The expected revenue in year 5 is approximately \\$73.21 million.**  (true)\n\nYear 5 carries four growth steps past the opening term:\n\n$$a_5 = 50 \\times (1.10)^4$$\n\n$$(1.10)^4 = 1.4641$$\n\n$$a_5 = 50 \\times 1.4641 = 73.205 \\approx 73.21$$\n\nThe claim is about \\$73.21 million, so the statement is True.",
+      "**C) The total revenue expected over the 5-year period is approximately \\$305.26 million.**  (true)\n\nThe overview recovered $s_5 \\approx 305.26$ as the five-year total. The claim is that same figure, so the statement is True.",
+      "**D) If revenue had instead remained flat at \\$50 million per year for 5 years, the total would have been \\$250 million - exactly \\$60.00 million less than the actual growth-scenario total.**  (false)\n\nA flat path of \\$50 million a year for five years totals\n\n$$50 \\times 5 = 250$$\n\nThe overview recovered $s_5 \\approx 305.26$. Growth adds\n\n$$305.26 - 250 = 55.26$$\n\nThe claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million, so the statement is False.",
+      "**E) The total revenue expected over the 5-year period is approximately \\$328.86 million.**  (false)\n\nThe overview recovered $s_5 \\approx 305.26$. The claim is about \\$328.86 million. Those totals disagree, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 61,
+    "solution_overview": "A newly launched e-commerce startup earns \\$50 million in revenue this year and expects revenue to grow by $10\\%$ annually for each of the next four years.\n\n**Part 1: Setup.**\n\nThe five yearly revenues form a finite geometric series:\n\n$$a = 50, \\qquad k = 1.10, \\qquad n = 5$$\n\nAll figures below are in millions of dollars. The term in year $t$ and the finite sum are\n\n$$a_t = ak^{t-1}$$\n\n$$s_n = a\\frac{k^n-1}{k-1}$$\n\n**Part 2: Solve.**\n\nThe five-year growth factor is\n\n$$1.10^5 = 1.61051$$\n\n$$s_5 = 50\\frac{1.61051-1}{0.10}$$\n\n$$= 50 \\times 6.1051 = 305.255 \\approx 305.26$$"
+  },
+  {
+    "id": "math-11-62",
+    "case_id": "MATH 11.62",
+    "title": "Perpetual Profit Stream from a Subscription Box Line",
+    "subsection": "11.4",
+    "context": "A subscription box company just earned \\$2,000 in profit from its newest product line this month. Because customer renewals are expected to halve every month indefinitely, monthly profits are modeled as an infinite geometric series with first term a = \\$2,000 and quotient k = 0.5.",
+    "statements": [
+      "The infinite profit series converges to a finite sum.",
+      "The infinite sum of all future monthly profits is \\$4,000.00.",
+      "The sum of just the first 4 months' profits is \\$3,750.00.",
+      "The sum of the first 4 months' profits exceeds the infinite sum.",
+      "If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \\$-4,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The infinite profit series converges to a finite sum.**  (true)\n\nThe overview recovered $|k|=0.5<1$, so the infinite profit series converges to a finite sum. The claim is that same test, so the statement is True.",
+      "**B) The infinite sum of all future monthly profits is \\$4,000.00.**  (true)\n\nThe overview recovered $s_{\\infty}=4{,}000$. The claim is \\$4,000.00, so the statement is True.",
+      "**C) The sum of just the first 4 months' profits is \\$3,750.00.**  (true)\n\nThe overview recovered $s_4=3{,}750$. The claim is \\$3,750.00, so the statement is True.",
+      "**D) The sum of the first 4 months' profits exceeds the infinite sum.**  (false)\n\nThe overview recovered $s_4=3{,}750$ and $s_{\\infty}=4{,}000$. Comparing those totals:\n\n$$3{,}750 < 4{,}000$$\n\nThe four-month sum does not exceed the infinite sum, so the statement is False.",
+      "**E) If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \\$-4,000.00.**  (false)\n\nAt the hypothetical quotient $k=1.5$,\n\n$$|k| = 1.5 \\ge 1$$\n\nso the infinite geometric formula does not apply. The terms $2{,}000$, $3{,}000$, $4{,}500$, $\\ldots$ grow without bound, and the partial sums diverge. Plugging into $\\frac{a}{1-k}$ would give $-4{,}000$, but that algebraic extension is not a sum of profits. The series does not converge, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 62,
+    "solution_overview": "A subscription box company just earned \\$2,000 in profit from its newest product line this month. Customer renewals are expected to halve every month indefinitely.\n\n**Part 1: Setup.**\n\nMonthly profits form an infinite geometric series:\n\n$$a = 2{,}000, \\qquad k = 0.5$$\n\nWhen $|k|<1$, the infinite sum and the sum of the first $n$ terms are\n\n$$s_{\\infty} = \\frac{a}{1-k}$$\n\n$$s_n = a\\frac{1-k^n}{1-k}$$\n\n**Part 2: Solve.**\n\n$$|k| = 0.5 < 1$$\n\nso the series converges.\n\n$$s_{\\infty} = \\frac{2{,}000}{1-0.5} = \\frac{2{,}000}{0.5} = 4{,}000$$\n\nThe first four profits are \\$2,000, \\$1,000, \\$500, and \\$250:\n\n$$s_4 = 2{,}000+1{,}000+500+250 = 3{,}750$$"
+  },
+  {
+    "id": "math-11-63",
+    "case_id": "MATH 11.63",
+    "title": "Declining Annual Deposits into a Sinking Fund",
+    "subsection": "11.4",
+    "context": "An investor commits to an unusual sinking-fund plan: this year's deposit is \\$800, and each following year's deposit is 90% of the previous year's deposit, continuing indefinitely. This is an infinite geometric series with a = \\$800 and k = 0.90.",
+    "statements": [
+      "The infinite deposit series converges.",
+      "The infinite sum of all deposits is \\$8,000.00.",
+      "The sum of the first 10 deposits is approximately \\$5,210.57.",
+      "The first 10 deposits together represent about 65% of the infinite total sum.",
+      "If the quotient were instead k = 1.10, the series would diverge."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The infinite deposit series converges.**  (true)\n\nThe overview recovered $|k|=0.90<1$, so the infinite deposit series converges. The claim is that same test, so the statement is True.",
+      "**B) The infinite sum of all deposits is \\$8,000.00.**  (true)\n\nThe overview recovered $s_{\\infty}=8{,}000$. The claim is \\$8,000.00, so the statement is True.",
+      "**C) The sum of the first 10 deposits is approximately \\$5,210.57.**  (true)\n\nThe overview recovered $s_{10}\\approx 5{,}210.57$. The claim is that same ten-deposit total, so the statement is True.",
+      "**D) The first 10 deposits together represent about 65% of the infinite total sum.**  (true)\n\nThe overview recovered $s_{10}\\approx 5{,}210.57$ and $s_{\\infty}=8{,}000$. Their share is\n\n$$\\frac{5{,}210.57}{8{,}000} \\approx 0.6513 \\approx 65\\%$$\n\nThe claim is about $65\\%$, so the statement is True.",
+      "**E) If the quotient were instead k = 1.10, the series would diverge.**  (true)\n\nAt the hypothetical quotient $k=1.10$,\n\n$$|k| = 1.10 \\ge 1$$\n\nso the convergence test fails. Growing deposits of \\$800, \\$880, \\$968, $\\ldots$ have partial sums that run to infinity. The series diverges, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 63,
+    "solution_overview": "An investor commits to a sinking-fund plan: this year's deposit is \\$800, and each following year's deposit is $90\\%$ of the previous year's deposit, continuing indefinitely.\n\n**Part 1: Setup.**\n\nThe deposits form an infinite geometric series:\n\n$$a = 800, \\qquad k = 0.90$$\n\nWhen $|k|<1$, the infinite sum and the sum of the first $n$ terms are\n\n$$s_{\\infty} = \\frac{a}{1-k}$$\n\n$$s_n = a\\frac{1-k^n}{1-k}$$\n\n**Part 2: Solve.**\n\n$$|k| = 0.90 < 1$$\n\nso the series converges.\n\n$$s_{\\infty} = \\frac{800}{1-0.90} = \\frac{800}{0.10} = 8{,}000$$\n\n$$0.90^{10} = 0.3486784401$$\n\n$$s_{10} = 800\\frac{1-0.3486784401}{0.10}$$\n\n$$= 800 \\times 6.513215599 = 5{,}210.57$$"
+  },
+  {
+    "id": "math-11-64",
+    "case_id": "MATH 11.64",
+    "title": "Lithium Reserve Depletion for a Mining Company",
+    "subsection": "11.4",
+    "context": "A mining company estimates its lithium reserves at 18,000,000 tons. Current annual extraction is a constant 300,000 tons per year. Separately, analysts also model a scenario in which extraction instead starts at 300,000 tons and grows by 5% per year for 10 years, a finite geometric series with a = 300,000 and k = 1.05.",
+    "statements": [
+      "At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.",
+      "If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.",
+      "Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.",
+      "If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.",
+      "The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.**  (true)\n\nAt a constant $300{,}000$ tons per year, the exhaustion time is\n\n$$t = \\frac{18{,}000{,}000}{300{,}000} = 60$$\n\nThe claim is $60$ years, so the statement is True.",
+      "**B) If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.**  (true)\n\nAt a constant $500{,}000$ tons per year, the exhaustion time is\n\n$$t = \\frac{18{,}000{,}000}{500{,}000} = 36$$\n\nThe claim is $36$ years, so the statement is True.",
+      "**C) Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.**  (true)\n\nThe overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity, so the statement is True.",
+      "**D) If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.**  (false)\n\nThe overview recovered $s_{10}\\approx 3{,}773{,}368$ tons under $5\\%$ growth. The claim is about $3{,}900{,}000$ tons. Those totals disagree, so the statement is False.",
+      "**E) The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons.**  (false)\n\nThe overview recovered a growing $10$-year total of about $3{,}773{,}368$ tons and a constant $10$-year total of $3{,}000{,}000$ tons. The extra extraction is\n\n$$3{,}773{,}368-3{,}000{,}000 = 773{,}368$$\n\n$$773{,}368 < 1{,}000{,}000$$\n\nThe extra is not more than $1{,}000{,}000$ tons, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 64,
+    "solution_overview": "A mining company estimates its lithium reserves at $18{,}000{,}000$ tons. Current annual extraction is a constant $300{,}000$ tons per year. Separately, analysts model extraction starting at $300{,}000$ tons and growing by $5\\%$ per year for $10$ years.\n\n**Part 1: Setup.**\n\nThe reserve and the growing scenario are\n\n$$R = 18{,}000{,}000, \\qquad a = 300{,}000, \\qquad k = 1.05, \\qquad n = 10$$\n\nAt a constant annual extraction $E$, the exhaustion time is $t=\\frac{R}{E}$. Constant extraction is the $k=1$ case, with $n$-year total $s_n=an$. For $k\\ne 1$,\n\n$$s_n = a\\frac{k^n-1}{k-1}$$\n\n**Part 2: Solve.**\n\n$$1.05^{10} = 1.628894627$$\n\n$$s_{10} = 300{,}000\\frac{1.628894627-1}{0.05} = 3{,}773{,}367.76$$\n\nThe constant $10$-year total at $300{,}000$ tons per year is\n\n$$300{,}000 \\times 10 = 3{,}000{,}000$$"
+  },
+  {
+    "id": "math-11-65",
+    "case_id": "MATH 11.65",
+    "title": "Coal Reserves and Declining Output",
+    "subsection": "11.4",
+    "context": "A coal mining region has 9,000 million tons, or 9 billion tons, of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 million tons and k = 0.97. A second scenario considers a steeper 5% annual decline with k = 0.95 starting from the same output.",
+    "statements": [
+      "Output in the second year is 174.6 million tons.",
+      "The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.",
+      "The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”",
+      "If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.",
+      "Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Output in the second year is 174.6 million tons.**  (true)\n\nYear 2 is one decline step past this year's output:\n\n$$a_2 = 180 \\times 0.97 = 174.6$$\n\nThe claim is $174.6$ million tons, so the statement is True.",
+      "**B) The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.**  (true)\n\nThe overview recovered $s_{\\infty}=6{,}000$ under the $3\\%$ decline. The claim is $6{,}000$ million tons, so the statement is True.",
+      "**C) The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”**  (true)\n\nThe overview recovered an infinite extraction of $6{,}000$ million tons against a reserve of $9{,}000$ million tons, leaving $3{,}000$ million tons stranded. The claim is that $3$ billion tons remain unmined, so the statement is True.",
+      "**D) If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.**  (false)\n\nUnder a $5\\%$ decline,\n\n$$s_{\\infty} = \\frac{180}{1-0.95} = \\frac{180}{0.05} = 3{,}600$$\n\nThe stranded reserve is then\n\n$$9{,}000-3{,}600 = 5{,}400$$\n\nThe overview recovered $3{,}000$ million tons stranded under the $3\\%$ decline. A $5\\%$ decline strands more coal, not less, so the statement is False.",
+      "**E) Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons.**  (false)\n\nThe first $20$ years under the $3\\%$ decline sum to\n\n$$0.97^{20} \\approx 0.5438$$\n\n$$s_{20} = 180\\frac{1-0.5438}{0.03} \\approx 2{,}737.3$$\n\nThe overview recovered $s_{\\infty}=6{,}000$. Since $2{,}737.3<6{,}000$, the $20$-year total does not exceed the infinite total, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 65,
+    "solution_overview": "A coal mining region has $9{,}000$ million tons of estimated reserves. This year's output is $180$ million tons, and analysts project output will fall by $3\\%$ every year forever. A second scenario uses a $5\\%$ annual decline from the same starting output.\n\n**Part 1: Setup.**\n\nThe reserve, first output, and decline quotients are\n\n$$R = 9{,}000, \\qquad a = 180, \\qquad k_3 = 0.97, \\qquad k_5 = 0.95$$\n\nFigures are in millions of tons. When $|k|<1$,\n\n$$s_{\\infty} = \\frac{a}{1-k}, \\qquad s_n = a\\frac{1-k^n}{1-k}$$\n\n**Part 2: Solve.**\n\nUnder the $3\\%$ decline,\n\n$$s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6{,}000$$\n\nThe stranded reserve is\n\n$$9{,}000-6{,}000 = 3{,}000$$"
+  },
+  {
+    "id": "math-11-66",
+    "case_id": "MATH 11.66",
+    "title": "Alternating Correction Payments in a Trading Model",
+    "subsection": "11.4",
+    "context": "A quantitative trading model applies a diminishing corrective adjustment after each rebalancing: the first adjustment is \\$4,000, and each subsequent adjustment reverses sign and is half the size of the previous one, continuing indefinitely. This is an infinite geometric series with a = \\$4,000 and a negative quotient k = -0.5.",
+    "statements": [
+      "The alternating adjustment series converges to a finite sum.",
+      "The infinite sum of all adjustments is approximately \\$2,666.67.",
+      "The sum of the first 4 adjustments is \\$3,000.00.",
+      "The series necessarily diverges regardless of its magnitude.",
+      "If the quotient were instead exactly k = -1, the partial sums would alternate forever between \\$4,000 and \\$0."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The alternating adjustment series converges to a finite sum.**  (true)\n\nThe overview recovered $|k|=0.5<1$, so the alternating adjustment series converges to a finite sum. The claim is that same test, so the statement is True.",
+      "**B) The infinite sum of all adjustments is approximately \\$2,666.67.**  (true)\n\nThe overview recovered $s_{\\infty}\\approx 2{,}666.67$. The claim is that same infinite sum, so the statement is True.",
+      "**C) The sum of the first 4 adjustments is \\$3,000.00.**  (false)\n\nThe first four adjustments are\n\n$$4{,}000, \\qquad 4{,}000(-0.5)=-2{,}000$$\n\n$$4{,}000(0.25)=1{,}000, \\qquad 4{,}000(-0.125)=-500$$\n\n$$s_4 = 4{,}000-2{,}000+1{,}000-500 = 2{,}500$$\n\nThe claim is \\$3,000.00. The four-term sum is \\$2,500.00, so the statement is False.",
+      "**D) The series necessarily diverges regardless of its magnitude.**  (false)\n\nThe overview recovered $|k|=0.5<1$, so this series converges. A negative quotient does not force divergence: the test uses $|k|$, not the sign of $k$. The claim says the series necessarily diverges, so the statement is False.",
+      "**E) If the quotient were instead exactly k = -1, the partial sums would alternate forever between \\$4,000 and \\$0.**  (true)\n\nAt $k=-1$ the terms alternate between $4{,}000$ and $-4{,}000$. The partial sums are then\n\n$$s_1=4{,}000, \\qquad s_2=0, \\qquad s_3=4{,}000, \\qquad s_4=0$$\n\nOdd $n$ returns \\$4,000 and even $n$ returns \\$0, forever. The claim is that oscillation, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 66,
+    "solution_overview": "A quantitative trading model applies a diminishing corrective adjustment after each rebalancing: the first adjustment is \\$4,000, and each later adjustment reverses sign and is half the size of the previous one, continuing indefinitely.\n\n**Part 1: Setup.**\n\nThe adjustments form an infinite geometric series:\n\n$$a = 4{,}000, \\qquad k = -0.5$$\n\nWhen $|k|<1$,\n\n$$s_{\\infty} = \\frac{a}{1-k}$$\n\n**Part 2: Solve.**\n\n$$|k| = |-0.5| = 0.5 < 1$$\n\nso the series converges.\n\n$$s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} \\approx 2{,}666.67$$"
+  },
+  {
+    "id": "math-11-67",
+    "case_id": "MATH 11.67",
+    "title": "Equal vs. Growing Pension Contributions",
+    "subsection": "11.4",
+    "context": "A city pension fund receives equal annual contributions of \\$12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same \\$12 million starting point, a finite geometric series with a = \\$12 million, k = 1.04, and n = 15.",
+    "statements": [
+      "This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.",
+      "The total contributions over the 15 years of equal \\$12 million payments equal \\$180.00 million.",
+      "Under the 4%-growth alternative, the 15-year total is approximately \\$240.11 million.",
+      "The 4%-growth 15-year total exceeds the no-growth total by more than \\$65.00 million.",
+      "Applying the general formula directly to the no-growth case would require dividing by zero."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.**  (true)\n\nThe equal-payment plan is the $k=1$ case already written in the overview, so the $15$-year total is $a\\times n$. The claim is that identity, so the statement is True.",
+      "**B) The total contributions over the 15 years of equal \\$12 million payments equal \\$180.00 million.**  (true)\n\nThe overview recovered $s_{15}=180$ under equal payments. The claim is \\$180.00 million, so the statement is True.",
+      "**C) Under the 4%-growth alternative, the 15-year total is approximately \\$240.11 million.**  (false)\n\nThe overview recovered a growing $15$-year total of about \\$240.28 million. The claim is about \\$240.11 million. Those totals disagree, so the statement is False.",
+      "**D) The 4%-growth 15-year total exceeds the no-growth total by more than \\$65.00 million.**  (false)\n\nThe overview recovered \\$240.28 million under growth and \\$180.00 million with no growth. The extra is\n\n$$240.28-180.00 = 60.28$$\n\n$$60.28 < 65.00$$\n\nThe extra is not more than \\$65.00 million, so the statement is False.",
+      "**E) Applying the general formula directly to the no-growth case would require dividing by zero.**  (true)\n\nThe general finite-sum formula divides by $k-1$. At $k=1$,\n\n$$k-1 = 0$$\n\nso that formula is undefined. The equal-payment case must use $s_n=an$ instead. The claim is that division by zero, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 67,
+    "solution_overview": "A city pension fund receives equal annual contributions of \\$12 million for $15$ years. Fund managers also model contributions that grow by $4\\%$ each year from the same \\$12 million start.\n\n**Part 1: Setup.**\n\nBoth plans run $15$ years from a first contribution of \\$12 million:\n\n$$a = 12, \\qquad n = 15$$\n\nThe equal-payment plan has $k=1$. The growing plan has $k=1.04$. Figures are in millions of dollars.\n\nFor $k=1$, $s_n=an$. For $k\\ne 1$,\n\n$$s_n = a\\frac{k^n-1}{k-1}$$\n\n**Part 2: Solve.**\n\nThe equal-payment total is\n\n$$s_{15} = 12 \\times 15 = 180$$\n\nThe growing-plan factor is $1.04^{15}\\approx 1.800944$, so\n\n$$s_{15} = 12\\frac{1.800944-1}{0.04} = 12 \\times 20.0236 \\approx 240.28$$"
+  },
+  {
+    "id": "math-11-68",
+    "case_id": "MATH 11.68",
+    "title": "Structured Settlement: Finite Payments vs. Perpetual Value",
+    "subsection": "11.4",
+    "context": "A structured settlement is set up to pay \\$15,000 in its first year, with each subsequent payment 88% of the prior one, where a = \\$15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.",
+    "statements": [
+      "The second payment in the sequence is \\$13,200.00.",
+      "The total of the 8 finite payments is approximately \\$80,045.68.",
+      "If the payments continued forever under the same 88% quotient, the infinite total would be \\$130,000.00.",
+      "The finite 8-payment total represents more than 75% of the infinite total.",
+      "If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The second payment in the sequence is \\$13,200.00.**  (true)\n\nThe second payment is one decay step past the first:\n\n$$a_2 = 15{,}000 \\times 0.88 = 13{,}200$$\n\nThe claim is \\$13,200.00, so the statement is True.",
+      "**B) The total of the 8 finite payments is approximately \\$80,045.68.**  (true)\n\nThe overview recovered $s_8\\approx 80{,}045.68$. The claim is that same eight-payment total, so the statement is True.",
+      "**C) If the payments continued forever under the same 88% quotient, the infinite total would be \\$130,000.00.**  (false)\n\nThe overview recovered $s_{\\infty}=125{,}000$. The claim is \\$130,000.00. Those totals disagree, so the statement is False.",
+      "**D) The finite 8-payment total represents more than 75% of the infinite total.**  (false)\n\nThe overview recovered $s_8\\approx 80{,}045.68$ and $s_{\\infty}=125{,}000$. The share is\n\n$$\\frac{80{,}045.68}{125{,}000} \\approx 0.6404 \\approx 64\\%$$\n\n$$64\\% < 75\\%$$\n\nThe eight-payment total is not more than $75\\%$ of the infinite total, so the statement is False.",
+      "**E) If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88.**  (false)\n\nAt the slower decay $k=0.95$,\n\n$$s_{\\infty} = \\frac{15{,}000}{1-0.95} = \\frac{15{,}000}{0.05} = 300{,}000$$\n\nThe overview recovered \\$125,000 at $k=0.88$. Since $300{,}000>125{,}000$, a less steep decline makes the infinite total larger, not smaller, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 68,
+    "solution_overview": "A structured settlement pays \\$15,000 in its first year, with each later payment $88\\%$ of the prior one. One clause pays for $8$ years; a hypothetical clause continues the same payments forever.\n\n**Part 1: Setup.**\n\n$$a = 15{,}000, \\qquad k = 0.88, \\qquad n = 8$$\n\nThe finite total and, because $|k|<1$, the perpetual total are\n\n$$s_n = a\\frac{1-k^n}{1-k}, \\qquad s_{\\infty} = \\frac{a}{1-k}$$\n\n**Part 2: Solve.**\n\n$$0.88^8 \\approx 0.359635$$\n\n$$s_8 = 15{,}000\\frac{1-0.359635}{0.12} = 15{,}000 \\times 5.336379 \\approx 80{,}045.68$$\n\n$$s_{\\infty} = \\frac{15{,}000}{1-0.88} = \\frac{15{,}000}{0.12} = 125{,}000$$"
+  },
+  {
+    "id": "math-11-69",
+    "case_id": "MATH 11.69",
+    "title": "Growing Franchise Royalties Over 12 Years",
+    "subsection": "11.4",
+    "context": "A franchisor receives a royalty of \\$9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = \\$9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.",
+    "statements": [
+      "The finite-sum formula still gives a valid, well-defined 12-year total.",
+      "The total royalties collected over the 12 years are approximately \\$175,000.00.",
+      "The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.",
+      "The royalty payment in year 12 alone is approximately \\$20,715.85.",
+      "If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The finite-sum formula still gives a valid, well-defined 12-year total.**  (true)\n\nThe finite-sum formula needs $k\\ne 1$. Here $k=1.08\\ne 1$, so $s_{12}$ is well-defined. The claim is that this $12$-year total exists, so the statement is True.",
+      "**B) The total royalties collected over the 12 years are approximately \\$175,000.00.**  (false)\n\nThe overview recovered $s_{12}\\approx 170{,}794.15$. The claim is about \\$175,000.00. Those totals disagree, so the statement is False.",
+      "**C) The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.**  (false)\n\nThe infinite-sum formula requires $|k|<1$. Here\n\n$$|k| = 1.08 \\ge 1$$\n\nso that formula does not apply, and a growing royalty stream has no finite infinite total. The claim treats the infinite formula as legitimate, so the statement is False.",
+      "**D) The royalty payment in year 12 alone is approximately \\$20,715.85.**  (false)\n\nYear $12$ uses eleven growth steps:\n\n$$1.08^{11} \\approx 2.331639$$\n\n$$a_{12} = 9{,}000 \\times 2.331639 \\approx 20{,}984.75$$\n\nThe claim is about \\$20,715.85. The year-$12$ royalty is about \\$20,984.75, so the statement is False.",
+      "**E) If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total.**  (true)\n\nThe overview recovered \\$170,794.15 under $8\\%$ growth and \\$108,000 with no growth. The extra is\n\n$$170{,}794.15-108{,}000 = 62{,}794.15$$\n\nThe claim is that the flat total sits \\$62,794.15 below the growing total, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 69,
+    "solution_overview": "A franchisor receives a royalty of \\$9,000 in the first year, with royalties projected to grow $8\\%$ per year for $12$ years. Analysts also compare this with a flat $0\\%$-growth stream.\n\n**Part 1: Setup.**\n\n$$a = 9{,}000, \\qquad k = 1.08, \\qquad n = 12$$\n\nFor $k\\ne 1$, the finite total and the year-$t$ royalty are\n\n$$s_n = a\\frac{k^n-1}{k-1}, \\qquad a_t = ak^{t-1}$$\n\nA flat stream has $k=1$ and total $s_n=an$.\n\n**Part 2: Solve.**\n\n$$1.08^{12} \\approx 2.518170$$\n\n$$s_{12} = 9{,}000\\frac{2.518170-1}{0.08} = 9{,}000 \\times 18.977128 \\approx 170{,}794.15$$\n\nWith no growth,\n\n$$9{,}000 \\times 12 = 108{,}000$$"
+  },
+  {
+    "id": "math-11-70",
+    "case_id": "MATH 11.70",
+    "title": "Tech Company Valuation: Finite Growth Plus Terminal Perpetuity",
+    "subsection": "11.4",
+    "context": "A tech company projects revenue of \\$4 million this year, growing 20% per year for 6 years in a finite geometric series with a = \\$4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.",
+    "statements": [
+      "The 6-year finite sum of projected revenues is approximately \\$39.72 million.",
+      "Year-6 revenue alone is approximately \\$9.95 million.",
+      "The finite 6-year series has no valid sum via the finite-sum formula.",
+      "Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \\$66.36 million.",
+      "Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \\$100 million."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The 6-year finite sum of projected revenues is approximately \\$39.72 million.**  (true)\n\nThe overview recovered $s_6=39.72$. The claim is about \\$39.72 million, so the statement is True.",
+      "**B) Year-6 revenue alone is approximately \\$9.95 million.**  (true)\n\nThe overview recovered $a_6\\approx 9.95$. The claim is about \\$9.95 million, so the statement is True.",
+      "**C) The finite 6-year series has no valid sum via the finite-sum formula.**  (false)\n\nThe finite-sum formula needs $k\\ne 1$. Here $k=1.20\\ne 1$, so $s_6$ is well-defined. The claim says the six-year series has no valid finite sum, so the statement is False.",
+      "**D) Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \\$66.36 million.**  (true)\n\nThe overview recovered $a_6\\approx 9.95328$. Treating that as the first terminal payment at $k_T=0.85$,\n\n$$T = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15} \\approx 66.36$$\n\nThe claim is about \\$66.36 million, so the statement is True.",
+      "**E) Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \\$100 million.**  (false)\n\nThe overview recovered $s_6=39.72$. The terminal value is about $66.36$, so the combined projected value is\n\n$$39.72+66.36 = 106.08$$\n\n$$106.08 > 100$$\n\nThe combined value is not less than \\$100 million, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 70,
+    "solution_overview": "A tech company projects revenue of \\$4 million this year, growing $20\\%$ per year for $6$ years. Investors then treat year-$6$ revenue as the first payment of a terminal perpetuity that declines $15\\%$ per year forever.\n\n**Part 1: Setup.**\n\nFigures are in millions of dollars.\n\n$$a = 4, \\qquad k = 1.20, \\qquad n = 6, \\qquad k_T = 0.85$$\n\nThe finite total and the year-$t$ revenue are\n\n$$s_n = a\\frac{k^n-1}{k-1}, \\qquad a_t = ak^{t-1}$$\n\nWhen $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$.\n\n**Part 2: Solve.**\n\n$$1.20^6 = 2.985984$$\n\n$$s_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72$$\n\n$$1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328 \\approx 9.95$$"
+  },
+  {
+    "id": "math-11-71",
+    "case_id": "MATH 11.71",
+    "title": "Reverse-Engineering a Retailer's First-Month Restocking Cost",
+    "subsection": "11.4",
+    "context": "A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly \\$58,000. Management wants to know what the first month's cost, a, must have been to produce that total.",
+    "statements": [
+      "If the first month's cost had instead been exactly \\$1,000, the second month's cost would be \\$1,150.00.",
+      "Solving for the first-month cost gives approximately \\$6,625.74.",
+      "The 6th month's restocking cost is approximately \\$13,326.73.",
+      "The combined restocking cost for months 4 through 6 is approximately \\$37,930.00.",
+      "If the same \\$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \\$6,625.74 found under 15% growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) If the first month's cost had instead been exactly \\$1,000, the second month's cost would be \\$1,150.00.**  (true)\n\nIf month $1$ were \\$1,000, month $2$ would be one growth step later:\n\n$$1{,}000 \\times 1.15 = 1{,}150$$\n\nThe claim is \\$1,150.00, so the statement is True.",
+      "**B) Solving for the first-month cost gives approximately \\$6,625.74.**  (true)\n\nThe overview recovered $a\\approx 6{,}625.74$. The claim is that same first-month cost, so the statement is True.",
+      "**C) The 6th month's restocking cost is approximately \\$13,326.73.**  (true)\n\nMonth $6$ uses five growth steps past the recovered $a\\approx 6{,}625.74$:\n\n$$1.15^5 = 2.011357188$$\n\n$$a_6 = 6{,}625.74 \\times 2.011357188 \\approx 13{,}326.73$$\n\nThe claim is about \\$13,326.73, so the statement is True.",
+      "**D) The combined restocking cost for months 4 through 6 is approximately \\$37,930.00.**  (false)\n\nMonths $4$ through $6$ are $a k^3$, $a k^4$, and $a k^5$:\n\n$$1.15^3+1.15^4+1.15^5 = 1.520875+1.749006+2.011357 = 5.281239$$\n\n$$6{,}625.74 \\times 5.281239 \\approx 34{,}992.12$$\n\nThe claim is about \\$37,930.00. The three-month total is about \\$34,992.12, so the statement is False.",
+      "**E) If the same \\$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \\$6,625.74 found under 15% growth.**  (true)\n\nSpreading \\$58,000 evenly over six months gives\n\n$$\\frac{58{,}000}{6} \\approx 9{,}666.67$$\n\nThe overview recovered $a\\approx 6{,}625.74$. Since $9{,}666.67>6{,}625.74$, the flat monthly figure exceeds the growing first-month cost, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 71,
+    "solution_overview": "A retailer's monthly restocking cost grows $15\\%$ every month for $6$ months. The six-month total is \\$58,000, and the unknown is the first month's cost $a$.\n\n**Part 1: Setup.**\n\n$$s_6 = 58{,}000, \\qquad k = 1.15, \\qquad n = 6$$\n\nThe geometric total is $s_n=a\\frac{k^n-1}{k-1}$, so\n\n$$a = s_n\\frac{k-1}{k^n-1}$$\n\nThe cost in month $t$ is $a_t=ak^{t-1}$.\n\n**Part 2: Solve.**\n\n$$1.15^6 = 2.313060766$$\n\n$$a = 58{,}000\\frac{0.15}{2.313060766-1} = \\frac{8{,}700}{1.313060766} \\approx 6{,}625.74$$"
+  },
+  {
+    "id": "math-11-72",
+    "case_id": "MATH 11.72",
+    "title": "University Endowment: Sustainable Declining Payout",
+    "subsection": "11.4",
+    "context": "A university endowment pays out \\$500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = \\$500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.",
+    "statements": [
+      "The payout in the second year is \\$490,000.00.",
+      "The infinite total of all future payouts converges to \\$25,000,000.00.",
+      "The cumulative payout over just the first 10 years is approximately \\$4,800,000.00.",
+      "The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.",
+      "If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The payout in the second year is \\$490,000.00.**  (true)\n\nYear 2 is one decline step past this year's payout:\n\n$$a_2 = 500{,}000 \\times 0.98 = 490{,}000$$\n\nThe claim is \\$490,000.00, so the statement is True.",
+      "**B) The infinite total of all future payouts converges to \\$25,000,000.00.**  (true)\n\nThe overview recovered $s_{\\infty}=25{,}000{,}000$. The claim is \\$25,000,000.00, so the statement is True.",
+      "**C) The cumulative payout over just the first 10 years is approximately \\$4,800,000.00.**  (false)\n\nThe overview recovered $s_{10}\\approx 4{,}573{,}179.83$. The claim is about \\$4,800,000.00. Those totals disagree, so the statement is False.",
+      "**D) The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.**  (true)\n\nThe overview recovered $s_{10}\\approx 4{,}573{,}179.83$ and $s_{\\infty}=25{,}000{,}000$. The share is\n\n$$\\frac{4{,}573{,}179.83}{25{,}000{,}000} \\approx 0.1829 \\approx 18\\%$$\n\nThe claim is about $18\\%$, so the statement is True.",
+      "**E) If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.**  (false)\n\nAt $k=0.95$,\n\n$$s_{\\infty} = \\frac{500{,}000}{1-0.95} = \\frac{500{,}000}{0.05} = 10{,}000{,}000$$\n\nHalf of the original infinite total is\n\n$$\\frac{25{,}000{,}000}{2} = 12{,}500{,}000$$\n\n$$10{,}000{,}000 < 12{,}500{,}000$$\n\nThe steeper-decline total is not more than half of \\$25,000,000, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 72,
+    "solution_overview": "A university endowment pays out \\$500,000 in scholarships this year and then shrinks the payout by $2\\%$ every year forever. The board also asks about the first $10$ years and about a steeper decline at $k=0.95$.\n\n**Part 1: Setup.**\n\n$$a = 500{,}000, \\qquad k_1 = 0.98, \\qquad k_2 = 0.95, \\qquad n = 10$$\n\nWhen $|k|<1$,\n\n$$s_{\\infty} = \\frac{a}{1-k}, \\qquad s_n = a\\frac{1-k^n}{1-k}$$\n\n**Part 2: Solve.**\n\nUnder the $2\\%$ decline,\n\n$$s_{\\infty} = \\frac{500{,}000}{1-0.98} = \\frac{500{,}000}{0.02} = 25{,}000{,}000$$\n\n$$0.98^{10} = 0.817072807$$\n\n$$s_{10} = 500{,}000\\frac{1-0.817072807}{0.02} = 500{,}000 \\times 9.146360 \\approx 4{,}573{,}179.83$$"
+  },
+  {
+    "id": "math-11-73",
+    "case_id": "MATH 11.73",
+    "title": "Marketing Budget: Solving for the Break-Point Year",
+    "subsection": "11.4",
+    "context": "A company's marketing budget starts at \\$200,000 this year and grows 12% every year with a = \\$200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses \\$3,000,000.",
+    "statements": [
+      "The marketing budget in year 2 is \\$224,000.00.",
+      "The cumulative spend after 9 years is still below the \\$3,000,000 target.",
+      "The cumulative spend after 10 years is approximately \\$3,600,000.00.",
+      "The smallest n for which cumulative spend surpasses \\$3,000,000 is n = 9.",
+      "If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The marketing budget in year 2 is \\$224,000.00.**  (true)\n\nYear 2 is one growth step past the opening budget:\n\n$$a_2 = 200{,}000 \\times 1.12 = 224{,}000$$\n\nThe claim is \\$224,000.00, so the statement is True.",
+      "**B) The cumulative spend after 9 years is still below the \\$3,000,000 target.**  (true)\n\nThe overview recovered $s_9\\approx 2{,}955{,}131.26$. Since\n\n$$2{,}955{,}131.26 < 3{,}000{,}000$$\n\nnine years remain below the target, so the statement is True.",
+      "**C) The cumulative spend after 10 years is approximately \\$3,600,000.00.**  (false)\n\nThe overview recovered $s_{10}\\approx 3{,}509{,}747.01$. The claim is about \\$3,600,000.00. Those totals disagree, so the statement is False.",
+      "**D) The smallest n for which cumulative spend surpasses \\$3,000,000 is n = 9.**  (false)\n\nThe overview recovered $s_9\\approx 2{,}955{,}131.26$ still below \\$3,000,000 and $s_{10}\\approx 3{,}509{,}747.01$ already above it. The smallest such $n$ is therefore $10$, not $9$, so the statement is False.",
+      "**E) If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years.**  (false)\n\nAt $8\\%$ growth,\n\n$$1.08^{10} = 2.158924997$$\n\n$$s_{10} = 200{,}000\\frac{2.158924997-1}{0.08} = 200{,}000 \\times 14.486562 \\approx 2{,}897{,}312.49$$\n\n$$2{,}897{,}312.49 < 3{,}000{,}000$$\n\nThe ten-year total still misses the target, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 73,
+    "solution_overview": "A company's marketing budget starts at \\$200,000 this year and grows $12\\%$ every year. The CFO wants the smallest $n$ for which cumulative spend first surpasses \\$3,000,000.\n\n**Part 1: Setup.**\n\n$$a = 200{,}000, \\qquad k = 1.12$$\n\nFor $k\\ne 1$,\n\n$$s_n = a\\frac{k^n-1}{k-1}$$\n\n**Part 2: Solve.**\n\n$$1.12^9 = 2.773078757$$\n\n$$s_9 = 200{,}000\\frac{2.773078757-1}{0.12} = 200{,}000 \\times 14.775656 \\approx 2{,}955{,}131.26$$\n\n$$1.12^{10} = 3.105848289$$\n\n$$s_{10} = 200{,}000\\frac{3.105848289-1}{0.12} = 200{,}000 \\times 17.548736 \\approx 3{,}509{,}747.01$$"
+  },
+  {
+    "id": "math-11-74",
+    "case_id": "MATH 11.74",
+    "title": "Charitable Trust: A Deferred, Declining Grant Stream",
+    "subsection": "11.4",
+    "context": "A charitable trust will issue its first grant of \\$50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = \\$50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.",
+    "statements": [
+      "The second grant in the sequence is \\$48,000.00.",
+      "The infinite total of all future grants is \\$1,250,000.00.",
+      "The total of the first 15 grants is approximately \\$572,392.03.",
+      "The first 15 grants represent less than 40% of the infinite total.",
+      "If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The second grant in the sequence is \\$48,000.00.**  (true)\n\nThe second grant is one decline step past the first:\n\n$$a_2 = 50{,}000 \\times 0.96 = 48{,}000$$\n\nThe claim is \\$48,000.00, so the statement is True.",
+      "**B) The infinite total of all future grants is \\$1,250,000.00.**  (true)\n\nThe overview recovered $s_{\\infty}=1{,}250{,}000$. The claim is \\$1,250,000.00, so the statement is True.",
+      "**C) The total of the first 15 grants is approximately \\$572,392.03.**  (true)\n\nThe overview recovered $s_{15}\\approx 572{,}392.03$. The claim is that same fifteen-grant total, so the statement is True.",
+      "**D) The first 15 grants represent less than 40% of the infinite total.**  (false)\n\nThe overview recovered $s_{15}\\approx 572{,}392.03$ and $s_{\\infty}=1{,}250{,}000$. The share is\n\n$$\\frac{572{,}392.03}{1{,}250{,}000} \\approx 0.4579 \\approx 46\\%$$\n\n$$46\\% > 40\\%$$\n\nThe first $15$ grants are not less than $40\\%$ of the infinite total, so the statement is False.",
+      "**E) If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.**  (true)\n\nAt $k=0.90$,\n\n$$s_{\\infty} = \\frac{50{,}000}{1-0.90} = \\frac{50{,}000}{0.10} = 500{,}000$$\n\nHalf of the original infinite total is\n\n$$\\frac{1{,}250{,}000}{2} = 625{,}000$$\n\n$$500{,}000 < 625{,}000$$\n\nThe steeper-decline total is less than half of \\$1,250,000, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 74,
+    "solution_overview": "A charitable trust will issue its first grant of \\$50,000 starting six years from now, with each later grant equal to $96\\%$ of the previous grant, continuing forever. Analysts also want the first $15$ grants and a comparison at $k=0.90$.\n\n**Part 1: Setup.**\n\n$$a = 50{,}000, \\qquad k_1 = 0.96, \\qquad k_2 = 0.90, \\qquad n = 15$$\n\nWhen $|k|<1$,\n\n$$s_{\\infty} = \\frac{a}{1-k}, \\qquad s_n = a\\frac{1-k^n}{1-k}$$\n\n**Part 2: Solve.**\n\nAt $k=0.96$,\n\n$$s_{\\infty} = \\frac{50{,}000}{1-0.96} = \\frac{50{,}000}{0.04} = 1{,}250{,}000$$\n\n$$0.96^{15} = 0.542086380$$\n\n$$s_{15} = 50{,}000\\frac{1-0.542086380}{0.04} = 50{,}000 \\times 11.447840 \\approx 572{,}392.03$$"
+  },
+  {
+    "id": "math-11-75",
+    "case_id": "MATH 11.75",
+    "title": "Vineyard Yield: A Quarterly Decline Unit-Conversion Trap",
+    "subsection": "11.4",
+    "context": "A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.",
+    "statements": [
+      "The second quarter's yield is 9,800.00 lbs.",
+      "The total yield over the full 5-year span is approximately 166,196.01 lbs.",
+      "Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.",
+      "The yield in the 20th quarter alone is approximately 6,812.33 lbs.",
+      "If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The second quarter's yield is 9,800.00 lbs.**  (true)\n\nQuarter $2$ is one decline step past the first quarter:\n\n$$a_2 = 10{,}000 \\times 0.98 = 9{,}800$$\n\nThe claim is $9{,}800.00$ lbs, so the statement is True.",
+      "**B) The total yield over the full 5-year span is approximately 166,196.01 lbs.**  (true)\n\nThe overview recovered $s_{20}=166{,}196.01$ as the $20$-quarter, five-year total. The claim is that same yield, so the statement is True.",
+      "**C) Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.**  (false)\n\nSubstituting $n=5$ instead of $n=20$ gives\n\n$$0.98^5 = 0.903920800$$\n\n$$s_5 = 10{,}000\\frac{1-0.903920800}{0.02} = 10{,}000 \\times 4.80396 = 48{,}039.60$$\n\nThat figure is the first five quarters, not five years. Five years are $20$ quarters, whose total the overview recovered as $166{,}196.01$ lbs. Using $n=5$ is not the correct five-year total, so the statement is False.",
+      "**D) The yield in the 20th quarter alone is approximately 6,812.33 lbs.**  (true)\n\nQuarter $20$ uses $19$ decline steps:\n\n$$0.98^{19} \\approx 0.681230$$\n\n$$a_{20} = 10{,}000 \\times 0.681230 \\approx 6{,}812.33$$\n\nThe claim is about $6{,}812.33$ lbs, so the statement is True.",
+      "**E) If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total.**  (false)\n\nIf the decline continued forever,\n\n$$s_{\\infty} = \\frac{10{,}000}{1-0.98} = \\frac{10{,}000}{0.02} = 500{,}000$$\n\nThe overview recovered $s_{20}=166{,}196.01$. Since $500{,}000>166{,}196.01$, the infinite total is larger than the $20$-quarter total, not smaller, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 75,
+    "solution_overview": "A vineyard's grape yield declines by $2\\%$ every quarter over a $5$-year span of $20$ quarters. The first quarter's yield is $10{,}000$ lbs.\n\n**Part 1: Setup.**\n\n$$a = 10{,}000, \\qquad k = 0.98, \\qquad n = 20$$\n\nThe finite total, the quarter-$t$ yield, and the hypothetical infinite total are\n\n$$s_n = a\\frac{1-k^n}{1-k}, \\qquad a_t = ak^{t-1}, \\qquad s_{\\infty} = \\frac{a}{1-k}$$\n\n**Part 2: Solve.**\n\n$$0.98^{20} = 0.667607972$$\n\n$$s_{20} = 10{,}000\\frac{1-0.667607972}{0.02} = 10{,}000 \\times 16.619601 = 166{,}196.01$$"
+  },
+  {
+    "id": "math-11-76",
+    "case_id": "MATH 11.76",
+    "title": "Comparing Two Franchise Territories Over 8 Years",
+    "subsection": "11.4",
+    "context": "A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of \\$80,000, growing 6% per year with a = \\$80,000 and k = 1.06. Territory B starts higher, at \\$95,000, but grows more slowly, at only 2% per year with a = \\$95,000 and k = 1.02.",
+    "statements": [
+      "Territory A's 8-year total royalties are approximately \\$791,797.43.",
+      "Territory B's 8-year total royalties are approximately \\$815,382.06.",
+      "Territory A's 8-year total royalties exceed Territory B's 8-year total.",
+      "In year 8 alone, Territory A's royalty payment of approximately \\$120,290.42 exceeds Territory B's year-8 payment of approximately \\$109,125.14.",
+      "Territory B's 8-year total exceeds Territory A's 8-year total by more than \\$30,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Territory A's 8-year total royalties are approximately \\$791,797.43.**  (true)\n\nThe overview recovered $s_{A,8}\\approx 791{,}797.43$. The claim is that same eight-year total, so the statement is True.",
+      "**B) Territory B's 8-year total royalties are approximately \\$815,382.06.**  (true)\n\nThe overview recovered $s_{B,8}\\approx 815{,}382.06$. The claim is that same eight-year total, so the statement is True.",
+      "**C) Territory A's 8-year total royalties exceed Territory B's 8-year total.**  (false)\n\nThe overview recovered $s_{A,8}\\approx 791{,}797.43$ and $s_{B,8}\\approx 815{,}382.06$. Comparing those totals:\n\n$$791{,}797.43 < 815{,}382.06$$\n\nTerritory A's total does not exceed Territory B's total, so the statement is False.",
+      "**D) In year 8 alone, Territory A's royalty payment of approximately \\$120,290.42 exceeds Territory B's year-8 payment of approximately \\$109,125.14.**  (true)\n\nYear $8$ uses seven growth steps:\n\n$$1.06^7 \\approx 1.503630, \\qquad a_{A,8} = 80{,}000 \\times 1.503630 \\approx 120{,}290.42$$\n\n$$1.02^7 \\approx 1.148686, \\qquad a_{B,8} = 95{,}000 \\times 1.148686 \\approx 109{,}125.14$$\n\n$$120{,}290.42 > 109{,}125.14$$\n\nTerritory A's year-$8$ payment exceeds Territory B's, so the statement is True.",
+      "**E) Territory B's 8-year total exceeds Territory A's 8-year total by more than \\$30,000.**  (false)\n\nThe overview recovered $s_{B,8}\\approx 815{,}382.06$ and $s_{A,8}\\approx 791{,}797.43$. Territory B's lead is\n\n$$815{,}382.06-791{,}797.43 = 23{,}584.63$$\n\n$$23{,}584.63 < 30{,}000$$\n\nThe lead is not more than \\$30,000, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 76,
+    "solution_overview": "A franchisor compares two territories over $8$ years. Territory A starts at \\$80,000 and grows $6\\%$ per year. Territory B starts at \\$95,000 and grows $2\\%$ per year.\n\n**Part 1: Setup.**\n\n$$a_A = 80{,}000, \\qquad k_A = 1.06$$\n\n$$a_B = 95{,}000, \\qquad k_B = 1.02, \\qquad n = 8$$\n\nThe finite total and the year-$t$ royalty are\n\n$$s_n = a\\frac{k^n-1}{k-1}, \\qquad a_t = ak^{t-1}$$\n\n**Part 2: Solve.**\n\n$$1.06^8 = 1.593848075$$\n\n$$s_{A,8} = 80{,}000\\frac{1.593848075-1}{0.06} = 80{,}000 \\times 9.897468 \\approx 791{,}797.43$$\n\n$$1.02^8 = 1.171659381$$\n\n$$s_{B,8} = 95{,}000\\frac{1.171659381-1}{0.02} = 95{,}000 \\times 8.582969 \\approx 815{,}382.06$$"
+  },
+  {
+    "id": "math-11-77",
+    "case_id": "MATH 11.77",
+    "title": "Diminishing Marginal Returns from Advertising Spend",
+    "subsection": "11.4",
+    "context": "An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = \\frac{5,000}{n^{p}}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\\sum a_n$ converges, using the rule that $\\sum \\frac{1}{n^{p}}$ converges if and only if p > 1.",
+    "statements": [
+      "With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \\$650.00.",
+      "With p = 1.5, the infinite series converges to a finite total value.",
+      "If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.",
+      "$a_{100} = \\$5.00$, and this alone is enough to guarantee that the series $\\sum a_n$ converges.",
+      "With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \\$650.00.**  (false)\n\nAt $p=1.5$ the fourth batch is\n\n$$a_4 = \\frac{5{,}000}{4^{1.5}}$$\n\n$$4^{1.5} = 4 \\times \\sqrt{4} = 8$$\n\n$$a_4 = \\frac{5{,}000}{8} = 625$$\n\nThe claim is about \\$650.00. The fourth benefit is \\$625.00, so the statement is False.",
+      "**B) With p = 1.5, the infinite series converges to a finite total value.**  (true)\n\nThe overview's test requires $p>1$. Here $p=1.5$, and\n\n$$1.5 > 1$$\n\nso $\\sum \\frac{5{,}000}{n^{1.5}}$ converges to a finite total. The claim is that convergence, so the statement is True.",
+      "**C) If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.**  (false)\n\nAt $p=1$ the model is a constant multiple of the harmonic series:\n\n$$\\sum_{n=1}^{\\infty}\\frac{5{,}000}{n}$$\n\nThe test requires $p>1$, and $1>1$ is false, so the series diverges. There is no finite total to compare with the $p=1.5$ case, so the statement is False.",
+      "**D) $a_{100} = \\$5.00$, and this alone is enough to guarantee that the series $\\sum a_n$ converges.**  (false)\n\nAt $p=1.5$ and $n=100$,\n\n$$a_{100} = \\frac{5{,}000}{100^{1.5}} = \\frac{5{,}000}{1{,}000} = 5$$\n\nso the named term \\$5.00 is correct. Terms tending to $0$ is necessary for convergence, not sufficient. The harmonic case $p=1$ also has $a_n\\to 0$ and still diverges. One small term does not guarantee a finite sum, so the statement is False.",
+      "**E) With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.**  (true)\n\nAt $p=0.5$,\n\n$$0.5 \\le 1$$\n\nso $\\sum \\frac{5{,}000}{n^{0.5}}$ diverges by the $p$-series test, even though $a_n\\to 0$. The claim is that divergence, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 77,
+    "solution_overview": "An analyst models the marginal benefit of the $n$-th batch of advertising spend as\n\n$$a_n = \\frac{5{,}000}{n^p}$$\n\nThe $p$-series test is that\n\n$$\\sum_{n=1}^{\\infty}\\frac{1}{n^p}$$\n\nconverges if and only if $p>1$. The constant $5{,}000$ factors out of the sum, so it does not change the test.\n\nA necessary condition for any series to converge is $a_n\\to 0$, but that condition is not sufficient."
+  },
+  {
+    "id": "math-11-78",
+    "case_id": "MATH 11.78",
+    "title": "Solar Farm: Revenue Growth vs. Rising Maintenance Costs",
+    "subsection": "11.4",
+    "context": "A solar farm's annual energy revenue starts at \\$150,000 and grows 1% per year with a = \\$150,000 and k = 1.01, while its annual maintenance cost starts at \\$120,000 but grows faster, at 3% per year with a = \\$120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.",
+    "statements": [
+      "The cumulative 12-year revenue is approximately \\$1,902,375.45.",
+      "The cumulative 12-year maintenance cost is approximately \\$1,703,043.55.",
+      "The cumulative 12-year profit is approximately \\$199,331.90.",
+      "In year 12 alone, revenue of approximately \\$167,350.25 still exceeds maintenance cost of approximately \\$166,108.06, leaving a net positive of about \\$1,242.19.",
+      "Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The cumulative 12-year revenue is approximately \\$1,902,375.45.**  (true)\n\nThe overview recovered $s_{R,12}\\approx 1{,}902{,}375.45$. The claim is that same $12$-year revenue total, so the statement is True.",
+      "**B) The cumulative 12-year maintenance cost is approximately \\$1,703,043.55.**  (true)\n\nThe overview recovered $s_{C,12}\\approx 1{,}703{,}043.55$. The claim is that same $12$-year maintenance total, so the statement is True.",
+      "**C) The cumulative 12-year profit is approximately \\$199,331.90.**  (true)\n\nThe overview recovered $\\Pi_{12}=199{,}331.90$. The claim is about \\$199,331.90, so the statement is True.",
+      "**D) In year 12 alone, revenue of approximately \\$167,350.25 still exceeds maintenance cost of approximately \\$166,108.06, leaving a net positive of about \\$1,242.19.**  (true)\n\nYear $12$ uses eleven growth steps:\n\n$$a_{R,12} = 150{,}000 \\times 1.01^{11} \\approx 167{,}350.25$$\n\n$$a_{C,12} = 120{,}000 \\times 1.03^{11} \\approx 166{,}108.06$$\n\n$$167{,}350.25-166{,}108.06 = 1{,}242.19$$\n\nRevenue still exceeds maintenance in year $12$ by about \\$1,242.19, so the statement is True.",
+      "**E) Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.**  (true)\n\nOver $20$ years,\n\n$$s_{R,20} = 150{,}000\\frac{1.01^{20}-1}{0.01} \\approx 3{,}302{,}850.60$$\n\n$$s_{C,20} = 120{,}000\\frac{1.03^{20}-1}{0.03} \\approx 3{,}224{,}444.94$$\n\n$$\\Pi_{20} = 3{,}302{,}850.60-3{,}224{,}444.94 = 78{,}405.66$$\n\nThe overview recovered $\\Pi_{12}=199{,}331.90$. Since $78{,}405.66<199{,}331.90$, the $20$-year profit sits below the $12$-year profit, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 78,
+    "solution_overview": "A solar farm's annual energy revenue starts at \\$150,000 and grows $1\\%$ per year. Annual maintenance starts at \\$120,000 and grows $3\\%$ per year. Management compares cumulative profit over $12$ years and over $20$ years.\n\n**Part 1: Setup.**\n\n$$a_R = 150{,}000, \\qquad k_R = 1.01$$\n\n$$a_C = 120{,}000, \\qquad k_C = 1.03$$\n\nEach finite total is $s_n=a\\frac{k^n-1}{k-1}$. Cumulative profit is $\\Pi_n=s_{R,n}-s_{C,n}$. The year-$t$ amount is $a_t=ak^{t-1}$.\n\n**Part 2: Solve.**\n\n$$s_{R,12} = 150{,}000\\frac{1.01^{12}-1}{0.01} \\approx 1{,}902{,}375.45$$\n\n$$s_{C,12} = 120{,}000\\frac{1.03^{12}-1}{0.03} \\approx 1{,}703{,}043.55$$\n\n$$\\Pi_{12} = 1{,}902{,}375.45-1{,}703{,}043.55 = 199{,}331.90$$"
+  },
+  {
+    "id": "math-11-79",
+    "case_id": "MATH 11.79",
+    "title": "Private Equity Fund: Recession vs. Recovery Cash-Flow Scenarios",
+    "subsection": "11.4",
+    "context": "A private equity fund's portfolio company currently generates \\$2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = \\$2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = \\$2,400,000, k = 1.06, and n = 7.",
+    "statements": [
+      "Under the recession scenario, the infinite cumulative cash flow converges to \\$40,000,000.00.",
+      "Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \\$22,000,000.00.",
+      "The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.",
+      "Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \\$20,145,210.36, exceeds the full infinite-horizon recession total of \\$40,000,000.00.",
+      "In year 7 of the recovery scenario alone, cash flow is approximately \\$2,900,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Under the recession scenario, the infinite cumulative cash flow converges to \\$40,000,000.00.**  (true)\n\nThe overview recovered $s_{\\infty}=40{,}000{,}000$ under the recession scenario. The claim is \\$40,000,000.00, so the statement is True.",
+      "**B) Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \\$22,000,000.00.**  (false)\n\nThe overview recovered $s_{15}\\approx 24{,}188{,}328.05$ for the first $15$ recession years. The claim is about \\$22,000,000.00. Those totals disagree, so the statement is False.",
+      "**C) The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.**  (false)\n\nThe overview recovered $s_{15}\\approx 24{,}188{,}328.05$ and $s_{\\infty}=40{,}000{,}000$. The share is\n\n$$\\frac{24{,}188{,}328.05}{40{,}000{,}000} \\approx 0.6047 \\approx 60\\%$$\n\nThe claim is about $75\\%$. The share is not $75\\%$, so the statement is False.",
+      "**D) Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \\$20,145,210.36, exceeds the full infinite-horizon recession total of \\$40,000,000.00.**  (false)\n\nUnder the recovery scenario,\n\n$$1.06^7 = 1.503630259$$\n\n$$s_7 = 2{,}400{,}000\\frac{1.503630259-1}{0.06} = 2{,}400{,}000 \\times 8.393838 \\approx 20{,}145{,}210.36$$\n\nThe overview recovered a recession infinite total of \\$40,000,000. Since $20{,}145{,}210.36<40{,}000{,}000$, the seven-year recovery total does not exceed the infinite recession total, so the statement is False.",
+      "**E) In year 7 of the recovery scenario alone, cash flow is approximately \\$2,900,000.00.**  (false)\n\nYear $7$ of the recovery uses six growth steps:\n\n$$1.06^6 \\approx 1.418519$$\n\n$$a_7 = 2{,}400{,}000 \\times 1.418519 \\approx 3{,}404{,}445.87$$\n\nThe claim is about \\$2,900,000.00. Year-$7$ cash flow is about \\$3,404,445.87, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 79,
+    "solution_overview": "A private equity fund's portfolio company currently generates \\$2,400,000 in annual free cash flow. Under a recession scenario, cash flow shrinks $6\\%$ every year indefinitely. Under a recovery scenario, cash flow grows $6\\%$ per year for $7$ years.\n\n**Part 1: Setup.**\n\n$$a = 2{,}400{,}000, \\qquad k_R = 0.94, \\qquad k_G = 1.06, \\qquad n = 7$$\n\nWhen $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. A finite geometric stream is $s_n=a\\frac{k^n-1}{k-1}$. The year-$t$ cash flow is $a_t=ak^{t-1}$.\n\n**Part 2: Solve.**\n\nThe infinite recession total is\n\n$$s_{\\infty} = \\frac{2{,}400{,}000}{1-0.94} = \\frac{2{,}400{,}000}{0.06} = 40{,}000{,}000$$\n\nThe first $15$ recession years are\n\n$$0.94^{15} = 0.395291799$$\n\n$$s_{15} = 2{,}400{,}000\\frac{1-0.395291799}{0.06} = 2{,}400{,}000 \\times 10.078470 \\approx 24{,}188{,}328.05$$"
+  },
+  {
+    "id": "math-11-80",
+    "case_id": "MATH 11.80",
+    "title": "Capstone: A Three-Tranche Loan Portfolio and a Convergence Trap",
+    "subsection": "11.4",
+    "context": "A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of \\$25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at \\$18,000, increasing 7% per year for 9 years with a = \\$18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at \\$30,000 that declines 8% per year forever with a = \\$30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = \\frac{1,000}{n}$ dollars for n = 1, 2, 3, ….",
+    "statements": [
+      "Tranche 1 totals exactly \\$225,000.00.",
+      "Tranche 2 totals approximately \\$215,603.80.",
+      "Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.",
+      "Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \\$440,603.80.",
+      "$f_{100} = \\$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Tranche 1 totals exactly \\$225,000.00.**  (true)\n\nThe overview recovered $s_1=225{,}000$ for the equal-coupon tranche. The claim is \\$225,000.00, so the statement is True.",
+      "**B) Tranche 2 totals approximately \\$215,603.80.**  (true)\n\nThe overview recovered $s_2\\approx 215{,}603.80$ for the growing tranche. The claim is that same nine-year total, so the statement is True.",
+      "**C) Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.**  (true)\n\nThe overview recovered $s_3=375{,}000$ for the declining perpetuity. The claim is \\$375,000.00, so the statement is True.",
+      "**D) Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \\$440,603.80.**  (false)\n\nTranche 3 converges, so its \\$375,000 total is a finite dollar amount and may be added to the two finite tranches. The overview recovered\n\n$$225{,}000+215{,}603.80+375{,}000 = 815{,}603.80$$\n\nThe claim excludes Tranche 3 and stops at \\$440,603.80. The combined portfolio is \\$815,603.80, so the statement is False.",
+      "**E) $f_{100} = \\$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total.**  (false)\n\nThe fee in period $100$ is\n\n$$f_{100} = \\frac{1{,}000}{100} = 10$$\n\nso the named term \\$10.00 is correct. The full stream is $1{,}000$ times the harmonic series, and $p=1$ fails the $p$-series test $p>1$. Terms tending to $0$ do not guarantee convergence, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 80,
+    "solution_overview": "A private lender values three loan tranches in nominal undiscounted dollars. Tranche 1 pays equal annual coupons of \\$25,000 for $9$ years. Tranche 2 starts at \\$18,000 and grows $7\\%$ per year for $9$ years. Tranche 3 is a perpetual royalty starting at \\$30,000 that declines $8\\%$ per year forever. Separately, an analyst proposes a fee stream $f_n=\\frac{1{,}000}{n}$.\n\n**Part 1: Setup.**\n\n$$a_1 = 25{,}000, \\qquad k_1 = 1, \\qquad n_1 = 9$$\n\n$$a_2 = 18{,}000, \\qquad k_2 = 1.07, \\qquad n_2 = 9$$\n\n$$a_3 = 30{,}000, \\qquad k_3 = 0.92$$\n\nFor $k=1$, $s_n=an$. For finite $k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence.\n\n**Part 2: Solve.**\n\n$$s_1 = 25{,}000 \\times 9 = 225{,}000$$\n\n$$s_2 = 18{,}000\\frac{1.07^9-1}{0.07} \\approx 215{,}603.80$$\n\n$$s_3 = \\frac{30{,}000}{1-0.92} = \\frac{30{,}000}{0.08} = 375{,}000$$"
+  }
+]

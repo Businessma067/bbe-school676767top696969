@@ -1,0 +1,612 @@
+[
+  {
+    "id": "math-5-41",
+    "case_id": "MATH 5.41",
+    "title": "Sterling Family Trust  -  Two-Fund Return Reconstruction",
+    "context": "The Sterling Family Trust is split between two funds. Fund A pays a fixed 5.25% simple annual return; Fund B pays 3.75%. The officer's notes state Fund B's balance is \\$4,000 more than twice Fund A's balance, and the combined annual return from both funds is \\$762.00.",
+    "statements": [
+      "The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.",
+      "If Fund A's rate were raised by 1.5 percentage points while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.",
+      "The combined annual return represents more than 4% of the total trust value.",
+      "Had the trust instead been split evenly at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.",
+      "The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.**  (false)\n\nThe overview recovered Fund A at $4800$ and Fund B at $13600$. Dollar interest is principal times the stated simple rate.\n\n$$4800 \\times 0.0525 = 252$$\n\n$$13600 \\times 0.0375 = 510$$\n\nTriple of Fund A's interest is\n\n$$3 \\times 252 = 756$$\n\nSince $510 < 756$, Fund B does not earn more than triple Fund A's dollars, so the statement is False.",
+      "**B) If Fund A's rate were raised by 1.5 percentage points while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.**  (true)\n\nThe overview recovered $A = 4800$ and $B = 13600$. Raising Fund A's rate by $1.5$ percentage points makes that rate $6.75\\%$, while Fund B stays at $3.75\\%$.\n\n$$4800 \\times 0.0675 = 324$$\n\n$$13600 \\times 0.0375 = 510$$\n\n$$324 + 510 = 834$$\n\nSince $834 > 800$, the combined return would rise above \\$800, so the statement is True.",
+      "**C) The combined annual return represents more than 4% of the total trust value.**  (true)\n\nThe overview recovered balances $4800$ and $13600$, and the stem gives combined return \\$762.\n\n$$4800 + 13600 = 18400$$\n\n$$\\frac{762}{18400} = 0.041413\\ldots$$\n\nThat blended rate is about $4.14\\%$, which is more than $4\\%$, so the statement is True.",
+      "**D) Had the trust instead been split evenly at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.**  (false)\n\nAn even split of the recovered total $18400$ puts \\$9,200 in each fund at the original rates.\n\n$$9200 \\times 0.0525 = 483$$\n\n$$9200 \\times 0.0375 = 345$$\n\n$$483 + 345 = 828$$\n\n$$|828 - 762| = 66$$\n\nThe even-split return is \\$66 from the actual \\$762, not within \\$5, so the statement is False.",
+      "**E) The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%.**  (true)\n\nThe overview recovered the two balances $4800$ (smaller) and $13600$. The relative gap versus the smaller balance is\n\n$$\\frac{13600 - 4800}{4800} = \\frac{8800}{4800} = 1.8\\overline{3}$$\n\nabout $183.3\\%$, which exceeds $180\\%$, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 41,
+    "solution_overview": "The Sterling Family Trust is split between two funds. Fund A pays a fixed 5.25% simple annual return; Fund B pays 3.75%. Fund B's balance is \\$4,000 more than twice Fund A's balance, and the combined annual return from both funds is \\$762.00.\n\n**Part 1: Building the system.**\n\nLet $x$ = balance in Fund A, $y$ = balance in Fund B.\n\n**1. Translate: Fund B's balance, from the stated relationship.** That observation becomes:\n\n$$y = 2x + 4000 \\tag{1}$$\n\n**2. Translate: combined annual return.** That observation becomes:\n\n$$0.0525x + 0.0375y = 762 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Substitute $y = 2x + 4000$ into the return equation:\n\n$$\n0.0525x + 0.0375(2x + 4000) = 762\n$$\n\n$$\n0.0525x + 0.075x + 150 = 762 \\Rightarrow 0.1275x + 150 = 762\n$$\n\n$$\n0.1275x = 612 \\Rightarrow x = \\frac{612}{0.1275} = 4800\n$$\n\n**2.** Substitute back:\n\n$$\ny = 2(4800) + 4000 = 9600 + 4000 = 13600\n$$\n\n**Answer.** Fund A holds \\$4,800 and Fund B holds \\$13,600."
+  },
+  {
+    "id": "math-5-42",
+    "case_id": "MATH 5.42",
+    "title": "Solventis Labs  -  Ratio-Blended Batch Reconstruction",
+    "context": "Solventis Labs combines Stock Solution A and Stock Solution B in a stated volume ratio. The log records total volume and mixing ratio (A:B) rather than individual volumes.",
+    "tables_markdown": "| Batch | Total Volume | Mixing Ratio (A:B) | Total Salt Content |\n| --- | --- | --- | --- |\n| Batch 1 | 10 L | 3 : 2 | 144 g |\n| Batch 2 | 12 L | 5 : 1 | 184 g |\n| Batch 3 (QC review) | 8 L | 1 : 3 | 109 g (recorded) |",
+    "statements": [
+      "The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.",
+      "Solution B's concentration is more than 70% of Solution A's concentration.",
+      "If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B, the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.",
+      "Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.",
+      "Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.**  (true)\n\nBatch 1 printed $144$ g of salt and Batch 2 printed $184$ g. Pouring them together does not create or destroy salt.\n\n$$144 + 184 = 328$$\n\nSince $328 > 300$, the combined salt exceeds $300$ g, so the statement is True.",
+      "**B) Solution B's concentration is more than 70% of Solution A's concentration.**  (true)\n\nThe overview recovered $A = 16$ g/L and $B = 12$ g/L.\n\n$$\\frac{12}{16} = 0.75$$\n\nSince $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's, so the statement is True.",
+      "**C) If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B, the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.**  (true)\n\nThe overview predicted $104$ g for Batch 3 against $109$ g recorded, a $5$ g discrepancy, with recovered $B = 12$ g/L. Batch 3's logged split is $2$ L of A and $6$ L of B. If the extra $5$ g sits only in B,\n\n$$\\frac{5}{12} \\approx 0.4167$$\n\n$$6 + 0.4167 \\approx 6.417$$\n\nThe distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L, so the statement is True.",
+      "**D) Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.**  (false)\n\nThe overview recovered $A = 16$ g/L and $B = 12$ g/L. A $3:1$ mix of A:B is $75\\%$ A and $25\\%$ B, so the blend concentration in g/L is\n\n$$0.75 \\times 16 + 0.25 \\times 12 = 12 + 3 = 15$$\n\nThe volume that holds $130$ g is then\n\n$$\\frac{130}{15} \\approx 8.667$$\n\nwhich is not $7.5$ L, so the statement is False.",
+      "**E) Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did.**  (true)\n\nThis comparison uses the mixing ratios, not the recovered concentrations. Batch 1 is mixed $3:2$, and Batch 2 is mixed $5:1$.\n\n$$\\frac{3}{5} = 0.60$$\n\n$$\\frac{5}{6} \\approx 0.833$$\n\nSince $0.833 > 0.60$, Batch 2 used a higher volume share of Solution A, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 42,
+    "solution_overview": "Solventis Labs combines Stock Solution A and Stock Solution B in a stated volume ratio. The log records total volume and mixing ratio (A:B) rather than individual volumes. Batch 1 is 10 L mixed 3:2 with 144 g of salt. Batch 2 is 12 L mixed 5:1 with 184 g of salt. Batch 3 is an 8 L QC mix at 1:3 with 109 g recorded.\n\n**Part 1: Building the system.**\n\nLet $x$ = grams of salt per liter in Solution A, $y$ = grams of salt per liter in Solution B.\n\n**1. Translate: Batch 1: 10 L split 3:2 is 6 L of A and 4 L of B.** That observation becomes:\n\n$$6x + 4y = 144 \\tag{1}$$\n\n**2. Translate: Batch 2: 12 L split 5:1 is 10 L of A and 2 L of B.** That observation becomes:\n\n$$10x + 2y = 184 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Divide both equations by 2:\n\n$$\n3x + 2y = 72, \\qquad 5x + y = 92 \\Rightarrow y = 92 - 5x\n$$\n\n**2.** Substitute into the first simplified equation:\n\n$$\n3x + 2(92 - 5x) = 72 \\Rightarrow 3x + 184 - 10x = 72\n$$\n\n$$\n-7x = -112 \\Rightarrow x = 16\n$$\n\n**3.** Then\n\n$$\ny = 92 - 5(16) = 92 - 80 = 12\n$$\n\n**4.** Audit Batch 3 (8 L at 1:3 is $2$ L of A and $6$ L of B):\n\n$$\n2(16) + 6(12) = 32 + 72 = 104\n$$\n\nversus 109 g recorded, a 5 g discrepancy.\n\n**Answer.** Solution A has 16 g/L and Solution B has 12 g/L; Batch 3 is predicted to contain 104 g, versus 109 g recorded."
+  },
+  {
+    "id": "math-5-43",
+    "case_id": "MATH 5.43",
+    "title": "Union Mills Manufacturing  -  Fractional-Hour Overtime Reconstruction",
+    "context": "Union Mills pays a fixed base hourly wage plus a fixed overtime premium on top of the base wage for hours beyond 40/week. Employee A: 40 regular + 2.5 OT hours, \\$765.00 gross. Employee B: 40 regular + 7 OT hours, \\$882.00 gross.",
+    "statements": [
+      "If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed \\$6.00.",
+      "Employee B's overtime pay is more than 40% of his total gross pay.",
+      "The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.",
+      "If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.",
+      "The ratio of Employee B's overtime hours to Employee A's is greater than the ratio of their gross pay amounts."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed \\$6.00.**  (true)\n\nThe overview recovered overtime pay at \\$26 per hour. Employee A's actual overtime pay for $2.5$ hours, and then $10\\%$ of that, is\n\n$$2.5 \\times 26 = 65$$\n\n$$0.10 \\times 65 = 6.50$$\n\nSince $6.50 > 6$, the bonus exceeds \\$6, so the statement is True.",
+      "**B) Employee B's overtime pay is more than 40% of his total gross pay.**  (false)\n\nThe overview recovered overtime at \\$26 per hour. Employee B worked $7$ overtime hours on a \\$882 gross.\n\n$$7 \\times 26 = 182$$\n\n$$\\frac{182}{882} \\approx 0.2063$$\n\nAbout $20.6\\%$ is not more than $40\\%$, so the statement is False.",
+      "**C) The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.**  (true)\n\nCombined actual gross is the sum of the two printed totals. The counterfactual is both employees at $45$ hours of the recovered base \\$17.50, with no premium.\n\n$$765 + 882 = 1647$$\n\n$$2 \\times 45 \\times 17.50 = 1575$$\n\nSince $1647 > 1575$, the actual combined gross is larger, so the statement is True.",
+      "**D) If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.**  (false)\n\nThe overview recovered base $x = 17.50$. Raising that base by $15\\%$ and dropping the premium gives a new rate of $17.50 \\times 1.15 = 20.125$ on all $42.5$ hours.\n\n$$42.5 \\times 20.125 = 855.3125$$\n\nCompared with A's actual \\$765, the new gross increases rather than decreases, so the statement is False.",
+      "**E) The ratio of Employee B's overtime hours to Employee A's is greater than the ratio of their gross pay amounts.**  (true)\n\nEmployee B had $7$ overtime hours and \\$882 gross; Employee A had $2.5$ overtime hours and \\$765 gross.\n\n$$\\frac{7}{2.5} = 2.8$$\n\n$$\\frac{882}{765} \\approx 1.153$$\n\nSince $2.8 > 1.153$, the overtime-hours ratio is greater than the gross-pay ratio, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 43,
+    "solution_overview": "Union Mills pays a fixed base hourly wage plus a fixed overtime premium on top of the base wage for hours beyond 40/week. Employee A: 40 regular + 2.5 OT hours, \\$765.00 gross. Employee B: 40 regular + 7 OT hours, \\$882.00 gross.\n\n**Part 1: Building the system.**\n\nLet $x$ = base hourly wage, $y$ = overtime premium per hour (on top of the base wage, per OT hour). Each overtime hour is paid at $x+y$.\n\n**1. Translate: Employee A.** That observation becomes:\n\n$$42.5x + 2.5y = 765 \\tag{1}$$\n\n**2. Translate: Employee B.** That observation becomes:\n\n$$47x + 7y = 882 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Multiply Employee A's equation by $2.8$ so its $y$ coefficient matches B's $7y$:\n\n$$\n2.8(42.5x + 2.5y) = 2.8(765) \\Rightarrow 119x + 7y = 2142\n$$\n\n**2.** Subtract Employee B:\n\n$$\n(119x + 7y) - (47x + 7y) = 2142 - 882\n$$\n\n$$\n72x = 1260 \\Rightarrow x = \\frac{1260}{72} = 17.50\n$$\n\n**3.** Substitute $x = 17.50$ into A's equation:\n\n$$\n42.5(17.50) + 2.5y = 765 \\Rightarrow 743.75 + 2.5y = 765\n$$\n\n$$\n2.5y = 21.25 \\Rightarrow y = 8.50\n$$\n\n**Answer.** The base wage is \\$17.50/hour and the overtime premium is \\$8.50/hour, so overtime pays \\$26.00/hour."
+  },
+  {
+    "id": "math-5-44",
+    "case_id": "MATH 5.44",
+    "title": "Greenfield Landscaping  -  Redundant Project Reconciliation",
+    "context": "Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new.",
+    "tables_markdown": "| Project | Wood Fencing | Wire Fencing | Total Cost |\n| --- | --- | --- | --- |\n| Project 1 | 18 m | 24 m | \\$750.00 |\n| Project 2 | 27 m | 36 m | \\$1,125.00 |\n| Project 3 | 10 m | 40 m | \\$710.00 |",
+    "statements": [
+      "If Project 3 had instead used 20 m of wood, its total cost would have exceeded \\$950.00.",
+      "The per-meter price gap between wood and wire is more than 145% of the wire price per meter.",
+      "Combining Project 1 and Project 3's materials into one hypothetical project would cost less than the sum of their individual costs.",
+      "If wire fencing rose by \\$2.00 per meter, Project 1's total cost would increase by more than 15%.",
+      "Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) If Project 3 had instead used 20 m of wood, its total cost would have exceeded \\$950.00.**  (true)\n\nThe overview recovered wood at \\$27 per m and wire at \\$11 per m. Project 3 with $20$ m of wood and $40$ m of wire costs\n\n$$20 \\times 27 = 540$$\n\n$$40 \\times 11 = 440$$\n\n$$540 + 440 = 980$$\n\nSince $980 > 950$, the total would exceed \\$950, so the statement is True.",
+      "**B) The per-meter price gap between wood and wire is more than 145% of the wire price per meter.**  (true)\n\nThe overview recovered wood $x = 27$ and wire $y = 11$. The per-meter gap as a share of the wire price is\n\n$$27 - 11 = 16$$\n\n$$\\frac{16}{11} \\approx 1.4545$$\n\nSince $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price, so the statement is True.",
+      "**C) Combining Project 1 and Project 3's materials into one hypothetical project would cost less than the sum of their individual costs.**  (false)\n\nAt fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.\n\n$$28(27) + 64(11) = 756 + 704 = 1460$$\n\n$$750 + 710 = 1460$$\n\nThe combined project costs the same as the two projects separately, not less, so the statement is False.",
+      "**D) If wire fencing rose by \\$2.00 per meter, Project 1's total cost would increase by more than 15%.**  (false)\n\nProject 1 has $24$ m of wire. A \\$2 per-meter rise on that wire, as a share of the printed \\$750, is\n\n$$24 \\times 2 = 48$$\n\n$$\\frac{48}{750} = 0.064$$\n\n$6.4\\%$ is not more than $15\\%$, so the statement is False.",
+      "**E) Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed.**  (false)\n\nProject 3 installed $10 + 40 = 50$ m for \\$710. Project 1 installed $18 + 24 = 42$ m for \\$750.\n\n$$\\frac{710}{50} = 14.20$$\n\n$$\\frac{750}{42} \\approx 17.86$$\n\nSince $14.20 < 17.86$, Project 3's cost per meter is lower, not higher, so the statement is False."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 44,
+    "solution_overview": "Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new. Project 1: 18 m wood, 24 m wire, \\$750.00. Project 2: 27 m wood, 36 m wire, \\$1,125.00. Project 3: 10 m wood, 40 m wire, \\$710.00.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per meter of cedar wood fencing, $y$ = price per meter of galvanized wire fencing.\n\n**1. Translate: Project 1.** That observation becomes:\n\n$$18x + 24y = 750 \\tag{1}$$\n\n**2. Translate: Project 3, independent of Project 1.** That observation becomes:\n\n$$10x + 40y = 710 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Check Project 2 against Project 1:\n\n$$\n(27, 36) = 1.5(18, 24), \\qquad 1.5(750) = 1125\n$$\n\nThat matches Project 2 exactly, so Project 2 is redundant.\n\n**2.** Divide Project 1 by 6 and Project 3 by 10:\n\n$$\n3x + 4y = 125, \\qquad x + 4y = 71\n$$\n\n**3.** Subtract:\n\n$$\n(3x + 4y) - (x + 4y) = 125 - 71 \\Rightarrow 2x = 54 \\Rightarrow x = 27\n$$\n\n**4.** Substitute $x = 27$ into $x + 4y = 71$:\n\n$$\n27 + 4y = 71 \\Rightarrow 4y = 44 \\Rightarrow y = 11\n$$\n\n**Answer.** Cedar wood costs \\$27/m and galvanized wire costs \\$11/m."
+  },
+  {
+    "id": "math-5-45",
+    "case_id": "MATH 5.45",
+    "title": "Meridian Rail  -  Two-Route Speed Reconstruction",
+    "context": "Two Meridian Rail boats travel at fixed constant speeds. On one 250 km stretch, they start from opposite docks and meet after 2 hours. On a separate 356 km stretch, Boat B gets a 3-hour head start before Boat A departs; they meet exactly 1 hour after Boat A's departure.",
+    "statements": [
+      "The time it would take Boat A alone to travel the full 356 km stretch is more than 7 hours.",
+      "In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.",
+      "If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.",
+      "The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.",
+      "Boat B's speed is more than 60% higher than Boat A's speed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The time it would take Boat A alone to travel the full 356 km stretch is more than 7 hours.**  (true)\n\nThe overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km stretch is\n\n$$\\frac{356}{48} \\approx 7.4167$$\n\nabout $7$ hours $25$ minutes, which is more than $7$ hours, so the statement is True.",
+      "**B) In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.**  (true)\n\nThey meet after $2$ hours on the $250$ km stretch. Distances at the recovered speeds $48$ and $77$ km/h are\n\n$$2 \\times 48 = 96$$\n\n$$2 \\times 77 = 154$$\n\n$$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$\n\nSince $58 < 125$, the difference is less than half the gap, so the statement is True.",
+      "**C) If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.**  (false)\n\nCombined speed is currently $48 + 77 = 125$ km/h. After a $20\\%$ rise on each boat, combined speed is $1.2 \\times 125 = 150$ km/h.\n\n$$\\frac{250}{150} \\approx 1.667$$\n\nSince $1.667 > 1.5$, the new time does not fall below $1.5$ hours, so the statement is False.",
+      "**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.**  (true)\n\nThe overview recovered speeds $48$ and $77$ km/h. Three hours of simultaneous travel at those speeds covers\n\n$$48 + 77 = 125$$\n\n$$3 \\times 125 = 375$$\n\nSince $375 > 356$, the combined distance exceeds the $356$ km stretch, so the statement is True.",
+      "**E) Boat B's speed is more than 60% higher than Boat A's speed.**  (true)\n\nThe overview recovered $A = 48$ km/h and $B = 77$ km/h. The relative increase of B over A is\n\n$$77 - 48 = 29$$\n\n$$\\frac{29}{48} \\approx 0.60417$$\n\nabout $60.4\\%$, which is more than $60\\%$, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 45,
+    "solution_overview": "Two Meridian Rail boats travel at fixed constant speeds. On one 250 km stretch, they start from opposite docks and meet after 2 hours. On a separate 356 km stretch, Boat B gets a 3-hour head start before Boat A departs; they meet exactly 1 hour after Boat A's departure.\n\n**Part 1: Building the system.**\n\nLet $x$ = Boat A's speed (km/h), $y$ = Boat B's speed (km/h).\n\n**1. Translate: 250 km gap closed in 2 hours.** That observation becomes:\n\n$$2(x + y) = 250 \\Rightarrow x + y = 125 \\tag{1}$$\n\n**2. Translate: Boat A travels 1 hour; Boat B travels its 3-hour head start plus 1 more, so 4 hours.** That observation becomes:\n\n$$x + 4y = 356 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Subtract the first equation from the second:\n\n$$\n(x + 4y) - (x + y) = 356 - 125\n$$\n\n$$\n3y = 231 \\Rightarrow y = \\frac{231}{3} = 77\n$$\n\n**2.** Substitute $y = 77$ into $x + y = 125$:\n\n$$\nx + 77 = 125 \\Rightarrow x = 48\n$$\n\n**Answer.** Boat A travels 48 km/h and Boat B travels 77 km/h."
+  },
+  {
+    "id": "math-5-46",
+    "case_id": "MATH 5.46",
+    "title": "Meridian Textiles  -  Three-Season Profit Reconstruction",
+    "context": "Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 3's paperwork was water-damaged: Barley tonnage and total profit survived, but Wheat tonnage is illegible.",
+    "tables_markdown": "| Season | Wheat | Barley | Total Profit |\n| --- | --- | --- | --- |\n| Season 1 | 240 t | 160 t | \\$42,000 |\n| Season 2 | 180 t | 260 t | \\$48,300 |\n| Season 3 (illegible) |  | 300 t | \\$53,100 |",
+    "statements": [
+      "If Season 1's Wheat output had instead been 260 tonnes, total profit would have exceeded \\$44,000.",
+      "Barley's profit-per-tonne advantage over Wheat represents more than 25% of Wheat's profit per tonne.",
+      "Season 3's total tonnage is less than Season 2's total tonnage.",
+      "Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of \\$53,100 would have been understated by more than \\$3,500.",
+      "Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) If Season 1's Wheat output had instead been 260 tonnes, total profit would have exceeded \\$44,000.**  (false)\n\nThe overview recovered Wheat at \\$95/t and Barley at \\$120/t. Season 1 with Wheat raised to $260$ t, Barley still $160$ t, would earn\n\n$$260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900$$\n\nSince $43900 < 44000$, the total would not exceed \\$44,000, so the statement is False.",
+      "**B) Barley's profit-per-tonne advantage over Wheat represents more than 25% of Wheat's profit per tonne.**  (true)\n\nThe overview recovered $x = 95$ and $y = 120$. Barley's advantage as a share of Wheat's profit per tonne is\n\n$$\\frac{120 - 95}{95} = \\frac{25}{95} \\approx 0.2632$$\n\nabout $26.3\\%$, which is more than $25\\%$, so the statement is True.",
+      "**C) Season 3's total tonnage is less than Season 2's total tonnage.**  (false)\n\nThe overview reconstructed Season 3 Wheat at $180$ t, with $300$ t of Barley. Season 2 is $180 + 260 = 440$ t.\n\n$$180 + 300 = 480$$\n\nSince $480 > 440$, Season 3's total tonnage is not less than Season 2's, so the statement is False.",
+      "**D) Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of \\$53,100 would have been understated by more than \\$3,500.**  (true)\n\nThe overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead is $40$ extra tonnes of Wheat at \\$95/t.\n\n$$40 \\times 95 = 3800$$\n\nThat understatement of \\$3,800 is more than \\$3,500, so the statement is True.",
+      "**E) Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output.**  (true)\n\nSeason 2 printed \\$48,300 on $180 + 260 = 440$ t. Season 1 printed \\$42,000 on $240 + 160 = 400$ t.\n\n$$\\frac{48300}{440} \\approx 109.77$$\n\n$$\\frac{42000}{400} = 105$$\n\nSeason 2's profit per tonne of total output is higher, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 46,
+    "solution_overview": "Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 1: 240 t Wheat, 160 t Barley, \\$42,000. Season 2: 180 t Wheat, 260 t Barley, \\$48,300. Season 3's paperwork was water-damaged: Barley tonnage 300 t and total profit \\$53,100 survived, but Wheat tonnage is illegible.\n\n**Part 1: Building the system.**\n\nLet $x$ = profit per tonne of Wheat, $y$ = profit per tonne of Barley.\n\n**1. Translate: Season 1, then divide by 80.** That observation becomes:\n\n$$240x + 160y = 42000 \\Rightarrow 3x + 2y = 525 \\tag{1}$$\n\n**2. Translate: Season 2, then divide by 20.** That observation becomes:\n\n$$180x + 260y = 48300 \\Rightarrow 9x + 13y = 2415 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Multiply the simplified Season 1 by 13 and Season 2 by 2 so the $y$ coefficients both become $26y$:\n\n$$\n13(3x + 2y) = 13(525) \\Rightarrow 39x + 26y = 6825\n$$\n\n$$\n2(9x + 13y) = 2(2415) \\Rightarrow 18x + 26y = 4830\n$$\n\n**2.** Subtract:\n\n$$\n(39x + 26y) - (18x + 26y) = 6825 - 4830\n$$\n\n$$\n21x = 1995 \\Rightarrow x = \\frac{1995}{21} = 95\n$$\n\n**3.** Substitute $x = 95$ into $3x + 2y = 525$:\n\n$$\n3(95) + 2y = 525 \\Rightarrow 285 + 2y = 525 \\Rightarrow 2y = 240 \\Rightarrow y = 120\n$$\n\n**4.** Reconstruct Season 3's Wheat tonnage $T$:\n\n$$\n95T + 120(300) = 53100 \\Rightarrow 95T + 36000 = 53100\n$$\n\n$$\n95T = 17100 \\Rightarrow T = 180\n$$\n\n**Answer.** Wheat = \\$95.00/t | Barley = \\$120.00/t | Season 3 Wheat reconstructed = 180 tonnes."
+  },
+  {
+    "id": "math-5-47",
+    "case_id": "MATH 5.47",
+    "title": "Bramwell & Co.  -  Double-Condition Age Reconstruction",
+    "context": "Bramwell's HR system flagged an \"elder\" and \"younger\" employee for a data-entry conflict: five years ago, the elder was exactly three times as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.",
+    "statements": [
+      "Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.",
+      "The current age gap is more than 45% of the elder employee's current age.",
+      "Exactly 4.5 years from now, the elder employee will be more than 2.5 times the younger employee's age.",
+      "Ten years ago, the sum of their ages was less than 40.",
+      "There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.**  (true)\n\nThe overview recovered current ages $47$ and $19$. Fifteen years from now those ages are $62$ and $34$.\n\n$$2 \\times 34 = 68$$\n\nSince $62 < 68$, the elder will be less than double the younger at that time, so the statement is True.",
+      "**B) The current age gap is more than 45% of the elder employee's current age.**  (true)\n\nThe overview recovered $x = 47$ and $y = 19$. The current gap as a share of the elder's age is\n\n$$47 - 19 = 28$$\n\n$$\\frac{28}{47} \\approx 0.5957$$\n\nabout $59.6\\%$, which is more than $45\\%$, so the statement is True.",
+      "**C) Exactly 4.5 years from now, the elder employee will be more than 2.5 times the younger employee's age.**  (false)\n\nThe overview recovered current ages $47$ and $19$. After $4.5$ years the ages are $51.5$ and $23.5$.\n\n$$\\frac{51.5}{23.5} \\approx 2.191$$\n\nSince $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger, so the statement is False.",
+      "**D) Ten years ago, the sum of their ages was less than 40.**  (false)\n\nThe overview recovered current ages $47$ and $19$. Ten years ago the ages were $37$ and $9$.\n\n$$37 + 9 = 46$$\n\nSince $46 > 40$, the sum was not less than $40$, so the statement is False.",
+      "**E) There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age.**  (true)\n\nLet $t$ be years ago. The claim is that $x - t = 3(y - t)$ for some $t > 4$. Using the recovered ages $47$ and $19$,\n\n$$47 - t = 3(19 - t)$$\n\n$$47 - t = 57 - 3t \\Rightarrow 2t = 10 \\Rightarrow t = 5$$\n\nSince $5 > 4$, such a time exists, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 47,
+    "solution_overview": "Bramwell's HR system flagged an elder and a younger employee for a data-entry conflict: five years ago, the elder was exactly three times as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.\n\n**Part 1: Building the system.**\n\nLet $x$ = elder employee's current age, $y$ = younger employee's current age.\n\n**1. Translate: five years ago, the elder was three times the younger.** That observation becomes:\n\n$$x - 5 = 3(y - 5) \\tag{1}$$\n\n**2. Translate: in nine years, the elder will be twice the younger.** That observation becomes:\n\n$$x + 9 = 2(y + 9) \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Expand both age conditions:\n\n$$\nx - 5 = 3(y - 5) \\Rightarrow x - 5 = 3y - 15 \\Rightarrow x = 3y - 10\n$$\n\n$$\nx + 9 = 2(y + 9) \\Rightarrow x + 9 = 2y + 18 \\Rightarrow x = 2y + 9\n$$\n\n**2.** Set the two expressions for $x$ equal:\n\n$$\n3y - 10 = 2y + 9 \\Rightarrow y = 19\n$$\n\n**3.** Substitute $y = 19$ into $x = 2y + 9$:\n\n$$\nx = 2(19) + 9 = 38 + 9 = 47\n$$\n\n**Answer.** Elder employee = 47 years old | Younger employee = 19 years old."
+  },
+  {
+    "id": "math-5-48",
+    "case_id": "MATH 5.48",
+    "title": "Crestline Retail Group  -  Decimal Markup Reconstruction",
+    "context": "Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another.",
+    "tables_markdown": "| Order | Product A Units | Product B Units | Retail Total |\n| --- | --- | --- | --- |\n| Order 1 | 8 | 5 | \\$1,052.80 |\n| Order 2 | 16 | 10 | \\$2,105.60 |\n| Order 3 | 3 | 12 | \\$1,350.60 |",
+    "statements": [
+      "If the two markup percentages were swapped, Order 3's retail total would decrease compared to its actual \\$1,350.60.",
+      "The dollar markup on Product B is more than 80% of the dollar markup on Product A.",
+      "Order 1's total retail markup exceeds \\$150.00.",
+      "If Order 3's Product B quantity rose from 12 to 15 units, the retail total would increase by more than \\$280.00.",
+      "The wholesale cost ratio of Product B to Product A is greater than the retail price ratio of Product B to Product A."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) If the two markup percentages were swapped, Order 3's retail total would decrease compared to its actual \\$1,350.60.**  (false)\n\nThe overview recovered wholesale $x = 55$ and $y = 80$. Swapping the markups puts $18\\%$ on A and $32\\%$ on B. Order 3 would then be\n\n$$3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20 = 1461.90$$\n\nCompared with the actual \\$1,350.60, the swapped total increases rather than decreases, so the statement is False.",
+      "**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.**  (true)\n\nThe overview recovered $x = 55$ and $y = 80$. Dollar markups are $0.32x$ and $0.18y$.\n\n$$0.32 \\times 55 = 17.60$$\n\n$$0.18 \\times 80 = 14.40$$\n\n$$\\frac{14.40}{17.60} = 0.8181\\ldots$$\n\nSince $0.818 > 0.80$, B's dollar markup is more than $80\\%$ of A's, so the statement is True.",
+      "**C) Order 1's total retail markup exceeds \\$150.00.**  (true)\n\nThe overview recovered $x = 55$ and $y = 80$. Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is\n\n$$8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80$$\n\nSince $212.80 > 150$, the markup exceeds \\$150, so the statement is True.",
+      "**D) If Order 3's Product B quantity rose from 12 to 15 units, the retail total would increase by more than \\$280.00.**  (true)\n\nThe overview recovered $y = 80$, so retail B is $1.18 \\times 80 = 94.40$. Raising Order 3's B quantity from $12$ to $15$ adds three units.\n\n$$3 \\times 94.40 = 283.20$$\n\nSince $283.20 > 280$, the retail total would increase by more than \\$280, so the statement is True.",
+      "**E) The wholesale cost ratio of Product B to Product A is greater than the retail price ratio of Product B to Product A.**  (true)\n\nThe overview recovered $x = 55$ and $y = 80$. Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.\n\n$$\\frac{80}{55} \\approx 1.4545$$\n\n$$\\frac{94.40}{72.60} \\approx 1.3003$$\n\nThe wholesale ratio is larger than the retail ratio, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 48,
+    "solution_overview": "Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another. Order 1: 8 of A and 5 of B, retail \\$1,052.80. Order 2: 16 of A and 10 of B, retail \\$2,105.60. Order 3: 3 of A and 12 of B, retail \\$1,350.60.\n\n**Part 1: Building the system.**\n\nLet $x$ = wholesale cost of Product A, $y$ = wholesale cost of Product B. Retail A is $1.32x$ and retail B is $1.18y$.\n\n**1. Translate: Order 1.** That observation becomes:\n\n$$10.56x + 5.9y = 1052.80 \\tag{1}$$\n\n**2. Translate: Order 3, independent of Order 1.** That observation becomes:\n\n$$3.96x + 14.16y = 1350.60 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Order 2 $(16, 10, 2105.60)$ is exactly double Order 1 $(8, 5, 1052.80)$, so it is redundant and set aside.\n\n**2.** Multiply Order 1 by $0.375$ so its $x$ coefficient matches Order 3's $3.96x$:\n\n$$\n0.375(10.56x + 5.9y) = 0.375(1052.80)\n$$\n\n$$\n3.96x + 2.2125y = 394.80\n$$\n\n**3.** Subtract from Order 3:\n\n$$\n(3.96x + 14.16y) - (3.96x + 2.2125y) = 1350.60 - 394.80\n$$\n\n$$\n11.9475y = 955.80 \\Rightarrow y = \\frac{955.80}{11.9475} = 80.00\n$$\n\n**4.** Substitute $y = 80$ into Order 1:\n\n$$\n10.56x + 5.9(80) = 1052.80 \\Rightarrow 10.56x + 472 = 1052.80\n$$\n\n$$\n10.56x = 580.80 \\Rightarrow x = 55.00\n$$\n\n**Answer.** Product A wholesale = \\$55.00 | Product B wholesale = \\$80.00."
+  },
+  {
+    "id": "math-5-49",
+    "case_id": "MATH 5.49",
+    "title": "Fairview Amateur League  -  Cross-Team Points Reconstruction",
+    "context": "The Fairview league awards a fixed points value for a win and a smaller fixed value for a draw; a loss earns zero. The Falcons: 9 wins, 4 draws, 2 losses in 15 matches, 75 points. The Ravens: 7 wins, 6 draws, 1 loss in 14 matches, 8 points fewer than the Falcons.",
+    "statements": [
+      "If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.",
+      "The Ravens earned more than 45% of their total points from draws alone.",
+      "Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.",
+      "The Falcons' win-to-draw point contribution ratio exceeds 15.",
+      "A hypothetical team with the Falcons' record but 3 additional wins converted from draws would score more than 20 points higher than the Falcons' actual total."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.**  (true)\n\nThe overview recovered $x = 7$ points per win. If a draw were worth half of that, a draw would be $3.5$ points. The Falcons would then have\n\n$$9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77$$\n\nSince $77 > 75$, their total would increase, so the statement is True.",
+      "**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)\n\nThe overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with $6 \\times 3 = 18$ from draws.\n\n$$\\frac{18}{67} \\approx 0.2687$$\n\nAbout $26.9\\%$ is not more than $45\\%$, so the statement is False.",
+      "**C) Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.**  (true)\n\nUnder $2$ points per win and $1$ per draw, the two records become\n\n$$9 \\times 2 + 4 \\times 1 = 22$$\n\n$$7 \\times 2 + 6 \\times 1 = 20$$\n\nThe Falcons would still have more points, so the statement is True.",
+      "**D) The Falcons' win-to-draw point contribution ratio exceeds 15.**  (false)\n\nThe Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution is $4 \\times 3 = 12$.\n\n$$\\frac{63}{12} = 5.25$$\n\nThe win-to-draw ratio is $5.25$, which is not greater than $15$, so the statement is False.",
+      "**E) A hypothetical team with the Falcons' record but 3 additional wins converted from draws would score more than 20 points higher than the Falcons' actual total.**  (false)\n\nConverting three of the Falcons' draws into wins leaves $12$ wins and $1$ draw.\n\n$$12 \\times 7 + 1 \\times 3 = 87$$\n\n$$87 - 75 = 12$$\n\nThe increase is $12$ points, not more than $20$, so the statement is False."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 49,
+    "solution_overview": "The Fairview league awards a fixed points value for a win and a smaller fixed value for a draw; a loss earns zero. The Falcons: 9 wins, 4 draws, 2 losses in 15 matches, 75 points. The Ravens: 7 wins, 6 draws, 1 loss in 14 matches, 8 points fewer than the Falcons.\n\n**Part 1: Building the system.**\n\nLet $x$ = points per win, $y$ = points per draw.\n\n**1. Translate: Falcons.** That observation becomes:\n\n$$9x + 4y = 75 \\tag{1}$$\n\n**2. Translate: Ravens, with $75 - 8 = 67$ total points.** That observation becomes:\n\n$$7x + 6y = 67 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Multiply the Falcons equation by 3 and the Ravens equation by 2 so the $y$ coefficients both become $12y$:\n\n$$\n3(9x + 4y) = 3(75) \\Rightarrow 27x + 12y = 225\n$$\n\n$$\n2(7x + 6y) = 2(67) \\Rightarrow 14x + 12y = 134\n$$\n\n**2.** Subtract:\n\n$$\n(27x + 12y) - (14x + 12y) = 225 - 134\n$$\n\n$$\n13x = 91 \\Rightarrow x = 7\n$$\n\n**3.** Substitute $x = 7$ into the Falcons equation:\n\n$$\n9(7) + 4y = 75 \\Rightarrow 63 + 4y = 75 \\Rightarrow 4y = 12 \\Rightarrow y = 3\n$$\n\n**Answer.** Win = 7 points | Draw = 3 points."
+  },
+  {
+    "id": "math-5-50",
+    "case_id": "MATH 5.50",
+    "title": "Meridian Alloys  -  Decimal Density Reconstruction and Audit",
+    "context": "Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. A third batch's Metal A volume was logged in US gallons and converted to liters (2.5 gal ≈ 9.5 L).",
+    "tables_markdown": "| Batch | Metal A | Metal B | Total Mass |\n| --- | --- | --- | --- |\n| Batch 1 | 12 L | 8 L | 182.4 kg |\n| Batch 2 | 5 L | 15 L | 209.0 kg |\n| Batch 3 (audit) | 9.5 L (conv.) | 6 L | 147.0 kg (recorded) |",
+    "statements": [
+      "If Batch 1's Metal B volume had been 10 L instead of 8 L, the total mass would have exceeded 200 kg.",
+      "Metal B's density is more than 50% greater than Metal A's density.",
+      "The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.",
+      "If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L, the predicted mass would come within 2 kg of the recorded 147.0 kg.",
+      "Combining Batch 1 and Batch 2 into a single hypothetical batch would yield a total mass equal to the sum of their individual masses."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) If Batch 1's Metal B volume had been 10 L instead of 8 L, the total mass would have exceeded 200 kg.**  (true)\n\nThe overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass\n\n$$12(7.6) + 10(11.4) = 91.2 + 114 = 205.2$$\n\nSince $205.2 > 200$, the total would exceed $200$ kg, so the statement is True.",
+      "**B) Metal B's density is more than 50% greater than Metal A's density.**  (false)\n\nThe overview recovered $x = 7.6$ and $y = 11.4$. The relative density advantage of B over A is\n\n$$\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$\n\nThat is $50\\%$ greater, not more than $50\\%$, so the statement is False.",
+      "**C) The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.**  (true)\n\nThe overview predicted $140.6$ kg for Batch 3 against $147.0$ kg recorded, a $6.4$ kg discrepancy.\n\n$$\\frac{6.4}{147.0} \\approx 0.04354$$\n\nabout $4.35\\%$, which is more than $4\\%$ of the recorded mass, so the statement is True.",
+      "**D) If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L, the predicted mass would come within 2 kg of the recorded 147.0 kg.**  (false)\n\nIf Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is\n\n$$10(7.6) + 6(11.4) = 76 + 68.4 = 144.4$$\n\n$$|144.4 - 147.0| = 2.6$$\n\nThe gap is $2.6$ kg, which is not within $2$ kg of $147.0$, so the statement is False.",
+      "**E) Combining Batch 1 and Batch 2 into a single hypothetical batch would yield a total mass equal to the sum of their individual masses.**  (true)\n\nAt fixed densities, combining two batches is linear. The combined mass is the sum of the printed masses.\n\n$$182.4 + 209.0 = 391.4$$\n\nThat equals the sum of the individual masses, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 50,
+    "solution_overview": "Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. Batch 1: 12 L of A and 8 L of B, 182.4 kg. Batch 2: 5 L of A and 15 L of B, 209.0 kg. A third batch's Metal A volume was logged in US gallons and converted to liters (2.5 gal $\\approx$ 9.5 L), with 6 L of B and 147.0 kg recorded.\n\n**Part 1: Building the system.**\n\nLet $x$ = mass per liter of Metal A (kg/L), $y$ = mass per liter of Metal B (kg/L).\n\n**1. Translate: Batch 1.** That observation becomes:\n\n$$12x + 8y = 182.4 \\tag{1}$$\n\n**2. Translate: Batch 2.** That observation becomes:\n\n$$5x + 15y = 209.0 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Divide Batch 1 by 4 and Batch 2 by 5:\n\n$$\n3x + 2y = 45.6, \\qquad x + 3y = 41.8 \\Rightarrow x = 41.8 - 3y\n$$\n\n**2.** Substitute into the first simplified equation:\n\n$$\n3(41.8 - 3y) + 2y = 45.6 \\Rightarrow 125.4 - 9y + 2y = 45.6\n$$\n\n$$\n-7y = 45.6 - 125.4 = -79.8 \\Rightarrow y = \\frac{79.8}{7} = 11.4\n$$\n\n**3.** Substitute $y = 11.4$ back:\n\n$$\nx = 41.8 - 3(11.4) = 41.8 - 34.2 = 7.6\n$$\n\n**4.** Audit Batch 3:\n\n$$\n9.5(7.6) + 6(11.4) = 72.2 + 68.4 = 140.6\n$$\n\nversus 147.0 kg recorded, a 6.4 kg discrepancy.\n\n**Answer.** Metal A = 7.6 kg/L | Metal B = 11.4 kg/L | Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)."
+  },
+  {
+    "id": "math-5-51",
+    "case_id": "MATH 5.51",
+    "title": "Halcyon Ventures  -  Fee Structure Reconstruction from Client Differentials",
+    "context": "Halcyon charges an annual fee equal to a percentage rate on assets under management (AUM), plus a flat retainer. Client 2's AUM is \\$600,000, fee \\$10,800. Client 1's AUM exceeds Client 2's by \\$150,000 and pays \\$2,400 more in total fees. The flat retainer is identical for every client, so it cancels out of any fee-difference comparison.",
+    "statements": [
+      "A client with AUM of \\$850,000 would pay a fee representing less than 1.75% of their AUM.",
+      "The flat retainer accounts for more than 10% of Client 2's total fee.",
+      "If the fee rate were reduced by 0.2 percentage points while the retainer doubled, Client 1's total fee would decrease compared to its actual amount.",
+      "The percentage-point difference in effective fee rate between Client 1 and Client 2 is more than 0.05 percentage points.",
+      "A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) A client with AUM of \\$850,000 would pay a fee representing less than 1.75% of their AUM.**  (true)\n\nThe overview recovered rate $x = 0.016$ and retainer $y = 1200$. A client with AUM \\$850,000 pays\n\n$$850000 \\times 0.016 + 1200 = 13600 + 1200 = 14800$$\n\n$$\\frac{14800}{850000} \\approx 0.017412$$\n\nabout $1.741\\%$, which is less than $1.75\\%$, so the statement is True.",
+      "**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)\n\nThe overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.\n\n$$\\frac{1200}{10800} \\approx 0.1111$$\n\nabout $11.1\\%$, which is more than $10\\%$, so the statement is True.",
+      "**C) If the fee rate were reduced by 0.2 percentage points while the retainer doubled, Client 1's total fee would decrease compared to its actual amount.**  (true)\n\nClient 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is\n\n$$750000 \\times 0.014 + 2400 = 10500 + 2400 = 12900$$\n\nSince $12900 < 13200$, Client 1's fee would decrease, so the statement is True.",
+      "**D) The percentage-point difference in effective fee rate between Client 1 and Client 2 is more than 0.05 percentage points.**  (false)\n\nClient 1's effective rate and Client 2's effective rate are\n\n$$\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000} = 0.018$$\n\n$$0.018 - 0.0176 = 0.0004$$\n\nThat is $0.04$ percentage points, which is not more than $0.05$, so the statement is False.",
+      "**E) A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee.**  (false)\n\nTriple of Client 2's AUM is \\$1,800,000. That client's fee, versus triple of Client 2's \\$10,800, is\n\n$$1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000$$\n\n$$3 \\times 10800 = 32400$$\n\nSince $30000 < 32400$, the fee is not more than triple, so the statement is False."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 51,
+    "solution_overview": "Halcyon charges an annual fee equal to a percentage rate on assets under management (AUM), plus a flat retainer. Client 2's AUM is \\$600,000, fee \\$10,800. Client 1's AUM exceeds Client 2's by \\$150,000 and pays \\$2,400 more in total fees. The flat retainer is identical for every client, so it cancels out of any fee-difference comparison.\n\n**Part 1: Building the system.**\n\nLet $x$ = the percentage fee rate (as a decimal), $y$ = the flat retainer (in dollars).\n\n**1. Translate: Client 2's total fee.** That observation becomes:\n\n$$600000x + y = 10800 \\tag{1}$$\n\n**2. Translate: fee difference over AUM difference; the retainer cancels.** That observation becomes:\n\n$$150000x = 2400 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** The fee-difference equation already isolates the rate:\n\n$$\n150000x = 2400 \\Rightarrow x = \\frac{2400}{150000} = 0.016\n$$\n\n(that is $1.6\\%$).\n\n**2.** Substitute into Client 2's total:\n\n$$\n600000(0.016) + y = 10800 \\Rightarrow 9600 + y = 10800 \\Rightarrow y = 1200\n$$\n\n**Answer.** Fee rate = 1.6% of AUM | Retainer = \\$1,200.00."
+  },
+  {
+    "id": "math-5-52",
+    "case_id": "MATH 5.52",
+    "title": "Solventis Labs  -  Multi-Unit Suspension Concentration Reconstruction",
+    "context": "Solventis blends two drug suspensions, each with a fixed mg/mL concentration. A third batch's Suspension A volume was logged in liters, then converted to mL.",
+    "tables_markdown": "| Batch | Suspension A | Suspension B | Total Content |\n| --- | --- | --- | --- |\n| Batch 1 | 500 mL | 300 mL | 8,880 mg |\n| Batch 2 | 200 mL | 700 mL | 12,600 mg |\n| Batch 3 (QC) | 0.32 L (=320 mL) | 450 mL | 9,700 mg (recorded) |",
+    "statements": [
+      "Suspension B's concentration is more than 85% higher than Suspension A's concentration.",
+      "Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.",
+      "If Batch 1's Suspension B volume were doubled, the new total content would exceed 13,500 mg.",
+      "The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.",
+      "Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Suspension B's concentration is more than 85% higher than Suspension A's concentration.**  (true)\n\nThe overview recovered $A = 8.4$ mg/mL and $B = 15.6$ mg/mL. The relative increase of B over A is\n\n$$\\frac{15.6 - 8.4}{8.4} = \\frac{7.2}{8.4} \\approx 0.8571$$\n\nabout $85.7\\%$, which is more than $85\\%$, so the statement is True.",
+      "**B) Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.**  (false)\n\nThe overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.\n\n$$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700} \\approx 0.000825$$\n\nabout $0.0825\\%$, which is not more than $1\\%$, so the statement is False.",
+      "**C) If Batch 1's Suspension B volume were doubled, the new total content would exceed 13,500 mg.**  (true)\n\nThe overview recovered $A = 8.4$ and $B = 15.6$. Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives\n\n$$500(8.4) + 600(15.6) = 4200 + 9360 = 13560$$\n\nSince $13560 > 13500$, the new total would exceed $13500$ mg, so the statement is True.",
+      "**D) The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.**  (true)\n\nPooling uses the printed contents. Twice Batch 2 is $2 \\times 12600 = 25200$.\n\n$$8880 + 12600 = 21480$$\n\nSince $21480 < 25200$, the pooled total is less than twice Batch 2, so the statement is True.",
+      "**E) Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did.**  (true)\n\nBatch 2 has $700$ mL of B out of $200 + 700 = 900$ mL. Batch 3 has $450$ mL of B out of $320 + 450 = 770$ mL.\n\n$$\\frac{700}{900} \\approx 0.7778$$\n\n$$\\frac{450}{770} \\approx 0.5844$$\n\nBatch 2's B-share is higher, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 52,
+    "solution_overview": "Solventis blends two drug suspensions, each with a fixed mg/mL concentration. Batch 1: 500 mL of A and 300 mL of B, 8,880 mg. Batch 2: 200 mL of A and 700 mL of B, 12,600 mg. A third batch's Suspension A volume was logged in liters, then converted to mL: 0.32 L $= 320$ mL of A, 450 mL of B, 9,700 mg recorded.\n\n**Part 1: Building the system.**\n\nLet $x$ = mg/mL concentration of Suspension A, $y$ = mg/mL concentration of Suspension B.\n\n**1. Translate: Batch 1.** That observation becomes:\n\n$$500x + 300y = 8880 \\tag{1}$$\n\n**2. Translate: Batch 2.** That observation becomes:\n\n$$200x + 700y = 12600 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Divide Batch 1 by 100 and Batch 2 by 100:\n\n$$\n5x + 3y = 88.8, \\qquad 2x + 7y = 126\n$$\n\n**2.** Multiply the first by 7 and the second by 3 so the $y$ coefficients both become $21y$:\n\n$$\n35x + 21y = 621.6, \\qquad 6x + 21y = 378\n$$\n\n**3.** Subtract:\n\n$$\n(35x + 21y) - (6x + 21y) = 621.6 - 378\n$$\n\n$$\n29x = 243.6 \\Rightarrow x = \\frac{243.6}{29} = 8.4\n$$\n\n**4.** Substitute $x = 8.4$ into $2x + 7y = 126$:\n\n$$\n2(8.4) + 7y = 126 \\Rightarrow 16.8 + 7y = 126 \\Rightarrow 7y = 109.2 \\Rightarrow y = 15.6\n$$\n\n**5.** Audit Batch 3 ($0.32$ L $= 320$ mL of A):\n\n$$\n320(8.4) + 450(15.6) = 2688 + 7020 = 9708\n$$\n\nversus 9,700 mg recorded, an 8 mg discrepancy.\n\n**Answer.** Suspension A = 8.4 mg/mL | Suspension B = 15.6 mg/mL | Batch 3 predicted = 9,708 mg (vs. 9,700 mg recorded)."
+  },
+  {
+    "id": "math-5-53",
+    "case_id": "MATH 5.53",
+    "title": "Ridgeline Construction  -  Waste-Adjusted Material Cost Reconstruction",
+    "context": "Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall. Job 1 needed 200 usable studs + 150 usable sheets, invoice \\$7,164.00. Job 2 needed 350 usable studs + 175 usable sheets, invoice \\$8,946.00.",
+    "statements": [
+      "The total waste-related cost on Invoice 1 exceeds \\$700.00.",
+      "If the drywall waste allowance were reduced from 8% to 5%, Invoice 2's total would decrease by more than \\$150.00.",
+      "Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.",
+      "The drywall price is more than 8 times the stud price.",
+      "Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The total waste-related cost on Invoice 1 exceeds \\$700.00.**  (false)\n\nThe overview recovered $x = 4.50$ and $y = 38$. Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.\n\n$$24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564$$\n\nSince $564 < 700$, the waste-related cost does not exceed \\$700, so the statement is False.",
+      "**B) If the drywall waste allowance were reduced from 8% to 5%, Invoice 2's total would decrease by more than \\$150.00.**  (true)\n\nInvoice 2 ordered $175 \\times 1.08 = 189$ drywall sheets. Cutting the allowance from $8\\%$ to $5\\%$ removes $175 \\times 0.03 = 5.25$ sheets at \\$38 each.\n\n$$5.25 \\times 38 = 199.50$$\n\nSince $199.50 > 150$, Invoice 2 would decrease by more than \\$150, so the statement is True.",
+      "**C) Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.**  (true)\n\nJob 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is\n\n$$350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225$$\n\n$$\\frac{8225}{8946} \\approx 0.9194$$\n\nabout $91.9\\%$, which is more than $90\\%$, so the statement is True.",
+      "**D) The drywall price is more than 8 times the stud price.**  (true)\n\nThe overview recovered drywall $y = 38$ and studs $x = 4.50$.\n\n$$\\frac{38}{4.50} \\approx 8.444$$\n\nSince $8.444 > 8$, the drywall price is more than $8$ times the stud price, so the statement is True.",
+      "**E) Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total.**  (true)\n\nJob 1 usable cost and Job 2 usable cost at the recovered prices $x = 4.50$ and $y = 38$ are\n\n$$200 \\times 4.50 + 150 \\times 38 = 900 + 5700 = 6600$$\n\n$$350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225$$\n\nWaste as a share of usable cost:\n\n$$\\frac{7164 - 6600}{6600} = \\frac{564}{6600} \\approx 0.08545$$\n\n$$\\frac{8946 - 8225}{8225} = \\frac{721}{8225} \\approx 0.08766$$\n\nJob 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 53,
+    "solution_overview": "Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall. Job 1 needed 200 usable studs + 150 usable sheets, invoice \\$7,164.00. Job 2 needed 350 usable studs + 175 usable sheets, invoice \\$8,946.00.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per stud, $y$ = price per drywall sheet. The ordered quantities are the usable amounts inflated by the waste allowances.\n\n**1. Translate: Job 1, $200 \\times 1.12 = 224$ studs and $150 \\times 1.08 = 162$ sheets.** That observation becomes:\n\n$$224x + 162y = 7164 \\tag{1}$$\n\n**2. Translate: Job 2, $350 \\times 1.12 = 392$ studs and $175 \\times 1.08 = 189$ sheets.** That observation becomes:\n\n$$392x + 189y = 8946 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Multiply Job 1 by $1.75$ so its stud coefficient matches Job 2's $392x$ ($224 \\times 1.75 = 392$):\n\n$$\n1.75(224x + 162y) = 1.75(7164) \\Rightarrow 392x + 283.5y = 12537\n$$\n\n**2.** Subtract Job 2:\n\n$$\n(392x + 283.5y) - (392x + 189y) = 12537 - 8946\n$$\n\n$$\n94.5y = 3591 \\Rightarrow y = \\frac{3591}{94.5} = 38.00\n$$\n\n**3.** Substitute $y = 38$ into Job 1:\n\n$$\n224x + 162(38) = 7164 \\Rightarrow 224x + 6156 = 7164\n$$\n\n$$\n224x = 1008 \\Rightarrow x = 4.50\n$$\n\n**Answer.** Stud price = \\$4.50 | Drywall sheet price = \\$38.00."
+  },
+  {
+    "id": "math-5-54",
+    "case_id": "MATH 5.54",
+    "title": "Precision Dynamics  -  Sensor Calibration Curve Reconstruction",
+    "context": "A sensor's raw reading converts to a true value via True Value = (scale factor)×(Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check.",
+    "tables_markdown": "| Point | Reading | Reference True Value | Role |\n| --- | --- | --- | --- |\n| Point 1 | 12.4 | 56.90 | Calibration |\n| Point 2 | 31.7 | 124.45 | Calibration |\n| Point 3 | 45.0 | 172.20 | Verification (recorded) |",
+    "statements": [
+      "The scale factor exceeds 3.4 by more than 2.5%.",
+      "If the offset were doubled, the predicted true value at a reading of 20 would exceed 95.",
+      "The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.",
+      "The percentage increase in true value between Point 1 and Point 2 is more than 100%.",
+      "A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The scale factor exceeds 3.4 by more than 2.5%.**  (true)\n\nThe overview recovered scale factor $x = 3.50$. The excess over $3.4$, relative to $3.4$, is\n\n$$\\frac{3.50 - 3.4}{3.4} = \\frac{0.10}{3.4} \\approx 0.02941$$\n\nabout $2.94\\%$, which is more than $2.5\\%$, so the statement is True.",
+      "**B) If the offset were doubled, the predicted true value at a reading of 20 would exceed 95.**  (true)\n\nThe overview recovered $x = 3.50$ and $y = 13.50$. Doubling the offset gives $27$, so at reading $20$\n\n$$3.50 \\times 20 + 27 = 70 + 27 = 97$$\n\nSince $97 > 95$, the predicted true value would exceed $95$, so the statement is True.",
+      "**C) The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.**  (false)\n\nThe overview predicted $171.00$ at reading $45.0$ against recorded $172.20$.\n\n$$\\frac{|171.00 - 172.20|}{172.20} = \\frac{1.20}{172.20} \\approx 0.00697$$\n\nabout $0.70\\%$ of the recorded value, which is not more than $1\\%$, so the statement is False.",
+      "**D) The percentage increase in true value between Point 1 and Point 2 is more than 100%.**  (true)\n\nPoint 1's true value is $56.90$ and Point 2's is $124.45$. The percentage increase is\n\n$$\\frac{124.45 - 56.90}{56.90} = \\frac{67.55}{56.90} \\approx 1.1868$$\n\nabout $118.7\\%$, which is more than $100\\%$, so the statement is True.",
+      "**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value.**  (false)\n\nAt reading $8.0$, the recovered calibration gives\n\n$$3.50 \\times 8.0 + 13.50 = 28 + 13.50 = 41.50$$\n\nHalf of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1, so the statement is False."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 54,
+    "solution_overview": "A sensor's raw reading converts to a true value via True Value = (scale factor)$\\times$(Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check. Point 1: reading 12.4, true value 56.90. Point 2: reading 31.7, true value 124.45. Point 3: reading 45.0, recorded reference 172.20.\n\n**Part 1: Building the system.**\n\nLet $x$ = the sensor's scale factor, $y$ = the sensor's offset, so that $\\mathrm{True\\ Value} = x \\cdot (\\mathrm{Reading}) + y$.\n\n**1. Translate: Point 1.** That observation becomes:\n\n$$12.4x + y = 56.90 \\tag{1}$$\n\n**2. Translate: Point 2.** That observation becomes:\n\n$$31.7x + y = 124.45 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Subtract Point 1 from Point 2 to cancel the offset $y$:\n\n$$\n(31.7x + y) - (12.4x + y) = 124.45 - 56.90\n$$\n\n$$\n19.3x = 67.55 \\Rightarrow x = \\frac{67.55}{19.3} = 3.50\n$$\n\n**2.** Substitute $x = 3.50$ into Point 1:\n\n$$\n12.4(3.50) + y = 56.90 \\Rightarrow 43.40 + y = 56.90 \\Rightarrow y = 13.50\n$$\n\n**3.** Verification at reading $45.0$:\n\n$$\n45.0(3.50) + 13.50 = 157.50 + 13.50 = 171.00\n$$\n\nversus recorded 172.20, a $1.20$ discrepancy.\n\n**Answer.** Scale factor = 3.50 | Offset = 13.50 | Verification predicted = 171.00 (vs. 172.20 recorded)."
+  },
+  {
+    "id": "math-5-55",
+    "case_id": "MATH 5.55",
+    "title": "Meridian Commodities  -  Blended Shipment Price Reconstruction",
+    "context": "Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost \\$2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost \\$4,555.00.",
+    "statements": [
+      "Coffee costs more than 25% more per kilogram than Cocoa.",
+      "Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.",
+      "If Shipment 2's ratio had instead been 1:1 rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.",
+      "The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.",
+      "The price gap between Coffee and Cocoa is less than 30% of Coffee's price."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Coffee costs more than 25% more per kilogram than Cocoa.**  (true)\n\nThe overview recovered Coffee $x = 6.20$ and Cocoa $y = 4.85$. Coffee's premium over Cocoa is\n\n$$\\frac{6.20 - 4.85}{4.85} = \\frac{1.35}{4.85} \\approx 0.2784$$\n\nabout $27.8\\%$, which is more than $25\\%$, so the statement is True.",
+      "**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.**  (true)\n\nShipment 1 has $312$ kg of Coffee at \\$6.20/kg, against a printed total of \\$2,943.20.\n\n$$312 \\times 6.20 = 1934.40$$\n\n$$\\frac{1934.40}{2943.20} \\approx 0.6572$$\n\nabout $65.7\\%$, which is more than $65\\%$, so the statement is True.",
+      "**C) If Shipment 2's ratio had instead been 1:1 rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.**  (true)\n\nAn $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.\n\n$$400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940 = 4420$$\n\nSince $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555, so the statement is True.",
+      "**D) The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.**  (false)\n\nCocoa across both shipments is $208 + 300 = 508$ kg. Coffee is $312 + 500 = 812$ kg.\n\n$$508 \\times 4.85 = 2463.80$$\n\n$$812 \\times 6.20 = 5034.40$$\n\nCocoa's dollar total is smaller, not larger, so the statement is False.",
+      "**E) The price gap between Coffee and Cocoa is less than 30% of Coffee's price.**  (true)\n\nThe overview recovered $x = 6.20$ and $y = 4.85$. The gap as a share of Coffee's price is\n\n$$\\frac{6.20 - 4.85}{6.20} = \\frac{1.35}{6.20} \\approx 0.2177$$\n\nabout $21.8\\%$, which is less than $30\\%$, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 55,
+    "solution_overview": "Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost \\$2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost \\$4,555.00.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per kg of Coffee, $y$ = price per kg of Cocoa.\n\n**1. Translate: Shipment 1, 520 kg split 3:2 is 312 kg Coffee and 208 kg Cocoa.** That observation becomes:\n\n$$312x + 208y = 2943.2 \\tag{1}$$\n\n**2. Translate: Shipment 2, 800 kg split 5:3 is 500 kg Coffee and 300 kg Cocoa.** That observation becomes:\n\n$$500x + 300y = 4555 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Divide Shipment 1 by 8 and Shipment 2 by 100:\n\n$$\n39x + 26y = 367.9, \\qquad 5x + 3y = 45.55 \\Rightarrow x = 9.11 - 0.6y\n$$\n\n**2.** Substitute into the first simplified equation:\n\n$$\n39(9.11 - 0.6y) + 26y = 367.9\n$$\n\n$$\n355.29 - 23.4y + 26y = 367.9 \\Rightarrow 355.29 + 2.6y = 367.9\n$$\n\n$$\n2.6y = 12.61 \\Rightarrow y = \\frac{12.61}{2.6} = 4.85\n$$\n\n**3.** Substitute $y = 4.85$ back:\n\n$$\nx = 9.11 - 0.6(4.85) = 9.11 - 2.91 = 6.20\n$$\n\n**Answer.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg."
+  },
+  {
+    "id": "math-5-56",
+    "case_id": "MATH 5.56",
+    "title": "Continental Freight  -  Fleet Fuel Rate Reconstruction",
+    "context": "Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. A third route's Truck distance was logged in miles and converted to km (155.3 mi ≈ 250 km).",
+    "tables_markdown": "| Route | Truck | Van | Total Fuel |\n| --- | --- | --- | --- |\n| Route 1 | 850 km | 620 km | 383.6 L |\n| Route 2 | 500 km | 900 km | 322.0 L |\n| Route 3 (audit) | 155.3 mi (≈250 km) | 400 km | 155.0 L (recorded) |",
+    "statements": [
+      "Truck fuel consumption is more than 75% higher than Van fuel consumption.",
+      "Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.",
+      "If Route 1's Van distance had instead been 900 km, total fuel would have exceeded 430 L.",
+      "Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.",
+      "Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance at its own rate."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Truck fuel consumption is more than 75% higher than Van fuel consumption.**  (true)\n\nThe overview recovered Truck $x = 32.0$ L/100km and Van $y = 18.0$ L/100km.\n\n$$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18} \\approx 0.7778$$\n\nabout $77.8\\%$, which is more than $75\\%$, so the statement is True.",
+      "**B) Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.**  (false)\n\nThe overview predicted $152.0$ L for Route 3 against $155.0$ L recorded.\n\n$$\\frac{155.0 - 152.0}{155.0} = \\frac{3}{155} \\approx 0.01935$$\n\nabout $1.94\\%$ below the recorded value, which is not more than $2\\%$, so the statement is False.",
+      "**C) If Route 1's Van distance had instead been 900 km, total fuel would have exceeded 430 L.**  (true)\n\nRoute 1 currently uses $383.6$ L with $620$ km of van. Replacing that van distance by $900$ km adds $280$ km at the recovered van rate $18.0$ L/100km.\n\n$$2.8 \\times 18.0 = 50.4$$\n\n$$383.6 + 50.4 = 434.0$$\n\nSince $434.0 > 430$, total fuel would exceed $430$ L, so the statement is True.",
+      "**D) Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.**  (true)\n\nRoute 2 covers $500 + 900 = 1400$ km on $322.0$ L, so the fleet average in L/100km is\n\n$$\\frac{322.0}{14} = 23.0$$\n\nDistances to the two individual rates: $|23.0 - 18.0| = 5.0$ versus $|23.0 - 32.0| = 9.0$. The average is closer to the Van rate, so the statement is True.",
+      "**E) Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance at its own rate.**  (true)\n\nRoute 1's combined distance is $850 + 620 = 1470$ km. Each type covering that whole distance at its own recovered rate would use\n\n$$14.7 \\times 32.0 = 470.4$$\n\n$$14.7 \\times 18.0 = 264.6$$\n\n$$470.4 + 264.6 = 735.0$$\n\nActual Route 1 fuel $383.6$ L is less than that sum, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 56,
+    "solution_overview": "Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. Route 1: 850 km truck, 620 km van, 383.6 L. Route 2: 500 km truck, 900 km van, 322.0 L. A third route's Truck distance was logged in miles and converted to km (155.3 mi $\\approx$ 250 km), with 400 km of van and 155.0 L recorded.\n\n**Part 1: Building the system.**\n\nLet $x$ = Truck fuel consumption (L/100km), $y$ = Van fuel consumption (L/100km). Distances enter as hundreds of km so that the coefficients match litres.\n\n**1. Translate: Route 1.** That observation becomes:\n\n$$8.5x + 6.2y = 383.6 \\tag{1}$$\n\n**2. Translate: Route 2.** That observation becomes:\n\n$$5x + 9y = 322 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Multiply Route 1 by 9 and Route 2 by 6.2 so the $y$ coefficients both become $55.8y$:\n\n$$\n9(8.5x + 6.2y) = 9(383.6) \\Rightarrow 76.5x + 55.8y = 3452.4\n$$\n\n$$\n6.2(5x + 9y) = 6.2(322) \\Rightarrow 31x + 55.8y = 1996.4\n$$\n\n**2.** Subtract:\n\n$$\n(76.5x + 55.8y) - (31x + 55.8y) = 3452.4 - 1996.4\n$$\n\n$$\n45.5x = 1456 \\Rightarrow x = \\frac{1456}{45.5} = 32.0\n$$\n\n**3.** Substitute $x = 32$ into Route 2:\n\n$$\n5(32) + 9y = 322 \\Rightarrow 160 + 9y = 322 \\Rightarrow 9y = 162 \\Rightarrow y = 18.0\n$$\n\n**4.** Audit Route 3 ($155.3$ mi $\\approx 250$ km $= 2.5$ hundreds of km):\n\n$$\n2.5(32) + 4(18) = 80 + 72 = 152\n$$\n\nversus 155 L recorded, a 3 L discrepancy.\n\n**Answer.** Truck = 32.0 L/100km | Van = 18.0 L/100km | Route 3 predicted = 152.0 L (vs. 155.0 L recorded)."
+  },
+  {
+    "id": "math-5-57",
+    "case_id": "MATH 5.57",
+    "title": "Whitmore Scholarship Fund  -  Blended-Return Rate Reconstruction",
+    "context": "The \\$45,000 Whitmore Fund splits between a Bond Portfolio and an Equity Portfolio, each earning its own fixed rate. Current allocation (\\$27,000 Bonds, \\$18,000 Equities) returns \\$2,646.00. A proposed reallocation swapping those amounts (\\$18,000 Bonds, \\$27,000 Equities) would return \\$2,754.00.",
+    "statements": [
+      "The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.",
+      "Under the current allocation, the blended rate is less than 6%.",
+      "If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns.",
+      "A $\\frac{50}{50}$ split would produce a blended return exactly equal to the average of the two described allocations' returns.",
+      "The bond rate is more than 80% of the equity rate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.**  (true)\n\nThe overview recovered bond $5.4\\%$ and equity $6.6\\%$. The relative gap of equity over bonds is\n\n$$\\frac{6.6 - 5.4}{5.4} = \\frac{1.2}{5.4} \\approx 0.2222$$\n\nabout $22.2\\%$, which is more than $20\\%$, so the statement is True.",
+      "**B) Under the current allocation, the blended rate is less than 6%.**  (true)\n\nThe current allocation returns \\$2,646 on \\$45,000.\n\n$$\\frac{2646}{45000} = 0.0588$$\n\n$5.88\\%$ is less than $6\\%$, so the statement is True.",
+      "**C) If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns.**  (false)\n\nAll \\$45,000 in equities at $6.6\\%$ would return\n\n$$45000 \\times 0.066 = 2970$$\n\nThe combined total of the two described allocations is $2646 + 2754 = 5400$. Since $2970 < 5400$, the all-equity return does not exceed that combined total, so the statement is False.",
+      "**D) A $\\frac{50}{50}$ split would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)\n\nA $\\frac{50}{50}$ split puts \\$22,500 in each portfolio.\n\n$$22500 \\times 0.054 + 22500 \\times 0.066 = 2700$$\n\nThe average of the two described returns is\n\n$$\\frac{2646 + 2754}{2} = 2700$$\n\nThe two figures match, so the statement is True.",
+      "**E) The bond rate is more than 80% of the equity rate.**  (true)\n\nThe overview recovered $5.4\\%$ and $6.6\\%$.\n\n$$\\frac{5.4}{6.6} \\approx 0.8182$$\n\nabout $81.8\\%$, which is more than $80\\%$, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 57,
+    "solution_overview": "The \\$45,000 Whitmore Fund splits between a Bond Portfolio and an Equity Portfolio, each earning its own fixed rate. Current allocation (\\$27,000 Bonds, \\$18,000 Equities) returns \\$2,646.00. A proposed reallocation swapping those amounts (\\$18,000 Bonds, \\$27,000 Equities) would return \\$2,754.00.\n\n**Part 1: Building the system.**\n\nLet $x$ = Bond Portfolio's annual rate in percent, $y$ = Equity Portfolio's annual rate in percent.\n\n**1. Translate: current allocation.** That observation becomes:\n\n$$270x + 180y = 2646 \\tag{1}$$\n\n**2. Translate: proposed reallocation.** That observation becomes:\n\n$$180x + 270y = 2754 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Add the two allocation equations:\n\n$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$\n\n$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$\n\n**2.** Subtract the first from the second:\n\n$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$\n\n$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$\n\n**3.** Substitute into $x + y = 12$:\n\n$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$\n\nThen $y = 5.4 + 1.2 = 6.6$.\n\n**Answer.** Bond rate = 5.4% | Equity rate = 6.6%."
+  },
+  {
+    "id": "math-5-58",
+    "case_id": "MATH 5.58",
+    "title": "Ashford Mutual Insurance  -  Premium Structure Reconstruction",
+    "context": "Ashford prices every policy as a fixed administrative fee plus a rate per \\$1,000 of coverage. A third policy's coverage amount is illegible, but its premium survived.",
+    "tables_markdown": "| Policy | Coverage | Premium |\n| --- | --- | --- |\n| Auto | \\$85,000 | \\$612.50 |\n| Home | \\$210,000 | \\$1,197.50 |\n| Renters | (illegible) | \\$331.70 |",
+    "statements": [
+      "The reconstructed Renters coverage amount is less than \\$30,000.",
+      "The fixed administrative fee represents more than 60% of the Auto policy's total premium.",
+      "If the rate per \\$1,000 of coverage increased by 10%, the Home policy's premium would increase by more than \\$75.00.",
+      "The Home policy's premium per \\$1,000 of coverage is more than twice the Auto policy's premium per \\$1,000 of coverage.",
+      "Combining the Auto and Home coverage into a single hypothetical policy would cost less than the sum of their separate premiums."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The reconstructed Renters coverage amount is less than \\$30,000.**  (true)\n\nThe overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000, so the statement is True.",
+      "**B) The fixed administrative fee represents more than 60% of the Auto policy's total premium.**  (false)\n\nThe overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.\n\n$$\\frac{214.70}{612.50} \\approx 0.3505$$\n\nabout $35.1\\%$, which is not more than $60\\%$, so the statement is False.",
+      "**C) If the rate per \\$1,000 of coverage increased by 10%, the Home policy's premium would increase by more than \\$75.00.**  (true)\n\nA $10\\%$ increase in the recovered rate $y = 4.68$ adds $0.468$ per \\$1,000. Home has $210$ thousands of coverage.\n\n$$210 \\times 0.468 = 98.28$$\n\nSince $98.28 > 75$, the Home premium would increase by more than \\$75, so the statement is True.",
+      "**D) The Home policy's premium per \\$1,000 of coverage is more than twice the Auto policy's premium per \\$1,000 of coverage.**  (false)\n\nPremium per \\$1,000 is the printed premium divided by coverage in thousands.\n\n$$\\frac{1197.50}{210} \\approx 5.702$$\n\n$$\\frac{612.50}{85} \\approx 7.206$$\n\nHome's $5.702$ is not more than twice Auto's $7.206$, so the statement is False.",
+      "**E) Combining the Auto and Home coverage into a single hypothetical policy would cost less than the sum of their separate premiums.**  (true)\n\nA single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.\n\n$$214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30$$\n\n$$612.50 + 1197.50 = 1810.00$$\n\nThe combined policy costs less than the sum of the separate premiums, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 58,
+    "solution_overview": "Ashford prices every policy as a fixed administrative fee plus a rate per \\$1,000 of coverage. Auto: \\$85,000 coverage, premium \\$612.50. Home: \\$210,000 coverage, premium \\$1,197.50. A third (Renters) policy's coverage amount is illegible, but its premium \\$331.70 survived.\n\n**Part 1: Building the system.**\n\nLet $x$ = the fixed administrative fee per policy (in dollars), $y$ = the rate per \\$1,000 of coverage (in dollars).\n\n**1. Translate: Auto, coverage in units of \\$1,000.** That observation becomes:\n\n$$x + 85y = 612.50 \\tag{1}$$\n\n**2. Translate: Home.** That observation becomes:\n\n$$x + 210y = 1197.50 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Subtract Auto from Home to cancel the fixed fee $x$:\n\n$$\n(x + 210y) - (x + 85y) = 1197.50 - 612.50\n$$\n\n$$\n125y = 585 \\Rightarrow y = \\frac{585}{125} = 4.68\n$$\n\n**2.** Substitute $y = 4.68$ into Auto:\n\n$$\nx + 85(4.68) = 612.50 \\Rightarrow x + 397.80 = 612.50 \\Rightarrow x = 214.70\n$$\n\n**3.** Reconstruct the Renters coverage $C$, measured in thousands of dollars:\n\n$$\n214.70 + 4.68C = 331.70 \\Rightarrow 4.68C = 117.00 \\Rightarrow C = 25\n$$\n\nthat is \\$25,000 of coverage.\n\n**Answer.** Fixed fee = \\$214.70 | Rate = \\$4.68 per \\$1,000 | Renters coverage reconstructed = \\$25,000."
+  },
+  {
+    "id": "math-5-59",
+    "case_id": "MATH 5.59",
+    "title": "Cedar Hollow Reserve  -  Linear Population Growth Reconstruction",
+    "context": "Two species change by a fixed net number of individuals each year. At Year 2: Species A = 610, Species B = 730 (combined 1,340). At Year 6: combined population = 1,772. Species A grows at exactly twice the annual rate of Species B.",
+    "statements": [
+      "By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.",
+      "If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.",
+      "The ratio of the two species' total population growth from Year 2 to Year 6 is greater than 2.5: 1.",
+      "At some point between Year 2 and Year 6, the two species had equal populations.",
+      "Species A overtakes Species B in total population size before Year 5."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.**  (true)\n\nThe overview recovered Year 6 populations $A = 898$ and $B = 874$.\n\n$$898 - 874 = 24$$\n\nSince $24 > 20$, Species A exceeds Species B by more than $20$ individuals, so the statement is True.",
+      "**B) If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.**  (true)\n\nIf Species B also grew at $72$ per year, combined growth from Year 2 to Year 6 would be $4(72 + 72) = 576$.\n\n$$1340 + 576 = 1916$$\n\n$$1916 - 1772 = 144$$\n\nThe excess over the actual $1772$ is $144$, which is more than $140$, so the statement is True.",
+      "**C) The ratio of the two species' total population growth from Year 2 to Year 6 is greater than 2.5: 1.**  (false)\n\nFrom Year 2 to Year 6, Species A grows by $4 \\times 72 = 288$ and Species B by $4 \\times 36 = 144$.\n\n$$\\frac{288}{144} = 2$$\n\nThe growth ratio is $2:1$, which is not greater than $2.5:1$, so the statement is False.",
+      "**D) At some point between Year 2 and Year 6, the two species had equal populations.**  (true)\n\nThe populations are equal $t$ years after Year 2 when\n\n$$610 + 72t = 730 + 36t$$\n\n$$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$\n\nThat is Year $5.333$, which lies between Year 2 and Year 6, so the statement is True.",
+      "**E) Species A overtakes Species B in total population size before Year 5.**  (false)\n\nSet $610 + 72t = 730 + 36t$ to find when A catches B:\n\n$$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$\n\nso equality is at Year $5.333$. At Year 5, three years after Year 2,\n\n$$610 + 3(72) = 826$$\n\n$$730 + 3(36) = 838$$\n\nA is still behind at Year 5, and equality comes after Year 5, so the statement is False."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 59,
+    "solution_overview": "Two species change by a fixed net number of individuals each year. At Year 2: Species A = 610, Species B = 730 (combined 1,340). At Year 6: combined population = 1,772. Species A grows at exactly twice the annual rate of Species B.\n\n**Part 1: Building the system.**\n\nLet $x$ = Species A's net annual change (individuals/year), $y$ = Species B's net annual change.\n\n**1. Translate: combined growth of $1772 - 1340 = 432$ over 4 years.** That observation becomes:\n\n$$4x + 4y = 432 \\Rightarrow x + y = 108 \\tag{1}$$\n\n**2. Translate: Species A grows at twice Species B's rate.** That observation becomes:\n\n$$x = 2y \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Substitute $x = 2y$ into $x + y = 108$:\n\n$$\n2y + y = 108 \\Rightarrow 3y = 108 \\Rightarrow y = 36\n$$\n\n**2.** Then\n\n$$\nx = 2(36) = 72\n$$\n\n**3.** Year 6 populations:\n\n$$\nA = 610 + 4(72) = 898, \\qquad B = 730 + 4(36) = 874\n$$\n\n**Answer.** Species A = +72 individuals/year | Species B = +36 individuals/year | Year 6: A = 898, B = 874."
+  },
+  {
+    "id": "math-5-60",
+    "case_id": "MATH 5.60",
+    "title": "Continental Power Grid  -  Plant Output Rate Reconstruction",
+    "context": "Two power plants each produce electricity at a fixed MWh-per-hour rate. Day 3's Plant A operating time was logged in minutes and converted to hours (1,020 min = 17 hrs).",
+    "tables_markdown": "| Day | Plant A | Plant B | Total Energy |\n| --- | --- | --- | --- |\n| Day 1 | 14 hrs | 20 hrs | 3,990 MWh |\n| Day 2 | 22 hrs | 9 hrs | 4,072 MWh |\n| Day 3 (audit) | 1,020 min (=17 hrs) | 11 hrs | 3,553 MWh (recorded) |",
+    "statements": [
+      "Plant A's output rate exceeds Plant B's by more than 45%.",
+      "Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.",
+      "If Plant A had operated for the combined time Plant B actually operated across Days 1–2, while Plant B operated for the combined time Plant A actually did, the grand total would exceed the actual combined Day 1 + Day 2 total.",
+      "The combined output rate of both plants together is more than 2.4 times Plant B's rate alone.",
+      "Across all three days combined, total energy production exceeds 11,600 MWh."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Plant A's output rate exceeds Plant B's by more than 45%.**  (true)\n\nThe overview recovered $A = 145$ MWh/hr and $B = 98$ MWh/hr.\n\n$$\\frac{145 - 98}{98} = \\frac{47}{98} \\approx 0.4796$$\n\nabout $48.0\\%$, which is more than $45\\%$, so the statement is True.",
+      "**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.**  (true)\n\nThe overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.\n\n$$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553} \\approx 0.002815$$\n\nabout $0.28\\%$, which is less than $0.3\\%$, so the statement is True.",
+      "**C) If Plant A had operated for the combined time Plant B actually operated across Days 1–2, while Plant B operated for the combined time Plant A actually did, the grand total would exceed the actual combined Day 1 + Day 2 total.**  (false)\n\nAcross Days 1 and 2, Plant B operated $20 + 9 = 29$ hours and Plant A operated $14 + 22 = 36$ hours. Swapping those totals at the recovered rates gives\n\n$$29 \\times 145 + 36 \\times 98 = 4205 + 3528 = 7733$$\n\nThe actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8062$, the swapped grand total does not exceed the actual combined total, so the statement is False.",
+      "**D) The combined output rate of both plants together is more than 2.4 times Plant B's rate alone.**  (true)\n\nThe combined output rate is $145 + 98 = 243$ MWh/hr.\n\n$$\\frac{243}{98} \\approx 2.4796$$\n\nwhich is more than $2.4$ times Plant B's rate, so the statement is True.",
+      "**E) Across all three days combined, total energy production exceeds 11,600 MWh.**  (true)\n\nThe three recorded daily totals are $3990$, $4072$, and $3553$ MWh.\n\n$$3990 + 4072 + 3553 = 11615$$\n\nSince $11615 > 11600$, combined production exceeds $11600$ MWh, so the statement is True."
+    ],
+    "difficulty_level": "\\frac{5}{5}",
+    "sort_order": 60,
+    "solution_overview": "Two power plants each produce electricity at a fixed MWh-per-hour rate. Day 1: 14 hrs of A and 20 hrs of B, 3,990 MWh. Day 2: 22 hrs of A and 9 hrs of B, 4,072 MWh. Day 3's Plant A operating time was logged in minutes and converted to hours (1,020 min = 17 hrs), with 11 hrs of B and 3,553 MWh recorded.\n\n**Part 1: Building the system.**\n\nLet $x$ = Plant A's output rate (MWh/operating hr), $y$ = Plant B's output rate (MWh/operating hr).\n\n**1. Translate: Day 1.** That observation becomes:\n\n$$14x + 20y = 3990 \\tag{1}$$\n\n**2. Translate: Day 2.** That observation becomes:\n\n$$22x + 9y = 4072 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Divide Day 1 by 2:\n\n$$\n7x + 10y = 1995\n$$\n\n**2.** Multiply that simplified equation by 9:\n\n$$\n63x + 90y = 17955\n$$\n\n**3.** Multiply Day 2 by 10:\n\n$$\n10(22x + 9y) = 10(4072) \\Rightarrow 220x + 90y = 40720\n$$\n\n**4.** Subtract the scaled Day 1 from the scaled Day 2:\n\n$$\n(220x + 90y) - (63x + 90y) = 40720 - 17955\n$$\n\n$$\n157x = 22765 \\Rightarrow x = \\frac{22765}{157} = 145.0\n$$\n\n**5.** Substitute $x = 145$ into $7x + 10y = 1995$:\n\n$$\n7(145) + 10y = 1995 \\Rightarrow 1015 + 10y = 1995 \\Rightarrow 10y = 980 \\Rightarrow y = 98.0\n$$\n\n**6.** Audit Day 3 ($1020$ min $= 17$ hrs):\n\n$$\n17(145) + 11(98) = 2465 + 1078 = 3543\n$$\n\nversus 3,553 MWh recorded, a 10 MWh discrepancy.\n\n**Answer.** Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)."
+  }
+]

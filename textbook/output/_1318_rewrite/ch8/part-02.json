@@ -1,0 +1,602 @@
+[
+  {
+    "id": "math-8-21",
+    "case_id": "MATH 8.21",
+    "title": "Isoelastic Subscription Demand and Its Revenue",
+    "context": "Monthly subscriptions follow $q(p)=A p^{-2}$, where $p>0$ is the price in euros. At $5$ euros the service sells $400$ subscriptions. Revenue is $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "An extra euro of price cuts more subscriptions at five euros than at twenty.",
+      "The price needed for a given number of subscriptions is itself a power function of that number.",
+      "Doubling the price halves demand.",
+      "At a price of $16$ euros, monthly revenue is already under $700$.",
+      "At twenty euros the curve sells fewer than $30$ subscriptions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAn extra euro cuts demand at the rate of the derivative of the recovered curve:\n\n$$q'(p)=-20000 p^{-3}$$\n\nThe size of that cut is $|q'(p)|=20000 p^{-3}$. At the two named prices:\n\n$$|q'(5)|=\\frac{20000}{125}=160$$\n\n$$|q'(20)|=\\frac{20000}{8000}=2.5$$\n\nThe claim needs a larger cut at five euros than at twenty. We have $160>2.5$, so the statement is True.",
+      "**B.** → True\n\nA nonzero power inverts to another power. From the recovered demand,\n\n$$p^{2}=\\frac{10000}{q}$$\n\n$$p=100 q^{-\\frac{1}{2}}$$\n\nThat is a monomial in the subscription count, so the statement is True.",
+      "**C.** → False\n\nDoubling the price is the scale $k=2$ on exponent $-2$. The coefficient cancels:\n\n$$\\frac{q(2p)}{q(p)}=2^{-2}=\\frac{1}{4}$$\n\nAt the recorded pair,\n\n$$q(10)=\\frac{10000}{100}=100, \\qquad q(5)=400$$\n\nand $100$ is a quarter of $400$, not a half. The claim is that demand halves, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $R(p)=10000 p^{-1}$. At $16$ euros:\n\n$$R(16)=\\frac{10000}{16}=625$$\n\nThe claim compares this with $700$. We have $625<700$, so the statement is True.",
+      "**E.** → True\n\nThe overview recovered $q(p)=10000 p^{-2}$. At twenty euros:\n\n$$q(20)=\\frac{10000}{400}=25$$\n\nThe claim compares this with $30$. We have $25<30$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 21,
+    "solution_overview": "Monthly subscriptions follow $q(p)=A p^{-2}$ for $p>0$ euros, and $q(5)=400$. Revenue is $R=pq$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the priced observation fixes $A$:\n\n$$A\\cdot 5^{-2}=400 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$A=400\\cdot 25=10000$$\n\nThe recovered demand and revenue are\n\n$$q(p)=10000 p^{-2}, \\qquad R(p)=10000 p^{-1}$$"
+  },
+  {
+    "id": "math-8-22",
+    "case_id": "MATH 8.22",
+    "title": "Audit Fees With a Fixed Charge on Top of a Power Term",
+    "context": "An audit firm bills $C(n)=F+a n^{\\frac{1}{2}}$ for a client with $n>0$ accounts. $100$ accounts were billed at $500$, and $400$ accounts at $800$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because of the fixed engagement charge, the bill is not a power function of the number of accounts.",
+      "Cost per account falls as the book of accounts grows.",
+      "An extra account adds more to the bill at one hundred accounts than at four hundred.",
+      "An engagement covering $900$ accounts is billed at more than $1000$.",
+      "Two hundred accounts cost more than $750$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA power of $n$ cannot carry a leftover constant. The overview recovered $F=200\\neq 0$, so\n\n$$C(n)=200+30\\sqrt{n}$$\n\nis a translate of a power, not a power. The claim is that the bill is not a power of the account count, so the statement is True.",
+      "**B.** → True\n\nCost per account is the recovered bill divided by $n$:\n\n$$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$\n\nBoth leftover exponents are negative, so the average falls as the book grows. At the two invoices:\n\n$$\\frac{C(100)}{100}=5, \\qquad \\frac{C(400)}{400}=2$$\n\nand $2<5$, so the statement is True.",
+      "**C.** → True\n\nAn extra account adds $C'(n)$. Differentiating the recovered bill:\n\n$$C'(n)=15 n^{-\\frac{1}{2}}$$\n\nAt the two named books:\n\n$$C'(100)=\\frac{15}{10}=1.5$$\n\n$$C'(400)=\\frac{15}{20}=0.75$$\n\nThe claim needs a larger add-on at one hundred accounts than at four hundred. We have $1.5>0.75$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $C(n)=200+30\\sqrt{n}$. At $900$ accounts:\n\n$$C(900)=200+30\\cdot 30=1100$$\n\nThe claim compares this with $1000$. We have $1100>1000$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $C(n)=200+30\\sqrt{n}$. At $200$ accounts:\n\n$$C(200)=200+30\\sqrt{200}=200+300\\sqrt{2}$$\n\nSince $\\sqrt{2}<1.5$, this sits below $650$. Directly, $300\\cdot 1.414\\approx 424$ plus the $200$ setup is about $624$, which is not more than $750$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 22,
+    "solution_overview": "The bill is $C(n)=F+a n^{\\frac{1}{2}}$ for $n>0$ accounts, with $C(100)=500$ and $C(400)=800$.\n\n**Part 1: Translate.**\n\nTwo unknowns need both invoices:\n\n$$F+10a=500 \\tag{1}$$\n\n$$F+20a=800 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtracting (1) from (2):\n\n$$10a=300, \\qquad a=30$$\n\nThen (1) gives $F=200$. The recovered bill is\n\n$$C(n)=200+30\\sqrt{n}$$"
+  },
+  {
+    "id": "math-8-23",
+    "case_id": "MATH 8.23",
+    "title": "Fleet Growth Combined With Falling Emission Intensity",
+    "context": "An electric-vehicle programme is tracked by two linked power laws. The fleet after $t>0$ years is $a(t)=4t^{\\frac{1}{2}}$ thousand vehicles, and average emission intensity follows $e(a)=k a^{-\\frac{1}{2}}$ kilograms per thousand vehicles. When the fleet has $16$ thousand vehicles, intensity is $30$ kilograms. Total fleet emissions are $E=a\\,e(a)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Total fleet emissions are a power of elapsed time.",
+      "Doubling elapsed time doubles total fleet emissions.",
+      "Emission intensity rises as the fleet grows.",
+      "After $16$ years, total fleet emissions already exceed $400$.",
+      "After $1$ year, total fleet emissions are still under $250$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $E(t)=240 t^{\\frac{1}{4}}$. That is a monomial in elapsed time, so total fleet emissions are a power of $t$, so the statement is True.",
+      "**B.** → False\n\nDoubling elapsed time is the scale $k=2$ on the recovered $E(t)=240 t^{\\frac{1}{4}}$:\n\n$$\\frac{E(2t)}{E(t)}=2^{\\frac{1}{4}}$$\n\nNow $2^{\\frac{1}{4}}<2$, so doubling time does not double emissions, so the statement is False.",
+      "**C.** → False\n\nThe overview recovered $e(a)=120 a^{-\\frac{1}{2}}$. The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:\n\n$$e(16)=30, \\qquad e(64)=\\frac{120}{8}=15$$\n\nand $15<30$, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $E(t)=240 t^{\\frac{1}{4}}$. After $16$ years:\n\n$$E(16)=240\\cdot 16^{\\frac{1}{4}}=240\\cdot 2=480$$\n\nThe claim compares this with $400$. We have $480>400$, so the statement is True.",
+      "**E.** → True\n\nThe overview recovered $E(t)=240 t^{\\frac{1}{4}}$. After $1$ year:\n\n$$E(1)=240$$\n\nThe claim compares this with $250$. We have $240<250$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 23,
+    "solution_overview": "The fleet is $a(t)=4t^{\\frac{1}{2}}$ thousand vehicles, and intensity is $e(a)=k a^{-\\frac{1}{2}}$ with $e(16)=30$. Total emissions are $E=a\\,e(a)$.\n\n**Part 1: Translate.**\n\nThe intensity reading at $a=16$ fixes $k$:\n\n$$k\\cdot 16^{-\\frac{1}{2}}=30 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$k=30\\cdot 4=120$$\n\nThen $E=k a^{\\frac{1}{2}}$ and $a^{\\frac{1}{2}}=2 t^{\\frac{1}{4}}$, so the recovered intensity and totals are\n\n$$e(a)=120 a^{-\\frac{1}{2}}, \\qquad E(t)=240 t^{\\frac{1}{4}}$$"
+  },
+  {
+    "id": "math-8-24",
+    "case_id": "MATH 8.24",
+    "title": "Pipeline Capacity, Inversion, and a Change of Units",
+    "context": "Flow capacity through a pipe follows $Q(d)=A d^{\\frac{5}{2}}$ litres per second, where $d>0$ is the internal diameter in centimetres. A bench test on a $4$ cm pipe measured $64$ litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because the exponent exceeds one, capacity grows faster than diameter.",
+      "To double the bench capacity of $64$ litres per second, the diameter must more than double.",
+      "The diameter needed for a given capacity is itself a power function of that capacity.",
+      "A capacity of $250$ litres per second requires a diameter above $10$ cm.",
+      "Doubling the diameter multiplies capacity by more than $5$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $Q(d)=2 d^{\\frac{5}{2}}$. The exponent $\\frac{5}{2}>1$, so a proportional increase in diameter multiplies capacity by more than that same factor:\n\n$$\\frac{Q(kd)}{Q(d)}=k^{\\frac{5}{2}}$$\n\nFor every $k>1$ this factor exceeds $k$. Capacity therefore grows faster than diameter, so the statement is True.",
+      "**B.** → False\n\nTo double the bench capacity, the diameter factor $k$ must satisfy\n\n$$k^{\\frac{5}{2}}=2$$\n\n$$k=2^{\\frac{2}{5}}$$\n\nNow $2^{\\frac{2}{5}}<2$, so the diameter need not more than double, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $Q(d)=2 d^{\\frac{5}{2}}$. Solving for the positive diameter,\n\n$$d=\\left(\\frac{Q}{2}\\right)^{\\frac{2}{5}}$$\n\nThat is a monomial in capacity, so the statement is True.",
+      "**D.** → False\n\nThe diameter for $Q=250$ is\n\n$$d=125^{\\frac{2}{5}}=5^{\\frac{6}{5}}=5\\cdot 5^{\\frac{1}{5}}$$\n\nSince $5^{\\frac{1}{5}}\\approx 1.38$, we have $d\\approx 6.90$, which is not above $10$ cm, so the statement is False.",
+      "**E.** → True\n\nDoubling the diameter is the scale $k=2$ on exponent $\\frac{5}{2}$:\n\n$$\\frac{Q(2d)}{Q(d)}=2^{\\frac{5}{2}}=4\\sqrt{2}$$\n\nNow $4\\sqrt{2}\\approx 5.66>5$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 24,
+    "solution_overview": "Flow capacity is $Q(d)=A d^{\\frac{5}{2}}$ litres per second for $d>0$ centimetres, with $Q(4)=64$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the bench test fixes $A$:\n\n$$A\\cdot 4^{\\frac{5}{2}}=64 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$4^{\\frac{5}{2}}=32, \\qquad A=\\frac{64}{32}=2$$\n\nThe recovered capacity is\n\n$$Q(d)=2 d^{\\frac{5}{2}}$$"
+  },
+  {
+    "id": "math-8-25",
+    "case_id": "MATH 8.25",
+    "title": "From Radius Growth to the Area a Service Covers",
+    "context": "A delivery hub's service radius follows $r(t)=A t^{\\frac{1}{2}}$ kilometres after $t>0$ hours. After $4$ hours the radius is $6$ kilometres. The area covered is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The area covered is proportional to elapsed time.",
+      "Doubling elapsed time doubles the area covered.",
+      "The time needed for a given area is itself a power function of that area.",
+      "After $4$ hours the covered area is already more than $30\\pi$ square kilometres.",
+      "After $9$ hours the covered area has already reached $100\\pi$ square kilometres."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $S(t)=9\\pi t$. That is a constant times elapsed time, so the covered area is proportional to $t$, so the statement is True.",
+      "**B.** → True\n\nDoubling elapsed time on $S(t)=9\\pi t$ is the scale $k=2$ on exponent $1$:\n\n$$\\frac{S(2t)}{S(t)}=2$$\n\nDoubling time therefore doubles the area, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $S(t)=9\\pi t$. Solving for time,\n\n$$t=\\frac{S}{9\\pi}$$\n\nThat is a monomial in the area, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $S(t)=9\\pi t$. After $4$ hours:\n\n$$S(4)=36\\pi$$\n\nThe claim compares this with $30\\pi$. We have $36\\pi>30\\pi$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $S(t)=9\\pi t$. After $9$ hours:\n\n$$S(9)=81\\pi$$\n\nThe claim is $100\\pi$. We have $81\\pi\\neq 100\\pi$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 25,
+    "solution_overview": "The service radius is $r(t)=A t^{\\frac{1}{2}}$ kilometres after $t>0$ hours, with $r(4)=6$. The covered area is $S=\\pi r^{2}$.\n\n**Part 1: Translate.**\n\nThe four-hour radius fixes $A$:\n\n$$A\\cdot 4^{\\frac{1}{2}}=6 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$A=3$$\n\nThen $S=\\pi\\bigl(3 t^{\\frac{1}{2}}\\bigr)^{2}$. The recovered radius and area are\n\n$$r(t)=3 t^{\\frac{1}{2}}, \\qquad S(t)=9\\pi t$$"
+  },
+  {
+    "id": "math-8-26",
+    "case_id": "MATH 8.26",
+    "title": "Two Support Contracts, One Crossing and One Cap",
+    "context": "A helpdesk compares two support contracts for $u>0$ tickets a month. Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ and never charges more than $400$. A filed invoice shows $36$ tickets billed at $240$. Plan B bills a flat $5$ per ticket with no cap. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $64$ tickets both plans still sit under the $400$ cap.",
+      "Below the crossing, Plan B is the cheaper contract.",
+      "Plan A's cap eventually binds as ticket volume grows.",
+      "Plan A's cost per ticket falls as ticket volume rises.",
+      "At $144$ tickets Plan A bills more than $450$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAt $64$ tickets the uncapped Plan A reading is\n\n$$40\\sqrt{64}=40\\cdot 8=320$$\n\nwhich sits under the cap, so Plan A bills $320$. Plan B bills\n\n$$5\\cdot 64=320$$\n\nBoth sit under $400$, so the statement is True.",
+      "**B.** → True\n\nThe plans cross where the uncapped square-root bill equals the linear bill:\n\n$$40\\sqrt{u}=5u$$\n\n$$8=\\sqrt{u}, \\qquad u=64$$\n\nBelow that crossing, at the recorded $36$ tickets:\n\n$$C_A(36)=240, \\qquad C_B(36)=180$$\n\nand $180<240$, so Plan B is cheaper below the crossing, so the statement is True.",
+      "**C.** → True\n\nPlan A's cap binds once $40\\sqrt{u}=400$:\n\n$$\\sqrt{u}=10, \\qquad u=100$$\n\nFor every larger ticket volume the billed amount stays $400$ rather than $40\\sqrt{u}$, so the cap eventually binds, so the statement is True.",
+      "**D.** → True\n\nOn the uncapped piece, cost per ticket is\n\n$$\\frac{C_A(u)}{u}=40 u^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so the average falls as volume rises. Past the cap it is $\\frac{400}{u}$, which also falls. At the invoice and at $64$ tickets:\n\n$$\\frac{240}{36}=\\frac{20}{3}, \\qquad \\frac{320}{64}=5$$\n\nand $5<\\frac{20}{3}$, so the statement is True.",
+      "**E.** → False\n\nAt $144$ tickets the uncapped reading would be\n\n$$40\\sqrt{144}=40\\cdot 12=480$$\n\nThe cap clips this to $400$, which is not more than $450$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 26,
+    "solution_overview": "Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ with a cap of $400$, and $C_A(36)=240$. Plan B bills $5$ per ticket with no cap.\n\n**Part 1: Translate.**\n\nThe invoice fixes $a$:\n\n$$a\\cdot 36^{\\frac{1}{2}}=240 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$6a=240, \\qquad a=40$$\n\nThe recovered plans are\n\n$$C_A(u)=\\min\\bigl(40\\sqrt{u},\\,400\\bigr), \\qquad C_B(u)=5u$$"
+  },
+  {
+    "id": "math-8-27",
+    "case_id": "MATH 8.27",
+    "title": "An Eighty Percent Learning Curve Meeting a Materials Floor",
+    "context": "Unit cost on a new assembly line follows $c(N)=c_1 N^{-b}$ for cumulative output $N>0$. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "An extra unit of output cuts modelled unit cost by more after the first unit than after eight units.",
+      "Quadrupling cumulative output halves the unit cost.",
+      "Unit cost falls more slowly than a simple reciprocal of cumulative output.",
+      "After three successive doublings the modelled unit cost is already under $520$.",
+      "After four successive doublings the modelled unit cost is already under $400$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAn extra unit cuts modelled cost at the rate $|c'(N)|$. Differentiating,\n\n$$c'(N)=-b\\cdot 1000\\cdot N^{-b-1}$$\n\nThe leftover exponent $-b-1$ is negative, so $|c'|$ falls as $N$ rises. Comparing the two named outputs:\n\n$$|c'(8)|=\\frac{|c'(1)|}{8^{b+1}}$$\n\nand $8^{b+1}>1$, so the cut is larger after the first unit than after eight units, so the statement is True.",
+      "**B.** → False\n\nQuadrupling cumulative output is two doublings:\n\n$$\\frac{c(4N)}{c(N)}=(0.8)^{2}=0.64$$\n\nThe claim is that unit cost halves. A factor of $0.64$ is not $\\frac{1}{2}$, so the statement is False.",
+      "**C.** → True\n\nA simple reciprocal would double-and-halve: $2^{-1}=\\frac{1}{2}$. The recovered doubling factor is $0.8$:\n\n$$0.8>\\frac{1}{2}$$\n\nso each doubling cuts cost by less than a reciprocal would, and unit cost falls more slowly than $\\frac{1}{N}$, so the statement is True.",
+      "**D.** → True\n\nThree successive doublings reach $N=8$:\n\n$$c(8)=1000\\cdot(0.8)^{3}=512$$\n\nThe claim compares this with $520$. We have $512<520$, so the statement is True.",
+      "**E.** → False\n\nFour successive doublings reach $N=16$:\n\n$$c(16)=1000\\cdot(0.8)^{4}=409.6$$\n\nThe claim is that this already sits under the materials floor of $400$. We have $409.6>400$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27,
+    "solution_overview": "Unit cost is $c(N)=c_1 N^{-b}$ for $N>0$, every doubling multiplies unit cost by $0.8$, and $c(1)=1000$. Materials floor at $400$.\n\n**Part 1: Translate.**\n\nThe doubling rule isolates $b$, and the first unit is $c_1$:\n\n$$2^{-b}=0.8 \\tag{1}$$\n\n$$c_1=1000 \\tag{2}$$\n\n**Part 2: Solve.**\n\nThe recovered curve is\n\n$$c(N)=1000 N^{-b}, \\qquad 2^{-b}=0.8$$\n\nso after $k$ doublings, $c(2^{k})=1000\\cdot(0.8)^{k}$."
+  },
+  {
+    "id": "math-8-28",
+    "case_id": "MATH 8.28",
+    "title": "Advertising Revenue Against a Proportional Platform Fee",
+    "context": "A merchant's sales revenue from an advertising spend $x>0$ follows $R(x)=A x^{\\frac{1}{2}}$. At a spend of $100$ the campaign brings in $900$. The platform charges a fee $F(x)=6x$ on the same spend. Net gain is $R(x)-F(x)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the spend doubles revenue.",
+      "Revenue per euro of spend falls as the campaign grows.",
+      "Once net gain turns negative, it stays negative at every larger spend.",
+      "At a spend of $100$ the net gain is already above $250$.",
+      "At a spend of $256$ the net gain is still positive."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nDoubling the spend is the scale $k=2$ on exponent $\\frac{1}{2}$:\n\n$$\\frac{R(2x)}{R(x)}=2^{\\frac{1}{2}}=\\sqrt{2}$$\n\nNow $\\sqrt{2}<2$, so doubling spend does not double revenue, so the statement is False.",
+      "**B.** → True\n\nRevenue per euro of spend is\n\n$$\\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so the average falls as the campaign grows. At the recorded spend and at $400$:\n\n$$\\frac{R(100)}{100}=9, \\qquad \\frac{R(400)}{400}=\\frac{90\\cdot 20}{400}=4.5$$\n\nand $4.5<9$, so the statement is True.",
+      "**C.** → True\n\nFactor the recovered net gain:\n\n$$N(x)=\\sqrt{x}\\,(90-6\\sqrt{x})$$\n\nThis is negative precisely when $\\sqrt{x}>15$, that is $x>225$. For every larger spend the factor $(90-6\\sqrt{x})$ stays negative and grows in size, so once net gain turns negative it stays negative, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $N(x)=90\\sqrt{x}-6x$. At a spend of $100$:\n\n$$N(100)=90\\cdot 10-600=300$$\n\nThe claim compares this with $250$. We have $300>250$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $N(x)=90\\sqrt{x}-6x$. At a spend of $256$:\n\n$$N(256)=90\\cdot 16-6\\cdot 256=1440-1536=-96$$\n\nThe claim is that net gain is still positive. We have $-96<0$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28,
+    "solution_overview": "Revenue is $R(x)=A x^{\\frac{1}{2}}$ from spend $x>0$, with $R(100)=900$. The platform fee is $F(x)=6x$, and net gain is $R-F$.\n\n**Part 1: Translate.**\n\nThe recorded campaign fixes $A$:\n\n$$A\\cdot 100^{\\frac{1}{2}}=900 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$10A=900, \\qquad A=90$$\n\nThe recovered revenue and net gain are\n\n$$R(x)=90\\sqrt{x}, \\qquad N(x)=90\\sqrt{x}-6x$$"
+  },
+  {
+    "id": "math-8-29",
+    "case_id": "MATH 8.29",
+    "title": "Calibrating a Two-Stage Production Chain",
+    "context": "A plant runs two stages. Labour $L>0$ hours yields material $m(L)=A L^{\\frac{1}{2}}$ tonnes, and material is converted by $g(m)=B m^{\\frac{3}{2}}$ finished units. $100$ labour hours yielded $40$ tonnes of material, and a run on $9$ tonnes of material produced $54$ finished units. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Material grows more slowly than labour hours.",
+      "Doubling labour hours doubles finished output.",
+      "Finished output per labour hour falls as labour rises.",
+      "The labour needed for a given finished count is itself a power of that count.",
+      "After $81$ labour hours, finished output is already above $400$ units."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $m(L)=4 L^{\\frac{1}{2}}$. The exponent $\\frac{1}{2}<1$, so material grows more slowly than labour hours. Doubling labour multiplies material by\n\n$$2^{\\frac{1}{2}}<2$$\n\nso the statement is True.",
+      "**B.** → False\n\nDoubling labour on the recovered finished output $g=16 L^{\\frac{3}{4}}$ multiplies $g$ by\n\n$$2^{\\frac{3}{4}}$$\n\nNow $2^{\\frac{3}{4}}<2$, so doubling labour does not double finished output, so the statement is False.",
+      "**C.** → True\n\nFinished output per labour hour is\n\n$$\\frac{g}{L}=16 L^{-\\frac{1}{4}}$$\n\nThe leftover exponent is negative, so the average falls as labour rises. At $L=16$ and $L=81$:\n\n$$16\\cdot 16^{-\\frac{1}{4}}=8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}=\\frac{16}{3}$$\n\nand $\\frac{16}{3}<8$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $g=16 L^{\\frac{3}{4}}$. Solving for labour,\n\n$$L=\\left(\\frac{g}{16}\\right)^{\\frac{4}{3}}$$\n\nThat is a monomial in the finished count, so the statement is True.",
+      "**E.** → True\n\nThe overview recovered $g=16 L^{\\frac{3}{4}}$. After $81$ labour hours:\n\n$$g(81)=16\\cdot 81^{\\frac{3}{4}}=16\\cdot 27=432$$\n\nThe claim compares this with $400$. We have $432>400$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29,
+    "solution_overview": "Material is $m(L)=A L^{\\frac{1}{2}}$ with $m(100)=40$. Finished output is $g(m)=B m^{\\frac{3}{2}}$ with $g(9)=54$.\n\n**Part 1: Translate.**\n\nEach stage has a known exponent and one level:\n\n$$A\\cdot 100^{\\frac{1}{2}}=40 \\tag{1}$$\n\n$$B\\cdot 9^{\\frac{3}{2}}=54 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$10A=40, \\qquad A=4$$\n\n$$27B=54, \\qquad B=2$$\n\nComposing $g(m(L))=2\\bigl(4 L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}$ gives the recovered chain\n\n$$m(L)=4 L^{\\frac{1}{2}}, \\qquad g=16 L^{\\frac{3}{4}}$$"
+  },
+  {
+    "id": "math-8-30",
+    "case_id": "MATH 8.30",
+    "title": "Calibrated Demand, Derived Revenue, and a Fixed Charge",
+    "context": "A niche publisher faces demand $q(p)=A p^{-\\frac{3}{2}}$ copies a month at a price $p>0$. A price of $4$ euros sells $250$ copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The price needed for a given revenue is itself a power of that revenue.",
+      "Doubling the price halves revenue.",
+      "Revenue falls as the price rises.",
+      "At a price of $25$, monthly revenue is already under $450$.",
+      "The fixed charge is covered only at prices below $16$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $R(p)=2000 p^{-\\frac{1}{2}}$. Solving for the positive price,\n\n$$p=\\left(\\frac{2000}{R}\\right)^{2}$$\n\nThat is a monomial in revenue, so the statement is True.",
+      "**B.** → False\n\nDoubling the price on $R(p)=2000 p^{-\\frac{1}{2}}$ multiplies revenue by\n\n$$2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}$$\n\nNow $\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$, so doubling price does not halve revenue, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $R(p)=2000 p^{-\\frac{1}{2}}$. The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:\n\n$$R(4)=1000, \\qquad R(16)=500$$\n\nand $500<1000$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $R(p)=2000 p^{-\\frac{1}{2}}$. At a price of $25$:\n\n$$R(25)=\\frac{2000}{5}=400$$\n\nThe claim compares this with $450$. We have $400<450$, so the statement is True.",
+      "**E.** → False\n\nThe charge is covered when $R(p)\\ge 400$:\n\n$$2000 p^{-\\frac{1}{2}}\\ge 400$$\n\n$$\\sqrt{p}\\le 5, \\qquad p\\le 25$$\n\nThe claim is that the charge is covered only at prices below $16$. The recovered cutoff is $p=25$, which is not $16$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "Demand is $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$. Revenue is $R=pq$, and a fixed monthly charge of $400$ must be covered.\n\n**Part 1: Translate.**\n\nThe priced observation fixes $A$:\n\n$$A\\cdot 4^{-\\frac{3}{2}}=250 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$4^{\\frac{3}{2}}=8, \\qquad A=250\\cdot 8=2000$$\n\nThe recovered demand and revenue are\n\n$$q(p)=2000 p^{-\\frac{3}{2}}, \\qquad R(p)=2000 p^{-\\frac{1}{2}}$$"
+  },
+  {
+    "id": "math-8-31",
+    "case_id": "MATH 8.31",
+    "title": "Packing Output Recovered From a Shift Extension",
+    "context": "A packing station's output follows $N(h)=A h^{\\frac{2}{3}}$ items after $h>0$ hours of shift, and the coefficient is never logged. Extending a shift from $8$ to $27$ hours added exactly $90$ items. A rush order of $250$ items has to be packed in a single shift. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "An extra hour of packing adds fewer items after twenty-seven hours than after eight.",
+      "Doubling any shift doubles the number of items packed.",
+      "Items packed per hour of shift falls as the shift lengthens.",
+      "A $27$-hour shift packs more than $150$ items.",
+      "The $250$-item order can be packed in under $40$ hours."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAn extra hour adds $N'(h)$. Differentiating the recovered output:\n\n$$N'(h)=12 h^{-\\frac{1}{3}}$$\n\nAt the two named shifts:\n\n$$N'(8)=\\frac{12}{2}=6$$\n\n$$N'(27)=\\frac{12}{3}=4$$\n\nThe claim needs a smaller add-on after twenty-seven hours than after eight. We have $4<6$, so the statement is True.",
+      "**B.** → False\n\nDoubling any shift is the scale $k=2$ on exponent $\\frac{2}{3}$:\n\n$$\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}$$\n\nNow $2^{\\frac{2}{3}}<2$, so doubling a shift does not double the item count, so the statement is False.",
+      "**C.** → True\n\nItems packed per hour is\n\n$$\\frac{N(h)}{h}=18 h^{-\\frac{1}{3}}$$\n\nThe leftover exponent is negative, so the average falls as the shift lengthens. At $8$ and $27$ hours:\n\n$$18\\cdot 8^{-\\frac{1}{3}}=9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}=6$$\n\nand $6<9$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $N(h)=18 h^{\\frac{2}{3}}$. A $27$-hour shift packs\n\n$$N(27)=18\\cdot 9=162$$\n\nThe claim compares this with $150$. We have $162>150$, so the statement is True.",
+      "**E.** → False\n\nThe $250$-item order needs\n\n$$18 h^{\\frac{2}{3}}=250$$\n\n$$h^{\\frac{2}{3}}=\\frac{125}{9}$$\n\n$$h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}=\\frac{625\\sqrt{5}}{27}$$\n\nNow $\\sqrt{5}\\approx 2.236$, so $h\\approx 51.8$, which is not under $40$ hours, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 31,
+    "solution_overview": "Packing output is $N(h)=A h^{\\frac{2}{3}}$ items after $h>0$ hours. Extending a shift from $8$ to $27$ hours added $90$ items.\n\n**Part 1: Translate.**\n\nBoth shift lengths are perfect cubes, so the recorded extension is\n\n$$A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$27^{\\frac{2}{3}}=9, \\qquad 8^{\\frac{2}{3}}=4$$\n\n$$5A=90, \\qquad A=18$$\n\nThe recovered output is\n\n$$N(h)=18 h^{\\frac{2}{3}}$$"
+  },
+  {
+    "id": "math-8-32",
+    "case_id": "MATH 8.32",
+    "title": "Drag and Absorbed Power on a Wind-Tunnel Rig",
+    "context": "Aerodynamic drag on a test rig follows $F(v)=A v^{r}$ newtons at airspeed $v>0$ metres per second, and the manufacturer supplies neither constant. Two wind-tunnel runs are on file: $16$ N at $4$ m/s and $128$ N at $16$ m/s. The rig also reports absorbed power $P=F\\cdot v$ watts, and the mounting is rated to $250$ N. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The absorbed power is a power function of airspeed.",
+      "Doubling the airspeed more than triples the drag.",
+      "The airspeed that produces a given drag is itself a power function of that drag.",
+      "The mounting's $250$ N rating is first reached at a speed above $30$ m/s.",
+      "At $16$ m/s the rig absorbs more than $2$ kW."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $P(v)=2 v^{\\frac{5}{2}}$. That is a monomial in airspeed, so absorbed power is a power function of airspeed, so the statement is True.",
+      "**B.** → False\n\nDoubling the airspeed on $F(v)=2 v^{\\frac{3}{2}}$ multiplies drag by\n\n$$2^{\\frac{3}{2}}=2\\sqrt{2}$$\n\nNow $2\\sqrt{2}\\approx 2.83$, which is not more than $3$, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $F(v)=2 v^{\\frac{3}{2}}$. Solving for the positive airspeed,\n\n$$v=\\left(\\frac{F}{2}\\right)^{\\frac{2}{3}}$$\n\nThat is a monomial in drag, so the statement is True.",
+      "**D.** → False\n\nThe mounting rating $F=250$ needs\n\n$$2 v^{\\frac{3}{2}}=250$$\n\n$$v^{\\frac{3}{2}}=125, \\qquad v=125^{\\frac{2}{3}}=25$$\n\nThe claim is that the rating is first reached above $30$ m/s. We have $v=25$, so the statement is False.",
+      "**E.** → True\n\nThe overview recovered $P(v)=2 v^{\\frac{5}{2}}$. At $16$ m/s:\n\n$$P(16)=2\\cdot 16^{\\frac{5}{2}}=2\\cdot 1024=2048$$\n\nTwo kilowatts is $2000$ watts. We have $2048>2000$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 32,
+    "solution_overview": "Drag is $F(v)=A v^{r}$ newtons at airspeed $v>0$, with $F(4)=16$ and $F(16)=128$. Absorbed power is $P=F\\cdot v$.\n\n**Part 1: Translate.**\n\nThe run ratio cancels $A$:\n\n$$\\frac{F(16)}{F(4)}=4^{r}=8 \\tag{1}$$\n\nEither run then fixes $A$:\n\n$$A\\cdot 4^{r}=16 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$r=\\frac{3}{2}, \\qquad A\\cdot 8=16, \\qquad A=2$$\n\nThe recovered drag and power are\n\n$$F(v)=2 v^{\\frac{3}{2}}, \\qquad P(v)=2 v^{\\frac{5}{2}}$$"
+  },
+  {
+    "id": "math-8-33",
+    "case_id": "MATH 8.33",
+    "title": "Inelastic Demand and Where Revenue Goes",
+    "context": "A regional utility faces demand $q(p)=A p^{-\\frac{1}{2}}$ units a month at price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue rises as the price rises.",
+      "Because quantity falls when price rises, revenue must fall as well.",
+      "The price needed for a given monthly quantity is itself a power function of that quantity.",
+      "At a price of $25$ the utility sells fewer than $250$ units.",
+      "Cutting monthly quantity to $200$ units requires a price above $40$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $R(p)=1200 p^{\\frac{1}{2}}$. The leftover exponent is positive, so revenue rises as the price rises. At $16$ and $25$:\n\n$$R(16)=4800, \\qquad R(25)=6000$$\n\nand $6000>4800$, so the statement is True.",
+      "**B.** → False\n\nQuantity falling does not force revenue to fall. Along the recovered curve,\n\n$$R(p)=1200 p^{\\frac{1}{2}}$$\n\nstill rises in $p$ because the exponent $-\\frac{1}{2}+1$ is positive. From $p=16$ to $p=25$, quantity falls $300\\to 240$ while revenue rises $4800\\to 6000$, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $q(p)=1200 p^{-\\frac{1}{2}}$. Solving for the positive price,\n\n$$p=\\left(\\frac{1200}{q}\\right)^{2}$$\n\nThat is a monomial in monthly quantity, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $q(p)=1200 p^{-\\frac{1}{2}}$. At a price of $25$:\n\n$$q(25)=\\frac{1200}{5}=240$$\n\nThe claim compares this with $250$. We have $240<250$, so the statement is True.",
+      "**E.** → False\n\nCutting quantity to $200$ needs\n\n$$1200 p^{-\\frac{1}{2}}=200$$\n\n$$\\sqrt{p}=6, \\qquad p=36$$\n\nThe claim is a price above $40$. We have $p=36$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 33,
+    "solution_overview": "Demand is $q(p)=A p^{-\\frac{1}{2}}$ with $q(16)=300$. Revenue is $R=pq$.\n\n**Part 1: Translate.**\n\nThe observed pair fixes $A$:\n\n$$A\\cdot 16^{-\\frac{1}{2}}=300 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$A\\cdot\\frac{1}{4}=300, \\qquad A=1200$$\n\nThe recovered demand and revenue are\n\n$$q(p)=1200 p^{-\\frac{1}{2}}, \\qquad R(p)=1200 p^{\\frac{1}{2}}$$"
+  },
+  {
+    "id": "math-8-34",
+    "case_id": "MATH 8.34",
+    "title": "Kiln Output Under a Licensed Ceiling",
+    "context": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed of $x>0$ cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence forbids shipping more than $1024$ tonnes a day, so any extra firing is wasted. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "To double the test-firing output, the fuel feed must more than double.",
+      "Output per cubic metre of fuel rises as the feed increases.",
+      "Once the licence binds, daily shipped output is no longer a power function of the feed.",
+      "A feed of $8$ produces more than $50$ tonnes.",
+      "The licensed ceiling binds before a feed of $50$."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nTo double the test-firing output, the feed factor $k$ must satisfy\n\n$$k^{\\frac{4}{3}}=2$$\n\n$$k=2^{\\frac{3}{4}}$$\n\nNow $2^{\\frac{3}{4}}<2$, so the feed need not more than double, so the statement is False.",
+      "**B.** → True\n\nOutput per cubic metre of fuel is\n\n$$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$\n\nThe leftover exponent is positive, so the average rises as the feed increases. At $8$ and $27$:\n\n$$4\\cdot 8^{\\frac{1}{3}}=8, \\qquad 4\\cdot 27^{\\frac{1}{3}}=12$$\n\nand $12>8$, so the statement is True.",
+      "**C.** → True\n\nThe licence binds once $4 x^{\\frac{4}{3}}=1024$:\n\n$$x^{\\frac{4}{3}}=256, \\qquad x=64$$\n\nPast that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $y(x)=4 x^{\\frac{4}{3}}$. A feed of $8$ produces\n\n$$y(8)=4\\cdot 8^{\\frac{4}{3}}=4\\cdot 16=64$$\n\nThe claim compares this with $50$. We have $64>50$, so the statement is True.",
+      "**E.** → False\n\nThe licence binds when\n\n$$4 x^{\\frac{4}{3}}=1024, \\qquad x=64$$\n\nThe claim is that it binds before a feed of $50$. We have $64>50$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 34,
+    "solution_overview": "Kiln output is $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed $x>0$, with $y(27)=324$. The licence forbids shipping more than $1024$ tonnes a day.\n\n**Part 1: Translate.**\n\nThe test firing is a perfect cube:\n\n$$A\\cdot 27^{\\frac{4}{3}}=324 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$27^{\\frac{4}{3}}=81, \\qquad A=4$$\n\nThe recovered firing, before the licence clips it, is\n\n$$y(x)=4 x^{\\frac{4}{3}}$$\n\nShipped output is $\\min(y(x),1024)$."
+  },
+  {
+    "id": "math-8-35",
+    "case_id": "MATH 8.35",
+    "title": "A Pair of Power Functions That Undo Each Other",
+    "context": "A calibration stage converts a raw reading $x>0$ into an index by $f(x)=A x^{\\frac{2}{3}}$, and a raw reading of $8$ produced index $36$. A reporting stage converts an index $y>0$ back by $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$. The lab wants to know what happens when the two stages are applied one after the other. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Applying the reporting stage after the calibration stage returns the original reading.",
+      "The composition of the two stages grows more slowly than the raw reading.",
+      "Applying the stages in the other order fails to recover the original index.",
+      "A raw reading of $64$ is sent out with an index above $140$.",
+      "A raw reading of $125$ is sent out with an index under $200$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $g(f(x))=x$. Applying reporting after calibration returns the original reading, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered $g(f(x))=x$, the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly, so the statement is False.",
+      "**C.** → False\n\nThe overview recovered $f(g(y))=y$. Applying the stages in the other order recovers the original index, so the claim that it fails is false, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $f(x)=9 x^{\\frac{2}{3}}$. A raw reading of $64$ is sent out with\n\n$$f(64)=9\\cdot 64^{\\frac{2}{3}}=9\\cdot 16=144$$\n\nThe claim compares this with $140$. We have $144>140$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $f(x)=9 x^{\\frac{2}{3}}$. A raw reading of $125$ is sent out with\n\n$$f(125)=9\\cdot 125^{\\frac{2}{3}}=9\\cdot 25=225$$\n\nThe claim is an index under $200$. We have $225>200$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 35,
+    "solution_overview": "Calibration is $f(x)=A x^{\\frac{2}{3}}$ with $f(8)=36$. Reporting is $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$.\n\n**Part 1: Translate.**\n\nThe recorded pair fixes $A$:\n\n$$A\\cdot 8^{\\frac{2}{3}}=36 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$8^{\\frac{2}{3}}=4, \\qquad A=9$$\n\nThe recovered stages are\n\n$$f(x)=9 x^{\\frac{2}{3}}, \\qquad g(y)=\\frac{1}{27} y^{\\frac{3}{2}}$$\n\nComposing in either order:\n\n$$g(f(x))=\\frac{1}{27}\\bigl(9 x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}=x$$\n\n$$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}=y$$"
+  },
+  {
+    "id": "math-8-36",
+    "case_id": "MATH 8.36",
+    "title": "Two Ranking Algorithms That Swap Places",
+    "context": "Two ranking algorithms are scored against a query load $x>0$. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$, and a benchmark at load $4$ scored $16$. Algorithm T is proportional to $x^{\\frac{3}{2}}$, and the same benchmark scored $8$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two algorithms score equally at two different positive loads.",
+      "Once algorithm T is ahead, raising the load further cannot put S back in front.",
+      "The ratio of the two scores is the same at every load.",
+      "The two algorithms first meet at a load above $6$.",
+      "At a load of $16$, algorithm T is ahead by more than $30$."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview recovered a single positive crossing at load $x=8$. Two distinct positive loads cannot both be ties, so the statement is False.",
+      "**B.** → True\n\nThe score ratio on the recovered pair is\n\n$$\\frac{T(x)}{S(x)}=\\frac{x}{8}$$\n\nFor every $x>8$ this ratio exceeds $1$ and keeps rising, so T's lead cannot reverse, so the statement is True.",
+      "**C.** → False\n\nThe same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the benchmark and at the crossing:\n\n$$\\frac{T(4)}{S(4)}=\\frac{8}{16}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}=1$$\n\nThose are not the same, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered the unique crossing at $x=8$. The claim compares this with $6$. We have $8>6$, so the statement is True.",
+      "**E.** → True\n\nThe overview recovered $S(x)=8 x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:\n\n$$S(16)=32, \\qquad T(16)=64$$\n\n$$T(16)-S(16)=32$$\n\nThe claim compares this lead with $30$. We have $32>30$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 36,
+    "solution_overview": "Algorithm S is $S(x)=a x^{\\frac{1}{2}}$ with $S(4)=16$. Algorithm T is $T(x)=k x^{\\frac{3}{2}}$ with $T(4)=8$.\n\n**Part 1: Translate.**\n\nEach benchmark fixes one coefficient:\n\n$$a\\cdot 4^{\\frac{1}{2}}=16 \\tag{1}$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=8 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$a=8, \\qquad k=1$$\n\nThe recovered scores are\n\n$$S(x)=8 x^{\\frac{1}{2}}, \\qquad T(x)=x^{\\frac{3}{2}}$$\n\nOn $x>0$, setting $S=T$ gives the unique positive crossing $x=8$."
+  },
+  {
+    "id": "math-8-37",
+    "case_id": "MATH 8.37",
+    "title": "Server Fleet Capacity Beneath a Contracted Ceiling",
+    "context": "A hosting platform's sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$ requests per second for $m>0$ machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Sustained capacity itself keeps rising as machines are added.",
+      "Because the exponent is below $1$, the contracted ceiling is never reached.",
+      "On log-log paper the uncapped capacity law is a straight line.",
+      "A fleet of $243$ machines sustains more than $400$ requests per second.",
+      "The contracted ceiling binds before $250$ machines."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $C(m)=5 m^{\\frac{4}{5}}$. The exponent $\\frac{4}{5}>0$, so $C$ is strictly increasing on $m>0$. Adding machines therefore raises sustained capacity, so the statement is True.",
+      "**B.** → False\n\nAn exponent below $1$ still tends to infinity whenever it is positive. The recovered $C(m)=5 m^{\\frac{4}{5}}$ grows without bound as $m$ grows, because $\\frac{4}{5}>0$. A finite ceiling of $500$ is therefore reached at a finite fleet, so the statement is False.",
+      "**C.** → True\n\nOn log-log paper the uncapped law is\n\n$$\\ln C=\\ln 5+\\frac{4}{5}\\ln m$$\n\nThat is a straight line in the coordinates $(\\ln m,\\ln C)$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $C(m)=5 m^{\\frac{4}{5}}$. A fleet of $243=3^{5}$ machines sustains\n\n$$C(243)=5\\cdot 243^{\\frac{4}{5}}=5\\cdot 81=405$$\n\nThe claim compares this with $400$. We have $405>400$, so the statement is True.",
+      "**E.** → False\n\nThe contracted ceiling binds when\n\n$$5 m^{\\frac{4}{5}}=500$$\n\n$$m=100^{\\frac{5}{4}}=100\\sqrt{10}\\approx 316$$\n\nThe claim is that it binds before $250$ machines. We have $316>250$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 37,
+    "solution_overview": "Sustained capacity is $C(m)=A m^{\\frac{4}{5}}$ with $C(32)=80$. The contract will not certify more than $500$ requests per second.\n\n**Part 1: Translate.**\n\nThe fleet of $32=2^{5}$ machines fixes $A$:\n\n$$A\\cdot 32^{\\frac{4}{5}}=80 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$32^{\\frac{4}{5}}=16, \\qquad A=5$$\n\nThe recovered uncapped capacity is\n\n$$C(m)=5 m^{\\frac{4}{5}}$$"
+  },
+  {
+    "id": "math-8-38",
+    "case_id": "MATH 8.38",
+    "title": "Hiring Against a Square-Root Revenue Curve",
+    "context": "A seasonal workshop's revenue follows $R(L)=A L^{\\frac{1}{2}}$ from $L>0$ hours of hired labour. Extending a season from $100$ to $400$ hours raised recorded revenue by $1200$. Labour is paid a wage of $6$ per hour, and the owner judges the season by the net gain $R(L)-6L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain $R(L)-6L$ is itself a power function of hours hired.",
+      "The hours that maximise net gain are the same hours at which net gain is zero.",
+      "The wage bill is a power function of hours hired.",
+      "At $900$ hours the net gain is below $-1000$.",
+      "Net gain crosses zero only after more than $300$ hours."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview recovered $\\Pi(L)=120 L^{\\frac{1}{2}}-6L$. That is a difference of two powers with different exponents, not a single monomial, so net gain is not a power function of hours hired, so the statement is False.",
+      "**B.** → False\n\nNet gain is maximised where $\\Pi'(L)=0$:\n\n$$60 L^{-\\frac{1}{2}}=6, \\qquad L=100$$\n\nNet gain is zero where $\\Pi(L)=0$ on $L>0$:\n\n$$120 L^{\\frac{1}{2}}=6L, \\qquad L=400$$\n\nThose hours are not the same, so the statement is False.",
+      "**C.** → True\n\nThe wage bill is $6L=6 L^{1}$. That is a monomial in hours hired, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $\\Pi(L)=120\\sqrt{L}-6L$. At $900$ hours:\n\n$$\\Pi(900)=120\\cdot 30-6\\cdot 900=3600-5400=-1800$$\n\nThe claim compares this with $-1000$. We have $-1800<-1000$, so the statement is True.",
+      "**E.** → True\n\nNet gain crosses zero on $L>0$ where\n\n$$120\\sqrt{L}=6L, \\qquad L=400$$\n\nThe claim is a crossing after more than $300$ hours. We have $400>300$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 38,
+    "solution_overview": "Revenue is $R(L)=A L^{\\frac{1}{2}}$ for $L>0$ hours. Extending labour from $100$ to $400$ hours raised revenue by $1200$. Net gain is $R(L)-6L$.\n\n**Part 1: Translate.**\n\nBoth hour counts are perfect squares, so the recorded gain is\n\n$$A\\cdot 400^{\\frac{1}{2}}-A\\cdot 100^{\\frac{1}{2}}=1200 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$20A-10A=1200, \\qquad A=120$$\n\nThe recovered revenue and net gain are\n\n$$R(L)=120 L^{\\frac{1}{2}}, \\qquad \\Pi(L)=120 L^{\\frac{1}{2}}-6L$$"
+  },
+  {
+    "id": "math-8-39",
+    "case_id": "MATH 8.39",
+    "title": "Splitting an Order Between Two Quadratic-Cost Plants",
+    "context": "A firm must produce $60$ units and can split them between two plants. Plant 1's cost is $C_1(q)=A q^{2}$: a run of $20$ units there cost $200$. Plant 2's cost is $C_2(q)=k q^{2}$: a run of $40$ units there cost $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The cheapest way to fill the order is to send every unit to one plant.",
+      "Whatever split is chosen, the two plants together still follow a single power of the $60$-unit order.",
+      "Plant 2's cost per unit rises as it produces more.",
+      "Concentrating all $60$ units in the cheaper plant still costs more than $800$.",
+      "Sending $30$ units to each plant already costs under $700$."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nConcentrating all $60$ units in plant 2, the cheaper plant, costs\n\n$$C_2(60)=\\frac{1}{4}\\cdot 3600=900$$\n\nSplitting $20$ to plant 1 and $40$ to plant 2 costs\n\n$$C_1(20)+C_2(40)=200+400=600$$\n\nand $600<900$, so sending every unit to one plant is not cheapest, so the statement is False.",
+      "**B.** → False\n\nTotal cost depends on the split $q$ versus $60-q$:\n\n$$C(q)=\\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2}$$\n\nThe $20$-$40$ split costs $600$, while concentrating in plant 2 costs $900$. Those are two different totals for the same $60$-unit order, so the plants together do not follow a single power of $60$, so the statement is False.",
+      "**C.** → True\n\nPlant 2's cost per unit is\n\n$$\\frac{C_2(q)}{q}=\\frac{1}{4} q$$\n\nThe leftover exponent is positive, so unit cost rises as plant 2 produces more. At $20$ and $40$ units:\n\n$$\\frac{1}{4}\\cdot 20=5, \\qquad \\frac{1}{4}\\cdot 40=10$$\n\nand $10>5$, so the statement is True.",
+      "**D.** → True\n\nThe cheaper plant is plant 2, since $k<A$. Concentrating all $60$ units there costs\n\n$$C_2(60)=\\frac{1}{4}\\cdot 3600=900$$\n\nThe claim compares this with $800$. We have $900>800$, so the statement is True.",
+      "**E.** → True\n\nSending $30$ units to each plant costs\n\n$$C_1(30)+C_2(30)=\\frac{1}{2}\\cdot 900+\\frac{1}{4}\\cdot 900=450+225=675$$\n\nThe claim compares this with $700$. We have $675<700$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 39,
+    "solution_overview": "Plant 1 costs $C_1(q)=A q^{2}$ with $C_1(20)=200$. Plant 2 costs $C_2(q)=k q^{2}$ with $C_2(40)=400$. The firm must produce $60$ units.\n\n**Part 1: Translate.**\n\nEach recorded run fixes one coefficient:\n\n$$A\\cdot 20^{2}=200 \\tag{1}$$\n\n$$k\\cdot 40^{2}=400 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$A=\\frac{1}{2}, \\qquad k=\\frac{1}{4}$$\n\nThe recovered plant costs are\n\n$$C_1(q)=\\frac{1}{2} q^{2}, \\qquad C_2(q)=\\frac{1}{4} q^{2}$$"
+  },
+  {
+    "id": "math-8-40",
+    "case_id": "MATH 8.40",
+    "title": "Testing Whether Field Data Fit One Power Law",
+    "context": "A laboratory records four measurements of a response $y$ against an input $x$: $(4,\\,24)$, $(16,\\,192)$, $(9,\\,81)$ and a planned run at $x=25$. An analyst fits a power law $y=A x^{r}$ using the first two measurements only. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The first two measurements are consistent with a single power law.",
+      "The same two measurements would fit an exponent of $2$ equally well.",
+      "The measurement at $x=9$ contradicts the fitted law.",
+      "The fitted law predicts a response above $350$ at $x=25$.",
+      "At $x=9$ the fitted response is already above $70$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBoth fitted points sit on the recovered law:\n\n$$3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8=24$$\n\n$$3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64=192$$\n\nso the first two measurements are consistent with a single power, so the statement is True.",
+      "**B.** → False\n\nAn exponent of $2$ would require\n\n$$4^{2}=16$$\n\nThe observed ratio from (1) is $8$, not $16$. The recovered $r=\\frac{3}{2}$ is therefore not $2$, so the statement is False.",
+      "**C.** → False\n\nThe fitted response at $x=9$ is\n\n$$3\\cdot 9^{\\frac{3}{2}}=3\\cdot 27=81$$\n\nThat matches the recorded $81$, so the measurement does not contradict the fitted law, so the statement is False.",
+      "**D.** → True\n\nThe fitted law at $x=25$ predicts\n\n$$3\\cdot 25^{\\frac{3}{2}}=3\\cdot 125=375$$\n\nThe claim compares this with $350$. We have $375>350$, so the statement is True.",
+      "**E.** → True\n\nThe fitted response at $x=9$ is\n\n$$3\\cdot 9^{\\frac{3}{2}}=81$$\n\nThe claim compares this with $70$. We have $81>70$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 40,
+    "solution_overview": "An analyst fits $y=A x^{r}$ to the measurements $(4,24)$ and $(16,192)$.\n\n**Part 1: Translate.**\n\nThe ratio cancels $A$:\n\n$$\\left(\\frac{16}{4}\\right)^{r}=\\frac{192}{24} \\tag{1}$$\n\nEither point then fixes $A$:\n\n$$A\\cdot 4^{r}=24 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$4^{r}=8, \\qquad r=\\frac{3}{2}$$\n\n$$A\\cdot 8=24, \\qquad A=3$$\n\nThe recovered fit is\n\n$$y=3 x^{\\frac{3}{2}}$$"
+  }
+]

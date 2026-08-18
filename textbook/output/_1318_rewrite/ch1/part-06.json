@@ -1,0 +1,250 @@
+[
+  {
+    "id": "math-1-101",
+    "case_id": "MATH 1.101",
+    "title": "Conference attendance rules",
+    "subsection": "1.4",
+    "context": "Four colleagues - Ana, Boris, Ceci, Dmitri - are deciding whether to attend a conference.\n\n(1) If Ana attends, then Boris does not attend.\n\n(2) If Boris does not attend, then Ceci attends.\n\n(3) If Ceci attends, then Dmitri does not attend - unless Ana also attends, in which case Dmitri's attendance is unrestricted.\n\n(4) Dmitri attends.",
+    "statements": [
+      "Dmitri attends the conference.",
+      "The rules uniquely determine whether Ana attends.",
+      "In at least one solution consistent with the rules, exactly three of the four colleagues attend.",
+      "It is possible for both Ana and Boris to not attend simultaneously.",
+      "Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nRule (4) already asserts $D$. Both recovered rosters include Dmitri, so the statement is True.",
+      "**B.** → False\n\nUniqueness about Ana would need the two recovered rosters to agree on $A$. One has Ana in and the other has Ana out, so the statement is False.",
+      "**C.** → True\n\nThe Ana-in roster is $\\{A,C,D\\}$, which has size $3$. An existence claim needs one legal witness, so the statement is True.",
+      "**D.** → False\n\nThe recovered rosters are $\\{A,C,D\\}$ and $\\{B,D\\}$. The first still has Ana; the second still has Boris. Neither has both absent, so the statement is False.",
+      "**E.** → False\n\nDrop the exception in (3), so $C\\Rightarrow\\neg D$ with no escape. Rule (4) keeps $D$ true, and that forces $\\neg C$. The Ana-in roster had both $C$ and $D$, so it dies. The Ana-out roster $\\{B,D\\}$ already has Ceci out, so the stricter (3) is idle and still holds. One legal roster remains, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 23,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $A,B,C,D$ for Ana, Boris, Ceci, Dmitri attending. The stem is\n\n$$(1)\\ A\\Rightarrow\\neg B,\\qquad (2)\\ \\neg B\\Rightarrow C,\\qquad (4)\\ D.$$\n\nRule (3) is $C\\Rightarrow\\neg D$ except when Ana already attends, so\n\n$$(3)\\ (C\\land\\neg A)\\Rightarrow\\neg D.$$\n\nAn implication whose hypothesis is false is idle. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nRule (4) puts $D$ in every roster. Split on Ana.\n\nIf $A$ holds, (1) gives $\\neg B$ and (2) then gives $C$. Rule (3) is idle because $A$ is true, so $D$ may stay. The roster is $\\{A,C,D\\}$.\n\nIf $\\neg A$ holds, (3) with $D$ true forces $\\neg C$. The contrapose of (2) then forces $B$. The roster is $\\{B,D\\}$.\n\nBoth cases survive."
+  },
+  {
+    "id": "math-1-102",
+    "case_id": "MATH 1.102",
+    "title": "A Study Group's Attendance",
+    "subsection": "1.4",
+    "context": "Four students - Noah, Maria, Leo, and Zoe - are deciding whether to join a study session. Their attendance follows these rules:\n\n1. If Noah joins, then Maria joins.\n\n2. Leo joins only if Zoe joins.\n\n3. At least one of Maria or Leo joins.\n\n4. If Zoe joins, then Noah does not join.",
+    "statements": [
+      "If Noah joins, then Zoe does not join.",
+      "Leo and Noah can join the study session together.",
+      "It is possible that Maria joins but Leo does not.",
+      "If Maria does not join, then Noah does not join.",
+      "Zoe must join the study session."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe contrapose of rule (4) is $N\\Rightarrow\\neg Z$. That is the claimed implication, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered the chain $L\\Rightarrow Z\\Rightarrow\\neg N$. Leo joining already forces Noah out, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $\\{M\\}$ as a legal roster: Maria in, Leo out. One witness is enough, so the statement is True.",
+      "**D.** → True\n\nThe contrapose of rule (1) is $\\neg M\\Rightarrow\\neg N$. That is the claimed implication, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $\\{M\\}$ as legal, and that roster omits Zoe. A \"must join\" claim fails on one counterexample, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 24,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $N,M,L,Z$ for Noah, Maria, Leo, Zoe joining. The stem is\n\n$$(1)\\ N\\Rightarrow M,\\qquad (2)\\ L\\Rightarrow Z,\\qquad (3)\\ M\\lor L,\\qquad (4)\\ Z\\Rightarrow\\neg N.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nChaining (2) then (4) gives\n\n$$L\\Rightarrow Z\\Rightarrow\\neg N.$$\n\nIf $N$ holds, (1) gives $M$ and the contrapose of (4) gives $\\neg Z$, hence $\\neg L$ by the contrapose of (2). Rule (3) holds by $M$. The roster is $\\{N,M\\}$.\n\nIf $\\neg N$ holds, (1) and (4) are idle. Rule (3) still needs $M\\lor L$, and (2) still needs $L\\Rightarrow Z$. The legal rosters are $\\{M\\}$, $\\{M,Z\\}$, $\\{L,Z\\}$, and $\\{M,L,Z\\}$.\n\nFive rosters survive in all."
+  },
+  {
+    "id": "math-1-103",
+    "case_id": "MATH 1.103",
+    "title": "Board Game Night",
+    "subsection": "1.4",
+    "context": "Four friends - Ben, Carla, Dan, and Ella - are deciding whether to play a board game. Their participation follows these rules:\n\n1. If Ben plays, then Carla plays.\n\n2. Dan plays only if Ella plays.\n\n3. If Carla plays, then Dan does not play.\n\n4. At least one of Ben or Ella plays.",
+    "statements": [
+      "If Ben plays, then Dan does not play.",
+      "Ben and Dan can play together.",
+      "It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.",
+      "If Dan plays, then Carla does not play.",
+      "Carla must play the game."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $B\\Rightarrow C\\Rightarrow\\neg D$. Ben playing therefore forces Dan out, so the statement is True.",
+      "**B.** → False\n\nThe same recovered chain is $B\\Rightarrow\\neg D$. Ben and Dan cannot both play, so the statement is False.",
+      "**C.** → True\n\nThe overview recovered $\\{E\\}$ as a legal roster: Ella in, and Ben, Carla, and Dan out. One witness is enough, so the statement is True.",
+      "**D.** → True\n\nThe contrapose of rule (3) is $D\\Rightarrow\\neg C$. That is the claimed implication, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $\\{E\\}$ and $\\{D,E\\}$, both of which omit Carla. A \"must play\" claim fails on either roster, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 25,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $B,C,D,E$ for Ben, Carla, Dan, Ella playing. The stem is\n\n$$(1)\\ B\\Rightarrow C,\\qquad (2)\\ D\\Rightarrow E,\\qquad (3)\\ C\\Rightarrow\\neg D,\\qquad (4)\\ B\\lor E.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nRules (1) and (3) chain as\n\n$$B\\Rightarrow C\\Rightarrow\\neg D.$$\n\nIf $B$ holds, then $C$ is in and $D$ is out. Rule (4) already holds, so $E$ is free. The rosters are $\\{B,C\\}$ and $\\{B,C,E\\}$.\n\nIf $\\neg B$ holds, rule (4) forces $E$. Rule (3) still forbids $C$ and $D$ together, and (2) is content whenever $D$ plays because $E$ is already in. The rosters are $\\{C,E\\}$, $\\{D,E\\}$, and $\\{E\\}$.\n\nFive rosters survive in all."
+  },
+  {
+    "id": "math-1-104",
+    "case_id": "MATH 1.104",
+    "title": "Splitting the Cooking Duty",
+    "subsection": "1.4",
+    "context": "Three roommates - Owen, Priya, and Quinn - are deciding who cooks dinner tonight. The arrangement follows these rules:\n\n1. If Owen cooks, then Priya does not cook.\n\n2. At least one of Owen or Priya cooks.\n\n3. If Priya cooks, then Quinn also cooks.\n\n4. Quinn cooks only if Owen does not cook.",
+    "statements": [
+      "If Owen cooks, then Quinn does not cook.",
+      "Owen and Priya can both cook tonight.",
+      "It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.",
+      "Priya cooking guarantees that Quinn also cooks.",
+      "Owen must cook tonight."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe contrapose of rule (4) is $O\\Rightarrow\\neg Q$. That is the claimed implication, so the statement is True.",
+      "**B.** → False\n\nRule (1) is $O\\Rightarrow\\neg P$. Both cooking would make the hypothesis true and the conclusion false, so the statement is False.",
+      "**C.** → False\n\nRule (2) requires $O\\lor P$. The attempted evening $\\{Q\\}$ has neither Owen nor Priya, which breaks (2), so the statement is False.",
+      "**D.** → True\n\nRule (3) is $P\\Rightarrow Q$. That is the claimed guarantee, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $\\{P,Q\\}$ as a legal evening, and that evening omits Owen. A \"must cook\" claim fails on one counterexample, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 26,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $O,P,Q$ for Owen, Priya, Quinn cooking. The stem is\n\n$$(1)\\ O\\Rightarrow\\neg P,\\qquad (2)\\ O\\lor P,\\qquad (3)\\ P\\Rightarrow Q,\\qquad (4)\\ Q\\Rightarrow\\neg O.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nRules (1) and (2) together force exactly one of $O$ or $P$.\n\nIf $O$ holds, then $\\neg P$ by (1). Rule (4) is $Q\\Rightarrow\\neg O$, so $Q$ cannot hold, and (3) is idle. The evening is $\\{O\\}$.\n\nIf $P$ holds, then $\\neg O$. Rule (3) brings $Q$, and (4) holds because Owen is away. The evening is $\\{P,Q\\}$.\n\nThose are the only two legal evenings."
+  },
+  {
+    "id": "math-1-105",
+    "case_id": "MATH 1.105",
+    "title": "A Five-Person Day Trip",
+    "subsection": "1.4",
+    "context": "Five club members - Diego, Fatima, Grace, Hugo, and Iris - are deciding whether to join a day trip. Their attendance follows these rules:\n\n1. If Diego goes, then Fatima goes.\n\n2. Grace goes unless Hugo goes.\n\n3. If Fatima goes, then Grace does not go.\n\n4. At least one of Diego or Hugo goes.\n\n5. If Iris goes, then Diego does not go.\n\n6. Hugo goes only if Fatima does not go.",
+    "statements": [
+      "Diego attends the trip in at least one valid scenario.",
+      "If Fatima goes, then Hugo does not go.",
+      "Hugo must go on the trip.",
+      "It is possible for both Grace and Iris to attend together.",
+      "If Iris goes, then Fatima goes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview recovered that Diego's chain collides on Fatima, so $D$ is false in every legal roster. There is no valid scenario in which Diego attends, so the statement is False.",
+      "**B.** → True\n\nThe contrapose of rule (6) is $F\\Rightarrow\\neg H$. That is the claimed implication, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $\\neg D$ in every roster, so rule (4) forces $H$ throughout. Hugo attends in every surviving assignment, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered $\\{H,G,I\\}$ as a legal roster. Grace and Iris both attend there, so the statement is True.",
+      "**E.** → False\n\nThe claim needs $I\\Rightarrow F$. The recovered roster $\\{H,G,I\\}$ has Iris in and Fatima out, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $D,F,G,H,I$ for Diego, Fatima, Grace, Hugo, Iris going. The stem is\n\n$$(1)\\ D\\Rightarrow F,\\qquad (2)\\ G\\lor H,\\qquad (3)\\ F\\Rightarrow\\neg G,$$\n\n$$(4)\\ D\\lor H,\\qquad (5)\\ I\\Rightarrow\\neg D,\\qquad (6)\\ H\\Rightarrow\\neg F.$$\n\n\"$P$ unless $Q$\" is $\\neg Q\\Rightarrow P$, so rule (2) is the inclusive or $G\\lor H$. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Solve.**\n\nIf $D$ holds, then $F$ by (1) and $\\neg G$ by (3). Rule (2) then forces $H$, and (6) forces $\\neg F$. That collides with $F$, so Diego never goes.\n\nWith $\\neg D$, rule (4) forces $H$, and (6) then forces $\\neg F$. Rule (2) is already held by Hugo, so $G$ is free. Rule (5) is idle once Diego is out, so $I$ is free.\n\nThe legal rosters are $\\{H\\}$, $\\{H,G\\}$, $\\{H,I\\}$, and $\\{H,G,I\\}$."
+  },
+  {
+    "id": "math-1-106",
+    "case_id": "MATH 1.106",
+    "title": "Six Interns and the Conference Talk",
+    "subsection": "1.4",
+    "context": "Six interns - Aiden, Bella, Caleb, Daisy, Ethan, and Faye - are deciding who will present at a conference. Their participation follows these rules:\n\n1. If Aiden presents, then both Bella and Caleb present.\n\n2. At least one of Daisy or Ethan presents.\n\n3. If Bella presents, then Daisy does not present.\n\n4. Caleb presents only if Ethan presents.\n\n5. If Faye presents, then Aiden presents.\n\n6. Ethan presents only if Bella does not present.",
+    "statements": [
+      "Aiden is forced to NOT present in every valid scenario.",
+      "It is possible for Bella to present in some valid scenario.",
+      "If Caleb presents, then Ethan also presents.",
+      "It is possible for Faye to present at the conference.",
+      "There is exactly one valid way to decide who presents, consistent with all six rules."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered that Aiden needs Bella and that Bella is impossible. Aiden is therefore out of every legal roster, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered that Bella removes Daisy by (3) and Ethan by (6), leaving rule (2) empty. No legal roster contains Bella, so the statement is False.",
+      "**C.** → True\n\nRule (4) is $C\\Rightarrow E$. That is the claimed implication, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered that Faye needs Aiden and that Aiden is already out. Faye is therefore out of every legal roster, so the statement is False.",
+      "**E.** → False\n\nThe overview recovered five legal rosters. Uniqueness needs exactly one, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $A,B,C,D,E,F$ for Aiden, Bella, Caleb, Daisy, Ethan, Faye presenting. The stem is\n\n$$(1)\\ A\\Rightarrow(B\\land C),\\qquad (2)\\ D\\lor E,\\qquad (3)\\ B\\Rightarrow\\neg D,$$\n\n$$(4)\\ C\\Rightarrow E,\\qquad (5)\\ F\\Rightarrow A,\\qquad (6)\\ E\\Rightarrow\\neg B.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$.\n\n**Part 2: Solve.**\n\nIf $B$ holds, then $\\neg D$ by (3) and $\\neg E$ by the contrapose of (6). Rule (2) then has both disjuncts false, so Bella never presents.\n\nAiden needs Bella by (1), so Aiden is out. Faye needs Aiden by (5), so Faye is out.\n\nThe live people are $C,D,E$, still constrained by (2) and (4). The legal rosters are $\\{D\\}$, $\\{E\\}$, $\\{D,E\\}$, $\\{C,E\\}$, and $\\{C,D,E\\}$."
+  },
+  {
+    "id": "math-1-107",
+    "case_id": "MATH 1.107",
+    "title": "Assigning Paper Reviewers",
+    "subsection": "1.4",
+    "context": "Five researchers - Petra, Quinn, Ravi, Sana, and Theo - are being assigned to review a paper. The assignment follows these rules:\n\n1. If Petra reviews, then Quinn does not review.\n\n2. Ravi reviews unless Sana reviews.\n\n3. If Quinn does not review, then Theo reviews.\n\n4. At least one of Petra or Sana reviews.\n\n5. If Theo reviews, then Ravi does not review.\n\n6. Sana reviews only if Petra reviews.",
+    "statements": [
+      "Petra must review the paper in every valid assignment.",
+      "If Quinn reviews, then Petra does not review.",
+      "It is possible for Ravi to review the paper in some valid assignment.",
+      "In the (unique) valid assignment, both Theo and Sana review the paper.",
+      "There are multiple different valid ways to assign reviewers consistent with all six rules."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered that dropping Petra also drops Sana and then breaks rule (4). Petra therefore reviews in every valid assignment, so the statement is True.",
+      "**B.** → True\n\nThe contrapose of rule (1) is $Q\\Rightarrow\\neg P$. That is the claimed implication, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered the unique assignment $\\{P,S,T\\}$, with Ravi out. There is no legal assignment in which Ravi reviews, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered the unique assignment $\\{P,S,T\\}$. Both Theo and Sana review there, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered one assignment, with every reviewer pinned by a numbered rule. Multiple valid ways would need a second surviving row, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $P,Q,R,S,T$ for Petra, Quinn, Ravi, Sana, Theo reviewing. The stem is\n\n$$(1)\\ P\\Rightarrow\\neg Q,\\qquad (2)\\ R\\lor S,\\qquad (3)\\ \\neg Q\\Rightarrow T,$$\n\n$$(4)\\ P\\lor S,\\qquad (5)\\ T\\Rightarrow\\neg R,\\qquad (6)\\ S\\Rightarrow P.$$\n\n\"$P$ unless $Q$\" is $\\neg Q\\Rightarrow P$, so rule (2) is the inclusive or $R\\lor S$. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Solve.**\n\nIf $\\neg P$ holds, the contrapose of (6) gives $\\neg S$, and then (4) fails. So $P$ is forced.\n\nThen (1) gives $\\neg Q$, (3) gives $T$, (5) gives $\\neg R$, and (2) with Ravi out forces $S$. Rule (6) holds because Petra already reviews.\n\nThe unique assignment is $\\{P,S,T\\}$."
+  },
+  {
+    "id": "math-1-108",
+    "case_id": "MATH 1.108",
+    "title": "Seven Finalists and the Tournament Roster",
+    "subsection": "1.4",
+    "context": "Seven finalists - Uma, Victor, Wendy, Xavier, Yara, Zane, and Bianca - are deciding whether to compete in a tournament. Their participation follows these rules:\n\n1. Uma competes if and only if Victor competes.\n\n2. If Victor competes, then Wendy competes.\n\n3. Exactly one of Wendy or Xavier competes (never both, never neither).\n\n4. If Xavier competes, then Yara does not compete.\n\n5. At least one of Yara or Zane competes.\n\n6. Zane competes only if Bianca does not compete.\n\n7. If Bianca competes, then Uma competes.\n\n8. At least four of the seven finalists compete.",
+    "statements": [
+      "Victor must compete in every valid roster.",
+      "It is possible for Xavier to compete in some valid roster.",
+      "If Bianca competes, then Zane does not compete.",
+      "There is exactly one valid way to build the roster, consistent with all eight rules.",
+      "It is possible for exactly six of the seven finalists to compete."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered that every Victor-out roster has size at most $3$, which breaks rule (8). Victor therefore competes in every valid roster, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered that Victor always competes, so Wendy always competes by (2). Rule (3) then keeps Xavier out of every roster, so the statement is False.",
+      "**C.** → True\n\nThe contrapose of rule (6) is $B\\Rightarrow\\neg Z$. That is the claimed implication, so the statement is True.",
+      "**D.** → False\n\nThe overview recovered four legal extras on top of the forced core. Four rosters is already more than one, so the statement is False.",
+      "**E.** → False\n\nA size-$6$ roster would need the extra $\\{Y,Z,B\\}$. Rule (6) forbids Zane with Bianca, so that extra is illegal. The recovered extras have size $1$ or $2$ on a core of $3$, hence totals $4$ or $5$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "**Part 1: Setup.**\n\nWrite $U,V,W,X,Y,Z,B$ for Uma, Victor, Wendy, Xavier, Yara, Zane, Bianca competing. The stem is\n\n$$(1)\\ U\\Leftrightarrow V,\\qquad (2)\\ V\\Rightarrow W,\\qquad (3)\\ (W\\land\\neg X)\\lor(\\neg W\\land X),$$\n\n$$(4)\\ X\\Rightarrow\\neg Y,\\qquad (5)\\ Y\\lor Z,\\qquad (6)\\ Z\\Rightarrow\\neg B,\\qquad (7)\\ B\\Rightarrow U,$$\n\nand (8) at least four of the seven compete.\n\n\"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Solve.**\n\nIf $\\neg V$ holds, then $\\neg U$ by (1) and $\\neg B$ by the contrapose of (7). Rule (3) then splits:\n\n- $W$ and $\\neg X$ leave at most $W,Y,Z$, hence size at most $3$.\n- $X$ and $\\neg W$ drop $Y$ by (4) and force $Z$ by (5), hence size $2$.\n\nBoth sit under four, so Victor must compete. Then $U$ holds by (1), $W$ holds by (2), and $\\neg X$ holds by (3).\n\nThe forced core is $U,V,W$ in and $X$ out. Among $Y,Z,B$, rule (5) needs $Y\\lor Z$ and rule (6) forbids $Z$ with $B$. The legal extras are $\\{Y\\}$, $\\{Z\\}$, $\\{Y,B\\}$, and $\\{Y,Z\\}$."
+  }
+]

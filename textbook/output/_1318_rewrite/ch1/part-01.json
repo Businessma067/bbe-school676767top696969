@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-1-1",
+    "case_id": "MATH 1.01",
+    "title": "Basic operations on explicit sets",
+    "subsection": "1.1",
+    "context": "Let $A = \\{1, 2, 3, 4, 5\\}$, $B = \\{3, 4, 5, 6, 7\\}$, and $C = \\{5, 6, 7, 8, 9\\}$.",
+    "statements": [
+      "$A \\cap B = \\{3, 4, 5\\}$.",
+      "$A \\cup C = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$.",
+      "$(A \\cap B) \\cap C = \\{5\\}$.",
+      "$A \\setminus C = \\{1, 2, 3\\}$.",
+      "B and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nIntersection keeps the elements that sit in both $A$ and $B$. Testing the members of $A$ against $B$ leaves $3$, $4$, and $5$:\n\n$$A \\cap B = \\{3,4,5\\}$$\n\nThe claim is that same roster, so the statement is True.",
+      "**B.** → False\n\nUnion keeps every element of $A$ or $C$. The roster of $A$ is $1,2,3,4,5$ and $C$ adds $6,7,8,9$, so\n\n$$A \\cup C = \\{1,2,3,4,5,6,7,8,9\\}$$\n\nThe claim stops at $8$ and drops $9\\in C$, so the statement is False.",
+      "**C.** → True\n\nAn element of $(A\\cap B)\\cap C$ must sit in all three lists. The numbers in both $A$ and $B$ are $3,4,5$. Of those, only $5$ sits in $C$:\n\n$$(A \\cap B) \\cap C = \\{5\\}$$\n\nThe claim is that same roster, so the statement is True.",
+      "**D.** → False\n\nDifference $A\\setminus C$ keeps members of $A$ that miss $C$. From $A$, only $5$ also sits in $C$, so\n\n$$A \\setminus C = \\{1,2,3,4\\}$$\n\nThe claim drops $4$, but $4\\in A$ and $4\\notin C$, so the statement is False.",
+      "**E.** → False\n\nDisjointness requires $B\\cap C=\\emptyset$. The shared members are $5$, $6$, and $7$:\n\n$$B \\cap C = \\{5,6,7\\}$$\n\nThe intersection is nonempty, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "Let $A=\\{1,2,3,4,5\\}$, $B=\\{3,4,5,6,7\\}$, and $C=\\{5,6,7,8,9\\}$.\n\nIntersection keeps elements that sit in both inputs. Union keeps elements that sit in at least one. Difference $X\\setminus Y$ keeps members of $X$ that miss $Y$. Two sets are disjoint when they share no elements."
+  },
+  {
+    "id": "math-1-2",
+    "case_id": "MATH 1.02",
+    "title": "Set-builder notation and equality of sets",
+    "subsection": "1.1",
+    "context": "Let $A = \\{x \\in Z : x^2 = 9\\}$ (Z = integers) and $B = \\{3, -3\\}$.",
+    "statements": [
+      "A = B.",
+      "$3 \\in A$.",
+      "$A = \\{3\\}$ (only the positive root).",
+      "$\\lvert A \\rvert = 2$.",
+      "The set $C = \\{x \\in N : x^2 = 9\\}$ (N = natural numbers) is equal to $\\{3, -3\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $A=\\{-3,3\\}$. $B$ is given as $\\{3,-3\\}$. Sets ignore order, so the two rosters are the same collection, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $A=\\{-3,3\\}$. The integer $3$ sits on that roster, so $3\\in A$, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered $A=\\{-3,3\\}$. The claim reprints $A$ as the singleton $\\{3\\}$ and drops $-3$, even though $(-3)^{2}=9$ and $-3\\in Z$. The two sets are unequal, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered two distinct members, $-3$ and $3$, so\n\n$$\\lvert A \\rvert = 2$$\n\nThe claim is that same count, so the statement is True.",
+      "**E.** → False\n\nThe same roots $3$ and $-3$ must now pass the universe $N=\\{1,2,3,\\ldots\\}$. The root $3$ is natural, but $-3$ is not, so\n\n$$C=\\{3\\}$$\n\nThe claim equals $C$ with $\\{3,-3\\}$. Those sets differ, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "The set-builder $A=\\{x\\in Z:x^{2}=9\\}$ keeps the integer solutions of $x^{2}=9$. $B$ is given as $\\{3,-3\\}$.\n\nA set-builder is a membership test against a named universe. Equality of sets is equality of members, ignoring order. Cardinality counts distinct members. Changing the universe produces a different set.\n\nThe equation $x^{2}=9$ has roots $x=3$ and $x=-3$. Both are integers, so\n\n$$A=\\{-3,3\\}.$$"
+  },
+  {
+    "id": "math-1-3",
+    "case_id": "MATH 1.03",
+    "title": "Subsets, elements, and the power set",
+    "subsection": "1.1",
+    "context": "Let $A = \\{a, b, c\\}$.",
+    "statements": [
+      "The power set of A has 8 elements.",
+      "$\\{a, b\\}$ is an element of A.",
+      "$\\emptyset$ is a subset of A.",
+      "A is a proper subset of A.",
+      "There are exactly 3 subsets of A that contain exactly 2 elements."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach of the three objects can be kept or left out, so\n\n$$\\lvert \\mathcal{P}(A) \\rvert = 2^{3} = 8$$\n\nThe claim is $8$, so the statement is True.",
+      "**B.** → False\n\nThe elements of $A$ are the three letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a set of letters, not a letter, so $\\{a,b\\}\\notin A$. The pair is a subset of $A$ and therefore an element of $\\mathcal{P}(A)$, but that is not this claim, so the statement is False.",
+      "**C.** → True\n\nSubsethood asks whether every member of the left-hand set sits in $A$. The empty set has no member at all, so there is no witness that could sit outside $A$. Hence $\\emptyset\\subseteq A$, so the statement is True.",
+      "**D.** → False\n\nProper inclusion is ordinary inclusion plus a genuine difference of sets. $A\\subseteq A$ always holds, but the extra demand $A\\ne A$ is impossible. So $A$ is not a proper subset of $A$, so the statement is False.",
+      "**E.** → True\n\nA two-element subset of a three-element set is counted by\n\n$$\\binom{3}{2} = 3$$\n\nThe three subsets are $\\{a,b\\}$, $\\{a,c\\}$, and $\\{b,c\\}$. The claim is $3$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "Here $A=\\{a,b,c\\}$ has three objects.\n\nMembership $x\\in A$ means $x$ is one of those three objects. Inclusion $S\\subseteq A$ means every object inside $S$ is also one of those three. The power set $\\mathcal{P}(A)$ is the set of all subsets. Each of the $n$ objects can be kept or left out, so $\\lvert \\mathcal{P}(A) \\rvert = 2^{n}$. A proper subset must also be unequal to $A$, so $A$ itself is never a proper subset of $A$. Subsets of a fixed size $k$ are counted by $\\binom{n}{k}$."
+  },
+  {
+    "id": "math-1-4",
+    "case_id": "MATH 1.04",
+    "title": "Membership vs. Subset for a Three-Element Set",
+    "subsection": "1.1",
+    "context": "Let $D = \\{a, b, c\\}$.",
+    "statements": [
+      "$\\emptyset \\subseteq D$",
+      "$\\emptyset \\in D$",
+      "D has exactly 8 subsets",
+      "Both $\\{a\\} \\subseteq D$ and $\\{a\\} \\in D$ are true",
+      "$D \\subseteq D$"
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe empty set has no member that could sit outside $D$, so $\\emptyset\\subseteq D$, so the statement is True.",
+      "**B.** → False\n\nThe elements of $D$ are the letters $a$, $b$, and $c$. The empty set is not one of those three objects, so $\\emptyset\\notin D$, so the statement is False.",
+      "**C.** → True\n\nEach of the three letters can be kept or left out, so the number of subsets is\n\n$$2^{3} = 8$$\n\nThe claim is $8$, so the statement is True.",
+      "**D.** → False\n\nThe singleton $\\{a\\}$ is a subset of $D$ because $a\\in D$. It is not an element of $D$, because the elements are letters rather than singletons. The claim needs both $\\{a\\}\\subseteq D$ and $\\{a\\}\\in D$. The second fails, so the statement is False.",
+      "**E.** → True\n\nEvery member of $D$ sits in $D$, so $D\\subseteq D$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "Let $D=\\{a,b,c\\}$.\n\nMembership $x\\in D$ asks whether $x$ is one of the three written letters. Inclusion $S\\subseteq D$ asks whether every member of $S$ is one of those letters. The power set collects every subset: each of the $n$ letters is in or out independently, so there are $2^{n}$ subsets. The empty set is a subset of every set, but it is an element of $D$ only if it is written on the roster."
+  },
+  {
+    "id": "math-1-5",
+    "case_id": "MATH 1.05",
+    "title": "Set Difference Between Two Overlapping Lists",
+    "subsection": "1.1",
+    "context": "Let $E = \\{1, 3, 5, 7\\}$ and $F = \\{3, 4, 5, 6\\}$.",
+    "statements": [
+      "$E \\setminus F = \\{1, 7\\}$",
+      "$F \\setminus E = \\{4, 6\\}$",
+      "$E \\setminus F = F \\setminus E$",
+      "$(E \\setminus F) \\cup (F \\setminus E) = \\{1, 4, 6, 7\\}$",
+      "$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $E\\setminus F=\\{1,7\\}$. The claim is that same roster, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $F\\setminus E=\\{4,6\\}$. The claim is that same roster, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered $E\\setminus F=\\{1,7\\}$ and $F\\setminus E=\\{4,6\\}$. Those two sets are unequal, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered the two leftover piles $\\{1,7\\}$ and $\\{4,6\\}$. Their union is\n\n$$(E \\setminus F) \\cup (F \\setminus E) = \\{1,4,6,7\\}$$\n\nThe claim is that same roster, so the statement is True.",
+      "**E.** → True\n\nThe leftover piles $\\{1,7\\}$ and $\\{4,6\\}$ share no members, so\n\n$$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$$\n\nThe claim is that same empty intersection, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "Let $E=\\{1,3,5,7\\}$ and $F=\\{3,4,5,6\\}$.\n\nDifference $X\\setminus Y$ keeps members of $X$ that miss $Y$. From $E$, the members $3$ and $5$ also sit in $F$, so\n\n$$E \\setminus F = \\{1,7\\}.$$\n\nFrom $F$, the members $3$ and $5$ also sit in $E$, so\n\n$$F \\setminus E = \\{4,6\\}.$$\n\nThe union of those leftover piles is the symmetric difference. Their intersection is empty: a number cannot miss $F$ and sit in $F$ at once."
+  },
+  {
+    "id": "math-1-6",
+    "case_id": "MATH 1.06",
+    "title": "Intersections, Union Size, and a Difference Trap",
+    "subsection": "1.1",
+    "context": "Let $A = \\{2, 4, 6, 8, 10\\}$, $B = \\{3, 6, 9, 12\\}$, and $C = \\{1, 2, 3, 4, 5\\}$.",
+    "statements": [
+      "$A \\cap B = \\{6\\}$",
+      "$A \\cup B$ has 8 elements",
+      "$C \\setminus A = \\{1, 3\\}$",
+      "$B \\setminus C = \\{3, 6, 9, 12\\}$",
+      "$A \\cap C = \\{2, 4, 6\\}$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nIntersection keeps elements in both $A$ and $B$. The only shared number is $6$:\n\n$$A \\cap B = \\{6\\}$$\n\nThe claim matches, so the statement is True.",
+      "**B.** → True\n\nWriting the distinct members of $A$ or $B$ gives\n\n$$A \\cup B = \\{2,3,4,6,8,9,10,12\\}$$\n\nwhich has $8$ elements, so the statement is True.",
+      "**C.** → False\n\nDifference $C\\setminus A$ keeps members of $C$ that miss $A$:\n\n$$C \\setminus A = \\{1,3,5\\}$$\n\nThe claim drops $5$, so the statement is False.",
+      "**D.** → False\n\nDifference $B\\setminus C$ keeps members of $B$ that miss $C$:\n\n$$B \\setminus C = \\{6,9,12\\}$$\n\nThe claim keeps $3$, but $3\\in C$, so the statement is False.",
+      "**E.** → False\n\nIntersection keeps elements in both $A$ and $C$:\n\n$$A \\cap C = \\{2,4\\}$$\n\nThe claim includes $6$, but $6\\notin C$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 6,
+    "solution_overview": "The lists are $A=\\{2,4,6,8,10\\}$, $B=\\{3,6,9,12\\}$, and $C=\\{1,2,3,4,5\\}$.\n\nIntersection keeps numbers tagged in both inputs. Union keeps every tagged number once. Difference $X\\setminus Y$ keeps members of $X$ that miss $Y$."
+  },
+  {
+    "id": "math-1-7",
+    "case_id": "MATH 1.07",
+    "title": "Two-Course Enrollment via Inclusion-Exclusion",
+    "subsection": "1.1",
+    "context": "In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so $\\lvert M \\cap E \\rvert = 12$.",
+    "statements": [
+      "$\\lvert M \\cup E \\rvert = 43$",
+      "The number of students taking neither Mathematics nor Economics is 7",
+      "$M \\setminus E$ has 18 students (those taking only Mathematics)",
+      "$E \\subseteq M$",
+      "M and E are disjoint sets"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $\\lvert M \\cup E \\rvert = 43$. The claim is that same figure, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered a union of $43$ among $50$ students. The remainder is\n\n$$50 - 43 = 7$$\n\nThe claim is $7$, so the statement is True.",
+      "**C.** → True\n\nOnly Mathematics is the Mathematics headline minus the overlap:\n\n$$\\lvert M \\setminus E \\rvert = 30 - 12 = 18$$\n\nThe claim is $18$, so the statement is True.",
+      "**D.** → False\n\nThe inclusion $E\\subseteq M$ would require every Economics student to sit in $M$, hence $\\lvert M \\cap E \\rvert = \\lvert E \\rvert$. The given overlap is $12$ and $\\lvert E \\rvert = 25$, so $12 \\ne 25$, so the statement is False.",
+      "**E.** → False\n\nDisjointness requires $\\lvert M \\cap E \\rvert = 0$. The overlap is given as $12$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 7,
+    "solution_overview": "A cohort of $50$ students has $\\lvert M \\rvert = 30$ taking Mathematics, $\\lvert E \\rvert = 25$ taking Economics, and $\\lvert M \\cap E \\rvert = 12$ taking both.\n\nInclusion-exclusion for two sets is\n\n$$\\lvert M \\cup E \\rvert = \\lvert M \\rvert + \\lvert E \\rvert - \\lvert M \\cap E \\rvert.$$\n\nSubstitute the given sizes:\n\n$$30 + 25 - 12 = 43$$\n\nso $\\lvert M \\cup E \\rvert = 43$. Only-Mathematics is $\\lvert M \\rvert$ minus the overlap. Neither course is the cohort size minus the union. $E\\subseteq M$ would require the overlap to equal $\\lvert E \\rvert$. Disjointness would require the overlap to be empty."
+  },
+  {
+    "id": "math-1-8",
+    "case_id": "MATH 1.08",
+    "title": "Pairwise Disjoint Blocks and a Partition of U",
+    "subsection": "1.1",
+    "context": "Let $U = \\{1, 2,..., 9\\}$, and let $A = \\{1, 2, 3\\}$, $B = \\{4, 5, 6\\}$, $C = \\{7, 8, 9\\}$.",
+    "statements": [
+      "A, B, and C are pairwise disjoint",
+      "$\\{A, B, C\\}$ forms a partition of U, since $A \\cup B \\cup C = U$ and the sets are pairwise disjoint",
+      "$A \\cap B \\cap C = \\emptyset$",
+      "$A \\setminus B = \\emptyset$",
+      "Since $A \\cap B = \\emptyset$, it follows that $A = \\emptyset$ or $B = \\emptyset$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe three blocks occupy $\\{1,2,3\\}$, $\\{4,5,6\\}$, and $\\{7,8,9\\}$ with no shared integers, so\n\n$$A \\cap B = \\emptyset, \\qquad A \\cap C = \\emptyset, \\qquad B \\cap C = \\emptyset$$\n\nEvery pair is disjoint, so the statement is True.",
+      "**B.** → True\n\nThe blocks are nonempty and pairwise disjoint. Their union is\n\n$$A \\cup B \\cup C = \\{1,2,3,4,5,6,7,8,9\\} = U$$\n\nso $\\{A,B,C\\}$ is a partition of $U$, so the statement is True.",
+      "**C.** → True\n\nPairwise disjointness already forces the triple intersection to be empty:\n\n$$A \\cap B \\cap C = \\emptyset$$\n\nso the statement is True.",
+      "**D.** → False\n\nDifference $A\\setminus B$ keeps members of $A$ that miss $B$. None of $1,2,3$ sits in $B$, so\n\n$$A \\setminus B = \\{1,2,3\\}$$\n\nThe claim is $\\emptyset$, so the statement is False.",
+      "**E.** → False\n\nAn empty intersection does not force a factor empty. Here $A\\cap B=\\emptyset$ even though both $A=\\{1,2,3\\}$ and $B=\\{4,5,6\\}$ are nonempty, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 8,
+    "solution_overview": "The blocks sit in separate thirds of $U=\\{1,2,\\ldots,9\\}$:\n\n$$A=\\{1,2,3\\},\\quad B=\\{4,5,6\\},\\quad C=\\{7,8,9\\}.$$\n\nPairwise disjointness means every pair of blocks shares nothing. A partition of $U$ needs nonempty blocks, pairwise disjointness, and union equal to $U$. Difference $A\\setminus B$ keeps members of $A$ that miss $B$. An empty intersection does not force either factor to be empty."
+  },
+  {
+    "id": "math-1-9",
+    "case_id": "MATH 1.09",
+    "title": "Complements of Overlapping Skill Sets",
+    "subsection": "1.1",
+    "context": "Among U = 12 employees (numbered 1-12), let $X = \\{1,2,3,4,5,6\\}$ be those who know Python, and $Y = \\{4,5,6,7,8,9\\}$ be those who know SQL. Complements are taken relative to U.",
+    "statements": [
+      "$X^{c} = \\{7, 8, 9, 10, 11, 12\\}$",
+      "$(X \\cup Y)^{c} = \\{10, 11, 12\\}$",
+      "$X^{c} \\cap Y^{c} = \\{10, 11, 12\\}$",
+      "$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$",
+      "$X^{c} \\cup Y^{c} = \\{1, 2, 3, 10, 11, 12\\}$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$. The claim is that same roster, so the statement is True.",
+      "**B.** → True\n\nThe union is $X\\cup Y=\\{1,2,\\ldots,9\\}$. Complementing in $U$ leaves\n\n$$(X \\cup Y)^{c} = \\{10,11,12\\}$$\n\nThe claim is that same roster, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$ and $Y^{c}=\\{1,2,3,10,11,12\\}$. Their intersection is\n\n$$X^{c} \\cap Y^{c} = \\{10,11,12\\}$$\n\nThe claim is that same roster, so the statement is True.",
+      "**D.** → True\n\nDe Morgan's law says the complement of an intersection is the union of the complements:\n\n$$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$$\n\nThis identity holds for every pair of sets. Checking the recovered lists: $X\\cap Y=\\{4,5,6\\}$, so the left side is $\\{1,2,3,7,8,9,10,11,12\\}$, which matches $X^{c}\\cup Y^{c}$, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$ and $Y^{c}=\\{1,2,3,10,11,12\\}$. Their union is\n\n$$X^{c} \\cup Y^{c} = \\{1,2,3,7,8,9,10,11,12\\}$$\n\nThe claim drops $7,8,9$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "Among $U=\\{1,2,\\ldots,12\\}$, Python knowers are $X=\\{1,2,3,4,5,6\\}$ and SQL knowers are $Y=\\{4,5,6,7,8,9\\}$. Complements are taken in $U$.\n\nThe complement of a set is everyone in $U$ that the set leaves out:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}, \\qquad Y^{c}=\\{1,2,3,10,11,12\\}.$$\n\nDe Morgan's laws: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ and $(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$. Escaping a union means missing both skills."
+  },
+  {
+    "id": "math-1-10",
+    "case_id": "MATH 1.10",
+    "title": "Union and Intersection Complements for Two Overlapping Sets",
+    "subsection": "1.1",
+    "context": "Let the universal set be $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{4, 5, 6, 7, 8\\}$, with complements taken relative to U.",
+    "statements": [
+      "$(A \\cup B)^{c} = \\{8, 9, 10\\}$",
+      "$(A \\cap B)^{c} = A^{c} \\cup B^{c}$",
+      "$A^{c} \\cap B^{c} = \\{6, 7, 8, 9, 10\\}$",
+      "$(A \\cap B)^{c} = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$",
+      "$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$"
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe union is $A\\cup B=\\{1,2,\\ldots,8\\}$. Complementing in $U$ leaves\n\n$$(A \\cup B)^{c} = \\{9,10\\}$$\n\nThe claim includes $8$, but $8\\in B$, so the statement is False.",
+      "**B.** → True\n\nDe Morgan's law says\n\n$$(A \\cap B)^{c} = A^{c} \\cup B^{c}$$\n\nThis identity holds for every pair of sets, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$. Their intersection is\n\n$$A^{c} \\cap B^{c} = \\{9,10\\}$$\n\nThe claim keeps $6,7,8$, which sit in $B$ and therefore miss $B^{c}$, so the statement is False.",
+      "**D.** → True\n\nThe intersection is $A\\cap B=\\{4,5\\}$. Complementing in $U$ leaves\n\n$$(A \\cap B)^{c} = \\{1,2,3,6,7,8,9,10\\}$$\n\nThe claim is that same roster, so the statement is True.",
+      "**E.** → False\n\nThe overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$. Their union is\n\n$$A^{c} \\cup B^{c} = \\{1,2,3,6,7,8,9,10\\}$$\n\nThe claim drops $6,7,8$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "Let $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$. Complements are taken in $U$.\n\nThe complement of a set is everyone in $U$ that the set leaves out:\n\n$$A^{c}=\\{6,7,8,9,10\\}, \\qquad B^{c}=\\{1,2,3,9,10\\}.$$\n\nDe Morgan's laws: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ and $(A\\cap B)^{c}=A^{c}\\cup B^{c}$."
+  },
+  {
+    "id": "math-1-11",
+    "case_id": "MATH 1.11",
+    "title": "Partitions of a set",
+    "subsection": "1.1",
+    "context": "Let $A = \\{1, 2, 3, 4, 5, 6\\}$. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.",
+    "statements": [
+      "$P = \\{\\{1,2\\}, \\{3,4\\}, \\{5,6\\}\\}$ is a partition of A.",
+      "Every partition of a set must have exactly the same number of blocks as the set has elements.",
+      "$Q = \\{\\{1,2,3\\}, \\{3,4,5,6\\}\\}$ is a partition of A.",
+      "$R = \\{\\{1,2\\}, \\{3,4\\}, \\{5\\}\\}$ is a partition of A.",
+      "A set with $n \\ge 2$ elements always has more than one possible partition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and\n\n$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = A$$\n\nso $P$ is a partition of $A$, so the statement is True.",
+      "**B.** → False\n\nA partition need not have one block per element. The one-block collection $\\{A\\}$ is a partition of $A$, and the pairing $\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ is another, with $3$ blocks rather than $6$. The claim requires every partition to have exactly $6$ blocks, so the statement is False.",
+      "**C.** → False\n\nThe two blocks of $Q$ both contain $3$:\n\n$$\\{1,2,3\\} \\cap \\{3,4,5,6\\} = \\{3\\}$$\n\nThe overlap is nonempty, so $Q$ is not a partition, so the statement is False.",
+      "**D.** → False\n\nThe union of the blocks of $R$ is\n\n$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5\\} = \\{1,2,3,4,5\\}$$\n\nwhich misses $6\\in A$, so $R$ is not a partition of $A$, so the statement is False.",
+      "**E.** → True\n\nThe overview recorded two distinct partitions of any set with $n\\ge 2$ elements: the one-block collection $\\{A\\}$, and the collection of $n$ singletons. So more than one partition always exists, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "Let $A=\\{1,2,3,4,5,6\\}$. A collection partitions $A$ only when all three hold: every block nonempty, blocks pairwise disjoint, and union equal to $A$.\n\nBlock count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is an $n$-block partition. Those two constructions are different whenever $n\\ge 2$."
+  },
+  {
+    "id": "math-1-12",
+    "case_id": "MATH 1.12",
+    "title": "Counting subsets",
+    "subsection": "1.1",
+    "context": "Let A be a set with $\\lvert A \\rvert = 5$.",
+    "statements": [
+      "The number of subsets of A is 32.",
+      "The number of proper subsets of A is 31.",
+      "The number of subsets of A containing exactly 4 elements is 10.",
+      "The number of nonempty subsets of A is 31.",
+      "The number of subsets of A containing an even number of elements (0, 2, or 4) is 15."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $2^{5}=32$ subsets. The claim is $32$, so the statement is True.",
+      "**B.** → True\n\nProper subsets are all subsets except $A$ itself:\n\n$$32 - 1 = 31$$\n\nThe claim is $31$, so the statement is True.",
+      "**C.** → False\n\nThe number of $4$-element subsets of a $5$-element set is\n\n$$\\binom{5}{4} = 5$$\n\nThe claim is $10$, so the statement is False.",
+      "**D.** → True\n\nNonempty subsets are all subsets except $\\emptyset$:\n\n$$32 - 1 = 31$$\n\nThe claim is $31$, so the statement is True.",
+      "**E.** → False\n\nThe even sizes available in a $5$-element set are $0$, $2$, and $4$:\n\n$$\\binom{5}{0} + \\binom{5}{2} + \\binom{5}{4} = 1 + 10 + 5 = 16$$\n\nThe claim is $15$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 12,
+    "solution_overview": "Let $A$ be a set with $\\lvert A \\rvert = 5$. Each subset is an include/exclude choice for every element, so\n\n$$2^{5} = 32$$\n\nsubsets in total.\n\nProper subsets drop $A$ itself. Nonempty subsets drop $\\emptyset$. Size counts use binomial coefficients $\\binom{5}{k}$. Even-sized subsets are those with $k=0,2,4$."
+  },
+  {
+    "id": "math-1-13",
+    "case_id": "MATH 1.13",
+    "title": "Interval Notation: Half-Open Intersections and a Universal Claim",
+    "subsection": "1.1",
+    "context": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.",
+    "statements": [
+      "$A \\cap B = [5, 10]$",
+      "$A \\cup B = (0, 15]$",
+      "$10 \\in A \\cap B$",
+      "$5 \\in A \\setminus B$",
+      "The statement \"$x \\in A \\Rightarrow x \\in B$\" is true for all x."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe lower bound of the intersection is the stricter of $x>0$ and $x\\ge 5$, hence $x\\ge 5$. The upper bound is the stricter of $x\\le 10$ and $x<15$, hence $x\\le 10$. So\n\n$$A \\cap B = [5,10]$$\n\nThe claim matches, so the statement is True.",
+      "**B.** → False\n\nThe union runs from just above $0$ to just below $15$:\n\n$$A \\cup B = (0,15)$$\n\nThe claim is $(0,15]$, which includes $15$. But $15\\notin B$ because $B$ is open at $15$, and $15\\notin A$, so the statement is False.",
+      "**C.** → True\n\nThe point $10$ satisfies $0<10\\le 10$, so $10\\in A$. It also satisfies $5\\le 10<15$, so $10\\in B$. Hence $10\\in A\\cap B$, so the statement is True.",
+      "**D.** → False\n\nThe point $5$ satisfies $0<5\\le 10$, so $5\\in A$. It also satisfies $5\\le 5<15$, so $5\\in B$. Difference $A\\setminus B$ cannot keep a point of $B$, so $5\\notin A\\setminus B$, so the statement is False.",
+      "**E.** → False\n\nThe claim is $A\\subseteq B$. A counterexample is $x=1$:\n\n$$1 \\in A, \\qquad 1 \\notin B$$\n\nbecause $1<5$. The implication fails, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 13,
+    "solution_overview": "Translate brackets into inequalities first.\n\n$$A=(0,10] \\iff 0 < x \\le 10, \\qquad B=[5,15) \\iff 5 \\le x < 15.$$\n\nIntersection takes the tighter bounds. Union runs from the leftmost open end to the rightmost open end. Difference $A\\setminus B$ keeps points of $A$ that miss $B$. The implication $x\\in A \\Rightarrow x\\in B$ for all $x$ is the inclusion $A\\subseteq B$."
+  },
+  {
+    "id": "math-1-14",
+    "case_id": "MATH 1.14",
+    "title": "Three-Way Museum Visits and Inclusion-Exclusion",
+    "subsection": "1.1",
+    "context": "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.",
+    "statements": [
+      "$\\lvert A \\cup B \\cup C \\rvert = 155$",
+      "The number of tourists who visited none of the three museums is 5",
+      "The number who visited exactly A and B (but not C) is 30",
+      "The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30",
+      "The number who visited at least two of the three museums is 65"
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe overview recovered $\\lvert A \\cup B \\cup C \\rvert = 145$. The claim is $155$, so the statement is False.",
+      "**B.** → True\n\nThe overview recovered a union of $145$ among $150$ tourists. The remainder is\n\n$$150 - 145 = 5$$\n\nThe claim is $5$, so the statement is True.",
+      "**C.** → False\n\nThe pairwise total $\\lvert A \\cap B \\rvert = 30$ still includes the $10$ visitors to all three museums. The exact $A$-and-$B$-only region is\n\n$$30 - 10 = 20$$\n\nThe claim is $30$, so the statement is False.",
+      "**D.** → False\n\nOnly Museum $A$ excludes $B$ and $C$. Subtracting both pair totals from $\\lvert A \\rvert$ double-subtracts the triple, so add it back:\n\n$$\\lvert A \\setminus (B \\cup C) \\rvert = 80 - 30 - 20 + 10 = 40$$\n\nThe claim computes $80-30-20=30$ and never adds $10$, so the statement is False.",
+      "**E.** → False\n\nAt least two museums means the three exact-pair regions plus the triple:\n\n$$30 - 10 = 20, \\qquad 25 - 10 = 15, \\qquad 20 - 10 = 10$$\n\n$$20 + 15 + 10 + 10 = 55$$\n\nThe claim is $65$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 14,
+    "solution_overview": "A survey of $150$ tourists records $\\lvert A \\rvert = 80$, $\\lvert B \\rvert = 70$, $\\lvert C \\rvert = 60$, pairwise totals $\\lvert A \\cap B \\rvert = 30$, $\\lvert B \\cap C \\rvert = 25$, $\\lvert A \\cap C \\rvert = 20$, and $\\lvert A \\cap B \\cap C \\rvert = 10$.\n\nThree-set inclusion-exclusion is\n\n$$\\lvert A \\cup B \\cup C \\rvert = \\lvert A \\rvert + \\lvert B \\rvert + \\lvert C \\rvert - \\lvert A \\cap B \\rvert - \\lvert B \\cap C \\rvert - \\lvert A \\cap C \\rvert + \\lvert A \\cap B \\cap C \\rvert.$$\n\n$$80 + 70 + 60 - 30 - 25 - 20 + 10 = 145$$\n\nPair totals still include the triple, so an exact-pair region subtracts $10$. Only-$A$ subtracts both pair totals from $\\lvert A \\rvert$ and adds the triple back once."
+  },
+  {
+    "id": "math-1-15",
+    "case_id": "MATH 1.15",
+    "title": "Infinite sets and cardinality",
+    "subsection": "1.1",
+    "context": "Let $N = \\{1, 2, 3,...\\}$ be the natural numbers and $E = \\{2, 4, 6,...\\}$ be the even natural numbers.",
+    "statements": [
+      "E is a proper subset of N.",
+      "Since E is a proper subset of N, E must have strictly fewer elements than N.",
+      "The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.",
+      "The fact that $E \\subsetneq N$ yet has the same cardinality as N shows that the finite-set intuition “proper subset $\\Rightarrow$ fewer elements” does not carry over to infinite sets.",
+      "Every infinite subset of N is equal to N itself (contains all the natural numbers)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEvery positive even is a natural number, so $E\\subseteq N$. The odd $1$ sits in $N$ but not in $E$, so $E\\ne N$. The inclusion is proper, so the statement is True.",
+      "**B.** → False\n\nThe overview recovered a bijection $f(n)=2n$ from $N$ onto $E$, so $\\lvert E \\rvert = \\lvert N \\rvert$ even though $E$ is a proper subset of $N$. The finite-set slogan does not apply here, so the statement is False.",
+      "**C.** → False\n\nThe formula $f(n)=2n$ always outputs an even integer, so its image is $E$, not the odd naturals. A bijection $N$ onto the odds would be $n\\mapsto 2n-1$. The claimed correspondence is the wrong codomain, so the statement is False.",
+      "**D.** → True\n\nEvery positive even is a natural, but $1\\in N\\setminus E$, so $E\\subsetneq N$. The overview recovered $\\lvert E \\rvert = \\lvert N \\rvert$. Same cardinality with a proper subset is exactly why the finite-set slogan fails for infinite sets, so the statement is True.",
+      "**E.** → False\n\nThe set $E$ itself is an infinite subset of $N$ that is not equal to $N$, because $1\\in N\\setminus E$. So not every infinite subset of $N$ equals $N$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 15,
+    "solution_overview": "Let $N=\\{1,2,3,\\ldots\\}$ and $E=\\{2,4,6,\\ldots\\}$.\n\nA proper subset is a subset that is not equal to the whole. Two infinite sets have the same cardinality when a bijection exists between them. The map $f(n)=2n$ sends each natural to a unique positive even and hits every positive even, so it is a bijection $N\\to E$ and $\\lvert E \\rvert = \\lvert N \\rvert$."
+  },
+  {
+    "id": "math-1-16",
+    "case_id": "MATH 1.16",
+    "title": "Elements vs. Subsets of an Even-Number Set",
+    "subsection": "1.1",
+    "context": "Let $A = \\{2, 4, 6, 8, 10, 12\\}$.",
+    "statements": [
+      "$6 \\in A$.",
+      "$\\{6\\} \\in A$.",
+      "$\\{6, 8\\} \\subseteq A$.",
+      "$\\emptyset \\subseteq A$.",
+      "A has exactly $63$ proper subsets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe number $6$ sits on the roster of $A$, so $6\\in A$, so the statement is True.",
+      "**B.** → False\n\nThe elements of $A$ are the six even numbers. The singleton $\\{6\\}$ is a set, not a number, so $\\{6\\}\\notin A$, so the statement is False.",
+      "**C.** → True\n\nBoth $6$ and $8$ sit in $A$, so $\\{6,8\\}\\subseteq A$, so the statement is True.",
+      "**D.** → True\n\nThe empty set has no member that could sit outside $A$, so $\\emptyset\\subseteq A$, so the statement is True.",
+      "**E.** → True\n\nAn $n$-element set has $2^{n}$ subsets, so here\n\n$$2^{6} = 64$$\n\nProper subsets exclude $A$ itself:\n\n$$64 - 1 = 63$$\n\nThe claim is $63$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 16,
+    "solution_overview": "Let $A=\\{2,4,6,8,10,12\\}$, six even numbers and nothing else.\n\nMembership $x\\in A$ asks whether $x$ is one of those six numbers. Inclusion $S\\subseteq A$ asks whether every member of $S$ is one of those six. The empty set is a subset of every set. An $n$-element set has $2^{n}$ subsets, and proper subsets drop $A$ itself."
+  },
+  {
+    "id": "math-1-17",
+    "case_id": "MATH 1.17",
+    "title": "Set-Builder Notation from a Quadratic Condition",
+    "subsection": "1.1",
+    "context": "Let $A = \\{x \\in \\mathbb{Z} : x^2 - 5x + 6 = 0\\}$ and $B = \\{2, 3\\}$.",
+    "statements": [
+      "$A = B$.",
+      "$3 \\in A$.",
+      "$A = \\{2\\}$ (only the smaller root).",
+      "$\\lvert A\\rvert = 2$.",
+      "$C = \\{x \\in \\mathbb{N} : x^2 - 5x + 6 = 0 \\land x > 2\\}$ satisfies $C = \\{3\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $A=\\{2,3\\}$. $B$ is given as $\\{2,3\\}$. The two rosters match, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $A=\\{2,3\\}$. The integer $3$ sits on that roster, so $3\\in A$, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered $A=\\{2,3\\}$. The claim reprints $A$ as the singleton $\\{2\\}$ and drops $3$, even though $3$ is an integer root. The two sets are unequal, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered two distinct members, $2$ and $3$, so\n\n$$\\lvert A \\rvert = 2$$\n\nThe claim is that same count, so the statement is True.",
+      "**E.** → True\n\nThe same roots $2$ and $3$ must now pass $x\\in\\mathbb{N}$ and $x>2$. The root $2$ fails $x>2$. The root $3$ is natural and strictly larger than $2$, so\n\n$$C=\\{3\\}$$\n\nThe claim is that same singleton, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 17,
+    "solution_overview": "The set-builder $A=\\{x\\in\\mathbb{Z}:x^{2}-5x+6=0\\}$ keeps the integer solutions of the quadratic. $B$ is given as $\\{2,3\\}$.\n\nA set-builder keeps those members of the named universe that satisfy the stated equation. Changing the universe, or adding an extra inequality, produces a different set.\n\nFactor the quadratic:\n\n$$x^{2} - 5x + 6 = (x-2)(x-3) = 0.$$\n\nThe roots are $x=2$ and $x=3$. Both are integers, so\n\n$$A=\\{2,3\\}.$$"
+  },
+  {
+    "id": "math-1-18",
+    "case_id": "MATH 1.18",
+    "title": "Counting the Power Set of a Four-Letter Set",
+    "subsection": "1.1",
+    "context": "Let $D = \\{w, x, y, z\\}$.",
+    "statements": [
+      "$\\mathcal{P}(D)$ has $16$ elements.",
+      "$\\{w, x\\} \\in \\mathcal{P}(D)$.",
+      "There are exactly $4$ subsets of D containing exactly $3$ elements.",
+      "$D \\in \\mathcal{P}(D)$.",
+      "There are exactly $5$ subsets of D containing exactly $2$ elements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach of the four letters can be kept or left out, so\n\n$$\\lvert \\mathcal{P}(D) \\rvert = 2^{4} = 16$$\n\nThe claim is $16$, so the statement is True.",
+      "**B.** → True\n\nBoth $w$ and $x$ sit in $D$, so $\\{w,x\\}\\subseteq D$. Membership in the power set is subsethood of $D$, hence $\\{w,x\\}\\in\\mathcal{P}(D)$, so the statement is True.",
+      "**C.** → True\n\nChoosing $3$ letters out of $4$ is choosing which one letter to omit:\n\n$$\\binom{4}{3} = 4$$\n\nThe claim is $4$, so the statement is True.",
+      "**D.** → True\n\nEvery set is a subset of itself, so $D\\subseteq D$. Therefore $D\\in\\mathcal{P}(D)$, so the statement is True.",
+      "**E.** → False\n\nThe number of $2$-element subsets of a $4$-element set is\n\n$$\\binom{4}{2} = 6$$\n\nThe claim is $5$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 18,
+    "solution_overview": "Four letters $D=\\{w,x,y,z\\}$ mean each letter is in or out independently, so $\\lvert \\mathcal{P}(D) \\rvert = 2^{4}$.\n\nA set $S$ belongs to the power set precisely when $S\\subseteq D$. Size counts use binomial coefficients $\\binom{4}{k}$."
+  },
+  {
+    "id": "math-1-19",
+    "case_id": "MATH 1.19",
+    "title": "Subset, Proper Subset, and Self-Containment",
+    "subsection": "1.1",
+    "context": "Let $E = \\{1, 2, 3\\}$ and $F = \\{1, 2, 3, 4\\}$.",
+    "statements": [
+      "$E \\subseteq F$.",
+      "$E \\subsetneq F$ (E is a proper subset of F).",
+      "$F \\subseteq E$.",
+      "$E \\subseteq E$.",
+      "$E \\subsetneq E$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach of $1$, $2$, and $3$ sits in $F$, so $E\\subseteq F$, so the statement is True.",
+      "**B.** → True\n\nEach of $1$, $2$, and $3$ sits in $F$, so $E\\subseteq F$. The extra integer $4$ sits in $F$ but not in $E$, so $E\\ne F$. The inclusion is proper, so the statement is True.",
+      "**C.** → False\n\nThe integer $4$ sits in $F$ but not in $E$, so $F\\not\\subseteq E$, so the statement is False.",
+      "**D.** → True\n\nEvery member of $E$ sits in $E$, so $E\\subseteq E$, so the statement is True.",
+      "**E.** → False\n\nProper inclusion needs $E\\subseteq E$ and $E\\ne E$. The inequality $E\\ne E$ is impossible, so $E$ is not a proper subset of $E$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 19,
+    "solution_overview": "Compare $E=\\{1,2,3\\}$ with $F=\\{1,2,3,4\\}$.\n\nOrdinary inclusion $X\\subseteq Y$ asks whether every member of $X$ sits in $Y$. Proper inclusion also needs $X\\ne Y$. Inclusion is reflexive: $E\\subseteq E$. Proper self-inclusion would also need $E\\ne E$, which never happens."
+  },
+  {
+    "id": "math-1-20",
+    "case_id": "MATH 1.20",
+    "title": "Testing Whether a Collection Partitions a Set",
+    "subsection": "1.1",
+    "context": "Let $G = \\{1, 2, 3, 4, 5, 6\\}$, and consider the collection $\\mathcal{S} = \\{\\{1, 2\\}, \\{3, 4\\}, \\{5, 6\\}\\}$.",
+    "statements": [
+      "The blocks of $\\mathcal{S}$ are pairwise disjoint.",
+      "The union of the blocks of $\\mathcal{S}$ equals G.",
+      "$\\mathcal{S}$ is a partition of G.",
+      "$\\mathcal{S}' = \\{\\{1, 2\\}, \\{2, 3, 4\\}, \\{5, 6\\}\\}$ is also a partition of G.",
+      "Replacing $\\{5, 6\\}$ with $\\{5, 6, 7\\}$ would still give a partition of G."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe three blocks occupy $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ with no shared integers, so they are pairwise disjoint, so the statement is True.",
+      "**B.** → True\n\nThe union of the blocks is\n\n$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = \\{1,2,3,4,5,6\\} = G$$\n\nso the statement is True.",
+      "**C.** → True\n\nThe blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and their union is $G$. Those are the three partition checks, so $\\mathcal{S}$ is a partition of $G$, so the statement is True.",
+      "**D.** → False\n\nThe first two blocks of $\\mathcal{S}'$ both contain $2$:\n\n$$\\{1,2\\} \\cap \\{2,3,4\\} = \\{2\\}$$\n\nThe overlap is nonempty, so $\\mathcal{S}'$ is not a partition, so the statement is False.",
+      "**E.** → False\n\nThe replacement block $\\{5,6,7\\}$ contains $7$, and $7\\notin G$. A partition of $G$ cannot use a block that fails to be a subset of $G$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 20,
+    "solution_overview": "Let $G=\\{1,2,3,4,5,6\\}$ and $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$.\n\nA partition needs pairwise disjoint nonempty blocks whose union is $G$, and those blocks must be subsets of $G$. Overlap kills disjointness. An outsider such as $7$ is not a member of $G$, so a block containing $7$ cannot be a block of a partition of $G$."
+  }
+]

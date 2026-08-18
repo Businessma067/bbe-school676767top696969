@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-11-41",
+    "case_id": "MATH 11.41",
+    "title": "Present Value of a Client Bonus Payment",
+    "subsection": "11.3",
+    "context": "Ms. Kettering, owner of a small marketing agency, has been promised a \\$8,000 performance bonus by a client, payable in exactly 1 year. The prevailing interest rate for such arrangements is 5% per year, compounded annually, so this is a single-payment present-value problem with $K = \\$8,000$, r = 0.05, and t = 1.",
+    "statements": [
+      "The discount factor is approximately 0.9524.",
+      "The PDV of the \\$8,000 bonus is approximately \\$7,619.05.",
+      "If the interest rate were 10% instead of 5%, the PDV of the \\$8,000 bonus would be higher than its value under the original 5% rate.",
+      "The difference between the \\$8,000 future bonus and its present value is approximately \\$423.81.",
+      "If the interest rate were 0% per year, the present value of the \\$8,000 bonus would be exactly \\$7,500."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The discount factor is approximately 0.9524.**  (true)\n\nThe overview recovered the one-year discount factor $(1.05)^{-1}\\approx 0.9524$. The claim is that same figure, so the statement is True.",
+      "**B) The PDV of the \\$8,000 bonus is approximately \\$7,619.05.**  (true)\n\nThe overview recovered $\\mathrm{PDV}\\approx 7{,}619.05$. The claim is \\$7,619.05, so the statement is True.",
+      "**C) If the interest rate were 10% instead of 5%, the PDV of the \\$8,000 bonus would be higher than its value under the original 5% rate.**  (false)\n\nA higher discount rate lowers present value. At $r=0.10$:\n\n$$\\mathrm{PDV}=\\frac{8{,}000}{1.10}\\approx 7{,}272.73$$\n\nThe overview recovered $\\mathrm{PDV}\\approx 7{,}619.05$ at $5\\%$. We have $7{,}272.73<7{,}619.05$, so the statement is False.",
+      "**D) The difference between the \\$8,000 future bonus and its present value is approximately \\$423.81.**  (false)\n\nThe overview recovered $\\mathrm{PDV}\\approx 7{,}619.05$. Face value minus present value is\n\n$$8{,}000-7{,}619.05=380.95$$\n\nThe claim is \\$423.81, so the statement is False.",
+      "**E) If the interest rate were 0% per year, the present value of the \\$8,000 bonus would be exactly \\$7,500.**  (false)\n\nAt $r=0$ the discount factor is $1$:\n\n$$\\mathrm{PDV}=8{,}000\\times 1=8{,}000$$\n\nThe claim is \\$7,500, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 41,
+    "solution_overview": "Ms. Kettering has been promised a \\$8,000 performance bonus in exactly 1 year. The prevailing rate is 5% per year, compounded annually.\n\n**Part 1: Setup.**\n\n$$K = 8{,}000, \\qquad r = 0.05, \\qquad t = 1$$\n\nA single future payment discounts through the annual growth factor:\n\n$$\\mathrm{PDV} = K(1+r)^{-t}$$\n\n**Part 2: Solve.**\n\n$$(1.05)^{-1} = \\frac{1}{1.05} \\approx 0.9524$$\n\n$$\\mathrm{PDV} = \\frac{8{,}000}{1.05} \\approx 7{,}619.05$$"
+  },
+  {
+    "id": "math-11-42",
+    "case_id": "MATH 11.42",
+    "title": "Continuous Compounding on a Consulting Milestone Payment",
+    "subsection": "11.3",
+    "context": "A freelance IT consultant will receive a \\$12,000 milestone payment from a client in 3 years upon final project sign-off. The client's finance department discounts all deferred payables continuously, at a rate of 6% per year, so this problem uses $K = \\$12,000$, r = 0.06, and t = 3 under continuous compounding.",
+    "statements": [
+      "The continuous discount factor is approximately 0.8353.",
+      "The PDV of the \\$12,000 payment is approximately \\$10,023.24.",
+      "The present value computed with continuous compounding is greater than the present value computed with annual compounding at the same 6% rate over the same 3 years.",
+      "The annual-compounding PDV exceeds the continuous-compounding PDV by approximately \\$60.00.",
+      "If the payment were instead due in 6 years rather than 3, its present value would be less than the present value found for the original 3-year horizon."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The continuous discount factor is approximately 0.8353.**  (true)\n\nThe overview recovered the continuous factor $e^{-0.18}\\approx 0.8353$. The claim is that same figure, so the statement is True.",
+      "**B) The PDV of the \\$12,000 payment is approximately \\$10,023.24.**  (true)\n\nThe overview recovered $\\mathrm{PDV}\\approx 10{,}023.24$. The claim is \\$10,023.24, so the statement is True.",
+      "**C) The present value computed with continuous compounding is greater than the present value computed with annual compounding at the same 6% rate over the same 3 years.**  (false)\n\nThe overview recovered the continuous value $\\mathrm{PDV}\\approx 10{,}023.24$ and the annual value $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 10{,}075.43$. We have $10{,}023.24<10{,}075.43$, so the statement is False.",
+      "**D) The annual-compounding PDV exceeds the continuous-compounding PDV by approximately \\$60.00.**  (false)\n\nThe overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 10{,}075.43$ and $\\mathrm{PDV}\\approx 10{,}023.24$:\n\n$$10{,}075.43-10{,}023.24=52.19$$\n\nThe claim is \\$60.00, so the statement is False.",
+      "**E) If the payment were instead due in 6 years rather than 3, its present value would be less than the present value found for the original 3-year horizon.**  (true)\n\nIf the payment is due in $6$ years instead,\n\n$$rt=0.06\\times 6=0.36$$\n\n$$\\mathrm{PDV}=12{,}000\\,e^{-0.36}\\approx 8{,}372.12$$\n\nThe overview recovered $\\mathrm{PDV}\\approx 10{,}023.24$ at $3$ years. We have $8{,}372.12<10{,}023.24$, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 42,
+    "solution_overview": "A freelance IT consultant will receive a \\$12,000 milestone payment in 3 years. The client's finance department discounts continuously at 6% per year.\n\n**Part 1: Setup.**\n\n$$K = 12{,}000, \\qquad r = 0.06, \\qquad t = 3$$\n\nContinuous discounting uses\n\n$$\\mathrm{PDV} = Ke^{-rt}$$\n\nAnnual compounding at the same rate uses\n\n$$\\mathrm{PDV}_{\\mathrm{ann}} = K(1+r)^{-t}$$\n\n**Part 2: Solve.**\n\n$$rt = 0.06 \\times 3 = 0.18$$\n\n$$e^{-0.18} \\approx 0.8353$$\n\n$$\\mathrm{PDV} = 12{,}000e^{-0.18} \\approx 10{,}023.24$$\n\n$$(1.06)^{3} \\approx 1.191016$$\n\n$$\\mathrm{PDV}_{\\mathrm{ann}} = \\frac{12{,}000}{1.191016} \\approx 10{,}075.43$$"
+  },
+  {
+    "id": "math-11-43",
+    "case_id": "MATH 11.43",
+    "title": "Escrowed Sale Proceeds for a Landlord",
+    "subsection": "11.3",
+    "context": "A landlord is due to receive \\$45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses $K = \\$45,000$, r = 0.07, and t = 8 under both methods.",
+    "statements": [
+      "The annual discount factor is approximately 0.5820.",
+      "The present value under annual compounding is approximately \\$26,190.41.",
+      "The present value under continuous compounding is approximately \\$24,900.00.",
+      "The annual-compounding present value exceeds the continuous-compounding present value by approximately \\$650.00.",
+      "If the interest rate were 0% per year, both compounding methods would give an identical present value of exactly \\$40,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The annual discount factor is approximately 0.5820.**  (true)\n\nThe overview recovered the annual factor $(1.07)^{-8}\\approx 0.5820$. The claim is that same figure, so the statement is True.",
+      "**B) The present value under annual compounding is approximately \\$26,190.41.**  (true)\n\nThe overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 26{,}190.41$. The claim is \\$26,190.41, so the statement is True.",
+      "**C) The present value under continuous compounding is approximately \\$24,900.00.**  (false)\n\nThe overview recovered $\\mathrm{PDV}_{\\mathrm{cont}}\\approx 25{,}704.41$. The claim is \\$24,900.00, so the statement is False.",
+      "**D) The annual-compounding present value exceeds the continuous-compounding present value by approximately \\$650.00.**  (false)\n\nThe overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 26{,}190.41$ and $\\mathrm{PDV}_{\\mathrm{cont}}\\approx 25{,}704.41$:\n\n$$26{,}190.41-25{,}704.41=486.00$$\n\nThe claim is \\$650.00, so the statement is False.",
+      "**E) If the interest rate were 0% per year, both compounding methods would give an identical present value of exactly \\$40,000.**  (false)\n\nAt $r=0$ both discount factors equal $1$:\n\n$$\\mathrm{PDV}=45{,}000\\times 1=45{,}000$$\n\nThe claim is \\$40,000, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 43,
+    "solution_overview": "A landlord is due \\$45,000 in escrowed sale proceeds in 8 years. The applicable rate is 7% per year. Present value is computed under both annual and continuous compounding.\n\n**Part 1: Setup.**\n\n$$K = 45{,}000, \\qquad r = 0.07, \\qquad t = 8$$\n\nAnnual compounding uses\n\n$$\\mathrm{PDV}_{\\mathrm{ann}} = K(1+r)^{-t}$$\n\nContinuous compounding uses\n\n$$\\mathrm{PDV}_{\\mathrm{cont}} = Ke^{-rt}$$\n\n**Part 2: Solve.**\n\n$$(1.07)^{8} \\approx 1.718186, \\qquad (1.07)^{-8} \\approx 0.5820$$\n\n$$\\mathrm{PDV}_{\\mathrm{ann}} = 45{,}000 \\times (1.07)^{-8} \\approx 26{,}190.41$$\n\n$$rt = 0.07 \\times 8 = 0.56, \\qquad e^{-0.56} \\approx 0.5712$$\n\n$$\\mathrm{PDV}_{\\mathrm{cont}} = 45{,}000e^{-0.56} \\approx 25{,}704.41$$"
+  },
+  {
+    "id": "math-11-44",
+    "case_id": "MATH 11.44",
+    "title": "Funding a Future Equipment Purchase",
+    "subsection": "11.3",
+    "context": "A dental practice wants to have exactly \\$150,000 available in 5 years to purchase new imaging equipment. Its bank offers a continuous annual interest rate of 4.5% on a dedicated savings account, and the practice wants to know how much it must deposit today, i.e., the present value of the \\$150,000 goal under $K = \\$150,000$, r = 0.045, and t = 5.",
+    "statements": [
+      "The continuous discount factor is approximately 0.8125.",
+      "The practice must deposit approximately \\$119,777.40 today to reach its \\$150,000 goal in 5 years.",
+      "If the practice deposited only \\$110,000 today instead, it would still reach the \\$150,000 goal after 5 years at this rate.",
+      "If the bank instead compounded the same 4.5% nominal rate annually rather than continuously, the required deposit today would be lower than the deposit required under continuous compounding.",
+      "Doubling the time horizon to 10 years would require depositing exactly half of the amount required for the original 5-year horizon today."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The continuous discount factor is approximately 0.8125.**  (false)\n\nThe overview recovered the continuous factor $e^{-0.225}\\approx 0.7985$. The claim is $0.8125$, so the statement is False.",
+      "**B) The practice must deposit approximately \\$119,777.40 today to reach its \\$150,000 goal in 5 years.**  (true)\n\nThe overview recovered $A\\approx 119{,}777.40$. The claim is \\$119,777.40, so the statement is True.",
+      "**C) If the practice deposited only \\$110,000 today instead, it would still reach the \\$150,000 goal after 5 years at this rate.**  (false)\n\nA deposit of \\$110,000 grows by the reciprocal factor $e^{0.225}$:\n\n$$110{,}000\\times e^{0.225}\\approx 110{,}000\\times 1.2523\\approx 137{,}755.50$$\n\nThat balance is below \\$150,000, so the statement is False.",
+      "**D) If the bank instead compounded the same 4.5% nominal rate annually rather than continuously, the required deposit today would be lower than the deposit required under continuous compounding.**  (false)\n\nUnder annual compounding at the same $4.5\\%$ quote,\n\n$$A_{\\mathrm{ann}}=\\frac{150{,}000}{(1.045)^{5}}\\approx 120{,}367.66$$\n\nThe overview recovered the continuous deposit $A\\approx 119{,}777.40$. We have $120{,}367.66>119{,}777.40$, so the statement is False.",
+      "**E) Doubling the time horizon to 10 years would require depositing exactly half of the amount required for the original 5-year horizon today.**  (false)\n\nAt a $10$-year horizon,\n\n$$A=150{,}000\\,e^{-0.045\\times 10}=150{,}000\\,e^{-0.45}\\approx 95{,}644.22$$\n\nHalf of the overview's $5$-year deposit is\n\n$$\\frac{119{,}777.40}{2}\\approx 59{,}888.70$$\n\nWe have $95{,}644.22\\neq 59{,}888.70$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 44,
+    "solution_overview": "A dental practice wants \\$150,000 in 5 years for imaging equipment. The dedicated account pays a continuous annual rate of 4.5%.\n\n**Part 1: Setup.**\n\n$$K = 150{,}000, \\qquad r = 0.045, \\qquad t = 5$$\n\nThe deposit required today is the continuously discounted target:\n\n$$A = Ke^{-rt}$$\n\n**Part 2: Solve.**\n\n$$rt = 0.045 \\times 5 = 0.225, \\qquad e^{-0.225} \\approx 0.7985$$\n\n$$A = 150{,}000e^{-0.225} \\approx 119{,}777.40$$"
+  },
+  {
+    "id": "math-11-45",
+    "case_id": "MATH 11.45",
+    "title": "Implied Maturity of a Discounted Promissory Note",
+    "subsection": "11.3",
+    "context": "An investor purchases a promissory note today for \\$18,500. The note promises a payoff of \\$25,000 at maturity, and the market interest rate for notes of this kind is 6% per year, compounded annually. The investor wants to work backward from the price to find the implied maturity time, using $PDV = \\$18,500$, $K = \\$25,000$, and r = 0.06.",
+    "statements": [
+      "The ratio of the payoff to the purchase price is approximately 1.3514.",
+      "The implied maturity time, assuming annual compounding, is approximately 5.17 years.",
+      "If the purchase price had instead been \\$20,000 for the same \\$25,000 payoff at the same 6% rate, the implied maturity time would be longer than the original implied maturity time.",
+      "If continuous compounding were used instead of annual compounding, the implied maturity time would be approximately 5.45 years.",
+      "The continuous-compounding implied maturity time is longer than the annual-compounding implied maturity time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The ratio of the payoff to the purchase price is approximately 1.3514.**  (true)\n\nThe overview recovered $\\frac{K}{\\mathrm{PDV}}\\approx 1.3514$. The claim is that same figure, so the statement is True.",
+      "**B) The implied maturity time, assuming annual compounding, is approximately 5.17 years.**  (true)\n\nThe overview recovered $t\\approx 5.17$ years under annual compounding. The claim is that same figure, so the statement is True.",
+      "**C) If the purchase price had instead been \\$20,000 for the same \\$25,000 payoff at the same 6% rate, the implied maturity time would be longer than the original implied maturity time.**  (false)\n\nAt a purchase price of \\$20,000,\n\n$$\\frac{25{,}000}{20{,}000}=1.25, \\qquad t=\\frac{\\ln(1.25)}{\\ln(1.06)}\\approx 3.83$$\n\nThe overview recovered $t\\approx 5.17$ at \\$18,500. We have $3.83<5.17$, so the statement is False.",
+      "**D) If continuous compounding were used instead of annual compounding, the implied maturity time would be approximately 5.45 years.**  (false)\n\nThe overview recovered $t_{\\mathrm{cont}}\\approx 5.02$ years. The claim is $5.45$ years, so the statement is False.",
+      "**E) The continuous-compounding implied maturity time is longer than the annual-compounding implied maturity time.**  (false)\n\nThe overview recovered $t_{\\mathrm{cont}}\\approx 5.02$ and $t\\approx 5.17$. We have $5.02<5.17$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 45,
+    "solution_overview": "An investor pays \\$18,500 today for a note that pays \\$25,000 at maturity. The market rate is 6% per year, compounded annually. The unknown is the implied maturity $t$.\n\n**Part 1: Setup.**\n\n$$\\mathrm{PDV} = 18{,}500, \\qquad K = 25{,}000, \\qquad r = 0.06$$\n\nAnnual compounding solves\n\n$$t = \\frac{\\ln\\!\\left(\\frac{K}{\\mathrm{PDV}}\\right)}{\\ln(1+r)}$$\n\nContinuous compounding solves\n\n$$t_{\\mathrm{cont}} = \\frac{\\ln\\!\\left(\\frac{K}{\\mathrm{PDV}}\\right)}{r}$$\n\n**Part 2: Solve.**\n\n$$\\frac{K}{\\mathrm{PDV}} = \\frac{25{,}000}{18{,}500} \\approx 1.3514$$\n\n$$\\ln(1.3514) \\approx 0.3011, \\qquad \\ln(1.06) \\approx 0.05827$$\n\n$$t = \\frac{0.3011}{0.05827} \\approx 5.17$$\n\n$$t_{\\mathrm{cont}} = \\frac{0.3011}{0.06} \\approx 5.02$$"
+  },
+  {
+    "id": "math-11-46",
+    "case_id": "MATH 11.46",
+    "title": "Implied Continuous Discount Rate on a Collectible Painting",
+    "subsection": "11.3",
+    "context": "An art gallery has secured a guaranteed future sale of a painting for \\$60,000 in 12 years. A collector is willing to pay \\$27,000 today for the rights to that future payment, with value discounted continuously, so this task solves for r given $PDV = \\$27,000$, $K = \\$60,000$, and t = 12.",
+    "statements": [
+      "The implied discount factor is exactly 0.45.",
+      "The implied continuous discount rate is approximately 6.65% per year.",
+      "At the implied rate, if the payoff were due in 6 years instead of 12, its present value would be approximately \\$40,249.20.",
+      "If the purchase price had instead been \\$30,000 for the same \\$60,000 payoff in 12 years, the implied continuous discount rate would be higher than the rate found for the original \\$27,000 price.",
+      "Doubling the horizon to 24 years would require the rate to be approximately 3.33%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The implied discount factor is exactly 0.45.**  (true)\n\nThe overview recovered $\\frac{\\mathrm{PDV}}{K}=0.45$. The claim is that same figure, so the statement is True.",
+      "**B) The implied continuous discount rate is approximately 6.65% per year.**  (true)\n\nThe overview recovered $r\\approx 6.65\\%$ per year. The claim is that same figure, so the statement is True.",
+      "**C) At the implied rate, if the payoff were due in 6 years instead of 12, its present value would be approximately \\$40,249.20.**  (true)\n\nThe overview recovered $r\\approx 0.0665$. At a $6$-year horizon,\n\n$$\\mathrm{PDV}=60{,}000\\,e^{-0.0665\\times 6}=60{,}000\\,e^{-0.399}\\approx 40{,}249.20$$\n\nThe claim is \\$40,249.20, so the statement is True.",
+      "**D) If the purchase price had instead been \\$30,000 for the same \\$60,000 payoff in 12 years, the implied continuous discount rate would be higher than the rate found for the original \\$27,000 price.**  (false)\n\nAt a purchase price of \\$30,000,\n\n$$r=-\\frac{\\ln\\!\\left(\\frac{30{,}000}{60{,}000}\\right)}{12}=-\\frac{\\ln(0.5)}{12}\\approx 0.0578=5.78\\%$$\n\nThe overview recovered $6.65\\%$ at \\$27,000. We have $5.78\\%<6.65\\%$, so the statement is False.",
+      "**E) Doubling the horizon to 24 years would require the rate to be approximately 3.33%.**  (true)\n\nAt a $24$-year horizon with the same discount factor $0.45$,\n\n$$r=-\\frac{\\ln(0.45)}{24}=\\frac{0.798508}{24}\\approx 0.0333=3.33\\%$$\n\nThe claim is $3.33\\%$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 46,
+    "solution_overview": "An art gallery has a guaranteed \\$60,000 sale in 12 years. A collector pays \\$27,000 today for the rights to that payment, discounted continuously. The unknown is the continuous rate $r$.\n\n**Part 1: Setup.**\n\n$$\\mathrm{PDV} = 27{,}000, \\qquad K = 60{,}000, \\qquad t = 12$$\n\nContinuous discounting solves\n\n$$r = -\\frac{\\ln\\!\\left(\\frac{\\mathrm{PDV}}{K}\\right)}{t}$$\n\n**Part 2: Solve.**\n\n$$\\frac{\\mathrm{PDV}}{K} = \\frac{27{,}000}{60{,}000} = 0.45$$\n\n$$r = -\\frac{\\ln(0.45)}{12} = \\frac{0.798508}{12} \\approx 0.0665 = 6.65\\%$$"
+  },
+  {
+    "id": "math-11-47",
+    "case_id": "MATH 11.47",
+    "title": "Combined Present Value of Two Software Milestone Payments",
+    "subsection": "11.3",
+    "context": "A software company is due to receive two payments from a client under a licensing agreement: \\$40,000 in 2 years and \\$65,000 in 5 years. The applicable interest rate is 5% per year, compounded annually, and the company's controller wants the combined present value of both payments, using $K_1 = \\$40,000$ at $t_1 = 2$ and $K_2 = \\$65,000$ at $t_2 = 5$.",
+    "statements": [
+      "The present value of the \\$40,000 payment is approximately \\$36,281.18.",
+      "The present value of the \\$65,000 payment is approximately \\$50,930.87.",
+      "The combined present value of both payments together is approximately \\$87,212.05.",
+      "The \\$65,000 payment has a smaller present value than the \\$40,000 payment.",
+      "If both payments were instead discounted continuously at the same 5% rate, their combined present value would be less than \\$86,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the \\$40,000 payment is approximately \\$36,281.18.**  (true)\n\nThe overview recovered $\\mathrm{PDV}_1\\approx 36{,}281.18$. The claim is \\$36,281.18, so the statement is True.",
+      "**B) The present value of the \\$65,000 payment is approximately \\$50,930.87.**  (true)\n\nThe overview recovered $\\mathrm{PDV}_2\\approx 50{,}930.87$. The claim is \\$50,930.87, so the statement is True.",
+      "**C) The combined present value of both payments together is approximately \\$87,212.05.**  (true)\n\nThe overview recovered $\\mathrm{PDV}\\approx 87{,}212.05$. The claim is \\$87,212.05, so the statement is True.",
+      "**D) The \\$65,000 payment has a smaller present value than the \\$40,000 payment.**  (false)\n\nThe overview recovered $\\mathrm{PDV}_2\\approx 50{,}930.87$ and $\\mathrm{PDV}_1\\approx 36{,}281.18$. We have $50{,}930.87>36{,}281.18$, so the statement is False.",
+      "**E) If both payments were instead discounted continuously at the same 5% rate, their combined present value would be less than \\$86,000.**  (false)\n\nUnder continuous discounting at the same $5\\%$,\n\n$$\\mathrm{PDV}_1=40{,}000\\,e^{-0.10}\\approx 36{,}193.50$$\n\n$$\\mathrm{PDV}_2=65{,}000\\,e^{-0.25}\\approx 50{,}622.05$$\n\n$$\\mathrm{PDV}\\approx 86{,}815.55$$\n\nThe claim needs a combined value below \\$86,000. We have $86{,}815.55>86{,}000$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 47,
+    "solution_overview": "A software company is due \\$40,000 in 2 years and \\$65,000 in 5 years. Both payments are discounted at 5% per year, compounded annually.\n\n**Part 1: Setup.**\n\n$$K_1 = 40{,}000, \\qquad t_1 = 2$$\n\n$$K_2 = 65{,}000, \\qquad t_2 = 5, \\qquad r = 0.05$$\n\nEach payment discounts through\n\n$$\\mathrm{PDV} = K(1+r)^{-t}$$\n\n**Part 2: Solve.**\n\n$$\\mathrm{PDV}_1 = \\frac{40{,}000}{(1.05)^{2}} = \\frac{40{,}000}{1.1025} \\approx 36{,}281.18$$\n\n$$\\mathrm{PDV}_2 = \\frac{65{,}000}{(1.05)^{5}} \\approx \\frac{65{,}000}{1.276282} \\approx 50{,}930.87$$\n\n$$\\mathrm{PDV} = 36{,}281.18+50{,}930.87 \\approx 87{,}212.05$$"
+  },
+  {
+    "id": "math-11-48",
+    "case_id": "MATH 11.48",
+    "title": "Comparing an Immediate Payment to a Deferred Payment",
+    "subsection": "11.3",
+    "context": "A freelance architect is offered two payment options for a completed project: Option A is \\$22,000 paid immediately upon delivery. Option B is \\$25,500 paid in 3 years. The relevant market discount rate is 6% per year, compounded annually, so the two options can be compared directly on a present-value basis.",
+    "statements": [
+      "The present value of Option B is approximately \\$21,410.30.",
+      "Option A has a higher present value than Option B at the 6% rate.",
+      "If the discount rate were 3% instead of 6%, the present value of Option B would be approximately \\$22,780.00.",
+      "The present value of Option B exceeds \\$22,000 regardless of which interest rate is used to discount it.",
+      "At exactly a 5% discount rate, the present value of Option B would be approximately \\$23,500.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value of Option B is approximately \\$21,410.30.**  (true)\n\nThe overview recovered $\\mathrm{PDV}_B\\approx 21{,}410.30$. The claim is \\$21,410.30, so the statement is True.",
+      "**B) Option A has a higher present value than Option B at the 6% rate.**  (true)\n\nOption A is worth \\$22,000 today. The overview recovered $\\mathrm{PDV}_B\\approx 21{,}410.30$. We have $22{,}000>21{,}410.30$, so the statement is True.",
+      "**C) If the discount rate were 3% instead of 6%, the present value of Option B would be approximately \\$22,780.00.**  (false)\n\nAt $r=0.03$,\n\n$$(1.03)^{3}\\approx 1.092727$$\n\n$$\\mathrm{PDV}_B=\\frac{25{,}500}{1.092727}\\approx 23{,}336.02$$\n\nThe claim is \\$22,780.00, so the statement is False.",
+      "**D) The present value of Option B exceeds \\$22,000 regardless of which interest rate is used to discount it.**  (false)\n\nThe overview recovered $\\mathrm{PDV}_B\\approx 21{,}410.30$ at $6\\%$. That already sits below \\$22,000, so the statement is False.",
+      "**E) At exactly a 5% discount rate, the present value of Option B would be approximately \\$23,500.00.**  (false)\n\nAt $r=0.05$,\n\n$$(1.05)^{3}=1.157625$$\n\n$$\\mathrm{PDV}_B=\\frac{25{,}500}{1.157625}\\approx 22{,}027.86$$\n\nThe claim is \\$23,500.00, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 48,
+    "solution_overview": "A freelance architect may take \\$22,000 immediately (Option A) or \\$25,500 in 3 years (Option B). The market discount rate is 6% per year, compounded annually.\n\n**Part 1: Setup.**\n\n$$A = 22{,}000, \\qquad t_A = 0$$\n\n$$K_B = 25{,}500, \\qquad t_B = 3, \\qquad r = 0.06$$\n\nA future payment discounts through\n\n$$\\mathrm{PDV} = K(1+r)^{-t}$$\n\nAn immediate payment has present value equal to its face.\n\n**Part 2: Solve.**\n\n$$(1.06)^{3} \\approx 1.191016$$\n\n$$\\mathrm{PDV}_B = \\frac{25{,}500}{1.191016} \\approx 21{,}410.30$$"
+  },
+  {
+    "id": "math-11-49",
+    "case_id": "MATH 11.49",
+    "title": "Optimal Harvest Timing for a Timber Stand",
+    "subsection": "11.3",
+    "context": "A timber company owns a stand of trees whose market value grows according to $P(t) = 5,000(t+2)^{2}$ dollars, where t is measured in years since a recent appraisal, with P(t) differentiable and positive for all t ≥ 0. The prevailing interest rate is 8% per year, compounded continuously. Management wants to apply the chapter's tree-harvesting present-value condition to find the optimal cutting time.",
+    "statements": [
+      "The optimal harvest time $t^*$ that maximizes the present value of the stand is approximately 23 years.",
+      "The optimal harvest time is found by setting $P'(t^*)$ equal to $P(t^*)$ divided by r.",
+      "At the optimal time, the present value of the stand is approximately \\$623,000.",
+      "If the interest rate were higher than 8% instead, the optimal cutting time $t^*$ would be later than the original optimal time.",
+      "Cutting the stand at t = 25 years instead of at the optimal time would produce a higher present value than cutting at the optimal time."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The optimal harvest time $t^*$ that maximizes the present value of the stand is approximately 23 years.**  (true)\n\nThe overview recovered $t^{*}=23$. The claim is that same figure, so the statement is True.",
+      "**B) The optimal harvest time is found by setting $P'(t^*)$ equal to $P(t^*)$ divided by r.**  (false)\n\nThe overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equal to $\\frac{P(t^{*})}{r}$, so the statement is False.",
+      "**C) At the optimal time, the present value of the stand is approximately \\$623,000.**  (false)\n\nThe overview recovered $f(23)\\approx 496{,}304.46$. The claim is \\$623,000, so the statement is False.",
+      "**D) If the interest rate were higher than 8% instead, the optimal cutting time $t^*$ would be later than the original optimal time.**  (false)\n\nThe overview recovered $t^{*}=\\frac{2}{r}-2$. Raising $r$ lowers $t^{*}$, so the statement is False.",
+      "**E) Cutting the stand at t = 25 years instead of at the optimal time would produce a higher present value than cutting at the optimal time.**  (false)\n\nAt $t=25$,\n\n$$f(25)=5{,}000(27)^{2}e^{-0.08\\times 25}=3{,}645{,}000\\,e^{-2}\\approx 493{,}297.11$$\n\nThe overview recovered $f(23)\\approx 496{,}304.46$. We have $493{,}297.11<496{,}304.46$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 49,
+    "solution_overview": "A timber stand has market value $P(t)=5{,}000(t+2)^{2}$ dollars. The continuous interest rate is 8% per year.\n\n**Part 1: Setup.**\n\n$$P(t)=5{,}000(t+2)^{2}, \\qquad r=0.08$$\n\nHarvest present value is $f(t)=P(t)e^{-rt}$. An interior optimum satisfies\n\n$$P'(t^{*})=rP(t^{*})$$\n\n**Part 2: Solve.**\n\n$$P'(t)=10{,}000(t+2)$$\n\n$$10{,}000(t+2)=0.08\\times 5{,}000(t+2)^{2}$$\n\n$$10{,}000=400(t+2), \\qquad t+2=\\frac{2}{r}=25, \\qquad t^{*}=23$$\n\n$$f(23)=5{,}000(25)^{2}e^{-0.08\\times 23}=3{,}125{,}000\\,e^{-1.84}\\approx 496{,}304.46$$"
+  },
+  {
+    "id": "math-11-50",
+    "case_id": "MATH 11.50",
+    "title": "Settling Two Supplier Obligations with a Single Lump Sum",
+    "subsection": "11.3",
+    "context": "A boutique winery owes a supplier two separate future payments: \\$18,000 due in 4 years and \\$30,000 due in 9 years. The supplier agrees to accept one lump-sum payment today instead, using a continuous discount rate of 5.5% per year for both obligations, so this task uses $K_1 = \\$18,000$ at $t_1 = 4$ and $K_2 = \\$30,000$ at $t_2 = 9$.",
+    "statements": [
+      "The present value of the \\$18,000 obligation is approximately \\$14,445.34.",
+      "The present value of the \\$30,000 obligation is approximately \\$18,287.13.",
+      "The combined lump-sum payment the winery should make today is approximately \\$32,732.47.",
+      "The \\$30,000 obligation contributes a smaller present value than the \\$18,000 obligation.",
+      "If the discount rate were 0% instead of 5.5%, the combined lump-sum payment today would be exactly \\$48,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the \\$18,000 obligation is approximately \\$14,445.34.**  (true)\n\nThe overview recovered $\\mathrm{PDV}_1\\approx 14{,}445.34$. The claim is \\$14,445.34, so the statement is True.",
+      "**B) The present value of the \\$30,000 obligation is approximately \\$18,287.13.**  (true)\n\nThe overview recovered $\\mathrm{PDV}_2\\approx 18{,}287.13$. The claim is \\$18,287.13, so the statement is True.",
+      "**C) The combined lump-sum payment the winery should make today is approximately \\$32,732.47.**  (true)\n\nThe overview recovered $\\mathrm{PDV}\\approx 32{,}732.47$. The claim is \\$32,732.47, so the statement is True.",
+      "**D) The \\$30,000 obligation contributes a smaller present value than the \\$18,000 obligation.**  (false)\n\nThe overview recovered $\\mathrm{PDV}_2\\approx 18{,}287.13$ and $\\mathrm{PDV}_1\\approx 14{,}445.34$. We have $18{,}287.13>14{,}445.34$, so the statement is False.",
+      "**E) If the discount rate were 0% instead of 5.5%, the combined lump-sum payment today would be exactly \\$48,000.**  (true)\n\nAt $r=0$ each discount factor is $1$:\n\n$$\\mathrm{PDV}=18{,}000+30{,}000=48{,}000$$\n\nThe claim is \\$48,000, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 50,
+    "solution_overview": "A boutique winery owes \\$18,000 in 4 years and \\$30,000 in 9 years. The supplier will take one lump sum today, discounted continuously at 5.5% per year.\n\n**Part 1: Setup.**\n\n$$K_1 = 18{,}000, \\qquad t_1 = 4$$\n\n$$K_2 = 30{,}000, \\qquad t_2 = 9, \\qquad r = 0.055$$\n\nEach obligation discounts through\n\n$$\\mathrm{PDV} = Ke^{-rt}$$\n\n**Part 2: Solve.**\n\n$$rt_1 = 0.22, \\qquad e^{-0.22} \\approx 0.8025$$\n\n$$\\mathrm{PDV}_1 = 18{,}000e^{-0.22} \\approx 14{,}445.34$$\n\n$$rt_2 = 0.495, \\qquad e^{-0.495} \\approx 0.6096$$\n\n$$\\mathrm{PDV}_2 = 30{,}000e^{-0.495} \\approx 18{,}287.13$$\n\n$$\\mathrm{PDV} = 14{,}445.34+18{,}287.13 \\approx 32{,}732.47$$"
+  },
+  {
+    "id": "math-11-51",
+    "case_id": "MATH 11.51",
+    "title": "Finding an Equivalent Annual Rate for a Continuously Discounted Trust Payment",
+    "subsection": "11.3",
+    "context": "A trust fund manager currently discounts a \\$50,000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually, that produces exactly the same present value, so this task uses $K = \\$50,000$, r = 0.05, and t = 7 as the continuous baseline.",
+    "statements": [
+      "The present value of the \\$50,000 payment under 5% continuous compounding for 7 years is approximately \\$33,100.00.",
+      "The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.",
+      "The equivalent annual rate is approximately 5.87% per year.",
+      "Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a \\$50,000 payment would have a present value of approximately \\$43,035.40.",
+      "The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the \\$50,000 payment under 5% continuous compounding for 7 years is approximately \\$33,100.00.**  (false)\n\nThe overview recovered $\\mathrm{PDV}\\approx 35{,}234.40$. The claim is \\$33,100.00, so the statement is False.",
+      "**B) The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.**  (false)\n\nThe overview recovered $r_a\\approx 5.13\\%$. The claim is $5.00\\%$, so the statement is False.",
+      "**C) The equivalent annual rate is approximately 5.87% per year.**  (false)\n\nThe overview recovered $r_a\\approx 5.13\\%$. The claim is $5.87\\%$, so the statement is False.",
+      "**D) Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a \\$50,000 payment would have a present value of approximately \\$43,035.40.**  (true)\n\nThe overview recovered $1+r_a=e^{0.05}$. At a $3$-year horizon the two clocks agree:\n\n$$\\mathrm{PDV}=50{,}000\\,e^{-0.05\\times 3}=50{,}000\\,e^{-0.15}\\approx 43{,}035.40$$\n\nThe claim is \\$43,035.40, so the statement is True.",
+      "**E) The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point.**  (false)\n\nThe overview recovered $r_a\\approx 5.13\\%$. The gap from the continuous quote is\n\n$$5.13\\%-5.00\\%=0.13$$\n\nThe claim needs a gap above $1.00$ percentage point. We have $0.13<1.00$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 51,
+    "solution_overview": "A trust discounts a \\$50,000 payment due in 7 years at a continuous 5% per year. The manager wants the annually compounded rate $r_a$ that produces the same present value.\n\n**Part 1: Setup.**\n\n$$K = 50{,}000, \\qquad r = 0.05, \\qquad t = 7$$\n\nContinuous present value is\n\n$$\\mathrm{PDV} = Ke^{-rt}$$\n\nMatching an annual rate requires $(1+r_a)^{-t}=e^{-rt}$, so\n\n$$1+r_a = e^{r}$$\n\n**Part 2: Solve.**\n\n$$rt = 0.35, \\qquad e^{-0.35} \\approx 0.704688$$\n\n$$\\mathrm{PDV} = 50{,}000 \\times 0.704688 \\approx 35{,}234.40$$\n\n$$1+r_a = e^{0.05} \\approx 1.051271, \\qquad r_a \\approx 0.0513 = 5.13\\%$$"
+  },
+  {
+    "id": "math-11-52",
+    "case_id": "MATH 11.52",
+    "title": "Meeting a Loan Covenant with a Second Receivable",
+    "subsection": "11.3",
+    "context": "A logistics company must demonstrate a combined present value of exactly \\$100,000 to satisfy a loan covenant. It already holds one contractual receivable of \\$42,000 due in 3 years. It is negotiating a second receivable due in 6 years and must determine the face amount that receivable needs to carry. The discount rate is 6% per year, compounded annually, so $K_1 = \\$42,000$ at $t_1 = 3$ is known and $K_2$ at $t_2 = 6$ must be found.",
+    "statements": [
+      "The present value of the existing \\$42,000 receivable is approximately \\$35,264.01.",
+      "The present value still required from the second receivable is approximately \\$64,735.99.",
+      "The required face amount of the second receivable, due in 6 years, is approximately \\$91,829.24.",
+      "If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.",
+      "Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately \\$102,727.88."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the existing \\$42,000 receivable is approximately \\$35,264.01.**  (true)\n\nThe overview recovered $\\mathrm{PV}_1\\approx 35{,}264.01$. The claim is \\$35,264.01, so the statement is True.",
+      "**B) The present value still required from the second receivable is approximately \\$64,735.99.**  (true)\n\nThe overview recovered $\\mathrm{PV}_2\\approx 64{,}735.99$. The claim is \\$64,735.99, so the statement is True.",
+      "**C) The required face amount of the second receivable, due in 6 years, is approximately \\$91,829.24.**  (true)\n\nThe overview recovered $K_2\\approx 91{,}829.24$. The claim is \\$91,829.24, so the statement is True.",
+      "**D) If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.**  (false)\n\nIf the second receivable is due in $3$ years instead, the overview's required present value $\\mathrm{PV}_2=64{,}735.99$ accumulates for only three years:\n\n$$K_2=64{,}735.99\\times(1.06)^{3}\\approx 77{,}101.60$$\n\nThe overview recovered $K_2\\approx 91{,}829.24$ at $6$ years. We have $77{,}101.60<91{,}829.24$, so the statement is False.",
+      "**E) Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately \\$102,727.88.**  (true)\n\nThe overview recovered that the second receivable must contribute $\\mathrm{PV}_2=64{,}735.99$ today. Accumulating that amount for $6$ years at $8\\%$,\n\n$$K_2=64{,}735.99\\times(1.08)^{6}\\approx 102{,}727.88$$\n\nThe claim is \\$102,727.88, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 52,
+    "solution_overview": "A logistics company must show a combined present value of \\$100,000. It already holds a \\$42,000 receivable due in 3 years and is sizing a second receivable due in 6 years. The annual discount rate is 6%.\n\n**Part 1: Setup.**\n\n$$K_1 = 42{,}000, \\qquad t_1 = 3, \\qquad t_2 = 6$$\n\n$$\\mathrm{PDV}_{\\mathrm{target}} = 100{,}000, \\qquad r = 0.06$$\n\nAnnual present value is $\\mathrm{PDV}=K(1+r)^{-t}$. The unknown face is\n\n$$K_2 = \\bigl(\\mathrm{PDV}_{\\mathrm{target}}-\\mathrm{PV}_1\\bigr)(1+r)^{t_2}$$\n\n**Part 2: Solve.**\n\n$$\\mathrm{PV}_1 = \\frac{42{,}000}{(1.06)^{3}} = \\frac{42{,}000}{1.191016} \\approx 35{,}264.01$$\n\n$$\\mathrm{PV}_2 = 100{,}000-35{,}264.01 = 64{,}735.99$$\n\n$$(1.06)^{6} \\approx 1.418519$$\n\n$$K_2 = 64{,}735.99 \\times 1.418519 \\approx 91{,}829.24$$"
+  },
+  {
+    "id": "math-11-53",
+    "case_id": "MATH 11.53",
+    "title": "Finding the Indifference Payment for a Consulting Firm",
+    "subsection": "11.3",
+    "context": "A consulting firm can either receive \\$35,000 immediately or a larger payment in 4 years. The firm's opportunity cost of capital is 6.5% per year, compounded continuously. The firm wants to know the future payment amount that would make it exactly indifferent between the two options, using the immediate \\$35,000 as the target present value, r = 0.065, and t = 4.",
+    "statements": [
+      "The continuous discount factor is approximately 0.8112.",
+      "The future payment that makes the firm indifferent between the two options is approximately \\$49,850.75.",
+      "This indifference amount exceeds the immediate \\$35,000 option by more than \\$11,000.",
+      "If the firm's opportunity cost of capital were 9% instead of 6.5%, the required indifference payment would remain unchanged from the original 4-year, 6.5% figure.",
+      "If the payment horizon were shortened to 2 years instead of 4, the required indifference payment would be smaller than the original 4-year figure."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The continuous discount factor is approximately 0.8112.**  (false)\n\nThe overview recovered $e^{-0.26}\\approx 0.7711$. The claim is $0.8112$, so the statement is False.",
+      "**B) The future payment that makes the firm indifferent between the two options is approximately \\$49,850.75.**  (false)\n\nThe overview recovered $K\\approx 45{,}392.55$. The claim is \\$49,850.75, so the statement is False.",
+      "**C) This indifference amount exceeds the immediate \\$35,000 option by more than \\$11,000.**  (false)\n\nThe overview recovered $K\\approx 45{,}392.55$. The excess over the immediate option is\n\n$$45{,}392.55-35{,}000=10{,}392.55$$\n\nThe claim needs an excess above \\$11,000. We have $10{,}392.55<11{,}000$, so the statement is False.",
+      "**D) If the firm's opportunity cost of capital were 9% instead of 6.5%, the required indifference payment would remain unchanged from the original 4-year, 6.5% figure.**  (false)\n\nAt $r=0.09$ the four-year factor changes:\n\n$$K=35{,}000\\,e^{0.09\\times 4}=35{,}000\\,e^{0.36}\\approx 50{,}166.53$$\n\nThe overview recovered $K\\approx 45{,}392.55$ at $6.5\\%$. We have $50{,}166.53\\neq 45{,}392.55$, so the statement is False.",
+      "**E) If the payment horizon were shortened to 2 years instead of 4, the required indifference payment would be smaller than the original 4-year figure.**  (true)\n\nAt a $2$-year horizon with the original $6.5\\%$ rate,\n\n$$K=35{,}000\\,e^{0.065\\times 2}=35{,}000\\,e^{0.13}\\approx 39{,}858.99$$\n\nThe overview recovered $K\\approx 45{,}392.55$ at $4$ years. We have $39{,}858.99<45{,}392.55$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 53,
+    "solution_overview": "A consulting firm can take \\$35,000 immediately or a larger payment in 4 years. The opportunity cost of capital is 6.5% per year, compounded continuously.\n\n**Part 1: Setup.**\n\n$$\\mathrm{PV}_0 = 35{,}000, \\qquad r = 0.065, \\qquad t = 4$$\n\nIndifference requires $\\mathrm{PV}_0=Ke^{-rt}$, so\n\n$$K = \\mathrm{PV}_0 e^{rt}$$\n\n**Part 2: Solve.**\n\n$$rt = 0.065 \\times 4 = 0.26, \\qquad e^{-0.26} \\approx 0.7711$$\n\n$$K = \\frac{35{,}000}{0.7711} \\approx 45{,}392.55$$"
+  },
+  {
+    "id": "math-11-54",
+    "case_id": "MATH 11.54",
+    "title": "A Corner Solution in Aging Wine Valuation",
+    "subsection": "11.3",
+    "context": "A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as $P(t) = 40,000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to $P(t) = 40,000e^{0.05t}$ with r = 0.08.",
+    "statements": [
+      "The condition $P'(t^*) = r P(t^*)$ has no solution for $t^* > 0$, so the present value is maximized at $t^* = 0$.",
+      "The present value of the batch if sold today (t = 0) is \\$40,000.",
+      "The present value of the batch if instead sold in 10 years is approximately \\$29,632.73.",
+      "Because the market value P(t) is increasing over time, waiting to sell always increases the present value of the batch, regardless of the discount rate used.",
+      "If the discount rate were instead 4%, the optimal policy would again be to sell immediately at $t^* = 0$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The condition $P'(t^*) = r P(t^*)$ has no solution for $t^* > 0$, so the present value is maximized at $t^* = 0$.**  (true)\n\nThe overview showed that $P'(t^{*})=rP(t^{*})$ has no solution for $t^{*}>0$, and that $f$ is maximized at $t^{*}=0$. The claim is that same conclusion, so the statement is True.",
+      "**B) The present value of the batch if sold today (t = 0) is \\$40,000.**  (true)\n\nThe overview recovered $f(0)=40{,}000$. The claim is \\$40,000, so the statement is True.",
+      "**C) The present value of the batch if instead sold in 10 years is approximately \\$29,632.73.**  (true)\n\nAt $t=10$,\n\n$$f(10)=40{,}000e^{-0.03\\times 10}=40{,}000e^{-0.3}\\approx 29{,}632.73$$\n\nThe claim is \\$29,632.73, so the statement is True.",
+      "**D) Because the market value P(t) is increasing over time, waiting to sell always increases the present value of the batch, regardless of the discount rate used.**  (false)\n\nThe overview recovered $f(t)=40{,}000e^{-0.03t}$, which falls as $t$ rises even though $P(t)$ itself is increasing. Waiting therefore lowers present value at this $8\\%$ rate, so the statement is False.",
+      "**E) If the discount rate were instead 4%, the optimal policy would again be to sell immediately at $t^* = 0$.**  (false)\n\nAt $r=0.04$,\n\n$$f(t)=40{,}000e^{(0.05-0.04)t}=40{,}000e^{0.01t}$$\n\nThis rises with $t$, so the optimum is not $t^{*}=0$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 54,
+    "solution_overview": "Wine market value is $P(t)=40{,}000e^{0.05t}$ dollars. The continuous discount rate is 8% per year.\n\n**Part 1: Setup.**\n\n$$P(t)=40{,}000e^{0.05t}, \\qquad r=0.08$$\n\nDiscounted value is\n\n$$f(t)=P(t)e^{-rt}=40{,}000e^{(0.05-0.08)t}=40{,}000e^{-0.03t}$$\n\nAn interior optimum would require $P'(t^{*})=rP(t^{*})$.\n\n**Part 2: Solve.**\n\n$$P'(t)=0.05P(t)$$\n\nThe interior condition would need $0.05P(t^{*})=0.08P(t^{*})$, which is impossible for $P>0$. The exponent $-0.03t$ makes $f$ strictly decreasing for $t\\ge 0$, so the maximum is at the boundary:\n\n$$t^{*}=0, \\qquad f(0)=P(0)=40{,}000$$"
+  },
+  {
+    "id": "math-11-55",
+    "case_id": "MATH 11.55",
+    "title": "Comparative Statics for a Forestry Cooperative's Harvest Timing",
+    "subsection": "11.3",
+    "context": "A forestry cooperative's analytics team has measured, at the optimal harvest time $t^*$ for one of its timber stands: $P(t^*) = \\$520,000$, $P'(t^*) = \\$46,800$, and $P''(t^*) = \\$3,120$ per year, with a current continuous interest rate of r = 9% per year. The team wants to apply the chapter's comparative-statics formula to find $\\frac{dt^*}{dr}$ and to confirm the second-order condition.",
+    "statements": [
+      "The data satisfy the optimality condition $P'(t^*) = r P(t^*)$.",
+      "The value of $P''(t^*) - r P'(t^*)$ is -\\$1,092.",
+      "$\\frac{dt^*}{dr}$ is approximately -476.19.",
+      "An increase in the interest rate would lengthen the optimal harvest time $t^*$.",
+      "The second-order condition $P''(t^*) - r P'(t^*) < 0$ is satisfied here."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The data satisfy the optimality condition $P'(t^*) = r P(t^*)$.**  (true)\n\nThe overview checked $0.09\\times 520{,}000=46{,}800$, which matches $P'(t^{*})$. The first-order condition holds, so the statement is True.",
+      "**B) The value of $P''(t^*) - r P'(t^*)$ is -\\$1,092.**  (true)\n\nThe overview recovered $P''(t^{*})-rP'(t^{*})=-1{,}092$. The claim is that same figure, so the statement is True.",
+      "**C) $\\frac{dt^*}{dr}$ is approximately -476.19.**  (true)\n\nThe overview recovered $\\frac{dt^{*}}{dr}\\approx -476.19$. The claim is that same figure, so the statement is True.",
+      "**D) An increase in the interest rate would lengthen the optimal harvest time $t^*$.**  (false)\n\nThe overview recovered $\\frac{dt^{*}}{dr}\\approx -476.19<0$. A higher $r$ therefore shortens $t^{*}$, so the statement is False.",
+      "**E) The second-order condition $P''(t^*) - r P'(t^*) < 0$ is satisfied here.**  (true)\n\nThe overview recovered $P''(t^{*})-rP'(t^{*})=-1{,}092<0$. The second-order condition holds, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 55,
+    "solution_overview": "At an optimal harvest time the forestry team measured $P(t^{*})=520{,}000$, $P'(t^{*})=46{,}800$, and $P''(t^{*})=3{,}120$ per year, with continuous rate $r=0.09$.\n\n**Part 1: Setup.**\n\n$$P(t^{*})=520{,}000, \\qquad P'(t^{*})=46{,}800, \\qquad P''(t^{*})=3{,}120, \\qquad r=0.09$$\n\nThe first-order condition is $P'(t^{*})=rP(t^{*})$. Comparative statics use\n\n$$\\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}$$\n\nA maximum requires $P''(t^{*})-rP'(t^{*})<0$.\n\n**Part 2: Solve.**\n\n$$0.09\\times 520{,}000=46{,}800$$\n\n$$P''(t^{*})-rP'(t^{*})=3{,}120-0.09\\times 46{,}800=3{,}120-4{,}212=-1{,}092$$\n\n$$\\frac{dt^{*}}{dr}=\\frac{520{,}000}{-1{,}092}\\approx -476.19$$"
+  },
+  {
+    "id": "math-11-56",
+    "case_id": "MATH 11.56",
+    "title": "Full Harvest-Timing Analysis for an Orchard's Timber",
+    "subsection": "11.3",
+    "context": "An orchard's standalone timber value is modeled by $P(t) = 3,000(t+4)^{2}$ dollars. The continuous interest rate is 9% per year. Management wants the optimal harvest time, confirmation that it is indeed a present-value maximum, and the sensitivity of that optimal time to the interest rate, using $P(t) = 3,000(t+4)^{2}$ and r = 0.09.",
+    "statements": [
+      "The optimal harvest time $t^*$ is approximately 18.22 years.",
+      "The present value of the orchard's timber at $t^*$ is approximately \\$250,000.00.",
+      "The second-order quantity $P''(t^*) - r P'(t^*)$ evaluates to +\\$6,000.",
+      "$\\frac{dt^*}{dr}$ is approximately +246.91.",
+      "If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The optimal harvest time $t^*$ is approximately 18.22 years.**  (true)\n\nThe overview recovered $t^{*}\\approx 18.22$. The claim is that same figure, so the statement is True.",
+      "**B) The present value of the orchard's timber at $t^*$ is approximately \\$250,000.00.**  (false)\n\nThe overview recovered $P(t^{*})\\approx 1{,}481{,}481.48$. Discounting to the present,\n\n$$f(t^{*})=1{,}481{,}481.48\\,e^{-0.09\\times 18.22}\\approx 287{,}377.84$$\n\nThe claim is \\$250,000.00, so the statement is False.",
+      "**C) The second-order quantity $P''(t^*) - r P'(t^*)$ evaluates to +\\$6,000.**  (false)\n\nThe overview recovered $P''(t^{*})-rP'(t^{*})=-6{,}000$. The claim is +\\$6,000, so the statement is False.",
+      "**D) $\\frac{dt^*}{dr}$ is approximately +246.91.**  (false)\n\nThe overview recovered $P(t^{*})\\approx 1{,}481{,}481.48$ and denominator $-6{,}000$:\n\n$$\\frac{dt^{*}}{dr}=\\frac{1{,}481{,}481.48}{-6{,}000}\\approx -246.91$$\n\nThe claim is $+246.91$, so the statement is False.",
+      "**E) If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years.**  (false)\n\nThe overview recovered $t^{*}=\\frac{2}{r}-4$. At $r=0.045$,\n\n$$t^{*}=\\frac{2}{0.045}-4\\approx 44.44-4=40.44$$\n\nDouble the original $18.22$ would be $36.44$. We have $40.44\\neq 36.44$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 56,
+    "solution_overview": "An orchard's timber value is $P(t)=3{,}000(t+4)^{2}$ dollars. The continuous interest rate is 9% per year.\n\n**Part 1: Setup.**\n\n$$P(t)=3{,}000(t+4)^{2}, \\qquad r=0.09$$\n\n$$P'(t)=6{,}000(t+4), \\qquad P''(t)=6{,}000$$\n\nAn interior optimum satisfies $P'(t^{*})=rP(t^{*})$. Sensitivity uses\n\n$$\\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}$$\n\n**Part 2: Solve.**\n\n$$6{,}000(t+4)=0.09\\times 3{,}000(t+4)^{2}$$\n\n$$t+4=\\frac{2}{r}\\approx 22.22, \\qquad t^{*}=\\frac{2}{r}-4\\approx 18.22$$\n\n$$P(t^{*})=3{,}000(22.22)^{2}\\approx 1{,}481{,}481.48$$\n\n$$P'(t^{*})=6{,}000\\times 22.22\\approx 133{,}333.33$$\n\n$$P''(t^{*})-rP'(t^{*})=6{,}000-0.09\\times 133{,}333.33=-6{,}000$$"
+  },
+  {
+    "id": "math-11-57",
+    "case_id": "MATH 11.57",
+    "title": "Combining a Private-Equity Exit Payment with a Short-Dated Side Payment",
+    "subsection": "11.3",
+    "context": "A private equity fund expects to receive \\$250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of \\$40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1 = \\$250,000$ at $t_1 = 2.5$ and $K_2 = \\$40,000$ at $t_2 = \\frac{7}{12}$, with r = 0.11.",
+    "statements": [
+      "The present value of the \\$250,000 exit payment is approximately \\$189,893.03.",
+      "The present value of the \\$40,000 side payment is approximately \\$37,513.95.",
+      "The combined present value of both payments is approximately \\$230,000.00.",
+      "The \\$40,000 side payment is discounted by more than 10% of its face value.",
+      "If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly \\$290,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the \\$250,000 exit payment is approximately \\$189,893.03.**  (true)\n\nThe overview recovered $\\mathrm{PV}_1\\approx 189{,}893.03$. The claim is \\$189,893.03, so the statement is True.",
+      "**B) The present value of the \\$40,000 side payment is approximately \\$37,513.95.**  (true)\n\nThe overview recovered $\\mathrm{PV}_2\\approx 37{,}513.95$. The claim is \\$37,513.95, so the statement is True.",
+      "**C) The combined present value of both payments is approximately \\$230,000.00.**  (false)\n\nThe overview recovered $\\mathrm{PDV}\\approx 227{,}406.98$. The claim is \\$230,000.00, so the statement is False.",
+      "**D) The \\$40,000 side payment is discounted by more than 10% of its face value.**  (false)\n\nThe overview recovered $\\mathrm{PV}_2\\approx 37{,}513.95$. The haircut from face is\n\n$$\\frac{40{,}000-37{,}513.95}{40{,}000}\\approx 0.062=6.2\\%$$\n\nThe claim needs a haircut above $10\\%$. We have $6.2\\%<10\\%$, so the statement is False.",
+      "**E) If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly \\$290,000.**  (true)\n\nAt $r=0$ each discount factor is $1$:\n\n$$\\mathrm{PDV}=250{,}000+40{,}000=290{,}000$$\n\nThe claim is \\$290,000, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 57,
+    "solution_overview": "A private equity fund expects \\$250,000 from an exit in 2.5 years and \\$40,000 in 7 months. Both amounts are discounted continuously at 11% per year.\n\n**Part 1: Setup.**\n\n$$K_1 = 250{,}000, \\qquad t_1 = 2.5$$\n\n$$K_2 = 40{,}000, \\qquad t_2 = \\frac{7}{12}, \\qquad r = 0.11$$\n\nEach payment discounts through $\\mathrm{PDV}=Ke^{-rt}$.\n\n**Part 2: Solve.**\n\n$$rt_1 = 0.11 \\times 2.5 = 0.275, \\qquad e^{-0.275} \\approx 0.759572$$\n\n$$\\mathrm{PV}_1 = 250{,}000 \\times 0.759572 \\approx 189{,}893.03$$\n\n$$rt_2 = 0.11 \\times \\frac{7}{12} \\approx 0.064167, \\qquad e^{-0.064167} \\approx 0.937849$$\n\n$$\\mathrm{PV}_2 = 40{,}000 \\times 0.937849 \\approx 37{,}513.95$$\n\n$$\\mathrm{PDV} = 189{,}893.03+37{,}513.95 \\approx 227{,}406.98$$"
+  },
+  {
+    "id": "math-11-58",
+    "case_id": "MATH 11.58",
+    "title": "Implied Rate on a Biotech Milestone-Contingent Investment",
+    "subsection": "11.3",
+    "context": "Investors paid \\$2,000,000 today for preferred shares that convert into a guaranteed \\$3,200,000 payout in 4.5 years if a specific FDA milestone is met, with value discounted continuously. The investors' analyst wants to determine the implied continuous discount rate and test its sensitivity, using $PDV = \\$2,000,000$, $K = \\$3,200,000$, and t = 4.5.",
+    "statements": [
+      "The implied discount factor is exactly 0.625.",
+      "The implied continuous discount rate is approximately 10.44% per year.",
+      "If the milestone payout were instead \\$3,600,000, the implied discount rate would be higher than the rate implied by the original \\$3,200,000 payout.",
+      "If the time to payout were shortened to 3 years instead of 4.5, the implied discount rate would be lower than the rate implied by the original 4.5-year horizon.",
+      "Doubling the time horizon to 9 years would require the rate to be approximately 5.22%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The implied discount factor is exactly 0.625.**  (true)\n\nThe overview recovered $\\frac{\\mathrm{PDV}}{K}=0.625$. The claim is that same figure, so the statement is True.",
+      "**B) The implied continuous discount rate is approximately 10.44% per year.**  (true)\n\nThe overview recovered $r\\approx 10.44\\%$ per year. The claim is that same figure, so the statement is True.",
+      "**C) If the milestone payout were instead \\$3,600,000, the implied discount rate would be higher than the rate implied by the original \\$3,200,000 payout.**  (true)\n\nAt a \\$3,600,000 payout,\n\n$$r=-\\frac{\\ln\\!\\left(\\frac{2{,}000{,}000}{3{,}600{,}000}\\right)}{4.5}\\approx 0.1306=13.06\\%$$\n\nThe overview recovered $10.44\\%$ at \\$3,200,000. We have $13.06\\%>10.44\\%$, so the statement is True.",
+      "**D) If the time to payout were shortened to 3 years instead of 4.5, the implied discount rate would be lower than the rate implied by the original 4.5-year horizon.**  (false)\n\nAt a $3$-year horizon with the original discount factor $0.625$,\n\n$$r=-\\frac{\\ln(0.625)}{3}=\\frac{0.470004}{3}\\approx 0.1567=15.67\\%$$\n\nThe overview recovered $10.44\\%$ at $4.5$ years. We have $15.67\\%>10.44\\%$, so the statement is False.",
+      "**E) Doubling the time horizon to 9 years would require the rate to be approximately 5.22%.**  (true)\n\nAt a $9$-year horizon with the same discount factor $0.625$,\n\n$$r=-\\frac{\\ln(0.625)}{9}=\\frac{0.470004}{9}\\approx 0.0522=5.22\\%$$\n\nThe claim is $5.22\\%$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 58,
+    "solution_overview": "Investors paid \\$2,000,000 today for a guaranteed \\$3,200,000 payout in 4.5 years, discounted continuously. The unknown is the implied continuous rate $r$.\n\n**Part 1: Setup.**\n\n$$\\mathrm{PDV} = 2{,}000{,}000, \\qquad K = 3{,}200{,}000, \\qquad t = 4.5$$\n\nContinuous discounting solves\n\n$$r = -\\frac{\\ln\\!\\left(\\frac{\\mathrm{PDV}}{K}\\right)}{t}$$\n\n**Part 2: Solve.**\n\n$$\\frac{\\mathrm{PDV}}{K} = \\frac{2{,}000{,}000}{3{,}200{,}000} = 0.625$$\n\n$$r = -\\frac{\\ln(0.625)}{4.5} = \\frac{0.470004}{4.5} \\approx 0.1044 = 10.44\\%$$"
+  },
+  {
+    "id": "math-11-59",
+    "case_id": "MATH 11.59",
+    "title": "General Harvest-Timing Formula for a Forestry Consultancy",
+    "subsection": "11.3",
+    "context": "A forestry consultancy models a class of timber stands with value function $P(t) = A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, $A = \\$1,200$, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.",
+    "statements": [
+      "The general optimal-time formula for this family of functions is $t^* = \\frac{2}{r} - k$.",
+      "Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately $t^* = 21.67$ years.",
+      "The present value at $t^*$ is approximately \\$195,500.00.",
+      "If k were increased to 8, the optimal harvest time would be shorter than the original optimal time.",
+      "If the interest rate were doubled to 15%, the optimal harvest time would be more than half of the original optimal time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The general optimal-time formula for this family of functions is $t^* = \\frac{2}{r} - k$.**  (true)\n\nThe overview recovered $t^{*}=\\frac{2}{r}-k$. The claim is that same formula, so the statement is True.",
+      "**B) Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately $t^* = 21.67$ years.**  (true)\n\nThe overview recovered $t^{*}\\approx 21.67$ at $A=1{,}200$, $k=5$, and $r=7.5\\%$. The claim is that same figure, so the statement is True.",
+      "**C) The present value at $t^*$ is approximately \\$195,500.00.**  (false)\n\nAt the overview's $t^{*}\\approx 21.67$,\n\n$$P(t^{*})=1{,}200\\left(\\frac{2}{0.075}\\right)^{2}\\approx 853{,}333.33$$\n\n$$f(t^{*})=853{,}333.33\\,e^{-0.075\\times 21.67}\\approx 168{,}031.30$$\n\nThe claim is \\$195,500.00, so the statement is False.",
+      "**D) If k were increased to 8, the optimal harvest time would be shorter than the original optimal time.**  (true)\n\nThe overview recovered $t^{*}=\\frac{2}{r}-k$. At $k=8$,\n\n$$t^{*}=\\frac{2}{0.075}-8\\approx 18.67$$\n\nThe overview's original time is $t^{*}\\approx 21.67$. We have $18.67<21.67$, so the statement is True.",
+      "**E) If the interest rate were doubled to 15%, the optimal harvest time would be more than half of the original optimal time.**  (false)\n\nThe overview recovered $t^{*}=\\frac{2}{r}-k$. At $r=0.15$,\n\n$$t^{*}=\\frac{2}{0.15}-5\\approx 8.33$$\n\nHalf of the original $21.67$ is $10.83$. We have $8.33<10.83$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 59,
+    "solution_overview": "A forestry consultancy models $P(t)=A(t+k)^{2}$, discounted continuously at rate $r$. For one stand, $A=1{,}200$, $k=5$, and $r=7.5\\%$ per year.\n\n**Part 1: Setup.**\n\n$$P(t)=A(t+k)^{2}, \\qquad P'(t)=2A(t+k)$$\n\n$$A=1{,}200, \\qquad k=5, \\qquad r=0.075$$\n\nAn interior optimum satisfies $P'(t^{*})=rP(t^{*})$.\n\n**Part 2: Solve.**\n\n$$2A(t+k)=rA(t+k)^{2}$$\n\n$$t^{*}=\\frac{2}{r}-k$$\n\n$$t^{*}=\\frac{2}{0.075}-5=26.67-5\\approx 21.67$$"
+  },
+  {
+    "id": "math-11-60",
+    "case_id": "MATH 11.60",
+    "title": "Pricing Two Franchise Payments Related by a Common Time Horizon",
+    "subsection": "11.3",
+    "context": "A franchise agreement promises an investor two payments from a franchisee: \\$30,000 in exactly 5 years and \\$55,000 in exactly 10 years (twice the first horizon). Value is discounted continuously at 8% per year. Because the second payment date is exactly double the first, its discount factor is the square of the first payment's discount factor, so this task uses $K_1 = \\$30,000$ at $t_1 = 5$, $K_2 = \\$55,000$ at $t_2 = 10$, and r = 0.08.",
+    "statements": [
+      "The discount factor for the 5-year payment is approximately 0.6703.",
+      "The discount factor for the 10-year payment is approximately 0.4493.",
+      "The present value of the \\$30,000 payment is approximately \\$21,500.00.",
+      "The present value of the \\$55,000 payment is approximately \\$26,000.00.",
+      "The combined present value the investor should pay today for both payments is approximately \\$47,500.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The discount factor for the 5-year payment is approximately 0.6703.**  (true)\n\nThe overview recovered $e^{-0.4}\\approx 0.6703$. The claim is that same figure, so the statement is True.",
+      "**B) The discount factor for the 10-year payment is approximately 0.4493.**  (true)\n\nThe overview recovered $e^{-0.8}\\approx 0.4493$. The claim is that same figure, so the statement is True.",
+      "**C) The present value of the \\$30,000 payment is approximately \\$21,500.00.**  (false)\n\nThe overview recovered $\\mathrm{PV}_1\\approx 20{,}109.60$. The claim is \\$21,500.00, so the statement is False.",
+      "**D) The present value of the \\$55,000 payment is approximately \\$26,000.00.**  (false)\n\nThe overview recovered $\\mathrm{PV}_2\\approx 24{,}713.09$. The claim is \\$26,000.00, so the statement is False.",
+      "**E) The combined present value the investor should pay today for both payments is approximately \\$47,500.00.**  (false)\n\nThe overview recovered $\\mathrm{PDV}\\approx 44{,}822.69$. The claim is \\$47,500.00, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 60,
+    "solution_overview": "A franchise agreement pays \\$30,000 in 5 years and \\$55,000 in 10 years. Value is discounted continuously at 8% per year. The second horizon is twice the first, so its discount factor is the square of the first factor.\n\n**Part 1: Setup.**\n\n$$K_1 = 30{,}000, \\qquad t_1 = 5$$\n\n$$K_2 = 55{,}000, \\qquad t_2 = 10, \\qquad r = 0.08$$\n\nEach payment discounts through $\\mathrm{PDV}=Ke^{-rt}$, and\n\n$$e^{-rt_2}=(e^{-rt_1})^{2}$$\n\n**Part 2: Solve.**\n\n$$e^{-0.08\\times 5}=e^{-0.4}\\approx 0.6703$$\n\n$$e^{-0.08\\times 10}=e^{-0.8}\\approx 0.4493$$\n\n$$(0.6703)^{2}\\approx 0.4493$$\n\n$$\\mathrm{PV}_1 = 30{,}000e^{-0.4} \\approx 20{,}109.60$$\n\n$$\\mathrm{PV}_2 = 55{,}000e^{-0.8} \\approx 24{,}713.09$$\n\n$$\\mathrm{PDV} = 20{,}109.60+24{,}713.09 \\approx 44{,}822.69$$"
+  }
+]

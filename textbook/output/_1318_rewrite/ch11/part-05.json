@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-11-81",
+    "case_id": "MATH 11.81",
+    "title": "Present Value of a Single Future Payment for a Bakery Equipment Fund",
+    "subsection": "11.5",
+    "context": "Ms. Delgado, the bakery owner from a previous chapter, now wants to have exactly \\$5,000 available in 3 years to replace a commercial oven, and plans to make a single deposit today into an account earning 7% annual interest.",
+    "statements": [
+      "The amount she must deposit today is approximately \\$4,081.49.",
+      "If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.",
+      "The interest that will be earned over the 3 years is approximately \\$928.51.",
+      "If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.",
+      "If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The amount she must deposit today is approximately \\$4,081.49.**  (true)\n\nThe overview recovered $x\\approx 4{,}081.49$ as the required deposit today. The claim is that same figure, so the statement is True.",
+      "**B) If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.**  (false)\n\nA lower rate uses a smaller three-year factor, so more must be deposited today to reach the same \\$5,000:\n\n$$(1.05)^3 = 1.157625$$\n\n$$x_{5\\%} = \\frac{5{,}000}{1.157625} \\approx 4{,}319.19$$\n\nThe claim needs $4{,}319.19 < 4{,}081.49$. We have $4{,}319.19 > 4{,}081.49$, so the statement is False.",
+      "**C) The interest that will be earned over the 3 years is approximately \\$928.51.**  (false)\n\nInterest is the \\$5,000 target minus the recovered deposit:\n\n$$5{,}000 - 4{,}081.49 = 918.51$$\n\nThe claim is \\$928.51. We have $918.51 \\ne 928.51$, so the statement is False.",
+      "**D) If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.**  (true)\n\nPresent value is linear in the target. The overview recovered $x\\approx 4{,}081.49$, so a \\$10,000 target needs\n\n$$2 \\times 4{,}081.49 = 8{,}162.98$$\n\nThe claim is \\$8,162.98, so the statement is True.",
+      "**E) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49.**  (false)\n\nSix years at the same 7% discounts the same \\$5,000 target by $(1.07)^6$:\n\n$$x_6 = \\frac{5{,}000}{(1.07)^6} \\approx 3{,}331.71$$\n\nHalf of the three-year deposit is\n\n$$\\frac{4{,}081.49}{2} = 2{,}040.75$$\n\nThe claim needs $x_6 = 2{,}040.75$. We have $3{,}331.71 \\ne 2{,}040.75$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 81,
+    "solution_overview": "Ms. Delgado, the bakery owner from a previous chapter, now wants to have exactly \\$5,000 available in 3 years to replace a commercial oven, and plans to make a single deposit today into an account earning 7% annual interest.\n\nThe target, annual rate, and horizon are\n\n$$A = 5{,}000, \\qquad r = 7\\% = 0.07, \\qquad n = 3$$\n\nA single present deposit $x$ grows according to $x(1+r)^n=A$, so\n\n$$x = \\frac{A}{(1+r)^n}$$\n\nThe three-year factor and the required deposit are\n\n$$(1.07)^3 = 1.225043$$\n\n$$x = \\frac{5{,}000}{1.225043} \\approx 4{,}081.49$$"
+  },
+  {
+    "id": "math-11-82",
+    "case_id": "MATH 11.82",
+    "title": "Future Value of a Freelancer's Present Deposit",
+    "subsection": "11.5",
+    "context": "A freelance graphic designer deposits \\$6,500 today into a business savings account earning 6% annual interest, and wants to project the accumulated value after 5 years, and again after a longer 10-year horizon.",
+    "statements": [
+      "The accumulated value after 5 years is approximately \\$8,698.47.",
+      "The interest earned during the first 5 years is approximately \\$2,198.47.",
+      "The accumulated value after 10 years is exactly double the 5-year value.",
+      "The interest earned during the SECOND 5-year period, approximately \\$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \\$2,198.47.",
+      "If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \\$8,698.47."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The accumulated value after 5 years is approximately \\$8,698.47.**  (true)\n\nThe overview recovered $F(5)\\approx 8{,}698.47$ as the five-year balance. The claim is that same figure, so the statement is True.",
+      "**B) The interest earned during the first 5 years is approximately \\$2,198.47.**  (true)\n\nInterest over the first five years is the recovered five-year balance minus the \\$6,500 deposit:\n\n$$8{,}698.47 - 6{,}500 = 2{,}198.47$$\n\nThe claim is \\$2,198.47, so the statement is True.",
+      "**C) The accumulated value after 10 years is exactly double the 5-year value.**  (false)\n\nThe overview recovered $F(5)\\approx 8{,}698.47$ and $F(10)\\approx 11{,}640.51$. Double the five-year balance is\n\n$$2 \\times 8{,}698.47 = 17{,}396.94$$\n\nThe claim needs $F(10)=17{,}396.94$. We have $11{,}640.51 \\ne 17{,}396.94$, so the statement is False.",
+      "**D) The interest earned during the SECOND 5-year period, approximately \\$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \\$2,198.47.**  (false)\n\nInterest in the second five years is the ten-year balance minus the five-year balance. The overview recovered $F(5)\\approx 8{,}698.47$ and $F(10)\\approx 11{,}640.51$:\n\n$$11{,}640.51 - 8{,}698.47 = 2{,}942.04$$\n\nThe first five years earn\n\n$$8{,}698.47 - 6{,}500 = 2{,}198.47$$\n\nThe claim needs $2{,}942.04 < 2{,}198.47$. We have $2{,}942.04 > 2{,}198.47$, so the statement is False.",
+      "**E) If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \\$8,698.47.**  (false)\n\nAt 3% the same \\$6,500 deposit grows for five years by\n\n$$F_{3\\%}(5) = 6{,}500(1.03)^5 \\approx 7{,}535.28$$\n\nHalf of the 6% five-year balance is\n\n$$\\frac{8{,}698.47}{2} = 4{,}349.24$$\n\nThe claim needs $F_{3\\%}(5)=4{,}349.24$. We have $7{,}535.28 \\ne 4{,}349.24$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 82,
+    "solution_overview": "A freelance graphic designer deposits \\$6,500 today into a business savings account earning 6% annual interest, and wants to project the accumulated value after 5 years, and again after a longer 10-year horizon.\n\nThe deposit, annual rate, and the two horizons are\n\n$$P = 6{,}500, \\qquad r = 6\\% = 0.06$$\n\n$$n = 5, \\qquad n = 10$$\n\nA present deposit accumulates by\n\n$$F(n) = P(1+r)^n$$\n\nThe five-year and ten-year balances are\n\n$$(1.06)^5 = 1.338226$$\n\n$$F(5) = 6{,}500 \\times 1.338226 \\approx 8{,}698.47$$\n\n$$(1.06)^{10} = 1.790847$$\n\n$$F(10) = 6{,}500 \\times 1.790847 \\approx 11{,}640.51$$"
+  },
+  {
+    "id": "math-11-83",
+    "case_id": "MATH 11.83",
+    "title": "Future Value of an Ordinary Annuity for a Dental Clinic's Equipment Fund",
+    "subsection": "11.5",
+    "context": "A dental clinic owner deposits \\$2,000 at the end of each year into an equipment-replacement fund earning 5% annual interest, for 6 years, and wants to understand how this future value relates to its present-value equivalent.",
+    "statements": [
+      "The future value after 6 years is approximately \\$13,603.84.",
+      "The total interest earned over the 6 years is approximately \\$1,703.84.",
+      "The present-value equivalent of this future value is approximately \\$18,230.45.",
+      "If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.",
+      "If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The future value after 6 years is approximately \\$13,603.84.**  (true)\n\nThe overview recovered $F_6\\approx 13{,}603.84$ as the six-year future value. The claim is that same figure, so the statement is True.",
+      "**B) The total interest earned over the 6 years is approximately \\$1,703.84.**  (false)\n\nInterest is the recovered future value minus the six deposits of \\$2,000:\n\n$$2{,}000 \\times 6 = 12{,}000$$\n\n$$13{,}603.84 - 12{,}000 = 1{,}603.84$$\n\nThe claim is \\$1,703.84. We have $1{,}603.84 \\ne 1{,}703.84$, so the statement is False.",
+      "**C) The present-value equivalent of this future value is approximately \\$18,230.45.**  (false)\n\nThe present-value equivalent discounts the recovered $F_6\\approx 13{,}603.84$:\n\n$$P_6 = \\frac{13{,}603.84}{(1.05)^6} \\approx 10{,}151.40$$\n\nThe claim is \\$18,230.45. We have $10{,}151.40 \\ne 18{,}230.45$, so the statement is False.",
+      "**D) If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.**  (false)\n\nFuture value is linear in the annual deposit. The overview recovered $F_6\\approx 13{,}603.84$, so a 50% larger deposit of \\$3,000 gives\n\n$$13{,}603.84 \\times 1.5 = 20{,}405.76$$\n\nThe claim is \\$21,405.76. We have $20{,}405.76 \\ne 21{,}405.76$, so the statement is False.",
+      "**E) If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84.**  (false)\n\nTwelve years of the same \\$2,000 deposits give\n\n$$F_{12} = \\frac{2{,}000}{0.05}\\left[(1.05)^{12}-1\\right] \\approx 31{,}834.24$$\n\nDouble the six-year future value is\n\n$$2 \\times 13{,}603.84 = 27{,}207.68$$\n\nThe claim needs $F_{12} < 27{,}207.68$. We have $31{,}834.24 > 27{,}207.68$, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 83,
+    "solution_overview": "A dental clinic owner deposits \\$2,000 at the end of each year into an equipment-replacement fund earning 5% annual interest, for 6 years, and wants to understand how this future value relates to its present-value equivalent.\n\nThe ordinary annuity has annual deposit, rate, and horizon\n\n$$a = 2{,}000, \\qquad r = 5\\% = 0.05, \\qquad n = 6$$\n\nThe future value of an ordinary annuity is\n\n$$F_n = \\frac{a}{r}\\left[(1+r)^n-1\\right]$$\n\nand its present-value equivalent satisfies $P_n=\\frac{F_n}{(1+r)^n}$.\n\nThe six-year future value is\n\n$$F_6 = \\frac{2{,}000}{0.05}\\left[(1.05)^6-1\\right] \\approx 13{,}603.84$$"
+  },
+  {
+    "id": "math-11-84",
+    "case_id": "MATH 11.84",
+    "title": "Future Value of an Ordinary Annuity for a Logistics Company's Fleet Fund",
+    "subsection": "11.5",
+    "context": "A logistics company deposits \\$3,500 at the end of each year into a fleet-replacement account earning 8% annual interest, for 10 years, and management wants to stress-test the fund under a longer horizon and a higher rate.",
+    "statements": [
+      "The future value after 10 years is approximately \\$50,702.97.",
+      "The total interest earned over the 10 years is approximately \\$15,702.97.",
+      "If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.",
+      "The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.",
+      "If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The future value after 10 years is approximately \\$50,702.97.**  (true)\n\nThe overview recovered $F_{10}\\approx 50{,}702.97$ as the ten-year future value. The claim is that same figure, so the statement is True.",
+      "**B) The total interest earned over the 10 years is approximately \\$15,702.97.**  (true)\n\nInterest is the recovered future value minus the ten deposits of \\$3,500:\n\n$$3{,}500 \\times 10 = 35{,}000$$\n\n$$50{,}702.97 - 35{,}000 = 15{,}702.97$$\n\nThe claim is \\$15,702.97, so the statement is True.",
+      "**C) If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.**  (false)\n\nTwenty years of the same \\$3,500 deposits give\n\n$$F_{20} = \\frac{3{,}500}{0.08}\\left[(1.08)^{20}-1\\right] \\approx 160{,}166.87$$\n\nDouble the ten-year future value is\n\n$$2 \\times 50{,}702.97 = 101{,}405.94$$\n\nThe claim needs $F_{20} < 101{,}405.94$. We have $160{,}166.87 > 101{,}405.94$, so the statement is False.",
+      "**D) The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.**  (false)\n\nThe overview recovered $F_{10}\\approx 50{,}702.97$. Interest is that pile minus the \\$35,000 of deposits:\n\n$$50{,}702.97 - 35{,}000 = 15{,}702.97$$\n\nThe claim needs $15{,}702.97 > 35{,}000$. We have $15{,}702.97 < 35{,}000$, so the statement is False.",
+      "**E) If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00.**  (true)\n\nAt 10% the same ten deposits give\n\n$$F_{10}^{10\\%} = \\frac{3{,}500}{0.10}\\left[(1.10)^{10}-1\\right] \\approx 55{,}780.97$$\n\nThe claim needs $F_{10}^{10\\%} > 55{,}000$. We have $55{,}780.97 > 55{,}000$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 84,
+    "solution_overview": "A logistics company deposits \\$3,500 at the end of each year into a fleet-replacement account earning 8% annual interest, for 10 years, and management wants to stress-test the fund under a longer horizon and a higher rate.\n\nThe ordinary annuity has annual deposit, rate, and horizon\n\n$$a = 3{,}500, \\qquad r = 8\\% = 0.08, \\qquad n = 10$$\n\nThe future value of an ordinary annuity is\n\n$$F_n = \\frac{a}{r}\\left[(1+r)^n-1\\right]$$\n\nThe ten-year future value is\n\n$$F_{10} = \\frac{3{,}500}{0.08}\\left[(1.08)^{10}-1\\right]$$\n\n$$= 43{,}750 \\times 1.158925 \\approx 50{,}702.97$$"
+  },
+  {
+    "id": "math-11-85",
+    "case_id": "MATH 11.85",
+    "title": "Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan",
+    "subsection": "11.5",
+    "context": "A retiree wants to withdraw \\$2,400 at the end of each year for the next 15 years from a retirement account earning 4.5% annual interest, and wants to know how much must be in the account today to support these withdrawals.",
+    "statements": [
+      "The present value needed today is approximately \\$25,775.15.",
+      "The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.",
+      "If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.",
+      "The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.",
+      "If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value needed today is approximately \\$25,775.15.**  (true)\n\nThe overview recovered $P_{15}=25{,}775.15$ as the required deposit today. The claim is that same figure, so the statement is True.",
+      "**B) The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.**  (true)\n\nFifteen withdrawals of \\$2,400 total\n\n$$2{,}400 \\times 15 = 36{,}000$$\n\nThe overview recovered $P_{15}=25{,}775.15$. Then $36{,}000 > 25{,}775.15$, so the statement is True.",
+      "**C) If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.**  (false)\n\nThirty years of the same withdrawals give\n\n$$P_{30} = \\frac{2{,}400}{0.045}\\left[1-\\frac{1}{(1.045)^{30}}\\right] = 39{,}091.65$$\n\nDouble the fifteen-year present value is\n\n$$2 \\times 25{,}775.15 = 51{,}550.30$$\n\nThe claim needs $P_{30}=51{,}550.30$. We have $39{,}091.65 \\ne 51{,}550.30$, so the statement is False.",
+      "**D) The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.**  (false)\n\nThe gap is the nominal withdrawal total minus the recovered deposit:\n\n$$2{,}400 \\times 15 = 36{,}000$$\n\n$$36{,}000 - 25{,}775.15 = 10{,}224.85$$\n\nThe claim is \\$11,224.85. We have $10{,}224.85 \\ne 11{,}224.85$, so the statement is False.",
+      "**E) If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15.**  (false)\n\nA higher rate discounts the same withdrawals more, so less is needed today. At 6%,\n\n$$P_{15}^{6\\%} = \\frac{2{,}400}{0.06}\\left[1-\\frac{1}{(1.06)^{15}}\\right] = 23{,}309.40$$\n\nThe claim needs $23{,}309.40 > 25{,}775.15$. We have $23{,}309.40 < 25{,}775.15$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 85,
+    "solution_overview": "A retiree wants to withdraw \\$2,400 at the end of each year for the next 15 years from a retirement account earning 4.5% annual interest, and wants to know how much must be in the account today to support these withdrawals.\n\nThe annual withdrawal, rate, and horizon are\n\n$$a = 2{,}400, \\qquad r = 4.5\\% = 0.045, \\qquad n = 15$$\n\nThe present value of an ordinary annuity is\n\n$$P_n = \\frac{a}{r}\\left[1-\\frac{1}{(1+r)^n}\\right]$$\n\nThe required deposit today is\n\n$$P_{15} = \\frac{2{,}400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]$$\n\n$$= 53{,}333.33 \\times 0.483284 = 25{,}775.15$$"
+  },
+  {
+    "id": "math-11-86",
+    "case_id": "MATH 11.86",
+    "title": "Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship",
+    "subsection": "11.5",
+    "context": "A nonprofit organization needs to fund \\$5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same \\$5,000 annual payment in perpetuity at the same rate.",
+    "statements": [
+      "The present value needed to fund the 20-year annuity is approximately \\$57,349.67.",
+      "The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.",
+      "The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.",
+      "If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.",
+      "The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The present value needed to fund the 20-year annuity is approximately \\$57,349.67.**  (true)\n\nThe overview recovered $P_{20}=57{,}349.67$ as the 20-year present value. The claim is that same figure, so the statement is True.",
+      "**B) The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.**  (true)\n\nThe overview recovered $P=83{,}333.33$ and $P_{20}=57{,}349.67$. The extra cost of the perpetuity is\n\n$$83{,}333.33 - 57{,}349.67 = 25{,}983.66$$\n\nThe claim is that same gap, so the statement is True.",
+      "**C) The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.**  (false)\n\nThe 20-year share of the perpetuity is\n\n$$\\frac{57{,}349.67}{83{,}333.33} \\approx 0.6882 = 68.82\\%$$\n\nThe claim is about $72.82\\%$. We have $68.82\\% \\ne 72.82\\%$, so the statement is False.",
+      "**D) If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.**  (false)\n\nForty years of the same scholarships give\n\n$$P_{40} = \\frac{5{,}000}{0.06}\\left[1-\\frac{1}{(1.06)^{40}}\\right] = 75{,}231.50$$\n\n$$\\frac{75{,}231.50}{83{,}333.33} \\approx 0.9028 = 90.28\\%$$\n\nThe claim needs a share above $95\\%$. We have $90.28\\% < 95\\%$, so the statement is False.",
+      "**E) The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value.**  (true)\n\nIn the annuity formula, let $n\\to\\infty$. Then $(1.06)^n\\to\\infty$, so\n\n$$\\frac{1}{(1.06)^n}\\to 0$$\n\n$$P_n \\to \\frac{5{,}000}{0.06} = 83{,}333.33$$\n\nThe claim is that same limit, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 86,
+    "solution_overview": "A nonprofit organization needs to fund \\$5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same \\$5,000 annual payment in perpetuity at the same rate.\n\nThe annual payment, rate, and finite horizon are\n\n$$a = 5{,}000, \\qquad r = 6\\% = 0.06, \\qquad n = 20$$\n\nThe ordinary-annuity and perpetuity present values are\n\n$$P_n = \\frac{a}{r}\\left[1-\\frac{1}{(1+r)^n}\\right], \\qquad P = \\frac{a}{r}$$\n\nThe 20-year fund and the perpetuity are\n\n$$P_{20} = \\frac{5{,}000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right]$$\n\n$$= 83{,}333.33 \\times 0.688195 = 57{,}349.67$$\n\n$$P = \\frac{5{,}000}{0.06} = 83{,}333.33$$"
+  },
+  {
+    "id": "math-11-87",
+    "case_id": "MATH 11.87",
+    "title": "Comparing Payment Streams via Present Value for a Machinery Purchase",
+    "subsection": "11.5",
+    "context": "A supplier offers a company two payment options for a piece of machinery. Option 1: pay \\$18,000 today. Option 2: pay \\$2,500 at the end of each year for 9 years. Using an interest rate of 7%, the company wants to know which option has the lower present-value cost.",
+    "statements": [
+      "The present value of Option 2's payments is approximately \\$16,288.18.",
+      "Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.",
+      "If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.",
+      "The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.",
+      "Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value of Option 2's payments is approximately \\$16,288.18.**  (true)\n\nThe overview recovered $P_9=16{,}288.18$ as Option 2's present-value cost. The claim is that same figure, so the statement is True.",
+      "**B) Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.**  (false)\n\nThe overview recovered $P_9=16{,}288.18$. That is less than Option 1's \\$18,000, so Option 2 is cheaper. The saving is\n\n$$18{,}000 - 16{,}288.18 = 1{,}711.82$$\n\nThe claim is a saving of \\$1,811.82. We have $1{,}711.82 \\ne 1{,}811.82$, so the statement is False.",
+      "**C) If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.**  (false)\n\nAt 4% the same nine payments are worth\n\n$$P_9^{4\\%} = \\frac{2{,}500}{0.04}\\left[1-\\frac{1}{(1.04)^9}\\right] = 18{,}588.31$$\n\nThe claim needs $18{,}588.31 < 16{,}288.18$. We have $18{,}588.31 > 16{,}288.18$, so the statement is False.",
+      "**D) The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.**  (false)\n\nNine payments of \\$2,500 total\n\n$$2{,}500 \\times 9 = 22{,}500$$\n\nThe excess over Option 1 is\n\n$$22{,}500 - 18{,}000 = 4{,}500$$\n\nThe claim is \\$4,600. We have $4{,}500 \\ne 4{,}600$, so the statement is False.",
+      "**E) Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00.**  (false)\n\nGrowing Option 1's \\$18,000 for nine years at 7% gives\n\n$$F = 18{,}000(1.07)^9$$\n\n$$(1.07)^9 \\approx 1.838459$$\n\n$$F \\approx 33{,}092.26$$\n\nThe claim needs $F>34{,}000$. We have $33{,}092.26 < 34{,}000$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 87,
+    "solution_overview": "A supplier offers a company two payment options for a piece of machinery. Option 1: pay \\$18,000 today. Option 2: pay \\$2,500 at the end of each year for 9 years. Using an interest rate of 7%, the company wants to know which option has the lower present-value cost.\n\nOption 1 costs \\$18,000 today. Option 2 is an ordinary annuity\n\n$$a = 2{,}500, \\qquad r = 7\\% = 0.07, \\qquad n = 9$$\n\nThe annuity present value is\n\n$$P_n = \\frac{a}{r}\\left[1-\\frac{1}{(1+r)^n}\\right]$$\n\nDiscounting Option 2 at 7% gives\n\n$$P_9 = \\frac{2{,}500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]$$\n\n$$= 35{,}714.29 \\times 0.456069 = 16{,}288.18$$"
+  },
+  {
+    "id": "math-11-88",
+    "case_id": "MATH 11.88",
+    "title": "Comparing Savings Strategies via Future Value for a Construction Firm",
+    "subsection": "11.5",
+    "context": "A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years, both earning 6% annual interest. Strategy A: deposit \\$12,000 today, all at once. Strategy B: deposit \\$1,400 at the end of each year for 8 years.",
+    "statements": [
+      "Strategy A's future value after 8 years is approximately \\$19,126.18.",
+      "Strategy B's future value after 8 years is approximately \\$14,856.46.",
+      "Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.",
+      "The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.",
+      "If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Strategy A's future value after 8 years is approximately \\$19,126.18.**  (true)\n\nThe overview recovered $F_A=19{,}126.18$ as Strategy A's eight-year balance. The claim is that same figure, so the statement is True.",
+      "**B) Strategy B's future value after 8 years is approximately \\$14,856.46.**  (false)\n\nThe overview recovered $F_B=13{,}856.46$ as Strategy B's eight-year balance. The claim is \\$14,856.46. We have $13{,}856.46 \\ne 14{,}856.46$, so the statement is False.",
+      "**C) Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.**  (false)\n\nThe overview recovered $F_A=19{,}126.18$ and $F_B=13{,}856.46$. Strategy A finishes ahead. The gap is\n\n$$19{,}126.18 - 13{,}856.46 = 5{,}269.72$$\n\nThe claim is a gap of \\$5,769.72. We have $5{,}269.72 \\ne 5{,}769.72$, so the statement is False.",
+      "**D) The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.**  (false)\n\nStrategy B commits eight deposits of \\$1,400:\n\n$$1{,}400 \\times 8 = 11{,}200$$\n\nThe claim needs $11{,}200 > 12{,}000$. We have $11{,}200 < 12{,}000$, so the statement is False.",
+      "**E) If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18.**  (true)\n\nRaising Strategy B to \\$1,500 a year uses the same eight-year factor at the new deposit:\n\n$$F_B' = \\frac{1{,}500}{0.06}\\left[(1.06)^8-1\\right] = 14{,}846.20$$\n\nThe claim needs $F_B' < 19{,}126.18$. We have $14{,}846.20 < 19{,}126.18$, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 88,
+    "solution_overview": "A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years, both earning 6% annual interest. Strategy A: deposit \\$12,000 today, all at once. Strategy B: deposit \\$1,400 at the end of each year for 8 years.\n\nThe lump sum, the annual deposit, the rate, and the horizon are\n\n$$P = 12{,}000, \\qquad a = 1{,}400$$\n\n$$r = 6\\% = 0.06, \\qquad n = 8$$\n\nThe lump-sum and ordinary-annuity future values are\n\n$$F = P(1+r)^n, \\qquad F_n = \\frac{a}{r}\\left[(1+r)^n-1\\right]$$\n\nStrategy A grows to\n\n$$F_A = 12{,}000(1.06)^8 = 12{,}000 \\times 1.593848 = 19{,}126.18$$\n\nStrategy B grows to\n\n$$F_B = \\frac{1{,}400}{0.06}\\left[(1.06)^8-1\\right] = 23{,}333.33 \\times 0.593848 = 13{,}856.46$$"
+  },
+  {
+    "id": "math-11-89",
+    "case_id": "MATH 11.89",
+    "title": "Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund",
+    "subsection": "11.5",
+    "context": "A gym owner deposits \\$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.",
+    "statements": [
+      "The future value of these deposits at the end of year 6 is approximately \\$21,426.05.",
+      "If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.",
+      "The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.",
+      "If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.",
+      "Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The future value of these deposits at the end of year 6 is approximately \\$21,426.05.**  (true)\n\nThe overview recovered $F_{\\mathrm{due}}=21{,}426.05$ as the year-6 due future value. The claim is that same figure, so the statement is True.",
+      "**B) If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.**  (true)\n\nThe overview recovered $F_{\\mathrm{ordinary}}=20{,}405.76$ and $F_{\\mathrm{due}}=21{,}426.05$. End-of-year deposits finish lower:\n\n$$20{,}405.76 < 21{,}426.05$$\n\nso the statement is True.",
+      "**C) The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.**  (false)\n\nThe dollar gap is the due pile minus the ordinary pile:\n\n$$21{,}426.05 - 20{,}405.76 = 1{,}020.29$$\n\nThe claim is \\$1,120.29. We have $1{,}020.29 \\ne 1{,}120.29$, so the statement is False.",
+      "**D) If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.**  (false)\n\nTwelve years of due deposits give\n\n$$F_{\\mathrm{ordinary}}(12) = \\frac{3{,}000}{0.05}\\left[(1.05)^{12}-1\\right] = 47{,}751.36$$\n\n$$F_{\\mathrm{due}}(12) = 47{,}751.36 \\times 1.05 = 50{,}138.93$$\n\nDouble the six-year due value is\n\n$$2 \\times 21{,}426.05 = 42{,}852.10$$\n\nThe claim needs $F_{\\mathrm{due}}(12)=42{,}852.10$. We have $50{,}138.93 \\ne 42{,}852.10$, so the statement is False.",
+      "**E) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.**  (true)\n\nThe overview recovered $F_{\\mathrm{due}}=F_{\\mathrm{ordinary}}(1+r)$. That factor is one extra period of growth, and it does not use $n$. The claim is that same identity, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 89,
+    "solution_overview": "A gym owner deposits \\$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.\n\nThe deposit, rate, and horizon are\n\n$$a = 3{,}000, \\qquad r = 5\\% = 0.05, \\qquad n = 6$$\n\nThe ordinary-annuity future value and the due scale are\n\n$$F_n = \\frac{a}{r}\\left[(1+r)^n-1\\right], \\qquad F_{\\mathrm{due}} = F_n(1+r)$$\n\nThe six-year ordinary and due piles are\n\n$$F_{\\mathrm{ordinary}} = \\frac{3{,}000}{0.05}\\left[(1.05)^6-1\\right] = 20{,}405.76$$\n\n$$F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05$$"
+  },
+  {
+    "id": "math-11-90",
+    "case_id": "MATH 11.90",
+    "title": "Present Value of an Annuity Due for a Commercial Lease",
+    "subsection": "11.5",
+    "context": "A tenant signs a 5-year commercial lease requiring rent payments of \\$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.",
+    "statements": [
+      "The present value of the lease payments today is approximately \\$107,162.61.",
+      "If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.",
+      "The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.",
+      "If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.",
+      "The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the lease payments today is approximately \\$107,162.61.**  (true)\n\nThe overview recovered $P_{\\mathrm{due}}=107{,}162.61$ as the lease's present value today. The claim is that same figure, so the statement is True.",
+      "**B) If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.**  (true)\n\nThe overview recovered $P_{\\mathrm{ordinary}}=101{,}096.80$ and $P_{\\mathrm{due}}=107{,}162.61$. End-of-year rent is worth less today:\n\n$$101{,}096.80 < 107{,}162.61$$\n\nso the statement is True.",
+      "**C) The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.**  (false)\n\nThe dollar gap is the due present value minus the ordinary present value:\n\n$$107{,}162.61 - 101{,}096.80 = 6{,}065.81$$\n\nThe claim is \\$7,065.81. We have $6{,}065.81 \\ne 7{,}065.81$, so the statement is False.",
+      "**D) If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.**  (false)\n\nTen years of due rent give\n\n$$P_{\\mathrm{ordinary}}(10) = \\frac{24{,}000}{0.06}\\left[1-\\frac{1}{(1.06)^{10}}\\right] = 176{,}642.00$$\n\n$$P_{\\mathrm{due}}(10) = 176{,}642.00 \\times 1.06 = 187{,}240.52$$\n\nDouble the five-year due value is\n\n$$2 \\times 107{,}162.61 = 214{,}325.22$$\n\nThe claim needs $P_{\\mathrm{due}}(10)=214{,}325.22$. We have $187{,}240.52 \\ne 214{,}325.22$, so the statement is False.",
+      "**E) The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.**  (true)\n\nThe first rent is due immediately. The remaining four rents are an ordinary four-year annuity:\n\n$$P_4 = \\frac{24{,}000}{0.06}\\left[1-\\frac{1}{(1.06)^4}\\right] = 83{,}162.40$$\n\n$$24{,}000 + 83{,}162.40 = 107{,}162.40$$\n\nThat matches the recovered $P_{\\mathrm{due}}=107{,}162.61$ within rounding, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 90,
+    "solution_overview": "A tenant signs a 5-year commercial lease requiring rent payments of \\$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.\n\nThe rent, rate, and term are\n\n$$a = 24{,}000, \\qquad r = 6\\% = 0.06, \\qquad n = 5$$\n\nThe ordinary present value and the due scale are\n\n$$P_n = \\frac{a}{r}\\left[1-\\frac{1}{(1+r)^n}\\right], \\qquad P_{\\mathrm{due}} = P_n(1+r)$$\n\nAn equivalent split is $P_{\\mathrm{due}}=a+P_{n-1}$. The five-year ordinary and due present values are\n\n$$P_{\\mathrm{ordinary}} = \\frac{24{,}000}{0.06}\\left[1-\\frac{1}{(1.06)^5}\\right] = 101{,}096.80$$\n\n$$P_{\\mathrm{due}} = 101{,}096.80 \\times 1.06 = 107{,}162.61$$"
+  },
+  {
+    "id": "math-11-91",
+    "case_id": "MATH 11.91",
+    "title": "A Deferred Perpetuity for a Philanthropist's Endowed Fund",
+    "subsection": "11.5",
+    "context": "A philanthropist wants to establish an endowed fund that will pay \\$10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.",
+    "statements": [
+      "The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.",
+      "Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.",
+      "If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.",
+      "If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.",
+      "The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.**  (true)\n\nThe overview recovered $V=166{,}666.67$ as the perpetuity's value at the end of year 4. The claim is that same figure, so the statement is True.",
+      "**B) Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.**  (true)\n\nThe overview recovered $PV_0=132{,}015.61$ as today's present value of that year-4 fund. The claim is that same figure, so the statement is True.",
+      "**C) If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.**  (false)\n\nIf the first payment begins at the end of year 1, the perpetuity is worth $\\frac{a}{r}$ today:\n\n$$\\frac{10{,}000}{0.06} = 166{,}666.67$$\n\nThe claim needs $166{,}666.67 < 132{,}015.61$. We have $166{,}666.67 > 132{,}015.61$, so the statement is False.",
+      "**D) If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.**  (false)\n\nIf the first payment begins at the end of year 9, the same $V=166{,}666.67$ sits at the end of year 8:\n\n$$PV_0' = \\frac{166{,}666.67}{(1.06)^8} \\approx 104{,}568.80$$\n\nHalf of the original deferred value is\n\n$$\\frac{132{,}015.61}{2} = 66{,}007.81$$\n\nThe claim needs $PV_0' < 66{,}007.81$. We have $104{,}568.80 > 66{,}007.81$, so the statement is False.",
+      "**E) The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.**  (false)\n\nThe ratio of today's deferred value to the year-4 perpetuity value is the four-year discount factor:\n\n$$\\frac{PV_0}{V} = \\frac{1}{(1.06)^4} \\approx 0.7921$$\n\nThe claim is $0.8321$. We have $0.7921 \\ne 0.8321$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 91,
+    "solution_overview": "A philanthropist wants to establish an endowed fund that will pay \\$10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.\n\nThe annual payment and rate are\n\n$$a = 10{,}000, \\qquad r = 6\\% = 0.06$$\n\nA level perpetuity is worth $V=\\frac{a}{r}$ one period before its first payment, so the valuation date is the end of year 4. Discounting that value to today uses\n\n$$PV_0 = \\frac{V}{(1+r)^4}$$\n\nThe year-4 value and today's donation are\n\n$$V = \\frac{10{,}000}{0.06} = 166{,}666.67$$\n\n$$PV_0 = \\frac{166{,}666.67}{(1.06)^4} = \\frac{166{,}666.67}{1.262477} = 132{,}015.61$$"
+  },
+  {
+    "id": "math-11-92",
+    "case_id": "MATH 11.92",
+    "title": "Reverse-Engineering a Perpetual Preferred Stock's Fair Value",
+    "subsection": "11.5",
+    "context": "A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.",
+    "statements": [
+      "The fair value per share is approximately \\$60.71.",
+      "At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.",
+      "If the required return fell to 4%, the fair value would rise to \\$116.25 per share.",
+      "This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.",
+      "If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The fair value per share is approximately \\$60.71.**  (true)\n\nThe overview recovered $P\\approx 60.71$ as the fair value per share. The claim is that same figure, so the statement is True.",
+      "**B) At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.**  (false)\n\nThe market price is \\$65.00. The overview recovered a fair value of \\$60.71:\n\n$$65.00 > 60.71$$\n\nThe claim needs the stock to be undervalued. We have $65.00 > 60.71$, so the statement is False.",
+      "**C) If the required return fell to 4%, the fair value would rise to \\$116.25 per share.**  (false)\n\nAt a 4% required return,\n\n$$P' = \\frac{4.25}{0.04} = 106.25$$\n\nThe claim is \\$116.25. We have $106.25 \\ne 116.25$, so the statement is False.",
+      "**D) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.**  (false)\n\nThe move from 7% to 4% raises the recovered $P\\approx 60.714286$ to $106.25$:\n\n$$\\frac{106.25-60.714286}{60.714286} = 0.75 = 75\\%$$\n\nThe claim needs an increase of more than $75\\%$. We have exactly $75\\%$, so the statement is False.",
+      "**E) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57.**  (false)\n\nA 20% dividend cut leaves $a'=4.25\\times 0.80=3.40$. At the same 7%,\n\n$$P'' = \\frac{3.40}{0.07} \\approx 48.57$$\n\nThe claim is \\$50.57. We have $48.57 \\ne 50.57$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 92,
+    "solution_overview": "A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.\n\nThe annual dividend and required return are\n\n$$a = 4.25, \\qquad r = 7\\% = 0.07$$\n\nThe fair value of a level perpetuity is\n\n$$P = \\frac{a}{r}$$\n\nAt 7%,\n\n$$P = \\frac{4.25}{0.07} = 60.714286 \\approx 60.71$$"
+  },
+  {
+    "id": "math-11-93",
+    "case_id": "MATH 11.93",
+    "title": "Combined Renovation Cost and Perpetual Maintenance Fund for a City Park",
+    "subsection": "11.5",
+    "context": "A city council wants to fund a park's perpetual maintenance, needing \\$15,000 per year forever, starting one year from now, PLUS an immediate one-time renovation cost of \\$50,000 paid today. The applicable interest rate is 4.5%, and the council also wants to see how a higher rate would change the total funding requirement.",
+    "statements": [
+      "The present value of just the perpetual maintenance payments is approximately \\$333,333.33.",
+      "Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.",
+      "If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.",
+      "This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.",
+      "If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value of just the perpetual maintenance payments is approximately \\$333,333.33.**  (true)\n\nThe overview recovered $P=333{,}333.33$ as the present value of the maintenance perpetuity. The claim is that same figure, so the statement is True.",
+      "**B) Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.**  (true)\n\nThe overview recovered the combined funding $383{,}333.33$ after adding the \\$50,000 renovation. The claim is that same total, so the statement is True.",
+      "**C) If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.**  (true)\n\nAt 6% the perpetuity falls and the renovation is unchanged:\n\n$$P' = \\frac{15{,}000}{0.06} = 250{,}000$$\n\n$$50{,}000 + 250{,}000 = 300{,}000$$\n\nThe claim is \\$300,000.00, so the statement is True.",
+      "**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)\n\nThe rate increase cuts the combined total from \\$383,333.33 to \\$300,000:\n\n$$383{,}333.33 - 300{,}000 = 83{,}333.33$$\n\n$$\\frac{83{,}333.33}{383{,}333.33} \\approx 0.2174 = 21.74\\%$$\n\nThe claim needs more than $25\\%$. We have $21.74\\% < 25\\%$, so the statement is False.",
+      "**E) If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total.**  (false)\n\nAt 6% the perpetuity alone is \\$250,000. Half of the original combined 4.5% total is\n\n$$\\frac{383{,}333.33}{2} = 191{,}666.67$$\n\nThe claim needs $250{,}000 < 191{,}666.67$. We have $250{,}000 > 191{,}666.67$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 93,
+    "solution_overview": "A city council wants to fund a park's perpetual maintenance, needing \\$15,000 per year forever, starting one year from now, PLUS an immediate one-time renovation cost of \\$50,000 paid today. The applicable interest rate is 4.5%, and the council also wants to see how a higher rate would change the total funding requirement.\n\nThe annual maintenance and rate are\n\n$$a = 15{,}000, \\qquad r = 4.5\\% = 0.045$$\n\nThe perpetuity value is $P=\\frac{a}{r}$, and the total funding adds the immediate \\$50,000 renovation:\n\n$$P = \\frac{15{,}000}{0.045} = 333{,}333.33$$\n\n$$50{,}000 + 333{,}333.33 = 383{,}333.33$$"
+  },
+  {
+    "id": "math-11-94",
+    "case_id": "MATH 11.94",
+    "title": "Growing Perpetuity Valuation of a Rental Property's Escalating Cash Flows",
+    "subsection": "11.5",
+    "context": "A real estate investor is evaluating a rental property expected to generate a net cash flow of \\$24,000 at the end of year 1, growing at a constant 2.5% per year forever due to rent escalation clauses. The investor requires an 8% annual return on investments of this type.",
+    "statements": [
+      "The property's fair value is approximately \\$436,363.64.",
+      "If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.",
+      "If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.",
+      "If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.",
+      "The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The property's fair value is approximately \\$436,363.64.**  (true)\n\nThe overview recovered $P=436{,}363.64$ as the growing-perpetuity fair value. The claim is that same figure, so the statement is True.",
+      "**B) If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.**  (false)\n\nWith no growth the same first cash flow is a level perpetuity at 8%:\n\n$$P_{g=0} = \\frac{24{,}000}{0.08} = 300{,}000$$\n\nThe claim needs $300{,}000 > 436{,}363.64$. We have $300{,}000 < 436{,}363.64$, so the statement is False.",
+      "**C) If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.**  (false)\n\nAt 4% growth,\n\n$$P' = \\frac{24{,}000}{0.08-0.04} = 600{,}000$$\n\nDouble the original fair value is\n\n$$2 \\times 436{,}363.64 = 872{,}727.28$$\n\nThe claim needs $P'>872{,}727.28$. We have $600{,}000 < 872{,}727.28$, so the statement is False.",
+      "**D) If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.**  (false)\n\nAt a 6% required return,\n\n$$P'' = \\frac{24{,}000}{0.06-0.025} = \\frac{24{,}000}{0.035} = 685{,}714.29$$\n\nThe claim is \\$715,714.29. We have $685{,}714.29 \\ne 715{,}714.29$, so the statement is False.",
+      "**E) The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used.**  (true)\n\nThe growing-perpetuity formula uses the denominator $r-g$. When $g\\ge 8\\%$ that denominator is zero or negative, so the constant-growth model does not apply. The claim is that restriction, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 94,
+    "solution_overview": "A real estate investor is evaluating a rental property expected to generate a net cash flow of \\$24,000 at the end of year 1, growing at a constant 2.5% per year forever due to rent escalation clauses. The investor requires an 8% annual return on investments of this type.\n\nThe first cash flow, growth rate, and required return are\n\n$$a_1 = 24{,}000, \\qquad g = 2.5\\% = 0.025, \\qquad r = 8\\% = 0.08$$\n\nFor a growing perpetuity with $r>g$,\n\n$$P = \\frac{a_1}{r-g}$$\n\nThe property's fair value is\n\n$$P = \\frac{24{,}000}{0.08-0.025} = \\frac{24{,}000}{0.055} = 436{,}363.64$$"
+  },
+  {
+    "id": "math-11-95",
+    "case_id": "MATH 11.95",
+    "title": "The Gordon Growth Model for a Pension Fund's Stock Valuation",
+    "subsection": "11.5",
+    "context": "A pension fund is valuing a stock that just paid a dividend of \\$3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.",
+    "statements": [
+      "The next dividend is \\$3.09.",
+      "The fair value per share is approximately \\$54.50.",
+      "Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.",
+      "If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.",
+      "If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The next dividend is \\$3.09.**  (true)\n\nThe overview recovered $D_1=3.09$ as next year's dividend. The claim is that same figure, so the statement is True.",
+      "**B) The fair value per share is approximately \\$54.50.**  (false)\n\nThe overview recovered $P=51.50$ as the fair value per share. The claim is about \\$54.50. We have $51.50 \\ne 54.50$, so the statement is False.",
+      "**C) Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.**  (false)\n\nUsing the just-paid dividend by mistake gives\n\n$$\\frac{3.00}{0.09-0.03} = \\frac{3.00}{0.06} = 50.00$$\n\nThe understatement is\n\n$$51.50 - 50.00 = 1.50$$\n\nThe claim is \\$2.50. We have $1.50 \\ne 2.50$, so the statement is False.",
+      "**D) If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.**  (false)\n\nAt 5% growth, next year's dividend is $D_1'=3.00\\times 1.05=3.15$, so\n\n$$P' = \\frac{3.15}{0.09-0.05} = \\frac{3.15}{0.04} = 78.75$$\n\nDouble the original \\$51.50 is $103.00$. The claim needs $P'>103.00$. We have $78.75 < 103.00$, so the statement is False.",
+      "**E) If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00.**  (false)\n\nIf $g=r$, the denominator $r-g$ is zero and the growing-perpetuity formula is undefined. The present value does not become $0$. The claim is \\$0.00, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 95,
+    "solution_overview": "A pension fund is valuing a stock that just paid a dividend of \\$3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.\n\nThe just-paid dividend, growth rate, and required return are\n\n$$D_0 = 3.00, \\qquad g = 3\\% = 0.03, \\qquad r = 9\\% = 0.09$$\n\nNext year's dividend and the growing-perpetuity value are\n\n$$D_1 = D_0(1+g), \\qquad P = \\frac{D_1}{r-g}$$\n\n$$D_1 = 3.00 \\times 1.03 = 3.09$$\n\n$$P = \\frac{3.09}{0.09-0.03} = \\frac{3.09}{0.06} = 51.50$$"
+  },
+  {
+    "id": "math-11-96",
+    "case_id": "MATH 11.96",
+    "title": "Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician",
+    "subsection": "11.5",
+    "context": "A musician is offered two royalty-stream purchase deals for a song catalog, both priced at \\$170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \\$18,000 per year. Deal 2 is a growing perpetuity starting at \\$14,000 next year, growing 4% per year forever.",
+    "statements": [
+      "Deal 1 is a good buy at its asking price.",
+      "Deal 2's fair value exceeds its asking price by more than \\$60,000.00.",
+      "Deal 1 offers the larger \"margin of safety\" of the two deals.",
+      "If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.",
+      "Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Deal 1 is a good buy at its asking price.**  (true)\n\nThe overview recovered $P_1=180{,}000$. A fair buy at a \\$170,000 asking price needs fair value at least that price:\n\n$$180{,}000 > 170{,}000$$\n\nDeal 1 is a good buy, so the statement is True.",
+      "**B) Deal 2's fair value exceeds its asking price by more than \\$60,000.00.**  (true)\n\nThe overview recovered $P_2=233{,}333.33$. The margin over the asking price is\n\n$$233{,}333.33 - 170{,}000 = 63{,}333.33$$\n\nThe claim needs more than \\$60,000. We have $63{,}333.33 > 60{,}000$, so the statement is True.",
+      "**C) Deal 1 offers the larger \"margin of safety\" of the two deals.**  (false)\n\nDeal 1's margin is $180{,}000-170{,}000=10{,}000$. Deal 2's margin is $63{,}333.33$. The claim needs Deal 1's cushion to be larger. We have $10{,}000 < 63{,}333.33$, so the statement is False.",
+      "**D) If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.**  (true)\n\nAt 1% growth, Deal 2 is worth\n\n$$P_2' = \\frac{14{,}000}{0.10-0.01} = \\frac{14{,}000}{0.09} \\approx 155{,}555.56$$\n\nThe claim needs $P_2' < 170{,}000$. We have $155{,}555.56 < 170{,}000$, so the statement is True.",
+      "**E) Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.**  (false)\n\nThe overview recovered $P_1=180{,}000$ and $P_2=233{,}333.33$. The claim needs $P_1>P_2$. We have $180{,}000 < 233{,}333.33$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 96,
+    "solution_overview": "A musician is offered two royalty-stream purchase deals for a song catalog, both priced at \\$170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \\$18,000 per year. Deal 2 is a growing perpetuity starting at \\$14,000 next year, growing 4% per year forever.\n\nThe asking price and required return are \\$170,000 and $10\\%$. The two streams are\n\n$$a = 18{,}000, \\qquad a_1 = 14{,}000, \\qquad g = 4\\% = 0.04$$\n\nThe level and growing perpetuity values are\n\n$$P = \\frac{a}{r}, \\qquad P = \\frac{a_1}{r-g}$$\n\n$$P_1 = \\frac{18{,}000}{0.10} = 180{,}000$$\n\n$$P_2 = \\frac{14{,}000}{0.10-0.04} = \\frac{14{,}000}{0.06} = 233{,}333.33$$"
+  },
+  {
+    "id": "math-11-97",
+    "case_id": "MATH 11.97",
+    "title": "Present Value Under Continuous Compounding for a Bond Retirement Fund",
+    "subsection": "11.5",
+    "context": "A company needs to have \\$250,000 available in 12 years to retire a bond issue, and can invest in an account offering continuous compounding at a nominal annual rate of 5.5%. The CFO wants to know how much must be invested today, and how this compares to ordinary annual compounding at the same nominal rate.",
+    "statements": [
+      "The present value required today is approximately \\$129,213.75.",
+      "This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.",
+      "The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.",
+      "If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.",
+      "The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is \"lost\" to discounting each year."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The present value required today is approximately \\$129,213.75.**  (true)\n\nThe overview recovered $S_0=129{,}213.75$ as the continuous present value today. The claim is that same figure, so the statement is True.",
+      "**B) This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.**  (false)\n\nThe overview recovered $S_0=129{,}213.75$ and $S_0^{\\mathrm{ann}}\\approx 131{,}495.10$. The claim needs $129{,}213.75 > 131{,}495.10$. We have $129{,}213.75 < 131{,}495.10$, so the statement is False.",
+      "**C) The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.**  (false)\n\nThe gap is the annual-compounding present value minus the recovered continuous present value:\n\n$$131{,}495.10 - 129{,}213.75 = 2{,}281.35$$\n\nThe claim is \\$4,280.35. We have $2{,}281.35 \\ne 4{,}280.35$, so the statement is False.",
+      "**D) If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.**  (false)\n\nSix years of continuous discounting gives\n\n$$-rt = -0.055 \\times 6 = -0.33$$\n\n$$S_0' = 250{,}000 e^{-0.33} \\approx 179{,}731.00$$\n\nHalf of the 12-year present value is\n\n$$\\frac{129{,}213.75}{2} = 64{,}606.88$$\n\nThe claim needs $S_0' < 64{,}606.88$. We have $179{,}731.00 > 64{,}606.88$, so the statement is False.",
+      "**E) The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is \"lost\" to discounting each year.**  (true)\n\nThe one-year continuous discount factor is\n\n$$e^{-0.055} \\approx 0.9465$$\n\n$$1-0.9465 = 0.0535 = 5.35\\%$$\n\nThe claim is that same factor and that same one-year loss, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 97,
+    "solution_overview": "A company needs to have \\$250,000 available in 12 years to retire a bond issue, and can invest in an account offering continuous compounding at a nominal annual rate of 5.5%. The CFO wants to know how much must be invested today, and how this compares to ordinary annual compounding at the same nominal rate.\n\nThe future target, nominal rate, and horizon are\n\n$$S(t) = 250{,}000, \\qquad r = 5.5\\% = 0.055, \\qquad t = 12$$\n\nContinuous compounding discounts by $S_0=S(t)e^{-rt}$. Annual compounding discounts by $S_0=\\frac{S(t)}{(1+r)^t}$.\n\nThe continuous present value is\n\n$$-rt = -0.055 \\times 12 = -0.66$$\n\n$$S_0 = 250{,}000 e^{-0.66} = 250{,}000 \\times 0.516855 = 129{,}213.75$$\n\nAnnual compounding at the same nominal rate needs\n\n$$S_0^{\\mathrm{ann}} = \\frac{250{,}000}{(1.055)^{12}} \\approx 131{,}495.10$$"
+  },
+  {
+    "id": "math-11-98",
+    "case_id": "MATH 11.98",
+    "title": "Continuous-Compounding Lump Sum vs. Discrete Annuity for a Biotech Milestone",
+    "subsection": "11.5",
+    "context": "A biotech company sets aside \\$75,000 today in an account offering continuous compounding at a nominal 6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to instead depositing the same \\$75,000 total, spread evenly as \\$8,333.33 at the end of each of the 9 years, into a separate account earning a discrete 6.25% annual rate.",
+    "statements": [
+      "The lump sum's future value under continuous compounding is approximately \\$131,629.13.",
+      "The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.",
+      "The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.",
+      "This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.",
+      "If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The lump sum's future value under continuous compounding is approximately \\$131,629.13.**  (true)\n\nThe overview recovered $S_{\\mathrm{cont}}=131{,}629.13$ as the continuous lump-sum future value. The claim is that same figure, so the statement is True.",
+      "**B) The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.**  (true)\n\nThe overview recovered $F_9=96{,}757.60$ and $S_{\\mathrm{cont}}=131{,}629.13$. Both strategies commit \\$75,000 in total, and\n\n$$96{,}757.60 < 131{,}629.13$$\n\nso the statement is True.",
+      "**C) The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.**  (true)\n\nThe lump-sum lead is\n\n$$131{,}629.13 - 96{,}757.60 = 34{,}871.53$$\n\nThe claim needs more than \\$30,000. We have $34{,}871.53 > 30{,}000$, so the statement is True.",
+      "**D) This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.**  (true)\n\nThe lump sum earns 6.25% on the full \\$75,000 from day one. The annuity's later deposits sit for fewer years, so they accumulate less. That timing gap is why $S_{\\mathrm{cont}}$ exceeds $F_9$, so the statement is True.",
+      "**E) If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60.**  (true)\n\nDiscrete annual compounding of the full \\$75,000 for nine years gives\n\n$$S_{\\mathrm{ann}} = 75{,}000(1.0625)^9 \\approx 129{,}426.15$$\n\nThe claim needs $S_{\\mathrm{ann}} > 96{,}757.60$. We have $129{,}426.15 > 96{,}757.60$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 98,
+    "solution_overview": "A biotech company sets aside \\$75,000 today in an account offering continuous compounding at a nominal 6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to instead depositing the same \\$75,000 total, spread evenly as \\$8,333.33 at the end of each of the 9 years, into a separate account earning a discrete 6.25% annual rate.\n\nThe lump sum, rate, and horizon are\n\n$$P = 75{,}000, \\qquad r = 6.25\\% = 0.0625, \\qquad t = 9$$\n\nThe annuity deposits the same total as $a=8{,}333.33$ at each year-end. Continuous growth and the ordinary-annuity future value are\n\n$$S = Pe^{rt}, \\qquad F_n = \\frac{a}{r}\\left[(1+r)^n-1\\right]$$\n\n$$rt = 0.0625 \\times 9 = 0.5625$$\n\n$$S_{\\mathrm{cont}} = 75{,}000 e^{0.5625} = 131{,}629.13$$\n\n$$F_9 = \\frac{8{,}333.33}{0.0625}\\left[(1.0625)^9-1\\right] = 96{,}757.60$$"
+  },
+  {
+    "id": "math-11-99",
+    "case_id": "MATH 11.99",
+    "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity",
+    "subsection": "11.5",
+    "context": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.",
+    "statements": [
+      "The present value of the annuity-due lease payments is approximately \\$18,110.94.",
+      "The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.",
+      "The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.",
+      "The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.",
+      "Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The present value of the annuity-due lease payments is approximately \\$18,110.94.**  (true)\n\nThe overview recovered $P_{\\mathrm{due}}=18{,}110.94$ as the present value of the due lease. The claim is that same figure, so the statement is True.",
+      "**B) The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.**  (false)\n\nThe due future value scales the ordinary future value by one extra period:\n\n$$F_{\\mathrm{due}} = \\frac{4{,}200}{0.08}\\left[(1.08)^5-1\\right](1.08) = 26{,}610.90$$\n\nThe claim is \\$27,610.90. We have $26{,}610.90 \\ne 27{,}610.90$, so the statement is False.",
+      "**C) The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.**  (false)\n\nThe overview recovered $S=30{,}439.24$ as the seven-year continuous balance. The claim is \\$31,439.24. We have $30{,}439.24 \\ne 31{,}439.24$, so the statement is False.",
+      "**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)\n\nThe overview recovered $P_{\\mathrm{perp}}=37{,}500$ and $P_{\\mathrm{due}}=18{,}110.94$. Double the lease present value is\n\n$$2 \\times 18{,}110.94 = 36{,}221.88$$\n\nThe claim needs $37{,}500 < 36{,}221.88$. We have $37{,}500 > 36{,}221.88$, so the statement is False.",
+      "**E) Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.**  (false)\n\nThe overview recovered $S=30{,}439.24$ and $P_{\\mathrm{perp}}=37{,}500$. The claim needs $S>P_{\\mathrm{perp}}$. We have $30{,}439.24 < 37{,}500$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 99,
+    "solution_overview": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.\n\nThe due lease, the continuous investment, and the perpetuity are\n\n$$a = 4{,}200, \\qquad n = 5, \\qquad r = 8\\% = 0.08$$\n\n$$P = 20{,}000, \\qquad t = 7, \\qquad r_{\\mathrm{cont}} = 6\\% = 0.06$$\n\n$$a_{\\mathrm{perp}} = 3{,}000$$\n\nThe three models are\n\n$$P_{\\mathrm{due}} = \\frac{a}{r}\\left[1-\\frac{1}{(1+r)^n}\\right](1+r), \\qquad S = Pe^{rt}, \\qquad P_{\\mathrm{perp}} = \\frac{a}{r}$$\n\n$$P_{\\mathrm{ordinary}} = \\frac{4{,}200}{0.08}\\left[1-\\frac{1}{(1.08)^5}\\right] = 16{,}769.39$$\n\n$$P_{\\mathrm{due}} = 16{,}769.39 \\times 1.08 = 18{,}110.94$$\n\n$$S = 20{,}000 e^{0.06 \\times 7} = 20{,}000 e^{0.42} = 30{,}439.24$$\n\n$$P_{\\mathrm{perp}} = \\frac{3{,}000}{0.08} = 37{,}500$$"
+  },
+  {
+    "id": "math-11-100",
+    "case_id": "MATH 11.100",
+    "title": "Capstone: A Family Office's Four-Component Windfall Allocation",
+    "subsection": "11.5",
+    "context": "A family office is structuring a client's financial plan using four separate tools. Component 1: \\$150,000 is invested today in a continuous-compounding account at a nominal 5% rate for 10 years, to fund a future purchase. Component 2: the client needs \\$80,000 available in 6 years for a home renovation, funded today by a single deposit at a discrete 6% annual rate. Component 3: the client will receive an ordinary annuity of \\$10,000 at the end of each year for 12 years from a structured settlement, discounted at 7%. Component 4: the remainder will endow a scholarship as a growing perpetuity paying \\$5,000 next year, growing 2% annually forever, at a required return of 7%.",
+    "statements": [
+      "Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.",
+      "Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.",
+      "Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.",
+      "Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.",
+      "Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.**  (true)\n\nThe overview recovered $S=247{,}308.20$ as Component 1's ten-year continuous balance. The claim is that same figure, so the statement is True.",
+      "**B) Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.**  (false)\n\nThe overview recovered $x=56{,}396.85$ as Component 2's required deposit today. The claim is \\$57,396.85. We have $56{,}396.85 \\ne 57{,}396.85$, so the statement is False.",
+      "**C) Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.**  (true)\n\nThe overview recovered $P_{12}=79{,}429.40$ as Component 3's present value. The claim is that same figure, so the statement is True.",
+      "**D) Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.**  (true)\n\nThe overview recovered $P=100{,}000$ as Component 4's growing-perpetuity present value. The claim is \\$100,000.00, so the statement is True.",
+      "**E) Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00.**  (false)\n\nPresent-day resources are Component 1's opening \\$150,000, plus the recovered $x$, $P_{12}$, and $P$:\n\n$$150{,}000 + 56{,}396.85 = 206{,}396.85$$\n\n$$206{,}396.85 + 79{,}429.40 = 285{,}826.25$$\n\n$$285{,}826.25 + 100{,}000 = 385{,}826.25$$\n\nThe claim needs a total above \\$500,000. We have $385{,}826.25 < 500{,}000$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 100,
+    "solution_overview": "A family office is structuring a client's financial plan using four separate tools. Component 1: \\$150,000 is invested today in a continuous-compounding account at a nominal 5% rate for 10 years, to fund a future purchase. Component 2: the client needs \\$80,000 available in 6 years for a home renovation, funded today by a single deposit at a discrete 6% annual rate. Component 3: the client will receive an ordinary annuity of \\$10,000 at the end of each year for 12 years from a structured settlement, discounted at 7%. Component 4: the remainder will endow a scholarship as a growing perpetuity paying \\$5,000 next year, growing 2% annually forever, at a required return of 7%.\n\nThe four models are\n\n$$S = Pe^{rt}, \\qquad x = \\frac{A}{(1+r)^n}$$\n\n$$P_n = \\frac{a}{r}\\left[1-\\frac{1}{(1+r)^n}\\right], \\qquad P = \\frac{a_1}{r-g}$$\n\nComponent 1 accumulates\n\n$$S = 150{,}000 e^{0.05 \\times 10} = 247{,}308.20$$\n\nComponent 2 requires a deposit today of\n\n$$x = \\frac{80{,}000}{(1.06)^6} = 56{,}396.85$$\n\nComponent 3 has present value\n\n$$P_{12} = \\frac{10{,}000}{0.07}\\left[1-\\frac{1}{(1.07)^{12}}\\right] = 79{,}429.40$$\n\nComponent 4 has present value\n\n$$P = \\frac{5{,}000}{0.07-0.02} = 100{,}000$$"
+  }
+]

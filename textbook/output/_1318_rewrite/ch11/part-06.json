@@ -1,0 +1,622 @@
+[
+  {
+    "id": "math-11-101",
+    "case_id": "MATH 11.101",
+    "title": "Equipment Loan: Finding the Equal Annual Payment",
+    "subsection": "11.6",
+    "context": "A small bakery-supply distributor borrows \\$60,000 at the beginning of the year to buy a delivery van and a walk-in cooler. The loan is to be repaid in 6 equal instalments at the end of each year, with interest charged at 12% per year, compounding annually.",
+    "statements": [
+      "The periodic interest rate to use in the payment formula is r = 0.12.",
+      "The required equal annual payment is approximately \\$14,593.54.",
+      "The interest portion of the first payment is exactly \\$7,200.00.",
+      "The principal-repayment portion of the first payment is more than half of the total payment amount.",
+      "The outstanding balance immediately after the second payment is approximately \\$45,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The periodic interest rate to use in the payment formula is r = 0.12.**  (true)\n\nThe overview recovered $r=0.12$ as the periodic rate. Annual compounding with year-end instalments keeps the annual quote intact, so the statement is True.",
+      "**B) The required equal annual payment is approximately \\$14,593.54.**  (true)\n\nThe overview recovered $a \\approx 14{,}593.54$ as the equal annual payment. The claim is that same figure, so the statement is True.",
+      "**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)\n\nThe overview recovered first-year interest as \\$7,200. Interest in year 1 is the opening balance times the rate, independent of the instalment size. The claim is \\$7,200.00, so the statement is True.",
+      "**D) The principal-repayment portion of the first payment is more than half of the total payment amount.**  (true)\n\nThe overview recovered first-year principal as $7{,}393.54$. Half the payment is\n\n$$\\frac{14{,}593.54}{2} = 7{,}296.77$$\n\nThen $7{,}393.54 > 7{,}296.77$, so the statement is True.",
+      "**E) The outstanding balance immediately after the second payment is approximately \\$45,000.00.**  (false)\n\nThe overview recovered the balance after payment 1 as $52{,}606.46$. Year-2 interest and principal are\n\n$$0.12 \\times 52{,}606.46 = 6{,}312.77$$\n\n$$14{,}593.54 - 6{,}312.77 = 8{,}280.77$$\n\nThe balance after payment 2 is\n\n$$52{,}606.46 - 8{,}280.77 = 44{,}325.69$$\n\nThe claim is \\$45,000.00. We have about \\$44,325.69, so the statement is False."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 101,
+    "solution_overview": "A small bakery-supply distributor borrows \\$60,000 at the beginning of the year to buy a delivery van and a walk-in cooler. The loan is repaid in $6$ equal year-end instalments at $12\\%$ per year, compounding annually.\n\n**Part 1: Setup.**\n\n$$K = 60{,}000, \\qquad r = 0.12, \\qquad n = 6$$\n\n**Part 2: Solve.**\n\nThe equal annual payment is\n\n$$a = \\frac{rK}{1-(1+r)^{-n}}$$\n\n$$a = \\frac{0.12 \\times 60{,}000}{1-(1.12)^{-6}} = \\frac{7{,}200}{0.493369}$$\n\n$$a \\approx 14{,}593.54$$\n\nYear-1 interest on the opening balance is\n\n$$0.12 \\times 60{,}000 = 7{,}200$$\n\nYear-1 principal is\n\n$$14{,}593.54 - 7{,}200 = 7{,}393.54$$\n\nleaving balance $52{,}606.46$."
+  },
+  {
+    "id": "math-11-102",
+    "case_id": "MATH 11.102",
+    "title": "Auto Dealership Financing with Monthly Compounding",
+    "subsection": "11.6",
+    "context": "A used-car dealership finances a customer's \\$24,000 vehicle purchase over 4 years, with equal payments due at the end of each month and interest charged at a nominal annual rate of 9%, compounding monthly.",
+    "statements": [
+      "The monthly periodic interest rate used in the payment formula is r = 0.75%.",
+      "The required monthly payment is approximately \\$597.24.",
+      "The total amount paid over all 48 monthly payments is approximately \\$29,500.00.",
+      "The total interest paid over the life of the loan is approximately \\$4,667.57.",
+      "If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The monthly periodic interest rate used in the payment formula is r = 0.75%.**  (true)\n\nThe overview recovered the monthly periodic rate as $0.0075 = 0.75\\%$. The claim is that same split, so the statement is True.",
+      "**B) The required monthly payment is approximately \\$597.24.**  (true)\n\nThe overview recovered $a \\approx 597.24$ as the monthly payment. The claim is that same figure, so the statement is True.",
+      "**C) The total amount paid over all 48 monthly payments is approximately \\$29,500.00.**  (false)\n\nTotal paid is the recovered monthly payment times $48$:\n\n$$597.24 \\times 48 \\approx 28{,}667.57$$\n\nThe claim is \\$29,500.00. We have about \\$28,667.57, so the statement is False.",
+      "**D) The total interest paid over the life of the loan is approximately \\$4,667.57.**  (true)\n\nTotal interest is total paid minus principal. Using the $48$-payment outlay about \\$28,667.57,\n\n$$28{,}667.57 - 24{,}000 = 4{,}667.57$$\n\nThe claim is \\$4,667.57, so the statement is True.",
+      "**E) If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96.**  (false)\n\nFour equal annual instalments at the same nominal $9\\%$ use $r=0.09$ and $n=4$:\n\n$$a = \\frac{0.09 \\times 24{,}000}{1-(1.09)^{-4}} = \\frac{2{,}160}{0.291676}$$\n\n$$a \\approx 7{,}408.05$$\n\nThe claim needs this annual payment below \\$2,388.96. We have about \\$7,408.05, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 102,
+    "solution_overview": "A used-car dealership finances a customer's \\$24,000 vehicle purchase over $4$ years, with equal payments at the end of each month and interest at a nominal annual rate of $9\\%$, compounding monthly.\n\n**Part 1: Setup.**\n\n$$K = 24{,}000, \\qquad r_{\\mathrm{ann}} = 0.09, \\qquad m = 12, \\qquad t = 4$$\n\n**Part 2: Solve.**\n\nThe monthly rate and number of payments are\n\n$$r = \\frac{r_{\\mathrm{ann}}}{12}, \\qquad n = 12t$$\n\n$$r = \\frac{0.09}{12} = 0.0075, \\qquad n = 48$$\n\nThe equal-payment formula is\n\n$$a = \\frac{rK}{1-(1+r)^{-n}}$$\n\n$$a = \\frac{0.0075 \\times 24{,}000}{1-(1.0075)^{-48}} = \\frac{180}{0.301329}$$\n\n$$a \\approx 597.24$$"
+  },
+  {
+    "id": "math-11-103",
+    "case_id": "MATH 11.103",
+    "title": "Restaurant Renovation Loan: Tracking the Amortization Schedule",
+    "subsection": "11.6",
+    "context": "A restaurant owner borrows \\$45,000 to renovate the dining room, agreeing to repay the loan in 5 equal annual instalments at the end of each year, with interest at 10% per year compounding annually.",
+    "statements": [
+      "The required equal annual payment is approximately \\$11,870.89.",
+      "The interest portion of the first payment is \\$5,000.00.",
+      "The outstanding balance immediately after the third payment is approximately \\$20,602.37.",
+      "In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.",
+      "Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The required equal annual payment is approximately \\$11,870.89.**  (true)\n\nThe overview recovered $a \\approx 11{,}870.89$ as the equal annual payment. The claim is that same figure, so the statement is True.",
+      "**B) The interest portion of the first payment is \\$5,000.00.**  (false)\n\nYear-1 interest is the opening balance times the rate. The overview recovered that interest as \\$4,500.00. The claim is \\$5,000.00, so the statement is False.",
+      "**C) The outstanding balance immediately after the third payment is approximately \\$20,602.37.**  (true)\n\nThe overview recovered the outstanding balance after payment 3 as \\$20,602.37. The claim is that same figure, so the statement is True.",
+      "**D) In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.**  (false)\n\nThe overview recovered the year-3 closing balance as \\$20,602.37. Year-4 interest and principal are\n\n$$0.10 \\times 20{,}602.37 = 2{,}060.24$$\n\n$$11{,}870.89 - 2{,}060.24 = 9{,}810.65$$\n\nThen $2{,}060.24 < 9{,}810.65$, so the statement is False.",
+      "**E) Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.**  (false)\n\nPrincipal portions retire the original loan and nothing else, so they sum to $K=45{,}000$. The claim is \\$46,200.00, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 103,
+    "solution_overview": "A restaurant owner borrows \\$45,000 to renovate the dining room, repaid in $5$ equal year-end instalments at $10\\%$ per year compounding annually.\n\n**Part 1: Setup.**\n\n$$K = 45{,}000, \\qquad r = 0.10, \\qquad n = 5$$\n\n**Part 2: Solve.**\n\nThe equal annual payment is\n\n$$a = \\frac{rK}{1-(1+r)^{-n}}$$\n\n$$a = \\frac{0.10 \\times 45{,}000}{1-(1.10)^{-5}} = \\frac{4{,}500}{0.379079}$$\n\n$$a \\approx 11{,}870.89$$\n\nEach year's interest is the rate times the opening balance. Principal repaid is payment less interest, and the new balance is the old balance less principal.\n\nYear 1: interest \\$4,500.00, principal \\$7,370.89, balance \\$37,629.11.\n\nYear 2: interest \\$3,762.91, principal \\$8,107.98, balance \\$29,521.14.\n\nYear 3: interest \\$2,952.11, principal \\$8,918.77, balance \\$20,602.37."
+  },
+  {
+    "id": "math-11-104",
+    "case_id": "MATH 11.104",
+    "title": "Franchise Buy-In Paid as an Annuity Due",
+    "subsection": "11.6",
+    "context": "A new franchisee agrees to pay \\$150,000 for the rights to open a location, structured as 10 equal annual payments, with the first payment due immediately and each following payment due at the beginning of each subsequent year. The agreed annual interest rate is 11%.",
+    "statements": [
+      "The combined present-value factor multiplying the payment is approximately 6.537048.",
+      "The required equal payment a is approximately \\$22,946.14.",
+      "If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.",
+      "The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.",
+      "The total of all 10 annuity-due payments combined is approximately \\$220,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The combined present-value factor multiplying the payment is approximately 6.537048.**  (true)\n\nThe overview recovered the combined present-value factor as about $6.537048$. The claim is that same figure, so the statement is True.",
+      "**B) The required equal payment a is approximately \\$22,946.14.**  (true)\n\nThe overview recovered the annuity-due payment as $a \\approx 22{,}946.14$. The claim is that same figure, so the statement is True.",
+      "**C) If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.**  (false)\n\nEnd-of-year timing is an ordinary annuity. The overview recovered $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$. Then\n\n$$25{,}470.21 > 22{,}946.14$$\n\nThe ordinary payment is higher, not lower, so the statement is False.",
+      "**D) The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.**  (true)\n\nThe overview recovered $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$ and $a \\approx 22{,}946.14$. Their difference is\n\n$$25{,}470.21 - 22{,}946.14 \\approx 2{,}524.08$$\n\nThe claim is \\$2,524.08, so the statement is True.",
+      "**E) The total of all 10 annuity-due payments combined is approximately \\$220,000.00.**  (false)\n\nTotal cash outlay is ten copies of the recovered due payment:\n\n$$22{,}946.14 \\times 10 \\approx 229{,}461.39$$\n\nThe claim is \\$220,000.00. We have about \\$229,461.39, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 104,
+    "solution_overview": "A new franchisee agrees to pay \\$150,000 for the rights to open a location, structured as $10$ equal annual payments, first payment due immediately, at $11\\%$ per year.\n\n**Part 1: Setup.**\n\n$$K = 150{,}000, \\qquad r = 0.11, \\qquad n = 10$$\n\n**Part 2: Solve.**\n\nThe first payment is immediate and the remaining nine form an ordinary annuity, so\n\n$$K = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]$$\n\nThe combined present-value factor is\n\n$$\\frac{K}{a} = 1 + \\frac{1}{0.11}\\bigl[1-(1.11)^{-9}\\bigr] = 1 + 5.537048$$\n\n$$\\frac{K}{a} \\approx 6.537048$$\n\n$$a = \\frac{150{,}000}{6.537048} \\approx 22{,}946.14$$\n\nFor the ordinary-annuity comparison,\n\n$$a_{\\mathrm{ordinary}} = \\frac{rK}{1-(1+r)^{-n}}$$\n\n$$a_{\\mathrm{ordinary}} = \\frac{0.11 \\times 150{,}000}{1-(1.11)^{-10}} = \\frac{16{,}500}{0.647848}$$\n\n$$a_{\\mathrm{ordinary}} \\approx 25{,}470.21$$"
+  },
+  {
+    "id": "math-11-105",
+    "case_id": "MATH 11.105",
+    "title": "Fixed Annual Payment on a Working-Capital Loan",
+    "subsection": "11.6",
+    "context": "A landscaping company borrows \\$35,000 at 13% annual interest and commits to repaying exactly \\$10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.",
+    "statements": [
+      "The smallest whole number of yearly payments needed to pay off the loan is n = 5.",
+      "The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.",
+      "The fifth and final payment is approximately \\$9,682.53.",
+      "The total amount paid over the entire life of the loan is approximately \\$49,682.53.",
+      "The total interest paid over the life of the loan is less than the original \\$35,000 principal."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The smallest whole number of yearly payments needed to pay off the loan is n = 5.**  (true)\n\nThe overview recovered the continuous payoff threshold as about $4.9663$ years, so the smallest integer that retires the loan is $n=5$. The claim is that same count, so the statement is True.",
+      "**B) The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.**  (true)\n\nThe first four payments are the committed \\$10,000 each:\n\n$$4 \\times 10{,}000 = 40{,}000$$\n\nThe claim is that same total, so the statement is True.",
+      "**C) The fifth and final payment is approximately \\$9,682.53.**  (true)\n\nThe overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure, so the statement is True.",
+      "**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)\n\nTotal paid is four full payments plus the recovered final instalment:\n\n$$40{,}000 + 9{,}682.53 = 49{,}682.53$$\n\nThe claim is \\$49,682.53, so the statement is True.",
+      "**E) The total interest paid over the life of the loan is less than the original \\$35,000 principal.**  (true)\n\nTotal interest is total paid minus principal:\n\n$$49{,}682.53 - 35{,}000 = 14{,}682.53$$\n\nThen $14{,}682.53 < 35{,}000$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 105,
+    "solution_overview": "A landscaping company borrows \\$35,000 at $13\\%$ annual interest and repays exactly \\$10,000 at the end of each year until the debt is retired, with a smaller final payment to settle whatever remains.\n\n**Part 1: Setup.**\n\n$$K = 35{,}000, \\qquad r = 0.13, \\qquad a = 10{,}000$$\n\n**Part 2: Solve.**\n\nThe smallest whole number of payments satisfies\n\n$$n \\ge \\frac{\\ln a - \\ln(a-rK)}{\\ln(1+r)}$$\n\n$$\\frac{\\ln(10{,}000)-\\ln(10{,}000-0.13 \\times 35{,}000)}{\\ln(1.13)} = \\frac{\\ln(10{,}000)-\\ln(5{,}450)}{\\ln(1.13)} \\approx 4.9663$$\n\nso $n=5$. After four years the loan's future value is $35{,}000(1.13)^{4} \\approx 57{,}066.58$, and the four fixed payments are worth\n\n$$\\frac{10{,}000}{0.13}\\bigl[(1.13)^{4}-1\\bigr] \\approx 48{,}497.97$$\n\nThe remaining debt at year 4 is $57{,}066.58-48{,}497.97=8{,}568.61$. Rolling that balance forward one year gives the final payment\n\n$$8{,}568.61 \\times 1.13 = 9{,}682.53$$"
+  },
+  {
+    "id": "math-11-106",
+    "case_id": "MATH 11.106",
+    "title": "Comparing Cash vs. Instalment Purchase of a Delivery Fleet",
+    "subsection": "11.6",
+    "context": "A logistics company needs to acquire a fleet of delivery vehicles and is choosing between two payment schedules. Option A: pay \\$500,000 in cash today. Option B: pay \\$100,000 per year for 7 years, with the first payment due immediately and each subsequent payment due at the beginning of the following years. The company wants to know which option is cheaper in present-value terms, first at a 10% annual interest rate and then at a 14% annual interest rate.",
+    "statements": [
+      "At a 10% annual rate, the present value of Option B is approximately \\$535,526.07.",
+      "At a 10% annual rate, Option A is the cheaper choice.",
+      "At a 14% annual rate, the present value of Option B is approximately \\$495,000.00.",
+      "At a 14% annual rate, Option B becomes the cheaper choice.",
+      "Option B must always be the more expensive choice in present-value terms, no matter what the interest rate is."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At a 10% annual rate, the present value of Option B is approximately \\$535,526.07.**  (true)\n\nThe overview recovered the $10\\%$ present value of Option B as about \\$535,526.07. The claim is that same figure, so the statement is True.",
+      "**B) At a 10% annual rate, Option A is the cheaper choice.**  (true)\n\nThe overview recovered $PV_{\\mathrm{B}} \\approx 535{,}526.07$ at $10\\%$. Option A is \\$500,000 today. Then\n\n$$535{,}526.07 > 500{,}000$$\n\nOption A is cheaper at $10\\%$, so the statement is True.",
+      "**C) At a 14% annual rate, the present value of Option B is approximately \\$495,000.00.**  (false)\n\nThe overview recovered the $14\\%$ present value of Option B as about \\$488,866.75. The claim is \\$495,000.00, so the statement is False.",
+      "**D) At a 14% annual rate, Option B becomes the cheaper choice.**  (true)\n\nThe overview recovered $PV_{\\mathrm{B}} \\approx 488{,}866.75$ at $14\\%$. Then\n\n$$488{,}866.75 < 500{,}000$$\n\nOption B is cheaper at $14\\%$, so the statement is True.",
+      "**E) Option B must always be the more expensive choice in present-value terms, no matter what the interest rate is.**  (false)\n\nAt $10\\%$ Option B costs about \\$535,526, above cash. At $14\\%$ it costs about \\$488,867, below cash. The cheaper choice depends on the rate, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 106,
+    "solution_overview": "A logistics company is choosing between Option A, pay \\$500,000 cash today, and Option B, pay \\$100,000 per year for $7$ years with the first payment due immediately. Compare present values at $10\\%$ and at $14\\%$.\n\n**Part 1: Setup.**\n\n$$a = 100{,}000, \\qquad n = 7$$\n\nThe two test rates are $r=0.10$ and $r=0.14$. Option A is \\$500,000 today.\n\n**Part 2: Solve.**\n\nOption B is an annuity due:\n\n$$PV_{\\mathrm{B}} = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]$$\n\nAt $10\\%$,\n\n$$PV_{\\mathrm{B}} = 100{,}000 + \\frac{100{,}000}{0.10}\\bigl[1-(1.10)^{-6}\\bigr] \\approx 535{,}526.07$$\n\nAt $14\\%$,\n\n$$PV_{\\mathrm{B}} = 100{,}000 + \\frac{100{,}000}{0.14}\\bigl[1-(1.14)^{-6}\\bigr] \\approx 488{,}866.75$$"
+  },
+  {
+    "id": "math-11-107",
+    "case_id": "MATH 11.107",
+    "title": "Quarterly Savings Deposits with Annual Compounding",
+    "subsection": "11.6",
+    "context": "At the end of each quarter, a small business owner deposits \\$250 into a savings account that pays interest once per year, at an annual rate of 8%. Because each quarterly deposit sits in the account for only part of the year before the annual interest is credited, the bank applies simple interest to each deposit for the fraction of the year it remains on deposit before the year-end crediting date.",
+    "statements": [
+      "The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.",
+      "The account balance after 4 years is approximately \\$4,700.00.",
+      "The account balance after 3 years is approximately \\$3,500.00.",
+      "If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.",
+      "The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.**  (false)\n\nThe overview recovered the year-end equivalent as \\$1,030. The claim is \\$1,100.00, so the statement is False.",
+      "**B) The account balance after 4 years is approximately \\$4,700.00.**  (false)\n\nThe overview recovered the $4$-year balance as about \\$4,641.30. The claim is \\$4,700.00, so the statement is False.",
+      "**C) The account balance after 3 years is approximately \\$3,500.00.**  (false)\n\nThree years of the recovered \\$1,030 equivalent at $8\\%$ is\n\n$$F_3 = \\frac{1{,}030}{0.08}\\bigl[(1.08)^{3}-1\\bigr] \\approx 3{,}343.79$$\n\nThe claim is \\$3,500.00. We have about \\$3,343.79, so the statement is False.",
+      "**D) If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.**  (true)\n\nThe overview recovered the simplified $4$-year balance as about \\$4,506.11. The claim is that same figure, so the statement is True.",
+      "**E) The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00.**  (false)\n\nThe overview recovered $F_4 \\approx 4{,}641.30$ and $F_4^{\\mathrm{simp}} \\approx 4{,}506.11$. Their difference is\n\n$$4{,}641.30 - 4{,}506.11 \\approx 135.18$$\n\nThe claim is \\$200.00. We have about \\$135.18, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 107,
+    "solution_overview": "At the end of each quarter a small business owner deposits \\$250 into an account that pays $8\\%$ once per year. The bank applies simple interest to each deposit for the fraction of the year it sits before the year-end credit.\n\n**Part 1: Setup.**\n\n$$D = 250, \\qquad r = 0.08$$\n\n**Part 2: Solve.**\n\nThe year-end equivalent of the four quarterly deposits is\n\n$$a = D(4+1.5r)$$\n\n$$a = 250(4+1.5 \\times 0.08) = 250(4.12) = 1{,}030$$\n\nOnce that equivalent is known, its future value after $N$ years is\n\n$$F_N = \\frac{a}{r}\\bigl[(1+r)^{N}-1\\bigr]$$\n\n$$F_4 = \\frac{1{,}030}{0.08}\\bigl[(1.08)^{4}-1\\bigr] \\approx 4{,}641.30$$\n\nIf the four deposits are treated as a flat \\$1,000 at year-end instead,\n\n$$F_4^{\\mathrm{simp}} = \\frac{1{,}000}{0.08}\\bigl[(1.08)^{4}-1\\bigr] \\approx 4{,}506.11$$"
+  },
+  {
+    "id": "math-11-108",
+    "case_id": "MATH 11.108",
+    "title": "Home Mortgage: Outstanding Balance Partway Through the Term",
+    "subsection": "11.6",
+    "context": "A family takes out a \\$200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.",
+    "statements": [
+      "The required monthly payment is approximately \\$1,432.86.",
+      "The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.",
+      "After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.",
+      "The total interest paid during just the first 5 years is approximately \\$55,770.92.",
+      "The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The required monthly payment is approximately \\$1,432.86.**  (true)\n\nThe overview recovered the monthly payment as $a \\approx 1{,}432.86$. The claim is that same figure, so the statement is True.",
+      "**B) The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.**  (true)\n\nThe overview recovered the outstanding balance after the $60$th payment as $B_{60} \\approx 169{,}799.20$. The claim is that same figure, so the statement is True.",
+      "**C) After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.**  (false)\n\nThe overview recovered $B_{60} \\approx 169{,}799.20$. Principal repaid after five years is\n\n$$200{,}000 - 169{,}799.20 = 30{,}200.80$$\n\n$$\\frac{30{,}200.80}{200{,}000} = 0.1510 = 15.10\\%$$\n\nThe claim needs more than $25\\%$. We have about $15.10\\%$, so the statement is False.",
+      "**D) The total interest paid during just the first 5 years is approximately \\$55,770.92.**  (true)\n\nThe overview recovered $B_{60} \\approx 169{,}799.20$. Principal repaid in five years is\n\n$$200{,}000 - 169{,}799.20 = 30{,}200.80$$\n\nSixty payments total $60 \\times 1{,}432.86 \\approx 85{,}971.60$, so interest is\n\n$$85{,}971.60 - 30{,}200.80 \\approx 55{,}770.80$$\n\nwhich rounds to the claimed \\$55,770.92, so the statement is True.",
+      "**E) The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.**  (false)\n\nLifetime interest is total paid minus principal:\n\n$$240 \\times 1{,}432.86 - 200{,}000 \\approx 143{,}886.91$$\n\nThe claim is \\$120,000.00. We have about \\$143,886.91, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 108,
+    "solution_overview": "A family takes out a \\$200,000 home mortgage at a nominal annual rate of $6\\%$, compounding monthly, repaid with equal end-of-month payments over $20$ years.\n\n**Part 1: Setup.**\n\n$$K = 200{,}000, \\qquad n = 20 \\times 12 = 240, \\qquad m = 5 \\times 12 = 60$$\n\n**Part 2: Solve.**\n\nThe monthly rate is\n\n$$r = \\frac{0.06}{12} = 0.005$$\n\nThe level monthly payment is\n\n$$a = \\frac{rK}{1-(1+r)^{-n}}$$\n\n$$a = \\frac{0.005 \\times 200{,}000}{1-(1.005)^{-240}} = \\frac{1{,}000}{1-(1.005)^{-240}} \\approx 1{,}432.86$$\n\nAfter $m$ payments the outstanding balance is the present value of the remaining $n-m$ payments:\n\n$$B_m = \\frac{a}{r}\\bigl[1-(1+r)^{-(n-m)}\\bigr]$$\n\n$$B_{60} = \\frac{1{,}432.86}{0.005}\\bigl[1-(1.005)^{-180}\\bigr] \\approx 169{,}799.20$$"
+  },
+  {
+    "id": "math-11-109",
+    "case_id": "MATH 11.109",
+    "title": "Fixed Repayment Schedule on a Large Equipment Loan",
+    "subsection": "11.6",
+    "context": "A manufacturing company borrows \\$120,000 at 14% annual interest and chooses to repay a fixed \\$25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.",
+    "statements": [
+      "The smallest whole number of yearly payments needed to retire the loan is n = 9.",
+      "The ninth and final payment is approximately \\$13,100.16.",
+      "The total interest paid over the life of the loan is approximately \\$105,000.00.",
+      "The total amount actually paid over the life of the loan is approximately \\$210,000.00.",
+      "Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The smallest whole number of yearly payments needed to retire the loan is n = 9.**  (true)\n\nThe overview recovered the payoff threshold as about $8.508$ years, so the smallest integer that retires the loan is $n=9$. The claim is that same count, so the statement is True.",
+      "**B) The ninth and final payment is approximately \\$13,100.16.**  (true)\n\nThe overview recovered the ninth and final payment as about \\$13,100.16. The claim is that same figure, so the statement is True.",
+      "**C) The total interest paid over the life of the loan is approximately \\$105,000.00.**  (false)\n\nEight full payments plus the recovered final instalment total\n\n$$8 \\times 25{,}000 + 13{,}100.16 = 213{,}100.16$$\n\nInterest is that total minus principal:\n\n$$213{,}100.16 - 120{,}000 = 93{,}100.16$$\n\nThe claim is \\$105,000.00. We have about \\$93,100.16, so the statement is False.",
+      "**D) The total amount actually paid over the life of the loan is approximately \\$210,000.00.**  (false)\n\nTotal paid is eight full payments plus the recovered final instalment:\n\n$$200{,}000 + 13{,}100.16 = 213{,}100.16$$\n\nThe claim is \\$210,000.00. We have about \\$213,100.16, so the statement is False.",
+      "**E) Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.**  (true)\n\nNine full payments would be \\$225,000. Against the recovered total \\$213,100.16,\n\n$$225{,}000 - 213{,}100.16 = 11{,}899.84$$\n\nThen $11{,}899.84 > 10{,}000$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 109,
+    "solution_overview": "A manufacturing company borrows \\$120,000 at $14\\%$ annual interest and repays a fixed \\$25,000 at the end of each year until the loan is retired, with a smaller final payment to clear the residual.\n\n**Part 1: Setup.**\n\n$$K = 120{,}000, \\qquad a = 25{,}000, \\qquad r = 0.14$$\n\n**Part 2: Solve.**\n\nThe smallest whole number of payments satisfies\n\n$$n \\ge \\frac{\\ln a - \\ln(a-rK)}{\\ln(1+r)}$$\n\n$$n \\ge \\frac{\\ln(25{,}000)-\\ln(25{,}000-0.14 \\times 120{,}000)}{\\ln(1.14)} \\approx 8.508$$\n\nso $n=9$. After eight years the accumulated loan is $120{,}000(1.14)^{8} \\approx 342{,}310.37$, and the eight full payments are worth\n\n$$\\frac{25{,}000}{0.14}\\bigl[(1.14)^{8}-1\\bigr] \\approx 330{,}819.00$$\n\nThe residual $342{,}310.37-330{,}819.00 \\approx 11{,}491.37$ grows one more year to the final payment\n\n$$11{,}491.37 \\times 1.14 \\approx 13{,}100.16$$"
+  },
+  {
+    "id": "math-11-110",
+    "case_id": "MATH 11.110",
+    "title": "Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund",
+    "subsection": "11.6",
+    "context": "A manufacturing company borrows \\$90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits \\$300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.",
+    "statements": [
+      "The required annuity-due payment on the equipment loan is approximately \\$16,176.12.",
+      "The interest portion of the second loan payment is approximately \\$8,858.87.",
+      "The interest portion of the third loan payment is larger than the interest portion of the second payment.",
+      "The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.",
+      "The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The required annuity-due payment on the equipment loan is approximately \\$16,176.12.**  (true)\n\nThe overview recovered the annuity-due payment as $a \\approx 16{,}176.12$. The claim is that same figure, so the statement is True.",
+      "**B) The interest portion of the second loan payment is approximately \\$8,858.87.**  (true)\n\nThe overview recovered the interest portion of the second loan payment as about \\$8,858.87. The claim is that same figure, so the statement is True.",
+      "**C) The interest portion of the third loan payment is larger than the interest portion of the second payment.**  (false)\n\nAfter the second payment, principal of $16{,}176.12-8{,}858.87=7{,}317.25$ leaves balance $73{,}823.88-7{,}317.25=66{,}506.63$. Interest before the third payment is\n\n$$0.12 \\times 66{,}506.63 \\approx 7{,}980.80$$\n\nThen $7{,}980.80 < 8{,}858.87$, so the statement is False.",
+      "**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.**  (true)\n\nThe overview recovered the reserve's year-end equivalent as \\$1,240.50 and the three-year balance as about \\$4,066.48. Both claimed figures match, so the statement is True.",
+      "**E) The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years.**  (false)\n\nThree due loan payments total\n\n$$3 \\times 16{,}176.12 = 48{,}528.36$$\n\nThe reserve after three years is about \\$4,066.48. Then $48{,}528.36 > 4{,}066.48$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 110,
+    "solution_overview": "A manufacturing company borrows \\$90,000 to be repaid in $8$ equal annual instalments with the first payment due immediately, at $12\\%$ per year. Independently, it deposits \\$300 at the end of each quarter into a reserve that pays $9\\%$ annual interest, credited once per year.\n\n**Part 1: Setup.**\n\nLoan: $K = 90{,}000$, $r = 0.12$, $n = 8$, first instalment immediate.\n\nReserve: $D = 300$, $R = 0.09$, $N = 3$.\n\n**Part 2: Solve.**\n\nThe loan is an annuity due:\n\n$$K = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]$$\n\n$$90{,}000 = a + \\frac{a}{0.12}\\bigl[1-(1.12)^{-7}\\bigr]$$\n\n$$a \\approx 16{,}176.12$$\n\nAfter the immediate first payment the balance is $90{,}000-16{,}176.12=73{,}823.88$, so interest before the second payment is\n\n$$0.12 \\times 73{,}823.88 \\approx 8{,}858.87$$\n\nFor the reserve, the year-end equivalent and three-year pile are\n\n$$c = D(4+1.5R) = 300(4+1.5 \\times 0.09) = 1{,}240.50$$\n\n$$F_N = \\frac{c}{R}\\bigl[(1+R)^{N}-1\\bigr]$$\n\n$$F_3 = \\frac{1{,}240.50}{0.09}\\bigl[(1.09)^{3}-1\\bigr] \\approx 4{,}066.48$$"
+  },
+  {
+    "id": "math-11-111",
+    "case_id": "MATH 11.111",
+    "title": "Capstone: Comparing Three Payment Schedules for a Building Site",
+    "subsection": "11.6",
+    "context": "A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay \\$500,000 in cash immediately. Schedule II: pay \\$95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay \\$150,000 in cash immediately, plus \\$60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.",
+    "statements": [
+      "At a 9% annual rate, the present value of Schedule II is approximately \\$521,162.27.",
+      "At a 9% annual rate, the present value of Schedule III is approximately \\$540,000.00.",
+      "At a 9% annual rate, Schedule I is the cheapest of the three schedules.",
+      "At a 13% annual rate, the present value of Schedule II is approximately \\$474,767.23.",
+      "At a 13% annual rate, Schedule III becomes the cheapest of the three schedules."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At a 9% annual rate, the present value of Schedule II is approximately \\$521,162.27.**  (true)\n\nThe overview recovered the $9\\%$ present value of Schedule II as about \\$521,162.27. The claim is that same figure, so the statement is True.",
+      "**B) At a 9% annual rate, the present value of Schedule III is approximately \\$540,000.00.**  (false)\n\nThe overview recovered the $9\\%$ present value of Schedule III as about \\$535,059. The claim is \\$540,000.00, so the statement is False.",
+      "**C) At a 9% annual rate, Schedule I is the cheapest of the three schedules.**  (true)\n\nThe overview recovered $PV_{\\mathrm{II}} \\approx 521{,}162$ and $PV_{\\mathrm{III}} \\approx 535{,}059$ at $9\\%$. Schedule I is \\$500,000. Then\n\n$$500{,}000 < 521{,}162 < 535{,}059$$\n\nSchedule I is cheapest at $9\\%$, so the statement is True.",
+      "**D) At a 13% annual rate, the present value of Schedule II is approximately \\$474,767.23.**  (true)\n\nThe overview recovered the $13\\%$ present value of Schedule II as about \\$474,767.23. The claim is that same figure, so the statement is True.",
+      "**E) At a 13% annual rate, Schedule III becomes the cheapest of the three schedules.**  (false)\n\nThe overview recovered $PV_{\\mathrm{II}} \\approx 474{,}767$ and $PV_{\\mathrm{III}} \\approx 475{,}575$ at $13\\%$. Then\n\n$$474{,}767 < 475{,}575 < 500{,}000$$\n\nSchedule II is cheapest at $13\\%$, not III, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 111,
+    "solution_overview": "A construction firm is choosing among three payment schedules for a building site. Schedule I: \\$500,000 cash immediately. Schedule II: \\$95,000 per year for $7$ years, first instalment immediate. Schedule III: \\$150,000 cash immediately plus \\$60,000 per year for $10$ years, first of these instalments one year later. Compare present values at $9\\%$ and at $13\\%$.\n\n**Part 1: Setup.**\n\n$$a_{\\mathrm{II}} = 95{,}000, \\qquad n_{\\mathrm{II}} = 7$$\n\n$$a_{\\mathrm{III}} = 60{,}000, \\qquad n_{\\mathrm{III}} = 10$$\n\nThe rates are $r=0.09$ and $r=0.13$. Schedule I is \\$500,000 today.\n\n**Part 2: Solve.**\n\nSchedule II is an annuity due:\n\n$$PV_{\\mathrm{II}} = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]$$\n\nSchedule III is cash plus an ordinary annuity:\n\n$$PV_{\\mathrm{III}} = 150{,}000 + \\frac{a}{r}\\bigl[1-(1+r)^{-n}\\bigr]$$\n\nAt $9\\%$,\n\n$$PV_{\\mathrm{II}} = 95{,}000 + \\frac{95{,}000}{0.09}\\bigl[1-(1.09)^{-6}\\bigr] \\approx 521{,}162.27$$\n\n$$PV_{\\mathrm{III}} = 150{,}000 + \\frac{60{,}000}{0.09}\\bigl[1-(1.09)^{-10}\\bigr] \\approx 535{,}059$$\n\nAt $13\\%$,\n\n$$PV_{\\mathrm{II}} = 95{,}000 + \\frac{95{,}000}{0.13}\\bigl[1-(1.13)^{-6}\\bigr] \\approx 474{,}767.23$$\n\n$$PV_{\\mathrm{III}} = 150{,}000 + \\frac{60{,}000}{0.13}\\bigl[1-(1.13)^{-10}\\bigr] \\approx 475{,}575$$"
+  },
+  {
+    "id": "math-11-112",
+    "case_id": "MATH 11.112",
+    "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center",
+    "subsection": "11.6",
+    "context": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay \\$850,000 in cash immediately. Schedule II: pay \\$140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay \\$300,000 in cash immediately, plus \\$80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.",
+    "statements": [
+      "At an 8% annual rate, the present value of Schedule II is approximately \\$944,529.45.",
+      "At an 8% annual rate, the present value of Schedule III is approximately \\$871,117.14.",
+      "At an 8% annual rate, Schedule I is the cheapest of the three schedules.",
+      "At a 12% annual rate, the present value of Schedule III is approximately \\$775,015.93.",
+      "At a 12% annual rate, Schedule II becomes the cheapest of the three schedules."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At an 8% annual rate, the present value of Schedule II is approximately \\$944,529.45.**  (true)\n\nThe overview recovered the $8\\%$ present value of Schedule II as about \\$944,529.45. The claim is that same figure, so the statement is True.",
+      "**B) At an 8% annual rate, the present value of Schedule III is approximately \\$871,117.14.**  (true)\n\nThe overview recovered the $8\\%$ present value of Schedule III as about \\$871,117.14. The claim is that same figure, so the statement is True.",
+      "**C) At an 8% annual rate, Schedule I is the cheapest of the three schedules.**  (true)\n\nThe overview recovered $PV_{\\mathrm{II}} \\approx 944{,}529$ and $PV_{\\mathrm{III}} \\approx 871{,}117$ at $8\\%$. Schedule I is \\$850,000. Then\n\n$$850{,}000 < 871{,}117 < 944{,}529$$\n\nSchedule I is cheapest at $8\\%$, so the statement is True.",
+      "**D) At a 12% annual rate, the present value of Schedule III is approximately \\$775,015.93.**  (true)\n\nThe overview recovered the $12\\%$ present value of Schedule III as about \\$775,015.93. The claim is that same figure, so the statement is True.",
+      "**E) At a 12% annual rate, Schedule II becomes the cheapest of the three schedules.**  (false)\n\nThe overview recovered $PV_{\\mathrm{III}} \\approx 775{,}016$ and $PV_{\\mathrm{II}} \\approx 835{,}470$ at $12\\%$. Then\n\n$$775{,}016 < 835{,}470 < 850{,}000$$\n\nSchedule III is cheapest at $12\\%$, not II, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 112,
+    "solution_overview": "A hospital system is choosing among three payment schedules for an imaging center. Schedule I: \\$850,000 cash immediately. Schedule II: \\$140,000 per year for $9$ years, first instalment immediate. Schedule III: \\$300,000 cash immediately plus \\$80,000 per year for $11$ years, first of these instalments one year later. Compare present values at $8\\%$ and at $12\\%$.\n\n**Part 1: Setup.**\n\n$$a_{\\mathrm{II}} = 140{,}000, \\qquad n_{\\mathrm{II}} = 9$$\n\n$$a_{\\mathrm{III}} = 80{,}000, \\qquad n_{\\mathrm{III}} = 11$$\n\nThe rates are $r=0.08$ and $r=0.12$. Schedule I is \\$850,000 today.\n\n**Part 2: Solve.**\n\nSchedule II is an annuity due:\n\n$$PV_{\\mathrm{II}} = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]$$\n\nSchedule III is cash plus an ordinary annuity:\n\n$$PV_{\\mathrm{III}} = 300{,}000 + \\frac{a}{r}\\bigl[1-(1+r)^{-n}\\bigr]$$\n\nAt $8\\%$,\n\n$$PV_{\\mathrm{II}} = 140{,}000 + \\frac{140{,}000}{0.08}\\bigl[1-(1.08)^{-8}\\bigr] \\approx 944{,}529.45$$\n\n$$PV_{\\mathrm{III}} = 300{,}000 + \\frac{80{,}000}{0.08}\\bigl[1-(1.08)^{-11}\\bigr] \\approx 871{,}117.14$$\n\nAt $12\\%$,\n\n$$PV_{\\mathrm{II}} = 140{,}000 + \\frac{140{,}000}{0.12}\\bigl[1-(1.12)^{-8}\\bigr] \\approx 835{,}470$$\n\n$$PV_{\\mathrm{III}} = 300{,}000 + \\frac{80{,}000}{0.12}\\bigl[1-(1.12)^{-11}\\bigr] \\approx 775{,}015.93$$"
+  },
+  {
+    "id": "math-11-113",
+    "case_id": "MATH 11.113",
+    "title": "Capstone: Comparing Three Payment Schedules for a Cargo Vessel",
+    "subsection": "11.6",
+    "context": "A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay \\$2,400,000 in cash immediately. Schedule II: pay \\$340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay \\$600,000 in cash immediately, plus \\$250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.",
+    "statements": [
+      "At a 7.5% annual rate, the present value of Schedule II is approximately \\$2,508,821.59.",
+      "At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.",
+      "At a 7.5% annual rate, Schedule I is cheaper than Schedule II.",
+      "At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.",
+      "At an 11.5% annual rate, Schedule I is still cheaper than Schedule II."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At a 7.5% annual rate, the present value of Schedule II is approximately \\$2,508,821.59.**  (true)\n\nThe overview recovered the $7.5\\%$ present value of Schedule II as about \\$2,508,821.59. The claim is that same figure, so the statement is True.",
+      "**B) At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.**  (false)\n\nThe overview recovered the $7.5\\%$ present value of Schedule III as about \\$2,194,722. The claim is \\$2,250,000.00, so the statement is False.",
+      "**C) At a 7.5% annual rate, Schedule I is cheaper than Schedule II.**  (true)\n\nThe overview recovered $PV_{\\mathrm{II}} \\approx 2{,}508{,}822$ at $7.5\\%$. Schedule I is \\$2,400,000. Then\n\n$$2{,}400{,}000 < 2{,}508{,}822$$\n\nSchedule I is cheaper than Schedule II at $7.5\\%$, so the statement is True.",
+      "**D) At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.**  (false)\n\nThe overview recovered the $11.5\\%$ present value of Schedule II as about \\$2,186,562. The claim is \\$2,100,000.00, so the statement is False.",
+      "**E) At an 11.5% annual rate, Schedule I is still cheaper than Schedule II.**  (false)\n\nThe overview recovered $PV_{\\mathrm{II}} \\approx 2{,}186{,}562$ at $11.5\\%$. Then\n\n$$2{,}186{,}562 < 2{,}400{,}000$$\n\nSchedule I is no longer cheaper than Schedule II, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 113,
+    "solution_overview": "A shipping company is choosing among three payment schedules for a cargo vessel. Schedule I: \\$2,400,000 cash immediately. Schedule II: \\$340,000 per year for $10$ years, first instalment immediate. Schedule III: \\$600,000 cash immediately plus \\$250,000 per year for $9$ years, first of these instalments one year later. Compare Schedule I versus Schedule II at $7.5\\%$ and at $11.5\\%$.\n\n**Part 1: Setup.**\n\n$$a_{\\mathrm{II}} = 340{,}000, \\qquad n_{\\mathrm{II}} = 10$$\n\n$$a_{\\mathrm{III}} = 250{,}000, \\qquad n_{\\mathrm{III}} = 9$$\n\nThe rates are $r=0.075$ and $r=0.115$. Schedule I is \\$2,400,000 today.\n\n**Part 2: Solve.**\n\nSchedule II is an annuity due:\n\n$$PV_{\\mathrm{II}} = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]$$\n\nSchedule III is cash plus an ordinary annuity:\n\n$$PV_{\\mathrm{III}} = 600{,}000 + \\frac{a}{r}\\bigl[1-(1+r)^{-n}\\bigr]$$\n\nAt $7.5\\%$,\n\n$$PV_{\\mathrm{II}} = 340{,}000 + \\frac{340{,}000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr] \\approx 2{,}508{,}821.59$$\n\n$$PV_{\\mathrm{III}} = 600{,}000 + \\frac{250{,}000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr] \\approx 2{,}194{,}722$$\n\nAt $11.5\\%$,\n\n$$PV_{\\mathrm{II}} = 340{,}000 + \\frac{340{,}000}{0.115}\\bigl[1-(1.115)^{-9}\\bigr] \\approx 2{,}186{,}562$$"
+  },
+  {
+    "id": "math-11-114",
+    "case_id": "MATH 11.114",
+    "title": "A small bakery invests \\$8,000 in a new commercial oven",
+    "subsection": "11.7",
+    "context": "A small bakery invests \\$8,000 in a new commercial oven. The oven is expected to generate a single net return of \\$9,600, paid in full at the end of one year.",
+    "statements": [
+      "The internal rate of return for this project is exactly 20%.",
+      "At an interest rate of 15%, the net present value of this project is positive.",
+      "At an interest rate of 25%, the net present value of this project is positive.",
+      "If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.",
+      "This project has a unique internal rate of return greater than -1."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return for this project is exactly 20%.**  (true)\n\nThe overview recovered the internal rate as $r=20\\%$. The claim is that same rate, so the statement is True.",
+      "**B) At an interest rate of 15%, the net present value of this project is positive.**  (true)\n\nFifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is\n\n$$A = -8{,}000 + \\frac{9{,}600}{1.15} = -8{,}000 + 8{,}347.83 = 347.83$$\n\nThen $347.83 > 0$, so the statement is True.",
+      "**C) At an interest rate of 25%, the net present value of this project is positive.**  (false)\n\nTwenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is\n\n$$A = -8{,}000 + \\frac{9{,}600}{1.25} = -8{,}000 + 7{,}680 = -320$$\n\nThen $-320 < 0$. The claim needs a positive NPV, so the statement is False.",
+      "**D) If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)\n\nWith payoff \\$10,000 on the same \\$8,000 outlay, the one-year rate is\n\n$$r = \\frac{10{,}000}{8{,}000} - 1 = 0.25 = 25\\%$$\n\nThen $25\\% > 24\\%$, so the statement is True.",
+      "**E) This project has a unique internal rate of return greater than -1.**  (true)\n\nOne negative outlay followed by one positive return is a cash-flow polynomial $-8{,}000 + 9{,}600 s$ with a single sign change, hence a unique $r > -1$. The recovered $20\\%$ is that unique admissible root, so the statement is True."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 114,
+    "solution_overview": "A small bakery invests \\$8,000 in a new commercial oven. The oven is expected to generate a single net return of \\$9,600, paid in full at the end of one year.\n\n**Part 1: Setup.**\n\n$$a_0 = -8{,}000, \\qquad a_1 = 9{,}600, \\qquad n = 1$$\n\n**Part 2: Solve.**\n\nFor a one-year project with outlay $a$ and return $b$, the internal rate makes net present value zero:\n\n$$-a + b(1+r)^{-1} = 0$$\n\n$$r = \\frac{b}{a} - 1$$\n\n$$r = \\frac{9{,}600}{8{,}000} - 1 = 0.20 = 20\\%$$\n\nNet present value at a test rate $r$ is\n\n$$A = a_0 + \\frac{a_1}{1+r}$$"
+  },
+  {
+    "id": "math-11-115",
+    "case_id": "MATH 11.115",
+    "title": "A logistics company spends \\$12,000 upgrading a delivery vehicle",
+    "subsection": "11.7",
+    "context": "A logistics company spends \\$12,000 upgrading a delivery vehicle. The upgrade is expected to generate net returns of \\$7,000 at the end of Year 1 and \\$7,000 at the end of Year 2.",
+    "statements": [
+      "The internal rate of return is approximately 10.92%.",
+      "At an interest rate of 8%, the net present value of this project is positive.",
+      "At an interest rate of 12%, the net present value of this project is positive.",
+      "If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.",
+      "Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return is approximately 10.92%.**  (true)\n\nThe overview recovered the internal rate as about $10.92\\%$. The claim is that same figure, so the statement is True.",
+      "**B) At an interest rate of 8%, the net present value of this project is positive.**  (true)\n\nEight percent sits below the recovered $10.92\\%$ IRR. NPV at $8\\%$ is\n\n$$-12{,}000 + \\frac{7{,}000}{1.08} + \\frac{7{,}000}{1.1664}$$\n\n$$= -12{,}000 + 6{,}481.48 + 6{,}001.37 = 482.85$$\n\nThen $482.85 > 0$, so the statement is True.",
+      "**C) At an interest rate of 12%, the net present value of this project is positive.**  (false)\n\nTwelve percent sits above the recovered $10.92\\%$ IRR. NPV at $12\\%$ is\n\n$$-12{,}000 + \\frac{7{,}000}{1.12} + \\frac{7{,}000}{1.2544}$$\n\n$$= -12{,}000 + 6{,}250.00 + 5{,}580.36 = -169.64$$\n\nThen $-169.64 < 0$. The claim needs a positive NPV, so the statement is False.",
+      "**D) If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.**  (true)\n\nWith Year 2 raised to \\$8,000, the new quadratic is $8s^{2} + 7s - 12 = 0$:\n\n$$s = \\frac{-7 + \\sqrt{433}}{16} \\approx 0.8630$$\n\n$$r = \\frac{1}{0.8630} - 1 \\approx 0.1587 \\approx 15.87\\%$$\n\nThen $15.87\\% > 13\\%$, so the statement is True.",
+      "**E) Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)\n\nDoubling both inflows while holding the outlay fixed gives $7s^{2} + 7s - 6 = 0$:\n\n$$s = \\frac{-7 + \\sqrt{217}}{14} \\approx 0.5522$$\n\n$$r = \\frac{1}{0.5522} - 1 \\approx 0.811 \\approx 81\\%$$\n\nThe claim is $21.84\\%$, twice the original rate. We have about $81\\%$, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 115,
+    "solution_overview": "A logistics company spends \\$12,000 upgrading a delivery vehicle. The upgrade is expected to generate net returns of \\$7,000 at the end of Year 1 and \\$7,000 at the end of Year 2.\n\n**Part 1: Setup.**\n\n$$a_0 = -12{,}000, \\qquad a_1 = 7{,}000, \\qquad a_2 = 7{,}000, \\qquad n = 2$$\n\n**Part 2: Solve.**\n\nThe internal rate makes the discounted cash-flow sum zero:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$\n\nWith $s = (1+r)^{-1}$,\n\n$$-12{,}000 + 7{,}000s + 7{,}000s^{2} = 0$$\n\n$$7s^{2} + 7s - 12 = 0$$\n\n$$s = \\frac{-7 + \\sqrt{385}}{14} \\approx 0.90153$$\n\n$$r = \\frac{1}{0.90153} - 1 \\approx 0.10922 \\approx 10.92\\%$$"
+  },
+  {
+    "id": "math-11-116",
+    "case_id": "MATH 11.116",
+    "title": "A boutique invests \\$20,000 in inventory and point-of-sale equipment",
+    "subsection": "11.7",
+    "context": "A boutique invests \\$20,000 in inventory and point-of-sale equipment. It expects net returns of \\$9,000 at the end of Year 1 and \\$15,000 at the end of Year 2.",
+    "statements": [
+      "The internal rate of return is approximately 11.98%.",
+      "At a discount rate of 10%, the net present value of the project is positive.",
+      "At a discount rate of 14%, the net present value of the project is positive.",
+      "If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.",
+      "The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return is approximately 11.98%.**  (true)\n\nThe overview recovered the internal rate as about $11.98\\%$. The claim is that same figure, so the statement is True.",
+      "**B) At a discount rate of 10%, the net present value of the project is positive.**  (true)\n\nTen percent sits below the recovered $11.98\\%$ IRR. NPV at $10\\%$ is\n\n$$-20{,}000 + \\frac{9{,}000}{1.10} + \\frac{15{,}000}{1.21}$$\n\n$$= -20{,}000 + 8{,}181.82 + 12{,}396.69 = 578.51$$\n\nThen $578.51 > 0$, so the statement is True.",
+      "**C) At a discount rate of 14%, the net present value of the project is positive.**  (false)\n\nFourteen percent sits above the recovered $11.98\\%$ IRR. NPV at $14\\%$ is\n\n$$-20{,}000 + \\frac{9{,}000}{1.14} + \\frac{15{,}000}{1.2996}$$\n\n$$= -20{,}000 + 7{,}894.74 + 11{,}542.01 = -563.25$$\n\nThen $-563.25 < 0$. The claim needs a positive NPV, so the statement is False.",
+      "**D) If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.**  (true)\n\nWith Year 1 raised to \\$18,000, the new quadratic is $15s^{2} + 18s - 20 = 0$:\n\n$$s = \\frac{-18 + \\sqrt{1{,}524}}{30} \\approx 0.7013$$\n\n$$r = \\frac{1}{0.7013} - 1 \\approx 0.426 \\approx 42.6\\%$$\n\nThen $42.6\\% > 30\\%$, so the statement is True.",
+      "**E) The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000.**  (true)\n\nThe undiscounted sum of the three cash flows is\n\n$$-20{,}000 + 9{,}000 + 15{,}000 = 4{,}000$$\n\nThe claim is \\$4,000, so the statement is True."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 116,
+    "solution_overview": "A boutique invests \\$20,000 in inventory and point-of-sale equipment. It expects net returns of \\$9,000 at the end of Year 1 and \\$15,000 at the end of Year 2.\n\n**Part 1: Setup.**\n\n$$a_0 = -20{,}000, \\qquad a_1 = 9{,}000, \\qquad a_2 = 15{,}000, \\qquad n = 2$$\n\n**Part 2: Solve.**\n\nThe internal rate makes net present value zero. With $s = (1+r)^{-1}$,\n\n$$-20{,}000 + 9{,}000s + 15{,}000s^{2} = 0$$\n\n$$15s^{2} + 9s - 20 = 0$$\n\n$$s = \\frac{-9 + \\sqrt{1{,}281}}{30} \\approx 0.89304$$\n\n$$r = \\frac{1}{0.89304} - 1 \\approx 0.11978 \\approx 11.98\\%$$"
+  },
+  {
+    "id": "math-11-117",
+    "case_id": "MATH 11.117",
+    "title": "A retailer is choosing between two one-year uses of surplus cash",
+    "subsection": "11.7",
+    "context": "A retailer is choosing between two one-year uses of surplus cash. Project X: invest \\$15,000 now, receive \\$17,250 in one year. Project Y: invest \\$22,000 now, receive \\$24,750 in one year.",
+    "statements": [
+      "The internal rate of return of Project X is exactly 15%.",
+      "The internal rate of return of Project Y is exactly 12.5%.",
+      "Based on the internal rate of return criterion, Project Y should be preferred over Project X.",
+      "At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.",
+      "If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return of Project X is exactly 15%.**  (true)\n\nThe overview recovered Project X's internal rate as $15\\%$. The claim is that same rate, so the statement is True.",
+      "**B) The internal rate of return of Project Y is exactly 12.5%.**  (true)\n\nThe overview recovered Project Y's internal rate as $12.5\\%$. The claim is that same rate, so the statement is True.",
+      "**C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.**  (false)\n\nThe overview recovered $r_X = 15\\%$ and $r_Y = 12.5\\%$. Then\n\n$$15\\% > 12.5\\%$$\n\nThe IRR criterion prefers X, not Y, so the statement is False.",
+      "**D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.**  (false)\n\nEleven percent sits below both recovered IRRs. NPV at $11\\%$ is\n\n$$NPV_X = -15{,}000 + \\frac{17{,}250}{1.11} = 540.54$$\n\n$$NPV_Y = -22{,}000 + \\frac{24{,}750}{1.11} = 297.30$$\n\nBoth are positive. The claim needs Y negative, so the statement is False.",
+      "**E) If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.**  (false)\n\nWith Y's payoff raised to \\$25,000,\n\n$$r_Y = \\frac{25{,}000}{22{,}000} - 1 \\approx 0.1364 = 13.64\\%$$\n\nThen $13.64\\% < 15\\%$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 117,
+    "solution_overview": "A retailer is choosing between two one-year uses of surplus cash. Project X: invest \\$15,000 now, receive \\$17,250 in one year. Project Y: invest \\$22,000 now, receive \\$24,750 in one year.\n\n**Part 1: Setup.**\n\n$$a_X = 15{,}000, \\qquad b_X = 17{,}250$$\n\n$$a_Y = 22{,}000, \\qquad b_Y = 24{,}750$$\n\n**Part 2: Solve.**\n\nFor each one-year project,\n\n$$r = \\frac{b}{a} - 1$$\n\n$$r_X = \\frac{17{,}250}{15{,}000} - 1 = 0.15 = 15\\%$$\n\n$$r_Y = \\frac{24{,}750}{22{,}000} - 1 = 0.125 = 12.5\\%$$"
+  },
+  {
+    "id": "math-11-118",
+    "case_id": "MATH 11.118",
+    "title": "A manufacturing upgrade has an initial outlay of \\$45,000",
+    "subsection": "11.7",
+    "context": "A manufacturing upgrade has an initial outlay of \\$45,000. Installation disruption causes a net cash outflow of \\$3,000 at the end of Year 1, followed by net returns of \\$28,000 at the end of Year 2 and \\$35,000 at the end of Year 3.",
+    "statements": [
+      "At r = 8%, the net present value of the project is approximately \\$4,012.",
+      "At r = 12%, the net present value of the project is positive.",
+      "The internal rate of return of this project lies between 12% and 15%.",
+      "At r = 15%, the net present value of the project is approximately -\\$3,424.",
+      "$a_1$, $a_2$, and $a_3$ are all positive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) At r = 8%, the net present value of the project is approximately \\$4,012.**  (true)\n\nThe overview recovered NPV at $8\\%$ as about \\$4,012. The claim is that same figure, so the statement is True.",
+      "**B) At r = 12%, the net present value of the project is positive.**  (false)\n\nThe overview recovered NPV at $12\\%$ as about $-444.83$. Then $-444.83 < 0$. The claim needs a positive NPV, so the statement is False.",
+      "**C) The internal rate of return of this project lies between 12% and 15%.**  (false)\n\nNPV is positive at $8\\%$ (about \\$4,012) and already negative at $12\\%$ (about -\\$445). The unique conventional root therefore sits between $8\\%$ and $12\\%$, not between $12\\%$ and $15\\%$, so the statement is False.",
+      "**D) At r = 15%, the net present value of the project is approximately -\\$3,424.**  (true)\n\nThe overview recovered NPV at $15\\%$ as about $-3{,}423.60$, which rounds to the claimed $-\\$3,424$, so the statement is True.",
+      "**E) $a_1$, $a_2$, and $a_3$ are all positive.**  (false)\n\nYear 1 is an installation outflow, so $a_1 = -3{,}000$. The later cash flows are not all positive, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 118,
+    "solution_overview": "A manufacturing upgrade has an initial outlay of \\$45,000. Installation disruption causes a net cash outflow of \\$3,000 at the end of Year 1, followed by net returns of \\$28,000 at the end of Year 2 and \\$35,000 at the end of Year 3.\n\n**Part 1: Setup.**\n\n$$a_0 = -45{,}000, \\qquad a_1 = -3{,}000, \\qquad a_2 = 28{,}000, \\qquad a_3 = 35{,}000$$\n\n**Part 2: Solve.**\n\nAt a test rate $r$, net present value is\n\n$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} + \\frac{a_3}{(1+r)^{3}}$$\n\nAt $8\\%$,\n\n$$A = -45{,}000 - \\frac{3{,}000}{1.08} + \\frac{28{,}000}{1.1664} + \\frac{35{,}000}{1.259712} \\approx 4{,}011.84$$\n\nAt $12\\%$,\n\n$$A = -45{,}000 - \\frac{3{,}000}{1.12} + \\frac{28{,}000}{1.2544} + \\frac{35{,}000}{1.404928} \\approx -444.83$$\n\nAt $15\\%$,\n\n$$A = -45{,}000 - \\frac{3{,}000}{1.15} + \\frac{28{,}000}{1.3225} + \\frac{35{,}000}{1.520875} \\approx -3{,}423.60$$"
+  },
+  {
+    "id": "math-11-119",
+    "case_id": "MATH 11.119",
+    "title": "A cafe chain invests \\$34,000 in a new espresso machine line",
+    "subsection": "11.7",
+    "context": "A cafe chain invests \\$34,000 in a new espresso machine line. Expected net returns are \\$16,000 at the end of Year 1 and \\$24,000 at the end of Year 2.",
+    "statements": [
+      "The internal rate of return is approximately 14.5%.",
+      "At an interest rate of 9%, the net present value of the project is negative.",
+      "At an interest rate of 13%, the net present value of the project is negative.",
+      "If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.",
+      "Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The internal rate of return is approximately 14.5%.**  (false)\n\nThe overview recovered the internal rate as about $10.78\\%$. The claim is $14.5\\%$, so the statement is False.",
+      "**B) At an interest rate of 9%, the net present value of the project is negative.**  (false)\n\nNine percent sits below the recovered $10.78\\%$ IRR. NPV at $9\\%$ is\n\n$$-34{,}000 + \\frac{16{,}000}{1.09} + \\frac{24{,}000}{1.1881}$$\n\n$$= -34{,}000 + 14{,}678.90 + 20{,}200.32 = 879.22$$\n\nThen $879.22 > 0$. The claim needs a negative NPV, so the statement is False.",
+      "**C) At an interest rate of 13%, the net present value of the project is negative.**  (true)\n\nThirteen percent sits above the recovered $10.78\\%$ IRR. NPV at $13\\%$ is\n\n$$-34{,}000 + \\frac{16{,}000}{1.13} + \\frac{24{,}000}{1.2769}$$\n\n$$= -34{,}000 + 14{,}159.29 + 18{,}795.52 = -1{,}045.19$$\n\nThen $-1{,}045.19 < 0$, so the statement is True.",
+      "**D) If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)\n\nCutting Year 2 to \\$20,000 gives the new quadratic $10s^{2} + 8s - 17 = 0$:\n\n$$s = \\frac{-8 + \\sqrt{744}}{20} \\approx 0.9638$$\n\n$$r = \\frac{1}{0.9638} - 1 \\approx 0.0376 \\approx 3.76\\%$$\n\nThen $3.76\\% < 10.78\\%$. The new IRR is lower, not higher, so the statement is False.",
+      "**E) Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.**  (false)\n\nA smaller outlay on the same returns raises the internal rate. With $a_0 = -30{,}000$,\n\n$$12s^{2} + 8s - 15 = 0$$\n\n$$s = \\frac{-8 + 28}{24} = \\frac{5}{6}, \\qquad r = 20\\%$$\n\nThen $20\\% > 10.78\\%$. The IRR rises, it does not fall, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 119,
+    "solution_overview": "A cafe chain invests \\$34,000 in a new espresso machine line. Expected net returns are \\$16,000 at the end of Year 1 and \\$24,000 at the end of Year 2.\n\n**Part 1: Setup.**\n\n$$a_0 = -34{,}000, \\qquad a_1 = 16{,}000, \\qquad a_2 = 24{,}000, \\qquad n = 2$$\n\n**Part 2: Solve.**\n\nThe internal rate makes the discounted cash-flow sum zero. With $s = (1+r)^{-1}$,\n\n$$-34{,}000 + 16{,}000s + 24{,}000s^{2} = 0$$\n\n$$12s^{2} + 8s - 17 = 0$$\n\n$$s = \\frac{-8 + \\sqrt{880}}{24} \\approx 0.90270$$\n\n$$r = \\frac{1}{0.90270} - 1 \\approx 0.10778 \\approx 10.78\\%$$"
+  },
+  {
+    "id": "math-11-120",
+    "case_id": "MATH 11.120",
+    "title": "A logistics firm spends \\$40,000 automating a warehouse process",
+    "subsection": "11.7",
+    "context": "A logistics firm spends \\$40,000 automating a warehouse process. It expects net returns of \\$22,000 at the end of Year 1 and \\$27,600 at the end of Year 2.",
+    "statements": [
+      "At r = 15%, the net present value of the project is \\$0, to the nearest dollar.",
+      "At an interest rate of 10%, the net present value of the project is positive.",
+      "At an interest rate of 20%, the net present value of the project is negative.",
+      "The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.",
+      "This project has a unique internal rate of return greater than -1."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) At r = 15%, the net present value of the project is \\$0, to the nearest dollar.**  (true)\n\nThe overview recovered NPV at $15\\%$ as $0$ to the nearest dollar. The claim is that same figure, so the statement is True.",
+      "**B) At an interest rate of 10%, the net present value of the project is positive.**  (true)\n\nTen percent sits below the recovered $15\\%$ IRR. NPV at $10\\%$ is\n\n$$-40{,}000 + \\frac{22{,}000}{1.10} + \\frac{27{,}600}{1.21}$$\n\n$$= -40{,}000 + 20{,}000.00 + 22{,}809.92 = 2{,}809.92$$\n\nThen $2{,}809.92 > 0$, so the statement is True.",
+      "**C) At an interest rate of 20%, the net present value of the project is negative.**  (true)\n\nTwenty percent sits above the recovered $15\\%$ IRR. NPV at $20\\%$ is\n\n$$-40{,}000 + \\frac{22{,}000}{1.20} + \\frac{27{,}600}{1.44}$$\n\n$$= -40{,}000 + 18{,}333.33 + 19{,}166.67 = -2{,}500$$\n\nThen $-2{,}500 < 0$, so the statement is True.",
+      "**D) The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.**  (true)\n\nThe undiscounted sum of the three cash flows is\n\n$$-40{,}000 + 22{,}000 + 27{,}600 = 9{,}600$$\n\nThe claim is \\$9,600, so the statement is True.",
+      "**E) This project has a unique internal rate of return greater than -1.**  (true)\n\nThe cash-flow signs are $-,+,+$, one sign change, hence a unique $r > -1$. The recovered $15\\%$ is that unique admissible root, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 120,
+    "solution_overview": "A logistics firm spends \\$40,000 automating a warehouse process. It expects net returns of \\$22,000 at the end of Year 1 and \\$27,600 at the end of Year 2.\n\n**Part 1: Setup.**\n\n$$a_0 = -40{,}000, \\qquad a_1 = 22{,}000, \\qquad a_2 = 27{,}600, \\qquad n = 2$$\n\n**Part 2: Solve.**\n\nAt a test rate $r$, two-year net present value is\n\n$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$\n\nAt $r=15\\%$,\n\n$$A = -40{,}000 + \\frac{22{,}000}{1.15} + \\frac{27{,}600}{1.3225}$$\n\n$$= -40{,}000 + 19{,}130.43 + 20{,}869.57 = 0$$\n\nso $15\\%$ is the internal rate of return."
+  }
+]

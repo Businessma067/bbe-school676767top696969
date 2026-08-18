@@ -1,0 +1,602 @@
+[
+  {
+    "id": "math-8-41",
+    "case_id": "MATH 8.41",
+    "title": "Turning a Negative-Power Demand Curve Around",
+    "context": "A component supplier faces demand $q(p)=A p^{-2}$ units at a price $p>0$ euros. A catalogue price of $4$ euros clears $400$ units. Procurement wants the curve written the other way round, with price a function of quantity. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The price that clears a given quantity is itself a power function of that quantity.",
+      "After $25$ units the clearing price is already under $20$ euros.",
+      "Raising the catalogue price raises revenue along this curve.",
+      "After $100$ units, revenue is already above $750$ euros.",
+      "Because quantity falls when price rises, revenue must fall when quantity rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $p=80 q^{-\\frac{1}{2}}$. That is a monomial in $q$, coefficient $80$ and exponent $-\\frac{1}{2}$. There is no leftover constant and no logarithm, so the statement is True.",
+      "**B.** → True\n\nThis is a level of the inverse at $25$ units. The overview recovered $p=80 q^{-\\frac{1}{2}}$.\n\n$$p(25)=80\\cdot 25^{-\\frac{1}{2}}$$\n\n$$25^{-\\frac{1}{2}}=\\frac{1}{5}$$\n\n$$p(25)=16$$\n\nSixteen sits under $20$, so the statement is True.",
+      "**C.** → False\n\nRevenue as a function of price is the leftover power after multiplying demand by $p$. The overview recovered $R(p)=6400 p^{-1}$. The leftover exponent is negative, so raising the catalogue price cuts revenue. At the catalogue price and at twice that price:\n\n$$R(4)=1600$$\n\n$$R(8)=800$$\n\nRevenue falls, so the statement is False.",
+      "**D.** → True\n\nRevenue as a function of quantity is the leftover power after multiplying price by $q$. The overview recovered $R(q)=80 q^{\\frac{1}{2}}$. At $100$ units:\n\n$$R(100)=80\\cdot 100^{\\frac{1}{2}}$$\n\n$$100^{\\frac{1}{2}}=10$$\n\n$$R(100)=800$$\n\nEight hundred sits above $750$, so the statement is True.",
+      "**E.** → False\n\nThe claim treats a falling $q(p)$ as if revenue had to fall when quantity rises. The overview recovered $R(q)=80 q^{\\frac{1}{2}}$. The leftover exponent $\\frac{1}{2}$ is positive, so a larger quantity brings in more revenue. From $q=25$ to $q=100$:\n\n$$R(25)=400$$\n\n$$R(100)=800$$\n\nRevenue rises with quantity, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 41,
+    "solution_overview": "Demand is $q(p)=A p^{-2}$ units at a price $p>0$ euros. A catalogue price of $4$ euros clears $400$ units. Revenue is $R=pq$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the catalogue pair pins $A$:\n\n$$A\\cdot 4^{-2}=400$$\n\n$$A\\cdot \\frac{1}{16}=400$$\n\n**Part 2: Solve.**\n\n$$A=6400$$\n\nThe recovered demand is $q(p)=6400 p^{-2}$. Isolating price takes the reciprocal square root:\n\n$$p=80 q^{-\\frac{1}{2}}$$\n\nRevenue along the curve is then\n\n$$R(q)=80 q^{\\frac{1}{2}}, \\qquad R(p)=6400 p^{-1}.$$"
+  },
+  {
+    "id": "math-8-42",
+    "case_id": "MATH 8.42",
+    "title": "Average Product of a Square-Root Technology",
+    "context": "A workshop's output follows $Y(L)=A L^{\\frac{1}{2}}$ units for $L>0$ labour hours. Extending a shift from $9$ hours to $36$ hours added exactly $60$ units. Management tracks average product $\\frac{Y}{L}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Average product falls as the shift lengthens.",
+      "A $36$-hour shift already produces more than $100$ units.",
+      "An extra hour adds more output after $36$ hours than it does after $9$.",
+      "To double the $9$-hour output, labour hours must more than double.",
+      "At $25$ hours, average product is still above $5$ units per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAverage product is output per labour hour. The overview recovered $\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$. The leftover exponent is negative, so average product falls as the shift lengthens. At the two logged shifts:\n\n$$\\frac{Y(9)}{9}=\\frac{20}{3}$$\n\n$$\\frac{Y(36)}{36}=\\frac{10}{3}$$\n\nThe later average is smaller, so the statement is True.",
+      "**B.** → True\n\nThis is a level of output at $36$ hours. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$.\n\n$$Y(36)=20\\cdot 36^{\\frac{1}{2}}$$\n\n$$36^{\\frac{1}{2}}=6$$\n\n$$Y(36)=120$$\n\nOne hundred and twenty sits above $100$, so the statement is True.",
+      "**C.** → False\n\nAn extra hour is the derivative of output. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$, so\n\n$$Y'(L)=10 L^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative. At nine hours:\n\n$$Y'(9)=\\frac{10}{3}$$\n\nAt thirty-six hours:\n\n$$Y'(36)=\\frac{10}{6}$$\n\nAn extra hour adds less after $36$ hours than after $9$, so the statement is False.",
+      "**D.** → True\n\nThe nine-hour output is $Y(9)=20\\cdot 3=60$. Doubling that output means $Y(L)=120$. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$, so\n\n$$20 L^{\\frac{1}{2}}=120$$\n\n$$L^{\\frac{1}{2}}=6$$\n\n$$L=36$$\n\nHours must go from $9$ to $36$, which is more than a doubling, so the statement is True.",
+      "**E.** → False\n\nThis is a level of average product at $25$ hours. The overview recovered $\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$.\n\n$$\\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}$$\n\n$$25^{-\\frac{1}{2}}=\\frac{1}{5}$$\n\n$$\\frac{Y(25)}{25}=4$$\n\nFour sits below $5$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 42,
+    "solution_overview": "Output follows $Y(L)=A L^{\\frac{1}{2}}$ units for $L>0$ labour hours. Extending a shift from $9$ hours to $36$ hours added $60$ units. Average product is $\\frac{Y}{L}$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the recorded jump is a difference of square roots and pins $A$:\n\n$$A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60$$\n\n$$A(6-3)=60$$\n\n**Part 2: Solve.**\n\n$$A=20$$\n\nThe recovered output is $Y(L)=20 L^{\\frac{1}{2}}$. Average product then lowers the exponent by one:\n\n$$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}.$$"
+  },
+  {
+    "id": "math-8-43",
+    "case_id": "MATH 8.43",
+    "title": "Two Break-Even Points Around a Fixed Charge",
+    "context": "A contract manufacturer earns $R(q)=A q^{\\frac{1}{2}}$ euros from an output of $q>0$ units, pays $2$ euros per unit, and carries a fixed charge of $400$ euros a period. A run of $100$ units brought in $600$ euros of revenue. Profit is revenue minus both charges. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The operation breaks even at two different positive outputs.",
+      "At $25$ units the firm is more than $100$ euros below break-even.",
+      "Once profit turns positive, it stays positive at every larger output.",
+      "Revenue is a power function of output, but profit is not.",
+      "At $225$ units, profit exceeds $80$ euros."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBreak-even is $\\Pi(q)=0$. The overview recovered the two positive roots $q=100$ and $q=400$. Those are two different positive outputs, so the statement is True.",
+      "**B.** → True\n\nThis is a level of profit at $25$ units. The overview recovered $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$.\n\n$$\\Pi(25)=60\\cdot 5-50-400$$\n\n$$\\Pi(25)=-150$$\n\nMinus one hundred and fifty sits more than $100$ euros below zero, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered break-evens at $q=100$ and $q=400$. Past the larger root the linear charge dominates the square-root revenue. At $q=625$:\n\n$$\\Pi(625)=60\\cdot 25-1250-400$$\n\n$$\\Pi(625)=-150$$\n\nProfit turns negative again, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered $R(q)=60 q^{\\frac{1}{2}}$ and $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$. Revenue is a monomial in $q$. Profit subtracts both a linear term and a constant, so it is not a monomial.\n\nA leftover intercept or a second exponent kills the power-function shape, so the statement is True.",
+      "**E.** → False\n\nThis is a level of profit at $225$ units. The overview recovered $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$.\n\n$$\\Pi(225)=60\\cdot 15-450-400$$\n\n$$\\Pi(225)=50$$\n\nFifty does not sit above $80$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 43,
+    "solution_overview": "Revenue is $R(q)=A q^{\\frac{1}{2}}$ euros for $q>0$ units, with variable cost $2q$ and a fixed charge of $400$ euros. A run of $100$ units brought in $600$ euros of revenue. Profit is $\\Pi=R-2q-400$.\n\n**Part 1: Translate.**\n\nThe hundred-unit invoice pins $A$:\n\n$$A\\cdot 100^{\\frac{1}{2}}=600$$\n\n$$10A=600$$\n\n**Part 2: Solve.**\n\n$$A=60$$\n\nThe recovered revenue is $R(q)=60 q^{\\frac{1}{2}}$, and profit is\n\n$$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400.$$\n\nBreak-even is $\\Pi=0$. Set $t=q^{\\frac{1}{2}}$:\n\n$$60t-2t^{2}-400=0$$\n\n$$t^{2}-30t+200=0$$\n\n$$(t-10)(t-20)=0$$\n\nThe positive roots square to $q=100$ and $q=400$."
+  },
+  {
+    "id": "math-8-44",
+    "case_id": "MATH 8.44",
+    "title": "A Benefit and a Cost With Different Exponents",
+    "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=A x^{\\frac{1}{2}}$ and the cost $C(x)=K x^{\\frac{3}{2}}$, both in millions. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Benefit and cost meet at exactly one positive scale.",
+      "At scale $16$, cost is already above $30$ million.",
+      "The cost exponent is smaller than the benefit exponent, so cost can never overtake benefit.",
+      "At scale $9$, net benefit exceeds $42$ million.",
+      "Benefit per million of cost is the same at every scale."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBenefit and cost meet where $B(x)=C(x)$. The overview recovered $B(x)=18 x^{\\frac{1}{2}}$ and $C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$.\n\n$$18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n$$36=x$$\n\nThe only positive solution is $x=36$, so the statement is True.",
+      "**B.** → True\n\nThis is a level of cost at scale $16$. The overview recovered $C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$.\n\n$$C(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}$$\n\n$$16^{\\frac{3}{2}}=64$$\n\n$$C(16)=32$$\n\nThirty-two sits above $30$, so the statement is True.",
+      "**C.** → False\n\nThe claim compares the two exponents the wrong way round. The overview recovered benefit exponent $\\frac{1}{2}$ and cost exponent $\\frac{3}{2}$.\n\n$$\\frac{3}{2}>\\frac{1}{2}$$\n\nCost has the larger exponent, so it overtakes benefit past the unique meeting and stays ahead. At $x=64$:\n\n$$B(64)=144$$\n\n$$C(64)=256$$\n\nCost has overtaken, so the statement is False.",
+      "**D.** → False\n\nThis is a level of net benefit at scale $9$. The overview recovered $B(x)=18 x^{\\frac{1}{2}}$ and $C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$.\n\n$$B(9)=18\\cdot 3=54$$\n\n$$C(9)=\\frac{1}{2}\\cdot 27=13.5$$\n\n$$B(9)-C(9)=40.5$$\n\nForty point five does not exceed $42$, so the statement is False.",
+      "**E.** → False\n\nBenefit per million of cost is the ratio of the two recovered curves:\n\n$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}=\\frac{36}{x}$$\n\nThat leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:\n\n$$\\frac{B(4)}{C(4)}=9, \\qquad \\frac{B(16)}{C(16)}=2.25, \\qquad \\frac{B(36)}{C(36)}=1$$\n\nThree different ratios, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 44,
+    "solution_overview": "Benefit is $B(x)=A x^{\\frac{1}{2}}$ and cost is $C(x)=K x^{\\frac{3}{2}}$, both in millions, for scale $x>0$. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$.\n\n**Part 1: Translate.**\n\nEach curve has a known exponent and one trial:\n\n$$A\\cdot 16^{\\frac{1}{2}}=72$$\n\n$$4A=72$$\n\n$$K\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8K=4$$\n\n**Part 2: Solve.**\n\n$$A=18, \\qquad K=\\frac{1}{2}$$\n\nThe recovered curves are\n\n$$B(x)=18 x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2} x^{\\frac{3}{2}}.$$"
+  },
+  {
+    "id": "math-8-45",
+    "case_id": "MATH 8.45",
+    "title": "Furnace Throughput Calibrated From Two Runs",
+    "context": "A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. A feed of $8$ gave $16$ tonnes per hour, and a feed of $27$ gave $36$. The site licence caps throughput at $32$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so throughput grows more slowly than the gas feed.",
+      "The licensed ceiling is reached at a feed below $24$ cubic metres per hour.",
+      "Doubling the gas feed doubles throughput.",
+      "Throughput per cubic metre of gas rises as the feed rises.",
+      "A feed of $64$ cubic metres per hour already produces more than $60$ tonnes per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $r=\\frac{2}{3}$. An exponent smaller than one means multiplying the feed by $k$ multiplies throughput only by $k^{r}$.\n\n$$\\frac{2}{3}<1$$\n\nThroughput grows more slowly than the gas feed, so the statement is True.",
+      "**B.** → True\n\nThe licensed ceiling is $T=32$. The overview recovered $T(g)=4 g^{\\frac{2}{3}}$, so\n\n$$4 g^{\\frac{2}{3}}=32$$\n\n$$g^{\\frac{2}{3}}=8$$\n\n$$g=8^{\\frac{3}{2}}=16\\sqrt{2}$$\n\n$$16\\sqrt{2}\\approx 22.63$$\n\nThat feed sits below $24$, so the statement is True.",
+      "**C.** → False\n\nDoubling the gas feed is the multiplier $k=2$. The overview recovered $r=\\frac{2}{3}$, so the throughput factor is\n\n$$\\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}$$\n\n$$2^{\\frac{2}{3}}\\approx 1.587$$\n\nThat is not $2$, so the statement is False.",
+      "**D.** → False\n\nThroughput per cubic metre is the average $T/g$. The overview recovered $T(g)=4 g^{\\frac{2}{3}}$, so\n\n$$\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}$$\n\nThe leftover exponent is negative, so the average falls as the feed rises, so the statement is False.",
+      "**E.** → True\n\nThis is a level of throughput at a feed of $64$. The overview recovered $T(g)=4 g^{\\frac{2}{3}}$.\n\n$$T(64)=4\\cdot 64^{\\frac{2}{3}}$$\n\n$$64^{\\frac{2}{3}}=16$$\n\n$$T(64)=64$$\n\nSixty-four sits above $60$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 45,
+    "solution_overview": "Throughput follows $T(g)=A g^{r}$ tonnes per hour for a gas feed $g>0$. A feed of $8$ gave $16$ tonnes per hour, and a feed of $27$ gave $36$. The site licence caps throughput at $32$ tonnes per hour.\n\n**Part 1: Translate.**\n\nTwo unknowns need both runs. The ratio cancels $A$:\n\n$$\\frac{T(27)}{T(8)}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n$$\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n$$\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r}$$\n\nBecause $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$ and $\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$,\n\n$$\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}$$\n\n**Part 2: Solve.**\n\n$$3r=2, \\qquad r=\\frac{2}{3}$$\n\nThe eight-feed level then pins $A$:\n\n$$A\\cdot 8^{\\frac{2}{3}}=16$$\n\n$$8^{\\frac{2}{3}}=4, \\qquad A=4$$\n\nThe recovered law is $T(g)=4 g^{\\frac{2}{3}}$."
+  },
+  {
+    "id": "math-8-46",
+    "case_id": "MATH 8.46",
+    "title": "Rainwater Basin Storage Under a Square Law",
+    "context": "A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey found that raising the water from $3$ metres to $5$ metres added exactly $64$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is larger than one, so stored volume grows faster than depth.",
+      "At $6$ metres the basin already holds more than $140$ cubic metres.",
+      "To double stored volume, the water depth must more than double.",
+      "Because the basin tapers, stored volume approaches a finite cap as depth grows.",
+      "Filling from $4$ metres to $8$ metres adds more than $200$ cubic metres."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $V(d)=4 d^{2}$. The exponent on depth is $2$.\n\n$$2>1$$\n\nStored volume grows faster than depth, so the statement is True.",
+      "**B.** → True\n\nThis is a level of storage at $6$ metres. The overview recovered $V(d)=4 d^{2}$.\n\n$$V(6)=4\\cdot 36=144$$\n\nOne hundred and forty-four sits above $140$, so the statement is True.",
+      "**C.** → False\n\nDoubling stored volume inverts the square law. The overview recovered $V(d)=4 d^{2}$, so\n\n$$\\frac{V(kd)}{V(d)}=k^{2}$$\n\n$$k^{2}=2 \\Rightarrow k=\\sqrt{2}$$\n\n$$\\sqrt{2}<2$$\n\nDepth scales by $\\sqrt{2}$, which is not more than a doubling, so the statement is False.",
+      "**D.** → False\n\nA pure power with a positive exponent has no horizontal asymptote. The overview recovered $V(d)=4 d^{2}$. As $d\\to\\infty$,\n\n$$V(d)\\to\\infty$$\n\nTapering changes the coefficient, not the fact that volume grows without a cap, so the statement is False.",
+      "**E.** → False\n\nThe added volume from $4$ metres to $8$ metres is a difference of two levels. The overview recovered $V(d)=4 d^{2}$.\n\n$$V(8)=4\\cdot 64=256$$\n\n$$V(4)=4\\cdot 16=64$$\n\n$$V(8)-V(4)=192$$\n\nOne hundred and ninety-two is not more than $200$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 46,
+    "solution_overview": "Storage follows $V(d)=A d^{2}$ cubic metres at depth $d>0$ metres. Raising the water from $3$ metres to $5$ metres added $64$ cubic metres.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the survey is a difference of squares and pins $A$:\n\n$$A\\bigl(5^{2}-3^{2}\\bigr)=64$$\n\n$$A(25-9)=64$$\n\n**Part 2: Solve.**\n\n$$16A=64, \\qquad A=4$$\n\nThe recovered storage is $V(d)=4 d^{2}$."
+  },
+  {
+    "id": "math-8-47",
+    "case_id": "MATH 8.47",
+    "title": "A Braking-Energy Index Recovered From a Speed Change",
+    "context": "A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$: it states only that raising the test speed from $30$ to $50$ kilometres per hour raised the index by exactly $80$ points. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Equal speed increments raise the index by more at higher speeds than at lower ones.",
+      "At $40$ kilometres per hour the index is already above $70$.",
+      "The index per kilometre per hour of speed is the same at every speed.",
+      "The speed that produces a given index grows more slowly than the index itself.",
+      "At $80$ kilometres per hour the index is still under $300$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEqual speed increments are the derivative of the index. The overview recovered $E(v)=\\frac{1}{20} v^{2}$, so\n\n$$E'(v)=\\frac{v}{10}$$\n\nThe leftover power is positive, so the slope itself rises with speed. At the two survey speeds:\n\n$$E'(30)=3, \\qquad E'(50)=5$$\n\nThe later increment adds more, so the statement is True.",
+      "**B.** → True\n\nThis is a level of the index at $40$ kilometres per hour. The overview recovered $E(v)=\\frac{1}{20} v^{2}$.\n\n$$E(40)=\\frac{1}{20}\\cdot 1600=80$$\n\nEighty sits above $70$, so the statement is True.",
+      "**C.** → False\n\nThe index per kilometre per hour is the average $E/v$. The overview recovered $E(v)=\\frac{1}{20} v^{2}$, so\n\n$$\\frac{E(v)}{v}=\\frac{v}{20}$$\n\nThe leftover exponent is positive, so that average is not the same at every speed. At the two survey speeds:\n\n$$\\frac{E(30)}{30}=1.5, \\qquad \\frac{E(50)}{50}=2.5$$\n\nTwo different averages, so the statement is False.",
+      "**D.** → True\n\nThe speed that produces a given index is the inverse of $E(v)=\\frac{1}{20} v^{2}$. The overview recovered that law, so\n\n$$v=(20E)^{\\frac{1}{2}}$$\n\nThe inverse exponent $\\frac{1}{2}$ sits below one, so speed grows more slowly than the index, so the statement is True.",
+      "**E.** → False\n\nThis is a level of the index at $80$ kilometres per hour. The overview recovered $E(v)=\\frac{1}{20} v^{2}$.\n\n$$E(80)=\\frac{1}{20}\\cdot 6400=320$$\n\nThree hundred and twenty does not sit under $300$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 47,
+    "solution_overview": "The braking-energy index is $E(v)=A v^{2}$ for speed $v>0$ kilometres per hour. Raising the test speed from $30$ to $50$ kilometres per hour raised the index by $80$ points.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the logged gap is a difference of squares and pins $A$:\n\n$$A\\bigl(50^{2}-30^{2}\\bigr)=80$$\n\n$$A(2500-900)=80$$\n\n**Part 2: Solve.**\n\n$$1600A=80, \\qquad A=\\frac{1}{20}$$\n\nThe recovered index is $E(v)=\\frac{1}{20} v^{2}$."
+  },
+  {
+    "id": "math-8-48",
+    "case_id": "MATH 8.48",
+    "title": "Geometrically Similar Silos: Steel Against Capacity",
+    "context": "A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A $2$-metre silo uses $12$ square metres of steel and holds $8$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Steel use grows more slowly than capacity as height rises.",
+      "A $4$-metre silo holds more than $60$ cubic metres.",
+      "Steel as a function of capacity is itself a power function.",
+      "Two separate $2$-metre silos use the same steel as one $4$-metre silo.",
+      "An $8$-metre silo needs more than $200$ square metres of steel."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nSteel and capacity are both powers of height. The overview recovered steel exponent $2$ and capacity exponent $3$.\n\n$$2<3$$\n\nThe smaller exponent is on steel, so steel use grows more slowly than capacity as height rises, so the statement is True.",
+      "**B.** → True\n\nThis is a level of capacity at $4$ metres. The overview recovered $V(h)=h^{3}$.\n\n$$V(4)=64$$\n\nSixty-four sits above $60$, so the statement is True.",
+      "**C.** → True\n\nSteel as a function of capacity eliminates the common height. The overview recovered $S(h)=3 h^{2}$ and $V(h)=h^{3}$, so $h=V^{\\frac{1}{3}}$ and\n\n$$S=3\\bigl(V^{\\frac{1}{3}}\\bigr)^{2}$$\n\n$$S=3 V^{\\frac{2}{3}}$$\n\nThat is a monomial in $V$, so the statement is True.",
+      "**D.** → False\n\nTwo separate $2$-metre silos use twice the recovered $S(2)$. The overview recovered $S(h)=3 h^{2}$.\n\n$$2\\cdot S(2)=2\\cdot 12=24$$\n\n$$S(4)=3\\cdot 16=48$$\n\nTwenty-four is not forty-eight, so the statement is False.",
+      "**E.** → False\n\nThis is a level of steel at $8$ metres. The overview recovered $S(h)=3 h^{2}$.\n\n$$S(8)=3\\cdot 64=192$$\n\nOne hundred and ninety-two does not sit above $200$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 48,
+    "solution_overview": "Steel use is $S(h)=a h^{2}$ square metres and capacity is $V(h)=k h^{3}$ cubic metres. A $2$-metre silo uses $12$ square metres of steel and holds $8$ cubic metres.\n\n**Part 1: Translate.**\n\nEach law has a known exponent and one recorded pair:\n\n$$a\\cdot 2^{2}=12$$\n\n$$4a=12$$\n\n$$k\\cdot 2^{3}=8$$\n\n$$8k=8$$\n\n**Part 2: Solve.**\n\n$$a=3, \\qquad k=1$$\n\nThe recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$."
+  },
+  {
+    "id": "math-8-49",
+    "case_id": "MATH 8.49",
+    "title": "Inspection Hours Across Growing Shipment Volumes",
+    "context": "Customs inspection time follows $T(n)=A n^{\\frac{1}{2}}$ hours for a consignment of $n>0$ shipments. Moving from a $4$-shipment consignment to a $36$-shipment consignment added exactly $16$ inspection hours. A staffing plan can supply at most $40$ inspection hours. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Total inspection time is proportional to the number of shipments.",
+      "The $40$-hour ceiling is already binding below $110$ shipments.",
+      "Staffing that just meets the ceiling would still cover a modestly larger consignment, because extra shipments add almost nothing.",
+      "Quadrupling a consignment multiplies inspection time by two.",
+      "A $49$-shipment consignment takes more than $30$ hours."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nProportionality would need exponent $1$. The overview recovered $T(n)=4 n^{\\frac{1}{2}}$, so the exponent is $\\frac{1}{2}$.\n\n$$\\frac{1}{2}\\neq 1$$\n\nTotal inspection time is not proportional to the number of shipments, so the statement is False.",
+      "**B.** → True\n\nThe $40$-hour ceiling inverts the recovered time $T(n)=4 n^{\\frac{1}{2}}$.\n\n$$4 n^{\\frac{1}{2}}=40$$\n\n$$n^{\\frac{1}{2}}=10$$\n\n$$n=100$$\n\nOne hundred sits below $110$, so the statement is True.",
+      "**C.** → False\n\nStaffing that just meets the ceiling sits at $T=40$. The overview recovered $T(n)=4 n^{\\frac{1}{2}}$, which meets $40$ hours at $n=100$. The extra-shipment slope is\n\n$$T'(n)=2 n^{-\\frac{1}{2}}$$\n\n$$T'(100)=0.2$$\n\nAn extra shipment still adds $0.2$ hours and pushes the total past $40$. A modestly larger consignment is not covered, so the statement is False.",
+      "**D.** → True\n\nQuadrupling a consignment is the multiplier $k=4$. The overview recovered exponent $\\frac{1}{2}$, so\n\n$$\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}=2$$\n\nInspection time is multiplied by two, so the statement is True.",
+      "**E.** → False\n\nThis is a level of inspection time at $49$ shipments. The overview recovered $T(n)=4 n^{\\frac{1}{2}}$.\n\n$$T(49)=4\\cdot 7=28$$\n\nTwenty-eight is not more than $30$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 49,
+    "solution_overview": "Inspection time follows $T(n)=A n^{\\frac{1}{2}}$ hours for $n>0$ shipments. Moving from a $4$-shipment consignment to a $36$-shipment consignment added $16$ hours. Staffing supplies at most $40$ inspection hours.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the sixteen-hour jump pins $A$:\n\n$$A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16$$\n\n$$A(6-2)=16$$\n\n**Part 2: Solve.**\n\n$$4A=16, \\qquad A=4$$\n\nThe recovered time is $T(n)=4 n^{\\frac{1}{2}}$."
+  },
+  {
+    "id": "math-8-50",
+    "case_id": "MATH 8.50",
+    "title": "Illuminance Down the Length of a Gallery",
+    "context": "Illuminance from a gallery spotlight follows $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A conservation log never states $A$: it records only that moving the meter from $2$ metres to $4$ metres cut the reading by $150$ lux. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the distance from the lamp cuts illuminance to one quarter.",
+      "At $5$ metres the illuminance is already under $40$ lux.",
+      "An extra metre of distance cuts more illuminance at $4$ metres than at $2$ metres.",
+      "Distance as a function of illuminance is not a power function, because illuminance falls.",
+      "At $3$ metres the reading is still above $90$ lux."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nDoubling the distance is the multiplier $k=2$. The overview recovered exponent $-2$, so\n\n$$\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}$$\n\nIlluminance is cut to one quarter, so the statement is True.",
+      "**B.** → True\n\nThis is a level of illuminance at $5$ metres. The overview recovered $I(d)=800 d^{-2}$.\n\n$$I(5)=\\frac{800}{25}=32$$\n\nThirty-two sits under $40$, so the statement is True.",
+      "**C.** → False\n\nAn extra metre is the size of the derivative. The overview recovered $I(d)=800 d^{-2}$, so\n\n$$I'(d)=-1600 d^{-3}$$\n\nThe cut is larger nearer the lamp. At the two named distances:\n\n$$\\lvert I'(2)\\rvert=200, \\qquad \\lvert I'(4)\\rvert=25$$\n\nAn extra metre cuts less illuminance at $4$ metres than at $2$, so the statement is False.",
+      "**D.** → False\n\nA nonzero power inverts to another power. The overview recovered $I(d)=800 d^{-2}$, so isolating distance gives\n\n$$d=\\sqrt{800}\\, I^{-\\frac{1}{2}}$$\n\nDistance as a function of illuminance is still a monomial in $I$. Falling illuminance does not introduce a logarithm, so the statement is False.",
+      "**E.** → False\n\nThis is a level of illuminance at $3$ metres. The overview recovered $I(d)=800 d^{-2}$.\n\n$$I(3)=\\frac{800}{9}$$\n\n$$\\frac{800}{9}\\approx 88.89$$\n\nThat reading does not sit above $90$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 50,
+    "solution_overview": "Illuminance follows $I(d)=A d^{-2}$ lux at distance $d>0$ metres. Moving the meter from $2$ metres to $4$ metres cut the reading by $150$ lux.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the logged drop pins $A$:\n\n$$A\\bigl(2^{-2}-4^{-2}\\bigr)=150$$\n\n$$A\\bigl(\\frac{1}{4}-\\frac{1}{16}\\bigr)=150$$\n\n$$A\\cdot \\frac{3}{16}=150$$\n\n**Part 2: Solve.**\n\n$$A=800$$\n\nThe recovered illuminance is $I(d)=800 d^{-2}$."
+  },
+  {
+    "id": "math-8-51",
+    "case_id": "MATH 8.51",
+    "title": "Audit Cost With Economies of Scale",
+    "context": "An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so the bill grows more slowly than the number of accounts.",
+      "Doubling the number of accounts doubles the practice bill.",
+      "After $81$ accounts the bill is already above $2500$.",
+      "An extra account adds more to the bill after eighty-one accounts than after sixteen.",
+      "A bill of $12500$ already requires more than $600$ accounts."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered exponent $\\frac{3}{4}$. An exponent smaller than one means the bill still rises with the book, yet it lags the account count.\n\n$$\\frac{3}{4}<1$$\n\nThe bill grows more slowly than the number of accounts, so the statement is True.",
+      "**B.** → False\n\nDoubling the number of accounts would double the bill only if the exponent were $1$. The overview recovered $r=\\frac{3}{4}$, so\n\n$$\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}$$\n\n$$2^{\\frac{3}{4}}\\approx 1.682$$\n\nThat is not $2$, so the statement is False.",
+      "**C.** → True\n\nThis is a level of the bill at $81$ accounts. The overview recovered $C(n)=100 n^{\\frac{3}{4}}$.\n\n$$C(81)=100\\cdot 81^{\\frac{3}{4}}$$\n\n$$81^{\\frac{3}{4}}=27$$\n\n$$C(81)=2700$$\n\nTwo thousand seven hundred sits above $2500$, so the statement is True.",
+      "**D.** → False\n\nAn extra account is the derivative of the bill. The overview recovered $C(n)=100 n^{\\frac{3}{4}}$, so\n\n$$C'(n)=75 n^{-\\frac{1}{4}}$$\n\nAt sixteen accounts:\n\n$$C'(16)=\\frac{75}{2}$$\n\nAt eighty-one accounts:\n\n$$C'(81)=25$$\n\nBecause $25<\\frac{75}{2}$, an extra account adds less after eighty-one than after sixteen, so the statement is False.",
+      "**E.** → True\n\nThis letter inverts a bill of $12500$. The overview recovered $C(n)=100 n^{\\frac{3}{4}}$.\n\n$$100 n^{\\frac{3}{4}}=12500$$\n\n$$n^{\\frac{3}{4}}=125$$\n\n$$125=5^{3}$$\n\n$$n=5^{4}$$\n\n$$n=625$$\n\nSix hundred and twenty-five sits above $600$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 51,
+    "solution_overview": "Audit cost follows $C(n)=A n^{0.75}$ for $n>0$ accounts. The bill rises by $1900$ when engagement size rises from $16$ to $81$ accounts.\n\n**Part 1: Translate.**\n\nThe exponent $\\frac{3}{4}$ is given, so the recorded rise pins $A$. Both sizes are fourth powers:\n\n$$16^{\\frac{3}{4}}=8, \\qquad 81^{\\frac{3}{4}}=27$$\n\n$$A(27-8)=1900$$\n\n**Part 2: Solve.**\n\n$$19A=1900$$\n\n$$A=100$$\n\nThe recovered bill is $C(n)=100 n^{\\frac{3}{4}}$."
+  },
+  {
+    "id": "math-8-52",
+    "case_id": "MATH 8.52",
+    "title": "Airborne Particle Concentration Downwind",
+    "context": "Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Concentration falls faster than inverse-linear decay.",
+      "Concentration per metre of distance is the same at every downwind range.",
+      "At $100$ metres the concentration is already below $0.5$ microgram per cubic metre.",
+      "The distance that produces a given concentration is itself a power of that concentration.",
+      "At $4$ metres the nearer monitor still reads under $45$ micrograms per cubic metre."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nInverse-linear decay would carry exponent $-1$. The overview recovered exponent $-\\frac{3}{2}$.\n\n$$-\\frac{3}{2}<-1$$\n\nThe doubling factor is then $2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$, steeper than $\\frac{1}{2}$. Concentration falls faster than inverse-linear decay, so the statement is True.",
+      "**B.** → False\n\nConcentration per metre is the intensity $c(x)/x$. The overview recovered $c(x)=400 x^{-\\frac{3}{2}}$, so\n\n$$\\frac{c(x)}{x}=400 x^{-\\frac{5}{2}}$$\n\nThe leftover exponent is not $0$, so the intensity still depends on range, so the statement is False.",
+      "**C.** → True\n\nThis is a level of concentration at $100$ metres. The overview recovered $c(x)=400 x^{-\\frac{3}{2}}$.\n\n$$c(100)=400\\cdot 100^{-\\frac{3}{2}}$$\n\n$$100^{-\\frac{3}{2}}=\\frac{1}{1000}$$\n\n$$c(100)=0.4$$\n\nFour tenths sits below one half, so the statement is True.",
+      "**D.** → True\n\nA nonzero power inverts to another power. The overview recovered $c=400 x^{-\\frac{3}{2}}$, so isolating distance raises both sides to the reciprocal $-\\frac{2}{3}$:\n\n$$x=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}$$\n\nDistance needed for a given concentration is still a monomial in $c$, so the statement is True.",
+      "**E.** → False\n\nThis is a level at the nearer monitor. The overview recovered $c(x)=400 x^{-\\frac{3}{2}}$.\n\n$$c(4)=400\\cdot 4^{-\\frac{3}{2}}$$\n\n$$4^{-\\frac{3}{2}}=\\frac{1}{8}$$\n\n$$c(4)=50$$\n\nFifty is not under forty-five, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 52,
+    "solution_overview": "Concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre at distance $x>0$ metres. A monitor at $4$ metres reads $43.75$ more than a monitor at $16$ metres.\n\n**Part 1: Translate.**\n\nThe exponent $-\\frac{3}{2}$ is given, so the recorded gap pins $A$:\n\n$$4^{-\\frac{3}{2}}=\\frac{1}{8}, \\qquad 16^{-\\frac{3}{2}}=\\frac{1}{64}$$\n\n$$A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=43.75$$\n\n$$A\\cdot \\frac{7}{64}=43.75$$\n\n**Part 2: Solve.**\n\n$$A=400$$\n\nThe recovered concentration is $c(x)=400 x^{-\\frac{3}{2}}$."
+  },
+  {
+    "id": "math-8-53",
+    "case_id": "MATH 8.53",
+    "title": "Storm Surge Feeding a Cubic Loss Index",
+    "context": "A reinsurer models coastal losses in two stages. Storm surge height is $s(w)=0.5 w^{0.5}$ metres for a wind speed of $w>0$, and the loss index rises with the cube of surge height, $L(s)=32 s^{3}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After both stages, the loss index is itself a power of wind speed.",
+      "Doubling the wind speed doubles the loss index.",
+      "At a wind speed of $64$ the loss index is already above $2000$.",
+      "The composed exponent exceeds one, so losses accelerate as the wind strengthens.",
+      "A loss of $1000$ already requires a wind speed above $50$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $L(w)=4 w^{\\frac{3}{2}}$. A monomial in $w$ is a power of wind speed. There is no leftover constant and no logarithm, so the statement is True.",
+      "**B.** → False\n\nDoubling the wind speed is the multiplier $k=2$. The overview recovered exponent $\\frac{3}{2}$, so\n\n$$\\frac{L(2w)}{L(w)}=2^{\\frac{3}{2}}$$\n\n$$2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.828$$\n\nThat is not $2$, so the statement is False.",
+      "**C.** → True\n\nThis is a level of the composed loss at wind speed $64$. The overview recovered $L(w)=4 w^{\\frac{3}{2}}$.\n\n$$L(64)=4\\cdot 64^{\\frac{3}{2}}$$\n\n$$64^{\\frac{3}{2}}=512$$\n\n$$L(64)=2048$$\n\nTwo thousand and forty-eight sits above $2000$, so the statement is True.",
+      "**D.** → True\n\nThe overview recovered composed exponent $\\frac{3}{2}$.\n\n$$\\frac{3}{2}>1$$\n\nLosses accelerate as the wind strengthens, so the statement is True.",
+      "**E.** → False\n\nA loss of $1000$ inverts the recovered composition $L(w)=4 w^{\\frac{3}{2}}$.\n\n$$4 w^{\\frac{3}{2}}=1000$$\n\n$$w^{\\frac{3}{2}}=250$$\n\n$$w=250^{\\frac{2}{3}}\\approx 39.69$$\n\nThat wind speed does not sit above $50$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 53,
+    "solution_overview": "Storm surge is $s(w)=0.5 w^{0.5}$ metres for wind speed $w>0$, and the loss index is $L(s)=32 s^{3}$.\n\n**Part 1: Translate.**\n\nComposing the two stages substitutes the surge into the loss cube:\n\n$$L(w)=32\\left(0.5 w^{0.5}\\right)^{3}$$\n\n$$L(w)=32\\cdot 0.125\\cdot w^{1.5}$$\n\n**Part 2: Solve.**\n\n$$L(w)=4 w^{\\frac{3}{2}}$$\n\nThe recovered composition is a monomial in wind speed, coefficient $4$ and exponent $\\frac{3}{2}$."
+  },
+  {
+    "id": "math-8-54",
+    "case_id": "MATH 8.54",
+    "title": "Market Impact of a Block Trade",
+    "context": "A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Impact grows more slowly than order size.",
+      "Doubling order size doubles the scaled impact charge.",
+      "At $0.16$ ADV, impact is already above $20$ basis points.",
+      "Once the scaled charge overtakes the notional fee, it stays larger at every bigger order.",
+      "At $0.25$ ADV the scaled charge is already above $10$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $I(v)=60 v^{\\frac{1}{2}}$. The exponent on order size is $\\frac{1}{2}$.\n\n$$\\frac{1}{2}<1$$\n\nImpact grows more slowly than order size, so the statement is True.",
+      "**B.** → False\n\nThe scaled impact charge is $vI(v)$. The overview recovered $vI(v)=60 v^{\\frac{3}{2}}$, so doubling order size multiplies the scaled charge by\n\n$$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}$$\n\n$$2^{\\frac{3}{2}}\\approx 2.828$$\n\nThat is not $2$, so the statement is False.",
+      "**C.** → True\n\nThis is a level of impact at $0.16$ ADV. The overview recovered $I(v)=60 v^{\\frac{1}{2}}$.\n\n$$I(0.16)=60\\cdot 0.16^{\\frac{1}{2}}$$\n\n$$0.16^{\\frac{1}{2}}=0.4$$\n\n$$I(0.16)=24$$\n\nTwenty-four sits above $20$, so the statement is True.",
+      "**D.** → True\n\nThe scaled charge overtakes the notional fee where $60 v^{\\frac{3}{2}}=30v$. The overview recovered those two curves, so for $v>0$\n\n$$2 v^{\\frac{1}{2}}=1$$\n\n$$v=\\frac{1}{4}$$\n\nThe leftover exponent on the scaled charge is $\\frac{3}{2}>1$, so past $v=\\frac{1}{4}$ the scaled charge stays larger at every bigger order, so the statement is True.",
+      "**E.** → False\n\nThis is a level of the scaled charge at $0.25$ ADV. The overview recovered $vI(v)=60 v^{\\frac{3}{2}}$.\n\n$$0.25\\cdot I(0.25)=60\\cdot 0.25^{\\frac{3}{2}}$$\n\n$$0.25^{\\frac{3}{2}}=0.125$$\n\n$$60\\cdot 0.125=7.5$$\n\nSeven point five does not sit above $10$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 54,
+    "solution_overview": "Price impact is $I(v)=A v^{0.5}$ basis points for order size $v>0$. Increasing an order from $0.04$ ADV to $0.09$ ADV adds $6$ basis points. The scaled impact charge is $vI(v)$, and a notional fee is $F(v)=30v$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the recorded rise pins $A$:\n\n$$A\\bigl(0.09^{\\frac{1}{2}}-0.04^{\\frac{1}{2}}\\bigr)=6$$\n\n$$A(0.3-0.2)=6$$\n\n**Part 2: Solve.**\n\n$$0.1A=6, \\qquad A=60$$\n\nThe recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. The scaled charge is then\n\n$$vI(v)=60 v^{\\frac{3}{2}}.$$"
+  },
+  {
+    "id": "math-8-55",
+    "case_id": "MATH 8.55",
+    "title": "Allometric Energy Use Across Livestock Weights",
+    "context": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The body mass that produces a given daily energy is a power function of that energy.",
+      "Energy use per kilogram falls as body mass rises.",
+      "A $64$ kg animal already uses more than $150$ energy units a day.",
+      "Combining two equal animals into one animal of twice the mass leaves total energy use unchanged.",
+      "A $216$ kg animal still uses under $400$ energy units a day."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA nonzero power inverts to another power. The overview recovered $E=10 m^{\\frac{2}{3}}$, so isolating mass gives\n\n$$m=\\left(\\frac{E}{10}\\right)^{\\frac{3}{2}}$$\n\nBody mass as a function of daily energy is still a monomial in $E$, so the statement is True.",
+      "**B.** → True\n\nEnergy use per kilogram is the average $E/m$. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$, so\n\n$$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}}$$\n\nThe leftover exponent is negative, so energy use per kilogram falls as body mass rises, so the statement is True.",
+      "**C.** → True\n\nThis is a level of energy at $64$ kg. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$.\n\n$$E(64)=10\\cdot 64^{\\frac{2}{3}}$$\n\n$$64^{\\frac{2}{3}}=16$$\n\n$$E(64)=160$$\n\nOne hundred and sixty sits above $150$, so the statement is True.",
+      "**D.** → False\n\nTwo equal animals use $2E(m)$. One animal of twice the mass uses $E(2m)$. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$, so\n\n$$\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}$$\n\n$$2^{\\frac{2}{3}}<2$$\n\nCombining the two animals cuts total energy use, so the statement is False.",
+      "**E.** → True\n\nThis is a level of energy at $216$ kg. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$.\n\n$$E(216)=10\\cdot 216^{\\frac{2}{3}}$$\n\n$$216^{\\frac{2}{3}}=36$$\n\n$$E(216)=360$$\n\nThree hundred and sixty sits under $400$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 55,
+    "solution_overview": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses $70$ more energy units per day than a $27$ kg animal. Herd totals add individual uses.\n\n**Part 1: Translate.**\n\nThe exponent $\\frac{2}{3}$ is given, so the recorded gap pins $A$. Both masses are cubes:\n\n$$27^{\\frac{2}{3}}=9, \\qquad 64^{\\frac{2}{3}}=16$$\n\n$$A(16-9)=70$$\n\n**Part 2: Solve.**\n\n$$7A=70, \\qquad A=10$$\n\nThe recovered energy is $E(m)=10 m^{\\frac{2}{3}}$."
+  },
+  {
+    "id": "math-8-56",
+    "case_id": "MATH 8.56",
+    "title": "Retail Catchment Under a Distance-Decay Law",
+    "context": "Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "A farther zone always supplies fewer visitors than a nearer zone.",
+      "Footfall follows an inverse-square law of driving distance.",
+      "A zone $9$ kilometres away still supplies more than $100$ visitors a week.",
+      "Core catchment already ends before $11$ kilometres.",
+      "An extra kilometre of drive cuts more visitors far from the park than near it."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $f(d)=3200 d^{-1.5}$. The exponent is negative, so $f$ is strictly decreasing for $d>0$. A farther zone always supplies fewer visitors than a nearer zone, so the statement is True.",
+      "**B.** → False\n\nAn inverse-square law would carry exponent $-2$. The overview recovered exponent $-1.5$.\n\n$$-1.5\\neq -2$$\n\nFootfall is steeper than inverse-linear and shallower than inverse-square, so the statement is False.",
+      "**C.** → True\n\nThis is a level of footfall at $9$ kilometres. The overview recovered $f(d)=3200 d^{-1.5}$.\n\n$$f(9)=\\frac{3200}{9^{1.5}}$$\n\n$$9^{1.5}=27$$\n\n$$f(9)=\\frac{3200}{27}\\approx 118.5$$\n\nOne hundred and eighteen sits above $100$, so the statement is True.",
+      "**D.** → True\n\nCore catchment ends where $f(d)=100$. The overview recovered $f(d)=3200 d^{-1.5}$, so\n\n$$3200 d^{-1.5}=100$$\n\n$$d^{1.5}=32$$\n\n$$d=32^{\\frac{2}{3}}\\approx 10.08$$\n\nThat boundary sits before $11$ kilometres, so the statement is True.",
+      "**E.** → False\n\nAn extra kilometre is the size of the derivative. The overview recovered $f(d)=3200 d^{-1.5}$, so\n\n$$f'(d)=-4800 d^{-2.5}$$\n\nThe leftover exponent on $\\lvert f'(d)\\rvert$ is negative, so the cut is larger near the park than far from it. An extra kilometre does not cut more visitors far from the park, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 56,
+    "solution_overview": "Weekly footfall follows $f(d)=A d^{-1.5}$ visitors from a zone $d>0$ kilometres away. A zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. Core catchment means at least $100$ visitors a week.\n\n**Part 1: Translate.**\n\nThe exponent $-1.5$ is given, so the recorded gap pins $A$:\n\n$$4^{1.5}=8, \\qquad 16^{1.5}=64$$\n\n$$\\frac{A}{8}-\\frac{A}{64}=350$$\n\n$$\\frac{7A}{64}=350$$\n\n**Part 2: Solve.**\n\n$$A=3200$$\n\nThe recovered footfall is $f(d)=3200 d^{-1.5}$."
+  },
+  {
+    "id": "math-8-57",
+    "case_id": "MATH 8.57",
+    "title": "Rooftop Solar Output Across Two Installed Arrays",
+    "context": "Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Output grows more slowly than the installed area.",
+      "Expanding the $225$ m² array to $450$ m² would push output above $520$ kWh.",
+      "Output per square metre falls as the array grows.",
+      "To double the $240$ kWh output, the $100$ m² array must more than double in area.",
+      "A $400$ m² array already delivers more than $470$ kWh."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $r=\\frac{1}{2}$. An exponent smaller than one means multiplying area by $k$ multiplies output only by $k^{r}$.\n\n$$\\frac{1}{2}<1$$\n\nOutput grows more slowly than the installed area, so the statement is True.",
+      "**B.** → False\n\nExpanding $225$ m² to $450$ m² is a level of the recovered output $y(a)=24 a^{\\frac{1}{2}}$.\n\n$$y(450)=24\\cdot 450^{\\frac{1}{2}}$$\n\n$$450^{\\frac{1}{2}}=15\\sqrt{2}\\approx 21.21$$\n\n$$y(450)\\approx 509.1$$\n\nFive hundred and nine does not sit above $520$, so the statement is False.",
+      "**C.** → True\n\nOutput per square metre is the average $y/a$. The overview recovered $y(a)=24 a^{\\frac{1}{2}}$, so\n\n$$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so output per square metre falls as the array grows, so the statement is True.",
+      "**D.** → True\n\nDoubling the $240$ kWh output means $y(a)=480$. The overview recovered $y(a)=24 a^{\\frac{1}{2}}$, so\n\n$$24 a^{\\frac{1}{2}}=480$$\n\n$$a^{\\frac{1}{2}}=20$$\n\n$$a=400$$\n\nArea must go from $100$ to $400$, which is more than a doubling, so the statement is True.",
+      "**E.** → True\n\nThis is a level of output at $400$ m². The overview recovered $y(a)=24 a^{\\frac{1}{2}}$.\n\n$$y(400)=24\\cdot 20=480$$\n\nFour hundred and eighty sits above $470$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 57,
+    "solution_overview": "Daily output follows $y(a)=A a^{r}$ kilowatt-hours for panel area $a>0$ square metres. A $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh.\n\n**Part 1: Translate.**\n\nTwo unknowns need both arrays. The ratio cancels $A$:\n\n$$\\left(\\frac{225}{100}\\right)^{r}=\\frac{360}{240}$$\n\n$$2.25^{r}=1.5$$\n\nBecause $1.5=2.25^{\\frac{1}{2}}$,\n\n$$r=\\frac{1}{2}$$\n\nThe hundred-square-metre array then pins $A$:\n\n$$A\\cdot 100^{\\frac{1}{2}}=240$$\n\n**Part 2: Solve.**\n\n$$A\\cdot 10=240, \\qquad A=24$$\n\nThe recovered output is $y(a)=24 a^{\\frac{1}{2}}$."
+  },
+  {
+    "id": "math-8-58",
+    "case_id": "MATH 8.58",
+    "title": "Battery Cell Costs Down a Learning Curve",
+    "context": "Unit cost for battery cells follows $c(N)=A N^{b}$ euros, where $N>0$ is cumulative output in thousands of cells. Two milestones are recorded: at $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is unit cost multiplied by volume. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling cumulative volume halves the unit cost.",
+      "Unit cost falls as volume grows, but cumulative spend still rises.",
+      "At $1600$ thousand cells the unit cost is already below $25$ euros.",
+      "Quadrupling cumulative volume from $100$ to $400$ thousand cells more than doubles cumulative spend.",
+      "At $25$ thousand cells the unit cost is still above $150$ euros."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nDoubling cumulative volume is the multiplier $k=2$. The overview recovered $b=-\\frac{1}{2}$, so\n\n$$\\frac{c(2N)}{c(N)}=2^{-\\frac{1}{2}}$$\n\n$$2^{-\\frac{1}{2}}\\approx 0.707$$\n\nThat is not $\\frac{1}{2}$, so the statement is False.",
+      "**B.** → True\n\nThe overview recovered $c(N)=800 N^{-\\frac{1}{2}}$ and $S(N)=800 N^{\\frac{1}{2}}$. The leftover exponent on unit cost is negative, so unit cost falls. The leftover exponent on spend is positive, so cumulative spend still rises. At the two milestones:\n\n$$S(100)=8000, \\qquad S(400)=16000$$\n\nSpend rises while unit cost falls, so the statement is True.",
+      "**C.** → True\n\nThis is a level of unit cost at $1600$ thousand cells. The overview recovered $c(N)=800 N^{-\\frac{1}{2}}$.\n\n$$c(1600)=800\\cdot 1600^{-\\frac{1}{2}}$$\n\n$$1600^{-\\frac{1}{2}}=\\frac{1}{40}$$\n\n$$c(1600)=20$$\n\nTwenty sits below $25$, so the statement is True.",
+      "**D.** → False\n\nCumulative spend is $S=N\\,c(N)$. The overview recovered $S(N)=800 N^{\\frac{1}{2}}$, so quadrupling volume multiplies spend by\n\n$$\\frac{S(4N)}{S(N)}=4^{\\frac{1}{2}}=2$$\n\nSpend doubles, it does not more than double, so the statement is False.",
+      "**E.** → True\n\nThis is a level of unit cost at $25$ thousand cells. The overview recovered $c(N)=800 N^{-\\frac{1}{2}}$.\n\n$$c(25)=800\\cdot 25^{-\\frac{1}{2}}$$\n\n$$25^{-\\frac{1}{2}}=\\frac{1}{5}$$\n\n$$c(25)=160$$\n\nOne hundred and sixty sits above $150$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 58,
+    "solution_overview": "Unit cost follows $c(N)=A N^{b}$ euros at cumulative volume $N>0$ thousand cells. At $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is $S=N\\,c(N)$.\n\n**Part 1: Translate.**\n\nTwo unknowns need both milestones. The ratio cancels $A$:\n\n$$\\left(\\frac{400}{100}\\right)^{b}=\\frac{40}{80}$$\n\n$$4^{b}=\\frac{1}{2}$$\n\nBecause $4^{\\frac{1}{2}}=2$ and $4^{-\\frac{1}{2}}=\\frac{1}{2}$,\n\n$$b=-\\frac{1}{2}$$\n\nThe first milestone then pins $A$:\n\n$$A\\cdot 100^{-\\frac{1}{2}}=80$$\n\n**Part 2: Solve.**\n\n$$A\\cdot \\frac{1}{10}=80, \\qquad A=800$$\n\nThe recovered unit cost is $c(N)=800 N^{-\\frac{1}{2}}$. Cumulative spend is then\n\n$$S(N)=800 N^{\\frac{1}{2}}.$$"
+  },
+  {
+    "id": "math-8-59",
+    "case_id": "MATH 8.59",
+    "title": "Sediment Transport Driven by Channel Discharge",
+    "context": "Sediment transport in a channel follows $S(v)=A v^{3}$ tonnes per day, where $v>0$ is flow velocity, and a gauged run at $v=3$ carried $135$ tonnes per day. Velocity itself depends on discharge through $v(q)=\\frac{q^{0.5}}{2}$. The channel's stability limit is $5000$ tonnes per day. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the discharge more than doubles sediment transport.",
+      "After both stages, transport is a power function of discharge.",
+      "A discharge of $400$ already pushes transport above $4500$ tonnes per day.",
+      "Doubling the flow velocity doubles sediment transport.",
+      "At discharge $64$, transport is still under $300$ tonnes per day."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nDoubling the discharge is the multiplier $k=2$. The overview recovered composed exponent $1.5$, so\n\n$$\\frac{S(2q)}{S(q)}=2^{1.5}$$\n\n$$2^{1.5}=2\\sqrt{2}\\approx 2.828$$\n\nThat factor sits above $2$, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $S(q)=0.625 q^{1.5}$. A monomial in $q$ is a power of discharge. There is no leftover constant and no logarithm, so the statement is True.",
+      "**C.** → True\n\nThis is a level of transport at discharge $400$. The overview recovered $S(q)=0.625 q^{1.5}$.\n\n$$S(400)=0.625\\cdot 400^{1.5}$$\n\n$$400^{1.5}=8000$$\n\n$$S(400)=5000$$\n\nFive thousand sits above $4500$, so the statement is True.",
+      "**D.** → False\n\nDoubling the flow velocity is the multiplier $k=2$ on the outer cube. The overview recovered $S(v)=5 v^{3}$, so\n\n$$\\frac{S(2v)}{S(v)}=2^{3}=8$$\n\nThat is not $2$, so the statement is False.",
+      "**E.** → False\n\nThis is a level of transport at discharge $64$. The overview recovered $S(q)=0.625 q^{1.5}$.\n\n$$S(64)=0.625\\cdot 64^{1.5}$$\n\n$$64^{1.5}=512$$\n\n$$S(64)=320$$\n\nThree hundred and twenty does not sit under $300$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 59,
+    "solution_overview": "Sediment transport is $S(v)=A v^{3}$ tonnes per day at flow velocity $v>0$, and a gauged run at $v=3$ carried $135$ tonnes per day. Velocity depends on discharge through $v(q)=\\frac{q^{0.5}}{2}$.\n\n**Part 1: Translate.**\n\nThe gauged run pins $A$:\n\n$$A\\cdot 3^{3}=135$$\n\n$$27A=135$$\n\n**Part 2: Solve.**\n\n$$A=5$$\n\nThe recovered transport in velocity is $S(v)=5 v^{3}$. Composing with $v(q)=\\frac{q^{0.5}}{2}$ gives\n\n$$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}=0.625 q^{1.5}.$$"
+  },
+  {
+    "id": "math-8-60",
+    "case_id": "MATH 8.60",
+    "title": "Highly Elastic Demand Under a Price Indexation",
+    "context": "A commodity trader faces demand $q(p)=A p^{-3}$ units at a price $p>0$, and a price of $2$ clears $500$ units. A proposed indexation would raise the price by $10\\%$ across the board, and the trader wants the effect on both volume and revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue is a power function of price.",
+      "Raising the price always cuts revenue.",
+      "At a price of $2.50$, revenue is already below $700$.",
+      "A price rise of $10\\%$ cuts quantity by more than $20\\%$.",
+      "Because demand is highly elastic, a price rise raises revenue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nRevenue is price times quantity. The overview recovered $R(p)=4000 p^{-2}$. A monomial in $p$ is a power of price. There is no leftover constant and no logarithm, so the statement is True.",
+      "**B.** → True\n\nThe overview recovered $R(p)=4000 p^{-2}$. The leftover exponent is negative, so raising the price cuts revenue for every $p>0$. Differentiating:\n\n$$R'(p)=-8000 p^{-3}<0$$\n\nRevenue always falls as the price rises, so the statement is True.",
+      "**C.** → True\n\nThis is a level of revenue at a price of $2.50$. The overview recovered $R(p)=4000 p^{-2}$.\n\n$$R(2.5)=4000\\cdot (2.5)^{-2}$$\n\n$$(2.5)^{2}=6.25$$\n\n$$R(2.5)=640$$\n\nSix hundred and forty sits below $700$, so the statement is True.",
+      "**D.** → True\n\nA $10\\%$ price rise is the multiplier $k=1.1$. The overview recovered demand exponent $-3$, so\n\n$$\\frac{q(1.1p)}{q(p)}=1.1^{-3}$$\n\n$$1.1^{-3}\\approx 0.7513$$\n\nQuantity falls by about $24.9\\%$, which is more than $20\\%$, so the statement is True.",
+      "**E.** → False\n\nThe claim treats high elasticity as a reason for revenue to rise. The overview recovered $R(p)=4000 p^{-2}$. The leftover exponent is negative, so a price rise cuts $pq$. Elastic demand of exponent $-3$ is why revenue falls, not why it would rise, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 60,
+    "solution_overview": "Demand is $q(p)=A p^{-3}$ units at a price $p>0$, and a price of $2$ clears $500$ units. Revenue is $R=pq$. A proposed indexation raises the price by $10\\%$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the observed pair pins $A$:\n\n$$A\\cdot 2^{-3}=500$$\n\n$$A\\cdot \\frac{1}{8}=500$$\n\n**Part 2: Solve.**\n\n$$A=4000$$\n\nThe recovered demand is $q(p)=4000 p^{-3}$. Revenue along the curve is then\n\n$$R(p)=4000 p^{-2}.$$"
+  }
+]
