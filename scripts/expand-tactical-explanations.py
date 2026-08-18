@@ -11,6 +11,13 @@ import re
 from pathlib import Path
 from typing import Any
 
+from parse_bbe import (
+    ABSOLUTE_WORD_RE,
+    classify_econ,
+    extract_econ_application,
+    format_econ_explanation,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "src" / "data"
 
@@ -303,30 +310,17 @@ def expand_one(
     case_id: str,
     index: int,
 ) -> str:
-    if already_expanded(short_expl):
-        parsed_true, body = parse_expl(short_expl)
-        prefix = "TRUE" if (parsed_true if parsed_true is not None else is_true) else "FALSE"
-        return f"{prefix} — {body}"
-
     _, body = parse_expl(short_expl)
     if not body:
         body = "See the statement and answer key."
-
-    seed = stable_index(case_id, str(index), statement[:40])
-    kind = classify(statement, body, subsection)
-    prefix = "TRUE" if is_true else "FALSE"
-
-    parts: list[str] = [
-        f"{prefix} — {opening_line(is_true, statement, seed)}",
-        concept_paragraph(subsection, kind, seed),
-        application_paragraph(statement, body, is_true, kind, seed + 7),
-    ]
-    extra = misconception_paragraph(statement, is_true, kind, seed + 11)
-    if extra:
-        parts.append(extra)
-    parts.append(conclusion_paragraph(is_true, seed + 13))
-
-    return "\n\n".join(parts)
+    if already_expanded(short_expl):
+        application = extract_econ_application(short_expl, statement)
+    else:
+        application = body
+    kind = classify_econ(statement, application, subsection)
+    hits = ABSOLUTE_WORD_RE.findall(statement) if not is_true else []
+    trap_word = hits[0].lower() if hits else None
+    return format_econ_explanation(is_true, statement, application, kind, trap_word)
 
 
 def process_file(path: Path, dry_run: bool = False) -> dict[str, int]:
@@ -343,10 +337,6 @@ def process_file(path: Path, dry_run: bool = False) -> dict[str, int]:
         new_expl: list[str] = []
         for i, stmt in enumerate(statements):
             old = expls[i] if i < len(expls) else ""
-            if already_expanded(old):
-                stats["skipped"] += 1
-                new_expl.append(old)
-                continue
             key = bool(keys[i]) if i < len(keys) else False
             new_expl.append(expand_one(stmt, key, old, subsection, case_id, i))
             stats["expanded"] += 1

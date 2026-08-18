@@ -12,6 +12,8 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 
+from parse_bbe import format_math_explanation
+
 ROOT = Path(__file__).resolve().parents[1]
 EXTRACT_DIR = ROOT / "textbook" / "output" / "ch12_extract"
 LETTERS = "ABCDE"
@@ -538,7 +540,11 @@ def _letter_bodies(block: str) -> tuple[dict[str, bool], dict[str, str]]:
         letter = parts[i]
         verdict = parts[i + 1].upper() == "TRUE"
         body = clean_pdf_text(parts[i + 2])
-        body = re.split(_WRAPUP_RE, body, maxsplit=1)[0]
+        body = re.split(
+            _WRAPUP_RE + r"|Only statement [A-E] is true",
+            body,
+            maxsplit=1,
+        )[0]
         body = re.sub(r"\s+", " ", body).strip()
         if letter not in verdicts:
             verdicts[letter] = verdict
@@ -561,7 +567,9 @@ def explanation_arithmetic_flags(label: str, expls: list[str]) -> list[str]:
         for m in _ARITH_RE.finditer(text or ""):
             val_s = m.group("val").replace(",", "").replace("$", "")
             thr_s = m.group("thr").replace(",", "").replace("$", "")
-            if not val_s or not thr_s:
+            # Ignore hypothetical student-error arithmetic ("would get 39%, which is greater").
+            prefix = (text or "")[: m.start()]
+            if re.search(r"\bwould\b[^.]*$", prefix[-80:], flags=re.I):
                 continue
             val = float(val_s)
             thr = float(thr_s)
@@ -574,38 +582,8 @@ def explanation_arithmetic_flags(label: str, expls: list[str]) -> list[str]:
     return flags
 
 
-def format_pdf_explanation(letter: str, is_true: bool, body: str) -> str:
-    verdict = "True" if is_true else "False"
-    text = (body or "").strip()
-    formula = ""
-    fm = re.search(r"\bFormula:\s*(.+)$", text)
-    if fm:
-        formula = re.split(_WRAPUP_RE, fm.group(1), maxsplit=1)[0].strip().rstrip(".")
-        text = text[: fm.start()].strip()
-    text = re.sub(r"\s+", " ", text).strip()
-    sentences = [
-        s.strip()
-        for s in re.split(r"(?<=[.!?])\s+(?=[A-Z(])", text)
-        if s.strip()
-    ]
-    takeaway = sentences[-1] if sentences else f"The statement is {verdict.lower()}."
-    if len(takeaway) > 240:
-        takeaway = takeaway[:237].rsplit(" ", 1)[0] + "."
-    lines = [f"Statement {letter} — {verdict}", "", text or f"The statement is {verdict.lower()}."]
-    if formula:
-        tex = formula
-
-        def _p_wrap(m: re.Match[str]) -> str:
-            inner = m.group(1)
-            if "=" in inner or "\\" in inner:
-                return f"P({inner})"
-            return f"P(\\text{{{inner}}})"
-
-        tex = re.sub(r"\bP\(([^)]+)\)", _p_wrap, tex)
-        tex = tex.replace(" / ", "/").replace(" × ", "\\times ")
-        lines.extend(["", f"$$\n{tex}\n$$"])
-    lines.extend(["", f"Takeaway: {takeaway}"])
-    return "\n".join(lines)
+def format_pdf_explanation(letter: str, is_true: bool, body: str, statement: str = "") -> str:
+    return format_math_explanation(letter, is_true, body, statement)
 
 
 def find_pdf_answer_block(text: str, qnum: int) -> str | None:
@@ -685,8 +663,14 @@ def overlay_pdf_explanations(
             mismatches.append(
                 f"{label} Q{i} ({task.get('title','')}): stored {stored} vs PDF {pdf['verdicts']}"
             )
+        stmts = task.get("statements") or []
         task["tactical_explanations"] = [
-            format_pdf_explanation(L, stored[j] if stored else pdf["verdicts"][j], pdf["bodies"][j])
+            format_pdf_explanation(
+                L,
+                stored[j] if stored else pdf["verdicts"][j],
+                pdf["bodies"][j],
+                stmts[j] if j < len(stmts) else "",
+            )
             for j, L in enumerate(LETTERS)
         ]
         mismatches.extend(
