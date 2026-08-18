@@ -1680,6 +1680,13 @@ function MathTaskCard({
       <h2 className="font-display text-lg font-bold tracking-tight">{task.title}</h2>
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
         <MathProse text={task.context} className="text-sm" />
+        {task.figure ? (
+          <img
+            src={task.figure}
+            alt=""
+            className="mx-auto mt-3 max-h-80 w-full max-w-lg rounded-xl border border-border bg-white object-contain p-2"
+          />
+        ) : null}
         {task.tables_markdown ? (
           <div className="overflow-x-auto rounded-xl">
             <MathProse text={task.tables_markdown} className="text-sm" />
