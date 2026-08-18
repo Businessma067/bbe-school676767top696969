@@ -50,7 +50,7 @@ Intersection is the stricter of the two combining operations: a number has to cl
 
 **1.** $1$ and $2$ sit in $A$ but miss $B$, so they cannot survive an intersection. $6$ and $7$ sit in $B$ but miss $A$, so they cannot survive either. The three numbers that sit in both are $3$, $4$, and $5$.
 
-**2.** A solver who instead ran a union would keep $1$ and $2$ as well and land on $\\{1,2,3,4,5,6,7\\}$, a completely different set. The claim is naming the overlap, not the combined list.
+**2.** Instead running a union would keep $1$ and $2$ as well and land on $\\{1,2,3,4,5,6,7\\}$, a completely different set. That is the fork: $1$ belongs to the recovered isolation, $\\{1,2,3,4,5,6,7\\}$ belongs to the discarded mix. The claim is naming the overlap, not the combined list.
 
 **3.** Order of writing does not matter in a set, so $\\{5,4,3\\}$ would still be the same intersection. The claimed roster is exactly that overlap.
 
@@ -63,7 +63,7 @@ A union is forced to contain every member of each input. The overview already as
 
 **2.** The dropped $9$ is not a rounding of a boundary. It is a member of $C$. Nearness to $8$ is not a licence to delete it.
 
-**3.** A solver who copied $A$'s upper end $5$ and then added $C$ only up to $8$ is treating the union as a closed interval written by hand rather than a membership test. Sets here are lists, not intervals.
+**3.** Copying $A$'s upper end $5$ and then adding $C$ only up to $8$ is treating the union as a closed interval written by hand rather than a membership test. The recovered comparison therefore keeps $A$ and does not substitute $8$. Sets here are lists, not intervals.
 
 The claimed roster is one element too small, so the statement is False.`,
       `**C.** → True
@@ -85,7 +85,7 @@ Difference $A\\setminus C$ deletes a member of $A$ only when that member also si
 
 **2.** Nearness to $C$'s $5$ is not membership. The claimed $\\{1,2,3\\}$ is simply one element too small, the same kind of off-by-one that broke the union in B, now on the other operation.
 
-**3.** A solver who confused difference with intersection would have kept only $\\{5\\}$. A solver who confused it with $C\\setminus A$ would have kept $\\{6,7,8,9\\}$. Neither is this claim; this claim is $A$ minus $C$ with $4$ wrongly deleted.
+**3.** Confusing difference with intersection would have kept only $\\{5\\}$. The recovered isolation is checked against the claim using $\\{5\\}$, which is the figure the sessions actually produce. Confusing it with $C\\setminus A$ would have kept $\\{6,7,8,9\\}$. So the letter reads the claim against $C\\setminus A$; $\\{6,7,8,9\\}$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $C\\setminus A$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Neither is this claim; this claim is $A$ minus $C$ with $4$ wrongly deleted.
 
 The recovered difference is $\\{1,2,3,4\\}$, so the statement is False.`,
       `**E.** → False
@@ -137,7 +137,7 @@ Set equality asks whether two collections have the same members, not whether the
 
 **1.** The integer $3$ squares to $9$, so it sits in $A$. The integer $-3$ also squares to $9$, so it sits in $A$. Nothing else in $Z$ squares to $9$.
 
-**2.** A solver who treated "equals" as "same writing order" would reject $A=B$ because one roster starts at $3$ and the other at $-3$. Sets do not remember order.
+**2.** Treating "equals" as "same writing order" would reject $A=B$ because one roster starts at $3$ and the other at $-3$. That is the fork: $A=B$ belongs to the recovered isolation, $-3$ belongs to the discarded mix. Sets do not remember order.
 
 **3.** If the universe had been the natural numbers, $-3$ would have been dropped and equality would fail. That is a different universe, not this letter.
 
@@ -167,7 +167,7 @@ The claim reprints $A$ as the singleton $\\{3\\}$, "only the positive root." The
 
 **2.** The claimed roster $\\{3\\}$ would be correct only if an extra constraint $x>0$ or $x\\in N$ had been written into $A$. Neither appears. Adding an unstated filter is the same off-by-one style of error as deleting a legal member from a difference.
 
-**3.** A solver who wrote $A=\\{3\\}$ and then checked $|A|=1$ would also break the cardinality claim in the next letter. The two mistakes travel together: hide the negative root, then count one object.
+**3.** Writing $A=\\{3\\}$ and then checking $|A|=1$ would also break the cardinality claim in the next letter. So the letter reads the claim against $A=\\{3\\}$; $|A|=1$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $A=\\{3\\}$ stays in the write-up. The two mistakes travel together: hide the negative root, then count one object.
 
 What would make the claim true? Change the universe of $A$ to the natural numbers, or add $x\\ge 0$ inside the builder. Against $Z$, both signs survive.
 
@@ -184,7 +184,7 @@ so the statement is False.`,
 
 Cardinality counts distinct members, not distinct squares and not distinct ways of writing a number. The overview recovered two integer solutions, $-3$ and $3$. Those are two different points on the number line, so $|A|=2$.
 
-A rushed solver might count "one equation, one size" and report $|A|=1$ because both roots square to the same $9$. Distinctness is about the objects in the set, not about the value of $x^2$. Another trap is to treat $-3$ and $3$ as "the same up to sign" and collapse them; sets do not identify a number with its opposite.
+It is tempting to count What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. "one equation, one size" and report $|A|=1$ because both roots square to the same $9$. Distinctness is about the objects in the set, not about the value of $x^2$. Another trap is to treat $-3$ and $3$ as "the same up to sign" and collapse them; sets do not identify a number with its opposite.
 
 If $A$ had been built over $N$, the count would have dropped to $1$. That is a different builder. Here the universe is $Z$, and both roots remain.
 
@@ -201,7 +201,7 @@ This claim does not re-solve $x^2=9$. The overview already recovered the two int
 
 **2.** The recovered set is therefore $C=\\{3\\}$, a singleton. Equality with $\\{3,-3\\}$ would need $-3\\in C$. That membership fails, so the two sets are different: one has two members, the other has one. Cardinality already separates them, $|C|=1$ while $|\\{3,-3\\}|=2$.
 
-**3.** The trap is to treat "square equals $9$" as if the universe did not matter. Squares forget signs, and a solver who stops at the algebra writes both roots and copies them into $C$. The set-builder never gave that licence. Changing $Z$ to $N$ is a genuine extra filter, the same kind of extra filter that would appear if the builder had added $x>0$ by hand.
+**3.** The trap is to treat "square equals $9$" as if the universe did not matter. Squares forget signs, and stopping at the algebra writes both roots and copying them into $C$. Keeping $C$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The set-builder never gave that licence. Changing $Z$ to $N$ is a genuine extra filter, the same kind of extra filter that would appear if the builder had added $x>0$ by hand.
 
 A different stem could have made the claim true: if $C$ had been built over $Z$, or over all nonzero integers, both roots would survive and equality with $\\{3,-3\\}$ would hold. Against $N$, the negative root is excluded by definition, not by a computational accident.
 
@@ -272,7 +272,7 @@ Membership and subsethood are different questions, even when they mention the sa
 
 **1.** The test $\\{a,b\\}\\in A$ asks whether one of the three written objects is the set $\\{a,b\\}$. None is. The letters $a$ and $b$ are elements; the pair of them is a different type of object.
 
-**2.** The neighbouring test $\\{a,b\\}\\subseteq A$ is true, because both members of the pair sit in $A$. A solver who runs the subset test and then writes $\\in$ has swapped the two relations. That swap is the whole trap.
+**2.** The neighbouring test $\\{a,b\\}\\subseteq A$ is true, because both members of the pair sit in $A$. Running the subset test and then writes $\\in$ has swapped the two relations. That is why $\\in$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That swap is the whole trap.
 
 **3.** The pair $\\{a,b\\}$ does belong to the power set: the overview placed it in $\\mathcal P(A)$. Membership in $\\mathcal P(A)$ is not membership in $A$. Confusing those two "is an element of" claims is how the false verdict gets written.
 
@@ -280,7 +280,7 @@ A set can have other sets as elements, but only when those nested sets are writt
 
 What would make the claim true? $A$ would have to list $\\{a,b\\}$ as one of its objects, for instance $A=\\{a,b,c,\\{a,b\\}\\}$. Then $\\{a,b\\}\\in A$ would hold, and $\\{a,b\\}\\subseteq A$ would still hold as well. The given $A$ has no such nested object.
 
-A rushed solver often checks that $a$ and $b$ "have something to do with $A$" and writes $\\in$. The symbol $\\in$ does not mean "related." It means "is one of the three written objects." Neither object is the pair.
+It is tempting to check After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. that $a$ and $b$ "have something to do with $A$" and writes $\\in$. The symbol $\\in$ does not mean "related." It means "is one of the three written objects." Neither object is the pair.
 
 The recovered elements of $A$ are three letters.
 
@@ -312,7 +312,7 @@ Proper inclusion is ordinary inclusion plus a genuine difference of sets. $A\\su
 
 **3.** What would make the claim true? Nothing, for this $A$ against itself. Proper self-inclusion never holds for any set. A different pair, such as $\\{a,b\\}$ against $A$, is a proper subset, but that is not the claim.
 
-A solver who counted "subsets of $A$ that look like $A$" and found one has found $A$ itself, which is a subset and not a proper subset.
+Counting "subsets of $A$ that look like $A$" and found one has found $A$ itself, which is a subset and not a proper subset. Once $A$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 The inequality half cannot hold.
 
@@ -389,7 +389,7 @@ Membership reads the written roster: $a$, $b$, $c$. None of those letters is the
 
 **1.** The symbol $\\in$ does not mean "related somehow to $D$." It means "is one of the objects listed." The empty set is a set with no letters in it, not a letter.
 
-**2.** The neighbouring fact $\\emptyset\\subseteq D$ is true, and that is the trap. A solver who just ran letter A and then copied $\\in$ in place of $\\subseteq$ writes a false membership from a true inclusion.
+**2.** The neighbouring fact $\\emptyset\\subseteq D$ is true, and that is the trap. Just running letter A and then copying $\\in$ in place of $\\subseteq$ writes a false membership from a true inclusion. The stem's recovered values line up with $\\in$, whereas $\\subseteq$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $\\in$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **3.** What would make the claim true? $D$ would have to list $\\emptyset$ as an element, for instance $D=\\{a,b,c,\\emptyset\\}$. The given $D$ does not. Nested sets are allowed in general, but they must be written to count.
 
@@ -524,7 +524,7 @@ What would make the claim true? $E$ and $F$ would need the same private numbers,
 
 The two recovered leftovers differ.
 
-Equality of leftovers would be a coincidence of private cells, not a law of difference. Here the private cells are $\\{1,7\\}$ and $\\{4,6\\}$. Naming them as equal is a false figure: two real recovered sets, written as if they were one. Difference is not commutative: the leftover lives inside the set named on the left. $E\\setminus F$ can never pick up $4$ or $6$, because those numbers miss $E$. $F\\setminus E$ can never pick up False$ or $7$, because those numbers miss $F$. The two recovered leftovers therefore share no member and cannot be equal. What would make them equal? The private cells would have to match, which forces $E=F$. The given lists are not equal. A solver who checks only the sizes, both $2$, and stops there has skipped the membership witness False$. Size matching is not set equality.
+Equality of leftovers would be a coincidence of private cells, not a law of difference. Here the private cells are $\\{1,7\\}$ and $\\{4,6\\}$. Naming them as equal is a false figure: two real recovered sets, written as if they were one. Difference is not commutative: the leftover lives inside the set named on the left. $E\\setminus F$ can never pick up $4$ or $6$, because those numbers miss $E$. $F\\setminus E$ can never pick up False$ or $7$, because those numbers miss $F$. The two recovered leftovers therefore share no member and cannot be equal. What would make them equal? The private cells would have to match, which forces $E=F$. The given lists are not equal. Checking only the sizes, both $2$, and stopping there has skipped the membership witness False$. Size matching is not set equality. Keeping $2$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 so the statement is False.`,
       `**D.** → True
@@ -594,7 +594,7 @@ The even roster $A=\\{2,4,6,8,10\\}$ is meeting the multiple-of-three roster $B=
 
 Part 3 already scanned $A$ against $B$ and left the singleton $\\{6\\}$. That recovered object is what the claim names. The even numbers $2,4,8,10$ miss $B$, and $B$'s $3,9,12$ miss $A$. Only $6$ sits in both, so the intersection is a one-element set.
 
-**1.** A solver who ran a union instead would keep $2,3,4,8,9,10,12$ as well and land on eight numbers. That is letter B's count, not this roster.
+**1.** Running a union instead would keep $2,3,4,8,9,10,12$ as well and land on eight numbers. The recovered isolation is checked against the claim using $2,3,4,8,9,10,12$, which is the figure the sessions actually produce. That is letter B's count, not this roster.
 
 **2.** Keeping $4$ because it is even and sits next to $6$ treats nearness as membership in $B$. Nearness is not membership. Copying $A\\cap C=\\{2,4\\}$ into this slot answers a different second set: $C$ stops at $5$, while $B$ is the multiples of three.
 
@@ -622,13 +622,13 @@ Difference $C\\setminus A$ deletes a member of $C$ only when that member also si
 
 **2.** The dropped $5$ is not a rounding of a boundary. It is a member of $C$ that fails to meet $A$. Nearness to $A$'s $4$ or $6$ is not membership. This is the same off-by-one that broke a union by dropping a legal endpoint, now on a difference.
 
-**3.** A solver who confused difference with intersection would have kept only $\\{2,4\\}$. A solver who confused it with $A\\setminus C$ would have kept $\\{6,8,10\\}$. Neither is this claim. This claim is $C$ minus $A$ with $5$ wrongly deleted.
+**3.** Confusing difference with intersection would have kept only $\\{2,4\\}$. Once $\\{2,4\\}$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Confusing it with $A\\setminus C$ would have kept $\\{6,8,10\\}$. After isolating the unknown, the check is against $A\\setminus C$. The figure $\\{6,8,10\\}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $A\\setminus C$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Neither is this claim. This claim is $C$ minus $A$ with $5$ wrongly deleted.
 
 What would make $\\{1,3\\}$ correct? $5$ would have to sit in $A$. It does not: $A$ is the even numbers from $2$ to $10$.
 
 The recovered difference is $\\{1,3,5\\}$.
 
-The false figure $\\{1,3\\}$ is one member short of the recovered leftover. That missing $5$ is not optional. It sits in $C$, it misses $A$, and the difference rule keeps it. Reprinting the leftover without $5$ is the same kind of silent deletion as dropping a legal endpoint from a union. Nearness of $5$ to $As $4$ and $6$ is not membership in $A$. $A$ is the even numbers from $2$ to False0$, and $5$ is odd, so $5$ was never a candidate for deletion. A solver who treated difference as 'delete anything near the other list' invented a filter the operation does not have. The recovered $C\\setminus A$ is $\\{1,3,5\\}$, three numbers, not two. What would make $\\{1,3\\}$ honest? $5$ would have to sit in $A$. It does not.
+The false figure $\\{1,3\\}$ is one member short of the recovered leftover. That missing $5$ is not optional. It sits in $C$, it misses $A$, and the difference rule keeps it. Reprinting the leftover without $5$ is the same kind of silent deletion as dropping a legal endpoint from a union. Nearness of $5$ to $As $4$ and $6$ is not membership in $A$. $A$ is the even numbers from $2$ to False0$, and $5$ is odd, so $5$ was never a candidate for deletion. Treating difference as 'delete anything near the other list' invented a filter the operation does not have. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered $C\\setminus A$ is $\\{1,3,5\\}$, three numbers, not two. What would make $\\{1,3\\}$ honest? $5$ would have to sit in $A$. It does not.
 
 so the statement is False.`,
       `**D.** → False
@@ -1021,7 +1021,7 @@ Putting $A$ and $B$ together covers $1$ through $8$. The overview already recove
 
 The recovered complement of the union is $\\{9,10\\}$.
 
-The false figure $\\{8,9,10\\}$ pads the neither-region with an endpoint of $B$. Complement of a union is outside both lists, and $8$ is inside $B$. Off-by-one at a closed end is still a membership error. The recovered outside is $\\{9,10\\}$ only. The number $8$ sits in $B=\\{4,5,6,7,8\\}$, so it sits in $A\\cup B$, so it cannot sit in $(A\\cup B)^c$. Nearness to $9$ is not a licence to keep it. This is the same padding error as keeping a boundary point that one of the inputs already claimed. What would make $\\{8,9,10\\}$ honest? $B$ would have to stop at $7$. The given $B$ includes $8$. A solver who complemented $A$ alone and then trimmed to the high end would also land near this false list; that route never asked whether $8$ sits in $B$.
+The false figure $\\{8,9,10\\}$ pads the neither-region with an endpoint of $B$. Complement of a union is outside both lists, and $8$ is inside $B$. Off-by-one at a closed end is still a membership error. The recovered outside is $\\{9,10\\}$ only. The number $8$ sits in $B=\\{4,5,6,7,8\\}$, so it sits in $A\\cup B$, so it cannot sit in $(A\\cup B)^c$. Nearness to $9$ is not a licence to keep it. This is the same padding error as keeping a boundary point that one of the inputs already claimed. What would make $\\{8,9,10\\}$ honest? $B$ would have to stop at $7$. The given $B$ includes $8$. Complementing $A$ alone and then trimmed to the high end would also land near this false list; that route never asked whether $8$ sits in $B$. Working from the isolated values, $A$ is the figure that is checked, not the detour that produced $B$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is False.`,
       `**B.** → True
@@ -1049,7 +1049,7 @@ $A^c\\cap B^c$ is "outside both," which De Morgan identifies with $(A\\cup B)^c$
 
 The recovered intersection of complements is $\\{9,10\\}$.
 
-Copying $A^c$ into the double-complement slot is a false figure with three extra numbers. Those extras $6,7,8$ fail the 'miss $B test. The recovered intersection of complements keeps only $\\{9,10\\}$. Intersection of complements is the stricter filter: miss $A$ and miss $B$. The numbers $6,7,8$ miss $A$ and sit in $B$, so they survive $A^c$ and die in $B^c$. De Morgan identifies $A^c\\cap B^c$ with $(A\\cup B)^c$, already recovered as $\\{9,10\\}$. The claimed five-element list is $A^c$ itself. What would make that list honest? The claim would have to name $A^c$, not $A^c\\cap B^c$. A solver who ran only one complement and stopped has not intersected anything.
+Copying $A^c$ into the double-complement slot is a false figure with three extra numbers. Those extras $6,7,8$ fail the 'miss $B test. The recovered intersection of complements keeps only $\\{9,10\\}$. Intersection of complements is the stricter filter: miss $A$ and miss $B$. The numbers $6,7,8$ miss $A$ and sit in $B$, so they survive $A^c$ and die in $B^c$. De Morgan identifies $A^c\\cap B^c$ with $(A\\cup B)^c$, already recovered as $\\{9,10\\}$. The claimed five-element list is $A^c$ itself. What would make that list honest? The claim would have to name $A^c$, not $A^c\\cap B^c$. Running only one complement and stopping has not intersected anything. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is False.`,
       `**D.** → True
@@ -1383,7 +1383,7 @@ The recovered union is $(0,15)$.
 
 The right-hand bracket is the trap. $B$ is open at False5$, and $A$ never reaches False5$, so False5$ sits in neither. Union cannot create a point both sides excluded. The recovered union is $(0,15)$, open on the right. The claimed $(0,15]$ is a false figure that closes an end the inputs left open. What would close it? Writing $B=[5,15]$. The stem wrote $[5,15)$. Off-by-a-bracket at False5$ is the same membership error as keeping $8$ in a complement of a union that already contains $8$..
 
-The right end False5$ is open in $B$ and unreachable from $A$. Union cannot include a point both inputs excluded. The recovered union is $(0,15)$, open on the right. The claimed $(0,15]$ closes that end without licence. Off-by-a-bracket at False5$ is a membership error, the same kind as keeping an endpoint that one of the sets already claimed. What would close the right end? Writing $B=[5,15]$. The stem wrote $[5,15)$. A solver who copies $As closed right bracket onto the union has mixed two different ends, False0$ and False5$..
+The right end False5$ is open in $B$ and unreachable from $A$. Union cannot include a point both inputs excluded. The recovered union is $(0,15)$, open on the right. The claimed $(0,15]$ closes that end without licence. Off-by-a-bracket at False5$ is a membership error, the same kind as keeping an endpoint that one of the sets already claimed. What would close the right end? Writing $B=[5,15]$. The stem wrote $[5,15)$. Copying $As closed right bracket onto the union has mixed two different ends, False0$ and False5$.. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The recovered union is open at False5$ because both inputs excluded False5$. Closing that end is a false figure.
 
@@ -2053,7 +2053,7 @@ Ordinary inclusion $E\\subseteq E$ is reflexivity: every member of $E$ sits in $
 
 Part 3 already marked that self-inclusion among the self-tests. This letter is ordinary $\\subseteq$, not proper inclusion. Proper self-inclusion would also need $E\\ne E$, which is the next letter and which never holds. Borrowing the word "proper" from that next claim and pasting it here is the whole trap.
 
-A rushed solver refuses $E\\subseteq E$ because "a set cannot be a subset of itself," mixing the proper reading with the ordinary one. Another mix-up is to look for leftover in $F$ before allowing the self-test, as if inclusion always compared two different lists. Reflexivity does not consult $F$. The extra $4\\in F\\setminus E$ is doing inequality work in letters B and C, not here.
+Refusing After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. $E\\subseteq E$ because "a set cannot be a subset of itself," mixing the proper reading with the ordinary one. Another mix-up is to look for leftover in $F$ before allowing the self-test, as if inclusion always compared two different lists. Reflexivity does not consult $F$. The extra $4\\in F\\setminus E$ is doing inequality work in letters B and C, not here.
 
 What would have to change for the opposite verdict is a different symbol: if the claim had said $E\\subsetneq E$, it would fail for the reason the next letter records. Against ordinary $\\subseteq$, the recovered self-inclusion holds for this $E$ and for every set.
 
@@ -2220,13 +2220,13 @@ Disjoint: the blocks are three different pairs, every pairwise intersection is e
 
 Every positive even is already a natural number, so $H\\subseteq\\mathbb N$. Subsethood does not require $H$ to contain the odds; it only requires that nothing in $H$ sit outside $\\mathbb N$. A counterexample would have to be a positive even that was not a natural, and there is none.
 
-A solver who wanted $H$ to equal $\\mathbb N$ would have been answering the equality letter. Equality is two inclusions. This letter is only $H$ inside $\\mathbb N$, which the recovered scan already granted.
+Wanting $H$ to equal $\\mathbb N$ would have been answering the equality letter. That is the fork: $H$ belongs to the recovered isolation, $\\mathbb N$ belongs to the discarded mix. Equality is two inclusions. This letter is only $H$ inside $\\mathbb N$, which the recovered scan already granted.
 
 The recovered roster of $H$ is $2,4,6,\\ldots$, each of which appears in $\\{1,2,3,\\ldots\\}$.
 
 Subsethood is a one-way membership test. Each even is some natural $2k$ with $k\\ge 1$, so it already sits in $\\{1,2,3,\\ldots\\}$. The odds are irrelevant to this test: they would matter for equality, or for the reverse inclusion $\\mathbb N\\subseteq H$, neither of which this letter asked.
 
-A solver who refused $H\\subseteq\\mathbb N$ because "H is thinner" mixed subsethood with cardinality. Thinner is letter E's slogan. This letter is only the recovered inclusion $H\\subseteq\\mathbb N$.
+Refusing $H\\subseteq\\mathbb N$ because "H is thinner" mixed subsethood with cardinality. The opposite verdict would need a different isolation than $H\\subseteq\\mathbb N$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Thinner is letter E's slogan. This letter is only the recovered inclusion $H\\subseteq\\mathbb N$.
 
 so the statement is True.`,
       `**B.** → False
@@ -2235,14 +2235,14 @@ If $H$ were finite it would have a largest even $2N$, but $2(N+1)$ is still in $
 
 If $H$ were finite it would have a largest even $2N$, but $2(N+1)$ is still in $H$ and strictly larger. The list $2,4,6,\\ldots$ never ends, so $H$ is infinite. Finiteness is not inherited from being a subset of $\\mathbb N$; $\\mathbb N$ itself is infinite, and so is this subset.
 
-A solver who thought "evens are every other natural, so half as many, so finite" would have mixed "half" with "finite." Half of an infinite list is still infinite.
+Thinking "evens are every other natural, so half as many, so finite" would have mixed "half" with "finite." The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.Half of an infinite list is still infinite.
 
 so the statement is False.`,
       `**C.** → False
 
 Equality needs the same members. Odd $1$ sits in $\\mathbb N$ and is not even, so $1\\in\\mathbb N\\setminus H$. That single witness forces $H\\ne\\mathbb N$ even though $H\\subseteq\\mathbb N$. $H=\\mathbb N$ would require every natural to be even.
 
-A solver who ignored odds because "they are not in $H$'s list" would have checked only one inclusion. Equality is two inclusions. The recovered leftover $1$ already kills the reverse inclusion, and $3,5,7,\\ldots$ are extra leftovers.
+Ignoring odds because "they are not in $H$'s list" would have checked only one inclusion. The opposite verdict would need a different isolation than $H$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Equality is two inclusions. The recovered leftover $1$ already kills the reverse inclusion, and $3,5,7,\\ldots$ are extra leftovers.
 
 What would make equality true? If $H$ had been defined as all of $\\mathbb N$, or if the universe had been the evens to begin with. Against $\\mathbb N=\\{1,2,3,\\ldots\\}$, the odds remain.
 
@@ -2250,7 +2250,7 @@ The recovered sets are unequal.
 
 One leftover kills equality. The recovered $1\\in\\mathbb N\\setminus H$ is enough. Listing every odd is unnecessary, though each further odd is another leftover of the same kind.
 
-A solver who wrote $H=\\mathbb N$ because both lists are infinite would have equated two infinite sets by "both go on forever." Infinity of both is compatible with a proper inclusion, which is the next letter's point. Equality still needs matching members, and the odds do not match.
+Writing $H=\\mathbb N$ because both lists are infinite would have equated two infinite sets by "both go on forever." The opposite verdict would need a different isolation than $H=\\mathbb N$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.Infinity of both is compatible with a proper inclusion, which is the next letter's point. Equality still needs matching members, and the odds do not match.
 
 so the statement is False.`,
       `**D.** → True
@@ -2259,7 +2259,7 @@ The map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$, and it is onto $H$
 
 The map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$, and it is onto $H$ because every positive even is $f$ of half of it. That is a bijection $\\mathbb N\\to H$, which is what "pairs every natural with exactly one even and vice versa" says. The formula always outputs an even, so the codomain really is $H$, not $\\mathbb N$.
 
-A solver who thought $f$ missed $2$ would have forgotten $f(1)=2$. A solver who thought $f$ hit an odd would have miscomputed $2n$.
+Thinking $f$ missed $2$ would have forgotten $f(1)=2$. The stem's recovered values line up with $f$, whereas $f(1)=2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $f$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Thinking $f$ hit an odd would have miscomputed $2n$. Working from the isolated values, $f$ is the figure that is checked, not the detour that produced $2n$.
 
 so the statement is True.`,
       `**E.** → False
@@ -2270,17 +2270,17 @@ Proper inclusion is true: odds such as $1$ are missing, so $H\\subsetneq\\mathbb
 
 **2.** Infinite picture: $H\\subsetneq\\mathbb N$ and $f$ is a bijection, so the two sets can be paired. "Fewer" has no extra room to mean anything beyond "missing some members," which is already proper inclusion, not a smaller cardinal.
 
-**3.** A solver who wrote $|H|=\\frac{1}{2}|\\mathbb N|$ as if those were finite numbers would have treated cardinality like a headcount. For infinite sets, a bijection is the size comparison, and $f$ is that bijection. Half of an infinite list is still infinite, and here it is the same infinite size.
+**3.** Writing $|H|=\\frac{1}{2}|\\mathbb N|$ as if those were finite numbers would have treated cardinality like a headcount. Once $|H|=\\frac{1}{2}|\\mathbb N|$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. For infinite sets, a bijection is the size comparison, and $f$ is that bijection. Half of an infinite list is still infinite, and here it is the same infinite size.
 
 What would make "strictly fewer" true? If $H$ were a finite list of evens, say the first thousand. Against $H=\\{2,4,6,\\ldots\\}$, the recovered sizes match. Missing the odds is a membership fact, not a cardinal fact.
 
-A solver who stopped at $H\\subsetneq\\mathbb N$ and copied "therefore smaller" from finite-set homework would have skipped the pairing the overview already built. The pairing is the extra object this slogan has to survive, and it does not.
+Stopping at $H\\subsetneq\\mathbb N$ and copying "therefore smaller" from finite-set homework would have skipped the pairing the overview already built. The recovered isolation is checked against the claim using $H\\subsetneq\\mathbb N$, which is the figure the sessions actually produce. The pairing is the extra object this slogan has to survive, and it does not.
 
 The recovered $|H|$ equals the recovered $|\\mathbb N|$.
 
 Hilbert's hotel is the same phenomenon in other clothing: an infinite set can lose infinitely many members and still pair with itself. Here the lost members are the odds, and the pairing is doubling. Finite sets cannot do that, which is why the slogan feels true in homework with six-element lists.
 
-A solver who computed $|\\mathbb N|-|H|$ as if those were integers would have written "$\\infty-\\infty$," which is not a number. Cardinality comparison for these two sets is the recovered bijection, not a subtraction. Against that bijection, "strictly fewer" has nothing left to mean.
+Computing $|\\mathbb N|-|H|$ as if those were integers would have written "$\\infty-\\infty$," which is not a number. The recovered comparison therefore keeps $|\\mathbb N|-|H|$ and does not substitute $\\infty-\\infty$. Cardinality comparison for these two sets is the recovered bijection, not a subtraction. Against that bijection, "strictly fewer" has nothing left to mean.
 
 so the statement is False.`,
     ],
@@ -2317,28 +2317,28 @@ Therefore $|H|=|\\mathbb N|$ even though $H\\subsetneq\\mathbb N$. The slogan �
 
 $K$ lists two objects: the bare $a$, and the singleton $\\{a\\}$. Membership $a\\in K$ is the first of those. Braces matter: this letter asks about the unwrapped object, not about $\\{a\\}$. The two questions part company in general; here both happen to be true.
 
-A solver who demanded braces around $a$ would have been answering the next letter. The recovered roster opens with the unwrapped object, so $a\\in K$ holds whether or not the singleton is also listed.
+Demanding braces around $a$ would have been answering the next letter. The recovered isolation is checked against the claim using $a$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. The recovered roster opens with the unwrapped object, so $a\\in K$ holds whether or not the singleton is also listed.
 
 The recovered first member is $a$.
 
 In a set such as $\\{a\\}$ the unwrapped $a$ is a member and the singleton $\\{a\\}$ is not a member of $\\{a\\}$ (it is the set itself). $K$ is the unusual roster that lists both. This letter only needs the first listing. The second listing is the next letter.
 
-A solver who wrote $a\\in K$ only after checking $\\{a\\}\\in K$ would have run the wrong test first. Membership of $a$ does not depend on membership of $\\{a\\}$. The recovered first slot is enough.
+Writing $a\\in K$ only after checking $\\{a\\}\\in K$ would have run the wrong test first. The recovered comparison therefore keeps $a\\in K$ and does not substitute $\\{a\\}\\in K$. Membership of $a$ does not depend on membership of $\\{a\\}$. The recovered first slot is enough.
 
 so the statement is True.`,
       `**B.** → True
 
 The second listed object is $\\{a\\}$ itself, so $\\{a\\}\\in K$. That is membership of a set-object, not subsethood. A roster that listed only $a$ would make this false. The extra braces on the second member are what make $K$ unusual.
 
-A solver who treated $\\{a\\}$ as "just $a$ with decoration" would have collapsed the two members and reported $|K|=1$. Those two objects are different types: an element, and a set containing that element.
+Treating $\\{a\\}$ as "just $a$ with decoration" would have collapsed the two members and reported $|K|=1$. The stem's recovered values line up with $\\{a\\}$, whereas $|K|=1$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $\\{a\\}$ stays in the write-up. Those two objects are different types: an element, and a set containing that element.
 
 The recovered second member is $\\{a\\}$.
 
 Nested braces are a different object, not decoration. The recovered roster is two slots, and the second slot is the set $\\{a\\}$. That is why $\\{a\\}\\in K$ holds here and would fail for $K=\\{a\\}$.
 
-A solver who said "sets cannot contain sets" would have been using a restriction this stem does not have. $K$ is defined to contain a set. The membership test is a look-up on the written list.
+Saying "sets cannot contain sets" would have been using a restriction this stem does not have. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. $K$ is defined to contain a set. The membership test is a look-up on the written list.
 
-If $K$ had been $\\{a\\}$ alone, this membership would fail and $|K|$ would be $1$. The extra nested object is what makes $\\{a\\}\\in K$ true. Collapsing the nest is how a solver reports the wrong cardinality in the last letter.
+If $K$ had been $\\{a\\}$ alone, this membership would fail and $|K|$ would be $1$. The extra nested object is what makes $\\{a\\}\\in K$ true. Collapsing the nest is how collapsing the nest reports the wrong cardinality in the last letter.
 
 so the statement is True.`,
       `**C.** → True
@@ -2347,27 +2347,27 @@ $\\{a\\}\\subseteq K$ asks whether $a\\in K$. The roster of $K$ begins with the 
 
 $\\{a\\}\\subseteq K$ asks whether $a\\in K$. The roster of $K$ begins with the bare object $a$, so $a\\in K$ holds, and the singleton is a subset. This is a different question from $\\{a\\}\\in K$, though that happens to be true here as well. In a set such as $\\{a\\}$ the $\\in$ version would fail while this $\\subseteq$ version still held.
 
-A solver who tested $\\{a\\}\\in K$ here would have been answering letter B. Subsethood looks at members of the left-hand set.
+Testing $\\{a\\}\\in K$ here would have been answering letter B. That is why $\\{a\\}\\in K$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Subsethood looks at members of the left-hand set.
 
 so the statement is True.`,
       `**D.** → True
 
 $\\{\\{a\\}\\}\\subseteq K$ asks whether $\\{a\\}\\in K$. The second listed object of $K$ is exactly $\\{a\\}$, so the test succeeds. One extra pair of braces shifts the test from $a$ to $\\{a\\}$. Miscounting braces here is the usual error: testing $a\\in K$ instead of $\\{a\\}\\in K$.
 
-A solver who stripped a pair of braces would have reduced this letter to $\\{a\\}\\subseteq K$, which is a different true claim about the first member. Subsethood always looks at members of the left-hand set. The left-hand set here is a singleton whose only member is $\\{a\\}$.
+Stripping a pair of braces would have reduced this letter to $\\{a\\}\\subseteq K$, which is a different true claim about the first member. The opposite verdict would need a different isolation than $\\{a\\}\\subseteq K$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Subsethood always looks at members of the left-hand set. The left-hand set here is a singleton whose only member is $\\{a\\}$.
 
 The recovered $\\{a\\}\\in K$ is what this subset test needs.
 
 Left-hand braces count. $\\{\\{a\\}\\}$ has one member, and that member is $\\{a\\}$, not $a$. The subset test therefore asks the second recovered membership, $\\{a\\}\\in K$, which holds. Asking $a\\in K$ instead is a brace-count error that happens to be a different true claim.
 
-A solver who thought extra braces were "just more subset" would have treated $\\{\\{a\\}\\}\\subseteq K$ as automatic from $\\{a\\}\\subseteq K$. Subsethood is not inherited by wrapping. Each left-hand set poses its own membership questions.
+Thinking extra braces were "just more subset" would have treated $\\{\\{a\\}\\}\\subseteq K$ as automatic from $\\{a\\}\\subseteq K$. That is the fork: $\\{\\{a\\}\\}\\subseteq K$ belongs to the recovered isolation, $\\{a\\}\\subseteq K$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Subsethood is not inherited by wrapping. Each left-hand set poses its own membership questions.
 
 so the statement is True.`,
       `**E.** → True
 
 The two listed objects are different: an element and a one-element set containing that element. Two distinct members give $|K|=2$. Collapsing them because "they both mention $a$" would report $|K|=1$ and destroy every $\\in$ distinction the other letters use.
 
-A solver who counted brace-strings instead of objects might have reported $3$ by counting $a$, $\\{a\\}$, and $\\{\\{a\\}\\}$. The last of those is not a member of $K$; it is a subset, the previous letter. Cardinality counts members, not subsets.
+Counting brace-strings instead of objects might have reported $3$ by counting $a$, $\\{a\\}$, and $\\{\\{a\\}\\}$. The stem's recovered values line up with $3$, whereas $\\{\\{a\\}\\}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $3$ stays in the write-up. The last of those is not a member of $K$; it is a subset, the previous letter. Cardinality counts members, not subsets.
 
 **1.** Distinctness is a type distinction, not a spelling distinction. $a$ is not a set (in this stem), while $\\{a\\}$ is a set. They cannot be the same object.
 
@@ -2423,13 +2423,13 @@ Membership is immediate from the list: $a\\in K$ and $\\{a\\}\\in K$. Subset tes
 
 The overview recovered $A\\cup B=\\{1,2,3,4,5,6,7,8\\}$ and $(A\\cup B)^{c}=\\{9,10\\}$. Complement of a union is "outside both." Including $8$ would require $8\\notin B$, which is false.
 
-A solver who kept $8$ would have been copying a false companion of this task. $8$ sits in $B$, so it sits in the union, so it is not in the complement. $U$ runs through $10$, and only $9$ and $10$ miss both lists.
+Keeping $8$ would have been copying a false companion of this task. Keeping $8$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. $8$ sits in $B$, so it sits in the union, so it is not in the complement. $U$ runs through $10$, and only $9$ and $10$ miss both lists.
 
 The recovered complement of the union is $\\{9,10\\}$.
 
 $U=\\{1,\\ldots,10\\}$ has ten numbers. The recovered union occupies $1$ through $8$. What remains is $9$ and $10$. That remainder is the complement of the union, not a second scan of $A$ and $B$.
 
-A solver who included $8$ treated the right end of $B$ as if it were already outside. $8\\in B$, so $8$ is inside the union. A solver who dropped $9$ would have thought $U$ stopped at $8$. The universe runs through $10$.
+Including $8$ treated the right end of $B$ as if it were already outside. That is the fork: $8$ belongs to the recovered isolation, $B$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $8\\in B$, so $8$ is inside the union. Dropping $9$ would have thought $U$ stopped at $8$. So the letter reads the claim against $9$; $8$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $9$ stays in the write-up. The universe runs through $10$.
 
 A complement that included $8$ would be claiming $8$ missed the union. $8$ sits in $B$, recovered as a member of $A\\cup B$. The only leftovers inside $U$ are $9$ and $10$.
 
@@ -2438,33 +2438,33 @@ so the statement is True.`,
 
 De Morgan's first law says the complement of a union is the intersection of the complements. The overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$, so the intersection is $\\{9,10\\}$, matching $(A\\cup B)^{c}$. The numbers $6,7,8$ miss $A$ but sit in $B$, so they fail $B^{c}$.
 
-A solver who unioned the complements here would have been running De Morgan's second law on the wrong side. Union of complements is the large set $\\{1,2,3,6,7,8,9,10\\}$, which is $(A\\cap B)^{c}$, not this letter.
+Taking a union of the complements here would have been running De Morgan's second law on the wrong side. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. Union of complements is the large set $\\{1,2,3,6,7,8,9,10\\}$, which is $(A\\cap B)^{c}$, not this letter.
 
 The recovered $A^{c}\\cap B^{c}$ equals the recovered $(A\\cup B)^{c}$.
 
 The identity is checked on these lists, not quoted as a slogan. $A^{c}\\cap B^{c}$ keeps only numbers missing from both. The recovered intersection of complements is $\\{9,10\\}$, matching the recovered complement of the union. That match is De Morgan's first law on this $U$.
 
-A solver who reported $\\{6,7,8,9,10\\}$ copied $A^{c}$ and forgot to intersect with $B^{c}$. $6,7,8$ sit in $B$, so they are not in $B^{c}$.
+Reporting $\\{6,7,8,9,10\\}$ copied $A^{c}$ and forgetting to intersect with $B^{c}$. After isolating the unknown, the check is against $\\{6,7,8,9,10\\}$. The figure $B^{c}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\{6,7,8,9,10\\}$ stays in the write-up. $6,7,8$ sit in $B$, so they are not in $B^{c}$.
 
 so the statement is True.`,
       `**C.** → True
 
 De Morgan's second law says the complement of an intersection is the union of the complements. Here $A\\cap B=\\{4,5\\}$, so the complement in $U$ is $\\{1,2,3,6,7,8,9,10\\}$. Escaping an intersection takes only escaping one set, so the union of complements is large. Copying $(A\\cup B)^{c}$ here would undercount to $\\{9,10\\}$.
 
-A solver who wanted the same $\\{9,10\\}$ for both De Morgan identities would have collapsed union with intersection. Outside both is small; outside at least one is large.
+Wanting the same $\\{9,10\\}$ for both De Morgan identities would have collapsed union with intersection. Keeping $\\{9,10\\}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Outside both is small; outside at least one is large.
 
 The recovered $(A\\cap B)^{c}$ equals the recovered $A^{c}\\cup B^{c}$.
 
 Outside at least one of $A$ or $B$ is a large set: everyone except the overlap $\\{4,5\\}$. The recovered union of complements is that large set. De Morgan's second law says it equals $(A\\cap B)^{c}$, and the recovered roster $\\{1,2,3,6,7,8,9,10\\}$ is that equality.
 
-A solver who reported $\\{9,10\\}$ here copied the first De Morgan output onto the second. Outside both is not outside at least one.
+Reporting $\\{9,10\\}$ here copied the first De Morgan output onto the second. That is why $\\{9,10\\}$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Outside both is not outside at least one.
 
 so the statement is True.`,
       `**D.** → False
 
 Intersection keeps only numbers that sit in both lists. The overview recovered $A\\cap B=\\{4,5\\}$. The claimed $\\{4,5,6\\}$ pads the overlap with a neighbour. $6$ sits in $B$ and misses $A$. $A$ would have to list $6$ for that extra element to survive.
 
-A solver who ran a union would have kept $6$ legally. This letter asked for intersection. Nearness of $6$ to $5$ is not membership in $A$.
+Running a union would have kept $6$ legally. The recovered isolation is checked against the claim using $6$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. This letter asked for intersection. Nearness of $6$ to $5$ is not membership in $A$.
 
 **1.** Scan $A=\\{1,2,3,4,5\\}$ against $B=\\{4,5,6,7,8\\}$. Shared: $4$ and $5$. Not shared: $6\\in B\\setminus A$.
 
@@ -2487,7 +2487,7 @@ so the statement is False.`,
 
 Once $A\\cap B=\\{4,5\\}$, the complement in $U$ must drop $4$ and $5$ and keep everything else, including $6,7,8$. The overview recovered $(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$. The claimed list $\\{1,2,3,4,5,9,10\\}$ keeps $4$ and $5$ while omitting $6,7,8$: the opposite of a complement.
 
-Complement of the overlap cannot contain the overlap. A solver who complemented $A$ instead of $A\\cap B$ would have dropped $1,2,3,4,5$ and kept $6$ through $10$, a different wrong list.
+Complement of the overlap cannot contain the overlap. Complementing $A$ instead of $A\\cap B$ would have dropped $1,2,3,4,5$ and kept $6$ through $10$, a different wrong list. That is the fork: $A$ belongs to the recovered isolation, $10$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 **1.** The claimed roster still contains $4$ and $5$, which are exactly the members that must leave. That alone kills equality.
 
@@ -2552,13 +2552,13 @@ False claims either pad the intersection with $6$ or scramble which numbers belo
 
 Product size is the number of cells in a $2$ by $3$ grid. The overview recovered $|A\\times B|=2\\cdot 3=6$ and listed the six pairs $(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)$. Product size is cells, not the five distinct symbols. $(1,x)$ and $(2,x)$ are different cells even though they share a letter.
 
-A solver who added $2+3=5$ would have counted symbols. A solver who reported $8$ would have padded a $2\\times 4$ grid.
+Adding $2+3=5$ would have counted symbols. The path that matches the stem therefore holds $2+3=5$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting $8$ would have padded a $2\\times 4$ grid. Working from the isolated values, $8$ is the figure that is checked, not the detour that produced $2\\times 4$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered product has six ordered pairs.
 
 Five symbols $1,2,x,y,z$ are not six cells. The product counts ordered pairs, so the same letter $x$ appears in two cells, $(1,x)$ and $(2,x)$. Those cells are different members of $A\\times B$.
 
-A solver who reported $5$ counted an alphabet. A solver who reported $2^{3}=8$ mixed exponentiation with a $2$ by $3$ grid. The recovered grid has six cells.
+Reporting $5$ counted an alphabet. That is why $5$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Reporting $2^{3}=8$ mixed exponentiation with a $2$ by $3$ grid. Working from the isolated values, $2^{3}=8$ is the figure that is checked, not the detour that produced $3$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered grid has six cells.
 
 The recovered six pairs are cells in a rectangle, two rows by three columns. Counting the five letters that appear in those cells is a different count. Product size is the cell count, recovered as $6$.
 
@@ -2567,7 +2567,7 @@ so the statement is True.`,
 
 $(2,x)$ has first slot in $A=\\{1,2\\}$ and second in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$. Swapping the slots would exit this product: $(x,2)$ has a letter first, which $A\\times B$ never allows.
 
-A solver who treated pairs as unordered would keep both orientations. Order is the whole point of a Cartesian product. The neighbouring letter is the swapped pair, and it fails.
+Treating pairs as unordered would keep both orientations. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Order is the whole point of a Cartesian product. The neighbouring letter is the swapped pair, and it fails.
 
 The recovered $A\\times B$ contains $(2,x)$ among its six cells.
 
@@ -2582,7 +2582,7 @@ so the statement is True.`,
 
 $(x,2)$ starts with a letter, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$. Having both symbols available somewhere is not enough unless they sit in the required slots.
 
-A solver who checked "are $x$ and $2$ in $A\\cup B$?" would have passed a union test that this product does not use. The recovered $A\\times B$ never has a letter in the first slot.
+Checking "are $x$ and $2$ in $A\\cup B$?" would have passed a union test that this product does not use. The recovered comparison therefore keeps $x$ and does not substitute $A\\cup B$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered $A\\times B$ never has a letter in the first slot.
 
 What would make $(x,2)$ land in $A\\times B$? If $A$ had contained $x$ and $B$ had contained $2$. The given factors are numbers then letters, not letters then numbers.
 
@@ -2590,14 +2590,14 @@ The recovered $A\\times B$ does not contain $(x,2)$.
 
 The pair $(x,2)$ is a perfectly good ordered pair. It simply lives in the other product. The recovered $B\\times A$ contains it, and the recovered $A\\times B$ does not. Membership in a Cartesian product is two slot tests, not a check that both coordinates appear somewhere in $A\\cup B$.
 
-A solver who passed $(x,2)$ because "$x$ and $2$ are in the picture" ran a union test. The first slot of $A\\times B$ only accepts $1$ or $2$.
+Passing $(x,2)$ because "$x$ and $2$ are in the picture" ran a union test. Working from the isolated values, $(x,2)$ is the figure that is checked, not the detour that produced $2$. That contrast is the reason the verdict goes the way it does. The first slot of $A\\times B$ only accepts $1$ or $2$.
 
 so the statement is False.`,
       `**D.** → False
 
 $(2,x)\\in A\\times B$ but $2\\notin B$, so that pair cannot sit in $B\\times A$. Different members mean unequal sets, even though both products have size $6$. Equal cardinality never forces equal Cartesian products when the factor order flips.
 
-A solver who saw $|A\\times B|=|B\\times A|$ and concluded set equality would have mixed the size letter with this letter. Size equality is the next claim; set equality is this claim, and it fails.
+Seeing $|A\\times B|=|B\\times A|$ and concluding set equality would have mixed the size letter with this letter. The recovered isolation is checked against the claim using $|A\\times B|=|B\\times A|$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. Size equality is the next claim; set equality is this claim, and it fails.
 
 **1.** The recovered $A\\times B$ is six pairs with a number first. The recovered $B\\times A$ is six pairs with a letter first. Those two lists share no member.
 
@@ -2607,7 +2607,7 @@ The recovered products are different sets of the same size.
 
 Same size, different members. The recovered six pairs with a number first share nothing with the recovered six pairs with a letter first. Set equality needs matching members, not matching counts. Letter E is the matching-count claim, and it is true; this letter is matching-members, and it is false.
 
-A solver who wrote $A\\times B=B\\times A$ from $2\\cdot 3=3\\cdot 2$ mixed the commutative law for multiplication with equality of sets of pairs. Multiplication of sizes is commutative. The pair-constructor is not.
+Writing $A\\times B=B\\times A$ from $2\\cdot 3=3\\cdot 2$ mixed the commutative law for multiplication with equality of sets of pairs. That is the fork: $A\\times B=B\\times A$ belongs to the recovered isolation, $2\\cdot 3=3\\cdot 2$ belongs to the discarded mix. Multiplication of sizes is commutative. The pair-constructor is not.
 
 so the statement is False.`,
       `**E.** → True
@@ -2618,7 +2618,7 @@ $$|B\\times A|=3\\cdot 2=6=|A\\times B|.$$
 
 Member lists do not agree. Size equality is commutative; set equality of $A\\times B$ with $B\\times A$ would need $A=B$ (or a degenerate empty factor), which these two sets are not.
 
-A solver who thought unequal sets cannot have equal size would have rejected a true count comparison. Finite sets of the same size can still be disjoint, and these two products are disjoint.
+Thinking unequal sets cannot have equal size would have rejected a true count comparison. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Finite sets of the same size can still be disjoint, and these two products are disjoint.
 
 The recovered sizes both equal $6$.
 
@@ -2669,13 +2669,13 @@ In particular $(x,2)$ has a letter first, which $A\\times B$ never allows.`,
 
 Subsethood would need every point of $(1,5)$ to satisfy $x\\ge 3$. The leftover strip $(1,3)$ is the obstruction; $x=2$ sits in $A$ and misses $B$. The inclusion would hold if $A$ had started at $3$.
 
-A solver who checked only the overlap $[3,5)$ would have missed the left strip. The existence letter names that strip as nonempty. One witness $2$ is enough.
+Checking only the overlap $[3,5)$ would have missed the left strip. The path that matches the stem therefore holds $[3,5)$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. The existence letter names that strip as nonempty. One witness $2$ is enough.
 
 The recovered $A\\setminus B=(1,3)$ is the obstruction.
 
 The leftover strip $(1,3)$ is an interval, not a single awkward point. Every $x$ with $1<x<3$ sits in $A$ and misses $B$. The witness $2$ is one of infinitely many. Inclusion $A\\subseteq B$ would need that strip empty, which would need $A$ to start at $3$.
 
-A solver who checked $x=4$ only tested the overlap. Overlap cannot obstruct subsethood. The obstruction lives where $A$ sticks out to the left of $B$.
+Checking $x=4$ only tested the overlap. The opposite verdict would need a different isolation than $x=4$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Overlap cannot obstruct subsethood. The obstruction lives where $A$ sticks out to the left of $B$.
 
 The inclusion would hold for $A=[3,5)$ against this $B$, because that is already the recovered overlap. The given $A$ is $(1,5)$, which sticks out to the left. That stick-out is $(1,3)$, recovered as nonempty, so $A\\nsubseteq B$.
 
@@ -2684,7 +2684,7 @@ so the statement is False.`,
 
 Numbers satisfying both $1<x<5$ and $x\\ge 3$ form the tighter interval $[3,5)$. The lower end $3$ is closed because $3\\in A$ and $3\\in B$; the upper end $5$ stays open because $5\\notin A$. Closing $5$ would include a point $A$ excluded. Opening $3$ would throw out a point both sets contain.
 
-A solver who wrote $(3,5)$ would have dropped $3$, which both inputs contain. Endpoint arithmetic is this letter's extra work.
+Writing $(3,5)$ would have dropped $3$, which both inputs contain. The recovered comparison therefore keeps $(3,5)$ and does not substitute $3$. Endpoint arithmetic is this letter's extra work.
 
 **1.** Check $x=3$: $1<3<5$ and $3\\ge 3$, so $3$ sits in the overlap. The claimed $[3,5)$ keeps it.
 
@@ -2696,18 +2696,18 @@ The recovered overlap is $[3,5)$.
 
 Endpoint arithmetic is the extra work the overlap roster needs. Closed at $3$ because both inputs contain $3$. Open at $5$ because $A$ is open at $5$ while $B$ does not care. The recovered $[3,5)$ is that combination, not a default "closed on the left, open on the right" slogan.
 
-A solver who wrote $[3,5]$ included a point $A$ never had. A solver who wrote $(3,5)$ dropped a point both inputs have. Either endpoint slip is a failed roster of the overlap.
+Writing $[3,5]$ included a point $A$ never had. The recovered comparison therefore keeps $[3,5]$ and does not substitute $A$. That contrast is the reason the verdict goes the way it does. Writing $(3,5)$ dropped a point both inputs have. That is why $(3,5)$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Either endpoint slip is a failed roster of the overlap.
 
 so the statement is True.`,
       `**C.** → False
 
 $B$ is unbounded above, so it contains numbers far past $A$. Witness $x=10$: in $B$, not in $A$. Reverse inclusion would require $B$ to stop at $5$, which $[3,\\infty)$ does not. One large witness kills $B\\subseteq A$.
 
-A solver who only looked near $4$ would have thought the intervals nested. The ray $[3,\\infty)$ keeps going. The recovered union $(1,\\infty)$ is larger than $A$ precisely because of this tail.
+Only looking near $4$ would have thought the intervals nested. Once $4$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The ray $[3,\\infty)$ keeps going. The recovered union $(1,\\infty)$ is larger than $A$ precisely because of this tail.
 
 $B=[3,\\infty)$ has no right end. $A=(1,5)$ does. Any $x\\ge 5$ sits in $B$ and misses $A$. The witness $10$ is far enough that nobody confuses it with an endpoint quarrel. One such $x$ kills $B\\subseteq A$.
 
-A solver who compared only the overlap $[3,5)$ saw a piece of $B$ inside $A$ and stopped. Reverse inclusion asks about all of $B$, including the unbounded tail.
+Comparing only the overlap $[3,5)$ saw a piece of $B$ inside $A$ and stopping. After isolating the unknown, the check is against $[3,5)$. The figure $A$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $[3,5)$ stays in the write-up. Reverse inclusion asks about all of $B$, including the unbounded tail.
 
 Nested-looking pictures near $x=4$ hide the tail. Reverse inclusion is a claim about every point of the ray $[3,\\infty)$, including $10$, $100$, and every larger real. Each of those sits in $B$ and misses $A$. One of them is enough.
 
@@ -2722,14 +2722,14 @@ The point $1$ itself is excluded from both inputs, matching the open left end. I
 
 From just above $1$ onward there is always coverage: $A$ handles $(1,5)$, $B$ handles $[3,\\infty)$. So $A\\cup B=(1,\\infty)$. The point $1$ itself is excluded from both inputs, matching the open left end. Including $1$ would require one of the two sets to contain it, and neither does.
 
-A solver who closed the left end would have padded a point the recovered union misses. Extra check: $0.5$ misses both, $1.5$ sits in $A$, $10$ sits in $B$.
+Closing the left end would have padded a point the recovered union misses. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Extra check: $0.5$ misses both, $1.5$ sits in $A$, $10$ sits in $B$.
 
 so the statement is True.`,
       `**E.** → True
 
 The recovered leftover is $A\\setminus B=(1,3)$, which is nonempty. Explicitly $x=2$ satisfies $1<2<5$ but $2<3$. One witness is all an existence claim needs. The leftover strip would vanish only if $A$ had started at $3$.
 
-A solver who picked $x=4$ would have landed in the overlap, which sits in $B$ and cannot witness $A\\setminus B$. The witness has to sit strictly left of $3$ and strictly right of $1$.
+Picking $x=4$ would have landed in the overlap, which sits in $B$ and cannot witness $A\\setminus B$. The recovered comparison therefore keeps $x=4$ and does not substitute $A\\setminus B$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The witness has to sit strictly left of $3$ and strictly right of $1$.
 
 This is the same obstruction that kills $A\\subseteq B$, now asked as an existence claim rather than an inclusion.
 
@@ -2772,13 +2772,13 @@ That same $2$ shows $A\\nsubseteq B$. A large number such as $10$ shows $B\\nsub
 
 Difference $A\\setminus B$ deletes the shared $3,4$ from $A$, leaving $\\{1,2\\}$. Difference $B\\setminus A$ leaves $\\{5,6\\}$. Join the leftovers: the overview recovered $A\\triangle B=\\{1,2,5,6\\}$. Symmetric difference is "exactly one," not "at least one." Including $3$ would rebuild the union.
 
-A solver who reported $\\{1,2,3,4,5,6\\}$ would have run a union. The recovered symmetric difference drops the overlap.
+Reporting $\\{1,2,3,4,5,6\\}$ would have run a union. Keeping $\\{1,2,3,4,5,6\\}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered symmetric difference drops the overlap.
 
 The recovered outer cells are $\\{1,2\\}$ and $\\{5,6\\}$.
 
 Exactly-one is the two outer Venn cells joined. The recovered cells are $\\{1,2\\}$ and $\\{5,6\\}$, and their union is $\\{1,2,5,6\\}$. The middle cell $\\{3,4\\}$ is absent on purpose. Putting $3$ back in would rebuild $A\\cup B$.
 
-A solver who reported $\\{1,2,3,4,5,6\\}$ ran a union. A solver who reported $\\{1,2\\}$ ran only $A\\setminus B$ and forgot the other leftover.
+Reporting $\\{1,2,3,4,5,6\\}$ ran a union. The path that matches the stem therefore holds $\\{1,2,3,4,5,6\\}$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting $\\{1,2\\}$ ran only $A\\setminus B$ and forgetting the other leftover. That is the fork: $\\{1,2\\}$ belongs to the recovered isolation, $A\\setminus B$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The recovered symmetric difference is the two private cells joined, not the three-cell union. $3$ and $4$ sit in both inputs, so they sit in neither leftover. Deleting them from both sides is the definition, recovered as $\\{1,2,5,6\\}$.
 
@@ -2787,13 +2787,13 @@ so the statement is True.`,
 
 The definition joins the leftovers by $\\cup$, not $\\cap$. Those leftovers $\\{1,2\\}$ and $\\{5,6\\}$ are disjoint, so replacing union by intersection collapses to $\\emptyset$, contradicting the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagram never overlap.
 
-A solver who wrote $\\cap$ by mixing up "and" with "or" in "exactly one" would have landed on empty. "Exactly one" is an or of two private regions.
+Writing $\\cap$ by mixing up "and" with "or" in "exactly one" would have landed on empty. The path that matches the stem therefore holds $\\cap$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. "Exactly one" is an or of two private regions.
 
 The recovered $(A\\setminus B)\\cap(B\\setminus A)$ is empty, not the symmetric difference.
 
 "Exactly one" in English can sound like an and: in $A$ and not in $B$, and also in $B$ and not in $A$. That double demand is unsatisfiable, which is why intersecting the leftovers yields empty. The definition uses or of the two private regions, recovered as a union.
 
-A solver who wrote $\\cap$ in the definition would have a formula whose value on these lists is $\\emptyset$, contradicting the recovered four-element symmetric difference.
+Writing $\\cap$ in the definition would have a formula whose value on these lists is $\\emptyset$, contradicting the recovered four-element symmetric difference. The recovered comparison therefore keeps $\\cap$ and does not substitute $\\emptyset$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Intersecting two disjoint leftovers is empty by construction. The definition's $\\cup$ is what keeps all four private numbers. Replacing that $\\cup$ by $\\cap$ is a connective slip, and the recovered value of the slipped formula is $\\emptyset$, not $\\{1,2,5,6\\}$.
 
@@ -2802,7 +2802,7 @@ so the statement is False.`,
 
 Symmetric difference excludes the overlap. Here $A\\cap B=\\{3,4\\}$ and $A\\triangle B=\\{1,2,5,6\\}$, which share nothing. So $A\\cap B\\nsubseteq A\\triangle B$. The inclusion would hold only if the overlap were empty.
 
-A solver who thought "shared elements belong everywhere" would have put $\\{3,4\\}$ inside the symmetric difference. They belong in the union, not in "exactly one."
+Thinking "shared elements belong everywhere" would have put $\\{3,4\\}$ inside the symmetric difference. The opposite verdict would need a different isolation than $\\{3,4\\}$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. They belong in the union, not in "exactly one."
 
 The recovered overlap and the recovered symmetric difference are disjoint.
 
@@ -2817,7 +2817,7 @@ so the statement is False.`,
 
 If $A$ and $B$ share nothing, then $A\\setminus B=A$ and $B\\setminus A=B$, so $A\\triangle B=A\\cup B$. There is no middle bucket to discard. This is a general identity, not a scan of the given lists; the given lists are not disjoint, which is why $A\\triangle B$ and the union differ here.
 
-A solver who applied the identity to these lists would have equated $\\{1,2,5,6\\}$ with $\\{1,2,3,4,5,6\\}$. The identity needs the disjointness hypothesis, which these lists fail.
+Applying the identity to these lists would have equated $\\{1,2,5,6\\}$ with $\\{1,2,3,4,5,6\\}$. The stem's recovered values line up with $\\{1,2,5,6\\}$, whereas $\\{1,2,3,4,5,6\\}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $\\{1,2,5,6\\}$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The identity needs the disjointness hypothesis, which these lists fail.
 
 **1.** Under disjointness the two private regions are the two whole sets, so joining them is the union.
 
@@ -2840,7 +2840,7 @@ $$|A\\triangle B|=4+4-2\\cdot 2=4.$$
 
 That matches the four-element set $\\{1,2,5,6\\}$. Subtracting the overlap only once would give the union size $6$ instead.
 
-A solver who used $|A|+|B|-|A\\cap B|$ would have computed the union, the rival of letter A. Symmetric difference discards the middle twice: once from each side.
+Using $|A|+|B|-|A\\cap B|$ would have computed the union, the rival of letter A. The path that matches the stem therefore holds $|A|+|B|-|A\\cap B|$ fixed and only then reads the claim. Symmetric difference discards the middle twice: once from each side.
 
 The recovered count is $4$.
 
@@ -2898,7 +2898,7 @@ Counting-wise, $|A|+|B|$ double-counts the overlap, and the symmetric difference
 
 An ordered pair (rep, account) is a cell in a $5$ by $8$ grid. The overview recovered $5\\cdot 8=40$. Product size is cells, not $5+8=13$. Each rep can be paired with each account independently.
 
-A solver who reported $13$ added. A solver who reported $5^{8}$ or $8^{5}$ would have been counting functions, a different product.
+Reporting $13$ added. That is why $13$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting $5^{8}$ or $8^{5}$ would have been counting functions, a different product. The stem's recovered values line up with $5^{8}$, whereas $8^{5}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $5^{8}$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered coverage count is $40$.
 
@@ -2915,20 +2915,20 @@ Coverage pairs are ordered: first slot is the rep, second is the account. $(\\te
 
 Coverage pairs are ordered: first slot is the rep, second is the account. $(\\text{Maria},\\text{Account 3})$ and $(\\text{Account 3},\\text{Maria})$ are different objects; the second treats Account $3$ as the rep. Order is the whole point of a Cartesian product. Commutativity would hold only if the two coordinates were the same type and the pair happened to be a diagonal.
 
-A solver who treated the pair as an unordered partnership would have accepted equality. The firm’s coverage assignment names who calls on whom, which is ordered.
+Treating the pair as an unordered partnership would have accepted equality. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The firm’s coverage assignment names who calls on whom, which is ordered.
 
 so the statement is False.`,
       `**C.** → True
 
 Zero accounts means the second factor is empty, so $r\\cdot 0=0$ for any number $r$ of reps. Without a second coordinate there is no ordered pair. Hiring more reps cannot create an account slot that does not exist.
 
-A solver who thought "lots of reps should create some assignments" would have treated empty as "unknown" rather than zero. The product rule with a zero factor is zero.
+Thinking "lots of reps should create some assignments" would have treated empty as "unknown" rather than zero. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The product rule with a zero factor is zero.
 
 The recovered empty-product identity is $r\\cdot 0=0$.
 
 An ordered pair needs two coordinates. If the account-set is empty, the second coordinate has nowhere to come from. Growing the first factor cannot manufacture a second coordinate. The recovered identity $r\\cdot 0=0$ is that observation for every $r$, including a firm that hires dozens of idle reps.
 
-A solver who wrote "unknown" for empty would have treated $0$ as missing data. Empty is data: zero accounts, zero pairs.
+Writing "unknown" for empty would have treated $0$ as missing data. The opposite verdict would need a different isolation than $0$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Empty is data: zero accounts, zero pairs.
 
 Zero is absorbing in the product rule. Ten reps and zero accounts is still zero pairs. The recovered identity does not have an exception for "a large sales force." Without an account there is no coverage assignment to form.
 
@@ -2937,13 +2937,13 @@ so the statement is True.`,
 
 Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$. The claim swaps both tests. That swapped reading would put Maria among the accounts. The pair (Maria, Account $3$) is in the product only under the original slot tests.
 
-A solver who checked "both names appear somewhere" would have passed a union test. Slots are typed. The recovered membership rule never swaps the factors.
+Checking "both names appear somewhere" would have passed a union test. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Slots are typed. The recovered membership rule never swaps the factors.
 
 What would make the swapped tests correct? A product $\\text{Accounts}\\times\\text{Reps}$, which is a different set of ordered pairs.
 
 Swapping the tests swaps the types. Maria is a rep, Account $3$ is an account. The recovered membership rule puts the rep in the first slot and the account in the second. The claim puts Maria in Accounts and Account $3$ in Reps, which is the other product's tests, and would usually fail both.
 
-A solver who checked "both names appear in the company" ran a union test. Cartesian membership is slot-typed. The pair (Maria, Account $3$) is in Reps $\\times$ Accounts under the unswapped tests only.
+Checking "both names appear in the company" ran a union test. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Cartesian membership is slot-typed. The pair (Maria, Account $3$) is in Reps $\\times$ Accounts under the unswapped tests only.
 
 so the statement is False.`,
       `**E.** → True
@@ -2954,13 +2954,13 @@ $$6\\cdot 8=48.$$
 
 Equivalently the new rep adds eight new pairs to the old forty, so $40+8=48$. The product rule scales with either factor; growing the first factor by one multiplies by the second factor, not by $1$.
 
-A solver who reported $41$ would have added $1$ instead of $8$. One new person covers all eight accounts, not one extra cell.
+Reporting $41$ would have added $1$ instead of $8$. That is the fork: $41$ belongs to the recovered isolation, $8$ belongs to the discarded mix. One new person covers all eight accounts, not one extra cell.
 
 The recovered new count is $48$.
 
 One new rep does not add one assignment. That rep can cover each of the $8$ accounts, so the increment is $8$. Equivalently $6\\cdot 8=48$. The recovered old count $40$ plus that increment is $48$.
 
-A solver who reported $41$ added people instead of cells. A solver who reported $40\\cdot 6$ reused the old product as a factor. The product rule rebuilds from the new sizes: $6$ and $8$.
+Reporting $41$ added people instead of cells. Once $41$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Reporting $40\\cdot 6$ reused the old product as a factor. Once $40\\cdot 6$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The product rule rebuilds from the new sizes: $6$ and $8$.
 
 so the statement is True.`,
     ],
@@ -3007,20 +3007,20 @@ Closing $4$ would include a temperature $A$ rejects,
 
 A temperature must satisfy $-4<T<4$ and $T\\ge -1$. Keep the tighter limit at each end: the lower limit becomes $-1$ (included, because $-1$ is frost-safe: $1<16$, and irrigation allows $-1$), the upper limit stays $4$ (excluded, because $4^{2}=16$ is not strictly less than $16$). Closing $4$ would include a temperature $A$ rejects.
 
-Endpoint arithmetic is the extra work. A solver who wrote $(-1,4)$ would have dropped $-1$, which both rules allow.
+Endpoint arithmetic is the extra work. Writing $(-1,4)$ would have dropped $-1$, which both rules allow. The stem's recovered values line up with $(-1,4)$, whereas $-1$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $(-1,4)$ stays in the write-up.
 
 so the statement is True.`,
       `**B.** → False
 
 $4$ sits in $B$ because $4\\ge -1$, but it fails $T^{2}<16$, so $4\\notin A$ and therefore $4\\notin A\\cap B$. The recovered interval $[-1,4)$ is open at $4$ for the same reason. Being in $B$ alone never rescues a temperature that $A$ rejects. The endpoint $4$ is the whole issue.
 
-A solver who saw $4$ on the printed interval and kept it would have closed a right end $A$ leaves open. Check: $4^{2}=16$ is not strictly less than $16$.
+Seeing $4$ on the printed interval and keeping it would have closed a right end $A$ leaves open. The stem's recovered values line up with $4$, whereas $A$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $4$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Check: $4^{2}=16$ is not strictly less than $16$.
 
 The recovered overlap excludes $4$.
 
 The printed overlap $[-1,4)$ shows $4$ as an endpoint and still excludes it. Seeing $4$ in the notation is not membership. $4\\in B$ is true and irrelevant once $4\\notin A$. Intersection requires both.
 
-A solver who closed the right end because "irrigation is on at $4$" used only $B$. Frost safety is the open right end, recovered from $4^{2}=16$ not being strictly less than $16$.
+Closing the right end because "irrigation is on at $4$" used only $B$. The recovered comparison therefore keeps $4$ and does not substitute $B$. Frost safety is the open right end, recovered from $4^{2}=16$ not being strictly less than $16$.
 
 Membership in an intersection is two tests, and $4$ fails the frost test. Closing $[-1,4)$ at $4$ would be rewriting $A$ as $T^{2}\\le 16$. The stem used a strict inequality. The recovered overlap stays open at $4$.
 
@@ -3033,7 +3033,7 @@ Check $T=4$: $4^{2}=16$ is not $<16$, so $4\\notin A$, so $4$ must sit in $A^{c}
 
 **1.** Completing a strict inequality $T^{2}<16$ produces $T\\le -4$ or $T\\ge 4$, not two more strict inequalities.
 
-**2.** A solver who thought "open inside means open outside" would have written $(-\\infty,-4)\\cup(4,\\infty)$. Open inside means the boundary points missed $A$, so they belong outside, with closed ends.
+**2.** Thinking "open inside means open outside" would have written $(-\\infty,-4)\\cup(4,\\infty)$. That is why $(-\\infty,-4)\\cup(4,\\infty)$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Open inside means the boundary points missed $A$, so they belong outside, with closed ends.
 
 **3.** What would make the claimed strict complement correct? If $A$ had been $[-4,4]$, already including the endpoints. The frost rule used a strict square inequality, so the endpoints stay out of $A$.
 
@@ -3050,7 +3050,7 @@ so the statement is False.`,
 
 $A$ covers $(-4,4)$ and $B$ carries on upward from $-1$, so together they reach every temperature above $-4$. The overview recovered $A\\cup B=(-4,\\infty)$. Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). One missing real is enough. The whole ray $(-\\infty,-4]$ lies outside both pieces.
 
-A solver who thought "irrigation runs forever, so the union is all of $\\mathbb R$" would have ignored the cold left tail. Irrigation starts at $-1$, not at $-\\infty$. Frost safety only reaches down to just above $-4$.
+Thinking "irrigation runs forever, so the union is all of $\\mathbb R$" would have ignored the cold left tail. The opposite verdict would need a different isolation than $\\mathbb R$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Irrigation starts at $-1$, not at $-\\infty$. Frost safety only reaches down to just above $-4$.
 
 **1.** $T=-4$ itself fails the frost rule and fails irrigation, so even the boundary $-4$ is missing, not only the colder ray.
 
@@ -3062,7 +3062,7 @@ The recovered union is $(-4,\\infty)$, not $\\mathbb R$.
 
 Irrigation's right-infinite ray does not cover the left-infinite cold. $B$ starts at $-1$. $A$ only reaches just above $-4$. Everything at $-4$ and colder misses both, so the recovered union is $(-4,\\infty)$, not $\\mathbb R$.
 
-A solver who wrote $A\\cup B=\\mathbb R$ treated "on forever in one direction" as "on for every real." One direction is not two. The witness $T=-5$ is a concrete missing temperature: $25\\ge 16$ and $-5<-1$.
+Writing $A\\cup B=\\mathbb R$ treated "on forever in one direction" as "on for every real." The opposite verdict would need a different isolation than $A\\cup B=\\mathbb R$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.One direction is not two. The witness $T=-5$ is a concrete missing temperature: $25\\ge 16$ and $-5<-1$.
 
 Warm coverage is not total coverage. $A\\cup B$ covers every temperature above $-4$ and none at $-4$ or below. Equality with $\\mathbb R$ would need that cold ray included. The recovered union $(-4,\\infty)$ is already the whole covered set, and it is a proper subset of $\\mathbb R$.
 
@@ -3071,7 +3071,7 @@ so the statement is False.`,
 
 The recovered leftover is $A\\setminus B=(-4,-1)$, frost-safe yet dry. At $T=-2$ we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough. That leftover slice would vanish if irrigation started at $-4$ instead of $-1$.
 
-A solver who picked $T=0$ would have landed in the overlap, where irrigation is on. The witness has to sit in $(-4,-1)$.
+Picking $T=0$ would have landed in the overlap, where irrigation is on. Keeping $T=0$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The witness has to sit in $(-4,-1)$.
 
 Existence needs one temperature, not a description of every frost-safe dry reading. $-2$ is that temperature.
 
@@ -3132,7 +3132,7 @@ Subtracting one set from the other gives $A\\setminus B=(-4,-1)$, cold yet safe 
 
 Inclusion-exclusion removes the whole overlap once. The overview recovered $|A\\cup B|=160$, from $120+90-50$. The claimed $170$ subtracts only $40$, as if only the excess over $200$ needed deleting. The correct subtraction is the given $50$. Union size $170$ would also make "neither" equal $30$, disagreeing with the four-region split.
 
-A solver who subtracted $200-(120+90)$ and then patched would have used the overflow $10$ instead of the measured $50$.
+Subtracting $200-(120+90)$ and then patched would have used the overflow $10$ instead of the measured $50$. That is the fork: $200-(120+90)$ belongs to the recovered isolation, $50$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **1.** The overflow $210-200=10$ is a floor on the overlap, not a substitute for the measured $50$. Using $10$ as the subtraction would give $200$, which is nonsense: a union cannot be the whole survey plus the headlines.
 
@@ -3151,13 +3151,13 @@ so the statement is False.`,
 
 First the union, recovered as $160$. Neither is survey minus union: $200-160=40$. Using $170$ for the union would report $30$ instead. The four regions $70+50+40+40=200$ confirm this leftover.
 
-The extra arithmetic is that four-region total, which does not repeat $120+90-50$ except to check the leftover. A solver who reported $50$ for neither would have copied the overlap.
+The extra arithmetic is that four-region total, which does not repeat $120+90-50$ except to check the leftover. Reporting $50$ for neither would have copied the overlap. Once $50$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered neither-count is $40$.
 
 Neither is the leftover after the recovered union. Survey $200$ minus union $160$ is $40$. That $40$ also appears as B-only, a coincidence of these headlines, not a reason to copy B-only into the neither cell.
 
-A solver who reported $50$ copied the overlap. A solver who reported $30$ used the false union $170$ from the previous letter. The recovered neither-count is $40$, matching the four-region rebuild.
+Reporting $50$ copied the overlap. The opposite verdict would need a different isolation than $50$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting $30$ used the false union $170$ from the previous letter. That is the fork: $30$ belongs to the recovered isolation, $170$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered neither-count is $40$, matching the four-region rebuild.
 
 The coincidence that B-only is also $40$ is a trap. Neither is survey minus union, recovered as $200-160$. B-only is $|B|$ minus the overlap, recovered as $90-50$. Same number, different cells. Copying one into the other is a region mix-up.
 
@@ -3166,13 +3166,13 @@ so the statement is True.`,
 
 A-only peels the overlap out of $A$. The overview recovered $|A\\setminus B|=120-50=70$, not $90$. The $90$ would be right only if the products shared nobody. Using $90$ for A-only would invent ten phantom customers and fail to rebuild the union $160$.
 
-A solver who reported $120$ would have kept the "both" customers in the "only" pile. A solver who reported $90$ copied $|B|$ onto the A-only cell.
+Reporting $120$ would have kept the "both" customers in the "only" pile. Keeping $120$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Reporting $90$ copied $|B|$ onto the A-only cell. So the letter reads the claim against $90$; $|B|$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $90$ stays in the write-up.
 
 The recovered A-only cell is $70$.
 
 Only-A is $A$ after deleting the overlap: $120-50=70$. The claimed $90$ is $|B|$, a neighbouring headline parked on the wrong cell. Using $90$ would make A-only plus both plus B-only equal $90+50+40=180$, already overshooting the recovered union $160$ and inventing twenty customers.
 
-A solver who reported $120$ forgot to peel the $50$. "Only" means the private cell, not the headline.
+Reporting $120$ forgot to peel the $50$. The recovered comparison therefore keeps $120$ and does not substitute $50$. "Only" means the private cell, not the headline.
 
 The claimed $90$ would be A-only only if $|A\\cap B|=30$, and the stem measured $50$. Using the Product-B headline as an A-only count is a labelled swap. The recovered A-only cell is $70$.
 
@@ -3181,11 +3181,11 @@ so the statement is False.`,
 
 The $50$ who like both already sit inside the $120$ who like $A$. That is all $A\\cap B\\subseteq A$ asks, and it holds for any pair of sets, whatever the numbers. Intersection is always a subset of each factor; the survey figures are not needed for this one.
 
-A solver who thought "we need the counts to check inclusion" would have been doing a size comparison. Inclusion here is membership, not size. The recovered overlap is one of the four regions inside $A$'s $120$.
+Thinking "we need the counts to check inclusion" would have been doing a size comparison. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Inclusion here is membership, not size. The recovered overlap is one of the four regions inside $A$'s $120$.
 
 Inclusion $A\\cap B\\subseteq A$ does not compare $50$ with $120$. It asks whether every dual-liker is already among the Product-A likers. They are, by the meaning of intersection. The survey could have been $20$ people or $2000$; the inclusion would still hold.
 
-A solver who checked $50\\le 120$ and called that the inclusion mixed size with membership. Size comparison is true here and is not the claim. The recovered overlap sits inside $A$'s $120$ as one of the four regions.
+Checking $50\\le 120$ and calling that the inclusion mixed size with membership. That is why $50\\le 120$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Size comparison is true here and is not the claim. The recovered overlap sits inside $A$'s $120$ as one of the four regions.
 
 so the statement is True.`,
       `**E.** → False
@@ -3198,7 +3198,7 @@ $120+90=210$ exceeds $200$ by $10$, which is only a floor on the overlap, not an
 
 **2.** The measured overlap is $50$, which sits between $10$ and $90$, so it is consistent with the headlines and is not $10$.
 
-**3.** A solver who treated the overflow as a unique solution would have ignored the given $50$. What would make $10$ exact? If we had only the headlines and the survey size, with no measured overlap, $10$ would still be a floor, not a unique value, unless one group filled the whole survey.
+**3.** Treating the overflow as a unique solution would have ignored the given $50$. Once $50$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. What would make $10$ exact? If we had only the headlines and the survey size, with no measured overlap, $10$ would still be a floor, not a unique value, unless one group filled the whole survey.
 
 The recovered overlap is $50$, not $10$, so the claimed uniqueness fails.
 
@@ -3250,11 +3250,11 @@ A warning about the headline totals: $120+90=210$ exceeds the 200 people surveye
 
 Putting $A$ and $B$ together keeps $1,2,3,4$ from $A$ and the newcomers $5,6$ from $B$. The shared $3,4$ are not second copies. The overview recovered $A\\cup B=\\{1,2,3,4,5,6\\}$. Stopping at $4$ would throw $5$ and $6$ away.
 
-A solver who reported $\\{1,2,3,4\\}$ would have copied $A$ instead of the union. $C$'s $7,8,9$ do not enter this letter; the claim named $A\\cup B$ only. Padding with $7$ would import $C$, a third list the union never asked for.
+Reporting $\\{1,2,3,4\\}$ would have copied $A$ instead of the union. So the letter reads the claim against $\\{1,2,3,4\\}$; $A$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $\\{1,2,3,4\\}$ stays in the write-up. $C$'s $7,8,9$ do not enter this letter; the claim named $A\\cup B$ only. Padding with $7$ would import $C$, a third list the union never asked for.
 
-Shared members appear once, not twice and not zero times. A solver who wrote six copies of $3$ and $4$ misunderstood that slogan. The recovered combined list is $1$ through $6$, each written once.
+Shared members appear once, not twice and not zero times. Writing six copies of $3$ and $4$ misunderstood that slogan. The recovered comparison therefore keeps $3$ and does not substitute $4$. The recovered combined list is $1$ through $6$, each written once.
 
-A solver who reported $\\{1,2,3,4,5,6,7,8,9\\}$ ran a triple union $A\\cup B\\cup C$. This letter asked only for $A\\cup B$. The recovered six-element roster is the two-list combination, $C$ unused.
+Reporting $\\{1,2,3,4,5,6,7,8,9\\}$ ran a triple union $A\\cup B\\cup C$. Working from the isolated values, $\\{1,2,3,4,5,6,7,8,9\\}$ is the figure that is checked, not the detour that produced $A\\cup B\\cup C$. That contrast is the reason the verdict goes the way it does. This letter asked only for $A\\cup B$. The recovered six-element roster is the two-list combination, $C$ unused.
 
 The recovered $A\\cup B$ is that six-element list and nothing from $C$.
 
@@ -3265,7 +3265,7 @@ so the statement is True.`,
 
 Shared numbers are $3$ and $4$ only. $1,2$ miss $B$, and $5,6$ miss $A$. The overview recovered $A\\cap B=\\{3,4\\}$. Intersection is that overlap, not the combined six-number list. A union-minded scan would report six instead of two.
 
-A solver who included $5$ would have padded from $B$ because $5$ sits next to $4$. Nearness is not membership in $A$. $5\\notin A$. Mixing the recovered union with the recovered overlap is how that extra $5$ gets imported.
+Including $5$ would have padded from $B$ because $5$ sits next to $4$. After isolating the unknown, the check is against $5$. The figure $4$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. Nearness is not membership in $A$. $5\\notin A$. Mixing the recovered union with the recovered overlap is how that extra $5$ gets imported.
 
 Two four-element lists that share a pair is the expected middle. Padding the middle to three is a failed roster. The recovered shared pair stays $\\{3,4\\}$.
 
@@ -3280,7 +3280,7 @@ so the statement is True.`,
 
 Difference $A\\setminus B$ deletes a member of $A$ only when it also sits in $B$. Deleting the shared pair $3,4$ leaves $A\\setminus B=\\{1,2\\}$. Dropping $2$ because it sits next to $3$ would be treating nearness as membership.
 
-A solver who reported $\\{1,2,3,4\\}$ would have forgotten to delete the overlap. The recovered $A$-only cell is $\\{1,2\\}$. $1$ and $2$ miss $B$, so they stay. $3$ and $4$ sit in $B$, so they leave.
+Reporting $\\{1,2,3,4\\}$ would have forgotten to delete the overlap. Keeping $\\{1,2,3,4\\}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered $A$-only cell is $\\{1,2\\}$. $1$ and $2$ miss $B$, so they stay. $3$ and $4$ sit in $B$, so they leave.
 
 The opposite leftover $B\\setminus A=\\{5,6\\}$ is a different set, which is the next letter. This letter is $A$ minus $B$, not $B$ minus $A$. Those two private cells are opposite sides of the overlap.
 
@@ -3295,11 +3295,11 @@ The overview recovered $B\\setminus A=\\{5,6\\}$ and $A\\setminus B=\\{1,2\\}$. 
 
 **1.** Witness $1\\in A\\setminus B$ and $1\\notin B\\setminus A$. One member kills equality. Size matching (both $2$) is not set equality. Equal size is a coincidence of these lists, not a law.
 
-**2.** $A\\setminus B$ lives inside $A$ and can never pick up $5$ or $6$. $B\\setminus A$ lives inside $B$ and can never pick up $1$ or $2$. A solver who thought "deleting the overlap from each side leaves matching remainders" treated difference as a symmetric operation.
+**2.** $A\\setminus B$ lives inside $A$ and can never pick up $5$ or $6$. $B\\setminus A$ lives inside $B$ and can never pick up $1$ or $2$. Thinking "deleting the overlap from each side leaves matching remainders" treated difference as a symmetric operation. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 **3.** What would make the leftovers equal? $A=B$, so that the private cells match. Empty overlap does not help: then each difference would equal the whole set, and $A$ and $B$ are still unequal.
 
-A solver who confused "no overlap" with "equal leftovers" mixed disjointness with commutativity. Disjointness would make $A\\setminus B=A$ and $B\\setminus A=B$, two still-unequal wholes. The given lists are not even disjoint: they share $\\{3,4\\}$, and the private cells on either side of that overlap are $\\{1,2\\}$ and $\\{5,6\\}$.
+Confusing "no overlap" with "equal leftovers" mixed disjointness with commutativity. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Disjointness would make $A\\setminus B=A$ and $B\\setminus A=B$, two still-unequal wholes. The given lists are not even disjoint: they share $\\{3,4\\}$, and the private cells on either side of that overlap are $\\{1,2\\}$ and $\\{5,6\\}$.
 
 The recovered leftovers are opposite private cells, so the claimed equality fails.
 
@@ -3312,7 +3312,7 @@ so the statement is False.`,
 
 Scan $A$ against $C$: the overview recovered $A\\cap C=\\emptyset$. None of $7,8,9$ appears in $\\{1,2,3,4\\}$. Disjointness is that empty overlap. A single shared number such as $4\\in C$ would kill it.
 
-A solver who thought $4$ is "close to $7$" imported an interval reading. These are finite lists, not intervals. Visual distance on the number line is not the membership test, even when it happens to match.
+Thinking $4$ is "close to $7$" imported an interval reading. After isolating the unknown, the check is against $4$. The figure $7$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $4$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. These are finite lists, not intervals. Visual distance on the number line is not the membership test, even when it happens to match.
 
 Disjointness is not automatic for every set that "looks smaller." It is a scan of the two written rosters. If $C$ had listed $4$, disjointness would fail at once. Against the given $C=\\{7,8,9\\}$, nothing is shared. $B$ shares $\\{3,4\\}$ with $A$ and is not disjoint from $A$; $C$ is the list that is.
 
@@ -3408,13 +3408,13 @@ The opposite leftover is the recovered $B\\setminus A=\\{60\\}$, while $A\\setmi
 
 **2.** Here $A$ has two private multiples of ten and $B$ has one private $60$. Naming those leftovers as equal is a false figure: two recovered sets written as if they were one.
 
-**3.** A solver who checks only that both leftovers are "what remains after removing the overlap" has described the construction, not the members. The members are $\\{10,20\\}$ and $\\{60\\}$.
+**3.** Checking only that both leftovers are "what remains after removing the overlap" has described the construction, not the members. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The members are $\\{10,20\\}$ and $\\{60\\}$.
 
 What would make the claim true? The private cells would have to match, which forces $A=B$. The given lists are not equal.
 
 The two recovered leftovers differ.
 
-The leftover $\\{10,20\\}$ lives inside $A$. The leftover $\\{60\\}$ lives inside $B$. Those two private cells share no multiple of ten. Equality would be a coincidence of private cells, not a law. A solver who checks that both leftovers are nonempty and stops there has not compared members. One witness False0$ already kills equality. What would make the leftovers match? $A$ and $B$ would have to be the same list. They are not: $A$ has False0,20$ that $B$ misses, and $B$ has $60$ that $A$ misses. Difference is one of the first operations that fails to commute, and this pair of lists is a clean picture of that failure. The recovered $A\\setminus B$ and $B\\setminus A$ are different sets with different sizes..
+The leftover $\\{10,20\\}$ lives inside $A$. The leftover $\\{60\\}$ lives inside $B$. Those two private cells share no multiple of ten. Equality would be a coincidence of private cells, not a law. Checking that both leftovers are nonempty and stopping there has not compared members. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. One witness False0$ already kills equality. What would make the leftovers match? $A$ and $B$ would have to be the same list. They are not: $A$ has False0,20$ that $B$ misses, and $B$ has $60$ that $A$ misses. Difference is one of the first operations that fails to commute, and this pair of lists is a clean picture of that failure. The recovered $A\\setminus B$ and $B\\setminus A$ are different sets with different sizes..
 
 A student who writes $A\\setminus B=B\\setminus A$ as a slogan is importing commutativity from union and intersection. Union and intersection commute. Difference does not. The recovered leftovers $\\{10,20\\}$ and $\\{60\\}$ are the picture of that failure: different sizes, different members, one witness False0$ already enough. What would make them equal? The two lists would have to be the same set. They are not. $A$ owns False0$ and $20$ that $B$ never had, and $B$ owns $60$ that $A$ never had. Checking that both leftovers are 'what remains after the overlap' describes the construction and then stops. The claim asks whether the remaining members match. They do not.
 
@@ -3954,7 +3954,7 @@ What would make $(x,1)\\in A\\times B$? $x$ would have to sit in $A$ and $1$ in 
 
 The recovered $A\\times B$ has number-first pairs only.
 
-Reversing an ordered pair is a different object. The recovered $A\\times B$ grid is number-first: $(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)$. None of those is $(x,1)$. The pair $(x,1)$ sits in the turned grid $B\\times A$, first slot a letter, second slot a number. A solver who treats pairs as unordered two-element sets would accept both $(1,x)$ and $(x,1)$ and then wonder why the products are distinguished at all. They are distinguished because the first coordinate is a role, not a bag. What would make $(x,1)\\in A\\times B$? $A$ would have to contain $x$. The given $A$ is $\\{1,2\\}$. Cardinality $6=6$ is a separate true claim and does not move this pair..
+Reversing an ordered pair is a different object. The recovered $A\\times B$ grid is number-first: $(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)$. None of those is $(x,1)$. The pair $(x,1)$ sits in the turned grid $B\\times A$, first slot a letter, second slot a number. Treating pairs as unordered two-element sets would accept both $(1,x)$ and $(x,1)$ and then wonder why the products are distinguished at all. After isolating the unknown, the check is against $(1,x)$. The figure $(x,1)$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $(1,x)$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. They are distinguished because the first coordinate is a role, not a bag. What would make $(x,1)\\in A\\times B$? $A$ would have to contain $x$. The given $A$ is $\\{1,2\\}$. Cardinality $6=6$ is a separate true claim and does not move this pair..
 
 The recovered $A\\times B$ grid is number-first. The pair $(x,1)$ is letter-first, so it fails the first-slot test. It does sit in $B\\times A$. Treating ordered pairs as unordered two-element sets would accept both $(1,x)$ and $(x,1)$ and then erase the distinction the product was built to keep. The first coordinate is a role. What would make $(x,1)\\in A\\times B$? $A$ would have to contain the letter $x$. The given $A$ is $\\{1,2\\}$. The matching count $6=6$ is a separate true claim and does not move this pair across products.
 
@@ -4213,7 +4213,7 @@ What would make $A\\triangle B=A\\cup B$? The middle bucket would have to be emp
 
 The recovered lists differ by the overlap.
 
-The recovered union is three members larger than the recovered symmetric difference, and those three members are the overlap $3,5,7$. Naming the two operations equal is a false figure that puts the middle bucket back after the definition just threw it away. Union means at least one. Symmetric difference means exactly one. Those are different English sentences and different recovered lists. What would make them coincide? Empty overlap. The overview filled the middle bucket with three numbers. A solver coming from the next task, where $A$ and $B$ are disjoint, might copy that coincidence backwards. These lists are not disjoint..
+The recovered union is three members larger than the recovered symmetric difference, and those three members are the overlap $3,5,7$. Naming the two operations equal is a false figure that puts the middle bucket back after the definition just threw it away. Union means at least one. Symmetric difference means exactly one. Those are different English sentences and different recovered lists. What would make them coincide? Empty overlap. The overview filled the middle bucket with three numbers. Coming from What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. the next task, where $A$ and $B$ are disjoint, might copy that coincidence backwards. These lists are not disjoint..
 
 Union means at least one. Symmetric difference means exactly one. The recovered lists differ by the middle bucket $\\{3,5,7\\}$. Naming the operations equal puts that bucket back after the definition removed it. What would make them coincide? Empty overlap. The overview filled the middle bucket with three numbers. Copying the next task, where disjoint lists make the operations agree, would miss that these lists are not disjoint. The recovered union has seven members; the recovered symmetric difference has four.
 
@@ -4418,13 +4418,13 @@ Everyone playing both games is already someone playing at least one, so $A\\cap 
 
 **2.** The false figure $6>31$ would require a region to be larger than a region that contains it. That cannot happen for finite counts, and it cannot happen for these sets.
 
-**3.** A solver who compared $22$ with $15$ and then mixed those headlines with $6$ and $31$ is no longer talking about intersection versus union.
+**3.** Comparing $22$ with $15$ and then mixing those headlines with $6$ and $31$ is no longer talking about intersection versus union. After isolating the unknown, the check is against $22$. The figure $31$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $22$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 What would make the inequality true? Nothing, for any two sets. The recovered $6<31$ is the expected direction.
 
 The recovered intersection is smaller than the union.
 
-A region cannot outnumber a region that contains it. The both-games six are already among the at-least-one thirty-one. The false inequality $6>31$ would break that containment. It is not a close numerical miss. It is the wrong direction for any two sets, and the recovered numbers $6$ and $31$ show the expected direction with a wide gap. A solver who compared the headlines $22$ and False5$ and then attached those to $\\cap$ and $\\cup$ is no longer using inclusion-exclusion. Intersection sits inside union. Always. What would make the claim true? Nothing in this stem, and nothing in the algebra of sets..
+A region cannot outnumber a region that contains it. The both-games six are already among the at-least-one thirty-one. The false inequality $6>31$ would break that containment. It is not a close numerical miss. It is the wrong direction for any two sets, and the recovered numbers $6$ and $31$ show the expected direction with a wide gap. Comparing the headlines $22$ and False5$ and then attaching those to $\\cap$ and $\\cup$ is no longer using inclusion-exclusion. Intersection sits inside union. Always. What would make the claim true? Nothing in this stem, and nothing in the algebra of sets.. After isolating the unknown, the check is against $22$. The figure $\\cup$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $22$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The both-games six are already among the at-least-one thirty-one. A region cannot outnumber a region that contains it. The false inequality $6>31$ is the wrong direction for any two sets, not a close miss on these numbers. The recovered gap $6<31$ is the expected direction. Mixing the headlines $22$ and False5$ into this comparison replaces intersection-versus-union with a different pair of counts. What would make the claim true? Nothing in the algebra of sets. Intersection sits inside union always.
 
@@ -4482,11 +4482,11 @@ The letter asks how many of the $60$ students take at least one language. That i
 
 This letter does not rebuild that scan. It asks whether the claimed $50$ is that recovered union.
 
-A rushed solver who added $34+28$ without subtracting would land on $62$, two copies of the bilingual $12$. Another rushed move is to subtract $12$ from $60$ and call that the union; that would be a leftover, not a union.
+Adding $34+28$ without subtracting would land on $62$, two copies of the bilingual $12$. Working from the isolated values, $34+28$ is the figure that is checked, not the detour that produced $12$. Another rushed move is to subtract $12$ from $60$ and call that the union; that would be a leftover, not a union.
 
 What would change the verdict? If the overlap had been $10$ instead of $12$, the union would be $52$, not $50$. Against the given $12$, the recovered union is $50$.
 
-The claimed $|A\\cup B|=50$ matches the recovered union, The $12$ bilingual students are the reason $34+28$ is illegal as a union count. Inclusion-exclusion is not optional decoration; it is the only way to count people once. A solver who treated the two courses as disjoint would have reported $62$ and missed the claim.
+The claimed $|A\\cup B|=50$ matches the recovered union, The $12$ bilingual students are the reason $34+28$ is illegal as a union count. Inclusion-exclusion is not optional decoration; it is the only way to count people once. Treating the two courses as disjoint would have reported $62$ and missed the claim. The opposite verdict would need a different isolation than $62$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The recovered $50$ is also $22+12+16$, the three playing regions. That rebuild is extra arithmetic that does not repeat the overview's $34+28-12$ display. Both routes agree, which is how we know the $50$ is not a mis-subtraction.
 
@@ -4501,7 +4501,7 @@ A consistency check that does not repeat the overview's union display: the three
 
 The recovered Spanish-only count is $22$, Spanish-only is not "Spanish minus French as course sizes." The $12$ shared students are inside the $34$, so they have to come off the $34$, not off a comparison of $34$ with $28$.
 
-If the overlap had been $0$, Spanish-only would have been $34$. The stem's $12$ common students are why it is $22$. A solver who reported $34$ would have ignored the overlap entirely.
+If the overlap had been $0$, Spanish-only would have been $34$. The stem's $12$ common students are why it is $22$. Reporting $34$ would have ignored the overlap entirely. Once $34$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
       `**C.** → True
@@ -4510,11 +4510,11 @@ Neither is whoever sits outside the union. The overview recovered the union $50$
 
 This letter's extra arithmetic is only the last subtraction from the cohort, not a second inclusion-exclusion. Subtracting both headlines from $60$ without restoring the overlap would overcount this leftover: $60-34-28=-2$, which is nonsense, and adding the $12$ back is how you return to $10$.
 
-A rushed solver who reported $60-34-28+12$ in the wrong order might still land on $10$ by luck, or might stop at $60-50$ after using $62$ for the union and report $0$. The recovered leftover is $10$.
+Reporting $60-34-28+12$ in the wrong order might still land on $10$ by luck, or might stop at $60-50$ after using $62$ for the union and report $0$. After isolating the unknown, the check is against $60-34-28+12$. The figure $0$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $60-34-28+12$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered leftover is $10$.
 
 The recovered neither-count is $10$, Neither-language is a leftover, so it lives outside the union. The extra step is $60-50$, using the recovered union, not a new inclusion-exclusion.
 
-A solver who computed $60-34=26$ and stopped would have treated French as invisible. A solver who computed $60-28=32$ would have treated Spanish as invisible. Both headlines have to leave before the leftover is named, and the overlap has to be restored so it is not subtracted twice.
+Computing $60-34=26$ and stopping would have treated French as invisible. That is why $60-34=26$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Computing $60-28=32$ would have treated Spanish as invisible. Keeping $60-28=32$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Both headlines have to leave before the leftover is named, and the overlap has to be restored so it is not subtracted twice.
 
 so the statement is True.`,
       `**D.** → False
@@ -4525,7 +4525,7 @@ The claimed $|A\\cap B|>|A\\cup B|$ would need people in both languages who some
 
 **1.** Containment $A\\cap B\\subseteq A\\cup B$ is true of every pair of sets, whatever the survey numbers. Size comparison cannot reverse a containment.
 
-**2.** A rushed solver who compared $12$ with $34-28=6$ might have thought the overlap was "large," then jumped to "larger than the union." Large compared with the gap between headlines is not large compared with $50$.
+**2.** Comparing $12$ with $34-28=6$ might have thought the overlap was "large," then jumped to "larger than the union." After isolating the unknown, the check is against $12$. The figure $34-28=6$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up.Large compared with the gap between headlines is not large compared with $50$.
 
 **3.** What would make the inequality true? Nothing, for finite sets: the overlap is one of the three playing regions inside the union. Even if every Spanish student also took French, the overlap would equal the smaller headline $28$, still below the union.
 
@@ -4533,18 +4533,18 @@ Think of the $50$ union as a box and the $12$ overlap as a box inside it. An inn
 
 Even in the extreme where every French student also takes Spanish, the overlap would be $\\min(34,28)=28$, and the union would be $34$, still $28<34$. No rearrangement of these headlines produces $|A\\cap B|>|A\\cup B|$.
 
-A solver who compared $12$ with $10$ (the neither-count) and thought "overlap beats leftover, so overlap is huge" would have been comparing the wrong pair. Huge relative to $10$ is not huge relative to $50$. The recovered $12$ sits strictly below the recovered $50$, which is the only size pair this inequality named. Spanish-only $22$ and French-only $16$ are the other two cells of that same union box; adding them to the overlap rebuilds $50$, not a number smaller than $12$.
+Comparing $12$ with $10$ (the neither-count) and thinking "overlap beats leftover, so overlap is huge" would have been comparing the wrong pair. After isolating the unknown, the check is against $12$. The figure $10$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Huge relative to $10$ is not huge relative to $50$. The recovered $12$ sits strictly below the recovered $50$, which is the only size pair this inequality named. Spanish-only $22$ and French-only $16$ are the other two cells of that same union box; adding them to the overlap rebuilds $50$, not a number smaller than $12$.
 
 so the statement is False.`,
       `**E.** → True
 
 French-only peels the overlap out of $B$. The overview recovered $|B\\setminus A|=16$ as $28-12$. Spanish-only is $22$, so the three playing regions rebuild the union: $22+12+16=50$.
 
-This $16$ is the French-side peel, not a leftover "neither" count. A rushed solver who computed $28-34$ would have a negative, or who used $28-10$ would have mixed the neither-count into the peel.
+This $16$ is the French-side peel, not a leftover "neither" count. Computing $28-34$ would have a negative, or using $28-10$ would have mixed the neither-count into the peel. Working from the isolated values, $28-34$ is the figure that is checked, not the detour that produced $28-10$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered French-only count is $16$, French-only $16$ plus Spanish-only $22$ plus both $12$ is $50$, matching the recovered union. That rebuild uses the peel this letter names, so it is extra arithmetic rather than a second inclusion-exclusion.
 
-A solver who reported $28$ for French-only would have kept the bilingual students in the "only" pile. They are not only-French; they are both.
+Reporting $28$ for French-only would have kept the bilingual students in the "only" pile. The recovered isolation is checked against the claim using $28$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. They are not only-French; they are both.
 
 so the statement is True.`,
     ],
@@ -4587,11 +4587,11 @@ The five members who use both facilities appear in each headline, so one copy co
 
 Adding $20+18$ without subtracting inflates the union to $38$, two copies of the overlap. The claim is $33$, matching the recovered union, not that inflated $38$.
 
-A rushed solver who subtracted $5$ from the gym size $50$ would be computing a leftover, not a union.
+Subtracting $5$ from the gym size $50$ would be computing a leftover, not a union. After isolating the unknown, the check is against $5$. The figure $50$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The recovered union is $33$, The product-rule habit of adding $20+18$ is the gym version of double-counting. Five people used both, so they appear in both headlines. The recovered $33$ is the count of distinct members, not the count of memberships.
 
-A solver who reported $38$ would have counted those five people twice. A solver who reported $15$ would have been naming pool-only, a different region.
+Reporting $38$ would have counted those five people twice. Keeping $38$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Reporting $15$ would have been naming pool-only, a different region. Keeping $15$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 so the statement is True.`,
       `**B.** → True
@@ -4602,7 +4602,7 @@ The count would stay $20$ only if the facilities shared nobody. Using $20-18$ wo
 
 Pool-only $15$ is the pool headline after the five "both" members leave. If the sauna overlap had been $8$ instead of $5$, this count would be $12$, not $15$. Against the given $5$, it is $15$.
 
-A solver who reported $20-18=2$ would have compared headlines. Headline comparison is not a peel. A solver who reported $20$ would have kept the overlap inside "only," which is the opposite of an only-count. The recovered pool-only cell is the $15$ named in the claim. Neither, later, is $50-33=17$; that leftover lives outside both facilities and is not an "A only" count. Letter E's sauna-only $13$ is the matching peel on the other side.
+Reporting $20-18=2$ would have compared headlines. The opposite verdict would need a different isolation than $20-18=2$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Headline comparison is not a peel. Reporting $20$ would have kept the overlap inside "only," which is the opposite of an only-count. The path that matches the stem therefore holds $20$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered pool-only cell is the $15$ named in the claim. Neither, later, is $50-33=17$; that leftover lives outside both facilities and is not an "A only" count. Letter E's sauna-only $13$ is the matching peel on the other side.
 
 so the statement is True.`,
       `**C.** → True
@@ -4611,7 +4611,7 @@ First the union of facility users, recovered as $33$. The leftover among $50$ me
 
 The four regions $15+5+13+17=50$ then account for the whole gym. Subtracting pool plus sauna from $50$ without restoring the five "both" members would overcount unused lockers: $50-20-18=-12$ before adding $5$ back.
 
-A rushed solver who used union $38$ would report leftover $12$ instead of $17$. The recovered leftover is $17$.
+Using union $38$ would report leftover $12$ instead of $17$. That is the fork: $38$ belongs to the recovered isolation, $17$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered leftover is $17$.
 
 The recovered neither-count is $17$, The leftover $17$ is membership minus the recovered union $33$. It is not $50-20-18$. That last arithmetic subtracts the five "both" members twice and overshoots into a negative before anyone restores them.
 
@@ -4626,13 +4626,13 @@ Flipping a containment into a size comparison is the trap. The five "both" membe
 
 **1.** Even if every sauna user also used the pool, the overlap would be $18$, still below $33$.
 
-**2.** A rushed solver who compared $5$ with $20-18=2$ might call $5$ "large" and then leap to "larger than the union." Large compared with the headline gap is not large compared with $33$.
+**2.** Comparing $5$ with $20-18=2$ might call $5$ "large" and then leap to "larger than the union." So the letter reads the claim against $5$; $20-18=2$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.Large compared with the headline gap is not large compared with $33$.
 
 **3.** What would make $|A\\cap B|>|A\\cup B|$? A person in both who missed the union, which cannot happen. The inequality is impossible for these sets, and for any sets.
 
 Five people sit in both facilities. Thirty-three people sit in at least one. Five cannot exceed thirty-three. The claimed inequality is a containment error dressed as a size comparison.
 
-A solver who thought "both is a stricter requirement, so maybe it is a larger set" would have mixed strictness of membership tests with size. Stricter tests produce smaller sets, or equal sets, never larger ones.
+Thinking "both is a stricter requirement, so maybe it is a larger set" would have mixed strictness of membership tests with size. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Stricter tests produce smaller sets, or equal sets, never larger ones.
 
 Even saturating the overlap at $\\min(20,18)=18$ still leaves $18$ below the union, which would then be $20$. The inequality never flips. Letter B's pool-only $15$ and letter E's sauna-only $13$ sit beside the $5$ inside that $33$; none of those three cells can outgrow the box they live in.
 
@@ -4647,7 +4647,7 @@ This $13$ is the sauna-side peel, not a leftover "neither" count of $17$. Mixing
 
 Sauna-only $13$ is $18-5$, the sauna headline after the overlap leaves. Mixing this $13$ with the neither-count $17$ is the usual swap of the two leftovers on the sauna side.
 
-A solver who reported $18$ would have kept the five "both" members in the "only" pile. They used the pool as well. A solver who copied letter B's $15$ would have answered the pool-only cell. The recovered sauna-only cell is $13$. The neither leftover $17$ is a third number, outside the gym's two facilities, and is not this peel. Adding $13$ to pool-only $15$ and overlap $5$ rebuilds the union $33$.
+Reporting $18$ would have kept the five "both" members in the "only" pile. The path that matches the stem therefore holds $18$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. They used the pool as well. Copying letter B's $15$ would have answered the pool-only cell. That is why $15$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. The recovered sauna-only cell is $13$. The neither leftover $17$ is a third number, outside the gym's two facilities, and is not this peel. Adding $13$ to pool-only $15$ and overlap $5$ rebuilds the union $33$.
 
 so the statement is True.`,
     ],
@@ -4690,22 +4690,22 @@ Write the three-set formula and consult the recovered union. The overview substi
 
 Stopping after the pairwise subtractions would leave $50$ and undercount the union. The claimed $53$ matches the recovered total, not that $50$.
 
-A rushed solver who added $30+25+20=75$ and stopped would have counted overlapping members several times. The union counts each person once.
+Adding $30+25+20=75$ and stopping would have counted overlapping members several times. Keeping $30+25+20=75$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The union counts each person once.
 
 The recovered union is $53$, The $+3$ at the end is easy to drop. Pairwise subtractions remove the triple group once too often, because those $3$ people sit in every pair. Putting them back is how $50$ becomes the recovered $53$.
 
-A solver who reported $75$ never left the raw sum. A solver who reported $50$ stopped one correction too soon.
+Reporting $75$ never left the raw sum. That is why $75$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reporting $50$ stopped one correction too soon. The opposite verdict would need a different isolation than $50$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is True.`,
       `**B.** → True
 
 Someone who does all three activities automatically does each pair. Those $3$ people already sit inside the pairwise totals $10$, $8$, and $7$. That is why inclusion-exclusion adds them back at the end: they were subtracted once too often.
 
-They are not a fourth disjoint group hiding outside the pairs. A rushed solver who added $3$ as an extra region on top of $10$, $8$, and $7$ would double-count the triple group.
+They are not a fourth disjoint group hiding outside the pairs. Adding $3$ as an extra region on top of $10$, $8$, and $7$ would double-count the triple group. After isolating the unknown, the check is against $3$. The figure $7$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $3$ stays in the write-up.
 
 The recovered triple sits inside every pairwise headline, The triple group is not a bonus pile sitting beside the pairs. It is already inside $|A\\cap B|$, $|A\\cap C|$, and $|B\\cap C|$. That nested containment is why the last $+3$ exists in the formula.
 
-A solver who drew the triple as a fourth disjoint island would have overcounted the union by $3$.
+Drawing the triple as a fourth disjoint island would have overcounted the union by $3$. Once $3$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 so the statement is True.`,
       `**C.** → True
@@ -4716,11 +4716,11 @@ $$|A\\cap B\\cap C^{c}|=10-3=7$$
 
 Leaving the raw $10$ mixes "at least those two" with "exactly those two." Every pairwise headline in a three-set survey needs that triple subtracted before it names an exact-pair region.
 
-A rushed solver who subtracted $3$ from $30$ instead would be peeling the triple out of photography's headline, a different region. The claim is photography and hiking but not cooking, which is the $A\\cap B$ peel, not the $A$ peel.
+Subtracting $3$ from $30$ instead would be peeling the triple out of photography's headline, a different region. The stem's recovered values line up with $3$, whereas $30$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $3$ stays in the write-up. The claim is photography and hiking but not cooking, which is the $A\\cap B$ peel, not the $A$ peel.
 
 The recovered exact-pair count is $7$, Exact-pair regions are pairwise totals minus the triple. The extra $10-3=7$ is this letter's own arithmetic. The overview recovered the pairwise $10$ and the triple $3$; this letter peels them.
 
-A solver who left the $10$ untouched would have been answering "at least photography and hiking," which still includes the three cooks.
+Leaving the $10$ untouched would have been answering "at least photography and hiking," which still includes the three cooks. That is why $10$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
       `**D.** → True
@@ -4731,11 +4731,11 @@ $$3\\le 10,\\qquad 3\\le 8,\\qquad 3\\le 7$$
 
 Hence $3\\le\\min(10,8,7)$. A triple larger than a pair would mean people in all three who somehow missed one of the pairs, which is impossible.
 
-A rushed solver who compared $3$ with the union $53$ would have a true but irrelevant inequality. The letter asks for the min of the three pairwise sizes, and $3$ clears that bar.
+Comparing $3$ with the union $53$ would have a true but irrelevant inequality. Working from the isolated values, $3$ is the figure that is checked, not the detour that produced $53$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The letter asks for the min of the three pairwise sizes, and $3$ clears that bar.
 
 The recovered triple sits at or below every pairwise size, A subset cannot outgrow any set that contains it. The triple is a subset of each pair, so $3$ cannot exceed $10$, $8$, or $7$. The min of those three pairwise sizes is $7$, and $3\\le 7$.
 
-A solver who compared $3$ with $53$ would have used the union, which is the wrong comparison even though $3\\le 53$ happens to hold.
+Comparing $3$ with $53$ would have used the union, which is the wrong comparison even though $3\\le 53$ happens to hold. Working from the isolated values, $3$ is the figure that is checked, not the detour that produced $3\\le 53$.
 
 so the statement is True.`,
       `**E.** → False
@@ -4746,13 +4746,13 @@ A union matches the raw sum only when the three groups are completely separate. 
 
 **1.** Inclusion-exclusion subtracts those pairwise totals and then adds the triple back, which is a net decrease from $75$ to $53$. The inequality cannot flip.
 
-**2.** A rushed solver who remembered "add the triple at the end" might have thought the $+3$ could push the union above $75$. Adding $3$ after subtracting $10+8+7=25$ still leaves a net $-22$.
+**2.** Remembering "add the triple at the end" might have thought the $+3$ could push the union above $75$. The recovered comparison therefore keeps $+3$ and does not substitute $75$. Adding $3$ after subtracting $10+8+7=25$ still leaves a net $-22$.
 
 **3.** What would make the union larger than the raw sum? Nothing, for nonnegative overlaps. The union counts each person once; the raw sum counts some people two or three times.
 
 The raw sum $75$ counts some people twice and the triple group three times. The union counts each person once, so it must be smaller whenever overlaps exist. Here they do: three positive pairwise totals.
 
-Net correction: subtract $10+8+7=25$, add $3$, a decrease of $22$. Nothing in that arithmetic can push $53$ above $75$. The claimed inequality is the raw sum and the union with their roles reversed. A solver who treated the triple $+3$ as a bonus on top of $75$ skipped the pairwise subtractions that the overview already performed.
+Net correction: subtract $10+8+7=25$, add $3$, a decrease of $22$. Nothing in that arithmetic can push $53$ above $75$. The claimed inequality is the raw sum and the union with their roles reversed. Treating the triple $+3$ as a bonus on top of $75$ skipped the pairwise subtractions that the overview already performed. After isolating the unknown, the check is against $+3$. The figure $75$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $+3$ stays in the write-up.
 
 If the three clubs had been pairwise disjoint, the union would have matched $75$ and the inequality would still have failed, because $>$ is strict. Positive overlaps make the gap even wider. The recovered $53$ is the smaller figure, and the claim wrote the comparison the wrong way round.
 
@@ -4795,22 +4795,22 @@ The union counts each person once, while $|A|+|B|+|C|$ counts overlapping member
 
 Conjunction needs both halves true. The overview recovered $P$ true ($7$ is prime) and $Q$ false ($7$ is not even), so $P\\land Q$ is false. "Both prime and even" therefore fails.
 
-An "or" would survive on the prime side alone. This letter asks for the "and." A rushed solver who read "both" as "at least one" would have accepted it.
+An "or" would survive on the prime side alone. This letter asks for the "and." reading "both" as "at least one" would have accepted it. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The recovered conjunction is false, Seven is the standard odd prime used to test "and" versus "or." Both properties would require an even prime other than the topic's $7$, and $7$ is not even. The recovered $P\\land Q$ is the false row T/F.
 
-A solver who knew $2$ is even and prime would have been answering a different question about $2$, not about $7$.
+Knowing $2$ is even and prime would have been answering a different question about $2$, not about $7$. That is the fork: $2$ belongs to the recovered isolation, $7$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is False.`,
       `**B.** → True
 
 Inclusive or needs only one true side. $P$ is true, so $P\\lor Q$ is true even though $Q$ is false. Exclusive or would reject this row; mathematical "or" does not. The even side being false does no damage.
 
-A rushed solver who wanted both sides true would have been running an "and." The recovered disjunction holds on the prime half.
+Wanting both sides true would have been running an "and." That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.The recovered disjunction holds on the prime half.
 
 The recovered $P\\lor Q$ is true, Inclusive or is the T/F row: true on the prime side. Exclusive or would demand "prime or even but not both," which would reject this row because prime holds. Mathematics uses inclusive or unless told otherwise.
 
-A solver who wanted $7$ to be even as well would have been running letter A's conjunction.
+Wanting $7$ to be even as well would have been running letter A's conjunction. The path that matches the stem therefore holds $7$ fixed and only then reads the claim.
 
 so the statement is True.`,
       `**C.** → True
@@ -4819,7 +4819,7 @@ The inner conjunction $P\\land Q$ is already false, and negation flips it: $\\ne
 
 This is $\\neg(P\\land Q)$, not $\\neg P\\land\\neg Q$. De Morgan identifies the first with $\\neg P\\lor\\neg Q$, an or of negations, which holds because $\\neg Q$ is true.
 
-A rushed solver who replaced the outer "not both" by "neither" would have landed on letter D's false sentence.
+Replacing the outer "not both" by "neither" would have landed on letter D's false sentence. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The recovered $\\neg(P\\land Q)$ is true, "Not both" is the negation of an "and." It is true whenever at least one half fails. Here the even half fails, so "not both" holds. It would also hold if $7$ failed to be prime, and it would fail only if $7$ were both.
 
@@ -4834,13 +4834,13 @@ De Morgan says $\\neg(P\\land Q)\\equiv\\neg P\\lor\\neg Q$, an or of negations.
 
 **1.** $7$ is prime, so it cannot be "neither prime nor even." One true property already kills "neither."
 
-**2.** A rushed solver treats "not both" as "neither." Those are De Morgan partners only after the "and" becomes an "or." Keeping the "and" is the error.
+**2.** Treating What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. "not both" as "neither." Those are De Morgan partners only after the "and" becomes an "or." Keeping the "and" is the error.
 
 **3.** What would make "neither" true? A composite odd number such as $9$, which is not prime and not even. $7$ is prime, so it is the wrong sample.
 
 "Neither" is the harsher sentence: not prime and not even. Seven is prime, so "neither" is already dead. Letter C's "not both" survived on the even failure alone; "neither" needs both failures.
 
-A solver who treated De Morgan as "keep the and when you negate" would have identified letter C with letter D. They are different rows: C is true, D is false. The recovered $P$ is true and the recovered $Q$ is false, so $\\neg P\\land\\neg Q$ has a false first conjunct. That is enough.
+Treating De Morgan as "keep the and when you negate" would have identified letter C with letter D. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. They are different rows: C is true, D is false. The recovered $P$ is true and the recovered $Q$ is false, so $\\neg P\\land\\neg Q$ has a false first conjunct. That is enough.
 
 "Neither" would describe a number that fails primality and fails evenness together. Seven fails only evenness. The evenness failure is what made "not both" true; it cannot, by itself, make "neither" true. Those two English words look like cousins and they are opposite in strength: one is an or of denials, the other is an and of denials. Sample $9$ would have made this letter true; sample $7$ does not.
 
@@ -4851,11 +4851,11 @@ $P\\lor Q$ is true, so its negation is false. Claiming $\\neg(P\\lor Q)$ would m
 
 This is the same false sentence as letter D, written as a negated or. De Morgan identifies $\\neg(P\\lor Q)$ with $\\neg P\\land\\neg Q$.
 
-A rushed solver who negated the "or" by negating only the even half would have kept "prime or not even," which is a different sentence and happens to be true. The letter negates the whole disjunction.
+Negating the "or" by negating only the even half would have kept "prime or not even," which is a different sentence and happens to be true. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The letter negates the whole disjunction.
 
 The recovered $\\neg(P\\lor Q)$ is false, Negating an or produces an and of negations. Because $7$ is prime, $\\neg P$ is false, so the and of negations is false. This letter is letter D in other clothes.
 
-A solver who negated $P\\lor Q$ by writing "not prime or not even" would have dropped a negation and landed on De Morgan's form of letter C, which is true. The quoted sentence keeps the outer "it is not true that," which is the full $\\neg(P\\lor Q)$.
+Negating $P\\lor Q$ by writing "not prime or not even" would have dropped a negation and landed on De Morgan's form of letter C, which is true. Keeping $P\\lor Q$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The quoted sentence keeps the outer "it is not true that," which is the full $\\neg(P\\lor Q)$.
 
 so the statement is False.`,
     ],
@@ -4894,7 +4894,7 @@ If an integer larger than $2$ were even, then $2$ would divide it as well, givin
 
 The restriction $p>2$ is load-bearing; without it, $2$ would be a counterexample. The recovered statement is a true universal on that restricted domain.
 
-A rushed solver who thought "2 is even and prime, so the statement fails" would have ignored $p>2$. That is letter B's trap, not this letter's.
+Thinking "2 is even and prime, so the statement fails" would have ignored $p>2$. Keeping $p>2$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is letter B's trap, not this letter's.
 
 The recovered claim holds for every prime greater than $2$, The argument is local to each prime $p>2$: evenness would introduce the extra divisor $2$, so primality would fail. The only even prime is excluded by the domain. That is why the universal holds.
 
@@ -4911,7 +4911,7 @@ A genuine counterexample would need to be an even prime greater than $2$, and no
 
 **2.** Conclusion check is idle once the domain check fails. Being even is irrelevant for a point outside the domain.
 
-**3.** A rushed solver drops the restriction, treats "prime" as the whole domain, and points at $2$. That would refute "every prime is odd," which is a different sentence.
+**3.** Dropping That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. the restriction, treats "prime" as the whole domain, and points at $2$. That would refute "every prime is odd," which is a different sentence.
 
 What would make $2$ a counterexample? If the statement had said "every prime is odd," without $p>2$. Against the actual wording, $2$ is outside the net.
 
@@ -4919,18 +4919,18 @@ Counterexamples have to be members of the domain. $2$ fails the membership test 
 
 A genuine counterexample would be an even prime strictly larger than $2$. Euclid's observation that $2$ is the unique even prime is why none exists. Pointing at $2$ is pointing at a point the sentence already carved out. The recovered domain starts at $3$, and every prime there is odd.
 
-A solver who tested $9$ would have left the prime domain as well as the evenness conclusion. A solver who tested $4$ would have left the prime domain. The only tempting even prime is $2$, and the stem already excluded it by writing "greater than $2$." That exclusion is the content of the letter, not a footnote.
+Testing $9$ would have left the prime domain as well as the evenness conclusion. The recovered isolation is checked against the claim using $9$, which is the figure the sessions actually produce. Testing $4$ would have left the prime domain. The path that matches the stem therefore holds $4$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The only tempting even prime is $2$, and the stem already excluded it by writing "greater than $2$." That exclusion is the content of the letter, not a footnote.
 
 so the statement is False.`,
       `**C.** → True
 
 Negating a universal swaps $\\forall$ for $\\exists$ and "odd" for "even," keeping $p>2$. The quoted sentence is that negation. The original is true, so this existential is false, but it is still the correctly formed negation.
 
-A rushed solver who dropped $p>2$ from the negation would have produced "there exists an even prime," which is true (witness $2$) and is not the negation of the restricted statement.
+Dropping $p>2$ from the negation would have produced "there exists an even prime," which is true (witness $2$) and is not the negation of the restricted statement. The recovered comparison therefore keeps $p>2$ and does not substitute $2$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered negation is the existential named in the claim, Formation and truth are separate. The quoted existential is the correctly formed negation, and because the original is true the existential is false. Chip-style thinking: you still write "there exists a failing $p>2$," even when inspection later finds none.
 
-A solver who wrote "there exists an even prime" without $p>2$ would have a true sentence that is not this negation.
+Writing "there exists an even prime" without $p>2$ would have a true sentence that is not this negation. The opposite verdict would need a different isolation than $p>2$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 so the statement is True.`,
       `**D.** → False
@@ -4941,24 +4941,24 @@ The original arrow is prime $\\Rightarrow$ odd, not the reverse. Composite odds 
 
 **1.** $9>2$ and $9$ odd, yet $9$ is composite. That is the converse's failure row.
 
-**2.** A rushed solver who thought "the original is true, so the reverse is true" would have mixed the pairs. Original true, converse false, is the ordinary split.
+**2.** Thinking "the original is true, so the reverse is true" would have mixed the pairs. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Original true, converse false, is the ordinary split.
 
 **3.** What would make the converse true? A world with no composite odds, which the integers do not supply.
 
 The recovered converse fails at $9$, $9$ is odd, greater than $2$, and composite. That single sample kills the converse. The original arrow never claimed that oddness produces primality; it claimed that primality (above $2$) produces oddness.
 
-$15=3\\times 5$ and $21=3\\times 7$ are further composite odds. One is enough. A solver who tested only primes would never have seen the converse fail.
+$15=3\\times 5$ and $21=3\\times 7$ are further composite odds. One is enough. Testing only primes would never have seen the converse fail. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 so the statement is False.`,
       `**E.** → True
 
 Euclid supplies infinitely many primes. Dropping the single prime $2$ leaves $3,5,7,\\ldots$, still infinite, all greater than $2$. Removing one element from an infinite set leaves an infinite set.
 
-Finiteness would require the primes above $2$ to run out, which Euclid forbids. A rushed solver who thought "throwing out $2$ might leave only finitely many" would have treated infinity as a finite pile minus one.
+Finiteness would require the primes above $2$ to run out, which Euclid forbids. Thinking "throwing out $2$ might leave only finitely many" would have treated infinity as a finite pile minus one. Once $2$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered list of primes greater than $2$ is infinite, Infinite minus one is infinite. Euclid's list $2,3,5,7,\\ldots$ remains infinite after deleting $2$. The primes greater than $2$ are exactly that tail.
 
-A solver who thought "the statement is about a restricted set, so maybe it is finite" would have confused a restriction with a bound. $p>2$ removes one prime, not all but finitely many.
+Thinking "the statement is about a restricted set, so maybe it is finite" would have confused a restriction with a bound. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. $p>2$ removes one prime, not all but finitely many.
 
 so the statement is True.`,
     ],
@@ -5003,11 +5003,11 @@ Rule (1) is "enrolled in Advanced $\\Rightarrow$ passed Intermediate." Maria is 
 
 The rule does not say she passed with any particular grade. This letter only asks whether she passed Intermediate.
 
-A rushed solver who thought "only if" ran the other way, from Intermediate to Advanced, would have been using a sufficient-condition reading the rules do not give.
+Thinking "only if" ran the other way, from Intermediate to Advanced, would have been using a sufficient-condition reading the rules do not give. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The recovered Intermediate pass is forced, Maria is sitting in Advanced right now. Rule (1) is an "only if" from that enrolment back to Intermediate. Modus ponens is the whole content: the "if" fired, so the "then" is in hand.
 
-A solver who waited for a grade sheet would have been answering letter E. This letter is pass/fail, and "passed Intermediate" is forced.
+Waiting for a grade sheet would have been answering letter E. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. This letter is pass/fail, and "passed Intermediate" is forced.
 
 so the statement is True.`,
       `**B.** → True
@@ -5016,11 +5016,11 @@ Compose the two rules: Advanced $\\Rightarrow$ Intermediate $\\Rightarrow$ Princ
 
 Skipping Intermediate in the chain would leave Principles unforced, which the two rules do not allow. The recovered chain is two steps, and both fire.
 
-A rushed solver who applied only rule (1) would have stopped at Intermediate and missed Principles. This letter needs both arrows.
+Applying only rule (1) would have stopped at Intermediate and missed Principles. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. This letter needs both arrows.
 
 The recovered Principles pass is forced, Two arrows fire in sequence. Advanced forces Intermediate by (1); Intermediate forces Principles by (2). Maria's current enrolment is the spark at the left end.
 
-A solver who applied (2) without (1) would have needed an Intermediate enrolment the stem does not state directly. The stem states Advanced; (1) supplies Intermediate; (2) then supplies Principles.
+Applying (2) without (1) would have needed an Intermediate enrolment the stem does not state directly. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The stem states Advanced; (1) supplies Intermediate; (2) then supplies Principles.
 
 so the statement is True.`,
       `**C.** → True
@@ -5029,11 +5029,11 @@ Composing the two arrows gives "enrolled in Advanced $\\Rightarrow$ passed Princ
 
 Sufficient would be the reverse arrow $P\\Rightarrow A$, which is a different claim. This letter asks for necessary, and the composed chain supplies it.
 
-A rushed solver who swapped those two words would have rejected a true necessary-condition sentence. The necessary condition is the one the arrow points at.
+Swapping those two words would have rejected a true necessary-condition sentence. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The necessary condition is the one the arrow points at.
 
 The recovered composed implication makes Principles necessary for Advanced, Necessary is the head of the arrow. Composing $A\\Rightarrow I\\Rightarrow P$ puts Principles at the far head, so Principles is necessary for Advanced. Maria cannot be in Advanced unless Principles was passed, even though the stem never wrote that composed sentence in one line.
 
-A solver who wanted Principles to enrol her in Advanced would have been reading sufficient, letter D.
+Wanting Principles to enrol her in Advanced would have been reading sufficient, letter D. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is True.`,
       `**D.** → False
@@ -5059,13 +5059,13 @@ so the statement is False.`,
 
 The two rules mention only "passed" and "enrolled." No grade, mark, or "perfect" appears. From Maria's enrolment we recover two pass/fail facts, not a score.
 
-A perfect grade is extra information the premises do not carry. A rushed solver who padded "passed" into "passed perfectly" would have imported a fact the registrar never recorded.
+A perfect grade is extra information the premises do not carry. Padding "passed" into "passed perfectly" would have imported a fact the registrar never recorded. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 What would make the claim true? A rule about marks, which is not in the stem. The recovered facts are two passes, nothing more.
 
 The premises do not yield a perfect grade, "Passed" is a binary predicate in these rules. No numerical mark appears. Inferring a perfect grade from an enrolment is padding.
 
-A solver who wrote "she must have done well, otherwise she would not be in Advanced" would have imported a story about standards the rules never mention. The rules mention passing, and passing is all that follows.
+Writing "she must have done well, otherwise she would not be in Advanced" would have imported a story about standards the rules never mention. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The rules mention passing, and passing is all that follows.
 
 so the statement is False.`,
     ],
@@ -5106,7 +5106,7 @@ The reverse arrow $P\\Rightarrow A$ is not supplied. The rules speak only of pas
 
 Scan $P$ against $E$. The overview recovered $P\\cap E=\\{2\\}$, the even prime in these lists. Every other prime here is odd, so it misses $E$. Intersection is that single shared number, not a claim that all primes are even.
 
-A rushed solver who listed $\\{2,4\\}$ would have padded with a non-prime. The recovered overlap is the singleton $\\{2\\}$.
+Listing $\\{2,4\\}$ would have padded with a non-prime. The opposite verdict would need a different isolation than $\\{2,4\\}$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered overlap is the singleton $\\{2\\}$.
 
 The even primes less than $15$ are just $2$. Intersection with $E$ therefore cannot contain $4$ or $6$, which are even but not prime, and cannot contain $3$, which is prime but not even.
 
@@ -5117,9 +5117,9 @@ so the statement is True.`,
 
 Difference $P\\setminus E$ deletes a member of $P$ only when it also sits in $E$. The overview recovered $P\\setminus E=\\{3,5,7,11,13\\}$ by throwing $2$ out of $P$. Dropping $3$ as well would be treating "small" as "even."
 
-A rushed solver who reported $\\{2,3,5,7,11,13\\}$ would have forgotten to delete the overlap. The recovered difference is the five odd primes.
+Reporting $\\{2,3,5,7,11,13\\}$ would have forgotten to delete the overlap. The path that matches the stem therefore holds $\\{2,3,5,7,11,13\\}$ fixed and only then reads the claim. The recovered difference is the five odd primes.
 
-The recovered $P\\setminus E$ is the five odd primes, Deleting $2$ from $P$ is the whole difference. The five leftover primes are all odd, so they miss $E$ and stay. A solver who also deleted $3$ because "$3$ is next to $2$" would have treated nearness as evenness.
+The recovered $P\\setminus E$ is the five odd primes, Deleting $2$ from $P$ is the whole difference. The five leftover primes are all odd, so they miss $E$ and stay. Also deleting $3$ because "$3$ is next to $2$" would have treated nearness as evenness. Working from the isolated values, $3$ is the figure that is checked, not the detour that produced $2$. That contrast is the reason the verdict goes the way it does.
 
 The recovered roster $\\{3,5,7,11,13\\}$ is $P$ with the overlap removed, not $P$ with the small numbers removed.
 
@@ -5128,7 +5128,7 @@ so the statement is True.`,
 
 A "for every" sentence needs a clean sweep, and this one stumbles at $x=2$: in $P$ and even. One counterexample inside the domain makes $\\forall x\\in P$ false. Every other prime in the list is odd, which is why the claim looks tempting; universal claims do not forgive a single exception.
 
-A rushed solver who excluded $2$ by habit, copying letter D's extra hypothesis, would have made this true. The unrestricted universal has no such extra hypothesis.
+Excluding $2$ by habit, copying letter D's extra hypothesis, would have made this true. That is why $2$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. The unrestricted universal has no such extra hypothesis.
 
 The recovered $2\\in P$ is even, Universals fail at one interior point. $2$ is in $P$ and even, so "every member of $P$ is odd" is false. The other five members being odd is a distraction, which is why the sentence looks almost true.
 
@@ -5139,22 +5139,22 @@ so the statement is False.`,
 
 The extra hypothesis $x\\ne 2$ removes the even prime. What remains is $\\{3,5,7,11,13\\}$, all odd, so no remaining $x$ makes the "if" true and the "then" false. Restricting the domain is what repairs the unrestricted universal; without $x\\ne 2$ the same $2$ would still kill it.
 
-A rushed solver who thought "adding a hypothesis cannot save a false universal" would have missed that the hypothesis changes the domain. The repaired implication never fires at $2$.
+Thinking "adding a hypothesis cannot save a false universal" would have missed that the hypothesis changes the domain. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The repaired implication never fires at $2$.
 
 The recovered restricted claim holds on the five odd primes, The extra $x\\ne 2$ takes $2$ out of the firing line. On the remaining five primes the conclusion "odd" holds, so the implication has no false row. Restricting a domain can save a universal; it is not cheating, it is a different sentence.
 
-A solver who thought the extra hypothesis was idle would have kept letter C's counterexample. That counterexample is exactly what $x\\ne 2$ removes.
+Thinking the extra hypothesis was idle would have kept letter C's counterexample. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That counterexample is exactly what $x\\ne 2$ removes.
 
 so the statement is True.`,
       `**E.** → False
 
 $P\\subseteq E$ would need every prime in the list to be even. Already $3\\in P$ and $3\\notin E$. One miss kills the inclusion. Only the overlap $\\{2\\}$ sits inside $E$; five of the six primes lie outside.
 
-A rushed solver who checked only $2$ would have thought the inclusion held. Subsethood is a clean sweep, and $3,5,7,11,13$ are five misses.
+Checking only $2$ would have thought the inclusion held. The path that matches the stem therefore holds $2$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Subsethood is a clean sweep, and $3,5,7,11,13$ are five misses.
 
 Subsethood needs every member of $P$ to sit in $E$. Five odd primes miss $E$. One miss, $3$, already kills it; five misses are five too many.
 
-A solver who checked only the overlap $\\{2\\}$ would have verified a different claim, $P\\cap E\\subseteq E$, which is always true and is not $P\\subseteq E$. The recovered $P$ is the six-prime list, not the singleton from letter A.
+Checking only the overlap $\\{2\\}$ would have verified a different claim, $P\\cap E\\subseteq E$, which is always true and is not $P\\subseteq E$. That is the fork: $\\{2\\}$ belongs to the recovered isolation, $P\\subseteq E$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered $P$ is the six-prime list, not the singleton from letter A.
 
 What would make the inclusion true? A world in which every prime less than $15$ was even. That world contains only $2$, so it is not this $P$. Against the given lists, five odd primes sit outside $E$, and any one of them is a witness.
 
@@ -5193,11 +5193,11 @@ A sentence $\\forall x\\in P$ makes a promise about all six members, so one bad 
 
 If $x>10$, then $x>5$ automatically because $10>5$. That is $P\\Rightarrow Q$, which is what "$P$ is sufficient for $Q$" means. A number past $10$ cannot fail to be past $5$. The reverse arrow is a different claim.
 
-A rushed solver who swapped sufficient with necessary would have rejected this true sentence. Sufficient names the tail of the arrow.
+Swapping sufficient with necessary would have rejected this true sentence. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Sufficient names the tail of the arrow.
 
 A number larger than $10$ is automatically larger than $5$, because $10$ itself is larger than $5$. Sufficient means that automatic push. No extra hypothesis is required.
 
-A solver who wanted a number between $5$ and $10$ to witness a failure of this direction would have been testing the converse. That strip is letter E's witness, not a hole in $P\\Rightarrow Q$. The recovered sufficient direction is the one that holds.
+Wanting a number between $5$ and $10$ to witness a failure of this direction would have been testing the converse. After isolating the unknown, the check is against $5$. The figure $10$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That strip is letter E's witness, not a hole in $P\\Rightarrow Q$. The recovered sufficient direction is the one that holds.
 
 Necessary would be the other reading of the same arrow: $x>5$ is necessary for $x>10$. That sentence is also true, but it is not this letter. This letter only names sufficiency of the stricter cutoff.
 
@@ -5214,7 +5214,7 @@ The whole interval $(5,10]$ supplies further counterexamples. $P$ is stronger th
 
 **2.** $x=10$ itself: $10>5$ true, $10>10$ false. The closed end $10$ is another witness if $P$ is the strict $x>10$.
 
-**3.** A rushed solver who thought "larger threshold is necessary for the smaller one" would have mixed strength with necessity. The stronger condition is sufficient, not necessary.
+**3.** Thinking "larger threshold is necessary for the smaller one" would have mixed strength with necessity. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stronger condition is sufficient, not necessary.
 
 What would make $x>10$ necessary for $x>5$? If the two thresholds were equal, or if no reals lived in $(5,10]$. Neither is the case.
 
@@ -5227,7 +5227,7 @@ so the statement is False.`,
 
 "$Q$ is necessary for $P$" is the same arrow $P\\Rightarrow Q$, read from the other end: $x>10$ cannot hold unless $x>5$ also holds. One true arrow supports two true vocabulary sentences. The necessary condition is the one the arrow points at.
 
-A rushed solver who thought "necessary means the larger number" would have wanted $x>10$ as necessary for $x>5$, which is letter B's false claim.
+Thinking "necessary means the larger number" would have wanted $x>10$ as necessary for $x>5$, which is letter B's false claim. So the letter reads the claim against $x>10$; $x>5$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $x>10$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The recovered $P\\Rightarrow Q$ makes $x>5$ necessary for $x>10$, Reading the same true arrow from the head: $x>5$ is required for $x>10$, because nothing past $10$ can fail to be past $5$. That is letter A's arrow with the vocabulary word "necessary" instead of "sufficient."
 
@@ -5238,11 +5238,11 @@ so the statement is True.`,
 
 Equivalence needs both arrows. $P\\Rightarrow Q$ holds, but $Q\\Rightarrow P$ fails at $x=7$ (and on the whole interval $(5,10]$). So $x>5$ is strictly weaker than $x>10$. The two inequalities are not interchangeable.
 
-A rushed solver who saw both as "large $x$" would have called them equivalent. Strength is not sameness: every $x>10$ is $>5$, not conversely.
+Seeing both as "large $x$" would have called them equivalent. The path that matches the stem therefore holds $x$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Strength is not sameness: every $x>10$ is $>5$, not conversely.
 
 Equivalence would need $x>10$ whenever $x>5$. The strip $(5,10]$ is exactly the set of points where $x>5$ holds and $x>10$ fails. Nonempty disagreement means the two predicates are not the same.
 
-A solver who treated them as "both large" would have ignored that strip. Large is not a single predicate here; it has two cutoffs. Letter A bought one arrow. Letter E names a witness against the other. Two arrows would have been a biconditional, which the recovered pair is not.
+Treating them as "both large" would have ignored that strip. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Large is not a single predicate here; it has two cutoffs. Letter A bought one arrow. Letter E names a witness against the other. Two arrows would have been a biconditional, which the recovered pair is not.
 
 What would make them equivalent? Equal cutoffs, or a restricted universe that never meets $(5,10]$. On the reals the strip is nonempty, so the predicates disagree.
 
@@ -5251,7 +5251,7 @@ so the statement is False.`,
 
 A counterexample to "$x>5$ implies $x>10$" must make the hypothesis true and the conclusion false. Check $x=7$: $7>5$ true, $7>10$ false. Any other point of $(5,10]$ would work equally well; $7$ is a perfectly good witness.
 
-A rushed solver who tested $x=12$ would have found both sides true, which does not refute the implication. Refutation needs the $(5,10]$ strip.
+Testing $x=12$ would have found both sides true, which does not refute the implication. That is why $x=12$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Refutation needs the $(5,10]$ strip.
 
 $x=7$ is inside $(5,10]$. Hypothesis of the converse true, conclusion false. That is a counterexample by definition.
 
@@ -5294,11 +5294,11 @@ A counterexample to $Q\\Rightarrow P$ is a number that satisfies $Q$ and fails $
 
 P's file is score $750\\ge 700$ and ratio $35\\%<40\\%$. Both halves of $R$ hold, so P meets the bank's requirement in full. Meeting $R$ is not yet approval; that is a different claim. An "and" with two true parts is true.
 
-A rushed solver who mixed this letter with letter B would have refused to say P satisfies $R$ because approval is not guaranteed. Satisfying $R$ and being approved are two questions.
+Mixing this letter with letter B would have refused to say P satisfies $R$ because approval is not guaranteed. Once $R$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Satisfying $R$ and being approved are two questions.
 
 The recovered $R$ is true for P, P's two numbers both clear their bars: $750$ is at least $700$, and $35\\%$ is below $40\\%$. Conjunction of two truths is true. The letter asks whether P satisfies $R$, not whether the bank must say yes.
 
-A solver who answered "we cannot be sure P satisfies $R$" would have been hedging about approval. $R$ is a file check, and P's file passes it.
+Answering "we cannot be sure P satisfies $R$" would have been hedging about approval. The opposite verdict would need a different isolation than $R$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. $R$ is a file check, and P's file passes it.
 
 so the statement is True.`,
       `**B.** → False
@@ -5309,7 +5309,7 @@ The wording is "approved only if $R$," i.e. $L\\Rightarrow R$. Meeting $R$ is ne
 
 **2.** Extra bank tests (identity, collateral) could still refuse P while $R$ holds. The stem never forbade those extra tests.
 
-**3.** A rushed solver who treated "only if" as "if and only if" would have concluded approval. That is the classic strengthening of a necessary condition into a sufficient one.
+**3.** Treating "only if" as "if and only if" would have concluded approval. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. That is the classic strengthening of a necessary condition into a sufficient one.
 
 What would make the claim true? A biconditional "approved if and only if $R$." The stem wrote "only if."
 
@@ -5324,29 +5324,29 @@ so the statement is False.`,
 
 Q clears the score test $720\\ge 700$ but fails the ratio: $45\\%$ is not below $40\\%$. One false conjunct makes $R$ false. The two requirements are joined by "and," so one failure means Q does not satisfy both.
 
-A rushed solver who treated the tests as an "or" would have let the score rescue Q. The recovered $R$ is a conjunction.
+Treating the tests as an "or" would have let the score rescue Q. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered $R$ is a conjunction.
 
 Q's ratio $45\\%$ is not below $40\\%$. Conjunction dies at one false conjunct, even though the score $720$ clears $700$. "Both required conditions" means both, not "the score one."
 
-A solver who let the score override the ratio would have been running an or. The recovered $R$ is an and. Letter B asked whether meeting $R$ forces approval; this letter only asks whether Q meets $R$, and the failed ratio already answers no. The gap $45-40=5$ percentage points is this letter's own comparison: $45$ is not below $40$, so the second conjunct is false.
+Letting the score override the ratio would have been running an or. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The recovered $R$ is an and. Letter B asked whether meeting $R$ forces approval; this letter only asks whether Q meets $R$, and the failed ratio already answers no. The gap $45-40=5$ percentage points is this letter's own comparison: $45$ is not below $40$, so the second conjunct is false.
 
 so the statement is True.`,
       `**D.** → True
 
 The contrapositive of $L\\Rightarrow R$ is $\\neg R\\Rightarrow\\neg L$. Q fails the ratio test, so $R$ is false, and the loan is not approved. Failing a necessary condition is enough to force refusal. The original "only if" is at full strength when read backwards through negation.
 
-A rushed solver who thought "we cannot conclude anything from a failed $R$" would have been thinking of a sufficient condition's failure, which is idle. Necessary-condition failure is decisive.
+Thinking "we cannot conclude anything from a failed $R$" would have been thinking of a sufficient condition's failure, which is idle. That is why $R$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Necessary-condition failure is decisive.
 
 The recovered contrapositive refuses Q, Failing a necessary condition refuses the loan. That is the contrapositive, and it is the one direction "only if" really licenses. Q fails $R$, so Q is not approved.
 
-A solver who thought "maybe the bank will waive the ratio" would have been inventing a waiver the stem does not grant. The stated rule has no waiver.
+Thinking "maybe the bank will waive the ratio" would have been inventing a waiver the stem does not grant. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The stated rule has no waiver.
 
 so the statement is True.`,
       `**E.** → False
 
 A ratio below $40\\%$ is only one conjunct of $R$. An applicant with ratio $30\\%$ and score $650$ already fails the score test, so $R$ is false and approval is blocked. Even a full $R$ would still be only necessary, not sufficient. One half of $R$ never guarantees a loan.
 
-A rushed solver who treated the ratio as a standalone sufficient condition would have skipped the score and skipped the "only if." Both mistakes are needed to accept this letter.
+Treating the ratio as a standalone sufficient condition would have skipped the score and skipped the "only if." The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.Both mistakes are needed to accept this letter.
 
 The recovered rule does not make a low ratio sufficient, A low ratio without a high enough score already fails $R$. A low ratio with a high score still only makes $R$ true, which is necessary, not sufficient. Either way, "ratio below $40\\%$ guarantees approval" is false.
 
@@ -5391,22 +5391,22 @@ Because $R$ joins its two tests with "and", a single failure sinks the whole req
 
 Negating a universal produces an existential of the negated predicate. The quoted sentence is that negation, correctly formed, even though no real number actually has a negative square. Shape of the negation is a separate question from whether the negation is true.
 
-A rushed solver who flipped $\\ge$ to $\\le$ instead of $<$ would have produced a different (wrong) negation. The recovered flip is $x^{2}<0$.
+Flipping $\\ge$ to $\\le$ instead of $<$ would have produced a different (wrong) negation. After isolating the unknown, the check is against $\\ge$. The figure $<$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\ge$ stays in the write-up. The recovered flip is $x^{2}<0$.
 
 The recovered negation is $\\exists x\\,(x^{2}<0)$, The quoted existential is the mirror of the universal, with $x^{2}\\ge 0$ flipped to $x^{2}<0$. No real square is negative, so the existential is false, but the letter asked whether the negation was correctly formed, not whether it was true.
 
-A solver who wrote $\\exists x\\,(x^{2}\\le 0)$ would have included $0$, which does not negate $\\ge 0$. The strict flip is required.
+Writing $\\exists x\\,(x^{2}\\le 0)$ would have included $0$, which does not negate $\\ge 0$. That is the fork: $\\exists x\\,(x^{2}\\le 0)$ belongs to the recovered isolation, $\\ge 0$ belongs to the discarded mix. The strict flip is required.
 
 so the statement is True.`,
       `**B.** → False
 
 Squares of reals are never negative: $0^{2}=0$, $1^{2}=1$, $(-1)^{2}=1$. No real $x$ satisfies $x^{2}=-1$. The existence claim would succeed over the complex numbers, but the universe here is $\\mathbb R$. One missing solution in the universe is enough.
 
-A rushed solver who remembered $i^{2}=-1$ would have left the stated universe. The recovered universe is the reals.
+Remembering $i^{2}=-1$ would have left the stated universe. Keeping $i^{2}=-1$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered universe is the reals.
 
 $x^{2}=-1$ has solutions in $\\mathbb C$, not in $\\mathbb R$. The universe is $\\mathbb R$, so the existence claim is false. Checking $0$, $1$, and $-1$ already shows squares landing on $0$ or $1$, never $-1$.
 
-A solver who left the universe would have answered a different course's question. The recovered existential is empty over the reals, which is why the claim is false.
+Leaving the universe would have answered a different course's question. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The recovered existential is empty over the reals, which is why the claim is false.
 
 Squares of reals land in $[0,\\infty)$. The target $-1$ sits off that ray. Changing the universe to $\\mathbb C$ would make the claim true, because $i$ would be a witness. The stem named $\\mathbb R$, so that witness is unavailable.
 
@@ -5415,24 +5415,24 @@ so the statement is False.`,
 
 Negating an existential produces a universal of the negated predicate. To deny that some number exceeds $100$, every number must stay at or below it. The inequality flips from $>$ to $\\le$, not to $<$; $x=100$ must be included in the negation.
 
-A rushed solver who wrote $x<100$ would have left $100$ unaccounted for. The recovered negation includes the boundary.
+Writing $x<100$ would have left $100$ unaccounted for. Working from the isolated values, $x<100$ is the figure that is checked, not the detour that produced $100$. The recovered negation includes the boundary.
 
-Denying "some $x>100$" means every $x$ satisfies the complementary inequality. Completing $>$ gives $\\le$, including $100$. A solver who wrote $x<100$ would have left a hole at $100$, and $100$ is a real number in the universe.
+Denying "some $x>100$" means every $x$ satisfies the complementary inequality. Completing $>$ gives $\\le$, including $100$. Writing $x<100$ would have left a hole at $100$, and $100$ is a real number in the universe. That is the fork: $x<100$ belongs to the recovered isolation, $100$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-The recovered negation is a universal with a closed inequality. A solver who kept $\\exists$ and only flipped the inequality would have written another existential, which is not a negation. Mirror the quantifier, then close the cut.
+The recovered negation is a universal with a closed inequality. Keeping $\\exists$ and only flipped the inequality would have written another existential, which is not a negation. Once $\\exists$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Mirror the quantifier, then close the cut.
 
-A solver who wrote $\\forall x\\,(x<100)$ would have excluded $100$, yet $100>100$ is already false, so $100$ is not a witness of the original existential and must survive in the negation. The closed inequality $\\le$ is the recovered complementary cut.
+Writing $\\forall x\\,(x<100)$ would have excluded $100$, yet $100>100$ is already false, so $100$ is not a witness of the original existential and must survive in the negation. After isolating the unknown, the check is against $\\forall x\\,(x<100)$. The figure $100>100$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\forall x\\,(x<100)$ stays in the write-up. The closed inequality $\\le$ is the recovered complementary cut.
 
 so the statement is True.`,
       `**D.** → True
 
 Because $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every positive $x$. The order $\\forall x\\,\\exists y$ licenses that dependence: each $x$ gets its own $y$. A bigger real always exists.
 
-A rushed solver who tried to freeze one $y$ first would have been reading letter E's stronger claim. Dependence on $x$ is allowed here.
+Trying to freeze one $y$ first would have been reading letter E's stronger claim. Once $y$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Dependence on $x$ is allowed here.
 
 The recovered $\\forall x\\,\\exists y$ holds by $y=x+1$, For each positive $x$, pick $y=x+1$. Then $y>x$ holds, and $y$ is allowed to depend on $x$ because $\\exists y$ sits inside $\\forall x$. That recipe is extra arithmetic this letter is allowed: one new $y$ per $x$, not a scan the overview already displayed as a closed form.
 
-A solver who wanted a single $y$ for all $x$ would have been reading letter E.
+Wanting a single $y$ for all $x$ would have been reading letter E. That is the fork: $y$ belongs to the recovered isolation, $x$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is True.`,
       `**E.** → False
@@ -5443,7 +5443,7 @@ Now a single $y$ must be fixed first and then outrank every positive $x$. Whatev
 
 **2.** Try $y=10^{6}$: then $x=10^{6}+1$ still exceeds it. No finite champion works.
 
-**3.** A rushed solver who reused $y=x+1$ from letter D would have missed that $y$ is no longer allowed to depend on $x$. The extra arithmetic here is naming, for each candidate $y$, a larger positive $x$.
+**3.** Reusing $y=x+1$ from letter D would have missed that $y$ is no longer allowed to depend on $x$. The recovered comparison therefore keeps $y=x+1$ and does not substitute $x$. The extra arithmetic here is naming, for each candidate $y$, a larger positive $x$.
 
 What would make the reversed claim true? A largest positive real, which $\\mathbb R$ does not have.
 
@@ -6282,7 +6282,7 @@ $P$ true forces $Q$ true and $R$ true. A false $R$ would drag $Q$ and then $P$ d
 
 The unless-clause names $S$ as the escape. It does not name a second promise that a timely stop forces the show to proceed. Those are different English jobs, and the stem wrote only the first.
 
-A solver who wrote $S\\Rightarrow\\neg C$ would have turned the escape into a guarantee. That formula is the false relative in the neighbouring letter, and the recovered rule never asserted it. A 5 PM stop plus a power failure has $S$ true and $C$ true: $\\neg S\\Rightarrow C$ is idle because its antecedent is false, while $S\\Rightarrow\\neg C$ fails outright.
+Writing $S\\Rightarrow\\neg C$ would have turned the escape into a guarantee. Once $S\\Rightarrow\\neg C$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That formula is the false relative in the neighbouring letter, and the recovered rule never asserted it. A 5 PM stop plus a power failure has $S$ true and $C$ true: $\\neg S\\Rightarrow C$ is idle because its antecedent is false, while $S\\Rightarrow\\neg C$ fails outright.
 
 What would make a different translation correct? If the organizer had said "cancelled if and only if the rain continues," then both arrows would be signed. The stem signed one arrow.
 
@@ -6295,7 +6295,7 @@ $S\\Rightarrow\\neg C$ would say that stopping rain guarantees the concert happe
 
 Stopping rain removes one reason to cancel, not every reason. A 5 PM stop plus a power failure has $S$ true and $C$ true: $S\\lor C$ still holds, while $S\\Rightarrow\\neg C$ fails. That extra scenario is this letter's own arithmetic of cases, not a second translation of the unless-clause.
 
-A solver who treated unless as if-and-only-if would have accepted $S\\Rightarrow\\neg C$ as equivalent. Equivalence would require the concert to be impossible after a timely stop, which the rule never said.
+Treating unless as if-and-only-if would have accepted $S\\Rightarrow\\neg C$ as equivalent. The opposite verdict would need a different isolation than $S\\Rightarrow\\neg C$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Equivalence would require the concert to be impossible after a timely stop, which the rule never said.
 
 What would make $S\\Rightarrow\\neg C$ equivalent? A second promise that the concert proceeds whenever the rain stops. The stem wrote one unless-clause, not that second promise. The recovered rule is silent once $S$ is true, and silence is not $\\neg C$.
 
@@ -6310,9 +6310,9 @@ OR is symmetric, so $C\\lor S$ is the same formula. This is the unless-rule in d
 
 Inclusive or allows a timely stop and a cancellation together. That is exactly the power-failure day the overview left open: $S$ true, $C$ true, and $S\\lor C$ still true. Exclusive or would forbid that day, but the identity uses inclusive or.
 
-**1.** A solver who read $C\\lor S$ as "cancelled, or else the rain stopped, and not both" imported exclusive or. The recovered formula does not.
+**1.** Reading $C\\lor S$ as "cancelled, or else the rain stopped, and not both" imported exclusive or. The opposite verdict would need a different isolation than $C\\lor S$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered formula does not.
 
-**2.** A solver who thought $C\\lor S$ guaranteed a concert on dry evenings would have smuggled $S\\Rightarrow\\neg C$ back in. Disjunction only forbids the pair $\\neg S$ and $\\neg C$: rain continuing and the show going ahead. It is silent about every other combination.
+**2.** Thinking $C\\lor S$ guaranteed a concert on dry evenings would have smuggled $S\\Rightarrow\\neg C$ back in. That is the fork: $C\\lor S$ belongs to the recovered isolation, $S\\Rightarrow\\neg C$ belongs to the discarded mix. Disjunction only forbids the pair $\\neg S$ and $\\neg C$: rain continuing and the show going ahead. It is silent about every other combination.
 
 **3.** What would make $C\\lor S$ inequivalent? A second signed clause that cancelled the concert only when rain continued, or that forced the concert whenever rain stopped. The stem signed neither.
 
@@ -6327,7 +6327,7 @@ Once $S$ is true, the antecedent $\\neg S$ of the recovered rule is false, so th
 
 Reading a rescue into the escape clause is the trap. "Unless the rain stops" is not "if the rain stops, the show goes on." The recovered silence on $S$-true days is the whole content of this letter.
 
-A solver who wanted a guarantee would have needed $S\\Rightarrow\\neg C$, which letter B already rejected as inequivalent. What would change the verdict is an extra clause "and if the rain stops, the concert proceeds." The stem has no such clause.
+Wanting a guarantee would have needed $S\\Rightarrow\\neg C$, which letter B already rejected as inequivalent. The opposite verdict would need a different isolation than $S\\Rightarrow\\neg C$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. What would change the verdict is an extra clause "and if the rain stops, the concert proceeds." The stem has no such clause.
 
 so the statement is False.`,
       `**E.** → True
@@ -6338,7 +6338,7 @@ The recovered implication is $\\neg S\\Rightarrow C$. Its contrapositive is $\\n
 
 **2.** A concert that went ahead with rain still falling would be $\\neg C$ together with $\\neg S$. That pair falsifies $\\neg S\\Rightarrow C$, so it is not a model of the rule. The organizer's promise therefore really does force $S$ from $\\neg C$.
 
-**3.** A solver who wrote $\\neg C\\Rightarrow\\neg S$ negated without swapping and produced a different arrow. A solver who wrote $S\\Rightarrow\\neg C$ produced the converse of the recovered rule, which the power-failure day already kills.
+**3.** Writing $\\neg C\\Rightarrow\\neg S$ negated without swapping and produced a different arrow. The path that matches the stem therefore holds $\\neg C\\Rightarrow\\neg S$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Writing $S\\Rightarrow\\neg C$ produced the converse of the recovered rule, which the power-failure day already kills. That is why $S\\Rightarrow\\neg C$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 What would make this rewriting fail? A rule that was not an implication, or a biconditional that also forced cancellation whenever rain stopped. Against the recovered one-way unless-clause, the contrapositive is guaranteed.
 
@@ -6401,7 +6401,7 @@ $$A\\land(D\\lor L)=\\mathrm{T}\\land(\\mathrm{F}\\lor\\mathrm{T})=\\mathrm{T}.$
 
 Disability is not required once $L$ holds. The bracket is an or.
 
-A solver who wanted both hardship tests would have been running an and inside the bracket. That is a different rule. The recovered P row is a yes: age plus low income, disability unused.
+Wanting both hardship tests would have been running an and inside the bracket. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That is a different rule. The recovered P row is a yes: age plus low income, disability unused.
 
 The recovered table pays P.
 
@@ -6416,7 +6416,7 @@ Q is $67$, has a qualifying disability, and earns $\\$50{,}000$. Then $A$ is tru
 
 Q is $67$, has a qualifying disability, and earns $\\$50{,}000$. Then $A$ is true, $D$ is true, and $L$ is false, so $D\\lor L$ is true on the disability half. Q does qualify. The claim that income above $\\$20{,}000$ blocks Q ignores the OR in the bracket.
 
-Failing $L$ while $D$ holds leaves the OR true. Income is one interchangeable option, not a veto. A solver who treated the bracket as an and would have denied Q. The recovered table row for Q is a yes.
+Failing $L$ while $D$ holds leaves the OR true. Income is one interchangeable option, not a veto. Treating the bracket as an and would have denied Q. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The recovered table row for Q is a yes.
 
 What would make the claim true? A rule that joined disability and income by and, or that put income outside the bracket as a second gate. The stem put income inside an or with disability.
 
@@ -6427,7 +6427,7 @@ The claim says an income above $\\$20{,}000$ automatically disqualifies a senior
 
 Income is one of two interchangeable options inside the or. Failing $L$ while $D$ holds leaves the or true. High income is survivable.
 
-**1.** A solver who read "AND (disability OR income)" as "AND disability AND income" would have made high income fatal. That rewrite turns the recovered or into an and, and it would flip Q from yes to no.
+**1.** Reading "AND (disability OR income)" as "AND disability AND income" would have made high income fatal. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That rewrite turns the recovered or into an and, and it would flip Q from yes to no.
 
 **2.** Automatic disqualification would require $L$ to sit outside the bracket as a second gate, the way $A$ does. The stem put $L$ inside the or with $D$. Nothing outside the bracket can be substituted for age; either token inside the bracket can be substituted for the other.
 
@@ -6448,11 +6448,11 @@ Age $70$ makes $A$ true. No disability makes $D$ false. Income $\\$25{,}000$ sit
 
 P has income $\\$18{,}000$ and qualifies. This invented rider has $\\$25{,}000$ and does not. The $\\$7{,}000$ gap from P is the extra arithmetic that empties the bracket: $\\$18{,}000$ is below $\\$20{,}000$, $\\$25{,}000$ is not.
 
-A solver who thought "70 years is enough" would have been answering the next letter. Sufficiency of age is a different claim. Existence of a failing 70-year-old is this one, and the recovered third row is exactly that witness.
+Thinking "70 years is enough" would have been answering the next letter. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Sufficiency of age is a different claim. Existence of a failing 70-year-old is this one, and the recovered third row is exactly that witness.
 
 Existence here is a modelling question, not a scan of P or Q. The stem gave two riders who both qualify. To show that a 70-year-old can fail, a third file has to be written. The overview already wrote it: $A$ true, $D$ false, $L$ false.
 
-A solver who answered from P alone would have said every 70-year-old qualifies, because P does. P has $L$ true. Strip $L$ by crossing the $\\$20{,}000$ line and keep disability off, and the recovered conjunction dies. That is why the scenario exists, and why it is not P.
+Answering from P alone would have said every 70-year-old qualifies, because P does. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. P has $L$ true. Strip $L$ by crossing the $\\$20{,}000$ line and keep disability off, and the recovered conjunction dies. That is why the scenario exists, and why it is not P.
 
 The $\\$7{,}000$ gap from P is not a rounding story. P is below the cutoff and this invented rider is above it. Disability stays off in both files, age stays $70$ in both, and only $L$ flips. That single flip is enough to empty the bracket and produce the failing 70-year-old the claim asked for.
 
@@ -6465,7 +6465,7 @@ The invented 70-year-old with no disability and income $\\$25{,}000$ has $A$ tru
 
 **1.** A ticket that skipped the hardship tests would need a different rule, for instance Discount $\\Leftrightarrow A$. The stem wrote the bracket.
 
-**2.** A solver who saw P and Q both qualify and concluded "age is enough" sampled only the two given files. Both of those files have a true bracket. The third recovered row is the file that separates necessity from sufficiency.
+**2.** Seeing P and Q both qualify and concluding "age is enough" sampled only the two given files. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Both of those files have a true bracket. The third recovered row is the file that separates necessity from sufficiency.
 
 **3.** What would make age sufficient? Dropping the bracket, or filling it automatically for every senior. Against the recovered rule, a senior with empty bracket is unpaid.
 
@@ -6528,13 +6528,13 @@ They agree, so the recovered base case holds.
 
 Starting at $n=0$ would be a different domain: the stem said positive integers, and the empty sum is not the object under test. Starting at $n=2$ would skip the first positive integer and leave $n=1$ unproved.
 
-A solver who thought the base case was $n=10$ would have been doing the sanity check in the last letter, not the inductive start. The number $55$ is a later check of the formula, not the first falling domino.
+Thinking the base case was $n=10$ would have been doing the sanity check in the last letter, not the inductive start. The path that matches the stem therefore holds $n=10$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. The number $55$ is a later check of the formula, not the first falling domino.
 
 The recovered base is $n=1$, and both sides equal $1$.
 
 The two sides of the base case are not a slogan. The left side at $n=1$ is the single summand $1$. The right side is a product divided by $2$. They happen to agree, which is why the first domino falls. A mismatch at $n=1$ would stop the whole induction, no matter how pretty the $k\\to k+1$ algebra looked later.
 
-A solver who verified $n=1$ by quoting the closed form without computing $\\frac{1\\cdot 2}{2}$ would have skipped the check the claim actually made. The claim is that the equality holds at $1$, and the recovered arithmetic is $1=1$.
+Verifying $n=1$ by quoting the closed form without computing $\\frac{1\\cdot 2}{2}$ would have skipped the check the claim actually made. The stem's recovered values line up with $n=1$, whereas $\\frac{1\\cdot 2}{2}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $n=1$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim is that the equality holds at $1$, and the recovered arithmetic is $1=1$.
 
 so the statement is True.`,
       `**B.** → True
@@ -6543,7 +6543,7 @@ After the recovered base $n=1$, infinitely many remaining $n$ have to be covered
 
 Checking $k$ and $k+1$ as two numerical examples is not the same as a general step from $k$ to $k+1$. Two numbers topple two more dominoes by hand and say nothing about the rest of the line.
 
-**1.** A solver who wrote "check $n=2$ next" without algebra would have been extending the finite list in the neighbouring letter, not running induction. Five numerical checks are evidence. The general step is a proof.
+**1.** Writing "check $n=2$ next" without algebra would have been extending the finite list in the neighbouring letter, not running induction. The opposite verdict would need a different isolation than $n=2$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Five numerical checks are evidence. The general step is a proof.
 
 **2.** The induction hypothesis is not "the formula looks plausible at $k$." It is the exact equality $1+\\cdots+k=k(k+1)/2$, used as a licence to replace the left-hand block when $k+1$ is appended.
 
@@ -6562,7 +6562,7 @@ Checking $n=1,2,3,4,5$ confirms five instances and says nothing about $n=6$. A p
 
 Checking $n=1,2,3,4,5$ confirms five instances and says nothing about $n=6$. A proof by induction needs the general step from $k$ to $k+1$. Five numerical checks are evidence, not a complete inductive proof. Infinitely many unchecked $n$ remain.
 
-A solver who thought "five is enough to see the pattern" would have been doing empirical science, not induction. What would make five checks a complete proof? A domain with only five positive integers, which is not $\\mathbb N$.
+Thinking "five is enough to see the pattern" would have been doing empirical science, not induction. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. What would make five checks a complete proof? A domain with only five positive integers, which is not $\\mathbb N$.
 
 The recovered method is base plus general step. A finite checklist is neither piece, except that $n=1$ happens to be the base and is not enough on its own.
 
@@ -6577,15 +6577,15 @@ $$=\\frac{(k+1)(k+2)}{2}.$$
 
 That is the closed form with $n$ replaced by $k+1$, so the inductive step holds.
 
-A solver who stopped after writing $\\frac{k(k+1)}{2}+(k+1)$ without a common denominator would have left the step unfinished. Factoring out $k+1$ is the extra move: the two terms $k(k+1)$ and $2(k+1)$ share the factor $k+1$, and what remains is $k+2$ in the numerator.
+Stopping after writing $\\frac{k(k+1)}{2}+(k+1)$ without a common denominator would have left the step unfinished. The recovered isolation is checked against the claim using $\\frac{k(k+1)}{2}+(k+1)$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Factoring out $k+1$ is the extra move: the two terms $k(k+1)$ and $2(k+1)$ share the factor $k+1$, and what remains is $k+2$ in the numerator.
 
 **1.** The left side after appending is $1+\\cdots+k+(k+1)$, not a new series built from scratch. The induction hypothesis replaces the first $k$ terms.
 
-**2.** A solver who checked the identity only at $k=4$ would have a numerical instance, not a proof for every $k$. The algebra does not mention a particular $k$.
+**2.** Checking the identity only at $k=4$ would have a numerical instance, not a proof for every $k$. That is the fork: $k=4$ belongs to the recovered isolation, $k$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The algebra does not mention a particular $k$.
 
 The recovered calculation is the neighbouring-domino step.
 
-The common-denominator line is the one place a rushed solver drops a $2$. Writing $\\frac{k(k+1)}{2}+(k+1)$ as $\\frac{k(k+1)+(k+1)}{2}$ would be missing the factor that turns $k+1$ into $2(k+1)$. Then the numerator would be $(k+1)(k+1)=(k+1)^2$, which is not the triangular formula at $k+1$.
+The common-denominator line is the one place it is tempting to drop a $2$. Writing $\\frac{k(k+1)}{2}+(k+1)$ as $\\frac{k(k+1)+(k+1)}{2}$ would be missing the factor that turns $k+1$ into $2(k+1)$. Then the numerator would be $(k+1)(k+1)=(k+1)^2$, which is not the triangular formula at $k+1$.
 
 The recovered target is $\\frac{(k+1)(k+2)}{2}$, matching $n=k+1$ in the original closed form. That match is why the neighbouring domino falls. Checking the same algebra at a single $k$, say $k=3$, can catch an arithmetic slip, but it is not a substitute for keeping $k$ unspecified.
 
@@ -6600,15 +6600,15 @@ $$\\frac{10\\cdot 11}{2}=55.$$
 
 That is a sanity check on the formula, not a substitute for the inductive step. Adding $1$ through $10$ by hand would agree, but the formula is the point of the check.
 
-A solver who treated $n=10$ as a base case would have started the induction too late. The recovered base is $n=1$; $55$ is a later numerical reading.
+Treating $n=10$ as a base case would have started the induction too late. The opposite verdict would need a different isolation than $n=10$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered base is $n=1$; $55$ is a later numerical reading.
 
-A solver who thought "$55$ proves the claim for all $n$" would have confused a check with a proof. One true instance never covers infinitely many remaining $n$. The inductive step is what covers them.
+Thinking "$55$ proves the claim for all $n$" would have confused a check with a proof. The stem's recovered values line up with $55$, whereas $n$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $55$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. One true instance never covers infinitely many remaining $n$. The inductive step is what covers them.
 
 The recovered value at $n=10$ is $55$.
 
 Hand addition $1+2+\\cdots+10=55$ agrees with the closed form, which is why $55$ is a useful check. It is still one instance. The inductive proof is what makes $55$ expected rather than lucky.
 
-A solver who started the induction at $n=10$ would have left $n=1$ through $n=9$ to a different argument. The recovered base is $n=1$. This letter never claims that $55$ proves the formula; it claims that the formula, already under proof, evaluates to $55$ at $n=10$.
+Starting the induction at $n=10$ would have left $n=1$ through $n=9$ to a different argument. The stem's recovered values line up with $n=10$, whereas $n=9$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $n=10$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered base is $n=1$. This letter never claims that $55$ proves the formula; it claims that the formula, already under proof, evaluates to $55$ at $n=10$.
 
 so the statement is True.`,
     ],
@@ -6657,7 +6657,7 @@ Take $P$ as "inflation increases" and $Q$ as "unemployment decreases." The origi
 
 **1.** A model with falling unemployment and stable inflation has $Q$ true and $P$ false. Then $P\\Rightarrow Q$ holds (false antecedent) while $Q\\Rightarrow P$ fails. The original can be true while this rewriting is false.
 
-**2.** A solver who heard "must" and thought "sufficient" would have kept the original arrow. Sufficient names the tail. The dictionary in the overview already placed "P must happen for Q" on the converse row.
+**2.** Hearing "must" and thinking "sufficient" would have kept the original arrow. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Sufficient names the tail. The dictionary in the overview already placed "P must happen for Q" on the converse row.
 
 **3.** What would make the quoted sentence equivalent? If the original had been $Q\\Rightarrow P$, or a biconditional $P\\Leftrightarrow Q$. The stem wrote a one-way "if inflation, then unemployment."
 
@@ -6672,7 +6672,7 @@ so the statement is False.`,
 
 "$P$ is sufficient for $Q$" is $P\\Rightarrow Q$. The original claim is "if inflation increases, then unemployment decreases," the same arrow. Sufficient names the tail of the arrow. This is equivalent wording, not a stronger claim.
 
-A solver who swapped sufficient with necessary would have landed on the converse $Q\\Rightarrow P$, which the neighbouring letter already rejected. The recovered dictionary puts "P is sufficient for Q" on the original row and "P is necessary for Q" on the converse row.
+Swapping sufficient with necessary would have landed on the converse $Q\\Rightarrow P$, which the neighbouring letter already rejected. The opposite verdict would need a different isolation than $Q\\Rightarrow P$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered dictionary puts "P is sufficient for Q" on the original row and "P is necessary for Q" on the converse row.
 
 The claim does not say that inflation is the only route to falling unemployment. Sufficiency never claimed uniqueness. It claimed that an inflation increase is enough, which is exactly $P\\Rightarrow Q$.
 
@@ -6689,7 +6689,7 @@ so the statement is True.`,
 
 "$Q$ can only decrease if $P$" is "$Q$ only if $P$," i.e. $Q\\Rightarrow P$. Again the converse. The original does not restrict unemployment decreases to inflation-increase days. "Only if" is the phrase most often misread as the original arrow.
 
-A solver who treated "only if" as "if" would have accepted this as equivalent. "Can only" is necessity language pointing at $P$ for $Q$, which reverses the recovered arrow.
+Treating "only if" as "if" would have accepted this as equivalent. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. "Can only" is necessity language pointing at $P$ for $Q$, which reverses the recovered arrow.
 
 What would make it equivalent? If the original had been $Q\\Rightarrow P$. The stem's claim is $P\\Rightarrow Q$.
 
@@ -6698,7 +6698,7 @@ so the statement is False.`,
 
 Negate both halves of $P\\Rightarrow Q$ and swap: $\\neg Q\\Rightarrow\\neg P$, "if unemployment does not decrease, then inflation does not increase." That is the contrapositive of the original, hence equivalent. It is the one rewriting that always matches.
 
-A solver who negated without swapping would have written the inverse $\\neg P\\Rightarrow\\neg Q$, which pairs with the converse and is not equivalent. Inverse and converse stand or fall together; original and contrapositive stand or fall together.
+Negating without swapping would have written the inverse $\\neg P\\Rightarrow\\neg Q$, which pairs with the converse and is not equivalent. The path that matches the stem therefore holds $\\neg P\\Rightarrow\\neg Q$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. Inverse and converse stand or fall together; original and contrapositive stand or fall together.
 
 **1.** The recovered dictionary already listed "if not Q, then not P" on the equivalent row. This letter is that row, filled with the inflation-unemployment words.
 
@@ -6708,7 +6708,7 @@ The recovered contrapositive is $\\neg Q\\Rightarrow\\neg P$.
 
 Contrapositive is not a second economic story. It is the same story read from a day when unemployment failed to fall. On such a day the original forbids an inflation increase, which is exactly $\\neg Q\\Rightarrow\\neg P$.
 
-A solver who wrote "if inflation does not increase, then unemployment does not decrease" wrote the inverse, $\\neg P\\Rightarrow\\neg Q$. That sentence pairs with the converse. The recovered split is the same two-pair split as the contract and study-hours tasks: original with contrappositive, converse with inverse.
+Writing "if inflation does not increase, then unemployment does not decrease" wrote the inverse, $\\neg P\\Rightarrow\\neg Q$. Once $\\neg P\\Rightarrow\\neg Q$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That sentence pairs with the converse. The recovered split is the same two-pair split as the contract and study-hours tasks: original with contrappositive, converse with inverse.
 
 A day of rising inflation and falling unemployment satisfies original and contrappositive together. A day of stable inflation and falling unemployment satisfies the original (false $P$) and kills the converse. Those two days already show why contrappositive tracks the original and converse does not. This letter is the tracking pair, filled with unemployment-does-not-decrease language.
 
@@ -6717,7 +6717,7 @@ so the statement is True.`,
 
 "$Q$ is necessary for $P$" is $P\\Rightarrow Q$: the arrow points at the necessary condition. Falling unemployment is named as necessary for inflation to increase, which is exactly the original implication. Necessary names the head of the arrow.
 
-A solver who put "necessary" on inflation would have been reading letter A's converse. One true arrow, two true vocabulary sentences: sufficient on $P$, necessary on $Q$.
+Putting "necessary" on inflation would have been reading letter A's converse. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. One true arrow, two true vocabulary sentences: sufficient on $P$, necessary on $Q$.
 
 The claim does not say unemployment must fall for other reasons, and it does not say inflation is the only cause. It says that if inflation increases, unemployment decreases, rewritten as a necessity label on $Q$.
 
@@ -6778,7 +6778,7 @@ The pattern worth memorising: **the necessary condition is the one the arrow poi
 
 The log gives $D\\Rightarrow C$ and, today, $D$ true: Flight 202 is delayed. Modus ponens yields $C$. Flight 305 is cancelled today. Rule (1) is loaded and its trigger has fired. No other clue is needed for this one conclusion.
 
-A solver who waited for clue (2) would have been answering the overtime letter. Cancellation does not need overtime. Clue (2) mentions $O$, which this letter never asks about.
+Waiting for clue (2) would have been answering the overtime letter. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Cancellation does not need overtime. Clue (2) mentions $O$, which this letter never asks about.
 
 What would block the cancellation conclusion? If (3) had recorded an on-time Flight 202, rule (1) would be idle. The log recorded a delay.
 
@@ -6793,26 +6793,26 @@ so the statement is True.`,
 
 From $D\\Rightarrow C$ and $D$ true, cancellation $C$ follows. Premise (2) is $C\\Rightarrow O$. Modus ponens again yields $O$. The ground crew works overtime today. The recovered cascade is $D\\longrightarrow C\\longrightarrow O$.
 
-A solver who fired only the first modus ponens would have stopped at cancellation. Overtime needs the second arrow. Both arrows are in the log, and today's delay loads them in sequence.
+Firing only the first modus ponens would have stopped at cancellation. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Overtime needs the second arrow. Both arrows are in the log, and today's delay loads them in sequence.
 
-A solver who thought overtime could fail while 305 was cancelled would have broken (2). Once $C$ is true, (2) forbids $\\neg O$.
+Thinking overtime could fail while 305 was cancelled would have broken (2). That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Once $C$ is true, (2) forbids $\\neg O$.
 
 The recovered chain pins $O$ true.
 
 The second modus ponens is not optional colour. $O$ is not mentioned in (1) or (3). Cancellation is an intermediate fact, recovered from the first arrow, then fed into (2). Drop either arrow and overtime is no longer forced.
 
-A solver who wrote $D\\Rightarrow O$ as a single remembered slogan would have skipped the intermediate $C$. The log never wrote $D\\Rightarrow O$. It wrote two implications and one observation, and the recovered cascade is their composition.
+Writing $D\\Rightarrow O$ as a single remembered slogan would have skipped the intermediate $C$. After isolating the unknown, the check is against $D\\Rightarrow O$. The figure $C$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $D\\Rightarrow O$ stays in the write-up. The log never wrote $D\\Rightarrow O$. It wrote two implications and one observation, and the recovered cascade is their composition.
 
 so the statement is True.`,
       `**C.** → True
 
 Clues (1) and (3) mention only $D$ and $C$. From those two you obtain $C$ and then stop: the letter $O$ never appears. Without (2) there is no bridge from cancellation to overtime. Clue (2) is the indispensable bridge.
 
-A solver who thought "cancelled flights always mean overtime" would have imported a background fact. In this log, overtime is mentioned only in (2). Drop (2) and a model with $D$ true, $C$ true, and $O$ false satisfies the remaining clues.
+Thinking "cancelled flights always mean overtime" would have imported a background fact. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. In this log, overtime is mentioned only in (2). Drop (2) and a model with $D$ true, $C$ true, and $O$ false satisfies the remaining clues.
 
 **1.** Essential here means: the overtime conclusion is not a consequence of (1) and (3) alone. It is a consequence of (1), (2), and (3) together. That is a claim about derivability, not a claim that (2) is the only interesting sentence in the log.
 
-**2.** Letter A still follows from (1) and (3) without (2). Cancellation does not need the bridge. Overtime does. Mixing those two conclusions is how a solver decides (2) is optional.
+**2.** Letter A still follows from (1) and (3) without (2). Cancellation does not need the bridge. Overtime does. Mixing those two conclusions is how mixing those conclusions decides (2) is optional.
 
 **3.** What would make (2) inessential? A third clue that already asserted $O$, or a rewritten (1) that ran from delay straight to overtime. The given (1) stops at cancellation.
 
@@ -6829,7 +6829,7 @@ If $D$ is false, rule (1) has a false antecedent and is silent. It does not yiel
 
 If $D$ is false, rule (1) has a false antecedent and is silent. It does not yield $\\neg C$. Inferring "no delay, so no cancellation" is the inverse of (1), which is not equivalent. A crew shortage could still cancel Flight $305$. The guarantee claimed here does not exist.
 
-A solver who treated (1) as a biconditional would have accepted the inverse. The recovered rule is one-way. What would make the claim true is $D\\Leftrightarrow C$, which the log does not state.
+Treating (1) as a biconditional would have accepted the inverse. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The recovered rule is one-way. What would make the claim true is $D\\Leftrightarrow C$, which the log does not state.
 
 Silence on a quiet day for Flight $202$ is the same idle-antecedent fact as the rain-stop day in the concert task.
 
@@ -6840,7 +6840,7 @@ From (3), $D$ is true. Then (1) forces $C$, and (2) forces $O$. Any assignment w
 
 From (3), $D$ is true. Then (1) forces $C$, and (2) forces $O$. Any assignment with $O$ false would have to break (2) once $C$ is true. There is no model of (1), (2), and (3) in which the crew is off duty. The three clues leave no leftover freedom.
 
-A solver who dropped (2) would have found such a scenario, which is why (2) is essential in letter C. With all three clues, overtime is pinned. The extra case work is: try $O$ false, derive $C$ false from (2)'s contrapositive, then $D$ false from (1)'s contrapositive, contradicting (3).
+Dropping (2) would have found such a scenario, which is why (2) is essential in letter C. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. With all three clues, overtime is pinned. The extra case work is: try $O$ false, derive $C$ false from (2)'s contrapositive, then $D$ false from (1)'s contrapositive, contradicting (3).
 
 so the statement is False.`,
     ],
@@ -6881,7 +6881,7 @@ Two further checks are worth making.
 
 The professor asserts $P\\Rightarrow Q$: at least 10 hours buys a pass. An implication is false in exactly one row, $P$ true and $Q$ false. That row is a student who studied at least 10 hours and did not pass, which is $P\\land\\neg Q$. The quoted negation matches that unique failure.
 
-It is a single counterexample, not another if-then rule. A solver who wrote "if they study 10 hours then they fail" would have produced $P\\Rightarrow\\neg Q$, a rival policy, not the negation of this one.
+It is a single counterexample, not another if-then rule. Writing "if they study 10 hours then they fail" would have produced $P\\Rightarrow\\neg Q$, a rival policy, not the negation of this one. That is why $P\\Rightarrow\\neg Q$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The recovered negation is the failure row $P\\land\\neg Q$. Anna, who skips studying and still passes, is a different row and is not this letter's witness.
 
@@ -6896,7 +6896,7 @@ The converse is $Q\\Rightarrow P$. Anna: $P$ false (no studying), $Q$ true (pass
 
 The converse is $Q\\Rightarrow P$. Anna: $P$ false (no studying), $Q$ true (pass). Then $Q\\Rightarrow P$ fails, while $P\\Rightarrow Q$ holds because its antecedent is false. A true original does not force a true converse. The professor never said that *only* $10$-hour students pass.
 
-Anna is the extra file this letter needs. She does not repeat the overview's pairing chart; she instantiates the converse's failure row. A solver who thought "the professor's claim is true, so every relative is true" would have mixed the pairs.
+Anna is the extra file this letter needs. She does not repeat the overview's pairing chart; she instantiates the converse's failure row. Thinking "the professor's claim is true, so every relative is true" would have mixed the pairs. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is False.`,
       `**C.** → True
@@ -6905,7 +6905,7 @@ Anna is $P$ false, $Q$ true. The converse "every passer studied $10$ hours" is f
 
 Anna is $P$ false, $Q$ true. The converse "every passer studied $10$ hours" is false of her. The original only constrains students with $P$ true, so she is outside its scope. She is a counterexample to the converse and not to the original. Both halves of the statement hold.
 
-A solver who used Anna against the original would have been testing the idle row. False "if" cannot refute $P\\Rightarrow Q$.
+Using Anna against the original would have been testing the idle row. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. False "if" cannot refute $P\\Rightarrow Q$.
 
 so the statement is True.`,
       `**D.** → False
@@ -6914,7 +6914,7 @@ The inverse is $\\neg P\\Rightarrow\\neg Q$. The contrapositive is $\\neg Q\\Rig
 
 The inverse is $\\neg P\\Rightarrow\\neg Q$. The contrapositive is $\\neg Q\\Rightarrow\\neg P$. The arrows run opposite ways. Anna makes the inverse false ($\\neg P$ true, $\\neg Q$ false) and leaves the contrapositive untouched (she is not a failure). They are not equivalent; the inverse pairs with the converse.
 
-A solver who treated inverse and contrapositive as two names for "the backwards one" would have accepted this letter. Swap-and-negate of the original is the contrapositive, not the inverse.
+Treating inverse and contrapositive as two names for "the backwards one" would have accepted this letter. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Swap-and-negate of the original is the contrapositive, not the inverse.
 
 What would make them equivalent? Nothing in general: Anna already separates them. Inverse false, contrapositive idle-to-true.
 
@@ -6923,7 +6923,7 @@ so the statement is False.`,
 
 From a known failure $\\neg Q$, the recovered contrapositive $\\neg Q\\Rightarrow\\neg P$ yields $\\neg P$: the student studied less than 10 hours. That is modus tollens on the professor's claim. The inference is valid because the contrapositive inherits the original's guarantee.
 
-A solver who concluded "they studied at least 10 hours" from a failure would have run the original forward from a false $Q$, which is not licensed. False $Q$ does not tell you $P$. It tells you $\\neg P$, once the contrapositive is in hand.
+Concluding "they studied at least 10 hours" from a failure would have run the original forward from a false $Q$, which is not licensed. That is why $Q$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. False $Q$ does not tell you $P$. It tells you $\\neg P$, once the contrapositive is in hand.
 
 **1.** Anna is not a counterexample to this inference. Anna passed, so $\\neg Q$ is false of her and modus tollens never fires.
 
@@ -6935,7 +6935,7 @@ The recovered contrapositive licenses $\\neg P$ from $\\neg Q$.
 
 Modus tollens is contrappositive plus the known $\\neg Q$. The professor's claim, assumed true, becomes $\\neg Q\\Rightarrow\\neg P$, and a recorded fail loads the antecedent. The hours conclusion is $\\neg P$, under $10$ hours, not "we have no information."
 
-A solver who said "maybe they studied $10$ hours and the professor was wrong" has dropped the standing assumption that the claim holds. This letter is an inference from the claim, not a test of the claim. Anna still does not affect it: she is a passer, so $\\neg Q$ is false of her.
+Saying "maybe they studied $10$ hours and the professor was wrong" has dropped the standing assumption that the claim holds. The recovered isolation is checked against the claim using $10$, which is the figure the sessions actually produce. This letter is an inference from the claim, not a test of the claim. Anna still does not affect it: she is a passer, so $\\neg Q$ is false of her.
 
 so the statement is True.`,
     ],
@@ -6972,7 +6972,7 @@ The **converse** $Q \\Rightarrow P$, “every passer studied 10 hours”, is ref
 
 The clause is $F\\Rightarrow P$: miss the deadline, then a penalty applies. "$F$ is sufficient for $P$" is that same arrow. Missing the deadline is enough, on its own, to trigger the fee. Sufficient names the tail of the signed clause, not every other breach.
 
-A solver who wanted lateness to be necessary as well would have been reading the converse. Necessity of $F$ for $P$ would mean every penalty proves a missed deadline, which the clause never said.
+Wanting lateness to be necessary as well would have been reading the converse. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Necessity of $F$ for $P$ would mean every penalty proves a missed deadline, which the clause never said.
 
 The recovered original is this sufficient-condition sentence. Other breaches can still trigger fees; sufficiency of lateness does not forbid them.
 
@@ -6985,7 +6985,7 @@ so the statement is True.`,
 
 The converse $P\\Rightarrow F$ would make every penalty a proof of lateness. An on-time but faulty job has $F$ false and $P$ true: the original holds because its antecedent is false, while the converse fails. The clause does not guarantee the converse. Contracts fine people for other things.
 
-That faulty-but-punctual job is extra case work. A solver who thought "penalty means late" imported the converse as if it were signed. It was not.
+That faulty-but-punctual job is extra case work. Thinking "penalty means late" imported the converse as if it were signed. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. It was not.
 
 **1.** The recovered pairing already split original-plus-contrapositive from converse-plus-inverse. Signing $F\\Rightarrow P$ buys the first pair, not the second.
 
@@ -7006,7 +7006,7 @@ so the statement is False.`,
 
 Swap and negate the recovered clause $F\\Rightarrow P$ to get $\\neg P\\Rightarrow\\neg F$: no penalty, therefore the contractor did not miss the deadline. That is the contrapositive, so it is guaranteed by the clause. Signing the clause commits you to this rewriting too.
 
-A solver who wrote $\\neg F\\Rightarrow\\neg P$ would have produced the inverse, which lives in the other pair. Inverse is a promise that punctual work is never fined, and the clause never made that promise.
+Writing $\\neg F\\Rightarrow\\neg P$ would have produced the inverse, which lives in the other pair. Keeping $\\neg F\\Rightarrow\\neg P$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Inverse is a promise that punctual work is never fined, and the clause never made that promise.
 
 The recovered first pair is original together with this contrapositive. Both true, or both false. The signed clause is true, so this rewriting is true.
 
@@ -7019,7 +7019,7 @@ so the statement is True.`,
 
 The inverse $\\neg F\\Rightarrow\\neg P$ says punctual contractors are never fined. The same on-time faulty job has $\\neg F$ true and $P$ true, so the inverse fails while the original stands. The inverse is a promise about other breaches that the clause never made.
 
-A solver who thought "finish on time and you are safe" would have signed a different contract. The recovered clause is silent about quality, safety, and every breach except lateness.
+Thinking "finish on time and you are safe" would have signed a different contract. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The recovered clause is silent about quality, safety, and every breach except lateness.
 
 **1.** Inverse pairs with converse. The faulty-but-punctual job kills both together. Killing the inverse does not touch $F\\Rightarrow P$.
 
@@ -7042,7 +7042,7 @@ The converse $P\\Rightarrow F$ has contrapositive $\\neg F\\Rightarrow\\neg P$, 
 
 The faulty-but-punctual job makes converse and inverse false together, while the signed clause stays true. That is the pair-split this chapter keeps repeating: original with contrapositive, converse with inverse.
 
-A solver who thought inverse tracked the original would have been using the wrong pair. Swap-and-negate of the converse is the inverse, not swap-and-negate of the original.
+Thinking inverse tracked the original would have been using the wrong pair. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Swap-and-negate of the converse is the inverse, not swap-and-negate of the original.
 
 The recovered pairing holds for this clause and for every other conditional.
 
@@ -7095,39 +7095,39 @@ A contractor who finishes on time but delivers faulty work can still be fined: $
 
 Eligibility is the recovered $G\\land(C\\lor W)$. Student M has GPA $3.7$ so $G$ true, credits $50<60$ so $C$ false, and no waiver so $W$ false. Then $C\\lor W$ is false, and the conjunction fails. M is not eligible. The GPA sits outside the bracket and cannot fill it.
 
-A solver who let $3.7$ override the credit shortfall would have treated GPA as filling the bracket. It does not. The unless-clause waives credits, not GPA, and M has not even received that waiver.
+Letting $3.7$ override the credit shortfall would have treated GPA as filling the bracket. Keeping $3.7$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. It does not. The unless-clause waives credits, not GPA, and M has not even received that waiver.
 
 The recovered M row is a no: true outer conjunct, empty bracket.
 
 M is $10$ credits short and has no waiver. GPA $3.7$ clears $G$ and cannot be spent as a substitute for the missing credits. The recovered formula puts $G$ outside the bracket on purpose: the Dean's unless-clause waives $C$, not $G$, and M has not received even that waiver.
 
-A solver who paid M because $3.7$ "looks strong" would have been grading a transcript instead of evaluating $G\\land(C\\lor W)$. Strength of GPA above $3.5$ is already fully used once $G$ is true. The empty bracket remains empty.
+Paying M because $3.7$ "looks strong" would have been grading a transcript instead of evaluating $G\\land(C\\lor W)$. Working from the isolated values, $3.7$ is the figure that is checked, not the detour that produced $G\\land(C\\lor W)$. That contrast is the reason the verdict goes the way it does. Strength of GPA above $3.5$ is already fully used once $G$ is true. The empty bracket remains empty.
 
 so the statement is False.`,
       `**B.** → True
 
 Student N has GPA $3.6$ so $G$ true, credits $45<60$ so $C$ false, and a waiver so $W$ true. Then $C\\lor W$ is true and the conjunction holds. N is eligible despite being $15$ credits short. The waiver exists for exactly that shortfall.
 
-A solver who denied N because $45<60$ would have ignored the unless-clause. Credits and waiver are alternatives inside the recovered bracket. Either one fills it.
+Denying N because $45<60$ would have ignored the unless-clause. Once $45<60$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Credits and waiver are alternatives inside the recovered bracket. Either one fills it.
 
 The recovered N row is a yes.
 
 N is $15$ credits short, worse than M on credits, and still eligible. The difference is $W$. The waiver is not a hint; it is a token inside the recovered or. Once $W$ is true, $C$ can fail by any margin.
 
-A solver who compared $45$ with $50$ and thought N was in worse shape than M would have ranked the wrong coordinate. Credits matter only when $W$ is false. N's $W$ is true. The recovered N row is a yes for that reason.
+Comparing $45$ with $50$ and thinking N was in worse shape than M would have ranked the wrong coordinate. So the letter reads the claim against $45$; $50$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $45$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Credits matter only when $W$ is false. N's $W$ is true. The recovered N row is a yes for that reason.
 
 so the statement is True.`,
       `**C.** → True
 
 Keep M's GPA $3.7$ and $50$ credits, and set $W$ true. Then $C\\lor W$ becomes true while $G$ stays true, so $G\\land(C\\lor W)$ turns true. M would become eligible. The waiver is the one thing missing from M's file.
 
-This is extra arithmetic on M's recovered file: flip one bit, $W$. Nothing else changes. A solver who thought M's $50$ credits were an independent veto would have missed that credits live inside the or with the waiver.
+This is extra arithmetic on M's recovered file: flip one bit, $W$. Nothing else changes. Thinking M's $50$ credits were an independent veto would have missed that credits live inside the or with the waiver. The path that matches the stem therefore holds $50$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does.
 
 N already has that bit flipped and is eligible. Granting M the same waiver puts M on N's side of the table, GPA still above $3.5$.
 
 M-with-waiver is not a new student. It is M's recovered file with one bit flipped. GPA stays $3.7$, credits stay $50$, and $W$ becomes true. Then the bracket fills and the conjunction turns true, matching N's recovered yes.
 
-A solver who thought $50$ credits were below a hard floor, waiver or not, would have put $C$ outside the bracket. The stem put $C$ inside the or with $W$. That is why this hypothetical changes the verdict on M.
+Thinking $50$ credits were below a hard floor, waiver or not, would have put $C$ outside the bracket. So the letter reads the claim against $50$; $C$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $50$ stays in the write-up. The stem put $C$ inside the or with $W$. That is why this hypothetical changes the verdict on M.
 
 so the statement is True.`,
       `**D.** → False
@@ -7138,14 +7138,14 @@ A waiver fills only the bracket $C\\lor W$. It cannot make $G$ true. A student w
 
 That $3.0$ student is extra case work, not M or N. Both given students have GPA at least $3.5$. The stem's "unless" sentence even says that with a waiver, only the GPA condition needs to be met, which still requires the GPA condition.
 
-A solver who treated a Dean's letter as a golden ticket would have skipped $G$. $G$ sits outside the bracket.
+Treating a Dean's letter as a golden ticket would have skipped $G$. The path that matches the stem therefore holds $G$ fixed and only then reads the claim. $G$ sits outside the bracket.
 
 so the statement is False.`,
       `**E.** → False
 
 GPA below $3.5$ makes $G$ false. Credits and waiver live inside the bracket and cannot repair a false outer conjunct. Even $W$ true and $C$ true leave $G\\land(C\\lor W)$ false when $G$ is false. No such eligible student exists. $G$ guards every entrance.
 
-A solver who stacked waiver plus $60$ credits as a substitute for GPA would have been moving those tokens outside the bracket. The recovered formula does not allow that move. The stem's unless-sentence even says that with a waiver, only the GPA condition needs to be met, which still requires the GPA condition.
+Stacking waiver plus $60$ credits as a substitute for GPA would have been moving those tokens outside the bracket. The recovered isolation is checked against the claim using $60$, which is the figure the sessions actually produce. The recovered formula does not allow that move. The stem's unless-sentence even says that with a waiver, only the GPA condition needs to be met, which still requires the GPA condition.
 
 **1.** Invent a student with GPA $3.0$, $60$ credits, and a waiver. Then $C$ and $W$ are both true, so the bracket is true, and $G$ is still false. The conjunction is false.
 
@@ -7202,11 +7202,11 @@ $$(M\\lor A)\\land T=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}.$$
 
 The reason bracket is an or; medical emergency alone fills it. An airline cancel is not required.
 
-A solver who wanted an airline cancel as well would have been running an and inside the bracket. The recovered M file is paid.
+Wanting an airline cancel as well would have been running an and inside the bracket. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered M file is paid.
 
 M bought $6$ days earlier than the cutoff. That gap is comfortable; the recovered $T$ is not sitting on day $14$ itself. Medical emergency fills the reason bracket without help from an airline cancel. The recovered and of two true halves pays the claim.
 
-A solver who wanted both $M$ and $A$ would have rewritten the or as an and. The policy lists two accepted reasons as alternatives. M used one.
+Wanting both $M$ and $A$ would have rewritten the or as an and. Working from the isolated values, $M$ is the figure that is checked, not the detour that produced $A$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The policy lists two accepted reasons as alternatives. M used one.
 
 Airline cancellation is unused in M's file, and that is allowed. The recovered or needs one accepted reason, not two. M's medical emergency is that one reason, and the recovered $20\\ge 14$ is the timing gate. Both true, payout true.
 
@@ -7215,7 +7215,7 @@ so the statement is True.`,
 
 Traveler N has an airline cancellation so $A$ true, hence $M\\lor A$ true, and purchased $5$ days out, so $T$ false. Then $(M\\lor A)\\land T$ is false. N is not paid. An impeccable reason does not repair a late purchase. $T$ sits outside the bracket, joined by AND.
 
-A solver who paid N out of sympathy for the airline cancel would have skipped the $14$-day gate. The recovered N row is a no.
+Paying N out of sympathy for the airline cancel would have skipped the $14$-day gate. That is why $14$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered N row is a no.
 
 Five days is $9$ days short of the cutoff. That gap is this letter's own comparison, not a second scan of M.
 
@@ -7230,11 +7230,11 @@ $T$ sits outside the bracket, joined by AND. If the policy was bought fewer than
 
 N is the named instance: $5<14$, unpaid. The extra generality is that the same block hits a medical-emergency late buyer, not only an airline-cancel late buyer. Invent a traveler with $M$ true, $A$ false, and purchase at $5$ days: the bracket is true and $T$ is still false, so still unpaid.
 
-A solver who thought a documented emergency could override timing would have moved $M$ outside the bracket. The recovered formula keeps $T$ as a non-negotiable outer conjunct.
+Thinking a documented emergency could override timing would have moved $M$ outside the bracket. That is why $M$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered formula keeps $T$ as a non-negotiable outer conjunct.
 
 Late purchase is a universal block, not a block for airline cancels only. Invent a medical-emergency buyer at $5$ days: $M$ true, $T$ false, unpaid, same as N. Invent an airline-cancel buyer at $13$ days: still $T$ false, still unpaid. The cutoff is $14$ days, recovered as a closed threshold $T\\Leftrightarrow$ (purchase day $\\ge 14$).
 
-A solver who paid a $13$-day buyer would have treated $14$ as approximate. The policy used a number. N at $5$ days is only the named instance of a rule that applies to every late file.
+Paying a $13$-day buyer would have treated $14$ as approximate. Working from the isolated values, $13$ is the figure that is checked, not the detour that produced $14$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The policy used a number. N at $5$ days is only the named instance of a rule that applies to every late file.
 
 so the statement is True.`,
       `**D.** → False
@@ -7245,7 +7245,7 @@ That change-of-mind traveler is extra case work. M and N both had an accepted re
 
 **1.** Sufficiency of $T$ would mean $(M\\lor A)\\land T$ collapses to $T$. That would drop the reason bracket. The policy kept both hurdles.
 
-**2.** A solver who saw M paid after buying $20$ days out and concluded "early purchase is enough" sampled a file that also had $M$ true. Strip the medical emergency and the recovered bracket goes empty.
+**2.** Seeing M paid after buying $20$ days out and concluding "early purchase is enough" sampled a file that also had $M$ true. After isolating the unknown, the check is against $20$. The figure $M$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $20$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Strip the medical emergency and the recovered bracket goes empty.
 
 **3.** What would make timing sufficient? A policy that paid any early buyer, reason irrelevant. The stem's if-and-only-if still demands $M$ or $A$.
 
@@ -7264,7 +7264,7 @@ The claim asks for a payout with $\\neg M$ and $\\neg T$, using only $A$. Even w
 
 The claim asks for a payout with $\\neg M$ and $\\neg T$, using only $A$. Even with $A$ true, $\\neg T$ still falsifies the outer AND. Traveler N is this pattern (airline cancel, late purchase) and receives nothing. An accepted reason substitutes for the other reason, never for the purchase date.
 
-A solver who thought "airline cancel is so official it overrides timing" would have moved $A$ outside the bracket. The recovered formula keeps $T$ as a non-negotiable outer conjunct.
+Thinking "airline cancel is so official it overrides timing" would have moved $A$ outside the bracket. Keeping $A$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recovered formula keeps $T$ as a non-negotiable outer conjunct.
 
 so the statement is False.`,
     ],
@@ -7307,7 +7307,7 @@ The second hurdle fails: **nothing is paid**, however blameless the cancellation
 
 The law is $P\\Rightarrow Q$ with $Q$ equal to eligibility, not the act of voting. Its unique failure is $P\\land\\neg Q$: a citizen who is not eligible to vote. The quoted sentence is that failure case, so it is the correct negation.
 
-A solver who wrote "a citizen who does not vote" would have swapped eligibility for turnout, which is the Maria trap in a neighbouring letter. Staying home does not make $Q$ false.
+Writing "a citizen who does not vote" would have swapped eligibility for turnout, which is the Maria trap in a neighbouring letter. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Staying home does not make $Q$ false.
 
 The recovered negation is the barred-citizen row, not a turnout story.
 
@@ -7320,13 +7320,13 @@ so the statement is True.`,
 
 John has $\\neg Q$ (not eligible). The recovered contrapositive $\\neg Q\\Rightarrow\\neg P$ yields $\\neg P$: John is not a citizen. That is modus tollens on the law. The conclusion is validly drawn because the contrapositive inherits the law's truth.
 
-A solver who concluded "John is a citizen" from ineligibility would have run the arrow backwards. Ineligibility of a citizen is exactly the failure row of the law, so a true law forbids that pair and forces $\\neg P$.
+Concluding "John is a citizen" from ineligibility would have run the arrow backwards. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Ineligibility of a citizen is exactly the failure row of the law, so a true law forbids that pair and forces $\\neg P$.
 
 Maria, who is eligible and stays home, never triggers this inference: her $Q$ is still true.
 
 John's ineligibility is $\\neg Q$. The law, assumed true, supplies $\\neg Q\\Rightarrow\\neg P$. Modus tollens writes $\\neg P$: John is not a citizen. That is valid reasoning from the law, not a sociological claim about why John stayed off the rolls.
 
-A solver who concluded "John might still be a citizen who forgot to register" has swapped eligibility for turnout again. Forgetting to register, in this stem, does not make $Q$ false. $Q$ false means barred. A barred citizen would already have broken the law, so a true law forbids that pair.
+Concluding "John might still be a citizen who forgot to register" has swapped eligibility for turnout again. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Forgetting to register, in this stem, does not make $Q$ false. $Q$ false means barred. A barred citizen would already have broken the law, so a true law forbids that pair.
 
 so the statement is True.`,
       `**C.** → False
@@ -7335,7 +7335,7 @@ $Q$ is eligibility, not the act of voting. Maria is a citizen who keeps her elig
 
 Q is eligibility, not the act of voting. Maria is a citizen who keeps her eligibility whether or not she registers. She has $P$ true and $Q$ true, which satisfies $P\\Rightarrow Q$. A counterexample would need a citizen barred from voting. Staying home does not flip $Q$.
 
-A solver who treated "did not cast a vote" as $\\neg Q$ would have manufactured a false counterexample. The recovered $Q$ is the right, not the turnout. Maria is law-abiding on both coordinates.
+Treating "did not cast a vote" as $\\neg Q$ would have manufactured a false counterexample. The recovered isolation is checked against the claim using $\\neg Q$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. The recovered $Q$ is the right, not the turnout. Maria is law-abiding on both coordinates.
 
 What would make Maria a counterexample? A law about actually voting, or a country that strips eligibility from citizens who skip registration. The stem's $Q$ is eligibility.
 
@@ -7346,14 +7346,14 @@ A non-citizen long-term resident who may vote has $Q$ true and $P$ false. That i
 
 A non-citizen long-term resident who may vote has $Q$ true and $P$ false. That is exactly how $Q\\Rightarrow P$ fails. The original law never forbids eligibility for non-citizens, so the converse can be false in such a country. The original only forces eligibility for citizens.
 
-That resident is extra case work the stem invites. A solver who thought "the law is true, so only citizens vote" would have smuggled in the converse.
+That resident is extra case work the stem invites. Thinking "the law is true, so only citizens vote" would have smuggled in the converse. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is True.`,
       `**E.** → True
 
 The inverse $\\neg P\\Rightarrow\\neg Q$ has contrapositive $Q\\Rightarrow P$, the converse. Those two always agree. The long-term resident who may vote has $Q$ true and $P$ false, which makes both converse and inverse false together. In a country with no such residents both could be true together. Shared truth value is the pairing, not a claim that either is true here.
 
-A solver who thought inverse tracks the original would have been using the wrong pair. Original tracks the contrapositive. Inverse tracks the converse.
+Thinking inverse tracks the original would have been using the wrong pair. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Original tracks the contrapositive. Inverse tracks the converse.
 
 **1.** Swap and negate $\\neg P\\Rightarrow\\neg Q$ and $Q\\Rightarrow P$ falls out. That algebraic check does not use the citizenship story. The resident is only a witness that the shared value can be false while the law stays true.
 
@@ -7404,7 +7404,7 @@ The memo's skeleton is: $P\\Rightarrow Q$, $Q$, therefore $P$. That is affirming
 
 The memo's skeleton is: $P\\Rightarrow Q$, $Q$, therefore $P$. That is affirming the consequent. A rival leaving the market can make $Q$ true while $P$ stays false: both premises hold and the conclusion fails. The premise licenses traffic in one direction only, and walking back along the arrow is not allowed. Invalid.
 
-A solver who thought "sales rose, so the budget must have risen" would have been repeating the memo. The extra case is the departing competitor.
+Thinking "sales rose, so the budget must have risen" would have been repeating the memo. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The extra case is the departing competitor.
 
 so the statement is False.`,
       `**B.** → False
@@ -7413,14 +7413,14 @@ The restatement is $P\\Rightarrow Q$, $\\neg P$, therefore $\\neg Q$: the invers
 
 The restatement is $P\\Rightarrow Q$, $\\neg P$, therefore $\\neg Q$: the inverse. The same rival-exit story has $\\neg P$ true and $Q$ true, so $\\neg Q$ is false. Still invalid. From "we did not increase the budget" the original conditional says nothing about sales. Concluding that sales fell is another walk in the wrong direction.
 
-A solver who thought "denying the if-part is safer" would have swapped one fallacy for another. Inverse is not modus tollens.
+Thinking "denying the if-part is safer" would have swapped one fallacy for another. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Inverse is not modus tollens.
 
 so the statement is False.`,
       `**C.** → True
 
 Now the premises are $P\\Rightarrow Q$ and $\\neg Q$, concluding $\\neg P$. That is modus tollens, equivalently running the contrapositive $\\neg Q\\Rightarrow\\neg P$. Valid. From "sales did not rise" to "the budget did not rise" is the one reshuffle that is safe.
 
-A solver who mixed this with letter B would have denied $P$ and concluded $\\neg Q$. The recovered safe move denies $Q$ and concludes $\\neg P$.
+Mixing this with letter B would have denied $P$ and concluded $\\neg Q$. So the letter reads the claim against $P$; $\\neg Q$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $P$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered safe move denies $Q$ and concludes $\\neg P$.
 
 The original memo affirmed $Q$ and concluded $P$, which is the illegal reverse walk. This restatement flips the observed fact to $\\neg Q$ and walks the legal contrapose. A departing competitor cannot produce "sales did not rise" while the implication $P\\Rightarrow Q$ holds and $P$ is true; if sales stayed flat, the budget cannot have been increased. That is why this rewrite is valid and the original memo is not.
 
@@ -7431,7 +7431,7 @@ so the statement is True.`,
 
 The memo needs the missing arrow $Q\\Rightarrow P$. Upgrading the premise to $P\\Leftrightarrow Q$ supplies both directions. Then observing $Q$ really does force $P$, and the original conclusion follows. A biconditional is the cheapest honest way to buy the converse alongside the original.
 
-A solver who kept $P\\Rightarrow Q$ and still wanted $P$ from $Q$ would have been affirming the consequent again. The extra repair is the second arrow, not a louder first arrow.
+Keeping $P\\Rightarrow Q$ and still wanted $P$ from $Q$ would have been affirming the consequent again. So the letter reads the claim against $P\\Rightarrow Q$; $Q$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $P\\Rightarrow Q$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The extra repair is the second arrow, not a louder first arrow.
 
 **1.** Original skeleton: $P\\Rightarrow Q$, $Q$, therefore $P$. Invalid, because $Q$ can arrive by other routes.
 
@@ -7452,7 +7452,7 @@ so the statement is True.`,
 
 "If it rains, the ground gets wet; the ground is wet; therefore it is raining" is $P\\Rightarrow Q$, $Q$, therefore $P$. Same form as the memo. A sprinkler plays the role of the departing competitor. Same fallacy, different story. Wet ground does not prove rain any more than rising sales prove a bigger marketing budget.
 
-A solver who thought the weather story was modus ponens would have started from rain rather than from wet ground.
+Thinking the weather story was modus ponens would have started from rain rather than from wet ground. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 so the statement is True.`,
     ],
@@ -7497,7 +7497,7 @@ $$\\sqrt{2}+(-\\sqrt{2})=0=\\frac{0}{1}$$
 
 which is rational. Two irrational inputs, rational sum: the universal claim fails on this pair. Both numbers qualify as inputs, and the promised property fails on a legitimate pair.
 
-A solver who rejected $-\\sqrt{2}$ as "not a real irrational" would have been inventing a restriction. Negatives of irrationals are irrational.
+Rejecting $-\\sqrt{2}$ as "not a real irrational" would have been inventing a restriction. Keeping $-\\sqrt{2}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Negatives of irrationals are irrational.
 
 The recovered pair is the classical cancellation. Other pairs such as $\\sqrt{8}+(-\\sqrt{8})$ would also work, but existence of one counterexample is the whole job. The claim named this pair, and the arithmetic lands on a rational.
 
@@ -7508,7 +7508,7 @@ so the statement is True.`,
 
 A $\\forall$ claim dies at the first counterexample. The pair $\\sqrt{2}$ and $-\\sqrt{2}$ is that counterexample, so no further pairs need be checked. One failure shows the statement is not a true universal. A claim carrying the word "always" is destroyed by a single failure.
 
-A solver who wanted a second pair such as $\\sqrt{8}+(-\\sqrt{8})$ would have been collecting evidence, not finishing a disproof.
+Wanting a second pair such as $\\sqrt{8}+(-\\sqrt{8})$ would have been collecting evidence, not finishing a disproof. The path that matches the stem therefore holds $\\sqrt{8}+(-\\sqrt{8})$ fixed and only then reads the claim.
 
 Letter A exhibited the pair. This letter only records the quantifier fact: universals do not survive a single miss. Proving the claim would have required an argument covering every irrational pair, which is the opposite workload. Disproof is the cheap direction, and it is already finished.
 
@@ -7521,7 +7521,7 @@ The target is "there is no largest prime." Its negation is "there is a largest p
 
 The target is "there is no largest prime." Its negation is "there is a largest prime." A contradiction proof opens with that negation, names the supposed largest prime $p$, and derives a contradiction. That is the correct first line. Opening with "there is no largest prime" would assume the conclusion.
 
-A solver who opened by exhibiting a big prime would have been proving existence of large primes, a different theorem.
+Opening by exhibiting a big prime would have been proving existence of large primes, a different theorem. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is True.`,
       `**D.** → False
@@ -7530,14 +7530,14 @@ Checking $x=1$ and $x=2$ proves those two instances only. Let $P(x)$ be $x^{2}<9
 
 Checking $x=1$ and $x=2$ proves those two instances only. Let $P(x)$ be $x^{2}<9$: it holds at $1$ and $2$ and fails at $3$. A universal claim needs an argument covering every $x$, not a two-point checklist. Any finite checklist leaves unchecked values that may fail.
 
-The extra sample $P(x):x^{2}<9$ is this letter's own arithmetic, not a scan from the overview. A solver who thought two checks cover $\\mathbb N$ would have treated a finite list as a universal proof.
+The extra sample $P(x):x^{2}<9$ is this letter's own arithmetic, not a scan from the overview. Thinking two checks cover $\\mathbb N$ would have treated a finite list as a universal proof. Once $\\mathbb N$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is False.`,
       `**E.** → True
 
 An $\\exists$ claim asks for one witness. Exhibiting a single $x$ with $P(x)$ true completes the proof. That is the standard existence argument, the mirror image of using one counterexample to kill a $\\forall$ claim. "There exists" asks for one witness and nothing more.
 
-A solver who demanded a second witness would have been proving a stronger "at least two" claim.
+Demanding a second witness would have been proving a stronger "at least two" claim. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The neighbouring universal about irrational sums needed one counterexample to die. An existential needs one example to live. Those two lopsided facts are the overview's table. This letter is the existence half of that table, not a second run of the $\\sqrt{2}$ pair.
 
@@ -7591,7 +7591,7 @@ The given rule is $P\\Rightarrow Q$. The dolphin argument runs the other way: it
 
 The given rule is $P\\Rightarrow Q$. The dolphin argument runs the other way: it lives in water, therefore it must be a fish, which is $Q\\Rightarrow P$. Plug the dolphin in: $Q$ is true and $P$ is false. An implication with a true "if" and a false "then" is false, so the converse fails and the argument is invalid.
 
-A solver who thought "water animal, so fish" would have been repeating the invalid converse.
+Thinking "water animal, so fish" would have been repeating the invalid converse. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 so the statement is True.`,
       `**B.** → True
@@ -7600,7 +7600,7 @@ The lizard argument starts from "does not live in water" ($\\neg Q$) and conclud
 
 The lizard argument starts from "does not live in water" ($\\neg Q$) and concludes "is not a fish" ($\\neg P$). That is the contrapositive $\\neg Q\\Rightarrow\\neg P$, which is equivalent to the given rule, so the argument is valid. From "no water" to "no fish" is the one form logically identical to the biology rule.
 
-A solver who thought this was the converse would have mixed swap-only with swap-and-negate.
+Thinking this was the converse would have mixed swap-only with swap-and-negate. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 so the statement is True.`,
       `**C.** → False
@@ -7609,7 +7609,7 @@ The snake argument starts from "not a fish" ($\\neg P$) and concludes "does not 
 
 The snake argument starts from "not a fish" ($\\neg P$) and concludes "does not live in water" ($\\neg Q$). That is the inverse. A water snake is not a fish and still lives in water: $\\neg P$ true, $Q$ true, so $\\neg Q$ false. The inverse therefore has a true hypothesis and a false conclusion. Inverse reasoning is not guaranteed. The first half of the claim (this is the inverse) is right; the "always valid" half is not.
 
-A solver who accepted both halves would have treated inverse as contrapositive. Water snakes are extra case work the stem invites.
+Accepting both halves would have treated inverse as contrapositive. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Water snakes are extra case work the stem invites.
 
 so the statement is False.`,
       `**D.** → True
@@ -7620,7 +7620,7 @@ $$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))\\equiv\\exists x\\,(P(x)\\land\\neg 
 
 In words: there exists a fish that does not live in water. That is the quoted sentence.
 
-A solver who wrote "all fish do not live in water" would have negated to another universal.
+Writing "all fish do not live in water" would have negated to another universal. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The dolphin, lizard, and snake files test converse, contrapose, and inverse of the original rule. This letter is a different job: negate the universal "all fish live in water." The recovered negation is an existential failure case, not a rival "no fish live in water." One dry fish would suffice, whether or not such a fish exists in nature. The claim only asks for the correct form.
 
@@ -7633,7 +7633,7 @@ A counterexample to $\\forall x\\,(P(x)\\Rightarrow Q(x))$ must satisfy $P$ and 
 
 A counterexample to $\\forall x\\,(P(x)\\Rightarrow Q(x))$ must satisfy $P$ and fail $Q$: some fish that does not live in water. The dolphin is not a fish, so $P$ is already false. It therefore never enters the "if" half of the universal claim, and living in water cannot refute "all fish live in water." The dolphin is the reverse of what is needed.
 
-A solver who used the dolphin against the original would have been using the converse's witness on the original. Letter A correctly uses the dolphin against the converse; this letter incorrectly uses it against the original.
+Using the dolphin against the original would have been using the converse's witness on the original. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Letter A correctly uses the dolphin against the converse; this letter incorrectly uses it against the original.
 
 so the statement is False.`,
     ],
@@ -7676,7 +7676,7 @@ The policy is $P\\Rightarrow Q$. The unique failure row is $P$ true and $Q$ fals
 
 The policy is $P\\Rightarrow Q$. The unique failure row is $P$ true and $Q$ false, that is $P\\land\\neg Q$: paid on time and did *not* get the discount. The offered sentence keeps both halves true ($P\\land Q$). That is the policy being honoured, not denied. The trap is flipping the wrong half of the conjunction.
 
-A solver who thought "paid and discounted" sounded like a negation because it restates the policy would have confused restatement with denial.
+Thinking "paid and discounting" sounded like a negation because it restates the policy would have confused restatement with denial. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is False.`,
       `**B.** → False
@@ -7685,14 +7685,14 @@ The policy $P\\Rightarrow Q$ constrains only punctual payers. It never says the 
 
 The policy $P\\Rightarrow Q$ constrains only punctual payers. It never says the discount arrives *only* through prompt payment. A late payer who still gets a holiday $5\\%$ has $P$ false and $Q$ true. Then $P\\Rightarrow Q$ holds (false antecedent), while the converse $Q\\Rightarrow P$ fails. One such customer separates the two.
 
-That holiday customer is extra case work. A solver who thought the policy locked the converse would have signed a different store rule.
+That holiday customer is extra case work. Thinking the policy locked the converse would have signed a different store rule. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 so the statement is False.`,
       `**C.** → True
 
 Alex paid on day $45$. Compare with the $30$-day line: $45>30$, so $P$ is false. Alex did not receive the discount, so $Q$ is false. An implication $P\\Rightarrow Q$ is true whenever $P$ is false, whatever $Q$ does. Alex therefore sits outside the policy's promise and cannot serve as a counterexample. A counterexample would need $P$ true and $Q$ false.
 
-The extra arithmetic is $45>30$, which is this letter's own comparison, not a scan of a roster. A solver who treated day $45$ as "almost day $30$" would have folded Alex into $P$.
+The extra arithmetic is $45>30$, which is this letter's own comparison, not a scan of a roster. Treating day $45$ as "almost day $30$" would have folded Alex into $P$. So the letter reads the claim against $45$; $P$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $45$ stays in the write-up.
 
 **1.** Hypothesis check: paying within $30$ days? Day $45$ fails, so $P$ is false.
 
@@ -7713,7 +7713,7 @@ The inverse is $\\neg P\\Rightarrow\\neg Q$: pay late and you get nothing. The p
 
 The inverse is $\\neg P\\Rightarrow\\neg Q$: pay late and you get nothing. The policy never speaks about late payers. A holiday promotion can still give a late payer the $5\\%$, making $\\neg P$ true and $Q$ true, so the inverse fails while the policy stands. The inverse forbids discounts to late payers, which the store is free to hand out anyway.
 
-A solver who thought "late means no discount" would have signed the inverse, not the policy.
+Thinking "late means no discount" would have signed the inverse, not the policy. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 so the statement is False.`,
       `**E.** → False
@@ -7722,7 +7722,7 @@ This statement denies the single rewriting that *is* guaranteed. "No discount, t
 
 This statement denies the single rewriting that *is* guaranteed. "No discount, therefore the payment was late" is the contrapositive $\\neg Q\\Rightarrow\\neg P$, which always carries the same truth value as the policy. Claiming that "only the original itself" is guaranteed is exactly wrong: the contrapositive is locked to it. The contrapositive does hold.
 
-A solver who treated all three relatives as optional extras would have dropped the one relative that is not optional.
+Treating all three relatives as optional extras would have dropped the one relative that is not optional. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 so the statement is False.`,
     ],
@@ -7765,7 +7765,7 @@ The regulation is $P\\Rightarrow Q$: revenue above $\\$1$ million forces an audi
 
 The regulation is $P\\Rightarrow Q$: revenue above $\\$1$ million forces an audit. Its negation is the single failure row $P\\land\\neg Q$: some company with revenue above $\\$1$ million that did not file. The quoted sentence is $P\\Rightarrow\\neg Q$, a rival rule about *every* large company. That is a different (and stronger) claim, not $\\neg(P\\Rightarrow Q)$. A rival "if then not" rule is the classic wrong shape.
 
-A solver who negated by keeping "if" and flipping "then" would have written that rival rule. Negation of an implication is a conjunction, not a new implication.
+Negating by keeping "if" and flipping "then" would have written that rival rule. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Negation of an implication is a conjunction, not a new implication.
 
 so the statement is False.`,
       `**B.** → False
@@ -7781,7 +7781,7 @@ so the statement is False.`,
 
 The inverse is $\\neg P\\Rightarrow\\neg Q$: revenue at most 1 million dollars, therefore no audit. The same voluntary filer has $\\neg P$ true and $\\neg Q$ false. True hypothesis, false conclusion: the inverse fails. Equivalence would require matching truth values in every scenario; this one split already separates them. The inverse tells small companies not to file, which the regulation never said.
 
-A solver who identified inverse with original would have mixed the pairs.
+Identifying inverse with original would have mixed the pairs. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The original pairs with the contrapositive. The inverse pairs with the converse. A 300,000-dollar firm that files anyway is idle for $P\\Rightarrow Q$ (hypothesis false) and fatal for $\\neg P\\Rightarrow\\neg Q$. One such firm is enough to show the inverse is not the regulation. What would make them equivalent? A biconditional "audit if and only if revenue exceeds 1 million dollars." The stem wrote a one-way rule for large firms.
 
@@ -7794,7 +7794,7 @@ so the statement is False.`,
 
 Swap and negate: "no audit, therefore revenue does not exceed 1 million dollars." That sentence is $\\neg Q\\Rightarrow\\neg P$, the contrapositive, so it is equivalent to the regulation and must hold with it. This is the one rewriting that inherits the regulation's truth.
 
-A solver who wrote $\\neg P\\Rightarrow\\neg Q$ would have produced the inverse, letter C.
+Writing $\\neg P\\Rightarrow\\neg Q$ would have produced the inverse, letter C. That is why $\\neg P\\Rightarrow\\neg Q$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The recovered pairing is original with contrapose, converse with inverse. Letter C's voluntary filer does not touch this contrapose: that firm filed, so $\\neg Q$ is false and the contrapose is idle. A genuine test of the contrapose would be a non-filer, who must then sit at or below 1 million dollars if the regulation holds. Equivalence is the pairing, not a new arithmetic check.
 
@@ -7805,7 +7805,7 @@ so the statement is True.`,
 
 Company X has revenue 2 million dollars. Compare with the threshold: $2>1$, so $P$ is true. X did not file an audit, so $Q$ is false. That is exactly $P\\land\\neg Q$, the unique failure of $P\\Rightarrow Q$. One such company is enough to prove the regulation false. Revenue 2 million dollars with no audit is the shape the negation calls for.
 
-The extra arithmetic is $2>1$, this letter's own threshold check. A solver who used X against the converse would have had the wrong shape: X has $P$ true, which is the original's hypothesis, not the converse's.
+The extra arithmetic is $2>1$, this letter's own threshold check. Using X against the converse would have had the wrong shape: X has $P$ true, which is the original's hypothesis, not the converse's. That is why $P$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does.
 
 A counterexample has to sit inside the "if" and fail the "then." X does both. A 300,000-dollar voluntary filer, used against the inverse, is the opposite shape and would not refute the original. Changing $2$ to $1$ would put X on the boundary, where "exceeds" fails and $P$ is false. Against 2 million dollars, the recovered comparison $2>1$ puts X in the failure row.
 
@@ -7856,7 +7856,7 @@ $$H\\land W\\land T=\\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
 One failed conjunct denies the license. $300$ hours notwithstanding, A is not licensed.
 
-A solver who let hours override the failed practical would have been running an or. The recovered grant condition is an and of three.
+Letting hours override the failed practical would have been running an or. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The recovered grant condition is an and of three.
 
 The overview's table already marked A's practical column false. This letter only reads that row. Hours are necessary, and they are not sufficient: A's extra $50$ hours do not repair $T$. Letter C will name that sufficiency error in general; here the named pilot is already a no.
 
@@ -7867,7 +7867,7 @@ so the statement is False.`,
 
 Pilot B has $240$ hours ($H$ false) but passed both exams. Hours are necessary: $240<250$ already kills the conjunction, so B is not licensed. Both exams cannot repair a shortfall of $10$ hours. The hours gate is not optional.
 
-The extra arithmetic is $240<250$, a $10$-hour shortfall. A solver who rounded $240$ up to $250$ would have folded B into $H$.
+The extra arithmetic is $240<250$, a $10$-hour shortfall. Rounding $240$ up to $250$ would have folded B into $H$. So the letter reads the claim against $240$; $H$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $240$ stays in the write-up.
 
 A's failure was the practical. B's failure is the hours. Opposite missing conjuncts, same denied license. The recovered biconditional demands all three parts. Ten hours below the cutoff is still below the cutoff.
 
@@ -7878,11 +7878,11 @@ so the statement is False.`,
 
 Necessary means: no license unless $H$ holds. Sufficient would mean: $H$ alone forces a license, regardless of $W$ and $T$. Pilot A has $H$ true ($300\\ge 250$) and still fails because $T$ is false. Hours by themselves never grant the license. Hours are one requirement of three.
 
-A solver who treated "necessary" as "enough" would have licensed A. Letter A already refused A.
+Treating "necessary" as "enough" would have licensed A. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Letter A already refused A.
 
 The opening sentence of the stem says hours are necessary, which is the $H$ conjunct, not a solo ticket. The "if and only if" then joins hours to two exams. Pilot A is the recovered witness that extra hours without a practical pass still yield no license. Sufficiency of $H$ would have licensed A; it did not.
 
-Necessary and sufficient split on A's file: hours are present, license is absent. That split is the whole letter. A solver who licensed everyone with $250$ or more hours would have dropped $W$ and $T$ from the recovered formula.
+Necessary and sufficient split on A's file: hours are present, license is absent. That split is the whole letter. Licensing everyone with $250$ or more hours would have dropped $W$ and $T$ from the recovered formula. The stem's recovered values line up with $250$, whereas $T$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $250$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 so the statement is False.`,
       `**D.** → True
@@ -7891,14 +7891,14 @@ The grant condition is the conjunction $H\\land W\\land T$. If the practical tes
 
 The grant condition is the conjunction $H\\land W\\land T$. If the practical test fails, $T$ is false, and a false conjunct makes the whole conjunction false even when $H$ and $W$ both hold. Pilot A is that row: $300$ hours, written passed, practical failed, unlicensed. Failing the practical test is an absolute bar.
 
-A solver who invented a waiver for the practical would have been rewriting the iff. The recovered formula has no waiver.
+Inventing a waiver for the practical would have been rewriting the iff. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered formula has no waiver.
 
 so the statement is True.`,
       `**E.** → True
 
 The claim is existential: some pilot with more than $250$ hours is still unlicensed. Pilot A's file is the witness: $300$ hours, written passed, practical failed. $H$ is true and $T$ is false, so $H\\land W\\land T$ fails. That one file proves such a pilot exists.
 
-A solver who wanted a second witness would have been proving "at least two." Existence needs A, and A is in the stem.
+Wanting a second witness would have been proving "at least two." The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.Existence needs A, and A is in the stem.
 
 Pilot B cannot serve as this witness, because $240$ is not more than $250$. The extra comparison $300>250$ is this letter's own check, and it holds. Letter A already refused A's license; this letter only records that the refused pilot still cleared the hours gate. One such file is the whole existential.
 
@@ -7952,7 +7952,7 @@ $$(S\\lor C)\\land D=(\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}=\\mathrm{T}$
 
 P is approved. The claim that credit score alone blocks P ignores the OR in the bracket.
 
-A solver who treated the bracket as an and would have denied P. The recovered P row is a yes.
+Treating the bracket as an and would have denied P. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The recovered P row is a yes.
 
 The claimed reason "score alone is below $700$" would have been correct if the rule had demanded score and co-signer. The recovered rule demands score or co-signer, then the ratio. P's co-signer fills the bracket, and $35<40$ fills $D$. The low score is idle, not fatal.
 
@@ -7969,14 +7969,14 @@ Q is not approved. The excellent score cannot buy off the ratio,
 
 Q's file: credit score $720$, so $S$ holds; no co-signer, so $C$ is false; debt-to-income $45\\%$, so $D$ is false. The bracket is true ($S$ alone fills it), but the outer AND still needs $D$. Q is not approved. The excellent score cannot buy off the ratio.
 
-A solver who paid Q on the strength of $720$ would have skipped the outer conjunct. The extra arithmetic is $45\\%\\ge 40\\%$, which falsifies $D$.
+Paying Q on the strength of $720$ would have skipped the outer conjunct. That is why $720$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The extra arithmetic is $45\\%\\ge 40\\%$, which falsifies $D$.
 
 so the statement is False.`,
       `**C.** → False
 
 A score of at least $700$ makes $S$ true, which fills $S\\lor C$. Approval still requires the outer conjunct $D$: ratio below $40\\%$. Applicant Q is the check: $720\\ge 700$ but $45\\%\\ge 40\\%$. The score cannot override a failed ratio, so "always approved regardless of DTI" is false.
 
-Q is the named witness. A solver who invented a waiver for DTI would have rewritten the recovered formula.
+Q is the named witness. Inventing a waiver for DTI would have rewritten the recovered formula. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The outer "and" is the absolute gate. Inside the bracket, score and co-signer substitute for each other. Outside the bracket, nothing substitutes for $D$. Q has a strong score and still fails because $45$ is not below $40$. That is this letter's own comparison, and it kills the "always" claim.
 
@@ -8000,7 +8000,7 @@ $$(S\\lor C)\\land D=(\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}=\\mathrm{T}$
 
 A score below $700$ is allowed whenever the co-signer fills the OR and the ratio clears $40\\%$.
 
-A solver who denied every sub-$700$ file would have ignored the OR. P is the extra case that the OR exists for.
+Denying every sub-$700$ file would have ignored the OR. Once $700$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. P is the extra case that the OR exists for.
 
 Letter A already recovered P as approved. This letter names the general possibility that P illustrates: low score, co-signer present, ratio in range. Drop the co-signer, and the same $650$ would fail the bracket. Drop the ratio, and even a co-signer would not save a $45\\%$ file (that is Q's shape, with a high score instead). Against P's actual file, the recovered formula returns true.
 
@@ -8051,7 +8051,7 @@ The converse is $Q\\Rightarrow P$: every loyalty-point diner ordered dessert. Sa
 
 The converse is $Q\\Rightarrow P$: every loyalty-point diner ordered dessert. Sam received a point ($Q$ true) as a birthday promotion and did not order dessert ($P$ false). True "if", false "then": $Q\\Rightarrow P$ fails on Sam. That is the unique failure row of the converse. He is the ideal refutation.
 
-A solver who used Sam against the original policy would have been answering letter C, which is the opposite shape.
+Using Sam against the original policy would have been answering letter C, which is the opposite shape. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
       `**B.** → True
@@ -8060,14 +8060,14 @@ The target is "not every point-earning diner ordered dessert." Its opposite is "
 
 The target is "not every point-earning diner ordered dessert." Its opposite is "every diner who received a point ordered dessert," which is $Q\\Rightarrow P$. Assume that opposite. Sam received a point without ordering dessert, so the assumption is false. That is a correctly opened proof by contradiction, with Sam as the colliding case.
 
-A solver who opened by assuming the original policy would have been contradicting the wrong sentence.
+Opening by assuming the original policy would have been contradicting the wrong sentence. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is True.`,
       `**C.** → False
 
 The original policy is $P\\Rightarrow Q$: order dessert, get a point. It fails only on dessert with no point. Sam skipped dessert and still got a birthday point: $\\neg P\\land Q$. The policy never promised anything about diners who skip dessert, so Sam does not touch $P\\Rightarrow Q$. To kill $P\\Rightarrow Q$ you need $P\\land\\neg Q$; Sam offers the opposite pair.
 
-A solver who thought "Sam got a point strangely, so the policy is broken" would have used the converse's witness on the original.
+Thinking "Sam got a point strangely, so the policy is broken" would have used the converse's witness on the original. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 Sam's shape is $Q$ without $P$. That is the failure of the converse "point guarantees dessert" and of the inverse "no dessert, no point." It is not the failure of "dessert guarantees a point." The restaurant can still honour every dessert order and run a birthday promotion on the side. What would make Sam a counterexample to the original? A dessert order with no point. That is not Sam's file.
 
@@ -8082,7 +8082,7 @@ Negating $P\\Rightarrow Q$ produces $P\\land\\neg Q$: a diner who ordered desser
 
 Negating $P\\Rightarrow Q$ produces $P\\land\\neg Q$: a diner who ordered dessert and did not receive a point. Sam's coordinates are the opposite pair (no dessert, got a point). Finding Sam therefore cannot be the correctly formed negation of the policy. The diner who would negate the policy differs from Sam in both coordinates.
 
-A solver who wrote Sam's shape as the negation would have negated to the converse's failure row.
+Writing Sam's shape as the negation would have negated to the converse's failure row. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
       `**E.** → True
@@ -8091,7 +8091,7 @@ The inverse says: skip dessert, therefore receive no point. Sam skipped dessert 
 
 The inverse says: skip dessert, therefore receive no point. Sam skipped dessert ($\\neg P$ true) and still received a birthday point ($\\neg Q$ false). True hypothesis, false conclusion: the inverse is false, and Sam is the witness. The inverse promises no point to anyone skipping dessert, and Sam walked out with one.
 
-A solver who thought the inverse travelled with the original would have expected the original to die with Sam. It does not; inverse pairs with converse, and both die on Sam.
+Thinking the inverse travelled with the original would have expected the original to die with Sam. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. It does not; inverse pairs with converse, and both die on Sam.
 
 so the statement is True.`,
     ],
@@ -8132,7 +8132,7 @@ $$4\\cdot 25=100$$
 
 The inner existential is satisfied at $m=4$. $4$ divides $100$, which is what that $n$ needs.
 
-A solver who reported $n=100/4$ as a non-integer would have misdivided.
+Reporting $n=100/4$ as a non-integer would have misdivided. The path that matches the stem therefore holds $n=100/4$ fixed and only then reads the claim.
 
 This letter does not settle the outer "for every $m$." It only checks one instance. Letter C will use $m=3$, which has no integer partner. At $m=4$ the recovered partner $25$ works, so this inner existential holds.
 
@@ -8145,14 +8145,14 @@ Fix $m=3$. The inner claim asks for a positive integer $n$ with $3n=100$. Solvin
 
 Fix $m=3$. The inner claim asks for a positive integer $n$ with $3n=100$. Solving gives $n=100/3$, which is not an integer. No other $n$ can satisfy a linear equation with a unique root, so $m=3$ has no partner. $100/3$ is not a whole number, and the equation offers no second candidate.
 
-The extra arithmetic is $100/3$, this letter's own division. A solver who rounded to $33$ would have checked $3\\cdot 33=99\\ne 100$.
+The extra arithmetic is $100/3$, this letter's own division. Rounding to $33$ would have checked $3\\cdot 33=99\\ne 100$. Working from the isolated values, $33$ is the figure that is checked, not the detour that produced $3\\cdot 33=99\\ne 100$.
 
 so the statement is False.`,
       `**C.** → False
 
 The overall claim is $\\forall m\\,\\exists n:\\, mn=100$: every positive integer $m$ must have some positive integer partner $n$. At $m=3$ that partner would have to be $100/3$, which is not an integer. One failing $m$ is enough, so the "for every $m$" sentence is false. "For every" admits no exceptions.
 
-A solver who saw $m=4$ work and concluded the universal holds would have treated one success as a clean sweep.
+Seeing $m=4$ work and concluding the universal holds would have treated one success as a clean sweep. The path that matches the stem therefore holds $m=4$ fixed and only then reads the claim.
 
 Letter A recovered a working partner at $m=4$. Universals are not proved by a single success. They are disproved by a single failure, and $m=3$ is that failure: $n=100/3$ is not a positive integer, and the equation $3n=100$ has no other solution. The recovered overall statement is therefore false.
 
@@ -8163,7 +8163,7 @@ so the statement is False.`,
 
 Pushing a negation through nested quantifiers flips each one and negates the core: $\\forall$ becomes $\\exists$, $\\exists$ becomes $\\forall$, and $mn=100$ becomes $mn\\ne 100$. The witness $m=3$ works: for every positive integer $n$, $3n\\ne 100$. The sentence given is the correct negation, and $m=3$ is the witness it promises.
 
-A solver who wrote "for every $m$ there is no $n$" would have kept $\\forall m$ and only flipped the inner piece.
+Writing "for every $m$ there is no $n$" would have kept $\\forall m$ and only flipped the inner piece. So the letter reads the claim against $m$; $\\forall m$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $m$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **1.** $\\neg\\forall m\\,\\exists n\\,P(m,n)$ is $\\exists m\\,\\forall n\\,\\neg P(m,n)$. That is the quoted form with $P$ as equality to $100$.
 
@@ -8184,7 +8184,7 @@ With the quantifiers reversed, a single $n$ must work for every $m$ at once: $m=
 
 With the quantifiers reversed, a single $n$ must work for every $m$ at once: $m=1$ demands $n=100$ and $m=2$ demands $n=50$. No number is both. The original allowed $n$ to depend on $m$; the reversal freezes one $n$ for all $m$. The reversed statement is false. Same symbols, opposite strength.
 
-The extra arithmetic is those two demanded $n$ values, $100$ and $50$, which cannot coincide. A solver who reused $n=25$ from $m=4$ would have missed $m=1$.
+The extra arithmetic is those two demanded $n$ values, $100$ and $50$, which cannot coincide. Reusing $n=25$ from $m=4$ would have missed $m=1$. That is the fork: $n=25$ belongs to the recovered isolation, $m=1$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
     ],
@@ -8237,14 +8237,14 @@ Clue (3) is the atomic sentence "Dan is guilty," not an implication. No other cl
 
 Clue (3) is the atomic sentence "Dan is guilty," not an implication. No other clue is needed to read that sentence. Combined with "exactly one of Ann, Ben, Cara, Dan is guilty," Dan occupies the unique guilty slot. Statement A asks only about Dan, which clue (3) already settles.
 
-A solver who waited for the if-then clues would have been doing extra work this letter does not need.
+Waiting for the if-then clues would have been doing extra work this letter does not need. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is True.`,
       `**B.** → False
 
 The setup says exactly one of the four is guilty. Clue (3) names Dan as guilty. Uniqueness then clears Ann, Ben, and Cara. Ann is therefore innocent. The claim that Ann is guilty contradicts both clue (3) and the "exactly one" constraint. The guilty slot holds one person and Dan occupies it.
 
-A solver who thought Ann could share guilt would have dropped "exactly one."
+Thinking Ann could share guilt would have dropped "exactly one." The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 Clue (1), "if Ann is guilty then Dan is innocent," has a false hypothesis once Ann is cleared, so it holds vacuously and adds nothing. The recovered table already marks Ann innocent from uniqueness plus clue (3). This letter only reads Ann's cell. Changing the stem to "at least one guilty" would reopen sharing; the stem said exactly one.
 
@@ -8257,7 +8257,7 @@ Cara's innocence is forced without opening clue (2). Clue (3) makes Dan guilty; 
 
 Cara's innocence is forced without opening clue (2). Clue (3) makes Dan guilty; "exactly one guilty" then makes Cara innocent. Clue (2) says: if Ben is innocent, then Cara is innocent. After uniqueness, Ben is already innocent, so clue (2) holds, but it is not the step that established Cara's innocence. Dropping clue (2) leaves Cara still innocent.
 
-A solver who thought (2) was the only path to Cara would have missed the counting. The extra observation is that (2) is consistent but redundant for Cara.
+Thinking (2) was the only path to Cara would have missed the counting. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The extra observation is that (2) is consistent but redundant for Cara.
 
 so the statement is False.`,
       `**D.** → True
@@ -8266,7 +8266,7 @@ With Ann innocent, clue (1) has a false "if" part, so it is automatically satisf
 
 With Ann innocent, clue (1) has a false "if" part, so it is automatically satisfied and produces nothing. Its contrapositive $D\\Rightarrow\\neg A$ could in principle have cleared Ann, but the counting had already done that job. A conditional with a false antecedent yields no new fact about anyone. Clue (1) adds no information in this puzzle.
 
-A solver who derived Ann's innocence from (1) would have been using a redundant route. The recovered route is clue (3) plus uniqueness.
+Deriving Ann's innocence from (1) would have been using a redundant route. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The recovered route is clue (3) plus uniqueness.
 
 so the statement is True.`,
       `**E.** → True
@@ -8275,7 +8275,7 @@ Clue (3) asserts Dan's guilt with no "if." Even if the "exactly one guilty" cons
 
 Clue (3) asserts Dan's guilt with no "if." Even if the "exactly one guilty" constraint were dropped, clue (3) would still say Dan is guilty. Uniqueness is used only to clear Ann, Ben, and Cara. Dan's guilt does not depend on it. Clue (3) is a flat assertion rather than a conditional.
 
-A solver who thought dropping uniqueness would unsettle Dan would have been mixing Dan's guilt with the others' innocence.
+Thinking dropping uniqueness would unsettle Dan would have been mixing Dan's guilt with the others' innocence. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 so the statement is True.`,
     ],
@@ -9111,7 +9111,7 @@ This letter asks whether the quoted sentence is that failure row, not whether su
 
 **1.** Fever strictly above $38^{\\circ}\\mathrm{C}$ makes $P$ true. Withholding antibiotics makes $Q$ false. Together those two facts are $P\\land\\neg Q$, matching the quoted sentence.
 
-**2.** A rushed solver who negated by writing another if-then, "if fever then no antibiotics," would have produced $P\\Rightarrow\\neg Q$, a rival rule about every high-fever patient. The true negation is a single observed violation, not a new policy.
+**2.** Negating by writing another if-then, "if fever then no antibiotics," would have produced $P\\Rightarrow\\neg Q$, a rival rule about every high-fever patient. That is why $P\\Rightarrow\\neg Q$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The true negation is a single observed violation, not a new policy.
 
 Observing one such patient would show the guideline was broken. No other truth-table row can do that: a patient without fever, or a patient who did receive antibiotics, leaves $P\\Rightarrow Q$ intact.
 
@@ -9126,7 +9126,7 @@ The claimed counterexample is a patient at exactly $38.0^{\\circ}\\mathrm{C}$ wh
 
 **2.** A genuine counterexample needs $P$ true and $Q$ false together: fever strictly above $38$ and no antibiotics. A patient at $38.1$ with no prescription would be that file. A patient at $38.0$ with no prescription is not. The $0.1$ gap is the whole content of the word "above."
 
-**3.** A rushed solver treats "above $38$" as "at least $38$," folding the boundary into $P$. That misread would make $38.0$ a counterexample. The stem's wording is "above," and the recovered $P$ excludes the boundary. Another rushed move is to treat a thermometer rounding to $38.0$ as if it were already $38.1$. Rounding is not membership in $T>38$.
+**3.** Treating What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. "above $38$" as "at least $38$," folding the boundary into $P$. That misread would make $38.0$ a counterexample. The stem's wording is "above," and the recovered $P$ excludes the boundary. Another rushed move is to treat a thermometer rounding to $38.0$ as if it were already $38.1$. Rounding is not membership in $T>38$.
 
 What would have to change for the opposite verdict? If the guideline had said "at least $38^{\\circ}\\mathrm{C}$" or "$38$ or higher," then $P$ would be true at $38.0$ and a missing prescription would break it. Against the actual wording, $38.0$ sits on the idle side of the arrow. The same idle-side fact would hold at $37.9$ or at $38.0$ equally: both fail $T>38$.
 
@@ -9143,9 +9143,9 @@ The letter supplies a concrete file: a patient at $37.5^{\\circ}\\mathrm{C}$ wit
 
 **3.** The original guideline is silent here. Its hypothesis $P$ never fired, so $P\\Rightarrow Q$ holds vacuously on the same patient. The inverse can be false in practice while the guideline still holds. That is the whole point of the two equivalence pairs: knocking down the inverse does not knock down the original.
 
-A rushed solver who thought "inverse means the original backwards, so it must travel with the guideline" would have expected this file to break the original as well. It does not. The original only constrains patients whose fever is strictly above $38$. A $37.5$ reading never enters that constraint.
+Thinking "inverse means the original backwards, so it must travel with the guideline" would have expected this file to break the original as well. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. It does not. The original only constrains patients whose fever is strictly above $38$. A $37.5$ reading never enters that constraint.
 
-What would make the inverse true in this clinic is a second rule forbidding antibiotics whenever the fever is not above $38$. The stem never wrote that second rule. Ordinary bacterial cases at $37.5$ are exactly why it would be a bad extra promise: the clinic has reasons to prescribe that have nothing to do with crossing $38$. A solver who treated $37.5$ as "close enough to $38$" would also have misplaced this file into $P$, which is a different error from mixing up inverse and original, but it would still hide the idle row.
+What would make the inverse true in this clinic is a second rule forbidding antibiotics whenever the fever is not above $38$. The stem never wrote that second rule. Ordinary bacterial cases at $37.5$ are exactly why it would be a bad extra promise: the clinic has reasons to prescribe that have nothing to do with crossing $38$. Treating $37.5$ as "close enough to $38$" would also have misplaced this file into $P$, which is a different error from mixing up inverse and original, but it would still hide the idle row. The stem's recovered values line up with $37.5$, whereas $P$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $37.5$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The $37.5$ bacterial file is a genuine failure of the inverse and a non-event for the guideline, so the statement is True.`,
       `**D.** → False
@@ -9158,7 +9158,7 @@ The same $37.5^{\\circ}\\mathrm{C}$ bacterial patient who receives antibiotics i
 
 **2.** The original guideline only constrains high-fever patients. It says nothing about who may receive antibiotics when the fever is $37.5$. A clinic that treats bacterial infection at low-grade temperatures obeys $P\\Rightarrow Q$ and breaks $Q\\Rightarrow P$ at the same time. The two arrows are independent.
 
-**3.** A rushed solver treats an implication as if it also forced its converse, reading "antibiotics, therefore high fever" out of "high fever, therefore antibiotics." Those are opposite arrows. The recovered pair puts the original with its contrapositive, not with this converse. Another rushed move is to think the $37.5$ patient is "too close to $38$ to count." Close is not membership in $T>38$.
+**3.** Treating What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. an implication as if it also forced its converse, reading "antibiotics, therefore high fever" out of "high fever, therefore antibiotics." Those are opposite arrows. The recovered pair puts the original with its contrapositive, not with this converse. Another rushed move is to think the $37.5$ patient is "too close to $38$ to count." Close is not membership in $T>38$.
 
 For the converse to be guaranteed, the stem would have needed a biconditional: antibiotics if and only if fever above $38$. The guideline is only one direction. The $37.5$ patient who is treated anyway is allowed by the original and fatal to the converse. A patient at $39$ who is treated would satisfy both arrows and would not separate them. Separation needs the $Q$ without $P$ file, which is exactly the bacterial case already named.
 
@@ -9214,7 +9214,7 @@ Count the letters: twelve identical a's, so length $12$ and $P$ is true. The sys
 
 One such password is enough to show the policy is false as an absolute rule. Other long mixed passwords that happen to be classified as strong cannot rescue a universal implication after a single $P\\land\\neg Q$ witness.
 
-A rushed solver who thought "counterexample must be shorter than $12$" would be hunting the converse instead. This letter is about the original policy, and the twelve-a string is exactly its failure shape.
+Thinking "counterexample must be shorter than $12$" would be hunting the converse instead. Once $12$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. This letter is about the original policy, and the twelve-a string is exactly its failure shape.
 
 The recovered witness has $P$ true and $Q$ false, so the statement is True.`,
       `**B.** → True
@@ -9223,7 +9223,7 @@ The converse is $Q\\Rightarrow P$: if a password is classified as strong, then i
 
 The twelve-a string collapsed $P\\Rightarrow Q$. Collapse of one pair never decides the other pair. Settling the converse needs either a strong password shorter than $12$ characters, or a proof that no such password exists. Neither is supplied by "aaaaaaaaaaaa," which is long and not strong.
 
-A rushed solver who thought "the policy is false, so every relative is false" would have condemned the converse automatically. Relatives travel in pairs, not as a block of four.
+Thinking "the policy is false, so every relative is false" would have condemned the converse automatically. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. Relatives travel in pairs, not as a block of four.
 
 The recovered objects that kill the policy are length $12$ with $Q$ false. Those objects sit on the original's failure row $P\\land\\neg Q$. The converse fails only on $Q\\land\\neg P$: a classified-strong password that is still short. The twelve-a file has $Q$ false, so it never even enters the converse's "if" slot. Vacuous holding on that one file is not a proof of the converse, and it is not a refutation either.
 
@@ -9242,7 +9242,7 @@ The converse $Q\\Rightarrow P$ asks something only when $Q$ is true, that is, on
 
 **2.** The file that would refute $Q\\Rightarrow P$ is a password that is classified as strong ($Q$ true) and is shorter than $12$ characters ($P$ false). High randomization with a rejected classification is the opposite shape: $Q$ is false, so the converse is not even tested. Strength in the ordinary English sense (lots of entropy) is not the predicate $Q$. $Q$ is the system's classification.
 
-**3.** A rushed solver confuses "short and rejected" with "short and accepted." Only the accepted short password is a counterexample to "strong implies length at least $12$." The stem never exhibits such a password. Another rushed move is to think the original's failure at "aaaaaaaaaaaa" already kills the converse. That string is long and not strong, which is $P\\land\\neg Q$, the original's failure row, not the converse's.
+**3.** Confusing The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. "short and rejected" with "short and accepted." Only the accepted short password is a counterexample to "strong implies length at least $12$." The stem never exhibits such a password. Another rushed move is to think the original's failure at "aaaaaaaaaaaa" already kills the converse. That string is long and not strong, which is $P\\land\\neg Q$, the original's failure row, not the converse's.
 
 What would have to change: if the system had classified that $8$-character random string as strong, then $Q$ would be true, $P$ false, and the converse would die. Against the given classification, the $8$-character rejection is idle for the converse. Length $8$ is doing no work here except to make $P$ false, which is the idle side of $Q\\Rightarrow P$.
 
@@ -9257,7 +9257,7 @@ The inverse is equivalent to the converse $Q\\Rightarrow P$, not to the contrapo
 
 **2.** If the converse were settled, the inverse would be settled automatically, which is the opposite of "cannot be inferred from the converse."
 
-A rushed solver who memorized "all four relatives are different" would miss that two pairs always share a truth value. The letter's "so" clause is the wrong pairing, twice.
+Memorizing "all four relatives are different" would miss that two pairs always share a truth value. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The letter's "so" clause is the wrong pairing, twice.
 
 The inverse is not equivalent to the contrapositive, so the statement is False.`,
       `**E.** → False
@@ -9268,7 +9268,7 @@ The policy is false, witnessed by "aaaaaaaaaaaa": length $12$ so $P$ is true, no
 
 The claim says the contrapositive of a false statement can sometimes still be true, so we cannot determine this sentence without checking it separately. That is the one rewriting that cannot float free. Original false forces contrapositive false.
 
-A rushed solver who thought "false statements have mixed relatives" would have gone looking for a new password. The twelve-a string already kills both members of the first pair.
+Thinking "false statements have mixed relatives" would have gone looking for a new password. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The twelve-a string already kills both members of the first pair.
 
 The recovered contrapositive is false with the original, so the statement is False.`,
     ],
@@ -9307,7 +9307,7 @@ The manager's sentence is a universal: every one of the $500$ chips in Batch $12
 
 The other $499$ chips have no bearing on that verdict. Even if all of them passed, the one failed chip is enough. The recovered counterexample is that single numbered chip, not a census of the batch.
 
-A rushed solver who wanted "most chips pass, so the claim is roughly true" would be using a different standard. Universals do not admit a majority exception.
+Wanting "most chips pass, so the claim is roughly true" would be using a different standard. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. Universals do not admit a majority exception.
 
 Batch $13$ is a different story, empty and idle. This letter is only Batch $12$, which has a named inhabitant that failed. Changing the stem so that #$317$ passed, or so that it belonged to another batch, would remove the witness. Against the given inspection, the recovered failure is already on the roster.
 
@@ -9324,7 +9324,7 @@ In words: at least one chip fails. Chip #$317$ already witnesses that existentia
 
 **1.** Those two sentences part company as soon as some chips pass and some fail. One failure makes the existential true and the "all fail" universal false. If $499$ chips passed and only #$317$ failed, "not all pass" is true and "all fail" is false. That mixed batch is the ordinary inspection outcome, and it already kills the manager without killing every chip.
 
-**2.** A rushed solver replaces $\\exists$ with $\\forall$ when flipping a universal, copying the word "all" from the original and only changing "pass" to "fail." Negation changes the quantifier as well as the predicate. Another rushed move is to think chip #$317$ proves every chip failed. One numbered failure is the existential witness, not a census.
+**2.** Replacing After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. $\\exists$ with $\\forall$ when flipping a universal, copying the word "all" from the original and only changing "pass" to "fail." Negation changes the quantifier as well as the predicate. Another rushed move is to think chip #$317$ proves every chip failed. One numbered failure is the existential witness, not a census.
 
 What would make the quoted sentence the correct negation? Nothing in this logic: "all fail" is stronger than "not all pass." The correct negation is the weaker existential, which chip #$317$ already supplies. For "all fail" to be the right reading, the manager would have had to claim "some chip passes," whose negation really is "all fail." That is not the manager's sentence.
 
@@ -9337,7 +9337,7 @@ To falsify that universal you would have to point at a chip in Batch $13$ that f
 
 That is exactly the situation described by vacuously true. The empty batch is not a trick about cancelled paperwork; it is the logical fact that $\\forall$ over $\\emptyset$ has no failing witness.
 
-A rushed solver who thought "no chips means the claim is false, because nothing passed" would be requiring a positive example, which is the standard for existentials, not universals.
+Thinking "no chips means the claim is false, because nothing passed" would be requiring a positive example, which is the standard for existentials, not universals. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does.
 
 The recovered empty-domain universal is vacuously true, so the statement is True.`,
       `**D.** → False
@@ -9350,7 +9350,7 @@ Quantifier order is the whole difference. The first allows the code to depend on
 
 **2.** One master code that happens to explain every failure would make both sentences true. That special case is a coincidence, not a translation. The stem never forces a master code.
 
-**3.** A rushed solver who treated $\\forall\\exists$ and $\\exists\\forall$ as interchangeable would call those two English sentences "the same thing." They are not. Dependence on the order of "for every" and "there exists" is the classic trap. Another rushed move is to think chip #$317$'s own defect code already names a master code for the batch. A code that explains #$317$ need not explain any other chip.
+**3.** Treating $\\forall\\exists$ and $\\exists\\forall$ as interchangeable would call those two English sentences "the same thing." After isolating the unknown, the check is against $\\forall\\exists$. The figure $\\exists\\forall$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\forall\\exists$ stays in the write-up.They are not. Dependence on the order of "for every" and "there exists" is the classic trap. Another rushed move is to think chip #$317$'s own defect code already names a master code for the batch. A code that explains #$317$ need not explain any other chip.
 
 What would make them equivalent? Only a world in which one code happens to explain every failure, which is a special case of sentence 1, not a translation of it. Swapping the quantifiers in the other direction, $\\exists c\\,\\forall f$ implying $\\forall f\\,\\exists c$, is valid, but that is a one-way implication, not sameness.
 
@@ -9361,7 +9361,7 @@ The two recovered quantifier orders are different claims, so the statement is Fa
 
 Nothing else about the batch matters: not the other $499$ chips, not Batch $13$, not defect codes. Existence claims do not require a second example, and they do not require a universal companion.
 
-A rushed solver who wanted a full list of failures before accepting "some failed" would be proving a stronger sentence than the one asked. Another rushed move is to think you must first prove the manager's universal false by some other route. Chip #$317$ is already the witness; the existential is the manager's negation, and it is proved by exhibition.
+Wanting a full list of failures before accepting "some failed" would be proving a stronger sentence than the one asked. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Another rushed move is to think you must first prove the manager's universal false by some other route. Chip #$317$ is already the witness; the existential is the manager's negation, and it is proved by exhibition.
 
 What would make the claim false? A world in which #$317$ was not in Batch $12$, or did not fail. The stem places that chip in Batch $12$ and records the failure.
 
@@ -9402,7 +9402,7 @@ The original number-theory rule is $6\\mid n\\Rightarrow 3\\mid n$. If $6$ divid
 
 The letter claims that empty situation occurs for infinitely many integers $n$. Empty is not infinite. The negation of a true universal implication never happens, let alone happens infinitely often.
 
-A rushed solver who negated $P\\Rightarrow Q$ as $P\\land\\neg Q$ and then assumed that form must be populated would be confusing "correctly formed negation" with "the negation is true." The form $6\\mid n$ and $3\\nmid n$ is the correct shape of the negation, and that shape has no integer inhabitants.
+Negating $P\\Rightarrow Q$ as $P\\land\\neg Q$ and then assuming that form must be populated would be confusing "correctly formed negation" with "the negation is true." After isolating the unknown, the check is against $P\\Rightarrow Q$. The figure $P\\land\\neg Q$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $P\\Rightarrow Q$ stays in the write-up.The form $6\\mid n$ and $3\\nmid n$ is the correct shape of the negation, and that shape has no integer inhabitants.
 
 What would make the claim true? A world in which some multiple of $6$ avoided $3$, which the factorization $n=3(2k)$ forbids.
 
@@ -9423,7 +9423,7 @@ so $6$ does not divide $9$. Hypothesis true, conclusion false: $9$ is a perfectl
 
 The reason is that $6$ also demands a factor $2$, and $9$ is odd. Any odd multiple of $3$ (such as $15$ or $21$) would work equally well; the letter names $9$, which is enough.
 
-A rushed solver who thought "divisible by $3$ is almost divisible by $6$" would have treated nearness as divisibility. Remainder $3$ is not remainder $0$.
+Thinking "divisible by $3$ is almost divisible by $6$" would have treated nearness as divisibility. The stem's recovered values line up with $3$, whereas $6$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $3$ stays in the write-up. Remainder $3$ is not remainder $0$.
 
 The recovered converse fails at $n=9$, so the statement is True.`,
       `**C.** → True
@@ -9434,7 +9434,7 @@ Test $n=9$ again, now against the inverse. The hypothesis $6\\nmid 9$ is true, a
 
 That matches the already-false converse. Both halves of the claim hold: the inverse is equivalent to the converse, and $n=9$ serves both.
 
-A rushed solver who thought they needed a new integer for the inverse would have gone hunting. The same odd multiple of $3$ does both jobs, because the two sentences are contrapose of each other.
+Thinking they needed a new integer for the inverse would have gone hunting. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The same odd multiple of $3$ does both jobs, because the two sentences are contrapose of each other.
 
 The recovered inverse fails at $9$ with the converse, so the statement is True.`,
       `**D.** → False
@@ -9443,7 +9443,7 @@ The original $6\\mid n\\Rightarrow 3\\mid n$ holds for every integer, by the fac
 
 Directly: a number untouched by $3$ cannot be a multiple of $6$, because every multiple of $6$ is a multiple of $3$. No such $n$ exists.
 
-A rushed solver who thought "contrapositive is a different claim, so it might fail even if the original holds" would be breaking the one pairing that never breaks. Original and contrapositive always march together.
+Thinking "contrapositive is a different claim, so it might fail even if the original holds" would be breaking the one pairing that never breaks. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Original and contrapositive always march together.
 
 What would make the contrapositive false? An integer not divisible by $3$ yet divisible by $6$. That integer would also kill the original, which the factorization $n=6k=3(2k)$ forbids. No extra search is needed: the original's proof is the contrapositive's proof.
 
@@ -9452,7 +9452,7 @@ The recovered contrapositive is true for every integer, so the statement is Fals
 
 The original $6\\mid n\\Rightarrow 3\\mid n$ holds for every integer $n$. The converse $3\\mid n\\Rightarrow 6\\mid n$ is a different implication, already refuted by $n=9$. Falsity of the converse never leaks into the original.
 
-The two statements are independent: they live in opposite equivalence pairs. A rushed solver who thought "if the reverse arrow fails, the forward arrow fails" is mixing up those pairs. That is the classic mix-up this chapter is built to catch.
+The two statements are independent: they live in opposite equivalence pairs. Thinking "if the reverse arrow fails, the forward arrow fails" is mixing up those pairs. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. That is the classic mix-up this chapter is built to catch.
 
 **1.** The original says a stronger condition (divisible by $6$) forces a weaker one (divisible by $3$). That direction is cheap: extra factors can only help. The converse says the weaker condition forces the stronger, which asks for a factor of $2$ that $9$ does not have.
 
@@ -9503,7 +9503,7 @@ The given square is $1234^{2}=1{,}522{,}756$, which ends in $6$, so it is even. 
 
 Direct check: $1234=2\\times 617$. Hypothesis true, conclusion true: the rule is used correctly on this ID. The letter is not proving $R$ from scratch; it is firing the recovered implication on a file where the hypothesis holds.
 
-A rushed solver who ran the converse here would have started from "1234 is even" and deduced the square is even, which is also true but is a different rule. This letter uses $R$ in the direction written: even square, therefore even ID.
+Running the converse here would have started from "1234 is even" and deduced the square is even, which is also true but is a different rule. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. This letter uses $R$ in the direction written: even square, therefore even ID.
 
 The recovered rule applies to $1234$ in the stated direction, so the statement is True.`,
       `**B.** → False
@@ -9516,7 +9516,7 @@ The plan in the claim assumes $n$ even and derives that $n^{2}$ is even. That pr
 
 **2.** Direct proof of $C$: start from $n$ even, conclude $n^{2}$ even. Write $n=2k$, expand $n^{2}=4k^{2}$. Those are opposite opening lines and opposite expansions.
 
-**3.** A rushed solver who thought "assume the even case, because evenness is the topic" would have proved the easier converse and labelled it contraposition of $R$. Labels matter: the same even-to-even algebra is a correct proof of $C$ and a mislabelled proof of $R$. Another rushed move is to think "contrapositive means swap the two even facts." Swapping without negating produces the converse, which is exactly this letter's plan.
+**3.** Thinking "assume the even case, because evenness is the topic" would have proved the easier converse and labelled it contraposition of $R$. Keeping $R$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Labels matter: the same even-to-even algebra is a correct proof of $C$ and a mislabelled proof of $R$. Another rushed move is to think "contrapositive means swap the two even facts." Swapping without negating produces the converse, which is exactly this letter's plan.
 
 What would make the claimed plan correct? If the target had been $C$ rather than $R$, or if the plan had opened with $n$ odd. Against $R$, opening with $n$ even is the wrong door.
 
@@ -9531,7 +9531,7 @@ The given square $4321^{2}=18{,}671{,}041$ ends in $1$, so it is odd. The fact d
 
 An odd square really does force an odd ID. Direct check: $4321=2\\times 2160+1$, remainder $1$, so $4321$ is odd. Hypothesis (odd square) true, conclusion (odd ID) true.
 
-A rushed solver who applied $R$ itself here would be stuck: $R$ speaks only about even squares, and this square is odd, so $R$ is idle. The letter correctly names the contrapositive direction that handles odd squares.
+Applying $R$ itself here would be stuck: $R$ speaks only about even squares, and this square is odd, so $R$ is idle. The opposite verdict would need a different isolation than $R$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The letter correctly names the contrapositive direction that handles odd squares.
 
 The neighbouring file $1234$ is the even-square case and is idle for this sentence. Swapping the two IDs would make the odd-square rule silent. Against $4321$, the recovered odd-square implication fires and matches the odd remainder. The last digit $1$ is already enough to read oddness; the full square $18{,}671{,}041$ is listed only to confirm that digit.
 
@@ -9542,7 +9542,7 @@ Rule $R$ is $n^{2}$ even $\\Rightarrow$ $n$ even. Its converse $C$ is $n$ even $
 
 $C$ is proved from $n=2k$, giving $n^{2}=4k^{2}$. $R$ is proved from $n=2k+1$, giving $n^{2}$ odd, which is the contrapositive route. Different opening assumptions, different algebra.
 
-A rushed solver treats "both true" as "logically the same." Logical sameness would mean each is equivalent to the other as formulas, which would make $R$ equivalent to its converse in general, false for an arbitrary implication.
+Treating What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. "both true" as "logically the same." Logical sameness would mean each is equivalent to the other as formulas, which would make $R$ equivalent to its converse in general, false for an arbitrary implication.
 
 On integers the two arrows happen to travel together because evenness of $n$ and of $n^{2}$ are equivalent. That is a number-theory coincidence, not a law of implication. A different predicate, such as "if $n$ is divisible by $4$, then $n$ is even," is true while its converse is not. The stem's $R$ and $C$ still have two names, two proofs, and two opening lines.
 
@@ -9559,7 +9559,7 @@ $$n^{2}=4k^{2}+4k+1=2(2k^{2}+2k)+1$$
 
 which is odd, colliding with the assumption that $n^{2}$ is even. The opening the claim describes is the legal one: assume the failure row, then watch it collapse.
 
-A rushed solver who opened by assuming $n$ even would be proving $C$ again. Contradiction proofs of an implication open on the unique false row of that implication.
+Opening by assuming $n$ even would be proving $C$ again. The recovered comparison therefore keeps $n$ and does not substitute $C$. Contradiction proofs of an implication open on the unique false row of that implication.
 
 What would make this opening wrong? If the claim had been a contradiction proof of $C$, the opening pair would be $n$ even and $n^{2}$ odd, which is a different row. The letter names $n^{2}$ even and $n$ odd, which is $R$'s row, not $C$'s.
 
@@ -9606,7 +9606,7 @@ Negating a universal implication yields $\\exists t\\,(P(t)\\land\\neg Q(t))$: t
 
 The quoted sentence is that existential. Correct formation is about shape. The theorem later shows no such triangle exists, which makes the negation false, not incorrectly formed.
 
-A rushed solver who negated by writing "every such triangle lacks a right angle" would have produced another universal. Universals negate to existentials.
+Negating by writing "every such triangle lacks a right angle" would have produced another universal. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Universals negate to existentials.
 
 The recovered negation is the existential named in the claim, so the statement is True.`,
       `**B.** → True
@@ -9615,7 +9615,7 @@ Thales' theorem establishes the original universal. A statement and its negation
 
 The theorem is proved, so the misbehaving triangle the negation demands does not exist. A proved statement always leaves its negation false. That is not extra geometry; it is the relation between a sentence and its negation.
 
-A rushed solver who thought "the negation is correctly formed, so it might still be true" would be confusing formation with truth. Letter A settled formation; this letter settles truth value.
+Thinking "the negation is correctly formed, so it might still be true" would be confusing formation with truth. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Letter A settled formation; this letter settles truth value.
 
 What would make the negation true? A triangle inscribed on a diameter with a non-right third angle. Thales' theorem says that triangle does not exist. Correct formation plus a theorem is a false existential, not an open question.
 
@@ -9628,7 +9628,7 @@ Then $MA=MB$ by construction, and a classical theorem gives $MC=MA$ as well. The
 
 This is extra geometry, not a free gift of Thales' theorem. The overview recovered the original $P\\Rightarrow Q$; this letter proves $Q\\Rightarrow P$ by the midpoint construction. The two directions use different ideas: Thales starts from a diameter and produces a right angle; the converse starts from a right angle and produces a diameter.
 
-A rushed solver who thought "converses always fail" would have rejected a true geometric converse on principle. Most converses fail; this one happens to be a theorem. Another rushed move is to think the converse is "the same picture as Thales, so it comes for free." The midpoint has to be introduced and the equalities $MA=MB=MC$ have to be used. Without $M$, there is no circle to name.
+Thinking "converses always fail" would have rejected a true geometric converse on principle. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Most converses fail; this one happens to be a theorem. Another rushed move is to think the converse is "the same picture as Thales, so it comes for free." The midpoint has to be introduced and the equalities $MA=MB=MC$ have to be used. Without $M$, there is no circle to name.
 
 What would make the converse false? A right triangle that could not be placed with its hypotenuse as a diameter of a circle through the third vertex. The midpoint construction shows no such triangle exists. A non-right triangle can still be inscribed in some circle, but not with a side as diameter in the Thales sense, which is a different claim.
 
@@ -9643,7 +9643,7 @@ Thales' theorem gives $P\\Rightarrow Q$: inscribed on a diameter, therefore a ri
 
 That is a proved geometric fact, not a free gift of every implication. Most converses fail, which is why the letter is careful to say "even though converses are not true in general." This pair is an example of a biconditional that had to be earned twice, once in each direction.
 
-A rushed solver who thought "biconditional means we only proved one arrow" would have missed the converse work in letter C. Both arrows are present, so the implication is effectively a biconditional on this geometric pair.
+Thinking "biconditional means we only proved one arrow" would have missed the converse work in letter C. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Both arrows are present, so the implication is effectively a biconditional on this geometric pair.
 
 The recovered pair is $P\\Leftrightarrow Q$, so the statement is True.`,
       `**E.** → False
@@ -9652,7 +9652,7 @@ The inverse is $\\neg P\\Rightarrow\\neg Q$: not inscribed that way, therefore n
 
 Truth of Thales' theorem therefore does not hand over the inverse. Here the inverse is true only because the midpoint construction makes the converse true, which then carries the inverse with it. The claimed reason ("inverse always equivalent to the original") is false.
 
-A rushed solver who treated all four relatives as clones of the original would have accepted this letter. The pairing chart is the whole content: original with contrapositive, converse with inverse.
+Treating all four relatives as clones of the original would have accepted this letter. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The pairing chart is the whole content: original with contrapositive, converse with inverse.
 
 A triangle that is not inscribed on a diameter can still have a right angle for other reasons, or fail to have one. That freedom is why the inverse is not a free gift of Thales. The recovered pairing puts the inverse with the converse. Sharing a truth value with the original would require a biconditional from the start, which this letter's reason never supplied.
 
@@ -9695,7 +9695,7 @@ The theorem is $S\\Rightarrow O$: perfect square, therefore an odd number of pos
 
 Correct formation is about shape. The pairing argument later shows no integer actually fits that shape, so the negation is a false sentence with the right form. This letter only asks whether the form is right.
 
-A rushed solver who wanted the negation to be "if square then even count" would have written another implication $S\\Rightarrow\\neg O$. The true negation is a single counterexample shape, not a rival theorem.
+Wanting the negation to be "if square then even count" would have written another implication $S\\Rightarrow\\neg O$. Once $S\\Rightarrow\\neg O$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The true negation is a single counterexample shape, not a rival theorem.
 
 Sample $36$ has nine divisors, odd, so it is not a witness of $S\\land\\neg O$. Sample $20$ is not a square, so it is not a witness either. The form can be correct while remaining empty of examples. Emptiness is a later letter's news. Here the recovered negation is still $S\\land\\neg O$.
 
@@ -9708,7 +9708,7 @@ A counterexample would need a square with an even divisor count, which this is n
 
 $$9=2\\times 4+1$$
 
-odd, as the leftover square-root partner $6$ predicts. A rushed solver who counted $8$ by dropping $36$ itself, or $10$ by double-counting $6$, would have thought they had found a counterexample. The given roster has nine members.
+odd, as the leftover square-root partner $6$ predicts. Counting $8$ by dropping $36$ itself, or $10$ by double-counting $6$, would have thought they had found a counterexample. The stem's recovered values line up with $8$, whereas $6$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $8$ stays in the write-up. The given roster has nine members.
 
 What would make $36$ a counterexample? An even count on this square, which would require the leftover partner $6$ not to be listed. It is listed. The theorem is supported, not threatened.
 
@@ -9723,11 +9723,11 @@ It sits beside the original theorem $S\\Rightarrow O$. Both directions hold here
 
 **2.** Sample $36$: nine divisors, leftover partner $6$, odd count, and $36$ is a square. Sample $20$: six divisors, no leftover, even count, and $20$ is not a square. Both samples match the converse.
 
-**3.** A rushed solver who thought "converses always fail" would have rejected this one on principle. The leftover square-root partner is why this converse is true. Another rushed move is to think "odd count could come from some other leftover." The only way a divisor is its own partner is $d^{2}=n$.
+**3.** Thinking "converses always fail" would have rejected this one on principle. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The leftover square-root partner is why this converse is true. Another rushed move is to think "odd count could come from some other leftover." The only way a divisor is its own partner is $d^{2}=n$.
 
 What would make the converse false? A non-square with an odd divisor count, which would require a self-partner that was not a square root. The pairing forbids that.
 
-The original theorem is $S\\Rightarrow O$. This letter is the reverse arrow $O\\Rightarrow S$. They are two sentences that happen to be jointly true, which is why both directions of the implication hold. A solver who treated "both true" as "the same sentence" would be answering letter D of a neighbouring ID-parity task. Here the pairing really does buy the converse.
+The original theorem is $S\\Rightarrow O$. This letter is the reverse arrow $O\\Rightarrow S$. They are two sentences that happen to be jointly true, which is why both directions of the implication hold. Treating "both true" as "the same sentence" would be answering letter D of a neighbouring ID-parity task. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Here the pairing really does buy the converse.
 
 The recovered pairing therefore licenses the converse as well as the original.
 
@@ -9740,7 +9740,7 @@ An implication with a false "if" is not tested, let alone refuted, by $20$. A co
 
 **1.** The six divisors $\\{1,2,4,5,10,20\\}$ confirm even count for a non-square, which supports the inverse, not a refutation of the original. Even count on a non-square is what the pairing promised.
 
-**2.** A rushed solver treats a non-square with an even list as if it broke "square $\\Rightarrow$ odd count." That is the inverse's success shape, not a counterexample to the theorem. Another rushed move is to think $20$ is "close to $16$ and $25$, so almost a square." Close is not membership in $S$.
+**2.** Treating What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. a non-square with an even list as if it broke "square $\\Rightarrow$ odd count." That is the inverse's success shape, not a counterexample to the theorem. Another rushed move is to think $20$ is "close to $16$ and $25$, so almost a square." Close is not membership in $S$.
 
 **3.** Compare $36$ from letter B: square, odd count, supports the theorem. Compare $20$: non-square, even count, idle for the theorem. The two samples are not interchangeable.
 
@@ -9749,7 +9749,7 @@ The recovered $20$ never fires the hypothesis, so the statement is False.`,
 
 The inverse is "not a square, therefore even divisor count," equivalent to the converse. $20$ is not a square and has $6$ divisors, even, matching it. The pairing argument gives the same conclusion in general: with no leftover square-root partner, every divisor has a distinct mate and the count is even.
 
-The inverse holds here because the converse does. A rushed solver who thought they needed a separate proof for the inverse would have missed the pairing: converse true forces inverse true.
+The inverse holds here because the converse does. Thinking they needed a separate proof for the inverse would have missed the pairing: converse true forces inverse true. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 What would make the inverse false? A non-square with an odd divisor count, the same monster that would kill the converse. The pairing argument shows that monster does not exist, which is why $20$'s even list is typical rather than exceptional.
 
@@ -9800,7 +9800,7 @@ Clue (1) is "Emma is a doctor $\\Leftrightarrow$ Felix is not an engineer." The 
 
 The overview recovered that chain. This letter only asks Emma's job, which the chain pins before Hugo is ever used.
 
-A rushed solver who started from clue (4) and tried to place Emma among the leftovers would have been doing extra work. The path to Emma never mentions Hugo.
+Starting from clue (4) and trying to place Emma among the leftovers would have been doing extra work. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The path to Emma never mentions Hugo.
 
 The recovered assignment makes Emma the doctor, so the statement is True.`,
       `**B.** → False
@@ -9824,7 +9824,7 @@ Clue (3) says Grace is not a teacher, so clue (2) forces Felix not to be an engi
 
 With Doctor taken by Emma and Lawyer by Hugo, Grace engineers. That is extra placement after Emma's job was recovered: split the last two jobs using Felix's ban.
 
-A rushed solver who gave Grace Teacher despite clue (3) would have broken the opening fact. A solver who gave her Lawyer would have collided with Hugo.
+Giving Grace Teacher despite clue (3) would have broken the opening fact. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Giving her Lawyer would have collided with Hugo. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 Felix then takes Teacher, the last remaining job. The recovered permutation is Emma doctor, Felix teacher, Grace engineer, Hugo lawyer. This letter only names Grace's cell in that permutation. Swapping Grace with Felix would restore Felix as engineer and Grace as teacher, which clue (3) forbids.
 
@@ -9839,7 +9839,7 @@ The attempted Grace-as-teacher assignment is therefore impossible from (1), (2),
 
 This is extra case work, not a reread of the main chain. The main chain used (3) as a convenient starter. Convenience is not necessity. Starting from (4) instead, Hugo is lawyer; then the Grace-as-teacher trial still collides with Emma's leftover job as above.
 
-A rushed solver who thought "every numbered clue must be load-bearing" would have kept (3) out of habit. Redundancy is a logical fact about the remaining clues, not a comment on how the puzzle was written. Another rushed move is to drop (3) and then claim the assignment is underdetermined. It is not: the collision on Emma still forces Grace not to be the teacher, which is the content of (3), recovered from the other three clues.
+Thinking "every numbered clue must be load-bearing" would have kept (3) out of habit. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Redundancy is a logical fact about the remaining clues, not a comment on how the puzzle was written. Another rushed move is to drop (3) and then claim the assignment is underdetermined. It is not: the collision on Emma still forces Grace not to be the teacher, which is the content of (3), recovered from the other three clues.
 
 What would make (3) essential? A puzzle in which Grace-as-teacher did not force Emma into a missing job. Here clue (4) tying up Lawyer is what makes Emma's leftover job collide. Without (4) the redundancy argument would fail, which is a different letter.
 
@@ -9850,7 +9850,7 @@ The chain to Emma's job used only clues (3), (2), and (1): Grace not teacher $\\
 
 Remove clue (4) and Emma is still the doctor. The path never mentioned Hugo. Two jobs among Felix and Grace might then be less settled, but this letter only asks whether Emma's job is still determined.
 
-A rushed solver who thought "losing any clue loses every placement" would have dropped Emma as well. Load-bearing is local: clue (4) is load-bearing for Hugo and for the Felix/Grace split, not for Emma.
+Thinking "losing any clue loses every placement" would have dropped Emma as well. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Load-bearing is local: clue (4) is load-bearing for Hugo and for the Felix/Grace split, not for Emma.
 
 The recovered path to Emma never uses clue (4), so the statement is True.`,
     ],
@@ -9897,7 +9897,7 @@ The theorem says: if a sequence converges, then it is bounded. Its negation woul
 
 The theorem holds for every sequence, so nothing can converge while running off to infinity. The description picks out an empty collection. Empty is the correct inhabitant count for the negation of a true universal.
 
-A rushed solver who thought "negation of a theorem must happen sometimes" would be confusing "correctly formed" with "true." The negation is correctly formed and false.
+Thinking "negation of a theorem must happen sometimes" would be confusing "correctly formed" with "true." That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.The negation is correctly formed and false.
 
 What would populate that collection? A convergent unbounded sequence. The theorem says that object does not exist, which is why the letter calls the situation impossible.
 
@@ -9912,7 +9912,7 @@ Bounded with no limit: the converse fails, and this sequence is the witness. The
 
 **2.** Divergence: if a limit $L$ existed, both the odd subsequence and the even subsequence would have to approach $L$. They approach $-1$ and $1$ instead, so no single $L$ works.
 
-A rushed solver who thought "bounded sequences look convergent" would have missed the two subsequences. Oscillation inside a closed interval is bounded divergence. Another rushed move is to think the converse fails only for unbounded sequences. Unbounded sequences kill the inverse's conclusion, not the converse.
+Thinking "bounded sequences look convergent" would have missed the two subsequences. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Oscillation inside a closed interval is bounded divergence. Another rushed move is to think the converse fails only for unbounded sequences. Unbounded sequences kill the inverse's conclusion, not the converse.
 
 The recovered sequence is bounded and divergent, so the statement is True.`,
       `**C.** → True
@@ -9921,7 +9921,7 @@ The inverse is "does not converge, therefore not bounded," equivalent to the con
 
 The inverse is false for the same reason the converse is, with the same witness. Inverse and converse always share a truth value. No new sequence is required.
 
-A rushed solver who went looking for an unbounded divergent sequence (such as $a_{n}=n$) would have found a file that satisfies the inverse rather than refuting it. The refuting file must be divergent and bounded, which is exactly the oscillation already in hand.
+Going looking for an unbounded divergent sequence (such as $a_{n}=n$) would have found a file that satisfies the inverse rather than refuting it. That is why $a_{n}=n$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The refuting file must be divergent and bounded, which is exactly the oscillation already in hand.
 
 **1.** Write $P$ for convergence and $Q$ for boundedness. The theorem is $P\\Rightarrow Q$. The inverse is $\\neg P\\Rightarrow\\neg Q$. Failure of the inverse is $\\neg P\\land Q$: diverges, yet bounded.
 
@@ -9929,7 +9929,7 @@ A rushed solver who went looking for an unbounded divergent sequence (such as $a
 
 **3.** The original theorem is idle on this file: $P$ is false, so $P\\Rightarrow Q$ holds vacuously. Knocking down the inverse does not knock down the theorem. That is the pairing, not a new analysis fact.
 
-What would make the inverse true? Every divergent sequence would have to be unbounded. The stem's oscillation is the standard reason that extra promise is false. A solver who replaced $(-1)^{n}$ by $n$ would have been illustrating divergence with unboundedness, which supports the inverse instead of breaking it.
+What would make the inverse true? Every divergent sequence would have to be unbounded. The stem's oscillation is the standard reason that extra promise is false. Replacing $(-1)^{n}$ by $n$ would have been illustrating divergence with unboundedness, which supports the inverse instead of breaking it. Working from the isolated values, $(-1)^{n}$ is the figure that is checked, not the detour that produced $n$.
 
 The original theorem survives this file because its hypothesis never fires. The converse and the inverse do not survive, because their hypotheses do fire: boundedness for the converse, divergence for the inverse. Same witness, two names, one truth value for that pair.
 
@@ -9942,7 +9942,7 @@ The contrapositive is "not bounded, therefore does not converge," equivalent to 
 
 Both halves of the claim hold: the contrapositive is true, and it is genuinely the version used to prove those specific sequences diverge. This is extra commentary on usefulness, not a second proof of the theorem.
 
-A rushed solver who thought "contrapositive is just a rewriting, so it cannot be the usual proof" would have rejected the second half. Analysts really do argue "unbounded, therefore divergent" on $n$, $2n$, and $n^{2}$.
+Thinking "contrapositive is just a rewriting, so it cannot be the usual proof" would have rejected the second half. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Analysts really do argue "unbounded, therefore divergent" on $n$, $2n$, and $n^{2}$.
 
 The recovered contrapositive is true and used that way, so the statement is True.`,
       `**E.** → False
@@ -9955,7 +9955,7 @@ A convergent sequence is still bounded; some bounded sequences (this oscillating
 
 **2.** Feed a convergent sequence, say $a_{n}=1/n$, to the original: it converges and is bounded, so both sides hold. That file cannot settle the converse.
 
-**3.** A rushed solver who thought "if boundedness does not force convergence, then convergence does not force boundedness" would have mixed the arrows. That is the same pair-mix as in the divisibility task: converse false, original true. Another rushed move is to think the oscillation is a counterexample to "convergent implies bounded." Oscillation is not convergent, so it never enters that hypothesis.
+**3.** Thinking "if boundedness does not force convergence, then convergence does not force boundedness" would have mixed the arrows. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. That is the same pair-mix as in the divisibility task: converse false, original true. Another rushed move is to think the oscillation is a counterexample to "convergent implies bounded." Oscillation is not convergent, so it never enters that hypothesis.
 
 The recovered theorem stays true, so the statement is False.`,
     ],
@@ -9994,7 +9994,7 @@ Suppose J tells the truth. Then "exactly one truth-teller" is true, and J is tha
 
 The J-truthful branch is impossible, so J is a liar. That is the recovered first collapse. This letter only asks J's type, which that collapse pins.
 
-A rushed solver who started by believing J would have been in the dead branch. The contradiction on L is the reason J cannot tell the truth.
+Starting by believing J would have been in the dead branch. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The contradiction on L is the reason J cannot tell the truth.
 
 K's accusation and L's count are later letters. They are not needed to finish J. Once the truthful-J branch dies, J is a liar in every surviving assignment. Changing L's line so that two liars would not be "the same type" would reopen the branch. Against the given lines, the recovered type for J is liar.
 
@@ -10005,7 +10005,7 @@ From the dead J-truthful branch, J is a liar. K's sentence is "J is lying," whic
 
 Equivalently, K talks about J, so J and K always have opposite types: K's sentence is true exactly when J lies. Once J is a liar, K is forced to be a truth-teller.
 
-A rushed solver who thought "K accused J, so K is a liar too" would have missed that an accusation of lying is true when the target really lies.
+Thinking "K accused J, so K is a liar too" would have missed that an accusation of lying is true when the target really lies. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 The recovered opposite-types fact is special to K's wording, not to L. L talks about matching K, which is a later constraint. This letter only needs K's sentence evaluated on a lying J. The evaluation is true, so K tells the truth. If K had said "J tells the truth," the same lying J would have made K a liar. The actual wording is an accusation of lying, and that accusation holds.
 
@@ -10022,7 +10022,7 @@ If L were a liar instead, K would be the sole truth-teller and J's "exactly one"
 
 **3.** L a truth-teller makes the count $2$, keeps J's sentence false, and makes L's "same type as K" sentence true, which a truth-teller is allowed to say.
 
-A rushed solver who stopped after placing J and K would have left L open. The count constraint, J's false sentence, closes L. Another rushed move is to think L could still be either type because L's sentence is about K, not about J. L's sentence is satisfied in the truth-teller case and the count constraint independently forbids the liar case.
+Stopping after placing J and K would have left L open. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The count constraint, J's false sentence, closes L. Another rushed move is to think L could still be either type because L's sentence is about K, not about J. L's sentence is satisfied in the truth-teller case and the count constraint independently forbids the liar case.
 
 What would leave L free? If J had said "at least one truth-teller," both L-types might survive. J said "exactly one," and that exact count is already used up by K unless L joins. The recovered type for L is therefore truth-teller, matching K.
 
@@ -10031,7 +10031,7 @@ so the statement is True.`,
 
 J said "exactly one of us is a truth-teller." J is a liar, so that count is wrong. In the surviving assignment K and L are both truth-tellers, so the actual count is two, not one.
 
-"Exactly one" is J's own line, and a liar's sentence has to be false. The real count is two. A rushed solver who copied J's words as the answer would have been trusting a liar.
+"Exactly one" is J's own line, and a liar's sentence has to be false. The real count is two. Copying J's words as the answer would have been trusting a liar. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 What would make the claim true? A surviving assignment with K as the sole truth-teller, which the L-collapse forbids. Count one is J's line, and J is a liar, so the count cannot be one.
 
@@ -10050,7 +10050,7 @@ If instead L were a liar, K would be the sole truth-teller and J's "exactly one"
 
 **3.** L liar restores "exactly one truth-teller," making J's sentence true. J is a liar, so that triple dies. One triple remains.
 
-A rushed solver who thought "three people, eight type assignments, surely two survive" would have skipped the two collapses. Both leftover branches die. Another rushed move is to flip K and L while keeping J a liar: K a liar would make "J is lying" false, but J is a liar, so K's accusation would be true, which a liar K cannot say.
+Thinking "three people, eight type assignments, surely two survive" would have skipped the two collapses. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Both leftover branches die. Another rushed move is to flip K and L while keeping J a liar: K a liar would make "J is lying" false, but J is a liar, so K's accusation would be true, which a liar K cannot say.
 
 The recovered assignment is unique, so the statement is False.`,
     ],
@@ -10099,7 +10099,7 @@ Rule (4) states it outright: Dmitri attends. Split on Ana. If Ana attends, rule 
 
 Rule (4) states it outright: Dmitri attends. Split on Ana. If Ana attends, rule (1) sends Boris away, rule (2) brings Ceci, and the unless-clause of (3) leaves Dmitri free, matching rule (4). If Ana stays away, Ceci cannot attend (else (3) would push Dmitri out), so Boris is forced in by (2), and Dmitri still attends. Both legal rosters keep Dmitri.
 
-A solver who thought Dmitri's attendance depended on Ana would have missed that rule (4) is a flat fact.
+Thinking Dmitri's attendance depended on Ana would have missed that rule (4) is a flat fact. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is True.`,
       `**B.** → False
@@ -10108,7 +10108,7 @@ Two legal rosters survive. Ana in: {Ana, Ceci, Dmitri}, because (1) drops Boris,
 
 Two legal rosters survive. Ana in: {Ana, Ceci, Dmitri}, because (1) drops Boris, (2) brings Ceci, and the unless-clause saves Dmitri. Ana out: {Boris, Dmitri}, because (3) then forbids Ceci, and (2) forces Boris in. Ana is in one roster and out of the other. The rules leave her decision open. Uniqueness would require the two cases to agree about Ana.
 
-A solver who saw Dmitri in both and concluded everyone is unique would have over-read rule (4). Dmitri is unique; Ana is not.
+Seeing Dmitri in both and concluding everyone is unique would have over-read rule (4). The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Dmitri is unique; Ana is not.
 
 What would make Ana unique? A fifth rule naming her, or deleting the unless-clause in a way that killed one of the two cases. Against the four given rules, both cases live.
 
@@ -10119,14 +10119,14 @@ The claim asks for at least one legal roster of size $3$. The Ana-in case puts A
 
 The claim asks for at least one legal roster of size $3$. The Ana-in case puts Ana, Ceci and Dmitri in the room with Boris away: three attendees. Check the rules: (1) holds (Boris out), (2) holds (Ceci in), (3) is waived by Ana, (4) holds. One example is all an existence claim needs. The other legal roster has size $2$, which is irrelevant to an "at least one" claim.
 
-A solver who averaged the two sizes and reported "about $2.5$" would have been answering a different question. Existence needs one roster of three, and the Ana-in roster is that one.
+Averaging the two sizes and reporting "about $2.5$" would have been answering a different question. Once $2.5$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Existence needs one roster of three, and the Ana-in roster is that one.
 
 so the statement is True.`,
       `**D.** → False
 
 Try Ana out and Boris out together. Rule (4) still puts Dmitri in. With Ana out, rule (3) has no unless-exception, so Ceci attending would force Dmitri out, contradicting rule (4). Thus Ceci is out. Rule (2) says: if Boris is out, then Ceci attends. Boris out and Ceci out make rule (2) fail. The attempted pair "both absent" collapses: Boris is forced in. That is the Ana-out roster, not a third one.
 
-A solver who thought "two absences are independent" would have missed the chain from Ana-out to Ceci-out to Boris-in. The extra case work is that failed third roster.
+Thinking "two absences are independent" would have missed the chain from Ana-out to Ceci-out to Boris-in. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The extra case work is that failed third roster.
 
 The recovered solutions are only two: $\\{\\text{Ana},\\text{Ceci},\\text{Dmitri}\\}$ and $\\{\\text{Boris},\\text{Dmitri}\\}$. In the first, Ana attends so the pair of absences fails. In the second, Boris attends so the pair fails again. There is no legal roster in which Ana and Boris are both missing.
 
@@ -10147,7 +10147,7 @@ Delete the unless-exception, so Ceci attending always forces Dmitri out. The Ana
 
 Delete the unless-exception, so Ceci attending always forces Dmitri out. The Ana-in roster had Ceci and Dmitri both in, so that case dies. The Ana-out roster is {Boris, Dmitri} with Ceci out. Rule (3) is idle because Ceci is absent, so the stricter version still holds. One legal roster remains. The trap is thinking the unless-clause is load-bearing for every solution, when the Ana-out case never uses it.
 
-A solver who concluded "impossible" would have checked only the Ana-in case. Impossibility needs every case to die. The Ana-out case survives the stricter (3).
+Concluding "impossible" would have checked only the Ana-in case. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Impossibility needs every case to die. The Ana-out case survives the stricter (3).
 
 so the statement is False.`,
     ],
@@ -10194,14 +10194,14 @@ Rule (4) says: if Zoe joins, then Noah does not. Contrapose it: if Noah joins, t
 
 Rule (4) says: if Zoe joins, then Noah does not. Contrapose it: if Noah joins, then Zoe does not. That is the claimed implication, taken from a numbered rule. A rule and its contrapositive never disagree. If Noah joins, Maria comes by (1) and Zoe is out by this contrapositive.
 
-A solver who thought they needed a new derivation beyond contraposing (4) would have been doing extra work. The letter is (4) swapped and negated.
+Thinking they needed a new derivation beyond contraposing (4) would have been doing extra work. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter is (4) swapped and negated.
 
 so the statement is True.`,
       `**B.** → False
 
 Suppose Leo and Noah both join. Rule (2): Leo joins only if Zoe joins, so Zoe must join. Rule (4): if Zoe joins, then Noah does not join. Zoe in and Noah in contradict rule (4). The chain is Leo $\\Rightarrow$ Zoe $\\Rightarrow$ not Noah, so Leo and Noah cannot share a roster. None of the legal rosters contains both.
 
-A solver who sat them together because "study groups want everyone" would have ignored the numbered chain. Extra check: put Leo and Noah in, force Zoe by (2), break (4). That failed roster is this letter's extra case.
+Sitting them together because "study groups want everyone" would have ignored the numbered chain. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Extra check: put Leo and Noah in, force Zoe by (2), break (4). That failed roster is this letter's extra case.
 
 The recovered legal list is five rosters, and every one of them omits at least one of Leo or Noah. The unique Noah roster is $\\{\\text{Noah},\\text{Maria}\\}$, with Leo and Zoe out. Every Leo roster includes Zoe and therefore excludes Noah.
 
@@ -10220,7 +10220,7 @@ Try the roster {Maria}. Noah is out, so rule (1) is idle; Leo is out, so rule (2
 
 Try the roster {Maria}. Noah is out, so rule (1) is idle; Leo is out, so rule (2) is idle; Zoe is out, so rule (4) is idle. Rule (3) asks for Maria or Leo, and Maria is in, so all four rules hold. Maria on her own is legal. Possible.
 
-A solver who thought rule (3) needed both Maria and Leo would have been running an and. The recovered (3) is an or.
+Thinking rule (3) needed both Maria and Leo would have been running an and. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The recovered (3) is an or.
 
 so the statement is True.`,
       `**D.** → True
@@ -10229,7 +10229,7 @@ Rule (1) says: if Noah joins, then Maria joins. Contrapose it: if Maria does not
 
 Rule (1) says: if Noah joins, then Maria joins. Contrapose it: if Maria does not join, then Noah does not join. That is the claimed sentence, equivalent to a given rule, so it holds in every legal roster. No case work is required; a rule and its contrapositive never disagree.
 
-A solver who started a case split on Maria would have been doing letter C's work. This letter is just (1) contraposed.
+Starting a case split on Maria would have been doing letter C's work. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. This letter is just (1) contraposed.
 
 so the statement is True.`,
       `**E.** → False
@@ -10238,7 +10238,7 @@ Rule (3) needs Maria or Leo. Maria alone satisfies it, and with Noah, Leo, and Z
 
 Rule (3) needs Maria or Leo. Maria alone satisfies it, and with Noah, Leo, and Zoe all out, rules (1), (2), and (4) are idle. The roster {Maria} is legal and omits Zoe. A "must join" claim fails as soon as one legal roster leaves Zoe out. Zoe appears in some legal rosters, not all.
 
-A solver who saw Zoe in a Leo roster and concluded she is required would have mixed "appears sometimes" with "appears always." Letter C's {Maria} is the witness that she is not required.
+Seeing Zoe in a Leo roster and concluding she is required would have mixed "appears sometimes" with "appears always." After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.Letter C's {Maria} is the witness that she is not required.
 
 so the statement is False.`,
     ],
@@ -10287,7 +10287,7 @@ Contrapositives of (1) and (4) are available whenever the originals are.`,
 
 Open with rule (1): Ben $\\Rightarrow$ Carla. Then rule (3): Carla $\\Rightarrow$ not Dan. Chain them: Ben $\\Rightarrow$ Carla $\\Rightarrow$ not Dan, so Ben playing forces Dan out. Ben pulls Carla in and Carla shuts Dan out, two rules in a row, no exceptions.
 
-A solver who thought Dan could tag along with Ben would have broken (3) once Carla arrived.
+Thinking Dan could tag along with Ben would have broken (3) once Carla arrived. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered Ben rosters are $\\{\\text{Ben},\\text{Carla}\\}$ and $\\{\\text{Ben},\\text{Carla},\\text{Ella}\\}$. Dan is absent from both. The Dan roster $\\{\\text{Dan},\\text{Ella}\\}$ has no Ben. The chain is the whole of this letter; Ella is free on the Ben side and does not reopen a seat for Dan. Rule (2) never lets Dan in without Ella, and even with Ella, Carla is already there whenever Ben is there, so Dan still cannot join. The recovered implication is Ben playing, therefore Dan sitting out. Ella's optional seat on the Ben side is a later choice and does not rewrite rule (3).
 
@@ -10296,7 +10296,7 @@ so the statement is True.`,
 
 Suppose Ben and Dan both play. Rule (1) forces Carla in with Ben. Rule (3) then says: if Carla plays, Dan does not. Carla in and Dan in contradict rule (3). Equivalently: Ben $\\Rightarrow$ Carla $\\Rightarrow$ not Dan. The pair is impossible.
 
-The extra case is that failed pair. A solver who sat them together because "friends" would have ignored the chain.
+The extra case is that failed pair. Sitting them together because "friends" would have ignored the chain. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 Letter A already recovered the chain as an implication. This letter is the same chain read as a forbidden pair. Scanning the five legal rosters confirms it: no roster lists both names. Ella cannot mediate, because Carla is already in whenever Ben is in, and Carla forbids Dan. A friendship story that sat them at the same table would still have to obey (1) then (3). Those two rules, in that order, leave no legal seat for the pair. The recovered five-roster list is the census: Ben appears, Dan appears, never in the same row.
 
@@ -10305,7 +10305,7 @@ so the statement is False.`,
 
 Check $\\{\\text{Ella}\\}$ against the four rules. Ben is out, so rule (1) is idle; Dan is out, so rule (2) is idle; Carla is out, so rule (3) is idle. Rule (4) needs Ben or Ella, and Ella is in. $\\{\\text{Ella}\\}$ passes every rule. Ella can play alone.
 
-A solver who thought rule (4) needed both Ben and Ella would have been running an and.
+Thinking rule (4) needed both Ben and Ella would have been running an and. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 This is an existence claim, so one surviving roster is the whole proof. The recovered list includes $\\{\\text{Ella}\\}$ as the "neither Carla nor Dan" case on the Ben-out side. Rule (4) is already satisfied by Ella, so Ben is not required to join her. Rules (1) through (3) never fire, because their hypotheses are false.
 
@@ -10318,7 +10318,7 @@ so the statement is True.`,
 
 Rule (3) is Carla $\\Rightarrow$ not Dan. Contrapose: Dan $\\Rightarrow$ not Carla. That is the claimed sentence, taken from a numbered rule. The only legal roster containing Dan is $\\{\\text{Dan},\\text{Ella}\\}$: rule (2) is satisfied because Ella plays, rule (4) is satisfied by Ella, and Carla is out, matching the contrapositive.
 
-A solver who put Carla with Dan would have broken (3) directly.
+Putting Carla with Dan would have broken (3) directly. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 A rule and its contrapositive are the same claim, so no extra case work is required beyond reading (3) backwards. The recovered Dan roster simply illustrates the contrapose: Dan in, Carla out, Ella in to cover rule (2). Ben is then out automatically, because Ben would have brought Carla. The claimed sentence is therefore (3) contraposed, not a new constraint on Ella. If Carla were allowed to play with Dan, rule (3) itself would be gone, which is not this stem. The recovered Dan roster is {Dan, Ella} with Carla out, which is the contrapose in a picture.
 
@@ -10329,7 +10329,7 @@ Carla is pulled in only by rule (1), and only when Ben plays. Without Ben, rule 
 
 Carla is pulled in only by rule (1), and only when Ben plays. Without Ben, rule (4) still needs Ella, and Carla may sit out. {Ella} and {Dan, Ella} are both legal and omit Carla. A "must play" claim fails on either roster. Carla is required only as Ben's companion.
 
-A solver who saw Carla in the Ben rosters and concluded she is compulsory would have mixed those rosters with the full list. Two of the five recovered rosters omit her.
+Seeing Carla in the Ben rosters and concluding she is compulsory would have mixed those rosters with the full list. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Two of the five recovered rosters omit her.
 
 so the statement is False.`,
     ],
@@ -10390,7 +10390,7 @@ Two things are worth reading off that list. Ella alone is legal, since with Ben,
 
 Rule (4) is: Quinn cooks only if Owen does not, that is Quinn $\\Rightarrow$ not Owen. Contrapose it: Owen $\\Rightarrow$ not Quinn. That is the claimed implication, taken from a numbered rule. Quinn is out whenever Owen is in. Turn the "only if" around and Owen cooking means Quinn does not.
 
-A solver who kept Quinn with Owen would have broken (4).
+Keeping Quinn with Owen would have broken (4). That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The recovered Owen evening is $\\{\\text{Owen}\\}$ alone. Priya is already out by rule (1), and Quinn is out by this contrapose, so the kitchen has one cook. The other recovered evening $\\{\\text{Priya},\\text{Quinn}\\}$ has Owen out, which is compatible with Quinn cooking. This letter only asks the Owen-to-not-Quinn direction, which (4) contraposed already is. An evening with Owen and Quinn together would break (4) before (1) or (2) are even read. Priya's absence on the Owen night is a different rule; Quinn's absence is this contrapose. Two absences, two reasons, one recovered Owen-only kitchen.
 
@@ -10401,7 +10401,7 @@ Rule (1) says: if Owen cooks, then Priya does not. A night with both cooking wou
 
 Rule (1) says: if Owen cooks, then Priya does not. A night with both cooking would make that hypothesis true and the conclusion false, violating rule (1) on the spot. No later rule is allowed to override a broken numbered rule. Never both. Rule (1) blocks that pairing in a single line.
 
-A solver who sat them together because rule (2) wants at least one would have mixed "at least one" with "both allowed." (1) and (2) together force exactly one, not both.
+Sitting them together because rule (2) wants at least one would have mixed "at least one" with "both allowed." (1) and (2) together force exactly one, not both. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 so the statement is False.`,
       `**C.** → False
@@ -10410,14 +10410,14 @@ Check {Quinn} against the four rules. Rule (2) requires Owen or Priya; neither i
 
 Check {Quinn} against the four rules. Rule (2) requires Owen or Priya; neither is cooking, so rule (2) fails immediately. Rule (1) is idle (Owen out). Rule (3) is idle (Priya out). Rule (4) holds, but a single broken numbered rule is enough. Quinn cannot cook alone. Rule (2) demands Owen or Priya every night.
 
-A solver who thought Quinn could cover the kitchen would have treated (2) as optional. The extra case is that failed singleton roster.
+Thinking Quinn could cover the kitchen would have treated (2) as optional. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The extra case is that failed singleton roster.
 
 so the statement is False.`,
       `**D.** → True
 
 Rule (3) says: if Priya cooks, then Quinn also cooks. That is exactly the claimed guarantee. The only Priya evening the other rules allow is $\\{\\text{Priya},\\text{Quinn}\\}$, which includes Quinn: Owen is out by (1) and (2), and (4) holds because Owen is away. That is rule (3) quoted back.
 
-A solver who dropped Quinn on a Priya night would have broken (3).
+Dropping Quinn on a Priya night would have broken (3). After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered pair of evenings is $\\{\\text{Owen}\\}$ and $\\{\\text{Priya},\\text{Quinn}\\}$. Whenever Priya is in the kitchen, Quinn is there too. The guarantee is not a new derivation; it is a numbered rule illustrated by the only surviving Priya roster. Owen-alone does not test this letter, because Priya is out and (3) is idle. The claim is about Priya nights, and on those nights Quinn is recovered as present. Dropping Quinn while Priya cooks is exactly the failure row of rule (3), and no legal evening has that row. The recovered Priya night is {Priya, Quinn}, which is the guarantee in a picture.
 
@@ -10428,7 +10428,7 @@ Rules (1) and (2) together force exactly one of Owen or Priya. The Priya evening
 
 Rules (1) and (2) together force exactly one of Owen or Priya. The Priya evening is {Priya, Quinn}: rule (3) brings Quinn, rule (4) holds because Owen is out, and rule (1) is idle. That legal evening omits Owen. Owen therefore is not required every night. The rules insist that one of Owen and Priya cooks, not that it must be Owen.
 
-A solver who saw the {Owen} night and concluded Owen is compulsory would have ignored the other legal night. Two evenings, Owen on one of them.
+Seeing the {Owen} night and concluding Owen is compulsory would have ignored the other legal night. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. Two evenings, Owen on one of them.
 
 so the statement is False.`,
     ],
@@ -10483,14 +10483,14 @@ Suppose Diego goes. Rule (1) brings Fatima. Rule (3) then pushes Grace out. Rule
 
 Suppose Diego goes. Rule (1) brings Fatima. Rule (3) then pushes Grace out. Rule (2) needs Grace or Hugo, so Hugo goes. Rule (6): Hugo goes only if Fatima does not, so Fatima is out. Line 1 put Fatima in and the last line took her out. The assumption is impossible, so Diego never goes. There is no scenario for the claim to point at.
 
-The extra case is that collapsed Diego-in chain. A solver who left Diego optional would have missed the collision on Fatima.
+The extra case is that collapsed Diego-in chain. Leaving Diego optional would have missed the collision on Fatima. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is False.`,
       `**B.** → True
 
 Rule (6) says Hugo goes only if Fatima does not; contraposed, Fatima going means Hugo staying home. A rule and its contrapositive are the same claim, so no case work is needed. That is the claimed implication, equivalent to a given rule.
 
-A solver who started a five-person case split would have been doing letter C's work. This letter is (6) contraposed.
+Starting a five-person case split would have been doing letter C's work. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. This letter is (6) contraposed.
 
 The recovered fact after Diego's collapse is that Hugo must go, which already forces Fatima out by (6). The contrapose $F\\Rightarrow\\neg H$ is still the same numbered rule, now read from Fatima's side. Sitting Fatima and Hugo together would break (6) on the spot, before any other chain is run. Letter C will force Hugo by a different route; this letter never needs that force, because (6) backwards already forbids the Fatima-Hugo pair. The claimed arrow is that numbered rule read from Fatima's side, not a new chain through Diego.
 
@@ -10499,7 +10499,7 @@ so the statement is True.`,
 
 Diego cannot go: $D\\Rightarrow F\\Rightarrow\\neg G\\Rightarrow H\\Rightarrow\\neg F$ collides. With Diego gone, rule (4) still needs Diego or Hugo, so Hugo must go in every remaining roster. Rule (4) needs Diego or Hugo, and Diego is off the table entirely, so the whole burden falls on Hugo.
 
-A solver who thought Hugo was optional once Diego was out would have broken (4). The extra force is (4) after the Diego-collapse.
+Thinking Hugo was optional once Diego was out would have broken (4). What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The extra force is (4) after the Diego-collapse.
 
 **1.** Diego in pulls Fatima by (1), which by (3) drops Grace, which by (2) puts Hugo in, which by (6) drops Fatima. Fatima in and Fatima out is the collision, so Diego is impossible.
 
@@ -10511,7 +10511,7 @@ What would make Hugo optional? A legal Diego-in roster, which the Fatima collisi
 
 Iris can join some of those assignments, and Grace is already out once Hugo is in, by rule (2)'s "unless." None of those later choices restores a Hugo-out roster, because Diego is still impossible and (4) still needs one of Diego or Hugo. The recovered mandatory name is Hugo.
 
-A solver who kept Hugo optional after seeing Diego fail would have left rule (4) with two false disjuncts. The extra force in this letter is that remaining disjunct, not a new preference for Hugo. After Diego's collision, Hugo is the only way to keep rule (4) true, so he attends in every surviving assignment.
+Keeping Hugo optional after seeing Diego fail would have left rule (4) with two false disjuncts. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The extra force in this letter is that remaining disjunct, not a new preference for Hugo. After Diego's collision, Hugo is the only way to keep rule (4) true, so he attends in every surviving assignment.
 
 so the statement is True.`,
       `**D.** → True
@@ -10520,7 +10520,7 @@ Diego is impossible, so Fatima is out by the same collapse ($H$ is forced and th
 
 Diego is impossible, so Fatima is out by the same collapse ($H$ is forced and then (6) keeps Fatima out). Test {Hugo, Grace, Iris}: rules (1) and (3) are idle, rule (2) is satisfied because Hugo is in, rule (4) is satisfied by Hugo, rule (5) holds because Diego is out, and rule (6) holds because Fatima is out. All six hold, so Grace and Iris can attend together.
 
-A solver who thought Grace and Iris conflicted would have invented a rule the stem does not contain. The extra case is that legal triple.
+Thinking Grace and Iris conflicted would have invented a rule the stem does not contain. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The extra case is that legal triple.
 
 so the statement is True.`,
       `**E.** → False
@@ -10529,7 +10529,7 @@ The claimed implication is Iris $\\Rightarrow$ Fatima. Hugo is always in (Diego 
 
 The claimed implication is Iris $\\Rightarrow$ Fatima. Hugo is always in (Diego is impossible, so (4) forces Hugo), and rule (6) then keeps Fatima out of every legal roster. Iris goes in {Hugo, Iris} and {Hugo, Grace, Iris}. Take {Hugo, Grace, Iris}: Iris in, Fatima out. True "if", false "then." The implication fails.
 
-A solver who chained Iris to Diego to Fatima would have been using (5) backwards incorrectly: (5) is Iris $\\Rightarrow$ not Diego, which we already have, and it does not bring Fatima in. Fatima is banned by Hugo plus (6).
+Chaining Iris to Diego to Fatima would have been using (5) backwards incorrectly: (5) is Iris $\\Rightarrow$ not Diego, which we already have, and it does not bring Fatima in. The opposite verdict would need a different isolation than $\\Rightarrow$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Fatima is banned by Hugo plus (6).
 
 so the statement is False.`,
     ],
@@ -10584,7 +10584,7 @@ Suppose Aiden presents. Rule (1) then forces both Bella and Caleb in. Bella in t
 
 Suppose Aiden presents. Rule (1) then forces both Bella and Caleb in. Bella in triggers rule (3) (Daisy out) and rule (6) (Ethan out). Rule (2) needs Daisy or Ethan, and both are now out. Contradiction. So Aiden never presents, in every valid scenario. Aiden cannot present without Bella, and Bella's presence leaves rule (2) with nobody to satisfy it.
 
-The extra case is that failed Aiden-in roster. A solver who left Aiden optional would have missed the empty (2).
+The extra case is that failed Aiden-in roster. Leaving Aiden optional would have missed the empty (2). After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is True.`,
       `**B.** → False
@@ -10593,14 +10593,14 @@ Put Bella on the roster. Rule (3): Bella $\\Rightarrow$ not Daisy, so Daisy is o
 
 Put Bella on the roster. Rule (3): Bella $\\Rightarrow$ not Daisy, so Daisy is out. Rule (6): Ethan presents only if Bella does not, so Ethan is out. Rule (2) still needs Daisy or Ethan. Both missing: every Bella roster is illegal. Bella cannot present in any valid scenario. The collision is immediate.
 
-A solver who sat Bella with Ethan would have broken (6). A solver who sat Bella with Daisy would have broken (3). There is no third partner who repairs (2).
+Sitting Bella with Ethan would have broken (6). The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Sitting Bella with Daisy would have broken (3). The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. There is no third partner who repairs (2).
 
 so the statement is False.`,
       `**C.** → True
 
 Rule (4) is the given sentence: Caleb presents only if Ethan presents, which is Caleb $\\Rightarrow$ Ethan. The claim quotes that implication. There is nothing to derive; "only if" *is* that implication. Both surviving Caleb rosters include Ethan.
 
-A solver who dropped Ethan from a Caleb roster would have broken (4) on the spot.
+Dropping Ethan from a Caleb roster would have broken (4) on the spot. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered live people after the Bella exclusions are Caleb, Daisy, and Ethan, with (2) and (4) still in force. Whenever Caleb is in, (4) brings Ethan. Daisy may or may not join, but Ethan is not optional on a Caleb roster. Quoting (4) is the whole of this letter. Aiden, Bella, and Faye are already off the table from earlier collisions; they cannot create a Caleb-without-Ethan roster, because (4) does not care who else is missing. "Only if" is the arrow, and the recovered live Caleb files all include Ethan. Quoting rule (4) is enough; no extra intern needs to be placed.
 
@@ -10611,7 +10611,7 @@ Rule (5) says Faye $\\Rightarrow$ Aiden. Rule (1) says Aiden $\\Rightarrow$ Bell
 
 Rule (5) says Faye $\\Rightarrow$ Aiden. Rule (1) says Aiden $\\Rightarrow$ Bella (and Caleb). Bella is already impossible: she would remove Daisy by rule (3) and Ethan by rule (6), leaving rule (2) with nobody. So Aiden is out, and therefore Faye is out. Faye depends on Aiden, Aiden depends on Bella, and Bella is impossible.
 
-A solver who put Faye in without Aiden would have broken (5). The extra chain is Faye to Aiden to Bella to empty (2).
+Putting Faye in without Aiden would have broken (5). The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The extra chain is Faye to Aiden to Bella to empty (2).
 
 so the statement is False.`,
       `**E.** → False
@@ -10620,7 +10620,7 @@ After Bella, Aiden, and Faye are excluded, the live people are Caleb, Daisy, and
 
 After Bella, Aiden, and Faye are excluded, the live people are Caleb, Daisy, and Ethan, with rule (2) (Daisy or Ethan) and rule (4) (Caleb $\\Rightarrow$ Ethan). Five rosters survive: {Daisy}, {Ethan}, {Daisy, Ethan}, {Caleb, Ethan}, {Caleb, Daisy, Ethan}. Five is already more than one, so uniqueness fails.
 
-A solver who saw "lots of people excluded" and concluded "only one roster left" would have missed that three live people with a mild or-constraint still generate five legal subsets. The extra count is those five.
+Seeing "lots of people excluded" and concluding "only one roster left" would have missed that three live people with a mild or-constraint still generate five legal subsets. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. The extra count is those five.
 
 so the statement is False.`,
     ],
@@ -10675,7 +10675,7 @@ The live people after those exclusions are Caleb, Daisy, and Ethan, with (2) and
 
 Suppose Petra does not review. Rule (6): Sana reviews only if Petra reviews, so Sana is out too. Rule (4) needs Petra or Sana, and both are gone. Contradiction. Therefore Petra reviews in every valid assignment. Drop Petra and rule (6) drops Sana with her, leaving rule (4) with nobody at all.
 
-A solver who left Petra optional would have missed that double drop.
+Leaving Petra optional would have missed that double drop. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 The recovered unique assignment is Petra, Sana, and Theo reviewing, with Quinn and Ravi out. Petra's presence is the first switch in that row: without her, Sana cannot cover (4), and (4) has no other covering person. Later switches (Quinn out, Theo in, Ravi out, Sana in) all assume Petra is already in.
 
@@ -10683,14 +10683,14 @@ What would make Petra optional? A stem that let Sana review without Petra, or th
 
 The recovered unique triple is Petra, Sana, Theo. Quinn is out by (1) once Petra is in, Theo is in by (3) once Quinn is out, and Ravi is out by (5) once Theo is in, which then forces Sana by (2). That whole cascade starts only after Petra is already seated. This letter stops at that first forced name.
 
-The extra case is the failed Petra-out roster: Sana drops by (6), then (4) has nobody. That collapse is why "every valid assignment" includes Petra, not a count of how many assignments exist. The recovered unique assignment starts with Petra; without her the rules have no covering person for (4). Petra is the first recovered object this letter needs, and that object is forced. A solver who left her optional would have been scanning later switches before locking the first one.
+The extra case is the failed Petra-out roster: Sana drops by (6), then (4) has nobody. That collapse is why "every valid assignment" includes Petra, not a count of how many assignments exist. The recovered unique assignment starts with Petra; without her the rules have no covering person for (4). Petra is the first recovered object this letter needs, and that object is forced. Leaving her optional would have been scanning later switches before locking the first one. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict.
 
 so the statement is True.`,
       `**B.** → True
 
 Rule (1) says: if Petra reviews, then Quinn does not. Contrapose it: if Quinn reviews, then Petra does not. That is the claimed sentence. Combined with Petra reviewing in every valid assignment (else (6) and (4) collide), Quinn is excluded as well. Contrapositive of rule (1), so it holds automatically.
 
-A solver who put Quinn in with Petra would have broken (1) directly.
+Putting Quinn in with Petra would have broken (1) directly. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered unique assignment already has Quinn out. This letter does not need that uniqueness to justify the contrapose: (1) backwards is enough. Uniqueness only explains why Quinn never appears even as a lone reviewer. The claimed implication is the numbered rule read from Quinn's side. Putting Quinn in would require Petra out, which letter A already showed collides with (6) and (4). Either reading, Quinn cannot review. The claimed implication is still just (1) contraposed, true in the unique recovered assignment and in any assignment that obeys (1). Quinn-in would need Petra-out, which letter A already forbade.
 
@@ -10701,7 +10701,7 @@ Petra is forced (else (6) and (4) collide). Then rule (1) drops Quinn. Rule (3):
 
 Petra is forced (else (6) and (4) collide). Then rule (1) drops Quinn. Rule (3): Quinn out $\\Rightarrow$ Theo in. Rule (5): Theo in $\\Rightarrow$ Ravi out. Rule (2) is then carried by Sana, not by Ravi. There is no legal assignment in which Ravi reviews. There is no branch where Ravi sneaks back in once Theo is forced.
 
-The extra chain is Petra to not-Quinn to Theo to not-Ravi. A solver who sat Ravi with Theo would have broken (5).
+The extra chain is Petra to not-Quinn to Theo to not-Ravi. Sitting Ravi with Theo would have broken (5). That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 so the statement is False.`,
       `**D.** → True
@@ -10710,7 +10710,7 @@ Petra is forced. Then: rule (1) excludes Quinn; rule (3) brings Theo; rule (5) e
 
 Petra is forced. Then: rule (1) excludes Quinn; rule (3) brings Theo; rule (5) excludes Ravi; rule (2), with Ravi out, brings Sana; rule (6) is content because Petra already reviews. The unique assignment is therefore {Petra, Sana, Theo}. Both Theo and Sana review. Theo is brought in by rule (3); Sana is brought in by rule (2).
 
-A solver who dropped Sana would have left (2) with Ravi already out. A solver who dropped Theo would have left (3) with Quinn already out.
+Dropping Sana would have left (2) with Ravi already out. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Dropping Theo would have left (3) with Quinn already out. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is True.`,
       `**E.** → False
@@ -10719,7 +10719,7 @@ Every status is pinned by a numbered rule once Petra is forced: Quinn out by (1)
 
 Every status is pinned by a numbered rule once Petra is forced: Quinn out by (1), Theo in by (3), Ravi out by (5), Sana in by (2). No reviewer is left with a free yes/no choice. A second valid assignment would need at least one optional person. There is none, so uniqueness holds and "multiple different valid ways" is false.
 
-A solver who thought Iris-style optional people existed here would have been copying a different puzzle. This row of switches has no leftover free bit.
+Thinking Iris-style optional people existed here would have been copying a different puzzle. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. This row of switches has no leftover free bit.
 
 so the statement is False.`,
     ],
@@ -10790,7 +10790,7 @@ Without Victor the roster also loses Uma (by (1)) and Bianca (by (7) read backwa
 
 Without Victor the roster also loses Uma (by (1)) and Bianca (by (7) read backwards). Wendy in and Xavier out leaves at most Wendy, Yara and Zane (size $\\le 3$). Xavier in and Wendy out removes Yara by rule (4), forces Zane by rule (5), and yields only Xavier and Zane (size $2$). Both fall short of four, so Victor must compete.
 
-The extra arithmetic is those two size counts, $3$ and $2$, both below the recovered threshold $4$ from rule (8). A solver who skipped (8) would have left Victor optional.
+The extra arithmetic is those two size counts, $3$ and $2$, both below the recovered threshold $4$ from rule (8). Skipping (8) would have left Victor optional. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 so the statement is True.`,
       `**B.** → False
@@ -10799,14 +10799,14 @@ Victor always competes (else the head count under (8) fails). Rule (2) then alwa
 
 Victor always competes (else the head count under (8) fails). Rule (2) then always brings Wendy in, and rule (3) permits exactly one of Wendy and Xavier. Xavier is shut out every time. No roster contains him. Rule (3) allows exactly one of Wendy or Xavier, and Wendy is already in.
 
-A solver who sat Xavier with Wendy would have broken (3). A solver who sat Xavier without Wendy would have needed Victor out, which (8) forbids.
+Sitting Xavier with Wendy would have broken (3). The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Sitting Xavier without Wendy would have needed Victor out, which (8) forbids. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does.
 
 so the statement is False.`,
       `**C.** → True
 
 Rule (6) says Zane competes only if Bianca does not, that is Zane $\\Rightarrow$ not Bianca. Contrapose it: Bianca $\\Rightarrow$ not Zane. That is the claimed implication. The two never appear together. Among Yara, Zane and Bianca, rule (6) forbids the Zane and Bianca pair.
 
-A solver who sat them together would have broken (6) on the spot.
+Sitting them together would have broken (6) on the spot. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The recovered hinge of the puzzle is the four-competitor minimum, which forces Victor in and then a chain of names. This letter does not rerun that hinge. It only reads (6) backwards. Bianca in, Zane out, is the contrapose, and it holds in every roster that (6) governs, including those later forced by the four-person count. Yara can cover rule (5) when Zane is out, so Bianca's presence does not leave (5) empty. The forbidden pair is only Bianca with Zane. Reading (6) backwards is this letter's whole job; the four-person hinge is neighbouring work.
 
@@ -10817,7 +10817,7 @@ The forced core is Uma, Victor, Wendy in and Xavier out. Among Yara, Zane and Bi
 
 The forced core is Uma, Victor, Wendy in and Xavier out. Among Yara, Zane and Bianca, rule (5) asks for Yara or Zane and rule (6) forbids Zane with Bianca, leaving four extras: {Yara}, {Zane}, {Yara, Bianca}, {Yara, Zane}. Four legal rosters is already more than one. Only four of the seven have their fate decided.
 
-A solver who saw a large forced core and concluded uniqueness would have missed those four extras. The extra count is four, not one.
+Seeing a large forced core and concluding uniqueness would have missed those four extras. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The extra count is four, not one.
 
 so the statement is False.`,
       `**E.** → False
@@ -10826,7 +10826,7 @@ With the forced core Uma, Victor, Wendy already in and Xavier already out, a siz
 
 With the forced core Uma, Victor, Wendy already in and Xavier already out, a size-$6$ roster would need all three of Yara, Zane and Bianca; rule (5) is fine, but rule (6) blocks the Zane and Bianca pair, so six is unreachable. The surviving extras are only {Yara}, {Zane}, {Yara, Bianca} and {Yara, Zane}, giving sizes $4$ or $5$.
 
-The extra arithmetic is $3+3=6$ for the attempted full extra, which (6) forbids, versus $3+1$ or $3+2$ for the legal extras. A solver who counted "six people sounds possible" would have skipped (6).
+The extra arithmetic is $3+3=6$ for the attempted full extra, which (6) forbids, versus $3+1$ or $3+2$ for the legal extras. Counting "six people sounds possible" would have skipped (6). After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 so the statement is False.`,
     ],

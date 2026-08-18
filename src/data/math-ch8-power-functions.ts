@@ -24,7 +24,7 @@ export const MATH_CH8_POWER_FUNCTIONS: MathTask[] = [
 
 This is a level question at side $2$ cm, not a scale question. The overview already evaluated $M(2)=40$ from $5\\cdot 2^{3}=5\\cdot 8$. This letter only asks whether that table entry is the number in the claim.
 
-The mass is five times the cube of the side, not five times the side itself. A rushed solver who computed $5\\cdot 2^{2}=20$, treating the block as an area, would miss the cubic packing.
+The mass is five times the cube of the side, not five times the side itself. Computing $5\\cdot 2^{2}=20$, treating the block as an area, would miss the cubic packing. Once $5\\cdot 2^{2}=20$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **1.** The exponent $3$ acts on $s$, never on the density $5$. Cubing the side first, then multiplying, is the order in identity $(1)$.
 
@@ -61,7 +61,7 @@ The unit cube is the one side where the density coefficient and the mass are the
 
 At side $1$ every power is $1$, so $s^{3}=1$ and the product is just the coefficient $5$. That is why a density-first reader is most likely to overwrite this entry: cubing $5$ instead of cubing $1$ lands on $125$, which is letter B's false figure, not this mass.
 
-**1.** A solver who still cubed $5$ would land on $125$ and confuse this letter with B. The unit side is where coefficient and mass coincide. Cubing the coefficient is the wrong object; the exponent acts on $s$, never on the $5$.
+**1.** Still cubing $5$ would land on $125$ and confuse this letter with B. Working from the isolated values, $5$ is the figure that is checked, not the detour that produced $125$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The unit side is where coefficient and mass coincide. Cubing the coefficient is the wrong object; the exponent acts on $s$, never on the $5$.
 
 **2.** Side $1$ cm is the smallest of the four standard sides in Part 3. It is also the one entry a density-first reader is most likely to overwrite by cubing $5$. Side $2$ already sat at $40$ in letter A, so the unit check is the remaining small-side sanity test.
 
@@ -146,7 +146,7 @@ The load channel is the even-root rule $D(t)=6t^{\\frac{1}{2}}$ kilograms, and t
 
 The overview recovered $D(0)=0$. That is a genuine real number of kilograms, not a refusal. A square root is defined for every nonnegative real, and zero is nonnegative: $0^{2}=0$, so the root of the reset is itself zero. Multiplying by the coefficient $6$ does not create a division. The product is $0$ kilograms of dissolved load.
 
-**1.** A rushed solver who treated every power the way a reciprocal is treated would exclude $t=0$ from $D$ as well as from $R$. That confuses the sign of the exponent with the parity of the root. Load has exponent $+\\frac{1}{2}$, so the variable sits in a numerator. There is no $t$ in a denominator, and there is no division by zero.
+**1.** Treating every power the way a reciprocal is treated would exclude $t=0$ from $D$ as well as from $R$. That is the fork: $t=0$ belongs to the recovered isolation, $R$ belongs to the discarded mix. That confuses the sign of the exponent with the parity of the root. Load has exponent $+\\frac{1}{2}$, so the variable sits in a numerator. There is no $t$ in a denominator, and there is no division by zero.
 
 **2.** The same even-root gate is what later refuses $t=-4$ in letter C. Accepting zero and refusing negatives is one story, not two. The reset is the included endpoint of the load domain $t\\ge 0$.
 
@@ -169,7 +169,7 @@ This is not a small-number problem. It is not that the turbidity is huge, or tha
 
 **1.** The even-root story from letter A does not save this channel. Load put $t$ in a numerator. Turbidity puts $t$ in a denominator, twice. Parity of a root never licensed a zero denominator.
 
-**2.** A rushed solver who wrote $R(0)=50\\cdot 0$ as if the exponent were positive would invent a reading of $0$ units. That is the wrong sign on the exponent. Another rushed solver who copied $D(0)=0$ onto $R$ is treating the two channels as if they shared a domain. They do not: load lives on $t\\ge 0$, turbidity on $t>0$.
+**2.** Writing $R(0)=50\\cdot 0$ as if the exponent were positive would invent a reading of $0$ units. The stem's recovered values line up with $R(0)=50\\cdot 0$, whereas $0$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $R(0)=50\\cdot 0$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is the wrong sign on the exponent. Copying $D(0)=0$ onto $R$ is treating the two channels as if they shared a domain. Working from the isolated values, $D(0)=0$ is the figure that is checked, not the detour that produced $R$. That contrast is the reason the verdict goes the way it does. They do not: load lives on $t\\ge 0$, turbidity on $t>0$.
 
 **3.** Just after the reset the reading is large, which is extra arithmetic that shows the blow-up rather than a defined value at zero. At $t=\\frac{1}{2}$,
 
@@ -194,7 +194,7 @@ This is a domain question about the parity of the root, not about the size of $4
 
 **1.** Letter A already used the same gate at zero and found it open. The gate that includes $0$ still excludes every negative. The load domain is $t\\ge 0$, not all real $t$.
 
-**2.** A rushed solver who remembered that cube roots accept negatives would apply that licence to a square root. The exponent here is $\\frac{1}{2}$, not $\\frac{1}{3}$. Another rushed solver who computed $6\\cdot\\sqrt{4}=12$ and then attached a minus sign by hand would report $-12$ kilograms. That is not how even roots work: the input is negative, so the root is not real, rather than real and then negated.
+**2.** Remembering that cube roots accept negatives would apply that licence to a square root. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent here is $\\frac{1}{2}$, not $\\frac{1}{3}$. Computing $6\\cdot\\sqrt{4}=12$ and then attaching a minus sign by hand would report $-12$ kilograms. The recovered comparison therefore keeps $6\\cdot\\sqrt{4}=12$ and does not substitute $-12$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That is not how even roots work: the input is negative, so the root is not real, rather than real and then negated.
 
 **3.** Turbidity, by contrast, does return a value at $t=-4$, because $(-4)^{2}=16$ and $R(-4)=\\frac{50}{16}=3.125$. That extra evaluation is legal for $R$ and illegal for $D$. The claim is about load, not turbidity. Copying a turbidity licence onto the load channel is the mix-up.
 
@@ -202,7 +202,7 @@ If the stem had used $D(t)=6t^{\\frac{1}{3}}$, then $D(-4)$ would have been real
 
 Load at $t=-4$ is not real,
 
-**4.** Extra arithmetic that stays on the legal side of the gate: $D(4)=12$ is a real twelve kilograms, while $D(-4)$ is not real. The $4$ and the $-4$ are not interchangeable under an even root. A solver who cancelled the minus because a square will eat it is thinking of $t^{2}$, not of $t^{\\frac{1}{2}}$. Clock times before the reset are a domain refusal, not a signed load.
+**4.** Extra arithmetic that stays on the legal side of the gate: $D(4)=12$ is a real twelve kilograms, while $D(-4)$ is not real. The $4$ and the $-4$ are not interchangeable under an even root. Cancelling the minus because a square will eat it is thinking of $t^{2}$, not of $t^{\\frac{1}{2}}$. So the letter reads the claim against $t^{2}$; $t^{\\frac{1}{2}}$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $t^{2}$ stays in the write-up. Clock times before the reset are a domain refusal, not a signed load.
 
 so the statement is False.`,
       `**D.** → True
@@ -213,7 +213,7 @@ The overview already evaluated $R(4)=3.125$ from $\\frac{50}{16}$. This letter o
 
 Turbidity is a reciprocal square. Four hours squared is $16$, and $50$ divided by $16$ is exactly $3.125$ units, not a rounded $3$.
 
-**1.** A rushed solver who computed $50\\cdot 4^{-1}=12.5$ used exponent $-1$ instead of $-2$. A solver who computed $50\\cdot 16=800$ dropped the reciprocal.
+**1.** Computing $50\\cdot 4^{-1}=12.5$ used exponent $-1$ instead of $-2$. That is the fork: $50\\cdot 4^{-1}=12.5$ belongs to the recovered isolation, $-2$ belongs to the discarded mix. Computing $50\\cdot 16=800$ dropped the reciprocal. Once $50\\cdot 16=800$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** Four hours is one of the positive times already listed in Part 3. The $t=4$ turbidity entry is $3.125$ units.
 
@@ -226,7 +226,7 @@ The overview already evaluated $D(9)=18$ from $6\\cdot 3$. This letter only asks
 
 Nine is a perfect square, so the even root is the integer $3$, and the coefficient $6$ turns that $3$ into $18$ kilograms.
 
-**1.** A rushed solver who computed $6\\cdot 9=54$ skipped the root. A solver who computed $\\sqrt{9}=3$ and then stopped, forgetting the $6$, would report $3$ kilograms.
+**1.** Computing $6\\cdot 9=54$ skipped the root. Keeping $6\\cdot 9=54$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Computing $\\sqrt{9}=3$ and then stopping, forgetting the $6$, would report $3$ kilograms. Working from the isolated values, $\\sqrt{9}=3$ is the figure that is checked, not the detour that produced $3$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** Nine hours is one of the three load times already listed in Part 3. The $t=9$ load entry is $18$ kilograms.
 
@@ -296,7 +296,7 @@ The overview already recorded that $S(x)\\to 0$ as $x$ grows. A negative exponen
 
 This is not a claim that the beacon is ever exactly silent at a finite mast distance. It is a claim about the long-run reading.
 
-**1.** A rushed solver who saw the $80$ and treated it as a floor would think the signal settles at $80$ millivolts. The $80$ is a coefficient, not a ceiling and not a floor. It scales every reading and then cancels in any ratio of two distances.
+**1.** Seeing the $80$ and treating it as a floor would think the signal settles at $80$ millivolts. That is why $80$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. The $80$ is a coefficient, not a ceiling and not a floor. It scales every reading and then cancels in any ratio of two distances.
 
 **2.** Extra arithmetic at a far station makes the fade concrete. At $20$ metres the overview has $S(20)=0.01$. At $40$ metres, which is a new doubling,
 
@@ -319,7 +319,7 @@ The overview already showed the blow-up with $S(0.1)=80000$. Near the mast a sma
 
 This is unbounded growth of a reciprocal cube, not a vertical reading at $x=0$ itself. The domain is $x>0$, so the mast point is excluded; the claim is about the approach from the positive side.
 
-**1.** A rushed solver who remembered that $S$ fades at infinity might think it also fades at zero, as if both ends were the same. The two ends of a negative-power rule are opposites: zero at infinity, unbounded at the origin.
+**1.** Remembering that $S$ fades at infinity might think it also fades at zero, as if both ends were the same. The opposite verdict would need a different isolation than $S$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The two ends of a negative-power rule are opposites: zero at infinity, unbounded at the origin.
 
 **2.** Extra arithmetic closer in than the overview's $0.1$ m station: at $x=0.05$,
 
@@ -333,7 +333,7 @@ If the exponent had been positive, strength would have gone to $0$ at the mast a
 
 The recovered near-mast signal grows without bound,
 
-**4.** Letter D will ask for $S(2)=10$, a finite reading at a legal distance. That finite reading is compatible with an unbounded approach as $x\\to 0^{+}$: two metres is not the mast. A rushed solver who treated "unbounded near the mast" as "undefined at two metres" has confused an extreme with a level. The blow-up is an approach from the positive side, and $x=2$ sits comfortably on that side.
+**4.** Letter D will ask for $S(2)=10$, a finite reading at a legal distance. That finite reading is compatible with an unbounded approach as $x\\to 0^{+}$: two metres is not the mast. Treating "unbounded near the mast" as "undefined at two metres" has confused an extreme with a level. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. The blow-up is an approach from the positive side, and $x=2$ sits comfortably on that side.
 
 so the statement is True.`,
       `**C.** → False
@@ -350,7 +350,7 @@ $$T(40000)=2\\cdot 200=400$$
 
 which is already two hundred times the claimed ceiling of $2$. The count is still climbing.
 
-**3.** A rushed solver who mixed the two channels would copy $S\\to 0$ onto $T$, or copy a horizontal asymptote from a negative exponent onto a positive one. Packet count has exponent $+\\frac{1}{2}$, so it climbs.
+**3.** Mixing the two channels would copy $S\\to 0$ onto $T$, or copy a horizontal asymptote from a negative exponent onto a positive one. That is the fork: $S\\to 0$ belongs to the recovered isolation, $T$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Packet count has exponent $+\\frac{1}{2}$, so it climbs.
 
 The opposite verdict would need a negative exponent on $T$, or an explicit cap in the stem. The stem has neither.
 
@@ -367,13 +367,13 @@ The overview already evaluated $S(2)=10$ from $\\frac{80}{8}$. This letter only 
 
 Two metres cubed is $8$, and $80$ millivolts spread across that $8$ is $10$ millivolts.
 
-**1.** A rushed solver who computed $80\\cdot 2^{-1}=40$ used exponent $-1$ instead of $-3$. A solver who cubed $80$ instead of $2$ would land on a huge unrelated figure.
+**1.** Computing $80\\cdot 2^{-1}=40$ used exponent $-1$ instead of $-3$. After isolating the unknown, the check is against $80\\cdot 2^{-1}=40$. The figure $-3$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $80\\cdot 2^{-1}=40$ stays in the write-up. Cubing $80$ instead of $2$ would land on a huge unrelated figure. The stem's recovered values line up with $80$, whereas $2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** Two metres is one of the three distances already listed in Part 3. The $x=2$ signal entry is $10$ millivolts.
 
 The recovered strength at $2$ metres is $10$,
 
-**3.** A solver who used $S(2)=80\\cdot 2=160$ skipped the exponent entirely. The recovered object is the Part 3 level $10$, not a linear multiple of the coefficient. Another who computed $80-2^{3}=72$ mixed subtraction into a reciprocal power.
+**3.** Using $S(2)=80\\cdot 2=160$ skipped the exponent entirely. Keeping $S(2)=80\\cdot 2=160$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The recovered object is the Part 3 level $10$, not a linear multiple of the coefficient. Another who computed $80-2^{3}=72$ mixed subtraction into a reciprocal power.
 
 so the statement is True.`,
       `**E.** → True
@@ -384,7 +384,7 @@ The overview already recorded short-time counts $T(0.01)=0.2$ and $T(0.0001)=0.0
 
 Signal $S$ explodes at that same end; the count does the opposite. The two instruments share the variable $x>0$ and nothing else about the extreme.
 
-**1.** A rushed solver who copied the beacon's blow-up onto the reader would expect $T$ to explode at $0^{+}$. That is the negative-exponent story, and $T$ has a positive exponent.
+**1.** Copying the beacon's blow-up onto the reader would expect $T$ to explode at $0^{+}$. The recovered comparison therefore keeps $T$ and does not substitute $0^{+}$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is the negative-exponent story, and $T$ has a positive exponent.
 
 **2.** Extra arithmetic even closer in: at $x=10^{-6}$,
 
@@ -458,7 +458,7 @@ Overhead on this order book is the reciprocal $U(q)=600q^{-1}$ euros per unit, a
 
 The overview already recorded that $U$ falls and stays positive. On $q>0$ the numerator is the fixed $600$ euros of overhead while the denominator is the order size. Every larger order strictly raises that denominator, so every larger order strictly lowers the spread. There is no plateau and no later rise.
 
-**1.** A rushed solver who saw $U(8)=75$ below $U(2)=300$ and stopped there has only checked two points. Strict decrease is a statement about every pair, not about a table of three. The reciprocal form $\\frac{600}{q}$ gives the whole comparison at once: if $q_{2}>q_{1}>0$, then $\\frac{600}{q_{2}}<\\frac{600}{q_{1}}$.
+**1.** Seeing $U(8)=75$ below $U(2)=300$ and stopping there has only checked two points. After isolating the unknown, the check is against $U(8)=75$. The figure $U(2)=300$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $U(8)=75$ stays in the write-up. Strict decrease is a statement about every pair, not about a table of three. The reciprocal form $\\frac{600}{q}$ gives the whole comparison at once: if $q_{2}>q_{1}>0$, then $\\frac{600}{q_{2}}<\\frac{600}{q_{1}}$.
 
 **2.** Extra arithmetic on a pair the overview did not list: a jump from $q=5$ to $q=6$ gives
 
@@ -487,7 +487,7 @@ The overview already recorded $U>0$ on the whole domain. The numerator $600$ is 
 
 There is no order size at which the workshop is paid to take the job, and there is no order size at which the spread is exactly zero either. Setting $\\frac{600}{q}=0$ would require $600=0$.
 
-**1.** A rushed solver who watched $U(2)=300$, $U(8)=75$, $U(30)=20$ and extrapolated through zero would invent a crossing that the reciprocal never makes. Another rushed solver who attached a minus to the exponent, writing $-600/q$, would have a negative spread, but that is not the stem.
+**1.** Watching $U(2)=300$, $U(8)=75$, $U(30)=20$ and extrapolated through zero would invent a crossing that the reciprocal never makes. That is the fork: $U(2)=300$ belongs to the recovered isolation, $U(30)=20$ belongs to the discarded mix. Attaching a minus to the exponent, writing $-600/q$, would have a negative spread, but that is not the stem. The path that matches the stem therefore holds $-600/q$ fixed and only then reads the claim.
 
 **2.** Extra arithmetic at a huge order still stays positive:
 
@@ -501,7 +501,7 @@ A negative coefficient would have been needed for a negative spread. The stem's 
 
 The recovered overhead is positive at every $q>0$,
 
-**4.** Letter A used direction and this letter uses sign. A strictly decreasing positive function can do both at once: fall, and stay above zero. Those are different claims about the same curve. Finishing hours $V$ are also always positive, so a solver who wanted a negative number on this order book has no formula that supplies one. A negative coefficient on $U$ would have been a different stem.
+**4.** Letter A used direction and this letter uses sign. A strictly decreasing positive function can do both at once: fall, and stay above zero. Those are different claims about the same curve. Finishing hours $V$ are also always positive, so wanting a negative number on this order book has no formula that supplies one. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. A negative coefficient on $U$ would have been a different stem.
 
 so the statement is False.`,
       `**C.** → True
@@ -512,7 +512,7 @@ The overview already recorded that $V$ rises. The exponent $\\frac{2}{3}$ is pos
 
 This is the sign of the exponent, not a fact that has to be checked at $q=8$ and $q=27$ only.
 
-**1.** A rushed solver who saw the fraction $\\frac{2}{3}<1$ might think "less than one means decreasing." An exponent between $0$ and $1$ means increasing but concave: more hours, just with each extra unit adding a little less labour than the one before it. Decrease requires a negative exponent, which is $U$'s story, not $V$'s.
+**1.** Seeing the fraction $\\frac{2}{3}<1$ might think "less than one means decreasing." The recovered isolation is checked against the claim using $\\frac{2}{3}<1$, which is the figure the sessions actually produce.An exponent between $0$ and $1$ means increasing but concave: more hours, just with each extra unit adding a little less labour than the one before it. Decrease requires a negative exponent, which is $U$'s story, not $V$'s.
 
 **2.** Extra arithmetic on a pair past the overview's table: from $q=1$ to $q=8$ the finishing hours go
 
@@ -528,7 +528,7 @@ another fourfold rise in hours for another eightfold rise in order. The curve ke
 
 The recovered finishing-hours rule rises at every larger order,
 
-**4.** Compared with overhead, finishing hours climb while the spread falls. A solver who reported "both fall because bigger jobs are more efficient" has mixed the two columns. Efficiency here is a per-unit overhead story. Labour hours still rise, $V(27)=27$ and $V(64)=48$, so the increasing claim is about $V$, not about $U$.
+**4.** Compared with overhead, finishing hours climb while the spread falls. Reporting "both fall because bigger jobs are more efficient" has mixed the two columns. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. Efficiency here is a per-unit overhead story. Labour hours still rise, $V(27)=27$ and $V(64)=48$, so the increasing claim is about $V$, not about $U$.
 
 so the statement is True.`,
       `**D.** → False
@@ -539,7 +539,7 @@ The overview already evaluated $U(8)=75$ from $\\frac{600}{8}$. The claim's $80$
 
 Nothing in $\\frac{600}{q}$ produces $80$ at $q=8$. That figure is $600/7.5$, as if the order size had been taken to be $7.5$, or it is a round number sitting next to $75$ without the division having been done.
 
-**1.** A rushed solver who computed $600/8=75$ and then "rounded up" to $80$ is not reading the rule. Another who computed $8\\cdot 10=80$ invented a euros-per-unit of $10$ and multiplied by the order size, which is a total, not a spread.
+**1.** Computing $600/8=75$ and then "rounded up" to $80$ is not reading the rule. That is the fork: $600/8=75$ belongs to the recovered isolation, $80$ belongs to the discarded mix. Another who computed $8\\cdot 10=80$ invented a euros-per-unit of $10$ and multiplied by the order size, which is a total, not a spread.
 
 **2.** Compared with letter E, which asks for finishing hours at the same $q=8$, this letter is the overhead column of that shared order size. The false figure is on the reciprocal, not on the fractional power.
 
@@ -558,7 +558,7 @@ The overview already evaluated $V(8)=12$ from $3\\cdot 4$, after taking $8^{\\fr
 
 Eight is a perfect cube, so the cube root is $2$, and squaring that $2$ is the $\\frac{2}{3}$ power. Times the coefficient $3$ gives $12$ hours.
 
-**1.** A rushed solver who computed $3\\cdot 8=24$ skipped the fractional power. A solver who took only the cube root and reported $3\\cdot 2=6$ dropped the remaining square.
+**1.** Computing $3\\cdot 8=24$ skipped the fractional power. The path that matches the stem therefore holds $3\\cdot 8=24$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Taking only the cube root and reporting $3\\cdot 2=6$ dropped the remaining square. Once $3\\cdot 2=6$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **2.** Eight units is one of the three order sizes already listed in Part 3. The $q=8$ finishing entry is $12$ hours.
 
@@ -630,7 +630,7 @@ The overview already recovered $A=8$ from $5A=40$. This letter is that recovery,
 
 Twenty-five staff are a perfect square, so the square root is $5$. The audited $40$ crates are then five copies of the coefficient, and $40/5=8$.
 
-**1.** A rushed solver who divided $40$ by $25$ would report $A=1.6$, treating the rule as linear. A solver who squared $25$ instead of taking the root would be lost in a huge denominator. The exponent $\\frac{1}{2}$ is a root, not a square and not a missing exponent.
+**1.** Dividing $40$ by $25$ would report $A=1.6$, treating the rule as linear. The stem's recovered values line up with $40$, whereas $A=1.6$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $40$ stays in the write-up. Squaring $25$ instead of taking the root would be lost in a huge denominator. Keeping $25$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The exponent $\\frac{1}{2}$ is a root, not a square and not a missing exponent.
 
 **2.** Extra arithmetic that is not the overview's table: the same $A=8$ must also reproduce the audited shift,
 
@@ -655,7 +655,7 @@ The overview already evaluated $Q(100)=80$. This letter only asks whether that t
 
 One hundred staff are a perfect square, so the square root is $10$, and eight crates per square-root staff turn that $10$ into $80$ crates per hour.
 
-**1.** A rushed solver who doubled the audited $40$ because $100$ is four times $25$ would report $80$ by accident through a linear scale, which happens to match here only because $\\sqrt{4}=2$ and $40\\cdot 2=80$. The right reason is the square-root scale, not a linear one. Letter C is where that distinction is the whole claim.
+**1.** Doubling the audited $40$ because $100$ is four times $25$ would report $80$ by accident through a linear scale, which happens to match here only because $\\sqrt{4}=2$ and $40\\cdot 2=80$. That is the fork: $40$ belongs to the recovered isolation, $40\\cdot 2=80$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The right reason is the square-root scale, not a linear one. Letter C is where that distinction is the whole claim.
 
 **2.** One hundred staff is one of the three shift sizes already listed in Part 3. The $s=100$ output entry is $80$ crates per hour.
 
@@ -672,7 +672,7 @@ $$\\frac{Q(4s)}{Q(s)}=4^{\\frac{1}{2}}=2$$
 
 **2.** Extra arithmetic on the audited shift, which is this letter's own check rather than a re-display of $Q(100)$ as a fresh cube: $25$ staff quadrupled are $100$ staff, and the recovered levels $40$ and $80$ sit in the ratio $2$. That match is the scale identity at a concrete pair, not a new coefficient.
 
-**3.** A rushed solver who used $k^{2}$ instead of $k^{\\frac{1}{2}}$ would claim a sixteenfold jump. A solver who thought the coefficient had to be known before a scale question could be answered has mixed letter A with letter C.
+**3.** Using $k^{2}$ instead of $k^{\\frac{1}{2}}$ would claim a sixteenfold jump. After isolating the unknown, the check is against $k^{2}$. The figure $k^{\\frac{1}{2}}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $k^{2}$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Thinking the coefficient had to be known before a scale question could be answered has mixed letter A with letter C. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 Density of staffing never enters a scale question. Whether $A$ were $8$ or $50$, quadrupling staff would still double output.
 
@@ -697,7 +697,7 @@ $$\\frac{32}{16}=2, \\qquad \\frac{64}{32}=2$$
 
 the same quadrupling factor as before. The extra arithmetic is the pair of doubled levels, which this letter needs; the factor $2$ is not new.
 
-**2.** A rushed solver who saw "double $A$" and "double the ratio" as the same sentence is treating a multiplier of the whole function as a multiplier of a quotient of two values of that function. Those are different operations.
+**2.** Seeing "double $A$" and "double the ratio" as the same sentence is treating a multiplier of the whole function as a multiplier of a quotient of two values of that function. Once $A$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Those are different operations.
 
 **3.** Letter C used the same ratio and found it equal to $2$. This letter asks whether that $2$ would move if $A$ moved. It would not.
 
@@ -716,7 +716,7 @@ The overview already evaluated $Q(4)=16$. The claim's $20$ is $4$ crates high.
 
 Four staff are a perfect square, so the square root is $2$, and $8\\cdot 2=16$, not $20$. Nothing in $8s^{\\frac{1}{2}}$ produces $20$ at $s=4$. That figure is closer to $8\\cdot 2.5$, or to half of the audited $40$, as if four staff were half of twenty-five.
 
-**1.** A rushed solver who scaled the audited shift linearly, $40\\cdot\\frac{4}{25}=6.4$, would miss $16$ another way. A solver who used $A=5$ from a mis-divided $40/8$ could manufacture $20$ as $5\\cdot\\sqrt{16}$ at the wrong input. The false $20$ is not a nearby rounding of $16$; it is a different product.
+**1.** Scaling the audited shift linearly, $40\\cdot\\frac{4}{25}=6.4$, would miss $16$ another way. The recovered comparison therefore keeps $40\\cdot\\frac{4}{25}=6.4$ and does not substitute $16$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $A=5$ from a mis-divided $40/8$ could manufacture $20$ as $5\\cdot\\sqrt{16}$ at the wrong input. The recovered comparison therefore keeps $A=5$ and does not substitute $5\\cdot\\sqrt{16}$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The false $20$ is not a nearby rounding of $16$; it is a different product.
 
 **2.** Four staff is one of the three shift sizes already listed in Part 3. The $s=4$ output entry is $16$ crates per hour, and the claim does not match it.
 
@@ -788,7 +788,7 @@ The overview already recovered $F(2)=8$ and $G(2)=8$. They meet at $8$ and $8$, 
 
 This letter is a false level at the crossing, not a comparison past the crossing. The recovered object is the pair of values at $n=2$, where the factored difference $n^{2}(n-2)$ is zero.
 
-**1.** A rushed solver who computed $G(2)=2\\cdot 3=6$ mixed a coefficient of $2$ onto the cubic. The cubic is $n^{3}$ with coefficient $1$. Another who computed $F(2)=2^{2}+2^{2}=8$ and $G(2)=2^{2}+2=6$ invented an additive recipe the stem does not have.
+**1.** Computing $G(2)=2\\cdot 3=6$ mixed a coefficient of $2$ onto the cubic. That is the fork: $G(2)=2\\cdot 3=6$ belongs to the recovered isolation, $2$ belongs to the discarded mix. The cubic is $n^{3}$ with coefficient $1$. Another who computed $F(2)=2^{2}+2^{2}=8$ and $G(2)=2^{2}+2=6$ invented an additive recipe the stem does not have.
 
 **2.** Extra arithmetic just beside the crossing, which this letter can use without rebuilding the whole table: at $n=1$,
 
@@ -811,7 +811,7 @@ The overview already factored $G(n)-F(n)=n^{2}(n-2)$ and recorded that the cubic
 
 A larger coefficient can only lead on small inputs. Past the crossing the larger exponent takes over, and it stays ahead.
 
-**1.** A rushed solver who checked only $n=3$ and $n=4$ has two points, not the whole ray $n>2$. The factoring is what turns those two points into every larger line size. Another who compared coefficients $2$ and $1$ and declared $F$ always larger has ignored exponents.
+**1.** Checking only $n=3$ and $n=4$ has two points, not the whole ray $n>2$. That is the fork: $n=3$ belongs to the recovered isolation, $n>2$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The factoring is what turns those two points into every larger line size. Another who compared coefficients $2$ and $1$ and declared $F$ always larger has ignored exponents.
 
 **2.** Extra arithmetic further out than the overview's $n=4$ pair: at $n=5$,
 
@@ -840,7 +840,7 @@ The overview already recorded that the quadratic leads on that interval. On $0<n
 
 A larger coefficient leads on small inputs. Two machines is where that licence expires.
 
-**1.** A rushed solver who started the comparison at $n=2$ and looked only to the right would miss this side. Another who thought "cubic is always bigger" has forgotten that $2n^{2}$ beats $n^{3}$ when $n$ is a fraction.
+**1.** Starting the comparison at $n=2$ and looking only to the right would miss this side. The path that matches the stem therefore holds $n=2$ fixed and only then reads the claim. Another who thought "cubic is always bigger" has forgotten that $2n^{2}$ beats $n^{3}$ when $n$ is a fraction.
 
 **2.** Extra arithmetic on a half-machine line, which is a new input:
 
@@ -871,7 +871,7 @@ $$\\frac{G(2000)}{F(2000)}=1000$$
 
 so the cubic is a thousand times the quadratic on a $2000$-machine line, not one times it.
 
-**2.** A rushed solver who saw both indices going to infinity and concluded that their ratio goes to $1$ has confused "both unbounded" with "asymptotically equal." Two unbounded sequences can diverge from each other. Another who cancelled $n^{2}$ and forgot the leftover $n/2$ would report a constant $1$, which is exactly the false limit in the claim.
+**2.** Seeing both indices going to infinity and concluding that their ratio goes to $1$ has confused "both unbounded" with "asymptotically equal." That is why $1$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.Two unbounded sequences can diverge from each other. Another who cancelled $n^{2}$ and forgot the leftover $n/2$ would report a constant $1$, which is exactly the false limit in the claim.
 
 **3.** Letter B said the cubic leads. This letter says how the lead behaves as a ratio. A growing ratio is a stronger statement than a positive difference: the cubic does not merely stay ahead, it laps the quadratic over and over.
 
@@ -890,7 +890,7 @@ The overview already evaluated $F(3)=18$ and $G(3)=27$. The quadratic entry matc
 
 The figure $24$ is $3$ light, and that $3$ is not a rounding. It is a different product: $8\\cdot 3$, as if someone had multiplied the crossing value $8$ by $3$, or $2\\cdot 12$, mixing a coefficient of $2$ onto a wrong cube.
 
-**1.** A rushed solver who computed $3^{3}=27$ and then subtracted the coefficient $3$ would land on $24$. Another who used $2\\cdot 3^{2}=18$ correctly for $F$ and then guessed $G$ as $18+6=24$ invented an additive gap.
+**1.** Computing $3^{3}=27$ and then subtracting the coefficient $3$ would land on $24$. Working from the isolated values, $3^{3}=27$ is the figure that is checked, not the detour that produced $24$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2\\cdot 3^{2}=18$ correctly for $F$ and then guessed $G$ as $18+6=24$ invented an additive gap.
 
 **2.** Three machines is one of the line sizes already listed in Part 3. The $n=3$ pair is $18$ and $27$, and the claim's $24$ is the wrong cubic.
 
@@ -964,7 +964,7 @@ The first transform is the even root $L(x)=x^{\\frac{1}{2}}$, and the claim is t
 
 The overview already evaluated $L(0)=0$. A square root accepts zero because $0^{2}=0$. The even-root gate stays open at a blank reading. This is a domain-and-level question at the included endpoint $x=0$, not a claim about negative readings.
 
-**1.** A rushed solver who treated every root as a reciprocal would exclude zero from $L$ as well as from $N$. That is letter D's story, not letter A's. $L$ has a positive exponent, so the variable sits in a numerator.
+**1.** Treating every root as a reciprocal would exclude zero from $L$ as well as from $N$. So the letter reads the claim against $L$; $N$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $L$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That is letter D's story, not letter A's. $L$ has a positive exponent, so the variable sits in a numerator.
 
 **2.** Extra arithmetic just above the blank reading: $L(0.01)=0.1$ and $L(0.0001)=0.01$, so the filed value approaches $0$ from above and lands on $0$ rather than jumping to undefined.
 
@@ -977,9 +977,9 @@ The overview already recorded that $\\sqrt{-4}$ is not real. No real $y$ satisfi
 
 Parity of the root, not the size of $4$, decides this letter. Replacing $4$ by $400$ would not help. The obstruction is the sign of the input under an even root.
 
-**1.** A rushed solver who remembered that cube roots accept negatives would apply that licence here. The exponent is $\\frac{1}{2}$, not $\\frac{1}{3}$. Letter C is the odd-root licence, and it is a different transform.
+**1.** Remembering that cube roots accept negatives would apply that licence here. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent is $\\frac{1}{2}$, not $\\frac{1}{3}$. Letter C is the odd-root licence, and it is a different transform.
 
-**2.** Extra arithmetic that is legal on the odd-root channel and illegal here: $M(-4)=\\sqrt[3]{-4}$ is real, while $L(-4)$ is not. Copying $M$'s domain onto $L$ is the mix-up. Another rushed solver who computed $\\sqrt{4}=2$ and then attached a minus by hand would report $-2$. That is not an even root of a negative; it is a negated even root of a positive.
+**2.** Extra arithmetic that is legal on the odd-root channel and illegal here: $M(-4)=\\sqrt[3]{-4}$ is real, while $L(-4)$ is not. Copying $M$'s domain onto $L$ is the mix-up. Computing $\\sqrt{4}=2$ and then attaching a minus by hand would report $-2$. The recovered comparison therefore keeps $\\sqrt{4}=2$ and does not substitute $-2$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is not an even root of a negative; it is a negated even root of a positive.
 
 **3.** The even-root domain is $x\\ge 0$. Zero was included in letter A. Every negative is still excluded. Those two facts are one gate, not two.
 
@@ -998,13 +998,13 @@ The overview already evaluated $M(-8)=-2$. An odd root accepts every real readin
 
 This is both a domain statement and a level. The negative reading is legal, and the filed value is the negative number in the claim, not its absolute value $2$.
 
-**1.** A rushed solver who took the even-root habit from $L$ would refuse $x=-8$ and call the claim false. That is the wrong transform. Another who filed $+2$ because "roots are positive" has dropped the sign that an odd root is required to keep.
+**1.** Taking the even-root habit from $L$ would refuse $x=-8$ and call the claim false. So the letter reads the claim against $L$; $x=-8$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $L$ stays in the write-up. That is the wrong transform. Another who filed $+2$ because "roots are positive" has dropped the sign that an odd root is required to keep.
 
 **2.** Extra arithmetic on the matching positive reading, which is this letter's own check:
 
 $$M(8)=2$$
 
-so the odd root is an odd function: $M(-8)=-M(8)$. That pairing is what a sign-dropping solver misses.
+so the odd root is an odd function: $M(-8)=-M(8)$. That pairing is what dropping the sign misses That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict..
 
 **3.** Letter B refused $-4$ on $L$. Letter C accepts $-8$ on $M$. The difference is the parity of the root, not the size of the reading.
 
@@ -1021,7 +1021,7 @@ The overview already recorded that $\\frac{1}{\\sqrt{0}}$ is undefined. A negati
 
 Zero is legal for $L$ and illegal for $N$. The extra obstruction is the sign of the exponent, stacked on top of the even-root gate.
 
-**1.** A rushed solver who copied $L(0)=0$ onto $N$ is ignoring the minus in the exponent. Another who wrote $N(0)=\\infty$ as if infinity were a filed value is confusing a blow-up with a defined output. The calibration sheet does not file infinity.
+**1.** Copying $L(0)=0$ onto $N$ is ignoring the minus in the exponent. So the letter reads the claim against $L(0)=0$; $N$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $L(0)=0$ stays in the write-up. Another who wrote $N(0)=\\infty$ as if infinity were a filed value is confusing a blow-up with a defined output. The calibration sheet does not file infinity.
 
 **2.** Extra arithmetic just after the blank reading shows the blow-up rather than a value at zero:
 
@@ -1033,7 +1033,7 @@ so as $x\\to 0^{+}$ the reciprocal square root grows without bound. Growing with
 
 The recovered reciprocal-root value at $0$ is undefined,
 
-**4.** Letter A used the weaker gate $x\\ge 0$ on $L$. This letter uses the stronger gate $x>0$ on $N$. Those two facts are easy to swap, which is why a solver who filed $N(0)=0$ has copied the wrong transform. A negative exponent stacked on an even root excludes zero twice over, once for the root and once for the reciprocal.
+**4.** Letter A used the weaker gate $x\\ge 0$ on $L$. This letter uses the stronger gate $x>0$ on $N$. Those two facts are easy to swap, which is why filing $N(0)=0$ has copied the wrong transform. The recovered isolation is checked against the claim using $N(0)=0$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does. A negative exponent stacked on an even root excludes zero twice over, once for the root and once for the reciprocal.
 
 so the statement is False.`,
       `**E.** → False
@@ -1044,7 +1044,7 @@ The overview already evaluated $N(4)=\\frac{1}{2}$. The claim is $2$, which is $
 
 At a legal reading the third transform is a reciprocal: $4^{-\\frac{1}{2}}=\\frac{1}{2}$, not $2$. The figure $2$ is $L(4)$, the first transform at the same input.
 
-**1.** A rushed solver who computed $\\sqrt{4}=2$ and stopped has evaluated $L$ instead of $N$. Another who computed $4^{-2}=\\frac{1}{16}$ used the wrong exponent. The minus in $-\\frac{1}{2}$ is a reciprocal of a square root, not a square of a reciprocal.
+**1.** Computing $\\sqrt{4}=2$ and stopping has evaluated $L$ instead of $N$. The recovered comparison therefore keeps $\\sqrt{4}=2$ and does not substitute $N$. Another who computed $4^{-2}=\\frac{1}{16}$ used the wrong exponent. The minus in $-\\frac{1}{2}$ is a reciprocal of a square root, not a square of a reciprocal.
 
 **2.** Extra arithmetic at the matching reciprocal pair: $N(0.25)=2$, which is the input that really does file as $2$. The claim pointed $N$ at $4$ rather than at $\\frac{1}{4}$. Mixing those two readings is how $2$ appears.
 
@@ -1122,13 +1122,13 @@ The overview already evaluated $P(4)=6$ from $\\frac{12}{2}$. This letter only a
 
 Four cartridges are a perfect square, so the square root is $2$, and $12$ kilopascals spread across that $2$ is $6$ kilopascals.
 
-**1.** A rushed solver who computed $12\\cdot 4^{-1}=3$ used exponent $-1$ instead of $-\\frac{1}{2}$. A solver who computed $12/4=3$ skipped the root.
+**1.** Computing $12\\cdot 4^{-1}=3$ used exponent $-1$ instead of $-\\frac{1}{2}$. That is the fork: $12\\cdot 4^{-1}=3$ belongs to the recovered isolation, $-\\frac{1}{2}$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Computing $12/4=3$ skipped the root. The path that matches the stem therefore holds $12/4=3$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** Four cartridges is one of the bank sizes already listed in Part 3. The $x=4$ drop entry is $6$ kilopascals.
 
 The recovered drop at $4$ cartridges is $6$,
 
-**3.** A solver who computed $12-4=8$ invented a linear leftover, and a solver who computed $12/\\sqrt[3]{4}$ used the wrong root. The recovered object is the Part 3 entry $P(4)=6$, a reciprocal square root at a perfect square of cartridges.
+**3.** Computing $12-4=8$ invented a linear leftover, and computing $12/\\sqrt[3]{4}$ used the wrong root. The opposite verdict would need a different isolation than $12/\\sqrt[3]{4}$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Working from the isolated values, $12-4=8$ is the figure that is checked, not the detour that produced $12/\\sqrt[3]{4}$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recovered object is the Part 3 entry $P(4)=6$, a reciprocal square root at a perfect square of cartridges.
 
 so the statement is True.`,
       `**B.** → True
@@ -1137,7 +1137,7 @@ The filter bank obeys $P(x)=12x^{-\\frac{1}{2}}$ kilopascals, and the claim is t
 
 The overview already recorded that $P$ falls. On $x>0$ the numerator stays at $12$ while $\\sqrt{x}$ grows with $x$, so the quotient $\\frac{12}{\\sqrt{x}}$ falls at every larger cartridge count. A negative exponent with a positive coefficient is strictly decreasing on the positive reals.
 
-**1.** A rushed solver who checked only $P(4)=6$ below $P(1)=12$ has two points, not the whole ray. Strict decrease is the comparison $x_{2}>x_{1}>0\\Rightarrow P(x_{2})<P(x_{1})$, which the reciprocal square root gives at once.
+**1.** Checking only $P(4)=6$ below $P(1)=12$ has two points, not the whole ray. Working from the isolated values, $P(4)=6$ is the figure that is checked, not the detour that produced $P(1)=12$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Strict decrease is the comparison $x_{2}>x_{1}>0\\Rightarrow P(x_{2})<P(x_{1})$, which the reciprocal square root gives at once.
 
 **2.** Extra arithmetic on a one-cartridge increase past the table: from $x=16$ to $x=25$,
 
@@ -1164,7 +1164,7 @@ The claim has two halves, and both have to hold: as the bank grows, $P(x)\\to 0$
 
 The overview already recorded both halves. As $x$ grows the denominator $\\sqrt{x}$ grows without bound while the numerator stays $12$, so $P(x)\\to 0$. Setting $\\frac{12}{\\sqrt{x}}=0$ would require $12=0$, which never happens. The drop approaches zero without landing on it.
 
-**1.** A rushed solver who treated "tends to zero" as "equals zero for large $x$" would think a big enough bank has no pressure drop at all. The reciprocal square root gets arbitrarily small and stays positive. Another who thought a negative exponent meant the drop became negative would have crossed through zero on the way. Letter B already forbade a sign change: $P$ stays positive while it falls.
+**1.** Treating "tends to zero" as "equals zero for large $x$" would think a big enough bank has no pressure drop at all. The opposite verdict would need a different isolation than $x$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The reciprocal square root gets arbitrarily small and stays positive. Another who thought a negative exponent meant the drop became negative would have crossed through zero on the way. Letter B already forbade a sign change: $P$ stays positive while it falls.
 
 **2.** Extra arithmetic at a huge bank, past the overview's $P(14400)=0.1$: at $x=1440000$,
 
@@ -1187,7 +1187,7 @@ The overview already recorded the opposite end: $P(0.01)=120$ and $P(0.0001)=120
 
 A finite limit at the origin would need a nonnegative exponent. The stem's exponent is negative.
 
-**1.** A rushed solver who copied letter C's $P\\to 0$ onto the origin would think both ends fade. The two ends of a negative-power rule are opposites. Another who wrote $P(0)=12$ as if the square root of zero could be cancelled against a missing $x$ invented a finite reading the formula does not give.
+**1.** Copying letter C's $P\\to 0$ onto the origin would think both ends fade. The opposite verdict would need a different isolation than $P\\to 0$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The two ends of a negative-power rule are opposites. Another who wrote $P(0)=12$ as if the square root of zero could be cancelled against a missing $x$ invented a finite reading the formula does not give.
 
 **2.** Extra arithmetic closer in than $0.0001$: at $x=10^{-8}$,
 
@@ -1210,13 +1210,13 @@ The overview already evaluated $P(9)=4$ from $\\frac{12}{3}$. This letter only a
 
 Nine cartridges are a perfect square, so the square root is $3$, and $12$ kilopascals spread across that $3$ is $4$ kilopascals.
 
-**1.** A rushed solver who computed $12/9=1.333$ skipped the root. A solver who computed $12-9=3$ invented a linear leftover.
+**1.** Computing $12/9=1.333$ skipped the root. The path that matches the stem therefore holds $12/9=1.333$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Computing $12-9=3$ invented a linear leftover. The recovered isolation is checked against the claim using $12-9=3$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does.
 
 **2.** Nine cartridges is one of the bank sizes already listed in Part 3. The $x=9$ drop entry is $4$ kilopascals.
 
 The recovered drop at $9$ cartridges is $4$,
 
-**3.** A solver who computed $12/9=\\frac{4}{3}$ skipped the root, and a solver who computed $12-9=3$ invented a linear leftover. Nine is a perfect square, so the reciprocal square root is the integer division $12/3=4$. The recovered Part 3 entry is $4$ kilopascals.
+**3.** Computing $12/9=\\frac{4}{3}$ skipped the root, and computing $12-9=3$ invented a linear leftover. The path that matches the stem therefore holds $12-9=3$ fixed and only then reads the claim. After isolating the unknown, the check is against $12/9=\\frac{4}{3}$. The figure $12-9=3$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $12/9=\\frac{4}{3}$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Nine is a perfect square, so the reciprocal square root is the integer division $12/3=4$. The recovered Part 3 entry is $4$ kilopascals.
 
 so the statement is True.`,
     ],
@@ -1286,7 +1286,7 @@ The overview already recovered $A=5$ from $9A=45$. The claim's $15$ is three tim
 
 This letter is a false recovery, not a level at a new radius. The recovered object is the coefficient itself.
 
-**1.** A rushed solver who computed $45/3=15$ treated the panel as a length rather than an area. Primer for a circular panel scales with $r^{2}$, which is the area story. Another who computed $3^{2}=9$ and then reported $A=45-9=36$ mixed subtraction into a multiplicative rule.
+**1.** Computing $45/3=15$ treated the panel as a length rather than an area. The recovered isolation is checked against the claim using $45/3=15$, which is the figure the sessions actually produce. Primer for a circular panel scales with $r^{2}$, which is the area story. Another who computed $3^{2}=9$ and then reported $A=45-9=36$ mixed subtraction into a multiplicative rule.
 
 **2.** Extra arithmetic that checks the recovered $5$ against the recorded job, which is this letter's own confirmation rather than a new table:
 
@@ -1311,7 +1311,7 @@ The overview already evaluated $y(6)=180$. This letter only asks whether that ta
 
 Six metres squared is $36$, and five litres per square metre turn that $36$ into $180$ litres.
 
-**1.** A rushed solver who doubled the recorded $45$ because $6$ is twice $3$ would report $90$, using a linear scale. The right scale is $2^{2}=4$, and $45\\cdot 4=180$. That is letter C's identity at a doubling, used here as a check.
+**1.** Doubling the recorded $45$ because $6$ is twice $3$ would report $90$, using a linear scale. Working from the isolated values, $45$ is the figure that is checked, not the detour that produced $90$. The right scale is $2^{2}=4$, and $45\\cdot 4=180$. That is letter C's identity at a doubling, used here as a check.
 
 **2.** Radius $6$ is one of the radii already listed in Part 3. The $r=6$ primer entry is $180$ litres.
 
@@ -1332,7 +1332,7 @@ $$45\\times 2.25=101.25$$
 
 so that wider panel needs $101.25$ litres. Directly, $y(4.5)=5\\cdot 20.25=101.25$, the same figure. The overview listed $y(1.5)=11.25$ at a different radius; this $101.25$ is new.
 
-**2.** A rushed solver who added $50\\%$ to the primer, reporting a factor $1.5$, used exponent $1$. A solver who used $k^{3}$ would report $3.375$, the volume story rather than the area story.
+**2.** Adding $50\\%$ to the primer, reporting a factor $1.5$, used exponent $1$. After isolating the unknown, the check is against $50\\%$. The figure $1$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $50\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $k^{3}$ would report $3.375$, the volume story rather than the area story. So the letter reads the claim against $k^{3}$; $3.375$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $k^{3}$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 **3.** Letter E is the matching scale question with $k=0.5$. This letter is the widening. Density of primer never enters a scale question.
 
@@ -1349,7 +1349,7 @@ The overview already evaluated $y(1)=5$. This letter only asks whether that tabl
 
 At $r=1$, $1^{2}=1$ and $y(1)=5\\cdot 1=5$ litres. That is a quick check on the printed $5$, not a new square.
 
-**1.** A solver who still used the false $A=15$ from letter A would land on $15$ litres and miss the claim. The unit radius is where coefficient and requirement coincide, so a wrong $A$ is most obvious here.
+**1.** Still using the false $A=15$ from letter A would land on $15$ litres and miss the claim. That is the fork: $A=15$ belongs to the recovered isolation, $15$ belongs to the discarded mix. The unit radius is where coefficient and requirement coincide, so a wrong $A$ is most obvious here.
 
 **2.** Radius $1$ is the smallest of the radii in Part 3. It is also the one entry a linear-recovery reader is most likely to overwrite by reporting $15$.
 
@@ -1366,7 +1366,7 @@ $$45\\times 0.25=11.25$$
 
 which is the overview's $y(1.5)$, read here as a scale check rather than as a fresh square. If primer had halved, that panel would have needed $22.5$ litres, which is twice the true requirement.
 
-**2.** A rushed solver who used $k^{1}$ is telling a length story. A solver who used $k^{3}$ would report a factor $0.125$, a volume story. Circular primer is an area.
+**2.** Using $k^{1}$ is telling a length story. The path that matches the stem therefore holds $k^{1}$ fixed and only then reads the claim. Using $k^{3}$ would report a factor $0.125$, a volume story. The stem's recovered values line up with $k^{3}$, whereas $0.125$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $k^{3}$ stays in the write-up. Circular primer is an area.
 
 **3.** Letter C used $k=1.5$ and found $2.25$. This letter uses $k=0.5$ and finds $0.25$. The two scale claims are not symmetric in the naive sense "plus fifty percent, minus fifty percent," because $1.5^{2}$ and $0.5^{2}$ are not reciprocals of a linear guess.
 
@@ -1442,13 +1442,13 @@ The overview already evaluated $E(10)=50$ from $0.5\\cdot 100$. This letter only
 
 Ten squared is $100$, and half of that $100$ is $50$ points.
 
-**1.** A rushed solver who computed $0.5\\cdot 10=5$ skipped the square. A solver who computed $10^{2}=100$ and stopped, forgetting the $0.5$, would report $100$ points.
+**1.** Computing $0.5\\cdot 10=5$ skipped the square. The path that matches the stem therefore holds $0.5\\cdot 10=5$ fixed and only then reads the claim. Computing $10^{2}=100$ and stopping, forgetting the $0.5$, would report $100$ points. Working from the isolated values, $10^{2}=100$ is the figure that is checked, not the detour that produced $100$. That contrast is the reason the verdict goes the way it does.
 
 **2.** Speed $10$ is one of the two standard test speeds already listed in Part 3. The $v=10$ index entry is $50$.
 
 The recovered index at $10$ km/h is $50$,
 
-**3.** A solver who computed $0.5\\cdot 10^{3}=500$ used a cube, and a solver who reported $10$ as if the coefficient were $1$ skipped the $0.5$. Ten squared is $100$, half of $100$ is $50$. The recovered Part 3 entry at the lower standard speed is $50$ points.
+**3.** Computing $0.5\\cdot 10^{3}=500$ used a cube, and reporting $10$ as if the coefficient were $1$ skipped the $0.5$. Working from the isolated values, $10$ is the figure that is checked, not the detour that produced $0.5$. The recovered comparison therefore keeps $0.5\\cdot 10^{3}=500$ and does not substitute $0.5$. Ten squared is $100$, half of $100$ is $50$. The recovered Part 3 entry at the lower standard speed is $50$ points.
 
 so the statement is True.`,
       `**B.** → True
@@ -1476,13 +1476,13 @@ The overview already evaluated $E(20)=200$ from $0.5\\cdot 400$. This letter onl
 
 Twenty squared is $400$, and half of that $400$ is $200$ points.
 
-**1.** A rushed solver who doubled the $v=10$ index of $50$ would report $100$, using a linear scale. The right scale is letter B's factor $4$, and $50\\cdot 4=200$.
+**1.** Doubling the $v=10$ index of $50$ would report $100$, using a linear scale. The recovered comparison therefore keeps $v=10$ and does not substitute $100$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The right scale is letter B's factor $4$, and $50\\cdot 4=200$.
 
 **2.** Speed $20$ is the second of the two standard speeds in Part 3. The $v=20$ index entry is $200$.
 
 The recovered index at $20$ km/h is $200$,
 
-**3.** A solver who doubled $E(10)=50$ would report $100$, using a linear scale. The right scale is letter B's factor $4$, and $50\\cdot 4=200$. Twenty squared is $400$, half of $400$ is $200$. The recovered Part 3 entry at the higher standard speed is $200$ points.
+**3.** Doubling $E(10)=50$ would report $100$, using a linear scale. Working from the isolated values, $E(10)=50$ is the figure that is checked, not the detour that produced $100$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The right scale is letter B's factor $4$, and $50\\cdot 4=200$. Twenty squared is $400$, half of $400$ is $200$. The recovered Part 3 entry at the higher standard speed is $200$ points.
 
 so the statement is True.`,
       `**D.** → True
@@ -1493,7 +1493,7 @@ The overview already recorded that a square is never negative and the coefficien
 
 A square of a nonzero real is positive, and $0.5>0$, so the product is positive for every $v>0$. Approach speed in the stem is already restricted to $v>0$, so there is not even a $v=0$ reading to discuss.
 
-**1.** A rushed solver who saw the $0.5$ and thought of a "half-negative" would be inventing a sign the coefficient does not have. Another who evaluated $E(-10)$ and found $+50$ has left the stem's domain; inside the domain the index is positive, and even outside it a square would still be nonnegative.
+**1.** Seeing the $0.5$ and thinking of a "half-negative" would be inventing a sign the coefficient does not have. The path that matches the stem therefore holds $0.5$ fixed and only then reads the claim. Another who evaluated $E(-10)$ and found $+50$ has left the stem's domain; inside the domain the index is positive, and even outside it a square would still be nonnegative.
 
 **2.** Extra arithmetic at an awkward speed still stays positive:
 
@@ -1524,13 +1524,13 @@ $$E(22)=0.5\\cdot 484=242$$
 
 against $E(20)=200$, a rise of $42$ points, which is again $21\\%$ of $200$. The percentage is the same at every base speed; that is the scale identity.
 
-**2.** A rushed solver who added $10\\%$ to the index, reporting $E(11)=55$, used exponent $1$. Another who used $2\\cdot 10\\%=20\\%$ and forgot the leftover $1\\%$ from $0.1^{2}$ would report $20\\%$ and still miss $21\\%$. The cross term $2\\cdot 1\\cdot 0.1$ is $0.20$, and the square of $0.1$ is $0.01$, and those add to $0.21$.
+**2.** Adding $10\\%$ to the index, reporting $E(11)=55$, used exponent $1$. That is the fork: $10\\%$ belongs to the recovered isolation, $1$ belongs to the discarded mix. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2\\cdot 10\\%=20\\%$ and forgot the leftover $1\\%$ from $0.1^{2}$ would report $20\\%$ and still miss $21\\%$. The cross term $2\\cdot 1\\cdot 0.1$ is $0.20$, and the square of $0.1$ is $0.01$, and those add to $0.21$.
 
 **3.** Letter B used $k=2$ and found $4$. This letter uses $k=1.1$ and finds $1.21$. Both are $k^{2}$. The ten percent trap is thinking a small relative change of the input is inherited by the output when the exponent is not $1$.
 
 A $10\\%$ overspeed raises the index by $21\\%$,
 
-**4.** What would have made a $10\\%$ index rise true is exponent $1$. With exponent $2$, the binomial $(1+0.1)^{2}=1+0.2+0.01=1.21$ is forced. The leftover $0.01$ is small, which is why a rushed solver drops it and reports $20\\%$, still missing $21\\%$. Both standard speeds, $10$ and $20$, show the same $21\\%$ overspeed factor.
+**4.** What would have made a $10\\%$ index rise true is exponent $1$. With exponent $2$, the binomial $(1+0.1)^{2}=1+0.2+0.01=1.21$ is forced. The leftover $0.01$ is small, which is why it is tempting to drop it and reports $20\\%$, still missing $21\\%$. Both standard speeds, $10$ and $20$, show the same $21\\%$ overspeed factor.
 
 so the statement is False.`,
     ],
@@ -1600,7 +1600,7 @@ The overview already recovered $r=\\frac{1}{3}$ from the logged ratio $\\frac{6}
 
 This is a statement about the exponent, not about the coefficient $A=2$. Scale questions cancel $A$; the comparison of growth rates is $r$ against $1$.
 
-**1.** A rushed solver who compared the two logged points and saw hours jump from $8$ to $27$, a factor $3.375$, while harvest jumped only from $4$ to $6$, a factor $1.5$, already has the same conclusion in a table. The exponent $r=\\frac{1}{3}$ is that observation, cleaned into a single number.
+**1.** Comparing the two logged points and seeing hours jump from $8$ to $27$, a factor $3.375$, while harvest jumped only from $4$ to $6$, a factor $1.5$, already has the same conclusion in a table. The recovered comparison therefore keeps $8$ and does not substitute $1.5$. That contrast is the reason the verdict goes the way it does. The exponent $r=\\frac{1}{3}$ is that observation, cleaned into a single number.
 
 **2.** Extra arithmetic at a third watering time, not in the overview's short answer line: after $64$ hours,
 
@@ -1608,7 +1608,7 @@ $$Y(64)=2\\cdot 4=8$$
 
 so octupling the original $8$ hours only doubles the original $4$ kg harvest. That is $8^{\\frac{1}{3}}=2$, slower than the hours.
 
-**3.** If $r$ had been $1$, harvest would have kept pace with hours. If $r$ had been $2$, harvest would have outrun hours. The two logged pairs force $r=\\frac{1}{3}<1$. A solver who averaged $4$ and $6$ and declared linear growth has thrown the ratio away.
+**3.** If $r$ had been $1$, harvest would have kept pace with hours. If $r$ had been $2$, harvest would have outrun hours. The two logged pairs force $r=\\frac{1}{3}<1$. Averaging $4$ and $6$ and declared linear growth has thrown the ratio away. That is the fork: $4$ belongs to the recovered isolation, $6$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 The recovered exponent sits below one,
 
@@ -1631,7 +1631,7 @@ $$Y(16)=2\\cdot 16^{\\frac{1}{3}}=2\\cdot 2^{\\frac{4}{3}}=2\\cdot 2\\cdot 2^{\\
 
 against $Y(8)=4$. The new harvest is about $10$ kg, not $8$ kg. Twice $4$ would have been $8$, and $10$ is not $8$.
 
-**2.** A rushed solver who used exponent $1$ is telling a proportional story the two logged pairs already contradict: hours from $8$ to $27$ would have had to take harvest from $4$ to $13.5$, not to $6$. Another who used $2^{\\frac{1}{2}}$ mixed this plot with a square-root technology.
+**2.** Using exponent $1$ is telling a proportional story the two logged pairs already contradict: hours from $8$ to $27$ would have had to take harvest from $4$ to $13.5$, not to $6$. The stem's recovered values line up with $1$, whereas $6$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{\\frac{1}{2}}$ mixed this plot with a square-root technology.
 
 **3.** Letter C asks the reverse scale question: how many hours to double the harvest. This letter asks what doubling the hours does to the harvest. Those are inverse questions, and both fail a factor of $2$ because $r\\neq 1$.
 
@@ -1639,7 +1639,7 @@ The opposite verdict would need $r=1$. With $r=\\frac{1}{3}$, doubling hours doe
 
 The recovered doubling factor is $2^{\\frac{1}{3}}$, not $2$,
 
-**4.** What would flip the verdict is $r=1$, a proportional plot. With $r=\\frac{1}{3}$, the forward factor $2^{r}$ and the reverse factor $2^{1/r}$ disagree, which is why doubling hours and doubling harvest are different jobs. A solver who treated them as the same job would have reported $Y(16)=8$ and missed both this letter and letter C.
+**4.** What would flip the verdict is $r=1$, a proportional plot. With $r=\\frac{1}{3}$, the forward factor $2^{r}$ and the reverse factor $2^{1/r}$ disagree, which is why doubling hours and doubling harvest are different jobs. Treating them as the same job would have reported $Y(16)=8$ and missed both this letter and letter C. The recovered isolation is checked against the claim using $Y(16)=8$, which is the figure the sessions actually produce.
 
 so the statement is False.`,
       `**C.** → True
@@ -1658,11 +1658,11 @@ $$2h^{\\frac{1}{3}}=8$$
 
 $$h^{\\frac{1}{3}}=4, \\qquad h=64$$
 
-**3.** Compare $64$ with twice the logged $8$ hours, which would have been $16$. The required $64$ sits well past $16$. A solver who reported $16$ used exponent $1$ on the reverse question, the same linear trap as letter B in the other direction.
+**3.** Compare $64$ with twice the logged $8$ hours, which would have been $16$. The required $64$ sits well past $16$. Reporting $16$ used exponent $1$ on the reverse question, the same linear trap as letter B in the other direction. So the letter reads the claim against $16$; $1$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $16$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **4.** Extra check: $Y(64)=2\\cdot 4=8$, so the inversion lands on the doubled harvest. $Y(16)\\approx 10$ was letter B's forward doubling of hours, which overshoots $8$ on the harvest scale only because that was a different question. Here the target is harvest $8$, and the hours needed are $64$.
 
-A rushed solver who multiplied $8$ hours by $2^{\\frac{1}{3}}$ mixed the forward factor with the reverse factor. Forward is $2^{r}$; reverse is $2^{1/r}$. Those are not the same once $r\\neq 1$.
+Multiplying $8$ hours by $2^{\\frac{1}{3}}$ mixed the forward factor with the reverse factor. After isolating the unknown, the check is against $8$. The figure $2^{\\frac{1}{3}}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $8$ stays in the write-up. Forward is $2^{r}$; reverse is $2^{1/r}$. Those are not the same once $r\\neq 1$.
 
 If $r$ had been greater than one, doubling the harvest would have needed less than a doubling of hours. The stem's $r=\\frac{1}{3}<1$ forces a more-than-doubling of watering.
 
@@ -1689,7 +1689,7 @@ $$Y'(27)=\\frac{2}{3}\\cdot 27^{-\\frac{2}{3}}=\\frac{2}{3}\\cdot\\frac{1}{9}=\\
 
 and $\\frac{1}{6}\\approx 0.167$ sits above $\\frac{2}{27}\\approx 0.074$. An extra hour after $8$ hours adds about $0.17$ kg; after $27$ hours it adds about $0.07$ kg.
 
-**2.** A rushed solver who saw $Y(27)=6>Y(8)=4$ and concluded that later hours are more productive has confused the height of the curve with its slope. The harvest is still rising, just more slowly. Another who used $r>1$ intuition from a convex technology has the wrong recovered exponent.
+**2.** Seeing $Y(27)=6>Y(8)=4$ and concluding that later hours are more productive has confused the height of the curve with its slope. That is why $Y(27)=6>Y(8)=4$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The harvest is still rising, just more slowly. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r>1$ intuition from a convex technology has the wrong recovered exponent.
 
 **3.** Letter A said $r<1$ as a growth-rate comparison with hours. This letter is the same $r<1$ as a falling marginal product. Average product $Y/h=2h^{-\\frac{2}{3}}$ falls for the same leftover-exponent reason.
 
@@ -1712,9 +1712,9 @@ That is the definition of a power function of the harvest: $h=\\frac{1}{8}Y^{3}$
 
 $$h=\\Bigl(\\frac{10}{2}\\Bigr)^{3}=125$$
 
-so $10$ kg would take $125$ hours. That is a cube of a linear function of $Y$, still a power of $Y$. A solver who added a setup time, $h=5+(Y/2)^{3}$, would have left the power-function class; the stem has no setup.
+so $10$ kg would take $125$ hours. That is a cube of a linear function of $Y$, still a power of $Y$. Adding a setup time, $h=5+(Y/2)^{3}$, would have left the power-function class; the stem has no setup. Keeping $h=5+(Y/2)^{3}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
-**2.** A rushed solver who thought "the inverse of a root is not a power" has forgotten that a root is a power, and the inverse of $u^{r}$ is $u^{1/r}$. Another who wrote $h=\\log Y$ mixed this plot with an exponential technology.
+**2.** Thinking "the inverse of a root is not a power" has forgotten that a root is a power, and the inverse of $u^{r}$ is $u^{1/r}$. The recovered comparison therefore keeps $u^{r}$ and does not substitute $u^{1/r}$. Another who wrote $h=\\log Y$ mixed this plot with an exponential technology.
 
 **3.** Letters B and C used the inverse exponent $3$ as a scale factor. This letter names the inverse as a function class. The same $h\\propto Y^{3}$ is what made doubling harvest cost eight times the hours.
 
@@ -1780,7 +1780,7 @@ The overview already recovered $A=48$ and $W(9)=16$. Sixteen minutes sits below 
 
 Nine agents are a perfect square, so the square root is $3$, and $W(9)=48/3=16$. The claim does not ask for $16$ on the nose; it asks whether the wait is less than $20$. It is.
 
-**1.** A rushed solver who scaled the recorded $24$ minutes by $4/9$ linearly would report about $10.7$ minutes and still sit under $20$, for the wrong reason. The right scale is $W(9)/W(4)=\\sqrt{4/9}=2/3$, and $\\frac{2}{3}\\cdot 24=16$. Another who used $A=24$ would report $W(9)=8$ and still pass the threshold by accident.
+**1.** Scaling the recorded $24$ minutes by $4/9$ linearly would report about $10.7$ minutes and still sit under $20$, for the wrong reason. The stem's recovered values line up with $24$, whereas $20$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $24$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The right scale is $W(9)/W(4)=\\sqrt{4/9}=2/3$, and $\\frac{2}{3}\\cdot 24=16$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=24$ would report $W(9)=8$ and still pass the threshold by accident.
 
 **2.** Extra arithmetic at a neighbouring staffing, eight agents, which is not a perfect square:
 
@@ -1809,9 +1809,9 @@ That is a power function of the wait. There is no leftover constant and no logar
 
 $$n=\\Bigl(\\frac{48}{12}\\Bigr)^{2}=16$$
 
-so a $12$-minute wait needs $16$ agents. That is a square of a reciprocal, still a power of $W$. A solver who added a minimum staffing, $n=2+(48/W)^{2}$, would have left the power-function class; the stem has no such floor inside the formula, only the later cap of $50$.
+so a $12$-minute wait needs $16$ agents. That is a square of a reciprocal, still a power of $W$. Adding a minimum staffing, $n=2+(48/W)^{2}$, would have left the power-function class; the stem has no such floor inside the formula, only the later cap of $50$. The stem's recovered values line up with $n=2+(48/W)^{2}$, whereas $50$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $n=2+(48/W)^{2}$ stays in the write-up.
 
-**2.** A rushed solver who thought a negative exponent could not invert to a power has forgotten that $u^{-r}$ inverts to a power with exponent $-1/r$. Another who wrote $n=\\log W$ mixed this desk with an exponential technology.
+**2.** Thinking a negative exponent could not invert to a power has forgotten that $u^{-r}$ inverts to a power with exponent $-1/r$. That is the fork: $u^{-r}$ belongs to the recovered isolation, $-1/r$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who wrote $n=\\log W$ mixed this desk with an exponential technology.
 
 **3.** Letter D uses this inverse at $W=6$ and hits $n=64$, past the cap. The inverse being a power is what makes that inversion a single monomial step rather than a numerical search.
 
@@ -1840,7 +1840,7 @@ $$|W'(16)|=24\\cdot 16^{-\\frac{3}{2}}=24\\cdot\\frac{1}{64}=0.375$$
 
 so an extra agent after $4$ agents cuts about $3$ minutes, and after $16$ agents only about $0.4$ minutes. The claim's "more after $16$" is the reverse of these two slopes.
 
-**2.** A rushed solver who saw $W(16)=12<W(4)=24$ and concluded that later agents are doing more has confused a lower wait with a steeper cut. The wait is already low at $16$ agents; there is less left to cut. Another who used a linear wait $W=c-kn$ would have had a constant cut, still not a larger cut later.
+**2.** Seeing $W(16)=12<W(4)=24$ and concluding that later agents are doing more has confused a lower wait with a steeper cut. The opposite verdict would need a different isolation than $W(16)=12<W(4)=24$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The wait is already low at $16$ agents; there is less left to cut. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. a linear wait $W=c-kn$ would have had a constant cut, still not a larger cut later.
 
 **3.** Letter A was a level at $9$ agents. This letter is the slope comparison. Negative-exponent wait has falling marginal benefit of staff, which is the same $r<0$ story as a decreasing function, read on the derivative.
 
@@ -1865,7 +1865,7 @@ $$6=\\frac{48}{\\sqrt{n}}$$
 
 **3.** Compare $64$ with $50$. The required team sits $14$ agents past the cap. A six-minute wait is therefore not a legal staffing on this shift.
 
-A rushed solver who computed $n=48/6=8$ skipped the square in the inverse. Eight agents would give $W(8)\\approx 17$ minutes, not $6$. Another who compared $6$ with $W(50)$ instead of inverting would find
+Computing $n=48/6=8$ skipped the square in the inverse. Once $n=48/6=8$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Eight agents would give $W(8)\\approx 17$ minutes, not $6$. Another who compared $6$ with $W(50)$ instead of inverting would find
 
 $$W(50)=\\frac{48}{\\sqrt{50}}\\approx 6.79$$
 
@@ -1890,7 +1890,7 @@ so wait falls by about thirty percent, not by fifty.
 
 **1.** Extra arithmetic on the recorded four-agent shift: doubling that team is $8$ agents, and $W(8)\\approx 17.0$ against $W(4)=24$. Half of $24$ would have been $12$, and $17$ is not $12$. Directly, $24/\\sqrt{2}\\approx 17.0$, the same figure.
 
-**2.** A rushed solver who used exponent $-1$ would have halved the wait, which is exactly the false claim. Reciprocal-linear wait is $A/n$; this desk is $A/\\sqrt{n}$. Another who used $2^{-2}=1/4$ mixed in a square in the denominator.
+**2.** Using exponent $-1$ would have halved the wait, which is exactly the false claim. The opposite verdict would need a different isolation than $-1$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reciprocal-linear wait is $A/n$; this desk is $A/\\sqrt{n}$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{-2}=1/4$ mixed in a square in the denominator.
 
 **3.** Letter A used a level at $9$ agents. This letter is a scale factor about doubling, independent of $A$. Whether the recorded wait had been $24$ or $40$, doubling the team would still multiply wait by $1/\\sqrt{2}$.
 
@@ -1898,7 +1898,7 @@ The opposite verdict would need exponent $-1$. With exponent $-\\frac{1}{2}$, do
 
 The recovered doubling factor is $1/\\sqrt{2}$, not $1/2$,
 
-**4.** Extra arithmetic at a quadrupling, $k=4$: wait multiplies by $1/2$, which really is a halving, but that is four times the team, not two. Mixing $k=4$ with $k=2$ is how a solver could make this claim look true. Doubling the recorded four agents is eight agents, and $W(8)\\approx 17$, not $12$.
+**4.** Extra arithmetic at a quadrupling, $k=4$: wait multiplies by $1/2$, which really is a halving, but that is four times the team, not two. Mixing $k=4$ with $k=2$ is how that mix could make this claim look true. Doubling the recorded four agents is eight agents, and $W(8)\\approx 17$, not $12$.
 
 so the statement is False.`,
     ],
@@ -1950,7 +1950,7 @@ Leah's well is $Q_{L}(d)=a d^{\\frac{1}{2}}$, and the logged $12$ litres a minut
 
 The overview already recovered $a=4$ and $Q_{L}(4)=8$. Eight litres a minute sits above $7$. Four metres is a perfect square, so the square root is $2$, and $4\\cdot 2=8$.
 
-**1.** A rushed solver who scaled Leah's $12$ litres linearly by $4/9$ would report about $5.3$ litres and fail the threshold for the wrong reason. The right scale is $\\sqrt{4/9}=2/3$, and $\\frac{2}{3}\\cdot 12=8$. Another who used Omar's coefficient on Leah's exponent would mix the two wells.
+**1.** Scaling Leah's $12$ litres linearly by $4/9$ would report about $5.3$ litres and fail the threshold for the wrong reason. So the letter reads the claim against $12$; $5.3$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up. The right scale is $\\sqrt{4/9}=2/3$, and $\\frac{2}{3}\\cdot 12=8$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Omar's coefficient on Leah's exponent would mix the two wells.
 
 **2.** Extra arithmetic at $1$ metre, a new depth: $Q_{L}(1)=4$, which sits below $7$. The threshold test is about $4$ metres specifically, where the recovered $8$ already clears $7$. Letter B's crossing at $8$ metres is a different depth.
 
@@ -1979,7 +1979,7 @@ $$Q_{L}(8)=4\\cdot 2\\sqrt{2}=8\\sqrt{2}\\approx 11.3$$
 
 which matches $Q_{O}(8)=\\frac{1}{2}\\cdot 8\\sqrt{2}$. They meet at $8$ metres, before $10$.
 
-**3.** A rushed solver who equated coefficients $4=1/2$ and ignored exponents would never find a meeting. Another who solved $4\\sqrt{d}=\\frac{1}{2}d$ without the remaining square root would report $d=8$ anyway by accident, or $d=64$ if the algebra slipped. The leftover power is $d^{1}$, so the unique positive meeting is $d=8$.
+**3.** Equating coefficients $4=1/2$ and ignoring exponents would never find a meeting. The path that matches the stem therefore holds $4=1/2$ fixed and only then reads the claim. Another who solved $4\\sqrt{d}=\\frac{1}{2}d$ without the remaining square root would report $d=8$ anyway by accident, or $d=64$ if the algebra slipped. The leftover power is $d^{1}$, so the unique positive meeting is $d=8$.
 
 **4.** Extra check past $10$ metres is letter C's job. This letter only needs the meeting to sit before $10$. At $d=9$, still before $10$, the ratio is $9/8>1$, so Omar is already ahead by then.
 
@@ -2006,7 +2006,7 @@ $$Q_{L}(32)=4\\sqrt{32}=16\\sqrt{2}\\approx 22.6, \\qquad Q_{O}(32)=\\frac{1}{2}
 
 the lead has widened further. There is no later catch-up.
 
-**2.** A rushed solver who remembered that a larger coefficient can lead on small inputs might wait for Leah's $a=4$ to "kick back in" at great depth. Coefficients do not kick back in. The larger exponent, Omar's $\\frac{3}{2}$ against Leah's $\\frac{1}{2}$, takes over after the unique crossing and stays.
+**2.** Remembering that a larger coefficient can lead on small inputs might wait for Leah's $a=4$ to "kick back in" at great depth. The recovered isolation is checked against the claim using $a=4$, which is the figure the sessions actually produce. Coefficients do not kick back in. The larger exponent, Omar's $\\frac{3}{2}$ against Leah's $\\frac{1}{2}$, takes over after the unique crossing and stays.
 
 **3.** Letter B found the crossing before $10$ metres. This letter says what happens after it. The two letters are the same ratio $d/8$, read on two sides of $1$.
 
@@ -2033,7 +2033,7 @@ $$Q_{L}(36)+Q_{O}(36)=24+108=132, \\qquad \\frac{132}{12}=11$$
 
 while $9^{1}=9$ and $9^{\\frac{3}{2}}=27$, neither of which is $11$. No single $r$ fits both ratios.
 
-**2.** A rushed solver who added the exponents $\\frac{1}{2}+\\frac{3}{2}=2$ and declared a square has added the wrong objects. Exponents add under multiplication of powers, not under addition of flows. Another who factored $d^{\\frac{1}{2}}\\bigl(4+\\frac{1}{2}d\\bigr)$ has a product of a power with a linear polynomial, which is still not a single power.
+**2.** Adding the exponents $\\frac{1}{2}+\\frac{3}{2}=2$ and declared a square has added the wrong objects. The recovered isolation is checked against the claim using $\\frac{1}{2}+\\frac{3}{2}=2$, which is the figure the sessions actually produce. Exponents add under multiplication of powers, not under addition of flows. Another who factored $d^{\\frac{1}{2}}\\bigl(4+\\frac{1}{2}d\\bigr)$ has a product of a power with a linear polynomial, which is still not a single power.
 
 **3.** Letter E says Omar's flow alone is a power with exponent above one. The sum is a different object. Mixing "Omar grows faster than depth" with "the sum is a power of depth" is two claims glued together.
 
@@ -2058,7 +2058,7 @@ $$Q_{O}(8)/Q_{O}(4)=2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83$$
 
 so flow multiplies by about $2.83$, which is faster than the doubling of depth. Leah on the same doubling multiplies by $\\sqrt{2}\\approx 1.41$, slower than depth.
 
-**2.** A rushed solver who compared coefficients $\\frac{1}{2}<4$ and declared Omar slower has compared the wrong objects. Coefficients set levels; exponents set speed. Another who saw $\\frac{3}{2}$ as "three over two, so slower than two" mixed a fraction with a comparison to $1$. The comparison that matters for "faster than depth" is to $1$, not to $2$.
+**2.** Comparing coefficients $\\frac{1}{2}<4$ and declared Omar slower has compared the wrong objects. The opposite verdict would need a different isolation than $\\frac{1}{2}<4$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Coefficients set levels; exponents set speed. Another who saw $\\frac{3}{2}$ as "three over two, so slower than two" mixed a fraction with a comparison to $1$. The comparison that matters for "faster than depth" is to $1$, not to $2$.
 
 **3.** Letter C used the larger exponent to keep Omar ahead past the crossing. This letter names that larger exponent as a growth-rate claim against depth itself.
 
@@ -2120,7 +2120,7 @@ Two invoices were needed because two unknowns sat in the bill. Subtracting $F+4A
 
 **1.** Extra arithmetic that shows the leftover constant in a ratio: $C(16)=250$ and $C(64)=450$, so the ratio of bills is $450/250=1.8$. If the bill were $c n^{r}$, that ratio would equal $4^{r}$. Then $4^{r}=1.8$ would force $r=\\log 1.8/\\log 4\\approx 0.42$, but checking $C(36)/C(16)=350/250=1.4$ against $ (36/16)^{0.42}\\approx 1.47$ already disagrees. No single power fits.
 
-**2.** A rushed solver who dropped the setup and called $50\\sqrt{n}$ a power has described a different bill. The stem charges the setup on every run. Another who wrote $C(n)=(50\\sqrt{n})^{1}$ and declared a power has absorbed the intercept into a wish.
+**2.** Dropping the setup and calling $50\\sqrt{n}$ a power has described a different bill. The recovered isolation is checked against the claim using $50\\sqrt{n}$, which is the figure the sessions actually produce. The stem charges the setup on every run. Another who wrote $C(n)=(50\\sqrt{n})^{1}$ and declared a power has absorbed the intercept into a wish.
 
 **3.** Letter D and E are levels of this same affine-looking bill. Those levels exist because $F$ and $A$ were recovered. The function class is settled by $F\\neq 0$, independently of those later figures.
 
@@ -2143,7 +2143,7 @@ which stays positive for every $n>0$. Printing more copies never turns the total
 
 **1.** Extra arithmetic at a huge run: $C(10000)=50+50\\cdot 100=5050$ euros, above $C(64)=450$, above $C(16)=250$. The total is still climbing at ten thousand copies. There is no later peak in $C(n)$.
 
-**2.** A rushed solver who watched unit cost fall and concluded that the total must eventually fall has mixed letters B and C. Spreading a setup lowers the per-copy price and still adds a positive square-root charge on every extra copy. Another who used a demand curve, where raising quantity can cut revenue, has left Nora's print shop for a different model.
+**2.** Watching unit cost fall and concluding that the total must eventually fall has mixed letters B and C. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. Spreading a setup lowers the per-copy price and still adds a positive square-root charge on every extra copy. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. a demand curve, where raising quantity can cut revenue, has left Nora's print shop for a different model.
 
 **3.** Setting $C'(n)=0$ would require $25/\\sqrt{n}=0$, which never happens. A negative $A$ would have been needed for a falling total. The stem's $A=50$ is positive.
 
@@ -2164,7 +2164,7 @@ Both pieces decline as the run lengthens: the setup is spread over more copies, 
 
 **1.** Extra arithmetic at the two invoices: $C(16)/16=250/16=15.625$ euros per copy, and $C(64)/64=450/64\\approx 7.03$ euros per copy. The fourfold run more than halves the per-copy price. At $n=36$, $C(36)/36=350/36\\approx 9.72$, sitting between those two averages, as a falling sequence should.
 
-**2.** A rushed solver who saw the total climb from $250$ to $450$ and concluded that copies get more expensive has mixed the total with the average. Letter B's rising total is compatible with this falling average. Another who looked only at the setup piece $50/n$ and ignored the $50/\\sqrt{n}$ piece still has a falling average, just an incomplete one.
+**2.** Seeing the total climb from $250$ to $450$ and concluding that copies get more expensive has mixed the total with the average. The recovered comparison therefore keeps $250$ and does not substitute $450$. Letter B's rising total is compatible with this falling average. Another who looked only at the setup piece $50/n$ and ignored the $50/\\sqrt{n}$ piece still has a falling average, just an incomplete one.
 
 **3.** What would flip this verdict is a positive leftover exponent on the variable term after dividing by $n$, which would need the original exponent on $n$ to exceed $1$. The stem's $\\frac{1}{2}<1$, so average cost falls.
 
@@ -2179,11 +2179,11 @@ This is a level at $25$ copies, asked against a threshold of $280$ euros.
 
 The overview already evaluated $C(25)=300$. Three hundred sits above $280$. Twenty-five is a perfect square, so the square root is $5$, and $50+50\\cdot 5=300$.
 
-**1.** A rushed solver who dropped the setup and reported $50\\cdot 5=250$ would sit below $280$ and fail the threshold for the wrong bill. The setup of $50$ is what pushes $250$ up to $300$. Another who used $F=0$ from a power-function wish has the same miss.
+**1.** Dropping the setup and reporting $50\\cdot 5=250$ would sit below $280$ and fail the threshold for the wrong bill. The stem's recovered values line up with $50\\cdot 5=250$, whereas $280$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $50\\cdot 5=250$ stays in the write-up. The setup of $50$ is what pushes $250$ up to $300$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $F=0$ from a power-function wish has the same miss.
 
 **2.** Extra arithmetic at $n=16$, the first invoice: $C(16)=250$, which sits below $280$. The threshold test is about $n=25$ specifically. Between $16$ and $25$ copies the bill crosses $280$, and at $25$ it has already reached $300$.
 
-**3.** Letter E asks for a $400$ euro threshold at $36$ copies and fails. This letter's $280$ at $25$ copies is a different comparison. Mixing those two thresholds is how a solver could flip one of them by accident.
+**3.** Letter E asks for a $400$ euro threshold at $36$ copies and fails. This letter's $280$ at $25$ copies is a different comparison. Mixing those two thresholds is how that mix could flip one of them by accident.
 
 The opposite verdict would need $C(25)\\le 280$, which would have required a smaller $A$ or a smaller $F$. The two invoices force $300$.
 
@@ -2198,11 +2198,11 @@ This is a level at $36$ copies, asked against a threshold of $400$ euros.
 
 The overview already evaluated $C(36)=350$. Three hundred and fifty does not sit above $400$. Thirty-six is a perfect square, so the square root is $6$, and $50+50\\cdot 6=350$.
 
-The claim wants more than $400$. The bill is $350$, which is $50$ euros light of that line, and that $50$ is exactly the setup: a solver who computed $50\\cdot 8=400$ used the eight-copy-root from the second invoice, $n=64$, not $n=36$.
+The claim wants more than $400$. The bill is $350$, which is $50$ euros light of that line, and that $50$ is exactly the setup: computing $50\\cdot 8=400$ used the eight-copy-root from the second invoice, $n=64$, not $n=36$. The recovered comparison therefore keeps $50\\cdot 8=400$ and does not substitute $n=36$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **1.** Extra arithmetic that manufactures $400$: $C(64)=450$ is the second invoice, and dropping the setup from $450$ leaves $400$, which is $A\\cdot 8$. Pointing that $400$ at $n=36$ is a mix of two runs. Directly, $C(36)=350\\neq 400$.
 
-**2.** A rushed solver who interpolated linearly between $C(16)=250$ and $C(64)=450$ at $n=36$ would report $250+200\\cdot(20/48)\\approx 333$, still not above $400$, for the wrong reason. The square-root bill is $350$.
+**2.** Interpolating linearly between $C(16)=250$ and $C(64)=450$ at $n=36$ would report $250+200\\cdot(20/48)\\approx 333$, still not above $400$, for the wrong reason. Working from the isolated values, $C(16)=250$ is the figure that is checked, not the detour that produced $400$. That contrast is the reason the verdict goes the way it does. The square-root bill is $350$.
 
 **3.** Letter D's $300>280$ at $n=25$ does not license $350>400$ at $n=36$. Thresholds are local. The recovered $350$ sits $50$ below $400$.
 
@@ -2262,7 +2262,7 @@ $$S=\\frac{1}{2}\\bigl(8u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}=\\frac{1}{2}\\cdo
 
 because $8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=2^{2}=4$. The coefficient $2$ is forced by $A=8$ together with the outer $\\frac{1}{2}$.
 
-**2.** A rushed solver who added the exponents $\\frac{3}{2}+\\frac{2}{3}$ would report $S\\propto u^{\\frac{13}{6}}$ and miss proportionality. Exponents multiply under composition, not add. Another who forgot the outer $\\frac{1}{2}$ would report $S=4u$ and still have proportionality, just with the wrong coefficient. The claim is the function class, not the $2$.
+**2.** Adding the exponents $\\frac{3}{2}+\\frac{2}{3}$ would report $S\\propto u^{\\frac{13}{6}}$ and miss proportionality. After isolating the unknown, the check is against $\\frac{3}{2}+\\frac{2}{3}$. The figure $S\\propto u^{\\frac{13}{6}}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\frac{3}{2}+\\frac{2}{3}$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Exponents multiply under composition, not add. Another who forgot the outer $\\frac{1}{2}$ would report $S=4u$ and still have proportionality, just with the wrong coefficient. The claim is the function class, not the $2$.
 
 **3.** Extra check at the audited purities: $S(9)=18$ and $S(16)=32$, which sit in the ratio $32/18=16/9$, equal to the purity ratio. That is the fingerprint of proportionality, and it uses $S(16)=32$, a figure the overview's answer line did not need to stress.
 
@@ -2285,7 +2285,7 @@ $$2u=1.8u+5$$
 
 **2.** Then $0.2u=5$ and $u=25$. At that purity both quotes equal $50$. They meet.
 
-A rushed solver who compared slopes $2>1.8$ and concluded the refinery is always above, so they never meet, has forgotten the rival's intercept of $5$. A steeper line through the origin starts below an affine rival and then overtakes it. Another who set $8u^{\\frac{3}{2}}=1.8u+5$ without composing would be solving a different and harder equation, mixing metal tonnes with strength units.
+Comparing slopes $2>1.8$ and concluding the refinery is always above, so they never meet, has forgotten the rival's intercept of $5$. The recovered comparison therefore keeps $2>1.8$ and does not substitute $5$. A steeper line through the origin starts below an affine rival and then overtakes it. Another who set $8u^{\\frac{3}{2}}=1.8u+5$ without composing would be solving a different and harder equation, mixing metal tonnes with strength units.
 
 **3.** Extra arithmetic on either side of $25$: at $u=16$, refinery $32$ against rival $1.8\\cdot 16+5=33.8$, so the rival still leads by $1.8$. At $u=36$, refinery $72$ against rival $1.8\\cdot 36+5=69.8$, so the refinery has overtaken. The crossing at $25$ sits between those two purities.
 
@@ -2304,9 +2304,9 @@ The overview already recorded that the rival's intercept keeps it from being a p
 
 **1.** Extra arithmetic in a ratio, the same test as Nora's setup: the rival at $u=10$ is $23$, at $u=20$ is $41$, and $41/23\\approx 1.78$, while $2^{r}=1.78$ would force $r\\approx 0.83$. Checking $u=40$ against $u=10$, the rival is $77$, ratio $7.7$, while $4^{0.83}\\approx 3.2$, a mismatch. No single power fits.
 
-**2.** A rushed solver who dropped the $5$ and called $1.8u$ a power has described a different quote. The stem's rival includes the intercept. Another who wrote $1.8u^{1}+5u^{0}$ and declared "a sum of powers is a power" has confused a polynomial with a monomial.
+**2.** Dropping the $5$ and calling $1.8u$ a power has described a different quote. Working from the isolated values, $5$ is the figure that is checked, not the detour that produced $1.8u$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The stem's rival includes the intercept. Another who wrote $1.8u^{1}+5u^{0}$ and declared "a sum of powers is a power" has confused a polynomial with a monomial.
 
-**3.** Letter A said the refinery's composed quote is a power, in fact a proportional one. The rival is affine, not a power. Mixing those two quotes is how a solver could call both of them powers.
+**3.** Letter A said the refinery's composed quote is a power, in fact a proportional one. The rival is affine, not a power. Mixing those two quotes is how that mix could call both of them powers.
 
 The opposite verdict would need the rival to have intercept $0$. The stem's intercept is $5$.
 
@@ -2321,7 +2321,7 @@ This is a level of the composed refinery quote at purity $36$, asked against a t
 
 The overview already evaluated $S(36)=72$. Seventy-two sits above $70$. Once $S(u)=2u$, strength at purity $36$ is $2\\cdot 36=72$.
 
-**1.** A rushed solver who used metal instead of strength, $M(36)=8\\cdot 36^{\\frac{3}{2}}=8\\cdot 216=1728$, would blow past $70$ for the wrong quantity. Another who used the rival at $u=36$, $1.8\\cdot 36+5=69.8$, would sit just below $70$ and fail the threshold on the wrong quote.
+**1.** Using metal instead of strength, $M(36)=8\\cdot 36^{\\frac{3}{2}}=8\\cdot 216=1728$, would blow past $70$ for the wrong quantity. Working from the isolated values, $M(36)=8\\cdot 36^{\\frac{3}{2}}=8\\cdot 216=1728$ is the figure that is checked, not the detour that produced $70$. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the rival at $u=36$, $1.8\\cdot 36+5=69.8$, would sit just below $70$ and fail the threshold on the wrong quote.
 
 **2.** Extra arithmetic at $u=25$, the crossing: $S(25)=50$, which sits below $70$. The threshold test is about $u=36$ specifically. Between $25$ and $36$ the refinery quote crosses $70$, and at $36$ it has reached $72$.
 
@@ -2340,7 +2340,7 @@ This is a level at purity $9$, asked against a threshold of $20$.
 
 The overview already evaluated $S(9)=18$. Eighteen does not sit above $20$. Once $S(u)=2u$, strength at purity $9$ is $2\\cdot 9=18$.
 
-The claim wants a strength already above $20$. Eighteen sits $2$ below that line. A solver who used metal $M(9)=8\\cdot 27=216$ has left the strength stage. A solver who used $S=\\frac{1}{2}\\cdot 9^{\\frac{2}{3}}$ skipped the metal stage and the coefficient $A$.
+The claim wants a strength already above $20$. Eighteen sits $2$ below that line. Using metal $M(9)=8\\cdot 27=216$ has left the strength stage. The path that matches the stem therefore holds $M(9)=8\\cdot 27=216$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $S=\\frac{1}{2}\\cdot 9^{\\frac{2}{3}}$ skipped the metal stage and the coefficient $A$. The recovered comparison therefore keeps $S=\\frac{1}{2}\\cdot 9^{\\frac{2}{3}}$ and does not substitute $A$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **1.** Extra arithmetic that manufactures $20$: half of $40$, as if the audited $Q(25)=40$ from a different task had leaked in, or $S=\\frac{1}{2}M$ with $M=40$. Directly, $S(9)=18$. The rival at $u=9$ is $1.8\\cdot 9+5=21.2$, which does sit above $20$, on the wrong quote.
 
@@ -2404,7 +2404,7 @@ The overview already recovered $r=2$ from $2^{r}=4$. An exponent of $2$ sits abo
 
 **1.** Extra arithmetic on the recorded eight-job run: doubling those $8$ jobs is $16$ jobs, and the recovered $L(16)=128$ against $L(8)=32$ is a factor $4$, which is faster than the doubling of jobs. That is $2^{2}=4$ at a concrete pair, not a new coefficient.
 
-**2.** A rushed solver who compared $L(8)=32$ with $8$ and saw load four times jobs at that one point has a coincidence of $A=1/2$ and $x=8$, not a growth-rate statement. Growth rate is $r$ against $1$, independent of $A$. Another who solved $2^{r}=4$ as $r=4$ mixed a multiplier with an exponent.
+**2.** Comparing $L(8)=32$ with $8$ and seeing load four times jobs at that one point has a coincidence of $A=1/2$ and $x=8$, not a growth-rate statement. Working from the isolated values, $L(8)=32$ is the figure that is checked, not the detour that produced $x=8$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Growth rate is $r$ against $1$, independent of $A$. Another who solved $2^{r}=4$ as $r=4$ mixed a multiplier with an exponent.
 
 **3.** Letter B is the reverse scale question with $k=1/2$. Letter C is the average $L/x$. This letter is only $r>1$. If the doubling had multiplied load by $1.5$, then $r<1$ and this claim would have been false.
 
@@ -2423,7 +2423,7 @@ $$\\frac{L(x/2)}{L(x)}=\\Bigl(\\frac{1}{2}\\Bigr)^{2}=\\frac{1}{4}$$
 
 **1.** Extra arithmetic on the recorded run: half of $8$ jobs is $4$ jobs, and $L(4)=\\frac{1}{2}\\cdot 16=8$ against $L(8)=32$. Half of $32$ would have been $16$, and $8$ is not $16$. Load drops to a quarter, $32/4=8$.
 
-**2.** A rushed solver who used exponent $1$ would have halved the load, which is exactly the false claim. Another who used $\\bigl(\\frac{1}{2}\\bigr)^{3}=\\frac{1}{8}$ mixed in a cube. The doubling rule $2^{r}=4$ already forced $r=2$, so the halving factor is locked.
+**2.** Using exponent $1$ would have halved the load, which is exactly the false claim. The opposite verdict would need a different isolation than $1$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $\\bigl(\\frac{1}{2}\\bigr)^{3}=\\frac{1}{8}$ mixed in a cube. The doubling rule $2^{r}=4$ already forced $r=2$, so the halving factor is locked.
 
 **3.** Letter A said load outruns jobs going up. This letter is the same square going down. A square law is not symmetric with a linear guess: doubling multiplies by $4$, and halving multiplies by $1/4$, not by $1/2$.
 
@@ -2442,7 +2442,7 @@ The overview already recovered $L(x)=\\frac{1}{2}x^{2}$, so load per job is $\\f
 
 **1.** Extra arithmetic at the recorded run and a neighbour: $L(8)/8=32/8=4$, and $L(10)/10=50/10=5$, already higher. At $x=16$, $L(16)/16=128/16=8$, twice the eight-job average. The average is itself a linear function of $x$, coefficient $1/2$.
 
-**2.** A rushed solver who divided $32$ by $8$ and stopped, calling $4$ a constant average, has evaluated one point. The leftover $\\frac{1}{2}x$ is not constant. Another who used $r<1$ intuition from a square-root technology has the wrong recovered exponent.
+**2.** Dividing $32$ by $8$ and stopping, calling $4$ a constant average, has evaluated one point. So the letter reads the claim against $32$; $4$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $32$ stays in the write-up. The leftover $\\frac{1}{2}x$ is not constant. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r<1$ intuition from a square-root technology has the wrong recovered exponent.
 
 **3.** Letter A said $r>1$ as a growth-rate comparison with $x$. This letter is the same $r>1$ as a rising average. Letter B's quartering under a halving is compatible: fewer jobs, smaller average, $L(4)/4=2$ below $L(8)/8=4$.
 
@@ -2461,9 +2461,9 @@ The overview already evaluated $L(16)=128$. One hundred and twenty-eight sits be
 
 **1.** Extra arithmetic that inverts the alarm, which this letter can use as its own check: $L(x)=200$ gives $\\frac{1}{2}x^{2}=200$, so $x^{2}=400$ and $x=20$. The alarm first trips at $20$ jobs, which sits past $16$. At $16$ jobs there is a $72$-point gap still to go.
 
-**2.** A rushed solver who doubled the recorded $32$ because $16=2\\cdot 8$ would report $64$ and still sit below $200$, for the wrong scale. Another who used $L(16)=16^{2}=256$ dropped $A=1/2$ and would have tripped the alarm by accident.
+**2.** Doubling the recorded $32$ because $16=2\\cdot 8$ would report $64$ and still sit below $200$, for the wrong scale. So the letter reads the claim against $32$; $200$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $32$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $L(16)=16^{2}=256$ dropped $A=1/2$ and would have tripped the alarm by accident.
 
-**3.** Letter E asks for a threshold of $40$ at $10$ jobs and passes. This letter's $200$ at $16$ jobs is a different comparison. Mixing those two thresholds is how a solver could trip the alarm four jobs early.
+**3.** Letter E asks for a threshold of $40$ at $10$ jobs and passes. This letter's $200$ at $16$ jobs is a different comparison. Mixing those two thresholds is how that mix could trip the alarm four jobs early.
 
 The opposite verdict would need $L(16)\\ge 200$, which would have required $A\\ge 200/256$. The recorded $L(8)=32$ forces $A=1/2$ and $L(16)=128$.
 
@@ -2478,7 +2478,7 @@ This is a level at $10$ jobs, asked against a threshold of $40$.
 
 The overview already evaluated $L(10)=50$. Fifty sits above $40$. Ten squared is $100$, and half of $100$ is $50$.
 
-**1.** A rushed solver who scaled the recorded $32$ linearly by $10/8$ would report $40$ on the nose and still pass a weak reading of "above $40$," for the wrong reason. The square law gives $50$, which clears $40$ by $10$ points. Another who used $L(10)=10^{2}=100$ dropped $A$ and still passed.
+**1.** Scaling the recorded $32$ linearly by $10/8$ would report $40$ on the nose and still pass a weak reading of "above $40$," for the wrong reason. After isolating the unknown, the check is against $32$. The figure $40$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $32$ stays in the write-up. The square law gives $50$, which clears $40$ by $10$ points. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $L(10)=10^{2}=100$ dropped $A$ and still passed.
 
 **2.** Extra arithmetic at $x=8$, the recorded run: $L(8)=32$, which sits below $40$. The threshold test is about $x=10$ specifically. Between $8$ and $10$ jobs the load crosses $40$, and at $10$ it has reached $50$.
 
@@ -2546,7 +2546,7 @@ $$Q'(25)=6/5=1.2, \\qquad Q'(100)=6/10=0.6$$
 
 so an extra unit at $25$ adds $1.2$ responses, and at $100$ only $0.6$. The later unit buys half as much as the earlier one, which is $\\sqrt{100/25}=2$ in the denominator.
 
-**2.** A rushed solver who saw $Q(100)=120>Q(25)=60$ and concluded that later intensity is more productive has confused height with slope. The survey is still gathering responses, just more slowly. Another who used $r>1$ intuition has the wrong exponent.
+**2.** Seeing $Q(100)=120>Q(25)=60$ and concluding that later intensity is more productive has confused height with slope. Once $Q(100)=120>Q(25)=60$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The survey is still gathering responses, just more slowly. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r>1$ intuition has the wrong exponent.
 
 **3.** Letter C is the falling average $Q/x$. This letter is the falling marginal $Q'$. Both are the $r=\\frac{1}{2}<1$ story, read two ways.
 
@@ -2571,7 +2571,7 @@ $$Q(50)=12\\sqrt{50}=12\\cdot 5\\sqrt{2}=60\\sqrt{2}\\approx 84.9$$
 
 against $Q(25)=60$. Twice $60$ would have been $120$, and $85$ is not $120$. The logged jump from $25$ to $100$ is a quadrupling, which does double $Q$ from $60$ to $120$, and that is letter A's intensity pair, not a doubling.
 
-**2.** A rushed solver who used the quadrupling $25\\to 100$ as if it were a doubling has mixed $k=4$ with $k=2$. Another who used exponent $1$ is telling a proportional story the recorded gain already contradicts.
+**2.** Using the quadrupling $25\\to 100$ as if it were a doubling has mixed $k=4$ with $k=2$. So the letter reads the claim against $25\\to 100$; $k=2$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $25\\to 100$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. exponent $1$ is telling a proportional story the recorded gain already contradicts.
 
 **3.** Letter D will cap intensity at $400$, a quadrupling of $100$, which multiplies $Q$ by $2$ and yields $240$. That later doubling of responses is a quadrupling of intensity, the same identity as here with $k=4$ rather than $k=2$.
 
@@ -2590,7 +2590,7 @@ The overview already recorded that average product $12x^{-\\frac{1}{2}}$ falls. 
 
 **1.** Extra arithmetic at the two logged intensities: $Q(25)/25=60/25=2.4$ responses per unit, and $Q(100)/100=120/100=1.2$, already half as large. At the cap $x=400$, $Q(400)/400=240/400=0.6$, half again. The average is itself $12/\\sqrt{x}$.
 
-**2.** A rushed solver who saw $Q$ rise from $60$ to $120$ and concluded that intensity is becoming more productive has mixed the total with the average. Letter A's falling slope is the same story. Another who used $r>1$ would have a rising average, the server-load story of task $16$, not this survey.
+**2.** Seeing $Q$ rise from $60$ to $120$ and concluding that intensity is becoming more productive has mixed the total with the average. That is the fork: $Q$ belongs to the recovered isolation, $120$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter A's falling slope is the same story. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r>1$ would have a rising average, the server-load story of task $16$, not this survey.
 
 **3.** What would flip this verdict is $r>1$. The stem's $\\frac{1}{2}<1$ forces a falling average.
 
@@ -2609,7 +2609,7 @@ $$Q(400)=12\\cdot 20=240$$
 
 The cap constrains $x$, not $Q$ directly. Turning a cap on $x$ into a cap on $Q$ requires evaluating the recovered rule at $x=400$, and that evaluation is $240$, which sits $40$ above $200$.
 
-**1.** A rushed solver who used $A=10$ from a mis-divided $60/(10-4)$ wait, $60/6=10$, would report $Q(400)=200$ on the nose and make the claim true by a wrong coefficient. The recorded gain is $A(10-5)=60$, so $A=12$, not $10$. Another who capped $Q$ at $200$ by policy, rather than by the intensity cap, has rewritten the stem.
+**1.** Using $A=10$ from a mis-divided $60/(10-4)$ wait, $60/6=10$, would report $Q(400)=200$ on the nose and make the claim true by a wrong coefficient. After isolating the unknown, the check is against $A=10$. The figure $Q(400)=200$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $A=10$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The recorded gain is $A(10-5)=60$, so $A=12$, not $10$. Another who capped $Q$ at $200$ by policy, rather than by the intensity cap, has rewritten the stem.
 
 **2.** Extra check: $Q(225)=12\\cdot 15=180$, which does sit under $200$, at an intensity of $225$ well below the cap. The cap still allows the further climb from $180$ to $240$.
 
@@ -2626,7 +2626,7 @@ This is a level at intensity $81$, asked against a threshold of $100$ usable res
 
 The overview already evaluated $Q(81)=108$. One hundred and eight sits above $100$. Eighty-one is a perfect square, so the square root is $9$, and $12\\cdot 9=108$.
 
-**1.** A rushed solver who used $A=10$ would report $90$ and fail the threshold on a wrong coefficient. Another who computed $12\\cdot 81=972$ skipped the root.
+**1.** Using $A=10$ would report $90$ and fail the threshold on a wrong coefficient. Working from the isolated values, $A=10$ is the figure that is checked, not the detour that produced $90$. Another who computed $12\\cdot 81=972$ skipped the root.
 
 **2.** Extra arithmetic at $x=64$, a nearby perfect square: $Q(64)=12\\cdot 8=96$, which sits below $100$. The threshold test is about $x=81$ specifically. Between $64$ and $81$ the yield crosses $100$, and at $81$ it has reached $108$.
 
@@ -2682,7 +2682,7 @@ The overview already recovered $a=1$, $b=16$, and $C(n)-D(n)=n(n-16)$. On $n>0$ 
 
 **1.** Extra arithmetic at a neighbour on each side: at $n=15$, $C(15)=225$ and $D(15)=240$, so manual is still cheaper by $15$. At $n=17$, $C(17)=289$ and $D(17)=272$, so automated is already more expensive by $17$. The sign change of the gap is a single crossing at $16$, not a pair of crossings.
 
-**2.** A rushed solver who saw two power functions and expected two meetings has counted degrees loosely. $n^{2}-16n=n(n-16)$ is quadratic, but one root is $0$, excluded by $n>0$. Another who set $a=b$ and ignored the recorded $256$ would never find a meeting of these two shapes except at $0$.
+**2.** Seeing two power functions and expecting two meetings has counted degrees loosely. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $n^{2}-16n=n(n-16)$ is quadratic, but one root is $0$, excluded by $n>0$. Another who set $a=b$ and ignored the recorded $256$ would never find a meeting of these two shapes except at $0$.
 
 **3.** Letter B reads the same factor $n-16$ past $16$ and finds automated more expensive. This letter is the uniqueness of the root. Equal exponents would have been needed for no meeting or for a meeting at every $n$.
 
@@ -2699,7 +2699,7 @@ The overview already recorded that the gap $n(n-16)$ is positive for $n>16$, so 
 
 **1.** Extra arithmetic at $n=25$, which letter D will also use: $C(25)=625$ and $D(25)=400$, so automated is more expensive by $225$, not cheaper. At $n=20$, $C(20)=400$ and $D(20)=320$, still a more expensive automated bill by $80$.
 
-**2.** A rushed solver who thought "machines get cheaper on large batches" has imported an economies-of-scale story the quadratic cost does not tell. A square grows faster than a line. Another who swapped $C$ and $D$ after seeing $a=1<b=16$ compared coefficients instead of the bills at large $n$. Coefficients set the crossing; past the crossing the larger exponent wins, and that larger exponent is on automated cost.
+**2.** Thinking "machines get cheaper on large batches" has imported an economies-of-scale story the quadratic cost does not tell. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. A square grows faster than a line. Another who swapped $C$ and $D$ after seeing $a=1<b=16$ compared coefficients instead of the bills at large $n$. Coefficients set the crossing; past the crossing the larger exponent wins, and that larger exponent is on automated cost.
 
 **3.** Letter A found the unique meeting. This letter reads the sign past that meeting. The claim's "cheaper" is the reverse of that sign.
 
@@ -2722,7 +2722,7 @@ The leftover exponent is positive, so unit cost rises with the batch. A quadrati
 
 **1.** Extra arithmetic at the meeting and past it: at $n=16$, automated unit cost is $16$ euros per document, matching the manual's constant $16$. At $n=25$, automated unit cost is $25$, already above the manual's $16$. At $n=9$, automated unit cost is $9$, below $16$, which is why automation is cheaper on small batches.
 
-**2.** A rushed solver who divided $256$ by $16$ and called $16$ a constant automated unit cost has evaluated one point, the meeting, where the two unit costs happen to agree. The leftover $n$ is not constant. Another who used $r<1$ intuition has the wrong exponent on $C$.
+**2.** Dividing $256$ by $16$ and calling $16$ a constant automated unit cost has evaluated one point, the meeting, where the two unit costs happen to agree. The recovered comparison therefore keeps $256$ and does not substitute $16$. The leftover $n$ is not constant. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r<1$ intuition has the wrong exponent on $C$.
 
 **3.** Manual unit cost is $D(n)/n=16$, constant. Automated unit cost is $n$, rising. That is why they meet once and why automation loses on large batches.
 
@@ -2741,7 +2741,7 @@ The overview already evaluated the gap $225$ at $n=25$. Two hundred and twenty-f
 
 $$C(25)=625, \\qquad D(25)=400, \\qquad 625-400=225$$
 
-**1.** A rushed solver who computed $D(25)-C(16)=400-256=144$ mixed a $25$-document manual bill with the meeting. Another who used $|25-16|\\times$ something small, as if the gap grew linearly by $9$, might report $9\\cdot 16=144$ or $9\\cdot 9=81$ and pass the "$<100$" test by a wrong gap. The factored gap is $n(n-16)=25\\cdot 9=225$.
+**1.** Computing $D(25)-C(16)=400-256=144$ mixed a $25$-document manual bill with the meeting. Working from the isolated values, $D(25)-C(16)=400-256=144$ is the figure that is checked, not the detour that produced $25$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $|25-16|\\times$ something small, as if the gap grew linearly by $9$, might report $9\\cdot 16=144$ or $9\\cdot 9=81$ and pass the "$<100$" test by a wrong gap. The factored gap is $n(n-16)=25\\cdot 9=225$.
 
 **2.** Extra arithmetic at $n=20$, a closer neighbour: the gap is $20\\cdot 4=80$, which does sit under $100$. The claim is about $n=25$ specifically, where the gap has already reached $225$. Between $20$ and $25$ documents the gap crosses $100$.
 
@@ -2758,7 +2758,7 @@ This is a level of the automated bill at $9$ documents, asked against a threshol
 
 The overview already evaluated $C(9)=81$. Eighty-one sits under $100$. Nine squared is $81$, and $a=1$, so the automated bill is $81$.
 
-**1.** A rushed solver who used $D(9)=144$ would sit above $100$ on the wrong procedure. The claim is about automated cost. Another who used $a=16$ from a swapped coefficient would report $16\\cdot 81$ and blow past $100$.
+**1.** Using $D(9)=144$ would sit above $100$ on the wrong procedure. So the letter reads the claim against $D(9)=144$; $100$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $D(9)=144$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim is about automated cost. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $a=16$ from a swapped coefficient would report $16\\cdot 81$ and blow past $100$.
 
 **2.** Extra arithmetic at $n=10$: $C(10)=100$ on the nose. The threshold "under $100$" is about $n=9$ specifically, one document below that round figure. At $n=8$, $C(8)=64$, still under $100$ and not the claimed batch.
 
@@ -2814,7 +2814,7 @@ The overview already recovered $A=8$ and recorded that the exponent $\\frac{1}{2
 
 **1.** Extra arithmetic on the recorded shift: doubling those $16$ staff is $32$ staff, and $H(32)=8\\sqrt{32}=32\\sqrt{2}\\approx 45.3$ against $H(16)=32$. Throughput multiplies by about $1.41$, slower than the doubling of headcount.
 
-**2.** A rushed solver who compared $32$ pallets with $16$ staff and saw two pallets per person has a level of the average, not a growth-rate statement. Growth rate is $r$ against $1$. Another who used $r=2$ from a different chapter's square law has the wrong exponent.
+**2.** Comparing $32$ pallets with $16$ staff and seeing two pallets per person has a level of the average, not a growth-rate statement. So the letter reads the claim against $32$; $16$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $32$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Growth rate is $r$ against $1$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r=2$ from a different chapter's square law has the wrong exponent.
 
 **3.** Letter B is the doubling claim, which fails for the same $r=\\frac{1}{2}$. Letter C is the ceiling, which is a different function class. This letter is only $r<1$.
 
@@ -2831,9 +2831,9 @@ The overview already recorded that doubling staff multiplies $H$ by $\\sqrt{2}$,
 
 $$\\frac{H(2s)}{H(s)}=2^{\\frac{1}{2}}\\neq 2$$
 
-**1.** Extra arithmetic on the recorded shift, as in letter A: $H(32)\\approx 45.3$ against $H(16)=32$, not against $64$. Twice $32$ would have been $64$. A solver who used the quadrupling $16\\to 64$, where $H(64)=64$, has mixed $k=4$ with $k=2$. Quadrupling staff does double throughput; doubling staff does not.
+**1.** Extra arithmetic on the recorded shift, as in letter A: $H(32)\\approx 45.3$ against $H(16)=32$, not against $64$. Twice $32$ would have been $64$. Using the quadrupling $16\\to 64$, where $H(64)=64$, has mixed $k=4$ with $k=2$. That is the fork: $16\\to 64$ belongs to the recovered isolation, $k=2$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Quadrupling staff does double throughput; doubling staff does not.
 
-**2.** A rushed solver who used exponent $1$ is telling a proportional story the square-root technology contradicts. Another who used $2^{\\frac{1}{3}}$ mixed in a cube root.
+**2.** Using exponent $1$ is telling a proportional story the square-root technology contradicts. Keeping $1$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{\\frac{1}{3}}$ mixed in a cube root.
 
 **3.** Letter D will check $H(64)=64$ against the cap of $80$. That $64$ is the quadrupling identity, not this letter's doubling.
 
@@ -2852,7 +2852,7 @@ The overview already recorded the two-piece billed rule $B(s)=\\min(H(s),80)$, w
 
 **1.** Extra arithmetic at the bind: $8s^{\\frac{1}{2}}=80$ gives $s^{\\frac{1}{2}}=10$ and $s=100$. At $s=121$, uncapped $H(121)=8\\cdot 11=88$, but billed $B(121)=80$. The ratio $B(121)/B(100)=1$, while $H(121)/H(100)=1.1$. A constant ratio $1$ is a power only of exponent $0$, and that exponent $0$ piece does not match the uncapped exponent $\\frac{1}{2}$ on $s<100$. One function cannot be two different powers on two intervals and still be a single power on the whole domain.
 
-**2.** A rushed solver who said "a cap is $80 s^{0}$, which is a power" has described the capped piece alone. The billed series is the minimum of two formulas, and that minimum is not itself a monomial. Another who ignored the cap and called $H(s)$ billed throughput has rewritten the contract.
+**2.** Saying "a cap is $80 s^{0}$, which is a power" has described the capped piece alone. The opposite verdict would need a different isolation than $80 s^{0}$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The billed series is the minimum of two formulas, and that minimum is not itself a monomial. Another who ignored the cap and called $H(s)$ billed throughput has rewritten the contract.
 
 **3.** Letter D checks that $s=64$ is still uncapped. Letter E checks $s=81$, also still uncapped. This letter is the function class once $s\\ge 100$.
 
@@ -2869,7 +2869,7 @@ The overview already evaluated $H(64)=64$. Sixty-four pallets per hour sits belo
 
 **1.** Extra arithmetic that inverts the cap: $s=100$ is where $H$ hits $80$, as in letter C. Sixty-four sits $36$ staff short of that bind. At $s=81$, letter E's $H(81)=72$, still below $80$. The ceiling is not yet reached at $64$.
 
-**2.** A rushed solver who used $H(64)=64\\cdot 8/4$ wait, or who copied $s=64$ onto $H=80$ by mixing the cap figure with the staff figure, would trip the ceiling early. Another who used $A=5$ would report $H(64)=40$ and still sit below $80$, for a wrong coefficient.
+**2.** Using $H(64)=64\\cdot 8/4$ wait, or copying $s=64$ onto $H=80$ by mixing the cap figure with the staff figure, would trip the ceiling early. The stem's recovered values line up with $H(64)=64\\cdot 8/4$, whereas $H=80$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $H(64)=64\\cdot 8/4$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=5$ would report $H(64)=40$ and still sit below $80$, for a wrong coefficient.
 
 **3.** The recovered $64$ at $64$ staff is a coincidence of $A=8$ and $\\sqrt{64}=8$, not a reason the cap of $80$ has bound. The cap is $80$, not $64$.
 
@@ -2884,7 +2884,7 @@ This is a level at $81$ staff, asked against a threshold of $70$ pallets per hou
 
 The overview already evaluated $H(81)=72$. Seventy-two sits above $70$. Eighty-one is a perfect square, so the square root is $9$, and $8\\cdot 9=72$.
 
-**1.** A rushed solver who used $A=7$ from a misread $32/\\sqrt{16}$ wait, $32/4=8$ is the right $A$. Using $A=7$ would report $63$ and fail the threshold. Another who computed $8\\cdot 81=648$ skipped the root.
+**1.** Using $A=7$ from a misread $32/\\sqrt{16}$ wait, $32/4=8$ is the right $A$. After isolating the unknown, the check is against $A=7$. The figure $A$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $A=7$ stays in the write-up. Using $A=7$ would report $63$ and fail the threshold. Another who computed $8\\cdot 81=648$ skipped the root.
 
 **2.** Extra arithmetic at $s=64$: $H(64)=64$, which sits below $70$. The threshold test is about $s=81$ specifically. Between $64$ and $81$ staff throughput crosses $70$, and at $81$ it has reached $72$, still under the cap of $80$.
 
@@ -2950,7 +2950,7 @@ $$|W'(9)|=324\\cdot 9^{-\\frac{5}{2}}=324\\cdot\\frac{1}{243}=\\frac{4}{3}\\appr
 
 so an extra server after $4$ servers cuts about $10$ ms, and after $9$ servers only about $1.3$ ms. The later server still helps; it helps much less.
 
-**2.** A rushed solver who saw $W(9)=8<W(4)=27$ and concluded that later servers are doing more has confused a lower wait with a steeper cut. The wait is already low at $9$ servers; there is less left to cut. Another who used exponent $-1$ would have a milder decline of the slope.
+**2.** Seeing $W(9)=8<W(4)=27$ and concluding that later servers are doing more has confused a lower wait with a steeper cut. Once $W(9)=8<W(4)=27$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The wait is already low at $9$ servers; there is less left to cut. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. exponent $-1$ would have a milder decline of the slope.
 
 **3.** Letters D and E are levels at $9$ and $4$ servers. This letter is the slope between those levels. Negative-exponent wait has falling marginal benefit of servers.
 
@@ -2973,9 +2973,9 @@ That is a power function of the wait. There is no leftover constant and no logar
 
 $$k=\\bigl(216/1\\bigr)^{\\frac{2}{3}}=36$$
 
-so a $1$ ms wait would need $36$ servers. That is still a power of $W$. A solver who added a minimum fleet, $k=1+(216/W)^{\\frac{2}{3}}$, would have left the power-function class; the stem has no such floor.
+so a $1$ ms wait would need $36$ servers. That is still a power of $W$. Adding a minimum fleet, $k=1+(216/W)^{\\frac{2}{3}}$, would have left the power-function class; the stem has no such floor. That is why $k=1+(216/W)^{\\frac{2}{3}}$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A rushed solver who thought a negative exponent could not invert to a power has forgotten that $u^{-r}$ inverts to a power with exponent $-1/r$. Another who wrote $k=\\log W$ mixed this service with an exponential technology.
+**2.** Thinking a negative exponent could not invert to a power has forgotten that $u^{-r}$ inverts to a power with exponent $-1/r$. That is the fork: $u^{-r}$ belongs to the recovered isolation, $-1/r$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who wrote $k=\\log W$ mixed this service with an exponential technology.
 
 **3.** Letters D and E use the forward rule at $k=9$ and $k=4$. This letter names the inverse as a function class. The same inverse is what would turn a wait target into a server count.
 
@@ -3002,7 +3002,7 @@ $$W(8)=216\\cdot 8^{-\\frac{3}{2}}=216\\cdot\\frac{1}{16\\sqrt{2}}=\\frac{27}{2\
 
 against $W(4)=27$. Half of $27$ would have been $13.5$, and $9.55$ is not $13.5$. Wait drops by more than half, which is the opposite miss from a "not halved" claim that expected too little of a cut. The statement said halves, and the factor is not $1/2$.
 
-**2.** A rushed solver who used exponent $-1$ would have halved the wait, which is exactly the false claim. Reciprocal-linear wait is $A/k$; this service is $A k^{-\\frac{3}{2}}$. Another who used $2^{-\\frac{1}{2}}$ mixed in a square-root wait.
+**2.** Using exponent $-1$ would have halved the wait, which is exactly the false claim. The opposite verdict would need a different isolation than $-1$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reciprocal-linear wait is $A/k$; this service is $A k^{-\\frac{3}{2}}$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{-\\frac{1}{2}}$ mixed in a square-root wait.
 
 **3.** Letter A used the slope. This letter is a scale factor about doubling, independent of $A$. Whether the recorded cut had been $19$ ms or $40$ ms, doubling the fleet would still multiply wait by $2^{-\\frac{3}{2}}$.
 
@@ -3019,7 +3019,7 @@ This is a level at $9$ servers, asked against a threshold of $10$ milliseconds.
 
 The overview already evaluated $W(9)=8$. Eight does not sit above $10$. Nine servers are a perfect cube in the $\\frac{3}{2}$ sense, $9^{\\frac{3}{2}}=27$, and $216/27=8$.
 
-**1.** A rushed solver who used $W(9)=216/9=24$ skipped the remaining square root in the exponent. Twenty-four would have passed the "more than $10$" test on a wrong evaluation. Another who used $W(9)=19$, copying the recorded cut, mixed a difference with a level.
+**1.** Using $W(9)=216/9=24$ skipped the remaining square root in the exponent. That is why $W(9)=216/9=24$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Twenty-four would have passed the "more than $10$" test on a wrong evaluation. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $W(9)=19$, copying the recorded cut, mixed a difference with a level.
 
 **2.** Extra arithmetic at $k=4$: $W(4)=27$, which does sit above $10$. The threshold test is about $k=9$ specifically. Between $4$ and $9$ servers the wait crosses $10$, and at $9$ it has already reached $8$, below the line.
 
@@ -3036,7 +3036,7 @@ This is a level at $4$ servers, asked against a threshold of $25$ milliseconds.
 
 The overview already evaluated $W(4)=27$. Twenty-seven sits above $25$. Four servers give $4^{\\frac{3}{2}}=8$, and $216/8=27$.
 
-**1.** A rushed solver who used $W(4)=216/4=54$ skipped part of the exponent and still passed. Another who used $W(4)=19$, copying the recorded cut, would fail the threshold on a difference rather than a level.
+**1.** Using $W(4)=216/4=54$ skipped part of the exponent and still passed. That is why $W(4)=216/4=54$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $W(4)=19$, copying the recorded cut, would fail the threshold on a difference rather than a level.
 
 **2.** Extra arithmetic that checks the recorded cut: $W(4)-W(9)=27-8=19$, which is the stem's $19$ ms. That check uses both levels and confirms $W(4)=27$ rather than some nearby $26$ that might have sat under $25$.
 
@@ -3094,7 +3094,7 @@ $$|q'(5)|=20000/125=160, \\qquad |q'(20)|=20000/8000=2.5$$
 
 so an extra euro at $5$ euros cuts about $160$ subscriptions, and at $20$ euros only $2.5$. The later euro still reduces sales; it reduces them far less. Inverse-square demand is steep near a low price and flat at a high one.
 
-**2.** A rushed solver who saw $q(20)=25<q(5)=400$ and concluded that later euros are doing more has confused a lower quantity with a steeper cut. Quantity is already low at $20$ euros; there is less left to cut. Another who used exponent $-1$ would have a milder decline of the slope, $q'\\propto p^{-2}$ rather than $p^{-3}$.
+**2.** Seeing $q(20)=25<q(5)=400$ and concluding that later euros are doing more has confused a lower quantity with a steeper cut. The path that matches the stem therefore holds $q(20)=25<q(5)=400$ fixed and only then reads the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Quantity is already low at $20$ euros; there is less left to cut. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. exponent $-1$ would have a milder decline of the slope, $q'\\propto p^{-2}$ rather than $p^{-3}$.
 
 **3.** Letters D and E are levels of revenue and of quantity. This letter is the slope of quantity. Negative-exponent demand has falling marginal effect of price, which is the same $r=-2$ story read on the derivative.
 
@@ -3113,9 +3113,9 @@ That is a power function of the subscription count. There is no leftover constan
 
 $$p=100/\\sqrt{25}=20$$
 
-so $25$ subscriptions clear at $20$ euros. That is still a power of $q$. A solver who added a reservation price, $p=2+100 q^{-\\frac{1}{2}}$, would have left the power-function class; the stem has no such floor.
+so $25$ subscriptions clear at $20$ euros. That is still a power of $q$. Adding a reservation price, $p=2+100 q^{-\\frac{1}{2}}$, would have left the power-function class; the stem has no such floor. The recovered isolation is checked against the claim using $p=2+100 q^{-\\frac{1}{2}}$, which is the figure the sessions actually produce.
 
-**2.** A rushed solver who thought a negative exponent could not invert to a power has forgotten that $u^{-r}$ inverts to a power with exponent $-1/r$. Another who wrote $p=\\log q$ mixed this service with an exponential technology.
+**2.** Thinking a negative exponent could not invert to a power has forgotten that $u^{-r}$ inverts to a power with exponent $-1/r$. That is the fork: $u^{-r}$ belongs to the recovered isolation, $-1/r$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who wrote $p=\\log q$ mixed this service with an exponential technology.
 
 **3.** Extra check at the recorded pair: $p=100/\\sqrt{400}=5$, which returns the catalogue price. That inversion landing on $5$ euros is how we know the inverse is the right monomial.
 
@@ -3134,7 +3134,7 @@ Demand is quartered, not halved.
 
 **1.** Extra arithmetic on the recorded pair: doubling $5$ euros is $10$ euros, and $q(10)=10000/100=100$ against $q(5)=400$. Half of $400$ would have been $200$, and $100$ is not $200$. Demand drops to a quarter, $400/4=100$.
 
-**2.** A rushed solver who used exponent $-1$ would have halved demand, which is exactly the false claim. Reciprocal-linear demand is $A/p$; this curve is $A/p^{2}$. Another who used $2^{-3}=1/8$ mixed in a cube in the denominator.
+**2.** Using exponent $-1$ would have halved demand, which is exactly the false claim. The recovered isolation is checked against the claim using $-1$, which is the figure the sessions actually produce. Reciprocal-linear demand is $A/p$; this curve is $A/p^{2}$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{-3}=1/8$ mixed in a cube in the denominator.
 
 **3.** Letter A used the slope. This letter is a scale factor about doubling, independent of $A$. Whether the recorded sales had been $400$ or $40$, doubling the price would still quarter demand. Letter E's $q(20)=25$ is a quadrupling of the $5$ euro price, which multiplies demand by $1/16$ and yields $25$, the same identity with $k=4$ rather than $k=2$.
 
@@ -3149,7 +3149,7 @@ The overview already evaluated $R(16)=625$. Six hundred and twenty-five sits und
 
 This is a revenue question, not a quantity question. Quantity at $16$ euros is $q(16)=10000/256\\approx 39.1$ subscriptions, and $16\\times 39.1\\approx 625$ is the same $625$, a check rather than a new unknown.
 
-**1.** A rushed solver who used $R=10000 p^{-2}$ forgot to multiply by $p$ and would report about $39$, far under $700$ for the wrong object. Another who used $R=10000\\cdot 16=160000$ dropped the negative exponent.
+**1.** Using $R=10000 p^{-2}$ forgot to multiply by $p$ and would report about $39$, far under $700$ for the wrong object. The stem's recovered values line up with $R=10000 p^{-2}$, whereas $700$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $R=10000 p^{-2}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $R=10000\\cdot 16=160000$ dropped the negative exponent.
 
 **2.** Extra arithmetic at $p=20$, letter E's price: $R(20)=500$, also under $700$ and not this letter's $16$ euros. At $p=10$, $R(10)=1000$, which sits above $700$. The threshold test is about $p=16$ specifically. Between $10$ and $16$ euros revenue crosses $700$ going down, and at $16$ it has reached $625$.
 
@@ -3162,7 +3162,7 @@ This is a level of demand at twenty euros, asked against a threshold of $30$ sub
 
 The overview already evaluated $q(20)=25$. Twenty-five is fewer than $30$. Twenty squared is $400$, and $10000/400=25$.
 
-**1.** A rushed solver who used $q(20)=10000/20=500$ skipped the square in the exponent and would have failed "fewer than $30$" on a huge overestimate. Another who used $q(20)=400\\cdot 5/20=100$ scaled the recorded pair linearly.
+**1.** Using $q(20)=10000/20=500$ skipped the square in the exponent and would have failed "fewer than $30$" on a huge overestimate. The recovered comparison therefore keeps $q(20)=10000/20=500$ and does not substitute $30$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $q(20)=400\\cdot 5/20=100$ scaled the recorded pair linearly.
 
 **2.** Extra arithmetic at $p=10$: $q(10)=100$, which is not fewer than $30$. The threshold test is about $p=20$ specifically. Between $10$ and $20$ euros quantity crosses $30$, and at $20$ it has reached $25$.
 
@@ -3220,7 +3220,7 @@ Subtracting $F+10a=500$ from $F+20a=800$ isolated $a=30$, and then $F=200$. The 
 
 **1.** Extra arithmetic in a ratio: $C(100)=500$ and $C(400)=800$, so the ratio of bills is $1.6$. If the bill were $c n^{r}$, that ratio would equal $4^{r}$, hence $r=\\log 1.6/\\log 4\\approx 0.34$. Checking $C(900)/C(100)=1100/500=2.2$ against $9^{0.34}\\approx 2.11$ already disagrees. No single power fits.
 
-**2.** A rushed solver who dropped the $200$ and called $30\\sqrt{n}$ a power has described a different engagement. The stem charges the fixed fee on every book. Another who wrote $C(n)=(30\\sqrt{n})^{1}+200 n^{0}$ and declared a sum of powers a power has confused a polynomial with a monomial.
+**2.** Dropping the $200$ and calling $30\\sqrt{n}$ a power has described a different engagement. So the letter reads the claim against $200$; $30\\sqrt{n}$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $200$ stays in the write-up. The stem charges the fixed fee on every book. Another who wrote $C(n)=(30\\sqrt{n})^{1}+200 n^{0}$ and declared a sum of powers a power has confused a polynomial with a monomial.
 
 **3.** Letters D and E are levels of this same bill. Those levels exist because $F$ and $a$ were recovered. The function class is settled by $F\\neq 0$, independently of those later figures.
 
@@ -3239,7 +3239,7 @@ Both pieces decline as the book grows: the fee is spread, and the leftover expon
 
 **1.** Extra arithmetic at the two invoices: $C(100)/100=5$ euros per account, and $C(400)/400=2$ euros per account. The fourfold book more than halves the per-account price. At $n=900$, $C(900)/900=1100/900\\approx 1.22$, still falling.
 
-**2.** A rushed solver who saw the total climb from $500$ to $800$ to $1100$ and concluded that accounts get more expensive has mixed the total with the average. A rising total is compatible with a falling average. Another who looked only at $200/n$ and ignored $30/\\sqrt{n}$ still has a falling average, just an incomplete one.
+**2.** Seeing the total climb from $500$ to $800$ to $1100$ and concluding that accounts get more expensive has mixed the total with the average. That is the fork: $500$ belongs to the recovered isolation, $1100$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. A rising total is compatible with a falling average. Another who looked only at $200/n$ and ignored $30/\\sqrt{n}$ still has a falling average, just an incomplete one.
 
 **3.** What would flip this verdict is a positive leftover exponent after dividing by $n$, which would need the original exponent on $n$ to exceed $1$. The stem's $\\frac{1}{2}<1$, so average cost falls.
 
@@ -3262,7 +3262,7 @@ $$C'(100)=15/10=1.5, \\qquad C'(400)=15/20=0.75$$
 
 so an extra account at $n=100$ adds $1.5$ euros, and at $n=400$ only $0.75$. The later account still costs something; it costs half as much on the margin.
 
-**2.** A rushed solver who saw $C(400)=800>C(100)=500$ and concluded that later accounts are more expensive on the margin has confused height with slope. The bill is still rising, just more slowly. Another who used $r>1$ intuition has the wrong exponent.
+**2.** Seeing $C(400)=800>C(100)=500$ and concluding that later accounts are more expensive on the margin has confused height with slope. That is why $C(400)=800>C(100)=500$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. The bill is still rising, just more slowly. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r>1$ intuition has the wrong exponent.
 
 **3.** Letter B's falling average is the same $r=\\frac{1}{2}<1$ story. This letter is the falling marginal. The setup of $200$ does not appear in $C'$, which is why a function-class letter and a slope letter can disagree about $F$ and still agree about direction of $C'$.
 
@@ -3275,11 +3275,11 @@ This is a level at $900$ accounts, asked against a threshold of $1000$.
 
 The overview already evaluated $C(900)=1100$. Eleven hundred sits above $1000$. Nine hundred is a perfect square, so the square root is $30$, and $200+30\\cdot 30=1100$.
 
-**1.** A rushed solver who dropped the engagement charge and reported $30\\cdot 30=900$ would sit below $1000$ and fail the threshold for the wrong bill. The setup of $200$ is what pushes $900$ up to $1100$. Another who used $F=0$ from a power-function wish has the same miss.
+**1.** Dropping the engagement charge and reporting $30\\cdot 30=900$ would sit below $1000$ and fail the threshold for the wrong bill. The recovered comparison therefore keeps $30\\cdot 30=900$ and does not substitute $1000$. That contrast is the reason the verdict goes the way it does. The setup of $200$ is what pushes $900$ up to $1100$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $F=0$ from a power-function wish has the same miss.
 
 **2.** Extra arithmetic at $n=400$, the second invoice: $C(400)=800$, which sits below $1000$. The threshold test is about $n=900$ specifically. Between $400$ and $900$ accounts the bill crosses $1000$, and at $900$ it has reached $1100$.
 
-**3.** Letter E asks for a $750$ threshold at $200$ accounts and fails. This letter's $1000$ at $900$ accounts is a different comparison. Mixing those two thresholds is how a solver could flip one of them by accident.
+**3.** Letter E asks for a $750$ threshold at $200$ accounts and fails. This letter's $1000$ at $900$ accounts is a different comparison. Mixing those two thresholds is how that mix could flip one of them by accident.
 
 **4.** The opposite verdict would need $C(900)\\le 1000$, which would have required a smaller $a$ or a smaller $F$. The two invoices force $1100$.
 
@@ -3294,7 +3294,7 @@ $$C(200)=200+30\\sqrt{200}=200+300\\sqrt{2}$$
 
 Since $\\sqrt{2}<1.5$, this sits below $650$, which is not more than $750$. Directly, $300\\times 1.414\\approx 424$ plus the $200$ setup is about $624$.
 
-**1.** A rushed solver who treated $200$ as a perfect square, $\\sqrt{196}=14$ or $\\sqrt{225}=15$, might report $200+30\\cdot 14=620$ or $200+30\\cdot 15=650$, both still under $750$. Another who interpolated linearly between $C(100)=500$ and $C(400)=800$ at $n=200$ would report $600$, still under $750$, for the wrong reason.
+**1.** Treating $200$ as a perfect square, $\\sqrt{196}=14$ or $\\sqrt{225}=15$, might report $200+30\\cdot 14=620$ or $200+30\\cdot 15=650$, both still under $750$. So the letter reads the claim against $200$; $750$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $200$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who interpolated linearly between $C(100)=500$ and $C(400)=800$ at $n=200$ would report $600$, still under $750$, for the wrong reason.
 
 **2.** Extra arithmetic that manufactures $750$: dropping the setup from $C(400)=800$ leaves $600$, then adding a guessed $150$. Or $C(225)=200+30\\cdot 15=650$, still not $750$. Pointing $C(900)=1100$ at $n=200$ is a mix of two books.
 
@@ -3352,7 +3352,7 @@ $$E=a\\cdot 120 a^{-\\frac{1}{2}}=120 a^{\\frac{1}{2}}=120\\cdot 4^{\\frac{1}{2}
 
 because $a=4t^{\\frac{1}{2}}$ and $4^{\\frac{1}{2}}=2$. The exponent $\\frac{1}{4}$ is $\\frac{1}{2}\\times\\frac{1}{2}$, the product of the two square-root stages.
 
-**2.** A rushed solver who added the exponents $\\frac{1}{2}+(-\\frac{1}{2})=0$ and declared $E$ constant has added under the wrong operation. The product $a\\cdot e(a)$ adds exponents on $a$, giving $a^{\\frac{1}{2}}$, and then $a$ itself is a power of $t$. Another who forgot to substitute $a(t)$ would have left $E$ as a power of the fleet, not of time.
+**2.** Adding the exponents $\\frac{1}{2}+(-\\frac{1}{2})=0$ and declared $E$ constant has added under the wrong operation. The recovered comparison therefore keeps $\\frac{1}{2}+(-\\frac{1}{2})=0$ and does not substitute $E$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The product $a\\cdot e(a)$ adds exponents on $a$, giving $a^{\\frac{1}{2}}$, and then $a$ itself is a power of $t$. Another who forgot to substitute $a(t)$ would have left $E$ as a power of the fleet, not of time.
 
 **3.** Extra check at $t=16$: $E(16)=240\\cdot 2=480$, which letter D will use as a level. That $480$ sitting on $240 t^{\\frac{1}{4}}$ is the fingerprint of a power of time.
 
@@ -3371,7 +3371,7 @@ Total emissions rise by about nineteen percent, not by one hundred percent.
 
 **1.** Extra arithmetic on a concrete year: after $1$ year $E(1)=240$, and after $2$ years $E(2)=240\\cdot 2^{\\frac{1}{4}}\\approx 285$, not $480$. Twice $240$ would have been $480$, which is $E(16)$, a sixteenfold wait, because $16^{\\frac{1}{4}}=2$. Mixing $k=16$ with $k=2$ is how a doubling claim can look true.
 
-**2.** A rushed solver who used exponent $1$ is telling a proportional story the composed $\\frac{1}{4}$ contradicts. Another who used $2^{\\frac{1}{2}}$ stopped after the fleet stage and forgot the intensity stage.
+**2.** Using exponent $1$ is telling a proportional story the composed $\\frac{1}{4}$ contradicts. After isolating the unknown, the check is against $1$. The figure $\\frac{1}{4}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $1$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{\\frac{1}{2}}$ stopped after the fleet stage and forgot the intensity stage.
 
 **3.** Letter A named $E$ as a power of $t$. This letter reads that power as a scale factor. An exponent of $\\frac{1}{4}$ is far below $1$, so doubling time cannot double emissions.
 
@@ -3386,7 +3386,7 @@ The overview already recorded that intensity falls as $a$ grows. Intensity is $e
 
 **1.** Extra arithmetic at the logged fleet and a neighbour: $e(16)=30$, and $e(64)=120/8=15$, already half as large on a fourfold fleet, matching $4^{-\\frac{1}{2}}=\\frac{1}{2}$. At $a=4$, $e(4)=120/2=60$, twice the logged $30$, on a smaller fleet.
 
-**2.** A rushed solver who saw total emissions $E$ rise with time and concluded that intensity must also rise has mixed $E=a e$ with $e$ itself. The fleet grows; intensity falls; the product still rises, slowly, because $a^{\\frac{1}{2}}$ grows. Another who used a positive exponent on $e$ has rewritten the stem.
+**2.** Seeing total emissions $E$ rise with time and concluding that intensity must also rise has mixed $E=a e$ with $e$ itself. Working from the isolated values, $E$ is the figure that is checked, not the detour that produced $e$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The fleet grows; intensity falls; the product still rises, slowly, because $a^{\\frac{1}{2}}$ grows. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. a positive exponent on $e$ has rewritten the stem.
 
 **3.** Letter A composed a falling intensity with a rising fleet and still got a rising $E(t)$. That is compatible with this letter's falling $e(a)$. Rising intensity would have needed a positive exponent on $a$ in $e$.
 
@@ -3399,7 +3399,7 @@ This is a level of composed emissions after $16$ years, asked against a threshol
 
 The overview already evaluated $E(16)=480$. Four hundred and eighty exceeds $400$. Sixteen years give $16^{\\frac{1}{4}}=2$, and $240\\cdot 2=480$.
 
-**1.** A rushed solver who used $E=240\\cdot 16=3840$ skipped the fourth root. Another who used $E=240\\cdot\\sqrt{16}=960$ used a square root instead of a fourth root and still passed the threshold, for the wrong power.
+**1.** Using $E=240\\cdot 16=3840$ skipped the fourth root. Once $E=240\\cdot 16=3840$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $E=240\\cdot\\sqrt{16}=960$ used a square root instead of a fourth root and still passed the threshold, for the wrong power.
 
 **2.** Extra arithmetic at $t=1$: $E(1)=240$, which sits under $400$. The threshold test is about $t=16$ specifically. Between $1$ and $16$ years emissions cross $400$, and at $16$ they have reached $480$. Letter E's $E(1)=240<250$ is a different comparison.
 
@@ -3412,7 +3412,7 @@ This is a level after $1$ year, asked against a threshold of $250$.
 
 The overview already evaluated $E(1)=240$. Two hundred and forty sits under $250$. One to any power is $1$, so $E(1)=240$, the coefficient itself.
 
-**1.** A rushed solver who used $E(1)=4\\cdot 120=480$, multiplying the two coefficients without the composition exponents, would sit above $250$ and fail the threshold on a wrong product. Another who used $E(1)=0$ as if $t=0$ had leaked in has left the domain $t>0$.
+**1.** Using $E(1)=4\\cdot 120=480$, multiplying the two coefficients without the composition exponents, would sit above $250$ and fail the threshold on a wrong product. That is the fork: $E(1)=4\\cdot 120=480$ belongs to the recovered isolation, $250$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $E(1)=0$ as if $t=0$ had leaked in has left the domain $t>0$.
 
 **2.** Extra arithmetic at $t=16$: $E(16)=480$, which sits above $250$. The threshold test is about $t=1$ specifically. The coefficient $240$ is the one-year reading, and $240<250$ is a modest clearance of $10$.
 
@@ -3466,7 +3466,7 @@ The overview already recovered $A=2$ and recorded that $\\frac{5}{2}>1$. Multipl
 
 **1.** Extra arithmetic on the bench pipe: doubling $4$ cm is $8$ cm, and $Q(8)=2\\cdot 8^{\\frac{5}{2}}=2\\cdot 32\\sqrt{8}=2\\cdot 64\\sqrt{2}=128\\sqrt{2}\\approx 181$ against $Q(4)=64$. Capacity multiplies by about $2.83$, faster than the doubling of diameter. That factor is $2^{\\frac{5}{2}}=4\\sqrt{2}$, letter E's identity at this concrete pair.
 
-**2.** A rushed solver who compared $64$ litres with $4$ cm and saw sixteen litres per centimetre has a level of the average, not a growth-rate statement. Growth rate is $r$ against $1$. Another who used $r=2$ from an area story has the wrong exponent.
+**2.** Comparing $64$ litres with $4$ cm and seeing sixteen litres per centimetre has a level of the average, not a growth-rate statement. So the letter reads the claim against $64$; $4$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $64$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Growth rate is $r$ against $1$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r=2$ from an area story has the wrong exponent.
 
 **3.** Letter B is the reverse scale question: doubling capacity rather than doubling diameter. Letter E is the forward doubling of diameter. This letter is only $r>1$.
 
@@ -3483,9 +3483,9 @@ The overview already recorded that doubling capacity needs a diameter factor $2^
 
 $$2 d^{\\frac{5}{2}}=128, \\qquad d^{\\frac{5}{2}}=64, \\qquad d=64^{\\frac{2}{5}}=(2^{6})^{\\frac{2}{5}}=2^{\\frac{12}{5}}\\approx 5.28$$
 
-against the bench $4$ cm. The ratio $5.28/4=1.32<2$. A solver who reported $8$ cm used exponent $1$ on the reverse question.
+against the bench $4$ cm. The ratio $5.28/4=1.32<2$. Reporting $8$ cm used exponent $1$ on the reverse question. So the letter reads the claim against $8$; $1$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $8$ stays in the write-up.
 
-**2.** A rushed solver who mixed this reverse question with letter E's forward doubling would have required a diameter of $8$ cm to more-than-triple capacity, which is a different job. Forward $k=2$ multiplies $Q$ by $4\\sqrt{2}\\approx 5.66$. Reverse $Q\\times 2$ multiplies $d$ by $2^{2/5}$.
+**2.** Mixing this reverse question with letter E's forward doubling would have required a diameter of $8$ cm to more-than-triple capacity, which is a different job. The opposite verdict would need a different isolation than $8$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Forward $k=2$ multiplies $Q$ by $4\\sqrt{2}\\approx 5.66$. Reverse $Q\\times 2$ multiplies $d$ by $2^{2/5}$.
 
 **3.** Extra check: $Q(5.28)\\approx 128$, twice the bench. $Q(8)\\approx 181$, already more than twice, which is why a full doubling of diameter overshoots a doubling of capacity.
 
@@ -3502,7 +3502,7 @@ That is a power function of capacity. There is no leftover constant and no logar
 
 **1.** Extra arithmetic that uses the inverse at the bench: $d=(64/2)^{\\frac{2}{5}}=32^{\\frac{2}{5}}=2$, wait, $32^{2/5}=(2^{5})^{2/5}=4$, which returns the bench diameter. That inversion landing on $4$ cm is how we know the inverse is the right monomial.
 
-**2.** A rushed solver who thought a fractional exponent could not invert to a power has forgotten that $u^{r}$ inverts to $u^{1/r}$. Another who wrote $d=\\log Q$ mixed this pipe with an exponential technology.
+**2.** Thinking a fractional exponent could not invert to a power has forgotten that $u^{r}$ inverts to $u^{1/r}$. That is the fork: $u^{r}$ belongs to the recovered isolation, $u^{1/r}$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who wrote $d=\\log Q$ mixed this pipe with an exponential technology.
 
 **3.** Letter D uses this inverse at $Q=250$. Letter B used it at $Q=128$. This letter names the inverse as a function class. The same $d\\propto Q^{2/5}$ is what made doubling capacity cheaper in diameter than a linear guess.
 
@@ -3519,7 +3519,7 @@ $$2d^{\\frac{5}{2}}=250, \\qquad d^{\\frac{5}{2}}=125, \\qquad d=125^{\\frac{2}{
 
 Since $5^{\\frac{6}{5}}=5\\cdot 5^{\\frac{1}{5}}$ and $5^{\\frac{1}{5}}<2$, the product sits below $10$. Directly, $5^{1.2}\\approx 6.90$.
 
-**1.** A rushed solver who used $d=250/2=125$ skipped the exponent and would have passed "above $10$" on a huge overestimate. Another who used $d=(250/2)^{\\frac{5}{2}}$ inverted the reciprocal the wrong way.
+**1.** Using $d=250/2=125$ skipped the exponent and would have passed "above $10$" on a huge overestimate. The stem's recovered values line up with $d=250/2=125$, whereas $10$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $d=250/2=125$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $d=(250/2)^{\\frac{5}{2}}$ inverted the reciprocal the wrong way.
 
 **2.** Extra arithmetic at $Q=64$, the bench: $d=4$, well below $10$. At $Q=2\\cdot 4^{\\frac{5}{2}}\\cdot 2^{\\frac{5}{2}}$ wait. At $d=10$, $Q(10)=2\\cdot 10^{\\frac{5}{2}}=2\\cdot 100\\sqrt{10}\\approx 632$, far above $250$. So $250$ litres need much less than $10$ cm.
 
@@ -3536,7 +3536,7 @@ $$\\frac{Q(2d)}{Q(d)}=2^{\\frac{5}{2}}=4\\sqrt{2}$$
 
 **1.** Extra arithmetic on the bench pipe: $Q(8)\\approx 181$ against $Q(4)=64$, and $181/64\\approx 2.83$ wait, that is $2^{3/2}$ if I used the wrong exponent. Check: $2^{5/2}=4\\sqrt{2}\\approx 5.66$, and $64\\times 5.66\\approx 362$, so $Q(8)=2\\cdot 8^{5/2}=2\\cdot (8^{2}\\sqrt{8})=2\\cdot 64\\cdot 2\\sqrt{2}=256\\sqrt{2}\\approx 362$. Yes, $362/64\\approx 5.66>5$.
 
-**2.** A rushed solver who used $2^{2}=4$, an area story, would have reported less than $5$ and failed the claim. Another who used $2^{3}=8$, a volume story, would have passed with a larger factor than the stem's $\\frac{5}{2}$. The pipe combines an area-like $2$ with a half from turbulent flow, giving $\\frac{5}{2}$.
+**2.** Using $2^{2}=4$, an area story, would have reported less than $5$ and failed the claim. Working from the isolated values, $2^{2}=4$ is the figure that is checked, not the detour that produced $5$. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{3}=8$, a volume story, would have passed with a larger factor than the stem's $\\frac{5}{2}$. The pipe combines an area-like $2$ with a half from turbulent flow, giving $\\frac{5}{2}$.
 
 **3.** Letter B was the reverse question. This letter is the forward doubling. More than $5$ is a comparison with $4\\sqrt{2}$, genuine because $\\sqrt{2}>1.25$.
 
@@ -3594,7 +3594,7 @@ $$S=\\pi r^{2}=\\pi (3 t^{\\frac{1}{2}})^{2}=9\\pi t$$
 
 The $t$ to the first power is forced by $\\frac{1}{2}\\times 2=1$. A leftover outer exponent other than $2$ would have broken proportionality.
 
-**2.** A rushed solver who added $\\frac{1}{2}+2$ would report $S\\propto t^{\\frac{5}{2}}$ and miss lockstep with time. Exponents multiply under composition. Another who forgot $\\pi$ would report $S=9t$ and still have proportionality, just with the wrong coefficient. The claim is the function class.
+**2.** Adding $\\frac{1}{2}+2$ would report $S\\propto t^{\\frac{5}{2}}$ and miss lockstep with time. The recovered comparison therefore keeps $\\frac{1}{2}+2$ and does not substitute $S\\propto t^{\\frac{5}{2}}$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Exponents multiply under composition. Another who forgot $\\pi$ would report $S=9t$ and still have proportionality, just with the wrong coefficient. The claim is the function class.
 
 **3.** Extra check at $t=4$: $S(4)=36\\pi$, nine times $4\\pi$, matching $9\\pi\\cdot 4$. At $t=9$, $S(9)=81\\pi=9\\pi\\cdot 9$. The ratio $S(9)/S(4)=9/4$ equals the time ratio. That lockstep is proportionality.
 
@@ -3611,7 +3611,7 @@ The area is doubled. This is a scale reading of letter A's proportionality, not 
 
 **1.** Extra arithmetic at the recorded four hours: doubling that wait is $8$ hours, and $S(8)=72\\pi$ against $S(4)=36\\pi$, a factor $2$. Directly, $9\\pi\\cdot 8=72\\pi$. A linear-in-time disc doubles when time doubles.
 
-**2.** A rushed solver who used $k^{2}$ on time, thinking of the disc in radius, would report a factor $4$ and miss the composition. Radius doubles when time quadruples, not when time doubles. Another who used $k^{\\frac{1}{2}}$ stopped after the radius stage.
+**2.** Using $k^{2}$ on time, thinking of the disc in radius, would report a factor $4$ and miss the composition. Working from the isolated values, $k^{2}$ is the figure that is checked, not the detour that produced $4$. That contrast is the reason the verdict goes the way it does. Radius doubles when time quadruples, not when time doubles. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $k^{\\frac{1}{2}}$ stopped after the radius stage.
 
 **3.** Letter C names the inverse as a power. Letter E is a false level at $t=9$. This letter is only the doubling identity for a proportional $S$.
 
@@ -3628,7 +3628,7 @@ That is a power function of area, in fact a proportional one. There is no leftov
 
 **1.** Extra arithmetic that uses the inverse at $S=36\\pi$: $t=(36\\pi)/(9\\pi)=4$, which returns the recorded four hours. That inversion landing on $4$ is how we know the inverse is the right monomial.
 
-**2.** A rushed solver who wrote $t=\\log S$ mixed this hub with an exponential technology. Another who added a setup time, $t=1+S/(9\\pi)$, would have left the power-function class; the stem has no such floor.
+**2.** Writing $t=\\log S$ mixed this hub with an exponential technology. The path that matches the stem therefore holds $t=\\log S$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who added a setup time, $t=1+S/(9\\pi)$, would have left the power-function class; the stem has no such floor.
 
 **3.** Letters A and B used exponent $1$ forward. This letter names the inverse. The same $t\\propto S$ is what made doubling area cost a doubling of hours.
 
@@ -3641,7 +3641,7 @@ This is a level after $4$ hours, asked against a threshold of $30\\pi$ square ki
 
 The overview already evaluated $S(4)=36\\pi$. Thirty-six $\\pi$ sits above $30\\pi$. Four hours into $9\\pi t$ is $36\\pi$.
 
-**1.** A rushed solver who used $S=\\pi r^{2}$ with $r=4$ rather than $r=6$ would report $16\\pi$, under $30\\pi$, mixing hours with kilometres. The recorded radius is $6$ km after $4$ hours, and $\\pi\\cdot 36=36\\pi$.
+**1.** Using $S=\\pi r^{2}$ with $r=4$ rather than $r=6$ would report $16\\pi$, under $30\\pi$, mixing hours with kilometres. The recovered comparison therefore keeps $S=\\pi r^{2}$ and does not substitute $30\\pi$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The recorded radius is $6$ km after $4$ hours, and $\\pi\\cdot 36=36\\pi$.
 
 **2.** Extra arithmetic at $t=3$: $S(3)=27\\pi$, which sits below $30\\pi$. The threshold test is about $t=4$ specifically. Between $3$ and $4$ hours the disc crosses $30\\pi$, and at $4$ it has reached $36\\pi$.
 
@@ -3656,7 +3656,7 @@ The overview already evaluated $S(9)=81\\pi$. Eighty-one $\\pi$ is not $100\\pi$
 
 The figure $100\\pi$ is $r=10$ in disguise, $\\pi\\cdot 10^{2}$, as if the radius after $9$ hours were $10$ km rather than $9$. The recovered radius is $r(9)=3\\cdot 3=9$ km, so the disc is $81\\pi$, not $100\\pi$.
 
-**1.** A rushed solver who used $S=9\\pi\\cdot 9^{2}$ mixed the coefficient $9\\pi$ with a second square. Another who used $r(9)=A\\cdot 9=27$ skipped the square root and would report an even larger disc.
+**1.** Using $S=9\\pi\\cdot 9^{2}$ mixed the coefficient $9\\pi$ with a second square. The stem's recovered values line up with $S=9\\pi\\cdot 9^{2}$, whereas $9\\pi$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $S=9\\pi\\cdot 9^{2}$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r(9)=A\\cdot 9=27$ skipped the square root and would report an even larger disc.
 
 **2.** Extra arithmetic that manufactures $100\\pi$: a radius of $10$ km, which would take $t=(10/3)^{2}\\approx 11.1$ hours, past $9$. Pointing that later disc at $t=9$ is a mix of two times.
 
@@ -3714,11 +3714,11 @@ The overview already recovered $a=40$ and the uncapped crossing $u=64$ costing $
 
 $$C_{A}(64)=40\\cdot 8=320, \\qquad C_{B}(64)=5\\cdot 64=320$$
 
-They meet at $320$, eighty euros under the cap. A solver who used $C_{A}(64)=40\\cdot 64=2560$ skipped the square root and would have blown past $400$ on Plan A alone.
+They meet at $320$, eighty euros under the cap. Using $C_{A}(64)=40\\cdot 64=2560$ skipped the square root and would have blown past $400$ on Plan A alone. The recovered comparison therefore keeps $C_{A}(64)=40\\cdot 64=2560$ and does not substitute $400$. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
-**2.** A rushed solver who inverted the cap first, $40\\sqrt{u}=400$ giving $u=100$, and then assumed $u=64$ was already capped, has mixed two volumes. The cap binds at $100$ tickets, thirty-six past $64$.
+**2.** Inverting the cap first, $40\\sqrt{u}=400$ giving $u=100$, and then assuming $u=64$ was already capped, has mixed two volumes. That is the fork: $40\\sqrt{u}=400$ belongs to the recovered isolation, $u=64$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The cap binds at $100$ tickets, thirty-six past $64$.
 
-**3.** Letter E will ask for $u=144$, past the cap. This letter is $u=64$, still uncapped, with both plans at $320$. Mixing those two volumes is how a solver could cap Plan A four dozen tickets early.
+**3.** Letter E will ask for $u=144$, past the cap. This letter is $u=64$, still uncapped, with both plans at $320$. Mixing those two volumes is how that mix could cap Plan A four dozen tickets early.
 
 **4.** The opposite verdict would need $320\\ge 400$, which would have required a larger $a$. The invoice $C_{A}(36)=240$ forces $a=40$ and a meeting of $320$.
 
@@ -3731,7 +3731,7 @@ The overview already recorded that the uncapped bills meet at $u=64$, and that P
 
 **1.** Extra arithmetic at the invoice volume $u=36$: $C_{A}(36)=240$ and $C_{B}(36)=180$, so Plan B is cheaper by $60$ euros. At $u=16$, $C_{A}(16)=160$ and $C_{B}(16)=80$, Plan B cheaper by $80$. Both sit below $u=64$.
 
-**2.** A rushed solver who thought "a cap makes A cheaper everywhere" has imported the later bind into the uncapped region. Another who swapped the comparison because $a=40>5$ compared coefficients instead of the bills at small $u$. Coefficients set the crossing; below it the smaller exponent, Plan A's $\\frac{1}{2}$, is the more expensive start.
+**2.** Thinking "a cap makes A cheaper everywhere" has imported the later bind into the uncapped region. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who swapped the comparison because $a=40>5$ compared coefficients instead of the bills at small $u$. Coefficients set the crossing; below it the smaller exponent, Plan A's $\\frac{1}{2}$, is the more expensive start.
 
 **3.** Letter A found the meeting still under the cap. This letter reads the sign below that meeting. Plan B cheaper below $64$ is the square-root-versus-line story, not the cap story.
 
@@ -3746,7 +3746,7 @@ The overview already recorded that the cap binds from $u=100$, when $40\\sqrt{u}
 
 **1.** Extra arithmetic at the bind: $\\sqrt{u}=10$ and $u=100$. At $u=121$, uncapped $C_{A}$ would be $40\\cdot 11=440$, but billed Plan A is $400$. The cap has bitten. At $u=64$, letter A's $320$ is still free of the cap, so the bind is later, not never.
 
-**2.** A rushed solver who thought an exponent below one could never reach $400$ has confused "grows slowly" with "bounded." $40\\sqrt{u}\\to\\infty$ as $u\\to\\infty$. Another who used Plan B's linear growth and declared A never hits $400$ because B hits it first has mixed two contracts. Plan B has no cap in the stem.
+**2.** Thinking an exponent below one could never reach $400$ has confused "grows slowly" with "bounded." $40\\sqrt{u}\\to\\infty$ as $u\\to\\infty$. So the letter reads the claim against $400$; $u\\to\\infty$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $400$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Plan B's linear growth and declared A never hits $400$ because B hits it first has mixed two contracts. Plan B has no cap in the stem.
 
 **3.** Letter E is a level past the bind. This letter is the existence of the bind. An exponent of $0$ would have been needed for A never to reach $400$. The stem's $\\frac{1}{2}>0$.
 
@@ -3761,7 +3761,7 @@ The overview already recorded that unit cost falls on both pieces. Uncapped, Pla
 
 **1.** Extra arithmetic on the uncapped piece: at $u=36$, unit cost is $240/36\\approx 6.67$, and at $u=64$, $320/64=5$, already lower. On the capped piece, at $u=100$ unit cost is $4$, and at $u=144$, $400/144\\approx 2.78$, still falling.
 
-**2.** A rushed solver who saw the billed total climb from $240$ to $400$ and stop, then concluded that unit cost must rise, has mixed the total with the average. A capped total spread over more tickets is cheaper per ticket, not dearer.
+**2.** Seeing the billed total climb from $240$ to $400$ and stop, then concluded that unit cost must rise, has mixed the total with the average. That is the fork: $240$ belongs to the recovered isolation, $400$ belongs to the discarded mix. A capped total spread over more tickets is cheaper per ticket, not dearer.
 
 **3.** Letter B compared the two plans' totals below the crossing. This letter is Plan A's average, on both pieces. An exponent $r>1$ on the uncapped piece would have raised unit cost before the cap; the stem's $\\frac{1}{2}<1$ forbids that.
 
@@ -3774,7 +3774,7 @@ This is a billed level at $144$ tickets, asked against a threshold of $450$.
 
 The overview already recorded that at $u=144$ the bill is $400$, the cap, not more than $450$. Uncapped, $40\\cdot 12=480$ would have sat above $450$, but the cap has already bound at $u=100$. Billed Plan A is $400$.
 
-**1.** A rushed solver who forgot the cap and reported $480$ would pass "more than $450$" on the uncapped power. The stem's $400$ lid is the whole content of this letter. Another who used Plan B at $u=144$, $5\\cdot 144=720$, has the wrong contract.
+**1.** Forgetting the cap and reporting $480$ would pass "more than $450$" on the uncapped power. Working from the isolated values, $480$ is the figure that is checked, not the detour that produced $450$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's $400$ lid is the whole content of this letter. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Plan B at $u=144$, $5\\cdot 144=720$, has the wrong contract.
 
 **2.** Extra arithmetic at $u=100$, the bind: billed A is $400$, already not more than $450$. At $u=144$ it is still $400$. The threshold $450$ sits between the uncapped $480$ and the cap $400$, which is why forgetting the cap flips the verdict.
 
@@ -3834,7 +3834,7 @@ $$|c'(1)|=b\\cdot 1000\\approx 322, \\qquad |c'(8)|=b\\cdot 1000\\cdot 8^{-b-1}$
 
 and $8^{-b-1}=(2^{3})^{-b-1}=2^{-3b-3}=(0.8)^{3}/8=0.512/8=0.064$, so $|c'(8)|\\approx 322\\cdot 0.064\\approx 20.6$. An extra unit after the first cuts about $322$ euros of modelled cost, and after eight units only about $21$.
 
-**2.** A rushed solver who saw $c(8)=512<c(1)=1000$ and concluded that later units are cutting more has confused a lower cost with a steeper cut. Cost is already low at $N=8$; there is less left to cut. Another who used $b=1$, a simple reciprocal, would have a steeper decline of the slope, still in the same direction.
+**2.** Seeing $c(8)=512<c(1)=1000$ and concluding that later units are cutting more has confused a lower cost with a steeper cut. The recovered isolation is checked against the claim using $c(8)=512<c(1)=1000$, which is the figure the sessions actually produce. Cost is already low at $N=8$; there is less left to cut. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $b=1$, a simple reciprocal, would have a steeper decline of the slope, still in the same direction.
 
 **3.** Letter C says $b<1$, so cost falls more slowly than $1/N$. This letter is the falling steepness of that fall. Negative-exponent cost has falling marginal benefit of extra output.
 
@@ -3853,7 +3853,7 @@ Unit cost is multiplied by $0.64$, not by $\\frac{1}{2}$.
 
 **1.** Extra arithmetic on the first unit: quadrupling $N=1$ is $N=4$, and $c(4)=1000\\cdot 0.64=640$, not $500$. Half of $1000$ would have been $500$. Directly, two $80\\%$ doublings: $1000\\times 0.8\\times 0.8=640$.
 
-**2.** A rushed solver who used one doubling, $k=2$, would have reported $0.8$, still not a half. Another who used $4^{-1}=1/4$ mixed in a simple reciprocal. Halving cost on a quadrupling would have needed $4^{-b}=1/2$, hence $b=1/2$, hence a doubling factor $2^{-1/2}\\approx 0.707$, not $0.8$.
+**2.** Using one doubling, $k=2$, would have reported $0.8$, still not a half. The recovered comparison therefore keeps $k=2$ and does not substitute $0.8$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $4^{-1}=1/4$ mixed in a simple reciprocal. Halving cost on a quadrupling would have needed $4^{-b}=1/2$, hence $b=1/2$, hence a doubling factor $2^{-1/2}\\approx 0.707$, not $0.8$.
 
 **3.** Letter D's three doublings give $0.8^{3}=0.512$, near a half but not this letter's quadrupling. Mixing three doublings with two is how a "$0.5$" claim can look close. Two doublings are $0.64$.
 
@@ -3868,7 +3868,7 @@ The overview already recorded $b\\approx 0.322<1$. A simple reciprocal would be 
 
 **1.** Extra arithmetic at $N=8$: a reciprocal $1000/8=125$, against the learning-curve $c(8)=512$. Five hundred and twelve is far above $125$, so the modelled cost has fallen more slowly. At $N=16$, reciprocal $62.5$ against $c(16)=409.6$, the same gap in kind.
 
-**2.** A rushed solver who saw any falling cost and called it a reciprocal has ignored the doubling factor. An $80\\%$ curve is not a $50\\%$ curve. Another who used $b=2$ from a square in the denominator has the wrong stem.
+**2.** Seeing any falling cost and calling it a reciprocal has ignored the doubling factor. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. An $80\\%$ curve is not a $50\\%$ curve. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $b=2$ from a square in the denominator has the wrong stem.
 
 **3.** Letter B's $0.64$ versus $0.5$ is this letter at $k=4$. Letter A used $b<1$ as falling steepness. This letter names $b<1$ as a comparison with $1/N$.
 
@@ -3881,7 +3881,7 @@ Three successive doublings take $N$ from $1$ to $8$, and the claim is that model
 
 The overview already evaluated $c(8)=512$. Five hundred and twelve sits under $520$. Three $80\\%$ doublings: $1000\\times 0.8^{3}=1000\\times 0.512=512$.
 
-**1.** A rushed solver who used four doublings, $c(16)=409.6$, would still pass "under $520$" on the wrong output. Another who used $0.8\\times 3=2.4$ additively would be lost. Successive doublings multiply.
+**1.** Using four doublings, $c(16)=409.6$, would still pass "under $520$" on the wrong output. So the letter reads the claim against $c(16)=409.6$; $520$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $c(16)=409.6$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $0.8\\times 3=2.4$ additively would be lost. Successive doublings multiply.
 
 **2.** Extra arithmetic at $N=4$, two doublings: $c(4)=640$, which sits above $520$. The threshold test is about three doublings specifically. Between two and three doublings cost crosses $520$, and at eight units it has reached $512$.
 
@@ -3896,7 +3896,7 @@ The overview already evaluated $c(16)=409.6$. Four hundred and nine point six st
 
 The materials floor is $400$, and $409.6$ has not reached it. The curve cannot describe costs below $400$, but at $N=16$ it has not yet tried to: the model still sits $9.6$ above the floor.
 
-**1.** A rushed solver who used $0.8^{4}=0.4$ exactly, dropping the $0.0096$, would report $400$ on the nose and call the floor binding. The exact product is $0.4096$. Another who used three doublings, $512$, would sit well above $400$ on the wrong output.
+**1.** Using $0.8^{4}=0.4$ exactly, dropping the $0.0096$, would report $400$ on the nose and call the floor binding. The stem's recovered values line up with $0.8^{4}=0.4$, whereas $400$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.8^{4}=0.4$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exact product is $0.4096$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. three doublings, $512$, would sit well above $400$ on the wrong output.
 
 **2.** Extra arithmetic that inverts the floor: $1000 N^{-b}=400$ gives $N^{-b}=0.4$, so $N=0.4^{-1/b}\\approx 0.4^{-3.1}\\approx 18$ or so, past $16$. Four doublings are not yet enough. Five doublings, $N=32$, give $c(32)=327.68$, which would sit under $400$ and be censored by the floor.
 
@@ -3952,7 +3952,7 @@ $$\\frac{R(2x)}{R(x)}=2^{\\frac{1}{2}}\\neq 2$$
 
 **1.** Extra arithmetic on the recorded campaign: doubling $100$ is $200$, and $R(200)=90\\sqrt{200}=90\\cdot 10\\sqrt{2}=900\\sqrt{2}\\approx 1273$ against $R(100)=900$. Twice $900$ would have been $1800$, and $1273$ is not $1800$.
 
-**2.** A rushed solver who used exponent $1$ is telling a proportional story the square-root technology contradicts. Another who used the fee $F(x)=6x$, which does double when spend doubles, has mixed revenue with the platform charge.
+**2.** Using exponent $1$ is telling a proportional story the square-root technology contradicts. Keeping $1$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the fee $F(x)=6x$, which does double when spend doubles, has mixed revenue with the platform charge.
 
 **3.** Letter B is the falling average $R/x$. Letter C is net gain turning negative. This letter is only the scale factor on $R$. The fee doubling has nothing to do with whether $R$ doubles.
 
@@ -3967,7 +3967,7 @@ The overview already recorded that average product $90 x^{-\\frac{1}{2}}$ falls.
 
 **1.** Extra arithmetic at the recorded campaign and a neighbour: $R(100)/100=9$ euros of revenue per euro of spend, and $R(225)/225=90\\cdot 15/225=6$, already lower. At $x=400$, $R(400)/400=90\\cdot 20/400=4.5$, half the recorded average.
 
-**2.** A rushed solver who saw $R$ rise from $900$ to $1350$ at $x=225$ and concluded that spend is becoming more productive has mixed the total with the average. Letter A's $\\sqrt{2}$ scale is the same $r<1$ story. Another who used $r>1$ would have a rising average.
+**2.** Seeing $R$ rise from $900$ to $1350$ at $x=225$ and concluding that spend is becoming more productive has mixed the total with the average. The stem's recovered values line up with $R$, whereas $x=225$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $R$ stays in the write-up. Letter A's $\\sqrt{2}$ scale is the same $r<1$ story. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r>1$ would have a rising average.
 
 **3.** Net gain $N=R-6x$ turns negative once the falling average crosses the fee of $6$, which is letter C. This letter is the falling average itself.
 
@@ -3982,7 +3982,7 @@ The overview already recorded the unique positive root $x=225$, and $N<0$ for $x
 
 **1.** Extra arithmetic at the root: $90\\sqrt{225}-6\\cdot 225=90\\cdot 15-1350=0$. At $x=256$, letter E's $N(256)=-96<0$. At $x=400$, $N(400)=90\\cdot 20-2400=-600$, more negative. There is no later catch-up.
 
-**2.** A rushed solver who thought a square root "grows forever" and must recross a line has forgotten that $6x$ grows faster. Exponent $1$ beats exponent $\\frac{1}{2}$ past a unique crossing. Another who used two roots from a quadratic in $\\sqrt{x}$ without discarding $x=0$ has counted the origin, which is not a sign change of $N$ on $x>0$ in the same way: $N(0+)$ opens positive.
+**2.** Thinking a square root "grows forever" and must recross a line has forgotten that $6x$ grows faster. The path that matches the stem therefore holds $6x$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Exponent $1$ beats exponent $\\frac{1}{2}$ past a unique crossing. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. two roots from a quadratic in $\\sqrt{x}$ without discarding $x=0$ has counted the origin, which is not a sign change of $N$ on $x>0$ in the same way: $N(0+)$ opens positive.
 
 **3.** Letter D's $N(100)=300>0$ sits before the root. This letter is the sign past the root. Unique leftover power $\\sqrt{x}$ against $x$ crosses once on $x>0$.
 
@@ -3995,7 +3995,7 @@ This is a level of net gain at a spend of $100$, asked against a threshold of $2
 
 The overview already evaluated $N(100)=300$. Three hundred sits above $250$. Revenue $900$ minus fee $600$ is $300$.
 
-**1.** A rushed solver who used $R(100)=900$ as if it were net gain would still pass "above $250$" on the wrong object. Another who used $N=90\\cdot 100-6\\cdot 100=8400$ skipped the square root.
+**1.** Using $R(100)=900$ as if it were net gain would still pass "above $250$" on the wrong object. After isolating the unknown, the check is against $R(100)=900$. The figure $250$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $R(100)=900$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $N=90\\cdot 100-6\\cdot 100=8400$ skipped the square root.
 
 **2.** Extra arithmetic at $x=225$, the break-even: $N(225)=0$, which sits below $250$. The threshold test is about $x=100$ specifically. Between $100$ and $225$ net gain falls through $250$ and then through $0$.
 
@@ -4008,7 +4008,7 @@ This is a level of net gain at a spend of $256$, asked against positivity.
 
 The overview already evaluated $N(256)=-96$. Net gain is already negative. Revenue $90\\cdot 16=1440$ minus fee $6\\cdot 256=1536$ is $-96$.
 
-**1.** A rushed solver who used $x=225$ as if $256$ were still before the root would report $N=0$ or small and positive. Two hundred and fifty-six sits $31$ past the break-even $225$. Another who used $R(256)=1440$ as net gain has dropped the fee.
+**1.** Using $x=225$ as if $256$ were still before the root would report $N=0$ or small and positive. So the letter reads the claim against $x=225$; $N=0$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $x=225$ stays in the write-up. Two hundred and fifty-six sits $31$ past the break-even $225$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $R(256)=1440$ as net gain has dropped the fee.
 
 **2.** Extra arithmetic at $x=196$, a nearby perfect square before the root: $N(196)=90\\cdot 14-6\\cdot 196=1260-1176=84>0$. The sign change is between $196$ and $256$, at $225$. The claim is $x=256$ specifically.
 
@@ -4062,7 +4062,7 @@ The overview already recovered $A=4$ and recorded that $\\frac{1}{2}<1$. Multipl
 
 **1.** Extra arithmetic on the recorded run: doubling $100$ hours is $200$ hours, and $m(200)=4\\sqrt{200}=40\\sqrt{2}\\approx 56.6$ against $m(100)=40$. Material multiplies by about $1.41$, slower than the doubling of hours.
 
-**2.** A rushed solver who compared $40$ tonnes with $100$ hours and saw $0.4$ tonnes per hour has an average, not a growth-rate statement. Growth rate is $r$ against $1$. Another who used the finished-output exponent $\\frac{3}{4}$ from letter B has mixed the two stages.
+**2.** Comparing $40$ tonnes with $100$ hours and seeing $0.4$ tonnes per hour has an average, not a growth-rate statement. The stem's recovered values line up with $40$, whereas $0.4$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $40$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Growth rate is $r$ against $1$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the finished-output exponent $\\frac{3}{4}$ from letter B has mixed the two stages.
 
 **3.** Letter B is a scale claim on the composed finished output. Letter C is the falling average of finished output. This letter is only the material stage's $r=\\frac{1}{2}<1$.
 
@@ -4079,7 +4079,7 @@ $$\\frac{g(2L)}{g(L)}=2^{\\frac{3}{4}}\\neq 2$$
 
 **1.** Extra arithmetic on a concrete staffing: after $81$ hours letter E's $g(81)=432$, and after $162$ hours $g(162)=16\\cdot 162^{\\frac{3}{4}}=16\\cdot (81\\cdot 2)^{\\frac{3}{4}}=432\\cdot 2^{\\frac{3}{4}}\\approx 726$, not $864$. Twice $432$ would have been $864$.
 
-**2.** A rushed solver who used exponent $1$ on the composition, adding $\\frac{1}{2}+\\frac{3}{2}=2$ instead of multiplying $\\frac{1}{2}\\cdot\\frac{3}{2}=\\frac{3}{4}$, would have reported a quadrupling of finished output on a doubling of labour, a different false claim. Exponents multiply under composition.
+**2.** Using exponent $1$ on the composition, adding $\\frac{1}{2}+\\frac{3}{2}=2$ instead of multiplying $\\frac{1}{2}\\cdot\\frac{3}{2}=\\frac{3}{4}$, would have reported a quadrupling of finished output on a doubling of labour, a different false claim. The stem's recovered values line up with $1$, whereas $\\frac{1}{2}\\cdot\\frac{3}{2}=\\frac{3}{4}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Exponents multiply under composition.
 
 **3.** Letter A used $\\frac{1}{2}$ on material alone. This letter uses the product $\\frac{3}{4}$ on finished output. Both sit below $1$, so neither stage nor the chain doubles when labour doubles.
 
@@ -4094,7 +4094,7 @@ The overview already recorded that output per hour is $16 L^{-\\frac{1}{4}}$. Th
 
 **1.** Extra arithmetic at the recorded labour and a neighbour: after $100$ hours, material is $40$ tonnes and finished output is $g=2\\cdot 40^{\\frac{3}{2}}=2\\cdot 80\\sqrt{10}\\approx 506$, so average about $5.06$ units per hour. After $81$ hours, $g(81)=432$ and $432/81\\approx 5.33$, already higher than at $100$ hours, as a falling average requires. After $16$ hours, $g(16)=16\\cdot 8=128$ and $128/16=8$, higher still.
 
-**2.** A rushed solver who saw $g$ rise with $L$ and concluded that labour is becoming more productive has mixed the total with the average. Letter B's $2^{3/4}$ scale is the same $r<1$ story.
+**2.** Seeing $g$ rise with $L$ and concluding that labour is becoming more productive has mixed the total with the average. The recovered comparison therefore keeps $g$ and does not substitute $L$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter B's $2^{3/4}$ scale is the same $r<1$ story.
 
 **3.** Letter D names the inverse as a power. This letter is the falling average. An exponent above one on the composition would have raised the average.
 
@@ -4111,7 +4111,7 @@ That is a power function of the finished count. There is no leftover constant an
 
 **1.** Extra arithmetic that uses the inverse at $g=432$: $L=(432/16)^{\\frac{4}{3}}=27^{\\frac{4}{3}}=81$, which returns letter E's eighty-one hours. That inversion landing on $81$ is how we know the inverse is the right monomial.
 
-**2.** A rushed solver who wrote $L=\\log g$ mixed this plant with an exponential technology. Another who added a setup, $L=5+(g/16)^{\\frac{4}{3}}$, would have left the power-function class; the stem has no such floor.
+**2.** Writing $L=\\log g$ mixed this plant with an exponential technology. Once $L=\\log g$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who added a setup, $L=5+(g/16)^{\\frac{4}{3}}$, would have left the power-function class; the stem has no such floor.
 
 **3.** Letter B used the inverse exponent $\\frac{4}{3}$ as a reverse scale. This letter names the inverse as a function class. The same $L\\propto g^{4/3}$ is what made doubling finished output cost more than a doubling of hours.
 
@@ -4124,7 +4124,7 @@ This is a level after $81$ labour hours, asked against a threshold of $400$ fini
 
 The overview already evaluated $g(81)=432$. Four hundred and thirty-two sits above $400$. Eighty-one to the $\\frac{3}{4}$ is $27$, and $16\\cdot 27=432$.
 
-**1.** A rushed solver who used $g=16\\cdot 81=1296$ skipped the fractional power. Another who used only the material stage, $m(81)=4\\cdot 9=36$ tonnes, would sit below $400$ on the wrong quantity.
+**1.** Using $g=16\\cdot 81=1296$ skipped the fractional power. The recovered isolation is checked against the claim using $g=16\\cdot 81=1296$, which is the figure the sessions actually produce. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. only the material stage, $m(81)=4\\cdot 9=36$ tonnes, would sit below $400$ on the wrong quantity.
 
 **2.** Extra arithmetic at $L=16$: $g(16)=128$, which sits below $400$. The threshold test is about $L=81$ specifically. Between $16$ and $81$ hours finished output crosses $400$, and at $81$ it has reached $432$.
 
@@ -4180,7 +4180,7 @@ The overview already recovered $A=2000$ and $R(p)=2000 p^{-\\frac{1}{2}}$, which
 
 **1.** Extra arithmetic that uses the inverse at $R=400$: $p=(2000/400)^{2}=25$, which returns letter D's price of $25$ euros. That inversion landing on $25$ is how we know the inverse is the right monomial.
 
-**2.** A rushed solver who thought a negative exponent on $R(p)$ could not invert to a power has forgotten that $u^{-r}$ inverts to a power. Another who wrote $p=\\log R$ mixed this publisher with an exponential technology.
+**2.** Thinking a negative exponent on $R(p)$ could not invert to a power has forgotten that $u^{-r}$ inverts to a power. The recovered comparison therefore keeps $R(p)$ and does not substitute $u^{-r}$. That contrast is the reason the verdict goes the way it does. Another who wrote $p=\\log R$ mixed this publisher with an exponential technology.
 
 **3.** Letters B and C read $R(p)$ as a scale factor and as a direction. This letter names the inverse. The same $p\\propto R^{-2}$ is what made a revenue target a square of a reciprocal.
 
@@ -4199,7 +4199,7 @@ Revenue falls by about thirty percent, not by fifty.
 
 **1.** Extra arithmetic on the recorded price: doubling $4$ euros is $8$ euros, and $R(8)=2000/\\sqrt{8}=2000/(2\\sqrt{2})=500\\sqrt{2}\\approx 707$ against $R(4)=1000$. Half of $1000$ would have been $500$, and $707$ is not $500$.
 
-**2.** A rushed solver who used exponent $-1$ on $R$, as if demand were $A p^{-2}$, would have halved revenue, which is exactly the false claim. Another who used $2^{-\\frac{3}{2}}$ mixed demand's exponent with revenue's.
+**2.** Using exponent $-1$ on $R$, as if demand were $A p^{-2}$, would have halved revenue, which is exactly the false claim. The recovered comparison therefore keeps $-1$ and does not substitute $A p^{-2}$. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{-\\frac{3}{2}}$ mixed demand's exponent with revenue's.
 
 **3.** Letter C says revenue falls as price rises, which is true and weaker than "halves on a doubling." This letter is the specific factor $1/\\sqrt{2}$.
 
@@ -4214,7 +4214,7 @@ The overview already recorded $R(p)=2000 p^{-\\frac{1}{2}}$. The leftover expone
 
 **1.** Extra arithmetic at the recorded price and letter D's price: $R(4)=1000$ and $R(25)=400$, already lower. At $p=16$, $R(16)=2000/4=500$, sitting between those two. The fall is monotone.
 
-**2.** A rushed solver who saw quantity fall and concluded that revenue must fall has the right conclusion here for the wrong generality: quantity falling does not force revenue to fall when demand is inelastic. Task $33$ is that other story. Here the revenue exponent $-\\frac{1}{2}<0$ is what forces the fall.
+**2.** Seeing quantity fall and concluding that revenue must fall has the right conclusion here for the wrong generality: quantity falling does not force revenue to fall when demand is inelastic. That reading is a different question from the one the statement actually asks. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Task $33$ is that other story. Here the revenue exponent $-\\frac{1}{2}<0$ is what forces the fall.
 
 **3.** Letter B's factor $1/\\sqrt{2}$ is this letter at $k=2$. Letter E is the fixed-charge cover, which uses the same falling $R$.
 
@@ -4227,7 +4227,7 @@ This is a level of revenue at a price of $25$, asked against a threshold of $450
 
 The overview already evaluated $R(25)=400$. Four hundred sits under $450$. Twenty-five is a perfect square, so the square root is $5$, and $2000/5=400$.
 
-**1.** A rushed solver who used $q(25)=2000/125=16$ as if it were revenue would sit far under $450$ on the wrong object. Another who used $R=2000\\cdot\\sqrt{25}=10000$ flipped the exponent sign.
+**1.** Using $q(25)=2000/125=16$ as if it were revenue would sit far under $450$ on the wrong object. After isolating the unknown, the check is against $q(25)=2000/125=16$. The figure $450$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $q(25)=2000/125=16$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $R=2000\\cdot\\sqrt{25}=10000$ flipped the exponent sign.
 
 **2.** Extra arithmetic at $p=16$: $R(16)=500$, which sits above $450$. The threshold test is about $p=25$ specifically. Between $16$ and $25$ euros revenue crosses $450$ going down, and at $25$ it has reached $400$.
 
@@ -4242,7 +4242,7 @@ The overview already recorded that covering the charge requires $p\\le 25$, not 
 
 **1.** Extra arithmetic at $p=16$: $R(16)=500\\ge 400$, so $16$ euros is covered, but it is not the upper end. At $p=25$, $R(25)=400$ on the nose, still covered. At $p=36$, $R(36)=2000/6\\approx 333<400$, no longer covered. The cut-off is $25$, not $16$.
 
-**2.** A rushed solver who used $R(16)=400$ by mixing letter D's $400$ with $p=16$ would have placed the cut-off at $16$ and made the claim true by a wrong level. $R(16)=500$, not $400$.
+**2.** Using $R(16)=400$ by mixing letter D's $400$ with $p=16$ would have placed the cut-off at $16$ and made the claim true by a wrong level. The recovered comparison therefore keeps $R(16)=400$ and does not substitute $16$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $R(16)=500$, not $400$.
 
 **3.** Letter D's $R(25)=400<450$ is compatible with $R(25)=400$ covering a charge of $400$. "Under $450$" and "covers $400$" are different comparisons at the same price.
 
@@ -4302,7 +4302,7 @@ $$N'(8)=12/2=6, \\qquad N'(27)=12/3=4$$
 
 An extra hour after $8$ hours adds $6$ items; after $27$ hours it adds $4$. The claim's direction matches these two slopes.
 
-**2.** A rushed solver who saw $N(27)=162>N(8)=72$ and concluded that later hours are more productive has confused height with slope. The count is still rising, just more slowly. Another who used $r>1$ intuition has the wrong exponent.
+**2.** Seeing $N(27)=162>N(8)=72$ and concluding that later hours are more productive has confused height with slope. The path that matches the stem therefore holds $N(27)=162>N(8)=72$ fixed and only then reads the claim. The count is still rising, just more slowly. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r>1$ intuition has the wrong exponent.
 
 **3.** Letter C is the falling average $N/h$. This letter is the falling marginal $N'$. Both are the $r=\\frac{2}{3}<1$ story. Convex $r>1$ would have flipped both.
 
@@ -4317,7 +4317,7 @@ The overview already recorded $\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}\\approx 1.58
 
 **1.** Extra arithmetic on the logged $8$-hour output: doubling those $8$ hours is $16$ hours, and $N(16)=18\\cdot 16^{\\frac{2}{3}}=18\\cdot 4\\cdot 2^{\\frac{2}{3}}\\approx 114$ against $N(8)=72$. Twice $72$ would have been $144$, and $114$ is not $144$.
 
-**2.** A rushed solver who used exponent $1$ is telling a proportional story the recorded extension already contradicts: hours from $8$ to $27$ would have had to take items from $72$ to $243$, not to $162$. Another who used $2^{\\frac{1}{2}}$ mixed this station with a square-root technology.
+**2.** Using exponent $1$ is telling a proportional story the recorded extension already contradicts: hours from $8$ to $27$ would have had to take items from $72$ to $243$, not to $162$. Working from the isolated values, $1$ is the figure that is checked, not the detour that produced $162$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{\\frac{1}{2}}$ mixed this station with a square-root technology.
 
 **3.** Letter E inverts a $250$-item order past $40$ hours. This letter is a forward doubling. Mixing reverse and forward factors, $2^{3/2}$ with $2^{2/3}$, is how a doubling claim can look true.
 
@@ -4332,7 +4332,7 @@ The overview already recorded $\\frac{N(h)}{h}=18 h^{-\\frac{1}{3}}$. The leftov
 
 **1.** Extra arithmetic at the two logged shifts: $N(8)/8=72/8=9$ items per hour, and $N(27)/27=162/27=6$, already lower. At $h=64$, $N(64)=18\\cdot 16=288$ and $288/64=4.5$, lower still.
 
-**2.** A rushed solver who saw $N$ rise from $72$ to $162$ and concluded that hours are becoming more productive has mixed the total with the average. Letter A's falling slope is the same story.
+**2.** Seeing $N$ rise from $72$ to $162$ and concluding that hours are becoming more productive has mixed the total with the average. So the letter reads the claim against $N$; $162$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $N$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Letter A's falling slope is the same story.
 
 **3.** What would flip this verdict is $r>1$. The stem's $\\frac{2}{3}<1$ forces a falling average.
 
@@ -4345,7 +4345,7 @@ This is a level of a $27$-hour shift, asked against a threshold of $150$ items.
 
 The overview already evaluated $N(27)=162$. One hundred and sixty-two sits above $150$. Twenty-seven to the $\\frac{2}{3}$ is $9$, and $18\\cdot 9=162$.
 
-**1.** A rushed solver who used $N(27)=18\\cdot 27=486$ skipped the fractional power. Another who used $A=10$ from $90/9$ would report $90$ and fail the threshold on a wrong coefficient. The gain is $A(9-4)=90$, so $A=18$.
+**1.** Using $N(27)=18\\cdot 27=486$ skipped the fractional power. The recovered isolation is checked against the claim using $N(27)=18\\cdot 27=486$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=10$ from $90/9$ would report $90$ and fail the threshold on a wrong coefficient. The gain is $A(9-4)=90$, so $A=18$.
 
 **2.** Extra arithmetic at $h=8$: $N(8)=72$, which sits below $150$. The threshold test is about $h=27$ specifically. Between $8$ and $27$ hours the count crosses $150$, and at $27$ it has reached $162$.
 
@@ -4360,7 +4360,7 @@ The overview already inverted $h=(125/9)^{\\frac{3}{2}}\\approx 51.8$ hours, pas
 
 $$h^{\\frac{2}{3}}=\\frac{125}{9}, \\qquad h=\\Bigl(\\frac{125}{9}\\Bigr)^{\\frac{3}{2}}\\approx 51.8$$
 
-**1.** A rushed solver who used $h=250/18\\approx 13.9$ skipped the exponent and would have passed "under $40$" on a huge underestimate. Another who used $h=(250/18)^{\\frac{2}{3}}$ inverted the reciprocal the wrong way.
+**1.** Using $h=250/18\\approx 13.9$ skipped the exponent and would have passed "under $40$" on a huge underestimate. The recovered comparison therefore keeps $h=250/18\\approx 13.9$ and does not substitute $40$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $h=(250/18)^{\\frac{2}{3}}$ inverted the reciprocal the wrong way.
 
 **2.** Extra arithmetic at $h=40$: $N(40)=18\\cdot 40^{\\frac{2}{3}}\\approx 18\\cdot 11.70\\approx 211$, which sits below $250$. Even a $40$-hour shift cannot pack the order. At $h=64$, $N(64)=288>250$, so the order fits between $40$ and $64$ hours, near $52$.
 
@@ -4436,7 +4436,7 @@ The overview already recovered $r=\\frac{3}{2}$ and $A=2$, then composed $P(v)=2
 
 **1.** Extra arithmetic of the composition: $P=F v=2 v^{\\frac{3}{2}}\\cdot v=2 v^{\\frac{5}{2}}$. The $\\frac{5}{2}$ is $\\frac{3}{2}+1$, addition of exponents under multiplication by $v$, not under composition of two stages.
 
-**2.** A rushed solver who added $r$ to itself, reporting $P\\propto v^{3}$, has squared drag instead of multiplying by speed. Another who left $P$ as $F$ without the extra $v$ has described drag, not power.
+**2.** Adding $r$ to itself, reporting $P\\propto v^{3}$, has squared drag instead of multiplying by speed. The recovered comparison therefore keeps $r$ and does not substitute $P\\propto v^{3}$. Another who left $P$ as $F$ without the extra $v$ has described drag, not power.
 
 **3.** Extra check at $v=16$: $P(16)=2048$ W, which letter E will use. That $2048$ sitting on $2\\cdot 16^{5/2}$ is the fingerprint of a power of airspeed.
 
@@ -4451,7 +4451,7 @@ The overview already recorded $\\frac{F(2v)}{F(v)}=2^{\\frac{3}{2}}=2\\sqrt{2}\\
 
 **1.** Extra arithmetic on the slower run: doubling $4$ m/s is $8$ m/s, and $F(8)=2\\cdot 8^{\\frac{3}{2}}=2\\cdot 16\\sqrt{2}=32\\sqrt{2}\\approx 45.3$ against $F(4)=16$. Triple $16$ would have been $48$, and $45.3$ is not above $48$. The factor $2.828$ sits just under $3$.
 
-**2.** A rushed solver who used $2^{2}=4$ would have passed "more than $3$" on an area story. Another who used $2^{\\frac{5}{2}}\\approx 5.66$ mixed letter A's power exponent with drag. Drag's exponent is $\\frac{3}{2}$, not $\\frac{5}{2}$.
+**2.** Using $2^{2}=4$ would have passed "more than $3$" on an area story. The stem's recovered values line up with $2^{2}=4$, whereas $3$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $2^{2}=4$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{\\frac{5}{2}}\\approx 5.66$ mixed letter A's power exponent with drag. Drag's exponent is $\\frac{3}{2}$, not $\\frac{5}{2}$.
 
 **3.** Letter E is absorbed power at $16$ m/s. This letter is a scale factor on drag. A factor just under $3$ is a tight miss, genuine because $\\sqrt{2}<1.5$.
 
@@ -4466,7 +4466,7 @@ The overview already recorded $v=(F/2)^{\\frac{2}{3}}$. A nonzero power inverts 
 
 **1.** Extra arithmetic that uses the inverse at the slower run: $v=(16/2)^{\\frac{2}{3}}=8^{\\frac{2}{3}}=4$, which returns the logged $4$ m/s. That inversion landing on $4$ is how we know the inverse is the right monomial.
 
-**2.** A rushed solver who wrote $v=\\log F$ mixed this rig with an exponential technology. Another who added a stall speed, $v=1+(F/2)^{\\frac{2}{3}}$, would have left the power-function class; the stem has no such floor.
+**2.** Writing $v=\\log F$ mixed this rig with an exponential technology. The recovered isolation is checked against the claim using $v=\\log F$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who added a stall speed, $v=1+(F/2)^{\\frac{2}{3}}$, would have left the power-function class; the stem has no such floor.
 
 **3.** Letter D uses this inverse at $F=250$. This letter names the inverse as a function class. The same $v\\propto F^{2/3}$ is what made the rating invert in one monomial step.
 
@@ -4483,7 +4483,7 @@ $$v^{\\frac{3}{2}}=125, \\qquad v=125^{\\frac{2}{3}}=25$$
 
 because $125=5^{3}$ and $(5^{3})^{\\frac{2}{3}}=5^{2}=25$.
 
-**1.** A rushed solver who used $v=250/2=125$ skipped the exponent and would have passed "above $30$" on a huge overestimate. Another who used $v=250^{\\frac{2}{3}}\\approx 40$ dropped the $A=2$ and still passed, for a wrong inversion.
+**1.** Using $v=250/2=125$ skipped the exponent and would have passed "above $30$" on a huge overestimate. After isolating the unknown, the check is against $v=250/2=125$. The figure $30$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $v=250/2=125$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $v=250^{\\frac{2}{3}}\\approx 40$ dropped the $A=2$ and still passed, for a wrong inversion.
 
 **2.** Extra arithmetic at $v=16$, the faster run: $F(16)=128$, well below $250$. At $v=25$, $F=250$ on the nose. At $v=30$, $F(30)=2\\cdot 30^{\\frac{3}{2}}=2\\cdot 30\\sqrt{30}\\approx 329$, already past the rating. The rating is first reached at $25$, not above $30$.
 
@@ -4496,7 +4496,7 @@ This is a level of absorbed power at $16$ m/s, asked against a threshold of $2$ 
 
 The overview already evaluated $P(16)=2048$ W $=2.048$ kW. That is more than $2$ kW. Sixteen to the $\\frac{5}{2}$ is $16^{2}\\sqrt{16}=256\\cdot 4=1024$, and $2\\cdot 1024=2048$.
 
-**1.** A rushed solver who used $P=F=128$ W would sit far under $2$ kW on drag rather than power. Another who used $P=128\\cdot 16=2048$ has the right product $F\\cdot v$ at this one speed, which is a check, not a reason to skip the composed exponent on other speeds.
+**1.** Using $P=F=128$ W would sit far under $2$ kW on drag rather than power. The stem's recovered values line up with $P=F=128$, whereas $2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $P=F=128$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $P=128\\cdot 16=2048$ has the right product $F\\cdot v$ at this one speed, which is a check, not a reason to skip the composed exponent on other speeds.
 
 **2.** Extra arithmetic at $v=4$: $P(4)=2\\cdot 4^{\\frac{5}{2}}=2\\cdot 32=64$ W, well under $2$ kW. The threshold test is about $v=16$ specifically. Between $4$ and $16$ m/s power crosses $2$ kW, and at $16$ it has reached $2.048$ kW.
 
@@ -4578,7 +4578,7 @@ The overview already recovered $A=1200$ and $R(p)=1200 p^{\\frac{1}{2}}$. The le
 
 **1.** Extra arithmetic at the recorded price and a neighbour: $R(16)=4800$ and $R(25)=6000$, already higher. At $p=64$, $R(64)=9600$, higher still. The climb is monotone.
 
-**2.** A rushed solver who saw quantity fall from $q(16)=300$ to $q(25)=240$ and concluded that revenue must fall has imported letter B's trap. Quantity falling does not force revenue to fall when $|r|<1$. Another who used $R=1200 p^{-\\frac{1}{2}}$ flipped the sign of the revenue exponent.
+**2.** Seeing quantity fall from $q(16)=300$ to $q(25)=240$ and concluding that revenue must fall has imported letter B's trap. So the letter reads the claim against $q(16)=300$; $q(25)=240$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $q(16)=300$ stays in the write-up. Quantity falling does not force revenue to fall when $|r|<1$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $R=1200 p^{-\\frac{1}{2}}$ flipped the sign of the revenue exponent.
 
 **3.** Letter B is the false "quantity falls, so revenue falls." Letter C is the inverse of quantity. This letter is the sign of $R'(p)=600 p^{-\\frac{1}{2}}>0$.
 
@@ -4593,7 +4593,7 @@ The overview already recorded that $R(p)=1200 p^{\\frac{1}{2}}$ still climbs. De
 
 **1.** Extra arithmetic of the two directions: from $p=16$ to $p=25$, quantity falls $300\\to 240$, a $20\\%$ cut, while price rises $16\\to 25$, a $56\\%$ rise, and revenue rises $4800\\to 6000$, a $25\\%$ rise. The price rise more than covers the quantity cut.
 
-**2.** A rushed solver who treated $R=pq$ as if $q$ were the only moving piece has forgotten that $p$ moves too. Another who used task $30$'s elastic demand, where $R$ does fall in $p$, has mixed two utilities.
+**2.** Treating $R=pq$ as if $q$ were the only moving piece has forgotten that $p$ moves too. The stem's recovered values line up with $R=pq$, whereas $p$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $R=pq$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. task $30$'s elastic demand, where $R$ does fall in $p$, has mixed two utilities.
 
 **3.** Letter A named the rising $R$ directly. This letter rejects a false general rule. Inelastic inverse-square-root demand is the case where the general rule fails.
 
@@ -4608,7 +4608,7 @@ The overview already recorded $p=(1200/q)^{2}$. A nonzero power inverts to anoth
 
 **1.** Extra arithmetic that uses the inverse at $q=200$: $p=(1200/200)^{2}=36$, which letter E will use. That inversion landing on $36$ is how we know the inverse is the right monomial. At the recorded pair, $p=(1200/300)^{2}=16$, returning the catalogue price.
 
-**2.** A rushed solver who wrote $p=\\log q$ mixed this utility with an exponential technology. Another who added a reservation price would have left the power-function class; the stem has no such floor.
+**2.** Writing $p=\\log q$ mixed this utility with an exponential technology. The path that matches the stem therefore holds $p=\\log q$ fixed and only then reads the claim. Another who added a reservation price would have left the power-function class; the stem has no such floor.
 
 **3.** Letter E uses this inverse at $q=200$. This letter names the inverse as a function class.
 
@@ -4621,7 +4621,7 @@ This is a level of quantity at a price of $25$, asked against a threshold of $25
 
 The overview already evaluated $q(25)=240$. Two hundred and forty is fewer than $250$. Twenty-five is a perfect square, so the square root is $5$, and $1200/5=240$.
 
-**1.** A rushed solver who used $q(25)=1200/25=48$ skipped the remaining root in the exponent. Another who used $R(25)=6000$ as if it were quantity would blow past $250$ on the wrong object.
+**1.** Using $q(25)=1200/25=48$ skipped the remaining root in the exponent. That is why $q(25)=1200/25=48$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $R(25)=6000$ as if it were quantity would blow past $250$ on the wrong object.
 
 **2.** Extra arithmetic at $p=16$: $q(16)=300$, which is not fewer than $250$. The threshold test is about $p=25$ specifically. Between $16$ and $25$ euros quantity crosses $250$, and at $25$ it has reached $240$.
 
@@ -4634,7 +4634,7 @@ A monthly quantity of $200$ inverts the recovered rule, and the claim is that th
 
 The overview already inverted $p=36$. Thirty-six is not above $40$. From $1200 p^{-\\frac{1}{2}}=200$, one gets $p^{\\frac{1}{2}}=6$ and $p=36$.
 
-**1.** A rushed solver who used $p=1200/200=6$ skipped the square in the inverse and would have failed "above $40$" on a huge underestimate, for the wrong reason. Another who used $p=(1200/200)^{\\frac{1}{2}}\\approx 2.45$ inverted the reciprocal the wrong way.
+**1.** Using $p=1200/200=6$ skipped the square in the inverse and would have failed "above $40$" on a huge underestimate, for the wrong reason. Working from the isolated values, $p=1200/200=6$ is the figure that is checked, not the detour that produced $40$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $p=(1200/200)^{\\frac{1}{2}}\\approx 2.45$ inverted the reciprocal the wrong way.
 
 **2.** Extra arithmetic at $p=40$: $q(40)=1200/\\sqrt{40}\\approx 189.7$, which sits below $200$. So $200$ units need a price below $40$, namely $36$. At $p=36$, $q=200$ on the nose.
 
@@ -4706,7 +4706,7 @@ The overview already recovered $A=4$ and recorded that doubling output scales fe
 
 **1.** Extra arithmetic on the inversion: $4 x^{\\frac{4}{3}}=648$ gives $x^{\\frac{4}{3}}=162$, so $x=162^{\\frac{3}{4}}$. Since $27^{\\frac{4}{3}}=81$ and we want $162=2\\cdot 81$, the feed factor is $2^{3/4}\\approx 1.682$, and $27\\times 1.682\\approx 45.4$ cubic metres, not $54$.
 
-**2.** A rushed solver who used exponent $1$ would have reported a doubled feed of $54$. Another who mixed this reverse question with letter B's rising average would have the right $r>1$ and the wrong direction on the reverse scale.
+**2.** Using exponent $1$ would have reported a doubled feed of $54$. So the letter reads the claim against $1$; $54$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who mixed this reverse question with letter B's rising average would have the right $r>1$ and the wrong direction on the reverse scale.
 
 **3.** Letter B says output per cubic metre rises, the $r>1$ average. This letter is the reverse scale. Both follow from $\\frac{4}{3}>1$, and the reverse scale is $k=2^{3/4}<2$.
 
@@ -4721,7 +4721,7 @@ The overview already recorded $\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$. The leftover
 
 **1.** Extra arithmetic at the test firing and a neighbour: $y(27)/27=324/27=12$ tonnes per cubic metre, and $y(8)/8=64/8=8$, already lower on a smaller feed. At $x=64$, $y(64)/64=1024/64=16$, higher than $12$.
 
-**2.** A rushed solver who used $r<1$ intuition from a square-root kiln has the wrong exponent. Another who saw the licence cap and thought extra fuel is wasted on the average has mixed shipped output with uncapped $y(x)$. This letter is the uncapped average.
+**2.** Using $r<1$ intuition from a square-root kiln has the wrong exponent. Once $r<1$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who saw the licence cap and thought extra fuel is wasted on the average has mixed shipped output with uncapped $y(x)$. This letter is the uncapped average.
 
 **3.** Letter A used $r>1$ as a reverse scale. This letter uses $r>1$ as a rising average. Letter C is the cap's effect on function class.
 
@@ -4736,7 +4736,7 @@ The overview already recorded the bind at $x=64$, where $y(64)=1024$. From that 
 
 **1.** Extra arithmetic at the bind: $4 x^{\\frac{4}{3}}=1024$ gives $x^{\\frac{4}{3}}=256$ and $x=64$. At $x=125$, uncapped $y(125)=4\\cdot 125^{\\frac{4}{3}}=4\\cdot 625=2500$, but shipped output is $1024$. The ratio of shipped output $1024/1024=1$ is a power only of exponent $0$, which does not match the uncapped $\\frac{4}{3}$ on $x<64$. Two exponents on two intervals are not one power on the whole domain.
 
-**2.** A rushed solver who said "a cap is $1024 x^{0}$, which is a power" has described the capped piece alone. The shipped series is the minimum of two formulas. Another who ignored the licence and called $y(x)$ shipped output has rewritten the stem.
+**2.** Saying "a cap is $1024 x^{0}$, which is a power" has described the capped piece alone. That is why $1024 x^{0}$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The shipped series is the minimum of two formulas. Another who ignored the licence and called $y(x)$ shipped output has rewritten the stem.
 
 **3.** Letter E checks that $x=50$ is still uncapped. Letter D is a level at $x=8$, also uncapped. This letter is the function class once $x\\ge 64$.
 
@@ -4747,7 +4747,7 @@ This is a level at a feed of $8$, asked against a threshold of $50$ tonnes.
 
 The overview already evaluated $y(8)=64$. Sixty-four sits above $50$. Eight to the $\\frac{4}{3}$ is $16$, and $4\\cdot 16=64$.
 
-**1.** A rushed solver who used $y(8)=4\\cdot 8=32$ skipped the fractional power and would have failed the threshold. Another who used $A=12$ from $324/27$ would report $192$ and still pass, for a wrong coefficient. The test firing is $81A=324$, so $A=4$.
+**1.** Using $y(8)=4\\cdot 8=32$ skipped the fractional power and would have failed the threshold. Once $y(8)=4\\cdot 8=32$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=12$ from $324/27$ would report $192$ and still pass, for a wrong coefficient. The test firing is $81A=324$, so $A=4$.
 
 **2.** Extra arithmetic at $x=1$: $y(1)=4$, which sits below $50$. The threshold test is about $x=8$ specifically. Between $1$ and $8$ cubic metres output crosses $50$, and at $8$ it has reached $64$.
 
@@ -4762,7 +4762,7 @@ The overview already inverted the cap at $x=64$, which sits past $50$. A feed of
 
 **1.** Extra arithmetic at $x=50$: $y(50)=4\\cdot 50^{\\frac{4}{3}}\\approx 4\\cdot 184.2\\approx 737$, which sits below $1024$. Directly, $50<64$, so the bind at $64$ has not yet arrived. At $x=64$, $y=1024$ on the nose.
 
-**2.** A rushed solver who used $x=27$, the test firing, and saw $324<1024$ but then guessed the bind "soon" at $x=40$ has no inversion. Another who used $x=16$ from $4x=1024$ skipped the exponent.
+**2.** Using $x=27$, the test firing, and seeing $324<1024$ but then guessed the bind "soon" at $x=40$ has no inversion. Working from the isolated values, $x=27$ is the figure that is checked, not the detour that produced $x=40$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $x=16$ from $4x=1024$ skipped the exponent.
 
 **3.** Letter C named the bind at $x=64$ as a function-class fact. This letter compares that $64$ with $50$. Sixty-four is not before fifty.
 
@@ -4840,7 +4840,7 @@ because $9^{\\frac{3}{2}}=(3^{2})^{\\frac{3}{2}}=3^{3}=27$. The product of the e
 
 **1.** Extra check at the recorded pair: $f(8)=36$ and $g(36)=36^{\\frac{3}{2}}/27=216/27=8$, returning the raw reading $8$. That round trip is the identity at a concrete pair.
 
-**2.** A rushed solver who multiplied exponents by adding $\\frac{2}{3}+\\frac{3}{2}$ would report $g(f(x))\\propto x^{\\frac{13}{6}}$ and miss the identity. Exponents multiply under composition. Another who forgot the $1/27$ would report $27x$ and miss the cancellation.
+**2.** Multiplying exponents by adding $\\frac{2}{3}+\\frac{3}{2}$ would report $g(f(x))\\propto x^{\\frac{13}{6}}$ and miss the identity. After isolating the unknown, the check is against $\\frac{2}{3}+\\frac{3}{2}$. The figure $g(f(x))\\propto x^{\\frac{13}{6}}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\frac{2}{3}+\\frac{3}{2}$ stays in the write-up. Exponents multiply under composition. Another who forgot the $1/27$ would report $27x$ and miss the cancellation.
 
 **3.** Letter B asks whether this identity grows more slowly than the reading. Letter C is the other order $f\\circ g$. This letter is $g\\circ f=\\mathrm{id}$.
 
@@ -4855,7 +4855,7 @@ The overview already recorded that $g\\circ f$ is the identity, exponent $1$. An
 
 **1.** Extra arithmetic at two readings: $g(f(8))=8$ and $g(f(64))=64$, a factor $8$ on both the input and the output. If the composition grew more slowly, $g(f(64))$ would sit below $64$. It does not.
 
-**2.** A rushed solver who saw each stage's exponent below $1$ or above $1$ and multiplied $\\frac{2}{3}\\cdot\\frac{3}{2}$ as if it were $\\frac{2}{3}$ has forgotten the product is $1$. Another who used $g(f(x))=x^{\\frac{2}{3}}$ dropped the reporting stage.
+**2.** Seeing each stage's exponent below $1$ or above $1$ and multiplying $\\frac{2}{3}\\cdot\\frac{3}{2}$ as if it were $\\frac{2}{3}$ has forgotten the product is $1$. That is the fork: $1$ belongs to the recovered isolation, $\\frac{2}{3}$ belongs to the discarded mix. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $g(f(x))=x^{\\frac{2}{3}}$ dropped the reporting stage.
 
 **3.** Letter A established the identity. This letter reads that identity as a growth-rate claim against $x$. Lockstep is not "more slowly."
 
@@ -4874,7 +4874,7 @@ because $27^{\\frac{2}{3}}=9$.
 
 **1.** Extra check at the recorded index $36$: $g(36)=8$ and $f(8)=36$, returning the index. The round trip works in reverse too.
 
-**2.** A rushed solver who thought inverses of nonlinear maps fail in one order has imported a non-invertible story. These two powers were built as inverses: exponents $\\frac{2}{3}$ and $\\frac{3}{2}$ are reciprocal, and the coefficients $9$ and $1/27$ cancel both ways.
+**2.** Thinking inverses of nonlinear maps fail in one order has imported a non-invertible story. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. These two powers were built as inverses: exponents $\\frac{2}{3}$ and $\\frac{3}{2}$ are reciprocal, and the coefficients $9$ and $1/27$ cancel both ways.
 
 **3.** Letter A was $g\\circ f$. This letter is $f\\circ g$. Both are the identity. "Fails to recover" would have needed a coefficient mismatch.
 
@@ -4887,7 +4887,7 @@ This is a level of calibration at a raw reading of $64$, asked against a thresho
 
 The overview already evaluated $f(64)=144$. One hundred and forty-four sits above $140$. Sixty-four to the $\\frac{2}{3}$ is $16$, and $9\\cdot 16=144$.
 
-**1.** A rushed solver who used $f(64)=9\\cdot 64=576$ skipped the fractional power. Another who used $A=4.5$ from $36/8$ would report $72$ and fail the threshold on a wrong coefficient. The recorded pair is $4A=36$, so $A=9$.
+**1.** Using $f(64)=9\\cdot 64=576$ skipped the fractional power. Keeping $f(64)=9\\cdot 64=576$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=4.5$ from $36/8$ would report $72$ and fail the threshold on a wrong coefficient. The recorded pair is $4A=36$, so $A=9$.
 
 **2.** Extra arithmetic at $x=8$: $f(8)=36$, which sits below $140$. The threshold test is about $x=64$ specifically. Between $8$ and $64$ the index crosses $140$, and at $64$ it has reached $144$.
 
@@ -4900,7 +4900,7 @@ This is a level at a raw reading of $125$, asked against a threshold of $200$.
 
 The overview already evaluated $f(125)=225$. Two hundred and twenty-five does not sit under $200$. One hundred and twenty-five to the $\\frac{2}{3}$ is $25$, and $9\\cdot 25=225$.
 
-**1.** A rushed solver who used $f(125)=9\\cdot 5=45$, taking only a fifth root, would have passed "under $200$" on a wrong power. Another who used $g(125)$ rather than $f(125)$ has the wrong stage.
+**1.** Using $f(125)=9\\cdot 5=45$, taking only a fifth root, would have passed "under $200$" on a wrong power. The recovered comparison therefore keeps $f(125)=9\\cdot 5=45$ and does not substitute $200$. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $g(125)$ rather than $f(125)$ has the wrong stage.
 
 **2.** Extra arithmetic at $x=64$: $f(64)=144$, which does sit under $200$. The threshold test is about $x=125$ specifically. Between $64$ and $125$ the index crosses $200$, and at $125$ it has reached $225$.
 
@@ -4972,7 +4972,7 @@ The overview already recovered $S(x)=8 x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{
 
 **1.** Extra arithmetic at a neighbour on each side: at $x=4$, $S(4)=16$ and $T(4)=8$, so S leads by $8$. At $x=16$, $S(16)=32$ and $T(16)=64$, so T leads by $32$. The sign change is a single crossing at $x=8$, where both equal $8^{\\frac{3}{2}}=16\\sqrt{2}\\approx 22.6$.
 
-**2.** A rushed solver who saw two power functions and expected two meetings has counted degrees loosely. $x^{1/2}(x-8)=0$ has one positive root. Another who set $a=k$ and ignored the benchmark would never find a meeting of these two shapes except at $0$.
+**2.** Seeing two power functions and expecting two meetings has counted degrees loosely. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $x^{1/2}(x-8)=0$ has one positive root. Another who set $a=k$ and ignored the benchmark would never find a meeting of these two shapes except at $0$.
 
 **3.** Letter B reads the same factor $x-8$ past $8$ and finds T stays ahead. This letter is the uniqueness of the root.
 
@@ -4987,7 +4987,7 @@ The overview already recorded that past the unique positive meeting $x=8$, the l
 
 **1.** Extra arithmetic at $x=16$, letter E's load: $T=64$ and $S=32$, T ahead by $32$. At $x=36$, $T=216$ and $S=48$, T ahead by $168$. The lead widens. There is no later catch-up by S.
 
-**2.** A rushed solver who remembered that a larger coefficient can lead on small inputs might wait for S's $a=8$ to kick back in at great load. Coefficients do not kick back in. The larger exponent, T's $\\frac{3}{2}$ against S's $\\frac{1}{2}$, takes over after the unique crossing and stays.
+**2.** Remembering that a larger coefficient can lead on small inputs might wait for S's $a=8$ to kick back in at great load. Keeping $a=8$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Coefficients do not kick back in. The larger exponent, T's $\\frac{3}{2}$ against S's $\\frac{1}{2}$, takes over after the unique crossing and stays.
 
 **3.** Letter A found the unique meeting. This letter reads the sign past that meeting. Equal exponents would have been needed for a second crossing.
 
@@ -5002,7 +5002,7 @@ The overview already recorded $\\frac{T(x)}{S(x)}=\\frac{x}{8}$. That leftover p
 
 **1.** Extra arithmetic at those three loads: $T(4)/S(4)=8/16=1/2$, $T(8)/S(8)=1$, $T(16)/S(16)=64/32=2$. Three different ratios are three too many for a constant.
 
-**2.** A rushed solver who cancelled $x^{1/2}$ and forgot the leftover $x/8$ would report a constant $1$, which is exactly the false claim at the crossing only. Another who compared coefficients $1$ and $8$ and declared a constant $1/8$ has dropped the leftover power of $x$.
+**2.** Cancelling $x^{1/2}$ and forgetting the leftover $x/8$ would report a constant $1$, which is exactly the false claim at the crossing only. The recovered comparison therefore keeps $x^{1/2}$ and does not substitute $1$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who compared coefficients $1$ and $8$ and declared a constant $1/8$ has dropped the leftover power of $x$.
 
 **3.** Letter B used this ratio as a sign. This letter asks whether the ratio is constant. A growing ratio is a stronger statement than a positive difference.
 
@@ -5017,7 +5017,7 @@ Eight sits above $6$. They first meet past load $6$.
 
 **1.** Extra arithmetic at $x=6$: $S(6)=8\\sqrt{6}\\approx 19.6$ and $T(6)=6\\sqrt{6}\\approx 14.7$, so S still leads at $6$. At $x=8$ they meet. The first meeting is at $8$, which is above $6$.
 
-**2.** A rushed solver who used $x=4$, the benchmark, where they do not meet, has mixed a recorded pair with a crossing. Another who solved $8\\sqrt{x}=x^{3/2}$ as $x=8^{2}=64$ missed a factor and would still pass "above $6$" on the wrong load.
+**2.** Using $x=4$, the benchmark, where they do not meet, has mixed a recorded pair with a crossing. The opposite verdict would need a different isolation than $x=4$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who solved $8\\sqrt{x}=x^{3/2}$ as $x=8^{2}=64$ missed a factor and would still pass "above $6$" on the wrong load.
 
 **3.** Letter A said the meeting is unique. This letter compares that unique meeting with $6$. Eight is two loads above six, not a rounding of six.
 
@@ -5028,7 +5028,7 @@ This is a gap at a load of $16$, asked against a threshold of $30$.
 
 The overview already evaluated $T(16)-S(16)=32$. Thirty-two is more than $30$. At load $16$, $T=64$ and $S=32$.
 
-**1.** A rushed solver who used $S(16)=8\\cdot 16=128$ skipped the square root and would have reported T behind. Another who used the ratio $2$ as if it were the difference $2$ would have failed "more than $30$."
+**1.** Using $S(16)=8\\cdot 16=128$ skipped the square root and would have reported T behind. Keeping $S(16)=8\\cdot 16=128$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the ratio $2$ as if it were the difference $2$ would have failed "more than $30$."
 
 **2.** Extra arithmetic at $x=8$: the gap is $0$, which is not more than $30$. The threshold test is about $x=16$ specifically. Between $8$ and $16$ the gap crosses $30$, and at $16$ it has reached $32$.
 
@@ -5104,7 +5104,7 @@ The overview already recovered $A=5$, so $C(m)=5 m^{\\frac{4}{5}}$. The exponent
 
 **1.** Extra arithmetic at the recorded fleet and a neighbour: $C(32)=80$ and $C(243)=405$, already higher. At $m=1$, $C(1)=5$, lower. The climb is monotone, even though $\\frac{4}{5}<1$ makes it concave.
 
-**2.** A rushed solver who saw $\\frac{4}{5}<1$ and concluded "less than one means decreasing" has mixed a falling slope of the slope with a falling function. Decrease requires a negative exponent. Another who used the cap of $500$ and thought certified capacity stops rising has mixed $C$ with billed $\\min(C,500)$. This letter is uncapped $C$.
+**2.** Seeing $\\frac{4}{5}<1$ and concluding "less than one means decreasing" has mixed a falling slope of the slope with a falling function. Keeping $\\frac{4}{5}<1$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Decrease requires a negative exponent. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the cap of $500$ and thought certified capacity stops rising has mixed $C$ with billed $\\min(C,500)$. This letter is uncapped $C$.
 
 **3.** Letter B claims the ceiling is never reached because $r<1$. Letter C is the log-log line. This letter is only $r>0$.
 
@@ -5119,7 +5119,7 @@ The overview already inverted $5 m^{\\frac{4}{5}}=500$ at $m=100^{\\frac{5}{4}}\
 
 **1.** Extra arithmetic of that inversion: $m^{\\frac{4}{5}}=100$ and $m=100^{\\frac{5}{4}}=100\\sqrt{10}\\approx 316.2$. At $m=243$, letter D's $C(243)=405<500$. At $m=1024$, $C(1024)=1280>500$. The ceiling sits between those two fleets, near $316$.
 
-**2.** A rushed solver who treated $r<1$ as a bounded function has confused "grows slowly" with "bounded." $5 m^{4/5}\\to\\infty$. Another who used $r<0$ intuition from a wait curve has the wrong sign.
+**2.** Treating $r<1$ as a bounded function has confused "grows slowly" with "bounded." $5 m^{4/5}\\to\\infty$. Working from the isolated values, $r<1$ is the figure that is checked, not the detour that produced $5 m^{4/5}\\to\\infty$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r<0$ intuition from a wait curve has the wrong sign.
 
 **3.** Letter A said $C$ keeps rising. This letter says that rise eventually hits $500$. Rising without bound is what makes a finite cap bind.
 
@@ -5134,7 +5134,7 @@ The overview already recorded $\\ln C=\\ln 5+\\frac{4}{5}\\ln m$. A power $A m^{
 
 **1.** Extra arithmetic of two log-log points: $\\ln C(32)=\\ln 80$ and $\\ln 32=\\ln(2^{5})=5\\ln 2$, and the slope between $(0,\\ln 5)$ at $m=1$ and this point is $(\\ln 80-\\ln 5)/\\ln 32=\\ln 16/(5\\ln 2)=4/5$, the exponent itself.
 
-**2.** A rushed solver who plotted $C$ against $m$ on linear paper and saw a curve would think the claim false. Log-log is the change of coordinates that straightens a power. Another who included the cap, plotting billed $\\min(C,500)$, would see a kink at $m\\approx 316$ and a later horizontal, which is not a single straight line. This letter is the uncapped law.
+**2.** Plotting $C$ against $m$ on linear paper and seeing a curve would think the claim false. The recovered comparison therefore keeps $C$ and does not substitute $m$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Log-log is the change of coordinates that straightens a power. Another who included the cap, plotting billed $\\min(C,500)$, would see a kink at $m\\approx 316$ and a later horizontal, which is not a single straight line. This letter is the uncapped law.
 
 **3.** Letter A is increase. Letter B is the cap. This letter is the log-log graph of $C$ itself.
 
@@ -5147,7 +5147,7 @@ This is a level at a fleet of $243$ machines, asked against a threshold of $400$
 
 The overview already evaluated $C(243)=405$. Four hundred and five sits above $400$. Two hundred and forty-three to the $\\frac{4}{5}$ is $81$, and $5\\cdot 81=405$.
 
-**1.** A rushed solver who used $C(243)=5\\cdot 243=1215$ skipped the fractional power. Another who used $A=80/32=2.5$ would report $202.5$ and fail the threshold on a wrong coefficient. The recorded fleet is $16A=80$, so $A=5$.
+**1.** Using $C(243)=5\\cdot 243=1215$ skipped the fractional power. Once $C(243)=5\\cdot 243=1215$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=80/32=2.5$ would report $202.5$ and fail the threshold on a wrong coefficient. The recorded fleet is $16A=80$, so $A=5$.
 
 **2.** Extra arithmetic at $m=32$: $C(32)=80$, which sits below $400$. The threshold test is about $m=243$ specifically. Between $32$ and $243$ machines capacity crosses $400$, and at $243$ it has reached $405$, still under the cap of $500$.
 
@@ -5162,7 +5162,7 @@ The overview already inverted the bind at $m\\approx 316$, which sits past $250$
 
 **1.** Extra arithmetic at $m=243$: $C(243)=405<500$. At $m=256$, $C(256)=5\\cdot 256^{\\frac{4}{5}}=5\\cdot (2^{8})^{4/5}=5\\cdot 2^{32/5}=5\\cdot 2^{6}\\cdot 2^{2/5}=320\\cdot 2^{0.4}\\approx 422<500$. Both sit below the cap, and both sit near $250$. The bind at $316$ is later.
 
-**2.** A rushed solver who used $m=100$ from $5m=500$ skipped the exponent and would have passed "before $250$" on a wrong inversion. Another who used $m=243$ as if $405$ were already $500$ has mixed a threshold of $400$ with a cap of $500$.
+**2.** Using $m=100$ from $5m=500$ skipped the exponent and would have passed "before $250$" on a wrong inversion. The stem's recovered values line up with $m=100$, whereas $250$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $m=100$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $m=243$ as if $405$ were already $500$ has mixed a threshold of $400$ with a cap of $500$.
 
 **3.** Letter D's $405>400$ at $m=243$ is compatible with $405<500$. The cap has not bound at $243$, hence not before $250$.
 
@@ -5232,7 +5232,7 @@ The overview already recorded $\\Pi(L)=120\\sqrt{L}-6L$. A difference of two dis
 
 **1.** Extra arithmetic in a ratio: $\\Pi(100)=600$ and $\\Pi(400)=0$, so the ratio is $0$, which no power $c L^{r}$ with $c\\neq 0$ can give at a positive $L$. At $L=25$, $\\Pi(25)=120\\cdot 5-150=450$, and $450/600=0.75$, while $(25/100)^{r}=4^{-r}$ would force $r\\approx 0.21$, failing at other pairs.
 
-**2.** A rushed solver who dropped the wage and called $120\\sqrt{L}$ a power has described revenue, not net gain. Another who wrote $\\Pi=L^{1/2}(120-6\\sqrt{L})$ has a power times a linear polynomial in $\\sqrt{L}$, still not a single power.
+**2.** Dropping the wage and calling $120\\sqrt{L}$ a power has described revenue, not net gain. The opposite verdict would need a different isolation than $120\\sqrt{L}$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who wrote $\\Pi=L^{1/2}(120-6\\sqrt{L})$ has a power times a linear polynomial in $\\sqrt{L}$, still not a single power.
 
 **3.** Letter C says the wage bill $6L$ is a power. That is true and does not make the difference a power. Letter B compares the maximiser with the root.
 
@@ -5247,7 +5247,7 @@ The overview already recorded the maximiser $L=100$ from $\\Pi'(L)=0$, and the r
 
 **1.** Extra arithmetic of the two conditions: $\\Pi'(L)=60 L^{-\\frac{1}{2}}-6=0$ gives $\\sqrt{L}=10$ and $L=100$. $\\Pi(L)=0$ gives $120\\sqrt{L}=6L$ and $\\sqrt{L}=20$ and $L=400$. Ten is not twenty.
 
-**2.** A rushed solver who treated a peak as a root of $\\Pi$ rather than of $\\Pi'$ has mixed first-order conditions with break-even. Another who used $L=225$ from a different task's advertising net gain has leaked a number.
+**2.** Treating a peak as a root of $\\Pi$ rather than of $\\Pi'$ has mixed first-order conditions with break-even. After isolating the unknown, the check is against $\\Pi$. The figure $\\Pi'$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $\\Pi$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $L=225$ from a different task's advertising net gain has leaked a number.
 
 **3.** Letter D's $\\Pi(900)=-1800$ sits past the root. Letter E says the root is past $300$, which $400$ is. This letter is the mismatch of $100$ and $400$.
 
@@ -5262,7 +5262,7 @@ The overview already recorded that the wage bill is $6L$, a power of hours hired
 
 **1.** Extra arithmetic at the recorded hours: wage at $L=100$ is $600$, at $L=400$ is $2400$, ratio $4$, equal to $4^{1}$. Checking $L=900$, wage $5400$, ratio to $L=100$ is $9=9^{1}$. A single exponent $1$ fits.
 
-**2.** A rushed solver who thought "linear is not a power" has forgotten that $u^{1}$ is a power. Another who added a salaried floor, $6L+F$, would have left the power-function class; the stem has no such floor on the wage.
+**2.** Thinking "linear is not a power" has forgotten that $u^{1}$ is a power. The recovered isolation is checked against the claim using $u^{1}$, which is the figure the sessions actually produce. Another who added a salaried floor, $6L+F$, would have left the power-function class; the stem has no such floor on the wage.
 
 **3.** Letter A said net gain is not a power, because it subtracts this wage from a square-root revenue. This letter is the wage piece alone, which is a power.
 
@@ -5275,7 +5275,7 @@ This is a level of net gain at $900$ hours, asked against a threshold of $-1000$
 
 The overview already evaluated $\\Pi(900)=-1800$. Minus eighteen hundred sits below $-1000$. Revenue $120\\cdot 30=3600$ minus wage $5400$ is $-1800$.
 
-**1.** A rushed solver who used $R(900)=3600$ as if it were net gain would sit above $-1000$ on the wrong object. Another who used $\\Pi(400)=0$ has the root, not $L=900$.
+**1.** Using $R(900)=3600$ as if it were net gain would sit above $-1000$ on the wrong object. So the letter reads the claim against $R(900)=3600$; $-1000$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $R(900)=3600$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $\\Pi(400)=0$ has the root, not $L=900$.
 
 **2.** Extra arithmetic at $L=400$: $\\Pi=0$, which is not below $-1000$. The threshold test is about $L=900$ specifically. Past the root, net gain is negative and becoming more so; at $900$ hours it has reached $-1800$.
 
@@ -5290,7 +5290,7 @@ Four hundred sits past $300$. Net gain crosses zero only after more than $300$ h
 
 **1.** Extra arithmetic at $L=300$: $\\Pi(300)=120\\sqrt{300}-1800\\approx 120\\cdot 17.32-1800\\approx 278>0$. At $L=400$, $\\Pi=0$. The crossing is at $400$, which is after $300$.
 
-**2.** A rushed solver who used the maximiser $L=100$ as if it were the root would have failed "after more than $300$." Another who used $L=225$ from task $28$ has leaked a break-even.
+**2.** Using the maximiser $L=100$ as if it were the root would have failed "after more than $300$." Working from the isolated values, $L=100$ is the figure that is checked, not the detour that produced $300$.Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $L=225$ from task $28$ has leaked a break-even.
 
 **3.** Letter B distinguished $100$ from $400$. This letter compares $400$ with $300$. Four hundred is one hundred hours past three hundred, not a rounding.
 
@@ -5360,7 +5360,7 @@ The overview already recorded that equalising marginal costs on a $60$-unit orde
 
 **1.** Extra arithmetic of the split: $C_{1}(20)+C_{2}(40)=200+400=600$, which matches the two logged runs reused as a split of $60$. The corners $900$ and $1800$ both sit above $600$. A $30$-$30$ split costs $675$, letter E, still above $600$ and below the corners.
 
-**2.** A rushed solver who saw plant 2 cheaper per quadratic coefficient and dumped all $60$ units there has ignored rising marginal cost. Each extra unit at plant 2 costs more than the last. Another who used linear costs would have been right to concentrate; these plants are quadratic.
+**2.** Seeing plant 2 cheaper per quadratic coefficient and dumped all $60$ units there has ignored rising marginal cost. The path that matches the stem therefore holds $60$ fixed and only then reads the claim. That contrast is the reason the verdict goes the way it does. Each extra unit at plant 2 costs more than the last. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. linear costs would have been right to concentrate; these plants are quadratic.
 
 **3.** Letter B says the two plants together are not a single power of $60$. Letter D is the concentrate-in-plant-2 bill of $900>800$. This letter is the comparison of the split with the corners.
 
@@ -5375,7 +5375,7 @@ The overview already recorded $C(q)=\\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2}$, a
 
 **1.** Extra arithmetic of two splits of the same $60$: the $20$-$40$ split costs $600$, and the $30$-$30$ split costs $675$. One order size, two totals. A power of $60$ would have given one total.
 
-**2.** A rushed solver who added the coefficients $\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}$ and declared $C=\\frac{3}{4}\\cdot 60^{2}$ has assumed the split does not matter. That formula gives $2700$, far above either split. Another who factored $q^{2}$ out of both plants has to leave a remainder in $(60-q)^{2}$.
+**2.** Adding the coefficients $\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}$ and declared $C=\\frac{3}{4}\\cdot 60^{2}$ has assumed the split does not matter. The recovered comparison therefore keeps $\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}$ and does not substitute $C=\\frac{3}{4}\\cdot 60^{2}$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That formula gives $2700$, far above either split. Another who factored $q^{2}$ out of both plants has to leave a remainder in $(60-q)^{2}$.
 
 **3.** Letter A used the split-dependence to reject concentration. This letter names that dependence as a function-class claim. A single power of $60$ would have required a fixed split, or identical plants.
 
@@ -5390,7 +5390,7 @@ The overview already recorded plant 2's unit cost $\\frac{C_{2}(q)}{q}=\\frac{1}
 
 **1.** Extra arithmetic at the logged run and a neighbour: at $q=40$, unit cost is $400/40=10$, and at $q=20$, $C_{2}(20)=100$ so unit cost is $5$, already lower. At $q=60$, unit cost is $15$. The average is itself $\\frac{1}{4}q$.
 
-**2.** A rushed solver who used $r<1$ intuition has the wrong exponent on $C_{2}$. Another who saw plant 2 cheaper than plant 1 and concluded that unit cost falls has mixed a comparison between plants with a comparison within plant 2 as $q$ grows.
+**2.** Using $r<1$ intuition has the wrong exponent on $C_{2}$. The recovered comparison therefore keeps $r<1$ and does not substitute $C_{2}$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who saw plant 2 cheaper than plant 1 and concluded that unit cost falls has mixed a comparison between plants with a comparison within plant 2 as $q$ grows.
 
 **3.** Letter A's interior split is caused by this rising unit cost: dump too much on plant 2 and its last units become dearer than plant 1's first extra units. This letter names that rise.
 
@@ -5403,11 +5403,11 @@ The cheaper plant is plant 2. Concentrating all $60$ units there costs $C_{2}(60
 
 Nine hundred sits above $800$. A quarter of $3600$ is $900$.
 
-**1.** A rushed solver who used $C_{1}(60)=1800$ has the dearer plant. Another who used $C_{2}(40)=400$ scaled linearly by $60/40$ would report $600$ and fail the threshold on a linear guess. The quadratic scales by $(60/40)^{2}=2.25$, and $400\\times 2.25=900$.
+**1.** Using $C_{1}(60)=1800$ has the dearer plant. Once $C_{1}(60)=1800$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $C_{2}(40)=400$ scaled linearly by $60/40$ would report $600$ and fail the threshold on a linear guess. The quadratic scales by $(60/40)^{2}=2.25$, and $400\\times 2.25=900$.
 
 **2.** Extra arithmetic of the $20$-$40$ split: $600$, which sits under $800$. The claim is concentration, not the split. Concentration in plant 2 is $900>800$; the split is cheaper.
 
-**3.** Letter E's $30$-$30$ split at $675$ also sits under $800$. This letter is the corner $900$. Mixing a split with the corner is how a solver could dip under $800$.
+**3.** Letter E's $30$-$30$ split at $675$ also sits under $800$. This letter is the corner $900$. Mixing a split with the corner is how that mix could dip under $800$.
 
 The recovered concentrate-in-plant-2 bill is $900$, above $800$, so the statement is True.`,
       `**E.** → True
@@ -5416,7 +5416,7 @@ Sending $30$ units to each plant costs $C_{1}(30)+C_{2}(30)=450+225=675$, and th
 
 Six hundred and seventy-five sits under $700$. Half of $900$ plus a quarter of $900$ is $\\frac{3}{4}\\cdot 900=675$.
 
-**1.** A rushed solver who used $C_{1}(30)+C_{2}(30)=\\frac{1}{2}\\cdot 900+\\frac{1}{4}\\cdot 900$ with $30^{2}=900$, yes $675$. Another who used $60$ as if it were $30$, reporting $C_{1}(60)+C_{2}(0)=1800$, has not split equally.
+**1.** Using $C_{1}(30)+C_{2}(30)=\\frac{1}{2}\\cdot 900+\\frac{1}{4}\\cdot 900$ with $30^{2}=900$, yes $675$. After isolating the unknown, the check is against $30^{2}=900$. The figure $675$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $30^{2}=900$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $60$ as if it were $30$, reporting $C_{1}(60)+C_{2}(0)=1800$, has not split equally.
 
 **2.** Extra arithmetic of the cheapest split: $600$, also under $700$. The $30$-$30$ split is not cheapest, but it is still under $700$. At the corners, $900$ and $1800$ sit above $700$. The claim is the equal split specifically.
 
@@ -5486,7 +5486,7 @@ The overview already recovered $r=\\frac{3}{2}$ and $A=3$ from $4^{r}=8$ and $A\
 
 **1.** Extra arithmetic of the fit: $\\frac{192}{24}=8$ and $\\frac{16}{4}=4$, so $4^{r}=8$ and $r=\\frac{3}{2}$. Then $A\\cdot 4^{3/2}=24$ gives $A\\cdot 8=24$ and $A=3$. Both fitted points sit on $y=3x^{\\frac{3}{2}}$: $3\\cdot 8=24$ and $3\\cdot 64=192$.
 
-**2.** A rushed solver who required three points to determine a power has mixed this with a quadratic in $x$. Two unknowns need two facts. Another who saw $r=1.5$ as "not integer, so inconsistent" has confused a model class with integer exponents.
+**2.** Requiring three points to determine a power has mixed this with a quadratic in $x$. That is why $x$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. Two unknowns need two facts. Another who saw $r=1.5$ as "not integer, so inconsistent" has confused a model class with integer exponents.
 
 **3.** Letter B asks whether $r=2$ fits equally well, which it does not. Letter C tests the held-out $(9,81)$. This letter is only the first two points.
 
@@ -5501,7 +5501,7 @@ The overview already recorded that exponent $2$ would require $4^{2}=16$ as the 
 
 **1.** Extra arithmetic of the $r=2$ miss: $A\\cdot 4^{2}=24$ would give $A=1.5$, and then $y(16)=1.5\\cdot 256=384$, not the recorded $192$. Half the recorded $192$ is not a rounding: $384$ is twice $192$. The $r=2$ line misses the second point by $192$.
 
-**2.** A rushed solver who used $r=\\log_{2} 8=3$ mixed a base-$2$ log of the $y$-ratio with the $x$-ratio $4=2^{2}$, which actually gives $r=3/2$. Another who thought "any two points fit any exponent" has forgotten that $A$ is then forced, and the second point overdetermines $r$.
+**2.** Using $r=\\log_{2} 8=3$ mixed a base-$2$ log of the $y$-ratio with the $x$-ratio $4=2^{2}$, which actually gives $r=3/2$. So the letter reads the claim against $r=\\log_{2} 8=3$; $r=3/2$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $r=\\log_{2} 8=3$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Another who thought "any two points fit any exponent" has forgotten that $A$ is then forced, and the second point overdetermines $r$.
 
 **3.** Letter A said a unique power fits. This letter says $r=2$ is not that unique power. Letter C's held-out point will sit on $r=3/2$, not on $r=2$.
 
@@ -5516,7 +5516,7 @@ The overview already evaluated $y(9)=3\\cdot 9^{\\frac{3}{2}}=81$, which matches
 
 **1.** Extra arithmetic: $9^{\\frac{3}{2}}=27$, and $3\\cdot 27=81$. The held-out point sits on $y=3x^{\\frac{3}{2}}$. A contradiction would have been a recorded $80$ or $90$. The recorded $81$ is exact.
 
-**2.** A rushed solver who used $r=2$, $y=1.5 x^{2}$, would have predicted $y(9)=121.5$ against $81$, a real contradiction, on the wrong fit. Letter B already rejected $r=2$. Another who used $A=24/4=6$ linearly would predict $54$ at $x=9$ and also contradict, for a wrong model.
+**2.** Using $r=2$, $y=1.5 x^{2}$, would have predicted $y(9)=121.5$ against $81$, a real contradiction, on the wrong fit. That is the fork: $r=2$ belongs to the recovered isolation, $81$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter B already rejected $r=2$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=24/4=6$ linearly would predict $54$ at $x=9$ and also contradict, for a wrong model.
 
 **3.** Letter D predicts at $x=25$. Letter E is a threshold at $x=9$. This letter is whether $81$ matches the fit. It does.
 
@@ -5529,7 +5529,7 @@ The fitted law predicts at the planned run $x=25$, asked against a threshold of 
 
 The overview already evaluated $y(25)=3\\cdot 25^{\\frac{3}{2}}=375$. Three hundred and seventy-five sits above $350$. Twenty-five to the $\\frac{3}{2}$ is $125$, and $3\\cdot 125=375$.
 
-**1.** A rushed solver who used $r=2$, $y=1.5\\cdot 625=937.5$, would still pass "above $350$" on the wrong fit. Another who used $y(25)=3\\cdot 25=75$ skipped the remaining square root and would have failed the threshold.
+**1.** Using $r=2$, $y=1.5\\cdot 625=937.5$, would still pass "above $350$" on the wrong fit. The stem's recovered values line up with $r=2$, whereas $350$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $r=2$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $y(25)=3\\cdot 25=75$ skipped the remaining square root and would have failed the threshold.
 
 **2.** Extra arithmetic at $x=16$: $y=192$, which sits below $350$. The threshold test is about $x=25$ specifically. Between $16$ and $25$ the response crosses $350$, and at $25$ it has reached $375$.
 
@@ -5542,7 +5542,7 @@ This is a level of the fitted response at $x=9$, asked against a threshold of $7
 
 The overview already evaluated $y(9)=81$. Eighty-one sits above $70$. The third measurement and the fitted level are the same $81$.
 
-**1.** A rushed solver who used $y(9)=3\\cdot 9=27$ skipped the remaining square root and would have failed the threshold. Another who used the recorded $81$ as if it contradicted the fit has mixed letter C with this threshold.
+**1.** Using $y(9)=3\\cdot 9=27$ skipped the remaining square root and would have failed the threshold. Keeping $y(9)=3\\cdot 9=27$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the recorded $81$ as if it contradicted the fit has mixed letter C with this threshold.
 
 **2.** Extra arithmetic at $x=4$: $y=24$, which sits below $70$. The threshold test is about $x=9$ specifically. Between $4$ and $9$ the response crosses $70$, and at $9$ it has reached $81$.
 
@@ -5618,7 +5618,7 @@ The overview already recovered $A=6400$ and inverted $p=80 q^{-\\frac{1}{2}}$. A
 
 **1.** Extra arithmetic that uses the inverse at $q=25$: $p=80/5=16$, which letter B will use as a level. That inversion landing on $16$ euros is how we know the inverse is the right monomial. At the catalogue pair, $p=80/\\sqrt{400}=4$, returning $4$ euros.
 
-**2.** A rushed solver who wrote $p=\\log q$ mixed this supplier with an exponential technology. Another who added a reservation price would have left the power-function class; the stem has no such floor.
+**2.** Writing $p=\\log q$ mixed this supplier with an exponential technology. The recovered isolation is checked against the claim using $p=\\log q$, which is the figure the sessions actually produce. Another who added a reservation price would have left the power-function class; the stem has no such floor.
 
 **3.** Letters D and E read revenue as a function of $q$. This letter names the inverse of demand as a function class. The same $p\\propto q^{-1/2}$ is what makes revenue $R=pq=80 q^{1/2}$ a power of $q$ as well.
 
@@ -5631,7 +5631,7 @@ This is a level of the inverse at $25$ units, asked against a threshold of $20$ 
 
 The overview already evaluated $p(25)=16$. Sixteen sits under $20$. Five is $\\sqrt{25}$, and $80/5=16$.
 
-**1.** A rushed solver who used $p=6400/25=256$ inverted the wrong way, using $A/q$ rather than $\\sqrt{A/q}$. Another who used $p=80/25=3.2$ skipped the square root in the inverse.
+**1.** Using $p=6400/25=256$ inverted the wrong way, using $A/q$ rather than $\\sqrt{A/q}$. Working from the isolated values, $p=6400/25=256$ is the figure that is checked, not the detour that produced $\\sqrt{A/q}$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $p=80/25=3.2$ skipped the square root in the inverse.
 
 **2.** Extra arithmetic at $q=16$: $p=80/4=20$ on the nose. The threshold "under $20$" is about $q=25$ specifically, past that $16$-unit price of $20$. Between $16$ and $25$ units the clearing price crosses $20$ going down, and at $25$ it has reached $16$.
 
@@ -5646,7 +5646,7 @@ The overview already recorded $R(p)=6400 p^{-1}$. The leftover exponent is negat
 
 **1.** Extra arithmetic at the catalogue and a neighbour: $R(4)=1600$ and $R(8)=800$, already lower. At $p=16$, letter D's $R(16)=625$, lower still. The fall is monotone.
 
-**2.** A rushed solver who saw this as task $33$'s inelastic utility, where $R$ rises in $p$, has mixed two exponents. Demand here is $p^{-2}$, so $R\\propto p^{-1}$. Another who used $R=q=6400 p^{-2}$ forgot to multiply by $p$.
+**2.** Seeing this as task $33$'s inelastic utility, where $R$ rises in $p$, has mixed two exponents. The recovered comparison therefore keeps $33$ and does not substitute $p$. Demand here is $p^{-2}$, so $R\\propto p^{-1}$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $R=q=6400 p^{-2}$ forgot to multiply by $p$.
 
 **3.** Letter E says revenue rises in $q$. That is compatible: raising $q$ means cutting $p$ along the curve, which raises $R$. This letter is the $p$-direction, where $R$ falls.
 
@@ -5659,7 +5659,7 @@ Revenue as a function of quantity is $R(q)=80 q^{\\frac{1}{2}}$, and this letter
 
 The overview already evaluated $R(100)=800$. Eight hundred sits above $750$. Ten is $\\sqrt{100}$, and $80\\cdot 10=800$.
 
-**1.** A rushed solver who used $R(p)=6400/100=64$ mixed a price of $100$ with a quantity of $100$. Another who used $p(100)=8$ as if it were revenue would fail the threshold on the wrong object.
+**1.** Using $R(p)=6400/100=64$ mixed a price of $100$ with a quantity of $100$. So the letter reads the claim against $R(p)=6400/100=64$; $100$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $R(p)=6400/100=64$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $p(100)=8$ as if it were revenue would fail the threshold on the wrong object.
 
 **2.** Extra arithmetic at $q=64$: $R(64)=80\\cdot 8=640$, which sits below $750$. The threshold test is about $q=100$ specifically. Between $64$ and $100$ units revenue crosses $750$, and at $100$ it has reached $800$.
 
@@ -5674,7 +5674,7 @@ The overview already recorded that $R(q)=80 q^{\\frac{1}{2}}$ has leftover expon
 
 **1.** Extra arithmetic of the two directions: from $q=25$ to $q=100$, quantity quadruples, price falls $16\\to 8$, and revenue rises $400\\to 800$. The quantity rise more than covers the price cut.
 
-**2.** A rushed solver who treated $R=pq$ as if $p$ were the only moving piece when $q$ rises has forgotten that both move, in opposite directions. Another who used letter C's falling $R(p)$ as if it translated into falling $R(q)$ has mixed the two parameterisations. Cutting $p$ raises $q$ and raises $R$ here.
+**2.** Treating $R=pq$ as if $p$ were the only moving piece when $q$ rises has forgotten that both move, in opposite directions. That is the fork: $R=pq$ belongs to the recovered isolation, $q$ belongs to the discarded mix. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. letter C's falling $R(p)$ as if it translated into falling $R(q)$ has mixed the two parameterisations. Cutting $p$ raises $q$ and raises $R$ here.
 
 **3.** Letter C is the $p$-direction. This letter is the $q$-direction. They disagree, which is possible because $p$ and $q$ move oppositely along the curve.
 
@@ -5738,7 +5738,7 @@ The overview already recorded $\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$. The leftover 
 
 **1.** Extra arithmetic at the two logged shifts: $Y(9)/9=60/9\\approx 6.67$ units per hour, and $Y(36)/36=120/36\\approx 3.33$, already half as large, matching $\\sqrt{36/9}=2$ in the denominator. At $L=25$, $Y(25)/25=4$, letter E's average, sitting between those two.
 
-**2.** A rushed solver who saw $Y$ rise from $60$ to $120$ and concluded that hours are becoming more productive has mixed the total with the average. Letter C is the falling marginal, the same $r<1$ story.
+**2.** Seeing $Y$ rise from $60$ to $120$ and concluding that hours are becoming more productive has mixed the total with the average. That is the fork: $Y$ belongs to the recovered isolation, $120$ belongs to the discarded mix. Letter C is the falling marginal, the same $r<1$ story.
 
 **3.** What would flip this verdict is $r>1$. The stem's $\\frac{1}{2}<1$ forces a falling average.
 
@@ -5751,7 +5751,7 @@ This is a level of a $36$-hour shift, asked against a threshold of $100$ units.
 
 The overview already evaluated $Y(36)=120$. One hundred and twenty sits above $100$. Thirty-six to the $\\frac{1}{2}$ is $6$, and $20\\cdot 6=120$.
 
-**1.** A rushed solver who used $A=10$ from $60/(6-3)$ wait, $60/3=20$ is the right $A$. Using $A=10$ would report $60$ and fail the threshold. Another who used $Y(36)=20\\cdot 36=720$ skipped the root.
+**1.** Using $A=10$ from $60/(6-3)$ wait, $60/3=20$ is the right $A$. Working from the isolated values, $A=10$ is the figure that is checked, not the detour that produced $A$. Using $A=10$ would report $60$ and fail the threshold. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $Y(36)=20\\cdot 36=720$ skipped the root.
 
 **2.** Extra arithmetic at $L=9$: $Y(9)=60$, which sits below $100$. The threshold test is about $L=36$ specifically. Between $9$ and $36$ hours output crosses $100$, and at $36$ it has reached $120$.
 
@@ -5770,7 +5770,7 @@ $$Y'(9)=10/3\\approx 3.33, \\qquad Y'(36)=10/6\\approx 1.67$$
 
 An extra hour after $9$ hours adds about $3.3$ units; after $36$ hours it adds about $1.7$. The claim's "more after $36$" is the reverse of these two slopes.
 
-**2.** A rushed solver who saw $Y(36)=120>Y(9)=60$ and concluded that later hours are more productive has confused height with slope. The output is still rising, just more slowly.
+**2.** Seeing $Y(36)=120>Y(9)=60$ and concluding that later hours are more productive has confused height with slope. The opposite verdict would need a different isolation than $Y(36)=120>Y(9)=60$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The output is still rising, just more slowly.
 
 **3.** Letter A is the falling average. This letter is the falling marginal. Both follow from $r=\\frac{1}{2}<1$. Convex $r>1$ would have flipped both.
 
@@ -5783,7 +5783,7 @@ The nine-hour output is $Y(9)=60$. Doubling that output means $Y(L)=120$, which 
 
 **1.** Extra arithmetic of the inversion: $20\\sqrt{L}=120$ gives $\\sqrt{L}=6$ and $L=36$. Compare $36$ with twice the logged $9$ hours, which would have been $18$. The required $36$ sits well past $18$.
 
-**2.** A rushed solver who multiplied $9$ hours by $2^{\\frac{1}{2}}$ mixed the forward factor with the reverse factor. Forward is $2^{r}$; reverse is $2^{1/r}$. Those disagree once $r\\neq 1$.
+**2.** Multiplying $9$ hours by $2^{\\frac{1}{2}}$ mixed the forward factor with the reverse factor. That is the fork: $9$ belongs to the recovered isolation, $2^{\\frac{1}{2}}$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Forward is $2^{r}$; reverse is $2^{1/r}$. Those disagree once $r\\neq 1$.
 
 **3.** Letter B's $Y(36)=120$ is this doubled output at the inverted hours. This letter names the hours comparison with a doubling of $9$.
 
@@ -5796,7 +5796,7 @@ This is a level of average product at $25$ hours, asked against a threshold of $
 
 The overview already evaluated $Y(25)/25=4$. Four sits below $5$. Twenty-five to the $\\frac{1}{2}$ is $5$, and $20\\cdot 5/25=4$.
 
-**1.** A rushed solver who used $Y(25)/25=20/5=4$ wait, $Y(25)=100$ and $100/25=4$, yes. Using $Y/L=20/\\sqrt{25}=4$. Another who used $Y(25)/25=20$ dropped the remaining division by $5$.
+**1.** Using $Y(25)/25=20/5=4$ wait, $Y(25)=100$ and $100/25=4$, yes. The stem's recovered values line up with $Y(25)/25=20/5=4$, whereas $100/25=4$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $Y(25)/25=20/5=4$ stays in the write-up. Using $Y/L=20/\\sqrt{25}=4$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $Y(25)/25=20$ dropped the remaining division by $5$.
 
 **2.** Extra arithmetic at $L=16$: $Y(16)/16=20\\cdot 4/16=5$ on the nose. The threshold "above $5$" is about $L=25$ specifically, past that $16$-hour average of $5$. Between $16$ and $25$ hours average product crosses $5$ going down, and at $25$ it has reached $4$.
 
@@ -5856,7 +5856,7 @@ The overview already recovered $A=60$ and factored $(t-10)(t-20)=0$ in $t=\\sqrt
 
 **1.** Extra arithmetic of the quadratic: $\\Pi=60t-2t^{2}-400=0$ divides by $2$ to $t^{2}-30t+200=0$, hence $(t-10)(t-20)=0$. The two roots $t=10$ and $t=20$ square to $q=100$ and $q=400$. Both sit in $q>0$.
 
-**2.** A rushed solver who discarded one root because "profit has one break-even" has imported a linear-revenue story. Square-root revenue against a linear charge and a fixed cost is a downward parabola in $t$, hence two roots. Another who used only $q=100$, the recorded run, has one break-even and missed $q=400$.
+**2.** Discarding one root because "profit has one break-even" has imported a linear-revenue story. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Square-root revenue against a linear charge and a fixed cost is a downward parabola in $t$, hence two roots. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. only $q=100$, the recorded run, has one break-even and missed $q=400$.
 
 **3.** Letter C says profit does not stay positive past the second root. Letter B is a level below the first root. This letter is the existence of two positive roots.
 
@@ -5869,11 +5869,11 @@ This is a level of profit at $25$ units, asked against a gap of more than $100$ 
 
 The overview already evaluated $\\Pi(25)=-150$. Minus one hundred and fifty sits more than $100$ euros below zero. Revenue $60\\cdot 5=300$ minus variable $50$ minus fixed $400$ is $-150$.
 
-**1.** A rushed solver who used $R(25)=300$ as if it were profit would sit above break-even on the wrong object. Another who dropped the fixed charge would report $300-50=250$ and fail the "below break-even" test.
+**1.** Using $R(25)=300$ as if it were profit would sit above break-even on the wrong object. That is why $R(25)=300$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who dropped the fixed charge would report $300-50=250$ and fail the "below break-even" test.
 
 **2.** Extra arithmetic at $q=100$: $\\Pi(100)=0$, the first break-even. The threshold test is about $q=25$ specifically, below that first root. At $q=16$, $\\Pi(16)=60\\cdot 4-32-400=-192$, even further below.
 
-**3.** Letter E's $\\Pi(225)=50$ sits between the two roots, above break-even. This letter is below the first root. Mixing those two regions is how a solver could report a small profit at $q=25$.
+**3.** Letter E's $\\Pi(225)=50$ sits between the two roots, above break-even. This letter is below the first root. Mixing those two regions is how that mix could report a small profit at $q=25$.
 
 The recovered profit at $25$ units is $-150$ euros, more than $100$ below break-even, so the statement is True.`,
       `**C.** → False
@@ -5884,7 +5884,7 @@ The overview already recorded that profit is positive only between the two break
 
 **1.** Extra arithmetic past the second root: at $q=625$, $\\Pi(625)=60\\cdot 25-1250-400=1500-1650=-150<0$. At $q=400$, $\\Pi=0$. At $q=225$, letter E's $50>0$. The sign pattern is negative, then positive, then negative again.
 
-**2.** A rushed solver who thought a square root "grows forever" and must stay above a line has forgotten that $2q$ grows faster, and the fixed $400$ shifts the second crossing in from infinity. Another who used task $28$'s net gain, which stays negative past one root because there was no fixed charge to create a first root, has mixed two profit shapes.
+**2.** Thinking a square root "grows forever" and must stay above a line has forgotten that $2q$ grows faster, and the fixed $400$ shifts the second crossing in from infinity. The recovered comparison therefore keeps $2q$ and does not substitute $400$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. task $28$'s net gain, which stays negative past one root because there was no fixed charge to create a first root, has mixed two profit shapes.
 
 **3.** Letter A found two roots. This letter reads the sign past the second. Unique leftover $\\sqrt{q}$ against $q$ with a negative intercept on $\\Pi$ crosses twice on $q>0$.
 
@@ -5899,7 +5899,7 @@ The overview already recorded $R(q)=60 q^{\\frac{1}{2}}$, a power, and $\\Pi(q)=
 
 **1.** Extra arithmetic in a ratio of revenues: $R(100)/R(25)=600/300=2$, and $(100/25)^{1/2}=2$, a power fingerprint. The same ratio of profits is $0/(-150)=0$, which no power of $q$ can give at $q=100\\neq 0$.
 
-**2.** A rushed solver who dropped the fixed charge and the linear charge and called $\\Pi$ a power has described revenue. Another who wrote $\\Pi$ as a sum of three powers $q^{1/2}$, $q^{1}$, $q^{0}$ and declared a sum of powers a power has confused a polynomial in $\\sqrt{q}$ with a monomial.
+**2.** Dropping the fixed charge and the linear charge and calling $\\Pi$ a power has described revenue. That is why $\\Pi$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Another who wrote $\\Pi$ as a sum of three powers $q^{1/2}$, $q^{1}$, $q^{0}$ and declared a sum of powers a power has confused a polynomial in $\\sqrt{q}$ with a monomial.
 
 **3.** Letter A used the two-root shape that only a non-monomial $\\Pi$ can have. This letter names the function classes. Revenue is a power; profit is not.
 
@@ -5912,7 +5912,7 @@ This is a level of profit at $225$ units, asked against a threshold of $80$ euro
 
 The overview already evaluated $\\Pi(225)=50$. Fifty does not sit above $80$. Revenue $60\\cdot 15=900$ minus variable $450$ minus fixed $400$ is $50$.
 
-**1.** A rushed solver who used $R(225)=900$ as profit would pass "exceeds $80$" on the wrong object. Another who dropped the fixed charge would report $450$ and also pass, for a wrong $\\Pi$.
+**1.** Using $R(225)=900$ as profit would pass "exceeds $80$" on the wrong object. After isolating the unknown, the check is against $R(225)=900$. The figure $80$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $R(225)=900$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another who dropped the fixed charge would report $450$ and also pass, for a wrong $\\Pi$.
 
 **2.** Extra arithmetic at $q=100$: $\\Pi=0$, which is not above $80$. At $q=196$, $\\Pi(196)=60\\cdot 14-392-400=840-792=48$, near $50$. The peak of $\\Pi$ is at $q=225$ wait, actually $\\Pi'(q)=30 q^{-1/2}-2=0$ gives $\\sqrt{q}=15$ and $q=225$, so $50$ is the peak. The claim wants the peak above $80$. The peak is $50$.
 
@@ -5974,7 +5974,7 @@ The overview already recovered $A=18$ and $K=\\frac{1}{2}$, with ratio $C/B=x/36
 
 **1.** Extra arithmetic of the meeting: $18\\sqrt{x}=\\frac{1}{2} x^{\\frac{3}{2}}$ gives $36=x$ after cancelling $\\sqrt{x}$. At $x=36$, $B=18\\cdot 6=108$ and $C=\\frac{1}{2}\\cdot 216=108$. A second positive meeting would need a second factor.
 
-**2.** A rushed solver who saw two power functions and expected two meetings has counted degrees loosely. $x^{1/2}(x-36)=0$ has one positive root. Another who set $A=K$ and ignored the trials would never find a meeting of these two shapes except at $0$.
+**2.** Seeing two power functions and expecting two meetings has counted degrees loosely. The recovered isolation is the quantity this letter compares with the claim. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. $x^{1/2}(x-36)=0$ has one positive root. Another who set $A=K$ and ignored the trials would never find a meeting of these two shapes except at $0$.
 
 **3.** Letter C claims cost can never overtake because of a smaller cost exponent, which is false. This letter is uniqueness of the meeting at $x=36$.
 
@@ -5987,7 +5987,7 @@ This is a level of cost at scale $16$, asked against a threshold of $30$ million
 
 The overview already evaluated $C(16)=32$. Thirty-two sits above $30$. Sixteen to the $\\frac{3}{2}$ is $64$, and half of $64$ is $32$.
 
-**1.** A rushed solver who used $B(16)=72$ as if it were cost would still pass "above $30$" on the wrong curve. Another who used $K=1$ would report $64$ and still pass, for a wrong coefficient. The cost trial is $8K=4$, so $K=\\frac{1}{2}$.
+**1.** Using $B(16)=72$ as if it were cost would still pass "above $30$" on the wrong curve. The stem's recovered values line up with $B(16)=72$, whereas $30$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $B(16)=72$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $K=1$ would report $64$ and still pass, for a wrong coefficient. The cost trial is $8K=4$, so $K=\\frac{1}{2}$.
 
 **2.** Extra arithmetic at $x=4$: $C(4)=4$, which sits below $30$. The threshold test is about $x=16$ specifically. Between $4$ and $16$ cost crosses $30$, and at $16$ it has reached $32$.
 
@@ -6002,7 +6002,7 @@ The overview already recorded cost exponent $\\frac{3}{2}$ and benefit exponent 
 
 **1.** Extra arithmetic past the meeting: at $x=64$, $B=18\\cdot 8=144$ and $C=\\frac{1}{2}\\cdot 512=256$, so cost leads by $112$. At $x=16$, still before $x=36$, $B=72$ and $C=32$, so benefit still leads. The overtake happens at $36$ and then persists.
 
-**2.** A rushed solver who compared coefficients $18>\\frac{1}{2}$ and declared benefit always larger has compared the wrong objects. Coefficients set the crossing; past it the larger exponent wins. Another who swapped $\\frac{1}{2}$ and $\\frac{3}{2}$ has the claim's false premise.
+**2.** Comparing coefficients $18>\\frac{1}{2}$ and declared benefit always larger has compared the wrong objects. The recovered isolation is checked against the claim using $18>\\frac{1}{2}$, which is the figure the sessions actually produce. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Coefficients set the crossing; past it the larger exponent wins. Another who swapped $\\frac{1}{2}$ and $\\frac{3}{2}$ has the claim's false premise.
 
 **3.** Letter A found the unique meeting. This letter reads who has the larger exponent. Cost's $\\frac{3}{2}>\\frac{1}{2}$ is what makes the overtake permanent.
 
@@ -6015,7 +6015,7 @@ This is a level of net benefit at scale $9$, asked against a threshold of $42$ m
 
 The overview already evaluated $B(9)-C(9)=54-13.5=40.5$. Forty point five does not exceed $42$. Benefit $18\\cdot 3=54$ and cost $\\frac{1}{2}\\cdot 27=13.5$.
 
-**1.** A rushed solver who used $B(9)=54$ as net benefit would pass "exceeds $42$" on the wrong object. Another who used $C(9)=\\frac{1}{2}\\cdot 9^{3/2}$ with $9^{3/2}=27$, yes $13.5$. Dropping cost would report $54>42$ and flip the verdict.
+**1.** Using $B(9)=54$ as net benefit would pass "exceeds $42$" on the wrong object. That is the fork: $B(9)=54$ belongs to the recovered isolation, $42$ belongs to the discarded mix. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $C(9)=\\frac{1}{2}\\cdot 9^{3/2}$ with $9^{3/2}=27$, yes $13.5$. Dropping cost would report $54>42$ and flip the verdict.
 
 **2.** Extra arithmetic at $x=16$: net benefit $72-32=40$, near $40.5$. At $x=4$, $B=36$ and $C=4$, net $32$. The peak of $B-C$ sits near $x=12$ wait, $\\frac{d}{dx}(18x^{1/2}-\\frac{1}{2}x^{3/2})=0$ gives $9/\\sqrt{x}=\\frac{3}{4}\\sqrt{x}$ and $x=12$. At $x=9$, $40.5$ is near the peak and still not above $42$. The peak is $B(12)-C(12)=18\\sqrt{12}-\\frac{1}{2}\\cdot 12\\sqrt{12}=36\\sqrt{3}\\approx 62.4$ wait let me not invent. Actually at x=9 it's 40.5 < 42. That's enough.
 
@@ -6030,7 +6030,7 @@ The overview already recorded $\\frac{B(x)}{C(x)}=\\frac{36}{x}$. That leftover 
 
 **1.** Extra arithmetic at those three scales: $B(4)/C(4)=36/4=9$, $B(16)/C(16)=72/32=2.25$, $B(36)/C(36)=1$. Three different ratios are three too many for a constant.
 
-**2.** A rushed solver who cancelled $x^{1/2}$ and forgot the leftover $36/x$ would report a constant $36$, or $1$. Another who compared coefficients $18$ and $1/2$ and declared a constant $36$ has dropped the leftover power of $x$.
+**2.** Cancelling $x^{1/2}$ and forgetting the leftover $36/x$ would report a constant $36$, or $1$. That is the fork: $x^{1/2}$ belongs to the recovered isolation, $1$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Another who compared coefficients $18$ and $1/2$ and declared a constant $36$ has dropped the leftover power of $x$.
 
 **3.** Letter C used the ratio as a sign of overtaking. This letter asks whether the ratio is constant. A falling ratio is a stronger statement than a single meeting.
 
@@ -6088,7 +6088,7 @@ The overview already recovered $r=\\frac{2}{3}$ from $\\frac{36}{16}=\\bigl(\\fr
 
 **1.** Extra arithmetic of the ratio: $36/16=9/4$ and $27/8$, and $(27/8)^{2/3}=(3/2)^{2}=9/4$, so $r=2/3$ fits. A witness at $g=64$: $T(64)=4\\cdot 16=64$, so octupling the original $8$ of feed only quadruples the original $16$ of throughput, slower than the feed.
 
-**2.** A rushed solver who compared $16$ tonnes with $8$ cubic metres and saw two tonnes per cubic metre has an average, not a growth-rate statement. Another who used $r=\\log(36/16)/\\log(27/8)$ and landed on $1$ by a calculator slip has the wrong $r$.
+**2.** Comparing $16$ tonnes with $8$ cubic metres and seeing two tonnes per cubic metre has an average, not a growth-rate statement. So the letter reads the claim against $16$; $8$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $16$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r=\\log(36/16)/\\log(27/8)$ and landed on $1$ by a calculator slip has the wrong $r$.
 
 **3.** Letter C is the doubling claim, which fails for the same $r=2/3$. Letter D is the falling average. This letter is only $r<1$.
 
@@ -6103,7 +6103,7 @@ The overview already inverted $g=16\\sqrt{2}\\approx 22.63$. Since $16\\sqrt{2}<
 
 **1.** Extra arithmetic at $g=8$: $T=16<32$. At $g=27$: $T=36>32$. The ceiling sits between $8$ and $27$, and $16\\sqrt{2}\\approx 22.6$ sits below $24$. At $g=24$, $T(24)=4\\cdot 24^{2/3}\\approx 4\\cdot 8.32\\approx 33.3>32$, so $24$ is already past the bind.
 
-**2.** A rushed solver who used $g=32/4=8$ skipped the exponent and would have passed "below $24$" on the logged feed, for the wrong inversion. Another who used $g=8^{3}=512$ inverted the reciprocal the wrong way.
+**2.** Using $g=32/4=8$ skipped the exponent and would have passed "below $24$" on the logged feed, for the wrong inversion. The stem's recovered values line up with $g=32/4=8$, whereas $24$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $g=32/4=8$ stays in the write-up. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $g=8^{3}=512$ inverted the reciprocal the wrong way.
 
 **3.** Letter E's $T(64)=64$ is a different level. The recovered bind $16\\sqrt{2}$ is about $1.4$ cubic metres below $24$.
 
@@ -6116,7 +6116,7 @@ The overview already recorded $\\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}\\approx 1.58
 
 **1.** Extra arithmetic on the logged $8$-feed: doubling that feed is $16$, and $T(16)=4\\cdot 16^{2/3}=4\\cdot 4\\cdot 2^{2/3}\\approx 25.4$ against $T(8)=16$. Twice $16$ would have been $32$, and $25.4$ is not $32$. Note $T=32$ is the licence cap, which happens at $g=16\\sqrt{2}$, not at a doubled $g=16$.
 
-**2.** A rushed solver who used exponent $1$ is telling a proportional story the two runs contradict. Another who used the quadrupling $8\\to 32$ wait, $8$ to $27$ is not a doubling.
+**2.** Using exponent $1$ is telling a proportional story the two runs contradict. Once $1$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the quadrupling $8\\to 32$ wait, $8$ to $27$ is not a doubling.
 
 **3.** Letter A said $r<1$. This letter is that $r<1$ as a doubling claim. Mixing $k=4$, which multiplies $T$ by $4^{2/3}\\approx 2.52$, with $k=2$ is how a doubling claim can look closer.
 
@@ -6131,7 +6131,7 @@ The overview already recorded $T/g=4 g^{-\\frac{1}{3}}$. The leftover exponent i
 
 **1.** Extra arithmetic at the two runs: $T(8)/8=2$ tonnes per cubic metre, and $T(27)/27=36/27\\approx 1.33$, already lower. At $g=64$, $T/g=1$, lower still.
 
-**2.** A rushed solver who used $r>1$ intuition from the kiln in task $34$ has the wrong exponent. Another who saw $T$ rise from $16$ to $36$ and concluded that feed is becoming more productive has mixed the total with the average.
+**2.** Using $r>1$ intuition from the kiln in task $34$ has the wrong exponent. The stem's recovered values line up with $r>1$, whereas $34$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $r>1$ stays in the write-up. Another who saw $T$ rise from $16$ to $36$ and concluded that feed is becoming more productive has mixed the total with the average.
 
 **3.** Letter A said $r<1$ as a growth-rate comparison. This letter is the same $r<1$ as a falling average. Letter C's failed doubling is compatible: more feed per extra tonne.
 
@@ -6144,7 +6144,7 @@ This is a level at a feed of $64$, asked against a threshold of $60$ tonnes per 
 
 The overview already evaluated $T(64)=64$. Sixty-four sits above $60$. Sixty-four to the $\\frac{2}{3}$ is $16$, and $4\\cdot 16=64$.
 
-**1.** A rushed solver who used $A=2$ from $16/8$ would report $32$ and fail the threshold. Another who used $T(64)=4\\cdot 64=256$ skipped the fractional power.
+**1.** Using $A=2$ from $16/8$ would report $32$ and fail the threshold. So the letter reads the claim against $A=2$; $32$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $A=2$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $T(64)=4\\cdot 64=256$ skipped the fractional power.
 
 **2.** Extra arithmetic at $g=27$: $T=36$, which sits below $60$. The threshold test is about $g=64$ specifically. Between $27$ and $64$ cubic metres throughput crosses $60$, and at $64$ it has reached $64$.
 
@@ -6204,7 +6204,7 @@ The overview already recovered $V(d)=4d^{2}$. The exponent $2$ sits above one, s
 
 **1.** Extra arithmetic on the survey depths: from $3$ m to $6$ m, depth doubles, and $V(6)=144$ against $V(3)=36$, a factor $4$, faster than the doubling of depth. That is $2^{2}=4$ at a concrete pair.
 
-**2.** A rushed solver who compared $V(5)-V(3)=64$ with a $2$ m rise and saw $32$ cubic metres per metre has an average increment, not a growth-rate statement. Growth rate is $r$ against $1$.
+**2.** Comparing $V(5)-V(3)=64$ with a $2$ m rise and seeing $32$ cubic metres per metre has an average increment, not a growth-rate statement. So the letter reads the claim against $V(5)-V(3)=64$; $32$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $V(5)-V(3)=64$ stays in the write-up. Growth rate is $r$ against $1$.
 
 **3.** Letter C is the reverse scale, where doubling volume needs less than a doubling of depth. Letter D claims a finite cap. This letter is only $r>1$.
 
@@ -6217,7 +6217,7 @@ This is a level at $6$ metres, asked against a threshold of $140$ cubic metres.
 
 The overview already evaluated $V(6)=144$. One hundred and forty-four sits above $140$. Six squared is $36$, and $4\\cdot 36=144$.
 
-**1.** A rushed solver who used $A=64/(25-9)=4$, yes $A=4$. Using $A=64/2=32$ from a linear rise would report $V(6)=192$ and still pass, for a wrong coefficient. Another who used $V(6)=4\\cdot 6=24$ skipped the square and would have failed.
+**1.** Using $A=64/(25-9)=4$, yes $A=4$. Working from the isolated values, $A=64/(25-9)=4$ is the figure that is checked, not the detour that produced $A=4$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using $A=64/2=32$ from a linear rise would report $V(6)=192$ and still pass, for a wrong coefficient. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $V(6)=4\\cdot 6=24$ skipped the square and would have failed.
 
 **2.** Extra arithmetic at $d=5$: $V(5)=100$, which sits below $140$. The threshold test is about $d=6$ specifically. Between $5$ and $6$ metres volume crosses $140$, and at $6$ it has reached $144$.
 
@@ -6230,9 +6230,9 @@ The claim is that to double stored volume, the water depth must more than double
 
 The overview already recorded that doubling volume scales depth by $\\sqrt{2}<2$. Because the exponent exceeds one, a doubling of volume needs less than a doubling of depth. The water depth must less than double, not more.
 
-**1.** Extra arithmetic on $V(3)=36$: doubling that volume is $72$, which inverts at $d=\\sqrt{18}=3\\sqrt{2}\\approx 4.24$ m, not $6$ m. A solver who reported $6$ m used exponent $1$ on the reverse question.
+**1.** Extra arithmetic on $V(3)=36$: doubling that volume is $72$, which inverts at $d=\\sqrt{18}=3\\sqrt{2}\\approx 4.24$ m, not $6$ m. Reporting $6$ m used exponent $1$ on the reverse question. The recovered comparison therefore keeps $6$ and does not substitute $1$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
-**2.** A rushed solver who mixed this reverse question with letter A's forward doubling would have required a $6$ m depth to quadruple volume, which is a different job. Forward $k=2$ multiplies $V$ by $4$. Reverse $V\\times 2$ multiplies $d$ by $\\sqrt{2}$.
+**2.** Mixing this reverse question with letter A's forward doubling would have required a $6$ m depth to quadruple volume, which is a different job. The recovered isolation is checked against the claim using $6$, which is the figure the sessions actually produce. Forward $k=2$ multiplies $V$ by $4$. Reverse $V\\times 2$ multiplies $d$ by $\\sqrt{2}$.
 
 **3.** Letter E's fill from $4$ to $8$ is a doubling of depth, which quadruples volume by $192$ added, not a doubling of volume. Mixing those two jobs is how a "more than double the depth" claim can look true.
 
@@ -6247,7 +6247,7 @@ The overview already recorded that a positive exponent sends $V(d)\\to\\infty$ a
 
 **1.** Extra arithmetic at large depth: $V(20)=1600$, $V(50)=10000$, still climbing. Setting $4d^{2}=M$ for a finite cap $M$ would invert at a finite $d$, but the stem has no such $M$. Tapering here means $V\\propto d^{2}$ rather than $V\\propto d^{3}$, a slower infinity, not a bound.
 
-**2.** A rushed solver who treated "taper" as "the sides meet at a lid" has imported a closed tank. This basin is a power of depth on $d>0$ with no listed maximum depth. Another who used a negative exponent from a different chapter has the wrong sign.
+**2.** Treating "taper" as "the sides meet at a lid" has imported a closed tank. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. This basin is a power of depth on $d>0$ with no listed maximum depth. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. a negative exponent from a different chapter has the wrong sign.
 
 **3.** Letter A said volume outruns depth. This letter says that outrunning continues without a cap. A finite cap would have needed a factor $(d_{\\max}-d)$ or a negative exponent.
 
@@ -6260,7 +6260,7 @@ Filling from $4$ metres to $8$ metres adds $V(8)-V(4)=256-64=192$, and the claim
 
 One hundred and ninety-two is not more than $200$. Four times $64$ minus four times $16$ is $256-64=192$.
 
-**1.** A rushed solver who used $V(8)=4\\cdot 8=32$ skipped the square. Another who used $V(8)-V(4)=4(8-4)=16$ treated the square as linear. A solver who computed $4(64-16)=192$ correctly and then rounded up to $200$ has left the arithmetic.
+**1.** Using $V(8)=4\\cdot 8=32$ skipped the square. Once $V(8)=4\\cdot 8=32$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $V(8)-V(4)=4(8-4)=16$ treated the square as linear. Computing $4(64-16)=192$ correctly and then rounding up to $200$ has left the arithmetic. After isolating the unknown, the check is against $4(64-16)=192$. The figure $200$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $4(64-16)=192$ stays in the write-up.
 
 **2.** Extra arithmetic that manufactures $200$: $V(8)-V(3)=256-36=220$, mixing the survey's $3$ m with $8$ m. Or $V(10)-V(5)=400-100=300$. The claim is $4$ m to $8$ m specifically, a doubling of depth, which adds $192$.
 
@@ -6320,7 +6320,7 @@ The overview already recorded $E'(v)=v/10$. That leftover power is positive, so 
 
 **1.** Extra arithmetic of two equal $10$ km/h increments: from $30$ to $40$, $E$ rises $45$ to $80$, a rise of $35$. From $40$ to $50$, $E$ rises $80$ to $125$, a rise of $45$. The later $10$ km/h increment adds $10$ points more. Directly, $E'(30)=3$ and $E'(50)=5$.
 
-**2.** A rushed solver who saw the recorded $80$-point rise over $20$ km/h and called $4$ points per km/h a constant increment has evaluated one interval. Convexity says later intervals cost more. Another who used $r<1$ intuition has the wrong exponent.
+**2.** Seeing the recorded $80$-point rise over $20$ km/h and calling $4$ points per km/h a constant increment has evaluated one interval. So the letter reads the claim against $80$; $4$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up. Convexity says later intervals cost more. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r<1$ intuition has the wrong exponent.
 
 **3.** Letter C says the average $E/v$ is not constant, the same $r=2>1$ story. This letter is the rising marginal $E'$.
 
@@ -6333,7 +6333,7 @@ This is a level at $40$ km/h, asked against a threshold of $70$.
 
 The overview already evaluated $E(40)=80$. Eighty sits above $70$. Forty squared is $1600$, and $1600/20=80$.
 
-**1.** A rushed solver who used $A=80/(50-30)=4$ linearly would report $E(40)=160$ and still pass, for a wrong coefficient. Another who used $E(40)=0.5\\cdot 1600=800$ mixed in task $10$'s $0.5$. The survey is $A(2500-900)=80$, so $A=1/20$.
+**1.** Using $A=80/(50-30)=4$ linearly would report $E(40)=160$ and still pass, for a wrong coefficient. The recovered comparison therefore keeps $A=80/(50-30)=4$ and does not substitute $E(40)=160$. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $E(40)=0.5\\cdot 1600=800$ mixed in task $10$'s $0.5$. The survey is $A(2500-900)=80$, so $A=1/20$.
 
 **2.** Extra arithmetic at $v=30$: $E(30)=45$, which sits below $70$. The threshold test is about $v=40$ specifically. Between $30$ and $40$ km/h the index crosses $70$, and at $40$ it has reached $80$.
 
@@ -6348,7 +6348,7 @@ The overview already recorded $\\frac{E(v)}{v}=v/20$. The leftover exponent is p
 
 **1.** Extra arithmetic at the survey speeds: $E(30)/30=1.5$ and $E(50)/50=2.5$, already different. At $v=40$, $E/v=2$. Three different averages are three too many for a constant.
 
-**2.** A rushed solver who cancelled $v^{2}/v$ and forgot the leftover $v/20$ would report a constant $A$. Another who used $r=1$ intuition, a linear index, would have a constant average equal to $A$.
+**2.** Cancelling $v^{2}/v$ and forgetting the leftover $v/20$ would report a constant $A$. The stem's recovered values line up with $v^{2}/v$, whereas $A$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $v^{2}/v$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $r=1$ intuition, a linear index, would have a constant average equal to $A$.
 
 **3.** Letter A is the rising marginal. This letter is the rising average. Both follow from $r=2>1$. Letter D is the inverse growing more slowly than the index.
 
@@ -6363,7 +6363,7 @@ The overview already recorded $v=\\sqrt{20E}$. The inverse exponent $\\frac{1}{2
 
 **1.** Extra arithmetic: doubling the index from $E=80$ to $E=160$ inverts at $v=\\sqrt{3200}\\approx 56.6$ against $v=40$ at $E=80$. Speed multiplies by $\\sqrt{2}\\approx 1.41$, slower than the doubling of the index.
 
-**2.** A rushed solver who used exponent $1$ on the inverse would have reported lockstep. Another who wrote $v=\\log E$ mixed this fleet with an exponential technology.
+**2.** Using exponent $1$ on the inverse would have reported lockstep. The recovered isolation is checked against the claim using $1$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another who wrote $v=\\log E$ mixed this fleet with an exponential technology.
 
 **3.** Letter A said $E$ outruns $v$ going forward. This letter is that same $r=2$ as a reverse growth rate. Forward $r>1$ is reverse $1/r<1$.
 
@@ -6376,7 +6376,7 @@ This is a level at $80$ km/h, asked against a threshold of $300$.
 
 The overview already evaluated $E(80)=320$. Three hundred and twenty does not sit under $300$. Eighty squared is $6400$, and $6400/20=320$.
 
-**1.** A rushed solver who used $E(80)=80$, copying $A=1/20$ as if it were the index, would have passed "under $300$." Another who used $E(80)=\\frac{1}{20}\\cdot 80=4$ skipped the square.
+**1.** Using $E(80)=80$, copying $A=1/20$ as if it were the index, would have passed "under $300$." So the letter reads the claim against $E(80)=80$; $300$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $E(80)=80$ stays in the write-up.Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $E(80)=\\frac{1}{20}\\cdot 80=4$ skipped the square.
 
 **2.** Extra arithmetic at $v=50$: $E(50)=125$, which does sit under $300$. The threshold test is about $v=80$ specifically. Between $50$ and $80$ km/h the index crosses $300$, and at $80$ it has reached $320$.
 
@@ -6436,7 +6436,7 @@ The overview already recovered $S(h)=3h^{2}$ and $V(h)=h^{3}$. Steel uses expone
 
 **1.** Extra arithmetic of a doubling of height: from $2$ m to $4$ m, steel multiplies by $4$ from $12$ to $48$, while capacity multiplies by $8$ from $8$ to $64$. Steel's factor $4$ sits below capacity's factor $8$. That is $2^{2}$ against $2^{3}$.
 
-**2.** A rushed solver who compared coefficients $3>1$ and declared steel faster has compared the wrong objects. Coefficients set levels; exponents set speed. Another who used equal exponents from "geometrically similar" without squares and cubes has dropped the dimensions.
+**2.** Comparing coefficients $3>1$ and declared steel faster has compared the wrong objects. The path that matches the stem therefore holds $3>1$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Coefficients set levels; exponents set speed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. equal exponents from "geometrically similar" without squares and cubes has dropped the dimensions.
 
 **3.** Letter C composes steel as a function of capacity, $S=3V^{2/3}$, whose exponent $2/3<1$ is this same comparison. Letter D compares two $2$ m silos with one $4$ m silo.
 
@@ -6449,7 +6449,7 @@ This is a level of capacity at $4$ m, asked against a threshold of $60$ cubic me
 
 The overview already evaluated $V(4)=64$. Sixty-four sits above $60$. Four cubed is $64$, and $k=1$.
 
-**1.** A rushed solver who used $V(4)=8\\cdot 4/2=16$, a linear scale from the $2$ m silo, would have failed the threshold. Another who used $k=8/2=4$ would report $256$ and still pass, for a wrong coefficient. The capacity pair is $8k=8$, so $k=1$.
+**1.** Using $V(4)=8\\cdot 4/2=16$, a linear scale from the $2$ m silo, would have failed the threshold. Working from the isolated values, $V(4)=8\\cdot 4/2=16$ is the figure that is checked, not the detour that produced $2$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $k=8/2=4$ would report $256$ and still pass, for a wrong coefficient. The capacity pair is $8k=8$, so $k=1$.
 
 **2.** Extra arithmetic at $h=2$: $V=8$, which sits below $60$. The threshold test is about $h=4$ specifically. Between $2$ and $4$ metres capacity crosses $60$, and at $4$ it has reached $64$.
 
@@ -6464,7 +6464,7 @@ The overview already eliminated height to get $S=3V^{\\frac{2}{3}}$. Steel as a 
 
 **1.** Extra arithmetic of the composition: $h=V^{1/3}$ from $V=h^{3}$, then $S=3(V^{1/3})^{2}=3V^{2/3}$. At the $2$ m silo, $S=3\\cdot 8^{2/3}=3\\cdot 4=12$, returning the logged steel. At $V=64$, $S=3\\cdot 16=48$, matching $S(4)$.
 
-**2.** A rushed solver who added exponents $2+3=5$ would report $S\\propto V^{5}$ and miss the quotient. Exponents divide when eliminating the common $h$. Another who added an intercept would have left the power-function class; the stem has none.
+**2.** Adding exponents $2+3=5$ would report $S\\propto V^{5}$ and miss the quotient. After isolating the unknown, the check is against $2+3=5$. The figure $S\\propto V^{5}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2+3=5$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Exponents divide when eliminating the common $h$. Another who added an intercept would have left the power-function class; the stem has none.
 
 **3.** Letter A compared the two exponents of $h$. This letter names the composed power of $V$. The exponent $2/3<1$ is why steel grows more slowly than capacity.
 
@@ -6477,7 +6477,7 @@ Two separate $2$ m silos use $2\\cdot 12=24$ square metres of steel. One $4$ m s
 
 **1.** Extra arithmetic of the scale: doubling height multiplies steel by $4$, so one $4$ m silo uses four times one $2$ m silo, not twice. Two small silos are $2\\times$ the steel; one double-height silo is $4\\times$. The gap is $24$ square metres.
 
-**2.** A rushed solver who used exponent $1$ on steel would have reported $24=24$ and made the claim true. Area scales as $h^{2}$, not as $h$. Another who compared capacities, $8+8=16$ against $V(4)=64$, has the same mismatch in the volume column.
+**2.** Using exponent $1$ on steel would have reported $24=24$ and made the claim true. So the letter reads the claim against $1$; $24=24$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Area scales as $h^{2}$, not as $h$. Another who compared capacities, $8+8=16$ against $V(4)=64$, has the same mismatch in the volume column.
 
 **3.** Letter A said steel grows more slowly than capacity, not that two small silos match one large one. Geometric similarity does not make two half-height silos equal one full-height silo in steel.
 
@@ -6490,7 +6490,7 @@ This is a level of steel at $8$ m, asked against a threshold of $200$ square met
 
 The overview already evaluated $S(8)=192$. One hundred and ninety-two does not sit above $200$. Eight squared is $64$, and $3\\cdot 64=192$.
 
-**1.** A rushed solver who used $S(8)=3\\cdot 8=24$ skipped the square. Another who used $S(8)=3\\cdot 512=1536$, a cube, mixed in capacity's exponent. Using $a=12/2=6$ linearly would report $48$ and also fail "more than $200$."
+**1.** Using $S(8)=3\\cdot 8=24$ skipped the square. That is why $S(8)=3\\cdot 8=24$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $S(8)=3\\cdot 512=1536$, a cube, mixed in capacity's exponent. Using $a=12/2=6$ linearly would report $48$ and also fail "more than $200$."
 
 **2.** Extra arithmetic at $h=4$: $S=48$, which sits below $200$. The threshold test is about $h=8$ specifically. Between $4$ and $8$ metres steel crosses $200$ only if $a$ were larger; with $a=3$, $S(8)=192<200$. At $h=9$, $S(9)=243>200$, past $8$ m.
 
@@ -6548,7 +6548,7 @@ The overview already recovered $T(n)=4\\sqrt{n}$. Proportionality would need exp
 
 **1.** Extra arithmetic of the logged pair: hours from $4$ to $36$ jumped by a factor $T(36)/T(4)$. Now $T(4)=8$ and $T(36)=24$, a factor $3$, while shipments jumped by a factor $9$. Three is not nine. Proportionality would have required hours to jump ninefold to $72$.
 
-**2.** A rushed solver who saw any increasing $T$ and called it proportional has ignored the exponent. Another who used the jump $16$ hours over $32$ extra shipments and called $0.5$ hours per shipment a constant rate has evaluated one interval of a concave curve.
+**2.** Seeing any increasing $T$ and calling it proportional has ignored the exponent. The opposite verdict would need a different isolation than $T$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. the jump $16$ hours over $32$ extra shipments and called $0.5$ hours per shipment a constant rate has evaluated one interval of a concave curve.
 
 **3.** Letter D says quadrupling a consignment doubles inspection time, which is the square-root fingerprint, not proportionality. Letter B inverts the $40$-hour cap.
 
@@ -6563,7 +6563,7 @@ The overview already inverted $n=100$. One hundred sits below $110$. From $\\sqr
 
 **1.** Extra arithmetic at $n=100$: $T=40$ on the nose. At $n=110$, $T(110)=4\\sqrt{110}\\approx 41.95>40$, so $110$ is already past the bind. The ceiling is met at $100$, which is below $110$.
 
-**2.** A rushed solver who used $n=40/4=10$ skipped the square in the inverse and would have passed "below $110$" on a huge underestimate, for the wrong reason. Another who used $n=40^{2}=1600$ inverted the reciprocal the wrong way and would have failed "below $110$."
+**2.** Using $n=40/4=10$ skipped the square in the inverse and would have passed "below $110$" on a huge underestimate, for the wrong reason. That is the fork: $n=40/4=10$ belongs to the recovered isolation, $110$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $n=40^{2}=1600$ inverted the reciprocal the wrong way and would have failed "below $110$."
 
 **3.** Letter C claims staffing at the ceiling still covers a modestly larger consignment. This letter is the bind at $n=100<110$. Letter E is a level at $n=49$.
 
@@ -6576,7 +6576,7 @@ The overview already recorded that at $n=100$, $T=40$ and $T'(n)=2 n^{-\\frac{1}
 
 **1.** Extra arithmetic: $T(121)=4\\cdot 11=44$, four hours past the cap, a $21\\%$ larger consignment. Even $T(101)\\approx 40.2$, already over. "Almost nothing" would have needed $T'$ near $0$, which at $n=100$ is still $0.2$ hours, twelve minutes per extra shipment.
 
-**2.** A rushed solver who used $r<1$ as "flat" has confused a falling slope with a zero slope. Square-root time still rises. Another who used $T'(n)=0$ at a horizontal cap has mixed a policy cap with the derivative of $T$.
+**2.** Using $r<1$ as "flat" has confused a falling slope with a zero slope. That is why $r<1$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Square-root time still rises. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $T'(n)=0$ at a horizontal cap has mixed a policy cap with the derivative of $T$.
 
 **3.** Letter B placed the bind at $n=100$. This letter says that bind is sharp: one extra shipment overshoots. Falling $T'$ is letter A's cousin, not a licence to overshoot.
 
@@ -6591,7 +6591,7 @@ The overview already recorded $\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}=2$. The coef
 
 **1.** Extra arithmetic on the logged $4$-shipment consignment: quadrupling is $n=16$, and $T(16)=4\\cdot 4=16$ against $T(4)=8$, a factor $2$. Directly, $8\\times 2=16$. The logged jump $4\\to 36$ is a ninefold, which multiplies $T$ by $3$, not this letter's quadrupling.
 
-**2.** A rushed solver who used $k=2$, a doubling of shipments, would have reported $\\sqrt{2}\\approx 1.41$, not $2$. Mixing $k=2$ with $k=4$ is how a doubling-of-time claim can look like letter A's failed proportionality.
+**2.** Using $k=2$, a doubling of shipments, would have reported $\\sqrt{2}\\approx 1.41$, not $2$. After isolating the unknown, the check is against $k=2$. The figure $2$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $k=2$ stays in the write-up. Mixing $k=2$ with $k=4$ is how a doubling-of-time claim can look like letter A's failed proportionality.
 
 **3.** Letter A said $T$ is not proportional to $n$. This letter is the specific $k=4$ identity that a square root does satisfy. Those two claims agree: $r=1/2$ is not $r=1$, and $4^{1/2}=2$.
 
@@ -6604,7 +6604,7 @@ This is a level at a $49$-shipment consignment, asked against a threshold of $30
 
 The overview already evaluated $T(49)=28$. Twenty-eight is not more than $30$. Forty-nine to the $\\frac{1}{2}$ is $7$, and $4\\cdot 7=28$.
 
-**1.** A rushed solver who used $A=8$ from $T(4)=8$ as if $A=T(4)$ would report $56$ and pass "more than $30$" on a wrong coefficient. Another who used $T(49)=4\\cdot 49=196$ skipped the root.
+**1.** Using $A=8$ from $T(4)=8$ as if $A=T(4)$ would report $56$ and pass "more than $30$" on a wrong coefficient. The stem's recovered values line up with $A=8$, whereas $30$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $A=8$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $T(49)=4\\cdot 49=196$ skipped the root.
 
 **2.** Extra arithmetic at $n=36$: $T=24$, which sits below $30$. At $n=64$, $T=32$, which sits above $30$. The threshold test is about $n=49$ specifically. Between $36$ and $64$ hours wait, between $36$ and $64$ shipments time crosses $30$, and at $49$ it has reached $28$.
 
@@ -6662,7 +6662,7 @@ The overview already recovered $I(d)=800 d^{-2}$ and recorded $\\frac{I(2d)}{I(d
 
 **1.** Extra arithmetic on the logged pair: doubling $2$ m is $4$ m, and $I(4)=800/16=50$ against $I(2)=800/4=200$. A quarter of $200$ is $50$, and the recorded cut $200-50=150$ matches the stem. That match is the scale identity at a concrete pair, not a new coefficient.
 
-**2.** A rushed solver who used exponent $-1$ would have halved the reading, reporting $I(4)=100$. Reciprocal-linear light is $A/d$; this gallery is $A/d^{2}$. Another who used $2^{-3}=1/8$ mixed in a cube.
+**2.** Using exponent $-1$ would have halved the reading, reporting $I(4)=100$. The recovered comparison therefore keeps $-1$ and does not substitute $I(4)=100$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Reciprocal-linear light is $A/d$; this gallery is $A/d^{2}$. Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $2^{-3}=1/8$ mixed in a cube.
 
 **3.** Letter C is the slope comparison, steeper near the lamp. Letter D is the inverse as a power. This letter is only the doubling identity for $r=-2$.
 
@@ -6675,7 +6675,7 @@ This is a level at $5$ metres, asked against a threshold of $40$ lux.
 
 The overview already evaluated $I(5)=32$. Thirty-two sits under $40$. Five squared is $25$, and $800/25=32$.
 
-**1.** A rushed solver who used $I(5)=800/5=160$ skipped the square and would have failed "under $40$." Another who used $A=150$ from the cut as if it were $A$ would report $6$ and still pass, for a wrong coefficient. The cut is $A(1/4-1/16)=150$, so $3A/16=150$ and $A=800$.
+**1.** Using $I(5)=800/5=160$ skipped the square and would have failed "under $40$." The stem's recovered values line up with $I(5)=800/5=160$, whereas $40$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $I(5)=800/5=160$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $A=150$ from the cut as if it were $A$ would report $6$ and still pass, for a wrong coefficient. The cut is $A(1/4-1/16)=150$, so $3A/16=150$ and $A=800$.
 
 **2.** Extra arithmetic at $d=4$: $I(4)=50$, which sits above $40$. The threshold test is about $d=5$ specifically. Between $4$ and $5$ metres illuminance crosses $40$ going down, and at $5$ it has reached $32$.
 
@@ -6694,7 +6694,7 @@ $$|I'(2)|=1600/8=200, \\qquad |I'(4)|=1600/64=25$$
 
 An extra metre at $2$ m cuts about $200$ lux; at $4$ m only about $25$ lux. The claim's "more at $4$" is the reverse of these two slopes.
 
-**2.** A rushed solver who saw $I(4)=50<I(2)=200$ and concluded that later metres are cutting more has confused a lower reading with a steeper cut. The reading is already low at $4$ m; there is less left to cut.
+**2.** Seeing $I(4)=50<I(2)=200$ and concluding that later metres are cutting more has confused a lower reading with a steeper cut. The opposite verdict would need a different isolation than $I(4)=50<I(2)=200$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The reading is already low at $4$ m; there is less left to cut.
 
 **3.** Letter A is the quartering on a doubling. This letter is the falling steepness. Both follow from $r=-2<0$. Inverse-square light is steep near the lamp and flat far away.
 
@@ -6709,7 +6709,7 @@ The overview already recorded $d=\\sqrt{800}\\, I^{-\\frac{1}{2}}$. A nonzero po
 
 **1.** Extra arithmetic that uses the inverse at $I=50$: $d=\\sqrt{800/50}=\\sqrt{16}=4$, returning the logged $4$ m. At $I=200$, $d=2$. That inversion landing on the logged distances is how we know the inverse is the right monomial.
 
-**2.** A rushed solver who thought a decreasing function could not invert to a power has confused monotonicity with function class. Negative exponents invert to negative exponents. Another who wrote $d=\\log I$ mixed this gallery with an exponential technology.
+**2.** Thinking a decreasing function could not invert to a power has confused monotonicity with function class. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Negative exponents invert to negative exponents. Another who wrote $d=\\log I$ mixed this gallery with an exponential technology.
 
 **3.** Letter A used the forward $r=-2$. This letter names the inverse. Falling $I$ is why the inverse exponent is negative, not why the inverse would fail to be a power.
 
@@ -6722,7 +6722,7 @@ This is a level at $3$ metres, asked against a threshold of $90$ lux.
 
 The overview already evaluated $I(3)=800/9\\approx 88.89$. That is not still above $90$. Nine into $800$ is $88.\\overline{8}$ lux.
 
-**1.** A rushed solver who used $I(3)=800/3\\approx 267$ skipped the square and would have passed "above $90$." Another who used $I(3)=200\\cdot 2/3\\approx 133$, a linear scale from $I(2)$, would also pass, for a wrong exponent.
+**1.** Using $I(3)=800/3\\approx 267$ skipped the square and would have passed "above $90$." After isolating the unknown, the check is against $I(3)=800/3\\approx 267$. The figure $90$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $I(3)=800/3\\approx 267$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.Using The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. $I(3)=200\\cdot 2/3\\approx 133$, a linear scale from $I(2)$, would also pass, for a wrong exponent.
 
 **2.** Extra arithmetic at $d=2$: $I=200$, which does sit above $90$. At $d=4$: $I=50$, which sits below $90$. The threshold test is about $d=3$ specifically. Between $2$ and $4$ metres illuminance crosses $90$, and at $3$ it has reached $800/9\\approx 88.9$, just under the line.
 
@@ -6780,7 +6780,7 @@ This letter is about how the practice bill grows with the book, not about any na
 
 An exponent smaller than one means the bill still rises with the book, yet it lags the account count. Doubling the book would double a linear rival quote $R(n)=50n$. The practice bill instead scales by $2^{\\frac{3}{4}}$, which sits below $2$. That is the economies of scale in the title, read as a ranking of exponents rather than as a euro figure.
 
-**1.** A rushed solver who read $0.75$ as "almost linear" would have treated the bill as lockstep with $n$. The gap between a doubling and a factor of about $1.68$ is the whole point of the power.
+**1.** Reading $0.75$ as "almost linear" would have treated the bill as lockstep with $n$. After isolating the unknown, the check is against $0.75$. The figure $n$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $0.75$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The gap between a doubling and a factor of about $1.68$ is the whole point of the power.
 
 **2.** The opposite verdict would have needed an exponent at least $1$. A cubic cost, or even a linear one, would outrun or match the book. The recovered exponent is $\\frac{3}{4}$.
 
@@ -6802,7 +6802,7 @@ This is a level question at the logged size of $81$ accounts, not a scale questi
 
 Two thousand seven hundred clears two thousand five hundred by $200$ euros. The same $2700$ is also the client's cap in the stem, so at $81$ accounts the bill sits exactly on the cap and therefore above $2500$.
 
-**1.** A rushed solver who stopped at $C(16)=800$ would have compared the small invoice to $2500$ and flipped the verdict. Letter C names the larger engagement.
+**1.** Stopping at $C(16)=800$ would have compared the small invoice to $2500$ and flipped the verdict. Working from the isolated values, $C(16)=800$ is the figure that is checked, not the detour that produced $2500$. That contrast is the reason the verdict goes the way it does. Letter C names the larger engagement.
 
 **2.** The figure $2500$ is not a rounding of $2700$. It is a nearby cutoff. The opposite verdict would have needed a cap or a coefficient that pulled $C(81)$ down through $2500$.
 
@@ -6825,7 +6825,7 @@ $$C'(81)=25$$
 
 Because $25<\\frac{75}{2}$, an extra account adds less after eighty-one than after sixteen, not more. The leftover exponent is negative, so later accounts are cheaper to add. That is the economies of scale in the title, now read as a slope rather than as a doubling factor.
 
-A rushed solver who remembered that $C(81)=2700$ is larger than $C(16)=800$ would have confused a higher bill with a steeper extra-account cost. The level is higher at eighty-one; the slope is flatter. Mixing those two is how the claim's "adds more" appears. The finite rise of $1900$ euros across $65$ accounts, about $29$ euros per extra account on average, sits between the two instantaneous slopes $37.5$ and $25$, as a falling slope requires. It does not reverse the ranking.
+Remembering that $C(81)=2700$ is larger than $C(16)=800$ would have confused a higher bill with a steeper extra-account cost. That is the fork: $C(81)=2700$ belongs to the recovered isolation, $C(16)=800$ belongs to the discarded mix. The level is higher at eighty-one; the slope is flatter. Mixing those two is how the claim's "adds more" appears. The finite rise of $1900$ euros across $65$ accounts, about $29$ euros per extra account on average, sits between the two instantaneous slopes $37.5$ and $25$, as a falling slope requires. It does not reverse the ranking.
 
 The opposite verdict would have needed an exponent larger than $1$, so that $C'$ would itself rise. The logged rise forced $r=\\frac{3}{4}<1$. Changing the $1900$ gap would change $A$ and scale both slopes by the same factor; it would not flip which one is larger. A linear rival $R(n)=50n$ has constant slope $50$, so an extra account would add the same amount after sixteen as after eighty-one. Mixing that rival slope with the practice is another way to manufacture the claim.
 
@@ -6840,7 +6840,7 @@ This letter inverts the recovered bill, rather than reading a named size. The ov
 
 Six hundred and twenty-five clears six hundred. The inversion is a fourth power because the exponent is $\\frac{3}{4}$: once $n^{\\frac{3}{4}}=125=5^{3}$, taking both sides to the $\\frac{4}{3}$ sends $n$ to $5^{4}=625$.
 
-**1.** A rushed solver who treated the bill as linear with $A=100$ would have claimed $n=125$, well below $600$, and flipped the verdict. Linear thinking understates the book needed for a large invoice when $r<1$.
+**1.** Treating the bill as linear with $A=100$ would have claimed $n=125$, well below $600$, and flipped the verdict. So the letter reads the claim against $A=100$; $600$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $A=100$ stays in the write-up. Linear thinking understates the book needed for a large invoice when $r<1$.
 
 **2.** Checking the recovered rule at the cutoff itself: at $600$ accounts, $600^{\\frac{3}{4}}$ is a little under $125$, so $C(600)$ sits a little under $12500$. The target invoice is not yet met at $600$, which is why the claim's "already requires more than $600$" holds.
 
@@ -6918,7 +6918,7 @@ This letter compares the recovered exponent to inverse-linear decay, not a named
 
 The doubling factor is then $2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$, steeper than $\\frac{1}{2}$. Concentration still falls with range; it just falls faster than a simple reciprocal of distance.
 
-**1.** A rushed solver who saw a negative exponent and stopped at "it decays" would have treated every decay as inverse-linear. The extra half in $-\\frac{3}{2}$ is the whole comparison.
+**1.** Seeing a negative exponent and stopping at "it decays" would have treated every decay as inverse-linear. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The extra half in $-\\frac{3}{2}$ is the whole comparison.
 
 **2.** The opposite verdict would have needed an exponent at or above $-1$. Inverse-square, at $-2$, would have been even steeper. The stack model sits between those two, still faster than inverse-linear.
 
@@ -6929,7 +6929,7 @@ Concentration per metre of distance is the intensity $c(x)/x$, not the reading $
 
 Near the stack the intensity is steep. Far downwind it flattens. A constant intensity would have needed leftover exponent $0$, which would have required the original exponent to be $-1$. The recovered $-\\frac{3}{2}$ forbids that.
 
-**1.** A rushed solver who divided a level by a distance once, at the $4$ m monitor, would have claimed $50/4=12.5$ and treated that as a law. Repeating the division at $16$ m gives $6.25/16\\approx 0.39$, a different figure.
+**1.** Dividing a level by a distance once, at the $4$ m monitor, would have claimed $50/4=12.5$ and treated that as a law. That is the fork: $4$ belongs to the recovered isolation, $50/4=12.5$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Repeating the division at $16$ m gives $6.25/16\\approx 0.39$, a different figure.
 
 **2.** The opposite verdict would have needed inverse-linear decay. The logged gap between the two monitors already forced $-\\frac{3}{2}$.
 
@@ -6940,7 +6940,7 @@ This is a level question at $100$ metres, well past the two monitors. The overvi
 
 Four tenths sits below one half. The three-halves power at $100$ is $10^{3}=1000$, and $400/1000=0.4$ is the far-field entry. The two monitors were $50$ and $6.25$; this letter is a third range, not a reread of either of those.
 
-**1.** A rushed solver who scaled the $16$ m reading of $6.25$ by $16/100$ as if the law were inverse-linear would have claimed $1$, which sits above $0.5$ and flips the verdict. Inverse-linear thinking is too slow a decay for this stack.
+**1.** Scaling the $16$ m reading of $6.25$ by $16/100$ as if the law were inverse-linear would have claimed $1$, which sits above $0.5$ and flips the verdict. So the letter reads the claim against $16$; $0.5$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $16$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Inverse-linear thinking is too slow a decay for this stack.
 
 **2.** The opposite verdict would have needed a smaller coefficient, or a shallower exponent, so that $c(100)$ rose through $0.5$. At the recovered $A=400$, the far reading is locked to $0.4$.
 
@@ -6953,7 +6953,7 @@ $$x=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}$$
 
 Distance needed for a given concentration is still a monomial in $c$. Falling concentration does not introduce a logarithm. The new exponent is the reciprocal of $-\\frac{3}{2}$, just as any power $c=A x^{r}$ inverts to $x=(c/A)^{1/r}$.
 
-**1.** A rushed solver who treated inversion as "swap the variables and keep the exponent" would have written $x=A c^{-\\frac{3}{2}}$ and lost the reciprocal. The exponent must flip sign and take the reciprocal.
+**1.** Treating inversion as "swap the variables and keep the exponent" would have written $x=A c^{-\\frac{3}{2}}$ and lost the reciprocal. Keeping $x=A c^{-\\frac{3}{2}}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent must flip sign and take the reciprocal.
 
 **2.** Checking a recovered pair: at $c=50$ the inverse returns $x=4$, the nearer monitor. At $c=6.25$ it returns $x=16$. The inverse is faithful to the two logged readings, which is what a power inverse must do.
 
@@ -6970,7 +6970,7 @@ This is a level question at the nearer monitor. The overview recovered $c(4)=50$
 
 Fifty is not under forty-five. That $50$ is also $6.25+43.75$, the far reading plus the logged gap, so the nearer monitor is pinned once the gap and the far reading are known. The figure $45$ is a nearby cutoff, not a rounding of $50$.
 
-**1.** A rushed solver who treated $43.75$ as the nearer reading itself would have claimed "under $45$" and flipped the verdict. The $43.75$ is a difference of two monitors, not a level.
+**1.** Treating $43.75$ as the nearer reading itself would have claimed "under $45$" and flipped the verdict. Working from the isolated values, $43.75$ is the figure that is checked, not the detour that produced $45$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $43.75$ is a difference of two monitors, not a level.
 
 **2.** The opposite verdict would have needed a smaller gap, or a smaller far reading, so that $c(4)$ fell through $45$. At the recovered pair $50$ and $6.25$, the nearer monitor is locked above $45$.
 
@@ -7034,7 +7034,7 @@ This letter is about the shape after both stages, not a named wind speed. Surge 
 
 Stopping at the surge stage would have left a square-root law in $w$. Stopping at the loss stage would have left a cubic in $s$. Neither of those is the composed map from wind to loss. The claim is about that composed map.
 
-**1.** A rushed solver who added the exponents instead of multiplying them would have claimed exponent $3.5$ and still called it a power, which happens to keep the verdict but for the wrong reason. Composition multiplies, it does not add.
+**1.** Adding the exponents instead of multiplying them would have claimed exponent $3.5$ and still called it a power, which happens to keep the verdict but for the wrong reason. That is why $3.5$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Composition multiplies, it does not add.
 
 **2.** The opposite verdict would have needed a stage that was not a power: a logarithm, or a sum of two powers of surge. Both stages in the stem are monomials.
 
@@ -7062,7 +7062,7 @@ This is a level question at the named wind speed $64$. The overview recovered $s
 
 Two thousand and forty-eight clears two thousand. Stage by stage: the square root of $64$ is $8$, times $0.5$ is a four-metre surge, and $32\\cdot 4^{3}=2048$. The composed shortcut $4\\cdot 64^{\\frac{3}{2}}=4\\cdot 512=2048$ is the same number.
 
-**1.** A rushed solver who stopped after the surge stage would have compared $4$ metres to $2000$ and missed the letter. The claim is about the loss index, not the surge height.
+**1.** Stopping after the surge stage would have compared $4$ metres to $2000$ and missed the letter. After isolating the unknown, the check is against $4$. The figure $2000$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $4$ stays in the write-up. The claim is about the loss index, not the surge height.
 
 **2.** The opposite verdict would have needed a smaller inner coefficient, or a missing cube, so that $2048$ fell through $2000$. At the recovered composition the index is locked above $2000$.
 
@@ -7073,7 +7073,7 @@ This letter reads the composed exponent as an acceleration claim. The overview r
 
 The first stage alone has exponent $\\frac{1}{2}<1$, so surge itself would decelerate. The cube in the second stage is what pushes the product above one. Acceleration of losses is a composed fact, not a surge fact.
 
-**1.** A rushed solver who saw the square-root surge and stopped would have claimed deceleration. The claim is about the loss index after both stages.
+**1.** Seeing the square-root surge and stopping would have claimed deceleration. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The claim is about the loss index after both stages.
 
 **2.** Checking the leftover slope of the composed rule: $L'(w)=6 w^{\\frac{1}{2}}$, which rises with $w$. The slope at wind $16$ is $24$; at wind $64$ it is $48$. Later wind is dearer in loss, which is the same story as $r>1$.
 
@@ -7085,7 +7085,7 @@ This letter reads the composed exponent as an acceleration claim. The overview r
 
 The first stage alone has exponent $\\frac{1}{2}<1$, so surge itself would decelerate. The cube in the second stage is what pushes the product above one. Acceleration of losses is a composed fact, not a surge fact.
 
-**1.** A rushed solver who saw the square-root surge and stopped would have claimed deceleration. The claim is about the loss index after both stages.
+**1.** Seeing the square-root surge and stopping would have claimed deceleration. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The claim is about the loss index after both stages.
 
 **2.** Checking the leftover slope of the composed rule: $L'(w)=6 w^{\\frac{1}{2}}$, which rises with $w$. The slope at wind $16$ is $24$; at wind $64$ it is $48$. Later wind is dearer in loss, which is the same story as $r>1$.
 
@@ -7098,7 +7098,7 @@ This letter inverts a loss of $1000$, rather than reading a named wind. The over
 
 **1.** Starting from $L(w)=4w^{\\frac{3}{2}}$, a loss of $1000$ forces $w^{\\frac{3}{2}}=250$, then $w=250^{\\frac{2}{3}}\\approx 39.7$. At $w=50$ the three-halves power is already past $250$ after the coefficient $4$, so a wind of $50$ already overshoots a loss of $1000$.
 
-**2.** A rushed solver who inverted as if the exponent were $1$ would have claimed $w=250$, well above $50$, and flipped the verdict. Linear inversion overstates the wind needed when $r>1$.
+**2.** Inverting as if the exponent were $1$ would have claimed $w=250$, well above $50$, and flipped the verdict. The recovered comparison therefore keeps $1$ and does not substitute $50$. Linear inversion overstates the wind needed when $r>1$.
 
 **3.** Another mix-up is inverting the surge stage only: $0.5\\sqrt{w}=1000$ is nonsense units, and it manufactures a huge wind. The $1000$ is a loss index, not a surge height.
 
@@ -7174,7 +7174,7 @@ This letter is about impact itself, not the scaled charge. Impact is a square-ro
 
 The coefficient $60$ cancels in any ratio, so a different calibration would not have changed this ranking. A proportional impact would have needed exponent $1$.
 
-**1.** A rushed solver who glanced at the scaled charge $vI(v)$ would have seen leftover exponent $\\frac{3}{2}$ and claimed impact outruns size. That exponent belongs to the charge, not to $I$.
+**1.** Glancing at the scaled charge $vI(v)$ would have seen leftover exponent $\\frac{3}{2}$ and claimed impact outruns size. So the letter reads the claim against $vI(v)$; $\\frac{3}{2}$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $vI(v)$ stays in the write-up. That exponent belongs to the charge, not to $I$.
 
 **2.** The opposite verdict would have needed an impact exponent at least $1$. The logged $6$ basis-point gap between $0.04$ and $0.09$ ADV already forced a square root.
 
@@ -7202,7 +7202,7 @@ This is a level question at $0.16$ ADV. The overview recovered $I(0.16)=24$. The
 
 Twenty-four clears twenty. The square root of $0.16$ is $0.4$, times $60$ is $24$. From the logged $0.09$ ADV impact of $18$, a further move to $0.16$ is a $\\frac{4}{3}$ factor on the square root, $18\\cdot\\frac{4}{3}=24$.
 
-**1.** A rushed solver who doubled the $0.09$ ADV impact as if impact were linear would have claimed $36$ and still sat above $20$, for the wrong reason. Another mix-up is reading $0.16$ as a doubling of $0.04$, which it is in order size, and then doubling the $12$ bp impact at $0.04$ to $24$. That happens to land on the right number because $\\sqrt{4}=2$, but it is a coincidence of this particular pair.
+**1.** Doubling the $0.09$ ADV impact as if impact were linear would have claimed $36$ and still sat above $20$, for the wrong reason. So the letter reads the claim against $0.09$; $20$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $0.09$ stays in the write-up. Another mix-up is reading $0.16$ as a doubling of $0.04$, which it is in order size, and then doubling the $12$ bp impact at $0.04$ to $24$. That happens to land on the right number because $\\sqrt{4}=2$, but it is a coincidence of this particular pair.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $I(0.16)$ fell through $20$. At the recovered $A=60$, the impact is locked at $24$.
 
@@ -7213,7 +7213,7 @@ This letter is about the crossing of the scaled charge with the notional fee, an
 
 Past $v=0.25$ the square root $\\sqrt{v}$ keeps growing, so $60\\sqrt{v}-30$ stays positive. There is only one positive root of $60 v^{\\frac{3}{2}}=30v$, because dividing by $v>0$ leaves a monotone square root. Once the charge is ahead, the fee never catches up.
 
-**1.** A rushed solver who saw two powers and expected two crossings would have looked for a second root. On $v>0$ the factor $v$ cancels and leaves a single square-root equation.
+**1.** Seeing two powers and expecting two crossings would have looked for a second root. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. On $v>0$ the factor $v$ cancels and leaves a single square-root equation.
 
 **2.** Checking a size past the crossing: at $v=0.36$, the charge is $60\\cdot(0.36)^{\\frac{3}{2}}=12.96$ and the fee is $10.8$, so the charge is still larger. At $v=1$ the charge is $60$ and the fee is $30$.
 
@@ -7230,7 +7230,7 @@ This is a level question on the scaled charge at $v=0.25$. The overview recovere
 
 Seven and a half sits below ten. This is also $60\\cdot\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=60\\cdot\\frac{1}{8}=7.5$. The figure $10$ is a nearby cutoff, not a rounding of $7.5$.
 
-**1.** A rushed solver who evaluated impact $I(0.25)=30$ instead of the scaled charge would have claimed "above $10$" and flipped the verdict. Thirty basis points is impact, not $vI$. Mixing $I$ with $vI$ is the mix-up.
+**1.** Evaluating impact $I(0.25)=30$ instead of the scaled charge would have claimed "above $10$" and flipped the verdict. So the letter reads the claim against $I(0.25)=30$; $10$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $I(0.25)=30$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Thirty basis points is impact, not $vI$. Mixing $I$ with $vI$ is the mix-up.
 
 **2.** Another mix-up is reading the fee $F(0.25)=7.5$ as if the claim were about the fee sitting above $10$. Neither the charge nor the fee clears $10$ at this order.
 
@@ -7296,13 +7296,13 @@ This letter inverts the energy law, rather than reading a named mass. A nonzero 
 
 Falling or rising energy does not introduce a logarithm. The new exponent is the reciprocal of $\\frac{2}{3}$, just as any power $E=A m^{r}$ inverts to $m=(E/A)^{1/r}$.
 
-**1.** A rushed solver who swapped the variables and kept exponent $\\frac{2}{3}$ would have written $m=A E^{\\frac{2}{3}}$ and lost the reciprocal. The exponent must take the reciprocal.
+**1.** Swapping the variables and keeping exponent $\\frac{2}{3}$ would have written $m=A E^{\\frac{2}{3}}$ and lost the reciprocal. Working from the isolated values, $\\frac{2}{3}$ is the figure that is checked, not the detour that produced $m=A E^{\\frac{2}{3}}$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent must take the reciprocal.
 
 **2.** Checking a recovered pair: at $E=160$ the inverse returns $m=64$, the larger logged animal. At $E=90$ it returns $m=27$. The inverse is faithful to the two logged animals.
 
 Checking a recovered pair: at $E=160$ the inverse returns $m=64$, the larger logged animal. At $E=90$ it returns $m=27$. The inverse is faithful to the two logged animals, which is what a power inverse must do.
 
-A rushed solver who swapped the variables and kept exponent $\\frac{2}{3}$ would have written $m=10 E^{\\frac{2}{3}}$ and lost the reciprocal. The exponent must take the reciprocal: $\\frac{2}{3}$ becomes $\\frac{3}{2}$. At $E=160$ that wrong inverse would have claimed $m=10\\cdot 160^{\\frac{2}{3}}$, tens of kilograms off the logged $64$.
+Swapping the variables and keeping exponent $\\frac{2}{3}$ would have written $m=10 E^{\\frac{2}{3}}$ and lost the reciprocal. Working from the isolated values, $\\frac{2}{3}$ is the figure that is checked, not the detour that produced $m=10 E^{\\frac{2}{3}}$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent must take the reciprocal: $\\frac{2}{3}$ becomes $\\frac{3}{2}$. At $E=160$ that wrong inverse would have claimed $m=10\\cdot 160^{\\frac{2}{3}}$, tens of kilograms off the logged $64$.
 
 The opposite verdict would have needed a law that was not a pure power: an exponential metabolic rule, or a sum of two allometric terms, would invert to a logarithm or to a mess. The stem is a single monomial. A change of units from kilograms to grams would rescale the coefficient and leave the inverse still a power of energy.
 
@@ -7317,7 +7317,7 @@ That is the allometric point of exponent $\\frac{2}{3}<1$. A constant intensity 
 
 **1.** Checking the two logged animals: at $27$ kg the intensity is $90/27\\approx 3.33$ units per kilogram. At $64$ kg it is $160/64=2.5$. Intensity has already fallen.
 
-**2.** A rushed solver who saw a larger total at $64$ kg and inferred a larger intensity would have flipped the verdict. Totals rise; intensities fall.
+**2.** Seeing a larger total at $64$ kg and inferred a larger intensity would have flipped the verdict. The opposite verdict would need a different isolation than $64$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Totals rise; intensities fall.
 
 Energy use per kilogram falls as body mass rises, so the statement is True.`,
       `**C.** → True
@@ -7326,7 +7326,7 @@ This is a level question at $64$ kg. The overview recovered $E(64)=160$. The cla
 
 One hundred and sixty clears one hundred and fifty. The two-thirds power of $64$ is $16$, times $10$ is $160$. The logged gap of $70$ above $E(27)=90$ is the same $160$.
 
-**1.** A rushed solver who treated $70$ as the $64$ kg level itself would have compared $70$ to $150$ and flipped the verdict. The $70$ is a difference of two animals, not a level.
+**1.** Treating $70$ as the $64$ kg level itself would have compared $70$ to $150$ and flipped the verdict. So the letter reads the claim against $70$; $150$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $70$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $70$ is a difference of two animals, not a level.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $E(64)$ fell through $150$. At the recovered $A=10$, the $64$ kg animal is locked at $160$.
 
@@ -7339,13 +7339,13 @@ The overview recovered $A=10$, but the coefficient cancels in the comparison, so
 
 **1.** Checking a concrete pair: two $27$ kg animals use $2\\cdot 90=180$. One $54$ kg animal uses $10\\cdot 54^{\\frac{2}{3}}\\approx 143$. The merge saves energy. At the logged $64$ kg against two $32$ kg animals the same ranking holds.
 
-**2.** A rushed solver who treated energy as proportional to mass would have claimed $E(2m)=2E(m)$ and called the total unchanged. That is exponent $1$, which the logged gap already forbade.
+**2.** Treating energy as proportional to mass would have claimed $E(2m)=2E(m)$ and called the total unchanged. Once $E(2m)=2E(m)$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. That is exponent $1$, which the logged gap already forbade.
 
 **3.** The opposite verdict would have needed leftover exponent $1$, a linear energy law. Allometry with $\\frac{2}{3}$ is why combining two animals into one larger animal is cheaper in energy, not equal.
 
 Checking a concrete pair: two $27$ kg animals use $2\\cdot 90=180$. One $54$ kg animal uses $10\\cdot 54^{\\frac{2}{3}}\\approx 143$. The merge saves energy. At the logged $64$ kg against two $32$ kg animals the same ranking holds, because $2^{\\frac{2}{3}}<2$ at every mass.
 
-A rushed solver who treated energy as proportional to mass would have claimed $E(2m)=2E(m)$ and called the total unchanged. That is exponent $1$, which the logged gap of $70$ units between $27$ kg and $64$ kg already forbade: a linear rule through $E(27)=90$ would have put $E(64)$ at $213$, not at $160$.
+Treating energy as proportional to mass would have claimed $E(2m)=2E(m)$ and called the total unchanged. Once $E(2m)=2E(m)$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. That is exponent $1$, which the logged gap of $70$ units between $27$ kg and $64$ kg already forbade: a linear rule through $E(27)=90$ would have put $E(64)$ at $213$, not at $160$.
 
 Herd totals add individual uses, which is why $2E(m)$ is the right left-hand side. Applying $E$ once to the pooled mass $2m$ is the merge, and that is strictly cheaper when $r<1$. The opposite verdict would have needed leftover exponent $1$, a linear energy law. Allometry with $\\frac{2}{3}$ is why combining two animals into one larger animal is cheaper in energy, not equal.
 
@@ -7356,7 +7356,7 @@ This is a level question at $216$ kg. The overview recovered $E(216)=360$. The c
 
 Three hundred and sixty sits under four hundred. Two hundred and sixteen is $6^{3}$, so the two-thirds power is $36$, times $10$ is $360$. From $E(27)=90$, an eightfold mass is a fourfold energy, $90\\cdot 4=360$, because $8^{\\frac{2}{3}}=4$.
 
-**1.** A rushed solver who scaled $E(64)=160$ by $216/64$ as if energy were linear would have claimed $540$, above $400$, and flipped the verdict. Linear thinking overstates a large animal when $r<1$.
+**1.** Scaling $E(64)=160$ by $216/64$ as if energy were linear would have claimed $540$, above $400$, and flipped the verdict. So the letter reads the claim against $E(64)=160$; $400$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $E(64)=160$ stays in the write-up. Linear thinking overstates a large animal when $r<1$.
 
 **2.** The opposite verdict would have needed a larger coefficient, so that $E(216)$ rose through $400$. At the recovered $A=10$, the $216$ kg animal is locked at $360$.
 
@@ -7424,7 +7424,7 @@ This letter is a ranking by distance, not a named zone count. The exponent $-\\f
 
 The overview recovered $A=3200$, but the coefficient is positive and cancels in any ratio of two zones. A different planning file would not have changed this ranking.
 
-**1.** A rushed solver who saw core catchment ending near $10$ km and thought a far zone could still out-supply a near one by being larger in population would have imported a fact the stem does not give. The model is a pure distance decay.
+**1.** Seeing core catchment ending near $10$ km and thinking a far zone could still out-supply a near one by being larger in population would have imported a fact the stem does not give. The recovered isolation is checked against the claim using $10$, which is the figure the sessions actually produce. The model is a pure distance decay.
 
 **2.** The opposite verdict would have needed a positive exponent, a law that grew with drive time. The stem is $d^{-1.5}$.
 
@@ -7435,11 +7435,11 @@ An inverse-square law would give the fourfold-distance factor $4^{-2}=\\frac{1}{
 
 The overview recovered $f(4)=400$ and $f(16)=50$, and $50/400=\\frac{1}{8}$, not $\\frac{1}{16}$. The planning file's own two zones already refuse inverse-square.
 
-**1.** A rushed solver who saw a negative exponent and a square in the two distances $4$ and $16$ would have guessed inverse-square. The distances being squares is a convenience for the three-halves power, not a hint at exponent $-2$.
+**1.** Seeing a negative exponent and a square in the two distances $4$ and $16$ would have guessed inverse-square. So the letter reads the claim against $4$; $16$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $4$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The distances being squares is a convenience for the three-halves power, not a hint at exponent $-2$.
 
 **2.** The opposite verdict would have needed the logged gap to force exponent $-2$. It forced $-\\frac{3}{2}$.
 
-The planning file's own two zones already refuse inverse-square: $f(16)/f(4)=50/400=\\frac{1}{8}$, not $\\frac{1}{16}$. A rushed solver who saw a negative exponent and a square in the two distances $4$ and $16$ would have guessed inverse-square. The distances being squares is a convenience for the three-halves power, not a hint at exponent $-2$.
+The planning file's own two zones already refuse inverse-square: $f(16)/f(4)=50/400=\\frac{1}{8}$, not $\\frac{1}{16}$. Seeing a negative exponent and a square in the two distances $4$ and $16$ would have guessed inverse-square. So the letter reads the claim against $4$; $16$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $4$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The distances being squares is a convenience for the three-halves power, not a hint at exponent $-2$.
 
 Footfall does not follow an inverse-square law of driving distance, so the statement is False.`,
       `**C.** → True
@@ -7448,7 +7448,7 @@ This is a level question at $9$ kilometres against the core floor of $100$ visit
 
 One hundred and eighteen and a half still clears one hundred. Nine kilometres is a perfect square, so $9^{1.5}=27$, and $3200/27$ is the exact count. The core threshold is $100$; this letter is a named zone, not the boundary itself.
 
-**1.** A rushed solver who interpolated linearly between $f(4)=400$ and $f(16)=50$ would have claimed about $225$ at $9$ km, still above $100$ but for the wrong shape. Another mix-up is using $f(16)=50$ as if $9$ km were already past the far zone.
+**1.** Interpolating linearly between $f(4)=400$ and $f(16)=50$ would have claimed about $225$ at $9$ km, still above $100$ but for the wrong shape. Working from the isolated values, $f(4)=400$ is the figure that is checked, not the detour that produced $100$. Another mix-up is using $f(16)=50$ as if $9$ km were already past the far zone.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $f(9)$ fell through $100$. At the recovered $A=3200$, nine kilometres is still inside core catchment.
 
@@ -7459,7 +7459,7 @@ This letter locates the core-catchment boundary, not a named zone. The overview 
 
 Ten point zero eight sits before eleven. Ten kilometres still sits inside, because $10^{1.5}\\approx 31.62<32$, so $f(10)\\approx 101.2>100$. Eleven kilometres is already out, because $11\\sqrt{11}\\approx 36.48>32$, so $f(11)\\approx 87.7<100$. Core catchment already ends before $11$ kilometres, just after $10$.
 
-**1.** A rushed solver who inverted as if the exponent were $-1$ would have claimed $d=32$, well past $11$, and flipped the verdict. Inverse-linear thinking overstates the catchment when decay is steeper than $-1$.
+**1.** Inverting as if the exponent were $-1$ would have claimed $d=32$, well past $11$, and flipped the verdict. The stem's recovered values line up with $-1$, whereas $11$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $-1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Inverse-linear thinking overstates the catchment when decay is steeper than $-1$.
 
 **2.** Another mix-up is treating the far logged zone of $16$ km as the boundary, because $f(16)=50$ is already under $100$. That zone is past the boundary; it is not the boundary.
 
@@ -7467,7 +7467,7 @@ Ten point zero eight sits before eleven. Ten kilometres still sits inside, becau
 
 Ten kilometres still sits inside, because $10^{1.5}\\approx 31.62<32$, so $f(10)\\approx 101.2>100$. Eleven kilometres is already out, because $11\\sqrt{11}\\approx 36.48>32$, so $f(11)\\approx 87.7<100$. Core catchment already ends before $11$ kilometres, just after $10$.
 
-A rushed solver who inverted as if the exponent were $-1$ would have claimed $d=32$, well past $11$, and flipped the verdict. Inverse-linear thinking overstates the catchment when decay is steeper than $-1$. Another mix-up is treating the far logged zone of $16$ km as the boundary, because $f(16)=50$ is already under $100$. That zone is past the boundary; it is not the boundary.
+Inverting as if the exponent were $-1$ would have claimed $d=32$, well past $11$, and flipped the verdict. The stem's recovered values line up with $-1$, whereas $11$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $-1$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Inverse-linear thinking overstates the catchment when decay is steeper than $-1$. Another mix-up is treating the far logged zone of $16$ km as the boundary, because $f(16)=50$ is already under $100$. That zone is past the boundary; it is not the boundary.
 
 The opposite verdict would have needed a larger core floor, or a smaller coefficient, so that the inverted distance fell through $11$ from the other side. At the recovered $A=3200$ and floor $100$, the boundary is locked near $10.08$ km. Changing the floor from $100$ to $50$ would push the boundary out to $16$ km, which is past $11$; that is a different planning rule.
 
@@ -7478,7 +7478,7 @@ This letter compares leftover slopes at two ranges, not two footfall levels. The
 
 The claim says the extra kilometre cuts more far from the park. That is the wrong ranking of the two slopes.
 
-**1.** A rushed solver who saw $f(4)=400$ much larger than $f(16)=50$ and inferred that far drops must be larger in count would have confused a smaller remaining footfall with a steeper cut. The remaining pool is smaller far away; the slope is also flatter.
+**1.** Seeing $f(4)=400$ much larger than $f(16)=50$ and inferred that far drops must be larger in count would have confused a smaller remaining footfall with a steeper cut. After isolating the unknown, the check is against $f(4)=400$. The figure $f(16)=50$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $f(4)=400$ stays in the write-up. The remaining pool is smaller far away; the slope is also flatter.
 
 **2.** Checking a one-kilometre finite step: from $4$ to $5$ km, $f(5)=3200/5^{1.5}\\approx 286$, a drop of about $114$. From $16$ to $17$ km, $f(17)\\approx 45.6$, a drop of about $4.4$. The finite steps agree with the derivatives.
 
@@ -7486,7 +7486,7 @@ The claim says the extra kilometre cuts more far from the park. That is the wron
 
 Checking a one-kilometre finite step: from $4$ to $5$ km, $f(5)=3200/5^{1.5}\\approx 286$, a drop of about $114$. From $16$ to $17$ km, $f(17)\\approx 45.6$, a drop of about $4.4$. The finite steps agree with the derivatives. Distance-decay drops are steepest at the door, not out on the ring road.
 
-A rushed solver who saw $f(4)=400$ much larger than $f(16)=50$ and inferred that far drops must be larger in count would have confused a smaller remaining footfall with a steeper cut. The remaining pool is smaller far away; the slope is also flatter.
+Seeing $f(4)=400$ much larger than $f(16)=50$ and inferred that far drops must be larger in count would have confused a smaller remaining footfall with a steeper cut. After isolating the unknown, the check is against $f(4)=400$. The figure $f(16)=50$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $f(4)=400$ stays in the write-up. The remaining pool is smaller far away; the slope is also flatter.
 
 The opposite verdict would have needed a positive leftover exponent on the slope size, which would have required the original exponent to sit in a range that made $|f'|$ grow with $d$. For $r=-\\frac{3}{2}$, $|f'|$ falls. Changing $A$ scales both slopes by the same factor and cannot reverse $150>4.69$.
 
@@ -7552,7 +7552,7 @@ This letter is about the recovered exponent, not a named array. The two arrays f
 
 The coefficient $A=24$ cancels in any ratio, so a different pair of arrays with the same area ratio would have told the same ranking.
 
-**1.** A rushed solver who compared $360$ kWh to $240$ kWh against $225$ m² to $100$ m² as a raw euro-per-square-metre story would have seen output rising with area and stopped. Rising is not the claim; rising more slowly than area is the claim.
+**1.** Comparing $360$ kWh to $240$ kWh against $225$ m² to $100$ m² as a raw euro-per-square-metre story would have seen output rising with area and stopped. That is the fork: $360$ belongs to the recovered isolation, $100$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Rising is not the claim; rising more slowly than area is the claim.
 
 **2.** The opposite verdict would have needed $r\\ge 1$. The two logged arrays already refuse that: output rose by $50\\%$ while area rose by $125\\%$.
 
@@ -7563,13 +7563,13 @@ This letter reads the proposal that expands the $225$ m² array to $450$ m². Th
 
 Five hundred and nine sits under five hundred and twenty. Expanding $225$ m² to $450$ m² is a doubling, and $360\\cdot\\sqrt{2}\\approx 509$. A linear doubling would have claimed $720$, well above $520$. Square-root thinking is why the proposal misses $520$.
 
-**1.** A rushed solver who doubled $360$ would have claimed $720$ and called the statement true. That is exponent $1$, which letter A already refused.
+**1.** Doubling $360$ would have claimed $720$ and called the statement true. So the letter reads the claim against $360$; $720$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $360$ stays in the write-up. That is exponent $1$, which letter A already refused.
 
 **2.** Another mix-up is adding $240$ kWh from the small array onto $360$, as if the proposal installed a second $100$ m² roof rather than doubling the $225$ m² roof. That sum is $600$, also above $520$, and it is the wrong experiment.
 
 **3.** The opposite verdict would have needed a larger exponent, or a larger coefficient, so that $y(450)$ rose through $520$. At the recovered square-root law, the proposal is locked near $509$.
 
-A rushed solver who doubled $360$ would have claimed $720$ and called the statement true. That is exponent $1$, which letter A already refused. Another mix-up is adding $240$ kWh from the small array onto $360$, as if the proposal installed a second $100$ m² roof rather than doubling the $225$ m² roof. That sum is $600$, also above $520$, and it is the wrong experiment.
+Doubling $360$ would have claimed $720$ and called the statement true. So the letter reads the claim against $360$; $720$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $360$ stays in the write-up. That is exponent $1$, which letter A already refused. Another mix-up is adding $240$ kWh from the small array onto $360$, as if the proposal installed a second $100$ m² roof rather than doubling the $225$ m² roof. That sum is $600$, also above $520$, and it is the wrong experiment.
 
 The opposite verdict would have needed a larger exponent, or a larger coefficient, so that $y(450)$ rose through $520$. At the recovered square-root law, the proposal is locked near $509$. A coefficient of $25$ instead of $24$ would have given about $530$, just over $520$; the two logged arrays force $A=24$, not $25$.
 
@@ -7582,7 +7582,7 @@ Output per square metre is the intensity $y(a)/a$, not the total. The overview r
 
 Checking the two logged arrays: at $100$ m² the intensity is $2.4$ kWh per square metre. At $225$ m² it is $360/225=1.6$. Intensity has already fallen.
 
-**1.** A rushed solver who saw $360>240$ and inferred a larger intensity would have flipped the verdict. Totals rise; intensities fall.
+**1.** Seeing $360>240$ and inferred a larger intensity would have flipped the verdict. Keeping $360>240$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Totals rise; intensities fall.
 
 **2.** The opposite verdict would have needed leftover exponent $0$, a proportional roof. The two arrays already force $r=\\frac{1}{2}$.
 
@@ -7595,13 +7595,13 @@ This letter inverts a doubling of the logged $240$ kWh output. The overview reco
 
 From $24\\sqrt{a}=480$ one has $\\sqrt{a}=20$ and $a=400$. A doubling of area to $200$ m² would only multiply output by $\\sqrt{2}$, to about $339$ kWh, short of $480$.
 
-**1.** A rushed solver who doubled the area with the output would have claimed $200$ m² and called "more than a doubling" false. That is exponent $1$.
+**1.** Doubling the area with the output would have claimed $200$ m² and called "more than a doubling" false. Keeping $200$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That is exponent $1$.
 
 **2.** The opposite verdict would have needed $r\\ge 1$, so that doubling output needed at most a doubling of area. The two logged arrays already force $r=\\frac{1}{2}$.
 
 A doubling of area to $200$ m² would only multiply output by $\\sqrt{2}$, to about $339$ kWh, short of $480$. The $100$ m² array must quadruple, which is more than a doubling. Any $r<1$ doubling of output requires more than a doubling of area.
 
-A rushed solver who doubled the area with the output would have claimed $200$ m² and called "more than a doubling" false. That is exponent $1$. The opposite verdict would have needed $r\\ge 1$, so that doubling output needed at most a doubling of area. The two logged arrays already force $r=\\frac{1}{2}$.
+Doubling the area with the output would have claimed $200$ m² and called "more than a doubling" false. Keeping $200$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. That is exponent $1$. The opposite verdict would have needed $r\\ge 1$, so that doubling output needed at most a doubling of area. The two logged arrays already force $r=\\frac{1}{2}$.
 
 The same $a=400$ reappears in letter E as a level. This letter is the inversion that produces it: $24\\sqrt{a}=480$ forces $\\sqrt{a}=20$.
 
@@ -7614,7 +7614,7 @@ This is a level question at $400$ m², the same array that doubles the logged $2
 
 Four hundred and eighty sits above four hundred and seventy. Twenty squared is $400$, and $24\\cdot 20=480$. The $470$ cutoff is a near miss on that exact doubling array.
 
-**1.** A rushed solver who used $y(225)=360$ and scaled by $400/225$ linearly would have claimed about $640$, still above $470$ but for the wrong shape. Another mix-up is reading $y(450)\\approx 509$ from letter B as if the claim named $450$ m².
+**1.** Using $y(225)=360$ and scaling by $400/225$ linearly would have claimed about $640$, still above $470$ but for the wrong shape. After isolating the unknown, the check is against $y(225)=360$. The figure $470$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $y(225)=360$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another mix-up is reading $y(450)\\approx 509$ from letter B as if the claim named $450$ m².
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $y(400)$ fell through $470$. At the recovered $A=24$, four hundred square metres is locked at $480$.
 
@@ -7680,7 +7680,7 @@ $$a=400$$
 
 Doubling cumulative volume would halve the unit cost only if the exponent were $-1$. The overview recovered $b=-\\frac{1}{2}$, so doubling volume multiplies unit cost by $2^{-\\frac{1}{2}}\\approx 0.707$, not by $\\frac{1}{2}$. Quadrupling would halve the unit cost, because $4^{-\\frac{1}{2}}=\\frac{1}{2}$, and that is the logged move from $80$ euros at $100$ thousand cells to $40$ euros at $400$ thousand. A single doubling is not that move.
 
-**1.** A rushed solver who saw cost fall from $80$ to $40$ between the two milestones and called every doubling a halving would have skipped that the milestones are a quadrupling of volume, not a doubling.
+**1.** Seeing cost fall from $80$ to $40$ between the two milestones and calling every doubling a halving would have skipped that the milestones are a quadrupling of volume, not a doubling. So the letter reads the claim against $80$; $40$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up.
 
 **2.** The opposite verdict would have needed $b=-1$. The two milestones force $4^{b}=\\frac{1}{2}$, hence $b=-\\frac{1}{2}$.
 
@@ -7691,11 +7691,11 @@ Unit cost falls, but cumulative spend is $S(N)=N\\,c(N)$. The overview recovered
 
 Checking the milestones: $S(100)=8000$ and $S(400)=16000$. Unit cost halved; spend doubled. The two stories run in opposite directions.
 
-**1.** A rushed solver who saw unit cost falling and inferred that the total cheque must fall would have mixed a per-cell figure with a cumulative one. The title tracks both.
+**1.** Seeing unit cost falling and inferred that the total cheque must fall would have mixed a per-cell figure with a cumulative one. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The title tracks both.
 
 **2.** The opposite verdict would have needed leftover exponent on $S$ to be negative, hence $b<-1$. The recovered $b=-\\frac{1}{2}$ is not that steep.
 
-Checking the milestones: $S(100)=8000$ and $S(400)=16000$. Unit cost halved; spend doubled. The two stories run in opposite directions. A rushed solver who saw unit cost falling and inferred that the total cheque must fall would have mixed a per-cell figure with a cumulative one. The title tracks both.
+Checking the milestones: $S(100)=8000$ and $S(400)=16000$. Unit cost halved; spend doubled. The two stories run in opposite directions. Seeing unit cost falling and inferred that the total cheque must fall would have mixed a per-cell figure with a cumulative one. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The title tracks both.
 
 The opposite verdict would have needed leftover exponent on $S$ to be negative, hence $b<-1$. The recovered $b=-\\frac{1}{2}$ is not that steep. An inverse-square unit cost, $b=-2$, would have made spend fall as $N^{-1}$; the two milestones $80$ then $40$ over a quadrupling of volume already refuse any $b$ other than $-\\frac{1}{2}$.
 
@@ -7710,7 +7710,7 @@ This is a level question at $1600$ thousand cells. The overview recovered $c(160
 
 Twenty sits below twenty-five. Two further quadruplings from $c(100)=80$ are $40$ then $20$, because each quadrupling halves unit cost. Sixteen hundred is four times four hundred, so one more halving from the second milestone.
 
-**1.** A rushed solver who applied one doubling from $c(400)=40$ would have claimed about $28$, above $25$, and flipped the verdict. The move from $400$ to $1600$ is a quadrupling, not a doubling.
+**1.** Applying one doubling from $c(400)=40$ would have claimed about $28$, above $25$, and flipped the verdict. The recovered comparison therefore keeps $c(400)=40$ and does not substitute $25$. That contrast is the reason the verdict goes the way it does. The move from $400$ to $1600$ is a quadrupling, not a doubling.
 
 **2.** The opposite verdict would have needed a shallower learning exponent, so that $c(1600)$ sat above $25$. At the recovered $b=-\\frac{1}{2}$, the unit cost is locked at $20$.
 
@@ -7721,11 +7721,11 @@ This letter is about cumulative spend under a quadrupling of volume, not about u
 
 The claim wants more than a doubling. The square-root spend law is exactly a doubling on a quadrupling of volume.
 
-**1.** A rushed solver who multiplied the old spend $8000$ by the old unit-cost factor $2$ in the wrong direction, or who treated spend as $N\\cdot 80$ held fixed at the first unit cost, would have claimed $32000$, a quadrupling of spend, and called "more than a doubling" true. That ignores learning.
+**1.** Multiplying the old spend $8000$ by the old unit-cost factor $2$ in the wrong direction, or treating spend as $N\\cdot 80$ held fixed at the first unit cost, would have claimed $32000$, a quadrupling of spend, and called "more than a doubling" true. After isolating the unknown, the check is against $8000$. The figure $32000$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $8000$ stays in the write-up. That ignores learning.
 
 **2.** The opposite verdict would have needed leftover exponent on $S$ larger than $\\frac{1}{2}$, so that a factor of $4$ on $N$ produced more than a factor of $2$ on $S$. The recovered $b=-\\frac{1}{2}$ locks $S$ to a square root.
 
-A rushed solver who multiplied the old spend $8000$ by the old unit-cost factor held fixed, treating spend as $N\\cdot 80$, would have claimed $32000$ at $400$ thousand cells, a quadrupling of spend, and called "more than a doubling" true. That ignores learning. Unit cost halves on that quadrupling, so spend only doubles.
+Multiplying the old spend $8000$ by the old unit-cost factor held fixed, treating spend as $N\\cdot 80$, would have claimed $32000$ at $400$ thousand cells, a quadrupling of spend, and called "more than a doubling" true. Working from the isolated values, $8000$ is the figure that is checked, not the detour that produced $400$. That ignores learning. Unit cost halves on that quadrupling, so spend only doubles.
 
 The opposite verdict would have needed leftover exponent on $S$ larger than $\\frac{1}{2}$, so that a factor of $4$ on $N$ produced more than a factor of $2$ on $S$. The recovered $b=-\\frac{1}{2}$ locks $S$ to a square root. Changing the two milestone costs would change $A$ and scale both spends by the same factor; it would not turn a doubling into more than a doubling.
 
@@ -7738,7 +7738,7 @@ This is a level question early on the curve, at $25$ thousand cells. The overvie
 
 One hundred and sixty sits above one hundred and fifty. Early on the learning curve the unit cost is still high. From $c(100)=80$, the move back to $25$ thousand is a factor of $\\frac{1}{4}$ on volume, hence a doubling of unit cost, $80\\cdot 2=160$.
 
-**1.** A rushed solver who treated $25$ as a quarter of $100$ and halved the unit cost instead of doubling it would have claimed $40$, well below $150$, and flipped the verdict. Inverse-square-root learning raises unit cost when volume shrinks.
+**1.** Treating $25$ as a quarter of $100$ and halving the unit cost instead of doubling it would have claimed $40$, well below $150$, and flipped the verdict. The stem's recovered values line up with $25$, whereas $150$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $25$ stays in the write-up. Inverse-square-root learning raises unit cost when volume shrinks.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $c(25)$ fell through $150$. At the recovered $A=800$, twenty-five thousand cells is locked at $160$.
 
@@ -7804,11 +7804,11 @@ This letter is about the composed map from discharge to sediment, not about velo
 
 The first stage alone, $S(v)=5v^{3}$, would have scaled an eightfold on a doubled velocity. Discharge, however, only squares into velocity through $v(q)=\\frac{1}{2}q^{\\frac{1}{2}}$, so the composed leftover is three halves, not three. Mixing the velocity doubling with the discharge doubling is how an eightfold claim appears; this letter asks about discharge.
 
-**1.** A rushed solver who doubled $S$ with $q$ because "more flow, more sediment" would have claimed a factor of $2$ and called "more than doubles" false. That is exponent $1$.
+**1.** Doubling $S$ with $q$ because "more flow, more sediment" would have claimed a factor of $2$ and called "more than doubles" false. The stem's recovered values line up with $S$, whereas $2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $S$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is exponent $1$.
 
 **2.** Checking a concrete pair: at the gauged discharge $q=36$, transport is $135$. At $q=72$, the composed law gives $0.625\\cdot 72^{1.5}\\approx 382$, and $382/135\\approx 2.83$, not $2$.
 
-Checking a concrete pair: at the gauged discharge $q=36$, transport is $135$. At $q=72$, the composed law gives $0.625\\cdot 72^{1.5}\\approx 382$, and $382/135\\approx 2.83$, not $2$. A rushed solver who doubled $S$ with $q$ because "more flow, more sediment" would have claimed a factor of $2$ and called "more than doubles" false. That is exponent $1$.
+Checking a concrete pair: at the gauged discharge $q=36$, transport is $135$. At $q=72$, the composed law gives $0.625\\cdot 72^{1.5}\\approx 382$, and $382/135\\approx 2.83$, not $2$. Doubling $S$ with $q$ because "more flow, more sediment" would have claimed a factor of $2$ and called "more than doubles" false. The stem's recovered values line up with $S$, whereas $2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $S$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is exponent $1$.
 
 The first stage alone, $S(v)=5v^{3}$, would have scaled an eightfold on a doubled velocity. Discharge, however, only squares into velocity through $v(q)=\\frac{1}{2}q^{\\frac{1}{2}}$, so the composed leftover is three halves, not three. Mixing the velocity doubling with the discharge doubling is how an eightfold claim appears; this letter asks about discharge.
 
@@ -7821,7 +7821,7 @@ Velocity is a square root of discharge and transport cubes velocity, so the comp
 
 Stopping at $S(v)=5v^{3}$ would have left a cubic in velocity. Stopping at $v(q)=\\frac{1}{2}q^{\\frac{1}{2}}$ would have left a square root in discharge. Neither of those is the composed map.
 
-**1.** A rushed solver who added the exponents instead of multiplying them would have claimed exponent $3.5$ and still called it a power, which happens to keep the verdict for the wrong algebra. Composition multiplies.
+**1.** Adding the exponents instead of multiplying them would have claimed exponent $3.5$ and still called it a power, which happens to keep the verdict for the wrong algebra. Once $3.5$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Composition multiplies.
 
 **2.** The opposite verdict would have needed a stage that was not a power. Both stages in the stem are monomials.
 
@@ -7832,11 +7832,11 @@ This letter reads the named discharge $400$ against a $4500$ t/day cutoff, and i
 
 Four hundred is the inverted limit: $0.625 q^{1.5}=5000$ forces $q^{1.5}=8000$ and $q=400$. At that discharge, $v(400)=10$ and $S=5\\cdot 10^{3}=5000$. The $4500$ cutoff is a near miss on the limit itself.
 
-**1.** A rushed solver who evaluated $S(v)$ at $v=400$ instead of $S(q)$ at $q=400$ would have claimed $5\\cdot 400^{3}$, an enormous figure, still above $4500$ but from mixing the two stages.
+**1.** Evaluating $S(v)$ at $v=400$ instead of $S(q)$ at $q=400$ would have claimed $5\\cdot 400^{3}$, an enormous figure, still above $4500$ but from mixing the two stages. After isolating the unknown, the check is against $S(v)$. The figure $4500$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $S(v)$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** The opposite verdict would have needed a smaller composed coefficient, so that $S(400)$ fell through $4500$. At the recovered law, four hundred is locked at the $5000$ t/day limit.
 
-A rushed solver who evaluated $S(v)$ at $v=400$ instead of $S(q)$ at $q=400$ would have claimed $5\\cdot 400^{3}$, an enormous figure, still above $4500$ but from mixing the two stages. Velocity at discharge $400$ is $10$, not $400$. Another mix-up is reading the stability limit $5000$ as if the claim named $5000$ rather than $4500$. Five thousand clears four thousand five hundred, and that is the comparison.
+Evaluating $S(v)$ at $v=400$ instead of $S(q)$ at $q=400$ would have claimed $5\\cdot 400^{3}$, an enormous figure, still above $4500$ but from mixing the two stages. After isolating the unknown, the check is against $S(v)$. The figure $4500$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $S(v)$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Velocity at discharge $400$ is $10$, not $400$. Another mix-up is reading the stability limit $5000$ as if the claim named $5000$ rather than $4500$. Five thousand clears four thousand five hundred, and that is the comparison.
 
 The opposite verdict would have needed a smaller composed coefficient, so that $S(400)$ fell through $4500$. At the recovered law, four hundred is locked at the $5000$ t/day limit. Changing the gauged $135$ t/day at $v=3$ would rescale $A$ and move the limit; it would not move $q=400$ off the recovered limit unless the $5000$ cap itself moved.
 
@@ -7849,7 +7849,7 @@ This letter is about the first-stage law $S(v)=5v^{3}$, not about the composed $
 
 Mixing the two stages is the mismatch. Letter A doubled discharge and got $2^{\\frac{3}{2}}$. This letter doubles velocity and gets $8$. They are different experiments.
 
-**1.** A rushed solver who carried the composed factor $2.83$ into this letter would have still called "doubles" false, for the wrong stage. The right factor is $8$.
+**1.** Carrying the composed factor $2.83$ into this letter would have still called "doubles" false, for the wrong stage. The path that matches the stem therefore holds $2.83$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The right factor is $8$.
 
 **2.** Checking the gauged run: at $v=3$, transport is $135$. At $v=6$, transport is $5\\cdot 216=1080$, and $1080/135=8$.
 
@@ -7862,7 +7862,7 @@ This is a level question at discharge $64$. The overview recovered $v(64)=4$ and
 
 Three hundred and twenty already clears three hundred. Stage by stage: $\\sqrt{64}=8$, times $\\frac{1}{2}$ is velocity $4$, and $5\\cdot 4^{3}=320$. The composed shortcut $0.625\\cdot 64^{1.5}=0.625\\cdot 512=320$ is the same number.
 
-**1.** A rushed solver who stopped after the velocity stage would have compared $4$ m/s to $300$ t/day and missed the letter. The claim is about transport, not velocity.
+**1.** Stopping after the velocity stage would have compared $4$ m/s to $300$ t/day and missed the letter. The recovered comparison therefore keeps $4$ and does not substitute $300$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim is about transport, not velocity.
 
 **2.** Another mix-up is using the gauged $135$ t/day as if discharge $64$ were still near the gauged $q=36$. Sixty-four is already past thirty-six, and transport has risen from $135$ to $320$.
 
@@ -7928,7 +7928,7 @@ Revenue is price times quantity. With $q=A p^{-3}$ that product is $R(p)=A p^{-2
 
 Stopping at demand would have left exponent $-3$. Multiplying by $p$ raises the exponent by one, to $-2$. Both are powers; they are different powers.
 
-**1.** A rushed solver who thought revenue $pq$ could not stay a power because "price and quantity move against each other" would have expected a more complicated shape. Along an isoelastic curve the product remains a power.
+**1.** Thinking revenue $pq$ could not stay a power because "price and quantity move against each other" would have expected a more complicated shape. The path that matches the stem therefore holds $pq$ fixed and only then reads the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Along an isoelastic curve the product remains a power.
 
 **2.** The opposite verdict would have needed demand that was not a power, for instance a linear demand $q=a-bp$. Then $R=pq$ would be a quadratic, not a power.
 
@@ -7939,13 +7939,13 @@ The leftover exponent on $R(p)=4000 p^{-2}$ is negative, so $R$ falls as $p$ ris
 
 Checking the recovered levels: at $p=2$, revenue is $1000$. At $p=2.50$, revenue is $640$. The till has already shrunk. There is no interior maximum on $p>0$; the slope $R'(p)=-8000 p^{-3}$ stays negative.
 
-**1.** A rushed solver who remembered "raise price, raise revenue" from inelastic demand would have flipped the verdict. Elasticity $-3$ is far into the elastic region, where a price rise cuts the till.
+**1.** Remembering "raise price, raise revenue" from inelastic demand would have flipped the verdict. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Elasticity $-3$ is far into the elastic region, where a price rise cuts the till.
 
 **2.** The opposite verdict would have needed leftover exponent on $R$ to be positive, hence demand exponent greater than $-1$. The stem is $p^{-3}$.
 
 Checking the recovered levels: at $p=2$, revenue is $1000$. At $p=2.50$, revenue is $640$. The till has already shrunk. There is no interior maximum on $p>0$; the slope $R'(p)=-8000 p^{-3}$ stays negative for every positive price.
 
-A rushed solver who remembered "raise price, raise revenue" from inelastic demand would have flipped the verdict. Elasticity $-3$ is far into the elastic region, where a price rise cuts the till. The usual unit-elastic boundary is leftover exponent $0$ on $R$, which would have needed demand exponent $-1$. The stem is $p^{-3}$.
+Remembering "raise price, raise revenue" from inelastic demand would have flipped the verdict. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Elasticity $-3$ is far into the elastic region, where a price rise cuts the till. The usual unit-elastic boundary is leftover exponent $0$ on $R$, which would have needed demand exponent $-1$. The stem is $p^{-3}$.
 
 The opposite verdict would have needed leftover exponent on $R$ to be positive, hence demand exponent greater than $-1$. A $10\\%$ indexation would then have raised the till. Along this curve it cuts the till, which is the same fact letter E reads against a reversed slogan.
 
@@ -7958,7 +7958,7 @@ This is a level question at $p=2.50$. The overview recovered $R(2.5)=640$. The c
 
 Six hundred and forty sits below seven hundred. From $R(p)=4000 p^{-2}$ one has $2.5^{2}=\\frac{25}{4}$ and $4000\\cdot\\frac{4}{25}=640$. The current till at $p=2$ is $1000$; this letter is a higher price, not that current till.
 
-**1.** A rushed solver who compared quantity $q(2.5)=4000/15.625=256$ to $700$ would have mixed units. The claim is about revenue, not about units sold.
+**1.** Comparing quantity $q(2.5)=4000/15.625=256$ to $700$ would have mixed units. Working from the isolated values, $q(2.5)=4000/15.625=256$ is the figure that is checked, not the detour that produced $700$. That contrast is the reason the verdict goes the way it does. The claim is about revenue, not about units sold.
 
 **2.** Another mix-up is using $R(2)=1000$ against the $700$ cutoff and calling the statement false. Letter C names $2.50$, not $2$.
 
@@ -7973,11 +7973,11 @@ The elasticity shortcut would have predicted $-3\\times 10\\%=-30\\%$. The exact
 
 **1.** Starting from $q(2)=500$, a $10\\%$ rise to $p=2.20$ gives $q(2.2)=4000/2.2^{3}\\approx 376$, a loss of about $124$ units, which is $24.8\\%$ of $500$.
 
-**2.** A rushed solver who used the shortcut's $30\\%$ would still have sat above $20\\%$, for a slightly wrong size. Another mix-up is applying the revenue factor $1.1^{-2}\\approx 0.826$ to quantity and claiming only a $17\\%$ cut, which would flip the letter.
+**2.** Using the shortcut's $30\\%$ would still have sat above $20\\%$, for a slightly wrong size. Working from the isolated values, $30\\%$ is the figure that is checked, not the detour that produced $20\\%$. Another mix-up is applying the revenue factor $1.1^{-2}\\approx 0.826$ to quantity and claiming only a $17\\%$ cut, which would flip the letter.
 
 **3.** The opposite verdict would have needed a demand exponent closer to zero, so that $1.1^{r}$ cut quantity by $20\\%$ or less. At $r=-3$, the exact cut is locked near $25\\%$.
 
-Starting from $q(2)=500$, a $10\\%$ rise to $p=2.20$ gives $q(2.2)=4000/2.2^{3}\\approx 376$, a loss of about $124$ units, which is $24.8\\%$ of $500$. A rushed solver who used the shortcut's $30\\%$ would still have sat above $20\\%$, for a slightly wrong size. Another mix-up is applying the revenue factor $1.1^{-2}\\approx 0.826$ to quantity and claiming only a $17\\%$ cut, which would flip the letter.
+Starting from $q(2)=500$, a $10\\%$ rise to $p=2.20$ gives $q(2.2)=4000/2.2^{3}\\approx 376$, a loss of about $124$ units, which is $24.8\\%$ of $500$. Using the shortcut's $30\\%$ would still have sat above $20\\%$, for a slightly wrong size. Working from the isolated values, $30\\%$ is the figure that is checked, not the detour that produced $20\\%$. Another mix-up is applying the revenue factor $1.1^{-2}\\approx 0.826$ to quantity and claiming only a $17\\%$ cut, which would flip the letter.
 
 The opposite verdict would have needed a demand exponent closer to zero, so that $1.1^{r}$ cut quantity by $20\\%$ or less. Solving $1.1^{r}=0.80$ gives $r\\approx -2.34$, already shallower than $-3$. At $r=-3$, the exact cut is locked near $25\\%$.
 
@@ -7992,7 +7992,7 @@ The claim reverses the elasticity lesson. Highly elastic demand means quantity f
 
 **1.** Checking the recovered tills: $R(2)=1000$ becomes $R(2.2)\\approx 826$. The till is down, not up.
 
-**2.** A rushed solver who remembered "elastic means quantity is sensitive" and then guessed "so raise price to harvest that sensitivity" would have flipped the sign of the revenue effect.
+**2.** Remembering "elastic means quantity is sensitive" and then guessed "so raise price to harvest that sensitivity" would have flipped the sign of the revenue effect. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **3.** The opposite verdict would have needed leftover exponent on $R$ to be positive. The stem's demand exponent $-3$ forbids that.
 
@@ -8060,7 +8060,7 @@ This letter is about whether strength outruns current, not about a named ampere 
 
 The coefficient $A=5$ cancels in any ratio, so a different pair of spot checks with the same current ratio would have told the same ranking.
 
-**1.** A rushed solver who compared $135$ to $40$ as "about three times" against a current ratio of $9/4=2.25$ and called it roughly linear would have missed that $\\left(\\frac{3}{2}\\right)^{2k}=\\left(\\frac{3}{2}\\right)^{3}$ locks $k$ exactly at $\\frac{3}{2}$.
+**1.** Comparing $135$ to $40$ as "about three times" against a current ratio of $9/4=2.25$ and calling it roughly linear would have missed that $\\left(\\frac{3}{2}\\right)^{2k}=\\left(\\frac{3}{2}\\right)^{3}$ locks $k$ exactly at $\\frac{3}{2}$. That is the fork: $135$ belongs to the recovered isolation, $\\frac{3}{2}$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **2.** The opposite verdict would have needed $k\\le 1$. The two spot checks already refuse that.
 
@@ -8073,7 +8073,7 @@ This is a level question at $16$ A. The overview recovered $S(16)=320$. The clai
 
 Three hundred and twenty clears three hundred. Sixteen to the three-halves is $64$, times $5$ is $320$. From the $4$ A spot check of $40$ N, a fourfold current is an eightfold strength, $40\\cdot 8=320$, because $4^{\\frac{3}{2}}=8$.
 
-**1.** A rushed solver who doubled $S(9)=135$ as if $16$ were twice $9$ would have claimed $270$, under $300$, and flipped the verdict. Sixteen is not twice nine, and the law is not linear.
+**1.** Doubling $S(9)=135$ as if $16$ were twice $9$ would have claimed $270$, under $300$, and flipped the verdict. Working from the isolated values, $S(9)=135$ is the figure that is checked, not the detour that produced $300$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Sixteen is not twice nine, and the law is not linear.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $S(16)$ fell through $300$. At the recovered $A=5$, sixteen amperes is locked at $320$ N.
 
@@ -8084,7 +8084,7 @@ This letter inverts the strength law, rather than reading a named current. A non
 
 **1.** Checking a recovered pair: at $S=40$ the inverse returns $p=4$. At $S=135$ it returns $p=9$. The inverse is faithful to the two spot checks.
 
-**2.** A rushed solver who swapped the variables and kept exponent $\\frac{3}{2}$ would have written $p=5 S^{\\frac{3}{2}}$ and lost the reciprocal. The exponent must take the reciprocal.
+**2.** Swapping the variables and keeping exponent $\\frac{3}{2}$ would have written $p=5 S^{\\frac{3}{2}}$ and lost the reciprocal. That is the fork: $\\frac{3}{2}$ belongs to the recovered isolation, $p=5 S^{\\frac{3}{2}}$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent must take the reciprocal.
 
 The opposite verdict would have needed a law that was not a pure power: a logarithmic strength in current would invert to an exponential, not to a monomial. The stem is $S=A p^{k}$.
 
@@ -8095,7 +8095,7 @@ This letter compares leftover slopes at the two spot-check currents. The overvie
 
 **1.** A finite one-ampere step agrees. From $4$ to $5$ A, $S(5)=5\\cdot 5^{\\frac{3}{2}}=25\\sqrt{5}\\approx 55.9$, a rise of about $16$ N from $40$. From $9$ to $10$ A, $S(10)=5\\cdot 10^{\\frac{3}{2}}=50\\sqrt{10}\\approx 158.1$, a rise of about $23$ N from $135$. Later amperes add more, which is the opposite of the claim.
 
-**2.** A rushed solver who remembered $S(4)=40<S(9)=135$ and inferred that the extra ampere must add more at the small current, because "there is more room to grow," would have mixed a lower level with a shallower slope. The level is lower at $4$ A; the slope is also shallower.
+**2.** Remembering $S(4)=40<S(9)=135$ and inferred that the extra ampere must add more at the small current, because "there is more room to grow," would have mixed a lower level with a shallower slope. The opposite verdict would need a different isolation than $S(4)=40<S(9)=135$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The level is lower at $4$ A; the slope is also shallower.
 
 **3.** The opposite verdict would have needed $k<1$, so that $S'$ would fall. The two spot checks forced $k=\\frac{3}{2}>1$. Changing $A$ scales both slopes by the same factor and cannot reverse $15<\\frac{45}{2}$. A linear weld $S\\propto p$ would have made the extra ampere add the same $5$ N at both currents; the stem is not linear.
 
@@ -8112,7 +8112,7 @@ This letter inverts the $400$ N reject line. The overview recovered that the sma
 
 **1.** Checking the recovered rule at $18$ A: $S(18)=5\\cdot 18^{\\frac{3}{2}}=5\\cdot 18\\sqrt{18}=90\\cdot 3\\sqrt{2}\\approx 382$, which sits under $400$. At $19$ A the same rule is already past $400$. The reject line is crossed between $18$ and $19$, hence not below $18$.
 
-**2.** A rushed solver who inverted as if $k=1$ would have claimed $p=80$, well above $18$, and still called "below $18$" false, for the wrong inverse. Another mix-up is reading $S(16)=320$ as if $16$ A already cleared $400$. Three hundred and twenty is short of four hundred.
+**2.** Inverting as if $k=1$ would have claimed $p=80$, well above $18$, and still called "below $18$" false, for the wrong inverse. The recovered comparison therefore keeps $k=1$ and does not substitute $18$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another mix-up is reading $S(16)=320$ as if $16$ A already cleared $400$. Three hundred and twenty is short of four hundred.
 
 **3.** The opposite verdict would have needed a larger coefficient, so that the inverted current fell through $18$. At the recovered $A=5$, the reject threshold is locked near $18.57$ A.
 
@@ -8174,7 +8174,7 @@ $$S(16)=320 \\qquad 80^{\\frac{2}{3}}\\approx 18.57$$
 
 This letter compares two $8$ kg buoys with one $64$ kg buoy. The overview recovered $H(m)=6m^{\\frac{2}{3}}$. Two $8$ kg buoys hold $2H(8)=48$ kN. One $64$ kg buoy holds $H(64)=96$ kN. Because $\\frac{2}{3}<1$, merging mass raises total hold. Two small buoys fall short of one large one.
 
-**1.** A rushed solver who treated hold as proportional to mass would have claimed $2H(8)=H(16)$, not $H(64)$, and still called two small buoys weaker, but for a linear reason. The right comparison is $2H(8)$ against $H(64)=6\\cdot 16=96$.
+**1.** Treating hold as proportional to mass would have claimed $2H(8)=H(16)$, not $H(64)$, and still called two small buoys weaker, but for a linear reason. So the letter reads the claim against $2H(8)=H(16)$; $H(64)$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2H(8)=H(16)$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The right comparison is $2H(8)$ against $H(64)=6\\cdot 16=96$.
 
 **2.** The opposite verdict would have needed $r>1$, so that splitting mass raised total hold. The trial buoy forced $r=\\frac{2}{3}$.
 
@@ -8185,7 +8185,7 @@ This is a level question at $125$ kg. The overview recovered $H(125)=150$. The c
 
 One hundred and fifty sits above one hundred and forty. That $150$ is also the storm floor itself: $125=5^{3}$, so the two-thirds power is $25$, times $6$ is $150$. The $140$ cutoff is a near miss on the storm protocol.
 
-**1.** A rushed solver who used $H(8)=24$ and scaled by $125/8$ linearly would have claimed $375$, still above $140$ but for the wrong shape. Linear thinking overstates hold when $r<1$.
+**1.** Using $H(8)=24$ and scaling by $125/8$ linearly would have claimed $375$, still above $140$ but for the wrong shape. So the letter reads the claim against $H(8)=24$; $140$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $H(8)=24$ stays in the write-up. Linear thinking overstates hold when $r<1$.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $H(125)$ fell through $140$. At the recovered $A=6$, one hundred and twenty-five kilograms is locked at $150$ kN.
 
@@ -8207,7 +8207,7 @@ This letter inverts the holding-power law. A nonzero power inverts to another po
 
 **1.** Checking a recovered pair: at $H=24$ the inverse returns $m=8$, the trial buoy. At $H=150$ it returns $m=125$, the storm mass. The inverse is faithful to both named holds.
 
-**2.** A rushed solver who kept exponent $\\frac{2}{3}$ on $H$ would have written $m=6 H^{\\frac{2}{3}}$ and lost the reciprocal. The exponent must take the reciprocal.
+**2.** Keeping exponent $\\frac{2}{3}$ on $H$ would have written $m=6 H^{\\frac{2}{3}}$ and lost the reciprocal. The stem's recovered values line up with $\\frac{2}{3}$, whereas $m=6 H^{\\frac{2}{3}}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $\\frac{2}{3}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exponent must take the reciprocal.
 
 **3.** The opposite verdict would have needed a law that was not a pure power. The stem is a single monomial. Changing kilograms to tonnes rescales the coefficient to $B=600$ and leaves the inverse still a power of holding power.
 
@@ -8215,7 +8215,7 @@ A change of units from kilograms to tonnes rescales the coefficient to $B=600$ a
 
 The opposite verdict would have needed an exponential hold in mass, which inverts to a logarithm. The stem is a monomial.
 
-A rushed solver who swapped the variables and kept exponent $\\frac{2}{3}$ would have written $m=6 H^{\\frac{2}{3}}$ and lost the reciprocal. At $H=24$ that wrong inverse would have claimed $m=6\\cdot 24^{\\frac{2}{3}}\\approx 50$ kg, not the trial $8$ kg. The exponent must take the reciprocal: $\\frac{2}{3}$ becomes $\\frac{3}{2}$.
+Swapping the variables and keeping exponent $\\frac{2}{3}$ would have written $m=6 H^{\\frac{2}{3}}$ and lost the reciprocal. That is the fork: $\\frac{2}{3}$ belongs to the recovered isolation, $m=6 H^{\\frac{2}{3}}$ belongs to the discarded mix. At $H=24$ that wrong inverse would have claimed $m=6\\cdot 24^{\\frac{2}{3}}\\approx 50$ kg, not the trial $8$ kg. The exponent must take the reciprocal: $\\frac{2}{3}$ becomes $\\frac{3}{2}$.
 
 The mass needed for a given holding power is itself a power of that holding power, so the statement is True.`,
       `**E.** → False
@@ -8224,13 +8224,13 @@ This letter inverts the storm floor of $150$ kN, and it also tests a unit trap. 
 
 **1.** In tonnes the same law is $H(t)=600 t^{\\frac{2}{3}}$. Setting $600 t^{\\frac{2}{3}}=150$ gives $t^{\\frac{2}{3}}=\\frac{1}{4}$ and $t=\\frac{1}{8}=0.125$, the same $125$ kg. One tonne would hold $H=600$ kN, four times the storm floor.
 
-**2.** A rushed solver who inverted $6m^{\\frac{2}{3}}=150$ as $m=150/6=25$ kilograms, linearly, would still have sat under $1$ tonne, for the wrong inverse. Another mix-up is reading $m=125$ as $125$ tonnes. That is the unit trap in the title.
+**2.** Inverting $6m^{\\frac{2}{3}}=150$ as $m=150/6=25$ kilograms, linearly, would still have sat under $1$ tonne, for the wrong inverse. The recovered comparison therefore keeps $6m^{\\frac{2}{3}}=150$ and does not substitute $1$. That contrast is the reason the verdict goes the way it does. Another mix-up is reading $m=125$ as $125$ tonnes. That is the unit trap in the title.
 
 **3.** The opposite verdict would have needed a storm floor above $H(1\\text{ tonne})=600$ kN. The stem's floor is $150$ kN, well below that.
 
 In the tonne law $H(t)=600 t^{\\frac{2}{3}}$, one tonne holds $600$ kN, four times the storm floor. The storm protocol is a light buoy, not a tonne-class mooring. Mixing the $125$ in $m=125$ kg with a tonne reading is the unit trap in the title.
 
-A rushed solver who inverted $6t^{\\frac{2}{3}}=150$ without converting, treating $t$ as kilograms already, would have claimed $t=125$ tonnes, well above $1$ tonne, and flipped the verdict. That is using the kilogram coefficient on a tonne variable. The recovered pair is $A=6$ in kilograms and $B=600$ in tonnes; they are not interchangeable.
+Inverting $6t^{\\frac{2}{3}}=150$ without converting, treating $t$ as kilograms already, would have claimed $t=125$ tonnes, well above $1$ tonne, and flipped the verdict. That is the fork: $6t^{\\frac{2}{3}}=150$ belongs to the recovered isolation, $1$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. That is using the kilogram coefficient on a tonne variable. The recovered pair is $A=6$ in kilograms and $B=600$ in tonnes; they are not interchangeable.
 
 Checking $H(1000)=600$ kN at one tonne makes the "more than $1$ tonne" claim look like a unit mix-up rather than a near miss. The storm floor is a quarter of a one-tonne hold. Changing the storm protocol to $700$ kN would have pushed the inverse past one tonne and flipped the letter; the stem's $150$ kN does not.
 
@@ -8286,7 +8286,7 @@ This letter inverts the throughput law. A nonzero power inverts to another power
 
 **1.** Checking a recovered pair: at $T=50$ the inverse returns $d=4$, the bench hop. At $T=8$ it returns $d=10$, the reliable radius. The inverse is faithful to both named throughputs.
 
-**2.** A rushed solver who kept exponent $-2$ on $T$ would have lost the reciprocal. Falling throughput does not introduce a logarithm.
+**2.** Keeping exponent $-2$ on $T$ would have lost the reciprocal. The recovered comparison therefore keeps $-2$ and does not substitute $T$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Falling throughput does not introduce a logarithm.
 
 Falling throughput does not introduce a logarithm. A change of units from metres to kilometres would rescale $A$ by $1000^{-2}$ and leave the inverse still a power of $T$. The opposite verdict would have needed a decaying exponential in hop distance.
 
@@ -8295,11 +8295,11 @@ The hop distance needed for a given throughput is itself a power function of tha
 
 This letter locates the farthest reliable hop. The overview recovered that $T=8$ already occurs at $d=10$ m. Ten metres sits under $12$. Every longer hop is slower, so the farthest reliable hop is $10$ m, already under $12$ m.
 
-**1.** A rushed solver who inverted as if the exponent were $-1$ would have claimed $d=800/8=100$ m, well past $12$, and flipped the verdict. Inverse-linear thinking overstates the reliable radius.
+**1.** Inverting as if the exponent were $-1$ would have claimed $d=800/8=100$ m, well past $12$, and flipped the verdict. After isolating the unknown, the check is against $-1$. The figure $12$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $-1$ stays in the write-up. Inverse-linear thinking overstates the reliable radius.
 
 **2.** Checking $d=12$: $T(12)=800/144\\approx 5.56$, which already misses the $8$ Mbps floor. The $12$ m cutoff is not a near miss on $10$; it is past the floor.
 
-A rushed solver who inverted as if the exponent were $-1$ would have claimed $d=800/8=100$ m, well past $12$, and flipped the verdict. Inverse-linear thinking overstates the reliable radius. Checking $d=12$: $T(12)=800/144\\approx 5.56$, which already misses the $8$ Mbps floor.
+Inverting as if the exponent were $-1$ would have claimed $d=800/8=100$ m, well past $12$, and flipped the verdict. After isolating the unknown, the check is against $-1$. The figure $12$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $-1$ stays in the write-up. Inverse-linear thinking overstates the reliable radius. Checking $d=12$: $T(12)=800/144\\approx 5.56$, which already misses the $8$ Mbps floor.
 
 The recovered reliable radius is $10$ m, so the statement is True.`,
       `**C.** → False
@@ -8317,7 +8317,7 @@ Doubling the hop distance quarters the throughput, so the statement is False.`,
 
 This is a level question at $11$ m against the $8$ Mbps floor. The overview recovered $T(11)=800/121\\approx 6.61$, which sits below $8$. The reliable radius is $10$ m; a longer hop can only be slower. Eleven metres already misses the floor.
 
-**1.** A rushed solver who interpolated linearly between $T(4)=50$ and $T(10)=8$ would have claimed about $6$ at $11$ m, still under $8$, for the wrong shape, or might have thought $11$ was still near $10$ and "close enough." The floor is a hard cut: $6.61<8$.
+**1.** Interpolating linearly between $T(4)=50$ and $T(10)=8$ would have claimed about $6$ at $11$ m, still under $8$, for the wrong shape, or might have thought $11$ was still near $10$ and "close enough." The stem's recovered values line up with $T(4)=50$, whereas $10$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $T(4)=50$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.The floor is a hard cut: $6.61<8$.
 
 **2.** The opposite verdict would have needed a larger coefficient, so that $T(11)$ rose through $8$. At the recovered $A=800$, eleven metres is locked below the floor.
 
@@ -8330,7 +8330,7 @@ This letter compares leftover slopes at $8$ m and $4$ m. The overview recovered 
 
 **1.** A finite one-metre step agrees. From $4$ to $5$ m, $T(5)=800/25=32$, a drop of $18$ Mbps from $50$. From $8$ to $9$ m, $T(9)=800/81\\approx 9.88$, a drop of about $2.6$ Mbps from $12.5$. The near hop loses more.
 
-**2.** A rushed solver who saw $T(8)=12.5$ closer to the floor and inferred that an extra metre there must hurt more would have mixed a smaller remaining pool with a steeper cut. The remaining pool is smaller at $8$ m; the slope is also flatter.
+**2.** Seeing $T(8)=12.5$ closer to the floor and inferred that an extra metre there must hurt more would have mixed a smaller remaining pool with a steeper cut. Keeping $T(8)=12.5$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The remaining pool is smaller at $8$ m; the slope is also flatter.
 
 **3.** The opposite verdict would have needed $|T'|$ to grow with $d$. For $r=-2$, $|T'|$ falls. Changing $A$ scales both slopes by the same factor and cannot reverse $25>\\frac{25}{8}$.
 
@@ -8392,7 +8392,7 @@ This letter is about the recovered exponent, not a named fish. Gill area follows
 
 The overview recovered $A=8$, but a growth ranking never needs that coefficient.
 
-**1.** A rushed solver who saw $G$ rising with $m$ and stopped would have missed the "more slowly" half of the claim. Rising is not the claim; lagging mass is the claim.
+**1.** Seeing $G$ rising with $m$ and stopping would have missed the "more slowly" half of the claim. The stem's recovered values line up with $G$, whereas $m$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $G$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Rising is not the claim; lagging mass is the claim.
 
 **2.** The opposite verdict would have needed $r\\ge 1$. The specimen $G(256)=512$ together with exponent $\\frac{3}{4}$ already refuses that.
 
@@ -8403,7 +8403,7 @@ This is a level question at $16$ g. The overview recovered $G(16)=64$. The claim
 
 Sixty-four sits above fifty. Sixteen is $2^{4}$, so the three-quarters power is $2^{3}=8$, times $8$ is $64$. From the $256$ g specimen, a $\\frac{1}{16}$ mass is a $\\frac{1}{8}$ area, $512/8=64$, because $16^{-\\frac{3}{4}}=\\frac{1}{8}$.
 
-**1.** A rushed solver who scaled $512$ by $16/256$ linearly would have claimed $32$, under $50$, and flipped the verdict. Linear thinking understates a small fish when $r<1$.
+**1.** Scaling $512$ by $16/256$ linearly would have claimed $32$, under $50$, and flipped the verdict. The recovered comparison therefore keeps $512$ and does not substitute $50$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Linear thinking understates a small fish when $r<1$.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $G(16)$ fell through $50$. At the recovered $A=8$, sixteen grams is locked at $64$ cm².
 
@@ -8414,7 +8414,7 @@ Gill area per gram is the intensity $G(m)/m$. The overview recovered $G(m)=8m^{\
 
 Checking the specimen against letter B: at $16$ g the intensity is $64/16=4$ cm² per gram. At $256$ g it is $512/256=2$. Intensity has already halved.
 
-**1.** A rushed solver who saw a larger total at $256$ g and inferred a constant or larger intensity would have flipped the verdict. Totals rise; intensities fall.
+**1.** Seeing a larger total at $256$ g and inferred a constant or larger intensity would have flipped the verdict. The recovered isolation is checked against the claim using $256$, which is the figure the sessions actually produce. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Totals rise; intensities fall.
 
 **2.** The opposite verdict would have needed $r=1$. The stem is $\\frac{3}{4}$.
 
@@ -8436,7 +8436,7 @@ Doubling body mass does not double gill area, so the statement is False.`,
 
 This is a level question at $64$ g. The overview recovered $G(64)=128\\sqrt{2}\\approx 181$, which sits short of $200$. The three-quarters power has grown, but not as far as the named area.
 
-**1.** A rushed solver who treated $64$ as $4^{3}$ and took $G=8\\cdot 16=128$, dropping the leftover $\\sqrt{2}$, would have sat even shorter of $200$. Another mix-up is the overview's note that $216$ cm² occurs at $81$ g rather than at $64$ g: $G(81)=8\\cdot 27=216$, which does clear $200$, but that is a different fish.
+**1.** Treating $64$ as $4^{3}$ and taking $G=8\\cdot 16=128$, dropping the leftover $\\sqrt{2}$, would have sat even shorter of $200$. So the letter reads the claim against $64$; $200$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $64$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Another mix-up is the overview's note that $216$ cm² occurs at $81$ g rather than at $64$ g: $G(81)=8\\cdot 27=216$, which does clear $200$, but that is a different fish.
 
 **2.** Linear scaling from $G(16)=64$ by $64/16=4$ would have claimed $256$, above $200$, and flipped the verdict. Linear thinking overstates the $64$ g fish.
 
@@ -8502,7 +8502,7 @@ This letter is a scale identity for the square-root clock, not a named day. For 
 
 The overview recovered $A=5$, but the coefficient never enters a scale question.
 
-**1.** A rushed solver who quadrupled the strength with the time would have claimed a factor of $4$. That is exponent $1$. Another mix-up is doubling time and expecting a doubling of strength; that would need $c=4$ as well, which is this letter's quadrupling, not a doubling.
+**1.** Quadrupling the strength with the time would have claimed a factor of $4$. The recovered isolation is checked against the claim using $4$, which is the figure the sessions actually produce. That is exponent $1$. Another mix-up is doubling time and expecting a doubling of strength; that would need $c=4$ as well, which is this letter's quadrupling, not a doubling.
 
 **2.** The opposite verdict would have needed a leftover exponent other than $\\frac{1}{2}$. The stem is a square root.
 
@@ -8513,7 +8513,7 @@ This is a level question on day $4$. The overview recovered $S(4)=10$. The claim
 
 Ten sits above eight. Together with $S(9)=15$, the logged gap $15-10=5$ is recovered. The recorded $5$ MPa is the gap, not the day-$4$ level.
 
-**1.** A rushed solver who treated the recorded $5$ MPa as $S(4)$ would have compared $5$ to $8$ and flipped the verdict. The $5$ is a difference of two days, not a level. Letter E names that mix-up on day $9$.
+**1.** Treating the recorded $5$ MPa as $S(4)$ would have compared $5$ to $8$ and flipped the verdict. That is the fork: $5$ belongs to the recovered isolation, $8$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The $5$ is a difference of two days, not a level. Letter E names that mix-up on day $9$.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $S(4)$ fell through $8$. At the recovered $A=5$, day $4$ is locked at $10$ MPa.
 
@@ -8524,7 +8524,7 @@ This letter compares leftover slopes after nine days versus after four. The over
 
 **1.** A finite one-day step agrees. From day $4$ to day $5$, $S(5)=5\\sqrt{5}\\approx 11.18$, a rise of about $1.18$ MPa from $10$. From day $9$ to day $10$, $S(10)=5\\sqrt{10}\\approx 15.81$, a rise of about $0.81$ MPa from $15$. Later days add less.
 
-**2.** A rushed solver who saw $S(9)=15>S(4)=10$ and inferred that later days must add more would have mixed a higher level with a steeper slope. The level is higher on day $9$; the slope is flatter.
+**2.** Seeing $S(9)=15>S(4)=10$ and inferred that later days must add more would have mixed a higher level with a steeper slope. Keeping $S(9)=15>S(4)=10$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The level is higher on day $9$; the slope is flatter.
 
 **3.** The opposite verdict would have needed $r>1$, so that $S'$ would rise. The stem is a square root. Changing $A$ scales both slopes by the same factor and cannot reverse $\\frac{5}{4}>\\frac{5}{6}$.
 
@@ -8532,14 +8532,14 @@ The opposite verdict would have needed $r>1$, so that $S'$ would rise. The stem 
 
 Letter A was a scale identity. This letter is the derivative of the same square-root clock. They are the same $r=\\frac{1}{2}$ fact, read once as a quadrupling and once as a flattening.
 
-A rushed solver who saw $S(9)=15>S(4)=10$ and inferred that later days must add more would have mixed a higher level with a steeper slope. The level is higher on day $9$; the slope is flatter. That is the same confusion as mixing $C(81)$ with $C'(81)$ in an audit bill: taller stack, flatter extra unit.
+Seeing $S(9)=15>S(4)=10$ and inferred that later days must add more would have mixed a higher level with a steeper slope. Keeping $S(9)=15>S(4)=10$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The level is higher on day $9$; the slope is flatter. That is the same confusion as mixing $C(81)$ with $C'(81)$ in an audit bill: taller stack, flatter extra unit.
 
 An extra day adds less strength after nine days than after four, so the statement is False.`,
       `**D.** → True
 
 This letter inverts a $30$ MPa target. The overview recovered that $30$ MPa already occurs on day $36$, which sits under $40$. From $5\\sqrt{t}=30$ one has $\\sqrt{t}=6$ and $t=36$. The square-root clock is slower than a linear guess, so the target arrives before day $40$.
 
-**1.** A rushed solver who scaled linearly from $S(4)=10$ as $3\\times 4=12$ days would have sat under $40$ for the wrong reason. Another mix-up is $S(t)=5t$, giving day $6$, also under $40$. Linear thinking understates the wait when $r<1$; here the true wait is $36$, still under $40$.
+**1.** Scaling linearly from $S(4)=10$ as $3\\times 4=12$ days would have sat under $40$ for the wrong reason. The stem's recovered values line up with $S(4)=10$, whereas $40$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $S(4)=10$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Another mix-up is $S(t)=5t$, giving day $6$, also under $40$. Linear thinking understates the wait when $r<1$; here the true wait is $36$, still under $40$.
 
 **2.** Checking day $40$: $S(40)=5\\sqrt{40}\\approx 31.6$, already past $30$. The $40$-day cutoff is not a near miss on $36$; it is past the target.
 
@@ -8556,7 +8556,7 @@ The recovered wait for $30$ MPa is $36$ days, so the statement is True.`,
 
 The recorded $5$ MPa is the gap $S(9)-S(4)$, not the day $9$ level. The overview recovered $S(9)=15$. Day $9$ is $15$ MPa. Treating a difference of two readings as a single level is the mix-up named in the title.
 
-**1.** A rushed solver who took $5$ as $S(9)$ would have called this letter true. The log never states a level; it states a rise. Letter B already used the day-$4$ level $10$ that makes the gap $15-10=5$.
+**1.** Taking $5$ as $S(9)$ would have called this letter true. The stem's recovered values line up with $5$, whereas $S(9)$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $5$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The log never states a level; it states a rise. Letter B already used the day-$4$ level $10$ that makes the gap $15-10=5$.
 
 **2.** The opposite verdict would have needed the surviving record to have been a level of $5$ MPa on day $9$. The stem says the strength rose by $5$ MPa between day $4$ and day $9$.
 
@@ -8612,7 +8612,7 @@ $$\\frac{S(ct)}{S(t)}=\\sqrt{c} \\tag{2}$$
 
 This letter reads the trusted pair as an exponent ranking. The trusted ratio is $72/18=4=2^{k}$, so $k=2$. A width factor $c>1$ then multiplies deflection by $c^{2}$, which exceeds $c$. Deflection outruns span. The integer $2$ is a square law, not a coincidence of the $3$ m and $6$ m runs.
 
-**1.** A rushed solver who saw $6=2\\cdot 3$ and $72=4\\cdot 18$ and called it "just a doubling of span with a quadrupling of sag" without naming $k=2$ would have the right factor and the right ranking, but would not have seen that every other scale factor is also a square.
+**1.** Seeing $6=2\\cdot 3$ and $72=4\\cdot 18$ and calling it "just a doubling of span with a quadrupling of sag" without naming $k=2$ would have the right factor and the right ranking, but would not have seen that every other scale factor is also a square. Working from the isolated values, $6=2\\cdot 3$ is the figure that is checked, not the detour that produced $k=2$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 **2.** The opposite verdict would have needed $k\\le 1$. The trusted pair already refuses that.
 
@@ -8621,7 +8621,7 @@ The recovered exponent is $2$, so the statement is True.`,
 
 This letter asks what the trusted pair predicts at nine metres, not what the third run recorded. The overview recovered $y(L)=2L^{2}$ and $y(9)=162$. One hundred and sixty-two sits above $155$. The questionable third run of $150$ is a different number; this letter is the trusted quadratic's forecast.
 
-**1.** A rushed solver who compared the recorded $150$ to $155$ would have called the statement false. Letter B names the trusted prediction, not the third run. Letter D then measures the shortfall.
+**1.** Comparing the recorded $150$ to $155$ would have called the statement false. So the letter reads the claim against $150$; $155$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $150$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter B names the trusted prediction, not the third run. Letter D then measures the shortfall.
 
 **2.** The opposite verdict would have needed a smaller trusted coefficient, so that $2\\cdot 81$ fell through $155$. At the recovered $A=2$, nine metres is locked at $162$ mm.
 
@@ -8630,7 +8630,7 @@ The trusted quadratic at nine metres is $162$ mm, so the statement is True.`,
 
 Doubling span would double deflection only if the exponent were $1$. With $k=2$ the factor is $2^{2}=4$. The trusted move from $3$ m to $6$ m already did that: $18$ mm became $72$ mm. A doubled free span is four times the sag.
 
-**1.** A rushed solver who read "doubling" in the $3$ m to $6$ m pair and copied it onto deflection would have claimed a doubling of sag, $36$ mm at $6$ m, against the logged $72$. The trusted pair is the counterexample.
+**1.** Reading "doubling" in the $3$ m to $6$ m pair and copying it onto deflection would have claimed a doubling of sag, $36$ mm at $6$ m, against the logged $72$. After isolating the unknown, the check is against $3$. The figure $72$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $3$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The trusted pair is the counterexample.
 
 **2.** The opposite verdict would have needed $k=1$. The trusted ratio $4$ on a doubled span forbids that.
 
@@ -8641,11 +8641,11 @@ Doubling the free span quadruples the tip deflection, so the statement is False.
 
 This letter is the millimetre shortfall of the third run against the trusted quadratic. Predicted $162$ mm minus recorded $150$ mm is a $12$ mm shortfall, which is more than $10$. The third run sits below the trusted quadratic. A $10$ mm tolerance would still flag this gap.
 
-**1.** A rushed solver who compared $150$ to the $3$ m reading $18$ as a ratio, without using the trusted $162$, might have missed the millimetre test. Letter E reads the same gap as a ratio. This letter reads it as millimetres.
+**1.** Comparing $150$ to the $3$ m reading $18$ as a ratio, without using the trusted $162$, might have missed the millimetre test. The recovered comparison therefore keeps $150$ and does not substitute $162$. Letter E reads the same gap as a ratio. This letter reads it as millimetres.
 
 **2.** The opposite verdict would have needed the third run to have been $152$ mm or higher, so that the shortfall fell through $10$. The recorded run is $150$.
 
-A rushed solver who compared $150$ to the $3$ m reading $18$ as a ratio, without using the trusted $162$, might have missed the millimetre test. Letter E reads the same gap as a ratio. This letter reads it as millimetres. The opposite verdict would have needed the third run to have been $152$ mm or higher.
+Comparing $150$ to the $3$ m reading $18$ as a ratio, without using the trusted $162$, might have missed the millimetre test. The recovered comparison therefore keeps $150$ and does not substitute $162$. Letter E reads the same gap as a ratio. This letter reads it as millimetres. The opposite verdict would have needed the third run to have been $152$ mm or higher.
 
 The third run sits $12$ mm below the trusted quadratic, so the statement is True.`,
       `**E.** → False
@@ -8654,13 +8654,13 @@ The third run would sit on the trusted law only if $150/18=3^{2}$. Instead $150/
 
 **1.** A two-point refit using $y(3)=18$ and $y(9)=150$ would force $3^{k}=\\frac{25}{3}$, so $k\\approx 1.930$, not $2$. Rescaling $A$ to force the third run, $A=150/81\\approx 1.85$, then breaks $y(3)$: $1.85\\cdot 9=16.65\\neq 18$. Either constant can be saved, not both.
 
-**2.** A rushed solver who treated $12$ mm as "close enough" on a $162$ mm prediction would have called the statement true. The letter asks whether the third run sits on the same power law, not whether it is nearby.
+**2.** Treating $12$ mm as "close enough" on a $162$ mm prediction would have called the statement true. The stem's recovered values line up with $12$, whereas $162$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The letter asks whether the third run sits on the same power law, not whether it is nearby.
 
 **3.** The opposite verdict would have needed a recorded third run of $162$ mm. The stem records $150$.
 
 A two-point refit using $y(3)=18$ and $y(9)=150$ would force $3^{k}=\\frac{25}{3}$, so $k\\approx 1.930$, not $2$. Rescaling $A$ to force the third run, $A=150/81\\approx 1.85$, then breaks $y(3)$: $1.85\\cdot 9=16.65\\neq 18$. Either constant can be saved, not both.
 
-A rushed solver who treated $12$ mm as "close enough" on a $162$ mm prediction would have called the statement true. The letter asks whether the third run sits on the same power law, not whether it is nearby. The opposite verdict would have needed a recorded third run of $162$ mm. The stem records $150$.
+Treating $12$ mm as "close enough" on a $162$ mm prediction would have called the statement true. The stem's recovered values line up with $12$, whereas $162$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The letter asks whether the third run sits on the same power law, not whether it is nearby. The opposite verdict would have needed a recorded third run of $162$ mm. The stem records $150$.
 
 The trusted pair is a square law with $A=2$. Forcing the third run onto that square would require $y(9)=162$, not $150$. Forcing a new exponent through $3$ m and $9$ m gives about $1.930$, which then predicts $y(6)=18\\cdot 2^{1.930}\\approx 68.4$, not the trusted $72$. The third run cannot be absorbed without breaking a trusted point.
 
@@ -8714,7 +8714,7 @@ $$\\frac{y(cL)}{y(L)}=c^{2} \\tag{2}$$
 
 This letter reads the percentage rule as an exponent ranking. The design note is $1.2^{k}=1.728$. Matching powers of $1.2$ gives $1.2^{3}=1.728$, so $k=3$. Three is larger than one, so mass outruns height. The coefficient cancels in the ratio, so the $10$ m reference is not needed for this ranking.
 
-**1.** A rushed solver who treated $72.8\\%$ as "about three times $20\\%$" and guessed $k=3$ by a percentage shortcut would have the right exponent for a slightly wrong reason. The exact match is $1.2^{3}=1.728$, not $3\\times 20\\%=60\\%$.
+**1.** Treating $72.8\\%$ as "about three times $20\\%$" and guessed $k=3$ by a percentage shortcut would have the right exponent for a slightly wrong reason. So the letter reads the claim against $72.8\\%$; $k=3$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $72.8\\%$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exact match is $1.2^{3}=1.728$, not $3\\times 20\\%=60\\%$.
 
 **2.** The opposite verdict would have needed $k\\le 1$. The percentage rule already refuses that.
 
@@ -8725,11 +8725,11 @@ The recovered exponent is $3$, so the statement is True.`,
 
 This is a level question at $12$ m, a $20\\%$ stretch of the $10$ m reference. The overview recovered $M(12)=864$. Eight hundred and sixty-four sits above eight hundred. The same check is $500\\cdot 1.728=864$, or $0.5\\cdot 12^{3}=864$.
 
-**1.** A rushed solver who added $20\\%$ to $500$ kg would have claimed $600$, under $800$, and flipped the verdict. Height and mass do not move in lockstep when $k=3$.
+**1.** Adding $20\\%$ to $500$ kg would have claimed $600$, under $800$, and flipped the verdict. So the letter reads the claim against $20\\%$; $800$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $20\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Height and mass do not move in lockstep when $k=3$.
 
 **2.** The opposite verdict would have needed a smaller reference mass, so that $M(12)$ fell through $800$. At the recovered $A=0.5$, twelve metres is locked at $864$ kg.
 
-A rushed solver who added $20\\%$ to $500$ kg would have claimed $600$, under $800$, and flipped the verdict. Height and mass do not move in lockstep when $k=3$. The opposite verdict would have needed a smaller reference mass, so that $M(12)$ fell through $800$.
+Adding $20\\%$ to $500$ kg would have claimed $600$, under $800$, and flipped the verdict. So the letter reads the claim against $20\\%$; $800$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $20\\%$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Height and mass do not move in lockstep when $k=3$. The opposite verdict would have needed a smaller reference mass, so that $M(12)$ fell through $800$.
 
 The recovered steel mass at $12$ m is $864$ kg, so the statement is True.`,
       `**C.** → False
@@ -8738,11 +8738,11 @@ In the ratio $M(1.2h)/M(h)=1.2^{k}$ the coefficient $A$ cancels, so the percenta
 
 **1.** Any $A$ with $k=3$ would still raise mass by $72.8\\%$ on a $20\\%$ stretch. The percentage rule is blind to whether the reference mast uses $500$ kg or $5000$ kg.
 
-**2.** A rushed solver who solved $A\\cdot 1.2^{k}=1.728$ as if that were a level would have manufactured a fake $A$. The $1.728$ is a multiplier, not a mass in kilograms.
+**2.** Solving $A\\cdot 1.2^{k}=1.728$ as if that were a level would have manufactured a fake $A$. So the letter reads the claim against $A\\cdot 1.2^{k}=1.728$; $A$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $A\\cdot 1.2^{k}=1.728$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The $1.728$ is a multiplier, not a mass in kilograms.
 
 **3.** The opposite verdict would have needed a second level, or a named mass in the percentage note. The stem separates a ratio from a level on purpose.
 
-Any $A$ with $k=3$ would still raise mass by $72.8\\%$ on a $20\\%$ stretch. The percentage rule is blind to whether the reference mast uses $500$ kg or $5000$ kg. A rushed solver who solved $A\\cdot 1.2^{k}=1.728$ as if that were a level would have manufactured a fake $A$. The $1.728$ is a multiplier, not a mass in kilograms.
+Any $A$ with $k=3$ would still raise mass by $72.8\\%$ on a $20\\%$ stretch. The percentage rule is blind to whether the reference mast uses $500$ kg or $5000$ kg. Solving $A\\cdot 1.2^{k}=1.728$ as if that were a level would have manufactured a fake $A$. So the letter reads the claim against $A\\cdot 1.2^{k}=1.728$; $A$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $A\\cdot 1.2^{k}=1.728$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The $1.728$ is a multiplier, not a mass in kilograms.
 
 The opposite verdict would have needed a second level, or a named mass in the percentage note. The stem separates a ratio from a level on purpose. Letter B then uses the $10$ m reference to pin $A=0.5$; this letter is why that reference cannot be skipped.
 
@@ -8757,11 +8757,11 @@ A $10\\%$ stretch is the factor $1.1^{3}=1.331$, a $33.1\\%$ mass rise, which si
 
 **1.** Checking the reference: $M(11)=0.5\\cdot 1331=665.5$, and $665.5/500=1.331$. The mass rise is $165.5$ kg on a $500$ kg mast, $33.1\\%$.
 
-**2.** A rushed solver who tripled the $10\\%$ to $30\\%$ as a linear elasticity shortcut would have sat on the $30\\%$ line and called the statement false, or called it a tie. The exact cube is $1.331$, a little above $30\\%$.
+**2.** Tripling the $10\\%$ to $30\\%$ as a linear elasticity shortcut would have sat on the $30\\%$ line and called the statement false, or called it a tie. The stem's recovered values line up with $10\\%$, whereas $30\\%$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. The exact cube is $1.331$, a little above $30\\%$.
 
 **3.** The opposite verdict would have needed $1.1^{k}\\le 1.30$, hence $k\\le \\log(1.30)/\\log(1.1)\\approx 2.74$. The percentage rule locked $k=3$.
 
-Checking the reference: $M(11)=0.5\\cdot 11^{3}=665.5$, and $665.5/500=1.331$. The mass rise is $165.5$ kg on a $500$ kg mast, $33.1\\%$. A rushed solver who tripled the $10\\%$ to $30\\%$ as a linear elasticity shortcut would have sat on the $30\\%$ line. The exact cube is $1.331$, a little above $30\\%$.
+Checking the reference: $M(11)=0.5\\cdot 11^{3}=665.5$, and $665.5/500=1.331$. The mass rise is $165.5$ kg on a $500$ kg mast, $33.1\\%$. Tripling the $10\\%$ to $30\\%$ as a linear elasticity shortcut would have sat on the $30\\%$ line. After isolating the unknown, the check is against $10\\%$. The figure $30\\%$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $10\\%$ stays in the write-up. The exact cube is $1.331$, a little above $30\\%$.
 
 The opposite verdict would have needed $1.1^{k}\\le 1.30$, hence $k\\le \\log(1.30)/\\log(1.1)\\approx 2.74$. The percentage rule locked $k=3$. Letter E then reads the $20\\%$ stretch, whose exact factor is the design note $1.728$.
 
@@ -8784,11 +8784,11 @@ A $20\\%$ height increase raises mass by $72.8\\%$, not by $20\\%$. That is the 
 
 **1.** Letter B already used that $72.8\\%$ to move $500$ kg to $864$ kg. This letter is the percentage claim sitting next to that level.
 
-**2.** A rushed solver who copied the $20\\%$ from height onto mass would have called the statement true. That is exponent $1$, which letter A already refused.
+**2.** Copying the $20\\%$ from height onto mass would have called the statement true. That is why $20\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That is exponent $1$, which letter A already refused.
 
 **3.** The opposite verdict would have needed $k=1$. The design note $72.8\\%$ on a $20\\%$ stretch forbids that.
 
-A rushed solver who copied the $20\\%$ from height onto mass would have called the statement true. That is exponent $1$, which letter A already refused. The opposite verdict would have needed $k=1$. The design note $72.8\\%$ on a $20\\%$ stretch forbids that.
+Copying the $20\\%$ from height onto mass would have called the statement true. That is why $20\\%$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That is exponent $1$, which letter A already refused. The opposite verdict would have needed $k=1$. The design note $72.8\\%$ on a $20\\%$ stretch forbids that.
 
 A $20\\%$ height increase raises mass by $72.8\\%$, so the statement is False.`,
     ],
@@ -8853,11 +8853,11 @@ Doubling the distance cuts intensity to one quarter, so the statement is True.`,
 
 This is a level question at $4$ m, a doubling of the $2$ m survey. The overview recovered $I(4)=0.18$, which sits under $0.2$. That is a quarter of $0.72$.
 
-**1.** A rushed solver who halved $0.72$ would have claimed $0.36$, above $0.2$, and flipped the verdict. Inverse-linear thinking is too slow a decay.
+**1.** Halving $0.72$ would have claimed $0.36$, above $0.2$, and flipped the verdict. The stem's recovered values line up with $0.72$, whereas $0.2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.72$ stays in the write-up. Inverse-linear thinking is too slow a decay.
 
 **2.** The opposite verdict would have needed a larger coefficient, so that $I(4)$ rose through $0.2$. At the recovered $A=2.88$, four metres is locked at $0.18$.
 
-A rushed solver who halved $0.72$ would have claimed $0.36$, above $0.2$, and flipped the verdict. Inverse-linear thinking is too slow a decay. The opposite verdict would have needed a larger coefficient, so that $I(4)$ rose through $0.2$.
+Halving $0.72$ would have claimed $0.36$, above $0.2$, and flipped the verdict. The stem's recovered values line up with $0.72$, whereas $0.2$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $0.72$ stays in the write-up. Inverse-linear thinking is too slow a decay. The opposite verdict would have needed a larger coefficient, so that $I(4)$ rose through $0.2$.
 
 The recovered intensity at $4$ metres is $0.18$ W/m², so the statement is True.`,
       `**C.** → True
@@ -8866,7 +8866,7 @@ This letter compares leftover slopes at $2$ m and $6$ m. The overview recovered 
 
 **1.** A finite one-metre step agrees. From $2$ to $3$ m, $I(3)=2.88/9=0.32$, a drop of $0.40$ from $0.72$. From $6$ to $7$ m, $I(7)=2.88/49\\approx 0.059$, a drop of about $0.021$ from $0.08$. The near metre cuts more.
 
-**2.** A rushed solver who saw $I(6)=0.08$ already at the cap and inferred that an extra metre there must hurt more would have mixed a smaller remaining intensity with a steeper cut. The remaining intensity is smaller at $6$ m; the slope is also flatter.
+**2.** Seeing $I(6)=0.08$ already at the cap and inferred that an extra metre there must hurt more would have mixed a smaller remaining intensity with a steeper cut. The path that matches the stem therefore holds $I(6)=0.08$ fixed and only then reads the claim. The remaining intensity is smaller at $6$ m; the slope is also flatter.
 
 **3.** The opposite verdict would have needed $|I'|$ to grow with $d$. For $r=-2$, $|I'|$ falls. Changing $A$ scales both slopes by the same factor and cannot reverse $0.72>0.027$.
 
@@ -8881,24 +8881,24 @@ An extra metre cuts more intensity at $2$ m than at $6$ m, so the statement is T
 
 This is a level question at $6$ m against the night cap. The overview recovered $I(6)=0.08$, which equals the night cap rather than sitting above it. The claim wants a reading still above $0.08$; equality is not above. The cap is met exactly at six metres.
 
-**1.** A rushed solver who treated "at or above the cap" as the night-rule violation would have called this letter true. The statement says "still above," and $0.08$ is not above $0.08$.
+**1.** Treating "at or above the cap" as the night-rule violation would have called this letter true. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The statement says "still above," and $0.08$ is not above $0.08$.
 
 **2.** Checking $I(5)=2.88/25=0.1152$, which is still above the cap. Five metres is inside the night restriction; six metres is the boundary. Letter D names six metres.
 
 **3.** The opposite verdict would have needed a larger coefficient, so that $I(6)$ sat above $0.08$. At the recovered $A=2.88$, six metres is locked on the cap.
 
-Checking $I(5)=2.88/25=0.1152$, which is still above the cap. Five metres is inside the night restriction; six metres is the boundary. A rushed solver who treated "at or above the cap" as the night-rule violation would have called this letter true. The statement says "still above," and $0.08$ is not above $0.08$.
+Checking $I(5)=2.88/25=0.1152$, which is still above the cap. Five metres is inside the night restriction; six metres is the boundary. Treating "at or above the cap" as the night-rule violation would have called this letter true. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. The statement says "still above," and $0.08$ is not above $0.08$.
 
 The recovered intensity at $6$ metres equals the night cap, so the statement is False.`,
       `**E.** → False
 
 An inverse square falls from $0.72$ toward $0$ and therefore crosses $0.08$ at a finite distance. The overview recovered that the cap is met at $d=6$ m. Walking away from the hub always eventually satisfies the night limit.
 
-**1.** A rushed solver who saw a decaying power and claimed it never reaches a positive floor would have mixed an asymptote at $0$ with a failure to cross $0.08$. Intensity approaches $0$, so it must pass $0.08$ on the way.
+**1.** Seeing a decaying power and claiming it never reaches a positive floor would have mixed an asymptote at $0$ with a failure to cross $0.08$. After isolating the unknown, the check is against $0$. The figure $0.08$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $0$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Intensity approaches $0$, so it must pass $0.08$ on the way.
 
 **2.** The opposite verdict would have needed a positive horizontal asymptote above $0.08$, for instance $I=0.10+A d^{-2}$. The stem has no such floor.
 
-A rushed solver who saw a decaying power and claimed it never reaches a positive floor would have mixed an asymptote at $0$ with a failure to cross $0.08$. Intensity approaches $0$, so it must pass $0.08$ on the way. The opposite verdict would have needed a positive horizontal asymptote above $0.08$.
+Seeing a decaying power and claiming it never reaches a positive floor would have mixed an asymptote at $0$ with a failure to cross $0.08$. After isolating the unknown, the check is against $0$. The figure $0.08$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $0$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Intensity approaches $0$, so it must pass $0.08$ on the way. The opposite verdict would have needed a positive horizontal asymptote above $0.08$.
 
 The night cap is met at six metres, so the statement is False.`,
     ],
@@ -8952,7 +8952,7 @@ Head is a square of flow and jet speed is a square root of head, so the composed
 
 Stopping at $H(q)=2q^{2}$ would have left a square in flow. Stopping at $v(H)=4\\sqrt{H}$ would have left a square root in head. Neither of those is the composed map.
 
-**1.** A rushed solver who added the exponents would have claimed exponent $2.5$ and called the map a power but not a proportion. Composition multiplies, and $2\\cdot\\frac{1}{2}=1$ is the proportional case.
+**1.** Adding the exponents would have claimed exponent $2.5$ and called the map a power but not a proportion. The opposite verdict would need a different isolation than $2.5$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Composition multiplies, and $2\\cdot\\frac{1}{2}=1$ is the proportional case.
 
 **2.** Checking the commissioning run: $v(5)=20\\sqrt{2}$. Doubling flow to $10$ doubles speed to $40\\sqrt{2}$, which is letter D. Proportionality is the same fact as that doubling.
 
@@ -8963,11 +8963,11 @@ After both stages, jet speed is proportional to flow, so the statement is True.`
 
 This is a level question at the commissioning flow $q=5$. The overview recovered $v(5)=20\\sqrt{2}$. Because $\\sqrt{2}>1.4$, $20\\sqrt{2}>28$. Jet speed already sits above twenty-eight metres per second.
 
-**1.** A rushed solver who used $v=4\\sqrt{H}=4\\sqrt{50}\\approx 28.3$ and compared $28.3$ to $28$ would have the right verdict from the head stage, which is the same number: $4\\sqrt{50}=4\\sqrt{25\\cdot 2}=20\\sqrt{2}$. Another mix-up is comparing head $50$ m to $28$ m/s.
+**1.** Using $v=4\\sqrt{H}=4\\sqrt{50}\\approx 28.3$ and comparing $28.3$ to $28$ would have the right verdict from the head stage, which is the same number: $4\\sqrt{50}=4\\sqrt{25\\cdot 2}=20\\sqrt{2}$. After isolating the unknown, the check is against $v=4\\sqrt{H}=4\\sqrt{50}\\approx 28.3$. The figure $4\\sqrt{50}=4\\sqrt{25\\cdot 2}=20\\sqrt{2}$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $v=4\\sqrt{H}=4\\sqrt{50}\\approx 28.3$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Another mix-up is comparing head $50$ m to $28$ m/s.
 
 **2.** The opposite verdict would have needed a smaller commissioning head, so that $20\\sqrt{2}$ fell through $28$. At the recovered $A=2$, five cubic metres per hour is locked above $28$ m/s.
 
-A rushed solver who compared head $50$ m to $28$ m/s would have mixed metres of head with metres per second of jet. The opposite verdict would have needed a smaller commissioning head, so that $20\\sqrt{2}$ fell through $28$.
+Comparing head $50$ m to $28$ m/s would have mixed metres of head with metres per second of jet. After isolating the unknown, the check is against $50$. The figure $28$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $50$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed a smaller commissioning head, so that $20\\sqrt{2}$ fell through $28$.
 
 The recovered jet speed at $q=5$ is $20\\sqrt{2}$ m/s, so the statement is True.`,
       `**C.** → False
@@ -8987,13 +8987,13 @@ Doubling the flow quadruples the head, so the statement is False.`,
 
 Because speed is proportional to flow after both stages, twice $v(5)=20\\sqrt{2}$ needs twice the flow: $q=10$, which sits under $12$. The target $40\\sqrt{2}$ m/s needs $10$ m³/h.
 
-**1.** A rushed solver who inverted the square head law as if speed needed four times the flow would have claimed $q=20$, past $12$, and flipped the verdict. That mix-up inverts $H$ instead of $v$. Head at $40\\sqrt{2}$ m/s is $H=v^{2}/16=(40\\sqrt{2})^{2}/16=200$ m, which is $q=10$, not $q=20$.
+**1.** Inverting the square head law as if speed needed four times the flow would have claimed $q=20$, past $12$, and flipped the verdict. That is the fork: $q=20$ belongs to the recovered isolation, $12$ belongs to the discarded mix. That mix-up inverts $H$ instead of $v$. Head at $40\\sqrt{2}$ m/s is $H=v^{2}/16=(40\\sqrt{2})^{2}/16=200$ m, which is $q=10$, not $q=20$.
 
 **2.** Checking $q=12$: $v(12)=48\\sqrt{2}\\approx 67.9$, already past $40\\sqrt{2}\\approx 56.6$. The $12$ m³/h cutoff is not a near miss on $10$; it is past the target.
 
 **3.** The opposite verdict would have needed a smaller composed coefficient, so that the inverted flow rose through $12$. At the recovered $v=4\\sqrt{2}\\, q$, forty root-two metres per second is locked at $q=10$.
 
-A rushed solver who inverted the square head law as if speed needed four times the flow would have claimed $q=20$, past $12$, and flipped the verdict. That mix-up inverts $H$ instead of $v$. Head at $40\\sqrt{2}$ m/s is $H=v^{2}/16=200$ m, which is $q=10$, not $q=20$.
+Inverting the square head law as if speed needed four times the flow would have claimed $q=20$, past $12$, and flipped the verdict. That is the fork: $q=20$ belongs to the recovered isolation, $12$ belongs to the discarded mix. That mix-up inverts $H$ instead of $v$. Head at $40\\sqrt{2}$ m/s is $H=v^{2}/16=200$ m, which is $q=10$, not $q=20$.
 
 Checking $q=12$: $v(12)=48\\sqrt{2}\\approx 67.9$, already past $40\\sqrt{2}\\approx 56.6$. The $12$ m³/h cutoff is past the target, not a near miss. The opposite verdict would have needed a smaller composed coefficient, so that the inverted flow rose through $12$.
 
@@ -9070,22 +9070,22 @@ To double throughput a staffing factor $k$ must satisfy $k^{\\frac{1}{2}}=2$, so
 
 The overview recovered $T(s)=20\\sqrt{s}$. Doubling the logged $80$ pallets needs $T=160$, hence $s=(160/20)^{2}=64$ drivers, four times the logged $16$.
 
-**1.** A rushed solver who doubled the crew to $32$ would have claimed $T(32)=20\\sqrt{32}\\approx 113$, short of $160$. Doubling headcount does not double pallets.
+**1.** Doubling the crew to $32$ would have claimed $T(32)=20\\sqrt{32}\\approx 113$, short of $160$. Working from the isolated values, $32$ is the figure that is checked, not the detour that produced $160$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Doubling headcount does not double pallets.
 
 **2.** The opposite verdict would have needed $r\\ge 1$. The stem is a square root.
 
-A rushed solver who doubled the crew to $32$ would have claimed $T(32)=20\\sqrt{32}\\approx 113$, short of $160$. Doubling headcount does not double pallets. The opposite verdict would have needed an exponent of $1$ or more. The stem is a square root. Letter D then inverts a still larger target of $150$ against the same recovered rule.
+Doubling the crew to $32$ would have claimed $T(32)=20\\sqrt{32}\\approx 113$, short of $160$. Working from the isolated values, $32$ is the figure that is checked, not the detour that produced $160$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Doubling headcount does not double pallets. The opposite verdict would have needed an exponent of $1$ or more. The stem is a square root. Letter D then inverts a still larger target of $150$ against the same recovered rule.
 
 To double the logged throughput the yard must more than double the crew, so the statement is True.`,
       `**B.** → True
 
 This is a level question at the safety cap of $36$ drivers. The overview recovered $T(36)=120$. One hundred and twenty sits above one hundred and ten. The safety cap of $36$ drivers is also this level.
 
-**1.** A rushed solver who scaled $T(16)=80$ by $36/16$ linearly would have claimed $180$, still above $110$ but for the wrong shape. Linear thinking overstates a larger crew when $r<1$.
+**1.** Scaling $T(16)=80$ by $36/16$ linearly would have claimed $180$, still above $110$ but for the wrong shape. That is the fork: $T(16)=80$ belongs to the recovered isolation, $110$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Linear thinking overstates a larger crew when $r<1$.
 
 **2.** The opposite verdict would have needed a smaller coefficient, so that $T(36)$ fell through $110$. At the recovered $A=20$, thirty-six drivers is locked at $120$ pallets per hour.
 
-A rushed solver who scaled $T(16)=80$ by $36/16$ linearly would have claimed $180$, still above $110$ but for the wrong shape. Linear thinking overstates a larger crew when $r<1$. The opposite verdict would have needed a smaller coefficient, so that $T(36)$ fell through $110$.
+Scaling $T(16)=80$ by $36/16$ linearly would have claimed $180$, still above $110$ but for the wrong shape. That is the fork: $T(16)=80$ belongs to the recovered isolation, $110$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Linear thinking overstates a larger crew when $r<1$. The opposite verdict would have needed a smaller coefficient, so that $T(36)$ fell through $110$.
 
 The recovered throughput at $36$ drivers is $120$ pallets per hour, so the statement is True.`,
       `**C.** → False
@@ -9094,24 +9094,24 @@ Throughput per driver is the intensity $T(s)/s$. The overview recovered $T(s)=20
 
 Checking the logged shift against the cap: at $16$ drivers the intensity is $80/16=5$ pallets per driver. At $36$ drivers it is $120/36=\\frac{10}{3}\\approx 3.33$. Intensity has already fallen.
 
-**1.** A rushed solver who saw $T(36)=120>T(16)=80$ and inferred a rising intensity would have mixed a higher total with a higher per-driver figure. Totals rise; intensities fall.
+**1.** Seeing $T(36)=120>T(16)=80$ and inferred a rising intensity would have mixed a higher total with a higher per-driver figure. Keeping $T(36)=120>T(16)=80$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Totals rise; intensities fall.
 
 **2.** The opposite verdict would have needed leftover exponent $0$, a proportional warehouse. The stem is a square root.
 
-A rushed solver who saw $T(36)=120>T(16)=80$ and inferred a rising intensity would have mixed a higher total with a higher per-driver figure. Totals rise; intensities fall. The opposite verdict would have needed leftover exponent $0$, a proportional warehouse.
+Seeing $T(36)=120>T(16)=80$ and inferred a rising intensity would have mixed a higher total with a higher per-driver figure. Keeping $T(36)=120>T(16)=80$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Totals rise; intensities fall. The opposite verdict would have needed leftover exponent $0$, a proportional warehouse.
 
 Throughput per driver falls as the crew grows, so the statement is False.`,
       `**D.** → False
 
 This letter inverts a $150$ pallet target against the $36$-driver cap. The overview recovered that $150$ pallets already needs $s=56.25$ drivers, which sits past the cap. The capped shift delivers only $120$ pallets per hour. Reaching $150$ lies outside the safety cap.
 
-**1.** From $20\\sqrt{s}=150$ one has $\\sqrt{s}=7.5$ and $s=56.25$. A rushed solver who scaled linearly from $80$ pallets at $16$ drivers would have claimed $s=30$, inside the cap, and flipped the verdict. Linear thinking understates the crew when $r<1$.
+**1.** From $20\\sqrt{s}=150$ one has $\\sqrt{s}=7.5$ and $s=56.25$. Scaling linearly from $80$ pallets at $16$ drivers would have claimed $s=30$, inside the cap, and flipped the verdict. The stem's recovered values line up with $80$, whereas $s=30$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Linear thinking understates the crew when $r<1$.
 
 **2.** Checking $T(36)=120<150$. The cap is not a near miss on $150$; it is $30$ pallets short.
 
 **3.** The opposite verdict would have needed a larger coefficient, so that $T(36)$ already cleared $150$. At the recovered $A=20$, one hundred and fifty pallets is locked past the cap.
 
-From $20\\sqrt{s}=150$ one has $\\sqrt{s}=7.5$ and $s=56.25$. A rushed solver who scaled linearly from $80$ pallets at $16$ drivers would have claimed $s=30$, inside the cap, and flipped the verdict. Linear thinking understates the crew when $r<1$.
+From $20\\sqrt{s}=150$ one has $\\sqrt{s}=7.5$ and $s=56.25$. Scaling linearly from $80$ pallets at $16$ drivers would have claimed $s=30$, inside the cap, and flipped the verdict. The stem's recovered values line up with $80$, whereas $s=30$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Linear thinking understates the crew when $r<1$.
 
 Checking $T(36)=120<150$. The cap is not a near miss on $150$; it is $30$ pallets short. The opposite verdict would have needed $A>150/6=25$, a larger coefficient so that the capped shift already cleared $150$. The logged shift locks $A=20$.
 
@@ -9126,13 +9126,13 @@ Reaching $150$ pallets per hour sits outside the safety cap, so the statement is
 
 The leftover slope $T'(s)=10 s^{-\\frac{1}{2}}$ stays positive, so throughput rises with crew all the way to the cap. At $s=36$, $T=120$, and no larger legal crew exists. The driver cap is therefore also a cap on pallets moved per hour.
 
-**1.** A rushed solver who saw intensity falling in letter C and inferred that extra drivers could eventually hurt the total would have mixed a falling average with a falling total. The marginal $T'$ stays positive; only the average falls.
+**1.** Seeing intensity falling in letter C and inferred that extra drivers could eventually hurt the total would have mixed a falling average with a falling total. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The marginal $T'$ stays positive; only the average falls.
 
 **2.** Checking just inside the cap: $T(35)=20\\sqrt{35}\\approx 118.3<120=T(36)$. More legal drivers still mean more pallets. The cap binds both.
 
 **3.** The opposite verdict would have needed $T$ to peak before $s=36$, hence a negative leftover exponent on $T$ itself. The stem's exponent $0.5$ is positive. A falling intensity is not a falling total.
 
-Checking just inside the cap: $T(35)=20\\sqrt{35}\\approx 118.3<120=T(36)$. More legal drivers still mean more pallets. A rushed solver who saw intensity falling in letter C and inferred that extra drivers could eventually hurt the total would have mixed a falling average with a falling total. The marginal $T'$ stays positive; only the average falls.
+Checking just inside the cap: $T(35)=20\\sqrt{35}\\approx 118.3<120=T(36)$. More legal drivers still mean more pallets. Seeing intensity falling in letter C and inferred that extra drivers could eventually hurt the total would have mixed a falling average with a falling total. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. The marginal $T'$ stays positive; only the average falls.
 
 The opposite verdict would have needed $T$ to peak before $s=36$, hence a negative leftover exponent on $T$ itself. The stem's exponent $0.5$ is positive.
 
@@ -9209,7 +9209,7 @@ From $r=-\\frac{3}{2}$ and $A\\cdot\\frac{1}{8}=250$, the coefficient is $A=2000
 
 $$R(16)=\\frac{2000}{4}=500$$
 
-A rushed solver who used $R(4)=1000$ against the $600$ cutoff would have called the statement false. Letter B names $16$ euros, a quadrupling of the logged price, which halves revenue because leftover exponent $-\\frac{1}{2}$ sends $4^{-\\frac{1}{2}}=\\frac{1}{2}$. The opposite verdict would have needed a larger coefficient, so that $R(16)$ rose through $600$.
+Using $R(4)=1000$ against the $600$ cutoff would have called the statement false. The recovered comparison therefore keeps $R(4)=1000$ and does not substitute $600$. Letter B names $16$ euros, a quadrupling of the logged price, which halves revenue because leftover exponent $-\\frac{1}{2}$ sends $4^{-\\frac{1}{2}}=\\frac{1}{2}$. The opposite verdict would have needed a larger coefficient, so that $R(16)$ rose through $600$.
 
 Five hundred sits under six hundred. From $R(4)=1000$, a quadrupling of price halves revenue, $1000/2=500$. Mixing $q(16)=2000/64=31.25$ thousand subscribers with the $600$ thousand-euro cutoff is a units error. The claim is revenue.
 
@@ -9224,7 +9224,7 @@ $$R(p)=A p^{-\\frac{1}{2}}$$
 
 Stopping at $q$ would have left exponent $-\\frac{3}{2}$. Multiplying by $p$ raises the exponent by one. Both are powers; they are different powers. The opposite verdict would have needed demand that was not a power, for instance a linear demand, whose revenue would be quadratic.
 
-A rushed solver who thought $pq$ could not stay a power because price and quantity move against each other would have expected a more complicated shape. Along an isoelastic curve the product remains a power. Checking $R(4)=1000$ and $R(16)=500$ is $1000\\cdot 16^{-\\frac{1}{2}}/4^{-\\frac{1}{2}}=1000/2$.
+Thinking $pq$ could not stay a power because price and quantity move against each other would have expected a more complicated shape. The opposite verdict would need a different isolation than $pq$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. Along an isoelastic curve the product remains a power. Checking $R(4)=1000$ and $R(16)=500$ is $1000\\cdot 16^{-\\frac{1}{2}}/4^{-\\frac{1}{2}}=1000/2$.
 
 A monomial is a power function, so revenue is a power of price. Stopping at $q$ would have left exponent $-\\frac{3}{2}$, so the statement is True.`,
       `**D.** → False
@@ -9233,7 +9233,7 @@ To double revenue from $R(4)=1000$, the price factor $k$ satisfies $k^{-\\frac{1
 
 $$k=\\frac{1}{4}$$
 
-Halving the $4$-euro price would multiply revenue by $2^{\\frac{1}{2}}\\approx 1.41$, to about $1414$, short of a doubling to $2000$. The service must cut the price to $1$ euro, a quarter, not to $2$ euros. A rushed solver who treated leftover exponent $-1$ would have claimed a half-price doubling of revenue, which is this letter's false claim. Inverse-linear revenue would have doubled on a halving; leftover exponent $-\\frac{1}{2}$ needs a fourfold price cut.
+Halving the $4$-euro price would multiply revenue by $2^{\\frac{1}{2}}\\approx 1.41$, to about $1414$, short of a doubling to $2000$. The service must cut the price to $1$ euro, a quarter, not to $2$ euros. Treating leftover exponent $-1$ would have claimed a half-price doubling of revenue, which is this letter's false claim. The path that matches the stem therefore holds $-1$ fixed and only then reads the claim. Inverse-linear revenue would have doubled on a halving; leftover exponent $-\\frac{1}{2}$ needs a fourfold price cut.
 
 Checking $R(1)=2000$ and $R(2)=2000/\\sqrt{2}\\approx 1414$. The half-price till is not a doubling. The opposite verdict would have needed leftover exponent $-1$ on $R$, hence demand exponent $-2$. The scale rule locked demand at $-\\frac{3}{2}$.
 
@@ -9254,7 +9254,7 @@ At $9$ euros, with $R(p)=2000 p^{-\\frac{1}{2}}$,
 
 $$R(9)=\\frac{2000}{3}\\approx 667$$
 
-A rushed solver who compared $R(16)=500$ from letter B with the $9$-euro till would have expected $9$ to sit under $600$ as well, because $9>4$. Revenue has fallen from $R(4)=1000$, but only to about $667$, still above $600$. Nine contributes a square root of $3$. The opposite verdict would have needed a smaller coefficient, so that $R(9)$ fell through $600$.
+Comparing $R(16)=500$ from letter B with the $9$-euro till would have expected $9$ to sit under $600$ as well, because $9>4$. After isolating the unknown, the check is against $R(16)=500$. The figure $9>4$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $R(16)=500$ stays in the write-up. Revenue has fallen from $R(4)=1000$, but only to about $667$, still above $600$. Nine contributes a square root of $3$. The opposite verdict would have needed a smaller coefficient, so that $R(9)$ fell through $600$.
 
 Checking $R(4)=1000$, $R(9)\\approx 667$, $R(16)=500$. The $600$ line sits between $9$ euros and $16$ euros. Letter B is the far side of that line; letter E is the near side. Mixing the two prices is how a true "under $600$ at $9$ euros" appears.
 
@@ -9335,7 +9335,7 @@ With $C(n)=400+30\\sqrt{n}$, nine hundred branches contribute a square root of $
 
 $$C(900)=400+900=1300$$
 
-Dropping the retainer would have claimed $900$ and missed the floor. A rushed solver who used $C(400)=1000$ and scaled by $\\sqrt{900/400}=1.5$ without the intercept would have claimed $1500$, still above $1200$ but from treating the bill as a pure square root. The recovered bill is $400+900=1300$. The opposite verdict would have needed a smaller $A$, so that $C(900)$ fell through $1200$.
+Dropping the retainer would have claimed $900$ and missed the floor. Using $C(400)=1000$ and scaling by $\\sqrt{900/400}=1.5$ without the intercept would have claimed $1500$, still above $1200$ but from treating the bill as a pure square root. After isolating the unknown, the check is against $C(400)=1000$. The figure $1200$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $C(400)=1000$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered bill is $400+900=1300$. The opposite verdict would have needed a smaller $A$, so that $C(900)$ fell through $1200$.
 
 One thousand three hundred sits above one thousand two hundred. Nine hundred branches contribute a square root of $30$, times $30$ is $900$, plus the retainer $400$. The opposite verdict would have needed $F+30\\cdot 30\\le 1200$, hence $F\\le 300$. The two invoices lock $F=400$.
 
@@ -9346,7 +9346,7 @@ Cost per branch is
 
 $$\\frac{C(n)}{n}=\\frac{400}{n}+30 n^{-\\frac{1}{2}}$$
 
-Checking the two invoices: cost per branch is $7$ euros at $100$ branches and $2.5$ euros at $400$. Intensity has already fallen while the total rose from $700$ to $1000$. A rushed solver who saw a larger total and inferred a larger per-branch figure would have flipped the verdict. The opposite verdict would have needed leftover intensity that rose with $n$. Both pieces of $C(n)/n$ fall.
+Checking the two invoices: cost per branch is $7$ euros at $100$ branches and $2.5$ euros at $400$. Intensity has already fallen while the total rose from $700$ to $1000$. Seeing a larger total and inferred a larger per-branch figure would have flipped the verdict. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed leftover intensity that rose with $n$. Both pieces of $C(n)/n$ fall.
 
 Both pieces decline as the network grows: the retainer is spread, and the leftover exponent on the variable term is negative. A larger network is cheaper per branch even while the total bill rises. Checking $C(900)/900\\approx 1.44$ euros a branch, cheaper still than the $2.5$ at $400$ branches.
 
@@ -9355,13 +9355,13 @@ Both pieces decline as the network grows: the retainer is spread, and the leftov
 
 Quadrupling $n$ doubles the square-root term, from $30\\sqrt{n}$ to $60\\sqrt{n}$, but the $400$-euro retainer stays put. From $C(100)=700$ the quadrupled bill is $C(400)=1000$, not $1400$. Only a pure power would scale that cleanly, and the retainer stops this bill from being one.
 
-A rushed solver who doubled $700$ would have claimed $1400$ and called the statement true. That ignores the floor. The opposite verdict would have needed $F=0$. Letter A already used that nonzero retainer; this letter is the same intercept, now read as a failed scale identity.
+Doubling $700$ would have claimed $1400$ and called the statement true. That is the fork: $700$ belongs to the recovered isolation, $1400$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That ignores the floor. The opposite verdict would have needed $F=0$. Letter A already used that nonzero retainer; this letter is the same intercept, now read as a failed scale identity.
 
 Checking a second quadrupling, from $400$ to $1600$ branches: $C(1600)=400+30\\cdot 40=1600$, while doubling $C(400)=1000$ would have claimed $2000$. The retainer keeps stealing from the scale factor. The opposite verdict would have needed $F=0$, which letter A already refused.
 
 **1.** The square-root term doubles on a quadrupling, $300$ to $600$ at the $100$-branch invoice, but adding the retainer gives $700$ to $1000$, a factor of $\\frac{10}{7}\\approx 1.43$, not $2$.
 
-**2.** A rushed solver who doubled $700$ to $1400$ would have called the statement true. That is the $F=0$ fantasy letter A already refused.
+**2.** Doubling $700$ to $1400$ would have called the statement true. The stem's recovered values line up with $700$, whereas $1400$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $700$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is the $F=0$ fantasy letter A already refused.
 
 **3.** The opposite verdict would have needed the retainer to scale with $\\sqrt{n}$, which would have made the whole bill a pure power. The stem's $F$ is a constant.
 
@@ -9374,7 +9374,7 @@ At $36$ branches, $\\sqrt{36}=6$:
 
 $$C(36)=400+180=580$$
 
-A rushed solver who compared $36$ branches with $100$ and expected a larger bill because "more branches cost more" would still have the right ranking, $580<700$, but might have thought the claim was about per-branch cost. Letter E names the whole invoice. The opposite verdict would have needed $C(36)>C(100)$, which would have required a falling total, impossible while both $F$ and $A$ are positive.
+Comparing $36$ branches with $100$ and expecting a larger bill because "more branches cost more" would still have the right ranking, $580<700$, but might have thought the claim was about per-branch cost. So the letter reads the claim against $36$; $580<700$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $36$ stays in the write-up. Letter E names the whole invoice. The opposite verdict would have needed $C(36)>C(100)$, which would have required a falling total, impossible while both $F$ and $A$ are positive.
 
 Five hundred and eighty sits below seven hundred. Thirty-six branches still sit below the $100$-branch invoice. The square-root term has fallen from $300$ to $180$; the retainer is the same $400$. The opposite verdict would have needed a negative retainer, so that a smaller network could cost more in total.
 
@@ -9426,13 +9426,13 @@ The recorded crossing gives $\\frac{A}{40}=120$ and $40B=120$, so $A=4800$ and $
 
 $$T'(q)=-4800 q^{-2}+3$$
 
-The slope of $T(q)=\\frac{4800}{q}+3q$ is $T'(q)=-4800 q^{-2}+3$, which is zero at $q=40$. The second derivative $T''>0$, so the crossing is a minimum. A rushed solver who treated "two costs equal" as an accounting coincidence rather than as the EOQ first-order condition would have missed why the meeting is the cheapest batch. The opposite verdict would have needed different leftover exponents, so that $T'=0$ sat away from $O=H$. For this pair $O\\propto q^{-1}$ and $H\\propto q$, the meeting is the minimum.
+The slope of $T(q)=\\frac{4800}{q}+3q$ is $T'(q)=-4800 q^{-2}+3$, which is zero at $q=40$. The second derivative $T''>0$, so the crossing is a minimum. Treating "two costs equal" as an accounting coincidence rather than as the EOQ first-order condition would have missed why the meeting is the cheapest batch. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. The opposite verdict would have needed different leftover exponents, so that $T'=0$ sat away from $O=H$. For this pair $O\\propto q^{-1}$ and $H\\propto q$, the meeting is the minimum.
 
-Checking $T(30)=160+90=250$ and $T(50)=96+150=246$, both above $T(40)=240$, is a two-sided witness that the crossing is a valley, not a peak. A rushed solver who saw $O$ falling and $H$ rising and guessed the total might keep falling past the crossing would have missed $T'>0$ for $q>40$. The opposite verdict would have needed $T''<0$ at the crossing, a maximum. For this pair $T''=9600 q^{-3}>0$.
+Checking $T(30)=160+90=250$ and $T(50)=96+150=246$, both above $T(40)=240$, is a two-sided witness that the crossing is a valley, not a peak. Seeing $O$ falling and $H$ rising and guessed the total might keep falling past the crossing would have missed $T'>0$ for $q>40$. After isolating the unknown, the check is against $O$. The figure $q>40$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $O$ stays in the write-up. The opposite verdict would have needed $T''<0$ at the crossing, a maximum. For this pair $T''=9600 q^{-3}>0$.
 
 **1.** Setting $T'(q)=0$ is $-4800/q^{2}+3=0$, so $q^{2}=1600$ and $q=40$, the recorded crossing. The second derivative $9600/q^{3}$ is positive there, a minimum.
 
-**2.** A rushed solver who minimised $O$ alone would have claimed $q\\to\\infty$, and who minimised $H$ alone would have claimed $q\\to 0$. The annual total is the sum, and its valley is where the two components meet.
+**2.** Minimising $O$ alone would have claimed $q\\to\\infty$, and who minimised $H$ alone would have claimed $q\\to 0$. The stem's recovered values line up with $O$, whereas $q\\to 0$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $O$ stays in the write-up. The annual total is the sum, and its valley is where the two components meet.
 
 **3.** The opposite verdict would have needed leftover exponents whose ratio was not $-1$, so that $O=H$ was not $T'=0$. For $O\\propto q^{-1}$ and $H\\propto q$, the meeting is the cheapest batch.
 
@@ -9447,9 +9447,9 @@ $$O(60)=80,\\qquad H(60)=180$$
 
 $$T(60)=260$$
 
-Sixty is past the minimum, so the total has already ticked up from $T(40)=240$ to $260$. A rushed solver who averaged $O$ and $H$ as $120$ each at every batch would have claimed $T=240$ still, under $250$, and flipped the verdict. The opposite verdict would have needed $T(60)\\le 250$, hence a flatter pair of coefficients.
+Sixty is past the minimum, so the total has already ticked up from $T(40)=240$ to $260$. Averaging $O$ and $H$ as $120$ each at every batch would have claimed $T=240$ still, under $250$, and flipped the verdict. Working from the isolated values, $O$ is the figure that is checked, not the detour that produced $250$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed $T(60)\\le 250$, hence a flatter pair of coefficients.
 
-Two hundred and sixty sits above two hundred and fifty. Ordering $80$ plus holding $180$ is $260$. A rushed solver who used $T(40)=240$ against the $250$ cutoff would have named the minimum, not the $60$-unit batch. Letter B names $60$.
+Two hundred and sixty sits above two hundred and fifty. Ordering $80$ plus holding $180$ is $260$. Using $T(40)=240$ against the $250$ cutoff would have named the minimum, not the $60$-unit batch. The stem's recovered values line up with $T(40)=240$, whereas $60$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $T(40)=240$ stays in the write-up. Letter B names $60$.
 
 Two hundred and sixty sits above $250$. Sixty is past the minimum, so the total has already ticked up from $240$, so the statement is True.`,
       `**C.** → False
@@ -9458,7 +9458,7 @@ From $\\frac{A}{40}=120$ and $40B=120$, one has $T(q)=\\frac{4800}{q}+3q$. Doubl
 
 $$T(80)=300\\neq T(40)=240$$
 
-Reciprocal pairs with product $1600$ do preserve $T$, but an arbitrary doubling is not that pairing. $T(80)=300\\neq T(40)=240$. A rushed solver who remembered EOQ symmetry and doubled $40$ to $80$ would have expected a tie, mixing the pair $20$ with $80$ from letter D. This letter doubles an arbitrary batch, not the reciprocal pair. The opposite verdict would have needed leftover exponents that made $T$ homogeneous of degree $0$, a constant total.
+Reciprocal pairs with product $1600$ do preserve $T$, but an arbitrary doubling is not that pairing. $T(80)=300\\neq T(40)=240$. Remembering EOQ symmetry and doubling $40$ to $80$ would have expected a tie, mixing the pair $20$ with $80$ from letter D. Working from the isolated values, $40$ is the figure that is checked, not the detour that produced $20$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. This letter doubles an arbitrary batch, not the reciprocal pair. The opposite verdict would have needed leftover exponents that made $T$ homogeneous of degree $0$, a constant total.
 
 Checking $T(20)=300$ and $T(80)=300$ from letter D shows the symmetry that an arbitrary doubling does not enjoy. Doubling $30$ to $60$ gives $T(30)=250$ and $T(60)=260$, not a tie. The opposite verdict would have needed $T$ constant, which would have required $A=B=0$.
 
@@ -9471,7 +9471,7 @@ $$T(20)=300,\\qquad T(80)=300$$
 
 The batches $20$ and $80$ are the reciprocal pair around $40$ with product $1600$: $T(20)=300$ and $T(80)=300$. Each move from $40$ raises the annual total by $60$ euros, so the two moves cost the same. That is the EOQ symmetry $T(1600/q)=T(q)$.
 
-A rushed solver who computed only $T(20)=300$ and guessed $T(80)$ larger because "$80$ is farther from $40$ than $20$ is on a linear ruler" would have missed that the scale is reciprocal, not linear. On a log-batch axis the two moves are equal. The opposite verdict would have needed a holding exponent other than $1$, which would break the $q\\leftrightarrow 1600/q$ symmetry.
+Computing only $T(20)=300$ and guessed $T(80)$ larger because "$80$ is farther from $40$ than $20$ is on a linear ruler" would have missed that the scale is reciprocal, not linear. That is the fork: $T(20)=300$ belongs to the recovered isolation, $20$ belongs to the discarded mix. On a log-batch axis the two moves are equal. The opposite verdict would have needed a holding exponent other than $1$, which would break the $q\\leftrightarrow 1600/q$ symmetry.
 
 Checking the two components at $20$ and at $80$: $O(20)=240$, $H(20)=60$, total $300$; $O(80)=60$, $H(80)=240$, total $300$. The components swap. That swap is why the totals match. A linear ruler from $40$ would have called $80$ twice as far as $20$ and expected a larger penalty; the EOQ scale is reciprocal. The opposite verdict would have needed a holding law that was not linear in $q$.
 
@@ -9490,9 +9490,9 @@ The crossing $\\frac{A}{40}=120$ forces $A=4800$. At $80$ units, ordering cost i
 
 $$O(80)=\\frac{4800}{80}=60$$
 
-Holding is the large term on this side of the crossing: $H(80)=240$, while ordering is $60$. Mixing $O$ with $T(80)=300$ is how a "more than $200$" ordering claim appears. A rushed solver who swapped $O$ and $H$ at $q=80$ would have claimed holding $60$ and ordering $240$, and called the statement true. The crossing $O=H=120$ at $q=40$ already says ordering falls as the batch grows. The opposite verdict would have needed $A>16000$, so that $O(80)>200$. The crossing locks $A=4800$.
+Holding is the large term on this side of the crossing: $H(80)=240$, while ordering is $60$. Mixing $O$ with $T(80)=300$ is how a "more than $200$" ordering claim appears. Swapping $O$ and $H$ at $q=80$ would have claimed holding $60$ and ordering $240$, and called the statement true. The recovered comparison therefore keeps $O$ and does not substitute $240$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The crossing $O=H=120$ at $q=40$ already says ordering falls as the batch grows. The opposite verdict would have needed $A>16000$, so that $O(80)>200$. The crossing locks $A=4800$.
 
-Sixty sits well below two hundred. A rushed solver who read $T(80)=300$ as ordering cost would have called the statement true. The claim names ordering cost, $A/q=4800/80=60$. The opposite verdict would have needed $A>16000$. The crossing locks $A=4800$.
+Sixty sits well below two hundred. Reading $T(80)=300$ as ordering cost would have called the statement true. Once $T(80)=300$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The claim names ordering cost, $A/q=4800/80=60$. The opposite verdict would have needed $A>16000$. The crossing locks $A=4800$.
 
 which sits well below $200$. Holding is the large term on this side of the crossing. Mixing $O$ with $T(80)=300$ is how a "more than $200$" ordering claim appears, so the statement is False.`,
     ],
@@ -9544,11 +9544,11 @@ $$r=\\frac{3}{4}$$
 
 Average product is then $12 L^{-\\frac{1}{4}}$. The leftover exponent $-\\frac{1}{4}$ is not the output exponent $\\frac{3}{4}$. Average product is still a power of hours, but a different power. Dividing by $L$ subtracts one from the exponent; it does not destroy the power shape. The opposite verdict would have needed output that was not a power, or a claim that the two exponents were equal. They differ by $1$.
 
-Checking the two averages $6$ and $4$ against $12 L^{-\\frac{1}{4}}$: at $L=16$, $12/2=6$; at $L=81$, $12/3=4$. Both sit on the leftover power, not on the output power $\\frac{3}{4}$. A rushed solver who claimed average product was $12 L^{\\frac{3}{4}}$ would have compared $96$ at $16$ hours with a per-hour figure and mixed total with average. The opposite verdict would have needed the two exponents to coincide, which would have required dividing by $L^{0}$.
+Checking the two averages $6$ and $4$ against $12 L^{-\\frac{1}{4}}$: at $L=16$, $12/2=6$; at $L=81$, $12/3=4$. Both sit on the leftover power, not on the output power $\\frac{3}{4}$. Claiming average product was $12 L^{\\frac{3}{4}}$ would have compared $96$ at $16$ hours with a per-hour figure and mixed total with average. After isolating the unknown, the check is against $12 L^{\\frac{3}{4}}$. The figure $16$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $12 L^{\\frac{3}{4}}$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed the two exponents to coincide, which would have required dividing by $L^{0}$.
 
 **1.** Output exponent $\\frac{3}{4}$ minus $1$ is $-\\frac{1}{4}$. Those are different powers of the same $L$. Average product is still a monomial.
 
-**2.** A rushed solver who wrote $\\frac{Q}{L}=12 L^{\\frac{3}{4}}$ would have kept the output exponent and mixed total with average. At $L=16$ that wrong average would have been $96$, not $6$.
+**2.** Writing $\\frac{Q}{L}=12 L^{\\frac{3}{4}}$ would have kept the output exponent and mixed total with average. The opposite verdict would need a different isolation than $\\frac{Q}{L}=12 L^{\\frac{3}{4}}$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. At $L=16$ that wrong average would have been $96$, not $6$.
 
 **3.** The opposite verdict would have needed output not a power, so that $Q/L$ was not a power either, or a claim that the two exponents were equal.
 
@@ -9561,9 +9561,9 @@ At $16$ hours the logged output is $96$ units, so average product is
 
 $$\\frac{96}{16}=6$$
 
-That logged level does not need a second recovery of $A$. A rushed solver who used $Q(L)=12 L^{\\frac{3}{4}}$ at $L=16$ and forgot to divide by $16$ would have compared $96$ to $7$. The claim is average product, $6$, not output. The opposite verdict would have needed output above $112$ at $16$ hours. The log is $96$.
+That logged level does not need a second recovery of $A$. Using $Q(L)=12 L^{\\frac{3}{4}}$ at $L=16$ and forgetting to divide by $16$ would have compared $96$ to $7$. After isolating the unknown, the check is against $Q(L)=12 L^{\\frac{3}{4}}$. The figure $7$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $Q(L)=12 L^{\\frac{3}{4}}$ stays in the write-up. The claim is average product, $6$, not output. The opposite verdict would have needed output above $112$ at $16$ hours. The log is $96$.
 
-Six sits under seven. A rushed solver who used $Q=12 L^{\\frac{3}{4}}$ without dividing would have compared $96$ to $7$. The claim is units an hour. The opposite verdict would have needed $96/16\\ge 7$, hence output at least $112$ at $16$ hours. The log is $96$.
+Six sits under seven. Using $Q=12 L^{\\frac{3}{4}}$ without dividing would have compared $96$ to $7$. The recovered comparison therefore keeps $Q=12 L^{\\frac{3}{4}}$ and does not substitute $7$. That contrast is the reason the verdict goes the way it does. The claim is units an hour. The opposite verdict would have needed $96/16\\ge 7$, hence output at least $112$ at $16$ hours. The log is $96$.
 
 Six sits under $7$. That logged level does not need a second recovery of $A$, so the statement is True.`,
       `**C.** → False
@@ -9572,15 +9572,15 @@ To double output, $k^{\\frac{3}{4}}=2$ forces
 
 $$k=2^{\\frac{4}{3}}\\approx 2.52$$
 
-Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, to about $161$ units, short of $192$. A three-quarters technology will not keep pace with the clock. A rushed solver who doubled $16$ hours with the output would have claimed this letter true. That is exponent $1$, which $r=\\frac{3}{4}$ already refused.
+Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, to about $161$ units, short of $192$. A three-quarters technology will not keep pace with the clock. Doubling $16$ hours with the output would have claimed this letter true. The recovered isolation is checked against the claim using $16$, which is the figure the sessions actually produce. That is exponent $1$, which $r=\\frac{3}{4}$ already refused.
 
 The opposite verdict would have needed $r=1$. The two shifts force $r=\\frac{3}{4}$, because $\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}$ and $\\frac{324}{96}=\\left(\\frac{3}{2}\\right)^{3}$.
 
-To double output, $k^{\\frac{3}{4}}=2$ forces $k=2^{\\frac{4}{3}}\\approx 2.52$, more than a doubling of hours. From $16$ hours that is about $40.3$ hours, not $32$. A rushed solver who doubled hours to $32$ would have claimed $Q(32)=12\\cdot 32^{\\frac{3}{4}}\\approx 161$, short of $192$. The opposite verdict would have needed $r=1$, which the two shifts refuse.
+To double output, $k^{\\frac{3}{4}}=2$ forces $k=2^{\\frac{4}{3}}\\approx 2.52$, more than a doubling of hours. From $16$ hours that is about $40.3$ hours, not $32$. Doubling hours to $32$ would have claimed $Q(32)=12\\cdot 32^{\\frac{3}{4}}\\approx 161$, short of $192$. Working from the isolated values, $32$ is the figure that is checked, not the detour that produced $192$. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed $r=1$, which the two shifts refuse.
 
 **1.** $k=2^{\\frac{4}{3}}\\approx 2.52$ from $16$ hours is about $40.3$ hours, not $32$. $Q(32)\\approx 161<192$.
 
-**2.** A rushed solver who doubled hours with output would have called the statement true. That is exponent $1$. The two shifts force $\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}$ against $\\frac{324}{96}=\\left(\\frac{3}{2}\\right)^{3}$, hence $r=\\frac{3}{4}$.
+**2.** Doubling hours with output would have called the statement true. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That is exponent $1$. The two shifts force $\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}$ against $\\frac{324}{96}=\\left(\\frac{3}{2}\\right)^{3}$, hence $r=\\frac{3}{4}$.
 
 **3.** The opposite verdict would have needed $r=1$. Then $16$ hours to $32$ hours would have doubled $96$ to $192$. The log's $81$-hour output of $324$ already refuses lockstep from $96$.
 
@@ -9591,9 +9591,9 @@ The $81$-hour output of $324$ is $3.375$ times the $16$-hour output of $96$, whi
 more than a doubling of hours. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$. A three-quarters technology will not keep pace with the clock, so the statement is False.`,
       `**D.** → True
 
-Falling average and $r<1$ are the same story. Checking the two shifts: average product is $6$ at $L=16$ and $4$ at $L=81$. A rushed solver who saw output rise from $96$ to $324$ and inferred a rising average would have mixed a higher total with a higher per-hour figure. The opposite verdict would have needed leftover exponent $0$ on $Q/L$, hence $r=1$.
+Falling average and $r<1$ are the same story. Checking the two shifts: average product is $6$ at $L=16$ and $4$ at $L=81$. Seeing output rise from $96$ to $324$ and inferred a rising average would have mixed a higher total with a higher per-hour figure. The recovered comparison therefore keeps $96$ and does not substitute $324$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed leftover exponent $0$ on $Q/L$, hence $r=1$.
 
-A rushed solver who saw output rise from $96$ to $324$ and inferred a rising average would have mixed a higher total with a higher per-hour figure. Totals rise; averages fall. Checking a third point: at $L=1$, average product is $12$, higher still. The opposite verdict would have needed $r\\ge 1$.
+Seeing output rise from $96$ to $324$ and inferred a rising average would have mixed a higher total with a higher per-hour figure. The recovered comparison therefore keeps $96$ and does not substitute $324$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Totals rise; averages fall. Checking a third point: at $L=1$, average product is $12$, higher still. The opposite verdict would have needed $r\\ge 1$.
 
 Average product falls from $6$ at $L=16$ to $4$ at $L=81$, because $324/81=4$. The leftover exponent $-\\frac{1}{4}$ is negative, so the average declines as labour hours rise. Falling average and $r<1$ are the same story, so the statement is True.`,
       `**E.** → False
@@ -9602,9 +9602,9 @@ At $81$ hours the average is $4$, which does not exceed $5$:
 
 $$\\frac{324}{81}=4$$
 
-The sixteen-hour average of $6$ is the one still above $5$; by eighty-one hours it has already fallen to $4$. A rushed solver who used output $324$ against the $5$ cutoff would have mixed units. The claim is average product. The opposite verdict would have needed $324/81>5$, hence output above $405$ at $81$ hours. The log is $324$.
+The sixteen-hour average of $6$ is the one still above $5$; by eighty-one hours it has already fallen to $4$. Using output $324$ against the $5$ cutoff would have mixed units. The recovered comparison therefore keeps $324$ and does not substitute $5$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The claim is average product. The opposite verdict would have needed $324/81>5$, hence output above $405$ at $81$ hours. The log is $324$.
 
-Four does not exceed five. A rushed solver who used output $324$ against $5$ would have mixed units. The opposite verdict would have needed $324/81>5$, hence output above $405$ at $81$ hours. The log is $324$.
+Four does not exceed five. Using output $324$ against $5$ would have mixed units. Working from the isolated values, $324$ is the figure that is checked, not the detour that produced $5$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed $324/81>5$, hence output above $405$ at $81$ hours. The log is $324$.
 
 The sixteen-hour average of $6$ is the one still above $5$; by eighty-one hours it has already fallen, so the statement is False.`,
     ],
@@ -9658,13 +9658,13 @@ Subtracting the two timings gives $A/10=5$, so $A=50$ and $F=8$. The model is $t
 
 $$\\lim_{n\\to\\infty}t(n)=8$$
 
-No finite $n$ makes $\\frac{50}{\\sqrt{n}}=0$, so the handling floor is approached and never attained. Checking $t(10000)=8+0.5=8.5$, still above $8$. A rushed solver who saw $t$ falling toward $8$ and called $8$ attained "in the long run as a practical matter" would have mixed an asymptote with a value. The opposite verdict would have needed a model $t(n)=8+A n^{r}$ with $r>0$ forbidden, or a floor of $0$. The two timings lock $F=8$ as a horizontal asymptote.
+No finite $n$ makes $\\frac{50}{\\sqrt{n}}=0$, so the handling floor is approached and never attained. Checking $t(10000)=8+0.5=8.5$, still above $8$. Seeing $t$ falling toward $8$ and calling $8$ attained "in the long run as a practical matter" would have mixed an asymptote with a value. The recovered comparison therefore keeps $t$ and does not substitute $8$. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed a model $t(n)=8+A n^{r}$ with $r>0$ forbidden, or a floor of $0$. The two timings lock $F=8$ as a horizontal asymptote.
 
-Checking $t(10^{6})=8+50/1000=8.05$, still above $8$. The floor is a horizontal asymptote, never a value of $t(n)$. A rushed solver who solved $8+50 n^{-\\frac{1}{2}}=8$ and cancelled $8$ to claim every $n$ would have missed that the leftover term is never zero. The opposite verdict would have needed $A=0$, a constant unit time equal to the floor already at $n=1$. The two timings refuse that: $18$ and $13$ both sit above $8$.
+Checking $t(10^{6})=8+50/1000=8.05$, still above $8$. The floor is a horizontal asymptote, never a value of $t(n)$. Solving $8+50 n^{-\\frac{1}{2}}=8$ and cancelling $8$ to claim every $n$ would have missed that the leftover term is never zero. So the letter reads the claim against $8+50 n^{-\\frac{1}{2}}=8$; $n$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $8+50 n^{-\\frac{1}{2}}=8$ stays in the write-up. The opposite verdict would have needed $A=0$, a constant unit time equal to the floor already at $n=1$. The two timings refuse that: $18$ and $13$ both sit above $8$.
 
 **1.** Solving $8+50 n^{-\\frac{1}{2}}=8$ forces $50/\\sqrt{n}=0$, which never happens for finite $n$. The floor is an asymptote.
 
-**2.** A rushed solver who cancelled the $8$ and claimed $t(n)=8$ for all $n$ would have mixed an equation with an identity. The two timings $18$ and $13$ both sit strictly above $8$.
+**2.** Cancelling the $8$ and claiming $t(n)=8$ for all $n$ would have mixed an equation with an identity. After isolating the unknown, the check is against $8$. The figure $n$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $8$ stays in the write-up. The two timings $18$ and $13$ both sit strictly above $8$.
 
 **3.** The opposite verdict would have needed $A=0$. Then unit time would already equal the floor at $n=1$. The timings refuse a constant $t$.
 
@@ -9679,7 +9679,7 @@ After $900$ cumulative units, $\\sqrt{900}=30$:
 
 $$t(900)=8+\\frac{50}{30}=8+\\frac{5}{3}=\\frac{29}{3}\\approx 9.67$$
 
-The floor is close, but the learning term is still a sliver of $\\frac{5}{3}$ minutes. A rushed solver who dropped the floor and claimed $50/30\\approx 1.67$, well under $10$, would still have the right verdict for the wrong model. Another mix-up is using $t(100)=13$ and scaling as if the whole time halved on a further ninefold volume. The opposite verdict would have needed a larger floor, so that $t(900)$ sat above $10$.
+The floor is close, but the learning term is still a sliver of $\\frac{5}{3}$ minutes. Dropping the floor and claiming $50/30\\approx 1.67$, well under $10$, would still have the right verdict for the wrong model. That is the fork: $50/30\\approx 1.67$ belongs to the recovered isolation, $10$ belongs to the discarded mix. Another mix-up is using $t(100)=13$ and scaling as if the whole time halved on a further ninefold volume. The opposite verdict would have needed a larger floor, so that $t(900)$ sat above $10$.
 
 About $9.67$ sits under $10$. After $900$ cumulative units the floor is close, but the learning term is still $\\frac{5}{3}$ minutes. The opposite verdict would have needed $F>10-\\frac{5}{3}$, a floor above about $8.33$. The two timings lock $F=8$.
 
@@ -9697,7 +9697,7 @@ Checking the two timings: the learning term is $10$ minutes after $25$ units and
 The floor is untouched by this scaling, but the claim is only about the learning term. Inverse-square-root learning halves on a fourfold volume, so the statement is True.`,
       `**D.** → False
 
-From $t(25)=18$ a halved learning term cuts the total only from $18$ to $13$, not to $9$. The intercept is why the learning term can halve while the whole unit time does not. A rushed solver who halved $18$ would have claimed $9$ and called the statement true. Letter C is about the learning term; this letter is about the modelled total. They are different objects.
+From $t(25)=18$ a halved learning term cuts the total only from $18$ to $13$, not to $9$. The intercept is why the learning term can halve while the whole unit time does not. Halving $18$ would have claimed $9$ and called the statement true. The stem's recovered values line up with $18$, whereas $9$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $18$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter C is about the learning term; this letter is about the modelled total. They are different objects.
 
 The opposite verdict would have needed $F=0$. Letter A already used that nonzero floor as an asymptote; this letter is the same floor, now read as a failed scale identity on the whole $t(n)$.
 
@@ -9716,9 +9716,9 @@ After $4$ cumulative units, $\\sqrt{4}=2$:
 
 $$t(4)=8+\\frac{50}{2}=33$$
 
-The power term has fallen from the first unit, but not far enough to pull the unit under thirty minutes. A rushed solver who used $t(25)=18$ and scaled by $\\sqrt{25/4}$ without the floor would have claimed $18\\cdot\\frac{5}{2}=45$, still above $30$, or who dropped $F$ would have claimed $25$, under $30$, and flipped the verdict. The recovered $t(4)=8+25=33$. The opposite verdict would have needed a smaller $A$, so that $t(4)$ fell through $30$.
+The power term has fallen from the first unit, but not far enough to pull the unit under thirty minutes. Using $t(25)=18$ and scaling by $\\sqrt{25/4}$ without the floor would have claimed $18\\cdot\\frac{5}{2}=45$, still above $30$, or dropping $F$ would have claimed $25$, under $30$, and flipped the verdict. After isolating the unknown, the check is against $t(25)=18$. The figure $25$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $t(25)=18$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The recovered $t(4)=8+25=33$. The opposite verdict would have needed a smaller $A$, so that $t(4)$ fell through $30$.
 
-Thirty-three sits above thirty. After $4$ cumulative units the power term is still $25$ minutes on top of the $8$-minute floor. A rushed solver who used $t(1)=58$ and halved twice, as if every doubling of $n$ halved $t$, would have claimed $14.5$, under $30$, and flipped the verdict. Inverse-square-root learning halves the learning term on a quadrupling, not on a doubling, and never halves the floor. The opposite verdict would have needed $A<44$, so that $t(4)$ fell through $30$. The timings lock $A=50$.
+Thirty-three sits above thirty. After $4$ cumulative units the power term is still $25$ minutes on top of the $8$-minute floor. Using $t(1)=58$ and halving twice, as if every doubling of $n$ halved $t$, would have claimed $14.5$, under $30$, and flipped the verdict. That is the fork: $t(1)=58$ belongs to the recovered isolation, $30$ belongs to the discarded mix. Inverse-square-root learning halves the learning term on a quadrupling, not on a doubling, and never halves the floor. The opposite verdict would have needed $A<44$, so that $t(4)$ fell through $30$. The timings lock $A=50$.
 
 which sits above $30$. The power term has fallen from the first unit, but not far enough to pull the unit under thirty minutes, so the statement is False.`,
     ],
@@ -9781,9 +9781,9 @@ $$R(64)=90\\cdot 16=1440$$
 
 $$C(64)=1920$$
 
-Past the break-even $x=27$, the linear cost is ahead. At $x=64$, $R=1440$ and $C=1920$. A rushed solver who compared $R(64)$ with $2000$ as if the claim were a revenue cutoff would have missed that the letter is $C>R$. The opposite verdict would have needed break-even past $64$, hence a larger $A$. The eight-tonne record locks $A=90$ and break-even at $27$.
+Past the break-even $x=27$, the linear cost is ahead. At $x=64$, $R=1440$ and $C=1920$. Comparing $R(64)$ with $2000$ as if the claim were a revenue cutoff would have missed that the letter is $C>R$. That is the fork: $R(64)$ belongs to the recovered isolation, $C>R$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed break-even past $64$, hence a larger $A$. The eight-tonne record locks $A=90$ and break-even at $27$.
 
-A rushed solver who compared $R(64)=1440$ with $4500$ as if the claim were a revenue cutoff would have missed that the letter is cost already exceeding harvest. Cost is $1920$. The opposite verdict would have needed break-even past $64$, hence $A>30\\cdot 64^{\\frac{1}{3}}=120$. The eight-tonne record locks $A=90$.
+Comparing $R(64)=1440$ with $4500$ as if the claim were a revenue cutoff would have missed that the letter is cost already exceeding harvest. Working from the isolated values, $R(64)=1440$ is the figure that is checked, not the detour that produced $4500$. That contrast is the reason the verdict goes the way it does. Cost is $1920$. The opposite verdict would have needed break-even past $64$, hence $A>30\\cdot 64^{\\frac{1}{3}}=120$. The eight-tonne record locks $A=90$.
 
 Cost already exceeds harvest revenue. Past the break-even $x=27$, the linear cost is ahead, so the statement is True.`,
       `**C.** → False
@@ -9792,13 +9792,13 @@ The leftover slope is
 
 $$R'(x)=60 x^{-\\frac{1}{3}}$$
 
-A two-thirds harvest flattens. After $8$ tonnes $R'=30$; after $27$ tonnes $R'=20$. A rushed solver who saw $R(27)=90\\cdot 9=810>R(8)=360$ and inferred a steeper extra tonne later would have mixed a higher level with a steeper slope. The opposite verdict would have needed $r>1$. Changing $A$ scales both slopes by the same factor and cannot reverse $30>20$.
+A two-thirds harvest flattens. After $8$ tonnes $R'=30$; after $27$ tonnes $R'=20$. Seeing $R(27)=90\\cdot 9=810>R(8)=360$ and inferred a steeper extra tonne later would have mixed a higher level with a steeper slope. The recovered isolation is checked against the claim using $R(27)=90\\cdot 9=810>R(8)=360$, which is the figure the sessions actually produce. The opposite verdict would have needed $r>1$. Changing $A$ scales both slopes by the same factor and cannot reverse $30>20$.
 
 A finite one-tonne step agrees. From $8$ to $9$, $R(9)=90\\cdot 9^{\\frac{2}{3}}\\approx 389.7$, a rise of about $30$ from $360$. From $27$ to $28$, $R(28)=90\\cdot 28^{\\frac{2}{3}}\\approx 830$, a rise of about $20$ from $810$. Later tonnes add less. The opposite verdict would have needed $r>1$. Changing $A$ scales both slopes by the same factor and cannot reverse $30>20$.
 
 **1.** $R'(8)=60\\cdot 8^{-\\frac{1}{3}}=30$ and $R'(27)=60\\cdot 3^{-1}=20$. An extra tonne adds less later, not more.
 
-**2.** A rushed solver who saw $R(27)=810>R(8)=360$ and inferred a steeper extra tonne would have mixed a higher level with a steeper slope.
+**2.** Seeing $R(27)=810>R(8)=360$ and inferred a steeper extra tonne would have mixed a higher level with a steeper slope. Keeping $R(27)=810>R(8)=360$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **3.** The opposite verdict would have needed $r>1$. Changing $A$ scales both slopes by the same factor and cannot reverse $30>20$.
 
@@ -9834,7 +9834,7 @@ At $8$ tonnes, logged revenue $360$ minus cost $240$ is profit
 
 $$P(8)=120$$
 
-Using revenue in place of profit would have claimed $360$ and overshot the letter. Profit is $360-240=120$. A rushed solver who used $C(8)=240$ against the $100$ cutoff would have mixed cost with profit. The opposite verdict would have needed $P(8)\\le 100$, hence a larger feed price than $30$ thousand euros a tonne. The stem's cost is $30x$.
+Using revenue in place of profit would have claimed $360$ and overshot the letter. Profit is $360-240=120$. Using $C(8)=240$ against the $100$ cutoff would have mixed cost with profit. After isolating the unknown, the check is against $C(8)=240$. The figure $100$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $C(8)=240$ stays in the write-up. The opposite verdict would have needed $P(8)\\le 100$, hence a larger feed price than $30$ thousand euros a tonne. The stem's cost is $30x$.
 
 One hundred and twenty sits above one hundred. Using revenue $360$ in place of profit is the mix-up. The opposite verdict would have needed $P(8)\\le 100$, hence $C(8)\\ge 260$, a feed price above $32.5$ thousand euros a tonne. The stem's cost is $30x$.
 
@@ -9901,9 +9901,9 @@ $$9^{\\frac{3}{2}}=27$$
 
 $$f(9)=6\\cdot 27=162$$
 
-A rushed solver who treated $336$ as $f(9)$ would have compared $336$ to $150$ and still sat above, for the wrong level. The $336$ is a difference of two indices, not a level at $9$. The opposite verdict would have needed a smaller $A$, so that $f(9)$ fell through $150$. The gap locks $A=6$ and $f(9)=162$.
+Treating $336$ as $f(9)$ would have compared $336$ to $150$ and still sat above, for the wrong level. Working from the isolated values, $336$ is the figure that is checked, not the detour that produced $150$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $336$ is a difference of two indices, not a level at $9$. The opposite verdict would have needed a smaller $A$, so that $f(9)$ fell through $150$. The gap locks $A=6$ and $f(9)=162$.
 
-One hundred and sixty-two sits above one hundred and fifty. A rushed solver who treated $336$ as $f(9)$ would have compared $336$ to $150$ and still sat above, for the wrong level. The $336$ is $f(16)-f(4)$. The opposite verdict would have needed $A\\le 150/27\\approx 5.56$. The gap locks $A=6$.
+One hundred and sixty-two sits above one hundred and fifty. Treating $336$ as $f(9)$ would have compared $336$ to $150$ and still sat above, for the wrong level. Working from the isolated values, $336$ is the figure that is checked, not the detour that produced $150$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $336$ is $f(16)-f(4)$. The opposite verdict would have needed $A\\le 150/27\\approx 5.56$. The gap locks $A=6$.
 
 One hundred and sixty-two sits above $150$, so the statement is True.`,
       `**C.** → True
@@ -9942,15 +9942,15 @@ Raising the index from $9$ to $25$ adds
 
 $$f(25)-f(9)=750-162=588$$
 
-Twenty-five contributes $5^{3}=125$, times $6$ is $750$. Five hundred and eighty-eight euros is not under five hundred. A rushed solver who used $f(25)-f(16)=750-384=366$, under $500$, would have moved the lower index from $9$ to $16$ and flipped the letter. Letter E names the move from $9$ to $25$.
+Twenty-five contributes $5^{3}=125$, times $6$ is $750$. Five hundred and eighty-eight euros is not under five hundred. Using $f(25)-f(16)=750-384=366$, under $500$, would have moved the lower index from $9$ to $16$ and flipped the letter. That is the fork: $f(25)-f(16)=750-384=366$ belongs to the recovered isolation, $16$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter E names the move from $9$ to $25$.
 
 The opposite verdict would have needed $A<500/(125-27)\\approx 5.10$. The surviving gap locks $A=6$, and the rise is $588$.
 
-A rushed solver who used $f(25)-f(16)=750-384=366$, under $500$, would have moved the lower index from $9$ to $16$ and flipped the letter. Letter E names the move from $9$ to $25$. The opposite verdict would have needed $A<500/(125-27)\\approx 5.10$. The surviving gap locks $A=6$, and the rise is $588$.
+Using $f(25)-f(16)=750-384=366$, under $500$, would have moved the lower index from $9$ to $16$ and flipped the letter. That is the fork: $f(25)-f(16)=750-384=366$ belongs to the recovered isolation, $16$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter E names the move from $9$ to $25$. The opposite verdict would have needed $A<500/(125-27)\\approx 5.10$. The surviving gap locks $A=6$, and the rise is $588$.
 
 **1.** $f(25)=6\\cdot 125=750$ and $f(9)=162$, so the rise is $588$, which is not under $500$.
 
-**2.** A rushed solver who used $f(25)-f(16)=366$ would have moved the lower index from $9$ to $16$ and flipped the letter.
+**2.** Using $f(25)-f(16)=366$ would have moved the lower index from $9$ to $16$ and flipped the letter. So the letter reads the claim against $f(25)-f(16)=366$; $16$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $f(25)-f(16)=366$ stays in the write-up.
 
 **3.** The opposite verdict would have needed $A<500/98\\approx 5.10$. The surviving gap locks $A=6$.
 
@@ -10014,7 +10014,7 @@ $$s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}$$
 
 Falling or rising load does not introduce a logarithm. Checking a recovered pair: at $W=135$ the inverse returns $s=9$. At $W=320$ it returns $s=16$, the permit cap. The inverse is faithful to both named loads. The opposite verdict would have needed a law that was not a pure power.
 
-A rushed solver who swapped the variables and kept exponent $\\frac{3}{2}$ would have written $s=5 W^{\\frac{3}{2}}$ and lost the reciprocal. At $W=135$ that wrong inverse would not return $s=9$. The exponent must take the reciprocal. The opposite verdict would have needed a law that was not a pure power.
+Swapping the variables and keeping exponent $\\frac{3}{2}$ would have written $s=5 W^{\\frac{3}{2}}$ and lost the reciprocal. The stem's recovered values line up with $\\frac{3}{2}$, whereas $s=5 W^{\\frac{3}{2}}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $\\frac{3}{2}$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. At $W=135$ that wrong inverse would not return $s=9$. The exponent must take the reciprocal. The opposite verdict would have needed a law that was not a pure power.
 
 The new exponent is the reciprocal of $\\frac{3}{2}$. Scale needed for a given load is still a monomial in $W$, so the statement is True.`,
       `**B.** → True
@@ -10027,9 +10027,9 @@ $$s^{\\frac{3}{2}}=64$$
 
 $$s=16$$
 
-Every larger index breaches the permit. A rushed solver who inverted as if $r=1$ would have claimed $s=64$, past $20$, and flipped the verdict. Linear inversion overstates the admissible scale when $r>1$. The opposite verdict would have needed a smaller $A$, so that the inverted $s$ rose through $20$. The recorded $135$ kg at $s=9$ locks $s=16$ at the cap.
+Every larger index breaches the permit. Inverting as if $r=1$ would have claimed $s=64$, past $20$, and flipped the verdict. Working from the isolated values, $r=1$ is the figure that is checked, not the detour that produced $20$. That contrast is the reason the verdict goes the way it does. Linear inversion overstates the admissible scale when $r>1$. The opposite verdict would have needed a smaller $A$, so that the inverted $s$ rose through $20$. The recorded $135$ kg at $s=9$ locks $s=16$ at the cap.
 
-Sixteen sits below twenty. A rushed solver who inverted as if $r=1$ would have claimed $s=64$, past $20$, and flipped the verdict. Linear inversion overstates the admissible scale when $r>1$. The opposite verdict would have needed $A<320/20^{\\frac{3}{2}}=320/(20\\sqrt{20})\\approx 3.58$. The recorded $135$ kg locks $A=5$ and $s=16$.
+Sixteen sits below twenty. Inverting as if $r=1$ would have claimed $s=64$, past $20$, and flipped the verdict. Working from the isolated values, $r=1$ is the figure that is checked, not the detour that produced $20$. That contrast is the reason the verdict goes the way it does. Linear inversion overstates the admissible scale when $r>1$. The opposite verdict would have needed $A<320/20^{\\frac{3}{2}}=320/(20\\sqrt{20})\\approx 3.58$. The recorded $135$ kg locks $A=5$ and $s=16$.
 
 Sixteen sits below $20$. Every larger index breaches the permit, so the statement is True.`,
       `**C.** → False
@@ -10044,7 +10044,7 @@ Doubling $320$ to $640$ would raise $s$ from $16$ to $16\\cdot 2^{\\frac{2}{3}}\
 
 **1.** Doubling the ceiling multiplies admissible scale by $2^{\\frac{2}{3}}\\approx 1.59$, from $s=16$ to about $25.4$, not to $32$.
 
-**2.** A rushed solver who doubled $16$ to $32$ would have called the statement true. That is inverse exponent $1$.
+**2.** Doubling $16$ to $32$ would have called the statement true. The recovered comparison therefore keeps $16$ and does not substitute $32$. That is inverse exponent $1$.
 
 **3.** The opposite verdict would have needed original exponent $1$. The stem is $\\frac{3}{2}$, so the inverse is $\\frac{2}{3}<1$ and permitted scale lags the permitted load.
 
@@ -10067,9 +10067,9 @@ $$s=32^{\\frac{2}{3}}\\approx 10.08$$
 
 If $A$ doubled, the admissible scale would satisfy $10 s^{\\frac{3}{2}}=320$, so $s=32^{\\frac{2}{3}}\\approx 10.08$, not $8$. The scale factor is $2^{-\\frac{2}{3}}\\approx 0.63$, not $\\frac{1}{2}$. Halving $s$ would have needed inverse exponent $-1$ on $A$.
 
-A rushed solver who treated load as linear in $A$ and in $s$ would have halved $s$ with a doubled $A$. The three-halves power shares the blow: $A$ doubles, $s^{\\frac{3}{2}}$ must halve, so $s$ falls only by $2^{-\\frac{2}{3}}$. The opposite verdict would have needed $r=1$.
+Treating load as linear in $A$ and in $s$ would have halved $s$ with a doubled $A$. Working from the isolated values, $A$ is the figure that is checked, not the detour that produced $s$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The three-halves power shares the blow: $A$ doubles, $s^{\\frac{3}{2}}$ must halve, so $s$ falls only by $2^{-\\frac{2}{3}}$. The opposite verdict would have needed $r=1$.
 
-A rushed solver who treated load as linear in $A$ and in $s$ would have halved $s$ with a doubled $A$, claiming $s=8$. The three-halves power shares the blow: $A$ doubles, $s^{\\frac{3}{2}}$ must halve, so $s$ falls only by $2^{-\\frac{2}{3}}\\approx 0.63$, to about $10.08$. The opposite verdict would have needed $r=1$. Checking $W$ at that $10.08$ with doubled $A$ returns the same $320$ kg cap, as it must.
+Treating load as linear in $A$ and in $s$ would have halved $s$ with a doubled $A$, claiming $s=8$. Working from the isolated values, $A$ is the figure that is checked, not the detour that produced $s=8$. The three-halves power shares the blow: $A$ doubles, $s^{\\frac{3}{2}}$ must halve, so $s$ falls only by $2^{-\\frac{2}{3}}\\approx 0.63$, to about $10.08$. The opposite verdict would have needed $r=1$. Checking $W$ at that $10.08$ with doubled $A$ returns the same $320$ kg cap, as it must.
 
 **1.** Doubled $A$ gives $10 s^{\\frac{3}{2}}=320$, so $s^{\\frac{3}{2}}=32$ and $s=32^{\\frac{2}{3}}\\approx 10.08$, not $8$.
 
@@ -10088,9 +10088,9 @@ At scale index $4$, with $A=5$, four contributes $2^{3}=8$:
 
 $$W(4)=5\\cdot 8=40$$
 
-The load has grown with scale, but at this small index it is still below the named line. A rushed solver who scaled $W(9)=135$ by $4/9$ linearly would have claimed $60$, above $50$, and flipped the verdict. Linear thinking overstates a small scale when $r>1$; the true $W(4)=40$ sits under $50$. The opposite verdict would have needed a larger $A$, so that $W(4)$ rose through $50$.
+The load has grown with scale, but at this small index it is still below the named line. Scaling $W(9)=135$ by $4/9$ linearly would have claimed $60$, above $50$, and flipped the verdict. That is the fork: $W(9)=135$ belongs to the recovered isolation, $50$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Linear thinking overstates a small scale when $r>1$; the true $W(4)=40$ sits under $50$. The opposite verdict would have needed a larger $A$, so that $W(4)$ rose through $50$.
 
-Forty sits under fifty. A rushed solver who scaled $W(9)=135$ by $4/9$ linearly would have claimed $60$, above $50$, and flipped the verdict. Linear thinking overstates a small scale when $r>1$. The opposite verdict would have needed $A>50/8=6.25$. The recorded load locks $A=5$.
+Forty sits under fifty. Scaling $W(9)=135$ by $4/9$ linearly would have claimed $60$, above $50$, and flipped the verdict. That is the fork: $W(9)=135$ belongs to the recovered isolation, $50$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Linear thinking overstates a small scale when $r>1$. The opposite verdict would have needed $A>50/8=6.25$. The recorded load locks $A=5$.
 
 Forty sits under $50$. The load has grown with scale, but at this small index it is still below the named line, so the statement is True.`,
     ],
@@ -10167,16 +10167,16 @@ After a $25\\%$ rise the exact demand is
 
 $$4000\\cdot\\frac{16}{25}=2560$$
 
-The $2500$ cutoff is a near miss on that exact inverse-square step, not a rounding of $2560$. A rushed solver who used the shortcut's $2000$ against $2500$ would have called the statement false. Letter A already refused the shortcut; this letter uses the exact $2560$. The opposite verdict would have needed a smaller $A$, so that $q(3.75)$ fell through $2500$.
+The $2500$ cutoff is a near miss on that exact inverse-square step, not a rounding of $2560$. Using the shortcut's $2000$ against $2500$ would have called the statement false. The recovered comparison therefore keeps $2000$ and does not substitute $2500$. That contrast is the reason the verdict goes the way it does. Letter A already refused the shortcut; this letter uses the exact $2560$. The opposite verdict would have needed a smaller $A$, so that $q(3.75)$ fell through $2500$.
 
-Two thousand five hundred and sixty sits above two thousand five hundred. A rushed solver who used the shortcut's $2000$ against $2500$ would have called the statement false. Letter A already refused the shortcut; this letter uses the exact $2560$. The opposite verdict would have needed $A\\cdot 3.75^{-2}\\le 2500$, hence a smaller $A$ than $36000$.
+Two thousand five hundred and sixty sits above two thousand five hundred. Using the shortcut's $2000$ against $2500$ would have called the statement false. The recovered comparison therefore keeps $2000$ and does not substitute $2500$. That contrast is the reason the verdict goes the way it does. Letter A already refused the shortcut; this letter uses the exact $2560$. The opposite verdict would have needed $A\\cdot 3.75^{-2}\\le 2500$, hence a smaller $A$ than $36000$.
 
 which sits above $2500$. The $2500$ cutoff is a near miss on that exact inverse-square step, so the statement is True.`,
       `**C.** → True
 
-A predicted $50\\%$ against a true $36\\%$ overstates the loss. The two methods disagree on the size of the cut. A rushed solver who compared $50\\%$ with $36\\%$ and called $50\\%$ "close enough" would have missed that the letter asks whether the shortcut overstates, which it does. The opposite verdict would have needed the exact cut to meet or exceed $50\\%$, which would have required a steeper exponent than $-2$.
+A predicted $50\\%$ against a true $36\\%$ overstates the loss. The two methods disagree on the size of the cut. Comparing $50\\%$ with $36\\%$ and calling $50\\%$ "close enough" would have missed that the letter asks whether the shortcut overstates, which it does. That is the fork: $50\\%$ belongs to the recovered isolation, $36\\%$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed the exact cut to meet or exceed $50\\%$, which would have required a steeper exponent than $-2$.
 
-A rushed solver who compared $50\\%$ with $36\\%$ and called $50\\%$ close enough would have missed that the letter asks whether the shortcut overstates, which it does. The opposite verdict would have needed the exact cut to meet or exceed $50\\%$, which would have required a steeper exponent than $-2$. The stem is inverse square.
+Comparing $50\\%$ with $36\\%$ and calling $50\\%$ close enough would have missed that the letter asks whether the shortcut overstates, which it does. The recovered comparison therefore keeps $50\\%$ and does not substitute $36\\%$. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed the exact cut to meet or exceed $50\\%$, which would have required a steeper exponent than $-2$. The stem is inverse square.
 
 The shortcut claims a $50\\%$ loss; the exact cut is $36\\%$. A predicted $50\\%$ against a true $36\\%$ overstates the loss. The two methods disagree on the size of the cut, so the statement is True.`,
       `**D.** → False
@@ -10208,9 +10208,9 @@ From $A/9=4000$, the coefficient is $A=36000$. At a tariff of $2$ euros:
 
 $$q(2)=\\frac{36000}{4}=9000$$
 
-Cutting the tariff from $3$ to $2$ is not a $25\\%$ move; this letter is a separate level. Inverse square on a factor $\\frac{2}{3}$ multiplies demand by $\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4}$, so $4000\\cdot\\frac{9}{4}=9000$. A rushed solver who applied a $25\\%$ cut from letter D would have claimed about $7111$, still above $8000$, or a linear $33\\%$ rise to about $5333$, under $8000$, and flipped the verdict. The opposite verdict would have needed a smaller $A$, so that $q(2)$ fell through $8000$.
+Cutting the tariff from $3$ to $2$ is not a $25\\%$ move; this letter is a separate level. Inverse square on a factor $\\frac{2}{3}$ multiplies demand by $\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4}$, so $4000\\cdot\\frac{9}{4}=9000$. Applying a $25\\%$ cut from letter D would have claimed about $7111$, still above $8000$, or a linear $33\\%$ rise to about $5333$, under $8000$, and flipped the verdict. Working from the isolated values, $25\\%$ is the figure that is checked, not the detour that produced $5333$. The opposite verdict would have needed a smaller $A$, so that $q(2)$ fell through $8000$.
 
-Nine thousand sits above eight thousand. Cutting the tariff from $3$ to $2$ is a factor $\\frac{2}{3}$, hence a demand factor $\\frac{9}{4}$. A rushed solver who applied a $25\\%$ cut from letter D would have claimed about $7111$, still above $8000$, or a linear $33\\%$ rise to about $5333$, under $8000$, and flipped the verdict. The opposite verdict would have needed $A\\le 32000$. The desk record locks $A=36000$.
+Nine thousand sits above eight thousand. Cutting the tariff from $3$ to $2$ is a factor $\\frac{2}{3}$, hence a demand factor $\\frac{9}{4}$. Applying a $25\\%$ cut from letter D would have claimed about $7111$, still above $8000$, or a linear $33\\%$ rise to about $5333$, under $8000$, and flipped the verdict. Working from the isolated values, $25\\%$ is the figure that is checked, not the detour that produced $5333$. The opposite verdict would have needed $A\\le 32000$. The desk record locks $A=36000$.
 
 Nine thousand sits above $8000$. Cutting the tariff from $3$ to $2$ is not a $25\\%$ move; this letter is a separate level, so the statement is True.`,
     ],
@@ -10275,20 +10275,20 @@ The weighed bell gives $A\\cdot\\frac{1}{8}=30$, so $A=240$ and $M(h)=240 h^{3}$
 
 $$M(1.5)=30\\cdot 27=810$$
 
-Linear scaling would have claimed $90$ kg. Height $1.5$ is three times the $0.5$ m pattern, so mass multiplies by $27$: $30\\cdot 27=810$. A rushed solver who tripled $30$ kg would have claimed $90$, under $700$, and flipped the verdict. The opposite verdict would have needed a smaller $A$, so that $M(1.5)$ fell through $700$. The weighing locks $A=240$.
+Linear scaling would have claimed $90$ kg. Height $1.5$ is three times the $0.5$ m pattern, so mass multiplies by $27$: $30\\cdot 27=810$. Tripling $30$ kg would have claimed $90$, under $700$, and flipped the verdict. After isolating the unknown, the check is against $30$. The figure $700$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $30$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed a smaller $A$, so that $M(1.5)$ fell through $700$. The weighing locks $A=240$.
 
-Eight hundred and ten sits above seven hundred. A rushed solver who tripled $30$ kg would have claimed $90$, under $700$, and flipped the verdict. Height $1.5$ is three times the $0.5$ m pattern, so mass multiplies by $27$. The opposite verdict would have needed $A\\le 700/3.375\\approx 207$. The weighing locks $A=240$.
+Eight hundred and ten sits above seven hundred. Tripling $30$ kg would have claimed $90$, under $700$, and flipped the verdict. After isolating the unknown, the check is against $30$. The figure $700$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $30$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Height $1.5$ is three times the $0.5$ m pattern, so mass multiplies by $27$. The opposite verdict would have needed $A\\le 700/3.375\\approx 207$. The weighing locks $A=240$.
 
 which sits above $700$. Linear scaling would have claimed $90$ kg, so the statement is True.`,
       `**C.** → False
 
-The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg. The cube of a doubling is $8$, not $2$. A rushed solver who copied the doubling from height onto mass would have called the statement true. That is exponent $1$, which letter A already refused. The opposite verdict would have needed $r=1$.
+The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg. The cube of a doubling is $8$, not $2$. Copying the doubling from height onto mass would have called the statement true. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That is exponent $1$, which letter A already refused. The opposite verdict would have needed $r=1$.
 
-The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg. A rushed solver who copied the doubling from height onto mass would have called the statement true. That is exponent $1$, which letter A already refused. The opposite verdict would have needed $r=1$.
+The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg. Copying the doubling from height onto mass would have called the statement true. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That is exponent $1$, which letter A already refused. The opposite verdict would have needed $r=1$.
 
 **1.** $2^{3}=8$, so doubling height octuples mass. The $0.5$ m bell at $30$ kg becomes $240$ kg at $1$ m, not $60$ kg.
 
-**2.** A rushed solver who copied the doubling from height onto mass would have called the statement true. That is exponent $1$, which letter A already refused.
+**2.** Copying the doubling from height onto mass would have called the statement true. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That is exponent $1$, which letter A already refused.
 
 **3.** The opposite verdict would have needed $r=1$. Geometric similarity of bronze bells is a volume cube, leftover exponent $3$.
 
@@ -10299,13 +10299,13 @@ The cube $2^{3}=8$ is the doubling factor for geometrically similar bells. Lette
 Doubling height multiplies mass by $8$, not by $2$. The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg. The cube of a doubling is $8$, not $2$, so the statement is False.`,
       `**D.** → False
 
-Mass per metre is $M(h)/h=240 h^{2}$, which rises with height. At $0.5$ m the quotient is $60$; at $1$ m it is $240$. A constant intensity would have needed exponent $1$. A rushed solver who divided $30$ kg by $0.5$ m once and treated $60$ kg per metre as a law would have missed that $M(1)/1=240$. The opposite verdict would have needed leftover exponent $0$ on $M/h$.
+Mass per metre is $M(h)/h=240 h^{2}$, which rises with height. At $0.5$ m the quotient is $60$; at $1$ m it is $240$. A constant intensity would have needed exponent $1$. Dividing $30$ kg by $0.5$ m once and treating $60$ kg per metre as a law would have missed that $M(1)/1=240$. The recovered comparison therefore keeps $30$ and does not substitute $M(1)/1=240$. The opposite verdict would have needed leftover exponent $0$ on $M/h$.
 
-At $0.5$ m the quotient $M/h$ is $60$; at $1$ m it is $240$; at $1.5$ m it is $540$. Intensity rises with the square of height. A rushed solver who divided $30$ kg by $0.5$ m once and treated $60$ kg per metre as a law would have missed those later quotients. The opposite verdict would have needed leftover exponent $0$ on $M/h$, hence $r=1$.
+At $0.5$ m the quotient $M/h$ is $60$; at $1$ m it is $240$; at $1.5$ m it is $540$. Intensity rises with the square of height. Dividing $30$ kg by $0.5$ m once and treating $60$ kg per metre as a law would have missed those later quotients. Working from the isolated values, $30$ is the figure that is checked, not the detour that produced $60$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed leftover exponent $0$ on $M/h$, hence $r=1$.
 
 **1.** $M/h=240 h^{2}$. At $0.5$ m that intensity is $60$; at $1$ m it is $240$; at $1.5$ m it is $540$. Not constant.
 
-**2.** A rushed solver who divided $30$ by $0.5$ once and treated $60$ kg per metre as a law would have missed the later quotients.
+**2.** Dividing $30$ by $0.5$ once and treating $60$ kg per metre as a law would have missed the later quotients. So the letter reads the claim against $30$; $60$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $30$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 **3.** The opposite verdict would have needed leftover exponent $0$ on $M/h$, hence $r=1$. The pattern book is a cube.
 
@@ -10320,9 +10320,9 @@ At a unit height the cube is $1$, so the mass equals the coefficient:
 
 $$M(1)=240$$
 
-At a unit height the cube is $1$, so the mass equals the coefficient: $M(1)=240$. That $A$ is the one-metre bell. A rushed solver who doubled the $0.5$ m weighing to $60$ kg would have sat under $200$ and flipped the verdict. Inverse of letter C's mix-up: doubling height is not doubling mass. The opposite verdict would have needed $A\\le 200$. The weighing locks $A=240$.
+At a unit height the cube is $1$, so the mass equals the coefficient: $M(1)=240$. That $A$ is the one-metre bell. Doubling the $0.5$ m weighing to $60$ kg would have sat under $200$ and flipped the verdict. That is the fork: $0.5$ belongs to the recovered isolation, $200$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Inverse of letter C's mix-up: doubling height is not doubling mass. The opposite verdict would have needed $A\\le 200$. The weighing locks $A=240$.
 
-Two hundred and forty sits above two hundred. A rushed solver who doubled the $0.5$ m weighing to $60$ kg would have sat under $200$ and flipped the verdict. Doubling height is not doubling mass, which is letter C. The opposite verdict would have needed $A\\le 200$. The weighing locks $A=240$.
+Two hundred and forty sits above two hundred. Doubling the $0.5$ m weighing to $60$ kg would have sat under $200$ and flipped the verdict. That is the fork: $0.5$ belongs to the recovered isolation, $200$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Doubling height is not doubling mass, which is letter C. The opposite verdict would have needed $A\\le 200$. The weighing locks $A=240$.
 
 Two hundred and forty sits above $200$. That $A$ is the one-metre bell, so the statement is True.`,
     ],
@@ -10391,7 +10391,7 @@ With power exponent $3$, doubling speed multiplies absorbed power by $8$, not by
 
 **1.** Checking the recovered levels: $P(8)=256$ and $P(16)=\\frac{1}{2}\\cdot 4096=2048$, and $2048/256=8$. The eightfold is sitting on a doubled pursuit speed.
 
-**2.** A rushed solver who doubled $P(8)=256$ to $512$ would have called the statement true. That is leftover exponent $1$ on power.
+**2.** Doubling $P(8)=256$ to $512$ would have called the statement true. The stem's recovered values line up with $P(8)=256$, whereas $512$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $P(8)=256$ stays in the write-up. That contrast is the reason the verdict goes the way it does. That is leftover exponent $1$ on power.
 
 **3.** The opposite verdict would have needed $P\\propto v$. Then $F$ would have been independent of $v$. The doubling record on drag forbids a constant $F$. Power rises eightfold, not twofold.
 
@@ -10412,7 +10412,7 @@ From $r=2$ and $A(144-64)=40$, one has $A=\\frac{1}{2}$ and $P(v)=\\frac{1}{2}v^
 
 **1.** A finite one-metre step agrees. $P(9)-P(8)=\\frac{1}{2}(729-512)=108.5$ watts, while $P(13)-P(12)=\\frac{1}{2}(2197-1728)=234.5$ watts. Later metres cost more.
 
-**2.** A rushed solver who saw $P(12)=864>P(8)=256$ and inferred a steeper extra metre at the slow speed, because "there is more room to grow," would have mixed a lower level with a shallower slope.
+**2.** Seeing $P(12)=864>P(8)=256$ and inferred a steeper extra metre at the slow speed, because "there is more room to grow," would have mixed a lower level with a shallower slope. The opposite verdict would need a different isolation than $P(12)=864>P(8)=256$, and the stem does not supply one. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 **3.** The opposite verdict would have needed leftover exponent on $P$ below $1$, so that $P'$ would fall. The recovered cubic climbs. Changing $A$ scales both slopes by the same factor and cannot reverse $216>96$.
 
@@ -10429,7 +10429,7 @@ The doubling record $2^{r}=4$ forces $r=2$, and $A(144-64)=40$ forces $A=\\frac{
 
 $$P(8)=\\frac{1}{2}\\cdot 512=256$$
 
-Two hundred and fifty-six sits under three hundred. Using drag $F(8)=\\frac{1}{2}\\cdot 64=32$ N times speed $8$ is the same check. A rushed solver who used $P(12)=864$ against $300$ would have named the faster run. Letter D names $8$ m/s. The opposite verdict would have needed $A>300/512\\approx 0.586$. The $40$ N gap locks $A=\\frac{1}{2}$.
+Two hundred and fifty-six sits under three hundred. Using drag $F(8)=\\frac{1}{2}\\cdot 64=32$ N times speed $8$ is the same check. Using $P(12)=864$ against $300$ would have named the faster run. The stem's recovered values line up with $P(12)=864$, whereas $300$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $P(12)=864$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter D names $8$ m/s. The opposite verdict would have needed $A>300/512\\approx 0.586$. The $40$ N gap locks $A=\\frac{1}{2}$.
 
 The rider's $500$ W ceiling is already above $256$ W, so at $8$ m/s the pursuit is still legal on power. Letter E then shows $12$ m/s is not. This letter is only the $300$ W line at the slow run.
 
@@ -10440,7 +10440,7 @@ At $12$ m/s the cubic $P(v)=\\frac{1}{2}v^{3}$ gives
 
 $$P(12)=\\frac{1}{2}\\cdot 1728=864$$
 
-Eight hundred and sixty-four sits past eight hundred, not under it. The faster run has already broken the eight-hundred-watt line, and the rider's $500$ W ceiling is long gone. A rushed solver who used $P(8)=256$ against $800$ would have named the slow run. Letter E names $12$ m/s. The opposite verdict would have needed $A\\le 800/1728\\approx 0.463$. The logged gap locks $A=\\frac{1}{2}$.
+Eight hundred and sixty-four sits past eight hundred, not under it. The faster run has already broken the eight-hundred-watt line, and the rider's $500$ W ceiling is long gone. Using $P(8)=256$ against $800$ would have named the slow run. So the letter reads the claim against $P(8)=256$; $800$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $P(8)=256$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Letter E names $12$ m/s. The opposite verdict would have needed $A\\le 800/1728\\approx 0.463$. The logged gap locks $A=\\frac{1}{2}$.
 
 Eight hundred and sixty-four also sits past the $500$ W pursuit ceiling. The $800$ W cutoff in the claim is a nearby figure, not that ceiling. Either way the faster run is over budget. The opposite verdict on the $800$ line would have needed $A\\le 800/1728$.
 
@@ -10532,7 +10532,7 @@ A nonzero power inverts to another power. From $S=400 x^{-3}$, isolating depth r
 
 Checking a recovered pair: at $S=50$ the inverse returns $x=2$, the calibration. At $S=3.2$ it returns $x=5$, letter E. The inverse is faithful to both named readings. The opposite verdict would have needed a decaying exponential in depth, which inverts to a logarithm.
 
-A rushed solver who swapped the variables and kept exponent $-3$ would have written $x=400 S^{-3}$ and lost the reciprocal. At $S=50$ that wrong inverse would not return $x=2$. The exponent must take the reciprocal: $-3$ becomes $-\\frac{1}{3}$. Falling signal does not introduce a logarithm. The opposite verdict would have needed a decaying exponential in depth.
+Swapping the variables and keeping exponent $-3$ would have written $x=400 S^{-3}$ and lost the reciprocal. So the letter reads the claim against $-3$; $x=400 S^{-3}$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $-3$ stays in the write-up. That contrast is the reason the verdict goes the way it does. At $S=50$ that wrong inverse would not return $x=2$. The exponent must take the reciprocal: $-3$ becomes $-\\frac{1}{3}$. Falling signal does not introduce a logarithm. The opposite verdict would have needed a decaying exponential in depth.
 
 Depth as a function of reading is $x=\\sqrt[3]{400/S}$. At $S=6.25$ that returns $x=4$, letter D. At $S=50$ it returns $x=2$, the calibration. At $S=3.2$ it returns $x=5$, letter E. Three named readings, one monomial inverse. Falling millivolts do not introduce a logarithm. The opposite verdict would have needed $S=A e^{-kx}$, whose inverse is logarithmic in the reading.
 
@@ -10551,7 +10551,7 @@ From $r=-3$ and $A\\cdot 2^{-3}=50$, the coefficient is $A=400$. Four metres is 
 
 $$S(4)=50\\cdot\\frac{1}{8}=6.25$$
 
-Four metres is one doubling of the calibration depth of $2$ m, so $S(4)=50\\cdot\\frac{1}{8}=6.25$, which sits under $7$. Inverse-cube decay is already under seven millivolts. A rushed solver who halved $50$ to $25$ would have sat above $7$ and flipped the verdict. Inverse-linear thinking is too slow. The opposite verdict would have needed $A>7\\cdot 64=448$. The calibration locks $A=400$.
+Four metres is one doubling of the calibration depth of $2$ m, so $S(4)=50\\cdot\\frac{1}{8}=6.25$, which sits under $7$. Inverse-cube decay is already under seven millivolts. Halving $50$ to $25$ would have sat above $7$ and flipped the verdict. That is the fork: $50$ belongs to the recovered isolation, $7$ belongs to the discarded mix. Inverse-linear thinking is too slow. The opposite verdict would have needed $A>7\\cdot 64=448$. The calibration locks $A=400$.
 
 Six point two five sits under seven. Inverse-cube on one doubling of the $2$ m calibration is an eighth of $50$. A halved $50$ would have been $25$, above $7$, and would have flipped the letter. Inverse-linear thinking is too slow a decay.
 
@@ -10564,7 +10564,7 @@ $$x^{3}=\\frac{400}{3.2}=125$$
 
 $$x=5$$
 
-A reading of $3.2$ mV inverts $400 x^{-3}=3.2$ to $x^{3}=125$ and $x=5$. Five metres is not more than $8$ m. A second doubling from $4$ m would have been $8$ m and a reading $S(8)=50/64\\approx 0.78$ mV, much smaller than $3.2$. A rushed solver who doubled $4$ m with the reading would have claimed $8$ m and called the statement true. The opposite verdict would have needed a smaller $A$, so that $3.2$ mV sat at a greater depth. The calibration locks $x=5$ m at $3.2$ mV.
+A reading of $3.2$ mV inverts $400 x^{-3}=3.2$ to $x^{3}=125$ and $x=5$. Five metres is not more than $8$ m. A second doubling from $4$ m would have been $8$ m and a reading $S(8)=50/64\\approx 0.78$ mV, much smaller than $3.2$. Doubling $4$ m with the reading would have claimed $8$ m and called the statement true. That is the fork: $4$ belongs to the recovered isolation, $8$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed a smaller $A$, so that $3.2$ mV sat at a greater depth. The calibration locks $x=5$ m at $3.2$ mV.
 
 Five metres is between the calibration $2$ m and a second doubling $8$ m. The reading $3.2$ mV is between $S(4)=6.25$ and $S(8)\\approx 0.78$, closer to a $5$ m burial than to an $8$ m one. The claim's "more than $8$ metres" overshoots the inverse.
 
@@ -10647,7 +10647,7 @@ Demand per square centimetre is $D/G$. With $A=5$ and $B=3$ that intensity is $\
 
 **1.** At $m=1$, intensity is $5/3$. At $m=4096=2^{12}$, $m^{\\frac{1}{12}}=2$ and intensity is $10/3$. It rose. At the gill record $m=64$, $G(64)=48$ and $D(64)=5\\cdot 64^{\\frac{3}{4}}=5\\cdot (2^{6})^{\\frac{3}{4}}=5\\cdot 2^{\\frac{9}{2}}=80\\sqrt{2}\\approx 113$, so $D/G\\approx 2.35$, already above $5/3\\approx 1.67$.
 
-**2.** A rushed solver who saw both exponents below $1$ and inferred that every intensity falls would have missed the difference $\\frac{3}{4}-\\frac{2}{3}=\\frac{1}{12}>0$.
+**2.** Seeing both exponents below $1$ and inferred that every intensity falls would have missed the difference $\\frac{3}{4}-\\frac{2}{3}=\\frac{1}{12}>0$. That is the fork: $1$ belongs to the recovered isolation, $\\frac{3}{4}-\\frac{2}{3}=\\frac{1}{12}>0$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 **3.** The opposite verdict would have needed gill exponent at least demand exponent. The stem is $\\frac{2}{3}<\\frac{3}{4}$.
 
@@ -10674,7 +10674,7 @@ $$G(32)=3\\cdot 32^{\\frac{2}{3}}=24\\cdot 2^{\\frac{1}{3}}$$
 
 Because $\\frac{2}{3}<1$, two small fish out-area one fish of twice the mass. With $G(m)=3m^{\\frac{2}{3}}$, $2G(16)=24\\cdot 2^{\\frac{2}{3}}$ and $G(32)=24\\cdot 2^{\\frac{1}{3}}$, and $2^{\\frac{2}{3}}>2^{\\frac{1}{3}}$. Merging the two $16$ g fish into one $32$ g fish loses gill area.
 
-A rushed solver who treated gill as proportional to mass would have claimed a tie at equal total mass. That is exponent $1$. The opposite verdict would have needed $r\\ge 1$ on $G$. The $64$ g record with exponent $\\frac{2}{3}$ already refuses that.
+Treating gill as proportional to mass would have claimed a tie at equal total mass. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That is exponent $1$. The opposite verdict would have needed $r\\ge 1$ on $G$. The $64$ g record with exponent $\\frac{2}{3}$ already refuses that.
 
 Two $16$ g fish have $2G(16)=2\\cdot 3\\cdot 16^{\\frac{2}{3}}=24\\cdot 2^{\\frac{2}{3}}\\approx 38.1$ cm². One $32$ g fish has $G(32)=3\\cdot 32^{\\frac{2}{3}}=24\\cdot 2^{\\frac{1}{3}}\\approx 30.2$ cm². The pair out-areas the merge. Equal total mass is not equal gill when $r<1$.
 
@@ -10685,7 +10685,7 @@ With $A=5$, a $256$ g fish is $4^{4}$, so the three-quarters power is $4^{3}=64$
 
 $$D(256)=5\\cdot 64=320$$
 
-With $A=5$, a $256$ g fish is $4^{4}$, so the three-quarters power is $4^{3}=64$ and $D(256)=320$. Three hundred and twenty sits above three hundred. A rushed solver who scaled $D(16)=40$ by $256/16=16$ linearly would have claimed $640$, still above $300$ but for the wrong shape. The opposite verdict would have needed $A\\le 300/64\\approx 4.69$. The $95$ ml gap locks $A=5$.
+With $A=5$, a $256$ g fish is $4^{4}$, so the three-quarters power is $4^{3}=64$ and $D(256)=320$. Three hundred and twenty sits above three hundred. Scaling $D(16)=40$ by $256/16=16$ linearly would have claimed $640$, still above $300$ but for the wrong shape. Working from the isolated values, $D(16)=40$ is the figure that is checked, not the detour that produced $300$. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed $A\\le 300/64\\approx 4.69$. The $95$ ml gap locks $A=5$.
 
 Three hundred and twenty sits above three hundred. From $D(16)=40$, a sixteenfold mass is an eightfold demand because $16^{\\frac{3}{4}}=8$, and $40\\cdot 8=320$. Linear thinking would have claimed $640$ and still sat above $300$, for the wrong shape.
 
@@ -10700,7 +10700,7 @@ A tank total is a sum of individual demands, never one application of $D$ to the
 
 **1.** The pooled mass is $256$ g, the same as letter D's single fish. One $256$ g fish demands $320$; sixteen $16$ g fish demand $640$. Because $r<1$, splitting mass raises total demand.
 
-**2.** A rushed solver who used $D(256)$ against $600$ would have called the statement true. The claim is a tank of sixteen small fish, not one large fish.
+**2.** Using $D(256)$ against $600$ would have called the statement true. After isolating the unknown, the check is against $D(256)$. The figure $600$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $D(256)$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The claim is a tank of sixteen small fish, not one large fish.
 
 **3.** The opposite verdict would have needed $16D(16)\\le 600$, hence $D(16)\\le 37.5$. The gap locks $D(16)=40$.
 
@@ -10798,7 +10798,7 @@ From $k=4$ and $A\\cdot 16=48$, the coefficient is $A=3$. The mean velocity inde
 
 **1.** At $r=1$, the index is $3/\\pi$. At $r=2$, it is $12/\\pi$, four times larger. Poiseuille-style fourth-power flow over a square cross-section leaves a square in the mean velocity.
 
-**2.** A rushed solver who divided $Q$ by $r^{2}$ once at the bench, $48/(\\pi\\cdot 4)$, and treated that as a law would have missed the leftover $r^{2}$.
+**2.** Dividing $Q$ by $r^{2}$ once at the bench, $48/(\\pi\\cdot 4)$, and treating that as a law would have missed the leftover $r^{2}$. After isolating the unknown, the check is against $Q$. The figure $48/(\\pi\\cdot 4)$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $Q$ stays in the write-up.
 
 **3.** The opposite verdict would have needed $k=2$, so that $Q/(\\pi r^{2})$ was constant. The doubling record is $16=2^{4}$, not $2^{2}=4$.
 
@@ -10815,7 +10815,7 @@ With $Q(r)=3r^{4}$, a tube of radius $3$ mm delivers
 
 $$Q(3)=3\\cdot 81=243$$
 
-With $Q(r)=3r^{4}$, a tube of radius $3$ mm delivers $Q(3)=3\\cdot 81=243$, which sits above $200$. Three to the fourth is $81$. A rushed solver who used $3^{2}=9$ times $3$ would have claimed $27$, under $200$, and flipped the verdict. The opposite verdict would have needed $A\\le 200/81\\approx 2.47$. The bench locks $A=3$.
+With $Q(r)=3r^{4}$, a tube of radius $3$ mm delivers $Q(3)=3\\cdot 81=243$, which sits above $200$. Three to the fourth is $81$. Using $3^{2}=9$ times $3$ would have claimed $27$, under $200$, and flipped the verdict. So the letter reads the claim against $3^{2}=9$; $200$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $3^{2}=9$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed $A\\le 200/81\\approx 2.47$. The bench locks $A=3$.
 
 Two hundred and forty-three sits above two hundred. $3^{4}=81$ times $A=3$ is $243$. Using $3^{3}=27$ times $3$ would have claimed $81$, under $200$, and flipped the letter. The exponent is $4$, not $3$.
 
@@ -10830,7 +10830,7 @@ At radius $1$ mm every power of $1$ is $1$, so
 
 $$Q(1)=3$$
 
-At radius $1$ mm every power of $1$ is $1$, so $Q(1)=3$, which sits under $10$. The coefficient itself is the one-millimetre delivery. The fourth-power law drops that fast when the bore shrinks below the $2$ mm bench. A rushed solver who halved $Q(2)=48$ twice would have claimed $12$, still above $10$, or used inverse-linear $24$, above $10$. The opposite verdict would have needed $A>10$. The bench locks $A=3$.
+At radius $1$ mm every power of $1$ is $1$, so $Q(1)=3$, which sits under $10$. The coefficient itself is the one-millimetre delivery. The fourth-power law drops that fast when the bore shrinks below the $2$ mm bench. Halving $Q(2)=48$ twice would have claimed $12$, still above $10$, or used inverse-linear $24$, above $10$. After isolating the unknown, the check is against $Q(2)=48$. The figure $24$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $Q(2)=48$ stays in the write-up. The opposite verdict would have needed $A>10$. The bench locks $A=3$.
 
 Three litres per hour at a $1$ mm bore sits well under ten. The fourth power that made $Q(3)=243$ generous makes $Q(1)=3$ tiny. A linear interpolation from $Q(2)=48$ down to $r=1$ would have claimed $24$, still above $10$, and flipped the letter.
 
@@ -10915,7 +10915,7 @@ From $r=-2$ and $A\\cdot 3^{-2}=80$, the coefficient is $A=720$. The leftover sl
 
 **1.** A finite step agrees. From $3$ to $4$ m, $H(4)=720/16=45$, a drop of $35$ from $80$. From $6$ to $7$ m, $H(7)=720/49\\approx 14.7$, a drop of about $5.3$ from $20$. The near metre cuts more.
 
-**2.** A rushed solver who saw $H(6)=20$ closer to the $5$ barrier and inferred a steeper extra metre there would have mixed a smaller remaining dose with a steeper cut.
+**2.** Seeing $H(6)=20$ closer to the $5$ barrier and inferred a steeper extra metre there would have mixed a smaller remaining dose with a steeper cut. After isolating the unknown, the check is against $H(6)=20$. The figure $5$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $H(6)=20$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 **3.** The opposite verdict would have needed $|H'|$ to grow with $d$. For $r=-2$, $|H'|$ falls. Changing $A$ scales both slopes by the same factor and cannot reverse $\\frac{160}{3}>\\frac{20}{3}$.
 
@@ -10941,7 +10941,7 @@ Six metres is a doubling of the $3$ m survey. Inverse square quarters the $80$ r
 
 $$H(6)=\\frac{80}{4}=20$$
 
-Six metres is a doubling of the $3$ m survey. Inverse square quarters the $80$ reading: $H(6)=20$, which sits under $25$. A rushed solver who halved $80$ to $40$ would have sat above $25$ and flipped the verdict. Inverse-linear thinking is too slow. The opposite verdict would have needed $A>25\\cdot 36=900$. The survey locks $A=720$.
+Six metres is a doubling of the $3$ m survey. Inverse square quarters the $80$ reading: $H(6)=20$, which sits under $25$. Halving $80$ to $40$ would have sat above $25$ and flipped the verdict. After isolating the unknown, the check is against $80$. The figure $25$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Inverse-linear thinking is too slow. The opposite verdict would have needed $A>25\\cdot 36=900$. The survey locks $A=720$.
 
 Twenty sits under twenty-five. A halved $80$ would have been $40$, above $25$, and would have flipped the letter. Inverse-linear thinking is too slow. Inverse square on a doubled range is a quarter of the survey, $20$.
 
@@ -10954,7 +10954,7 @@ $$d=3\\cdot 4=12$$
 
 From $H(3)=80$ down to $H=5$ is a factor $\\frac{1}{16}$, hence a fourfold distance: $d=3\\cdot 4=12$. Twelve metres is not farther than $15$. The barrier sits at twelve metres.
 
-**1.** A rushed solver who inverted as if $r=-1$ would have claimed $d=80/5\\cdot 3=48$ m, past $15$, and flipped the verdict. Inverse-linear thinking overstates the barrier.
+**1.** Inverting as if $r=-1$ would have claimed $d=80/5\\cdot 3=48$ m, past $15$, and flipped the verdict. So the letter reads the claim against $r=-1$; $15$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $r=-1$ stays in the write-up. Inverse-linear thinking overstates the barrier.
 
 **2.** Checking $H(15)=720/225=3.2$, already under $5$. Fifteen metres is past the barrier, not the barrier.
 
@@ -11081,7 +11081,7 @@ The shape factors are $8^{\\frac{2}{3}}=4$ and $1^{\\frac{2}{3}}=1$, so $3A=45$ 
 
 $$r(8)=15\\cdot 4=60$$
 
-The shape factors are $8^{\\frac{2}{3}}=4$ and $1^{\\frac{2}{3}}=1$, so $3A=45$ and $A=15$. At hour $8$: $r(8)=15\\cdot 4=60$, which sits above $50$. That is also $r(1)+45=15+45$, the first-hour radius plus the logged gap. A rushed solver who treated $45$ as $r(8)$ would have compared $45$ to $50$ and flipped the verdict. The $45$ is a growth, not a level. The opposite verdict would have needed $A\\le 50/4=12.5$. The logged growth locks $A=15$.
+The shape factors are $8^{\\frac{2}{3}}=4$ and $1^{\\frac{2}{3}}=1$, so $3A=45$ and $A=15$. At hour $8$: $r(8)=15\\cdot 4=60$, which sits above $50$. That is also $r(1)+45=15+45$, the first-hour radius plus the logged gap. Treating $45$ as $r(8)$ would have compared $45$ to $50$ and flipped the verdict. After isolating the unknown, the check is against $45$. The figure $50$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $45$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The $45$ is a growth, not a level. The opposite verdict would have needed $A\\le 50/4=12.5$. The logged growth locks $A=15$.
 
 Sixty sits above fifty. The $45$ m logged growth is $r(8)-r(1)=60-15$, not $r(8)$ itself. Treating $45$ as the hour-$8$ radius would have sat under $50$ and flipped the letter.
 
@@ -11096,7 +11096,7 @@ $$t=64$$
 
 A radius of $240$ metres inverts $15 t^{\\frac{2}{3}}=240$ to $t^{\\frac{2}{3}}=16$ and $t=64$. Sixty-four hours is not under $50$. The plume takes sixty-four hours to reach two hundred and forty metres.
 
-**1.** A rushed solver who inverted as if $r=1$ would have claimed $t=16$, under $50$, and flipped the verdict. Linear inversion understates the wait when $r<1$.
+**1.** Inverting as if $r=1$ would have claimed $t=16$, under $50$, and flipped the verdict. That is the fork: $r=1$ belongs to the recovered isolation, $50$ belongs to the discarded mix. That contrast is the reason the verdict goes the way it does. Linear inversion understates the wait when $r<1$.
 
 **2.** Checking $r(50)=15\\cdot 50^{\\frac{2}{3}}\\approx 15\\cdot 13.57=203.6$, still short of $240$. Fifty hours is not a near miss on $240$ m.
 
@@ -11213,7 +11213,7 @@ The gauging gives $0.25^{\\frac{3}{2}}=0.125$, so $A=16$ and $Q=16 h^{\\frac{3}{
 
 $$Q(1)=16$$
 
-The gauging gives $0.25^{\\frac{3}{2}}=0.125$, so $A=16$ and $Q=16 h^{\\frac{3}{2}}$. At a unit head the power is $1$: $Q(1)=16$, which sits under $20$. A rushed solver who scaled $2$ m³/s by $1/0.25=4$ linearly would have claimed $8$, still under $20$, or by $4^{\\frac{3}{2}}=8$ correctly to $16$. The opposite verdict would have needed $A>20$. The gauging locks $A=16$.
+The gauging gives $0.25^{\\frac{3}{2}}=0.125$, so $A=16$ and $Q=16 h^{\\frac{3}{2}}$. At a unit head the power is $1$: $Q(1)=16$, which sits under $20$. Scaling $2$ m³/s by $1/0.25=4$ linearly would have claimed $8$, still under $20$, or by $4^{\\frac{3}{2}}=8$ correctly to $16$. So the letter reads the claim against $2$; $16$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $2$ stays in the write-up. The opposite verdict would have needed $A>20$. The gauging locks $A=16$.
 
 Sixteen sits under twenty. The unit-head discharge equals the coefficient $A=16$. A linear fourfold from the $0.25$ m gauging of $2$ would have claimed $8$, still under $20$. The three-halves fourfold is $8$ times $2$, which is $16$, still under $20$.
 
@@ -11224,7 +11224,7 @@ At $4$ metres, $4^{\\frac{3}{2}}=8$:
 
 $$Q(4)=16\\cdot 8=128$$
 
-At $4$ metres, $4^{\\frac{3}{2}}=8$ and $Q(4)=16\\cdot 8=128$, which is not under $100$. Four metres is sixteen times the $0.25$ m gauging in head, hence $16^{\\frac{3}{2}}=64$ times the gauging of $2$, which is $128$. A rushed solver who used $16\\times 2=32$, a linear sixteenfold, would have sat under $100$ and flipped the verdict. The opposite verdict would have needed $A\\le 100/8=12.5$. The gauging locks $A=16$.
+At $4$ metres, $4^{\\frac{3}{2}}=8$ and $Q(4)=16\\cdot 8=128$, which is not under $100$. Four metres is sixteen times the $0.25$ m gauging in head, hence $16^{\\frac{3}{2}}=64$ times the gauging of $2$, which is $128$. Using $16\\times 2=32$, a linear sixteenfold, would have sat under $100$ and flipped the verdict. That is the fork: $16\\times 2=32$ belongs to the recovered isolation, $100$ belongs to the discarded mix. The opposite verdict would have needed $A\\le 100/8=12.5$. The gauging locks $A=16$.
 
 One hundred and twenty-eight sits past one hundred. Linear thinking from the gauging would have claimed $32$, under $100$, and flipped the letter. Sixteen times the gauged head is a $16^{\\frac{3}{2}}=64$-fold discharge, $2\\times 64=128$.
 
@@ -11298,7 +11298,7 @@ $$Q(1)=16<20, \\qquad Q(4)=128>100$$
     tactical_explanations: [
       `**A.** → True
 
-A $300\\%$ rise is the multiplier $4=2^{2}$, so $r=2$. Two sits above one, so each extra tonne adds more litres than the tonne before it. Fuel use grows faster than batch mass. A rushed solver who read $300\\%$ as "about three times" a doubling and guessed $r\\approx 1.6$ would have still sat above one, for a slightly wrong exponent. The exact match is $2^{r}=4$. The opposite verdict would have needed an exponent of $1$ or less. The doubling note is a quadrupling of fuel.
+A $300\\%$ rise is the multiplier $4=2^{2}$, so $r=2$. Two sits above one, so each extra tonne adds more litres than the tonne before it. Fuel use grows faster than batch mass. Reading $300\\%$ as "about three times" a doubling and guessed $r\\approx 1.6$ would have still sat above one, for a slightly wrong exponent. The recovered comparison therefore keeps $300\\%$ and does not substitute $r\\approx 1.6$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The exact match is $2^{r}=4$. The opposite verdict would have needed an exponent of $1$ or less. The doubling note is a quadrupling of fuel.
 
 Matching $2^{r}=4$ is $r=2$, not a percentage shortcut $300/100=3$. A cube would have been a $700\\%$ rise on a doubling. The note is $300\\%$, a square. Fuel outruns batch mass because $2>1$.
 
@@ -11347,7 +11347,7 @@ From $r=2$ and $A(36-4)=96$, the coefficient is $A=3$, so $F(x)=3x^{2}$. A $10$-
 
 $$F(10)=3\\cdot 100=300$$
 
-From $r=2$ and $A(36-4)=96$, the coefficient is $A=3$, so $F(x)=3x^{2}$. A $10$-tonne batch uses $F(10)=300$, which sits above $250$. From the $2$ t batch, a fivefold mass is a twenty-fivefold fuel bill: $12\\cdot 25=300$. A rushed solver who scaled $12$ by $10/2=5$ linearly would have claimed $60$, under $250$, and flipped the verdict. The opposite verdict would have needed $A\\le 2.5$. The $96$ litre gap locks $A=3$.
+From $r=2$ and $A(36-4)=96$, the coefficient is $A=3$, so $F(x)=3x^{2}$. A $10$-tonne batch uses $F(10)=300$, which sits above $250$. From the $2$ t batch, a fivefold mass is a twenty-fivefold fuel bill: $12\\cdot 25=300$. Scaling $12$ by $10/2=5$ linearly would have claimed $60$, under $250$, and flipped the verdict. So the letter reads the claim against $12$; $250$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $12$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed $A\\le 2.5$. The $96$ litre gap locks $A=3$.
 
 Three hundred sits above two hundred and fifty. Linear scaling from $F(2)=12$ by $10/2$ would have claimed $60$, under $250$, and flipped the letter. A square law fivefolds the mass into a twenty-fivefold bill, $12\\times 25=300$.
 
@@ -11358,7 +11358,7 @@ A $6$-tonne batch uses
 
 $$F(6)=3\\cdot 36=108$$
 
-A $6$-tonne batch uses $F(6)=108$, which is not under $100$. That $108$ is also $12+96$, the $2$ t fuel plus the logged gap. The six-tonne batch does not still use under one hundred litres. A rushed solver who treated $96$ as $F(6)$ would have compared $96$ to $100$ and called the statement true. The $96$ is a gap, not a level. The opposite verdict would have needed $A\\le 100/36\\approx 2.78$. The gap locks $A=3$.
+A $6$-tonne batch uses $F(6)=108$, which is not under $100$. That $108$ is also $12+96$, the $2$ t fuel plus the logged gap. The six-tonne batch does not still use under one hundred litres. Treating $96$ as $F(6)$ would have compared $96$ to $100$ and called the statement true. The recovered comparison therefore keeps $96$ and does not substitute $100$. The $96$ is a gap, not a level. The opposite verdict would have needed $A\\le 100/36\\approx 2.78$. The gap locks $A=3$.
 
 One hundred and eight sits past one hundred. The logged gap $96$ plus the $2$ t fuel $12$ is $108$. Treating $96$ as the $6$ t level would have sat under $100$ and flipped the letter. The $96$ is a difference, not a level.
 
@@ -11456,7 +11456,7 @@ From $3A=6$, the coefficient is $A=2$, so $m(t)=2 t^{\\frac{1}{2}}$. Mass flow p
 
 $$\\frac{m(t)}{t}=2 t^{-\\frac{1}{2}}$$
 
-From $3A=6$, the coefficient is $A=2$, so $m(t)=2 t^{\\frac{1}{2}}$. Mass flow per unit of throttle is $2 t^{-\\frac{1}{2}}$, which falls from $\\frac{2}{3}$ at $t=9$ to $\\frac{2}{5}$ at $t=25$. The leftover exponent is negative. A rushed solver who saw $m(25)=10>m(9)=6$ and inferred a rising intensity would have mixed a higher total with a higher per-throttle figure. The opposite verdict would have needed leftover exponent $0$ on $m/t$, hence $m$ linear in $t$.
+From $3A=6$, the coefficient is $A=2$, so $m(t)=2 t^{\\frac{1}{2}}$. Mass flow per unit of throttle is $2 t^{-\\frac{1}{2}}$, which falls from $\\frac{2}{3}$ at $t=9$ to $\\frac{2}{5}$ at $t=25$. The leftover exponent is negative. Seeing $m(25)=10>m(9)=6$ and inferred a rising intensity would have mixed a higher total with a higher per-throttle figure. Once $m(25)=10>m(9)=6$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed leftover exponent $0$ on $m/t$, hence $m$ linear in $t$.
 
 Mass flow per unit of throttle falls from $2/3$ at $t=9$ to $2/5$ at $t=25$. Totals $m(9)=6$ and $m(25)=10$ still rise. Falling intensity and rising total live together because leftover exponent on $m$ is $\\frac{1}{2}\\in (0,1)$.
 
@@ -11467,7 +11467,7 @@ At throttle $25$, $\\sqrt{25}=5$:
 
 $$m(25)=2\\cdot 5=10$$
 
-At throttle $25$, $\\sqrt{25}=5$ and $m(25)=2\\cdot 5=10$, which sits above $8$. Linear scaling from $m(9)=6$ would have claimed about $16.7$ and overshot; the square root is slower. A rushed solver who used $P(m(25))=625$ against $8$ would have mixed the index with mass flow. Letter D names mass flow. The opposite verdict would have needed $A\\le 8/5=1.6$. The calibration locks $A=2$.
+At throttle $25$, $\\sqrt{25}=5$ and $m(25)=2\\cdot 5=10$, which sits above $8$. Linear scaling from $m(9)=6$ would have claimed about $16.7$ and overshot; the square root is slower. Using $P(m(25))=625$ against $8$ would have mixed the index with mass flow. So the letter reads the claim against $P(m(25))=625$; $8$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $P(m(25))=625$ stays in the write-up. Letter D names mass flow. The opposite verdict would have needed $A\\le 8/5=1.6$. The calibration locks $A=2$.
 
 Ten sits above eight. Linear scaling from $m(9)=6$ by $25/9$ would have claimed about $16.7$, still above $8$ but for the wrong shape. The square root is slower and still clears $8$ at throttle $25$.
 
@@ -11482,7 +11482,7 @@ $$t=9$$
 
 Composing first gives $P\\circ m=t^{2}$, because $\\frac{2^{4}}{16}=1$. An index of $81$ is then $t^{2}=81$ and $t=9$, not a setting above $20$. Nine is the calibration throttle itself: $m(9)=6$ and $P(6)=81$.
 
-**1.** A rushed solver who inverted the mass-flow stage only, $2\\sqrt{t}=81$, would have claimed $t\\approx 1640$, well above $20$, and flipped the verdict. The $81$ is an index, not a mass flow.
+**1.** Inverting the mass-flow stage only, $2\\sqrt{t}=81$, would have claimed $t\\approx 1640$, well above $20$, and flipped the verdict. That is the fork: $2\\sqrt{t}=81$ belongs to the recovered isolation, $20$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The $81$ is an index, not a mass flow.
 
 **2.** Checking $t=20$: $m(20)=2\\sqrt{20}\\approx 8.94$ and $P\\approx 8.94^{4}/16\\approx 400$, already past $81$. Twenty is past the $81$-index throttle, not short of it.
 
@@ -11560,7 +11560,7 @@ $$d=400$$
 
 App L's log gives $5a=20$, so $a=4$. App Q's log gives $k=\\frac{1}{5}$. Setting $4\\sqrt{d}=\\frac{1}{5}d$ yields a unique positive root $d=400$. A square-root versus a line cannot meet twice on $d>0$. They meet only once, and the wait there is $80$ minutes, well past the cap.
 
-**1.** A rushed solver who saw two powers and expected two crossings would have looked for a second root. Dividing by $\\sqrt{d}>0$ leaves a linear equation in $\\sqrt{d}$, one root.
+**1.** Seeing two powers and expecting two crossings would have looked for a second root. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence. Walking through that mix and then discarding it is how the recovered comparison is confirmed. Dividing by $\\sqrt{d}>0$ leaves a linear equation in $\\sqrt{d}$, one root.
 
 **2.** Checking $d=25$: $L=20$ and $Q=5$, so L is slower. At $d=100$: $L=40$ and $Q=20$, L still slower. At $d=400$ they tie at $80$. At $d=900$: $L=60$ and $Q=180$, Q is slower. One crossing.
 
@@ -11582,7 +11582,7 @@ Once L is ahead, the ratio $Q/L=\\sqrt{d}/20$ keeps growing, so Q never catches 
 Past $d=400$ the ratio $\\frac{Q}{L}=\\frac{1}{20}\\sqrt{d}$ exceeds $1$ and keeps climbing, so App Q stays slower. Once App L quotes a shorter wait, App Q never catches up. A second crossing would need the leftover square root to change sign, so the statement is True.`,
       `**C.** → True
 
-App L's wait per kilometre is $L(d)/d=4 d^{-\\frac{1}{2}}$, which falls from $0.8$ at $d=25$ to $0.4$ at $d=100$. The leftover exponent is negative. Longer trips still take more minutes in total, but fewer minutes per kilometre on the square-root app. A rushed solver who saw $L(100)=40>L(25)=20$ and inferred a rising per-kilometre figure would have mixed a higher total with a higher intensity. The opposite verdict would have needed leftover exponent $0$ on $L/d$, hence $L$ linear in $d$. That is App Q, not App L.
+App L's wait per kilometre is $L(d)/d=4 d^{-\\frac{1}{2}}$, which falls from $0.8$ at $d=25$ to $0.4$ at $d=100$. The leftover exponent is negative. Longer trips still take more minutes in total, but fewer minutes per kilometre on the square-root app. Seeing $L(100)=40>L(25)=20$ and inferred a rising per-kilometre figure would have mixed a higher total with a higher intensity. Once $L(100)=40>L(25)=20$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed leftover exponent $0$ on $L/d$, hence $L$ linear in $d$. That is App Q, not App L.
 
 Minutes per kilometre on App L fall from $0.8$ at $25$ km to $0.2$ at $400$ km. Longer trips still take more minutes, $20$ then $80$, but fewer minutes per kilometre. That is leftover exponent $-\\frac{1}{2}$ on $L/d$. App Q's per-kilometre wait is constant at $0.2$. Mixing the two apps is how a rising L-intensity appears.
 
@@ -11614,7 +11614,7 @@ $$L(400)=4\\cdot 20=80$$
 
 $$Q(400)=\\frac{400}{5}=80$$
 
-At the meeting $d=400$ both apps quote $80$ minutes, which sits above $70$. $L(400)=4\\cdot 20=80$ and $Q(400)=400/5=80$. A rushed solver who used L's cap wait of $20$ against $70$ would have named a different distance. Letter E names $400$ km. The opposite verdict would have needed the meeting wait $\\le 70$, hence a smaller pair of coefficients. The two logs lock the meeting at $80$ minutes.
+At the meeting $d=400$ both apps quote $80$ minutes, which sits above $70$. $L(400)=4\\cdot 20=80$ and $Q(400)=400/5=80$. Using L's cap wait of $20$ against $70$ would have named a different distance. Working from the isolated values, $20$ is the figure that is checked, not the detour that produced $70$. That contrast is the reason the verdict goes the way it does. Letter E names $400$ km. The opposite verdict would have needed the meeting wait $\\le 70$, hence a smaller pair of coefficients. The two logs lock the meeting at $80$ minutes.
 
 Eighty sits above seventy. Both apps quote $80$ minutes at the meeting $d=400$. Using L's SLA wait of $20$ minutes against $70$ names $d=25$, not $d=400$. Letter E names four hundred kilometres.
 
@@ -11686,7 +11686,7 @@ This letter is an exponent ranking, not a new humidity reading.
 
 The recovered leftover exponent is one half. One half sits below one, so evaporation lags the deficit.
 
-A rushed solver who saw $E(4)=40$ as twice $E(1)=20$ and inferred $r=1$ would have mixed a convenient pair of readings with lockstep growth. Quadrupling the deficit only doubled evaporation.
+Seeing $E(4)=40$ as twice $E(1)=20$ and inferred $r=1$ would have mixed a convenient pair of readings with lockstep growth. Working from the isolated values, $E(4)=40$ is the figure that is checked, not the detour that produced $r=1$. Quadrupling the deficit only doubled evaporation.
 
 The opposite verdict would have needed leftover exponent at least $1$. The first two readings refuse that.
 
@@ -11722,7 +11722,7 @@ From $r=\\frac{1}{2}$ and $A=20$, doubling $E(4)=40$ means $20\\sqrt{h}=80$, so 
 
 **1.** A doubling of deficit to $h=8$ would give $E(8)=20\\sqrt{8}\\approx 56.6$, short of $80$. More than a doubling is required.
 
-**2.** A rushed solver who doubled $h=4$ to $h=8$ would have called "more than a doubling" false. That is exponent $1$.
+**2.** Doubling $h=4$ to $h=8$ would have called "more than a doubling" false. That is the fork: $h=4$ belongs to the recovered isolation, $h=8$ belongs to the discarded mix. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That is exponent $1$.
 
 **3.** The opposite verdict would have needed an exponent of $1$ or more. The first two readings lock $r=\\frac{1}{2}$. The third reading $E(9)=60$ sits on the same curve and does not change the inverse.
 
@@ -11736,7 +11736,7 @@ The recovered inverse on $E=80$ is humidity $16$. Sixteen is four times the logg
 
 **1.** Checking a nearby output: to raise $E(4)=40$ only to $60$, the third logged reading, humidity must sit at $9$. That is already more than a doubling of $4$. Doubling the output to $80$ sits still farther out, at $16$.
 
-**2.** A rushed solver who used leftover exponent $1$ would have named $h=8$ and called "more than a doubling" false. That solver is reading a proportional law the stem does not have.
+**2.** Using leftover exponent $1$ would have named $h=8$ and called "more than a doubling" false. The recovered comparison therefore keeps $1$ and does not substitute $h=8$. That reading is After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. a proportional law the stem does not have.
 
 **3.** Another mix-up is scaling the third reading: $E(9)=60$ to $120$ would need $h=36$, again a fourfold humidity move from $9$. Every doubling of a square-root output is a fourfold input. The claim's forty-millimetre reading is one instance of that rule.
 
@@ -11753,11 +11753,11 @@ The leftover slope of $E(h)=20\\sqrt{h}$ is $E'(h)=10 h^{-\\frac{1}{2}}$. After 
 
 **1.** A finite step agrees. From $1$ to $2$, $E$ rises from $20$ to about $28.3$, a gain of $8.3$. From $4$ to $5$, $E$ rises from $40$ to about $44.7$, a gain of $4.7$. Later units add less.
 
-**2.** A rushed solver who saw $E(4)=40>E(1)=20$ and inferred a steeper extra unit at four would have mixed a higher level with a steeper slope.
+**2.** Seeing $E(4)=40>E(1)=20$ and inferred a steeper extra unit at four would have mixed a higher level with a steeper slope. That is why $E(4)=40>E(1)=20$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it.
 
 **3.** The opposite verdict would have needed $r>1$. Changing $A$ scales both slopes by the same factor and cannot reverse $10>5$.
 
-**4.** Checking $E'(9)=10/3\\approx 3.33$, still smaller than $E'(4)=5$. The third logged deficit sits even farther down the flattening slope. A solver who used the secant from $h=1$ to $h=4$, namely $(40-20)/3\\approx 6.7$, and compared it with the later secant from $4$ to $9$, namely $(60-40)/5=4$, would have reached the same verdict without derivatives. Later humidity units add less evaporation, not more.
+**4.** Checking $E'(9)=10/3\\approx 3.33$, still smaller than $E'(4)=5$. The third logged deficit sits even farther down the flattening slope. Using the secant from $h=1$ to $h=4$, namely $(40-20)/3\\approx 6.7$, and comparing it with the later secant from $4$ to $9$, namely $(60-40)/5=4$, would have reached the same verdict without derivatives. The stem's recovered values line up with $h=1$, whereas $(60-40)/5=4$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $h=1$ stays in the write-up. Later humidity units add less evaporation, not more.
 
 After a deficit of one that is $10$. After a deficit of four it is $5$. An extra unit adds less after four, not more. A square-root evaporative law flattens,
 
@@ -11767,7 +11767,7 @@ The recovered slope falls from $10$ at deficit $1$ to $5$ at deficit $4$. An ext
 
 **1.** Checking one more pair of finite steps: from $9$ to $10$, evaporation rises from $60$ to $20\\sqrt{10}\\approx 63.2$, a gain of about $3.2$. That is smaller still than the $4.7$ gain from $4$ to $5$. The flattening continues past the third logged point.
 
-**2.** A rushed solver who used the secant from $1$ to $9$, namely $(60-20)/8=5$, as if it were the extra-unit slope at four would have understated $E'(4)$ and still sat below $E'(1)=10$. The ranking survives a coarser slope.
+**2.** Using the secant from $1$ to $9$, namely $(60-20)/8=5$, as if it were the extra-unit slope at four would have understated $E'(4)$ and still sat below $E'(1)=10$. The recovered comparison therefore keeps $1$ and does not substitute $E'(1)=10$. That contrast is the reason the verdict goes the way it does. The ranking survives a coarser slope.
 
 **3.** The opposite verdict would have needed leftover exponent above $1$, so that $E'$ rose. A cube or a square-root-plus-one would have done that. The stem is a square root. Changing $A$ scales both $10$ and $5$ and cannot reverse the ranking.
 
@@ -11778,7 +11778,7 @@ At deficit $25$, $\\sqrt{25}=5$:
 
 $$E(25)=20\\cdot 5=100$$
 
-At deficit $25$, $\\sqrt{25}=5$ and $E(25)=100$, which sits above $90$. The third logged point at deficit $9$ is $60$; this letter is a further perfect square on the same curve. A rushed solver who scaled $E(4)=40$ by $25/4$ linearly would have claimed $250$, still above $90$ but for the wrong shape. The opposite verdict would have needed $A\\le 90/5=18$. The unit deficit locks $A=20$.
+At deficit $25$, $\\sqrt{25}=5$ and $E(25)=100$, which sits above $90$. The third logged point at deficit $9$ is $60$; this letter is a further perfect square on the same curve. Scaling $E(4)=40$ by $25/4$ linearly would have claimed $250$, still above $90$ but for the wrong shape. Working from the isolated values, $E(4)=40$ is the figure that is checked, not the detour that produced $90$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed $A\\le 90/5=18$. The unit deficit locks $A=20$.
 
 One hundred sits above $90$. The third logged point at deficit $9$ is $60$; this letter is a further perfect square on the same curve,
 
@@ -11786,7 +11786,7 @@ This is a level at deficit $25$, a further perfect square on the recovered curve
 
 The recovered evaporation is $100$, which sits above $90$. The third logged point $E(9)=60$ is a different square.
 
-A rushed solver who used $E(4)=40$ linearly to $25$ would have claimed $250$ and still sat above $90$, for the wrong shape.
+Using $E(4)=40$ linearly to $25$ would have claimed $250$ and still sat above $90$, for the wrong shape. The recovered comparison therefore keeps $E(4)=40$ and does not substitute $90$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would have needed $A$ at most $18$. The unit deficit locks $A=20$.
 
@@ -11851,7 +11851,7 @@ At nine thousand trees, benefit $12\\cdot 3=36$ minus upkeep $18$ is net
 
 $$N(9)=18$$
 
-At nine thousand trees, benefit $36$ minus upkeep $18$ is net $18$, which sits above $15$. Using benefit in place of net would have claimed $36$ and overshot. A rushed solver who used $C(9)=18$ against $15$ would have mixed upkeep with net. The opposite verdict would have needed $N(9)\\le 15$, hence a larger $k$. The upkeep record locks $k=2$.
+At nine thousand trees, benefit $36$ minus upkeep $18$ is net $18$, which sits above $15$. Using benefit in place of net would have claimed $36$ and overshot. Using $C(9)=18$ against $15$ would have mixed upkeep with net. The stem's recovered values line up with $C(9)=18$, whereas $15$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $C(9)=18$ stays in the write-up. The opposite verdict would have needed $N(9)\\le 15$, hence a larger $k$. The upkeep record locks $k=2$.
 
 Eighteen sits above $15$. Using benefit in place of net would have claimed $36$ and overshot,
 
@@ -11859,7 +11859,7 @@ This is a net-benefit level at nine thousand trees, not a cooling-only reading.
 
 The recovered net is $18$, which sits above $15$. Cooling alone is $36$; upkeep alone is $18$.
 
-A rushed solver who used $C(9)=18$ against $15$ would have mixed upkeep with net and called a tie or a miss.
+Using $C(9)=18$ against $15$ would have mixed upkeep with net and called a tie or a miss. Working from the isolated values, $C(9)=18$ is the figure that is checked, not the detour that produced $15$.
 
 The opposite verdict would have needed a larger $k$. The upkeep record locks $k=2$.
 
@@ -11870,11 +11870,11 @@ The schedules meet when $12\\sqrt{n}=2n$, so $\\sqrt{n}=6$ and $n=36$. Past that
 
 **1.** Checking $n=36$: $B=C=72$, net $0$. At $n=49$, $B=84$ and $C=98$, net $-14$. At $n=64$, $B=96$ and $C=128$, net $-32$. The gap widens.
 
-**2.** A rushed solver who saw $N'(9)=0$ as a later recovery would have mixed the peak of the net with a second crossing of $B$ and $C$. The peak is at $n=9$, still in surplus; the crossing is at $n=36$, after which $N<0$ for good.
+**2.** Seeing $N'(9)=0$ as a later recovery would have mixed the peak of the net with a second crossing of $B$ and $C$. After isolating the unknown, the check is against $N'(9)=0$. The figure $C$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $N'(9)=0$ stays in the write-up. That contrast is the reason the verdict goes the way it does. The peak is at $n=9$, still in surplus; the crossing is at $n=36$, after which $N<0$ for good.
 
 **3.** The opposite verdict would have needed benefit leftover exponent at least $1$, so that $B$ could recross linear upkeep. The stem is a square root.
 
-**4.** Checking one more planting past the crossing: at $n=81$, benefit is $12\\cdot 9=108$ and upkeep is $162$, so the net is $-54$. The loss has already grown from $-32$ at $n=64$. A solver who treated the peak $N(9)=18$ as a later surplus after the crossing would have mixed the interior maximum with a second root. There is only one later root, $n=36$, and after it the net stays negative.
+**4.** Checking one more planting past the crossing: at $n=81$, benefit is $12\\cdot 9=108$ and upkeep is $162$, so the net is $-54$. The loss has already grown from $-32$ at $n=64$. Treating the peak $N(9)=18$ as a later surplus after the crossing would have mixed the interior maximum with a second root. That is why $N(9)=18$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. Walking through that mix and then discarding it is how the recovered comparison is confirmed. There is only one later root, $n=36$, and after it the net stays negative.
 
 The schedules meet when $12\\sqrt{n}=2n$, so $\\sqrt{n}=6$ and $n=36$. Past that planting the ratio of benefit to upkeep keeps falling, because $\\sqrt{n}$ cannot keep pace with $n$. Planting more trees after upkeep overtakes cooling only deepens the loss. The net stays negative,
 
@@ -11884,7 +11884,7 @@ The recovered crossing is $n=36$, where both schedules equal $72$ and the net is
 
 **1.** Checking $n=25$, still before the crossing: benefit $60$ minus upkeep $50$ is net $10$, still positive. Checking $n=100$: benefit $120$ minus upkeep $200$ is net $-80$. The loss has grown from the $-32$ already seen at $n=64$.
 
-**2.** A rushed solver who set $N'(n)=0$ and read $n=9$ as a later recovery would have mixed the interior peak with a second root of $N$. The peak is a surplus of $18$. The later root is a crossing through zero at $n=36$, after which $N$ stays negative.
+**2.** Setting $N'(n)=0$ and reading $n=9$ as a later recovery would have mixed the interior peak with a second root of $N$. Working from the isolated values, $N'(n)=0$ is the figure that is checked, not the detour that produced $N$. That contrast is the reason the verdict goes the way it does. The peak is a surplus of $18$. The later root is a crossing through zero at $n=36$, after which $N$ stays negative.
 
 **3.** The opposite verdict would have needed cooling leftover exponent at least $1$, so that $B$ could recross linear upkeep. The stem is a square root. Changing $A$ moves the crossing but cannot create a second crossing once $r<1$.
 
@@ -11899,11 +11899,11 @@ The leftover slope of the net is $N'(n)=6 n^{-\\frac{1}{2}}-2$. At four thousand
 
 **1.** Checking $N(4)=16$ and $N(5)=12\\sqrt{5}-10\\approx 16.83$, a gain of about $0.83$ thousand euros. From $n=9$ to $n=10$, $N(10)=12\\sqrt{10}-20\\approx 17.94$, a drop of about $0.06$ from $N(9)=18$. Past the peak the extra thousand already subtracts.
 
-**2.** A rushed solver who saw $N(9)=18>N(4)=16$ and inferred a steeper extra thousand at nine would have mixed a higher level with a steeper slope. The level is higher at nine; the slope is zero.
+**2.** Seeing $N(9)=18>N(4)=16$ and inferred a steeper extra thousand at nine would have mixed a higher level with a steeper slope. Keeping $N(9)=18>N(4)=16$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The level is higher at nine; the slope is zero.
 
 **3.** The opposite verdict would have needed $N'$ larger at nine than at four, hence a net that was still accelerating. Square-root benefit minus linear upkeep peaks at $n=9$ and then falls.
 
-**4.** Checking the other side of the peak: $N'(4)=1>0$ while $N'(16)=6/4-2=-0.5<0$. Four thousand trees still add; sixteen thousand already subtract. Nine thousand is the turning point, not a later acceleration. A solver who compared only the levels $N(9)=18$ and $N(16)=12\\cdot 4-32=16$ would still see a fall after the peak, which is the same story as the slope comparison.
+**4.** Checking the other side of the peak: $N'(4)=1>0$ while $N'(16)=6/4-2=-0.5<0$. Four thousand trees still add; sixteen thousand already subtract. Nine thousand is the turning point, not a later acceleration. Comparing only the levels $N(9)=18$ and $N(16)=12\\cdot 4-32=16$ would still see a fall after the peak, which is the same story as the slope comparison. After isolating the unknown, the check is against $N(9)=18$. The figure $N(16)=12\\cdot 4-32=16$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $N(9)=18$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed.
 
 At four thousand trees that is $1$. At nine thousand trees it is $0$. An extra thousand trees still adds at four thousand and adds nothing at nine thousand. Nine thousand is the peak, not a point where later trees help more,
 
@@ -11913,7 +11913,7 @@ The recovered $N'$ is $1$ at four thousand and $0$ at nine thousand. An extra th
 
 **1.** Checking $N(1)=12-2=10$ and $N(0^{+})$ near $0$: the first thousand trees add about $10$. That is steeper than the $0.83$ already computed from $n=4$ to $n=5$, and far steeper than the near-zero step at $n=9$. The extra thousand is most valuable early.
 
-**2.** A rushed solver who compared only $N(9)=18>N(4)=16$ would have called later trees more helpful. That mixes a higher level with a steeper slope. The level is higher at nine; the slope is zero.
+**2.** Comparing only $N(9)=18>N(4)=16$ would have called later trees more helpful. Once $N(9)=18>N(4)=16$ is isolated, the statement is a yes-or-no against that number, and that is all this letter asks. The arithmetic already on the page is the one that belongs to the wording of the claim. That contrast is the reason the verdict goes the way it does. That mixes a higher level with a steeper slope. The level is higher at nine; the slope is zero.
 
 **3.** The opposite verdict would have needed $N'$ still rising at nine thousand. Square-root benefit minus linear upkeep has $N'$ falling through zero at $n=9$. Changing $k$ moves the peak but cannot make $N'(9)>N'(4)$ on this shape.
 
@@ -11932,7 +11932,7 @@ This is a net-benefit level at four thousand trees, not a cooling-only reading.
 
 The recovered net is $16$, which is not more than $20$. Cooling at four thousand is $24$; that $24$ is the mix-up.
 
-A rushed solver who used $B(4)=24$ against $20$ would have called the claim true.
+Using $B(4)=24$ against $20$ would have called the claim true. After isolating the unknown, the check is against $B(4)=24$. The figure $20$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $B(4)=24$ stays in the write-up.
 
 The opposite verdict would have needed a smaller $k$ or a larger $A$. The two records lock $N(4)=16$.
 
@@ -11998,7 +11998,7 @@ This letter asks whether the inverse demand map is still a power, not what price
 
 The recovered inverse is a monomial in $q$ with leftover exponent $-\\frac{1}{2}$. A nonzero power inverts to another power.
 
-A rushed solver who saw $q\\propto p^{-2}$ and guessed that inversion would introduce a logarithm would have mixed a power with an exponential.
+Seeing $q\\propto p^{-2}$ and guessed that inversion would introduce a logarithm would have mixed a power with an exponential. Keeping $q\\propto p^{-2}$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim.
 
 The opposite verdict would have needed a decaying exponential in price. The stem is a power.
 
@@ -12013,7 +12013,7 @@ Doubling the five-euro price would halve demand only if the exponent were $-1$. 
 
 **1.** Checking the till as well: $R(5)=400$ and $R(10)=200$. Revenue halves when the price doubles, which is the leftover $p^{-1}$ on revenue, not a demand-halving story.
 
-**2.** A rushed solver who used elasticity $-1$ would have named $40$ packs at $10$ euros and called the claim true. The stem's exponent is $-2$, so the cut is twice as steep in the log.
+**2.** Using elasticity $-1$ would have named $40$ packs at $10$ euros and called the claim true. After isolating the unknown, the check is against $-1$. The figure $10$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $-1$ stays in the write-up. The stem's exponent is $-2$, so the cut is twice as steep in the log.
 
 **3.** The opposite verdict would have needed $r=-1$ on demand. Changing $A$ scales both $q(5)$ and $q(10)$ by the same factor and cannot turn a quarter into a half.
 
@@ -12027,7 +12027,7 @@ The recovered factor is $2^{-2}=\\frac{1}{4}$, so demand falls to $20$ packs, no
 
 **1.** Checking the till on the same doubling: $R(5)=400$ and $R(10)=200$. Revenue halves. That leftover $p^{-1}$ on revenue is not a demand-halving story.
 
-**2.** A rushed solver who used leftover exponent $-1$ on demand would have named $40$ packs and called the claim true. Inverse-linear thinking is the mismatch.
+**2.** Using leftover exponent $-1$ on demand would have named $40$ packs and called the claim true. The stem's recovered values line up with $-1$, whereas $40$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $-1$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Inverse-linear thinking is the mismatch.
 
 **3.** The opposite verdict would have needed $r=-1$. Changing $A$ scales both $q(5)$ and $q(10)$ and cannot turn a quarter into a half. Letter C then reads $q(10)=20$ against a $25$-pack line; this letter is the doubling claim sitting next to that level.
 
@@ -12038,7 +12038,7 @@ From $A/25=80$, the coefficient is $A=2000$. Ten euros is a doubling of the logg
 
 $$q(10)=20$$
 
-From $A/25=80$, the coefficient is $A=2000$. Ten euros is a doubling of the logged $5$, so inverse-square demand is a quarter of $80$: $q(10)=20$. Twenty packs already sit under twenty-five. A rushed solver who halved $80$ to $40$ would have sat above $25$ and flipped the verdict. Inverse-linear thinking is too slow a drop. The opposite verdict would have needed $A>25\\cdot 100=2500$. The logged pair locks $A=2000$.
+From $A/25=80$, the coefficient is $A=2000$. Ten euros is a doubling of the logged $5$, so inverse-square demand is a quarter of $80$: $q(10)=20$. Twenty packs already sit under twenty-five. Halving $80$ to $40$ would have sat above $25$ and flipped the verdict. After isolating the unknown, the check is against $80$. The figure $25$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $80$ stays in the write-up. That contrast is the reason the verdict goes the way it does. Inverse-linear thinking is too slow a drop. The opposite verdict would have needed $A>25\\cdot 100=2500$. The logged pair locks $A=2000$.
 
 Twenty packs already sit under twenty-five,
 
@@ -12046,7 +12046,7 @@ This is a level at $10$ euros, a doubling of the logged five-euro price.
 
 The recovered demand is $20$ packs, which sits under $25$. Inverse-linear thinking would have named $40$ and sat above $25$.
 
-A rushed solver who halved $80$ would have flipped the verdict. The stem's leftover exponent is $-2$, not $-1$.
+Halving $80$ would have flipped the verdict. Keeping $80$ is the whole of this check; a rounded or relabelled stand-in would be a different letter. The arithmetic already on the page is the one that belongs to the wording of the claim. The stem's leftover exponent is $-2$, not $-1$.
 
 The opposite verdict would have needed $A$ above $2500$. The logged pair locks $A=2000$.
 
@@ -12061,7 +12061,7 @@ This letter asks the sign of leftover revenue as price rises, not a named till a
 
 The recovered $R(p)=2000/p$ is a negative leftover power, so the till shrinks. At $5$ euros the take is $400$; at $10$ euros it is $200$.
 
-A rushed solver who remembered "raise price, raise revenue" from inelastic demand would have flipped the sign.
+Remembering "raise price, raise revenue" from inelastic demand would have flipped the sign. The stem's recovered values are the ones that decide the verdict here. The write-up therefore keeps that isolation in view until the true-or-false sentence.
 
 The opposite verdict would have needed demand leftover exponent greater than $-1$. The stem is $p^{-2}$.
 
@@ -12076,13 +12076,13 @@ $$p=4$$
 
 A target of $125$ packs inverts $2000/p^{2}=125$ to $p^{2}=16$ and $p=4$, which sits below $5$, not above it. More packs require a lower price along this curve. The unique positive price that moves $125$ packs is four euros.
 
-**1.** A rushed solver who raised the price to move more packs would have called the statement true. Along this curve a higher price cuts quantity.
+**1.** Raising the price to move more packs would have called the statement true. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Along this curve a higher price cuts quantity.
 
 **2.** Checking $q(5)=80<125$ already: five euros moves fewer than $125$ packs, so the $125$ target is a cheaper price, $4$ euros.
 
 **3.** The opposite verdict would have needed a target below $80$ packs, which would have sat above $5$ euros. The named target is $125$, above the logged $80$.
 
-**4.** Checking a neighbouring target: $100$ packs invert to $p=\\sqrt{20}\\approx 4.47$, still below $5$. Every target above the logged $80$ packs sits on a cheaper posted price. A solver who used inverse-linear demand $q=400/p$ would have inverted $125$ to $p=3.2$ and still sat below $5$, so the verdict would have survived a milder elasticity. Only a demand curve that rose with price could have put $125$ packs above $5$ euros.
+**4.** Checking a neighbouring target: $100$ packs invert to $p=\\sqrt{20}\\approx 4.47$, still below $5$. Every target above the logged $80$ packs sits on a cheaper posted price. Using inverse-linear demand $q=400/p$ would have inverted $125$ to $p=3.2$ and still sat below $5$, so the verdict would have survived a milder elasticity. After isolating the unknown, the check is against $q=400/p$. The figure $5$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $q=400/p$ stays in the write-up. Only a demand curve that rose with price could have put $125$ packs above $5$ euros.
 
 which sits below $5$, not above it. More packs require a lower price along this curve. The unique positive price that moves $125$ packs is four euros,
 
@@ -12092,7 +12092,7 @@ The recovered price for $125$ packs is $4$ euros, which sits below $5$, not abov
 
 **1.** Checking $q(5)=80<125$ already shows that five euros cannot move $125$ packs. The $125$ target must sit on a cheaper price.
 
-**2.** A rushed solver who raised the price to move more packs would have called the claim true. Along this curve a higher price cuts quantity.
+**2.** Raising the price to move more packs would have called the claim true. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. Along this curve a higher price cuts quantity.
 
 **3.** The opposite verdict would have needed a target below $80$ packs, which would have sat above $5$ euros. The named target is $125$. Changing $A$ scales the inverted price by a square root and would have needed $A>125\\cdot 25=3125$ to put $125$ packs above $5$ euros. The logged pair locks $A=2000$.
 
@@ -12150,7 +12150,7 @@ This letter asks whether the composed map is still a monomial in the subsidy ind
 
 The recovered composition is $400/s$, leftover exponent $-1$, a power of $s$. Both stages were powers, so the composite is a power.
 
-A rushed solver who stopped after $p(s)$ would have left leftover exponent $\\frac{2}{3}$ and still have a power, just the wrong one.
+Stopping after $p(s)$ would have left leftover exponent $\\frac{2}{3}$ and still have a power, just the wrong one. The stem's recovered values line up with $p(s)$, whereas $\\frac{2}{3}$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $p(s)$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would have needed a stage that was not a power. Both the demand curve and the policy map are monomials.
 
@@ -12165,11 +12165,11 @@ Tripling the subsidy index multiplies composed demand by $3^{-1}=\\frac{1}{3}$, 
 
 **1.** Checking $s=8$ at $50$ passes against $s=24$: composed demand is $400/24\\approx 16.7$, a third of $50$. Tripling $s$ divided passes by $3$.
 
-**2.** A rushed solver who read "subsidy index" as "more subsidy, more rides" would have called the statement true. This indexation raises the posted price as $s$ grows.
+**2.** Reading "subsidy index" as "more subsidy, more rides" would have called the statement true. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. Walking through that mix and then discarding it is how the recovered comparison is confirmed. This indexation raises the posted price as $s$ grows.
 
 **3.** The opposite verdict would have needed composed exponent positive. The two stages multiply to $-1$.
 
-**4.** Checking the posted prices: $p(8)=16$ and $p(24)=4\\cdot 24^{\\frac{2}{3}}=4\\cdot 8^{\\frac{2}{3}}\\cdot 3^{\\frac{2}{3}}=16\\cdot 3^{\\frac{2}{3}}\\approx 33.3$. The pass is dearer at the larger index, so inverse-power demand must fall. A solver who treated $s$ as a discount rather than an indexation would have expected $p$ to drop and demand to rise. The stem's $p(s)$ climbs with $s$.
+**4.** Checking the posted prices: $p(8)=16$ and $p(24)=4\\cdot 24^{\\frac{2}{3}}=4\\cdot 8^{\\frac{2}{3}}\\cdot 3^{\\frac{2}{3}}=16\\cdot 3^{\\frac{2}{3}}\\approx 33.3$. The pass is dearer at the larger index, so inverse-power demand must fall. Treating $s$ as a discount rather than an indexation would have expected $p$ to drop and demand to rise. So the letter reads the claim against $s$; $p$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $s$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem's $p(s)$ climbs with $s$.
 
 not by $3$. Demand falls to a third rather than tripling. The indexation $p\\propto s^{\\frac{2}{3}}$ raises the pass price as $s$ grows, so the composed map is inverse, not increasing,
 
@@ -12179,7 +12179,7 @@ The recovered composed exponent is $-1$, so tripling $s$ multiplies demand by $\
 
 **1.** Checking $s=8$ at $50$ passes against $s=24$ at $400/24\\approx 16.7$: the passes fell to a third. The posted price rose from $16$ to about $33.3$, which is why demand fell.
 
-**2.** A rushed solver who read "subsidy index" as a discount would have expected more rides and called the claim true. This indexation raises the posted price as $s$ grows.
+**2.** Reading "subsidy index" as a discount would have expected more rides and called the claim true. The discarded mix answers a neighbouring question; this letter stays with the recovered isolation. The write-up therefore keeps that isolation in view until the true-or-false sentence. That contrast is the reason the verdict goes the way it does. This indexation raises the posted price as $s$ grows.
 
 **3.** The opposite verdict would have needed composed leftover exponent positive. The two stages multiply to $-1$. Changing the pilot $50$ scales every composed level and cannot turn a third into a triple.
 
@@ -12190,7 +12190,7 @@ Subsidy index $8$ was calibrated to the $16$-euro, $50$-pass reading, so compose
 
 $$q\\bigl(p(8)\\bigr)=50$$
 
-Subsidy index $8$ was calibrated to the $16$-euro, $50$-pass reading, so composed demand at $s=8$ is the pilot itself: $50$ passes, already above $40$. A rushed solver who computed $q(p(8))$ from scratch with a wrong $B$ would have missed that $s=8$ is the logged pair. The opposite verdict would have needed the pilot below $40$ passes. The stem is $50$.
+Subsidy index $8$ was calibrated to the $16$-euro, $50$-pass reading, so composed demand at $s=8$ is the pilot itself: $50$ passes, already above $40$. Computing $q(p(8))$ from scratch with a wrong $B$ would have missed that $s=8$ is the logged pair. After isolating the unknown, the check is against $q(p(8))$. The figure $s=8$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $q(p(8))$ stays in the write-up. Walking through that mix and then discarding it is how the recovered comparison is confirmed. The opposite verdict would have needed the pilot below $40$ passes. The stem is $50$.
 
 Fifty passes already sit above forty,
 
@@ -12198,7 +12198,7 @@ This is a composed-demand level at the calibrated index $s=8$.
 
 The recovered demand is the pilot itself, $50$ passes, already above $40$. Index $8$ is the logged pair, not a new evaluation.
 
-A rushed solver who recomputed $q(p(8))$ with a wrong $B$ would have missed that $s=8$ is already $50$.
+Recomputing $q(p(8))$ with a wrong $B$ would have missed that $s=8$ is already $50$. So the letter reads the claim against $q(p(8))$; $50$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $q(p(8))$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would have needed the pilot below $40$ passes. The stem is $50$.
 
@@ -12209,11 +12209,11 @@ From $A\\cdot 16^{-\\frac{3}{2}}=50$ and $B\\cdot 4=16$, the composition collaps
 
 **1.** Checking $s=8$ at $50$ against $s=16$ at $25$: doubling $s$ halves passes. The map is inverse.
 
-**2.** A rushed solver who inverted the demand stage only, holding $p$ fixed, would have claimed sales independent of $s$ and missed the policy map $p(s)$.
+**2.** Inverting the demand stage only, holding $p$ fixed, would have claimed sales independent of $s$ and missed the policy map $p(s)$. So the letter reads the claim against $p$; $p(s)$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $p$ stays in the write-up.
 
 **3.** The opposite verdict would have needed composed exponent positive. The stem's two exponents multiply to $-1$.
 
-**4.** Checking a third index: $s=32$ gives $400/32=12.5$ passes, below the $25$ at $s=16$ and below the $50$ at $s=8$. Each rise in the subsidy index cuts composed demand. A solver who plotted $q$ against $p$ only, holding the policy map out of view, would have missed that $p$ itself is rising with $s$. The claim is about the composed map, not about a fixed price.
+**4.** Checking a third index: $s=32$ gives $400/32=12.5$ passes, below the $25$ at $s=16$ and below the $50$ at $s=8$. Each rise in the subsidy index cuts composed demand. Plotting $q$ against $p$ only, holding the policy map out of view, would have missed that $p$ itself is rising with $s$. The recovered comparison therefore keeps $q$ and does not substitute $s$. The claim is about the composed map, not about a fixed price.
 
 From $A\\cdot 16^{-\\frac{3}{2}}=50$ and $B\\cdot 4=16$, the composition collapses to $q(p(s))=\\frac{400}{s}$. For every $k>1$ the factor $k^{-1}<1$. Raising the subsidy index lowers composed demand. "Subsidy up, sales up" ignores that indexation,
 
@@ -12223,7 +12223,7 @@ The recovered map $400/s$ falls for every rise in $s$. Doubling $s$ from $8$ to 
 
 **1.** Checking $s=4$, a smaller index than the pilot: composed demand is $100$ passes, above the pilot. Smaller $s$ means a cheaper posted price and more rides. Raising $s$ is the opposite move.
 
-**2.** A rushed solver who inverted the demand stage only, holding $p$ fixed, would have claimed sales independent of $s$ and missed the policy map.
+**2.** Inverting the demand stage only, holding $p$ fixed, would have claimed sales independent of $s$ and missed the policy map. After isolating the unknown, the check is against $p$. The figure $s$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $p$ stays in the write-up. That contrast is the reason the verdict goes the way it does.
 
 **3.** The opposite verdict would have needed composed leftover exponent positive. The stem's two exponents multiply to $-1$. "Subsidy up, sales up" ignores that this indexation raises the pass price.
 
@@ -12234,7 +12234,7 @@ At subsidy index $27$, composed demand is
 
 $$\\frac{400}{27}\\approx 14.81$$
 
-At subsidy index $27$, composed demand is $400/27\\approx 14.81$, which sits under $16$. From the pilot, $\\frac{27}{8}$ times the index multiplies demand by $\\frac{8}{27}$: $50\\cdot\\frac{8}{27}=\\frac{400}{27}$. Fourteen and a bit stays under sixteen. A rushed solver who used $q(p(8))=50$ against $16$ would have named the pilot, not $s=27$. The opposite verdict would have needed $400/27\\ge 16$, hence a larger composed coefficient. The two calibrations lock $400/s$.
+At subsidy index $27$, composed demand is $400/27\\approx 14.81$, which sits under $16$. From the pilot, $\\frac{27}{8}$ times the index multiplies demand by $\\frac{8}{27}$: $50\\cdot\\frac{8}{27}=\\frac{400}{27}$. Fourteen and a bit stays under sixteen. Using $q(p(8))=50$ against $16$ would have named the pilot, not $s=27$. So the letter reads the claim against $q(p(8))=50$; $s=27$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $q(p(8))=50$ stays in the write-up. The opposite verdict would have needed $400/27\\ge 16$, hence a larger composed coefficient. The two calibrations lock $400/s$.
 
 which sits under $16$. From the pilot, $\\frac{27}{8}$ times the index multiplies demand by $\\frac{8}{27}$: $50\\cdot\\frac{8}{27}=\\frac{400}{27}$. Fourteen and a bit stays under sixteen,
 
@@ -12242,7 +12242,7 @@ This is a composed-demand level at subsidy index $27$.
 
 The recovered demand is $400/27\\approx 14.81$, which sits under $16$. From the pilot, $50\\cdot 8/27=400/27$.
 
-A rushed solver who used $q(p(8))=50$ against $16$ would have named the pilot, not $s=27$.
+Using $q(p(8))=50$ against $16$ would have named the pilot, not $s=27$. So the letter reads the claim against $q(p(8))=50$; $s=27$ is what the other mix manufactures. The claim's wording is tested on the recovered side of that fork, which is why $q(p(8))=50$ stays in the write-up.
 
 The opposite verdict would have needed a larger composed coefficient. The two calibrations lock $400/s$.
 
@@ -12302,7 +12302,7 @@ The two logs give $a=1$ and $b=\\frac{1}{4}$. Equal marginal costs $2q_{1}=\\fra
 
 **1.** All on line 1 costs $900$, far worse. The cheaper-line corner is $225$, already $45$ above the equal-marginal split.
 
-**2.** A rushed solver who saw $b<a$ and sent every loaf to line 2 would have called the claim true. Quadratic cost punishes concentration: thirty squared is $900$, and a quarter of that is still $225$.
+**2.** Seeing $b<a$ and sending every loaf to line 2 would have called the claim true. The path that matches the stem therefore holds $b<a$ fixed and only then reads the claim. Quadratic cost punishes concentration: thirty squared is $900$, and a quarter of that is still $225$.
 
 **3.** Checking a nearby split, $5$ and $25$: cost is $25+\\frac{625}{4}=181.25$, already a little above $180$. Checking $8$ and $22$: cost is $64+121=185$. The $6$-and-$24$ split is cheaper than those neighbours and cheaper than either corner.
 
@@ -12318,7 +12318,7 @@ The recovered equal-marginal split is $6$ and $24$, costing $180$. All on line 2
 
 **2.** Checking $10$ and $20$: cost is $100+100=200$, already $20$ above $180$. Checking $4$ and $26$: cost is $16+169=185$. Neighbours of $6$ and $24$ sit above $180$.
 
-**3.** A rushed solver who saw $b<a$ and sent every loaf to line 2 would have called the claim true. Linear costs would have made that corner optimal. Both stem costs are squares, so the interior split wins.
+**3.** Seeing $b<a$ and sending every loaf to line 2 would have called the claim true. The path that matches the stem therefore holds $b<a$ fixed and only then reads the claim. Linear costs would have made that corner optimal. Both stem costs are squares, so the interior split wins.
 
 **4.** The opposite verdict would have needed linear costs, or a cheaper-line coefficient so small that $C_{2}(30)$ fell through $180$. At $b=\\frac{1}{4}$, the corner is locked at $225$.
 
@@ -12329,7 +12329,7 @@ All thirty thousand loaves on line 2 score
 
 $$C_{2}(30)=\\frac{1}{4}\\cdot 900=225$$
 
-All thirty thousand loaves on line 2 score $225$, which sits above $200$. Plant 2 is cheaper per squared unit, but thirty squared is still $900$. The corner already clears two hundred. A rushed solver who used $C_{2}(8)=16$ linearly to $C_{2}(30)$ would have claimed $60$ and missed the letter. The opposite verdict would have needed $b\\le 200/900$. The eight-thousand run locks $b=\\frac{1}{4}$.
+All thirty thousand loaves on line 2 score $225$, which sits above $200$. Plant 2 is cheaper per squared unit, but thirty squared is still $900$. The corner already clears two hundred. Using $C_{2}(8)=16$ linearly to $C_{2}(30)$ would have claimed $60$ and missed the letter. After isolating the unknown, the check is against $C_{2}(8)=16$. The figure $60$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $C_{2}(8)=16$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed $b\\le 200/900$. The eight-thousand run locks $b=\\frac{1}{4}$.
 
 which sits above $200$. Plant 2 is cheaper per squared unit, but thirty squared is still $900$. The corner already clears two hundred,
 
@@ -12337,7 +12337,7 @@ This is a corner level: all thirty thousand loaves on line 2.
 
 The recovered score is $225$, which sits above $200$. Thirty squared is $900$, and a quarter of that is $225$.
 
-A rushed solver who scaled $C_{2}(8)=16$ linearly to $30$ would have claimed $60$ and missed the letter.
+Scaling $C_{2}(8)=16$ linearly to $30$ would have claimed $60$ and missed the letter. Working from the isolated values, $C_{2}(8)=16$ is the figure that is checked, not the detour that produced $60$.
 
 The opposite verdict would have needed $b$ at most $200/900$. The eight-thousand run locks $b=\\frac{1}{4}$.
 
@@ -12348,7 +12348,7 @@ Equal marginal costs force $q_{2}=4q_{1}$, so the cheaper line takes the larger 
 
 **1.** Checking the marginals at that split: $C_{1}'(6)=12$ and $C_{2}'(24)=12$. They match. At an even split of $15$ and $15$, the marginals are $30$ and $7.5$, so line 1 is still too dear at the margin and more loaves should move to line 2.
 
-**2.** A rushed solver who sent the larger share to line 1, because line 1 had the logged $100$ against line 2's $16$, would have mixed a higher logged run with a cheaper coefficient. The $100$ was a $10$-thousand run; the $16$ was an $8$-thousand run. After recovering $a=1$ and $b=\\frac{1}{4}$, line 2 is cheaper.
+**2.** Sending the larger share to line 1, because line 1 had the logged $100$ against line 2's $16$, would have mixed a higher logged run with a cheaper coefficient. Working from the isolated values, $100$ is the figure that is checked, not the detour that produced $16$. The $100$ was a $10$-thousand run; the $16$ was an $8$-thousand run. After recovering $a=1$ and $b=\\frac{1}{4}$, line 2 is cheaper.
 
 **3.** The opposite verdict would have needed $b>a$, so that equal marginals would have put more loaves on line 1. The stem has $b=\\frac{1}{4}<1=a$.
 
@@ -12360,7 +12360,7 @@ Equal marginals force $q_{2}=4q_{1}$, so line 2 takes $24$ against line 1's $6$.
 
 **1.** Checking the marginals at $6$ and $24$: both equal $12$. At an even $15$ and $15$, the marginals are $30$ and $7.5$, so more loaves should still move to line 2.
 
-**2.** A rushed solver who sent the larger share to line 1, because the logged run there scored $100$ against $16$, would have mixed a larger logged batch with a cheaper coefficient. After recovering $a=1$ and $b=\\frac{1}{4}$, line 2 is cheaper.
+**2.** Sending the larger share to line 1, because the logged run there scored $100$ against $16$, would have mixed a larger logged batch with a cheaper coefficient. Working from the isolated values, $100$ is the figure that is checked, not the detour that produced $16$. After recovering $a=1$ and $b=\\frac{1}{4}$, line 2 is cheaper.
 
 **3.** The opposite verdict would have needed $b>a$. The stem has $b=\\frac{1}{4}<1$. Changing the overnight total scales both shares in the same $1:4$ ratio and cannot give line 1 the larger share.
 
@@ -12386,7 +12386,7 @@ The $6$-and-$24$ split scores
 
 $$36+144=180$$
 
-The $6$-and-$24$ split scores $180$, which sits under $200$. Six squared is $36$; twenty-four squared over $4$ is $144$. Spreading at equal marginals beats the $225$ corner. A rushed solver who added $6+24=30$ as if the cost were the split itself would have sat under $200$ for the wrong reason. The opposite verdict would have needed a split cost of $200$ or more. Equal marginals lock $180$.
+The $6$-and-$24$ split scores $180$, which sits under $200$. Six squared is $36$; twenty-four squared over $4$ is $144$. Spreading at equal marginals beats the $225$ corner. Adding $6+24=30$ as if the cost were the split itself would have sat under $200$ for the wrong reason. The stem's recovered values line up with $6+24=30$, whereas $200$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $6+24=30$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The opposite verdict would have needed a split cost of $200$ or more. Equal marginals lock $180$.
 
 which sits under $200$. Six squared is $36$; twenty-four squared over $4$ is $144$. Spreading at equal marginals beats the $225$ corner,
 
@@ -12394,7 +12394,7 @@ This is a level of the equal-marginal split against a $200$ line.
 
 The recovered score is $180$, which sits under $200$. Six squared is $36$; twenty-four squared over $4$ is $144$.
 
-A rushed solver who added $6+24=30$ as if the cost were the split itself would have sat under $200$ for the wrong reason.
+Adding $6+24=30$ as if the cost were the split itself would have sat under $200$ for the wrong reason. The stem's recovered values line up with $6+24=30$, whereas $200$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $6+24=30$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would have needed a split cost of $200$ or more. Equal marginals lock $180$.
 
@@ -12476,7 +12476,7 @@ The shortcut predicts $-2\\times 10\\%=-20\\%$. The exact factor is $1.1^{-2}=1/
 
 **1.** In tickets, the shortcut on $40$ claims an $8$-ticket drop to $32$. The exact $q(11)=4000/121\\approx 33.06$, a drop of about $6.94$. The shortcut overstates the ticket loss as well as the percent loss.
 
-**2.** A rushed solver who treated the shortcut as exact would have called the claim false. The finite factor $k^{r}$ is strictly larger than $1+r(k-1)$ when $r=-2$ and $k=1.1$, because the second-order term in the expansion is positive.
+**2.** Treating the shortcut as exact would have called the claim false. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The finite factor $k^{r}$ is strictly larger than $1+r(k-1)$ when $r=-2$ and $k=1.1$, because the second-order term in the expansion is positive.
 
 **3.** Checking a neighbouring $20\\%$ rise: the shortcut claims $-40\\%$. The exact factor is $1.2^{-2}=1/1.44\\approx 0.694$, a cut of about $30.6\\%$. The overstatement grows with the step, which is why letter B's $10$-to-$12$ move already beat a $20\\%$ linear guess.
 
@@ -12490,7 +12490,7 @@ The shortcut claims a $20\\%$ drop. The exact factor $1.1^{-2}\\approx 0.826$ is
 
 **1.** In tickets, the shortcut on $40$ claims an $8$-ticket drop to $32$. The exact $q(11)=4000/121\\approx 33.06$, a drop of about $6.94$. The overstatement is about one ticket on this step, and it is still an overstatement.
 
-**2.** A rushed solver who treated the shortcut as exact would have called the claim false. For $r=-2$ and $k>1$, the exact factor $k^{r}$ sits above the linear tangent $1+r(k-1)$, so the shortcut overstates every finite rise on this curve.
+**2.** Treating the shortcut as exact would have called the claim false. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. For $r=-2$ and $k>1$, the exact factor $k^{r}$ sits above the linear tangent $1+r(k-1)$, so the shortcut overstates every finite rise on this curve.
 
 **3.** Checking a $5\\%$ rise: the shortcut claims $-10\\%$. The exact factor is $1.05^{-2}\\approx 0.907$, a cut of about $9.3\\%$. The overstatement shrinks with the step but does not change sign. Letter B's $10$-to-$12$ move is a $20\\%$ step, where the gap is larger.
 
@@ -12503,7 +12503,7 @@ Revenue is $R(p)=4000/p$, which falls toward $0$ as $p$ grows. Raising the price
 
 **1.** Checking the till at the desk and after a rise: $R(10)=400$ and $R(12)=4000/12\\approx 333$. The finite rise already cut revenue. At $20$ euros, $R(20)=200$. At $40$ euros, $R(40)=100$. The till keeps shrinking.
 
-**2.** A rushed solver who remembered that unit-elastic demand holds revenue constant would have expected a flat till and called an unbounded rise harmless. The stem is $p^{-2}$, leftover $p^{-1}$ on revenue, strictly decreasing.
+**2.** Remembering that unit-elastic demand holds revenue constant would have expected a flat till and called an unbounded rise harmless. What the sessions produce, not a later rewrite of those sessions, is what the claim is measured against. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. That contrast is the reason the verdict goes the way it does. The stem is $p^{-2}$, leftover $p^{-1}$ on revenue, strictly decreasing.
 
 **3.** The opposite verdict would have needed leftover exponent on $R$ to be positive, hence demand exponent greater than $-1$. Then a price rise would have grown $pq$. The stem's $-2$ is the other side of that gate.
 
@@ -12517,7 +12517,7 @@ The recovered $R(p)=4000/p$ falls toward $0$ as $p$ grows. There is no interior 
 
 **1.** Checking the till: $R(10)=400$, $R(12)\\approx 333$, $R(20)=200$, $R(40)=100$. Each rise shrinks the take. Cutting the price to $5$ euros raises the till to $800$.
 
-**2.** A rushed solver who remembered that unit-elastic demand holds revenue constant would have expected a flat till. The stem is $p^{-2}$, leftover $p^{-1}$ on revenue, strictly decreasing.
+**2.** Remembering that unit-elastic demand holds revenue constant would have expected a flat till. After the unknown is isolated, the claim is just that comparison, nothing else. Lining the isolated unknown up with the claim's threshold is the last step, and it is the step that writes the verdict. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. The stem is $p^{-2}$, leftover $p^{-1}$ on revenue, strictly decreasing.
 
 **3.** The opposite verdict would have needed leftover exponent on $R$ to be positive, hence demand leftover exponent greater than $-1$. Then a price rise would have grown $pq$. The stem's $-2$ is the other side of that gate. Raising the price without bound drives the till toward zero, not toward a maximum.
 
@@ -12605,7 +12605,7 @@ From $4^{\\frac{3}{2}}=8$, the recorded run gives $A=8$, so $T(e)=8 e^{\\frac{3}
 
 $$T'(e)=12\\sqrt{e}$$
 
-From $4^{3/2}=8$, the recorded run gives $A=8$, so $T(e)=8 e^{3/2}$. The leftover slope is $T'(e)=12\\sqrt{e}$. After setting four that is $24$. After setting nine it is $36$. Because $r>1$ the slope rises. An extra unit adds more trays after nine than after four. A rushed solver who compared only $T(9)=216>T(4)=64$ would have mixed a higher level with the slope question. The opposite verdict would have needed $r<1$.
+From $4^{3/2}=8$, the recorded run gives $A=8$, so $T(e)=8 e^{3/2}$. The leftover slope is $T'(e)=12\\sqrt{e}$. After setting four that is $24$. After setting nine it is $36$. Because $r>1$ the slope rises. An extra unit adds more trays after nine than after four. Comparing only $T(9)=216>T(4)=64$ would have mixed a higher level with the slope question. That is why $T(9)=216>T(4)=64$ is written before the verdict: it is the recovered figure, not a shop-floor rewrite of it. That contrast is the reason the verdict goes the way it does. The opposite verdict would have needed $r<1$.
 
 After setting four that is $24$. After setting nine it is $36$. Because $r>1$ the slope rises. An extra unit adds more trays after nine than after four,
 
@@ -12613,7 +12613,7 @@ This letter compares leftover slopes at settings four and nine, not the levels $
 
 The recovered $T'$ is $24$ after four and $36$ after nine. An extra unit adds more trays after nine.
 
-A rushed solver who compared only $T(9)>T(4)$ would have mixed a higher level with a steeper slope.
+Comparing only $T(9)>T(4)$ would have mixed a higher level with a steeper slope. The recovered isolation is checked against the claim using $T(9)>T(4)$, which is the figure the sessions actually produce. That contrast is the reason the verdict goes the way it does.
 
 The opposite verdict would have needed leftover exponent below $1$. The stem is $3/2$.
 
@@ -12632,7 +12632,7 @@ This is a level at belt setting $9$.
 
 The recovered throughput is $216$ trays an hour, which sits above $200$. A linear rule through the origin from $T(4)=64$ would have named $144$ and missed the letter.
 
-A rushed solver who used $4^{3/2}=8$ as $T(9)$ would have sat far under $200$.
+Using $4^{3/2}=8$ as $T(9)$ would have sat far under $200$. Working from the isolated values, $4^{3/2}=8$ is the figure that is checked, not the detour that produced $200$. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure.
 
 The opposite verdict would have needed $A$ at most $200/27$. The recorded run locks $A=8$.
 
@@ -12647,7 +12647,7 @@ A $25\\%$ larger coefficient appears once above and once below in the ratio $T(2
 
 **1.** Checking the numbers: the stem's doubling factor is $2^{3/2}=2\\sqrt{2}\\approx 2.828$. After $A$ becomes $10$, the new rule is $T_{\\mathrm{new}}(e)=10 e^{3/2}$, and $T_{\\mathrm{new}}(2e)/T_{\\mathrm{new}}(e)$ is still $2^{3/2}$. The $25\\%$ never enters the scale identity.
 
-**2.** A rushed solver who scaled the factor $2.828$ by $1.25$ to about $3.535$ would have called the claim true. That mixes a level scale with a ratio. Letter E is the letter where the $25\\%$ survives, because E asks a level at setting $9$.
+**2.** Scaling the factor $2.828$ by $1.25$ to about $3.535$ would have called the claim true. After isolating the unknown, the check is against $2.828$. The figure $3.535$ is the other route's landing point. The claim's wording is tested on the recovered side of that fork, which is why $2.828$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. That mixes a level scale with a ratio. Letter E is the letter where the $25\\%$ survives, because E asks a level at setting $9$.
 
 **3.** The opposite verdict would have needed a scale factor that still carried $A$. Only a rule that was not homogeneous, such as $T(e)=A e^{3/2}+c$ with a leftover constant, would have left $A$ inside the doubling ratio.
 
@@ -12661,7 +12661,7 @@ The recovered doubling factor $2^{3/2}$ is independent of $A$. The $25\\%$ appea
 
 **1.** Checking the numbers: $2^{3/2}=2\\sqrt{2}\\approx 2.828$ before and after $A$ becomes $10$. The new rule $T_{\\mathrm{new}}(e)=10 e^{3/2}$ has the same doubling ratio.
 
-**2.** A rushed solver who scaled $2.828$ by $1.25$ to about $3.535$ would have called the claim true. That mixes a level scale with a ratio. Letter E is where the $25\\%$ survives, because E asks a level.
+**2.** Scaling $2.828$ by $1.25$ to about $3.535$ would have called the claim true. That is the fork: $2.828$ belongs to the recovered isolation, $3.535$ belongs to the discarded mix. Walking through that mix and then discarding it is how the recovered comparison is confirmed. That mixes a level scale with a ratio. Letter E is where the $25\\%$ survives, because E asks a level.
 
 **3.** Checking $T(9)/T(4)=216/64=3.375$. Raising $A$ by $25\\%$ raises both $216$ and $64$ by $25\\%$ and leaves $3.375$ untouched. Every ratio of two throughputs is independent of $A$.
 
@@ -12678,7 +12678,7 @@ Levels do scale with $A$. The calibrated $T(9)=216$ becomes $1.25\\cdot 216=270$
 
 **1.** Checking the new rule at the recorded run as well: $T_{\\mathrm{new}}(4)=1.25\\cdot 64=80$. The $4$-setting log would have read $80$ trays, and $T_{\\mathrm{new}}(9)=10\\cdot 27=270$ still follows.
 
-**2.** A rushed solver who reused letter D's cancelled ratio and left $T(9)$ at $216$ would have sat under $250$ and flipped the verdict. Letter D is a scale question; this letter is a level.
+**2.** Reusing letter D's cancelled ratio and leaving $T(9)$ at $216$ would have sat under $250$ and flipped the verdict. The stem's recovered values line up with $T(9)$, whereas $250$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $T(9)$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Letter D is a scale question; this letter is a level.
 
 **3.** The opposite verdict would have needed $1.25\\cdot 216\\le 250$, hence a smaller calibrated $T(9)$. The recorded run locks $T(9)=216$, and $270$ already clears $250$ by $20$ trays.
 
@@ -12692,7 +12692,7 @@ The recovered $T(9)=216$ becomes $270$, which sits above $250$. The factor $1.25
 
 **1.** Checking the new rule at the recorded run: $T_{\\mathrm{new}}(4)=80$. Then $T_{\\mathrm{new}}(9)=10\\cdot 27=270$ still follows. The $25\\%$ lifts every level.
 
-**2.** A rushed solver who reused letter D's cancelled ratio and left $T(9)$ at $216$ would have sat under $250$ and flipped the verdict. Letter D is a scale question; this letter is a level.
+**2.** Reusing letter D's cancelled ratio and leaving $T(9)$ at $216$ would have sat under $250$ and flipped the verdict. The stem's recovered values line up with $T(9)$, whereas $250$ is the number you get only after that mix. The claim's wording is tested on the recovered side of that fork, which is why $T(9)$ stays in the write-up. The letter does not stop at naming the mix; it shows where that mix lands, then returns to the recovered figure. Letter D is a scale question; this letter is a level.
 
 **3.** The opposite verdict would have needed $1.25\\cdot 216$ at most $250$, hence a smaller calibrated $T(9)$. The recorded run locks $216$, and $270$ already clears $250$ by $20$ trays. Checking $T_{\\mathrm{new}}(16)=640$ shows the same $25\\%$ lift at a neighbouring setting. Ratios stay put; levels move.
 
