@@ -1,0 +1,1816 @@
+{
+  "diagnosis": {
+    "cause": "a",
+    "summary": "Parser fallback + polish copied solution_overview onto every letter. Markdown extracts lacked per-letter writeups; sanitize_explanation replaced the stub with the 12.3 overview template."
+  },
+  "audit_before": {
+    "economics_dups": 0,
+    "math_ch13_dups": 0,
+    "math_ch12_dups": 78,
+    "generic_placeholder": 23,
+    "shared_setup": 55
+  },
+  "verification": {
+    "answer_key_changed": [],
+    "pdf_vs_stored_mismatches": [],
+    "arithmetic_flags": [],
+    "still_duplicate_after": [],
+    "leftover_wrapups": []
+  },
+  "flagged": [
+    {
+      "id": "math-12-58",
+      "subsection": "12.2",
+      "title": "Of 2,000 factory units, 700 had Defect A, 440 Defect B, and 360 Defect C",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(A)=35\\%,\\ P(B)=22\\%,\\ P(C)=18\\% $$  Takeaway:  $$ P(A)=35\\%,\\ P(B)=22\\%,\\ P(C)=18\\% $$",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(at least one defect) = 58.6%, which is above 55%. /  / $$ / P(\\text{A ∪ B ∪ C}) = Σ P(\\text{single}) - Σ P(\\text{pairwise}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least one defect) = 58.6%, which is above 55%.",
+        "B": "P(exactly one) = 75% - 2(18.4%) + 3(2%) = 75 - 36.8 + 6 = 44.2%, which does not exceed 45%. /  / $$ / P(\\text{exactly one}) = Σ P(\\text{single}) - 2·Σ P(\\text{pairwise}) + 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly one) = 75% - 2(18.4%) + 3(2%) = 75 - 36.8 + 6 = 44.2%, which does not e",
+        "C": "P(exactly two) = 18.4% - 3(2%) = 18.4 - 6 = 12.4%. Three times this is 37.2%. Since 44.2% (from statement B) is greater than 37.2%, the statement is true. /  / $$ / Compare P(\\text{exactly one}) to 3×P(\\text{exactly two}), using both values already computed above / $$ /  / Takeaway: Since 44",
+        "D": "P(none) = 1 - 58.6% = 41.4%, which is not under 40%. /  / $$ / P(\\text{none}) = 1 - P(\\text{A ∪ B ∪ C}) / $$ /  / Takeaway: P(none) = 1 - 58.6% = 41.4%, which is not under 40%.",
+        "E": "P(at least two) = P(exactly two) + P(triple) = 12.4% + 2% = 14.4%. P(exactly one) - P(at least two) = 44.2% - 14.4% = 29.8 percentage points, which is greater than 25. /  / $$ / [Σ P(\\text{single}) - 2Σ P(\\text{pairwise}) + 3P(triple)] - [Σ P(\\text{pairwise}) - 2P(triple)] / $$ /  / Takeaway"
+      }
+    },
+    {
+      "id": "math-12-59",
+      "subsection": "12.2",
+      "title": "UI, Performance, and Security rates are 50%, 40%, and 30%",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(U\\cap P)=P(U)P(P\\mid U)=0.50(0.24)=12\\% $$  Takeaway:  $$ P(U\\cap P)=P(U)P(P\\mid U)=0.50(0.24)=12\\% $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(at least one tag) = 96%, which exceeds 90%. /  / $$ / P(\\text{UI ∪ Perf ∪ Sec}) = Σ P(\\text{single}) - Σ P(\\text{pairwise}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least one tag) = 96%, which exceeds 90%.",
+        "B": "P(exactly one) = 120% - 2(30%) + 3(6%) = 120 - 60 + 18 = 78%, which is above 75%. /  / $$ / P(\\text{exactly one}) = Σ P(\\text{single}) - 2·Σ P(\\text{pairwise}) + 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly one) = 120% - 2(30%) + 3(6%) = 120 - 60 + 18 = 78%, which is above 75%.",
+        "C": "P(exactly two) = 30% - 3(6%) = 30 - 18 = 12%, which is not at least 15%. /  / $$ / P(\\text{exactly two}) = Σ P(\\text{pairwise}) - 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly two) = 30% - 3(6%) = 30 - 18 = 12%, which is not at least 15%.",
+        "D": "P(none) = 1 - 96% = 4%, which is under 5%. /  / $$ / P(\\text{none}) = 1 - P(\\text{UI ∪ Perf ∪ Sec}) / $$ /  / Takeaway: P(none) = 1 - 96% = 4%, which is under 5%.",
+        "E": "P(at least two) = P(exactly two) + P(triple) = 12% + 6% = 18%, which is less than 20%. /  / $$ / P(\\text{at least two}) = P(\\text{exactly two}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least two) = P(exactly two) + P(triple) = 12% + 6% = 18%, which is less than 20%."
+      }
+    },
+    {
+      "id": "math-12-60",
+      "subsection": "12.2",
+      "title": "Product rates are P(A)=55%, P(B)=45%, and P(C)=35%",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ 70=55+45+35-x-18-15+8=110-x $$  Takeaway:  $$ 70=55+45+35-x-18-15+8=110-x $$",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "From Step 1, P(A∩B) = 40% exactly. /  / $$ / Rearrange P(\\text{A ∪ B ∪ C}) = Σ P(\\text{single}) - Σ P(\\text{pairwise}) + P(\\text{triple}) to solve for the unknown pairwise term With P(\\text{A∩B}) = 40% now known, sum of pairwise = 40+18+15 = 73%. Sum of singles = 135% / $$ /  / Takeaway: Fro",
+        "B": "P(exactly one) = 135% - 2(73%) + 3(8%) = 135 - 146 + 24 = 13%, which does not exceed 20%. /  / $$ / P(\\text{exactly one}) = Σ P(\\text{single}) - 2·Σ P(\\text{pairwise}) + 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly one) = 135% - 2(73%) + 3(8%) = 135 - 146 + 24 = 13%, which does not excee",
+        "C": "P(exactly two) = 73% - 3(8%) = 73 - 24 = 49%, which is at least 45%. /  / $$ / P(\\text{exactly two}) = Σ P(\\text{pairwise}) - 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly two) = 73% - 3(8%) = 73 - 24 = 49%, which is at least 45%.",
+        "D": "P(none) = 1 - 70% = 30%, which is not under 25%. /  / $$ / P(\\text{none}) = 1 - P(\\text{A ∪ B ∪ C}) / $$ /  / Takeaway: P(none) = 1 - 70% = 30%, which is not under 25%.",
+        "E": "P(at least two) = P(exactly two) + P(triple) = 49% + 8% = 57%, which is more than half (50%) of all customers. /  / $$ / P(\\text{at least two}) = P(\\text{exactly two}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least two) = P(exactly two) + P(triple) = 49% + 8% = 57%, which is more than hal"
+      }
+    },
+    {
+      "id": "math-12-61",
+      "subsection": "12.2",
+      "title": "Of 1,500 servers, Memory, Disk, and Network fault counts were 525, 390, and 285",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ 35\\%,\\ 26\\%,\\ 19\\%;\\qquad 6\\%,\\ 5\\%,\\ 3.8\\%;\\qquad T=2\\% $$  Takeaway:  $$ 35\\%,\\ 26\\%,\\ 19\\%;\\qquad 6\\%,\\ 5\\%,\\ 3.8\\%;\\qquad T=2\\% $$",
+      "answers": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(at least one fault) = 67.2%, which does not exceed 70%. /  / $$ / P(\\text{Mem ∪ Disk ∪ Net}) = Σ P(\\text{single}) - Σ P(\\text{pairwise}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least one fault) = 67.2%, which does not exceed 70%.",
+        "B": "P(exactly one) = 80% - 2(14.8%) + 3(2%) = 80 - 29.6 + 6 = 56.4%, which is not above 58%. /  / $$ / P(\\text{exactly one}) = Σ P(\\text{single}) - 2·Σ P(\\text{pairwise}) + 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly one) = 80% - 2(14.8%) + 3(2%) = 80 - 29.6 + 6 = 56.4%, which is not above ",
+        "C": "P(exactly two) = 14.8% - 3(2%) = 14.8 - 6 = 8.8%, which is not at least 10%. /  / $$ / P(\\text{exactly two}) = Σ P(\\text{pairwise}) - 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly two) = 14.8% - 3(2%) = 14.8 - 6 = 8.8%, which is not at least 10%.",
+        "D": "P(none) = 1 - 67.2% = 32.8%, which is not under 30%. /  / $$ / P(\\text{none}) = 1 - P(\\text{Mem ∪ Disk ∪ Net}) / $$ /  / Takeaway: P(none) = 1 - 67.2% = 32.8%, which is not under 30%.",
+        "E": "P(at least two) = P(exactly two) + P(triple) = 8.8% + 2% = 10.8%, which is under 12% — every other statement in this question is FALSE. /  / $$ / P(\\text{at least two}) = P(\\text{exactly two}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least two) = P(exactly two) + P(triple) = 8.8% + 2% = 1"
+      }
+    },
+    {
+      "id": "math-12-62",
+      "subsection": "12.2",
+      "title": "Of 3,000 health-club members, 1,800 attended Yoga, 1,500 Spin, and 1,200",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ 60\\%,\\ 50\\%,\\ 40\\%;\\qquad25\\%,\\ 20\\%,\\ 15\\%;\\qquad T=10\\% $$  Takeaway:  $$ 60\\%,\\ 50\\%,\\ 40\\%;\\qquad25\\%,\\ 20\\%,\\ 15\\%;\\qquad T=10\\% $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(at least one class type) = 100%, which is at least 95%. /  / $$ / P(\\text{Yoga ∪ Spin ∪ Pilates}) = Σ P(\\text{single}) - Σ P(\\text{pairwise}) + P(\\text{triple}) / $$ /  / Takeaway: P(at least one class type) = 100%, which is at least 95%.",
+        "B": "P(exactly one) = 150% - 2(60%) + 3(10%) = 150 - 120 + 30 = 60%, which exceeds 55%. /  / $$ / P(\\text{exactly one}) = Σ P(\\text{single}) - 2·Σ P(\\text{pairwise}) + 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly one) = 150% - 2(60%) + 3(10%) = 150 - 120 + 30 = 60%, which exceeds 55%.",
+        "C": "P(exactly two) = 60% - 3(10%) = 60 - 30 = 30%, which is at least 25%. /  / $$ / P(\\text{exactly two}) = Σ P(\\text{pairwise}) - 3·P(\\text{triple}) / $$ /  / Takeaway: P(exactly two) = 60% - 3(10%) = 60 - 30 = 30%, which is at least 25%.",
+        "D": "P(none) = 1 - 100% = 0% exactly, matching the statement precisely. This isn't a rounding coincidence — it's a direct consequence of the union working out to exactly 100% in Step 1. /  / $$ / P(\\text{none}) = 1 - P(\\text{Yoga ∪ Spin ∪ Pilates}) / $$ /  / Takeaway: This isn't a rounding coinci",
+        "E": "P(at least two) = P(exactly two) + P(triple) = 30% + 10% = 40%. Twice P(all three) = 2×10% = 20%. Since 40% is more than 20%, the statement is true. /  / $$ / Compare P(\\text{exactly two})+P(\\text{triple}) to 2×P(\\text{triple}) / $$ /  / Takeaway: Since 40% is more than 20%, the statement is"
+      }
+    },
+    {
+      "id": "math-12-63",
+      "subsection": "12.2",
+      "title": "Inclusion-Exclusion Principle",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ |M\\cup P\\cup C|=40+35+30-15-12-10+5=73 $$  Takeaway:  $$ |M\\cup P\\cup C|=40+35+30-15-12-10+5=73 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "By inclusion-exclusion, |Math ∪ Physics ∪ Chemistry| = 40+35+30-15-12-10+5 = 73, so P(at least one) = 73/100 = 73%, which is above 72%. Easier strategy: For the union of three overlapping groups, add all three singles, subtract all three pairwise overlaps, then add back the tripl",
+        "B": "'Takes none of the three' and 'takes at least one' are complementary events for any student, so P(none) = 1 - P(at least one) by definition. Easier strategy: Once you have P(at least one) from inclusion-exclusion, P(none) is immediate by subtracting from 1 — no separate calculati",
+        "C": "'Exactly one' subject means subtracting both overlaps but adding back the triple overlap once per subject: Only Math = 40-15-12+5 = 18, Only Physics = 35-15-10+5 = 15, Only Chemistry = 30-12-10+5 = 13. Total = 18+15+13 = 46, so P(exactly one) = 46%, which is above 45%, not below ",
+        "D": "'Exactly two, not three' sums the three pairwise-only regions: (Math∩Physics only) = 15-5 = 10, (Math∩Chemistry only) = 12-5 = 7, (Physics∩Chemistry only) = 10-5 = 5. Total = 10+7+5 = 22, so P(exactly two) = 22%, which is above 20%. Easier strategy: Each pairwise overlap given in",
+        "E": "P(all three) = 5%. One-quarter of P(exactly two, not three) = 22%/4 = 5.5%. Since 5% < 5.5%, the statement holds. Easier strategy: When a statement compares a count to a fraction of another count, compute the fraction first (here, divide 22 by 4) and compare directly — don't roun"
+      }
+    },
+    {
+      "id": "math-12-64",
+      "subsection": "12.2",
+      "title": "Among 200 employees, 90 use App A, 70 App B, and 60 App C",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ |A\\cup B\\cup C|=90+70+60-30-25-20+10=155 $$  Takeaway:  $$ |A\\cup B\\cup C|=90+70+60-30-25-20+10=155 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "By inclusion-exclusion, |A ∪ B ∪ C| = 90+70+60-30-25-20+10 = 155, so P(at least one) = 155/200 = 77.5%, which is above 75%. /  / $$ / |A ∪ B ∪ C| = |A|+|B|+|C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| / $$ /  / Takeaway: By inclusion-exclusion, |A ∪ B ∪ C| = 90+70+60-30-25-20+10 = 155, so P(at leas",
+        "B": "'Uses none of the three' and 'uses at least one' are complementary events for any employee, so P(none) = 1 - P(at least one) by definition. /  / $$ / P(\\text{none}) = 1 - P(\\text{at least one}) / $$ /  / Takeaway: 'Uses none of the three' and 'uses at least one' are complementary events for ",
+        "C": "'Exactly one' means subtracting both pairwise overlaps but adding back the triple overlap once per app: Only A = 90-30-25+10 = 45, Only B = 70-30-20+10 = 30, Only C = 60-25-20+10 = 25. Total = 45+30+25 = 100, so P(exactly one) = 100/200 = 50%, which is not less than 50% (it is ex",
+        "D": "'Exactly two, not three' sums the three pairwise-only regions: (A∩B only) = 30-10 = 20, (A∩C only) = 25-10 = 15, (B∩C only) = 20-10 = 10. Total = 20+15+10 = 45, so P(exactly two) = 45/200 = 22.5%, which is above 15%. /  / $$ / Pairwise-only(X,Y) = |X∩Y| - |X∩Y∩Z| / $$ /  / Takeaway: Total = ",
+        "E": "P(all three) = 10/200 = 5%. One-fifth of P(exactly two, not three) = 22.5%/5 = 4.5%. Since 5% is not less than 4.5%, the statement is false. /  / $$ / Compare P(\\text{all three}) to (1/5)\\times P(\\text{exactly two, not three}) Tip: this set leans on exact counting (coin sequences, comm"
+      }
+    },
+    {
+      "id": "math-12-65",
+      "subsection": "12.2",
+      "title": "Among 250 students, 120 take Math, 100 Physics, and 90 Chemistry",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ |M\\cup P\\cup C|=120+100+90-50-40-30+15=205 $$  Takeaway:  $$ |M\\cup P\\cup C|=120+100+90-50-40-30+15=205 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "By inclusion-exclusion, |M ∪ P ∪ C| = 120+100+90-50-40-30+15 = 205, so P(at least one) = 205/250 = 82%, which is above 80%. /  / $$ / |M ∪ P ∪ C| = |M|+|P|+|C| - |M∩P| - |M∩C| - |P∩C| + |M∩P∩C| / $$ /  / Takeaway: By inclusion-exclusion, |M ∪ P ∪ C| = 120+100+90-50-40-30+15 = 205, so P(at le",
+        "B": "'Takes none of the three' and 'takes at least one' are complementary events for any student, so P(none) = 1 - P(at least one) by definition. /  / $$ / P(\\text{none}) = 1 - P(\\text{at least one}) / $$ /  / Takeaway: 'Takes none of the three' and 'takes at least one' are complementary events f",
+        "C": "'Exactly one' subtracts both pairwise overlaps but adds back the triple overlap once per course: Only Math = 120-50-40+15 = 45, Only Physics = 100-50-30+15 = 35, Only Chemistry = 90-40-30+15 = 35. Total = 115, so P(exactly one) = 115/250 = 46%, which is not less than 45%. /  / $$ / Onl",
+        "D": "'Exactly two, not three' sums the three pairwise-only regions: (M∩P only) = 50-15 = 35, (M∩C only) = 40-15 = 25, (P∩C only) = 30-15 = 15. Total = 75, so P(exactly two) = 75/250 = 30%, which is above 25%. /  / $$ / Pairwise-only(X,Y) = |X∩Y| - |X∩Y∩Z| / $$ /  / Takeaway: Total = 75, so P(exac",
+        "E": "P(all three) = 15/250 = 6%. One-third of P(exactly two, not three) = 30%/3 = 10%. Since 6% is less than 10%, the statement is true. /  / $$ / Compare P(\\text{all three}) to (1/3)\\times P(\\text{exactly two, not three}) / $$ /  / Takeaway: Since 6% is less than 10%, the statement is true."
+      }
+    },
+    {
+      "id": "math-12-77",
+      "subsection": "12.3",
+      "title": "A movie theater tracks concession purchases by showtime",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ N=6800,\\quad C=1780. $$  Takeaway:  $$ N=6800,\\quad C=1780. $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(concession) = 1780/6800 ≈ 26.176%, which is greater than 25%. /  / $$ / P(\\text{concession}) = (concession_matinee + concession_evening)/grand total / $$ /  / Takeaway: P(concession) = 1780/6800 ≈ 26.176%, which is greater than 25%.",
+        "B": "P(concession|evening) = 1260/4200 = 30%. P(concession|matinee) = 520/2600 = 20%. 30% is greater than 20%, so evening moviegoers are more likely to buy a concession item — perhaps because evening showings are more of a planned outing. /  / $$ / Compare (concession_evening)/(evening tota",
+        "C": "Given a concession was purchased, divide the evening-concession count by the total concession count. P(evening|concession) = 1260/1780 ≈ 70.787%, which is greater than 65%. Evening tickets already outsell matinee tickets (4,200 vs. 2,600), and evening moviegoers also buy concessi",
+        "D": "Every ticket is either matinee or evening, so given a concession purchase, these two categories are complementary. The statement is true by the complement rule. /  / $$ / P(\\text{matinee|concession}) = 1 - P(\\text{evening|concession}) / $$ /  / Takeaway: The statement is true by the compleme",
+        "E": "P(no concession) = 1 - P(concession) = 1 - 26.176% ≈ 73.824%, which is not greater than 78%. /  / $$ / P(\\text{no concession}) = 1 - P(\\text{concession}) / $$ /  / Takeaway: P(no concession) = 1 - P(concession) = 1 - 26.176% ≈ 73.824%, which is not greater than 78%."
+      }
+    },
+    {
+      "id": "math-12-78",
+      "subsection": "12.3",
+      "title": "A car rental agency tracks late returns by vehicle class",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ N=4200,\\quad L=336. $$  Takeaway:  $$ N=4200,\\quad L=336. $$",
+      "answers": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(late) = 336/4200 = 8%, which is not greater than 8.5%. /  / $$ / P(\\text{late}) = (late_Economy + late_Luxury)/grand total / $$ /  / Takeaway: P(late) = 336/4200 = 8%, which is not greater than 8.5%.",
+        "B": "P(late|Luxury) = 156/1200 = 13%. P(late|Economy) = 180/3000 = 6%. 13% ÷ 6% ≈ 2.167, which is more than double, so the statement is true. /  / $$ / Compare (late_Luxury)/(Luxury total) to 2×(late_Economy)/(Economy total) / $$ /  / Takeaway: P(late|Economy) = 180/3000 = 6%. 13% ÷ 6% ≈ 2.167, w",
+        "C": "Given a late return, divide the Luxury-late count by the total late count. P(Luxury|late) = 156/336 ≈ 46.429%, which is not greater than 50%. Luxury rentals have the higher late rate, but Economy rentals still outnumber them by more than 2 to 1 overall (3,000 vs. 1,200), so Luxur",
+        "D": "P(Economy|late) = 180/336 ≈ 53.571%, and P(Luxury|late) ≈ 46.429%, from statement C. 53.571% is not less than 46.429% — it's greater. Economy still contributes the majority of late returns in absolute terms, even though its late rate is lower. /  / $$ / Compare (late_Economy)/(total la",
+        "E": "P(on time) = 1 - P(late) = 1 - 8% = 92%, which is greater than 90%. /  / $$ / P(\\text{on time}) = 1 - P(\\text{late}) / $$ /  / Takeaway: P(on time) = 1 - P(late) = 1 - 8% = 92%, which is greater than 90%."
+      }
+    },
+    {
+      "id": "math-12-79",
+      "subsection": "12.3",
+      "title": "A bookstore tracks returns by purchase channel",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(return) = 625/8500 ≈ 7.353%, which is greater than 7%. /  / $$ / P(\\text{return}) = (return_online + return_instore)/grand total / $$ /  / Takeaway: P(return) = 625/8500 ≈ 7.353%, which is greater than 7%.",
+        "B": "P(return|online) = 450/5000 = 9%. P(return|in-store) = 175/3500 = 5%. 9% is greater than 5% — online shoppers return items nearly twice as often as in-store shoppers, which lines up with common retail experience (harder to judge fit, color, and quality without seeing an item in p",
+        "C": "Given a purchase was returned, divide the online-return count by the total return count. P(online|return) = 450/625 = 72%, which is greater than 70%. Online purchases dominate the returns pool both because they outsell in-store purchases (5,000 vs. 3,500) and because they have th",
+        "D": "Every purchase is either online or in-store, so given a return, these two categories are complementary. The statement is true by the complement rule. /  / $$ / P(\\text{in-store|return}) = 1 - P(\\text{online|return}) / $$ /  / Takeaway: The statement is true by the complement rule.",
+        "E": "P(no return) = 1 - P(return) = 1 - 7.353% ≈ 92.647%, which is greater than 90%. /  / $$ / P(\\text{no return}) = 1 - P(\\text{return}) / $$ /  / Takeaway: P(no return) = 1 - P(return) = 1 - 7.353% ≈ 92.647%, which is greater than 90%."
+      }
+    },
+    {
+      "id": "math-12-80",
+      "subsection": "12.3",
+      "title": "A gym tracks no-shows by class type",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(no-show) = 840/4000 = 21%, which is not greater than 22%. /  / $$ / P(\\text{no-show}) = (noshow_Yoga + noshow_Spin)/grand total / $$ /  / Takeaway: P(no-show) = 840/4000 = 21%, which is not greater than 22%.",
+        "B": "P(no-show|Yoga) = 360/2400 = 15%. P(no-show|Spin) = 480/1600 = 30%. 15% is not greater than 30% — it's smaller. Spin classes have double the no-show rate of Yoga classes, so the statement (which claims Yoga is higher) is false. /  / $$ / Compare (noshow_Yoga)/(Yoga total) to (noshow_Sp",
+        "C": "Given a no-show, divide the Yoga-no-show count by the total no-show count. P(Yoga|no-show) = 360/840 ≈ 42.857%, which is not greater than 45%. Even though Yoga has more total bookings (2,400 vs. 1,600), its much lower no-show rate (15% vs. 30%) keeps it from contributing the majo",
+        "D": "P(Spin|no-show) = 480/840 ≈ 57.143%, and P(Yoga|no-show) ≈ 42.857%, from statement C. 57.143% is not less than 42.857% — it's greater. Spin dominates the no-show population despite having fewer total bookings, because its no-show rate is double Yoga's. /  / $$ / Compare (noshow_Spin)/(",
+        "E": "P(attended) = 1 - P(no-show) = 1 - 21% = 79%, which is greater than 78%. /  / $$ / P(\\text{attended}) = 1 - P(\\text{no-show}) Only statement E is true. This question is the mirror image of / $$ /  / Takeaway: P(attended) = 1 - P(no-show) = 1 - 21% = 79%, which is greater than 78%."
+      }
+    },
+    {
+      "id": "math-12-81",
+      "subsection": "12.3",
+      "title": "A pizza restaurant tracks order errors by order method",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(error) = 305/5500 ≈ 5.545%, which is greater than 5%. /  / $$ / P(\\text{error}) = (error_Phone + error_App + error_InPerson)/grand total / $$ /  / Takeaway: P(error) = 305/5500 ≈ 5.545%, which is greater than 5%.",
+        "B": "P(error|In-person) = 110/1000 = 11%. P(error|Phone) = 105/1500 = 7%. 11% is greater than 7%, so In-person orders have a higher error rate than Phone orders — despite having the smallest volume of the three order methods (1,000 orders). /  / $$ / Compare (error_InPerson)/(In-person tota",
+        "C": "Given an order had an error, divide the App-error count by the total error count. P(App|error) = 90/305 ≈ 29.508%, which is not greater than 35%. The App handles the most orders by far (3,000 out of 5,500), but its low error rate (3%, the lowest of the three methods) keeps its sh",
+        "D": "P(Phone|error) = 105/305 ≈ 34.426%, and P(App|error) ≈ 29.508%, from statement C. 34.426% is greater than 29.508%, so the statement is true — Phone orders, despite being only the second-largest order method, contribute a larger share of errors than the higher-volume App, because ",
+        "E": "P(no error) = 1 - P(error) = 1 - 5.545% ≈ 94.455%, which is not greater than 96%. /  / $$ / P(\\text{no error}) = 1 - P(\\text{error}) / $$ /  / Takeaway: P(no error) = 1 - P(error) = 1 - 5.545% ≈ 94.455%, which is not greater than 96%."
+      }
+    },
+    {
+      "id": "math-12-82",
+      "subsection": "12.3",
+      "title": "A grocery store tracks scanning errors by checkout method",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(error) = 500/10000 = 5%, which is greater than 4%. /  / $$ / P(\\text{error}) = (error_self + error_cashier)/grand total / $$ /  / Takeaway: P(error) = 500/10000 = 5%, which is greater than 4%.",
+        "B": "P(error|self) = 320/4000 = 8%. P(error|cashier) = 180/6000 = 3%. 8% is greater than 3% — self-checkout has a noticeably higher error rate, which makes sense since there's no employee double-checking each scan. /  / $$ / Compare (error_self)/(self total) to (error_cashier)/(cashier tota",
+        "C": "Given a scanning error occurred, divide the self-checkout error count by the total error count. P(self|error) = 320/500 = 64%, which is greater than 60%. Self-checkout accounts for the clear majority of errors — its share of transactions (40%) is smaller than cashier-assisted (60",
+        "D": "Every transaction goes through either self-checkout or a cashier, so given an error occurred, these two categories are complementary. The statement is true by the complement rule. /  / $$ / P(\\text{cashier|error}) = 1 - P(\\text{self|error}) / $$ /  / Takeaway: The statement is true by the co",
+        "E": "P(no error) = 1 - P(error) = 1 - 5% = 95%, which is not greater than 96%. /  / $$ / P(\\text{no error}) = 1 - P(\\text{error}) / $$ /  / Takeaway: P(no error) = 1 - P(error) = 1 - 5% = 95%, which is not greater than 96%."
+      }
+    },
+    {
+      "id": "math-12-83",
+      "subsection": "12.3",
+      "title": "A hotel tracks cancellations by booking channel",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(cancel) = 1010/10000 = 10.1%, which is not greater than 10.5%. /  / $$ / P(\\text{cancel}) = (cancel_online + cancel_agent)/grand total / $$ /  / Takeaway: P(cancel) = 1010/10000 = 10.1%, which is not greater than 10.5%.",
+        "B": "P(cancel|agent) = 450/3000 = 15%. P(cancel|online) = 560/7000 = 8%. 15% is greater than 8% — bookings made through a travel agent are nearly twice as likely to be cancelled as bookings made directly online, perhaps because agent-booked trips are more often provisional or subject ",
+        "C": "Given a booking was cancelled, divide the online-cancellation count by the total cancellation count. P(online|cancel) = 560/1010 ≈ 55.446%, which is not greater than 60%. Online bookings make up 70% of all bookings, but their much lower cancellation rate (8% vs. 15%) pulls their ",
+        "D": "P(agent|cancel) = 450/1010 ≈ 44.554%, and P(online|cancel) ≈ 55.446%, from statement C. 44.554% is less than 55.446%, so the statement is true — travel-agent bookings still contribute a minority of total cancellations, even with their higher individual rate, simply because they'r",
+        "E": "P(not cancelled) = 1 - P(cancel) = 1 - 10.1% = 89.9%, which is not greater than 90%. This is a close call — 89.9% is just barely under the 90% threshold, so it's worth keeping the extra decimal place rather than rounding to 'about 90%.' /  / $$ / P(\\text{not cancelled}) = 1 - P(\\text{c"
+      }
+    },
+    {
+      "id": "math-12-84",
+      "subsection": "12.3",
+      "title": "An auto repair shop tracks customer complaints by service type",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(complaint) = 280/7000 = 4%, which is greater than 3.5%. /  / $$ / P(\\text{complaint}) = (complaint_routine + complaint_major)/grand total / $$ /  / Takeaway: P(complaint) = 280/7000 = 4%, which is greater than 3.5%.",
+        "B": "P(complaint|Major) = 180/2000 = 9%. P(complaint|Routine) = 100/5000 = 2%. 9% is greater than 2% — Major repairs generate complaints at more than four times the rate of Routine service, which makes intuitive sense given the greater cost, complexity, and room for something to go wr",
+        "C": "Given a complaint was filed, divide the Major-repair complaint count by the total complaint count. P(Major|complaint) = 180/280 ≈ 64.286%, which is greater than 60%. Even though Major repairs make up less than a third of all jobs (2,000 out of 7,000), their far higher complaint r",
+        "D": "Every job is either Routine or Major, so given a complaint was filed, these two categories are complementary. The statement is true by the complement rule. /  / $$ / P(\\text{Routine|complaint}) = 1 - P(\\text{Major|complaint}) / $$ /  / Takeaway: The statement is true by the complement rule.",
+        "E": "P(no complaint) = 1 - P(complaint) = 1 - 4% = 96%, which is greater than 95%. /  / $$ / P(\\text{no complaint}) = 1 - P(\\text{complaint}) / $$ /  / Takeaway: P(no complaint) = 1 - P(complaint) = 1 - 4% = 96%, which is greater than 95%."
+      }
+    },
+    {
+      "id": "math-12-85",
+      "subsection": "12.3",
+      "title": "A concert venue tracks no-shows by ticket type",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(no-show) = 1300/10000 = 13%, which is not greater than 14%. /  / $$ / P(\\text{no-show}) = (noshow_GA + noshow_VIP)/grand total / $$ /  / Takeaway: P(no-show) = 1300/10000 = 13%, which is not greater than 14%.",
+        "B": "P(no-show|VIP) = 100/2000 = 5%. P(no-show|GA) = 1200/8000 = 15%. 5% is not greater than 15% — it's smaller. VIP ticket holders are much less likely to be no-shows, probably because VIP tickets represent a larger investment and are more often used for planned events. /  / $$ / Compare (",
+        "C": "Given a no-show occurred, divide the VIP-no-show count by the total no-show count. P(VIP|no-show) = 100/1300 ≈ 7.692%, which is not greater than 10%. VIP tickets contribute only a small fraction of no-shows, since they're both a smaller ticket category and have a much lower no-sh",
+        "D": "P(GA|no-show) = 1200/1300 ≈ 92.308%, and P(VIP|no-show) ≈ 7.692%, from statement C. 92.308% is not less than 7.692% — it's overwhelmingly greater. General Admission accounts for the vast majority of no-shows. /  / $$ / Compare (noshow_GA)/(total no-shows) to (noshow_VIP)/(total no-show",
+        "E": "P(attends) = 1 - P(no-show) = 1 - 13% = 87%, which is not greater than 88%. /  / $$ / P(\\text{attends}) = 1 - P(\\text{no-show}) Every statement in this question is false. It's worth noticing that the underlying facts here are quite lopsided (General Admission dominates no-shows in ever"
+      }
+    },
+    {
+      "id": "math-12-86",
+      "subsection": "12.3",
+      "title": "A streaming service tracks first-year cancellations by subscription plan",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(cancel) = 2820/18000 ≈ 15.667%, which is greater than 15%. /  / $$ / P(\\text{cancel}) = (cancel_Basic + cancel_Standard + cancel_Premium)/grand total / $$ /  / Takeaway: P(cancel) = 2820/18000 ≈ 15.667%, which is greater than 15%.",
+        "B": "P(cancel|Premium) = 270/3000 = 9%. P(cancel|Standard) = 1350/9000 = 15%. 9% is not greater than 15% — it's smaller. Premium subscribers cancel at the lowest rate of the three plans, which makes sense if Premium subscribers tend to be the most committed, highest-engagement users. / ",
+        "C": "Given a subscriber cancelled, divide the Standard-cancellation count by the total cancellation count. P(Standard|cancel) = 1350/2820 ≈ 47.872%, which is greater than 45%. Standard is both the largest plan by subscriber count (9,000 out of 18,000, exactly half) and has a mid-range",
+        "D": "P(Basic|cancel) = 1200/2820 ≈ 42.553%. P(Premium|cancel) = 270/2820 ≈ 9.574%. 42.553% is greater than 9.574%, so the statement is true — Basic has both a smaller subscriber base than Standard and the highest individual cancellation rate (20%) of the three plans, which puts it wel",
+        "E": "P(does not cancel) = 1 - P(cancel) = 1 - 15.667% ≈ 84.333%, which is not greater than 85%. /  / $$ / P(\\text{does not cancel}) = 1 - P(\\text{cancel}) / $$ /  / Takeaway: P(does not cancel) = 1 - P(cancel) = 1 - 15.667% ≈ 84.333%, which is not greater than 85%."
+      }
+    },
+    {
+      "id": "math-12-87",
+      "subsection": "12.3",
+      "title": "During Q3, engineers at a software company logged every user session across two",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(bug) = 1250/30000 ≈ 4.167%, which is not greater than 4.2%. /  / $$ / P(\\text{bug}) = (bugs_iOS + bugs_Android)/grand total / $$ /  / Takeaway: P(bug) = 1250/30000 ≈ 4.167%, which is not greater than 4.2%.",
+        "B": "P(bug|Android) = 875/17500 = 5%. P(bug|iOS) = 375/12500 = 3%. Ratio = 5/3 ≈ 1.667, which is greater than 1.6. /  / $$ / Ratio = [bugs_Android/Android total] ÷ [bugs_iOS/iOS total] / $$ /  / Takeaway: Ratio = 5/3 ≈ 1.667, which is greater than 1.6.",
+        "C": "Given a bug report, divide the iOS-bug count by the total bug count: P(iOS|bug) = 375/1250 = 30% exactly. 30% is not greater than 30% — it's exactly equal, and 'greater than' requires a strict inequality. This is a common trap: a round-looking answer isn't automatically a 'yes' t",
+        "D": "P(Android|bug) = 875/1250 = 70%. From statement C, P(iOS|bug) = 30%. Difference = 70-30 = 40 percentage points, which is greater than 38. /  / $$ / Difference = P(\\text{Android|bug}) - P(\\text{iOS|bug}), both expressed as percentages / $$ /  / Takeaway: Difference = 70-30 = 40 percentage poi",
+        "E": "P(no bug) = 1 - P(bug) = 1 - 4.167% = 95.833%, which is not greater than 96%. A close call — 95.833% is only about 0.17 percentage points short of the 96% threshold. /  / $$ / P(\\text{no bug}) = 1 - P(\\text{bug}) / $$ /  / Takeaway: A close call — 95.833% is only about 0.17 percentage points"
+      }
+    },
+    {
+      "id": "math-12-88",
+      "subsection": "12.3",
+      "title": "A hospital pharmacy reviewed medication orders processed across two shifts last",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ \\frac{240}{12800}=1.875\\%,\\quad \\frac{3\\%}{1.5\\%}=2,\\quad \\frac{144}{240}=60\\%,\\quad \\frac{96}{240}=40\\%,\\quad 1-1.875\\%=98.125\\%. $$  Takeaway:  $$ \\frac{240}{12800}=1.875\\%,\\quad \\frac{3\\%}{1.5\\%}=2,\\quad \\frac{144}",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(error) = 240/12800 = 1.875%, which is greater than 1.8%. /  / $$ / P(\\text{error}) = (errors_day + errors_night)/grand total / $$ /  / Takeaway: P(error) = 240/12800 = 1.875%, which is greater than 1.8%.",
+        "B": "P(error|night) = 96/3200 = 3%. P(error|day) = 144/9600 = 1.5%. Ratio = 3/1.5 = 2.0, which is greater than 1.9. /  / $$ / Ratio = [errors_night/night total] ÷ [errors_day/day total] / $$ /  / Takeaway: Ratio = 3/1.5 = 2.0, which is greater than 1.9.",
+        "C": "Given an error occurred, divide the day-shift error count by the total error count: P(day|error) = 144/240 = 60%, which is greater than 58%. /  / $$ / P(\\text{day|error}) = (errors_day)/(total errors) / $$ /  / Takeaway: Given an error occurred, divide the day-shift error count by the total ",
+        "D": "P(night|error) = 96/240 = 40%, which is less than 41%. /  / $$ / P(\\text{night|error}) = (errors_night)/(total errors) / $$ /  / Takeaway: P(night|error) = 96/240 = 40%, which is less than 41%.",
+        "E": "P(no error) = 1 - P(error) = 1 - 1.875% = 98.125%, which is greater than 98%. /  / $$ / P(\\text{no error}) = 1 - P(\\text{error}) / $$ /  / Takeaway: P(no error) = 1 - P(error) = 1 - 1.875% = 98.125%, which is greater than 98%."
+      }
+    },
+    {
+      "id": "math-12-89",
+      "subsection": "12.3",
+      "title": "An airline audited baggage handling across three flight categories over the",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(mishandled) = 1500/60000 = 2.5%, which is greater than 2.4%. /  / $$ / P(\\text{mishandled}) = (mishandled_dom + mishandled_intl + mishandled_conn)/grand total / $$ /  / Takeaway: P(mishandled) = 1500/60000 = 2.5%, which is greater than 2.4%.",
+        "B": "P(mishandled|connecting) = 250/5000 = 5%. P(mishandled|domestic) = 800/40000 = 2%. Ratio = 5/2 = 2.5 exactly. The ratio is exactly 2.5, not more than 2.5, so the statement is FALSE — another exact-equality trap. /  / $$ / Ratio = [mishandled_conn/conn total] ÷ [mishandled_dom/dom total",
+        "C": "Given a bag was mishandled: P(international|mishandled) = 450/1500 = 30%, and P(connecting|mishandled) = 250/1500 ≈ 16.667%. Combined: 30%+16.667% = 46.667%, which is greater than 45%. /  / $$ / P(\\text{intl or conn | mishandled}) = (mishandled_intl + mishandled_conn)/(total mishandled",
+        "D": "P(domestic|mishandled) = 800/1500 ≈ 53.333%, which is not less than 50%. /  / $$ / P(\\text{domestic|mishandled}) = (mishandled_dom)/(total mishandled) / $$ /  / Takeaway: P(domestic|mishandled) = 800/1500 ≈ 53.333%, which is not less than 50%.",
+        "E": "P(handled correctly) = 1 - P(mishandled) = 1 - 2.5% = 97.5%, which is greater than 97%. /  / $$ / P(\\text{handled correctly}) = 1 - P(\\text{mishandled}) / $$ /  / Takeaway: P(handled correctly) = 1 - P(mishandled) = 1 - 2.5% = 97.5%, which is greater than 97%."
+      }
+    },
+    {
+      "id": "math-12-90",
+      "subsection": "12.3",
+      "title": "Two departments at a university submit final theses each spring",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(late) = 324/6000 = 5.4%, which is greater than 5.3%. /  / $$ / P(\\text{late}) = (late_History + late_Engineering)/grand total / $$ /  / Takeaway: P(late) = 324/6000 = 5.4%, which is greater than 5.3%.",
+        "B": "P(late|History) = 216/2400 = 9%. P(late|Engineering) = 108/3600 = 3%. Ratio = 9/3 = 3.0 exactly. The ratio is exactly 3, not more than 3, so the statement is FALSE. /  / $$ / Ratio = [late_History/History total] ÷ [late_Engineering/Engineering total] / $$ /  / Takeaway: The ratio is exactly ",
+        "C": "Given a thesis was late, divide the History-late count by the total late count: P(History|late) = 216/324 ≈ 66.667%, which is greater than 65%. /  / $$ / P(\\text{History|late}) = (late_History)/(total late) / $$ /  / Takeaway: Given a thesis was late, divide the History-late count by the tot",
+        "D": "P(Engineering|late) = 108/324 ≈ 33.333%, which is not greater than 35%. /  / $$ / P(\\text{Engineering|late}) = (late_Engineering)/(total late) / $$ /  / Takeaway: P(Engineering|late) = 108/324 ≈ 33.333%, which is not greater than 35%.",
+        "E": "P(on time) = 1 - P(late) = 1 - 5.4% = 94.6%, which is greater than 94.5%. A close call — 94.6% clears the 94.5% threshold by only a tenth of a percentage point. /  / $$ / P(\\text{on time}) = 1 - P(\\text{late}) / $$ /  / Takeaway: A close call — 94.6% clears the 94.5% threshold by only a tent"
+      }
+    },
+    {
+      "id": "math-12-91",
+      "subsection": "12.3",
+      "title": "A manufacturing plant runs three shifts each day",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(defective) = 750/24000 = 3.125%, which is not greater than 3.2%. /  / $$ / P(\\text{defective}) = (def_Morning + def_Afternoon + def_Night)/grand total / $$ /  / Takeaway: P(defective) = 750/24000 = 3.125%, which is not greater than 3.2%.",
+        "B": "P(defective|Afternoon) = 320/8000 = 4%. P(defective|Morning) = 250/10000 = 2.5%. Ratio = 4/2.5 = 1.6, which is not greater than 1.7. /  / $$ / Ratio = [def_Afternoon/Afternoon total] ÷ [def_Morning/Morning total] / $$ /  / Takeaway: Ratio = 4/2.5 = 1.6, which is not greater than 1.7.",
+        "C": "Given a defective unit, divide the Afternoon-defect count by the total defect count: P(Afternoon|defective) = 320/750 ≈ 42.667%, which is not greater than 43%. A close call — 42.667% falls about a third of a percentage point short of the threshold. /  / $$ / P(\\text{Afternoon|defective",
+        "D": "P(Morning|defective) = 250/750 ≈ 33.333%, and P(Afternoon|defective) ≈ 42.667% (from statement C). 33.333% is not greater than 42.667% — the Afternoon shift, despite producing fewer units than the Morning shift, contributes a bigger share of all defects because its defect rate is",
+        "E": "P(not defective) = 1 - P(defective) = 1 - 3.125% = 96.875%, which is greater than 96.8%. A very close call — 96.875% clears the 96.8% threshold by only 0.075 percentage points. /  / $$ / P(\\text{not defective}) = 1 - P(\\text{defective}) Tip: with three categories instead of two, a comp"
+      }
+    },
+    {
+      "id": "math-12-92",
+      "subsection": "12.3",
+      "title": "A logistics company reviewed a month of shipments sent by two methods",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(lost) = 480/40000 = 1.2%, which is greater than 1.1%. /  / $$ / P(\\text{lost}) = (lost_Ground + lost_Air)/grand total / $$ /  / Takeaway: P(lost) = 480/40000 = 1.2%, which is greater than 1.1%.",
+        "B": "P(lost|Ground) = 375/25000 = 1.5%, which is greater than 1.4%. /  / $$ / P(\\text{lost|Ground}) = (lost_Ground)/(Ground total) / $$ /  / Takeaway: P(lost|Ground) = 375/25000 = 1.5%, which is greater than 1.4%.",
+        "C": "Given a shipment was lost, divide the Ground-lost count by the total lost count: P(Ground|lost) = 375/480 = 78.125%, which is not greater than 80%. /  / $$ / P(\\text{Ground|lost}) = (lost_Ground)/(total lost) / $$ /  / Takeaway: Given a shipment was lost, divide the Ground-lost count by the ",
+        "D": "P(Air|lost) = 105/480 = 21.875%, which is not less than 20%. /  / $$ / P(\\text{Air|lost}) = (lost_Air)/(total lost) / $$ /  / Takeaway: P(Air|lost) = 105/480 = 21.875%, which is not less than 20%.",
+        "E": "P(not lost) = 1 - P(lost) = 1 - 1.2% = 98.8%, which is not greater than 98.9%. A close call — 98.8% falls just a tenth of a percentage point short. /  / $$ / P(\\text{not lost}) = 1 - P(\\text{lost}) / $$ /  / Takeaway: A close call — 98.8% falls just a tenth of a percentage point short."
+      }
+    },
+    {
+      "id": "math-12-93",
+      "subsection": "12.3",
+      "title": "A certification board compared pass rates between two exam formats offered last",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ 11.75\\%,\\quad18\\%,\\quad \\frac{810}{1410} ≈ 57.447\\%,\\quad \\frac{600}{1410} ≈ 42.553\\%,\\quad88.25\\%. $$  Takeaway:  $$ 11.75\\%,\\quad18\\%,\\quad \\frac{810}{1410} ≈ 57.447\\%,\\quad \\frac{600}{1410} ≈ 42.553\\%,\\quad88.25\\%.",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(fail) = 1410/12000 = 11.75%, which is greater than 11.5%. /  / $$ / P(\\text{fail}) = (fail_Online + fail_InPerson)/grand total / $$ /  / Takeaway: P(fail) = 1410/12000 = 11.75%, which is greater than 11.5%.",
+        "B": "P(fail|Online) = 810/4500 = 18%, which is greater than 17%. /  / $$ / P(\\text{fail|Online}) = (fail_Online)/(Online total) / $$ /  / Takeaway: P(fail|Online) = 810/4500 = 18%, which is greater than 17%.",
+        "C": "Given a candidate failed, divide the online-fail count by the total fail count: P(Online|fail) = 810/1410 ≈ 57.447%, which is greater than 57%. /  / $$ / P(\\text{Online|fail}) = (fail_Online)/(total fails) / $$ /  / Takeaway: Given a candidate failed, divide the online-fail count by the tota",
+        "D": "P(InPerson|fail) = 600/1410 ≈ 42.553%, which is greater than 40%. /  / $$ / P(\\text{InPerson|fail}) = (fail_InPerson)/(total fails) / $$ /  / Takeaway: P(InPerson|fail) = 600/1410 ≈ 42.553%, which is greater than 40%.",
+        "E": "P(pass) = 1 - P(fail) = 1 - 11.75% = 88.25%, which is greater than 87%. /  / $$ / P(\\text{pass}) = 1 - P(\\text{fail}) / $$ /  / Takeaway: P(pass) = 1 - P(fail) = 1 - 11.75% = 88.25%, which is greater than 87%."
+      }
+    },
+    {
+      "id": "math-12-94",
+      "subsection": "12.3",
+      "title": "A restaurant chain's health department compiled a year of inspection results",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(violation) = 930/30000 = 3.1%, which is greater than 3%. /  / $$ / P(\\text{violation}) = (viol_Franchise + viol_Corporate + viol_Kiosk)/grand total / $$ /  / Takeaway: P(violation) = 930/30000 = 3.1%, which is greater than 3%.",
+        "B": "P(violation|Kiosk) = 210/3000 = 7%, which is greater than 6.5%. /  / $$ / P(\\text{violation|Kiosk}) = (viol_Kiosk)/(Kiosk total) / $$ /  / Takeaway: P(violation|Kiosk) = 210/3000 = 7%, which is greater than 6.5%.",
+        "C": "Given a violation was found, divide the Franchise-violation count by the total violation count: P(Franchise|violation) = 540/930 ≈ 58.065%, which is not greater than 60%. /  / $$ / P(\\text{Franchise|violation}) = (viol_Franchise)/(total violations) / $$ /  / Takeaway: Given a violation was f",
+        "D": "P(Corporate|violation) = 180/930 ≈ 19.355%, and P(Kiosk|violation) = 210/930 ≈ 22.581%. Combined: 19.355%+22.581% = 41.935%, which is greater than 40%. /  / $$ / P(\\text{Corporate or Kiosk | violation}) = (viol_Corporate + viol_Kiosk)/(total violations) / $$ /  / Takeaway: Combined: 19.355%+",
+        "E": "P(no violation) = 1 - P(violation) = 1 - 3.1% = 96.9%, which is not greater than 97%. A close call — 96.9% falls just a tenth of a percentage point short. /  / $$ / P(\\text{no violation}) = 1 - P(\\text{violation}) / $$ /  / Takeaway: A close call — 96.9% falls just a tenth of a percentage po"
+      }
+    },
+    {
+      "id": "math-12-95",
+      "subsection": "12.3",
+      "title": "A mobile carrier sampled call quality across its two network types over a",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(dropped) = 1100/100000 = 1.1%, which is greater than 1.05%. /  / $$ / P(\\text{dropped}) = (dropped_4G + dropped_5G)/grand total / $$ /  / Takeaway: P(dropped) = 1100/100000 = 1.1%, which is greater than 1.05%.",
+        "B": "P(dropped|4G) = 900/60000 = 1.5%, which is not greater than 1.6%. /  / $$ / P(\\text{dropped|4G}) = (dropped_4G)/(4G total) / $$ /  / Takeaway: P(dropped|4G) = 900/60000 = 1.5%, which is not greater than 1.6%.",
+        "C": "Given a call was dropped, divide the 4G-dropped count by the total dropped count: P(4G|dropped) = 900/1100 ≈ 81.818%, which is not greater than 82%. A very close call — 81.818% falls less than two-tenths of a percentage point short of 82%. /  / $$ / P(\\text{4G|dropped}) = (dropped_4G)/",
+        "D": "P(5G|dropped) = 200/1100 ≈ 18.182%, which is not greater than 20%. /  / $$ / P(\\text{5G|dropped}) = (dropped_5G)/(total dropped) / $$ /  / Takeaway: P(5G|dropped) = 200/1100 ≈ 18.182%, which is not greater than 20%.",
+        "E": "P(not dropped) = 1 - P(dropped) = 1 - 1.1% = 98.9%, which is not greater than 99%. /  / $$ / P(\\text{not dropped}) = 1 - P(\\text{dropped}) / $$ /  / Takeaway: P(not dropped) = 1 - P(dropped) = 1 - 1.1% = 98.9%, which is not greater than 99%."
+      }
+    },
+    {
+      "id": "math-12-96",
+      "subsection": "12.3",
+      "title": "A retailer compiled a quarter's worth of purchase and return data across three",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(return) = 2400/40000 = 6%, which is greater than 5.9%. /  / $$ / P(\\text{return}) = (ret_InStore + ret_Online + ret_Marketplace)/grand total / $$ /  / Takeaway: P(return) = 2400/40000 = 6%, which is greater than 5.9%.",
+        "B": "P(return|Marketplace) = 550/5000 = 11%, which is greater than 10.5%. /  / $$ / P(\\text{return|Marketplace}) = (ret_Marketplace)/(Marketplace total) / $$ /  / Takeaway: P(return|Marketplace) = 550/5000 = 11%, which is greater than 10.5%.",
+        "C": "Given a purchase was returned, divide the In-store-return count by the total return count: P(InStore|return) = 800/2400 ≈ 33.333%, which is not greater than 35%. /  / $$ / P(\\text{InStore|return}) = (ret_InStore)/(total returns) / $$ /  / Takeaway: Given a purchase was returned, divide the I",
+        "D": "P(Online|return) = 1050/2400 = 43.75%, and P(Marketplace|return) = 550/2400 ≈ 22.917%. Combined: 43.75%+22.917% = 66.667%, which is greater than 65%. /  / $$ / P(\\text{Online or Marketplace | return}) = (ret_Online + ret_Marketplace)/(total returns) / $$ /  / Takeaway: Combined: 43.75%+22.91",
+        "E": "P(not returned) = 1 - P(return) = 1 - 6% = 94%, which is not greater than 94.5%. /  / $$ / P(\\text{not returned}) = 1 - P(\\text{return}) Tip: because no statement in this set asks you to compare two categories directly, you never need every number in the table to answer any single stat"
+      }
+    },
+    {
+      "id": "math-12-97",
+      "subsection": "12.3",
+      "title": "An insurance company audited a year of claims across two policy types",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(denied) = 710/50000 = 1.42%, which does not exceed 1.5%. /  / $$ / P(\\text{denied}) = (denied_Auto + denied_Home)/grand total / $$ /  / Takeaway: P(denied) = 710/50000 = 1.42%, which does not exceed 1.5%.",
+        "B": "P(denied|Auto) = 450/30000 = 1.5%, which is not under 1.4% — it's above it. /  / $$ / P(\\text{denied|Auto}) = (denied_Auto)/(Auto total) / $$ /  / Takeaway: P(denied|Auto) = 450/30000 = 1.5%, which is not under 1.4% — it's above it.",
+        "C": "Given a claim was denied, divide the Auto-denied count by the total denied count: P(Auto|denied) = 450/710 ≈ 63.380%, which is not at least 65%. /  / $$ / P(\\text{Auto|denied}) = (denied_Auto)/(total denied) / $$ /  / Takeaway: Given a claim was denied, divide the Auto-denied count by the to",
+        "D": "P(Home|denied) = 260/710 ≈ 36.620%, which is not above 38%. /  / $$ / P(\\text{Home|denied}) = (denied_Home)/(total denied) / $$ /  / Takeaway: P(Home|denied) = 260/710 ≈ 36.620%, which is not above 38%.",
+        "E": "P(not denied) = 1 - P(denied) = 1 - 1.42% = 98.58%, which is greater than 98.5% — every other statement in this question is FALSE. /  / $$ / P(\\text{not denied}) = 1 - P(\\text{denied}) / $$ /  / Takeaway: P(not denied) = 1 - P(denied) = 1 - 1.42% = 98.58%, which is greater than 98.5% — every"
+      }
+    },
+    {
+      "id": "math-12-98",
+      "subsection": "12.3",
+      "title": "A software team reviewed a backlog of bug reports filed under two priority",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ 77\\%,\\quad85\\%,\\quad \\frac{6000}{7700} ≈ 77.922\\%,\\quad \\frac{1700}{7700} ≈ 22.078\\%,\\quad23\\%. $$  Takeaway:  $$ 77\\%,\\quad85\\%,\\quad \\frac{6000}{7700} ≈ 77.922\\%,\\quad \\frac{1700}{7700} ≈ 22.078\\%,\\quad23\\%. $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(valid) = 7700/10000 = 77%, which exceeds 75%. /  / $$ / P(\\text{valid}) = (valid_Critical + valid_Standard)/grand total / $$ /  / Takeaway: P(valid) = 7700/10000 = 77%, which exceeds 75%.",
+        "B": "P(valid|Critical) = 1700/2000 = 85%, which is at least 80%. /  / $$ / P(\\text{valid|Critical}) = (valid_Critical)/(Critical total) / $$ /  / Takeaway: P(valid|Critical) = 1700/2000 = 85%, which is at least 80%.",
+        "C": "Given a bug is valid, divide the Standard-valid count by the total valid count: P(Standard|valid) = 6000/7700 ≈ 77.922%, which is above 75%. /  / $$ / P(\\text{Standard|valid}) = (valid_Standard)/(total valid) / $$ /  / Takeaway: Given a bug is valid, divide the Standard-valid count by the to",
+        "D": "P(Critical|valid) = 1700/7700 ≈ 22.078%, which is under 25%. /  / $$ / P(\\text{Critical|valid}) = (valid_Critical)/(total valid) / $$ /  / Takeaway: P(Critical|valid) = 1700/7700 ≈ 22.078%, which is under 25%.",
+        "E": "P(invalid) = 1 - P(valid) = 1 - 77% = 23%, which is below 25% — every statement in this question is TRUE. /  / $$ / P(\\text{invalid}) = 1 - P(\\text{valid}) / $$ /  / Takeaway: P(invalid) = 1 - P(valid) = 1 - 77% = 23%, which is below 25% — every statement in this question is TRUE."
+      }
+    },
+    {
+      "id": "math-12-99",
+      "subsection": "12.3",
+      "title": "A university's admissions office reviewed a year of applications across three",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(rejected) = 3100/20000 = 15.5%, which is above 15%. /  / $$ / P(\\text{rejected}) = (rej_Domestic + rej_International + rej_Transfer)/grand total / $$ /  / Takeaway: P(rejected) = 3100/20000 = 15.5%, which is above 15%.",
+        "B": "P(rejected|International) = 1200/6000 = 20%, which does not exceed 22%. /  / $$ / P(\\text{rejected|International}) = (rej_International)/(International total) / $$ /  / Takeaway: P(rejected|International) = 1200/6000 = 20%, which does not exceed 22%.",
+        "C": "Given an application was rejected, divide the Domestic-rejected count by the total rejected count: P(Domestic|rejected) = 1800/3100 ≈ 58.065%, which is at least 55%. /  / $$ / P(\\text{Domestic|rejected}) = (rej_Domestic)/(total rejected) / $$ /  / Takeaway: Given an application was rejected,",
+        "D": "P(International|rejected) = 1200/3100 ≈ 38.710%, and P(Transfer|rejected) = 100/3100 ≈ 3.226%. Combined: 38.710%+3.226% = 41.935%, which is not greater than 45%. /  / $$ / P(\\text{International or Transfer | rejected}) = (rej_International + rej_Transfer)/(total rejected) / $$ /  / Takeaway:",
+        "E": "P(accepted) = 1 - P(rejected) = 1 - 15.5% = 84.5%, which exceeds 84%. /  / $$ / P(\\text{accepted}) = 1 - P(\\text{rejected}) / $$ /  / Takeaway: P(accepted) = 1 - P(rejected) = 1 - 15.5% = 84.5%, which exceeds 84%."
+      }
+    },
+    {
+      "id": "math-12-100",
+      "subsection": "12.3",
+      "title": "An airline reviewed a month of flights across two route types",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(delayed) = 4400/60000 ≈ 7.333%, which is not above 7.5%. /  / $$ / P(\\text{delayed}) = (delayed_Domestic + delayed_International)/grand total / $$ /  / Takeaway: P(delayed) = 4400/60000 ≈ 7.333%, which is not above 7.5%.",
+        "B": "P(delayed|Domestic) = 3500/50000 = 7%, which exceeds 6.5%. /  / $$ / P(\\text{delayed|Domestic}) = (delayed_Domestic)/(Domestic total) / $$ /  / Takeaway: P(delayed|Domestic) = 3500/50000 = 7%, which exceeds 6.5%.",
+        "C": "Given a flight was delayed, divide the Domestic-delayed count by the total delayed count: P(Domestic|delayed) = 3500/4400 ≈ 79.545%, which is not at least 82%. /  / $$ / P(\\text{Domestic|delayed}) = (delayed_Domestic)/(total delayed) / $$ /  / Takeaway: Given a flight was delayed, divide the",
+        "D": "P(International|delayed) = 900/4400 ≈ 20.455%, which is greater than 18%. /  / $$ / P(\\text{International|delayed}) = (delayed_International)/(total delayed) / $$ /  / Takeaway: P(International|delayed) = 900/4400 ≈ 20.455%, which is greater than 18%.",
+        "E": "P(on time) = 1 - P(delayed) = 1 - 7.333% = 92.667%, which is not at least 93%. /  / $$ / P(\\text{on time}) = 1 - P(\\text{delayed}) / $$ /  / Takeaway: P(on time) = 1 - P(delayed) = 1 - 7.333% = 92.667%, which is not at least 93%."
+      }
+    },
+    {
+      "id": "math-12-101",
+      "subsection": "12.3",
+      "title": "A manufacturer tracked a year of production and recalls across three plants",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(recalled) = 1200/50000 = 2.4%, which exceeds 2.3%. /  / $$ / P(\\text{recalled}) = (rec_A + rec_B + rec_C)/grand total / $$ /  / Takeaway: P(recalled) = 1200/50000 = 2.4%, which exceeds 2.3%.",
+        "B": "P(recalled|Plant C) = 450/10000 = 4.5%, which is above 4%. /  / $$ / P(\\text{recalled|Plant C}) = (rec_C)/(Plant C total) / $$ /  / Takeaway: P(recalled|Plant C) = 450/10000 = 4.5%, which is above 4%.",
+        "C": "Given a unit was recalled, divide the Plant A-recalled count by the total recalled count: P(Plant A|recalled) = 375/1200 = 31.25%, which is not at least 33%. /  / $$ / P(\\text{Plant A|recalled}) = (rec_A)/(total recalled) / $$ /  / Takeaway: Given a unit was recalled, divide the Plant A-reca",
+        "D": "P(Plant B|recalled) = 375/1200 = 31.25%, and P(Plant C|recalled) = 450/1200 = 37.5%. Combined: 31.25%+37.5% = 68.75%, which is greater than 65%. /  / $$ / P(\\text{Plant B or Plant C | recalled}) = (rec_B + rec_C)/(total recalled) / $$ /  / Takeaway: Combined: 31.25%+37.5% = 68.75%, which is ",
+        "E": "P(not recalled) = 1 - P(recalled) = 1 - 2.4% = 97.6%, which exceeds 97% — every statement in this question except C is TRUE. /  / $$ / P(\\text{not recalled}) = 1 - P(\\text{recalled}) Tip: as in Part 5, no statement here asks you to compare two categories directly, so you never need eve"
+      }
+    },
+    {
+      "id": "math-12-107",
+      "subsection": "12.3",
+      "title": "A bank reviewed a year of loan applications filed at two types of branches",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(reject) = 1880/20000 = 9.4%, which is greater than 9%. /  / $$ / P(\\text{reject}) = (reject_Urban + reject_Rural)/grand total / $$ /  / Takeaway: P(reject) = 1880/20000 = 9.4%, which is greater than 9%.",
+        "B": "P(reject|Rural) = 900/6000 = 15%, which is greater than 14%. /  / $$ / P(\\text{reject|Rural}) = (reject_Rural)/(Rural total) / $$ /  / Takeaway: P(reject|Rural) = 900/6000 = 15%, which is greater than 14%.",
+        "C": "Given an application was rejected, divide the Urban-reject count by the total reject count: P(Urban|reject) = 980/1880 ≈ 52.128%, which is greater than 50%. /  / $$ / P(\\text{Urban|reject}) = (reject_Urban)/(total rejections) / $$ /  / Takeaway: Given an application was rejected, divide the ",
+        "D": "P(Rural|reject) = 900/1880 ≈ 47.872%, which is not greater than 48%. A close call — 47.872% falls just over a tenth of a percentage point short. /  / $$ / P(\\text{Rural|reject}) = (reject_Rural)/(total rejections) / $$ /  / Takeaway: A close call — 47.872% falls just over a tenth of a percen",
+        "E": "P(approved) = 1 - P(reject) = 1 - 9.4% = 90.6%, which is not greater than 91%. /  / $$ / P(\\text{approved}) = 1 - P(\\text{reject}) / $$ /  / Takeaway: P(approved) = 1 - P(reject) = 1 - 9.4% = 90.6%, which is not greater than 91%."
+      }
+    },
+    {
+      "id": "math-12-108",
+      "subsection": "12.3",
+      "title": "A gym chain reviewed a year of membership records across two tiers",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(cancel) = 2280/20000 = 11.4%, which is greater than 11%. /  / $$ / P(\\text{cancel}) = (cancel_Basic + cancel_Premium)/grand total / $$ /  / Takeaway: P(cancel) = 2280/20000 = 11.4%, which is greater than 11%.",
+        "B": "P(cancel|Basic) = 1800/12000 = 15%, which is greater than 14%. /  / $$ / P(\\text{cancel|Basic}) = (cancel_Basic)/(Basic total) / $$ /  / Takeaway: P(cancel|Basic) = 1800/12000 = 15%, which is greater than 14%.",
+        "C": "Given a member cancelled, divide the Basic-cancel count by the total cancel count: P(Basic|cancel) = 1800/2280 ≈ 78.947%, which is not greater than 80%. /  / $$ / P(\\text{Basic|cancel}) = (cancel_Basic)/(total cancellations) / $$ /  / Takeaway: Given a member cancelled, divide the Basic-canc",
+        "D": "P(Premium|cancel) = 480/2280 ≈ 21.053%, which is not greater than 22%. /  / $$ / P(\\text{Premium|cancel}) = (cancel_Premium)/(total cancellations) / $$ /  / Takeaway: P(Premium|cancel) = 480/2280 ≈ 21.053%, which is not greater than 22%.",
+        "E": "P(retained) = 1 - P(cancel) = 1 - 11.4% = 88.6%, which is greater than 88%. /  / $$ / P(\\text{retained}) = 1 - P(\\text{cancel}) / $$ /  / Takeaway: P(retained) = 1 - P(cancel) = 1 - 11.4% = 88.6%, which is greater than 88%."
+      }
+    },
+    {
+      "id": "math-12-109",
+      "subsection": "12.3",
+      "title": "A city transit authority reviewed a month of on-time performance across three",
+      "kind": "generic_placeholder",
+      "shared_by": 5,
+      "old_sample": "Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.  Takeaway: Organize counts into a table. Then P(A given B)=|A and B||B| and P(B given A)=|A and B||A|.",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(late) = 1600/40000 = 4%, which is greater than 3.9%. /  / $$ / P(\\text{late}) = (late_Express + late_Local + late_Shuttle)/grand total / $$ /  / Takeaway: P(late) = 1600/40000 = 4%, which is greater than 3.9%.",
+        "B": "P(late|Shuttle) = 450/5000 = 9%, which is greater than 8.5%. /  / $$ / P(\\text{late|Shuttle}) = (late_Shuttle)/(Shuttle total) / $$ /  / Takeaway: P(late|Shuttle) = 450/5000 = 9%, which is greater than 8.5%.",
+        "C": "Given a trip was late, divide the Local-late count by the total late count: P(Local|late) = 750/1600 = 46.875%, which is greater than 45%. /  / $$ / P(\\text{Local|late}) = (late_Local)/(total late trips) / $$ /  / Takeaway: Given a trip was late, divide the Local-late count by the total late",
+        "D": "P(Express|late) = 400/1600 = 25%, and P(Shuttle|late) = 450/1600 = 28.125%. Combined: 25%+28.125% = 53.125%, which is greater than 50%. /  / $$ / P(\\text{Express or Shuttle | late}) = (late_Express + late_Shuttle)/(total late trips) / $$ /  / Takeaway: Combined: 25%+28.125% = 53.125%, which ",
+        "E": "P(on time) = 1 - P(late) = 1 - 4% = 96% exactly. 96% is not greater than 96% — it's exactly equal, and 'greater than' requires a strict inequality. This is the same exact-equality trap seen in earlier parts, just applied to a complement. /  / $$ / P(\\text{on time}) = 1 - P(\\text{late})"
+      }
+    },
+    {
+      "id": "math-12-110",
+      "subsection": "12.3",
+      "title": "An online marketplace reviewed a quarter of transactions split across two",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ \\frac{550}{50000}=1.1\\%,\\quad \\frac{450}{30000}=1.5\\%,\\quad \\frac{450}{550} ≈ 81.818\\%,\\quad \\frac{100}{550} ≈ 18.182\\%,\\quad 98.9\\%. $$  Takeaway:  $$ \\frac{550}{50000}=1.1\\%,\\quad \\frac{450}{30000}=1.5\\%,\\quad \\frac",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "P(chargeback) = 550/50000 = 1.1%, which is greater than 1.05%. /  / $$ / P(\\text{chargeback}) = (cb_CreditCard + cb_Wallet)/grand total / $$ /  / Takeaway: P(chargeback) = 550/50000 = 1.1%, which is greater than 1.05%.",
+        "B": "P(chargeback|CreditCard) = 450/30000 = 1.5%, which is greater than 1.4%. /  / $$ / P(\\text{chargeback|CreditCard}) = (cb_CreditCard)/(CreditCard total) / $$ /  / Takeaway: P(chargeback|CreditCard) = 450/30000 = 1.5%, which is greater than 1.4%.",
+        "C": "Given a chargeback occurred, divide the credit-card-chargeback count by the total chargeback count: P(CreditCard|chargeback) = 450/550 ≈ 81.818%, which is greater than 80%. /  / $$ / P(\\text{CreditCard|chargeback}) = (cb_CreditCard)/(total chargebacks) / $$ /  / Takeaway: Given a chargeback ",
+        "D": "P(Wallet|chargeback) = 100/550 ≈ 18.182%, which is greater than 17%. /  / $$ / P(\\text{Wallet|chargeback}) = (cb_Wallet)/(total chargebacks) / $$ /  / Takeaway: P(Wallet|chargeback) = 100/550 ≈ 18.182%, which is greater than 17%.",
+        "E": "P(no chargeback) = 1 - P(chargeback) = 1 - 1.1% = 98.9%, which is greater than 98.8%. /  / $$ / P(\\text{no chargeback}) = 1 - P(\\text{chargeback}) / $$ /  / Takeaway: P(no chargeback) = 1 - P(chargeback) = 1 - 1.1% = 98.9%, which is greater than 98.8%."
+      }
+    },
+    {
+      "id": "math-12-112",
+      "subsection": "12.4",
+      "title": "Discrete Probability Table",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=0(0.10)+1(0.25)+2(0.30)+3(0.20)+4(0.15)=2.05 $$  Takeaway:  $$ the expected value of X=0(0.10)+1(0.25)+2(0.30)+3(0.20)+4(0.15)=2.05 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 2.05, which is greater than 2. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 2.05, which is greater than 2.",
+        "B": "Var(X) = 1.4475, which is greater than 1.4. /  / $$ / Var(X) = E(X²) - [E(X)]² / $$ /  / Takeaway: Var(X) = 1.4475, which is greater than 1.4.",
+        "C": "σ ≈ 1.2031, which is greater than 1.2 (a very narrow margin). /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ 1.2031, which is greater than 1.2 (a very narrow margin).",
+        "D": "σ ≈ 1.2031, which is less than 1.25. /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ 1.2031, which is less than 1.25.",
+        "E": "E(X²) = 5.65, which is greater than 5.5. /  / $$ / E(X²) = Σ x²·P(X=x) / $$ /  / Takeaway: E(X²) = 5.65, which is greater than 5.5."
+      }
+    },
+    {
+      "id": "math-12-113",
+      "subsection": "12.4",
+      "title": "Dice Combinatorics",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(X=k)=\\frac{2k-1}{36} $$  Takeaway:  $$ P(X=k)=\\frac{2k-1}{36} $$",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) ≈ 4.4722, which is greater than 4.4. /  / $$ / E(X) = Σ k·P(X=k) / $$ /  / Takeaway: E(X) ≈ 4.4722, which is greater than 4.4.",
+        "B": "Var(X) ≈ 1.9715, which is not greater than 2 (a close call). /  / $$ / Var(X) = E(X²) - [E(X)]² / $$ /  / Takeaway: Var(X) ≈ 1.9715, which is not greater than 2 (a close call).",
+        "C": "σ ≈ 1.4041, which is less than 1.5. /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ 1.4041, which is less than 1.5.",
+        "D": "E(X²) ≈ 21.9722, which is not greater than 22 (an extremely close call — only about 0.03 short). /  / $$ / E(X²) = Σ k²·P(X=k) / $$ /  / Takeaway: E(X²) ≈ 21.9722, which is not greater than 22 (an extremely close call — only about 0.03 short).",
+        "E": "σ ≈ 1.4041, which is greater than 1.4 (a narrow margin). /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ 1.4041, which is greater than 1.4 (a narrow margin)."
+      }
+    },
+    {
+      "id": "math-12-114",
+      "subsection": "12.4",
+      "title": "Startup Profit Scenario",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ \\begin{array}{c|rrrr} X&-\\$5{,}000&\\$0&\\$10{,}000&\\$25{,}000\\\\ \\hline P&0.20&0.30&0.35&0.15 \\end{array} $$  Takeaway:  $$ \\begin{array}{c|rrrr} X&-\\$5{,}000&\\$0&\\$10{,}000&\\$25{,}000\\\\ \\hline P&0.20&0.30&0.35&0.15 \\en",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = $6,250, which is greater than $6,000. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = $6,250, which is greater than $6,000.",
+        "B": "σ ≈ $9,730.75, which is greater than $9,700 (a narrow margin). /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ $9,730.75, which is greater than $9,700 (a narrow margin).",
+        "C": "Var(X) = $94,687,500, which is greater than $90,000,000. /  / $$ / Var(X) = E(X²) - [E(X)]² / $$ /  / Takeaway: Var(X) = $94,687,500, which is greater than $90,000,000.",
+        "D": "σ ≈ $9,730.75, which is less than $10,000. /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ $9,730.75, which is less than $10,000.",
+        "E": "E(X²) = $133,750,000, which is not greater than $135,000,000 (a close call — about $1.25 million short). /  / $$ / E(X²) = Σ x²·P(X=x) / $$ /  / Takeaway: E(X²) = $133,750,000, which is not greater than $135,000,000 (a close call — about $1.25 million short)."
+      }
+    },
+    {
+      "id": "math-12-115",
+      "subsection": "12.4",
+      "title": "Carnival Spinner with a Processing Fee",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ \\begin{array}{c|rrrr} X&\\$0&\\$5&\\$20&\\$100\\\\ \\hline P&0.40&0.35&0.20&0.05 \\end{array} $$  Takeaway:  $$ \\begin{array}{c|rrrr} X&\\$0&\\$5&\\$20&\\$100\\\\ \\hline P&0.40&0.35&0.20&0.05 \\end{array} $$",
+      "answers": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = $10.75, which is greater than $10. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = $10.75, which is greater than $10.",
+        "B": "σ ≈ $21.75, which is not greater than $22 (a close call). /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ $21.75, which is not greater than $22 (a close call).",
+        "C": "E(Y) = E(X) - 2 = $8.75, which is greater than $8.50. /  / $$ / E(aX+b) = a·E(X)+b, here a=1, b=-2 / $$ /  / Takeaway: E(Y) = E(X) - 2 = $8.75, which is greater than $8.50.",
+        "D": "Var(Y) = Var(X) = 473.1875, which is greater than 470 (unaffected by the constant fee). /  / $$ / Var(aX+b) = a²·Var(X), here a=1 so Var(Y)=Var(X) / $$ /  / Takeaway: Var(Y) = Var(X) = 473.1875, which is greater than 470 (unaffected by the constant fee).",
+        "E": "σ of Y = σ of X ≈ $21.75, which is not less than $21. /  / $$ / σ of (aX+b) = |a|·σ of X, here a=1 so σ is unchanged / $$ /  / Takeaway: σ of Y = σ of X ≈ $21.75, which is not less than $21."
+      }
+    },
+    {
+      "id": "math-12-116",
+      "subsection": "12.4",
+      "title": "Manufacturing Defect Counts",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ \\begin{array}{c|ccccc} x&0&1&2&3&4\\\\ \\hline P&0.55&0.25&0.12&0.06&0.02 \\end{array} $$  Takeaway:  $$ \\begin{array}{c|ccccc} x&0&1&2&3&4\\\\ \\hline P&0.55&0.25&0.12&0.06&0.02 \\end{array} $$",
+      "answers": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 0.75, which is not greater than 0.8. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 0.75, which is not greater than 0.8.",
+        "B": "Var(X) = 1.0275, which is not greater than 1.05. /  / $$ / Var(X) = E(X²) - [E(X)]² / $$ /  / Takeaway: Var(X) = 1.0275, which is not greater than 1.05.",
+        "C": "σ ≈ 1.0137, which is not greater than 1.05. /  / $$ / σ = √Var(X) / $$ /  / Takeaway: σ ≈ 1.0137, which is not greater than 1.05.",
+        "D": "E(X²) = 1.59, which is not greater than 1.7. /  / $$ / E(X²) = Σ x²·P(X=x) / $$ /  / Takeaway: E(X²) = 1.59, which is not greater than 1.7.",
+        "E": "σ ≈ 1.0137, which is less than 1.02 — every other statement in this question is FALSE. /  / $$ / σ = √Var(X) Tip: always compute E(X²) before Var(X) — it's the one extra piece every version of this problem needs, whether the random variable is a table lookup (Questions 1, 3, 5), a comb"
+      }
+    },
+    {
+      "id": "math-12-117",
+      "subsection": "12.4",
+      "title": "A Vending Machine",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ μ=\\frac{180+220}{2}=200 $$  Takeaway:  $$ μ=\\frac{180+220}{2}=200 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = 200 ml exactly, as computed above. /  / $$ / μ = (a+b)/2 / $$ /  / Takeaway: μ = 200 ml exactly, as computed above.",
+        "B": "σ² ≈ 133.333, which is greater than 130. /  / $$ / σ² = (b-a)²/12 / $$ /  / Takeaway: σ² ≈ 133.333, which is greater than 130.",
+        "C": "σ ≈ 11.547 ml, which is not greater than 12 ml. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ ≈ 11.547 ml, which is not greater than 12 ml.",
+        "D": "The new range 160–240 has width 80, double the original width of 40. Since σ² = (width)²/12, and the width doubles, σ² scales by 2² = 4 — it becomes exactly four times as large (from ≈133.33 to ≈533.33). /  / $$ / σ² ∝ (width)², so doubling the width quadruples σ² / $$ /  / Takeaway: Since σ",
+        "E": "10% of μ = 0.10 × 200 = 20 ml. σ ≈ 11.547 ml, which is not greater than 20 ml. /  / $$ / Compare σ to 0.10×μ / $$ /  / Takeaway: 10% of μ = 0.10 × 200 = 20 ml. σ ≈ 11.547 ml, which is not greater than 20 ml."
+      }
+    },
+    {
+      "id": "math-12-118",
+      "subsection": "12.4",
+      "title": "A Call Center",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ μ=σ²=6,\\qquad σ=\\sqrt6 ≈ 2.449 $$  Takeaway:  $$ μ=σ²=6,\\qquad σ=\\sqrt6 ≈ 2.449 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = 6 calls per hour, as given. /  / $$ / μ = λ, for a Poisson(λ) random variable / $$ /  / Takeaway: μ = 6 calls per hour, as given.",
+        "B": "This is the defining property of the Poisson distribution: σ² = λ = μ always, unlike most other distributions where the mean and variance are unrelated. /  / $$ / σ² = λ = μ, for a Poisson(λ) random variable / $$ /  / Takeaway: This is the defining property of the Poisson distribution: σ² = ",
+        "C": "σ = √6 ≈ 2.449, which is not greater than 2.5 — a close call. /  / $$ / σ = √λ / $$ /  / Takeaway: σ = √6 ≈ 2.449, which is not greater than 2.5 — a close call.",
+        "D": "If λ doubles to 12, the new σ = √12 ≈ 3.464. Doubling 2.449 would give 4.899, but 3.464 is not equal to that — σ scales by √2 ≈ 1.414, not by 2. So σ does not double. /  / $$ / σ = √λ scales by √2 when λ doubles, not by 2 / $$ /  / Takeaway: So σ does not double.",
+        "E": "If λ doubles to 12, the new σ² = 12, which is exactly double the original σ² = 6. Since σ² = λ directly, doubling λ always exactly doubles σ² — this is the one quantity here that does scale simply. /  / $$ / σ² = λ scales exactly with λ Questions 1 and 2 both make the same point from t"
+      }
+    },
+    {
+      "id": "math-12-119",
+      "subsection": "12.4",
+      "title": "Company Profit",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ E(R-C)=50{,}000-32{,}000=18{,}000 $$  Takeaway:  $$ E(R-C)=50{,}000-32{,}000=18{,}000 $$",
+      "answers": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ(Profit) = $18,000, as computed above. /  / $$ / μ(R-C) = μ(R) - μ(C) / $$ /  / Takeaway: μ(Profit) = $18,000, as computed above.",
+        "B": "This looks plausible because Profit is a subtraction, but it's incorrect: σ²(Profit) = σ²(R) + σ²(C) = 5,000,000, not σ²(R) - σ²(C), which would give 4,000,000 - 1,000,000 = 3,000,000. Variances always add for independent variables, whether you're computing a sum or a difference ",
+        "C": "σ(Profit) ≈ $2,236.07, which is greater than $2,200. /  / $$ / σ(Profit) = √σ²(Profit) / $$ /  / Takeaway: σ(Profit) ≈ $2,236.07, which is greater than $2,200.",
+        "D": "σ(R) = √4,000,000 = $2,000. σ(C) = √1,000,000 = $1,000. Their sum is $3,000. σ(Profit) ≈ $2,236.07, which is less than $3,000 — standard deviations don't add directly, so the combined spread is smaller than simply adding the two individual spreads. /  / $$ / σ(R-C) < σ(R)+σ(C) in gener",
+        "E": "σ(R) - σ(C) = 2,000 - 1,000 = $1,000, which does not equal σ(Profit) ≈ $2,236.07. Standard deviations are never found by simply adding or subtracting the individual standard deviations — you must always combine the variances first and take the square root at the end. /  / $$ / σ(R-C) ≠"
+      }
+    },
+    {
+      "id": "math-12-120",
+      "subsection": "12.4",
+      "title": "An Investment Portfolio",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ μ_A=8\\%,\\quad σ_A²=25,\\qquad μ_B=5\\%,\\quad σ_B²=16 $$  Takeaway:  $$ μ_A=8\\%,\\quad σ_A²=25,\\qquad μ_B=5\\%,\\quad σ_B²=16 $$",
+      "answers": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ(portfolio) = 6.8%, as computed above. /  / $$ / μ(wA·A + wB·B) = wA·μ(A) + wB·μ(B) / $$ /  / Takeaway: μ(portfolio) = 6.8%, as computed above.",
+        "B": "This uses the weights directly instead of squaring them: 0.6×25 + 0.4×16 = 15 + 6.4 = 21.4, which does not equal the correct σ²(portfolio) = 11.56. This is a common error — variance combines with the SQUARE of each weight, not the weight itself, because Var(wX) = w²Var(X). /  / $$ / σ²",
+        "C": "σ(portfolio) = √11.56 = 3.4% exactly, as computed in Step 1. /  / $$ / σ(portfolio) = √σ²(portfolio) / $$ /  / Takeaway: σ(portfolio) = √11.56 = 3.4% exactly, as computed in Step 1.",
+        "D": "σ(A) = √25 = 5%, and σ(B) = √16 = 4%. The weighted average is 0.6×5 + 0.4×4 = 3+1.6 = 4.6%. The portfolio's actual σ = 3.4%, which is less than 4.6% — this is the mathematical basis of diversification: combining two independent, imperfectly- correlated assets produces a portfolio",
+        "E": "σ²(portfolio) = 11.56, which is not greater than σ²(B) = 16 — it's smaller. Even though Stock B alone is less volatile than the naive combination might suggest, blending it with Stock A (a partially offsetting independent asset) at a 40% weight still results in a portfolio varian"
+      }
+    },
+    {
+      "id": "math-12-121",
+      "subsection": "12.4",
+      "title": "Standardized Exam Scores",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ μ\\pmσ=[435,605],\\qquad μ\\pm2σ=[350,690] $$  Takeaway:  $$ μ\\pmσ=[435,605],\\qquad μ\\pm2σ=[350,690] $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "(690 - 520)/85 = 170/85 = 2.0 exactly, so 690 is exactly 2σ above μ. /  / $$ / Number of σ above μ = (value - μ)/σ / $$ /  / Takeaway: (690 - 520)/85 = 170/85 = 2.0 exactly, so 690 is exactly 2σ above μ.",
+        "B": "435 and 605 are exactly μ-σ and μ+σ, so by the empirical rule, about 68% of scores fall in this range. /  / $$ / Empirical rule: ≈68% of values lie within μ ± 1σ / $$ /  / Takeaway: 435 and 605 are exactly μ-σ and μ+σ, so by the empirical rule, about 68% of scores fall in this range.",
+        "C": "(520 - 350)/85 = 170/85 = 2.0 exactly, so 350 is exactly 2σ below μ — not more than 2σ below it. This is a common trap: 'exactly at the boundary' is not the same as 'beyond the boundary.' /  / $$ / Number of σ below μ = (μ - value)/σ / $$ /  / Takeaway: This is a common trap: 'exactly at the",
+        "D": "350 and 690 are exactly μ-2σ and μ+2σ, so by the empirical rule, about 95% of scores fall in this range. /  / $$ / Empirical rule: ≈95% of values lie within μ ± 2σ / $$ /  / Takeaway: 350 and 690 are exactly μ-2σ and μ+2σ, so by the empirical rule, about 95% of scores fall in this range.",
+        "E": "σ² = σ×σ = 85² = 7,225 exactly. /  / $$ / σ² = σ² / $$ /  / Takeaway: σ² = σ×σ = 85² = 7,225 exactly."
+      }
+    },
+    {
+      "id": "math-12-122",
+      "subsection": "12.4",
+      "title": "Find the Missing Value",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ 3+0.2k=8\\Rightarrow k=25 $$  Takeaway:  $$ 3+0.2k=8\\Rightarrow k=25 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "k = 25, exactly as solved in Step 1. /  / $$ / Solve μ = Σx·P(X=x) for the unknown value / $$ /  / Takeaway: k = 25, exactly as solved in Step 1.",
+        "B": "σ² = 91 exactly, as computed in Step 2. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 91 exactly, as computed in Step 2.",
+        "C": "σ ≈ 9.539, which is not greater than 10 — a close call worth the extra decimal place. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ ≈ 9.539, which is not greater than 10 — a close call worth the extra decimal place.",
+        "D": "Redoing Step 1 with μ = 6 instead of 8: 3 + 0.2k = 6, so 0.2k = 3, giving k = 15. Since 15 is smaller than 25, the statement is true. This makes sense: k carries only a 0.2 probability weight, so pulling the overall mean down requires k itself to be smaller. /  / $$ / Re-solve 3 + 0.2k",
+        "E": "Each value's contribution to σ² is P(x)×(x-μ)². For x=10: 0.3×(10-8)² = 0.3×4 = 1.2. For x=25: 0.2×(25-8)² = 0.2×289 = 57.8. The contribution from x=25 (57.8) is far larger than from x=10 (1.2), so the statement — which claims the opposite — is false. Even though x=10 has a highe"
+      }
+    },
+    {
+      "id": "math-12-123",
+      "subsection": "12.4",
+      "title": "A Fair Six-Sided Die",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ μ=3.5,\\quad the expected value of X squared=\\frac{91}{6} $$  Takeaway:  $$ μ=3.5,\\quad the expected value of X squared=\\frac{91}{6} $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = 3.5 exactly, as computed in Step 1. /  / $$ / μ = Σ x·P(X=x) / $$ /  / Takeaway: μ = 3.5 exactly, as computed in Step 1.",
+        "B": "σ² = 35/12 ≈ 2.9167, which rounds to 2.92. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 35/12 ≈ 2.9167, which rounds to 2.92.",
+        "C": "σ = √2.9167 ≈ 1.7078, which rounds to 1.71. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ = √2.9167 ≈ 1.7078, which rounds to 1.71.",
+        "D": "Contribution to σ² is P(x)·(x-μ)². Both x=1 and x=6 sit exactly 2.5 away from μ = 3.5, and both have the same probability, 1/6. So each contributes (1/6)(2.5²) = 1.0417 — the two contributions are equal, not one larger than the other. /  / $$ / Contribution to σ² from value x is P(\\tex",
+        "E": "Doubling every face value is the linear transformation Y = 2X. σ_Y = |a|·σ_X = 2 × 1.7078 ≈ 3.4156, which rounds to 3.42. /  / $$ / Y = aX ⇒ σ_Y = |a|·σ_X / $$ /  / Takeaway: Doubling every face value is the linear transformation Y = 2X. σ_Y = |a|·σ_X = 2 × 1.7078 ≈ 3.4156, which rounds to 3"
+      }
+    },
+    {
+      "id": "math-12-124",
+      "subsection": "12.4",
+      "title": "Heads in Three Coin Flips",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(X=0,1,2,3)=\\frac18,\\frac38,\\frac38,\\frac18 $$  Takeaway:  $$ P(X=0,1,2,3)=\\frac18,\\frac38,\\frac38,\\frac18 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = 1.5 exactly, as computed in Step 1. /  / $$ / μ = Σ x·P(X=x) / $$ /  / Takeaway: μ = 1.5 exactly, as computed in Step 1.",
+        "B": "σ² = 0.75 exactly, as computed in Step 1. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 0.75 exactly, as computed in Step 1.",
+        "C": "σ = √0.75 ≈ 0.87, not 1.22. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ = √0.75 ≈ 0.87, not 1.22.",
+        "D": "P(X=1) = 3/8 = 0.375 and P(X=0) = 1/8 = 0.125. Since 0.375 is greater than 0.125, P(X=1) is not less than P(X=0). /  / $$ / Compare P(X=1) to P(X=0) directly from the distribution / $$ /  / Takeaway: Since 0.375 is greater than 0.125, P(X=1) is not less than P(X=0).",
+        "E": "Contribution to σ² is P(x)·(x-μ)². For x=0: (1/8)(1.5²) = 0.28125. For x=1: (3/8)(0.5²) = 0.09375. The contribution from x=0 (0.28125) is larger than from x=1 (0.09375), so x=0 contributes more, not less. /  / $$ / Contribution to σ² from value x is P(\\text{x})·(x-μ)² / $$ /  / Takeaway: The"
+      }
+    },
+    {
+      "id": "math-12-125",
+      "subsection": "12.4",
+      "title": "A Charity Raffle",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=5,\\quad the expected value of X squared=150 $$  Takeaway:  $$ the expected value of X=5,\\quad the expected value of X squared=150 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = $5 exactly, as computed in Step 1. /  / $$ / μ = Σ x·P(X=x) / $$ /  / Takeaway: μ = $5 exactly, as computed in Step 1.",
+        "B": "σ² = 125 exactly, as computed in Step 1. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 125 exactly, as computed in Step 1.",
+        "C": "σ = √125 ≈ 11.1803, which rounds to $11.18. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ = √125 ≈ 11.1803, which rounds to $11.18.",
+        "D": "P(X=0) = 0.70, while P(X=10)+P(X=50) = 0.25+0.05 = 0.30. Since 0.70 is greater than 0.30, the statement holds. /  / $$ / Compare P(X=0) to P(X=10)+P(X=50) directly from the distribution / $$ /  / Takeaway: Since 0.70 is greater than 0.30, the statement holds.",
+        "E": "Twice μ = 2 × 5 = 10. σ ≈ 11.18, which is greater than 10. /  / $$ / Compare σ to 2μ / $$ /  / Takeaway: Twice μ = 2 × 5 = 10. σ ≈ 11.18, which is greater than 10."
+      }
+    },
+    {
+      "id": "math-12-126",
+      "subsection": "12.4",
+      "title": "Quality Inspection",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=0.5,\\quad the expected value of X squared=0.70 $$  Takeaway:  $$ the expected value of X=0.5,\\quad the expected value of X squared=0.70 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = 0.5 exactly, as computed in Step 1. /  / $$ / μ = Σ x·P(X=x) / $$ /  / Takeaway: μ = 0.5 exactly, as computed in Step 1.",
+        "B": "σ² = 0.45 exactly, as computed in Step 1. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 0.45 exactly, as computed in Step 1.",
+        "C": "σ = √0.45 ≈ 0.6708, which rounds to 0.67. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ = √0.45 ≈ 0.6708, which rounds to 0.67.",
+        "D": "P(X≥1) = P(X=1)+P(X=2) = 0.30+0.10 = 0.40, not 0.30. /  / $$ / P(\\text{X≥1}) = 1 - P(X=0) / $$ /  / Takeaway: P(X≥1) = P(X=1)+P(X=2) = 0.30+0.10 = 0.40, not 0.30.",
+        "E": "σ² = 0.45 and μ = 0.5. These are two different quantities that happen to be close in value here, but 0.45 does not equal 0.5. /  / $$ / Compare σ² to μ directly — they are unrelated quantities in general / $$ /  / Takeaway: These are two different quantities that happen to be close in value "
+      }
+    },
+    {
+      "id": "math-12-127",
+      "subsection": "12.4",
+      "title": "Customer Star Ratings",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(1,2,3,4,5)=0.05,0.10,0.20,0.35,0.30 $$  Takeaway:  $$ P(1,2,3,4,5)=0.05,0.10,0.20,0.35,0.30 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = 3.75 exactly, as computed in Step 1. /  / $$ / μ = Σ x·P(X=x) / $$ /  / Takeaway: μ = 3.75 exactly, as computed in Step 1.",
+        "B": "σ² = 1.2875 exactly, as computed in Step 1. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 1.2875 exactly, as computed in Step 1.",
+        "C": "σ = √1.2875 ≈ 1.1347, which rounds to 1.13. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ = √1.2875 ≈ 1.1347, which rounds to 1.13.",
+        "D": "P(X=4)+P(X=5) = 0.35+0.30 = 0.65, while P(X=1)+P(X=2)+P(X=3) = 0.05+0.10+0.20 = 0.35. Since 0.65 is greater than 0.35, it is not less. /  / $$ / Compare the two grouped probabilities directly from the distribution / $$ /  / Takeaway: Since 0.65 is greater than 0.35, it is not less.",
+        "E": "σ² = 1.2875, which is greater than 1, not less than 1. /  / $$ / Compare σ² to 1 directly / $$ /  / Takeaway: σ² = 1.2875, which is greater than 1, not less than 1."
+      }
+    },
+    {
+      "id": "math-12-128",
+      "subsection": "12.4",
+      "title": "A Lottery Ticket",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=10.25,\\quad the expected value of X squared=10001.25 $$  Takeaway:  $$ the expected value of X=10.25,\\quad the expected value of X squared=10001.25 $$",
+      "answers": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "μ = $10.25, not $10 — the $1000 prize, though rare, still shifts the mean above $10. /  / $$ / μ = Σ x·P(X=x) / $$ /  / Takeaway: μ = $10.25, not $10 — the $1000 prize, though rare, still shifts the mean above $10.",
+        "B": "σ² = 9896.1875, which rounds to 9,896.19, exactly as computed in Step 1. /  / $$ / σ² = E(X²) - μ² / $$ /  / Takeaway: σ² = 9896.1875, which rounds to 9,896.19, exactly as computed in Step 1.",
+        "C": "σ = √9896.1875 ≈ $99.48, not $9.95 — the rare $1000 prize makes the spread far larger than the typical payout size suggests. /  / $$ / σ = √σ² / $$ /  / Takeaway: σ = √9896.1875 ≈ $99.48, not $9.95 — the rare $1000 prize makes the spread far larger than the typical payout size suggests.",
+        "D": "P(X=1000) = 0.01 and P(X=5) = 0.05. Since 0.01 is less than 0.05, P(X=1000) is not greater than P(X=5). /  / $$ / Compare P(X=1000) to P(X=5) directly from the distribution / $$ /  / Takeaway: Since 0.01 is less than 0.05, P(X=1000) is not greater than P(X=5).",
+        "E": "σ ≈ $99.48, which is far greater than μ = $10.25, not less than it. /  / $$ / Compare σ to μ directly Tip: every statement here reduces to one of two moves — compute μ, σ², or σ directly from the distribution and check the number, or read two probabilities off the table and compare the"
+      }
+    },
+    {
+      "id": "math-12-129",
+      "subsection": "12.4",
+      "title": "A Game Show Wheel",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=110,\\quad the expected value of X squared=41000 $$  Takeaway:  $$ the expected value of X=110,\\quad the expected value of X squared=41000 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 110 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 110 exactly, as computed in Step 1.",
+        "B": "Var(X) = 28,900 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 28,900 exactly, as computed in Step 1.",
+        "C": "SD(X) = √28,900 = 170 exactly — a perfect square in this case. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √28,900 = 170 exactly — a perfect square in this case.",
+        "D": "P(X=0) = 0.50, while P(X=100)+P(X=500) = 0.35+0.15 = 0.50. The two are equal, so P(X=0) is not less than the other. /  / $$ / Compare P(X=0) to P(X=100)+P(X=500) directly from the distribution / $$ /  / Takeaway: The two are equal, so P(X=0) is not less than the other.",
+        "E": "Doubling every prize is the linear transformation Y = 2X. SD(Y) = |a|·SD(X) = 2 × 170 = 340. /  / $$ / Y = aX ⇒ SD(Y) = |a|·SD(X) / $$ /  / Takeaway: SD(Y) = |a|·SD(X) = 2 × 170 = 340."
+      }
+    },
+    {
+      "id": "math-12-130",
+      "subsection": "12.4",
+      "title": "Coffee Shop Arrivals",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=0.9,\\quad the expected value of X squared=1.6 $$  Takeaway:  $$ the expected value of X=0.9,\\quad the expected value of X squared=1.6 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 0.9 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 0.9 exactly, as computed in Step 1.",
+        "B": "Var(X) = 0.79 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 0.79 exactly, as computed in Step 1.",
+        "C": "SD(X) = √0.79 ≈ 0.89, not 1.25. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √0.79 ≈ 0.89, not 1.25.",
+        "D": "P(X≤1) = P(X=0)+P(X=1) = 0.40+0.35 = 0.75, not 0.55. /  / $$ / P(\\text{X≤1}) = P(X=0)+P(X=1) / $$ /  / Takeaway: P(X≤1) = P(X=0)+P(X=1) = 0.40+0.35 = 0.75, not 0.55.",
+        "E": "Var(X) = 0.79, which is less than E(X) = 0.9, not greater. /  / $$ / Compare Var(X) to E(X) directly — they are unrelated quantities in general / $$ /  / Takeaway: Var(X) = 0.79, which is less than E(X) = 0.9, not greater."
+      }
+    },
+    {
+      "id": "math-12-131",
+      "subsection": "12.4",
+      "title": "A Vending Machine",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=2.10,\\quad the expected value of X squared=4.90 $$  Takeaway:  $$ the expected value of X=2.10,\\quad the expected value of X squared=4.90 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = $2.10 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = $2.10 exactly, as computed in Step 1.",
+        "B": "Var(X) = 0.49 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 0.49 exactly, as computed in Step 1.",
+        "C": "SD(X) = √0.49 = $0.70 exactly. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √0.49 = $0.70 exactly.",
+        "D": "P(X=2) = 0.50 and P(X=1) = 0.20. Since 0.50 is greater than 0.20, the statement holds. /  / $$ / Compare P(X=2) to P(X=1) directly from the distribution / $$ /  / Takeaway: Since 0.50 is greater than 0.20, the statement holds.",
+        "E": "Adding a constant to every value is the linear transformation Y = X + 1 (a = 1, b = 1). Since Var(Y) = a²·Var(X) = 1²×0.49 = 0.49, shifting every price up by a flat amount leaves the variance unchanged. /  / $$ / Y = X + b ⇒ Var(Y) = Var(X) / $$ /  / Takeaway: Since Var(Y) = a²·Var(X) = 1²×0"
+      }
+    },
+    {
+      "id": "math-12-132",
+      "subsection": "12.4",
+      "title": "A Free-Throw Contest",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=1.9,\\quad the expected value of X squared=4.30 $$  Takeaway:  $$ the expected value of X=1.9,\\quad the expected value of X squared=4.30 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 1.9 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 1.9 exactly, as computed in Step 1.",
+        "B": "Var(X) = 0.69 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 0.69 exactly, as computed in Step 1.",
+        "C": "SD(X) = √0.69 ≈ 0.8307, which rounds to 0.83. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √0.69 ≈ 0.8307, which rounds to 0.83.",
+        "D": "P(X≥2) = P(X=2)+P(X=3) = 0.45+0.25 = 0.70, not 0.50. /  / $$ / P(\\text{X≥2}) = P(X=2)+P(X=3) / $$ /  / Takeaway: P(X≥2) = P(X=2)+P(X=3) = 0.45+0.25 = 0.70, not 0.50.",
+        "E": "Var(X) = 0.69, which is less than 1, not greater. /  / $$ / Compare Var(X) to 1 directly / $$ /  / Takeaway: Var(X) = 0.69, which is less than 1, not greater."
+      }
+    },
+    {
+      "id": "math-12-133",
+      "subsection": "12.4",
+      "title": "A Delivery App Rating",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(1,2,3,4,5)=0.10,0.10,0.20,0.30,0.30 $$  Takeaway:  $$ P(1,2,3,4,5)=0.10,0.10,0.20,0.30,0.30 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 3.6 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 3.6 exactly, as computed in Step 1.",
+        "B": "Var(X) = 1.64 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 1.64 exactly, as computed in Step 1.",
+        "C": "SD(X) = √1.64 ≈ 1.2806, which rounds to 1.28. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √1.64 ≈ 1.2806, which rounds to 1.28.",
+        "D": "P(X≤2) = P(X=1)+P(X=2) = 0.10+0.10 = 0.20, not 0.30. /  / $$ / P(\\text{X≤2}) = P(X=1)+P(X=2) / $$ /  / Takeaway: P(X≤2) = P(X=1)+P(X=2) = 0.10+0.10 = 0.20, not 0.30.",
+        "E": "Var(X) = 1.64, which is less than E(X) = 3.6, not greater. /  / $$ / Compare Var(X) to E(X) directly — they are unrelated quantities in general / $$ /  / Takeaway: Var(X) = 1.64, which is less than E(X) = 3.6, not greater."
+      }
+    },
+    {
+      "id": "math-12-134",
+      "subsection": "12.4",
+      "title": "An Insurance Policy",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=116,\\quad the expected value of X squared=503200 $$  Takeaway:  $$ the expected value of X=116,\\quad the expected value of X squared=503200 $$",
+      "answers": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = $116, not $100 — the rare $5,000 claim, even at only a 2% chance, still pulls the mean above $100. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = $116, not $100 — the rare $5,000 claim, even at only a 2% chance, still pulls the mean above $100.",
+        "B": "Var(X) = 489,744 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 489,744 exactly, as computed in Step 1.",
+        "C": "SD(X) = √489,744 ≈ $699.82, not $69.98 — the rare large claim makes the spread far larger than a typical payout suggests. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √489,744 ≈ $699.82, not $69.98 — the rare large claim makes the spread far larger than a typical payout suggests.",
+        "D": "P(X=5000) = 0.02 and P(X=200) = 0.08. Since 0.02 is less than 0.08, P(X=5000) is not greater than P(X=200). /  / $$ / Compare P(X=5000) to P(X=200) directly from the distribution / $$ /  / Takeaway: Since 0.02 is less than 0.08, P(X=5000) is not greater than P(X=200).",
+        "E": "SD(X) ≈ $699.82, which is far greater than E(X) = $116, not less than it. /  / $$ / Compare SD(X) to E(X) directly Tip: every statement here reduces to one of two moves — compute E(X), Var(X), or SD(X) directly from the distribution and check the number, or read two probabilities off t"
+      }
+    },
+    {
+      "id": "math-12-135",
+      "subsection": "12.4",
+      "title": "A Charity Raffle",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=40,\\quad the expected value of X squared=7000,\\quad the variance of X=5400,\\quad the standard deviation of X ≈ 73.4847 $$  Takeaway:  $$ the expected value of X=40,\\quad the expected value of X",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = $40 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = $40 exactly, as computed in Step 1.",
+        "B": "Var(X) = 5,400 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 5,400 exactly, as computed in Step 1.",
+        "C": "SD(X) = √5,400 ≈ 73.4847, which rounds to $73.48. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √5,400 ≈ 73.4847, which rounds to $73.48.",
+        "D": "P(X=0) = 0.60, while P(X=50)+P(X=250) = 0.30+0.10 = 0.40. Since 0.60 is greater than 0.40, P(X=0) is not less than the other. /  / $$ / Compare P(X=0) to P(X=50)+P(X=250) directly from the distribution / $$ /  / Takeaway: Since 0.60 is greater than 0.40, P(X=0) is not less than the other.",
+        "E": "Doubling every prize is the linear transformation Y = 2X. SD(Y) = |a|·SD(X) = 2 × 73.4847 ≈ $146.97. /  / $$ / Y = aX ⇒ SD(Y) = |a|·SD(X) / $$ /  / Takeaway: SD(Y) = |a|·SD(X) = 2 × 73.4847 ≈ $146.97."
+      }
+    },
+    {
+      "id": "math-12-136",
+      "subsection": "12.4",
+      "title": "An Ice Cream Shop",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=2.20,\\quad the expected value of X squared=5.60 $$  Takeaway:  $$ the expected value of X=2.20,\\quad the expected value of X squared=5.60 $$",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 2.2 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 2.2 exactly, as computed in Step 1.",
+        "B": "Var(X) = 0.76, not 0.80. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 0.76, not 0.80.",
+        "C": "SD(X) = √0.76 ≈ 0.8718, which rounds to 0.87. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √0.76 ≈ 0.8718, which rounds to 0.87.",
+        "D": "P(X≤2) = P(X=1)+P(X=2) = 0.20+0.50 = 0.70, not 0.60. /  / $$ / P(\\text{X≤2}) = P(X=1)+P(X=2) / $$ /  / Takeaway: P(X≤2) = P(X=1)+P(X=2) = 0.20+0.50 = 0.70, not 0.60.",
+        "E": "Var(X) = 0.76, which is less than E(X) = 2.2, not greater. /  / $$ / Compare Var(X) to E(X) directly — they are unrelated quantities in general / $$ /  / Takeaway: Var(X) = 0.76, which is less than E(X) = 2.2, not greater."
+      }
+    },
+    {
+      "id": "math-12-137",
+      "subsection": "12.4",
+      "title": "A Parking Garage",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=1.70,\\quad the expected value of X squared=3.70 $$  Takeaway:  $$ the expected value of X=1.70,\\quad the expected value of X squared=3.70 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 1.7 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 1.7 exactly, as computed in Step 1.",
+        "B": "Var(X) = 0.81 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 0.81 exactly, as computed in Step 1.",
+        "C": "SD(X) = √0.81 = 0.90 exactly — a perfect square in this case. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √0.81 = 0.90 exactly — a perfect square in this case.",
+        "D": "P(X≥2) = P(X=2)+P(X=3) = 0.40+0.20 = 0.60. /  / $$ / P(\\text{X≥2}) = P(X=2)+P(X=3) / $$ /  / Takeaway: P(X≥2) = P(X=2)+P(X=3) = 0.40+0.20 = 0.60.",
+        "E": "Recording the count in tens is the linear transformation Y = 10X. SD(Y) = |a|·SD(X) = 10 × 0.90 = 9. /  / $$ / Y = aX ⇒ SD(Y) = |a|·SD(X) / $$ /  / Takeaway: SD(Y) = |a|·SD(X) = 10 × 0.90 = 9."
+      }
+    },
+    {
+      "id": "math-12-138",
+      "subsection": "12.4",
+      "title": "A Trivia Quiz",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(0,1,2,3,4)=0.05,0.20,0.35,0.30,0.10 $$  Takeaway:  $$ P(0,1,2,3,4)=0.05,0.20,0.35,0.30,0.10 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 2.2 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 2.2 exactly, as computed in Step 1.",
+        "B": "Var(X) = 1.06 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 1.06 exactly, as computed in Step 1.",
+        "C": "SD(X) = √1.06 ≈ 1.0296, which rounds to 1.03. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √1.06 ≈ 1.0296, which rounds to 1.03.",
+        "D": "P(X≥3) = P(X=3)+P(X=4) = 0.30+0.10 = 0.40, not 0.50. /  / $$ / P(\\text{X≥3}) = P(X=3)+P(X=4) / $$ /  / Takeaway: P(X≥3) = P(X=3)+P(X=4) = 0.30+0.10 = 0.40, not 0.50.",
+        "E": "Var(X) = 1.06, which is less than 2, not greater. /  / $$ / Compare Var(X) to 2 directly / $$ /  / Takeaway: Var(X) = 1.06, which is less than 2, not greater."
+      }
+    },
+    {
+      "id": "math-12-139",
+      "subsection": "12.4",
+      "title": "A Podcast Episode Rating",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(1,2,3,4,5)=0.05,0.15,0.25,0.35,0.20 $$  Takeaway:  $$ P(1,2,3,4,5)=0.05,0.15,0.25,0.35,0.20 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 3.5 exactly, as computed in Step 1. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = 3.5 exactly, as computed in Step 1.",
+        "B": "Var(X) = 1.25 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 1.25 exactly, as computed in Step 1.",
+        "C": "SD(X) = √1.25 ≈ 1.1180, which rounds to 1.12. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √1.25 ≈ 1.1180, which rounds to 1.12.",
+        "D": "P(X≤2) = P(X=1)+P(X=2) = 0.05+0.15 = 0.20, not 0.30. /  / $$ / P(\\text{X≤2}) = P(X=1)+P(X=2) / $$ /  / Takeaway: P(X≤2) = P(X=1)+P(X=2) = 0.05+0.15 = 0.20, not 0.30.",
+        "E": "Var(X) = 1.25, which is less than E(X) = 3.5, not greater. /  / $$ / Compare Var(X) to E(X) directly — they are unrelated quantities in general / $$ /  / Takeaway: Var(X) = 1.25, which is less than E(X) = 3.5, not greater."
+      }
+    },
+    {
+      "id": "math-12-140",
+      "subsection": "12.4",
+      "title": "An Extended Warranty",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=138,\\quad the expected value of X squared=482700 $$  Takeaway:  $$ the expected value of X=138,\\quad the expected value of X squared=482700 $$",
+      "answers": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = $138, not $150 — the rare $4,000 claim, even at only a 3% chance, pulls the mean well above the $150 mid- tier payout. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: E(X) = $138, not $150 — the rare $4,000 claim, even at only a 3% chance, pulls the mean well above the $150 mid- tier ",
+        "B": "Var(X) = 463,656 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 463,656 exactly, as computed in Step 1.",
+        "C": "SD(X) = √463,656 ≈ $680.92, not $68.09 — the rare large claim makes the spread far larger than a typical payout suggests. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √463,656 ≈ $680.92, not $68.09 — the rare large claim makes the spread far larger than a typical payout suggests.",
+        "D": "P(X=4000) = 0.03 and P(X=150) = 0.12. Since 0.03 is less than 0.12, P(X=4000) is not greater than P(X=150). /  / $$ / Compare P(X=4000) to P(X=150) directly from the distribution / $$ /  / Takeaway: Since 0.03 is less than 0.12, P(X=4000) is not greater than P(X=150).",
+        "E": "SD(X) ≈ $680.92, which is far greater than E(X) = $138, not less than it. /  / $$ / Compare SD(X) to E(X) directly Tip: every statement here reduces to one of two moves — compute E(X), Var(X), or SD(X) directly from the distribution and check the number, or read two probabilities off t"
+      }
+    },
+    {
+      "id": "math-12-141",
+      "subsection": "12.4",
+      "title": "A Two-Machine Production Line",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=0.65(3)+0.35(7)=4.4 $$  Takeaway:  $$ the expected value of X=0.65(3)+0.35(7)=4.4 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(X) = 4.4 exactly, as computed above. /  / $$ / E(X) = Σ P(\\text{group})·E(X | group) / $$ /  / Takeaway: E(X) = 4.4 exactly, as computed above.",
+        "B": "Var(X) = 9.39 exactly, as computed above. /  / $$ / Var(X) = E[Var(X | group)] + Var[E(X | group)] / $$ /  / Takeaway: Var(X) = 9.39 exactly, as computed above.",
+        "C": "SD(X) = √9.39 ≈ 3.0643, which is greater than 3 — a close call worth carrying the extra decimal. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √9.39 ≈ 3.0643, which is greater than 3 — a close call worth carrying the extra decimal.",
+        "D": "The naive weighted average of the two variances is 0.65×4 + 0.35×9 = 5.75 (this is only the within-machine term). The true Var(X) = 9.39 is greater, because it also picks up the between-machine term of 3.64 — ignoring that the two machines have different means understates the tru",
+        "E": "The within-machine term (5.75) is greater than the between-machine term (3.64), so most of the total variability in X comes from randomness inside each machine's own output, not from which machine happens to be used. Notation and formulas used throughout E(X) = Σ x·P(X=x) — the m"
+      }
+    },
+    {
+      "id": "math-12-142",
+      "subsection": "12.4",
+      "title": "A Hedged Investment Pair",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=10,\\ the variance of X=16,\\quad the expected value of Y=6,\\ the variance of Y=9,\\quad \\rho=-0.5 $$  Takeaway:  $$ the expected value of X=10,\\ the variance of X=16,\\quad the expected value of Y",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(portfolio) = 8%, as computed above. /  / $$ / E(aX+bY) = a·E(X) + b·E(Y) / $$ /  / Takeaway: E(portfolio) = 8%, as computed above.",
+        "B": "Cov(X,Y) = -6 exactly, as computed above. /  / $$ / Cov(X,Y) = ρ·SD(X)·SD(Y) / $$ /  / Takeaway: Cov(X,Y) = -6 exactly, as computed above.",
+        "C": "Var(portfolio) = 3.25 exactly, as computed above. /  / $$ / Var(aX+bY) = a²Var(X) + b²Var(Y) + 2ab·Cov(X,Y) / $$ /  / Takeaway: Var(portfolio) = 3.25 exactly, as computed above.",
+        "D": "With ρ = 0 (independence), the covariance term drops out: Var(portfolio) = 4 + 2.25 = 6.25. This is greater than the actual 3.25, not smaller — the negative correlation is precisely what shrinks the variance below the independent case. This is the mathematical basis of hedging: p",
+        "E": "SD(portfolio) = √3.25 ≈ 1.8028%, which is not greater than 2 percentage points. /  / $$ / SD(portfolio) = √Var(portfolio) / $$ /  / Takeaway: SD(portfolio) = √3.25 ≈ 1.8028%, which is not greater than 2 percentage points."
+      }
+    },
+    {
+      "id": "math-12-143",
+      "subsection": "12.4",
+      "title": "Chebyshev's Inequality",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(|X-50|<10) ≥ 1-\\frac14=0.75 $$  Takeaway:  $$ P(|X-50|<10) ≥ 1-\\frac14=0.75 $$",
+      "answers": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "40 and 60 are μ ± 2σ (since 2×5 = 10), so k = 2. The inequality gives P(|X-50| < 10) ≥ 1 - 1/2² = 1 - 0.25 = 0.75. So P(40 < X < 60) ≥ 0.75 is indeed guaranteed. /  / $$ / P(\\text{|X-μ|<kσ}) ≥ 1 - 1/k², with k=2 / $$ /  / Takeaway: So P(40 < X < 60) ≥ 0.75 is indeed guaranteed.",
+        "B": "45 and 55 are μ ± 1σ, so k = 1. The guaranteed lower bound is 1 - 1/1² = 1 - 1 = 0. Chebyshev only guarantees P(45<X<55) ≥ 0 at k=1 — a trivial bound, nowhere near guaranteeing 0.75. (The actual probability could be much higher for a specific distribution, but the inequality itse",
+        "C": "30 and 70 are μ ± 4σ (since 4×5 = 20), so k = 4. The inequality gives P(|X-50| ≥ 20) ≤ 1/4² = 1/16 = 0.0625, and \"X < 30 or X > 70\" is exactly the event |X-50| ≥ 20 (up to the boundary points), so the 0.0625 bound applies. /  / $$ / P(\\text{|X-μ|≥kσ}) ≤ 1/k², with k=4 / $$ /  / Takeaway: The",
+        "D": "Chebyshev's inequality only produces an upper bound on the tail probability, never its exact value — the true P(|X-50|≥12.5) could be anywhere from 0 up to 0.16 depending on the actual (unspecified) shape of the distribution. Treating the bound as the exact probability is a commo",
+        "E": "At k=2, the bound is 1/4 = 0.25; at k=3, the bound is 1/9 ≈ 0.111. Since 0.111 < 0.25, increasing k produces a smaller (tighter) upper bound — which makes sense, since 1/k² is a decreasing function of k. /  / $$ / 1/k² decreases as k increases / $$ /  / Takeaway: Since 0.111 < 0.25, increasi"
+      }
+    },
+    {
+      "id": "math-12-144",
+      "subsection": "12.4",
+      "title": "The Vending Machine Puzzle",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(X=0)=p,\\quad P(X=5)=0.4,\\quad P(X=10)=0.6-p $$  Takeaway:  $$ P(X=0)=p,\\quad P(X=5)=0.4,\\quad P(X=10)=0.6-p $$",
+      "answers": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "p ≈ 0.0764, not 0.4 — the value 0.4 is simply P(X=5), a natural but incorrect guess. /  / $$ / Solve Var(X) = 10 for p — do not confuse p with the other given probability / $$ /  / Takeaway: p ≈ 0.0764, not 0.4 — the value 0.4 is simply P(X=5), a natural but incorrect guess.",
+        "B": "As shown in Step 1, p ≈ 0.5236 does solve the same quadratic and lies in [0, 0.6], so it is mathematically valid on its own — but it is excluded by the extra condition, since it would make P(X=0) = 0.5236 greater than P(X=10) = 0.0764, the reverse of what's given. /  / $$ / A quadratic",
+        "C": "E(X) = 8 - 10×0.0764 ≈ 7.236, not exactly 8. E(X) = 8 only in the degenerate case p = 0, which is not the solution here. /  / $$ / E(X) = 8 - 10p, evaluated at the correct p / $$ /  / Takeaway: E(X) = 8 only in the degenerate case p = 0, which is not the solution here.",
+        "D": "SD(X) = √10 ≈ 3.1623, which is not less than 3 — a close call, since √9 = 3 exactly and 10 is only slightly above 9. /  / $$ / SD(X) = √Var(X) = √10 / $$ /  / Takeaway: SD(X) = √10 ≈ 3.1623, which is not less than 3 — a close call, since √9 = 3 exactly and 10 is only slightly above 9.",
+        "E": "Both roots of the same quadratic were derived by setting Var(X) equal to 10 in the first place, so both roots satisfy Var(X) = 10 by construction — reversing which root is \"correct\" (based on the likelihood condition) does not change the variance target that produced them. Var(X)"
+      }
+    },
+    {
+      "id": "math-12-145",
+      "subsection": "12.4",
+      "title": "A Regional Manager's Rounds",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(N=2,3,5)=0.5,0.3,0.2 $$  Takeaway:  $$ P(N=2,3,5)=0.5,0.3,0.2 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(S) = 11.6 exactly, as computed above. /  / $$ / E(S) = E(N)·E(X) / $$ /  / Takeaway: E(S) = 11.6 exactly, as computed above.",
+        "B": "Var(S) = 38.04 exactly, as computed above. /  / $$ / Var(S) = E(N)·Var(X) + Var(N)·[E(X)]² / $$ /  / Takeaway: Var(S) = 38.04 exactly, as computed above.",
+        "C": "SD(S) = √38.04 ≈ 6.1677, which is greater than 6 — another close call. /  / $$ / SD(S) = √Var(S) / $$ /  / Takeaway: SD(S) = √38.04 ≈ 6.1677, which is greater than 6 — another close call.",
+        "D": "If N were fixed at 2.9 with no randomness of its own, only the within-branch term would remain: Var(S) = E(N)×Var(X) = 2.9×6 = 17.4. The actual Var(S) = 38.04 is much larger, because it also includes the day-to-day randomness in how many branches get visited — ignoring that rando",
+        "E": "The branch-count contribution is Var(N)×[E(X)]² = 1.29×16 = 20.64, while the within-branch contribution is E(N)×Var(X) = 2.9×6 = 17.4. Since 20.64 is greater than 17.4, the branch-count variability actually contributes more to Var(S), not less — the statement has the comparison b"
+      }
+    },
+    {
+      "id": "math-12-146",
+      "subsection": "12.4",
+      "title": "Assembly Line Processing Time",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X_1=2,the variance of X_1=0.5 $$  Takeaway:  $$ the expected value of X_1=2,the variance of X_1=0.5 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(T) = 11 minutes exactly, as computed above. /  / $$ / E(aX+bY+cZ+d) = a·E(X)+b·E(Y)+c·E(Z)+d / $$ /  / Takeaway: E(T) = 11 minutes exactly, as computed above.",
+        "B": "Var(T) = 4.1 exactly, as computed above. /  / $$ / Var(aX+bY+cZ) = a²Var(X)+b²Var(Y)+c²Var(Z), for independent X,Y,Z / $$ /  / Takeaway: Var(T) = 4.1 exactly, as computed above.",
+        "C": "SD(T) = √4.1 ≈ 2.0248 minutes, which is greater than 2 minutes — a close call. /  / $$ / SD(T) = √Var(T) / $$ /  / Takeaway: SD(T) = √4.1 ≈ 2.0248 minutes, which is greater than 2 minutes — a close call.",
+        "D": "Flipping the coefficient on X₃ from -1 to +1 changes E(T) to 2×2+1.5×3+1×1.5+4 = 14 minutes, since the mean formula uses the coefficient's actual sign. But the variance formula uses the coefficient squared: (-1)² and (+1)² are both 1, so the X₃ contribution to Var(T) is unchanged",
+        "E": "20% of E(T) = 0.2×11 = 2.2 minutes. SD(T) ≈ 2.0248 minutes, which is not greater than 2.2. /  / $$ / Compare SD(T) to 0.20×E(T) Tip: this set leans on results beyond the single-distribution toolkit — mixtures split Var(X) into within- and between-group pieces; correlated variables need"
+      }
+    },
+    {
+      "id": "math-12-147",
+      "subsection": "12.4",
+      "title": "A Charity Raffle (Unknown Probabilities)",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(X=0)=p,\\quad P(X=50)=q,\\quad P(X=250)=0.10,\\quad the expected value of X=40 $$  Takeaway:  $$ P(X=0)=p,\\quad P(X=50)=q,\\quad P(X=250)=0.10,\\quad the expected value of X=40 $$",
+      "answers": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "Solving the system gives p = 0.60, not 0.55 — a common slip is solving only the sum-to-1 equation and forgetting to use the E(X) = $40 constraint to pin down q first. /  / $$ / p + q = 0.90 and 50q + 25 = 40 ⇒ q = 0.30, p = 0.60 / $$ /  / Takeaway: Solving the system gives p = 0.60, not 0.55",
+        "B": "Var(X) = 5,400 exactly, as computed in Step 1 once p and q are known. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 5,400 exactly, as computed in Step 1 once p and q are known.",
+        "C": "SD(X) = √5,400 ≈ 73.4847, which rounds to $73.48. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √5,400 ≈ 73.4847, which rounds to $73.48.",
+        "D": "p = 0.60 and q = 0.30, so the $0 outcome (probability 0.60) is more likely than the $50 outcome (probability 0.30), not less likely. /  / $$ / Compare p to q directly, once both are solved for / $$ /  / Takeaway: p = 0.60 and q = 0.30, so the $0 outcome (probability 0.60) is more likely than",
+        "E": "Subtracting $10 from every prize is the linear transformation Y = X - 10 (a = 1, b = -10). Since Var(Y) = a²·Var(X) = 1²×5,400 = 5,400, a flat shift never changes the variance. /  / $$ / Y = X + b ⇒ Var(Y) = Var(X) / $$ /  / Takeaway: Since Var(Y) = a²·Var(X) = 1²×5,400 = 5,400, a flat shift"
+      }
+    },
+    {
+      "id": "math-12-148",
+      "subsection": "12.4",
+      "title": "An Ice Cream Shop (Two Independent Customers)",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(X=1,2,3,4)=0.20,0.50,0.20,0.10 $$  Takeaway:  $$ P(X=1,2,3,4)=0.20,0.50,0.20,0.10 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(Y) = E(X₁)+E(X₂) = 2.20+2.20 = 4.40. Expectation always adds, independence or not. /  / $$ / E(X₁+X₂) = E(X₁)+E(X₂) / $$ /  / Takeaway: Expectation always adds, independence or not.",
+        "B": "Var(Y) = Var(X₁)+Var(X₂) = 0.76+0.76 = 1.52, valid here because the two orders are independent. /  / $$ / Independent X₁, X₂: Var(X₁+X₂) = Var(X₁)+Var(X₂) / $$ /  / Takeaway: Var(Y) = Var(X₁)+Var(X₂) = 0.76+0.76 = 1.52, valid here because the two orders are independent.",
+        "C": "Standard deviations do not add across independent sums. SD(Y) = √1.52 ≈ 1.2329, not 2×SD(X) ≈ 1.7436 — that formula only holds for a single scaled variable like Z = 2X, not for a sum of two separate variables. /  / $$ / SD(X₁+X₂) = √(Var(X₁)+Var(X₂)) ≠ SD(X₁)+SD(X₂) in general / $$ /  / Take",
+        "D": "The additivity Var(Y) = Var(X₁)+Var(X₂) specifically requires independence. If the orders were correlated (for example, one customer's order influencing the other's), the actual variance of the total would differ from 1.52. /  / $$ / Var(X₁+X₂) = Var(X₁)+Var(X₂) only holds when X₁, X₂ ",
+        "E": "SD(Y) = √1.52 ≈ 1.2329, which rounds to 1.23. /  / $$ / SD(Y) = √Var(Y) / $$ /  / Takeaway: SD(Y) = √1.52 ≈ 1.2329, which rounds to 1.23."
+      }
+    },
+    {
+      "id": "math-12-149",
+      "subsection": "12.4",
+      "title": "A Parking Garage (A Nonlinear Bonus)",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P(X=0,1,2,3)=0.10,0.30,0.40,0.20,\\qquad Y=X^2 $$  Takeaway:  $$ P(X=0,1,2,3)=0.10,0.30,0.40,0.20,\\qquad Y=X^2 $$",
+      "answers": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "2.89 is (E(X))² = 1.70², not E(Y). Squaring the mean first is a different (and smaller) quantity than averaging the squares. /  / $$ / (E(X))² ≠ E(X²) in general / $$ /  / Takeaway: Squaring the mean first is a different (and smaller) quantity than averaging the squares.",
+        "B": "E(Y) = E(X²) = 3.70 exactly, as computed in /  / Takeaway: E(Y) = E(X²) = 3.70 exactly, as computed in",
+        "C": "This is exactly the variance formula rewritten in terms of Y: since Y = X², E(Y) - [E(X)]² = E(X²) - E(X)² = Var(X) = 0.81. /  / $$ / Var(X) = E(X²) - E(X)² = E(Y) - [E(X)]² / $$ /  / Takeaway: This is exactly the variance formula rewritten in terms of Y: since Y = X², E(Y) - [E(X)]² = E(X²)",
+        "D": "SD(X) = √0.81 = 0.90 exactly — a perfect square in this case. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √0.81 = 0.90 exactly — a perfect square in this case.",
+        "E": "Z = 2X is a linear transformation (a = 2), so Var(Z) = a²·Var(X) = 4×0.81 = 3.24, not 1.62 — 1.62 is only 2×Var(X), which is the wrong scaling rule for variance. /  / $$ / Z = aX ⇒ Var(Z) = a²·Var(X) / $$ /  / Takeaway: Z = 2X is a linear transformation (a = 2), so Var(Z) = a²·Var(X) = 4×0.8"
+      }
+    },
+    {
+      "id": "math-12-150",
+      "subsection": "12.4",
+      "title": "A Trivia Quiz (Comparing Two Formats)",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ P_A(0,1,2,3,4)=0.05,0.20,0.35,0.30,0.10 $$  Takeaway:  $$ P_A(0,1,2,3,4)=0.05,0.20,0.35,0.30,0.10 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "Both formats give E(X) = 2.20 — the two quizzes are equally hard on average, differing only in how the difficulty is spread out. /  / $$ / E(X) = Σ x·P(X=x) / $$ /  / Takeaway: Both formats give E(X) = 2.20 — the two quizzes are equally hard on average, differing only in how the difficulty i",
+        "B": "Var(X) = 1.86 for Format B versus 1.06 for Format A, so Format B is more spread out despite having the same mean. /  / $$ / Compare Var(X) across the two distributions directly / $$ /  / Takeaway: Var(X) = 1.86 for Format B versus 1.06 for Format A, so Format B is more spread out despite hav",
+        "C": "In Format A, x=4 contributes 0.324 to Var(X), compared to 0.242 from x=0 — the high end pulls harder because both its probability and its squared distance from the mean are larger. /  / $$ / Contribution of x: P(\\text{x})·(x - E(X))² / $$ /  / Takeaway: In Format A, x=4 contributes 0.324 to ",
+        "D": "In Format B, x=0 actually contributes more (0.726) than x=4 does (0.648) — the opposite of Format A. Format B shifted extra probability onto x=0 (from 0.05 up to 0.15) while only partly increasing x=4's probability, so the low end now outweighs the high end even though both are e",
+        "E": "2×SD(A) ≈ 2×1.0296 = 2.0591, but SD(B) ≈ 1.3638, which is nowhere near double SD(A) — variances added a modest amount (1.06 to 1.86), but square roots compress that difference. /  / $$ / Compare SD(B) to 2×SD(A) directly — SD does not scale the way Var does / $$ /  / Takeaway: 2×SD(A) ≈ 2×1."
+      }
+    },
+    {
+      "id": "math-12-151",
+      "subsection": "12.4",
+      "title": "A Streaming Royalty (Setting a Break-Even Fee)",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ the expected value of X=5(0.50)+10(0.30)+20(0.20)=9.5 $$  Takeaway:  $$ the expected value of X=5(0.50)+10(0.30)+20(0.20)=9.5 $$",
+      "answers": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "Setting E(X) - c = 0 gives c = E(X) = 9.5 cents exactly. /  / $$ / E(X - c) = 0 ⇒ c = E(X) / $$ /  / Takeaway: Setting E(X) - c = 0 gives c = E(X) = 9.5 cents exactly.",
+        "B": "Var(X) = 32.25 exactly, as computed in Step 1. /  / $$ / Var(X) = E(X²) - E(X)² / $$ /  / Takeaway: Var(X) = 32.25 exactly, as computed in Step 1.",
+        "C": "A common trap: setting the mean net earning to zero does not touch the spread. Y = X - c is a flat shift of X, so Var(Y) = Var(X) = 32.25, not 0 — the artist's earnings per stream are just as variable as before, only recentered. /  / $$ / Y = X + b ⇒ Var(Y) = Var(X) / $$ /  / Takeaway: Y = X",
+        "D": "SD(X) = √32.25 ≈ 5.6789, which rounds to 5.68. /  / $$ / SD(X) = √Var(X) / $$ /  / Takeaway: SD(X) = √32.25 ≈ 5.6789, which rounds to 5.68.",
+        "E": "At c = 14.25, E(X-c) = 9.5 - 14.25 = -4.75, which is negative — charging more than the break-even fee guarantees a negative expected net earning per stream. /  / $$ / E(X - c) = E(X) - c / $$ /  / Takeaway: At c = 14.25, E(X-c) = 9.5 - 14.25 = -4.75, which is negative — charging more than th"
+      }
+    },
+    {
+      "id": "math-12-152",
+      "subsection": "12.4",
+      "title": "An Extended Warranty (Two Independent Policies)",
+      "kind": "shared_setup",
+      "shared_by": 5,
+      "old_sample": "$$ Y=X_1+X_2 $$  Takeaway:  $$ Y=X_1+X_2 $$",
+      "answers": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "new_unique": true,
+      "new_samples": {
+        "A": "E(Y) = E(X₁)+E(X₂) = 138+138 = $276. /  / $$ / E(X₁+X₂) = E(X₁)+E(X₂) / $$ /  / Takeaway: E(Y) = E(X₁)+E(X₂) = 138+138 = $276.",
+        "B": "Var(Y) = Var(X₁)+Var(X₂) = 463,656+463,656 = 927,312, valid because the two policies' claims are independent. /  / $$ / Independent X₁, X₂: Var(X₁+X₂) = Var(X₁)+Var(X₂) / $$ /  / Takeaway: Var(Y) = Var(X₁)+Var(X₂) = 463,656+463,656 = 927,312, valid because the two policies' claims are indepe",
+        "C": "By independence, the probability both claims equal $4,000 is the product of the individual probabilities: 0.03 × 0.03 = 0.0009. /  / $$ / Independent events: P(\\text{A and B}) = P(\\text{A})·P(\\text{B}) / $$ /  / Takeaway: By independence, the probability both claims equal $4,000 is the produ",
+        "D": "2×SD(X) ≈ 2×680.92 = 1,361.85, but SD(Y) = √927,312 ≈ 962.97 — standard deviations of independent sums do not simply double, since it's the variances that add, and the square root of a sum is smaller than the sum of the square roots. /  / $$ / SD(X₁+X₂) = √(Var(X₁)+Var(X₂)) ≠ SD(X₁)+SD",
+        "E": "SD(Y) = √927,312 ≈ 962.97, matching Step 1. /  / $$ / SD(Y) = √Var(Y) Tip: when a question feels harder, look for which extra layer it added — an unknown to solve for, a second variable to combine, a nonlinear function, a second distribution to compare against, or a shift that changes "
+      }
+    }
+  ]
+}
