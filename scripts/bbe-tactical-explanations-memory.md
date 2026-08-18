@@ -31,35 +31,35 @@ Rendered in the flashcard / practice UI with KaTeX (`$...$` inline, `$$...$$` di
 
 ---
 
-## Length rule (critical)
+## Shared model once (critical)
 
-1. **Length tracks work.** A direct lookup or one-arithmetic check stays short. A 2×2 solve plus a fresh scenario check gets the full model, solve, and check. A long tail sum (like 13.18 C) gets every term.
-2. **Never shorten existing good text.** When rewriting a live bank, the previous explanation is a **floor**. Replacement is allowed only if the new text is **at least as long** and keeps every meaningful step the old text had.
-3. **Extra length must buy clarity**, not filler. Add missing setup, missing substitutions, missing intermediate displays, or missing comparisons. Do not pad with tips, slogans, or repeated summaries.
-4. If asked only to deepen underdeveloped statements, leave already-complete ones alone unless they violate a hard rule below.
+The practice UI concatenates `solution_overview` with all five letters. The shared setup and the shared solve live in the overview **once**. Letters must not reprint them.
+
+**Overview**
+
+- Translate each observation into an equation **once**. Tag those displays `(1)`, `(2)` if later algebra refers to them.
+- Do **not** add a “Part 2: The model” block that reprints the same equations.
+- Then solve (elimination, substitution, recovered coefficient, …) in the next part.
+- Recovered values belong in the overview answer line.
+
+**Letters A–E**
+
+- Use the recovered values: “The overview already recovered $x=8.4$, $y=15.6$.”
+- Show only the extra arithmetic this claim needs (a new mix, a ratio, a threshold).
+- Do **not** redefine $x$ and $y$, rewrite the system, divide by 100, and re-run elimination under every letter.
+
+A letter that needs a *different* model (a counterfactual mix, a halved scoring rule) still writes that new calculation in full. It does not rebuild the original system first.
+
+This overrides any older “each letter must stand alone from the stem” rule. Compact reuse of overview values is the required style for Ch5, Ch8, Ch11, and Ch13 when the letter is reading a shared recovery.
 
 ---
 
-## One explanation = one complete path
+## Length rule (critical)
 
-Every letter A–E must stand alone from the original scenario to the verdict.
-
-Do:
-
-- Start from the given context / table / rates / totals.
-- Define the unknowns in words, then write the equations.
-- Derive any recovered values needed for *this* statement.
-- Check the claim with explicit arithmetic or comparison.
-- Close with a plain sentence that states True or False.
-
-Do not:
-
-- Write “From Part A”, “as shown above”, “earlier”, “the solution gives”.
-- Assume the student already solved the system somewhere else.
-- Jump from “let $x$ be …” straight to a final number with no displays.
-- Leak the whole answer key or turn the overview into five copies of itself.
-
-Compact reuse is allowed only as a **one-line origin after a real derivation already appears in that same explanation**, for example: “From the two invoice equations above, $x = 3.50$ and $y = 1.80$.” Even then, prefer re-deriving when the statement itself needs those values.
+1. **Length tracks work.** A direct lookup or one-arithmetic check stays short. A fresh scenario that uses already-recovered prices gets that extra arithmetic only. A long tail sum (like 13.18 C) still gets every term, because those terms are *this letter’s* work, not a reprint of the overview.
+2. **Do not restore duplication to satisfy a length floor.** Removing a repeated system solve is required even if the letter gets shorter. New text must keep every *claim-specific* step the old text had.
+3. **Extra length must buy clarity**, not filler. Add missing substitutions, missing intermediate displays, or missing comparisons for *this* claim. Do not pad with tips, slogans, or a second copy of the overview.
+4. If asked only to deepen underdeveloped statements, leave already-complete ones alone unless they violate the shared-model rule above.
 
 ---
 
@@ -176,9 +176,9 @@ Avoid:
 
 ### Linear systems (Ch5)
 
-- Typical path: translate → system → elimination or substitution → statement check.
+- Overview path: translate each row once (tagged) → solve. Never reprint the two equations as a separate “model” part.
 - Peel shared fees/taxes first when the stem requires it.
-- For “new mix / new order” statements, recompute with the recovered prices; do not average old totals.
+- For “new mix / new order” statements, recompute with the recovered prices; do not average old totals and do not re-solve the original invoices.
 
 ### Financial math (Ch11)
 
@@ -194,7 +194,8 @@ Avoid:
 
 ### Power functions / other chapters
 
-- Same standalone + step-display rules.
+- Same shared-overview rule: levels and scale factors recovered in the overview are not rebuilt in every letter.
+- In Ch8, “Part 2: The model” may keep a *recovered* closed form that Part 1 did not yet have (calibrated $A$, $r$, composed $C(n)$). Do not keep it if it only reprints the Part 1 translation.
 - Match that chapter’s live header convention.
 
 ---
@@ -203,13 +204,13 @@ Avoid:
 
 1. Read the live task: `context`, tables, `statements`, `answer_key`, current `tactical_explanations`, `solution_overview`.
 2. Read `MATH 13.18` if the depth target is unclear.
-3. For each letter, decide the real work count (lookup / one check / full solve / long sum).
-4. Write a standalone explanation at that depth.
-5. If replacing an existing explanation, keep length ≥ old length and keep every useful step.
+3. Confirm the overview translates and solves the shared model once, without reprinting the same equations.
+4. For each letter, decide the *extra* work (lookup / one check / new mix / long sum). Do not count the shared solve again.
+5. Write the letter against the overview values, with every claim-specific step shown.
 6. Validate:
    - header matches statement + verdict
    - `$` / `$$` balance
-   - no `From Part A` scaffolding
+   - no second copy of the shared system / elimination
    - no tip labels / em dashes
    - KaTeX commands not over-escaped
    - recomputed numbers match the verdict
@@ -220,9 +221,9 @@ Avoid:
 
 | Do | Don’t |
 | --- | --- |
-| Follow 13.18 step-per-display depth | Compress a multi-step solve into one paragraph |
-| Keep previous text as a length floor | Shorten a live explanation “for cleanliness” |
-| Derive unknowns inside the letter that needs them | Say “from Part A” or “the solution gives” |
+| Follow 13.18 step-per-display depth for *this letter’s* work | Compress a multi-step *claim* check into one paragraph |
+| Point at overview recoveries in one line | Rebuild the shared system under A, then again under B, C, D, E |
+| Show the extra arithmetic the claim needs | Reprint “Part 2: The model” after already translating the rows |
 | Compare explicitly to the claim | End with a bare True/False and no check |
 | Escape `\$` outside math; `\frac` inside math | Leave `\\frac` scars or unpaired `$` |
 | Make underdetermined assumptions explicit | Fake uniqueness the stem does not give |
@@ -233,6 +234,6 @@ Avoid:
 
 In Cursor, point at this file when asking for explanation work, for example:
 
-> Follow `scripts/bbe-tactical-explanations-memory.md` and rewrite Ch8 tactical explanations like 13.18. Only lengthen; never shorten.
+> Follow `scripts/bbe-tactical-explanations-memory.md`. Solve the shared model in the overview once; each letter only does that claim’s extra arithmetic.
 
 That is enough to keep one explanation format across math practice banks.
