@@ -135,6 +135,7 @@ Do:
 
 - Calm tutor English. Short and medium sentences.
 - English outside math; math inside `$...$` / `$$...$$`.
+- Live **statements** stay dry: the claim only. No parenthetical coaching, no `(x - y)` / `(wire unchanged at 40 m)` / precomputed mixes or sums, no “purely because…” asides. Put that arithmetic in the explanation, not on the T/F card.
 - Escape currency as `\$12.00` outside math.
 - Use one backslash in KaTeX commands inside the string content: `\frac`, `\qquad`, `\approx`.
 - Keep verdict language plain: “so the statement is true/false.”
@@ -169,6 +170,7 @@ Avoid:
 - Fake enthusiasm.
 - Prose rendered as math, or math that swallows English.
 - Over-escaped LaTeX that reaches KaTeX as `\\frac` / line-break scars.
+- Parenthetical hints on live statements (`(x - y)`, `(wood unchanged)`, `($750 + $710)`).
 
 ---
 
