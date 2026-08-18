@@ -509,3 +509,192 @@ def overlay_pdf_stems(tasks: list[dict], pdf_items: list[dict], label: str) -> l
             task["tables_markdown"] = pdf["tables_markdown"]
         task["_pdf_locked_stem"] = True
     return tasks
+
+
+# ---------------------------------------------------------------------------
+# Per-statement explanations from the original PDFs
+# ---------------------------------------------------------------------------
+
+
+_WRAPUP_RE = (
+    r"(?:Question\s+\d+|Step\s+\d+\s+[—\-]|Section\s+\d+|Common traps|"
+    r"(?:All five|Four of the five|Three of the five|Two of the five|"
+    r"Only one of the five|One of the five) statements)"
+)
+
+
+def _cut_next_question(chunk: str, current: int) -> str:
+    m = re.search(rf"Question\s+(?!{current}\b)\d+\b", chunk[12:])
+    return chunk[: m.start() + 12] if m else chunk
+
+
+def _letter_bodies(block: str) -> tuple[dict[str, bool], dict[str, str]]:
+    """Split an answer writeup into A–E verdicts and bodies."""
+    parts = re.split(r"(?:^|(?<=\s))([A-E])\s+(TRUE|FALSE)\b\s*", block)
+    verdicts: dict[str, bool] = {}
+    bodies: dict[str, str] = {}
+    i = 1
+    while i + 2 < len(parts):
+        letter = parts[i]
+        verdict = parts[i + 1].upper() == "TRUE"
+        body = clean_pdf_text(parts[i + 2])
+        body = re.split(_WRAPUP_RE, body, maxsplit=1)[0]
+        body = re.sub(r"\s+", " ", body).strip()
+        if letter not in verdicts:
+            verdicts[letter] = verdict
+            bodies[letter] = body
+        i += 3
+    return verdicts, bodies
+
+_ARITH_RE = re.compile(
+    r"(?P<val>-?\$?\d[\d,]*(?:\.\d+)?)\s*%?\s*,?\s+"
+    r"which is\s+(?P<neg>not\s+)?(?P<op>greater than|less than)\s+"
+    r"(?P<thr>\$?-?\d[\d,]*(?:\.\d+)?)\s*%?",
+    flags=re.I,
+)
+
+
+def explanation_arithmetic_flags(label: str, expls: list[str]) -> list[str]:
+    """Flag explanations whose own 'which is (not) greater/less than' claim is false."""
+    flags: list[str] = []
+    for i, text in enumerate(expls):
+        for m in _ARITH_RE.finditer(text or ""):
+            val_s = m.group("val").replace(",", "").replace("$", "")
+            thr_s = m.group("thr").replace(",", "").replace("$", "")
+            if not val_s or not thr_s:
+                continue
+            val = float(val_s)
+            thr = float(thr_s)
+            rel = val > thr if m.group("op").lower() == "greater than" else val < thr
+            sentence_true = (not rel) if m.group("neg") else rel
+            if not sentence_true:
+                flags.append(
+                    f"{label} {LETTERS[i]}: arithmetic in {m.group(0)!r} does not hold"
+                )
+    return flags
+
+
+def format_pdf_explanation(letter: str, is_true: bool, body: str) -> str:
+    verdict = "True" if is_true else "False"
+    text = (body or "").strip()
+    formula = ""
+    fm = re.search(r"\bFormula:\s*(.+)$", text)
+    if fm:
+        formula = re.split(_WRAPUP_RE, fm.group(1), maxsplit=1)[0].strip().rstrip(".")
+        text = text[: fm.start()].strip()
+    text = re.sub(r"\s+", " ", text).strip()
+    sentences = [
+        s.strip()
+        for s in re.split(r"(?<=[.!?])\s+(?=[A-Z(])", text)
+        if s.strip()
+    ]
+    takeaway = sentences[-1] if sentences else f"The statement is {verdict.lower()}."
+    if len(takeaway) > 240:
+        takeaway = takeaway[:237].rsplit(" ", 1)[0] + "."
+    lines = [f"Statement {letter} — {verdict}", "", text or f"The statement is {verdict.lower()}."]
+    if formula:
+        tex = formula
+
+        def _p_wrap(m: re.Match[str]) -> str:
+            inner = m.group(1)
+            if "=" in inner or "\\" in inner:
+                return f"P({inner})"
+            return f"P(\\text{{{inner}}})"
+
+        tex = re.sub(r"\bP\(([^)]+)\)", _p_wrap, tex)
+        tex = tex.replace(" / ", "/").replace(" × ", "\\times ")
+        lines.extend(["", f"$$\n{tex}\n$$"])
+    lines.extend(["", f"Takeaway: {takeaway}"])
+    return "\n".join(lines)
+
+
+def find_pdf_answer_block(text: str, qnum: int) -> str | None:
+    for m in re.finditer(rf"Question\s+{qnum}\b", text):
+        rest = text[m.start() : m.start() + 12000]
+        chunk = _cut_next_question(rest, qnum)
+        if re.search(r"\bA\s+(TRUE|FALSE)\b", chunk) and re.search(
+            r"\bE\s+(TRUE|FALSE)\b", chunk
+        ):
+            return chunk
+    return None
+
+
+def parse_conditional_explanations() -> list[dict]:
+    text = PAGE_RE.sub(" ", (EXTRACT_DIR / "conditional_norm.txt").read_text())
+    items = []
+    for n in range(1, 41):
+        block = find_pdf_answer_block(text, n)
+        if not block:
+            raise ValueError(f"Missing conditional PDF explanations for Q{n}")
+        verdicts, bodies = _letter_bodies(block)
+        if any(L not in bodies for L in LETTERS):
+            raise ValueError(f"Conditional Q{n} missing letters {set(LETTERS) - set(bodies)}")
+        items.append({"verdicts": [verdicts[L] for L in LETTERS], "bodies": [bodies[L] for L in LETTERS]})
+    return items
+
+
+def parse_ev_explanations() -> list[dict]:
+    """Collect 41 EV answer writeups in the same order as parse_ev_pdf()."""
+    text = PAGE_RE.sub("\n", (EXTRACT_DIR / "ev_var_norm.txt").read_text())
+    items: list[dict] = []
+    chunks = re.split(r"(?=Question\s+\d+\s+(?:\(|—))", text)
+    for chunk in chunks:
+        if not re.match(r"Question\s+\d+\s+(?:\(|—)", chunk.strip()):
+            continue
+        if not re.search(r"\bA\s+(TRUE|FALSE)\b", chunk):
+            continue
+        if "Evaluate each statement" in chunk[:500]:
+            continue
+        verdicts, bodies = _letter_bodies(chunk)
+        if any(L not in bodies for L in LETTERS):
+            continue
+        joined = " ".join(bodies[L] for L in LETTERS)
+        if len(joined) < 80:
+            continue
+        items.append({"verdicts": [verdicts[L] for L in LETTERS], "bodies": [bodies[L] for L in LETTERS]})
+    if len(items) != 41:
+        raise ValueError(f"Expected 41 EV explanation blocks, got {len(items)}")
+    return items
+
+
+def parse_incl_explanations() -> dict[int, dict]:
+    text = PAGE_RE.sub(" ", (EXTRACT_DIR / "incl_excl_norm.txt").read_text())
+    out: dict[int, dict] = {}
+    for n in range(1, 30):
+        block = find_pdf_answer_block(text, n)
+        if not block:
+            continue
+        verdicts, bodies = _letter_bodies(block)
+        if any(L not in bodies for L in LETTERS):
+            continue
+        out[n] = {"verdicts": [verdicts[L] for L in LETTERS], "bodies": [bodies[L] for L in LETTERS]}
+    return out
+
+
+def overlay_pdf_explanations(
+    tasks: list[dict],
+    pdf_expls: list[dict],
+    label: str,
+    mismatches: list[str],
+) -> list[dict]:
+    if len(tasks) != len(pdf_expls):
+        raise ValueError(f"{label}: {len(tasks)} tasks vs {len(pdf_expls)} PDF explanation blocks")
+    for i, (task, pdf) in enumerate(zip(tasks, pdf_expls), start=1):
+        stored = task.get("answer_key") or []
+        if stored != pdf["verdicts"]:
+            mismatches.append(
+                f"{label} Q{i} ({task.get('title','')}): stored {stored} vs PDF {pdf['verdicts']}"
+            )
+        task["tactical_explanations"] = [
+            format_pdf_explanation(L, stored[j] if stored else pdf["verdicts"][j], pdf["bodies"][j])
+            for j, L in enumerate(LETTERS)
+        ]
+        mismatches.extend(
+            explanation_arithmetic_flags(
+                f"{label} Q{i} ({task.get('title','')})",
+                task["tactical_explanations"],
+            )
+        )
+        task["_pdf_locked_expl"] = True
+    return tasks
+
