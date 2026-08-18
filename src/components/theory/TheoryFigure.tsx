@@ -1399,6 +1399,162 @@ function VennSurveyCount() {
   );
 }
 
+function powerPolyline(
+  xs: number[],
+  f: (x: number) => number,
+  toSvg: (x: number, y: number) => { x: number; y: number },
+) {
+  return xs
+    .map((x) => {
+      const p = toSvg(x, f(x));
+      return `${p.x.toFixed(1)},${p.y.toFixed(1)}`;
+    })
+    .join(" ");
+}
+
+function PowerEvenOdd() {
+  const W = 420;
+  const H = 280;
+  const ox = 210;
+  const oy = 140;
+  const sx = 55;
+  const sy = 28;
+  const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
+  const xs = Array.from({ length: 81 }, (_, i) => -2 + i * 0.05);
+  const sq = powerPolyline(xs, (x) => x * x, toSvg);
+  const cu = powerPolyline(
+    xs.filter((x) => Math.abs(x * x * x) <= 4.2),
+    (x) => x * x * x,
+    toSvg,
+  );
+  return (
+    <div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
+        <line x1="28" y1={oy} x2="392" y2={oy} stroke={STROKE} strokeWidth="1.5" />
+        <line x1={ox} y1="18" x2={ox} y2="262" stroke={STROKE} strokeWidth="1.5" />
+        <text x="396" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+          x
+        </text>
+        <text x={ox + 6} y="22" fill={INK} fontSize="13" fontWeight="700">
+          y
+        </text>
+        <polyline points={sq} fill="none" stroke={MUTED} strokeWidth="2.25" />
+        <polyline points={cu} fill="none" stroke={ACCENT} strokeWidth="2.25" />
+        <text x="318" y="48" fill={MUTED} fontSize="13" fontWeight="700">
+          y = x²
+        </text>
+        <text x="318" y="232" fill={ACCENT} fontSize="13" fontWeight="700">
+          y = x³
+        </text>
+      </svg>
+      <Hint>x² is even: mirror across the y-axis. x³ is odd: rotate 180° about the origin.</Hint>
+    </div>
+  );
+}
+
+function PowerReciprocal() {
+  const W = 420;
+  const H = 280;
+  const ox = 210;
+  const oy = 140;
+  const sx = 48;
+  const sy = 36;
+  const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
+  const left = Array.from({ length: 36 }, (_, i) => -3 + i * 0.07).filter((x) => x <= -0.22);
+  const right = Array.from({ length: 36 }, (_, i) => 0.22 + i * 0.08).filter((x) => x <= 3);
+  const invL = powerPolyline(left, (x) => 1 / x, toSvg);
+  const invR = powerPolyline(right, (x) => 1 / x, toSvg);
+  const sqL = powerPolyline(
+    left.filter((x) => 1 / (x * x) <= 3.6),
+    (x) => 1 / (x * x),
+    toSvg,
+  );
+  const sqR = powerPolyline(
+    right.filter((x) => 1 / (x * x) <= 3.6),
+    (x) => 1 / (x * x),
+    toSvg,
+  );
+  return (
+    <div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
+        <line x1="28" y1={oy} x2="392" y2={oy} stroke={STROKE} strokeWidth="1.5" />
+        <line x1={ox} y1="18" x2={ox} y2="262" stroke={STROKE} strokeWidth="1.5" />
+        <line x1={ox} y1="18" x2={ox} y2="262" stroke={GRID} strokeWidth="1.25" strokeDasharray="4 4" />
+        <text x="396" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+          x
+        </text>
+        <text x={ox + 6} y="22" fill={INK} fontSize="13" fontWeight="700">
+          y
+        </text>
+        <polyline points={invL} fill="none" stroke={ACCENT} strokeWidth="2.25" />
+        <polyline points={invR} fill="none" stroke={ACCENT} strokeWidth="2.25" />
+        <polyline points={sqL} fill="none" stroke={MUTED} strokeWidth="2.25" />
+        <polyline points={sqR} fill="none" stroke={MUTED} strokeWidth="2.25" />
+        <text x="268" y="48" fill={MUTED} fontSize="13" fontWeight="700">
+          y = 1/x²
+        </text>
+        <text x="52" y="48" fill={ACCENT} fontSize="13" fontWeight="700">
+          y = 1/x
+        </text>
+      </svg>
+      <Hint>Both blow up at x = 0 (vertical asymptote). 1/x changes sign; 1/x² stays positive.</Hint>
+    </div>
+  );
+}
+
+function PowerCompare() {
+  const W = 420;
+  const H = 280;
+  const ox = 48;
+  const oy = 240;
+  const sx = 160;
+  const sy = 110;
+  const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
+  const xs = Array.from({ length: 41 }, (_, i) => i * 0.04);
+  const y1 = powerPolyline(xs, (x) => x, toSvg);
+  const y2 = powerPolyline(xs, (x) => x * x, toSvg);
+  const y3 = powerPolyline(xs, (x) => x * x * x, toSvg);
+  return (
+    <div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
+        <line x1={ox} y1={oy} x2="400" y2={oy} stroke={STROKE} strokeWidth="1.5" />
+        <line x1={ox} y1="18" x2={ox} y2={oy} stroke={STROKE} strokeWidth="1.5" />
+        <text x="404" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+          x
+        </text>
+        <text x={ox + 8} y="22" fill={INK} fontSize="13" fontWeight="700">
+          y
+        </text>
+        <line
+          x1={ox + sx}
+          y1={oy}
+          x2={ox + sx}
+          y2={oy - sy}
+          stroke={GRID}
+          strokeWidth="1.25"
+          strokeDasharray="4 4"
+        />
+        <text x={ox + sx} y={oy + 16} textAnchor="middle" fill={MUTED} fontSize="12">
+          1
+        </text>
+        <polyline points={y1} fill="none" stroke={INK} strokeWidth="2.1" />
+        <polyline points={y2} fill="none" stroke={MUTED} strokeWidth="2.1" />
+        <polyline points={y3} fill="none" stroke={ACCENT} strokeWidth="2.25" />
+        <text x="318" y="86" fill={INK} fontSize="13" fontWeight="700">
+          y = x
+        </text>
+        <text x="318" y="106" fill={MUTED} fontSize="13" fontWeight="700">
+          y = x²
+        </text>
+        <text x="318" y="126" fill={ACCENT} fontSize="13" fontWeight="700">
+          y = x³
+        </text>
+      </svg>
+      <Hint>On (0,1) the higher power is smaller. They meet at 1, then the ranking reverses.</Hint>
+    </div>
+  );
+}
+
 /** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
 const FIGURES: Record<string, () => ReactNode> = {
   "circular-flow": CircularFlow,
@@ -1435,6 +1591,9 @@ const FIGURES: Record<string, () => ReactNode> = {
   "venn-de-morgan-union": VennDeMorganUnion,
   "venn-de-morgan-inter": VennDeMorganInter,
   "venn-survey-count": VennSurveyCount,
+  "power-even-odd": PowerEvenOdd,
+  "power-reciprocal": PowerReciprocal,
+  "power-compare": PowerCompare,
 };
 
 export function TheoryFigure({ id, caption, className }: Props) {
