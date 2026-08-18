@@ -774,7 +774,7 @@ def apply_venn_override(task: dict) -> dict:
         verdict = "True" if task["answer_key"][i] else "False"
         body = ov["explanations"][i]
         expls.append(
-            f"**Statement {letter} — {verdict}**\n\n{body}\n\n**Takeaway:** {body.split('.')[0]}."
+            f"**Statement {letter} — {verdict}**\n\n{body}"
         )
     task["tactical_explanations"] = expls
     task["solution_overview"] = "Read each region of the Venn diagram directly, then form the requested probability from those region values."
@@ -862,6 +862,18 @@ def validate_tasks(tasks: list[dict]) -> list[str]:
                     f"{tid}: identical explanation text shared by statements {', '.join(letters)}"
                 )
         for i, e in enumerate(expls):
+            raw = e or ""
+            if re.search(r"(?im)^(?:\*\*)?Takeaway:", raw):
+                flags.append(f"{tid}: explanation {LETTERS[i]} still has a Takeaway line")
+            if re.search(r"(?im)^(?:\*\*)?Close call:", raw):
+                flags.append(f"{tid}: explanation {LETTERS[i]} still has a Close call line")
+            body = "\n".join(
+                (raw.replace("**", "")).splitlines()[1:]
+                if raw.splitlines() and raw.splitlines()[0].lower().startswith("statement ")
+                else [raw]
+            ).strip()
+            if body.startswith("Organize counts into a table") or body.startswith("Organize the counts"):
+                flags.append(f"{tid}: explanation {LETTERS[i]} starts with a generic template line")
             if "Question " in e and "Statement" in e and len(e) > 1200:
                 flags.append(f"{tid}: explanation {LETTERS[i]} looks like leaked later questions")
     return flags

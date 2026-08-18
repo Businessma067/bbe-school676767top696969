@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from parse_bbe import format_math_explanation
 from ch12_pdf_stems import (
     overlay_pdf_explanations,
     overlay_pdf_stems,
@@ -944,30 +945,10 @@ def expand_short_explanation(
             )
 
     if subsection == "12.3":
-        if re.search(r"\\frac|\\not|[<>%]|=", body_clean):
-            return (
-                "Organize the counts from the problem, then apply the conditional probability definition.\n\n"
-                f"$$\n{body_clean}\n$$\n\n"
-                f"Statement {letter} is therefore {verdict.lower()}."
-            )
-        if re.search(r"[a-zA-Z]{5,}", body_clean):
-            return (
-                "Organize the counts from the problem, then apply the conditional probability definition.\n\n"
-                f"{body_clean}\n\n"
-                f"Statement {letter} is therefore {verdict.lower()}."
-            )
-        return (
-            "Organize the counts, then form the conditional or joint probability.\n\n"
-            f"$$\n{body_clean}\n$$\n\n"
-            f"Statement {letter} is therefore {verdict.lower()}."
-        )
+        return body
 
     if subsection == "12.4" and len(body) < 100:
-        return (
-            "Apply the definition and substitute the probabilities from the table.\n\n"
-            f"$$\n{body_clean}\n$$\n\n"
-            f"Statement {letter} is therefore {verdict.lower()}."
-        )
+        return body
 
     return body
 
@@ -978,66 +959,7 @@ def restructure_explanation(
     body: str,
     statement: str,
 ) -> str:
-    body = clean_explanation_prose(body)
-    prose, formula = _extract_formula_line(body)
-
-    lines = [f"**Statement {letter} — {verdict}**", ""]
-
-    if prose:
-        for para in re.split(r"\n\s*\n", prose):
-            para = para.strip()
-            if not para:
-                continue
-            # One idea per line: split on sentence boundaries for dense blocks
-            sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z(])", para)
-            for sent in sentences:
-                sent = sent.strip()
-                if sent:
-                    lines.append(sent)
-            lines.append("")
-
-    if formula:
-        f = formula.strip().strip("$").replace("$", "")
-        lines.append(f"$$\n{f}\n$$")
-        lines.append("")
-
-    close_pat = re.compile(
-        r"(close call|exactly at the boundary|not greater than|not above|not below|"
-        r"exactly \d|same trap|tempting but incorrect)",
-        re.I,
-    )
-    if close_pat.search(prose + " " + (formula or "")):
-        for sent in re.split(r"(?<=[.!?])\s+", prose):
-            if close_pat.search(sent):
-                lines.append(f"**Close call:** {sent.strip()}")
-                lines.append("")
-                break
-
-    takeaway = ""
-    if prose:
-        takeaway_line = re.search(r"(?m)^Takeaway:\s*(.+)$", prose)
-        if takeaway_line:
-            takeaway = takeaway_line.group(1).strip()
-            prose = re.sub(r"(?m)^Takeaway:.*$", "", prose).strip()
-        sentences = [
-            s.strip()
-            for s in re.split(r"(?<=[.!?])\s+(?=[A-Z(])", prose.strip())
-            if s.strip()
-            and not re.match(r"Statement [A-E] is therefore", s, flags=re.I)
-            and not s.startswith("Organize the counts")
-            and not s.startswith("Apply the")
-            and not s.startswith("This is a direct lookup")
-            and not s.startswith("First compute")
-            and not s.startswith("Members who use")
-            and not s.startswith("Takeaway:")
-        ]
-        if sentences:
-            takeaway = sentences[-1]
-    if not takeaway:
-        takeaway = f"The statement is {verdict.lower()} based on the calculation above."
-    lines.append(f"**Takeaway:** {takeaway}")
-
-    return "\n".join(lines).strip()
+    return format_math_explanation(letter, verdict.lower() == "true", body, statement)
 
 
 def is_substantive_explanation(body: str) -> bool:
@@ -1067,6 +989,8 @@ def trim_solution_overview(overview: str, tactical: list[str], subsection: str) 
             first = re.split(r"\.\s+", ov.replace("\n", " "), maxsplit=1)[0]
             return first.strip() + "." if first else ""
     if subsection in ("12.2", "12.3", "12.4"):
+        if ov.startswith("Organize counts into a table"):
+            return ""
         # Single-formula overviews are useful once; don't repeat in every letter.
         if ov.count("$$") >= 2 or len(ov) > 400:
             m = re.search(r"\$\$(.*?)\$\$", ov, flags=re.S)

@@ -11,13 +11,19 @@
       "Sole proprietorships require substantial minimum share capital before trading may begin.",
       "Hiring staff removes the sole proprietor from responsibility for major management decisions and business risk."
     ],
-    "answer_key": [true, true, false, false, false],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Ownership and day-to-day management rest with a single proprietor.",
-      "TRUE — Without separate legal personality, profits are taxed as the owner's personal income.",
-      "FALSE — The sole proprietor has unlimited liability; private assets are also at stake.",
-      "FALSE — Sole proprietorships are easy to establish and face no such capital requirement.",
-      "FALSE — Even with hired personnel, the proprietor retains key decisions and bears the risk."
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwnership and day-to-day management rest with a single proprietor.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWithout separate legal personality, profits are taxed as the owner's personal income.\n\nThe statement is true.",
+      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nThe sole proprietor has unlimited liability; private assets are also at stake.\n\nThe statement is false. A student who overlooked the word \"cannot\" would treat a restricted claim as an unrestricted rule and mark the statement true.",
+      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSole proprietorships are easy to establish and face no such capital requirement.\n\nThe statement is false. A student who recognised the topic word and stopped reading would miss the qualifier that breaks the claim.",
+      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEven with hired personnel, the proprietor retains key decisions and bears the risk.\n\nThe statement is false. A student who recognised the topic word and stopped reading would miss the qualifier that breaks the claim."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -34,13 +40,19 @@
       "A limited partner who does not manage the business still carries unlimited liability for all partnership debts.",
       "Partners cannot specialise in different tasks because every partner must perform identical management duties."
     ],
-    "answer_key": [true, true, true, false, false],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Joint founding plus a partnership agreement defines the partnership structure.",
-      "TRUE — General partnerships assign equal rights, liabilities, and responsibilities to partners.",
-      "TRUE — Unlimited liability means each general partner can be held for the whole debt.",
-      "FALSE — In a limited partnership, a limited partner's liability is capped at the capital contributed.",
-      "FALSE — Partners may share tasks and specialise while remaining jointly responsible."
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nJoint founding plus a partnership agreement defines the partnership structure.\n\nThe statement is true.",
+      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nGeneral partnerships assign equal rights, liabilities, and responsibilities to partners.\n\nThe statement is true.",
+      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nUnlimited liability means each general partner can be held for the whole debt.\n\nThe statement is true.",
+      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nIn a limited partnership, a limited partner's liability is capped at the capital contributed.\n\nThe statement is false. A student who overlooked the word \"all\" would treat a restricted claim as an unrestricted rule and mark the statement true.",
+      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPartners may share tasks and specialise while remaining jointly responsible.\n\nThe statement is false. A student who overlooked the word \"cannot\" would treat a restricted claim as an unrestricted rule and mark the statement true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -57,13 +69,19 @@
       "Share capital is divided into shares so that large sums can be raised when investors purchase stock.",
       "Once share prices rise on the stock exchange after issue, the issuing corporation automatically receives additional financing equal to that price rise."
     ],
-    "answer_key": [true, true, true, true, false],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Corporations are legal persons with the same rights and obligations as natural persons in business life.",
-      "TRUE — Ownership and management can be separated in a corporation.",
-      "TRUE — Limited liability confines shareholders' exposure to their invested capital.",
-      "TRUE — Selling shares builds share capital that finances the corporation.",
-      "FALSE — Post-issue market gains accrue to shareholders; they do not inject new funds into the issuer."
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCorporations are legal persons with the same rights and obligations as natural persons in business life.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwnership and management can be separated in a corporation.\n\nThe statement is true.",
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLimited liability confines shareholders' exposure to their invested capital.\n\nThe statement is true.",
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSelling shares builds share capital that finances the corporation.\n\nThe statement is true.",
+      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPost-issue market gains accrue to shareholders; they do not inject new funds into the issuer.\n\nThe statement is false. A student who overlooked the word \"automatically\" would treat a restricted claim as an unrestricted rule and mark the statement true."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -80,13 +98,19 @@
       "A sole proprietorship is classified as an incorporated business because it files personal income tax on profits.",
       "Limited liability companies belong with unincorporated businesses because their shares are not always listed on a stock exchange."
     ],
-    "answer_key": [true, true, true, false, false],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Separate legal personality is the core split between unincorporated and incorporated structures.",
-      "TRUE — Sole traders and partners usually both own and manage the firm.",
-      "TRUE — Corporate structure allows shareholders to own while directors manage.",
-      "FALSE — A sole proprietorship remains unincorporated and lacks separate legal personality.",
-      "FALSE — Private limited companies are still incorporated legal persons with limited liability."
+      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nSeparate legal personality is the core split between unincorporated and incorporated structures.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSole traders and partners usually both own and manage the firm.\n\nThe statement is true.",
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCorporate structure allows shareholders to own while directors manage.\n\nThe statement is true.",
+      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nA sole proprietorship remains unincorporated and lacks separate legal personality.\n\nThe statement is false. A student who recognised the topic word and stopped reading would miss the qualifier that breaks the claim.",
+      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPrivate limited companies are still incorporated legal persons with limited liability.\n\nThe statement is false. A student who overlooked the word \"always\" would treat a restricted claim as an unrestricted rule and mark the statement true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -103,13 +127,19 @@
       "Long-term bank loans and bonds issued to investors are forms of long-term debt finance.",
       "Debt finance is classified as internal finance because interest payments return profit to the owners."
     ],
-    "answer_key": [true, true, true, true, false],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Share capital comes from outside investors and counts as equity finance.",
-      "TRUE — Profits retained in the firm supply internal equity finance without interest charges.",
-      "TRUE — Overdrafts and supplier trade credit finance short-term obligations as debt.",
-      "TRUE — Loans and bonds provide longer-term creditors' funds that must be repaid with interest.",
-      "FALSE — Debt finance is external; interest is a cost of borrowing, not internal equity."
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShare capital comes from outside investors and counts as equity finance.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfits retained in the firm supply internal equity finance without interest charges.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOverdrafts and supplier trade credit finance short-term obligations as debt.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLoans and bonds provide longer-term creditors' funds that must be repaid with interest.\n\nThe statement is true.",
+      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nDebt finance is external; interest is a cost of borrowing, not internal equity.\n\nThe statement is false. A student who recognised the topic word and stopped reading would miss the qualifier that breaks the claim."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -126,13 +156,19 @@
       "Issuing bonds can be attractive because the interest rate on bonds is often lower than the interest rate on a comparable bank loan.",
       "If secondary-market share prices rise after the IPO, the corporation records matching equity finance equal to the cumulative market gain."
     ],
-    "answer_key": [true, true, true, true, false],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Lower interest rates reduce the relative appeal of interest-bearing alternatives and can raise share demand.",
-      "TRUE — Dividends are not obligatory, yet prolonged non-payment can make shares unattractive and pressure prices.",
-      "TRUE — Preferred stock typically trades voting rights for preferential dividend treatment.",
-      "TRUE — Bond issues may finance large projects more cheaply than bank borrowing.",
-      "FALSE — Secondary price rises benefit trading shareholders; they do not inject additional share capital into the issuer."
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLower interest rates reduce the relative appeal of interest-bearing alternatives and can raise share demand.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDividends are not obligatory, yet prolonged non-payment can make shares unattractive and pressure prices.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPreferred stock typically trades voting rights for preferential dividend treatment.\n\nThe statement is true.",
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBond issues may finance large projects more cheaply than bank borrowing.\n\nThe statement is true.",
+      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSecondary price rises benefit trading shareholders; they do not inject additional share capital into the issuer.\n\nThe statement is false. A student who recognised the topic word and stopped reading would miss the qualifier that breaks the claim."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -149,13 +185,19 @@
       "When loan capital is already high, internal funds or new equity investors can reduce insolvency risk relative to taking another large loan.",
       "The only relevant criterion when choosing a source of finance is the absolute interest rate, so matching term to asset life and gearing risk can be ignored."
     ],
-    "answer_key": [true, true, true, true, false],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "TRUE — Long-lived asset spending calls for long-term finance so repayment timing matches use.",
-      "TRUE — Short-cycle materials need short-term credit such as overdrafts or trade credit.",
-      "TRUE — High gearing makes lenders cautious and often raises the price or collateral demand of new debt.",
-      "TRUE — Extra debt increases repayment burden; retained earnings or investors avoid adding that load.",
-      "FALSE — Cost matters, but intended use and current gearing also shape the appropriate choice."
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLong-lived asset spending calls for long-term finance so repayment timing matches use.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShort-cycle materials need short-term credit such as overdrafts or trade credit.\n\nThe statement is true.",
+      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigh gearing makes lenders cautious and often raises the price or collateral demand of new debt.\n\nThe statement is true.",
+      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nExtra debt increases repayment burden; retained earnings or investors avoid adding that load.\n\nThe statement is true.",
+      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCost matters, but intended use and current gearing also shape the appropriate choice.\n\nThe statement is false. A student who recognised the topic word and stopped reading would miss the qualifier that breaks the claim."
     ],
     "difficulty_level": "5/5",
     "tier": "full"

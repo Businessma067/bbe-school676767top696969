@@ -12,6 +12,7 @@ import json
 import sys
 from collections import Counter
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src" / "data"
@@ -68,6 +69,31 @@ def audit_file(path: Path) -> list[dict]:
                 "sample": sample[:160].replace("\n", " / "),
             }
         )
+    # Style leaks: Takeaway / generic lead-in / Close call
+    for task in load_tasks(path):
+        for i, e in enumerate(task.get("tactical_explanations") or []):
+            raw = e or ""
+            body = explanation_body(raw)
+            issues = []
+            if re.search(r"(?im)^(?:\*\*)?Takeaway:", raw):
+                issues.append("takeaway")
+            if re.search(r"(?im)^(?:\*\*)?Close call:", raw):
+                issues.append("close-call")
+            if body.startswith("Organize counts into a table") or body.startswith("Organize the counts"):
+                issues.append("generic-leadin")
+            if not issues:
+                continue
+            hits.append(
+                {
+                    "file": path.name,
+                    "id": task.get("id") or task.get("case_id") or task.get("title"),
+                    "subsection": task.get("subsection") or "",
+                    "shared_by": 1,
+                    "letters": [LETTERS[i] if i < 5 else str(i)],
+                    "generic_placeholder": "generic-leadin" in issues,
+                    "sample": ",".join(issues),
+                }
+            )
     return hits
 
 
