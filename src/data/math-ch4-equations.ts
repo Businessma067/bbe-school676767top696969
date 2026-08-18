@@ -1003,32 +1003,48 @@ $\\frac{17}{68} = 0.25$. The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangular field is $8$ m longer than it is wide. A path $1.5$ m wide runs around the outside and covers $141$ m$^{2}$. Then the field is $15$ m wide.`,
-      `A rectangular field is $8$ m longer than it is wide. A path $1.5$ m wide runs around the outside and covers $141$ m$^{2}$. Then the field is $18$ m wide.`,
-      `A rectangular field is $8$ m longer than it is wide. A path $1.5$ m wide runs around the outside and covers $141$ m$^{2}$. Then the field is $26$ m long.`,
-      `The path area $141$ m$^{2}$ matches the outer rectangle $21$ m by $29$ m minus the field $18$ m by $26$ m.`,
-      `The outer perimeter of that path is $100$ m.`,
+      `A rectangular lawn is $4$ m longer than it is wide. A path $1$ m wide runs around the outside and covers $48$ m$^{2}$. Then the lawn is $9$ m wide.`,
+      `A rectangle measures $18$ m by $26$ m. A uniform $1.5$ m path around the outside has outer sides $21$ m and $29$ m.`,
+      `An $18$ m by $26$ m field with a $1.5$ m path all round has path area $141$ m$^{2}$, because the outer rectangle is $21$ m by $29$ m.`,
+      `A $21$ m by $29$ m outer rectangle has perimeter $100$ m.`,
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Outer minus inner: $6w + 33 = 141$ gives $w = 18$, not $15$. The statement is False.`,
+Let the width be $w$ m. Then the length is $w + 8$. The outer rectangle is $w + 3$ by $w + 11$.
+
+$$(w + 3)(w + 11) - w(w + 8) = 141$$
+
+$$6w + 33 = 141 \\quad \\Rightarrow \\quad w = 18$$
+
+not $15$. The statement is False.`,
       `**B.** → True
 
-The recovered width is $18$ m. The statement is True.`,
+Let the width be $w$ m. Then the length is $w + 4$. The outer rectangle is $w + 2$ by $w + 6$.
+
+$$(w + 2)(w + 6) - w(w + 4) = 48$$
+
+$$4w + 12 = 48 \\quad \\Rightarrow \\quad w = 9$$
+
+The lawn is $9$ m wide. The statement is True.`,
       `**C.** → True
 
-Length $18 + 8 = 26$ m. The statement is True.`,
+The path adds $3$ m to each side: $18 + 3 = 21$ and $26 + 3 = 29$. The statement is True.`,
       `**D.** → True
 
-$21 \\cdot 29 - 18 \\cdot 26 = 609 - 468 = 141$. The statement is True.`,
+$$21 \\cdot 29 - 18 \\cdot 26 = 609 - 468 = 141$$
+
+The statement is True.`,
       `**E.** → True
 
-$2(21 + 29) = 100$. The statement is True.`,
+$$2(21 + 29) = 100$$
+
+The statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 24,
-    solution_overview: `Five independent claims about a field and a uniform $1.5$ m path. Outer minus inner equals $141$ m$^{2}$ and recovers an $18$ m by $26$ m field.`,
+    solution_overview: `Five independent path-and-rectangle stories. One $1.5$ m path around a field $8$ m longer than it is wide recovers width $18$ m, not $15$. A second $1$ m path around a lawn $4$ m longer than it is wide recovers width $9$ m.`,
   },
   {
     id: `math-4-25`,
@@ -1143,9 +1159,9 @@ That is the opening $20$ m handicap. The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A number has this property: if you subtract $3$ and divide by $4$, you get $2$ less than one-third of the number. Then the number is $15$.`,
-      `A number has this property: if you subtract $3$ and divide by $4$, you get $2$ less than one-third of the number. Then one-third of that number is $4$.`,
-      `Check of $15$: $\\frac{15 - 3}{4} = 3$ and $\\frac{15}{3} - 2 = 3$, so both sides of the relation match.`,
-      `A number has this property: if you subtract $3$ and divide by $4$, you get $2$ less than one-third of the number. Then the number is $12$.`,
+      `A number plus $5$, all divided by $2$, equals $3$ less than the number. Then one-third of that number is $4$.`,
+      `Substituting $x = 15$ into $\\frac{x - 3}{4} = \\frac{x}{3} - 2$ makes both sides equal $3$.`,
+      `The unique real solution of $\\frac{x + 1}{5} = \\frac{x}{2} - 3$ is $x = 12$.`,
       `Clearing $\\frac{x - 3}{4} = \\frac{x}{3} - 2$ multiplies through by $12$ and produces $3(x - 3) = 4x - 24$.`,
     ],
     answer_key: [true, false, true, false, true],
@@ -1155,20 +1171,22 @@ That is the opening $20$ m handicap. The statement is True.`,
 Multiply through by $12$: $3(x - 3) = 4x - 24$, so $x = 15$. The statement is True.`,
       `**B.** → False
 
-One-third of $15$ is $5$, not $4$. The statement is False.`,
+$$\\frac{x + 5}{2} = x - 3 \\quad \\Rightarrow \\quad x + 5 = 2x - 6 \\quad \\Rightarrow \\quad x = 11$$
+
+One-third of $11$ is $\\frac{11}{3}$, not $4$. The statement is False.`,
       `**C.** → True
 
-Both sides equal $3$. The statement is True.`,
+Left: $\\frac{12}{4} = 3$. Right: $5 - 2 = 3$. The statement is True.`,
       `**D.** → False
 
-At $x = 12$ the left side is $\\frac{9}{4}$ and the right side is $2$. The recovered number is $15$. The statement is False.`,
+Multiply through by $10$: $2(x + 1) = 5x - 30$, so $2x + 2 = 5x - 30$ and $x = \\frac{32}{3}$, not $12$. The statement is False.`,
       `**E.** → True
 
 The denominators $4$ and $3$ have LCD $12$. The statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 28,
-    solution_overview: `Five independent nested linear claims. $\\frac{x - 3}{4} = \\frac{x}{3} - 2$ clears by $12$ to $x = 15$.`,
+    solution_overview: `Five independent nested linear claims. One word equation clears by $12$ to $x = 15$. A second, $\\frac{x + 5}{2} = x - 3$, recovers $x = 11$. A third, $\\frac{x + 1}{5} = \\frac{x}{2} - 3$, recovers $x = \\frac{32}{3}$.`,
   },
   {
     id: `math-4-29`,
@@ -1813,10 +1831,10 @@ The two integer solutions are $n = 11$ and $n = -18$. The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle has area $36$ cm$^{2}$, and its length is $1$ cm more than twice its width. Then the width is $6$ cm.`,
-      `That same type of rectangle, length $1$ cm more than twice the width and area $36$ cm$^{2}$, has length $12$ cm.`,
-      `A rectangle of area $36$ cm$^{2}$ whose length is $1$ cm more than twice its width has perimeter $40$ cm.`,
+      `A rectangle of area $48$ cm$^{2}$ whose length is twice its width has length $12$ cm.`,
+      `A $4$ cm by $9$ cm rectangle has perimeter $40$ cm.`,
       `Width $5$ cm and length $11$ cm would give area $36$ cm$^{2}$ with length $1$ more than twice the width.`,
-      `The width of that rectangle is $4$ cm, so the length is $9$ cm.`,
+      `A rectangle of area $45$ cm$^{2}$ whose length is $4$ cm more than its width has width $5$ cm.`,
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
@@ -1825,7 +1843,7 @@ The two integer solutions are $n = 11$ and $n = -18$. The statement is True.`,
 $w(2w + 1) = 36$ gives $2w^{2} + w - 36 = 0$, so $w = 4$, not $6$. The statement is False.`,
       `**B.** → False
 
-Length $2 \\cdot 4 + 1 = 9$ cm, not $12$. The statement is False.`,
+$w(2w) = 48$ gives $2w^{2} = 48$, so $w^{2} = 24$. Length $2w$ is $2\\sqrt{24}$, not $12$. If the length were $12$ cm then the width would be $6$ cm and the area $72$, not $48$. The statement is False.`,
       `**C.** → False
 
 $P = 2(4 + 9) = 26$, not $40$. The statement is False.`,
@@ -1834,11 +1852,11 @@ $P = 2(4 + 9) = 26$, not $40$. The statement is False.`,
 $5 \\cdot 11 = 55$, not $36$, and $11$ is not $1$ more than twice $5$. The statement is False.`,
       `**E.** → True
 
-The positive root is $w = 4$. Check: $4 \\cdot 9 = 36$. The statement is True.`,
+$w(w + 4) = 45$ gives $w^{2} + 4w - 45 = 0$, so $(w + 9)(w - 5) = 0$. The positive width is $5$ cm. Check: $5 \\cdot 9 = 45$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 44,
-    solution_overview: `Five independent rectangle claims. $w(2w + 1) = 36$ has positive width $4$ cm and length $9$ cm.`,
+    solution_overview: `Five independent rectangle claims. $w(2w + 1) = 36$ has positive width $4$ cm, not $6$. A second rectangle $w(w + 4) = 45$ has width $5$ cm.`,
   },
   {
     id: `math-4-45`,
@@ -1883,10 +1901,10 @@ $h(2) = 20$ m, the maximum, not $30$. The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Two numbers add to $15$ and multiply to $44$. They are $4$ and $11$.`,
-      `Two numbers add to $15$ and multiply to $44$. They differ by $7$.`,
-      `Two numbers add to $15$ and multiply to $44$. They are $5$ and $9$.`,
-      `If two numbers add to $15$ and multiply to $44$, then $(x + 1)(y + 1) = 60$.`,
-      `If two numbers add to $15$ and multiply to $44$, then $x^{2} + y^{2} = 137$.`,
+      `Two numbers add to $10$ and multiply to $21$. They differ by $4$.`,
+      `Two numbers add to $9$ and multiply to $14$. They are $3$ and $6$.`,
+      `If two numbers add to $8$ and multiply to $15$, then $(x + 1)(y + 1) = 24$.`,
+      `If two numbers add to $10$ and multiply to $21$, then $x^{2} + y^{2} = 58$.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -1895,20 +1913,20 @@ $h(2) = 20$ m, the maximum, not $30$. The statement is False.`,
 $t^{2} - 15t + 44 = 0$ has $\\Delta = 49$, so $t = 11$ or $t = 4$. The statement is True.`,
       `**B.** → True
 
-$11 - 4 = 7$. The statement is True.`,
+$t^{2} - 10t + 21 = 0$ has roots $7$ and $3$, and $7 - 3 = 4$. The statement is True.`,
       `**C.** → False
 
-$5 + 9 = 14$ and $5 \\cdot 9 = 45$, neither matching. The statement is False.`,
+$3 + 6 = 9$ but $3 \\cdot 6 = 18$, not $14$. The pair with sum $9$ and product $14$ is $2$ and $7$. The statement is False.`,
       `**D.** → True
 
-$(x + 1)(y + 1) = xy + x + y + 1 = 44 + 15 + 1 = 60$. The statement is True.`,
+$(x + 1)(y + 1) = xy + x + y + 1 = 15 + 8 + 1 = 24$. The statement is True.`,
       `**E.** → True
 
-$x^{2} + y^{2} = (x + y)^{2} - 2xy = 225 - 88 = 137$. The statement is True.`,
+$x^{2} + y^{2} = (x + y)^{2} - 2xy = 100 - 42 = 58$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 46,
-    solution_overview: `Five independent Vieta claims. Numbers with sum $15$ and product $44$ are $4$ and $11$. Later letters read $(x+1)(y+1)$ and $x^{2}+y^{2}$ from the sum and product alone.`,
+    solution_overview: `Five independent Vieta claims. Pairs with given sum and product are the roots of $t^{2} - (\\text{sum})t + (\\text{product}) = 0$. The letters use different pairs.`,
   },
   {
     id: `math-4-47`,
@@ -1953,10 +1971,10 @@ The sides $5$, $12$, $13$ are all different. The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle has perimeter $40$ cm and area $96$ cm$^{2}$. The sides are $8$ cm and $12$ cm.`,
-      `A rectangle of perimeter $40$ cm and area $96$ cm$^{2}$ is a square.`,
+      `A square of perimeter $40$ cm has area $96$ cm$^{2}$.`,
       `A square with perimeter $40$ cm has area $100$ cm$^{2}$.`,
       `Among rectangles of perimeter $40$ cm, the square's area $100$ cm$^{2}$ is larger than $96$ cm$^{2}$.`,
-      `A rectangle of perimeter $40$ cm and area $96$ cm$^{2}$ has sides $6$ cm and $14$ cm.`,
+      `A rectangle of perimeter $36$ cm and area $80$ cm$^{2}$ has sides $6$ cm and $14$ cm.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -1965,7 +1983,7 @@ The sides $5$, $12$, $13$ are all different. The statement is False.`,
 $x(20 - x) = 96$ gives $x^{2} - 20x + 96 = 0$, so $x = 12$ or $x = 8$. The statement is True.`,
       `**B.** → False
 
-$8 \\neq 12$. The statement is False.`,
+A square of perimeter $40$ cm has side $10$ cm and area $100$ cm$^{2}$, not $96$. The statement is False.`,
       `**C.** → True
 
 Side $10$ cm, area $100$. The statement is True.`,
@@ -1974,7 +1992,7 @@ Side $10$ cm, area $100$. The statement is True.`,
 $100 > 96$. The square maximises area for a fixed perimeter. The statement is True.`,
       `**E.** → False
 
-$6 \\cdot 14 = 84$, not $96$. The statement is False.`,
+$6 + 14 = 20$, so the perimeter would be $40$ cm, not $36$. And $6 \\cdot 14 = 84$, not $80$. The statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 48,
@@ -2023,10 +2041,10 @@ $\\frac{30}{6} = 5$. The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A $10$ m ladder leans against a wall. Its foot is $2$ m farther from the wall than the height it reaches. Then the top is $6$ m up the wall.`,
-      `That ladder's foot is $7$ m from the wall.`,
-      `That ladder's foot is $8$ m from the wall.`,
-      `The right triangle of wall, ground and that ladder has area $24$ m$^{2}$.`,
-      `A $10$ m ladder leans against a wall. Its foot is $2$ m farther from the wall than the height it reaches. Then the foot is $9$ m from the wall.`,
+      `A $13$ m ladder leans against a wall and reaches $5$ m up. Then the foot is $7$ m from the wall.`,
+      `A $10$ m ladder reaches $6$ m up a wall. Then the foot is $8$ m from the wall.`,
+      `A right triangle with legs $6$ m and $8$ m has area $24$ m$^{2}$.`,
+      `A $13$ m ladder stands with its foot $12$ m from a wall. Then it reaches $9$ m up the wall.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -2035,20 +2053,20 @@ $\\frac{30}{6} = 5$. The statement is True.`,
 $h^{2} + (h + 2)^{2} = 100$ becomes $h^{2} + 2h - 48 = 0$, so $h = 6$. The statement is True.`,
       `**B.** → False
 
-The foot is $8$ m, not $7$. The statement is False.`,
+$5^{2} + b^{2} = 13^{2}$ gives $b^{2} = 144$, so $b = 12$, not $7$. The statement is False.`,
       `**C.** → True
 
-$6 + 2 = 8$. Check: $6^{2} + 8^{2} = 100$. The statement is True.`,
+$6^{2} + 8^{2} = 36 + 64 = 100$. The foot is $8$ m from the wall. The statement is True.`,
       `**D.** → True
 
 $\\frac{1}{2} \\cdot 6 \\cdot 8 = 24$. The statement is True.`,
       `**E.** → False
 
-Nine metres with hypotenuse $10$ would force height $\\sqrt{19}$, not $6$. The statement is False.`,
+$12^{2} + h^{2} = 13^{2}$ gives $h^{2} = 25$, so $h = 5$, not $9$. The statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 50,
-    solution_overview: `Five independent ladder claims. Foot $2$ m more than height with hypotenuse $10$ m recovers height $6$ m and foot $8$ m.`,
+    solution_overview: `Five independent ladder claims. Foot $2$ m more than height with hypotenuse $10$ m recovers height $6$ m. A $5$-$12$-$13$ ladder is a separate story.`,
   },
   {
     id: `math-4-51`,
