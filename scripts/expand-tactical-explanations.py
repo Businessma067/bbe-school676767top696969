@@ -309,6 +309,7 @@ def expand_one(
     subsection: str,
     case_id: str,
     index: int,
+    used_mistakes: set[str] | None = None,
 ) -> str:
     _, body = parse_expl(short_expl)
     if not body:
@@ -320,7 +321,7 @@ def expand_one(
     kind = classify_econ(statement, application, subsection)
     hits = ABSOLUTE_WORD_RE.findall(statement) if not is_true else []
     trap_word = hits[0].lower() if hits else None
-    return format_econ_explanation(is_true, statement, application, kind, trap_word)
+    return format_econ_explanation(is_true, statement, application, kind, trap_word, used_mistakes)
 
 
 def process_file(path: Path, dry_run: bool = False) -> dict[str, int]:
@@ -335,13 +336,16 @@ def process_file(path: Path, dry_run: bool = False) -> dict[str, int]:
         expls: list[str] = case.get("tactical_explanations") or []
 
         new_expl: list[str] = []
+        used: set[str] = set()
         for i, stmt in enumerate(statements):
             old = expls[i] if i < len(expls) else ""
             key = bool(keys[i]) if i < len(keys) else False
-            new_expl.append(expand_one(stmt, key, old, subsection, case_id, i))
+            new_expl.append(expand_one(stmt, key, old, subsection, case_id, i, used))
             stats["expanded"] += 1
 
-        case["tactical_explanations"] = new_expl
+        from explanation_builder import seal_question_explanations
+
+        case["tactical_explanations"] = seal_question_explanations(new_expl, statements, keys)
 
     if not dry_run:
         path.write_text(json.dumps(cases, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
