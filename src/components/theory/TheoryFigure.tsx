@@ -1399,6 +1399,11 @@ function VennSurveyCount() {
   );
 }
 
+function linspace(from: number, to: number, n: number) {
+  if (n <= 1) return [from];
+  return Array.from({ length: n }, (_, i) => from + (i / (n - 1)) * (to - from));
+}
+
 function powerPolyline(
   xs: number[],
   f: (x: number) => number,
@@ -1406,10 +1411,23 @@ function powerPolyline(
 ) {
   return xs
     .map((x) => {
-      const p = toSvg(x, f(x));
+      const y = f(x);
+      if (!Number.isFinite(y)) return null;
+      const p = toSvg(x, y);
       return `${p.x.toFixed(1)},${p.y.toFixed(1)}`;
     })
+    .filter((p): p is string => p !== null)
     .join(" ");
+}
+
+/** Dense near 0 so 1/x reaches the vertical asymptote on both arms. */
+function reciprocalXs(sign: 1 | -1) {
+  const far = sign * 3.2;
+  const mid = sign * 0.65;
+  const near = sign * 0.12;
+  const coarse = linspace(far, mid, 40);
+  const fine = linspace(mid, near, 56).slice(1);
+  return [...coarse, ...fine];
 }
 
 function PowerEvenOdd() {
@@ -1457,39 +1475,50 @@ function PowerReciprocal() {
   const H = 280;
   const ox = 210;
   const oy = 140;
+  const plotL = 28;
+  const plotR = 392;
+  const plotT = 18;
+  const plotB = 262;
   const sx = 48;
   const sy = 36;
   const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
-  const left = Array.from({ length: 36 }, (_, i) => -3 + i * 0.07).filter((x) => x <= -0.22);
-  const right = Array.from({ length: 36 }, (_, i) => 0.22 + i * 0.08).filter((x) => x <= 3);
+  const left = reciprocalXs(-1);
+  const right = reciprocalXs(1);
   const invL = powerPolyline(left, (x) => 1 / x, toSvg);
   const invR = powerPolyline(right, (x) => 1 / x, toSvg);
-  const sqL = powerPolyline(
-    left.filter((x) => 1 / (x * x) <= 3.6),
-    (x) => 1 / (x * x),
-    toSvg,
-  );
-  const sqR = powerPolyline(
-    right.filter((x) => 1 / (x * x) <= 3.6),
-    (x) => 1 / (x * x),
-    toSvg,
-  );
+  const sqL = powerPolyline(left, (x) => 1 / (x * x), toSvg);
+  const sqR = powerPolyline(right, (x) => 1 / (x * x), toSvg);
   return (
     <div>
       <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
-        <line x1="28" y1={oy} x2="392" y2={oy} stroke={STROKE} strokeWidth="1.5" />
-        <line x1={ox} y1="18" x2={ox} y2="262" stroke={STROKE} strokeWidth="1.5" />
-        <line x1={ox} y1="18" x2={ox} y2="262" stroke={GRID} strokeWidth="1.25" strokeDasharray="4 4" />
+        <defs>
+          <clipPath id="pw-rec-clip">
+            <rect x={plotL} y={plotT} width={plotR - plotL} height={plotB - plotT} />
+          </clipPath>
+        </defs>
+        <line x1={plotL} y1={oy} x2={plotR} y2={oy} stroke={STROKE} strokeWidth="1.5" />
+        <line x1={ox} y1={plotT} x2={ox} y2={plotB} stroke={STROKE} strokeWidth="1.5" />
+        <line
+          x1={ox}
+          y1={plotT}
+          x2={ox}
+          y2={plotB}
+          stroke={GRID}
+          strokeWidth="1.25"
+          strokeDasharray="4 4"
+        />
         <text x="396" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
           x
         </text>
         <text x={ox + 6} y="22" fill={INK} fontSize="13" fontWeight="700">
           y
         </text>
-        <polyline points={invL} fill="none" stroke={ACCENT} strokeWidth="2.25" />
-        <polyline points={invR} fill="none" stroke={ACCENT} strokeWidth="2.25" />
-        <polyline points={sqL} fill="none" stroke={MUTED} strokeWidth="2.25" />
-        <polyline points={sqR} fill="none" stroke={MUTED} strokeWidth="2.25" />
+        <g clipPath="url(#pw-rec-clip)">
+          <polyline points={sqL} fill="none" stroke={MUTED} strokeWidth="2.25" />
+          <polyline points={sqR} fill="none" stroke={MUTED} strokeWidth="2.25" />
+          <polyline points={invL} fill="none" stroke={ACCENT} strokeWidth="2.25" />
+          <polyline points={invR} fill="none" stroke={ACCENT} strokeWidth="2.25" />
+        </g>
         <text x="268" y="48" fill={MUTED} fontSize="13" fontWeight="700">
           y = 1/x²
         </text>
