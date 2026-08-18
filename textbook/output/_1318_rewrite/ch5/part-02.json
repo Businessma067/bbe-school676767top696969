@@ -1,0 +1,615 @@
+[
+  {
+    "id": "math-5-21",
+    "case_id": "MATH 5.21",
+    "title": "FitZone Gym  -  Checking the Advertised Rates",
+    "context": "FITZONE GYM  -  NEW MEMBER SPECIAL! \"Join for just a \\$30 signup fee, then only \\$45/month!\" An accounting team member is skeptical and pulls two real members' payment histories. Maria, after her 6th monthly payment, had paid \\$284 total. Jason, after his 10th monthly payment, had paid \\$448 total.",
+    "statements": [
+      "The flyer's advertised \\$30 signup fee matches what members are actually being charged.",
+      "The monthly rate members are actually paying is lower than the advertised \\$45/month.",
+      "Maria's actual 6-month total exceeds what the flyer's advertised rates would have produced over the same 6 months.",
+      "Jason paid more than \\$400 in total by his 10th payment.",
+      "A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay \\$492."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The flyer's advertised \\$30 signup fee matches what members are actually being charged.**  (false)\n\nThe overview recovered $x = 38$ as the signup fee members are actually charged. The flyer claimed \\$30.\n\nThose two figures are not the same.\n\nso the statement is False.",
+      "**B) The monthly rate members are actually paying is lower than the advertised \\$45/month.**  (true)\n\nThe overview recovered $y = 41$ as the actual monthly rate. The flyer advertised \\$45 per month.\n\n$$41 < 45$$\n\nMembers pay less per month than the flyer states.\n\nso the statement is True.",
+      "**C) Maria's actual 6-month total exceeds what the flyer's advertised rates would have produced over the same 6 months.**  (false)\n\nMaria actually paid \\$284 over 6 months. The flyer would have charged a \\$30 signup plus \\$45 per month:\n\n$$6 \\times 45 = 270$$\n\n$$30 + 270 = 300$$\n\n$$284 < 300$$\n\nHer actual total does not exceed the flyer figure.\n\nso the statement is False.",
+      "**D) Jason paid more than \\$400 in total by his 10th payment.**  (true)\n\nJason's printed total after his 10th payment is \\$448.\n\n$$448 > 400$$\n\nHe paid more than \\$400.\n\nso the statement is True.",
+      "**E) A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay \\$492.**  (true)\n\nThis member pays no signup fee, only the recovered monthly rate $y = 41$ for 12 months:\n\n$$12 \\times 41 = 492$$\n\nThe claim is \\$492.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 21,
+    "solution_overview": "FITZONE GYM advertises a \\$30 signup fee and then \\$45 per month. Maria had paid \\$284 after her 6th monthly payment. Jason had paid \\$448 after his 10th.\n\n**Part 1: Building the system.**\n\nLet $x$ = the signup fee actually charged, $y$ = the actual monthly rate. The flyer's \\$30 and \\$45 are claims to check, not values to plug in.\n\n**1. Translate: Maria.**\n\n$$x + 6y = 284 \\tag{1}$$\n\n**2. Translate: Jason.**\n\n$$x + 10y = 448 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtract (2) minus (1):\n\n$$\n(x + 10y) - (x + 6y) = 448 - 284\n$$\n\n$$\n4y = 164 \\Rightarrow y = 41\n$$\n\nSubstitute into (1):\n\n$$\nx + 6(41) = 284 \\Rightarrow x + 246 = 284 \\Rightarrow x = 38\n$$\n\n**Answer.** Signup fee = \\$38.00 | Monthly rate = \\$41.00/month"
+  },
+  {
+    "id": "math-5-22",
+    "case_id": "MATH 5.22",
+    "title": "StreamPlus  -  Household Billing Comparison",
+    "context": "StreamPlus offers two flat-rate monthly plans, Basic and Premium, with no separate connection fee. Customer service pulled combined billing records mixing plan-months across two households.",
+    "tables_markdown": "| Household | Basic-Months | Premium-Months | Combined Total |\n| --- | --- | --- | --- |\n| Household 1 | 4 | 3 | \\$169 |\n| Household 2 | 2 | 7 | \\$255 |",
+    "statements": [
+      "The Basic plan costs \\$19 per month.",
+      "The Premium plan costs \\$35 per month.",
+      "Household 2's combined total is more than double Household 1's combined total.",
+      "There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.",
+      "A household billed for 5 months of Basic and 5 months of Premium would owe a combined \\$250."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The Basic plan costs \\$19 per month.**  (true)\n\nThe overview recovered $x = 19$ as the Basic monthly price. The claim is that same figure.\n\nso the statement is True.",
+      "**B) The Premium plan costs \\$35 per month.**  (false)\n\nThe overview recovered $y = 31$ as the Premium monthly price. The claim writes \\$35.\n\n$$31 \\ne 35$$\n\nso the statement is False.",
+      "**C) Household 2's combined total is more than double Household 1's combined total.**  (false)\n\nHousehold 1 billed \\$169. Household 2 billed \\$255. Double Household 1:\n\n$$2 \\times 169 = 338$$\n\n$$255 < 338$$\n\nHousehold 2 is not more than double Household 1.\n\nso the statement is False.",
+      "**D) There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.**  (false)\n\nEqual cost for $n$ months of only Basic and $n$ months of only Premium would require $nx = ny$ with $n > 0$, hence $x = y$. The overview recovered $x = 19$ and $y = 31$.\n\n$$19 \\ne 31$$\n\nThe two flat plans never match for a positive run of months.\n\nso the statement is False.",
+      "**E) A household billed for 5 months of Basic and 5 months of Premium would owe a combined \\$250.**  (true)\n\nThis mix is 5 months of Basic and 5 months of Premium at the recovered prices $x = 19$ and $y = 31$:\n\n$$5 \\times 19 = 95$$\n\n$$5 \\times 31 = 155$$\n\n$$95 + 155 = 250$$\n\nThe claim is \\$250.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 22,
+    "solution_overview": "StreamPlus offers two flat-rate monthly plans, Basic and Premium, with no separate connection fee. Two mixed household bills are on the page.\n\n**Part 1: Building the system.**\n\nLet $x$ = Basic monthly price, $y$ = Premium monthly price.\n\n**1. Translate: Household 1.**\n\n$$4x + 3y = 169 \\tag{1}$$\n\n**2. Translate: Household 2.**\n\n$$2x + 7y = 255 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 7 and (2) by 3:\n\n$$28x + 21y = 1183, \\qquad 6x + 21y = 765$$\n\nSubtract:\n\n$$\n(28x + 21y) - (6x + 21y) = 1183 - 765 \\Rightarrow 22x = 418 \\Rightarrow x = 19\n$$\n\nSubstitute into (1):\n\n$$\n4(19) + 3y = 169 \\Rightarrow 76 + 3y = 169 \\Rightarrow y = 31\n$$\n\n**Answer.** Basic = \\$19.00/month | Premium = \\$31.00/month"
+  },
+  {
+    "id": "math-5-23",
+    "case_id": "MATH 5.23",
+    "title": "Willow Market  -  Grocery Receipts",
+    "context": "Two items  -  organic apples and almond milk  -  recently had their prices updated. (A note on every receipt reminds shoppers that loyalty- card members save 5% storewide; neither receipt below belongs to a loyalty member, so no discount has actually been applied.)",
+    "tables_markdown": "| Receipt 1 | Qty | Price |\n| --- | --- | --- |\n| Bread (loaf) | 1 | \\$3.60 |\n| Eggs (dozen) | 1 | \\$4.40 |\n| Organic Apples (lb) | 5 | ? |\n| Almond Milk (carton) | 3 | ? |\n| Receipt Total |  | \\$50.00 |\n| Receipt 2 | Qty | Price |\n| Bread (loaf) | 1 | \\$3.60 |\n| Organic Apples (lb) | 2 | ? |\n| Almond Milk (carton) | 5 | ? |\n| Receipt Total |  | \\$43.20 |",
+    "statements": [
+      "Organic apples cost \\$4.80 per pound.",
+      "Almond milk costs less than organic apples, per unit.",
+      "Five pounds of apples costs exactly the same as four cartons of almond milk.",
+      "If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than \\$47.00.",
+      "Buying 10 lb of apples and 2 cartons of milk together costs more than \\$60."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Organic apples cost \\$4.80 per pound.**  (true)\n\nThe overview recovered $x = 4.80$ as the apple price per pound. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Almond milk costs less than organic apples, per unit.**  (false)\n\nThe overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.\n\n$$6 > 4.80$$\n\nMilk is the dearer unit.\n\nso the statement is False.",
+      "**C) Five pounds of apples costs exactly the same as four cartons of almond milk.**  (true)\n\nFive pounds of apples and four cartons of milk, at the recovered prices:\n\n$$5 \\times 4.80 = 24$$\n\n$$4 \\times 6 = 24$$\n\n$$24 = 24$$\n\nThe two baskets match.\n\nso the statement is True.",
+      "**D) If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than \\$47.00.**  (false)\n\nNeither printed receipt received the 5% loyalty discount. Applied to Receipt 1's \\$50:\n\n$$50 \\times 0.95 = 47.50$$\n\n$$47.50 > 47$$\n\nThe discounted total is not less than \\$47.\n\nso the statement is False.",
+      "**E) Buying 10 lb of apples and 2 cartons of milk together costs more than \\$60.**  (false)\n\nTen pounds of apples and two cartons of milk, at the recovered prices:\n\n$$10 \\times 4.80 = 48$$\n\n$$2 \\times 6 = 12$$\n\n$$48 + 12 = 60$$\n\nThe mix equals \\$60, so it is not more than \\$60.\n\nso the statement is False."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 23,
+    "solution_overview": "Organic apples and almond milk have updated prices. Neither receipt belongs to a loyalty member, so the 5% loyalty note does not apply. Bread is \\$3.60 and eggs are \\$4.40.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per lb of organic apples, $y$ = price per carton of almond milk. Peel the known items off each total first.\n\n**1. Receipt 1 leftover.** $50.00 - 3.60 - 4.40 = 42.00$:\n\n$$5x + 3y = 42.00 \\tag{1}$$\n\n**2. Receipt 2 leftover.** $43.20 - 3.60 = 39.60$:\n\n$$2x + 5y = 39.60 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 5 and (2) by 3:\n\n$$25x + 15y = 210, \\qquad 6x + 15y = 118.80$$\n\nSubtract:\n\n$$\n(25x + 15y) - (6x + 15y) = 210 - 118.80 \\Rightarrow 19x = 91.20 \\Rightarrow x = 4.80\n$$\n\nSubstitute into (1):\n\n$$\n5(4.80) + 3y = 42.00 \\Rightarrow 24.00 + 3y = 42.00 \\Rightarrow y = 6.00\n$$\n\n**Answer.** Organic apples = \\$4.80/lb | Almond milk = \\$6.00/carton"
+  },
+  {
+    "id": "math-5-24",
+    "case_id": "MATH 5.24",
+    "title": "BrightHome Energy  -  Monthly Utility Bills",
+    "context": "BrightHome Energy bills a fixed connection fee plus a constant rate per unit. Customer service claims the rate is \\$0.24/unit, unverified against real data. BrightHome also offers a Solar Offset Plan with no connection fee, at a flat \\$0.29/unit.",
+    "tables_markdown": "| Bill | Units Consumed | Total Charge |\n| --- | --- | --- |\n| Bill 1 | 240 | \\$83.40 |\n| Bill 2 | 380 | \\$112.80 |",
+    "statements": [
+      "The fixed connection fee is \\$33.",
+      "Customer service's claimed rate of \\$0.24 per unit is correct.",
+      "At 280 units of usage, the standard plan costs less than \\$95.",
+      "The Solar Offset Plan is cheaper than the standard plan at every usage level above 0 units.",
+      "At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The fixed connection fee is \\$33.**  (true)\n\nThe overview recovered $x = 33$ as the fixed connection fee. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Customer service's claimed rate of \\$0.24 per unit is correct.**  (false)\n\nThe overview recovered $y = 0.21$ as the standard-plan rate. Customer service claimed \\$0.24 per unit.\n\n$$0.21 \\ne 0.24$$\n\nso the statement is False.",
+      "**C) At 280 units of usage, the standard plan costs less than \\$95.**  (true)\n\nThe standard plan at 280 units uses the recovered fee $x = 33$ and rate $y = 0.21$:\n\n$$280 \\times 0.21 = 58.80$$\n\n$$33 + 58.80 = 91.80$$\n\n$$91.80 < 95$$\n\nso the statement is True.",
+      "**D) The Solar Offset Plan is cheaper than the standard plan at every usage level above 0 units.**  (false)\n\nThe Solar Offset Plan is $0.29u$ with no connection fee. The standard plan is $33 + 0.21u$. Set them equal:\n\n$$33 + 0.21u = 0.29u$$\n\n$$33 = 0.08u \\Rightarrow u = 412.5$$\n\nFor $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.\n\nso the statement is False.",
+      "**E) At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan.**  (false)\n\nAt 500 units, Solar and the standard plan are\n\n$$0.29 \\times 500 = 145$$\n\n$$33 + 0.21 \\times 500 = 33 + 105 = 138$$\n\n$$145 > 138$$\n\nSolar is not cheaper at 500 units.\n\nso the statement is False."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 24,
+    "solution_overview": "BrightHome Energy bills a fixed connection fee plus a constant rate per unit. Customer service claims the rate is \\$0.24/unit. Two standard-plan bills are on the page.\n\n**Part 1: Building the system.**\n\nLet $x$ = fixed connection fee, $y$ = rate per unit on the standard plan. Treat \\$0.24/unit as a claim to check.\n\n**1. Translate: Bill 1.**\n\n$$x + 240y = 83.40 \\tag{1}$$\n\n**2. Translate: Bill 2.**\n\n$$x + 380y = 112.80 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtract (2) minus (1):\n\n$$\n(x + 380y) - (x + 240y) = 112.80 - 83.40\n$$\n\n$$\n140y = 29.40 \\Rightarrow y = 0.21\n$$\n\nSubstitute into (1):\n\n$$\nx + 240(0.21) = 83.40 \\Rightarrow x + 50.40 = 83.40 \\Rightarrow x = 33.00\n$$\n\n**Answer.** Fixed fee = \\$33.00 | Rate = \\$0.21/unit"
+  },
+  {
+    "id": "math-5-25",
+    "case_id": "MATH 5.25",
+    "title": "Trattoria Bella  -  Off-Peak vs. Peak Bills",
+    "context": "Trattoria Bella serves pasta and appetizers at consistent prices. Off-peak tables carry no service fee; peak tables automatically have a 10% service charge added before the bill is printed. Table 5 (off-peak) printed \\$174.00 for 6 pasta + 4 appetizers, with no fee. Table 8 (peak, fee already included) came to \\$46.00 more than Table 5's total, for 5 pasta + 7 appetizers.",
+    "statements": [
+      "A pasta dish costs \\$19.",
+      "An appetizer costs more than a pasta dish.",
+      "Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly \\$26.00.",
+      "If Table 5 had also been charged the 10% peak-hour service fee, its total would have been \\$191.40.",
+      "Buying 4 pasta dishes and 4 appetizers, with the 10% service charge applied, would cost less than \\$150."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) A pasta dish costs \\$19.**  (true)\n\nThe overview recovered $x = 19$ as the pasta price. The claim is that same figure.\n\nso the statement is True.",
+      "**B) An appetizer costs more than a pasta dish.**  (false)\n\nThe overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.\n\n$$15 < 19$$\n\nAn appetizer costs less than a pasta dish.\n\nso the statement is False.",
+      "**C) Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly \\$26.00.**  (true)\n\nTable 8's food subtotal, after stripping the 10% peak charge, is \\$200. Table 5's total is \\$174.\n\n$$200 - 174 = 26$$\n\nThe pre-service-charge gap is exactly \\$26.\n\nso the statement is True.",
+      "**D) If Table 5 had also been charged the 10% peak-hour service fee, its total would have been \\$191.40.**  (true)\n\nTable 5's off-peak total is \\$174. Adding the 10% peak-hour service fee:\n\n$$174 \\times 1.10 = 191.40$$\n\nThe claim is \\$191.40.\n\nso the statement is True.",
+      "**E) Buying 4 pasta dishes and 4 appetizers, with the 10% service charge applied, would cost less than \\$150.**  (true)\n\nFour pasta dishes and four appetizers at the recovered prices, then the 10% service charge:\n\n$$4 \\times 19 = 76$$\n\n$$4 \\times 15 = 60$$\n\n$$76 + 60 = 136$$\n\n$$136 \\times 1.10 = 149.60$$\n\n$$149.60 < 150$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 25,
+    "solution_overview": "Trattoria Bella sells pasta and appetizers at fixed prices. Off-peak tables have no service fee. Peak tables already include a 10% service charge in the printed total. Table 5 (off-peak) is \\$174.00 for 6 pasta and 4 appetizers. Table 8 (peak) came to \\$46.00 more than Table 5.\n\n**Part 1: Building the system.**\n\nLet $x$ = price of one pasta dish, $y$ = price of one appetizer. Table 8's printed total is $174 + 46 = 220$, and that figure already includes the 10% peak charge, so the food subtotal is $\\frac{220}{1.10} = 200$.\n\n**1. Translate: Table 5.**\n\n$$6x + 4y = 174.00 \\tag{1}$$\n\n**2. Translate: Table 8 food subtotal.**\n\n$$5x + 7y = 200.00 \\tag{2}$$\n\n**Part 2: Solve.**\n\nDivide (1) by 2: $3x + 2y = 87$. Multiply by 7: $21x + 14y = 609$. Multiply (2) by 2: $10x + 14y = 400$. Subtract:\n\n$$\n(21x + 14y) - (10x + 14y) = 609 - 400 \\Rightarrow 11x = 209 \\Rightarrow x = 19\n$$\n\nSubstitute into $3x + 2y = 87$:\n\n$$\n3(19) + 2y = 87 \\Rightarrow 57 + 2y = 87 \\Rightarrow y = 15\n$$\n\n**Answer.** Pasta dish = \\$19.00 | Appetizer = \\$15.00"
+  },
+  {
+    "id": "math-5-26",
+    "case_id": "MATH 5.26",
+    "title": "Meridian Distribution  -  Warehouse Inventory Summary",
+    "context": "Meridian Distribution ships Item M and Item N. The inventory system logs item counts, unit weight, unit volume, and total shipment cost  -  but only item counts and cost determine unit pricing.",
+    "tables_markdown": "| Shipment | Item M Units | Item N Units | Wt. M (kg) | Wt. N (kg) | Cost |\n| --- | --- | --- | --- | --- | --- |\n| Shipment 1 | 110 | 80 | 2.4 | 1.7 | \\$4,470 |\n| Shipment 2 | 70 | 150 | 2.4 | 1.7 | \\$5,520 |",
+    "statements": [
+      "Item M costs \\$21 per unit.",
+      "Item N costs \\$30 per unit.",
+      "Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.",
+      "150 units of Item N alone would cost \\$4,050.",
+      "Shipment 1's lower total cost, compared with Shipment 2, is explained by its lower total weight of goods."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Item M costs \\$21 per unit.**  (true)\n\nThe overview recovered $x = 21$ as Item M's unit cost. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Item N costs \\$30 per unit.**  (false)\n\nThe overview recovered $y = 27$ as Item N's unit cost. The claim writes \\$30.\n\n$$27 \\ne 30$$\n\nso the statement is False.",
+      "**C) Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.**  (false)\n\nShipment 1 moved $110 + 80 = 190$ units for \\$4,470. Shipment 2 moved $70 + 150 = 220$ units for \\$5,520.\n\n$$\\frac{4470}{190} = 23.53$$\n\n$$\\frac{5520}{220} = 25.09$$\n\nThe per-unit averages are not equal.\n\nso the statement is False.",
+      "**D) 150 units of Item N alone would cost \\$4,050.**  (true)\n\nOne hundred fifty units of Item N at the recovered $y = 27$:\n\n$$150 \\times 27 = 4050$$\n\nThe claim is \\$4,050.\n\nso the statement is True.",
+      "**E) Shipment 1's lower total cost, compared with Shipment 2, is explained by its lower total weight of goods.**  (false)\n\nThe recovered prices come from unit counts, not from the logged weights. Shipment 1 weighs\n\n$$110 \\times 2.4 = 264$$\n\n$$80 \\times 1.7 = 136$$\n\n$$264 + 136 = 400$$\n\nkilograms, and Shipment 2 weighs\n\n$$70 \\times 2.4 = 168$$\n\n$$150 \\times 1.7 = 255$$\n\n$$168 + 255 = 423$$\n\nkilograms. Those weights do not set the dollar totals; the cheaper mix of Item M does.\n\nso the statement is False."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 26,
+    "solution_overview": "Meridian Distribution ships Item M and Item N. Unit weights are logged, but only item counts and shipment cost determine the unit prices.\n\n**Part 1: Building the system.**\n\nLet $x$ = cost per unit of Item M, $y$ = cost per unit of Item N.\n\n**1. Translate: Shipment 1.**\n\n$$110x + 80y = 4470 \\tag{1}$$\n\n**2. Translate: Shipment 2.**\n\n$$70x + 150y = 5520 \\tag{2}$$\n\n**Part 2: Solve.**\n\nDivide by 10: $11x + 8y = 447$ and $7x + 15y = 552$. Multiply by 15 and 8:\n\n$$165x + 120y = 6705, \\qquad 56x + 120y = 4416$$\n\nSubtract:\n\n$$\n(165x + 120y) - (56x + 120y) = 6705 - 4416 \\Rightarrow 109x = 2289 \\Rightarrow x = 21\n$$\n\nSubstitute into $11x + 8y = 447$:\n\n$$\n11(21) + 8y = 447 \\Rightarrow 231 + 8y = 447 \\Rightarrow y = 27\n$$\n\n**Answer.** Item M = \\$21.00/unit | Item N = \\$27.00/unit"
+  },
+  {
+    "id": "math-5-27",
+    "case_id": "MATH 5.27",
+    "title": "Green Horizons Landscaping  -  Job Quotation",
+    "context": "Green Horizons prices Standard and Premium planting. Job 1's invoice records quantity in planting bundles (each bundle = 2 Standard + 5 Premium units), while Job 2's invoice lists individual units directly. Job 1: 7 bundles  -  Total \\$1,946. Job 2: 13 Standard + 21 Premium  -  Total \\$1,301. New Quotation: 8 Standard + 19 Premium  -  Quoted Total: \\$1,068.",
+    "statements": [
+      "Standard planting costs \\$29 per unit.",
+      "Premium planting costs \\$50 per unit.",
+      "Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.",
+      "The Premium portion alone of Job 1 cost more than the entirety of Job 2.",
+      "The new quotation of \\$1,068 is mathematically consistent with the confirmed rates."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Standard planting costs \\$29 per unit.**  (true)\n\nThe overview recovered $x = 29$ as the Standard unit price. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Premium planting costs \\$50 per unit.**  (false)\n\nThe overview recovered $y = 44$ as the Premium unit price. The claim writes \\$50.\n\n$$44 \\ne 50$$\n\nso the statement is False.",
+      "**C) Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.**  (true)\n\nThe overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts.\n\nso the statement is True.",
+      "**D) The Premium portion alone of Job 1 cost more than the entirety of Job 2.**  (true)\n\nJob 1's Premium slice at the recovered $y = 44$, compared with Job 2's whole total of \\$1,301:\n\n$$35 \\times 44 = 1540$$\n\n$$1540 > 1301$$\n\nso the statement is True.",
+      "**E) The new quotation of \\$1,068 is mathematically consistent with the confirmed rates.**  (true)\n\nThe new quotation is 8 Standard and 19 Premium at the recovered prices:\n\n$$8 \\times 29 = 232$$\n\n$$19 \\times 44 = 836$$\n\n$$232 + 836 = 1068$$\n\nThe quoted \\$1,068 matches.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 27,
+    "solution_overview": "Green Horizons prices Standard and Premium planting. Job 1 is invoiced in bundles (each bundle is 2 Standard + 5 Premium). Job 2 lists individual units: 13 Standard + 21 Premium for \\$1,301. Job 1: 7 bundles for \\$1,946.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per Standard unit, $y$ = price per Premium unit. Expand Job 1's 7 bundles first: $7 \\times 2 = 14$ Standard and $7 \\times 5 = 35$ Premium.\n\n**1. Translate: Job 1, expanded.**\n\n$$14x + 35y = 1946 \\tag{1}$$\n\n**2. Translate: Job 2.**\n\n$$13x + 21y = 1301 \\tag{2}$$\n\n**Part 2: Solve.**\n\nDivide (1) by 7: $2x + 5y = 278$. Multiply by 21, and multiply (2) by 5:\n\n$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$\n\nSubtract:\n\n$$\n(65x + 105y) - (42x + 105y) = 6505 - 5838 \\Rightarrow 23x = 667 \\Rightarrow x = 29\n$$\n\nSubstitute into $2x + 5y = 278$:\n\n$$\n2(29) + 5y = 278 \\Rightarrow 58 + 5y = 278 \\Rightarrow y = 44\n$$\n\n**Answer.** Standard = \\$29.00/unit | Premium = \\$44.00/unit"
+  },
+  {
+    "id": "math-5-28",
+    "case_id": "MATH 5.28",
+    "title": "Horizon Consulting  -  Travel Reimbursement Memo",
+    "context": "Reimbursement is a fixed per-diem for each meal day plus a fixed rate per mile. Finance separately believes the mileage rate is \\$0.40/mile, unconfirmed against payroll data. One of three reports contains a data-entry error making it financially impossible.",
+    "tables_markdown": "| Report | Meal Days | Miles Driven | Total Reimbursed |\n| --- | --- | --- | --- |\n| Report 1 | 5 | 150 | \\$323 |\n| Report 2 | 3 | 250 | \\$245 |\n| Report 3 | 7 | 40 | \\$120 |",
+    "statements": [
+      "The per diem is \\$55 per day.",
+      "Finance's belief that the mileage rate is \\$0.40/mile is correct.",
+      "Report 3 is impossible, since 7 meal days alone would require at least \\$385 at the confirmed per-diem rate  -  far more than its reported \\$120 total.",
+      "Report 1's total exceeds Report 2's total by more than \\$80.",
+      "Reports 1 and 2 combined reimbursed at least \\$550."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The per diem is \\$55 per day.**  (true)\n\nThe overview recovered $x = 55$ as the per diem. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Finance's belief that the mileage rate is \\$0.40/mile is correct.**  (false)\n\nThe overview recovered $y = 0.32$ as the mileage rate. Finance claimed \\$0.40 per mile.\n\n$$0.32 \\ne 0.40$$\n\nso the statement is False.",
+      "**C) Report 3 is impossible, since 7 meal days alone would require at least \\$385 at the confirmed per-diem rate  -  far more than its reported \\$120 total.**  (true)\n\nSeven meal days at the recovered per diem $x = 55$, before any mileage:\n\n$$7 \\times 55 = 385$$\n\n$$385 > 120$$\n\nReport 3's \\$120 cannot cover even the meal days.\n\nso the statement is True.",
+      "**D) Report 1's total exceeds Report 2's total by more than \\$80.**  (false)\n\nReport 1 reimbursed \\$323. Report 2 reimbursed \\$245.\n\n$$323 - 245 = 78$$\n\n$$78 < 80$$\n\nThe gap is not more than \\$80.\n\nso the statement is False.",
+      "**E) Reports 1 and 2 combined reimbursed at least \\$550.**  (true)\n\nReports 1 and 2 together:\n\n$$323 + 245 = 568$$\n\n$$568 \\ge 550$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 28,
+    "solution_overview": "Reimbursement is a fixed per diem for each meal day plus a fixed rate per mile. Finance believes the mileage rate is \\$0.40/mile. One of the three reports contains an entry error. Reports 1 and 2 are used as the working pair.\n\n**Part 1: Building the system.**\n\nLet $x$ = per-diem rate, $y$ = per-mile rate.\n\n**1. Translate: Report 1.**\n\n$$5x + 150y = 323 \\tag{1}$$\n\n**2. Translate: Report 2.**\n\n$$3x + 250y = 245 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 3 and (2) by 5:\n\n$$15x + 450y = 969, \\qquad 15x + 1250y = 1225$$\n\nSubtract:\n\n$$\n(15x + 1250y) - (15x + 450y) = 1225 - 969 \\Rightarrow 800y = 256 \\Rightarrow y = 0.32\n$$\n\nSubstitute into (1):\n\n$$\n5x + 150(0.32) = 323 \\Rightarrow 5x + 48 = 323 \\Rightarrow x = 55\n$$\n\n**Answer.** Per diem = \\$55.00/day | Mileage rate = \\$0.32/mile"
+  },
+  {
+    "id": "math-5-29",
+    "case_id": "MATH 5.29",
+    "title": "Cedarline Manufacturing  -  Weekly Production Log",
+    "context": "Cedarline assembles Widget A and Widget B on the same line, each requiring a fixed number of labor-hours. Week 1's log is fully legible. Week 2's log is smudged: unit counts are gone, but a sticky note reads \"8 more Widget B than Widget A, 58 units total, using 505 labor- hours.\" Week 3 is water-damaged: the Widget A count is illegible.",
+    "tables_markdown": "| Week | Widget A | Widget B | Total Labor-Hours |\n| --- | --- | --- | --- |\n| Week 1 | 35 | 20 | 445 |\n| Week 2 | (see note) | (see note) | 505 |\n| Week 3 | (illegible) | 15 | 290 |",
+    "statements": [
+      "Widget A requires 7 hours of labor to assemble.",
+      "Widget B requires 12 hours of labor to assemble.",
+      "Week 2 actually produced 25 Widget A units and 33 Widget B units.",
+      "If Widget A's assembly time increased by 20%, Week 1's total labor-hours would also increase by 20%.",
+      "The illegible Week 3 entry can be reconstructed as 20 Widget A units."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Widget A requires 7 hours of labor to assemble.**  (true)\n\nThe overview recovered $x = 7$ as Widget A's assembly time. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Widget B requires 12 hours of labor to assemble.**  (false)\n\nThe overview recovered $y = 10$ as Widget B's assembly time. The claim writes 12 hours.\n\n$$10 \\ne 12$$\n\nso the statement is False.",
+      "**C) Week 2 actually produced 25 Widget A units and 33 Widget B units.**  (true)\n\nThe overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair.\n\nso the statement is True.",
+      "**D) If Widget A's assembly time increased by 20%, Week 1's total labor-hours would also increase by 20%.**  (false)\n\nWidget A's recovered time is $7$ hours, so a 20% increase affects only those hours. Week 1 currently uses $35 \\times 7 = 245$ hours on Widget A:\n\n$$245 \\times 0.20 = 49$$\n\n$$445 + 49 = 494$$\n\nA 20% rise in the whole week would have been $445 \\times 0.20 = 89$ hours. The week rises by 49 hours, not 20%.\n\nso the statement is False.",
+      "**E) The illegible Week 3 entry can be reconstructed as 20 Widget A units.**  (true)\n\nWeek 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and $y = 10$:\n\n$$7A + 10(15) = 290$$\n\n$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 29,
+    "solution_overview": "Cedarline assembles Widget A and Widget B, each taking a fixed number of labor-hours. Week 1 is fully legible: 35 A and 20 B used 445 hours. Week 2's counts are missing, but a note says 8 more Widget B than Widget A, 58 units total, and 505 labor-hours.\n\n**Part 1: Building the system.**\n\nLet $x$ = labor-hours per Widget A, $y$ = labor-hours per Widget B. Recover Week 2's counts first:\n\n$$\nB = A + 8, \\qquad A + B = 58 \\Rightarrow 2A + 8 = 58 \\Rightarrow A = 25,\\ B = 33\n$$\n\n**1. Translate: Week 1.**\n\n$$35x + 20y = 445 \\tag{1}$$\n\n**2. Translate: Week 2.**\n\n$$25x + 33y = 505 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 33 and (2) by 20:\n\n$$1155x + 660y = 14685, \\qquad 500x + 660y = 10100$$\n\nSubtract:\n\n$$\n(1155x + 660y) - (500x + 660y) = 14685 - 10100 \\Rightarrow 655x = 4585 \\Rightarrow x = 7\n$$\n\nSubstitute into (1):\n\n$$\n35(7) + 20y = 445 \\Rightarrow 245 + 20y = 445 \\Rightarrow y = 10\n$$\n\n**Answer.** Widget A = 7 hrs/unit | Widget B = 10 hrs/unit"
+  },
+  {
+    "id": "math-5-30",
+    "case_id": "MATH 5.30",
+    "title": "Sterling Distributors  -  Regional Sales Dashboard",
+    "context": "Sterling Distributors' dashboard reports quarterly unit sales and revenue for Products X and Y, sold at company-wide fixed prices, across three branches. Two of the three branch reports are known to reconcile correctly; the third contains an uncorrected data-entry error, though the dashboard does not indicate which one.",
+    "tables_markdown": "| Branch | Product X Units | Product Y Units | Reported Revenue |\n| --- | --- | --- | --- |\n| North | 85 | 70 | \\$4,145 |\n| South | 55 | 95 | \\$3,875 |\n| East | 65 | 50 | \\$3,200 |",
+    "statements": [
+      "Product X is priced at \\$29.",
+      "Product Y is priced at \\$28.",
+      "The East branch's reported revenue is fully consistent with the derived prices.",
+      "If the East branch's reported revenue were corrected to reflect the derived prices, it should read \\$3,085.",
+      "North's reported revenue exceeds South's and East's reported revenues combined."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Product X is priced at \\$29.**  (true)\n\nThe overview recovered $x = 29$ as Product X's price. The claim is that same figure.\n\nso the statement is True.",
+      "**B) Product Y is priced at \\$28.**  (false)\n\nThe overview recovered $y = 24$ as Product Y's price. The claim writes \\$28.\n\n$$24 \\ne 28$$\n\nso the statement is False.",
+      "**C) The East branch's reported revenue is fully consistent with the derived prices.**  (false)\n\nThe overview priced East at \\$3,085. East reported \\$3,200.\n\n$$3085 \\ne 3200$$\n\nso the statement is False.",
+      "**D) If the East branch's reported revenue were corrected to reflect the derived prices, it should read \\$3,085.**  (true)\n\nThe overview priced East at \\$3,085. The claim is that corrected total.\n\nso the statement is True.",
+      "**E) North's reported revenue exceeds South's and East's reported revenues combined.**  (false)\n\nNorth reported \\$4,145. South and East reported \\$3,875 and \\$3,200.\n\n$$3875 + 3200 = 7075$$\n\n$$4145 < 7075$$\n\nNorth does not exceed the other two combined.\n\nso the statement is False."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 30,
+    "solution_overview": "Sterling Distributors sells Products X and Y at company-wide fixed prices. Two of the three branch reports reconcile; the third has an entry error. North and South are used as the working pair.\n\n**Part 1: Building the system.**\n\nLet $x$ = price of Product X, $y$ = price of Product Y.\n\n**1. Translate: North.**\n\n$$85x + 70y = 4145 \\tag{1}$$\n\n**2. Translate: South.**\n\n$$55x + 95y = 3875 \\tag{2}$$\n\n**Part 2: Solve.**\n\nDivide by 5: $17x + 14y = 829$ and $11x + 19y = 775$. Multiply by 19 and 14:\n\n$$323x + 266y = 15751, \\qquad 154x + 266y = 10850$$\n\nSubtract:\n\n$$\n(323x + 266y) - (154x + 266y) = 15751 - 10850 \\Rightarrow 169x = 4901 \\Rightarrow x = 29\n$$\n\nSubstitute into $17x + 14y = 829$:\n\n$$\n17(29) + 14y = 829 \\Rightarrow 493 + 14y = 829 \\Rightarrow y = 24\n$$\n\nTesting East at the recovered prices:\n\n$$\n65(29) + 50(24) = 1885 + 1200 = 3085\n$$\n\nEast reported \\$3,200, so that row does not reconcile.\n\n**Answer.** Product X = \\$29.00/unit | Product Y = \\$24.00/unit"
+  },
+  {
+    "id": "math-5-31",
+    "case_id": "MATH 5.31",
+    "title": "Riverside Hardware Supply  -  Two Fastener Invoices",
+    "context": "Riverside Hardware Supply ships Type A Bolts and Type B Hinges by the case, at fixed per-case prices.",
+    "tables_markdown": "| Invoice | Type A Cases | Type B Cases | Total |\n| --- | --- | --- | --- |\n| Invoice 1 | 9 | 13 | \\$527.45 |\n| Invoice 2 | 7 | 19 | \\$657.35 |",
+    "statements": [
+      "Rounding Type A's case price up to the next whole dollar lands on exactly \\$19.00.",
+      "A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.",
+      "If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the \\$24 mark.",
+      "Swapping which quantity applies to which fastener type in Invoice 1 leaves the total unchanged.",
+      "The combined order must cost strictly more than placing both invoices separately."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Rounding Type A's case price up to the next whole dollar lands on exactly \\$19.00.**  (true)\n\nThe overview recovered $x = 18.45$ as Type A's case price. Rounding up to the next whole dollar:\n\n$$\\lceil 18.45 \\rceil = 19$$\n\nThe claim is \\$19.00.\n\nso the statement is True.",
+      "**B) A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.**  (true)\n\nThe overview recovered $x = 18.45$ and $y = 27.80$. The gap is\n\n$$27.80 - 18.45 = 9.35$$\n\n$$9 < 9.35 < 10$$\n\nso the statement is True.",
+      "**C) If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the \\$24 mark.**  (true)\n\nInvoice 2 totals \\$657.35 across $7 + 19 = 26$ cases:\n\n$$\\frac{657.35}{26} = 25.28$$\n\n$$25.28 > 24$$\n\nso the statement is True.",
+      "**D) Swapping which quantity applies to which fastener type in Invoice 1 leaves the total unchanged.**  (false)\n\nSwap Invoice 1's counts and cost it at the recovered prices:\n\n$$13 \\times 18.45 = 239.85$$\n\n$$9 \\times 27.80 = 250.20$$\n\n$$239.85 + 250.20 = 490.05$$\n\n$$490.05 \\ne 527.45$$\n\nThe total changes.\n\nso the statement is False.",
+      "**E) The combined order must cost strictly more than placing both invoices separately.**  (false)\n\nPlacing both invoices together is just the sum of the two printed totals:\n\n$$527.45 + 657.35 = 1184.80$$\n\nThat is the same as placing them separately, so the combined order is not strictly more.\n\nso the statement is False."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 31,
+    "solution_overview": "Riverside Hardware Supply ships Type A bolts and Type B hinges by the case at fixed per-case prices.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per case of Type A, $y$ = price per case of Type B.\n\n**1. Translate: Invoice 1.**\n\n$$9x + 13y = 527.45 \\tag{1}$$\n\n**2. Translate: Invoice 2.**\n\n$$7x + 19y = 657.35 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 19 and (2) by 13:\n\n$$\n171x + 247y = 10021.55, \\qquad 91x + 247y = 8545.55\n$$\n\nSubtract:\n\n$$\n(171x + 247y) - (91x + 247y) = 10021.55 - 8545.55\n$$\n\n$$\n80x = 1476.00 \\Rightarrow x = \\frac{1476.00}{80} = 18.45\n$$\n\nSubstitute into (1):\n\n$$\n9(18.45) + 13y = 527.45 \\Rightarrow 166.05 + 13y = 527.45\n$$\n\n$$\n13y = 361.40 \\Rightarrow y = 27.80\n$$\n\n**Answer.** Type A = \\$18.45/case | Type B = \\$27.80/case"
+  },
+  {
+    "id": "math-5-32",
+    "case_id": "MATH 5.32",
+    "title": "Swift Cargo Co. vs. a Flat-Rate Competitor",
+    "context": "Swift Cargo Co. charges a fixed dispatch fee plus a constant rate per mile. A competitor charges a flat \\$1.35 per mile with no dispatch fee at all.",
+    "tables_markdown": "| Route | Miles | Total Charged by Swift Cargo |\n| --- | --- | --- |\n| Route 1 | 170 | \\$460.00 |\n| Route 2 | 305 | \\$709.75 |",
+    "statements": [
+      "The dispatch fee sits exactly halfway between \\$145 and \\$146.",
+      "Per mile, Swift Cargo's rate is closer to \\$1.50 than to \\$2.00.",
+      "A 250-mile haul comes in five cents under six hundred and eight dollars.",
+      "At that same 250-mile mark, choosing the flat-rate competitor over Swift Cargo pockets a savings north of \\$270.",
+      "Because the two pricing formulas have different slopes, they are mathematically guaranteed to intersect somewhere on the number line  -  even though that intersection falls at a negative, and therefore meaningless, mileage."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The dispatch fee sits exactly halfway between \\$145 and \\$146.**  (true)\n\nThe overview recovered $x = 145.50$ as the dispatch fee. Halfway between \\$145 and \\$146 is\n\n$$\\frac{145 + 146}{2} = 145.50$$\n\nThe recovered fee is that midpoint.\n\nso the statement is True.",
+      "**B) Per mile, Swift Cargo's rate is closer to \\$1.50 than to \\$2.00.**  (false)\n\nThe overview recovered $y = 1.85$ as Swift Cargo's per-mile rate.\n\n$$1.85 - 1.50 = 0.35$$\n\n$$2.00 - 1.85 = 0.15$$\n\n$$0.15 < 0.35$$\n\nThe rate is closer to \\$2.00 than to \\$1.50.\n\nso the statement is False.",
+      "**C) A 250-mile haul comes in five cents under six hundred and eight dollars.**  (false)\n\nA 250-mile Swift haul at the recovered fee $x = 145.50$ and rate $y = 1.85$:\n\n$$250 \\times 1.85 = 462.50$$\n\n$$145.50 + 462.50 = 608.00$$\n\nFive cents under \\$608 would be \\$607.95. The haul is exactly \\$608.00.\n\nso the statement is False.",
+      "**D) At that same 250-mile mark, choosing the flat-rate competitor over Swift Cargo pockets a savings north of \\$270.**  (true)\n\nA 250-mile Swift haul at the recovered $x = 145.50$ and $y = 1.85$:\n\n$$250 \\times 1.85 = 462.50$$\n\n$$145.50 + 462.50 = 608.00$$\n\nThe competitor charges \\$1.35 per mile with no fee:\n\n$$250 \\times 1.35 = 337.50$$\n\n$$608.00 - 337.50 = 270.50$$\n\n$$270.50 > 270$$\n\nso the statement is True.",
+      "**E) Because the two pricing formulas have different slopes, they are mathematically guaranteed to intersect somewhere on the number line  -  even though that intersection falls at a negative, and therefore meaningless, mileage.**  (true)\n\nSwift is $145.50 + 1.85m$. The competitor is $1.35m$. The slopes $1.85$ and $1.35$ differ, so the lines meet:\n\n$$145.50 + 1.85m = 1.35m$$\n\n$$145.50 = -0.50m \\Rightarrow m = \\frac{145.50}{-0.50} = -291$$\n\nThe crossing is at $-291$ miles, a meaningless haul but a real intersection.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 32,
+    "solution_overview": "Swift Cargo Co. charges a fixed dispatch fee plus a constant rate per mile. A competitor charges a flat \\$1.35 per mile with no dispatch fee.\n\n**Part 1: Building the system.**\n\nLet $x$ = Swift Cargo's dispatch fee, $y$ = Swift Cargo's rate per mile.\n\n**1. Translate: Route 1.**\n\n$$x + 170y = 460.00 \\tag{1}$$\n\n**2. Translate: Route 2.**\n\n$$x + 305y = 709.75 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtract (1) from (2):\n\n$$\n(x + 305y) - (x + 170y) = 709.75 - 460.00\n$$\n\n$$\n135y = 249.75 \\Rightarrow y = \\frac{249.75}{135} = 1.85\n$$\n\nSubstitute into (1):\n\n$$\nx + 170(1.85) = 460.00 \\Rightarrow x + 314.50 = 460.00 \\Rightarrow x = 145.50\n$$\n\n**Answer.** Swift Cargo charges a \\$145.50 dispatch fee plus \\$1.85 per mile."
+  },
+  {
+    "id": "math-5-33",
+    "case_id": "MATH 5.33",
+    "title": "Café Lumière  -  Two Till Receipts",
+    "context": "Café Lumière sells Specialty Drinks and Pastries at fixed prices. Two till receipts also list a total calorie count, printed for the customer's reference only. Receipt 1: 7 Specialty Drinks + 9 Pastries  -  Total: \\$78.65  -  (listed) Total Calories: 6,100 Receipt 2: 11 Specialty Drinks + 4 Pastries  -  Total: \\$85.05  -  (listed) Total Calories: 5,400",
+    "statements": [
+      "A Specialty Drink's price, tripled, would clear twenty dollars.",
+      "Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined  -  quite a bit more, in fact.",
+      "Cross-reference the calorie counts against the dollar totals and you can, in principle, pin down both prices without the item quantities at all.",
+      "Split Receipt 1's total evenly across its 16 items and the resulting per-item figure just barely creeps past \\$4.90.",
+      "A week of daily 2-Drink-2-Pastry orders costs enough that, left over from \\$150, you'd have less than \\$8 in change."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) A Specialty Drink's price, tripled, would clear twenty dollars.**  (false)\n\nThe overview recovered $x = 6.35$ as the Specialty Drink price. Tripled:\n\n$$3 \\times 6.35 = 19.05$$\n\n$$19.05 < 20$$\n\nThat product does not clear twenty dollars.\n\nso the statement is False.",
+      "**B) Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined  -  quite a bit more, in fact.**  (true)\n\nFour pastries versus one drink and one pastry, at the recovered prices:\n\n$$4 \\times 3.80 = 15.20$$\n\n$$6.35 + 3.80 = 10.15$$\n\n$$15.20 > 10.15$$\n\nso the statement is True.",
+      "**C) Cross-reference the calorie counts against the dollar totals and you can, in principle, pin down both prices without the item quantities at all.**  (false)\n\nThe calorie totals 6,100 and 5,400 are printed for reference only. They are not coefficients of $x$ or $y$, so they cannot replace the item counts in (1) and (2). The prices are recovered from quantities and dollar totals.\n\nso the statement is False.",
+      "**D) Split Receipt 1's total evenly across its 16 items and the resulting per-item figure just barely creeps past \\$4.90.**  (true)\n\nReceipt 1 totals \\$78.65 across $7 + 9 = 16$ items:\n\n$$\\frac{78.65}{16} = 4.915625$$\n\n$$4.915625 > 4.90$$\n\nso the statement is True.",
+      "**E) A week of daily 2-Drink-2-Pastry orders costs enough that, left over from \\$150, you'd have less than \\$8 in change.**  (true)\n\nA daily 2-drink 2-pastry order at the recovered prices, for seven days:\n\n$$2(6.35 + 3.80) = 20.30$$\n\n$$7 \\times 20.30 = 142.10$$\n\n$$150 - 142.10 = 7.90$$\n\n$$7.90 < 8$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 33,
+    "solution_overview": "Café Lumière sells Specialty Drinks and Pastries at fixed prices. Two till receipts also print calorie totals for reference only; those calorie counts are not part of the price system.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per Specialty Drink, $y$ = price per Pastry.\n\n**1. Translate: Receipt 1.**\n\n$$7x + 9y = 78.65 \\tag{1}$$\n\n**2. Translate: Receipt 2.**\n\n$$11x + 4y = 85.05 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 4 and (2) by 9:\n\n$$\n28x + 36y = 314.60, \\qquad 99x + 36y = 765.45\n$$\n\nSubtract:\n\n$$\n(99x + 36y) - (28x + 36y) = 765.45 - 314.60\n$$\n\n$$\n71x = 450.85 \\Rightarrow x = \\frac{450.85}{71} = 6.35\n$$\n\nSubstitute into (1):\n\n$$\n7(6.35) + 9y = 78.65 \\Rightarrow 44.45 + 9y = 78.65\n$$\n\n$$\n9y = 34.20 \\Rightarrow y = 3.80\n$$\n\n**Answer.** Specialty Drink = \\$6.35 | Pastry = \\$3.80"
+  },
+  {
+    "id": "math-5-34",
+    "case_id": "MATH 5.34",
+    "title": "Northgate Bakery Wholesale  -  Order Confirmation Emails",
+    "context": "Northgate Bakery Wholesale sells Croissants and Baguettes by the dozen at fixed wholesale prices. Email 1: \"Order confirmed: 14 dozen croissants + 11 dozen baguettes. Total cost: \\$297.30.\" Email 2: \"Order confirmed: 6 dozen croissants + 23 dozen baguettes. Total cost: \\$299.30.\"",
+    "statements": [
+      "Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.",
+      "The per-dozen gap between croissants and baguettes is closer to four dollars than to five.",
+      "Order ten dozen of each pastry, and croissants alone would already account for more than three-fifths of the combined bill.",
+      "Per dozen-item ordered, Email 1 runs pricier than Email 2  -  and the gap clears two dollars.",
+      "Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.**  (true)\n\nThe overview recovered $x = 13.85$ per dozen croissants. Four dozen:\n\n$$4 \\times 13.85 = 55.40$$\n\n$$55.40 > 55$$\n\nso the statement is True.",
+      "**B) The per-dozen gap between croissants and baguettes is closer to four dollars than to five.**  (true)\n\nThe overview recovered $x = 13.85$ and $y = 9.40$. The per-dozen gap is\n\n$$13.85 - 9.40 = 4.45$$\n\nDistance to 4 is $0.45$; distance to 5 is $0.55$. The gap is closer to four dollars.\n\nso the statement is True.",
+      "**C) Order ten dozen of each pastry, and croissants alone would already account for more than three-fifths of the combined bill.**  (false)\n\nTen dozen of each at the recovered prices:\n\n$$10 \\times 13.85 = 138.50$$\n\n$$10 \\times 9.40 = 94.00$$\n\n$$138.50 + 94.00 = 232.50$$\n\n$$\\frac{138.50}{232.50} \\approx 0.596 < \\frac{3}{5}$$\n\nCroissants do not account for more than three-fifths.\n\nso the statement is False.",
+      "**D) Per dozen-item ordered, Email 1 runs pricier than Email 2  -  and the gap clears two dollars.**  (false)\n\nEmail 1 has 25 dozen-items for \\$297.30. Email 2 has 29 dozen-items for \\$299.30.\n\n$$\\frac{297.30}{25} = 11.892$$\n\n$$\\frac{299.30}{29} \\approx 10.321$$\n\n$$11.892 - 10.321 = 1.571$$\n\nEmail 1 is pricier per dozen-item, but the gap does not clear two dollars.\n\nso the statement is False.",
+      "**E) Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty.**  (true)\n\nRaise Email 2's baguette price by \\$3 and keep croissants at $x = 13.85$:\n\n$$9.40 + 3 = 12.40$$\n\n$$6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20 = 368.30$$\n\nThe cents digit is 30.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{3}{5}",
+    "sort_order": 34,
+    "solution_overview": "Northgate Bakery Wholesale sells croissants and baguettes by the dozen at fixed wholesale prices. Email 1: 14 dozen croissants + 11 dozen baguettes for \\$297.30. Email 2: 6 dozen croissants + 23 dozen baguettes for \\$299.30.\n\n**Part 1: Building the system.**\n\nLet $x$ = wholesale price per dozen croissants, $y$ = wholesale price per dozen baguettes.\n\n**1. Translate: Email 1.**\n\n$$14x + 11y = 297.30 \\tag{1}$$\n\n**2. Translate: Email 2.**\n\n$$6x + 23y = 299.30 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 23 and (2) by 11:\n\n$$\n322x + 253y = 6837.90, \\qquad 66x + 253y = 3292.30\n$$\n\nSubtract:\n\n$$\n(322x + 253y) - (66x + 253y) = 6837.90 - 3292.30\n$$\n\n$$\n256x = 3545.60 \\Rightarrow x = \\frac{3545.60}{256} = 13.85\n$$\n\nSubstitute into (1):\n\n$$\n14(13.85) + 11y = 297.30 \\Rightarrow 193.90 + 11y = 297.30\n$$\n\n$$\n11y = 103.40 \\Rightarrow y = 9.40\n$$\n\n**Answer.** Croissants = \\$13.85/dozen | Baguettes = \\$9.40/dozen"
+  },
+  {
+    "id": "math-5-35",
+    "case_id": "MATH 5.35",
+    "title": "Meridian Textiles  -  Quarterly Margin Verification",
+    "context": "Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools.",
+    "tables_markdown": "| Quarter | Fabric Rolls | Yarn Spools | Total Profit |\n| --- | --- | --- | --- |\n| Q1 | 240 | 175 | \\$10,029.00 |\n| Q2 | 310 | 90 | \\$10,260.50 |",
+    "statements": [
+      "Fabric Roll margins clear the \\$27 line, though not by enough to also clear \\$27.50.",
+      "Yarn Spool's per-unit margin, doubled, would just clear forty dollars.",
+      "Shift the product mix to 200 Fabric Rolls and 150 Yarn Spools, and the resulting profit clears \\$8,400  -  but only by a slender margin.",
+      "The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.",
+      "Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round \\$13,675  -  no cents required."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Fabric Roll margins clear the \\$27 line, though not by enough to also clear \\$27.50.**  (true)\n\nThe overview recovered $x = 27.35$ as the Fabric Roll margin.\n\n$$27 < 27.35 < 27.50$$\n\nIt clears \\$27 but not \\$27.50.\n\nso the statement is True.",
+      "**B) Yarn Spool's per-unit margin, doubled, would just clear forty dollars.**  (false)\n\nThe overview recovered $y = 19.80$ as the Yarn Spool margin. Doubled:\n\n$$2 \\times 19.80 = 39.60$$\n\n$$39.60 < 40$$\n\nThat product does not clear forty dollars.\n\nso the statement is False.",
+      "**C) Shift the product mix to 200 Fabric Rolls and 150 Yarn Spools, and the resulting profit clears \\$8,400  -  but only by a slender margin.**  (true)\n\nTwo hundred Fabric Rolls and 150 Yarn Spools at the recovered margins:\n\n$$200 \\times 27.35 = 5470$$\n\n$$150 \\times 19.80 = 2970$$\n\n$$5470 + 2970 = 8440$$\n\n$$8440 > 8400$$\n\nThe mix clears \\$8,400 by \\$40.\n\nso the statement is True.",
+      "**D) The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.**  (true)\n\nQ2 profit minus Q1 profit:\n\n$$10260.50 - 10029.00 = 231.50$$\n\nDrop the smallest hundred:\n\n$$231.50 - 100 = 131.50$$\n\n$131.50$ is still a three-digit number.\n\nso the statement is True.",
+      "**E) Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round \\$13,675  -  no cents required.**  (true)\n\nFive hundred Fabric Rolls and no Yarn Spools, at the recovered $x = 27.35$:\n\n$$500 \\times 27.35 = 13675$$\n\nThe profit is exactly \\$13,675.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 35,
+    "solution_overview": "Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools.\n\n**Part 1: Building the system.**\n\nLet $x$ = profit per Fabric Roll, $y$ = profit per Yarn Spool.\n\n**1. Translate: Q1.**\n\n$$240x + 175y = 10029.00 \\tag{1}$$\n\n**2. Translate: Q2.**\n\n$$310x + 90y = 10260.50 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 90 and (2) by 175:\n\n$$\n21600x + 15750y = 902610, \\qquad 54250x + 15750y = 1795587.5\n$$\n\nSubtract:\n\n$$\n(54250x + 15750y) - (21600x + 15750y) = 1795587.5 - 902610\n$$\n\n$$\n32650x = 892977.5 \\Rightarrow x = \\frac{892977.5}{32650} = 27.35\n$$\n\nSubstitute into (1):\n\n$$\n240(27.35) + 175y = 10029.00 \\Rightarrow 6564.00 + 175y = 10029.00\n$$\n\n$$\n175y = 3465.00 \\Rightarrow y = 19.80\n$$\n\n**Answer.** Fabric Roll margin = \\$27.35/unit | Yarn Spool margin = \\$19.80/unit"
+  },
+  {
+    "id": "math-5-36",
+    "case_id": "MATH 5.36",
+    "title": "Continental Gas Supply  -  Reconstructing Cylinder Prices",
+    "context": "A consultant reviewing Continental Gas Supply's cylinder pricing agreement was given three monthly supplier invoices for Nitrogen-type and Oxygen-type cylinders.",
+    "tables_markdown": "| Invoice | Nitrogen Units | Oxygen Units | Total |\n| --- | --- | --- | --- |\n| Invoice 1 | 15 | 20 | \\$699.00 |\n| Invoice 2 | 9 | 12 | \\$419.40 |\n| Invoice 3 | 13 | 5 | \\$326.45 |",
+    "statements": [
+      "Invoice 2 does nothing more than restate Invoice 1's pricing information at 60% scale, rather than corroborating it with independent evidence.",
+      "Nitrogen-type cylinders are priced closer to \\$17.00 than to \\$16.00.",
+      "Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.",
+      "Double Invoice 3's order exactly, and the resulting bill would land above \\$655.",
+      "Blend Invoices 1 and 3 together, cylinders and dollars alike, and the resulting per-cylinder price fails to reach the \\$20 mark."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Invoice 2 does nothing more than restate Invoice 1's pricing information at 60% scale, rather than corroborating it with independent evidence.**  (true)\n\nThe overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy.\n\nso the statement is True.",
+      "**B) Nitrogen-type cylinders are priced closer to \\$17.00 than to \\$16.00.**  (false)\n\nThe overview recovered $x = 16.40$ as the Nitrogen price.\n\n$$16.40 - 16.00 = 0.40$$\n\n$$17.00 - 16.40 = 0.60$$\n\n$$0.40 < 0.60$$\n\nNitrogen is closer to \\$16.00 than to \\$17.00.\n\nso the statement is False.",
+      "**C) Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.**  (true)\n\nFour Oxygen cylinders versus six Nitrogen cylinders, at the recovered prices:\n\n$$4 \\times 22.65 = 90.60$$\n\n$$6 \\times 16.40 = 98.40$$\n\n$$90.60 < 98.40$$\n\nso the statement is True.",
+      "**D) Double Invoice 3's order exactly, and the resulting bill would land above \\$655.**  (false)\n\nDouble Invoice 3's total of \\$326.45:\n\n$$2 \\times 326.45 = 652.90$$\n\n$$652.90 < 655$$\n\nThe doubled bill does not land above \\$655.\n\nso the statement is False.",
+      "**E) Blend Invoices 1 and 3 together, cylinders and dollars alike, and the resulting per-cylinder price fails to reach the \\$20 mark.**  (true)\n\nBlend Invoices 1 and 3, dollars and cylinders:\n\n$$699.00 + 326.45 = 1025.45$$\n\n$$15 + 20 + 13 + 5 = 53$$\n\n$$\\frac{1025.45}{53} \\approx 19.35$$\n\n$$19.35 < 20$$\n\nThe blended per-cylinder price fails to reach \\$20.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 36,
+    "solution_overview": "A consultant was given three monthly invoices for Nitrogen-type and Oxygen-type cylinders. Invoice 2 is a 60% scale copy of Invoice 1, so the independent pair is Invoice 1 with Invoice 3.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per Nitrogen-type cylinder, $y$ = price per Oxygen-type cylinder.\n\nInvoice 2 versus Invoice 1:\n\n$$\n\\frac{9}{15} = \\frac{12}{20} = \\frac{419.40}{699.00} = 0.60\n$$\n\n**1. Translate: Invoice 1.**\n\n$$15x + 20y = 699.00 \\tag{1}$$\n\n**2. Translate: Invoice 3.**\n\n$$13x + 5y = 326.45 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (2) by 4:\n\n$$\n52x + 20y = 1305.80\n$$\n\nSubtract (1):\n\n$$\n(52x + 20y) - (15x + 20y) = 1305.80 - 699.00\n$$\n\n$$\n37x = 606.80 \\Rightarrow x = \\frac{606.80}{37} = 16.40\n$$\n\nSubstitute into (1):\n\n$$\n15(16.40) + 20y = 699.00 \\Rightarrow 246.00 + 20y = 699.00\n$$\n\n$$\n20y = 453.00 \\Rightarrow y = 22.65\n$$\n\n**Answer.** Nitrogen = \\$16.40 | Oxygen = \\$22.65"
+  },
+  {
+    "id": "math-5-37",
+    "case_id": "MATH 5.37",
+    "title": "Ferro Machine Shop  -  Two Technicians, Two Sessions",
+    "context": "On Monday's day shift, Alvarez logged 4 hours on an overhaul while Bianchi logged 7 hours on that same job; together they left it 65.5% finished. The next day, Alvarez put in 9 hours, Bianchi just 3, and an identical type of job was left 90.0% complete.",
+    "statements": [
+      "Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.",
+      "Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.",
+      "Their combined hourly output, expressed as a fraction, reduces to exactly $\\frac{13}{100}$  -  no more, no less.",
+      "Bianchi's slice of Tuesday's finished work, as a fraction, is closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$.",
+      "Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.**  (false)\n\nAlvarez's solo time is the reciprocal of the recovered $x = 0.085$:\n\n$$\\frac{1}{0.085} \\approx 11.76$$\n\nRounded to the nearest whole hour that is 12, not 11.\n\nso the statement is False.",
+      "**B) Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.**  (false)\n\nBianchi alone, and Alvarez on two jobs, at the recovered rates:\n\n$$\\frac{1}{0.045} \\approx 22.22$$\n\n$$\\frac{2}{0.085} \\approx 23.53$$\n\n$$22.22 < 23.53$$\n\nBianchi's one job is not longer than Alvarez's two.\n\nso the statement is False.",
+      "**C) Their combined hourly output, expressed as a fraction, reduces to exactly $\\frac{13}{100}$  -  no more, no less.**  (true)\n\nCombined hourly output is the sum of the recovered rates:\n\n$$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$\n\nso the statement is True.",
+      "**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$.**  (true)\n\nBianchi's Tuesday hours are 3 at $y = 0.045$, out of Tuesday's $0.900$:\n\n$$3 \\times 0.045 = 0.135$$\n\n$$\\frac{0.135}{0.900} = 0.15$$\n\n$$\\left|0.15 - \\frac{1}{7}\\right| \\approx 0.0071, \\qquad \\left|0.15 - \\frac{1}{8}\\right| = 0.025$$\n\nThe slice is closer to $\\frac{1}{7}$.\n\nso the statement is True.",
+      "**E) Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.**  (true)\n\nTotal work across both days, divided by the 23 hours logged:\n\n$$0.655 + 0.900 = 1.555$$\n\n$$\\frac{1.555}{23} \\approx 0.0676$$\n\nThat average is about $6.76\\%$, which does not clear seven percent.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 37,
+    "solution_overview": "On Monday, Alvarez logged 4 hours and Bianchi 7 hours on the same overhaul, leaving it 65.5% finished. On Tuesday, Alvarez logged 9 hours and Bianchi 3 hours on an identical job, leaving it 90.0% complete.\n\n**Part 1: Building the system.**\n\nLet $x$ = fraction of a job Alvarez completes per hour, $y$ = fraction of a job Bianchi completes per hour.\n\n**1. Translate: Monday.**\n\n$$4x + 7y = 0.655 \\tag{1}$$\n\n**2. Translate: Tuesday.**\n\n$$9x + 3y = 0.900 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 9 and (2) by 4:\n\n$$\n36x + 63y = 5.895, \\qquad 36x + 12y = 3.600\n$$\n\nSubtract:\n\n$$\n(36x + 63y) - (36x + 12y) = 5.895 - 3.600\n$$\n\n$$\n51y = 2.295 \\Rightarrow y = \\frac{2.295}{51} = 0.045\n$$\n\nSubstitute into (1):\n\n$$\n4x + 7(0.045) = 0.655 \\Rightarrow 4x + 0.315 = 0.655\n$$\n\n$$\n4x = 0.340 \\Rightarrow x = 0.085\n$$\n\n**Answer.** Alvarez = 0.085 job/hour | Bianchi = 0.045 job/hour"
+  },
+  {
+    "id": "math-5-38",
+    "case_id": "MATH 5.38",
+    "title": "Vantage Apparel  -  A Water-Damaged Production Report",
+    "context": "Vantage Apparel earns a fixed profit per unit on T-Shirts and Hoodies. Season 1: 430 T-Shirts and 260 Hoodies, netting \\$9,793.50. Season 2: 275 T-Shirts and 410 Hoodies, netting \\$10,747.75. Season 3's paperwork survived only in part: 310 Hoodies and an overall profit of \\$8,558.25 are legible, but water damage erased the T-Shirt count entirely.",
+    "statements": [
+      "T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.",
+      "Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.",
+      "Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.",
+      "Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.",
+      "Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count, and the profit crosses \\$8,700."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.**  (false)\n\nThe overview recovered $x = 11.65$ as the T-Shirt margin.\n\n$$11.65 - 11 = 0.65$$\n\n$$12 - 11.65 = 0.35$$\n\n$$0.35 < 0.65$$\n\nThe margin sits closer to twelve dollars than to eleven.\n\nso the statement is False.",
+      "**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.**  (true)\n\nThe overview recovered $y = 18.40$ as the Hoodie margin.\n\n$$18.40 - 18 = 0.40$$\n\n$$19 - 18.40 = 0.60$$\n\n$$0.40 < 0.60$$\n\nThe margin sits closer to eighteen than to nineteen.\n\nso the statement is True.",
+      "**C) Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.**  (false)\n\nThe overview recovered Season 3's T-Shirt count as $T = 245$.\n\n$$245 = 24 \\times 10 + 5$$\n\n$245$ is not a multiple of ten.\n\nso the statement is False.",
+      "**D) Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.**  (true)\n\nSeason 2 minus Season 1, versus 52 Hoodies at the recovered $y = 18.40$:\n\n$$10747.75 - 9793.50 = 954.25$$\n\n$$52 \\times 18.40 = 956.80$$\n\n$$954.25 < 956.80$$\n\nThe earnings gap just fails to cover 52 Hoodies.\n\nso the statement is True.",
+      "**E) Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count, and the profit crosses \\$8,700.**  (true)\n\nReplace the recovered $T = 245$ with 260 T-Shirts, keeping 310 Hoodies:\n\n$$260 \\times 11.65 = 3029$$\n\n$$310 \\times 18.40 = 5704$$\n\n$$3029 + 5704 = 8733$$\n\n$$8733 > 8700$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 38,
+    "solution_overview": "Vantage Apparel earns a fixed profit per unit on T-Shirts and Hoodies. Season 1: 430 T-Shirts and 260 Hoodies netted \\$9,793.50. Season 2: 275 T-Shirts and 410 Hoodies netted \\$10,747.75. Season 3 lists 310 Hoodies and \\$8,558.25, with the T-Shirt count missing.\n\n**Part 1: Building the system.**\n\nLet $x$ = profit per T-Shirt, $y$ = profit per Hoodie.\n\n**1. Translate: Season 1.**\n\n$$430x + 260y = 9793.50 \\tag{1}$$\n\n**2. Translate: Season 2.**\n\n$$275x + 410y = 10747.75 \\tag{2}$$\n\n**Part 2: Solve.**\n\nMultiply (1) by 410 and (2) by 260:\n\n$$\n176300x + 106600y = 4015335, \\qquad 71500x + 106600y = 2794415\n$$\n\nSubtract:\n\n$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$\n\n$$\n104800x = 1220920 \\Rightarrow x = \\frac{1220920}{104800} = 11.65\n$$\n\nSubstitute into (1):\n\n$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$\n\n$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$\n\nSeason 3's missing T-Shirt count $T$ then satisfies\n\n$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$\n\n$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$\n\n**Answer.** T-Shirt = \\$11.65 | Hoodie = \\$18.40 | Season 3 T-Shirts = 245"
+  },
+  {
+    "id": "math-5-39",
+    "case_id": "MATH 5.39",
+    "title": "Continental Freight Co.  -  Cross-Unit Billing Audit",
+    "context": "Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram shipped. One branch records weights in pounds (1 kg ≈ 2.2 lb). A third shipment is under audit.",
+    "tables_markdown": "| Shipment | Weight | Total Charged |\n| --- | --- | --- |\n| Shipment 1 (Metric) | 185 kg | \\$677.35 |\n| Shipment 2 (Imperial) | 572 lb | \\$913.60 |\n| Shipment 3 (Imperial, audit) | 99 lb | \\$239.80 |",
+    "statements": [
+      "Knock five dollars and forty cents off the flat handling fee and you'd land on an even \\$89.20  -  implying the real fee currently overshoots \\$89 by roughly six percent.",
+      "The per-kilogram rate, tripled, would land just shy of \\$9.50.",
+      "Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed  -  but doesn't match it exactly.",
+      "Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.",
+      "Push the shipment weight up to 400 kilograms and the resulting charge just barely creeps past thirteen hundred fifty dollars."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Knock five dollars and forty cents off the flat handling fee and you'd land on an even \\$89.20  -  implying the real fee currently overshoots \\$89 by roughly six percent.**  (true)\n\nThe overview recovered $x = 94.60$ as the handling fee. Knock off \\$5.40:\n\n$$94.60 - 5.40 = 89.20$$\n\nRelative to \\$89,\n\n$$\\frac{94.60}{89} - 1 \\approx 0.063$$\n\nthe real fee overshoots \\$89 by about 6%.\n\nso the statement is True.",
+      "**B) The per-kilogram rate, tripled, would land just shy of \\$9.50.**  (true)\n\nThe overview recovered $y = 3.15$ per kilogram. Tripled:\n\n$$3 \\times 3.15 = 9.45$$\n\n$$9.45 < 9.50$$\n\nThat product lands just shy of \\$9.50.\n\nso the statement is True.",
+      "**C) Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed  -  but doesn't match it exactly.**  (true)\n\nConvert Shipment 3's 99 lb and apply the recovered model:\n\n$$\\frac{99}{2.2} = 45$$\n\n$$45 \\times 3.15 = 141.75$$\n\n$$94.60 + 141.75 = 236.35$$\n\nThe billed total is \\$239.80, and $239.80 - 236.35 = 3.45$, which is within four dollars but not an exact match.\n\nso the statement is True.",
+      "**D) Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.**  (false)\n\nNinety-nine pounds converted at 2.2 lb per kilogram:\n\n$$\\frac{99}{2.2} = 45$$\n\n$$45 = 7 \\times 6 + 3$$\n\n$45$ is not divisible by seven.\n\nso the statement is False.",
+      "**E) Push the shipment weight up to 400 kilograms and the resulting charge just barely creeps past thirteen hundred fifty dollars.**  (true)\n\nAt 400 kg with the recovered fee $x = 94.60$ and rate $y = 3.15$:\n\n$$400 \\times 3.15 = 1260$$\n\n$$94.60 + 1260 = 1354.60$$\n\n$$1354.60 > 1350$$\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 39,
+    "solution_overview": "Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram. Shipment 2 is recorded in pounds, with $1$ kg $\\approx 2.2$ lb.\n\n**Part 1: Building the system.**\n\nLet $x$ = flat handling fee, $y$ = rate per kilogram. Convert Shipment 2 before writing its equation:\n\n$$\n\\frac{572}{2.2} = 260\n$$\n\n**1. Translate: Shipment 1.**\n\n$$x + 185y = 677.35 \\tag{1}$$\n\n**2. Translate: Shipment 2, in kilograms.**\n\n$$x + 260y = 913.60 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtract (1) from (2):\n\n$$\n(x + 260y) - (x + 185y) = 913.60 - 677.35\n$$\n\n$$\n75y = 236.25 \\Rightarrow y = \\frac{236.25}{75} = 3.15\n$$\n\nSubstitute into (1):\n\n$$\nx + 185(3.15) = 677.35 \\Rightarrow x + 582.75 = 677.35 \\Rightarrow x = 94.60\n$$\n\n**Answer.** Handling fee = \\$94.60 | Rate = \\$3.15/kg"
+  },
+  {
+    "id": "math-5-40",
+    "case_id": "MATH 5.40",
+    "title": "Vantage Cloud Services  -  A Doubled Invoice That Doesn't Double",
+    "context": "Vantage Cloud Services bills every client under one fixed-rate structure: a per-compute-unit charge plus a per-storage-unit charge. Client B's usage is exactly double Client A's in both categories.",
+    "tables_markdown": "| Client | Compute Units | Storage Units | Reported Total |\n| --- | --- | --- | --- |\n| Client A | 11 | 7 | \\$483.70 |\n| Client B | 22 | 14 | \\$952.10 |",
+    "statements": [
+      "Doubling every line of Client A's invoice implies Client B should owe \\$967.40  -  a figure that overshoots what was actually billed by a hair over 1.6% of the real total.",
+      "For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's \\$952.10 billed amount.",
+      "The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.",
+      "Plugging in a purely hypothetical \\$14.20 per compute-unit and \\$31.75 per storage-unit  -  numbers with no basis in the real contract  -  Client A's invoice would compute to a figure just shy of \\$375.",
+      "The doubling-of-Client-A hypothesis for Client B's bill lands closer to the real figure than the 50%-heavier-surcharge hypothesis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Doubling every line of Client A's invoice implies Client B should owe \\$967.40  -  a figure that overshoots what was actually billed by a hair over 1.6% of the real total.**  (true)\n\nThe overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10 by \\$15.30.\n\n$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$\n\nso the statement is True.",
+      "**B) For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's \\$952.10 billed amount.**  (true)\n\nConsistency would require Client B to be exactly double Client A, so Client A would have to be half of \\$952.10:\n\n$$\\frac{952.10}{2} = 476.05$$\n\nThe actual Client A total is \\$483.70, not \\$476.05. The statement names that consistency requirement.\n\nso the statement is True.",
+      "**C) The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.**  (true)\n\nThe invoices disagree by \\$15.30 on a \\$952.10 bill:\n\n$$\\frac{15.30}{952.10} \\approx 0.01607$$\n\n$$\\frac{1}{60} \\approx 0.01667, \\qquad \\frac{1}{50} = 0.02$$\n\n$0.01607$ is nearer to $\\frac{1}{60}$ than to $\\frac{1}{50}$.\n\nso the statement is True.",
+      "**D) Plugging in a purely hypothetical \\$14.20 per compute-unit and \\$31.75 per storage-unit  -  numbers with no basis in the real contract  -  Client A's invoice would compute to a figure just shy of \\$375.**  (false)\n\nThose hypothetical unit prices on Client A's 11 compute and 7 storage units:\n\n$$11 \\times 14.20 = 156.20$$\n\n$$7 \\times 31.75 = 222.25$$\n\n$$156.20 + 222.25 = 378.45$$\n\n$$378.45 > 375$$\n\nThe total is not shy of \\$375.\n\nso the statement is False.",
+      "**E) The doubling-of-Client-A hypothesis for Client B's bill lands closer to the real figure than the 50%-heavier-surcharge hypothesis.**  (true)\n\nThe doubling hypothesis prices Client B at \\$967.40. A 50% surcharge on Client A would price Client B at\n\n$$1.5 \\times 483.70 = 725.55$$\n\nDistances to the billed \\$952.10:\n\n$$|967.40 - 952.10| = 15.30$$\n\n$$|725.55 - 952.10| = 226.55$$\n\nDoubling is closer.\n\nso the statement is True."
+    ],
+    "difficulty_level": "\\frac{4}{5}",
+    "sort_order": 40,
+    "solution_overview": "Vantage Cloud Services bills a per-compute-unit charge plus a per-storage-unit charge. Client B's usage is exactly double Client A's in both categories.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per compute-unit, $y$ = price per storage-unit.\n\n**1. Translate: Client A.**\n\n$$11x + 7y = 483.70 \\tag{1}$$\n\n**2. Translate: Client B, as reported.**\n\n$$22x + 14y = 952.10 \\tag{2}$$\n\n**Part 2: Solve.**\n\nClient B's coefficients $(22, 14)$ are exactly double Client A's $(11, 7)$. Scaling (1) by 2:\n\n$$\n2(11x + 7y) = 2(483.70) \\Rightarrow 22x + 14y = 967.40\n$$\n\nThe reported Client B total is $952.10$, not $967.40$:\n\n$$\n967.40 - 952.10 = 15.30\n$$\n\nThe left-hand sides are proportional while the totals are not, so the two invoices are inconsistent. No pair $(x, y)$ satisfies both at once.\n\n**Answer.** No consistent prices exist; the invoices disagree by \\$15.30."
+  }
+]
