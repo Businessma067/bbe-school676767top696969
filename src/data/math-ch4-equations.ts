@@ -342,7 +342,13 @@ $$4x - 4 = 2x + 10 \\Rightarrow 2x = 14 \\Rightarrow x = 7$$
 Check: both sides equal $24$. The statement is True.`,
       `**D.** → False
 
-$$x + 3 = 10 \\Rightarrow x = 7$$, while $$2x = 16 \\Rightarrow x = 8$$. They do not share a solution, so the statement is False.`,
+$$x + 3 = 10 \\Rightarrow x = 7$$
+
+while
+
+$$2x = 16 \\Rightarrow x = 8$$
+
+They do not share a solution, so the statement is False.`,
       `**E.** → True
 
 $$4x - 2 = 10 \\Rightarrow 4x = 12 \\Rightarrow x = 3$$
@@ -562,7 +568,7 @@ $$\\frac{1}{6} + \\frac{1}{s} = \\frac{1}{4} \\Rightarrow \\frac{1}{s} = \\frac{
 The slower printer takes $12$ hours alone. The statement is True.`,
       `**C.** → True
 
-Passing a pole means covering the train's own length: $180 / 12 = 15$ m/s, and $15 \\cdot 3.6 = 54$ km/h. The statement is True.`,
+Passing a pole means covering the train's own length: $\\frac{180}{12} = 15$ m/s, and $15 \\cdot 3.6 = 54$ km/h. The statement is True.`,
       `**D.** → False
 
 The first car is already $60$ km ahead at $9{:}00$. They close at $30$ km/h, so they meet after $2$ hours, at $11{:}00$, not noon. The statement is False.`,
@@ -618,7 +624,7 @@ Length grows by $2$ cm on each of two sides, so the perimeter grows by $4$ cm. T
   {
     id: `math-4-14`,
     case_id: `MATH 4.14`,
-    title: `Apples at $2$ EUR and pears at $3$ EUR`,
+    title: `Apples at 2 EUR and pears at 3 EUR`,
     subsection: `4.1`,
     context: `A stall sells apples at $2$ EUR per kilogram and pears at $3$ EUR per kilogram. A customer buys some kilograms of each and pays $21$ EUR in total. The mass of apples is $3$ kg more than the mass of pears. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -721,7 +727,7 @@ $$t = \\frac{180}{90} = 2$$
 In two hours they cover $100$ km and $80$ km. The statement is True.`,
       `**B.** → False
 
-After one hour, $135$ km remains. They close at $105$ km/h, so $t = 135 / 105 = 9/7$ hours, not $2$. The statement is False.`,
+After one hour, $135$ km remains. They close at $105$ km/h, so $t = \\frac{135}{105} = \\frac{9}{7}$ hours, not $2$. The statement is False.`,
       `**C.** → True
 
 Downstream $12$ km/h, upstream $8$ km/h. Still water is their average, $10$ km/h. The statement is True.`,
@@ -765,7 +771,7 @@ The statement is True.`,
 The three numbers add to $42$, so the third is $42 - 11 - 15 = 16$, not $18$. The statement is False.`,
       `**C.** → False
 
-Scale by $12/8 = 1.5$: flour $600 \\cdot 1.5 = 900$ g, not $1000$. The statement is False.`,
+Scale by $\\frac{12}{8} = 1.5$: flour $600 \\cdot 1.5 = 900$ g, not $1000$. The statement is False.`,
       `**D.** → True
 
 $$2(2w + w) = 48 \\Rightarrow w = 8$$
@@ -803,12 +809,12 @@ $$2(x + x + 5) = 38 \\Rightarrow 2x + 5 = 19 \\Rightarrow x = 7$$
 The longer side is $12$ cm. The statement is True.`,
       `**B.** → True
 
-$$t = 180 / 72 = 2.5$$
+$$t = \\frac{180}{72} = 2.5$$
 
 hours back from $4$ pm is $1{:}30$ pm. The statement is True.`,
       `**C.** → True
 
-Acid $0.18$ litres. Then $0.18 / (1.5 + w) = 0.08$ gives $w = 0.75$. The statement is True.`,
+Acid $0.18$ litres. Then $\\frac{0.18}{1.5 + w} = 0.08$ gives $w = 0.75$. The statement is True.`,
       `**D.** → False
 
 $$1.75a = 9150 \\Rightarrow a \\approx 5229$$, so second place is about $2614$ EUR, not $3000$. The statement is False.`,
@@ -825,7 +831,7 @@ Eleven is not smaller than ten. The statement is False.`,
   {
     id: `math-4-19`,
     case_id: `MATH 4.19`,
-    title: `Labour at $45$ EUR an hour plus parts`,
+    title: `Labour at 45 EUR an hour plus parts`,
     subsection: `4.1`,
     context: `A workshop bills $45$ EUR per hour of labour plus a fixed $80$ EUR for parts on every job. A second job uses the same parts charge but $2$ hours more labour than the first. The two jobs together come to $430$ EUR. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -853,7 +859,7 @@ Six labour hours cost $45 \\cdot 6 = 270$ EUR. The statement is True.`,
 Hours $1$ and $3$ with both parts charges: $125 + 215 = 340$ EUR, not $320$. The statement is False.`,
       `**E.** → True
 
-Parts $160$ EUR, and $160 > 430 / 3 \\approx 143$. The statement is True.`,
+Parts $160$ EUR, and $160 > \\frac{430}{3} \\approx 143$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 19,
@@ -921,7 +927,7 @@ The pipe adds $\\frac{1}{12}$ of the cistern per hour. The leak removes $\\frac{
 
 $$\\frac{1}{12} - \\frac{1}{20} = \\frac{5}{60} - \\frac{3}{60} = \\frac{2}{60} = \\frac{1}{30}$$
 
-One-thirtieth of the cistern per hour means a full cistern in $30$ hours. Check: in $30$ hours the pipe would pour $30 / 12 = 2.5$ cisterns and the leak would dump $30 / 20 = 1.5$ cisterns, leaving $1$ cistern. The statement is True.`,
+One-thirtieth of the cistern per hour means a full cistern in $30$ hours. Check: in $30$ hours the pipe would pour $\\frac{30}{12} = 2.5$ cisterns and the leak would dump $\\frac{30}{20} = 1.5$ cisterns, leaving $1$ cistern. The statement is True.`,
       `**B.** → True
 
 Let the daughter's present age be $d$ years. Then the mother is $3d$ now. In twelve years the mother is twice the daughter.
@@ -935,11 +941,11 @@ $$d = 12$$
 The daughter is $12$ and the mother is $36$. In twelve years they are $24$ and $48$, and $48 = 2 \\cdot 24$. The statement is True.`,
       `**C.** → False
 
-Downstream speed is $18 / 2 = 9$ km/h. Upstream speed is $18 / 6 = 3$ km/h. The current is half the difference of those two, because it adds on the way down and subtracts on the way up.
+Downstream speed is $\\frac{18}{2} = 9$ km/h. Upstream speed is $\\frac{18}{6} = 3$ km/h. The current is half the difference of those two, because it adds on the way down and subtracts on the way up.
 
 $$\\text{current} = \\frac{9 - 3}{2} = 3$$
 
-The claim says $4$ km/h. Still water is the average $(9 + 3) / 2 = 6$, and $6 + 4$ would be $10$ downstream, which is not the $9$ we have. The current is $3$ km/h, so the statement is False.`,
+The claim says $4$ km/h. Still water is the average $\\frac{9 + 3}{2} = 6$, and $6 + 4$ would be $10$ downstream, which is not the $9$ we have. The current is $3$ km/h, so the statement is False.`,
       `**D.** → True
 
 The wall is $15 \\cdot 12 = 180$ worker-days of work. After four days the fifteen workers have done $15 \\cdot 4 = 60$ worker-days, so $120$ remain. Ten workers then need
@@ -996,10 +1002,10 @@ $$6 = 0.15w$$
 
 $$w = 40$$
 
-The claim says $30$ litres. Thirty litres would make $90$ litres in total and $15 / 90 = 16.7\\%$, still above $15\\%$. Forty litres of water are needed, so the statement is False.`,
+The claim says $30$ litres. Thirty litres would make $90$ litres in total and $\\frac{15}{90} = 16.7\\%$, still above $15\\%$. Forty litres of water are needed, so the statement is False.`,
       `**B.** → True
 
-While they pass, the two trains together must cover the sum of their lengths, $120 + 180 = 300$ m, at the sum of their speeds. Convert $90$ km/h to metres per second by multiplying by $5/18$.
+While they pass, the two trains together must cover the sum of their lengths, $120 + 180 = 300$ m, at the sum of their speeds. Convert $90$ km/h to metres per second by multiplying by $\\frac{5}{18}$.
 
 $$90 \\cdot \\frac{5}{18} = 25 \\text{ m/s}$$
 
@@ -1008,7 +1014,7 @@ $$t = \\frac{300}{25} = 12$$
 seconds. The passing time is $12$ seconds, so the statement is True.`,
       `**C.** → False
 
-The clock runs $64$ minutes of its own for every $60$ true minutes, so true time is $60/64$ of the time shown. When the clock shows $6$ hours it has counted $360$ of its minutes.
+The clock runs $64$ minutes of its own for every $60$ true minutes, so true time is $\\frac{60}{64}$ of the time shown. When the clock shows $6$ hours it has counted $360$ of its minutes.
 
 $$\\text{true minutes after noon} = 360 \\cdot \\frac{60}{64} = 337.5$$
 
@@ -1028,15 +1034,15 @@ $$x = 8$$
 The larger is $4 \\cdot 8 + 5 = 37$, and $8 + 37 = 45$. The smaller is $8$, so the statement is True.`,
       `**E.** → False
 
-In the first three hours, with no leak, the tap fills $3/8$ of the tank, so $5/8$ remains. From then on the net rate is
+In the first three hours, with no leak, the tap fills $\\frac{3}{8}$ of the tank, so $\\frac{5}{8}$ remains. From then on the net rate is
 
 $$\\frac{1}{8} - \\frac{1}{12} = \\frac{3}{24} - \\frac{2}{24} = \\frac{1}{24}$$
 
-of the tank per hour. The remaining $5/8$ then takes
+of the tank per hour. The remaining $\\frac{5}{8}$ then takes
 
-$$\\frac{5/8}{1/24} = \\frac{5}{8} \\cdot 24 = 15$$
+$$\\frac{\\frac{5}{8}}{\\frac{1}{24}} = \\frac{5}{8} \\cdot 24 = 15$$
 
-hours, not $7$. Seven hours at that net rate would fill only $7/24$ of a tank, and $7/24 < 5/8$. The tank is full $15$ hours after the leak starts, so the statement is False.`,
+hours, not $7$. Seven hours at that net rate would fill only $\\frac{7}{24}$ of a tank, and $\\frac{7}{24} < \\frac{5}{8}$. The tank is full $15$ hours after the leak starts, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 22,
@@ -1134,7 +1140,7 @@ $$\\frac{2 \\cdot 4 \\cdot 6}{4 + 6} = \\frac{48}{10} = 4.8$$
 On a $12$ km out-and-back, outward takes $3$ hours and return takes $2$ hours, so $24$ km in $5$ hours is $4.8$ km/h. The statement is True.`,
       `**C.** → True
 
-Let second place be $y$ euros. Then first is $y / 0.8 = 1.25y$ and third is $0.8y$.
+Let second place be $y$ euros. Then first is $\\frac{y}{0.8} = 1.25y$ and third is $0.8y$.
 
 $$1.25y + y + 0.8y = 15250$$
 
@@ -1153,7 +1159,7 @@ $$0.18 = 0.12 + 0.06w$$
 
 $$w = 1$$
 
-One litre of water makes $3$ litres in total, and $0.18 / 3 = 0.06$. The statement is True.`,
+One litre of water makes $3$ litres in total, and $\\frac{0.18}{3} = 0.06$. The statement is True.`,
       `**E.** → True
 
 $$t = \\frac{90}{60} = 1.5$$
@@ -1205,11 +1211,11 @@ $$n = 14$$
 The integers are $14$, $15$, and $16$. The middle one is $15$. Check: $4 \\cdot 14 + 2 \\cdot 16 = 56 + 32 = 88$. The statement is True.`,
       `**C.** → True
 
-Let B's rate be $r$ jobs per day. Then A's rate is $2r$, and together they do $3r = 1/10$ of the job per day.
+Let B's rate be $r$ jobs per day. Then A's rate is $2r$, and together they do $3r = \\frac{1}{10}$ of the job per day.
 
 $$r = \\frac{1}{30}, \\qquad 2r = \\frac{1}{15}$$
 
-A alone takes $15$ days. In those $15$ days B would do only half a job, and $1 + 1/2 = 3/2$ jobs in $15$ days is a rate of $1/10$ per day, matching the together time. The statement is True.`,
+A alone takes $15$ days. In those $15$ days B would do only half a job, and $1 + \\frac{1}{2} = \\frac{3}{2}$ jobs in $15$ days is a rate of $\\frac{1}{10}$ per day, matching the together time. The statement is True.`,
       `**D.** → False
 
 Walking $5$ km at $5$ km/h takes $1$ hour. The rest is $20$ minutes, which is $\\frac{1}{3}$ of an hour. Walking $3$ km at $6$ km/h takes $\\frac{1}{2}$ hour.
@@ -1227,7 +1233,7 @@ $$2x = 82$$
 
 $$x = 41$$
 
-The smaller is $23$, and $41 - 23 = 18$. Equivalently the larger is half the sum plus half the difference: $(64 + 18) / 2 = 41$. The statement is True.`,
+The smaller is $23$, and $41 - 23 = 18$. Equivalently the larger is half the sum plus half the difference: $\\frac{64 + 18}{2} = 41$. The statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 25,
@@ -1325,7 +1331,7 @@ The claim writes $9 : 10$, which is the ratio the other way around. A's speed is
 
 Together they do $\\frac{1}{10} + \\frac{1}{15} = \\frac{1}{6}$ of the job per day. In two days they complete $\\frac{1}{3}$, so $\\frac{2}{3}$ remains. B alone does $\\frac{1}{15}$ per day, so the rest takes
 
-$$\\frac{2/3}{1/15} = 10$$
+$$\\frac{\\frac{2}{3}}{\\frac{1}{15}} = 10$$
 
 days, not $8$. Eight more days of B would cover only $\\frac{8}{15}$ of a job, and $\\frac{8}{15} < \\frac{2}{3}$. B needs $10$ more days, so the statement is False.`,
       `**D.** → True
@@ -1398,7 +1404,7 @@ $$0.4 = 0.25 + 0.10w$$
 
 $$w = 1.5$$
 
-Adding $1.5$ litres makes $4$ litres in total, and $0.4 / 4 = 0.10$. The statement is True.`,
+Adding $1.5$ litres makes $4$ litres in total, and $\\frac{0.4}{4} = 0.10$. The statement is True.`,
       `**D.** → False
 
 Let second place be $y$ euros. Then first is $1.25y$ and third is $0.8y$.
@@ -1418,7 +1424,7 @@ $$3 \\cdot \\frac{5}{36} = \\frac{15}{36} = \\frac{5}{12}$$
 
 so $\\frac{7}{12}$ remains. B does $\\frac{1}{18}$ per day, so the rest takes
 
-$$\\frac{7/12}{1/18} = \\frac{7}{12} \\cdot 18 = \\frac{21}{2} = 10.5$$
+$$\\frac{\\frac{7}{12}}{\\frac{1}{18}} = \\frac{7}{12} \\cdot 18 = \\frac{21}{2} = 10.5$$
 
 days. B still needs $10.5$ days, so the statement is True.`,
     ],
