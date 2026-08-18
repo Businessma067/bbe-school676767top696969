@@ -674,6 +674,354 @@ def parse_ev() -> list[dict]:
     return tasks
 
 
+def _strip_latex_text(s: str) -> str:
+    s = re.sub(r"\\text\{([^}]+)\}", r"\1", s)
+    s = re.sub(r"\\mathrm\{([^}]+)\}", r"\1", s)
+    s = re.sub(r"\\operatorname\{([^}]+)\}", r"\1", s)
+    s = s.replace("\\mid", " given ").replace("\\cap", " and ").replace("\\cup", " or ")
+    s = re.sub(r"\\[a-zA-Z]+\s*", "", s)
+    s = re.sub(r"[{}$\\]", "", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def humanize_statement(raw: str) -> str:
+    """Render student-facing statements as plain English (no $...$ wrappers)."""
+    s = raw.strip()
+    if not s:
+        return s
+
+    def prob_phrase(inner: str) -> str:
+        inner = _strip_latex_text(inner)
+        if " given " in inner:
+            event, cond = inner.split(" given ", 1)
+            return f"The probability of {event} given {cond}"
+        return f"The probability that {inner[0].lower()}{inner[1:]}" if inner else "The probability"
+
+    def repl_cond(m: re.Match[str]) -> str:
+        return (
+            f"the probability of {_strip_latex_text(m.group(1))} "
+            f"given {_strip_latex_text(m.group(2))}"
+        )
+
+    # Conditional P(\text{A}\mid\text{B}) anywhere in the string
+    s = re.sub(
+        r"\$?P\(\\text\{([^}]+)\}\\mid\\text\{([^}]+)\}\)\$?",
+        repl_cond,
+        s,
+    )
+    m = re.match(r"^\$P\\(?:text\{([^}]+)\}|([^)]+))\)\$(.*)$", s)
+    if m:
+        inner = m.group(1) or m.group(2)
+        rest = m.group(3).strip()
+        phrase = prob_phrase(inner)
+        if rest.startswith(" is "):
+            return f"{phrase}{rest}"
+        if rest:
+            return f"{phrase} {rest.lstrip(' ,')}"
+        return phrase
+
+    m = re.match(r"^\$P\(([^)]+)\)\$(.*)$", s)
+    if m:
+        rest = m.group(2).strip()
+        phrase = prob_phrase(m.group(1))
+        return f"{phrase}{rest}" if rest.startswith(" is ") else f"{phrase} {rest}".strip()
+
+    # Expected value / variance / SD shorthand
+    m = re.match(r"^\$E\(X\)\$(.*)$", s)
+    if m:
+        rest = m.group(1).strip()
+        return f"The expected value{rest}" if rest.startswith(" is ") else f"The expected value {rest}".strip()
+
+    m = re.match(r"^\$E\(X\^2\)\$(.*)$", s)
+    if m:
+        rest = m.group(1).strip()
+        return (
+            f"The expected value of X squared{rest}"
+            if rest.startswith(" is ")
+            else f"The expected value of X squared {rest}".strip()
+        )
+
+    m = re.match(r"^\$\\operatorname\{Var\}\(X\)\$(.*)$", s)
+    if m:
+        rest = m.group(1).strip()
+        return f"The variance{rest}" if rest.startswith(" is ") else f"The variance {rest}".strip()
+
+    m = re.match(r"^\$\\sigma\$(.*)$", s)
+    if m:
+        rest = m.group(1).strip()
+        return (
+            f"The standard deviation{rest}"
+            if rest.startswith(" is ")
+            else f"The standard deviation {rest}".strip()
+        )
+
+    # Mid-sentence P(...), including conditional forms
+    s = re.sub(
+        r"P\(\\text\{([^}]+)\}\\mid\\text\{([^}]+)\}\)",
+        repl_cond,
+        s,
+    )
+    s = re.sub(
+        r"P\\text\{([^}]+)\}\\mid\\text\{([^}]+)\}",
+        repl_cond,
+        s,
+    )
+    s = re.sub(
+        r"P\\text\{([^}]+)\}",
+        lambda m: prob_phrase(m.group(1)).replace("The probability", "the probability", 1),
+        s,
+    )
+    s = re.sub(
+        r"P\(([^)]+)\)",
+        lambda m: prob_phrase(m.group(1)).replace("The probability", "the probability", 1),
+        s,
+    )
+    s = re.sub(r"=1\s*[-−]\s*", " equals 1 minus ", s)
+
+    # Remove stray inline $ around simple numbers or words
+    s = re.sub(r"\$(\d+(?:\.\d+)?)\$", r"\1", s)
+    s = s.replace("$", "")
+    s = re.sub(r"\s+", " ", s).strip()
+    if s and s[0].islower():
+        s = s[0].upper() + s[1:]
+    if s and not s.endswith((".", "?", "!")):
+        s += "."
+    return s
+
+
+def humanize_context(raw: str) -> str:
+    """Keep math tables in context but prefer readable prose where possible."""
+    s = raw.strip()
+    if not s:
+        return s
+    # EV prompts: replace terse 'Evaluate each statement.' with fuller wording
+    s = re.sub(
+        r"Evaluate each statement\.?\s*$",
+        "For each statement below, decide whether it is true or false.",
+        s,
+        flags=re.I,
+    )
+    return latexify(s)
+
+
+def clean_explanation_prose(text: str) -> str:
+    s = text.strip()
+    s = re.sub(r"^\*\*([A-E])\.\*\*\s*→\s*(True|False)\s*\n+", "", s, flags=re.I)
+    s = re.sub(r"Statement [A-E] is therefore \*\*(true|false)\*\*\.?", "", s, flags=re.I)
+    s = re.sub(r"\*\*\s+\$", "$", s)
+    s = re.sub(r"\*\*([^*]+)\*\*", r"\1", s)
+    s = re.sub(r"\s+-\s+", " — ", s)
+    s = re.sub(r"\n{3,}", "\n\n", s)
+    return s.strip()
+
+
+def _extract_formula_line(body: str) -> tuple[str, str | None]:
+    m = re.search(r"(?mi)^Formula:\s*(.+)$", body)
+    if not m:
+        return body, None
+    formula = m.group(1).strip().strip("$")
+    prose = (body[: m.start()] + body[m.end() :]).strip()
+    return prose, formula
+
+
+def _is_direct_lookup(statement: str, body: str, overview: str) -> bool:
+    st = statement.lower()
+    if "at least one" in st or "exactly one" in st or "exactly two" in st:
+        return False
+    if "none" in st or "neither" in st:
+        return False
+    if "both " in st or "all three" in st:
+        return True
+    return False
+
+
+def _needs_union_setup(statement: str, body: str) -> bool:
+    st = statement.lower()
+    if "none" in st or "neither" in st:
+        return True
+    return bool(re.search(r"100\s*%\s*[-−]", body) or re.search(r"1\s*[-−]\s*P\(", body))
+
+
+def expand_short_explanation(
+    letter: str,
+    verdict: str,
+    body: str,
+    statement: str,
+    overview: str,
+    subsection: str,
+) -> str:
+    body = clean_explanation_prose(body)
+    if not body or body.startswith("See the shared solution"):
+        return body
+
+    if len(body) >= 80 and "Formula:" in body:
+        return body
+
+    st = statement.lower()
+    body_clean = body.replace("$", "").strip().rstrip(".")
+
+    if subsection == "12.2":
+        if "at least one" in st and overview:
+            return (
+                "Apply the three-event inclusion-exclusion formula for the union.\n\n"
+                f"{overview}\n\n"
+                f"Compare the union to the threshold:\n\n$$\n{body_clean}\n$$\n\n"
+                f"Statement {letter} is therefore {verdict.lower()}."
+            )
+        if ("none" in st or "neither" in st) and overview:
+            return (
+                "First compute the union probability.\n\n"
+                f"{overview}\n\n"
+                "Members who use none of the amenities are the complement of the union:\n\n"
+                f"$$\n{body_clean}\n$$\n\n"
+                f"Statement {letter} is therefore {verdict.lower()}."
+            )
+        if _is_direct_lookup(statement, body, overview):
+            return (
+                "This is a direct lookup from the given data — no inclusion-exclusion calculation is required.\n\n"
+                f"Given value: {body_clean}.\n\n"
+                f"Compare this to the threshold in the statement → {verdict}.\n\n"
+                f"Takeaway: When the problem already states an overlap probability, read it directly — do not re-run the union formula."
+            )
+        if overview and re.fullmatch(r"[\d.%<>=≤≥\\s]+", body_clean):
+            return (
+                f"{overview}\n\n"
+                f"For this statement:\n\n$$\n{body_clean}\n$$\n\n"
+                f"Statement {letter} is therefore {verdict.lower()}."
+            )
+
+    if subsection == "12.3":
+        if re.search(r"\\frac|\\not|[<>%]|=", body_clean):
+            return (
+                "Organize the counts from the problem, then apply the conditional probability definition.\n\n"
+                f"$$\n{body_clean}\n$$\n\n"
+                f"Statement {letter} is therefore {verdict.lower()}."
+            )
+        if re.search(r"[a-zA-Z]{5,}", body_clean):
+            return (
+                "Organize the counts from the problem, then apply the conditional probability definition.\n\n"
+                f"{body_clean}\n\n"
+                f"Statement {letter} is therefore {verdict.lower()}."
+            )
+        return (
+            "Organize the counts, then form the conditional or joint probability.\n\n"
+            f"$$\n{body_clean}\n$$\n\n"
+            f"Statement {letter} is therefore {verdict.lower()}."
+        )
+
+    if subsection == "12.4" and len(body) < 100:
+        return (
+            "Apply the definition and substitute the probabilities from the table.\n\n"
+            f"$$\n{body_clean}\n$$\n\n"
+            f"Statement {letter} is therefore {verdict.lower()}."
+        )
+
+    return body
+
+
+def restructure_explanation(
+    letter: str,
+    verdict: str,
+    body: str,
+    statement: str,
+) -> str:
+    body = clean_explanation_prose(body)
+    prose, formula = _extract_formula_line(body)
+
+    lines = [f"**Statement {letter} — {verdict}**", ""]
+
+    if prose:
+        for para in re.split(r"\n\s*\n", prose):
+            para = para.strip()
+            if not para:
+                continue
+            # One idea per line: split on sentence boundaries for dense blocks
+            sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z(])", para)
+            for sent in sentences:
+                sent = sent.strip()
+                if sent:
+                    lines.append(sent)
+            lines.append("")
+
+    if formula:
+        f = formula.strip().strip("$").replace("$", "")
+        lines.append(f"$$\n{f}\n$$")
+        lines.append("")
+
+    close_pat = re.compile(
+        r"(close call|exactly at the boundary|not greater than|not above|not below|"
+        r"exactly \d|same trap|tempting but incorrect)",
+        re.I,
+    )
+    if close_pat.search(prose + " " + (formula or "")):
+        for sent in re.split(r"(?<=[.!?])\s+", prose):
+            if close_pat.search(sent):
+                lines.append(f"**Close call:** {sent.strip()}")
+                lines.append("")
+                break
+
+    takeaway = ""
+    if prose:
+        takeaway_line = re.search(r"(?m)^Takeaway:\s*(.+)$", prose)
+        if takeaway_line:
+            takeaway = takeaway_line.group(1).strip()
+            prose = re.sub(r"(?m)^Takeaway:.*$", "", prose).strip()
+        sentences = [
+            s.strip()
+            for s in re.split(r"(?<=[.!?])\s+(?=[A-Z(])", prose.strip())
+            if s.strip()
+            and not re.match(r"Statement [A-E] is therefore", s, flags=re.I)
+            and not s.startswith("Organize the counts")
+            and not s.startswith("Apply the")
+            and not s.startswith("This is a direct lookup")
+            and not s.startswith("First compute")
+            and not s.startswith("Members who use")
+            and not s.startswith("Takeaway:")
+        ]
+        if sentences:
+            takeaway = sentences[-1]
+    if not takeaway:
+        takeaway = f"The statement is {verdict.lower()} based on the calculation above."
+    lines.append(f"**Takeaway:** {takeaway}")
+
+    return "\n".join(lines).strip()
+
+
+def is_substantive_explanation(body: str) -> bool:
+    if not body or body.startswith("See the shared solution"):
+        return False
+    if len(body) >= 40:
+        return True
+    if re.search(r"\d+%", body):
+        return True
+    if re.search(r"[<>=≤≥]", body):
+        return True
+    if "Formula:" in body:
+        return True
+    if re.search(r"\\binom|\\frac|/\\d", body):
+        return True
+    return False
+
+
+def trim_solution_overview(overview: str, tactical: list[str], subsection: str) -> str:
+    """Keep shared setup concise — per-statement sections carry the full derivations."""
+    if not overview:
+        return ""
+    ov = overview.strip()
+    if subsection == "12.1":
+        # Combinatorial answer blocks already include Step 1; drop duplicate mega-paragraph.
+        if len(ov) > 280 and all("Formula:" in t or "Statement" in t for t in tactical):
+            first = re.split(r"\.\s+", ov.replace("\n", " "), maxsplit=1)[0]
+            return first.strip() + "." if first else ""
+    if subsection in ("12.2", "12.3", "12.4"):
+        # Single-formula overviews are useful once; don't repeat in every letter.
+        if ov.count("$$") >= 2 or len(ov) > 400:
+            m = re.search(r"\$\$(.*?)\$\$", ov, flags=re.S)
+            if m:
+                return "$$\n" + m.group(1).strip() + "\n$$"
+    return ov
+
+
 def clean_overview(text: str) -> str:
     s = text.strip()
     s = re.sub(
@@ -723,29 +1071,45 @@ def clean_task_title(title: str, fallback: str) -> str:
 
 
 def enrich_tactical(
-    tactical: list[str], overview: str, answer_key: list[bool]
+    tactical: list[str],
+    overview: str,
+    answer_key: list[bool],
+    statements: list[str],
+    subsection: str,
 ) -> list[str]:
-    """If a statement explanation is too thin, attach the shared calculation."""
+    """Expand thin explanations without overwriting valid short derivations."""
     out = []
     for i, expl in enumerate(tactical):
-        body = expl.split("\n\n", 1)[1].strip() if "\n\n" in expl else ""
-        if (
-            not body
-            or body.startswith("See the shared solution")
-            or len(body) < 24
-        ):
-            letter = LETTERS[i]
-            verdict = "True" if answer_key[i] else "False"
+        letter = LETTERS[i]
+        verdict = "True" if answer_key[i] else "False"
+        body = expl.split("\n\n", 1)[1].strip() if "\n\n" in expl else expl.strip()
+        body = clean_explanation_prose(body)
+
+        if not is_substantive_explanation(body):
             extra = overview.strip()
-            if extra:
-                out.append(
-                    f"**{letter}.** → {verdict}\n\n{extra}\n\n"
-                    f"Statement {letter} is therefore **{verdict.lower()}**."
+            if extra and not _is_direct_lookup(statements[i], body, overview):
+                body = (
+                    f"{extra}\n\nStatement {letter} is therefore {verdict.lower()}."
+                    if not body
+                    else expand_short_explanation(
+                        letter, verdict, body, statements[i], overview, subsection
+                    )
                 )
-            else:
-                out.append(expl)
+            elif body:
+                body = expand_short_explanation(
+                    letter, verdict, body, statements[i], overview, subsection
+                )
         else:
-            out.append(expl)
+            body = expand_short_explanation(
+                letter, verdict, body, statements[i], overview, subsection
+            )
+
+        if not body:
+            body = f"See the setup above to verify Statement {letter}."
+
+        out.append(
+            restructure_explanation(letter, verdict, body, statements[i])
+        )
     return out
 
 
@@ -761,45 +1125,29 @@ def finalize(tasks: list[dict], start_index: int = 1) -> list[dict]:
             "statement contains worked-solution content",
         )
         overview = clean_overview(t["solution_overview"] or "")
+        raw_stmts = [humanize_statement(s) for s in t["statements"]]
         tactical = enrich_tactical(
-            t["tactical_explanations"], overview, t["answer_key"]
+            t["tactical_explanations"],
+            overview,
+            t["answer_key"],
+            raw_stmts,
+            t["subsection"],
         )
-        # Ensure KaTeX dollars for common bare tokens in statements
+        overview = trim_solution_overview(overview, tactical, t["subsection"])
         stmts = []
-        for s in t["statements"]:
-            s2 = s
-            if "$" not in s2 and re.search(r"\bP\([^)]+\)", s2):
-                s2 = re.sub(r"\b(P\([^)]+\))", r"$\1$", s2)
-            # Wrap bare binom-like unicode leftovers already handled
+        for s in raw_stmts:
+            s2 = s.replace("$", "")
+            s2 = re.sub(r"\s+", " ", s2).strip()
             stmts.append(s2)
-        # Also wrap bare Formula lines that still lack $
-        tactical2 = []
-        for expl in tactical:
-            e = expl
-            e = re.sub(
-                r"(?m)^Formula:\s*(.+)$",
-                lambda m: f"Formula: ${m.group(1).strip()}$"
-                if "$" not in m.group(1)
-                else m.group(0),
-                e,
-            )
-            # Wrap standalone P(...)=... fragments lacking dollars
-            if "$" not in e:
-                e = re.sub(
-                    r"\b(P\([^)]+\)\s*=\s*[^\n.]+)",
-                    r"$\1$",
-                    e,
-                )
-            tactical2.append(e)
         out.append(
             {
                 "id": f"math-12-{i}",
                 "case_id": f"MATH 12.{i:02d}",
                 "title": clean_task_title(t["title"], f"Probability {i}"),
-                "context": t["context"],
+                "context": humanize_context(t["context"]),
                 "statements": stmts,
                 "answer_key": t["answer_key"],
-                "tactical_explanations": tactical2,
+                "tactical_explanations": tactical,
                 "difficulty_level": t["difficulty_level"],
                 "sort_order": i,
                 "subsection": t["subsection"],
