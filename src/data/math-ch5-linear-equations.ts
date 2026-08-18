@@ -92,27 +92,13 @@ Let $x$ = crates at the North depot, $y$ = crates at the South depot. The memo's
 
 **1. Translate: combined total.** That observation becomes:
 
-$$
-x + y = 620
-$$
+$$x + y = 620 \\tag{1}$$
 
 **2. Translate: equalizing transfer.** The transfer is first written as $x - 50 = y + 50$, which rearranges to a clean difference:
 
-$$
-x - y = 100
-$$
+$$x - y = 100 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + y = 620 \\tag{1}
-$$
-
-$$
-x - y = 100 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** This is now a standard sum-and-difference pair: $x + y = 620$ and $x - y = 100$.
 
@@ -276,27 +262,13 @@ Let $x$ = price of one notebook, $y$ = price of one pen.
 
 **1. Translate: Invoice #101.** That observation becomes:
 
-$$
-40x + 25y = 185.00
-$$
+$$40x + 25y = 185.00 \\tag{1}$$
 
 **2. Translate: Invoice #102.** That observation becomes:
 
-$$
-15x + 60y = 160.50
-$$
+$$15x + 60y = 160.50 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-40x + 25y = 185.00 \\tag{1}
-$$
-
-$$
-15x + 60y = 160.50 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Invoice #102 by 15 to simplify: $x + 4y = 10.70$, so $x = 10.70 - 4y$.
 
@@ -460,27 +432,13 @@ Let $a$ = adult ticket price, $c$ = child ticket price.
 
 **1. Translate: Saturday matinee.** That observation becomes:
 
-$$
-90a + 150c = 2130
-$$
+$$90a + 150c = 2130 \\tag{1}$$
 
 **2. Translate: Saturday evening.** That observation becomes:
 
-$$
-160a + 40c = 2200
-$$
+$$160a + 40c = 2200 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-90a + 150c = 2130 \\tag{1}
-$$
-
-$$
-160a + 40c = 2200 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide the evening equation by 40: $4a + c = 55$, so $c = 55 - 4a$.
 
@@ -610,27 +568,13 @@ Let $x$ = price of one sandwich, $y$ = price of one wrap. Before writing any equ
 
 **1. Subtract the delivery fee, then write the food-price equation.** Start from the printed total: $6x + 4y = 70.00 - 8.00 = 62.00$. The clean system equation is:
 
-$$
-6x + 4y = 62.00
-$$
+$$6x + 4y = 62.00 \\tag{1}$$
 
 **2. Subtract the delivery fee, then write the food-price equation.** Start from the printed total: $3x + 9y = 74.00 - 8.00 = 66.00$. The clean system equation is:
 
-$$
-3x + 9y = 66.00
-$$
+$$3x + 9y = 66.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-6x + 4y = 62.00 \\tag{1}
-$$
-
-$$
-3x + 9y = 66.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply the second equation by 2: $6x + 18y = 132$.
 
@@ -752,27 +696,13 @@ Let $x$ = amount placed in Account A, $y$ = amount placed in Account B.
 
 **1. Translate: total split.** That observation becomes:
 
-$$
-x + y = 10000
-$$
+$$x + y = 10000 \\tag{1}$$
 
 **2. Translate: total interest.** That observation becomes:
 
-$$
-0.04x + 0.07y = 520
-$$
+$$0.04x + 0.07y = 520 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + y = 10000 \\tag{1}
-$$
-
-$$
-0.04x + 0.07y = 520 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Solve the first equation for $x$: $x = 10000 - y$.
 
@@ -926,27 +856,13 @@ Let $x$ = price of a Standard chair, $y$ = price of a Premium chair.
 
 **1. Translate: Premium priced \\$45 above Standard.** That observation becomes:
 
-$$
-y = x + 45
-$$
+$$y = x + 45 \\tag{1}$$
 
 **2. Translate: shipment value.** That observation becomes:
 
-$$
-18x + 12y = 9660
-$$
+$$18x + 12y = 9660 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-y = x + 45 \\tag{1}
-$$
-
-$$
-18x + 12y = 9660 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Substitute directly: $18x + 12(x + 45) = 9660$.
 
@@ -1080,27 +996,13 @@ Let $f$ = fixed monthly fee, $r$ = rate charged per extra minute. The advertisem
 
 **1. Read the bill with 40 extra units.** At rate $r$, that bill is:
 
-$$
-f + 40r = 29.00
-$$
+$$f + 40r = 29.00 \\tag{1}$$
 
 **2. Read the bill with 120 extra units.** At rate $r$, that bill is:
 
-$$
-f + 120r = 53.00
-$$
+$$f + 120r = 53.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-f + 40r = 29.00 \\tag{1}
-$$
-
-$$
-f + 120r = 53.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract the first equation from the second:
 
@@ -1240,27 +1142,13 @@ Let $s$ = number of Standard ovens built, $d$ = number of Deluxe ovens built. Th
 
 **1. Translate: total ovens built.** That observation becomes:
 
-$$
-s + d = 130
-$$
+$$s + d = 130 \\tag{1}$$
 
 **2. Translate: total assembly hours.** That observation becomes:
 
-$$
-4s + 9d = 795
-$$
+$$4s + 9d = 795 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-s + d = 130 \\tag{1}
-$$
-
-$$
-4s + 9d = 795 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** From the total-ovens equation, $s = 130 - d$.
 
@@ -1388,27 +1276,13 @@ Let $x$ = price of one sofa, $y$ = price of one armchair. The gross figures cann
 
 **1. Subtract returns, then write the net-sales equation.** Start from the printed total: $14x + 22y = 9760 - 460 = 9300$. The clean system equation is:
 
-$$
-14x + 22y = 9300
-$$
+$$14x + 22y = 9300 \\tag{1}$$
 
 **2. Subtract returns, then write the net-sales equation.** Start from the printed total: $20x + 10y = 9300 - 300 = 9000$. The clean system equation is:
 
-$$
-20x + 10y = 9000
-$$
+$$20x + 10y = 9000 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-14x + 22y = 9300 \\tag{1}
-$$
-
-$$
-20x + 10y = 9000 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide the Hillcrest equation by 10: $2x + y = 900$, so $y = 900 - 2x$.
 
@@ -1566,27 +1440,13 @@ Let $f$ = PrintFast's setup fee, $r$ = PrintFast's rate per page.
 
 **1. Translate: Order #58.** That observation becomes:
 
-$$
-f + 120r = 33.00
-$$
+$$f + 120r = 33.00 \\tag{1}$$
 
 **2. Translate: Order #96.** That observation becomes:
 
-$$
-f + 300r = 69.00
-$$
+$$f + 300r = 69.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-f + 120r = 33.00 \\tag{1}
-$$
-
-$$
-f + 300r = 69.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract Order #58's equation from Order #96's:
 
@@ -1778,27 +1638,13 @@ Nothing here states the taco or burrito price directly. What is known is Ana's o
 
 **1. Record this independent observation.** In symbols:
 
-$$
-4x + 3y = 32.00
-$$
+$$4x + 3y = 32.00 \\tag{1}$$
 
 **2. Translate: Ben paid \\$5.00 more than Ana.** That comparison becomes $2x + 5y = 32.00 + 5.00 = 37.00$. The clean system equation is:
 
-$$
-2x + 5y = 37.00
-$$
+$$2x + 5y = 37.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-4x + 3y = 32.00 \\tag{1}
-$$
-
-$$
-2x + 5y = 37.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply the second equation by 2: $4x + 10y = 74.00$.
 
@@ -1961,27 +1807,13 @@ Let $x$ = paperback price, $y$ = hardcover price. Staff headcount and the loyalt
 
 **1. Record this independent observation.** In symbols:
 
-$$
-y = x + 5
-$$
+$$y = x + 5 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-400x + 220y = 8540
-$$
+$$400x + 220y = 8540 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-y = x + 5 \\tag{1}
-$$
-
-$$
-400x + 220y = 8540 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Substitute directly: $400x + 220(x + 5) = 8540$.
 
@@ -2149,27 +1981,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Read the bill with 8 extra units.** At rate $y$, that bill is:
 
-$$
-x + 8y = 62.00
-$$
+$$x + 8y = 62.00 \\tag{1}$$
 
 **2. Read the bill with 3 extra units.** At rate $y$, that bill is:
 
-$$
-x + 3y = 47.00
-$$
+$$x + 3y = 47.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 8y = 62.00 \\tag{1}
-$$
-
-$$
-x + 3y = 47.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract directly:
 
@@ -2325,27 +2143,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-10x + 4y = 2419.20 \\/ 1.08 = 2240.00
-$$
+$$10x + 4y = 2419.20 \\/ 1.08 = 2240.00 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-7x + 9y = 3099.60 \\/ 1.08 = 2870.00
-$$
+$$7x + 9y = 3099.60 \\/ 1.08 = 2870.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-10x + 4y = 2419.20 \\/ 1.08 = 2240.00 \\tag{1}
-$$
-
-$$
-7x + 9y = 3099.60 \\/ 1.08 = 2870.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** From the first equation, $5x + 2y = 1120$, so $y = \\frac{(1120 - 5x)}{2}$.
 
@@ -2512,27 +2316,13 @@ Only the observation rows that report actual measured totals enter the system; f
 
 **1. Use the January row (actual data).** Write the equation:
 
-$$
-150x + 90y = 3150
-$$
+$$150x + 90y = 3150 \\tag{1}$$
 
 **2. Use the February row (actual data).** Write the equation:
 
-$$
-130x + 140y = 3660
-$$
+$$130x + 140y = 3660 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-150x + 90y = 3150 \\tag{1}
-$$
-
-$$
-130x + 140y = 3660 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide by 30 and 10 respectively: $5x + 3y = 105$; $13x + 14y = 366$.
 
@@ -2698,27 +2488,13 @@ Time coefficients come from the story's clocks (head-starts, overtime hours, or 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-40x + 6y = 704
-$$
+$$40x + 6y = 704 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-40x + 2y = 608
-$$
+$$40x + 2y = 608 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-40x + 6y = 704 \\tag{1}
-$$
-
-$$
-40x + 2y = 608 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtracting cancels the $40x$ term:
 
@@ -2862,27 +2638,13 @@ Since the 10% penalty was applied to May's whole bill rather than as a flat add-
 
 **1. Record this independent observation.** In symbols:
 
-$$
-x + 18y = 56.10 \\/ 1.10 = 51.00
-$$
+$$x + 18y = 56.10 \\/ 1.10 = 51.00 \\tag{1}$$
 
 **2. Read the bill with 25 extra units.** At rate $y$, that bill is:
 
-$$
-x + 25y = 65.00
-$$
+$$x + 25y = 65.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 18y = 56.10 \\/ 1.10 = 51.00 \\tag{1}
-$$
-
-$$
-x + 25y = 65.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtracting cancels $x$:
 
@@ -3014,27 +2776,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-\\text{CityCab: } x_1 + 8y_1 = 14.00, x_1 + 20y_1 = 26.00
-$$
+$$\\text{CityCab: } x_1 + 8y_1 = 14.00, x_1 + 20y_1 = 26.00 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-\\text{MetroX: } x_2 + 5y_2 = 13.50, x_2 + 15y_2 = 28.50
-$$
+$$\\text{MetroX: } x_2 + 5y_2 = 13.50, x_2 + 15y_2 = 28.50 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-\\text{CityCab: } x_1 + 8y_1 = 14.00, x_1 + 20y_1 = 26.00 \\tag{1}
-$$
-
-$$
-\\text{MetroX: } x_2 + 5y_2 = 13.50, x_2 + 15y_2 = 28.50 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** For CityCab, subtracting cancels $x_1$:
 
@@ -3206,27 +2954,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-\\text{Vendor A: } 20x_A + 15y_A = 450, 25x_A + 12y_A = 441
-$$
+$$\\text{Vendor A: } 20x_A + 15y_A = 450, 25x_A + 12y_A = 441 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-\\text{Vendor B: } 20x_B + 15y_B = 460, 25x_B + 12y_B = 467
-$$
+$$\\text{Vendor B: } 20x_B + 15y_B = 460, 25x_B + 12y_B = 467 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-\\text{Vendor A: } 20x_A + 15y_A = 450, 25x_A + 12y_A = 441 \\tag{1}
-$$
-
-$$
-\\text{Vendor B: } 20x_B + 15y_B = 460, 25x_B + 12y_B = 467 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Vendor A: divide the first quote by 5 to get $4x_A + 3y_A = 90$, so $y_A = 30 - \\frac{4}{3}x_A$. Substitute into $25x_A + 12y_A = 441$:
 
@@ -3378,27 +3112,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-Stage 1: A + B = 27200, B - A = 1000
-$$
+$$Stage 1: A + B = 27200, B - A = 1000 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-Stage 2: 150x + 80y = 13100, 100x + 130y = 14100
-$$
+$$Stage 2: 150x + 80y = 13100, 100x + 130y = 14100 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-Stage 1: A + B = 27200, B - A = 1000 \\tag{1}
-$$
-
-$$
-Stage 2: 150x + 80y = 13100, 100x + 130y = 14100 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Adding the Stage 1 equations:
 
@@ -3558,27 +3278,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Translate: Maria.** That observation becomes:
 
-$$
-x + 6y = 284
-$$
+$$x + 6y = 284 \\tag{1}$$
 
 **2. Translate: Jason.** That observation becomes:
 
-$$
-x + 10y = 448
-$$
+$$x + 10y = 448 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 6y = 284 \\tag{1}
-$$
-
-$$
-x + 10y = 448 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtracting Jason minus Maria:
 
@@ -3718,27 +3424,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-4x + 3y = 169
-$$
+$$4x + 3y = 169 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-2x + 7y = 255
-$$
+$$2x + 7y = 255 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-4x + 3y = 169 \\tag{1}
-$$
-
-$$
-2x + 7y = 255 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply the first by 7 and the second by 3: $28x + 21y = 1183$; $6x + 21y = 765$.
 
@@ -3896,27 +3588,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Subtract known items, then write the remaining-price equation.** Start from the printed total: $5x + 3y = 50.00 - 3.60 - 4.40 = 42.00$. The clean system equation is:
 
-$$
-5x + 3y = 42.00
-$$
+$$5x + 3y = 42.00 \\tag{1}$$
 
 **2. Subtract known items, then write the remaining-price equation.** Start from the printed total: $2x + 5y = 43.20 - 3.60 = 39.60$. The clean system equation is:
 
-$$
-2x + 5y = 39.60
-$$
+$$2x + 5y = 39.60 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-5x + 3y = 42.00 \\tag{1}
-$$
-
-$$
-2x + 5y = 39.60 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply the first by 5 and the second by 3: $25x + 15y = 210$; $6x + 15y = 118.80$.
 
@@ -4070,27 +3748,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Read the bill with 240 extra units.** At rate $y$, that bill is:
 
-$$
-x + 240y = 83.40
-$$
+$$x + 240y = 83.40 \\tag{1}$$
 
 **2. Read the bill with 380 extra units.** At rate $y$, that bill is:
 
-$$
-x + 380y = 112.80
-$$
+$$x + 380y = 112.80 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 240y = 83.40 \\tag{1}
-$$
-
-$$
-x + 380y = 112.80 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtracting Bill 2 minus Bill 1:
 
@@ -4242,27 +3906,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-6x + 4y = 174.00
-$$
+$$6x + 4y = 174.00 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-5x + 7y = (174.00 + 46.00) \\/ 1.10 = 200.00
-$$
+$$5x + 7y = (174.00 + 46.00) \\/ 1.10 = 200.00 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-6x + 4y = 174.00 \\tag{1}
-$$
-
-$$
-5x + 7y = (174.00 + 46.00) \\/ 1.10 = 200.00 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Table 5's equation by 2: $3x + 2y = 87$.
 
@@ -4388,27 +4038,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-110x + 80y = 4470
-$$
+$$110x + 80y = 4470 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-70x + 150y = 5520
-$$
+$$70x + 150y = 5520 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-110x + 80y = 4470 \\tag{1}
-$$
-
-$$
-70x + 150y = 5520 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide by 10: $11x + 8y = 447$; $7x + 15y = 552$.
 
@@ -4542,27 +4178,13 @@ Let $x$ = price per Standard unit, $y$ = price per Premium unit. Job 1's bundles
 
 **1. Translate: Job 1, bundles expanded: 7×2, 7×5.** That observation becomes:
 
-$$
-14x + 35y = 1946
-$$
+$$14x + 35y = 1946 \\tag{1}$$
 
 **2. Translate: Job 2, as invoiced.** That observation becomes:
 
-$$
-13x + 21y = 1301
-$$
+$$13x + 21y = 1301 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-14x + 35y = 1946 \\tag{1}
-$$
-
-$$
-13x + 21y = 1301 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Job 1's equation by 7: $2x + 5y = 278$.
 
@@ -4715,27 +4337,13 @@ Before writing coefficients, every quantity is converted into one shared unit (f
 
 **1. Translate: Report 1.** That observation becomes:
 
-$$
-5x + 150y = 323
-$$
+$$5x + 150y = 323 \\tag{1}$$
 
 **2. Translate: Report 2.** That observation becomes:
 
-$$
-3x + 250y = 245
-$$
+$$3x + 250y = 245 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-5x + 150y = 323 \\tag{1}
-$$
-
-$$
-3x + 250y = 245 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Report 3 must be checked before use. Once $x = 55$ is in hand, 7 meal days alone cost $7 \\times 55 = 385$, already far above the reported $120$, so that row is set aside as an entry error. (Even before solving, any per diem in the same range as Reports 1 and 2 already overshoots $120$.)
 
@@ -4874,27 +4482,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Week 1.** That observation becomes:
 
-$$
-35x + 20y = 445
-$$
+$$35x + 20y = 445 \\tag{1}$$
 
 **2. Translate: Week 2, recovered counts.** That observation becomes:
 
-$$
-25x + 33y = 505
-$$
+$$25x + 33y = 505 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-35x + 20y = 445 \\tag{1}
-$$
-
-$$
-25x + 33y = 505 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Recover Week 2 first:
 
@@ -5049,27 +4643,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: North.** That observation becomes:
 
-$$
-85x + 70y = 4145
-$$
+$$85x + 70y = 4145 \\tag{1}$$
 
 **2. Translate: South.** That observation becomes:
 
-$$
-55x + 95y = 3875
-$$
+$$55x + 95y = 3875 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-85x + 70y = 4145 \\tag{1}
-$$
-
-$$
-55x + 95y = 3875 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** North and South are used to derive the prices, since they reconcile with each other.
 
@@ -5223,27 +4803,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-9x + 13y = 527.45
-$$
+$$9x + 13y = 527.45 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-7x + 19y = 657.35
-$$
+$$7x + 19y = 657.35 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-9x + 13y = 527.45 \\tag{1}
-$$
-
-$$
-7x + 19y = 657.35 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Invoice 1 by 19 and Invoice 2 by 13 so the $y$ terms both become $247y$:
 
@@ -5431,27 +4997,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Read the bill with 170 extra units.** At rate $y$, that bill is:
 
-$$
-x + 170y = 460.00
-$$
+$$x + 170y = 460.00 \\tag{1}$$
 
 **2. Read the bill with 305 extra units.** At rate $y$, that bill is:
 
-$$
-x + 305y = 709.75
-$$
+$$x + 305y = 709.75 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 170y = 460.00 \\tag{1}
-$$
-
-$$
-x + 305y = 709.75 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract Route 1 from Route 2 to cancel the shared dispatch fee $x$:
 
@@ -5613,27 +5165,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-7x + 9y = 78.65
-$$
+$$7x + 9y = 78.65 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-11x + 4y = 85.05
-$$
+$$11x + 4y = 85.05 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-7x + 9y = 78.65 \\tag{1}
-$$
-
-$$
-11x + 4y = 85.05 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Receipt 1 by 4 and Receipt 2 by 9 so the $y$ coefficients both become $36y$:
 
@@ -5807,27 +5345,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-14x + 11y = 297.30
-$$
+$$14x + 11y = 297.30 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-6x + 23y = 299.30
-$$
+$$6x + 23y = 299.30 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-14x + 11y = 297.30 \\tag{1}
-$$
-
-$$
-6x + 23y = 299.30 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Email 1 by 23 and Email 2 by 11 so the $y$ terms both become $253y$:
 
@@ -5991,27 +5515,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Record this independent observation.** In symbols:
 
-$$
-240x + 175y = 10029.00
-$$
+$$240x + 175y = 10029.00 \\tag{1}$$
 
 **2. Record this independent observation.** In symbols:
 
-$$
-310x + 90y = 10260.50
-$$
+$$310x + 90y = 10260.50 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-240x + 175y = 10029.00 \\tag{1}
-$$
-
-$$
-310x + 90y = 10260.50 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Q1 by 90 and Q2 by 175 so the $y$ coefficients both become $15750y$:
 
@@ -6182,27 +5692,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Invoice 1.** That observation becomes:
 
-$$
-15x + 20y = 699.00
-$$
+$$15x + 20y = 699.00 \\tag{1}$$
 
 **2. Translate: Invoice 3, independent of Invoice 1.** That observation becomes:
 
-$$
-13x + 5y = 326.45
-$$
+$$13x + 5y = 326.45 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-15x + 20y = 699.00 \\tag{1}
-$$
-
-$$
-13x + 5y = 326.45 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Check Invoice 2 against Invoice 1 first:
 
@@ -6368,27 +5864,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Monday.** That observation becomes:
 
-$$
-4x + 7y = 0.655
-$$
+$$4x + 7y = 0.655 \\tag{1}$$
 
 **2. Translate: Tuesday.** That observation becomes:
 
-$$
-9x + 3y = 0.900
-$$
+$$9x + 3y = 0.900 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-4x + 7y = 0.655 \\tag{1}
-$$
-
-$$
-9x + 3y = 0.900 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Monday by 9 and Tuesday by 4 so the $x$ coefficients both become $36x$:
 
@@ -6562,27 +6044,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Season 1.** That observation becomes:
 
-$$
-430x + 260y = 9793.50
-$$
+$$430x + 260y = 9793.50 \\tag{1}$$
 
 **2. Translate: Season 2.** That observation becomes:
 
-$$
-275x + 410y = 10747.75
-$$
+$$275x + 410y = 10747.75 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-430x + 260y = 9793.50 \\tag{1}
-$$
-
-$$
-275x + 410y = 10747.75 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Season 1 by 410 and Season 2 by 260 so the $y$ coefficients both become $106600y$:
 
@@ -6763,27 +6231,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Translate: Shipment 1, already in kg.** That observation becomes:
 
-$$
-x + 185y = 677.35
-$$
+$$x + 185y = 677.35 \\tag{1}$$
 
 **2. Translate: Shipment 2: 572 lb / 2.2 = 260 kg.** That observation becomes:
 
-$$
-x + 260y = 913.60
-$$
+$$x + 260y = 913.60 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 185y = 677.35 \\tag{1}
-$$
-
-$$
-x + 260y = 913.60 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Convert Shipment 2's weight to kilograms:
 
@@ -6971,27 +6425,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Client A.** That observation becomes:
 
-$$
-11x + 7y = 483.70
-$$
+$$11x + 7y = 483.70 \\tag{1}$$
 
 **2. Translate: Client B, as reported.** That observation becomes:
 
-$$
-22x + 14y = 952.10
-$$
+$$22x + 14y = 952.10 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-11x + 7y = 483.70 \\tag{1}
-$$
-
-$$
-22x + 14y = 952.10 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Client B's coefficients $(22, 14)$ are exactly double Client A's $(11, 7)$. Scaling Client A's equation by 2:
 
@@ -7141,27 +6581,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Fund B's balance, from the stated relationship.** That observation becomes:
 
-$$
-y = 2x + 4000
-$$
+$$y = 2x + 4000 \\tag{1}$$
 
 **2. Translate: combined annual return.** That observation becomes:
 
-$$
-0.0525x + 0.0375y = 762
-$$
+$$0.0525x + 0.0375y = 762 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-y = 2x + 4000 \\tag{1}
-$$
-
-$$
-0.0525x + 0.0375y = 762 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Substitute $y = 2x + 4000$ into the return equation:
 
@@ -7332,27 +6758,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Batch 1: 10 L split 3:2 → 6 L of A, 4 L of B.** That observation becomes:
 
-$$
-6x + 4y = 144
-$$
+$$6x + 4y = 144 \\tag{1}$$
 
 **2. Translate: Batch 2: 12 L split 5:1 → 10 L of A, 2 L of B.** That observation becomes:
 
-$$
-10x + 2y = 184
-$$
+$$10x + 2y = 184 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-6x + 4y = 144 \\tag{1}
-$$
-
-$$
-10x + 2y = 184 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide both equations by 2:
 
@@ -7512,27 +6924,13 @@ Time coefficients come from the story's clocks - head-starts, overtime hours, or
 
 **1. Translate: Employee A: 40 regular + 2.5 OT hours, each OT hour paid at x+y.** That observation becomes:
 
-$$
-42.5x + 2.5y = 765
-$$
+$$42.5x + 2.5y = 765 \\tag{1}$$
 
 **2. Translate: Employee B: 40 regular + 7 OT hours.** That observation becomes:
 
-$$
-47x + 7y = 882
-$$
+$$47x + 7y = 882 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-42.5x + 2.5y = 765 \\tag{1}
-$$
-
-$$
-47x + 7y = 882 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Employee A's equation by $2.8$ so its $y$ coefficient matches B's $7y$:
 
@@ -7689,27 +7087,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Project 1.** That observation becomes:
 
-$$
-18x + 24y = 750
-$$
+$$18x + 24y = 750 \\tag{1}$$
 
 **2. Translate: Project 3, independent of Project 1.** That observation becomes:
 
-$$
-10x + 40y = 710
-$$
+$$10x + 40y = 710 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-18x + 24y = 750 \\tag{1}
-$$
-
-$$
-10x + 40y = 710 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Check Project 2 against Project 1:
 
@@ -7879,27 +7263,13 @@ Time coefficients come from the story's clocks - head-starts, overtime hours, or
 
 **1. Translate: 250 km gap closed in 2 hrs: 2(x+y) = 250.** That observation becomes:
 
-$$
-x + y = 125
-$$
+$$x + y = 125 \\tag{1}$$
 
 **2. Translate: Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs.** That observation becomes:
 
-$$
-x + 4y = 356
-$$
+$$x + 4y = 356 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + y = 125 \\tag{1}
-$$
-
-$$
-x + 4y = 356 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract the first equation from the second:
 
@@ -8058,27 +7428,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Season 1: 240x+160y=42000, /80.** That observation becomes:
 
-$$
-3x + 2y = 525
-$$
+$$3x + 2y = 525 \\tag{1}$$
 
 **2. Translate: Season 2: 180x+260y=48300, /20.** That observation becomes:
 
-$$
-9x + 13y = 2415
-$$
+$$9x + 13y = 2415 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-3x + 2y = 525 \\tag{1}
-$$
-
-$$
-9x + 13y = 2415 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply the simplified Season 1 by 13 and Season 2 by 2 so the $y$ coefficients both become $26y$:
 
@@ -8236,27 +7592,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: five years ago, elder was 3× younger.** That observation becomes:
 
-$$
-x - 5 = 3(y - 5)
-$$
+$$x - 5 = 3(y - 5) \\tag{1}$$
 
 **2. Translate: in nine years, elder will be 2× younger.** That observation becomes:
 
-$$
-x + 9 = 2(y + 9)
-$$
+$$x + 9 = 2(y + 9) \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x - 5 = 3(y - 5) \\tag{1}
-$$
-
-$$
-x + 9 = 2(y + 9) \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Expand both age conditions:
 
@@ -8419,27 +7761,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Order 1: retail A is 1.32x, retail B is 1.18y.** That observation becomes:
 
-$$
-10.56x + 5.9y = 1052.80
-$$
+$$10.56x + 5.9y = 1052.80 \\tag{1}$$
 
 **2. Translate: Order 3, independent of Order 1.** That observation becomes:
 
-$$
-3.96x + 14.16y = 1350.60
-$$
+$$3.96x + 14.16y = 1350.60 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-10.56x + 5.9y = 1052.80 \\tag{1}
-$$
-
-$$
-3.96x + 14.16y = 1350.60 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Order 2 $(16, 10, 2105.60)$ is exactly double Order 1 $(8, 5, 1052.80)$, so it is redundant and set aside.
 
@@ -8593,27 +7921,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: Falcons.** That observation becomes:
 
-$$
-9x + 4y = 75
-$$
+$$9x + 4y = 75 \\tag{1}$$
 
 **2. Translate: Ravens: 75 - 8 = 67 total points.** That observation becomes:
 
-$$
-7x + 6y = 67
-$$
+$$7x + 6y = 67 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-9x + 4y = 75 \\tag{1}
-$$
-
-$$
-7x + 6y = 67 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply the Falcons equation by 3 and the Ravens equation by 2 so the $y$ coefficients both become $12y$:
 
@@ -8780,27 +8094,13 @@ Before writing coefficients, every quantity is converted into one shared unit (f
 
 **1. Translate: Batch 1.** That observation becomes:
 
-$$
-12x + 8y = 182.4
-$$
+$$12x + 8y = 182.4 \\tag{1}$$
 
 **2. Translate: Batch 2.** That observation becomes:
 
-$$
-5x + 15y = 209.0
-$$
+$$5x + 15y = 209.0 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-12x + 8y = 182.4 \\tag{1}
-$$
-
-$$
-5x + 15y = 209.0 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Batch 1 by 4 and Batch 2 by 5:
 
@@ -8946,27 +8246,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Translate: Client 2's total fee.** That observation becomes:
 
-$$
-600000x + y = 10800
-$$
+$$600000x + y = 10800 \\tag{1}$$
 
 **2. Translate: fee difference / AUM difference  -  retainer cancels.** That observation becomes:
 
-$$
-150000x = 2400
-$$
+$$150000x = 2400 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-600000x + y = 10800 \\tag{1}
-$$
-
-$$
-150000x = 2400 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** The fee-difference equation already isolates the rate:
 
@@ -9131,27 +8417,13 @@ Before writing coefficients, every quantity is converted into one shared unit (f
 
 **1. Translate: Batch 1.** That observation becomes:
 
-$$
-500x + 300y = 8880
-$$
+$$500x + 300y = 8880 \\tag{1}$$
 
 **2. Translate: Batch 2.** That observation becomes:
 
-$$
-200x + 700y = 12600
-$$
+$$200x + 700y = 12600 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-500x + 300y = 8880 \\tag{1}
-$$
-
-$$
-200x + 700y = 12600 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Batch 1 by 100 and Batch 2 by 100:
 
@@ -9301,27 +8573,13 @@ Waste allowances change how many units are purchased relative to usable amounts;
 
 **1. Translate: Job 1: 200×1.12=224 studs, 150×1.08=162 sheets.** That observation becomes:
 
-$$
-224x + 162y = 7164
-$$
+$$224x + 162y = 7164 \\tag{1}$$
 
 **2. Translate: Job 2: 350×1.12=392 studs, 175×1.08=189 sheets.** That observation becomes:
 
-$$
-392x + 189y = 8946
-$$
+$$392x + 189y = 8946 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-224x + 162y = 7164 \\tag{1}
-$$
-
-$$
-392x + 189y = 8946 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Job 1 by $1.75$ so its stud coefficient matches Job 2's $392x$ ($224 \\times 1.75 = 392$):
 
@@ -9496,27 +8754,13 @@ Let $x$ = the sensor's scale factor, $y$ = the sensor's offset, so that $\\mathr
 
 **1. Translate: Point 1.** That observation becomes:
 
-$$
-12.4x + y = 56.90
-$$
+$$12.4x + y = 56.90 \\tag{1}$$
 
 **2. Translate: Point 2.** That observation becomes:
 
-$$
-31.7x + y = 124.45
-$$
+$$31.7x + y = 124.45 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-12.4x + y = 56.90 \\tag{1}
-$$
-
-$$
-31.7x + y = 124.45 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract Point 1 from Point 2 to cancel the offset $y$:
 
@@ -9674,27 +8918,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Translate: Shipment 1: 520 kg split 3:2 → 312 kg Coffee, 208 kg Cocoa.** That observation becomes:
 
-$$
-312x + 208y = 2943.2
-$$
+$$312x + 208y = 2943.2 \\tag{1}$$
 
 **2. Translate: Shipment 2: 800 kg split 5:3 → 500 kg Coffee, 300 kg Cocoa.** That observation becomes:
 
-$$
-500x + 300y = 4555
-$$
+$$500x + 300y = 4555 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-312x + 208y = 2943.2 \\tag{1}
-$$
-
-$$
-500x + 300y = 4555 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Shipment 1 by 8 and Shipment 2 by 100:
 
@@ -9865,27 +9095,13 @@ Before writing coefficients, every quantity is converted into one shared unit (f
 
 **1. Translate: Route 1, distances in hundreds of km.** That observation becomes:
 
-$$
-8.5x + 6.2y = 383.6
-$$
+$$8.5x + 6.2y = 383.6 \\tag{1}$$
 
 **2. Translate: Route 2, distances in hundreds of km.** That observation becomes:
 
-$$
-5x + 9y = 322
-$$
+$$5x + 9y = 322 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-8.5x + 6.2y = 383.6 \\tag{1}
-$$
-
-$$
-5x + 9y = 322 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Multiply Route 1 by 9 and Route 2 by 6.2 so the $y$ coefficients both become $55.8y$:
 
@@ -10053,27 +9269,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: current allocation.** That observation becomes:
 
-$$
-270x + 180y = 2646
-$$
+$$270x + 180y = 2646 \\tag{1}$$
 
 **2. Translate: proposed reallocation.** That observation becomes:
 
-$$
-180x + 270y = 2754
-$$
+$$180x + 270y = 2754 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-270x + 180y = 2646 \\tag{1}
-$$
-
-$$
-180x + 270y = 2754 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Add the two allocation equations:
 
@@ -10224,27 +9426,13 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 
 **1. Translate: Auto, coverage in units of \\$1,000.** That observation becomes:
 
-$$
-x + 85y = 612.50
-$$
+$$x + 85y = 612.50 \\tag{1}$$
 
 **2. Translate: Home.** That observation becomes:
 
-$$
-x + 210y = 1197.50
-$$
+$$x + 210y = 1197.50 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + 85y = 612.50 \\tag{1}
-$$
-
-$$
-x + 210y = 1197.50 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Subtract Auto from Home to cancel the fixed fee $x$:
 
@@ -10400,27 +9588,13 @@ Each left-hand coefficient is a quantity taken straight from an observation row 
 
 **1. Translate: combined growth of 432 over 4 years, Year 2 to Year 6: 4x+4y=432.** That observation becomes:
 
-$$
-x + y = 108
-$$
+$$x + y = 108 \\tag{1}$$
 
 **2. Translate: Species A grows at twice Species B's rate.** That observation becomes:
 
-$$
-x = 2y
-$$
+$$x = 2y \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-x + y = 108 \\tag{1}
-$$
-
-$$
-x = 2y \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Substitute $x = 2y$ into $x + y = 108$:
 
@@ -10565,27 +9739,13 @@ Before writing coefficients, every quantity is converted into one shared unit (f
 
 **1. Translate: Day 1.** That observation becomes:
 
-$$
-14x + 20y = 3990
-$$
+$$14x + 20y = 3990 \\tag{1}$$
 
 **2. Translate: Day 2.** That observation becomes:
 
-$$
-22x + 9y = 4072
-$$
+$$22x + 9y = 4072 \\tag{2}$$
 
-**Part 2: The model.**
-
-$$
-14x + 20y = 3990 \\tag{1}
-$$
-
-$$
-22x + 9y = 4072 \\tag{2}
-$$
-
-**Part 3: Solve.**
+**Part 2: Solve.**
 
 **1.** Divide Day 1 by 2:
 
