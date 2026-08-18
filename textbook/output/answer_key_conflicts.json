@@ -1,0 +1,9 @@
+[
+  {
+    "id": "math-12-91",
+    "source": "conditional PDF Q20 (A manufacturing plant runs three shifts each day)",
+    "letter": "B",
+    "issue": "PDF writeup contains '2.5%, which is not greater than 1.7' — units are inconsistent, so the comparison does not hold as written.",
+    "action": "Did not overwrite stored correct_answer or stem. Needs a manual check of the PDF answer key versus the source numbers."
+  }
+]

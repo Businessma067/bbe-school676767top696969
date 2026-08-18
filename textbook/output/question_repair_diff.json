@@ -1,0 +1,18 @@
+{
+  "audited": 2877,
+  "remaining_check_failures": 0,
+  "supabase": false,
+  "note": "Full before/after for review is in the canvas. This file replaces an earlier draft that included false answer-key conflicts (negated comparisons on False letters) and a bad economics rewrite that duplicated method paragraphs. Those were reverted; economics now keeps application text and only uniquifies False mistake sentences.",
+  "regenerated": {
+    "economics_false_mistakes": "in-question uniqueness gate; application paragraphs preserved",
+    "math_12": "rebuilt from PDF extracts via explanation_builder",
+    "math_13": ["math-13-28", "math-13-33"]
+  },
+  "answer_key_conflicts_held_back": [
+    {
+      "id": "math-12-91",
+      "letter": "B",
+      "issue": "PDF writeup '2.5%, which is not greater than 1.7' has mismatched units. Stored key not overwritten."
+    }
+  ]
+}

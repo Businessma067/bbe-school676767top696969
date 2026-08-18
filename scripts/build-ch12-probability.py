@@ -1055,6 +1055,7 @@ def enrich_tactical(
     subsection: str,
 ) -> list[str]:
     """Expand thin explanations without overwriting valid short derivations."""
+    used: set[str] = set()
     out = []
     for i, expl in enumerate(tactical):
         letter = LETTERS[i]
@@ -1085,9 +1086,13 @@ def enrich_tactical(
             body = f"See the setup above to verify Statement {letter}."
 
         out.append(
-            restructure_explanation(letter, verdict, body, statements[i])
+            format_math_explanation(
+                letter, verdict.lower() == "true", body, statements[i], used
+            )
         )
-    return out
+    from explanation_builder import seal_question_explanations
+
+    return seal_question_explanations(out, statements, answer_key)
 
 
 def finalize(tasks: list[dict], start_index: int = 1) -> list[dict]:
@@ -1114,6 +1119,26 @@ def finalize(tasks: list[dict], start_index: int = 1) -> list[dict]:
             overview, t["tactical_explanations"], t["subsection"]
         )
         t = polish_task(t)
+        from explanation_builder import expand_flat_c, seal_question_explanations
+
+        if t.get("_venn_locked"):
+            used: set[str] = set()
+            t["tactical_explanations"] = [
+                format_math_explanation(
+                    LETTERS[j],
+                    bool(t["answer_key"][j]),
+                    t["tactical_explanations"][j],
+                    t["statements"][j],
+                    used,
+                    preserve_prose=True,
+                )
+                for j in range(5)
+            ]
+            t["tactical_explanations"] = seal_question_explanations(
+                t["tactical_explanations"], t["statements"], t["answer_key"]
+            )
+        t["solution_overview"] = expand_flat_c(t.get("solution_overview") or "")
+        t["tactical_explanations"] = [expand_flat_c(e) for e in t["tactical_explanations"]]
         overview = t.get("solution_overview") or ""
         stmts = t["statements"]
         payload = {

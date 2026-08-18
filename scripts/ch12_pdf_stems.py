@@ -582,8 +582,14 @@ def explanation_arithmetic_flags(label: str, expls: list[str]) -> list[str]:
     return flags
 
 
-def format_pdf_explanation(letter: str, is_true: bool, body: str, statement: str = "") -> str:
-    return format_math_explanation(letter, is_true, body, statement)
+def format_pdf_explanation(
+    letter: str,
+    is_true: bool,
+    body: str,
+    statement: str = "",
+    used_mistakes: set[str] | None = None,
+) -> str:
+    return format_math_explanation(letter, is_true, body, statement, used_mistakes)
 
 
 def find_pdf_answer_block(text: str, qnum: int) -> str | None:
@@ -663,16 +669,24 @@ def overlay_pdf_explanations(
             mismatches.append(
                 f"{label} Q{i} ({task.get('title','')}): stored {stored} vs PDF {pdf['verdicts']}"
             )
+        used: set[str] = set()
         stmts = task.get("statements") or []
+        stored = task.get("answer_key") or []
         task["tactical_explanations"] = [
             format_pdf_explanation(
                 L,
                 stored[j] if stored else pdf["verdicts"][j],
                 pdf["bodies"][j],
                 stmts[j] if j < len(stmts) else "",
+                used,
             )
             for j, L in enumerate(LETTERS)
         ]
+        from explanation_builder import seal_question_explanations
+
+        task["tactical_explanations"] = seal_question_explanations(
+            task["tactical_explanations"], stmts, stored
+        )
         mismatches.extend(
             explanation_arithmetic_flags(
                 f"{label} Q{i} ({task.get('title','')})",
