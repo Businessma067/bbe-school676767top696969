@@ -9,7 +9,7 @@ import type { MathTask } from "@/data/math-chapters";
 
 export const MATH_CH4_SUBSECTIONS = [
   { id: "4.1", title: "Linear equations in one unknown" },
-  // 4.2 Quadratic equations
+  { id: "4.2", title: "Quadratic equations" },
   // 4.3 Rational, radical and absolute-value equations
   // 4.4 Exponential and logarithmic equations
   // 4.5 Applied word problems and mixed exam sets
@@ -1426,4 +1426,1337 @@ days. B still needs $10.5$ days, so the statement is True.`,
     sort_order: 28,
     solution_overview: `Five independent exam-style claims at the ceiling of this subsection: a rectangle whose length is twice the width plus $4$, a start time that is not a whole number of minutes, a dilution to $10\\%$, an $80\\%$ prize chain whose second place is not the obvious round number, and leftover work after a three-day joint spell.`,
   },
+  {
+    id: `math-4-29`,
+    case_id: `MATH 4.29`,
+    title: `A square of area $49$, and both signs of a square root`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A square has area $49$ cm$^{2}$. Then each side is $7$ cm.`,
+      `A number times itself equals $16$. The only real number that works is $4$.`,
+      `A number times itself equals $36$. One number that works is $-6$.`,
+      `If a square of side $x$ cm has area $9$ cm$^{2}$, then $x = 3$ is the only real possibility.`,
+      `$5^{2} - 4^{2}$ equals $9$.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The area of a square is the side times itself. If the side is $s$ cm, then
+
+$$s^{2} = 49$$
+
+A length is positive, so $s = 7$, not $-7$. Check: $7 \\cdot 7 = 49$. Each side is $7$ cm, so the statement is True.`,
+      `**B.** → False
+
+$$x^{2} = 16$$
+
+splits into two real numbers, because $(-4)^{2} = 16$ as well as $4^{2} = 16$. The claim says $4$ is the only real number that works. There are two: $4$ and $-4$. The statement is False.`,
+      `**C.** → True
+
+$$x^{2} = 36$$
+
+has solutions $x = 6$ and $x = -6$. The claim only asks whether $-6$ is one of them. It is, because $(-6)\\cdot(-6) = 36$. The statement is True.`,
+      `**D.** → False
+
+A geometric side must be positive, so $x = 3$ is the side of that square. But the equation $x^{2} = 9$ as a number sentence also has $x = -3$. The claim says $x = 3$ is the only real possibility for that equation. As an equation it is not; as a length it is. The statement is about the equation of area written with $x$, and it rules out $-3$ without saying "side length". The only-real-possibility wording is therefore false for $x^{2} = 9$. The statement is False.`,
+      `**E.** → True
+
+$$5^{2} - 4^{2} = 25 - 16 = 9$$
+
+The difference of those squares is $9$, so the statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 29,
+    solution_overview: `Five independent claims about squares. $x^{2} = a$ with $a > 0$ has two real roots, $\\pm\\sqrt{a}$. A geometric side is the positive one. Keep those two readings separate.`,
+  },
+  {
+    id: `math-4-30`,
+    case_id: `MATH 4.30`,
+    title: `When a product is zero, a factor is zero`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The solutions of $(x - 2)(x - 5) = 0$ are $x = 2$ and $x = 5$.`,
+      `The equation $x^{2} - 5x + 6 = 0$ has solutions $2$ and $3$.`,
+      `The equation $x^{2} - 5x + 6 = 0$ has solutions $1$ and $6$.`,
+      `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
+      `The equation $x^{2} = 5x$ has only the solution $x = 5$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+A product is zero only when at least one factor is zero.
+
+$$x - 2 = 0 \\quad \\text{or} \\quad x - 5 = 0$$
+
+so $x = 2$ or $x = 5$. Both check in the original product. The statement is True.`,
+      `**B.** → True
+
+Factor the left side.
+
+$$x^{2} - 5x + 6 = (x - 2)(x - 3)$$
+
+The roots are $2$ and $3$. Check: $2 + 3 = 5$ and $2 \\cdot 3 = 6$, which match the coefficients. The statement is True.`,
+      `**C.** → False
+
+$1$ and $6$ add to $7$ and multiply to $6$. The equation needs sum $5$ and product $6$. Those are $2$ and $3$, not $1$ and $6$. Plugging $x = 1$ gives $1 - 5 + 6 = 2$, not $0$. The statement is False.`,
+      `**D.** → True
+
+That is the zero-product property: $ab = 0$ if and only if $a = 0$ or $b = 0$ (or both). It is why factoring solves a quadratic. The statement is True.`,
+      `**E.** → False
+
+Bring every term to one side before dividing. Dividing by $x$ would throw away the root $x = 0$.
+
+$$x^{2} - 5x = 0$$
+
+$$x(x - 5) = 0$$
+
+so $x = 0$ or $x = 5$. The claim keeps only $5$. The statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 30,
+    solution_overview: `Five independent claims about factoring. Move everything to one side, factor, then set each factor to zero. Do not divide away a possible $x = 0$.`,
+  },
+  {
+    id: `math-4-31`,
+    case_id: `MATH 4.31`,
+    title: `Consecutive integers whose product is $12$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A square has area $64$ m$^{2}$. Then its side is $8$ m.`,
+      `Two consecutive integers multiply to $12$. The positive pair is $3$ and $4$.`,
+      `Two consecutive integers multiply to $12$. The pair is $2$ and $6$.`,
+      `A rectangle is $1$ cm longer than it is wide and has area $12$ cm$^{2}$. Then the width is $3$ cm.`,
+      `That same rectangle has longer side $5$ cm.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$s^{2} = 64 \\Rightarrow s = 8$$
+
+because a length is positive. Check: $8 \\cdot 8 = 64$. The statement is True.`,
+      `**B.** → True
+
+Let the smaller integer be $n$. Then
+
+$$n(n + 1) = 12$$
+
+$$n^{2} + n - 12 = 0$$
+
+$$(n + 4)(n - 3) = 0$$
+
+so $n = 3$ or $n = -4$. The positive pair is $3$ and $4$, and $3 \\cdot 4 = 12$. The statement is True.`,
+      `**C.** → False
+
+$2$ and $6$ are not consecutive, and $2 \\cdot 6 = 12$ is a different split. Consecutive integers differ by $1$. The statement is False.`,
+      `**D.** → True
+
+Let the width be $x$ cm. Then the length is $x + 1$, and the area is $12$.
+
+$$x(x + 1) = 12$$
+
+$$x^{2} + x - 12 = 0$$
+
+$$(x + 4)(x - 3) = 0$$
+
+The positive width is $x = 3$. Then the length is $4$, and $3 \\cdot 4 = 12$. The statement is True.`,
+      `**E.** → False
+
+The longer side is $3 + 1 = 4$ cm, not $5$. Five would need area $3 \\cdot 5 = 15$, not $12$. The statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 31,
+    solution_overview: `Five independent square and consecutive-integer stories. A product of consecutive integers is $n(n + 1)$, which is a quadratic. Keep the positive root when the unknown is a length.`,
+  },
+  {
+    id: `math-4-32`,
+    case_id: `MATH 4.32`,
+    title: `A repeated root and a discriminant of zero`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The equation $x^{2} - 4x = 0$ means $x$ is $0$ or $4$.`,
+      `A number squared, minus four times the number, is zero. Zero itself is allowed.`,
+      `The discriminant of $x^{2} - 4x + 4$ is $4$.`,
+      `The equation $x^{2} - 4x + 4 = 0$ has two distinct real roots.`,
+      `The equation $(x - 2)^{2} = 0$ has solution $x = 2$.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$$x(x - 4) = 0$$
+
+so $x = 0$ or $x = 4$. Both satisfy the original. The statement is True.`,
+      `**B.** → True
+
+That is the same equation. $x = 0$ gives $0 - 0 = 0$. Zero is a genuine solution, not a discarded extra. The statement is True.`,
+      `**C.** → False
+
+The discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$.
+
+$$\\Delta = (-4)^{2} - 4\\cdot 1\\cdot 4 = 16 - 16 = 0$$
+
+The claim says $4$. The discriminant is $0$, so the statement is False.`,
+      `**D.** → False
+
+$\\Delta = 0$ means a repeated real root, not two distinct ones. The root is $x = 2$, twice. $(x - 2)^{2} = 0$ makes that visible. The statement is False.`,
+      `**E.** → True
+
+A square is zero only at zero, so $x - 2 = 0$ and $x = 2$. Check: $(2 - 2)^{2} = 0$. The statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 32,
+    solution_overview: `Five independent claims about $x^{2} - 4x$ and the perfect square $x^{2} - 4x + 4$. Discriminant zero means one repeated real root, not two different ones.`,
+  },
+  {
+    id: `math-4-33`,
+    case_id: `MATH 4.33`,
+    title: `Sum and product of the roots $2$ and $5$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `For $x^{2} - 7x + 10 = 0$, the sum of the roots is $7$.`,
+      `For that same equation, the product of the roots is $10$.`,
+      `The roots are $2$ and $5$.`,
+      `The larger root is $6$.`,
+      `Both roots are greater than $4$.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Vieta's formulas for $x^{2} + px + q = 0$ written as $x^{2} - (\\text{sum})x + (\\text{product}) = 0$ give sum $7$ here. You can also add the roots once you have them: $2 + 5 = 7$. The statement is True.`,
+      `**B.** → True
+
+The constant term of a monic quadratic is the product of the roots: $2 \\cdot 5 = 10$. The statement is True.`,
+      `**C.** → True
+
+Factor: $(x - 2)(x - 5) = x^{2} - 7x + 10$. The roots are $2$ and $5$. The statement is True.`,
+      `**D.** → False
+
+The larger root is $5$, not $6$. Six would belong to a sum of $8$ with the other root $2$. The statement is False.`,
+      `**E.** → False
+
+$5 > 4$, but $2$ is not greater than $4$. Both roots positive is true; both greater than $4$ is not. The statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 33,
+    solution_overview: `Five independent claims about $x^{2} - 7x + 10 = 0$. For $x^{2} - Sx + P = 0$ the sum of roots is $S$ and the product is $P$. The roots here are $2$ and $5$.`,
+  },
+  {
+    id: `math-4-34`,
+    case_id: `MATH 4.34`,
+    title: `A quadratic with roots $2$ and $-3$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The equation $x^{2} + x - 6 = 0$ has a positive root $2$.`,
+      `The negative root of that equation is $-2$.`,
+      `The discriminant of $x^{2} + x - 6$ is $25$.`,
+      `That equation has two distinct real solutions.`,
+      `That equation has no real solution.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$x^{2} + x - 6 = (x + 3)(x - 2)$$
+
+The roots are $-3$ and $2$. One of them is the positive number $2$. Check: $4 + 2 - 6 = 0$. The statement is True.`,
+      `**B.** → False
+
+The negative root is $-3$, not $-2$. Check of $-2$: $4 - 2 - 6 = -4$, not $0$. The statement is False.`,
+      `**C.** → True
+
+$$\\Delta = 1^{2} - 4(1)(-6) = 1 + 24 = 25$$
+
+The discriminant is $25$, so the statement is True.`,
+      `**D.** → True
+
+$\\Delta = 25 > 0$, so there are two distinct real roots. They are $2$ and $-3$. The statement is True.`,
+      `**E.** → False
+
+No real solution would need $\\Delta < 0$. Here $\\Delta = 25$, and two real roots were already found. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 34,
+    solution_overview: `Five independent claims about $x^{2} + x - 6 = 0$. Factor as $(x + 3)(x - 2)$, or read the discriminant $25$ to know there are two distinct real roots.`,
+  },
+  {
+    id: `math-4-35`,
+    case_id: `MATH 4.35`,
+    title: `A rectangle $2$ cm longer than it is wide, area $48$`,
+    subsection: `4.2`,
+    context: `A rectangle is $2$ cm longer than it is wide, and its area is $48$ cm$^{2}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The longer side is $8$ cm.`,
+      `The shorter side is $6$ cm.`,
+      `The perimeter is $28$ cm.`,
+      `If the longer side were $10$ cm with the same shorter side, the area would still be $48$ cm$^{2}$.`,
+      `The two sides differ by $2$ cm.`,
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $x$ cm. Then the length is $x + 2$, and the area is $48$.
+
+$$x(x + 2) = 48$$
+
+$$x^{2} + 2x - 48 = 0$$
+
+$$(x + 8)(x - 6) = 0$$
+
+The positive width is $6$, so the longer side is $8$ cm. Check: $6 \\cdot 8 = 48$. The statement is True.`,
+      `**B.** → True
+
+The positive root of that quadratic is $x = 6$. The shorter side is $6$ cm, so the statement is True.`,
+      `**C.** → True
+
+$$P = 2(6 + 8) = 28$$
+
+The perimeter is $28$ cm, so the statement is True.`,
+      `**D.** → False
+
+Keeping width $6$ and stretching the length to $10$ gives area $60$, not $48$. The statement is False.`,
+      `**E.** → True
+
+That is the opening relation: length is $2$ cm more than width, so the sides differ by $2$ cm. The statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 35,
+    solution_overview: `One rectangle, five checks. Width $x$, length $x + 2$, area $48$ gives $x^{2} + 2x - 48 = 0$. The positive solution is $x = 6$, so the sides are $6$ cm and $8$ cm.`,
+  },
+  {
+    id: `math-4-36`,
+    case_id: `MATH 4.36`,
+    title: `Two consecutive integers whose product is $56$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Two consecutive integers multiply to $56$. The smaller positive one is $7$.`,
+      `The larger of that positive pair is $8$.`,
+      `There is also a negative pair, $-8$ and $-7$.`,
+      `The integers $6$ and $9$ also multiply to $56$.`,
+      `The positive pair adds to $16$.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$n(n + 1) = 56$$
+
+$$n^{2} + n - 56 = 0$$
+
+$$(n + 8)(n - 7) = 0$$
+
+The positive smaller integer is $7$, and $7 \\cdot 8 = 56$. The statement is True.`,
+      `**B.** → True
+
+The next integer after $7$ is $8$. The statement is True.`,
+      `**C.** → True
+
+The other root is $n = -8$, so the pair is $-8$ and $-7$, and $(-8)\\cdot(-7) = 56$. The statement is True.`,
+      `**D.** → False
+
+$6 \\cdot 9 = 54$, not $56$, and those two are not consecutive. The statement is False.`,
+      `**E.** → False
+
+$7 + 8 = 15$, not $16$. Sixteen would be $7 + 9$. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 36,
+    solution_overview: `Five independent claims about $n(n + 1) = 56$. The integer solutions for $n$ are $7$ and $-8$, giving the pairs $7, 8$ and $-8, -7$.`,
+  },
+  {
+    id: `math-4-37`,
+    case_id: `MATH 4.37`,
+    title: `A $5$ by $12$ rectangle from area $60$`,
+    subsection: `4.2`,
+    context: `A rectangle has area $60$ cm$^{2}$, and its length is $7$ cm more than its width. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The width is $5$ cm.`,
+      `The length is $12$ cm.`,
+      `The perimeter is $40$ cm.`,
+      `The diagonal is $13$ cm.`,
+      `The width is $6$ cm.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $w$ cm. Then the length is $w + 7$.
+
+$$w(w + 7) = 60$$
+
+$$w^{2} + 7w - 60 = 0$$
+
+$$\\Delta = 49 + 240 = 289 = 17^{2}$$
+
+$$w = \\frac{-7 \\pm 17}{2}$$
+
+The positive value is $w = 5$. Check: $5 \\cdot 12 = 60$. The statement is True.`,
+      `**B.** → True
+
+Length $5 + 7 = 12$ cm. The statement is True.`,
+      `**C.** → False
+
+$$P = 2(5 + 12) = 34$$
+
+The claim says $40$ cm. Forty would be $2(6 + 14)$ or a $10$ by $10$ square. The perimeter is $34$ cm, so the statement is False.`,
+      `**D.** → True
+
+$$d^{2} = 5^{2} + 12^{2} = 25 + 144 = 169$$
+
+so $d = 13$. This is the $5$-$12$-$13$ triple. The statement is True.`,
+      `**E.** → False
+
+Width $6$ would give length $13$ and area $78$, not $60$. The recovered width is $5$ cm. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 37,
+    solution_overview: `One rectangle: area $60$, length $7$ more than width. The quadratic $w^{2} + 7w - 60 = 0$ has positive root $5$, so the sides are $5$ cm and $12$ cm, a $5$-$12$-$13$ right triangle on the diagonal.`,
+  },
+  {
+    id: `math-4-38`,
+    case_id: `MATH 4.38`,
+    title: `A $3$-$4$-$5$ triangle from Pythagoras`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The positive root of $x^{2} - 2x - 15 = 0$ is $5$.`,
+      `A right triangle has legs $x$ cm and $x + 1$ cm and hypotenuse $5$ cm. Then the shorter leg is $3$ cm.`,
+      `That triangle is equilateral.`,
+      `The area of that triangle is $12$ cm$^{2}$.`,
+      `The longer leg is $4$ cm.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$$x^{2} - 2x - 15 = (x - 5)(x + 3)$$
+
+The roots are $5$ and $-3$. The positive one is $5$. The statement is True.`,
+      `**B.** → True
+
+Pythagoras gives
+
+$$x^{2} + (x + 1)^{2} = 25$$
+
+$$2x^{2} + 2x + 1 = 25$$
+
+$$x^{2} + x - 12 = 0$$
+
+$$(x + 4)(x - 3) = 0$$
+
+The positive leg is $x = 3$. The other leg is $4$, and $3^{2} + 4^{2} = 25$. The statement is True.`,
+      `**C.** → False
+
+The sides are $3$, $4$, and $5$, three different lengths. An equilateral triangle would need all three equal. The statement is False.`,
+      `**D.** → False
+
+Area is half the product of the legs:
+
+$$\\frac{1}{2} \\cdot 3 \\cdot 4 = 6$$
+
+The claim says $12$, which is the product without the half. The statement is False.`,
+      `**E.** → True
+
+The legs are $3$ and $4$, so the longer leg is $4$ cm. The statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 38,
+    solution_overview: `Five independent claims. One is a factored quadratic. The others turn Pythagoras $x^{2} + (x + 1)^{2} = 25$ into $x^{2} + x - 12 = 0$, giving the $3$-$4$-$5$ triangle.`,
+  },
+  {
+    id: `math-4-39`,
+    case_id: `MATH 4.39`,
+    title: `Three quadratics that differ only in the constant`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The equation $x^{2} + 4x + 5 = 0$ has two distinct real roots.`,
+      `The equation $x^{2} + 4x + 4 = 0$ has exactly one real solution (a double root).`,
+      `The equation $x^{2} + 4x + 3 = 0$ has two distinct real roots.`,
+      `Those two roots of $x^{2} + 4x + 3 = 0$ are $-1$ and $-3$.`,
+      `All three equations have the same number of distinct real roots.`,
+    ],
+    answer_key: [false, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → False
+
+$$\\Delta = 16 - 20 = -4 < 0$$
+
+No real roots. Completing the square gives $(x + 2)^{2} + 1 = 0$, a square plus one, which cannot be zero. The statement is False.`,
+      `**B.** → True
+
+$$\\Delta = 16 - 16 = 0$$
+
+and $x^{2} + 4x + 4 = (x + 2)^{2}$, so $x = -2$ is a double root. Exactly one real solution. The statement is True.`,
+      `**C.** → True
+
+$$\\Delta = 16 - 12 = 4 > 0$$
+
+Two distinct real roots. The statement is True.`,
+      `**D.** → True
+
+$(x + 1)(x + 3) = x^{2} + 4x + 3$. The roots are $-1$ and $-3$. The statement is True.`,
+      `**E.** → False
+
+The three discriminants are negative, zero, and positive, so the counts are $0$, $1$, and $2$ distinct real roots. They are not the same. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 39,
+    solution_overview: `Five independent discriminant claims for $x^{2} + 4x + c$ with $c = 5, 4, 3$. The sign of $\\Delta = 16 - 4c$ decides whether there are two, one, or no real roots.`,
+  },
+  {
+    id: `math-4-40`,
+    case_id: `MATH 4.40`,
+    title: `Two numbers that add to $10$ and multiply to $21$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Two numbers add to $10$ and multiply to $21$. They are $3$ and $7$.`,
+      `Those two numbers are the roots of $t^{2} - 10t + 24 = 0$.`,
+      `Both numbers are larger than $4$.`,
+      `Their difference is $4$.`,
+      `Each of them is positive.`,
+    ],
+    answer_key: [true, false, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$3 + 7 = 10$ and $3 \\cdot 7 = 21$. They are the two numbers. The statement is True.`,
+      `**B.** → False
+
+Numbers that add to $10$ and multiply to $21$ are the roots of $t^{2} - 10t + 21 = 0$, because
+
+$$(t - 3)(t - 7) = t^{2} - 10t + 21.$$
+
+The claimed equation is $t^{2} - 10t + 24 = 0$, whose constant term is $24$, not $21$. That one factors as $(t - 4)(t - 6)$, so its roots are $4$ and $6$. Those add to $10$ as well, but they multiply to $24$. The statement is False.`,
+      `**C.** → False
+
+$7 > 4$, but $3$ is not larger than $4$. Both numbers larger than $4$ would need a product larger than $16$ with sum $10$ in a different pair, such as $4$ and $6$. The statement is False.`,
+      `**D.** → True
+
+$$7 - 3 = 4$$
+
+The two numbers differ by $4$. The statement is True.`,
+      `**E.** → True
+
+Both $3$ and $7$ are positive. Their product $21$ is positive and their sum $10$ is positive, which already forces both signs to be plus. The statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 40,
+    solution_overview: `Five independent claims about two numbers with sum $10$ and product $21$. They are the roots of $t^{2} - (\\text{sum})t + (\\text{product}) = 0$, here $t^{2} - 10t + 21 = 0$, so the pair is $3$ and $7$.`,
+  },
+  {
+    id: `math-4-41`,
+    case_id: `MATH 4.41`,
+    title: `Completing the square for $x^{2} - 6x + 5$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Completing the square turns $x^{2} - 6x + 5 = 0$ into $(x - 3)^{2} = 4$.`,
+      `The two real roots of that equation are $1$ and $5$.`,
+      `Both roots are larger than $2$.`,
+      `The axis of symmetry of $y = x^{2} - 6x + 5$ is the line $x = 3$.`,
+      `The sum of the two roots is $8$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Move the constant, then add the square of half the middle coefficient, which is $3$.
+
+$$x^{2} - 6x = -5$$
+
+$$x^{2} - 6x + 9 = 4$$
+
+$$(x - 3)^{2} = 4$$
+
+Half of $6$ is $3$, and $3^{2} = 9$ is what completes the square. The statement is True.`,
+      `**B.** → True
+
+A square equals $4$ when the inside is $2$ or $-2$.
+
+$$x - 3 = 2 \\quad \\text{or} \\quad x - 3 = -2$$
+
+so $x = 5$ or $x = 1$. Check: $1 - 6 + 5 = 0$ and $25 - 30 + 5 = 0$. The statement is True.`,
+      `**C.** → False
+
+$5 > 2$, but $1$ is not larger than $2$. Both roots larger than $2$ would need the smaller one past $2$, which would shift the constant term. The statement is False.`,
+      `**D.** → True
+
+The completed square is centred at $x = 3$, which is also $-\\frac{b}{2a} = \\frac{6}{2} = 3$. That vertical line is the axis of symmetry. The statement is True.`,
+      `**E.** → False
+
+Vieta's formula for $x^{2} - 6x + 5 = 0$ says the sum of the roots is $6$, and $1 + 5 = 6$. The claim says $8$. Eight would belong to $x^{2} - 8x + 5 = 0$. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 41,
+    solution_overview: `Five independent claims about completing the square on $x^{2} - 6x + 5 = 0$. Adding $9$ produces $(x - 3)^{2} = 4$, so the roots are $1$ and $5$, with axis $x = 3$ and sum $6$.`,
+  },
+  {
+    id: `math-4-42`,
+    case_id: `MATH 4.42`,
+    title: `A $30$ by $20$ picture in a uniform frame`,
+    subsection: `4.2`,
+    context: `A rectangular picture measures $30$ cm by $20$ cm. It is surrounded by a uniform wooden frame $2$ cm wide. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The outer rectangle is $34$ cm by $24$ cm.`,
+      `The area of that outer rectangle is $816$ cm$^{2}$.`,
+      `The wooden frame itself has area $216$ cm$^{2}$.`,
+      `If the frame were $3$ cm wide instead, the outer area would be $900$ cm$^{2}$.`,
+      `A $3$ cm frame around the same picture would have area $300$ cm$^{2}$.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The frame adds $2$ cm on every side, so $4$ cm in each direction.
+
+$$30 + 4 = 34, \\qquad 20 + 4 = 24$$
+
+The outer rectangle is $34$ cm by $24$ cm. The statement is True.`,
+      `**B.** → True
+
+$$34 \\cdot 24 = 816$$
+
+That is the outer area in square centimetres. The statement is True.`,
+      `**C.** → True
+
+The picture itself is $30 \\cdot 20 = 600$ cm$^{2}$. The wood is the outer area minus the picture.
+
+$$816 - 600 = 216$$
+
+The frame has area $216$ cm$^{2}$. The statement is True.`,
+      `**D.** → False
+
+A $3$ cm frame adds $6$ cm in each direction, so the outer size is $36$ cm by $26$ cm.
+
+$$36 \\cdot 26 = 936$$
+
+The claim says $900$. Nine hundred would be $30 \\cdot 30$, a square that this frame is not. The outer area is $936$ cm$^{2}$, so the statement is False.`,
+      `**E.** → False
+
+A $3$ cm frame around the same $30$ by $20$ picture has outer area $36 \\cdot 26 = 936$, so the wood is $936 - 600 = 336$ cm$^{2}$, not $300$. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 42,
+    solution_overview: `One framed picture, five checks. A uniform frame of width $w$ around a $30$ by $20$ rectangle has outer sides $30 + 2w$ and $20 + 2w$. For $w = 2$ the outer rectangle is $34$ by $24$. The wood is outer area minus $600$.`,
+  },
+  {
+    id: `math-4-43`,
+    case_id: `MATH 4.43`,
+    title: `Consecutive even integers whose product is $168$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Two consecutive even positive integers multiply to $168$. They are $12$ and $14$.`,
+      `There is also a negative pair, $-14$ and $-12$.`,
+      `If $n$ is the smaller of two consecutive even integers with product $168$, then $n = 12$ or $n = -14$.`,
+      `The integers $10$ and $16$ also multiply to $168$.`,
+      `The equation $n(n + 2) = 168$ has four distinct integer solutions.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Consecutive even integers differ by $2$. Let the smaller be $n$.
+
+$$n(n + 2) = 168$$
+
+$$n^{2} + 2n - 168 = 0$$
+
+$$\\Delta = 4 + 672 = 676 = 26^{2}$$
+
+$$n = \\frac{-2 \\pm 26}{2}$$
+
+The positive root is $n = 12$, so the pair is $12$ and $14$. Check: $12 \\cdot 14 = 168$. The statement is True.`,
+      `**B.** → True
+
+The other root is $n = -14$, so the pair is $-14$ and $-12$, and $(-14)\\cdot(-12) = 168$. The statement is True.`,
+      `**C.** → True
+
+Those are exactly the two roots of the quadratic. Each names the smaller member of one pair. The statement is True.`,
+      `**D.** → False
+
+$10 \\cdot 16 = 160$, not $168$, and those two differ by $6$, so they are not consecutive even integers. The statement is False.`,
+      `**E.** → False
+
+The quadratic $n^{2} + 2n - 168 = 0$ has two real roots, both integers: $12$ and $-14$. Two solutions for $n$, not four. Four would count the four numbers that appear in the two pairs, but those are not four solutions of one equation in $n$. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 43,
+    solution_overview: `Five independent claims about consecutive even integers with product $168$. The model is $n(n + 2) = 168$. The integer solutions for the smaller one are $n = 12$ and $n = -14$.`,
+  },
+  {
+    id: `math-4-44`,
+    case_id: `MATH 4.44`,
+    title: `A rectangle $50\\%$ longer than it is wide, area $54$`,
+    subsection: `4.2`,
+    context: `A rectangle has area $54$ cm$^{2}$, and its length is $50\\%$ more than its width. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The width is $6$ cm.`,
+      `The length is $9$ cm.`,
+      `The perimeter is $36$ cm.`,
+      `The width is $9$ cm.`,
+      `The length is one and a half times the width.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $w$ cm. Then the length is $\\frac{3}{2}w$, and the area is $54$.
+
+$$w \\cdot \\frac{3}{2}w = 54$$
+
+$$\\frac{3}{2}w^{2} = 54$$
+
+$$w^{2} = 36$$
+
+A length is positive, so $w = 6$. Check: $6 \\cdot 9 = 54$. The statement is True.`,
+      `**B.** → True
+
+Length $\\frac{3}{2}\\cdot 6 = 9$ cm. The statement is True.`,
+      `**C.** → False
+
+$$P = 2(6 + 9) = 30$$
+
+The claim says $36$ cm. Thirty-six would be $2(6 + 12)$ or a $9$ by $9$ square. The perimeter is $30$ cm, so the statement is False.`,
+      `**D.** → False
+
+Width $9$ would force length $\\frac{3}{2}\\cdot 9 = 13.5$ and area $121.5$, not $54$. The recovered width is $6$ cm. The statement is False.`,
+      `**E.** → True
+
+That is the opening relation: $50\\%$ more means the length is $\\frac{3}{2}$ of the width, and $9 = \\frac{3}{2}\\cdot 6$. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 44,
+    solution_overview: `One rectangle, five checks. Length $\\frac{3}{2}$ of the width and area $54$ give $\\frac{3}{2}w^{2} = 54$, so $w = 6$ and the length is $9$. The perimeter is then $30$ cm.`,
+  },
+  {
+    id: `math-4-45`,
+    case_id: `MATH 4.45`,
+    title: `Distance $5t^{2}$ metres after $t$ seconds`,
+    subsection: `4.2`,
+    context: `A body starts from rest. After $t$ seconds it has travelled $5t^{2}$ metres. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `After $4$ seconds the body has travelled $80$ m.`,
+      `After $2$ seconds it has travelled $20$ m.`,
+      `After $2$ seconds it has travelled $40$ m, half of the $4$-second distance.`,
+      `After $3$ seconds it has travelled $45$ m.`,
+      `It takes $8$ seconds to cover $80$ m.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$5 \\cdot 4^{2} = 5 \\cdot 16 = 80$$
+
+After $4$ seconds the distance is $80$ m. The statement is True.`,
+      `**B.** → True
+
+$$5 \\cdot 2^{2} = 5 \\cdot 4 = 20$$
+
+After $2$ seconds the distance is $20$ m. The statement is True.`,
+      `**C.** → False
+
+Distance here grows with $t^{2}$, not with $t$. Half the time is not half the distance. Half of $80$ is $40$, but the $2$-second reading is $20$, not $40$. The statement is False.`,
+      `**D.** → True
+
+$$5 \\cdot 3^{2} = 5 \\cdot 9 = 45$$
+
+After $3$ seconds the distance is $45$ m. The statement is True.`,
+      `**E.** → False
+
+Set $5t^{2} = 80$, so $t^{2} = 16$ and $t = 4$ (time is positive). Eight seconds would give $5 \\cdot 64 = 320$ m. The $80$ m mark is at $4$ seconds, so the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 45,
+    solution_overview: `One motion law $s = 5t^{2}$, five checks. Substitute the given times, and solve $5t^{2} = 80$ for the time that belongs to $80$ m. Because $s$ is quadratic in $t$, doubling the time quadruples the distance.`,
+  },
+  {
+    id: `math-4-46`,
+    case_id: `MATH 4.46`,
+    title: `Two numbers that differ by $5$ and multiply to $36$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Two positive numbers differ by $5$ and multiply to $36$. They are $4$ and $9$.`,
+      `Those two numbers differ by $5$.`,
+      `The smaller positive number is $6$.`,
+      `There is also a negative pair, $-9$ and $-4$.`,
+      `The positive pair adds to $13$.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the smaller be $x$. Then the larger is $x + 5$, and
+
+$$x(x + 5) = 36$$
+
+$$x^{2} + 5x - 36 = 0$$
+
+$$\\Delta = 25 + 144 = 169 = 13^{2}$$
+
+$$x = \\frac{-5 \\pm 13}{2}$$
+
+The positive root is $x = 4$, so the pair is $4$ and $9$. Check: $4 \\cdot 9 = 36$ and $9 - 4 = 5$. The statement is True.`,
+      `**B.** → True
+
+$9 - 4 = 5$, which is the opening relation. The statement is True.`,
+      `**C.** → False
+
+The smaller positive number is $4$, not $6$. Six with a difference of $5$ would be paired with $11$, and $6 \\cdot 11 = 66$, not $36$. The statement is False.`,
+      `**D.** → True
+
+The other root is $x = -9$, so the pair is $-9$ and $-4$. Then $(-9)\\cdot(-4) = 36$ and $-4 - (-9) = 5$. The statement is True.`,
+      `**E.** → True
+
+$4 + 9 = 13$. That is the positive pair, not the two roots of $x^{2} + 5x - 36 = 0$ (those roots are $4$ and $-9$, and they add to $-5$). The claim asks about the two positive numbers, and they add to $13$. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 46,
+    solution_overview: `Five independent claims about two numbers that differ by $5$ and multiply to $36$. The model $x(x + 5) = 36$ has roots $x = 4$ and $x = -9$, giving the pairs $4, 9$ and $-9, -4$.`,
+  },
+  {
+    id: `math-4-47`,
+    case_id: `MATH 4.47`,
+    title: `An isosceles right triangle with hypotenuse $10$`,
+    subsection: `4.2`,
+    context: `An isosceles right triangle has hypotenuse $10$ cm. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Each leg is $5\\sqrt{2}$ cm.`,
+      `Each leg is $5$ cm.`,
+      `The area of the triangle is $25$ cm$^{2}$.`,
+      `The perimeter is $10(1 + \\sqrt{2})$ cm.`,
+      `The area of the triangle is $50$ cm$^{2}$.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The two legs are equal. Call each one $a$ cm. Pythagoras gives
+
+$$a^{2} + a^{2} = 10^{2}$$
+
+$$2a^{2} = 100$$
+
+$$a^{2} = 50$$
+
+$$a = 5\\sqrt{2}$$
+
+(the positive root, as a length). Check: $(5\\sqrt{2})^{2} + (5\\sqrt{2})^{2} = 50 + 50 = 100$. The statement is True.`,
+      `**B.** → False
+
+Legs of $5$ cm would give hypotenuse $\\sqrt{25 + 25} = 5\\sqrt{2}$, about $7.07$ cm, not $10$. The legs that belong to hypotenuse $10$ are $5\\sqrt{2}$ cm. The statement is False.`,
+      `**C.** → True
+
+Area is half the product of the legs.
+
+$$\\frac{1}{2} \\cdot 5\\sqrt{2} \\cdot 5\\sqrt{2} = \\frac{1}{2} \\cdot 25 \\cdot 2 = 25$$
+
+The area is $25$ cm$^{2}$. The statement is True.`,
+      `**D.** → True
+
+Two legs plus the hypotenuse:
+
+$$5\\sqrt{2} + 5\\sqrt{2} + 10 = 10 + 10\\sqrt{2} = 10(1 + \\sqrt{2})$$
+
+The perimeter is $10(1 + \\sqrt{2})$ cm. The statement is True.`,
+      `**E.** → False
+
+Fifty is $a^{2}$, the square of one leg, or the product of the legs without the half. Area is $25$ cm$^{2}$, so the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 47,
+    solution_overview: `One isosceles right triangle, five checks. Equal legs $a$ and hypotenuse $10$ give $2a^{2} = 100$, so $a = 5\\sqrt{2}$. Area is half the product of the legs, and the perimeter is $10(1 + \\sqrt{2})$.`,
+  },
+  {
+    id: `math-4-48`,
+    case_id: `MATH 4.48`,
+    title: `A rectangle of perimeter $36$ and area $80$`,
+    subsection: `4.2`,
+    context: `A rectangle has perimeter $36$ cm and area $80$ cm$^{2}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The sides are $8$ cm and $10$ cm.`,
+      `The rectangle is a square.`,
+      `A square with the same perimeter has side $9$ cm.`,
+      `That square has area $81$ cm$^{2}$, which is larger than $80$.`,
+      `The sides are $10$ cm and $16$ cm.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Perimeter $36$ means the sum of adjacent sides is $18$. Let one side be $x$ cm. Then the other is $18 - x$, and the area is $80$.
+
+$$x(18 - x) = 80$$
+
+$$x^{2} - 18x + 80 = 0$$
+
+$$\\Delta = 324 - 320 = 4$$
+
+$$x = \\frac{18 \\pm 2}{2}$$
+
+so $x = 10$ or $x = 8$. The sides are $8$ cm and $10$ cm. Check: $8 + 10 = 18$ and $8 \\cdot 10 = 80$. The statement is True.`,
+      `**B.** → False
+
+A square would need equal sides, so $9$ and $9$, with area $81$, not $80$. The recovered sides $8$ and $10$ are different. The statement is False.`,
+      `**C.** → True
+
+The same perimeter $36$ on a square means four equal sides of $\\frac{36}{4} = 9$ cm. The statement is True.`,
+      `**D.** → True
+
+$$9^{2} = 81 > 80$$
+
+Among rectangles of a fixed perimeter, the square has the largest area. Here that maximum is $81$, a little above the given $80$. The statement is True.`,
+      `**E.** → False
+
+Sides $10$ and $16$ add to $26$, so the perimeter would be $52$, not $36$, and the area would be $160$, not $80$. The recovered sides are $8$ and $10$. The statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 48,
+    solution_overview: `One rectangle, five checks. Perimeter $36$ and area $80$ mean the sides $x$ and $18 - x$ satisfy $x(18 - x) = 80$. The solutions are $8$ and $10$. A square of the same perimeter has side $9$ and area $81$.`,
+  },
+  {
+    id: `math-4-49`,
+    case_id: `MATH 4.49`,
+    title: `A father $24$ years older, ages multiplying to $180$`,
+    subsection: `4.2`,
+    context: `A father is $24$ years older than his son, and the product of their ages is $180$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The son is $6$ years old.`,
+      `The father is $30$ years old.`,
+      `In $6$ years the product of their ages will be $360$.`,
+      `The father is $36$ years old now.`,
+      `In $6$ years the son will be $12$ and the father $36$.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the son's age be $s$ years. Then the father is $s + 24$, and
+
+$$s(s + 24) = 180$$
+
+$$s^{2} + 24s - 180 = 0$$
+
+$$\\Delta = 576 + 720 = 1296 = 36^{2}$$
+
+$$s = \\frac{-24 \\pm 36}{2}$$
+
+The positive root is $s = 6$. Check: $6 \\cdot 30 = 180$. The statement is True.`,
+      `**B.** → True
+
+The father is $6 + 24 = 30$ years old. The statement is True.`,
+      `**C.** → False
+
+In $6$ years they will be $12$ and $36$, and $12 \\cdot 36 = 432$, not $360$. Three hundred sixty would be $12 \\cdot 30$, as if the father had not aged. The statement is False.`,
+      `**D.** → False
+
+Thirty-six is the father's age in $6$ years, not now. Now he is $30$. The statement is False.`,
+      `**E.** → True
+
+Son $6 + 6 = 12$, father $30 + 6 = 36$. Both ages increase by the same $6$ years. The statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 49,
+    solution_overview: `One family, five checks. Son $s$, father $s + 24$, product $180$ gives $s^{2} + 24s - 180 = 0$. The positive root is $s = 6$, so the father is $30$. Later ages add $6$ to each.`,
+  },
+  {
+    id: `math-4-50`,
+    case_id: `MATH 4.50`,
+    title: `A $13$ m ladder against a wall`,
+    subsection: `4.2`,
+    context: `A $13$ m ladder leans against a vertical wall. Its foot is $5$ m from the wall. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The top of the ladder is $12$ m up the wall.`,
+      `If the foot is pulled out to $9$ m from the wall, the top drops by $4$ m.`,
+      `After that move, the top is $\\sqrt{88}$ m up the wall.`,
+      `At first, the area of the triangle formed by the wall, the ground and the ladder is $30$ m$^{2}$.`,
+      `That first area is $32$ m$^{2}$.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Pythagoras with hypotenuse $13$ and base $5$:
+
+$$h^{2} + 5^{2} = 13^{2}$$
+
+$$h^{2} = 169 - 25 = 144$$
+
+$$h = 12$$
+
+This is the $5$-$12$-$13$ triple. The top is $12$ m up the wall. The statement is True.`,
+      `**B.** → False
+
+With the foot at $9$ m, the new height $h_{1}$ satisfies
+
+$$h_{1}^{2} + 9^{2} = 13^{2}$$
+
+$$h_{1}^{2} = 169 - 81 = 88$$
+
+$$h_{1} = \\sqrt{88}$$
+
+which is not $8$. The drop would be $12 - 8 = 4$ only if the new height were $8$. It is not: $\\sqrt{88}$ is a little more than $9$, so the drop is less than $3$ m. Subtracting the bases $13 - 5 = 8$ and $13 - 9 = 4$ does not give the heights. The statement is False.`,
+      `**C.** → True
+
+That is the height just computed: $\\sqrt{88} = 2\\sqrt{22}$ metres. The statement is True.`,
+      `**D.** → True
+
+The right triangle has legs $5$ and $12$.
+
+$$\\frac{1}{2} \\cdot 5 \\cdot 12 = 30$$
+
+The area is $30$ m$^{2}$. The statement is True.`,
+      `**E.** → False
+
+Thirty-two is not half of $5 \\cdot 12$. Half of $64$, or $4 \\cdot 8$, would be $32$. The area is $30$ m$^{2}$, so the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 50,
+    solution_overview: `One ladder, five checks. At first the $13$ m hypotenuse and $5$ m base force height $12$. Moving the foot to $9$ m makes the height $\\sqrt{88}$, not $8$, so the top does not drop by $4$ m.`,
+  },
+  {
+    id: `math-4-51`,
+    case_id: `MATH 4.51`,
+    title: `A longer-by-$4$ rectangle, $x + \\frac{1}{x}$, and $x^{2} + 1$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A rectangle is $4$ cm longer than it is wide, and its area is $45$ cm$^{2}$. The sides are $5$ cm and $9$ cm.`,
+      `The equation $x + \\frac{1}{x} = \\frac{5}{2}$ has the unique real solution $x = 2$.`,
+      `A body travels $5t^{2}$ metres in $t$ seconds. It has gone $125$ m after $5$ seconds.`,
+      `Two consecutive positive integers multiply to $72$. They are $8$ and $9$.`,
+      `The equation $x^{2} + 1 = 0$ has two distinct real roots.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $w$ cm. Then
+
+$$w(w + 4) = 45$$
+
+$$w^{2} + 4w - 45 = 0$$
+
+$$\\Delta = 16 + 180 = 196 = 14^{2}$$
+
+$$w = \\frac{-4 \\pm 14}{2}$$
+
+The positive value is $w = 5$, so the length is $9$. Check: $5 \\cdot 9 = 45$. The statement is True.`,
+      `**B.** → False
+
+$x = 2$ does work, because $2 + \\frac{1}{2} = \\frac{5}{2}$. But it is not the only real solution. Multiply through by $x$ (and $x \\neq 0$):
+
+$$x^{2} + 1 = \\frac{5}{2}x$$
+
+$$2x^{2} - 5x + 2 = 0$$
+
+$$(2x - 1)(x - 2) = 0$$
+
+so $x = 2$ or $x = \\frac{1}{2}$. Check of the second: $\\frac{1}{2} + \\frac{1}{\\frac{1}{2}} = \\frac{1}{2} + 2 = \\frac{5}{2}$. Two real solutions, not one. The statement is False.`,
+      `**C.** → True
+
+$$5 \\cdot 5^{2} = 5 \\cdot 25 = 125$$
+
+After $5$ seconds the distance is $125$ m. The statement is True.`,
+      `**D.** → True
+
+$$n(n + 1) = 72$$
+
+$$n^{2} + n - 72 = 0$$
+
+$$\\Delta = 1 + 288 = 289 = 17^{2}$$
+
+$$n = \\frac{-1 \\pm 17}{2}$$
+
+The positive root is $n = 8$, so the pair is $8$ and $9$. Check: $8 \\cdot 9 = 72$. The statement is True.`,
+      `**E.** → False
+
+$$x^{2} + 1 = 0 \\quad \\Rightarrow \\quad x^{2} = -1$$
+
+A square of a real number cannot be negative, and $\\Delta = 0 - 4 = -4 < 0$. There are no real roots. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 51,
+    solution_overview: `Five independent quadratic stories: a $5$ by $9$ rectangle, the reciprocal equation $x + \\frac{1}{x} = \\frac{5}{2}$, a $5t^{2}$ motion reading, consecutive integers with product $72$, and $x^{2} + 1 = 0$ which has no real root.`,
+  },
+  {
+    id: `math-4-52`,
+    case_id: `MATH 4.52`,
+    title: `Length $3$ more than width, diagonal $15$`,
+    subsection: `4.2`,
+    context: `A rectangle is $3$ cm longer than it is wide, and its diagonal is $15$ cm. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The width is $9$ cm.`,
+      `The length is $12$ cm.`,
+      `The area is $108$ cm$^{2}$.`,
+      `The sides and the diagonal form a $3$-$4$-$5$ triangle scaled by $3$.`,
+      `The width is $8$ cm.`,
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $w$ cm. Then the length is $w + 3$, and Pythagoras gives
+
+$$w^{2} + (w + 3)^{2} = 15^{2}$$
+
+$$w^{2} + w^{2} + 6w + 9 = 225$$
+
+$$2w^{2} + 6w - 216 = 0$$
+
+$$w^{2} + 3w - 108 = 0$$
+
+$$\\Delta = 9 + 432 = 441 = 21^{2}$$
+
+$$w = \\frac{-3 \\pm 21}{2}$$
+
+The positive value is $w = 9$. Check: $9^{2} + 12^{2} = 81 + 144 = 225$. The statement is True.`,
+      `**B.** → True
+
+Length $9 + 3 = 12$ cm. The statement is True.`,
+      `**C.** → True
+
+$$9 \\cdot 12 = 108$$
+
+The area is $108$ cm$^{2}$. The statement is True.`,
+      `**D.** → True
+
+$9, 12, 15$ is $3, 4, 5$ multiplied by $3$. The statement is True.`,
+      `**E.** → False
+
+Width $8$ would give length $11$ and
+
+$$8^{2} + 11^{2} = 64 + 121 = 185 \\neq 225$$
+
+The recovered width is $9$ cm. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 52,
+    solution_overview: `One rectangle, five checks. Width $w$, length $w + 3$, diagonal $15$ give $w^{2} + 3w - 108 = 0$. The positive root is $w = 9$, so the sides are $9$ cm and $12$ cm.`,
+  },
+  {
+    id: `math-4-53`,
+    case_id: `MATH 4.53`,
+    title: `A courtyard $3$ m longer than it is wide, diagonal $15$`,
+    subsection: `4.2`,
+    context: `A rectangular courtyard is $3$ m longer than it is wide, and a diagonal path across it is $15$ m. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The shorter side of the courtyard is $9$ m.`,
+      `The longer side is $12$ m.`,
+      `The perimeter of the courtyard is $42$ m.`,
+      `The area of the courtyard is $120$ m$^{2}$.`,
+      `A square courtyard with side $12$ m would have diagonal $12\\sqrt{2}$ m.`,
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $w$ metres. Then the length is $w + 3$, and the diagonal is $15$ m.
+
+$$w^{2} + (w + 3)^{2} = 225$$
+
+$$w^{2} + w^{2} + 6w + 9 = 225$$
+
+$$2w^{2} + 6w - 216 = 0$$
+
+$$w^{2} + 3w - 108 = 0$$
+
+$$\\Delta = 9 + 432 = 441 = 21^{2}$$
+
+$$w = \\frac{-3 \\pm 21}{2}$$
+
+The positive root is $w = 9$. Check: $9^{2} + 12^{2} = 81 + 144 = 225$. The shorter side is $9$ m. The statement is True.`,
+      `**B.** → True
+
+Length $9 + 3 = 12$ m, and $9^{2} + 12^{2} = 225$. The statement is True.`,
+      `**C.** → True
+
+$$P = 2(9 + 12) = 42$$
+
+The perimeter is $42$ m. The statement is True.`,
+      `**D.** → False
+
+$$9 \\cdot 12 = 108$$
+
+The claim says $120$. One hundred twenty would be $10 \\cdot 12$ or $8 \\cdot 15$. The area is $108$ m$^{2}$, so the statement is False.`,
+      `**E.** → True
+
+A square of side $12$ has diagonal $\\sqrt{12^{2} + 12^{2}} = \\sqrt{288} = 12\\sqrt{2}$. That is longer than $15$, because $12\\sqrt{2} \\approx 17.0$. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 53,
+    solution_overview: `One courtyard, five checks. Width $w$, length $w + 3$, diagonal $15$ give $w^{2} + (w + 3)^{2} = 225$. The positive width is $9$ m, so the rectangle is $9$ by $12$. Later letters read perimeter, area, and a comparison square off those sides.`,
+  },
+  {
+    id: `math-4-54`,
+    case_id: `MATH 4.54`,
+    title: `Two pipes together in $6$ hours, one $5$ hours slower`,
+    subsection: `4.2`,
+    context: `Two pipes fill a tank together in $6$ hours. One pipe, working alone, is $5$ hours slower than the other. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The faster pipe alone takes $10$ hours.`,
+      `The slower pipe alone takes $15$ hours.`,
+      `The faster pipe alone takes $8$ hours.`,
+      `In $3$ hours together they fill half the tank.`,
+      `Their combined rate is $\\frac{1}{6}$ of the tank per hour.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the faster pipe take $t$ hours alone. Then the slower takes $t + 5$ hours, and together they do one tank in $6$ hours.
+
+$$\\frac{1}{t} + \\frac{1}{t + 5} = \\frac{1}{6}$$
+
+$$\\frac{2t + 5}{t(t + 5)} = \\frac{1}{6}$$
+
+$$6(2t + 5) = t^{2} + 5t$$
+
+$$t^{2} - 7t - 30 = 0$$
+
+$$(t - 10)(t + 3) = 0$$
+
+The positive root is $t = 10$. The faster pipe takes $10$ hours. The statement is True.`,
+      `**B.** → True
+
+The slower pipe takes $10 + 5 = 15$ hours. Check: $\\frac{1}{10} + \\frac{1}{15} = \\frac{3}{30} + \\frac{2}{30} = \\frac{1}{6}$. The statement is True.`,
+      `**C.** → False
+
+Eight hours for the faster pipe would force $13$ hours for the slower. Then
+
+$$\\frac{1}{8} + \\frac{1}{13} = \\frac{13 + 8}{104} = \\frac{21}{104}$$
+
+while $\\frac{1}{6} = \\frac{21}{126}$, and $\\frac{21}{104} \\neq \\frac{1}{6}$. The recovered time is $10$ hours. The statement is False.`,
+      `**D.** → True
+
+Together they fill $\\frac{1}{6}$ of the tank each hour, so in $3$ hours they fill $\\frac{3}{6} = \\frac{1}{2}$. The statement is True.`,
+      `**E.** → True
+
+That is the together-in-$6$-hours rate: one tank in $6$ hours is $\\frac{1}{6}$ of a tank per hour. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 54,
+    solution_overview: `One tank, five checks. Rates $\\frac{1}{t} + \\frac{1}{t + 5} = \\frac{1}{6}$ give $t^{2} - 7t - 30 = 0$, so the times are $10$ hours and $15$ hours. Three hours together is half the tank.`,
+  },
+  {
+    id: `math-4-55`,
+    case_id: `MATH 4.55`,
+    title: `The reciprocal relation $x = 2 + \\frac{6}{x}$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `One solution of $x = 2 + \\frac{6}{x}$ is $x = 3$.`,
+      `That equation rearranges to $x^{2} - 2x - 6 = 0$.`,
+      `The two real solutions are $1 + \\sqrt{7}$ and $1 - \\sqrt{7}$.`,
+      `The product of the two roots is $6$.`,
+      `The sum of the two roots is $2$.`,
+    ],
+    answer_key: [false, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → False
+
+If $x = 3$, the right-hand side is $2 + \\frac{6}{3} = 2 + 2 = 4$, which is not $3$. Three is not a solution. The statement is False.`,
+      `**B.** → True
+
+Multiply through by $x$ (and $x \\neq 0$, which cannot solve the original anyway):
+
+$$x^{2} = 2x + 6$$
+
+$$x^{2} - 2x - 6 = 0$$
+
+The statement is True.`,
+      `**C.** → True
+
+$$\\Delta = 4 + 24 = 28 = 4 \\cdot 7$$
+
+$$x = \\frac{2 \\pm 2\\sqrt{7}}{2} = 1 \\pm \\sqrt{7}$$
+
+Those are the two real roots. The statement is True.`,
+      `**D.** → False
+
+For $x^{2} - 2x - 6 = 0$ the product of the roots is the constant term, $-6$, not $6$. Check: $(1 + \\sqrt{7})(1 - \\sqrt{7}) = 1 - 7 = -6$. The statement is False.`,
+      `**E.** → True
+
+The sum of the roots of $x^{2} - 2x - 6 = 0$ is $2$. Check: $(1 + \\sqrt{7}) + (1 - \\sqrt{7}) = 2$. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 55,
+    solution_overview: `Five independent claims about $x = 2 + \\frac{6}{x}$. Clearing the denominator produces $x^{2} - 2x - 6 = 0$, whose roots are $1 \\pm \\sqrt{7}$. Their sum is $2$ and their product is $-6$.`,
+  },
+  {
+    id: `math-4-56`,
+    case_id: `MATH 4.56`,
+    title: `A $+5$ cm rectangle, consecutive product $132$, and $x^{2} - x + 1$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A rectangle is $5$ cm longer than it is wide, and its area is $36$ cm$^{2}$. The sides are $4$ cm and $9$ cm.`,
+      `Two consecutive positive integers multiply to $132$. They are $11$ and $12$.`,
+      `A body travels $5t^{2}$ metres in $t$ seconds. It has gone $180$ m after $5$ seconds.`,
+      `The equation $x^{2} - x + 1 = 0$ has two distinct real roots.`,
+      `Two numbers add to $20$ and multiply to $96$. They are $8$ and $12$.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the width be $w$ cm. Then
+
+$$w(w + 5) = 36$$
+
+$$w^{2} + 5w - 36 = 0$$
+
+$$\\Delta = 25 + 144 = 169 = 13^{2}$$
+
+$$w = \\frac{-5 \\pm 13}{2}$$
+
+The positive value is $w = 4$, so the length is $9$. Check: $4 \\cdot 9 = 36$. The statement is True.`,
+      `**B.** → True
+
+$$n(n + 1) = 132$$
+
+$$n^{2} + n - 132 = 0$$
+
+$$\\Delta = 1 + 528 = 529 = 23^{2}$$
+
+$$n = \\frac{-1 \\pm 23}{2}$$
+
+The positive root is $n = 11$, so the pair is $11$ and $12$. Check: $11 \\cdot 12 = 132$. The statement is True.`,
+      `**C.** → False
+
+After $5$ seconds the distance is $5 \\cdot 5^{2} = 125$ m, not $180$. The $180$ m mark is at $t = 6$, because $5 \\cdot 6^{2} = 180$. The statement is False.`,
+      `**D.** → False
+
+$$\\Delta = 1 - 4 = -3 < 0$$
+
+No real roots. Completing the square gives $\\left(x - \\frac{1}{2}\\right)^{2} + \\frac{3}{4} = 0$, a square plus a positive number, which cannot be zero. The statement is False.`,
+      `**E.** → True
+
+Numbers with sum $20$ and product $96$ are the roots of $t^{2} - 20t + 96 = 0$.
+
+$$\\Delta = 400 - 384 = 16$$
+
+$$t = \\frac{20 \\pm 4}{2}$$
+
+so $t = 12$ or $t = 8$. Check: $8 + 12 = 20$ and $8 \\cdot 12 = 96$. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 56,
+    solution_overview: `Five independent quadratic stories: a $4$ by $9$ rectangle, consecutive integers with product $132$, a $5t^{2}$ motion reading, $x^{2} - x + 1 = 0$ with negative discriminant, and the pair with sum $20$ and product $96$.`,
+  },
 ];
+
