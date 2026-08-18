@@ -2,7 +2,9 @@
 
 A power function raises the input to a fixed exponent. The same shape appears as a cost that falls with scale, as output that grows with labour, as a price that falls with quantity, and as a simple graph such as $y=x^2$ or $y=1/x$.
 
-The tasks in this chapter keep asking the same few moves: name the domain, evaluate a **level**, scale by $k^{b}$, recover a coefficient, compose two powers, and read a limit. Polynomials with several different powers added belong to the next chapter. Exponential functions $a^x$ belong to Chapter 10.
+The tasks in this chapter keep asking the same few moves: name the domain, evaluate a **level**, scale by $k^{b}$, recover a coefficient, compose two powers, and read a limit. Some items are written as pure formulas. Many more are **text tasks**: a warehouse, a resin cube, a wait-time rule, a demand curve. The story changes. The algebra does not.
+
+Polynomials with several different powers added belong to the next chapter. Exponential functions $a^x$ belong to Chapter 10.
 
 ## Learning objectives
 
@@ -15,6 +17,7 @@ The tasks in this chapter keep asking the same few moves: name the domain, evalu
 - Tell a **level** $f(x)$ from a **scale** $f(kx)/f(x)=k^b$.
 - Recover the coefficient from one audited point, then compose two powers.
 - Handle isoelastic demand, revenue, and a finite percentage change without confusing it with $b$ times the percent.
+- Work both formula items and **text tasks** (warehouse, resin cube, wait-time, demand) with the same algebra.
 - Spot affine add-ons, unit changes, and average product $f(x)/x$.
 
 ---
@@ -64,6 +67,34 @@ $$
 
 is not a pure power function, because of the added $40$.
 
+**Example 2 (text).** Nora’s print shop bills a run of $n>0$ copies as a fixed setup plus a square-root charge,
+
+$$
+C(n)=F+A n^{1/2}.
+$$
+
+A $16$-copy run costs $250$ euros. A $64$-copy run costs $450$ euros. Is $C$ a power function of $n$? Recover $F$ and $A$, then decide.
+
+The two invoices are
+
+$$
+F+4A=250, \qquad F+8A=450,
+$$
+
+because $\sqrt{16}=4$ and $\sqrt{64}=8$. Subtracting cancels $F$:
+
+$$
+4A=200 \quad\Rightarrow\quad A=50.
+$$
+
+Then $F+4\cdot 50=250$, so $F=50$. The recovered bill is
+
+$$
+C(n)=50+50\sqrt{n}.
+$$
+
+The $50$ euro setup sits outside the power of $n$. So $C$ is **not** a power function of the run size, even though the variable part is $n^{1/2}$. A statement “the whole bill is proportional to $\sqrt{n}$” is false. A statement “unit cost $C(n)/n$ falls as $n$ grows” can still be true, because that leftover setup is spread over more copies.
+
 ### The algebra you already need
 
 On the positive reals the usual power rules hold:
@@ -80,13 +111,15 @@ $$
 
 when the root is defined. These identities are how you rewrite a statement before you judge it true or false.
 
-**Example 2.** Rewrite $\dfrac{8}{x^{3/2}}$.
+**Example 3.** Rewrite $\dfrac{8}{x^{3/2}}$.
 
 $$
 \frac{8}{x^{3/2}}=8x^{-3/2}.
 $$
 
 That is a power function with $a=8$ and $b=-3/2$. Now $x^{3/2}=(x^{1/2})^{3}$, so an even root is involved and $x=0$ is excluded by the negative exponent. Domain: $x>0$.
+
+The rewrite is not decoration. Exam statements often hide a negative exponent inside a fraction. Once the formula is $ax^{b}$, domain, scale and limits are the usual checklist.
 
 ---
 
@@ -150,6 +183,18 @@ The order in $p/q$ matters for the domain, not only the decimal value of the exp
 
 False. The exponent is negative, so you would divide by $0^{0.4}=0$. The function is only defined for $x>0$ (and, if an even root is involved, not for $x<0$ either). Here $-0.4=-2/5$, so $f(x)=5/x^{2/5}=5/(\sqrt[5]{x})^{2}$. The fifth root exists for negatives, but $x=0$ is still out.
 
+**Example 4 (text).** A turbidity gauge reports
+
+$$
+R(t)=\frac{50}{t^{2}}
+$$
+
+units, $t$ hours after a reset. A colleague writes: “At the reset the reading is $0$, because nothing has had time to cloud the water.”
+
+The formula is $50t^{-2}$. The exponent is negative, so $t=0$ is not in the domain. There is no real reading at the reset. The graph has a vertical asymptote there: as $t\to 0^{+}$ the index becomes arbitrarily large, it does not fall to $0$. The story about “no time to cloud” is chemistry, not this model.
+
+A second instrument on the same shift records dissolved load $D(t)=6\sqrt{t}$. That one **does** accept $t=0$, and $D(0)=0$. Same letter $t$, two different exponents, two different domains. Do not copy the domain from one formula onto the other.
+
 ---
 
 ## 8.3 Graphs, even and odd
@@ -185,7 +230,11 @@ $$
 
 Odd. The minus sign in front does not destroy oddness: it only reflects the usual $x^5$ graph through the $x$-axis.
 
-[[FIGURE:power-even-odd|Even power $x^{2}$ versus odd power $x^{3}$.]]
+[[FIGURE:power-even-odd|Even power $x^{2}$ versus odd power $x^{3}$. Axes, ticks and a clip frame; $x^{3}$ leaves the window because it grows faster.]]
+
+**Example 3 (text).** A beacon’s signal is $S(x)=80/x^{3}$ millivolts at distance $x>0$ metres. Packet counts follow $T(x)=2\sqrt{x}$. A statement says: “$S$ is an even function, because the graph on the right of $0$ would match the left if we could plot it.”
+
+Refuse the claim. The domain of $S$ is $x>0$, which is not symmetric about $0$. A function that is not defined for $-x$ cannot be even or odd. The same holds for $T$. Even/odd is a test you run only after the domain has been checked.
 
 ### Shape on the positive axis
 
@@ -245,7 +294,7 @@ $$
 
 A statement “$x^{3}>x^{2}$ for all $x>0$” is false. It holds only for $x>1$.
 
-[[FIGURE:power-compare|$y=x$, $y=x^{2}$ and $y=x^{3}$ on $[0,2]$. They cross at $x=1$.]]
+[[FIGURE:power-compare|$y=x$, $y=x^{2}$ and $y=x^{3}$ on $[0,2]$. They meet at $(1,1)$. After that $x^{3}$ grows out of the window first.]]
 
 **Example 3.** Which is larger, $\sqrt{0.09}$ or $0.09^{2}$?
 
@@ -272,6 +321,20 @@ Q(4)-Q(3)=\sqrt{4}-\sqrt{3}\approx 0.268, \qquad Q(9)-Q(8)=\sqrt{9}-\sqrt{8}\app
 $$
 
 The extra output from one more hour is smaller when $L$ is already large. That is the usual picture for $0<b<1$. For $b>1$ the extra output grows. For $b=1$ it stays constant.
+
+**Example 4 (text).** Harvest follows $Y(h)=2h^{1/3}$ kilograms after $h$ watering hours. Eight hours give $4$ kg. A grower says: “One extra hour after $8$ hours adds the same kilograms as one extra hour after $27$ hours, because the coefficient $2$ never changes.”
+
+The coefficient is not the extra output. Compare two equal one-hour steps:
+
+$$
+Y(9)-Y(8)=2\bigl(9^{1/3}-8^{1/3}\bigr)\approx 2(2.080-2)=0.160,
+$$
+
+$$
+Y(28)-Y(27)=2\bigl(28^{1/3}-3\bigr)\approx 2(3.037-3)=0.074.
+$$
+
+The extra hour is worth less later. The exponent $1/3<1$ is the whole reason. A statement that extra output is constant would need $b=1$.
 
 ---
 
@@ -321,7 +384,7 @@ From the left, $x\to 0^{-}$, you need the function to be defined for negative $x
 
 If $b<0$, the line $x=0$ is a **vertical asymptote**. The line $y=0$ is a **horizontal asymptote** as $|x|\to\infty$.
 
-[[FIGURE:power-reciprocal|$1/x$ (odd, sign change) and $1/x^{2}$ (even, always positive). Both have asymptotes $x=0$ and $y=0$.]]
+[[FIGURE:power-reciprocal|$1/x$ (odd, sign change) and $1/x^{2}$ (even, always positive). Both have a hole at the origin: vertical asymptote $x=0$ and horizontal asymptote $y=0$.]]
 
 **Example 2.** Let $p(x)=3/x^{2}$. Which of the following are true?
 
@@ -331,6 +394,16 @@ If $b<0$, the line $x=0$ is a **vertical asymptote**. The line $y=0$ is a **hori
 - The graph crosses the $y$-axis. False: $x=0$ is not in the domain.
 
 **Example 3.** A demand function is $p(q)=18q^{-0.5}$ for $q>0$. As quantity demanded becomes huge, the price approaches $0$. As quantity approaches $0$, the price becomes arbitrarily large. Both limits are the standard negative-exponent picture, not a programming error in the model.
+
+**Example 4 (text).** Median response time follows $W(k)=216\,k^{-3/2}$ milliseconds on $k>0$ servers. A manager claims two things: “With a very large farm the wait settles at $216$ ms,” and “near $k=0$ the wait falls to $0$.”
+
+Both are the limits swapped. The exponent is negative, so
+
+$$
+\lim_{k\to\infty}W(k)=0, \qquad \lim_{k\to 0^{+}}W(k)=\infty.
+$$
+
+A large farm drives wait toward $0$, not toward the coefficient. A collapsing farm makes wait blow up, not fade. The number $216$ is the coefficient, not a floor.
 
 ---
 
@@ -371,9 +444,40 @@ The coefficient cancels. Doubling $a$ doubles every level and leaves every ratio
 
 A fifty percent wider panel is $k=1.5$, not “plus fifty percent of the paint”. If primer goes as radius squared, paint is multiplied by $1.5^{2}=2.25$. Halving the radius is $k=0.5$, and $0.5^{2}=0.25$, not $0.5$. Percentage up and percentage down are not symmetric once $b\neq 1$.
 
-**Example 2.** Energy index $E(v)=0.5 v^{2}$. A ten percent overspeed is $k=1.1$, so $E$ rises by $21\%$, not by $10\%$. The trap is copying the input’s percentage onto the output.
+**Example 2.** Energy index $E(v)=0.5 v^{2}$. A ten percent overspeed is $k=1.1$:
 
-**Example 3.** Output $Q(s)=8s^{1/2}$. Quadrupling staff is $k=4$, so output is multiplied by $2$, not by $4$. A statement that “four times the staff gives four times the crates” is the $b=1$ story.
+$$
+1.1^{2}=1.21.
+$$
+
+So $E$ rises by $21\%$, not by $10\%$. The trap is copying the input’s percentage onto the output. The coefficient $0.5$ never enters the ratio.
+
+**Example 3.** Output $Q(s)=8s^{1/2}$. Quadrupling staff is $k=4$, so output is multiplied by $4^{1/2}=2$, not by $4$. A statement that “four times the staff gives four times the crates” is the $b=1$ story.
+
+**Example 4 (text, a full exam item).** A cube resin block has mass $M(s)=5s^{3}$ grams for side $s>0$ centimetres. Judge these five claims. This is the same rhythm as the practice bank: some letters are levels, one is a scale, two are trap numbers.
+
+1. Side $2$ cm gives mass $40$ grams.  
+   Level. $M(2)=5\cdot 2^{3}=5\cdot 8=40$. True. The exponent acts on the side, never on the $5$.
+
+2. Side $3$ cm gives mass $125$ grams.  
+   $M(3)=5\cdot 27=135$, not $125$. The figure $125$ is $5^{3}$: someone cubed the density and ignored the side. False.
+
+3. Doubling the side multiplies the mass by $8$.  
+   Scale. The coefficient cancels:
+
+   $$
+   \frac{M(2s)}{M(s)}=2^{3}=8.
+   $$
+
+   True. “Twice the side, twice the mass” would be exponent $1$. “Four times the mass” would be the area story, exponent $2$.
+
+4. Side $1$ cm gives mass $5$ grams.  
+   $M(1)=5\cdot 1=5$. True, but only because every power of $1$ is $1$. A reader who cubed $5$ would land on $125$ again and confuse this letter with (2).
+
+5. Side $4$ cm gives mass $240$ grams.  
+   $M(4)=5\cdot 64=320$, not $240$. False. Nothing in $5s^{3}$ produces $240$.
+
+Write the formula. Decide level versus scale. Never put the exponent on $a$. That is the chapter in miniature.
 
 ### Crossing of two powers
 
@@ -384,6 +488,16 @@ G(n)-F(n)=n^{2}(n-2).
 $$
 
 They meet at $n=2$. For $n>2$, the cubic is larger. For $0<n<2$, the quadratic is larger. As $n\to\infty$, the ratio $G/F=n/2\to\infty$, not $1$. The higher exponent dominates at infinity.
+
+**Example 5 (text).** Two inspection bills on a batch of $n>0$ documents: automated $C(n)=n^{2}$ and manual $D(n)=16n$. On a batch of $16$ they cost the same, $256$ each. A statement says: “Past $16$ documents the automated bill is cheaper, because a machine should win on large batches.”
+
+The gap is
+
+$$
+C(n)-D(n)=n(n-16).
+$$
+
+For $n>16$ the gap is **positive**, so automated is more expensive, not cheaper. The quadratic grows faster once you are past the meeting point. The story about machines is not the algebra. The algebra is the sign of $n-16$.
 
 ---
 
@@ -407,6 +521,22 @@ $$
 
 Solve for $A$, then go on. Do not treat the gain as if it were a single level $A x^{b}$.
 
+**Example 2 (text).** Wait follows $W(k)=A k^{-3/2}$ milliseconds for $k>0$ servers. The log does not state $A$. It only records that moving from $4$ servers to $9$ servers cut the median wait by exactly $19$ ms. Recover $A$, then $W(4)$ and $W(9)$.
+
+The recorded $19$ is that difference, not a level:
+
+$$
+W(4)-W(9)=A\bigl(4^{-3/2}-9^{-3/2}\bigr)=19.
+$$
+
+Now $4^{-3/2}=1/8$ and $9^{-3/2}=1/27$, so
+
+$$
+A\Bigl(\frac{1}{8}-\frac{1}{27}\Bigr)=19, \qquad A\cdot\frac{19}{216}=19, \qquad A=216.
+$$
+
+Then $W(4)=216/8=27$ and $W(9)=216/27=8$. A solver who treated $19$ as if it were $W(4)$ would recover the wrong coefficient and every later letter would follow it.
+
 Two points can also recover an unknown exponent. If $f(kx)/f(x)=r$, then $k^{b}=r$, so $b=\log r/\log k$. You only need logarithms if $b$ is not a small integer you can test by matching powers, such as $1.2^{3}=1.728$.
 
 ### Change of units
@@ -425,7 +555,13 @@ $$
 
 when the real root exists. Even integer $b$ can give two real roots when $c/a>0$. Odd $b$ gives one.
 
-**Example 1.** $2x^{3}=54$ gives $x=3$ only. $x^{4}=16$ gives $x=\pm 2$.
+**Example 1.** $2x^{3}=54$ gives $x=3$ only:
+
+$$
+x^{3}=27, \qquad x=3.
+$$
+
+Even integer $b$ can give two real roots: $x^{4}=16$ gives $x=\pm 2$. A statement that lists only the positive root when $b$ is even is incomplete unless the domain was already restricted to $x>0$.
 
 ### Inverse
 
@@ -439,6 +575,22 @@ The new exponent is the reciprocal. If two stages undo each other, their exponen
 
 **Example 2.** $Q=4L^{1/2}$ inverts to $L=Q^{2}/16$. Doubling $Q$ multiplies $L$ by $4=2^{1/(1/2)}$.
 
+**Example 3 (text).** Harvest is $Y(h)=2h^{1/3}$ on $h>0$. A grower wants $10$ kg instead of $4$ kg and asks whether watering time is still a power of harvest.
+
+Solve $2h^{1/3}=Y$ for $h$:
+
+$$
+h=\Bigl(\frac{Y}{2}\Bigr)^{3}.
+$$
+
+That is a cube of a linear function of $Y$, still a power of $Y$. At $Y=10$,
+
+$$
+h=\Bigl(\frac{10}{2}\Bigr)^{3}=125
+$$
+
+hours. Doubling harvest from $4$ kg to $8$ kg multiplies hours by $2^{3}=8$, from $8$ hours to $64$ hours. If the stem had been $Y=2+h^{1/3}$, the inverse would have left the power-function class. The stem has no setup hours, so the inverse stays a monomial.
+
 ### Composition of two powers
 
 If $u=A x^{p}$ and $v=B u^{q}$, then
@@ -449,13 +601,16 @@ $$
 
 Exponents **multiply**. Coefficients combine as $B A^{q}$, not as $BA$. Inner exponent $3/2$ and outer $2/3$ give a linear monomial. Inner square root and outer square also give exponent $1$.
 
-**Example 3.** Metal $M=8u^{3/2}$, strength $S=\frac12 M^{2/3}$. Then
+**Example 4.** Metal $M=8u^{3/2}$, strength $S=\frac12 M^{2/3}$. Then
 
 $$
-S=\frac12\cdot 8^{2/3} u=\frac12\cdot 4\, u=2u.
+S=\frac12\cdot (8u^{3/2})^{2/3}
+=\frac12\cdot 8^{2/3}\, u
+=\frac12\cdot 4\, u
+=2u.
 $$
 
-Strength is proportional to purity. A rival quote $S=2u+5$ is **affine**. It is not a power function, because of the intercept.
+Inner exponent $3/2$ and outer $2/3$ multiply to $1$. Strength is proportional to purity. A rival quote $S=2u+5$ is **affine**. It is not a power function, because of the intercept. They meet where $2u=1.8u+5$, so $u=25$, once, not “never”.
 
 ### Average product
 
@@ -466,6 +621,16 @@ $$
 $$
 
 The leftover exponent is $b-1$. If $b<1$, average product **falls** as $x$ grows. If $b>1$, it **rises**. If $b=1$, it is constant. This is how square-root technologies and cubic costs are told apart without drawing a graph.
+
+**Example 5 (text).** Warehouse throughput is $H(s)=8s^{1/2}$ pallets per hour with $s>0$ staff. A statement says: “Pallets per worker stay constant when the shift is enlarged, because the technology never changes.”
+
+Pallets per worker is the average product
+
+$$
+\frac{H(s)}{s}=8s^{-1/2}.
+$$
+
+The leftover exponent is negative, so the average **falls** as $s$ grows. At $s=16$, average product is $2$. At $s=64$, it is $1$. The technology is the same power. The average is not constant. Constant average product would need $b=1$.
 
 ---
 
@@ -496,6 +661,28 @@ $$
 Quantity falls by about $24.9\%$. The shortcut $3\times 10\%=30\%$ is a first-order guess. It overstates the cut. Exam statements often ask you to compare the exact $k^{b}$ with a round threshold such as $20\%$ or $30\%$, and separately to say whether revenue rises or falls.
 
 **Example 1.** Highly elastic demand: price up, quantity down by more than the price rose, so $pq$ falls. Inelastic demand is the opposite region for revenue.
+
+**Example 2 (text).** Monthly subscriptions follow $q(p)=A p^{-2}$, and at $5$ euros the service sells $400$ subscriptions. Revenue is $R=pq$. A proposed $10\%$ price rise is claimed to cut quantity by exactly $20\%$, and to raise revenue.
+
+First recover $A$:
+
+$$
+A\cdot 5^{-2}=400 \quad\Rightarrow\quad A\cdot \frac{1}{25}=400 \quad\Rightarrow\quad A=10000.
+$$
+
+So $q(p)=10000\,p^{-2}$ and $R(p)=10000\,p^{-1}$. A $10\%$ rise is $k=1.1$, not “twice $10\%$ because the exponent is $-2$”:
+
+$$
+\frac{q(1.1p)}{q(p)}=1.1^{-2}\approx 0.8264.
+$$
+
+Quantity falls by about $17.4\%$, not by $20\%$ and not by $30\%$. Revenue at the new price is
+
+$$
+R(5.5)=\frac{10000}{5.5}\approx 1818,
+$$
+
+against $R(5)=2000$. Revenue **falls**. For $q\propto p^{-2}$ the exponent on revenue is $1-2=-1$, so a higher price lowers $R$. The elasticity shortcut $2\times 10\%=20\%$ is a first-order guess. The exact factor is $k^{b}$.
 
 ### Floors, caps and learning curves
 
@@ -553,4 +740,4 @@ $$
 
 **Working order.** Write $ax^{b}$. Fix the domain. Decide whether the claim is a level, a scale, a calibration, a composition, or a limit. Never put the exponent on the coefficient. Never copy a percentage from the input to the output unless $b=1$. Check affine intercepts before calling something a power function.
 
-**Self-check.** Why is $5\cdot 3^{3}$ not $125$? Why does doubling the coefficient leave $f(2x)/f(x)$ unchanged? What is $1.1^{2}$ as a percentage rise? Why does $\sqrt{x}$ accept $0$ and refuse $-4$, while $x^{-2}$ does the opposite? If $u=8x^{3/2}$ and $v=\frac12 u^{2/3}$, why is $v$ proportional to $x$? For $q\propto p^{-3}$, is a $10\%$ price rise exactly a $30\%$ quantity fall? And why does $f(x)/x$ fall when $0<b<1$?
+**Self-check.** Why is $5\cdot 3^{3}$ not $125$? Why does doubling the coefficient leave $f(2x)/f(x)$ unchanged? What is $1.1^{2}$ as a percentage rise? Why does $\sqrt{x}$ accept $0$ and refuse $-4$, while $x^{-2}$ does the opposite? If $u=8x^{3/2}$ and $v=\frac12 u^{2/3}$, why is $v$ proportional to $x$? For $q\propto p^{-3}$, is a $10\%$ price rise exactly a $30\%$ quantity fall? Why does $f(x)/x$ fall when $0<b<1$? In a print-shop bill $F+A\sqrt{n}$, what stops the whole bill from being a power of $n$? And if wait falls by $19$ ms between two server counts, why is that $19$ not the coefficient $A$?

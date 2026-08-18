@@ -1412,38 +1412,94 @@ function powerPolyline(
     .join(" ");
 }
 
+function linspace(from: number, to: number, n: number) {
+  if (n <= 1) return [from];
+  return Array.from({ length: n }, (_, i) => from + (i / (n - 1)) * (to - from));
+}
+
+function PowerAxisArrowH({ x, y }: { x: number; y: number }) {
+  return <polygon points={`${x},${y} ${x - 9},${y - 4} ${x - 9},${y + 4}`} fill={STROKE} />;
+}
+
+function PowerAxisArrowV({ x, y }: { x: number; y: number }) {
+  return <polygon points={`${x},${y} ${x - 4},${y + 9} ${x + 4},${y + 9}`} fill={STROKE} />;
+}
+
 function PowerEvenOdd() {
-  const W = 420;
-  const H = 280;
-  const ox = 210;
-  const oy = 140;
-  const sx = 55;
-  const sy = 28;
+  const W = 440;
+  const H = 300;
+  const ox = 220;
+  const oy = 150;
+  const left = 36;
+  const right = 404;
+  const top = 22;
+  const bottom = 278;
+  const sx = 78;
+  const sy = 32;
   const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
-  const xs = Array.from({ length: 81 }, (_, i) => -2 + i * 0.05);
+  const xs = linspace(-2.15, 2.15, 120);
   const sq = powerPolyline(xs, (x) => x * x, toSvg);
-  const cu = powerPolyline(
-    xs.filter((x) => Math.abs(x * x * x) <= 4.2),
-    (x) => x * x * x,
-    toSvg,
-  );
+  const cu = powerPolyline(xs, (x) => x * x * x, toSvg);
+  const xTicks = [-2, -1, 1, 2];
+  const yTicks = [-4, -2, 2, 4];
   return (
     <div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
-        <line x1="28" y1={oy} x2="392" y2={oy} stroke={STROKE} strokeWidth="1.5" />
-        <line x1={ox} y1="18" x2={ox} y2="262" stroke={STROKE} strokeWidth="1.5" />
-        <text x="396" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[460px]" role="img">
+        <defs>
+          <clipPath id="pw-eo-clip">
+            <rect x={left} y={top} width={right - left} height={bottom - top} />
+          </clipPath>
+        </defs>
+        <rect x={left} y={top} width={right - left} height={bottom - top} fill="#fff" stroke={GRID} strokeWidth="1" />
+        {xTicks.map((t) => (
+          <line key={`vg${t}`} x1={toSvg(t, 0).x} y1={top} x2={toSvg(t, 0).x} y2={bottom} stroke={GRID} strokeWidth="1" />
+        ))}
+        {yTicks.map((t) => (
+          <line key={`hg${t}`} x1={left} y1={toSvg(0, t).y} x2={right} y2={toSvg(0, t).y} stroke={GRID} strokeWidth="1" />
+        ))}
+        <g clipPath="url(#pw-eo-clip)">
+          <polyline points={sq} fill="none" stroke={MUTED} strokeWidth="2.4" />
+          <polyline points={cu} fill="none" stroke={ACCENT} strokeWidth="2.4" />
+        </g>
+        <line x1={left} y1={oy} x2={right - 2} y2={oy} stroke={STROKE} strokeWidth="1.6" />
+        <line x1={ox} y1={bottom} x2={ox} y2={top + 2} stroke={STROKE} strokeWidth="1.6" />
+        <PowerAxisArrowH x={right} y={oy} />
+        <PowerAxisArrowV x={ox} y={top} />
+        {xTicks.map((t) => {
+          const p = toSvg(t, 0);
+          return (
+            <g key={`xt${t}`}>
+              <line x1={p.x} y1={oy - 5} x2={p.x} y2={oy + 5} stroke={STROKE} strokeWidth="1.4" />
+              <text x={p.x} y={oy + 18} textAnchor="middle" fill={MUTED} fontSize="12">
+                {t}
+              </text>
+            </g>
+          );
+        })}
+        {yTicks.map((t) => {
+          const p = toSvg(0, t);
+          return (
+            <g key={`yt${t}`}>
+              <line x1={ox - 5} y1={p.y} x2={ox + 5} y2={p.y} stroke={STROKE} strokeWidth="1.4" />
+              <text x={ox - 10} y={p.y + 4} textAnchor="end" fill={MUTED} fontSize="12">
+                {t}
+              </text>
+            </g>
+          );
+        })}
+        <text x={ox + 8} y={oy + 16} fill={MUTED} fontSize="12">
+          0
+        </text>
+        <text x={right + 8} y={oy + 5} fill={INK} fontSize="13" fontWeight="700">
           x
         </text>
-        <text x={ox + 6} y="22" fill={INK} fontSize="13" fontWeight="700">
+        <text x={ox + 8} y={top + 6} fill={INK} fontSize="13" fontWeight="700">
           y
         </text>
-        <polyline points={sq} fill="none" stroke={MUTED} strokeWidth="2.25" />
-        <polyline points={cu} fill="none" stroke={ACCENT} strokeWidth="2.25" />
-        <text x="318" y="48" fill={MUTED} fontSize="13" fontWeight="700">
+        <text x={toSvg(1.55, 2.4).x} y={toSvg(1.55, 2.4).y} fill={MUTED} fontSize="13" fontWeight="700">
           y = x²
         </text>
-        <text x="318" y="232" fill={ACCENT} fontSize="13" fontWeight="700">
+        <text x={toSvg(1.12, 3.3).x} y={toSvg(1.12, 3.3).y} fill={ACCENT} fontSize="13" fontWeight="700">
           y = x³
         </text>
       </svg>
@@ -1453,48 +1509,98 @@ function PowerEvenOdd() {
 }
 
 function PowerReciprocal() {
-  const W = 420;
-  const H = 280;
-  const ox = 210;
-  const oy = 140;
-  const sx = 48;
-  const sy = 36;
+  const W = 440;
+  const H = 300;
+  const ox = 220;
+  const oy = 150;
+  const left = 36;
+  const right = 404;
+  const top = 22;
+  const bottom = 278;
+  const sx = 58;
+  const sy = 40;
   const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
-  const left = Array.from({ length: 36 }, (_, i) => -3 + i * 0.07).filter((x) => x <= -0.22);
-  const right = Array.from({ length: 36 }, (_, i) => 0.22 + i * 0.08).filter((x) => x <= 3);
-  const invL = powerPolyline(left, (x) => 1 / x, toSvg);
-  const invR = powerPolyline(right, (x) => 1 / x, toSvg);
-  const sqL = powerPolyline(
-    left.filter((x) => 1 / (x * x) <= 3.6),
-    (x) => 1 / (x * x),
-    toSvg,
-  );
-  const sqR = powerPolyline(
-    right.filter((x) => 1 / (x * x) <= 3.6),
-    (x) => 1 / (x * x),
-    toSvg,
-  );
+  const gap = 0.16;
+  const leftXs = linspace(-3.2, -gap, 70);
+  const rightXs = linspace(gap, 3.2, 70);
+  const invL = powerPolyline(leftXs, (x) => 1 / x, toSvg);
+  const invR = powerPolyline(rightXs, (x) => 1 / x, toSvg);
+  const sqL = powerPolyline(leftXs, (x) => 1 / (x * x), toSvg);
+  const sqR = powerPolyline(rightXs, (x) => 1 / (x * x), toSvg);
+  const xTicks = [-3, -2, -1, 1, 2, 3];
+  const yTicks = [-3, -2, -1, 1, 2, 3];
   return (
     <div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
-        <line x1="28" y1={oy} x2="392" y2={oy} stroke={STROKE} strokeWidth="1.5" />
-        <line x1={ox} y1="18" x2={ox} y2="262" stroke={STROKE} strokeWidth="1.5" />
-        <line x1={ox} y1="18" x2={ox} y2="262" stroke={GRID} strokeWidth="1.25" strokeDasharray="4 4" />
-        <text x="396" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[460px]" role="img">
+        <defs>
+          <clipPath id="pw-rec-clip">
+            <rect x={left} y={top} width={right - left} height={bottom - top} />
+          </clipPath>
+        </defs>
+        <rect x={left} y={top} width={right - left} height={bottom - top} fill="#fff" stroke={GRID} strokeWidth="1" />
+        {xTicks.map((t) => (
+          <line key={`vg${t}`} x1={toSvg(t, 0).x} y1={top} x2={toSvg(t, 0).x} y2={bottom} stroke={GRID} strokeWidth="1" />
+        ))}
+        {yTicks.map((t) => (
+          <line key={`hg${t}`} x1={left} y1={toSvg(0, t).y} x2={right} y2={toSvg(0, t).y} stroke={GRID} strokeWidth="1" />
+        ))}
+        <line
+          x1={ox}
+          y1={top + 4}
+          x2={ox}
+          y2={bottom - 4}
+          stroke={ACCENT}
+          strokeWidth="1.15"
+          strokeDasharray="5 4"
+          opacity="0.55"
+        />
+        <g clipPath="url(#pw-rec-clip)">
+          <polyline points={sqL} fill="none" stroke={MUTED} strokeWidth="2.4" />
+          <polyline points={sqR} fill="none" stroke={MUTED} strokeWidth="2.4" />
+          <polyline points={invL} fill="none" stroke={ACCENT} strokeWidth="2.4" />
+          <polyline points={invR} fill="none" stroke={ACCENT} strokeWidth="2.4" />
+        </g>
+        <line x1={left} y1={oy} x2={right - 2} y2={oy} stroke={STROKE} strokeWidth="1.6" />
+        <line x1={ox} y1={bottom} x2={ox} y2={top + 2} stroke={STROKE} strokeWidth="1.6" />
+        <PowerAxisArrowH x={right} y={oy} />
+        <PowerAxisArrowV x={ox} y={top} />
+        {xTicks.map((t) => {
+          const p = toSvg(t, 0);
+          return (
+            <g key={`xt${t}`}>
+              <line x1={p.x} y1={oy - 5} x2={p.x} y2={oy + 5} stroke={STROKE} strokeWidth="1.4" />
+              <text x={p.x} y={oy + 18} textAnchor="middle" fill={MUTED} fontSize="11">
+                {t}
+              </text>
+            </g>
+          );
+        })}
+        {yTicks.map((t) => {
+          const p = toSvg(0, t);
+          return (
+            <g key={`yt${t}`}>
+              <line x1={ox - 5} y1={p.y} x2={ox + 5} y2={p.y} stroke={STROKE} strokeWidth="1.4" />
+              <text x={ox - 10} y={p.y + 4} textAnchor="end" fill={MUTED} fontSize="11">
+                {t}
+              </text>
+            </g>
+          );
+        })}
+        <circle cx={ox} cy={oy} r="3.2" fill="#fff" stroke={STROKE} strokeWidth="1.3" />
+        <text x={ox + 10} y={top + 16} fill={ACCENT} fontSize="11" fontWeight="700">
+          x = 0
+        </text>
+        <text x={right + 8} y={oy + 5} fill={INK} fontSize="13" fontWeight="700">
           x
         </text>
-        <text x={ox + 6} y="22" fill={INK} fontSize="13" fontWeight="700">
+        <text x={ox + 8} y={top + 6} fill={INK} fontSize="13" fontWeight="700">
           y
         </text>
-        <polyline points={invL} fill="none" stroke={ACCENT} strokeWidth="2.25" />
-        <polyline points={invR} fill="none" stroke={ACCENT} strokeWidth="2.25" />
-        <polyline points={sqL} fill="none" stroke={MUTED} strokeWidth="2.25" />
-        <polyline points={sqR} fill="none" stroke={MUTED} strokeWidth="2.25" />
-        <text x="268" y="48" fill={MUTED} fontSize="13" fontWeight="700">
-          y = 1/x²
-        </text>
-        <text x="52" y="48" fill={ACCENT} fontSize="13" fontWeight="700">
+        <text x={toSvg(1.55, 0.72).x} y={toSvg(1.55, 0.72).y} fill={ACCENT} fontSize="13" fontWeight="700">
           y = 1/x
+        </text>
+        <text x={toSvg(1.7, 0.28).x} y={toSvg(1.7, 0.28).y + 14} fill={MUTED} fontSize="13" fontWeight="700">
+          y = 1/x²
         </text>
       </svg>
       <Hint>Both blow up at x = 0 (vertical asymptote). 1/x changes sign; 1/x² stays positive.</Hint>
@@ -1503,54 +1609,93 @@ function PowerReciprocal() {
 }
 
 function PowerCompare() {
-  const W = 420;
-  const H = 280;
-  const ox = 48;
-  const oy = 240;
-  const sx = 160;
-  const sy = 110;
+  const W = 440;
+  const H = 300;
+  const ox = 52;
+  const oy = 252;
+  const left = ox;
+  const right = 400;
+  const top = 22;
+  const bottom = oy;
+  const xMax = 2;
+  const yMax = 2.2;
+  const sx = (right - ox) / xMax;
+  const sy = (oy - top - 10) / yMax;
   const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
-  const xs = Array.from({ length: 41 }, (_, i) => i * 0.04);
+  const xs = linspace(0, xMax, 80);
   const y1 = powerPolyline(xs, (x) => x, toSvg);
   const y2 = powerPolyline(xs, (x) => x * x, toSvg);
   const y3 = powerPolyline(xs, (x) => x * x * x, toSvg);
+  const xTicks = [0.5, 1, 1.5, 2];
+  const yTicks = [0.5, 1, 1.5, 2];
+  const meet = toSvg(1, 1);
   return (
     <div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[440px]" role="img">
-        <line x1={ox} y1={oy} x2="400" y2={oy} stroke={STROKE} strokeWidth="1.5" />
-        <line x1={ox} y1="18" x2={ox} y2={oy} stroke={STROKE} strokeWidth="1.5" />
-        <text x="404" y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[460px]" role="img">
+        <defs>
+          <clipPath id="pw-cmp-clip">
+            <rect x={left} y={top} width={right - left} height={bottom - top} />
+          </clipPath>
+        </defs>
+        <rect x={left} y={top} width={right - left} height={bottom - top} fill="#fff" stroke={GRID} strokeWidth="1" />
+        {xTicks.map((t) => (
+          <line key={`vg${t}`} x1={toSvg(t, 0).x} y1={top} x2={toSvg(t, 0).x} y2={bottom} stroke={GRID} strokeWidth="1" />
+        ))}
+        {yTicks.map((t) => (
+          <line key={`hg${t}`} x1={left} y1={toSvg(0, t).y} x2={right} y2={toSvg(0, t).y} stroke={GRID} strokeWidth="1" />
+        ))}
+        <g clipPath="url(#pw-cmp-clip)">
+          <polyline points={y1} fill="none" stroke={INK} strokeWidth="2.25" />
+          <polyline points={y2} fill="none" stroke={MUTED} strokeWidth="2.25" />
+          <polyline points={y3} fill="none" stroke={ACCENT} strokeWidth="2.4" />
+        </g>
+        <line x1={left} y1={oy} x2={right - 2} y2={oy} stroke={STROKE} strokeWidth="1.6" />
+        <line x1={ox} y1={bottom} x2={ox} y2={top + 2} stroke={STROKE} strokeWidth="1.6" />
+        <PowerAxisArrowH x={right} y={oy} />
+        <PowerAxisArrowV x={ox} y={top} />
+        {xTicks.map((t) => {
+          const p = toSvg(t, 0);
+          return (
+            <g key={`xt${t}`}>
+              <line x1={p.x} y1={oy - 5} x2={p.x} y2={oy + 5} stroke={STROKE} strokeWidth="1.4" />
+              <text x={p.x} y={oy + 18} textAnchor="middle" fill={MUTED} fontSize="12">
+                {t}
+              </text>
+            </g>
+          );
+        })}
+        {yTicks.map((t) => {
+          const p = toSvg(0, t);
+          return (
+            <g key={`yt${t}`}>
+              <line x1={ox - 5} y1={p.y} x2={ox + 5} y2={p.y} stroke={STROKE} strokeWidth="1.4" />
+              <text x={ox - 10} y={p.y + 4} textAnchor="end" fill={MUTED} fontSize="12">
+                {t}
+              </text>
+            </g>
+          );
+        })}
+        <circle cx={meet.x} cy={meet.y} r="3.6" fill="#fff" stroke={STROKE} strokeWidth="1.5" />
+        <text x={meet.x + 8} y={meet.y - 8} fill={INK} fontSize="11" fontWeight="700">
+          (1, 1)
+        </text>
+        <text x={right + 8} y={oy + 5} fill={INK} fontSize="13" fontWeight="700">
           x
         </text>
-        <text x={ox + 8} y="22" fill={INK} fontSize="13" fontWeight="700">
+        <text x={ox + 8} y={top + 6} fill={INK} fontSize="13" fontWeight="700">
           y
         </text>
-        <line
-          x1={ox + sx}
-          y1={oy}
-          x2={ox + sx}
-          y2={oy - sy}
-          stroke={GRID}
-          strokeWidth="1.25"
-          strokeDasharray="4 4"
-        />
-        <text x={ox + sx} y={oy + 16} textAnchor="middle" fill={MUTED} fontSize="12">
-          1
-        </text>
-        <polyline points={y1} fill="none" stroke={INK} strokeWidth="2.1" />
-        <polyline points={y2} fill="none" stroke={MUTED} strokeWidth="2.1" />
-        <polyline points={y3} fill="none" stroke={ACCENT} strokeWidth="2.25" />
-        <text x="318" y="86" fill={INK} fontSize="13" fontWeight="700">
+        <text x={toSvg(0.42, 0.55).x} y={toSvg(0.42, 0.55).y - 6} fill={INK} fontSize="13" fontWeight="700">
           y = x
         </text>
-        <text x="318" y="106" fill={MUTED} fontSize="13" fontWeight="700">
+        <text x={toSvg(0.62, 0.28).x} y={toSvg(0.62, 0.28).y + 14} fill={MUTED} fontSize="13" fontWeight="700">
           y = x²
         </text>
-        <text x="318" y="126" fill={ACCENT} fontSize="13" fontWeight="700">
+        <text x={toSvg(1.28, 2.05).x} y={toSvg(1.28, 2.05).y} fill={ACCENT} fontSize="13" fontWeight="700">
           y = x³
         </text>
       </svg>
-      <Hint>On (0,1) the higher power is smaller. They meet at 1, then the ranking reverses.</Hint>
+      <Hint>On (0,1) the higher power is smaller. They meet at 1, then x³ leaves the frame first.</Hint>
     </div>
   );
 }
