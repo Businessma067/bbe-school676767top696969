@@ -1,0 +1,602 @@
+[
+  {
+    "id": "math-8-61",
+    "case_id": "MATH 8.61",
+    "title": "Weld Strength Recovered From Two Spot Checks",
+    "context": "A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is larger than one, so strength outruns current.",
+      "At $16$ A the weld is already stronger than $300$ N.",
+      "The current needed for a given strength is itself a power of that strength.",
+      "An extra ampere adds more strength at $4$ A than it does at $9$ A.",
+      "The smallest current that clears the $400$ N reject line is below $18$ A."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $k=\\frac{3}{2}$. Strength outruns current when that exponent is larger than one:\n\n$$\\frac{3}{2}>1$$\n\nA current factor $c>1$ then multiplies strength by $c^{\\frac{3}{2}}$, which exceeds $c$, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $16$ A. The overview recovered $S(p)=5p^{\\frac{3}{2}}$, so\n\n$$16^{\\frac{3}{2}}=(\\sqrt{16})^{3}=64$$\n\n$$S(16)=5\\cdot 64=320$$\n\nThe claim needs more than $300$ N. We have $320>300$, so the statement is True.",
+      "**C.** → True\n\nA nonzero power inverts to another power. The overview recovered $S=5p^{\\frac{3}{2}}$. Isolating current raises both sides to the reciprocal $\\frac{2}{3}$:\n\n$$p=\\left(\\frac{S}{5}\\right)^{\\frac{2}{3}}$$\n\nCurrent needed for a given strength is still a power of that strength, so the statement is True.",
+      "**D.** → False\n\nAn extra ampere is the derivative of the recovered law $S(p)=5p^{\\frac{3}{2}}$:\n\n$$S'(p)=\\frac{15}{2}p^{\\frac{1}{2}}$$\n\nAt $4$ A:\n\n$$S'(4)=\\frac{15}{2}\\cdot 2=15$$\n\nAt $9$ A:\n\n$$S'(9)=\\frac{15}{2}\\cdot 3=\\frac{45}{2}$$\n\nThe claim needs $S'(4)>S'(9)$. We have $15<\\frac{45}{2}$, so the statement is False.",
+      "**E.** → False\n\nThe $400$ N reject line is inverted from the recovered law:\n\n$$5p^{\\frac{3}{2}}=400$$\n\n$$p^{\\frac{3}{2}}=80$$\n\n$$p=80^{\\frac{2}{3}}\\approx 18.57$$\n\nThe smallest clearing current is about $18.57$ A, which is not below $18$ A, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 61,
+    "solution_overview": "Weld strength follows $S(p)=Ap^{k}$ newtons for current $p>0$ amperes. The sheet records $S(4)=40$ and $S(9)=135$.\n\n**Part 1: Building the model.**\n\nLet $p$ = welding current in amperes and $S$ = tensile strength in newtons. Two unknowns need both observations. The ratio cancels $A$ and isolates $k$; the $4$ A level then pins $A$.\n\n**1. Translate: the ratio of the spot checks.**\n\n$$\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}$$\n\n**2. Translate: the $4$ A level.**\n\n$$A\\cdot 4^{k}=40$$\n\n**Part 2: Solve.**\n\n$$\\frac{135}{40}=\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$$\n\n$$\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$$\n\n$$\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{2k}$$\n\n$$k=\\frac{3}{2}$$\n\n$$4^{\\frac{3}{2}}=8$$\n\n$$8A=40$$\n\n$$A=5$$\n\nThe recovered law is\n\n$$S(p)=5p^{\\frac{3}{2}}$$"
+  },
+  {
+    "id": "math-8-62",
+    "case_id": "MATH 8.62",
+    "title": "Mooring Holding Power Across Kilograms and Tonnes",
+    "context": "A harbour buoy's holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Two $8$ kg buoys together already hold more than one $64$ kg buoy.",
+      "A $125$ kg buoy already holds more than $140$ kN.",
+      "Doubling buoy mass doubles holding power.",
+      "The mass needed for a given holding power is itself a power of that holding power.",
+      "Reaching $150$ kN takes more than $1$ tonne."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nCompare two $8$ kg buoys with one $64$ kg buoy. The overview recovered $H(m)=6m^{\\frac{2}{3}}$, and the trial already gives $H(8)=24$, so\n\n$$2H(8)=48$$\n\n$$64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}=16$$\n\n$$H(64)=6\\cdot 16=96$$\n\nThe claim needs $48>96$. We have $48<96$, so the statement is False.",
+      "**B.** → True\n\nThis is a level at $125$ kg. The overview recovered $H(m)=6m^{\\frac{2}{3}}$, so\n\n$$125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}=25$$\n\n$$H(125)=6\\cdot 25=150$$\n\nThe claim needs more than $140$ kN. We have $150>140$, so the statement is True.",
+      "**C.** → False\n\nDoubling mass multiplies holding power by $2$ only if the exponent is $1$. The given exponent is $\\frac{2}{3}$, so\n\n$$\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}\\approx 1.587$$\n\nThe factor is about $1.587$, not $2$, so the statement is False.",
+      "**D.** → True\n\nA nonzero power inverts to another power. The overview recovered $H=6m^{\\frac{2}{3}}$. Isolating mass raises both sides to the reciprocal $\\frac{3}{2}$:\n\n$$m=\\left(\\frac{H}{6}\\right)^{\\frac{3}{2}}$$\n\nMass needed for a given holding power is still a power of that holding power, so the statement is True.",
+      "**E.** → False\n\nThe storm floor of $150$ kN is inverted from the recovered kilogram law:\n\n$$6m^{\\frac{2}{3}}=150$$\n\n$$m^{\\frac{2}{3}}=25$$\n\n$$m=25^{\\frac{3}{2}}=125$$\n\nThat is $125$ kg, which is $0.125$ tonnes, not more than $1$ tonne. In tonnes,\n\n$$600t^{\\frac{2}{3}}=150$$\n\n$$t^{\\frac{2}{3}}=\\frac{1}{4}$$\n\n$$t=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}=0.125$$\n\nReaching $150$ kN takes $0.125$ tonnes, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 62,
+    "solution_overview": "Holding power follows $H(m)=Am^{\\frac{2}{3}}$ kilonewtons for mass $m>0$ kilograms. A trial buoy of $8$ kg held $24$ kN. The same law in tonnes is $H(t)=Bt^{\\frac{2}{3}}$, with $1$ tonne $=1000$ kg.\n\n**Part 1: Building the model.**\n\nLet $m$ = buoy mass in kilograms, $t$ = the same mass in tonnes, and $H$ = holding power in kilonewtons. The exponent is given, so the trial fixes $A$. Changing units is the substitution $m=1000t$.\n\n**1. Translate: the trial buoy.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=24$$\n\n**2. Translate: the unit change.**\n\n$$B=A\\cdot 1000^{\\frac{2}{3}}$$\n\n**Part 2: Solve.**\n\n$$8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=4$$\n\n$$4A=24$$\n\n$$A=6$$\n\n$$1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}=100$$\n\n$$B=6\\cdot 100=600$$\n\nThe recovered laws are\n\n$$H(m)=6m^{\\frac{2}{3}}$$\n\n$$H(t)=600t^{\\frac{2}{3}}$$"
+  },
+  {
+    "id": "math-8-63",
+    "case_id": "MATH 8.63",
+    "title": "Mesh Throughput Against an Inverse-Square Floor",
+    "context": "A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The hop distance needed for a given throughput is itself a power function of that throughput.",
+      "The farthest reliable hop distance is already under $12$ m.",
+      "Doubling the hop distance halves the throughput.",
+      "A hop of $11$ m still clears the $8$ Mbps reliability floor.",
+      "An extra metre of hop cuts more throughput at $8$ m than at $4$ m."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA nonzero power inverts to another power. The overview recovered $T=\\frac{800}{d^{2}}$. Isolating distance gives\n\n$$d=\\sqrt{800}\\, T^{-\\frac{1}{2}}$$\n\nHop distance needed for a given throughput is still a power of that throughput, so the statement is True.",
+      "**B.** → True\n\nThe reliability floor $T\\ge 8$ is inverted from the recovered law. Because the exponent is negative, that floor is a maximum hop:\n\n$$\\frac{800}{d^{2}}=8$$\n\n$$d^{2}=100$$\n\n$$d=10$$\n\nThe farthest reliable hop is $10$ m, which is already under $12$ m, so the statement is True.",
+      "**C.** → False\n\nDoubling the hop multiplies throughput by $2^{-2}$, not by $\\frac{1}{2}$:\n\n$$\\frac{T(2d)}{T(d)}=2^{-2}=\\frac{1}{4}$$\n\nDoubling a hop quarters throughput, so the statement is False.",
+      "**D.** → False\n\nWhether $11$ m still clears $8$ Mbps is a level of the recovered law:\n\n$$T(11)=\\frac{800}{11^{2}}=\\frac{800}{121}\\approx 6.61$$\n\nThe claim needs $T(11)\\ge 8$. We have $6.61<8$, so the statement is False.",
+      "**E.** → False\n\nAn extra metre is the derivative of the recovered law $T(d)=800d^{-2}$:\n\n$$T'(d)=-1600\\, d^{-3}$$\n\nAt $4$ m:\n\n$$|T'(4)|=\\frac{1600}{64}=25$$\n\nAt $8$ m:\n\n$$|T'(8)|=\\frac{1600}{512}=3.125$$\n\nThe claim needs a larger cut at $8$ m than at $4$ m. We have $3.125<25$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 63,
+    "solution_overview": "Mesh throughput follows $T(d)=Ad^{-2}$ megabits per second for hop distance $d>0$ metres. A bench test recorded $T(4)=50$.\n\n**Part 1: Building the model.**\n\nLet $d$ = hop distance in metres and $T$ = sustained throughput in megabits per second. The exponent $-2$ is given, so the bench reading fixes $A$.\n\n**1. Translate: the bench reading.**\n\n$$\\frac{A}{4^{2}}=50$$\n\n**Part 2: Solve.**\n\n$$\\frac{A}{16}=50$$\n\n$$A=800$$\n\nThe recovered law is\n\n$$T(d)=\\frac{800}{d^{2}}$$"
+  },
+  {
+    "id": "math-8-64",
+    "case_id": "MATH 8.64",
+    "title": "Allometric Gill Area Across Body Masses",
+    "context": "A fish physiologist models gill surface area as $G(m)=A m^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $\\frac{G(m)}{m}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so gill area grows more slowly than body mass.",
+      "A $16$ g fish already has more than $50$ cm$^{2}$ of gill.",
+      "Gill area per gram is constant across body masses.",
+      "Doubling body mass doubles gill area.",
+      "A $64$ g fish already has more than $200$ cm$^{2}$ of gill."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered exponent $\\frac{3}{4}$. Gill area grows more slowly than body mass when that exponent is smaller than one:\n\n$$\\frac{3}{4}<1$$\n\nA mass factor $c>1$ then multiplies area by $c^{\\frac{3}{4}}$, which is less than $c$, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $16$ g. The overview recovered $G(m)=8m^{\\frac{3}{4}}$, so\n\n$$16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=8$$\n\n$$G(16)=8\\cdot 8=64$$\n\nThe claim needs more than $50$ cm$^{2}$. We have $64>50$, so the statement is True.",
+      "**C.** → False\n\nThe overview recovered intensity $8m^{-\\frac{1}{4}}$. The leftover exponent is negative, so intensity falls as mass grows on $m>0$. It is not constant across body masses, so the statement is False.",
+      "**D.** → False\n\nDoubling mass multiplies gill area by $2$ only if the exponent is $1$. The given exponent is $\\frac{3}{4}$, so\n\n$$\\frac{G(2m)}{G(m)}=2^{\\frac{3}{4}}\\approx 1.682$$\n\nThe factor is about $1.682$, not $2$, so the statement is False.",
+      "**E.** → False\n\nThis is a level at $64$ g. The overview recovered $G(m)=8m^{\\frac{3}{4}}$, so\n\n$$64^{\\frac{3}{4}}=(2^{6})^{\\frac{3}{4}}=2^{\\frac{9}{2}}=16\\sqrt{2}$$\n\n$$G(64)=8\\cdot 16\\sqrt{2}=128\\sqrt{2}\\approx 181.02$$\n\nThe claim needs more than $200$ cm$^{2}$. We have $181.02<200$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 64,
+    "solution_overview": "Gill area follows $G(m)=Am^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has $G(256)=512$. Intensity is $\\frac{G(m)}{m}$.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams and $G$ = gill area in square centimetres. The exponent is given, so the specimen fixes $A$. Dividing by mass subtracts one from the exponent.\n\n**1. Translate: the specimen.**\n\n$$A\\cdot 256^{\\frac{3}{4}}=512$$\n\n**Part 2: Solve.**\n\n$$256^{\\frac{3}{4}}=(2^{8})^{\\frac{3}{4}}=64$$\n\n$$A=\\frac{512}{64}=8$$\n\nThe recovered law is\n\n$$G(m)=8m^{\\frac{3}{4}}$$\n\nand intensity is\n\n$$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}$$"
+  },
+  {
+    "id": "math-8-65",
+    "case_id": "MATH 8.65",
+    "title": "Curing Strength From a Timed Gap Between Samples",
+    "context": "A concrete lab models early curing strength as $S(t)=A\\sqrt{t}$ megapascals, where $t>0$ is curing time in days. The log never states $A$: it only notes that strength rose by exactly $5$ MPa between day $4$ and day $9$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Quadrupling curing time exactly doubles strength.",
+      "Strength on day $4$ is already above $8$ MPa.",
+      "An extra day adds more strength after nine days of curing than it does after four.",
+      "Reaching $30$ MPa still takes under $40$ days of curing.",
+      "The recorded $5$ MPa is the strength on day $9$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nQuadrupling time multiplies strength by $\\sqrt{4}$, because the coefficient cancels:\n\n$$\\frac{S(4t)}{S(t)}=\\sqrt{4}=2$$\n\nThe multiplier is exactly $2$ at every starting day, so the statement is True.",
+      "**B.** → True\n\nThis is a level on day $4$. The overview recovered $S(t)=5\\sqrt{t}$, so\n\n$$S(4)=5\\sqrt{4}=5\\cdot 2=10$$\n\nThe claim needs more than $8$ MPa. We have $10>8$, so the statement is True.",
+      "**C.** → False\n\nAn extra day is the derivative of the recovered law $S(t)=5\\sqrt{t}$:\n\n$$S'(t)=\\frac{5}{2}t^{-\\frac{1}{2}}$$\n\nAt day $4$:\n\n$$S'(4)=\\frac{5}{2}\\cdot\\frac{1}{2}=\\frac{5}{4}$$\n\nAt day $9$:\n\n$$S'(9)=\\frac{5}{2}\\cdot\\frac{1}{3}=\\frac{5}{6}$$\n\nThe claim needs $S'(9)>S'(4)$. We have $\\frac{5}{6}<\\frac{5}{4}$, so the statement is False.",
+      "**D.** → True\n\nReaching $30$ MPa is an inversion of the recovered law:\n\n$$5\\sqrt{t}=30$$\n\n$$\\sqrt{t}=6$$\n\n$$t=36$$\n\nThirty-six days is still under $40$ days, so the statement is True.",
+      "**E.** → False\n\nThe recorded $5$ MPa is the gap $S(9)-S(4)$, not a level. The overview recovered $S(t)=5\\sqrt{t}$, so\n\n$$S(9)=5\\sqrt{9}=15$$\n\nDay $9$ carries $15$ MPa, not the $5$ MPa rise, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 65,
+    "solution_overview": "Curing strength follows $S(t)=A\\sqrt{t}$ megapascals for time $t>0$ days. The log records only that strength rose by $5$ MPa between day $4$ and day $9$.\n\n**Part 1: Building the model.**\n\nLet $t$ = curing time in days and $S$ = strength in megapascals. No single level was logged, so the coefficient comes out of a difference. That works because $A$ is a common factor and the exponent $\\frac{1}{2}$ is given.\n\n**1. Translate: the surviving record.**\n\n$$A\\sqrt{9}-A\\sqrt{4}=5$$\n\n**Part 2: Solve.**\n\n$$A(3-2)=5$$\n\n$$A=5$$\n\nThe recovered law is\n\n$$S(t)=5\\sqrt{t}$$"
+  },
+  {
+    "id": "math-8-66",
+    "case_id": "MATH 8.66",
+    "title": "Cantilever Deflection Checked Against a Third Span",
+    "context": "A materials lab models tip deflection of a cantilever as $y(L)=A L^{k}$ millimetres, where $L>0$ is the free span in metres. Two spans are trusted: $y(3)=18$ and $y(6)=72$. A third run recorded $y(9)=150$, and the question is whether that third point still sits on the same power law. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent from the trusted pair is larger than one, so deflection outruns span.",
+      "The trusted quadratic already puts nine metres above $155$ mm.",
+      "Doubling the free span doubles the tip deflection.",
+      "The recorded third run sits more than $10$ mm below the trusted quadratic.",
+      "The third run sits on the same power law as the trusted pair."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $k=2$. Deflection outruns span when that exponent is larger than one:\n\n$$2>1$$\n\nA span factor $c>1$ then multiplies deflection by $c^{2}$, which exceeds $c$, so the statement is True.",
+      "**B.** → True\n\nThis is a level of the trusted quadratic at $9$ m. The overview recovered $y(L)=2L^{2}$, so\n\n$$y(9)=2\\cdot 81=162$$\n\nThe claim needs more than $155$ mm. We have $162>155$, so the statement is True.",
+      "**C.** → False\n\nDoubling the free span multiplies deflection by $2$ only if the exponent is $1$. The recovered exponent is $2$, so\n\n$$\\frac{y(2L)}{y(L)}=2^{2}=4$$\n\nDoubling the span quadruples the tip deflection, so the statement is False.",
+      "**D.** → True\n\nThe trusted quadratic at $9$ m is\n\n$$y(9)=2\\cdot 81=162$$\n\nThe recorded third run is $150$ mm, so\n\n$$162-150=12$$\n\nThe shortfall is $12$ mm, which is more than $10$ mm, so the statement is True.",
+      "**E.** → False\n\nA point sits on the trusted power law only when it matches the recovered quadratic. At $9$ m that quadratic gives $162$ mm, while the third run recorded $150$ mm. Those two figures are not equal, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 66,
+    "solution_overview": "Tip deflection is modelled as $y(L)=AL^{k}$ millimetres for free span $L>0$ metres. The trusted runs are $y(3)=18$ and $y(6)=72$.\n\n**Part 1: Building the model.**\n\nLet $L$ = free span in metres and $y$ = tip deflection in millimetres. Two trusted runs fix both constants: the ratio delivers $k$, and either run then delivers $A$.\n\n**1. Translate: the trusted ratio.**\n\n$$\\frac{72}{18}=2^{k}$$\n\n**2. Translate: the $3$ m run.**\n\n$$A\\cdot 3^{k}=18$$\n\n**Part 2: Solve.**\n\n$$4=2^{k}$$\n\n$$k=2$$\n\n$$A\\cdot 9=18$$\n\n$$A=2$$\n\nThe recovered law is\n\n$$y(L)=2L^{2}$$"
+  },
+  {
+    "id": "math-8-67",
+    "case_id": "MATH 8.67",
+    "title": "Mast Steel Mass Under a Finite Percentage Scale-Up",
+    "context": "A self-similar mast's steel mass follows $M(h)=A h^{k}$ kilograms, where $h>0$ is mast height in metres. Design notes state that lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses exactly $500$ kg of steel. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is larger than one, so steel mass outruns height.",
+      "A $12$ m mast already uses more than $800$ kg of steel.",
+      "The percentage rule alone forces the coefficient $A$ without using the $10$ m reference.",
+      "A $10\\%$ height increase raises mass by more than $30\\%$.",
+      "A $20\\%$ height increase raises mass by $20\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $k=3$. Steel mass outruns height when that exponent is larger than one:\n\n$$3>1$$\n\nA height factor $c>1$ then multiplies mass by $c^{3}$, which exceeds $c$, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $12$ m. The overview recovered $M(h)=\\frac{1}{2}h^{3}$, so\n\n$$M(12)=\\frac{1}{2}\\cdot 1728=864$$\n\nThe claim needs more than $800$ kg. We have $864>800$, so the statement is True.",
+      "**C.** → False\n\nThe percentage rule is the ratio $1.2^{k}=1.728$. That equation fixes $k=3$ and contains no level, so it cannot select $A$. The coefficient still needs the $10$ m reference $A\\cdot 10^{3}=500$. The percentage rule alone does not force $A$, so the statement is False.",
+      "**D.** → True\n\nA $10\\%$ height increase is the scale factor $1.1^{3}$:\n\n$$\\left(\\frac{11}{10}\\right)^{3}=\\frac{1331}{1000}=1.331$$\n\nMass rises by $33.1\\%$, which is more than $30\\%$, so the statement is True.",
+      "**E.** → False\n\nA $20\\%$ height increase is the scale factor already used to recover $k$:\n\n$$1.2^{3}=1.728$$\n\nMass rises by $72.8\\%$, not by $20\\%$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 67,
+    "solution_overview": "Steel mass follows $M(h)=Ah^{k}$ kilograms for height $h>0$ metres. Lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses $500$ kg.\n\n**Part 1: Building the model.**\n\nLet $h$ = mast height in metres and $M$ = steel mass in kilograms. A percentage rule is a ratio and fixes only $k$; the reference mast is a level and fixes only $A$.\n\n**1. Translate: the percentage rule.**\n\n$$1.2^{k}=1.728$$\n\n**2. Translate: the reference mast.**\n\n$$A\\cdot 10^{k}=500$$\n\n**Part 2: Solve.**\n\n$$1.2=\\frac{6}{5}$$\n\n$$1.728=\\frac{216}{125}=\\left(\\frac{6}{5}\\right)^{3}$$\n\n$$k=3$$\n\n$$A\\cdot 10^{3}=500$$\n\n$$A=\\frac{1}{2}$$\n\nThe recovered law is\n\n$$M(h)=\\frac{1}{2}h^{3}$$"
+  },
+  {
+    "id": "math-8-68",
+    "case_id": "MATH 8.68",
+    "title": "Cooling Fan Noise Against a Night-Time Cap",
+    "context": "Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m$^{2}$. Night operations are capped at $0.08$ W/m$^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the distance cuts intensity to one quarter.",
+      "At $4$ metres the intensity is already under $0.2$ W/m$^{2}$.",
+      "An extra metre cuts more intensity at $2$ m than it does at $6$ m.",
+      "At $6$ metres the intensity is still above the $0.08$ W/m$^{2}$ night cap.",
+      "The night cap is never met at any finite distance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nDoubling distance multiplies intensity by $2^{-2}$:\n\n$$\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}$$\n\nDoubling the distance cuts intensity to one quarter, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $4$ metres. The overview recovered $I(d)=\\frac{2.88}{d^{2}}$, so\n\n$$I(4)=\\frac{2.88}{16}=0.18$$\n\nThe claim needs under $0.2$ W/m$^{2}$. We have $0.18<0.2$, so the statement is True.",
+      "**C.** → True\n\nAn extra metre is the derivative of the recovered law $I(d)=2.88d^{-2}$:\n\n$$I'(d)=-5.76\\, d^{-3}$$\n\nAt $2$ m:\n\n$$|I'(2)|=\\frac{5.76}{8}=0.72$$\n\nAt $6$ m:\n\n$$|I'(6)|=\\frac{5.76}{216}\\approx 0.0267$$\n\nThe cut is larger at $2$ m than at $6$ m, so the statement is True.",
+      "**D.** → False\n\nThis is a level at $6$ metres. The overview recovered $I(d)=\\frac{2.88}{d^{2}}$, so\n\n$$I(6)=\\frac{2.88}{36}=0.08$$\n\nThe night cap is $0.08$ W/m$^{2}$. Intensity at $6$ m equals the cap, which is not still above it, so the statement is False.",
+      "**E.** → False\n\nThe night cap $I\\le 0.08$ is inverted from the recovered law. Because the exponent is negative, that cap is a minimum standing distance:\n\n$$\\frac{2.88}{d^{2}}=0.08$$\n\n$$d^{2}=36$$\n\n$$d=6$$\n\nThe cap is met at $d=6$ m, a finite distance, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 68,
+    "solution_overview": "Fan intensity follows $I(d)=Ad^{-2}$ watts per square metre for distance $d>0$ metres. A meter reading recorded $I(2)=0.72$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the hub in metres and $I$ = acoustic intensity in watts per square metre. The exponent $-2$ is given, so the meter reading fixes $A$.\n\n**1. Translate: the meter reading.**\n\n$$\\frac{A}{2^{2}}=0.72$$\n\n**Part 2: Solve.**\n\n$$\\frac{A}{4}=0.72$$\n\n$$A=2.88$$\n\nThe recovered law is\n\n$$I(d)=\\frac{2.88}{d^{2}}$$"
+  },
+  {
+    "id": "math-8-69",
+    "case_id": "MATH 8.69",
+    "title": "Pump Head Composed Through a Square Flow Law",
+    "context": "A booster pump's differential head follows $H(q)=A q^{2}$ metres when the delivered flow is $q>0$ cubic metres per hour. A commissioning run at $q=5$ recorded $H=50$ m. The plant then pipes that flow through a nozzle whose jet speed is $v(H)=4\\sqrt{H}$ metres per second, so jet speed as a function of flow is the composition $v(q)=v(H(q))$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After both stages, jet speed is proportional to flow.",
+      "At $q=5$ the jet speed is already above $28$ m/s.",
+      "Doubling the flow doubles the head.",
+      "A jet speed of $40\\sqrt{2}$ m/s still takes under $12$ m$^{3}$/h of flow.",
+      "Head is proportional to jet speed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $v(q)=4\\sqrt{2}\\, q$. After both stages the exponent on flow is $1$. Jet speed is proportional to flow, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $q=5$. The overview recovered $v(q)=4\\sqrt{2}\\, q$, so\n\n$$v(5)=20\\sqrt{2}\\approx 28.28$$\n\nThe claim needs more than $28$ m/s. We have $28.28>28$, so the statement is True.",
+      "**C.** → False\n\nDoubling flow multiplies head by $2$ only if the exponent is $1$. The recovered head law is $H(q)=2q^{2}$, so\n\n$$\\frac{H(2q)}{H(q)}=2^{2}=4$$\n\nDoubling the flow quadruples the head, so the statement is False.",
+      "**D.** → True\n\nA jet speed of $40\\sqrt{2}$ m/s is inverted from the recovered speed law:\n\n$$4\\sqrt{2}\\, q=40\\sqrt{2}$$\n\n$$q=10$$\n\nTen cubic metres per hour is still under $12$, so the statement is True.",
+      "**E.** → False\n\nEliminating $q$ between the recovered stages uses $v=4\\sqrt{H}$:\n\n$$H=\\frac{v^{2}}{16}$$\n\nHead is proportional to the square of jet speed, not to jet speed itself, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 69,
+    "solution_overview": "Pump head follows $H(q)=Aq^{2}$ metres for flow $q>0$ cubic metres per hour, with $H(5)=50$. Jet speed is $v(H)=4\\sqrt{H}$ metres per second, and the composition is $v(q)=v(H(q))$.\n\n**Part 1: Building the model.**\n\nLet $q$ = flow, $H$ = differential head, and $v$ = jet speed. The commissioning run fixes $A$. Composing the two stages multiplies the exponents.\n\n**1. Translate: the commissioning run.**\n\n$$A\\cdot 5^{2}=50$$\n\n**2. Translate: the composition.**\n\n$$v(q)=4\\sqrt{A q^{2}}$$\n\n**Part 2: Solve.**\n\n$$25A=50$$\n\n$$A=2$$\n\n$$v(q)=4\\sqrt{2q^{2}}=4\\sqrt{2}\\, q$$\n\nThe recovered laws are\n\n$$H(q)=2q^{2}$$\n\n$$v(q)=4\\sqrt{2}\\, q$$"
+  },
+  {
+    "id": "math-8-70",
+    "case_id": "MATH 8.70",
+    "title": "Warehouse Forklift Throughput Under a Staffing Cap",
+    "context": "Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "To double the logged throughput the yard must more than double the crew.",
+      "With $36$ drivers the model already predicts more than $110$ pallets per hour.",
+      "Throughput per driver rises as the crew grows.",
+      "Reaching $150$ pallets per hour stays inside the safety cap.",
+      "Because throughput rises with crew, the safety cap on drivers is also a cap on pallets moved per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nDoubling the logged $80$ pallets means $T=160$. Invert the recovered law:\n\n$$20\\sqrt{s}=160$$\n\n$$\\sqrt{s}=8$$\n\n$$s=64$$\n\nThe logged crew is $16$ drivers, and $64=4\\cdot 16$, which is more than a doubling, so the statement is True.",
+      "**B.** → True\n\nThis is a level at the safety cap $s=36$. The overview recovered $T(s)=20\\sqrt{s}$, so\n\n$$T(36)=20\\cdot 6=120$$\n\nThe claim needs more than $110$ pallets per hour. We have $120>110$, so the statement is True.",
+      "**C.** → False\n\nThroughput per driver is the recovered law divided by $s$:\n\n$$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so intensity falls as the crew grows. It does not rise, so the statement is False.",
+      "**D.** → False\n\nReaching $150$ pallets per hour is an inversion of the recovered law:\n\n$$20\\sqrt{s}=150$$\n\n$$\\sqrt{s}=7.5$$\n\n$$s=56.25$$\n\nThe safety cap is $36$ drivers, and $56.25>36$, so the statement is False.",
+      "**E.** → True\n\nThe recovered exponent $0.5$ is positive, so $T(s)$ rises with $s$. The largest legal crew is therefore the largest legal throughput. The driver cap is also a cap on pallets moved per hour, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 70,
+    "solution_overview": "Forklift throughput follows $T(s)=As^{0.5}$ pallets per hour for $s>0$ drivers. A logged shift recorded $T(16)=80$.\n\n**Part 1: Building the model.**\n\nLet $s$ = drivers on shift and $T$ = pallets moved per hour. The exponent $0.5$ is given, so the logged shift fixes $A$.\n\n**1. Translate: the logged shift.**\n\n$$A\\cdot 16^{0.5}=80$$\n\n**Part 2: Solve.**\n\n$$16^{0.5}=4$$\n\n$$4A=80$$\n\n$$A=20$$\n\nThe recovered law is\n\n$$T(s)=20\\sqrt{s}$$"
+  },
+  {
+    "id": "math-8-71",
+    "case_id": "MATH 8.71",
+    "title": "Subscriber Demand and Revenue for a Streaming Tier",
+    "context": "A streaming service prices one subscription tier at $p$ euros a month. Paid subscribers, in thousands, follow $q(p)=A p^{r}$ with both constants unknown. Quadrupling any price multiplies the subscriber count by $\\frac{1}{8}$, and at $4$ euros the tier holds $250$ thousand subscribers. Monthly revenue is $R=pq$, also in thousands of euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent on price in the demand model is smaller than minus one, so subscribers fall faster than the price rises.",
+      "At a price of $16$ euros, monthly revenue is already under $600$ thousand euros.",
+      "Revenue is a power function of price.",
+      "To double monthly revenue from the recorded $4$-euro price, the service must cut that price in half.",
+      "At a price of $9$ euros, monthly revenue is under $600$ thousand euros."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered $r=-\\frac{3}{2}$. Subscribers fall faster than price rises when that exponent is smaller than minus one:\n\n$$-\\frac{3}{2}<-1$$\n\nso the statement is True.",
+      "**B.** → True\n\nThis is a revenue level at $p=16$. The overview recovered $R(p)=2000p^{-\\frac{1}{2}}$, so\n\n$$R(16)=\\frac{2000}{4}=500$$\n\nThe claim needs under $600$ thousand euros. We have $500<600$, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered $R(p)=2000p^{-\\frac{1}{2}}$. That is a power of price, with exponent $-\\frac{1}{2}$, so the statement is True.",
+      "**D.** → False\n\nAt the recorded price, $R(4)=\\frac{2000}{2}=1000$. Doubling revenue means $R=2000$:\n\n$$2000p^{-\\frac{1}{2}}=2000$$\n\n$$p=1$$\n\nThe price factor is $\\frac{1}{4}$, not $\\frac{1}{2}$, so the statement is False.",
+      "**E.** → False\n\nThis is a revenue level at $p=9$. The overview recovered $R(p)=2000p^{-\\frac{1}{2}}$, so\n\n$$R(9)=\\frac{2000}{3}\\approx 666.67$$\n\nThe claim needs under $600$ thousand euros. We have $666.67>600$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 71,
+    "solution_overview": "Demand follows $q(p)=Ap^{r}$ thousand subscribers. Quadrupling any price multiplies subscribers by $\\frac{1}{8}$, and $q(4)=250$. Revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros and $q$ = subscribers in thousands. The scale rule isolates $r$; the four-euro level then pins $A$. Revenue adds one to the exponent.\n\n**1. Translate: the scale rule.**\n\n$$4^{r}=\\frac{1}{8}$$\n\n**2. Translate: the recorded level.**\n\n$$A\\cdot 4^{r}=250$$\n\n**Part 2: Solve.**\n\n$$4^{\\frac{3}{2}}=8$$\n\n$$r=-\\frac{3}{2}$$\n\n$$A\\cdot\\frac{1}{8}=250$$\n\n$$A=2000$$\n\nThe recovered laws are\n\n$$q(p)=2000p^{-\\frac{3}{2}}$$\n\n$$R(p)=2000p^{-\\frac{1}{2}}$$"
+  },
+  {
+    "id": "math-8-72",
+    "case_id": "MATH 8.72",
+    "title": "Fixed Retainer Plus a Square-Root Monitoring Fee",
+    "context": "A compliance-monitoring platform bills $C(n)=F+A n^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches, with both constants unknown. $100$ branches cost $700$ euros, and $400$ branches cost $1000$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because of the retainer, the monthly bill is not a power function of the branch count.",
+      "Monitoring $900$ branches costs more than $1200$ euros a month.",
+      "A larger network is cheaper per branch.",
+      "Quadrupling the branch count doubles the whole bill.",
+      "At $36$ branches the bill already exceeds the $100$-branch invoice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered a nonzero retainer $F=400$. A power function of $n$ would be a single monomial $An^{r}$. Adding a positive constant means $C$ is not a power of the branch count, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $n=900$. The overview recovered $C(n)=400+30n^{\\frac{1}{2}}$, so\n\n$$C(900)=400+30\\cdot 30=1300$$\n\nThe claim needs more than $1200$ euros. We have $1300>1200$, so the statement is True.",
+      "**C.** → True\n\nCost per branch is the recovered bill divided by $n$:\n\n$$\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}}$$\n\nBoth terms fall as $n$ grows. A larger network is cheaper per branch, so the statement is True.",
+      "**D.** → False\n\nQuadrupling the recorded $100$ branches lands on the second invoice, $400$ branches at $1000$ euros:\n\n$$\\frac{1000}{700}=\\frac{10}{7}\\approx 1.429$$\n\nThe whole bill is multiplied by about $1.429$, not by $2$, so the statement is False.",
+      "**E.** → False\n\nThis is a level at $n=36$. The overview recovered $C(n)=400+30n^{\\frac{1}{2}}$, so\n\n$$C(36)=400+30\\cdot 6=580$$\n\nThe $100$-branch invoice is $700$ euros, and $580<700$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 72,
+    "solution_overview": "The bill is $C(n)=F+An^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches. One hundred branches cost $700$ euros and four hundred cost $1000$.\n\n**Part 1: Building the model.**\n\nLet $n$ = branches and $C$ = monthly euros. Two levels recover $F$ and $A$, because the square roots $10$ and $20$ are known.\n\n**1. Translate: the two invoices.**\n\n$$F+10A=700$$\n\n$$F+20A=1000$$\n\n**Part 2: Solve.**\n\n$$10A=300$$\n\n$$A=30$$\n\n$$F+300=700$$\n\n$$F=400$$\n\nThe recovered law is\n\n$$C(n)=400+30n^{\\frac{1}{2}}$$"
+  },
+  {
+    "id": "math-8-73",
+    "case_id": "MATH 8.73",
+    "title": "Ordering Cost Against Holding Cost at a Spare-Parts Depot",
+    "context": "A spare-parts depot reorders one component in batches of $q>0$ units. Annual ordering cost is $O(q)=A q^{-1}$ euros and annual holding cost is $H(q)=B q$ euros, with both coefficients unknown. At a batch of $40$ units the two components are equal, and each is $120$ euros. The annual total is $T=O+H$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Annual total cost is smallest where the two components meet.",
+      "A batch of $60$ units costs more than $250$ euros a year in total.",
+      "Doubling any batch size leaves the annual total unchanged.",
+      "Cutting the batch from $40$ units to $20$ raises the annual total by as much as raising it from $40$ to $80$.",
+      "At $80$ units, ordering cost is more than $200$ euros."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe two components meet where $O(q)=H(q)$. Differentiating the recovered total gives\n\n$$T'(q)=-\\frac{4800}{q^{2}}+3$$\n\nSet the derivative equal to zero:\n\n$$-\\frac{4800}{q^{2}}+3=0$$\n\n$$q^{2}=1600$$\n\n$$q=40$$\n\nThe second derivative is\n\n$$T''(q)=\\frac{9600}{q^{3}}$$\n\nwhich is positive for $q>0$, so the critical point is a minimum. That point is the recorded crossing, so the statement is True.",
+      "**B.** → True\n\nThis is a level at $q=60$. The overview recovered $T(q)=\\frac{4800}{q}+3q$, so\n\n$$T(60)=80+180=260$$\n\nThe claim needs more than $250$ euros. We have $260>250$, so the statement is True.",
+      "**C.** → False\n\nDoubling the recorded batch of $40$ units gives $q=80$:\n\n$$T(40)=120+120=240$$\n\n$$T(80)=60+240=300$$\n\nThe annual total changes from $240$ to $300$. It is not unchanged, so the statement is False.",
+      "**D.** → True\n\nFrom the recovered total,\n\n$$T(20)=240+60=300$$\n\n$$T(40)=240$$\n\n$$T(80)=300$$\n\nCutting the batch from $40$ to $20$ raises $T$ by $60$ euros, and raising it from $40$ to $80$ raises $T$ by the same $60$ euros, so the statement is True.",
+      "**E.** → False\n\nOrdering cost at $q=80$ is the recovered $O(q)=\\frac{4800}{q}$:\n\n$$O(80)=\\frac{4800}{80}=60$$\n\nThe claim needs more than $200$ euros. We have $60<200$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 73,
+    "solution_overview": "Annual ordering cost is $O(q)=Aq^{-1}$ euros and annual holding cost is $H(q)=Bq$ euros. At a batch of $40$ units the two components each equal $120$ euros, and the annual total is $T=O+H$.\n\n**Part 1: Building the model.**\n\nLet $q$ = units per batch. The common level recovers both coefficients.\n\n**1. Translate: the recorded crossing.**\n\n$$\\frac{A}{40}=120$$\n\n$$40B=120$$\n\n**Part 2: Solve.**\n\n$$A=4800$$\n\n$$B=3$$\n\nThe recovered total is\n\n$$T(q)=\\frac{4800}{q}+3q$$"
+  },
+  {
+    "id": "math-8-74",
+    "case_id": "MATH 8.74",
+    "title": "Average Product on a Bottling Line",
+    "context": "Output on a bottling line follows $Q(L)=A L^{r}$ units a shift, where $L>0$ is labour hours, with both constants unknown. $16$ hours produce $96$ units, and $81$ hours produce $324$. Average product is output per labour hour, $Q(L)/L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Average product is a power function of labour hours, but its exponent is not the exponent of output.",
+      "At $16$ hours, average product is under $7$ units an hour.",
+      "To double output she must double the labour hours.",
+      "Average product falls as labour hours rise.",
+      "At $81$ hours, average product still exceeds $5$ units an hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered average product $12L^{-\\frac{1}{4}}$. That is a power of labour hours, but its exponent is $-\\frac{1}{4}$, not the output exponent $\\frac{3}{4}$, so the statement is True.",
+      "**B.** → True\n\nAverage product at $16$ hours is a level of the recovered intensity:\n\n$$\\frac{Q(16)}{16}=12\\cdot 16^{-\\frac{1}{4}}=12\\cdot\\frac{1}{2}=6$$\n\nThe claim needs under $7$ units an hour. We have $6<7$, so the statement is True.",
+      "**C.** → False\n\nDoubling output multiplies hours by $2$ only if the exponent is $1$. The recovered exponent is $\\frac{3}{4}$, so the hour factor is\n\n$$2^{\\frac{4}{3}}\\approx 2.520$$\n\nShe must more than double the labour hours, so the statement is False.",
+      "**D.** → True\n\nThe overview recovered average product $12L^{-\\frac{1}{4}}$. The leftover exponent is negative, so average product falls as labour hours rise. The claim is that ranking, so the statement is True.",
+      "**E.** → False\n\nAverage product at $81$ hours is a level of the recovered intensity:\n\n$$\\frac{Q(81)}{81}=12\\cdot 81^{-\\frac{1}{4}}=12\\cdot\\frac{1}{3}=4$$\n\nThe claim needs more than $5$ units an hour. We have $4<5$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 74,
+    "solution_overview": "Output follows $Q(L)=AL^{r}$ units a shift. Sixteen hours produce $96$ units, and eighty-one hours produce $324$. Average product is $\\frac{Q(L)}{L}$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours and $Q$ = units. The ratio isolates $r$; the sixteen-hour level then pins $A$. Dividing by $L$ subtracts one from the exponent.\n\n**1. Translate: the ratio.**\n\n$$\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}$$\n\n**2. Translate: the sixteen-hour level.**\n\n$$A\\cdot 16^{r}=96$$\n\n**Part 2: Solve.**\n\n$$\\frac{324}{96}=\\frac{27}{8}$$\n\n$$\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}$$\n\n$$\\left(\\frac{3}{2}\\right)^{4r}=\\left(\\frac{3}{2}\\right)^{3}$$\n\n$$r=\\frac{3}{4}$$\n\n$$16^{\\frac{3}{4}}=8$$\n\n$$8A=96$$\n\n$$A=12$$\n\nThe recovered laws are\n\n$$Q(L)=12L^{\\frac{3}{4}}$$\n\n$$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}}$$"
+  },
+  {
+    "id": "math-8-75",
+    "case_id": "MATH 8.75",
+    "title": "Learning Curve With an Irreducible Assembly Floor",
+    "context": "A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=F+A n^{-\\frac{1}{2}}$ minutes, $n\\ge 1$, with both constants unknown. After $25$ units the next unit takes $18$ minutes, and after $100$ units it takes $13$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "As cumulative output grows without bound, unit time approaches the handling floor without ever reaching it.",
+      "After $900$ cumulative units, modelled unit time is already under $10$ minutes.",
+      "Quadrupling cumulative output halves the learning component.",
+      "Quadrupling cumulative output halves the modelled unit time.",
+      "The unit built after $4$ cumulative units takes under $30$ minutes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe overview recovered floor $F=8$. As $n\\to\\infty$ the learning term $50n^{-\\frac{1}{2}}$ tends to $0$, so\n\n$$\\lim_{n\\to\\infty}t(n)=8$$\n\nFor every finite $n\\ge 1$ that learning term is still positive. Unit time approaches the floor without reaching it, so the statement is True.",
+      "**B.** → True\n\nThis is a level after $900$ cumulative units. The overview recovered $t(n)=8+50n^{-\\frac{1}{2}}$, so\n\n$$t(900)=8+\\frac{50}{30}=\\frac{29}{3}\\approx 9.67$$\n\nThe claim needs under $10$ minutes. We have $9.67<10$, so the statement is True.",
+      "**C.** → True\n\nThe learning component is $50n^{-\\frac{1}{2}}$. Quadrupling cumulative output multiplies that term by $4^{-\\frac{1}{2}}$:\n\n$$\\frac{50(4n)^{-\\frac{1}{2}}}{50n^{-\\frac{1}{2}}}=\\frac{1}{2}$$\n\nQuadrupling halves the learning component, so the statement is True.",
+      "**D.** → False\n\nQuadrupling the first recorded point sends $n=25$ to $n=100$, the second recorded point:\n\n$$t(25)=18, \\qquad t(100)=13$$\n\n$$\\frac{13}{18}\\approx 0.722$$\n\nModelled unit time is multiplied by about $0.722$, not by $\\frac{1}{2}$, so the statement is False.",
+      "**E.** → False\n\nThis is a level after $4$ cumulative units. The overview recovered $t(n)=8+50n^{-\\frac{1}{2}}$, so\n\n$$t(4)=8+\\frac{50}{2}=33$$\n\nThe claim needs under $30$ minutes. We have $33>30$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 75,
+    "solution_overview": "Unit time follows $t(n)=F+An^{-\\frac{1}{2}}$ minutes for $n\\ge 1$ cumulative units. After $25$ units the next unit takes $18$ minutes, and after $100$ units it takes $13$.\n\n**Part 1: Building the model.**\n\nLet $n$ = cumulative units and $t$ = minutes for the next unit. Two levels recover $F$ and $A$.\n\n**1. Translate: the two timings.**\n\n$$F+\\frac{A}{5}=18$$\n\n$$F+\\frac{A}{10}=13$$\n\n**Part 2: Solve.**\n\n$$\\frac{A}{10}=5$$\n\n$$A=50$$\n\n$$F+10=18$$\n\n$$F=8$$\n\nThe recovered law is\n\n$$t(n)=8+50n^{-\\frac{1}{2}}$$"
+  },
+  {
+    "id": "math-8-76",
+    "case_id": "MATH 8.76",
+    "title": "Break-Even for a Fish Farm With Diminishing Harvest Returns",
+    "context": "A fish farm turns feed into harvest revenue $R(x)=A x^{\\frac{2}{3}}$ thousand euros in a season, where $x>0$ is tonnes of feed, while feed and handling cost $C(x)=30x$ thousand euros. At $8$ tonnes of feed, harvest revenue was $360$ thousand euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue is proportional to the tonnes of feed used.",
+      "At $64$ tonnes, cost already exceeds harvest revenue.",
+      "An extra tonne of feed adds more revenue after $27$ tonnes than after $8$.",
+      "Once cost overtakes revenue, feeding still more cannot restore a surplus.",
+      "At $8$ tonnes the season clears more than $100$ thousand euros."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nRevenue is proportional to feed only if the exponent is $1$. The given exponent is $\\frac{2}{3}$, so\n\n$$\\frac{R(2x)}{R(x)}=2^{\\frac{2}{3}}\\approx 1.587$$\n\nnot $2$. Revenue is not proportional to the tonnes of feed used, so the statement is False.",
+      "**B.** → True\n\nThis is a comparison of the two recovered laws at $x=64$:\n\n$$R(64)=90\\cdot 16=1440$$\n\n$$C(64)=30\\cdot 64=1920$$\n\nCost $1920$ already exceeds revenue $1440$, so the statement is True.",
+      "**C.** → False\n\nAn extra tonne of feed is the derivative of the recovered revenue:\n\n$$R'(x)=60x^{-\\frac{1}{3}}$$\n\nAfter $8$ tonnes:\n\n$$R'(8)=60\\cdot\\frac{1}{2}=30$$\n\nAfter $27$ tonnes:\n\n$$R'(27)=60\\cdot\\frac{1}{3}=20$$\n\nThe claim needs $R'(27)>R'(8)$. We have $20<30$, so the statement is False.",
+      "**D.** → True\n\nCost overtakes revenue where $R(x)=C(x)$:\n\n$$90x^{\\frac{2}{3}}=30x$$\n\n$$x^{\\frac{1}{3}}=3$$\n\n$$x=27$$\n\nFor $x>27$ the ratio $\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}}$ stays below $1$ and keeps falling. Extra feed cannot restore a surplus, so the statement is True.",
+      "**E.** → True\n\nProfit at $8$ tonnes is revenue minus cost:\n\n$$R(8)-C(8)=360-240=120$$\n\nThe season clears $120$ thousand euros, which is more than $100$, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 76,
+    "solution_overview": "Harvest revenue follows $R(x)=Ax^{\\frac{2}{3}}$ thousand euros for $x>0$ tonnes of feed, and cost is $C(x)=30x$ thousand euros. At $8$ tonnes, revenue was $360$ thousand euros.\n\n**Part 1: Building the model.**\n\nLet $x$ = tonnes of feed. The exponent is given, so the eight-tonne level pins $A$. Cost is linear.\n\n**1. Translate: the recorded revenue.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=360$$\n\n**Part 2: Solve.**\n\n$$8^{\\frac{2}{3}}=4$$\n\n$$4A=360$$\n\n$$A=90$$\n\nThe recovered laws are\n\n$$R(x)=90x^{\\frac{2}{3}}$$\n\n$$C(x)=30x$$"
+  },
+  {
+    "id": "math-8-77",
+    "case_id": "MATH 8.77",
+    "title": "Calibrating a Handling-Cost Law From a Cost Difference",
+    "context": "A distribution centre models daily handling cost by $f(x)=A x^{\\frac{3}{2}}$ euros, where $x>0$ is a pallet-volume index. The individual daily figures were lost, and the only surviving record states that the cost at index $16$ exceeds the cost at index $4$ by $336$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Multiplying the pallet-volume index by $4$ multiplies handling cost by $4$.",
+      "At index $9$ the modelled handling cost is already above $150$ euros.",
+      "Handling cost grows faster than the pallet-volume index.",
+      "Because the exponent exceeds one, equal gaps in the index produce equal gaps in cost.",
+      "Raising the index from $9$ to $25$ adds under $500$ euros of handling cost."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nMultiplying the index by $4$ multiplies cost by $4$ only if the exponent is $1$. The given exponent is $\\frac{3}{2}$, so\n\n$$\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}=8$$\n\nA factor of $4$ on the index multiplies handling cost by $8$, not by $4$, so the statement is False.",
+      "**B.** → True\n\nThis is a level at index $9$. The overview recovered $f(x)=6x^{\\frac{3}{2}}$, so\n\n$$f(9)=6\\cdot 27=162$$\n\nThe claim needs more than $150$ euros. We have $162>150$, so the statement is True.",
+      "**C.** → True\n\nThe overview recovered exponent $\\frac{3}{2}$. Handling cost grows faster than the index when that exponent is larger than one:\n\n$$\\frac{3}{2}>1$$\n\nso the statement is True.",
+      "**D.** → False\n\nEqual cost gaps from equal index gaps would need a linear law. The recovered exponent $\\frac{3}{2}>1$ makes $f$ strictly convex, so equal index gaps produce larger cost gaps at larger $x$. For example\n\n$$f(9)-f(4)=162-48=114$$\n\n$$f(16)-f(9)=384-162=222$$\n\nThe gaps are not equal, so the statement is False.",
+      "**E.** → False\n\nThe cost added from index $9$ to index $25$ is a difference of two recovered levels:\n\n$$f(25)=6\\cdot 125=750$$\n\n$$f(9)=162$$\n\n$$750-162=588$$\n\nThe added cost is $588$ euros, which is not under $500$, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 77,
+    "solution_overview": "Handling cost follows $f(x)=Ax^{\\frac{3}{2}}$ euros for pallet-volume index $x>0$. The surviving record is $f(16)-f(4)=336$.\n\n**Part 1: Building the model.**\n\nLet $x$ = pallet-volume index and $f$ = daily euros. No single level is known, so $A$ comes out of a difference.\n\n**1. Translate: the surviving record.**\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Part 2: Solve.**\n\n$$16^{\\frac{3}{2}}=64, \\qquad 4^{\\frac{3}{2}}=8$$\n\n$$56A=336$$\n\n$$A=6$$\n\nThe recovered law is\n\n$$f(x)=6x^{\\frac{3}{2}}$$"
+  },
+  {
+    "id": "math-8-78",
+    "case_id": "MATH 8.78",
+    "title": "Inverting a Wastewater Load Model Against a Permit Ceiling",
+    "context": "A dye-house discharges a wastewater load of $W(s)=A s^{\\frac{3}{2}}$ kilograms a day, where $s>0$ is a production scale index. At scale $9$ the daily load is $135$ kilograms. The site permit caps the daily load at $320$ kilograms, and the plant wants the largest scale it may run. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The scale needed for a given load is itself a power function of that load.",
+      "The largest admissible scale is already below $20$.",
+      "Doubling the permit ceiling doubles the admissible scale index.",
+      "If the coefficient doubled, the admissible scale under the same ceiling would be halved.",
+      "At scale index $4$ the daily load is under $50$ kilograms."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA nonzero power inverts to another power. The overview recovered $W=5s^{\\frac{3}{2}}$. Isolating scale raises both sides to the reciprocal $\\frac{2}{3}$:\n\n$$s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$$\n\nScale needed for a given load is still a power of that load, so the statement is True.",
+      "**B.** → True\n\nThe permit cap $W=320$ is inverted from the recovered law:\n\n$$5s^{\\frac{3}{2}}=320$$\n\n$$s^{\\frac{3}{2}}=64$$\n\n$$s=16$$\n\nThe largest admissible scale is $16$, which is already below $20$, so the statement is True.",
+      "**C.** → False\n\nDoubling the permit ceiling multiplies admissible scale by $2$ only if the inverse exponent is $1$. From $s\\propto W^{\\frac{2}{3}}$,\n\n$$\\frac{s(2W)}{s(W)}=2^{\\frac{2}{3}}\\approx 1.587$$\n\nThe scale index is multiplied by about $1.587$, not by $2$, so the statement is False.",
+      "**D.** → False\n\nIf the coefficient doubled, admissible scale under the same ceiling would change by the factor $2^{-\\frac{2}{3}}$, because $s=(W/A)^{\\frac{2}{3}}$:\n\n$$2^{-\\frac{2}{3}}\\approx 0.630$$\n\nThe new scale is about $0.630$ times the old one, not half, so the statement is False.",
+      "**E.** → True\n\nThis is a level at scale index $4$. The overview recovered $W(s)=5s^{\\frac{3}{2}}$, so\n\n$$W(4)=5\\cdot 8=40$$\n\nThe claim needs under $50$ kilograms. We have $40<50$, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 78,
+    "solution_overview": "Wastewater load follows $W(s)=As^{\\frac{3}{2}}$ kilograms a day for scale $s>0$. At scale $9$ the daily load is $135$ kilograms.\n\n**Part 1: Building the model.**\n\nLet $s$ = production scale index and $W$ = daily kilograms. The recorded level pins $A$.\n\n**1. Translate: the recorded load.**\n\n$$A\\cdot 9^{\\frac{3}{2}}=135$$\n\n**Part 2: Solve.**\n\n$$9^{\\frac{3}{2}}=27$$\n\n$$27A=135$$\n\n$$A=5$$\n\nThe recovered law is\n\n$$W(s)=5s^{\\frac{3}{2}}$$"
+  },
+  {
+    "id": "math-8-79",
+    "case_id": "MATH 8.79",
+    "title": "Elasticity Shortcut Against the Exact Change in Parking Demand",
+    "context": "A city parking authority models hourly demand by $q(p)=A p^{-2}$ occupied spaces, where $p>0$ is the hourly tariff in euros. It records $4000$ occupied spaces at a tariff of $3$ euros. Demand of this form has constant elasticity $-2$, so the usual shortcut predicts a percentage change in demand equal to $-2$ times the percentage change in tariff. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The elasticity shortcut and the exact power agree on the loss from a $25\\%$ tariff rise.",
+      "Raising the tariff by $25\\%$ leaves more than $2500$ occupied spaces.",
+      "The elasticity shortcut overstates the true loss from a $25\\%$ tariff rise.",
+      "Cutting the tariff by $25\\%$ raises demand by the same percentage that a $25\\%$ rise cuts it.",
+      "At a tariff of $2$ euros, hourly demand exceeds $8000$ occupied spaces."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nA $25\\%$ tariff rise is the factor $k=\\frac{5}{4}$. The elasticity shortcut multiplies $-2$ by that percentage:\n\n$$-2\\cdot 0.25=-0.50$$\n\nThe exact power uses the recovered scale identity:\n\n$$\\frac{q(kp)}{q(p)}=k^{-2}$$\n\n$$\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}=0.64$$\n\nExact demand falls by $36\\%$, not by $50\\%$. The two routes do not agree, so the statement is False.",
+      "**B.** → True\n\nA $25\\%$ rise takes the tariff from $3$ to $3.75$. The exact multiplier is\n\n$$\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}=0.64$$\n\n$$q(3.75)=4000\\cdot 0.64=2560$$\n\nThe claim needs more than $2500$ occupied spaces. We have $2560>2500$, so the statement is True.",
+      "**C.** → True\n\nThe elasticity shortcut for a $25\\%$ rise multiplies $-2$ by that percentage:\n\n$$-2\\cdot 0.25=-0.50$$\n\nThe exact power uses the tariff factor $\\frac{5}{4}$:\n\n$$\\left(\\frac{5}{4}\\right)^{-2}-1=\\frac{16}{25}-1=-0.36$$\n\nThe shortcut's $50\\%$ loss is larger than the exact $36\\%$ loss, so the statement is True.",
+      "**D.** → False\n\nA $25\\%$ tariff cut is the factor $k=\\frac{3}{4}$:\n\n$$\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}\\approx 1.778$$\n\nDemand rises by about $77.8\\%$. A $25\\%$ rise cuts demand by $36\\%$, and $77.8\\neq 36$, so the statement is False.",
+      "**E.** → True\n\nThis is a level at a tariff of $2$ euros. The overview recovered $q(p)=36000p^{-2}$, so\n\n$$q(2)=\\frac{36000}{4}=9000$$\n\nThe claim needs more than $8000$ occupied spaces. We have $9000>8000$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 79,
+    "solution_overview": "Hourly demand follows $q(p)=Ap^{-2}$ occupied spaces for tariff $p>0$ euros. The authority records $q(3)=4000$. Demand of this form has constant elasticity $-2$.\n\n**Part 1: Building the model.**\n\nLet $p$ = hourly tariff in euros and $q$ = occupied spaces. The exponent $-2$ is given, so the recorded pair fixes $A$.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 3^{-2}=4000$$\n\n**Part 2: Solve.**\n\n$$\\frac{A}{9}=4000$$\n\n$$A=36000$$\n\nThe recovered law is\n\n$$q(p)=36000p^{-2}$$"
+  },
+  {
+    "id": "math-8-80",
+    "case_id": "MATH 8.80",
+    "title": "Geometrically Similar Bells Cast From One Pattern",
+    "context": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height $0.5$ metres was weighed at $30$ kilograms. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Mass grows faster than height.",
+      "A bell of height $1.5$ m already weighs more than $700$ kg.",
+      "Doubling a bell's height doubles its mass.",
+      "Mass per metre of height is the same at every height.",
+      "A one-metre bell already weighs more than $200$ kg."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe given exponent is $3$. Mass grows faster than height when that exponent is larger than one:\n\n$$3>1$$\n\nso the statement is True.",
+      "**B.** → True\n\nThis is a level at height $1.5$ m. The overview recovered $M(h)=240h^{3}$, so\n\n$$(1.5)^{3}=\\frac{27}{8}=3.375$$\n\n$$M(1.5)=240\\cdot 3.375=810$$\n\nThe claim needs more than $700$ kg. We have $810>700$, so the statement is True.",
+      "**C.** → False\n\nDoubling height multiplies mass by $2$ only if the exponent is $1$. The given exponent is $3$, so\n\n$$\\frac{M(2h)}{M(h)}=2^{3}=8$$\n\nDoubling a bell's height multiplies its mass by $8$, not by $2$, so the statement is False.",
+      "**D.** → False\n\nMass per metre of height is the recovered law divided by $h$:\n\n$$\\frac{M(h)}{h}=240h^{2}$$\n\nThat quantity still depends on $h$. It is not the same at every height, so the statement is False.",
+      "**E.** → True\n\nThis is a level at height $1$ m. The overview recovered $M(h)=240h^{3}$, so\n\n$$M(1)=240$$\n\nThe claim needs more than $200$ kg. We have $240>200$, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 80,
+    "solution_overview": "Similar bells obey $M(h)=Ah^{3}$ kilograms for height $h>0$ metres. A finished bell of height $0.5$ metres weighed $30$ kilograms.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; the weighing pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**Part 2: Solve.**\n\n$$(0.5)^{3}=\\frac{1}{8}$$\n\n$$\\frac{A}{8}=30$$\n\n$$A=240$$\n\nThe recovered law is\n\n$$M(h)=240h^{3}$$"
+  }
+]

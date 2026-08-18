@@ -56,10 +56,10 @@ This overrides any older “each letter must stand alone from the stem” rule. 
 
 ## Length rule (critical)
 
-1. **Length tracks work.** A direct lookup or one-arithmetic check stays short. A fresh scenario that uses already-recovered prices gets that extra arithmetic only. A long tail sum (like 13.18 C) still gets every term, because those terms are *this letter’s* work, not a reprint of the overview.
-2. **Do not restore duplication to satisfy a length floor.** Removing a repeated system solve is required even if the letter gets shorter. New text must keep every *claim-specific* step the old text had.
-3. **Extra length must buy clarity**, not filler. Add missing substitutions, missing intermediate displays, or missing comparisons for *this* claim. Do not pad with tips, slogans, or a second copy of the overview.
-4. If asked only to deepen underdeveloped statements, leave already-complete ones alone unless they violate the shared-model rule above.
+1. **Length tracks work.** A direct lookup or one-arithmetic check stays short (13.18 B). A fresh mix that uses already-recovered values gets that extra arithmetic only (13.18 A/D/E). A long tail sum (13.18 C) still gets every term, because those terms are *this letter’s* work, not a reprint of the overview.
+2. **Do not restore duplication to satisfy a length floor.** Removing a repeated system solve is required even if the letter gets shorter.
+3. **Do not pad.** No trap essays, no “the fork / discarded mix”, no numbered restatements of the same point. Extra length must be missing substitutions, missing intermediate displays, or missing comparisons for *this* claim.
+4. If asked only to deepen underdeveloped statements, leave already-complete ones alone unless they violate the shared-model rule or the no-padding rule.
 
 ---
 
@@ -147,7 +147,7 @@ Do:
 Rounding the rate to $0.09$ first gives $1/0.09 \approx 11.11$, and nearest-hour rounding would send $11.11$ down to $11$. The recovered rate is $0.085$, so $1/0.085 \approx 11.765$, which rounds up to $12$.
 ```
 
-Keep every numerical contrast. Length must stay at least the previous text; vary length across letters by adding the actual fork (what the mix lands on, why the recovered isolation is the one the claim names), not by repeating a shared slogan.
+Keep every numerical contrast that belongs to *this* claim. Vary length across letters by the actual extra arithmetic, not by filler.
 
 **Never put English words inside math.** The practice renderer sends a `$…$` / `$$…$$` span to KaTeX only when it holds pure math; a span with two consecutive English words is printed as raw LaTeX instead. So `$$\text{discount factor} = e^{-rt}$$` reaches the student as literal `\text{discount factor} = e^{-rt}`.
 
