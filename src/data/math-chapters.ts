@@ -89,7 +89,10 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
 
 const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   1: MATH_CH1_LOGIC,
-  4: MATH_CH4_EQUATIONS,
+  4: MATH_CH4_EQUATIONS.map((t) => ({
+    ...t,
+    placeholder: false,
+  })),
   5: MATH_CH5_LINEAR_EQUATIONS,
   8: MATH_CH8_POWER_FUNCTIONS,
   11: MATH_CH11_FINANCIAL,

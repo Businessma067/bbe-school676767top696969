@@ -366,6 +366,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                 const subTasks = list
                                   .map((c, i) => ({ c, i }))
                                   .filter(({ c }) => c.subsection === sub.id);
+                                if (subTasks.length === 0) return null;
                                 const subKey = `${ch.num}:${sub.id}`;
                                 const subOpen = expandedSub[subKey] ?? false;
                                 const subDone = subTasks.filter(({ c }) =>

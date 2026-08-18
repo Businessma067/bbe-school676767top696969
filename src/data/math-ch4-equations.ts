@@ -9,10 +9,10 @@ import type { MathTask } from "@/data/math-chapters";
 
 export const MATH_CH4_SUBSECTIONS = [
   { id: "4.1", title: "Linear equations in one unknown" },
-  { id: "4.2", title: "Quadratic equations" },
-  { id: "4.3", title: "Rational, radical and absolute-value equations" },
-  { id: "4.4", title: "Exponential and logarithmic equations" },
-  { id: "4.5", title: "Applied word problems and mixed exam sets" },
+  // 4.2 Quadratic equations
+  // 4.3 Rational, radical and absolute-value equations
+  // 4.4 Exponential and logarithmic equations
+  // 4.5 Applied word problems and mixed exam sets
 ] as const;
 
 export const MATH_CH4_EQUATIONS: MathTask[] = [
