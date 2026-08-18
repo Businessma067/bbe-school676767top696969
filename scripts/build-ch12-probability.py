@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ch12_pdf_stems import overlay_pdf_stems, parse_conditional_pdf, parse_ev_pdf
 from ch12_polish import polish_task, validate_tasks
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -655,7 +656,7 @@ def parse_conditional() -> list[dict]:
                 "subsection": "12.3",
             }
         )
-    return tasks
+    return overlay_pdf_stems(tasks, parse_conditional_pdf(), "conditional")
 
 
 def parse_ev() -> list[dict]:
@@ -697,7 +698,7 @@ def parse_ev() -> list[dict]:
                     "subsection": "12.4",
                 }
             )
-    return tasks
+    return overlay_pdf_stems(tasks, parse_ev_pdf(), "expected value")
 
 
 def _strip_latex_text(s: str) -> str:
