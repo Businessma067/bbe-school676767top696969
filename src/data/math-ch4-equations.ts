@@ -23,17 +23,15 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $2x + 6 = 14$ is $x = 4$.`,
+      `The solution of $2x + 6 = 14$ is $x = 5$.`,
       `The equation $5x - 3 = 12$ has solution $x = 2$.`,
       `If $x - 7 = 2$, then $x = 9$.`,
-      `The solution of $3(x + 1) = 12$ is $x = 3$.`,
+      `The solution of $3(x + 1) = 12$ is $x = 4$.`,
       `The equation $4x = 0$ has no solution.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [false, false, true, false, false],
     tactical_explanations: [
-      `**A.** → True
-
-A linear equation stays true if you do the same thing to both sides. Undo addition by subtracting, then undo multiplication by dividing.
+      `**A.** → False
 
 $$2x + 6 = 14$$
 
@@ -41,7 +39,7 @@ $$2x = 8$$
 
 $$x = 4$$
 
-Put $4$ back in: $2\\cdot 4 + 6 = 8 + 6 = 14$. Both sides match, so $x = 4$ really is the solution, and the statement is True.`,
+The claim says $x = 5$. That would give $2\\cdot 5 + 6 = 16$, not $14$. The solution is $4$, so the statement is False.`,
       `**B.** → False
 
 $$5x - 3 = 12$$
@@ -58,7 +56,7 @@ $$x - 7 = 2$$
 $$x = 9$$
 
 Check: $9 - 7 = 2$. The number that works is $9$, so the statement is True.`,
-      `**D.** → True
+      `**D.** → False
 
 $$3(x + 1) = 12$$
 
@@ -68,7 +66,7 @@ $$3x = 9$$
 
 $$x = 3$$
 
-Check: $3(3 + 1) = 12$. The solution is $3$, so the statement is True.`,
+The claim says $x = 4$. Check of $4$: $3(4 + 1) = 15$, not $12$. The solution is $3$, so the statement is False.`,
       `**E.** → False
 
 $$4x = 0$$
@@ -90,11 +88,11 @@ Zero is a perfectly good number, and $4\\cdot 0 = 0$. The equation has the uniqu
     statements: [
       `Starting from $x + 5 = 11$ and subtracting $5$ from both sides leaves $x = 6$.`,
       `The number that makes $7x = 21$ true is $4$.`,
-      `Adding $8$ to both sides of $x - 8 = 10$ produces $x = 18$.`,
+      `Adding $8$ to both sides of $x - 8 = 10$ produces $x = 16$.`,
       `Dividing both sides of $6x = 30$ by $6$ gives $x = 4$.`,
       `The equation $x + 0 = 9$ is solved by $x = 9$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -110,13 +108,13 @@ $$7x = 21$$
 $$x = 3$$
 
 The claim says $4$. That would need $7\\cdot 4 = 28$ on the right. The number that works is $3$, so the statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
 $$x - 8 = 10$$
 
 $$x = 18$$
 
-Check: $18 - 8 = 10$. Adding $8$ produces $x = 18$, so the statement is True.`,
+The claim says $x = 16$. Sixteen would give $16 - 8 = 8$, not $10$. Adding $8$ produces $x = 18$, so the statement is False.`,
       `**D.** → False
 
 $$6x = 30$$
@@ -188,9 +186,9 @@ The claim says $4$, which looks like someone subtracted $6$ from $10$ instead of
       `The equation $5(x - 2) = 20$ has solution $x = 6$.`,
       `The equation $3(2x + 1) = 21$ has solution $x = 4$.`,
       `Expanding $4(x - 5) = 12$ and solving gives $x = 8$.`,
-      `The equation $(x + 3) + (x - 1) = 10$ has solution $x = 3$.`,
+      `The equation $(x + 3) + (x - 1) = 10$ has solution $x = 4$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -212,11 +210,11 @@ The claim says $x = 4$. The recovered solution is $3$, so the statement is False
 $$4(x - 5) = 12 \\Rightarrow 4x - 20 = 12 \\Rightarrow x = 8$$
 
 Check: $4(8 - 5) = 12$. The statement is True.`,
-      `**E.** → False
+      `**E.** → True
 
 $$(x + 3) + (x - 1) = 10 \\Rightarrow 2x + 2 = 10 \\Rightarrow x = 4$$
 
-The claim says $x = 3$. At $x = 3$ the left side is $8$, not $10$. The statement is False.`,
+Check: $(4 + 3) + (4 - 1) = 10$. The solution is $4$, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 4,
@@ -230,23 +228,23 @@ The claim says $x = 3$. At $x = 3$ the left side is $8$, not $10$. The statement
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The solution of $\\dfrac{x}{4} = 5$ is $x = 20$.`,
-      `Solving $\\dfrac{x}{3} + 2 = 6$ gives $x = 12$.`,
+      `Solving $\\dfrac{x}{3} + 2 = 6$ gives $x = 10$.`,
       `The equation $\\dfrac{2x}{5} = 6$ has solution $x = 12$.`,
       `If $\\dfrac{x + 1}{2} = 5$, then $x = 9$.`,
       `The equation $\\dfrac{3x}{2} = 9$ is solved by $x = 4$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
 $$\\frac{x}{4} = 5 \\Rightarrow x = 20$$
 
 Check: $\\frac{20}{4} = 5$. The statement is True.`,
-      `**B.** → True
+      `**B.** → False
 
 $$\\frac{x}{3} + 2 = 6 \\Rightarrow \\frac{x}{3} = 4 \\Rightarrow x = 12$$
 
-Check: $4 + 2 = 6$. The statement is True.`,
+The claim says $x = 10$. Ten would give $\\frac{10}{3} + 2$, not $6$. The solution is $12$, so the statement is False.`,
       `**C.** → False
 
 $$\\frac{2x}{5} = 6 \\Rightarrow 2x = 30 \\Rightarrow x = 15$$
@@ -276,11 +274,11 @@ The claim says $4$. The solution is $6$, so the statement is False.`,
     statements: [
       `A rectangle has width $4$ cm and length $3$ cm more than the width. Its perimeter is $22$ cm.`,
       `If one side of a square is $6$ cm, the perimeter is $24$ cm.`,
-      `A number that is $5$ more than twice $8$ is $26$.`,
+      `A number that is $5$ more than twice $8$ is $21$.`,
       `Splitting $30$ into two parts where one part is $4$ more than the other gives the parts $17$ and $13$.`,
-      `A tank holds $40$ litres. After $15$ litres are poured out, $20$ litres remain.`,
+      `A tank holds $40$ litres. After $15$ litres are poured out, $25$ litres remain.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -290,21 +288,21 @@ Width $4$ cm, length $7$ cm. Perimeter $2(4 + 7) = 22$. The statement is True.`,
 $$P = 4 \\cdot 6 = 24$$
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
 $$2 \\cdot 8 + 5 = 21$$
 
-The claim says $26$. The number the sentence describes is $21$, so the statement is False.`,
+Five more than twice eight is $21$. The statement is True.`,
       `**D.** → True
 
 $$x + (x + 4) = 30 \\Rightarrow x = 13$$
 
 The parts are $13$ and $17$. The statement is True.`,
-      `**E.** → False
+      `**E.** → True
 
 $$40 - 15 = 25$$
 
-The claim says $20$ litres remain. Twenty-five litres remain, so the statement is False.`,
+Twenty-five litres remain. The statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 6,
@@ -320,10 +318,10 @@ The claim says $20$ litres remain. Twenty-five litres remain, so the statement i
       `The equation $2x + 3 = 3x - 5$ has solution $x = 8$.`,
       `The equation $5 - x = 2x + 8$ has solution $x = -1$.`,
       `The equation $4(x - 1) = 2(x + 5)$ has solution $x = 7$.`,
-      `The equations $x + 3 = 10$ and $2x = 16$ have the same solution.`,
+      `The equations $x + 3 = 10$ and $2x = 14$ have the same solution.`,
       `Collecting like terms in $7x - 2 - 3x = 10$ yields $4x = 12$, so $x = 3$.`,
     ],
-    answer_key: [true, true, true, false, true],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -340,15 +338,15 @@ Check: both sides equal $6$. The statement is True.`,
 $$4x - 4 = 2x + 10 \\Rightarrow 2x = 14 \\Rightarrow x = 7$$
 
 Check: both sides equal $24$. The statement is True.`,
-      `**D.** → False
+      `**D.** → True
 
 $$x + 3 = 10 \\Rightarrow x = 7$$
 
-while
+and
 
-$$2x = 16 \\Rightarrow x = 8$$
+$$2x = 14 \\Rightarrow x = 7$$
 
-They do not share a solution, so the statement is False.`,
+They share the solution $x = 7$. The statement is True.`,
       `**E.** → True
 
 $$4x - 2 = 10 \\Rightarrow 4x = 12 \\Rightarrow x = 3$$
@@ -366,17 +364,17 @@ Check: $21 - 2 - 9 = 10$. The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x}{2} + \\dfrac{x}{3} = 5$ has solution $x = 6$.`,
+      `The equation $\\dfrac{x}{2} + \\dfrac{x}{3} = 5$ has solution $x = 8$.`,
       `The equation $\\dfrac{x - 1}{3} = \\dfrac{x + 1}{5}$ has solution $x = 2$.`,
       `Clearing the denominator in $\\dfrac{2x}{3} = 8$ gives $x = 10$.`,
-      `The equation $\\dfrac{x}{4} - \\dfrac{x}{6} = 1$ has solution $x = 12$.`,
+      `The equation $\\dfrac{x}{4} - \\dfrac{x}{6} = 1$ has solution $x = 10$.`,
       `The solution of $\\dfrac{3x + 1}{4} = 4$ is $x = 5$.`,
     ],
-    answer_key: [true, false, false, true, true],
+    answer_key: [false, false, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
-Multiply through by $6$: $3x + 2x = 30 \\Rightarrow x = 6$. Check: $3 + 2 = 5$. The statement is True.`,
+Multiply through by $6$: $3x + 2x = 30 \\Rightarrow x = 6$. The claim says $x = 8$. Eight would give $4 + \\frac{8}{3}$, not $5$. The solution is $6$, so the statement is False.`,
       `**B.** → False
 
 $$5(x - 1) = 3(x + 1) \\Rightarrow 5x - 5 = 3x + 3 \\Rightarrow x = 4$$
@@ -387,9 +385,9 @@ The claim says $x = 2$. The recovered solution is $4$, so the statement is False
 $$2x = 24 \\Rightarrow x = 12$$
 
 The claim says $x = 10$. The statement is False.`,
-      `**D.** → True
+      `**D.** → False
 
-Multiply through by $12$: $3x - 2x = 12 \\Rightarrow x = 12$. Check: $3 - 2 = 1$. The statement is True.`,
+Multiply through by $12$: $3x - 2x = 12 \\Rightarrow x = 12$. The claim says $x = 10$. The solution is $12$, so the statement is False.`,
       `**E.** → True
 
 $$3x + 1 = 16 \\Rightarrow x = 5$$
@@ -409,11 +407,11 @@ Check: $\\frac{16}{4} = 4$. The statement is True.`,
     statements: [
       `If one side of a rectangle is $3$ cm longer than the other and the perimeter is $22$ cm, then the longer side is $7$ cm.`,
       `A car travels at an average speed of $60$ km/h and covers $90$ km. Then the trip took $2$ hours.`,
-      `A cook has $2$ litres of $20\\%$ vinegar and mixes it with $2$ litres of water. The mixture is then $10\\%$ vinegar.`,
+      `A cook has $2$ litres of $20\\%$ vinegar and mixes it with $2$ litres of water. The mixture is then $20\\%$ vinegar.`,
       `A prize of $9000$ EUR is split so that second place gets $50\\%$ of first place, and third place gets $50\\%$ of second place. Then second place is $3000$ EUR.`,
-      `The solution of $2x + 1 = x + 8$ is smaller than $10$.`,
+      `The solution of $2x + 1 = x + 8$ is larger than $10$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -425,17 +423,17 @@ The longer side is $7$ cm. The statement is True.`,
 $$t = \\frac{90}{60} = 1.5$$
 
 hours, not $2$. The statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
-Acid $0.40$ litres in $4$ litres total is $10\\%$. The statement is True.`,
+Acid $0.40$ litres in $4$ litres total is $10\\%$, not $20\\%$. Water dilutes the concentration. The statement is False.`,
       `**D.** → False
 
 $$1.75a = 9000 \\Rightarrow a \\approx 5142.86$$, so second place is about $2571$ EUR, not $3000$. The statement is False.`,
-      `**E.** → True
+      `**E.** → False
 
 $$2x + 1 = x + 8 \\Rightarrow x = 7$$
 
-Seven is smaller than ten. The statement is True.`,
+Seven is smaller than ten, not larger. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 9,
@@ -448,17 +446,17 @@ Seven is smaller than ten. The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x + 3 = x + 5$ has no solution.`,
+      `The equation $x + 3 = x + 5$ has solution $x = 0$.`,
       `The equation $2(x + 4) = 2x + 8$ is true for every real number $x$.`,
       `The equation $-3x = 12$ has solution $x = 4$.`,
-      `The equation $5x + 2 = 5x + 2$ has infinitely many solutions.`,
+      `The equation $5x + 2 = 5x + 2$ has no solution.`,
       `The equation $x = x + 1$ is solved by $x = 0$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [false, true, false, false, false],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
-Subtract $x$: $3 = 5$, which is never true. No solution, so the statement is True.`,
+Subtract $x$: $3 = 5$, which is never true. There is no solution, including $x = 0$. The statement is False.`,
       `**B.** → True
 
 Both sides are $2x + 8$. The equation is an identity, so the statement is True.`,
@@ -467,9 +465,9 @@ Both sides are $2x + 8$. The equation is an identity, so the statement is True.`
 $$x = \\frac{12}{-3} = -4$$
 
 The claim says $x = 4$. The solution is $-4$, so the statement is False.`,
-      `**D.** → True
+      `**D.** → False
 
-The two sides are identical, so every real $x$ works. The statement is True.`,
+The two sides are identical, so every real $x$ works: infinitely many solutions, not none. The statement is False.`,
       `**E.** → False
 
 Subtract $x$: $0 = 1$. No solution at all, including $x = 0$. The statement is False.`,
@@ -489,9 +487,9 @@ Subtract $x$: $0 = 1$. No solution at all, including $x = 0$. The statement is F
       `The sum of three consecutive odd integers is $75$. The largest of them is $29$.`,
       `A purse holds only $2$ EUR coins and $5$ EUR coins. There are $16$ coins in all, worth $53$ EUR. Then there are $7$ coins of $5$ EUR.`,
       `Water flows into an empty tank at $15$ litres per minute. After $12$ minutes the tank is four-fifths full, so the tank's capacity is $180$ litres.`,
-      `A number plus one-third of itself equals $48$. That number is $36$.`,
+      `A number plus one-third of itself equals $48$. That number is $40$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -529,11 +527,11 @@ Twelve minutes deliver $15 \\cdot 12 = 180$ litres, and that is four-fifths of t
 $$\\text{capacity} = 180 \\cdot \\frac{5}{4} = 225$$
 
 The tank holds $225$ litres, so the statement is False.`,
-      `**E.** → True
+      `**E.** → False
 
 $$x + \\frac{x}{3} = 48 \\Rightarrow \\frac{4x}{3} = 48 \\Rightarrow x = 36$$
 
-Check: $36 + 12 = 48$. The statement is True.`,
+The claim says $40$. Check: $36 + 12 = 48$. The number is $36$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 11,
@@ -590,10 +588,10 @@ The rate is $30$ litres per minute, so five minutes pour $150$ litres. The state
       `An isosceles triangle has perimeter $40$ cm. Each of the two equal sides is $5$ cm longer than the base. Then the base is $10$ cm.`,
       `A rectangular garden is $3$ m longer than it is wide. Fencing all four sides uses $54$ m of wire. Then the width is $12$ m.`,
       `The three angles of a triangle, measured in degrees, are consecutive integers. The largest angle is $61^{\\circ}$.`,
-      `A square and an equilateral triangle have the same side length. The triangle's perimeter is $12$ cm, so the square's perimeter is also $12$ cm.`,
+      `A square and an equilateral triangle have the same side length. The triangle's perimeter is $12$ cm, so the square's perimeter is $16$ cm.`,
       `A rectangle has width $8$ cm. If the length is increased by $2$ cm and the width is left unchanged, the perimeter increases by $4$ cm.`,
     ],
-    answer_key: [true, true, true, false, true],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -610,9 +608,9 @@ The garden is $12$ m by $15$ m. The statement is True.`,
 $$n + (n + 1) + (n + 2) = 180 \\Rightarrow n = 59$$
 
 The largest is $61^{\\circ}$. Check: $59 + 60 + 61 = 180$. The statement is True.`,
-      `**D.** → False
+      `**D.** → True
 
-The triangle's side is $4$ cm, so the square's perimeter is $16$ cm, not $12$. The statement is False.`,
+The triangle's side is $4$ cm, so the square's perimeter is $4 \\cdot 4 = 16$ cm. The statement is True.`,
       `**E.** → True
 
 Length grows by $2$ cm on each of two sides, so the perimeter grows by $4$ cm. The width never enters that difference. The statement is True.`,
@@ -631,10 +629,10 @@ Length grows by $2$ cm on each of two sides, so the perimeter grows by $4$ cm. T
       `The customer bought $3$ kg of pears.`,
       `The customer bought $6$ kg of apples.`,
       `Apples accounted for $12$ EUR of the bill.`,
-      `If the customer had bought $1$ kg less of each fruit, the bill would have been $15$ EUR.`,
-      `Pears made up more than half of the total mass purchased.`,
+      `If the customer had bought $1$ kg less of each fruit, the bill would have been $16$ EUR.`,
+      `Pears made up one-third of the total mass purchased.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -651,12 +649,12 @@ Apples are $3 + 3 = 6$ kg. The statement is True.`,
 $$6 \\cdot 2 = 12$$
 
 euros from apples. The statement is True.`,
-      `**D.** → False
+      `**D.** → True
 
-Then $5$ kg of apples and $2$ kg of pears cost $10 + 6 = 16$ EUR, not $15$. The statement is False.`,
-      `**E.** → False
+Then $5$ kg of apples and $2$ kg of pears cost $10 + 6 = 16$ EUR. The statement is True.`,
+      `**E.** → True
 
-Pears are $3$ kg of $9$ kg total, which is one-third, not more than half. The statement is False.`,
+Pears are $3$ kg of $9$ kg total, which is one-third. The statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 14,
@@ -671,11 +669,11 @@ Pears are $3$ kg of $9$ kg total, which is one-third, not more than half. The st
     statements: [
       `After a $20\\%$ discount a jacket costs $64$ EUR. The original price was $80$ EUR.`,
       `A price is raised by $25\\%$ and then reduced by $25\\%$. The final price equals the original price.`,
-      `$40\\%$ of a number, increased by $12$, gives $32$. The number is $50$.`,
+      `$40\\%$ of a number, increased by $12$, gives $32$. The number is $40$.`,
       `A vat holds $8$ litres of juice that is $12\\%$ concentrate. After $2$ litres of water are added, the concentrate is $10\\%$.`,
-      `A salary of $2400$ EUR is increased by $10\\%$ and then by a further $10\\%$. The new salary is $2904$ EUR.`,
+      `A salary of $2400$ EUR is increased by $10\\%$ and then by a further $10\\%$. The new salary is $2640$ EUR.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -687,19 +685,19 @@ Check: $20\\%$ of $80$ is $16$, and $80 - 16 = 64$. The statement is True.`,
 $$1.25 \\cdot 0.75 = 0.9375$$
 
 The final price is $93.75\\%$ of the original, not $100\\%$. The statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
 $$0.40x + 12 = 32 \\Rightarrow x = 50$$
 
-Check: $20 + 12 = 32$. The statement is True.`,
+The claim says $40$. Forty would give $16 + 12 = 28$, not $32$. The number is $50$, so the statement is False.`,
       `**D.** → False
 
 Concentrate $0.12 \\cdot 8 = 0.96$ litres in $10$ litres total is $9.6\\%$, not $10\\%$. The statement is False.`,
-      `**E.** → True
+      `**E.** → False
 
 $$2400 \\cdot 1.1 \\cdot 1.1 = 2400 \\cdot 1.21 = 2904$$
 
-Two $10\\%$ raises are a $21\\%$ raise, not $20\\%$. The statement is True.`,
+The claim says $2640$, which would be a single $10\\%$ raise. Two $10\\%$ raises are $2904$ EUR, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 15,
@@ -714,11 +712,11 @@ Two $10\\%$ raises are a $21\\%$ raise, not $20\\%$. The statement is True.`,
     statements: [
       `Towns A and B are $180$ km apart. Two cars leave at the same instant toward each other, one at $50$ km/h and the other at $40$ km/h. They meet after $2$ hours.`,
       `The same two towns. A courier starts from A at $45$ km/h. After $1$ hour a second courier starts from B at $60$ km/h toward A. They meet $2$ hours after the second courier starts.`,
-      `A boat goes $24$ km downstream in $2$ hours and returns the same $24$ km upstream in $3$ hours. The boat's speed in still water is $10$ km/h.`,
+      `A boat goes $24$ km downstream in $2$ hours and returns the same $24$ km upstream in $3$ hours. The boat's speed in still water is $12$ km/h.`,
       `A cyclist rides to town at $15$ km/h and back at $10$ km/h. The one-way distance is $30$ km, so the round trip takes $4$ hours.`,
       `Pipe A alone fills a pool in $10$ hours and pipe B alone fills it in $15$ hours. Together they fill the pool in $6$ hours.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -728,9 +726,9 @@ In two hours they cover $100$ km and $80$ km. The statement is True.`,
       `**B.** → False
 
 After one hour, $135$ km remains. They close at $105$ km/h, so $t = \\frac{135}{105} = \\frac{9}{7}$ hours, not $2$. The statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
-Downstream $12$ km/h, upstream $8$ km/h. Still water is their average, $10$ km/h. The statement is True.`,
+Downstream $12$ km/h, upstream $8$ km/h. Still water is their average, $10$ km/h, not $12$. The statement is False.`,
       `**D.** → False
 
 Outward $2$ hours, return $3$ hours, total $5$, not $4$. Averaging the speeds is the trap. The statement is False.`,
@@ -754,10 +752,10 @@ Together they fill the pool in $6$ hours. The statement is True.`,
       `A metal rod is $2.4$ m long. It is cut into two pieces so that one piece is $60$ cm longer than the other. The shorter piece is $90$ cm.`,
       `The mean of three numbers is $14$. Two of them are $11$ and $15$. The third is $18$.`,
       `A recipe for $8$ portions uses $600$ g of flour. For $12$ portions one therefore needs $1000$ g of flour.`,
-      `A rectangle's length is twice its width. The perimeter is $48$ cm, so the width is $8$ cm.`,
-      `Three-fifths of a number is $12$ more than one-fifth of the same number. The number is $30$.`,
+      `A rectangle's length is twice its width. The perimeter is $48$ cm, so the width is $10$ cm.`,
+      `Three-fifths of a number is $12$ more than one-fifth of the same number. The number is $25$.`,
     ],
-    answer_key: [true, false, false, true, true],
+    answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -772,16 +770,16 @@ The three numbers add to $42$, so the third is $42 - 11 - 15 = 16$, not $18$. Th
       `**C.** → False
 
 Scale by $\\frac{12}{8} = 1.5$: flour $600 \\cdot 1.5 = 900$ g, not $1000$. The statement is False.`,
-      `**D.** → True
+      `**D.** → False
 
 $$2(2w + w) = 48 \\Rightarrow w = 8$$
 
-The rectangle is $8$ by $16$. The statement is True.`,
-      `**E.** → True
+The claim says $10$. Ten would force length $20$ and perimeter $60$, not $48$. The recovered width is $8$ cm. The statement is False.`,
+      `**E.** → False
 
 $$\\frac{3x}{5} - \\frac{x}{5} = 12 \\Rightarrow \\frac{2x}{5} = 12 \\Rightarrow x = 30$$
 
-Check: $18 - 6 = 12$. The statement is True.`,
+The claim says $25$. Check: $18 - 6 = 12$ for $x = 30$. The number is $30$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 17,
@@ -798,9 +796,9 @@ Check: $18 - 6 = 12$. The statement is True.`,
       `A car travels at an average speed of $72$ km/h. At $4$ pm it has travelled $180$ km. Then it started at $1{:}30$ pm.`,
       `A cook has $1.5$ litres of $12\\%$ vinegar and wants an $8\\%$ mixture. Then $0.75$ litres of water must be added.`,
       `A prize of $9150$ EUR is split so that second place gets $50\\%$ of first place, and third place gets $50\\%$ of second place. Then second place is $3000$ EUR.`,
-      `The solution of $4(x - 3) = 2x + 10$ is smaller than $10$.`,
+      `The solution of $4(x - 3) = 2x + 10$ is larger than $10$.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -818,11 +816,11 @@ Acid $0.18$ litres. Then $\\frac{0.18}{1.5 + w} = 0.08$ gives $w = 0.75$. The st
       `**D.** → False
 
 $$1.75a = 9150 \\Rightarrow a \\approx 5229$$, so second place is about $2614$ EUR, not $3000$. The statement is False.`,
-      `**E.** → False
+      `**E.** → True
 
 $$4x - 12 = 2x + 10 \\Rightarrow x = 11$$
 
-Eleven is not smaller than ten. The statement is False.`,
+Eleven is larger than ten. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -875,10 +873,10 @@ Parts $160$ EUR, and $160 > \\frac{430}{3} \\approx 143$. The statement is True.
       `A and B can finish a job in $12$ days and $18$ days respectively. They work together for $4$ days, then A finishes the rest alone. A still needs $5$ days after the joint period.`,
       `A merchant mixes $20$ kg of tea at $8$ EUR/kg with $30$ kg at $10$ EUR/kg. The mixture is worth $9.20$ EUR per kilogram.`,
       `A picture measures $30$ cm by $20$ cm. A frame $3$ cm wide runs all around it. The outer perimeter of the frame is $124$ cm.`,
-      `A clock gains $2$ minutes per hour. After $6$ true hours it shows that $6$ hours and $12$ minutes have passed.`,
+      `A clock gains $2$ minutes per hour. After $6$ true hours it shows that $6$ hours and $20$ minutes have passed.`,
       `Two-thirds of a journey is $48$ km. The whole journey is $64$ km.`,
     ],
-    answer_key: [false, true, true, true, false],
+    answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
@@ -891,11 +889,11 @@ The statement is True.`,
       `**C.** → True
 
 Outer rectangle $36$ by $26$, perimeter $2 \\cdot 62 = 124$. The statement is True.`,
-      `**D.** → True
+      `**D.** → False
 
 $$2 \\cdot 6 = 12$$
 
-minutes of extra time shown. The statement is True.`,
+minutes of extra time shown, so the clock reads $6$ hours and $12$ minutes, not $20$. The statement is False.`,
       `**E.** → False
 
 $$48 \\cdot \\frac{3}{2} = 72$$
@@ -1441,11 +1439,11 @@ days. B still needs $10.5$ days, so the statement is True.`,
     statements: [
       `A square has area $49$ cm$^{2}$. Then each side is $7$ cm.`,
       `A number times itself equals $16$. The only real number that works is $4$.`,
-      `A number times itself equals $36$. One number that works is $-6$.`,
+      `A number times itself equals $36$. One number that works is $7$.`,
       `If a square of side $x$ cm has area $9$ cm$^{2}$, then $x = 3$ is the only real possibility.`,
-      `$5^{2} - 4^{2}$ equals $9$.`,
+      `$5^{2} - 4^{2}$ equals $7$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -1459,19 +1457,19 @@ A length is positive, so $s = 7$, not $-7$. Check: $7 \\cdot 7 = 49$. Each side 
 $$x^{2} = 16$$
 
 splits into two real numbers, because $(-4)^{2} = 16$ as well as $4^{2} = 16$. The claim says $4$ is the only real number that works. There are two: $4$ and $-4$. The statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
 $$x^{2} = 36$$
 
-has solutions $x = 6$ and $x = -6$. The claim only asks whether $-6$ is one of them. It is, because $(-6)\\cdot(-6) = 36$. The statement is True.`,
+has solutions $x = 6$ and $x = -6$. Seven is not among them: $7^{2} = 49$. The statement is False.`,
       `**D.** → False
 
 A geometric side must be positive, so $x = 3$ is the side of that square. But the equation $x^{2} = 9$ as a number sentence also has $x = -3$. The claim says $x = 3$ is the only real possibility for that equation. As an equation it is not; as a length it is. The statement is about the equation of area written with $x$, and it rules out $-3$ without saying "side length". The only-real-possibility wording is therefore false for $x^{2} = 9$. The statement is False.`,
-      `**E.** → True
+      `**E.** → False
 
 $$5^{2} - 4^{2} = 25 - 16 = 9$$
 
-The difference of those squares is $9$, so the statement is True.`,
+The difference is $9$, not $7$. The statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 29,
@@ -1484,21 +1482,21 @@ The difference of those squares is $9$, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solutions of $(x - 2)(x - 5) = 0$ are $x = 2$ and $x = 5$.`,
+      `The solutions of $(x - 2)(x - 5) = 0$ are $x = 3$ and $x = 5$.`,
       `The equation $x^{2} - 5x + 6 = 0$ has solutions $2$ and $3$.`,
       `The equation $x^{2} - 5x + 6 = 0$ has solutions $1$ and $6$.`,
       `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
       `The equation $x^{2} = 5x$ has only the solution $x = 5$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [false, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
 A product is zero only when at least one factor is zero.
 
 $$x - 2 = 0 \\quad \\text{or} \\quad x - 5 = 0$$
 
-so $x = 2$ or $x = 5$. Both check in the original product. The statement is True.`,
+so $x = 2$ or $x = 5$, not $3$ and $5$. At $x = 3$: $(1)(-2) = -2 \\neq 0$. The statement is False.`,
       `**B.** → True
 
 Factor the left side.
@@ -1535,11 +1533,11 @@ so $x = 0$ or $x = 5$. The claim keeps only $5$. The statement is False.`,
     statements: [
       `A square has area $64$ m$^{2}$. Then its side is $8$ m.`,
       `Two consecutive integers multiply to $12$. The positive pair is $3$ and $4$.`,
-      `Two consecutive integers multiply to $12$. The pair is $2$ and $6$.`,
+      `Two consecutive integers multiply to $12$. The pair $2$ and $6$ is not consecutive.`,
       `A rectangle is $1$ cm longer than it is wide and has area $12$ cm$^{2}$. Then the width is $3$ cm.`,
-      `That same rectangle has longer side $5$ cm.`,
+      `That same rectangle has longer side $4$ cm.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -1557,9 +1555,9 @@ $$n^{2} + n - 12 = 0$$
 $$(n + 4)(n - 3) = 0$$
 
 so $n = 3$ or $n = -4$. The positive pair is $3$ and $4$, and $3 \\cdot 4 = 12$. The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-$2$ and $6$ are not consecutive, and $2 \\cdot 6 = 12$ is a different split. Consecutive integers differ by $1$. The statement is False.`,
+$2$ and $6$ are not consecutive, even though $2 \\cdot 6 = 12$. Consecutive integers differ by $1$. The statement is True.`,
       `**D.** → True
 
 Let the width be $x$ cm. Then the length is $x + 1$, and the area is $12$.
@@ -1571,9 +1569,9 @@ $$x^{2} + x - 12 = 0$$
 $$(x + 4)(x - 3) = 0$$
 
 The positive width is $x = 3$. Then the length is $4$, and $3 \\cdot 4 = 12$. The statement is True.`,
-      `**E.** → False
+      `**E.** → True
 
-The longer side is $3 + 1 = 4$ cm, not $5$. Five would need area $3 \\cdot 5 = 15$, not $12$. The statement is False.`,
+The longer side is $3 + 1 = 4$ cm. The statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 31,
@@ -1586,22 +1584,22 @@ The longer side is $3 + 1 = 4$ cm, not $5$. Five would need area $3 \\cdot 5 = 1
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^{2} - 4x = 0$ means $x$ is $0$ or $4$.`,
-      `A number squared, minus four times the number, is zero. Zero itself is allowed.`,
+      `The equation $x^{2} - 4x = 0$ means $x$ is $0$ or $5$.`,
+      `A number squared, minus four times the number, is zero. Zero itself is not allowed.`,
       `The discriminant of $x^{2} - 4x + 4$ is $4$.`,
       `The equation $x^{2} - 4x + 4 = 0$ has two distinct real roots.`,
       `The equation $(x - 2)^{2} = 0$ has solution $x = 2$.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [false, false, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
 $$x(x - 4) = 0$$
 
-so $x = 0$ or $x = 4$. Both satisfy the original. The statement is True.`,
-      `**B.** → True
+so $x = 0$ or $x = 4$. The claim listed $0$ or $5$. Five would solve $x(x - 5) = 0$, not this equation. The statement is False.`,
+      `**B.** → False
 
-That is the same equation. $x = 0$ gives $0 - 0 = 0$. Zero is a genuine solution, not a discarded extra. The statement is True.`,
+That is the same equation. $x = 0$ gives $0 - 0 = 0$. Zero is a genuine solution, not a discarded extra. The statement is False.`,
       `**C.** → False
 
 The discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$.
@@ -1629,11 +1627,11 @@ A square is zero only at zero, so $x - 2 = 0$ and $x = 2$. Check: $(2 - 2)^{2} =
     statements: [
       `For $x^{2} - 7x + 10 = 0$, the sum of the roots is $7$.`,
       `For that same equation, the product of the roots is $10$.`,
-      `The roots are $2$ and $5$.`,
+      `The roots are $3$ and $4$.`,
       `The larger root is $6$.`,
       `Both roots are greater than $4$.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -1641,9 +1639,9 @@ Vieta's formulas for $x^{2} + px + q = 0$ written as $x^{2} - (\\text{sum})x + (
       `**B.** → True
 
 The constant term of a monic quadratic is the product of the roots: $2 \\cdot 5 = 10$. The statement is True.`,
-      `**C.** → True
+      `**C.** → False
 
-Factor: $(x - 2)(x - 5) = x^{2} - 7x + 10$. The roots are $2$ and $5$. The statement is True.`,
+Factor: $(x - 2)(x - 5) = x^{2} - 7x + 10$. The roots are $2$ and $5$, not $3$ and $4$. Those would belong to $x^{2} - 7x + 12 = 0$. The statement is False.`,
       `**D.** → False
 
 The larger root is $5$, not $6$. Six would belong to a sum of $8$ with the other root $2$. The statement is False.`,
@@ -1662,27 +1660,27 @@ $5 > 4$, but $2$ is not greater than $4$. Both roots positive is true; both grea
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^{2} + x - 6 = 0$ has a positive root $2$.`,
+      `The equation $x^{2} + x - 6 = 0$ has a positive root $3$.`,
       `The negative root of that equation is $-2$.`,
-      `The discriminant of $x^{2} + x - 6$ is $25$.`,
+      `The discriminant of $x^{2} + x - 6$ is $16$.`,
       `That equation has two distinct real solutions.`,
       `That equation has no real solution.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [false, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
 $$x^{2} + x - 6 = (x + 3)(x - 2)$$
 
-The roots are $-3$ and $2$. One of them is the positive number $2$. Check: $4 + 2 - 6 = 0$. The statement is True.`,
+The roots are $-3$ and $2$. The positive one is $2$, not $3$. Check of $3$: $9 + 3 - 6 = 6$, not $0$. The statement is False.`,
       `**B.** → False
 
 The negative root is $-3$, not $-2$. Check of $-2$: $4 - 2 - 6 = -4$, not $0$. The statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
 $$\\Delta = 1^{2} - 4(1)(-6) = 1 + 24 = 25$$
 
-The discriminant is $25$, so the statement is True.`,
+The claim says $16$. Sixteen would be $4^{2}$, or the discriminant of $x^{2} + x - 4$. The discriminant is $25$, so the statement is False.`,
       `**D.** → True
 
 $\\Delta = 25 > 0$, so there are two distinct real roots. They are $2$ and $-3$. The statement is True.`,
@@ -1749,10 +1747,10 @@ That is the opening relation: length is $2$ cm more than width, so the sides dif
       `Two consecutive integers multiply to $56$. The smaller positive one is $7$.`,
       `The larger of that positive pair is $8$.`,
       `There is also a negative pair, $-8$ and $-7$.`,
-      `The integers $6$ and $9$ also multiply to $56$.`,
-      `The positive pair adds to $16$.`,
+      `The integers $6$ and $9$ multiply to $54$, not $56$.`,
+      `The positive pair adds to $15$.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -1769,12 +1767,12 @@ The next integer after $7$ is $8$. The statement is True.`,
       `**C.** → True
 
 The other root is $n = -8$, so the pair is $-8$ and $-7$, and $(-8)\\cdot(-7) = 56$. The statement is True.`,
-      `**D.** → False
+      `**D.** → True
 
-$6 \\cdot 9 = 54$, not $56$, and those two are not consecutive. The statement is False.`,
-      `**E.** → False
+$6 \\cdot 9 = 54$, not $56$, and those two are not consecutive. The statement is True.`,
+      `**E.** → True
 
-$7 + 8 = 15$, not $16$. Sixteen would be $7 + 9$. The statement is False.`,
+$7 + 8 = 15$. The statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 36,
@@ -1788,12 +1786,12 @@ $7 + 8 = 15$, not $16$. Sixteen would be $7 + 9$. The statement is False.`,
     context: `A rectangle has area $60$ cm$^{2}$, and its length is $7$ cm more than its width. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The width is $5$ cm.`,
-      `The length is $12$ cm.`,
+      `The length is $11$ cm.`,
       `The perimeter is $40$ cm.`,
       `The diagonal is $13$ cm.`,
       `The width is $6$ cm.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -1808,9 +1806,9 @@ $$\\Delta = 49 + 240 = 289 = 17^{2}$$
 $$w = \\frac{-7 \\pm 17}{2}$$
 
 The positive value is $w = 5$. Check: $5 \\cdot 12 = 60$. The statement is True.`,
-      `**B.** → True
+      `**B.** → False
 
-Length $5 + 7 = 12$ cm. The statement is True.`,
+Length $5 + 7 = 12$ cm, not $11$. Eleven with width $5$ would give area $55$, not $60$. The statement is False.`,
       `**C.** → False
 
 $$P = 2(5 + 12) = 34$$
@@ -1836,19 +1834,19 @@ Width $6$ would give length $13$ and area $78$, not $60$. The recovered width is
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The positive root of $x^{2} - 2x - 15 = 0$ is $5$.`,
+      `The positive root of $x^{2} - 2x - 15 = 0$ is $6$.`,
       `A right triangle has legs $x$ cm and $x + 1$ cm and hypotenuse $5$ cm. Then the shorter leg is $3$ cm.`,
       `That triangle is equilateral.`,
       `The area of that triangle is $12$ cm$^{2}$.`,
       `The longer leg is $4$ cm.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [false, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
 $$x^{2} - 2x - 15 = (x - 5)(x + 3)$$
 
-The roots are $5$ and $-3$. The positive one is $5$. The statement is True.`,
+The roots are $5$ and $-3$. The positive one is $5$, not $6$. Six would solve $x^{2} - 2x - 24 = 0$. The statement is False.`,
       `**B.** → True
 
 Pythagoras gives
@@ -1887,19 +1885,19 @@ The legs are $3$ and $4$, so the longer leg is $4$ cm. The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^{2} + 4x + 5 = 0$ has two distinct real roots.`,
+      `The equation $x^{2} + 4x + 5 = 0$ has no real roots.`,
       `The equation $x^{2} + 4x + 4 = 0$ has exactly one real solution (a double root).`,
       `The equation $x^{2} + 4x + 3 = 0$ has two distinct real roots.`,
       `Those two roots of $x^{2} + 4x + 3 = 0$ are $-1$ and $-3$.`,
-      `All three equations have the same number of distinct real roots.`,
+      `Those three equations have $0$, $1$, and $2$ distinct real roots, in that order.`,
     ],
-    answer_key: [false, true, true, true, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
 $$\\Delta = 16 - 20 = -4 < 0$$
 
-No real roots. Completing the square gives $(x + 2)^{2} + 1 = 0$, a square plus one, which cannot be zero. The statement is False.`,
+No real roots. Completing the square gives $(x + 2)^{2} + 1 = 0$, a square plus one, which cannot be zero. The statement is True.`,
       `**B.** → True
 
 $$\\Delta = 16 - 16 = 0$$
@@ -1913,9 +1911,9 @@ Two distinct real roots. The statement is True.`,
       `**D.** → True
 
 $(x + 1)(x + 3) = x^{2} + 4x + 3$. The roots are $-1$ and $-3$. The statement is True.`,
-      `**E.** → False
+      `**E.** → True
 
-The three discriminants are negative, zero, and positive, so the counts are $0$, $1$, and $2$ distinct real roots. They are not the same. The statement is False.`,
+The three discriminants are negative, zero, and positive, so the counts are $0$, $1$, and $2$ distinct real roots. The statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 39,
@@ -1928,17 +1926,17 @@ The three discriminants are negative, zero, and positive, so the counts are $0$,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $10$ and multiply to $21$. They are $3$ and $7$.`,
+      `Two numbers add to $10$ and multiply to $21$. They are $4$ and $6$.`,
       `Those two numbers are the roots of $t^{2} - 10t + 24 = 0$.`,
       `Both numbers are larger than $4$.`,
       `Their difference is $4$.`,
-      `Each of them is positive.`,
+      `Each of them is negative.`,
     ],
-    answer_key: [true, false, false, true, true],
+    answer_key: [false, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
-$3 + 7 = 10$ and $3 \\cdot 7 = 21$. They are the two numbers. The statement is True.`,
+$4 + 6 = 10$, but $4 \\cdot 6 = 24$, not $21$. The pair with product $21$ is $3$ and $7$. The statement is False.`,
       `**B.** → False
 
 Numbers that add to $10$ and multiply to $21$ are the roots of $t^{2} - 10t + 21 = 0$, because
@@ -1954,9 +1952,9 @@ $7 > 4$, but $3$ is not larger than $4$. Both numbers larger than $4$ would need
 $$7 - 3 = 4$$
 
 The two numbers differ by $4$. The statement is True.`,
-      `**E.** → True
+      `**E.** → False
 
-Both $3$ and $7$ are positive. Their product $21$ is positive and their sum $10$ is positive, which already forces both signs to be plus. The statement is True.`,
+Both $3$ and $7$ are positive. A negative pair with product $21$ would need a negative sum as well. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 40,
@@ -1970,12 +1968,12 @@ Both $3$ and $7$ are positive. Their product $21$ is positive and their sum $10$
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Completing the square turns $x^{2} - 6x + 5 = 0$ into $(x - 3)^{2} = 4$.`,
-      `The two real roots of that equation are $1$ and $5$.`,
+      `The two real roots of that equation are $2$ and $4$.`,
       `Both roots are larger than $2$.`,
       `The axis of symmetry of $y = x^{2} - 6x + 5$ is the line $x = 3$.`,
       `The sum of the two roots is $8$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -1988,13 +1986,13 @@ $$x^{2} - 6x + 9 = 4$$
 $$(x - 3)^{2} = 4$$
 
 Half of $6$ is $3$, and $3^{2} = 9$ is what completes the square. The statement is True.`,
-      `**B.** → True
+      `**B.** → False
 
 A square equals $4$ when the inside is $2$ or $-2$.
 
 $$x - 3 = 2 \\quad \\text{or} \\quad x - 3 = -2$$
 
-so $x = 5$ or $x = 1$. Check: $1 - 6 + 5 = 0$ and $25 - 30 + 5 = 0$. The statement is True.`,
+so $x = 5$ or $x = 1$, not $2$ and $4$. Those would be centred at $3$ only if they summed to $6$ and differed by $2$, which $2$ and $4$ do, but they solve $(x - 3)^{2} = 1$. Check: $4 - 12 + 5 = -3$, not $0$. The statement is False.`,
       `**C.** → False
 
 $5 > 2$, but $1$ is not larger than $2$. Both roots larger than $2$ would need the smaller one past $2$, which would shift the constant term. The statement is False.`,
@@ -2020,9 +2018,9 @@ Vieta's formula for $x^{2} - 6x + 5 = 0$ says the sum of the roots is $6$, and $
       `The area of that outer rectangle is $816$ cm$^{2}$.`,
       `The wooden frame itself has area $216$ cm$^{2}$.`,
       `If the frame were $3$ cm wide instead, the outer area would be $900$ cm$^{2}$.`,
-      `A $3$ cm frame around the same picture would have area $300$ cm$^{2}$.`,
+      `A $3$ cm frame around the same picture would have area $336$ cm$^{2}$.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -2050,9 +2048,9 @@ A $3$ cm frame adds $6$ cm in each direction, so the outer size is $36$ cm by $2
 $$36 \\cdot 26 = 936$$
 
 The claim says $900$. Nine hundred would be $30 \\cdot 30$, a square that this frame is not. The outer area is $936$ cm$^{2}$, so the statement is False.`,
-      `**E.** → False
+      `**E.** → True
 
-A $3$ cm frame around the same $30$ by $20$ picture has outer area $36 \\cdot 26 = 936$, so the wood is $936 - 600 = 336$ cm$^{2}$, not $300$. The statement is False.`,
+A $3$ cm frame around the same $30$ by $20$ picture has outer area $36 \\cdot 26 = 936$, so the wood is $936 - 600 = 336$ cm$^{2}$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 42,
@@ -2068,10 +2066,10 @@ A $3$ cm frame around the same $30$ by $20$ picture has outer area $36 \\cdot 26
       `Two consecutive even positive integers multiply to $168$. They are $12$ and $14$.`,
       `There is also a negative pair, $-14$ and $-12$.`,
       `If $n$ is the smaller of two consecutive even integers with product $168$, then $n = 12$ or $n = -14$.`,
-      `The integers $10$ and $16$ also multiply to $168$.`,
-      `The equation $n(n + 2) = 168$ has four distinct integer solutions.`,
+      `The integers $10$ and $16$ multiply to $160$, not $168$.`,
+      `The equation $n(n + 2) = 168$ has two distinct integer solutions.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -2092,12 +2090,12 @@ The other root is $n = -14$, so the pair is $-14$ and $-12$, and $(-14)\\cdot(-1
       `**C.** → True
 
 Those are exactly the two roots of the quadratic. Each names the smaller member of one pair. The statement is True.`,
-      `**D.** → False
+      `**D.** → True
 
-$10 \\cdot 16 = 160$, not $168$, and those two differ by $6$, so they are not consecutive even integers. The statement is False.`,
-      `**E.** → False
+$10 \\cdot 16 = 160$, not $168$, and those two differ by $6$, so they are not consecutive even integers. The statement is True.`,
+      `**E.** → True
 
-The quadratic $n^{2} + 2n - 168 = 0$ has two real roots, both integers: $12$ and $-14$. Two solutions for $n$, not four. Four would count the four numbers that appear in the two pairs, but those are not four solutions of one equation in $n$. The statement is False.`,
+The quadratic $n^{2} + 2n - 168 = 0$ has two real roots, both integers: $12$ and $-14$. Two distinct integer solutions for $n$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 43,
@@ -2110,15 +2108,15 @@ The quadratic $n^{2} + 2n - 168 = 0$ has two real roots, both integers: $12$ and
     subsection: `4.2`,
     context: `A rectangle has area $54$ cm$^{2}$, and its length is $50\\%$ more than its width. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The width is $6$ cm.`,
-      `The length is $9$ cm.`,
+      `The width is $4$ cm.`,
+      `The length is $12$ cm.`,
       `The perimeter is $36$ cm.`,
       `The width is $9$ cm.`,
       `The length is one and a half times the width.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [false, false, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
 Let the width be $w$ cm. Then the length is $\\frac{3}{2}w$, and the area is $54$.
 
@@ -2128,10 +2126,10 @@ $$\\frac{3}{2}w^{2} = 54$$
 
 $$w^{2} = 36$$
 
-A length is positive, so $w = 6$. Check: $6 \\cdot 9 = 54$. The statement is True.`,
-      `**B.** → True
+A length is positive, so $w = 6$, not $4$. Width $4$ would give length $6$ and area $24$, not $54$. The statement is False.`,
+      `**B.** → False
 
-Length $\\frac{3}{2}\\cdot 6 = 9$ cm. The statement is True.`,
+Length $\\frac{3}{2}\\cdot 6 = 9$ cm, not $12$. Twelve would be twice the width. The statement is False.`,
       `**C.** → False
 
 $$P = 2(6 + 9) = 30$$
@@ -2158,10 +2156,10 @@ That is the opening relation: $50\\%$ more means the length is $\\frac{3}{2}$ of
       `After $4$ seconds the body has travelled $80$ m.`,
       `After $2$ seconds it has travelled $20$ m.`,
       `After $2$ seconds it has travelled $40$ m, half of the $4$-second distance.`,
-      `After $3$ seconds it has travelled $45$ m.`,
+      `After $3$ seconds it has travelled $60$ m.`,
       `It takes $8$ seconds to cover $80$ m.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -2176,11 +2174,11 @@ After $2$ seconds the distance is $20$ m. The statement is True.`,
       `**C.** → False
 
 Distance here grows with $t^{2}$, not with $t$. Half the time is not half the distance. Half of $80$ is $40$, but the $2$-second reading is $20$, not $40$. The statement is False.`,
-      `**D.** → True
+      `**D.** → False
 
 $$5 \\cdot 3^{2} = 5 \\cdot 9 = 45$$
 
-After $3$ seconds the distance is $45$ m. The statement is True.`,
+not $60$. Sixty would be $5 \\cdot (\\sqrt{12})^{2}$, which is not an integer time. After $3$ seconds the distance is $45$ m. The statement is False.`,
       `**E.** → False
 
 Set $5t^{2} = 80$, so $t^{2} = 16$ and $t = 4$ (time is positive). Eight seconds would give $5 \\cdot 64 = 320$ m. The $80$ m mark is at $4$ seconds, so the statement is False.`,
@@ -2244,10 +2242,10 @@ $4 + 9 = 13$. That is the positive pair, not the two roots of $x^{2} + 5x - 36 =
       `Each leg is $5\\sqrt{2}$ cm.`,
       `Each leg is $5$ cm.`,
       `The area of the triangle is $25$ cm$^{2}$.`,
-      `The perimeter is $10(1 + \\sqrt{2})$ cm.`,
+      `The perimeter is $20$ cm.`,
       `The area of the triangle is $50$ cm$^{2}$.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -2272,13 +2270,13 @@ Area is half the product of the legs.
 $$\\frac{1}{2} \\cdot 5\\sqrt{2} \\cdot 5\\sqrt{2} = \\frac{1}{2} \\cdot 25 \\cdot 2 = 25$$
 
 The area is $25$ cm$^{2}$. The statement is True.`,
-      `**D.** → True
+      `**D.** → False
 
 Two legs plus the hypotenuse:
 
 $$5\\sqrt{2} + 5\\sqrt{2} + 10 = 10 + 10\\sqrt{2} = 10(1 + \\sqrt{2})$$
 
-The perimeter is $10(1 + \\sqrt{2})$ cm. The statement is True.`,
+which is about $24.1$ cm, not $20$. Twenty would be the two legs if each were $5$, plus the hypotenuse $10$, which is the wrong triangle. The statement is False.`,
       `**E.** → False
 
 Fifty is $a^{2}$, the square of one leg, or the product of the legs without the half. Area is $25$ cm$^{2}$, so the statement is False.`,
@@ -2343,11 +2341,11 @@ Sides $10$ and $16$ add to $26$, so the perimeter would be $52$, not $36$, and t
     statements: [
       `The son is $6$ years old.`,
       `The father is $30$ years old.`,
-      `In $6$ years the product of their ages will be $360$.`,
-      `The father is $36$ years old now.`,
+      `In $6$ years the product of their ages will be $432$.`,
+      `The father is $30$ years old now, not $36$.`,
       `In $6$ years the son will be $12$ and the father $36$.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -2365,12 +2363,12 @@ The positive root is $s = 6$. Check: $6 \\cdot 30 = 180$. The statement is True.
       `**B.** → True
 
 The father is $6 + 24 = 30$ years old. The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-In $6$ years they will be $12$ and $36$, and $12 \\cdot 36 = 432$, not $360$. Three hundred sixty would be $12 \\cdot 30$, as if the father had not aged. The statement is False.`,
-      `**D.** → False
+In $6$ years they will be $12$ and $36$, and $12 \\cdot 36 = 432$. The statement is True.`,
+      `**D.** → True
 
-Thirty-six is the father's age in $6$ years, not now. Now he is $30$. The statement is False.`,
+Thirty-six is the father's age in $6$ years. Now he is $30$. The statement is True.`,
       `**E.** → True
 
 Son $6 + 6 = 12$, father $30 + 6 = 36$. Both ages increase by the same $6$ years. The statement is True.`,
@@ -2767,375 +2765,333 @@ so $t = 12$ or $t = 8$. Check: $8 + 12 = 20$ and $8 \\cdot 12 = 96$. The stateme
   {
     id: `math-4-57`,
     case_id: `MATH 4.57`,
-    title: `A number and its reciprocal`,
+    title: `Three over a number equals one fourth`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers multiply to $1$. One of them is $5$. The other is $\\frac{1}{5}$.`,
-      `The reciprocal of $2$ is $2$.`,
-      `The reciprocal of $\\frac{1}{4}$ is $4$.`,
-      `Zero has a reciprocal.`,
-      `If the reciprocal of a number is $\\frac{1}{6}$, then the number itself is $6$.`,
-    ],
-    answer_key: [true, false, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Two numbers that multiply to $1$ are reciprocals of each other. If one is $5$, the other is $\\frac{1}{5}$, because $5 \\cdot \\frac{1}{5} = 1$. The statement is True.`,
-      `**B.** → False
-
-The reciprocal of $2$ is $\\frac{1}{2}$, not $2$. Two times two is $4$, not $1$. The statement is False.`,
-      `**C.** → True
-
-$\\frac{1}{4} \\cdot 4 = 1$, so $4$ is the reciprocal of $\\frac{1}{4}$. Turning a fraction upside down gives the same reading. The statement is True.`,
-      `**D.** → False
-
-The reciprocal of $x$ is $\\frac{1}{x}$. Division by zero is not allowed, so $0$ has no reciprocal. The statement is False.`,
-      `**E.** → True
-
-If $\\frac{1}{x} = \\frac{1}{6}$, then $x = 6$. Check: the reciprocal of $6$ is $\\frac{1}{6}$. The statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 57,
-    solution_overview: `Five independent claims about reciprocals. The reciprocal of a nonzero number $x$ is $\\frac{1}{x}$. Zero is excluded because you cannot divide by zero.`,
-  },
-  {
-    id: `math-4-58`,
-    case_id: `MATH 4.58`,
-    title: `A number over four more than itself`,
-    subsection: `4.3`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `A number, divided by $2$ more than the number, equals $\\frac{1}{3}$. That number is $1$.`,
-      `That fraction is undefined when the number is $-2$.`,
-      `The number $4$ also satisfies the same ratio $\\frac{1}{3}$.`,
-      `Cross-multiplying $3x = x + 2$ is allowed for every value except $x = -2$.`,
-      `The number that works is $3$.`,
+      `Three litres of oil, poured as equal shares, fill a jerrycan if each share is one-fourth of the jerrycan. Then the jerrycan holds $12$ litres.`,
+      `The equation $\\frac{3}{x} = \\frac{1}{4}$ is undefined at $x = 0$.`,
+      `That same equation has solution $x = 3$.`,
+      `Check: $\\frac{3}{12} = \\frac{1}{4}$.`,
+      `The number $-12$ also solves $\\frac{3}{x} = \\frac{1}{4}$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Let the number be $x$. Then
+Each share is $\\frac{1}{4}$ of the jerrycan, and three shares make the whole fill, so four shares would be the full capacity.
+
+$$\\frac{3}{x} = \\frac{1}{4} \\quad \\Rightarrow \\quad x = 12$$
+
+Twelve litres. The statement is True.`,
+      `**B.** → True
+
+The left side has denominator $x$. At $x = 0$ you would divide by zero. That value is not allowed. The statement is True.`,
+      `**C.** → False
+
+At $x = 3$ you get $\\frac{3}{3} = 1$, not $\\frac{1}{4}$. The recovered capacity is $12$ litres. The statement is False.`,
+      `**D.** → True
+
+$\\frac{3}{12}$ reduces to $\\frac{1}{4}$. The check confirms $x = 12$. The statement is True.`,
+      `**E.** → False
+
+$\\frac{3}{-12} = -\\frac{1}{4}$, not $\\frac{1}{4}$. Signs must match. The statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 57,
+    solution_overview: `Five independent claims about the rational equation $\\frac{3}{x} = \\frac{1}{4}$. Cross-multiply after excluding $x = 0$. The solution is $x = 12$.`,
+  },
+  {
+    id: `math-4-58`,
+    case_id: `MATH 4.58`,
+    title: `A number over two more than the number`,
+    subsection: `4.3`,
+    context: `A number, divided by $2$ more than the number, equals $\\frac{1}{3}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `That number is $1$.`,
+      `The fraction is undefined when the number is $-2$.`,
+      `The number $4$ also gives the ratio $\\frac{1}{3}$.`,
+      `You may cross-multiply even at $x = -2$.`,
+      `The number that works is $3$.`,
+    ],
+    answer_key: [true, true, false, false, false],
+    tactical_explanations: [
+      `**A.** → True
 
 $$\\frac{x}{x + 2} = \\frac{1}{3}$$
 
-For $x \\neq -2$, cross-multiply:
-
-$$3x = x + 2$$
-
-$$2x = 2$$
-
-$$x = 1$$
-
-Check: $\\frac{1}{3} = \\frac{1}{3}$. The statement is True.`,
+with $x \\neq -2$. Then $3x = x + 2$, so $2x = 2$ and $x = 1$. Check: $\\frac{1}{3} = \\frac{1}{3}$. The statement is True.`,
       `**B.** → True
 
-The denominator $x + 2$ is zero at $x = -2$. The original fraction is not a number there. The statement is True.`,
+The denominator $x + 2$ vanishes at $x = -2$. The original fraction is not defined there. The statement is True.`,
       `**C.** → False
 
-$\\frac{4}{6} = \\frac{2}{3}$, not $\\frac{1}{3}$. Four would fit a ratio of $2$ to $3$, not $1$ to $3$. The statement is False.`,
-      `**D.** → True
+$\\frac{4}{6} = \\frac{2}{3}$, not $\\frac{1}{3}$. The statement is False.`,
+      `**D.** → False
 
-Clearing denominators is valid precisely when those denominators are not zero. Here that forbids only $x = -2$. The statement is True.`,
+Cross-multiplying assumes the denominators are not zero. At $x = -2$ the original equation is undefined, so that step is not allowed. The statement is False.`,
       `**E.** → False
 
 At $x = 3$ the fraction is $\\frac{3}{5}$, not $\\frac{1}{3}$. The recovered value is $1$. The statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 58,
-    solution_overview: `Five independent claims about $\\frac{x}{x + 2} = \\frac{1}{3}$. Cross-multiply only after ruling out $x = -2$. The solution is $x = 1$.`,
+    solution_overview: `One rational equation $\\frac{x}{x + 2} = \\frac{1}{3}$. Exclude $x = -2$, then cross-multiply. The solution is $x = 1$.`,
   },
   {
     id: `math-4-59`,
     case_id: `MATH 4.59`,
-    title: `When a denominator forbids a candidate`,
+    title: `A hole in the domain is never a root`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\frac{1}{x - 2} = \\frac{3}{x - 2}$ has no solution.`,
       `$x = 2$ is a solution of that equation.`,
-      `The equation $\\frac{5}{x + 1} = \\frac{5}{x + 1}$ is true for every real $x$ except $x = -1$.`,
+      `The equation $\\frac{5}{x + 1} = \\frac{5}{x + 1}$ holds at $x = -1$ as well.`,
       `The equation $\\frac{2}{x} = 0$ has solution $x = 0$.`,
-      `The equation $\\frac{6}{x} = 2$ has solution $x = 3$.`,
+      `The equation $\\frac{6}{x} = 2$ has solution $x = 2$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-If $x \\neq 2$, both sides have the same nonzero denominator, so the equation says $1 = 3$, which is never true. If $x = 2$, both sides are undefined. There is nowhere left for a solution. The statement is True.`,
+If $x \\neq 2$ the two sides have the same nonzero denominator, so the claim is $1 = 3$, which is never true. If $x = 2$ both sides are undefined. No solution exists. The statement is True.`,
       `**B.** → False
 
-At $x = 2$ you are dividing by zero. That value is not in the domain, so it cannot be a solution. The statement is False.`,
-      `**C.** → True
+At $x = 2$ you divide by zero. That value is outside the domain. The statement is False.`,
+      `**C.** → False
 
-When $x \\neq -1$ the two sides are the same number, so the equation holds. At $x = -1$ it is undefined. An identity with a hole, not a solution at the hole. The statement is True.`,
+The two sides match for every $x$ except $x = -1$, where the expression is undefined. The hole is not a root. The statement is False.`,
       `**D.** → False
 
-A fraction is zero only when the numerator is zero and the denominator is not. Here the numerator is $2$, never zero, and $x = 0$ is undefined anyway. No solution. The statement is False.`,
-      `**E.** → True
+A fraction is zero only when the numerator is zero and the denominator is not. Here the numerator is $2$, and $x = 0$ is undefined. No solution. The statement is False.`,
+      `**E.** → False
 
-$$\\frac{6}{x} = 2 \\quad \\Rightarrow \\quad 6 = 2x \\quad \\Rightarrow \\quad x = 3$$
+$$\\frac{6}{x} = 2 \\quad \\Rightarrow \\quad x = 3$$
 
-provided $x \\neq 0$. Check: $\\frac{6}{3} = 2$. The statement is True.`,
+not $x = 2$. Check: $\\frac{6}{3} = 2$, while $\\frac{6}{2} = 3$. The statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 59,
-    solution_overview: `Five independent rational equations. A value that makes a denominator zero is never a solution. Two fractions with the same denominator are equal only when their numerators are equal, and only where the denominator is allowed.`,
+    solution_overview: `Five independent rational equations. A value that zeros a denominator is never a solution. Equal fractions with a common denominator require equal numerators, and only where the denominator is allowed.`,
   },
   {
     id: `math-4-60`,
     case_id: `MATH 4.60`,
     title: `A square bed after 3 extra square metres`,
     subsection: `4.3`,
-    context: `A gardener adds $3$ m$^{2}$ of soil to a square bed. The new bed is still square, and each side is $4$ m. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A gardener adds $3$ m$^{2}$ of soil to a square bed. The new bed is still square, and each side is $4$ m. Let $x$ be the original area in square metres, so $\\sqrt{x + 3} = 4$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The new area is $16$ m$^{2}$.`,
       `The original area was $13$ m$^{2}$.`,
-      `The original side was $4$ m.`,
+      `The original side was $\\sqrt{13}$ m.`,
       `The equation $\\sqrt{x + 3} = 4$ has solution $x = 13$.`,
       `The original area was $19$ m$^{2}$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-A square of side $4$ m has area $4 \\cdot 4 = 16$ m$^{2}$. That is the bed after the extra soil. The statement is True.`,
+A square of side $4$ m has area $16$ m$^{2}$. That is the bed after the extra soil. The statement is True.`,
       `**B.** → True
 
-The extra soil is $3$ m$^{2}$, so the original area is $16 - 3 = 13$ m$^{2}$. The statement is True.`,
-      `**C.** → False
+Original area $x$ satisfies $\\sqrt{x + 3} = 4$, so $x + 3 = 16$ and $x = 13$. The statement is True.`,
+      `**C.** → True
 
-The original area is $13$ m$^{2}$, so the original side is $\\sqrt{13}$ m, not $4$. Four metres is the side after the addition. The statement is False.`,
+The original area is $13$ m$^{2}$, so the original side is $\\sqrt{13}$ m. The statement is True.`,
       `**D.** → True
 
-Let $x$ be the original area in square metres. The new side is $\\sqrt{x + 3}$, and that equals $4$.
-
-$$\\sqrt{x + 3} = 4$$
-
-$$x + 3 = 16$$
-
-$$x = 13$$
-
-The principal square root is nonnegative, and $4$ is nonnegative, so squaring is safe here. Check: $\\sqrt{16} = 4$. The statement is True.`,
+Squaring is safe here because both sides are nonnegative. Check: $\\sqrt{16} = 4$. The statement is True.`,
       `**E.** → False
 
-Nineteen would be $16 + 3$, adding instead of subtracting. The original area is $13$ m$^{2}$. The statement is False.`,
+Nineteen would be $16 + 3$, adding the extra soil instead of removing it. The original area is $13$ m$^{2}$. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 60,
-    solution_overview: `One square bed, five checks. After $3$ m$^{2}$ of soil the side is $4$ m, so the new area is $16$ m$^{2}$. The original area $x$ satisfies $\\sqrt{x + 3} = 4$.`,
+    solution_overview: `One radical equation $\\sqrt{x + 3} = 4$ for a square bed. Squaring gives $x = 13$. The new side is $4$ m, the old side is $\\sqrt{13}$ m.`,
   },
   {
     id: `math-4-61`,
     case_id: `MATH 4.61`,
-    title: `Five units from $3$ on the number line`,
+    title: `Five units from 3 on the number line`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A number that is $5$ units from $3$ on the number line is $8$ or $-2$.`,
+      `A number $5$ units from $3$ on the number line is $8$ or $-2$.`,
       `The equation $\\lvert x - 3 \\rvert = 5$ has both of those solutions.`,
       `The only number $5$ units from $3$ is $8$.`,
-      `The equation $\\lvert x \\rvert = 0$ has solution $x = 0$.`,
+      `The equation $\\lvert x \\rvert = 0$ has no solution.`,
       `The equation $\\lvert x \\rvert = -2$ has two real solutions.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Distance on the line is absolute value. Five units to the right of $3$ is $8$. Five units to the left is $3 - 5 = -2$. The statement is True.`,
+Five units right of $3$ is $8$. Five units left is $-2$. The statement is True.`,
       `**B.** → True
 
-$\\lvert x - 3 \\rvert = 5$ means $x - 3 = 5$ or $x - 3 = -5$, so $x = 8$ or $x = -2$. Both distances equal $5$. The statement is True.`,
+$\\lvert x - 3 \\rvert = 5$ means $x - 3 = 5$ or $x - 3 = -5$, so $x = 8$ or $x = -2$. The statement is True.`,
       `**C.** → False
 
-Distance does not choose a side. The left-hand point $-2$ is just as far from $3$ as $8$ is. The statement is False.`,
-      `**D.** → True
+Distance does not pick a side. The point $-2$ is just as far from $3$ as $8$ is. The statement is False.`,
+      `**D.** → False
 
-Absolute value is zero only at zero. $\\lvert 0 \\rvert = 0$. The statement is True.`,
+$\\lvert 0 \\rvert = 0$, so $x = 0$ is the unique solution. The statement is False.`,
       `**E.** → False
 
-Absolute value is never negative. $\\lvert x \\rvert = -2$ has no real $x$. The statement is False.`,
+Absolute value is never negative. $\\lvert x \\rvert = -2$ has no real solution. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 61,
-    solution_overview: `Five independent claims about absolute value as distance. $\\lvert x - a \\rvert = b$ with $b > 0$ gives two points, $a + b$ and $a - b$. A negative right-hand side is impossible.`,
+    solution_overview: `Five independent claims about $\\lvert x - a \\rvert = b$. For $b > 0$ there are two points. A negative right-hand side is impossible. Zero is allowed: $\\lvert x \\rvert = 0$ has $x = 0$.`,
   },
   {
     id: `math-4-62`,
     case_id: `MATH 4.62`,
-    title: `To town at 40 km/h and back at 60`,
+    title: `Five over one less than a number equals 1`,
     subsection: `4.3`,
-    context: `A courier rides $120$ km to town at $40$ km/h and returns the same $120$ km at $60$ km/h. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Five kilograms of flour, packed into bags of one kilogram less than a certain number of kilograms, fill exactly one such bag-count. In symbols $\\frac{5}{x - 1} = 1$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The ride to town takes $3$ hours.`,
-      `The ride back takes $2$ hours.`,
-      `The average speed for the round trip is $50$ km/h.`,
-      `The average speed for the round trip is $48$ km/h.`,
-      `The whole trip takes $4$ hours.`,
+      `That number of kilograms is $6$.`,
+      `The denominator forbids $x = 1$.`,
+      `Check: $\\frac{5}{5} = 1$.`,
+      `Each bag then holds $5$ kg.`,
+      `Clearing the denominator gives $5 = x - 1$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Time is distance over speed.
+$$\\frac{5}{x - 1} = 1, \\quad x \\neq 1$$
 
-$$\\frac{120}{40} = 3$$
-
-Three hours to town. The statement is True.`,
+so $5 = x - 1$ and $x = 6$. The statement is True.`,
       `**B.** → True
 
-$$\\frac{120}{60} = 2$$
+At $x = 1$ the left side is undefined. The statement is True.`,
+      `**C.** → True
 
-Two hours back. The statement is True.`,
-      `**C.** → False
-
-Average speed is total distance over total time, not the arithmetic mean of $40$ and $60$. The two speeds are not held for equal times, so $\\frac{40 + 60}{2} = 50$ is the wrong average. The statement is False.`,
+Bags of $6 - 1 = 5$ kg: $\\frac{5}{5} = 1$. The statement is True.`,
       `**D.** → True
 
-Total distance $240$ km, total time $3 + 2 = 5$ hours.
+One less than $6$ is $5$ kg per bag. The statement is True.`,
+      `**E.** → True
 
-$$\\frac{240}{5} = 48$$
-
-The average is $48$ km/h. Equivalently the harmonic mean of the two speeds for equal distances:
-
-$$\\frac{2}{\\frac{1}{40} + \\frac{1}{60}} = \\frac{2}{\\frac{3 + 2}{120}} = 48$$
-
-The statement is True.`,
-      `**E.** → False
-
-The two legs take $5$ hours, not $4$. Four hours would be a $60$ km/h average on $240$ km. The statement is False.`,
+Multiplying through by $x - 1$ (allowed because it is not zero at the solution) yields $5 = x - 1$. The statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 62,
-    solution_overview: `One round trip, five checks. Times are $\\frac{120}{40}$ and $\\frac{120}{60}$. Average speed is $\\frac{240}{5}$, the harmonic mean of the two speeds, not their arithmetic mean.`,
+    solution_overview: `One rational equation $\\frac{5}{x - 1} = 1$. Exclude $x = 1$, then $x = 6$. All five checks follow from that root.`,
   },
   {
     id: `math-4-63`,
     case_id: `MATH 4.63`,
-    title: `A in 6 days, B in 12, working together`,
+    title: `A square of side 5 m, area 7 more than a number`,
     subsection: `4.3`,
-    context: `A can finish a job in $6$ days and B can finish the same job in $12$ days. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A square courtyard has side $5$ m. Its area is $7$ m$^{2}$ more than a number $x$ of square metres, so $\\sqrt{x + 7} = 5$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Working together they finish the job in $4$ days.`,
-      `In $2$ days together they complete half the job.`,
-      `In the same time A does twice as much as B.`,
-      `Working together they finish in $9$ days.`,
-      `B alone would finish the job in $6$ days.`,
+      `That number is $18$.`,
+      `The courtyard has area $25$ m$^{2}$.`,
+      `The equation $\\sqrt{x + 7} = 5$ has solution $x = 18$.`,
+      `The number is $-18$.`,
+      `After squaring, $x + 7 = 25$.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-A's rate is $\\frac{1}{6}$ of the job per day, B's is $\\frac{1}{12}$. Together
+$$\\sqrt{x + 7} = 5 \\quad \\Rightarrow \\quad x + 7 = 25 \\quad \\Rightarrow \\quad x = 18$$
 
-$$\\frac{1}{6} + \\frac{1}{12} = \\frac{2}{12} + \\frac{1}{12} = \\frac{1}{4}$$
-
-of the job per day, so the job takes $4$ days. The statement is True.`,
-      `**B.** → True
-
-Two days at $\\frac{1}{4}$ of a job per day is $\\frac{1}{2}$ of the job. The statement is True.`,
-      `**C.** → True
-
-A's rate is twice B's, because $\\frac{1}{6} = 2 \\cdot \\frac{1}{12}$. In any common stretch of time A does twice the work B does. The statement is True.`,
-      `**D.** → False
-
-Nine is the arithmetic mean of $6$ and $12$. Work rates add as reciprocals of the times, not as an average of the times. Together they take $4$ days, which is shorter than either worker alone. The statement is False.`,
-      `**E.** → False
-
-B's time alone is $12$ days, not $6$. Six days is A's time. The statement is False.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 63,
-    solution_overview: `One job, five checks. Rates $\\frac{1}{6}$ and $\\frac{1}{12}$ add to $\\frac{1}{4}$ of a job per day. Together the job takes $4$ days. Averaging the two times is the usual trap.`,
-  },
-  {
-    id: `math-4-64`,
-    case_id: `MATH 4.64`,
-    title: `A square lawn of side 5 m`,
-    subsection: `4.3`,
-    context: `A square lawn has side $5$ m. Its area is $1$ m$^{2}$ more than twice a certain number of square metres. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `That number is $12$.`,
-      `The area of the lawn is $25$ m$^{2}$.`,
-      `The equation $\\sqrt{2x + 1} = 5$ has solution $x = 12$.`,
-      `The number is $-12$.`,
-      `Every solution of the squared equation $2x + 1 = 25$ automatically solves $\\sqrt{2x + 1} = -5$.`,
-    ],
-    answer_key: [true, true, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The area is $5^{2} = 25$ m$^{2}$, and that is $1$ more than twice the number $x$.
-
-$$2x + 1 = 25$$
-
-$$2x = 24$$
-
-$$x = 12$$
-
-Check: $2 \\cdot 12 + 1 = 25$. The statement is True.`,
+Check: $\\sqrt{25} = 5$. The statement is True.`,
       `**B.** → True
 
 Side $5$ m gives area $25$ m$^{2}$. The statement is True.`,
       `**C.** → True
 
-The side is the principal square root of the area, so $\\sqrt{2x + 1} = 5$. Squaring (both sides nonnegative) returns $2x + 1 = 25$ and $x = 12$. Check: $\\sqrt{25} = 5$. The statement is True.`,
+That is the same radical equation, and $x = 18$ checks. The statement is True.`,
       `**D.** → False
 
-Negative twelve would make $2x + 1 = -23$, which cannot be an area and cannot be a square of $5$. The recovered number is $12$. The statement is False.`,
+Negative eighteen would make $x + 7 = -11$, which cannot equal $25$ and cannot be a square of $5$. The statement is False.`,
+      `**E.** → True
+
+Both sides of $\\sqrt{x + 7} = 5$ are nonnegative, so squaring is valid and yields $x + 7 = 25$. The statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 63,
+    solution_overview: `One radical equation $\\sqrt{x + 7} = 5$ from a $5$ m square. Squaring recovers $x = 18$.`,
+  },
+  {
+    id: `math-4-64`,
+    case_id: `MATH 4.64`,
+    title: `The square root of four times a number plus 5 is 7`,
+    subsection: `4.3`,
+    context: `A surveyor's reading satisfies $\\sqrt{4x + 5} = 7$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The number is $11$.`,
+      `Squaring both sides gives $4x + 5 = 49$.`,
+      `The number is $6$.`,
+      `Check: $\\sqrt{44 + 5} = \\sqrt{49} = 7$.`,
+      `The equation $\\sqrt{4x + 5} = -7$ has the same real solution.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$4x + 5 = 49 \\quad \\Rightarrow \\quad 4x = 44 \\quad \\Rightarrow \\quad x = 11$$
+
+The statement is True.`,
+      `**B.** → True
+
+The right-hand side $7$ is nonnegative, so squaring is allowed. The statement is True.`,
+      `**C.** → False
+
+At $x = 6$ you get $\\sqrt{24 + 5} = \\sqrt{29}$, not $7$. The recovered value is $11$. The statement is False.`,
+      `**D.** → True
+
+$4 \\cdot 11 + 5 = 49$, and $\\sqrt{49} = 7$. The statement is True.`,
       `**E.** → False
 
-The principal square root is never negative, so $\\sqrt{2x + 1} = -5$ has no real solution at all. Squaring would still produce $2x + 1 = 25$, whose root $x = 12$ does not satisfy the equation with $-5$ on the right. Squaring can invent extras, and a negative right-hand side is already impossible. The statement is False.`,
+A principal square root is never negative. $\\sqrt{4x + 5} = -7$ has no real solution, even though squaring would again give $x = 11$. That extra candidate fails the original. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 64,
-    solution_overview: `One lawn, five checks. Area $25$ is $2x + 1$, so $x = 12$. The same relation written as $\\sqrt{2x + 1} = 5$ is a radical equation whose squared form must be checked against the principal root.`,
+    solution_overview: `One radical equation $\\sqrt{4x + 5} = 7$. Squaring yields $x = 11$. The same square with a negative right-hand side has no real root.`,
   },
   {
     id: `math-4-65`,
     case_id: `MATH 4.65`,
-    title: `A reading 4 off twice the true value`,
+    title: `Twice a reading, four away, error 6`,
     subsection: `4.3`,
-    context: `A gauge is supposed to show twice a true reading $x$. Instead, the absolute error from $4$ is $6$: $\\lvert 2x - 4 \\rvert = 6$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A gauge should show twice a true reading $x$. The absolute error from $4$ is $6$: $\\lvert 2x - 4 \\rvert = 6$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The true reading is $5$ or $-1$.`,
       `Both possible readings are positive.`,
-      `$2x - 4$ equals $6$ or $-6$.`,
+      `$2x - 4$ can only equal $6$, never $-6$.`,
       `If the true reading is $2$, the equation holds.`,
-      `The distance from $2x$ to $4$ is $6$.`,
+      `The distance from $2x$ to $4$ is $4$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\lvert 2x - 4 \\rvert = 6$$
-
-splits into two linear equations.
-
 $$2x - 4 = 6 \\quad \\text{or} \\quad 2x - 4 = -6$$
 
-$$2x = 10 \\quad \\text{or} \\quad 2x = -2$$
-
-$$x = 5 \\quad \\text{or} \\quad x = -1$$
-
-Check: $\\lvert 10 - 4 \\rvert = 6$ and $\\lvert -2 - 4 \\rvert = 6$. The statement is True.`,
+so $x = 5$ or $x = -1$. Check: $\\lvert 10 - 4 \\rvert = 6$ and $\\lvert -2 - 4 \\rvert = 6$. The statement is True.`,
       `**B.** → False
 
 $5$ is positive, but $-1$ is not. The statement is False.`,
-      `**C.** → True
+      `**C.** → False
 
-That is the definition of absolute value equal to $6$: the inside is $6$ or $-6$. The statement is True.`,
+Absolute value $6$ means the inside is $6$ or $-6$. Both cases are required. The statement is False.`,
       `**D.** → False
 
-At $x = 2$ the inside is $4 - 4 = 0$, and $\\lvert 0 \\rvert = 0$, not $6$. Two is where the error would be zero. The statement is False.`,
-      `**E.** → True
+At $x = 2$ the inside is $0$, and $\\lvert 0 \\rvert = 0$, not $6$. The statement is False.`,
+      `**E.** → False
 
-$\\lvert 2x - 4 \\rvert$ is the distance between $2x$ and $4$. The equation says that distance is $6$. The statement is True.`,
+The equation says that distance is $6$, not $4$. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 65,
-    solution_overview: `One absolute-value equation, five checks. $\\lvert 2x - 4 \\rvert = 6$ opens into $2x - 4 = \\pm 6$, so $x = 5$ or $x = -1$.`,
+    solution_overview: `One absolute-value equation $\\lvert 2x - 4 \\rvert = 6$, which splits into $2x - 4 = \\pm 6$. The solutions are $x = 5$ and $x = -1$.`,
   },
   {
     id: `math-4-66`,
@@ -3146,52 +3102,40 @@ $\\lvert 2x - 4 \\rvert$ is the distance between $2x$ and $4$. The equation says
     statements: [
       `The baker uses $6$ cups of flour.`,
       `Four cups less than the flour is $2$ cups.`,
-      `The ratio is also defined when the flour is $4$ cups.`,
-      `If the baker used $8$ cups of flour, the same ratio $3$ would still hold.`,
+      `The ratio is undefined when the flour is $4$ cups.`,
+      `If the baker used $8$ cups of flour, the ratio would be $2$, not $3$.`,
       `The flour is three times that $2$-cup remainder.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Let flour be $x$ cups. Then
+$$\\frac{x}{x - 4} = 3, \\quad x \\neq 4$$
 
-$$\\frac{x}{x - 4} = 3$$
-
-with $x \\neq 4$. Cross-multiply:
-
-$$x = 3(x - 4)$$
-
-$$x = 3x - 12$$
-
-$$12 = 2x$$
-
-$$x = 6$$
-
-Check: $\\frac{6}{2} = 3$. The statement is True.`,
+gives $x = 3x - 12$, so $x = 6$. Check: $\\frac{6}{2} = 3$. The statement is True.`,
       `**B.** → True
 
-$6 - 4 = 2$ cups. That is the denominator. The statement is True.`,
-      `**C.** → False
+$6 - 4 = 2$ cups. The statement is True.`,
+      `**C.** → True
 
-If the flour is $4$ cups, the denominator $x - 4$ is zero. The ratio is undefined, so $x = 4$ is not a solution and not a legal recipe. The working amount is $6$ cups. The statement is False.`,
-      `**D.** → False
+At $x = 4$ the denominator is zero. The original ratio is not defined. The statement is True.`,
+      `**D.** → True
 
-Eight cups would give leftover $4$ and ratio $\\frac{8}{4} = 2$, not $3$. The statement is False.`,
+Eight cups would leave $4$ cups in the denominator, and $\\frac{8}{4} = 2$, not $3$. The statement is True.`,
       `**E.** → True
 
-Flour $6$ cups is three times the $2$-cup remainder, which is the same as $\\frac{6}{2} = 3$. The statement is True.`,
+$6 = 3 \\cdot 2$, which is the same as the ratio $3$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 66,
-    solution_overview: `One recipe, five checks. $\\frac{x}{x - 4} = 3$ with $x \\neq 4$ gives $x = 6$ cups of flour and a $2$-cup remainder.`,
+    solution_overview: `One rational equation $\\frac{x}{x - 4} = 3$. Exclude $x = 4$. The solution is $x = 6$ cups, remainder $2$ cups.`,
   },
   {
     id: `math-4-67`,
     case_id: `MATH 4.67`,
-    title: `Two square gardens that differ by 3 square metres`,
+    title: `Two square gardens, smaller side plus 1 is 4`,
     subsection: `4.3`,
-    context: `Two square gardens. The smaller has area $3$ m$^{2}$ less than the larger. The side of the smaller, plus $1$ m, equals $4$ m. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Two square gardens. The smaller has area $3$ m$^{2}$ less than the larger. The side of the smaller, plus $1$ m, equals $4$ m. So $\\sqrt{x - 3} + 1 = 4$, where $x$ is the larger area. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The larger garden has area $12$ m$^{2}$.`,
       `The smaller garden has area $9$ m$^{2}$.`,
@@ -3203,83 +3147,73 @@ Flour $6$ cups is three times the $2$-cup remainder, which is the same as $\\fra
     tactical_explanations: [
       `**A.** → True
 
-Let the larger area be $x$ m$^{2}$. Then the smaller area is $x - 3$, and its side plus $1$ is $4$:
+$$\\sqrt{x - 3} = 3 \\quad \\Rightarrow \\quad x - 3 = 9 \\quad \\Rightarrow \\quad x = 12$$
 
-$$\\sqrt{x - 3} + 1 = 4$$
-
-$$\\sqrt{x - 3} = 3$$
-
-$$x - 3 = 9$$
-
-$$x = 12$$
-
-The larger area is $12$ m$^{2}$. The statement is True.`,
+The statement is True.`,
       `**B.** → True
 
-Smaller area $12 - 3 = 9$ m$^{2}$, and $\\sqrt{9} = 3$, so $3 + 1 = 4$. The statement is True.`,
+Smaller area $12 - 3 = 9$ m$^{2}$, and $\\sqrt{9} = 3$. The statement is True.`,
       `**C.** → False
 
 The smaller side is $3$ m, not $4$. Four metres is that side plus one. The statement is False.`,
       `**D.** → False
 
-The larger side is $\\sqrt{12} = 2\\sqrt{3}$ m, about $3.46$ m, not $4$. The statement is False.`,
+The larger side is $\\sqrt{12} = 2\\sqrt{3}$ m, not $4$. The statement is False.`,
       `**E.** → True
 
-That is the opening relation: the areas differ by $3$ m$^{2}$. The statement is True.`,
+That is the opening relation in the radical: the areas differ by $3$ m$^{2}$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 67,
-    solution_overview: `Two square gardens, five checks. The smaller side satisfies $\\sqrt{x - 3} + 1 = 4$, so the larger area is $12$ m$^{2}$ and the smaller is $9$ m$^{2}$.`,
+    solution_overview: `One radical equation $\\sqrt{x - 3} + 1 = 4$. Isolate the root, square, and recover larger area $12$ m$^{2}$ and smaller area $9$ m$^{2}$.`,
   },
   {
     id: `math-4-68`,
     case_id: `MATH 4.68`,
-    title: `Two pipes, one twice as fast as the other`,
+    title: `A temperature 4 degrees from 9`,
     subsection: `4.3`,
-    context: `Pipe A fills a tank in $3$ hours. Pipe B fills the same tank in $6$ hours. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A stored reading is $4^{\\circ}\\mathrm{C}$ away from $9^{\\circ}\\mathrm{C}$, so $\\lvert x - 9 \\rvert = 4$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Together the two pipes fill the tank in $2$ hours.`,
-      `In $1$ hour together they fill half the tank.`,
-      `Together they fill the tank in $4.5$ hours.`,
-      `In the same time A pours twice as much as B.`,
-      `Together they take $9$ hours.`,
+      `The reading is $13^{\\circ}\\mathrm{C}$ or $5^{\\circ}\\mathrm{C}$.`,
+      `Both readings are positive.`,
+      `The only possibility is $13^{\\circ}\\mathrm{C}$.`,
+      `The two readings are centred at $9^{\\circ}\\mathrm{C}$.`,
+      `Check: $\\lvert 13 - 9 \\rvert = 4$ and $\\lvert 5 - 9 \\rvert = 4$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Rates add.
+$$x - 9 = 4 \\quad \\text{or} \\quad x - 9 = -4$$
 
-$$\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{1}{2}$$
-
-of the tank per hour, so the tank is full in $2$ hours. The statement is True.`,
+so $x = 13$ or $x = 5$. The statement is True.`,
       `**B.** → True
 
-One hour at half a tank per hour is half a tank. The statement is True.`,
+Both $13$ and $5$ are positive. The statement is True.`,
       `**C.** → False
 
-$4.5$ is the arithmetic mean of $3$ and $6$. Combined work is faster than either pipe, not a compromise between the two times. They take $2$ hours together. The statement is False.`,
+Absolute value equal to $4$ always gives two points, one on each side of $9$. Five degrees is the other one. The statement is False.`,
       `**D.** → True
 
-A's rate $\\frac{1}{3}$ is twice B's rate $\\frac{1}{6}$. In any common hour A pours twice B's volume. The statement is True.`,
-      `**E.** → False
+The midpoint of $5$ and $13$ is $9$. The statement is True.`,
+      `**E.** → True
 
-Nine hours is $3 + 6$, as if they took turns for a full tank each. Together they share one tank and finish in $2$ hours. The statement is False.`,
+Both distances equal $4$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 68,
-    solution_overview: `One tank, five checks. Reciprocal times $\\frac{1}{3}$ and $\\frac{1}{6}$ add to $\\frac{1}{2}$ of a tank per hour, so together the job takes $2$ hours.`,
+    solution_overview: `One absolute-value equation $\\lvert x - 9 \\rvert = 4$. The two readings are $13$ and $5$, centred at $9$.`,
   },
   {
     id: `math-4-69`,
     case_id: `MATH 4.69`,
     title: `A number equal to the square root of two more than itself`,
     subsection: `4.3`,
-    context: `A number equals the square root of two more than the number. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A number equals the square root of two more than the number: $\\sqrt{x + 2} = x$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The number $2$ works.`,
       `The number $-1$ works.`,
-      `Squaring both sides of $\\sqrt{x + 2} = x$ produces $x^{2} - x - 2 = 0$.`,
+      `Squaring both sides produces $x^{2} - x - 2 = 0$.`,
       `Both roots of that quadratic solve the original equation.`,
       `The original equation has only one real solution.`,
     ],
@@ -3287,180 +3221,138 @@ Nine hours is $3 + 6$, as if they took turns for a full tank each. Together they
     tactical_explanations: [
       `**A.** → True
 
-The claim is $\\sqrt{x + 2} = x$. At $x = 2$:
-
-$$\\sqrt{4} = 2$$
-
-Both sides match, and $2$ is nonnegative, which a principal square root requires on the right as well. The statement is True.`,
+At $x = 2$: $\\sqrt{4} = 2$. Both sides match, and the right-hand side is nonnegative. The statement is True.`,
       `**B.** → False
 
-At $x = -1$:
-
-$$\\sqrt{1} = 1 \\neq -1$$
-
-The left side is $1$, the right side is $-1$. Also a principal square root cannot equal a negative number. Minus one is an extra root of the squared equation, not of the original. The statement is False.`,
+At $x = -1$: $\\sqrt{1} = 1 \\neq -1$. A principal square root cannot equal a negative number. Minus one is an extra root of the squared equation. The statement is False.`,
       `**C.** → True
 
-Square both sides (after requiring $x \\geq 0$, because the right side is a principal root):
-
-$$x + 2 = x^{2}$$
-
-$$x^{2} - x - 2 = 0$$
-
-The statement is True.`,
+Require $x \\geq 0$, then $x + 2 = x^{2}$, so $x^{2} - x - 2 = 0$. The statement is True.`,
       `**D.** → False
 
-$$(x - 2)(x + 1) = 0$$
-
-gives $x = 2$ and $x = -1$. Only $x = 2$ survives the check. Squaring is not reversible: it can add a false candidate. The statement is False.`,
+The quadratic factors as $(x - 2)(x + 1) = 0$. Only $x = 2$ survives the check in the original radical equation. The statement is False.`,
       `**E.** → True
 
-After the check, only $x = 2$ remains. The statement is True.`,
+After discarding $x = -1$, only $x = 2$ remains. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 69,
-    solution_overview: `Five independent checks of $\\sqrt{x + 2} = x$. Squaring produces $x^{2} - x - 2 = 0$, whose roots are $2$ and $-1$. Only the nonnegative candidate $x = 2$ solves the original.`,
+    solution_overview: `The radical equation $\\sqrt{x + 2} = x$. Squaring produces extras. Check in the original: only $x = 2$ works.`,
   },
   {
     id: `math-4-70`,
     case_id: `MATH 4.70`,
-    title: `Equally far from kilometre posts minus 1 and 5`,
+    title: `Equally far from posts minus 1 and 5`,
     subsection: `4.3`,
-    context: `A depot on a straight road is equally far from kilometre post $-1$ and kilometre post $5$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A depot on a straight road is equally far from kilometre post $-1$ and kilometre post $5$, so $\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The depot is at kilometre $2$.`,
       `Its distance to each of those posts is $3$ km.`,
       `The depot is at kilometre $3$.`,
-      `The equation $\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$ has exactly one real solution.`,
+      `That absolute-value equation has exactly one real solution.`,
       `Every point on the road is equally far from those two posts.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Equal distance from two points on a line means the midpoint.
-
-$$\\frac{-1 + 5}{2} = 2$$
-
-Check: $\\lvert 2 - (-1) \\rvert = 3$ and $\\lvert 2 - 5 \\rvert = 3$. The depot is at km $2$. The statement is True.`,
+Equal distance from two points on a line is the midpoint: $\\frac{-1 + 5}{2} = 2$. Algebra: $x + 1 = -(x - 5)$ gives $x = 2$. The statement is True.`,
       `**B.** → True
 
-Both distances are $3$ km. The statement is True.`,
+$\\lvert 2 + 1 \\rvert = 3$ and $\\lvert 2 - 5 \\rvert = 3$. The statement is True.`,
       `**C.** → False
 
-Kilometre $3$ is $4$ km from $-1$ and $2$ km from $5$. Those are not equal. The midpoint is $2$, not $3$. The statement is False.`,
+Kilometre $3$ is $4$ km from $-1$ and $2$ km from $5$. Those are not equal. The statement is False.`,
       `**D.** → True
 
-$\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$ means $x + 1 = x - 5$ (impossible) or $x + 1 = -(x - 5)$.
-
-$$x + 1 = -x + 5$$
-
-$$2x = 4$$
-
-$$x = 2$$
-
-One real solution. The statement is True.`,
+$x + 1 = x - 5$ is impossible, so only the reflected case remains, one root. The statement is True.`,
       `**E.** → False
 
-Only the midpoint is equally far from both posts. Any other point is closer to one of them. The statement is False.`,
+Only the midpoint is equally far from both posts. The statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 70,
-    solution_overview: `One depot, five checks. Equal distance from $-1$ and $5$ is the midpoint $2$, which is the unique solution of $\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$.`,
+    solution_overview: `The equation $\\lvert x + 1 \\rvert = \\lvert x - 5 \\rvert$ is the midpoint of $-1$ and $5$, so $x = 2$.`,
   },
   {
     id: `math-4-71`,
     case_id: `MATH 4.71`,
-    title: `A 40 litre vat of 20 percent acid, drained and refilled`,
+    title: `Twice over a number equals three over three more`,
     subsection: `4.3`,
-    context: `A vat holds $40$ litres of a $20\\%$ acid solution. A worker drains some litres and refills the vat with water. The new mixture is $12\\%$ acid. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Twice a number of litres, divided by that number, equals three litres divided by three more than the number: $\\frac{2}{x} = \\frac{3}{x + 3}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$16$ litres were drained.`,
-      `After the swap, $4.8$ litres of acid remain.`,
-      `$20$ litres were drained.`,
-      `After the swap the vat is still $40$ litres in all.`,
-      `The new mixture is $15\\%$ acid.`,
+      `The number is $6$.`,
+      `The equation is undefined at $x = 0$ and at $x = -3$.`,
+      `The number is $3$.`,
+      `Check: $\\frac{2}{6} = \\frac{1}{3}$ and $\\frac{3}{9} = \\frac{1}{3}$.`,
+      `Cross-multiplying gives $2(x + 3) = 3x$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-The original acid is $0.20 \\cdot 40 = 8$ litres. Let $x$ litres be drained. Then $0.20x$ litres of acid leave, and $8 - 0.20x$ litres of acid remain in $40$ litres of mixture.
+For $x \\neq 0$ and $x \\neq -3$,
 
-$$\\frac{8 - 0.20x}{40} = 0.12$$
+$$2(x + 3) = 3x \\quad \\Rightarrow \\quad 2x + 6 = 3x \\quad \\Rightarrow \\quad x = 6$$
 
-$$8 - 0.20x = 4.8$$
-
-$$0.20x = 3.2$$
-
-$$x = 16$$
-
-Sixteen litres were drained. The statement is True.`,
+The statement is True.`,
       `**B.** → True
 
-Acid left: $8 - 0.20 \\cdot 16 = 8 - 3.2 = 4.8$ litres, which is $12\\%$ of $40$. The statement is True.`,
+Those two values zero a denominator. The statement is True.`,
       `**C.** → False
 
-Twenty litres drained would leave $0.20 \\cdot 20 = 4$ litres of acid in $40$ litres, which is $10\\%$, not $12\\%$. The recovered volume is $16$ litres. The statement is False.`,
+At $x = 3$: $\\frac{2}{3}$ versus $\\frac{3}{6} = \\frac{1}{2}$. They are not equal. The recovered value is $6$. The statement is False.`,
       `**D.** → True
 
-The worker refills with water up to the original mark, so the vat is $40$ litres again. Only the acid concentration has changed. The statement is True.`,
-      `**E.** → False
+Both sides equal $\\frac{1}{3}$. The statement is True.`,
+      `**E.** → True
 
-The new concentration is $12\\%$, not $15\\%$. Fifteen percent would need $6$ litres of acid still in the vat, which would mean draining only $10$ litres. The statement is False.`,
+That is the cleared form, valid away from the two forbidden values. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 71,
-    solution_overview: `One vat, five checks. Drain $x$ litres of a $20\\%$ mix from $40$ litres and refill with water. The new concentration $12\\%$ recovers $x = 16$.`,
+    solution_overview: `One rational equation $\\frac{2}{x} = \\frac{3}{x + 3}$. Exclude $0$ and $-3$, then $x = 6$.`,
   },
   {
     id: `math-4-72`,
     case_id: `MATH 4.72`,
     title: `A number plus its reciprocal is 13 over 6`,
     subsection: `4.3`,
-    context: `A number plus its reciprocal equals $\\frac{13}{6}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A number plus its reciprocal equals $\\frac{13}{6}$: $x + \\frac{1}{x} = \\frac{13}{6}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `One such number is $\\frac{3}{2}$.`,
       `The other is $\\frac{2}{3}$.`,
       `The two numbers are reciprocals of each other.`,
-      `Their sum is $2$.`,
-      `The number $1$ works.`,
+      `Their sum is $\\frac{13}{6}$.`,
+      `The number $1$ does not work.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Let the number be $x \\neq 0$. Then
-
-$$x + \\frac{1}{x} = \\frac{13}{6}$$
-
-Multiply through by $6x$:
-
-$$6x^{2} + 6 = 13x$$
+Multiply $x + \\frac{1}{x} = \\frac{13}{6}$ by $6x$ ($x \\neq 0$):
 
 $$6x^{2} - 13x + 6 = 0$$
 
-$$\\Delta = 169 - 144 = 25$$
-
 $$x = \\frac{13 \\pm 5}{12}$$
 
-so $x = \\frac{18}{12} = \\frac{3}{2}$ or $x = \\frac{8}{12} = \\frac{2}{3}$. Check: $\\frac{3}{2} + \\frac{2}{3} = \\frac{9 + 4}{6} = \\frac{13}{6}$. The statement is True.`,
+so $x = \\frac{3}{2}$ or $x = \\frac{2}{3}$. Check: $\\frac{3}{2} + \\frac{2}{3} = \\frac{13}{6}$. The statement is True.`,
       `**B.** → True
 
 That is the other root. The statement is True.`,
       `**C.** → True
 
-$\\frac{3}{2} \\cdot \\frac{2}{3} = 1$. Each is the reciprocal of the other, which is why both solve the same reciprocal equation. The statement is True.`,
-      `**D.** → False
+$\\frac{3}{2} \\cdot \\frac{2}{3} = 1$. The statement is True.`,
+      `**D.** → True
 
-$\\frac{3}{2} + \\frac{2}{3} = \\frac{13}{6}$, not $2$. Two would be $1 + 1$. The statement is False.`,
-      `**E.** → False
+That is the given sum, and $\\frac{3}{2} + \\frac{2}{3} = \\frac{13}{6}$. The statement is True.`,
+      `**E.** → True
 
-$1 + \\frac{1}{1} = 2 = \\frac{12}{6}$, which is not $\\frac{13}{6}$. The statement is False.`,
+$1 + 1 = 2 = \\frac{12}{6}$, not $\\frac{13}{6}$. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 72,
-    solution_overview: `Five independent claims about $x + \\frac{1}{x} = \\frac{13}{6}$. Clearing the denominator gives $6x^{2} - 13x + 6 = 0$, whose roots $\\frac{3}{2}$ and $\\frac{2}{3}$ are reciprocals.`,
+    solution_overview: `The rational equation $x + \\frac{1}{x} = \\frac{13}{6}$ clears to $6x^{2} - 13x + 6 = 0$. The roots $\\frac{3}{2}$ and $\\frac{2}{3}$ are reciprocals.`,
   },
   {
     id: `math-4-73`,
@@ -3469,29 +3361,29 @@ $1 + \\frac{1}{1} = 2 = \\frac{12}{6}$, which is not $\\frac{13}{6}$. The statem
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A square garden of area $9$ m$^{2}$ has side $3$ m, not $-3$ m.`,
+      `A square garden of area $9$ m$^{2}$ has side $-3$ m.`,
       `For every real number $x$, $\\sqrt{x^{2}} = x$.`,
-      `For every real number $x$, $\\sqrt{x^{2}} = \\lvert x \\rvert$.`,
-      `A square of area $9$ m$^{2}$ can have side $-3$ m.`,
+      `For every real number $x$, $\\sqrt{x^{2}} = x$, including $x = -3$.`,
+      `A square of area $9$ m$^{2}$ can have side $-3$ m as a length.`,
       `The equation $\\sqrt{x} = -3$ has no real solution.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [false, false, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
-A length is positive. $\\sqrt{9} = 3$, the principal (nonnegative) square root. The statement is True.`,
+A length is positive. $\\sqrt{9} = 3$, not $-3$. The statement is False.`,
       `**B.** → False
 
-If $x = -3$, then $\\sqrt{(-3)^{2}} = \\sqrt{9} = 3$, not $-3$. The identity $\\sqrt{x^{2}} = x$ fails for negative $x$. The statement is False.`,
-      `**C.** → True
+If $x = -3$, then $\\sqrt{9} = 3$, not $-3$. The identity fails for negative $x$. The statement is False.`,
+      `**C.** → False
 
-$\\sqrt{x^{2}}$ is the principal square root of a square, which is $\\lvert x \\rvert$. For $x = 3$ both sides are $3$; for $x = -3$ both sides are $3$. The statement is True.`,
+Same counter-example: $\\sqrt{(-3)^{2}} = 3 \\neq -3$. The correct identity is $\\sqrt{x^{2}} = \\lvert x \\rvert$. The statement is False.`,
       `**D.** → False
 
-A geometric side cannot be negative. The equation $s^{2} = 9$ as a number sentence has $s = -3$, but a side of a garden does not. The statement is False.`,
+A geometric side cannot be negative. The statement is False.`,
       `**E.** → True
 
-The symbol $\\sqrt{x}$ already means the nonnegative root. It cannot equal $-3$. Squaring would give $x = 9$, and $\\sqrt{9} = 3 \\neq -3$. No real solution. The statement is True.`,
+The symbol $\\sqrt{x}$ means the nonnegative root. It cannot equal $-3$. Squaring would give $x = 9$, and $\\sqrt{9} = 3 \\neq -3$. No real solution. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 73,
@@ -3500,9 +3392,9 @@ The symbol $\\sqrt{x}$ already means the nonnegative root. It cannot equal $-3$.
   {
     id: `math-4-74`,
     case_id: `MATH 4.74`,
-    title: `A recipe with one extra cup of flour`,
+    title: `Flour over sugar equals five fourths`,
     subsection: `4.3`,
-    context: `A recipe uses $1$ cup more flour than sugar. The amount of flour, divided by the amount of sugar, is $\\frac{5}{4}$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A recipe uses $1$ cup more flour than sugar. Flour divided by sugar is $\\frac{5}{4}$, so $\\frac{s + 1}{s} = \\frac{5}{4}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The recipe uses $4$ cups of sugar.`,
       `It uses $5$ cups of flour.`,
@@ -3514,19 +3406,9 @@ The symbol $\\sqrt{x}$ already means the nonnegative root. It cannot equal $-3$.
     tactical_explanations: [
       `**A.** → True
 
-Let sugar be $s$ cups. Then flour is $s + 1$, and
+$$4(s + 1) = 5s, \\quad s \\neq 0 \\quad \\Rightarrow \\quad s = 4$$
 
-$$\\frac{s + 1}{s} = \\frac{5}{4}$$
-
-with $s \\neq 0$. Cross-multiply:
-
-$$4(s + 1) = 5s$$
-
-$$4s + 4 = 5s$$
-
-$$4 = s$$
-
-Four cups of sugar. Check: flour $5$, and $\\frac{5}{4}$ matches. The statement is True.`,
+Check: flour $5$, ratio $\\frac{5}{4}$. The statement is True.`,
       `**B.** → True
 
 Flour is $4 + 1 = 5$ cups. The statement is True.`,
@@ -3535,200 +3417,163 @@ Flour is $4 + 1 = 5$ cups. The statement is True.`,
 Five cups is the flour, not the sugar. The statement is False.`,
       `**D.** → False
 
-$4 + 5 = 9$ cups, not $8$. Eight would be $4 + 4$. The statement is False.`,
+$4 + 5 = 9$ cups, not $8$. The statement is False.`,
       `**E.** → False
 
-Sugar $8$ and flour $9$ give ratio $\\frac{9}{8}$, not $\\frac{5}{4}$. The extra cup is a fixed $1$, so the ratio $\\frac{s + 1}{s}$ falls toward $1$ as $s$ grows. The statement is False.`,
+Sugar $8$ and flour $9$ give $\\frac{9}{8}$, not $\\frac{5}{4}$. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 74,
-    solution_overview: `One recipe, five checks. Flour $s + 1$ over sugar $s$ equals $\\frac{5}{4}$, so $s = 4$ and flour is $5$ cups.`,
+    solution_overview: `One rational equation $\\frac{s + 1}{s} = \\frac{5}{4}$. The solution is $s = 4$ cups of sugar and $5$ cups of flour.`,
   },
   {
     id: `math-4-75`,
     case_id: `MATH 4.75`,
-    title: `A 10 m ladder, foot pulled from 6 m to 8 m`,
+    title: `Two more than a square's side is 6 m`,
     subsection: `4.3`,
-    context: `A $10$ m ladder leans against a wall, foot $6$ m from the wall. The foot is then pulled out to $8$ m from the wall. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A square lawn has side $\\sqrt{x}$ metres, and two more than that side is $6$ m: $\\sqrt{x} + 2 = 6$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `At first the top is $8$ m up the wall.`,
-      `After the move the top is $6$ m up the wall.`,
-      `The top drops by $4$ m.`,
-      `The first position is a $6$-$8$-$10$ triangle.`,
-      `The area of the first triangle is $48$ m$^{2}$.`,
+      `The side is $4$ m.`,
+      `The area is $16$ m$^{2}$.`,
+      `The side is $6$ m.`,
+      `Isolating the root gives $\\sqrt{x} = 4$.`,
+      `The area is $36$ m$^{2}$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Pythagoras with hypotenuse $10$ and base $6$:
+$$\\sqrt{x} = 4 \\quad \\Rightarrow \\quad x = 16$$
 
-$$h^{2} + 6^{2} = 10^{2}$$
-
-$$h^{2} = 100 - 36 = 64$$
-
-$$h = \\sqrt{64} = 8$$
-
-(the positive root). The top is $8$ m up. The statement is True.`,
+The side is $4$ m. The statement is True.`,
       `**B.** → True
 
-With the foot at $8$ m:
-
-$$h_{1}^{2} + 8^{2} = 10^{2}$$
-
-$$h_{1}^{2} = 100 - 64 = 36$$
-
-$$h_{1} = \\sqrt{36} = 6$$
-
-The top is $6$ m up. The statement is True.`,
+Area $4^{2} = 16$ m$^{2}$. The statement is True.`,
       `**C.** → False
 
-The drop is $8 - 6 = 2$ m, not $4$. Four would be the difference of the two bases, $8 - 4$, or a mix-up with $10 - 6$. Heights come from square roots, not from subtracting the bases from the hypotenuse. The statement is False.`,
+Six metres is the side plus two, not the side. The statement is False.`,
       `**D.** → True
 
-$6^{2} + 8^{2} = 36 + 64 = 100 = 10^{2}$. It is the $3$-$4$-$5$ triple scaled by $2$. The statement is True.`,
+Subtract $2$ from both sides before squaring. The statement is True.`,
       `**E.** → False
 
-Area is half the product of the legs:
-
-$$\\frac{1}{2} \\cdot 6 \\cdot 8 = 24$$
-
-Forty-eight is the product without the half. The statement is False.`,
+Thirty-six would be $6^{2}$, as if the side were $6$ m. The area is $16$ m$^{2}$. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 75,
-    solution_overview: `One ladder, five checks. Heights are $\\sqrt{10^{2} - 6^{2}} = 8$ and $\\sqrt{10^{2} - 8^{2}} = 6$. The top drops by $2$ m, not $4$ m.`,
+    solution_overview: `One radical equation $\\sqrt{x} + 2 = 6$. Isolate, square, and recover side $4$ m and area $16$ m$^{2}$.`,
   },
   {
     id: `math-4-76`,
     case_id: `MATH 4.76`,
-    title: `A part that must be 50 mm, off by exactly 2 mm`,
+    title: `A part 50 mm long, off by exactly 2 mm`,
     subsection: `4.3`,
-    context: `A machine part is specified at $50$ mm. The inspector flags pieces whose length $x$ satisfies $\\lvert x - 50 \\rvert = 2$, the exact $2$ mm boundary. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A machine part is specified at $50$ mm. The inspector flags pieces whose length $x$ satisfies $\\lvert x - 50 \\rvert = 2$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The two boundary lengths are $48$ mm and $52$ mm.`,
-      `A piece of $50$ mm satisfies $\\lvert x - 50 \\rvert = 2$.`,
+      `A piece of $50$ mm satisfies that equation.`,
       `A piece of $54$ mm is not on that $2$ mm boundary.`,
-      `The equation $\\lvert x - 50 \\rvert = 2$ has only one solution.`,
+      `The equation has only one solution.`,
       `The two boundary lengths are centred at $50$ mm.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$\\lvert x - 50 \\rvert = 2$$
-
-means $x - 50 = 2$ or $x - 50 = -2$, so $x = 52$ or $x = 48$. Those are the two exact-boundary lengths. The statement is True.`,
+$x - 50 = 2$ or $x - 50 = -2$, so $x = 52$ or $x = 48$. The statement is True.`,
       `**B.** → False
 
-At $50$ mm the error is $0$, and $\\lvert 0 \\rvert = 0$, not $2$. Fifty millimetres is the target, not the boundary. The statement is False.`,
+At $50$ mm the error is $0$, not $2$. The statement is False.`,
       `**C.** → True
 
-$\\lvert 54 - 50 \\rvert = 4$, which is $4$ mm off, not $2$. Fifty-four millimetres is outside that boundary equation. The statement is True.`,
+$\\lvert 54 - 50 \\rvert = 4$, which is not $2$. The statement is True.`,
       `**D.** → False
 
-Absolute value equal to a positive number always gives two solutions, one on each side of the centre. Here $48$ and $52$. The statement is False.`,
+A positive right-hand side gives two solutions, one on each side of $50$. The statement is False.`,
       `**E.** → True
 
-The midpoint of $48$ and $52$ is $50$. That is the specified length. The statement is True.`,
+The midpoint of $48$ and $52$ is $50$. The statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 76,
-    solution_overview: `One tolerance, five checks. $\\lvert x - 50 \\rvert = 2$ is the $2$ mm boundary, so the lengths are $48$ mm and $52$ mm. The target $50$ mm itself is not on that boundary.`,
+    solution_overview: `The absolute-value equation $\\lvert x - 50 \\rvert = 2$ is the $2$ mm boundary: $48$ mm and $52$ mm. The target $50$ mm itself is not on that boundary.`,
   },
   {
     id: `math-4-77`,
     case_id: `MATH 4.77`,
-    title: `A reciprocal, a square root, and a distance of 5`,
+    title: `A rational, a radical, and an absolute value of 5`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Twice a number, divided by one less than the number, equals $1$. Then the number is $3$.`,
       `The square root of one less than a number equals one less than the number. The only real solution is $2$.`,
       `A number is $5$ units from $3$ on the line. The number is $-2$ or $8$.`,
-      `A number's reciprocal, plus $\\frac{1}{6}$, equals $\\frac{1}{2}$. Then the number is $3$.`,
+      `A number's reciprocal, plus $\\frac{1}{6}$, equals $\\frac{1}{2}$. Then the number is $6$.`,
       `The equation $\\sqrt{2x - 3} = -1$ has a real solution.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{2}{x - 1} = 1$$
+$$\\frac{2}{x - 1} = 1, \\quad x \\neq 1 \\quad \\Rightarrow \\quad x = 3$$
 
-with $x \\neq 1$. Then $2 = x - 1$, so $x = 3$. Check: $\\frac{2}{2} = 1$. The statement is True.`,
+Check: $\\frac{2}{2} = 1$. The statement is True.`,
       `**B.** → False
 
-$$\\sqrt{x - 1} = x - 1$$
-
-Let $u = x - 1$. The domain needs $u \\geq 0$, and $\\sqrt{u} = u$ gives $u = 0$ or $u = 1$. So $x = 1$ or $x = 2$. Check: $\\sqrt{0} = 0$ and $\\sqrt{1} = 1$. Two real solutions, not only $2$. The statement is False.`,
+$\\sqrt{x - 1} = x - 1$ has two real solutions, $x = 1$ and $x = 2$, because $\\sqrt{u} = u$ for $u = 0$ and $u = 1$. Not only $2$. The statement is False.`,
       `**C.** → True
 
-$\\lvert x - 3 \\rvert = 5$ gives $x = 8$ or $x = -2$. Distance $5$ from $3$. The statement is True.`,
-      `**D.** → True
+$\\lvert x - 3 \\rvert = 5$ gives $x = 8$ or $x = -2$. The statement is True.`,
+      `**D.** → False
 
-$$\\frac{1}{x} + \\frac{1}{6} = \\frac{1}{2}$$
+$$\\frac{1}{x} = \\frac{1}{2} - \\frac{1}{6} = \\frac{1}{3} \\quad \\Rightarrow \\quad x = 3$$
 
-$$\\frac{1}{x} = \\frac{1}{2} - \\frac{1}{6} = \\frac{3 - 1}{6} = \\frac{1}{3}$$
-
-so $x = 3$, and $x \\neq 0$. Check: $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2}$. The statement is True.`,
+not $6$. Check of $3$: $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2}$. The statement is False.`,
       `**E.** → False
 
-A principal square root is never negative. No real $x$ makes $\\sqrt{2x - 3} = -1$. (Squaring would give $2x - 3 = 1$, so $x = 2$, and $\\sqrt{1} = 1 \\neq -1$.) The statement is False.`,
+A principal square root is never negative. No real solution. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 77,
-    solution_overview: `Five independent stories: a rational equation $\\frac{2}{x - 1} = 1$, a radical $\\sqrt{x - 1} = x - 1$ with two surviving roots, a distance $5$ from $3$, a reciprocal plus $\\frac{1}{6}$, and a square root equal to $-1$ which is impossible.`,
+    solution_overview: `Five independent equations of the subsection: $\\frac{2}{x - 1} = 1$, $\\sqrt{x - 1} = x - 1$ with two surviving roots, $\\lvert x - 3 \\rvert = 5$, a reciprocal sum, and a square root equal to $-1$.`,
   },
   {
     id: `math-4-78`,
     case_id: `MATH 4.78`,
-    title: `Half a 240 km trip at 40 km/h, average 60`,
+    title: `Three more than a number over three less equals 2`,
     subsection: `4.3`,
-    context: `A $240$ km journey is driven in two equal $120$ km halves. The first half is at $40$ km/h. The driver wants an average of $60$ km/h for the whole $240$ km. Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Three more than a number, divided by three less than the number, equals $2$: $\\frac{x + 3}{x - 3} = 2$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The second half must be driven at $120$ km/h.`,
-      `The first $120$ km take $3$ hours.`,
-      `The average speed of the whole trip is then $80$ km/h.`,
-      `The whole trip takes $4$ hours.`,
-      `The second $120$ km then take $3$ hours.`,
+      `The number is $9$.`,
+      `The fraction is undefined at $x = 3$.`,
+      `The number is $6$.`,
+      `Check: $\\frac{12}{6} = 2$.`,
+      `Cross-multiplying gives $x + 3 = 2(x - 3)$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Average $60$ km/h on $240$ km means total time $4$ hours. The first half already used
+For $x \\neq 3$,
 
-$$\\frac{120}{40} = 3$$
+$$x + 3 = 2x - 6 \\quad \\Rightarrow \\quad 9 = x$$
 
-hours, so $1$ hour remains for the second $120$ km.
-
-$$\\frac{120}{1} = 120$$
-
-The second half must be at $120$ km/h. Equivalently, equal distances give the harmonic mean
-
-$$\\frac{2}{\\frac{1}{40} + \\frac{1}{v}} = 60 \\quad \\Rightarrow \\quad \\frac{1}{v} = \\frac{1}{30} - \\frac{1}{40} = \\frac{1}{120}$$
-
-so $v = 120$. The statement is True.`,
+The statement is True.`,
       `**B.** → True
 
-$\\frac{120}{40} = 3$ hours. The statement is True.`,
+The denominator $x - 3$ is zero at $x = 3$. The statement is True.`,
       `**C.** → False
 
-The arithmetic mean of $40$ and $120$ is $80$, but the car spends $3$ hours slow and only $1$ hour fast, so the trip average is $60$ km/h, not $80$. The statement is False.`,
+At $x = 6$: $\\frac{9}{3} = 3$, not $2$. The recovered value is $9$. The statement is False.`,
       `**D.** → True
 
-That is the $60$ km/h average on $240$ km:
+$9 + 3 = 12$ and $9 - 3 = 6$, and $\\frac{12}{6} = 2$. The statement is True.`,
+      `**E.** → True
 
-$$\\frac{240}{60} = 4$$
-
-hours. Also $3 + 1 = 4$. The statement is True.`,
-      `**E.** → False
-
-The second $120$ km have only $1$ hour left, so they take $1$ hour at $120$ km/h, not $3$. Three hours is the first-half time. The statement is False.`,
+That is the cleared form, valid for $x \\neq 3$. The statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 78,
-    solution_overview: `One journey in two equal distances, five checks. First half at $40$ km/h uses $3$ of the $4$ hours allowed by a $60$ km/h average, so the second half must be at $120$ km/h. The arithmetic mean $80$ is the trap.`,
+    solution_overview: `One rational equation $\\frac{x + 3}{x - 3} = 2$. Exclude $x = 3$, then $x = 9$.`,
   },
 ];
-
