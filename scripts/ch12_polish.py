@@ -28,7 +28,7 @@ DUP_NUM_RE = re.compile(
 
 
 def expand_math_words(s: str) -> str:
-    """Turn common probability tokens into words before stripping leftover TeX."""
+    """Turn function-style tokens into words. Keep μ, σ, σ² as they appear on paper."""
     s = s.replace("\\operatorname{Var}(X)", "the variance of X")
     s = s.replace("\\mathrm{Var}(X)", "the variance of X")
     s = s.replace("\\operatorname{SD}(X)", "the standard deviation of X")
@@ -42,18 +42,24 @@ def expand_math_words(s: str) -> str:
         r"the standard deviation of \1",
         s,
     )
-    s = re.sub(r"Cov\(([A-Za-z]),([A-Za-z])\)", r"the covariance of \1 and \2", s)
+    s = re.sub(r"Cov\(([A-Za-z]),\s*([A-Za-z])\)", r"the covariance of \1 and \2", s)
+    s = re.sub(r"E\(X\^2\)", "the expected value of X squared", s)
+    s = re.sub(r"E\(X²\)", "the expected value of X squared", s)
+    s = re.sub(
+        r"(?<![A-Za-z])E\(([A-Za-z][A-Za-z0-9_₁₂₃]*)\)",
+        r"the expected value of \1",
+        s,
+    )
+    s = re.sub(r"Var\(([A-Za-z][A-Za-z0-9_₁₂₃]*)\)", r"the variance of \1", s)
+    s = re.sub(r"SD\(([A-Za-z][A-Za-z0-9_₁₂₃]*)\)", r"the standard deviation of \1", s)
     s = s.replace("Var(X)", "the variance of X")
     s = s.replace("SD(X)", "the standard deviation of X")
-    s = re.sub(r"E\(X\^2\)", "the expected value of X squared", s)
-    s = re.sub(r"(?<![A-Za-z])E\(([A-Za-z][A-Za-z0-9_]*)\)", r"the expected value of \1", s)
-    s = re.sub(r"Var\(([A-Za-z][A-Za-z0-9_]*)\)", r"the variance of \1", s)
-    s = re.sub(r"SD\(([A-Za-z][A-Za-z0-9_]*)\)", r"the standard deviation of \1", s)
-    s = re.sub(r"\\sigma\^2", "the variance of X", s)
-    s = re.sub(r"\\sigma", "the standard deviation of X", s)
-    s = re.sub(r"\\mu", "the mean of X", s)
-    s = s.replace("σ^2", "the variance of X").replace("σ", "the standard deviation of X")
-    s = s.replace("μ", "the mean of X")
+    # Keep Greek letters as printed math, including subscripts: μ_R, σ_A²
+    s = re.sub(r"\\sigma\s*\^\s*\{?2\}?", "σ²", s)
+    s = s.replace("\\sigma", "σ").replace("\\mu", "μ")
+    s = s.replace("σ^2", "σ²").replace("σ^{2}", "σ²")
+    s = re.sub(r"σ_([A-Za-z])\^?2", r"σ_\1²", s)
+    s = re.sub(r"μ_([A-Za-z])", r"μ_\1", s)
     s = re.sub(
         r"\\sim\\operatorname\{Poisson\}\((\d+)\)",
         r"follows a Poisson distribution with mean \1",
@@ -62,7 +68,83 @@ def expand_math_words(s: str) -> str:
     s = s.replace("\\sim", " follows ")
     s = s.replace("\\ge", " ≥ ").replace("\\le", " ≤ ").replace("\\ne", " ≠ ")
     s = s.replace("\\approx", " ≈ ")
-    s = s.replace("\\lambda", " lambda ")
+    s = s.replace("\\lambda", "λ")
+    return s
+
+
+def _prob_phrase(inner: str) -> str:
+    inner = re.sub(r"\s+", " ", inner).strip()
+    inner = inner.replace("\\mid", " given ").replace("|", " given ")
+    if ", given" in inner or " given " in inner:
+        sep = ", given" if ", given" in inner else " given "
+        event, cond = inner.split(sep, 1)
+        event, cond = event.strip(" ,"), cond.strip(" ,")
+        use_that = bool(
+            re.search(r"\b(is|was|were|are|show|shows|has|have)\b", event, flags=re.I)
+        ) or event.lower().startswith(("the ", "at least"))
+        link = "that" if use_that else "of"
+        return f"the probability {link} {event} given {cond}"
+    m = re.match(r"^([A-Za-z])\s*=\s*(.+)$", inner)
+    if m:
+        return f"the probability that {m.group(1)} equals {m.group(2)}"
+    m = re.match(r"^(\d[\d,]*(?:\.\d+)?)\s*<\s*X\s*<\s*(\d[\d,]*(?:\.\d+)?)$", inner)
+    if m:
+        return f"the probability that X is between {m.group(1)} and {m.group(2)}"
+    m = re.match(
+        r"^X\s*<\s*(\d[\d,]*(?:\.\d+)?)\s+or\s+X\s*>\s*(\d[\d,]*(?:\.\d+)?)$",
+        inner,
+        flags=re.I,
+    )
+    if m:
+        return (
+            f"the probability that X is less than {m.group(1)} or greater than {m.group(2)}"
+        )
+    if re.match(r"^[A-Za-z][A-Za-z0-9 +]* AND [A-Za-z]", inner):
+        cleaned = inner.replace(" AND ", " and ")
+        return f"the probability of {cleaned}"
+    if inner.lower().startswith("the "):
+        return f"the probability that {inner}"
+    return f"the probability that {inner}"
+
+
+def formulas_to_sentences(s: str) -> str:
+    """Rewrite P(...), E(...), Var(...), SD(...) as readable English."""
+    if not s:
+        return s
+
+    # Compact distribution lists first, while P(X=k)=p is still intact.
+    def compact_list(m: re.Match[str]) -> str:
+        chunk = m.group(0)
+        pairs = re.findall(
+            r"P\(\s*X\s*=\s*([^)]+)\)\s*=\s*([^,;]+?)(?=(?:,|\s+and\s+|$))",
+            chunk,
+        )
+        if len(pairs) < 2:
+            return chunk
+        bits = [f"X equals {v.strip()} with probability {p.strip()}" for v, p in pairs]
+        if len(bits) == 2:
+            return bits[0] + " and " + bits[1]
+        return ", ".join(bits[:-1]) + ", and " + bits[-1]
+
+    s = re.sub(
+        r"P\(\s*X\s*=\s*[^)]+\)\s*=\s*[^,;]+(?:\s*,\s*(?:and\s+)?P\(\s*X\s*=\s*[^)]+\)\s*=\s*[^,;]+)+",
+        compact_list,
+        s,
+    )
+    s = re.sub(
+        r"P\(\s*X\s*=\s*([^)]+)\)\s*=\s*([^,;.]+)",
+        r"X equals \1 with probability \2",
+        s,
+    )
+
+    def repl_p(m: re.Match[str]) -> str:
+        return _prob_phrase(m.group(1))
+
+    s = re.sub(r"P\(([^()]+)\)", repl_p, s)
+    s = expand_math_words(s)
+    s = s.replace("the expected value of X of X", "the expected value of X")
+    s = re.sub(r"(\d(?:\.\d+)?)\s*-\s*p\b", r"\1 minus p", s)
+    s = re.sub(r"\s+", " ", s).strip()
     return s
 
 
@@ -87,10 +169,18 @@ def strip_markup(text: str, keep_display_math: bool = False) -> str:
 
         s = re.sub(r"\$\$.*?\$\$", hold, s, flags=re.S)
 
+    money: list[str] = []
+
+    def hold_money(m: re.Match[str]) -> str:
+        money.append(m.group(0))
+        return f"@@CUR{len(money) - 1}@@"
+
+    s = re.sub(r"\$\d[\d,]*(?:\.\d+)?", hold_money, s)
+
     # Keep ordinary numbers that were wrapped as math
     s = re.sub(r"\$(\d[\d,]*(?:\.\d+)?)\$", r"\1", s)
     s = re.sub(r"\\\((\d[\d,]*(?:\.\d+)?)\\\)", r"\1", s)
-    s = s.replace("\\%", "%").replace("\\$", "")
+    s = s.replace("\\%", "%")
     s = s.replace("\\binom", "C")
     s = s.replace("\\cdot", "·").replace("\\times", "×")
     s = s.replace("\\le ", "≤ ").replace("\\ge ", "≥ ")
@@ -116,6 +206,9 @@ def strip_markup(text: str, keep_display_math: bool = False) -> str:
     s = re.sub(r"the standard deviation of X of X", "the standard deviation of X", s)
     s = re.sub(r"the mean of X of X", "the mean of X", s)
 
+    for i, amt in enumerate(money):
+        s = s.replace(f"@@CUR{i}@@", amt)
+
     if keep_display_math:
         for i, block in enumerate(held):
             inner = block.strip("$").strip()
@@ -127,15 +220,18 @@ def strip_markup(text: str, keep_display_math: bool = False) -> str:
 
 
 def humanize_statement(raw: str, context: str = "") -> str:
-    s = expand_math_words(raw or "")
+    s = formulas_to_sentences(raw or "")
     s = strip_markup(s)
-    s = s.replace("$$", "").replace("$", "")
     s = drop_duplicate_numbers(s)
     s = s.strip(" ;")
     if not s:
         return s
 
     s = re.sub(r"^the probability that the probability", "The probability", s, flags=re.I)
+    s = re.sub(r"^μ\b", "The mean μ", s)
+    s = re.sub(r"^σ²\b", "The variance σ²", s)
+    s = re.sub(r"^σ\b(?!²)", "The standard deviation σ", s)
+    s = re.sub(r"^The mean μ of ", "The mean μ of ", s)
 
     def cmp_repl(m: re.Match[str]) -> str:
         left = m.group(1).strip()
@@ -207,8 +303,8 @@ def humanize_statement(raw: str, context: str = "") -> str:
     s = re.sub(r"^C=", "The expected cost C equals ", s)
     s = re.sub(r"^[Cc]\s*=\s*", "The expected cost C equals ", s)
     s = re.sub(
-        r"Cov\(([A-Za-z]),([A-Za-z])\)\s*=\s*",
-        r"The covariance of \1 and \2 equals ",
+        r"the covariance of ([A-Za-z]) and ([A-Za-z])\s*=\s*",
+        r"the covariance of \1 and \2 equals ",
         s,
     )
     s = re.sub(
@@ -216,16 +312,39 @@ def humanize_statement(raw: str, context: str = "") -> str:
         r"\1 minus the probability",
         s,
     )
+    s = re.sub(r"portfolio's the expected value of X", "portfolio's expected value", s, flags=re.I)
+    s = re.sub(r"condition the variance", "condition that the variance", s, flags=re.I)
+    s = re.sub(r"the same the expected value", "the same expected value", s, flags=re.I)
+    s = re.sub(r"a larger the variance", "a larger variance", s, flags=re.I)
+    s = re.sub(r"X follows X equals", "X equals", s)
+    s = re.sub(r"μ\s*=\s*the expected value of X\s*(?:equals|=)\s*", "μ equals ", s)
     s = re.sub(
-        r"(the covariance of [A-Za-z] and [A-Za-z])\s*=\s*",
-        r"\1 equals ",
+        r"the expected value of ([A-Za-z][A-Za-z0-9_₁₂₃]*)\s*=\s*",
+        r"the expected value of \1 equals ",
         s,
     )
-    s = re.sub(r"^([kKpP])=", r"The unknown value \1 equals ", s)
-    s = re.sub(r"(\d)\s*the standard deviation", r"\1 times the standard deviation", s)
-    s = re.sub(r"the mean of X\s*=\s*", "the mean of X equals ", s)
-    s = re.sub(r"the variance of ([A-Za-z])\s*=\s*", r"the variance of \1 equals ", s)
-    s = re.sub(r"the expected value of ([A-Za-z])\s*=\s*", r"the expected value of \1 equals ", s)
+    s = re.sub(
+        r"the variance of ([A-Za-z][A-Za-z0-9_₁₂₃]*)\s*=\s*",
+        r"the variance of \1 equals ",
+        s,
+    )
+    s = re.sub(
+        r"the standard deviation of ([A-Za-z][A-Za-z0-9_₁₂₃]*)\s*=\s*",
+        r"the standard deviation of \1 equals ",
+        s,
+    )
+    s = re.sub(r"μ\s*=\s*", "μ = ", s)
+    s = re.sub(r"σ²\s*=\s*", "σ² = ", s)
+    s = re.sub(
+        r"(given that [^,]+?) (equals|is greater|is less|is at least|is at most|is more)",
+        r"\1, \2",
+        s,
+        flags=re.I,
+    )
+    s = re.sub(r" \+ the probability", " plus the probability", s)
+    s = re.sub(r"×the variance", " times the variance", s)
+    s = re.sub(r" \+ 0\.", " plus 0.", s)
+    s = re.sub(r"^([kKpP]) equals ", r"The unknown value \1 equals ", s)
 
     s = re.sub(r"\s+", " ", s).strip()
     if s and s[0].islower():
@@ -298,6 +417,7 @@ def humanize_context(raw: str) -> str:
         s,
     )
     s = re.sub(r"(?i)^\*\*difficulty:[^\n]*\n", "", s)
+    s = formulas_to_sentences(s)
     s = strip_markup(s, keep_display_math=True)
     s = re.sub(
         r"Evaluate each statement\.?\s*$",
@@ -307,6 +427,12 @@ def humanize_context(raw: str) -> str:
     )
     if re.search(r"begin\{array\}", raw or "") and not re.search(r"[A-Za-z]{12,}", s[:80] if s else ""):
         s = complete_table_context(raw, s)
+    s = re.sub(r"the expected value of ([A-Za-z][A-Za-z0-9_₁₂₃]*)\s*=\s*", r"the expected value of \1 equals ", s)
+    s = re.sub(r"the variance of ([A-Za-z][A-Za-z0-9_₁₂₃]*)\s*=\s*", r"the variance of \1 equals ", s)
+    s = re.sub(r"the standard deviation of ([A-Za-z][A-Za-z0-9_₁₂₃]*)\s*=\s*", r"the standard deviation of \1 equals ", s)
+    s = re.sub(r"μ\s*=\s*the expected value of X\s*(?:equals|=)\s*", "μ equals ", s)
+    s = re.sub(r"X follows X equals", "X equals", s)
+    s = re.sub(r"the same the expected value", "the same expected value", s, flags=re.I)
     return s.strip()
 
 
@@ -659,21 +785,18 @@ def apply_venn_override(task: dict) -> dict:
 def polish_task(task: dict) -> dict:
     task = apply_venn_override(task)
     locked = task.get("_venn_locked")
+    pdf_locked = task.get("_pdf_locked_stem")
     ctx = task.get("context") or "" if locked else humanize_context(task.get("context") or "")
     title = task.get("title") or ""
-    for key, story in EV_STORY.items():
-        if key in title and task.get("subsection") == "12.4":
-            table = latex_table_to_markdown(task.get("context") or "")
-            ctx = story
-            if table:
-                task["tables_markdown"] = table
-            break
-    else:
-        table = latex_table_to_markdown(task.get("context") or "")
-        if table and not task.get("tables_markdown"):
-            task["tables_markdown"] = table
+    table = latex_table_to_markdown(task.get("context") or "")
+    if table and not task.get("tables_markdown"):
+        task["tables_markdown"] = table
 
-    if task.get("subsection") == "12.4" and (not ctx or ctx.startswith("$$") or "array" in ctx):
+    if (
+        not pdf_locked
+        and task.get("subsection") == "12.4"
+        and (not ctx or ctx.startswith("$$") or "array" in ctx)
+    ):
         ctx = (
             f"{strip_markup(title).strip('.')}. Describe the random variable X from the situation above, "
             "using the possible values and probabilities in the table. "
@@ -703,6 +826,10 @@ def validate_tasks(tasks: list[dict]) -> list[str]:
             flags.append(f"{tid}: duplicate number pattern in stem")
         if MARKER_RE.search(stem) or "#STATEMENT" in stem.upper():
             flags.append(f"{tid}: literal #STATEMENT marker in stem")
+        if re.search(r"the mean of X_[A-Z]|the standard deviation of X_[A-Z]\^?2", stem):
+            flags.append(f"{tid}: mangled μ/σ² phrasing in stem")
+        if t.get("subsection") in {"12.3", "12.4"} and len(stem) < 50 and not t.get("figure") and not t.get("tables_markdown"):
+            flags.append(f"{tid}: stem looks truncated ({len(stem)} chars)")
         if len(stem) > 1800:
             flags.append(f"{tid}: stem is anomalously long ({len(stem)} chars); likely leaked explanation")
         stmts = t.get("statements") or []
@@ -712,7 +839,7 @@ def validate_tasks(tasks: list[dict]) -> list[str]:
             body = (s or "").strip()
             if not body or re.fullmatch(r"[A-E]\.?", body):
                 flags.append(f"{tid}: statement {LETTERS[i]} is missing its text")
-            if "$" in body or "\\text" in body or "#STATEMENT" in body.upper():
+            if re.search(r"\$(?!\d)", body) or "\\text" in body or "#STATEMENT" in body.upper():
                 flags.append(f"{tid}: statement {LETTERS[i]} still has leftover markup")
             if len(body) < 12:
                 flags.append(f"{tid}: statement {LETTERS[i]} is too short to be a complete sentence")
