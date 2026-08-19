@@ -7835,10 +7835,10 @@ At $x = 3$ the left side is undefined. For $x \\neq 3$ the equation becomes $x +
       `The square root of a length plus $15$ m, plus the square root of the length plus $8$ m, equals $7$ m. Then the length is $1$ m.`,
       `The equation $\\lvert 3 - 2x \\rvert = \\lvert x + 4 \\rvert$ has the unique real solution $x = \\dfrac{7}{3}$.`,
       `The equation $\\dfrac{1}{x} - \\dfrac{1}{x + 3} = \\dfrac{1}{4}$ is solved by both $3$ and $-3$.`,
-      `Both $x = 3$ and $x = 8$ solve $\\sqrt{2x + 1} = 4 - x$.`,
-      `The solution of $\\dfrac{2x - 1}{x + 2} + \\dfrac{x - 3}{x - 1} = 3$ is $x = 4$.`,
+      `The equation $\\sqrt{2x + 1} = 4 - x$ has exactly one real solution.`,
+      `The equation $\\dfrac{2x - 1}{x + 2} + \\dfrac{x - 3}{x - 1} = 3$ has exactly one real solution.`,
     ],
-    answer_key: [true, false, false, false, false],
+    answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -7853,16 +7853,52 @@ $$\\frac{3}{x(x + 3)} = \\frac{1}{4}$$
 $$x^{2} + 3x - 12 = 0$$
 
 The roots are $\\frac{-3 \\pm \\sqrt{57}}{2}$, not $\\pm 3$. At $x = 3$: $\\frac{1}{3} - \\frac{1}{6} = \\frac{1}{6} \\neq \\frac{1}{4}$. The statement is False.`,
-      `**D.** → False
+      `**D.** → True
 
-Need $x \\le 4$ so that $4 - x \\ge 0$. Squaring gives $x^{2} - 10x + 15 = 0$, so $x = 5 \\pm \\sqrt{10}$. The larger candidate exceeds $4$ and is extra. Neither $3$ nor $8$ is a root: at $x = 3$, $\\sqrt{7} \\neq 1$, and $x = 8$ makes the right-hand side negative. The statement is False.`,
-      `**E.** → False
+Domain comes from the square root and the sign of the right-hand side:
 
-Clearing by $(x + 2)(x - 1)$ produces $7x - 1 = 0$, so $x = \\frac{1}{7}$, not $4$. At $x = 4$: $\\frac{7}{6} + \\frac{1}{3} = \\frac{3}{2} \\neq 3$. The statement is False.`,
+$$2x + 1 \\ge 0$$
+
+$$x \\ge -\\frac{1}{2}$$
+
+$$4 - x \\ge 0$$
+
+$$x \\le 4$$
+
+So $-\\frac{1}{2} \\le x \\le 4$.
+
+Squaring:
+
+$$2x + 1 = (4 - x)^{2}$$
+
+$$2x + 1 = x^{2} - 8x + 16$$
+
+$$0 = x^{2} - 10x + 15$$
+
+$$x = 5 \\pm \\sqrt{10}$$
+
+The root $5 + \\sqrt{10}$ exceeds $4$, so it is not in the domain. The root $5 - \\sqrt{10}$ is in $-\\frac{1}{2} \\le x \\le 4$. Therefore the equation has exactly one real solution, so the statement is True.`,
+      `**E.** → True
+
+Need $x \\neq -2$ and $x \\neq 1$. Multiply by $(x + 2)(x - 1)$:
+
+$$\\left(2x - 1\\right)(x - 1) + (x - 3)(x + 2) = 3(x + 2)(x - 1)$$
+
+$$2x^{2} - 3x + 1 + x^{2} - x - 6 = 3x^{2} + 3x - 6$$
+
+$$3x^{2} - 4x - 5 = 3x^{2} + 3x - 6$$
+
+$$-4x - 5 = 3x - 6$$
+
+$$-7x = -1$$
+
+$$x = \\frac{1}{7}$$
+
+This value is allowed because $\\frac{1}{7} \\neq -2$ and $\\frac{1}{7} \\neq 1$. So the equation has exactly one real solution, hence the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 92,
-    solution_overview: `Five independent 4.3 claims. A sum of two square roots recovers $x = 1$. Equal abs-values give two cases. Clearing a two-fraction sum equal to $3$ recovers $x = 1/7$.`,
+    solution_overview: `Five independent 4.3 claims. A sum of two square roots recovers $x = 1$. Equal abs-values give two cases. The radical equation leaves one in-domain root, and the rational equation leaves one allowed solution $x = 1/7$.`,
   },
   {
     id: `math-4-93`,
