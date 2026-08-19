@@ -60,7 +60,7 @@ $$5x - 3 = 12$$
 
 $$5x = 15$$
 
-$$x = 3$$
+$$x = 7$$
 
 The isolated solution is $x = 3$, and $3$ is not an even integer. The candidate's property is false, so the statement is False.`,
       `**C.** → True
@@ -4848,7 +4848,7 @@ Two distinct real roots, so the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Three litres of oil, poured as equal shares, fill a jerrycan if each share is one-fourth of the jerrycan. Then the jerrycan holds $12$ litres.`,
-      `The equation $\\frac{3}{x} = \\frac{1}{4}$ is undefined at $x = 0$, because that value zeros the denominator.`,
+      `The equation $\\frac{3}{x} = \\frac{1}{4}$ has a unique real solution that is divisible by $6$.`,
       `Five litres poured as equal shares fill a can if each share is the whole can. A student reports that the can holds $3$ litres.`,
       `The equation $\\frac{3}{x} = \\frac{1}{4}$ has a unique real solution, and that solution is positive.`,
       `A student claims that a negative twelve-litre can also works when three litres fill one-fourth of the can.`,
@@ -4869,8 +4869,11 @@ $$x = 12$$
 
 Check: $\\frac{3}{12} = \\frac{1}{4}$. The jerrycan holds $12$ litres, so the statement is True.`,
       `**B.** → True
-
-The left side of $\\frac{3}{x} = \\frac{1}{4}$ has denominator $x$. Substituting $x = 0$ would require dividing by zero, so the expression is undefined at that value, so the statement is True.`,
+The equation is $\\frac{3}{x} = \\frac{1}{4}$, so first exclude the hole $x = 0$ (division by $0$ is not allowed).
+On the remaining domain, cross-multiply:
+$$3 \\cdot 4 = 1 \\cdot x$$
+$$12 = x$$
+So the unique real solution is $x = 12$, which is divisible by $6$. Therefore the statement is True.`,
       `**C.** → False
 
 Five litres filling the can in shares that each equal the whole can means
@@ -4915,10 +4918,10 @@ and $-\\frac{1}{4} \\neq \\frac{1}{4}$. The two sides of $\\frac{3}{x} = \\frac{
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a unique real solution, and that solution is an integer.`,
-      `The expression $\\dfrac{5}{x + 3}$ is undefined when $x = -3$.`,
-      `$\\dfrac{4}{4 + 2} = \\dfrac{1}{3}$.`,
-      `You may cross-multiply $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ even at $x = -2$, because both sides become infinite in a way that cancels.`,
-      `$\\dfrac{3}{3 + 2} = \\dfrac{1}{3}$.`,
+      `At the solution of $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$, the expression $\\dfrac{5}{x + 3}$ is defined (so $x + 3 \\neq 0$).`,
+      `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a real solution strictly greater than $2$.`,
+      `Clearing denominators in $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ allows the excluded value where $x + 2 = 0$ to still be a solution.`,
+      `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a real solution that is negative.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -4945,32 +4948,38 @@ $$\\frac{1}{1 + 2} = \\frac{1}{3}$$
 The number is $1$, so the statement is True.`,
       `**B.** → True
 
-The denominator of $\\frac{5}{x + 3}$ is $x + 3$. That factor is zero when
+Solve $\\frac{x}{x + 2} = \\frac{1}{3}$ on its allowed domain ($x \\neq -2$):
 
-$$x + 3 = 0$$
+$$3x = x + 2$$
 
-$$x = -3$$
+$$2x = 2$$
+$$x = 1$$
 
-so the expression is undefined at $x = -3$, so the statement is True.`,
+At that solution we have $x + 3 = 4 \\neq 0$, so $\\frac{5}{x + 3}$ is defined. Hence the statement is True.`,
       `**C.** → False
 
-Substitute the claimed number $4$ into $\\frac{x}{x + 2}$:
+Solve $\\frac{x}{x + 2} = \\frac{1}{3}$ (excluding $x = -2$):
 
-$$\\frac{4}{4 + 2} = \\frac{4}{6}$$
+$$3x = x + 2$$
 
-$$\\frac{4}{6} = \\frac{2}{3}$$
+$$2x = 2$$
 
-and $\\frac{2}{3} \\neq \\frac{1}{3}$. The number that works is $x = 1$, so the statement is False.`,
+$$x = 1$$
+
+This solution is not strictly greater than $2$, so the statement is False.`,
       `**D.** → False
 
-Cross-multiplying a proportion requires every denominator to be nonzero. At $x = -2$ the left side of $\\frac{x}{x + 2} = \\frac{1}{3}$ has denominator $x + 2 = 0$, so the original equation is undefined. A hole is never a root, so the statement is False.`,
+Clearing denominators in $\\frac{x}{x + 2} = \\frac{1}{3}$ requires $x + 2 \\neq 0$, so the excluded value where $x + 2 = 0$ makes the original equation undefined and cannot be a solution. Therefore the statement is False.`,
       `**E.** → False
 
-Substitute $x = 3$:
+Solve $\\frac{x}{x + 2} = \\frac{1}{3}$ (excluding $x = -2$):
 
-$$\\frac{3}{3 + 2} = \\frac{3}{5}$$
+$$3x = x + 2$$
 
-and $\\frac{3}{5} \\neq \\frac{1}{3}$. The value that satisfies the proportion is $x = 1$, so the statement is False.`,
+$$2x = 2$$
+
+$$x = 1$$
+Since $x = 1$ is not negative, the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 58,
@@ -4984,8 +4993,8 @@ and $\\frac{3}{5} \\neq \\frac{1}{3}$. The value that satisfies the proportion i
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has no real solution.`,
-      `$x = 2$ is a solution of $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$, because both sides become infinite in a way that cancels.`,
-      `The identity $\\dfrac{5}{x + 1} = \\dfrac{5}{x + 1}$ still holds at $x = -1$.`,
+      `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has a real solution after excluding the value that makes the denominator $0$.`,
+      `The equation $\\dfrac{5}{x + 1} = \\dfrac{5}{x + 1}$ has a real solution at the value where $x + 1 = 0$.`,
       `The equation $\\frac{2}{x} = 0$ has a real solution.`,
       `Six litres poured at a constant rate of $2$ litres per share fill a can. A clerk reports that the can holds $2$ litres.`,
     ],
@@ -5003,11 +5012,12 @@ $$1 = 3$$
 
 which is never true. At the excluded hole both sides are undefined, so that value is not a solution either. No real volume works, so the statement is True.`,
       `**B.** → False
-
-At $x = 2$ both denominators of $\\frac{1}{x - 2} = \\frac{3}{x - 2}$ are zero, so both sides are undefined. A value outside the domain is never a solution, so the statement is False.`,
+Exclude the hole $x - 2 = 0$. For every allowed $x$, clear denominators by multiplying both sides by $x - 2$:
+$$1 = 3$$
+That is a contradiction, so the equation has no real solution on its domain. Therefore the statement is False.`,
       `**C.** → False
-
-The identity $\\frac{5}{x + 1} = \\frac{5}{x + 1}$ holds for every $x$ except the hole $x = -1$, where the denominator is zero. Substituting the claimed volume $-1$ litre is undefined, so that value is not a point where the two sides equal themselves. A hole is never a root, so the statement is False.`,
+For the equation $\\frac{5}{x + 1} = \\frac{5}{x + 1}$ to even be defined, we must have $x + 1 \\neq 0$ so the denominator is nonzero.
+At the value where $x + 1 = 0$, both sides are undefined, so there is no real solution there. Hence the statement is False.`,
       `**D.** → False
 
 A fraction $\\frac{N}{D}$ is zero only when $N = 0$ and $D \\neq 0$. Here $N = 2 \\neq 0$. The claimed $x = 0$ zeros the denominator, so $\\frac{2}{x}$ is undefined there, not equal to $0$. There is no solution, so the statement is False.`,
@@ -5219,7 +5229,7 @@ A distance on the number line cannot be $-2$, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Five kilograms of flour, packed into bags of one kilogram less than a certain number of kilograms, fill exactly one such bag-count. That number of kilograms is $6$.`,
-      `The rational equation $\\frac{4}{x - 3} = 1$ is undefined at $x = 3$.`,
+      `The equation $\\frac{4}{x - 3} = 1$ has a unique real solution that is greater than $3$.`,
       `If five kilograms are packed into bags of $5$ kg each, then $\\frac{5}{5} = 1$, so they fill exactly one bag-count of that size.`,
       `A tank of $8$ litres is emptied at a constant $2$ litres per hour. The time $t$ hours until empty satisfies $\\frac{8}{t} = 2$, so $t = 4$.`,
       `Clearing the denominator in $\\frac{5}{x - 1} = 1$ gives $5 = x - 1$, provided $x \\neq 1$.`,
@@ -5245,15 +5255,15 @@ $$\\frac{5}{6 - 1} = 1$$
 That is the claimed number of kilograms, so the statement is True.`,
       `**B.** → True
 
-A rational expression is undefined where a denominator is zero. For $\\frac{4}{x - 3} = 1$ the denominator vanishes at
+Solve $\\frac{4}{x - 3} = 1$ on its allowed domain (excluding the hole where $x - 3 = 0$):
 
-$$x - 3 = 0$$
+$$4 = x - 3$$
 
-$$x = 3$$
+$$x = 7$$
 
-At $x = 3$ the left side is undefined, so $x = 3$ is a hole, never a root.
+So the unique real solution is $x = 7$, and that solution satisfies $7 > 3$.
 
-The claim is exactly that domain fact, so the statement is True.`,
+Therefore the statement is True.`,
       `**C.** → True
 
 If the bags are $5$ kg each, the same packing ratio is
@@ -6164,7 +6174,7 @@ so neither denominator is zero there. The clearing step used in A is allowed at 
     statements: [
       `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ has a positive real solution.`,
       `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ also has a negative real solution.`,
-      `The equation $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ is undefined at $x = 0$ and at $x = -1$.`,
+      `The equation $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ has two real solutions of opposite signs.`,
       `A reciprocal sum is undefined where a denominator is zero. The cleared equation has two distinct real solutions, and both are allowed.`,
       `Clearing $\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$ produces a quadratic with two distinct real roots, and both roots are allowed.`,
     ],
@@ -6204,15 +6214,15 @@ $$= \\frac{1}{2} + 2 = \\frac{5}{2}$$
 The value $-2$ is not a hole, and it satisfies the original, so the statement is True.`,
       `**C.** → True
 
-A rational equation is undefined where a denominator is zero. For $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ the denominators vanish at
+Clearing denominators in $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ (excluding the holes) gives
 
-$$x = 0$$
+$$x^{2} + x - 2 = 0$$
 
-and
+which factors as
 
-$$x = -1$$
+$$(x + 2)(x - 1) = 0$$
 
-Those two values are holes, never roots, so the statement is True.`,
+So the equation has one positive and one negative real solution, hence the solutions are of opposite signs. Therefore the statement is True.`,
       `**D.** → True
 
 The holes of that reciprocal sum are $x = 0$ and $x = -1$. The candidates $x = 1$ and $x = -2$ equal neither hole. The substitutions in A and B already show that both satisfy the original, so the statement is True.`,
@@ -6498,7 +6508,7 @@ The recovered length is $\\frac{49}{9}$ m, so the statement is False.`,
     statements: [
       `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has an integer solution.`,
       `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has a negative real solution.`,
-      `Splitting $\\lvert 3 - 2x \\rvert = x + 1$ after requiring $x \\ge -1$ produces $x = \\frac{2}{3}$ as the other solution, and $\\lvert 3 - \\frac{4}{3} \\rvert = \\frac{5}{3}$ checks.`,
+      `Splitting $\\lvert 3 - 2x \\rvert = x + 1$ after requiring $x \\ge -1$ produces a non-integer rational solution strictly between $0$ and $1$.`,
       `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has only one real solution.`,
       `Every candidate of that split that already meets $x + 1 \\ge 0$ survives in the original equation.`,
     ],
@@ -6583,7 +6593,7 @@ Every candidate from the split that already meets the nonnegative right-hand sid
       `The equation $\\sqrt{x + 3} = x - 3$ has two real solutions.`,
       `A depot equally far, in absolute value, from $-2$ and from $\\frac{7}{2}$ in a scaled sense sits at $9$ or at $\\frac{5}{3}$.`,
       `The equation $\\sqrt{x + 4} = -2$ has a real solution.`,
-      `The simplified identity $\\frac{x^{2} - 4}{x - 2} = x$ holds at $x = 2$, which is therefore a root.`,
+      `The simplified identity $\\frac{x^{2} - 4}{x - 2} = x$ is valid even where its denominator equals $0$, so that point is a root.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -6673,7 +6683,7 @@ $$\\sqrt{0 + 4} = 2 \\neq -2$$
 Zero does not solve the original, so the statement is False.`,
       `**E.** → False
 
-The left side $\\frac{x^{2} - 4}{x - 2}$ is undefined at $x = 2$, so $x = 2$ is a hole, never a root. For $x \\neq 2$ the fraction simplifies:
+The left side $\\frac{x^{2} - 4}{x - 2}$ is undefined where its denominator equals $0$, so that point is a hole, never a root. For values where $x - 2 \\neq 0$ the fraction simplifies:
 
 $$\\frac{(x - 2)(x + 2)}{x - 2} = x + 2$$
 
@@ -6693,8 +6703,8 @@ The identity does not hold at the hole, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has a unique real solution, and that solution is negative.`,
-      `The difference $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1}$ is undefined at $x = 1$ and at $x = -1$.`,
-      `A student claims that $1$ is a solution of $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$, because the two subtracted fractions become infinite in a way that cancels.`,
+      `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has exactly two holes coming from its denominators.`,
+      `A student claims that a value making one denominator zero can still be a solution of $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$.`,
       `The unique real solution obtained from the cleared linear equation satisfies the original difference equation.`,
       `When $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$ is cleared by $(x - 1)(x + 1)$, the $x^{2}$ terms cancel and a linear equation remains.`,
     ],
@@ -6724,21 +6734,14 @@ $$x = -5$$
 
 The recovered value is $-5$, which is neither hole. That is the claimed solution, so the statement is True.`,
       `**B.** → True
-
-A rational difference is undefined where a denominator is zero. The denominators $x - 1$ and $x + 1$ vanish at
-
-$$x = 1$$
-
-and
-
-$$x = -1$$
+A rational difference is undefined where a denominator is zero. The denominators vanish at two distinct real values, so there are exactly two holes.
 
 Those two values are holes, never roots, so the statement is True.`,
       `**C.** → False
 
-At $x = 1$ the first fraction $\\frac{2x + 1}{x - 1}$ is undefined. A hole is never a root, even if the two sides appear to grow large.
+If any denominator of the difference is zero, the original expression is undefined. A hole is never a root, even if the two sides appear to grow large.
 
-Plug the claimed value and the original left-hand side is undefined, so the statement is False.`,
+So the statement is False.`,
       `**D.** → True
 
 Substitute the recovered value $x = -5$ into the original left-hand side:
