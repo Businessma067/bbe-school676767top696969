@@ -7674,8 +7674,8 @@ Neither root is $7$. Substituting the claimed middle $7$ gives $4 \\cdot 7 = 28$
       `A surveyor records that the square root of a distance plus $21$ m, minus the square root of the distance plus $1$ m, equals $2$ m. Then the distance is $9$ m.`,
       `The square root of a length plus $5$ m, plus the square root of the length minus $3$ m, equals $4$ m. Then the length is $4$ m.`,
       `A depot on a straight road has distances to kilometre-post $1$ and kilometre-post $7$ that add to $10$ km. Then the two possible sites are kilometre $0$ and kilometre $8$.`,
-      `The solution of $\\dfrac{1}{x - 1} + \\dfrac{1}{x + 2} = 1$ is $x = 2$.`,
-      `Both $x = 2$ and $x = 5$ solve $\\sqrt{2x + 6} = x - 1$.`,
+      `The equation $\\dfrac{1}{x - 1} + \\dfrac{1}{x + 2} = 1$ has exactly one real solution.`,
+      `The equation $\\sqrt{2x + 6} = x - 1$ has exactly two real solutions.`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
@@ -7704,10 +7704,34 @@ Let $a = \\sqrt{x + 5}$ and $b = \\sqrt{x - 3}$, so $a + b = 4$ and $a^{2} - b^{
 Between the posts the sum is constantly $6$. Outside, $x < 1$ gives $x = -1$ and $x > 7$ gives $x = 9$. The sites are $-1$ and $9$, not $0$ and $8$. The statement is False.`,
       `**D.** → False
 
-Clearing by $(x - 1)(x + 2)$ produces $x^{2} - x - 3 = 0$, so $x = \\frac{1 \\pm \\sqrt{13}}{2}$, not $2$. At $x = 2$: $\\frac{1}{1} + \\frac{1}{4} = \\frac{5}{4} \\neq 1$. The statement is False.`,
+Need $x \\neq 1$ and $x \\neq -2$. Multiply by $(x - 1)(x + 2)$:
+
+$$x + 2 + x - 1 = (x - 1)(x + 2)$$
+
+$$2x + 1 = x^{2} + x - 2$$
+
+$$0 = x^{2} - x - 3$$
+
+$$x = \\frac{1 \\pm \\sqrt{13}}{2}$$
+
+Both roots are real and neither equals $1$ or $-2$, so there are two real solutions, not exactly one. The statement is False.`,
       `**E.** → False
 
-Need $x \\ge 1$. Squaring gives $x^{2} - 4x - 5 = 0$, so $x = 5$ or $x = -1$. Only $x = 5$ lies in the domain. At $x = 2$: $\\sqrt{10} \\neq 1$. The statement is False.`,
+Need $x - 1 \\ge 0$ and $2x + 6 \\ge 0$, so $x \\ge 1$. Squaring:
+
+$$2x + 6 = (x - 1)^{2}$$
+
+$$2x + 6 = x^{2} - 2x + 1$$
+
+$$0 = x^{2} - 4x - 5$$
+
+$$x^{2} - 4x - 5 = (x - 5)(x + 1)$$
+
+$$x = 5$$
+
+$$x = -1$$
+
+Only $x = 5$ lies in the domain $x \\ge 1$, so there is exactly one real solution, not two. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 89,
@@ -7721,9 +7745,9 @@ Need $x \\ge 1$. Squaring gives $x^{2} - 4x - 5 = 0$, so $x = 5$ or $x = -1$. On
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The square root of a length plus $12$ m, plus the square root of the length plus $3$ m, equals $9$ m. Then the length is $4$ m.`,
-      `The sum $\\dfrac{1}{x - 1} + \\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{13}{12}$ has solution $x = 3$.`,
-      `The equation $\\lvert 2x - 4 \\rvert + \\lvert x - 5 \\rvert = 9$ has the unique real solution $x = 2$.`,
-      `The solution of $\\dfrac{x + 3}{x - 2} = \\dfrac{2x}{x + 1}$ is $x = 6$.`,
+      `The equation $\\dfrac{1}{x - 1} + \\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{13}{12}$ has exactly three real solutions.`,
+      `The equation $\\lvert 2x - 4 \\rvert + \\lvert x - 5 \\rvert = 9$ has exactly one real solution.`,
+      `The equation $\\dfrac{x + 3}{x - 2} = \\dfrac{2x}{x + 1}$ has exactly one real solution.`,
       `A surveyor records that the square root of a distance plus $8$ m, minus the square root of the distance itself, equals $1$ m. Then the distance is $16$ m.`,
     ],
     answer_key: [false, true, false, false, false],
@@ -7739,23 +7763,109 @@ $$a - b = 1$$
 Adding the two linear relations gives $2a = 10$, so $a = 5$ and $b = 4$. Then $x + 3 = 16$ and $x = 13$, not $4$. Check of $13$: $\\sqrt{25} + \\sqrt{16} = 9$. The statement is False.`,
       `**B.** → True
 
-Substitute $x = 3$:
+Need $x \\neq -1$, $x \\neq 0$, and $x \\neq 1$. Combine the first and last fraction:
 
-$$\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} = \\frac{13}{12}$$
+$$\\frac{1}{x - 1} + \\frac{1}{x + 1} = \\frac{(x + 1) + (x - 1)}{(x - 1)(x + 1)}$$
 
-and $x = 3$ is none of the holes $0$, $\\pm 1$. The statement is True.`,
+$$= \\frac{2x}{x^{2} - 1}$$
+
+So the left side is
+
+$$\\frac{1}{x} + \\frac{2x}{x^{2} - 1}$$
+
+Put over $x(x^{2} - 1)$:
+
+$$\\frac{1}{x} = \\frac{x^{2} - 1}{x(x^{2} - 1)}$$
+
+$$\\frac{2x}{x^{2} - 1} = \\frac{2x^{2}}{x(x^{2} - 1)}$$
+
+So
+
+$$\\frac{1}{x} + \\frac{2x}{x^{2} - 1} = \\frac{(x^{2} - 1) + 2x^{2}}{x(x^{2} - 1)}$$
+
+$$= \\frac{3x^{2} - 1}{x(x^{2} - 1)}$$
+
+Set equal to $\\frac{13}{12}$ and cross-multiply:
+
+$$\\frac{3x^{2} - 1}{x(x^{2} - 1)} = \\frac{13}{12}$$
+
+$$12(3x^{2} - 1) = 13x(x^{2} - 1)$$
+
+$$36x^{2} - 12 = 13x^{3} - 13x$$
+
+$$0 = 13x^{3} - 36x^{2} - 13x + 12$$
+
+Factor out $(x - 3)$:
+
+$$0 = (x - 3)(13x^{2} + 3x - 4)$$
+
+So one root is $x = 3$ and the other two satisfy
+
+$$13x^{2} + 3x - 4 = 0$$
+
+$$\\Delta = 3^{2} - 4 \\cdot 13 \\cdot (-4)$$
+
+$$\\Delta = 9 + 208 = 217$$
+
+$$x = \\frac{-3 \\pm \\sqrt{217}}{26}$$
+
+At $x = 0$ the polynomial gives $12 \\neq 0$, and at $x = 1$ it gives $-24 \\neq 0$, so none of the holes is a root. Therefore the equation has three real solutions, so the statement is True.`,
       `**C.** → False
 
-On $x < 2$ the split recovers $x = 0$. On $x > 5$ it recovers $x = 6$. Both check: the left side equals $9$. Two solutions, not the unique value $2$. At $x = 2$ the left side is $3$, not $9$. The statement is False.`,
+Breakpoints are $x = 2$ and $x = 5$.
+
+For $x \\le 2$:
+
+$$|2x - 4| + |x - 5| = (4 - 2x) + (5 - x)$$
+
+$$= 9 - 3x$$
+
+$$9 - 3x = 9$$
+
+$$x = 0$$
+
+For $2 \\le x \\le 5$:
+
+$$|2x - 4| + |x - 5| = (2x - 4) + (5 - x)$$
+
+$$= x + 1$$
+
+$$x + 1 = 9$$
+
+$$x = 8$$
+
+but $8 \\notin [2,5]$.
+
+For $x \\ge 5$:
+
+$$|2x - 4| + |x - 5| = (2x - 4) + (x - 5)$$
+
+$$= 3x - 9$$
+
+$$3x - 9 = 9$$
+
+$$3x = 18$$
+
+$$x = 6$$
+
+So the equation has two real solutions $x = 0$ and $x = 6$, not exactly one. The statement is False.`,
       `**D.** → False
 
-Cross-multiply off the holes $x = 2$ and $x = -1$:
+Need $x \\neq 2$ and $x \\neq -1$. Cross-multiply:
 
-$$(x + 3)(x + 1) = 2x(x - 2)$$
+$$\\frac{x + 3}{x - 2} = \\frac{2x}{x + 1}$$
 
-$$x^{2} - 8x - 3 = 0$$
+$$\\left(x + 3\\right)\\left(x + 1\\right) = 2x(x - 2)$$
 
-The roots are $4 \\pm \\sqrt{19}$, not $6$. At $x = 6$: $\\frac{9}{4} \\neq \\frac{12}{7}$. The statement is False.`,
+$$x^{2} + 4x + 3 = 2x^{2} - 4x$$
+
+$$0 = x^{2} - 8x - 3$$
+
+$$x = \\frac{8 \\pm \\sqrt{64 + 12}}{2}$$
+
+$$x = 4 \\pm \\sqrt{19}$$
+
+Both roots are real and allowed, so there are two real solutions, not exactly one. The statement is False.`,
       `**E.** → False
 
 Isolate and square, with $x \\ge 0$:
@@ -7784,9 +7894,9 @@ The distance is $\\frac{49}{4}$ m, not $16$ m. Sixteen would give $\\sqrt{24} - 
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A surveyor records that the square root of a distance plus $5$ m, minus the square root of the distance minus $2$ m, equals $1$ m. Then the distance is $11$ m.`,
-      `The equation $\\lvert x - 3 \\rvert + \\lvert 2x + 1 \\rvert = 11$ is solved by $x = 4$.`,
-      `The solution of $\\dfrac{2}{x + 1} - \\dfrac{3}{x - 1} = 1$ is $x = 5$.`,
-      `The equation $\\sqrt{4x - 3} = x - 1$ has the unique real solution $x = 3$.`,
+      `The equation $\\lvert x - 3 \\rvert + \\lvert 2x + 1 \\rvert = 11$ has exactly one real solution.`,
+      `The equation $\\dfrac{2}{x + 1} - \\dfrac{3}{x - 1} = 1$ has at least one real solution.`,
+      `The equation $\\sqrt{4x - 3} = x - 1$ has exactly two real solutions.`,
       `After cancelling a common factor, $\\dfrac{x^{2} - 9}{x - 3} = x + 5$ has two real solutions.`,
     ],
     answer_key: [true, false, false, false, false],
@@ -7810,13 +7920,81 @@ $$x = 11$$
 Check: $\\sqrt{16} - \\sqrt{9} = 4 - 3 = 1$. The distance is $11$ m, so the statement is True.`,
       `**B.** → False
 
-For $x \\ge 3$: $(x - 3) + (2x + 1) = 11$ gives $x = \\frac{13}{3}$, which lies in $x \\ge 3$ and checks. At $x = 4$ the left side is $1 + 9 = 10$, not $11$. The statement is False.`,
+Breakpoints are $x = 3$ and $x = -\\frac{1}{2}$.
+
+For $x \\ge 3$:
+
+$$|x - 3| + |2x + 1| = (x - 3) + (2x + 1)$$
+
+$$= 3x - 2$$
+
+$$3x - 2 = 11$$
+
+$$3x = 13$$
+
+$$x = \\frac{13}{3}$$
+
+For $-\\frac{1}{2} \\le x \\le 3$:
+
+$$|x - 3| + |2x + 1| = (3 - x) + (2x + 1)$$
+
+$$= x + 4$$
+
+$$x + 4 = 11$$
+
+$$x = 7$$
+
+but $7 \\notin \\left[-\\frac{1}{2},3\\right]$.
+
+For $x \\le -\\frac{1}{2}$:
+
+$$|x - 3| + |2x + 1| = (3 - x) + (-(2x + 1))$$
+
+$$= 3 - x - 2x - 1$$
+
+$$= 2 - 3x$$
+
+$$2 - 3x = 11$$
+
+$$-3x = 9$$
+
+$$x = -3$$
+
+So there are two real solutions $x = \\frac{13}{3}$ and $x = -3$, not exactly one. The statement is False.`,
       `**C.** → False
 
-Clearing by $x^{2} - 1$ produces $x^{2} + x + 4 = 0$, whose discriminant is negative. There is no real solution, including $x = 5$. At $x = 5$: $\\frac{2}{6} - \\frac{3}{4} \\neq 1$. The statement is False.`,
+Need $x \\neq -1$ and $x \\neq 1$. Multiply by $(x + 1)(x - 1)$:
+
+$$2(x - 1) - 3(x + 1) = (x + 1)(x - 1)$$
+
+$$2x - 2 - 3x - 3 = x^{2} - 1$$
+
+$$-x - 5 = x^{2} - 1$$
+
+$$0 = x^{2} + x + 4$$
+
+$$\\Delta = 1 - 4 \\cdot 1 \\cdot 4$$
+
+$$\\Delta = 1 - 16 = -15$$
+
+Negative discriminant means there are no real solutions. So the statement is False.`,
       `**D.** → False
 
-Need $x \\ge 1$. Squaring gives $x^{2} - 6x + 4 = 0$, so $x = 3 \\pm \\sqrt{5}$, not $x = 3$. At $x = 3$: $\\sqrt{9} = 3$ and $3 - 1 = 2$. The statement is False.`,
+Need $4x - 3 \\ge 0$, so $x \\ge \\frac{3}{4}$.
+
+Also $\\sqrt{4x - 3} = x - 1$ has left side nonnegative, so $x - 1 \\ge 0$ and $x \\ge 1$.
+
+Squaring:
+
+$$4x - 3 = (x - 1)^{2}$$
+
+$$4x - 3 = x^{2} - 2x + 1$$
+
+$$0 = x^{2} - 6x + 4$$
+
+$$x = 3 \\pm \\sqrt{5}$$
+
+But $3 - \\sqrt{5} \\lt 1$, so it violates the domain condition $x \\ge 1$. Only $3 + \\sqrt{5}$ is allowed, so there is exactly one real solution, not two. The statement is False.`,
       `**E.** → False
 
 At $x = 3$ the left side is undefined. For $x \\neq 3$ the equation becomes $x + 3 = x + 5$, hence $3 = 5$, which never holds. There are no real solutions. The statement is False.`,
@@ -7833,8 +8011,8 @@ At $x = 3$ the left side is undefined. For $x \\neq 3$ the equation becomes $x +
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The square root of a length plus $15$ m, plus the square root of the length plus $8$ m, equals $7$ m. Then the length is $1$ m.`,
-      `The equation $\\lvert 3 - 2x \\rvert = \\lvert x + 4 \\rvert$ has the unique real solution $x = \\dfrac{7}{3}$.`,
-      `The equation $\\dfrac{1}{x} - \\dfrac{1}{x + 3} = \\dfrac{1}{4}$ is solved by both $3$ and $-3$.`,
+      `The equation $\\lvert 3 - 2x \\rvert = \\lvert x + 4 \\rvert$ has exactly one real solution.`,
+      `The equation $\\dfrac{1}{x} - \\dfrac{1}{x + 3} = \\dfrac{1}{4}$ has exactly one real solution.`,
       `The equation $\\sqrt{2x + 1} = 4 - x$ has exactly one real solution.`,
       `The equation $\\dfrac{2x - 1}{x + 2} + \\dfrac{x - 3}{x - 1} = 3$ has exactly one real solution.`,
     ],
@@ -7845,14 +8023,48 @@ At $x = 3$ the left side is undefined. For $x \\neq 3$ the equation becomes $x +
 Let $a = \\sqrt{x + 15}$ and $b = \\sqrt{x + 8}$, so $a + b = 7$ and $a^{2} - b^{2} = 7$. Then $a - b = 1$, hence $a = 4$ and $b = 3$, so $x = 1$. Check: $\\sqrt{16} + \\sqrt{9} = 7$. The statement is True.`,
       `**B.** → False
 
-Equal absolute values split into $3 - 2x = x + 4$, giving $x = -\\frac{1}{3}$, and $3 - 2x = -x - 4$, giving $x = 7$. Two real solutions, not the unique value $\\frac{7}{3}$. The statement is False.`,
+Split the absolute values into two cases:
+
+$$3 - 2x = x + 4$$
+
+$$-3x = 1$$
+
+$$x = -\\frac{1}{3}$$
+
+and
+
+$$3 - 2x = -x - 4$$
+
+$$7 = x$$
+
+$$x = 7$$
+
+So there are two real solutions $x = -\\frac{1}{3}$ and $x = 7$, not exactly one. The statement is False.`,
       `**C.** → False
+
+Need $x \\neq 0$ and $x \\neq -3$. Combine the two fractions:
+
+$$\\frac{1}{x} - \\frac{1}{x + 3} = \\frac{(x + 3) - x}{x(x + 3)}$$
+
+$$= \\frac{3}{x(x + 3)}$$
+
+Set equal to $\\frac{1}{4}$:
 
 $$\\frac{3}{x(x + 3)} = \\frac{1}{4}$$
 
-$$x^{2} + 3x - 12 = 0$$
+$$12 = x(x + 3)$$
 
-The roots are $\\frac{-3 \\pm \\sqrt{57}}{2}$, not $\\pm 3$. At $x = 3$: $\\frac{1}{3} - \\frac{1}{6} = \\frac{1}{6} \\neq \\frac{1}{4}$. The statement is False.`,
+$$12 = x^{2} + 3x$$
+
+$$0 = x^{2} + 3x - 12$$
+
+$$\\Delta = 3^{2} - 4 \\cdot 1 \\cdot (-12)$$
+
+$$\\Delta = 9 + 48 = 57$$
+
+$$x = \\frac{-3 \\pm \\sqrt{57}}{2}$$
+
+The discriminant is positive, so there are two real solutions, not exactly one. The statement is False.`,
       `**D.** → True
 
 Domain comes from the square root and the sign of the right-hand side:
@@ -7909,9 +8121,9 @@ This value is allowed because $\\frac{1}{7} \\neq -2$ and $\\frac{1}{7} \\neq 1$
     statements: [
       `A surveyor records that the square root of a distance plus $24$ m, minus the square root of the distance itself, equals $2$ m. Then the distance is $25$ m.`,
       `A depot on a straight road has distances to kilometre-post $-2$ and kilometre-post $6$ that add to $12$ km. Then the two possible sites are kilometre $0$ and kilometre $8$.`,
-      `The solution of $\\dfrac{2}{x - 3} - \\dfrac{1}{x + 1} = 1$ is $x = 5$.`,
-      `The equation $\\sqrt{5x + 1} = x + 1$ has the unique real solution $x = 3$.`,
-      `The solution of $\\dfrac{x + 5}{x - 1} - \\dfrac{x - 2}{x + 3} = 2$ is $x = 7$.`,
+      `The equation $\\dfrac{2}{x - 3} - \\dfrac{1}{x + 1} = 1$ has exactly one real solution.`,
+      `The equation $\\sqrt{5x + 1} = x + 1$ has exactly one real solution.`,
+      `The equation $\\dfrac{x + 5}{x - 1} - \\dfrac{x - 2}{x + 3} = 2$ has no real solutions.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -7947,7 +8159,7 @@ $$0 = x^{2} - 3x - 8$$
 
 $$x = \\frac{3 \\pm \\sqrt{41}}{2}$$
 
-neither of which is $5$. At $x = 5$: $1 - \\frac{1}{6} = \\frac{5}{6} \\neq 1$. The statement is False.`,
+These are two distinct real values, so there are two real solutions, not exactly one. The statement is False.`,
       `**D.** → False
 
 The square root needs $5x + 1 \\ge 0$, so $x \\ge -\\frac{1}{5}$. The right-hand side $x + 1$ must be nonnegative, so $x \\ge -1$. The tighter of those is $x \\ge -\\frac{1}{5}$. Squaring both sides of $\\sqrt{5x + 1} = x + 1$ gives
@@ -7960,12 +8172,12 @@ $$0 = x^{2} - 3x$$
 
 $$x(x - 3) = 0$$
 
-so $x = 0$ or $x = 3$. Both lie in the domain and both check: $\\sqrt{1} = 1$ and $\\sqrt{16} = 4$. Two real solutions, not only $3$. The statement is False.`,
+so $x = 0$ or $x = 3$. Both lie in the domain, so there are two real solutions, not exactly one. The statement is False.`,
       `**E.** → False
 
 Need $x \\neq 1$ and $x \\neq -3$. Multiply through by $(x - 1)(x + 3)$:
 
-$$(x + 5)(x + 3) - (x - 2)(x - 1) = 2(x - 1)(x + 3)$$
+$$ (x + 5)(x + 3) - (x - 2)(x - 1) = 2(x - 1)(x + 3) $$
 
 $$x^{2} + 8x + 15 - (x^{2} - 3x + 2) = 2(x^{2} + 2x - 3)$$
 
@@ -7973,7 +8185,9 @@ $$11x + 13 = 2x^{2} + 4x - 6$$
 
 $$0 = 2x^{2} - 7x - 19$$
 
-The roots are $\\frac{7 \\pm \\sqrt{201}}{4}$, and the positive one is not $7$. At $x = 7$: $2 - \\frac{1}{2} = \\frac{3}{2} \\neq 2$. The statement is False.`,
+$$x = \\frac{7 \\pm \\sqrt{201}}{4}$$
+
+The discriminant $201$ is positive, so both roots are real. Therefore the equation has real solutions, not none. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 93,
