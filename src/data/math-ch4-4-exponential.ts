@@ -16,8 +16,8 @@ export const MATH_CH4_4_EXPONENTIAL: MathTask[] = [
       `In an exam item, if $\\log_{4} x = 5$, then $x$ is greater than $256$.`,
       `With $u=2^x>0$, the equation $3\\cdot4^x-27\\cdot2^x+54=0$ yields $5$ real solutions for $x$.`,
       `The equation $2^x = -5$ has $no$ real solution.`,
-      `The equation $2^{x+1} = 64$ has real solution $x = 9$.`,
-      `The equation $\\log_{4} x = 8$ has solution $x = 4096$.`,
+      `Every real root of $2^{x+1} = 64$ satisfies $x$ equals $9$.`,
+      `Every admissible root of $\\log_{4} x = 6$ satisfies $x$ equals $4099$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -61,10 +61,10 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A heated metal rod model satisfies $e^{2x} - 14e^x + 40 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `The equation $10^{x-1} = 1000$ has real solution $x = 4$.`,
-      `In an exam item, the equation $\\log_{5} x = 7$ has solution $x = 625$.`,
-      `The equation $\\ln x = \\ln 4 + 2$ has solution $x = 7.38905609893065$.`,
-      `The equation $\\log x + \\log 4 = 5$ (base $10$) has solution $x = 100000$.`,
+      `Every real root of $10^{x-1} = 1000$ satisfies $x$ is greater than $3$.`,
+      `In an exam item, every admissible root of $\\log_{5} x = 4$ satisfies $x$ equals $629$.`,
+      `Every admissible root of $\\ln x = \\ln 4 + 2$ satisfies $x$ is greater than $28$.`,
+      `Every positive root of $\\log x + \\log 4 = 5$ satisfies $x$ is greater than $99996.8$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
@@ -72,6 +72,7 @@ The statement is False.`,
 
 $$u^2-14u+40=0$$
 $$(u-4)(u-10)=0$$
+Two positive $u$ give two real $x$.
 
 The statement is False.`,
       `**B.** → True
@@ -87,7 +88,7 @@ The statement is False.`,
       `**D.** → True
 
 $$\\ln x = \\ln(4e^{2})$$
-$$x=4e^{2}=7.39$$.
+$$x=29.56$$.
 
 The statement is True.`,
       `**E.** → True
@@ -108,11 +109,11 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log_{2} x = 7$ has solution $x = 128$.`,
-      `The equation $\\ln x = \\ln 5 + 3$ has solution $x = 23.085536923187668$.`,
-      `The equation $\\log x + \\log 5 = 6$ (base $10$) has solution $x = 1000004$.`,
+      `Every admissible root of $\\log_{2} x = 7$ satisfies $x$ is greater than $124.8$.`,
+      `Every admissible root of $\\ln x = \\ln 5 + 3$ satisfies $x$ equals $103.43$.`,
+      `Every positive root of $\\log x + \\log 5 = 6$ satisfies $x$ equals $1000004$.`,
       `For decadic logarithms, the unique admissible root of $\\log x^{1/6} - \\log x^{6} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 7$.`,
-      `In an exam item, the equation $\\log x + \\log(x+4) = 5$ (base $10$) has positive solution $x = 1027$.`,
+      `In an exam item, every positive root of $\\log x + \\log(x+2) = 1$ satisfies $x$ equals $5.32$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -124,7 +125,7 @@ The statement is True.`,
       `**B.** → False
 
 $$\\ln x = \\ln(5e^{3})$$
-$$x=5e^{3}=20.09$$.
+$$x=100.43$$.
 
 The statement is False.`,
       `**C.** → False
@@ -143,8 +144,9 @@ $x < 7$.
 The statement is True.`,
       `**E.** → False
 
-$$x(x+4)=10^{5}$$
-$$x=1024$$
+$$x(x+2)=10^{1}$$
+$$x=2.32$$
+Compare with the bound in the claim.
 
 The statement is False.`,
     ],
@@ -159,11 +161,11 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log x + \\log 6 = 7$ (base $10$) has solution $x = 10000004$.`,
+      `Every positive root of $\\log x + \\log 6 = 7$ satisfies $x$ equals $10000004$.`,
       `In an exam item, the solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $8$.`,
-      `The equation $\\log x + \\log(x+2) = 6$ (base $10$) has positive solution $x = 64$.`,
-      `In an exam item, the equation $4^x = 256$ has real solution $x = 7$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 5$ describes the event at $x=9$ (domain respected).`,
+      `Every positive root of $\\log x + \\log(x+3) = 2$ satisfies $x$ is greater than $8.2$.`,
+      `In an exam item, every real root of $4^x = 256$ satisfies $x$ equals $7$.`,
+      `Measuring time after an offset, $\\ln(x-4)=\\ln 5$ holds for an admissible $x$ that is greater than $8$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
@@ -183,8 +185,9 @@ $x < 8$.
 The statement is True.`,
       `**C.** → True
 
-$$x(x+2)=10^{6}$$
-$$x=64$$
+$$x(x+3)=10^{2}$$
+$$x=8.61$$
+Compare with the bound in the claim.
 
 The statement is True.`,
       `**D.** → False
@@ -196,6 +199,7 @@ The statement is False.`,
 
 $$x-4=5$$
 $$x=9$$
+Domain requires $x>4$.
 
 The statement is True.`,
     ],
@@ -210,36 +214,39 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log x + \\log(x+3) = 7$ (base $10$) has positive solution $x = 2187$.`,
-      `A heated metal rod model satisfies $e^{2x} - 8e^x + 12 = 0$ with $u=e^x>0$. There are $2$ distinct real exponents $x$.`,
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 2$ describes the event at $x=11$ (domain respected).`,
-      `In an exam item, $\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ implies $x = 65$.`,
-      `The unique real solution of $9^x = 3^{x+2}$ is $x = 5$.`,
+      `Every positive root of $\\log x + \\log(x+4) = 1$ satisfies $x$ is greater than $1.3$.`,
+      `A heated metal rod model satisfies $e^{2x} - 8e^x + 12 = 0$ with $u=e^x>0$. There are more than $1$ distinct real exponents $x$.`,
+      `Measuring time after an offset, $\\ln(x-7)=\\ln 2$ holds for an admissible $x$ that equals $11$.`,
+      `In an exam item, every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ satisfies $x$ equals $64.55$.`,
+      `Every real root of $9^x = 3^{x+2}$ satisfies $x$ equals $5$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$x(x+3)=10^{7}$$
-$$x=2187$$
+$$x(x+4)=10^{1}$$
+$$x=1.74$$
+Compare with the bound in the claim.
 
 The statement is True.`,
       `**B.** → True
 
 $$u^2-8u+12=0$$
 $$(u-2)(u-6)=0$$
+Two positive $u$ give two real $x$.
 
 The statement is True.`,
       `**C.** → False
 
 $$x-7=2$$
 $$x=9$$
+Domain requires $x>7$.
 
 The statement is False.`,
       `**D.** → False
 
 $$\\frac{4}{3}\\log_{3} x = 5$$
-$$x=3^{3.75}=61.546690537779$$
+$$x=3^{3.75}=61.55$$
 
 The statement is False.`,
       `**E.** → False
@@ -259,11 +266,11 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 3$ describes the event at $x=11$ (domain respected).`,
-      `$\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ implies $x = 259$.`,
-      `The unique real solution of $25^x = 5^{x+3}$ is $x = 3$.`,
+      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 3$ holds for an admissible $x$ that equals $11$.`,
+      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ satisfies $x$ equals $259$.`,
+      `Every real root of $25^x = 5^{x+3}$ satisfies $x$ is greater than $2$.`,
       `If $\\log_{2} x = 3$, then $x$ is greater than $4$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-30\\cdot2^x+63=0$ yields $2$ real solutions for $x$.`,
+      `With $u=2^x>0$, the equation $3\\cdot4^x-30\\cdot2^x+63=0$ yields more than $1$ real solutions for $x$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
@@ -271,6 +278,7 @@ The statement is False.`,
 
 $$x-5=3$$
 $$x=8$$
+Domain requires $x>5$.
 
 The statement is False.`,
       `**B.** → False
@@ -308,11 +316,11 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The unique real solution of $2^x = 3^{x-1}$ is $x = 1$.`,
+      `Every real root of $2^x = 3^{x-1}$ satisfies $x$ is greater than $0$.`,
       `In an exam item, with $u=2^x>0$, the equation $3\\cdot4^x-24\\cdot2^x+45=0$ yields $5$ real solutions for $x$.`,
-      `The equation $\\log x + \\log(x+3) = 6$ (base $10$) has positive solution $x = 729$.`,
+      `The equation $2^x = -7$ has $no$ real solution.`,
       `Consider a case where a heated metal rod model satisfies $e^{2x} - 8e^x + 12 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `The equation $4^x = 256$ has real solution $x = 4$.`,
+      `Every real root of $4^x = 256$ satisfies $x$ is greater than $3$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -329,14 +337,14 @@ Two positive $u$ → two $x$.
 The statement is False.`,
       `**C.** → True
 
-$$x(x+3)=10^{6}$$
-$$x=729$$
+$$2^x > 0$$ always; RHS negative.
 
 The statement is True.`,
       `**D.** → False
 
 $$u^2-8u+12=0$$
 $$(u-2)(u-6)=0$$
+Two positive $u$ give two real $x$.
 
 The statement is False.`,
       `**E.** → True
@@ -356,24 +364,26 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log x + \\log(x+4) = 7$ (base $10$) has positive solution $x = 16387$.`,
-      `In an exam item, a heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $2$ distinct real exponents $x$.`,
-      `The equation $10^{x-1} = 1000$ has real solution $x = 7$.`,
-      `The equation $\\log_{4} x = 6$ has solution $x = 4096$.`,
-      `In an exam item, the equation $\\ln x = \\ln 3 + 5$ has solution $x = 151.4131591025766$.`,
+      `Every positive root of $\\log x + \\log(x+4) = 1$ satisfies $x$ equals $4.74$.`,
+      `In an exam item, a heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are more than $1$ distinct real exponents $x$.`,
+      `Every real root of $10^{x-1} = 1000$ satisfies $x$ equals $7$.`,
+      `Every admissible root of $\\log_{4} x = 6$ satisfies $x$ is greater than $4092.8$.`,
+      `In an exam item, every admissible root of $\\ln x = \\ln 3 + 5$ satisfies $x$ equals $448.24$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$x(x+4)=10^{7}$$
-$$x=16384$$
+$$x(x+4)=10^{1}$$
+$$x=1.74$$
+Compare with the bound in the claim.
 
 The statement is False.`,
       `**B.** → True
 
 $$u^2-11u+24=0$$
 $$(u-3)(u-8)=0$$
+Two positive $u$ give two real $x$.
 
 The statement is True.`,
       `**C.** → False
@@ -389,7 +399,7 @@ The statement is True.`,
       `**E.** → False
 
 $$\\ln x = \\ln(3e^{5})$$
-$$x=3e^{5}=148.41$$.
+$$x=445.24$$.
 
 The statement is False.`,
     ],
@@ -404,10 +414,10 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $3^x = 81$ has real solution $x = 4$.`,
-      `In an exam item, the equation $\\log_{5} x = 4$ has solution $x = 625$.`,
-      `The equation $\\ln x = \\ln 4 + 2$ has solution $x = 10.38905609893065$.`,
-      `The equation $\\log x + \\log 4 = 5$ (base $10$) has solution $x = 100004$.`,
+      `Every real root of $3^x = 81$ satisfies $x$ is greater than $3$.`,
+      `In an exam item, every admissible root of $\\log_{5} x = 4$ satisfies $x$ is greater than $621.8$.`,
+      `Every admissible root of $\\ln x = \\ln 4 + 2$ satisfies $x$ equals $32.56$.`,
+      `Every positive root of $\\log x + \\log 4 = 5$ satisfies $x$ equals $100004$.`,
       `The solution of $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $6$.`,
     ],
     answer_key: [true, true, false, false, true],
@@ -425,7 +435,7 @@ The statement is True.`,
       `**C.** → False
 
 $$\\ln x = \\ln(4e^{2})$$
-$$x=4e^{2}=7.39$$.
+$$x=29.56$$.
 
 The statement is False.`,
       `**D.** → False
@@ -454,11 +464,11 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, the unique real solution of $2^x = 3^{x-1}$ is $x = 4$.`,
+      `In an exam item, every real root of $2^x = 3^{x-1}$ satisfies $x$ equals $4$.`,
       `A heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-16\\cdot2^x+24=0$ yields $2$ real solutions for $x$.`,
-      `In an exam item, the equation $\\log x + \\log(x+4) = 5$ (base $10$) has positive solution $x = 1024$.`,
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 5$ describes the event at $x=14$ (domain respected).`,
+      `With $u=2^x>0$, the equation $2\\cdot4^x-16\\cdot2^x+24=0$ yields more than $1$ real solutions for $x$.`,
+      `In an exam item, every positive root of $\\log x + \\log(x+2) = 1$ satisfies $x$ is greater than $1.9$.`,
+      `Measuring time after an offset, $\\ln(x-6)=\\ln 5$ holds for an admissible $x$ that equals $14$.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
@@ -471,6 +481,7 @@ The statement is False.`,
 
 $$u^2-11u+24=0$$
 $$(u-3)(u-8)=0$$
+Two positive $u$ give two real $x$.
 
 The statement is False.`,
       `**C.** → True
@@ -481,14 +492,16 @@ Two positive $u$ → two $x$.
 The statement is True.`,
       `**D.** → True
 
-$$x(x+4)=10^{5}$$
-$$x=1024$$
+$$x(x+2)=10^{1}$$
+$$x=2.32$$
+Compare with the bound in the claim.
 
 The statement is True.`,
       `**E.** → False
 
 $$x-6=5$$
 $$x=11$$
+Domain requires $x>6$.
 
 The statement is False.`,
     ],
@@ -503,29 +516,29 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log x + \\log(x+2) = 7$ (base $10$) has positive solution $x = 128$.`,
-      `In an exam item, the equation $3^x = 81$ has real solution $x = 7$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 2$ describes the event at $x=8$ (domain respected).`,
-      `The equation $\\log_{4} x = 7$ has solution $x = 16384$.`,
-      `$\\log_{2} x + \\frac{\\log_{2} x}{2} = 4$ implies $x = 6$.`,
+      `The equation $3^x = -6$ has $no$ real solution.`,
+      `Every positive root of $\\log x + \\log(x+3) = 2$ satisfies $x$ equals $11.61$.`,
+      `In an exam item, every real root of $2^x = 32$ satisfies $x$ equals $9$.`,
+      `Every admissible root of $\\log_{4} x = 7$ satisfies $x$ is greater than $16380.8$.`,
+      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{2} = 4$ satisfies $x$ is greater than $5.9$.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$$x(x+2)=10^{7}$$
-$$x=128$$
+$$3^x > 0$$ always; RHS negative.
 
 The statement is True.`,
       `**B.** → False
 
-Match powers → $x=4$.
+$$x(x+3)=10^{2}$$
+$$x=8.61$$
+Compare with the bound in the claim.
 
 The statement is False.`,
       `**C.** → False
 
-$$x-4=2$$
-$$x=6$$
+Match powers → $x=5$.
 
 The statement is False.`,
       `**D.** → True
@@ -536,7 +549,7 @@ The statement is True.`,
       `**E.** → True
 
 $$\\frac{3}{2}\\log_{2} x = 4$$
-$$x=2^{2.6666666666666665}=6.3496042078727974$$
+$$x=2^{2.6666666666666665}=6.35$$
 
 The statement is True.`,
     ],
@@ -551,29 +564,30 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 3$ describes the event at $x=14$ (domain respected).`,
-      `The equation $\\log_{5} x = 5$ has solution $x = 3125$.`,
-      `In an exam item, $\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ implies $x = 62$.`,
+      `Every real root of $3^x = 81$ satisfies $x$ equals $7$.`,
+      `Measuring time after an offset, $\\ln(x-7)=\\ln 2$ holds for an admissible $x$ that is greater than $8$.`,
+      `In an exam item, every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ satisfies $x$ is greater than $58.4$.`,
       `With $u=2^x>0$, the equation $2\\cdot4^x-16\\cdot2^x+24=0$ yields $5$ real solutions for $x$.`,
-      `The equation $\\ln x = \\ln 3 + 3$ has solution $x = 23.085536923187668$.`,
+      `Every admissible root of $\\log_{5} x = 7$ satisfies $x$ equals $78129$.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-$$x-7=3$$
-$$x=10$$
+Match powers → $x=4$.
 
 The statement is False.`,
       `**B.** → True
 
-$$x=5^{5}=3125$$.
+$$x-7=2$$
+$$x=9$$
+Domain requires $x>7$.
 
 The statement is True.`,
       `**C.** → True
 
 $$\\frac{4}{3}\\log_{3} x = 5$$
-$$x=3^{3.75}=61.546690537779$$
+$$x=3^{3.75}=61.55$$
 
 The statement is True.`,
       `**D.** → False
@@ -584,8 +598,7 @@ Two positive $u$ → two $x$.
 The statement is False.`,
       `**E.** → False
 
-$$\\ln x = \\ln(3e^{3})$$
-$$x=3e^{3}=20.09$$.
+$$x=5^{7}=78125$$.
 
 The statement is False.`,
     ],
@@ -600,11 +613,11 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ implies $x = 256$.`,
-      `The unique real solution of $25^x = 5^{x+3}$ is $x = 5$.`,
+      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ satisfies $x$ is greater than $252.8$.`,
+      `Every real root of $25^x = 5^{x+3}$ satisfies $x$ equals $5$.`,
       `For decadic logarithms, the unique admissible root of $\\log x^{1/6} - \\log x^{6} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
-      `The equation $\\log x + \\log(x+2) = 5$ (base $10$) has positive solution $x = 32$.`,
-      `The equation $2^x = 32$ has real solution $x = 9$.`,
+      `In an exam item, the equation $5^x = -4$ has $no$ real solution.`,
+      `Measuring time after an offset, $\\ln(x-7)=\\ln 5$ holds for an admissible $x$ that equals $14$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -629,13 +642,14 @@ $x < 5$.
 The statement is True.`,
       `**D.** → True
 
-$$x(x+2)=10^{5}$$
-$$x=32$$
+$$5^x > 0$$ always; RHS negative.
 
 The statement is True.`,
       `**E.** → False
 
-Match powers → $x=5$.
+$$x-7=5$$
+$$x=12$$
+Domain requires $x>7$.
 
 The statement is False.`,
     ],
@@ -650,18 +664,17 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log x + \\log(x+3) = 7$ (base $10$) has positive solution $x = 2189$.`,
-      `In an exam item, with $u=2^x>0$, the equation $2\\cdot4^x-14\\cdot2^x+20=0$ yields $2$ real solutions for $x$.`,
-      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 2$ describes the event at $x=10$ (domain respected).`,
-      `The equation $\\log_{4} x = 5$ has solution $x = 64$.`,
-      `$\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ implies $x = 39$.`,
+      `Every real root of $5^x = 625$ satisfies $x$ equals $7$.`,
+      `In an exam item, with $u=2^x>0$, the equation $2\\cdot4^x-14\\cdot2^x+20=0$ yields more than $1$ real solutions for $x$.`,
+      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 2$ holds for an admissible $x$ that equals $10$.`,
+      `Every admissible root of $\\log_{4} x = 3$ satisfies $x$ equals $67$.`,
+      `Every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ satisfies $x$ is greater than $36.5$.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$x(x+3)=10^{7}$$
-$$x=2187$$
+Match powers → $x=4$.
 
 The statement is False.`,
       `**B.** → True
@@ -674,6 +687,7 @@ The statement is True.`,
 
 $$x-5=2$$
 $$x=7$$
+Domain requires $x>5$.
 
 The statement is False.`,
       `**D.** → False
@@ -684,7 +698,7 @@ The statement is False.`,
       `**E.** → True
 
 $$\\frac{3}{2}\\log_{3} x = 5$$
-$$x=3^{3.3333333333333335}=38.940738398300034$$
+$$x=3^{3.3333333333333335}=38.94$$
 
 The statement is True.`,
     ],
@@ -699,11 +713,11 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $5^x = 625$ has real solution $x = 4$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 2$ describes the event at $x=10$ (domain respected).`,
-      `$\\log_{4} x + \\frac{\\log_{4} x}{3} = 6$ implies $x = 512$.`,
+      `Every real root of $5^x = 625$ satisfies $x$ is greater than $3$.`,
+      `Measuring time after an offset, $\\ln(x-8)=\\ln 2$ holds for an admissible $x$ that is greater than $9$.`,
+      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{3} = 6$ satisfies $x$ is greater than $508.8$.`,
       `In an exam item, with $u=2^x>0$, the equation $2\\cdot4^x-18\\cdot2^x+28=0$ yields $5$ real solutions for $x$.`,
-      `The equation $\\log x + \\log 3 = 4$ (base $10$) has solution $x = 10004$.`,
+      `Every positive root of $\\log x + \\log 3 = 4$ satisfies $x$ equals $10004$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -716,6 +730,7 @@ The statement is True.`,
 
 $$x-8=2$$
 $$x=10$$
+Domain requires $x>8$.
 
 The statement is True.`,
       `**C.** → True
@@ -748,23 +763,25 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$\\log_{2} x + \\frac{\\log_{2} x}{2} = 4$ implies $x = 8$.`,
-      `The equation $5^x = 625$ has real solution $x = 7$.`,
+      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{2} = 4$ satisfies $x$ equals $9.35$.`,
+      `Measuring time after an offset, $\\ln(x-8)=\\ln 4$ holds for an admissible $x$ that equals $14$.`,
       `With $u=2^x>0$, the equation $2\\cdot4^x-14\\cdot2^x+20=0$ yields $5$ real solutions for $x$.`,
-      `The equation $\\log x + \\log(x+3) = 5$ (base $10$) has positive solution $x = 243$.`,
-      `The equation $4^x = -5$ has $no$ real solution.`,
+      `The equation $5^x = -5$ has $no$ real solution.`,
+      `Every positive root of $\\log x + \\log(x+5) = 2$ satisfies $x$ is greater than $7.4$.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
 $$\\frac{3}{2}\\log_{2} x = 4$$
-$$x=2^{2.6666666666666665}=6.3496042078727974$$
+$$x=2^{2.6666666666666665}=6.35$$
 
 The statement is False.`,
       `**B.** → False
 
-Match powers → $x=4$.
+$$x-8=4$$
+$$x=12$$
+Domain requires $x>8$.
 
 The statement is False.`,
       `**C.** → False
@@ -775,13 +792,14 @@ Two positive $u$ → two $x$.
 The statement is False.`,
       `**D.** → True
 
-$$x(x+3)=10^{5}$$
-$$x=243$$
+$$5^x > 0$$ always; RHS negative.
 
 The statement is True.`,
       `**E.** → True
 
-$$4^x > 0$$ always; RHS negative.
+$$x(x+5)=10^{2}$$
+$$x=7.81$$
+Compare with the bound in the claim.
 
 The statement is True.`,
     ],
@@ -796,11 +814,11 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log x + \\log 5 = 6$ (base $10$) has solution $x = 1000000$.`,
-      `In an exam item, the equation $\\log x + \\log(x+4) = 6$ (base $10$) has positive solution $x = 4099$.`,
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 2$ describes the event at $x=11$ (domain respected).`,
-      `In an exam item, the equation $\\log_{4} x = 7$ has solution $x = 256$.`,
-      `The equation $\\ln x = \\ln 3 + 5$ has solution $x = 148.4131591025766$.`,
+      `Every positive root of $\\log x + \\log 5 = 6$ satisfies $x$ is greater than $999996.8$.`,
+      `Measuring time after an offset, $\\ln(x-6)=\\ln 3$ holds for an admissible $x$ that equals $11$.`,
+      `Every admissible root of $\\ln x = \\ln 3 + 3$ satisfies $x$ equals $63.26$.`,
+      `In an exam item, every admissible root of $\\log_{4} x = 4$ satisfies $x$ equals $259$.`,
+      `Every real root of $9^x = 3^{x+2}$ satisfies $x$ is greater than $1$.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
@@ -812,14 +830,15 @@ $$x=1000000$$.
 The statement is True.`,
       `**B.** → False
 
-$$x(x+4)=10^{6}$$
-$$x=4096$$
+$$x-6=3$$
+$$x=9$$
+Domain requires $x>6$.
 
 The statement is False.`,
       `**C.** → False
 
-$$x-6=2$$
-$$x=8$$
+$$\\ln x = \\ln(3e^{3})$$
+$$x=60.26$$.
 
 The statement is False.`,
       `**D.** → False
@@ -829,8 +848,7 @@ $$x=4^{4}=256$$.
 The statement is False.`,
       `**E.** → True
 
-$$\\ln x = \\ln(3e^{5})$$
-$$x=3e^{5}=148.41$$.
+Match bases / monotonicity gives $x=2$.
 
 The statement is True.`,
     ],
@@ -847,9 +865,9 @@ The statement is True.`,
     statements: [
       `With $u=2^x>0$, the equation $3\\cdot4^x-30\\cdot2^x+63=0$ yields $5$ real solutions for $x$.`,
       `In an exam item, for decadic logarithms, the unique admissible root of $\\log x^{1/4} - \\log x^{4} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 7$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 4$ describes the event at $x=12$ (domain respected).`,
+      `Measuring time after an offset, $\\ln(x-8)=\\ln 4$ holds for an admissible $x$ that is greater than $10$.`,
       `Suppose that $\\log_{3} x = 4$. It follows that $x$ is greater than $27$.`,
-      `In an exam item, the equation $9000\\left(1+\\frac{4}{100}\\right)^t=11388$$ (annual compounding, $t$ in years) has solution $t=8$.`,
+      `In an exam item, every positive root $t$ of $100\\left(1+\\frac{4}{100}\\right)^t=122$ satisfies $t$ equals $9$.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
@@ -871,6 +889,7 @@ The statement is True.`,
 
 $$x-8=4$$
 $$x=12$$
+Domain requires $x>8$.
 
 The statement is True.`,
       `**D.** → True
@@ -881,7 +900,7 @@ $x > 27$.
 The statement is True.`,
       `**E.** → False
 
-Take logs or test powers → $t=6$.
+Take logs or test powers → $t=5$.
 
 The statement is False.`,
     ],
@@ -897,9 +916,9 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Suppose that $\\log_{2} x = 3$. It follows that $x$ is greater than $4$.`,
-      `In an exam item, the equation $5000\\left(1+\\frac{4}{100}\\right)^t=6327$$ (annual compounding, $t$ in years) has solution $t=6$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 3$ describes the event at $x=10$ (domain respected).`,
-      `In an exam item, the unique real solution of $9^x = 3^{x+2}$ is $x = 2$.`,
+      `In an exam item, every positive root $t$ of $52\\left(1+\\frac{4}{100}\\right)^t=61$ satisfies $t$ is greater than $3$.`,
+      `Measuring time after an offset, $\\ln(x-4)=\\ln 3$ holds for an admissible $x$ that equals $10$.`,
+      `Every real root of $4^x = 2^{x+4}$ satisfies $x$ is greater than $3$.`,
       `The solution of $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + 5 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $8$.`,
     ],
     answer_key: [true, true, false, true, false],
@@ -912,18 +931,19 @@ $x > 4$.
 The statement is True.`,
       `**B.** → True
 
-Take logs or test powers → $t=6$.
+Take logs or test powers → $t=4$.
 
 The statement is True.`,
       `**C.** → False
 
 $$x-4=3$$
 $$x=7$$
+Domain requires $x>4$.
 
 The statement is False.`,
       `**D.** → True
 
-Match bases / monotonicity gives $x=2$.
+Match bases / monotonicity gives $x=4$.
 
 The statement is True.`,
       `**E.** → False
@@ -946,11 +966,11 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The unique real solution of $4^x = 2^{x+4}$ is $x = 7$.`,
+      `Every real root of $4^x = 2^{x+4}$ satisfies $x$ equals $7$.`,
       `For decadic logarithms, every admissible root of $\\log(x^{1/3}) - 3\\log x - 2\\log x + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
-      `The equation $\\log x + \\log(x+4) = 6$ (base $10$) has positive solution $x = 4096$.`,
-      `In an exam item, $\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ implies $x = 41$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-24\\cdot2^x+45=0$ yields $2$ real solutions for $x$.`,
+      `A heated metal rod model satisfies $e^{2x} - 14e^x + 40 = 0$ with $u=e^x>0$. There are more than $1$ distinct real exponents $x$.`,
+      `In an exam item, every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ satisfies $x$ equals $41.94$.`,
+      `With $u=2^x>0$, the equation $3\\cdot4^x-24\\cdot2^x+45=0$ yields more than $1$ real solutions for $x$.`,
     ],
     answer_key: [false, false, true, false, true],
     tactical_explanations: [
@@ -969,14 +989,15 @@ $x \\ge 5$.
 The statement is False.`,
       `**C.** → True
 
-$$x(x+4)=10^{6}$$
-$$x=4096$$
+$$u^2-14u+40=0$$
+$$(u-4)(u-10)=0$$
+Two positive $u$ give two real $x$.
 
 The statement is True.`,
       `**D.** → False
 
 $$\\frac{3}{2}\\log_{3} x = 5$$
-$$x=3^{3.3333333333333335}=38.940738398300034$$
+$$x=3^{3.3333333333333335}=38.94$$
 
 The statement is False.`,
       `**E.** → True
@@ -997,11 +1018,11 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$\\log_{2} x + \\frac{\\log_{2} x}{3} = 4$ implies $x = 8$.`,
-      `The equation $\\log_{5} x = 5$ has solution $x = 125$.`,
+      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{3} = 4$ satisfies $x$ is greater than $7.6$.`,
+      `Every admissible root of $\\log_{5} x = 3$ satisfies $x$ equals $129$.`,
       `In an exam item, for decadic logarithms, the unique admissible root of $\\log x^{1/6} - \\log x^{6} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 9$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 2$ describes the event at $x=14$ (domain respected).`,
-      `The equation $\\ln x = \\ln 5 + 4$ has solution $x = 57.598150033144236$.`,
+      `Measuring time after an offset, $\\ln(x-8)=\\ln 2$ holds for an admissible $x$ that equals $14$.`,
+      `Every admissible root of $\\ln x = \\ln 5 + 4$ satisfies $x$ equals $275.99$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -1028,12 +1049,13 @@ The statement is True.`,
 
 $$x-8=2$$
 $$x=10$$
+Domain requires $x>8$.
 
 The statement is False.`,
       `**E.** → False
 
 $$\\ln x = \\ln(5e^{4})$$
-$$x=5e^{4}=54.6$$.
+$$x=272.99$$.
 
 The statement is False.`,
     ],
@@ -1048,18 +1070,19 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 5$ describes the event at $x=14$ (domain respected).`,
+      `Measuring time after an offset, $\\ln(x-6)=\\ln 4$ holds for an admissible $x$ that equals $14$.`,
       `If $\\log_{3} x = 4$, then $x$ is greater than $27$.`,
-      `In an exam item, the equation $7000\\left(1+\\frac{6}{100}\\right)^t=11157$$ (annual compounding, $t$ in years) has solution $t=11$.`,
-      `A heated metal rod model satisfies $e^{2x} - 14e^x + 40 = 0$ with $u=e^x>0$. There are $2$ distinct real exponents $x$.`,
-      `The unique real solution of $4^x = 2^{x+4}$ is $x = 4$.`,
+      `In an exam item, every positive root $t$ of $76\\left(1+\\frac{6}{100}\\right)^t=91$ satisfies $t$ equals $5$.`,
+      `Every positive root of $\\log x + \\log 3 = 4$ satisfies $x$ is greater than $9996.8$.`,
+      `For decadic logarithms, the unique admissible root of $\\log x^{1/4} - \\log x^{4} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$x-7=5$$
-$$x=12$$
+$$x-6=4$$
+$$x=10$$
+Domain requires $x>6$.
 
 The statement is False.`,
       `**B.** → True
@@ -1070,18 +1093,21 @@ $x > 27$.
 The statement is True.`,
       `**C.** → False
 
-Take logs or test powers → $t=8$.
+Take logs or test powers → $t=3$.
 
 The statement is False.`,
       `**D.** → True
 
-$$u^2-14u+40=0$$
-$$(u-4)(u-10)=0$$
+$$\\log(3x)=4$$
+$$x=10000$$.
 
 The statement is True.`,
       `**E.** → True
 
-Match bases / monotonicity gives $x=4$.
+$$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+$$\\log x = -0.831$$
+$$x \\approx 0.1$$
+$x < 5$.
 
 The statement is True.`,
     ],
@@ -1097,9 +1123,9 @@ The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + 8 = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $20$.`,
-      `The equation $7000\\left(1+\\frac{4}{100}\\right)^t=8857$$ (annual compounding, $t$ in years) has solution $t=8$.`,
+      `Every positive root $t$ of $76\\left(1+\\frac{4}{100}\\right)^t=85$ satisfies $t$ equals $5$.`,
       `A model reduces to $e^{2x} - 14e^x + 40 = 0$ with $u = e^x > 0$. There are $5$ distinct real values of $x$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-27\\cdot2^x+54=0$ yields $2$ real solutions for $x$.`,
+      `With $u=2^x>0$, the equation $3\\cdot4^x-27\\cdot2^x+54=0$ yields more than $1$ real solutions for $x$.`,
       `For decadic logarithms, every admissible root of $\\log(x^{1/6}) - 6\\log x - 2\\log x + 14 = \\frac{2\\log x}{3}$ satisfies $x \\ge 6$.`,
     ],
     answer_key: [true, false, false, true, false],
@@ -1112,7 +1138,7 @@ $x < 20$.
 The statement is True.`,
       `**B.** → False
 
-Take logs or test powers → $t=6$.
+Take logs or test powers → $t=3$.
 
 The statement is False.`,
       `**C.** → False
@@ -1147,18 +1173,18 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 4$ describes the event at $x=14$ (domain respected).`,
+      `In an exam item, every positive root of $\\log x + \\log(x+7) = 2$ satisfies $x$ equals $10.09$.`,
       `In an exam item, the solution of $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + 5 = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $8$.`,
       `The solution of $\\log \\sqrt[6]{x} + \\log \\frac{1}{x^{6}} - \\log x^2 + 14 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $6$.`,
       `The solution of $\\log \\sqrt[6]{x} + \\log \\frac{1}{x^{6}} - \\log x^2 + 14 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $6$.`,
-      `The equation $9000\\left(1+\\frac{6}{100}\\right)^t=14345$$ (annual compounding, $t$ in years) has solution $t=8$.`,
+      `Every positive root $t$ of $100\\left(1+\\frac{6}{100}\\right)^t=134$ satisfies $t$ is greater than $4$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$x-6=4$$
-$$x=10$$
+$$x(x+7)=10^{2}$$
+$$x=7.09$$
 
 The statement is False.`,
       `**B.** → True
@@ -1185,7 +1211,7 @@ $x < 6$.
 The statement is False.`,
       `**E.** → True
 
-Take logs or test powers → $t=8$.
+Take logs or test powers → $t=5$.
 
 The statement is True.`,
     ],
@@ -1201,9 +1227,9 @@ The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Suppose that $\\log_{4} x = 5$. It follows that $x$ is greater than $256$.`,
-      `The equation $\\log x + \\log(x+4) = 1$ (decadic logs; domain $x > 0$) has positive solution $x = 1.74$.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/3}) - 3\\log x - 2\\log x + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x \\ge 5$.`,
       `In an exam item, the solution of $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + 10 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $12$.`,
-      `In an exam item, for decadic logarithms, every admissible root of $\\log(x^{1/5}) - 5\\log x - 2\\log x + 10 = \\frac{2\\log x}{3}$ satisfies $x \\ge 12$.`,
+      `Measuring time after an offset, $\\ln(x-4)=\\ln 2$ holds for an admissible $x$ that equals $8$.`,
       `The solution of $\\log \\sqrt[6]{x} + \\log \\frac{1}{x^{6}} - \\log x^2 + 14 = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is not smaller than $6$.`,
     ],
     answer_key: [true, true, false, false, false],
@@ -1216,8 +1242,10 @@ $x > 256$.
 The statement is True.`,
       `**B.** → True
 
-$$x(x+4)=10^{1}$$
-$$x=1.74$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 1$$
+$$x = 10^{1} = 10$$
+$x \\ge 5$.
 
 The statement is True.`,
       `**C.** → False
@@ -1230,10 +1258,9 @@ $x < 12$.
 The statement is False.`,
       `**D.** → False
 
-Use $\\log 100=2$. Combine left-hand logs:
-$$\\log x = 0.4$$
-$$x = 10^{0.4} = 2.51$$
-$x < 12$.
+$$x-4=2$$
+$$x=6$$
+Domain requires $x>4$.
 
 The statement is False.`,
       `**E.** → False
@@ -1254,18 +1281,20 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, the equation $\\log x + \\log(x+3) = 6$ (base $10$) has positive solution $x = 731$.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/3}) - 3\\log x - 2\\log x + 8 = \\frac{2\\log x}{3}$ satisfies $x \\ge 20$.`,
       `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.`,
-      `The equation $\\log x + \\log(x+7) = 2$ (decadic logs; domain $x > 0$) has positive solution $x = 7.09$.`,
-      `A model reduces to $e^{2x} - 11e^x + 24 = 0$ with $u = e^x > 0$. There are $2$ distinct real values of $x$.`,
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 3$ describes the event at $x=10$ (domain respected).`,
+      `Every positive root of $\\log x + \\log(x+7) = 2$ satisfies $x$ is greater than $6.7$.`,
+      `A model reduces to $e^{2x} - 11e^x + 24 = 0$ with $u = e^x > 0$. There are more than $1$ distinct real values of $x$.`,
+      `Measuring time after an offset, $\\ln(x-7)=\\ln 3$ holds for an admissible $x$ that is greater than $9$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$x(x+3)=10^{6}$$
-$$x=729$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.5$$
+$$x = 10^{0.5} = 3.16$$
+$x < 20$.
 
 The statement is False.`,
       `**B.** → False
@@ -1292,6 +1321,7 @@ The statement is True.`,
 
 $$x-7=3$$
 $$x=10$$
+Domain requires $x>7$.
 
 The statement is True.`,
     ],
@@ -1306,10 +1336,10 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A model reduces to $e^{2x} - 8e^x + 12 = 0$ with $u = e^x > 0$. There are $2$ distinct real values of $x$.`,
-      `The equation $4000\\left(1+\\frac{3}{100}\\right)^t=4637$$ (annual compounding, $t$ in years) has solution $t=9$.`,
+      `A model reduces to $e^{2x} - 8e^x + 12 = 0$ with $u = e^x > 0$. There are more than $1$ distinct real values of $x$.`,
+      `Every positive root $t$ of $40\\left(1+\\frac{3}{100}\\right)^t=44$ satisfies $t$ equals $5$.`,
       `The solution of $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + 5 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $8$.`,
-      `The equation $\\log x + \\log(x+2) = 8$ (base $10$) has positive solution $x = 259$.`,
+      `Every positive root of $\\log x + \\log(x+5) = 2$ satisfies $x$ equals $10.809999999999999$.`,
       `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $6$.`,
     ],
     answer_key: [true, false, true, false, true],
@@ -1322,7 +1352,7 @@ Two positive $u$ → two real $x$.
 The statement is True.`,
       `**B.** → False
 
-Take logs or test powers → $t=5$.
+Take logs or test powers → $t=3$.
 
 The statement is False.`,
       `**C.** → True
@@ -1335,8 +1365,9 @@ $x < 8$.
 The statement is True.`,
       `**D.** → False
 
-$$x(x+2)=10^{8}$$
-$$x=256$$
+$$x(x+5)=10^{2}$$
+$$x=7.81$$
+Compare with the bound in the claim.
 
 The statement is False.`,
       `**E.** → True

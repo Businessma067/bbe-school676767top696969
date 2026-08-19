@@ -38,6 +38,21 @@ function claimAntiPlug(correct, isTrue, asInt = true) {
   return `greater than $${bound}$`;
 }
 
+/** For equation roots: TRUE → comparison; FALSE → wrong exact value. */
+function claimRoot(x, isTrue, asInt = true) {
+  const v = asInt ? Math.round(x) : Math.round(x * 100) / 100;
+  if (!isTrue) return `equals $${wrong(v)}$`;
+  const delta = Math.max(1, Math.min(8, Math.floor(Math.abs(v) / 6) || 1));
+  const bound = asInt ? v - delta : Math.round((v - delta * 0.4) * 10) / 10;
+  return `is greater than $${bound}$`;
+}
+
+/** Count of roots: TRUE → inequality; FALSE → wrong count. */
+function claimCount(n, isTrue) {
+  if (!isTrue) return `$${wrong(n)}$`;
+  return n > 1 ? `more than $${n - 1}$` : `greater than $0$`;
+}
+
 function pm(h, m) {
   return m === 0 ? `$${h}{:}00$ pm`.replace("{:}", ":") : `$${h}{:}${String(m).padStart(2, "0")}$ pm`.replace("{:}", ":");
 }
@@ -971,10 +986,10 @@ function radEq(slot, isTrue) {
   const k = 3 + (slot % 4);
   const off = 5 + (slot % 5);
   const root = k * k - off;
-  const claim = pickClaim(root, isTrue);
+  const cmp = claimRoot(root, isTrue);
   return {
     key: `radEq-${k}-${off}`,
-    statement: phrase(slot, `The equation $\\sqrt{x+${off}}=${k}$ has admissible solution $x=${claim}$.`),
+    statement: phrase(slot, `Every admissible root of $\\sqrt{x+${off}}=${k}$ satisfies $x$ ${cmp}.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x+${off}=${k * k}$$`, `$$x=${root}$$`]),
   };
 }
@@ -1012,10 +1027,10 @@ function ratCross(slot, isTrue) {
   const n = 2 + (slot % 3);
   const d = 5 + (slot % 2);
   const x = (n * hole) / (d - n);
-  const claim = pickClaim(x, isTrue, false);
+  const cmp = claimRoot(x, isTrue, false);
   return {
     key: `ratX-${hole}-${n}-${d}`,
-    statement: phrase(slot, `Model $\\frac{${n}}{x-${hole}}=\\frac{${d}}{x}$ ($x\\neq${hole}$) yields solution $x=${claim}$.`),
+    statement: phrase(slot, `Every admissible root of $\\frac{${n}}{x-${hole}}=\\frac{${d}}{x}$ satisfies $x$ ${cmp}.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Cross-multiply: $${n}x=${d}(x-${hole})$`]),
   };
 }
@@ -1136,14 +1151,18 @@ function logComplex(slot, isTrue) {
 }
 
 function logProductDomain(slot, isTrue) {
-  const a = 2 + (slot % 3);
-  const b = 5 + (slot % 4);
-  const root = Math.pow(a, b);
-  const claim = pickClaim(root, isTrue);
+  const a = 2 + (slot % 4);
+  const rhs = 1 + (slot % 2);
+  const target = Math.pow(10, rhs);
+  const root = Math.round(((-a + Math.sqrt(a * a + 4 * target)) / 2) * 100) / 100;
+  const cmp = claimRoot(root, isTrue, false);
   return {
-    key: `logPD-${a}-${b}`,
-    statement: phrase(slot, `The equation $\\log x + \\log(x+${a}) = ${b}$ (base $10$) has positive solution $x = ${claim}$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10^{${b}}$$`, `$$x=${root}$$`]),
+    key: `logPD-${a}-${rhs}`,
+    statement: phrase(
+      slot,
+      `Every positive root of $\\log x + \\log(x+${a}) = ${rhs}$ satisfies $x$ ${cmp}.`
+    ),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10^{${rhs}}$$`, `$$x=${root}$$`, `Compare with the bound in the claim.`]),
   };
 }
 
@@ -1179,11 +1198,14 @@ function expSubstWord(slot, isTrue) {
   const s = u1 + u2;
   const p = u1 * u2;
   const roots = 2;
-  const claim = pickClaim(roots, isTrue);
+  const cmp = claimCount(roots, isTrue);
   return {
     key: `expSub-${s}-${p}`,
-    statement: phrase(slot, `A heated metal rod model satisfies $e^{2x} - ${s}e^x + ${p} = 0$ with $u=e^x>0$. There are $${claim}$ distinct real exponents $x$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${p}=0$$`, `$$(u-${u1})(u-${u2})=0$$`]),
+    statement: phrase(
+      slot,
+      `A heated metal rod model satisfies $e^{2x} - ${s}e^x + ${p} = 0$ with $u=e^x>0$. There are ${cmp} distinct real exponents $x$.`
+    ),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${p}=0$$`, `$$(u-${u1})(u-${u2})=0$$`, `Two positive $u$ give two real $x$.`]),
   };
 }
 
@@ -1203,11 +1225,14 @@ function logShiftContext(slot, isTrue) {
   const s = 4 + (slot % 5);
   const m = 2 + (slot % 4);
   const x = s + m;
-  const claim = pickClaim(x, isTrue);
+  const cmp = claimRoot(x, isTrue);
   return {
     key: `logSh-${s}-${m}`,
-    statement: phrase(slot, `Measuring time after an offset, $\\ln(x-${s})=\\ln ${m}$ describes the event at $x=${claim}$ (domain respected).`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x-${s}=${m}$$`, `$$x=${x}$$`]),
+    statement: phrase(
+      slot,
+      `Measuring time after an offset, $\\ln(x-${s})=\\ln ${m}$ holds for an admissible $x$ that ${cmp}.`
+    ),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x-${s}=${m}$$`, `$$x=${x}$$`, `Domain requires $x>${s}$.`]),
   };
 }
 
@@ -1217,11 +1242,14 @@ function logSumFrac(slot, isTrue) {
   const target = 4 + (slot % 3);
   const logv = (target * denom) / (denom + 1);
   const x = Math.pow(base, logv);
-  const claim = pickClaim(x, isTrue);
+  const cmp = claimRoot(x, isTrue, false);
   return {
     key: `logSum-${base}-${target}`,
-    statement: phrase(slot, `$\\log_{${base}} x + \\frac{\\log_{${base}} x}{${denom}} = ${target}$ implies $x = ${claim}$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${denom + 1}}{${denom}}\\log_{${base}} x = ${target}$$`, `$$x=${base}^{${logv}}=${x}$$`]),
+    statement: phrase(
+      slot,
+      `Every admissible root of $\\log_{${base}} x + \\frac{\\log_{${base}} x}{${denom}} = ${target}$ satisfies $x$ ${cmp}.`
+    ),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${denom + 1}}{${denom}}\\log_{${base}} x = ${target}$$`, `$$x=${base}^{${logv}}=${Math.round(x * 100) / 100}$$`]),
   };
 }
 
@@ -1233,10 +1261,10 @@ function expMixedBase(slot, isTrue) {
     { eq: "25^x = 5^{x+3}", x: 3 },
   ];
   const p = pairs[slot % pairs.length];
-  const claim = pickClaim(p.x, isTrue);
+  const cmp = claimRoot(p.x, isTrue);
   return {
     key: `expMix-${p.x}-${slot}`,
-    statement: phrase(slot, `The unique real solution of $${p.eq}$ is $x = ${claim}$.`),
+    statement: phrase(slot, `Every real root of $${p.eq}$ satisfies $x$ ${cmp}.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Match bases / monotonicity gives $x=${p.x}$.`]),
   };
 }
@@ -1289,10 +1317,13 @@ function expQuadBase2(slot, isTrue) {
   const sum = lead * (u1 + u2);
   const prod = lead * u1 * u2;
   const roots = 2;
-  const claim = pickClaim(roots, isTrue);
+  const cmp = claimCount(roots, isTrue);
   return {
     key: `expQ2-${sum}-${prod}`,
-    statement: phrase(slot, `With $u=2^x>0$, the equation $${lead}\\cdot4^x-${sum}\\cdot2^x+${prod}=0$ yields $${claim}$ real solutions for $x$.`),
+    statement: phrase(
+      slot,
+      `With $u=2^x>0$, the equation $${lead}\\cdot4^x-${sum}\\cdot2^x+${prod}=0$ yields ${cmp} real solutions for $x$.`
+    ),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${lead}u^2-${sum}u+${prod}=0$$`, `Two positive $u$ → two $x$.`]),
   };
 }
@@ -1332,10 +1363,10 @@ function expPowerEq(slot, isTrue) {
     { eq: "10^{x-1} = 1000", x: 4 },
   ];
   const p = bases[(slot + Math.floor(slot / 6)) % bases.length];
-  const claim = pickClaim(p.x, isTrue);
+  const cmp = claimRoot(p.x, isTrue);
   return {
     key: `expPow-${p.eq}-${slot}`,
-    statement: phrase(slot, `The equation $${p.eq}$ has real solution $x = ${claim}$.`),
+    statement: phrase(slot, `Every real root of $${p.eq}$ satisfies $x$ ${cmp}.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Match powers → $x=${p.x}$.`]),
   };
 }
@@ -1344,10 +1375,12 @@ function logLinearEq(slot, isTrue) {
   const b = 2 + (slot % 4);
   const c = 3 + (slot % 5);
   const x = Math.pow(b, c);
-  const claim = pickClaim(c, isTrue);
   return {
     key: `logLin-${b}-${c}-${slot}`,
-    statement: phrase(slot, `The equation $\\log_{${b}} x = ${claim}$ has solution $x = ${x}$.`),
+    statement: phrase(
+      slot,
+      `Every admissible root of $\\log_{${b}} x = ${c}$ satisfies $x$ ${claimRoot(x, isTrue, false)}.`
+    ),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x=${b}^{${c}}=${x}$$.`]),
   };
 }
@@ -1355,23 +1388,25 @@ function logLinearEq(slot, isTrue) {
 function expLnEq(slot, isTrue) {
   const a = 2 + (slot % 4);
   const b = 3 + (slot % 3);
-  const x = Math.exp(a);
-  const rhs = a + Math.log(b);
-  const claim = pickClaim(x, isTrue, false);
+  const x = Math.round(b * Math.exp(a) * 100) / 100;
+  const cmp = claimRoot(x, isTrue, false);
   return {
     key: `expLn-${a}-${b}-${slot}`,
-    statement: phrase(slot, `The equation $\\ln x = \\ln ${b} + ${a}$ has solution $x = ${claim}$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\ln x = \\ln(${b}e^{${a}})$$`, `$$x=${b}e^{${a}}=${Math.round(x * 100) / 100}$$.`]),
+    statement: phrase(slot, `Every admissible root of $\\ln x = \\ln ${b} + ${a}$ satisfies $x$ ${cmp}.`),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\ln x = \\ln(${b}e^{${a}})$$`, `$$x=${x}$$.`]),
   };
 }
 
 function logSumEq(slot, isTrue) {
   const a = 3 + (slot % 4);
   const x = Math.pow(10, a + 1);
-  const claim = pickClaim(x, isTrue);
+  const cmp = claimRoot(x, isTrue, false);
   return {
     key: `logSum2-${a}-${slot}`,
-    statement: phrase(slot, `The equation $\\log x + \\log ${a} = ${a + 1}$ (base $10$) has solution $x = ${claim}$.`),
+    statement: phrase(
+      slot,
+      `Every positive root of $\\log x + \\log ${a} = ${a + 1}$ satisfies $x$ ${cmp}.`
+    ),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\log(${a}x)=${a + 1}$$`, `$$x=${x}$$.`]),
   };
 }
@@ -1479,7 +1514,7 @@ function difficultyTier(n, sub) {
 
 // ── assembly ──────────────────────────────────────────────────────────────────
 
-TIER = initHardTemplates({ hdr, mkExpl, phrase, pickClaim, wrong, pm, backFrom });
+TIER = initHardTemplates({ hdr, mkExpl, phrase, pickClaim, claimRoot, claimCount, wrong, pm, backFrom });
 
 function buildTask(n, sub) {
   const tier = difficultyTier(n, sub);

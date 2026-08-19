@@ -3,7 +3,7 @@
  */
 
 export function initHardTemplates(H) {
-  const { hdr, mkExpl, phrase, pickClaim, pm, backFrom } = H;
+  const { hdr, mkExpl, phrase, pickClaim, claimRoot, claimCount, pm, backFrom } = H;
 
   // ═══ 4.1 TIER 4 — multi-step word stories ═══════════════════════════════
 
@@ -374,12 +374,12 @@ export function initHardTemplates(H) {
     const rhs = 1 + (slot % 2);
     const target = Math.pow(10, rhs);
     const root = Math.round(((-a + Math.sqrt(a * a + 4 * target)) / 2) * 100) / 100;
-    const claim = pickClaim(root, isTrue, false);
+    const cmp = claimRoot(root, isTrue, false);
     return {
       key: `5logprod-${a}-${rhs}-${slot}`,
       statement: phrase(
         slot,
-        `The equation $\\log x + \\log(x+${a}) = ${rhs}$ (decadic logs; domain $x > 0$) has positive solution $x = ${claim}$.`
+        `Every positive root of $\\log x + \\log(x+${a}) = ${rhs}$ satisfies $x$ ${cmp}.`
       ),
       expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10^{${rhs}}$$`, `$$x=${root}$$`]),
     };
@@ -391,28 +391,28 @@ export function initHardTemplates(H) {
     const s = u1 + u2;
     const pr = u1 * u2;
     const roots = 2;
-    const claim = pickClaim(roots, isTrue);
+    const cmp = claimCount(roots, isTrue);
     return {
       key: `5esub-${s}-${pr}-${slot}`,
       statement: phrase(
         slot,
-        `A model reduces to $e^{2x} - ${s}e^x + ${pr} = 0$ with $u = e^x > 0$. There are $${claim}$ distinct real values of $x$.`
+        `A model reduces to $e^{2x} - ${s}e^x + ${pr} = 0$ with $u = e^x > 0$. There are ${cmp} distinct real values of $x$.`
       ),
       expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${pr}=0$$`, `Two positive $u$ → two real $x$.`]),
     };
   }
 
   function exp4Compound(slot, isTrue) {
-    const p = 4000 + (slot % 6) * 1000;
+    const p = 40 + (slot % 6) * 12;
     const r = 3 + (slot % 4);
-    const y = 5 + (slot % 4);
+    const y = 3 + (slot % 3);
     const bal = Math.round(p * Math.pow(1 + r / 100, y));
-    const claim = pickClaim(y, isTrue);
+    const cmp = claimRoot(y, isTrue);
     return {
       key: `4comp-${p}-${r}-${bal}`,
       statement: phrase(
         slot,
-        `The equation $${p}\\left(1+\\frac{${r}}{100}\\right)^t=${bal}$$ (annual compounding, $t$ in years) has solution $t=${claim}$.`
+        `Every positive root $t$ of $${p}\\left(1+\\frac{${r}}{100}\\right)^t=${bal}$ satisfies $t$ ${cmp}.`
       ),
       expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Take logs or test powers → $t=${y}$.`]),
     };

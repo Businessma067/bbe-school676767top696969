@@ -20,6 +20,13 @@ const TRUE_PLUG_PATS = [
   { re: /Then the (?:change|number|wage|distance|length|path|frame|prize) (?:is|was) \$([0-9]+)/i, kind: "then-the" },
   { re: /Half of a number is \$([0-9]+)\$/i, kind: "half-is" },
   { re: /(?:They are|pair is) \$([0-9]+) and \$([0-9]+)\$/i, kind: "they-are-pair" },
+  // Direct root plug-in — must solve the equation first
+  { re: /(?:solution|implies|event at|satisfies)\s+\$x\s*=\s*\$?[0-9]/i, kind: "x-equals" },
+  { re: /(?:positive|admissible|real) solution \$x\s*=\s*\$?[0-9]/i, kind: "x-equals-solution" },
+  { re: /yields solution \$x\s*=\s*\$?[0-9]/i, kind: "x-equals-yields" },
+  { re: /describes the event at \$x\s*=\s*\$?[0-9]/i, kind: "x-equals-event" },
+  { re: /unique real solution of \$[^$]+\$ is \$x\s*=\s*\$?[0-9]/i, kind: "x-equals-unique" },
+  { re: /There are \$([0-9]+)\$ distinct real (?:exponents|values|solutions)/i, kind: "count-plug" },
 ];
 
 /** Pure calculation — not equation-solving topic. */
@@ -141,6 +148,8 @@ const EQUATION_MARKERS = [
   /A device lists at/i,
   /A heated metal rod model/i,
   /Measuring time after an offset/i,
+  /Every (?:positive|admissible|real) root/i,
+  /satisfies \$x\$/i,
   /The equation \$[0-9]+\^x = -/i,
 ];
 
@@ -171,9 +180,14 @@ export function requiresEquationTopic(stmt, subsection) {
 export function isPluginTrue(stmt, isTrue, subsection) {
   if (!isTrue) return null;
 
-  // Word problems needing a model + solve — allow exact claims only if setup is non-trivial
+  // Log/exp comparison claims (photo style) — not plug-in
+  if (/smaller than|not smaller than|greater than \$[0-9]+\$|less than \$[0-9]+\$|exceeds \$|at least two distinct|more than one distinct/i.test(stmt)) {
+    return null;
+  }
+
+  // Word problems needing a model + solve — allow exact numeric claims only if non-trivial
   const wordEqStory =
-    /rectangle|area is|perimeter|consecutive|product of two|fence forms|reciprocal equals|roots of \$|path runs|path alone|ladder|pipe|tap|inlet|vinegar|prize fund|prize money|travels at|leaves \$|years older|coins totalling|worker \$|Together they need|meet \$|catch|downstream|upstream|still water|saline|concentration|discount|VAT|chemist pours|vehicle \$|towns \$|depot|exam item.*average|scores average|aluminium bar|pump delivers|gravel path|kitchen manual|phone plan|round trip|mean-speed trap|population model|substitution \$u|decadic|equation \$\\log|Every admissible root|unique real solution|implies \$x =|positive solution \$x|admissible solution \$x|yields solution \$x|Positions on a rail|Equation \$\||Model \$\\frac/i.test(
+    /rectangle|area is|perimeter|consecutive|product of two|fence forms|reciprocal equals|roots of \$|path runs|path alone|ladder|pipe|tap|inlet|vinegar|prize fund|prize money|travels at|leaves \$|years older|coins totalling|worker \$|Together they need|meet \$|catch|downstream|upstream|still water|saline|concentration|discount|VAT|chemist pours|vehicle \$|towns \$|depot|exam item.*average|scores average|aluminium bar|pump delivers|gravel path|kitchen manual|phone plan|round trip|mean-speed trap|Positions on a rail|Equation \$\||Model \$\\frac/i.test(
       stmt
     );
   if (wordEqStory) return null;
