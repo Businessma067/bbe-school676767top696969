@@ -5003,11 +5003,18 @@ $$x = 12$$
 
 Check: $\\frac{3}{12} = \\frac{1}{4}$. The jerrycan holds $12$ litres, so the statement is True.`,
       `**B.** → True
-The equation is $\\frac{3}{x} = \\frac{1}{4}$, so first exclude the hole $x = 0$ (division by $0$ is not allowed).
-On the remaining domain, cross-multiply:
+
+The equation is
+
+$$\\frac{3}{x} = \\frac{1}{4}$$
+
+First exclude the hole $x = 0$, which zeros the denominator. On the remaining domain, cross-multiply:
+
 $$3 \\cdot 4 = 1 \\cdot x$$
+
 $$12 = x$$
-So the unique real solution is $x = 12$, which is divisible by $6$. Therefore the statement is True.`,
+
+The unique real solution is $x = 12$, which is divisible by $6$. The statement is True.`,
       `**C.** → False
 
 Five litres filling the can in shares that each equal the whole can means
