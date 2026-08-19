@@ -6590,25 +6590,21 @@ There is exactly one real solution, not none, so the statement is False.`,
   {
     id: `math-4-74`,
     case_id: `MATH 4.74`,
-    title: `Five isolate-and-square radical stories`,
+    title: `Five independent radical difference equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A surveyor records that the square root of a distance plus $12$ m, minus the square root of the distance itself, equals $2$ m. Then the distance is $4$ m.`,
-      `After isolating and squaring, the relation that the square root of the distance is $2$ appears, which is why the distance $4$ m is recovered.`,
-      `A second surveyor records a similar difference of square roots equal to $1$ m with $8$ m extra inside the first root, and reports that the distance is $9$ m.`,
-      `After squaring $\\sqrt{x + 12} = 2 + \\sqrt{x}$ once, you may stop without substituting back into the original, because the isolated right-hand side is automatically nonnegative.`,
-      `A student claims that a distance of $0$ m also works for a $2$ m gap between those two square roots, since $\\sqrt{12}$ is near enough to $2$.`,
+      `The equation $\\sqrt{x + 12} - \\sqrt{x} = 2$ has a unique real solution that is a perfect square.`,
+      `The equation $\\sqrt{x + 24} - \\sqrt{x} = 2$ has a unique real solution greater than $20$.`,
+      `The equation $\\sqrt{x + 8} - \\sqrt{x} = 1$ has a unique real solution that is an integer.`,
+      `The equation $\\sqrt{x + 5} - \\sqrt{x} = 1$ has exactly two real solutions.`,
+      `The equation $\\sqrt{x + 20} - \\sqrt{x} = 4$ has a unique real solution divisible by $3$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-The recorded difference of square roots is
-
-$$\\sqrt{x + 12} - \\sqrt{x} = 2$$
-
-The domain needs $x \\ge 0$. Isolate the first root. The other side is $2 + \\sqrt{x}$, which is nonnegative, so a principal square root can equal it:
+The domain needs $x \\ge 0$. Isolate the first root; the other side is $2 + \\sqrt{x}$, which is nonnegative:
 
 $$\\sqrt{x + 12} = 2 + \\sqrt{x}$$
 
@@ -6622,29 +6618,35 @@ $$8 = 4\\sqrt{x}$$
 
 $$\\sqrt{x} = 2$$
 
-A principal square root is never negative, so
-
 $$x = 4$$
 
-The candidate $x = 4$ lies in $x \\ge 0$. Substitute back into the original:
+The recovered value is $4$, which is a perfect square. Substitute back:
 
 $$\\sqrt{4 + 12} - \\sqrt{4} = 4 - 2 = 2$$
 
-The recovered distance is $4$ m, so the statement is True.`,
+The candidate survives, so the statement is True.`,
       `**B.** → True
 
-After the isolation and first squaring in A, the remaining relation is
+The domain needs $x \\ge 0$. Isolate and square:
 
-$$\\sqrt{x} = 2$$
+$$\\sqrt{x + 24} = 2 + \\sqrt{x}$$
 
-Because a principal square root is never negative, this forces $x = 4$. That is why the distance $4$ m is recovered, so the statement is True.`,
+$$x + 24 = 4 + 4\\sqrt{x} + x$$
+
+$$20 = 4\\sqrt{x}$$
+
+$$5 = \\sqrt{x}$$
+
+$$x = 25$$
+
+The recovered value is $25$, which is greater than $20$. Substitute back:
+
+$$\\sqrt{25 + 24} - \\sqrt{25} = 7 - 5 = 2$$
+
+The candidate survives, so the statement is True.`,
       `**C.** → False
 
-A similar difference equal to $1$ m with $8$ m extra inside the first root is
-
-$$\\sqrt{x + 8} - \\sqrt{x} = 1$$
-
-Isolate and square, with $x \\ge 0$:
+The domain needs $x \\ge 0$. Isolate and square:
 
 $$\\sqrt{x + 8} = 1 + \\sqrt{x}$$
 
@@ -6656,29 +6658,41 @@ $$\\sqrt{x} = \\frac{7}{2}$$
 
 $$x = \\frac{49}{4}$$
 
-The recovered distance is $\\frac{49}{4}$ m, not $9$ m. Plug the claimed $x = 9$:
-
-$$\\sqrt{9 + 8} - \\sqrt{9} = \\sqrt{17} - 3$$
-
-Now $\\sqrt{17} > \\sqrt{16} = 4$, so the difference is greater than $1$.
-
-The claimed distance fails, so the statement is False.`,
+The recovered value is $\\frac{49}{4}$, which is not an integer. The statement is False.`,
       `**D.** → False
 
-Isolating made the right-hand side $2 + \\sqrt{x}$ nonnegative, so the first squaring is valid, but squaring can still introduce extras. Every candidate must be substituted back into the original, as in A.
+The domain needs $x \\ge 0$. Isolate and square:
 
-Stopping after one squaring is not enough, so the statement is False.`,
+$$\\sqrt{x + 5} = 1 + \\sqrt{x}$$
+
+$$x + 5 = 1 + 2\\sqrt{x} + x$$
+
+$$4 = 2\\sqrt{x}$$
+
+$$\\sqrt{x} = 2$$
+
+$$x = 4$$
+
+The recovered value is $4$, a single real number. A difference of two principal square roots of this form has at most one real solution, not exactly two, so the statement is False.`,
       `**E.** → False
 
-Plug the claimed distance $x = 0$ into the original:
+The domain needs $x \\ge 0$. Isolate and square:
 
-$$\\sqrt{0 + 12} - \\sqrt{0} = \\sqrt{12}$$
+$$\\sqrt{x + 20} = 4 + \\sqrt{x}$$
 
-and $\\sqrt{12} \\neq 2$, because $2^{2} = 4 \\neq 12$. The recovered distance is $4$ m, so the statement is False.`,
+$$x + 20 = 16 + 8\\sqrt{x} + x$$
+
+$$4 = 8\\sqrt{x}$$
+
+$$\\sqrt{x} = \\frac{1}{2}$$
+
+$$x = \\frac{1}{4}$$
+
+The recovered value is $\\frac{1}{4}$, which is not divisible by $3$. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 74,
-    solution_overview: `Five independent isolate-and-square claims. $\\sqrt{x + 12} - \\sqrt{x} = 2$ recovers $x = 4$. A second difference of roots is a trap at $x = 9$.`,
+    solution_overview: `Five independent radical difference equations. Isolating $\\sqrt{x + 12} - \\sqrt{x} = 2$ recovers $x = 4$. A second gap $\\sqrt{x + 24} - \\sqrt{x} = 2$ recovers $x = 25$.`,
   },
   {
     id: `math-4-75`,
@@ -6768,31 +6782,25 @@ The recovered length is $\\frac{49}{9}$ m, so the statement is False.`,
   {
     id: `math-4-76`,
     case_id: `MATH 4.76`,
-    title: `Five absolute-value equations with a sign condition`,
+    title: `Five independent absolute-value equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has an integer solution.`,
-      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has a negative real solution.`,
-      `Splitting $\\lvert 3 - 2x \\rvert = x + 1$ after requiring $x \\ge -1$ produces a non-integer rational solution strictly between $0$ and $1$.`,
-      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has only one real solution.`,
-      `Every candidate of that split that already meets $x + 1 \\ge 0$ survives in the original equation.`,
+      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has exactly two real solutions.`,
+      `The equation $\\lvert 2x + 1 \\rvert = 5$ has a negative integer solution.`,
+      `The equation $\\lvert 2x - 5 \\rvert = x + 1$ has exactly one real solution.`,
+      `The equation $\\lvert x - 4 \\rvert = 2x - 1$ has exactly one real solution.`,
+      `The equation $\\lvert 5 - x \\rvert = 2x + 3$ has no real solutions.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
-
-The error equation is
-
-$$\\lvert 3 - 2x \\rvert = x + 1$$
 
 An absolute value is never negative, so the right-hand side must satisfy $x + 1 \\ge 0$, hence $x \\ge -1$. Split the left side into two cases.
 
 First case, $3 - 2x = x + 1$:
 
 $$3 - 1 = 3x$$
-
-$$2 = 3x$$
 
 $$x = \\frac{2}{3}$$
 
@@ -6802,51 +6810,97 @@ $$3 - 2x = -x - 1$$
 
 $$4 = x$$
 
-$$x = 4$$
+Both candidates meet $x \\ge -1$ and satisfy the original. There are exactly two real solutions, so the statement is True.`,
+      `**B.** → True
 
-The candidate $x = 4$ meets $x \\ge -1$. Substitute back:
+The equation $\\lvert 2x + 1 \\rvert = 5$ has a positive right-hand side, so it splits into two cases:
 
-$$\\lvert 3 - 2 \\cdot 4 \\rvert = \\lvert -5 \\rvert = 5$$
+$$2x + 1 = 5$$
 
-$$4 + 1 = 5$$
+$$2x = 4$$
 
-Both sides equal $5$, so the recovered solution is an integer, so the statement is True.`,
-      `**B.** → False
+$$x = 2$$
 
-Plug the claimed value $x = -2$ into $\\lvert 3 - 2x \\rvert = x + 1$:
+and
 
-$$-2 + 1 = -1$$
+$$2x + 1 = -5$$
 
-The right-hand side is negative, and an absolute value cannot equal $-1$. Directly on the left:
+$$2x = -6$$
 
-$$\\lvert 3 - 2 \\cdot (-2) \\rvert = \\lvert 7 \\rvert = 7 \\neq -1$$
+$$x = -3$$
 
-So $x = -2$ is not a solution, so the statement is False.`,
-      `**C.** → True
+The recovered values are $2$ and $-3$. The value $-3$ is a negative integer solution, so the statement is True.`,
+      `**C.** → False
 
-The first case of the split, after requiring $x \\ge -1$, is
+An absolute value is never negative, so the right-hand side requires $x + 1 \\ge 0$, hence $x \\ge -1$. Split into two cases.
 
-$$3 - 2x = x + 1$$
+First case, $2x - 5 = x + 1$:
+
+$$x = 6$$
+
+Second case, $2x - 5 = -(x + 1)$:
+
+$$2x - 5 = -x - 1$$
+
+$$3x = 4$$
+
+$$x = \\frac{4}{3}$$
+
+Both candidates meet $x \\ge -1$ and satisfy the original. There are two real solutions, not exactly one, so the statement is False.`,
+      `**D.** → True
+
+An absolute value is never negative, so the right-hand side requires $2x - 1 \\ge 0$, hence $x \\ge \\frac{1}{2}$. Split into two cases.
+
+First case, $x - 4 = 2x - 1$:
+
+$$-4 + 1 = x$$
+
+$$x = -3$$
+
+This lies outside $x \\ge \\frac{1}{2}$, so it is rejected.
+
+Second case, $x - 4 = -(2x - 1)$:
+
+$$x - 4 = -2x + 1$$
+
+$$3x = 5$$
+
+$$x = \\frac{5}{3}$$
+
+This meets $x \\ge \\frac{1}{2}$ and satisfies the original:
+
+$$\\left\\lvert \\frac{5}{3} - 4 \\right\\rvert = \\left\\lvert -\\frac{7}{3} \\right\\rvert = \\frac{7}{3}$$
+
+$$2 \\cdot \\frac{5}{3} - 1 = \\frac{7}{3}$$
+
+Exactly one real solution survives, so the statement is True.`,
+      `**E.** → False
+
+An absolute value is never negative, so the right-hand side requires $2x + 3 \\ge 0$, hence $x \\ge -\\frac{3}{2}$. Split into two cases.
+
+First case, $5 - x = 2x + 3$:
+
+$$5 - 3 = 3x$$
 
 $$x = \\frac{2}{3}$$
 
-and $\\frac{2}{3} \\ge -1$. Substitute back:
+Second case, $5 - x = -(2x + 3)$:
 
-$$\\left\\lvert 3 - 2 \\cdot \\frac{2}{3} \\right\\rvert = \\left\\lvert 3 - \\frac{4}{3} \\right\\rvert = \\left\\lvert \\frac{5}{3} \\right\\rvert = \\frac{5}{3}$$
+$$5 - x = -2x - 3$$
 
-$$\\frac{2}{3} + 1 = \\frac{5}{3}$$
+$$x = -8$$
 
-The check holds, so the statement is True.`,
-      `**D.** → False
+Only $x = \\frac{2}{3}$ meets $x \\ge -\\frac{3}{2}$ and satisfies the original:
 
-The two-case split produced $x = \\frac{2}{3}$ and $x = 4$, both of which meet $x \\ge -1$ and both of which check in the original. There are two real solutions, not one, so the statement is False.`,
-      `**E.** → True
+$$\\left\\lvert 5 - \\frac{2}{3} \\right\\rvert = \\frac{13}{3}$$
 
-Every candidate from the split that already meets the nonnegative right-hand side $x \\ge -1$ was $x = \\frac{2}{3}$ and $x = 4$. Both substitutions in A and C succeed in the original absolute-value equation, so the statement is True.`,
+$$2 \\cdot \\frac{2}{3} + 3 = \\frac{13}{3}$$
+
+There is a real solution, not none, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 76,
-    solution_overview: `Five independent absolute-value claims. $\\lvert 3 - 2x \\rvert = x + 1$ needs $x \\ge -1$; both $\\frac{2}{3}$ and $4$ then survive.`,
+    solution_overview: `Five independent absolute-value equations. When the right-hand side is an expression, require it to be nonnegative first. Splitting can produce two, one, or no surviving roots.`,
   },
   {
     id: `math-4-77`,
@@ -6964,25 +7018,23 @@ The identity does not hold at the hole, so the statement is False.`,
   {
     id: `math-4-78`,
     case_id: `MATH 4.78`,
-    title: `Five rational differences from different recipes`,
+    title: `Five independent rational difference equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has a unique real solution, and that solution is negative.`,
-      `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has exactly two holes coming from its denominators.`,
-      `A student claims that a value making one denominator zero can still be a solution of $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$.`,
-      `The unique real solution obtained from the cleared linear equation satisfies the original difference equation.`,
-      `When $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$ is cleared by $(x - 1)(x + 1)$, the $x^{2}$ terms cancel and a linear equation remains.`,
+      `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has a unique real solution that is negative.`,
+      `The equation $\\dfrac{3x + 2}{x + 1} - \\dfrac{2x - 1}{x - 2} = 1$ has a unique real solution that is a non-integer rational number.`,
+      `The equation $\\dfrac{5x + 1}{x - 2} - \\dfrac{2x + 3}{x + 1} = 2$ has exactly two holes coming from its denominators.`,
+      `The equation $\\dfrac{x + 4}{x - 1} - \\dfrac{2x}{x + 2} = 1$ has exactly two real solutions.`,
+      `The equation $\\dfrac{2x - 1}{x + 3} - \\dfrac{x + 2}{x - 1} = 1$ has no real solutions.`,
     ],
-    answer_key: [true, true, false, true, true],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The two-fraction difference is
+The holes $x = 1$ and $x = -1$ are never roots. On the remaining domain, multiply through by $(x - 1)(x + 1)$:
 
 $$\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$$
-
-The holes $x = 1$ and $x = -1$ are never roots. On the remaining domain, multiply through by $(x - 1)(x + 1)$:
 
 $$(2x + 1)(x + 1) - (x + 3)(x - 1) = x^{2} - 1$$
 
@@ -6998,38 +7050,87 @@ $$x + 4 = -1$$
 
 $$x = -5$$
 
-The recovered value is $-5$, which is neither hole. That is the claimed solution, so the statement is True.`,
+The recovered value is $-5$, a negative number that is neither hole. The statement is True.`,
       `**B.** → True
-A rational difference is undefined where a denominator is zero. The denominators vanish at two distinct real values, so there are exactly two holes.
 
-Those two values are holes, never roots, so the statement is True.`,
-      `**C.** → False
+The holes $x = -1$ and $x = 2$ are never roots. On the remaining domain, multiply through by $(x + 1)(x - 2)$:
 
-If any denominator of the difference is zero, the original expression is undefined. A hole is never a root, even if the two sides appear to grow large.
+$$\\frac{3x + 2}{x + 1} - \\frac{2x - 1}{x - 2} = 1$$
 
-So the statement is False.`,
+$$(3x + 2)(x - 2) - (2x - 1)(x + 1) = (x + 1)(x - 2)$$
+
+Expand the left side:
+
+$$(3x^{2} - 4x - 4) - (2x^{2} - x - 1) = x^{2} - 3x - 3$$
+
+So
+
+$$x^{2} - 3x - 3 = x^{2} - x - 2$$
+
+$$-3x - 3 = -x - 2$$
+
+$$-2x = 1$$
+
+$$x = -\\frac{1}{2}$$
+
+The recovered value is $-\\frac{1}{2}$, a non-integer rational number that is neither hole. The statement is True.`,
+      `**C.** → True
+
+A rational difference is undefined where a denominator is zero. The denominators $x - 2$ and $x + 1$ vanish at
+
+$$x = 2$$
+
+and
+
+$$x = -1$$
+
+Those are exactly two holes, never roots, so the statement is True.`,
       `**D.** → True
 
-Substitute the recovered value $x = -5$ into the original left-hand side:
+The holes $x = 1$ and $x = -2$ are never roots. On the remaining domain, multiply through by $(x - 1)(x + 2)$:
 
-$$\\frac{2(-5) + 1}{-5 - 1} - \\frac{-5 + 3}{-5 + 1} = \\frac{-9}{-6} - \\frac{-2}{-4}$$
+$$\\frac{x + 4}{x - 1} - \\frac{2x}{x + 2} = 1$$
 
-$$= \\frac{3}{2} - \\frac{1}{2} = 1$$
+$$(x + 4)(x + 2) - 2x(x - 1) = (x - 1)(x + 2)$$
 
-The left-hand side equals $1$, so the statement is True.`,
-      `**E.** → True
+Expand the left side:
 
-After clearing by $(x - 1)(x + 1)$ as in A, both sides contain $x^{2}$, and those quadratic terms cancel:
+$$(x^{2} + 6x + 8) - (2x^{2} - 2x) = -x^{2} + 8x + 8$$
 
-$$x^{2} + x + 4 = x^{2} - 1$$
+So
 
-$$x + 4 = -1$$
+$$-x^{2} + 8x + 8 = x^{2} + x - 2$$
 
-A linear equation remains. That is the claimed cancellation, so the statement is True.`,
+$$0 = 2x^{2} - 7x - 10$$
+
+The discriminant is $(-7)^{2} - 4 \\cdot 2 \\cdot (-10) = 49 + 80 = 129$, which is positive. There are exactly two distinct real solutions, so the statement is True.`,
+      `**E.** → False
+
+The holes $x = -3$ and $x = 1$ are never roots. On the remaining domain, multiply through by $(x + 3)(x - 1)$:
+
+$$\\frac{2x - 1}{x + 3} - \\frac{x + 2}{x - 1} = 1$$
+
+$$(2x - 1)(x - 1) - (x + 2)(x + 3) = (x + 3)(x - 1)$$
+
+Expand the left side:
+
+$$(2x^{2} - 3x + 1) - (x^{2} + 5x + 6) = x^{2} - 8x - 5$$
+
+So
+
+$$x^{2} - 8x - 5 = x^{2} + 2x - 3$$
+
+$$-8x - 5 = 2x - 3$$
+
+$$-10x = 2$$
+
+$$x = -\\frac{1}{5}$$
+
+The recovered value is $-\\frac{1}{5}$, which is neither hole. There is a real solution, not none, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 78,
-    solution_overview: `Five independent rational-difference claims. Clearing $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$ cancels $x^{2}$ and recovers $x = -5$.`,
+    solution_overview: `Five independent rational difference equations. Clearing can cancel $x^{2}$ to leave a linear equation, or produce a quadratic with two roots. Exclude every hole first.`,
   },
   {
     id: `math-4-79`,
