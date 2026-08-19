@@ -6835,5 +6835,1085 @@ A linear equation remains. That is the claimed cancellation, so the statement is
     difficulty_level: `5/5`,
     sort_order: 78,
     solution_overview: `Five independent rational-difference claims. Clearing $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$ cancels $x^{2}$ and recovers $x = -5$.`,
+  },,
+
+  {
+    id: `math-4-79`,
+    case_id: `MATH 4.79`,
+    title: `A nested wage, two printers, and a copper mix`,
+    subsection: `4.1`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A number plus $5$, all divided by $3$, equals $2$ less than half the number. A student concludes that the unique real number with this property is $12$.`,
+      `The equation $\\dfrac{x - 1}{4} - \\dfrac{2x + 3}{6} = \\dfrac{1}{3}$ is cleared by multiplying through by $12$. A candidate reports that the unique real solution is $x = 5$.`,
+      `Printer $A$ finishes a job in $6$ hours and printer $B$ in $8$ hours. They work together for $2$ hours, then $A$ stops. A clerk reports that $B$ alone then needs $3$ more hours.`,
+      `Towns $X$ and $Y$ are $180$ km apart. At noon a car leaves $X$ toward $Y$ at $60$ km/h. At $12{:}30$ a second car leaves $Y$ toward $X$ at $90$ km/h. They meet at $1{:}30$ pm.`,
+      `Twenty kilograms of $30\\%$ copper are mixed with some kilograms of $70\\%$ copper to make a $50\\%$ alloy. A chemist reports that $20$ kg of the richer alloy must be added.`,
+    ],
+    answer_key: [false, false, false, true, true],
+    tactical_explanations: [
+      `**A.** → False
+
+Translate the sentence, then clear the denominators. Let $x$ be the unknown number.
+
+$$\\frac{x + 5}{3} = \\frac{x}{2} - 2$$
+
+Multiply through by $6$:
+
+$$2(x + 5) = 3x - 12$$
+
+$$2x + 10 = 3x - 12$$
+
+$$22 = x$$
+
+The unique real number is $22$, not $12$. Substituting the claimed $12$ on the left:
+
+$$\\frac{12 + 5}{3} = \\frac{17}{3}$$
+
+and on the right:
+
+$$\\frac{12}{2} - 2 = 4$$
+
+Those sides do not match, so the statement is False.`,
+      `**B.** → False
+
+The least common multiple of $4$, $6$, and $3$ is $12$. Multiply through by $12$:
+
+$$3(x - 1) - 2(2x + 3) = 4$$
+
+$$3x - 3 - 4x - 6 = 4$$
+
+$$-x - 9 = 4$$
+
+$$x = -13$$
+
+The unique real solution is $-13$, not $5$. Substituting $x = 5$:
+
+$$\\frac{4}{4} - \\frac{13}{6} = 1 - \\frac{13}{6} = -\\frac{7}{6}$$
+
+which is not $\\frac{1}{3}$, so the statement is False.`,
+      `**C.** → False
+
+Work rates add. Printer $A$ does $\\frac{1}{6}$ of the job per hour and $B$ does $\\frac{1}{8}$:
+
+$$\\frac{1}{6} + \\frac{1}{8} = \\frac{7}{24}$$
+
+Two hours together finish $\\frac{14}{24} = \\frac{7}{12}$ of the job, so $\\frac{5}{12}$ remains. Printer $B$ alone does $\\frac{1}{8}$ per hour, so the remaining time is
+
+$$t = \\frac{5/12}{1/8} = \\frac{10}{3}$$
+
+hours, which is $3$ hours $20$ minutes, not $3$ hours. The clerk understates the leftover, so the statement is False.`,
+      `**D.** → True
+
+Time on the road is distance over speed. From noon to $12{:}30$ the first car covers
+
+$$60 \\cdot \\frac{1}{2} = 30$$
+
+kilometres, so $150$ km remains. The cars close at $60 + 90 = 150$ km/h, so they need
+
+$$t = \\frac{150}{150} = 1$$
+
+hour after $12{:}30$, which is $1{:}30$ pm. The recovered meeting time matches the claim, so the statement is True.`,
+      `**E.** → True
+
+Pure copper is conserved. Twenty kilograms of $30\\%$ hold $6$ kg of copper. Let $x$ be the kilograms of $70\\%$ alloy:
+
+$$6 + 0.7x = 0.5(20 + x)$$
+
+$$6 + 0.7x = 10 + 0.5x$$
+
+$$0.2x = 4$$
+
+$$x = 20$$
+
+That $20$ kg of the richer alloy produces $12$ kg of copper in $40$ kg of mix, which is $50\\%$. The chemist's figure matches, so the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 79,
+    solution_overview: `Five independent hard linear claims. Clear nested fractions by the least common denominator, add work rates as fractions of a job, split a delayed oncoming meeting into a head-start plus a closing speed, and conserve solute in an alloy mix.`,
+  },
+  {
+    id: `math-4-80`,
+    case_id: `MATH 4.80`,
+    title: `A platform, an age relation, and a fractional proportion`,
+    subsection: `4.1`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A train $240$ m long passes a $360$ m platform in $30$ seconds. A guard reports that the train's speed is $72$ km/h.`,
+      `A father is $30$ years older than his son. In $6$ years the father will be twice as old as the son will be then. The son is now $18$ years old.`,
+      `The sum of three consecutive integers is $96$. The middle one is $32$.`,
+      `The proportion $\\dfrac{2x - 1}{5} = \\dfrac{x + 3}{4}$ is cross-multiplied. A candidate reports that the unique real solution is $x = 11$.`,
+      `A tank is $\\dfrac{3}{5}$ full after $18$ minutes at a constant fill rate. The operator concludes that the tank is full after $30$ minutes.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Passing a platform means covering the train's own length plus the platform:
+
+$$240 + 360 = 600$$
+
+metres in $30$ seconds, so the speed is
+
+$$\\frac{600}{30} = 20$$
+
+metres per second. Convert to kilometres per hour by the factor $3.6$:
+
+$$20 \\cdot 3.6 = 72$$
+
+The recovered speed is $72$ km/h, matching the guard's report, so the statement is True.`,
+      `**B.** → False
+
+Let the son's present age be $s$ years. The father is $s + 30$ now. In six years the father is twice the son:
+
+$$s + 36 = 2(s + 6)$$
+
+$$s + 36 = 2s + 12$$
+
+$$s = 24$$
+
+The son is now $24$, not $18$. Eighteen would make them $18$ and $48$ now, and in six years $24$ and $54$, but $54 \\neq 2 \\cdot 24$. The statement is False.`,
+      `**C.** → True
+
+Consecutive integers differ by $1$. Let the middle one be $n$:
+
+$$(n - 1) + n + (n + 1) = 96$$
+
+$$3n = 96$$
+
+$$n = 32$$
+
+Check: $31 + 32 + 33 = 96$. The middle integer is $32$, so the statement is True.`,
+      `**D.** → False
+
+Cross-multiply:
+
+$$4(2x - 1) = 5(x + 3)$$
+
+$$8x - 4 = 5x + 15$$
+
+$$3x = 19$$
+
+$$x = \\frac{19}{3}$$
+
+The unique real solution is $\\frac{19}{3}$, not $11$. Substituting $x = 11$ on the left:
+
+$$\\frac{2 \\cdot 11 - 1}{5} = \\frac{21}{5}$$
+
+and on the right:
+
+$$\\frac{11 + 3}{4} = \\frac{14}{4} = \\frac{7}{2}$$
+
+The two sides disagree, so the statement is False.`,
+      `**E.** → True
+
+Eighteen minutes are $\\frac{3}{5}$ of the full fill time $T$:
+
+$$\\frac{3}{5}T = 18$$
+
+$$T = 18 \\cdot \\frac{5}{3}$$
+
+$$T = 30$$
+
+The tank is full after $30$ minutes, matching the operator, so the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 80,
+    solution_overview: `Five independent linear stories: a train covering its own length plus a platform, an age doubling, consecutive integers, a two-denominator proportion, and a tank filled to a named fraction of its capacity.`,
+  },
+  {
+    id: `math-4-81`,
+    case_id: `MATH 4.81`,
+    title: `Identities, contradictions, and a wage in fourths`,
+    subsection: `4.1`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The equation $3(x - 2) - 2(x + 4) = x - 20$ is expanded and solved. A student reports that the unique real solution is $x = 2$.`,
+      `Expanding $4(2x + 1) = 5(x - 3) + 7x$ and collecting like terms produces the unique real solution $x = -4$.`,
+      `Half a wage plus one-third of the same wage, minus $8$ EUR, equals one-quarter of the wage. A payroll clerk reports that the wage is $96$ EUR.`,
+      `Clearing $\\dfrac{2(x + 5)}{3} - \\dfrac{x - 1}{6} = 4$ by multiplying through by $6$ is said to give $x = 7$.`,
+      `The equation $3(x + 2) - x = 2(x + 3)$ simplifies to an identity, so it is true for every real number $x$.`,
+    ],
+    answer_key: [false, false, false, false, true],
+    tactical_explanations: [
+      `**A.** → False
+
+Expand, then gather unknown terms on one side:
+
+$$3x - 6 - 2x - 8 = x - 20$$
+
+$$x - 14 = x - 20$$
+
+Subtract $x$ from both sides:
+
+$$-14 = -20$$
+
+which is never true. There is no real solution, including $x = 2$. Substituting $x = 2$ gives $-12$ on the left and $-18$ on the right. The statement is False.`,
+      `**B.** → False
+
+Expand both sides:
+
+$$8x + 4 = 5x - 15 + 7x$$
+
+$$8x + 4 = 12x - 15$$
+
+$$19 = 4x$$
+
+$$x = \\frac{19}{4}$$
+
+The unique real solution is $\\frac{19}{4}$, not $-4$. Substituting $x = -4$ on the left:
+
+$$4(2 \\cdot (-4) + 1) = 4(-7) = -28$$
+
+and on the right:
+
+$$5(-4 - 3) + 7(-4) = -35 - 28 = -63$$
+
+The sides disagree, so the statement is False.`,
+      `**C.** → False
+
+Let the wage be $x$ EUR.
+
+$$\\frac{x}{2} + \\frac{x}{3} - 8 = \\frac{x}{4}$$
+
+Multiply through by $12$:
+
+$$6x + 4x - 96 = 3x$$
+
+$$10x - 96 = 3x$$
+
+$$7x = 96$$
+
+$$x = \\frac{96}{7}$$
+
+The wage is $\\frac{96}{7}$ EUR, not $96$ EUR. Ninety-six would require the clerk to drop the coefficient $7$. The statement is False.`,
+      `**D.** → False
+
+Multiply through by $6$:
+
+$$4(x + 5) - (x - 1) = 24$$
+
+$$4x + 20 - x + 1 = 24$$
+
+$$3x + 21 = 24$$
+
+$$3x = 3$$
+
+$$x = 1$$
+
+The unique real solution is $1$, not $7$. Check of $x = 1$: $\\frac{12}{3} - 0 = 4$. The claimed $7$ overshoots. The statement is False.`,
+      `**E.** → True
+
+Expand both sides:
+
+$$3x + 6 - x = 2x + 6$$
+
+$$2x + 6 = 2x + 6$$
+
+The two sides are identical for every real $x$, so the equation is an identity. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 81,
+    solution_overview: `Five independent linear equations with brackets or several denominators. Expand, collect like terms, and decide whether the result is one number, every $x$, or a contradiction.`,
+  },
+  {
+    id: `math-4-82`,
+    case_id: `MATH 4.82`,
+    title: `A current, successive discounts, and a three-way prize`,
+    subsection: `4.1`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A boat goes $24$ km downstream in $2$ hours and returns the same $24$ km upstream in $4$ hours. The boat's speed in still water is $9$ km/h.`,
+      `A cyclist rides $30$ km to town at $15$ km/h and back at $10$ km/h. The round trip takes $4$ hours.`,
+      `A listed price is first reduced by $20\\%$ and then by a further $10\\%$. The final price is $70\\%$ of the original listed price.`,
+      `An $8\\%$ vinegar and a $2\\%$ vinegar are mixed to make $12$ litres of $5\\%$ vinegar. Then $6$ litres of the $8\\%$ vinegar were used.`,
+      `A prize of $10000$ EUR is split so that second place gets $75\\%$ of first place and third place gets $75\\%$ of second place. Then second place is $3000$ EUR.`,
+    ],
+    answer_key: [true, false, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Downstream speed is $24/2 = 12$ km/h. Upstream speed is $24/4 = 6$ km/h. Still-water speed is the average of those two, because the current cancels:
+
+$$\\frac{12 + 6}{2} = 9$$
+
+The recovered still-water speed is $9$ km/h, matching the claim, so the statement is True.`,
+      `**B.** → False
+
+Add the two legs separately. Do not average the speeds.
+
+$$t = \\frac{30}{15} + \\frac{30}{10}$$
+
+$$t = 2 + 3 = 5$$
+
+hours, not $4$. Averaging $15$ and $10$ to $12.5$ and then taking $60/12.5$ is the trap. The statement is False.`,
+      `**C.** → False
+
+Successive percentage changes multiply:
+
+$$0.80 \\cdot 0.90 = 0.72$$
+
+The final price is $72\\%$ of the list, not $70\\%$. Subtracting $20 + 10$ treats the second cut as if it still applied to the original list. The statement is False.`,
+      `**D.** → True
+
+Let $a$ litres be the $8\\%$ vinegar. Then $12 - a$ litres are $2\\%$, and the mix holds $5\\%$ of $12$ litres, which is $0.6$ litres of pure vinegar:
+
+$$0.08a + 0.02(12 - a) = 0.6$$
+
+$$0.08a + 0.24 - 0.02a = 0.6$$
+
+$$0.06a = 0.36$$
+
+$$a = 6$$
+
+Six litres of the stronger vinegar and six litres of the weaker vinegar recover $5\\%$. The statement is True.`,
+      `**E.** → False
+
+Let first place be $a$ EUR. Then second is $0.75a$ and third is $0.75 \\cdot 0.75a = 0.5625a$:
+
+$$a + 0.75a + 0.5625a = 10000$$
+
+$$2.3125a = 10000$$
+
+$$a = \\frac{10000}{2.3125} = \\frac{160000}{37}$$
+
+Second place is
+
+$$0.75 \\cdot \\frac{160000}{37} = \\frac{120000}{37}$$
+
+which is a little more than $3243$ EUR, not $3000$. The claimed $3000$ would force first place $4000$ and a total $4000 + 3000 + 2250 = 9250$, short of $10000$. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 82,
+    solution_overview: `Five independent applied linear claims. Still water is the average of downstream and upstream; a two-speed round trip adds the two times; successive discounts multiply; an alloy conserves solute; a geometric prize split uses $1 + r + r^{2}$.`,
+  },
+  {
+    id: `math-4-83`,
+    case_id: `MATH 4.83`,
+    title: `A leaky tank, a nested fraction, and a missing mean`,
+    subsection: `4.1`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Pipe $A$ fills a tank in $12$ hours, pipe $B$ fills it in $18$ hours, and a leak empties it in $36$ hours. With both pipes open and the leak running, the tank is full in $9$ hours.`,
+      `Pipes $A$ and $B$ run together for $3$ hours with no leak. Then the leak opens while both pipes stay on. A student reports that $6$ more hours finish the tank.`,
+      `If you subtract $4$ from a number and divide by $3$, you get $5$ less than one-quarter of the number. A student concludes that the number is $20$.`,
+      `The equation $5(x + 2) - 3(2x - 1) = x + 16$ has unique real solution $x = 3$.`,
+      `The mean of four numbers is $18$. Three of them are $12$, $20$, and $15$. The fourth is $25$.`,
+    ],
+    answer_key: [true, false, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Rates add, and the leak subtracts. Per hour the net fill is
+
+$$\\frac{1}{12} + \\frac{1}{18} - \\frac{1}{36}$$
+
+$$= \\frac{3}{36} + \\frac{2}{36} - \\frac{1}{36} = \\frac{4}{36} = \\frac{1}{9}$$
+
+of the tank, so the tank fills in $9$ hours. The claim matches that net rate, so the statement is True.`,
+      `**B.** → False
+
+Without the leak, $A$ and $B$ together do $\\frac{5}{36}$ of the tank per hour. Three hours finish
+
+$$3 \\cdot \\frac{5}{36} = \\frac{5}{12}$$
+
+so $\\frac{7}{12}$ remains. With the leak the net rate is $\\frac{1}{9}$ per hour, as in A. The remaining time is
+
+$$t = \\frac{7/12}{1/9} = \\frac{21}{4}$$
+
+hours, which is $5$ hours $15$ minutes, not $6$ hours. The statement is False.`,
+      `**C.** → False
+
+Let $x$ be the number.
+
+$$\\frac{x - 4}{3} = \\frac{x}{4} - 5$$
+
+Multiply through by $12$:
+
+$$4(x - 4) = 3x - 60$$
+
+$$4x - 16 = 3x - 60$$
+
+$$x = -44$$
+
+The number is $-44$, not $20$. Twenty would give $\\frac{16}{3}$ on the left and $0$ on the right. The statement is False.`,
+      `**D.** → False
+
+Expand and collect:
+
+$$5x + 10 - 6x + 3 = x + 16$$
+
+$$-x + 13 = x + 16$$
+
+$$-3 = 2x$$
+
+$$x = -\\frac{3}{2}$$
+
+The unique real solution is $-\\frac{3}{2}$, not $3$. Substituting $x = 3$ gives $14$ on the left and $19$ on the right. The statement is False.`,
+      `**E.** → True
+
+Four numbers with mean $18$ add to $72$:
+
+$$12 + 20 + 15 + x = 72$$
+
+$$47 + x = 72$$
+
+$$x = 25$$
+
+The fourth number is $25$, matching the claim, so the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 83,
+    solution_overview: `Five independent linear claims. A fill-and-leak net rate is a signed sum of reciprocals of times; a leftover fraction is finished at that net rate; nested fractions clear by the LCD; a missing value is recovered from a mean.`,
+  },
+  {
+    id: `math-4-84`,
+    case_id: `MATH 4.84`,
+    title: `A $8$ by $12$ rectangle, a negative discriminant, and a product $12$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A rectangle has perimeter $40$ cm and area $96$ cm$^{2}$. The sides are $8$ cm and $12$ cm.`,
+      `That $8$ cm by $12$ cm rectangle is a square.`,
+      `The equation $x^{2} - 6x + 10 = 0$ has two distinct real roots.`,
+      `The equation $(x - 3)(x - 7) = 12$ has roots $1$ and $9$.`,
+      `Two numbers add to $13$ and multiply to $36$. They are $5$ and $8$.`,
+    ],
+    answer_key: [true, false, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Half the perimeter is $20$ cm, so the sides add to $20$ and multiply to $96$. They are the roots of
+
+$$t^{2} - 20t + 96 = 0$$
+
+$$(t - 8)(t - 12) = 0$$
+
+The sides are $8$ cm and $12$ cm. Check: $2(8 + 12) = 40$ and $8 \\cdot 12 = 96$. The statement is True.`,
+      `**B.** → False
+
+A square would need equal sides. Here $8 \\neq 12$. The statement is False.`,
+      `**C.** → False
+
+The discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$:
+
+$$\\Delta = (-6)^{2} - 4 \\cdot 1 \\cdot 10 = 36 - 40 = -4$$
+
+A negative discriminant means no real roots. Completing the square gives $(x - 3)^{2} + 1 = 0$, a square plus one, which cannot be zero. The statement is False.`,
+      `**D.** → True
+
+Move $12$ to the left, then expand:
+
+$$(x - 3)(x - 7) - 12 = 0$$
+
+$$x^{2} - 10x + 21 - 12 = 0$$
+
+$$x^{2} - 10x + 9 = 0$$
+
+$$(x - 1)(x - 9) = 0$$
+
+The roots are $1$ and $9$. Check: $(-2)(-6) = 12$ and $6 \\cdot 2 = 12$. The statement is True.`,
+      `**E.** → False
+
+Five and eight add to $13$, but $5 \\cdot 8 = 40$, not $36$. The pair with sum $13$ and product $36$ is $4$ and $9$, the roots of $t^{2} - 13t + 36 = 0$. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 84,
+    solution_overview: `Five independent quadratic claims. Sides from perimeter and area are the roots of $t^{2} - (\\text{sum})t + (\\text{product}) = 0$. A negative discriminant means no real roots. Expanding $(x - 3)(x - 7) = 12$ is not the same as setting each factor to $12$.`,
+  },
+  {
+    id: `math-4-85`,
+    case_id: `MATH 4.85`,
+    title: `A $5$-$12$-$13$ ladder, a vertex, and a biquadratic`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A $13$ m ladder leans against a wall with its foot $5$ m from the base. Then it reaches $12$ m up the wall.`,
+      `A stone thrown upward has height $h = 20t - 5t^{2}$ metres after $t$ seconds. The height is greatest at $t = 3$ seconds.`,
+      `Two consecutive even positive integers multiply to $80$. The smaller of the two is $8$.`,
+      `Completing the square in $x^{2} + 6x - 7 = 0$ produces a positive root $2$.`,
+      `The equation $x^{4} - 10x^{2} + 9 = 0$ has four distinct real roots.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Pythagoras on the right triangle formed by wall, ground, and ladder:
+
+$$h^{2} + 5^{2} = 13^{2}$$
+
+$$h^{2} + 25 = 169$$
+
+$$h^{2} = 144$$
+
+$$h = 12$$
+
+taking the positive length. Check: $5^{2} + 12^{2} = 25 + 144 = 169$. The statement is True.`,
+      `**B.** → False
+
+A quadratic $h = at^{2} + bt + c$ with $a < 0$ peaks at $t = -\\frac{b}{2a}$:
+
+$$t = -\\frac{20}{2(-5)} = 2$$
+
+The vertex is at $2$ seconds, not $3$. At $t = 3$:
+
+$$h = 20 \\cdot 3 - 5 \\cdot 9 = 15$$
+
+while the maximum is $h(2) = 20$. The statement is False.`,
+      `**C.** → True
+
+Consecutive even integers differ by $2$. Let the smaller be $n$:
+
+$$n(n + 2) = 80$$
+
+$$n^{2} + 2n - 80 = 0$$
+
+$$(n + 10)(n - 8) = 0$$
+
+The positive smaller integer is $8$, and $8 \\cdot 10 = 80$. The statement is True.`,
+      `**D.** → False
+
+Half of $6$ is $3$. Completing the square:
+
+$$(x + 3)^{2} - 9 - 7 = 0$$
+
+$$(x + 3)^{2} = 16$$
+
+$$x + 3 = \\pm 4$$
+
+so $x = 1$ or $x = -7$. The positive root is $1$, not $2$. Substituting $x = 2$ gives $4 + 12 - 7 = 9$, not $0$. The statement is False.`,
+      `**E.** → True
+
+Put $u = x^{2}$. Then
+
+$$u^{2} - 10u + 9 = 0$$
+
+$$(u - 9)(u - 1) = 0$$
+
+so $x^{2} = 9$ or $x^{2} = 1$. The four real roots are $\\pm 3$ and $\\pm 1$, all distinct. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 85,
+    solution_overview: `Five independent quadratic claims. A $5$-$12$-$13$ ladder, a projectile vertex $t = -b/(2a)$, consecutive even integers $n(n + 2)$, completing the square, and a biquadratic in $u = x^{2}$.`,
+  },
+  {
+    id: `math-4-86`,
+    case_id: `MATH 4.86`,
+    title: `Together in $6$ hours with a $5$ hour gap, and $x + 6/x$`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Two workers finish a job together in $6$ hours. One of them, working alone, is $5$ hours slower than the other. Then the faster worker alone takes $10$ hours.`,
+      `That slower worker alone takes $15$ hours.`,
+      `The faster of those two workers alone takes $12$ hours.`,
+      `The equation $x + \\dfrac{6}{x} = 5$, with $x \\neq 0$, has the unique real solution $x = 2$.`,
+      `The product of the two real solutions of $x + \\dfrac{6}{x} = 5$ is $6$.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Let the faster time be $t$ hours. Then
+
+$$\\frac{1}{t} + \\frac{1}{t + 5} = \\frac{1}{6}$$
+
+$$\\frac{2t + 5}{t(t + 5)} = \\frac{1}{6}$$
+
+$$6(2t + 5) = t^{2} + 5t$$
+
+$$t^{2} - 7t - 30 = 0$$
+
+$$(t - 10)(t + 3) = 0$$
+
+The positive time is $t = 10$. Check: $\\frac{1}{10} + \\frac{1}{15} = \\frac{1}{6}$. The statement is True.`,
+      `**B.** → True
+
+The slower worker is $5$ hours behind the recovered $10$, so $15$ hours. The check in A already uses $\\frac{1}{15}$. The statement is True.`,
+      `**C.** → False
+
+Twelve hours for the faster worker would force $17$ for the slower, and
+
+$$\\frac{1}{12} + \\frac{1}{17} = \\frac{29}{204} \\neq \\frac{1}{6}$$
+
+The recovered faster time is $10$ hours. The statement is False.`,
+      `**D.** → False
+
+Multiply through by $x$:
+
+$$x^{2} + 6 = 5x$$
+
+$$x^{2} - 5x + 6 = 0$$
+
+$$(x - 2)(x - 3) = 0$$
+
+Both $2$ and $3$ work. The claim that $2$ is the unique real solution is false. The statement is False.`,
+      `**E.** → True
+
+Vieta on $x^{2} - 5x + 6 = 0$ gives product $6$. Check: $2 \\cdot 3 = 6$. The statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 86,
+    solution_overview: `Five independent quadratic claims. Together in $6$ hours with a $5$ hour gap recovers times $10$ and $15$. Clearing $x + 6/x = 5$ produces $x^{2} - 5x + 6 = 0$.`,
+  },
+  {
+    id: `math-4-87`,
+    case_id: `MATH 4.87`,
+    title: `A $3$ cm frame around $18$ by $12$, and a $9$-$12$-$15$ triangle`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `An $18$ cm by $12$ cm picture is surrounded by a uniform frame. The outer area is twice the picture. Then the frame is $4$ cm wide.`,
+      `That picture with a $3$ cm frame all round has outer rectangle $24$ cm by $18$ cm.`,
+      `The wood in a $3$ cm frame around an $18$ cm by $12$ cm picture has area $200$ cm$^{2}$.`,
+      `A right triangle has legs $x$ cm and $x + 3$ cm and hypotenuse $15$ cm. The shorter leg is $8$ cm.`,
+      `A right triangle with legs $9$ cm and $12$ cm has area $54$ cm$^{2}$.`,
+    ],
+    answer_key: [false, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → False
+
+The picture has area $216$ cm$^{2}$, so twice that is $432$. Let the frame width be $x$ cm:
+
+$$(18 + 2x)(12 + 2x) = 432$$
+
+$$4x^{2} + 60x + 216 = 432$$
+
+$$x^{2} + 15x - 54 = 0$$
+
+$$\\Delta = 225 + 216 = 441 = 21^{2}$$
+
+$$x = \\frac{-15 + 21}{2} = 3$$
+
+The positive width is $3$ cm, not $4$. A $4$ cm frame would make the outer rectangle $26$ by $20$, area $520$, not $432$. The statement is False.`,
+      `**B.** → True
+
+A $3$ cm frame adds $6$ cm in each direction:
+
+$$18 + 6 = 24$$
+
+$$12 + 6 = 18$$
+
+The outer rectangle is $24$ cm by $18$ cm, and $24 \\cdot 18 = 432$. The statement is True.`,
+      `**C.** → False
+
+Wood is outer area minus picture:
+
+$$432 - 216 = 216$$
+
+cm$^{2}$, not $200$. The statement is False.`,
+      `**D.** → False
+
+Pythagoras:
+
+$$x^{2} + (x + 3)^{2} = 225$$
+
+$$2x^{2} + 6x + 9 = 225$$
+
+$$2x^{2} + 6x - 216 = 0$$
+
+$$x^{2} + 3x - 108 = 0$$
+
+$$\\Delta = 9 + 432 = 441 = 21^{2}$$
+
+$$x = \\frac{-3 + 21}{2} = 9$$
+
+The shorter leg is $9$ cm, not $8$. The sides are $9$, $12$, and $15$, a $3$-$4$-$5$ triple scaled by $3$. The statement is False.`,
+      `**E.** → True
+
+Area is half the product of the legs:
+
+$$\\frac{1}{2} \\cdot 9 \\cdot 12 = 54$$
+
+The claim is $54$ cm$^{2}$, so the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 87,
+    solution_overview: `Five independent quadratic geometry claims. A uniform frame around $18$ by $12$ with outer area twice the picture recovers width $3$ cm. Legs $x$ and $x + 3$ with hypotenuse $15$ recover a $9$-$12$-$15$ triangle.`,
+  },
+  {
+    id: `math-4-88`,
+    case_id: `MATH 4.88`,
+    title: `Vieta on $x^{2} - 11x + 24$, including the sum of squares`,
+    subsection: `4.2`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A practice paper asks for the roots of $x^{2} - 11x + 24 = 0$. A candidate reports that they are $3$ and $8$.`,
+      `Vieta's product rule is applied to that same quadratic. A student concludes that the product of the two roots is $24$.`,
+      `A clerk then claims that both roots of $x^{2} - 11x + 24 = 0$ are greater than $5$.`,
+      `The same clerk reports that the sum of the squares of those two roots is $73$.`,
+      `A final note on the paper says the larger root of $x^{2} - 11x + 24 = 0$ is $9$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Factor the monic quadratic:
+
+$$x^{2} - 11x + 24 = (x - 3)(x - 8)$$
+
+The roots are $3$ and $8$. Check: $3 + 8 = 11$ and $3 \\cdot 8 = 24$. The statement is True.`,
+      `**B.** → True
+
+The constant term of a monic quadratic is the product of the roots. That product is $24$. The statement is True.`,
+      `**C.** → False
+
+Eight is greater than $5$, but $3$ is not. Both roots greater than $5$ would need a different pair, such as $6$ and $5$ with the wrong product. The statement is False.`,
+      `**D.** → True
+
+The sum of squares from Vieta is $(\\text{sum})^{2} - 2(\\text{product})$:
+
+$$3^{2} + 8^{2} = 9 + 64 = 73$$
+
+or $11^{2} - 2 \\cdot 24 = 121 - 48 = 73$. The statement is True.`,
+      `**E.** → False
+
+The larger root is $8$, not $9$. Nine would belong to $x^{2} - 12x + 27 = 0$. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 88,
+    solution_overview: `Five independent Vieta claims for $x^{2} - 11x + 24 = 0$. The roots are $3$ and $8$. The sum of squares is $(\\text{sum})^{2} - 2(\\text{product})$.`,
+  },
+  {
+    id: `math-4-89`,
+    case_id: `MATH 4.89`,
+    title: `A proportion that never holds, extras after squaring, and two abs-value roots`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Cross-multiplying $\\dfrac{x + 1}{x - 2} = \\dfrac{x - 1}{x - 4}$ produces the unique real solution $x = 3$.`,
+      `Both $x = 0$ and $x = 4$ solve $\\sqrt{2x + 1} = x - 1$, because squaring produces $x(x - 4) = 0$.`,
+      `The equation $\\lvert 2x - 3 \\rvert = x + 3$ has only one real solution, because equal distance can occur on just one side.`,
+      `Because a principal square root cannot equal a negative number, $\\sqrt{x - 1} = 2 - x$ has exactly one real solution, namely the candidate that already lies in $[1, 2]$.`,
+      `The difference of two reciprocals $\\dfrac{1}{x - 1} - \\dfrac{1}{x + 1}$ equals $\\dfrac{1}{4}$. After excluding $\\pm 1$, both $3$ and $-3$ survive.`,
+    ],
+    answer_key: [false, false, false, true, true],
+    tactical_explanations: [
+      `**A.** → False
+
+Exclude the holes $x = 2$ and $x = 4$, then cross-multiply:
+
+$$(x + 1)(x - 4) = (x - 1)(x - 2)$$
+
+$$x^{2} - 3x - 4 = x^{2} - 3x + 2$$
+
+$$-4 = 2$$
+
+which is never true. There is no real solution, including $x = 3$. At $x = 3$ the two sides are $4$ and $-2$. The statement is False.`,
+      `**B.** → False
+
+A principal square root is nonnegative, so $x - 1 \\ge 0$ and $x \\ge 1$. Squaring is then valid:
+
+$$2x + 1 = (x - 1)^{2}$$
+
+$$2x + 1 = x^{2} - 2x + 1$$
+
+$$0 = x^{2} - 4x$$
+
+$$x(x - 4) = 0$$
+
+The candidates are $0$ and $4$. Zero fails the condition $x \\ge 1$, and $\\sqrt{1} = 1 \\neq -1$. Only $x = 4$ survives: $\\sqrt{9} = 3$. The statement is False.`,
+      `**C.** → False
+
+Need $x + 3 \\ge 0$, so $x \\ge -3$. Then split into two cases.
+
+First case:
+
+$$2x - 3 = x + 3$$
+
+$$x = 6$$
+
+Second case:
+
+$$2x - 3 = -(x + 3)$$
+
+$$3x = 0$$
+
+$$x = 0$$
+
+Both $6$ and $0$ are at least $-3$, and both check: $\\lvert 12 - 3 \\rvert = 9$ and $\\lvert 0 - 3 \\rvert = 3$. Two real solutions, not one. The statement is False.`,
+      `**D.** → True
+
+Domain: $x \\ge 1$ and $2 - x \\ge 0$, so $1 \\le x \\le 2$. Squaring gives
+
+$$x - 1 = (2 - x)^{2}$$
+
+$$x^{2} - 5x + 5 = 0$$
+
+$$x = \\frac{5 \\pm \\sqrt{5}}{2}$$
+
+Only $\\frac{5 - \\sqrt{5}}{2} \\approx 1.38$ lies in $[1, 2]$. The larger candidate is extra. Exactly one real solution survives, so the statement is True.`,
+      `**E.** → True
+
+Exclude $x = \\pm 1$. The LCD is $x^{2} - 1$:
+
+$$\\frac{(x + 1) - (x - 1)}{x^{2} - 1} = \\frac{1}{4}$$
+
+$$\\frac{2}{x^{2} - 1} = \\frac{1}{4}$$
+
+$$x^{2} - 1 = 8$$
+
+$$x^{2} = 9$$
+
+$$x = \\pm 3$$
+
+Neither is a hole. Check of $3$: $\\frac{1}{2} - \\frac{1}{4} = \\frac{1}{4}$. Check of $-3$: $-\\frac{1}{4} + \\frac{1}{2} = \\frac{1}{4}$. Both survive, so the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 89,
+    solution_overview: `Five independent hard claims from 4.3. A proportion can collapse to a contradiction after the holes are excluded. Squaring a radical still requires the check $x - 1 \\ge 0$. Absolute value equal to a linear right-hand side needs that side nonnegative, then two cases.`,
+  },
+  {
+    id: `math-4-90`,
+    case_id: `MATH 4.90`,
+    title: `Isolate-and-square a $2$ m gap, and a road with posts at $2$ and $8$`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A surveyor records that the square root of a distance plus $24$ m, minus the square root of the distance itself, equals $2$ m. Then the distance is $16$ m.`,
+      `After isolating and squaring that $2$ m gap with $24$ m extra inside the first root, the recovered distance is $25$ m.`,
+      `The square root of a length plus $8$ m, plus the square root of the length itself, equals $6$ m. Then the length is $9$ m.`,
+      `A depot on a straight road is to be $10$ km from post $2$ plus $10$ km from post $8$. The two possible sites are kilometre $0$ and kilometre $10$.`,
+      `The midpoint kilometre $5$ between those posts also sits $10$ km from post $2$ plus $10$ km from post $8$.`,
+    ],
+    answer_key: [false, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → False
+
+Isolate the first root, requiring the right-hand side to stay nonnegative:
+
+$$\\sqrt{x + 24} = 2 + \\sqrt{x}$$
+
+Square both sides:
+
+$$x + 24 = 4 + 4\\sqrt{x} + x$$
+
+$$20 = 4\\sqrt{x}$$
+
+$$\\sqrt{x} = 5$$
+
+$$x = 25$$
+
+The distance is $25$ m, not $16$. Check of $16$: $\\sqrt{40} - 4 \\approx 2.32$, not $2$. The statement is False.`,
+      `**B.** → True
+
+Isolating and squaring recovers $x = 25$. Substitute back:
+
+$$\\sqrt{49} - \\sqrt{25} = 7 - 5 = 2$$
+
+Both roots are defined. The recovered distance is $25$ m, so the statement is True.`,
+      `**C.** → False
+
+Isolate $\\sqrt{x + 8} = 6 - \\sqrt{x}$, requiring $6 - \\sqrt{x} \\ge 0$. Square:
+
+$$x + 8 = 36 - 12\\sqrt{x} + x$$
+
+$$12\\sqrt{x} = 28$$
+
+$$\\sqrt{x} = \\frac{7}{3}$$
+
+$$x = \\frac{49}{9}$$
+
+The length is $\\frac{49}{9}$ m, not $9$. At $x = 9$: $\\sqrt{17} + 3 \\approx 7.1$, not $6$. The trap $3 + 3 = 6$ pretends both roots equal $\\sqrt{9}$. The statement is False.`,
+      `**D.** → True
+
+Write $s(x) = \\lvert x - 2 \\rvert + \\lvert x - 8 \\rvert$. Between the posts the sum is constantly $6$. Outside, set the sum equal to $10$.
+
+For $x < 2$:
+
+$$2 - x + 8 - x = 10$$
+
+$$10 - 2x = 10$$
+
+$$x = 0$$
+
+For $x > 8$:
+
+$$x - 2 + x - 8 = 10$$
+
+$$2x = 20$$
+
+$$x = 10$$
+
+The two outer sites are kilometre $0$ and kilometre $10$. Check: from $0$ the distances are $2$ and $8$, sum $10$; from $10$ they are $8$ and $2$, sum $10$. The statement is True.`,
+      `**E.** → False
+
+On the interval $[2, 8]$ the sum of distances to the two posts is constantly $6$, never $10$. At kilometre $5$:
+
+$$\\lvert 5 - 2 \\rvert + \\lvert 5 - 8 \\rvert = 3 + 3 = 6$$
+
+Equal distance from the two posts is a different equation. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 90,
+    solution_overview: `Five independent radical and distance claims. Isolating $\\sqrt{x + 24} - \\sqrt{x} = 2$ recovers $x = 25$. The sum $\\lvert x - 2 \\rvert + \\lvert x - 8 \\rvert$ equals $6$ between the posts and equals $10$ only at $x = 0$ and $x = 10$.`,
+  },
+  {
+    id: `math-4-91`,
+    case_id: `MATH 4.91`,
+    title: `A radical extra at $0$, a hole at $2$, and a negative principal root`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The radical equation $\\sqrt{3x + 1} = x - 1$ is solved by $x = 5$, because $\\sqrt{16} = 4$.`,
+      `The same squared equation also has root $x = 0$, and $x = 0$ solves the original radical.`,
+      `The absolute-value equation $\\lvert 3 - 2x \\rvert = x + 1$ is solved only by $x = 4$.`,
+      `The equation $\\sqrt{4 - x} = -2$ has a real solution $x = 0$, because squaring both sides gives $4 - x = 4$.`,
+      `The simplified identity $\\dfrac{x^{2} - 4}{x - 2} = x$ holds at $x = 2$, which is therefore a root.`,
+    ],
+    answer_key: [true, false, false, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Need $3x + 1 \\ge 0$ and $x - 1 \\ge 0$, so $x \\ge 1$. At $x = 5$ both hold, and
+
+$$\\sqrt{15 + 1} = \\sqrt{16} = 4 = 5 - 1$$
+
+The candidate survives in the original, so the statement is True.`,
+      `**B.** → False
+
+Squaring $\\sqrt{3x + 1} = x - 1$ produces $x(x - 5) = 0$, so $x = 0$ is an extra root of the squared form. At $x = 0$ the original right-hand side is $-1$, and a principal square root cannot equal $-1$. Zero is extra, so the statement is False.`,
+      `**C.** → False
+
+Need $x \\ge -1$. Then $3 - 2x = x + 1$ gives $x = \\frac{2}{3}$, and $3 - 2x = -(x + 1)$ gives $x = 4$. Both $\\frac{2}{3}$ and $4$ check in the original. Two solutions, not only $4$. The statement is False.`,
+      `**D.** → False
+
+A principal square root is never negative. Squaring would produce the extra $x = 0$, but $\\sqrt{4} = 2 \\neq -2$. No real solution. The statement is False.`,
+      `**E.** → False
+
+At $x = 2$ the left side is undefined. For $x \\neq 2$ the left side equals $x + 2$, and $x + 2 = x$ never holds. The hole is not a root. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 91,
+    solution_overview: `Five independent 4.3 checks. Squaring $\\sqrt{3x + 1} = x - 1$ introduces $x = 0$ as extra. A negative principal root is empty. Cancelling $x - 2$ in $\\frac{x^{2} - 4}{x - 2}$ leaves a hole, not a root.`,
+  },
+  {
+    id: `math-4-92`,
+    case_id: `MATH 4.92`,
+    title: `A proportion through $x = 11$, equal abs-values, and a radical extra`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The proportion $\\dfrac{3}{x - 2} = \\dfrac{2}{x - 5}$ is undefined at $x = 2$ and at $x = 5$. After those holes are excluded, the unique real solution is $x = 11$.`,
+      `You may cross-multiply that proportion even at $x = 2$, because both sides become infinite in a way that cancels.`,
+      `A depot equally far, in absolute value, from $-2$ and from $\\dfrac{7}{2}$ in the scaled sense $\\lvert x + 2 \\rvert = \\lvert 2x - 7 \\rvert$ sits at $x = 9$ or at $x = \\dfrac{5}{3}$.`,
+      `The equation $\\sqrt{x + 3} = x - 3$ has two real solutions, one for each sign that squaring introduces.`,
+      `Both $x = 1$ and $x = 6$ solve $\\sqrt{x + 3} = x - 3$, because squaring produces $(x - 1)(x - 6) = 0$.`,
+    ],
+    answer_key: [true, false, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Exclude $x = 2$ and $x = 5$, then cross-multiply:
+
+$$3(x - 5) = 2(x - 2)$$
+
+$$3x - 15 = 2x - 4$$
+
+$$x = 11$$
+
+Eleven is neither hole. Check: $\\frac{3}{9} = \\frac{1}{3}$ and $\\frac{2}{6} = \\frac{1}{3}$. The unique real solution is $11$, so the statement is True.`,
+      `**B.** → False
+
+At $x = 2$ the left side is undefined. Cross-multiplying assumes both denominators are nonzero. A hole is never a root. The statement is False.`,
+      `**C.** → True
+
+Equal absolute values split into two cases.
+
+First case:
+
+$$x + 2 = 2x - 7$$
+
+$$x = 9$$
+
+Second case:
+
+$$x + 2 = 7 - 2x$$
+
+$$3x = 5$$
+
+$$x = \\frac{5}{3}$$
+
+Both check: $\\lvert 11 \\rvert = \\lvert 11 \\rvert$ and $\\lvert \\frac{11}{3} \\rvert = \\lvert \\frac{11}{3} \\rvert$. The statement is True.`,
+      `**D.** → False
+
+Need $x \\ge 3$ so that $x - 3 \\ge 0$. Squaring gives $x + 3 = (x - 3)^{2}$, which rearranges to $(x - 1)(x - 6) = 0$. Only $x = 6$ lies in $x \\ge 3$. One real solution, not two. The statement is False.`,
+      `**E.** → False
+
+The candidate $x = 1$ makes the right-hand side $-2$. A principal square root cannot equal $-2$. Only $x = 6$ survives: $\\sqrt{9} = 3$. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 92,
+    solution_overview: `Five independent rational, absolute-value, and radical claims. Cross-multiply only off the holes. Equal abs-values give two cases. Squaring $\\sqrt{x + 3} = x - 3$ drops $x = 1$.`,
+  },
+  {
+    id: `math-4-93`,
+    case_id: `MATH 4.93`,
+    title: `A proportion through $0$, a hole that is not a root, and $\\lvert 3x - 6 \\rvert = 9$`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `After excluding the holes $x = \\pm 1$, the proportion $\\dfrac{x + 2}{x - 1} = \\dfrac{x - 2}{x + 1}$ has unique real solution $x = 0$.`,
+      `The radical equation $\\sqrt{x + 7} = 5$ is solved by $x = -18$.`,
+      `Splitting $\\lvert 3x - 6 \\rvert = 9$ into $3x - 6 = 9$ and $3x - 6 = -9$ produces $x = 5$ and $x = -1$, and both check in the original.`,
+      `The value $x = 1$ cannot be a root of $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$, because it zeros a denominator.`,
+      `When that difference equal to $1$ is cleared by $(x - 1)(x + 1)$, the $x^{2}$ terms do not cancel, so a genuine quadratic remains.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Exclude the holes $x = 1$ and $x = -1$, then cross-multiply:
+
+$$(x + 2)(x + 1) = (x - 2)(x - 1)$$
+
+$$x^{2} + 3x + 2 = x^{2} - 3x + 2$$
+
+Subtract $x^{2} + 2$ from both sides:
+
+$$3x = -3x$$
+
+$$6x = 0$$
+
+$$x = 0$$
+
+Zero is neither hole. Check: $\\frac{2}{-1} = -2$ and $\\frac{-2}{1} = -2$. The unique real solution is $0$, so the statement is True.`,
+      `**B.** → False
+
+The right-hand side $5$ is nonnegative, so squaring is valid:
+
+$$x + 7 = 25$$
+
+$$x = 18$$
+
+Negative eighteen would make $x + 7 = -11$, which cannot equal $25$. Check of $18$: $\\sqrt{25} = 5$. The statement is False.`,
+      `**C.** → True
+
+Absolute value $9$ means the inside is $9$ or $-9$:
+
+$$3x - 6 = 9$$
+
+$$x = 5$$
+
+and
+
+$$3x - 6 = -9$$
+
+$$x = -1$$
+
+Checks: $\\lvert 15 - 6 \\rvert = 9$ and $\\lvert -3 - 6 \\rvert = 9$. Both survive, so the statement is True.`,
+      `**D.** → True
+
+At $x = 1$ the first fraction is undefined. A value that zeros a denominator is never a solution, even if the two sides appear to grow large. The statement is True.`,
+      `**E.** → False
+
+Multiply through by $(x - 1)(x + 1)$:
+
+$$(2x + 1)(x + 1) - (x + 3)(x - 1) = x^{2} - 1$$
+
+The left side expands to $x^{2} + x + 4$, so the $x^{2}$ terms cancel against the right side and a linear equation remains, recovering $x = -5$. The claim that a genuine quadratic remains is false. The statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 93,
+    solution_overview: `Five independent closing 4.3 claims. A proportion with holes at $\\pm 1$ collapses to the unique root $x = 0$. A hole is never a root. Clearing $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$ cancels $x^{2}$ and leaves a linear equation.`,
   },
 ];
