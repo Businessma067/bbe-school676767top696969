@@ -2404,7 +2404,7 @@ When $A$ has run $100$ m, $B$ has run $80$ m. That is the opening handicap of $A
     statements: [
       `If $3$ is taken off a sample and the remainder is split into four equal parts, each part is $2$ ml less than one-third of the original sample. Then the original sample is $15$ ml.`,
       `If $5$ is added to a number and the sum is halved, the result is $3$ less than the original number. Then the number is $12$.`,
-      `Three consecutive integers add to $48$. Then the middle one is $16$.`,
+      `Three consecutive integers add to $48$. The middle integer is even.`,
       `If $1$ is added to a number and the sum is divided by $5$, the result is $3$ less than half the number. Then the number is $12$.`,
       `A tank is $\frac{2}{5}$ full after $12$ minutes at a constant fill rate. The operator concludes that the tank is therefore full after $30$ minutes.`,
     ],
@@ -2452,7 +2452,7 @@ $$3n = 48$$
 
 $$n = 16$$
 
-The middle one is $16$. Check: $15 + 16 + 17 = 48$. The claim is that same middle integer, so the statement is True.`,
+The three consecutive integers are $15$, $16$, and $17$. The middle integer $16$ is even, so the statement is True.`,
       `**D.** → False
 
 Translate the word sentence into a linear equation, then clear the denominators.
@@ -2570,11 +2570,11 @@ The difference is $9$, not $7$. The claimed $7$ would be $5 + 2$, not $25 - 16$,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A product of two factors, one two less than a number and one five less than the same number, is zero. A student reports that the number is $3$ or $5$.`,
+      `A product of two factors, one two less than a number and one five less than the same number, is zero. A student reports that the sum of the two roots is $8$.`,
       `The equation $x^{2} - 7x + 12 = 0$ has two distinct positive integer roots.`,
-      `A number squared, minus nine, is zero. A student reports that the only real solution is $3$.`,
+      `A number squared, minus nine, is zero. A student reports that the equation has no negative real roots.`,
       `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
-      `A number times itself equals five times the number. A student reports that the only real solution is $5$.`,
+      `A number times itself equals five times the number. A student reports that both roots are positive.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
@@ -2594,15 +2594,11 @@ or
 
 $$x - 5 = 0$$
 
-so $x = 2$ or $x = 5$, not $3$ or $5$. The claimed value $x = 3$ gives
+so $x = 2$ or $x = 5$. The sum of the roots is
 
-$$(3 - 2)(3 - 5)$$
+$$2 + 5 = 7$$
 
-$$= (1)(-2)$$
-
-$$= -2$$
-
-which is not zero, so the statement is False.`,
+not $8$. The claim says $8$, so the statement is False.`,
       `**B.** → True
 
 Move everything to one side, factor, and set each factor to zero.
@@ -2622,7 +2618,7 @@ $$x^{2} - 9 = 0$$
 
 $$(x - 3)(x + 3) = 0$$
 
-Then $x = 3$ or $x = -3$. The recovered solutions are $3$ and $-3$, not a single solution $3$. The claim keeps only one root, so the statement is False.`,
+Then $x = 3$ or $x = -3$. The negative root $x = -3$ is a real solution, so the claim of no negative real roots is incorrect. The statement is False.`,
       `**D.** → True
 
 That is the zero-product property: a product of real numbers is zero if and only if at least one factor is zero.
@@ -2640,7 +2636,7 @@ $$x^{2} - 5x = 0$$
 
 $$x(x - 5) = 0$$
 
-Then $x = 0$ or $x = 5$. The recovered solutions are $0$ and $5$. The claim keeps only $5$. The claimed unique value $x = 5$ does satisfy $5^{2} = 5 \\cdot 5$, but it misses $x = 0$, and $0^{2} = 5 \\cdot 0$ as well, so the statement is False.`,
+Then $x = 0$ or $x = 5$. One root is zero, which is not positive. Both roots cannot be positive, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 30,
@@ -2654,7 +2650,7 @@ Then $x = 0$ or $x = 5$. The recovered solutions are $0$ and $5$. The claim keep
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A square has area $81$ m$^{2}$. Then its side is $9$ m, taking the positive length.`,
-      `Two consecutive positive integers multiply to $30$. The smaller of the two is $5$.`,
+      `Two consecutive positive integers multiply to $30$. Their sum is $11$.`,
       `A $6$ cm by $7$ cm rectangle has perimeter $26$ cm.`,
       `A rectangle of width $5$ cm and length $8$ cm has area $35$ cm$^{2}$.`,
       `A square of area $49$ cm$^{2}$ has side $8$ cm.`,
@@ -2686,11 +2682,11 @@ $$n^{2} + n - 30 = 0$$
 
 $$(n + 6)(n - 5) = 0$$
 
-so $n = -6$ or $n = 5$. The smaller positive integer is $5$, and the next is $6$. Check:
+so $n = -6$ or $n = 5$. The smaller positive integer is $5$, and the next is $6$. Their sum is
 
-$$5 \\cdot 6 = 30$$
+$$5 + 6 = 11$$
 
-The claim is that same smaller integer, so the statement is True.`,
+The claim is that same sum, so the statement is True.`,
       `**C.** → True
 
 The perimeter of a rectangle is twice the sum of length and width.
@@ -2732,11 +2728,11 @@ The claim $8$ cm does not match, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A number times itself, minus four times the number, is zero. A student reports that the number is $0$ or $5$.`,
+      `A number times itself, minus four times the number, is zero. A student reports that one root is $5$.`,
       `A number squared, minus four times the number, is zero. Zero itself is not allowed.`,
       `The discriminant of $x^{2} - 4x + 4$ is $4$.`,
       `The equation $x^{2} - 4x + 4 = 0$ has two distinct real roots.`,
-      `A squared difference from $2$ is zero. A student reports that the number is therefore $2$.`,
+      `A squared difference from $2$ is zero. The equation has a repeated root.`,
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
@@ -2750,11 +2746,7 @@ $$x^{2} - 4x = 0$$
 
 $$x(x - 4) = 0$$
 
-Then $x = 0$ or $x = 4$, not $0$ or $5$. The claimed value $x = 5$ gives
-
-$$5^{2} - 4 \\cdot 5 = 5$$
-
-which is not zero. Five would solve $x(x - 5) = 0$, not this equation, so the statement is False.`,
+Then $x = 0$ or $x = 4$. Neither root is $5$. The claimed root $5$ would solve $x(x - 5) = 0$, not this equation, so the statement is False.`,
       `**B.** → False
 
 Zero is an allowed real number, and it must be checked in the factored equation.
@@ -2802,7 +2794,7 @@ $$x - 2 = 0$$
 
 $$x = 2$$
 
-The number is $2$. Check: $(2 - 2)^{2} = 0$. The claim is that same value, so the statement is True.`,
+The root $x = 2$ appears twice, so the equation has a repeated root. The claim matches that count, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 32,
@@ -2817,8 +2809,8 @@ The number is $2$. Check: $(2 - 2)^{2} = 0$. The claim is that same value, so th
     statements: [
       `A monic quadratic is written with middle term matching a sum of $7$ and constant term $10$. A student reports that the roots add to $7$.`,
       `For the monic quadratic $x^{2} - 9x + 20 = 0$, the product of the roots is $20$.`,
-      `Two integers add to $7$ and multiply to $10$. A student names them as $3$ and $4$.`,
-      `The larger root of $x^{2} - 7x + 10 = 0$ is $6$.`,
+      `Two integers add to $7$ and multiply to $10$. Both integers are greater than $2$.`,
+      `The larger root of $x^{2} - 7x + 10 = 0$ exceeds $5$.`,
       `A coach claims that both scores that add to $7$ and multiply to $10$ are greater than $4$.`,
     ],
     answer_key: [true, true, false, false, false],
@@ -2855,20 +2847,12 @@ $$x^{2} - 7x + 10 = 0$$
 
 $$(x - 2)(x - 5) = 0$$
 
-The integers are $2$ and $5$, not $3$ and $4$. The claimed pair $3$ and $4$ adds to $7$ but multiplies to $12$, not $10$:
-
-$$3 \\cdot 4 = 12$$
-
-so the statement is False.`,
+The integers are $2$ and $5$. The smaller is $2$, which is not greater than $2$. Both greater than $2$ would require a different pair, so the statement is False.`,
       `**D.** → False
 
 The roots of $x^{2} - 7x + 10 = 0$ are $2$ and $5$.
 
-The larger root is $5$, not $6$. The claimed $6$ would need
-
-$$6^{2} - 7 \\cdot 6 + 10 = 4$$
-
-which is not zero, so the statement is False.`,
+The larger root is $5$, which does not exceed $5$. The claim requires a root strictly greater than $5$, so the statement is False.`,
       `**E.** → False
 
 The two numbers that add to $7$ and multiply to $10$ are $2$ and $5$.
@@ -2889,7 +2873,7 @@ Then $5 > 4$, but $2$ is not greater than $4$. Both greater than $4$ would requi
       `The quadratic equation $x^{2} - 5x + 6 = 0$ has two distinct positive real roots.`,
       `The discriminant of $x^{2} + 2x + 5 = 0$ is $4$.`,
       `The equation $x^{2} - 4x + 4 = 0$ has exactly one real solution.`,
-      `The quadratic $x^{2} + 3x - 10 = 0$ has negative root $-5$.`,
+      `The quadratic $x^{2} + 3x - 10 = 0$ has a negative root whose absolute value exceeds $4$.`,
       `The equation $x^{2} - 2x - 8 = 0$ has no real solutions.`,
     ],
     answer_key: [true, false, true, true, false],
@@ -2953,11 +2937,11 @@ $$x^{2} + 3x - 10 = 0$$
 
 $$(x + 5)(x - 2) = 0$$
 
-Then $x = -5$ or $x = 2$. The negative root is $-5$. Check:
+Then $x = -5$ or $x = 2$. The negative root is $-5$, and its absolute value is
 
-$$(-5)^{2} + 3(-5) - 10 = 0$$
+$$|-5| = 5$$
 
-The claim is that same root, so the statement is True.`,
+which exceeds $4$. The claim matches that property, so the statement is True.`,
       `**E.** → False
 
 A negative discriminant means no real roots.
@@ -2988,7 +2972,7 @@ so real roots exist. The claim of no real solutions is incorrect, so the stateme
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle is $2$ cm longer than it is wide, and its area is $48$ cm$^{2}$. The longer side is then $8$ cm.`,
-      `Two consecutive positive integers multiply to $42$. The smaller of the two is $6$.`,
+      `Two consecutive positive integers multiply to $42$. Their sum is $13$.`,
       `A $6$ cm by $8$ cm rectangle has perimeter $28$ cm.`,
       `A rectangle of width $6$ cm and length $10$ cm has area $48$ cm$^{2}$.`,
       `A rectangle of area $48$ cm$^{2}$ whose length is $2$ cm more than its width has sides that differ by $2$ cm.`,
@@ -3022,11 +3006,11 @@ $$n^{2} + n - 42 = 0$$
 
 $$(n + 7)(n - 6) = 0$$
 
-so $n = -7$ or $n = 6$. The smaller positive integer is $6$, and the next is $7$. Check:
+so $n = -7$ or $n = 6$. The smaller positive integer is $6$, and the next is $7$. Their sum is
 
-$$6 \\cdot 7 = 42$$
+$$6 + 7 = 13$$
 
-The claim is that same smaller integer, so the statement is True.`,
+The claim is that same sum, so the statement is True.`,
       `**C.** → True
 
 The perimeter of a rectangle is twice the sum of length and width.
@@ -3060,8 +3044,8 @@ That is the opening relation of the $48$ cm$^{2}$ rectangle. The sides differ by
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two consecutive integers multiply to $56$. Solving $n(n + 1) = 56$ for the smaller integer, the smaller positive one is $7$.`,
-      `Two consecutive positive integers multiply to $56$. The larger of that pair is $8$.`,
+      `Two consecutive integers multiply to $56$. The equation $n^{2} + n - 56 = 0$ has two distinct integer roots.`,
+      `Two consecutive positive integers multiply to $56$. Their sum is $15$.`,
       `Two consecutive integers multiply to $56$. Besides the positive pair there is also a negative pair, $-8$ and $-7$.`,
       `The integers $6$ and $9$ multiply to $54$, not $56$, and they are not consecutive.`,
       `Two consecutive positive integers that multiply to $56$ add to $15$.`,
@@ -3080,20 +3064,16 @@ $$n^{2} + n - 56 = 0$$
 
 $$(n + 8)(n - 7) = 0$$
 
-so $n = -8$ or $n = 7$. The smaller positive integer is $7$, and the next is $8$. Check:
-
-$$7 \\cdot 8 = 56$$
-
-The claim is that same smaller integer, so the statement is True.`,
+so $n = -8$ or $n = 7$. The two integer roots are $7$ and $-8$, which are distinct. The claim matches that count, so the statement is True.`,
       `**B.** → True
 
-The larger of a consecutive pair is one more than the smaller.
+The sum of a consecutive pair is twice the smaller plus one.
 
-The smaller positive integer is $7$, so the larger is
+The positive pair is $7$ and $8$, so
 
-$$7 + 1 = 8$$
+$$7 + 8 = 15$$
 
-The larger of that pair is $8$. The claim is that same integer, so the statement is True.`,
+They add to $15$. The claim is that same sum, so the statement is True.`,
       `**C.** → True
 
 The quadratic $n^{2} + n - 56 = 0$ has two integer roots, $7$ and $-8$.
@@ -3131,7 +3111,7 @@ They add to $15$. The claim is that same sum, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle has area $60$ cm$^{2}$, and its length is $7$ cm more than its width. A carpenter concludes that the width is $5$ cm.`,
+      `A rectangle has area $60$ cm$^{2}$, and its length is $7$ cm more than its width. The width is a positive integer less than $6$ cm.`,
       `A rectangle measuring $5$ cm by $11$ cm is claimed to have area $60$ cm$^{2}$.`,
       `A rectangle measuring $5$ cm by $12$ cm is claimed to have perimeter $40$ cm.`,
       `A right triangle has legs $5$ cm and $12$ cm. Pythagoras is then said to give a hypotenuse of $13$ cm.`,
@@ -3167,7 +3147,7 @@ or $w = -12$. A width is positive, so $w = 5$. Check:
 
 $$5 \\cdot 12 = 60$$
 
-The width is $5$ cm. The claim is that same width, so the statement is True.`,
+The width is $5$ cm. That is a positive integer less than $6$ cm, so the statement is True.`,
       `**B.** → False
 
 Area is length times width.
@@ -3226,15 +3206,15 @@ which is not $45$, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The positive root of $(x - 5)(x + 3) = 0$ is $6$.`,
-      `One leg of a right triangle is $1$ cm longer than the other, and the hypotenuse is $5$ cm. Then the shorter leg is $3$ cm.`,
+      `The equation $(x - 5)(x + 3) = 0$ has a positive root and a negative root.`,
+      `One leg of a right triangle is $1$ cm longer than the other, and the hypotenuse is $5$ cm. Both legs are positive integers.`,
       `A triangle with sides $3$ cm, $4$ cm, and $5$ cm is equilateral.`,
       `A right triangle with legs $3$ cm and $4$ cm has area $12$ cm$^{2}$.`,
       `A right triangle with legs $3$ cm and $4$ cm and hypotenuse $5$ cm has longer leg $4$ cm.`,
     ],
-    answer_key: [false, true, false, false, true],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
 Move everything to one side, factor, and set each factor to zero.
 
@@ -3244,11 +3224,7 @@ $$(x - 5)(x + 3) = 0$$
 
 $$x^{2} - 2x - 15 = 0$$
 
-Then $x = 5$ or $x = -3$. The positive root is $5$, not $6$. The claimed value $x = 6$ gives
-
-$$6^{2} - 2 \\cdot 6 - 15 = 9$$
-
-which is not zero, so the statement is False.`,
+Then $x = 5$ or $x = -3$. One root is positive and one is negative, so the statement is True.`,
       `**B.** → True
 
 Pythagoras says that the square of the hypotenuse equals the sum of the squares of the legs.
@@ -3267,15 +3243,7 @@ $$x^{2} + x - 12 = 0$$
 
 $$(x + 4)(x - 3) = 0$$
 
-so $x = -4$ or $x = 3$. A length is positive, so $x = 3$. Check:
-
-$$3^{2} + 4^{2}$$
-
-$$= 9 + 16$$
-
-$$= 25$$
-
-The shorter leg is $3$ cm. The claim is that same length, so the statement is True.`,
+so $x = -4$ or $x = 3$. A length is positive, so $x = 3$ and the legs are $3$ cm and $4$ cm. Both are positive integers, so the statement is True.`,
       `**C.** → False
 
 An equilateral triangle has all three sides equal.
@@ -3408,9 +3376,9 @@ Since $\\Delta < 0$, there are no real solutions. The claim matches that count, 
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $12$ and multiply to $32$. They are $4$ and $8$.`,
+      `Two numbers add to $12$ and multiply to $32$. Both numbers are even.`,
       `Two numbers add to $9$ and multiply to $14$. Their difference is $5$.`,
-      `Two numbers add to $11$ and multiply to $24$. They are $3$ and $8$.`,
+      `Two numbers add to $11$ and multiply to $24$. One number is odd and the other is even.`,
       `Two numbers add to $13$ and multiply to $36$. Both are greater than $6$.`,
       `Two numbers add to $8$ and multiply to $15$. Each of them is negative.`,
     ],
@@ -3426,13 +3394,7 @@ $$t^{2} - 12t + 32 = 0$$
 
 $$(t - 4)(t - 8) = 0$$
 
-The numbers are $4$ and $8$. Check:
-
-$$4 + 8 = 12$$
-
-$$4 \\cdot 8 = 32$$
-
-The claim is that same pair, so the statement is True.`,
+The numbers are $4$ and $8$. Both are even, so the statement is True.`,
       `**B.** → True
 
 Two numbers that add to $9$ and multiply to $14$ are the roots of
@@ -3454,13 +3416,7 @@ $$t^{2} - 11t + 24 = 0$$
 
 $$(t - 3)(t - 8) = 0$$
 
-The numbers are $3$ and $8$. Check:
-
-$$3 + 8 = 11$$
-
-$$3 \\cdot 8 = 24$$
-
-The claim is that same pair, so the statement is True.`,
+The numbers are $3$ and $8$. One is odd and one is even, so the statement is True.`,
       `**D.** → False
 
 Two numbers that add to $13$ and multiply to $36$ are the roots of
@@ -3695,7 +3651,7 @@ So $384$ cm$^{2}$ of wood is exactly what "outer area twice the picture" require
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive integers differ by $7$ and multiply to $198$. They are $11$ and $18$.`,
+      `Two positive integers differ by $7$ and multiply to $198$. Both integers exceed $10$.`,
       `Two negative integers also multiply to $198$ and differ by $7$ in that order from more negative to less: $-18$ and $-11$.`,
       `The positive pair $11$ and $18$ adds to $29$.`,
       `The discriminant of $n^{2} + 7n - 198$ is a perfect square, namely $29^{2}$.`,
@@ -3725,13 +3681,7 @@ $$n = \\frac{22}{2} = 11$$
 
 $$n = \\frac{-36}{2} = -18$$
 
-The positive value is $n = 11$, so the pair is $11$ and $18$. Check:
-
-$$11 \\cdot 18 = 198$$
-
-$$18 - 11 = 7$$
-
-That is the claimed pair, so the statement is True.`,
+The positive pair is $11$ and $18$. Both exceed $10$, so the statement is True.`,
       `**B.** → True
 
 The other integer root was $n = -18$, so the pair in order from more negative to less is $-18$ and $-11$.
@@ -3978,9 +3928,9 @@ The claim says $30$ m. The height is $20$ m, which is the maximum, so the statem
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two ticket prices add to $15$ EUR and multiply to $44$. A clerk reports that the two prices are $4$ EUR and $11$ EUR.`,
+      `Two ticket prices add to $15$ EUR and multiply to $44$ EUR. The larger price exceeds $10$ EUR.`,
       `Two numbers add to $12$ and multiply to $32$. A clerk says they differ by $4$.`,
-      `Two share amounts add to $9$ EUR and multiply to $14$. The treasurer reports that they are $3$ EUR and $6$ EUR.`,
+      `Two share amounts add to $9$ EUR and multiply to $14$ EUR. Both amounts exceed $5$ EUR.`,
       `Two numbers add to $8$ and multiply to $15$. Increasing each by $1$ and multiplying those increased values is claimed to give $24$.`,
       `Two numbers add to $13$ and multiply to $36$. The sum of their squares is then claimed to be $145$.`,
     ],
@@ -4004,7 +3954,7 @@ $$t = \\frac{22}{2} = 11$$
 
 $$t = \\frac{8}{2} = 4$$
 
-The prices are $4$ EUR and $11$ EUR. Check: $4 + 11 = 15$ and $4 \\cdot 11 = 44$. That is the claimed pair, so the statement is True.`,
+The prices are $4$ EUR and $11$ EUR. The larger price $11$ EUR exceeds $10$ EUR, so the statement is True.`,
       `**B.** → True
 
 Numbers that add to $12$ and multiply to $32$ are the roots of
@@ -4020,27 +3970,17 @@ $$8 - 4 = 4$$
 The claimed difference is $4$, so the statement is True.`,
       `**C.** → False
 
-The claimed pair $3$ EUR and $6$ EUR adds to $9$:
-
-$$3 + 6 = 9$$
-
-but the product is
-
-$$3 \\cdot 6 = 18 \\neq 14$$
-
-The actual pair with sum $9$ and product $14$ solves $t^{2} - 9t + 14 = 0$:
+The pair with sum $9$ EUR and product $14$ EUR solves $t^{2} - 9t + 14 = 0$:
 
 $$\\Delta = 81 - 56 = 25 = 5^{2}$$
 
 $$t = \\frac{9 \\pm 5}{2}$$
 
-$$t = 7$$
-
-or
-
 $$t = 2$$
 
-The amounts are $2$ EUR and $7$ EUR, not $3$ and $6$, so the statement is False.`,
+$$t = 7$$
+
+The amounts are $2$ EUR and $7$ EUR. The smaller is $2$ EUR, which does not exceed $5$ EUR. Both amounts cannot exceed $5$ EUR, so the statement is False.`,
       `**D.** → True
 
 Let the two numbers be $x$ and $y$, with $x + y = 8$ and $xy = 15$. Then
@@ -4077,7 +4017,7 @@ The claimed sum of squares is $145$, not $97$. The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `One leg of a right triangle is $7$ cm longer than the other, and the hypotenuse is $13$ cm. Then the shorter leg is $5$ cm.`,
+      `One leg of a right triangle is $7$ cm longer than the other, and the hypotenuse is $13$ cm. The shorter leg is less than $6$ cm.`,
       `A right triangle with legs $9$ cm and $12$ cm has hypotenuse $16$ cm.`,
       `A right triangle with legs $8$ cm and $15$ cm has hypotenuse $17$ cm.`,
       `A right triangle with legs $6$ cm and $8$ cm has perimeter $22$ cm.`,
@@ -4103,9 +4043,7 @@ $$x^{2} + 7x - 60 = 0$$
 
 $$(x + 12)(x - 5) = 0$$
 
-so $x = -12$ or $x = 5$. A length must be positive, so the shorter leg is $5$ cm.
-
-Check: the longer leg is $12$ cm and $5^{2} + 12^{2} = 25 + 144 = 169 = 13^{2}$. The shorter leg is $5$ cm, so the statement is True.`,
+so $x = -12$ or $x = 5$. A length must be positive, so the shorter leg is $5$ cm, which is less than $6$ cm. The statement is True.`,
       `**B.** → False
 
 Pythagoras gives
@@ -4915,9 +4853,9 @@ so there are two distinct real solutions, $3$ and $4$. Both check in the origina
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `All four solutions of $x^{4} - 13x^{2} + 36 = 0$ are integers.`,
-      `The equation $(x - 3)(x - 5) = 8$ has roots $1$ and $7$.`,
+      `The equation $(x - 3)(x - 5) = 8$ has two distinct positive integer roots.`,
       `The equation $x^{2} + x + 1 = 0$ has two different real solutions.`,
-      `Two numbers that add to $9$ and multiply to $14$ are $3$ and $6$.`,
+      `Two numbers that add to $9$ and multiply to $14$ are both greater than $5$.`,
       `The equation $2x^{2} - 3x - 2 = 0$ has two distinct real roots.`,
     ],
     answer_key: [true, true, false, false, true],
@@ -4949,17 +4887,7 @@ $$x^{2} - 8x + 7 = 0$$
 
 $$(x - 1)(x - 7) = 0$$
 
-so $x = 1$ or $x = 7$.
-
-Check $x = 1$:
-
-$$(1 - 3)(1 - 5) = (-2)(-4) = 8$$
-
-Check $x = 7$:
-
-$$(7 - 3)(7 - 5) = 4 \\cdot 2 = 8$$
-
-The roots are $1$ and $7$, so the statement is True.`,
+so $x = 1$ or $x = 7$. Both roots are positive integers and they are distinct, so the statement is True.`,
       `**C.** → False
 
 The discriminant of $x^{2} + x + 1$ is
@@ -4977,19 +4905,11 @@ $$x^{2} + x + 1 = \\left(x + \\frac{1}{2}\\right)^{2} + \\frac{3}{4}$$
 and that quantity is positive for every real $x$. Two different real solutions do not exist, so the statement is False.`,
       `**D.** → False
 
-The claimed pair $3$ and $6$ adds to $9$:
-
-$$3 + 6 = 9$$
-
-but the product is
-
-$$3 \\cdot 6 = 18 \\neq 14$$
-
 The pair with sum $9$ and product $14$ solves $t^{2} - 9t + 14 = 0$:
 
 $$(t - 2)(t - 7) = 0$$
 
-so the numbers are $2$ and $7$. Check: $2 + 7 = 9$ and $2 \\cdot 7 = 14$. The claimed pair $3$ and $6$ does not multiply to $14$, so the statement is False.`,
+so the numbers are $2$ and $7$. Both are not greater than $5$, because $2 \\le 5$. The claim that both exceed $5$ is incorrect, so the statement is False.`,
       `**E.** → True
 
 The discriminant of $2x^{2} - 3x - 2$ is
@@ -7474,7 +7394,7 @@ minutes, that is $14.4$ minutes, not $15$. Fifteen minutes at the new rate would
       `A clerk spends one-sixth of a purse, then one-fifth of the remainder, then one-quarter of what is still left, then one-third of the last remainder, and has $20$ EUR. Then the purse started at $72$ EUR.`,
       `Two litres of $12\\%$ vinegar are diluted with water to $8\\%$ vinegar. Then $1$ litre of water must be added.`,
       `Pipes $A$, $B$, and $C$ finish a job in $6$, $8$, and $24$ hours. $A$ and $B$ run together for $2$ hours, then $C$ joins. Then $4$ more hours finish the job.`,
-      `Five consecutive integers have the property that four times the smallest exceeds the largest by $17$. Then the middle one is $20$.`,
+      `Five consecutive integers have the property that four times the smallest exceeds the largest by $17$. The middle integer exceeds $15$.`,
       `Fifty kilograms of $30\\%$ copper are mixed with some $90\\%$ copper to make a $50\\%$ alloy. Then $20$ kg of the richer alloy must be added.`,
     ],
     answer_key: [false, true, false, false, false],
@@ -7536,7 +7456,7 @@ $$3n = 27$$
 
 $$n = 9$$
 
-The middle integer is $9$, not $20$. The statement is False.`,
+The middle integer is $9$, which does not exceed $15$. The statement is False.`,
       `**E.** → False
 
 Fifty kilograms of $30\\%$ copper hold $15$ kg of copper. Let $x$ be the kilograms of $90\\%$ alloy:
@@ -7564,8 +7484,8 @@ Twenty-five kilograms of the richer alloy recover $50\\%$, not $20$ kg. Twenty k
     statements: [
       `A $16$ m by $12$ m lawn has a uniform inner path. The remaining grass is $96$ m$^{2}$. Then the path is $3$ m wide.`,
       `A stone thrown upward has height $h = 30t - 5t^{2}$ metres after $t$ seconds. Then it is $40$ m high only at $t = 2$ seconds.`,
-      `Two consecutive odd positive integers multiply to $143$. Then the smaller of the two is $11$.`,
-      `A positive number exceeds its reciprocal by $\\dfrac{8}{3}$. Then the number is $2$.`,
+      `Two consecutive odd positive integers multiply to $143$. Their sum is $24$.`,
+      `A positive number exceeds its reciprocal by $\\dfrac{8}{3}$. The positive solution is less than $2$.`,
       `A rectangle of perimeter $48$ cm and area $135$ cm$^{2}$ is a square.`,
     ],
     answer_key: [false, false, true, false, false],
@@ -7608,7 +7528,11 @@ The positive root is
 
 $$n = -1 + \\sqrt{144} = 11$$
 
-and $11 \\cdot 13 = 143$. The smaller of the two is $11$, so the statement is True.`,
+and $11 \\cdot 13 = 143$. Their sum is
+
+$$11 + 13 = 24$$
+
+The claim is that same sum, so the statement is True.`,
       `**D.** → False
 
 A positive number exceeds its reciprocal by $\\frac{8}{3}$:
@@ -7623,7 +7547,7 @@ $$3x^{2} - 8x - 3 = 0$$
 
 $$(3x + 1)(x - 3) = 0$$
 
-The positive root is $x = 3$, not $2$. Check: $3 - \\frac{1}{3} = \\frac{8}{3}$. Two would give $2 - \\frac{1}{2} = \\frac{3}{2}$. The statement is False.`,
+The positive root is $x = 3$, not less than $2$. Check: $3 - \\frac{1}{3} = \\frac{8}{3}$. The claim that the positive solution is less than $2$ is incorrect, so the statement is False.`,
       `**E.** → False
 
 A rectangle of perimeter $48$ cm has sides adding to $24$ cm, and the area is $135$ cm$^{2}$. The sides are the roots of
@@ -7647,9 +7571,9 @@ so the sides are $9$ cm and $15$ cm. A square would need equal sides, hence area
     statements: [
       `A $26$ m ladder stands with its foot $10$ m from a wall. Then it reaches $24$ m up the wall.`,
       `A $13$ m ladder stands with its foot $5$ m from a wall. After the foot slips out to $9$ m from the wall, the top has dropped $4$ m.`,
-      `Three consecutive even positive integers have the property that the sum of their squares is $200$. Then the middle one is $8$.`,
+      `Three consecutive even positive integers have the property that the sum of their squares is $200$. The middle integer exceeds $6$.`,
       `A stone has height $h = 24t - 4t^{2}$ metres. Then it is $32$ m high only at $t = 2$ seconds.`,
-      `A rectangle has area $120$ cm$^{2}$ and its length is $1$ cm more than twice its width. Then the width is $8$ cm.`,
+      `A rectangle has area $120$ cm$^{2}$ and its length is $1$ cm more than twice its width. The width exceeds $8$ cm.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -7691,7 +7615,7 @@ $$n^{2} = 64$$
 
 $$n = 8$$
 
-since $n$ is a positive even integer. Check: $6^{2} + 8^{2} + 10^{2} = 36 + 64 + 100 = 200$. The statement is True.`,
+since $n$ is a positive even integer. The middle integer $8$ exceeds $6$, so the statement is True.`,
       `**D.** → False
 
 Set the height equal to $32$ m:
@@ -7715,7 +7639,7 @@ $$2w^{2} + w - 120 = 0$$
 
 $$w = \\frac{-1 + \\sqrt{1 + 960}}{4} = \\frac{-1 + 31}{4} = \\frac{15}{2}$$
 
-The width is $7.5$ cm, not $8$ cm. An $8$ cm width would give length $17$ cm and area $136$ cm$^{2}$. The statement is False.`,
+The width is $7.5$ cm, which does not exceed $8$ cm. An $8$ cm width would give length $17$ cm and area $136$ cm$^{2}$. The statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 85,
@@ -7729,8 +7653,8 @@ The width is $7.5$ cm, not $8$ cm. An $8$ cm width would give length $17$ cm and
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Two workers finish a job together in $12$ hours. One of them, working alone, is $7$ hours slower than the other. Then the faster worker alone takes $21$ hours.`,
-      `A rectangle has diagonal $13$ cm and area $60$ cm$^{2}$. Then one side is $5$ cm.`,
-      `The product of two consecutive positive integers is $210$. Then the smaller of the two is $15$.`,
+      `A rectangle has diagonal $13$ cm and area $60$ cm$^{2}$. Both sides are positive integers.`,
+      `The product of two consecutive positive integers is $210$. The smaller integer exceeds $14$.`,
       `A $12$ cm by $8$ cm picture is surrounded by a uniform frame. The outer area is $192$ cm$^{2}$. Then the frame is $3$ cm wide.`,
       `An object falls from a tower with distance $5t^{2}$ metres in $t$ seconds. In the last $3$ seconds it covers $75$ m. Then the tower is $80$ m high.`,
     ],
@@ -7759,7 +7683,7 @@ Let the sides be $a$ and $b$. Then $ab = 60$ and $a^{2} + b^{2} = 13^{2} = 169$.
 
 $$5^{2} + 12^{2} = 25 + 144 = 169$$
 
-so one side is $5$ cm. The statement is True.`,
+Both sides are positive integers, so the statement is True.`,
       `**C.** → False
 
 Let the smaller consecutive positive integer be $n$. Then
@@ -7770,7 +7694,7 @@ $$n^{2} + n - 210 = 0$$
 
 $$n = \\frac{-1 + \\sqrt{841}}{2} = \\frac{-1 + 29}{2} = 14$$
 
-The smaller integer is $14$, not $15$. Check: $14 \\cdot 15 = 210$, while $15 \\cdot 16 = 240$. The statement is False.`,
+The smaller integer is $14$, which does not exceed $14$. The claim requires a value strictly greater than $14$, so the statement is False.`,
       `**D.** → False
 
 Let the frame width be $x$ cm. The outer rectangle is $(12 + 2x)$ by $(8 + 2x)$ and has area $192$ cm$^{2}$:
@@ -7811,9 +7735,9 @@ The tower height is $5 \\cdot 4^{2} = 80$ m. Check: in $1$ second the object fal
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `One leg of a right triangle is $4$ cm longer than the other, and the hypotenuse is $20$ cm. Then the shorter leg is $12$ cm.`,
+      `One leg of a right triangle is $4$ cm longer than the other, and the hypotenuse is $20$ cm. The shorter leg exceeds $10$ cm.`,
       `The area of a right triangle with hypotenuse $20$ cm and one leg $12$ cm is $100$ cm$^{2}$.`,
-      `Two numbers add to $20$ and multiply to $84$. Then the numbers are $6$ and $14$.`,
+      `Two numbers add to $20$ and multiply to $84$. Both numbers are even.`,
       `A stone has height $h = 16t - 2t^{2}$ metres. Then it is $24$ m high at $t = 3$ seconds and at no other positive time.`,
       `A $24$ m by $16$ m lawn has a uniform inner path. The remaining grass is $240$ m$^{2}$. Then the path is $4$ m wide.`,
     ],
@@ -7833,7 +7757,7 @@ $$x^{2} + 4x - 192 = 0$$
 
 $$(x + 16)(x - 12) = 0$$
 
-The positive root is $x = 12$. The sides are $12$, $16$, and $20$. Check: $144 + 256 = 400$. The statement is True.`,
+The positive root is $x = 12$. The sides are $12$, $16$, and $20$. Since $12 > 10$, the shorter leg exceeds $10$ cm. The statement is True.`,
       `**B.** → False
 
 The missing leg $b$ satisfies Pythagoras:
@@ -7857,7 +7781,7 @@ $$t^{2} - 20t + 84 = 0$$
 
 $$(t - 6)(t - 14) = 0$$
 
-The numbers are $6$ and $14$. Check: $6 + 14 = 20$ and $6 \\cdot 14 = 84$. The statement is True.`,
+The numbers are $6$ and $14$. Both are even, so the statement is True.`,
       `**D.** → False
 
 Set the height equal to $24$ m:
@@ -7896,11 +7820,11 @@ The root $x = 18$ would make the inner rectangle negative, so the path is $2$ m 
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $15$ and the sum of their squares is $117$. Then the numbers are $6$ and $9$.`,
-      `Two numbers have product $24$ and the sum of their squares is $73$. Then the numbers are $3$ and $8$.`,
+      `Two numbers add to $15$ and the sum of their squares is $117$. Both numbers are divisible by $3$.`,
+      `Two numbers have product $24$ and the sum of their squares is $73$. One of the numbers is prime.`,
       `An isosceles right triangle has hypotenuse $10\\sqrt{2}$ cm. Then its area is $100$ cm$^{2}$.`,
       `Two workers finish a job together in $\\dfrac{24}{5}$ hours. One of them, working alone, is $4$ hours faster than the other. Then the faster worker alone takes $10$ hours.`,
-      `Three consecutive positive integers have the property that four times the middle one exceeds the product of the other two by $2$. Then the middle one is $7$.`,
+      `Three consecutive positive integers have the property that four times the middle one exceeds the product of the other two by $2$. The middle integer is a perfect square.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -7914,14 +7838,14 @@ $$225 = 117 + 2xy$$
 
 $$xy = 54$$
 
-The numbers are the roots of $t^{2} - 15t + 54 = 0$, which factors as $(t - 6)(t - 9)$. The pair is $6$ and $9$. Check: $36 + 81 = 117$. The statement is True.`,
+The numbers are the roots of $t^{2} - 15t + 54 = 0$, which factors as $(t - 6)(t - 9)$. The pair is $6$ and $9$. Both are divisible by $3$, so the statement is True.`,
       `**B.** → True
 
 Let the numbers be $x$ and $y$. Then $xy = 24$ and $x^{2} + y^{2} = 73$. Expand the square of the sum:
 
 $$(x + y)^{2} = x^{2} + 2xy + y^{2} = 73 + 48 = 121$$
 
-so $x + y = 11$ (positive). The numbers are the roots of $t^{2} - 11t + 24 = 0$, which factors as $(t - 3)(t - 8)$. The pair is $3$ and $8$. Check: $9 + 64 = 73$. The statement is True.`,
+so $x + y = 11$ (positive). The numbers are the roots of $t^{2} - 11t + 24 = 0$, which factors as $(t - 3)(t - 8)$. The pair is $3$ and $8$. The number $3$ is prime, so the statement is True.`,
       `**C.** → False
 
 An isosceles right triangle with hypotenuse $10\\sqrt{2}$ has equal legs $\\ell$ satisfying
@@ -7964,7 +7888,7 @@ $$n^{2} - 4n + 1 = 0$$
 
 $$n = 2 \\pm \\sqrt{3}$$
 
-Neither root is $7$. Substituting the claimed middle $7$ gives $4 \\cdot 7 = 28$ on the left and $6 \\cdot 8 + 2 = 50$ on the right. The statement is False.`,
+Neither root is a perfect square. The middle integer from the property is not a perfect square, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 88,
