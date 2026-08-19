@@ -58,7 +58,12 @@ function parseTasks(filePath) {
 }
 
 function hasUnknown(eq) {
-  return /\\frac\{[^}]*[xtsy]|\\sqrt\{[^}]*x|\^x|x\^\{|\\lvert[^$]*x|\([xtsy]|[^a-z]x[^a-z]|^x[^a-z]|s\^\{|\\log_[^{]*x|e\^\{[^}]*x|2\^x|3\^x|5\^x|10\^x|7\^x|4\^x|6\^x|25\^x|\\ln\s*\(/i.test(eq);
+  if (/^P =/.test(eq)) return false;
+  if (/\\ell|\\theta|\\alpha|\\beta/.test(eq)) return true;
+  let s = eq.replace(/\\frac\{[^}]*\}\{[^}]*\}/g, "");
+  s = s.replace(/\\[a-zA-Z]+/g, "");
+  s = s.replace(/[0-9.+()^_{}\s|,\\\-=]/g, "");
+  return /[a-zA-Z]/.test(s);
 }
 
 function isNumericCheck(eq) {
@@ -69,7 +74,12 @@ function isNumericCheck(eq) {
   );
 }
 
+function normalizeLatexEq(eq) {
+  return eq.replace(/\u000C/g, "\\frac").replace(/\\\\([a-zA-Z])/g, "\\$1");
+}
+
 function isValidStudentEquation(eq) {
+  eq = normalizeLatexEq(eq);
   if (!eq || !/=/.test(eq)) return false;
   if (!hasUnknown(eq)) return false;
   if (isNumericCheck(eq)) return false;
@@ -93,7 +103,140 @@ function isValidStudentEquation(eq) {
   if (/^3-2x=x\+4$|^3-2x=-x-4$/.test(e)) return false;
   if (/^\\frac\{1\}\{x\}\+\\frac\{2x\}\{x\^\{2\}-1\}=\\frac\{\(x\^\{2\}-1\)\+2x\^\{2\}\}/.test(e)) return false;
   if (/\\log_a x=c|^9-3x=9$|^x\+1=9$/.test(e)) return false;
+  if (/^u=|^u>|\\bu\\b|u\^|u=e\^|u=2\^|u=2x|^f'\(x\)|f'\(/.test(e)) return false;
+  const eqNoDelim = eq.replace(/\\left/g, "").replace(/\\right/g, "");
+  if (/\\ge(?:[^a-zA-Z]|$)|\\le(?:[^a-zA-Z]|$)|\\geq|\\leq|(?<![\\a-zA-Z])>(?![=])|(?<![\\a-zA-Z])<(?![=])/.test(eqNoDelim) && !/\\lvert/.test(eq))
+    return false;
+  if (/^x=\d|^x=\pm|^x=\\pm|^n=\d+$/.test(e)) return false;
+  if (/=\d+\^[^=]+=\d+/.test(e)) return false;
+  if (/^x-\d+>0|^2x-\d+>0|^x>\d+$/.test(e)) return false;
+  if (/\\text\{/.test(eq)) return false;
+  if (/^x=x$/.test(e)) return false;
+  if (/\(x\+y\)\^\{2\}=x\^\{2\}\+2xy\+y\^\{2\}/.test(e)) return false;
+  if (/=x\^\{2\}\+2xy\+y\^\{2\}/.test(e)) return false;
   return true;
+}
+
+function tsEscape(s) {
+  return s.replace(/\\/g, "\\\\");
+}
+
+/** Escape for writing into TS template literals on disk (\\frac in file → runtime \\frac). */
+function tsFileEscape(s) {
+  return s.replace(/\\/g, "\\\\").replace(/\u000C/g, "\\\\frac");
+}
+
+function extractBlockEquations(text) {
+  const eqs = [];
+  for (const m of text.matchAll(/\$\$([^$]+)\$\$/g)) {
+    eqs.push(m[1].trim().replace(/\s+/g, " "));
+  }
+  return eqs;
+}
+
+function detectSubstitution(t) {
+  const m = t.match(/(?:Substitute|substitution|Let|set) \$u = (e\^x|2\^x|2x - \d+)(?: > 0)?\$/i);
+  if (!m) return null;
+  const raw = m[1].replace(/\s/g, "");
+  if (raw === "e^x") return { kind: "e^x" };
+  if (raw === "2^x") return { kind: "2^x" };
+  if (/^2x-\d+$/.test(raw)) return { kind: "2x-k", k: raw.slice(3) };
+  return null;
+}
+
+function convertUeqToX(eq, sub) {
+  if (!sub) return eq;
+  let r = eq;
+  if (sub.kind === "e^x") {
+    r = r.replace(/u - \\frac\{(\d+)\}\{u\}/g, (_, n) => `e^x - ${n}e^{-x}`);
+    r = r.replace(/u \+ \\frac\{(\d+)\}\{u\}/g, (_, n) => `e^x + ${n}e^{-x}`);
+    r = r.replace(/\\frac\{(\d+)\}\{u\}/g, (_, n) => `${n}e^{-x}`);
+    r = r.replace(/\\frac\{1\}\{u\}/g, "e^{-x}");
+    r = r.replace(/(\d)u\^2/g, (_, n) => `${n}e^{2x}`);
+    r = r.replace(/u\^2/g, "e^{2x}");
+    r = r.replace(/(\d)u/g, (_, n) => `${n}e^x`);
+    r = r.replace(/\bu\b/g, "e^x");
+  } else if (sub.kind === "2^x") {
+    r = r.replace(/(\d)u \+ \\frac\{1\}\{u\}/g, (_, n) => `${n} \\cdot 2^x + 2^{-x}`);
+    r = r.replace(/u - \\frac\{(\d+)\}\{u\}/g, (_, n) => `2^x - ${n} \\cdot 2^{-x}`);
+    r = r.replace(/\\frac\{(\d+)\}\{u\}/g, (_, n) => `${n} \\cdot 2^{-x}`);
+    r = r.replace(/\\frac\{1\}\{u\}/g, "2^{-x}");
+    r = r.replace(/(\d)u\^2/g, (_, n) => `${n} \\cdot 4^x`);
+    r = r.replace(/u\^2/g, "4^x");
+    r = r.replace(/(\d)u/g, (_, n) => `${n} \\cdot 2^x`);
+    r = r.replace(/\bu\b/g, "2^x");
+  } else if (sub.kind === "2x-k") {
+    r = r.replace(/e\^u/g, `e^{2x-${sub.k}}`);
+  }
+  return r.replace(/\s+/g, " ").trim();
+}
+
+function unwrapSubstitution(t) {
+  const sub = detectSubstitution(t);
+  if (!sub) return null;
+  for (const eq of extractBlockEquations(t)) {
+    if (!/\bu\b|u\^2|\\frac\{[^}]*\}\{u\}|e\^u/.test(eq)) continue;
+    const converted = convertUeqToX(eq, sub);
+    if (isValidStudentEquation(converted)) return converted;
+  }
+  return null;
+}
+
+function inferFromCalculus(t) {
+  const fm = t.match(/Let \$f\(x\) = ([^$]+)\$/);
+  if (fm) {
+    const body = fm[1].trim();
+    if (/[xn]/.test(body)) return `${body} = 0`;
+  }
+  return null;
+}
+
+function inferTranscendental(t) {
+  if (/e\^x - x|e\^x = x/i.test(t)) return "e^x - x = 0";
+  if (/\\ln x \+ x - 1|ln x \+ x - 1/i.test(t)) return "\\ln x + x - 1 = 0";
+  return null;
+}
+
+function inferWordEq(t) {
+  if (/smallest of the three consecutive integers be \$n\$/i.test(t))
+    return "n + (n + 1) + (n + 2) = 42";
+  if (/Split \$30\$ into two parts where one part is \$4\$ more/i.test(t)) return "x + (x + 4) = 30";
+  if (/Three times a number, minus \$5\$, equals \$16\$/i.test(t)) return "3x - 5 = 16";
+  if (/Losing one-quarter leaves three-quarters.*\$20\$ litres remain/i.test(t)) return "\\frac{3}{4}x - 10 = 20";
+  if (/width is \$4\$ cm and the length is \$3\$ cm more than the width/i.test(t))
+    return "2(x + (x + 3)) = 22";
+  if (/longer side is \$3\$ cm more than the shorter side.*perimeter is \$22\$/i.test(t))
+    return "2(x + (x + 3)) = 22";
+  if (/Time on the road is distance divided by average speed/i.test(t)) return "64t = 112";
+  if (/One litre of \$8/i.test(t) && /concentration should be \$5/i.test(t))
+    return "\\frac{0.08}{1 + w} = 0.05";
+  if (/Equal logs with the same base/i.test(t)) {
+    for (const eq of extractBlockEquations(t)) {
+      if (/x \+ \d+ = \d*x [+-]/.test(eq) && isValidStudentEquation(eq)) return eq;
+    }
+    return "\\log_3(x + 4) = \\log_3(2x - 1)";
+  }
+  const iw = t.match(/In words:([^.\n]+)/i);
+  if (iw) {
+    const w = iw[1];
+    const tm = w.match(/twice the original price, plus \$6\$, equals \$14\$/i);
+    if (tm) return "2x + 6 = 14";
+    const bm = w.match(/half of the original bill minus \$7\$ equals \$4\$/i);
+    if (bm) return "\\frac{x - 7}{2} = 4";
+  }
+  return null;
+}
+
+function inferFromRootsOf(t) {
+  const m = t.match(/roots of \$(t\^\{2\}[^$]+= 0)\$/);
+  if (m) return m[1].replace(/\s+/g, " ");
+  return null;
+}
+
+function inferEqualLogs(t) {
+  const m = t.match(/Equal (?:base-\$?\d+\$? |natural )?logs[^$]*\$\\log(?:_\{?\d+\}?)?\(([^)]+)\) = \\log(?:_\{?\d+\}?)?\(([^)]+)\)/);
+  if (m) return `\\log(${m[1]}) = \\log(${m[2]})`;
+  return null;
 }
 
 function extractEquations(text) {
@@ -155,10 +298,13 @@ function inferAbsFromSplit(exp) {
 
 function inferAbsPostsEq(exp) {
   const t = normalizeTex(exp);
-  if (!/Between the posts|kilometre-post/i.test(t)) return null;
-  const pm = t.match(/posts?\s+\$?(\d+)\$?\s+and\s+\$?(\d+)\$?/i);
-  if (pm) return `\\lvert x - ${pm[1]} \\rvert + \\lvert x - ${pm[2]} \\rvert = 6`;
-  return `\\lvert x - 1 \\rvert + \\lvert x - 7 \\rvert = 6`;
+  if (!/Between the posts|kilometre-post|Between \$-?\d/i.test(t)) return null;
+  let m = t.match(/Between \$x = (\d+)\$ and \$x = (\d+)\$\.?/);
+  if (m) return `\\lvert x - ${m[1]} \\rvert + \\lvert x - ${m[2]} \\rvert = 6`;
+  m = t.match(/Between \$(-?\d+)\$ and \$(\d+)\$ the sum is constantly \$(\d+)\$/);
+  if (m) return `\\lvert x + ${m[1].replace("-", "")} \\rvert + \\lvert x - ${m[2]} \\rvert = ${m[3]}`.replace("+ -", "- ");
+  if (/Between the posts|kilometre-post/i.test(t)) return `\\lvert x - 1 \\rvert + \\lvert x - 7 \\rvert = 6`;
+  return null;
 }
 
 function inferAbsSumEq(exp) {
@@ -194,6 +340,34 @@ function inferFractionEq(exp) {
   return main || null;
 }
 
+function normalizeChainedEq(eq) {
+  const parts = eq.split("=").map((s) => s.trim());
+  if (parts.length <= 2) return eq;
+  return `${parts[0]} = ${parts[parts.length - 1]}`;
+}
+
+function inferNegativeExp(t) {
+  if (/Negative one is outside|cannot equal \$-1|equal \$-1/i.test(t) && /e\^x/i.test(t)) return "e^x = -1";
+  if (/Zero is not in the range of \$e\^x\$|e\^x = 0/i.test(t)) return "e^x = 0";
+  if (/cannot equal \$-8/i.test(t) && /2\^x/i.test(t)) return "2^x = -8";
+  if (/cannot equal \$-1/i.test(t) && /5\^x/i.test(t)) return "5^x = -1";
+  return null;
+}
+
+function inferDomainLogEq(t) {
+  if (/Matching arguments gives \$5 - x = 2/i.test(t)) return "\\ln(5-x) = \\ln 2";
+  if (/argument \$x - 3\$ must be positive before \$\\log_2\$/i.test(t) && /Solving gives \$x = 5\$/i.test(t))
+    return "\\log_2(x-3) = 1";
+  if (/argument \$x - 4\$ must be positive before \$\\log_2\$/i.test(t)) return "\\log_2(x-4) = 1";
+  if (/argument \$x - 3\$ must be positive/i.test(t) && /Any value with \$x \\le 3\$/i.test(t))
+    return "\\log(x-3) = 1";
+  if (/Arguments require \$x > 3\$/i.test(t) && /x - 1 > 0/i.test(t)) return "\\log((x-1)(x-3)) = 1";
+  if (/Both factors must be positive/i.test(t) && /x > 0/i.test(t) && /x - 1 > 0/i.test(t)) return "\\log(x(x-1)) = 1";
+  if (/Both arguments must be positive/i.test(t) && /x > 0/i.test(t) && /x - 1 > 0/i.test(t)) return "\\log(x(x-1)) = 1";
+  if (/Convert to exponential form with \$x > 0\$/i.test(t) && /9\^\{1\/2\}/i.test(t)) return "\\log_9 x = \\frac{1}{2}";
+  return null;
+}
+
 function inferImpossibleExp(exp) {
   const t = normalizeTex(exp);
   const neg = t.match(/cannot equal \$-(\d+)\$/);
@@ -205,47 +379,74 @@ function inferImpossibleExp(exp) {
   return null;
 }
 
+function inferFromLet(t) {
+  const letMatch = t.match(/Let \$([a-z_][a-z0-9_]*)\$ be/i);
+  if (!letMatch) return null;
+  const v = letMatch[1];
+  for (const eq of extractBlockEquations(t)) {
+    if (new RegExp(`\\b${v}\\b`).test(eq) && isValidStudentEquation(eq)) return eq;
+  }
+  return null;
+}
+
 function pickPrimaryEq(exp, overview = "", title = "") {
   const t = normalizeTex(exp);
-  const ov = normalizeTex(overview);
 
-  const built = buildSqrtSumFromLet(t);
-  if (built && isValidStudentEquation(built)) return built;
-
-  const inferrers = [
-    inferAbsFromSplit(t),
-    inferAbsPostsEq(t),
-    inferAbsSumEq(t),
-    inferFractionEq(t),
-    inferImpossibleExp(t),
+  const builders = [
+    buildSqrtSumFromLet,
+    unwrapSubstitution,
+    inferFromCalculus,
+    inferTranscendental,
+    inferFromLet,
+    inferWordEq,
+    inferFromRootsOf,
+    inferEqualLogs,
+    inferAbsFromSplit,
+    inferAbsPostsEq,
+    inferAbsSumEq,
+    inferFractionEq,
+    inferNegativeExp,
+    inferDomainLogEq,
+    inferImpossibleExp,
   ];
-  for (const inferred of inferrers) {
-    if (inferred && isValidStudentEquation(inferred)) return inferred;
+  for (const fn of builders) {
+    const r = fn(t);
+    if (r && isValidStudentEquation(r)) return r;
   }
 
-  const all = [...extractEquations(t), ...extractEquations(ov)].filter(isValidStudentEquation);
-  all.sort((a, b) => {
-    const score = (e) =>
-      (/\\sqrt\{x [+-] \d+\} \+ \\sqrt\{x/.test(e) ? 12 : 0) +
-      (/\\sqrt\{x \+ \d+\} = \d+ \+ \\sqrt\{x/.test(e) ? 11 : 0) +
-      (/\\frac\{3\}\{x\(x \+ 3\)\}/.test(e) ? 11 : 0) +
-      (/\\frac\{3x\^\{2\}/.test(e) ? 10 : 0) +
-      (/\\lvert.*\\lvert/.test(e) ? 10 : 0) +
-      (/= 32$|= -8$|= -1$/.test(e) ? 9 : 0) +
-      (/\\sqrt\{x \+ \d+\}/.test(e) ? 9 : 0) +
-      (/\\sqrt\{2x|\\sqrt\{x \+/.test(e) ? 8 : 0) +
-      (/2\^x|3\^x|5\^x|\\log_3|\\log_2/.test(e) ? 7 : 0) +
-      (/x\^\{2\}|\\frac\{[^}]*x/.test(e) ? 6 : 0) +
-      (/2x|3x|5x/.test(e) ? 4 : 0) +
-      e.length -
-      (/^0 = x\^\{2\}/.test(e) ? 3 : 0) -
-      (/= 2\^5$/.test(e) ? 4 : 0) -
-      (/^x \+ \d+ = \d+ \+ 4\\sqrt/.test(e) ? 8 : 0) -
-      (/^x \+ \d+ = \d+ \\+/.test(e) ? 6 : 0) -
-      (/^\\Delta =/.test(e) ? 5 : 0);
-    return score(b) - score(a);
-  });
-  return all[0] || null;
+  for (const eq of extractBlockEquations(t)) {
+    const normalized = normalizeChainedEq(eq);
+    if (isValidStudentEquation(normalized)) return normalized;
+    if (isValidStudentEquation(eq)) return eq;
+  }
+
+  const inline = extractEquations(t).filter(isValidStudentEquation);
+  inline.sort((a, b) => scoreEquation(b) - scoreEquation(a));
+  return inline[0] || null;
+}
+
+function scoreEquation(e) {
+  return (
+    (/\\sqrt\{x [+-] \d+\} \+ \\sqrt\{x/.test(e) ? 12 : 0) +
+    (/e\^\{2x\}|4\^x/.test(e) ? 11 : 0) +
+    (/\\sqrt\{x \+ \d+\} = \d+ \+ \\sqrt\{x/.test(e) ? 11 : 0) +
+    (/\\frac\{3\}\{x\(x \+ 3\)\}/.test(e) ? 11 : 0) +
+    (/\\frac\{3x\^\{2\}/.test(e) ? 10 : 0) +
+    (/\\lvert.*\\lvert/.test(e) ? 10 : 0) +
+    (/\\left\\\(\s*\\frac/.test(e) ? 9 : 0) +
+    (/= 32$|= -8$|= -1$/.test(e) ? 9 : 0) +
+    (/\\sqrt\{x \+ \d+\}/.test(e) ? 9 : 0) +
+    (/\\sqrt\{2x|\\sqrt\{x \+/.test(e) ? 8 : 0) +
+    (/2\^x|3\^x|5\^x|\\log_3|\\log_2|\\ln x/.test(e) ? 7 : 0) +
+    (/x\^\{2\}|\\frac\{[^}]*x/.test(e) ? 6 : 0) +
+    (/[^a-z]n[^a-z]/.test(e) ? 5 : 0) +
+    (/2x|3x|5x/.test(e) ? 4 : 0) +
+    e.length -
+    (/^0 = x\^\{2\}/.test(e) ? 3 : 0) -
+    (/= 2\^5$/.test(e) ? 4 : 0) -
+    (/^x \+ \d+ = \d+ \+ 4\\sqrt/.test(e) ? 8 : 0) -
+    (/^\\Delta =/.test(e) ? 5 : 0)
+  );
 }
 
 function parseRoots(exp) {
@@ -264,9 +465,7 @@ function parseRoots(exp) {
   for (const m of exp.matchAll(/unique real solution is \$x = (-?\d+(?:\.\d+)?)/gi)) roots.add(parseFloat(m[1]));
   for (const m of exp.matchAll(/recovered value is \$(-?\d+(?:\.\d+)?)/gi)) roots.add(parseFloat(m[1]));
   for (const m of exp.matchAll(/so \$x = (-?\d+(?:\.\d+)?)/gi)) roots.add(parseFloat(m[1]));
-  for (const m of exp.matchAll(/hence \$a = (\d+) and \$b = (\d+)/g)) {
-    /* sqrt substitution — x recovered separately */
-  }
+  for (const m of exp.matchAll(/\$\$n = (-?\d+(?:\.\d+)?)\$\$/g)) roots.add(parseFloat(m[1]));
   for (const m of exp.matchAll(/Outside, \$x < \d+ gives \$x = (-?\d+) and \$x > \d+ gives \$x = (-?\d+)/g)) {
     roots.add(parseFloat(m[1]));
     roots.add(parseFloat(m[2]));
@@ -349,7 +548,7 @@ function vieta(q) {
 }
 
 function dryEq(eq, claim) {
-  return `For $${eq}$, ${claim}.`;
+  return `For $${tsEscape(eq)}$, ${claim}.`;
 }
 
 function countSingle(isTrue, seed) {
@@ -461,6 +660,21 @@ function specialStatement(exp, isTrue, eq, seed, useVieta) {
       ? `A square of area $49$ m$^{2}$ has side length $7$ m.`
       : `A square of area $49$ m$^{2}$ has side length $8$ m.`;
   }
+  if (/Successive percentage factors multiply|1\.20.*0\.90.*0\.98/i.test(exp)) {
+    return isTrue
+      ? `For $1.20 \\cdot 0.90 \\cdot 0.98 = 1.0584$, the customer pays $5.84\\%$ more than the original list.`
+      : `For $1.20 \\cdot 0.90 \\cdot 0.98 = 1.0584$, the customer pays less than $4\\%$ more than the original list.`;
+  }
+  if (/Two successive \$10/i.test(exp) && /2400/.test(exp)) {
+    return isTrue
+      ? `For $2400 \\cdot 1.10 \\cdot 1.10 = 2904$, the salary after two $10\\%$ raises is $2904$ EUR.`
+      : `For $2400 \\cdot 1.10 \\cdot 1.10 = 2904$, the salary after two $10\\%$ raises is $2800$ EUR.`;
+  }
+  if (/A \$25.*rise followed by a \$25.*fall/i.test(exp)) {
+    return isTrue
+      ? `For $1.25 \\cdot 0.75 = 0.9375$, a $25\\%$ rise followed by a $25\\%$ fall leaves $93.75\\%$ of the original.`
+      : `For $1.25 \\cdot 0.75 = 0.9375$, a $25\\%$ rise followed by a $25\\%$ fall leaves the full original value.`;
+  }
   if (/area is \$13|s\^{2} = 13/i.test(exp)) {
     return isTrue
       ? `A square of area $13$ m$^{2}$ has side length greater than $3$ m.`
@@ -507,9 +721,7 @@ function rewriteFromExp(exp, isTrue, sub, letterIndex, overview = "", title = ""
 
   if (sub === "4.4" && eq) {
     if (m.noReal) {
-      const t = ["no real exponent satisfies the equation", "the equation has no real solution"];
-      const f = ["exactly one real exponent satisfies the equation", "precisely one real value of the exponent works"];
-      return dryEq(eq, (isTrue ? t : f)[seed % 2]);
+      return dryEq(eq, pickNoneClaim(isTrue, null, seed, useVieta));
     }
     if (/\\log|\\ln/.test(eq)) {
       const x = m.roots[0];
@@ -521,13 +733,11 @@ function rewriteFromExp(exp, isTrue, sub, letterIndex, overview = "", title = ""
         useVieta
           ? vietaSingle(isTrue, m.roots[0] ?? 1, seed)
           : isTrue
-            ? "exactly one positive admissible root exists"
-            : "no positive admissible root exists"
+            ? countSingle(true, seed)
+            : countSingle(false, seed)
       );
     }
-    const t = ["exactly one real exponent satisfies the equation", "precisely one real value of the exponent works"];
-    const f = ["no real exponent satisfies the equation", "more than one real exponent satisfies the equation"];
-    return dryEq(eq, useVieta ? vietaSingle(isTrue, m.roots[0] ?? 2, seed) : (isTrue ? t : f)[seed % 2]);
+    return dryEq(eq, useVieta ? vietaSingle(isTrue, m.roots[0] ?? 2, seed) : countSingle(isTrue, seed));
   }
 
   if (eq) {
@@ -579,13 +789,17 @@ function rewriteFromExp(exp, isTrue, sub, letterIndex, overview = "", title = ""
 
   if (eq) return dryEq(eq, useVieta ? vietaSingle(isTrue, m.roots[0] ?? 0, seed) : countSingle(isTrue, seed));
 
-  return `The equation has ${isTrue ? "exactly one" : "no"} real solution.`;
+  return null;
 }
+
+export { isValidStudentEquation, rewriteFromExp, pickPrimaryEq, dryEq, tsEscape, tsFileEscape, normalizeLatexEq };
 
 function formatStatements(arr) {
   return arr.map((s) => `      \`${s}\`,`).join("\n");
 }
 
+const isMain = process.argv[1]?.endsWith("rewrite-ch4-root-claims.mjs");
+if (isMain) {
 let total = 0;
 const stats = { vieta: 0, count: 0, special: 0, noEq: 0 };
 
@@ -596,7 +810,11 @@ for (const path of FILES) {
     const t = tasks[ti];
     const newStmts = t.tactical_explanations.map((exp, i) => {
       total++;
-      const stmt = rewriteFromExp(exp, t.answer_key[i] === "true", t.subsection, i, t.overview, t.title);
+      let stmt = rewriteFromExp(exp, t.answer_key[i] === "true", t.subsection, i, t.overview, t.title);
+      if (!stmt) {
+        console.error(`FATAL: no statement for ${t.id} letter ${i}`);
+        process.exit(1);
+      }
       const useVieta = i % 2 === 0;
       if (!stmt.startsWith("For $")) {
         stats.special++;
@@ -620,3 +838,31 @@ for (const path of FILES) {
 
 console.log(`Rewrote ${total} statements`);
 console.log(`Stats: vieta-ish=${stats.vieta}, count-ish=${stats.count}, special=${stats.special}`);
+
+const BAD = [
+  /^The equation has (exactly one|no) real solution\.$/,
+  /^For \$u =/,
+  /^For \$f'\(/,
+  /^For \$x = x,/,
+  /precisely one real value of the exponent/,
+  /more than one real exponent satisfies/,
+];
+let bad = 0;
+for (const path of FILES) {
+  const { tasks } = parseTasks(path);
+  for (const t of tasks) {
+    const stmts = parseBacktickArray(t.chunk, "statements");
+    for (const s of stmts) {
+      for (const p of BAD) {
+        if (p.test(s)) {
+          bad++;
+          console.error(`BAD [${t.id}]: ${s.slice(0, 100)}`);
+          break;
+        }
+      }
+    }
+  }
+}
+console.log(`Bad statement patterns: ${bad}`);
+if (bad > 0) process.exit(1);
+}
