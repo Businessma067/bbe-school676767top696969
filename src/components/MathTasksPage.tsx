@@ -366,6 +366,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                 const subTasks = list
                                   .map((c, i) => ({ c, i }))
                                   .filter(({ c }) => c.subsection === sub.id);
+                                if (subTasks.length === 0) return null;
                                 const subKey = `${ch.num}:${sub.id}`;
                                 const subOpen = expandedSub[subKey] ?? false;
                                 const subDone = subTasks.filter(({ c }) =>
@@ -1499,7 +1500,9 @@ function AllExplanationsPanel({
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
             Full solution · Task {index + 1}
           </p>
-          <h3 className="mt-0.5 truncate font-display text-sm font-bold">{task.title}</h3>
+          <h3 className="mt-0.5 truncate font-display text-sm font-bold">
+            <FlashcardMath text={task.title} />
+          </h3>
         </div>
         <button
           type="button"
@@ -1677,7 +1680,9 @@ function MathTaskCard({
         )}
       </div>
 
-      <h2 className="font-display text-lg font-bold tracking-tight">{task.title}</h2>
+      <h2 className="font-display text-lg font-bold tracking-tight">
+        <FlashcardMath text={task.title} />
+      </h2>
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
         <MathProse text={task.context} className="text-sm" />
         {task.figure ? (
