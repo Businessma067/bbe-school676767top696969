@@ -4078,12 +4078,12 @@ The claimed sum of squares is $145$, not $97$. The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `One leg of a right triangle is $7$ cm longer than the other, and the hypotenuse is $13$ cm. Then the shorter leg is $5$ cm.`,
-      `That triangle has longer leg $10$ cm.`,
-      `The area of a $5$-$12$-$13$ triangle is $30$ cm$^{2}$.`,
-      `The perimeter of a $5$-$12$-$13$ triangle is $28$ cm.`,
-      `A right triangle with legs $5$ cm and $12$ cm is isosceles.`,
+      `A right triangle with legs $9$ cm and $12$ cm has hypotenuse $16$ cm.`,
+      `A right triangle with legs $8$ cm and $15$ cm has hypotenuse $17$ cm.`,
+      `A right triangle with legs $6$ cm and $8$ cm has perimeter $22$ cm.`,
+      `A right triangle with legs $7$ cm and $24$ cm has area $84$ cm$^{2}$.`,
     ],
-    answer_key: [true, false, true, false, false],
+    answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -4108,38 +4108,60 @@ so $x = -12$ or $x = 5$. A length must be positive, so the shorter leg is $5$ cm
 Check: the longer leg is $12$ cm and $5^{2} + 12^{2} = 25 + 144 = 169 = 13^{2}$. The shorter leg is $5$ cm, so the statement is True.`,
       `**B.** → False
 
-The shorter leg was $x = 5$ cm, so the longer leg is
+Pythagoras gives
 
-$$x + 7 = 5 + 7 = 12$$
+$$c^{2} = 9^{2} + 12^{2}$$
 
-The claim says $10$ cm. Substituting a $5$ cm and $10$ cm pair:
+$$c^{2} = 81 + 144$$
 
-$$5^{2} + 10^{2} = 25 + 100 = 125 \\neq 169$$
+$$c^{2} = 225$$
 
-The longer leg is $12$ cm, so the statement is False.`,
+$$c = 15$$
+
+The hypotenuse is $15$ cm, not $16$ cm. The claim does not match, so the statement is False.`,
       `**C.** → True
+
+Pythagoras gives
+
+$$c^{2} = 8^{2} + 15^{2}$$
+
+$$c^{2} = 64 + 225$$
+
+$$c^{2} = 289$$
+
+$$c = 17$$
+
+The hypotenuse is $17$ cm, so the statement is True.`,
+      `**D.** → False
+
+The hypotenuse is
+
+$$c^{2} = 6^{2} + 8^{2}$$
+
+$$c^{2} = 36 + 64$$
+
+$$c^{2} = 100$$
+
+$$c = 10$$
+
+The perimeter is
+
+$$6 + 8 + 10 = 24$$
+
+not $22$ cm. The claim does not match, so the statement is False.`,
+      `**E.** → True
 
 The area of a right triangle is half the product of the legs:
 
-$$A = \\frac{1}{2} \\cdot 5 \\cdot 12$$
+$$A = \\frac{1}{2} \\cdot 7 \\cdot 24$$
 
-$$A = 30$$
+$$A = 84$$
 
-The claimed area is $30$ cm$^{2}$, so the statement is True.`,
-      `**D.** → False
-
-The perimeter is the sum of the three sides:
-
-$$5 + 12 + 13 = 30$$
-
-The claim says $28$ cm. The perimeter is $30$ cm, so the statement is False.`,
-      `**E.** → False
-
-An isosceles right triangle would have equal legs. Here the legs are $5$ cm and $12$ cm, and $5 \\neq 12$. The three sides $5$, $12$, and $13$ are all different, so the statement is False.`,
+The claimed area is $84$ cm$^{2}$, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 47,
-    solution_overview: `Five independent right-triangle claims. Legs $x$ and $x + 7$ with hypotenuse $13$ recover the $5$-$12$-$13$ triple.`,
+    solution_overview: `Five independent right-triangle claims. Use Pythagoras, perimeter, or the area formula $\\frac{1}{2}ab$ on the stated side lengths.`,
   },
   {
     id: `math-4-48`,
@@ -4149,12 +4171,12 @@ An isosceles right triangle would have equal legs. Here the legs are $5$ cm and 
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle has perimeter $40$ cm and area $96$ cm$^{2}$. The sides are $8$ cm and $12$ cm.`,
-      `A rectangle of perimeter $40$ cm and area $96$ cm$^{2}$ is a square.`,
+      `A rectangle is $3$ cm longer than it is wide, and its area is $54$ cm$^{2}$. The width is $6$ cm.`,
       `A square with perimeter $40$ cm has area $100$ cm$^{2}$.`,
-      `Among rectangles of perimeter $40$ cm, the square's area $100$ cm$^{2}$ is larger than $96$ cm$^{2}$.`,
-      `A rectangle of perimeter $40$ cm and area $96$ cm$^{2}$ has sides $6$ cm and $14$ cm.`,
+      `A rectangle of width $7$ cm and length $11$ cm has area $77$ cm$^{2}$.`,
+      `A rectangle of perimeter $30$ cm and area $56$ cm$^{2}$ has sides $6$ cm and $9$ cm.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -4179,9 +4201,21 @@ or
 $$t = 8$$
 
 The sides are $8$ cm and $12$ cm. Check: $8 + 12 = 20$ and $8 \\cdot 12 = 96$. Those are the claimed sides, so the statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-A square would need equal sides. The sides recovered from perimeter $40$ and area $96$ are $8$ cm and $12$ cm, and $8 \\neq 12$, so the statement is False.`,
+Let the width be $w$ cm. Then the length is $w + 3$, and the area is $54$ cm$^{2}$:
+
+$$w(w + 3) = 54$$
+
+$$w^{2} + 3w - 54 = 0$$
+
+$$(w + 9)(w - 6) = 0$$
+
+so $w = -9$ or $w = 6$. A width is positive, so $w = 6$ cm. Check:
+
+$$6 \\cdot 9 = 54$$
+
+The width is $6$ cm, so the statement is True.`,
       `**C.** → True
 
 A square of perimeter $40$ cm has four equal sides, so each side is
@@ -4195,26 +4229,26 @@ $$10^{2} = 100$$
 The claimed area is $100$ cm$^{2}$, so the statement is True.`,
       `**D.** → True
 
-The square of the same perimeter has area $100$ cm$^{2}$. The rectangle of area $96$ cm$^{2}$ is smaller:
+Area is length times width:
 
-$$100 > 96$$
+$$7 \\cdot 11 = 77$$
 
-Among rectangles of a fixed perimeter the square has the largest area, and the comparison $100 > 96$ holds, so the statement is True.`,
+The claimed area is $77$ cm$^{2}$, so the statement is True.`,
       `**E.** → False
 
-The claimed sides $6$ cm and $14$ cm add to $20$, so they would fit perimeter $40$:
+Perimeter $30$ cm means the sum of length and width is $15$ cm. The claimed sides $6$ cm and $9$ cm add to $15$, but their product is
 
-$$6 + 14 = 20$$
+$$6 \\cdot 9 = 54 \\neq 56$$
 
-Their product is
+The actual pair with sum $15$ and product $56$ solves $t^{2} - 15t + 56 = 0$:
 
-$$6 \\cdot 14 = 84 \\neq 96$$
+$$(t - 7)(t - 8) = 0$$
 
-The area is $84$ cm$^{2}$, not $96$ cm$^{2}$, so the statement is False.`,
+so the sides are $7$ cm and $8$ cm, not $6$ cm and $9$ cm. The statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 48,
-    solution_overview: `Five independent rectangle claims. Perimeter $40$ and area $96$ give sides $8$ and $12$. A square of the same perimeter has area $100$.`,
+    solution_overview: `Five independent rectangle claims. Use $2(L + w) = P$ and $Lw = A$, or check area and perimeter directly on the stated sides.`,
   },
   {
     id: `math-4-49`,
@@ -4305,7 +4339,7 @@ so the ratio is $6 : 1$, not $5 : 1$. The claim does not match the ratio, so the
       `A $10$ m ladder leans against a wall. Its foot is $2$ m farther from the wall than the height it reaches. A worker concludes that the top is $6$ m up the wall.`,
       `A $13$ m ladder leans against a warehouse wall and reaches $5$ m up. A worker claims the foot is $7$ m from the wall.`,
       `A $10$ m ladder reaches $6$ m up a wall. It is claimed that the foot therefore sits $8$ m from the base of the wall.`,
-      `A ladder, the wall, and the ground form a right triangle with legs $6$ m and $8$ m. The area of that triangle is claimed to be $24$ m$^{2}$.`,
+      `A right triangle with legs $9$ m and $12$ m has area $54$ m$^{2}$.`,
       `A $13$ m ladder stands with its foot $12$ m from a wall. A worker reports that it reaches $9$ m up the wall.`,
     ],
     answer_key: [true, false, true, true, false],
@@ -4365,11 +4399,11 @@ The foot sits $8$ m from the wall, so the statement is True.`,
 
 The area of a right triangle is half the product of the legs:
 
-$$A = \\frac{1}{2} \\cdot 6 \\cdot 8$$
+$$A = \\frac{1}{2} \\cdot 9 \\cdot 12$$
 
-$$A = 24$$
+$$A = 54$$
 
-The claimed area is $24$ m$^{2}$, so the statement is True.`,
+The claimed area is $54$ m$^{2}$, so the statement is True.`,
       `**E.** → False
 
 Let the height on the wall be $h$ m. Pythagoras with foot $12$ m and hypotenuse $13$ m:
@@ -4403,7 +4437,7 @@ The height is $5$ m, so the statement is False.`,
       `Clearing $x + \\dfrac{3}{x} = 4$ with $x \\neq 0$ produces $x^{2} - 4x + 3 = 0$.`,
       `The equation $x + \\dfrac{5}{x} = 6$ with $x \\neq 0$ has two distinct real solutions.`,
       `If $x + \\dfrac{1}{x} = 3$ with $x \\neq 0$, then $x^{3} + \\dfrac{1}{x^{3}} = 27$.`,
-      `The equation $x + \\dfrac{2}{x} = 3$ with $x \\neq 0$ has exactly one real solution.`,
+      `The equation $x + \\dfrac{4}{x} = 5$ with $x \\neq 0$ has exactly one real solution.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -4467,17 +4501,17 @@ $$x^{3} + \\frac{1}{x^{3}} = 18$$
 The claim reports $27$, which is $3^{3}$ with the $3\\left(x + \\frac{1}{x}\\right)$ term left in. The cube sum is $18$, not $27$, so the statement is False.`,
       `**E.** → False
 
-Clear $x + \\frac{2}{x} = 3$ with $x \\neq 0$:
+Clear $x + \\frac{4}{x} = 5$ with $x \\neq 0$:
 
-$$x^{2} + 2 = 3x$$
+$$x^{2} + 4 = 5x$$
 
-$$x^{2} - 3x + 2 = 0$$
+$$x^{2} - 5x + 4 = 0$$
 
-$$(x - 1)(x - 2) = 0$$
+$$(x - 1)(x - 4) = 0$$
 
-There are two distinct real solutions, $x = 1$ and $x = 2$, not exactly one. The discriminant is
+There are two distinct real solutions, $x = 1$ and $x = 4$, not exactly one. The discriminant is
 
-$$\\Delta = 9 - 8 = 1 > 0$$
+$$\\Delta = 25 - 16 = 9 > 0$$
 
 confirming two roots, so the statement is False.`,
     ],
@@ -5075,7 +5109,7 @@ and $-\\frac{1}{4} \\neq \\frac{1}{4}$. The two sides of $\\frac{3}{x} = \\frac{
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\dfrac{x}{x + 3} = \\dfrac{2}{5}$ has a unique real solution, and that solution is an integer.`,
-      `At the solution of $\\dfrac{x}{x + 1} = \\dfrac{3}{4}$, the expression $\\dfrac{2}{x - 2}$ is defined.`,
+      `The equation $\\dfrac{x}{x + 1} = \\dfrac{3}{4}$ has a unique real solution, and that solution is positive.`,
       `The equation $\\dfrac{x + 1}{x + 3} = \\dfrac{1}{2}$ has a real solution strictly greater than $5$.`,
       `Clearing denominators in $\\dfrac{x}{x - 2} = 1$ allows the excluded value where $x - 2 = 0$ to still be a solution.`,
       `The equation $\\dfrac{2x}{x + 5} = -\\dfrac{4}{3}$ has a real solution that is negative.`,
@@ -5115,11 +5149,7 @@ $$4x = 3x + 3$$
 
 $$x = 3$$
 
-At that solution,
-
-$$x - 2 = 3 - 2 = 1 \\neq 0$$
-
-so $\\dfrac{2}{x - 2}$ is defined. The statement is True.`,
+The recovered solution is $x = 3$, which is positive. The statement is True.`,
       `**C.** → False
 
 First exclude the hole $x = -3$ in
