@@ -4395,89 +4395,95 @@ The height is $5$ m, so the statement is False.`,
   {
     id: `math-4-51`,
     case_id: `MATH 4.51`,
-    title: `Five separate $x + 1/x$ substitution stories`,
+    title: `Five separate reciprocal-sum claims`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If $x + \\dfrac{1}{x} = 4$ with $x \\neq 0$, then $x^{2} + \\dfrac{1}{x^{2}} = 16$.`,
-      `If $x + \\dfrac{1}{x} = 4$ with $x \\neq 0$, then $x^{2} + \\dfrac{1}{x^{2}} = 14$.`,
-      `Clearing $x + \\frac{1}{x} = 4$ produces $x^{2} - 4x + 1 = 0$.`,
-      `If $x + \\dfrac{1}{x} = 4$, then $x^{3} + \\dfrac{1}{x^{3}} = 64$.`,
-      `The equation $x + \\frac{1}{x} = 4$ has two distinct real solutions, and exactly one of them is greater than $1$.`,
+      `If $x + \\dfrac{2}{x} = 3$ with $x \\neq 0$, then $x^{2} + \\dfrac{4}{x^{2}} = 5$.`,
+      `Clearing $x + \\dfrac{3}{x} = 4$ with $x \\neq 0$ produces $x^{2} - 4x + 3 = 0$.`,
+      `The equation $x + \\dfrac{5}{x} = 6$ with $x \\neq 0$ has two distinct real solutions.`,
+      `If $x + \\dfrac{1}{x} = 3$ with $x \\neq 0$, then $x^{3} + \\dfrac{1}{x^{3}} = 27$.`,
+      `The equation $x + \\dfrac{2}{x} = 3$ with $x \\neq 0$ has exactly one real solution.`,
     ],
-    answer_key: [false, true, true, false, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
 Let the number be $x \\neq 0$, with
 
-$$x + \\frac{1}{x} = 4$$
+$$x + \\frac{2}{x} = 3$$
 
-Square both sides. The expansion is $(a + b)^{2} = a^{2} + 2ab + b^{2}$ with $a = x$ and $b = \\frac{1}{x}$, so the cross term is $2$:
+Square both sides. The expansion is $(a + b)^{2} = a^{2} + 2ab + b^{2}$ with $a = x$ and $b = \\frac{2}{x}$, so the cross term is $4$:
 
-$$\\left(x + \\frac{1}{x}\\right)^{2} = 4^{2}$$
+$$\\left(x + \\frac{2}{x}\\right)^{2} = 3^{2}$$
 
-$$x^{2} + 2 \\cdot x \\cdot \\frac{1}{x} + \\frac{1}{x^{2}} = 16$$
+$$x^{2} + 2 \\cdot x \\cdot \\frac{2}{x} + \\frac{4}{x^{2}} = 9$$
 
-$$x^{2} + 2 + \\frac{1}{x^{2}} = 16$$
+$$x^{2} + 4 + \\frac{4}{x^{2}} = 9$$
 
-$$x^{2} + \\frac{1}{x^{2}} = 14$$
+$$x^{2} + \\frac{4}{x^{2}} = 5$$
 
-The claim reports $16$, which is $4^{2}$ with the cross term $2$ left in. The square of the number plus the square of the reciprocal is $14$, not $16$, so the statement is False.`,
+The claimed value is $5$, so the statement is True.`,
       `**B.** → True
 
-Start from $x + \\frac{1}{x} = 4$ with $x \\neq 0$ and square:
+The equation is $x + \\frac{3}{x} = 4$ with $x \\neq 0$. Multiply through by $x$ to clear the denominator:
 
-$$\\left(x + \\frac{1}{x}\\right)^{2} = 16$$
+$$x \\cdot x + x \\cdot \\frac{3}{x} = 4x$$
 
-$$x^{2} + 2 + \\frac{1}{x^{2}} = 16$$
+$$x^{2} + 3 = 4x$$
 
-$$x^{2} + \\frac{1}{x^{2}} = 14$$
-
-The claimed value is $14$, so the statement is True.`,
-      `**C.** → True
-
-The equation is $x + \\frac{1}{x} = 4$ with $x \\neq 0$. Multiply through by $x$ to clear the denominator:
-
-$$x \\cdot x + x \\cdot \\frac{1}{x} = 4x$$
-
-$$x^{2} + 1 = 4x$$
-
-$$x^{2} - 4x + 1 = 0$$
+$$x^{2} - 4x + 3 = 0$$
 
 That is the claimed quadratic, so the statement is True.`,
+      `**C.** → True
+
+Clear the denominator in $x + \\frac{5}{x} = 6$ with $x \\neq 0$:
+
+$$x^{2} + 5 = 6x$$
+
+$$x^{2} - 6x + 5 = 0$$
+
+$$(x - 1)(x - 5) = 0$$
+
+The discriminant is
+
+$$\\Delta = 36 - 20 = 16 > 0$$
+
+so there are two distinct real solutions. Both $x = 1$ and $x = 5$ check in the original equation, so the statement is True.`,
       `**D.** → False
 
-Cube the identity $x + \\frac{1}{x} = 4$. The expansion $(a + b)^{3} = a^{3} + b^{3} + 3ab(a + b)$ with $ab = 1$ gives
+Cube the identity $x + \\frac{1}{x} = 3$. The expansion $(a + b)^{3} = a^{3} + b^{3} + 3ab(a + b)$ with $ab = 1$ gives
 
-$$\\left(x + \\frac{1}{x}\\right)^{3} = 4^{3}$$
+$$\\left(x + \\frac{1}{x}\\right)^{3} = 3^{3}$$
 
-$$x^{3} + \\frac{1}{x^{3}} + 3 \\cdot 1 \\cdot \\left(x + \\frac{1}{x}\\right) = 64$$
+$$x^{3} + \\frac{1}{x^{3}} + 3 \\cdot 1 \\cdot \\left(x + \\frac{1}{x}\\right) = 27$$
 
-$$x^{3} + \\frac{1}{x^{3}} + 3 \\cdot 4 = 64$$
+$$x^{3} + \\frac{1}{x^{3}} + 3 \\cdot 3 = 27$$
 
-$$x^{3} + \\frac{1}{x^{3}} + 12 = 64$$
+$$x^{3} + \\frac{1}{x^{3}} + 9 = 27$$
 
-$$x^{3} + \\frac{1}{x^{3}} = 52$$
+$$x^{3} + \\frac{1}{x^{3}} = 18$$
 
-The claim reports $64$, which is $4^{3}$ with the $3\\left(x + \\frac{1}{x}\\right)$ term left in. The cube sum is $52$, not $64$, so the statement is False.`,
-      `**E.** → True
+The claim reports $27$, which is $3^{3}$ with the $3\\left(x + \\frac{1}{x}\\right)$ term left in. The cube sum is $18$, not $27$, so the statement is False.`,
+      `**E.** → False
 
-Clearing $x + \\frac{1}{x} = 4$ produced $x^{2} - 4x + 1 = 0$. The quadratic formula with $a = 1$, $b = -4$, $c = 1$ is
+Clear $x + \\frac{2}{x} = 3$ with $x \\neq 0$:
 
-$$x = \\frac{4 \\pm \\sqrt{16 - 4}}{2}$$
+$$x^{2} + 2 = 3x$$
 
-$$x = \\frac{4 \\pm \\sqrt{12}}{2}$$
+$$x^{2} - 3x + 2 = 0$$
 
-$$x = \\frac{4 \\pm 2\\sqrt{3}}{2}$$
+$$(x - 1)(x - 2) = 0$$
 
-$$x = 2 \\pm \\sqrt{3}$$
+There are two distinct real solutions, $x = 1$ and $x = 2$, not exactly one. The discriminant is
 
-The two solutions are $2 \\pm \\sqrt{3}$; one is greater than $1$ and the other is between $0$ and $1$. Therefore exactly one of them is greater than $1$, so the statement is True.`,
+$$\\Delta = 9 - 8 = 1 > 0$$
+
+confirming two roots, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 51,
-    solution_overview: `Five independent reciprocal-sum claims. From $x + \\frac{1}{x} = 4$, squaring gives $14$ and the cubic identity gives $52$.`,
+    solution_overview: `Five independent reciprocal-sum claims. Squaring and cubing identities, clearing denominators, and reading the discriminant of the cleared quadratic decide each statement.`,
   },
   {
     id: `math-4-52`,
@@ -4488,7 +4494,7 @@ The two solutions are $2 \\pm \\sqrt{3}$; one is greater than $1$ and the other 
     statements: [
       `All four solutions of $x^{4} - 10x^{2} + 9 = 0$ are integers.`,
       `The equation $x^{4} - 8x^{2} + 15 = 0$ has four different real solutions.`,
-      `The sum of all four roots of $x^{4} + 2x^{2} - 8 = 0$ is $0$.`,
+      `The sum of all four roots of $x^{4} - 5x^{2} + 4 = 0$ is $0$.`,
       `The equation $x^{4} - 3x^{2} + 2 = 0$ has exactly two real solutions.`,
       `The equation $x^{4} - 13x^{2} + 36 = 0$ has no negative real solutions.`,
     ],

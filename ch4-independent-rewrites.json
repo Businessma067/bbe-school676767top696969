@@ -1,0 +1,227 @@
+{
+  "math-4-22": {
+    "title": "Five separate train-passing and unit-conversion stories",
+    "statements": [
+      "Two trains $180$ m and $320$ m long run toward each other at $72$ km/h and $108$ km/h. From the instant their fronts meet until they have completely passed takes $10$ seconds.",
+      "A motorcyclist's steady speed of $54$ km/h is equivalent to $15$ m/s.",
+      "Two trains $150$ m and $250$ m long run in the same direction at $90$ km/h and $54$ km/h. The faster train takes $20$ seconds to pass the slower completely.",
+      "A courier rides $45$ km at a steady $15$ km/h. The journey lasts $15$ minutes.",
+      "Converting $36$ km/h to metres per second gives $12$ m/s."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nOpposite trains pass when they cover the sum of their lengths at the sum of their speeds.\n\nThe lengths add to\n\n$$180 + 320 = 500$$\n\nmetres. The speeds add to\n\n$$72 + 108 = 180$$\n\nkilometres per hour. A speed in kilometres per hour converts to metres per second by multiplying by $\\\\frac{5}{18}$:\n\n$$180 \\\\cdot \\\\frac{5}{18}$$\n\n$$= 50$$\n\nmetres per second. The passing time is then\n\n$$t = \\\\frac{500}{50}$$\n\n$$= 10$$\n\nseconds. The recovered time is $10$ seconds, matching the claim, so the statement is True.",
+      "**B.** → True\n\nA speed in kilometres per hour converts to metres per second by multiplying by $\\\\frac{5}{18}$.\n\n$$54 \\\\cdot \\\\frac{5}{18}$$\n\n$$= 15$$\n\nThe speed is $15$ metres per second. The claim is that same figure, so the statement is True.",
+      "**C.** → False\n\nTrains running in the same direction pass at the difference of their speeds.\n\n$$90 - 54 = 36$$\n\nkilometres per hour. Convert to metres per second:\n\n$$36 \\\\cdot \\\\frac{5}{18}$$\n\n$$= 10$$\n\nmetres per second. They must still cover the sum of their lengths:\n\n$$150 + 250 = 400$$\n\nmetres, so\n\n$$t = \\\\frac{400}{10}$$\n\n$$= 40$$\n\nseconds. The recovered time is $40$ seconds, not $20$. The claimed $20$ seconds at $10$ m/s would cover only $200$ m, so the statement is False.",
+      "**D.** → False\n\nTime is distance divided by speed.\n\n$$t = \\\\frac{45}{15}$$\n\n$$= 3$$\n\nhours. Three hours is\n\n$$3 \\\\cdot 60 = 180$$\n\nminutes, not $15$ minutes. The claimed $15$ minutes would cover only\n\n$$15 \\\\cdot \\\\frac{15}{60} = 3.75$$\n\nkilometres at $15$ km/h, so the statement is False.",
+      "**E.** → False\n\nA speed in kilometres per hour converts to metres per second by multiplying by $\\\\frac{5}{18}$.\n\n$$36 \\\\cdot \\\\frac{5}{18}$$\n\n$$= 10$$\n\nThe conversion is $10$ metres per second, not $12$. The claimed $12$ m/s would be the conversion of $43.2$ km/h, not of $36$ km/h, so the statement is False."
+    ],
+    "solution_overview": "Five independent rate and conversion claims. Opposite trains cover the sum of lengths at the sum of speeds; same-direction passing uses the speed difference. Convert km/h to m/s with $\\\\frac{5}{18}$. Journey time is distance over speed."
+  },
+  "math-4-34": {
+    "title": "Five separate quadratic root and discriminant claims",
+    "statements": [
+      "The quadratic equation $x^{2} - 5x + 6 = 0$ has two distinct positive real roots.",
+      "The discriminant of $x^{2} + 2x + 5 = 0$ is $4$.",
+      "The equation $x^{2} - 4x + 4 = 0$ has exactly one real solution.",
+      "The quadratic $x^{2} + 3x - 10 = 0$ has negative root $-5$.",
+      "The equation $x^{2} - 2x - 8 = 0$ has no real solutions."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nMove everything to one side, factor, and set each factor to zero.\n\n$$x^{2} - 5x + 6 = 0$$\n\n$$(x - 2)(x - 3) = 0$$\n\nThen $x = 2$ or $x = 3$. Both roots are positive and distinct. The discriminant confirms two distinct real roots:\n\n$$\\\\Delta = (-5)^{2} - 4 \\\\cdot 1 \\\\cdot 6$$\n\n$$\\\\Delta = 25 - 24$$\n\n$$\\\\Delta = 1 > 0$$\n\nThe claim matches that sign pattern, so the statement is True.",
+      "**B.** → False\n\nThe discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$.\n\nHere $a = 1$, $b = 2$, and $c = 5$:\n\n$$\\\\Delta = 2^{2} - 4 \\\\cdot 1 \\\\cdot 5$$\n\n$$\\\\Delta = 4 - 20$$\n\n$$\\\\Delta = -16$$\n\nThe discriminant is $-16$, not $4$. A discriminant of $4$ would belong to a quadratic such as $x^{2} + 2x + 1$, so the statement is False.",
+      "**C.** → True\n\nA discriminant of zero means a repeated real root.\n\nFor $x^{2} - 4x + 4 = 0$, here $a = 1$, $b = -4$, and $c = 4$:\n\n$$\\\\Delta = (-4)^{2} - 4 \\\\cdot 1 \\\\cdot 4$$\n\n$$\\\\Delta = 16 - 16$$\n\n$$\\\\Delta = 0$$\n\nFactoring makes the repeated root visible:\n\n$$x^{2} - 4x + 4 = (x - 2)^{2}$$\n\n$$(x - 2)^{2} = 0$$\n\n$$x = 2$$\n\nThere is exactly one real solution, a double root at $x = 2$. The claim matches that count, so the statement is True.",
+      "**D.** → True\n\nMove everything to one side, factor, and set each factor to zero.\n\n$$x^{2} + 3x - 10 = 0$$\n\n$$(x + 5)(x - 2) = 0$$\n\nThen $x = -5$ or $x = 2$. The negative root is $-5$. Check:\n\n$$(-5)^{2} + 3(-5) - 10 = 0$$\n\nThe claim is that same root, so the statement is True.",
+      "**E.** → False\n\nA negative discriminant means no real roots.\n\nFor $x^{2} - 2x - 8 = 0$, here $a = 1$, $b = -2$, and $c = -8$:\n\n$$\\\\Delta = (-2)^{2} - 4 \\\\cdot 1 \\\\cdot (-8)$$\n\n$$\\\\Delta = 4 + 32$$\n\n$$\\\\Delta = 36$$\n\nSince $\\\\Delta = 36 > 0$, there are two distinct real roots. Factoring gives\n\n$$(x - 4)(x + 2) = 0$$\n\nso real roots exist. The claim of no real solutions is incorrect, so the statement is False."
+    ],
+    "solution_overview": "Five independent quadratic claims on different equations. Factor when possible, or read the discriminant $b^{2} - 4ac$ to decide root count and sign."
+  },
+  "math-4-39": {
+    "title": "Five separate discriminant and root-count claims",
+    "statements": [
+      "The equation $x^{2} - 6x + 10 = 0$ has no real solution.",
+      "The equation $2x^{2} + 4x + 2 = 0$ has exactly one distinct real root.",
+      "The equation $x^{2} + x - 12 = 0$ has two different real solutions.",
+      "The equation $x^{2} + 2x + 3 = 0$ has two distinct real solutions.",
+      "The equation $3x^{2} - 2x + 1 = 0$ has no real solution."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$. A negative discriminant means no real roots.\n\nFor $x^{2} - 6x + 10 = 0$, here $a = 1$, $b = -6$, and $c = 10$:\n\n$$\\\\Delta = (-6)^{2} - 4 \\\\cdot 1 \\\\cdot 10$$\n\n$$\\\\Delta = 36 - 40$$\n\n$$\\\\Delta = -4$$\n\nSince $\\\\Delta < 0$, there are no real roots. Completing the square gives the same conclusion:\n\n$$(x - 3)^{2} + 1 = 0$$\n\nA square plus one cannot be zero. No real number works, so the statement is True.",
+      "**B.** → True\n\nA discriminant of zero means a repeated real root. Divide the equation by $2$ first:\n\n$$x^{2} + 2x + 1 = 0$$\n\nHere $a = 1$, $b = 2$, and $c = 1$:\n\n$$\\\\Delta = 2^{2} - 4 \\\\cdot 1 \\\\cdot 1$$\n\n$$\\\\Delta = 4 - 4$$\n\n$$\\\\Delta = 0$$\n\nFactoring makes the repeated root visible:\n\n$$x^{2} + 2x + 1 = (x + 1)^{2}$$\n\n$$(x + 1)^{2} = 0$$\n\n$$x = -1$$\n\nThere is exactly one distinct real root, a double root at $x = -1$. The claim matches that count, so the statement is True.",
+      "**C.** → True\n\nA positive discriminant means two distinct real roots.\n\nFor $x^{2} + x - 12 = 0$, here $a = 1$, $b = 1$, and $c = -12$:\n\n$$\\\\Delta = 1^{2} - 4 \\\\cdot 1 \\\\cdot (-12)$$\n\n$$\\\\Delta = 1 + 48$$\n\n$$\\\\Delta = 49$$\n\nSince $\\\\Delta > 0$, two different real numbers work. Factoring confirms:\n\n$$(x + 4)(x - 3) = 0$$\n\nThe claim matches that count, so the statement is True.",
+      "**D.** → False\n\nThe discriminant decides whether distinct real roots exist.\n\nFor $x^{2} + 2x + 3 = 0$, here $a = 1$, $b = 2$, and $c = 3$:\n\n$$\\\\Delta = 2^{2} - 4 \\\\cdot 1 \\\\cdot 3$$\n\n$$\\\\Delta = 4 - 12$$\n\n$$\\\\Delta = -8$$\n\nSince $\\\\Delta < 0$, there are no real roots at all, let alone two distinct ones. The claim is incorrect, so the statement is False.",
+      "**E.** → True\n\nThe discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$.\n\nFor $3x^{2} - 2x + 1 = 0$, here $a = 3$, $b = -2$, and $c = 1$:\n\n$$\\\\Delta = (-2)^{2} - 4 \\\\cdot 3 \\\\cdot 1$$\n\n$$\\\\Delta = 4 - 12$$\n\n$$\\\\Delta = -8$$\n\nSince $\\\\Delta < 0$, there are no real solutions. The claim matches that count, so the statement is True."
+    ],
+    "solution_overview": "Five independent discriminant claims on different quadratics. Compute $\\\\Delta = b^{2} - 4ac$: negative means none, zero means one repeated root, positive means two distinct real roots."
+  },
+  "math-4-40": {
+    "title": "Five separate Vieta sum-and-product stories",
+    "statements": [
+      "Two numbers add to $12$ and multiply to $32$. They are $4$ and $8$.",
+      "Two numbers add to $9$ and multiply to $14$. Their difference is $5$.",
+      "Two numbers add to $11$ and multiply to $24$. They are $3$ and $8$.",
+      "Two numbers add to $13$ and multiply to $36$. Both are greater than $6$.",
+      "Two numbers add to $8$ and multiply to $15$. Each of them is negative."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo numbers with sum $S$ and product $P$ are the roots of $t^{2} - St + P = 0$.\n\nHere $S = 12$ and $P = 32$, so\n\n$$t^{2} - 12t + 32 = 0$$\n\n$$(t - 4)(t - 8) = 0$$\n\nThe numbers are $4$ and $8$. Check:\n\n$$4 + 8 = 12$$\n\n$$4 \\\\cdot 8 = 32$$\n\nThe claim is that same pair, so the statement is True.",
+      "**B.** → True\n\nTwo numbers that add to $9$ and multiply to $14$ are the roots of\n\n$$t^{2} - 9t + 14 = 0$$\n\n$$(t - 2)(t - 7) = 0$$\n\nThe numbers are $2$ and $7$. Their difference is\n\n$$7 - 2 = 5$$\n\nThe claimed difference is $5$, so the statement is True.",
+      "**C.** → True\n\nTwo numbers with sum $11$ and product $24$ solve\n\n$$t^{2} - 11t + 24 = 0$$\n\n$$(t - 3)(t - 8) = 0$$\n\nThe numbers are $3$ and $8$. Check:\n\n$$3 + 8 = 11$$\n\n$$3 \\\\cdot 8 = 24$$\n\nThe claim is that same pair, so the statement is True.",
+      "**D.** → False\n\nTwo numbers that add to $13$ and multiply to $36$ are the roots of\n\n$$t^{2} - 13t + 36 = 0$$\n\n$$(t - 4)(t - 9) = 0$$\n\nThe numbers are $4$ and $9$. Then $9 > 6$, but $4$ is not greater than $6$. Both greater than $6$ would be a different pair whose product exceeds $36$, so the statement is False.",
+      "**E.** → False\n\nTwo numbers with sum $8$ and product $15$ are the roots of\n\n$$t^{2} - 8t + 15 = 0$$\n\n$$(t - 3)(t - 5) = 0$$\n\nThe numbers are $3$ and $5$, both positive. A negative pair with product $15$ would need a negative sum as well, because a negative times a negative is positive and the sum of two negatives is negative. The sum here is $8 > 0$, so both numbers are positive. The claim that each is negative is incorrect, so the statement is False."
+    ],
+    "solution_overview": "Five independent Vieta claims with different sum-and-product pairs. Each pair is the roots of $t^{2} - (\\\\text{sum})t + (\\\\text{product}) = 0$."
+  },
+  "math-4-41": {
+    "title": "Five separate completing-the-square and factoring claims",
+    "statements": [
+      "Completing the square turns $x^{2} + 6x + 5 = 0$ into $\\\\left(x + 3\\\\right)^{2} = 4$.",
+      "The quadratic $x^{2} - 8x + 12 = 0$ factors as $(x - 2)(x - 6)$.",
+      "Completing the square turns $x^{2} - 4x - 1 = 0$ into $\\\\left(x - 2\\\\right)^{2} = 5$.",
+      "The product of the two real roots of $x^{2} + 5x + 6 = 0$ is $8$.",
+      "Both real roots of $x^{2} - 3x - 4 = 0$ are positive."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nCompleting the square moves the constant, then adds the square of half the linear coefficient so the left side becomes a perfect square.\n\n$$x^{2} + 6x + 5 = 0$$\n\n$$x^{2} + 6x = -5$$\n\nHalf of the coefficient of $x$ is\n\n$$\\\\frac{1}{2} \\\\cdot 6 = 3$$\n\nSquaring that half gives the constant that completes the square:\n\n$$3^{2} = 9$$\n\nAdding $9$ to both sides:\n\n$$x^{2} + 6x + 9 = -5 + 9$$\n\nThe left side is the expansion of $\\\\left(x + 3\\\\right)^{2}$:\n\n$$\\\\left(x + 3\\\\right)^{2} = 4$$\n\nThat is the completed-square form in the claim, so the statement is True.",
+      "**B.** → True\n\nFactor by finding two numbers that multiply to the constant term and add to the linear coefficient.\n\nFor $x^{2} - 8x + 12 = 0$, the numbers $-2$ and $-6$ multiply to $12$ and add to $-8$:\n\n$$x^{2} - 8x + 12 = (x - 2)(x - 6)$$\n\nCheck by expanding:\n\n$$(x - 2)(x - 6) = x^{2} - 8x + 12$$\n\nThe claim is that same factorisation, so the statement is True.",
+      "**C.** → True\n\nCompleting the square moves the constant, then adds the square of half the linear coefficient.\n\n$$x^{2} - 4x - 1 = 0$$\n\n$$x^{2} - 4x = 1$$\n\nHalf of the coefficient of $x$ is\n\n$$\\\\frac{1}{2} \\\\cdot (-4) = -2$$\n\nSquaring that half gives\n\n$$(-2)^{2} = 4$$\n\nAdding $4$ to both sides:\n\n$$x^{2} - 4x + 4 = 1 + 4$$\n\nThe left side is $\\\\left(x - 2\\\\right)^{2}$:\n\n$$\\\\left(x - 2\\\\right)^{2} = 5$$\n\nThat is the completed-square form in the claim, so the statement is True.",
+      "**D.** → False\n\nFor a monic quadratic $x^{2} + bx + c = 0$, Vieta's product formula says the roots multiply to the constant term $c$.\n\nFor $x^{2} + 5x + 6 = 0$, the product is $6$. Factoring confirms:\n\n$$(x + 2)(x + 3) = 0$$\n\n$$2 \\\\cdot 3 = 6$$\n\nThe claim reports $8$, which would require constant term $8$, not $6$, so the statement is False.",
+      "**E.** → False\n\nMove everything to one side, factor, and set each factor to zero.\n\n$$x^{2} - 3x - 4 = 0$$\n\n$$(x - 4)(x + 1) = 0$$\n\nThe two real roots are $4$ and $-1$. One of them is negative, so they cannot both be positive. The claim fails, so the statement is False."
+    ],
+    "solution_overview": "Five independent completing-the-square and factoring claims on different quadratics. Vieta's product on a monic quadratic is the constant term."
+  },
+  "math-4-51": {
+    "title": "Five separate reciprocal-sum claims",
+    "statements": [
+      "If $x + \\\\dfrac{2}{x} = 3$ with $x \\\\neq 0$, then $x^{2} + \\\\dfrac{4}{x^{2}} = 5$.",
+      "Clearing $x + \\\\dfrac{3}{x} = 4$ with $x \\\\neq 0$ produces $x^{2} - 4x + 3 = 0$.",
+      "The equation $x + \\\\dfrac{5}{x} = 6$ with $x \\\\neq 0$ has two distinct real solutions.",
+      "If $x + \\\\dfrac{1}{x} = 3$ with $x \\\\neq 0$, then $x^{3} + \\\\dfrac{1}{x^{3}} = 27$.",
+      "The equation $x + \\\\dfrac{2}{x} = 3$ with $x \\\\neq 0$ has exactly one real solution."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nLet the number be $x \\\\neq 0$, with\n\n$$x + \\\\frac{2}{x} = 3$$\n\nSquare both sides. The expansion is $(a + b)^{2} = a^{2} + 2ab + b^{2}$ with $a = x$ and $b = \\\\frac{2}{x}$, so the cross term is $4$:\n\n$$\\\\left(x + \\\\frac{2}{x}\\\\right)^{2} = 3^{2}$$\n\n$$x^{2} + 2 \\\\cdot x \\\\cdot \\\\frac{2}{x} + \\\\frac{4}{x^{2}} = 9$$\n\n$$x^{2} + 4 + \\\\frac{4}{x^{2}} = 9$$\n\n$$x^{2} + \\\\frac{4}{x^{2}} = 5$$\n\nThe claimed value is $5$, so the statement is True.",
+      "**B.** → True\n\nThe equation is $x + \\\\frac{3}{x} = 4$ with $x \\\\neq 0$. Multiply through by $x$ to clear the denominator:\n\n$$x \\\\cdot x + x \\\\cdot \\\\frac{3}{x} = 4x$$\n\n$$x^{2} + 3 = 4x$$\n\n$$x^{2} - 4x + 3 = 0$$\n\nThat is the claimed quadratic, so the statement is True.",
+      "**C.** → True\n\nClear the denominator in $x + \\\\frac{5}{x} = 6$ with $x \\\\neq 0$:\n\n$$x^{2} + 5 = 6x$$\n\n$$x^{2} - 6x + 5 = 0$$\n\n$$(x - 1)(x - 5) = 0$$\n\nThe discriminant is\n\n$$\\\\Delta = 36 - 20 = 16 > 0$$\n\nso there are two distinct real solutions. Both $x = 1$ and $x = 5$ check in the original equation, so the statement is True.",
+      "**D.** → False\n\nCube the identity $x + \\\\frac{1}{x} = 3$. The expansion $(a + b)^{3} = a^{3} + b^{3} + 3ab(a + b)$ with $ab = 1$ gives\n\n$$\\\\left(x + \\\\frac{1}{x}\\\\right)^{3} = 3^{3}$$\n\n$$x^{3} + \\\\frac{1}{x^{3}} + 3 \\\\cdot 1 \\\\cdot \\\\left(x + \\\\frac{1}{x}\\\\right) = 27$$\n\n$$x^{3} + \\\\frac{1}{x^{3}} + 3 \\\\cdot 3 = 27$$\n\n$$x^{3} + \\\\frac{1}{x^{3}} + 9 = 27$$\n\n$$x^{3} + \\\\frac{1}{x^{3}} = 18$$\n\nThe claim reports $27$, which is $3^{3}$ with the $3\\\\left(x + \\\\frac{1}{x}\\\\right)$ term left in. The cube sum is $18$, not $27$, so the statement is False.",
+      "**E.** → False\n\nClear $x + \\\\frac{2}{x} = 3$ with $x \\\\neq 0$:\n\n$$x^{2} + 2 = 3x$$\n\n$$x^{2} - 3x + 2 = 0$$\n\n$$(x - 1)(x - 2) = 0$$\n\nThere are two distinct real solutions, $x = 1$ and $x = 2$, not exactly one. The discriminant is\n\n$$\\\\Delta = 9 - 8 = 1 > 0$$\n\nconfirming two roots, so the statement is False."
+    ],
+    "solution_overview": "Five independent reciprocal-sum claims. Squaring and cubing identities, clearing denominators, and reading the discriminant of the cleared quadratic decide each statement."
+  },
+  "math-4-52": {
+    "title": "Five separate biquadratic claims",
+    "statements": [
+      "All four solutions of $x^{4} - 10x^{2} + 9 = 0$ are integers.",
+      "The equation $x^{4} - 8x^{2} + 15 = 0$ has four different real solutions.",
+      "The sum of all four roots of $x^{4} - 5x^{2} + 4 = 0$ is $0$.",
+      "The equation $x^{4} - 3x^{2} + 2 = 0$ has exactly two real solutions.",
+      "The equation $x^{4} - 13x^{2} + 36 = 0$ has no negative real solutions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe equation is $x^{4} - 10x^{2} + 9 = 0$. Substitute $u = x^{2}$, so $u \\\\ge 0$:\n\n$$u^{2} - 10u + 9 = 0$$\n\n$$(u - 9)(u - 1) = 0$$\n\n$$u = 9$$\n\nor\n\n$$u = 1$$\n\nThen $x^{2} = 9$ gives $x = \\\\pm 3$, and $x^{2} = 1$ gives $x = \\\\pm 1$. All four solutions are integers, so the statement is True.",
+      "**B.** → True\n\nSubstitute $u = x^{2}$ in $x^{4} - 8x^{2} + 15 = 0$:\n\n$$u^{2} - 8u + 15 = 0$$\n\n$$(u - 5)(u - 3) = 0$$\n\n$$u = 5$$\n\nor\n\n$$u = 3$$\n\nThen $x = \\\\pm \\\\sqrt{5}$ and $x = \\\\pm \\\\sqrt{3}$. These are four different real numbers, so the statement is True.",
+      "**C.** → True\n\nFor a monic degree-$4$ polynomial $x^{4} + ax^{3} + \\\\cdots$, Vieta's sum of roots is $-a$. Here there is no $x^{3}$ term, so $a = 0$ and the sum is $0$.\n\nSubstitute $u = x^{2}$ in $x^{4} - 5x^{2} + 4 = 0$:\n\n$$u^{2} - 5u + 4 = 0$$\n\n$$(u - 4)(u - 1) = 0$$\n\nThen $x^{2} = 4$ gives $x = \\\\pm 2$, and $x^{2} = 1$ gives $x = \\\\pm 1$. Check:\n\n$$1 + (-1) + 2 + (-2) = 0$$\n\nThe sum of all four roots is $0$, so the statement is True.",
+      "**D.** → False\n\nSubstitute $u = x^{2}$ in $x^{4} - 3x^{2} + 2 = 0$:\n\n$$u^{2} - 3u + 2 = 0$$\n\n$$(u - 2)(u - 1) = 0$$\n\n$$u = 2$$\n\nor\n\n$$u = 1$$\n\nThen $x^{2} = 2$ gives $x = \\\\pm \\\\sqrt{2}$, and $x^{2} = 1$ gives $x = \\\\pm 1$. That is four real solutions, not exactly two. The claim is incorrect, so the statement is False.",
+      "**E.** → False\n\nSubstitute $u = x^{2}$ in $x^{4} - 13x^{2} + 36 = 0$:\n\n$$u^{2} - 13u + 36 = 0$$\n\n$$(u - 4)(u - 9) = 0$$\n\nThen $x^{2} = 4$ gives $x = \\\\pm 2$, and $x^{2} = 9$ gives $x = \\\\pm 3$. The roots include $-2$ and $-3$, which are negative real numbers. The claim of no negative real solutions is incorrect, so the statement is False."
+    ],
+    "solution_overview": "Five independent biquadratic claims. Substitute $u = x^{2}$ to reduce to a quadratic in $u$, then take square roots. A missing $x^{3}$ term makes the four-root sum zero."
+  },
+  "math-4-53": {
+    "title": "Five separate long-rectangle stories",
+    "statements": [
+      "A rectangle is $8$ cm longer than it is wide, and its area is $240$ cm$^{2}$. The width is $12$ cm.",
+      "A rectangle is $5$ cm longer than it is wide, and its area is $84$ cm$^{2}$. Its diagonal is $13$ cm.",
+      "A rectangle of width $9$ cm and length $16$ cm has perimeter $50$ cm.",
+      "A rectangle of width $6$ cm whose length is $10$ cm more than its width has area $96$ cm$^{2}$.",
+      "A right triangle with legs $5$ cm and $12$ cm has area $30$ cm$^{2}$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nLet the width be $w$ cm. Then the length is $w + 8$ cm and the area is $240$ cm$^{2}$:\n\n$$w(w + 8) = 240$$\n\n$$w^{2} + 8w - 240 = 0$$\n\n$$\\\\Delta = 8^{2} - 4(1)(-240)$$\n\n$$\\\\Delta = 64 + 960$$\n\n$$\\\\Delta = 1024 = 32^{2}$$\n\n$$w = \\\\frac{-8 \\\\pm 32}{2}$$\n\n$$w = \\\\frac{24}{2} = 12$$\n\n$$w = \\\\frac{-40}{2} = -20$$\n\nA width must be positive, so $w = 12$ cm. Check: $12 \\\\cdot 20 = 240$. That is the claimed width, so the statement is True.",
+      "**B.** → False\n\nLet the width be $w$ cm. Then the length is $w + 5$ cm and the area is $84$ cm$^{2}$:\n\n$$w(w + 5) = 84$$\n\n$$w^{2} + 5w - 84 = 0$$\n\n$$(w + 12)(w - 7) = 0$$\n\nA width must be positive, so $w = 7$ cm. The length is then\n\n$$7 + 5 = 12$$\n\ncm. The diagonal $d$ satisfies Pythagoras:\n\n$$d^{2} = 7^{2} + 12^{2}$$\n\n$$d^{2} = 49 + 144$$\n\n$$d^{2} = 193$$\n\n$$d = \\\\sqrt{193}$$\n\nwhich is not $13$ cm. The claimed $13$ cm would be the hypotenuse of a $5$-$12$-$13$ triangle, not of $7$ by $12$, so the statement is False.",
+      "**C.** → True\n\nThe perimeter of a rectangle is twice the sum of length and width.\n\n$$P = 2(9 + 16)$$\n\n$$P = 2 \\\\cdot 25$$\n\n$$P = 50$$\n\nThe perimeter is $50$ cm. The claim is that same figure, so the statement is True.",
+      "**D.** → True\n\nThe length is $10$ cm more than the width $6$ cm:\n\n$$6 + 10 = 16$$\n\ncm. The area is the product of the sides:\n\n$$6 \\\\cdot 16 = 96$$\n\nThat equals the claimed area $96$ cm$^{2}$, so the statement is True.",
+      "**E.** → True\n\nThe area of a right triangle is half the product of its legs.\n\n$$A = \\\\frac{1}{2} \\\\cdot 5 \\\\cdot 12$$\n\n$$A = \\\\frac{60}{2}$$\n\n$$A = 30$$\n\nThe area is $30$ cm$^{2}$. The claim is that same figure, so the statement is True."
+    ],
+    "solution_overview": "Five independent rectangle and Pythagoras claims. Width $w$ and length $w + k$ with given area recover the sides by factoring or the quadratic formula; perimeter, area, and diagonal follow."
+  },
+  "math-4-55": {
+    "title": "Five separate reciprocal quadratic stories",
+    "statements": [
+      "The equation $x + \\\\dfrac{4}{x} = 4$ with $x \\\\neq 0$ has exactly one real solution.",
+      "The equation $x + \\\\dfrac{3}{x} = 4$ with $x \\\\neq 0$ has two positive real solutions.",
+      "Clearing $x + \\\\dfrac{8}{x} = 6$ with $x \\\\neq 0$ produces $x^{2} - 6x + 8 = 0$.",
+      "For $x + \\\\dfrac{2}{x} = 3$ with $x \\\\neq 0$, the product of the two cleared solutions is $3$.",
+      "The equation $x + \\\\dfrac{12}{x} = 7$ with $x \\\\neq 0$ has no real solutions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe equation is $x + \\\\frac{4}{x} = 4$ with $x \\\\neq 0$. Multiply through by $x$:\n\n$$x^{2} + 4 = 4x$$\n\n$$x^{2} - 4x + 4 = 0$$\n\n$$(x - 2)^{2} = 0$$\n\nThe discriminant is\n\n$$\\\\Delta = 16 - 16 = 0$$\n\nso there is exactly one real solution, the repeated root $x = 2$. Check:\n\n$$2 + \\\\frac{4}{2} = 4$$\n\nThe claim matches that count, so the statement is True.",
+      "**B.** → True\n\nClear $x + \\\\frac{3}{x} = 4$ with $x \\\\neq 0$:\n\n$$x^{2} + 3 = 4x$$\n\n$$x^{2} - 4x + 3 = 0$$\n\n$$(x - 1)(x - 3) = 0$$\n\nThe two real solutions are $1$ and $3$. Both are positive and both check in the original reciprocal equation, so the statement is True.",
+      "**C.** → True\n\nStart from $x + \\\\frac{8}{x} = 6$ with $x \\\\neq 0$. Multiply through by $x$ to clear the denominator:\n\n$$x^{2} + 8 = 6x$$\n\n$$x^{2} - 6x + 8 = 0$$\n\nThat is the claimed quadratic, so the statement is True.",
+      "**D.** → False\n\nClear $x + \\\\frac{2}{x} = 3$ with $x \\\\neq 0$:\n\n$$x^{2} + 2 = 3x$$\n\n$$x^{2} - 3x + 2 = 0$$\n\nFor this monic quadratic, Vieta's product of roots is the constant term $2$:\n\n$$(x - 1)(x - 2) = 0$$\n\n$$1 \\\\cdot 2 = 2$$\n\nThe claim reports $3$. Three is the sum of the roots, not the product:\n\n$$1 + 2 = 3$$\n\nThe product is $2$, not $3$, so the statement is False.",
+      "**E.** → False\n\nClear $x + \\\\frac{12}{x} = 7$ with $x \\\\neq 0$:\n\n$$x^{2} + 12 = 7x$$\n\n$$x^{2} - 7x + 12 = 0$$\n\n$$(x - 3)(x - 4) = 0$$\n\nThe discriminant is\n\n$$\\\\Delta = 49 - 48 = 1 > 0$$\n\nso there are two distinct real solutions, $3$ and $4$. Both check in the original equation. The claim of no real solutions is incorrect, so the statement is False."
+    ],
+    "solution_overview": "Five independent reciprocal-equation claims. Clearing produces a quadratic; the discriminant and Vieta's formulas decide root count, sign, sum, and product."
+  }
+}
