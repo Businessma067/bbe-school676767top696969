@@ -26,9 +26,9 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A shop doubles a price and then adds $6$ EUR. The till shows $14$ EUR. A clerk reports that the original price was $5$ EUR.`,
-      `In a practice paper the equation $5x - 3 = 12$ appears. A candidate claims that $x = 2$ is the unique real number that satisfies it.`,
+      `In a practice paper the equation $5x - 3 = 12$ appears. A candidate claims that the unique real solution $x$ satisfies $x \\le 2$.`,
       `After $7$ EUR is taken off a bill, the remainder is split into two equal shares of $4$ EUR. Then the original bill was $15$ EUR.`,
-      `The equation $3(x + 1) = 12$ is expanded and solved. A student concludes that the unique real solution is $x = 4$.`,
+      `The equation $3(x + 1) = 12$ is expanded and solved. A student concludes that the unique real solution $x$ satisfies $x \\ge 4$.`,
       `Four times a recorded temperature change, plus $2$ degrees, equals $14$ degrees. Then the change was $4$ degrees.`,
     ],
     answer_key: [false, false, true, false, false],
@@ -62,11 +62,7 @@ $$5x = 15$$
 
 $$x = 3$$
 
-The candidate claims $x = 2$. Substituting that value:
-
-$$5 \\cdot 2 - 3 = 7$$
-
-which is not $12$, so the statement is False.`,
+The candidate claims the unique real solution satisfies $x \\le 2$. But the isolated solution is $x = 3$, so $x \\le 2$ does not hold. The statement is False.`,
       `**C.** → True
 
 Taking $7$ EUR off a bill and then splitting the remainder into two equal shares is undone by doubling and then adding $7$. In words: half of the original bill minus $7$ equals $4$.
@@ -94,11 +90,7 @@ $$3x = 9$$
 
 $$x = 3$$
 
-The unique real solution is $3$, not the claimed $4$. Substituting $x = 4$:
-
-$$3(4 + 1) = 15$$
-
-which is not $12$, so the statement is False.`,
+The student concludes that the unique real solution satisfies $x \\ge 4$. But the isolated solution is $x = 3$, so $x \\ge 4$ does not hold. The statement is False.`,
       `**E.** → False
 
 Four times a change, plus $2$ degrees, equals $14$ degrees. Adding $2$ is undone by subtracting $2$, then dividing by $4$:
@@ -127,9 +119,9 @@ which is not $14$, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A purse holds some coins and then $5$ EUR more. The total is $11$ EUR. The stallholder concludes that the purse started with $6$ EUR.`,
-      `In a practice paper the equation $7x = 21$ appears. A candidate claims that the unique real number that makes the equation true is $4$.`,
+      `In a practice paper the equation $7x = 21$ appears. A candidate claims that the unique real solution $x$ satisfies $x \\ge 4$.`,
       `After $8$ litres are poured out of a tank, the remainder is split into two equal drums of $5$ litres each. A student reports that the tank started with $16$ litres.`,
-      `Dividing both sides of $6x = 30$ by $6$ is the correct inverse of multiplying by $6$. A student then reports that the unique real solution is $x = 4$.`,
+      `Dividing both sides of $6x = 30$ by $6$ is the correct inverse of multiplying by $6$. A student then reports that the unique real solution $x$ satisfies $x \\le 4$.`,
       `A scale shows a mass with no extra weight and reads $9$ kg. A student claims that the mass is therefore $9$ kg.`,
     ],
     answer_key: [true, false, false, false, true],
@@ -155,11 +147,7 @@ $$7x = 21$$
 
 $$x = 3$$
 
-The unique real solution is $3$, not the claimed $4$. Substituting $x = 4$:
-
-$$7 \\cdot 4 = 28$$
-
-which is not $21$, so the statement is False.`,
+The unique real solution is $x = 3$, so the claim that $x \\ge 4$ does not hold. The statement is False.`,
       `**C.** → False
 
 Pouring $8$ litres out and then splitting the remainder into two equal drums is undone by doubling and then adding $8$. In words: half of the starting volume minus $8$ equals $5$.
@@ -183,11 +171,7 @@ $$6x = 30$$
 
 $$x = 5$$
 
-The unique real solution is $5$, not the claimed $4$. Substituting $x = 4$:
-
-$$6 \\cdot 4 = 24$$
-
-which is not $30$, so the statement is False.`,
+The unique real solution is $x = 5$, so the claim that $x \\le 4$ does not hold. The statement is False.`,
       `**E.** → True
 
 Adding zero does not change a number, so a scale that shows a mass with no extra weight already reads that mass.
@@ -396,7 +380,7 @@ which matches the total, so the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A jug is filled to one-fourth. That share is $5$ litres. A student reports that the full jug holds $20$ litres.`,
-      `Solving $\\dfrac{x}{3} + 2 = 6$ by first subtracting $2$ and then multiplying by $3$, a candidate claims that $x = 10$.`,
+      `Solving $\\dfrac{x}{3} + 2 = 6$ by first subtracting $2$ and then multiplying by $3$, a candidate claims that the unique real solution satisfies $x \\le 11$.`,
       `Two-fifths of a tank is $6$ litres. A clerk reports that the tank therefore holds $12$ litres.`,
       `If $\\dfrac{x + 1}{2} = 5$, multiplying through by $2$ and then subtracting $1$ produces the unique real solution $x = 9$.`,
       `One and a half times a wage equals $9$ EUR. A payroll clerk reports that the wage is $4$ EUR.`,
@@ -422,11 +406,7 @@ $$\\frac{x}{3} = 4$$
 
 $$x = 12$$
 
-The candidate claims $x = 10$. Substituting that value:
-
-$$\\frac{10}{3} + 2 = \\frac{16}{3}$$
-
-which is not $6$, so the statement is False.`,
+The candidate claims $x \\le 11$. But the isolated solution is $x = 12$, so $x \\le 11$ does not hold. The statement is False.`,
       `**C.** → False
 
 Two-fifths of the tank is $6$ litres. Multiply through by $5$, then divide by $2$:
