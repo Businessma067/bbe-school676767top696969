@@ -735,9 +735,9 @@ which matches the right-hand side, so the statement is True.`,
       `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $1{:}15$ pm.`,
       `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with $0.6$ litres of water to get the right concentration.`,
       `A prize money of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4000$ EUR.`,
-      `The solution of the equation $2x + 1 = x + 8$ is smaller than $5$.`,
+      `The solution of the equation $2x + 1 = x + 8$ is an odd integer.`,
     ],
-    answer_key: [false, true, true, true, false],
+    answer_key: [false, true, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
@@ -815,7 +815,7 @@ First place is $5000$ EUR, so second place is
 $$0.8 \\cdot 5000 = 4000$$
 
 That $4000$ is the second-place prize in EUR, matching the claim, so the statement is True.`,
-      `**E.** → False
+      `**E.** → True
 
 Gather the unknown on one side and the constants on the other:
 
@@ -825,13 +825,7 @@ $$2x - x = 8 - 1$$
 
 $$x = 7$$
 
-The unique real solution is $7$, which is not smaller than $5$. Substituting the threshold $x = 5$:
-
-$$2 \\cdot 5 + 1 = 11$$
-
-$$5 + 8 = 13$$
-
-and $11 \\neq 13$, so the statement is False.`,
+The unique real solution is $7$, which is an odd integer, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 9,
@@ -2096,7 +2090,7 @@ The final mixture contains $17$ litres of acid, which is $25\\%$ of $68$ litres.
       `A gardener has a rectangular lawn that is $4$ m longer than it is wide. Around the outside she lays a $1$ m flower border covering $48$ m$^{2}$, and she concludes that the lawn is $9$ m wide.`,
       `A sports pitch measures $12$ m by $20$ m. The groundskeeper adds a uniform $2$ m running path around the outside and reports that the outer length is then $24$ m.`,
       `A $12$ m by $8$ m patio is given a $1$ m path around the outside. The groundskeeper claims that this path covers $44$ m$^{2}$.`,
-      `Walking once around a $20$ m by $30$ m rectangular field is claimed to cover a distance of $100$ m.`
+      `Walking once around a $20$ m by $30$ m rectangular field is claimed to cover a distance of $100$ m.`,
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
@@ -2420,7 +2414,7 @@ When $A$ has run $100$ m, $B$ has run $80$ m. That is the opening handicap of $A
       `If $5$ is added to a number and the sum is halved, the result is $3$ less than the original number. Then the number is $12$.`,
       `Three consecutive integers add to $48$. Then the middle one is $16$.`,
       `If $1$ is added to a number and the sum is divided by $5$, the result is $3$ less than half the number. Then the number is $12$.`,
-      `A tank is $\frac{2}{5}$ full after $12$ minutes at a constant fill rate. The operator concludes that the tank is therefore full after $30$ minutes.`
+      `A tank is $\frac{2}{5}$ full after $12$ minutes at a constant fill rate. The operator concludes that the tank is therefore full after $30$ minutes.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -2585,8 +2579,8 @@ The difference is $9$, not $7$. The claimed $7$ would be $5 + 2$, not $25 - 16$,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A product of two factors, one two less than a number and one five less than the same number, is zero. A student reports that the number is $3$ or $5$.`,
-      `The equation $x^{2} - 5x + 6 = 0$ has solutions $2$ and $3$.`,
-      `A number squared, minus five times the number, plus $6$, is zero. A student names the two solutions as $1$ and $6$.`,
+      `The equation $x^{2} - 5x + 6 = 0$ has two distinct real solutions whose difference is $1$.`,
+      `A number squared, minus five times the number, plus $6$, is zero. The difference between its two real solutions is $5$.`,
       `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
       `A number times itself equals five times the number. A student reports that the only real solution is $5$.`,
     ],
@@ -2625,22 +2619,12 @@ $$x^{2} - 5x + 6 = 0$$
 
 $$(x - 2)(x - 3) = 0$$
 
-Then $x = 2$ or $x = 3$. Those roots add to $5$ and multiply to $6$, matching the coefficients. Check:
-
-$$2^{2} - 5 \\cdot 2 + 6 = 0$$
-
-$$3^{2} - 5 \\cdot 3 + 6 = 0$$
-
-The solutions are $2$ and $3$, so the statement is True.`,
+Then $x = 2$ or $x = 3$. The difference is $3 - 2 = 1$, so the statement is True.`,
       `**C.** → False
 
 The two roots of a monic quadratic add to the middle coefficient with the sign flipped, and they multiply to the constant term.
 
-The equation $x^{2} - 5x + 6 = 0$ needs two numbers that add to $5$ and multiply to $6$. Those are $2$ and $3$, not $1$ and $6$. The pair $1$ and $6$ adds to $7$ and multiplies to $6$. Plugging the claimed $x = 1$ gives
-
-$$1^{2} - 5 \\cdot 1 + 6 = 2$$
-
-which is not zero, so the statement is False.`,
+The equation $x^{2} - 5x + 6 = 0$ has roots $2$ and $3$. Their difference is $3 - 2 = 1$, not $5$, so the statement is False.`,
       `**D.** → True
 
 That is the zero-product property: a product of real numbers is zero if and only if at least one factor is zero.
@@ -3119,7 +3103,7 @@ They add to $15$. The claim is that same sum, so the statement is True.`,
       `A rectangle measuring $5$ cm by $11$ cm is claimed to have area $60$ cm$^{2}$.`,
       `A rectangle measuring $5$ cm by $12$ cm is claimed to have perimeter $40$ cm.`,
       `A right triangle has legs $5$ cm and $12$ cm. Pythagoras is then said to give a hypotenuse of $13$ cm.`,
-      `A garden is $4$ m longer than it is wide and has area $45$ m$^{2}$. A plan claims that the width is $6$ m.`
+      `A garden is $4$ m longer than it is wide and has area $45$ m$^{2}$. A plan claims that the width is $6$ m.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -3454,9 +3438,9 @@ A negative pair with product $21$ would need a negative sum as well, because a n
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Completing the square turns $x^{2} - \\frac{7}{2}x - 2 = 0$ into $\\left(x - \\frac{7}{4}\\right)^{2} = \\frac{81}{16}$.`,
-      `A number squared, minus six times the number, plus $5$, is zero. A student names the two solutions as $2$ and $4$.`,
-      `A quadratic has roots $4$ and $-\\frac{1}{2}$. A student claims that both of those roots are positive.`,
-      `The positive root of $x^{2} - \\frac{7}{2}x - 2 = 0$ is $4$.`,
+      `A number squared, minus six times the number, plus $5$, is zero. The product of its two real solutions is $8$.`,
+      `For $x^{2} - \\frac{7}{2}x - 2 = 0$, a student claims that both of its real solutions are positive.`,
+      `The positive real solution of $x^{2} - \\frac{7}{2}x - 2 = 0$ is an integer.`,
       `A student reads the constant term of a monic quadratic whose constant is $-2$ and reports that the product of the roots is $2$, having dropped the minus sign.`,
     ],
     answer_key: [true, false, false, true, false],
@@ -3502,24 +3486,10 @@ $$(x - 1)(x - 5) = 0$$
 
 so $x = 1$ or $x = 5$.
 
-The claim names $2$ and $4$. Substituting $x = 2$:
-
-$$2^{2} - 6 \\cdot 2 + 5 = 4 - 12 + 5 = -3 \\neq 0$$
-
-Substituting $x = 4$:
-
-$$4^{2} - 6 \\cdot 4 + 5 = 16 - 24 + 5 = -3 \\neq 0$$
-
-Neither claimed value is a root, so the statement is False.`,
+The two real solutions are $1$ and $5$, so their product is $1 \\cdot 5 = 5$, not $8$. Therefore the statement is False.`,
       `**C.** → False
 
-The two roots in the claim are $4$ and $-\\frac{1}{2}$. A number is positive when it is greater than $0$.
-
-$$4 > 0$$
-
-$$-\\frac{1}{2} < 0$$
-
-Only one of the two roots is positive, so the statement is False.`,
+The two real solutions are $4$ and $-\\frac{1}{2}$. One of them is negative, so they cannot both be positive, therefore the statement is False.`,
       `**D.** → True
 
 From the completed-square form of the same equation,
@@ -3546,7 +3516,7 @@ $$x = \\frac{7}{4} - \\frac{9}{4}$$
 
 $$x = -\\frac{2}{4} = -\\frac{1}{2}$$
 
-The two roots are $4$ and $-\\frac{1}{2}$. The positive one is $4$, so the statement is True.`,
+The two roots are $4$ and $-\\frac{1}{2}$. The positive one is $4$, which is an integer, so the statement is True.`,
       `**E.** → False
 
 For a monic quadratic $x^{2} + bx + c = 0$, Vieta's product formula says the roots multiply to the constant term $c$.
@@ -3764,7 +3734,7 @@ Those are two integer solutions, so the statement is True.`,
       `A banner is twice as long as it is wide and has area $48$ cm$^{2}$. A student claims the length is $12$ cm.`,
       `A $4$ cm by $9$ cm noticeboard is to be edged with tape. The tape around the perimeter is claimed to measure $40$ cm.`,
       `A carpenter cuts a board $5$ cm wide and $11$ cm long and claims the area is $36$ cm$^{2}$, with the length $1$ cm more than twice the width.`,
-      `A garden bed has area $45$ cm$^{2}$ and is $4$ cm longer than it is wide. A plan claims the width is $5$ cm.`
+      `A garden bed has area $45$ cm$^{2}$ and is $4$ cm longer than it is wide. A plan claims the width is $5$ cm.`,
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
@@ -3958,7 +3928,7 @@ The claim says $30$ m. The height is $20$ m, which is the maximum, so the statem
       `Two numbers add to $10$ and multiply to $21$. A clerk says they differ by $4$.`,
       `Two share amounts add to $9$ EUR and multiply to $14$. The treasurer reports that they are $3$ EUR and $6$ EUR.`,
       `Two numbers add to $8$ and multiply to $15$. Increasing each by $1$ and multiplying those increased values is claimed to give $24$.`,
-      `Two numbers add to $10$ and multiply to $21$. The sum of their squares is then claimed to be $58$.`
+      `Two numbers add to $10$ and multiply to $21$. The sum of their squares is then claimed to be $58$.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -4276,7 +4246,7 @@ so the ratio is $5 : 1$. That matches the claim, so the statement is True.`,
       `A $13$ m ladder leans against a warehouse wall and reaches $5$ m up. A worker claims the foot is $7$ m from the wall.`,
       `A $10$ m ladder reaches $6$ m up a wall. It is claimed that the foot therefore sits $8$ m from the base of the wall.`,
       `A ladder, the wall, and the ground form a right triangle with legs $6$ m and $8$ m. The area of that triangle is claimed to be $24$ m$^{2}$.`,
-      `A $13$ m ladder stands with its foot $12$ m from a wall. A worker reports that it reaches $9$ m up the wall.`
+      `A $13$ m ladder stands with its foot $12$ m from a wall. A worker reports that it reaches $9$ m up the wall.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -4373,7 +4343,7 @@ The height is $5$ m, so the statement is False.`,
       `If $x + \\dfrac{1}{x} = 4$ with $x \\neq 0$, then $x^{2} + \\dfrac{1}{x^{2}} = 14$.`,
       `Clearing $x + \\frac{1}{x} = 4$ produces $x^{2} - 4x + 1 = 0$.`,
       `If $x + \\dfrac{1}{x} = 4$, then $x^{3} + \\dfrac{1}{x^{3}} = 64$.`,
-      `One solution of $x + \\frac{1}{x} = 4$ is $2 + \\sqrt{3}$.`,
+      `The equation $x + \\frac{1}{x} = 4$ has two distinct real solutions, and exactly one of them is greater than $1$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
@@ -4443,7 +4413,7 @@ $$x = \\frac{4 \\pm 2\\sqrt{3}}{2}$$
 
 $$x = 2 \\pm \\sqrt{3}$$
 
-One of those two solutions is $2 + \\sqrt{3}$, so the statement is True.`,
+The two solutions are $2 \\pm \\sqrt{3}$; one is greater than $1$ and the other is between $0$ and $1$. Therefore exactly one of them is greater than $1$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 51,
@@ -4457,7 +4427,7 @@ One of those two solutions is $2 + \\sqrt{3}$, so the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $x^{4} - 5x^{2} + 4 = 0$ has four different real solutions.`,
-      `Those four roots are $\\pm 1$ and $\\pm 2$.`,
+      `Exactly two of those four solutions are even integers.`,
       `Four numbers $\\pm 1$ and $\\pm 2$ are claimed to multiply to $4$.`,
       `The sum of all four roots of $x^{4} - 5x^{2} + 4 = 0$ is $0$.`,
       `A student claims that all four of those numbers are positive.`,
@@ -4481,7 +4451,7 @@ $$u = 1$$
 Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 1$ gives $x = \\pm 1$. Those are four different real numbers, so the statement is True.`,
       `**B.** → True
 
-From $x^{2} = 4$ and $x^{2} = 1$, the four roots are $2$, $-2$, $1$, and $-1$, which is the same list as $\\pm 1$ and $\\pm 2$, so the statement is True.`,
+From $x^{2} = 4$ and $x^{2} = 1$, the even real solutions are $2$ and $-2$, so exactly two solutions are even integers, hence the statement is True.`,
       `**C.** → True
 
 The product of the four numbers is
@@ -4770,7 +4740,7 @@ The two numbers add to $5$, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solutions of $x^{4} - 13x^{2} + 36 = 0$ are $\\pm 2$ and $\\pm 3$.`,
+      `All four solutions of $x^{4} - 13x^{2} + 36 = 0$ are integers.`,
       `The equation $(x - 3)(x - 5) = 8$ has roots $1$ and $7$.`,
       `The equation $x^{2} + x + 1 = 0$ has two different real solutions.`,
       `Two numbers that add to $9$ and multiply to $14$ are $3$ and $6$.`,
@@ -4792,7 +4762,7 @@ or
 
 $$u = 9$$
 
-Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 9$ gives $x = \\pm 3$. Those are the four claimed solutions, so the statement is True.`,
+Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 9$ gives $x = \\pm 3$. All four solutions are integers, so the statement is True.`,
       `**B.** → True
 
 Expand and bring $8$ to the left:
@@ -4880,7 +4850,7 @@ Two distinct real roots, so the statement is True.`,
       `Three litres of oil, poured as equal shares, fill a jerrycan if each share is one-fourth of the jerrycan. Then the jerrycan holds $12$ litres.`,
       `The equation $\\frac{3}{x} = \\frac{1}{4}$ is undefined at $x = 0$, because that value zeros the denominator.`,
       `Five litres poured as equal shares fill a can if each share is the whole can. A student reports that the can holds $3$ litres.`,
-      `If $x = 12$, then $\\dfrac{3}{x} = \\dfrac{1}{4}$.`,
+      `The equation $\\frac{3}{x} = \\frac{1}{4}$ has a unique real solution, and that solution is positive.`,
       `A student claims that a negative twelve-litre can also works when three litres fill one-fourth of the can.`,
     ],
     answer_key: [true, true, false, true, false],
@@ -4918,11 +4888,13 @@ $$\\frac{5}{3} \\neq 1$$
 so the statement is False.`,
       `**D.** → True
 
-Substitute $x = 12$ into the original proportion, where $x = 12$ is allowed because it is not the hole $0$:
+Cross-multiply the equation $\\frac{3}{x} = \\frac{1}{4}$ on its domain ($x \\neq 0$):
 
-$$\\frac{3}{12} = \\frac{1}{4}$$
+$$3 \\cdot 4 = 1 \\cdot x$$
 
-Both sides match, so the statement is True.`,
+$$12 = x$$
+
+So the unique real solution is $x = 12$, and it is positive, hence the statement is True.`,
       `**E.** → False
 
 A negative capacity $x = -12$ is not the hole $x = 0$, so the expression is defined, but
@@ -4942,7 +4914,7 @@ and $-\\frac{1}{4} \\neq \\frac{1}{4}$. The two sides of $\\frac{3}{x} = \\frac{
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ is $x = 1$.`,
+      `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a unique real solution, and that solution is an integer.`,
       `The expression $\\dfrac{5}{x + 3}$ is undefined when $x = -3$.`,
       `$\\dfrac{4}{4 + 2} = \\dfrac{1}{3}$.`,
       `You may cross-multiply $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ even at $x = -2$, because both sides become infinite in a way that cancels.`,
@@ -5014,7 +4986,7 @@ and $\\frac{3}{5} \\neq \\frac{1}{3}$. The value that satisfies the proportion i
       `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has no real solution.`,
       `$x = 2$ is a solution of $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$, because both sides become infinite in a way that cancels.`,
       `The identity $\\dfrac{5}{x + 1} = \\dfrac{5}{x + 1}$ still holds at $x = -1$.`,
-      `The equation $\\frac{2}{x} = 0$ has solution $x = 0$, because the right-hand side is already zero.`,
+      `The equation $\\frac{2}{x} = 0$ has a real solution.`,
       `Six litres poured at a constant rate of $2$ litres per share fill a can. A clerk reports that the can holds $2$ litres.`,
     ],
     answer_key: [true, false, false, false, false],
@@ -5069,7 +5041,7 @@ so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A gardener adds $3$ m$^{2}$ of soil to a square bed. The new bed is still square, and each side is $4$ m. Then the new area is $16$ m$^{2}$.`,
-      `The radical equation $\\sqrt{x + 3} = 4$ has solution $x = 13$.`,
+      `The radical equation $\\sqrt{x + 3} = 4$ has a unique real solution, and that solution is an odd integer.`,
       `A square of area $13$ m$^{2}$ has side $\\sqrt{13}$ m.`,
       `A square root of a length plus $7$ m equals $5$ m. Squaring is valid because both sides are nonnegative, and the length is then $18$ m.`,
       `A gardener with $3$ m$^{2}$ of extra soil and a new square of side $4$ m reports that the original area was $19$ m$^{2}$.`,
@@ -5325,10 +5297,10 @@ That is the cleared equation named in the claim, and it is valid precisely becau
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\sqrt{x + 7} = 5$ is $x = 18$.`,
+      `The radical equation $\\sqrt{x + 7} = 5$ has a unique real solution, and that solution is an even integer.`,
       `A square courtyard of side $5$ m has area $25$ m$^{2}$.`,
-      `The solution of $\\sqrt{2x + 1} = 5$ is $x = 12$.`,
-      `The equation $\\sqrt{x + 7} = 5$ has solution $x = -18$.`,
+      `The radical equation $\\sqrt{2x + 1} = 5$ has a unique real solution, and that solution is divisible by $3$.`,
+      `The radical equation $\\sqrt{x + 7} = 5$ has a negative real solution.`,
       `After squaring $\\sqrt{x + 7} = 5$, which is allowed because both sides are nonnegative, you obtain $x + 7 = 25$.`,
     ],
     answer_key: [true, true, true, false, true],
@@ -5403,9 +5375,9 @@ That is the equation named in the claim, so the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A surveyor records that the square root of four times a distance plus $5$ m equals $7$ m. The surveyor reports that the distance is $11$ m.`,
-      `Squaring both sides of $\\sqrt{x + 12} = 8$ is allowed because $8$ is nonnegative, and it produces $x = 52$.`,
+      `Squaring both sides of $\\sqrt{x + 12} = 8$ is allowed because $8$ is nonnegative, and it produces an even integer solution.`,
       `A second surveyor records that the square root of four times a distance plus $5$ m equals $7$ m, and reports that the distance is $6$ m.`,
-      `For $x = 11$, the check $\\sqrt{4 \\cdot 11 + 5} = \\sqrt{49} = 7$ holds.`,
+      `The radical equation $\\sqrt{4x + 5} = 7$ has an odd integer solution.`,
       `A principal square root of four times a distance plus $5$ m is set equal to $-7$. A student claims this has the same real solution as when the right-hand side is $7$.`,
     ],
     answer_key: [true, true, false, true, false],
@@ -5441,7 +5413,7 @@ The recovered value is $52$. Substitute back:
 
 $$\\sqrt{52 + 12} = \\sqrt{64} = 8$$
 
-The candidate survives, and the claim names both the valid squaring and $x = 52$, so the statement is True.`,
+The candidate survives, and the recovered value is an even integer, so the statement is True.`,
       `**C.** → False
 
 The same isolate-and-square as in A recovers $x = 11$, not $x = 6$. Plug the claimed distance $6$ m into the original:
@@ -5459,7 +5431,7 @@ $$4 \\cdot 11 + 5 = 49$$
 
 $$\\sqrt{49} = 7$$
 
-The original equation holds at $x = 11$, so the statement is True.`,
+The recovered solution is an odd integer, so the statement is True.`,
       `**E.** → False
 
 A principal square root is never negative. The equation
@@ -5588,11 +5560,11 @@ The recorded distance is $6$, not $4$, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\dfrac{x}{x - 1} = 3$ is $x = \\dfrac{3}{2}$.`,
+      `The equation $\\dfrac{x}{x - 1} = 3$ has a unique real solution, and that solution is not an integer.`,
       `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has no real solution.`,
-      `The solution of $\\dfrac{x}{x - 4} = 2$ is $x = 8$, and the equation is undefined at $x = 4$.`,
-      `The solution of $\\dfrac{2}{x} = \\dfrac{3}{x + 3}$ is $x = 6$.`,
-      `The solution of $\\dfrac{x + 3}{x - 3} = 2$ is $x = 9$, and $x = 3$ is not a solution.`,
+      `The equation $\\dfrac{x}{x - 4} = 2$ has a unique real solution, and that solution is an even integer.`,
+      `The equation $\\dfrac{2}{x} = \\dfrac{3}{x + 3}$ has a unique real solution, and that solution is an even integer.`,
+      `The equation $\\dfrac{x + 3}{x - 3} = 2$ has a unique real solution, and that solution is an odd integer.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -5702,7 +5674,7 @@ At $x = 3$ the original is undefined, so the statement is True.`,
       `The side of a square bed, after $5$ extra square metres of soil, plus the side of a smaller square whose area is $3$ m$^{2}$ less than the first, equals $4$ m. The larger area is then $4$ m$^{2}$.`,
       `A surveyor records $\\sqrt{4x + 5} = 7$. After squaring, $4x + 5 = 49$, so $x = 11$, and the check $\\sqrt{49} = 7$ holds.`,
       `A gardener adds $5$ m$^{2}$ of soil to a square and $3$ m$^{2}$ less than that first area sits under a smaller square. The two sides add to $4$ m. The gardener claims the larger area is $8$ m$^{2}$.`,
-      `The radical equation $\\sqrt{x + 3} = 4$ is solved by $x = 0$, because squaring would give $x + 3 = 16$ and someone then subtracted $16$ instead of $3$.`,
+      `The radical equation $\\sqrt{x + 3} = 4$ has a real solution, and that solution is even.`,
       `After isolating and squaring that sum of two square roots, the candidate of $4$ m$^{2}$ returns sides $3$ m and $1$ m, which add to $4$ m and therefore survive in the original.`,
     ],
     answer_key: [true, true, false, false, true],
@@ -5774,11 +5746,7 @@ $$x + 3 = 16$$
 
 $$x = 13$$
 
-The recovered value is $13$, not $0$. Plug the claimed $x = 0$:
-
-$$\\sqrt{0 + 3} = \\sqrt{3} \\neq 4$$
-
-so the statement is False.`,
+The recovered value is $13$, and $13$ is not an even integer, so the statement is False.`,
       `**E.** → True
 
 The isolate-and-square candidate $x = 4$ produces sides $3$ m and $1$ m. Substitute those into the original sum:
@@ -5921,10 +5889,10 @@ asks an absolute value to equal a negative number. There is no real solution, so
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The value $x = 4$ solves $\\sqrt{2x + 1} = x - 1$.`,
-      `The radical equation $\\sqrt{x + 3} = x - 3$ is also solved by $x = 1$, since squaring produces $(x - 1)(x - 6) = 0$ and $1$ is one of those roots.`,
-      `Squaring $\\sqrt{4x + 5} = 7$, after noting that the right-hand side is nonnegative, produces $4x + 5 = 49$ and therefore $x = 11$.`,
-      `Both $x = 0$ and $x = 4$ solve $\\sqrt{2x + 1} = x - 1$.`,
+      `The equation $\\sqrt{2x + 1} = x - 1$ has a real solution greater than $3$.`,
+      `The equation $\\sqrt{x + 3} = x - 3$ has a real solution less than $3$.`,
+      `The equation $\\sqrt{4x + 5} = 7$ has an integer real solution.`,
+      `The equation $\\sqrt{2x + 1} = x - 1$ has two real solutions.`,
       `Because a principal square root cannot equal a negative number, an isolated right-hand side of $2$ minus the unknown has only the candidates that already lie where that side is nonnegative, and exactly one of the squared-equation roots survives.`,
     ],
     answer_key: [true, false, true, false, true],
@@ -6113,11 +6081,11 @@ so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\dfrac{x}{x - 3} = \\dfrac{x + 6}{x - 1}$ is $x = \\dfrac{9}{2}$.`,
+      `The equation $\\dfrac{x}{x - 3} = \\dfrac{x + 6}{x - 1}$ has a unique real solution, and that solution is a non-integer rational number.`,
       `A second proportion is undefined at $4$ and at $1$, because each of those values zeros one of the two denominators.`,
       `A proportion is undefined when the number is $3$. A student claims $3$ is nevertheless a root, because cross-multiplying produces an identity at that point.`,
-      `At $x = \\frac{9}{2}$ both sides of $\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$ equal $3$, which confirms the recovered value.`,
-      `Cross-multiplying $\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$ is valid at $x = \\frac{9}{2}$, because that value zeros neither denominator.`,
+      `After solving on the allowed domain, the unique solution makes both sides of $\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$ equal to $3$.`,
+      `After excluding the holes, cross-multiplying yields the same unique real solution as the original proportion.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -6194,11 +6162,11 @@ so neither denominator is zero there. The clearing step used in A is allowed at 
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `One solution of $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ is $x = 1$.`,
-      `The value $x = -2$ also solves $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$.`,
+      `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ has a positive real solution.`,
+      `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ also has a negative real solution.`,
       `The equation $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ is undefined at $x = 0$ and at $x = -1$.`,
-      `A reciprocal sum is undefined at $0$ and at $-1$. A student reports that both candidate solutions $1$ and $-2$ are allowed and both satisfy the original.`,
-      `Clearing $\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$ produces the quadratic $x^{2} + x - 2 = 0$, whose roots are $1$ and $-2$.`,
+      `A reciprocal sum is undefined where a denominator is zero. The cleared equation has two distinct real solutions, and both are allowed.`,
+      `Clearing $\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$ produces a quadratic with two distinct real roots, and both roots are allowed.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -6529,7 +6497,7 @@ The recovered length is $\\frac{49}{9}$ m, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The value $x = 4$ solves $\\lvert 3 - 2x \\rvert = x + 1$.`,
-      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ is also solved by $x = -2$.`,
+      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has a negative real solution.`,
       `Splitting $\\lvert 3 - 2x \\rvert = x + 1$ after requiring $x \\ge -1$ produces $x = \\frac{2}{3}$ as the other solution, and $\\lvert 3 - \\frac{4}{3} \\rvert = \\frac{5}{3}$ checks.`,
       `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has only one real solution.`,
       `Every candidate of that split that already meets $x + 1 \\ge 0$ survives in the original equation.`,
@@ -6612,9 +6580,9 @@ Every candidate from the split that already meets the nonnegative right-hand sid
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Both $3$ and $-3$ solve $\\dfrac{1}{x - 1} - \\dfrac{1}{x + 1} = \\dfrac{1}{4}$.`,
-      `Both $x = 1$ and $x = 6$ solve $\\sqrt{x + 3} = x - 3$, because squaring produces $(x - 1)(x - 6) = 0$.`,
+      `The equation $\\sqrt{x + 3} = x - 3$ has two real solutions.`,
       `A depot equally far, in absolute value, from $-2$ and from $\\frac{7}{2}$ in a scaled sense sits at $9$ or at $\\frac{5}{3}$.`,
-      `The equation $\\sqrt{x + 4} = -2$ has the real solution $x = 0$.`,
+      `The equation $\\sqrt{x + 4} = -2$ has a real solution.`,
       `The simplified identity $\\frac{x^{2} - 4}{x - 2} = x$ holds at $x = 2$, which is therefore a root.`,
     ],
     answer_key: [true, false, true, false, false],
@@ -6724,10 +6692,10 @@ The identity does not hold at the hole, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ is $x = -5$.`,
+      `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has a unique real solution, and that solution is negative.`,
       `The difference $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1}$ is undefined at $x = 1$ and at $x = -1$.`,
       `A student claims that $1$ is a solution of $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$, because the two subtracted fractions become infinite in a way that cancels.`,
-      `If $x = -5$, then $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$.`,
+      `The unique real solution obtained from the cleared linear equation satisfies the original difference equation.`,
       `When $\\frac{2x + 1}{x - 1} - \\frac{x + 3}{x + 1} = 1$ is cleared by $(x - 1)(x + 1)$, the $x^{2}$ terms cancel and a linear equation remains.`,
     ],
     answer_key: [true, true, false, true, true],
@@ -6950,7 +6918,7 @@ The son is now $24$, not $18$. Eighteen would make them $48$ and $24$ in six yea
     sort_order: 80,
     solution_overview: `Five independent linear stories. A train covering its own length plus a platform, clock-hand overlap $m = 60H/11$, an alloy, a two-worker split, and a future doubling of ages.`,
   },
-{
+  {
     id: `math-4-81`,
     case_id: `MATH 4.81`,
     title: `A reverse that is $9$ more, a current, and a geometric prize`,
