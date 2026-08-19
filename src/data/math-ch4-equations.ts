@@ -197,7 +197,7 @@ That $9$ is the mass in kilograms, matching the claim, so the statement is True.
       `A number increased by $4$ equals $11$. Translating the sentence into a linear equation and undoing the addition, the number is an odd integer greater than $5$.`,
       `Three times a number equals $18$. A student claims that the unknown number is therefore $5$.`,
       `After $8$ is subtracted from a number, the remainder is split into two equal parts of $6$. Restoring the operations, the original number is $20$.`,
-      `Half of a number is $9$. Doubling both sides of the corresponding equation, the number itself is $18$.`,
+      `Half of a number is $9$. Doubling both sides of the corresponding equation, the number exceeds $15$.`,
       `A number decreased by $6$, then halved, equals $5$. A student claims that the original number is $4$.`,
     ],
     answer_key: [true, false, true, true, false],
@@ -247,7 +247,11 @@ $$\\frac{x}{2} = 9$$
 
 $$x = 18$$
 
-That $18$ is the number itself. Half of it is $9$, matching the claim, so the statement is True.`,
+That $18$ is the number itself. It exceeds $15$, because
+
+$$18 > 15$$
+
+Half of $18$ is $9$, matching the sentence, so the statement is True.`,
       `**E.** → False
 
 Decreasing by $6$ and then taking half is undone by doubling and then adding $6$:
@@ -454,12 +458,12 @@ which is not $9$, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle has width $4$ cm and length $3$ cm more than the width. Writing the perimeter as twice the sum of the sides, that perimeter is $22$ cm.`,
-      `If one side of a square is $6$ cm, then all four sides are equal, so the perimeter is $24$ cm.`,
-      `A number that is $5$ more than twice $8$ is claimed to be $21$.`,
+      `Three times a number, minus $5$, equals $16$. A student claims the number is $6$.`,
+      `The sum of three consecutive integers is $42$. A student claims the middle integer is $14$.`,
       `Splitting $30$ into two parts where one part is $4$ more than the other gives the parts $17$ and $13$.`,
       `A tank is first emptied of one-quarter of its contents, then a further $10$ litres, after which $20$ litres remain. The tank started with more than $35$ litres.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -472,24 +476,34 @@ $$P = 2 \\cdot 11$$
 $$P = 22$$
 
 That $22$ is the perimeter in centimetres, matching the claim, so the statement is True.`,
-      `**B.** → True
+      `**B.** → False
 
-All four sides of a square equal the given side $6$ cm, so the perimeter is four times that side:
+Three times a number, minus $5$, equals $16$. Multiplying by $3$ is undone by dividing by $3$:
 
-$$P = 4 \\cdot 6$$
+$$3x - 5 = 16$$
 
-$$P = 24$$
+$$3x = 21$$
 
-That $24$ is the perimeter in centimetres, matching the claim, so the statement is True.`,
+$$x = 7$$
+
+That $7$ is the number. The student claims $6$. Substituting that value:
+
+$$3 \\cdot 6 - 5 = 13$$
+
+which is not $16$, so the statement is False.`,
       `**C.** → True
 
-Five more than twice $8$ means multiply $8$ by $2$, then add $5$:
+Let the smallest of the three consecutive integers be $n$. Then the three are $n$, $n + 1$, and $n + 2$, and their sum is $42$:
 
-$$2 \\cdot 8 = 16$$
+$$n + (n + 1) + (n + 2) = 42$$
 
-$$16 + 5 = 21$$
+$$3n + 3 = 42$$
 
-The resulting number is $21$, matching the claim, so the statement is True.`,
+$$3n = 39$$
+
+$$n = 13$$
+
+The middle integer is $n + 1 = 14$. The claim is that same value, so the statement is True.`,
       `**D.** → True
 
 Split $30$ into two parts where one part is $4$ more than the other. Let the smaller part be $x$:
@@ -1753,69 +1767,77 @@ and $50 < 58$. Parts are less than one-fifth of the bill, so the statement is Tr
   {
     id: `math-4-20`,
     case_id: `MATH 4.20`,
-    title: `Five separate clock and time-gain stories`,
+    title: `Five separate time, rate, and distance stories`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A clock is set right at noon and gains $4$ minutes in every true hour. When the clock first shows $8$ pm, a student claims the true time is $7{:}20$ pm.`,
-      `A clock that gains $4$ minutes in every true hour runs $64$ minutes of its own for every $60$ true minutes.`,
-      `A clock set right at noon gains $4$ minutes per true hour. When it first shows $8$ pm, the true time is $7{:}30$ pm, because $480$ clock minutes correspond to $450$ true minutes.`,
-      `True time when a clock that gains $4$ minutes per true hour shows $8$ pm is $8$ hours minus $4 \\cdot 8 = 32$ minutes, hence $7{:}28$ pm.`,
-      `A clock that gains $4$ minutes per true hour shows $4{:}20$ after $4$ true hours have passed.`,
+      `A cyclist rides at $15$ km/h for $2$ hours, then at $10$ km/h for $1$ hour. The total distance covered is $40$ km.`,
+      `Two trains leave stations $120$ km apart and approach each other at $40$ km/h and $20$ km/h. A dispatcher claims they meet after $2$ hours.`,
+      `A runner completes a $10$ km race at constant speed in $50$ minutes. A coach claims the average speed was $15$ km/h.`,
+      `A car travels $180$ km at a steady $60$ km/h. A passenger claims the trip took $2.5$ hours.`,
+      `A hiker walks at $5$ km/h for $2.4$ hours. The distance covered is $12$ km.`,
     ],
-    answer_key: [false, true, true, false, false],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
-A clock that gains $4$ minutes in every true hour runs $64$ clock minutes in $60$ true minutes. When the clock first shows $8$ pm it has advanced $8$ clock hours from noon, which is $480$ clock minutes. True minutes elapsed are therefore
+Distance in each band is speed times time, and the bands add:
 
-$$480 \\cdot \\frac{60}{64}$$
+$$15 \\cdot 2 + 10 \\cdot 1$$
 
-$$= 450$$
+$$= 30 + 10$$
 
-minutes. That is $7$ hours and $30$ minutes after noon, so the true time is $7{:}30$ pm, not the claimed $7{:}20$ pm. The claimed $7{:}20$ pm would be $440$ true minutes after noon, and the clock would then show
+$$= 40$$
 
-$$440 \\cdot \\frac{64}{60} = \\frac{1408}{3}$$
-
-minutes, which is not $480$, so the statement is False.`,
+The cyclist covers $40$ km. The claim is that same distance, so the statement is True.`,
       `**B.** → True
 
-A gain of $4$ minutes per true hour means that in $60$ true minutes the clock advances $60 + 4$ minutes:
+When two bodies approach, their relative speed is the sum of their speeds:
 
-$$60 + 4 = 64$$
+$$40 + 20 = 60$$
 
-So the clock runs $64$ minutes of its own for every $60$ true minutes, matching the claim, so the statement is True.`,
-      `**C.** → True
+Meeting time is total separation divided by that relative speed:
 
-Eight clock hours from noon are $480$ clock minutes. With $64$ clock minutes per $60$ true minutes, the true minutes elapsed are
+$$\\frac{120}{60} = 2$$
 
-$$480 \\cdot \\frac{60}{64}$$
+They meet after $2$ hours. The claim is that same time, so the statement is True.`,
+      `**C.** → False
 
-$$= 450$$
+Fifty minutes is $\\frac{5}{6}$ of an hour. Average speed is distance divided by time:
 
-minutes, which is $7$ hours and $30$ minutes after noon. The true time is $7{:}30$ pm, matching the claim, so the statement is True.`,
+$$\\frac{10}{50/60}$$
+
+$$= 10 \\cdot \\frac{60}{50}$$
+
+$$= 12$$
+
+The average speed is $12$ km/h, not $15$ km/h. At $15$ km/h the runner would cover only
+
+$$15 \\cdot \\frac{5}{6} = 12.5$$
+
+km in $50$ minutes, so the statement is False.`,
       `**D.** → False
 
-Subtracting $4 \\cdot 8 = 32$ minutes from $8$ pm treats the gain as $4$ minutes of true time per clock hour. The correct conversion uses the factor $\\frac{60}{64}$ on the $480$ clock minutes. The claimed method gives
+At $60$ km/h, time in hours is distance divided by speed:
 
-$$480 - 32 = 448$$
+$$\\frac{180}{60} = 3$$
 
-minutes after noon, which is $7{:}28$ pm. The true elapsed time is $450$ minutes, which is $7{:}30$ pm, so the statement is False.`,
-      `**E.** → False
+The trip takes $3$ hours, not $2.5$. In $2.5$ hours at $60$ km/h the car would cover only
 
-Four true hours put
+$$60 \\cdot 2.5 = 150$$
 
-$$4 \\cdot 64 = 256$$
+km, so the statement is False.`,
+      `**E.** → True
 
-minutes on the clock. That is $4$ hours and $16$ minutes, so the clock shows $4{:}16$, not the claimed $4{:}20$. Substituting a reading of $4{:}20$ would be $260$ clock minutes, which would take
+Distance is speed times time:
 
-$$260 \\cdot \\frac{60}{64} = 243.75$$
+$$5 \\cdot 2.4 = 12$$
 
-true minutes, not $4$ true hours, so the statement is False.`,
+The hiker covers $12$ km. The claim is that same distance, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 20,
-    solution_overview: `Five independent clock claims. A gain of $4$ minutes per true hour means $64$ clock minutes per $60$ true minutes, so true time is clock time times $\\frac{60}{64}$.`,
+    solution_overview: `Five independent time-rate-distance claims. Distance is speed times time; meeting time is separation divided by relative speed; average speed is total distance divided by elapsed time.`,
   },
   {
     id: `math-4-21`,
@@ -2257,61 +2279,81 @@ The three together do $\\frac{13}{72}$ of a job per day. The claim is that same 
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $300$ km journey is scheduled to take $5$ hours of clock time, including a $30$ minute rest. The driver holds $80$ km/h before the rest and $40$ km/h after it. Then he drove for $3$ hours at $80$ km/h.`,
-      `The slower driving spell on that journey lasted $1.5$ hours.`,
-      `He covered $240$ km at the higher speed.`,
-      `His average speed for the whole $5$ hours of clock time, rest included, is $60$ km/h.`,
-      `Without the rest, the same driving would take $3$ hours.`,
+      `A $240$ km trip is driven in two equal $120$ km legs at $80$ km/h then $60$ km/h. The total driving time exceeds $3$ hours.`,
+      `A driver covers $90$ km at $45$ km/h and then $60$ km at $60$ km/h. A passenger claims the average speed for the whole drive was $55$ km/h.`,
+      `A courier drives $100$ km to a client at $50$ km/h and returns the same route at $25$ km/h. The round trip takes $6$ hours.`,
+      `On a $160$ km journey, the first $80$ km are driven at $80$ km/h. That first leg takes exactly $1$ hour.`,
+      `A motorist covers $200$ km in $4$ hours of clock time, including a $30$ minute rest. Without the rest, the average driving speed would be $50$ km/h.`,
     ],
-    answer_key: [true, true, true, true, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Clock time minus rest is driving time, and distance is speed times time in each band.
+Each leg is $120$ km. Time is distance divided by speed in each band:
 
-The $5$ hour clock includes a $30$ minute rest, so driving time is $4.5$ hours. Let $t$ be the hours driven at $80$ km/h. Then $4.5 - t$ hours are driven at $40$ km/h, and the distances add to $300$ km:
+$$\\frac{120}{80} + \\frac{120}{60}$$
 
-$$80t + 40(4.5 - t) = 300$$
+$$= 1.5 + 2$$
 
-$$80t + 180 - 40t = 300$$
+$$= 3.5$$
 
-$$40t = 120$$
+The total driving time is $3.5$ hours, which exceeds $3$, so the statement is True.`,
+      `**B.** → False
 
-$$t = 3$$
+The whole drive covers
 
-He drove for $3$ hours at $80$ km/h. The claim is that same time, so the statement is True.`,
-      `**B.** → True
+$$90 + 60 = 150$$
 
-The two driving spells add to the $4.5$ hours of driving.
+km. The time in each band is distance divided by speed:
 
-He drove $3$ hours at $80$ km/h, so the slower spell lasted
+$$\\frac{90}{45} + \\frac{60}{60}$$
 
-$$4.5 - 3 = 1.5$$
+$$= 2 + 1$$
 
-hours. The claim is that same duration, so the statement is True.`,
+$$= 3$$
+
+Average speed is total distance divided by total driving time:
+
+$$\\frac{150}{3} = 50$$
+
+The average is $50$ km/h, not $55$ km/h. At $55$ km/h for $3$ hours the distance would be only
+
+$$55 \\cdot 3 = 165$$
+
+km, so the statement is False.`,
       `**C.** → True
 
-Distance at the higher speed is that speed times the time spent in that band.
+Each leg is $100$ km. Outbound time is $100/50 = 2$ hours and return time is $100/25 = 4$ hours:
 
-$$80 \\cdot 3 = 240$$
+$$2 + 4 = 6$$
 
-He covered $240$ km at $80$ km/h. The claim is that same distance, so the statement is True.`,
+The round trip takes $6$ hours. The claim is that same time, so the statement is True.`,
       `**D.** → True
 
-Average speed for a clock interval is total distance divided by that clock time, rest included.
+On the first leg, time in hours is distance divided by speed:
 
-$$\\frac{300}{5} = 60$$
+$$\\frac{80}{80} = 1$$
 
-The average over the whole $5$ hours is $60$ km/h. The claim is that same average, so the statement is True.`,
+The first leg takes exactly $1$ hour. The claim is that same duration, so the statement is True.`,
       `**E.** → False
 
-Dropping the rest removes only the $0.5$ hour stop. The driving itself is already $4.5$ hours.
+A $30$ minute rest is $0.5$ hour, so driving time within the $4$ hour clock is
 
-Without the rest the same driving would take $4.5$ hours, not $3$. The claimed $3$ hours is only the faster spell, so the statement is False.`,
+$$4 - 0.5 = 3.5$$
+
+hours. Average driving speed is distance divided by driving time:
+
+$$\\frac{200}{3.5} = \\frac{400}{7}$$
+
+That is about $57.1$ km/h, not $50$ km/h. At $50$ km/h for $3.5$ hours the motorist would cover only
+
+$$50 \\cdot 3.5 = 175$$
+
+km, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 26,
-    solution_overview: `Five independent two-speed claims. Clock time minus rest is driving time. Distance is speed times time in each band, and the two driving spells add to $4.5$ hours.`,
+    solution_overview: `Five independent two-speed claims. Distance is speed times time in each band; average speed is total distance divided by total driving time; clock time minus rest is driving time.`,
   },
   {
     id: `math-4-27`,
@@ -2572,7 +2614,7 @@ The difference is $9$, not $7$. The claimed $7$ would be $5 + 2$, not $25 - 16$,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A product of two factors, one two less than a number and one five less than the same number, is zero. A student reports that the sum of the two roots is $8$.`,
-      `The equation $x^{2} - 7x + 12 = 0$ has two distinct positive integer roots.`,
+      `A number squared, minus five times the number, plus six, is zero. The equation has two distinct positive integer roots.`,
       `A number squared, minus nine, is zero. A student reports that the equation has no negative real roots.`,
       `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
       `A number times itself equals five times the number. A student reports that both roots are positive.`,
@@ -2604,11 +2646,13 @@ not $8$. The claim says $8$, so the statement is False.`,
 
 Move everything to one side, factor, and set each factor to zero.
 
-$$x^{2} - 7x + 12 = 0$$
+A number squared, minus five times the number, plus six, is zero:
 
-$$(x - 3)(x - 4) = 0$$
+$$x^{2} - 5x + 6 = 0$$
 
-Then $x = 3$ or $x = 4$. Both roots are positive integers and they are distinct. The statement is True.`,
+$$(x - 2)(x - 3) = 0$$
+
+Then $x = 2$ or $x = 3$. Both roots are positive integers and they are distinct. The statement is True.`,
       `**C.** → False
 
 Move everything to one side before factoring.
@@ -3652,81 +3696,93 @@ So $384$ cm$^{2}$ of wood is exactly what "outer area twice the picture" require
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive integers differ by $7$ and multiply to $198$. Both integers exceed $10$.`,
-      `Two negative integers also multiply to $198$ and differ by $7$ in that order from more negative to less: $-18$ and $-11$.`,
-      `The positive pair $11$ and $18$ adds to $29$.`,
-      `The discriminant of $n^{2} + 7n - 198$ is a perfect square, namely $29^{2}$.`,
-      `If $n$ is the smaller member of a pair with difference $7$ and product $198$, then $n(n + 7) = 198$ has two integer solutions.`,
+      `Two positive integers differ by $5$ and multiply to $84$. Both integers exceed $6$.`,
+      `Two consecutive positive integers multiply to $56$. Their sum is $15$.`,
+      `A rectangle has width $w$ cm and length $3$ cm more than the width. Its area is $54$ cm$^{2}$. The width is $6$ cm.`,
+      `Two numbers add to $13$ and multiply to $40$. The larger number exceeds $8$.`,
+      `Two ticket prices add to $10$ EUR and multiply to $21$ EUR. Both prices exceed $4$ EUR.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Let the smaller positive integer be $n$. Then the larger is $n + 7$, and the product is $198$:
+Let the smaller positive integer be $n$. Then the larger is $n + 5$, and the product is $84$:
 
-$$n(n + 7) = 198$$
+$$n(n + 5) = 84$$
 
-$$n^{2} + 7n - 198 = 0$$
+$$n^{2} + 5n - 84 = 0$$
 
 The discriminant is
 
-$$\\Delta = 7^{2} - 4(1)(-198)$$
+$$\\Delta = 5^{2} - 4(1)(-84)$$
 
-$$\\Delta = 49 + 792$$
+$$\\Delta = 25 + 336$$
 
-$$\\Delta = 841 = 29^{2}$$
+$$\\Delta = 361 = 19^{2}$$
 
-$$n = \\frac{-7 \\pm 29}{2}$$
+$$n = \\frac{-5 \\pm 19}{2}$$
 
-$$n = \\frac{22}{2} = 11$$
+$$n = \\frac{14}{2} = 7$$
 
-$$n = \\frac{-36}{2} = -18$$
+$$n = \\frac{-24}{2} = -12$$
 
-The positive pair is $11$ and $18$. Both exceed $10$, so the statement is True.`,
+The positive pair is $7$ and $12$. Both exceed $6$, so the statement is True.`,
       `**B.** → True
 
-The other integer root was $n = -18$, so the pair in order from more negative to less is $-18$ and $-11$.
+Let the smaller consecutive integer be $n$. Then the next is $n + 1$, and the product is $56$:
 
-$$(-18) \\cdot (-11) = 198$$
+$$n(n + 1) = 56$$
 
-$$-11 - (-18) = 7$$
+$$n^{2} + n - 56 = 0$$
 
-Both the product and the difference match, so the statement is True.`,
+$$(n + 8)(n - 7) = 0$$
+
+Then $n = 7$ or $n = -8$. The positive pair is $7$ and $8$:
+
+$$7 + 8 = 15$$
+
+The sum is $15$, matching the claim, so the statement is True.`,
       `**C.** → True
 
-The positive pair is $11$ and $18$:
+Let the width be $w$ cm. Then the length is $w + 3$ cm, and the area is $54$ cm$^{2}$:
 
-$$11 + 18 = 29$$
+$$w(w + 3) = 54$$
 
-That is the claimed sum, so the statement is True.`,
-      `**D.** → True
+$$w^{2} + 3w - 54 = 0$$
 
-For $n^{2} + 7n - 198$, the discriminant is $b^{2} - 4ac$ with $a = 1$, $b = 7$, $c = -198$:
+$$(w + 9)(w - 6) = 0$$
 
-$$\\Delta = 7^{2} - 4(1)(-198)$$
+Then $w = 6$ or $w = -9$. A width must be positive, so $w = 6$ cm. The claim is that same width, so the statement is True.`,
+      `**D.** → False
 
-$$\\Delta = 49 + 792$$
+Two numbers that add to $13$ and multiply to $40$ are the roots of
 
-$$\\Delta = 841$$
+$$t^{2} - 13t + 40 = 0$$
 
-$$29^{2} = 841$$
+$$(t - 5)(t - 8) = 0$$
 
-The discriminant is the perfect square $29^{2}$, so the statement is True.`,
-      `**E.** → True
+Then $t = 5$ or $t = 8$. The larger number is $8$. The claim says it exceeds $8$, but
 
-The quadratic $n(n + 7) = 198$ is $n^{2} + 7n - 198 = 0$. Its two roots are the integers
+$$8 \\not> 8$$
 
-$$n = 11$$
+so the statement is False.`,
+      `**E.** → False
 
-and
+Two prices that add to $10$ EUR and multiply to $21$ EUR are the roots of
 
-$$n = -18$$
+$$t^{2} - 10t + 21 = 0$$
 
-Those are two integer solutions, so the statement is True.`,
+$$(t - 3)(t - 7) = 0$$
+
+Then the prices are $3$ EUR and $7$ EUR. The price $3$ EUR does not exceed $4$ EUR, because
+
+$$3 \\not> 4$$
+
+so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 43,
-    solution_overview: `Five independent claims about integer pairs with difference $7$ and product $198$. The model $n(n + 7) = 198$ has integer roots $11$ and $-18$.`,
+    solution_overview: `Five independent product-and-sum stories. Model a pair with $n(n + d) = p$ or Vieta's quadratic $t^{2} - St + P = 0$, then check the claim against the recovered roots.`,
   },
   {
     id: `math-4-44`,
@@ -3832,95 +3888,85 @@ The width is $5$ cm, a positive integer with $5 < 6$, so the property claim hold
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A stone thrown upward reaches $15$ m after $1$ second, if the height in metres is twenty times the time in seconds minus five times the square of that time. A student reports that this height check is correct.`,
-      `A projectile with height $h = 20t - 5t^{2}$ metres reaches a maximum height of $20$ m.`,
-      `A stone thrown upward, with height twenty times the time in seconds minus five times the square of that time, is claimed to peak at $3$ seconds.`,
-      `A stone with height $h = 16t - 4t^{2}$ metres is back at ground level after $3$ seconds.`,
-      `After $2$ seconds, a stone with height twenty times the time minus five times the square of the time is claimed to be $30$ m up.`,
+      `A stone thrown upward has height $h = 24t - 6t^{2}$ metres after $t$ seconds. At $t = 1$ second the height is $18$ m.`,
+      `A ball with height $h = 18t - 3t^{2}$ metres reaches a maximum height of $27$ m.`,
+      `A projectile with height $h = 12t - 3t^{2}$ metres is back at ground level after $4$ seconds.`,
+      `A stone with height $h = 20t - 4t^{2}$ metres is claimed to be $30$ m high after $2$ seconds.`,
+      `A ball with height $h = 16t - 2t^{2}$ metres is claimed to reach its peak at $t = 5$ seconds.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-The height after $t$ seconds is $h = 20t - 5t^{2}$ metres. At $t = 1$:
+The height after $t$ seconds is $h = 24t - 6t^{2}$ metres. At $t = 1$:
 
-$$h(1) = 20 \\cdot 1 - 5 \\cdot 1^{2}$$
+$$h(1) = 24 \\cdot 1 - 6 \\cdot 1^{2}$$
 
-$$h(1) = 20 - 5$$
+$$h(1) = 24 - 6$$
 
-$$h(1) = 15$$
+$$h(1) = 18$$
 
-The height is $15$ m after $1$ second, so the statement is True.`,
+The height is $18$ m after $1$ second, so the statement is True.`,
       `**B.** → True
 
-The height is the quadratic $h = -5t^{2} + 20t$. Completing the square, factor out $-5$ from the $t$ terms:
-
-$$h = -5(t^{2} - 4t)$$
-
-Half of $4$ is $2$, and $2^{2} = 4$:
-
-$$t^{2} - 4t = (t - 2)^{2} - 4$$
-
-$$h = -5\\left((t - 2)^{2} - 4\\right)$$
-
-$$h = -5(t - 2)^{2} + 20$$
-
-A square is never negative, so $-5(t - 2)^{2}$ is never positive. The largest value of $h$ is therefore $20$ m, at $t = 2$. The claimed maximum is $20$ m, so the statement is True.`,
-      `**C.** → False
-
-The vertex of $h = -5t^{2} + 20t$ is at
+The height is the quadratic $h = -3t^{2} + 18t$. The peak time is
 
 $$t = -\\frac{b}{2a}$$
 
-$$t = -\\frac{20}{2(-5)}$$
+$$t = -\\frac{18}{2(-3)}$$
 
-$$t = \\frac{20}{10}$$
+$$t = 3$$
 
-$$t = 2$$
+At $t = 3$:
 
-The peak is at $t = 2$ seconds, not $t = 3$. Substituting the claimed time:
+$$h(3) = 18 \\cdot 3 - 3 \\cdot 9$$
 
-$$h(3) = 20 \\cdot 3 - 5 \\cdot 9$$
+$$h(3) = 54 - 27$$
 
-$$h(3) = 60 - 45$$
+$$h(3) = 27$$
 
-$$h(3) = 15$$
+The maximum height is $27$ m, matching the claim, so the statement is True.`,
+      `**C.** → True
 
-which is below the maximum of $20$ m, so the statement is False.`,
+Ground level means $h = 0$:
+
+$$12t - 3t^{2} = 0$$
+
+$$3t(4 - t) = 0$$
+
+Then $t = 0$ or $t = 4$. The return after launch is at $t = 4$ seconds, matching the claim, so the statement is True.`,
       `**D.** → False
-
-The stone is at ground level when $h = 0$:
-
-$$16t - 4t^{2} = 0$$
-
-$$4t(4 - t) = 0$$
-
-so $t = 0$ or $t = 4$. The return is at $t = 4$ seconds, not $t = 3$.
-
-Substituting the claimed time:
-
-$$h(3) = 16 \\cdot 3 - 4 \\cdot 9$$
-
-$$h(3) = 48 - 36$$
-
-$$h(3) = 12 \\neq 0$$
-
-so the statement is False.`,
-      `**E.** → False
 
 At $t = 2$:
 
-$$h(2) = 20 \\cdot 2 - 5 \\cdot 4$$
+$$h(2) = 20 \\cdot 2 - 4 \\cdot 4$$
 
-$$h(2) = 40 - 20$$
+$$h(2) = 40 - 16$$
 
-$$h(2) = 20$$
+$$h(2) = 24$$
 
-The claim says $30$ m. The height is $20$ m, which is the maximum, so the statement is False.`,
+The height is $24$ m, not $30$ m. The claim says $30$ m, so the statement is False.`,
+      `**E.** → False
+
+The peak time of $h = -2t^{2} + 16t$ is
+
+$$t = -\\frac{16}{2(-2)}$$
+
+$$t = 4$$
+
+The ball peaks at $t = 4$ seconds, not $t = 5$. At the claimed time:
+
+$$h(5) = 16 \\cdot 5 - 2 \\cdot 25$$
+
+$$h(5) = 80 - 50$$
+
+$$h(5) = 30$$
+
+which is below the maximum of $32$ m at $t = 4$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 45,
-    solution_overview: `Five independent projectile claims. $h = 20t - 5t^{2}$ peaks at $t = 2$ seconds and $h = 20$ m. A second parabola $h = 16t - 4t^{2}$ returns at $t = 4$.`,
+    solution_overview: `Five independent quadratic motion claims. Evaluate $h(t)$ at a given time, find the vertex with $t = -b/(2a)$, or solve $h = 0$ for the return time. Each statement uses different coefficients.`,
   },
   {
     id: `math-4-46`,
@@ -5191,7 +5237,7 @@ Check: $\\frac{4}{12} = \\frac{1}{3}$. The tank holds $12$ litres, not the claim
       `The radical equation $\\sqrt{x + 3} = 4$ has a unique real solution, and that solution is an odd integer.`,
       `A square of area $13$ m$^{2}$ has side $\\sqrt{13}$ m.`,
       `A square root of a length plus $7$ m equals $5$ m. Squaring is valid because both sides are nonnegative, and the length is then $18$ m.`,
-      `A gardener with $3$ m$^{2}$ of extra soil and a new square of side $4$ m reports that the original area was $19$ m$^{2}$.`,
+      `The equation $\\sqrt{x + 5} = 4$ has a unique real solution, and that solution is $21$.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
@@ -5245,17 +5291,23 @@ $$x = 18$$
 The value $18$ lies in the domain. Check: $\\sqrt{25} = 5$. The length is $18$ m, so the statement is True.`,
       `**E.** → False
 
-The new square has area $16$ m$^{2}$ and the extra soil is $3$ m$^{2}$, so the original area $x$ satisfies $x + 3 = 16$:
+The equation is $\\sqrt{x + 5} = 4$. Require $x + 5 \\ge 0$, so $x \\ge -5$. Both sides are nonnegative, so squaring is valid:
 
-$$x = 16 - 3$$
+$$x + 5 = 4^{2}$$
 
-$$x = 13$$
+$$x + 5 = 16$$
 
-The claim reports $19$ m$^{2}$, which is $16 + 3$ rather than $16 - 3$. Substituting $x = 19$ into the radical equation:
+$$x = 11$$
 
-$$\\sqrt{19 + 3} = \\sqrt{22} \\neq 4$$
+The value $11$ lies in the domain. Check:
 
-The original area is $13$ m$^{2}$, so the statement is False.`,
+$$\\sqrt{16} = 4$$
+
+The unique solution is $x = 11$, not $21$. Substituting the claimed value:
+
+$$\\sqrt{21 + 5} = \\sqrt{26} \\neq 4$$
+
+so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 60,
@@ -6147,89 +6199,89 @@ There is exactly one real solution, not two, so the statement is False.`,
   {
     id: `math-4-70`,
     case_id: `MATH 4.70`,
-    title: `Five distance-on-a-line claims`,
+    title: `Five independent absolute-value and radical distance claims`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A depot on a straight road is to be $8$ km from post $1$ plus $8$ km from post $5$. The two possible sites are kilometre $-1$ and kilometre $7$.`,
-      `The points kilometre $-1$ and kilometre $7$ on a straight road are $8$ km apart from each other.`,
-      `The midpoint kilometre $3$ between posts $1$ and $5$ is claimed to sit $8$ km from post $1$ plus $8$ km from post $5$, because that point is equally far from both posts.`,
-      `The equation $\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert = 8$ has exactly two real solutions, one on each outer ray, and none between the posts.`,
-      `Every point between kilometre $1$ and kilometre $5$ has total distance $4$ km to the two posts. A student claims that every such point also has total distance $8$ km to those posts.`,
+      `The equation $\\lvert x - 3 \\rvert = 5$ has exactly two real solutions.`,
+      `The equation $\\lvert 2x + 1 \\rvert = 9$ has a negative integer solution.`,
+      `The equation $\\lvert x - 4 \\rvert = \\lvert x + 2 \\rvert$ has solution $x = 1$, and that solution is negative.`,
+      `The equation $\\sqrt{x} + 3 = 7$ has a unique real solution $x = 16$.`,
+      `The equation $\\lvert x - 6 \\rvert + \\lvert x - 2 \\rvert = 8$ has a solution at $x = 10$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The total distance to the two posts is $8$ km:
+Absolute value splits into two linear cases:
 
-$$\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert = 8$$
+$$\\lvert x - 3 \\rvert = 5$$
 
-Absolute values change formula at the posts, so split into three regions.
+Either $x - 3 = 5$, giving $x = 8$, or $x - 3 = -5$, giving $x = -2$.
 
-If $x < 1$:
-
-$$(1 - x) + (5 - x) = 8$$
-
-$$6 - 2x = 8$$
-
-$$x = -1$$
-
-and $-1 < 1$, so this candidate is allowed.
-
-If $1 \\le x \\le 5$:
-
-$$(x - 1) + (5 - x) = 4$$
-
-and $4 \\neq 8$, so there is no root between the posts.
-
-If $x > 5$:
-
-$$(x - 1) + (x - 5) = 8$$
-
-$$2x - 6 = 8$$
-
-$$x = 7$$
-
-and $7 > 5$, so this candidate is allowed.
-
-The recovered sites are kilometre $-1$ and kilometre $7$, so the statement is True.`,
+Those are two distinct real numbers, and no other value satisfies the equation, so the statement is True.`,
       `**B.** → True
 
-The distance between the two recovered sites is
+Split the absolute value:
 
-$$7 - (-1) = 8$$
+$$\\lvert 2x + 1 \\rvert = 9$$
 
-They are $8$ km apart. That is the claimed gap, so the statement is True.`,
+Either $2x + 1 = 9$, giving $x = 4$, or $2x + 1 = -9$, giving
+
+$$2x = -10$$
+
+$$x = -5$$
+
+The value $-5$ is a negative integer solution, so the statement is True.`,
       `**C.** → False
 
-The midpoint $x = 3$ lies between the posts, where the sum of distances is constantly $4$:
+Equal absolute values mean equal distance from $4$ and from $-2$. Either the expressions match, or one equals the negative of the other:
 
-$$\\lvert 3 - 1 \\rvert + \\lvert 3 - 5 \\rvert = 2 + 2 = 4$$
+$$x - 4 = x + 2$$
 
-and $4 \\neq 8$. Equal distance from the two posts would be the different equation $\\lvert x - 1 \\rvert = \\lvert x - 5 \\rvert$.
+has no solution. The second case gives
 
-The claimed total of $8$ km fails at kilometre $3$, so the statement is False.`,
+$$x - 4 = -(x + 2)$$
+
+$$x - 4 = -x - 2$$
+
+$$2x = 2$$
+
+$$x = 1$$
+
+The recovered solution is $x = 1$, which is positive, not negative. The claim that the solution is negative is wrong, so the statement is False.`,
       `**D.** → True
 
-The three-region split produces one root on $x < 1$, namely $x = -1$, one root on $x > 5$, namely $x = 7$, and none on $[1, 5]$, where the left side equals $4$ rather than $8$.
+The principal square root requires $x \\ge 0$. Isolate the radical:
 
-Exactly two real solutions, one on each outer ray, so the statement is True.`,
+$$\\sqrt{x} = 7 - 3$$
+
+$$\\sqrt{x} = 4$$
+
+Both sides are nonnegative, so squaring is valid:
+
+$$x = 16$$
+
+The value $16$ lies in the domain. Check:
+
+$$\\sqrt{16} + 3 = 4 + 3 = 7$$
+
+The unique solution is $x = 16$, so the statement is True.`,
       `**E.** → False
 
-On the closed interval between the posts the sum of distances is constantly $4$:
+At $x = 10$, both posts lie to the left, so each distance is a positive difference:
 
-$$\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert = 4$$
+$$\\lvert 10 - 6 \\rvert + \\lvert 10 - 2 \\rvert$$
 
-for every $x$ in $[1, 5]$. That constant $4$ is never $8$. Plug a sample point such as $x = 3$:
+$$= 4 + 8$$
 
-$$2 + 2 = 4 \\neq 8$$
+$$= 12$$
 
-so the statement is False.`,
+and $12 \\neq 8$. The claimed point does not satisfy the equation, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 70,
-    solution_overview: `Five independent claims about distances on a line. The sum $\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert$ equals $4$ between the posts and grows outside, so $= 8$ only at $x = -1$ and $x = 7$.`,
+    solution_overview: `Five independent absolute-value and radical distance claims. Split $\\lvert \\cdot \\rvert$ into cases, isolate a square root before squaring, and evaluate sums of distances at a test point.`,
   },
   {
     id: `math-4-71`,

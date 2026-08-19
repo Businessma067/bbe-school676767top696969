@@ -15,7 +15,7 @@ export const MATH_CH4_4_EXPONENTIAL: MathTask[] = [
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $2^x = 32$ has exactly one real solution.`,
-      `The equation $2^x = 32$ has no real solution.`,
+      `The equation $2^x = -8$ has at least one real solution.`,
       `The equation $\\log_3 x = 2$ has exactly one positive real solution.`,
       `The equation $5^x = -1$ has at least one real solution.`,
       `The equation $\\left(\\frac{1}{2}\\right)^x = \\frac{1}{8}$ has exactly one real solution.`,
@@ -33,9 +33,11 @@ $$2^x = 2^5$$
 Monotonicity gives exactly one real solution.`,
       `**B.** → False
 
-The same equation $2^x = 32$ reduces to $2^x = 2^5$ on base $2$.
+For every real $x$, the value $2^x$ is strictly positive.
 
-Because $32 > 0$ and base $2$ is one-to-one, a real solution exists. The claim of no real solution is wrong.`,
+$$2^x > 0 \\quad \\text{for all real } x$$
+
+A positive output cannot equal $-8$, so there are zero real solutions.`,
       `**C.** → True
 
 Convert to exponential form with domain $x > 0$.
@@ -464,7 +466,7 @@ There is exactly one real solution, so the claim of no real solution is false.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\log_2 x = 5$ has exactly one positive real solution.`,
-      `The equation $\\log_2 x = 5$ has a negative real solution.`,
+      `The equation $\\log_3 x = 2$ has a negative real solution.`,
       `The equation $\\log_3(x-1) = 2$ has exactly one real solution with $x > 1$.`,
       `The equation $\\ln(1-x) = 0$ has exactly one real solution.`,
       `The equation $\\ln x = 0$ has two distinct real solutions.`,
@@ -482,11 +484,13 @@ $$x = 2^5$$
 Domain $x > 0$ keeps exactly one admissible root.`,
       `**B.** → False
 
-Negative numbers are outside the domain of $\\log_2 x$.
+Convert to exponential form: $x = 3^2 = 9 > 0$.
 
-$$x = 2^5 > 0$$
+$$\\log_3 x = 2$$
 
-No negative value can satisfy the equation.`,
+$$x = 9$$
+
+No negative value satisfies the domain $x > 0$, so the claim is false.`,
       `**C.** → True
 
 Convert with $x - 1 > 0$.
@@ -529,7 +533,7 @@ Only one admissible real value exists.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\ln(x+1) = 2$ has exactly one real solution.`,
-      `The equation $\\ln(x+1) = 2$ has no real solution with $x \\le -1$.`,
+      `The equation $\\ln(2x-1) = 3$ has exactly one real solution.`,
       `The equation $\\ln(5-x) = \\ln 2$ has exactly one real solution.`,
       `The equation $\\log_2(x-3) = 1$ has a real solution with $x \\le 3$.`,
       `The equation $\\ln x + \\ln(x-1) = \\ln 12$ requires every real solution to satisfy $x > 1$.`,
@@ -547,13 +551,13 @@ $$x + 1 = e^2$$
 Also $x + 1 > 0$, so exactly one admissible root exists.`,
       `**B.** → True
 
-The argument $x + 1$ must stay positive.
+Need $2x - 1 > 0$ and $\\ln(2x-1) = 3$ gives $2x - 1 = e^3$.
 
-$$x + 1 > 0$$
+$$2x - 1 = e^3$$
 
-$$x > -1$$
+$$x = \\frac{e^3 + 1}{2}$$
 
-At $x = -1$ the argument is zero; below that it is negative. No value with $x \\le -1$ works.`,
+That value exceeds $\\frac{1}{2}$, so exactly one admissible root exists.`,
       `**C.** → True
 
 Both arguments must be positive, and equal logs force equal arguments.
@@ -596,7 +600,7 @@ Together these force $x > 1$ for any valid solution.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\log x + \\log(x+3) = 1$ has exactly one positive real solution.`,
-      `The equation $\\log x + \\log(x+3) = 1$ has a real solution with $x \\le 0$.`,
+      `The equation $\\log(x+2) + \\log(x-1) = 1$ has a real solution with $x \\le 1$.`,
       `The equation $\\ln(x^2) = 0$ has exactly two real solutions.`,
       `The equation $\\log_{10}(x-9) = 1$ has exactly one real solution.`,
       `The equation $\\log_2(x-4) = 3$ has a real solution with $x \\le 4$.`,
@@ -618,11 +622,19 @@ $$(x+5)(x-2) = 0$$
 Domain requires $x > 0$, leaving exactly one positive root.`,
       `**B.** → False
 
-Algebra gives candidates $x = -5$ and $x = 2$, but $x = -5$ fails $x > 0$.
+Use the product rule with $x + 2 > 0$ and $x - 1 > 0$, so $x > 1$.
 
-$$x = -5 \\notin (0,\\infty)$$
+$$\\log((x+2)(x-1)) = 1$$
 
-No nonpositive solution is valid.`,
+$$(x+2)(x-1) = 10$$
+
+$$x^2 + x - 2 = 10$$
+
+$$x^2 + x - 12 = 0$$
+
+$$(x+4)(x-3) = 0$$
+
+Only $x = 3$ is admissible, and $3 > 1$. No value with $x \\le 1$ works.`,
       `**C.** → True
 
 The rule $\\ln(x^2) = 0$ gives $x^2 = 1$ with $x^2 > 0$.
