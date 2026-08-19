@@ -4,7 +4,7 @@
  * Only rewrites statements that lack a valid student equation.
  */
 import fs from "node:fs";
-import { isValidStudentEquation, rewriteFromExp, normalizeLatexEq, tsFileEscape } from "./rewrite-ch4-root-claims.mjs";
+import { isValidStudentEquation, rewriteFromExp, normalizeLatexEq } from "./rewrite-ch4-root-claims.mjs";
 
 const FILES = ["src/data/math-ch4-equations.ts", "src/data/math-ch4-4-exponential.ts"];
 
@@ -69,6 +69,8 @@ function isBadStatement(s) {
   const eqm = s.match(/^For \$([^$]+)\$/);
   if (eqm && !isValidStudentEquation(eqm[1])) {
     if (/customer pays|salary after|rise followed|leaves \$|m\$\\^\{2\}|square with side|If \$x\^\{2\} = a\$/i.test(s)) return false;
+    if (/computed value|calculation confirms|calculation contradicts|computed result|no real value satisfies|some real value satisfies/i.test(s))
+      return false;
     if (/admissible root|real solution|discriminant|distinct.*solution|infinitely many|every real number/i.test(s)) return true;
     return false;
   }
@@ -80,7 +82,7 @@ function fixEscaping(stmt) {
 }
 
 function formatStatements(arr) {
-  return arr.map((s) => `      \`${tsFileEscape(normalizeLatexEq(s))}\`,`).join("\n");
+  return arr.map((s) => `      \`${normalizeLatexEq(s)}\`,`).join("\n");
 }
 
 let fixed = 0;
