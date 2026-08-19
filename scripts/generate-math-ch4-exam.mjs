@@ -6,6 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { initHardTemplates } from "./ch4-hard-templates.mjs";
+import { normalizeStatement, validateStatement } from "./ch4-statement-rules.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_MAIN = path.join(ROOT, "src/data/math-ch4-equations.ts");
@@ -26,6 +27,15 @@ function wrong(n) {
 function pickClaim(correct, isTrue, asInt = true) {
   const v = asInt ? Math.round(correct) : correct;
   return isTrue ? v : wrong(v);
+}
+
+/** TRUE → inequality bound (no plug-in); FALSE → explicit wrong number. */
+function claimAntiPlug(correct, isTrue, asInt = true) {
+  const v = asInt ? Math.round(correct) : correct;
+  if (!isTrue) return `$${wrong(v)}$`;
+  const delta = Math.max(2, Math.min(6, Math.floor(Math.abs(v) / 5) || 2));
+  const bound = asInt ? v - delta : Math.round((v - delta * 0.5) * 10) / 10;
+  return `greater than $${bound}$`;
 }
 
 function pm(h, m) {
@@ -61,6 +71,7 @@ const KEY_PATTERNS = [
 ];
 
 const usedKeys = new Set();
+const usedStatements = new Set();
 
 function hdr(L, t) {
   return `**${L}.** → ${t ? "True" : "False"}`;
@@ -258,12 +269,13 @@ function linAge(slot, isTrue) {
   const gap = 26 + (slot % 6) * 2;
   const ahead = 8 + (slot % 5);
   const son = gap - ahead;
-  const claim = pickClaim(son, isTrue);
+  const bound = Math.max(1, son - 2);
+  const claim = isTrue ? `greater than $${bound}$ years old` : `$${wrong(son)}$ years old`;
   return {
     key: `linAge-${gap}-${ahead}`,
     statement: phrase(
       slot,
-      `A mother is $${gap}$ years older than her daughter. In $${ahead}$ years the mother will be twice as old as the daughter will be then. The daughter is now $${claim}$ years old.`
+      `A mother is $${gap}$ years older than her daughter. In $${ahead}$ years the mother will be twice as old as the daughter will be then. The daughter is now ${claim}.`
     ),
     expl: mkExpl(isTrue, [
       hdr("?", isTrue).replace("?", "{L}"),
@@ -322,12 +334,13 @@ function linRodCut(slot, isTrue) {
   const total = 280 + (slot % 6) * 20;
   const diff = 50 + (slot % 4) * 10;
   const short = (total - diff) / 2;
-  const claim = pickClaim(short, isTrue);
+  const bound = short - 10;
+  const claim = isTrue ? `greater than $${bound}$ cm` : `$${wrong(short)}$ cm`;
   return {
     key: `linRod-${total}-${diff}`,
     statement: phrase(
       slot,
-      `An aluminium bar of length $${total / 100}$ m is cut into two parts; one part is $${diff}$ cm longer than the other. The shorter part is $${claim}$ cm.`
+      `An aluminium bar of length $${total / 100}$ m is cut into two parts; one part is $${diff}$ cm longer than the other. The shorter part is ${claim}.`
     ),
     expl: mkExpl(isTrue, [
       hdr("?", isTrue).replace("?", "{L}"),
@@ -362,12 +375,13 @@ function linOddTriple(slot, isTrue) {
   const n = 13 + (slot % 8) * 2;
   const sum = 3 * n + 6;
   const max = n + 4;
-  const claim = pickClaim(max, isTrue);
+  const bound = max - 2;
+  const claim = isTrue ? `greater than $${bound}$` : `$${wrong(max)}$`;
   return {
     key: `linOdd-${sum}`,
     statement: phrase(
       slot,
-      `Three consecutive odd integers add up to $${sum}$. The largest equals $${claim}$.`
+      `Three consecutive odd integers add up to $${sum}$. The largest is ${claim}.`
     ),
     expl: mkExpl(isTrue, [
       hdr("?", isTrue).replace("?", "{L}"),
@@ -899,8 +913,7 @@ function quadGeomHyp(slot, isTrue) {
 
 const QUAD_TPLS = [
   quadAreaLonger, quadConsecProd, quadVietaPair, quadFenceMax, quadNumRecip,
-  quadDisc, quadPathField, quadTwoDigit, quadAltitude, quadProj, quadConsecSum,
-  quadDiffSq, quadFixedPerim, quadRootSum, quadNoReal, quadGeomHyp,
+  quadPathField, quadConsecSum, quadFixedPerim, quadRootSum, quadNoReal, quadProj,
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -1087,8 +1100,8 @@ function ratPartial(slot, isTrue) {
 }
 
 const RAT_TPLS = [
-  ratWork, ratWorkDrain, radLadder, radArea, radEq, absTaxi, absDist,
-  ratCross, ratAvgSpeed, ratOpposingTrains, ratMphKmh, radNested, absTwoCase, ratPartial,
+  ratWork, ratWorkDrain, radEq, absDist,
+  ratCross, ratOpposingTrains, absTwoCase, ratPartial,
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -1309,57 +1322,134 @@ function expNoReal(slot, isTrue) {
   };
 }
 
+function expPowerEq(slot, isTrue) {
+  const bases = [
+    { eq: "2^x = 32", x: 5 },
+    { eq: "3^x = 81", x: 4 },
+    { eq: "5^x = 625", x: 4 },
+    { eq: "2^{x+1} = 64", x: 5 },
+    { eq: "4^x = 256", x: 4 },
+    { eq: "10^{x-1} = 1000", x: 4 },
+  ];
+  const p = bases[(slot + Math.floor(slot / 6)) % bases.length];
+  const claim = pickClaim(p.x, isTrue);
+  return {
+    key: `expPow-${p.eq}-${slot}`,
+    statement: phrase(slot, `The equation $${p.eq}$ has real solution $x = ${claim}$.`),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Match powers → $x=${p.x}$.`]),
+  };
+}
+
+function logLinearEq(slot, isTrue) {
+  const b = 2 + (slot % 4);
+  const c = 3 + (slot % 5);
+  const x = Math.pow(b, c);
+  const claim = pickClaim(c, isTrue);
+  return {
+    key: `logLin-${b}-${c}-${slot}`,
+    statement: phrase(slot, `The equation $\\log_{${b}} x = ${claim}$ has solution $x = ${x}$.`),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x=${b}^{${c}}=${x}$$.`]),
+  };
+}
+
+function expLnEq(slot, isTrue) {
+  const a = 2 + (slot % 4);
+  const b = 3 + (slot % 3);
+  const x = Math.exp(a);
+  const rhs = a + Math.log(b);
+  const claim = pickClaim(x, isTrue, false);
+  return {
+    key: `expLn-${a}-${b}-${slot}`,
+    statement: phrase(slot, `The equation $\\ln x = \\ln ${b} + ${a}$ has solution $x = ${claim}$.`),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\ln x = \\ln(${b}e^{${a}})$$`, `$$x=${b}e^{${a}}=${Math.round(x * 100) / 100}$$.`]),
+  };
+}
+
+function logSumEq(slot, isTrue) {
+  const a = 3 + (slot % 4);
+  const x = Math.pow(10, a + 1);
+  const claim = pickClaim(x, isTrue);
+  return {
+    key: `logSum2-${a}-${slot}`,
+    statement: phrase(slot, `The equation $\\log x + \\log ${a} = ${a + 1}$ (base $10$) has solution $x = ${claim}$.`),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\log(${a}x)=${a + 1}$$`, `$$x=${x}$$.`]),
+  };
+}
+
 const EXP_TPLS = [
-  logComplex, logProductDomain, expBacteria, expCompound, expSubstWord,
-  expHalfLife, logShiftContext, logSumFrac, expMixedBase, logChangeBase,
-  expCooling, logInequality, expQuadBase2, logDecadicClaim, expNoReal,
+  logComplex, logProductDomain, expSubstWord,
+  logShiftContext, logSumFrac, expMixedBase,
+  logInequality, expQuadBase2, expNoReal,
+  expPowerEq, logLinearEq, expLnEq, logSumEq,
 ];
+
+const SIMPLE_EXP = new Set(["expPowerEq", "logLinearEq", "logSumEq", "expLnEq", "expNoReal"]);
 
 function poolFor(sub, tier) {
   const T = TIER;
   const t = tier;
+  let pool;
   if (sub === "4.1") {
-    if (t === 1) return T.LIN_1;
-    if (t === 2) return [...T.LIN_2, ...LIN_TPLS.slice(0, 8)];
-    if (t === 3) return LIN_TPLS;
-    if (t === 4) return [...T.LIN_4, ...LIN_TPLS];
-    return [...T.LIN_5, ...T.LIN_4, ...LIN_TPLS.slice(0, 6)];
+    if (t === 1) pool = [...T.LIN_1, ...LIN_TPLS.slice(0, 12)];
+    else if (t === 2) pool = [...T.LIN_2, ...LIN_TPLS.slice(0, 18)];
+    else if (t === 3) pool = LIN_TPLS;
+    else if (t === 4) pool = [...T.LIN_4, ...LIN_TPLS];
+    else pool = [...T.LIN_5, ...T.LIN_4, ...LIN_TPLS.slice(0, 10)];
+  } else if (sub === "4.2") {
+    if (t === 1) pool = QUAD_TPLS.slice(0, 5);
+    else if (t === 2) pool = QUAD_TPLS.slice(0, 8);
+    else if (t === 3) pool = QUAD_TPLS;
+    else if (t === 4) pool = [...T.QUAD_4, ...QUAD_TPLS];
+    else pool = [...T.QUAD_5, ...T.QUAD_4, ...QUAD_TPLS];
+  } else if (sub === "4.3") {
+    if (t === 1) pool = RAT_TPLS.slice(0, 4);
+    else if (t === 2) pool = RAT_TPLS.slice(0, 6);
+    else if (t === 3) pool = RAT_TPLS;
+    else if (t === 4) pool = [...T.RAT_4, ...RAT_TPLS];
+    else pool = [...T.RAT_5, ...T.RAT_4, ...RAT_TPLS];
+  } else {
+    pool = EXP_TPLS;
+    if (t === 4) pool = [...T.EXP_4, ...EXP_TPLS];
+    else if (t >= 5) pool = [...T.EXP_5, ...T.EXP_4, ...EXP_TPLS];
   }
-  if (sub === "4.2") {
-    if (t <= 2) return QUAD_TPLS.slice(0, 6);
-    if (t === 3) return QUAD_TPLS;
-    if (t === 4) return [...T.QUAD_4, ...QUAD_TPLS.slice(6, 12)];
-    return [...T.QUAD_5, ...T.QUAD_4, ...QUAD_TPLS.slice(10)];
+  if (t >= 4 && sub === "4.4") {
+    pool = pool.filter((fn) => !SIMPLE_EXP.has(fn.name));
   }
-  if (sub === "4.3") {
-    if (t <= 2) return RAT_TPLS.slice(0, 5);
-    if (t === 3) return RAT_TPLS;
-    if (t === 4) return [...T.RAT_4, ...RAT_TPLS.slice(5, 10)];
-    return [...T.RAT_5, ...T.RAT_4, ...RAT_TPLS.slice(8)];
+  if (t >= 4 && sub === "4.2") {
+    pool = pool.filter((fn) => fn.name !== "quadConsecSum" && fn.name !== "quadRootSum");
   }
-  if (t <= 2) return EXP_TPLS;
-  if (t === 3) return EXP_TPLS;
-  if (t === 4) return [...T.EXP_4, ...EXP_TPLS];
-  return [...T.EXP_5, ...T.EXP_4];
+  return pool;
 }
 
-function buildLetter(pool, taskN, letter, isTrue, usedTpl) {
-  for (let tries = 0; tries < 400; tries++) {
-    const slot = taskN * 7919 + letter * 53 + tries * 19;
-    const ti = (slot + tries) % pool.length;
-    if (usedTpl.has(ti) && tries < pool.length * 2) continue;
-    const spec = pool[ti](slot, isTrue);
-    if (spec.forceTrue !== undefined && spec.forceTrue !== isTrue) continue;
-    const key = `${spec.key}-t${taskN}-l${letter}`;
-    if (usedKeys.has(key)) continue;
-    usedKeys.add(key);
-    usedTpl.add(ti);
-    const L = String.fromCharCode(65 + letter);
-    let expl = spec.expl.replaceAll("{L}", L);
-    expl = expl.replace(`**?.**`, `**${L}.**`);
-    return { statement: spec.statement, expl };
+function buildLetter(pool, taskN, letter, isTrue, usedTpl, subsection, tier) {
+  const pools = [pool];
+  for (let w = 1; w <= 3; w++) {
+    const wider = poolFor(subsection, Math.max(1, tier - w));
+    if (wider !== pools[pools.length - 1]) pools.push(wider);
   }
-  throw new Error(`failed task=${taskN} letter=${letter}`);
+  for (const activePool of pools) {
+    for (let tries = 0; tries < 1200; tries++) {
+      const slot = taskN * 7919 + letter * 53 + tries * 19;
+      const ti = (slot + tries) % activePool.length;
+      if (usedTpl.has(`${activePool.length}-${ti}`) && tries < activePool.length * 3) continue;
+      const spec = activePool[ti](slot, isTrue);
+      if (spec.forceTrue !== undefined && spec.forceTrue !== isTrue) continue;
+      const key = `${spec.key}-t${taskN}-l${letter}`;
+      if (usedKeys.has(key)) continue;
+      const norm = normalizeStatement(spec.statement);
+      if (usedStatements.has(norm)) continue;
+      const err = validateStatement(spec.statement, isTrue, subsection);
+      if (err) continue;
+      usedKeys.add(key);
+      usedStatements.add(norm);
+      usedTpl.add(`${activePool.length}-${ti}`);
+      const L = String.fromCharCode(65 + letter);
+      let expl = spec.expl.replaceAll("{L}", L);
+      expl = expl.replace(`**?.**`, `**${L}.**`);
+      return { statement: spec.statement, expl };
+    }
+  }
+  throw new Error(`failed task=${taskN} letter=${letter} sub=${subsection}`);
 }
 
 const TITLES = {
@@ -1399,7 +1489,7 @@ function buildTask(n, sub) {
   const statements = [];
   const tactical_explanations = [];
   for (let i = 0; i < 5; i++) {
-    const spec = buildLetter(pool, n, i, answer_key[i], usedTpl);
+    const spec = buildLetter(pool, n, i, answer_key[i], usedTpl, sub, tier);
     statements.push(spec.statement);
     tactical_explanations.push(spec.expl);
   }
@@ -1487,7 +1577,7 @@ ${t44.map(renderTask).join("\n")}
 );
 
 const all = [...t41, ...t42, ...t43, ...t44];
-console.log(`Generated ${all.length} exam tasks`);
+console.log(`Generated ${all.length} exam tasks (${usedStatements.size} unique statements)`);
 for (let d = 1; d <= 5; d++) {
   console.log(`  ${d}/5: ${all.filter((t) => t.difficulty_level === `${d}/5`).length}`);
 }

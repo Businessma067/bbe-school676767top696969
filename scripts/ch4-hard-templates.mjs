@@ -89,42 +89,66 @@ export function initHardTemplates(H) {
   // ═══ 4.1 TIER 5 — photo-length stories ═══════════════════════════════════
 
   function lin5PhotoArea(slot, isTrue) {
-    const d = 3;
-    const s = 5;
+    const d = 2 + (slot % 4);
+    const s = 4 + (slot % 7);
     const A = s * (s + d);
-    const claim = pickClaim(5, isTrue);
+    const longer = s + d;
+    const claim = pickClaim(longer, isTrue);
     return {
-      key: `5area-${A}`,
-      statement: `If one side of a rectangle is by $${d}$ cm longer than the other one and the rectangle's area is $${A}$ cm$^{2}$, then the length of the longer side is $${claim}$ cm.`,
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${d})=${A}$$`, `$$x=${s}$$, longer side $${s + d}$ cm.`]),
+      key: `5area-${A}-${slot}`,
+      statement: phrase(
+        slot,
+        `If one side of a rectangle is by $${d}$ cm longer than the other one and the rectangle's area is $${A}$ cm$^{2}$, then the length of the longer side is $${claim}$ cm.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${d})=${A}$$`, `$$x=${s}$$, longer side $${longer}$ cm.`]),
     };
   }
 
   function lin5PhotoCar(slot, isTrue) {
-    const st = backFrom(15, 0, 105);
-    const claim = isTrue ? pm(st.h, st.m) : pm(2, 45);
+    const v = 56 + (slot % 5) * 8;
+    const hrs = 1.25 + (slot % 4) * 0.25;
+    const dist = Math.round(v * hrs);
+    const mins = Math.round(hrs * 60);
+    const st = backFrom(15, 0, mins);
+    const claim = isTrue ? pm(st.h, st.m) : pm(st.h + 1, (st.m + 15) % 60);
     return {
-      key: `5car-112`,
-      statement: `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at ${claim}.`,
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$t=112/64=1.75$$ h $=1$ h $45$ min → start ${pm(st.h, st.m)}.`]),
+      key: `5car-${v}-${dist}`,
+      statement: phrase(
+        slot,
+        `A car travels at an average speed of $${v}$ km/h. At $3$ pm, it has traveled a total distance of $${dist}$ km. Then it started traveling at ${claim}.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$t=${dist}/${v}=${hrs}$$ h → start ${pm(st.h, st.m)}.`]),
     };
   }
 
   function lin5PhotoVinegar(slot, isTrue) {
-    const claim = pickClaim(0.6, isTrue, false);
+    const target = 4 + (slot % 3);
+    const have = target + 2 + (slot % 4);
+    const w = Math.round(((have / 100 / (target / 100) - 1) * 10)) / 10;
+    const claim = pickClaim(w, isTrue, false);
     return {
-      key: `5vinegar`,
-      statement: `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with $${claim}$ litres of water to get the right concentration.`,
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$0.08/(1+w)=0.05$$`, `$$w=0.6$$`]),
+      key: `5vinegar-${target}-${have}`,
+      statement: phrase(
+        slot,
+        `A recipe calls for $${target}\\%$ vinegar. If the cook only has $1$ litre of $${have}\\%$ vinegar, he needs to mix it with $${claim}$ litres of water to get the right concentration.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${have / 100}}{1+w}=\\frac{${target}}{100}$$`, `$$w=${w}$$`]),
     };
   }
 
   function lin5PhotoPrize(slot, isTrue) {
-    const claim = pickClaim(4000, isTrue);
+    const total = 10000 + (slot % 8) * 1500;
+    const pct = 75 + (slot % 3) * 5;
+    const r = pct / 100;
+    const second = Math.round((total / (1 + r + r * r)) * r);
+    const claim = pickClaim(second, isTrue);
     return {
-      key: `5prize12200`,
-      statement: `A prize money of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for $2$nd place is $${claim}$ EUR.`,
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$2.44a=12200$$`, `$$a=5000$$`, `$$2\\text{nd}=4000$$ EUR.`]),
+      key: `5prize-${total}-${pct}`,
+      statement: phrase(
+        slot,
+        `A prize money of $${total}$ EUR is split so that $2$nd place receives $${pct}\\%$ of $1$st and $3$rd receives $${pct}\\%$ of $2$nd (entire fund distributed). Then the prize for $2$nd place is $${claim}$ EUR.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$a(1+${r}+${r * r})=${total}$$`, `$$2\\text{nd}=${second}$$ EUR.`]),
     };
   }
 
@@ -141,31 +165,50 @@ export function initHardTemplates(H) {
   }
 
   function lin5RoundTrip(slot, isTrue) {
-    const real = 5;
-    const trap = 4.8;
-    const claim = pickClaim(Math.round(trap * 10) / 10, isTrue, false);
+    const d = 24 + (slot % 4) * 6;
+    const v1 = 12 + (slot % 3) * 3;
+    const v2 = 8 + (slot % 2) * 2;
+    const real = Math.round((d / v1 + d / v2) * 10) / 10;
+    const trap = Math.round((2 * d / (v1 + v2)) * 10) / 10;
+    const claim = pickClaim(trap, isTrue, false);
     return {
-      key: `5rt-30`,
-      statement: phrase(slot, `A cyclist rides $30$ km to a village at $15$ km/h and returns at $10$ km/h over the same road. A spectator incorrectly claims the round trip took as long as riding $60$ km at the average of the two speeds ($12.5$ km/h), i.e. $${claim}$ hours in total.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Actual $3+2=5$ h; mean-speed trap gives $4.8$ h.`]),
+      key: `5rt-${d}-${v1}-${v2}`,
+      statement: phrase(
+        slot,
+        `A cyclist rides $${d}$ km out at $${v1}$ km/h and returns at $${v2}$ km/h. A spectator claims the round trip equals riding $${2 * d}$ km at the arithmetic mean speed $\\frac{${v1}+${v2}}{2}$ km/h, i.e. $${claim}$ hours total.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Actual $\\frac{${d}}{${v1}}+\\frac{${d}}{${v2}}=${real}$ h; mean-speed trap $${trap}$ h.`]),
     };
   }
 
   function lin5PoolDrain(slot, isTrue) {
-    const claim = pickClaim(12, isTrue);
+    const fill = 3 + (slot % 4);
+    const drain = fill + 2 + (slot % 3);
+    const t = Math.round((fill * drain) / (drain - fill) * 10) / 10;
+    const claim = pickClaim(t, isTrue, false);
     return {
-      key: `5pool`,
-      statement: phrase(slot, `Inlet $A$ alone fills an empty pool in $4$ hours. Drain $B$ alone empties a full pool in $6$ hours. With both operating from empty (no overflow), the pool is full for the first time after $${claim}$ hours.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$`]),
+      key: `5pool-${fill}-${drain}`,
+      statement: phrase(
+        slot,
+        `Inlet $A$ alone fills an empty pool in $${fill}$ hours. Drain $B$ alone empties a full pool in $${drain}$ hours. With both open from empty, the pool is full for the first time after $${claim}$ hours.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{1}{${fill}}-\\frac{1}{${drain}}=\\frac{1}{t}$$`, `$$t=${t}$$`]),
     };
   }
 
   function lin5FatherSon(slot, isTrue) {
-    const claim = pickClaim(20, isTrue);
+    const gap = 24 + (slot % 5) * 2;
+    const ahead = 6 + (slot % 4);
+    const son = gap - ahead;
+    const bound = Math.max(1, son - 2);
+    const claim = isTrue ? `greater than $${bound}$ years old` : `$${pickClaim(son, false)}$ years old`;
     return {
-      key: `5age`,
-      statement: phrase(slot, `A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. The son is now $${claim}$ years old.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$s+36=2(s+8)$$`, `$$s=20$$`]),
+      key: `5age-${gap}-${ahead}`,
+      statement: phrase(
+        slot,
+        `A father is $${gap}$ years older than his son. In $${ahead}$ years the father will be twice as old as the son will be then. The son is now ${claim}.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$s+${gap}+${ahead}=2(s+${ahead})$$`, `$$s=${son}$$`]),
     };
   }
 
@@ -214,30 +257,49 @@ export function initHardTemplates(H) {
   // ═══ 4.3 TIER 4/5 ═══════════════════════════════════════════════════════
 
   function rat4Train(slot, isTrue) {
-    const sec = Math.round((500 / 180) * 3.6);
+    const l1 = 150 + (slot % 4) * 30;
+    const l2 = 200 + (slot % 3) * 40;
+    const v1 = 60 + (slot % 3) * 12;
+    const v2 = 90 + (slot % 2) * 18;
+    const sec = Math.round(((l1 + l2) / (v1 + v2)) * 3.6);
     const claim = pickClaim(sec, isTrue);
     return {
-      key: `4train`,
-      statement: phrase(slot, `Two trains $180$ m and $320$ m long approach each other at $72$ km/h and $108$ km/h on parallel tracks. From the instant their fronts meet until they have completely passed each other takes $${claim}$ seconds.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Relative $180$ km/h, length $500$ m.`]),
+      key: `4train-${l1}-${l2}-${v1}`,
+      statement: phrase(
+        slot,
+        `Two trains $${l1}$ m and $${l2}$ m long approach each other at $${v1}$ km/h and $${v2}$ km/h. From front meeting to full pass takes $${claim}$ seconds.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Relative $${v1 + v2}$ km/h, length $${l1 + l2}$ m.`]),
     };
   }
 
   function rat5WorkDrain(slot, isTrue) {
-    const claim = pickClaim(12, isTrue);
+    const fill = 3 + (slot % 3);
+    const drain = fill + 2 + (slot % 4);
+    const t = Math.round((fill * drain) / (drain - fill) * 10) / 10;
+    const claim = pickClaim(t, isTrue, false);
     return {
-      key: `5ratwd`,
-      statement: phrase(slot, `Pipe $A$ fills a tank in $4$ hours; pipe $B$ empties a full tank in $6$ hours. With both open on an empty tank, the tank becomes full for the first time after $${claim}$ hours.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$`]),
+      key: `5ratwd-${fill}-${drain}`,
+      statement: phrase(
+        slot,
+        `Pipe $A$ fills a tank in $${fill}$ hours; pipe $B$ empties a full tank in $${drain}$ hours. With both open on an empty tank, it is full for the first time after $${claim}$ hours.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{1}{${fill}}-\\frac{1}{${drain}}=\\frac{1}{t}$$`, `$$t=${t}$$`]),
     };
   }
 
   function rat5Ladder(slot, isTrue) {
-    const claim = pickClaim(5, isTrue);
+    const b = 3 + (slot % 4);
+    const h = 4 + (slot % 3);
+    const L = Math.round(Math.sqrt(b * b + h * h));
+    const claim = pickClaim(L, isTrue);
     return {
-      key: `5lad`,
-      statement: phrase(slot, `A ladder reaches $3$ m up a wall when its foot is $4$ m from the wall (right angle at the ground). The ladder length is $${claim}$ m.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$L=\\sqrt{9+16}=5$$`]),
+      key: `5lad-${b}-${h}`,
+      statement: phrase(
+        slot,
+        `A ladder reaches $${h}$ m up a wall when its foot is $${b}$ m from the wall. The ladder length is $${claim}$ m.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$L=\\sqrt{${b}^2+${h}^2}=${L}$$`]),
     };
   }
 
@@ -286,88 +348,158 @@ export function initHardTemplates(H) {
   }
 
   function log5PhotoE(slot, isTrue) {
-    const p = logExamParams(0);
-    const claimWord = isTrue ? "smaller" : "not smaller";
+    const p = logExamParams(slot);
+    const claimWord = isTrue ? (p.smaller ? "smaller" : "not smaller") : p.smaller ? "not smaller" : "smaller";
     const actual = p.smaller;
     const stmtTrue = (claimWord === "smaller") === actual;
+    const cStr = p.C === "16/3" ? "\\frac{16}{3}" : p.C;
     return {
-      key: `5photoE`,
-      statement: `The solution of the equation $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^3} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is ${claimWord} than $5$.`,
+      key: `5photoE-${p.k}-${p.bound}-${slot}`,
+      statement: phrase(
+        slot,
+        `The solution of $\\log \\sqrt[${p.k}]{x} + \\log \\frac{1}{x^{${p.k}}} - \\log x^2 + ${cStr} = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is ${claimWord} than $${p.bound}$.`
+      ),
       expl: mkExpl(isTrue, [
         hdr("?", isTrue).replace("?", "{L}"),
         "",
-        `Domain: $x > 0$. With $\\log 100=2$:`,
-        `$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$`,
-        `$$-\\frac{16}{3}\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$`,
-        `$$\\log x = 1,\\quad x = 10$$`,
-        `$10 \\ge 5$, so the solution is not smaller than $5$.`,
+        `Combine log coefficients → $\\log x = ${p.logx}$, $x = ${Math.round(p.x * 100) / 100}$.`,
+        actual ? `$x < ${p.bound}$.` : `$x \\ge ${p.bound}$.`,
       ]),
       forceTrue: stmtTrue,
     };
   }
 
   function log5Product(slot, isTrue) {
-    const a = 3 + (slot % 3);
-    const root = 20;
-    const claim = pickClaim(root, isTrue);
+    const a = 2 + (slot % 6);
+    const rhs = 1 + (slot % 2);
+    const target = Math.pow(10, rhs);
+    const root = Math.round(((-a + Math.sqrt(a * a + 4 * target)) / 2) * 100) / 100;
+    const claim = pickClaim(root, isTrue, false);
     return {
-      key: `5logprod-${a}`,
-      statement: phrase(slot, `The equation $\\log x + \\log(x+${a}) = 1$ (decadic logarithms; domain $x > 0$ and $x > -${a}$) has the unique positive solution $x = ${claim}$.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10$$`, `$$x=${root}$$`]),
+      key: `5logprod-${a}-${rhs}-${slot}`,
+      statement: phrase(
+        slot,
+        `The equation $\\log x + \\log(x+${a}) = ${rhs}$ (decadic logs; domain $x > 0$) has positive solution $x = ${claim}$.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10^{${rhs}}$$`, `$$x=${root}$$`]),
     };
   }
 
   function exp5Subst(slot, isTrue) {
-    const u1 = 3;
-    const u2 = 7;
+    const u1 = 2 + (slot % 4);
+    const u2 = u1 + 4 + (slot % 3);
     const s = u1 + u2;
     const pr = u1 * u2;
-    const claim = pickClaim(2, isTrue);
+    const roots = 2;
+    const claim = pickClaim(roots, isTrue);
     return {
-      key: `5esub-${s}`,
-      statement: phrase(slot, `A population model reduces to $e^{2x} - ${s}e^x + ${pr} = 0$ with substitution $u = e^x > 0$. The model admits $${claim}$ distinct real values of $x$.`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${pr}=0$$`, `$$(u-3)(u-7)=0$$`, `Two positive $u$ → two real $x$.`]),
+      key: `5esub-${s}-${pr}-${slot}`,
+      statement: phrase(
+        slot,
+        `A model reduces to $e^{2x} - ${s}e^x + ${pr} = 0$ with $u = e^x > 0$. There are $${claim}$ distinct real values of $x$.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${pr}=0$$`, `Two positive $u$ → two real $x$.`]),
     };
   }
 
   function exp4Compound(slot, isTrue) {
-    const p = 5000;
-    const r = 4;
-    const y = 8;
-    const bal = Math.round(p * Math.pow(1.04, y));
-    const claim = pickClaim(bal, isTrue);
+    const p = 4000 + (slot % 6) * 1000;
+    const r = 3 + (slot % 4);
+    const y = 5 + (slot % 4);
+    const bal = Math.round(p * Math.pow(1 + r / 100, y));
+    const claim = pickClaim(y, isTrue);
     return {
-      key: `4comp-${p}`,
-      statement: phrase(slot, `$${p}$ EUR is invested at $${r}\\%$ per annum compounded annually with no withdrawals. After $${y}$ full years the balance is $${claim}$ EUR (bank rounds to the nearest euro).`),
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${p}(1.04)^${y}=${bal}$$`]),
+      key: `4comp-${p}-${r}-${bal}`,
+      statement: phrase(
+        slot,
+        `The equation $${p}\\left(1+\\frac{${r}}{100}\\right)^t=${bal}$$ (annual compounding, $t$ in years) has solution $t=${claim}$.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Take logs or test powers → $t=${y}$.`]),
     };
   }
 
   const EXP_4 = [log4Complex, exp4Compound];
   const EXP_5 = [log5PhotoE, log5Product, exp5Subst, log4Complex];
 
-  // ═══ TIER 1–2 basic (short) ═══════════════════════════════════════════════
+  // ═══ TIER 1–2 basic (short equation stories, no plug-in claims) ═══════════
 
-  function lin1Price(slot, isTrue) {
-    const x = 4 + (slot % 4);
+  function lin1PriceCmp(slot, isTrue) {
+    const x = 5 + (slot % 6);
     const total = 2 * x + 6;
+    const bound = x - 2;
+    const cmp = isTrue ? `greater than $${bound}$` : `at most $${bound}$`;
     return {
-      key: `1price-${total}`,
-      statement: `A shop doubles a price and adds $6$ EUR. The till shows $${total}$ EUR. The original price was $${pickClaim(x, isTrue)}$ EUR.`,
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$2p+6=${total}$$`, `$$p=${x}$$`]),
+      key: `1price-${total}-${x}`,
+      statement: phrase(
+        slot,
+        `A shop doubles a price and adds a $6$ EUR surcharge; the till shows $${total}$ EUR. The original price is ${cmp} EUR.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$2p+6=${total}$$`, `$$p=${x}$$`, `${x} ${isTrue ? ">" : "≤"} ${bound}.`]),
     };
   }
 
-  function lin2Bill(slot, isTrue) {
+  function lin1BillCmp(slot, isTrue) {
+    const x = 15;
+    const bound = 14;
+    const cmp = isTrue ? `greater than $${bound}$` : `at most $${bound}$`;
     return {
-      key: `2bill`,
-      statement: `After $7$ EUR is taken off a bill, half the remainder equals $4$ EUR. The original bill was $${pickClaim(15, isTrue)}$ EUR.`,
-      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{x-7}{2}=4$$`, `$$x=15$$`]),
+      key: `1bill-${slot % 7}`,
+      statement: phrase(
+        slot,
+        `After $7$ EUR is taken off a bill, half the remainder equals $4$ EUR. The original bill is ${cmp} EUR.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{x-7}{2}=4$$`, `$$x=${x}$$`, `${x} ${isTrue ? ">" : "≤"} ${bound}.`]),
     };
   }
 
-  const LIN_1 = [lin1Price];
-  const LIN_2 = [lin1Price, lin2Bill];
+  function lin1OddSum(slot, isTrue) {
+    const n = 9 + (slot % 5) * 2;
+    const sum = 3 * n + 6;
+    const bound = n + 2;
+    const cmp = isTrue ? `greater than $${bound}$` : `at most $${bound}$`;
+    return {
+      key: `1odd-${sum}-${n}`,
+      statement: phrase(
+        slot,
+        `Three consecutive odd integers add up to $${sum}$. The largest of the three is ${cmp}.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$3k+6=${sum}$$`, `$$k=${n}$$`, `Largest $${n + 4}$ ${isTrue ? ">" : "≤"} ${bound}.`]),
+    };
+  }
+
+  function lin2FracBound(slot, isTrue) {
+    const x = 28 + (slot % 4) * 4;
+    const bound = 20;
+    const cmp = isTrue ? `greater than $${bound}$` : `at most $${bound}$`;
+    return {
+      key: `2frac-${x}`,
+      statement: phrase(
+        slot,
+        `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is ${cmp}.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{4}{7}n-\\frac{2}{7}n=16$$`, `$$n=${x}$$`, `${x} ${isTrue ? ">" : "≤"} ${bound}.`]),
+    };
+  }
+
+  function lin2MeanBound(slot, isTrue) {
+    const a = 70 + (slot % 4) * 2;
+    const b = 82 + (slot % 3) * 2;
+    const mean = 78;
+    const c = 3 * mean - a - b;
+    const bound = c - 3;
+    const cmp = isTrue ? `greater than $${bound}$` : `at most $${bound}$`;
+    return {
+      key: `2mean-${a}-${b}-${c}`,
+      statement: phrase(
+        slot,
+        `Three test scores average $${mean}$ points; two of them are $${a}$ and $${b}$. The third score is ${cmp}.`
+      ),
+      expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${a}+${b}+c}{3}=${mean}$$`, `$$c=${c}$$`, `${c} ${isTrue ? ">" : "≤"} ${bound}.`]),
+    };
+  }
+
+  const LIN_1 = [lin1PriceCmp, lin1BillCmp, lin1OddSum];
+  const LIN_2 = [lin1PriceCmp, lin1BillCmp, lin1OddSum, lin2FracBound, lin2MeanBound];
 
   return { LIN_1, LIN_2, LIN_4, LIN_5, QUAD_4, QUAD_5, RAT_4, RAT_5, EXP_4, EXP_5 };
 }
