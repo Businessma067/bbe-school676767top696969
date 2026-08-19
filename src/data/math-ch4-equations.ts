@@ -26,9 +26,9 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A shop doubles a price and then adds $6$ EUR. The till shows $14$ EUR. A clerk reports that the original price was $5$ EUR.`,
-      `In a practice paper the equation $5x - 3 = 12$ appears. A candidate claims that the unique real solution $x$ satisfies $x \\le 2$.`,
+      `In a practice paper the equation $5x - 3 = 12$ appears. A candidate claims that its unique real solution is an even integer.`,
       `After $7$ EUR is taken off a bill, the remainder is split into two equal shares of $4$ EUR. Then the original bill was $15$ EUR.`,
-      `The equation $3(x + 1) = 12$ is expanded and solved. A student concludes that the unique real solution $x$ satisfies $x \\ge 4$.`,
+      `The equation $3(x + 1) = 12$ is expanded and solved. A student concludes that its unique real solution is even.`,
       `Four times a recorded temperature change, plus $2$ degrees, equals $14$ degrees. Then the change was $4$ degrees.`,
     ],
     answer_key: [false, false, true, false, false],
@@ -62,7 +62,7 @@ $$5x = 15$$
 
 $$x = 3$$
 
-The candidate claims the unique real solution satisfies $x \\le 2$. But the isolated solution is $x = 3$, so $x \\le 2$ does not hold. The statement is False.`,
+The isolated solution is $x = 3$, and $3$ is not an even integer. The candidate's property is false, so the statement is False.`,
       `**C.** → True
 
 Taking $7$ EUR off a bill and then splitting the remainder into two equal shares is undone by doubling and then adding $7$. In words: half of the original bill minus $7$ equals $4$.
@@ -90,7 +90,7 @@ $$3x = 9$$
 
 $$x = 3$$
 
-The student concludes that the unique real solution satisfies $x \\ge 4$. But the isolated solution is $x = 3$, so $x \\ge 4$ does not hold. The statement is False.`,
+The isolated solution is $x = 3$, and $3$ is not even. The student's property is false, so the statement is False.`,
       `**E.** → False
 
 Four times a change, plus $2$ degrees, equals $14$ degrees. Adding $2$ is undone by subtracting $2$, then dividing by $4$:
@@ -119,9 +119,9 @@ which is not $14$, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A purse holds some coins and then $5$ EUR more. The total is $11$ EUR. The stallholder concludes that the purse started with $6$ EUR.`,
-      `In a practice paper the equation $7x = 21$ appears. A candidate claims that the unique real solution $x$ satisfies $x \\ge 4$.`,
+      `In a practice paper the equation $7x = 21$ appears. A candidate claims that its unique real solution is even.`,
       `After $8$ litres are poured out of a tank, the remainder is split into two equal drums of $5$ litres each. A student reports that the tank started with $16$ litres.`,
-      `Dividing both sides of $6x = 30$ by $6$ is the correct inverse of multiplying by $6$. A student then reports that the unique real solution $x$ satisfies $x \\le 4$.`,
+      `Dividing both sides of $6x = 30$ by $6$ is the correct inverse of multiplying by $6$. A student then reports that the unique real solution is even.`,
       `A scale shows a mass with no extra weight and reads $9$ kg. A student claims that the mass is therefore $9$ kg.`,
     ],
     answer_key: [true, false, false, false, true],
@@ -147,7 +147,7 @@ $$7x = 21$$
 
 $$x = 3$$
 
-The unique real solution is $x = 3$, so the claim that $x \\ge 4$ does not hold. The statement is False.`,
+The unique real solution is $x = 3$, and $3$ is not even. The candidate's property is false, so the statement is False.`,
       `**C.** → False
 
 Pouring $8$ litres out and then splitting the remainder into two equal drums is undone by doubling and then adding $8$. In words: half of the starting volume minus $8$ equals $5$.
@@ -171,7 +171,7 @@ $$6x = 30$$
 
 $$x = 5$$
 
-The unique real solution is $x = 5$, so the claim that $x \\le 4$ does not hold. The statement is False.`,
+The unique real solution is $x = 5$, and $5$ is not even. The student's property is false, so the statement is False.`,
       `**E.** → True
 
 Adding zero does not change a number, so a scale that shows a mass with no extra weight already reads that mass.
@@ -275,9 +275,9 @@ which is not $5$, so the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A baker doubles a batch after adding $3$ g of starter. The scale then shows $14$ g. The baker reports that the original batch was $4$ g.`,
-      `The linear equation $5(x - 2) = 20$ is expanded with the distributive law. After collecting like terms the unique real solution is $x = 6$.`,
+      `The linear equation $5(x - 2) = 20$ is expanded with the distributive law. After collecting like terms the unique real solution is positive and even.`,
       `A chemist takes twice a sample, adds $1$ ml, then triples the result. The flask shows $21$ ml. The chemist reports that the original sample was $4$ ml.`,
-      `Expanding $4(x - 5) = 12$ and then isolating $x$ gives the unique real solution $x = 8$.`,
+      `Expanding $4(x - 5) = 12$ and then isolating $x$ gives a unique real solution greater than $5$.`,
       `Two rods are laid end to end. One is $3$ cm longer than a marked length, the other $1$ cm shorter than that same length. Together they measure $10$ cm. A carpenter reports that the marked length is $4$ cm.`,
     ],
     answer_key: [true, true, false, true, true],
@@ -311,11 +311,7 @@ $$5x = 30$$
 
 $$x = 6$$
 
-Substituting the claimed value:
-
-$$5(6 - 2) = 20$$
-
-which matches the right-hand side, so the statement is True.`,
+The isolated solution is $x = 6$, and $6$ is positive and even. The statement is True.`,
       `**C.** → False
 
 Twice the sample, plus $1$ ml, is then tripled. Expand with the distributive law:
@@ -345,11 +341,7 @@ $$4x = 32$$
 
 $$x = 8$$
 
-Substituting the claimed value:
-
-$$4(8 - 5) = 12$$
-
-which matches the right-hand side, so the statement is True.`,
+The isolated solution is $x = 8$, and $8 > 5$. The statement is True.`,
       `**E.** → True
 
 One rod is $3$ cm longer than the marked length $x$, the other $1$ cm shorter, and together they measure $10$ cm:
@@ -380,9 +372,9 @@ which matches the total, so the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A jug is filled to one-fourth. That share is $5$ litres. A student reports that the full jug holds $20$ litres.`,
-      `Solving $\\dfrac{x}{3} + 2 = 6$ by first subtracting $2$ and then multiplying by $3$, a candidate claims that the unique real solution satisfies $x \\le 11$.`,
+      `Solving $\\dfrac{x}{3} + 2 = 6$ by first subtracting $2$ and then multiplying by $3$, a candidate claims that the unique real solution is odd.`,
       `Two-fifths of a tank is $6$ litres. A clerk reports that the tank therefore holds $12$ litres.`,
-      `If $\\dfrac{x + 1}{2} = 5$, multiplying through by $2$ and then subtracting $1$ produces the unique real solution $x = 9$.`,
+      `If $\\dfrac{x + 1}{2} = 5$, multiplying through by $2$ and then subtracting $1$ produces a unique odd real solution.`,
       `One and a half times a wage equals $9$ EUR. A payroll clerk reports that the wage is $4$ EUR.`,
     ],
     answer_key: [true, false, false, true, false],
@@ -406,7 +398,7 @@ $$\\frac{x}{3} = 4$$
 
 $$x = 12$$
 
-The candidate claims $x \\le 11$. But the isolated solution is $x = 12$, so $x \\le 11$ does not hold. The statement is False.`,
+The isolated solution is $x = 12$, and $12$ is not odd. The statement is False.`,
       `**C.** → False
 
 Two-fifths of the tank is $6$ litres. Multiply through by $5$, then divide by $2$:
@@ -432,11 +424,7 @@ $$x + 1 = 10$$
 
 $$x = 9$$
 
-Substituting the claimed value:
-
-$$\\frac{9 + 1}{2} = 5$$
-
-which matches the right-hand side, so the statement is True.`,
+The isolated solution is $x = 9$, and $9$ is odd. The statement is True.`,
       `**E.** → False
 
 One and a half times a wage is $\\frac{3}{2}$ of the wage, and that product equals $9$ EUR. Multiply through by $2$, then divide by $3$:
@@ -538,7 +526,7 @@ That $40$ is the starting volume in litres. Check: a quarter of $40$ is $10$, so
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Twice a wage plus $3$ EUR equals three times the same wage minus $5$ EUR. A clerk reports that the wage is $8$ EUR.`,
-      `The equation $5 - x = 2x + 8$ is solved by collecting like terms. The unique real solution is $x = -1$.`,
+      `The equation $5 - x = 2x + 8$ is solved by collecting like terms. Its unique real solution is negative.`,
       `Four identical boxes, after $1$ unit is taken from each, match two boxes after $5$ extra units are added to each. A storekeeper reports that each box started with $7$ units.`,
       `The two linear equations $x + 3 = 10$ and $2x = 14$ are claimed to have the same unique real solution.`,
       `Seven times a length, minus $2$ cm, minus three times the same length, equals $10$ cm. A surveyor reports that the length is $3$ cm.`,
@@ -574,13 +562,7 @@ $$-3 = 3x$$
 
 $$x = -1$$
 
-Substituting $x = -1$, both sides equal $6$:
-
-$$5 - (-1) = 6$$
-
-$$2(-1) + 8 = 6$$
-
-which match, so the statement is True.`,
+The isolated solution is $x = -1$, and that number is negative. The statement is True.`,
       `**C.** → True
 
 Four boxes after $1$ unit is taken from each match two boxes after $5$ units are added to each:
@@ -651,9 +633,9 @@ which matches the right-hand side, so the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Half a tank plus one-third of the same tank is $5$ litres. A student reports that the tank holds $8$ litres.`,
-      `The proportion $\\dfrac{x - 1}{3} = \\dfrac{x + 1}{5}$ is cross-multiplied. A candidate claims that the unique real solution is $x = 2$.`,
+      `The proportion $\\dfrac{x - 1}{3} = \\dfrac{x + 1}{5}$ is cross-multiplied. A candidate claims that its unique real solution is odd.`,
       `Two-thirds of a bottle is $8$ ml. A chemist reports that the bottle therefore holds $10$ ml.`,
-      `The equation $\\dfrac{x}{4} - \\dfrac{x}{6} = 1$ is cleared by multiplying through by $12$. A student reports that the unique real solution is $x = 10$.`,
+      `The equation $\\dfrac{x}{4} - \\dfrac{x}{6} = 1$ is cleared by multiplying through by $12$. A student reports that its unique real solution is odd.`,
       `A clerk triples a fee, adds $1$ EUR, and then divides the total into four equal parts of $4$ EUR. Then the original fee is $5$ EUR.`,
     ],
     answer_key: [false, false, false, false, true],
@@ -693,13 +675,7 @@ $$2x = 8$$
 
 $$x = 4$$
 
-The candidate claims $x = 2$. Substituting that value:
-
-$$\\frac{2 - 1}{3} = \\frac{1}{3}$$
-
-$$\\frac{2 + 1}{5} = \\frac{3}{5}$$
-
-and $\\frac{1}{3} \\neq \\frac{3}{5}$, so the statement is False.`,
+The isolated solution is $x = 4$, and $4$ is not odd. The candidate's property is false, so the statement is False.`,
       `**C.** → False
 
 Two-thirds of a bottle is $8$ ml. Multiply through by $3$, then divide by $2$:
@@ -725,17 +701,7 @@ $$3x - 2x = 12$$
 
 $$x = 12$$
 
-The student reports $x = 10$. Substituting that value:
-
-$$\\frac{10}{4} = \\frac{5}{2}$$
-
-$$\\frac{10}{6} = \\frac{5}{3}$$
-
-$$\\frac{5}{2} - \\frac{5}{3} = \\frac{15}{6} - \\frac{10}{6}$$
-
-$$= \\frac{5}{6}$$
-
-which is not $1$, so the statement is False.`,
+The isolated solution is $x = 12$, and $12$ is not odd. The statement is False.`,
       `**E.** → True
 
 Three times a fee plus $1$ EUR, all divided by $4$, equals $4$ EUR. Multiply through by $4$, then isolate $x$:
@@ -882,7 +848,7 @@ and $11 \\neq 13$, so the statement is False.`,
       `The equation $2(x + 4) = 2x + 8$ simplifies to an identity. It is therefore true for every real number $x$.`,
       `Three times a temperature change, taken with the opposite sign, equals $12$ degrees. A student reports that the change was $4$ degrees.`,
       `The equation $5x + 2 = 5x + 2$ has identical sides. A candidate claims that it has no real solution.`,
-      `The equation $x = x + 1$ holds when $x = 0$.`,
+      `The equation $x = x + 1$ has infinitely many real solutions.`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
@@ -936,7 +902,7 @@ Subtract $x$ from both sides:
 
 $$0 = 1$$
 
-which is never true. Substituting the claimed value $x = 0$ gives $0 = 1$, so the statement is False.`,
+which is never true. So the equation has no real solution, not infinitely many. The statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -1602,11 +1568,11 @@ which is not $12$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\dfrac{x - 2}{3} - \\dfrac{2x + 1}{4} = \\dfrac{x}{6} - 2$ is $x = \\dfrac{13}{4}$.`,
-      `The linear equation $\\frac{x + 1}{2} - \\frac{x - 1}{3} = 2$ is cleared by multiplying through by $6$. After collecting like terms the unique real solution is $x = 7$.`,
+      `The equation $\\dfrac{x - 2}{3} - \\dfrac{2x + 1}{4} = \\dfrac{x}{6} - 2$ has a positive non-integer solution.`,
+      `The linear equation $\\frac{x + 1}{2} - \\frac{x - 1}{3} = 2$ is cleared by multiplying through by $6$. After collecting like terms the unique real solution is odd.`,
       `The least common multiple of $3$, $4$, and $6$ is $12$, so multiplying a three-denominator linear equation with those denominators through by $12$ is the economical clearing.`,
       `Half a wage plus one-third of the same wage is $5$ EUR. A clerk reports that the wage is $4$ EUR.`,
-      `If $x = \\dfrac{13}{4}$, then both sides of $\\dfrac{x - 2}{3} - \\dfrac{2x + 1}{4} = \\dfrac{x}{6} - 2$ equal $-\\dfrac{35}{24}$.`,
+      `For $\\dfrac{x - 2}{3} - \\dfrac{2x + 1}{4} = \\dfrac{x}{6} - 2$, the common value of both sides at the solution is negative.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -1632,7 +1598,7 @@ $$13 = 4x$$
 
 $$x = \\frac{13}{4}$$
 
-That $\\frac{13}{4}$ is the amount in millilitres, matching the claim, so the statement is True.`,
+The recovered solution is $\\frac{13}{4}$, which is positive and not an integer. The statement is True.`,
       `**B.** → True
 
 Clear the denominators by multiplying through by $6$:
@@ -1647,15 +1613,7 @@ $$x + 5 = 12$$
 
 $$x = 7$$
 
-Substituting $x = 7$:
-
-$$\\frac{7 + 1}{2} = 4$$
-
-$$\\frac{7 - 1}{3} = 2$$
-
-$$4 - 2 = 2$$
-
-which matches the right-hand side, so the statement is True.`,
+The recovered solution is $x = 7$, and $7$ is odd. The statement is True.`,
       `**C.** → True
 
 A common multiple of $3$, $4$, and $6$ must be a multiple of each of them. The least such positive integer is $12$, because
@@ -1688,7 +1646,7 @@ $$2 + \\frac{4}{3} = \\frac{10}{3}$$
 which is not $5$, so the statement is False.`,
       `**E.** → True
 
-Substitute $x = \\frac{13}{4}$ into each side of
+Use the recovered solution $x = \\frac{13}{4}$ in each side of
 
 $$\\frac{x - 2}{3} - \\frac{2x + 1}{4} = \\frac{x}{6} - 2$$
 
@@ -1724,7 +1682,7 @@ $$2 = \\frac{48}{24}$$
 
 $$\\frac{13}{24} - \\frac{48}{24} = -\\frac{35}{24}$$
 
-The two sides are equal at $-\\frac{35}{24}$, matching the claim, so the statement is True.`,
+The two sides are equal at $-\\frac{35}{24}$, and that common value is negative. The statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -2552,7 +2510,7 @@ minutes. The tank is full after $30$ minutes. The claim is that same time, so th
       `A square has area $49$ cm$^{2}$. Then each side is $7$ cm.`,
       `A number times itself equals $16$. The only real number that works is $4$.`,
       `A number times itself equals $36$. One number that works is $7$.`,
-      `If a square of side $x$ cm has area $9$ cm$^{2}$, then $x = 3$ is the only real possibility.`,
+      `If a square of side $x$ cm has area $9$ cm$^{2}$, then the corresponding equation in $x$ has exactly one real solution.`,
       `$5^{2} - 4^{2}$ equals $7$.`,
     ],
     answer_key: [true, false, false, false, false],
@@ -2602,7 +2560,7 @@ $$x^{2} = 9$$
 
 $$x = \\pm 3$$
 
-A geometric side must be positive, so the side of the square is $3$ cm. The claim says $x = 3$ is the only real possibility. As a length that is correct, but as a real-number equation $x^{2} = 9$ also has $x = -3$, because $(-3)^{2} = 9$. The wording rules out that second real root, so the statement is False.`,
+A geometric side must be positive, so the side of the square is $3$ cm. But the corresponding real-number equation $x^{2} = 9$ also has $x = -3$, because $(-3)^{2} = 9$. So the equation has two real solutions, not exactly one. The statement is False.`,
       `**E.** → False
 
 A difference of squares is the difference of the two squared values.
@@ -4741,8 +4699,8 @@ of a job per hour. That is the claimed rate, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x + \\dfrac{6}{x} = 5$ with $x \\neq 0$ has the unique real solution $x = 2$.`,
-      `The two real solutions of $x + \\frac{6}{x} = 5$ are $2$ and $3$.`,
+      `The equation $x + \\dfrac{6}{x} = 5$ with $x \\neq 0$ has exactly one real solution.`,
+      `The equation $x + \\frac{6}{x} = 5$ has two positive real solutions.`,
       `Clearing $x + \\frac{6}{x} = 5$ produces $x^{2} - 5x + 6 = 0$.`,
       `After clearing a reciprocal equation whose solutions are $2$ and $3$, a student reports that the product of the solutions is $5$.`,
       `The two real solutions of $x + \\dfrac{6}{x} = 5$ add to $5$.`,
@@ -4769,10 +4727,10 @@ Check $x = 3$:
 
 $$3 + \\frac{6}{3} = 3 + 2 = 5$$
 
-There are two real solutions, not only $2$, so the statement is False.`,
+There are two real solutions, not exactly one, so the statement is False.`,
       `**B.** → True
 
-The cleared equation $x^{2} - 5x + 6 = 0$ factors as $(x - 2)(x - 3) = 0$, so the two real solutions are $2$ and $3$. Both check in the original reciprocal equation, so the statement is True.`,
+The cleared equation $x^{2} - 5x + 6 = 0$ factors as $(x - 2)(x - 3) = 0$, so the two real solutions are $2$ and $3$. Both are positive and both check in the original reciprocal equation, so the statement is True.`,
       `**C.** → True
 
 Start from $x + \\frac{6}{x} = 5$ with $x \\neq 0$. Multiply through by $x$ to clear the denominator:
