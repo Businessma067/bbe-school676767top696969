@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * Rewrite ch4 statements: varied root claims (sum / product / count / discriminant).
- * No "after squaring…" patterns. Requires finding roots — non-obvious checks.
+ * Rewrite ch4 statements from tactical_explanations only.
+ * Dry format: For $eq$, the sum/product/count claim.
+ * 50/50: even letters (A,C,E) → Vieta; odd (B,D) → solution count.
  */
 import fs from "node:fs";
 
 const FILES = ["src/data/math-ch4-equations.ts", "src/data/math-ch4-4-exponential.ts"];
-const ACTORS = ["A candidate", "A student", "A clerk", "An examiner"];
 
 function parseBacktickArray(chunk, field) {
   const marker = `${field}: [`;
@@ -42,12 +42,14 @@ function parseTasks(filePath) {
   let m;
   while ((m = re.exec(src))) {
     const chunk = m[0];
+    const ov = chunk.match(/solution_overview: `([^`]+)`/);
     tasks.push({
       id: chunk.match(/id: `(math-4-\d+)`/)[1],
       subsection: chunk.match(/subsection: `([^`]+)`/)[1],
+      title: chunk.match(/title: `([^`]+)`/)?.[1] ?? "",
       chunkStart: m.index,
       chunk,
-      statements: parseBacktickArray(chunk, "statements"),
+      overview: ov ? ov[1] : "",
       answer_key: [...chunk.match(/answer_key: \[(.*?)\]/s)[1].matchAll(/\b(true|false)\b/g)].map((x) => x[1]),
       tactical_explanations: parseBacktickArray(chunk, "tactical_explanations"),
     });
@@ -55,50 +57,192 @@ function parseTasks(filePath) {
   return { src, tasks };
 }
 
-function actor(n, i) {
-  return ACTORS[(n * 3 + i) % ACTORS.length];
-}
-
-/** Equation must contain an unknown (x, t, …), not a numeric check. */
 function hasUnknown(eq) {
-  return /\\frac\{[^}]*[xtsy]|\\sqrt\{[^}]*x|\^x|x\^\{|\\lvert[^$]*x|\([xtsy]\s*[+-]|[^a-z]x[^a-z]|^x[^a-z]|s\^\{|\\log_[^{]*x|e\^\{[^}]*x|2\^x|3\^x|5\^x|10\^x|7\^x|4\^x/.test(eq);
+  return /\\frac\{[^}]*[xtsy]|\\sqrt\{[^}]*x|\^x|x\^\{|\\lvert[^$]*x|\([xtsy]|[^a-z]x[^a-z]|^x[^a-z]|s\^\{|\\log_[^{]*x|e\^\{[^}]*x|2\^x|3\^x|5\^x|10\^x|7\^x|4\^x|6\^x|25\^x|\\ln\s*\(/i.test(eq);
 }
 
 function isNumericCheck(eq) {
   const e = eq.replace(/\s/g, "");
-  if (/^\\sqrt\{\d|^\\d+\\cdot\\d+|^\\d+\+\\d+=-?\\d+$|^\\d+\^\{2\}|\\neq|^-\\d+\\cdot\\d+|^\\Delta=\(/.test(e)) return true;
-  if (/^[^xts]{0,3}\\d+[^xts]*$/.test(e) && !hasUnknown(eq)) return true;
-  return false;
+  return (
+    /^\\sqrt\{\d|^\\d+\\cdot\\d+|^\\d+\+\\d+=-?\\d+$|^\\d+\^\{2\}|\\neq|^-\\d+\\cdot\\d+|^\\Delta=\(/.test(e) ||
+    (/^[^xts]{0,3}\\d+[^xts]*$/.test(e) && !hasUnknown(eq))
+  );
+}
+
+function isValidStudentEquation(eq) {
+  if (!eq || !/=/.test(eq)) return false;
+  if (!hasUnknown(eq)) return false;
+  if (isNumericCheck(eq)) return false;
+  const e = eq.replace(/\s/g, "");
+  if (/^a=\\sqrt\{x|^b=\\sqrt\{x|^leta=/i.test(e)) return false;
+  if (/^a=\\sqrt|^b=\\sqrt/.test(e)) return false;
+  if (/^x=-?\d+$/.test(e) && !/^x=x[+-]/.test(e)) return false;
+  if (/^x=-?\\frac\{/.test(e)) return false;
+  if (/^x=\\frac\{[^}]+\}$/.test(e) && !/x\^|x\+|x-/.test(e)) return false;
+  if (/>0$|\\text\{|\\or\{| or /.test(eq)) return false;
+  if (/^\\Delta=/.test(e)) return false;
+  if (/\\frac\{\(x\+3\)-x\}|\\frac\{\(x\+1\)\+\(x-1\)\}|\\frac\{\(x\^\{2\}-1\)\+2x\^\{2\}\}/.test(eq)) return false;
+  if (/=\(4-2x\)\+\(5-x\)|=\(2x-4\)\+\(5-x\)/.test(e)) return false;
+  if (/\\frac\{\(x \+ 1\) \+ \(x - 1\)\}\{\(x - 1\)\(x \+ 1\)\}/.test(eq)) return false;
+  if (/^\|[^|]+\|[^=]*=\(.+\)\+\(.+\)/.test(eq.replace(/\s/g, ""))) return false;
+  if (/^=\s*\\frac\{/.test(eq)) return false;
+  if (/^\\frac\{1\}\{x\}-\\frac\{1\}\{x\+3\}=/.test(e)) return false;
+  if (/=3x\^\{2\}\+3x-6$/.test(e) && /\+x\^\{2\}-x-6=/.test(e)) return false;
+  if (/^\\sqrt\{x\}=\\frac\{7\}\{3\}$/.test(e)) return false;
+  if (/^0=x\^\{2\}-x-3$/.test(e) && /2x\+1=x\^\{2\}/.test(e)) return false;
+  if (/^3-2x=x\+4$|^3-2x=-x-4$/.test(e)) return false;
+  if (/^\\frac\{1\}\{x\}\+\\frac\{2x\}\{x\^\{2\}-1\}=\\frac\{\(x\^\{2\}-1\)\+2x\^\{2\}\}/.test(e)) return false;
+  if (/\\log_a x=c|^9-3x=9$|^x\+1=9$/.test(e)) return false;
+  return true;
 }
 
 function extractEquations(text) {
   const eqs = [];
   for (const m of text.matchAll(/\$\$([^$]+)\$\$/g)) {
     const t = m[1].trim().replace(/\s+/g, " ");
-    if (/=/.test(t) && hasUnknown(t) && !isNumericCheck(t)) eqs.push(t);
+    if (/=/.test(t)) eqs.push(t);
   }
   for (const m of text.matchAll(/\$([^$]+)\$/g)) {
     const t = m[1].trim();
-    if (/=/.test(t) && hasUnknown(t) && !isNumericCheck(t) && t.length > 3) eqs.push(t);
+    if (/=/.test(t) && t.length > 3) eqs.push(t);
   }
   return [...new Set(eqs)];
 }
 
-function eqFromOld(old) {
-  const m = old.match(/(?:For|The equation|The quadratic equation|The quadratic) \$([^$]+)\$/);
-  if (m && hasUnknown(m[1]) && !isNumericCheck(m[1])) return m[1];
-  return extractEquations(old)[0] || null;
+function fmtSqrtInner(offset) {
+  const o = offset.replace(/\s/g, "");
+  if (o.startsWith("-")) return `- ${o.slice(1)}`;
+  if (o.startsWith("+")) return `+ ${o.slice(1)}`;
+  return `+ ${o}`;
 }
 
-function pickPrimaryEq(old, exp) {
-  const fromOld = eqFromOld(old);
-  if (fromOld) return fromOld;
-  const all = extractEquations(exp);
+function normalizeTex(text) {
+  return text.replace(/\\\\/g, "\\");
+}
+
+function buildSqrtSumFromLet(exp) {
+  const t = normalizeTex(exp);
+  const m = t.match(
+    /Let \$a = \\sqrt\{x ([+-]\s*\d+)\}\$ and \$b = \\sqrt\{x ([+-]\s*\d+)\}\$, so \$a \+ b = (\d+)/
+  );
+  if (m) {
+    return `\\sqrt{x ${fmtSqrtInner(m[1])}} + \\sqrt{x ${fmtSqrtInner(m[2])}} = ${m[3]}`;
+  }
+  return null;
+}
+
+function inferAbsFromSplit(exp) {
+  const t = normalizeTex(exp);
+  if (!/Split the absolute values|splits into two cases|First case,/i.test(t)) return null;
+  const cases = extractEquations(t).filter((e) => !/\\lvert|\\Delta|^x =/.test(e));
+  const byLhs = new Map();
+  for (const c of cases) {
+    const idx = c.indexOf("=");
+    if (idx < 0) continue;
+    const lhs = c.slice(0, idx).trim();
+    const rhs = c.slice(idx + 1).trim();
+    if (!/[x]/.test(lhs)) continue;
+    if (!byLhs.has(lhs)) byLhs.set(lhs, []);
+    byLhs.get(lhs).push(rhs);
+  }
+  for (const [lhs, rhsList] of byLhs) {
+    if (rhsList.length >= 2) {
+      return `\\lvert ${lhs} \\rvert = \\lvert ${rhsList[0]} \\rvert`;
+    }
+  }
+  return null;
+}
+
+function inferAbsPostsEq(exp) {
+  const t = normalizeTex(exp);
+  if (!/Between the posts|kilometre-post/i.test(t)) return null;
+  const pm = t.match(/posts?\s+\$?(\d+)\$?\s+and\s+\$?(\d+)\$?/i);
+  if (pm) return `\\lvert x - ${pm[1]} \\rvert + \\lvert x - ${pm[2]} \\rvert = 6`;
+  return `\\lvert x - 1 \\rvert + \\lvert x - 7 \\rvert = 6`;
+}
+
+function inferAbsSumEq(exp) {
+  const t = normalizeTex(exp);
+  if (!/Breakpoints are/i.test(t)) return null;
+  const m = t.match(/Breakpoints are \$x = (\d+)\$ and \$x = (\d+)\$\.?/);
+  if (!m) return null;
+  const hasNine = /x \+ 1 = 9|= 9 - 3x|=\s*9\b/.test(t);
+  const rhs = hasNine ? "9" : "6";
+  if (m[1] === "2" && m[2] === "5") return `\\lvert 2x - 4 \\rvert + \\lvert x - 5 \\rvert = ${rhs}`;
+  return null;
+}
+
+function inferFractionEq(exp) {
+  const t = normalizeTex(exp);
+  const m = t.match(/Set equal to \$\\frac\{(\d+)\}\{(\d+)\}\$/);
+  if (!m) return null;
+  if (/\\frac\{3\}\{x\(x \+ 3\)\}/.test(t)) {
+    return `\\frac{3}{x(x + 3)} = \\frac{${m[1]}}{${m[2]}}`;
+  }
+  const after = t.split(/Set equal to \$\\frac\{\d+\}\{\d+\}\$/)[1] || t;
+  const eqm = after.match(/\$\$([^$]+)\$\$/);
+  if (eqm) {
+    const eq = eqm[1].trim().replace(/\s+/g, " ");
+    if (/= \\frac\{/.test(eq) && isValidStudentEquation(eq)) return eq;
+  }
+  const main = extractEquations(t).find(
+    (e) =>
+      /= \\frac\{\d+\}\{\d+\}$/.test(e) &&
+      /\\frac\{3x\^\{2\}|\\frac\{3\}\{x\(x/.test(e) &&
+      !/\\frac\{\([^)]+\) \+/.test(e)
+  );
+  return main || null;
+}
+
+function inferImpossibleExp(exp) {
+  const t = normalizeTex(exp);
+  const neg = t.match(/cannot equal \$-(\d+)\$/);
+  if (!neg) return null;
+  const baseM = t.match(/value (\d+)\^x is strictly positive/);
+  if (baseM) return `${baseM[1]}^x = -${neg[1]}`;
+  if (/2\^x/.test(t)) return `2^x = -${neg[1]}`;
+  if (/5\^x/.test(t)) return `5^x = -${neg[1]}`;
+  return null;
+}
+
+function pickPrimaryEq(exp, overview = "", title = "") {
+  const t = normalizeTex(exp);
+  const ov = normalizeTex(overview);
+
+  const built = buildSqrtSumFromLet(t);
+  if (built && isValidStudentEquation(built)) return built;
+
+  const inferrers = [
+    inferAbsFromSplit(t),
+    inferAbsPostsEq(t),
+    inferAbsSumEq(t),
+    inferFractionEq(t),
+    inferImpossibleExp(t),
+  ];
+  for (const inferred of inferrers) {
+    if (inferred && isValidStudentEquation(inferred)) return inferred;
+  }
+
+  const all = [...extractEquations(t), ...extractEquations(ov)].filter(isValidStudentEquation);
   all.sort((a, b) => {
     const score = (e) =>
-      (/\\sqrt|\\lvert|\\log|\^x|x\^\{2\}/.test(e) ? 6 : 0) +
-      (/\\frac\{x|x\^\{2\}/.test(e) ? 4 : 0) +
-      e.length;
+      (/\\sqrt\{x [+-] \d+\} \+ \\sqrt\{x/.test(e) ? 12 : 0) +
+      (/\\sqrt\{x \+ \d+\} = \d+ \+ \\sqrt\{x/.test(e) ? 11 : 0) +
+      (/\\frac\{3\}\{x\(x \+ 3\)\}/.test(e) ? 11 : 0) +
+      (/\\frac\{3x\^\{2\}/.test(e) ? 10 : 0) +
+      (/\\lvert.*\\lvert/.test(e) ? 10 : 0) +
+      (/= 32$|= -8$|= -1$/.test(e) ? 9 : 0) +
+      (/\\sqrt\{x \+ \d+\}/.test(e) ? 9 : 0) +
+      (/\\sqrt\{2x|\\sqrt\{x \+/.test(e) ? 8 : 0) +
+      (/2\^x|3\^x|5\^x|\\log_3|\\log_2/.test(e) ? 7 : 0) +
+      (/x\^\{2\}|\\frac\{[^}]*x/.test(e) ? 6 : 0) +
+      (/2x|3x|5x/.test(e) ? 4 : 0) +
+      e.length -
+      (/^0 = x\^\{2\}/.test(e) ? 3 : 0) -
+      (/= 2\^5$/.test(e) ? 4 : 0) -
+      (/^x \+ \d+ = \d+ \+ 4\\sqrt/.test(e) ? 8 : 0) -
+      (/^x \+ \d+ = \d+ \\+/.test(e) ? 6 : 0) -
+      (/^\\Delta =/.test(e) ? 5 : 0);
     return score(b) - score(a);
   });
   return all[0] || null;
@@ -113,27 +257,41 @@ function parseRoots(exp) {
   }
   for (const m of exp.matchAll(/giving \$x = (-?\d+(?:\.\d+)?)/g)) roots.add(parseFloat(m[1]));
   for (const m of exp.matchAll(/The isolated solution is \$x = (-?\d+(?:\.\d+)?)/g)) roots.add(parseFloat(m[1]));
-  for (const m of exp.matchAll(/That \$(-?\d+(?:\.\d+)?)\$ is the (?:original|number|change|length|wage|bill|price|mass|amount|starting|side|solution|value|capacity|perimeter|middle|isolated|unique)/gi)) {
+  for (const m of exp.matchAll(/That \$(-?\d+(?:\.\d+)?)\$ is the (?:original|number|change|length|wage|bill|price|mass|amount|starting|side|solution|value|capacity|perimeter|middle|isolated|unique|recovered)/gi)) {
     roots.add(parseFloat(m[1]));
   }
   for (const m of exp.matchAll(/middle integer is \$n \+ 1 = (-?\d+)/g)) roots.add(parseFloat(m[1]));
-  // Only isolated x = N lines (not from "or" chains already captured)
-  for (const m of exp.matchAll(/^\$\$x = (-?\d+(?:\.\d+)?)\$\$/gm)) roots.add(parseFloat(m[1]));
+  for (const m of exp.matchAll(/unique real solution is \$x = (-?\d+(?:\.\d+)?)/gi)) roots.add(parseFloat(m[1]));
+  for (const m of exp.matchAll(/recovered value is \$(-?\d+(?:\.\d+)?)/gi)) roots.add(parseFloat(m[1]));
+  for (const m of exp.matchAll(/so \$x = (-?\d+(?:\.\d+)?)/gi)) roots.add(parseFloat(m[1]));
+  for (const m of exp.matchAll(/hence \$a = (\d+) and \$b = (\d+)/g)) {
+    /* sqrt substitution — x recovered separately */
+  }
+  for (const m of exp.matchAll(/Outside, \$x < \d+ gives \$x = (-?\d+) and \$x > \d+ gives \$x = (-?\d+)/g)) {
+    roots.add(parseFloat(m[1]));
+    roots.add(parseFloat(m[2]));
+  }
+  for (const m of exp.matchAll(/\$\$x = \\frac\{[^}]+\} \\pm \\sqrt\{[^}]+\}\}\{2\}\$\$/g)) {
+    /* keep quadratic roots from meta/disc instead */
+  }
   return [...roots].filter((v) => !Number.isNaN(v) && Math.abs(v) < 5000);
 }
 
 function meta(exp) {
   const noReal =
-    /no real (?:solution|root)|zero real solution|cannot equal \$-|not in the range|A positive output cannot|cannot be reached|no admissible|has no real|There are zero real|contradiction|never a solution|\\Delta = -|\$3 = 5\$|not \$18\$/i.test(
+    /no real (?:solution|root)|zero real solution|cannot equal \$-|not in the range|A positive output cannot|cannot be reached|no admissible|has no real|There are zero real|contradiction|never true|which is never true|\\Delta = -|\$3 = 5\$|This is impossible|not \$18\$/i.test(
       exp
     );
   const twoDistinct =
-    /two distinct real|exactly two real solution|two different real|Those are two distinct|two branches|four different real|four real solution|exactly two admissible|two distinct integer|two real numbers|two real roots|two solutions/i.test(
+    /two distinct real|exactly two real solution|two different real|Those are two distinct|two branches|four different real|four real solution|exactly two admissible|two distinct integer|two real numbers|two real roots|two solutions|So there are two|there are two real/i.test(
       exp
     );
   const repeated = /repeated real root|double root|\\Delta = 0|exactly one real solution, a double|\(x - \d+\)\^\{2\}/i.test(exp);
-  const identity = /Every real \$x\$ satisfies|Every real number|identity|infinitely many solution|Every \$x\$ works|Every real \$x\$ works/i.test(exp);
-  const contradiction = /never true|no real solution|contradiction|\$\$0 = 1\$\$|\$\$3 = 5\$\$|which is never true|not infinitely many/i.test(exp) && !identity;
+  const identity = /Every real \$x\$ satisfies|Every real number|identity|infinitely many solution|Every \$x\$ works|Every real \$x\$ works|Every real \$x\$ satisfies it/i.test(exp);
+  const contradiction =
+    (/never true|contradiction|\$\$0 = 1\$\$|\$\$3 = 5\$\$|\$\$2 = -1\$\$|which is never true/i.test(exp) ||
+      (/no real solution/i.test(exp) && !/not none/i.test(exp))) &&
+    !identity;
   const roots = parseRoots(exp);
   const discM = exp.match(/\\Delta = (-?\d+(?:\.\d+)?)/);
   const discriminant = discM ? parseFloat(discM[1]) : null;
@@ -144,6 +302,8 @@ function fmt(n) {
   if (!Number.isFinite(n)) return "$0$";
   if (Number.isInteger(n)) return `$${n}$`;
   if (Math.abs(n - 0.125) < 1e-9) return `$\\frac{1}{8}$`;
+  if (Math.abs(Math.abs(n) - 49 / 9) < 1e-6) return `$\\frac{49}{9}$`;
+  if (Math.abs(n + 1 / 3) < 1e-6) return `$-\\frac{1}{3}$`;
   return `$${n}$`;
 }
 
@@ -163,6 +323,14 @@ function quadFromEq(eq) {
   if (m) return { a: 1, b: 0, c: -parseInt(m[1], 10) };
   m = e.match(/(\d+)x\^\{2\}([+-]\d+)x([+-]\d+)=0/);
   if (m) return { a: parseInt(m[1], 10), b: parseInt(m[2], 10), c: parseInt(m[3], 10) };
+  m = e.match(/0=x\^\{2\}([+-]\d+)x([+-]\d+)/);
+  if (m) return { a: 1, b: parseInt(m[1], 10), c: parseInt(m[2], 10) };
+  m = e.match(/0=x\^\{2\}-x-3/);
+  if (m) return { a: 1, b: -1, c: -3 };
+  m = e.match(/0=x\^\{2\}\+3x-12/);
+  if (m) return { a: 1, b: 3, c: -12 };
+  m = e.match(/x\^\{2\}-4x-5=0/);
+  if (m) return { a: 1, b: -4, c: -5 };
   return null;
 }
 
@@ -180,284 +348,266 @@ function vieta(q) {
   return { sum, product, disc, r1, r2 };
 }
 
-function forEq(eq, act, claim) {
-  return `For $${eq}$, ${act} claims that ${claim}.`;
+function dryEq(eq, claim) {
+  return `For $${eq}$, ${claim}.`;
 }
 
-function isWordProblem(old) {
-  return (
-    !/(?:For|The equation|The quadratic) \$/.test(old) &&
-    /shop|bill|EUR|litres|degrees|batch|sample|tank|wage|price|purse|gardener|chemist|baker|stallholder|rectangle|consecutive|split|share|rod|temperature|motorcyclist|pitch|pipe|worker|box|plan|payroll|jug|can|oil|jerrycan|bed|lawn|surveyor|passenger|driver|coach|scale|mass|perimeter|unknown|number increased|number decreased|Three times|Four times|Twice|Half of|After \$|A number|Splitting|doubl|practice item,/i.test(
-      old
-    )
-  );
-}
-
-function stripClaims(old) {
-  return old
-    .replace(/\s*(?:A candidate|A student|A clerk|An examiner) claims that.+$/i, "")
-    .replace(/\s*An examiner claims that\.?\s*$/i, "")
-    .trim();
-}
-
-function stripEmbeddedAnswers(s) {
-  return s
-    .replace(/,?\s*Restoring the operations,[^.]+\.?/gi, "")
-    .replace(/,?\s*the original number is \$[^.]+\.?/gi, "")
-    .replace(/,?\s*Then there are \$[^.]+\.?/gi, "")
-    .replace(/,?\s*The shorter piece is \$[^.]+\.?/gi, "")
-    .replace(/,?\s*The number is \$[^.]+\.?/gi, "")
-    .replace(/,?\s*reports that each box started with \$[^.]+\.?/gi, "")
-    .replace(/,?\s*The solution of the equation[^.]+\.?/gi, "")
-    .replace(/,?\s*concludes that[^.]+\.?/gi, "")
-    .replace(/,?\s*Then the [^.]+\.?/gi, "")
-    .replace(/,?\s*A storekeeper reports that[^.]+\.?/gi, "")
-    .replace(/,?\s*The baker reports that[^.]+\.?/gi, "")
-    .replace(/,?\s*The chemist reports that[^.]+\.?/gi, "")
-    .replace(/,?\s*The stallholder concludes that[^.]+\.?/gi, "")
-    .trim();
-}
-
-// Varied phrasing pools — no "after …" templates
-const CLAIMS = {
-  singleTrue: (s) => [
-    `the sum of all admissible roots equals ${fmt(s)}`,
-    `the solutions add up to ${fmt(s)}`,
-    `the product of all admissible roots equals ${fmt(s)}`,
-    `the roots multiply to ${fmt(s)}`,
+function countSingle(isTrue, seed) {
+  const t = [
     "the equation has exactly one admissible real solution",
     "the equation has exactly one real solution",
     "exactly one admissible root satisfies the equation",
-  ],
-  singleFalse: (s) => [
-    `the sum of all admissible roots equals ${fmt(wrongVal(s))}`,
-    `the solutions add up to ${fmt(wrongVal(s))}`,
-    `the product of all admissible roots equals ${fmt(wrongVal(s))}`,
+  ];
+  const f = [
     "the equation has no admissible real solution",
     "the equation has two distinct admissible real solutions",
     "the equation has no real solution",
-  ],
-  doubleTrue: (sum, prod, r1, r2) => {
-    const [a, b] = [r1, r2].sort((x, y) => x - y);
-    return [
-      `the two roots sum to ${fmt(sum)}`,
-      `the roots add up to ${fmt(sum)}`,
-      `the sum of the solutions equals ${fmt(sum)}`,
-      `the product of the roots equals ${fmt(prod)}`,
-      `the roots multiply to ${fmt(prod)}`,
-      "the equation has two distinct real solutions",
-      "the equation admits two distinct real roots",
-      `the larger root exceeds the smaller by ${fmt(b - a)}`,
-    ];
-  },
-  doubleFalse: (sum, prod, r1, r2) => {
-    const [a, b] = [r1, r2].sort((x, y) => x - y);
-    return [
-      `the two roots sum to ${fmt(wrongVal(Math.round(sum)))}`,
-      `the product of the roots equals ${fmt(wrongVal(Math.round(prod)))}`,
-      "the equation has exactly one real solution",
-      "the equation has no real solution",
-      `the larger root exceeds the smaller by ${fmt(b - a + 2)}`,
-      `the sum of the solutions equals ${fmt(wrongVal(Math.round(sum)))}`,
-    ];
-  },
-  noneTrue: (disc) => [
+  ];
+  return (isTrue ? t : f)[seed % 3];
+}
+
+function countDouble(isTrue, seed) {
+  const t = [
+    "the equation has two distinct real solutions",
+    "the equation admits two distinct real roots",
+    "exactly two admissible roots satisfy the equation",
+  ];
+  const f = [
+    "the equation has exactly one real solution",
+    "the equation has no real solution",
+    "exactly one admissible root satisfies the equation",
+  ];
+  return (isTrue ? t : f)[seed % 3];
+}
+
+function countNone(isTrue, seed) {
+  const t = [
     "the equation has no real solution",
     "the equation has no admissible real solution",
     "no real root satisfies the equation",
-    ...(disc != null && disc < 0 ? [`the discriminant equals ${fmt(disc)}`] : []),
-  ],
-  noneFalse: (disc) => [
+  ];
+  const f = [
     "the equation has exactly one real solution",
     "the equation has two distinct real solutions",
     "exactly one admissible root satisfies the equation",
-    ...(disc != null && disc > 0 ? [`the discriminant equals ${fmt(wrongVal(Math.round(disc)))}`] : []),
-  ],
-  identityTrue: () => [
-    "every real number satisfies the equation",
-    "the equation has infinitely many real solutions",
-    "each real value of the unknown satisfies the equation",
-  ],
-  identityFalse: () => [
-    "the equation has exactly one real solution",
-    "the equation has no real solution",
-    "exactly one admissible root satisfies the equation",
-  ],
-  repeatedTrue: (r) => [
-    "the equation has a repeated real root",
-    "the equation has exactly one real solution",
-    `the sum of all roots equals ${fmt(2 * r)}`,
-  ],
-  repeatedFalse: (r) => [
-    "the equation has two distinct real roots",
-    "the equation has no real solution",
-    `the sum of all roots equals ${fmt(wrongVal(Math.round(2 * r)))}`,
-  ],
-  expTrue: () => [
-    "exactly one real exponent satisfies the equation",
-    "the equation has exactly one real solution",
-    "precisely one real value of the exponent works",
-  ],
-  expFalse: () => [
-    "no real exponent satisfies the equation",
-    "more than one real exponent satisfies the equation",
-    "the equation has no real solution",
-  ],
-  logTrue: (x) => [
-    "exactly one positive admissible root exists",
-    `the sum of all admissible roots equals ${fmt(x)}`,
-    `the product of all admissible roots equals ${fmt(x)}`,
-  ],
-  logFalse: (x) => [
-    "no positive admissible root exists",
-    `the sum of all admissible roots equals ${fmt(wrongVal(x))}`,
-    "the equation has two distinct admissible roots",
-  ],
-};
+  ];
+  return (isTrue ? t : f)[seed % 3];
+}
 
-function pick(pool, seed) {
+function vietaSingle(isTrue, s, seed) {
+  const t = [
+    `the sum of all admissible roots equals ${fmt(s)}`,
+    `the solutions add up to ${fmt(s)}`,
+    `the product of all admissible roots equals ${fmt(s)}`,
+    `multiplying all admissible roots gives ${fmt(s)}`,
+  ];
+  const f = [
+    `the sum of all admissible roots equals ${fmt(wrongVal(s))}`,
+    `the solutions add up to ${fmt(wrongVal(s))}`,
+    `the product of all admissible roots equals ${fmt(wrongVal(Math.round(s) || 1))}`,
+    `multiplying all admissible roots gives ${fmt(wrongVal(Math.round(s) || 1))}`,
+  ];
+  const pool = s === 0 ? (isTrue ? t.slice(0, 2) : f.slice(0, 2)) : isTrue ? t : f;
   return pool[seed % pool.length];
 }
 
-function rewriteStatement(old, exp, isTrue, sub, act, seed) {
-  const m = meta(exp);
-  const eq = pickPrimaryEq(old, exp);
+function vietaDouble(isTrue, sum, prod, r1, r2, seed) {
+  const [a, b] = [r1, r2].sort((x, y) => x - y);
+  const t = [
+    `the two roots sum to ${fmt(sum)}`,
+    `the roots add up to ${fmt(sum)}`,
+    `the product of the roots equals ${fmt(prod)}`,
+    `the roots multiply to ${fmt(prod)}`,
+    `the larger root exceeds the smaller by ${fmt(b - a)}`,
+  ];
+  const f = [
+    `the two roots sum to ${fmt(wrongVal(Math.round(sum)))}`,
+    `the product of the roots equals ${fmt(wrongVal(Math.round(prod)))}`,
+    `the larger root exceeds the smaller by ${fmt(b - a + 2)}`,
+    `the sum of the solutions equals ${fmt(wrongVal(Math.round(sum)))}`,
+    `multiplying the roots gives ${fmt(wrongVal(Math.round(prod)))}`,
+  ];
+  return (isTrue ? t : f)[seed % (isTrue ? 5 : 5)];
+}
 
-  if (/^\$5\^\{2\} - 4\^\{2\}\$ equals/.test(old) || /^\$5\^{2} - 4\^{2}\$ equals/.test(old)) {
+function vietaNone(isTrue, disc, seed) {
+  if (disc != null && disc < 0) {
+    const t = [`the discriminant equals ${fmt(disc)}`, `the discriminant is negative`];
+    const f = [`the discriminant equals ${fmt(wrongVal(Math.round(disc)))}`, `the discriminant is positive`];
+    return (isTrue ? t : f)[seed % 2];
+  }
+  return countNone(isTrue, seed);
+}
+
+function pickSingleClaim(isTrue, s, seed, useVieta) {
+  if (!useVieta) return countSingle(isTrue, seed);
+  return vietaSingle(isTrue, s, seed);
+}
+
+function pickDoubleClaim(isTrue, sum, prod, r1, r2, seed, useVieta) {
+  return useVieta ? vietaDouble(isTrue, sum, prod, r1, r2, seed) : countDouble(isTrue, seed);
+}
+
+function pickNoneClaim(isTrue, disc, seed, useVieta) {
+  return useVieta && disc != null ? vietaNone(isTrue, disc, seed) : countNone(isTrue, seed);
+}
+
+function specialStatement(exp, isTrue, eq, seed, useVieta) {
+  if (/\$5\^\{2\} - 4\^\{2\}\$|\$5\^{2} - 4\^{2}\$|5\^2 - 4\^2/.test(exp)) {
     return isTrue ? `$5^{2} - 4^{2}$ equals $9$.` : `$5^{2} - 4^{2}$ equals $7$.`;
   }
-  if (/square with side \$4\$|square bed|square of side \$4\$/i.test(old)) {
-    return isTrue ? `A square with side $4$ m has area $16$ m$^{2}$.` : `A square with side $4$ m has area $15$ m$^{2}$.`;
-  }
-  if (/square of area \$13/i.test(old)) {
-    return isTrue
-      ? `A square of area $13$ m$^{2}$ has side length greater than $3$ m.`
-      : `A square of area $13$ m$^{2}$ has side length less than $3$ m.`;
-  }
-  if (/square of area \$49|s\^\{2\} = 49/.test(old + (eq || ""))) {
+  if (/side is \$7\$ cm|s = 7|area \$49/i.test(exp) && /49/.test(exp)) {
     return isTrue
       ? `A square of area $49$ m$^{2}$ has side length $7$ m.`
       : `A square of area $49$ m$^{2}$ has side length $8$ m.`;
   }
-  if (/x\^\{2\} = a\b/.test(old) || (eq && /x\^\{2\} = a/.test(eq))) {
+  if (/area is \$13|s\^{2} = 13/i.test(exp)) {
+    return isTrue
+      ? `A square of area $13$ m$^{2}$ has side length greater than $3$ m.`
+      : `A square of area $13$ m$^{2}$ has side length less than $3$ m.`;
+  }
+  if (/side \$4\$ m|4\^{2} = 16|area \$16/i.test(exp) && /16/.test(exp) && /square/i.test(exp)) {
+    return isTrue ? `A square with side $4$ m has area $16$ m$^{2}$.` : `A square with side $4$ m has area $15$ m$^{2}$.`;
+  }
+  if (/x\^{2} = a with \$a > 0\$|equation \$x\^{2} = a\$ with \$a > 0\$/i.test(exp)) {
     return isTrue
       ? `If $x^{2} = a$ with $a > 0$, the two real roots have opposite signs.`
       : `If $x^{2} = a$ with $a > 0$, the two real roots have the same sign.`;
   }
-  if (eq && /x\^\{2\} = 9/.test(eq)) {
+  if (eq && /x\^{2} = 9/.test(eq)) {
     return isTrue
       ? `For $x^{2} = 9$, the sum of the two real roots equals zero.`
       : `For $x^{2} = 9$, the sum of the two real roots equals $3$.`;
   }
-  if (/^The equation \$0 = 1\$/.test(old)) {
-    return isTrue ? `The equation $0 = 1$ has no real solution.` : `The equation $0 = 1$ has exactly one real solution.`;
+  if (/\\$0 = 1\\$|x = x \+ 1/.test(exp)) {
+    const ceq = eq || "0 = 1";
+    return dryEq(ceq, pickNoneClaim(isTrue, null, seed, useVieta));
   }
+  return null;
+}
 
-  // Linear identity / contradiction (solution count, not Vieta)
+function rewriteFromExp(exp, isTrue, sub, letterIndex, overview = "", title = "") {
+  const m = meta(exp);
+  const eq = pickPrimaryEq(exp, overview, title);
+  const useVieta = letterIndex % 2 === 0;
+  const seed = letterIndex;
+
+  const special = specialStatement(exp, isTrue, eq, seed, useVieta);
+  if (special) return special;
+
   if (m.identity && eq) {
-    return forEq(eq, act, pick(isTrue ? CLAIMS.identityTrue() : CLAIMS.identityFalse(), seed));
+    const t = ["every real number satisfies the equation", "the equation has infinitely many real solutions"];
+    const f = ["the equation has exactly one real solution", "the equation has no real solution"];
+    return dryEq(eq, (isTrue ? t : f)[seed % 2]);
   }
+
   if (m.contradiction && eq) {
-    return forEq(eq, act, pick(isTrue ? CLAIMS.noneTrue(null) : CLAIMS.noneFalse(null), seed));
+    return dryEq(eq, pickNoneClaim(isTrue, null, seed, false));
   }
 
-  // Word problem
-  if (isWordProblem(old) && m.roots.length >= 1) {
-    const s = m.roots[0];
-    let setup = stripEmbeddedAnswers(stripClaims(old));
-    if (!setup.endsWith(".")) setup += ".";
-    const pool = isTrue ? CLAIMS.singleTrue(s) : CLAIMS.singleFalse(s);
-    return `${setup} ${act} claims that ${pick(pool, seed)}.`;
-  }
-
-  // 4.4
   if (sub === "4.4" && eq) {
-    if (m.noReal) return forEq(eq, act, pick(isTrue ? CLAIMS.expFalse() : CLAIMS.expTrue(), seed));
-    if (/\\log/.test(eq)) {
-      const x = m.roots[0];
-      if (x != null) return forEq(eq, act, pick(isTrue ? CLAIMS.logTrue(x) : CLAIMS.logFalse(x), seed));
-      return forEq(eq, act, isTrue ? "exactly one positive admissible root exists" : "no positive admissible root exists");
+    if (m.noReal) {
+      const t = ["no real exponent satisfies the equation", "the equation has no real solution"];
+      const f = ["exactly one real exponent satisfies the equation", "precisely one real value of the exponent works"];
+      return dryEq(eq, (isTrue ? t : f)[seed % 2]);
     }
-    return forEq(eq, act, pick(isTrue ? CLAIMS.expTrue() : CLAIMS.expFalse(), seed));
+    if (/\\log|\\ln/.test(eq)) {
+      const x = m.roots[0];
+      if (x != null && useVieta) {
+        return dryEq(eq, vietaSingle(isTrue, x, seed));
+      }
+      return dryEq(
+        eq,
+        useVieta
+          ? vietaSingle(isTrue, m.roots[0] ?? 1, seed)
+          : isTrue
+            ? "exactly one positive admissible root exists"
+            : "no positive admissible root exists"
+      );
+    }
+    const t = ["exactly one real exponent satisfies the equation", "precisely one real value of the exponent works"];
+    const f = ["no real exponent satisfies the equation", "more than one real exponent satisfies the equation"];
+    return dryEq(eq, useVieta ? vietaSingle(isTrue, m.roots[0] ?? 2, seed) : (isTrue ? t : f)[seed % 2]);
   }
 
-  // Quadratic
   if (eq) {
     const q = quadFromEq(eq);
     if (q) {
       const v = vieta(q);
-      if (v.disc < 0) return forEq(eq, act, pick(isTrue ? CLAIMS.noneTrue(v.disc) : CLAIMS.noneFalse(v.disc), seed));
+      if (v.disc < 0) return dryEq(eq, pickNoneClaim(isTrue, v.disc, seed, useVieta));
       if (v.disc === 0 || m.repeated) {
         const r = m.roots[0] ?? v.r1 ?? 0;
-        return forEq(eq, act, pick(isTrue ? CLAIMS.repeatedTrue(r) : CLAIMS.repeatedFalse(r), seed));
+        if (useVieta) {
+          const claim = isTrue
+            ? [`the sum of all roots equals ${fmt(2 * r)}`, `the product of the roots equals ${fmt(r * r)}`][seed % 2]
+            : [`the sum of all roots equals ${fmt(wrongVal(Math.round(2 * r)))}`, `the product of the roots equals ${fmt(wrongVal(Math.round(r * r)))}`][seed % 2];
+          return dryEq(eq, claim);
+        }
+        return dryEq(eq, isTrue ? countSingle(true, seed) : countSingle(false, seed));
       }
       const roots = m.roots.length >= 2 ? m.roots : [v.r1, v.r2].filter((x) => x != null);
       if (roots.length >= 2) {
         const sum = roots.reduce((a, b) => a + b, 0);
         const prod = roots.reduce((a, b) => a * b, 1);
-        return forEq(eq, act, pick(isTrue ? CLAIMS.doubleTrue(sum, prod, roots[0], roots[1]) : CLAIMS.doubleFalse(sum, prod, roots[0], roots[1]), seed));
+        return dryEq(eq, pickDoubleClaim(isTrue, sum, prod, roots[0], roots[1], seed, useVieta));
       }
     }
   }
 
-  // Abs value — two roots
-  if (/\\lvert/.test(old + exp) && m.roots.length >= 2 && eq) {
+  if (/\\lvert/.test(exp) && m.roots.length >= 2 && eq) {
     const roots = m.roots;
     const sum = roots.reduce((a, b) => a + b, 0);
     const prod = roots.reduce((a, b) => a * b, 1);
-    return forEq(eq, act, pick(isTrue ? CLAIMS.doubleTrue(sum, prod, roots[0], roots[1]) : CLAIMS.doubleFalse(sum, prod, roots[0], roots[1]), seed));
+    return dryEq(eq, pickDoubleClaim(isTrue, sum, prod, roots[0], roots[1], seed, useVieta));
   }
 
   if (m.noReal && eq) {
-    return forEq(eq, act, pick(isTrue ? CLAIMS.noneTrue(m.discriminant) : CLAIMS.noneFalse(m.discriminant), seed));
+    return dryEq(eq, pickNoneClaim(isTrue, m.discriminant, seed, useVieta));
   }
 
-  // Single root
   if (m.roots.length >= 1 && !m.twoDistinct) {
     const s = m.roots[0];
-    let setup = stripEmbeddedAnswers(stripClaims(old));
-    if (setup.length > 15 && isWordProblem(old)) {
-      if (!setup.endsWith(".")) setup += ".";
-      const pool = isTrue ? CLAIMS.singleTrue(s) : CLAIMS.singleFalse(s);
-      return `${setup} ${act} claims that ${pick(pool, seed)}.`;
-    }
-    if (eq && hasUnknown(eq)) {
-      let pool = isTrue ? CLAIMS.singleTrue(s) : CLAIMS.singleFalse(s);
-      if (s === 0) pool = pool.filter((c) => !c.includes("product") && !c.includes("multiply"));
-      return forEq(eq, act, pick(pool, seed));
-    }
+    if (eq) return dryEq(eq, pickSingleClaim(isTrue, s, seed, useVieta));
   }
 
   if (m.twoDistinct && m.roots.length >= 2 && eq) {
     const roots = m.roots;
     const sum = roots.reduce((a, b) => a + b, 0);
     const prod = roots.reduce((a, b) => a * b, 1);
-    return forEq(eq, act, pick(isTrue ? CLAIMS.doubleTrue(sum, prod, roots[0], roots[1]) : CLAIMS.doubleFalse(sum, prod, roots[0], roots[1]), seed));
+    return dryEq(eq, pickDoubleClaim(isTrue, sum, prod, roots[0], roots[1], seed, useVieta));
   }
 
-  if (eq && hasUnknown(eq)) {
-    return forEq(eq, act, isTrue ? "the equation has exactly one real solution" : "the equation has no real solution");
-  }
+  if (eq) return dryEq(eq, useVieta ? vietaSingle(isTrue, m.roots[0] ?? 0, seed) : countSingle(isTrue, seed));
 
-  return old.replace(/after squaring both sides[^.]*\.?/g, "the equation has exactly one admissible real solution");
+  return `The equation has ${isTrue ? "exactly one" : "no"} real solution.`;
 }
 
 function formatStatements(arr) {
   return arr.map((s) => `      \`${s}\`,`).join("\n");
 }
 
-// Restore clean base then rewrite
-let changed = 0;
+let total = 0;
+const stats = { vieta: 0, count: 0, special: 0, noEq: 0 };
+
 for (const path of FILES) {
   const { src, tasks } = parseTasks(path);
   let newSrc = src;
   for (let ti = tasks.length - 1; ti >= 0; ti--) {
     const t = tasks[ti];
-    const n = parseInt(t.id.split("-")[2], 10);
-    const newStmts = t.statements.map((s, i) => {
-      const ns = rewriteStatement(s, t.tactical_explanations[i], t.answer_key[i] === "true", t.subsection, actor(n, i), n * 5 + i);
-      if (ns !== s) changed++;
-      return ns;
+    const newStmts = t.tactical_explanations.map((exp, i) => {
+      total++;
+      const stmt = rewriteFromExp(exp, t.answer_key[i] === "true", t.subsection, i, t.overview, t.title);
+      const useVieta = i % 2 === 0;
+      if (!stmt.startsWith("For $")) {
+        stats.special++;
+      } else if (/sum|product|multiply|discriminant|roots add|exceeds the smaller|multiplying/.test(stmt)) {
+        useVieta ? stats.vieta++ : stats.count++;
+      } else if (/exactly one|two distinct|no real|no admissible|infinitely many|every real/.test(stmt)) {
+        stats.count++;
+      } else {
+        useVieta ? stats.vieta++ : stats.count++;
+      }
+      return stmt;
     });
     const ss = t.chunk.indexOf("statements: [");
     const closeIdx = t.chunk.indexOf("\n    ],", ss);
@@ -467,4 +617,6 @@ for (const path of FILES) {
   }
   fs.writeFileSync(path, newSrc);
 }
-console.log(`Rewrote ${changed} statements`);
+
+console.log(`Rewrote ${total} statements`);
+console.log(`Stats: vieta-ish=${stats.vieta}, count-ish=${stats.count}, special=${stats.special}`);
