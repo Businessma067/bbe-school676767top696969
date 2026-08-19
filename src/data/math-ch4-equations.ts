@@ -6792,7 +6792,7 @@ The recovered length is $\\frac{49}{9}$ m, so the statement is False.`,
       `The equation $\\lvert x - 4 \\rvert = 2x - 1$ has exactly one real solution.`,
       `The equation $\\lvert 5 - x \\rvert = 2x + 3$ has no real solutions.`,
     ],
-    answer_key: [true, false, false, true, false],
+    answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
