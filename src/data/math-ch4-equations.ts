@@ -6496,7 +6496,7 @@ The recovered length is $\\frac{49}{9}$ m, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The value $x = 4$ solves $\\lvert 3 - 2x \\rvert = x + 1$.`,
+      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has an integer solution.`,
       `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has a negative real solution.`,
       `Splitting $\\lvert 3 - 2x \\rvert = x + 1$ after requiring $x \\ge -1$ produces $x = \\frac{2}{3}$ as the other solution, and $\\lvert 3 - \\frac{4}{3} \\rvert = \\frac{5}{3}$ checks.`,
       `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has only one real solution.`,
@@ -6534,7 +6534,7 @@ $$\\lvert 3 - 2 \\cdot 4 \\rvert = \\lvert -5 \\rvert = 5$$
 
 $$4 + 1 = 5$$
 
-Both sides equal $5$, so $4$ is a solution, so the statement is True.`,
+Both sides equal $5$, so the recovered solution is an integer, so the statement is True.`,
       `**B.** → False
 
 Plug the claimed value $x = -2$ into $\\lvert 3 - 2x \\rvert = x + 1$:
