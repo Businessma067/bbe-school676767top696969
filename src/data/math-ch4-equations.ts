@@ -1292,7 +1292,7 @@ and $3 < \\frac{11}{3}$. Milk made up less than one-third of the bill, so the st
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A chemist has a vat of $20\\%$ acid. Two litres are drawn off and replaced with water, after which the mixture is $16\\%$ acid. The chemist concludes that the vat originally held $10$ litres.`,
-      `Two litres are drawn from a vat of $20\\%$ acid. A lab note claims those two litres contained $0.5$ litres of pure acid.`,
+      `A vat holds $8$ litres of $25\\%$ acid. Two litres of pure acid are added without removing any liquid. A student claims the mixture is now $35\\%$ acid.`,
       `After a $20\\%$ discount a jacket costs $64$ EUR. A shop assistant says the original price must therefore have been $90$ EUR.`,
       `A listed price is first raised by $25\\%$ and then reduced by $25\\%$. Then the final price is $94\\%$ of the original listed price.`,
       `A salary of $2400$ EUR is increased by $10\\%$ and then by a further $10\\%$. Then the new salary is $2880$ EUR.`,
@@ -1328,15 +1328,23 @@ $$\\frac{1.6}{10} = 0.16$$
 which matches the $16\\%$ mixture, so the statement is True.`,
       `**B.** → False
 
-The liquid drawn from a $20\\%$ vat is still $20\\%$ acid. Two litres therefore contain
+The vat holds $8$ litres of $25\\%$ acid, so the pure acid present is
 
-$$0.20 \\cdot 2 = 0.40$$
+$$0.25 \\cdot 8 = 2$$
 
-litres of pure acid, not the claimed $0.5$ litres. Substituting the claimed $0.5$ litres in two litres would be a $25\\%$ draw:
+litres. Adding $2$ litres of pure acid brings the total volume to
 
-$$\\frac{0.5}{2} = 0.25$$
+$$8 + 2 = 10$$
 
-which is not $20\\%$, so the statement is False.`,
+litres and the total pure acid to
+
+$$2 + 2 = 4$$
+
+litres. The new concentration is
+
+$$\\frac{4}{10} = 0.40$$
+
+so the mixture is $40\\%$ acid, not the claimed $35\\%$. The claim does not match the concentration after the addition, so the statement is False.`,
       `**C.** → False
 
 A $20\\%$ discount leaves $80\\%$ of the original price $p$:
@@ -1562,37 +1570,31 @@ which is not $12$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x - 2}{3} - \\dfrac{2x + 1}{4} = \\dfrac{x}{6} - 2$ has a positive non-integer solution.`,
+      `The equation $\\dfrac{3x - 1}{4} + \\dfrac{x + 3}{2} = 5$ has a unique real solution that is an integer.`,
       `The linear equation $\\frac{x + 1}{2} - \\frac{x - 1}{3} = 2$ is cleared by multiplying through by $6$. After collecting like terms the unique real solution is odd.`,
       `The least common multiple of $3$, $4$, and $6$ is $12$, so multiplying a three-denominator linear equation with those denominators through by $12$ is the economical clearing.`,
       `Half a wage plus one-third of the same wage is $5$ EUR. A clerk reports that the wage is $4$ EUR.`,
-      `For $\\dfrac{x - 2}{3} - \\dfrac{2x + 1}{4} = \\dfrac{x}{6} - 2$, the common value of both sides at the solution is negative.`,
+      `The equation $\\dfrac{2x + 1}{5} = \\dfrac{x - 4}{3}$ has a positive real solution.`,
     ],
-    answer_key: [true, true, true, false, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-In words: one-third of two millilitres less than the amount, minus one-fourth of twice the amount plus one millilitre, equals one-sixth of the amount minus $2$ ml:
+Clear the denominators by multiplying through by $4$:
 
-$$\\frac{x - 2}{3} - \\frac{2x + 1}{4} = \\frac{x}{6} - 2$$
+$$\\frac{3x - 1}{4} + \\frac{x + 3}{2} = 5$$
 
-Clear the denominators by multiplying through by the least common multiple $12$:
+$$3x - 1 + 2(x + 3) = 20$$
 
-$$4(x - 2) - 3(2x + 1) = 2x - 24$$
+$$3x - 1 + 2x + 6 = 20$$
 
-$$4x - 8 - 3(2x + 1) = 2x - 24$$
+$$5x + 5 = 20$$
 
-$$4x - 8 - 6x - 3 = 2x - 24$$
+$$5x = 15$$
 
-$$-2x - 11 = 2x - 24$$
+$$x = 3$$
 
-$$-11 + 24 = 2x + 2x$$
-
-$$13 = 4x$$
-
-$$x = \\frac{13}{4}$$
-
-The recovered solution is $\\frac{13}{4}$, which is positive and not an integer. The statement is True.`,
+The recovered solution is $x = 3$, which is an integer. The statement is True.`,
       `**B.** → True
 
 Clear the denominators by multiplying through by $6$:
@@ -1638,49 +1640,25 @@ $$\\frac{4}{2} = 2$$
 $$2 + \\frac{4}{3} = \\frac{10}{3}$$
 
 which is not $5$, so the statement is False.`,
-      `**E.** → True
+      `**E.** → False
 
-Use the recovered solution $x = \\frac{13}{4}$ in each side of
+Cross-multiply the proportion on its domain, where both denominators are allowed to be nonzero:
 
-$$\\frac{x - 2}{3} - \\frac{2x + 1}{4} = \\frac{x}{6} - 2$$
+$$\\frac{2x + 1}{5} = \\frac{x - 4}{3}$$
 
-Left-hand side, first the two numerators:
+$$3(2x + 1) = 5(x - 4)$$
 
-$$2 = \\frac{8}{4}$$
+$$6x + 3 = 5x - 20$$
 
-$$\\frac{13}{4} - \\frac{8}{4} = \\frac{5}{4}$$
+$$6x - 5x = -20 - 3$$
 
-$$2 \\cdot \\frac{13}{4} = \\frac{13}{2}$$
+$$x = -23$$
 
-$$1 = \\frac{2}{2}$$
-
-$$\\frac{13}{2} + \\frac{2}{2} = \\frac{15}{2}$$
-
-Then divide by the remaining denominators:
-
-$$\\frac{5}{4} \\cdot \\frac{1}{3} = \\frac{5}{12}$$
-
-$$\\frac{15}{2} \\cdot \\frac{1}{4} = \\frac{15}{8}$$
-
-$$\\frac{5}{12} = \\frac{10}{24}$$
-
-$$\\frac{15}{8} = \\frac{45}{24}$$
-
-$$\\frac{10}{24} - \\frac{45}{24} = -\\frac{35}{24}$$
-
-Right-hand side:
-
-$$\\frac{13}{4} \\cdot \\frac{1}{6} = \\frac{13}{24}$$
-
-$$2 = \\frac{48}{24}$$
-
-$$\\frac{13}{24} - \\frac{48}{24} = -\\frac{35}{24}$$
-
-The two sides are equal at $-\\frac{35}{24}$, and that common value is negative. The statement is True.`,
+The recovered solution is $x = -23$, which is not positive. The statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
-    solution_overview: `Five independent fractional linear equations. Clear denominators by multiplying through by the least common multiple, then collect like terms. One three-denominator equation recovers $x = \\frac{13}{4}$.`,
+    solution_overview: `Five independent fractional linear equations. Clear denominators by multiplying through by the least common multiple, then collect like terms. Each statement uses a different equation or a separate LCD fact.`,
   },
   {
     id: `math-4-19`,
@@ -1922,87 +1900,101 @@ They were in the ratio seven to one, not five to one. Five to one would have req
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two trains $150$ m and $250$ m long run toward each other at $54$ km/h and $36$ km/h. From the instant their fronts meet until they have completely passed takes $12$ seconds.`,
-      `While those two trains pass they must cover $400$ m relative to one another, the sum of their lengths.`,
-      `Their closing speed $90$ km/h converts to $20$ m/s.`,
-      `The passing time for those opposite trains is $16$ seconds.`,
-      `If the same two trains ran in the same direction, they would take $40$ seconds to pass.`,
+      `Two trains $180$ m and $320$ m long run toward each other at $72$ km/h and $108$ km/h. From the instant their fronts meet until they have completely passed takes $10$ seconds.`,
+      `A motorcyclist's steady speed of $54$ km/h is equivalent to $15$ m/s.`,
+      `Two trains $150$ m and $250$ m long run in the same direction at $90$ km/h and $54$ km/h. The faster train takes $20$ seconds to pass the slower completely.`,
+      `A courier rides $45$ km at a steady $15$ km/h. The journey lasts $15$ minutes.`,
+      `Converting $36$ km/h to metres per second gives $12$ m/s.`,
     ],
-    answer_key: [false, true, false, true, false],
+    answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
 Opposite trains pass when they cover the sum of their lengths at the sum of their speeds.
 
 The lengths add to
 
-$$150 + 250 = 400$$
+$$180 + 320 = 500$$
 
 metres. The speeds add to
 
-$$54 + 36 = 90$$
+$$72 + 108 = 180$$
 
 kilometres per hour. A speed in kilometres per hour converts to metres per second by multiplying by $\\frac{5}{18}$:
 
-$$90 \\cdot \\frac{5}{18}$$
+$$180 \\cdot \\frac{5}{18}$$
 
-$$= 25$$
+$$= 50$$
 
 metres per second. The passing time is then
 
-$$t = \\frac{400}{25}$$
+$$t = \\frac{500}{50}$$
 
-$$= 16$$
+$$= 10$$
 
-seconds. The recovered time is $16$ seconds, not $12$. The claimed $12$ seconds at $25$ m/s would cover only $300$ m, not the $400$ m of combined length, so the statement is False.`,
+seconds. The recovered time is $10$ seconds, matching the claim, so the statement is True.`,
       `**B.** → True
-
-Each train must travel the full length of the other before they have completely passed.
-
-$$150 + 250 = 400$$
-
-They must cover $400$ m relative to one another. The claim is that same distance, so the statement is True.`,
-      `**C.** → False
 
 A speed in kilometres per hour converts to metres per second by multiplying by $\\frac{5}{18}$.
 
-$$90 \\cdot \\frac{5}{18}$$
+$$54 \\cdot \\frac{5}{18}$$
 
-$$= 25$$
+$$= 15$$
 
-The closing speed is $25$ metres per second, not $20$. The claimed $20$ m/s would be the conversion of $72$ km/h, not of $90$ km/h, so the statement is False.`,
-      `**D.** → True
-
-Opposite trains cover $400$ m at $25$ m/s.
-
-$$t = \\frac{400}{25}$$
-
-$$= 16$$
-
-The passing time is $16$ seconds. The claim is that same figure, so the statement is True.`,
-      `**E.** → False
+The speed is $15$ metres per second. The claim is that same figure, so the statement is True.`,
+      `**C.** → False
 
 Trains running in the same direction pass at the difference of their speeds.
 
-$$54 - 36 = 18$$
+$$90 - 54 = 36$$
 
 kilometres per hour. Convert to metres per second:
 
-$$18 \\cdot \\frac{5}{18}$$
+$$36 \\cdot \\frac{5}{18}$$
 
-$$= 5$$
+$$= 10$$
 
-They still cover $400$ m relative to one another, so
+metres per second. They must still cover the sum of their lengths:
 
-$$t = \\frac{400}{5}$$
+$$150 + 250 = 400$$
 
-$$= 80$$
+metres, so
 
-seconds. The recovered time is $80$ seconds, not $40$. The claimed $40$ seconds at $5$ m/s would cover only $200$ m, so the statement is False.`,
+$$t = \\frac{400}{10}$$
+
+$$= 40$$
+
+seconds. The recovered time is $40$ seconds, not $20$. The claimed $20$ seconds at $10$ m/s would cover only $200$ m, so the statement is False.`,
+      `**D.** → False
+
+Time is distance divided by speed.
+
+$$t = \\frac{45}{15}$$
+
+$$= 3$$
+
+hours. Three hours is
+
+$$3 \\cdot 60 = 180$$
+
+minutes, not $15$ minutes. The claimed $15$ minutes would cover only
+
+$$15 \\cdot \\frac{15}{60} = 3.75$$
+
+kilometres at $15$ km/h, so the statement is False.`,
+      `**E.** → False
+
+A speed in kilometres per hour converts to metres per second by multiplying by $\\frac{5}{18}$.
+
+$$36 \\cdot \\frac{5}{18}$$
+
+$$= 10$$
+
+The conversion is $10$ metres per second, not $12$. The claimed $12$ m/s would be the conversion of $43.2$ km/h, not of $36$ km/h, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 22,
-    solution_overview: `Five independent passing-train claims. Opposite trains cover the sum of lengths at the sum of speeds. Convert kilometres per hour to metres per second by multiplying by $\\frac{5}{18}$. Same-direction passing uses the difference of the speeds.`,
+    solution_overview: `Five independent rate and conversion claims. Opposite trains cover the sum of lengths at the sum of speeds; same-direction passing uses the speed difference. Convert km/h to m/s with $\\frac{5}{18}$. Journey time is distance over speed.`,
   },
   {
     id: `math-4-23`,
@@ -2579,8 +2571,8 @@ The difference is $9$, not $7$. The claimed $7$ would be $5 + 2$, not $25 - 16$,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A product of two factors, one two less than a number and one five less than the same number, is zero. A student reports that the number is $3$ or $5$.`,
-      `The equation $x^{2} - 5x + 6 = 0$ has two distinct real solutions whose difference is $1$.`,
-      `A number squared, minus five times the number, plus $6$, is zero. The difference between its two real solutions is $5$.`,
+      `The equation $x^{2} - 7x + 12 = 0$ has two distinct positive integer roots.`,
+      `A number squared, minus nine, is zero. A student reports that the only real solution is $3$.`,
       `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
       `A number times itself equals five times the number. A student reports that the only real solution is $5$.`,
     ],
@@ -2615,16 +2607,22 @@ which is not zero, so the statement is False.`,
 
 Move everything to one side, factor, and set each factor to zero.
 
-$$x^{2} - 5x + 6 = 0$$
+$$x^{2} - 7x + 12 = 0$$
 
-$$(x - 2)(x - 3) = 0$$
+$$(x - 3)(x - 4) = 0$$
 
-Then $x = 2$ or $x = 3$. The difference is $3 - 2 = 1$, so the statement is True.`,
+Then $x = 3$ or $x = 4$. Both roots are positive integers and they are distinct. The statement is True.`,
       `**C.** → False
 
-The two roots of a monic quadratic add to the middle coefficient with the sign flipped, and they multiply to the constant term.
+Move everything to one side before factoring.
 
-The equation $x^{2} - 5x + 6 = 0$ has roots $2$ and $3$. Their difference is $3 - 2 = 1$, not $5$, so the statement is False.`,
+A number squared, minus nine, is zero:
+
+$$x^{2} - 9 = 0$$
+
+$$(x - 3)(x + 3) = 0$$
+
+Then $x = 3$ or $x = -3$. The recovered solutions are $3$ and $-3$, not a single solution $3$. The claim keeps only one root, so the statement is False.`,
       `**D.** → True
 
 That is the zero-product property: a product of real numbers is zero if and only if at least one factor is zero.
@@ -2646,7 +2644,7 @@ Then $x = 0$ or $x = 5$. The recovered solutions are $0$ and $5$. The claim keep
     ],
     difficulty_level: `2/5`,
     sort_order: 30,
-    solution_overview: `Five independent claims about factoring. Move everything to one side, factor, then set each factor to zero. Do not divide away a possible $x = 0$.`,
+    solution_overview: `Five independent claims about factoring. Move everything to one side, factor, then set each factor to zero. Each statement uses a different quadratic or a separate factoring rule.`,
   },
   {
     id: `math-4-31`,
@@ -2655,77 +2653,77 @@ Then $x = 0$ or $x = 5$. The recovered solutions are $0$ and $5$. The claim keep
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A square has area $64$ m$^{2}$. Then its side is $8$ m, taking the positive length.`,
-      `Two consecutive integers multiply to $12$. The positive pair is $3$ and $4$.`,
-      `Two consecutive integers multiply to $12$. The pair $2$ and $6$ is not consecutive, even though the product happens to be $12$.`,
-      `A rectangle is $1$ cm longer than it is wide and has area $12$ cm$^{2}$. Then the width is $3$ cm.`,
-      `A rectangle is $1$ cm longer than it is wide and has area $12$ cm$^{2}$. Then the longer side is $4$ cm.`,
+      `A square has area $81$ m$^{2}$. Then its side is $9$ m, taking the positive length.`,
+      `Two consecutive positive integers multiply to $30$. The smaller of the two is $5$.`,
+      `A $6$ cm by $7$ cm rectangle has perimeter $26$ cm.`,
+      `A rectangle of width $5$ cm and length $8$ cm has area $35$ cm$^{2}$.`,
+      `A square of area $49$ cm$^{2}$ has side $8$ cm.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
 The area of a square is the side times itself, and a geometric side is the positive square root.
 
-$$s^{2} = 64$$
+$$s^{2} = 81$$
 
-$$s = \\pm 8$$
+$$s = \\pm 9$$
 
-A length is positive, so $s = 8$, not $-8$. Check:
+A length is positive, so $s = 9$, not $-9$. Check:
 
-$$8 \\cdot 8 = 64$$
+$$9 \\cdot 9 = 81$$
 
-The side is $8$ m. The claim is that same positive length, so the statement is True.`,
+The side is $9$ m. The claim is that same positive length, so the statement is True.`,
       `**B.** → True
 
 Consecutive integers differ by $1$, so their product is a quadratic.
 
 Let $n$ be the smaller integer. Then
 
-$$n(n + 1) = 12$$
+$$n(n + 1) = 30$$
 
-$$n^{2} + n - 12 = 0$$
+$$n^{2} + n - 30 = 0$$
 
-$$(n + 4)(n - 3) = 0$$
+$$(n + 6)(n - 5) = 0$$
 
-so $n = -4$ or $n = 3$. The positive pair is $3$ and $4$. Check:
+so $n = -6$ or $n = 5$. The smaller positive integer is $5$, and the next is $6$. Check:
 
-$$3 \\cdot 4 = 12$$
+$$5 \\cdot 6 = 30$$
 
-The claim is that same pair, so the statement is True.`,
+The claim is that same smaller integer, so the statement is True.`,
       `**C.** → True
 
-Consecutive integers differ by $1$.
+The perimeter of a rectangle is twice the sum of length and width.
 
-The integers $2$ and $6$ differ by $4$, not by $1$, so they are not consecutive. Their product happens to be $12$, but that does not make them consecutive. The claim matches that distinction, so the statement is True.`,
-      `**D.** → True
+$$P = 2(6 + 7)$$
 
-Area is length times width. Let the width be $x$ cm. Then the length is $x + 1$, and the area is $12$ cm$^{2}$:
+$$P = 26$$
 
-$$x(x + 1) = 12$$
+The perimeter is $26$ cm. The claim is that same perimeter, so the statement is True.`,
+      `**D.** → False
 
-$$x^{2} + x - 12 = 0$$
+Area is length times width.
 
-$$(x + 4)(x - 3) = 0$$
+$$5 \\cdot 8 = 40$$
 
-so $x = -4$ or $x = 3$. A width is positive, so $x = 3$. Check:
+The area is $40$ cm$^{2}$, not $35$. The claimed $35$ does not match the product of the given sides, so the statement is False.`,
+      `**E.** → False
 
-$$3 \\cdot 4 = 12$$
+The area of a square is the side times itself.
 
-The width is $3$ cm. The claim is that same width, so the statement is True.`,
-      `**E.** → True
+$$s^{2} = 49$$
 
-The longer side is the width plus $1$ cm.
+$$s = 7$$
 
-The positive width is $3$ cm, so the length is
+A geometric side is positive, so the side is $7$ cm, not $8$ cm. Check:
 
-$$3 + 1 = 4$$
+$$7^{2} = 49$$
 
-The longer side is $4$ cm. The claim is that same length, so the statement is True.`,
+The claim $8$ cm does not match, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 31,
-    solution_overview: `Five independent square and consecutive-integer stories. A product of consecutive integers is $n(n + 1)$, which is a quadratic. A geometric side or width is the positive root.`,
+    solution_overview: `Five independent quadratic stories: a square with area $81$ m$^{2}$, consecutive integers with product $30$, a $6$ by $7$ perimeter check, a $5$ by $8$ area check, and a square of area $49$ cm$^{2}$.`,
   },
   {
     id: `math-4-32`,
@@ -2884,69 +2882,103 @@ Then $5 > 4$, but $2$ is not greater than $4$. Both greater than $4$ would requi
   {
     id: `math-4-34`,
     case_id: `MATH 4.34`,
-    title: `A quadratic with roots $2$ and $-3$`,
+    title: `Five separate quadratic root and discriminant claims`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A number squared, plus the number itself, minus $6$, is zero. A student reports that a positive solution is $3$.`,
-      `The quadratic equation $x^{2} + x - 6 = 0$ has negative root $-2$.`,
-      `The discriminant of $x^{2} + x - 6$ is $16$.`,
-      `The quadratic $x^{2} + x - 6 = 0$ has two distinct real solutions.`,
-      `A student claims that a number squared plus the number minus $6$ can never be zero for any real number.`,
+      `The quadratic equation $x^{2} - 5x + 6 = 0$ has two distinct positive real roots.`,
+      `The discriminant of $x^{2} + 2x + 5 = 0$ is $4$.`,
+      `The equation $x^{2} - 4x + 4 = 0$ has exactly one real solution.`,
+      `The quadratic $x^{2} + 3x - 10 = 0$ has negative root $-5$.`,
+      `The equation $x^{2} - 2x - 8 = 0$ has no real solutions.`,
     ],
-    answer_key: [false, false, false, true, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
 Move everything to one side, factor, and set each factor to zero.
 
-A number squared, plus the number itself, minus $6$, is zero:
+$$x^{2} - 5x + 6 = 0$$
 
-$$x^{2} + x - 6 = 0$$
+$$(x - 2)(x - 3) = 0$$
 
-$$(x + 3)(x - 2) = 0$$
+Then $x = 2$ or $x = 3$. Both roots are positive and distinct. The discriminant confirms two distinct real roots:
 
-Then $x = -3$ or $x = 2$. The positive solution is $2$, not $3$. The claimed value $x = 3$ gives
+$$\\Delta = (-5)^{2} - 4 \\cdot 1 \\cdot 6$$
 
-$$3^{2} + 3 - 6 = 6$$
+$$\\Delta = 25 - 24$$
 
-which is not zero, so the statement is False.`,
+$$\\Delta = 1 > 0$$
+
+The claim matches that sign pattern, so the statement is True.`,
       `**B.** → False
-
-The same factoring gives roots $2$ and $-3$.
-
-The negative root is $-3$, not $-2$. The claimed value $x = -2$ gives
-
-$$(-2)^{2} + (-2) - 6 = -4$$
-
-which is not zero, so the statement is False.`,
-      `**C.** → False
 
 The discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$.
 
-Here $a = 1$, $b = 1$, and $c = -6$:
+Here $a = 1$, $b = 2$, and $c = 5$:
 
-$$\\Delta = 1^{2} - 4 \\cdot 1 \\cdot (-6)$$
+$$\\Delta = 2^{2} - 4 \\cdot 1 \\cdot 5$$
 
-$$\\Delta = 1 + 24$$
+$$\\Delta = 4 - 20$$
 
-$$\\Delta = 25$$
+$$\\Delta = -16$$
 
-The discriminant is $25$, not $16$. The claimed $16$ would be $4^{2}$, or the discriminant of $x^{2} + x - 4$, so the statement is False.`,
+The discriminant is $-16$, not $4$. A discriminant of $4$ would belong to a quadratic such as $x^{2} + 2x + 1$, so the statement is False.`,
+      `**C.** → True
+
+A discriminant of zero means a repeated real root.
+
+For $x^{2} - 4x + 4 = 0$, here $a = 1$, $b = -4$, and $c = 4$:
+
+$$\\Delta = (-4)^{2} - 4 \\cdot 1 \\cdot 4$$
+
+$$\\Delta = 16 - 16$$
+
+$$\\Delta = 0$$
+
+Factoring makes the repeated root visible:
+
+$$x^{2} - 4x + 4 = (x - 2)^{2}$$
+
+$$(x - 2)^{2} = 0$$
+
+$$x = 2$$
+
+There is exactly one real solution, a double root at $x = 2$. The claim matches that count, so the statement is True.`,
       `**D.** → True
 
-A positive discriminant means two distinct real roots.
+Move everything to one side, factor, and set each factor to zero.
 
-The discriminant is $\\Delta = 25 > 0$. The two roots are $2$ and $-3$, which are distinct. The claim matches that count, so the statement is True.`,
+$$x^{2} + 3x - 10 = 0$$
+
+$$(x + 5)(x - 2) = 0$$
+
+Then $x = -5$ or $x = 2$. The negative root is $-5$. Check:
+
+$$(-5)^{2} + 3(-5) - 10 = 0$$
+
+The claim is that same root, so the statement is True.`,
       `**E.** → False
 
-No real solution would require a negative discriminant.
+A negative discriminant means no real roots.
 
-Here $\\Delta = 25 > 0$, and the two real roots $2$ and $-3$ were already found. The equation is zero at those two real numbers, so the statement is False.`,
+For $x^{2} - 2x - 8 = 0$, here $a = 1$, $b = -2$, and $c = -8$:
+
+$$\\Delta = (-2)^{2} - 4 \\cdot 1 \\cdot (-8)$$
+
+$$\\Delta = 4 + 32$$
+
+$$\\Delta = 36$$
+
+Since $\\Delta = 36 > 0$, there are two distinct real roots. Factoring gives
+
+$$(x - 4)(x + 2) = 0$$
+
+so real roots exist. The claim of no real solutions is incorrect, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 34,
-    solution_overview: `Five independent claims about $x^{2} + x - 6 = 0$. Factor as $(x + 3)(x - 2)$, or read the discriminant $25$ to know there are two distinct real roots.`,
+    solution_overview: `Five independent quadratic claims on different equations. Factor when possible, or read the discriminant $b^{2} - 4ac$ to decide root count and sign.`,
   },
   {
     id: `math-4-35`,
@@ -3269,166 +3301,188 @@ The legs are $3$ cm and $4$ cm, so the longer leg is $4$ cm. The claim is that s
   {
     id: `math-4-39`,
     case_id: `MATH 4.39`,
-    title: `Three quadratics that differ only in the constant`,
+    title: `Five separate discriminant and root-count claims`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^{2} + 4x + 5 = 0$ has no real solution.`,
-      `The equation $x^{2} + 4x + 4 = 0$ has exactly one real solution (a double root).`,
-      `The equation $x^{2} + 4x + 3 = 0$ has two different real solutions.`,
-      `Those two roots of $x^{2} + 4x + 3 = 0$ are $-1$ and $-3$.`,
-      `Three similar quadratics, differing only in the constant $5$, $4$, and $3$, are claimed to have $0$, $1$, and $2$ distinct real roots, in that order.`,
+      `The equation $x^{2} - 6x + 10 = 0$ has no real solution.`,
+      `The equation $2x^{2} + 4x + 2 = 0$ has exactly one distinct real root.`,
+      `The equation $x^{2} + x - 12 = 0$ has two different real solutions.`,
+      `The equation $x^{2} + 2x + 3 = 0$ has two distinct real solutions.`,
+      `The equation $3x^{2} - 2x + 1 = 0$ has no real solution.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 The discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$. A negative discriminant means no real roots.
 
-A number squared plus four times the number plus $5$ is zero:
+For $x^{2} - 6x + 10 = 0$, here $a = 1$, $b = -6$, and $c = 10$:
 
-$$x^{2} + 4x + 5 = 0$$
+$$\\Delta = (-6)^{2} - 4 \\cdot 1 \\cdot 10$$
 
-Here $a = 1$, $b = 4$, and $c = 5$:
-
-$$\\Delta = 4^{2} - 4 \\cdot 1 \\cdot 5$$
-
-$$\\Delta = 16 - 20$$
+$$\\Delta = 36 - 40$$
 
 $$\\Delta = -4$$
 
 Since $\\Delta < 0$, there are no real roots. Completing the square gives the same conclusion:
 
-$$(x + 2)^{2} + 1 = 0$$
+$$(x - 3)^{2} + 1 = 0$$
 
 A square plus one cannot be zero. No real number works, so the statement is True.`,
       `**B.** → True
 
-A discriminant of zero means a repeated real root.
+A discriminant of zero means a repeated real root. Divide the equation by $2$ first:
 
-For $x^{2} + 4x + 4 = 0$, here $a = 1$, $b = 4$, and $c = 4$:
+$$x^{2} + 2x + 1 = 0$$
 
-$$\\Delta = 4^{2} - 4 \\cdot 1 \\cdot 4$$
+Here $a = 1$, $b = 2$, and $c = 1$:
 
-$$\\Delta = 16 - 16$$
+$$\\Delta = 2^{2} - 4 \\cdot 1 \\cdot 1$$
+
+$$\\Delta = 4 - 4$$
 
 $$\\Delta = 0$$
 
 Factoring makes the repeated root visible:
 
-$$x^{2} + 4x + 4 = (x + 2)^{2}$$
+$$x^{2} + 2x + 1 = (x + 1)^{2}$$
 
-$$(x + 2)^{2} = 0$$
+$$(x + 1)^{2} = 0$$
 
-$$x = -2$$
+$$x = -1$$
 
-There is exactly one real solution, a double root at $x = -2$. The claim matches that count, so the statement is True.`,
+There is exactly one distinct real root, a double root at $x = -1$. The claim matches that count, so the statement is True.`,
       `**C.** → True
 
 A positive discriminant means two distinct real roots.
 
-A number squared plus four times the number plus $3$ is zero:
+For $x^{2} + x - 12 = 0$, here $a = 1$, $b = 1$, and $c = -12$:
 
-$$x^{2} + 4x + 3 = 0$$
+$$\\Delta = 1^{2} - 4 \\cdot 1 \\cdot (-12)$$
 
-Here $a = 1$, $b = 4$, and $c = 3$:
+$$\\Delta = 1 + 48$$
 
-$$\\Delta = 4^{2} - 4 \\cdot 1 \\cdot 3$$
+$$\\Delta = 49$$
 
-$$\\Delta = 16 - 12$$
+Since $\\Delta > 0$, two different real numbers work. Factoring confirms:
 
-$$\\Delta = 4$$
+$$(x + 4)(x - 3) = 0$$
 
-Since $\\Delta > 0$, two different real numbers work. The claim matches that count, so the statement is True.`,
-      `**D.** → True
+The claim matches that count, so the statement is True.`,
+      `**D.** → False
 
-Move everything to one side, factor, and set each factor to zero.
+The discriminant decides whether distinct real roots exist.
 
-$$x^{2} + 4x + 3 = 0$$
+For $x^{2} + 2x + 3 = 0$, here $a = 1$, $b = 2$, and $c = 3$:
 
-$$(x + 1)(x + 3) = 0$$
+$$\\Delta = 2^{2} - 4 \\cdot 1 \\cdot 3$$
 
-Then $x = -1$ or $x = -3$. Check:
+$$\\Delta = 4 - 12$$
 
-$$(-1)^{2} + 4(-1) + 3 = 0$$
+$$\\Delta = -8$$
 
-$$(-3)^{2} + 4(-3) + 3 = 0$$
-
-The two roots are $-1$ and $-3$. The claim is that same pair, so the statement is True.`,
+Since $\\Delta < 0$, there are no real roots at all, let alone two distinct ones. The claim is incorrect, so the statement is False.`,
       `**E.** → True
 
-The sign of the discriminant decides the number of distinct real roots.
+The discriminant of $ax^{2} + bx + c$ is $b^{2} - 4ac$.
 
-For $x^{2} + 4x + 5$, $\\Delta = -4 < 0$, so $0$ distinct real roots. For $x^{2} + 4x + 4$, $\\Delta = 0$, so $1$ distinct real root. For $x^{2} + 4x + 3$, $\\Delta = 4 > 0$, so $2$ distinct real roots. The counts are $0$, $1$, and $2$ in that order. The claim matches those three counts, so the statement is True.`,
+For $3x^{2} - 2x + 1 = 0$, here $a = 3$, $b = -2$, and $c = 1$:
+
+$$\\Delta = (-2)^{2} - 4 \\cdot 3 \\cdot 1$$
+
+$$\\Delta = 4 - 12$$
+
+$$\\Delta = -8$$
+
+Since $\\Delta < 0$, there are no real solutions. The claim matches that count, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 39,
-    solution_overview: `Five independent discriminant claims for $x^{2} + 4x + c$ with $c = 5$, $4$, and $3$. The sign of $\\Delta = 16 - 4c$ decides whether there are two, one, or no real roots.`,
+    solution_overview: `Five independent discriminant claims on different quadratics. Compute $\\Delta = b^{2} - 4ac$: negative means none, zero means one repeated root, positive means two distinct real roots.`,
   },
   {
     id: `math-4-40`,
     case_id: `MATH 4.40`,
-    title: `Two numbers that add to $10$ and multiply to $21$`,
+    title: `Five separate Vieta sum-and-product stories`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $10$ and multiply to $21$. They are $4$ and $6$.`,
-      `Those two numbers are the roots of $t^{2} - 10t + 24 = 0$.`,
-      `Both numbers are larger than $4$.`,
-      `Their difference is $4$.`,
-      `Each of them is negative.`,
+      `Two numbers add to $12$ and multiply to $32$. They are $4$ and $8$.`,
+      `Two numbers add to $9$ and multiply to $14$. Their difference is $5$.`,
+      `Two numbers add to $11$ and multiply to $24$. They are $3$ and $8$.`,
+      `Two numbers add to $13$ and multiply to $36$. Both are greater than $6$.`,
+      `Two numbers add to $8$ and multiply to $15$. Each of them is negative.`,
     ],
-    answer_key: [false, false, false, true, false],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
 Two numbers with sum $S$ and product $P$ are the roots of $t^{2} - St + P = 0$.
 
-Here $S = 10$ and $P = 21$, so
+Here $S = 12$ and $P = 32$, so
 
-$$t^{2} - 10t + 21 = 0$$
+$$t^{2} - 12t + 32 = 0$$
 
-$$(t - 3)(t - 7) = 0$$
+$$(t - 4)(t - 8) = 0$$
 
-The numbers are $3$ and $7$, not $4$ and $6$. The claimed pair adds to $10$ but multiplies to $24$:
+The numbers are $4$ and $8$. Check:
 
-$$4 + 6 = 10$$
+$$4 + 8 = 12$$
 
-$$4 \\cdot 6 = 24$$
+$$4 \\cdot 8 = 32$$
 
-which is not $21$, so the statement is False.`,
-      `**B.** → False
+The claim is that same pair, so the statement is True.`,
+      `**B.** → True
 
-Two numbers that add to $10$ and multiply to $21$ are the roots of $t^{2} - 10t + 21 = 0$.
+Two numbers that add to $9$ and multiply to $14$ are the roots of
 
-The claimed equation is $t^{2} - 10t + 24 = 0$, whose constant term is $24$, not $21$. Factoring that claimed equation gives
+$$t^{2} - 9t + 14 = 0$$
 
-$$(t - 4)(t - 6) = t^{2} - 10t + 24$$
+$$(t - 2)(t - 7) = 0$$
 
-so its roots are $4$ and $6$. Those add to $10$ as well, but they multiply to $24$, not $21$. The numbers $3$ and $7$ solve $t^{2} - 10t + 21 = 0$, so the statement is False.`,
-      `**C.** → False
+The numbers are $2$ and $7$. Their difference is
 
-The two numbers are $3$ and $7$.
+$$7 - 2 = 5$$
 
-Then $7 > 4$, but $3$ is not larger than $4$. Both larger than $4$ would be a different pair, such as $4$ and $6$, whose product is $24$ rather than $21$, so the statement is False.`,
-      `**D.** → True
+The claimed difference is $5$, so the statement is True.`,
+      `**C.** → True
 
-The difference of two numbers is the larger minus the smaller.
+Two numbers with sum $11$ and product $24$ solve
 
-The two numbers are $7$ and $3$, so
+$$t^{2} - 11t + 24 = 0$$
 
-$$7 - 3 = 4$$
+$$(t - 3)(t - 8) = 0$$
 
-They differ by $4$. The claim is that same gap, so the statement is True.`,
+The numbers are $3$ and $8$. Check:
+
+$$3 + 8 = 11$$
+
+$$3 \\cdot 8 = 24$$
+
+The claim is that same pair, so the statement is True.`,
+      `**D.** → False
+
+Two numbers that add to $13$ and multiply to $36$ are the roots of
+
+$$t^{2} - 13t + 36 = 0$$
+
+$$(t - 4)(t - 9) = 0$$
+
+The numbers are $4$ and $9$. Then $9 > 6$, but $4$ is not greater than $6$. Both greater than $6$ would be a different pair whose product exceeds $36$, so the statement is False.`,
       `**E.** → False
 
-The two numbers that add to $10$ and multiply to $21$ are $3$ and $7$, both positive.
+Two numbers with sum $8$ and product $15$ are the roots of
 
-A negative pair with product $21$ would need a negative sum as well, because a negative times a negative is positive and the sum of two negatives is negative. The sum here is $10 > 0$, so both numbers are positive. The claim that each is negative is incorrect, so the statement is False.`,
+$$t^{2} - 8t + 15 = 0$$
+
+$$(t - 3)(t - 5) = 0$$
+
+The numbers are $3$ and $5$, both positive. A negative pair with product $15$ would need a negative sum as well, because a negative times a negative is positive and the sum of two negatives is negative. The sum here is $8 > 0$, so both numbers are positive. The claim that each is negative is incorrect, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 40,
-    solution_overview: `Five independent claims about two numbers with sum $10$ and product $21$. They are the roots of $t^{2} - St + P = 0$, here $t^{2} - 10t + 21 = 0$, so the pair is $3$ and $7$.`,
+    solution_overview: `Five independent Vieta claims with different sum-and-product pairs. Each pair is the roots of $t^{2} - (\\text{sum})t + (\\text{product}) = 0$.`,
   },
   {
     id: `math-4-41`,
@@ -3437,101 +3491,101 @@ A negative pair with product $21$ would need a negative sum as well, because a n
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Completing the square turns $x^{2} - \\frac{7}{2}x - 2 = 0$ into $\\left(x - \\frac{7}{4}\\right)^{2} = \\frac{81}{16}$.`,
-      `A number squared, minus six times the number, plus $5$, is zero. The product of its two real solutions is $8$.`,
-      `For $x^{2} - \\frac{7}{2}x - 2 = 0$, a student claims that both of its real solutions are positive.`,
-      `The positive real solution of $x^{2} - \\frac{7}{2}x - 2 = 0$ is an integer.`,
-      `A student reads the constant term of a monic quadratic whose constant is $-2$ and reports that the product of the roots is $2$, having dropped the minus sign.`,
+      `Completing the square turns $x^{2} + 6x + 5 = 0$ into $\\left(x + 3\\right)^{2} = 4$.`,
+      `The quadratic $x^{2} - 8x + 12 = 0$ factors as $(x - 2)(x - 6)$.`,
+      `Completing the square turns $x^{2} - 4x - 1 = 0$ into $\\left(x - 2\\right)^{2} = 5$.`,
+      `The product of the two real roots of $x^{2} + 5x + 6 = 0$ is $8$.`,
+      `Both real roots of $x^{2} - 3x - 4 = 0$ are positive.`,
     ],
-    answer_key: [true, false, false, true, false],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
 Completing the square moves the constant, then adds the square of half the linear coefficient so the left side becomes a perfect square.
 
-$$x^{2} - \\frac{7}{2}x - 2 = 0$$
+$$x^{2} + 6x + 5 = 0$$
 
-$$x^{2} - \\frac{7}{2}x = 2$$
+$$x^{2} + 6x = -5$$
 
 Half of the coefficient of $x$ is
 
-$$\\frac{1}{2} \\cdot \\frac{7}{2} = \\frac{7}{4}$$
+$$\\frac{1}{2} \\cdot 6 = 3$$
 
 Squaring that half gives the constant that completes the square:
 
-$$\\left(\\frac{7}{4}\\right)^{2} = \\frac{49}{16}$$
+$$3^{2} = 9$$
 
-Adding $\\frac{49}{16}$ to both sides:
+Adding $9$ to both sides:
 
-$$x^{2} - \\frac{7}{2}x + \\frac{49}{16} = 2 + \\frac{49}{16}$$
+$$x^{2} + 6x + 9 = -5 + 9$$
 
-The left side is the expansion of $\\left(x - \\frac{7}{4}\\right)^{2}$. On the right, write $2$ with denominator $16$:
+The left side is the expansion of $\\left(x + 3\\right)^{2}$:
 
-$$2 = \\frac{32}{16}$$
-
-$$\\frac{32}{16} + \\frac{49}{16} = \\frac{81}{16}$$
-
-so
-
-$$\\left(x - \\frac{7}{4}\\right)^{2} = \\frac{81}{16}$$
+$$\\left(x + 3\\right)^{2} = 4$$
 
 That is the completed-square form in the claim, so the statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-The sentence is the monic quadratic $x^{2} - 6x + 5 = 0$. Factor by finding two numbers that multiply to $5$ and add to $-6$:
+Factor by finding two numbers that multiply to the constant term and add to the linear coefficient.
 
-$$x^{2} - 6x + 5 = (x - 1)(x - 5)$$
+For $x^{2} - 8x + 12 = 0$, the numbers $-2$ and $-6$ multiply to $12$ and add to $-8$:
 
-$$(x - 1)(x - 5) = 0$$
+$$x^{2} - 8x + 12 = (x - 2)(x - 6)$$
 
-so $x = 1$ or $x = 5$.
+Check by expanding:
 
-The two real solutions are $1$ and $5$, so their product is $1 \\cdot 5 = 5$, not $8$. Therefore the statement is False.`,
-      `**C.** → False
+$$(x - 2)(x - 6) = x^{2} - 8x + 12$$
 
-The two real solutions are $4$ and $-\\frac{1}{2}$. One of them is negative, so they cannot both be positive, therefore the statement is False.`,
-      `**D.** → True
+The claim is that same factorisation, so the statement is True.`,
+      `**C.** → True
 
-From the completed-square form of the same equation,
+Completing the square moves the constant, then adds the square of half the linear coefficient.
 
-$$\\left(x - \\frac{7}{4}\\right)^{2} = \\frac{81}{16}$$
+$$x^{2} - 4x - 1 = 0$$
 
-A square equals $\\frac{81}{16}$ when the inside equals the positive or the negative square root. The principal square root is
+$$x^{2} - 4x = 1$$
 
-$$\\sqrt{\\frac{81}{16}} = \\frac{9}{4}$$
+Half of the coefficient of $x$ is
 
-so
+$$\\frac{1}{2} \\cdot (-4) = -2$$
 
-$$x - \\frac{7}{4} = \\frac{9}{4}$$
+Squaring that half gives
 
-$$x = \\frac{7}{4} + \\frac{9}{4}$$
+$$(-2)^{2} = 4$$
 
-$$x = \\frac{16}{4} = 4$$
+Adding $4$ to both sides:
 
-and
+$$x^{2} - 4x + 4 = 1 + 4$$
 
-$$x - \\frac{7}{4} = -\\frac{9}{4}$$
+The left side is $\\left(x - 2\\right)^{2}$:
 
-$$x = \\frac{7}{4} - \\frac{9}{4}$$
+$$\\left(x - 2\\right)^{2} = 5$$
 
-$$x = -\\frac{2}{4} = -\\frac{1}{2}$$
-
-The two roots are $4$ and $-\\frac{1}{2}$. The positive one is $4$, which is an integer, so the statement is True.`,
-      `**E.** → False
+That is the completed-square form in the claim, so the statement is True.`,
+      `**D.** → False
 
 For a monic quadratic $x^{2} + bx + c = 0$, Vieta's product formula says the roots multiply to the constant term $c$.
 
-Here $c = -2$, so the product of the roots is $-2$.
+For $x^{2} + 5x + 6 = 0$, the product is $6$. Factoring confirms:
 
-The two roots of $x^{2} - \\frac{7}{2}x - 2 = 0$ are $4$ and $-\\frac{1}{2}$:
+$$(x + 2)(x + 3) = 0$$
 
-$$4 \\cdot \\left(-\\frac{1}{2}\\right) = -2$$
+$$2 \\cdot 3 = 6$$
 
-The claim reports $2$, which drops the minus sign. Substituting that claimed product would require the constant term $+2$, not $-2$, so the statement is False.`,
+The claim reports $8$, which would require constant term $8$, not $6$, so the statement is False.`,
+      `**E.** → False
+
+Move everything to one side, factor, and set each factor to zero.
+
+$$x^{2} - 3x - 4 = 0$$
+
+$$(x - 4)(x + 1) = 0$$
+
+The two real roots are $4$ and $-1$. One of them is negative, so they cannot both be positive. The claim fails, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 41,
-    solution_overview: `Five independent quadratic claims: completing the square with a fractional middle term, a second monic quadratic $x^{2} - 6x + 5$, and Vieta on the first.`,
+    solution_overview: `Five independent completing-the-square and factoring claims on different quadratics. Vieta's product on a monic quadratic is the constant term.`,
   },
   {
     id: `math-4-42`,
@@ -3925,12 +3979,12 @@ The claim says $30$ m. The height is $20$ m, which is the maximum, so the statem
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Two ticket prices add to $15$ EUR and multiply to $44$. A clerk reports that the two prices are $4$ EUR and $11$ EUR.`,
-      `Two numbers add to $10$ and multiply to $21$. A clerk says they differ by $4$.`,
+      `Two numbers add to $12$ and multiply to $32$. A clerk says they differ by $4$.`,
       `Two share amounts add to $9$ EUR and multiply to $14$. The treasurer reports that they are $3$ EUR and $6$ EUR.`,
       `Two numbers add to $8$ and multiply to $15$. Increasing each by $1$ and multiplying those increased values is claimed to give $24$.`,
-      `Two numbers add to $10$ and multiply to $21$. The sum of their squares is then claimed to be $58$.`,
+      `Two numbers add to $13$ and multiply to $36$. The sum of their squares is then claimed to be $145$.`,
     ],
-    answer_key: [true, true, false, true, true],
+    answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -3953,15 +4007,15 @@ $$t = \\frac{8}{2} = 4$$
 The prices are $4$ EUR and $11$ EUR. Check: $4 + 11 = 15$ and $4 \\cdot 11 = 44$. That is the claimed pair, so the statement is True.`,
       `**B.** → True
 
-Numbers that add to $10$ and multiply to $21$ are the roots of
+Numbers that add to $12$ and multiply to $32$ are the roots of
 
-$$t^{2} - 10t + 21 = 0$$
+$$t^{2} - 12t + 32 = 0$$
 
-$$(t - 3)(t - 7) = 0$$
+$$(t - 4)(t - 8) = 0$$
 
-so the numbers are $3$ and $7$. Their difference is
+so the numbers are $4$ and $8$. Their difference is
 
-$$7 - 3 = 4$$
+$$8 - 4 = 4$$
 
 The claimed difference is $4$, so the statement is True.`,
       `**C.** → False
@@ -3998,19 +4052,19 @@ $$= 15 + 8 + 1$$
 $$= 24$$
 
 The claimed product of the increased values is $24$, so the statement is True.`,
-      `**E.** → True
+      `**E.** → False
 
-Let the two numbers be $x$ and $y$, with $x + y = 10$ and $xy = 21$. The sum of squares identity is
+Let the two numbers be $x$ and $y$, with $x + y = 13$ and $xy = 36$. The sum of squares identity is
 
 $$x^{2} + y^{2} = (x + y)^{2} - 2xy$$
 
-$$x^{2} + y^{2} = 10^{2} - 2 \\cdot 21$$
+$$x^{2} + y^{2} = 13^{2} - 2 \\cdot 36$$
 
-$$x^{2} + y^{2} = 100 - 42$$
+$$x^{2} + y^{2} = 169 - 72$$
 
-$$x^{2} + y^{2} = 58$$
+$$x^{2} + y^{2} = 97$$
 
-The claimed sum of squares is $58$, so the statement is True.`,
+The claimed sum of squares is $145$, not $97$. The statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 46,
@@ -4169,71 +4223,77 @@ The area is $84$ cm$^{2}$, not $96$ cm$^{2}$, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A parent is $24$ years older than a child, and the product of their present ages is $180$. The child is $6$ years old.`,
-      `A parent is $24$ years older than a child, and the product of their present ages is $180$. The parent is $30$ years old.`,
-      `A child of $6$ and a parent of $30$ will, in $4$ years, have ages whose product is $340$.`,
-      `If a parent is $24$ years older than a child, that age gap stays $24$ years as both grow older.`,
-      `The present ages $30$ and $6$ are in the ratio $5 : 1$.`,
+      `A parent is $20$ years older than a child, and the product of their present ages is $125$. The child is $5$ years old.`,
+      `A parent is $12$ years older than a child, and the product of their present ages is $160$. The parent is $22$ years old.`,
+      `A child is $7$ years old and a parent is $35$ years old. In $3$ years their ages will multiply to $304$.`,
+      `If a parent is $15$ years older than a child, that age gap stays $15$ years as both grow older.`,
+      `A child is $4$ years old and a parent is $24$ years old. Their present ages are in the ratio $5 : 1$.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Let the child's present age be $s$ years. The parent is then $s + 24$, and the product of the ages is $180$:
+Let the child's present age be $s$ years. The parent is then $s + 20$, and the product of the ages is $125$:
 
-$$s(s + 24) = 180$$
+$$s(s + 20) = 125$$
 
-$$s^{2} + 24s - 180 = 0$$
+$$s^{2} + 20s - 125 = 0$$
 
-$$\\Delta = 24^{2} - 4(1)(-180)$$
+$$(s + 25)(s - 5) = 0$$
 
-$$\\Delta = 576 + 720$$
+so $s = -25$ or $s = 5$. An age must be positive, so the child is $5$ years old. Check:
 
-$$\\Delta = 1296 = 36^{2}$$
+$$5 \\cdot 25 = 125$$
 
-$$s = \\frac{-24 \\pm 36}{2}$$
+That is the claimed age, so the statement is True.`,
+      `**B.** → False
 
-$$s = \\frac{12}{2} = 6$$
+Let the child's present age be $s$ years. The parent is $s + 12$, and the product is $160$:
 
-$$s = \\frac{-60}{2} = -30$$
+$$s(s + 12) = 160$$
 
-An age must be positive, so the child is $6$ years old. Check: $6 \\cdot 30 = 180$. That is the claimed age, so the statement is True.`,
-      `**B.** → True
+$$s^{2} + 12s - 160 = 0$$
 
-The parent is $24$ years older than the child. With the child at $6$:
+$$(s + 20)(s - 8) = 0$$
 
-$$6 + 24 = 30$$
+so $s = -20$ or $s = 8$. The child is $8$ years old, so the parent is
 
-The product check is
+$$8 + 12 = 20$$
 
-$$6 \\cdot 30 = 180$$
+years old, not $22$. The claimed parent age does not match, so the statement is False.`,
+      `**C.** → False
 
-The parent is $30$ years old, so the statement is True.`,
-      `**C.** → True
+In $3$ years the child is
 
-In $4$ years the child is $6 + 4 = 10$ and the parent is $30 + 4 = 34$:
+$$7 + 3 = 10$$
 
-$$10 \\cdot 34 = 340$$
+years old and the parent is
 
-That is the claimed product, so the statement is True.`,
+$$35 + 3 = 38$$
+
+years old. Their product is then
+
+$$10 \\cdot 38 = 380$$
+
+not $304$. The claimed product does not match, so the statement is False.`,
       `**D.** → True
 
-After $t$ years the ages are $s + t$ and $(s + 24) + t$. The difference is
+After $t$ years the ages are $s + t$ and $(s + 15) + t$. The difference is
 
-$$(s + 24 + t) - (s + t) = 24$$
+$$(s + 15 + t) - (s + t) = 15$$
 
-The gap stays $24$ years, so the statement is True.`,
-      `**E.** → True
+The gap stays $15$ years, so the statement is True.`,
+      `**E.** → False
 
-The present ages are $30$ and $6$:
+The present ages are $24$ and $4$:
 
-$$\\frac{30}{6} = 5$$
+$$\\frac{24}{4} = 6$$
 
-so the ratio is $5 : 1$. That matches the claim, so the statement is True.`,
+so the ratio is $6 : 1$, not $5 : 1$. The claim does not match the ratio, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 49,
-    solution_overview: `Five independent age-product claims. $s(s + 24) = 180$ recovers child $6$ and parent $30$.`,
+    solution_overview: `Five independent age-product claims. Each story uses its own age gap and product, or a separate age property such as a fixed gap or a ratio check.`,
   },
   {
     id: `math-4-50`,
@@ -4426,55 +4486,87 @@ The two solutions are $2 \\pm \\sqrt{3}$; one is greater than $1$ and the other 
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^{4} - 5x^{2} + 4 = 0$ has four different real solutions.`,
-      `Exactly two of those four solutions are even integers.`,
-      `Four numbers $\\pm 1$ and $\\pm 2$ are claimed to multiply to $4$.`,
-      `The sum of all four roots of $x^{4} - 5x^{2} + 4 = 0$ is $0$.`,
-      `A student claims that all four of those numbers are positive.`,
+      `All four solutions of $x^{4} - 10x^{2} + 9 = 0$ are integers.`,
+      `The equation $x^{4} - 8x^{2} + 15 = 0$ has four different real solutions.`,
+      `The sum of all four roots of $x^{4} + 2x^{2} - 8 = 0$ is $0$.`,
+      `The equation $x^{4} - 3x^{2} + 2 = 0$ has exactly two real solutions.`,
+      `The equation $x^{4} - 13x^{2} + 36 = 0$ has no negative real solutions.`,
     ],
-    answer_key: [true, true, true, true, false],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-The equation is $x^{4} - 5x^{2} + 4 = 0$. Substitute $u = x^{2}$, so $u \\ge 0$:
+The equation is $x^{4} - 10x^{2} + 9 = 0$. Substitute $u = x^{2}$, so $u \\ge 0$:
 
-$$u^{2} - 5u + 4 = 0$$
+$$u^{2} - 10u + 9 = 0$$
 
-$$(u - 4)(u - 1) = 0$$
+$$(u - 9)(u - 1) = 0$$
 
-$$u = 4$$
+$$u = 9$$
 
 or
 
 $$u = 1$$
 
-Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 1$ gives $x = \\pm 1$. Those are four different real numbers, so the statement is True.`,
+Then $x^{2} = 9$ gives $x = \\pm 3$, and $x^{2} = 1$ gives $x = \\pm 1$. All four solutions are integers, so the statement is True.`,
       `**B.** → True
 
-From $x^{2} = 4$ and $x^{2} = 1$, the even real solutions are $2$ and $-2$, so exactly two solutions are even integers, hence the statement is True.`,
+Substitute $u = x^{2}$ in $x^{4} - 8x^{2} + 15 = 0$:
+
+$$u^{2} - 8u + 15 = 0$$
+
+$$(u - 5)(u - 3) = 0$$
+
+$$u = 5$$
+
+or
+
+$$u = 3$$
+
+Then $x = \\pm \\sqrt{5}$ and $x = \\pm \\sqrt{3}$. These are four different real numbers, so the statement is True.`,
       `**C.** → True
-
-The product of the four numbers is
-
-$$(1)(-1)(2)(-2) = 4$$
-
-For a monic degree-$4$ polynomial the constant term equals that product, and here the constant term is $4$. The claimed product is $4$, so the statement is True.`,
-      `**D.** → True
 
 For a monic degree-$4$ polynomial $x^{4} + ax^{3} + \\cdots$, Vieta's sum of roots is $-a$. Here there is no $x^{3}$ term, so $a = 0$ and the sum is $0$.
 
-Check:
+Substitute $u = x^{2}$ in $x^{4} - 5x^{2} + 4 = 0$:
+
+$$u^{2} - 5u + 4 = 0$$
+
+$$(u - 4)(u - 1) = 0$$
+
+Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 1$ gives $x = \\pm 1$. Check:
 
 $$1 + (-1) + 2 + (-2) = 0$$
 
 The sum of all four roots is $0$, so the statement is True.`,
+      `**D.** → False
+
+Substitute $u = x^{2}$ in $x^{4} - 3x^{2} + 2 = 0$:
+
+$$u^{2} - 3u + 2 = 0$$
+
+$$(u - 2)(u - 1) = 0$$
+
+$$u = 2$$
+
+or
+
+$$u = 1$$
+
+Then $x^{2} = 2$ gives $x = \\pm \\sqrt{2}$, and $x^{2} = 1$ gives $x = \\pm 1$. That is four real solutions, not exactly two. The claim is incorrect, so the statement is False.`,
       `**E.** → False
 
-The four roots are $1$, $-1$, $2$, and $-2$. Of these, $-1$ and $-2$ are negative, so not all four are positive, so the statement is False.`,
+Substitute $u = x^{2}$ in $x^{4} - 13x^{2} + 36 = 0$:
+
+$$u^{2} - 13u + 36 = 0$$
+
+$$(u - 4)(u - 9) = 0$$
+
+Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 9$ gives $x = \\pm 3$. The roots include $-2$ and $-3$, which are negative real numbers. The claim of no negative real solutions is incorrect, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 52,
-    solution_overview: `Five independent biquadratic claims. $x^{4} - 5x^{2} + 4 = 0$ becomes $(u - 4)(u - 1) = 0$ in $u = x^{2}$, so the roots are $\\pm 1$ and $\\pm 2$.`,
+    solution_overview: `Five independent biquadratic claims. Substitute $u = x^{2}$ to reduce to a quadratic in $u$, then take square roots. A missing $x^{3}$ term makes the four-root sum zero.`,
   },
   {
     id: `math-4-53`,
@@ -4483,77 +4575,97 @@ The four roots are $1$, $-1$, $2$, and $-2$. Of these, $-1$ and $-2$ are negativ
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle is $14$ cm longer than it is wide, and its area is $240$ cm$^{2}$. The width is $10$ cm.`,
-      `That rectangle has length $24$ cm.`,
-      `The diagonal of a $10$ cm by $24$ cm rectangle is $26$ cm.`,
-      `The perimeter of a $10$ cm by $24$ cm rectangle is $60$ cm.`,
-      `The area check $10 \\cdot 24 = 240$ holds for those sides.`,
+      `A rectangle is $8$ cm longer than it is wide, and its area is $240$ cm$^{2}$. The width is $12$ cm.`,
+      `A rectangle is $5$ cm longer than it is wide, and its area is $84$ cm$^{2}$. Its diagonal is $13$ cm.`,
+      `A rectangle of width $9$ cm and length $16$ cm has perimeter $50$ cm.`,
+      `A rectangle of width $6$ cm whose length is $10$ cm more than its width has area $96$ cm$^{2}$.`,
+      `A right triangle with legs $5$ cm and $12$ cm has area $30$ cm$^{2}$.`,
     ],
-    answer_key: [true, true, true, false, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Let the width be $w$ cm. Then the length is $w + 14$ cm and the area is $240$ cm$^{2}$:
+Let the width be $w$ cm. Then the length is $w + 8$ cm and the area is $240$ cm$^{2}$:
 
-$$w(w + 14) = 240$$
+$$w(w + 8) = 240$$
 
-$$w^{2} + 14w - 240 = 0$$
+$$w^{2} + 8w - 240 = 0$$
 
-$$\\Delta = 14^{2} - 4(1)(-240)$$
+$$\\Delta = 8^{2} - 4(1)(-240)$$
 
-$$\\Delta = 196 + 960$$
+$$\\Delta = 64 + 960$$
 
-$$\\Delta = 1156 = 34^{2}$$
+$$\\Delta = 1024 = 32^{2}$$
 
-$$w = \\frac{-14 \\pm 34}{2}$$
+$$w = \\frac{-8 \\pm 32}{2}$$
 
-$$w = \\frac{20}{2} = 10$$
+$$w = \\frac{24}{2} = 12$$
 
-$$w = \\frac{-48}{2} = -24$$
+$$w = \\frac{-40}{2} = -20$$
 
-A width must be positive, so $w = 10$ cm. Check: $10 \\cdot 24 = 240$. That is the claimed width, so the statement is True.`,
-      `**B.** → True
+A width must be positive, so $w = 12$ cm. Check: $12 \\cdot 20 = 240$. That is the claimed width, so the statement is True.`,
+      `**B.** → False
 
-The length is $14$ cm more than the width $10$ cm:
+Let the width be $w$ cm. Then the length is $w + 5$ cm and the area is $84$ cm$^{2}$:
 
-$$10 + 14 = 24$$
+$$w(w + 5) = 84$$
 
-The length is $24$ cm, so the statement is True.`,
+$$w^{2} + 5w - 84 = 0$$
+
+$$(w + 12)(w - 7) = 0$$
+
+A width must be positive, so $w = 7$ cm. The length is then
+
+$$7 + 5 = 12$$
+
+cm. The diagonal $d$ satisfies Pythagoras:
+
+$$d^{2} = 7^{2} + 12^{2}$$
+
+$$d^{2} = 49 + 144$$
+
+$$d^{2} = 193$$
+
+$$d = \\sqrt{193}$$
+
+which is not $13$ cm. The claimed $13$ cm would be the hypotenuse of a $5$-$12$-$13$ triangle, not of $7$ by $12$, so the statement is False.`,
       `**C.** → True
 
-The diagonal $d$ of a rectangle satisfies Pythagoras:
+The perimeter of a rectangle is twice the sum of length and width.
 
-$$d^{2} = 10^{2} + 24^{2}$$
+$$P = 2(9 + 16)$$
 
-$$d^{2} = 100 + 576$$
+$$P = 2 \\cdot 25$$
 
-$$d^{2} = 676$$
+$$P = 50$$
 
-$$d = 26$$
+The perimeter is $50$ cm. The claim is that same figure, so the statement is True.`,
+      `**D.** → True
 
-because $26^{2} = 676$ and a length is positive. The claimed diagonal is $26$ cm, so the statement is True.`,
-      `**D.** → False
+The length is $10$ cm more than the width $6$ cm:
 
-The perimeter is twice the sum of the sides:
+$$6 + 10 = 16$$
 
-$$P = 2(10 + 24)$$
+cm. The area is the product of the sides:
 
-$$P = 2 \\cdot 34$$
+$$6 \\cdot 16 = 96$$
 
-$$P = 68$$
-
-The claim says $60$ cm. The perimeter is $68$ cm, so the statement is False.`,
+That equals the claimed area $96$ cm$^{2}$, so the statement is True.`,
       `**E.** → True
 
-The area check is the product of the sides:
+The area of a right triangle is half the product of its legs.
 
-$$10 \\cdot 24 = 240$$
+$$A = \\frac{1}{2} \\cdot 5 \\cdot 12$$
 
-That equals the given area $240$ cm$^{2}$, so the statement is True.`,
+$$A = \\frac{60}{2}$$
+
+$$A = 30$$
+
+The area is $30$ cm$^{2}$. The claim is that same figure, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 53,
-    solution_overview: `Five independent rectangle claims. Width $w$ and length $w + 14$ with area $240$ recover $10$ by $24$, a $10$-$24$-$26$ right triangle on the diagonal.`,
+    solution_overview: `Five independent rectangle and Pythagoras claims. Width $w$ and length $w + k$ with given area recover the sides by factoring or the quadratic formula; perimeter, area, and diagonal follow.`,
   },
   {
     id: `math-4-54`,
@@ -4669,69 +4781,91 @@ of a job per hour. That is the claimed rate, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x + \\dfrac{6}{x} = 5$ with $x \\neq 0$ has exactly one real solution.`,
-      `The equation $x + \\frac{6}{x} = 5$ has two positive real solutions.`,
-      `Clearing $x + \\frac{6}{x} = 5$ produces $x^{2} - 5x + 6 = 0$.`,
-      `After clearing a reciprocal equation whose solutions are $2$ and $3$, a student reports that the product of the solutions is $5$.`,
-      `The two real solutions of $x + \\dfrac{6}{x} = 5$ add to $5$.`,
+      `The equation $x + \\dfrac{4}{x} = 4$ with $x \\neq 0$ has exactly one real solution.`,
+      `The equation $x + \\dfrac{3}{x} = 4$ with $x \\neq 0$ has two positive real solutions.`,
+      `Clearing $x + \\dfrac{8}{x} = 6$ with $x \\neq 0$ produces $x^{2} - 6x + 8 = 0$.`,
+      `For $x + \\dfrac{2}{x} = 3$ with $x \\neq 0$, the product of the two cleared solutions is $3$.`,
+      `The equation $x + \\dfrac{12}{x} = 7$ with $x \\neq 0$ has no real solutions.`,
     ],
-    answer_key: [false, true, true, false, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
-The sentence is $x + \\frac{6}{x} = 5$ with $x \\neq 0$. Multiply through by $x$:
+The equation is $x + \\frac{4}{x} = 4$ with $x \\neq 0$. Multiply through by $x$:
 
-$$x^{2} + 6 = 5x$$
+$$x^{2} + 4 = 4x$$
 
-$$x^{2} - 5x + 6 = 0$$
+$$x^{2} - 4x + 4 = 0$$
 
-$$(x - 2)(x - 3) = 0$$
+$$(x - 2)^{2} = 0$$
 
-so $x = 2$ or $x = 3$. Both are real and both are allowed (neither is $0$).
+The discriminant is
 
-Check $x = 2$:
+$$\\Delta = 16 - 16 = 0$$
 
-$$2 + \\frac{6}{2} = 2 + 3 = 5$$
+so there is exactly one real solution, the repeated root $x = 2$. Check:
 
-Check $x = 3$:
+$$2 + \\frac{4}{2} = 4$$
 
-$$3 + \\frac{6}{3} = 3 + 2 = 5$$
-
-There are two real solutions, not exactly one, so the statement is False.`,
+The claim matches that count, so the statement is True.`,
       `**B.** → True
 
-The cleared equation $x^{2} - 5x + 6 = 0$ factors as $(x - 2)(x - 3) = 0$, so the two real solutions are $2$ and $3$. Both are positive and both check in the original reciprocal equation, so the statement is True.`,
+Clear $x + \\frac{3}{x} = 4$ with $x \\neq 0$:
+
+$$x^{2} + 3 = 4x$$
+
+$$x^{2} - 4x + 3 = 0$$
+
+$$(x - 1)(x - 3) = 0$$
+
+The two real solutions are $1$ and $3$. Both are positive and both check in the original reciprocal equation, so the statement is True.`,
       `**C.** → True
 
-Start from $x + \\frac{6}{x} = 5$ with $x \\neq 0$. Multiply through by $x$ to clear the denominator:
+Start from $x + \\frac{8}{x} = 6$ with $x \\neq 0$. Multiply through by $x$ to clear the denominator:
 
-$$x^{2} + 6 = 5x$$
+$$x^{2} + 8 = 6x$$
 
-$$x^{2} - 5x + 6 = 0$$
+$$x^{2} - 6x + 8 = 0$$
 
 That is the claimed quadratic, so the statement is True.`,
       `**D.** → False
 
-For $x^{2} - 5x + 6 = 0$, Vieta's product of roots is the constant term $6$:
+Clear $x + \\frac{2}{x} = 3$ with $x \\neq 0$:
 
-$$2 \\cdot 3 = 6$$
+$$x^{2} + 2 = 3x$$
 
-The claim reports $5$. Five is the sum of the roots, not the product:
+$$x^{2} - 3x + 2 = 0$$
 
-$$2 + 3 = 5$$
+For this monic quadratic, Vieta's product of roots is the constant term $2$:
 
-The product is $6$, not $5$, so the statement is False.`,
-      `**E.** → True
+$$(x - 1)(x - 2) = 0$$
 
-For $x^{2} - 5x + 6 = 0$, Vieta's sum of roots is the coefficient $5$ (the linear coefficient with sign flipped):
+$$1 \\cdot 2 = 2$$
 
-$$2 + 3 = 5$$
+The claim reports $3$. Three is the sum of the roots, not the product:
 
-The two numbers add to $5$, so the statement is True.`,
+$$1 + 2 = 3$$
+
+The product is $2$, not $3$, so the statement is False.`,
+      `**E.** → False
+
+Clear $x + \\frac{12}{x} = 7$ with $x \\neq 0$:
+
+$$x^{2} + 12 = 7x$$
+
+$$x^{2} - 7x + 12 = 0$$
+
+$$(x - 3)(x - 4) = 0$$
+
+The discriminant is
+
+$$\\Delta = 49 - 48 = 1 > 0$$
+
+so there are two distinct real solutions, $3$ and $4$. Both check in the original equation. The claim of no real solutions is incorrect, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 55,
-    solution_overview: `Five independent reciprocal-equation claims. Clearing $x + \\frac{6}{x} = 5$ produces $x^{2} - 5x + 6 = 0$, with roots $2$ and $3$.`,
+    solution_overview: `Five independent reciprocal-equation claims. Clearing produces a quadratic; the discriminant and Vieta's formulas decide root count, sign, sum, and product.`,
   },
   {
     id: `math-4-56`,
@@ -4850,7 +4984,7 @@ Two distinct real roots, so the statement is True.`,
       `Three litres of oil, poured as equal shares, fill a jerrycan if each share is one-fourth of the jerrycan. Then the jerrycan holds $12$ litres.`,
       `The equation $\\frac{3}{x} = \\frac{1}{4}$ has a unique real solution that is divisible by $6$.`,
       `Five litres poured as equal shares fill a can if each share is the whole can. A student reports that the can holds $3$ litres.`,
-      `The equation $\\frac{3}{x} = \\frac{1}{4}$ has a unique real solution, and that solution is positive.`,
+      `The equation $\\dfrac{4}{x + 1} = \\dfrac{2}{3}$ has a unique real solution, and that solution is positive.`,
       `A student claims that a negative twelve-litre can also works when three litres fill one-fourth of the can.`,
     ],
     answer_key: [true, true, false, true, false],
@@ -4891,13 +5025,23 @@ $$\\frac{5}{3} \\neq 1$$
 so the statement is False.`,
       `**D.** → True
 
-Cross-multiply the equation $\\frac{3}{x} = \\frac{1}{4}$ on its domain ($x \\neq 0$):
+First exclude the hole $x = -1$, which zeros the denominator $x + 1$. Then cross-multiply:
 
-$$3 \\cdot 4 = 1 \\cdot x$$
+$$\\frac{4}{x + 1} = \\frac{2}{3}$$
 
-$$12 = x$$
+$$3 \\cdot 4 = 2(x + 1)$$
 
-So the unique real solution is $x = 12$, and it is positive, hence the statement is True.`,
+$$12 = 2x + 2$$
+
+$$10 = 2x$$
+
+$$x = 5$$
+
+The value $x = 5$ is not the hole $-1$. Check:
+
+$$\\frac{4}{5 + 1} = \\frac{4}{6} = \\frac{2}{3}$$
+
+The unique real solution is $x = 5$, and it is positive, so the statement is True.`,
       `**E.** → False
 
 A negative capacity $x = -12$ is not the hole $x = 0$, so the expression is defined, but
@@ -4908,7 +5052,7 @@ and $-\\frac{1}{4} \\neq \\frac{1}{4}$. The two sides of $\\frac{3}{x} = \\frac{
     ],
     difficulty_level: `2/5`,
     sort_order: 57,
-    solution_overview: `Five independent rational claims. Cross-multiply after excluding $x = 0$. The jerrycan story recovers $x = 12$. A second equation $\\frac{5}{x} = 1$ is a trap.`,
+    solution_overview: `Five independent rational claims. Cross-multiply after excluding values that zero a denominator. Each statement uses a different proportion or capacity story.`,
   },
   {
     id: `math-4-58`,
@@ -5127,99 +5271,101 @@ The original area is $13$ m$^{2}$, so the statement is False.`,
   {
     id: `math-4-61`,
     case_id: `MATH 4.61`,
-    title: `Five units from 3 on the number line`,
+    title: `Five independent absolute-value distance equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A number $5$ units from $3$ on the number line is $8$ or $-2$.`,
-      `The equation $\\lvert x - 3 \\rvert = 5$ has both of those solutions.`,
-      `The only number $5$ units from $3$ is $8$.`,
-      `The equation $\\lvert x \\rvert = 0$ has no solution.`,
-      `A student claims that a distance on the number line can equal $-2$, and that two real points then work.`,
+      `The equation $\\lvert x - 7 \\rvert = 4$ has exactly two real solutions.`,
+      `The equation $\\lvert x + 2 \\rvert = 5$ has a unique real solution that is positive.`,
+      `The equation $\\lvert 2x - 6 \\rvert = 10$ has a negative integer solution.`,
+      `The equation $\\lvert x - 1 \\rvert = -3$ has no real solution.`,
+      `The equation $\\lvert 3x + 1 \\rvert = 7$ has exactly one real solution.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Distance on the number line is the absolute value. A point $x$ that is $5$ units from $3$ satisfies
+Distance on the number line is the absolute value. A positive right-hand side splits into two linear cases:
 
-$$\\lvert x - 3 \\rvert = 5$$
-
-For a positive right-hand side the definition splits into two linear cases.
+$$\\lvert x - 7 \\rvert = 4$$
 
 First case:
 
-$$x - 3 = 5$$
+$$x - 7 = 4$$
 
-$$x = 8$$
+$$x = 11$$
 
 Second case:
 
-$$x - 3 = -5$$
+$$x - 7 = -4$$
 
-$$x = -2$$
+$$x = 3$$
 
-The recovered numbers are $8$ and $-2$: five units to the right of $3$, and five units to the left of $3$.
+The recovered points are $11$ and $3$, four units from $7$ on either side. That is exactly two real solutions, so the statement is True.`,
+      `**B.** → False
 
-The claim lists both of those points, so the statement is True.`,
-      `**B.** → True
+The equation $\\lvert x + 2 \\rvert = 5$ has a positive right-hand side, so it splits into two cases:
 
-The equation $\\lvert x - 3 \\rvert = 5$ is the same distance condition as in A. Absolute value equal to $5$ splits into two cases:
+$$x + 2 = 5$$
 
-$$x - 3 = 5$$
+$$x = 3$$
+
+and
+
+$$x + 2 = -5$$
+
+$$x = -7$$
+
+The recovered values are $3$ and $-7$. Only $3$ is positive, but the equation has two real solutions, not a unique one. The statement is False.`,
+      `**C.** → True
+
+The equation $\\lvert 2x - 6 \\rvert = 10$ splits into two cases:
+
+$$2x - 6 = 10$$
+
+$$2x = 16$$
 
 $$x = 8$$
 
 and
 
-$$x - 3 = -5$$
+$$2x - 6 = -10$$
+
+$$2x = -4$$
 
 $$x = -2$$
 
-Both recovered values satisfy the original, because
+The recovered values are $8$ and $-2$. The value $-2$ is a negative integer solution, so the statement is True.`,
+      `**D.** → True
 
-$$\\lvert 8 - 3 \\rvert = 5$$
+By definition $\\lvert x - 1 \\rvert \\ge 0$ for every real $x$. The equation
+
+$$\\lvert x - 1 \\rvert = -3$$
+
+asks an absolute value to equal a negative number, which never happens. There is no real solution, so the statement is True.`,
+      `**E.** → False
+
+The equation $\\lvert 3x + 1 \\rvert = 7$ has a positive right-hand side, so it splits into two cases:
+
+$$3x + 1 = 7$$
+
+$$3x = 6$$
+
+$$x = 2$$
 
 and
 
-$$\\lvert -2 - 3 \\rvert = 5$$
+$$3x + 1 = -7$$
 
-The claim says the equation has both of those solutions, so the statement is True.`,
-      `**C.** → False
+$$3x = -8$$
 
-The same split as above recovers two points, $x = 8$ and $x = -2$, not only $x = 8$.
+$$x = -\\frac{8}{3}$$
 
-The claimed unique value $8$ does sit $5$ units from $3$:
-
-$$\\lvert 8 - 3 \\rvert = 5$$
-
-But $-2$ is equally far:
-
-$$\\lvert -2 - 3 \\rvert = 5$$
-
-Distance does not pick a side, so the statement is False.`,
-      `**D.** → False
-
-Absolute value is zero only at zero. Substitute $x = 0$:
-
-$$\\lvert 0 \\rvert = 0$$
-
-So $x = 0$ is a real solution, and it is the only one, because $\\lvert x \\rvert > 0$ whenever $x \\neq 0$.
-
-The claim says there is no solution, so the statement is False.`,
-      `**E.** → False
-
-By definition $\\lvert x \\rvert \\ge 0$ for every real $x$. The equation
-
-$$\\lvert x \\rvert = -2$$
-
-asks an absolute value to equal a negative number, which never happens. There is no real $x$ to plug in.
-
-A distance on the number line cannot be $-2$, so the statement is False.`,
+The recovered values are $2$ and $-\\frac{8}{3}$, so there are two real solutions, not exactly one. The statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 61,
-    solution_overview: `Five independent claims about $\\lvert x - a \\rvert = b$. For $b > 0$ there are two points. A negative right-hand side is impossible. Zero is allowed: $\\lvert x \\rvert = 0$ has $x = 0$.`,
+    solution_overview: `Five independent absolute-value distance equations. For $\\lvert x - a \\rvert = b$ with $b > 0$ there are two points. A negative right-hand side is impossible.`,
   },
   {
     id: `math-4-62`,
@@ -5303,115 +5449,47 @@ That is the cleared equation named in the claim, and it is valid precisely becau
   {
     id: `math-4-63`,
     case_id: `MATH 4.63`,
-    title: `Five separate courtyard and radical stories`,
+    title: `Five independent radical equations from square roots`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The radical equation $\\sqrt{x + 7} = 5$ has a unique real solution, and that solution is an even integer.`,
-      `A square courtyard of side $5$ m has area $25$ m$^{2}$.`,
-      `The radical equation $\\sqrt{2x + 1} = 5$ has a unique real solution, and that solution is divisible by $3$.`,
-      `The radical equation $\\sqrt{x + 7} = 5$ has a negative real solution.`,
-      `After squaring $\\sqrt{x + 7} = 5$, which is allowed because both sides are nonnegative, you obtain $x + 7 = 25$.`,
+      `The radical equation $\\sqrt{3x - 2} = 4$ has a unique real solution, and that solution is an integer.`,
+      `The radical equation $\\sqrt{x + 12} = 8$ has a unique real solution, and that solution is an odd integer.`,
+      `The radical equation $\\sqrt{5x + 1} = 6$ has a negative real solution.`,
+      `The radical equation $\\sqrt{2x + 9} = 7$ has a unique real solution divisible by $5$.`,
     ],
-    answer_key: [true, true, true, false, true],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-A square of side $5$ m has area $25$ m$^{2}$, which is $7$ m$^{2}$ more than a stored area $x$:
-
-$$\\sqrt{x + 7} = 5$$
-
-The right-hand side $5$ is nonnegative, so isolating and squaring is valid. Square both sides:
+The right-hand side of $\\sqrt{x + 7} = 5$ is nonnegative, so squaring is valid. Require $x + 7 \\ge 0$, then square both sides:
 
 $$x + 7 = 25$$
 
 $$x = 18$$
 
-The recovered stored area is $18$ m$^{2}$. Substitute back into the original:
+The recovered value is $18$, which is an even integer. Substitute back into the original:
 
 $$\\sqrt{18 + 7} = \\sqrt{25} = 5$$
 
-The candidate $x = 18$ survives, and it is the claimed stored number, so the statement is True.`,
+The candidate survives, so the statement is True.`,
       `**B.** → True
 
-The area of a square is the side squared:
+The right-hand side of $\\sqrt{3x - 2} = 4$ is nonnegative, so squaring is valid. Require $3x - 2 \\ge 0$, then square:
 
-$$5^{2} = 25$$
+$$3x - 2 = 16$$
 
-A courtyard of side $5$ m has area $25$ m$^{2}$. That is the claimed area, so the statement is True.`,
-      `**C.** → True
+$$3x = 18$$
 
-Twice a length plus $1$ m, under a square root, equals $5$ m:
+$$x = 6$$
 
-$$\\sqrt{2x + 1} = 5$$
+The recovered value is $6$, an integer. Substitute back:
 
-The right-hand side $5$ is nonnegative, so squaring is valid:
+$$\\sqrt{3 \\cdot 6 - 2} = \\sqrt{16} = 4$$
 
-$$2x + 1 = 25$$
-
-$$2x = 24$$
-
-$$x = 12$$
-
-The recovered length is $12$ m. Substitute back:
-
-$$\\sqrt{2 \\cdot 12 + 1} = \\sqrt{25} = 5$$
-
-The candidate survives, and it is the claimed length, so the statement is True.`,
-      `**D.** → False
-
-Isolating and squaring $\\sqrt{x + 7} = 5$ recovers $x = 18$, not $x = -18$. Plug the claimed value into the original:
-
-$$\\sqrt{-18 + 7} = \\sqrt{-11}$$
-
-The principal square root is not defined for a negative inside, so $x = -18$ is not a solution, so the statement is False.`,
-      `**E.** → True
-
-Both sides of $\\sqrt{x + 7} = 5$ are nonnegative, because a principal square root is never negative and $5 \\ge 0$. Squaring is therefore valid and produces
-
-$$x + 7 = 25$$
-
-That is the equation named in the claim, so the statement is True.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 63,
-    solution_overview: `Five independent radical claims. $\\sqrt{x + 7} = 5$ recovers $x = 18$. A second radical $\\sqrt{2x + 1} = 5$ recovers $x = 12$.`,
-  },
-  {
-    id: `math-4-64`,
-    case_id: `MATH 4.64`,
-    title: `Five separate surveyor and isolate-and-square stories`,
-    subsection: `4.3`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `A surveyor records that the square root of four times a distance plus $5$ m equals $7$ m. The surveyor reports that the distance is $11$ m.`,
-      `Squaring both sides of $\\sqrt{x + 12} = 8$ is allowed because $8$ is nonnegative, and it produces an even integer solution.`,
-      `A second surveyor records that the square root of four times a distance plus $5$ m equals $7$ m, and reports that the distance is $6$ m.`,
-      `The radical equation $\\sqrt{4x + 5} = 7$ has an odd integer solution.`,
-      `A principal square root of four times a distance plus $5$ m is set equal to $-7$. A student claims this has the same real solution as when the right-hand side is $7$.`,
-    ],
-    answer_key: [true, true, false, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The recorded radical equation is
-
-$$\\sqrt{4x + 5} = 7$$
-
-The right-hand side $7$ is nonnegative, so isolating and squaring is valid:
-
-$$4x + 5 = 49$$
-
-$$4x = 44$$
-
-$$x = 11$$
-
-The recovered distance is $11$ m. Substitute back:
-
-$$\\sqrt{4 \\cdot 11 + 5} = \\sqrt{49} = 7$$
-
-The candidate survives, and it is the claimed distance, so the statement is True.`,
-      `**B.** → True
+The candidate survives, so the statement is True.`,
+      `**C.** → False
 
 The right-hand side of $\\sqrt{x + 12} = 8$ is nonnegative, so squaring is valid:
 
@@ -5419,44 +5497,120 @@ $$x + 12 = 64$$
 
 $$x = 52$$
 
-The recovered value is $52$. Substitute back:
+The recovered value is $52$, which is an even integer, not an odd integer. The claim about parity is wrong, so the statement is False.`,
+      `**D.** → False
 
-$$\\sqrt{52 + 12} = \\sqrt{64} = 8$$
+The right-hand side of $\\sqrt{5x + 1} = 6$ is nonnegative, so squaring is valid:
 
-The candidate survives, and the recovered value is an even integer, so the statement is True.`,
+$$5x + 1 = 36$$
+
+$$5x = 35$$
+
+$$x = 7$$
+
+The recovered value is $7$, a positive integer. There is no negative real solution, so the statement is False.`,
+      `**E.** → True
+
+The right-hand side of $\\sqrt{2x + 9} = 7$ is nonnegative, so squaring is valid:
+
+$$2x + 9 = 49$$
+
+$$2x = 40$$
+
+$$x = 20$$
+
+The recovered value is $20$, which is divisible by $5$. Substitute back:
+
+$$\\sqrt{2 \\cdot 20 + 9} = \\sqrt{49} = 7$$
+
+The candidate survives, so the statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 63,
+    solution_overview: `Five independent radical equations. $\\sqrt{x + 7} = 5$ recovers $x = 18$. $\\sqrt{3x - 2} = 4$ recovers $x = 6$. A principal square root never yields a negative solution.`,
+  },
+  {
+    id: `math-4-64`,
+    case_id: `MATH 4.64`,
+    title: `Five independent square-root equations`,
+    subsection: `4.3`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The radical equation $\\sqrt{4x + 5} = 7$ has a unique real solution, and that solution is an odd integer.`,
+      `The radical equation $\\sqrt{x + 3} = 6$ has a unique real solution greater than $30$.`,
+      `The radical equation $\\sqrt{9x - 5} = 10$ has a unique real solution that is an even integer.`,
+      `The radical equation $\\sqrt{x + 20} = 9$ has exactly two real solutions.`,
+      `The radical equation $\\sqrt{6x + 1} = 5$ has a unique real solution that is a multiple of $4$.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The right-hand side of $\\sqrt{4x + 5} = 7$ is nonnegative, so squaring is valid:
+
+$$4x + 5 = 49$$
+
+$$4x = 44$$
+
+$$x = 11$$
+
+The recovered value is $11$, an odd integer. Substitute back:
+
+$$\\sqrt{4 \\cdot 11 + 5} = \\sqrt{49} = 7$$
+
+The candidate survives, so the statement is True.`,
+      `**B.** → True
+
+The right-hand side of $\\sqrt{x + 3} = 6$ is nonnegative, so squaring is valid:
+
+$$x + 3 = 36$$
+
+$$x = 33$$
+
+The recovered value is $33$, which is greater than $30$. Substitute back:
+
+$$\\sqrt{33 + 3} = \\sqrt{36} = 6$$
+
+The candidate survives, so the statement is True.`,
       `**C.** → False
 
-The same isolate-and-square as in A recovers $x = 11$, not $x = 6$. Plug the claimed distance $6$ m into the original:
+The right-hand side of $\\sqrt{9x - 5} = 10$ is nonnegative, so squaring is valid:
 
-$$\\sqrt{4 \\cdot 6 + 5} = \\sqrt{29}$$
+$$9x - 5 = 100$$
 
-and $\\sqrt{29} \\neq 7$, because $7^{2} = 49 \\neq 29$.
+$$9x = 105$$
 
-The recovered distance is $11$ m, so the statement is False.`,
-      `**D.** → True
+$$x = \\frac{35}{3}$$
 
-Substitute the recovered distance $x = 11$ into the inside, then take the principal square root:
+The recovered value is $\\frac{35}{3}$, which is not an integer and therefore not an even integer. The statement is False.`,
+      `**D.** → False
 
-$$4 \\cdot 11 + 5 = 49$$
+The right-hand side of $\\sqrt{x + 20} = 9$ is nonnegative, so squaring is valid:
 
-$$\\sqrt{49} = 7$$
+$$x + 20 = 81$$
 
-The recovered solution is an odd integer, so the statement is True.`,
-      `**E.** → False
+$$x = 61$$
 
-A principal square root is never negative. The equation
+The recovered value is $61$, a single real number. A principal square root equation of this form has at most one real solution, not exactly two, so the statement is False.`,
+      `**E.** → True
 
-$$\\sqrt{4x + 5} = -7$$
+The right-hand side of $\\sqrt{6x + 1} = 5$ is nonnegative, so squaring is valid:
 
-has no real solution. Squaring would again produce $x = 11$, but that candidate is extra:
+$$6x + 1 = 25$$
 
-$$\\sqrt{4 \\cdot 11 + 5} = \\sqrt{49} = 7 \\neq -7$$
+$$6x = 24$$
 
-The two right-hand sides $7$ and $-7$ do not share a real solution, so the statement is False.`,
+$$x = 4$$
+
+The recovered value is $4$, which is a multiple of $4$. Substitute back:
+
+$$\\sqrt{6 \\cdot 4 + 1} = \\sqrt{25} = 5$$
+
+The candidate survives, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 64,
-    solution_overview: `Five independent radical claims. $\\sqrt{4x + 5} = 7$ yields $x = 11$. A second square $\\sqrt{x + 12} = 8$ yields $x = 52$. A negative right-hand side is empty.`,
+    solution_overview: `Five independent square-root equations. $\\sqrt{4x + 5} = 7$ recovers $x = 11$. $\\sqrt{x + 3} = 6$ recovers $x = 33$. $\\sqrt{6x + 1} = 5$ recovers $x = 4$.`,
   },
   {
     id: `math-4-65`,
@@ -5895,72 +6049,21 @@ asks an absolute value to equal a negative number. There is no real solution, so
   {
     id: `math-4-69`,
     case_id: `MATH 4.69`,
-    title: `Five radical and absolute claims, extras included`,
+    title: `Five radical equations with extraneous-root checks`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\sqrt{2x + 1} = x - 1$ has a real solution greater than $3$.`,
-      `The equation $\\sqrt{x + 3} = x - 3$ has a real solution less than $3$.`,
-      `The equation $\\sqrt{4x + 5} = 7$ has an integer real solution.`,
-      `The equation $\\sqrt{2x + 1} = x - 1$ has two real solutions.`,
-      `Because a principal square root cannot equal a negative number, an isolated right-hand side of $2$ minus the unknown has only the candidates that already lie where that side is nonnegative, and exactly one of the squared-equation roots survives.`,
+      `The equation $\\sqrt{2x + 1} = x - 1$ has exactly one real solution.`,
+      `The equation $\\sqrt{x + 3} = x - 3$ has exactly two real solutions.`,
+      `The equation $\\sqrt{x + 1} = 3 - x$ has exactly one real solution.`,
+      `The equation $\\sqrt{3x + 4} = x - 2$ has a real solution greater than $5$.`,
+      `The equation $\\sqrt{x - 2} = 4 - x$ has exactly two real solutions.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The sentence is a square root equal to one less than the unknown:
-
-$$\\sqrt{2x + 1} = x - 1$$
-
-A principal square root is never negative, so the domain needs $2x + 1 \\ge 0$ and $x - 1 \\ge 0$, hence $x \\ge 1$. Substitute the claimed value $x = 4$, which lies in that domain:
-
-$$\\sqrt{2 \\cdot 4 + 1} = \\sqrt{9} = 3$$
-
-$$4 - 1 = 3$$
-
-Both sides equal $3$, so $x = 4$ satisfies the original, so the statement is True.`,
-      `**B.** → False
-
-For $\\sqrt{x + 3} = x - 3$ a principal square root is never negative, so the domain needs $x + 3 \\ge 0$ and $x - 3 \\ge 0$, hence $x \\ge 3$. Isolate and square:
-
-$$x + 3 = (x - 3)^{2}$$
-
-$$x + 3 = x^{2} - 6x + 9$$
-
-$$0 = x^{2} - 7x + 6$$
-
-$$0 = (x - 1)(x - 6)$$
-
-The squared equation produces $x = 1$ and $x = 6$. The candidate $x = 1$ lies outside $x \\ge 3$. Plug it into the original:
-
-$$\\sqrt{1 + 3} = 2$$
-
-$$1 - 3 = -2$$
-
-and $2 \\neq -2$. Only $x = 6$ survives:
-
-$$\\sqrt{6 + 3} = 3 = 6 - 3$$
-
-The claim keeps the extra root $x = 1$, so the statement is False.`,
-      `**C.** → True
-
-The right-hand side of $\\sqrt{4x + 5} = 7$ is nonnegative, so squaring is valid:
-
-$$4x + 5 = 49$$
-
-$$4x = 44$$
-
-$$x = 11$$
-
-The recovered value is $11$. Substitute back:
-
-$$\\sqrt{4 \\cdot 11 + 5} = \\sqrt{49} = 7$$
-
-The candidate survives, so the statement is True.`,
-      `**D.** → False
-
-The same isolate-and-square as in A, on $\\sqrt{2x + 1} = x - 1$, must be checked against $x \\ge 1$. Squaring produces
+A principal square root is never negative, so the domain needs $2x + 1 \\ge 0$ and $x - 1 \\ge 0$, hence $x \\ge 1$. Isolate and square:
 
 $$2x + 1 = (x - 1)^{2}$$
 
@@ -5970,32 +6073,83 @@ $$0 = x^{2} - 4x$$
 
 $$0 = x(x - 4)$$
 
-The candidates are $x = 0$ and $x = 4$. Plug the claimed extra $x = 0$:
+The candidates are $x = 0$ and $x = 4$. The value $x = 0$ lies outside $x \\ge 1$, so it is extra. The value $x = 4$ satisfies the original:
 
-$$\\sqrt{0 + 1} = 1$$
+$$\\sqrt{2 \\cdot 4 + 1} = 3$$
 
-$$0 - 1 = -1$$
+$$4 - 1 = 3$$
 
-and $1 \\neq -1$. Only $x = 4$ lies in $x \\ge 1$ and survives. Zero is extra, so the statement is False.`,
-      `**E.** → True
+Exactly one real solution survives, so the statement is True.`,
+      `**B.** → False
 
-For $\\sqrt{x - 1} = 2 - x$ a principal square root is never negative, so both $x - 1 \\ge 0$ and $2 - x \\ge 0$. The domain is $1 \\le x \\le 2$. Isolate and square:
+A principal square root is never negative, so the domain needs $x + 3 \\ge 0$ and $x - 3 \\ge 0$, hence $x \\ge 3$. Isolate and square:
 
-$$x - 1 = (2 - x)^{2}$$
+$$x + 3 = (x - 3)^{2}$$
 
-$$x - 1 = 4 - 4x + x^{2}$$
+$$0 = x^{2} - 7x + 6$$
 
-$$0 = x^{2} - 5x + 5$$
+$$0 = (x - 1)(x - 6)$$
 
-$$x = \\frac{5 \\pm \\sqrt{5}}{2}$$
+The candidates are $x = 1$ and $x = 6$. The value $x = 1$ lies outside $x \\ge 3$, so it is extra. Only $x = 6$ survives:
 
-The larger candidate $\\frac{5 + \\sqrt{5}}{2}$ is greater than $2$, so $2 - x < 0$ there and it is extra. The smaller candidate $\\frac{5 - \\sqrt{5}}{2}$ lies in $[1, 2]$ and is the only one that can survive.
+$$\\sqrt{6 + 3} = 3 = 6 - 3$$
 
-Exactly one of the squared-equation roots survives, so the statement is True.`,
+There is exactly one real solution, not two, so the statement is False.`,
+      `**C.** → True
+
+A principal square root is never negative, so both $x + 1 \\ge 0$ and $3 - x \\ge 0$. The domain is $-1 \\le x \\le 3$. Isolate and square:
+
+$$x + 1 = (3 - x)^{2}$$
+
+$$x + 1 = 9 - 6x + x^{2}$$
+
+$$0 = x^{2} - 7x + 8$$
+
+$$x = \\frac{7 \\pm \\sqrt{17}}{2}$$
+
+The larger candidate $\\frac{7 + \\sqrt{17}}{2}$ exceeds $3$, so $3 - x < 0$ there and it is extra. The smaller candidate $\\frac{7 - \\sqrt{17}}{2}$ lies in $[-1, 3]$ and survives in the original.
+
+Exactly one real solution survives, so the statement is True.`,
+      `**D.** → True
+
+A principal square root is never negative, so the domain needs $3x + 4 \\ge 0$ and $x - 2 \\ge 0$, hence $x \\ge 2$. Isolate and square:
+
+$$3x + 4 = (x - 2)^{2}$$
+
+$$3x + 4 = x^{2} - 4x + 4$$
+
+$$0 = x^{2} - 7x$$
+
+$$0 = x(x - 7)$$
+
+The candidates are $x = 0$ and $x = 7$. The value $x = 0$ lies outside $x \\ge 2$, so it is extra. The value $x = 7$ satisfies the original:
+
+$$\\sqrt{3 \\cdot 7 + 4} = 5$$
+
+$$7 - 2 = 5$$
+
+The surviving solution $7$ is greater than $5$, so the statement is True.`,
+      `**E.** → False
+
+A principal square root is never negative, so both $x - 2 \\ge 0$ and $4 - x \\ge 0$. The domain is $2 \\le x \\le 4$. Isolate and square:
+
+$$x - 2 = (4 - x)^{2}$$
+
+$$x - 2 = 16 - 8x + x^{2}$$
+
+$$0 = x^{2} - 9x + 18$$
+
+$$0 = (x - 3)(x - 6)$$
+
+The candidates are $x = 3$ and $x = 6$. The value $x = 6$ exceeds $4$, so $4 - x < 0$ there and it is extra. Only $x = 3$ survives:
+
+$$\\sqrt{3 - 2} = 1 = 4 - 3$$
+
+There is exactly one real solution, not two, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 69,
-    solution_overview: `Five independent radical checks. Squaring can introduce extra roots. A principal square root is never negative.`,
+    solution_overview: `Five independent radical equations. Squaring can introduce extra roots. A principal square root is never negative, so the domain and a check in the original are required.`,
   },
   {
     id: `math-4-70`,
@@ -6087,25 +6241,23 @@ so the statement is False.`,
   {
     id: `math-4-71`,
     case_id: `MATH 4.71`,
-    title: `Five rational proportions from different stories`,
+    title: `Five independent rational proportion equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The equation $\\dfrac{x}{x - 3} = \\dfrac{x + 6}{x - 1}$ has a unique real solution, and that solution is a non-integer rational number.`,
-      `A second proportion is undefined at $4$ and at $1$, because each of those values zeros one of the two denominators.`,
-      `A proportion is undefined when the number is $3$. A student claims $3$ is nevertheless a root, because cross-multiplying produces an identity at that point.`,
-      `After solving on the allowed domain, the unique solution makes both sides of $\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$ equal to $3$.`,
-      `After excluding the holes, cross-multiplying yields the same unique real solution as the original proportion.`,
+      `The equation $\\dfrac{x + 2}{x - 4} = \\dfrac{x + 8}{x - 2}$ has a unique real solution, and that solution is an integer.`,
+      `The equation $\\dfrac{x}{x + 1} = \\dfrac{x + 3}{x - 2}$ has exactly two real solutions.`,
+      `The equation $\\dfrac{2x}{x + 5} = \\dfrac{x - 1}{x - 3}$ has a unique real solution that is negative.`,
+      `The equation $\\dfrac{x - 1}{x + 2} = \\dfrac{x + 4}{x - 5}$ has a unique real solution.`,
     ],
-    answer_key: [true, true, false, true, true],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The proportion is
+The holes $x = 3$ and $x = 1$ zero a denominator, so they are never roots. On the remaining domain, cross-multiply:
 
 $$\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$$
-
-The holes $x = 3$ and $x = 1$ zero a denominator, so they are never roots. On the remaining domain, cross-multiply:
 
 $$x(x - 1) = (x + 6)(x - 3)$$
 
@@ -6117,53 +6269,83 @@ $$-4x = -18$$
 
 $$x = \\frac{9}{2}$$
 
-The recovered value is $\\frac{9}{2}$, which is neither hole. That is the claimed solution, so the statement is True.`,
+The recovered value is $\\frac{9}{2}$, a non-integer rational number that is neither hole. The statement is True.`,
       `**B.** → True
 
-A rational proportion is undefined where a denominator is zero, and those holes are never roots. If the two denominators vanish at $4$ and at $1$, then
+The holes $x = 4$ and $x = 2$ are never roots. On the remaining domain, cross-multiply:
 
-$$x = 4$$
+$$\\frac{x + 2}{x - 4} = \\frac{x + 8}{x - 2}$$
 
-and
+$$(x + 2)(x - 2) = (x + 8)(x - 4)$$
 
-$$x = 1$$
+$$x^{2} - 4 = x^{2} + 4x - 32$$
 
-are excluded from the domain.
+$$-4 = 4x - 32$$
 
-The claim names exactly those two holes, so the statement is True.`,
+$$28 = 4x$$
+
+$$x = 7$$
+
+The recovered value is $7$, an integer that is neither hole. Substitute back into each side:
+
+$$\\frac{7 + 2}{7 - 4} = 3$$
+
+$$\\frac{7 + 8}{7 - 2} = 3$$
+
+Both sides equal $3$, so the statement is True.`,
       `**C.** → False
 
-At $x = 3$ the left side of $\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$ has denominator zero, so $x = 3$ is a hole, never a root. Cross-multiplying assumes both denominators are already nonzero, and cannot turn a hole into a solution.
+The holes $x = -1$ and $x = 2$ are never roots. On the remaining domain, cross-multiply:
 
-Plug the claimed root:
+$$\\frac{x}{x + 1} = \\frac{x + 3}{x - 2}$$
 
-the left side is undefined at $x = 3$, so the statement is False.`,
-      `**D.** → True
+$$x(x - 2) = (x + 3)(x + 1)$$
 
-Substitute the recovered value $x = \\frac{9}{2}$ into each side of the original.
+$$x^{2} - 2x = x^{2} + 4x + 3$$
 
-Left side:
+$$-2x = 4x + 3$$
 
-$$\\frac{\\frac{9}{2}}{\\frac{9}{2} - 3} = \\frac{\\frac{9}{2}}{\\frac{3}{2}} = 3$$
+$$-6x = 3$$
 
-Right side:
+$$x = -\\frac{1}{2}$$
 
-$$\\frac{\\frac{9}{2} + 6}{\\frac{9}{2} - 1} = \\frac{\\frac{21}{2}}{\\frac{7}{2}} = 3$$
+The recovered value is $-\\frac{1}{2}$, a single real number. There is exactly one real solution, not two, so the statement is False.`,
+      `**D.** → False
 
-Both sides equal $3$, which confirms the recovered value, so the statement is True.`,
+The holes $x = -5$ and $x = 3$ are never roots. On the remaining domain, cross-multiply:
+
+$$\\frac{2x}{x + 5} = \\frac{x - 1}{x - 3}$$
+
+$$2x(x - 3) = (x - 1)(x + 5)$$
+
+$$2x^{2} - 6x = x^{2} + 4x - 5$$
+
+$$x^{2} - 10x + 5 = 0$$
+
+$$x = 5 \\pm 2\\sqrt{5}$$
+
+The discriminant is positive, so there are two real solutions. Neither is negative, because $5 - 2\\sqrt{5} > 0$. The claim of a unique negative solution is wrong, so the statement is False.`,
       `**E.** → True
 
-Cross-multiplying is valid only away from the holes. The recovered value satisfies
+The holes $x = -2$ and $x = 5$ are never roots. On the remaining domain, cross-multiply:
 
-$$\\frac{9}{2} \\neq 1$$
+$$\\frac{x - 1}{x + 2} = \\frac{x + 4}{x - 5}$$
 
-$$\\frac{9}{2} \\neq 3$$
+$$(x - 1)(x - 5) = (x + 4)(x + 2)$$
 
-so neither denominator is zero there. The clearing step used in A is allowed at this value, so the statement is True.`,
+$$x^{2} - 6x + 5 = x^{2} + 6x + 8$$
+
+$$-6x + 5 = 6x + 8$$
+
+$$-12x = 3$$
+
+$$x = -\\frac{1}{4}$$
+
+The recovered value is $-\\frac{1}{4}$, which is neither hole. That is the unique real solution, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 71,
-    solution_overview: `Five independent comments on rational proportions. The model $\\frac{x}{x - 3} = \\frac{x + 6}{x - 1}$ recovers $x = \\frac{9}{2}$ after excluding the holes.`,
+    solution_overview: `Five independent rational proportions. Exclude every zero of a denominator, cross-multiply on the remaining domain, and check the recovered value in the original.`,
   },
   {
     id: `math-4-72`,
