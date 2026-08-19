@@ -5061,127 +5061,156 @@ and $-\\frac{1}{4} \\neq \\frac{1}{4}$. The two sides of $\\frac{3}{x} = \\frac{
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a unique real solution, and that solution is an integer.`,
-      `At the solution of $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$, the expression $\\dfrac{5}{x + 3}$ is defined (so $x + 3 \\neq 0$).`,
-      `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a real solution strictly greater than $2$.`,
-      `Clearing denominators in $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ allows the excluded value where $x + 2 = 0$ to still be a solution.`,
-      `The equation $\\dfrac{x}{x + 2} = \\dfrac{1}{3}$ has a real solution that is negative.`,
+      `The equation $\\dfrac{x}{x + 3} = \\dfrac{2}{5}$ has a unique real solution, and that solution is an integer.`,
+      `At the solution of $\\dfrac{x}{x + 1} = \\dfrac{3}{4}$, the expression $\\dfrac{2}{x - 2}$ is defined.`,
+      `The equation $\\dfrac{x + 1}{x + 3} = \\dfrac{1}{2}$ has a real solution strictly greater than $5$.`,
+      `Clearing denominators in $\\dfrac{x}{x - 2} = 1$ allows the excluded value where $x - 2 = 0$ to still be a solution.`,
+      `The equation $\\dfrac{2x}{x + 5} = -\\dfrac{4}{3}$ has a real solution that is negative.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The sentence is the proportion
+The left denominator vanishes at $x = -3$, so first exclude that hole. Then clear denominators by multiplying through by $5(x + 3)$:
 
-$$\\frac{x}{x + 2} = \\frac{1}{3}$$
+$$\\frac{x}{x + 3} = \\frac{2}{5}$$
 
-The left denominator vanishes at $x = -2$, so first exclude that hole. Then clear denominators by multiplying through by $3(x + 2)$:
+$$5x = 2(x + 3)$$
 
-$$3x = 1 \\cdot (x + 2)$$
+$$5x = 2x + 6$$
 
-$$3x = x + 2$$
+$$3x = 6$$
 
-$$2x = 2$$
+$$x = 2$$
 
-$$x = 1$$
+The value $x = 2$ is not the hole $-3$. Check:
 
-The value $x = 1$ is not the hole $-2$. Check:
+$$\\frac{2}{2 + 3} = \\frac{2}{5}$$
 
-$$\\frac{1}{1 + 2} = \\frac{1}{3}$$
-
-The number is $1$, so the statement is True.`,
+The solution is the integer $2$, so the statement is True.`,
       `**B.** → True
 
-Solve $\\frac{x}{x + 2} = \\frac{1}{3}$ on its allowed domain ($x \\neq -2$):
+First exclude the hole $x = -1$ in
 
-$$3x = x + 2$$
+$$\\frac{x}{x + 1} = \\frac{3}{4}$$
 
-$$2x = 2$$
-$$x = 1$$
+Clear denominators:
 
-At that solution we have $x + 3 = 4 \\neq 0$, so $\\frac{5}{x + 3}$ is defined. Hence the statement is True.`,
+$$4x = 3(x + 1)$$
+
+$$4x = 3x + 3$$
+
+$$x = 3$$
+
+At that solution,
+
+$$x - 2 = 3 - 2 = 1 \\neq 0$$
+
+so $\\dfrac{2}{x - 2}$ is defined. The statement is True.`,
       `**C.** → False
 
-Solve $\\frac{x}{x + 2} = \\frac{1}{3}$ (excluding $x = -2$):
+First exclude the hole $x = -3$ in
 
-$$3x = x + 2$$
+$$\\frac{x + 1}{x + 3} = \\frac{1}{2}$$
 
-$$2x = 2$$
+Clear denominators:
+
+$$2(x + 1) = 1 \\cdot (x + 3)$$
+
+$$2x + 2 = x + 3$$
 
 $$x = 1$$
 
-This solution is not strictly greater than $2$, so the statement is False.`,
+The recovered solution is $1$, which is not strictly greater than $5$. The statement is False.`,
       `**D.** → False
 
-Clearing denominators in $\\frac{x}{x + 2} = \\frac{1}{3}$ requires $x + 2 \\neq 0$, so the excluded value where $x + 2 = 0$ makes the original equation undefined and cannot be a solution. Therefore the statement is False.`,
-      `**E.** → False
+The equation $\\dfrac{x}{x - 2} = 1$ requires $x - 2 \\neq 0$, so the value where $x - 2 = 0$ makes the original equation undefined. Clearing denominators can introduce that excluded value as an apparent solution, but it is not a genuine root. The statement is False.`,
+      `**E.** → True
 
-Solve $\\frac{x}{x + 2} = \\frac{1}{3}$ (excluding $x = -2$):
+First exclude the hole $x = -5$ in
 
-$$3x = x + 2$$
+$$\\frac{2x}{x + 5} = -\\frac{4}{3}$$
 
-$$2x = 2$$
+Clear denominators:
 
-$$x = 1$$
-Since $x = 1$ is not negative, the statement is False.`,
+$$3 \\cdot 2x = -4(x + 5)$$
+
+$$6x = -4x - 20$$
+
+$$10x = -20$$
+
+$$x = -2$$
+
+The value $x = -2$ is not the hole $-5$, and it is negative. Check:
+
+$$\\frac{2(-2)}{-2 + 5} = \\frac{-4}{3} = -\\frac{4}{3}$$
+
+The statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 58,
-    solution_overview: `Five independent rational claims. One proportion $\\frac{x}{x + 2} = \\frac{1}{3}$ recovers $x = 1$ after excluding $x = -2$.`,
+    solution_overview: `Five independent rational proportions. Exclude holes, cross-multiply, then check whether the recovered value lies in the allowed domain and matches the claimed property.`,
   },
   {
     id: `math-4-59`,
     case_id: `MATH 4.59`,
-    title: `A hole in the domain is never a root`,
+    title: `Five separate rational hole and no-solution equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has no real solution.`,
-      `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has a real solution after excluding the value that makes the denominator $0$.`,
-      `The equation $\\dfrac{5}{x + 1} = \\dfrac{5}{x + 1}$ has a real solution at the value where $x + 1 = 0$.`,
-      `The equation $\\frac{2}{x} = 0$ has a real solution.`,
-      `Six litres poured at a constant rate of $2$ litres per share fill a can. A clerk reports that the can holds $2$ litres.`,
+      `The equation $\\dfrac{2}{x - 3} = \\dfrac{8}{x - 3}$ has no real solution.`,
+      `The equation $\\dfrac{5}{x + 2} = \\dfrac{5}{x + 2}$ has exactly one real solution.`,
+      `The equation $\\dfrac{7}{x - 2} = 0$ has no real solution.`,
+      `The equation $\\dfrac{1}{x} + \\dfrac{1}{x} = \\dfrac{3}{x}$ has no real solution on its domain.`,
+      `Four litres poured as equal shares fill a tank if each share is one-third of the tank. A clerk reports that the tank holds $8$ litres.`,
     ],
-    answer_key: [true, false, false, false, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 The claim is
 
-$$\\frac{1}{x - 2} = \\frac{3}{x - 2}$$
+$$\\frac{2}{x - 3} = \\frac{8}{x - 3}$$
 
-First exclude the hole $x = 2$, which zeros both denominators. For every other $x$, the common nonzero denominator may be cleared:
+First exclude the hole $x = 3$, which zeros the denominator. For every other $x$, the common nonzero denominator may be cleared:
 
-$$1 = 3$$
+$$2 = 8$$
 
-which is never true. At the excluded hole both sides are undefined, so that value is not a solution either. No real volume works, so the statement is True.`,
+which is never true. At the excluded hole both sides are undefined, so that value is not a solution either. No real number works, so the statement is True.`,
       `**B.** → False
-Exclude the hole $x - 2 = 0$. For every allowed $x$, clear denominators by multiplying both sides by $x - 2$:
-$$1 = 3$$
-That is a contradiction, so the equation has no real solution on its domain. Therefore the statement is False.`,
-      `**C.** → False
-For the equation $\\frac{5}{x + 1} = \\frac{5}{x + 1}$ to even be defined, we must have $x + 1 \\neq 0$ so the denominator is nonzero.
-At the value where $x + 1 = 0$, both sides are undefined, so there is no real solution there. Hence the statement is False.`,
-      `**D.** → False
 
-A fraction $\\frac{N}{D}$ is zero only when $N = 0$ and $D \\neq 0$. Here $N = 2 \\neq 0$. The claimed $x = 0$ zeros the denominator, so $\\frac{2}{x}$ is undefined there, not equal to $0$. There is no solution, so the statement is False.`,
+For the equation $\\dfrac{5}{x + 2} = \\dfrac{5}{x + 2}$ to be defined, require $x + 2 \\neq 0$. On that allowed domain the two sides are identical, so every allowed real $x$ satisfies the equation. There are infinitely many solutions, not exactly one. The statement is False.`,
+      `**C.** → True
+
+A fraction $\\dfrac{N}{D}$ is zero only when $N = 0$ and $D \\neq 0$. Here $N = 7 \\neq 0$, so the left side can never equal $0$ on any value where the denominator is allowed to be nonzero. The equation has no real solution, so the statement is True.`,
+      `**D.** → True
+
+First exclude the hole $x = 0$. On the remaining domain,
+
+$$\\frac{1}{x} + \\frac{1}{x} = \\frac{3}{x}$$
+
+becomes
+
+$$\\frac{2}{x} = \\frac{3}{x}$$
+
+Clearing the common denominator gives
+
+$$2 = 3$$
+
+which is never true. No allowed real $x$ works, so the statement is True.`,
       `**E.** → False
 
-Six litres at $2$ litres per share means
+Four litres split into equal shares that are each one-third of the tank means
 
-$$\\frac{6}{x} = 2$$
+$$\\frac{4}{x} = \\frac{1}{3}$$
 
-Exclude $x = 0$, then multiply through by $x$:
+where $x$ litres is the capacity. First exclude the hole $x = 0$, then clear denominators by multiplying through by $3x$:
 
-$$6 = 2x$$
+$$4 \\cdot 3 = 1 \\cdot x$$
 
-$$x = 3$$
+$$x = 12$$
 
-The can holds $3$ litres, not $2$. Substituting the claimed $x = 2$:
-
-$$\\frac{6}{2} = 3 \\neq 2$$
-
-so the statement is False.`,
+Check: $\\frac{4}{12} = \\frac{1}{3}$. The tank holds $12$ litres, not the claimed $8$ litres, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 59,
@@ -6350,29 +6379,25 @@ The recovered value is $-\\frac{1}{4}$, which is neither hole. That is the uniqu
   {
     id: `math-4-72`,
     case_id: `MATH 4.72`,
-    title: `Five reciprocal-sum stories`,
+    title: `Five independent reciprocal equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ has a positive real solution.`,
-      `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ also has a negative real solution.`,
-      `The equation $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ has two real solutions of opposite signs.`,
-      `A reciprocal sum is undefined where a denominator is zero. The cleared equation has two distinct real solutions, and both are allowed.`,
-      `Clearing $\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$ produces a quadratic with two distinct real roots, and both roots are allowed.`,
+      `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ has exactly two real solutions.`,
+      `The equation $\\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{3}{2}$ has exactly two real solutions of opposite signs.`,
+      `The equation $\\dfrac{3}{x} = \\dfrac{2}{x + 1}$ has a unique real solution that is a negative integer.`,
+      `The equation $\\dfrac{1}{x} + \\dfrac{1}{x + 2} = \\dfrac{5}{6}$ has a unique real solution.`,
+      `The equation $\\dfrac{x + 3}{x} + \\dfrac{x}{x + 3} = \\dfrac{10}{3}$ has no real solutions.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-The reciprocal sum is
+The holes $x = 0$ and $x = -1$ are never roots. On the remaining domain, multiply through by $2x(x + 1)$:
 
 $$\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$$
 
-The holes $x = 0$ and $x = -1$ are never roots. On the remaining domain, multiply through by $2x(x + 1)$:
-
 $$2(x + 1)^{2} + 2x^{2} = 5x(x + 1)$$
-
-$$2(x^{2} + 2x + 1) + 2x^{2} = 5x^{2} + 5x$$
 
 $$4x^{2} + 4x + 2 = 5x^{2} + 5x$$
 
@@ -6380,68 +6405,105 @@ $$0 = x^{2} + x - 2$$
 
 $$0 = (x + 2)(x - 1)$$
 
-The candidates are $x = 1$ and $x = -2$. Neither is a hole. Substitute $x = 1$ into the original:
-
-$$\\frac{2}{1} + \\frac{1}{2} = \\frac{5}{2}$$
-
-One solution is $1$, so the statement is True.`,
+The candidates are $x = 1$ and $x = -2$, neither of which is a hole. Both satisfy the original, so there are exactly two real solutions. The statement is True.`,
       `**B.** → True
 
-Substitute the other candidate $x = -2$ into the same reciprocal sum:
+The holes $x = 0$ and $x = -1$ are never roots. On the remaining domain, multiply through by $2x(x + 1)$:
 
-$$\\frac{-2 + 1}{-2} + \\frac{-2}{-2 + 1} = \\frac{-1}{-2} + \\frac{-2}{-1}$$
+$$\\frac{1}{x} + \\frac{1}{x + 1} = \\frac{3}{2}$$
 
-$$= \\frac{1}{2} + 2 = \\frac{5}{2}$$
+$$2(x + 1) + 2x = 3x(x + 1)$$
 
-The value $-2$ is not a hole, and it satisfies the original, so the statement is True.`,
+$$4x + 2 = 3x^{2} + 3x$$
+
+$$0 = 3x^{2} - x - 2$$
+
+$$0 = (3x + 2)(x - 1)$$
+
+The candidates are $x = 1$ and $x = -\\frac{2}{3}$. One is positive and one is negative, so the solutions are of opposite signs. There are exactly two real solutions, so the statement is True.`,
       `**C.** → True
 
-Clearing denominators in $\\frac{2}{x} + \\frac{3}{x + 1} = 1$ (excluding the holes) gives
+The holes $x = 0$ and $x = -1$ are never roots. On the remaining domain, cross-multiply:
 
-$$x^{2} + x - 2 = 0$$
+$$\\frac{3}{x} = \\frac{2}{x + 1}$$
 
-which factors as
+$$3(x + 1) = 2x$$
 
-$$(x + 2)(x - 1) = 0$$
+$$3x + 3 = 2x$$
 
-So the equation has one positive and one negative real solution, hence the solutions are of opposite signs. Therefore the statement is True.`,
-      `**D.** → True
+$$x = -3$$
 
-The holes of that reciprocal sum are $x = 0$ and $x = -1$. The candidates $x = 1$ and $x = -2$ equal neither hole. The substitutions in A and B already show that both satisfy the original, so the statement is True.`,
-      `**E.** → True
+The recovered value is $-3$, a negative integer that is neither hole. Substitute back:
 
-Clearing the original as in A produces the quadratic
+$$\\frac{3}{-3} = -1$$
 
-$$x^{2} + x - 2 = 0$$
+$$\\frac{2}{-3 + 1} = -1$$
 
-which factors as
+Both sides equal $-1$, so the statement is True.`,
+      `**D.** → False
 
-$$(x + 2)(x - 1) = 0$$
+The holes $x = 0$ and $x = -2$ are never roots. On the remaining domain, multiply through by $6x(x + 2)$:
 
-The roots are $1$ and $-2$. That is the claimed quadratic and the claimed roots, so the statement is True.`,
+$$\\frac{1}{x} + \\frac{1}{x + 2} = \\frac{5}{6}$$
+
+$$6(x + 2) + 6x = 5x(x + 2)$$
+
+$$12x + 12 = 5x^{2} + 10x$$
+
+$$0 = 5x^{2} - 2x - 12$$
+
+The discriminant is $(-2)^{2} - 4 \\cdot 5 \\cdot (-12) = 4 + 240 = 244$, which is positive. There are two distinct real solutions, not a unique one, so the statement is False.`,
+      `**E.** → False
+
+The holes $x = 0$ and $x = -3$ are never roots. On the remaining domain, multiply through by $3x(x + 3)$:
+
+$$\\frac{x + 3}{x} + \\frac{x}{x + 3} = \\frac{10}{3}$$
+
+$$3(x + 3)^{2} + 3x^{2} = 10x(x + 3)$$
+
+$$3(x^{2} + 6x + 9) + 3x^{2} = 10x^{2} + 30x$$
+
+$$6x^{2} + 18x + 27 = 10x^{2} + 30x$$
+
+$$0 = 4x^{2} + 12x - 27$$
+
+The discriminant is $12^{2} - 4 \\cdot 4 \\cdot (-27) = 144 + 432 = 576 = 24^{2}$, which is positive. There are two real solutions, not none, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 72,
-    solution_overview: `Five independent claims about reciprocal sums. $\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$ clears to $x^{2} + x - 2 = 0$, and both roots survive.`,
+    solution_overview: `Five independent reciprocal equations. $\\frac{x + 1}{x} + \\frac{x}{x + 1} = \\frac{5}{2}$ clears to two roots. $\\frac{3}{x} = \\frac{2}{x + 1}$ recovers $x = -3$. Exclude every hole before clearing.`,
   },
   {
     id: `math-4-73`,
     case_id: `MATH 4.73`,
-    title: `Five claims on principal roots and impossible right-hand sides`,
+    title: `Five independent radical isolation equations`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Both candidates obtained by squaring $\\sqrt{x - 1} = 2 - x$ solve the original equation.`,
-      `The equation $\\sqrt{x + 3} = x - 3$ has two real solutions.`,
-      `The larger candidate $\\dfrac{5 + \\sqrt{5}}{2}$ solves $\\sqrt{x - 1} = 2 - x$.`,
-      `When solving $\\sqrt{x - 1} = 2 - x$ you may skip the condition $2 - x \\ge 0$, because squaring removes the sign anyway.`,
-      `The equation $\\sqrt{x - 1} = 2 - x$ has exactly one real solution.`,
+      `The equation $\\sqrt{2x + 1} = 4 - x$ has exactly one real solution.`,
+      `The equation $\\sqrt{x - 1} = 2 - x$ has exactly two real solutions.`,
+      `The equation $\\sqrt{x + 5} = x - 1$ has exactly one real solution.`,
+      `The equation $\\sqrt{3x + 1} = x + 1$ has exactly one real solution.`,
+      `The equation $\\sqrt{x - 4} = 6 - x$ has no real solutions.`,
     ],
-    answer_key: [false, false, false, false, true],
+    answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
-For $\\sqrt{x - 1} = 2 - x$ a principal square root is never negative, so both $x - 1 \\ge 0$ and $2 - x \\ge 0$. The domain is $1 \\le x \\le 2$. Isolate and square:
+A principal square root is never negative, so the domain needs $2x + 1 \\ge 0$ and $4 - x \\ge 0$, giving $-\\frac{1}{2} \\le x \\le 4$. Isolate and square:
+
+$$2x + 1 = (4 - x)^{2}$$
+
+$$2x + 1 = x^{2} - 8x + 16$$
+
+$$0 = x^{2} - 10x + 15$$
+
+$$x = 5 \\pm \\sqrt{10}$$
+
+The root $5 + \\sqrt{10}$ exceeds $4$, so it is outside the domain and extra. The root $5 - \\sqrt{10}$ lies in $-\\frac{1}{2} \\le x \\le 4$ and survives in the original. Exactly one real solution remains, so the statement is True.`,
+      `**B.** → False
+
+A principal square root is never negative, so both $x - 1 \\ge 0$ and $2 - x \\ge 0$. The domain is $1 \\le x \\le 2$. Isolate and square:
 
 $$x - 1 = (2 - x)^{2}$$
 
@@ -6451,57 +6513,66 @@ $$0 = x^{2} - 5x + 5$$
 
 $$x = \\frac{5 \\pm \\sqrt{5}}{2}$$
 
-The larger candidate $\\frac{5 + \\sqrt{5}}{2}$ is greater than $2$, so $2 - x < 0$ there. Plug it into the original and a principal square root cannot equal a negative number, so that candidate is extra. Only $\\frac{5 - \\sqrt{5}}{2}$ lies in $[1, 2]$ and can survive.
+The larger candidate $\\frac{5 + \\sqrt{5}}{2}$ exceeds $2$, so $2 - x < 0$ there and it is extra. The smaller candidate $\\frac{5 - \\sqrt{5}}{2}$ lies in $[1, 2]$ and survives.
 
-The claim keeps both squared candidates, so the statement is False.`,
-      `**B.** → False
+Exactly one real solution survives, not two, so the statement is False.`,
+      `**C.** → True
 
-For $\\sqrt{x + 3} = x - 3$ the domain needs $x \\ge 3$. Isolate and square:
+A principal square root is never negative, so the domain needs $x + 5 \\ge 0$ and $x - 1 \\ge 0$, hence $x \\ge 1$. Isolate and square:
 
-$$x + 3 = (x - 3)^{2}$$
+$$x + 5 = (x - 1)^{2}$$
 
-$$0 = (x - 1)(x - 6)$$
+$$x + 5 = x^{2} - 2x + 1$$
 
-The candidates are $x = 1$ and $x = 6$. Plug the extra $x = 1$:
+$$0 = x^{2} - 3x - 4$$
 
-$$\\sqrt{1 + 3} = 2$$
+$$0 = (x - 4)(x + 1)$$
 
-$$1 - 3 = -2$$
+The candidates are $x = 4$ and $x = -1$. The value $x = -1$ lies outside $x \\ge 1$, so it is extra. Only $x = 4$ survives:
 
-and $2 \\neq -2$. Only $x = 6$ survives. The claim reports two real solutions, so the statement is False.`,
-      `**C.** → False
+$$\\sqrt{4 + 5} = 3 = 4 - 1$$
 
-The larger squared candidate of $\\sqrt{x - 1} = 2 - x$ is
-
-$$x = \\frac{5 + \\sqrt{5}}{2}$$
-
-This value is greater than $2$, so the isolated right-hand side is negative:
-
-$$2 - \\frac{5 + \\sqrt{5}}{2} < 0$$
-
-A principal square root cannot equal a negative number. Plug into the original and the two sides cannot match, so the statement is False.`,
+Exactly one real solution remains, so the statement is True.`,
       `**D.** → False
 
-Squaring removes signs, which is why extras appear. The condition $2 - x \\ge 0$ is still required, because a principal square root is never negative. That condition is what excludes $\\frac{5 + \\sqrt{5}}{2}$.
+A principal square root is never negative, so the domain needs $3x + 1 \\ge 0$ and $x + 1 \\ge 0$, hence $x \\ge -\\frac{1}{3}$. Isolate and square:
 
-The condition cannot be skipped, so the statement is False.`,
-      `**E.** → True
+$$3x + 1 = (x + 1)^{2}$$
 
-After the isolate-and-square in A, the only candidate in $[1, 2]$ is
+$$3x + 1 = x^{2} + 2x + 1$$
 
-$$x = \\frac{5 - \\sqrt{5}}{2}$$
+$$0 = x^{2} - x$$
 
-At that value the inside and the isolated side are both nonnegative:
+$$0 = x(x - 3)$$
 
-$$x - 1 = \\frac{3 - \\sqrt{5}}{2}$$
+The candidates are $x = 0$ and $x = 3$. Both lie in the domain and both satisfy the original:
 
-$$2 - x = \\frac{\\sqrt{5} - 1}{2}$$
+$$\\sqrt{3 \\cdot 0 + 1} = 1 = 0 + 1$$
 
-Squaring the second display recovers the first, so the original holds. Exactly one squared-equation root survives, so the statement is True.`,
+$$\\sqrt{3 \\cdot 3 + 1} = 4 = 3 + 1$$
+
+There are two real solutions, not exactly one, so the statement is False.`,
+      `**E.** → False
+
+A principal square root is never negative, so both $x - 4 \\ge 0$ and $6 - x \\ge 0$. The domain is $4 \\le x \\le 6$. Isolate and square:
+
+$$x - 4 = (6 - x)^{2}$$
+
+$$x - 4 = 36 - 12x + x^{2}$$
+
+$$0 = x^{2} - 13x + 40$$
+
+$$0 = (x - 5)(x - 8)$$
+
+The candidates are $x = 5$ and $x = 8$. The value $x = 8$ exceeds $6$, so $6 - x < 0$ there and it is extra. The value $x = 5$ survives:
+
+$$\\sqrt{5 - 4} = 1 = 6 - 5$$
+
+There is exactly one real solution, not none, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 73,
-    solution_overview: `Five independent claims about the principal square root. $\\sqrt{x - 1} = 2 - x$ lives only on $[1, 2]$, so squaring's larger candidate is extra.`,
+    solution_overview: `Five independent radical isolation equations. Squaring can introduce extras; a principal square root is never negative, so the domain restricts which candidates survive.`,
   },
   {
     id: `math-4-74`,
