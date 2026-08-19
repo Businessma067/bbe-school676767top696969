@@ -21,42 +21,46 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Mixing $4$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $14\\%$ concentration.`,
-      `Worker $A$ finishes a job alone in $5$ days, worker $B$ in $8$ days. Together they need $3.08$ days.`,
-      `A jacket priced at $200$ EUR is reduced by $25\\%$, then the sale price is cut by a further $10\\%$. The final price is $139$ EUR.`,
-      `Consider a case where a courier rides $48$ km out at $21$ km/h and returns at $10$ km/h over the same route. The round trip lasts $7.1$ hours (not the arithmetic mean of the two speeds).`,
-      `In an exam item, a kitchen manual lists $525$ g of sugar for $10$ servings. Baking $19$ servings requires $1001$ g of sugar.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $10$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $10$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $4$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $9$ EUR.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{16\\cdot4+4\\cdot4}{8}=10$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is False.`,
       `**B.** → True
 
-$$\\frac{1}{5}+\\frac{1}{8}=\\frac{1}{t}$$
-$$t=3.076923076923077$$
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**C.** → False
 
-$$200\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{10}{100})=135$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is False.`,
       `**D.** → True
 
-$$\\frac{48}{21}+\\frac{48}{10}=7.085714285714285$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is True.`,
       `**E.** → False
 
-$$525\\cdot\\frac{19}{10}=998$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 1,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -67,46 +71,46 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three test scores average $79$. Two of them are $81$ and $85$. The third score is $71$.`,
-      `In an exam item, a rectangular lawn $9$ m by $13$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $104$ m$^{2}$.`,
-      `Three consecutive odd integers add up to $45$. The largest equals $20$.`,
-      `A pump delivers $24$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $20$ litres.`,
-      `A boat covers $24$ km downstream in $2$ h and the same distance upstream in $3$ h. Its speed in still water is $10$ km/h.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $5$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $8$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $10$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $4$ EUR.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{a+b+c}{3}=79$$
-$$c=71$$
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**B.** → True
 
-Outer minus inner:
-$$(13)(17)-117=104$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is True.`,
       `**C.** → False
 
-$$3n+6=45$$
-$$n=13$$, largest $17$.
+$$2p+6=18$$
+$$p=6$$
 
 The statement is False.`,
       `**D.** → False
 
-$$\\frac{3}{5}C=24\\cdot25$$
-$$C=17$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is False.`,
       `**E.** → True
 
-Downstream $12$ km/h, upstream $8$ km/h.
-Still water: $\\frac{12+8}{2}=10$ km/h.
+$$2p+6=14$$
+$$p=4$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 2,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -117,49 +121,46 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $59$.`,
-      `An aluminium bar of length $3.2$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is $129$ cm.`,
-      `Consider a case where a mother is $28$ years older than her daughter. In $11$ years the mother will be twice as old as the daughter will be then. The daughter is now $17$ years old.`,
-      `In an exam item, a prize fund of $14500$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Then the $2$nd-place prize is $4703$ EUR.`,
-      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $44$ cm, then the longer side is $16$ cm.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $9$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $7$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $5$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $10$ EUR.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{4}{7}x-\\frac{2}{7}x=16$$
-$$\\frac{2}{7}x=16$$
-$$x=55$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is False.`,
       `**B.** → False
 
-$$s+(s+70)=320$$
-$$s=125$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is False.`,
       `**C.** → True
 
-$$d+28+11=2(d+11)$$
-$$d=17$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is True.`,
       `**D.** → True
 
-$$a+0.75a+0.5625a=14500$$
-$$a=\\frac{14500}{2.31}$$
-Second place: $0.75a\\approx4703$ EUR.
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**E.** → False
 
-$$2(2s+4)=44$$
-$$s=9$$
-Longer side $13$ cm.
+$$2p+6=20$$
+$$p=7$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 3,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -170,46 +171,46 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a till contains only $2$ EUR and $5$ EUR coins: $14$ coins totalling $46$ EUR. Exactly $6$ of them are $5$ EUR coins.`,
-      `Towns $P$ and $Q$ are $162$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $84$ km/h toward $P$. They meet $62$ minutes after noon.`,
-      `A car travels at an average speed of $72$ km/h. At $3$ pm, it has traveled a total distance of $126$ km. Then it started traveling at $14:35$ pm.`,
-      `A liquid cools linearly by $7$°C per minute from $100$°C with no reheating. After $21$ minutes its temperature is $-47$°C.`,
-      `Consider a case where a train $180$ m long passes a signal pole in $14$ s. Its speed is $46$ km/h.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $4$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $10$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $7$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $5$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$$x+y=14$$, $$5x+2y=46$$
-$$3x=18$$
-$$x=6$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is True.`,
       `**B.** → False
 
-Head start: $27$ km. Gap left: $135$ km.
-$$t=\\frac{135}{138}\\text{ h}=59\\text{ min after noon}$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is False.`,
       `**C.** → False
 
-$$t=\\frac{126}{72}=1.75$$ h $=105$ min.
-Counting back from $3$ pm gives $13:15$ pm.
+$$2p+6=14$$
+$$p=4$$
 
 The statement is False.`,
       `**D.** → True
 
-$$T=100-7\\cdot21=-47$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is True.`,
       `**E.** → True
 
-$$v=\\frac{180}{14}=12.857142857142858\\text{ m/s}$$
-$$12.857142857142858\\cdot 3.6=46\\text{ km/h}$$
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 4,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -220,47 +221,46 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `To obtain $8\\%$ acidity from $1$ litre of $11\\%$ stock, one must add $3.4$ litres of water (pure dilution).`,
-      `If one side of a rectangle is by $2$ cm longer than the other one and the rectangle's area is $24$ cm$^{2}$, then the length of the longer side is $6$ cm.`,
-      `In an exam item, an item costing $130$ EUR is marked up by $40\\%$ for retail. The shelf price is $182$ EUR.`,
-      `Car $A$ leaves at $2$ pm at $66$ km/h. Car $B$ pursues from the same place at $2{:}40$ pm at $78$ km/h. $B$ catches $A$ after $224$ minutes of chasing.`,
-      `Swapping the digits of a two-digit number increases it by $20$. The original number is $68$.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $10$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $7$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $7$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $9$ EUR.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{0.11}{1+w}=\\frac{8}{100}$$
-$$w=0.4$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is False.`,
       `**B.** → True
 
-Let the shorter side be $s$ cm. Then $s(s+2)=24$:
-$$s^2+2s-24=0$$
-$$(s-4)(s+6)=0$$
-$$s=4$$
-Longer side: $6$ cm.
+$$2p+6=18$$
+$$p=6$$
 
-The longer side is $6$ cm.`,
+The statement is True.`,
       `**C.** → True
 
-$$130\\cdot(1+\\frac{40}{100})=182$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is True.`,
       `**D.** → False
 
-Head start $44$ km. Relative speed $12$ km/h.
-$$t=\\frac{44}{12}\\text{ h}=220\\text{ min}$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is False.`,
       `**E.** → False
 
-$$(86)-(68)=18$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 5,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -271,42 +271,46 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $64$ and differ by $6$. The larger number is $35$.`,
-      `Mixing $4$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $14\\%$ concentration.`,
-      `Worker $A$ finishes a job alone in $5$ days, worker $B$ in $8$ days. Together they need $3.08$ days.`,
-      `Consider a case where a jacket priced at $320$ EUR is reduced by $25\\%$, then the sale price is cut by a further $10\\%$. The final price is $216$ EUR.`,
-      `In an exam item, a courier rides $36$ km out at $21$ km/h and returns at $10$ km/h over the same route. The round trip lasts $8.3$ hours (not the arithmetic mean of the two speeds).`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $9$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $7$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $7$ EUR.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{64+6}{2}=35$$
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**B.** → False
 
-$$\\frac{16\\cdot4+4\\cdot4}{8}=10$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is False.`,
       `**C.** → True
 
-$$\\frac{1}{5}+\\frac{1}{8}=\\frac{1}{t}$$
-$$t=3.076923076923077$$
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**D.** → True
 
-$$320\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{10}{100})=216$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is True.`,
       `**E.** → False
 
-$$\\frac{36}{21}+\\frac{36}{10}=5.314285714285714$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 6,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -317,45 +321,46 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a plan charges $20$ EUR per month plus $0.12$ EUR per minute. With $210$ minutes used, the bill is $48.2$ EUR.`,
-      `In an exam item, three test scores average $79$. Two of them are $75$ and $85$. The third score is $77$.`,
-      `A rectangular lawn $12$ m by $16$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $131$ m$^{2}$.`,
-      `Three consecutive odd integers add up to $45$. The largest equals $20$.`,
-      `A pump delivers $18$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $13$ litres.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $9$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $4$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $16$ EUR. The original price was $9$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $8$ EUR.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $20$ EUR. The original price was $7$ EUR.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$20+0.12\\cdot210=45.2$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is False.`,
       `**B.** → True
 
-$$\\frac{a+b+c}{3}=79$$
-$$c=77$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is True.`,
       `**C.** → False
 
-Outer minus inner:
-$$(16)(20)-192=128$$
+$$2p+6=16$$
+$$p=5$$
 
 The statement is False.`,
       `**D.** → False
 
-$$3n+6=45$$
-$$n=13$$, largest $17$.
+$$2p+6=18$$
+$$p=6$$
 
 The statement is False.`,
       `**E.** → True
 
-$$\\frac{3}{5}C=18\\cdot25$$
-$$C=13$$
+$$2p+6=20$$
+$$p=7$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 7,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -366,48 +371,49 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Inlet $A$ fills a pool in $6$ h while outlet $B$ empties it in $10$ h (both open, empty pool). The pool fills in $15$ h.`,
-      `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $55$.`,
-      `An aluminium bar of length $3.2$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is $125$ cm.`,
-      `In an exam item, a mother is $28$ years older than her daughter. In $9$ years the mother will be twice as old as the daughter will be then. The daughter is now $22$ years old.`,
-      `A prize fund of $19000$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Under these conditions, the $2$nd-place prize is $6164$ EUR.`,
+      `A rectangle's area is $72$ cm$^{2}$; one side exceeds the other by $6$ cm. The longer side measures $12$ cm.`,
+      `To obtain $6\\%$ acidity from $1$ litre of $8\\%$ stock, one must add $0.3$ litres of water (pure dilution).`,
+      `Consider a case where a boat covers $42$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is $14.7$ km/h.`,
+      `After $7$ EUR is taken off a bill, half the remainder equals $4$ EUR. The original bill was $19$ EUR.`,
+      `A car travels at an average speed of $96$ km/h. At $3$ pm, it has traveled a total distance of $120$ km. Under these conditions, it started traveling at $14:05$ pm.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{1}{6}-\\frac{1}{10}=\\frac{1}{t}$$
-$$t=15$$
+Let the shorter side be $s$ cm. Then $s(s+6)=72$:
+$$s^2+6s-72=0$$
+$$(s-6)(s+12)=0$$
+$$s=6$$
+Longer side: $12$ cm.
 
-The statement is True.`,
+The longer side is $12$ cm.`,
       `**B.** → True
 
-$$\\frac{4}{7}x-\\frac{2}{7}x=16$$
-$$\\frac{2}{7}x=16$$
-$$x=55$$
+$$\\frac{0.08}{1+w}=\\frac{6}{100}$$
+$$w=0.3$$
 
 The statement is True.`,
       `**C.** → True
 
-$$s+(s+70)=320$$
-$$s=125$$
+Downstream $21$ km/h, upstream $8.4$ km/h.
+Still water: $\\frac{21+8.4}{2}=14.7$ km/h.
 
 The statement is True.`,
       `**D.** → False
 
-$$d+28+9=2(d+9)$$
-$$d=19$$
+$$\\frac{x-7}{2}=4$$
+$$x=15$$
 
 The statement is False.`,
       `**E.** → False
 
-$$a+0.75a+0.5625a=19000$$
-$$a=\\frac{19000}{2.31}$$
-Second place: $0.75a\\approx6162$ EUR.
+$$t=\\frac{120}{96}=1.25$$ h $=75$ min.
+Counting back from $3$ pm gives $13:45$ pm.
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `2/5`,
     sort_order: 8,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -418,24 +424,24 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a kitchen manual lists $525$ g of sugar for $8$ servings. Baking $17$ servings requires $1118$ g of sugar.`,
-      `A till contains only $2$ EUR and $5$ EUR coins: $17$ coins totalling $61$ EUR. Exactly $11$ of them are $5$ EUR coins.`,
+      `After $7$ EUR is taken off a bill, half the remainder equals $4$ EUR. The original bill was $19$ EUR.`,
+      `A car travels at an average speed of $96$ km/h. At $3$ pm, it has traveled a total distance of $120$ km. Under these conditions, it started traveling at $14:05$ pm.`,
       `Towns $P$ and $Q$ are $162$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $72$ km/h toward $P$. They meet $67$ minutes after noon.`,
-      `A car travels at an average speed of $56$ km/h. At $3$ pm, it has traveled a total distance of $98$ km. Then it started traveling at $13:15$ pm.`,
-      `Consider a case where a liquid cools linearly by $7$°C per minute from $100$°C with no reheating. After $21$ minutes its temperature is $-47$°C.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `If one side of a rectangle is by $6$ cm longer than the other and the perimeter is $44$ cm, then the longer side is $14$ cm.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$525\\cdot\\frac{17}{8}=1116$$
+$$\\frac{x-7}{2}=4$$
+$$x=15$$
 
 The statement is False.`,
       `**B.** → False
 
-$$x+y=17$$, $$5x+2y=61$$
-$$3x=27$$
-$$x=9$$
+$$t=\\frac{120}{96}=1.25$$ h $=75$ min.
+Counting back from $3$ pm gives $13:45$ pm.
 
 The statement is False.`,
       `**C.** → False
@@ -446,17 +452,19 @@ $$t=\\frac{135}{126}\\text{ h}=64\\text{ min after noon}$$
 The statement is False.`,
       `**D.** → True
 
-$$t=\\frac{98}{56}=1.75$$ h $=105$ min.
-Counting back from $3$ pm gives $13:15$ pm.
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**E.** → True
 
-$$T=100-7\\cdot21=-47$$
+$$2(2s+6)=44$$
+$$s=8$$
+Longer side $14$ cm.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 9,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -467,48 +475,51 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A boat covers $24$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is $8.4$ km/h.`,
-      `To obtain $8\\%$ acidity from $1$ litre of $11\\%$ stock, one must add $3.4$ litres of water (pure dilution).`,
-      `In an exam item, if one side of a rectangle is by $2$ cm longer than the other one and the rectangle's area is $24$ cm$^{2}$, then the length of the longer side is $8$ cm.`,
-      `An item costing $130$ EUR is marked up by $40\\%$ for retail. The shelf price is $185$ EUR.`,
-      `Car $A$ leaves at $2$ pm at $66$ km/h. Car $B$ pursues from the same place at $2{:}40$ pm at $78$ km/h. $B$ catches $A$ after $220$ minutes of chasing.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $18$ EUR. The original price was $6$ EUR.`,
+      `If one side of a rectangle is by $6$ cm longer than the other and the perimeter is $44$ cm, then the longer side is $17$ cm.`,
+      `In an exam item, a prize fund of $19000$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Then the $2$nd-place prize is $6164$ EUR.`,
+      `A mother is $36$ years older than her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $26$ years old.`,
+      `A rectangle's area is $55$ cm$^{2}$; one side exceeds the other by $6$ cm. The longer side measures $11$ cm.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Downstream $12$ km/h, upstream $4.8$ km/h.
-Still water: $\\frac{12+4.8}{2}=8.4$ km/h.
+$$2p+6=18$$
+$$p=6$$
 
 The statement is True.`,
       `**B.** → False
 
-$$\\frac{0.11}{1+w}=\\frac{8}{100}$$
-$$w=0.4$$
+$$2(2s+6)=44$$
+$$s=8$$
+Longer side $14$ cm.
 
 The statement is False.`,
       `**C.** → False
 
-Let the shorter side be $s$ cm. Then $s(s+2)=24$:
-$$s^2+2s-24=0$$
-$$(s-4)(s+6)=0$$
-$$s=4$$
-Longer side: $6$ cm.
+$$a+0.75a+0.5625a=19000$$
+$$a=\\frac{19000}{2.31}$$
+Second place: $0.75a\\approx6162$ EUR.
 
-The longer side is $6$ cm, not $8$ cm.`,
+The statement is False.`,
       `**D.** → False
 
-$$130\\cdot(1+\\frac{40}{100})=182$$
+$$d+36+12=2(d+12)$$
+$$d=24$$
 
 The statement is False.`,
       `**E.** → True
 
-Head start $44$ km. Relative speed $12$ km/h.
-$$t=\\frac{44}{12}\\text{ h}=220\\text{ min}$$
+Let the shorter side be $s$ cm. Then $s(s+6)=55$:
+$$s^2+6s-55=0$$
+$$(s-5)(s+11)=0$$
+$$s=5$$
+Longer side: $11$ cm.
 
-The statement is True.`,
+The longer side is $11$ cm.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 10,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -519,44 +530,49 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $44$ cm, then the longer side is $16$ cm.`,
-      `Two numbers add to $56$ and differ by $6$. The larger number is $31$.`,
-      `Mixing $4$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $10\\%$ concentration.`,
-      `Worker $A$ finishes a job alone in $5$ days, worker $B$ in $8$ days. Together they need $3.08$ days.`,
-      `In an exam item, a jacket priced at $240$ EUR is reduced by $25\\%$, then the sale price is cut by a further $10\\%$. The final price is $164$ EUR.`,
+      `A mother is $28$ years older than her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $19$ years old.`,
+      `Suppose that one side of a rectangle is by $2$ cm longer than the other one and the rectangle's area is $99$ cm$^{2}$. It follows that the length of the longer side is $11$ cm.`,
+      `To obtain $8\\%$ acidity from $1$ litre of $12\\%$ stock, one must add $0.5$ litres of water (pure dilution).`,
+      `Consider a case where a boat covers $42$ km downstream in $2$ h and the same distance upstream in $4$ h. Its speed in still water is $15.8$ km/h.`,
+      `After $7$ EUR is taken off a bill, half the remainder equals $4$ EUR. The original bill was $19$ EUR.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$2(2s+4)=44$$
-$$s=9$$
-Longer side $13$ cm.
+$$d+28+12=2(d+12)$$
+$$d=16$$
 
 The statement is False.`,
       `**B.** → True
 
-$$\\frac{56+6}{2}=31$$
+Let the shorter side be $s$ cm. Then $s(s+2)=99$:
+$$s^2+2s-99=0$$
+$$(s-9)(s+11)=0$$
+$$s=9$$
+Longer side: $11$ cm.
 
-The statement is True.`,
+The longer side is $11$ cm.`,
       `**C.** → True
 
-$$\\frac{16\\cdot4+4\\cdot4}{8}=10$$
+$$\\frac{0.12}{1+w}=\\frac{8}{100}$$
+$$w=0.5$$
 
 The statement is True.`,
       `**D.** → True
 
-$$\\frac{1}{5}+\\frac{1}{8}=\\frac{1}{t}$$
-$$t=3.076923076923077$$
+Downstream $21$ km/h, upstream $10.5$ km/h.
+Still water: $\\frac{21+10.5}{2}=15.75$ km/h.
 
 The statement is True.`,
       `**E.** → False
 
-$$240\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{10}{100})=162$$
+$$\\frac{x-7}{2}=4$$
+$$x=15$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 11,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -567,45 +583,46 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a train $180$ m long passes a signal pole in $12$ s. Its speed is $54$ km/h.`,
-      `In an exam item, a plan charges $20$ EUR per month plus $0.12$ EUR per minute. With $150$ minutes used, the bill is $38$ EUR.`,
-      `Three test scores average $79$. Two of them are $84$ and $85$. The third score is $71$.`,
-      `A rectangular lawn $10$ m by $14$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $112$ m$^{2}$.`,
-      `Three consecutive odd integers add up to $45$. The largest equals $20$.`,
+      `Consider a case where a boat covers $42$ km downstream in $2$ h and the same distance upstream in $3$ h. Its speed in still water is $17.5$ km/h.`,
+      `After $7$ EUR is taken off a bill, half the remainder equals $4$ EUR. The original bill was $15$ EUR.`,
+      `A car travels at an average speed of $96$ km/h. At $3$ pm, it has traveled a total distance of $168$ km. Under these conditions, it started traveling at $14:35$ pm.`,
+      `Towns $P$ and $Q$ are $198$ km apart. At noon a car leaves $P$ at $66$ km/h; $40$ minutes later another leaves $Q$ at $72$ km/h toward $P$. They meet $67$ minutes after noon.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $7$ EUR.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$v=\\frac{180}{12}=15\\text{ m/s}$$
-$$15\\cdot 3.6=54\\text{ km/h}$$
+Downstream $21$ km/h, upstream $14$ km/h.
+Still water: $\\frac{21+14}{2}=17.5$ km/h.
 
 The statement is True.`,
       `**B.** → True
 
-$$20+0.12\\cdot150=38$$
+$$\\frac{x-7}{2}=4$$
+$$x=15$$
 
 The statement is True.`,
       `**C.** → False
 
-$$\\frac{a+b+c}{3}=79$$
-$$c=68$$
+$$t=\\frac{168}{96}=1.75$$ h $=105$ min.
+Counting back from $3$ pm gives $13:15$ pm.
 
 The statement is False.`,
       `**D.** → True
 
-Outer minus inner:
-$$(14)(18)-140=112$$
+Head start: $44$ km. Gap left: $154$ km.
+$$t=\\frac{154}{138}\\text{ h}=67\\text{ min after noon}$$
 
 The statement is True.`,
       `**E.** → False
 
-$$3n+6=45$$
-$$n=13$$, largest $17$.
+$$2p+6=14$$
+$$p=4$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 12,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -616,36 +633,38 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Swapping the digits of a two-digit number increases it by $2$. The original number is $88$.`,
-      `Inlet $A$ fills a pool in $6$ h while outlet $B$ empties it in $10$ h (both open, empty pool). The pool fills in $19$ h.`,
-      `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $55$.`,
-      `In an exam item, an aluminium bar of length $3.2$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is $129$ cm.`,
+      `Towns $P$ and $Q$ are $234$ km apart. At noon a car leaves $P$ at $66$ km/h; $40$ minutes later another leaves $Q$ at $72$ km/h toward $P$. They meet $86$ minutes after noon.`,
+      `A shop doubles a price and adds $6$ EUR. The till shows $14$ EUR. The original price was $7$ EUR.`,
+      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $40$ cm, then the longer side is $12$ cm.`,
+      `In an exam item, a prize fund of $13000$ EUR is split so that $2$nd place receives $85\\%$ of $1$st and $3$rd receives $85\\%$ of $2$nd. Then the $2$nd-place prize is $4299$ EUR.`,
       `A mother is $28$ years older than her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $16$ years old.`,
     ],
     answer_key: [false, false, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$(88)-(88)=0$$
+Head start: $44$ km. Gap left: $190$ km.
+$$t=\\frac{190}{138}\\text{ h}=83\\text{ min after noon}$$
 
 The statement is False.`,
       `**B.** → False
 
-$$\\frac{1}{6}-\\frac{1}{10}=\\frac{1}{t}$$
-$$t=15$$
+$$2p+6=14$$
+$$p=4$$
 
 The statement is False.`,
       `**C.** → True
 
-$$\\frac{4}{7}x-\\frac{2}{7}x=16$$
-$$\\frac{2}{7}x=16$$
-$$x=55$$
+$$2(2s+4)=40$$
+$$s=8$$
+Longer side $12$ cm.
 
 The statement is True.`,
       `**D.** → False
 
-$$s+(s+70)=320$$
-$$s=125$$
+$$a+0.85a+0.7224999999999999a=13000$$
+$$a=\\frac{13000}{2.57}$$
+Second place: $0.85a\\approx4295$ EUR.
 
 The statement is False.`,
       `**E.** → True
@@ -655,7 +674,7 @@ $$d=16$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 13,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -666,45 +685,50 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a courier rides $36$ km out at $18$ km/h and returns at $10$ km/h over the same route. The round trip lasts $5.6$ hours (not the arithmetic mean of the two speeds).`,
-      `A kitchen manual lists $750$ g of sugar for $8$ servings. Baking $17$ servings requires $1597$ g of sugar.`,
-      `A till contains only $2$ EUR and $5$ EUR coins: $15$ coins totalling $51$ EUR. Exactly $7$ of them are $5$ EUR coins.`,
-      `Towns $P$ and $Q$ are $162$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $60$ km/h toward $P$. They meet $74$ minutes after noon.`,
-      `Consider a case where a car travels at an average speed of $80$ km/h. At $3$ pm, it has traveled a total distance of $140$ km. Then it started traveling at $14:35$ pm.`,
+      `In an exam item, a prize fund of $16000$ EUR is split so that $2$nd place receives $85\\%$ of $1$st and $3$rd receives $85\\%$ of $2$nd. Then the $2$nd-place prize is $5287$ EUR.`,
+      `A mother is $32$ years older than her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $24$ years old.`,
+      `Given a rectangle with area $45$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $9$ cm.`,
+      `To obtain $6\\%$ acidity from $1$ litre of $9\\%$ stock, one must add $3.5$ litres of water (pure dilution).`,
+      `Consider a case where a boat covers $42$ km downstream in $2$ h and the same distance upstream in $3$ h. Its speed in still water is $20.5$ km/h.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{36}{18}+\\frac{36}{10}=5.6$$
+$$a+0.85a+0.7224999999999999a=16000$$
+$$a=\\frac{16000}{2.57}$$
+Second place: $0.85a\\approx5287$ EUR.
 
 The statement is True.`,
       `**B.** → False
 
-$$750\\cdot\\frac{17}{8}=1594$$
+$$d+32+12=2(d+12)$$
+$$d=20$$
 
 The statement is False.`,
       `**C.** → True
 
-$$x+y=15$$, $$5x+2y=51$$
-$$3x=21$$
-$$x=7$$
+Let the shorter side be $s$ cm. Then $s(s+4)=45$:
+$$s^2+4s-45=0$$
+$$(s-5)(s+9)=0$$
+$$s=5$$
+Longer side: $9$ cm.
 
-The statement is True.`,
+The longer side is $9$ cm.`,
       `**D.** → False
 
-Head start: $27$ km. Gap left: $135$ km.
-$$t=\\frac{135}{114}\\text{ h}=71\\text{ min after noon}$$
+$$\\frac{0.09}{1+w}=\\frac{6}{100}$$
+$$w=0.5$$
 
 The statement is False.`,
       `**E.** → False
 
-$$t=\\frac{140}{80}=1.75$$ h $=105$ min.
-Counting back from $3$ pm gives $13:15$ pm.
+Downstream $21$ km/h, upstream $14$ km/h.
+Still water: $\\frac{21+14}{2}=17.5$ km/h.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 14,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -756,7 +780,7 @@ $$130\\cdot(1+\\frac{40}{100})=182$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 15,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -806,7 +830,7 @@ $$t=3.076923076923077$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 16,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -854,7 +878,7 @@ $$(12)(16)-96=96$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 17,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -904,7 +928,7 @@ $$s=125$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 18,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -952,7 +976,7 @@ $$t=\\frac{135}{132}\\text{ h}=61\\text{ min after noon}$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 19,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1005,7 +1029,7 @@ Longer side: $6$ cm.
 
 The longer side is $6$ cm.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 20,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1016,46 +1040,45 @@ The longer side is $6$ cm.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A mother is $32$ years older than her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $24$ years old.`,
-      `A prize fund of $17500$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Then the $2$nd-place prize is $5676$ EUR.`,
-      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $28$ cm, then the longer side is $11$ cm.`,
-      `Two numbers add to $60$ and differ by $6$. The larger number is $33$.`,
-      `In an exam item, mixing $4$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $14\\%$ concentration.`,
+      `On a four-problem test the class average is $80$ points. Student $P$ scored $72$, student $R$ scored $85$, and student $S$ scored exactly $2$ points above the average. Student $Q$'s score was $83$ points.`,
+      `Three test scores average $80$. Two of them are $78$ and $81$. The third score is $81$.`,
+      `To obtain $6\\%$ acidity from $1$ litre of $9\\%$ stock, one must add $3.5$ litres of water (pure dilution).`,
+      `Car $A$ leaves at $2$ pm at $66$ km/h. Car $B$ pursues from the same place at $2{:}40$ pm at $72$ km/h. $B$ catches $A$ after $440$ minutes of chasing.`,
+      `In an exam item, a mother is $36$ years older than her daughter. In $9$ years the mother will be twice as old as the daughter will be then. The daughter is now $29$ years old.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$d+32+12=2(d+12)$$
-$$d=20$$
+$$Q=4\\cdot80-72-85-82=81$$
 
 The statement is False.`,
       `**B.** → True
 
-$$a+0.75a+0.5625a=17500$$
-$$a=\\frac{17500}{2.31}$$
-Second place: $0.75a\\approx5676$ EUR.
+$$\\frac{a+b+c}{3}=80$$
+$$c=81$$
 
 The statement is True.`,
       `**C.** → False
 
-$$2(2s+4)=28$$
-$$s=5$$
-Longer side $9$ cm.
+$$\\frac{0.09}{1+w}=\\frac{6}{100}$$
+$$w=0.5$$
 
 The statement is False.`,
       `**D.** → True
 
-$$\\frac{60+6}{2}=33$$
+Head start $44$ km. Relative speed $6$ km/h.
+$$t=\\frac{44}{6}\\text{ h}=440\\text{ min}$$
 
 The statement is True.`,
       `**E.** → False
 
-$$\\frac{16\\cdot4+4\\cdot4}{8}=10$$
+$$d+36+9=2(d+9)$$
+$$d=27$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 21,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1066,44 +1089,48 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a car travels at an average speed of $80$ km/h. At $3$ pm, it has traveled a total distance of $140$ km. Then it started traveling at $13:15$ pm.`,
-      `In an exam item, a liquid cools linearly by $7$°C per minute from $95$°C with no reheating. After $21$ minutes its temperature is $-52$°C.`,
-      `A train $180$ m long passes a signal pole in $12$ s. Its speed is $56$ km/h.`,
-      `A plan charges $20$ EUR per month plus $0.12$ EUR per minute. With $180$ minutes used, the bill is $44.6$ EUR.`,
-      `Three test scores average $79$. Two of them are $72$ and $85$. The third score is $80$.`,
+      `Consider a case where a chemist pours $2$ L of $14\\%$ acid, then $3$ L of $8\\%$ acid, then $1$ L of $4\\%$ acid into one flask (volumes add; no spillage). The final concentration by volume is $9.3\\%$.`,
+      `In an exam item, a rectangular lawn $9$ m by $14$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $108$ m$^{2}$.`,
+      `If one side of a rectangle is by $2$ cm longer than the other one and the rectangle's area is $63$ cm$^{2}$, then the length of the longer side is $11$ cm.`,
+      `Swapping the digits of a two-digit number increases it by $-20$. The original number is $86$.`,
+      `A prize fund of $11500$ EUR is split so that $2$nd place receives $85\\%$ of $1$st and $3$rd receives $85\\%$ of $2$nd. Then the $2$nd-place prize is $3800$ EUR.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$t=\\frac{140}{80}=1.75$$ h $=105$ min.
-Counting back from $3$ pm gives $13:15$ pm.
+$$\\frac{14\\cdot2+8\\cdot3+4\\cdot1}{6}=9.3\\%$$
 
 The statement is True.`,
       `**B.** → True
 
-$$T=95-7\\cdot21=-52$$
+Outer minus inner:
+$$(13)(18)-126=108$$
 
 The statement is True.`,
       `**C.** → False
 
-$$v=\\frac{180}{12}=15\\text{ m/s}$$
-$$15\\cdot 3.6=54\\text{ km/h}$$
+Let the shorter side be $s$ cm. Then $s(s+2)=63$:
+$$s^2+2s-63=0$$
+$$(s-7)(s+9)=0$$
+$$s=7$$
+Longer side: $9$ cm.
 
-The statement is False.`,
+The longer side is $9$ cm, not $11$ cm.`,
       `**D.** → False
 
-$$20+0.12\\cdot180=41.6$$
+$$(68)-(86)=-18$$
 
 The statement is False.`,
       `**E.** → True
 
-$$\\frac{a+b+c}{3}=79$$
-$$c=80$$
+$$a+0.85a+0.7224999999999999a=11500$$
+$$a=\\frac{11500}{2.57}$$
+Second place: $0.85a\\approx3800$ EUR.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 22,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1114,28 +1141,28 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An item costing $90$ EUR is marked up by $40\\%$ for retail. The shelf price is $128$ EUR.`,
-      `Car $A$ leaves at $2$ pm at $66$ km/h. Car $B$ pursues from the same place at $2{:}40$ pm at $72$ km/h. $B$ catches $A$ after $444$ minutes of chasing.`,
-      `Swapping the digits of a two-digit number increases it by $0$. The original number is $88$.`,
+      `A liquid cools linearly by $7$°C per minute from $95$°C with no reheating. After $15$ minutes its temperature is $-14$°C.`,
+      `Three consecutive odd integers add up to $81$. The largest equals $32$.`,
+      `Consider a case where a device lists at $420$ EUR. The retailer applies a $25\\%$ discount, then an additional $10\\%$ off the reduced price. VAT at $20\\%$ is charged on the discounted price only. The customer pays $340$ EUR.`,
       `In an exam item, inlet $A$ fills a pool in $6$ h while outlet $B$ empties it in $10$ h (both open, empty pool). The pool fills in $15$ h.`,
-      `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $59$.`,
+      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $44$ cm, then the longer side is $16$ cm.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$90\\cdot(1+\\frac{40}{100})=126$$
+$$T=95-7\\cdot15=-10$$
 
 The statement is False.`,
       `**B.** → False
 
-Head start $44$ km. Relative speed $6$ km/h.
-$$t=\\frac{44}{6}\\text{ h}=440\\text{ min}$$
+$$3n+6=81$$
+$$n=25$$, largest $29$.
 
 The statement is False.`,
       `**C.** → True
 
-$$(88)-(88)=0$$
+$$420\\times0.75\\times0.9\\times1.2=340$$
 
 The statement is True.`,
       `**D.** → True
@@ -1146,13 +1173,13 @@ $$t=15$$
 The statement is True.`,
       `**E.** → False
 
-$$\\frac{4}{7}x-\\frac{2}{7}x=16$$
-$$\\frac{2}{7}x=16$$
-$$x=55$$
+$$2(2s+4)=44$$
+$$s=9$$
+Longer side $13$ cm.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 23,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1163,44 +1190,45 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, worker $A$ finishes a job alone in $5$ days, worker $B$ in $7$ days. Together they need $2.92$ days.`,
-      `A jacket priced at $360$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is $218$ EUR.`,
-      `A courier rides $42$ km out at $18$ km/h and returns at $10$ km/h over the same route. The round trip lasts $9.5$ hours (not the arithmetic mean of the two speeds).`,
-      `A kitchen manual lists $450$ g of sugar for $8$ servings. Baking $17$ servings requires $956$ g of sugar.`,
-      `Consider a case where a till contains only $2$ EUR and $5$ EUR coins: $16$ coins totalling $56$ EUR. Exactly $8$ of them are $5$ EUR coins.`,
+      `In an exam item, a train $180$ m long passes a signal pole in $12$ s. Its speed is $54$ km/h.`,
+      `A pump delivers $30$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $23$ litres.`,
+      `A prize fund of $15400$ EUR is awarded to three finishers only: $2$nd place receives $80\\%$ of $1$st place, and $3$rd place receives $80\\%$ of $2$nd place (the entire fund is distributed; nothing remains). Each winner then pays $15\\%$ tax on their own gross prize. After tax, the $2$nd-place winner receives $4295$ EUR net.`,
+      `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $45$.`,
+      `Vehicle $A$ leaves a depot at $8{:}00$ at $60$ km/h. Vehicle $B$ leaves the same depot at $8{:}50$ at $90$ km/h along the same road in pursuit. From $B$'s departure until $B$ catches $A$, vehicle $B$ runs for $100$ minutes.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{1}{5}+\\frac{1}{7}=\\frac{1}{t}$$
-$$t=2.9166666666666665$$
+$$v=\\frac{180}{12}=15\\text{ m/s}$$
+$$15\\cdot 3.6=54\\text{ km/h}$$
 
 The statement is True.`,
       `**B.** → False
 
-$$360\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=216$$
+$$\\frac{3}{5}C=30\\cdot25$$
+$$C=21$$
 
 The statement is False.`,
       `**C.** → False
 
-$$\\frac{42}{18}+\\frac{42}{10}=6.533333333333333$$
+$$2.44a=15400$$, gross $2$nd $=5049$, net $0.85\\times5049=4292$.
 
 The statement is False.`,
       `**D.** → True
 
-$$450\\cdot\\frac{17}{8}=956$$
+$$\\frac{4}{7}x-\\frac{2}{7}x=16$$
+$$\\frac{2}{7}x=16$$
+$$x=45$$
 
 The statement is True.`,
       `**E.** → True
 
-$$x+y=16$$, $$5x+2y=56$$
-$$3x=24$$
-$$x=8$$
+Head start $50$ km; gap closes at $30$ km/h → $100$ min.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 24,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1211,46 +1239,43 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangular lawn $8$ m by $14$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $107$ m$^{2}$.`,
-      `Three consecutive odd integers add up to $69$. The largest equals $25$.`,
-      `In an exam item, a pump delivers $21$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $15$ litres.`,
-      `A boat covers $48$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is $19.8$ km/h.`,
-      `To obtain $8\\%$ acidity from $1$ litre of $11\\%$ stock, one must add $3.4$ litres of water (pure dilution).`,
+      `A plan charges $30$ EUR per month plus $0.12$ EUR per minute. With $120$ minutes used, the bill is $47.4$ EUR.`,
+      `Consider a case where a boat covers $42$ km downstream in $2$ h and the same distance upstream in $4$ h. Its speed in still water is $15.8$ km/h.`,
+      `In an exam item, an item costing $110$ EUR is marked up by $40\\%$ for retail. The shelf price is $154$ EUR.`,
+      `An aluminium bar of length $3.2$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is $129$ cm.`,
+      `Towns $X$ and $Y$ are $156$ km apart. At noon a car leaves $X$ toward $Y$ at $48$ km/h. Thirty minutes later a second car leaves $Y$ toward $X$ at $72$ km/h; neither stops en route. At the meeting instant, the second car has been driving for exactly $38$ minutes since its $12{:}30$ pm departure.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-Outer minus inner:
-$$(12)(18)-112=104$$
+$$30+0.12\\cdot120=44.4$$
 
 The statement is False.`,
       `**B.** → True
 
-$$3n+6=69$$
-$$n=21$$, largest $25$.
+Downstream $21$ km/h, upstream $10.5$ km/h.
+Still water: $\\frac{21+10.5}{2}=15.75$ km/h.
 
 The statement is True.`,
       `**C.** → True
 
-$$\\frac{3}{5}C=21\\cdot25$$
-$$C=15$$
+$$110\\cdot(1+\\frac{40}{100})=154$$
 
 The statement is True.`,
       `**D.** → False
 
-Downstream $24$ km/h, upstream $9.6$ km/h.
-Still water: $\\frac{24+9.6}{2}=16.8$ km/h.
+$$s+(s+70)=320$$
+$$s=125$$
 
 The statement is False.`,
       `**E.** → False
 
-$$\\frac{0.11}{1+w}=\\frac{8}{100}$$
-$$w=0.4$$
+Gap after head start $132$ km; close at $120$ km/h → $66$ min after noon; second car: $36$ min.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 25,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1261,38 +1286,36 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An aluminium bar of length $3.6$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is $145$ cm.`,
-      `A mother is $32$ years older than her daughter. In $10$ years the mother will be twice as old as the daughter will be then. The daughter is now $25$ years old.`,
-      `A prize fund of $22000$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Then the $2$nd-place prize is $7135$ EUR.`,
-      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $40$ cm, then the longer side is $12$ cm.`,
+      `Three test scores average $79$. Two of them are $84$ and $85$. The third score is $68$.`,
+      `To obtain $8\\%$ acidity from $1$ litre of $10\\%$ stock, one must add $3.3$ litres of water (pure dilution).`,
+      `Car $A$ leaves at $2$ pm at $54$ km/h. Car $B$ pursues from the same place at $2{:}20$ pm at $84$ km/h. $B$ catches $A$ after $36$ minutes of chasing.`,
+      `Consider a case where a mother is $28$ years older than her daughter. In $11$ years the mother will be twice as old as the daughter will be then. The daughter is now $17$ years old.`,
       `In an exam item, two numbers add to $52$ and differ by $6$. The larger number is $32$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$s+(s+70)=360$$
-$$s=145$$
+$$\\frac{a+b+c}{3}=79$$
+$$c=68$$
 
 The statement is True.`,
       `**B.** → False
 
-$$d+32+10=2(d+10)$$
-$$d=22$$
+$$\\frac{0.1}{1+w}=\\frac{8}{100}$$
+$$w=0.3$$
 
 The statement is False.`,
       `**C.** → True
 
-$$a+0.75a+0.5625a=22000$$
-$$a=\\frac{22000}{2.31}$$
-Second place: $0.75a\\approx7135$ EUR.
+Head start $18$ km. Relative speed $30$ km/h.
+$$t=\\frac{18}{30}\\text{ h}=36\\text{ min}$$
 
 The statement is True.`,
       `**D.** → True
 
-$$2(2s+4)=40$$
-$$s=8$$
-Longer side $12$ cm.
+$$d+28+11=2(d+11)$$
+$$d=17$$
 
 The statement is True.`,
       `**E.** → False
@@ -1301,7 +1324,7 @@ $$\\frac{52+6}{2}=29$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 26,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1312,44 +1335,48 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Towns $P$ and $Q$ are $198$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $78$ km/h toward $P$. They meet $80$ minutes after noon.`,
-      `In an exam item, a car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $13:15$ pm.`,
-      `A liquid cools linearly by $7$°C per minute from $95$°C with no reheating. After $21$ minutes its temperature is $-55$°C.`,
-      `A train $180$ m long passes a signal pole in $12$ s. Its speed is $56$ km/h.`,
-      `A plan charges $20$ EUR per month plus $0.12$ EUR per minute. With $120$ minutes used, the bill is $34.4$ EUR.`,
+      `Consider a case where a rectangular lawn $11$ m by $15$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $124$ m$^{2}$.`,
+      `In an exam item, given a rectangle with area $60$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $10$ cm.`,
+      `Swapping the digits of a two-digit number increases it by $38$. The original number is $48$.`,
+      `A prize fund of $19000$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Then the $2$nd-place prize is $6164$ EUR.`,
+      `Mixing $4$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $10\\%$ concentration.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Head start: $27$ km. Gap left: $171$ km.
-$$t=\\frac{171}{132}\\text{ h}=78\\text{ min after noon}$$
+Outer minus inner:
+$$(15)(19)-165=120$$
 
 The statement is False.`,
       `**B.** → True
 
-$$t=\\frac{112}{64}=1.75$$ h $=105$ min.
-Counting back from $3$ pm gives $13:15$ pm.
+Let the shorter side be $s$ cm. Then $s(s+4)=60$:
+$$s^2+4s-60=0$$
+$$(s-6)(s+10)=0$$
+$$s=6$$
+Longer side: $10$ cm.
 
-The statement is True.`,
+The longer side is $10$ cm.`,
       `**C.** → False
 
-$$T=95-7\\cdot21=-52$$
+$$(84)-(48)=36$$
 
 The statement is False.`,
       `**D.** → False
 
-$$v=\\frac{180}{12}=15\\text{ m/s}$$
-$$15\\cdot 3.6=54\\text{ km/h}$$
+$$a+0.75a+0.5625a=19000$$
+$$a=\\frac{19000}{2.31}$$
+Second place: $0.75a\\approx6162$ EUR.
 
 The statement is False.`,
       `**E.** → True
 
-$$20+0.12\\cdot120=34.4$$
+$$\\frac{16\\cdot4+4\\cdot4}{8}=10$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 27,
     solution_overview: `Five independent exam sentences. Model each story as one linear equation (or a short chain), solve exactly, then compare with the closing claim.`,
   },
@@ -1360,43 +1387,39 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Given a rectangle with area $32$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $8$ cm.`,
-      `An item costing $90$ EUR is marked up by $40\\%$ for retail. The shelf price is $126$ EUR.`,
-      `Car $A$ leaves at $2$ pm at $66$ km/h. Car $B$ pursues from the same place at $2{:}40$ pm at $72$ km/h. $B$ catches $A$ after $440$ minutes of chasing.`,
-      `In an exam item, swapping the digits of a two-digit number increases it by $2$. The original number is $88$.`,
-      `Inlet $A$ fills a pool in $6$ h while outlet $B$ empties it in $10$ h (both open, empty pool). The pool fills in $19$ h.`,
+      `Vehicle $A$ leaves a depot at $8{:}00$ at $60$ km/h. Vehicle $B$ leaves the same depot at $8{:}50$ at $90$ km/h along the same road in pursuit. From $B$'s departure until $B$ catches $A$, vehicle $B$ runs for $100$ minutes.`,
+      `A cyclist rides $30$ km to a village at $15$ km/h and returns at $10$ km/h over the same road. A spectator incorrectly claims the round trip took as long as riding $60$ km at the average of the two speeds ($12.5$ km/h), i.e. $4.8$ hours in total.`,
+      `Consider a case where a prize fund of $19000$ EUR is split so that $2$nd place receives $85\\%$ of $1$st and $3$rd receives $85\\%$ of $2$nd. Then the $2$nd-place prize is $6278$ EUR.`,
+      `In an exam item, a device lists at $420$ EUR. The retailer applies a $25\\%$ discount, then an additional $10\\%$ off the reduced price. VAT at $20\\%$ is charged on the discounted price only. The customer pays $344$ EUR.`,
+      `A rectangular sports field measures $10$ m by $18$ m. A uniform $1.5$ m maintenance strip is paved around the entire field (outer edge is rectangular; the field itself is not paved). The paved strip alone covers $95$ m$^{2}$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Let the shorter side be $s$ cm. Then $s(s+4)=32$:
-$$s^2+4s-32=0$$
-$$(s-4)(s+8)=0$$
-$$s=4$$
-Longer side: $8$ cm.
+Head start $50$ km; gap closes at $30$ km/h → $100$ min.
 
-The longer side is $8$ cm.`,
+The statement is True.`,
       `**B.** → True
 
-$$90\\cdot(1+\\frac{40}{100})=126$$
+Actual $3+2=5$ h; mean-speed trap gives $4.8$ h.
 
 The statement is True.`,
       `**C.** → True
 
-Head start $44$ km. Relative speed $6$ km/h.
-$$t=\\frac{44}{6}\\text{ h}=440\\text{ min}$$
+$$a+0.85a+0.7224999999999999a=19000$$
+$$a=\\frac{19000}{2.57}$$
+Second place: $0.85a\\approx6278$ EUR.
 
 The statement is True.`,
       `**D.** → False
 
-$$(88)-(88)=0$$
+$$420\\times0.75\\times0.9\\times1.2=340$$
 
 The statement is False.`,
       `**E.** → False
 
-$$\\frac{1}{6}-\\frac{1}{10}=\\frac{1}{t}$$
-$$t=15$$
+Outer $(10+3)(10+11)$ minus inner $180$.
 
 The statement is False.`,
     ],
@@ -1411,38 +1434,40 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, mixing $4$ L of $14\\%$ saline with $3$ L of $4\\%$ saline yields a solution of $12.7\\%$ concentration.`,
-      `Worker $A$ finishes a job alone in $5$ days, worker $B$ in $7$ days. Together they need $5.92$ days.`,
-      `A jacket priced at $280$ EUR is reduced by $25\\%$. It follows that the sale price is cut by a further $20\\%$. The final price is $170$ EUR.`,
-      `A courier rides $30$ km out at $18$ km/h and returns at $10$ km/h over the same route. The round trip lasts $4.7$ hours (not the arithmetic mean of the two speeds).`,
-      `Consider a case where a kitchen manual lists $675$ g of sugar for $8$ servings. Baking $17$ servings requires $1434$ g of sugar.`,
+      `In an exam item, a device lists at $420$ EUR. The retailer applies a $25\\%$ discount, then an additional $10\\%$ off the reduced price. VAT at $20\\%$ is charged on the discounted price only. The customer pays $344$ EUR.`,
+      `A rectangular sports field measures $10$ m by $18$ m. A uniform $1.5$ m maintenance strip is paved around the entire field (outer edge is rectangular; the field itself is not paved). The paved strip alone covers $95$ m$^{2}$.`,
+      `To obtain $6\\%$ acidity from $1$ litre of $10\\%$ stock, one must add $3.7$ litres of water (pure dilution).`,
+      `A chemist pours $2$ L of $14\\%$ acid, then $3$ L of $8\\%$ acid, then $1$ L of $4\\%$ acid into one flask (volumes add; no spillage). The final concentration by volume is $9.3\\%$.`,
+      `A prize money of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for $2$nd place is $4000$ EUR.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{14\\cdot4+4\\cdot3}{7}=9.7$$
+$$420\\times0.75\\times0.9\\times1.2=340$$
 
 The statement is False.`,
       `**B.** → False
 
-$$\\frac{1}{5}+\\frac{1}{7}=\\frac{1}{t}$$
-$$t=2.9166666666666665$$
+Outer $(10+3)(10+11)$ minus inner $180$.
 
 The statement is False.`,
       `**C.** → False
 
-$$280\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=168$$
+$$\\frac{0.1}{1+w}=\\frac{6}{100}$$
+$$w=0.7$$
 
 The statement is False.`,
       `**D.** → True
 
-$$\\frac{30}{18}+\\frac{30}{10}=4.666666666666667$$
+$$\\frac{14\\cdot2+8\\cdot3+4\\cdot1}{6}=9.3\\%$$
 
 The statement is True.`,
       `**E.** → True
 
-$$675\\cdot\\frac{17}{8}=1434$$
+$$2.44a=12200$$
+$$a=5000$$
+$$2\\text{nd}=4000$$ EUR.
 
 The statement is True.`,
     ],
@@ -1457,42 +1482,41 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three test scores average $78$. Two of them are $72$ and $85$. The third score is $77$.`,
-      `Consider a case where a rectangular lawn $11$ m by $17$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $131$ m$^{2}$.`,
-      `In an exam item, three consecutive odd integers add up to $69$. The largest equals $29$.`,
-      `A pump delivers $30$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $23$ litres.`,
-      `A boat covers $36$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is $12.6$ km/h.`,
+      `A chemist pours $2$ L of $14\\%$ acid, then $3$ L of $8\\%$ acid, then $1$ L of $4\\%$ acid into one flask (volumes add; no spillage). The final concentration by volume is $9.3\\%$.`,
+      `A prize money of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for $2$nd place is $4004$ EUR.`,
+      `In an exam item, a car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $80$ km. Then it started traveling at $14:05$ pm.`,
+      `Towns $X$ and $Y$ are $180$ km apart. At noon a car leaves $X$ toward $Y$ at $48$ km/h. Thirty minutes later a second car leaves $Y$ toward $X$ at $72$ km/h; neither stops en route. At the meeting instant, the second car has been driving for exactly $50$ minutes since its $12{:}30$ pm departure.`,
+      `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with $0.6$ litres of water to get the right concentration.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{a+b+c}{3}=78$$
-$$c=77$$
+$$\\frac{14\\cdot2+8\\cdot3+4\\cdot1}{6}=9.3\\%$$
 
 The statement is True.`,
       `**B.** → False
 
-Outer minus inner:
-$$(15)(21)-187=128$$
+$$2.44a=12200$$
+$$a=5000$$
+$$2\\text{nd}=4000$$ EUR.
 
 The statement is False.`,
       `**C.** → False
 
-$$3n+6=69$$
-$$n=21$$, largest $25$.
+$$t=\\frac{80}{64}=1.25$$ h $=75$ min.
+Counting back from $3$ pm gives $13:45$ pm.
 
 The statement is False.`,
       `**D.** → False
 
-$$\\frac{3}{5}C=30\\cdot25$$
-$$C=21$$
+Gap after head start $156$ km; close at $120$ km/h → $78$ min after noon; second car: $48$ min.
 
 The statement is False.`,
       `**E.** → True
 
-Downstream $18$ km/h, upstream $7.2$ km/h.
-Still water: $\\frac{18+7.2}{2}=12.6$ km/h.
+$$0.08/(1+w)=0.05$$
+$$w=0.6$$
 
 The statement is True.`,
     ],
@@ -1507,45 +1531,40 @@ The statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $59$.`,
-      `An aluminium bar of length $3.6$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is $145$ cm.`,
-      `A mother is $32$ years older than her daughter. In $8$ years the mother will be twice as old as the daughter will be then. The daughter is now $24$ years old.`,
-      `Consider a case where a prize fund of $13000$ EUR is split so that $2$nd place receives $75\\%$ of $1$st and $3$rd receives $75\\%$ of $2$nd. Then the $2$nd-place prize is $4216$ EUR.`,
-      `In an exam item, if one side of a rectangle is by $4$ cm longer than the other and the perimeter is $32$ cm, then the longer side is $14$ cm.`,
+      `Towns $X$ and $Y$ are $180$ km apart. At noon a car leaves $X$ toward $Y$ at $48$ km/h. Thirty minutes later a second car leaves $Y$ toward $X$ at $72$ km/h; neither stops en route. At the meeting instant, the second car has been driving for exactly $50$ minutes since its $12{:}30$ pm departure.`,
+      `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with $0.6$ litres of water to get the right concentration.`,
+      `If one side of a rectangle is by $6$ cm longer than the other and the perimeter is $32$ cm, then the longer side is $11$ cm.`,
+      `Consider a case where a prize fund of $13800$ EUR is awarded to three finishers only: $2$nd place receives $80\\%$ of $1$st place, and $3$rd place receives $80\\%$ of $2$nd place (the entire fund is distributed; nothing remains). Each winner then pays $15\\%$ tax on their own gross prize. After tax, the $2$nd-place winner receives $3846$ EUR net.`,
+      `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $2:45$ pm.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{4}{7}x-\\frac{2}{7}x=16$$
-$$\\frac{2}{7}x=16$$
-$$x=55$$
+Gap after head start $156$ km; close at $120$ km/h → $78$ min after noon; second car: $48$ min.
 
 The statement is False.`,
       `**B.** → True
 
-$$s+(s+70)=360$$
-$$s=145$$
+$$0.08/(1+w)=0.05$$
+$$w=0.6$$
 
 The statement is True.`,
       `**C.** → True
 
-$$d+32+8=2(d+8)$$
-$$d=24$$
+$$2(2s+6)=32$$
+$$s=5$$
+Longer side $11$ cm.
 
 The statement is True.`,
       `**D.** → True
 
-$$a+0.75a+0.5625a=13000$$
-$$a=\\frac{13000}{2.31}$$
-Second place: $0.75a\\approx4216$ EUR.
+$$2.44a=13800$$, gross $2$nd $=4525$, net $0.85\\times4525=3846$.
 
 The statement is True.`,
       `**E.** → False
 
-$$2(2s+4)=32$$
-$$s=6$$
-Longer side $10$ cm.
+$$t=112/64=1.75$$ h $=1$ h $45$ min → start $13:15$ pm.
 
 The statement is False.`,
     ],
@@ -1560,42 +1579,43 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a till contains only $2$ EUR and $5$ EUR coins: $16$ coins totalling $56$ EUR. Exactly $8$ of them are $5$ EUR coins.`,
-      `In an exam item, towns $P$ and $Q$ are $198$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $66$ km/h toward $P$. They meet $86$ minutes after noon.`,
-      `A car travels at an average speed of $96$ km/h. At $3$ pm, it has traveled a total distance of $168$ km. Under these conditions, it started traveling at $14:35$ pm.`,
-      `A liquid cools linearly by $7$°C per minute from $95$°C with no reheating. After $21$ minutes its temperature is $-52$°C.`,
-      `A train $180$ m long passes a signal pole in $12$ s. Its speed is $56$ km/h.`,
+      `Consider a case where a prize fund of $15400$ EUR is awarded to three finishers only: $2$nd place receives $80\\%$ of $1$st place, and $3$rd place receives $80\\%$ of $2$nd place (the entire fund is distributed; nothing remains). Each winner then pays $15\\%$ tax on their own gross prize. After tax, the $2$nd-place winner receives $4292$ EUR net.`,
+      `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $13:15$ pm.`,
+      `Given a rectangle with area $60$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $14$ cm.`,
+      `A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. The son is now $20$ years old.`,
+      `If one side of a rectangle is by $3$ cm longer than the other one and the rectangle's area is $40$ cm$^{2}$, then the length of the longer side is $9$ cm.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$x+y=16$$, $$5x+2y=56$$
-$$3x=24$$
-$$x=8$$
+$$2.44a=15400$$, gross $2$nd $=5049$, net $0.85\\times5049=4292$.
 
 The statement is True.`,
       `**B.** → True
 
-Head start: $27$ km. Gap left: $171$ km.
-$$t=\\frac{171}{120}\\text{ h}=86\\text{ min after noon}$$
+$$t=112/64=1.75$$ h $=1$ h $45$ min → start $13:15$ pm.
 
 The statement is True.`,
       `**C.** → False
 
-$$t=\\frac{168}{96}=1.75$$ h $=105$ min.
-Counting back from $3$ pm gives $13:15$ pm.
+Let the shorter side be $s$ cm. Then $s(s+4)=60$:
+$$s^2+4s-60=0$$
+$$(s-6)(s+10)=0$$
+$$s=6$$
+Longer side: $10$ cm.
 
-The statement is False.`,
+The longer side is $10$ cm, not $14$ cm.`,
       `**D.** → True
 
-$$T=95-7\\cdot21=-52$$
+$$s+36=2(s+8)$$
+$$s=20$$
 
 The statement is True.`,
       `**E.** → False
 
-$$v=\\frac{180}{12}=15\\text{ m/s}$$
-$$15\\cdot 3.6=54\\text{ km/h}$$
+$$x(x+3)=40$$
+$$x=5$$, longer side $8$ cm.
 
 The statement is False.`,
     ],
@@ -1610,43 +1630,40 @@ The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `To obtain $8\\%$ acidity from $1$ litre of $10\\%$ stock, one must add $3.3$ litres of water (pure dilution).`,
-      `Given a rectangle with area $32$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $11$ cm.`,
-      `An item costing $90$ EUR is marked up by $40\\%$ for retail. The shelf price is $126$ EUR.`,
-      `In an exam item, car $A$ leaves at $2$ pm at $66$ km/h. Car $B$ pursues from the same place at $2{:}40$ pm at $72$ km/h. $B$ catches $A$ after $444$ minutes of chasing.`,
-      `Swapping the digits of a two-digit number increases it by $0$. The original number is $88$.`,
+      `A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. The son is now $24$ years old.`,
+      `If one side of a rectangle is by $3$ cm longer than the other one and the rectangle's area is $40$ cm$^{2}$, then the length of the longer side is $9$ cm.`,
+      `On a four-problem test the class average is $78$ points. Student $P$ scored $74$, student $R$ scored $84$, and student $S$ scored exactly $2$ points above the average. Student $Q$'s score was $74$ points.`,
+      `In an exam item, inlet $A$ alone fills an empty pool in $4$ hours. Drain $B$ alone empties a full pool in $6$ hours. With both operating from empty (no overflow), the pool is full for the first time after $14$ hours.`,
+      `Towns $P$ and $Q$ are $234$ km apart. At noon a car leaves $P$ at $66$ km/h; $40$ minutes later another leaves $Q$ at $84$ km/h toward $P$. They meet $76$ minutes after noon.`,
     ],
     answer_key: [false, false, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{0.1}{1+w}=\\frac{8}{100}$$
-$$w=0.3$$
+$$s+36=2(s+8)$$
+$$s=20$$
 
 The statement is False.`,
       `**B.** → False
 
-Let the shorter side be $s$ cm. Then $s(s+4)=32$:
-$$s^2+4s-32=0$$
-$$(s-4)(s+8)=0$$
-$$s=4$$
-Longer side: $8$ cm.
+$$x(x+3)=40$$
+$$x=5$$, longer side $8$ cm.
 
-The longer side is $8$ cm, not $11$ cm.`,
+The statement is False.`,
       `**C.** → True
 
-$$90\\cdot(1+\\frac{40}{100})=126$$
+$$Q=4\\cdot78-74-84-80=74$$
 
 The statement is True.`,
       `**D.** → False
 
-Head start $44$ km. Relative speed $6$ km/h.
-$$t=\\frac{44}{6}\\text{ h}=440\\text{ min}$$
+$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
 
 The statement is False.`,
       `**E.** → True
 
-$$(88)-(88)=0$$
+Head start: $44$ km. Gap left: $190$ km.
+$$t=\\frac{190}{150}\\text{ h}=76\\text{ min after noon}$$
 
 The statement is True.`,
     ],
@@ -1661,44 +1678,47 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, the equation $x^2+4x+7=0$ has $no$ real roots.`,
-      `A $56$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $173$ m$^{2}$.`,
-      `A triangle with base $12$ cm and height $5$ cm has area $30$ cm$^{2}$.`,
-      `The roots of $x^2-21x+98=0$ add up to $23$.`,
-      `Two positive numbers have product $84$ and sum $22$. The larger equals $12$.`,
+      `In an exam item, two positive numbers have product $50$ and sum $15$. The larger equals $10$.`,
+      `The product of two consecutive integers is $72$. The larger integer is $11$.`,
+      `Suppose that one side of a rectangle exceeds the other by $5$ cm and the area is $50$ cm$^{2}$, the longer side is $10$ cm.`,
+      `For $x^2 -14x+40=0$, the discriminant equals $38$.`,
+      `Consider a case where a positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\Delta=-12<0$$
+$$t^2-15t+50=0$$
+$$(t-5)(t-10)=0$$
 
 The statement is True.`,
       `**B.** → False
 
-$$2(w+\\ell)=56$$
-$$\\ell=19$$
-$$A=171$$
+$$n(n+1)=72$$
+$$n=8$$
+Larger: $9$.
 
 The statement is False.`,
       `**C.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot5=30$$
+$$x(x+5)=50$$
+$$(x-5)(x+10)=0$$
+Longer: $10$ cm.
 
 The statement is True.`,
       `**D.** → False
 
-Vieta: sum $=21$.
+$$\\Delta=-14^2-4\\cdot40=36$$
 
 The statement is False.`,
       `**E.** → False
 
-$$t^2-19t+84=0$$
-$$(t-7)(t-12)=0$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 34,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -1709,46 +1729,48 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The roots of $x^2-20x+91=0$ add up to $24$.`,
-      `Two positive numbers have product $84$ and sum $19$. The larger equals $12$.`,
-      `In an exam item, the sum of squares of $59$ and its digit-reversal $95$ equals $12509$.`,
-      `A rectangle has perimeter $36$ cm; one side is $3$ cm longer than the other. The longer side is $11$ cm.`,
-      `The product of two consecutive integers is $72$. The larger integer is $9$.`,
+      `The product of two consecutive integers is $42$. The larger integer is $10$.`,
+      `If one side of a rectangle exceeds the other by $6$ cm and the area is $55$ cm$^{2}$, the longer side is $11$ cm.`,
+      `In an exam item, for $x^2 -18x+72=0$, the discriminant equals $38$.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
+      `A $48$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $119$ m$^{2}$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Vieta: sum $=20$.
+$$n(n+1)=42$$
+$$n=6$$
+Larger: $7$.
 
 The statement is False.`,
       `**B.** → True
 
-$$t^2-19t+84=0$$
-$$(t-7)(t-12)=0$$
+$$x(x+6)=55$$
+$$(x-5)(x+11)=0$$
+Longer: $11$ cm.
 
 The statement is True.`,
       `**C.** → False
 
-$$59^2+95^2=12506$$
+$$\\Delta=-18^2-4\\cdot72=36$$
 
 The statement is False.`,
       `**D.** → True
 
-$$2(2s+3)=36$$
-$$s=7.5$$
-Longer $10.5$ cm.
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is True.`,
       `**E.** → True
 
-$$n(n+1)=72$$
-$$n=8$$
-Larger: $9$.
+$$2(w+\\ell)=48$$
+$$\\ell=17$$
+$$A=119$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 35,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -1759,47 +1781,47 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle has perimeter $36$ cm; one side is $2$ cm longer than the other. The longer side is $10$ cm.`,
-      `The product of two consecutive integers is $156$. The larger integer is $16$.`,
-      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $67$ m$^{2}$.`,
-      `The difference of squares of $12$ and $4$ equals $128$.`,
-      `In an exam item, if one side of a rectangle exceeds the other by $4$ cm and the area is $77$ cm$^{2}$, the longer side is $14$ cm.`,
+      `If one side of a rectangle exceeds the other by $7$ cm and the area is $60$ cm$^{2}$, the longer side is $12$ cm.`,
+      `For $x^2 -14x+40=0$, the discriminant equals $38$.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
+      `Consider a case where a $52$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $153$ m$^{2}$.`,
+      `In an exam item, two positive numbers have product $40$ and sum $16$. The larger equals $8$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$2(2s+2)=36$$
-$$s=8$$
-Longer $10$ cm.
+$$x(x+7)=60$$
+$$(x-5)(x+12)=0$$
+Longer: $12$ cm.
 
 The statement is True.`,
       `**B.** → False
 
-$$n(n+1)=156$$
-$$n=12$$
-Larger: $13$.
+$$\\Delta=-14^2-4\\cdot40=36$$
 
 The statement is False.`,
       `**C.** → False
 
-$$(14)(20)-216=64$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is False.`,
       `**D.** → True
 
-$$12^2-4^2=128$$
+$$2(w+\\ell)=52$$
+$$\\ell=17$$
+$$A=153$$
 
 The statement is True.`,
       `**E.** → False
 
-$$x(x+4)=77$$
-$$(x-7)(x+11)=0$$
-Longer: $11$ cm.
+$$t^2-13t+40=0$$
+$$(t-5)(t-8)=0$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 36,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -1810,44 +1832,47 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The difference of squares of $12$ and $6$ equals $110$.`,
-      `In an exam item, if one side of a rectangle exceeds the other by $4$ cm and the area is $117$ cm$^{2}$, the longer side is $13$ cm.`,
-      `For $x^2 -12x+32=0$, the discriminant equals $16$.`,
-      `Three consecutive integers sum to $35$; the middle one is $11$.`,
-      `A right triangle has legs $7$ cm and $11$ cm. The hypotenuse is $13$ cm.`,
+      `For $x^2 -18x+72=0$, the discriminant equals $38$.`,
+      `In an exam item, a positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
+      `A $56$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $147$ m$^{2}$.`,
+      `Two positive numbers have product $66$ and sum $20$. The larger equals $11$.`,
+      `The product of two consecutive integers is $156$. The larger integer is $13$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$12^2-6^2=108$$
+$$\\Delta=-18^2-4\\cdot72=36$$
 
 The statement is False.`,
       `**B.** → True
 
-$$x(x+4)=117$$
-$$(x-9)(x+13)=0$$
-Longer: $13$ cm.
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is True.`,
       `**C.** → True
 
-$$\\Delta=-12^2-4\\cdot32=16$$
+$$2(w+\\ell)=56$$
+$$\\ell=21$$
+$$A=147$$
 
 The statement is True.`,
       `**D.** → False
 
-$$3n+3=33$$
-$$n=10$$
+$$t^2-17t+66=0$$
+$$(t-6)(t-11)=0$$
 
 The statement is False.`,
       `**E.** → True
 
-$$c=\\sqrt{7^2+11^2}=13$$
+$$n(n+1)=156$$
+$$n=12$$
+Larger: $13$.
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 37,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -1858,45 +1883,49 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three consecutive integers sum to $39$; the middle one is $13$.`,
-      `A right triangle has legs $6$ cm and $11$ cm. The hypotenuse is $13$ cm.`,
-      `Consider a case where a positive number plus its reciprocal equals $\\frac{50}{7}$. The numerator of that reduced sum is $54$.`,
-      `In an exam item, a ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `Two positive numbers have product $77$ and sum $20$. The larger equals $11$.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
+      `A $40$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $99$ m$^{2}$.`,
+      `Two positive numbers have product $70$ and sum $20$. The larger equals $10$.`,
+      `In an exam item, the product of two consecutive integers is $110$. The larger integer is $14$.`,
+      `If one side of a rectangle exceeds the other by $7$ cm and the area is $60$ cm$^{2}$, the longer side is $14$ cm.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$3n+3=39$$
-$$n=12$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is True.`,
       `**B.** → True
 
-$$c=\\sqrt{6^2+11^2}=13$$
+$$2(w+\\ell)=40$$
+$$\\ell=11$$
+$$A=99$$
 
 The statement is True.`,
       `**C.** → False
 
-$$x+\\frac{1}{x}=\\frac{50}{7}$$
-$$x=7$$
+$$t^2-17t+70=0$$
+$$(t-7)(t-10)=0$$
 
 The statement is False.`,
       `**D.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$n(n+1)=110$$
+$$n=10$$
+Larger: $11$.
 
 The statement is False.`,
       `**E.** → False
 
-$$t^2-18t+77=0$$
-$$(t-7)(t-11)=0$$
+$$x(x+7)=60$$
+$$(x-5)(x+12)=0$$
+Longer: $12$ cm.
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 38,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -1907,45 +1936,48 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `Two positive numbers have product $77$ and sum $20$. The larger equals $11$.`,
-      `A $48$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $135$ m$^{2}$.`,
-      `A triangle with base $12$ cm and height $5$ cm has area $30$ cm$^{2}$.`,
-      `The roots of $x^2-21x+98=0$ add up to $21$.`,
+      `In an exam item, a $44$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $109$ m$^{2}$.`,
+      `Two positive numbers have product $104$ and sum $23$. The larger equals $13$.`,
+      `The product of two consecutive integers is $72$. The larger integer is $9$.`,
+      `If one side of a rectangle exceeds the other by $3$ cm and the area is $40$ cm$^{2}$, the longer side is $8$ cm.`,
+      `For $x^2 -14x+40=0$, the discriminant equals $36$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$2(w+\\ell)=44$$
+$$\\ell=15$$
+$$A=105$$
 
 The statement is False.`,
       `**B.** → False
 
-$$t^2-18t+77=0$$
-$$(t-7)(t-11)=0$$
+$$t^2-21t+104=0$$
+$$(t-8)(t-13)=0$$
 
 The statement is False.`,
       `**C.** → True
 
-$$2(w+\\ell)=48$$
-$$\\ell=15$$
-$$A=135$$
+$$n(n+1)=72$$
+$$n=8$$
+Larger: $9$.
 
 The statement is True.`,
       `**D.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot5=30$$
+$$x(x+3)=40$$
+$$(x-5)(x+8)=0$$
+Longer: $8$ cm.
 
 The statement is True.`,
       `**E.** → True
 
-Vieta: sum $=21$.
+$$\\Delta=-14^2-4\\cdot40=36$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 39,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -1956,44 +1988,47 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A triangle with base $12$ cm and height $7$ cm has area $42$ cm$^{2}$.`,
-      `The roots of $x^2-20x+91=0$ add up to $24$.`,
-      `In an exam item, two positive numbers have product $50$ and sum $15$. The larger equals $10$.`,
-      `The sum of squares of $89$ and its digit-reversal $98$ equals $17529$.`,
-      `A rectangle has perimeter $36$ cm; one side is $3$ cm longer than the other. The longer side is $11$ cm.`,
+      `Two positive numbers have product $28$ and sum $11$. The larger equals $7$.`,
+      `The product of two consecutive integers is $42$. The larger integer is $10$.`,
+      `In an exam item, if one side of a rectangle exceeds the other by $4$ cm and the area is $45$ cm$^{2}$, the longer side is $9$ cm.`,
+      `For $x^2 -18x+72=0$, the discriminant equals $38$.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot7=42$$
+$$t^2-11t+28=0$$
+$$(t-4)(t-7)=0$$
 
 The statement is True.`,
       `**B.** → False
 
-Vieta: sum $=20$.
+$$n(n+1)=42$$
+$$n=6$$
+Larger: $7$.
 
 The statement is False.`,
       `**C.** → True
 
-$$t^2-15t+50=0$$
-$$(t-5)(t-10)=0$$
+$$x(x+4)=45$$
+$$(x-5)(x+9)=0$$
+Longer: $9$ cm.
 
 The statement is True.`,
       `**D.** → False
 
-$$89^2+98^2=17525$$
+$$\\Delta=-18^2-4\\cdot72=36$$
 
 The statement is False.`,
       `**E.** → True
 
-$$2(2s+3)=36$$
-$$s=7.5$$
-Longer $10.5$ cm.
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 40,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2004,45 +2039,48 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The sum of squares of $88$ and its digit-reversal $88$ equals $15491$.`,
-      `A rectangle has perimeter $36$ cm; one side is $2$ cm longer than the other. The longer side is $10$ cm.`,
-      `The product of two consecutive integers is $156$. The larger integer is $16$.`,
-      `Consider a case where a $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $64$ m$^{2}$.`,
-      `In an exam item, the difference of squares of $10$ and $4$ equals $86$.`,
+      `The product of two consecutive integers is $132$. The larger integer is $14$.`,
+      `Suppose that one side of a rectangle exceeds the other by $5$ cm and the area is $50$ cm$^{2}$, the longer side is $10$ cm.`,
+      `For $x^2 -14x+40=0$, the discriminant equals $38$.`,
+      `Consider a case where a positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
+      `In an exam item, a $44$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $119$ m$^{2}$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$88^2+88^2=15488$$
+$$n(n+1)=132$$
+$$n=11$$
+Larger: $12$.
 
 The statement is False.`,
       `**B.** → True
 
-$$2(2s+2)=36$$
-$$s=8$$
-Longer $10$ cm.
+$$x(x+5)=50$$
+$$(x-5)(x+10)=0$$
+Longer: $10$ cm.
 
 The statement is True.`,
       `**C.** → False
 
-$$n(n+1)=156$$
-$$n=12$$
-Larger: $13$.
+$$\\Delta=-14^2-4\\cdot40=36$$
 
 The statement is False.`,
       `**D.** → True
 
-$$(14)(20)-216=64$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is True.`,
       `**E.** → False
 
-$$10^2-4^2=84$$
+$$2(w+\\ell)=44$$
+$$\\ell=13$$
+$$A=117$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `2/5`,
     sort_order: 41,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2053,44 +2091,47 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $64$ m$^{2}$.`,
-      `In an exam item, the difference of squares of $10$ and $6$ equals $64$.`,
-      `If one side of a rectangle exceeds the other by $7$ cm and the area is $144$ cm$^{2}$, the longer side is $19$ cm.`,
-      `For $x^2 -12x+32=0$, the discriminant equals $19$.`,
-      `Three consecutive integers sum to $33$; the middle one is $11$.`,
+      `If one side of a rectangle exceeds the other by $6$ cm and the area is $55$ cm$^{2}$, the longer side is $11$ cm.`,
+      `In an exam item, for $x^2 -18x+72=0$, the discriminant equals $36$.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
+      `A $48$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $122$ m$^{2}$.`,
+      `Two positive numbers have product $36$ and sum $13$. The larger equals $9$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$(14)(20)-216=64$$
+$$x(x+6)=55$$
+$$(x-5)(x+11)=0$$
+Longer: $11$ cm.
 
 The statement is True.`,
       `**B.** → True
 
-$$10^2-6^2=64$$
+$$\\Delta=-18^2-4\\cdot72=36$$
 
 The statement is True.`,
       `**C.** → False
 
-$$x(x+7)=144$$
-$$(x-9)(x+16)=0$$
-Longer: $16$ cm.
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is False.`,
       `**D.** → False
 
-$$\\Delta=-12^2-4\\cdot32=16$$
+$$2(w+\\ell)=48$$
+$$\\ell=17$$
+$$A=119$$
 
 The statement is False.`,
       `**E.** → True
 
-$$3n+3=33$$
-$$n=10$$
+$$t^2-13t+36=0$$
+$$(t-4)(t-9)=0$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 42,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2102,10 +2143,10 @@ The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `For $x^2 -14x+40=0$, the discriminant equals $38$.`,
-      `Three consecutive integers sum to $41$; the middle one is $13$.`,
-      `Consider a case where a right triangle has legs $6$ cm and $11$ cm. The hypotenuse is $13$ cm.`,
-      `In an exam item, a positive number plus its reciprocal equals $\\frac{50}{7}$. The numerator of that reduced sum is $50$.`,
-      `A ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
+      `Consider a case where a $52$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $153$ m$^{2}$.`,
+      `In an exam item, two positive numbers have product $40$ and sum $13$. The larger equals $8$.`,
+      `The product of two consecutive integers is $110$. The larger integer is $14$.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
@@ -2116,29 +2157,32 @@ $$\\Delta=-14^2-4\\cdot40=36$$
 The statement is False.`,
       `**B.** → False
 
-$$3n+3=39$$
-$$n=12$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is False.`,
       `**C.** → True
 
-$$c=\\sqrt{6^2+11^2}=13$$
+$$2(w+\\ell)=52$$
+$$\\ell=17$$
+$$A=153$$
 
 The statement is True.`,
       `**D.** → True
 
-$$x+\\frac{1}{x}=\\frac{50}{7}$$
-$$x=7$$
+$$t^2-13t+40=0$$
+$$(t-5)(t-8)=0$$
 
 The statement is True.`,
       `**E.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$n(n+1)=110$$
+$$n=10$$
+Larger: $11$.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 43,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2150,10 +2194,10 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `In an exam item, a positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
-      `A ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `In an exam item, two positive numbers have product $45$ and sum $17$. The larger equals $9$.`,
-      `A $40$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $99$ m$^{2}$.`,
-      `Consider a case where a triangle with base $12$ cm and height $5$ cm has area $30$ cm$^{2}$.`,
+      `A $56$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $149$ m$^{2}$.`,
+      `Two positive numbers have product $66$ and sum $20$. The larger equals $11$.`,
+      `The product of two consecutive integers is $72$. The larger integer is $9$.`,
+      `If one side of a rectangle exceeds the other by $6$ cm and the area is $55$ cm$^{2}$, the longer side is $11$ cm.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
@@ -2165,30 +2209,33 @@ $$x=9$$
 The statement is True.`,
       `**B.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$2(w+\\ell)=56$$
+$$\\ell=21$$
+$$A=147$$
 
 The statement is False.`,
       `**C.** → False
 
-$$t^2-14t+45=0$$
-$$(t-5)(t-9)=0$$
+$$t^2-17t+66=0$$
+$$(t-6)(t-11)=0$$
 
 The statement is False.`,
       `**D.** → True
 
-$$2(w+\\ell)=40$$
-$$\\ell=11$$
-$$A=99$$
+$$n(n+1)=72$$
+$$n=8$$
+Larger: $9$.
 
 The statement is True.`,
       `**E.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot5=30$$
+$$x(x+6)=55$$
+$$(x-5)(x+11)=0$$
+Longer: $11$ cm.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 44,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2200,10 +2247,10 @@ The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A $40$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $101$ m$^{2}$.`,
-      `Consider a case where a triangle with base $12$ cm and height $7$ cm has area $42$ cm$^{2}$.`,
-      `In an exam item, the roots of $x^2-20x+91=0$ add up to $20$.`,
-      `Two positive numbers have product $104$ and sum $23$. The larger equals $13$.`,
-      `The sum of squares of $69$ and its digit-reversal $96$ equals $13979$.`,
+      `Two positive numbers have product $70$ and sum $17$. The larger equals $10$.`,
+      `In an exam item, the product of two consecutive integers is $42$. The larger integer is $7$.`,
+      `If one side of a rectangle exceeds the other by $7$ cm and the area is $60$ cm$^{2}$, the longer side is $14$ cm.`,
+      `For $x^2 -18x+72=0$, the discriminant equals $38$.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
@@ -2216,27 +2263,31 @@ $$A=99$$
 The statement is False.`,
       `**B.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot7=42$$
+$$t^2-17t+70=0$$
+$$(t-7)(t-10)=0$$
 
 The statement is True.`,
       `**C.** → True
 
-Vieta: sum $=20$.
+$$n(n+1)=42$$
+$$n=6$$
+Larger: $7$.
 
 The statement is True.`,
       `**D.** → False
 
-$$t^2-21t+104=0$$
-$$(t-8)(t-13)=0$$
+$$x(x+7)=60$$
+$$(x-5)(x+12)=0$$
+Longer: $12$ cm.
 
 The statement is False.`,
       `**E.** → False
 
-$$69^2+96^2=13977$$
+$$\\Delta=-18^2-4\\cdot72=36$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 45,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2248,10 +2299,10 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Two positive numbers have product $104$ and sum $21$. The larger equals $13$.`,
-      `The sum of squares of $68$ and its digit-reversal $86$ equals $12024$.`,
-      `A rectangle has perimeter $36$ cm; one side is $2$ cm longer than the other. The longer side is $10$ cm.`,
-      `The product of two consecutive integers is $156$. The larger integer is $13$.`,
-      `In an exam item, a $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $67$ m$^{2}$.`,
+      `The product of two consecutive integers is $132$. The larger integer is $14$.`,
+      `If one side of a rectangle exceeds the other by $3$ cm and the area is $40$ cm$^{2}$, the longer side is $8$ cm.`,
+      `For $x^2 -14x+40=0$, the discriminant equals $36$.`,
+      `In an exam item, a positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -2263,30 +2314,31 @@ $$(t-8)(t-13)=0$$
 The statement is True.`,
       `**B.** → False
 
-$$68^2+86^2=12020$$
+$$n(n+1)=132$$
+$$n=11$$
+Larger: $12$.
 
 The statement is False.`,
       `**C.** → True
 
-$$2(2s+2)=36$$
-$$s=8$$
-Longer $10$ cm.
+$$x(x+3)=40$$
+$$(x-5)(x+8)=0$$
+Longer: $8$ cm.
 
 The statement is True.`,
       `**D.** → True
 
-$$n(n+1)=156$$
-$$n=12$$
-Larger: $13$.
+$$\\Delta=-14^2-4\\cdot40=36$$
 
 The statement is True.`,
       `**E.** → False
 
-$$(14)(20)-216=64$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 46,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2298,10 +2350,10 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The product of two consecutive integers is $90$. The larger integer is $14$.`,
-      `In an exam item, a $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $64$ m$^{2}$.`,
-      `The difference of squares of $13$ and $6$ equals $136$.`,
-      `Suppose that one side of a rectangle exceeds the other by $5$ cm and the area is $126$ cm$^{2}$, the longer side is $17$ cm.`,
-      `For $x^2 -12x+32=0$, the discriminant equals $16$.`,
+      `In an exam item, if one side of a rectangle exceeds the other by $4$ cm and the area is $45$ cm$^{2}$, the longer side is $9$ cm.`,
+      `For $x^2 -18x+72=0$, the discriminant equals $38$.`,
+      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
+      `A $40$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $91$ m$^{2}$.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
@@ -2314,28 +2366,31 @@ Larger: $10$.
 The statement is False.`,
       `**B.** → True
 
-$$(14)(20)-216=64$$
+$$x(x+4)=45$$
+$$(x-5)(x+9)=0$$
+Longer: $9$ cm.
 
 The statement is True.`,
       `**C.** → False
 
-$$13^2-6^2=133$$
+$$\\Delta=-18^2-4\\cdot72=36$$
 
 The statement is False.`,
       `**D.** → False
 
-$$x(x+5)=126$$
-$$(x-9)(x+14)=0$$
-Longer: $14$ cm.
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
+$$x=9$$
 
 The statement is False.`,
       `**E.** → True
 
-$$\\Delta=-12^2-4\\cdot32=16$$
+$$2(w+\\ell)=40$$
+$$\\ell=13$$
+$$A=91$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 47,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2384,7 +2439,7 @@ $$x=7$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 48,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2433,7 +2488,7 @@ $$A=153$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 49,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2481,7 +2536,7 @@ $$(t-6)(t-11)=0$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 50,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2531,7 +2586,7 @@ Larger: $13$.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 51,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2582,7 +2637,7 @@ Longer: $12$ cm.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 52,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2630,7 +2685,7 @@ $$c=\\sqrt{6^2+11^2}=13$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 53,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2641,45 +2696,43 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, three consecutive integers sum to $27$; the middle one is $9$.`,
-      `A right triangle has legs $8$ cm and $11$ cm. The hypotenuse is $17$ cm.`,
-      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
-      `A ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `Two positive numbers have product $60$ and sum $19$. The larger equals $10$.`,
+      `In an exam item, a triangle with base $16$ cm and height $5$ cm has area $40$ cm$^{2}$.`,
+      `A $1$ m wide running track borders a $11$ m by $19$ m lawn on all sides (track outside the lawn). The track surface area alone is $67$ m$^{2}$.`,
+      `A ball is thrown upward at $20$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $20$ m.`,
+      `A $1$ m path runs around a $11$ m $\\times$ $17$ m field. The path area alone is $64$ m$^{2}$.`,
+      `Three consecutive integers sum to $35$; the middle one is $11$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$3n+3=27$$
-$$n=8$$
+$$A=\\frac{1}{2}\\cdot16\\cdot5=40$$
 
 The statement is True.`,
       `**B.** → False
 
-$$c=\\sqrt{8^2+11^2}=14$$
+$$(11+2)(11+10)-209=64$$
 
 The statement is False.`,
       `**C.** → True
 
-$$x+\\frac{1}{x}=\\frac{82}{9}$$
-$$x=9$$
+Vertex at $t=\\frac{20}{10}$
+$$h_{\\max}=\\frac{20^2}{20}=20$$
 
 The statement is True.`,
       `**D.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$(13)(19)-187=60$$
 
 The statement is False.`,
       `**E.** → False
 
-$$t^2-16t+60=0$$
-$$(t-6)(t-10)=0$$
+$$3n+3=33$$
+$$n=10$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 54,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2690,30 +2743,28 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `The equation $x^2+4x+9=0$ has $no$ real roots.`,
-      `In an exam item, a $44$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $119$ m$^{2}$.`,
+      `Three consecutive integers sum to $44$; the middle one is $14$.`,
+      `The sum of squares of $78$ and its digit-reversal $87$ equals $13653$.`,
+      `In an exam item, the difference of squares of $10$ and $4$ equals $86$.`,
       `A triangle with base $12$ cm and height $7$ cm has area $42$ cm$^{2}$.`,
-      `The roots of $x^2-20x+91=0$ add up to $20$.`,
+      `A $1$ m wide running track borders a $10$ m by $18$ m lawn on all sides (track outside the lawn). The track surface area alone is $60$ m$^{2}$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$3n+3=42$$
+$$n=13$$
 
 The statement is False.`,
       `**B.** → True
 
-$$\\Delta=-20<0$$
+$$78^2+87^2=13653$$
 
 The statement is True.`,
       `**C.** → False
 
-$$2(w+\\ell)=44$$
-$$\\ell=13$$
-$$A=117$$
+$$10^2-4^2=84$$
 
 The statement is False.`,
       `**D.** → True
@@ -2723,11 +2774,11 @@ $$A=\\frac{1}{2}\\cdot12\\cdot7=42$$
 The statement is True.`,
       `**E.** → True
 
-Vieta: sum $=20$.
+$$(10+2)(10+10)-180=60$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 55,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2738,44 +2789,43 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A triangle with base $12$ cm and height $6$ cm has area $36$ cm$^{2}$.`,
-      `The roots of $x^2-19x+84=0$ add up to $22$.`,
-      `Two positive numbers have product $36$ and sum $16$. The larger equals $9$.`,
-      `The sum of squares of $78$ and its digit-reversal $87$ equals $13653$.`,
-      `In an exam item, a rectangle has perimeter $36$ cm; one side is $2$ cm longer than the other. The longer side is $14$ cm.`,
+      `A $1$ m wide running track borders a $10$ m by $18$ m lawn on all sides (track outside the lawn). The track surface area alone is $60$ m$^{2}$.`,
+      `A ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
+      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $67$ m$^{2}$.`,
+      `Three consecutive integers sum to $30$; the middle one is $10$.`,
+      `In an exam item, the sum of squares of $57$ and its digit-reversal $75$ equals $8876$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot6=36$$
+$$(10+2)(10+10)-180=60$$
 
 The statement is True.`,
       `**B.** → False
 
-Vieta: sum $=19$.
+Vertex at $t=\\frac{25}{10}$
+$$h_{\\max}=\\frac{25^2}{20}=31.25$$
 
 The statement is False.`,
       `**C.** → False
 
-$$t^2-13t+36=0$$
-$$(t-4)(t-9)=0$$
+$$(14)(20)-216=64$$
 
 The statement is False.`,
       `**D.** → True
 
-$$78^2+87^2=13653$$
+$$3n+3=30$$
+$$n=9$$
 
 The statement is True.`,
       `**E.** → False
 
-$$2(2s+2)=36$$
-$$s=8$$
-Longer $10$ cm.
+$$57^2+75^2=8874$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 56,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2787,10 +2837,10 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `The sum of squares of $77$ and its digit-reversal $77$ equals $11861$.`,
-      `In an exam item, a rectangle has perimeter $36$ cm; one side is $4$ cm longer than the other. The longer side is $11$ cm.`,
-      `The product of two consecutive integers is $90$. The larger integer is $10$.`,
-      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $67$ m$^{2}$.`,
-      `The difference of squares of $9$ and $6$ equals $45$.`,
+      `In an exam item, the difference of squares of $10$ and $6$ equals $64$.`,
+      `A triangle with base $14$ cm and height $6$ cm has area $42$ cm$^{2}$.`,
+      `A $1$ m wide running track borders a $9$ m by $17$ m lawn on all sides (track outside the lawn). The track surface area alone is $59$ m$^{2}$.`,
+      `A ball is thrown upward at $35$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $61$ m.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
@@ -2801,30 +2851,27 @@ $$77^2+77^2=11858$$
 The statement is False.`,
       `**B.** → True
 
-$$2(2s+4)=36$$
-$$s=7$$
-Longer $11$ cm.
+$$10^2-6^2=64$$
 
 The statement is True.`,
       `**C.** → True
 
-$$n(n+1)=90$$
-$$n=9$$
-Larger: $10$.
+$$A=\\frac{1}{2}\\cdot14\\cdot6=42$$
 
 The statement is True.`,
       `**D.** → False
 
-$$(14)(20)-216=64$$
+$$(9+2)(9+10)-153=56$$
 
 The statement is False.`,
       `**E.** → True
 
-$$9^2-6^2=45$$
+Vertex at $t=\\frac{35}{10}$
+$$h_{\\max}=\\frac{35^2}{20}=61.25$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 57,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2835,44 +2882,43 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $64$ m$^{2}$.`,
-      `The difference of squares of $9$ and $5$ equals $56$.`,
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $55$ cm$^{2}$, the longer side is $14$ cm.`,
-      `In an exam item, for $x^2 -14x+40=0$, the discriminant equals $38$.`,
-      `Three consecutive integers sum to $41$; the middle one is $13$.`,
+      `A ball is thrown upward at $30$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $45$ m.`,
+      `A $1$ m path runs around a $13$ m $\\times$ $19$ m field. The path area alone is $68$ m$^{2}$.`,
+      `Three consecutive integers sum to $29$; the middle one is $9$.`,
+      `In an exam item, the sum of squares of $59$ and its digit-reversal $95$ equals $12509$.`,
+      `The difference of squares of $13$ and $5$ equals $146$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$(14)(20)-216=64$$
+Vertex at $t=\\frac{30}{10}$
+$$h_{\\max}=\\frac{30^2}{20}=45$$
 
 The statement is True.`,
       `**B.** → True
 
-$$9^2-5^2=56$$
+$$(15)(21)-247=68$$
 
 The statement is True.`,
       `**C.** → False
 
-$$x(x+6)=55$$
-$$(x-5)(x+11)=0$$
-Longer: $11$ cm.
+$$3n+3=27$$
+$$n=8$$
 
 The statement is False.`,
       `**D.** → False
 
-$$\\Delta=-14^2-4\\cdot40=36$$
+$$59^2+95^2=12506$$
 
 The statement is False.`,
       `**E.** → False
 
-$$3n+3=39$$
-$$n=12$$
+$$13^2-5^2=144$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 58,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2883,44 +2929,42 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, for $x^2 -13x+36=0$, the discriminant equals $29$.`,
-      `Three consecutive integers sum to $29$; the middle one is $9$.`,
-      `A right triangle has legs $8$ cm and $11$ cm. The hypotenuse is $14$ cm.`,
-      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
-      `Consider a case where a ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $31$ m.`,
+      `In an exam item, the difference of squares of $10$ and $5$ equals $79$.`,
+      `A triangle with base $16$ cm and height $5$ cm has area $44$ cm$^{2}$.`,
+      `A $1$ m wide running track borders a $11$ m by $19$ m lawn on all sides (track outside the lawn). The track surface area alone is $64$ m$^{2}$.`,
+      `A ball is thrown upward at $20$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $20$ m.`,
+      `Consider a case where a $1$ m path runs around a $11$ m $\\times$ $17$ m field. The path area alone is $60$ m$^{2}$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$\\Delta=-13^2-4\\cdot36=25$$
+$$10^2-5^2=75$$
 
 The statement is False.`,
       `**B.** → False
 
-$$3n+3=27$$
-$$n=8$$
+$$A=\\frac{1}{2}\\cdot16\\cdot5=40$$
 
 The statement is False.`,
       `**C.** → True
 
-$$c=\\sqrt{8^2+11^2}=14$$
+$$(11+2)(11+10)-209=64$$
 
 The statement is True.`,
       `**D.** → True
 
-$$x+\\frac{1}{x}=\\frac{82}{9}$$
-$$x=9$$
+Vertex at $t=\\frac{20}{10}$
+$$h_{\\max}=\\frac{20^2}{20}=20$$
 
 The statement is True.`,
       `**E.** → True
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$(13)(19)-187=60$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 59,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2931,36 +2975,33 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A positive number plus its reciprocal equals $\\frac{26}{5}$. The numerator of that reduced sum is $26$.`,
-      `Consider a case where a ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `In an exam item, the equation $x^2+4x+9=0$ has $no$ real roots.`,
-      `A $56$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $173$ m$^{2}$.`,
+      `A $1$ m path runs around a $10$ m $\\times$ $16$ m field. The path area alone is $56$ m$^{2}$.`,
+      `Three consecutive integers sum to $44$; the middle one is $14$.`,
+      `In an exam item, the sum of squares of $58$ and its digit-reversal $85$ equals $10589$.`,
+      `The difference of squares of $13$ and $4$ equals $155$.`,
       `A triangle with base $12$ cm and height $7$ cm has area $42$ cm$^{2}$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$x+\\frac{1}{x}=\\frac{26}{5}$$
-$$x=5$$
+$$(12)(18)-160=56$$
 
 The statement is True.`,
       `**B.** → False
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$3n+3=42$$
+$$n=13$$
 
 The statement is False.`,
       `**C.** → True
 
-$$\\Delta=-20<0$$
+$$58^2+85^2=10589$$
 
 The statement is True.`,
       `**D.** → False
 
-$$2(w+\\ell)=56$$
-$$\\ell=19$$
-$$A=171$$
+$$13^2-4^2=153$$
 
 The statement is False.`,
       `**E.** → True
@@ -2969,7 +3010,7 @@ $$A=\\frac{1}{2}\\cdot12\\cdot7=42$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 60,
     solution_overview: `Five independent quadratic stories. Form $ax^2+bx+c=0$ or use geometry, factor when possible, and verify the stated numerical property.`,
   },
@@ -2980,40 +3021,38 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $56$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $173$ m$^{2}$.`,
-      `A triangle with base $12$ cm and height $6$ cm has area $36$ cm$^{2}$.`,
-      `The roots of $x^2-19x+84=0$ add up to $22$.`,
-      `Two positive numbers have product $84$ and sum $19$. The larger equals $12$.`,
-      `In an exam item, the sum of squares of $58$ and its digit-reversal $85$ equals $10592$.`,
+      `A $1$ m wide running track borders a $11$ m by $19$ m lawn on all sides (track outside the lawn). The track surface area alone is $67$ m$^{2}$.`,
+      `Two positive numbers differ by $7$ and are roots of $t^2-17t+60=0$. Their product equals $60$.`,
+      `A rectangular plot has area $77$ m$^{2}$. One side is exactly $4$ m shorter than the adjacent side (both sides measured in whole metres). The longer side is $14$ m.`,
+      `Consider a case where a right triangle has legs $8$ cm and $10$ cm. The hypotenuse is $13$ cm.`,
+      `The difference of squares of $12$ and $5$ equals $122$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$2(w+\\ell)=56$$
-$$\\ell=19$$
-$$A=171$$
+$$(11+2)(11+10)-209=64$$
 
 The statement is False.`,
       `**B.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot6=36$$
+Vieta: product $=60$.
 
 The statement is True.`,
       `**C.** → False
 
-Vieta: sum $=19$.
+$$x(x+4)=77$$
+$$x=7$$, longer $11$ m.
 
 The statement is False.`,
       `**D.** → True
 
-$$t^2-19t+84=0$$
-$$(t-7)(t-12)=0$$
+$$c=\\sqrt{8^2+10^2}=13$$
 
 The statement is True.`,
       `**E.** → False
 
-$$58^2+85^2=10589$$
+$$12^2-5^2=119$$
 
 The statement is False.`,
     ],
@@ -3028,42 +3067,38 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $84$ and sum $19$. The larger equals $12$.`,
-      `In an exam item, the sum of squares of $57$ and its digit-reversal $75$ equals $8874$.`,
-      `A rectangle has perimeter $36$ cm; one side is $4$ cm longer than the other. The longer side is $14$ cm.`,
-      `The product of two consecutive integers is $90$. The larger integer is $14$.`,
-      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $64$ m$^{2}$.`,
+      `Two positive numbers differ by $7$ and are roots of $t^2-21t+98=0$. Their product equals $98$.`,
+      `In an exam item, a rectangular plot has area $117$ m$^{2}$. One side is exactly $4$ m shorter than the adjacent side (both sides measured in whole metres). The longer side is $13$ m.`,
+      `A right triangle has legs $8$ cm and $8$ cm. The hypotenuse is $14$ cm.`,
+      `A $1$ m wide running track borders a $9$ m by $17$ m lawn on all sides (track outside the lawn). The track surface area alone is $59$ m$^{2}$.`,
+      `The roots of $x^2-21x+104=0$ add up to $21$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$t^2-19t+84=0$$
-$$(t-7)(t-12)=0$$
+Vieta: product $=98$.
 
 The statement is True.`,
       `**B.** → True
 
-$$57^2+75^2=8874$$
+$$x(x+4)=117$$
+$$x=9$$, longer $13$ m.
 
 The statement is True.`,
       `**C.** → False
 
-$$2(2s+4)=36$$
-$$s=7$$
-Longer $11$ cm.
+$$c=\\sqrt{8^2+8^2}=11$$
 
 The statement is False.`,
       `**D.** → False
 
-$$n(n+1)=90$$
-$$n=9$$
-Larger: $10$.
+$$(9+2)(9+10)-153=56$$
 
 The statement is False.`,
       `**E.** → True
 
-$$(14)(20)-216=64$$
+Vieta: sum $=21$.
 
 The statement is True.`,
     ],
@@ -3078,41 +3113,40 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The product of two consecutive integers is $42$. The larger integer is $10$.`,
-      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $67$ m$^{2}$.`,
-      `The difference of squares of $12$ and $5$ equals $119$.`,
-      `In an exam item, if one side of a rectangle exceeds the other by $4$ cm and the area is $45$ cm$^{2}$, the longer side is $9$ cm.`,
-      `For $x^2 -14x+40=0$, the discriminant equals $38$.`,
+      `A rectangular plot has area $77$ m$^{2}$. One side is exactly $4$ m shorter than the adjacent side (both sides measured in whole metres). The longer side is $14$ m.`,
+      `A right triangle has legs $8$ cm and $10$ cm. The hypotenuse is $16$ cm.`,
+      `The equation $x^2+5x+7=0$ has $no$ real roots.`,
+      `In an exam item, the roots of $x^2-17x+66=0$ add up to $17$.`,
+      `A rectangle has perimeter $40$ cm; one side is $4$ cm longer than the other. The longer side is $14$ cm.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$n(n+1)=42$$
-$$n=6$$
-Larger: $7$.
+$$x(x+4)=77$$
+$$x=7$$, longer $11$ m.
 
 The statement is False.`,
       `**B.** → False
 
-$$(14)(20)-216=64$$
+$$c=\\sqrt{8^2+10^2}=13$$
 
 The statement is False.`,
       `**C.** → True
 
-$$12^2-5^2=119$$
+$$\\Delta=-3<0$$
 
 The statement is True.`,
       `**D.** → True
 
-$$x(x+4)=45$$
-$$(x-5)(x+9)=0$$
-Longer: $9$ cm.
+Vieta: sum $=17$.
 
 The statement is True.`,
       `**E.** → False
 
-$$\\Delta=-14^2-4\\cdot40=36$$
+$$2(2s+4)=40$$
+$$s=8$$
+Longer $12$ cm.
 
 The statement is False.`,
     ],
@@ -3127,41 +3161,40 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, if one side of a rectangle exceeds the other by $4$ cm and the area is $77$ cm$^{2}$, the longer side is $11$ cm.`,
-      `For $x^2 -13x+36=0$, the discriminant equals $29$.`,
-      `Three consecutive integers sum to $29$; the middle one is $9$.`,
-      `A right triangle has legs $8$ cm and $11$ cm. The hypotenuse is $14$ cm.`,
-      `Consider a case where a positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $82$.`,
+      `In an exam item, a right triangle has legs $8$ cm and $8$ cm. The hypotenuse is $11$ cm.`,
+      `Consider a case where a rectangular plot has area $72$ m$^{2}$. One side is exactly $6$ m shorter than the adjacent side (both sides measured in whole metres). The longer side is $14$ m.`,
+      `The roots of $x^2-21x+104=0$ add up to $23$.`,
+      `A rectangle has perimeter $48$ cm; one side is $4$ cm longer than the other. The longer side is $14$ cm.`,
+      `The difference of squares of $12$ and $5$ equals $119$.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$$x(x+4)=77$$
-$$(x-7)(x+11)=0$$
-Longer: $11$ cm.
+$$c=\\sqrt{8^2+8^2}=11$$
 
 The statement is True.`,
       `**B.** → False
 
-$$\\Delta=-13^2-4\\cdot36=25$$
+$$x(x+6)=72$$
+$$x=6$$, longer $12$ m.
 
 The statement is False.`,
       `**C.** → False
 
-$$3n+3=27$$
-$$n=8$$
+Vieta: sum $=21$.
 
 The statement is False.`,
       `**D.** → True
 
-$$c=\\sqrt{8^2+11^2}=14$$
+$$2(2s+4)=48$$
+$$s=10$$
+Longer $14$ cm.
 
 The statement is True.`,
       `**E.** → True
 
-$$x+\\frac{1}{x}=\\frac{82}{9}$$
-$$x=9$$
+$$12^2-5^2=119$$
 
 The statement is True.`,
     ],
@@ -3176,42 +3209,41 @@ The statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A right triangle has legs $7$ cm and $11$ cm. The hypotenuse is $16$ cm.`,
-      `Consider a case where a positive number plus its reciprocal equals $\\frac{26}{5}$. The numerator of that reduced sum is $26$.`,
-      `In an exam item, a ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $31$ m.`,
-      `Two positive numbers have product $77$ and sum $20$. The larger equals $11$.`,
-      `A $48$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $139$ m$^{2}$.`,
+      `A rectangular plot has area $112$ m$^{2}$. One side is exactly $6$ m shorter than the adjacent side (both sides measured in whole metres). The longer side is $17$ m.`,
+      `The roots of $x^2-17x+66=0$ add up to $17$.`,
+      `In an exam item, a rectangle has perimeter $40$ cm; one side is $4$ cm longer than the other. The longer side is $12$ cm.`,
+      `The difference of squares of $13$ and $5$ equals $146$.`,
+      `Three consecutive integers sum to $38$; the middle one is $12$.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-$$c=\\sqrt{7^2+11^2}=13$$
+$$x(x+6)=112$$
+$$x=8$$, longer $14$ m.
 
 The statement is False.`,
       `**B.** → True
 
-$$x+\\frac{1}{x}=\\frac{26}{5}$$
-$$x=5$$
+Vieta: sum $=17$.
 
 The statement is True.`,
       `**C.** → True
 
-Vertex at $t=\\frac{25}{10}$
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+$$2(2s+4)=40$$
+$$s=8$$
+Longer $12$ cm.
 
 The statement is True.`,
       `**D.** → False
 
-$$t^2-18t+77=0$$
-$$(t-7)(t-11)=0$$
+$$13^2-5^2=144$$
 
 The statement is False.`,
       `**E.** → False
 
-$$2(w+\\ell)=48$$
-$$\\ell=15$$
-$$A=135$$
+$$3n+3=36$$
+$$n=11$$
 
 The statement is False.`,
     ],
@@ -3226,40 +3258,40 @@ The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^2+4x+5=0$ has $no$ real roots.`,
-      `A $48$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $139$ m$^{2}$.`,
-      `A triangle with base $12$ cm and height $6$ cm has area $36$ cm$^{2}$.`,
-      `The roots of $x^2-19x+84=0$ add up to $19$.`,
-      `In an exam item, two positive numbers have product $50$ and sum $19$. The larger equals $10$.`,
+      `The roots of $x^2-21x+104=0$ add up to $21$.`,
+      `A rectangle has perimeter $48$ cm; one side is $4$ cm longer than the other. The longer side is $17$ cm.`,
+      `The difference of squares of $9$ and $5$ equals $56$.`,
+      `Three consecutive integers sum to $36$; the middle one is $12$.`,
+      `In an exam item, a $1$ m wide running track borders a $11$ m by $19$ m lawn on all sides (track outside the lawn). The track surface area alone is $67$ m$^{2}$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\Delta=-4<0$$
+Vieta: sum $=21$.
 
 The statement is True.`,
       `**B.** → False
 
-$$2(w+\\ell)=48$$
-$$\\ell=15$$
-$$A=135$$
+$$2(2s+4)=48$$
+$$s=10$$
+Longer $14$ cm.
 
 The statement is False.`,
       `**C.** → True
 
-$$A=\\frac{1}{2}\\cdot12\\cdot6=36$$
+$$9^2-5^2=56$$
 
 The statement is True.`,
       `**D.** → True
 
-Vieta: sum $=19$.
+$$3n+3=36$$
+$$n=11$$
 
 The statement is True.`,
       `**E.** → False
 
-$$t^2-15t+50=0$$
-$$(t-5)(t-10)=0$$
+$$(11+2)(11+10)-209=64$$
 
 The statement is False.`,
     ],
@@ -3274,42 +3306,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Inlet fills in $6$ h, drain empties in $7$ h; both run on an empty tank. It fills in $44$ h.`,
-      `In an exam item, equation $|2x+2|=10$ has two roots whose product is $-24$.`,
-      `Trains $150$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
-      `Positions on a rail satisfy $|3x -2|=10$. The two positions add to $4.333333333333334$.`,
-      `A square has side $6$ cm. Its diagonal is $8.5$ cm (exact surd value squared gives $72$).`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $15.7$ cm (exact surd value squared gives $162$).`,
+      `In an exam item, inlet fills in $5$ h, drain empties in $8$ h; both run on an empty tank. It fills in $13.3$ h.`,
+      `The equation $\\sqrt{x+9}=6$ has admissible solution $x=29$.`,
+      `A ladder with foot $7$ m from a wall reaches $4$ m up the wall. The ladder length is $11$ m.`,
+      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $9$ h. Both open (empty cistern): full in $3.6$ h.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{1}{6}-\\frac{1}{7}=\\frac{1}{t}$$
+$$d=9\\sqrt{2}$$
 
 The statement is False.`,
       `**B.** → True
 
-Roots $4$, $-6$; product $-24$.
+$$\\frac{1}{5}-\\frac{1}{8}=\\frac{1}{t}$$
 
 The statement is True.`,
       `**C.** → False
 
-Relative $180$ km/h, length $400$ m.
+$$x+9=36$$
+$$x=27$$
 
 The statement is False.`,
       `**D.** → False
 
-$$x=4\\text{ or }-2.6666666666666665$$
-Sum $=1.3333333333333335$.
+$$L=\\sqrt{7^2+4^2}=8$$
 
 The statement is False.`,
       `**E.** → True
 
-$$d=6\\sqrt{2}$$
+$$t=\\frac{54}{15}=3.6$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 67,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3320,28 +3352,27 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Converting $45$ mph to km/h gives $72$ km/h (use $1.609$).`,
-      `Model $\\frac{2}{x-4}=\\frac{6}{x}$ ($x\\neq4$) yields solution $x=2$.`,
-      `The equation $\\sqrt{x+8}=5$ has admissible solution $x=17$.`,
+      `A ladder with foot $6$ m from a wall reaches $4$ m up the wall. The ladder length is $7$ m.`,
+      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $3.43$ h.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
       `In an exam item, inlet fills in $5$ h, drain empties in $9$ h; both run on an empty tank. It fills in $14.3$ h.`,
-      `Equation $|2x+1|=9$ has two roots whose product is $-24$.`,
+      `The equation $\\sqrt{x+9}=3$ has admissible solution $x=2$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$45\\cdot 1.609=72$$
+$$L=\\sqrt{6^2+4^2}=7$$
 
 The statement is True.`,
       `**B.** → True
 
-Cross-multiply: $2x=6(x-4)$
+$$t=\\frac{48}{14}=3.4285714285714284$$
 
 The statement is True.`,
       `**C.** → True
 
-$$x+8=25$$
-$$x=17$$
+$$d=9\\sqrt{2}$$
 
 The statement is True.`,
       `**D.** → False
@@ -3351,11 +3382,12 @@ $$\\frac{1}{5}-\\frac{1}{9}=\\frac{1}{t}$$
 The statement is False.`,
       `**E.** → False
 
-Roots $4$, $-5$; product $-20$.
+$$x+9=9$$
+$$x=0$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 68,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3366,41 +3398,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a taxi charges $4$ EUR plus $2$ EUR per km. A $11$ km ride costs $29$ EUR.`,
-      `A ladder with foot $7$ m from a wall reaches $4$ m up the wall. The ladder length is $11$ m.`,
-      `A job takes $7$ h alone. After $3$ h, the remaining work needs $7$ more hours at the same rate.`,
-      `Converting $55$ mph to km/h gives $88$ km/h (use $1.609$).`,
-      `Model $\\frac{4}{x-6}=\\frac{6}{x}$ ($x\\neq6$) yields solution $x=12$.`,
+      `In an exam item, inlet fills in $4$ h, drain empties in $9$ h; both run on an empty tank. It fills in $10.2$ h.`,
+      `The equation $\\sqrt{x+9}=3$ has admissible solution $x=2$.`,
+      `A ladder with foot $6$ m from a wall reaches $5$ m up the wall. The ladder length is $11$ m.`,
+      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $3.73$ h.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$4+2\\cdot11=26$$
+$$\\frac{1}{4}-\\frac{1}{9}=\\frac{1}{t}$$
 
 The statement is False.`,
       `**B.** → False
 
-$$L=\\sqrt{7^2+4^2}=8$$
+$$x+9=9$$
+$$x=0$$
 
 The statement is False.`,
       `**C.** → False
 
-Left fraction $0.5714285714285714$; time $4$ h.
+$$L=\\sqrt{6^2+5^2}=8$$
 
 The statement is False.`,
       `**D.** → True
 
-$$55\\cdot 1.609=88$$
+$$t=\\frac{56}{15}=3.7333333333333334$$
 
 The statement is True.`,
       `**E.** → True
 
-Cross-multiply: $4x=6(x-6)$
+$$d=9\\sqrt{2}$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 69,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3412,9 +3445,9 @@ The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Tap $A$ fills a cistern in $7$ h, tap $B$ in $10$ h. Both open (empty cistern): full in $4.12$ h.`,
-      `$\\sqrt{8+11}$ equals $7.36$.`,
-      `In an exam item, a trip: $90$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $5$ h.`,
-      `A taxi charges $4$ EUR plus $2$ EUR per km. A $9$ km ride costs $25$ EUR.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $15.7$ cm (exact surd value squared gives $162$).`,
+      `In an exam item, inlet fills in $4$ h, drain empties in $6$ h; both run on an empty tank. It fills in $14$ h.`,
+      `The equation $\\sqrt{x+9}=4$ has admissible solution $x=10$.`,
       `A ladder with foot $6$ m from a wall reaches $6$ m up the wall. The ladder length is $8$ m.`,
     ],
     answer_key: [true, false, false, false, true],
@@ -3426,17 +3459,18 @@ $$t=\\frac{70}{17}=4.117647058823529$$
 The statement is True.`,
       `**B.** → False
 
-$$\\sqrt{19}=4.358898943540674$$
+$$d=9\\sqrt{2}$$
 
 The statement is False.`,
       `**C.** → False
 
-$$\\frac{90}{60}+\\frac{120}{80}=3$$
+$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{t}$$
 
 The statement is False.`,
       `**D.** → False
 
-$$4+2\\cdot9=22$$
+$$x+9=16$$
+$$x=7$$
 
 The statement is False.`,
       `**E.** → True
@@ -3445,7 +3479,7 @@ $$L=\\sqrt{6^2+6^2}=8$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 70,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3456,42 +3490,42 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Trains $180$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
-      `Positions on a rail satisfy $|3x -4|=12$. The two positions add to $2.6666666666666665$.`,
-      `A square has side $6$ cm. Its diagonal is $8.5$ cm (exact surd value squared gives $72$).`,
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $9$ h. Both open (empty cistern): full in $3.21$ h.`,
-      `In an exam item, $\\sqrt{6+11}$ equals $7.12$.`,
+      `The equation $\\sqrt{x+9}=4$ has admissible solution $x=10$.`,
+      `A ladder with foot $5$ m from a wall reaches $6$ m up the wall. The ladder length is $8$ m.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $10$ h. Both open (empty cistern): full in $4.44$ h.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
+      `In an exam item, inlet fills in $4$ h, drain empties in $7$ h; both run on an empty tank. It fills in $12.3$ h.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Relative $180$ km/h, length $430$ m.
+$$x+9=16$$
+$$x=7$$
 
 The statement is False.`,
       `**B.** → True
 
-$$x=5.333333333333333\\text{ or }-2.6666666666666665$$
-Sum $=2.6666666666666665$.
+$$L=\\sqrt{5^2+6^2}=8$$
 
 The statement is True.`,
       `**C.** → True
 
-$$d=6\\sqrt{2}$$
+$$t=\\frac{80}{18}=4.444444444444445$$
 
 The statement is True.`,
       `**D.** → True
 
-$$t=\\frac{45}{14}=3.2142857142857144$$
+$$d=9\\sqrt{2}$$
 
 The statement is True.`,
       `**E.** → False
 
-$$\\sqrt{17}=4.123105625617661$$
+$$\\frac{1}{4}-\\frac{1}{7}=\\frac{1}{t}$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 71,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3502,18 +3536,17 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\sqrt{x+8}=3$ has admissible solution $x=1$.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
       `In an exam item, inlet fills in $6$ h, drain empties in $7$ h; both run on an empty tank. It fills in $42$ h.`,
-      `Equation $|2x+2|=10$ has two roots whose product is $-26$.`,
-      `Trains $150$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $8$ s.`,
-      `Positions on a rail satisfy $|3x -2|=10$. The two positions add to $4.333333333333334$.`,
+      `The equation $\\sqrt{x+9}=5$ has admissible solution $x=19$.`,
+      `A ladder with foot $5$ m from a wall reaches $7$ m up the wall. The ladder length is $9$ m.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $10$ h. Both open (empty cistern): full in $6.33$ h.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$x+8=9$$
-$$x=1$$
+$$d=9\\sqrt{2}$$
 
 The statement is True.`,
       `**B.** → True
@@ -3523,22 +3556,22 @@ $$\\frac{1}{6}-\\frac{1}{7}=\\frac{1}{t}$$
 The statement is True.`,
       `**C.** → False
 
-Roots $4$, $-6$; product $-24$.
+$$x+9=25$$
+$$x=16$$
 
 The statement is False.`,
       `**D.** → True
 
-Relative $180$ km/h, length $400$ m.
+$$L=\\sqrt{5^2+7^2}=9$$
 
 The statement is True.`,
       `**E.** → False
 
-$$x=4\\text{ or }-2.6666666666666665$$
-Sum $=1.3333333333333335$.
+$$t=\\frac{50}{15}=3.3333333333333335$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 72,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3549,42 +3582,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A job takes $8$ h alone. After $3$ h, the remaining work needs $9$ more hours at the same rate.`,
-      `Converting $45$ mph to km/h gives $74$ km/h (use $1.609$).`,
-      `Model $\\frac{2}{x-4}=\\frac{6}{x}$ ($x\\neq4$) yields solution $x=2$.`,
-      `In an exam item, the equation $\\sqrt{x+6}=5$ has admissible solution $x=22$.`,
-      `Inlet fills in $5$ h, drain empties in $9$ h; both run on an empty tank. It fills in $11.3$ h.`,
+      `A ladder with foot $7$ m from a wall reaches $7$ m up the wall. The ladder length is $14$ m.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $9$ h. Both open (empty cistern): full in $6.21$ h.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
+      `In an exam item, inlet fills in $6$ h, drain empties in $8$ h; both run on an empty tank. It fills in $26$ h.`,
+      `The equation $\\sqrt{x+9}=6$ has admissible solution $x=27$.`,
     ],
     answer_key: [false, false, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Left fraction $0.625$; time $5$ h.
+$$L=\\sqrt{7^2+7^2}=10$$
 
 The statement is False.`,
       `**B.** → False
 
-$$45\\cdot 1.609=72$$
+$$t=\\frac{45}{14}=3.2142857142857144$$
 
 The statement is False.`,
       `**C.** → True
 
-Cross-multiply: $2x=6(x-4)$
+$$d=9\\sqrt{2}$$
 
 The statement is True.`,
       `**D.** → False
 
-$$x+6=25$$
-$$x=19$$
+$$\\frac{1}{6}-\\frac{1}{8}=\\frac{1}{t}$$
 
 The statement is False.`,
       `**E.** → True
 
-$$\\frac{1}{5}-\\frac{1}{9}=\\frac{1}{t}$$
+$$x+9=36$$
+$$x=27$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 73,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3595,22 +3628,23 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a trip: $105$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $3.25$ h.`,
-      `A taxi charges $4$ EUR plus $2$ EUR per km. A $11$ km ride costs $29$ EUR.`,
+      `In an exam item, inlet fills in $5$ h, drain empties in $8$ h; both run on an empty tank. It fills in $13.3$ h.`,
+      `The equation $\\sqrt{x+9}=6$ has admissible solution $x=29$.`,
       `A ladder with foot $7$ m from a wall reaches $4$ m up the wall. The ladder length is $8$ m.`,
-      `A job takes $7$ h alone. After $3$ h, the remaining work needs $7$ more hours at the same rate.`,
-      `Converting $55$ mph to km/h gives $91$ km/h (use $1.609$).`,
+      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $9$ h. Both open (empty cistern): full in $6.6$ h.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $15.7$ cm (exact surd value squared gives $162$).`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{105}{60}+\\frac{120}{80}=3.25$$
+$$\\frac{1}{5}-\\frac{1}{8}=\\frac{1}{t}$$
 
 The statement is True.`,
       `**B.** → False
 
-$$4+2\\cdot11=26$$
+$$x+9=36$$
+$$x=27$$
 
 The statement is False.`,
       `**C.** → True
@@ -3620,16 +3654,16 @@ $$L=\\sqrt{7^2+4^2}=8$$
 The statement is True.`,
       `**D.** → False
 
-Left fraction $0.5714285714285714$; time $4$ h.
+$$t=\\frac{54}{15}=3.6$$
 
 The statement is False.`,
       `**E.** → False
 
-$$55\\cdot 1.609=88$$
+$$d=9\\sqrt{2}$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 74,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3640,41 +3674,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A square has side $6$ cm. Its diagonal is $11.5$ cm (exact surd value squared gives $72$).`,
-      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $10$ h. Both open (empty cistern): full in $4.12$ h.`,
-      `In an exam item, $\\sqrt{8+11}$ equals $7.36$.`,
-      `A trip: $90$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $3$ h.`,
-      `A taxi charges $4$ EUR plus $2$ EUR per km. A $9$ km ride costs $22$ EUR.`,
+      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $6.43$ h.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
+      `In an exam item, inlet fills in $5$ h, drain empties in $9$ h; both run on an empty tank. It fills in $14.3$ h.`,
+      `The equation $\\sqrt{x+9}=3$ has admissible solution $x=0$.`,
+      `A ladder with foot $7$ m from a wall reaches $5$ m up the wall. The ladder length is $9$ m.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$d=6\\sqrt{2}$$
+$$t=\\frac{48}{14}=3.4285714285714284$$
 
 The statement is False.`,
       `**B.** → True
 
-$$t=\\frac{70}{17}=4.117647058823529$$
+$$d=9\\sqrt{2}$$
 
 The statement is True.`,
       `**C.** → False
 
-$$\\sqrt{19}=4.358898943540674$$
+$$\\frac{1}{5}-\\frac{1}{9}=\\frac{1}{t}$$
 
 The statement is False.`,
       `**D.** → True
 
-$$\\frac{90}{60}+\\frac{120}{80}=3$$
+$$x+9=9$$
+$$x=0$$
 
 The statement is True.`,
       `**E.** → True
 
-$$4+2\\cdot9=22$$
+$$L=\\sqrt{7^2+5^2}=9$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 75,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3685,28 +3720,28 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Equation $|2x+3|=11$ has two roots whose product is $-28$.`,
-      `Trains $180$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
-      `Positions on a rail satisfy $|3x -4|=12$. The two positions add to $5.666666666666666$.`,
+      `The equation $\\sqrt{x+9}=3$ has admissible solution $x=0$.`,
+      `A ladder with foot $6$ m from a wall reaches $5$ m up the wall. The ladder length is $11$ m.`,
+      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $6.73$ h.`,
       `Consider a case where a square has side $9$ cm. Its diagonal is $12.7$ cm (exact surd value squared gives $162$).`,
-      `In an exam item, tap $A$ fills a cistern in $5$ h, tap $B$ in $9$ h. Both open (empty cistern): full in $6.21$ h.`,
+      `In an exam item, inlet fills in $5$ h, drain empties in $6$ h; both run on an empty tank. It fills in $34$ h.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Roots $4$, $-7$; product $-28$.
+$$x+9=9$$
+$$x=0$$
 
 The statement is True.`,
       `**B.** → False
 
-Relative $180$ km/h, length $430$ m.
+$$L=\\sqrt{6^2+5^2}=8$$
 
 The statement is False.`,
       `**C.** → False
 
-$$x=5.333333333333333\\text{ or }-2.6666666666666665$$
-Sum $=2.6666666666666665$.
+$$t=\\frac{56}{15}=3.7333333333333334$$
 
 The statement is False.`,
       `**D.** → True
@@ -3716,11 +3751,11 @@ $$d=9\\sqrt{2}$$
 The statement is True.`,
       `**E.** → False
 
-$$t=\\frac{45}{14}=3.2142857142857144$$
+$$\\frac{1}{5}-\\frac{1}{6}=\\frac{1}{t}$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 76,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3731,42 +3766,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Model $\\frac{3}{x-6}=\\frac{6}{x}$ ($x\\neq6$) yields solution $x=8$.`,
-      `In an exam item, the equation $\\sqrt{x+6}=3$ has admissible solution $x=3$.`,
-      `Inlet fills in $6$ h, drain empties in $7$ h; both run on an empty tank. It fills in $42$ h.`,
-      `Equation $|2x+2|=10$ has two roots whose product is $-26$.`,
-      `Trains $150$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $8$ s.`,
+      `Consider a case where a square has side $9$ cm. Its diagonal is $15.7$ cm (exact surd value squared gives $162$).`,
+      `In an exam item, inlet fills in $4$ h, drain empties in $6$ h; both run on an empty tank. It fills in $12$ h.`,
+      `The equation $\\sqrt{x+9}=4$ has admissible solution $x=7$.`,
+      `A ladder with foot $6$ m from a wall reaches $6$ m up the wall. The ladder length is $11$ m.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $4$ h.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Cross-multiply: $3x=6(x-6)$
+$$d=9\\sqrt{2}$$
 
 The statement is False.`,
       `**B.** → True
 
-$$x+6=9$$
-$$x=3$$
+$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{t}$$
 
 The statement is True.`,
       `**C.** → True
 
-$$\\frac{1}{6}-\\frac{1}{7}=\\frac{1}{t}$$
+$$x+9=16$$
+$$x=7$$
 
 The statement is True.`,
       `**D.** → False
 
-Roots $4$, $-6$; product $-24$.
+$$L=\\sqrt{6^2+6^2}=8$$
 
 The statement is False.`,
       `**E.** → True
 
-Relative $180$ km/h, length $400$ m.
+$$t=\\frac{64}{16}=4$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 77,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3812,7 +3847,7 @@ $$x=16$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 78,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3857,7 +3892,7 @@ Left fraction $0.5714285714285714$; time $4$ h.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 79,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3903,7 +3938,7 @@ $$\\frac{90}{60}+\\frac{120}{80}=3$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 80,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3949,7 +3984,7 @@ $$d=7\\sqrt{2}$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 81,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -3995,7 +4030,7 @@ Roots $4$, $-6$; product $-24$.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 82,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4040,7 +4075,7 @@ Cross-multiply: $2x=6(x-4)$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 83,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4051,22 +4086,22 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, tap $A$ fills a cistern in $5$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $3.08$ h.`,
-      `$\\sqrt{6+11}$ equals $7.12$.`,
+      `In an exam item, two trains $180$ m and $320$ m long approach each other at $72$ km/h and $108$ km/h on parallel tracks. From the instant their fronts meet until they have completely passed each other takes $10$ seconds.`,
+      `Trains $210$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
       `A trip: $105$ km at $60$ km/h. It follows that $120$ km at $80$ km/h. Total time $6.25$ h.`,
-      `A taxi charges $4$ EUR plus $2$ EUR per km. A $11$ km ride costs $26$ EUR.`,
-      `Consider a case where a ladder with foot $7$ m from a wall reaches $4$ m up the wall. The ladder length is $8$ m.`,
+      `Model $\\frac{2}{x-6}=\\frac{6}{x}$ ($x\\neq6$) yields solution $x=3$.`,
+      `Positions on a rail satisfy $|3x -2|=10$. The two positions add to $1.3333333333333335$.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$$t=\\frac{40}{13}=3.076923076923077$$
+Relative $180$ km/h, length $500$ m.
 
 The statement is True.`,
       `**B.** → False
 
-$$\\sqrt{17}=4.123105625617661$$
+Relative $180$ km/h, length $460$ m.
 
 The statement is False.`,
       `**C.** → False
@@ -4076,16 +4111,17 @@ $$\\frac{105}{60}+\\frac{120}{80}=3.25$$
 The statement is False.`,
       `**D.** → True
 
-$$4+2\\cdot11=26$$
+Cross-multiply: $2x=6(x-6)$
 
 The statement is True.`,
       `**E.** → True
 
-$$L=\\sqrt{7^2+4^2}=8$$
+$$x=4\\text{ or }-2.6666666666666665$$
+Sum $=1.3333333333333335$.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 84,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4097,10 +4133,10 @@ The statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Trains $210$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
-      `Positions on a rail satisfy $|3x -3|=10$. The two positions add to $1.9999999999999996$.`,
-      `In an exam item, a square has side $7$ cm. Its diagonal is $9.9$ cm (exact surd value squared gives $98$).`,
-      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $10$ h. Both open (empty cistern): full in $7.12$ h.`,
-      `$\\sqrt{8+11}$ equals $7.36$.`,
+      `Consider a case where a trip: $105$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $3.25$ h.`,
+      `In an exam item, model $\\frac{2}{x-4}=\\frac{6}{x}$ ($x\\neq4$) yields solution $x=2$.`,
+      `Positions on a rail satisfy $|3x -2|=12$. The two positions add to $4.333333333333334$.`,
+      `A taxi charges $4$ EUR plus $2$ EUR per km. A $11$ km ride costs $29$ EUR.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
@@ -4111,27 +4147,27 @@ Relative $180$ km/h, length $460$ m.
 The statement is False.`,
       `**B.** → True
 
-$$x=4.333333333333333\\text{ or }-2.3333333333333335$$
-Sum $=1.9999999999999996$.
+$$\\frac{105}{60}+\\frac{120}{80}=3.25$$
 
 The statement is True.`,
       `**C.** → True
 
-$$d=7\\sqrt{2}$$
+Cross-multiply: $2x=6(x-4)$
 
 The statement is True.`,
       `**D.** → False
 
-$$t=\\frac{70}{17}=4.117647058823529$$
+$$x=4.666666666666667\\text{ or }-3.3333333333333335$$
+Sum $=1.3333333333333335$.
 
 The statement is False.`,
       `**E.** → False
 
-$$\\sqrt{19}=4.358898943540674$$
+$$4+2\\cdot11=26$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 85,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4142,43 +4178,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\sqrt{x+9}=5$ has admissible solution $x=16$.`,
-      `Inlet fills in $4$ h, drain empties in $9$ h; both run on an empty tank. It fills in $10.2$ h.`,
-      `Equation $|2x+3|=11$ has two roots whose product is $-28$.`,
-      `Trains $180$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $9$ s.`,
-      `In an exam item, positions on a rail satisfy $|3x -4|=12$. The two positions add to $5.666666666666666$.`,
+      `A trip: $105$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $3.25$ h.`,
+      `Model $\\frac{2}{x-6}=\\frac{6}{x}$ ($x\\neq6$) yields solution $x=5$.`,
+      `Positions on a rail satisfy $|3x -2|=10$. The two positions add to $1.3333333333333335$.`,
+      `Consider a case where a taxi charges $4$ EUR plus $2$ EUR per km. A $9$ km ride costs $22$ EUR.`,
+      `In an exam item, two trains $180$ m and $320$ m long approach each other at $72$ km/h and $108$ km/h on parallel tracks. From the instant their fronts meet until they have completely passed each other takes $14$ seconds.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$x+9=25$$
-$$x=16$$
+$$\\frac{105}{60}+\\frac{120}{80}=3.25$$
 
 The statement is True.`,
       `**B.** → False
 
-$$\\frac{1}{4}-\\frac{1}{9}=\\frac{1}{t}$$
+Cross-multiply: $2x=6(x-6)$
 
 The statement is False.`,
       `**C.** → True
 
-Roots $4$, $-7$; product $-28$.
+$$x=4\\text{ or }-2.6666666666666665$$
+Sum $=1.3333333333333335$.
 
 The statement is True.`,
       `**D.** → True
 
-Relative $180$ km/h, length $430$ m.
+$$4+2\\cdot9=22$$
 
 The statement is True.`,
       `**E.** → False
 
-$$x=5.333333333333333\\text{ or }-2.6666666666666665$$
-Sum $=2.6666666666666665$.
+Relative $180$ km/h, length $500$ m.
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 86,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4189,42 +4224,42 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a job takes $6$ h alone. After $3$ h, the remaining work needs $5$ more hours at the same rate.`,
-      `In an exam item, converting $55$ mph to km/h gives $88$ km/h (use $1.609$).`,
-      `Model $\\frac{3}{x-6}=\\frac{6}{x}$ ($x\\neq6$) yields solution $x=8$.`,
-      `The equation $\\sqrt{x+7}=3$ has admissible solution $x=5$.`,
-      `Inlet fills in $6$ h, drain empties in $7$ h; both run on an empty tank. It fills in $42$ h.`,
+      `Model $\\frac{2}{x-4}=\\frac{6}{x}$ ($x\\neq4$) yields solution $x=5$.`,
+      `In an exam item, positions on a rail satisfy $|3x -2|=12$. The two positions add to $1.3333333333333335$.`,
+      `A taxi charges $4$ EUR plus $2$ EUR per km. A $11$ km ride costs $29$ EUR.`,
+      `Two trains $180$ m and $320$ m long approach each other at $72$ km/h and $108$ km/h on parallel tracks. From the instant their fronts meet until they have completely passed each other takes $14$ seconds.`,
+      `Trains $210$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $9$ s.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Left fraction $0.5$; time $3$ h.
+Cross-multiply: $2x=6(x-4)$
 
 The statement is False.`,
       `**B.** → True
 
-$$55\\cdot 1.609=88$$
+$$x=4.666666666666667\\text{ or }-3.3333333333333335$$
+Sum $=1.3333333333333335$.
 
 The statement is True.`,
       `**C.** → False
 
-Cross-multiply: $3x=6(x-6)$
+$$4+2\\cdot11=26$$
 
 The statement is False.`,
       `**D.** → False
 
-$$x+7=9$$
-$$x=2$$
+Relative $180$ km/h, length $500$ m.
 
 The statement is False.`,
       `**E.** → True
 
-$$\\frac{1}{6}-\\frac{1}{7}=\\frac{1}{t}$$
+Relative $180$ km/h, length $460$ m.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 87,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4235,17 +4270,18 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A trip: $120$ km at $60$ km/h. It follows that $120$ km at $80$ km/h. Total time $3.5$ h.`,
+      `Positions on a rail satisfy $|3x -2|=10$. The two positions add to $1.3333333333333335$.`,
       `A taxi charges $4$ EUR plus $2$ EUR per km. A $9$ km ride costs $22$ EUR.`,
-      `Consider a case where a ladder with foot $5$ m from a wall reaches $6$ m up the wall. The ladder length is $8$ m.`,
-      `In an exam item, a job takes $8$ h alone. After $3$ h, the remaining work needs $9$ more hours at the same rate.`,
-      `Converting $45$ mph to km/h gives $74$ km/h (use $1.609$).`,
+      `Two trains $180$ m and $320$ m long approach each other at $72$ km/h and $108$ km/h on parallel tracks. From the instant their fronts meet until they have completely passed each other takes $10$ seconds.`,
+      `In an exam item, trains $210$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
+      `A trip: $105$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $6.25$ h.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$\\frac{120}{60}+\\frac{120}{80}=3.5$$
+$$x=4\\text{ or }-2.6666666666666665$$
+Sum $=1.3333333333333335$.
 
 The statement is True.`,
       `**B.** → True
@@ -4255,21 +4291,21 @@ $$4+2\\cdot9=22$$
 The statement is True.`,
       `**C.** → True
 
-$$L=\\sqrt{5^2+6^2}=8$$
+Relative $180$ km/h, length $500$ m.
 
 The statement is True.`,
       `**D.** → False
 
-Left fraction $0.625$; time $5$ h.
+Relative $180$ km/h, length $460$ m.
 
 The statement is False.`,
       `**E.** → False
 
-$$45\\cdot 1.609=72$$
+$$\\frac{105}{60}+\\frac{120}{80}=3.25$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 88,
     solution_overview: `Five independent rational, radical, or absolute-value stories. State the domain, solve algebraically, reject extraneous values, then test the claim.`,
   },
@@ -4280,37 +4316,37 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, a square has side $7$ cm. Its diagonal is $12.9$ cm (exact surd value squared gives $98$).`,
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $8$ h. Both open (empty cistern): full in $6.08$ h.`,
-      `$\\sqrt{6+11}$ equals $7.12$.`,
-      `A trip: $105$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $3.25$ h.`,
-      `Consider a case where a taxi charges $4$ EUR plus $2$ EUR per km. A $11$ km ride costs $26$ EUR.`,
+      `In an exam item, a ladder reaches $3$ m up a wall when its foot is $4$ m from the wall (right angle at the ground). The ladder length is $9$ m.`,
+      `Pipe $A$ fills a tank in $4$ hours; pipe $B$ empties a full tank in $6$ hours. With both open on an empty tank, the tank becomes full for the first time after $14$ hours.`,
+      `A job takes $8$ h alone. After $3$ h, the remaining work needs $9$ more hours at the same rate.`,
+      `Equation $|2x+2|=10$ has two roots whose product is $-24$.`,
+      `$\\sqrt{8+11}$ equals $4.36$.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$d=7\\sqrt{2}$$
+$$L=\\sqrt{9+16}=5$$
 
 The statement is False.`,
       `**B.** → False
 
-$$t=\\frac{40}{13}=3.076923076923077$$
+$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
 
 The statement is False.`,
       `**C.** → False
 
-$$\\sqrt{17}=4.123105625617661$$
+Left fraction $0.625$; time $5$ h.
 
 The statement is False.`,
       `**D.** → True
 
-$$\\frac{105}{60}+\\frac{120}{80}=3.25$$
+Roots $4$, $-6$; product $-24$.
 
 The statement is True.`,
       `**E.** → True
 
-$$4+2\\cdot11=26$$
+$$\\sqrt{19}=4.358898943540674$$
 
 The statement is True.`,
     ],
@@ -4325,38 +4361,37 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Equation $|2x+1|=9$ has two roots whose product is $-20$.`,
-      `Trains $210$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
-      `In an exam item, positions on a rail satisfy $|3x -3|=10$. The two positions add to $5$.`,
-      `A square has side $10$ cm. Its diagonal is $17.1$ cm (exact surd value squared gives $200$).`,
-      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $10$ h. Both open (empty cistern): full in $4.12$ h.`,
+      `Pipe $A$ fills a tank in $4$ hours; pipe $B$ empties a full tank in $6$ hours. With both open on an empty tank, the tank becomes full for the first time after $12$ hours.`,
+      `Consider a case where a job takes $8$ h alone. After $3$ h, the remaining work needs $9$ more hours at the same rate.`,
+      `In an exam item, equation $|2x+2|=10$ has two roots whose product is $-26$.`,
+      `$\\sqrt{6+11}$ equals $7.12$.`,
+      `Converting $55$ mph to km/h gives $88$ km/h (use $1.609$).`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Roots $4$, $-5$; product $-20$.
+$$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
 
 The statement is True.`,
       `**B.** → False
 
-Relative $180$ km/h, length $460$ m.
+Left fraction $0.625$; time $5$ h.
 
 The statement is False.`,
       `**C.** → False
 
-$$x=4.333333333333333\\text{ or }-2.3333333333333335$$
-Sum $=1.9999999999999996$.
+Roots $4$, $-6$; product $-24$.
 
 The statement is False.`,
       `**D.** → False
 
-$$d=10\\sqrt{2}$$
+$$\\sqrt{17}=4.123105625617661$$
 
 The statement is False.`,
       `**E.** → True
 
-$$t=\\frac{70}{17}=4.117647058823529$$
+$$55\\cdot 1.609=88$$
 
 The statement is True.`,
     ],
@@ -4371,33 +4406,32 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Model $\\frac{4}{x-4}=\\frac{6}{x}$ ($x\\neq4$) yields solution $x=11$.`,
-      `The equation $\\sqrt{x+7}=5$ has admissible solution $x=18$.`,
-      `Inlet fills in $4$ h, drain empties in $9$ h; both run on an empty tank. It fills in $7.2$ h.`,
-      `Equation $|2x+3|=11$ has two roots whose product is $-28$.`,
+      `A job takes $8$ h alone. After $3$ h, the remaining work needs $9$ more hours at the same rate.`,
+      `Equation $|2x+2|=10$ has two roots whose product is $-24$.`,
+      `$\\sqrt{8+11}$ equals $4.36$.`,
+      `Converting $45$ mph to km/h gives $72$ km/h (use $1.609$).`,
       `In an exam item, trains $180$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Cross-multiply: $4x=6(x-4)$
+Left fraction $0.625$; time $5$ h.
 
 The statement is False.`,
       `**B.** → True
 
-$$x+7=25$$
-$$x=18$$
+Roots $4$, $-6$; product $-24$.
 
 The statement is True.`,
       `**C.** → True
 
-$$\\frac{1}{4}-\\frac{1}{9}=\\frac{1}{t}$$
+$$\\sqrt{19}=4.358898943540674$$
 
 The statement is True.`,
       `**D.** → True
 
-Roots $4$, $-7$; product $-28$.
+$$45\\cdot 1.609=72$$
 
 The statement is True.`,
       `**E.** → False
@@ -4417,22 +4451,22 @@ The statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Consider a case where a ladder with foot $6$ m from a wall reaches $4$ m up the wall. The ladder length is $7$ m.`,
-      `In an exam item, a job takes $6$ h alone. After $3$ h, the remaining work needs $3$ more hours at the same rate.`,
+      `Equation $|2x+2|=10$ has two roots whose product is $-24$.`,
+      `In an exam item, $\\sqrt{6+11}$ equals $4.12$.`,
       `Converting $55$ mph to km/h gives $91$ km/h (use $1.609$).`,
-      `Model $\\frac{3}{x-6}=\\frac{6}{x}$ ($x\\neq6$) yields solution $x=6$.`,
-      `The equation $\\sqrt{x+5}=3$ has admissible solution $x=7$.`,
+      `Trains $180$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $9$ s.`,
+      `A trip: $90$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $5$ h.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$L=\\sqrt{6^2+4^2}=7$$
+Roots $4$, $-6$; product $-24$.
 
 The statement is True.`,
       `**B.** → True
 
-Left fraction $0.5$; time $3$ h.
+$$\\sqrt{17}=4.123105625617661$$
 
 The statement is True.`,
       `**C.** → False
@@ -4442,13 +4476,12 @@ $$55\\cdot 1.609=88$$
 The statement is False.`,
       `**D.** → True
 
-Cross-multiply: $3x=6(x-6)$
+Relative $180$ km/h, length $430$ m.
 
 The statement is True.`,
       `**E.** → False
 
-$$x+5=9$$
-$$x=4$$
+$$\\frac{90}{60}+\\frac{120}{80}=3$$
 
 The statement is False.`,
     ],
@@ -4464,10 +4497,10 @@ The statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `$\\sqrt{8+11}$ equals $7.36$.`,
-      `A trip: $120$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $6.5$ h.`,
-      `Consider a case where a taxi charges $4$ EUR plus $2$ EUR per km. A $9$ km ride costs $22$ EUR.`,
-      `In an exam item, a ladder with foot $5$ m from a wall reaches $6$ m up the wall. The ladder length is $11$ m.`,
-      `A job takes $8$ h alone. After $3$ h, the remaining work needs $5$ more hours at the same rate.`,
+      `Converting $45$ mph to km/h gives $74$ km/h (use $1.609$).`,
+      `Trains $180$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $9$ s.`,
+      `In an exam item, a trip: $90$ km at $60$ km/h, then $120$ km at $80$ km/h. Total time $5$ h.`,
+      `Two trains $180$ m and $320$ m long approach each other at $72$ km/h and $108$ km/h on parallel tracks. From the instant their fronts meet until they have completely passed each other takes $10$ seconds.`,
     ],
     answer_key: [false, false, true, false, true],
     tactical_explanations: [
@@ -4478,22 +4511,22 @@ $$\\sqrt{19}=4.358898943540674$$
 The statement is False.`,
       `**B.** → False
 
-$$\\frac{120}{60}+\\frac{120}{80}=3.5$$
+$$45\\cdot 1.609=72$$
 
 The statement is False.`,
       `**C.** → True
 
-$$4+2\\cdot9=22$$
+Relative $180$ km/h, length $430$ m.
 
 The statement is True.`,
       `**D.** → False
 
-$$L=\\sqrt{5^2+6^2}=8$$
+$$\\frac{90}{60}+\\frac{120}{80}=3$$
 
 The statement is False.`,
       `**E.** → True
 
-Left fraction $0.625$; time $5$ h.
+Relative $180$ km/h, length $500$ m.
 
 The statement is True.`,
     ],

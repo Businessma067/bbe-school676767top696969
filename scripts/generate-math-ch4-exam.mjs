@@ -5,6 +5,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { initHardTemplates } from "./ch4-hard-templates.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_MAIN = path.join(ROOT, "src/data/math-ch4-equations.ts");
@@ -85,6 +86,8 @@ function phrase(slot, text) {
 function mkExpl(isTrue, lines, verdict) {
   return [...lines, "", close(isTrue, verdict)].join("\n");
 }
+
+let TIER = null;
 
 // ═══════════════════════════════════════════════════════════════════════════
 // 4.1 LINEAR — 28 templates
@@ -1312,7 +1315,33 @@ const EXP_TPLS = [
   expCooling, logInequality, expQuadBase2, logDecadicClaim, expNoReal,
 ];
 
-// ── assembly ──────────────────────────────────────────────────────────────────
+function poolFor(sub, tier) {
+  const T = TIER;
+  const t = tier;
+  if (sub === "4.1") {
+    if (t === 1) return T.LIN_1;
+    if (t === 2) return [...T.LIN_2, ...LIN_TPLS.slice(0, 8)];
+    if (t === 3) return LIN_TPLS;
+    if (t === 4) return [...T.LIN_4, ...LIN_TPLS];
+    return [...T.LIN_5, ...T.LIN_4, ...LIN_TPLS.slice(0, 6)];
+  }
+  if (sub === "4.2") {
+    if (t <= 2) return QUAD_TPLS.slice(0, 6);
+    if (t === 3) return QUAD_TPLS;
+    if (t === 4) return [...T.QUAD_4, ...QUAD_TPLS.slice(6, 12)];
+    return [...T.QUAD_5, ...T.QUAD_4, ...QUAD_TPLS.slice(10)];
+  }
+  if (sub === "4.3") {
+    if (t <= 2) return RAT_TPLS.slice(0, 5);
+    if (t === 3) return RAT_TPLS;
+    if (t === 4) return [...T.RAT_4, ...RAT_TPLS.slice(5, 10)];
+    return [...T.RAT_5, ...T.RAT_4, ...RAT_TPLS.slice(8)];
+  }
+  if (t <= 2) return EXP_TPLS;
+  if (t === 3) return EXP_TPLS;
+  if (t === 4) return [...T.EXP_4, ...EXP_TPLS];
+  return [...T.EXP_5, ...T.EXP_4];
+}
 
 function buildLetter(pool, taskN, letter, isTrue, usedTpl) {
   for (let tries = 0; tries < 400; tries++) {
@@ -1347,13 +1376,24 @@ const OVERVIEWS = {
   "4.4": `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
 };
 
-function difficulty(n, sub) {
+function difficultyTier(n, sub) {
   const span = sub === "4.1" || sub === "4.2" ? 33 : 27;
-  const idx = sub === "4.1" ? n : sub === "4.2" ? n - 33 : sub === "4.3" ? n - 66 : n - 93;
-  return idx < span * 0.25 ? "4/5" : "5/5";
+  const idx =
+    sub === "4.1" ? n - 1 : sub === "4.2" ? n - 34 : sub === "4.3" ? n - 67 : n - 94;
+  if (idx < span * 0.2) return 1;
+  if (idx < span * 0.4) return 2;
+  if (idx < span * 0.6) return 3;
+  if (idx < span * 0.8) return 4;
+  return 5;
 }
 
-function buildTask(n, sub, pool) {
+// ── assembly ──────────────────────────────────────────────────────────────────
+
+TIER = initHardTemplates({ hdr, mkExpl, phrase, pickClaim, wrong, pm, backFrom });
+
+function buildTask(n, sub) {
+  const tier = difficultyTier(n, sub);
+  const pool = poolFor(sub, tier);
   const answer_key = KEY_PATTERNS[n % KEY_PATTERNS.length].map(Boolean);
   const usedTpl = new Set();
   const statements = [];
@@ -1372,7 +1412,7 @@ function buildTask(n, sub, pool) {
     statements,
     answer_key,
     tactical_explanations,
-    difficulty_level: difficulty(n, sub),
+    difficulty_level: `${tier}/5`,
     sort_order: n,
     solution_overview: OVERVIEWS[sub],
   };
@@ -1400,10 +1440,10 @@ function renderTask(t) {
   ].join("\n");
 }
 
-const t41 = Array.from({ length: 33 }, (_, i) => buildTask(i + 1, "4.1", LIN_TPLS));
-const t42 = Array.from({ length: 33 }, (_, i) => buildTask(i + 34, "4.2", QUAD_TPLS));
-const t43 = Array.from({ length: 27 }, (_, i) => buildTask(i + 67, "4.3", RAT_TPLS));
-const t44 = Array.from({ length: 27 }, (_, i) => buildTask(i + 94, "4.4", EXP_TPLS));
+const t41 = Array.from({ length: 33 }, (_, i) => buildTask(i + 1, "4.1"));
+const t42 = Array.from({ length: 33 }, (_, i) => buildTask(i + 34, "4.2"));
+const t43 = Array.from({ length: 27 }, (_, i) => buildTask(i + 67, "4.3"));
+const t44 = Array.from({ length: 27 }, (_, i) => buildTask(i + 94, "4.4"));
 
 fs.writeFileSync(
   OUT_MAIN,
@@ -1446,5 +1486,8 @@ ${t44.map(renderTask).join("\n")}
   "utf8"
 );
 
-console.log(`Generated ${120} hard exam tasks (4–5/5)`);
-console.log(`  Templates: 4.1=${LIN_TPLS.length} 4.2=${QUAD_TPLS.length} 4.3=${RAT_TPLS.length} 4.4=${EXP_TPLS.length}`);
+const all = [...t41, ...t42, ...t43, ...t44];
+console.log(`Generated ${all.length} exam tasks`);
+for (let d = 1; d <= 5; d++) {
+  console.log(`  ${d}/5: ${all.filter((t) => t.difficulty_level === `${d}/5`).length}`);
+}

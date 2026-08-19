@@ -50,7 +50,7 @@ $$\\log_{10}300000=5.48$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 94,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -98,7 +98,7 @@ Two positive $u$ → two $x$.
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 95,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -145,7 +145,7 @@ $$x=256$$
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 96,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -192,7 +192,7 @@ $$T=95e^{-0.15000000000000002\\cdot25}\\approx2$$
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 97,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -243,7 +243,7 @@ Ratio $=2$.
 
 The statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 98,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -294,7 +294,7 @@ Match bases / monotonicity gives $x=4$.
 
 The statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `1/5`,
     sort_order: 99,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -342,7 +342,7 @@ $$x=3^{3.3333333333333335}=38.940738398300034$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 100,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -390,7 +390,7 @@ $$x=10$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 101,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -438,7 +438,7 @@ Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 102,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -485,7 +485,7 @@ $$(u-3)(u-8)=0$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 103,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -532,7 +532,7 @@ $$2000(1+\\frac{3}{100})^{6}=2388$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `2/5`,
     sort_order: 104,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -579,7 +579,7 @@ $$1200\\cdot 2^{6}=76800$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 105,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -629,7 +629,7 @@ $$x=2187$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 106,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -680,7 +680,7 @@ $x < 7$.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 107,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -728,7 +728,7 @@ $$(u-2)(u-6)=0$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 108,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -776,7 +776,7 @@ $$\\log_{10}500000=5.7$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 109,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -824,7 +824,7 @@ Two positive $u$ → two $x$.
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `3/5`,
     sort_order: 110,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -835,43 +835,44 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$\\dfrac{\\log_3 81}{\\log_3 9} = 5$.`,
-      `A culture doubles every $4$ h. From $1200$ cells, after $24$ h the count is $76800$ (ignore death).`,
-      `Newton cooling $T=95e^{-0.15000000000000002t}$ (minutes). After $25$ min the reading is $2$°C.`,
-      `$2000$ EUR at $3\\%$ p.a. compounded annually for $6$ years grows to $2388$ EUR.`,
-      `The equation $\\log x + \\log(x+2) = 5$ (base $10$) has positive solution $x = 35$.`,
+      `Isotope half-life $3$ years. After $6$ years, about $29\\%$ of the original sample remains.`,
+      `$\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ implies $x = 256$.`,
+      `$\\dfrac{\\log_3 81}{\\log_3 9} = 2$.`,
+      `If $\\log_{2} x = 3$, then $x$ is greater than $4$.`,
+      `In an exam item, the decadic logarithm of $2000$ equals $6.3$.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-$$\\log_3 81=4,\\ \\log_3 9=2$$
-Ratio $=2$.
+Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
 
 The statement is False.`,
       `**B.** → True
 
-$$1200\\cdot 2^{6}=76800$$
+$$\\frac{3}{2}\\log_{4} x = 6$$
+$$x=4^{4}=256$$
 
 The statement is True.`,
       `**C.** → True
 
-$$T=95e^{-0.15000000000000002\\cdot25}\\approx2$$
+$$\\log_3 81=4,\\ \\log_3 9=2$$
+Ratio $=2$.
 
 The statement is True.`,
       `**D.** → True
 
-$$2000(1+\\frac{3}{100})^{6}=2388$$
+$$x=2^{3}=8$$
+$x > 4$.
 
 The statement is True.`,
       `**E.** → False
 
-$$x(x+2)=10^{5}$$
-$$x=32$$
+$$\\log_{10}2000=3.3$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 111,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -882,34 +883,34 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The unique real solution of $2^x = 3^{x-1}$ is $x = 1$.`,
-      `In an exam item, the equation $\\log x + \\log(x+3) = 6$ (base $10$) has positive solution $x = 729$.`,
-      `$\\dfrac{\\log_3 81}{\\log_3 9} = 5$.`,
-      `A culture doubles every $4$ h. From $1200$ cells, after $24$ h the count is $76800$ (ignore death).`,
+      `Consider a case where a culture doubles every $4$ h. From $1400$ cells, after $24$ h the count is $89600$ (ignore death).`,
+      `In an exam item, a heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $2$ distinct real exponents $x$.`,
+      `Measuring time after an offset, $\\ln(x-8)=\\ln 4$ describes the event at $x=14$ (domain respected).`,
+      `The unique real solution of $25^x = 5^{x+3}$ is $x = 3$.`,
       `Newton cooling $T=80e^{-0.15000000000000002t}$ (minutes). After $10$ min the reading is $20$°C.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Match bases / monotonicity gives $x=1$.
+$$1400\\cdot 2^{6}=89600$$
 
 The statement is True.`,
       `**B.** → True
 
-$$x(x+3)=10^{6}$$
-$$x=729$$
+$$u^2-11u+24=0$$
+$$(u-3)(u-8)=0$$
 
 The statement is True.`,
       `**C.** → False
 
-$$\\log_3 81=4,\\ \\log_3 9=2$$
-Ratio $=2$.
+$$x-8=4$$
+$$x=12$$
 
 The statement is False.`,
       `**D.** → True
 
-$$1200\\cdot 2^{6}=76800$$
+Match bases / monotonicity gives $x=3$.
 
 The statement is True.`,
       `**E.** → False
@@ -918,7 +919,7 @@ $$T=80e^{-0.15000000000000002\\cdot10}\\approx18$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 112,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -929,44 +930,43 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ implies $x = 65$.`,
-      `Isotope half-life $4$ years. After $8$ years, about $29\\%$ of the original sample remains.`,
-      `The unique real solution of $4^x = 2^{x+4}$ is $x = 4$.`,
-      `In an exam item, the equation $\\log x + \\log(x+3) = 7$ (base $10$) has positive solution $x = 2189$.`,
-      `$\\dfrac{\\log_3 81}{\\log_3 9} = 2$.`,
+      `$5000$ EUR is invested at $4\\%$ per annum compounded annually with no withdrawals. After $8$ full years the balance is $6845$ EUR (bank rounds to the nearest euro).`,
+      `The equation $\\log x + \\log(x+2) = 5$ (base $10$) has positive solution $x = 35$.`,
+      `$4500$ EUR at $4\\%$ p.a. compounded annually for $8$ years grows to $6159$ EUR.`,
+      `In an exam item, isotope half-life $4$ years. After $8$ years, about $29\\%$ of the original sample remains.`,
+      `$\\log_{2} x + \\frac{\\log_{2} x}{3} = 4$ implies $x = 8$.`,
     ],
     answer_key: [false, false, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$\\frac{4}{3}\\log_{3} x = 5$$
-$$x=3^{3.75}=61.546690537779$$
+$$5000(1.04)^8=6843$$
 
 The statement is False.`,
       `**B.** → False
 
-Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
+$$x(x+2)=10^{5}$$
+$$x=32$$
 
 The statement is False.`,
       `**C.** → True
 
-Match bases / monotonicity gives $x=4$.
+$$4500(1+\\frac{4}{100})^{8}=6159$$
 
 The statement is True.`,
       `**D.** → False
 
-$$x(x+3)=10^{7}$$
-$$x=2187$$
+Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
 
 The statement is False.`,
       `**E.** → True
 
-$$\\log_3 81=4,\\ \\log_3 9=2$$
-Ratio $=2$.
+$$\\frac{4}{3}\\log_{2} x = 4$$
+$$x=2^{3}=8$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 113,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -977,44 +977,48 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 4$ describes the event at $x=9$ (domain respected).`,
-      `Consider a case where a heated metal rod model satisfies $e^{2x} - 8e^x + 12 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `$\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ implies $x = 39$.`,
-      `Isotope half-life $4$ years. After $8$ years, about $29\\%$ of the original sample remains.`,
-      `The unique real solution of $9^x = 3^{x+2}$ is $x = 5$.`,
+      `In an exam item, the decadic logarithm of $6000$ equals $3.78$.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/3}) - 3\\log x - 2\\log x + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
+      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $8$.`,
+      `A culture doubles every $2$ h. From $800$ cells, after $8$ h the count is $12804$ (ignore death).`,
+      `Consider a case where a heated metal rod model satisfies $e^{2x} - 14e^x + 40 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$x-5=4$$
-$$x=9$$
+$$\\log_{10}6000=3.78$$
 
 The statement is True.`,
       `**B.** → False
 
-$$u^2-8u+12=0$$
-$$(u-2)(u-6)=0$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 1$$
+$$x = 10^{1} = 10$$
+$x \\ge 5$.
 
 The statement is False.`,
       `**C.** → True
 
-$$\\frac{3}{2}\\log_{3} x = 5$$
-$$x=3^{3.3333333333333335}=38.940738398300034$$
+$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+$$\\log x = -1$$
+$$x \\approx 0.1$$
+$x < 8$.
 
 The statement is True.`,
       `**D.** → False
 
-Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
+$$800\\cdot 2^{4}=12800$$
 
 The statement is False.`,
       `**E.** → False
 
-Match bases / monotonicity gives $x=2$.
+$$u^2-14u+40=0$$
+$$(u-4)(u-10)=0$$
 
 The statement is False.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 114,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -1025,43 +1029,43 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Isotope half-life $5$ years. After $10$ years, about $29\\%$ of the original sample remains.`,
-      `The decadic logarithm of $500000$ equals $5.7$.`,
-      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 5$ describes the event at $x=14$ (domain respected).`,
-      `The equation $2^x = -7$ has $no$ real solution.`,
-      `$\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ implies $x = 62$.`,
+      `Newton cooling $T=85e^{-0.2t}$ (minutes). After $15$ min the reading is $7$°C.`,
+      `With $u=2^x>0$, the equation $2\\cdot4^x-16\\cdot2^x+24=0$ yields $2$ real solutions for $x$.`,
+      `$4500$ EUR at $4\\%$ p.a. compounded annually for $8$ years grows to $6161$ EUR.`,
+      `$5000$ EUR is invested at $4\\%$ per annum compounded annually with no withdrawals. After $8$ full years the balance is $6843$ EUR (bank rounds to the nearest euro).`,
+      `The equation $\\log x + \\log(x+3) = 6$ (base $10$) has positive solution $x = 729$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
+$$T=85e^{-0.2\\cdot15}\\approx4$$
 
 The statement is False.`,
       `**B.** → True
 
-$$\\log_{10}500000=5.7$$
+$$2u^2-16u+24=0$$
+Two positive $u$ → two $x$.
 
 The statement is True.`,
       `**C.** → False
 
-$$x-5=5$$
-$$x=10$$
+$$4500(1+\\frac{4}{100})^{8}=6159$$
 
 The statement is False.`,
       `**D.** → True
 
-$$2^x > 0$$ always; RHS negative.
+$$5000(1.04)^8=6843$$
 
 The statement is True.`,
       `**E.** → True
 
-$$\\frac{4}{3}\\log_{3} x = 5$$
-$$x=3^{3.75}=61.546690537779$$
+$$x(x+3)=10^{6}$$
+$$x=729$$
 
 The statement is True.`,
     ],
-    difficulty_level: `5/5`,
+    difficulty_level: `4/5`,
     sort_order: 115,
     solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
   },
@@ -1072,40 +1076,48 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $2$ distinct real exponents $x$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-24\\cdot2^x+45=0$ yields $5$ real solutions for $x$.`,
-      `Isotope half-life $5$ years. After $10$ years, about $29\\%$ of the original sample remains.`,
-      `The decadic logarithm of $800000$ equals $5.9$.`,
-      `In an exam item, measuring time after an offset, $\\ln(x-5)=\\ln 2$ describes the event at $x=10$ (domain respected).`,
+      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $5$.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/3}) - 3\\log x - 2\\log x + 8 = \\frac{2\\log x}{3}$ satisfies $x \\ge 20$.`,
+      `A population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $5$ distinct real values of $x$.`,
+      `The equation $\\log x + \\log(x+4) = 1$ (decadic logarithms; domain $x > 0$ and $x > -4$) has the unique positive solution $x = 20$.`,
+      `Consider a case where a population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $5$ distinct real values of $x$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$$u^2-11u+24=0$$
-$$(u-3)(u-8)=0$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 1$$
+$$x = 10^{1} = 10$$
+$x \\ge 5$.
 
 The statement is True.`,
       `**B.** → False
 
-$$3u^2-24u+45=0$$
-Two positive $u$ → two $x$.
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.5$$
+$$x = 10^{0.5} = 3.16$$
+$x < 20$.
 
 The statement is False.`,
       `**C.** → False
 
-Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is False.`,
       `**D.** → True
 
-$$\\log_{10}800000=5.9$$
+$$x(x+4)=10$$
+$$x=20$$
 
 The statement is True.`,
       `**E.** → False
 
-$$x-5=2$$
-$$x=7$$
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is False.`,
     ],
@@ -1120,40 +1132,46 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$3500$ EUR at $6\\%$ p.a. compounded annually for $6$ years grows to $4969$ EUR.`,
-      `In an exam item, if $\\log_{4} x = 5$, then $x$ is greater than $256$.`,
-      `A heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $2$ distinct real exponents $x$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-14\\cdot2^x+20=0$ yields $5$ real solutions for $x$.`,
-      `Isotope half-life $5$ years. After $10$ years, about $25\\%$ of the original sample remains.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/6}) - 6\\log x - 2\\log x + 14 = \\frac{2\\log x}{3}$ satisfies $x \\ge 6$.`,
+      `In an exam item, a population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $2$ distinct real values of $x$.`,
+      `The equation $\\log x + \\log(x+4) = 1$ (decadic logarithms; domain $x > 0$ and $x > -4$) has the unique positive solution $x = 20$.`,
+      `The solution of $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + 5 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $8$.`,
+      `$5000$ EUR is invested at $4\\%$ per annum compounded annually with no withdrawals. After $8$ full years the balance is $6843$ EUR (bank rounds to the nearest euro).`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-$$3500(1+\\frac{6}{100})^{6}=4965$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.6$$
+$$x = 10^{0.6} = 3.98$$
+$x < 6$.
 
 The statement is False.`,
       `**B.** → True
 
-$$x=4^{5}=1024$$
-$x > 256$.
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is True.`,
       `**C.** → True
 
-$$u^2-11u+24=0$$
-$$(u-3)(u-8)=0$$
+$$x(x+4)=10$$
+$$x=20$$
 
 The statement is True.`,
       `**D.** → False
 
-$$2u^2-14u+20=0$$
-Two positive $u$ → two $x$.
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.5$$
+$$x = 10^{0.5} = 3.16$$
+$x < 8$.
 
 The statement is False.`,
       `**E.** → True
 
-Two half-lives: $(\\frac{1}{2})^2$ → $25\\%$.
+$$5000(1.04)^8=6843$$
 
 The statement is True.`,
     ],
@@ -1168,39 +1186,46 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A culture doubles every $4$ h. From $1200$ cells, after $24$ h the count is $76800$ (ignore death).`,
-      `Newton cooling $T=95e^{-0.15000000000000002t}$ (minutes). After $25$ min the reading is $2$°C.`,
-      `$2000$ EUR at $3\\%$ p.a. compounded annually for $6$ years grows to $2390$ EUR.`,
-      `The equation $\\log x + \\log(x+2) = 5$ (base $10$) has positive solution $x = 35$.`,
-      `A heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
+      `A population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $2$ distinct real values of $x$.`,
+      `The equation $\\log x + \\log(x+4) = 1$ (decadic logarithms; domain $x > 0$ and $x > -4$) has the unique positive solution $x = 20$.`,
+      `In an exam item, the solution of $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + 10 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $12$.`,
+      `In an exam item, $5000$ EUR is invested at $4\\%$ per annum compounded annually with no withdrawals. After $8$ full years the balance is $6845$ EUR (bank rounds to the nearest euro).`,
+      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + 8 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $20$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$$1200\\cdot 2^{6}=76800$$
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is True.`,
       `**B.** → True
 
-$$T=95e^{-0.15000000000000002\\cdot25}\\approx2$$
+$$x(x+4)=10$$
+$$x=20$$
 
 The statement is True.`,
       `**C.** → False
 
-$$2000(1+\\frac{3}{100})^{6}=2388$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.4$$
+$$x = 10^{0.4} = 2.51$$
+$x < 12$.
 
 The statement is False.`,
       `**D.** → False
 
-$$x(x+2)=10^{5}$$
-$$x=32$$
+$$5000(1.04)^8=6843$$
 
 The statement is False.`,
       `**E.** → False
 
-$$u^2-11u+24=0$$
-$$(u-3)(u-8)=0$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.5$$
+$$x = 10^{0.5} = 3.16$$
+$x < 20$.
 
 The statement is False.`,
     ],
@@ -1215,39 +1240,46 @@ The statement is False.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In an exam item, the equation $\\log x + \\log(x+3) = 6$ (base $10$) has positive solution $x = 731$.`,
-      `$\\dfrac{\\log_3 81}{\\log_3 9} = 5$.`,
-      `A culture doubles every $4$ h. From $1200$ cells, after $24$ h the count is $76800$ (ignore death).`,
-      `Newton cooling $T=80e^{-0.15000000000000002t}$ (minutes). After $10$ min the reading is $18$°C.`,
-      `$3500$ EUR at $4\\%$ p.a. compounded annually for $6$ years grows to $4429$ EUR.`,
+      `In an exam item, the equation $\\log x + \\log(x+4) = 1$ (decadic logarithms; domain $x > 0$ and $x > -4$) has the unique positive solution $x = 24$.`,
+      `Consider a case where a population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $5$ distinct real values of $x$.`,
+      `$5000$ EUR is invested at $4\\%$ per annum compounded annually with no withdrawals. After $8$ full years the balance is $6843$ EUR (bank rounds to the nearest euro).`,
+      `The solution of $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + 5 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $8$.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/6}) - 6\\log x - 2\\log x + 14 = \\frac{2\\log x}{3}$ satisfies $x < 6$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-$$x(x+3)=10^{6}$$
-$$x=729$$
+$$x(x+4)=10$$
+$$x=20$$
 
 The statement is False.`,
       `**B.** → False
 
-$$\\log_3 81=4,\\ \\log_3 9=2$$
-Ratio $=2$.
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is False.`,
       `**C.** → True
 
-$$1200\\cdot 2^{6}=76800$$
+$$5000(1.04)^8=6843$$
 
 The statement is True.`,
       `**D.** → True
 
-$$T=80e^{-0.15000000000000002\\cdot10}\\approx18$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.5$$
+$$x = 10^{0.5} = 3.16$$
+$x < 8$.
 
 The statement is True.`,
       `**E.** → True
 
-$$3500(1+\\frac{4}{100})^{6}=4429$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.6$$
+$$x = 10^{0.6} = 3.98$$
+$x < 6$.
 
 The statement is True.`,
     ],
@@ -1262,42 +1294,47 @@ The statement is True.`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$ (decadic $\\log$) is smaller than $4$.`,
-      `The unique real solution of $4^x = 2^{x+4}$ is $x = 7$.`,
-      `In an exam item, the equation $\\log x + \\log(x+3) = 7$ (base $10$) has positive solution $x = 2187$.`,
-      `$\\dfrac{\\log_3 81}{\\log_3 9} = 5$.`,
-      `A culture doubles every $4$ h. From $1200$ cells, after $24$ h the count is $76800$ (ignore death).`,
+      `A population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $2$ distinct real values of $x$.`,
+      `$5000$ EUR is invested at $4\\%$ per annum compounded annually with no withdrawals. After $8$ full years the balance is $6845$ EUR (bank rounds to the nearest euro).`,
+      `In an exam item, the solution of $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + 10 = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $12$.`,
+      `For decadic logarithms, every admissible root of $\\log(x^{1/3}) - 3\\log x - 2\\log x + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
+      `A population model reduces to $e^{2x} - 10e^x + 21 = 0$ with substitution $u = e^x > 0$. The model admits $2$ distinct real values of $x$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-$$\\log x = -1$$
-$$x \\approx 0.1$$
-$x < 4$.
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is True.`,
       `**B.** → False
 
-Match bases / monotonicity gives $x=4$.
+$$5000(1.04)^8=6843$$
 
 The statement is False.`,
       `**C.** → True
 
-$$x(x+3)=10^{7}$$
-$$x=2187$$
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 0.4$$
+$$x = 10^{0.4} = 2.51$$
+$x < 12$.
 
 The statement is True.`,
       `**D.** → False
 
-$$\\log_3 81=4,\\ \\log_3 9=2$$
-Ratio $=2$.
+Use $\\log 100=2$. Combine left-hand logs:
+$$\\log x = 1$$
+$$x = 10^{1} = 10$$
+$x \\ge 5$.
 
 The statement is False.`,
       `**E.** → True
 
-$$1200\\cdot 2^{6}=76800$$
+$$u^2-10u+21=0$$
+$$(u-3)(u-7)=0$$
+Two positive $u$ → two real $x$.
 
 The statement is True.`,
     ],
