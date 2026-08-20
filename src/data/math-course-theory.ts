@@ -5,6 +5,7 @@
  */
 
 import ch1 from "./math-theory/ch1.md?raw";
+import ch4 from "./math-theory/ch4.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
 import ch8 from "./math-theory/ch8.md?raw";
 import ch11 from "./math-theory/ch11.md?raw";
@@ -26,6 +27,11 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     num: 1,
     title: "Logic and set theory",
     markdown: ch1,
+  },
+  4: {
+    num: 4,
+    title: "Equations",
+    markdown: ch4,
   },
   5: {
     num: 5,
