@@ -79,6 +79,7 @@ export function fmtNum(n, { maxDec = 2 } = {}) {
       const n2 = num / g;
       const d2 = den / g;
       if (d2 === 1) return String(n2);
+      if (Math.abs(n2) > 24 || d2 > 8) continue;
       if (n2 < 0) return `-\\frac{${-n2}}{${d2}}`;
       return `\\frac{${n2}}{${d2}}`;
     }

@@ -152,7 +152,31 @@ const EQUATION_MARKERS = [
   /Measuring time after an offset/i,
   /Every (?:positive|admissible|real) root/i,
   /satisfies \$x\$/i,
-  /The equation \$[0-9]+\^x = -/i,
+  /The count is/i,
+  /Then \$n\$ is/i,
+  /The positive root of/i,
+  /If \$\\log/i,
+  /Every real root of/i,
+  /Every admissible \$x\$/i,
+  /Every real \$x\$ is/i,
+  /has no real solution/i,
+  /has one real solution/i,
+  /inlet that fills/i,
+  /Hose \$A\$/i,
+  /Farmer \$A\$/i,
+  /A roofer finishes/i,
+  /Marker positions satisfy/i,
+  /freight train/i,
+  /slower train/i,
+  /passes an \$/i,
+  /canal boats/i,
+  /Two cyclists/i,
+  /reduces to \$x\^2/i,
+  /A binary counter/i,
+  /uses \$\\log/i,
+  /uses \$2\^x/i,
+  /cooling offset/i,
+  /substitution \$u=/i,
 ];
 
 export function isPureArithmetic(stmt) {
@@ -165,16 +189,16 @@ export function requiresEquationTopic(stmt, subsection) {
   if (EQUATION_MARKERS.some((re) => re.test(stmt))) return true;
 
   if (subsection === "4.4") {
-    return /\\log|\\ln|e\^|2\^|3\^|5\^|10\^/i.test(stmt) && /=/.test(stmt);
+    return /\\log|\\ln|e\^|2\^|3\^|5\^|10\^|4\^|7\^|8\^|9\^|6\^|real solution|real \$x\$|admissible \$x\$|identity log|zero log|zero-exponent/i.test(stmt);
   }
   if (subsection === "4.2") {
-    return /x\^2|x\^{2}|quadratic|consecutive|rectangle|fence|projectile|roots of/i.test(stmt);
+    return /x\^2|x\^{2}|quadratic|consecutive|rectangle|fence|projectile|roots of|positive root|larger root|product \$|area \$|hypotenuse|completing the square|reduces to|squares sum|even positives|odd positives|packing constraint|window-maker|crate size|frame workshop|tray design|panel size|garden bed satisfies|tank footprint|thrown upward|flare|arrow|rocket|fountain jet|cricket ball|no real roots|two real roots|reciprocal|Vieta|resistances|beam lengths|tile sides|cable lengths|iris bed|oak deck|solar array|photo frame|pool cover|balcony|rug|parking bay|greenhouse floor|poster|window pane|stage platform|sandpit|notebook page|helipad|chess table|vegetable plot|billboard|training rink|tapestry|courtyard has area|lab bench|roof panel/i.test(stmt);
   }
   if (subsection === "4.3") {
-    return /\\sqrt|\\frac|\\|/i.test(stmt) || /fills in|ladder|Equation|Model \$\\frac|Positions on a rail/i.test(stmt);
+    return /\\sqrt|\\frac|\\||fills in|ladder|Equation|Model \$\\frac|Positions on a rail|inlet|Tap \$A\$|Hose \$A\$|admissible \$x\$|absolute|passing|overtaking|platform|cistern|vat|trough|survey marks|robot|cable-sensor|track offset|docking|laser alignment|fence-post|crane trolley|rail-weld|conveyor|bridge-joint|mill-head|pipeline|gantry|quay-fender|hoist|tunnel-ring|lathe|siding-buffer|plotter|well-depth|mast-height|mixing ratio|gear-ratio|similar-triangle|dry dock|canal lock|harbour|farmer|roofer|marker positions|freight|passenger train|cyclists|canal boats|job takes|worker \$A\$|pipe \$A\$|plunge pool|rain barrel|grain hopper|farm silo|cattle|brewery|village cistern|roof tank|ornamental pond|channel \$A\$|barn-painting|road crew|Rendering|hedge|Laying a path|Staining|Oiling a deck|Clearing gutters|Felting|Resurfacing|lakeside|mill pond|ice bath|dye vat|oil tank|inkwell|coolant|slurry|mash tun|wort kettle|brine tank|serum bath|remainder needs/i.test(stmt);
   }
   // 4.1 linear word problems
-  return /travels|leaves|years older|coins|pool|vinegar|prize|path|fence|worker|plan charges|scores|recipe|bar|pump|courier|jacket|manual|towns|vehicle|chemist|device|four-sevenths|consecutive odd|perimeter|area|boat|car|train|discount|saline|chase|meet|depot|exam|student|score|wage|rod|till|shop doubles/i.test(
+  return /travels|leaves|years older|coins|pool|vinegar|prize|path|fence|worker|plan charges|scores|recipe|bar|pump|courier|jacket|manual|towns|vehicle|chemist|device|four-sevenths|consecutive odd|perimeter|area|boat|car|train|discount|saline|chase|meet|depot|exam|student|score|wage|rod|till|shop doubles|count|obeys \$|satisfies \$|notebooks|chairs|printer|hotel bill|kiln|partners share|map \$|supplementary|complementary|violins|squad|crate|boxes|fat are mixed|railing|saves \$|walker covers|is filled by|inlet \$A\$|tap \$A\$|original price|yeast|serial number|warehouse code|twice a number|three consecutive|two numbers add|half of a number|is now|EUR coins|still-water|still water|length is|customer pays|runner-up|adult ticket|equal side|gross wage|depth is|nights|weeks|angle is|rectangular|mural|height |border |edging|trim|helipad|whiteboard|greenhouse|courtyard|pond|iris|patio|splashback|stamp |foundation|rim |tape |wire|greater than/i.test(
     stmt
   );
 }

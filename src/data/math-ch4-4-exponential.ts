@@ -9,2426 +9,1720 @@ export const MATH_CH4_4_EXPONENTIAL: MathTask[] = [
   {
     id: `math-4-94`,
     case_id: `MATH 4.94`,
-    title: `Log inequalities`,
+    title: `Small integer powers`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If $\\log_{4} x = 5$, then $x$ is greater than $256$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-27\\cdot2^x+54=0$ yields $5$ real solutions for $x$.`,
-      `The equation $2^x = -5$ has no real solution.`,
-      `Every real root of $2^{x+1} = 64$ satisfies $x$ equals $9$.`,
-      `Every admissible root of $\\log_{4} x = 6$ satisfies $x$ equals $4099$.`,
+      `An octal register uses $\\log_{8} x=2$. Then $x$ is greater than $54$.`,
+      `A five-identity log uses $\\log_{5} x=1$. Then $x$ is $7$.`,
+      `If $\\log_5 x=2$, then $x$ is greater than $21$.`,
+      `A seven-identity log uses $\\log_{7} x=1$. Then $x$ is $9$.`,
+      `A base-nine scale uses $\\log_{9} x=2$. Then $x$ is $83$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=8^{2}$$
 
-$x > 256$.
+$$x=64$$
 
-$$x=4^{5}=1024$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $64$. The claim asks whether this is greater than $54$. Since $64>54$, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=5^{1}$$
 
-Two positive $u$ → two $x$.
+$$x=5$$
 
-$$3u^2-27u+54=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $5$, not $7$. So the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=5^2=25$$
 
-$$2^x > 0$$ always; RHS negative.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $25$. The claim asks whether this is greater than $21$. Since $25>21$, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Match powers → $x=5$.
+$$x=7^{1}$$
 
-The value recovered from the model contradicts the claim.
+$$x=7$$
 
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $7$, not $9$. So the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=9^{2}$$
 
-$$x=4^{6}=4096$$.
+$$x=81$$
 
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $81$, not $83$. So the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 94,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-95`,
     case_id: `MATH 4.95`,
-    title: `Exam exponentials`,
+    title: `Exponential counts`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A heated metal rod model satisfies $e^{2x} - 14e^x + 40 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `Every real root of $10^{x-1} = 1000$ satisfies $x$ is greater than $3$.`,
-      `Every admissible root of $\\log_{5} x = 4$ satisfies $x$ equals $629$.`,
-      `Every admissible root of $\\ln x = \\ln 4 + 2$ satisfies $x$ is greater than $28$.`,
-      `Every positive root of $\\log x + \\log 4 = 5$ satisfies $x$ is greater than $\\frac{499984}{5}$.`,
+      `If $\\log_{10} x=2$, then $x$ is $103$.`,
+      `Every real root of $2^x=16$ satisfies $x$ is greater than $2$.`,
+      `Every real root of $2^x=8$ satisfies $x$ is $5$.`,
+      `A two-bit model uses $\\log_{2} x=2$. Then $x$ is greater than $2$.`,
+      `A four-zero log uses $\\log_{4} x=0$. Then $x$ is greater than $0$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite in exponential form.
 
-Set up the model and solve:
+$$x=10^2=100$$
 
-Two positive $u$ give two real $x$.
-
-$$u^2-14u+40=0$$
-
-$$(u-4)(u-10)=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $100$, not $103$. So the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Match powers of $2$.
 
-Match powers → $x=4$.
+$$2^x=2^4$$
 
-The value recovered from the model satisfies the inequality in the claim.
+$$x=4$$
 
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $4$. The claim asks whether this is greater than $2$. Since $4>2$, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Match powers of $2$.
 
-Work from the story to a single equation, then solve:
+$$2^x=2^3$$
 
-$$x=5^{4}=625$$.
+$$x=3$$
 
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $3$, not $5$. So the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=2^{2}$$
 
-$$\\ln x = \\ln(4e^{2})$$
+$$x=4$$
 
-$$x=29.56$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $4$. The claim asks whether this is greater than $2$. Since $4>2$, the statement is True.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=4^{0}$$
 
-$$\\log(4x)=5$$
+$$x=1$$
 
-$$x=100000$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 95,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-96`,
     case_id: `MATH 4.96`,
-    title: `Complex logarithms`,
+    title: `Logarithms`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every admissible root of $\\log_{2} x = 7$ satisfies $x$ is greater than $\\frac{624}{5}$.`,
-      `Every admissible root of $\\ln x = \\ln 5 + 3$ satisfies $x$ equals $103.43$.`,
-      `Every positive root of $\\log x + \\log 5 = 6$ satisfies $x$ equals $1000004$.`,
-      `For decadic logarithms, the unique admissible root of $\\log x^{1/6} - \\log x^{6} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 7$.`,
-      `Every positive root of $\\log x + \\log(x+2) = 1$ satisfies $x$ equals $5.32$.`,
+      `An eight-identity log uses $\\log_{8} x=1$. Then $x$ is greater than $6$.`,
+      `A base-four counter uses $\\log_{4} x=2$. Then $x$ is $19$.`,
+      `A ternary code uses $\\log_{3} x=2$. Then $x$ is $11$.`,
+      `A nine-identity log uses $\\log_{9} x=1$. Then $x$ is greater than $7$.`,
+      `If $\\log_3 x=2$, then $x$ is $11$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=8^{1}$$
 
-$$x=2^{7}=128$$.
+$$x=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $8$. The claim asks whether this is greater than $6$. Since $8>6$, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=4^{2}$$
 
-$$\\ln x = \\ln(5e^{3})$$
+$$x=16$$
 
-$$x=100.43$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $16$, not $19$. So the statement is False.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=3^{2}$$
 
-$$\\log(5x)=6$$
+$$x=9$$
 
-$$x=1000000$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $9$, not $11$. So the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=9^{1}$$
 
-$x < 7$.
+$$x=9$$
 
-$$\\left(\\frac{1}{6}-6-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -0.63$$
-
-$$x \\approx 0.24$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $9$. The claim asks whether this is greater than $7$. Since $9>7$, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Set up the model and solve:
+$$x=3^2=9$$
 
-Compare with the bound in the claim.
-
-$$x(x+2)=10^{1}$$
-
-$$x=2.32$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $9$, not $11$. So the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 96,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-97`,
     case_id: `MATH 4.97`,
-    title: `Population growth`,
+    title: `Matching bases`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every positive root of $\\log x + \\log 6 = 7$ satisfies $x$ equals $10000004$.`,
-      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $8$.`,
-      `Every positive root of $\\log x + \\log(x+3) = 2$ satisfies $x$ is greater than $\\frac{41}{5}$.`,
-      `Every real root of $4^x = 256$ satisfies $x$ equals $7$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 5$ holds for an admissible $x$ that is greater than $8$.`,
+      `A base-seven scale uses $\\log_{7} x=2$. Then $x$ is $51$.`,
+      `A base-five scale uses $\\log_{5} x=2$. Then $x$ is greater than $21$.`,
+      `A zero-exponent log model uses $\\log_{2} x=0$. Then $x$ is greater than $0$.`,
+      `A seven-zero log uses $\\log_{7} x=0$. Then $x$ is $3$.`,
+      `A decadic meter uses $\\log_{10} x=2$. Then $x$ is greater than $90$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=7^{2}$$
 
-$$\\log(6x)=7$$
+$$x=49$$
 
-$$x=10000000$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $49$, not $51$. So the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=5^{2}$$
 
-$x < 8$.
+$$x=25$$
 
-$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -1$$
-
-$$x \\approx \\frac{1}{10}$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $25$. The claim asks whether this is greater than $21$. Since $25>21$, the statement is True.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=2^{0}$$
 
-Compare with the bound in the claim.
+$$x=1$$
 
-$$x(x+3)=10^{2}$$
-
-$$x=8.61$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Match powers → $x=4$.
+$$x=7^{0}$$
 
-The value recovered from the model contradicts the claim.
+$$x=1$$
 
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $1$, not $3$. So the statement is False.`,
       `**E.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=10^{2}$$
 
-Domain requires $x>4$.
+$$x=100$$
 
-$$x-4=5$$
-
-$$x=9$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $100$. The claim asks whether this is greater than $90$. Since $100>90$, the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 97,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-98`,
     case_id: `MATH 4.98`,
-    title: `Compound and decay`,
+    title: `Mixed exponentials`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every positive root of $\\log x + \\log(x+4) = 1$ satisfies $x$ is greater than $\\frac{13}{10}$.`,
-      `A heated metal rod model satisfies $e^{2x} - 8e^x + 12 = 0$ with $u=e^x>0$. There are more than $1$ distinct real exponents $x$.`,
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 2$ holds for an admissible $x$ that equals $11$.`,
-      `Every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ satisfies $x$ equals $64.55$.`,
-      `Every real root of $9^x = 3^{x+2}$ satisfies $x$ equals $5$.`,
+      `A base-six counter uses $\\log_{6} x=2$. Then $x$ is greater than $32$.`,
+      `A six-identity log uses $\\log_{6} x=1$. Then $x$ is greater than $4$.`,
+      `A decade step uses $\\log_{10} x=1$. Then $x$ is $13$.`,
+      `A decadic-zero log uses $\\log_{10} x=0$. Then $x$ is $3$.`,
+      `A ternary-zero log uses $\\log_{3} x=0$. Then $x$ is $3$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=6^{2}$$
 
-Compare with the bound in the claim.
+$$x=36$$
 
-$$x(x+4)=10^{1}$$
-
-$$x=1.74$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $36$. The claim asks whether this is greater than $32$. Since $36>32$, the statement is True.`,
       `**B.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=6^{1}$$
 
-Two positive $u$ give two real $x$.
+$$x=6$$
 
-$$u^2-8u+12=0$$
-
-$$(u-2)(u-6)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $6$. The claim asks whether this is greater than $4$. Since $6>4$, the statement is True.`,
       `**C.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=10^{1}$$
 
-Domain requires $x>7$.
+$$x=10$$
 
-$$x-7=2$$
-
-$$x=9$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $10$, not $13$. So the statement is False.`,
       `**D.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=10^{0}$$
 
-$$\\frac{4}{3}\\log_{3} x = 5$$
+$$x=1$$
 
-$$x=3^{\\frac{15}{4}}=61.55$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $1$, not $3$. So the statement is False.`,
       `**E.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=3^{0}$$
 
-Rewrite with a common base and equate exponents:
+$$x=1$$
 
-$$3^{2x} = 3^{x+2}$$
-
-$$2x = x+2$$
-
-$$x = 2$$
-
-Since $x=2$, compare with the bound in the claim.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $1$, not $3$. So the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 98,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-99`,
     case_id: `MATH 4.99`,
-    title: `Substitution models`,
+    title: `Shifts of ln`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Measuring time after an offset, $\\ln(x-5)=\\ln 3$ holds for an admissible $x$ that equals $11$.`,
-      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ satisfies $x$ equals $259$.`,
-      `Every real root of $25^x = 5^{x+3}$ satisfies $x$ is greater than $2$.`,
-      `If $\\log_{2} x = 3$, then $x$ is greater than $4$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-30\\cdot2^x+63=0$ yields more than $1$ real solutions for $x$.`,
+      `An octal-zero log uses $\\log_{8} x=0$. Then $x$ is $3$.`,
+      `Every real root of $10^x=100$ satisfies $x$ is $5$.`,
+      `If $\\log_4 x=2$, then $x$ is greater than $12$.`,
+      `A six-zero log uses $\\log_{6} x=0$. Then $x$ is greater than $0$.`,
+      `A four-identity log uses $\\log_{4} x=1$. Then $x$ is greater than $2$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=8^{0}$$
 
-Domain requires $x>5$.
+$$x=1$$
 
-$$x-5=3$$
-
-$$x=8$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $1$, not $3$. So the statement is False.`,
       `**B.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Match powers of $10$.
 
-Work from the story to a single equation, then solve:
+$$10^x=10^2$$
 
-$$\\frac{3}{2}\\log_{4} x = 6$$
+$$x=2$$
 
-$$x=4^{4}=256$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
       `**C.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite in exponential form.
 
-Set up the model and solve:
+$$x=4^2=16$$
 
-Rewrite with a common base and equate exponents:
-
-$$5^{2x} = 5^{x+3}$$
-
-$$2x = x+3$$
-
-$$x = 3$$
-
-Since $x=3$, compare with the bound in the claim.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $16$. The claim asks whether this is greater than $12$. Since $16>12$, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=6^{0}$$
 
-$x > 4$.
+$$x=1$$
 
-$$x=2^{3}=8$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=4^{1}$$
 
-Two positive $u$ → two $x$.
+$$x=4$$
 
-$$3u^2-30u+63=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $4$. The claim asks whether this is greater than $2$. Since $4>2$, the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 99,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-100`,
     case_id: `MATH 4.100`,
-    title: `Mixed bases`,
+    title: `No real roots`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every real root of $2^x = 3^{x-1}$ satisfies $x$ is greater than $0$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-24\\cdot2^x+45=0$ yields $5$ real solutions for $x$.`,
-      `The equation $2^x = -7$ has no real solution.`,
-      `A heated metal rod model satisfies $e^{2x} - 8e^x + 12 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `Every real root of $4^x = 256$ satisfies $x$ is greater than $3$.`,
+      `A four-cube model uses $4^x=64$. Every real $x$ is greater than $2$.`,
+      `Every real root of $4^x=16$ satisfies $x$ is $5$.`,
+      `A cubic-base-five model uses $\\log_{5} x=3$. Then $x$ is greater than $75$.`,
+      `A doubling clock uses $2^x=8$. Every real $x$ is $5$.`,
+      `A nine-square model uses $9^x=81$. Every real $x$ is greater than $1$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$4^x=64$$
 
-Rewrite with a common base and equate exponents:
+$$x=3$$
 
-$$2^x = \\frac{3^x}{3}$$
-
-$$\\left(\\frac{2}{3}\\right)^x = \\frac{1}{3}$$
-
-$$x = 1$$
-
-Since $x=1$, compare with the bound in the claim.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Write $4=2^2$ if useful, or $4^2=16$.
 
-Set up the model and solve:
+$$4^x=4^2$$
 
-Two positive $u$ → two $x$.
+$$x=2$$
 
-$$3u^2-24u+45=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=5^{3}$$
 
-$$2^x > 0$$ always; RHS negative.
+$$x=125$$
 
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $125$. The claim asks whether this is greater than $75$. Since $125>75$, the statement is True.`,
       `**D.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$2^x=8$$
 
-Two positive $u$ give two real $x$.
+$$x=3$$
 
-$$u^2-8u+12=0$$
-
-$$(u-2)(u-6)=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $3$, not $5$. So the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Match powers → $x=4$.
+$$9^x=81$$
 
-The value recovered from the model satisfies the inequality in the claim.
+$$x=2$$
 
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 100,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-101`,
     case_id: `MATH 4.101`,
-    title: `Cooling law`,
+    title: `Substitutions`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every positive root of $\\log x + \\log(x+4) = 1$ satisfies $x$ equals $4.74$.`,
-      `A heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are more than $1$ distinct real exponents $x$.`,
-      `Every real root of $10^{x-1} = 1000$ satisfies $x$ equals $7$.`,
-      `Every admissible root of $\\log_{4} x = 6$ satisfies $x$ is greater than $\\frac{20464}{5}$.`,
-      `Every admissible root of $\\ln x = \\ln 3 + 5$ satisfies $x$ equals $448.24$.`,
+      `A five-square model uses $5^x=25$. Every real $x$ is $5$.`,
+      `A decade-identity model uses $10^x=10$. Every real $x$ is greater than $0$.`,
+      `The equation $3^x=-7$ has one real solution.`,
+      `If $\\log_2 x=6$, then $x$ is greater than $54$.`,
+      `A packed-word model uses $\\log_{4} x=3$. Then $x$ is $67$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$5^x=25$$
 
-Compare with the bound in the claim.
+$$x=2$$
 
-$$x(x+4)=10^{1}$$
-
-$$x=1.74$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
       `**B.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$10^x=10$$
 
-Two positive $u$ give two real $x$.
+$$x=1$$
 
-$$u^2-11u+24=0$$
-
-$$(u-3)(u-8)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+An exponential with positive base never takes a negative value.
 
-Match powers → $x=4$.
+$$3^x>0$$
 
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=2^6=64$$
 
-$$x=4^{6}=4096$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $64$. The claim asks whether this is greater than $54$. Since $64>54$, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=4^{3}$$
 
-$$\\ln x = \\ln(3e^{5})$$
+$$x=64$$
 
-$$x=445.24$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $64$, not $67$. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 101,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-102`,
     case_id: `MATH 4.102`,
-    title: `Log inequalities`,
+    title: `Small integer powers`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every real root of $3^x = 81$ satisfies $x$ is greater than $3$.`,
-      `Every admissible root of $\\log_{5} x = 4$ satisfies $x$ is greater than $\\frac{3109}{5}$.`,
-      `Every admissible root of $\\ln x = \\ln 4 + 2$ satisfies $x$ equals $32.56$.`,
-      `Every positive root of $\\log x + \\log 4 = 5$ satisfies $x$ equals $100004$.`,
-      `The solution of $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $6$.`,
+      `If $\\log_5 x=3$, then $x$ is greater than $75$.`,
+      `A thousand-step model uses $10^x=1000$. Every real $x$ is greater than $2$.`,
+      `The equation $3^x=-4$ has one real solution.`,
+      `If $\\log_3 x=3$, then $x$ is $29$.`,
+      `A shifted-triple model uses $3^{x+1}=81$. Every real $x$ is greater than $2$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Match powers → $x=4$.
+$$x=5^3=125$$
 
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $125$. The claim asks whether this is greater than $75$. Since $125>75$, the statement is True.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Work from the story to a single equation, then solve:
+$$10^x=1000$$
 
-$$x=5^{4}=625$$.
+$$x=3$$
 
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+An exponential with positive base never takes a negative value.
 
-Work from the story to a single equation, then solve:
+$$3^x>0$$
 
-$$\\ln x = \\ln(4e^{2})$$
-
-$$x=29.56$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=3^3=27$$
 
-$$\\log(4x)=5$$
-
-$$x=100000$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $27$, not $29$. So the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$3^{x+1}=81$$
 
-$x < 6$.
+$$x=3$$
 
-$$\\left(\\frac{1}{5}-5-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -\\frac{5}{7}$$
-
-$$x \\approx 0.19$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 102,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-103`,
     case_id: `MATH 4.103`,
-    title: `Exam exponentials`,
+    title: `Exponential counts`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every real root of $2^x = 3^{x-1}$ satisfies $x$ equals $4$.`,
-      `A heated metal rod model satisfies $e^{2x} - 11e^x + 24 = 0$ with $u=e^x>0$. There are $5$ distinct real exponents $x$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-16\\cdot2^x+24=0$ yields more than $1$ real solutions for $x$.`,
-      `Every positive root of $\\log x + \\log(x+2) = 1$ satisfies $x$ is greater than $\\frac{19}{10}$.`,
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 5$ holds for an admissible $x$ that equals $14$.`,
+      `A seven-square model uses $7^x=49$. Every real $x$ is $5$.`,
+      `A wide offset uses $\\ln(x-9)=\\ln 3$. Every admissible $x$ is $15$.`,
+      `A lag offset uses $\\ln(x-8)=\\ln 4$. Every admissible $x$ is greater than $10$.`,
+      `The equation $2^x=-3$ has no real solution.`,
+      `A four-step ternary model uses $3^x=81$. Every real $x$ is $7$.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$7^x=49$$
 
-Rewrite with a common base and equate exponents:
+$$x=2$$
 
-$$2^x = \\frac{3^x}{3}$$
-
-$$\\left(\\frac{2}{3}\\right)^x = \\frac{1}{3}$$
-
-$$x = 1$$
-
-Since $x=1$, compare with the bound in the claim.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
       `**B.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+The natural logarithm is one-to-one, and the argument must stay positive.
 
-Set up the model and solve:
+$$x-9=3$$
 
-Two positive $u$ give two real $x$.
+$$x=12$$
 
-$$u^2-11u+24=0$$
-
-$$(u-3)(u-8)=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $12$, not $15$. So the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+The natural logarithm is one-to-one, and the argument must stay positive.
 
-Set up the model and solve:
+$$x-8=4$$
 
-Two positive $u$ → two $x$.
+$$x=12$$
 
-$$2u^2-16u+24=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $12$. The claim asks whether this is greater than $10$. Since $12>10$, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+An exponential with positive base never takes a negative value.
 
-Set up the model and solve:
+$$2^x>0$$
 
-Compare with the bound in the claim.
-
-$$x(x+2)=10^{1}$$
-
-$$x=2.32$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The right-hand side is negative, so there is no real $x$. So the statement is True.`,
       `**E.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$3^x=81$$
 
-Domain requires $x>6$.
+$$x=4$$
 
-$$x-6=5$$
-
-$$x=11$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $4$, not $7$. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 103,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-104`,
     case_id: `MATH 4.104`,
-    title: `Complex logarithms`,
+    title: `Logarithms`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $3^x = -6$ has no real solution.`,
-      `Every positive root of $\\log x + \\log(x+3) = 2$ satisfies $x$ equals $11.61$.`,
-      `Every real root of $2^x = 32$ satisfies $x$ equals $9$.`,
-      `Every admissible root of $\\log_{4} x = 7$ satisfies $x$ is greater than $\\frac{81904}{5}$.`,
-      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{2} = 4$ satisfies $x$ is greater than $\\frac{59}{10}$.`,
+      `The equation $5^x=-6$ has no real solution.`,
+      `The equation $8^x=-5$ has one real solution.`,
+      `Every real root of $2^x=32$ satisfies $x$ is $7$.`,
+      `If $\\log_2 x=5$, then $x$ is greater than $28$.`,
+      `The equation $4^x=-1$ has no real solution.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+An exponential with positive base never takes a negative value.
 
-Work from the story to a single equation, then solve:
+$$5^x>0$$
 
-$$3^x > 0$$ always; RHS negative.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The right-hand side is negative, so there is no real $x$. So the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+An exponential with positive base never takes a negative value.
 
-Set up the model and solve:
+$$8^x>0$$
 
-Compare with the bound in the claim.
-
-$$x(x+3)=10^{2}$$
-
-$$x=8.61$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Match powers of $2$.
 
-Match powers → $x=5$.
+$$2^x=2^5$$
 
-The value recovered from the model contradicts the claim.
+$$x=5$$
 
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $5$, not $7$. So the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=2^5=32$$
 
-$$x=4^{7}=16384$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $32$. The claim asks whether this is greater than $28$. Since $32>28$, the statement is True.`,
       `**E.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+An exponential with positive base never takes a negative value.
 
-Work from the story to a single equation, then solve:
+$$4^x>0$$
 
-$$\\frac{3}{2}\\log_{2} x = 4$$
-
-$$x=2^{\\frac{8}{3}}=6.35$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The right-hand side is negative, so there is no real $x$. So the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 104,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-105`,
     case_id: `MATH 4.105`,
-    title: `Population growth`,
+    title: `Matching bases`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every real root of $3^x = 81$ satisfies $x$ equals $7$.`,
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 2$ holds for an admissible $x$ that is greater than $8$.`,
-      `Every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{3} = 5$ satisfies $x$ is greater than $\\frac{292}{5}$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-16\\cdot2^x+24=0$ yields $5$ real solutions for $x$.`,
-      `Every admissible root of $\\log_{5} x = 7$ satisfies $x$ equals $78129$.`,
+      `A minus-two decade model uses $10^{x-2}=10$. Every real $x$ is $5$.`,
+      `A base-three register uses $\\log_{3} x=4$. Then $x$ is greater than $71$.`,
+      `A plus-one five model uses $5^{x+1}=125$. Every real $x$ is greater than $1$.`,
+      `Every real root of $25^x=5^{x+3}$ satisfies $x$ is $5$.`,
+      `Every real root of $4^x=2^{x+4}$ satisfies $x$ is $7$.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Match powers → $x=4$.
+$$10^{x-2}=10$$
 
-The value recovered from the model contradicts the claim.
+$$x=3$$
 
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $3$, not $5$. So the statement is False.`,
       `**B.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Set up the model and solve:
+$$x=3^{4}$$
 
-Domain requires $x>7$.
+$$x=81$$
 
-$$x-7=2$$
-
-$$x=9$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $81$. The claim asks whether this is greater than $71$. Since $81>71$, the statement is True.`,
       `**C.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Work from the story to a single equation, then solve:
+$$5^{x+1}=125$$
 
-$$\\frac{4}{3}\\log_{3} x = 5$$
+$$x=2$$
 
-$$x=3^{\\frac{15}{4}}=61.55$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Write $25=5^2$.
 
-Set up the model and solve:
+$$5^{2x}=5^{x+3}$$
 
-Two positive $u$ → two $x$.
+$$2x=x+3$$
 
-$$2u^2-16u+24=0$$
+$$x=3$$
 
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $3$, not $5$. So the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Write $4=2^2$ and equate exponents.
 
-Work from the story to a single equation, then solve:
+$$2^{2x}=2^{x+4}$$
 
-$$x=5^{7}=78125$$.
+$$2x=x+4$$
 
-The value recovered from the model contradicts the claim.
+$$x=4$$
 
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $4$, not $7$. So the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 105,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-106`,
     case_id: `MATH 4.106`,
-    title: `Compound and decay`,
+    title: `Mixed exponentials`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{2} = 6$ satisfies $x$ is greater than $\\frac{1264}{5}$.`,
-      `Every real root of $25^x = 5^{x+3}$ satisfies $x$ equals $5$.`,
-      `For decadic logarithms, the unique admissible root of $\\log x^{1/6} - \\log x^{6} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
-      `The equation $5^x = -4$ has no real solution.`,
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 5$ holds for an admissible $x$ that equals $14$.`,
+      `A minus-one triple model uses $3^{x-1}=9$. Every real $x$ is greater than $2$.`,
+      `Every real root of $9^x=3^{x+2}$ satisfies $x$ is $5$.`,
+      `A plus-three doubling model uses $2^{x+3}=64$. Every real $x$ is greater than $2$.`,
+      `A memory-page model uses $\\log_{2} x=4$. Then $x$ is greater than $12$.`,
+      `A double-exponent two model uses $2^{2x}=16$. Every real $x$ is $5$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Work from the story to a single equation, then solve:
+$$3^{x-1}=9$$
 
-$$\\frac{3}{2}\\log_{4} x = 6$$
+$$x=3$$
 
-$$x=4^{4}=256$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
       `**B.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Write $9=3^2$.
 
-Set up the model and solve:
+$$3^{2x}=3^{x+2}$$
 
-Rewrite with a common base and equate exponents:
+$$2x=x+2$$
 
-$$5^{2x} = 5^{x+3}$$
+$$x=2$$
 
-$$2x = x+3$$
-
-$$x = 3$$
-
-Since $x=3$, compare with the bound in the claim.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$2^{x+3}=64$$
 
-$x < 5$.
+$$x=3$$
 
-$$\\left(\\frac{1}{6}-6-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -0.63$$
-
-$$x \\approx 0.24$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=2^{4}$$
 
-$$5^x > 0$$ always; RHS negative.
+$$x=16$$
 
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $16$. The claim asks whether this is greater than $12$. Since $16>12$, the statement is True.`,
       `**E.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$2^{2x}=16$$
 
-Domain requires $x>7$.
+$$x=2$$
 
-$$x-7=5$$
-
-$$x=12$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 106,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-107`,
     case_id: `MATH 4.107`,
-    title: `Substitution models`,
+    title: `Shifts of ln`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every real root of $5^x = 625$ satisfies $x$ equals $7$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-14\\cdot2^x+20=0$ yields more than $1$ real solutions for $x$.`,
-      `Measuring time after an offset, $\\ln(x-5)=\\ln 2$ holds for an admissible $x$ that equals $10$.`,
-      `Every admissible root of $\\log_{4} x = 3$ satisfies $x$ equals $67$.`,
-      `Every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ satisfies $x$ is greater than $\\frac{73}{2}$.`,
+      `A double-exponent four model uses $4^{2x}=16$. Every real $x$ is $3$.`,
+      `A plus-two triple model uses $3^{x+2}=81$. Every real $x$ is greater than $1$.`,
+      `Every positive root of $\\log x+\\log 5=2$ satisfies $x$ is $23$.`,
+      `A chessboard-doubling model uses $\\log_{2} x=5$. Then $x$ is $35$.`,
+      `A cell-split model uses $\\log_{2} x=6$. Then $x$ is greater than $54$.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Match powers → $x=4$.
+$$4^{2x}=16$$
 
-The value recovered from the model contradicts the claim.
+$$x=1$$
 
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $1$, not $3$. So the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$3^{x+2}=81$$
 
-Two positive $u$ → two $x$.
+$$x=2$$
 
-$$2u^2-14u+20=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
       `**C.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Product rule for logs, base $10$.
 
-Set up the model and solve:
+$$\\log(5x)=2$$
 
-Domain requires $x>5$.
+$$5x=100$$
 
-$$x-5=2$$
+$$x=20$$
 
-$$x=7$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $20$, not $23$. So the statement is False.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=2^{5}$$
 
-$$x=4^{3}=64$$.
+$$x=32$$
 
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $32$, not $35$. So the statement is False.`,
       `**E.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite the logarithm in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=2^{6}$$
 
-$$\\frac{3}{2}\\log_{3} x = 5$$
+$$x=64$$
 
-$$x=3^{\\frac{10}{3}}=38.94$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $64$. The claim asks whether this is greater than $54$. Since $64>54$, the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 107,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
     id: `math-4-108`,
     case_id: `MATH 4.108`,
-    title: `Mixed bases`,
+    title: `No real roots`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Every real root of $5^x = 625$ satisfies $x$ is greater than $3$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 2$ holds for an admissible $x$ that is greater than $9$.`,
-      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{3} = 6$ satisfies $x$ is greater than $\\frac{2544}{5}$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-18\\cdot2^x+28=0$ yields $5$ real solutions for $x$.`,
-      `Every positive root of $\\log x + \\log 3 = 4$ satisfies $x$ equals $10004$.`,
+      `A triple-exponent two model uses $2^{3x}=8$. Every real $x$ is greater than $0$.`,
+      `Every admissible root of $\\ln(x-6)=\\ln 5$ satisfies $x$ is greater than $9$.`,
+      `A double-exponent three model uses $3^{2x}=81$. Every real $x$ is greater than $1$.`,
+      `A plus-two doubling model uses $2^{x+2}=32$. Every real $x$ is $5$.`,
+      `Every positive root of $\\log x+\\log 2=2$ satisfies $x$ is $53$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Match powers → $x=4$.
+$$2^{3x}=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+$$x=1$$
 
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
       `**B.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>8$.
-
-$$x-8=2$$
-
-$$x=10$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**C.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\frac{4}{3}\\log_{4} x = 6$$
-
-$$x=4^{\\frac{9}{2}}=512$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-Two positive $u$ → two $x$.
-
-$$2u^2-18u+28=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**E.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\log(3x)=4$$
-
-$$x=10000$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 108,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-109`,
-    case_id: `MATH 4.109`,
-    title: `Cooling law`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{2} = 4$ satisfies $x$ equals $9.35$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 4$ holds for an admissible $x$ that equals $14$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-14\\cdot2^x+20=0$ yields $5$ real solutions for $x$.`,
-      `The equation $5^x = -5$ has no real solution.`,
-      `Every positive root of $\\log x + \\log(x+5) = 2$ satisfies $x$ is greater than $\\frac{37}{5}$.`,
-    ],
-    answer_key: [false, false, false, true, true],
-    tactical_explanations: [
-      `**A.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\frac{3}{2}\\log_{2} x = 4$$
-
-$$x=2^{\\frac{8}{3}}=6.35$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**B.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>8$.
-
-$$x-8=4$$
-
-$$x=12$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-Two positive $u$ → two $x$.
-
-$$2u^2-14u+20=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**D.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$5^x > 0$$ always; RHS negative.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-Compare with the bound in the claim.
-
-$$x(x+5)=10^{2}$$
-
-$$x=7.81$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 109,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-110`,
-    case_id: `MATH 4.110`,
-    title: `Log inequalities`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Every positive root of $\\log x + \\log 5 = 6$ satisfies $x$ is greater than $\\frac{4999984}{5}$.`,
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 3$ holds for an admissible $x$ that equals $11$.`,
-      `Every admissible root of $\\ln x = \\ln 3 + 3$ satisfies $x$ equals $63.26$.`,
-      `Every admissible root of $\\log_{4} x = 4$ satisfies $x$ equals $259$.`,
-      `Every real root of $9^x = 3^{x+2}$ satisfies $x$ is greater than $1$.`,
-    ],
-    answer_key: [true, false, false, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\log(5x)=6$$
-
-$$x=1000000$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**B.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>6$.
-
-$$x-6=3$$
-
-$$x=9$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\ln x = \\ln(3e^{3})$$
-
-$$x=60.26$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**D.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$x=4^{4}=256$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**E.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Rewrite with a common base and equate exponents:
-
-$$3^{2x} = 3^{x+2}$$
-
-$$2x = x+2$$
-
-$$x = 2$$
-
-Since $x=2$, compare with the bound in the claim.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 110,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-111`,
-    case_id: `MATH 4.111`,
-    title: `Exam exponentials`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `With $u=2^x>0$, the equation $3\\cdot4^x-30\\cdot2^x+63=0$ yields $5$ real solutions for $x$.`,
-      `For decadic logarithms, the unique admissible root of $\\log x^{1/4} - \\log x^{4} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 7$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 4$ holds for an admissible $x$ that is greater than $10$.`,
-      `If $\\log_{3} x = 4$, then $x$ is greater than $27$.`,
-      `Every real root of $4^x = 2^{x+4}$ satisfies $x$ equals $7$.`,
-    ],
-    answer_key: [false, true, true, true, false],
-    tactical_explanations: [
-      `**A.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-Two positive $u$ → two $x$.
-
-$$3u^2-30u+63=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**B.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-$x < 7$.
-
-$$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -0.83$$
-
-$$x \\approx 0.15$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**C.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>8$.
-
-$$x-8=4$$
-
-$$x=12$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-$x > 27$.
-
-$$x=3^{4}=81$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Rewrite with a common base and equate exponents:
-
-$$2^{2x} = 2^{x+4}$$
-
-$$2x = x+4$$
-
-$$x = 4$$
-
-Since $x=4$, compare with the bound in the claim.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 111,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-112`,
-    case_id: `MATH 4.112`,
-    title: `Complex logarithms`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Every admissible root of $\\log_{5} x = 5$ satisfies $x$ is greater than $\\frac{15609}{5}$.`,
-      `Every admissible root of $\\ln x = \\ln 5 + 2$ satisfies $x$ is greater than $\\frac{173}{5}$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 3$ holds for an admissible $x$ that equals $10$.`,
-      `Every real root of $4^x = 2^{x+4}$ satisfies $x$ is greater than $3$.`,
-      `The solution of the equation $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $12$.`,
-    ],
-    answer_key: [true, true, false, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$x=5^{5}=3125$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**B.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\ln x = \\ln(5e^{2})$$
-
-$$x=36.95$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**C.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>4$.
-
-$$x-4=3$$
-
-$$x=7$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**D.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Rewrite with a common base and equate exponents:
-
-$$2^{2x} = 2^{x+4}$$
-
-$$2x = x+4$$
-
-$$x = 4$$
-
-Since $x=4$, compare with the bound in the claim.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Use $\\log 100=2$ on the right-hand side.
-
-$$\\log x = 0.4$$
-
-$$x = 10^{0.4} = 2.51$$
-
-Combine coefficients of $\\log x$ on the left:
-
-$x < 12$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 112,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-113`,
-    case_id: `MATH 4.113`,
-    title: `Population growth`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Measuring time after an offset, $\\ln(x-7)=\\ln 4$ holds for an admissible $x$ that equals $14$.`,
-      `The solution of the equation $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $8$.`,
-      `A heated metal rod model satisfies $e^{2x} - 14e^x + 40 = 0$ with $u=e^x>0$. There are more than $1$ distinct real exponents $x$.`,
-      `Every admissible root of $\\log_{3} x + \\frac{\\log_{3} x}{2} = 5$ satisfies $x$ equals $41.94$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-24\\cdot2^x+45=0$ yields more than $1$ real solutions for $x$.`,
-    ],
-    answer_key: [false, false, true, false, true],
-    tactical_explanations: [
-      `**A.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>7$.
-
-$$x-7=4$$
-
-$$x=11$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**B.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Use $\\log 100=2$ on the right-hand side.
-
-$$\\log x = 0.5$$
-
-$$x = 10^{0.5} = 3.16$$
-
-Combine coefficients of $\\log x$ on the left:
-
-$x < 8$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Two positive $u$ give two real $x$.
-
-$$u^2-14u+40=0$$
-
-$$(u-4)(u-10)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\frac{3}{2}\\log_{3} x = 5$$
-
-$$x=3^{\\frac{10}{3}}=38.94$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**E.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-Two positive $u$ → two $x$.
-
-$$3u^2-24u+45=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 113,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-114`,
-    case_id: `MATH 4.114`,
-    title: `Compound and decay`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{3} = 4$ satisfies $x$ is greater than $\\frac{38}{5}$.`,
-      `Every admissible root of $\\log_{5} x = 3$ satisfies $x$ equals $129$.`,
-      `For decadic logarithms, the unique admissible root of $\\log x^{1/6} - \\log x^{6} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 9$.`,
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 2$ holds for an admissible $x$ that equals $14$.`,
-      `Every admissible root of $\\ln x = \\ln 5 + 4$ satisfies $x$ equals $275.99$.`,
-    ],
-    answer_key: [true, false, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\frac{4}{3}\\log_{2} x = 4$$
-
-$$x=2^{3}=8$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**B.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$x=5^{3}=125$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-$x < 9$.
-
-$$\\left(\\frac{1}{6}-6-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -0.63$$
-
-$$x \\approx 0.24$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>8$.
-
-$$x-8=2$$
-
-$$x=10$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**E.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\ln x = \\ln(5e^{4})$$
-
-$$x=272.99$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 114,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-115`,
-    case_id: `MATH 4.115`,
-    title: `Substitution models`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 4$ holds for an admissible $x$ that equals $14$.`,
-      `Every admissible root of $\\ln x = \\ln 3 + 2$ satisfies $x$ is greater than $21$.`,
-      `Every admissible root of $\\log_{2} x = 3$ satisfies $x$ equals $11$.`,
-      `Every positive root of $\\log x + \\log 3 = 4$ satisfies $x$ is greater than $\\frac{49984}{5}$.`,
-      `For decadic logarithms, the unique admissible root of $\\log x^{1/4} - \\log x^{4} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 5$.`,
-    ],
-    answer_key: [false, true, false, true, true],
-    tactical_explanations: [
-      `**A.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>6$.
-
-$$x-6=4$$
-
-$$x=10$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**B.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\ln x = \\ln(3e^{2})$$
-
-$$x=22.17$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**C.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$x=2^{3}=8$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**D.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\log(3x)=4$$
-
-$$x=10000$$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-$x < 5$.
-
-$$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -0.83$$
-
-$$x \\approx 0.15$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 115,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-116`,
-    case_id: `MATH 4.116`,
-    title: `Mixed bases`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The solution of the equation $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is not smaller than $5$.`,
-      `The solution of the equation $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.`,
-      `A heated metal rod model leads to $e^{2x} - 10e^x + 21 = 0$ after substitution $u=e^x$ with $u>0$. There are $5$ distinct real values of $x$.`,
-      `With $u=2^x>0$, the equation $3\\cdot4^x-27\\cdot2^x+54=0$ yields more than $1$ real solutions for $x$.`,
-      `Every admissible root of $\\log_{2} x + \\frac{\\log_{2} x}{3} = 4$ satisfies $x$ equals $11$.`,
-    ],
-    answer_key: [true, false, false, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>0$. With $\\log 100=2$:
-
-$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = 1$$
-
-$$x = 10$$
-
-$10 \\ge 5$, so the root is not smaller than $5$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**B.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Use $\\log 100=2$ on the right-hand side.
-
-$$\\log x = 1$$
-
-$$x = 10^{1} = 10$$
-
-Combine coefficients of $\\log x$ on the left:
-
-$x \\ge 5$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Two positive $u$ give two real $x$.
-
-$$u^2-10u+21=0$$
-
-$$(u-3)(u-7)=0$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**D.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-Two positive $u$ → two $x$.
-
-$$3u^2-27u+54=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\frac{4}{3}\\log_{2} x = 4$$
-
-$$x=2^{3}=8$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-    ],
-    difficulty_level: `5/5`,
-    sort_order: 116,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-117`,
-    case_id: `MATH 4.117`,
-    title: `Cooling law`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `Every positive root of $\\log x + \\log(x+3) = 1$ satisfies $x$ equals $5$.`,
-      `A heated metal rod model leads to $e^{2x} - 10e^x + 21 = 0$ after substitution $u=e^x$ with $u>0$. There are more than $1$ distinct real values of $x$.`,
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 5$ holds for an admissible $x$ that is greater than $10$.`,
-      `Every admissible root of $\\log_{4} x + \\frac{\\log_{4} x}{3} = 6$ satisfies $x$ equals $515$.`,
-      `The solution of the equation $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $12$.`,
-    ],
-    answer_key: [false, true, true, false, true],
-    tactical_explanations: [
-      `**A.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\log(x(x+3))=1$$
-
-$$x(x+3)=10$$
-
-$$x=2$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**B.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Two positive $u$ give two real $x$.
-
-$$u^2-10u+21=0$$
-
-$$(u-3)(u-7)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**C.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>6$.
+Use injectivity of $\\ln$.
 
 $$x-6=5$$
 
 $$x=11$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value is $11$. The claim asks whether this is greater than $9$. Since $11>9$, the statement is True.`,
+      `**C.** → True
 
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → False
+Rewrite both sides with the same base and equate exponents.
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\frac{4}{3}\\log_{4} x = 6$$
-
-$$x=4^{\\frac{9}{2}}=512$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
-      `**E.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Use $\\log 100=2$ on the right-hand side.
-
-$$\\log x = 0.4$$
-
-$$x = 10^{0.4} = 2.51$$
-
-Combine coefficients of $\\log x$ on the left:
-
-$x < 12$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-    ],
-    difficulty_level: `5/5`,
-    sort_order: 117,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
-  },
-  {
-    id: `math-4-118`,
-    case_id: `MATH 4.118`,
-    title: `Log inequalities`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The solution of the equation $\\log \\sqrt[4]{x} + \\log \\frac{1}{x^{4}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $8$.`,
-      `Every positive root of $\\log x + \\log(x+3) = 1$ satisfies $x$ is greater than $1$.`,
-      `Every admissible root of $\\ln x = \\ln 4 + 5$ satisfies $x$ equals $596.65$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 2$ holds for an admissible $x$ that equals $8$.`,
-      `Every positive root of $\\log x + \\log(x+5) = 2$ satisfies $x$ equals $10.81$.`,
-    ],
-    answer_key: [true, true, false, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Use $\\log 100=2$ on the right-hand side.
-
-$$\\log x = 0.5$$
-
-$$x = 10^{0.5} = 3.16$$
-
-Combine coefficients of $\\log x$ on the left:
-
-$x < 8$.
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**B.** → True
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\log(x(x+3))=1$$
-
-$$x(x+3)=10$$
+$$3^{2x}=81$$
 
 $$x=2$$
 
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**C.** → False
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$\\ln x = \\ln(4e^{5})$$
-
-$$x=593.65$$.
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
       `**D.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$2^{x+2}=32$$
 
-Domain requires $x>4$.
+$$x=3$$
 
-$$x-4=2$$
-
-$$x=6$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $3$, not $5$. So the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use $\\log a+\\log b=\\log(ab)$ with base $10$.
 
-Set up the model and solve:
+$$\\log(2x)=2$$
 
-Compare with the bound in the claim.
+$$2x=100$$
 
-$$x(x+5)=10^{2}$$
+$$x=50$$
 
-$$x=7.81$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $50$, not $53$. So the statement is False.`,
     ],
-    difficulty_level: `5/5`,
-    sort_order: 118,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    difficulty_level: `3/5`,
+    sort_order: 108,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
-    id: `math-4-119`,
-    case_id: `MATH 4.119`,
-    title: `Exam exponentials`,
+    id: `math-4-109`,
+    case_id: `MATH 4.109`,
+    title: `Substitutions`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Measuring time after an offset, $\\ln(x-8)=\\ln 3$ holds for an admissible $x$ that equals $14$.`,
-      `Every admissible root of $\\log_{2} x = 7$ satisfies $x$ equals $131$.`,
-      `With $u=2^x>0$, the equation $2\\cdot4^x-18\\cdot2^x+28=0$ yields more than $1$ real solutions for $x$.`,
-      `The solution of $\\log \\sqrt[5]{x} + \\log \\frac{1}{x^{5}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $8$.`,
-      `Measuring time after an offset, $\\ln(x-5)=\\ln 5$ holds for an admissible $x$ that is greater than $9$.`,
+      `If $\\log_3 x=4$, then $x$ is $83$.`,
+      `If $\\log_{10} x=3$, then $x$ is $1003$.`,
+      `A plus-one four model uses $4^{x+1}=64$. Every real $x$ is $5$.`,
+      `Every real root of $3^x=81$ satisfies $x$ is greater than $2$.`,
+      `A minus-two doubling model uses $2^{x-2}=8$. Every real $x$ is greater than $3$.`,
     ],
-    answer_key: [false, false, true, true, true],
+    answer_key: [false, false, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite in exponential form.
 
-Set up the model and solve:
+$$x=3^4=81$$
 
-Domain requires $x>8$.
-
-$$x-8=3$$
-
-$$x=11$$
-
-The value recovered from the model contradicts the claim.
-
-Matching the solved value to the claim, the statement is False.`,
+The recovered value is $81$, not $83$. So the statement is False.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite in exponential form.
 
-Work from the story to a single equation, then solve:
+$$x=10^3=1000$$
 
-$$x=2^{7}=128$$.
+The recovered value is $1000$, not $1003$. So the statement is False.`,
+      `**C.** → False
 
-The value recovered from the model contradicts the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → True
+$$4^{x+1}=64$$
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+$$x=2$$
 
-Set up the model and solve:
-
-Two positive $u$ → two $x$.
-
-$$2u^2-18u+28=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $2$, not $5$. So the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Match powers of $3$.
 
-Set up the model and solve:
+$$3^x=3^4$$
 
-$x < 8$.
+$$x=4$$
 
-$$\\left(\\frac{1}{5}-5-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -\\frac{5}{7}$$
-
-$$x \\approx 0.19$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $4$. The claim asks whether this is greater than $2$. Since $4>2$, the statement is True.`,
       `**E.** → True
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$2^{x-2}=8$$
 
-Domain requires $x>5$.
+$$x=5$$
 
-$$x-5=5$$
-
-$$x=10$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $5$. The claim asks whether this is greater than $3$. Since $5>3$, the statement is True.`,
     ],
-    difficulty_level: `5/5`,
-    sort_order: 119,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    difficulty_level: `3/5`,
+    sort_order: 109,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
   {
-    id: `math-4-120`,
-    case_id: `MATH 4.120`,
-    title: `Complex logarithms`,
+    id: `math-4-110`,
+    case_id: `MATH 4.110`,
+    title: `Small integer powers`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $4$.`,
-      `Measuring time after an offset, $\\ln(x-4)=\\ln 5$ holds for an admissible $x$ that equals $11$.`,
-      `The solution of $\\log \\sqrt[3]{x} + \\log \\frac{1}{x^{3}} - \\log x^2 + \\frac{16}{3} = \\frac{\\log x^2}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $6$.`,
-      `Measuring time after an offset, $\\ln(x-6)=\\ln 2$ holds for an admissible $x$ that equals $11$.`,
-      `For decadic logarithms, the unique admissible root of $\\log x^{1/4} - \\log x^{4} - \\log x^2 + \\frac{16}{3} = \\frac{2\\log x}{3}$ satisfies $x < 9$.`,
+      `A double-exponent five model uses $5^{2x}=25$. Every real $x$ is greater than $0$.`,
+      `A similar-triangle exponential uses $9^x=3^{x+1}$. Every real $x$ is $3$.`,
+      `A cubic-triple model uses $3^x=27$. Every real $x$ is $5$.`,
+      `A binary-growth model uses $2^x=32$. Every real $x$ is $7$.`,
+      `A shifted-doubling model uses $2^{x+1}=16$. Every real $x$ is greater than $2$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$5^{2x}=25$$
 
-$x < 4$.
+$$x=1$$
 
-$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -1$$
-
-$$x \\approx \\frac{1}{10}$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
       `**B.** → False
 
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
+Write both sides as powers of one base, then equate exponents.
 
-Set up the model and solve:
+$$9^x=3^{x+1}$$
 
-Domain requires $x>4$.
+$$x=1$$
+
+The recovered value is $1$, not $3$. So the statement is False.`,
+      `**C.** → False
+
+Rewrite both sides with the same base and equate exponents.
+
+$$3^x=27$$
+
+$$x=3$$
+
+The recovered value is $3$, not $5$. So the statement is False.`,
+      `**D.** → False
+
+Rewrite both sides with the same base and equate exponents.
+
+$$2^x=32$$
+
+$$x=5$$
+
+The recovered value is $5$, not $7$. So the statement is False.`,
+      `**E.** → True
+
+Rewrite both sides with the same base and equate exponents.
+
+$$2^{x+1}=16$$
+
+$$x=3$$
+
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 110,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-111`,
+    case_id: `MATH 4.111`,
+    title: `Exponential counts`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Every real root of $8^x=2^{x+6}$ satisfies $x$ is $5$.`,
+      `After the substitution $u=e^x$ or $u=2^x$ as appropriate, $e^{2x}-5e^x+6=0$ has greater than $1$ real solutions for $x$.`,
+      `A nine-twenty-seven model uses $9^x=27^{x-1}$. Every real $x$ is greater than $2$.`,
+      `With $u=e^x>0$, the equation $e^{2x}-3e^x+2=0$ has greater than $1$ real solutions for $x$.`,
+      `An octal-binary model uses $8^x=2^{x+2}$. Every real $x$ is $3$.`,
+    ],
+    answer_key: [false, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → False
+
+Write $8=2^3$.
+
+$$2^{3x}=2^{x+6}$$
+
+$$3x=x+6$$
+
+$$x=3$$
+
+The recovered value is $3$, not $5$. So the statement is False.`,
+      `**B.** → True
+
+The quadratic in $u$ has two positive roots, and the exponential is one-to-one, so each $u$ gives one $x$.
+
+$$u=2\\text{ or }u=3$$
+
+There are $2$ real solutions. That count is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**C.** → True
+
+Write both sides as powers of one base, then equate exponents.
+
+$$9^x=27^{x-1}$$
+
+$$x=3$$
+
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
+      `**D.** → True
+
+Substitute $u=e^x>0$.
+
+$$u^2-3u+2=0$$
+
+$$(u-1)(u-2)=0$$
+
+$$u=1\\text{ or }u=2$$
+
+Both $u$ values are positive, so there are two real $x$. That count is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**E.** → False
+
+Write both sides as powers of one base, then equate exponents.
+
+$$8^x=2^{x+2}$$
+
+$$x=1$$
+
+The recovered value is $1$, not $3$. So the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 111,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-112`,
+    case_id: `MATH 4.112`,
+    title: `Logarithms`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A voltage-scale model uses $4^x=2^{x+2}$. Every real $x$ is greater than $1$.`,
+      `Every positive root of $\\log x+\\log(x+3)=1$ satisfies $x$ is greater than $1$.`,
+      `A five-square exponential uses $25^x=5^{x+1}$. Every real $x$ is $3$.`,
+      `After the substitution $u=e^x$ or $u=2^x$ as appropriate, $2^{2x}-6\\cdot 2^x+8=0$ has greater than $1$ real solutions for $x$.`,
+      `Every real root of $27^x=3^{x+4}$ satisfies $x$ is $5$.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Write both sides as powers of one base, then equate exponents.
+
+$$4^x=2^{x+2}$$
+
+$$x=2$$
+
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**B.** → True
+
+Product rule, then a quadratic. Base $10$.
+
+$$x(x+3)=10$$
+
+$$x^2+3x-10=0$$
+
+$$(x-2)(x+5)=0$$
+
+$$x=2$$
+
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**C.** → False
+
+Write both sides as powers of one base, then equate exponents.
+
+$$25^x=5^{x+1}$$
+
+$$x=1$$
+
+The recovered value is $1$, not $3$. So the statement is False.`,
+      `**D.** → True
+
+The quadratic in $u$ has two positive roots, and the exponential is one-to-one, so each $u$ gives one $x$.
+
+$$u=2\\text{ or }u=4$$
+
+There are $2$ real solutions. That count is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**E.** → False
+
+Write $27=3^3$.
+
+$$3^{3x}=3^{x+4}$$
+
+$$3x=x+4$$
+
+$$x=2$$
+
+The recovered value is $2$, not $5$. So the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 112,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-113`,
+    case_id: `MATH 4.113`,
+    title: `Matching bases`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `After the substitution $u=e^x$ or $u=2^x$ as appropriate, $e^{2x}-4e^x+3=0$ has $5$ real solutions for $x$.`,
+      `A four-eight model uses $4^x=8^{x-1}$. Every real $x$ is $5$.`,
+      `A double-vs-eight model uses $2^{2x}=8^{x-1}$. Every real $x$ is greater than $2$.`,
+      `If $\\log_2 x=4$, then $x$ is $19$.`,
+      `A nine-zero log uses $\\log_{9} x=0$. Then $x$ is greater than $0$.`,
+    ],
+    answer_key: [false, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → False
+
+The quadratic in $u$ has two positive roots, and the exponential is one-to-one, so each $u$ gives one $x$.
+
+$$u=1\\text{ or }u=3$$
+
+There are $2$ real solutions. That count is $2$, not $5$. So the statement is False.`,
+      `**B.** → False
+
+Write both sides as powers of one base, then equate exponents.
+
+$$4^x=8^{x-1}$$
+
+$$x=3$$
+
+The recovered value is $3$, not $5$. So the statement is False.`,
+      `**C.** → True
+
+Write both sides as powers of one base, then equate exponents.
+
+$$2^{2x}=8^{x-1}$$
+
+$$x=3$$
+
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
+      `**D.** → False
+
+Rewrite in exponential form.
+
+$$x=2^4=16$$
+
+The recovered value is $16$, not $19$. So the statement is False.`,
+      `**E.** → True
+
+Rewrite the logarithm in exponential form.
+
+$$x=9^{0}$$
+
+$$x=1$$
+
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 113,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-114`,
+    case_id: `MATH 4.114`,
+    title: `Mixed exponentials`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `After the substitution $u=e^x$ or $u=2^x$ as appropriate, $e^{2x}-6e^x+8=0$ has greater than $1$ real solutions for $x$.`,
+      `A growth offset uses $\\ln(x-3)=\\ln 4$. Every admissible $x$ is $9$.`,
+      `A single-bit model uses $\\log_{2} x=1$. Then $x$ is greater than $1$.`,
+      `A decay offset uses $\\ln(x-5)=\\ln 2$. Every admissible $x$ is $9$.`,
+      `A five-zero log uses $\\log_{5} x=0$. Then $x$ is $3$.`,
+    ],
+    answer_key: [true, false, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The quadratic in $u$ has two positive roots, and the exponential is one-to-one, so each $u$ gives one $x$.
+
+$$u=2\\text{ or }u=4$$
+
+There are $2$ real solutions. That count is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**B.** → False
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-3=4$$
+
+$$x=7$$
+
+The recovered value is $7$, not $9$. So the statement is False.`,
+      `**C.** → True
+
+Rewrite the logarithm in exponential form.
+
+$$x=2^{1}$$
+
+$$x=2$$
+
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**D.** → False
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-5=2$$
+
+$$x=7$$
+
+The recovered value is $7$, not $9$. So the statement is False.`,
+      `**E.** → False
+
+Rewrite the logarithm in exponential form.
+
+$$x=5^{0}$$
+
+$$x=1$$
+
+The recovered value is $1$, not $3$. So the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 114,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-115`,
+    case_id: `MATH 4.115`,
+    title: `Shifts of ln`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `After the substitution $u=e^x$ or $u=2^x$ as appropriate, $2^{2x}-5\\cdot 2^x+4=0$ has $5$ real solutions for $x$.`,
+      `A binary counter uses $\\log_{2} x=3$. Then $x$ is greater than $6$.`,
+      `An octal-identity model uses $8^x=8$. Every real $x$ is $3$.`,
+      `A late offset uses $\\ln(x-7)=\\ln 5$. Every admissible $x$ is greater than $10$.`,
+      `A delay offset uses $\\ln(x-6)=\\ln 3$. Every admissible $x$ is greater than $7$.`,
+    ],
+    answer_key: [false, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → False
+
+The quadratic in $u$ has two positive roots, and the exponential is one-to-one, so each $u$ gives one $x$.
+
+$$u=1\\text{ or }u=4$$
+
+There are $2$ real solutions. That count is $2$, not $5$. So the statement is False.`,
+      `**B.** → True
+
+Rewrite the logarithm in exponential form.
+
+$$x=2^{3}$$
+
+$$x=8$$
+
+The recovered value is $8$. The claim asks whether this is greater than $6$. Since $8>6$, the statement is True.`,
+      `**C.** → False
+
+Rewrite both sides with the same base and equate exponents.
+
+$$8^x=8$$
+
+$$x=1$$
+
+The recovered value is $1$, not $3$. So the statement is False.`,
+      `**D.** → True
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-7=5$$
+
+$$x=12$$
+
+The recovered value is $12$. The claim asks whether this is greater than $10$. Since $12>10$, the statement is True.`,
+      `**E.** → True
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-6=3$$
+
+$$x=9$$
+
+The recovered value is $9$. The claim asks whether this is greater than $7$. Since $9>7$, the statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 115,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-116`,
+    case_id: `MATH 4.116`,
+    title: `No real roots`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Every admissible root of $\\ln(x-4)=\\ln 5$ satisfies $x$ is greater than $7$.`,
+      `If $\\log_2 x=3$, then $x$ is $11$.`,
+      `A one-trit model uses $\\log_{3} x=1$. Then $x$ is $5$.`,
+      `A cube-volume model uses $\\log_{3} x=3$. Then $x$ is greater than $23$.`,
+      `A long offset uses $\\ln(x-10)=\\ln 2$. Every admissible $x$ is $15$.`,
+    ],
+    answer_key: [true, false, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The natural log is one-to-one, and $x>4$.
 
 $$x-4=5$$
 
 $$x=9$$
 
-The value recovered from the model contradicts the claim.
+The recovered value is $9$. The claim asks whether this is greater than $7$. Since $9>7$, the statement is True.`,
+      `**B.** → False
 
-Matching the solved value to the claim, the statement is False.`,
-      `**C.** → True
+The logarithm is the exponent.
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Set up the model and solve:
-
-$x < 6$.
-
-$$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
-
-$$\\log x = -1$$
-
-$$x \\approx \\frac{1}{10}$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → False
-
-Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
-
-Set up the model and solve:
-
-Domain requires $x>6$.
-
-$$x-6=2$$
+$$2^3=x$$
 
 $$x=8$$
 
-The value recovered from the model contradicts the claim.
+The recovered value is $8$, not $11$. So the statement is False.`,
+      `**C.** → False
 
-Matching the solved value to the claim, the statement is False.`,
+Rewrite the logarithm in exponential form.
+
+$$x=3^{1}$$
+
+$$x=3$$
+
+The recovered value is $3$, not $5$. So the statement is False.`,
+      `**D.** → True
+
+Rewrite the logarithm in exponential form.
+
+$$x=3^{3}$$
+
+$$x=27$$
+
+The recovered value is $27$. The claim asks whether this is greater than $23$. Since $27>23$, the statement is True.`,
+      `**E.** → False
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-10=2$$
+
+$$x=12$$
+
+The recovered value is $12$, not $15$. So the statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 116,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-117`,
+    case_id: `MATH 4.117`,
+    title: `Substitutions`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A start offset uses $\\ln(x-1)=\\ln 8$. Every admissible $x$ is $11$.`,
+      `A triple-square model uses $3^x=9$. Every real $x$ is greater than $1$.`,
+      `A six-square model uses $6^x=36$. Every real $x$ is greater than $1$.`,
+      `A delayed-doubling model uses $2^{x-1}=8$. Every real $x$ is $7$.`,
+      `A five-cube model uses $5^x=125$. Every real $x$ is greater than $2$.`,
+    ],
+    answer_key: [false, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → False
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-1=8$$
+
+$$x=9$$
+
+The recovered value is $9$, not $11$. So the statement is False.`,
+      `**B.** → True
+
+Rewrite both sides with the same base and equate exponents.
+
+$$3^x=9$$
+
+$$x=2$$
+
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**C.** → True
+
+Rewrite both sides with the same base and equate exponents.
+
+$$6^x=36$$
+
+$$x=2$$
+
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**D.** → False
+
+Rewrite both sides with the same base and equate exponents.
+
+$$2^{x-1}=8$$
+
+$$x=4$$
+
+The recovered value is $4$, not $7$. So the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Rewrite both sides with the same base and equate exponents.
 
-Set up the model and solve:
+$$5^x=125$$
 
-$x < 9$.
+$$x=3$$
 
-$$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 117,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-118`,
+    case_id: `MATH 4.118`,
+    title: `Small integer powers`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `If $\\log_4 x=3$, then $x$ is greater than $54$.`,
+      `Every real root of $5^x=25$ satisfies $x$ is greater than $1$.`,
+      `A fold-count model uses $2^x=16$. Every real $x$ is $7$.`,
+      `The equation $2^x=-4$ has one real solution.`,
+      `The equation $10^x=-2$ has one real solution.`,
+    ],
+    answer_key: [true, true, false, false, false],
+    tactical_explanations: [
+      `**A.** → True
 
-$$\\log x = -0.83$$
+Rewrite in exponential form.
 
-$$x \\approx 0.15$$
+$$x=4^3=64$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value is $64$. The claim asks whether this is greater than $54$. Since $64>54$, the statement is True.`,
+      `**B.** → True
 
-Matching the solved value to the claim, the statement is True.`,
+Match powers of $5$.
+
+$$5^x=5^2$$
+
+$$x=2$$
+
+The recovered value is $2$. The claim asks whether this is greater than $1$. Since $2>1$, the statement is True.`,
+      `**C.** → False
+
+Rewrite both sides with the same base and equate exponents.
+
+$$2^x=16$$
+
+$$x=4$$
+
+The recovered value is $4$, not $7$. So the statement is False.`,
+      `**D.** → False
+
+For every real $x$, $2^x>0$.
+
+$$2^x>0$$
+
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
+      `**E.** → False
+
+An exponential with positive base never takes a negative value.
+
+$$10^x>0$$
+
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 118,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-119`,
+    case_id: `MATH 4.119`,
+    title: `Exponential counts`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The equation $2^x=-5$ has one real solution.`,
+      `A pair-split model uses $2^x=4$. Every real $x$ is $5$.`,
+      `A cooling offset uses $\\ln(x-2)=\\ln 5$. Every admissible $x$ is greater than $5$.`,
+      `Every real root of $3^x=27$ satisfies $x$ is greater than $2$.`,
+      `A mid offset uses $\\ln(x-4)=\\ln 6$. Every admissible $x$ is greater than $8$.`,
+    ],
+    answer_key: [false, false, true, true, true],
+    tactical_explanations: [
+      `**A.** → False
+
+An exponential with positive base never takes a negative value.
+
+$$2^x>0$$
+
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
+      `**B.** → False
+
+Rewrite both sides with the same base and equate exponents.
+
+$$2^x=4$$
+
+$$x=2$$
+
+The recovered value is $2$, not $5$. So the statement is False.`,
+      `**C.** → True
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-2=5$$
+
+$$x=7$$
+
+The recovered value is $7$. The claim asks whether this is greater than $5$. Since $7>5$, the statement is True.`,
+      `**D.** → True
+
+Match powers of $3$.
+
+$$3^x=3^3$$
+
+$$x=3$$
+
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
+      `**E.** → True
+
+The natural logarithm is one-to-one, and the argument must stay positive.
+
+$$x-4=6$$
+
+$$x=10$$
+
+The recovered value is $10$. The claim asks whether this is greater than $8$. Since $10>8$, the statement is True.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 119,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
+  },
+  {
+    id: `math-4-120`,
+    case_id: `MATH 4.120`,
+    title: `Logarithms`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `A four-to-four model uses $4^x=4$. Every real $x$ is greater than $0$.`,
+      `The equation $5^x=-2$ has one real solution.`,
+      `Every admissible root of $\\ln(x-3)=\\ln 5$ satisfies $x$ is greater than $6$.`,
+      `The equation $7^x=-3$ has one real solution.`,
+      `Every real root of $5^x=125$ satisfies $x$ is greater than $2$.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Rewrite both sides with the same base and equate exponents.
+
+$$4^x=4$$
+
+$$x=1$$
+
+The recovered value is $1$. The claim asks whether this is greater than $0$. Since $1>0$, the statement is True.`,
+      `**B.** → False
+
+An exponential with positive base never takes a negative value.
+
+$$5^x>0$$
+
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
+      `**C.** → True
+
+Use injectivity of $\\ln$.
+
+$$x-3=5$$
+
+$$x=8$$
+
+The recovered value is $8$. The claim asks whether this is greater than $6$. Since $8>6$, the statement is True.`,
+      `**D.** → False
+
+An exponential with positive base never takes a negative value.
+
+$$7^x>0$$
+
+There is no real solution, so the claim of one real solution is false. So the statement is False.`,
+      `**E.** → True
+
+Match powers of $5$.
+
+$$5^x=5^3$$
+
+$$x=3$$
+
+The recovered value is $3$. The claim asks whether this is greater than $2$. Since $3>2$, the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 120,
-    solution_overview: `Five independent exponential and logarithmic stories. Simplify log laws, respect domains and monotonicity, and compute before judging the final comparison.`,
+    solution_overview: `Five independent exponential and logarithmic stories. Rewrite with log laws or a common base, respect the domain, then compare with the claim.`,
   },
 ];
