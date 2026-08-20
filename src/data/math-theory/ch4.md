@@ -2,7 +2,7 @@
 
 This chapter is the theory of equations with one unknown: linear, quadratic, rational, radical and absolute-value, then exponential and logarithmic. It starts from what an equation is and what it means to solve one. If you have never isolated an unknown before, begin at the first section and read straight through.
 
-On the BBE exam, Chapter 4 statements are almost never bare arithmetic. They ask about the number of solutions, the sign of a root, a parameter condition, a domain restriction, or an extraneous root. The examples below are few on purpose. Each one is worked in full exam depth.
+On the BBE exam, Chapter 4 statements are almost never bare arithmetic. They ask about the number of solutions, the sign of a root, a parameter condition, a domain restriction, or an extraneous root. Each section below has easy worked examples first, then harder exam-depth ones.
 
 ## Learning objectives
 
@@ -51,6 +51,40 @@ $$
 
 When fractions appear, multiply through by a common denominator so the new equation has no fractions. That step preserves equality because both sides are scaled by the same nonzero number.
 
+**Example 1 (easy).** Solve $3x + 4 = 19$.
+
+Subtract $4$ from both sides:
+
+$$
+3x = 15.
+$$
+
+Divide by $3$:
+
+$$
+x = 5.
+$$
+
+Check: $3(5) + 4 = 19$. True, so $x = 5$ is the solution.
+
+**Example 2 (easy).** Solve $3(x + 1) = 12$ and $\dfrac{x - 7}{2} = 4$.
+
+First expand the brackets:
+
+$$
+3x + 3 = 12, \qquad 3x = 9, \qquad x = 3.
+$$
+
+Check: $3(3 + 1) = 12$. True.
+
+For the fraction, multiply both sides by $2$:
+
+$$
+x - 7 = 8, \qquad x = 15.
+$$
+
+Check: $\dfrac{15 - 7}{2} = 4$. True.
+
 ### One solution, none, or infinitely many
 
 After simplifying, a linear equation ends in one of three ways.
@@ -60,6 +94,8 @@ After simplifying, a linear equation ends in one of three ways.
 | $ax = b$ with $a \neq 0$ | Unique solution | $x = b/a$ |
 | $0 = c$ with $c \neq 0$ | Contradiction | Empty set: no solution |
 | $0 = 0$ | Identity | Every real $x$ works |
+
+**Example 3 (easy).** The equation $2x + 1 = 2x + 5$ simplifies to $1 = 5$, so there is no solution. The equation $2(x + 3) = 2x + 6$ simplifies to $0 = 0$, so every real $x$ is a solution.
 
 ### Parameters in a linear equation
 
@@ -79,7 +115,7 @@ then classify.
 
 Exam claims about “exactly one $k$ with infinitely many solutions”, “no solution if and only if $k = \ldots$”, or “for every $k > 2$ the unique $x$ is positive” are answered from this table, not by guessing a few values of $k$.
 
-**Example 1.** Study the parametric balance
+**Example 4 (hard).** Study the parametric balance
 
 $$
 (k - 1)x - 2 = k(x - 3) + 1
@@ -123,15 +159,15 @@ Now test claims of the exam type:
 - “When $k = 3$, the unique solution satisfies $x > 2$.” True, because $x = 3(3 - 1) = 6 > 2$.
 - “For every $k < 1$, the unique solution is strictly negative.” True, because $k - 1 < 0$ forces $x = 3(k - 1) < 0$.
 
-The same routine on a different equation can produce a genuine singular value. For
+Contrast that with
 
 $$
-(k + 1)x = 2k + 2 = 2(k + 1),
+(k + 1)x = 2k + 2 = 2(k + 1).
 $$
 
-the case $k = -1$ makes both sides zero, so every $x$ works, while $k \neq -1$ forces the unique root $x = 2$. That contrast is why parameter analysis must be done before any claim about uniqueness.
+Here $k = -1$ makes both sides zero, so every $x$ works, while $k \neq -1$ forces the unique root $x = 2$. Parameter analysis must be finished before any uniqueness claim.
 
-**Example 2.** A $60$ litre vat starts at $10\%$ acid. Twelve litres of water evaporate, then $12$ litres of $40\%$ acid are poured in. After that, $x$ litres of the new mixture are drawn off and replaced by pure water so that the final concentration equals $12\%$. Find $x$, and decide whether the claim “less than $20$ litres must be drawn off” is true.
+**Example 5 (hard).** A $60$ litre vat starts at $10\%$ acid. Twelve litres of water evaporate, then $12$ litres of $40\%$ acid are poured in. After that, $x$ litres of the new mixture are drawn off and replaced by pure water so that the final concentration equals $12\%$. Find $x$, and decide whether the claim “less than $20$ litres must be drawn off” is true.
 
 First stage: the vat starts with $0.10 \cdot 60 = 6$ litres of pure acid. Evaporating $12$ litres of water leaves those $6$ litres of acid in $48$ litres of mixture. Adding $12$ litres of $40\%$ stock adds
 
@@ -215,6 +251,36 @@ The **discriminant** $\Delta = b^{2} - 4ac$ decides the number of real roots.
 | $\Delta = 0$ | Exactly one real root (repeated) |
 | $\Delta < 0$ | No real roots |
 
+**Example 1 (easy).** Solve $x^{2} - 5x + 6 = 0$ by factoring.
+
+$$
+(x - 2)(x - 3) = 0,
+$$
+
+so $x = 2$ or $x = 3$.
+
+**Example 2 (easy).** Read the number of real roots of $x^{2} + x + 1 = 0$ and of $2x^{2} - 3x - 2 = 0$ from the discriminant, then find the roots of the second equation.
+
+For $x^{2} + x + 1 = 0$,
+
+$$
+\Delta = 1 - 4 = -3 < 0,
+$$
+
+so there are no real roots.
+
+For $2x^{2} - 3x - 2 = 0$,
+
+$$
+\Delta = 9 + 16 = 25 > 0,
+$$
+
+$$
+x = \frac{3 \pm 5}{4},
+$$
+
+so $x = 2$ or $x = -\tfrac12$. Two distinct real roots.
+
 ### Vieta’s relations and signs
 
 If the roots are $x_1$ and $x_2$, then
@@ -250,7 +316,7 @@ For “both strictly positive” you need $\Delta \ge 0$, sum $> 0$, and product
 
 A **biquadratic** $ay^{4} + by^{2} + c = 0$ is reduced by $u = y^{2}$ with $u \ge 0$. Only nonnegative roots $u$ produce real $y$.
 
-**Example 1.** For the parametric break-even model
+**Example 3 (hard).** For the parametric break-even model
 
 $$
 x^{2} - (2m + 1)x + (m^{2} - 4) = 0,
@@ -306,7 +372,7 @@ The value $m = -1$ lies in $(-17/4, \infty)$, so among all $m$ with two distinct
 
 At $m = -1$ one also has product $= 1 - 4 = -3 < 0$, so the minimising parameter still produces opposite signs. That is the depth the exam wants: discriminant, Vieta, and a calculus-free quadratic minimum on an interval, all from one model.
 
-**Example 2.** Replace $x$ by $y^{2}$ in
+**Example 4 (hard).** Replace $x$ by $y^{2}$ in
 
 $$
 x^{2} - 5x + 4 = 0
@@ -354,6 +420,16 @@ A **rational equation** has the unknown in a denominator. Before solving, write 
 
 Multiply through by the common denominator. The new polynomial equation is equivalent only on the domain. After solving, discard every candidate that hits a hole. Those discarded values are **extraneous**.
 
+**Example 1 (easy).** Solve $\dfrac{x}{x + 3} = \dfrac{2}{5}$.
+
+Exclude $x = -3$. Multiply by $5(x + 3)$:
+
+$$
+5x = 2(x + 3), \qquad 5x = 2x + 6, \qquad 3x = 6, \qquad x = 2.
+$$
+
+The value $2$ is not the hole. Check: $\dfrac{2}{5} = \dfrac{2}{5}$. So $x = 2$ is the unique solution.
+
 ### Radical equations
 
 For square roots over the reals:
@@ -366,6 +442,22 @@ For square roots over the reals:
 
 Squaring is not reversible without a check. From $A = B$ you get $A^{2} = B^{2}$, but $A^{2} = B^{2}$ also allows $A = -B$.
 
+**Example 2 (easy).** Solve $\sqrt{x + 24} - \sqrt{x} = 2$ with $x \ge 0$.
+
+Isolate:
+
+$$
+\sqrt{x + 24} = 2 + \sqrt{x}.
+$$
+
+Square:
+
+$$
+x + 24 = 4 + 4\sqrt{x} + x, \qquad 20 = 4\sqrt{x}, \qquad \sqrt{x} = 5, \qquad x = 25.
+$$
+
+Check: $\sqrt{49} - \sqrt{25} = 2$. Valid. One real solution.
+
 ### Absolute-value equations
 
 $|A|$ is $A$ when $A \ge 0$ and $-A$ when $A < 0$. Geometrically, $|x - a|$ is distance from $x$ to $a$.
@@ -376,7 +468,15 @@ $$
 
 If $b < 0$, there is no solution. When several absolute values appear, split the real line at the critical points where inside expressions change sign, solve in each region, and keep only solutions that belong to that region.
 
-**Example 1.** Solve
+**Example 3 (easy).** Solve $|x - 3| = 5$.
+
+$$
+x - 3 = 5 \quad \text{or} \quad x - 3 = -5,
+$$
+
+so $x = 8$ or $x = -2$.
+
+**Example 4 (hard).** Solve
 
 $$
 \frac{2}{x - 3} - \frac{1}{x + 1} = 1
@@ -432,9 +532,9 @@ $$
 \frac{2}{-5 - 3} - \frac{1}{-5 + 1} = \frac{2}{-8} - \frac{1}{-4} = -\frac14 + \frac14 = 0.
 $$
 
-So the modified equation has a real solution. The follow-up claim is false. The point of the double claim is that changing a constant can change the solution count, but you still have to solve. You cannot guess “harder right-hand side means no solution”.
+So the modified equation has a real solution. The follow-up claim is false. Changing a constant can change the solution count, but you still have to solve.
 
-**Example 2.** Solve
+**Example 5 (hard).** Solve
 
 $$
 \sqrt{4w + 9} - \sqrt{w} = 3
@@ -442,13 +542,13 @@ $$
 
 for real $w$, with the story restriction $w > 0$. Decide whether “no strictly positive solution survives because squaring introduces an extraneous root” is true.
 
-Domain from the radicals: $4w + 9 \ge 0$ (automatic for $w \ge 0$) and $w \ge 0$. The story asks for $w > 0$. Isolate:
+Domain from the radicals: $w \ge 0$. The story asks for $w > 0$. Isolate:
 
 $$
 \sqrt{4w + 9} = 3 + \sqrt{w}.
 $$
 
-Both sides are nonnegative for $w \ge 0$, so squaring is safe in direction, but the check is still mandatory:
+Square:
 
 $$
 4w + 9 = 9 + 6\sqrt{w} + w,
@@ -458,23 +558,15 @@ $$
 3w = 6\sqrt{w}.
 $$
 
-If $w = 0$, this holds, but $w = 0$ is excluded by $w > 0$. For $w > 0$ divide by $3$:
+If $w = 0$, this holds, but $w = 0$ is excluded by $w > 0$. For $w > 0$ set $t = \sqrt{w} > 0$:
 
 $$
-w = 2\sqrt{w}.
+t^{2} = 2t, \qquad t(t - 2) = 0, \qquad t = 2, \qquad w = 4.
 $$
 
-Set $t = \sqrt{w} > 0$. Then $t^{2} = 2t$, so $t(t - 2) = 0$, hence $t = 2$ and $w = 4$.
+Check: $\sqrt{16 + 9} - \sqrt{4} = 5 - 2 = 3$. Valid. There is a strictly positive solution $w = 4$. The claim is false: $w = 0$ fails the story filter, while $w = 4$ survives. Domain, check, and physical restriction are three different filters.
 
-Check in the original:
-
-$$
-\sqrt{16 + 9} - \sqrt{4} = 5 - 2 = 3.
-$$
-
-Valid. There is a strictly positive solution $w = 4$. The claim is false: squaring did produce the candidate $w = 0$ as well, but that candidate fails the story filter $w > 0$, while $w = 4$ survives. Extraneous-root language must be used precisely. A root can be excluded by the domain, by the check, or by a physical restriction, and those are three different reasons.
-
-**Example 3.** Solve
+**Example 6 (hard).** Solve
 
 $$
 |2x - 1| + |x + 3| = 8
@@ -482,43 +574,33 @@ $$
 
 by splitting at the critical points, and decide whether “exactly one real solution” is true.
 
-The expressions $2x - 1$ and $x + 3$ change sign at $x = \tfrac12$ and $x = -3$. The real line splits into three regions: $x < -3$, $-3 \le x < \tfrac12$, and $x \ge \tfrac12$.
+The expressions $2x - 1$ and $x + 3$ change sign at $x = \tfrac12$ and $x = -3$. Split into $x < -3$, $-3 \le x < \tfrac12$, and $x \ge \tfrac12$.
 
 Region $x < -3$:
 
 $$
--(2x - 1) - (x + 3) = 8, \qquad -2x + 1 - x - 3 = 8, \qquad -3x = 10, \qquad x = -\frac{10}{3}.
+-(2x - 1) - (x + 3) = 8, \qquad -3x = 10, \qquad x = -\frac{10}{3}.
 $$
 
-But $-\tfrac{10}{3} \approx -3.33$ is less than $-3$, so it lies in the region. Keep it.
+This lies in the region, so keep it.
 
 Region $-3 \le x < \tfrac12$:
 
 $$
--(2x - 1) + (x + 3) = 8, \qquad -2x + 1 + x + 3 = 8, \qquad -x = 4, \qquad x = -4.
+-(2x - 1) + (x + 3) = 8, \qquad -x = 4, \qquad x = -4.
 $$
 
-Now $-4 < -3$, so it does **not** lie in this region. Discard it.
+Now $-4 < -3$, so discard it.
 
 Region $x \ge \tfrac12$:
 
 $$
-(2x - 1) + (x + 3) = 8, \qquad 3x + 2 = 8, \qquad 3x = 6, \qquad x = 2.
+(2x - 1) + (x + 3) = 8, \qquad 3x = 6, \qquad x = 2.
 $$
 
-The value $2$ is at least $\tfrac12$, so keep it.
+Keep $x = 2$.
 
-The solutions are $x = -\tfrac{10}{3}$ and $x = 2$. Exactly two real solutions, so the claim “exactly one” is false. Direct checks:
-
-$$
-\left|2\left(-\tfrac{10}{3}\right) - 1\right| + \left|-\tfrac{10}{3} + 3\right| = \left|-\tfrac{23}{3}\right| + \left|-\tfrac{1}{3}\right| = \tfrac{23}{3} + \tfrac{1}{3} = 8,
-$$
-
-$$
-|4 - 1| + |2 + 3| = 3 + 5 = 8.
-$$
-
-Both valid. The discarded $x = -4$ is the classic case-error: it solves the algebra of a region it does not belong to.
+The solutions are $x = -\tfrac{10}{3}$ and $x = 2$. Exactly two real solutions, so “exactly one” is false. The discarded $x = -4$ solves the algebra of a region it does not belong to.
 
 ### Exam traps in 4.3
 
@@ -542,6 +624,26 @@ a^{u} = a^{v} \quad \Rightarrow \quad u = v.
 $$
 
 Powers that look different are rewritten over a common base. For example $4 = 2^{2}$, $8 = 2^{3}$, $9 = 3^{2}$, $27 = 3^{3}$. After both sides are powers of the same base, equate exponents.
+
+**Example 1 (easy).** Solve $2^{x} = 8$ and $3^{x + 1} = 81$.
+
+$$
+2^{x} = 2^{3} \quad \Rightarrow \quad x = 3.
+$$
+
+$$
+3^{x + 1} = 3^{4} \quad \Rightarrow \quad x + 1 = 4 \quad \Rightarrow \quad x = 3.
+$$
+
+Both solutions are positive integers.
+
+**Example 2 (easy).** Solve $4^{x} = 8$ by rewriting over base $2$.
+
+$$
+(2^{2})^{x} = 2^{3}, \qquad 2^{2x} = 2^{3}, \qquad 2x = 3, \qquad x = \tfrac32.
+$$
+
+The solution is not an integer.
 
 ### Logarithms
 
@@ -583,7 +685,19 @@ Before solving a logarithmic equation, write every domain condition: each argume
 
 Growth and decay models have the shape $A(t) = A_{0} a^{t}$ or $A(t) = A_{0} e^{kt}$. Solving for time means isolating the exponential factor and taking a logarithm.
 
-**Example 1.** Compare the solutions of
+**Example 3 (easy).** Solve $\log_{2} x = 5$ and $\ln x = 0$.
+
+$$
+x = 2^{5} = 32.
+$$
+
+$$
+x = e^{0} = 1.
+$$
+
+A logarithm can vanish: $\log_{a} 1 = 0$. The claim that $\ln x = 0$ has no solution is false.
+
+**Example 4 (hard).** Compare the solutions of
 
 $$
 16^{x} = 8^{x + 1} \qquad \text{and} \qquad 4^{x} = 8.
@@ -607,9 +721,7 @@ $$
 
 The first solution is $3$, the second is $\tfrac32$. So $3 > \tfrac32$: the first is **not** smaller than the second. The claim is false. Also only one of the two solutions is an integer, so “both are integers” is false.
 
-The exam move is not just solving one exponential equation. It is solving two related ones carefully enough to compare them, without mixing the rewritten exponents.
-
-**Example 2.** Solve
+**Example 5 (hard).** Solve
 
 $$
 \log_{2}(t + 6) + \log_{2}(t - 1) = 3
@@ -659,9 +771,7 @@ The value $8$ satisfies $t > 1$. Direct check: $\log_{2} 14 - \log_{2} 7 = \log_
 
 The admissible roots are $t = 2$ for the sum equation and $t = 8$ for the difference equation. They share no common root. The first claim is false.
 
-This is the standard hard log pattern: combine with a law, solve a quadratic, watch an extraneous negative root, then compare with a second equation on the same domain.
-
-**Example 3.** A capital grows by the factor $1.25$ each year:
+**Example 6 (hard).** A capital grows by the factor $1.25$ each year:
 
 $$
 A(t) = A_{0}(1.25)^{t}.
@@ -693,7 +803,7 @@ $$
 \ln 1.25 = 0.2.
 $$
 
-But $\ln 1.25 = \ln(5/4) \approx 0.22314 > 0.2$, so the equality $\ln 1.25 = 0.2$ is false. Therefore the only real solution of $(1.25)^{t} = e^{0.2 t}$ is $t = 0$. There is **no** $t > 0$ at which the two funds meet. The claim that the crossing time is strictly less than $2$ is false, because no positive crossing exists.
+But $\ln 1.25 = \ln(5/4) \approx 0.22314 > 0.2$, so the equality is false. Therefore the only real solution of $(1.25)^{t} = e^{0.2 t}$ is $t = 0$. There is **no** $t > 0$ at which the two funds meet. The claim that the crossing time is strictly less than $2$ is false, because no positive crossing exists.
 
 For the half-capital equation with fund $A$:
 
@@ -701,13 +811,13 @@ $$
 (1.25)^{t} = \tfrac12.
 $$
 
-The left side is always positive, but for every real $t$ one has $1.25^{t} > 0$, and since $1.25 > 1$ the map $t \mapsto 1.25^{t}$ is increasing with values always at least as large as values heading to $0$ only as $t \to -\infty$. In particular $1.25^{t} = 1/2$ does have a negative solution
+Since $1.25 > 1$, the map $t \mapsto 1.25^{t}$ is increasing and equals $1/2$ only at a negative time
 
 $$
 t = \frac{\ln(1/2)}{\ln 1.25} < 0.
 $$
 
-So a real half-capital time exists, but it is not a future time. If an exam claim says “the capital falls to half in some positive number of years”, that claim is false for a growth factor greater than $1$. Growth models do not produce future halving.
+A real half-capital time exists, but it is not a future time. If an exam claim says “the capital falls to half in some positive number of years”, that claim is false for a growth factor greater than $1$.
 
 ### Exam traps in 4.4
 
