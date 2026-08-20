@@ -50,8 +50,8 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     materialsPdfName: "BBE-Math-Standard-Probability-Reference-Guide.pdf",
   },
   13: {
-
     num: 13,
+
     title: "Binomial distribution",
     markdown: ch13,
     materialsPdfUrl: "/bbe-math-binomial-theory.pdf",
