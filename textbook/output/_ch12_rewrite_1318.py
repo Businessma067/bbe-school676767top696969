@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SRC = os.path.join(ROOT, "src/data/math-cases-ch12-probability.json")
-OUT = os.path.join(ROOT, "textbook/output/ch12_1318")
+OUT = os.path.join(ROOT, "textbook/output/ch12_1318_v2")
 os.makedirs(OUT, exist_ok=True)
 KEY = os.environ["LOVABLE_API_KEY"]
 MODEL = "google/gemini-2.5-flash"
@@ -24,7 +24,7 @@ GOLD = json.dumps({
     "statements": gold["statements"],
     "answer_key": gold["answer_key"],
     "solution_overview": gold["solution_overview"],
-    "tactical_explanations": gold["tactical_explanations"][:2] + [gold["tactical_explanations"][3], gold["tactical_explanations"][4]],
+    "tactical_explanations": gold["tactical_explanations"],
 }, ensure_ascii=False, indent=1)
 
 SYSTEM = """You are a calm mathematics tutor rewriting worked solutions for a university entrance-exam prep book.
@@ -33,14 +33,16 @@ You will be given ONE probability task (context, five statements, the TRUE/FALSE
 
 STYLE CONTRACT (follow literally):
 1. Each explanation starts with a header line: `**A.** → True` or `**A.** → False` (letter matches position, verdict matches the answer key), then a blank line, then the body.
-2. Body rhythm: one plain-English sentence naming the rule this statement needs; the general formula on its own line inside `$$...$$`; the substitution with the concrete numbers in a SEPARATE `$$...$$` display; one arithmetic step per display; the comparison with the claim; a closing sentence ending exactly `so the statement is True.` or `so the statement is False.` (or `Matching these figures to the claim, the statement is True.`).
-3. ALL mathematics goes inside `$...$` or `$$...$$`. ALL English goes outside math. Never put bare English words inside math: write `$P(\\text{all men})$`, never `P(all men)`. Short `\\text{...}` tags are fine; whole sentences inside math are forbidden.
-4. Use proper KaTeX: `\\binom{12}{4}`, `\\frac{a}{b}` (never a slash), `\\cdot` or `\\times` (never the raw character ×), `\\sum`, `\\cup`, `\\cap`, `\\mid`, `\\%` for percent inside math, `\\approx`, `\\ge`, `\\le`. Never use raw Unicode math symbols (× Σ ∪ ∩ − ≥ ≤ μ σ π) — use their LaTeX commands (`\\mu`, `\\sigma`).
-5. Never write an incomplete result (like `= 62`); always finish the number with its unit or percent.
-6. Length tracks the work: a lookup statement is two or three sentences with no display; a real computation gets the displays. The five letters must NOT all be the same length.
-7. Forbidden: em dashes, `**Trap:**` / `**Watch.**` labels, "It is important to note", "In conclusion", references like "as shown above" or "in Step 1", bullet lists, arrows other than the header arrow, and the string `${`.
-8. The solution overview restates the scenario briefly, names the model, and sets up ONLY the shared quantities every statement uses. It must not pre-solve each statement.
-9. Recompute every number from the context. Keep the verdicts exactly as the answer key says, even if the old explanation disagreed in its wording.
+2. Copy the voice and working rhythm of the GOLD EXAMPLE, not merely its headers. Begin with a direct, context-specific explanation of the mathematical idea. Never use generic scaffolding such as "To find...", "The rule the claim needs is...", "The claim is a comparison...", "Using the...", or "Substituting the given values...". Explain what the event means, why the formula applies, or how the random variable is constructed.
+3. Put a general formula in its own `$$...$$` display only when it helps explain the idea. Put concrete substitution in a separate display. Use one meaningful algebraic or arithmetic step per display. Compare the result directly with the claim and finish with `so the statement is True.` or `so the statement is False.`
+4. ALL mathematics goes inside `$...$` or `$$...$$`. ALL English goes outside math. Never put bare English words inside math: write `$P(\\text{all men})$`, never `P(all men)`. Short `\\text{...}` tags are fine; whole sentences inside math are forbidden.
+5. Use proper KaTeX: `\\binom{12}{4}`, `\\frac{a}{b}` (never a slash), `\\cdot` or `\\times` (never the raw character ×), `\\sum`, `\\cup`, `\\cap`, `\\mid`, `\\%` for percent inside math, `\\approx`, `\\ge`, `\\le`. Never use raw Unicode math symbols (× Σ ∪ ∩ − ≥ ≤ μ σ π) — use their LaTeX commands (`\\mu`, `\\sigma`).
+6. Length tracks the actual work exactly as in 13.18. A conceptual lookup may be two short paragraphs and no display. A single computation gets only the displays it needs. A long sum shows every material term. Never pad every letter to the same template or length.
+7. The overview and letters form one continuous solution. Put shared setup and shared calculations in `solution_overview` once. A letter reuses those values in a short sentence and shows only the additional work for that claim. Do not repeat the same expected value, variance, sample space, totals, or event definitions in several letters.
+8. Avoid repetitive textbook boilerplate. Across A–E, vary sentence structure naturally. Do not repeatedly say "Comparing this to the claim", "The calculated value", "This matches the claim", or "The statement claims". Prefer the concise comparison style of 13.18: `Since $x>y$, the statement is True.` or `The claim needs ... We have ..., so the statement is False.`
+9. Forbidden: em dashes, `**Trap:**` / `**Watch.**` labels, "It is important to note", "In conclusion", references like "as shown above" or "in Step 1", bullet lists, arrows other than the header arrow, and the string `${`.
+10. The solution overview briefly interprets the situation, names the probability model or counting structure, defines notation, and performs only calculations shared by several letters. Do not turn it into a list and do not pre-judge A–E.
+11. Recompute every number from the context. Keep the verdicts exactly as the answer key says, even if the old explanation disagreed in its wording.
 
 Return ONLY a JSON object:
 {"solution_overview": "...", "tactical_explanations": ["...","...","...","...","..."]}
@@ -90,6 +92,16 @@ def check(obj, task):
             errs.append(f"{L}: closing verdict must be {want}")
         if "${" in e or "—" in e:
             errs.append(f"{L}: contains a forbidden '${{' or em dash")
+        body = e.split("\n\n", 1)[1] if "\n\n" in e else e
+        if re.match(r"^(?:To find|To determine|Using the)\b", body):
+            errs.append(f"{L}: generic opener does not match the direct 13.18 voice")
+        if any(phrase in e for phrase in (
+            "Substituting the given values",
+            "Comparing this to the claim",
+            "The calculated value",
+            "This matches the claim",
+        )):
+            errs.append(f"{L}: repetitive textbook boilerplate does not match 13.18")
         for ch in BAD_UNICODE:
             if ch in e:
                 errs.append(f"{L}: contains raw unicode math symbol '{ch}', use the LaTeX command")
@@ -134,7 +146,10 @@ def parse(text):
     if t.startswith("```"):
         t = re.sub(r"^```[a-z]*\n", "", t)
         t = re.sub(r"\n```$", "", t.strip())
-    return json.loads(t)
+    start = t.find("{")
+    if start < 0:
+        raise ValueError("response contains no JSON object")
+    return json.JSONDecoder().raw_decode(t[start:])[0]
 
 
 def work(task):

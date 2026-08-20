@@ -1,0 +1,10 @@
+{
+ "solution_overview": "The payoff of a lottery ticket $X$ is a discrete random variable with three possible outcomes and their associated probabilities:\n*   $X=0$ with probability $P(X=0) = 0.94$\n*   $X=5$ with probability $P(X=5) = 0.05$\n*   $X=1000$ with probability $P(X=1000) = 0.01$\n\nThe mean (expected value) of a discrete random variable is given by $E[X] = \\sum x_i P(X=x_i)$.\n\n$$\\mu = E[X] = (0)(0.94) + (5)(0.05) + (1000)(0.01)$$\n$$\\mu = 0 + 0.25 + 10$$\n$$\\mu = 10.25$$\n\nThe variance of a discrete random variable is given by $\\sigma^2 = E[X^2] - (E[X])^2$. First, compute $E[X^2]$:\n\n$$E[X^2] = \\sum x_i^2 P(X=x_i)$$\n$$E[X^2] = (0^2)(0.94) + (5^2)(0.05) + (1000^2)(0.01)$$\n$$E[X^2] = (0)(0.94) + (25)(0.05) + (1000000)(0.01)$$\n$$E[X^2] = 0 + 1.25 + 10000$$\n$$E[X^2] = 10001.25$$\n\nNow compute the variance using $\\mu = 10.25$:\n\n$$\\sigma^2 = 10001.25 - (10.25)^2$$\n$$\\sigma^2 = 10001.25 - 105.0625$$\n$$\\sigma^2 = 9896.1875$$\n\nFinally, the standard deviation is the square root of the variance:\n\n$$\\sigma = \\sqrt{9896.1875}$$\n$$\\sigma \\approx 99.47958$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe mean of the lottery ticket payoff is $\\mu = 10.25$. The statement claims the mean is $10$. Since $10.25 \\ne 10$, the statement is False.",
+  "**B.** → True\n\nThe variance of the lottery ticket payoff is $\\sigma^2 = 9896.1875$. The statement claims the variance is approximately $9896.19$. Since $9896.1875 \\approx 9896.19$, the statement is True.",
+  "**C.** → False\n\nThe standard deviation of the lottery ticket payoff is $\\sigma \\approx 99.47958$. The statement claims the standard deviation is approximately $9.95$. Since $99.47958 \\ne 9.95$, the statement is False.",
+  "**D.** → False\n\nThe probability of $X=1000$ is $P(X=1000) = 0.01$. The probability of $X=5$ is $P(X=5) = 0.05$. The claim is that $P(X=1000) > P(X=5)$. Since $0.01 < 0.05$, the statement is False.",
+  "**E.** → False\n\nThe standard deviation is $\\sigma \\approx 99.47958$, and the mean is $\\mu = 10.25$. The claim is that $\\sigma < \\mu$. Since $99.47958 \\not< 10.25$, the statement is False."
+ ]
+}
