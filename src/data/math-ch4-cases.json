@@ -28,7 +28,7 @@
     "**E.** → False\n\nFor $k < -3$, the coefficient of $x$ is non-zero, so the unique solution is:\n\n$$x = \\frac{k + 3}{k + 1}$$\n\nWhen $k < -3$, both the numerator and the denominator are strictly negative:\n\n$$k + 3 < 0$$\n\n$$k + 1 < -2 < 0$$\n\nThe quotient of two strictly negative quantities is strictly positive:\n\n$$x = \\frac{k + 3}{k + 1} > 0$$\n\nFor example, choosing $k = -5$ yields $x = \\frac{-2}{-4} = \\frac{1}{2} > 0$, so the solution is strictly positive rather than negative, so the statement is False."
    ],
    "solution_overview": "To analyze the solutions of the linear equation in the unknown $x$, we collect all terms containing $x$ on the left-hand side and all constant terms on the right-hand side:\n\n$$k^2 x - (k + 2)x = k^2 - 2k + 3k - 6$$\n\n$$(k^2 - k - 2)x = k^2 + k - 6$$\n\nFactoring the quadratic expressions on both sides yields:\n\n$$(k - 2)(k + 1)x = (k - 2)(k + 3)$$\n\nA standard linear equation of the form $A(k)x = B(k)$ has infinitely many solutions if $A(k) = 0$ and $B(k) = 0$, no solution if $A(k) = 0$ and $B(k) \\neq 0$, and a unique solution $x = \\frac{B(k)}{A(k)}$ whenever $A(k) \\neq 0$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 1
   },
   {
@@ -59,7 +59,7 @@
     "**E.** → False\n\nSetting $p = 0$ in the rearranged linear equation $((a + b)k - b)p = a c k + b m (1 - k)$ leads to:\n\n$$0 = a c k + b m (1 - k)$$\n\n$$0 = a c k + b m - b m k$$\n\n$$(b m - a c)k = b m$$\n\nIf $b m - a c \\le 0$, then no positive solution for $k$ exists. If $b m - a c > 0$, solving for $k$ yields:\n\n$$k = \\frac{b m}{b m - a c}$$\n\nBecause $a c > 0$, the denominator $b m - a c$ is strictly smaller than the numerator $b m$, which implies:\n\n$$k = \\frac{b m}{b m - a c} > 1$$\n\nConsequently, the value of $k$ can never fall in the required interval $(0, 1)$ for any choice of positive constants, so the statement is False."
    ],
    "solution_overview": "The given relation is a linear equation in the variable $p$ with parameters $a, b, c, m > 0$ and $k \\in (0, 1)$. To solve for $p$, we multiply both sides of the equation by the common denominator $(1 - k)k$:\n\n$$a k (p - c) = b(1 - k)(p + m)$$\n\nExpanding both sides yields:\n\n$$a k p - a c k = b(1 - k)p + b m (1 - k)$$\n\nCollecting all terms containing $p$ on the left-hand side and all other terms on the right-hand side gives:\n\n$$a k p - b(1 - k)p = a c k + b m (1 - k)$$\n\n$$((a + b)k - b)p = a c k + b m (1 - k)$$\n\nProvided that $(a + b)k - b \\neq 0$, the unique solution for the balance price is:\n\n$$p = \\frac{a c k + b m (1 - k)}{(a + b)k - b}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 2
   },
   {
@@ -121,7 +121,7 @@
     "**E.** → False\n\nLet $t$ be the total elapsed time in hours to complete 1 report. Alex works for the entire duration $t$ at rate $\\frac{1}{12}$, while Blair works for $t - 2$ hours at rate $\\frac{1}{20}$.\n\nThe linear equation for the completed report is:\n\n$$\\frac{t}{12} + \\frac{t - 2}{20} = 1$$\n\nMultiplying both sides by 60 clears the denominators:\n\n$$5t + 3(t - 2) = 60$$\n\n$$5t + 3t - 6 = 60$$\n\n$$8t = 66$$\n\n$$t = \\frac{66}{8} = \\frac{33}{4}$$\n\nThe fraction of the total report completed by Alex is Alex's rate multiplied by the total time Alex worked:\n\n$$\\text{Fraction}_A = \\frac{1}{12} \\cdot \\frac{33}{4} = \\frac{33}{48} = \\frac{11}{16}$$\n\nSince $\\frac{11}{16} = 0.6875 \\neq \\frac{5}{8} = 0.625$, the fraction completed by Alex is not $\\frac{5}{8}$, so the statement is False."
    ],
    "solution_overview": "Let $r_A$ and $r_B$ denote the baseline production rates in reports per hour for Alex and Blair, respectively. From the given single-worker completion times, we have:\n\n$$r_A = \\frac{1}{12}$$\n\n$$r_B = \\frac{1}{20}$$\n\nWhen both analysts work together at their baseline rates, their combined hourly production rate $r_{\\text{joint}}$ is the sum of their individual rates:\n\n$$r_{\\text{joint}} = r_A + r_B = \\frac{1}{12} + \\frac{1}{20}$$\n\n$$r_{\\text{joint}} = \\frac{5}{60} + \\frac{3}{60} = \\frac{8}{60} = \\frac{2}{15}$$\n\nTherefore, at baseline efficiency, the two analysts together complete $\\frac{2}{15}$ of a report per hour.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 4
   },
   {
@@ -183,7 +183,7 @@
     "**E.** → True\n\nTo determine the parameter value corresponding to the root $x = -1$, we substitute $x = -1$ into the linear form $(5 - a)x = 3a + 5$.\n\n$$(5 - a)(-1) = 3a + 5$$\n\n$$-5 + a = 3a + 5$$\n\n$$-2a = 10$$\n\n$$a = -5$$\n\nBecause $a = -5 \\neq 5$, the coefficient of $x$ is $5 - (-5) = 10 \\neq 0$, ensuring $x = -1$ is the unique solution, so the statement is True."
    ],
    "solution_overview": "To solve the linear equation with rational coefficients, we clear all fractions by multiplying every term by the least common denominator of the denominators $4$, $6$, $12$, and $2$, which is $12$.\n\n$$12 \\cdot \\left(\\frac{3x - a}{4} - \\frac{2x + 1}{6}\\right) = 12 \\cdot \\left(\\frac{a x - 3}{12} + \\frac{1}{2}\\right)$$\n\n$$3(3x - a) - 2(2x + 1) = 1(a x - 3) + 6$$\n\n$$9x - 3a - 4x - 2 = ax - 3 + 6$$\n\n$$5x - 3a - 2 = ax + 3$$\n\n$$(5 - a)x = 3a + 5$$\n\nWhen $5 - a \\neq 0$, the equation possesses a unique solution given by:\n\n$$x = \\frac{3a + 5}{5 - a}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 6
   },
   {
@@ -214,7 +214,7 @@
     "**E.** → False\n\nWe evaluate the individual speeds and the overall average speed for $k = 30$.\n\nSubstituting $k = 30$ into the formula for $t$:\n\n$$t = \\frac{300 - 12(30)}{10 - 30} = \\frac{-60}{-20} = 3$$\n\nThe duration on each leg is $3$ hours. The speeds on the two legs are:\n\n$$v_1 = 30 + 20 = 50$$\n\n$$v_2 = 2(30) + 10 = 70$$\n\nThe arithmetic mean of the two leg speeds is:\n\n$$\\frac{v_1 + v_2}{2} = \\frac{50 + 70}{2} = 60$$\n\nThe overall average speed is the total distance divided by the total scheduled time:\n\n$$v_{\\text{avg}} = \\frac{360}{6} = 60$$\n\nBecause both legs have equal duration, the overall average speed equals the arithmetic mean of the leg speeds rather than being strictly lower, so the statement is False."
    ],
    "solution_overview": "The total distance covered over the two legs is the sum of the distances traveled on each individual leg. Setting the total distance equal to $360$ km yields the linear model in the unknown $t$:\n\n$$v_1 t + v_2 (6 - t) = 360$$\n\nSubstituting the expressions for $v_1$ and $v_2$:\n\n$$(k + 20)t + (2k + 10)(6 - t) = 360$$\n\nExpanding the terms on the left-hand side:\n\n$$(k + 20)t + 6(2k + 10) - (2k + 10)t = 360$$\n\n$$(k + 20 - 2k - 10)t + 12k + 60 = 360$$\n\n$$(10 - k)t + 12k + 60 = 360$$\n\nIsolating the linear term in $t$ on the left-hand side:\n\n$$(10 - k)t = 300 - 12k$$\n\nWhenever $k \\neq 10$, this linear equation has the unique algebraic solution:\n\n$$t = \\frac{300 - 12k}{10 - k} = \\frac{12(25 - k)}{10 - k}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 7
   },
   {
@@ -276,7 +276,7 @@
     "**E.** → True\n\nTo evaluate the sign of the solution on the interval $(3, 4)$, we examine the quotient that defines $x$.\n\nFor any $a \\in (3, 4)$, we have $a \\neq 3$ and $a \\neq 6$, guaranteeing a unique admissible solution given by\n\n$$x = \\frac{3(a - 4)}{a - 3}$$\n\nSince $a < 4$, the factor $a - 4$ is strictly negative:\n\n$$a - 4 < 0$$\n\nSince $a > 3$, the denominator $a - 3$ is strictly positive:\n\n$$a - 3 > 0$$\n\nThe ratio of a strictly negative numerator to a strictly positive denominator is strictly negative:\n\n$$x < 0$$\n\nTherefore, for every $a \\in (3, 4)$, a unique solution exists and is strictly negative, so the statement is True."
    ],
    "solution_overview": "We analyze the parametric equation by first identifying the domain restriction. Because the denominators are $x - 2$ and $2 - x = -(x - 2)$, the equation is defined for all $x \\in \\mathbb{R} \\setminus \\{2\\}$.\n\nWe combine the fractions on the left-hand side over the common denominator $x - 2$:\n\n$$\\frac{a x - 5}{x - 2} - \\frac{a + 1}{x - 2} = 2a - 3$$\n\n$$\\frac{a x - 5 - (a + 1)}{x - 2} = 2a - 3$$\n\n$$\\frac{a x - a - 6}{x - 2} = 2a - 3$$\n\nMultiplying both sides by $x - 2$ under the condition $x \\neq 2$ yields:\n\n$$a x - a - 6 = (2a - 3)(x - 2)$$\n\n$$a x - a - 6 = (2a - 3)x - 4a + 6$$\n\nRearranging terms to isolate $x$ on one side gives:\n\n$$a x - (2a - 3)x = -4a + 6 + a + 6$$\n\n$$(3 - a)x = 12 - 3a$$\n\n$$(a - 3)x = 3(a - 4)$$\n\nThis standard linear form $(a - 3)x = 3(a - 4)$ governs the existence, nature, and admissibility of all solutions across parameter values $a$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 9
   },
   {
@@ -338,7 +338,7 @@
     "**E.** → False\n\nThe change in Production's allocation resulting from an additive shift in total budget $\\Delta B = 40$ is found using the linear rate of change with respect to $B$.\n\nThe allocation function is $P(B) = \\frac{3k}{4}B - 15k - 6$. Evaluating the difference gives:\n\n$$\\Delta P = P(B + 40) - P(B)$$\n\n$$\\Delta P = \\left[\\frac{3k}{4}(B + 40) - 15k - 6\\right] - \\left[\\frac{3k}{4}B - 15k - 6\\right]$$\n\n$$\\Delta P = \\frac{3k}{4}(40) = 30k$$\n\nThe increase in Production's allocation is equal to $30k$, which is completely independent of the baseline budget $B$, so the statement is False."
    ],
    "solution_overview": "The total budget is partitioned into $R + P + L = B$. The funds remaining after the Research allocation are given by:\n\n$$B - R = B - \\left(\\frac{1}{4}B + 15\\right) = \\frac{3}{4}B - 15$$\n\nSubstituting this remainder into the formula for Production yields:\n\n$$P = k\\left(\\frac{3}{4}B - 15\\right) - 6 = \\frac{3k}{4}B - 15k - 6$$\n\nLogistics receives the remaining balance $L = (B - R) - P$:\n\n$$L = (1 - k)\\left(\\frac{3}{4}B - 15\\right) + 6 = \\frac{3(1 - k)}{4}B - 15(1 - k) + 6$$\n\nEach departmental share is expressed as a linear function in the single unknown $B$ with parameter $k$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 11
   },
   {
@@ -369,7 +369,7 @@
     "**E.** → False\n\nTo find when $x$ is an integer, express the rational solution by polynomial division:\n\n$$x = \\frac{2k}{k - 5} = \\frac{2(k - 5) + 10}{k - 5} = 2 + \\frac{10}{k - 5}$$\n\nFor $x$ to be an integer, the denominator $d = k - 5$ must be an integer divisor of 10, meaning $d \\in \\{1, 2, 5, 10, -1, -2, -5, -10\\}$. We evaluate $x$ for each divisor:\n\nFor $d = 1$, $k = 6$, giving $x = 2 + 10 = 12$.\n\nFor $d = 2$, $k = 7$, giving $x = 2 + 5 = 7$.\n\nFor $d = 5$, $k = 10$, giving $x = 2 + 2 = 4$.\n\nFor $d = 10$, $k = 15$, giving $x = 2 + 1 = 3$.\n\nFor $d = -1$, $k = 4$, giving $x = 2 - 10 = -8$.\n\nFor $d = -2$, $k = 3$, giving $x = 2 - 5 = -3$.\n\nFor $d = -5$, $k = 0$, giving $x = 2 - 2 = 0$.\n\nFor $d = -10$, $k = -5$, giving $x = 2 - 1 = 1$.\n\nThe strictly positive integer values of $x$ are $12, 7, 4, 3, 1$, which correspond to exactly five distinct integer values of $k$ (namely $k = -5, 6, 7, 10, 15$), not four, so the statement is False."
    ],
    "solution_overview": "The arithmetic mean of the five sensor readings is set equal to the target benchmark $T(x) = 3x + 14$. We first sum the five expressions:\n\n$$\\sum_{i=1}^{5} y_i = (2x + 15) + (4x - 5) + (3x + 10) + (x + 20) + (k(x - 2) + 30)$$\n\n$$\\sum_{i=1}^{5} y_i = (10x + 40) + kx - 2k + 30 = (10 + k)x + 70 - 2k$$\n\nSetting the arithmetic mean $\\bar{y} = \\frac{1}{5}\\sum_{i=1}^{5} y_i$ equal to $3x + 14$ gives the linear equation:\n\n$$\\frac{(10 + k)x + 70 - 2k}{5} = 3x + 14$$\n\nMultiplying both sides by 5 eliminates the denominator:\n\n$$(10 + k)x + 70 - 2k = 15x + 70$$\n\nSubtracting 70 and rearranging all terms in $x$ to the left side yields:\n\n$$(k - 5)x = 2k$$\n\nThis literal equation in the single unknown $x$ with parameter $k$ determines the existence, uniqueness, and value of the operating baseline.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 12
   },
   {
@@ -431,7 +431,7 @@
     "**E.** → False\n\nTo evaluate the effect of the price increase, first find the cost and revenue parameters at $m = 8$.\n\nAt $m = 8$, the initial unit selling price is $p = 3(8) + 8 = 32$, the fixed cost is $F = 2(8) - 6 = 10$, and the unit variable cost is $c = 8 + 4 = 12$.\n\nIncreasing the selling price by $25\\%$ gives a revised price $p_{1}$:\n\n$$p_{1} = 32 \\cdot \\left(1 + \\frac{25}{100}\\right)$$\n\n$$p_{1} = 32 \\cdot \\frac{5}{4}$$\n\n$$p_{1} = 40$$\n\nSet the new revenue function equal to the unchanged cost function:\n\n$$40x = 10 + 12x$$\n\nSubtract $12x$ from both sides:\n\n$$28x = 10$$\n\nSolve for $x$:\n\n$$x = \\frac{10}{28}$$\n\n$$x = \\frac{5}{14}$$\n\nCompare this value with the threshold $0.3 = \\frac{3}{10}$ by using a common denominator:\n\n$$\\frac{5}{14} = \\frac{25}{70}$$\n\n$$\\frac{3}{10} = \\frac{21}{70}$$\n\nSince $\\frac{25}{70} > \\frac{21}{70}$, the new break-even volume is approximately $0.357$ thousand units, which is greater than $0.3$ thousand units, so the statement is False."
    ],
    "solution_overview": "A manufacturing startup models revenue and cost in thousands of euros as linear functions of production volume $x$ (in thousands of units) and a market parameter $m \\in \\mathbb{R}$. The revenue function is $R(x) = (3m + 8)x$ and the cost function is $C(x) = (2m - 6) + (m + 4)x$.\n\nTo find the break-even production quantities, set total revenue equal to total cost:\n\n$$R(x) = C(x)$$\n\n$$(3m + 8)x = (2m - 6) + (m + 4)x$$\n\nSubtract $(m + 4)x$ from both sides to collect all terms containing the unknown $x$:\n\n$$(3m + 8 - m - 4)x = 2m - 6$$\n\n$$(2m + 4)x = 2m - 6$$\n\nFactor out the common factor $2$ from both sides:\n\n$$2(m + 2)x = 2(m - 3)$$\n\nDivide both sides by $2$:\n\n$$(m + 2)x = m - 3$$\n\nThis linear equation governs the relationship between the break-even volume $x$ and the regulatory index $m$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 14
   },
   {
@@ -493,7 +493,7 @@
     "**E.** → False\n\nRemoving the administrative offset $-2x$ alters the terminal balance equation to a form whose solvability must be re-evaluated across all real parameters.\n\nSetting the modified balance equal to the target $T = 0$:\n\n$$\\frac{\\lambda(x + 4) - 18}{3} = 0$$\n\n$$\\lambda(x + 4) - 18 = 0$$\n\n$$\\lambda(x + 4) = 18$$\n\nWhen $\\lambda = 0$, the equation becomes $0 \\cdot (x + 4) = 18$, which simplifies to $0 = 18$. This is a contradiction and yields no solution for $x$, meaning the equation does not yield a solution for every real value of $\\lambda$, so the statement is False."
    ],
    "solution_overview": "Translating the verbal sequence of operations into an algebraic expression for the net terminal balance $B(x)$ gives:\n\n$$B(x) = \\frac{\\lambda(x + 4) - 18}{3} - 2x$$\n\nSetting the terminal balance equal to the target value $T$ yields the equation:\n\n$$\\frac{\\lambda(x + 4) - 18}{3} - 2x = T$$\n\nMultiplying both sides by $3$ to clear the denominator:\n\n$$\\lambda(x + 4) - 18 - 6x = 3T$$\n\nExpanding the product and grouping the terms containing $x$ on the left-hand side:\n\n$$\\lambda x + 4\\lambda - 18 - 6x = 3T$$\n\n$$(\\lambda - 6)x + 4\\lambda - 18 = 3T$$\n\nIsolating the linear term in $x$:\n\n$$(\\lambda - 6)x = 3T - 4\\lambda + 18$$\n\nThe nature and existence of solutions depend on the coefficient $(\\lambda - 6)$ and the constant term on the right-hand side.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 16
   },
   {
@@ -524,7 +524,7 @@
     "**E.** → True\n\nWe test whether the equilibrium condition $x = k$ can be satisfied for any real number $k \\in \\mathbb{R} \\setminus \\{-1, 1\\}$.\n\nSetting $x = k$ in the solution formula yields\n\n$$k = \\frac{4k - 6}{k + 1}$$\n\n$$k(k + 1) = 4k - 6$$\n\n$$k^2 + k = 4k - 6$$\n\n$$k^2 - 3k + 6 = 0$$\n\nWe compute the discriminant of this quadratic equation:\n\n$$D = (-3)^2 - 4(1)(6)$$\n\n$$D = 9 - 24 = -15$$\n\nBecause $D < 0$, the quadratic equation has no real roots, so the statement is True."
    ],
    "solution_overview": "We begin by clearing the denominators in the given equation for any admissible parameter $k \\neq 1$. Multiplying the entire equation by the common denominator $2(k - 1)$ gives\n\n$$2(k x - 2) - (x + 3)(k - 1) = k - 7$$\n\nExpanding both terms on the left-hand side yields\n\n$$2k x - 4 - (k x - x + 3k - 3) = k - 7$$\n\n$$2k x - 4 - k x + x - 3k + 3 = k - 7$$\n\n$$(k + 1)x - 3k - 1 = k - 7$$\n\nIsolating the term containing $x$ leads to the standard linear form\n\n$$(k + 1)x = 4k - 6$$\n\nIf $k = -1$, the coefficient of $x$ vanishes while the right-hand side is $-10 \\neq 0$, producing a contradiction. For all $k \\in \\mathbb{R} \\setminus \\{-1, 1\\}$, the unique solution is given by\n\n$$x = \\frac{4k - 6}{k + 1} = \\frac{4(k + 1) - 10}{k + 1} = 4 - \\frac{10}{k + 1}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 17
   },
   {
@@ -586,7 +586,7 @@
     "**E.** → True\n\nSubstituting $S = 50000$, $N = 50000$, $K = 1000$, and $p = 25$ into the model yields a linear equation in the single unknown $d$:\n\n$$50000 = \\left(1 + \\frac{25}{100}\\right)\\left(1 - \\frac{d}{100}\\right)(50000) - 1000$$\n\n$$51000 = \\frac{5}{4} \\cdot 50000 \\cdot \\left(1 - \\frac{d}{100}\\right)$$\n\n$$51000 = 62500\\left(1 - \\frac{d}{100}\\right)$$\n\n$$1 - \\frac{d}{100} = \\frac{51000}{62500} = 0.816$$\n\n$$\\frac{d}{100} = 0.184$$\n\n$$d = 18.4$$\n\nBecause $18.4 > 18$, the required deduction rate is strictly greater than $18$, so the statement is True."
    ],
    "solution_overview": "The compensation model is a linear equation in the unknown $S$ with constant parameters $p$, $d$, and $K$:\n\n$$N = \\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{d}{100}\\right)S - K$$\n\nExpanding the composite multiplier of $S$ gives:\n\n$$\\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{d}{100}\\right) = \\frac{(100 + p)(100 - d)}{10000} = 1 + \\frac{p - d - \\frac{pd}{100}}{100}$$\n\nSetting $N = S$ yields the standard form of a linear equation in one variable:\n\n$$\\left[1 - \\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{d}{100}\\right)\\right]S = -K$$\n\nThe existence and uniqueness of solutions depend on whether the coefficient of $S$ vanishes and whether the constant term $-K$ is zero.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 19
   },
   {
@@ -648,7 +648,7 @@
     "**E.** → True\n\nSetting $a = 3$ and demanding that the solution equals $x = 3$ gives the equation:\n\n$$5(3 - 1)(3) = 2b + 25$$\n\n$$5(2)(3) = 2b + 25$$\n\n$$30 = 2b + 25$$\n\nSubtracting $25$ from both sides yields:\n\n$$2b = 5$$\n\n$$b = 2.5$$\n\nSince $2.5 > 2$, the required parameter value is indeed strictly greater than $2$, so the statement is True."
    ],
    "solution_overview": "We begin by clearing all decimal coefficients from the given linear equation. Multiplying every term on both sides by $100$ eliminates the decimals completely:\n\n$$25(a x - 4) - 15(2x + 5) = 5(x - 10) + 10(b - x)$$\n\nDividing both sides by the common factor $5$ simplifies the integer coefficients:\n\n$$5(a x - 4) - 3(2x + 5) = (x - 10) + 2(b - x)$$\n\nExpanding the brackets on both sides gives:\n\n$$5a x - 20 - 6x - 15 = x - 10 + 2b - 2x$$\n\nCombining like terms on each side yields:\n\n$$(5a - 6)x - 35 = -x + 2b - 10$$\n\nCollecting all terms containing $x$ on the left-hand side and moving constant terms to the right-hand side leads to:\n\n$$(5a - 5)x = 2b + 25$$\n\nFactoring the coefficient of $x$ establishes the standard form:\n\n$$5(a - 1)x = 2b + 25$$\n\nWhen $a \\neq 1$, the leading coefficient $5(a - 1)$ is non-zero, yielding the unique solution:\n\n$$x = \\frac{2b + 25}{5(a - 1)}$$\n\nWhen $a = 1$, the left-hand side becomes $0 \\cdot x = 0$, so the equation has infinitely many solutions if $2b + 25 = 0$ and no solutions if $2b + 25 \\neq 0$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 21
   },
   {
@@ -679,7 +679,7 @@
     "**E.** → True\n\nA non-negative volume distribution requires the volume of Beta to satisfy the condition that it is at least zero.\n\n$$96 - \\frac{2}{3}k \\ge 0$$\n\n$$96 \\ge \\frac{2}{3}k$$\n\n$$k \\le 144$$\n\nIf $k > 144$, the volume assigned to Beta is strictly negative, which violates the requirement of non-negative volumes for all hubs, so the statement is True."
    ],
    "solution_overview": "Let $x$ denote the volume handled by Alpha in tons. In terms of $x$ and the parameter $k$, the volumes allocated to Beta and Gamma are expressed as:\n\n$$\\text{Beta} = 3x - 12$$\n\n$$\\text{Gamma} = \\frac{1}{2}x + k$$\n\nThe total weekly volume across all three hubs is $150$ tons, which yields the linear equation in one unknown:\n\n$$x + (3x - 12) + \\left(\\frac{1}{2}x + k\\right) = 150$$\n\nCombining the linear terms in $x$ gives:\n\n$$\\frac{9}{2}x - 12 + k = 150$$\n\n$$\\frac{9}{2}x = 162 - k$$\n\n$$x = 36 - \\frac{2}{9}k$$\n\nSubstituting $x$ back into the expressions for Beta and Gamma gives their respective volumes as functions of $k$:\n\n$$\\text{Beta} = 3\\left(36 - \\frac{2}{9}k\\right) - 12 = 96 - \\frac{2}{3}k$$\n\n$$\\text{Gamma} = \\frac{1}{2}\\left(36 - \\frac{2}{9}k\\right) + k = 18 + \\frac{8}{9}k$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 22
   },
   {
@@ -741,7 +741,7 @@
     "**E.** → True\n\nThe offset perimeter condition is expressed by subtracting $P_B$ from $P_A$:\n\n$$(8x - 2a + 8) - ((6 + a)x + 4) = 6$$\n\n$$(2 - a)x - 2a + 4 = 6$$\n\n$$(2 - a)x = 2a + 2$$\n\nSubstituting $a = 2$ into this linear equation gives:\n\n$$(2 - 2)x = 2(2) + 2$$\n\n$$0 \\cdot x = 6$$\n\nBecause $0 = 6$ is a contradiction, no real value of $x$ satisfies the equation, so the statement is True."
    ],
    "solution_overview": "We express both perimeters in terms of the variable $x$ and the parameter $a$. The rectangular perimeter $P_A$ is obtained by expanding the perimeter formula:\n\n$$P_A = 2((3x - a) + (x + 4))$$\n\n$$P_A = 2(4x - a + 4)$$\n\n$$P_A = 8x - 2a + 8$$\n\nThe triangular perimeter $P_B$ is the sum of its three side lengths:\n\n$$P_B = (2x + 3) + (4x - 1) + (ax + 2)$$\n\n$$P_B = (6 + a)x + 4$$\n\nSetting $P_A = P_B$ gives the linear equation in the single unknown $x$:\n\n$$8x - 2a + 8 = (6 + a)x + 4$$\n\nSubtracting $(6 + a)x$ and $(8 - 2a)$ from both sides collects the terms:\n\n$$(8 - (6 + a))x = 4 - (8 - 2a)$$\n\n$$(2 - a)x = 2a - 4$$\n\n$$(2 - a)x = -2(2 - a)$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 24
   },
   {
@@ -803,7 +803,7 @@
     "**E.** → False\n\nSubstituting $x = y^2$ into the equation with $m = -1$ gives the biquadratic equation:\n\n$$(-1-2)(y^2)^2 + 2(-1)y^2 + (-1+3) = 0$$\n\n$$-3y^4 - 2y^2 + 2 = 0$$\n\n$$3y^4 + 2y^2 - 2 = 0$$\n\nLetting $u = y^2 \\ge 0$, we solve the corresponding quadratic equation $3u^2 + 2u - 2 = 0$:\n\n$$u = \\frac{-2 \\pm \\sqrt{2^2 - 4(3)(-2)}}{2(3)}$$\n\n$$u = \\frac{-2 \\pm \\sqrt{28}}{6}$$\n\n$$u = \\frac{-1 \\pm \\sqrt{7}}{3}$$\n\nSince $\\sqrt{7} > 1$, the root $u_1 = \\frac{-1 + \\sqrt{7}}{3}$ is positive, giving two real solutions $y = \\pm \\sqrt{u_1}$. However, $u_2 = \\frac{-1 - \\sqrt{7}}{3}$ is strictly negative and produces no real solutions for $y$.\n\nThus, the biquadratic equation has exactly two distinct real solutions rather than four, so the statement is False."
    ],
    "solution_overview": "We analyze the equation $(m-2)x^2 + 2mx + (m+3) = 0$ with coefficients $A = m-2$, $B = 2m$, and $C = m+3$.\n\nWhen $m \\neq 2$, the equation is quadratic and its discriminant is computed as follows:\n\n$$D = B^2 - 4AC$$\n\n$$D = (2m)^2 - 4(m-2)(m+3)$$\n\n$$D = 4m^2 - 4(m^2 + m - 6)$$\n\n$$D = 24 - 4m$$\n\n$$D = 4(6-m)$$\n\nThe sign of the discriminant determines the number of real roots for $m \\neq 2$: two distinct real roots if $m < 6$, exactly one double root if $m = 6$, and no real roots if $m > 6$.\n\nFor $m = 2$, the coefficient of $x^2$ vanishes and the equation reduces to a linear form:\n\n$$0 \\cdot x^2 + 4x + 5 = 0$$\n\n$$4x + 5 = 0$$\n\n$$x = -\\frac{5}{4}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 26
   },
   {
@@ -834,7 +834,7 @@
     "**E.** → True\n\nThe sum of the reciprocals is written using a common denominator.\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{x_1 + x_2}{x_1 x_2}$$\n\nSetting this expression to zero requires the numerator to be zero while the denominator is non-zero:\n\n$$x_1 + x_2 = 2m - 1 = 0$$\n\n$$m = \\frac{1}{2}$$\n\nEvaluating the product of the roots at $m = \\frac{1}{2}$:\n\n$$x_1 x_2 = \\left(\\frac{1}{2}\\right)^2 - \\frac{1}{2} - 6 = \\frac{1}{4} - \\frac{2}{4} - \\frac{24}{4} = -\\frac{25}{4}$$\n\nSince $-\\frac{25}{4} < 0$, the product is strictly negative, so the statement is True."
    ],
    "solution_overview": "A quadratic equation in standard form $a x^2 + b x + c = 0$ has coefficients $a = 1$, $b = -(2m - 1)$, and $c = m^2 - m - 6$. Its discriminant $\\Delta$ is computed as:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = [-(2m - 1)]^2 - 4(1)(m^2 - m - 6)$$\n\n$$\\Delta = 4m^2 - 4m + 1 - 4m^2 + 4m + 24$$\n\n$$\\Delta = 25$$\n\nBy Vieta's formulas, the sum and product of the roots $x_1$ and $x_2$ are given by:\n\n$$x_1 + x_2 = -\\frac{b}{a} = 2m - 1$$\n\n$$x_1 x_2 = \\frac{c}{a} = m^2 - m - 6 = (m - 3)(m + 2)$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 27
   },
   {
@@ -927,7 +927,7 @@
     "**E.** → False\n\nFor $k = 12$, the second quadratic factor becomes:\n\n$$x^2 - 4x - 12 = 0$$\n\nWe solve this by factorising:\n\n$$(x - 6)(x + 2) = 0$$\n\n$$x = 6 \\quad \\text{or} \\quad x = -2$$\n\nThe first quadratic factor yields the solutions $x = 5$ and $x = -1$. Combining these gives the full set of real solutions $\\{-2, -1, 5, 6\\}$. The largest solution in this set is $6$, which is equal to $6$ and not strictly greater than $6$, so the statement is False."
    ],
    "solution_overview": "The given fourth-degree equation can be solved by grouping terms. Treating the common expression $u = x^2 - 4x$ as a single quantity, we expand and group the terms:\n\n$$(x^2 - 4x)^2 - (k+5)(x^2 - 4x) + 5k = 0$$\n\n$$(x^2 - 4x)^2 - 5(x^2 - 4x) - k(x^2 - 4x) + 5k = 0$$\n\n$$(x^2 - 4x)(x^2 - 4x - 5) - k(x^2 - 4x - 5) = 0$$\n\n$$(x^2 - 4x - 5)(x^2 - 4x - k) = 0$$\n\nBy the zero-product property, the solutions of the equation are the solutions to the two separate quadratic equations:\n\n$$x^2 - 4x - 5 = 0$$\n\n$$x^2 - 4x - k = 0$$\n\nThe first quadratic equation factorises directly as $(x - 5)(x + 1) = 0$, giving the two fixed real solutions $x = 5$ and $x = -1$. The solutions to the second quadratic equation depend on the value of the parameter $k$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 30
   },
   {
@@ -958,7 +958,7 @@
     "**E.** → False\n\nSubstituting $k = -2$ into the auxiliary equation in $u$ gives:\n\n$$u^2 + 4u + 5 = 0$$\n\nCompleting the square in $u$ yields:\n\n$$(u + 2)^2 - 4 + 5 = 0$$\n\n$$(u + 2)^2 = -1$$\n\nBecause the square of any real number cannot be negative, there are no real values of $u$, which implies that there are no real solutions for $x$, so the statement is False."
    ],
    "solution_overview": "We substitute $u = x^2 \\ge 0$ into the given biquadratic equation to obtain the auxiliary quadratic equation:\n\n$$u^2 - 2k u + (k^2 - 2k - 3) = 0$$\n\nThe discriminant of this quadratic in $u$ is given by:\n\n$$\\Delta_u = (-2k)^2 - 4(1)(k^2 - 2k - 3)$$\n\n$$\\Delta_u = 4k^2 - 4k^2 + 8k + 12 = 4(2k + 3)$$\n\nBy Vieta's formulas, the sum and product of the roots $u_1$ and $u_2$ are:\n\n$$S = u_1 + u_2 = 2k$$\n\n$$P = u_1 u_2 = k^2 - 2k - 3 = (k - 3)(k + 1)$$\n\nEach strictly positive root $u > 0$ generates two distinct real solutions $x = \\pm\\sqrt{u}$, a root $u = 0$ generates one real solution $x = 0$, and any negative root $u < 0$ produces no real solutions for $x$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 31
   },
   {
@@ -989,7 +989,7 @@
     "**E.** → False\n\nTo find the locus of the vertex as $k$ varies, we eliminate the parameter $k$ from the parametric equations of the vertex.\n\nThe coordinates of the vertex are:\n\n$$x = k + 1$$\n\n$$y = 18k - 12$$\n\nSolving the first equation for $k$ gives:\n\n$$k = x - 1$$\n\nSubstituting this result into the second equation yields:\n\n$$y = 18(x - 1) - 12$$\n\n$$y = 18x - 18 - 12$$\n\n$$y = 18x - 30$$\n\nThe vertex moves along the line $y = 18x - 30$, which differs from $y = 18x - 12$, so the statement is False."
    ],
    "solution_overview": "The operating profit is described by the quadratic function $P_k(q) = -3q^2 + 6(k+1)q - 3k^2 + 12k - 15$. To obtain the vertex form, we complete the square with respect to $q$:\n\n$$P_k(q) = -3\\left(q^2 - 2(k+1)q\\right) - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3\\left((q - (k+1))^2 - (k+1)^2\\right) - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3(q - (k+1))^2 + 3(k+1)^2 - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3(q - (k+1))^2 + 3(k^2 + 2k + 1) - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3(q - (k+1))^2 + 18k - 12$$\n\nThe vertex coordinates in the $(q, P)$-plane are therefore $(q_v, P_v) = (k+1, 18k - 12)$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 32
   },
   {
@@ -1082,7 +1082,7 @@
     "**E.** → False\n\nBy Vieta's formulas, two real roots are both strictly positive if and only if their discriminant is non-negative, their product is strictly positive, and their sum is strictly positive.\n\nThe condition on the product requires:\n\n$$x_1 x_2 = m - 5 > 0 \\implies m > 5$$\n\nThe condition on the sum requires:\n\n$$x_1 + x_2 = m - 2 > 0 \\implies m > 2$$\n\nTaking the intersection of these two inequalities gives:\n\n$$m > 5$$\n\nFor values in the range $2 < m \\le 5$, the sum is positive but the product is non-positive, meaning the roots cannot both be strictly positive. Hence the condition $m > 2$ is necessary but not sufficient, so the statement is False."
    ],
    "solution_overview": "We analyze the quadratic equation $x^2 - (m-2)x + (m-5) = 0$ with coefficients $a = 1$, $b = -(m-2)$, and $c = m-5$.\n\nThe discriminant $\\Delta$ is computed as follows:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = [-(m-2)]^2 - 4(1)(m-5)$$\n\n$$\\Delta = m^2 - 4m + 4 - 4m + 20$$\n\n$$\\Delta = m^2 - 8m + 24$$\n\nCompleting the square with respect to $m$ yields:\n\n$$\\Delta = (m-4)^2 + 8$$\n\nThe absolute difference between the roots is expressed in terms of the discriminant:\n\n$$|x_1 - x_2| = \\frac{\\sqrt{\\Delta}}{|a|} = \\sqrt{(m-4)^2 + 8}$$\n\nVieta's formulas provide the sum and product of the roots:\n\n$$x_1 + x_2 = -\\frac{b}{a} = m - 2$$\n\n$$x_1 x_2 = \\frac{c}{a} = m - 5$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 35
   },
   {
@@ -1113,7 +1113,7 @@
     "**E.** → True\n\nUsing the substitution $u = y^2 \\ge 0$, the biquadratic equation becomes $2u^2 - (k + 2)u + (k - 1) = 0$, whose roots are $u_1 = x_1$ and $u_2 = x_2$.\n\nWhen $k > 1$, the product and sum of the roots satisfy:\n\n$$x_1 x_2 = \\frac{k - 1}{2} > 0$$\n\n$$x_1 + x_2 = \\frac{k + 2}{2} > \\frac{3}{2} > 0$$\n\nBecause their product and sum are both strictly positive, both roots $x_1$ and $x_2$ are strictly positive real numbers. Since $\\Delta > 0$, they are also distinct ($x_1 \\neq x_2$).\n\nEach positive value $x_i$ produces two distinct real solutions $y = \\pm\\sqrt{x_i}$, giving exactly four distinct real solutions $\\pm\\sqrt{x_1}$ and $\\pm\\sqrt{x_2}$, so the statement is True."
    ],
    "solution_overview": "The given equation is a standard quadratic equation $ax^2 + bx + c = 0$ with coefficients $a = 2$, $b = -(k + 2)$, and $c = k - 1$.\n\nThe nature of its roots is governed by the discriminant:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = (-(k + 2))^2 - 4(2)(k - 1)$$\n\n$$\\Delta = k^2 + 4k + 4 - 8k + 8$$\n\n$$\\Delta = k^2 - 4k + 12$$\n\nCompleting the square yields:\n\n$$\\Delta = (k - 2)^2 + 8$$\n\nBy Vieta's formulas, the sum and product of the roots are:\n\n$$x_1 + x_2 = -\\frac{b}{a} = \\frac{k + 2}{2}$$\n\n$$x_1 x_2 = \\frac{c}{a} = \\frac{k - 1}{2}$$\n\nWhenever $k \\neq 1$, neither root is zero ($x_1 x_2 \\neq 0$), and the sum of the reciprocals is given by:\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{x_1 + x_2}{x_1 x_2} = \\frac{\\frac{k + 2}{2}}{\\frac{k - 1}{2}} = \\frac{k + 2}{k - 1}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 36
   },
   {
@@ -1144,7 +1144,7 @@
     "**E.** → False\n\nThe biquadratic equation is $-2(u^2)^2 + 12(u^2) - 7 = 0$. Substituting $x = u^2$ yields the original quadratic equation $2x^2 - 12x + 7 = 0$.\n\nThe two roots for $x$ are $x_1 = 3 - \\frac{\\sqrt{22}}{2}$ and $x_2 = 3 + \\frac{\\sqrt{22}}{2}$.\n\nSince $22 < 25$, we have $\\sqrt{22} < 5$, which implies:\n\n$$\\frac{\\sqrt{22}}{2} < 2.5$$\n\nThis confirms that the smaller root is strictly positive:\n\n$$x_1 = 3 - \\frac{\\sqrt{22}}{2} > 3 - 2.5 = 0.5 > 0$$\n\nBecause both $x_1 > 0$ and $x_2 > 0$, each positive root $x$ produces two distinct real solutions for $u$ via $u = \\pm\\sqrt{x}$, resulting in a total of $2 + 2 = 4$ distinct real solutions, so the statement is False."
    ],
    "solution_overview": "The break-even levels satisfy the quadratic equation $\\Pi(x) = 0$, which is written in standard form by dividing $-2x^2 + 12x - 7 = 0$ by $-1$:\n\n$$2x^2 - 12x + 7 = 0$$\n\nApplying the quadratic formula with $a = 2$, $b = -12$, and $c = 7$, we compute the discriminant:\n\n$$\\Delta = (-12)^2 - 4(2)(7) = 144 - 56 = 88$$\n\nThe roots are therefore irrational:\n\n$$x = \\frac{12 \\pm \\sqrt{88}}{4} = 3 \\pm \\frac{\\sqrt{22}}{2}$$\n\nHence, the two distinct break-even points are $x_1 = 3 - \\frac{\\sqrt{22}}{2}$ and $x_2 = 3 + \\frac{\\sqrt{22}}{2}$. Using Vieta's formulas directly on $2x^2 - 12x + 7 = 0$, the sum and product of the roots are:\n\n$$x_1 + x_2 = -\\frac{-12}{2} = 6$$\n\n$$x_1 x_2 = \\frac{7}{2}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 37
   },
   {
@@ -1237,7 +1237,7 @@
     "**E.** → True\n\nThe data tier revenue function $T(p) = 36p^2 - p^4$ can be written as a quadratic in the variable $u = p^2$:\n\n$$T(u) = -u^2 + 36u$$\n\nCompleting the square with respect to $u$ gives:\n\n$$T(u) = -(u^2 - 36u)$$\n\n$$T(u) = -\\left((u - 18)^2 - 324\\right)$$\n\n$$T(u) = -(u - 18)^2 + 324$$\n\nBecause $-(u - 18)^2 \\le 0$ for all real $u$, the maximum revenue is $324$ thousand euros, occurring when $u = 18$. Substituting back $p^2 = 18$ with $p > 0$ yields:\n\n$$p = \\sqrt{18} = 3\\sqrt{2}$$\n\nThus, the maximum revenue of $324$ thousand euros is attained at the unique positive price $p = 3\\sqrt{2}$, so the statement is True."
    ],
    "solution_overview": "The standard revenue function is quadratic in price $p$:\n\n$$R(p) = -3p^2 + 120p$$\n\nFactoring out the leading coefficient and completing the square yields:\n\n$$R(p) = -3(p^2 - 40p)$$\n\n$$R(p) = -3\\left((p - 20)^2 - 400\\right)$$\n\n$$R(p) = -3(p - 20)^2 + 1200$$\n\nTarget revenue equations of the form $R(p) = M$ or $R_k(p) = M$ rearrange into standard quadratic equations $a p^2 + b p + c = 0$, whose root properties are analyzed using the discriminant $\\Delta = b^2 - 4ac$ and Vieta's formulas. The data tier function $T(p) = 36p^2 - p^4$ is quadratic in the transformed variable $u = p^2$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 40
   },
   {
@@ -1268,7 +1268,7 @@
     "**E.** → True\n\nTo find the minimum value of $P_k(x)$, we complete the square with respect to $x$:\n\n$$P_k(x) = x^2 - (2k-1)x - (k+3)$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\left(\\frac{2k-1}{2}\\right)^2 - (k+3)$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\frac{4k^2 - 4k + 1 + 4k + 12}{4}$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\frac{4k^2 + 13}{4}$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\left(k^2 + \\frac{13}{4}\\right)$$\n\nBecause the squared term is non-negative for all real $x$ and vanishes when $x = \\frac{2k-1}{2}$, the absolute minimum value is $-\\left(k^2 + \\frac{13}{4}\\right)$, so the statement is True."
    ],
    "solution_overview": "We analyze the quadratic polynomial $P_k(x) = x^2 - (2k-1)x - (k+3)$ with coefficients $a = 1$, $b = -(2k-1)$, and $c = -(k+3)$.\n\nThe discriminant of the quadratic equation $P_k(x) = 0$ is given by:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = (-(2k-1))^2 - 4(1)(-(k+3))$$\n\n$$\\Delta = 4k^2 - 4k + 1 + 4k + 12$$\n\n$$\\Delta = 4k^2 + 13$$\n\nAccording to Vieta's formulas, the sum and product of the roots $x_1$ and $x_2$ satisfy:\n\n$$x_1 + x_2 = -\\frac{b}{a} = 2k - 1$$\n\n$$x_1 x_2 = \\frac{c}{a} = -(k+3)$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 41
   },
   {
@@ -1299,7 +1299,7 @@
     "**E.** → False\n\nFor the equation $(x-1)(x-2)(x-4)(x-5) = c$ with $c = -3$, the intermediate quadratic in $u$ is:\n\n$$u^2 + 13u + 40 - (-3) = 0$$\n\n$$u^2 + 13u + 43 = 0$$\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta_u = 13^2 - 4(1)(43) = 169 - 172 = -3 < 0$$\n\nBecause $\\Delta_u < 0$, there are no real values for $u$. Consequently, there can be no real solutions for $x$, so the statement is False."
    ],
    "solution_overview": "To solve the equation $(x-1)(x-2)(x-4)(x-5) = 40$, we pair the factors whose constant terms have equal sums: $(x-1)(x-5)$ and $(x-2)(x-4)$.\n\nExpanding each pair gives:\n\n$$(x-1)(x-5) = x^2 - 6x + 5$$\n\n$$(x-2)(x-4) = x^2 - 6x + 8$$\n\nIntroducing the substitution $u = x^2 - 6x$, the equation becomes:\n\n$$(u+5)(u+8) = 40$$\n\n$$u^2 + 13u + 40 = 40$$\n\n$$u(u + 13) = 0$$\n\nThis yields two values for $u$, namely $u = 0$ and $u = -13$.\n\nFor $u = 0$, we have $x^2 - 6x = 0$, which gives the real solutions $x = 0$ and $x = 6$.\n\nFor $u = -13$, we have $x^2 - 6x + 13 = 0$, which has no real solutions because its discriminant is negative.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 42
   },
   {
@@ -1392,7 +1392,7 @@
     "**E.** → False\n\nThe three break-even volumes are $x_1 = 2$, $x_2 = \\frac{3 - \\sqrt{7}}{2}$, and $x_3 = \\frac{3 + \\sqrt{7}}{2}$.\n\nThe largest of these roots is $x_3$. We bound this value by bounding $\\sqrt{7}$:\n\n$$\\sqrt{7} < \\sqrt{9} = 3$$\n\nSubstituting this upper bound into the expression for $x_3$ gives:\n\n$$x_3 = \\frac{3 + \\sqrt{7}}{2} < \\frac{3 + 3}{2} = 3$$\n\nTherefore, the largest break-even production level is strictly less than $3$ thousand units, so the statement is False."
    ],
    "solution_overview": "A firm analyzes its break-even production points by solving the cubic equation $\\Pi(x) = 0$, where $\\Pi(x) = 2x^3 - 10x^2 + 13x - 2$.\n\nAccording to the rational root theorem, any rational root $x = \\frac{p}{q}$ in lowest terms must have $p$ dividing the constant term $-2$ and $q$ dividing the leading coefficient $2$. The integer divisors are $p \\in \\{\\pm 1, \\pm 2\\}$ and $q \\in \\{1, 2\\}$, yielding the candidate set $\\{\\pm 1, \\pm 2, \\pm \\frac{1}{2}\\}$.\n\nEvaluating the polynomial at $x = 2$ gives:\n\n$$\\Pi(2) = 2(2)^3 - 10(2)^2 + 13(2) - 2$$\n\n$$\\Pi(2) = 16 - 40 + 26 - 2 = 0$$\n\nPerforming polynomial division of $\\Pi(x)$ by $(x - 2)$ factors the cubic into a linear and a quadratic component:\n\n$$\\frac{2x^3 - 10x^2 + 13x - 2}{x - 2} = 2x^2 - 6x + 1$$\n\nThus, the break-even condition factors completely as:\n\n$$\\Pi(x) = (x - 2)(2x^2 - 6x + 1) = 0$$\n\nThe remaining roots satisfy the quadratic equation $2x^2 - 6x + 1 = 0$, solved via the quadratic formula:\n\n$$x = \\frac{-(-6) \\pm \\sqrt{(-6)^2 - 4(2)(1)}}{2(2)}$$\n\n$$x = \\frac{6 \\pm \\sqrt{28}}{4} = \\frac{3 \\pm \\sqrt{7}}{2}$$\n\nBecause $2 < \\sqrt{7} < 3$, both roots $x_2 = \\frac{3 - \\sqrt{7}}{2} \\approx 0.177$ and $x_3 = \\frac{3 + \\sqrt{7}}{2} \\approx 2.823$ are positive real numbers.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 45
   },
   {
@@ -1423,7 +1423,7 @@
     "**E.** → True\n\nApplying the substitution $x = z^2$ transforms the biquadratic equation $2z^4 - 10z^2 + k = 0$ into the quadratic equation $2x^2 - 10x + k = 0$.\n\nEach strictly positive real root $x > 0$ yields two distinct real solutions for $z$, namely $z = \\pm\\sqrt{x}$. A negative root $x < 0$ yields no real solutions for $z$, and $x = 0$ yields only one solution $z = 0$.\n\nThus, the biquadratic equation has four distinct real solutions if and only if the quadratic equation in $x$ has two distinct strictly positive real roots $x_1 > 0$ and $x_2 > 0$ with $x_1 \\neq x_2$. This requires $\\Delta > 0$, $x_1 + x_2 > 0$, and $x_1 x_2 > 0$:\n\n$$k < \\frac{25}{2} \\quad \\text{and} \\quad k > 0$$\n\nThis simplifies directly to $0 < k < \\frac{25}{2}$, so the statement is True."
    ],
    "solution_overview": "We consider the quadratic equation $2x^2 - 10x + k = 0$ with coefficients $a = 2$, $b = -10$, and $c = k$.\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = b^2 - 4ac = (-10)^2 - 4(2)(k) = 100 - 8k$$\n\nTwo distinct real roots exist if and only if $\\Delta > 0$, which yields:\n\n$$100 - 8k > 0 \\implies k < \\frac{25}{2}$$\n\nWhen real roots $x_1$ and $x_2$ exist, Vieta's formulas give their sum and product:\n\n$$x_1 + x_2 = -\\frac{b}{a} = -\\frac{-10}{2} = 5$$\n\n$$x_1 x_2 = \\frac{c}{a} = \\frac{k}{2}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 46
   },
   {
@@ -1454,7 +1454,7 @@
     "**E.** → False\n\nA biquadratic equation can be transformed into a standard quadratic equation using a variable substitution.\n\nLet $w = u^2$. Since $u$ is a real variable, $w$ must be non-negative ($w \\ge 0$).\n\nSubstituting $w$ into $u^4 + u^2 + (1-p) = 0$ yields:\n\n$$w^2 + w + (1 - p) = 0$$\n\nBy Vieta's formulas, the sum of the roots $w_1$ and $w_2$ is:\n\n$$w_1 + w_2 = -1$$\n\nFor the original equation in $u$ to have four distinct real solutions, the quadratic in $w$ would need two distinct strictly positive roots $w_1 > 0$ and $w_2 > 0$, which would require $w_1 + w_2 > 0$.\n\nBecause the sum of the roots is fixed at $-1$, it is impossible for both roots in $w$ to be positive. When $p > 1$, the product of roots $w_1 w_2 = 1 - p < 0$ implies exactly one positive root $w_1 > 0$ and one negative root $w_2 < 0$.\n\nThe positive root $w_1$ yields two real solutions $u = \\pm \\sqrt{w_1}$, while the negative root yields no real solutions. Thus, the equation has exactly two distinct real solutions for $p > 1$, so the statement is False."
    ],
    "solution_overview": "The problem originates from the relation between two consecutive integers $n$ and $n+1$ with budget parameter $p$:\n\n$$n^2 + (n+1)^2 - n(n+1) = p$$\n\nExpanding each term gives:\n\n$$n^2 + n^2 + 2n + 1 - (n^2 + n) = p$$\n\n$$n^2 + n + 1 = p$$\n\n$$n^2 + n + (1 - p) = 0$$\n\nGeneralizing to a real variable $x$, the quadratic equation is $x^2 + x + (1-p) = 0$, with coefficients $a = 1$, $b = 1$, and $c = 1 - p$.\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = 1^2 - 4(1)(1 - p)$$\n\n$$\\Delta = 4p - 3$$\n\nBy Vieta's formulas, any two roots $x_1, x_2$ satisfy:\n\n$$x_1 + x_2 = -1$$\n\n$$x_1 x_2 = 1 - p$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 47
   },
   {
@@ -1547,7 +1547,7 @@
     "**E.** → True\n\nA quadratic equation $a w^2 + b w + c = 0$ has no real solutions if and only if its discriminant $\\Delta = b^2 - 4ac$ is strictly negative.\n\nFor the equation $6w^2 + 210w + k = 0$, we have $a = 6$, $b = 210$, and $c = k$.\n\nWe set up the inequality for the discriminant:\n\n$$\\Delta = (210)^2 - 4(6)(k) < 0$$\n\n$$44100 - 24k < 0$$\n\n$$24k > 44100$$\n\n$$k > \\frac{44100}{24} = \\frac{3675}{2}$$\n\nTherefore, the equation has no real solutions if and only if $k > \\frac{3675}{2}$, so the statement is True."
    ],
    "solution_overview": "The total area of the compound border $A(w)$ is the sum of the walkway area and the lawn area. The building has dimensions $50\\text{ m} \\times 30\\text{ m}$, with area $1500\\text{ m}^2$. The outer boundary of the walkway around the building has dimensions $(50 + 2w)\\text{ m} \\times (30 + 2w)\\text{ m}$. The walkway area is obtained by subtracting the building area from the total enclosed area:\n\n$$A_{\\text{walkway}}(w) = (50 + 2w)(30 + 2w) - 1500$$\n\n$$A_{\\text{walkway}}(w) = 4w^2 + 160w$$\n\nThe lawn has width $w$ and length equal to the outer side $(50 + 2w)$:\n\n$$A_{\\text{lawn}}(w) = w(50 + 2w) = 2w^2 + 50w$$\n\nSumming both components yields the total compound border area:\n\n$$A(w) = (4w^2 + 160w) + (2w^2 + 50w)$$\n\n$$A(w) = 6w^2 + 210w$$\n\nSetting $A(w) = A_0$ leads to the standard quadratic equation:\n\n$$6w^2 + 210w - A_0 = 0$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 50
   },
   {
@@ -1578,7 +1578,7 @@
     "**E.** → False\n\nWe replace the right-hand side numerator $6$ with $8$ and solve the resulting rational equation:\n\n$$\\frac{x}{x - 2} - \\frac{1}{x + 1} = \\frac{8}{x^2 - x - 2}$$\n\nMultiplying both sides by the common denominator $(x - 2)(x + 1)$ on $D = \\mathbb{R} \\setminus \\{-1, 2\\}$ yields:\n\n$$x(x + 1) - (x - 2) = 8$$\n\n$$x^2 + 2 = 8$$\n\n$$x^2 = 6$$\n\n$$x = \\sqrt{6} \\quad \\text{or} \\quad x = -\\sqrt{6}$$\n\nNeither $\\sqrt{6}$ nor $-\\sqrt{6}$ equals $-1$ or $2$, so both values belong to $D$. The modified equation therefore has two distinct real solutions rather than none, so the statement is False."
    ],
    "solution_overview": "To determine the solutions of the rational equation, we first establish its maximal domain of definition $D \\subseteq \\mathbb{R}$ by identifying all values of $x$ that make any denominator vanish. Factoring the quadratic denominator gives:\n\n$$x^2 - x - 2 = (x - 2)(x + 1)$$\n\nHence, the denominators vanish at $x = 2$ and $x = -1$, meaning the domain is:\n\n$$D = \\mathbb{R} \\setminus \\{-1, 2\\}$$\n\nOn this domain, we clear the denominators by multiplying both sides by the common denominator $(x - 2)(x + 1)$:\n\n$$x(x + 1) - 1(x - 2) = 6$$\n\nExpanding and simplifying the left-hand side gives:\n\n$$x^2 + x - x + 2 = 6$$\n\n$$x^2 + 2 = 6$$\n\n$$x^2 - 4 = 0$$\n\n$$(x - 2)(x + 2) = 0$$\n\nThe algebraic roots of this cleared polynomial equation are $x = 2$ and $x = -2$. Since $x = 2$ is excluded from the domain $D$, it is an extraneous root. Thus, the only valid solution is $x = -2$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 51
   },
   {
@@ -1640,7 +1640,7 @@
     "**E.** → False\n\nA candidate value is a valid solution only if it satisfies both the radicand condition and the sign condition of the isolated square root expression.\n\nSubstituting $x = 6$ into the original equation gives:\n\n$$\\sqrt{5(6) + 19} - 6 = \\sqrt{49} - 6 = 7 - 6 = 1$$\n\nThus, $x = 6$ is the unique real solution. While $6$ is strictly greater than $5$, it is an even integer rather than an odd integer, so the statement is False."
    ],
    "solution_overview": "To find the equilibrium parameter, we first isolate the radical expression on one side of the equation:\n\n$$\\sqrt{5x + 19} = x + 1$$\n\nFor the square root to be defined over the real numbers, the radicand must be non-negative, requiring $5x + 19 \\ge 0$, which gives $x \\ge -\\frac{19}{5}$. Furthermore, because the principal square root is non-negative, the right-hand side must also satisfy $x + 1 \\ge 0$, meaning $x \\ge -1$.\n\nSquaring both sides of the isolated equation yields:\n\n$$(\\sqrt{5x + 19})^2 = (x + 1)^2$$\n\n$$5x + 19 = x^2 + 2x + 1$$\n\nRearranging all terms to one side gives the quadratic equation:\n\n$$x^2 - 3x - 18 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(x - 6)(x + 3) = 0$$\n\nThis yields two algebraic candidate roots, $x = 6$ and $x = -3$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 53
   },
   {
@@ -1733,7 +1733,7 @@
     "**E.** → False\n\nThe valid real solutions to the equation are $x = 0$ and $x = 3$.\n\nThe sum of these valid solutions is:\n\n$$0 + 3 = 3$$\n\nThe extraneous root produced by solving the negative branch equation $-(x^2 - 5x + 6) = 6 - 2x$ is $x = 4$.\n\nComparing the sum of valid solutions with this extraneous root gives:\n\n$$3 < 4$$\n\nThe sum is strictly less than $4$, not strictly greater, so the statement is False."
    ],
    "solution_overview": "To solve the equation $|x^2 - 5x + 6| = 6 - 2x$, we first observe that the left-hand side is non-negative for all real $x$. This imposes the domain condition $6 - 2x \\ge 0$, which gives $x \\le 3$.\n\nThe quadratic expression factors as $x^2 - 5x + 6 = (x - 2)(x - 3)$, which changes sign at the partition points $x = 2$ and $x = 3$. We examine the cases based on the sign of the inner quadratic:\n\nFor $x \\in (-\\infty, 2] \\cup [3, \\infty)$, the quadratic is non-negative:\n\n$$x^2 - 5x + 6 = 6 - 2x$$\n\n$$x^2 - 3x = 0$$\n\n$$x(x - 3) = 0$$\n\nThis yields $x = 0$ and $x = 3$. Both satisfy the condition $x \\le 3$.\n\nFor $x \\in (2, 3)$, the quadratic is strictly negative:\n\n$$-(x^2 - 5x + 6) = 6 - 2x$$\n\n$$x^2 - 7x + 12 = 0$$\n\n$$(x - 3)(x - 4) = 0$$\n\nThis gives $x = 3$ and $x = 4$, neither of which lies inside the open interval $(2, 3)$. Thus, the set of all valid real solutions is $S = \\{0, 3\\}$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 56
   },
   {
@@ -1795,7 +1795,7 @@
     "**E.** → True\n\nTo find the solution for a specific parameter value, we substitute $a = 1$ into the linear equation and check admissibility.\n\nSubstituting $a = 1$ into $(2 - a)x = 2a + 7$ gives:\n\n$$(2 - 1)x = 2(1) + 7$$\n\n$$1 \\cdot x = 9$$\n\n$$x = 9$$\n\nSince $9 \\notin \\{-2, 3\\}$, $x = 9$ belongs to the domain and is the unique solution of the equation. The number $9$ is an odd integer, so the statement is True."
    ],
    "solution_overview": "We analyze the rational equation with parameter $a \\in \\mathbb{R}$. We first factor the quadratic denominator on the right-hand side:\n\n$$x^2 - x - 6 = (x - 3)(x + 2)$$\n\nHence, the common denominator of all terms is $(x - 3)(x + 2)$. The maximal domain of definition $D$ requires that no denominator equals zero:\n\n$$D = \\mathbb{R} \\setminus \\{-2, 3\\}$$\n\nMultiplying both sides of the equation by $(x - 3)(x + 2)$ clears the denominators:\n\n$$(2x - a)(x + 2) + (x + 1)(x - 3) = 3x^2 + 4$$\n\nWe expand each product on the left-hand side:\n\n$$(2x^2 + 4x - ax - 2a) + (x^2 - 2x - 3) = 3x^2 + 4$$\n\nCombining like terms on the left gives:\n\n$$3x^2 + (2 - a)x - (2a + 3) = 3x^2 + 4$$\n\nSubtracting $3x^2$ from both sides eliminates the quadratic terms entirely, reducing the problem to the linear equation:\n\n$$(2 - a)x = 2a + 7$$\n\nWhen $a \\neq 2$, solving for $x$ yields the candidate root:\n\n$$x = \\frac{2a + 7}{2 - a}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 58
   },
   {
@@ -1888,7 +1888,7 @@
     "**E.** → True\n\nUsing the substitution $u = \\sqrt[3]{x + 6}$ and $v = \\sqrt[3]{x - 1}$, the given equation imposes $u - v = 1$ while the difference of cubes gives $u^3 - v^3 = 7$.\n\nApplying the cubic identity:\n\n$$(u - v)^3 = u^3 - v^3 - 3uv(u - v)$$\n\n$$1 = 7 - 3uv(1)$$\n\n$$3uv = 6$$\n\n$$uv = 2$$\n\nThis product is invariant across all solution pairs, so the statement is True."
    ],
    "solution_overview": "We analyze the radical equation over the real numbers:\n\n$$\\sqrt[3]{x + 6} - \\sqrt[3]{x - 1} = 1$$\n\nBecause odd roots are well-defined for all real radicands, the equation has the full real line $\\mathbb{R}$ as its domain of definition.\n\nTo solve the equation systematically, let $u = \\sqrt[3]{x + 6}$ and $v = \\sqrt[3]{x - 1}$. The equation and the definitions of $u$ and $v$ yield the system:\n\n$$u - v = 1$$\n\n$$u^3 - v^3 = (x + 6) - (x - 1) = 7$$\n\nWe expand $(u - v)^3$ using the cubic algebraic identity:\n\n$$(u - v)^3 = u^3 - v^3 - 3uv(u - v)$$\n\nSubstituting $u - v = 1$ and $u^3 - v^3 = 7$ gives:\n\n$$1^3 = 7 - 3uv(1)$$\n\n$$3uv = 6$$\n\n$$uv = 2$$\n\nSubstituting $v = u - 1$ into $uv = 2$ produces a quadratic equation in $u$:\n\n$$u(u - 1) = 2$$\n\n$$u^2 - u - 2 = 0$$\n\n$$(u - 2)(u + 1) = 0$$\n\nThis yields two real values for $u$:\n\nFor $u = 2$:\n\n$$\\sqrt[3]{x + 6} = 2 \\implies x + 6 = 8 \\implies x_1 = 2$$\n\nFor $u = -1$:\n\n$$\\sqrt[3]{x + 6} = -1 \\implies x + 6 = -1 \\implies x_2 = -7$$\n\nBoth values satisfy the original equation, giving the solution set $S = \\{-7, 2\\}$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 61
   },
   {
@@ -1950,7 +1950,7 @@
     "**E.** → True\n\nWe define the difference function $f(x) = |2x - 4| + |x + 1| - (x - 2)$ across the real line.\n\nOn $(-\\infty, -1]$, we have:\n\n$$f(x) = (-2x + 4) + (-x - 1) - x + 2 = -4x + 5$$\n\nThis linear segment is strictly decreasing and reaches its minimum at the boundary $x = -1$ with $f(-1) = 9$.\n\nOn $[-1, 2]$, we have:\n\n$$f(x) = (-2x + 4) + (x + 1) - x + 2 = -2x + 7$$\n\nThis segment decreases from $f(-1) = 9$ to $f(2) = 3$.\n\nOn $[2, \\infty)$, we have:\n\n$$f(x) = (2x - 4) + (x + 1) - x + 2 = 2x - 1$$\n\nThis segment increases from $f(2) = 3$ toward infinity. Consequently, the minimum value of $f(x)$ across all real numbers is $3$, meaning $|2x - 4| + |x + 1| \\ge x - 2 + 3 > x - 2$ everywhere, so the statement is True."
    ],
    "solution_overview": "To solve the equation $|2x - 4| + |x + 1| = x - 2$, we identify the critical points where the arguments of the absolute values change signs, namely $x = -1$ and $x = 2$. These divide $\\mathbb{R}$ into three disjoint regions: $(-\\infty, -1)$, $[-1, 2)$, and $[2, \\infty)$.\n\nFor $x < -1$, both arguments are negative, giving $|2x - 4| = -(2x - 4) = -2x + 4$ and $|x + 1| = -(x + 1) = -x - 1$. The equation becomes:\n\n$$(-2x + 4) + (-x - 1) = x - 2$$\n\n$$-3x + 3 = x - 2$$\n\n$$-4x = -5$$\n\n$$x = \\frac{5}{4}$$\n\nFor $-1 \\le x < 2$, the argument $x + 1 \\ge 0$ while $2x - 4 < 0$, giving $|2x - 4| = -2x + 4$ and $|x + 1| = x + 1$. The equation becomes:\n\n$$(-2x + 4) + (x + 1) = x - 2$$\n\n$$-x + 5 = x - 2$$\n\n$$-2x = -7$$\n\n$$x = \\frac{7}{2}$$\n\nFor $x \\ge 2$, both arguments are non-negative, giving $|2x - 4| = 2x - 4$ and $|x + 1| = x + 1$. The equation becomes:\n\n$$(2x - 4) + (x + 1) = x - 2$$\n\n$$3x - 3 = x - 2$$\n\n$$2x = 1$$\n\n$$x = \\frac{1}{2}$$\n\nEvery candidate root falls outside its respective validity domain, meaning that no real number satisfies the equation.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 63
   },
   {
@@ -2043,7 +2043,7 @@
     "**E.** → False\n\nWe check whether any element of the solution set belongs to the open interval $(-\\infty, 2)$.\n\nThe solutions to the equation are $x = 1$ and $x = 3$.\n\nTesting $x = 1$ against the interval gives:\n\n$$1 \\in (-\\infty, 2)$$\n\nThus, the interval contains the real solution $x = 1$, so the statement is False."
    ],
    "solution_overview": "We analyze the real equation $\\frac{3}{(x-2)^2} - \\frac{2}{|x-2|} = 1$. The expression is defined for all $x \\in \\mathbb{R}$ such that $x \\neq 2$, so the domain is $D = \\mathbb{R} \\setminus \\{2\\}$.\n\nUsing the identity $(x-2)^2 = |x-2|^2$, we introduce the substitution $u = |x-2|$, where $u > 0$ for all $x \\in D$:\n\n$$\\frac{3}{u^2} - \\frac{2}{u} = 1$$\n\nMultiplying both sides by $u^2$ gives:\n\n$$3 - 2u = u^2$$\n\n$$u^2 + 2u - 3 = 0$$\n\n$$(u+3)(u-1) = 0$$\n\nThe algebraic solutions for $u$ are $u = 1$ and $u = -3$. Because $u = |x-2| > 0$, the root $u = -3$ is extraneous and must be discarded. Setting $u = 1$ yields $|x-2| = 1$, which gives $x = 3$ or $x = 1$. Both values lie in the domain.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 66
   },
   {
@@ -2105,7 +2105,7 @@
     "**E.** → False\n\nWe calculate the sum of the two valid real solutions $x_1 = 3$ and $x_2 = -1 - \\sqrt{6}$:\n\n$$\\Sigma = 3 + (-1 - \\sqrt{6}) = 2 - \\sqrt{6}$$\n\nBecause $\\sqrt{6}$ is an irrational number, the difference $2 - \\sqrt{6}$ is also irrational, so the statement is False."
    ],
    "solution_overview": "We analyze the equation $\\frac{|2x - 1| + 3}{x + 1} = x - 1$. The expression is defined on the domain $D = \\mathbb{R} \\setminus \\{-1\\}$. Multiplying both sides by $x + 1$ yields\n\n$$|2x - 1| + 3 = (x - 1)(x + 1)$$\n\n$$|2x - 1| + 3 = x^2 - 1$$\n\n$$|2x - 1| = x^2 - 4$$\n\nWe solve this by case analysis on the sign of $2x - 1$.\n\nFor $x \\ge \\frac{1}{2}$, we have $|2x - 1| = 2x - 1$:\n\n$$2x - 1 = x^2 - 4$$\n\n$$x^2 - 2x - 3 = 0$$\n\n$$(x - 3)(x + 1) = 0$$\n\nThis produces candidate values $x = 3$ and $x = -1$. The value $x = 3$ satisfies $3 \\ge \\frac{1}{2}$ and $3 \\neq -1$, so it is a valid solution. The candidate $x = -1$ fails the branch requirement $x \\ge \\frac{1}{2}$ and is also excluded by the domain restriction $x \\neq -1$.\n\nFor $x < \\frac{1}{2}$, we have $|2x - 1| = -(2x - 1) = 1 - 2x$:\n\n$$1 - 2x = x^2 - 4$$\n\n$$x^2 + 2x - 5 = 0$$\n\nApplying the quadratic formula yields\n\n$$x = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(-5)}}{2} = \\frac{-2 \\pm \\sqrt{24}}{2} = -1 \\pm \\sqrt{6}$$\n\nSince $\\sqrt{6} > 2.44$, the candidate $x_1 = -1 + \\sqrt{6} > 1.44$ violates $x < \\frac{1}{2}$ and is extraneous. The candidate $x_2 = -1 - \\sqrt{6} < -3.44$ satisfies $-1 - \\sqrt{6} < \\frac{1}{2}$ and $-1 - \\sqrt{6} \\neq -1$, making it a valid solution.\n\nThe complete solution set is therefore $S = \\{3, -1 - \\sqrt{6}\\}$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 68
   },
   {
@@ -2198,7 +2198,7 @@
     "**E.** → False\n\nTo check whether a negative solution must exist for every positive constant $c > 0$, we test the case where $c = \\frac{1}{2}$.\n\nFor $c = \\frac{1}{2}$, the solutions were found to be $x = 2$ and $x = 7$.\n\nBoth solutions are strictly positive numbers:\n\n$$2 > 0 \\quad \\text{and} \\quad 7 > 0$$\n\nBecause $c = \\frac{1}{2}$ is a positive real parameter that yields no negative solutions, the property does not hold for every $c > 0$, so the statement is False."
    ],
    "solution_overview": "The base model is a rational equation with two reciprocal terms:\n\n$$\\frac{1}{x - 1} + \\frac{1}{x - 4} = \\frac{1}{2}$$\n\nThe domain of this equation requires all denominators to be non-zero, which gives the restriction $x \\in \\mathbb{R} \\setminus \\{1, 4\\}$. Clearing fractions by multiplying both sides by the least common denominator $2(x - 1)(x - 4)$ gives:\n\n$$2(x - 4) + 2(x - 1) = (x - 1)(x - 4)$$\n\n$$2x - 8 + 2x - 2 = x^2 - 5x + 4$$\n\n$$4x - 10 = x^2 - 5x + 4$$\n\n$$x^2 - 9x + 14 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(x - 2)(x - 7) = 0$$\n\nThis gives candidate roots $x = 2$ and $x = 7$. Both values lie in the admissible domain $\\mathbb{R} \\setminus \\{1, 4\\}$, so the base equation has exactly two valid real solutions, $x_1 = 2$ and $x_2 = 7$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 71
   },
   {
@@ -2260,7 +2260,7 @@
     "**E.** → False\n\nUsing the substitution $u = \\sqrt{x + 1} \\ge 0$, we have $u^2 = x + 1$, which gives $x = u^2 - 1$.\n\nSubstituting this into $x - 1 = \\sqrt{x + 1}$ yields:\n\n$$(u^2 - 1) - 1 = u$$\n\n$$u^2 - u - 2 = 0$$\n\n$$(u - 2)(u + 1) = 0$$\n\nThe roots are $u = 2$ and $u = -1$.\n\nBecause $u = \\sqrt{x + 1}$ represents a principal square root, it cannot be negative ($u \\ge 0$). The negative root $u = -1$ has no real solution for $x$ and does not produce a valid solution, so the statement is False."
    ],
    "solution_overview": "We analyze the radical equation with a difference of two square roots:\n\n$$\\sqrt{5x + 1} - \\sqrt{x + 1} = 2$$\n\nFor real square roots, both radicands must be non-negative:\n\n$$5x + 1 \\ge 0 \\implies x \\ge -\\frac{1}{5}$$\n\n$$x + 1 \\ge 0 \\implies x \\ge -1$$\n\nThe intersection of these conditions defines the maximal real domain $D = [-\\frac{1}{5}, \\infty)$.\n\nTo solve the equation algebraically, we isolate one radical:\n\n$$\\sqrt{5x + 1} = 2 + \\sqrt{x + 1}$$\n\nSquaring both sides:\n\n$$5x + 1 = 4 + 4\\sqrt{x + 1} + (x + 1)$$\n\n$$5x + 1 = x + 5 + 4\\sqrt{x + 1}$$\n\n$$4x - 4 = 4\\sqrt{x + 1}$$\n\n$$x - 1 = \\sqrt{x + 1}$$\n\nSince the principal square root is non-negative ($\\sqrt{x + 1} \\ge 0$), any real solution must satisfy the sign restriction $x - 1 \\ge 0$, which means $x \\ge 1$. Squaring both sides again gives:\n\n$$(x - 1)^2 = x + 1$$\n\n$$x^2 - 2x + 1 = x + 1$$\n\n$$x^2 - 3x = 0$$\n\n$$x(x - 3) = 0$$\n\nThe candidate solutions are $x = 0$ and $x = 3$. Testing both in the original equation:\n\nFor $x = 0$: $\\sqrt{1} - \\sqrt{1} = 0 \\neq 2$ (extraneous root, as $0 < 1$).\n\nFor $x = 3$: $\\sqrt{16} - \\sqrt{4} = 4 - 2 = 2$ (valid solution).",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 73
   },
   {
@@ -2353,7 +2353,7 @@
     "**E.** → False\n\nTo solve $7^{x-1} = 1$, we rewrite $1$ as a power of $7$ using the zero exponent rule $7^{0} = 1$:\n\n$$7^{x-1} = 7^{0}$$\n\nEquating the exponents yields:\n\n$$x - 1 = 0$$\n\nSolving for $x$ gives:\n\n$$x = 1$$\n\nThe equation has the unique real solution $x = 1$, so the statement is False."
    ],
    "solution_overview": "An exponential equation of the form $b^{f(x)} = c$ with a positive base $b \\neq 1$ can be solved by rewriting the right-hand side as a power of the same base, $c = b^{k}$. Because the exponential function $f(u) = b^u$ is strictly monotonic on $\\mathbb{R}$, it is one-to-one, allowing the exponents to be equated directly:\n\n$$b^{f(x)} = b^{k} \\iff f(x) = k$$\n\nApplying this property transforms each exponential equation into an equivalent linear algebraic equation in $x$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 76
   },
   {
@@ -2384,7 +2384,7 @@
     "**E.** → True\n\nIn this equation, the unknown appears as the logarithmic base $x$, which must be positive and not equal to $1$. Converting to exponential form gives:\n\n$$x^4 = 81$$\n\nTaking the positive real fourth root of both sides yields:\n\n$$x = 81^{\\frac{1}{4}}$$\n\n$$x = 3$$\n\nThe resulting base $x = 3$ is smaller than $4$, so the statement is True."
    ],
    "solution_overview": "A logarithmic equation relates a base, an argument, and an exponent. For a positive base $b \\neq 1$ and a positive argument $z > 0$, the fundamental equivalence between logarithmic and exponential forms is given by:\n\n$$\\log_b(z) = y \\iff z = b^y$$\n\nEvaluating the claims requires converting each logarithmic equation into its corresponding exponential form and solving for the unknown quantity.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 77
   },
   {
@@ -2415,7 +2415,7 @@
     "**E.** → False\n\nFirst, solve $16^{x} = 8^{x+1}$ by converting both sides to base $2$.\n\n$$(2^4)^x = (2^3)^{x+1}$$\n\n$$2^{4x} = 2^{3(x+1)}$$\n\n$$4x = 3x + 3$$\n\n$$x = 3$$\n\nNext, solve $4^x = 8$ with base $2$.\n\n$$(2^2)^x = 2^3$$\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2} = 1.5$$\n\nComparing the two solutions, $3 > 1.5$, so the first solution is greater than the second, so the statement is False."
    ],
    "solution_overview": "Exponential equations of the form $b^{f(x)} = c^{g(x)}$ where both bases $b$ and $c$ share a common prime base $a$ are solved by rewriting each power in base $a$ and equating the resulting exponents. Using the power rule $(a^m)^n = a^{m \\cdot n}$, the equation transforms into:\n\n$$a^{m \\cdot f(x)} = a^{k \\cdot g(x)}$$\n\nSince the exponential function with base $a > 0$ and $a \\neq 1$ is strictly monotonic and thus injective, equating the exponents yields a linear equation:\n\n$$m \\cdot f(x) = k \\cdot g(x)$$\n\nSolving this linear relation provides the unique real solution $x$ in each case.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 78
   },
   {
@@ -2508,7 +2508,7 @@
     "**E.** → False\n\nFor any base $a > 0$ with $a \\neq 1$, the range of the exponential function $f(x) = a^x$ is the open interval $(0, \\infty)$.\n\nTherefore, if $b \\le 0$, the equation\n\n$$a^x = b$$\n\nhas no real solution. Because no solution exists for non-positive values of $b$, the equation does not have a solution for every real number $b$, so the statement is False."
    ],
    "solution_overview": "Exponential equations with constant bases can be analyzed by expressing both sides with a common base using the exponent rule $(a^{-1})^x = a^{-x}$ and matching exponents. For any base $a > 0$ with $a \\neq 1$, the function $f(x) = a^x$ is strictly positive for all real numbers $x$, meaning its image is the interval $(0, \\infty)$. Consequently, an equation of the form\n\n$$a^x = b$$\n\nhas a unique real solution if $b > 0$, and no real solution if $b \\le 0$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 81
   },
   {
@@ -2539,7 +2539,7 @@
     "**E.** → True\n\nConverting the initial capital $K_0$ into another currency with a constant conversion rate $c > 0$ gives an initial amount of $c K_0$.\n\nThe condition for this amount to double under the annual rate of $4\\%$ is:\n\n$$(c K_0)(1.04)^t = 2 (c K_0)$$\n\nDividing both sides by the non-zero quantity $c K_0$ gives:\n\n$$1.04^t = 2$$\n\n$$t = \\frac{\\ln(2)}{\\ln(1.04)}$$\n\nThe conversion factor $c$ cancels completely, leaving the exact same doubling equation regardless of the currency chosen, so the statement is True."
    ],
    "solution_overview": "Let $K_0$ denote the initial capital invested at time $t = 0$. With annual compounding at an interest rate of $r = 0.04$, the capital at year $t$ is given by the exponential growth model:\n\n$$K(t) = K_0 (1 + r)^t$$\n\n$$K(t) = K_0 (1.04)^t$$\n\nTo find the time $t$ required for the capital to reach a multiple $m > 0$ of its initial value, we set $K(t) = m K_0$:\n\n$$K_0 (1.04)^t = m K_0$$\n\n$$1.04^t = m$$\n\nTaking the natural logarithm on both sides yields:\n\n$$t \\ln(1.04) = \\ln(m)$$\n\n$$t = \\frac{\\ln(m)}{\\ln(1.04)}$$\n\nFor doubling ($m = 2$), the doubling time is $t = \\frac{\\ln(2)}{\\ln(1.04)} \\approx \\frac{0.69315}{0.03922} \\approx 17.67$ years.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 82
   },
   {
@@ -2570,7 +2570,7 @@
     "**E.** → False\n\nThe mass at any year $t$ is modeled by $M(t) = M_0 \\cdot (0.95)^t$.\n\nBecause the base $0.95$ is strictly positive, the exponential term $(0.95)^t > 0$ for every finite real number $t$:\n\n$$M(t) > 0 \\quad \\text{for all } t \\in [0, \\infty)$$\n\nThe mass approaches zero asymptotically as $t \\to \\infty$ but never reaches zero at any finite time, so the statement is False."
    ],
    "solution_overview": "Let $M_0 > 0$ denote the initial mass of the radioactive sample. Because the mass decreases by $5\\%$ each year, the remaining mass after $t$ years is modeled by the exponential decay function:\n\n$$M(t) = M_0 \\cdot (0.95)^t$$\n\nThe half-life $T_{1/2}$ is defined as the time required for the mass to reduce to half of its initial value, satisfying the equation:\n\n$$M(T_{1/2}) = \\frac{1}{2} M_0$$\n\n$$(0.95)^{T_{1/2}} = \\frac{1}{2}$$\n\nTaking the natural logarithm of both sides yields:\n\n$$T_{1/2} = \\frac{\\ln(0.5)}{\\ln(0.95)} = -\\frac{\\ln(2)}{\\ln(0.95)}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 83
   },
   {
@@ -2663,7 +2663,7 @@
     "**E.** → True\n\nThe product of all solutions is found by multiplying every element of the solution set.\n\nThe solution set of the equation is $\\{0, 1\\}$.\n\nMultiplying these two values yields:\n\n$$0 \\cdot 1 = 0$$\n\nThe product of all solutions is $0$, so the statement is True."
    ],
    "solution_overview": "The given equation involves powers of $3$:\n\n$$9^{x} - 4 \\cdot 3^{x} + 3 = 0$$\n\nRecognizing that $9^{x} = (3^{2})^{x} = (3^{x})^{2}$, we rewrite the equation in terms of $3^{x}$:\n\n$$(3^{x})^{2} - 4 \\cdot 3^{x} + 3 = 0$$\n\nApplying the substitution $u = 3^{x}$ with $u > 0$ yields a quadratic equation in $u$:\n\n$$u^{2} - 4u + 3 = 0$$\n\nFactoring this quadratic gives:\n\n$$(u - 1)(u - 3) = 0$$\n\nThus, the solutions for $u$ are $u = 1$ and $u = 3$. Back-substituting into $u = 3^{x}$ produces the solutions for $x$:\n\n$$3^{x} = 1 \\implies x = 0$$\n\n$$3^{x} = 3 \\implies x = 1$$\n\nThe solution set is therefore $\\{0, 1\\}$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 86
   },
   {
@@ -2694,7 +2694,7 @@
     "**E.** → True\n\nTwo equations are equivalent on a given domain if they have the exact same truth value for every value in that domain.\n\nFor any real number $x$ in the domain $D = (3, \\infty)$, both $x > 0$ and $x - 3 > 0$ hold simultaneously. Under these conditions, the logarithm product identity holds without restriction:\n\n$$\\log x + \\log(x - 3) = \\log\\big(x(x - 3)\\big)$$\n\nSubstituting this identity directly into the original equation yields $\\log(x(x-3)) = 1$, so the statement is True."
    ],
    "solution_overview": "The given logarithmic equation is defined only where all logarithmic arguments are strictly positive. We establish the natural domain of definition by intersecting the requirements for each individual term:\n\n$$x > 0 \\quad \\text{and} \\quad x - 3 > 0$$\n\n$$D = (3, \\infty)$$\n\nApplying the logarithm product rule on this domain transforms the sum into a single logarithm:\n\n$$\\log\\big(x(x - 3)\\big) = 1$$\n\nExponentiating both sides with base $10$ eliminates the logarithm:\n\n$$x(x - 3) = 10^1$$\n\n$$x^2 - 3x - 10 = 0$$\n\nFactoring this quadratic equation yields the potential candidate solutions:\n\n$$(x - 5)(x + 2) = 0$$\n\n$$x_1 = 5, \\quad x_2 = -2$$\n\nTesting these candidates against the domain $D = (3, \\infty)$ reveals that $x_1 = 5$ is an admissible solution, whereas $x_2 = -2$ is extraneous.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 87
   },
   {
@@ -2725,7 +2725,7 @@
     "**E.** → False\n\nWe determine the effect of increasing the base $a > 1$ while holding the argument $b > 1$ fixed. Expressing the logarithm via natural logarithms gives:\n\n$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$\n\nBecause $b > 1$, the numerator $\\ln b$ is a fixed positive number. As the base $a$ increases, the denominator $\\ln a$ increases strictly:\n\n$$a_1 < a_2 \\implies \\ln a_1 < \\ln a_2$$\n\nTaking reciprocals reverses the inequality:\n\n$$\\frac{1}{\\ln a_1} > \\frac{1}{\\ln a_2}$$\n\nMultiplying by the positive constant $\\ln b$ gives:\n\n$$\\frac{\\ln b}{\\ln a_1} > \\frac{\\ln b}{\\ln a_2}$$\n\nThus $\\log_{a} b$ decreases as the base $a$ increases, so the statement is False."
    ],
    "solution_overview": "We analyze logarithmic expressions with bases and arguments greater than one. The change-of-base formula expresses any logarithm with base $a > 0$ ($a \\neq 1$) and argument $b > 0$ using natural logarithms:\n\n$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$\n\nFrom this definition, the product of reciprocal base-argument pairs evaluates directly:\n\n$$\\log_{a} b \\cdot \\log_{b} a = \\frac{\\ln b}{\\ln a} \\cdot \\frac{\\ln a}{\\ln b} = 1$$\n\nPowers shared by both base and argument simplify via the logarithm power rule:\n\n$$\\log_{a^k} (b^k) = \\frac{\\ln(b^k)}{\\ln(a^k)} = \\frac{k \\ln b}{k \\ln a} = \\frac{\\ln b}{\\ln a} = \\log_{a} b$$\n\nFor any fixed argument $b > 1$, the numerator $\\ln b$ is strictly positive, meaning that the function $f(a) = \\frac{\\ln b}{\\ln a}$ is strictly decreasing in $a$ for all $a > 1$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 88
   },
   {
@@ -2818,7 +2818,7 @@
     "**E.** → False\n\nWe rewrite the terms using standard logarithmic rules and evaluate $\\log 100$.\n\n$$\\log x^3 + \\log\\frac{1}{x} = \\log 100$$\n\n$$3\\log x - \\log x = 2$$\n\n$$2\\log x = 2$$\n\n$$\\log x = 1$$\n\n$$x = 10^1 = 10$$\n\nThe solution is exactly $10$, which is not strictly greater than $10$, so the statement is False."
    ],
    "solution_overview": "Each equation requires solving for a positive real variable $x > 0$ using standard properties of the base-10 logarithm. For any positive argument $x$ and real exponent $r$, the logarithm satisfies the power rule and product-to-sum identities:\n\n$$\\log(x^r) = r \\cdot \\log x$$\n\n$$\\log(a \\cdot b) = \\log a + \\log b$$\n\n$$\\log\\left(\\frac{a}{b}\\right) = \\log a - \\log b$$\n\nApplying these laws reduces linear logarithmic equations to the form $\\log x = k$, whose unique solution is recovered through the exponential definition:\n\n$$x = 10^k$$\n\nFor quadratic expressions in $\\log x$, substitution yields a standard polynomial whose real roots must be individually converted back into values of $x$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 91
   },
   {
@@ -2849,7 +2849,7 @@
     "**E.** → True\n\nConsider the general equation $\\log_{a}(\\log_{b} x) = c$ under the assumptions $a > 1$ and $b > 1$. Converting the outer logarithm gives:\n\n$$\\log_{b} x = a^c$$\n\nBecause the exponential function with base $a > 1$ is strictly positive everywhere, we have $a^c > 0$ for any real number $c$. Isolating $x$ gives:\n\n$$x = b^{a^c}$$\n\nBecause $b > 1$ and the exponent satisfies $a^c > 0$, the value $b^{a^c}$ is strictly greater than $b^0 = 1$. Thus, every solution is greater than one, so the statement is True."
    ],
    "solution_overview": "A nested logarithmic equation of the form $\\log_{a}(\\log_{b} x) = c$ is solved by applying exponential functions from the outside inward. For valid logarithmic evaluations, every inner argument must be strictly positive.\n\nApplying base $a$ to both sides removes the outer logarithm:\n\n$$\\log_{b} x = a^c$$\n\nBecause $a > 0$, the quantity $a^c$ is strictly positive for any real number $c$, satisfying the domain requirement for the inner logarithm. Applying base $b$ then isolates $x$:\n\n$$x = b^{a^c}$$\n\nEach nested layer unwraps by raising the current base to the power of the evaluated expression.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 92
   },
   {
@@ -2880,7 +2880,7 @@
     "**E.** → False\n\nWe determine the number of real solutions to $2^x = x^2$ by testing integer values and analyzing the intersection points of the two graphs.\n\nDirect evaluation shows that $x = 2$ and $x = 4$ are positive integer solutions:\n\n$$2^2 = 2^2 = 4$$\n\n$$2^4 = 4^2 = 16$$\n\nAdditionally, for negative real values of $x$, $2^x > 0$ decreases toward $0$ while $x^2$ increases toward infinity, creating a third real intersection in the interval $(-1, 0)$ where $2^{-1} = 0.5 < (-1)^2 = 1$ and $2^0 = 1 > 0^2 = 0$. Since there are at least three real solutions, the equation does not have exactly one solution, so the statement is False."
    ],
    "solution_overview": "Exponential equations involving terms with different bases can be analyzed algebraically using logarithms or monotonically increasing properties of exponential functions. For equations of the form $a^x = b^x$, dividing both sides by the non-zero exponential term yields:\n\n$$\\left(\\frac{a}{b}\\right)^x = 1$$\n\nFor equations with linear shifts in the exponent, factoring out the constant power allows isolation of the base ratio before solving. Non-linear comparisons such as $2^x = x^2$ require inspecting integer points and intersection properties across distinct intervals of the real line.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 93
   },
   {
@@ -2973,7 +2973,7 @@
     "**E.** → True\n\nFor any non-zero real number $x \\neq 0$, the quantity $x^{2}$ is strictly positive, ensuring that $\\log(x^{2})$ is well defined. The absolute value $|x|$ is also strictly positive for all $x \\neq 0$.\n\nBecause $x^{2} = |x|^{2}$, substituting $|x|$ into the logarithm gives:\n\n$$\\log(x^{2}) = \\log\\left(|x|^{2}\\right)$$\n\nApplying the power rule $\\log(u^{2}) = 2\\log u$ to the positive argument $u = |x|$ yields:\n\n$$\\log\\left(|x|^{2}\\right) = 2\\log|x|$$\n\nThis identity holds for every $x \\neq 0$, so the statement is True."
    ],
    "solution_overview": "The decadic logarithm $\\log x = \\log_{10} x$ is defined for all strictly positive real numbers $x > 0$. Evaluating algebraic statements involving logarithms relies on the foundational operational laws and the change of base formula. For any strictly positive real numbers $u, v > 0$ and any real exponent $k$, the product, quotient, and power rules are given by:\n\n$$\\log(uv) = \\log u + \\log v$$\n\n$$\\log\\left(\\frac{u}{v}\\right) = \\log u - \\log v$$\n\n$$\\log(u^{k}) = k \\log u$$\n\nFor any positive bases $a, b \\neq 1$ and any positive argument $x > 0$, the change of base identity converts logarithms between different bases:\n\n$$\\log_{a} x = \\frac{\\log x}{\\log a}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "3/5",
    "sort_order": 96
   },
   {
@@ -3004,7 +3004,7 @@
     "**E.** → True\n\nTo analyze $16^x = 4^{2x}$, we rewrite the base of the left-hand side in terms of $4$:\n\n$$16^x = (4^2)^x = 4^{2x}$$\n\nSubstituting this back into the original equation gives:\n\n$$4^{2x} = 4^{2x}$$\n\nEquating exponents gives $2x = 2x$, which holds as an identity for all real numbers $x$, so the statement is True."
    ],
    "solution_overview": "Exponential equations of the form $a^{f(x)} = b^{g(x)}$ can be solved by expressing both bases $a$ and $b$ as powers of a common positive base $c > 0$ with $c \\neq 1$. Applying the power of a power rule $(c^m)^k = c^{m \\cdot k}$ converts the equation into a single shared base:\n\n$$c^{m \\cdot f(x)} = c^{n \\cdot g(x)}$$\n\nBecause the exponential function $y = c^u$ is strictly monotonic and therefore one-to-one, equating the expressions in the exponents yields an algebraic equation:\n\n$$m \\cdot f(x) = n \\cdot g(x)$$\n\nSolving this resulting equation identifies the solution set, which may consist of a single number, no solutions, or all real numbers if the exponents are identically equal.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 97
   },
   {
@@ -3035,7 +3035,7 @@
     "**E.** → True\n\nUsing the power rule, the left-hand side simplifies to $\\log(x^{2}) = 2\\log x$.\n\nSetting this equal to the right-hand side gives:\n\n$$2\\log x = (\\log x)^{2}$$\n\nRearranging all terms to one side yields:\n\n$$(\\log x)^{2} - 2\\log x = 0$$\n\nFactoring out $\\log x$ produces:\n\n$$\\log x(\\log x - 2) = 0$$\n\nThis yields two possible values for $\\log x$, namely $\\log x = 0$ or $\\log x = 2$. Exponentiating gives the two solutions:\n\n$$x_{1} = 10^{0} = 1, \\quad x_{2} = 10^{2} = 100$$\n\nBecause $x_{2} = 100$ is strictly larger than $10$, the equation possesses a solution larger than $10$, so the statement is True."
    ],
    "solution_overview": "Every statement concerns logarithmic equations involving the decadic base ten logarithm $\\log x = \\log_{10} x$. For all real expressions involving logarithms of powers of $x$, the domain of admissible real values is $x > 0$.\n\nWe systematically use the power property of logarithms:\n\n$$\\log(x^{k}) = k \\cdot \\log x$$\n\ntogether with the exact values of integer powers of ten:\n\n$$\\log 10^{k} = k$$\n\nApplying these reduction rules simplifies each logarithmic expression to a linear or quadratic equation in terms of the variable $u = \\log x$. Once $u$ is determined, the corresponding value of $x$ is obtained through the inverse exponential function:\n\n$$x = 10^{u}$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 98
   },
   {
@@ -3190,7 +3190,7 @@
     "**E.** → False\n\nA linear equation in the form $k \\cdot w = b$ has infinitely many solutions if and only if both $k = 0$ and $b = 0$, and has no solution if $k = 0$ and $b \\neq 0$.\n\nSubstituting $a = -3$ into the equation $(a^2 - 9)w = a - 3$ gives:\n\n$$((-3)^2 - 9)w = -3 - 3$$\n\n$$(9 - 9)w = -6$$\n\n$$0 \\cdot w = -6$$\n\nBecause $0 \\cdot w = 0$ for all real numbers $w$, no value of $w$ can satisfy $0 = -6$.\n\nTherefore, the equation has no solution when $a = -3$, so the statement is False."
    ],
    "solution_overview": "The start-up scenario involves solving quadratic, rational, radical, logarithmic, and parametric linear equations across distinct operational domains.\n\nBreak-even subscriber levels occur when monthly revenue equals monthly operating cost:\n\n$$R(x) = C(x)$$\n\n$$18x - x^2 = 3x + 36$$\n\n$$x^2 - 15x + 36 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(x - 3)(x - 12) = 0$$\n\nThus, the break-even subscriber volumes are $x_1 = 3$ and $x_2 = 12$ thousand subscribers.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 103
   },
   {
@@ -3345,7 +3345,7 @@
     "**E.** → False\n\nThe logarithmic equation requires each argument to be strictly positive. The domain is determined by the system of inequalities $2t - 3 > 0$ and $t + 1 > 0$, which yields $t > \\frac{3}{2}$.\n\nApply the logarithm product rule:\n\n$$\\ln((2t - 3)(t + 1)) = \\ln(25)$$\n\n$$(2t - 3)(t + 1) = 25$$\n\nExpand the product:\n\n$$2t^2 - t - 3 = 25$$\n\n$$2t^2 - t - 28 = 0$$\n\nFactor the quadratic equation:\n\n$$(2t + 7)(t - 4) = 0$$\n\nThis yields $t = 4$ and $t = -\\frac{7}{2} = -3.5$. While the quadratic equation has two real roots, the value $t = -3.5$ lies outside the domain of the natural logarithm because $\\ln(2(-3.5) - 3) = \\ln(-10)$ is undefined in the real numbers. Therefore, the logarithmic equation has only one real solution, so the statement is False."
    ],
    "solution_overview": "The scenario establishes algebraic relationships across four operational areas of the manufacturing plant.\n\nFirst, the linear labor cost model is:\n\n$$C(x) = 4x + 18$$\n\nSecond, the net daily operating profit is given by the quadratic function:\n\n$$\\Pi(x) = -x^2 + 22x - 40$$\n\nThird, robotic arm cycle calibration follows the rational equation:\n\n$$\\frac{10}{y-1} - \\frac{10}{y+4} = 1$$\n\nFourth, scanner velocity satisfies the radical equation:\n\n$$\\sqrt{4v + 9} = v - 3$$\n\nFifth, the machine wear index over $t$ operating months follows the logarithmic equation:\n\n$$\\ln(2t - 3) + \\ln(t + 1) = \\ln(25)$$",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 108
   },
   {
@@ -3500,7 +3500,7 @@
     "**E.** → False\n\nSetting the mass equal to $5$ grams yields an exponential equation that can be solved by converting both sides to base $2$:\n\n$$160 \\cdot 4^{-t/6} = 5$$\n\n$$4^{-t/6} = \\frac{5}{160}$$\n\n$$4^{-t/6} = \\frac{1}{32}$$\n\n$$(2^2)^{-t/6} = 2^{-5}$$\n\n$$2^{-t/3} = 2^{-5}$$\n\n$$-\\frac{t}{3} = -5$$\n\n$$t = 15$$\n\nThe time required is $15$ hours, which is an odd integer, so the statement is False."
    ],
    "solution_overview": "Each preparation protocol corresponds to a fundamental equation structure governing the dilution, reaction kinetics, or calibration parameters of the pharmacy solutions.\n\nFor mixture balancing, the total mass of active substance divided by total solution volume equates to the target concentration. For degradation and calibration processes, quadratic factoring, radical isolation with extraneous root verification, and common-base exponential transformations determine the respective time variables.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 113
   },
   {
@@ -3655,7 +3655,7 @@
     "**E.** → False\n\nThe rational equation is defined on the domain $w \\in \\mathbb{R} \\setminus \\{-2, 2\\}$ because the denominators vanish at $w = 2$ and $w = -2$.\n\n$$\\frac{w}{w-2} + \\frac{2}{w+2} = \\frac{8}{w^2-4}$$\n\nMultiplying both sides by the common denominator $(w-2)(w+2) = w^2 - 4$ yields:\n\n$$w(w + 2) + 2(w - 2) = 8$$\n\n$$w^2 + 2w + 2w - 4 = 8$$\n\n$$w^2 + 4w - 12 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(w + 6)(w - 2) = 0$$\n\nThis yields candidate values $w = -6$ and $w = 2$. However, $w = 2$ is excluded by the domain restriction since it makes the original denominators zero. Thus, only $w = -6$ is a valid solution, meaning the equation has exactly one solution in its domain rather than two, so the statement is False."
    ],
    "solution_overview": "The operational models for Backhaus Wien give rise to linear, quadratic, radical, logarithmic, and rational equations. Setting the linear royalty schedules equal with a parameter $k$ determines the revenue breakeven point:\n\n$$0.06x + 3.6 = 0.10x + 1.2 - k$$\n\nFor performance incentives, the roots of the quadratic bonus function $B(q) = -q^2 + 14q - 40$ define the profitability interval where $B(q) > 0$. For maintenance efficiency, the radical equation $\\sqrt{3s + 16} = s + 2$ is solved under the non-negativity constraint $s \\ge 0$. The logarithmic growth model applies the quotient law for logarithms on the domain $t > \\frac{3}{4}$:\n\n$$\\ln\\left(\\frac{4t - 3}{t + 2}\\right) = \\ln(2)$$\n\nFinally, the rational overhead equation is resolved by clearing denominators with the common factor $w^2 - 4 = (w-2)(w+2)$, subject to the domain restriction $w \\notin \\{-2, 2\\}$.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 118
   },
   {
@@ -3810,7 +3810,7 @@
     "**E.** → False\n\nUsing the substitution $u = e^k$, the exponential equation transforms into a quadratic equation:\n\n$$u^2 - 6u + 8 = 0$$\n\n$$(u - 2)(u - 4) = 0$$\n\nThis yields two positive real values for $u$, namely $u = 2$ and $u = 4$. Reversing the substitution gives:\n\n$$e^k = 2 \\implies k = \\ln(2)$$\n\n$$e^k = 4 \\implies k = \\ln(4)$$\n\nBoth values are valid real solutions, so the statement is False."
    ],
    "solution_overview": "Let $x \\in [0, 100]$ be the mass of Arabica in kilograms, and $100 - x$ the mass of Robusta. The total cost function in dollars is given by the linear expression:\n\n$$C(x) = 18x + 10(100 - x) = 8x + 1000$$\n\nThe five statements test linear budgeting, quadratic root analysis, radical equations with domain constraints, logarithmic domain validity, and exponential equations reducible to quadratic form.",
-   "difficulty_level": "5/5",
+   "difficulty_level": "4/5",
    "sort_order": 123
   }
  ]
