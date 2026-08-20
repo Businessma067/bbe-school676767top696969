@@ -55,6 +55,45 @@ export function fracStr(num, den) {
   return `$\\frac{${num}}{${den}}$`;
 }
 
+function gcd(a, b) {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  while (b) {
+    const t = b;
+    b = a % b;
+    a = t;
+  }
+  return a || 1;
+}
+
+/** Clean numeric display: prefer small fractions, else at most 2 decimals. */
+export function fmtNum(n, { maxDec = 2 } = {}) {
+  if (!Number.isFinite(n)) return "0";
+  if (Math.abs(n - Math.round(n)) < 1e-9) return String(Math.round(n));
+
+  for (const den of [2, 3, 4, 5, 6, 7, 8, 9, 10, 12]) {
+    const num = Math.round(n * den);
+    if (Math.abs(num / den - n) < 1e-9) {
+      if (num === 0) return "0";
+      const g = gcd(num, den);
+      const n2 = num / g;
+      const d2 = den / g;
+      if (d2 === 1) return String(n2);
+      if (n2 < 0) return `-\\frac{${-n2}}{${d2}}`;
+      return `\\frac{${n2}}{${d2}}`;
+    }
+  }
+
+  const r = Math.round(n * 10 ** maxDec) / 10 ** maxDec;
+  return String(r);
+}
+
+/** Wrap fmtNum for inline math mode. */
+export function fmtMath(n) {
+  const s = fmtNum(n);
+  return s.includes("\\frac") ? `$${s}$` : `$${s}$`;
+}
+
 /**
  * Long explanation in MATH 13.18 style: intro → model → steps → verdict.
  */
@@ -93,64 +132,6 @@ export function explIntro(kind) {
       "Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.",
   };
   return map[kind] || map.linear;
-}
-
-const STEP_BRIDGES = {
-  linear: [
-    "Translate the story into one equation in the unknown:",
-    "Collect like terms and isolate the variable:",
-    "Read off the numerical value and compare with the claim:",
-  ],
-  quadratic: [
-    "Write the quadratic model from the geometry or number condition:",
-    "Factor or simplify the quadratic:",
-    "Take the admissible root and evaluate the quantity named in the claim:",
-  ],
-  rational: [
-    "Express the balance of rates as an equation in one variable:",
-    "Clear denominators and solve:",
-    "Convert the result to the units in the closing sentence:",
-  ],
-  radical: [
-    "State the radical equation together with its domain:",
-    "Square both sides and simplify:",
-    "Check the root against the domain, then test the claim:",
-  ],
-  abs: [
-    "Split the absolute-value equation into its two linear cases:",
-    "Solve each case on its domain:",
-    "Combine admissible roots and compare with the claim:",
-  ],
-  explog: [
-    "Combine log or exponential terms using standard laws:",
-    "Reduce to a single logarithm or power equation:",
-    "Solve for the variable and compare with the inequality in the claim:",
-  ],
-};
-
-/** Insert 13.18-style bridge prose between display-math steps. */
-export function buildExplSteps(prose, eqs, kind = "linear") {
-  const bridges = STEP_BRIDGES[kind] || STEP_BRIDGES.linear;
-  const steps = [];
-
-  if (prose.length) {
-    steps.push(prose.join("\n\n"));
-    if (eqs.length) steps.push("");
-  } else if (eqs.length) {
-    steps.push("Work from the wording to an equation, then solve step by step:");
-    steps.push("");
-  }
-
-  for (let i = 0; i < eqs.length; i++) {
-    if (eqs.length > 1 && bridges[i]) {
-      steps.push(bridges[i]);
-      steps.push("");
-    }
-    steps.push(eqs[i]);
-    if (i < eqs.length - 1) steps.push("");
-  }
-
-  return steps;
 }
 
 export function verdict1318(isTrue, detail) {

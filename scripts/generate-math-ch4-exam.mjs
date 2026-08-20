@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { initHardTemplates } from "./ch4-hard-templates.mjs";
 import { normalizeStatement, validateStatement } from "./ch4-statement-rules.mjs";
-import { cleanStmt, mkExplLong, explIntro, fracStr, buildExplSteps, verdict1318 } from "./ch4-expl-style.mjs";
+import { cleanStmt, mkExplLong, explIntro, fracStr, fmtNum, fmtMath } from "./ch4-expl-style.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_MAIN = path.join(ROOT, "src/data/math-ch4-equations.ts");
@@ -27,20 +27,20 @@ function wrong(n) {
 
 /** TRUE → inequality bound (no plug-in); FALSE → explicit wrong number. */
 function claimAntiPlug(correct, isTrue, asInt = true) {
-  const v = asInt ? Math.round(correct) : correct;
-  if (!isTrue) return `$${wrong(v)}$`;
+  const v = asInt ? Math.round(correct) : Math.round(correct * 100) / 100;
+  if (!isTrue) return `$${fmtNum(wrong(v))}$`;
   const delta = Math.max(2, Math.min(6, Math.floor(Math.abs(v) / 5) || 2));
   const bound = asInt ? v - delta : Math.round((v - delta * 0.5) * 10) / 10;
-  return `greater than $${bound}$`;
+  return `greater than $${fmtNum(bound)}$`;
 }
 
 /** For equation roots: TRUE → comparison; FALSE → wrong exact value. */
 function claimRoot(x, isTrue, asInt = true) {
   const v = asInt ? Math.round(x) : Math.round(x * 100) / 100;
-  if (!isTrue) return `equals $${wrong(v)}$`;
+  if (!isTrue) return `equals $${fmtNum(wrong(v))}$`;
   const delta = Math.max(1, Math.min(8, Math.floor(Math.abs(v) / 6) || 1));
   const bound = asInt ? v - delta : Math.round((v - delta * 0.4) * 10) / 10;
-  return `is greater than $${bound}$`;
+  return `is greater than $${fmtNum(bound)}$`;
 }
 
 /** Count of roots: TRUE → inequality; FALSE → wrong count. */
@@ -51,11 +51,11 @@ function claimCount(n, isTrue) {
 
 /** Numeric claim for statements: TRUE → inequality; FALSE → wrong $…$. */
 function claimEmbed(correct, isTrue, asInt = true) {
-  const v = asInt ? Math.round(correct) : correct;
-  if (!isTrue) return `$${wrong(v)}$`;
+  const v = asInt ? Math.round(correct) : Math.round(correct * 100) / 100;
+  if (!isTrue) return `$${fmtNum(wrong(v))}$`;
   const delta = Math.max(2, Math.min(6, Math.floor(Math.abs(v) / 5) || 2));
   const bound = asInt ? v - delta : Math.round((v - delta * 0.5) * 10) / 10;
-  return `greater than $${bound}$`;
+  return `greater than $${fmtNum(bound)}$`;
 }
 
 function pm(h, m) {
@@ -109,35 +109,53 @@ function mkExpl(isTrue, lines, verdict, kind = "linear") {
   const header = lines.find((l) => /^\*\*/.test(l)) || `**{L}.** → ${isTrue ? "True" : "False"}`;
   const body = lines.filter((l) => l && l !== header);
   const eqs = body.filter((l) => l.startsWith("$$"));
-  const prose = body.filter((l) => l && !l.startsWith("$$") && !/^\*\*/.test(l));
+  const prose = body.filter((l) => l && !l.startsWith("$$"));
 
-  const stepsDedup = [];
-  for (const line of buildExplSteps(prose, eqs, kind)) {
-    if (line === "" && stepsDedup[stepsDedup.length - 1] === "") continue;
-    if (line && stepsDedup.includes(line)) continue;
-    stepsDedup.push(line);
+  const steps = [];
+  if (prose[0]) {
+    steps.push(prose[0]);
+    if (eqs.length) steps.push("");
+  } else if (eqs.length) {
+    steps.push("Work from the story to a single equation, then solve:");
+    steps.push("");
+  }
+  for (let i = 0; i < eqs.length; i++) {
+    steps.push(eqs[i]);
+    if (i < eqs.length - 1) steps.push("");
+  }
+  if (prose.length > 1) {
+    steps.push("");
+    steps.push(...prose.slice(1));
   }
 
   const solvedLine = prose.find((p) =>
-    /=\\s*\$?\d|Longer|Largest|Second|Runner|Still|Sum |product |Compare|Domain|Vertex|Relative|Left fraction|Counting back|Elapsed|Since \$x|Net fill|Actual time|Mean-speed|Runner-up|Middle |After tax|gross|net after/i.test(
+    /=\\s*\$?\d|Longer|Largest|Second|Runner|Still|Sum |product |Compare|Domain|Vertex|Relative|Left fraction|Counting back|Elapsed/i.test(
       p
     )
   );
   const checkLine =
     typeof verdict === "string" && verdict.length > 20
       ? verdict
-      : solvedLine && !stepsDedup.includes(solvedLine)
+      : solvedLine && !steps.includes(solvedLine)
         ? solvedLine
-        : isTrue
-          ? "The recovered value satisfies the inequality or comparison in the claim."
-          : "The recovered value contradicts the claim.";
+        : prose.length > 1 && !steps.includes(prose[prose.length - 1])
+          ? prose[prose.length - 1]
+          : isTrue
+            ? "The value recovered from the model satisfies the inequality in the claim."
+            : "The value recovered from the model contradicts the claim.";
+  const stepsDedup = [];
+  for (const line of steps) {
+    if (line === "" && stepsDedup[stepsDedup.length - 1] === "") continue;
+    if (line && stepsDedup.includes(line)) continue;
+    stepsDedup.push(line);
+  }
 
   return mkExplLong(isTrue, {
     intro: explIntro(kind),
-    model: eqs.length ? "Set up the model and solve:" : undefined,
+    model: eqs.length && prose[0] ? "Set up the model and solve:" : undefined,
     steps: stepsDedup,
     check: checkLine,
-    verdict: verdict1318(isTrue),
+    verdict: `Matching the solved value to the claim, the statement is ${isTrue ? "True" : "False"}.`,
   });
 }
 
@@ -333,7 +351,7 @@ function linBoatCurrent(slot, isTrue) {
         "",
         `Downstream speed $${vd}$ km/h, upstream speed $${vu}$ km/h.`,
         `Still-water speed is the average of downstream and upstream speeds:`,
-        `$$\\frac{${vd}+${vu}}{2}=${still}$$ km/h`,
+        `$$\\frac{${vd}+${vu}}{2}=${fmtNum(still)}$$ km/h`,
       ],
       undefined,
       "linear"
@@ -502,7 +520,7 @@ function linRoundTrip(slot, isTrue) {
     expl: mkExpl(isTrue, [
       hdr("?", isTrue).replace("?", "{L}"),
       "",
-      `$$\\frac{${d}}{${v1}}+\\frac{${d}}{${v2}}=${t}$$`,
+      `$$\\frac{${d}}{${v1}}+\\frac{${d}}{${v2}}=${fmtNum(t)}$$`,
     ]),
   };
 }
@@ -545,7 +563,7 @@ function linPipeDrain(slot, isTrue) {
       hdr("?", isTrue).replace("?", "{L}"),
       "",
       `$$\\frac{1}{${fill}}-\\frac{1}{${drain}}=\\frac{1}{t}$$`,
-      `$$t=${together}$$`,
+      `$$t=${fmtNum(together)}$$`,
     ]),
   };
 }
@@ -641,7 +659,7 @@ function linWorkerTeam(slot, isTrue) {
       hdr("?", isTrue).replace("?", "{L}"),
       "",
       `$$\\frac{1}{${a}}+\\frac{1}{${b}}=\\frac{1}{t}$$`,
-      `$$t=${together}$$`,
+      `$$t=${fmtNum(together)}$$`,
     ]),
   };
 }
@@ -1037,7 +1055,7 @@ function ratWork(slot, isTrue) {
   return {
     key: `ratW-${a}-${b}`,
     statement: phrase(slot, `Tap $A$ fills a cistern in $${a}$ h, tap $B$ in $${b}$ h. Both open from empty: full in ${claim} h.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$t=\\frac{${a * b}}{${a + b}}=${t}$$`]),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$t=\\frac{${a * b}}{${a + b}}=${fmtNum(t)}$$`]),
   };
 }
 
@@ -1076,7 +1094,12 @@ function absDist(slot, isTrue) {
   return {
     key: `absD-${a}-${b}-${c}`,
     statement: phrase(slot, `Positions on a rail satisfy $|${a}x ${b >= 0 ? "+" : ""}${b}|=${c}$. The two positions add to ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x=${r1}\\text{ or }${r2}$$`, `Sum $=${sum}$.`]),
+    expl: mkExpl(isTrue, [
+      hdr("?", isTrue).replace("?", "{L}"),
+      "",
+      `$$x=${fmtNum(r1)}\\text{ or }${fmtNum(r2)}$$`,
+      `Sum $=${fmtMath(sum)}$.`,
+    ]),
   };
 }
 
@@ -1118,7 +1141,11 @@ function absTwoCase(slot, isTrue) {
   return {
     key: `absP-${a}-${b}-${c}`,
     statement: phrase(slot, `Equation $|${a}x+${b}|=${c}$ has two roots whose product is ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Roots $${r1}$, $${r2}$; product $${prod}$.`]),
+    expl: mkExpl(isTrue, [
+      hdr("?", isTrue).replace("?", "{L}"),
+      "",
+      `Roots $${fmtMath(r1)}$, $${fmtMath(r2)}$; product $${fmtMath(prod)}$.`,
+    ]),
   };
 }
 
@@ -1129,10 +1156,15 @@ function ratPartial(slot, isTrue) {
   const rem = 1 - done * rate;
   const need = rem / rate;
   const claim = claimEmbed(Math.round(need * 10) / 10, isTrue, false);
+  const remFrac = fracStr(whole - done, whole);
   return {
     key: `ratPart-${whole}-${done}`,
     statement: phrase(slot, `A job takes $${whole}$ h alone. After $${done}$ h, the remaining work needs ${claim} more hours at the same rate.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Left fraction $${rem}$; time $${need}$ h.`]),
+    expl: mkExpl(isTrue, [
+      hdr("?", isTrue).replace("?", "{L}"),
+      "",
+      `Left fraction ${remFrac}; time $${fmtNum(need)}$ h.`,
+    ]),
   };
 }
 
@@ -1164,8 +1196,8 @@ function logComplex(slot, isTrue) {
       hdr("?", isTrue).replace("?", "{L}"),
       "",
       `$$\\left(\\frac{1}{${k}}-${k}-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$`,
-      `$$\\log x = ${Math.round(logx * 1000) / 1000}$$`,
-      `$$x \\approx ${Math.round(x * 10) / 10}$$`,
+      `$$\\log x = ${fmtNum(logx)}$$`,
+      `$$x \\approx ${fmtNum(x)}$$`,
       smaller ? `$x < ${bound}$.` : `$x \\ge ${bound}$.`,
     ]),
     forceTrue: smaller,
@@ -1184,7 +1216,7 @@ function logProductDomain(slot, isTrue) {
       slot,
       `Every positive root of $\\log x + \\log(x+${a}) = ${rhs}$ satisfies $x$ ${cmp}.`
     ),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10^{${rhs}}$$`, `$$x=${root}$$`, `Compare with the bound in the claim.`]),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${a})=10^{${rhs}}$$`, `$$x=${fmtNum(root)}$$`, `Compare with the bound in the claim.`]),
   };
 }
 
@@ -1233,7 +1265,7 @@ function logSumFrac(slot, isTrue) {
       slot,
       `Every admissible root of $\\log_{${base}} x + \\frac{\\log_{${base}} x}{${denom}} = ${target}$ satisfies $x$ ${cmp}.`
     ),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${denom + 1}}{${denom}}\\log_{${base}} x = ${target}$$`, `$$x=${base}^{${logv}}=${Math.round(x * 100) / 100}$$`], undefined, "explog"),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${denom + 1}}{${denom}}\\log_{${base}} x = ${target}$$`, `$$x=${base}^{${fmtNum(logv)}}=${fmtNum(x)}$$`], undefined, "explog"),
   };
 }
 
@@ -1363,7 +1395,7 @@ function expLnEq(slot, isTrue) {
   return {
     key: `expLn-${a}-${b}-${slot}`,
     statement: phrase(slot, `Every admissible root of $\\ln x = \\ln ${b} + ${a}$ satisfies $x$ ${cmp}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\ln x = \\ln(${b}e^{${a}})$$`, `$$x=${x}$$.`]),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\ln x = \\ln(${b}e^{${a}})$$`, `$$x=${fmtNum(x)}$$.`]),
   };
 }
 
@@ -1502,7 +1534,7 @@ function difficultyTier(n, sub) {
 
 // ── assembly ──────────────────────────────────────────────────────────────────
 
-TIER = initHardTemplates({ hdr, mkExpl, phrase, claimEmbed, claimRoot, claimCount, claimAntiPlug, wrong, pm, backFrom, fracStr });
+TIER = initHardTemplates({ hdr, mkExpl, phrase, claimEmbed, claimRoot, claimCount, claimAntiPlug, wrong, pm, backFrom, fracStr, fmtNum });
 
 function buildTask(n, sub) {
   const tier = difficultyTier(n, sub);

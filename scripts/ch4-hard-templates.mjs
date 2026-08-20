@@ -4,7 +4,7 @@
  */
 
 export function initHardTemplates(H) {
-  const { hdr, mkExpl, phrase, claimEmbed, claimRoot, claimCount, claimAntiPlug, pm, backFrom, fracStr } = H;
+  const { hdr, mkExpl, phrase, claimEmbed, claimRoot, claimCount, claimAntiPlug, pm, backFrom, fracStr, fmtNum } = H;
 
   // ═══ 4.1 TIER 4 ═══════════════════════════════════════════════════════════
 
@@ -620,7 +620,7 @@ export function initHardTemplates(H) {
         [
           hdr("?", isTrue).replace("?", "{L}"),
           "",
-          `$$1.04^3 \\approx ${(bal / p).toFixed(3)}$$`,
+          `$$1.04^3 \\approx ${fmtNum(bal / p)}$$`,
           `$$t=3$$ years.`,
         ],
         undefined,
