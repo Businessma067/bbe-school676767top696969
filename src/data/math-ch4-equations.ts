@@ -8,12 +8,13 @@
  */
 
 import type { MathTask } from "@/data/math-chapters";
+import { MATH_CH4_4_EXPONENTIAL } from "@/data/math-ch4-4-exponential";
 
 export const MATH_CH4_SUBSECTIONS = [
   { id: "4.1", title: "Linear equations in one unknown" },
   { id: "4.2", title: "Quadratic equations" },
   { id: "4.3", title: "Rational, radical and absolute-value equations" },
-  // 4.4 Exponential and logarithmic equations
+  { id: "4.4", title: "Exponential and logarithmic equations" },
   // 4.5 Applied word problems and mixed exam sets
 ] as const;
 
@@ -25,11 +26,11 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A shop doubles a price and then adds $6$ EUR. The till shows $14$ EUR. A clerk reports that the original price was $5$ EUR.`,
-      `In a practice paper the equation $5x - 3 = 12$ appears. A candidate claims that its unique real solution is an even integer.`,
-      `After $7$ EUR is taken off a bill, the remainder is split into two equal shares of $4$ EUR. Then the original bill was $15$ EUR.`,
-      `The equation $3(x + 1) = 12$ is expanded and solved. A student concludes that its unique real solution is even.`,
-      `Four times a recorded temperature change, plus $2$ degrees, equals $14$ degrees. Then the change was $4$ degrees.`,
+      `For $2x + 6 = 14$, the sum of all admissible roots equals $7$.`,
+      `For $5x - 3 = 12$, the equation has two distinct admissible real solutions.`,
+      `For $x - 7 = 8$, the product of all admissible roots equals $15$.`,
+      `For $3x + 3 = 12$, the equation has no admissible real solution.`,
+      `For $4x + 2 = 14$, the sum of all admissible roots equals $5$.`,
     ],
     answer_key: [false, false, true, false, false],
     tactical_explanations: [
@@ -118,11 +119,11 @@ which is not $14$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A purse holds some coins and then $5$ EUR more. The total is $11$ EUR. The stallholder concludes that the purse started with $6$ EUR.`,
-      `In a practice paper the equation $7x = 21$ appears. A candidate claims that its unique real solution is even.`,
-      `After $8$ litres are poured out of a tank, the remainder is split into two equal drums of $5$ litres each. A student reports that the tank started with $16$ litres.`,
-      `Dividing both sides of $6x = 30$ by $6$ is the correct inverse of multiplying by $6$. A student then reports that the unique real solution is even.`,
-      `A scale shows a mass with no extra weight and reads $9$ kg. A student claims that the mass is therefore $9$ kg.`,
+      `For $x + 5 = 11$, the sum of all admissible roots equals $6$.`,
+      `For $7x = 21$, the equation has two distinct admissible real solutions.`,
+      `For $x - 8 = 10$, the product of all admissible roots equals $20$.`,
+      `For $6x = 30$, the equation has no admissible real solution.`,
+      `For $x + 0 = 9$, the sum of all admissible roots equals $9$.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
@@ -193,11 +194,11 @@ That $9$ is the mass in kilograms, matching the claim, so the statement is True.
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A number increased by $4$ equals $11$. Translating the sentence into a linear equation and undoing the addition, the number is $7$.`,
-      `Three times a number equals $18$. A student claims that the unknown number is therefore $5$.`,
-      `After $8$ is subtracted from a number, the remainder is split into two equal parts of $6$. Restoring the operations, the original number is $20$.`,
-      `Half of a number is $9$. Doubling both sides of the corresponding equation, the number itself is $18$.`,
-      `A number decreased by $6$, then halved, equals $5$. A student claims that the original number is $4$.`,
+      `For $x + 4 = 11$, the sum of all admissible roots equals $7$.`,
+      `For $3x = 18$, the equation has two distinct real solutions.`,
+      `For $x - 8 = 12$, the product of all admissible roots equals $20$.`,
+      `For $\\frac{x}{2} = 9$, the computed result matches the claim..`,
+      `For $x - 6 = 10$, the sum of all admissible roots equals $19$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -246,7 +247,11 @@ $$\\frac{x}{2} = 9$$
 
 $$x = 18$$
 
-That $18$ is the number itself. Half of it is $9$, matching the claim, so the statement is True.`,
+That $18$ is the number itself. It exceeds $15$, because
+
+$$18 > 15$$
+
+Half of $18$ is $9$, matching the sentence, so the statement is True.`,
       `**E.** → False
 
 Decreasing by $6$ and then taking half is undone by doubling and then adding $6$:
@@ -274,11 +279,11 @@ which is not $5$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A baker doubles a batch after adding $3$ g of starter. The scale then shows $14$ g. The baker reports that the original batch was $4$ g.`,
-      `The linear equation $5(x - 2) = 20$ is expanded with the distributive law. After collecting like terms the unique real solution is positive and even.`,
-      `A chemist takes twice a sample, adds $1$ ml, then triples the result. The flask shows $21$ ml. The chemist reports that the original sample was $4$ ml.`,
-      `Expanding $4(x - 5) = 12$ and then isolating $x$ gives a unique real solution greater than $5$.`,
-      `Two rods are laid end to end. One is $3$ cm longer than a marked length, the other $1$ cm shorter than that same length. Together they measure $10$ cm. A carpenter reports that the marked length is $4$ cm.`,
+      `For $2x + 6 = 14$, the sum of all admissible roots equals $4$.`,
+      `For $5x - 10 = 20$, the equation has exactly one real solution.`,
+      `For $3(2x + 1) = 21$, the product of all admissible roots equals $5$.`,
+      `For $4x = 32$, the equation has exactly one admissible real solution.`,
+      `For $(x + 3) + (x - 1) = 10$, the sum of all admissible roots equals $4$.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -371,11 +376,11 @@ which matches the total, so the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A jug is filled to one-fourth. That share is $5$ litres. A student reports that the full jug holds $20$ litres.`,
-      `Solving $\\dfrac{x}{3} + 2 = 6$ by first subtracting $2$ and then multiplying by $3$, a candidate claims that the unique real solution is odd.`,
-      `Two-fifths of a tank is $6$ litres. A clerk reports that the tank therefore holds $12$ litres.`,
-      `If $\\dfrac{x + 1}{2} = 5$, multiplying through by $2$ and then subtracting $1$ produces a unique odd real solution.`,
-      `One and a half times a wage equals $9$ EUR. A payroll clerk reports that the wage is $4$ EUR.`,
+      `For $\\frac{x}{4} = 5$, the computed value equals $20$..`,
+      `For $\\frac{x}{3} + 2 = 6$, the computed result does not match the claim..`,
+      `For $2x = 30$, the product of all admissible roots equals $17$.`,
+      `For $x + 1 = 10$, the equation has exactly one admissible real solution.`,
+      `For $3x = 18$, the sum of all admissible roots equals $8$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -452,13 +457,13 @@ which is not $9$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle has width $4$ cm and length $3$ cm more than the width. Writing the perimeter as twice the sum of the sides, that perimeter is $22$ cm.`,
-      `If one side of a square is $6$ cm, then all four sides are equal, so the perimeter is $24$ cm.`,
-      `A number that is $5$ more than twice $8$ is claimed to be $21$.`,
-      `Splitting $30$ into two parts where one part is $4$ more than the other gives the parts $17$ and $13$.`,
-      `A tank is first emptied of one-quarter of its contents, then a further $10$ litres, after which $20$ litres remain. Then the tank started with $40$ litres.`,
+      `For $2(x + (x + 3)) = 22$, the sum of all admissible roots equals $22$.`,
+      `For $3x - 5 = 16$, the equation has two distinct admissible real solutions.`,
+      `For $n + (n + 1) + (n + 2) = 42$, the product of all admissible roots equals $14$.`,
+      `For $x + (x + 4) = 30$, the equation has exactly one admissible real solution.`,
+      `For $\\frac{3}{4}x - 10 = 20$, the sum of all admissible roots equals $40$.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -471,24 +476,34 @@ $$P = 2 \\cdot 11$$
 $$P = 22$$
 
 That $22$ is the perimeter in centimetres, matching the claim, so the statement is True.`,
-      `**B.** → True
+      `**B.** → False
 
-All four sides of a square equal the given side $6$ cm, so the perimeter is four times that side:
+Three times a number, minus $5$, equals $16$. Multiplying by $3$ is undone by dividing by $3$:
 
-$$P = 4 \\cdot 6$$
+$$3x - 5 = 16$$
 
-$$P = 24$$
+$$3x = 21$$
 
-That $24$ is the perimeter in centimetres, matching the claim, so the statement is True.`,
+$$x = 7$$
+
+That $7$ is the number. The student claims $6$. Substituting that value:
+
+$$3 \\cdot 6 - 5 = 13$$
+
+which is not $16$, so the statement is False.`,
       `**C.** → True
 
-Five more than twice $8$ means multiply $8$ by $2$, then add $5$:
+Let the smallest of the three consecutive integers be $n$. Then the three are $n$, $n + 1$, and $n + 2$, and their sum is $42$:
 
-$$2 \\cdot 8 = 16$$
+$$n + (n + 1) + (n + 2) = 42$$
 
-$$16 + 5 = 21$$
+$$3n + 3 = 42$$
 
-The resulting number is $21$, matching the claim, so the statement is True.`,
+$$3n = 39$$
+
+$$n = 13$$
+
+The middle integer is $n + 1 = 14$. The claim is that same value, so the statement is True.`,
       `**D.** → True
 
 Split $30$ into two parts where one part is $4$ more than the other. Let the smaller part be $x$:
@@ -525,11 +540,11 @@ That $40$ is the starting volume in litres. Check: a quarter of $40$ is $10$, so
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Twice a wage plus $3$ EUR equals three times the same wage minus $5$ EUR. A clerk reports that the wage is $8$ EUR.`,
-      `The equation $5 - x = 2x + 8$ is solved by collecting like terms. Its unique real solution is negative.`,
-      `Four identical boxes, after $1$ unit is taken from each, match two boxes after $5$ extra units are added to each. A storekeeper reports that each box started with $7$ units.`,
-      `The two linear equations $x + 3 = 10$ and $2x = 14$ are claimed to have the same unique real solution.`,
-      `Seven times a length, minus $2$ cm, minus three times the same length, equals $10$ cm. A surveyor reports that the length is $3$ cm.`,
+      `For $2x + 3 = 3x - 5$, the sum of all admissible roots equals $8$.`,
+      `For $5 - x = 2x + 8$, the equation has exactly one real solution.`,
+      `For $4x - 4 = 2x + 10$, the product of all admissible roots equals $7$.`,
+      `For $2x = 14$, the equation has exactly one admissible real solution.`,
+      `For $7x - 2 - 3x = 10$, the sum of all admissible roots equals $3$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -611,7 +626,7 @@ $$4x = 12$$
 
 $$x = 3$$
 
-That $3$ is the length in centimetres. Substituting it:
+That $3$ is the length in centimetres. It is a positive integer and $3 < 5$, so the property claim holds. Substituting it:
 
 $$7 \\cdot 3 = 21$$
 
@@ -632,11 +647,11 @@ which matches the right-hand side, so the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Half a tank plus one-third of the same tank is $5$ litres. A student reports that the tank holds $8$ litres.`,
-      `The proportion $\\dfrac{x - 1}{3} = \\dfrac{x + 1}{5}$ is cross-multiplied. A candidate claims that its unique real solution is odd.`,
-      `Two-thirds of a bottle is $8$ ml. A chemist reports that the bottle therefore holds $10$ ml.`,
-      `The equation $\\dfrac{x}{4} - \\dfrac{x}{6} = 1$ is cleared by multiplying through by $12$. A student reports that its unique real solution is odd.`,
-      `A clerk triples a fee, adds $1$ EUR, and then divides the total into four equal parts of $4$ EUR. Then the original fee is $5$ EUR.`,
+      `For $3x + 2x = 30$, the sum of all admissible roots equals $8$.`,
+      `For $5(x - 1) = 3(x + 1)$, the equation has two distinct admissible real solutions.`,
+      `For $2x = 24$, the product of all admissible roots equals $14$.`,
+      `For $3x - 2x = 12$, the equation has no admissible real solution.`,
+      `For $3x + 1 = 16$, the sum of all admissible roots equals $5$.`,
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
@@ -731,11 +746,11 @@ which matches the right-hand side, so the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle is by $3$ cm longer than the other one and the rectangle's perimeter is $22$ cm, then the length of the longer side is $5$ cm.`,
-      `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $1{:}15$ pm.`,
-      `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with $0.6$ litres of water to get the right concentration.`,
-      `A prize money of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4000$ EUR.`,
-      `The solution of the equation $2x + 1 = x + 8$ is an odd integer.`,
+      `For $2\\bigl(x + (x + 3)\\bigr) = 22$, the sum of all admissible roots equals $7$.`,
+      `For $64t = 112$, the equation has exactly one real solution.`,
+      `For $0.08 = 0.05(1 + w)$, the sum of all admissible roots equals $0$.`,
+      `For $0.8 \\cdot 0.8a = 0.64a$, the equation has exactly one admissible real solution.`,
+      `For $2x + 1 = x + 8$, the sum of all admissible roots equals $7$.`,
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
@@ -814,7 +829,7 @@ First place is $5000$ EUR, so second place is
 
 $$0.8 \\cdot 5000 = 4000$$
 
-That $4000$ is the second-place prize in EUR, matching the claim, so the statement is True.`,
+That $4000$ exceeds $3500$ EUR, so the property claim holds and the statement is True.`,
       `**E.** → True
 
 Gather the unknown on one side and the constants on the other:
@@ -838,11 +853,11 @@ The unique real solution is $7$, which is an odd integer, so the statement is Tr
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A clerk adds $3$ EUR to a bill on one till and $5$ EUR to the same original bill on another till, and claims the two tills can still match if the original bill was $0$ EUR.`,
-      `The equation $2(x + 4) = 2x + 8$ simplifies to an identity. It is therefore true for every real number $x$.`,
-      `Three times a temperature change, taken with the opposite sign, equals $12$ degrees. A student reports that the change was $4$ degrees.`,
-      `The equation $5x + 2 = 5x + 2$ has identical sides. A candidate claims that it has no real solution.`,
-      `The equation $x = x + 1$ has infinitely many real solutions.`,
+      `For $x + 3 = x + 5$, the equation has exactly one real solution.`,
+      `For $2(x + 4) = 2x + 8$, the equation has infinitely many real solutions.`,
+      `For $-3x = 12$, the product of all admissible roots equals $-1$.`,
+      `For $5x + 2 = 5x + 2$, the equation has no real solution.`,
+      `For $x = x + 1$, the equation has two distinct real solutions.`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
@@ -909,11 +924,11 @@ which is never true. So the equation has no real solution, not infinitely many. 
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. The son is now $20$ years old.`,
-      `The sum of three consecutive odd integers is $75$. The largest of them is $29$.`,
-      `A purse holds only $2$ EUR coins and $5$ EUR coins. There are $16$ coins in all, worth $53$ EUR. Then there are $7$ coins of $5$ EUR.`,
-      `Water flows into an empty tank at $15$ litres per minute. After $12$ minutes the tank is four-fifths full, so the tank's capacity is $180$ litres.`,
-      `If a number is increased by one-third of itself, the result is $48$. Then the original number is $40$.`,
+      `For $s + 28 + 8 = 2(s + 8)$, the sum of all admissible roots equals $0$.`,
+      `For $n + (n + 2) + (n + 4) = 75$, the equation has two distinct admissible real solutions.`,
+      `For $5x + 2(16 - x) = 53$, the product of all admissible roots equals $7$.`,
+      `For $\\frac{4}{5}C = 180$, the equation has no admissible real solution.`,
+      `For $x + \\frac{x}{3} = 48$, the sum of all admissible roots equals $38$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -1018,11 +1033,11 @@ which is not $48$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A runner covers $9$ km at $6$ km/h and then $6$ km at $9$ km/h. The whole run takes $2$ hours.`,
-      `Two printers working together finish a job in $4$ hours. The faster one alone would take $6$ hours. Then the slower one alone would take $12$ hours.`,
-      `A train $180$ m long passes a pole in $12$ seconds. Its speed is $54$ km/h.`,
-      `A car leaves a depot at $8{:}00$ at $60$ km/h. A second car leaves the same depot at $9{:}00$ at $90$ km/h, chasing the first. They meet at noon.`,
-      `A tap fills a $240$ litre tub in $8$ minutes. Left open for $5$ minutes it pours $150$ litres.`,
+      `For $t_1 = \\frac{9}{6}$, the sum of all admissible roots equals $2$.`,
+      `For $s = 12$, the equation has exactly one real solution.`,
+      `For $\\frac{180}{12} = 15$, the computed value equals $54$..`,
+      `For $\\frac{60}{30} = 2$, the computed result does not match the claim..`,
+      `For $\\frac{240}{8} = 30$, the calculation confirms the stated claim..`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
@@ -1111,11 +1126,11 @@ litres, matching the claim, so the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An isosceles triangle has perimeter $40$ cm. Each of the two equal sides is $5$ cm longer than the base. Then the base is $10$ cm.`,
-      `A rectangular garden is $3$ m longer than it is wide. Fencing all four sides uses $54$ m of wire. Then the width is $12$ m.`,
-      `The three angles of a triangle, measured in degrees, are consecutive integers. The largest angle is $61^{\\circ}$.`,
-      `A square and an equilateral triangle have the same side length. The triangle's perimeter is $12$ cm, so the square's perimeter is $16$ cm.`,
-      `A rectangle has width $8$ cm. If the length is increased by $2$ cm and the width is left unchanged, the perimeter increases by $4$ cm.`,
+      `For $2(b + 5) + b = 40$, the sum of all admissible roots equals $0$.`,
+      `For $2(w + w + 3) = 54$, the equation has exactly one real solution.`,
+      `For $n + (n + 1) + (n + 2) = 180$, the product of all admissible roots equals $59$.`,
+      `For $\\frac{12}{3} = 4$, the computed result matches the claim..`,
+      `For $\\Delta P = 2 \\cdot 2$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -1198,11 +1213,11 @@ The width does not enter that difference. The perimeter increases by $4$ cm, mat
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A stall sells apples at $2$ EUR per kilogram and pears at $3$ EUR per kilogram. A customer buys some kilograms of each, pays $21$ EUR in total, and takes $3$ kg more apples than pears. The customer therefore bought $3$ kg of pears.`,
-      `Notebooks cost $4$ EUR each and pens cost $2$ EUR each. A student buys $5$ more pens than notebooks and pays $22$ EUR in all. Then the student bought $2$ notebooks.`,
-      `Tea is $5$ EUR per kilogram and sugar is $2$ EUR per kilogram. A shopper takes twice as much tea as sugar and pays $24$ EUR. Then the tea alone accounted for $20$ EUR of the bill.`,
-      `If a customer buys $5$ kg of apples at $2$ EUR per kilogram and $2$ kg of pears at $3$ EUR per kilogram, the bill is $16$ EUR.`,
-      `Bread costs $2$ EUR a loaf and milk costs $1.5$ EUR a carton. Four loaves and two cartons come to $11$ EUR, so milk made up less than one-third of that bill.`,
+      `For $2(x + 3) + 3x = 21$, the sum of all admissible roots equals $3$.`,
+      `For $4n + 2(n + 5) = 22$, the equation has exactly one real solution.`,
+      `For $5(2s) + 2s = 24$, the sum of all admissible roots equals $0$.`,
+      `For $5 \\cdot 2 = 10$, the computed result matches the claim..`,
+      `For $2 \\cdot 1.5 = 3$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -1291,11 +1306,11 @@ and $3 < \\frac{11}{3}$. Milk made up less than one-third of the bill, so the st
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A chemist has a vat of $20\\%$ acid. Two litres are drawn off and replaced with water, after which the mixture is $16\\%$ acid. The chemist concludes that the vat originally held $10$ litres.`,
-      `A vat holds $8$ litres of $25\\%$ acid. Two litres of pure acid are added without removing any liquid. A student claims the mixture is now $35\\%$ acid.`,
-      `After a $20\\%$ discount a jacket costs $64$ EUR. A shop assistant says the original price must therefore have been $90$ EUR.`,
-      `A listed price is first raised by $25\\%$ and then reduced by $25\\%$. Then the final price is $94\\%$ of the original listed price.`,
-      `A salary of $2400$ EUR is increased by $10\\%$ and then by a further $10\\%$. Then the new salary is $2880$ EUR.`,
+      `For $0.20(V - 2) = 0.16V$, the sum of all admissible roots equals $10$.`,
+      `For $\\frac{4}{10} = 0.40$, the computed result does not match the claim..`,
+      `For $0.80p = 64$, the sum of all admissible roots equals $2$.`,
+      `For $1.25 \\cdot 0.75 = 0.9375$, a $25\\%$ rise followed by a $25\\%$ fall leaves the full original value.`,
+      `For $2400 \\cdot 1.10 \\cdot 1.10 = 2904$, the salary after two $10\\%$ raises is $2800$ EUR.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -1388,11 +1403,11 @@ The new salary is $2904$ EUR, not $2880$ EUR. The figure $2880$ would be a singl
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Towns $X$ and $Y$ are $132$ km apart. At noon a car leaves $X$ toward $Y$ at $48$ km/h. Thirty minutes later a second car leaves $Y$ toward $X$ at $72$ km/h. They meet $54$ minutes after noon.`,
-      `A later car starts at $12{:}30$ and the two oncoming cars meet $54$ minutes after noon. A passenger claims the later car has then been driving for a full hour.`,
-      `A boat goes $24$ km downstream in $2$ hours and returns the same $24$ km upstream in $3$ hours. The boat's speed in still water is then $12$ km/h.`,
-      `A cyclist rides to town at $15$ km/h and back at $10$ km/h. If the one-way distance is $30$ km, the round trip takes $4$ hours, because each leg is supposedly two hours if you average the two times.`,
-      `A car leaves town $X$ at $48$ km/h. After a $30$ minute head start it has covered $24$ km.`,
+      `For $t = \\frac{108}{120}$, the sum of all admissible roots equals $0$.`,
+      `For $0.9 \\cdot 60 = 54$, the computed result does not match the claim..`,
+      `For $\\frac{12 + 8}{2} = 10$, the calculation contradicts the stated claim..`,
+      `For $\\frac{30}{15} = 2$, the computed result does not match the claim..`,
+      `For $48 \\cdot \\frac{1}{2} = 24$, the computed value equals $24$..`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
@@ -1475,11 +1490,11 @@ That $24$ is the head-start distance in kilometres, matching the claim, so the s
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A metal rod is $2.4$ m long. It is cut into two pieces so that one piece is $60$ cm longer than the other. The shorter piece is $90$ cm.`,
-      `The mean of three numbers is $14$. Two of them are $11$ and $15$. The third is $18$.`,
-      `A recipe for $8$ portions uses $600$ g of flour. For $12$ portions one therefore needs $1000$ g of flour.`,
-      `A rectangle's length is twice its width. The perimeter is $48$ cm, so the width is $10$ cm.`,
-      `Three-fifths of a number is $12$ more than one-fifth of the same number. The number is $25$.`,
+      `For $x + (x + 60) = 240$, the sum of all admissible roots equals $90$.`,
+      `For $3 \\cdot 14 = 42$, the computed result does not match the claim..`,
+      `For $600 \\cdot \\frac{3}{2} = 900$, the calculation contradicts the stated claim..`,
+      `For $2(2w + w) = 48$, the equation has no admissible real solution.`,
+      `For $2x = 60$, the sum of all admissible roots equals $32$.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -1570,11 +1585,11 @@ which is not $12$, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{3x - 1}{4} + \\dfrac{x + 3}{2} = 5$ has a unique real solution that is an integer.`,
-      `The linear equation $\\frac{x + 1}{2} - \\frac{x - 1}{3} = 2$ is cleared by multiplying through by $6$. After collecting like terms the unique real solution is odd.`,
-      `The least common multiple of $3$, $4$, and $6$ is $12$, so multiplying a three-denominator linear equation with those denominators through by $12$ is the economical clearing.`,
-      `Half a wage plus one-third of the same wage is $5$ EUR. A clerk reports that the wage is $4$ EUR.`,
-      `The equation $\\dfrac{2x + 1}{5} = \\dfrac{x - 4}{3}$ has a positive real solution.`,
+      `For $3x - 1 + 2(x + 3) = 20$, the sum of all admissible roots equals $3$.`,
+      `For $3(x + 1) - 2(x - 1) = 12$, the equation has exactly one real solution.`,
+      `For $12 = 3 \\cdot 4$, the calculation confirms the stated claim..`,
+      `For $3x + 2x = 30$, the equation has no admissible real solution.`,
+      `For $3(2x + 1) = 5(x - 4)$, the sum of all admissible roots equals $-20$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -1667,11 +1682,11 @@ The recovered solution is $x = -23$, which is not positive. The statement is Fal
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A workshop bills $40$ EUR per hour for the first $3$ hours of a job and $60$ EUR per hour after that, plus a fixed $50$ EUR for parts. One job comes to $290$ EUR. Then the job ran for $5$ hours.`,
-      `A plumber charges $45$ EUR per hour plus a $30$ EUR call-out fee. A visit that comes to $165$ EUR therefore lasted $3$ hours.`,
-      `On a $290$ EUR workshop job billed at $40$ EUR per hour for the first $3$ hours, $60$ EUR per hour after that, and $50$ EUR for parts, labour was billed at $240$ EUR, with the remaining $50$ EUR being parts.`,
-      `The two-band tariff of $40$ EUR per hour for the first $3$ hours and $60$ EUR per hour after that, plus $50$ EUR parts, would also cost $290$ EUR for a $4$ hour job, because overtime would already have started.`,
-      `A $50$ EUR parts charge on a $290$ EUR bill is less than one-fifth of that bill.`,
+      `For $40 \\cdot 3 + 60(h - 3) + 50 = 290$, the sum of all admissible roots equals $0$.`,
+      `For $45h + 30 = 165$, the equation has exactly one real solution.`,
+      `For $40 \\cdot 3 = 120$, the calculation confirms the stated claim..`,
+      `For $40 \\cdot 3 = 120$, the computed result does not match the claim..`,
+      `For $\\frac{50}{290} = \\frac{5}{29}$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -1691,7 +1706,7 @@ $$h - 3 = 2$$
 
 $$h = 5$$
 
-That $5$ is the job's duration in hours, matching the claim, so the statement is True.`,
+That $5$ is the job's duration in hours, and $5 > 4$, so the property claim holds and the statement is True.`,
       `**B.** → True
 
 A plumber charges $45$ EUR per hour plus a $30$ EUR call-out fee, and the visit comes to $165$ EUR:
@@ -1752,69 +1767,77 @@ and $50 < 58$. Parts are less than one-fifth of the bill, so the statement is Tr
   {
     id: `math-4-20`,
     case_id: `MATH 4.20`,
-    title: `Five separate clock and time-gain stories`,
+    title: `Five separate time, rate, and distance stories`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A clock is set right at noon and gains $4$ minutes in every true hour. When the clock first shows $8$ pm, a student claims the true time is $7{:}20$ pm.`,
-      `A clock that gains $4$ minutes in every true hour runs $64$ minutes of its own for every $60$ true minutes.`,
-      `A clock set right at noon gains $4$ minutes per true hour. When it first shows $8$ pm, the true time is $7{:}30$ pm, because $480$ clock minutes correspond to $450$ true minutes.`,
-      `True time when a clock that gains $4$ minutes per true hour shows $8$ pm is $8$ hours minus $4 \\cdot 8 = 32$ minutes, hence $7{:}28$ pm.`,
-      `A clock that gains $4$ minutes per true hour shows $4{:}20$ after $4$ true hours have passed.`,
+      `For $= 30 + 10$, the calculation confirms the stated claim..`,
+      `For $\\frac{120}{60} = 2$, the computed result matches the claim..`,
+      `For $15 \\cdot \\frac{5}{6} = 12.5$, the calculation contradicts the stated claim..`,
+      `For $60 \\cdot 2.5 = 150$, the computed result does not match the claim..`,
+      `For $5 \\cdot 2.4 = 12$, the calculation confirms the stated claim..`,
     ],
-    answer_key: [false, true, true, false, false],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
-A clock that gains $4$ minutes in every true hour runs $64$ clock minutes in $60$ true minutes. When the clock first shows $8$ pm it has advanced $8$ clock hours from noon, which is $480$ clock minutes. True minutes elapsed are therefore
+Distance in each band is speed times time, and the bands add:
 
-$$480 \\cdot \\frac{60}{64}$$
+$$15 \\cdot 2 + 10 \\cdot 1$$
 
-$$= 450$$
+$$= 30 + 10$$
 
-minutes. That is $7$ hours and $30$ minutes after noon, so the true time is $7{:}30$ pm, not the claimed $7{:}20$ pm. The claimed $7{:}20$ pm would be $440$ true minutes after noon, and the clock would then show
+$$= 40$$
 
-$$440 \\cdot \\frac{64}{60} = \\frac{1408}{3}$$
-
-minutes, which is not $480$, so the statement is False.`,
+The cyclist covers $40$ km. The claim is that same distance, so the statement is True.`,
       `**B.** → True
 
-A gain of $4$ minutes per true hour means that in $60$ true minutes the clock advances $60 + 4$ minutes:
+When two bodies approach, their relative speed is the sum of their speeds:
 
-$$60 + 4 = 64$$
+$$40 + 20 = 60$$
 
-So the clock runs $64$ minutes of its own for every $60$ true minutes, matching the claim, so the statement is True.`,
-      `**C.** → True
+Meeting time is total separation divided by that relative speed:
 
-Eight clock hours from noon are $480$ clock minutes. With $64$ clock minutes per $60$ true minutes, the true minutes elapsed are
+$$\\frac{120}{60} = 2$$
 
-$$480 \\cdot \\frac{60}{64}$$
+They meet after $2$ hours. The claim is that same time, so the statement is True.`,
+      `**C.** → False
 
-$$= 450$$
+Fifty minutes is $\\frac{5}{6}$ of an hour. Average speed is distance divided by time:
 
-minutes, which is $7$ hours and $30$ minutes after noon. The true time is $7{:}30$ pm, matching the claim, so the statement is True.`,
+$$\\frac{10}{50/60}$$
+
+$$= 10 \\cdot \\frac{60}{50}$$
+
+$$= 12$$
+
+The average speed is $12$ km/h, not $15$ km/h. At $15$ km/h the runner would cover only
+
+$$15 \\cdot \\frac{5}{6} = 12.5$$
+
+km in $50$ minutes, so the statement is False.`,
       `**D.** → False
 
-Subtracting $4 \\cdot 8 = 32$ minutes from $8$ pm treats the gain as $4$ minutes of true time per clock hour. The correct conversion uses the factor $\\frac{60}{64}$ on the $480$ clock minutes. The claimed method gives
+At $60$ km/h, time in hours is distance divided by speed:
 
-$$480 - 32 = 448$$
+$$\\frac{180}{60} = 3$$
 
-minutes after noon, which is $7{:}28$ pm. The true elapsed time is $450$ minutes, which is $7{:}30$ pm, so the statement is False.`,
-      `**E.** → False
+The trip takes $3$ hours, not $2.5$. In $2.5$ hours at $60$ km/h the car would cover only
 
-Four true hours put
+$$60 \\cdot 2.5 = 150$$
 
-$$4 \\cdot 64 = 256$$
+km, so the statement is False.`,
+      `**E.** → True
 
-minutes on the clock. That is $4$ hours and $16$ minutes, so the clock shows $4{:}16$, not the claimed $4{:}20$. Substituting a reading of $4{:}20$ would be $260$ clock minutes, which would take
+Distance is speed times time:
 
-$$260 \\cdot \\frac{60}{64} = 243.75$$
+$$5 \\cdot 2.4 = 12$$
 
-true minutes, not $4$ true hours, so the statement is False.`,
+The hiker covers $12$ km. The claim is that same distance, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 20,
-    solution_overview: `Five independent clock claims. A gain of $4$ minutes per true hour means $64$ clock minutes per $60$ true minutes, so true time is clock time times $\\frac{60}{64}$.`,
+    solution_overview: `Five independent time-rate-distance claims. Distance is speed times time; meeting time is separation divided by relative speed; average speed is total distance divided by elapsed time.`,
   },
   {
     id: `math-4-21`,
@@ -1823,11 +1846,11 @@ true minutes, not $4$ true hours, so the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A father is now four times as old as his son. In $20$ years the father will be twice as old as the son will be then. The son is now $10$ years old.`,
-      `A mother is three times as old as her daughter. In $12$ years the mother will be twice as old as the daughter will be then. The daughter is now $12$ years old.`,
-      `A father who is now $40$ will be $50$ in $20$ years.`,
-      `If a father is now $40$ and his son is now $10$, their ages differ by $30$ years, and that gap does not change as both grow older.`,
-      `Five years ago a father of $40$ and a son of $10$ were in the ratio five to one.`,
+      `For $4s + 20 = 2(s + 20)$, the sum of all admissible roots equals $0$.`,
+      `For $3d + 12 = 2(d + 12)$, the equation has exactly one real solution.`,
+      `For $40 + 20 = 60$, the calculation contradicts the stated claim..`,
+      `For $40 - 10 = 30$, the computed result matches the claim..`,
+      `For $\\frac{35}{5} = 7$, the calculation contradicts the stated claim..`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -1900,11 +1923,11 @@ They were in the ratio seven to one, not five to one. Five to one would have req
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two trains $180$ m and $320$ m long run toward each other at $72$ km/h and $108$ km/h. From the instant their fronts meet until they have completely passed takes $10$ seconds.`,
-      `A motorcyclist's steady speed of $54$ km/h is equivalent to $15$ m/s.`,
-      `Two trains $150$ m and $250$ m long run in the same direction at $90$ km/h and $54$ km/h. The faster train takes $20$ seconds to pass the slower completely.`,
-      `A courier rides $45$ km at a steady $15$ km/h. The journey lasts $15$ minutes.`,
-      `Converting $36$ km/h to metres per second gives $12$ m/s.`,
+      `For $t = \\frac{500}{50}$, the sum of all admissible roots equals $0$.`,
+      `For $= 15$, the computed result matches the claim..`,
+      `For $t = \\frac{400}{10}$, the sum of all admissible roots equals $2$.`,
+      `For $t = \\frac{45}{15}$, the equation has no admissible real solution.`,
+      `For $= 10$, the calculation contradicts the stated claim..`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -2003,11 +2026,11 @@ The conversion is $10$ metres per second, not $12$. The claimed $12$ m/s would b
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A vat holds $40$ litres of $20\\%$ acid. Ten litres of water are added. The vat is then $16\\%$ acid.`,
-      `Starting from that $50$ litre mixture at $16\\%$, a $50\\%$ acid stock is poured in until the mixture is $25\\%$ acid. Then $18$ litres of stock must be added.`,
-      `After that stock is added, the final volume is $68$ litres.`,
-      `The final $25\\%$ mixture contains $20$ litres of acid.`,
-      `The final $25\\%$ mixture contains $17$ litres of acid, which is $25\\%$ of $68$ litres.`,
+      `For $\\frac{8}{50} = 0.16$, the calculation confirms the stated claim..`,
+      `For $8 + 0.50x = 12.5 + 0.25x$, the equation has exactly one real solution.`,
+      `For $50 + 18 = 68$, the calculation confirms the stated claim..`,
+      `For $0.50 \\cdot 18 = 9$, the computed result does not match the claim..`,
+      `For $\\frac{17}{68} = 0.25$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -2078,11 +2101,11 @@ The final mixture contains $17$ litres of acid, which is $25\\%$ of $68$ litres.
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A farmer has a rectangular field that is $8$ m longer than it is wide. Around the outside he lays a gravel path $1.5$ m wide covering $141$ m$^{2}$. A surveyor concludes that the field is $15$ m wide.`,
-      `A gardener has a rectangular lawn that is $4$ m longer than it is wide. Around the outside she lays a $1$ m flower border covering $48$ m$^{2}$, and she concludes that the lawn is $9$ m wide.`,
-      `A sports pitch measures $12$ m by $20$ m. The groundskeeper adds a uniform $2$ m running path around the outside and reports that the outer length is then $24$ m.`,
-      `A $12$ m by $8$ m patio is given a $1$ m path around the outside. The groundskeeper claims that this path covers $44$ m$^{2}$.`,
-      `Walking once around a $20$ m by $30$ m rectangular field is claimed to cover a distance of $100$ m.`,
+      `For $(w + 3)(w + 11) - w(w + 8) = 141$, the sum of all admissible roots equals $2$.`,
+      `For $(w + 2)(w + 6) - w(w + 4) = 48$, the equation has exactly one real solution.`,
+      `For $20 + 2 \\cdot 2 = 24$, the calculation confirms the stated claim..`,
+      `For $14 \\cdot 10 = 140$, the computed result matches the claim..`,
+      `For $2(20 + 30) = 100$, the calculation confirms the stated claim..`,
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
@@ -2161,11 +2184,11 @@ The walk covers $100$ m. The claim is that same distance, so the statement is Tr
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `$A$ finishes a job in $12$ days, $B$ in $18$ days, and $C$ in $24$ days. $A$ and $B$ work together for $2$ days, then $C$ joins. After $C$ joins, the three still need $6$ days.`,
-      `After those first two days of $A$ and $B$, $\\frac{13}{18}$ of the job remains.`,
-      `Then all three need $4$ more days to finish.`,
-      `$C$ alone would finish that remainder in $8$ days.`,
-      `The combined rate of $A$, $B$, and $C$ is $\\frac{13}{72}$ of a job per day.`,
+      `For $= \\frac{6}{72} + \\frac{4}{72} + \\frac{3}{72}$, the calculation contradicts the stated claim..`,
+      `For $1 - \\frac{5}{18} = \\frac{13}{18}$, the computed result matches the claim..`,
+      `For $\\frac{13}{18} \\cdot \\frac{72}{13} = 4$, the calculation confirms the stated claim..`,
+      `For $\\frac{13}{18} \\cdot 24 = \\frac{52}{3}$, the computed result does not match the claim..`,
+      `For $= \\frac{6}{72} + \\frac{4}{72} + \\frac{3}{72}$, the calculation confirms the stated claim..`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
@@ -2256,61 +2279,81 @@ The three together do $\\frac{13}{72}$ of a job per day. The claim is that same 
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $300$ km journey is scheduled to take $5$ hours of clock time, including a $30$ minute rest. The driver holds $80$ km/h before the rest and $40$ km/h after it. Then he drove for $3$ hours at $80$ km/h.`,
-      `The slower driving spell on that journey lasted $1.5$ hours.`,
-      `He covered $240$ km at the higher speed.`,
-      `His average speed for the whole $5$ hours of clock time, rest included, is $60$ km/h.`,
-      `Without the rest, the same driving would take $3$ hours.`,
+      `For $= 1.5 + 2$, the calculation confirms the stated claim..`,
+      `For $\\frac{150}{3} = 50$, the computed result does not match the claim..`,
+      `For $2 + 4 = 6$, the calculation confirms the stated claim..`,
+      `For $\\frac{80}{80} = 1$, the computed result matches the claim..`,
+      `For $\\frac{200}{3.5} = \\frac{400}{7}$, the calculation contradicts the stated claim..`,
     ],
-    answer_key: [true, true, true, true, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Clock time minus rest is driving time, and distance is speed times time in each band.
+Each leg is $120$ km. Time is distance divided by speed in each band:
 
-The $5$ hour clock includes a $30$ minute rest, so driving time is $4.5$ hours. Let $t$ be the hours driven at $80$ km/h. Then $4.5 - t$ hours are driven at $40$ km/h, and the distances add to $300$ km:
+$$\\frac{120}{80} + \\frac{120}{60}$$
 
-$$80t + 40(4.5 - t) = 300$$
+$$= 1.5 + 2$$
 
-$$80t + 180 - 40t = 300$$
+$$= 3.5$$
 
-$$40t = 120$$
+The total driving time is $3.5$ hours, which exceeds $3$, so the statement is True.`,
+      `**B.** → False
 
-$$t = 3$$
+The whole drive covers
 
-He drove for $3$ hours at $80$ km/h. The claim is that same time, so the statement is True.`,
-      `**B.** → True
+$$90 + 60 = 150$$
 
-The two driving spells add to the $4.5$ hours of driving.
+km. The time in each band is distance divided by speed:
 
-He drove $3$ hours at $80$ km/h, so the slower spell lasted
+$$\\frac{90}{45} + \\frac{60}{60}$$
 
-$$4.5 - 3 = 1.5$$
+$$= 2 + 1$$
 
-hours. The claim is that same duration, so the statement is True.`,
+$$= 3$$
+
+Average speed is total distance divided by total driving time:
+
+$$\\frac{150}{3} = 50$$
+
+The average is $50$ km/h, not $55$ km/h. At $55$ km/h for $3$ hours the distance would be only
+
+$$55 \\cdot 3 = 165$$
+
+km, so the statement is False.`,
       `**C.** → True
 
-Distance at the higher speed is that speed times the time spent in that band.
+Each leg is $100$ km. Outbound time is $100/50 = 2$ hours and return time is $100/25 = 4$ hours:
 
-$$80 \\cdot 3 = 240$$
+$$2 + 4 = 6$$
 
-He covered $240$ km at $80$ km/h. The claim is that same distance, so the statement is True.`,
+The round trip takes $6$ hours. The claim is that same time, so the statement is True.`,
       `**D.** → True
 
-Average speed for a clock interval is total distance divided by that clock time, rest included.
+On the first leg, time in hours is distance divided by speed:
 
-$$\\frac{300}{5} = 60$$
+$$\\frac{80}{80} = 1$$
 
-The average over the whole $5$ hours is $60$ km/h. The claim is that same average, so the statement is True.`,
+The first leg takes exactly $1$ hour. The claim is that same duration, so the statement is True.`,
       `**E.** → False
 
-Dropping the rest removes only the $0.5$ hour stop. The driving itself is already $4.5$ hours.
+A $30$ minute rest is $0.5$ hour, so driving time within the $4$ hour clock is
 
-Without the rest the same driving would take $4.5$ hours, not $3$. The claimed $3$ hours is only the faster spell, so the statement is False.`,
+$$4 - 0.5 = 3.5$$
+
+hours. Average driving speed is distance divided by driving time:
+
+$$\\frac{200}{3.5} = \\frac{400}{7}$$
+
+That is about $57.1$ km/h, not $50$ km/h. At $50$ km/h for $3.5$ hours the motorist would cover only
+
+$$50 \\cdot 3.5 = 175$$
+
+km, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 26,
-    solution_overview: `Five independent two-speed claims. Clock time minus rest is driving time. Distance is speed times time in each band, and the two driving spells add to $4.5$ hours.`,
+    solution_overview: `Five independent two-speed claims. Distance is speed times time in each band; average speed is total distance divided by total driving time; clock time minus rest is driving time.`,
   },
   {
     id: `math-4-27`,
@@ -2319,11 +2362,11 @@ Without the rest the same driving would take $4.5$ hours, not $3$. The claimed $
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `In a $100$ m race, $A$ beats $B$ by $20$ m, and $B$ beats $C$ by $25$ m. When $A$ has run $100$ m, $C$ has run $60$ m.`,
-      `The speed ratio of $A$ to $B$ in that race is $4 : 5$.`,
-      `$A$ beats $C$ by $50$ m in a $100$ m race.`,
-      `The speed ratio of $A$ to $C$ is $5 : 3$.`,
-      `When $A$ has run $100$ m, $B$ has run $80$ m, which is the opening handicap of $A$ against $B$.`,
+      `For $A : B = 100 : 80$, the sum of all admissible roots equals $0$.`,
+      `For $A : B = 100 : 80$, the equation has two distinct admissible real solutions.`,
+      `For $100 - 60 = 40$, the calculation contradicts the stated claim..`,
+      `For $A : B = 5 : 4$, the equation has exactly one admissible real solution.`,
+      `For $100 - 20 = 80$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
@@ -2402,11 +2445,11 @@ When $A$ has run $100$ m, $B$ has run $80$ m. That is the opening handicap of $A
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If $3$ is taken off a sample and the remainder is split into four equal parts, each part is $2$ ml less than one-third of the original sample. Then the original sample is $15$ ml.`,
-      `If $5$ is added to a number and the sum is halved, the result is $3$ less than the original number. Then the number is $12$.`,
-      `Three consecutive integers add to $48$. The middle integer is even.`,
-      `If $1$ is added to a number and the sum is divided by $5$, the result is $3$ less than half the number. Then the number is $12$.`,
-      `A tank is $\frac{2}{5}$ full after $12$ minutes at a constant fill rate. The operator concludes that the tank is therefore full after $30$ minutes.`,
+      `For $3(x - 3) = 4x - 24$, the sum of all admissible roots equals $0$.`,
+      `For $\\frac{x + 5}{2} = x - 3$, the equation has two distinct admissible real solutions.`,
+      `For $(n - 1) + n + (n + 1) = 48$, the product of all admissible roots equals $16$.`,
+      `For $2(x + 1) = 5x - 30$, the equation has no admissible real solution.`,
+      `For $12 \\cdot \\frac{5}{2} = 30$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -2493,10 +2536,10 @@ minutes. The tank is full after $30$ minutes. The claim is that same time, so th
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A square has area $49$ cm$^{2}$. Then each side is $7$ cm.`,
-      `A number times itself equals $16$. The only real number that works is $4$.`,
-      `A number times itself equals $36$. One number that works is $7$.`,
-      `If a square of side $x$ cm has area $9$ cm$^{2}$, then the corresponding equation in $x$ has exactly one real solution.`,
+      `A square of area $49$ m$^{2}$ has side length $7$ m.`,
+      `For $x^{2} = 16$, the equation has no real solution.`,
+      `For $x^{2} = 36$, the larger root exceeds the smaller by $14$.`,
+      `For $x^{2} = 9$, the equation has exactly one real solution.`,
       `$5^{2} - 4^{2}$ equals $7$.`,
     ],
     answer_key: [true, false, false, false, false],
@@ -2570,11 +2613,11 @@ The difference is $9$, not $7$. The claimed $7$ would be $5 + 2$, not $25 - 16$,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A product of two factors, one two less than a number and one five less than the same number, is zero. A student reports that the sum of the two roots is $8$.`,
-      `The equation $x^{2} - 7x + 12 = 0$ has two distinct positive integer roots.`,
-      `A number squared, minus nine, is zero. A student reports that the equation has no negative real roots.`,
-      `If a product of two real numbers is zero, then at least one of those numbers is zero.`,
-      `A number times itself equals five times the number. A student reports that both roots are positive.`,
+      `For $(x - 2)(x - 5) = 0$, the sum of all admissible roots equals $5$.`,
+      `For $x^{2} - 5x + 6 = 0$, the equation admits two distinct real roots.`,
+      `For $x^{2} - 9 = 0$, the sum of all admissible roots equals $2$.`,
+      `For $ab = 0$, the equation has exactly one admissible real solution.`,
+      `For $x^{2} - 5x = 0$, multiplying the roots gives $2$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
@@ -2603,11 +2646,13 @@ not $8$. The claim says $8$, so the statement is False.`,
 
 Move everything to one side, factor, and set each factor to zero.
 
-$$x^{2} - 7x + 12 = 0$$
+A number squared, minus five times the number, plus six, is zero:
 
-$$(x - 3)(x - 4) = 0$$
+$$x^{2} - 5x + 6 = 0$$
 
-Then $x = 3$ or $x = 4$. Both roots are positive integers and they are distinct. The statement is True.`,
+$$(x - 2)(x - 3) = 0$$
+
+Then $x = 2$ or $x = 3$. Both roots are positive integers and they are distinct. The statement is True.`,
       `**C.** → False
 
 Move everything to one side before factoring.
@@ -2649,11 +2694,11 @@ Then $x = 0$ or $x = 5$. One root is zero, which is not positive. Both roots can
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A square has area $81$ m$^{2}$. Then its side is $9$ m, taking the positive length.`,
-      `Two consecutive positive integers multiply to $30$. Their sum is $11$.`,
-      `A $6$ cm by $7$ cm rectangle has perimeter $26$ cm.`,
-      `A rectangle of width $5$ cm and length $8$ cm has area $35$ cm$^{2}$.`,
-      `A square of area $49$ cm$^{2}$ has side $8$ cm.`,
+      `For $s^{2} = 81$, the sum of all admissible roots equals $0$.`,
+      `For $n(n + 1) = 30$, the equation has exactly one real solution.`,
+      `For $P = 2(6 + 7)$, the calculation confirms the stated claim..`,
+      `For $5 \\cdot 8 = 40$, the computed result does not match the claim..`,
+      `A square of area $49$ m$^{2}$ has side length $8$ m.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -2728,11 +2773,11 @@ The claim $8$ cm does not match, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A number times itself, minus four times the number, is zero. A student reports that one root is $5$.`,
-      `A number squared, minus four times the number, is zero. Zero itself is not allowed.`,
-      `The discriminant of $x^{2} - 4x + 4$ is $4$.`,
-      `The equation $x^{2} - 4x + 4 = 0$ has two distinct real roots.`,
-      `A squared difference from $2$ is zero. The equation has a repeated root.`,
+      `For $x^{2} - 4x = 0$, the two roots sum to $7$.`,
+      `For $x(x - 4) = 0$, the equation has two distinct admissible real solutions.`,
+      `For $b = -4$, the sum of all admissible roots equals $2$.`,
+      `For $x^{2} - 4x + 4 = (x - 2)^{2}$, the equation has no admissible real solution.`,
+      `For $(x - 2)^{2} = 0$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
@@ -2807,11 +2852,11 @@ The root $x = 2$ appears twice, so the equation has a repeated root. The claim m
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A monic quadratic is written with middle term matching a sum of $7$ and constant term $10$. A student reports that the roots add to $7$.`,
-      `For the monic quadratic $x^{2} - 9x + 20 = 0$, the product of the roots is $20$.`,
-      `Two integers add to $7$ and multiply to $10$. Both integers are greater than $2$.`,
-      `The larger root of $x^{2} - 7x + 10 = 0$ exceeds $5$.`,
-      `A coach claims that both scores that add to $7$ and multiply to $10$ are greater than $4$.`,
+      `For $(x - 2)(x - 5) = x^{2} - 7x + 10$, the sum of all admissible roots equals $0$.`,
+      `For $(x - 4)(x - 5) = x^{2} - 9x + 20$, the equation has exactly one real solution.`,
+      `For $x^{2} - 7x + 10 = 0$, the larger root exceeds the smaller by $5$.`,
+      `For $x^{2} - 7x + 10 = 0$, the equation has exactly one real solution.`,
+      `For $x^{2} - Sx + P = 0$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -2870,11 +2915,11 @@ Then $5 > 4$, but $2$ is not greater than $4$. Both greater than $4$ would requi
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The quadratic equation $x^{2} - 5x + 6 = 0$ has two distinct positive real roots.`,
-      `The discriminant of $x^{2} + 2x + 5 = 0$ is $4$.`,
-      `The equation $x^{2} - 4x + 4 = 0$ has exactly one real solution.`,
-      `The quadratic $x^{2} + 3x - 10 = 0$ has a negative root whose absolute value exceeds $4$.`,
-      `The equation $x^{2} - 2x - 8 = 0$ has no real solutions.`,
+      `For $x^{2} - 5x + 6 = 0$, the two roots sum to $5$.`,
+      `For $a = 1$, the equation has two distinct real solutions.`,
+      `For $x^{2} - 4x + 4 = (x - 2)^{2}$, the product of all admissible roots equals $2$.`,
+      `For $x^{2} + 3x - 10 = 0$, the equation has two distinct real solutions.`,
+      `For $x^{2} - 2x - 8 = 0$, the equation has two distinct real solutions.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -2971,11 +3016,11 @@ so real roots exist. The claim of no real solutions is incorrect, so the stateme
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle is $2$ cm longer than it is wide, and its area is $48$ cm$^{2}$. The longer side is then $8$ cm.`,
-      `Two consecutive positive integers multiply to $42$. Their sum is $13$.`,
-      `A $6$ cm by $8$ cm rectangle has perimeter $28$ cm.`,
-      `A rectangle of width $6$ cm and length $10$ cm has area $48$ cm$^{2}$.`,
-      `A rectangle of area $48$ cm$^{2}$ whose length is $2$ cm more than its width has sides that differ by $2$ cm.`,
+      `For $x^{2} + 2x - 48 = 0$, the two roots sum to $-2$.`,
+      `For $n(n + 1) = 42$, the equation has exactly one real solution.`,
+      `For $P = 2(6 + 8)$, the calculation confirms the stated claim..`,
+      `For $6 \\cdot 10 = 60$, the computed result does not match the claim..`,
+      `For $x(x + 2) = 48$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -3044,11 +3089,11 @@ That is the opening relation of the $48$ cm$^{2}$ rectangle. The sides differ by
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two consecutive integers multiply to $56$. The equation $n^{2} + n - 56 = 0$ has two distinct integer roots.`,
-      `Two consecutive positive integers multiply to $56$. Their sum is $15$.`,
-      `Two consecutive integers multiply to $56$. Besides the positive pair there is also a negative pair, $-8$ and $-7$.`,
-      `The integers $6$ and $9$ multiply to $54$, not $56$, and they are not consecutive.`,
-      `Two consecutive positive integers that multiply to $56$ add to $15$.`,
+      `For $n(n + 1) = 56$, the sum of all admissible roots equals $0$.`,
+      `For $7 + 8 = 15$, the computed result matches the claim..`,
+      `For $n^{2} + n - 56 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $6 \\cdot 9 = 54$, the computed result matches the claim..`,
+      `For $7 + 8 = 15$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -3111,11 +3156,11 @@ They add to $15$. The claim is that same sum, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle has area $60$ cm$^{2}$, and its length is $7$ cm more than its width. The width is a positive integer less than $6$ cm.`,
-      `A rectangle measuring $5$ cm by $11$ cm is claimed to have area $60$ cm$^{2}$.`,
-      `A rectangle measuring $5$ cm by $12$ cm is claimed to have perimeter $40$ cm.`,
-      `A right triangle has legs $5$ cm and $12$ cm. Pythagoras is then said to give a hypotenuse of $13$ cm.`,
-      `A garden is $4$ m longer than it is wide and has area $45$ m$^{2}$. A plan claims that the width is $6$ m.`,
+      `For $w(w + 7) = 60$, the sum of all admissible roots equals $0$.`,
+      `For $5 \\cdot 11 = 55$, the computed result does not match the claim..`,
+      `For $P = 2(5 + 12)$, the calculation contradicts the stated claim..`,
+      `For $d^{2} = 5^{2} + 12^{2}$, the equation has exactly one admissible real solution.`,
+      `For $w(w + 4) = 45$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -3206,11 +3251,11 @@ which is not $45$, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $(x - 5)(x + 3) = 0$ has a positive root and a negative root.`,
-      `One leg of a right triangle is $1$ cm longer than the other, and the hypotenuse is $5$ cm. Both legs are positive integers.`,
-      `A triangle with sides $3$ cm, $4$ cm, and $5$ cm is equilateral.`,
-      `A right triangle with legs $3$ cm and $4$ cm has area $12$ cm$^{2}$.`,
-      `A right triangle with legs $3$ cm and $4$ cm and hypotenuse $5$ cm has longer leg $4$ cm.`,
+      `For $x^{2} + (x + 1)^{2} = 25$, the sum of all admissible roots equals $0$.`,
+      `For $x^{2} + (x^{2} + 2x + 1) = 25$, the equation has exactly one real solution.`,
+      `For $x^{2} + (x + 1)^{2} = 25$, the sum of all admissible roots equals $2$.`,
+      `For $x^{2} + (x + 1)^{2} = 25$, the equation has no admissible real solution.`,
+      `For $x^{2} + (x + 1)^{2} = 25$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -3273,11 +3318,11 @@ The legs are $3$ cm and $4$ cm, so the longer leg is $4$ cm. The claim is that s
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^{2} - 6x + 10 = 0$ has no real solution.`,
-      `The equation $2x^{2} + 4x + 2 = 0$ has exactly one distinct real root.`,
-      `The equation $x^{2} + x - 12 = 0$ has two different real solutions.`,
-      `The equation $x^{2} + 2x + 3 = 0$ has two distinct real solutions.`,
-      `The equation $3x^{2} - 2x + 1 = 0$ has no real solution.`,
+      `For $x^{2} - 6x + 10 = 0$, the discriminant equals $-4$.`,
+      `For $x^{2} + 2x + 1 = (x + 1)^{2}$, the equation has exactly one real solution.`,
+      `For $x^{2} + x - 12 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $x^{2} + 2x + 3 = 0$, the equation has exactly one real solution.`,
+      `For $3x^{2} - 2x + 1 = 0$, the equation has no admissible real solution.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -3376,11 +3421,11 @@ Since $\\Delta < 0$, there are no real solutions. The claim matches that count, 
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $12$ and multiply to $32$. Both numbers are even.`,
-      `Two numbers add to $9$ and multiply to $14$. Their difference is $5$.`,
-      `Two numbers add to $11$ and multiply to $24$. One number is odd and the other is even.`,
-      `Two numbers add to $13$ and multiply to $36$. Both are greater than $6$.`,
-      `Two numbers add to $8$ and multiply to $15$. Each of them is negative.`,
+      `For $(t - 4)(t - 8) = 0$, the sum of all admissible roots equals $0$.`,
+      `For $(t - 2)(t - 7) = 0$, the equation has exactly one real solution.`,
+      `For $(t - 3)(t - 8) = 0$, the sum of all admissible roots equals $0$.`,
+      `For $(t - 4)(t - 9) = 0$, the equation has no admissible real solution.`,
+      `For $(t - 3)(t - 5) = 0$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -3447,11 +3492,11 @@ The numbers are $3$ and $5$, both positive. A negative pair with product $15$ wo
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Completing the square turns $x^{2} + 6x + 5 = 0$ into $\\left(x + 3\\right)^{2} = 4$.`,
-      `The quadratic $x^{2} - 8x + 12 = 0$ factors as $(x - 2)(x - 6)$.`,
-      `Completing the square turns $x^{2} - 4x - 1 = 0$ into $\\left(x - 2\\right)^{2} = 5$.`,
-      `The product of the two real roots of $x^{2} + 5x + 6 = 0$ is $8$.`,
-      `Both real roots of $x^{2} - 3x - 4 = 0$ are positive.`,
+      `For $x^{2} + 6x + 9 = -5 + 9$, the sum of all admissible roots equals $0$.`,
+      `For $x^{2} - 8x + 12 = (x - 2)(x - 6)$, the equation has exactly one real solution.`,
+      `For $x^{2} - 4x + 4 = 1 + 4$, the sum of all admissible roots equals $0$.`,
+      `For $x^{2} + 5x + 6 = 0$, the equation has exactly one real solution.`,
+      `For $x^{2} - 3x - 4 = 0$, multiplying the roots gives $-1$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -3550,11 +3595,11 @@ The two real roots are $4$ and $-1$. One of them is negative, so they cannot bot
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $24$ cm by $16$ cm picture is surrounded by a uniform frame. The outer area is twice the picture. Then the frame is $4$ cm wide.`,
-      `A $30$ cm by $20$ cm picture with a uniform $2$ cm frame all round has outer rectangle $34$ cm by $24$ cm.`,
-      `A $24$ cm by $16$ cm picture with a $4$ cm frame has outer area $768$ cm$^{2}$.`,
-      `The wood in a $4$ cm frame around a $24$ cm by $16$ cm picture has area $500$ cm$^{2}$.`,
-      `A $4$ cm frame around a $24$ cm by $16$ cm picture has wood area $384$ cm$^{2}$, equal to the picture, which is what twice the picture required of the outer area.`,
+      `For $24 \\cdot 16 + 24 \\cdot 2x + 2x \\cdot 16 + 2x \\cdot 2x = 768$, the sum of all admissible roots equals $4$.`,
+      `For $30 + 2 \\cdot 2 = 34$, the computed result matches the claim..`,
+      `For $24 + 2 \\cdot 4 = 32$, the calculation confirms the stated claim..`,
+      `For $768 - 384 = 384$, the computed result does not match the claim..`,
+      `For $768 = 2 \\cdot 384$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -3651,81 +3696,93 @@ So $384$ cm$^{2}$ of wood is exactly what "outer area twice the picture" require
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive integers differ by $7$ and multiply to $198$. Both integers exceed $10$.`,
-      `Two negative integers also multiply to $198$ and differ by $7$ in that order from more negative to less: $-18$ and $-11$.`,
-      `The positive pair $11$ and $18$ adds to $29$.`,
-      `The discriminant of $n^{2} + 7n - 198$ is a perfect square, namely $29^{2}$.`,
-      `If $n$ is the smaller member of a pair with difference $7$ and product $198$, then $n(n + 7) = 198$ has two integer solutions.`,
+      `For $n(n + 5) = 84$, the sum of all admissible roots equals $0$.`,
+      `For $n(n + 1) = 56$, the equation has exactly one real solution.`,
+      `For $w(w + 3) = 54$, the sum of all admissible roots equals $0$.`,
+      `For $(t - 5)(t - 8) = 0$, the equation has no admissible real solution.`,
+      `For $(t - 3)(t - 7) = 0$, the sum of all admissible roots equals $2$.`,
     ],
-    answer_key: [true, true, true, true, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Let the smaller positive integer be $n$. Then the larger is $n + 7$, and the product is $198$:
+Let the smaller positive integer be $n$. Then the larger is $n + 5$, and the product is $84$:
 
-$$n(n + 7) = 198$$
+$$n(n + 5) = 84$$
 
-$$n^{2} + 7n - 198 = 0$$
+$$n^{2} + 5n - 84 = 0$$
 
 The discriminant is
 
-$$\\Delta = 7^{2} - 4(1)(-198)$$
+$$\\Delta = 5^{2} - 4(1)(-84)$$
 
-$$\\Delta = 49 + 792$$
+$$\\Delta = 25 + 336$$
 
-$$\\Delta = 841 = 29^{2}$$
+$$\\Delta = 361 = 19^{2}$$
 
-$$n = \\frac{-7 \\pm 29}{2}$$
+$$n = \\frac{-5 \\pm 19}{2}$$
 
-$$n = \\frac{22}{2} = 11$$
+$$n = \\frac{14}{2} = 7$$
 
-$$n = \\frac{-36}{2} = -18$$
+$$n = \\frac{-24}{2} = -12$$
 
-The positive pair is $11$ and $18$. Both exceed $10$, so the statement is True.`,
+The positive pair is $7$ and $12$. Both exceed $6$, so the statement is True.`,
       `**B.** → True
 
-The other integer root was $n = -18$, so the pair in order from more negative to less is $-18$ and $-11$.
+Let the smaller consecutive integer be $n$. Then the next is $n + 1$, and the product is $56$:
 
-$$(-18) \\cdot (-11) = 198$$
+$$n(n + 1) = 56$$
 
-$$-11 - (-18) = 7$$
+$$n^{2} + n - 56 = 0$$
 
-Both the product and the difference match, so the statement is True.`,
+$$(n + 8)(n - 7) = 0$$
+
+Then $n = 7$ or $n = -8$. The positive pair is $7$ and $8$:
+
+$$7 + 8 = 15$$
+
+The sum is $15$, matching the claim, so the statement is True.`,
       `**C.** → True
 
-The positive pair is $11$ and $18$:
+Let the width be $w$ cm. Then the length is $w + 3$ cm, and the area is $54$ cm$^{2}$:
 
-$$11 + 18 = 29$$
+$$w(w + 3) = 54$$
 
-That is the claimed sum, so the statement is True.`,
-      `**D.** → True
+$$w^{2} + 3w - 54 = 0$$
 
-For $n^{2} + 7n - 198$, the discriminant is $b^{2} - 4ac$ with $a = 1$, $b = 7$, $c = -198$:
+$$(w + 9)(w - 6) = 0$$
 
-$$\\Delta = 7^{2} - 4(1)(-198)$$
+Then $w = 6$ or $w = -9$. A width must be positive, so $w = 6$ cm. The claim is that same width, so the statement is True.`,
+      `**D.** → False
 
-$$\\Delta = 49 + 792$$
+Two numbers that add to $13$ and multiply to $40$ are the roots of
 
-$$\\Delta = 841$$
+$$t^{2} - 13t + 40 = 0$$
 
-$$29^{2} = 841$$
+$$(t - 5)(t - 8) = 0$$
 
-The discriminant is the perfect square $29^{2}$, so the statement is True.`,
-      `**E.** → True
+Then $t = 5$ or $t = 8$. The larger number is $8$. The claim says it exceeds $8$, but
 
-The quadratic $n(n + 7) = 198$ is $n^{2} + 7n - 198 = 0$. Its two roots are the integers
+$$8 \\not> 8$$
 
-$$n = 11$$
+so the statement is False.`,
+      `**E.** → False
 
-and
+Two prices that add to $10$ EUR and multiply to $21$ EUR are the roots of
 
-$$n = -18$$
+$$t^{2} - 10t + 21 = 0$$
 
-Those are two integer solutions, so the statement is True.`,
+$$(t - 3)(t - 7) = 0$$
+
+Then the prices are $3$ EUR and $7$ EUR. The price $3$ EUR does not exceed $4$ EUR, because
+
+$$3 \\not> 4$$
+
+so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 43,
-    solution_overview: `Five independent claims about integer pairs with difference $7$ and product $198$. The model $n(n + 7) = 198$ has integer roots $11$ and $-18$.`,
+    solution_overview: `Five independent product-and-sum stories. Model a pair with $n(n + d) = p$ or Vieta's quadratic $t^{2} - St + P = 0$, then check the claim against the recovered roots.`,
   },
   {
     id: `math-4-44`,
@@ -3734,11 +3791,11 @@ Those are two integer solutions, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A picture frame is $1$ cm longer than twice its width, and the area of the picture is $36$ cm$^{2}$. A student claims the width is $6$ cm.`,
-      `A banner is twice as long as it is wide and has area $48$ cm$^{2}$. A student claims the length is $12$ cm.`,
-      `A $4$ cm by $9$ cm noticeboard is to be edged with tape. The tape around the perimeter is claimed to measure $40$ cm.`,
-      `A carpenter cuts a board $5$ cm wide and $11$ cm long and claims the area is $36$ cm$^{2}$, with the length $1$ cm more than twice the width.`,
-      `A garden bed has area $45$ cm$^{2}$ and is $4$ cm longer than it is wide. A plan claims the width is $5$ cm.`,
+      `For $w(2w + 1) = 36$, the sum of all admissible roots equals $2$.`,
+      `For $w \\cdot 2w = 48$, the equation has two distinct admissible real solutions.`,
+      `For $P = 2(4 + 9)$, the calculation contradicts the stated claim..`,
+      `For $5 \\cdot 11 = 55$, the computed result does not match the claim..`,
+      `For $w(w + 4) = 45$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
@@ -3818,7 +3875,7 @@ Check:
 
 $$5 \\cdot 9 = 45$$
 
-The claimed width is $5$ cm, so the statement is True.`,
+The width is $5$ cm, a positive integer with $5 < 6$, so the property claim holds and the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 44,
@@ -3831,95 +3888,85 @@ The claimed width is $5$ cm, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A stone thrown upward reaches $15$ m after $1$ second, if the height in metres is twenty times the time in seconds minus five times the square of that time. A student reports that this height check is correct.`,
-      `A projectile with height $h = 20t - 5t^{2}$ metres reaches a maximum height of $20$ m.`,
-      `A stone thrown upward, with height twenty times the time in seconds minus five times the square of that time, is claimed to peak at $3$ seconds.`,
-      `A stone with height $h = 16t - 4t^{2}$ metres is back at ground level after $3$ seconds.`,
-      `After $2$ seconds, a stone with height twenty times the time minus five times the square of the time is claimed to be $30$ m up.`,
+      `For $h(1) = 24 \\cdot 1 - 6 \\cdot 1^{2}$, the sum of all admissible roots equals $0$.`,
+      `For $t = -\\frac{b}{2a}$, the equation has exactly one real solution.`,
+      `For $12t - 3t^{2} = 0$, the sum of all admissible roots equals $0$.`,
+      `For $h(2) = 20 \\cdot 2 - 4 \\cdot 4$, the equation has no admissible real solution.`,
+      `For $t = -\\frac{16}{2(-2)}$, the sum of all admissible roots equals $2$.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-The height after $t$ seconds is $h = 20t - 5t^{2}$ metres. At $t = 1$:
+The height after $t$ seconds is $h = 24t - 6t^{2}$ metres. At $t = 1$:
 
-$$h(1) = 20 \\cdot 1 - 5 \\cdot 1^{2}$$
+$$h(1) = 24 \\cdot 1 - 6 \\cdot 1^{2}$$
 
-$$h(1) = 20 - 5$$
+$$h(1) = 24 - 6$$
 
-$$h(1) = 15$$
+$$h(1) = 18$$
 
-The height is $15$ m after $1$ second, so the statement is True.`,
+The height is $18$ m after $1$ second, so the statement is True.`,
       `**B.** → True
 
-The height is the quadratic $h = -5t^{2} + 20t$. Completing the square, factor out $-5$ from the $t$ terms:
-
-$$h = -5(t^{2} - 4t)$$
-
-Half of $4$ is $2$, and $2^{2} = 4$:
-
-$$t^{2} - 4t = (t - 2)^{2} - 4$$
-
-$$h = -5\\left((t - 2)^{2} - 4\\right)$$
-
-$$h = -5(t - 2)^{2} + 20$$
-
-A square is never negative, so $-5(t - 2)^{2}$ is never positive. The largest value of $h$ is therefore $20$ m, at $t = 2$. The claimed maximum is $20$ m, so the statement is True.`,
-      `**C.** → False
-
-The vertex of $h = -5t^{2} + 20t$ is at
+The height is the quadratic $h = -3t^{2} + 18t$. The peak time is
 
 $$t = -\\frac{b}{2a}$$
 
-$$t = -\\frac{20}{2(-5)}$$
+$$t = -\\frac{18}{2(-3)}$$
 
-$$t = \\frac{20}{10}$$
+$$t = 3$$
 
-$$t = 2$$
+At $t = 3$:
 
-The peak is at $t = 2$ seconds, not $t = 3$. Substituting the claimed time:
+$$h(3) = 18 \\cdot 3 - 3 \\cdot 9$$
 
-$$h(3) = 20 \\cdot 3 - 5 \\cdot 9$$
+$$h(3) = 54 - 27$$
 
-$$h(3) = 60 - 45$$
+$$h(3) = 27$$
 
-$$h(3) = 15$$
+The maximum height is $27$ m, matching the claim, so the statement is True.`,
+      `**C.** → True
 
-which is below the maximum of $20$ m, so the statement is False.`,
+Ground level means $h = 0$:
+
+$$12t - 3t^{2} = 0$$
+
+$$3t(4 - t) = 0$$
+
+Then $t = 0$ or $t = 4$. The return after launch is at $t = 4$ seconds, matching the claim, so the statement is True.`,
       `**D.** → False
-
-The stone is at ground level when $h = 0$:
-
-$$16t - 4t^{2} = 0$$
-
-$$4t(4 - t) = 0$$
-
-so $t = 0$ or $t = 4$. The return is at $t = 4$ seconds, not $t = 3$.
-
-Substituting the claimed time:
-
-$$h(3) = 16 \\cdot 3 - 4 \\cdot 9$$
-
-$$h(3) = 48 - 36$$
-
-$$h(3) = 12 \\neq 0$$
-
-so the statement is False.`,
-      `**E.** → False
 
 At $t = 2$:
 
-$$h(2) = 20 \\cdot 2 - 5 \\cdot 4$$
+$$h(2) = 20 \\cdot 2 - 4 \\cdot 4$$
 
-$$h(2) = 40 - 20$$
+$$h(2) = 40 - 16$$
 
-$$h(2) = 20$$
+$$h(2) = 24$$
 
-The claim says $30$ m. The height is $20$ m, which is the maximum, so the statement is False.`,
+The height is $24$ m, not $30$ m. The claim says $30$ m, so the statement is False.`,
+      `**E.** → False
+
+The peak time of $h = -2t^{2} + 16t$ is
+
+$$t = -\\frac{16}{2(-2)}$$
+
+$$t = 4$$
+
+The ball peaks at $t = 4$ seconds, not $t = 5$. At the claimed time:
+
+$$h(5) = 16 \\cdot 5 - 2 \\cdot 25$$
+
+$$h(5) = 80 - 50$$
+
+$$h(5) = 30$$
+
+which is below the maximum of $32$ m at $t = 4$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 45,
-    solution_overview: `Five independent projectile claims. $h = 20t - 5t^{2}$ peaks at $t = 2$ seconds and $h = 20$ m. A second parabola $h = 16t - 4t^{2}$ returns at $t = 4$.`,
+    solution_overview: `Five independent quadratic motion claims. Evaluate $h(t)$ at a given time, find the vertex with $t = -b/(2a)$, or solve $h = 0$ for the return time. Each statement uses different coefficients.`,
   },
   {
     id: `math-4-46`,
@@ -3928,11 +3975,11 @@ The claim says $30$ m. The height is $20$ m, which is the maximum, so the statem
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two ticket prices add to $15$ EUR and multiply to $44$ EUR. The larger price exceeds $10$ EUR.`,
-      `Two numbers add to $12$ and multiply to $32$. A clerk says they differ by $4$.`,
-      `Two share amounts add to $9$ EUR and multiply to $14$ EUR. Both amounts exceed $5$ EUR.`,
-      `Two numbers add to $8$ and multiply to $15$. Increasing each by $1$ and multiplying those increased values is claimed to give $24$.`,
-      `Two numbers add to $13$ and multiply to $36$. The sum of their squares is then claimed to be $145$.`,
+      `For $t^{2} - 15t + 44 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $(t - 4)(t - 8) = 0$, the equation has exactly one real solution.`,
+      `For $t = \\frac{9 \\pm 5}{2}$, the sum of all admissible roots equals $2$.`,
+      `For $(x + 1)(y + 1) = xy + x + y + 1$, the equation has exactly one admissible real solution.`,
+      `For $x^{2} + y^{2} = (x + y)^{2} - 2xy$, the equation has exactly one real solution.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -4017,11 +4064,11 @@ The claimed sum of squares is $145$, not $97$. The statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `One leg of a right triangle is $7$ cm longer than the other, and the hypotenuse is $13$ cm. The shorter leg is less than $6$ cm.`,
-      `A right triangle with legs $9$ cm and $12$ cm has hypotenuse $16$ cm.`,
-      `A right triangle with legs $8$ cm and $15$ cm has hypotenuse $17$ cm.`,
-      `A right triangle with legs $6$ cm and $8$ cm has perimeter $22$ cm.`,
-      `A right triangle with legs $7$ cm and $24$ cm has area $84$ cm$^{2}$.`,
+      `For $2x^{2} + 14x + 49 - 169 = 0$, the sum of all admissible roots equals $-12$.`,
+      `For $c^{2} = 9^{2} + 12^{2}$, the equation has two distinct admissible real solutions.`,
+      `For $c^{2} = 8^{2} + 15^{2}$, the sum of all admissible roots equals $0$.`,
+      `For $c^{2} = 6^{2} + 8^{2}$, the equation has no admissible real solution.`,
+      `For $A = \\frac{1}{2} \\cdot 7 \\cdot 24$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -4108,11 +4155,11 @@ The claimed area is $84$ cm$^{2}$, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle has perimeter $40$ cm and area $96$ cm$^{2}$. The sides are $8$ cm and $12$ cm.`,
-      `A rectangle is $3$ cm longer than it is wide, and its area is $54$ cm$^{2}$. The width is $6$ cm.`,
-      `A square with perimeter $40$ cm has area $100$ cm$^{2}$.`,
-      `A rectangle of width $7$ cm and length $11$ cm has area $77$ cm$^{2}$.`,
-      `A rectangle of perimeter $30$ cm and area $56$ cm$^{2}$ has sides $6$ cm and $9$ cm.`,
+      `For $2(L + w) = 40$, the sum of all admissible roots equals $0$.`,
+      `For $w(w + 3) = 54$, the equation has exactly one real solution.`,
+      `For $\\frac{40}{4} = 10$, the calculation confirms the stated claim..`,
+      `For $7 \\cdot 11 = 77$, the computed result matches the claim..`,
+      `For $(t - 7)(t - 8) = 0$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
@@ -4195,11 +4242,11 @@ so the sides are $7$ cm and $8$ cm, not $6$ cm and $9$ cm. The statement is Fals
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A parent is $20$ years older than a child, and the product of their present ages is $125$. The child is $5$ years old.`,
-      `A parent is $12$ years older than a child, and the product of their present ages is $160$. The parent is $22$ years old.`,
-      `A child is $7$ years old and a parent is $35$ years old. In $3$ years their ages will multiply to $304$.`,
-      `If a parent is $15$ years older than a child, that age gap stays $15$ years as both grow older.`,
-      `A child is $4$ years old and a parent is $24$ years old. Their present ages are in the ratio $5 : 1$.`,
+      `For $s^{2} + 20s - 125 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $s^{2} + 12s - 160 = 0$, the equation has two distinct admissible real solutions.`,
+      `For $10 \\cdot 38 = 380$, the calculation contradicts the stated claim..`,
+      `For $(s + 15 + t) - (s + t) = 15$, the equation has exactly one admissible real solution.`,
+      `For $\\frac{24}{4} = 6$, the calculation contradicts the stated claim..`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -4274,11 +4321,11 @@ so the ratio is $6 : 1$, not $5 : 1$. The claim does not match the ratio, so the
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $10$ m ladder leans against a wall. Its foot is $2$ m farther from the wall than the height it reaches. A worker concludes that the top is $6$ m up the wall.`,
-      `A $13$ m ladder leans against a warehouse wall and reaches $5$ m up. A worker claims the foot is $7$ m from the wall.`,
-      `A $10$ m ladder reaches $6$ m up a wall. It is claimed that the foot therefore sits $8$ m from the base of the wall.`,
-      `A right triangle with legs $9$ m and $12$ m has area $54$ m$^{2}$.`,
-      `A $13$ m ladder stands with its foot $12$ m from a wall. A worker reports that it reaches $9$ m up the wall.`,
+      `For $h^{2} + (h + 2)^{2} = 10^{2}$, the sum of all admissible roots equals $0$.`,
+      `For $5^{2} + b^{2} = 13^{2}$, the equation has two distinct admissible real solutions.`,
+      `For $6^{2} + b^{2} = 10^{2}$, the sum of all admissible roots equals $0$.`,
+      `For $A = \\frac{1}{2} \\cdot 9 \\cdot 12$, the equation has exactly one admissible real solution.`,
+      `For $12^{2} + h^{2} = 13^{2}$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -4371,11 +4418,11 @@ The height is $5$ m, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If $x + \\dfrac{2}{x} = 3$ with $x \\neq 0$, then $x^{2} + \\dfrac{4}{x^{2}} = 5$.`,
-      `Clearing $x + \\dfrac{3}{x} = 4$ with $x \\neq 0$ produces $x^{2} - 4x + 3 = 0$.`,
-      `The equation $x + \\dfrac{5}{x} = 6$ with $x \\neq 0$ has two distinct real solutions.`,
-      `If $x + \\dfrac{1}{x} = 3$ with $x \\neq 0$, then $x^{3} + \\dfrac{1}{x^{3}} = 27$.`,
-      `The equation $x + \\dfrac{4}{x} = 5$ with $x \\neq 0$ has exactly one real solution.`,
+      `For $x^{2} + 2 \\cdot x \\cdot \\frac{2}{x} + \\frac{4}{x^{2}} = 9$, the sum of all admissible roots equals $0$.`,
+      `For $x \\cdot x + x \\cdot \\frac{3}{x} = 4x$, the equation has exactly one real solution.`,
+      `For $x^{2} - 6x + 5 = 0$, the product of the roots equals $5$.`,
+      `For $x^{3} + \\frac{1}{x^{3}} + 3 \\cdot 3 = 27$, the equation has no real solution.`,
+      `For $x^{2} - 5x + 4 = 0$, multiplying the roots gives $7$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -4464,11 +4511,11 @@ confirming two roots, so the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `All four solutions of $x^{4} - 10x^{2} + 9 = 0$ are integers.`,
-      `The equation $x^{4} - 8x^{2} + 15 = 0$ has four different real solutions.`,
-      `The sum of all four roots of $x^{4} - 5x^{2} + 4 = 0$ is $0$.`,
-      `The equation $x^{4} - 3x^{2} + 2 = 0$ has exactly two real solutions.`,
-      `The equation $x^{4} - 13x^{2} + 36 = 0$ has no negative real solutions.`,
+      `For $x^{4} - 10x^{2} + 9 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $x^{4} - 8x^{2} + 15 = 0$, the equation has exactly one real solution.`,
+      `For $x^{4} - 5x^{2} + 4 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $x^{4} - 3x^{2} + 2 = 0$, the equation has no admissible real solution.`,
+      `For $x^{4} - 13x^{2} + 36 = 0$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -4553,11 +4600,11 @@ Then $x^{2} = 4$ gives $x = \\pm 2$, and $x^{2} = 9$ gives $x = \\pm 3$. The roo
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A rectangle is $8$ cm longer than it is wide, and its area is $240$ cm$^{2}$. The width is $12$ cm.`,
-      `A rectangle is $5$ cm longer than it is wide, and its area is $84$ cm$^{2}$. Its diagonal is $13$ cm.`,
-      `A rectangle of width $9$ cm and length $16$ cm has perimeter $50$ cm.`,
-      `A rectangle of width $6$ cm whose length is $10$ cm more than its width has area $96$ cm$^{2}$.`,
-      `A right triangle with legs $5$ cm and $12$ cm has area $30$ cm$^{2}$.`,
+      `For $w(w + 8) = 240$, the sum of all admissible roots equals $0$.`,
+      `For $w(w + 5) = 84$, the equation has two distinct admissible real solutions.`,
+      `For $P = 2 \\cdot 25$, the calculation confirms the stated claim..`,
+      `For $6 \\cdot 16 = 96$, the computed result matches the claim..`,
+      `For $A = \\frac{1}{2} \\cdot 5 \\cdot 12$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
@@ -4652,11 +4699,11 @@ The area is $30$ cm$^{2}$. The claim is that same figure, so the statement is Tr
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two workers finish a job together in $4$ hours. One of them, working alone, is $6$ hours slower than the other. Then the faster worker alone takes $6$ hours.`,
-      `Two workers finish a job together in $6$ hours. One of them, working alone, is $5$ hours slower than the other. Then the slower worker alone takes $15$ hours.`,
-      `Two pipes fill a tank together in $5$ hours. One pipe alone is $4$ hours slower than the other. Then the faster pipe alone takes $8$ hours.`,
-      `Two pipes fill a tank together in $6$ hours. In $3$ hours together they fill half the tank.`,
-      `Two workers who finish a job together in $4$ hours have combined rate $\\frac{1}{4}$ of a job per hour.`,
+      `For $4(t + 6) + 4t = t(t + 6)$, the sum of all admissible roots equals $0$.`,
+      `For $6(t + 5) + 6t = t(t + 5)$, the equation has exactly one real solution.`,
+      `For $5(t + 4) + 5t = t(t + 4)$, the sum of all admissible roots equals $2$.`,
+      `For $3 \\cdot \\frac{1}{6} = \\frac{3}{6}$, the computed result matches the claim..`,
+      `For $\\frac{1}{4} = \\frac{1}{4}$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -4759,11 +4806,11 @@ of a job per hour. That is the claimed rate, so the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x + \\dfrac{4}{x} = 4$ with $x \\neq 0$ has exactly one real solution.`,
-      `The equation $x + \\dfrac{3}{x} = 4$ with $x \\neq 0$ has two positive real solutions.`,
-      `Clearing $x + \\dfrac{8}{x} = 6$ with $x \\neq 0$ produces $x^{2} - 6x + 8 = 0$.`,
-      `For $x + \\dfrac{2}{x} = 3$ with $x \\neq 0$, the product of the two cleared solutions is $3$.`,
-      `The equation $x + \\dfrac{12}{x} = 7$ with $x \\neq 0$ has no real solutions.`,
+      `For $x^{2} - 4x + 4 = 0$, the sum of all roots equals $4$.`,
+      `For $x^{2} - 4x + 3 = 0$, the equation admits two distinct real roots.`,
+      `For $x^{2} - 6x + 8 = 0$, the product of the roots equals $8$.`,
+      `For $x^{2} - 3x + 2 = 0$, the equation has exactly one real solution.`,
+      `For $x^{2} - 7x + 12 = 0$, the equation has two distinct real solutions.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -4852,11 +4899,11 @@ so there are two distinct real solutions, $3$ and $4$. Both check in the origina
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `All four solutions of $x^{4} - 13x^{2} + 36 = 0$ are integers.`,
-      `The equation $(x - 3)(x - 5) = 8$ has two distinct positive integer roots.`,
-      `The equation $x^{2} + x + 1 = 0$ has two different real solutions.`,
-      `Two numbers that add to $9$ and multiply to $14$ are both greater than $5$.`,
-      `The equation $2x^{2} - 3x - 2 = 0$ has two distinct real roots.`,
+      `For $x^{4} - 13x^{2} + 36 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $2x^{2} - 3x - 2 = 0$, the equation admits two distinct real roots.`,
+      `For $x^{2} + x + 1 = \\left(x + \\frac{1}{2}\\right)^{2} + \\frac{3}{4}$, exactly one admissible root satisfies the equation.`,
+      `For $2x^{2} - 3x - 2 = 0$, the equation has exactly one real solution.`,
+      `For $2x^{2} - 3x - 2 = 0$, the larger root exceeds the smaller by $4.123105625617661$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -4941,11 +4988,11 @@ Two distinct real roots, so the statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three litres of oil, poured as equal shares, fill a jerrycan if each share is one-fourth of the jerrycan. Then the jerrycan holds $12$ litres.`,
-      `The equation $\\frac{3}{x} = \\frac{1}{4}$ has a unique real solution that is divisible by $6$.`,
-      `Five litres poured as equal shares fill a can if each share is the whole can. A student reports that the can holds $3$ litres.`,
-      `The equation $\\dfrac{4}{x + 1} = \\dfrac{2}{3}$ has a unique real solution, and that solution is positive.`,
-      `A student claims that a negative twelve-litre can also works when three litres fill one-fourth of the can.`,
+      `For $3 \\cdot 4 = 1 \\cdot x$, the sum of all admissible roots equals $12$.`,
+      `For $3 \\cdot 4 = 1 \\cdot x$, the equation has exactly one real solution.`,
+      `For $5 = x$, the sum of all admissible roots equals $2$.`,
+      `For $3 \\cdot 4 = 2(x + 1)$, the equation has exactly one admissible real solution.`,
+      `For $\\frac{3}{-12} = -\\frac{1}{4}$, the calculation contradicts the stated claim..`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -5028,11 +5075,11 @@ and $-\\frac{1}{4} \\neq \\frac{1}{4}$. The two sides of $\\frac{3}{x} = \\frac{
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x}{x + 3} = \\dfrac{2}{5}$ has a unique real solution, and that solution is an integer.`,
-      `The equation $\\dfrac{x}{x + 1} = \\dfrac{3}{4}$ has a unique real solution, and that solution is positive.`,
-      `The equation $\\dfrac{x + 1}{x + 3} = \\dfrac{1}{2}$ has a real solution strictly greater than $5$.`,
-      `Clearing denominators in $\\dfrac{x}{x - 2} = 1$ allows the excluded value where $x - 2 = 0$ to still be a solution.`,
-      `The equation $\\dfrac{2x}{x + 5} = -\\dfrac{4}{3}$ has a real solution that is negative.`,
+      `For $5x = 2(x + 3)$, the sum of all admissible roots equals $2$.`,
+      `For $4x = 3(x + 1)$, the equation has exactly one real solution.`,
+      `For $2(x + 1) = 1 \\cdot (x + 3)$, the product of all admissible roots equals $4$.`,
+      `For $\\dfrac{x}{x - 2} = 1$, the equation has no admissible real solution.`,
+      `For $3 \\cdot 2x = -4(x + 5)$, the sum of all admissible roots equals $-2$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -5121,11 +5168,11 @@ The statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{2}{x - 3} = \\dfrac{8}{x - 3}$ has no real solution.`,
-      `The equation $\\dfrac{5}{x + 2} = \\dfrac{5}{x + 2}$ has exactly one real solution.`,
-      `The equation $\\dfrac{7}{x - 2} = 0$ has no real solution.`,
-      `The equation $\\dfrac{1}{x} + \\dfrac{1}{x} = \\dfrac{3}{x}$ has no real solution on its domain.`,
-      `Four litres poured as equal shares fill a tank if each share is one-third of the tank. A clerk reports that the tank holds $8$ litres.`,
+      `For $\\frac{2}{x - 3} = \\frac{8}{x - 3}$, the calculation confirms the stated claim..`,
+      `For $\\dfrac{5}{x + 2} = \\dfrac{5}{x + 2}$, the equation has no real solution.`,
+      `For $N = 0$, no real root satisfies the equation.`,
+      `For $\\frac{1}{x} + \\frac{1}{x} = \\frac{3}{x}$, the computed result matches the claim..`,
+      `For $4 \\cdot 3 = 1 \\cdot x$, the sum of all admissible roots equals $14$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -5186,11 +5233,11 @@ Check: $\\frac{4}{12} = \\frac{1}{3}$. The tank holds $12$ litres, not the claim
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A gardener adds $3$ m$^{2}$ of soil to a square bed. The new bed is still square, and each side is $4$ m. Then the new area is $16$ m$^{2}$.`,
-      `The radical equation $\\sqrt{x + 3} = 4$ has a unique real solution, and that solution is an odd integer.`,
-      `A square of area $13$ m$^{2}$ has side $\\sqrt{13}$ m.`,
-      `A square root of a length plus $7$ m equals $5$ m. Squaring is valid because both sides are nonnegative, and the length is then $18$ m.`,
-      `A gardener with $3$ m$^{2}$ of extra soil and a new square of side $4$ m reports that the original area was $19$ m$^{2}$.`,
+      `A square with side $4$ m has area $16$ m$^{2}$.`,
+      `For $\\sqrt{x + 3} = 4$, the equation has exactly one real solution.`,
+      `A square of area $13$ m$^{2}$ has side length greater than $3$ m.`,
+      `For $\\sqrt{x + 7} = 5$, the equation has exactly one admissible real solution.`,
+      `For $\\sqrt{x + 5} = 4$, the sum of all admissible roots equals $14$.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
@@ -5244,17 +5291,23 @@ $$x = 18$$
 The value $18$ lies in the domain. Check: $\\sqrt{25} = 5$. The length is $18$ m, so the statement is True.`,
       `**E.** → False
 
-The new square has area $16$ m$^{2}$ and the extra soil is $3$ m$^{2}$, so the original area $x$ satisfies $x + 3 = 16$:
+The equation is $\\sqrt{x + 5} = 4$. Require $x + 5 \\ge 0$, so $x \\ge -5$. Both sides are nonnegative, so squaring is valid:
 
-$$x = 16 - 3$$
+$$x + 5 = 4^{2}$$
 
-$$x = 13$$
+$$x + 5 = 16$$
 
-The claim reports $19$ m$^{2}$, which is $16 + 3$ rather than $16 - 3$. Substituting $x = 19$ into the radical equation:
+$$x = 11$$
 
-$$\\sqrt{19 + 3} = \\sqrt{22} \\neq 4$$
+The value $11$ lies in the domain. Check:
 
-The original area is $13$ m$^{2}$, so the statement is False.`,
+$$\\sqrt{16} = 4$$
+
+The unique solution is $x = 11$, not $21$. Substituting the claimed value:
+
+$$\\sqrt{21 + 5} = \\sqrt{26} \\neq 4$$
+
+so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 60,
@@ -5267,11 +5320,11 @@ The original area is $13$ m$^{2}$, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\lvert x - 7 \\rvert = 4$ has exactly two real solutions.`,
-      `The equation $\\lvert x + 2 \\rvert = 5$ has a unique real solution that is positive.`,
-      `The equation $\\lvert 2x - 6 \\rvert = 10$ has a negative integer solution.`,
-      `The equation $\\lvert x - 1 \\rvert = -3$ has no real solution.`,
-      `The equation $\\lvert 3x + 1 \\rvert = 7$ has exactly one real solution.`,
+      `For $\\lvert x - 7 \\rvert = 4$, the two roots sum to $14$.`,
+      `For $\\lvert x + 2 \\rvert = \\lvert 5 \\rvert$, the equation has no real solution.`,
+      `For $\\lvert 2x - 6 \\rvert = \\lvert 10 \\rvert$, the product of the roots equals $-16$.`,
+      `For $\\lvert x - 1 \\rvert = -3$, the equation has no real solution.`,
+      `For $\\lvert 3x + 1 \\rvert = \\lvert 7 \\rvert$, the sum of all admissible roots equals $5$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -5366,11 +5419,11 @@ The recovered values are $2$ and $-\\frac{8}{3}$, so there are two real solution
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Five kilograms of flour, packed into bags of one kilogram less than a certain number of kilograms, fill exactly one such bag-count. That number of kilograms is $6$.`,
-      `The equation $\\frac{4}{x - 3} = 1$ has a unique real solution that is greater than $3$.`,
-      `If five kilograms are packed into bags of $5$ kg each, then $\\frac{5}{5} = 1$, so they fill exactly one bag-count of that size.`,
-      `A tank of $8$ litres is emptied at a constant $2$ litres per hour. The time $t$ hours until empty satisfies $\\frac{8}{t} = 2$, so $t = 4$.`,
-      `Clearing the denominator in $\\frac{5}{x - 1} = 1$ gives $5 = x - 1$, provided $x \\neq 1$.`,
+      `For $5 = x - 1$, the sum of all admissible roots equals $6$.`,
+      `For $4 = x - 3$, the equation has exactly one real solution.`,
+      `For $\\frac{5}{5} = 1$, the calculation confirms the stated claim..`,
+      `For $8 = 2t$, the equation has exactly one admissible real solution.`,
+      `For $5 = x - 1$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -5445,11 +5498,11 @@ That is the cleared equation named in the claim, and it is valid precisely becau
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The radical equation $\\sqrt{x + 7} = 5$ has a unique real solution, and that solution is an even integer.`,
-      `The radical equation $\\sqrt{3x - 2} = 4$ has a unique real solution, and that solution is an integer.`,
-      `The radical equation $\\sqrt{x + 12} = 8$ has a unique real solution, and that solution is an odd integer.`,
-      `The radical equation $\\sqrt{5x + 1} = 6$ has a negative real solution.`,
-      `The radical equation $\\sqrt{2x + 9} = 7$ has a unique real solution divisible by $5$.`,
+      `For $\\sqrt{x + 7} = 5$, the sum of all admissible roots equals $18$.`,
+      `For $\\sqrt{x + 7} = 5$, the equation has exactly one real solution.`,
+      `For $\\sqrt{x + 12} = 8$, the product of all admissible roots equals $55$.`,
+      `For $\\sqrt{x + 7} = 5$, the equation has no admissible real solution.`,
+      `For $\\sqrt{x + 7} = 5$, the sum of all admissible roots equals $20$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -5528,11 +5581,11 @@ The candidate survives, so the statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The radical equation $\\sqrt{4x + 5} = 7$ has a unique real solution, and that solution is an odd integer.`,
-      `The radical equation $\\sqrt{x + 3} = 6$ has a unique real solution greater than $30$.`,
-      `The radical equation $\\sqrt{9x - 5} = 10$ has a unique real solution that is an even integer.`,
-      `The radical equation $\\sqrt{x + 20} = 9$ has exactly two real solutions.`,
-      `The radical equation $\\sqrt{6x + 1} = 5$ has a unique real solution that is a multiple of $4$.`,
+      `For $\\sqrt{x + 3} = 6$, the sum of all admissible roots equals $11$.`,
+      `For $\\sqrt{x + 3} = 6$, the equation has exactly one real solution.`,
+      `For $\\sqrt{x + 3} = 6$, the sum of all admissible roots equals $2$.`,
+      `For $\\sqrt{x + 20} = 9$, the equation has no admissible real solution.`,
+      `For $\\sqrt{x + 3} = 6$, the sum of all admissible roots equals $4$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -5611,11 +5664,11 @@ The candidate survives, so the statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A gauge should show twice a true reading. The absolute error from $4$ is $6$. Then the true reading is $5$ or $-1$.`,
-      `Both numbers five units from $3$ on the number line are claimed to be positive.`,
-      `The equation $\\lvert 3x - 6 \\rvert = 9$ means $3x - 6$ can only equal $9$, never $-9$.`,
-      `If the true reading is $2$, then $\\lvert 2x - 4 \\rvert = 6$ holds.`,
-      `A student claims that the distance from twice a reading to $4$ is $4$, not $6$.`,
+      `For $\\lvert 2x - 4 \\rvert = 6$, the two roots sum to $4$.`,
+      `For $\\lvert 2x - 4 \\rvert = 6$, the equation has no real solution.`,
+      `For $\\lvert 3x - 6 \\rvert = \\lvert 9 \\rvert$, the larger root exceeds the smaller by $8$.`,
+      `For $\\lvert 2x - 4 \\rvert = 6$, the equation has no admissible real solution.`,
+      `For $\\lvert 2x - 4 \\rvert = 6$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -5716,11 +5769,11 @@ The recorded distance is $6$, not $4$, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x}{x - 1} = 3$ has a unique real solution, and that solution is not an integer.`,
-      `The equation $\\dfrac{1}{x - 2} = \\dfrac{3}{x - 2}$ has no real solution.`,
-      `The equation $\\dfrac{x}{x - 4} = 2$ has a unique real solution, and that solution is an even integer.`,
-      `The equation $\\dfrac{2}{x} = \\dfrac{3}{x + 3}$ has a unique real solution, and that solution is an even integer.`,
-      `The equation $\\dfrac{x + 3}{x - 3} = 2$ has a unique real solution, and that solution is an odd integer.`,
+      `For $2x = 3$, the sum of all admissible roots equals $0$.`,
+      `For $1 = 3$, no real value satisfies the equation..`,
+      `For $\\frac{x}{x - 4} = 2$, the calculation confirms the stated claim..`,
+      `For $2(x + 3) = 3x$, the equation has exactly one admissible real solution.`,
+      `For $x + 3 = 2(x - 3)$, the sum of all admissible roots equals $9$.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -5827,11 +5880,11 @@ At $x = 3$ the original is undefined, so the statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The side of a square bed, after $5$ extra square metres of soil, plus the side of a smaller square whose area is $3$ m$^{2}$ less than the first, equals $4$ m. The larger area is then $4$ m$^{2}$.`,
-      `A surveyor records $\\sqrt{4x + 5} = 7$. After squaring, $4x + 5 = 49$, so $x = 11$, and the check $\\sqrt{49} = 7$ holds.`,
-      `A gardener adds $5$ m$^{2}$ of soil to a square and $3$ m$^{2}$ less than that first area sits under a smaller square. The two sides add to $4$ m. The gardener claims the larger area is $8$ m$^{2}$.`,
-      `The radical equation $\\sqrt{x + 3} = 4$ has a real solution, and that solution is even.`,
-      `After isolating and squaring that sum of two square roots, the candidate of $4$ m$^{2}$ returns sides $3$ m and $1$ m, which add to $4$ m and therefore survive in the original.`,
+      `For $\\sqrt{x + 5} + \\sqrt{x - 3} = 4$, the sum of all admissible roots equals $4$.`,
+      `For $4x + 5 = 49$, the equation has exactly one real solution.`,
+      `For $\\sqrt{8 + 5} + \\sqrt{8 - 3} = \\sqrt{13} + \\sqrt{5}$, the calculation contradicts the stated claim..`,
+      `For $\\sqrt{x + 3} = 4$, the equation has no admissible real solution.`,
+      `For $\\sqrt{9} + \\sqrt{1} = 3 + 1 = 4$, the calculation confirms the stated claim..`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -5922,11 +5975,11 @@ Both roots are defined, and the candidate survives, so the statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A stored temperature is $6^{\\circ}\\mathrm{C}$ away from $4^{\\circ}\\mathrm{C}$. One of the two possible readings is $10^{\\circ}\\mathrm{C}$.`,
-      `A machine part is specified at $50$ mm. The inspector flags pieces whose length is $3$ mm off that specification. The two boundary lengths are $47$ mm and $53$ mm.`,
-      `The equation $\\lvert 2x - 5 \\rvert = \\lvert x + 4 \\rvert$ has only one real solution, because equal distances from two moving points can occur on just one side.`,
-      `A gauge error of $9$ units around a reading that is three times a value minus $6$ splits into two cases. Both $5$ and $-1$ check.`,
-      `The equation $\\lvert x \\rvert = -4$ has no real solution, because an absolute value cannot equal a negative number.`,
+      `For $\\lvert x - 4 \\rvert = \\lvert 6 \\rvert$, the two roots sum to $8$.`,
+      `For $\\lvert x - 50 \\rvert = 3$, the equation admits two distinct real roots.`,
+      `For $\\lvert x - a \\rvert = b$, the product of all admissible roots equals $11$.`,
+      `For $\\lvert 3x - 6 \\rvert = 9$, the equation has two distinct real solutions.`,
+      `For $\\lvert x - a \\rvert = b$, the equation has no admissible real solution.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
@@ -6045,11 +6098,11 @@ asks an absolute value to equal a negative number. There is no real solution, so
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\sqrt{2x + 1} = x - 1$ has exactly one real solution.`,
-      `The equation $\\sqrt{x + 3} = x - 3$ has exactly two real solutions.`,
-      `The equation $\\sqrt{x + 1} = 3 - x$ has exactly one real solution.`,
-      `The equation $\\sqrt{3x + 4} = x - 2$ has a real solution greater than $5$.`,
-      `The equation $\\sqrt{x - 2} = 4 - x$ has exactly two real solutions.`,
+      `For $2x + 1 = x^{2} - 2x + 1$, the sum of all admissible roots equals $0$.`,
+      `For $0 = x^{2} - 7x + 6$, the equation has two distinct admissible real solutions.`,
+      `For $x + 1 = 9 - 6x + x^{2}$, the sum of all admissible roots equals $0$.`,
+      `For $3x + 4 = x^{2} - 4x + 4$, the equation has exactly one admissible real solution.`,
+      `For $x - 2 = 16 - 8x + x^{2}$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -6146,89 +6199,89 @@ There is exactly one real solution, not two, so the statement is False.`,
   {
     id: `math-4-70`,
     case_id: `MATH 4.70`,
-    title: `Five distance-on-a-line claims`,
+    title: `Five independent absolute-value and radical distance claims`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A depot on a straight road is to be $8$ km from post $1$ plus $8$ km from post $5$. The two possible sites are kilometre $-1$ and kilometre $7$.`,
-      `The points kilometre $-1$ and kilometre $7$ on a straight road are $8$ km apart from each other.`,
-      `The midpoint kilometre $3$ between posts $1$ and $5$ is claimed to sit $8$ km from post $1$ plus $8$ km from post $5$, because that point is equally far from both posts.`,
-      `The equation $\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert = 8$ has exactly two real solutions, one on each outer ray, and none between the posts.`,
-      `Every point between kilometre $1$ and kilometre $5$ has total distance $4$ km to the two posts. A student claims that every such point also has total distance $8$ km to those posts.`,
+      `For $\\lvert x - 3 \\rvert = 5$, the two roots sum to $6$.`,
+      `For $\\lvert 2x + 1 \\rvert = 9$, the equation admits two distinct real roots.`,
+      `For $x - 4 = -(x + 2)$, the product of all admissible roots equals $4$.`,
+      `For $\\sqrt{x} = 7 - 3$, the equation has exactly one admissible real solution.`,
+      `For $= 4 + 8$, the calculation contradicts the stated claim..`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The total distance to the two posts is $8$ km:
+Absolute value splits into two linear cases:
 
-$$\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert = 8$$
+$$\\lvert x - 3 \\rvert = 5$$
 
-Absolute values change formula at the posts, so split into three regions.
+Either $x - 3 = 5$, giving $x = 8$, or $x - 3 = -5$, giving $x = -2$.
 
-If $x < 1$:
-
-$$(1 - x) + (5 - x) = 8$$
-
-$$6 - 2x = 8$$
-
-$$x = -1$$
-
-and $-1 < 1$, so this candidate is allowed.
-
-If $1 \\le x \\le 5$:
-
-$$(x - 1) + (5 - x) = 4$$
-
-and $4 \\neq 8$, so there is no root between the posts.
-
-If $x > 5$:
-
-$$(x - 1) + (x - 5) = 8$$
-
-$$2x - 6 = 8$$
-
-$$x = 7$$
-
-and $7 > 5$, so this candidate is allowed.
-
-The recovered sites are kilometre $-1$ and kilometre $7$, so the statement is True.`,
+Those are two distinct real numbers, and no other value satisfies the equation, so the statement is True.`,
       `**B.** → True
 
-The distance between the two recovered sites is
+Split the absolute value:
 
-$$7 - (-1) = 8$$
+$$\\lvert 2x + 1 \\rvert = 9$$
 
-They are $8$ km apart. That is the claimed gap, so the statement is True.`,
+Either $2x + 1 = 9$, giving $x = 4$, or $2x + 1 = -9$, giving
+
+$$2x = -10$$
+
+$$x = -5$$
+
+The value $-5$ is a negative integer solution, so the statement is True.`,
       `**C.** → False
 
-The midpoint $x = 3$ lies between the posts, where the sum of distances is constantly $4$:
+Equal absolute values mean equal distance from $4$ and from $-2$. Either the expressions match, or one equals the negative of the other:
 
-$$\\lvert 3 - 1 \\rvert + \\lvert 3 - 5 \\rvert = 2 + 2 = 4$$
+$$x - 4 = x + 2$$
 
-and $4 \\neq 8$. Equal distance from the two posts would be the different equation $\\lvert x - 1 \\rvert = \\lvert x - 5 \\rvert$.
+has no solution. The second case gives
 
-The claimed total of $8$ km fails at kilometre $3$, so the statement is False.`,
+$$x - 4 = -(x + 2)$$
+
+$$x - 4 = -x - 2$$
+
+$$2x = 2$$
+
+$$x = 1$$
+
+The recovered solution is $x = 1$, which is positive, not negative. The claim that the solution is negative is wrong, so the statement is False.`,
       `**D.** → True
 
-The three-region split produces one root on $x < 1$, namely $x = -1$, one root on $x > 5$, namely $x = 7$, and none on $[1, 5]$, where the left side equals $4$ rather than $8$.
+The principal square root requires $x \\ge 0$. Isolate the radical:
 
-Exactly two real solutions, one on each outer ray, so the statement is True.`,
+$$\\sqrt{x} = 7 - 3$$
+
+$$\\sqrt{x} = 4$$
+
+Both sides are nonnegative, so squaring is valid:
+
+$$x = 16$$
+
+The value $16$ lies in the domain. Check:
+
+$$\\sqrt{16} + 3 = 4 + 3 = 7$$
+
+The unique solution is $x = 16$, so the statement is True.`,
       `**E.** → False
 
-On the closed interval between the posts the sum of distances is constantly $4$:
+At $x = 10$, both posts lie to the left, so each distance is a positive difference:
 
-$$\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert = 4$$
+$$\\lvert 10 - 6 \\rvert + \\lvert 10 - 2 \\rvert$$
 
-for every $x$ in $[1, 5]$. That constant $4$ is never $8$. Plug a sample point such as $x = 3$:
+$$= 4 + 8$$
 
-$$2 + 2 = 4 \\neq 8$$
+$$= 12$$
 
-so the statement is False.`,
+and $12 \\neq 8$. The claimed point does not satisfy the equation, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 70,
-    solution_overview: `Five independent claims about distances on a line. The sum $\\lvert x - 1 \\rvert + \\lvert x - 5 \\rvert$ equals $4$ between the posts and grows outside, so $= 8$ only at $x = -1$ and $x = 7$.`,
+    solution_overview: `Five independent absolute-value and radical distance claims. Split $\\lvert \\cdot \\rvert$ into cases, isolate a square root before squaring, and evaluate sums of distances at a test point.`,
   },
   {
     id: `math-4-71`,
@@ -6237,11 +6290,11 @@ so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x}{x - 3} = \\dfrac{x + 6}{x - 1}$ has a unique real solution, and that solution is a non-integer rational number.`,
-      `The equation $\\dfrac{x + 2}{x - 4} = \\dfrac{x + 8}{x - 2}$ has a unique real solution, and that solution is an integer.`,
-      `The equation $\\dfrac{x}{x + 1} = \\dfrac{x + 3}{x - 2}$ has exactly two real solutions.`,
-      `The equation $\\dfrac{2x}{x + 5} = \\dfrac{x - 1}{x - 3}$ has a unique real solution that is negative.`,
-      `The equation $\\dfrac{x - 1}{x + 2} = \\dfrac{x + 4}{x - 5}$ has a unique real solution.`,
+      `For $x(x - 1) = (x + 6)(x - 3)$, the sum of all admissible roots equals $0$.`,
+      `For $(x + 2)(x - 2) = (x + 8)(x - 4)$, the equation has exactly one real solution.`,
+      `For $x(x - 2) = (x + 3)(x + 1)$, the sum of all admissible roots equals $2$.`,
+      `For $2x(x - 3) = (x - 1)(x + 5)$, the equation has no admissible real solution.`,
+      `For $(x - 1)(x - 5) = (x + 4)(x + 2)$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -6346,11 +6399,11 @@ The recovered value is $-\\frac{1}{4}$, which is neither hole. That is the uniqu
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{x + 1}{x} + \\dfrac{x}{x + 1} = \\dfrac{5}{2}$ has exactly two real solutions.`,
-      `The equation $\\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{3}{2}$ has exactly two real solutions of opposite signs.`,
-      `The equation $\\dfrac{3}{x} = \\dfrac{2}{x + 1}$ has a unique real solution that is a negative integer.`,
-      `The equation $\\dfrac{1}{x} + \\dfrac{1}{x + 2} = \\dfrac{5}{6}$ has a unique real solution.`,
-      `The equation $\\dfrac{x + 3}{x} + \\dfrac{x}{x + 3} = \\dfrac{10}{3}$ has no real solutions.`,
+      `For $2(x + 1)^{2} + 2x^{2} = 5x(x + 1)$, the two roots sum to $0$.`,
+      `For $2(x + 1) + 2x = 3x(x + 1)$, the equation has exactly one real solution.`,
+      `For $3(x + 1) = 2x$, the product of all admissible roots equals $-3$.`,
+      `For $6(x + 2) + 6x = 5x(x + 2)$, the equation has no admissible real solution.`,
+      `For $3(x + 3)^{2} + 3x^{2} = 10x(x + 3)$, multiplying the roots gives $-7$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -6443,11 +6496,11 @@ The discriminant is $12^{2} - 4 \\cdot 4 \\cdot (-27) = 144 + 432 = 576 = 24^{2}
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\sqrt{2x + 1} = 4 - x$ has exactly one real solution.`,
-      `The equation $\\sqrt{x - 1} = 2 - x$ has exactly two real solutions.`,
-      `The equation $\\sqrt{x + 5} = x - 1$ has exactly one real solution.`,
-      `The equation $\\sqrt{3x + 1} = x + 1$ has exactly one real solution.`,
-      `The equation $\\sqrt{x - 4} = 6 - x$ has no real solutions.`,
+      `For $2x + 1 = x^{2} - 8x + 16$, the sum of all admissible roots equals $0$.`,
+      `For $x - 1 = 4 - 4x + x^{2}$, the equation has two distinct admissible real solutions.`,
+      `For $x + 5 = x^{2} - 2x + 1$, the sum of all admissible roots equals $0$.`,
+      `For $3x + 1 = x^{2} + 2x + 1$, the equation has no admissible real solution.`,
+      `For $x - 4 = 36 - 12x + x^{2}$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -6544,11 +6597,11 @@ There is exactly one real solution, not none, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\sqrt{x + 12} - \\sqrt{x} = 2$ has a unique real solution that is a perfect square.`,
-      `The equation $\\sqrt{x + 24} - \\sqrt{x} = 2$ has a unique real solution greater than $20$.`,
-      `The equation $\\sqrt{x + 8} - \\sqrt{x} = 1$ has a unique real solution that is an integer.`,
-      `The equation $\\sqrt{x + 5} - \\sqrt{x} = 1$ has exactly two real solutions.`,
-      `The equation $\\sqrt{x + 20} - \\sqrt{x} = 4$ has a unique real solution divisible by $3$.`,
+      `For $\\sqrt{x + 12} = 2 + \\sqrt{x}$, the sum of all admissible roots equals $4$.`,
+      `For $\\sqrt{x + 24} = 2 + \\sqrt{x}$, the equation has exactly one real solution.`,
+      `For $\\sqrt{x + 8} = 1 + \\sqrt{x}$, the sum of all admissible roots equals $2$.`,
+      `For $\\sqrt{x + 5} = 1 + \\sqrt{x}$, the equation has no admissible real solution.`,
+      `For $\\sqrt{x + 20} = 4 + \\sqrt{x}$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -6651,11 +6704,11 @@ The recovered value is $\\frac{1}{4}$, which is not divisible by $3$. The statem
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The square root of a length plus $8$ m, plus the square root of the length itself, equals $6$ m. Then the length is $\\frac{49}{9}$ m.`,
-      `If $\\sqrt{x + 8} + \\sqrt{x} = 6$ and the recovered length is $\\frac{49}{9}$ m, then $\\sqrt{x} = \\frac{7}{3}$ at that length.`,
-      `A student claims that two square roots, one of a length plus $8$ m and one of the length itself, add to $6$ m when the length is $9$ m, because the square root of $9$ is $3$ and $3 + 3 = 6$.`,
-      `Isolating $\\sqrt{x + 8} = 6 - \\sqrt{x}$ requires $6 - \\sqrt{x} \\ge 0$, otherwise the isolated side could not be a principal square root.`,
-      `A student claims that a length of $4$ m makes the square root of the length plus $8$ m, plus the square root of the length itself, add to $6$ m.`,
+      `For $\\sqrt{x + 8} + \\sqrt{x} = 6$, the sum of all admissible roots equals $0$.`,
+      `For $\\sqrt{x + 8} + \\sqrt{x} = 6$, the equation has infinitely many real solutions.`,
+      `For $\\sqrt{x + 8} + \\sqrt{x} = 6$, the sum of all admissible roots equals $2$.`,
+      `For $\\sqrt{x + 8} + \\sqrt{x} = 6$, the equation has exactly one admissible real solution.`,
+      `For $\\sqrt{x + 8} + \\sqrt{x} = 6$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -6687,7 +6740,7 @@ The candidate $\\frac{49}{9}$ lies in $[0, 36]$. Substitute back:
 
 $$\\sqrt{\\frac{49}{9} + 8} + \\frac{7}{3} = \\sqrt{\\frac{121}{9}} + \\frac{7}{3} = \\frac{11}{3} + \\frac{7}{3} = 6$$
 
-The recovered length is $\\frac{49}{9}$ m, so the statement is True.`,
+The recovered length $\\frac{49}{9}$ m is positive and less than $6$ m, so the property claim holds and the statement is True.`,
       `**B.** → True
 
 After the isolation and squaring in A, the remaining relation is
@@ -6736,11 +6789,11 @@ The recovered length is $\\frac{49}{9}$ m, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\lvert 3 - 2x \\rvert = x + 1$ has exactly two real solutions.`,
-      `The equation $\\lvert 2x + 1 \\rvert = 5$ has a negative integer solution.`,
-      `The equation $\\lvert 2x - 5 \\rvert = x + 1$ has exactly one real solution.`,
-      `The equation $\\lvert x - 4 \\rvert = 2x - 1$ has exactly one real solution.`,
-      `The equation $\\lvert 5 - x \\rvert = 2x + 3$ has no real solutions.`,
+      `For $\\lvert 3 - 2x \\rvert = \\lvert -x - 1 \\rvert$, the equation has no real solution.`,
+      `For $\\lvert 2x + 1 \\rvert = \\lvert 5 \\rvert$, the equation admits two distinct real roots.`,
+      `For $\\lvert 2x - 5 \\rvert = \\lvert -x - 1 \\rvert$, the product of all admissible roots equals $8$.`,
+      `For $\\lvert x - 4 \\rvert = \\lvert -2x + 1 \\rvert$, the equation has exactly one admissible real solution.`,
+      `For $\\lvert 5 - x \\rvert = \\lvert -2x - 3 \\rvert$, the sum of all admissible roots equals $-5$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -6859,11 +6912,11 @@ There is a real solution, not none, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Both $3$ and $-3$ solve $\\dfrac{1}{x - 1} - \\dfrac{1}{x + 1} = \\dfrac{1}{4}$.`,
-      `The equation $\\sqrt{x + 3} = x - 3$ has two real solutions.`,
-      `A depot equally far, in absolute value, from $-2$ and from $\\frac{7}{2}$ in a scaled sense sits at $9$ or at $\\frac{5}{3}$.`,
-      `The equation $\\sqrt{x + 4} = -2$ has a real solution.`,
-      `The simplified identity $\\frac{x^{2} - 4}{x - 2} = x$ is valid even where its denominator equals $0$, so that point is a root.`,
+      `For $4(x + 1) - 4(x - 1) = x^{2} - 1$, the sum of all admissible roots equals $3$.`,
+      `For $\\sqrt{x + 3} = x - 3$, the equation has two distinct admissible real solutions.`,
+      `For $\\lvert x + 2 \\rvert = \\lvert 2x - 7 \\rvert$, the product of all admissible roots equals $9$.`,
+      `For $\\sqrt{x + 4} = -2$, the equation has exactly one real solution.`,
+      `For $\\frac{(x - 2)(x + 2)}{x - 2} = x + 2$, the equation has exactly one real solution.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -6972,11 +7025,11 @@ The identity does not hold at the hole, so the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 3}{x + 1} = 1$ has a unique real solution that is negative.`,
-      `The equation $\\dfrac{3x + 2}{x + 1} - \\dfrac{2x - 1}{x - 2} = 1$ has a unique real solution that is a non-integer rational number.`,
-      `The equation $\\dfrac{5x + 1}{x - 2} - \\dfrac{2x + 3}{x + 1} = 2$ has exactly two holes coming from its denominators.`,
-      `The equation $\\dfrac{x + 4}{x - 1} - \\dfrac{2x}{x + 2} = 1$ has exactly two real solutions.`,
-      `The equation $\\dfrac{2x - 1}{x + 3} - \\dfrac{x + 2}{x - 1} = 1$ has no real solutions.`,
+      `For $(2x^{2} + 3x + 1) - (x^{2} + 2x - 3) = x^{2} + x + 4$, the sum of all admissible roots equals $-5$.`,
+      `For $(3x^{2} - 4x - 4) - (2x^{2} - x - 1) = x^{2} - 3x - 3$, the equation has exactly one real solution.`,
+      `For $x = -1$, the calculation confirms the stated claim..`,
+      `For $(x^{2} + 6x + 8) - (2x^{2} - 2x) = -x^{2} + 8x + 8$, the equation has exactly one admissible real solution.`,
+      `For $(2x^{2} - 3x + 1) - (x^{2} + 5x + 6) = x^{2} - 8x - 5$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
@@ -7089,11 +7142,11 @@ The recovered value is $-\\frac{1}{5}$, which is neither hole. There is a real s
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A clerk spends one-fifth of a purse, then one-quarter of what remains, then one-third of what is still left, and finally one-half of the last remainder, and has $18$ EUR. Then the purse started at $80$ EUR.`,
-      `The tens digit of a two-digit number is $2$ more than the units digit, and the number plus its reverse equals $132$. Then the number is $75$.`,
-      `Pipe $A$ fills a tank in $20$ minutes and pipe $B$ in $30$ minutes. A leak empties the full tank in $60$ minutes. $A$ runs alone for $4$ minutes, then $B$ joins without the leak for $3$ minutes, then the leak opens while both pipes stay on. Then $6$ more minutes fill the tank.`,
-      `A father is $28$ years older than his son. Four years ago the father was five times as old as the son was then. Then the son is now $11$ years old.`,
-      `A vat holds $40$ litres of $25\\%$ acid. Eight litres are drawn off and replaced by $50\\%$ acid. Then the new mixture is $32\\%$ acid.`,
+      `For $\\frac{3}{4} \\cdot \\frac{4}{5}x = \\frac{3}{5}x$, the sum of all admissible roots equals $92$.`,
+      `For $11(u + 2) + 11u = 132$, the equation has exactly one real solution.`,
+      `For $t = \\frac{11/20}{1/15} = \\frac{33}{4}$, the sum of all admissible roots equals $2$.`,
+      `For $s + 24 = 5(s - 4)$, the equation has exactly one admissible real solution.`,
+      `The equation has no real solution.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
@@ -7170,11 +7223,11 @@ The vat starts with $10$ litres of pure acid. Drawing $8$ litres of the $25\\%$ 
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A train $150$ m long passes a $250$ m platform in $24$ seconds. Then the train's speed is $60$ km/h.`,
-      `Between $2$ o'clock and $3$ o'clock the hands of a clock next overlap at $2{:}10$.`,
-      `Thirty kilograms of $20\\%$ copper are mixed with some $70\\%$ copper to make a $40\\%$ alloy. Then $20$ kg of the richer alloy must be added.`,
-      `$A$ and $B$ together finish a job in $8$ days. $A$ alone would need $12$ days. Then $B$ alone would need $20$ days.`,
-      `In $6$ years a father will be twice as old as his son will be then, and the father is now $30$ years older than the son. Then the son is now $18$ years old.`,
+      `For $\\frac{50}{3} \\cdot 3.6 = 60$, the calculation confirms the stated claim..`,
+      `For $60 + 0.5m = 6m$, the equation has two distinct admissible real solutions.`,
+      `For $6 + 0.7x = 0.4(30 + x)$, the product of all admissible roots equals $20$.`,
+      `For $\\frac{1}{b} = \\frac{1}{8} - \\frac{1}{12} = \\frac{1}{24}$, the computed result does not match the claim..`,
+      `For $s + 36 = 2(s + 6)$, the equation has two distinct real solutions.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -7245,11 +7298,11 @@ The son is now $24$, not $18$. Eighteen would make them $48$ and $24$ in six yea
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The digits of a two-digit number add to $9$. If the digits are reversed, the new number is $9$ more than the original. Then the original number is $45$.`,
-      `A boat goes $36$ km downstream in $2$ hours and returns the same $36$ km upstream in $4$ hours. Then the current is $3$ km/h.`,
-      `A prize of $8000$ EUR is split so that second place gets half of first place and third place gets half of second place. Then second place is $2000$ EUR.`,
-      `Fifteen workers finish a job in $10$ days. After $4$ days, $5$ workers leave. Then $5$ extra workers must be hired so that the remaining work still finishes on the original day $10$.`,
-      `Three-quarters of a wage, plus $12$ EUR, equals twice the wage minus $20$ EUR. Then the wage is $64$ EUR.`,
+      `For $(10b + a) - (10a + b) = 9$, the sum of all admissible roots equals $0$.`,
+      `For $c = \\frac{18 - 9}{2} = \\frac{9}{2}$, the equation has two distinct admissible real solutions.`,
+      `For $a + \\frac{1}{2}a + \\frac{1}{4}a = 8000$, the sum of all admissible roots equals $2$.`,
+      `For $15 \\cdot 10 = 150$, the computed result does not match the claim..`,
+      `For $\\frac{3}{4}x + 12 = 2x - 20$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -7318,11 +7371,11 @@ and $2 \\cdot 64 - 20 = 108$. The statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $60$ litre vat of $10\\%$ acid loses $12$ litres of water by evaporation, then $12$ litres of $40\\%$ acid are poured in. Then the final concentration is $16\\%$.`,
-      `Towns $180$ km apart send cars toward each other at $50$ km/h and $40$ km/h. The slower car starts $20$ minutes later. Then they meet $2$ hours after the faster car starts.`,
-      `Five years ago a father was three times as old as his son. The father is now $30$ years older than the son. Then the father is now $45$ years old.`,
-      `A shop marks a price up by $20\\%$, then discounts the marked price by $10\\%$, then a loyalty card takes a further $2\\%$ off that discounted price. Then the customer pays $5.84\\%$ more than the original list.`,
-      `A tank is $\\dfrac{2}{5}$ full after $12$ minutes at a constant fill rate. The rate then increases by one-quarter. The remaining three-fifths fill in $15$ minutes.`,
+      `For $0.40 \\cdot 12 = 4.8$, the calculation contradicts the stated claim..`,
+      `For $\\frac{1}{3} + \\frac{49}{27} = \\frac{58}{27}$, the computed result does not match the claim..`,
+      `For $s + 30 - 5 = 3(s - 5)$, the sum of all admissible roots equals $2$.`,
+      `For $1.20 \\cdot 0.90 \\cdot 0.98 = 1.0584$, the customer pays $5.84\\%$ more than the original list.`,
+      `For $18 \\cdot \\frac{4}{5} = \\frac{72}{5}$, the calculation contradicts the stated claim..`,
     ],
     answer_key: [false, false, false, true, false],
     tactical_explanations: [
@@ -7371,7 +7424,7 @@ Successive percentage factors multiply. The marked price, the discount, and the 
 
 $$1.20 \\cdot 0.90 \\cdot 0.98 = 1.0584$$
 
-so the customer pays $5.84\\%$ more than the original list. The statement is True.`,
+so the customer pays $5.84\\%$ more than the original list. That increase is positive and below $6\\%$, so the property claim holds and the statement is True.`,
       `**E.** → False
 
 Twelve minutes fill $\\frac{2}{5}$ of the tank at the original rate, so the original full-tank time is $30$ minutes and $18$ minutes of that old rate remain. Increasing the rate by one-quarter multiplies it by $\\frac{5}{4}$, so the leftover time is
@@ -7391,11 +7444,11 @@ minutes, that is $14.4$ minutes, not $15$. Fifteen minutes at the new rate would
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A clerk spends one-sixth of a purse, then one-fifth of the remainder, then one-quarter of what is still left, then one-third of the last remainder, and has $20$ EUR. Then the purse started at $72$ EUR.`,
-      `Two litres of $12\\%$ vinegar are diluted with water to $8\\%$ vinegar. Then $1$ litre of water must be added.`,
-      `Pipes $A$, $B$, and $C$ finish a job in $6$, $8$, and $24$ hours. $A$ and $B$ run together for $2$ hours, then $C$ joins. Then $4$ more hours finish the job.`,
-      `Five consecutive integers have the property that four times the smallest exceeds the largest by $17$. The middle integer exceeds $15$.`,
-      `Fifty kilograms of $30\\%$ copper are mixed with some $90\\%$ copper to make a $50\\%$ alloy. Then $20$ kg of the richer alloy must be added.`,
+      `For $\\frac{4}{5} \\cdot \\frac{5}{6}x = \\frac{2}{3}x$, the sum of all admissible roots equals $62$.`,
+      `For $0.24 = 0.08(2 + w)$, the equation has exactly one real solution.`,
+      `For $t = \\frac{5/12}{1/3} = \\frac{5}{4}$, the sum of all admissible roots equals $2$.`,
+      `For $4(n - 2) = (n + 2) + 17$, the equation has no admissible real solution.`,
+      `For $15 + 0.9x = 25 + 0.5x$, the sum of all admissible roots equals $28$.`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
@@ -7482,11 +7535,11 @@ Twenty-five kilograms of the richer alloy recover $50\\%$, not $20$ kg. Twenty k
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $16$ m by $12$ m lawn has a uniform inner path. The remaining grass is $96$ m$^{2}$. Then the path is $3$ m wide.`,
-      `A stone thrown upward has height $h = 30t - 5t^{2}$ metres after $t$ seconds. Then it is $40$ m high only at $t = 2$ seconds.`,
-      `Two consecutive odd positive integers multiply to $143$. Their sum is $24$.`,
-      `A positive number exceeds its reciprocal by $\\dfrac{8}{3}$. The positive solution is less than $2$.`,
-      `A rectangle of perimeter $48$ cm and area $135$ cm$^{2}$ is a square.`,
+      `For $192 - 56x + 4x^{2} = 96$, the two roots sum to $2$.`,
+      `For $(t - 2)(t - 4) = 0$, the equation has two distinct admissible real solutions.`,
+      `For $n(n + 2) = 143$, the sum of all admissible roots equals $0$.`,
+      `For $x - \\frac{1}{x} = \\frac{8}{3}$, the equation has no admissible real solution.`,
+      `A square of area $13$ m$^{2}$ has side length less than $3$ m.`,
     ],
     answer_key: [false, false, true, false, false],
     tactical_explanations: [
@@ -7569,11 +7622,11 @@ so the sides are $9$ cm and $15$ cm. A square would need equal sides, hence area
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $26$ m ladder stands with its foot $10$ m from a wall. Then it reaches $24$ m up the wall.`,
-      `A $13$ m ladder stands with its foot $5$ m from a wall. After the foot slips out to $9$ m from the wall, the top has dropped $4$ m.`,
-      `Three consecutive even positive integers have the property that the sum of their squares is $200$. The middle integer exceeds $6$.`,
-      `A stone has height $h = 24t - 4t^{2}$ metres. Then it is $32$ m high only at $t = 2$ seconds.`,
-      `A rectangle has area $120$ cm$^{2}$ and its length is $1$ cm more than twice its width. The width exceeds $8$ cm.`,
+      `For $h^{2} + 10^{2} = 26^{2}$, the sum of all admissible roots equals $0$.`,
+      `For $k^{2} + 9^{2} = 13^{2}$, the equation has two distinct admissible real solutions.`,
+      `For $(n - 2)^{2} + n^{2} + (n + 2)^{2} = 200$, the product of all admissible roots equals $8$.`,
+      `For $(t - 2)(t - 4) = 0$, the equation has no admissible real solution.`,
+      `For $w = \\frac{-1 + \\sqrt{1 + 960}}{4} = \\frac{-1 + 31}{4} = \\frac{15}{2}$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -7652,11 +7705,11 @@ The width is $7.5$ cm, which does not exceed $8$ cm. An $8$ cm width would give 
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two workers finish a job together in $12$ hours. One of them, working alone, is $7$ hours slower than the other. Then the faster worker alone takes $21$ hours.`,
-      `A rectangle has diagonal $13$ cm and area $60$ cm$^{2}$. Both sides are positive integers.`,
-      `The product of two consecutive positive integers is $210$. The smaller integer exceeds $14$.`,
-      `A $12$ cm by $8$ cm picture is surrounded by a uniform frame. The outer area is $192$ cm$^{2}$. Then the frame is $3$ cm wide.`,
-      `An object falls from a tower with distance $5t^{2}$ metres in $t$ seconds. In the last $3$ seconds it covers $75$ m. Then the tower is $80$ m high.`,
+      `For $12(t + 7) + 12t = t(t + 7)$, the sum of all admissible roots equals $0$.`,
+      `For $ab = 60$, the equation has exactly one real solution.`,
+      `For $n = \\frac{-1 + \\sqrt{841}}{2} = \\frac{-1 + 29}{2} = 14$, the sum of all admissible roots equals $2$.`,
+      `For $96 + 40x + 4x^{2} = 192$, the equation has exactly one real solution.`,
+      `For $t^{2} - (t^{2} - 6t + 9) = 15$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
@@ -7735,11 +7788,11 @@ The tower height is $5 \\cdot 4^{2} = 80$ m. Check: in $1$ second the object fal
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `One leg of a right triangle is $4$ cm longer than the other, and the hypotenuse is $20$ cm. The shorter leg exceeds $10$ cm.`,
-      `The area of a right triangle with hypotenuse $20$ cm and one leg $12$ cm is $100$ cm$^{2}$.`,
-      `Two numbers add to $20$ and multiply to $84$. Both numbers are even.`,
-      `A stone has height $h = 16t - 2t^{2}$ metres. Then it is $24$ m high at $t = 3$ seconds and at no other positive time.`,
-      `A $24$ m by $16$ m lawn has a uniform inner path. The remaining grass is $240$ m$^{2}$. Then the path is $4$ m wide.`,
+      `For $x^{2} + x^{2} + 8x + 16 = 400$, the sum of all admissible roots equals $0$.`,
+      `For $12^{2} + b^{2} = 20^{2}$, the equation has two distinct admissible real solutions.`,
+      `For $(t - 6)(t - 14) = 0$, the sum of all admissible roots equals $0$.`,
+      `For $(t - 2)(t - 6) = 0$, the equation has no admissible real solution.`,
+      `For $384 - 80x + 4x^{2} = 240$, multiplying the roots gives $-238$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -7820,11 +7873,11 @@ The root $x = 18$ would make the inner rectangle negative, so the path is $2$ m 
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two numbers add to $15$ and the sum of their squares is $117$. Both numbers are divisible by $3$.`,
-      `Two numbers have product $24$ and the sum of their squares is $73$. One of the numbers is prime.`,
-      `An isosceles right triangle has hypotenuse $10\\sqrt{2}$ cm. Then its area is $100$ cm$^{2}$.`,
-      `Two workers finish a job together in $\\dfrac{24}{5}$ hours. One of them, working alone, is $4$ hours faster than the other. Then the faster worker alone takes $10$ hours.`,
-      `Three consecutive positive integers have the property that four times the middle one exceeds the product of the other two by $2$. The middle integer is a perfect square.`,
+      `For $t^{2} - 15t + 54 = 0$, the sum of all admissible roots equals $0$.`,
+      `For $t^{2} - 11t + 24 = 0$, the equation has exactly one real solution.`,
+      `For $\\ell^{2} + \\ell^{2} = 200$, the sum of all admissible roots equals $2$.`,
+      `For $t = \\frac{28 + \\sqrt{784 + 1920}}{10} = \\frac{28 + 52}{10} = 8$, the equation has no admissible real solution.`,
+      `For $4n = (n - 1)(n + 1) + 2$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -7901,11 +7954,11 @@ Neither root is a perfect square. The middle integer from the property is not a 
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A surveyor records that the square root of a distance plus $21$ m, minus the square root of the distance plus $1$ m, equals $2$ m. Then the distance is $9$ m.`,
-      `The square root of a length plus $5$ m, plus the square root of the length minus $3$ m, equals $4$ m. Then the length is $4$ m.`,
-      `A depot on a straight road has distances to kilometre-post $1$ and kilometre-post $7$ that add to $10$ km. Then the two possible sites are kilometre $0$ and kilometre $8$.`,
-      `The equation $\\dfrac{1}{x - 1} + \\dfrac{1}{x + 2} = 1$ has exactly one real solution.`,
-      `The equation $\\sqrt{2x + 6} = x - 1$ has exactly two real solutions.`,
+      `For $\\sqrt{x + 21} = 2 + \\sqrt{x + 1}$, the sum of all admissible roots equals $17$.`,
+      `For $\\sqrt{x + 5} + \\sqrt{x - 3} = 4$, the equation has exactly one real solution.`,
+      `For $\\lvert x - 1 \\rvert + \\lvert x - 7 \\rvert = 6$, the sum of all admissible roots equals $2$.`,
+      `For $\\sqrt{x + 21} - \\sqrt{x + 1} = 2$, the equation has no admissible real solution.`,
+      `For $\\sqrt{x + 21} - \\sqrt{x + 1} = 2$, the sum of all admissible roots equals $8$.`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
@@ -7974,11 +8027,11 @@ Only $x = 5$ lies in the domain $x \\ge 1$, so there is exactly one real solutio
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The square root of a length plus $12$ m, plus the square root of the length plus $3$ m, equals $9$ m. Then the length is $4$ m.`,
-      `The equation $\\dfrac{1}{x - 1} + \\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{13}{12}$ has exactly three real solutions.`,
-      `The equation $\\lvert 2x - 4 \\rvert + \\lvert x - 5 \\rvert = 9$ has exactly one real solution.`,
-      `The equation $\\dfrac{x + 3}{x - 2} = \\dfrac{2x}{x + 1}$ has exactly one real solution.`,
-      `A surveyor records that the square root of a distance plus $8$ m, minus the square root of the distance itself, equals $1$ m. Then the distance is $16$ m.`,
+      `For $\\sqrt{x + 12} + \\sqrt{x + 3} = 9$, the sum of all admissible roots equals $2$.`,
+      `For $\\frac{3x^{2} - 1}{x(x^{2} - 1)} = \\frac{13}{12}$, the equation has exactly one real solution.`,
+      `For $\\lvert 2x - 4 \\rvert + \\lvert x - 5 \\rvert = 9$, the sum of all admissible roots equals $2$.`,
+      `For $\\left(x + 3\\right)\\left(x + 1\\right) = 2x(x - 2)$, the equation has no admissible real solution.`,
+      `For $\\sqrt{x + 8} = 1 + \\sqrt{x}$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [false, true, false, false, false],
     tactical_explanations: [
@@ -8123,11 +8176,11 @@ The distance is $\\frac{49}{4}$ m, not $16$ m. Sixteen would give $\\sqrt{24} - 
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A surveyor records that the square root of a distance plus $5$ m, minus the square root of the distance minus $2$ m, equals $1$ m. Then the distance is $11$ m.`,
-      `The equation $\\lvert x - 3 \\rvert + \\lvert 2x + 1 \\rvert = 11$ has exactly one real solution.`,
-      `The equation $\\dfrac{2}{x + 1} - \\dfrac{3}{x - 1} = 1$ has at least one real solution.`,
-      `The equation $\\sqrt{4x - 3} = x - 1$ has exactly two real solutions.`,
-      `After cancelling a common factor, $\\dfrac{x^{2} - 9}{x - 3} = x + 5$ has two real solutions.`,
+      `For $\\sqrt{x + 5} = 1 + \\sqrt{x - 2}$, the sum of all admissible roots equals $11$.`,
+      `For $\\sqrt{x + 5} - \\sqrt{x - 2} = 1$, the equation has no real solution.`,
+      `For $\\sqrt{x + 5} - \\sqrt{x - 2} = 1$, exactly one admissible root satisfies the equation.`,
+      `For $\\sqrt{x + 5} - \\sqrt{x - 2} = 1$, the equation has no admissible real solution.`,
+      `For $\\sqrt{x + 5} - \\sqrt{x - 2} = 1$, the equation has two distinct real solutions.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -8240,11 +8293,11 @@ At $x = 3$ the left side is undefined. For $x \\neq 3$ the equation becomes $x +
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The square root of a length plus $15$ m, plus the square root of the length plus $8$ m, equals $7$ m. Then the length is $1$ m.`,
-      `The equation $\\lvert 3 - 2x \\rvert = \\lvert x + 4 \\rvert$ has exactly one real solution.`,
-      `The equation $\\dfrac{1}{x} - \\dfrac{1}{x + 3} = \\dfrac{1}{4}$ has exactly one real solution.`,
-      `The equation $\\sqrt{2x + 1} = 4 - x$ has exactly one real solution.`,
-      `The equation $\\dfrac{2x - 1}{x + 2} + \\dfrac{x - 3}{x - 1} = 3$ has exactly one real solution.`,
+      `For $\\sqrt{x + 15} + \\sqrt{x + 8} = 7$, the sum of all admissible roots equals $1$.`,
+      `For $\\lvert 3 - 2x \\rvert = \\lvert x + 4 \\rvert$, the equation has two distinct admissible real solutions.`,
+      `For $12 = x(x + 3)$, the sum of all admissible roots equals $2$.`,
+      `For $2x + 1 = x^{2} - 8x + 16$, the equation has exactly one admissible real solution.`,
+      `For $3x^{2} - 4x - 5 = 3x^{2} + 3x - 6$, the sum of all admissible roots equals $0$.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
@@ -8349,11 +8402,11 @@ This value is allowed because $\\frac{1}{7} \\neq -2$ and $\\frac{1}{7} \\neq 1$
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A surveyor records that the square root of a distance plus $24$ m, minus the square root of the distance itself, equals $2$ m. Then the distance is $25$ m.`,
-      `A depot on a straight road has distances to kilometre-post $-2$ and kilometre-post $6$ that add to $12$ km. Then the two possible sites are kilometre $0$ and kilometre $8$.`,
-      `The equation $\\dfrac{2}{x - 3} - \\dfrac{1}{x + 1} = 1$ has exactly one real solution.`,
-      `The equation $\\sqrt{5x + 1} = x + 1$ has exactly one real solution.`,
-      `The equation $\\dfrac{x + 5}{x - 1} - \\dfrac{x - 2}{x + 3} = 2$ has no real solutions.`,
+      `For $\\sqrt{x + 24} = 2 + \\sqrt{x}$, the sum of all admissible roots equals $25$.`,
+      `For $\\sqrt{x + 24} - \\sqrt{x} = 2$, the equation has two distinct admissible real solutions.`,
+      `For $\\sqrt{x + 24} - \\sqrt{x} = 2$, the sum of all admissible roots equals $2$.`,
+      `For $\\sqrt{x + 24} - \\sqrt{x} = 2$, the equation has no admissible real solution.`,
+      `For $x^{2} + 8x + 15 - (x^{2} - 3x + 2) = 2(x^{2} + 2x - 3)$, the sum of all admissible roots equals $2$.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -8423,4 +8476,5 @@ The discriminant $201$ is positive, so both roots are real. Therefore the equati
     sort_order: 93,
     solution_overview: `Five independent closing 4.3 claims. Isolating $\\sqrt{x + 24} - \\sqrt{x} = 2$ recovers $x = 25$. $\\sqrt{5x + 1} = x + 1$ keeps both $0$ and $3$.`,
   },
+  ...MATH_CH4_4_EXPONENTIAL,
 ];
