@@ -1,20 +1,19 @@
 # Chapter 4: Equations
 
-This chapter is the theory of equations with one unknown, from linear statements through quadratic, rational, radical and absolute-value equations, and on to exponential and logarithmic equations. The last section shows how those types sit together in mixed exam sets. The chapter starts from what an equation is and what it means to solve one. If you have never isolated an unknown before, begin at the first section and read straight through.
+This chapter is the theory of equations with one unknown: linear, quadratic, rational, radical and absolute-value, then exponential and logarithmic. It starts from what an equation is and what it means to solve one. If you have never isolated an unknown before, begin at the first section and read straight through.
 
-On the BBE exam, Chapter 4 statements are almost never bare arithmetic. They ask about the number of solutions, the sign of a root, a parameter condition, a domain restriction, or an extraneous root. The algebra below is written for that kind of claim.
+On the BBE exam, Chapter 4 statements are almost never bare arithmetic. They ask about the number of solutions, the sign of a root, a parameter condition, a domain restriction, or an extraneous root. The examples below are few on purpose. Each one is worked in full exam depth.
 
 ## Learning objectives
 
 - Recognise a linear equation in one unknown and solve it by inverse operations.
 - Decide whether a linear equation has one solution, none, or infinitely many, including when a parameter appears.
 - Solve quadratic equations by factoring, completing the square, and the quadratic formula.
-- Use the discriminant and Vieta’s relations to read root count, signs and sums without guessing roots.
+- Use the discriminant and Vieta’s relations to read root count, signs, sums and derived expressions.
 - Clear denominators in rational equations and exclude values that make a denominator zero.
 - Isolate and square radical equations, then check every candidate for extraneous roots.
 - Split absolute-value equations into cases and keep only values that match the case.
 - Solve exponential and logarithmic equations with matching bases, logarithm laws, and domain checks.
-- Choose the right model inside a mixed story and translate an exam claim into a precise algebraic question.
 
 ---
 
@@ -32,7 +31,7 @@ This says: some number $x$, multiplied by $3$, then increased by $4$, gives $19$
 
 Think of an equation as a balance scale. The left side sits in one pan, the right side in the other, and they are level. As long as you do the same thing to both pans, the scale stays level. That single idea is the whole method for linear equations.
 
-### Inverse operations
+### Inverse operations and cleaning
 
 Every operation has an inverse. Addition is undone by subtraction. Multiplication by a nonzero number is undone by division. The working order for a tidy linear equation is:
 
@@ -42,95 +41,15 @@ Every operation has an inverse. Addition is undone by subtraction. Multiplicatio
 4. Divide by the coefficient of the unknown, provided that coefficient is not zero.
 5. Check the answer in the original equation.
 
-**Example 1.** Solve $3x + 4 = 19$.
+A **term** is a single piece of an expression, such as $3x$ or $4$. A **coefficient** is the number multiplying a letter. **Like terms** carry the same letter power and can be added.
 
-Subtract $4$ from both sides:
-
-$$
-3x = 15.
-$$
-
-Divide both sides by $3$:
-
-$$
-x = 5.
-$$
-
-Check: $3(5) + 4 = 19$. True, so $x = 5$ is the solution.
-
-### Terms, coefficients and like terms
-
-A **term** is a single piece of an expression, such as $3x$ or $4$. A **coefficient** is the number multiplying a letter, so in $3x$ the coefficient is $3$. **Like terms** carry the same letter power and can be added: $2x + 5x = 7x$, but $2x + 5$ cannot be collapsed into one term.
-
-**Example 2.** Solve $5x - 2x + 7 = 22$.
-
-$$
-3x + 7 = 22, \qquad 3x = 15, \qquad x = 5.
-$$
-
-### Brackets first
-
-If an equation contains brackets, expand them before isolating. Use the distributive law: $a(b + c) = ab + ac$.
-
-**Example 3.** Solve $3(x + 1) = 12$.
-
-$$
-3x + 3 = 12, \qquad 3x = 9, \qquad x = 3.
-$$
-
-Check: $3(3 + 1) = 12$. True.
-
-If a minus sits in front of a bracket, distribute the minus carefully:
+If an equation contains brackets, expand them before isolating. Use $a(b + c) = ab + ac$, and watch a leading minus:
 
 $$
 -(2x - 5) = -2x + 5.
 $$
 
-Losing that sign change is one of the commonest exam errors.
-
-### Fractions and clearing denominators
-
-When every term is a fraction, multiply through by a common denominator so that the new equation has no fractions. That step is allowed because multiplying both sides by the same nonzero number preserves equality.
-
-**Example 4.** Solve $\dfrac{x - 7}{2} = 4$.
-
-Multiply both sides by $2$:
-
-$$
-x - 7 = 8, \qquad x = 15.
-$$
-
-Check: $\dfrac{15 - 7}{2} = 4$. True.
-
-If several denominators appear, use their least common multiple.
-
-**Example 5.** Solve $\dfrac{x}{2} + \dfrac{x}{3} = 10$.
-
-Multiply through by $6$:
-
-$$
-3x + 2x = 60, \qquad 5x = 60, \qquad x = 12.
-$$
-
-### Unknowns on both sides
-
-Bring every term with $x$ to one side and every constant to the other.
-
-**Example 6.** Solve $5x - 3 = 2x + 9$.
-
-Subtract $2x$ from both sides:
-
-$$
-3x - 3 = 9.
-$$
-
-Add $3$:
-
-$$
-3x = 12, \qquad x = 4.
-$$
-
-Check: $5(4) - 3 = 17$ and $2(4) + 9 = 17$. True.
+When fractions appear, multiply through by a common denominator so the new equation has no fractions. That step preserves equality because both sides are scaled by the same nonzero number.
 
 ### One solution, none, or infinitely many
 
@@ -142,23 +61,15 @@ After simplifying, a linear equation ends in one of three ways.
 | $0 = c$ with $c \neq 0$ | Contradiction | Empty set: no solution |
 | $0 = 0$ | Identity | Every real $x$ works |
 
-**Example 7.** The equation $2x + 1 = 2x + 5$ simplifies to $1 = 5$, which is false. There is no solution.
-
-**Example 8.** The equation $2(x + 3) = 2x + 6$ simplifies to $2x + 6 = 2x + 6$, hence $0 = 0$. Every real $x$ is a solution.
-
-Exam statements often hide these endings behind a parameter. That is the next idea.
-
 ### Parameters in a linear equation
 
-A **parameter** is a letter treated as a fixed but unknown number while you solve for $x$. Typical letters are $k$, $m$ or $a$. The question becomes: for which values of the parameter does the equation have one solution, none, or infinitely many?
-
-Write the equation in the shape
+A **parameter** is a letter treated as a fixed but unknown number while you solve for $x$. Typical letters are $k$, $m$ or $a$. Write the cleaned equation as
 
 $$
 A(k)\, x = B(k),
 $$
 
-then read the coefficient of $x$.
+then classify.
 
 | Condition on $A(k)$ and $B(k)$ | Number of solutions for $x$ |
 | --- | --- |
@@ -166,64 +77,96 @@ then read the coefficient of $x$.
 | $A(k) = 0$ and $B(k) \neq 0$ | None |
 | $A(k) = 0$ and $B(k) = 0$ | Infinitely many |
 
-**Example 9.** Consider
+Exam claims about “exactly one $k$ with infinitely many solutions”, “no solution if and only if $k = \ldots$”, or “for every $k > 2$ the unique $x$ is positive” are answered from this table, not by guessing a few values of $k$.
+
+**Example 1.** Study the parametric balance
 
 $$
-(k - 2)x = 6.
+(k - 1)x - 2 = k(x - 3) + 1
 $$
 
-- If $k \neq 2$, then $x = 6/(k - 2)$ is the unique solution.
-- If $k = 2$, the equation becomes $0 = 6$, so there is no solution.
-- There is no value of $k$ that makes both sides zero here, so infinitely many solutions never occur.
+and decide, for every real $k$, how many solutions $x$ exist. Then answer three typical claims.
 
-**Example 10.** Consider
+Expand and collect:
 
 $$
-(k + 1)x = 2k + 2.
+(k - 1)x - 2 = kx - 3k + 1,
 $$
 
-Rewrite the right side as $2(k + 1)$:
-
 $$
-(k + 1)x = 2(k + 1).
+(k - 1)x - kx = -3k + 1 + 2,
 $$
 
-- If $k \neq -1$, divide by $k + 1$ to get $x = 2$.
-- If $k = -1$, both sides are zero for every $x$, so the equation is an identity and every real $x$ is a solution.
-
-So there is exactly one parameter value, $k = -1$, that produces infinitely many solutions. That is the kind of claim you meet in parametric equilibrium and cost-sharing models.
-
-### Word problems that become linear
-
-Translate the story into an equation, solve, then read the answer back into the story. Units and signs matter: a volume cannot be negative, a price is usually positive, and a count of people must be a whole number.
-
-**Example 11.** A vat holds $40$ litres of $25\%$ acid. Eight litres are drawn off and replaced by $50\%$ acid. What is the new concentration?
-
-Start with $0.25 \cdot 40 = 10$ litres of pure acid. Drawing $8$ litres of the $25\%$ mix removes $2$ litres of acid, leaving $8$ litres of acid in $32$ litres of mixture. Adding $8$ litres of $50\%$ stock adds $4$ litres of acid, so $12$ litres of acid sit in $40$ litres:
-
 $$
-\frac{12}{40} = 0.30 = 30\%.
+kx - x - kx = -3k + 3,
 $$
 
-The new concentration is $30\%$, not $32\%$. The trap is treating the removed liquid as pure water or forgetting that the drawn-off part still contains acid.
-
-**Example 12.** Pipe $A$ fills a tank in $20$ minutes and pipe $B$ in $30$ minutes. How long do they need together?
-
-Rates add:
-
 $$
-\frac{1}{20} + \frac{1}{30} = \frac{1}{12},
+-x = -3(k - 1),
 $$
 
-so together they finish the tank in $12$ minutes.
+$$
+x = 3(k - 1).
+$$
+
+Here the $k$-terms cancelled on the left, and the coefficient of $x$ became $-1$, which is never zero. So for **every** real $k$ there is exactly one solution,
+
+$$
+x = 3(k - 1).
+$$
+
+There is no parameter value with no solution, and no parameter value with infinitely many solutions.
+
+Now test claims of the exam type:
+
+- “There is exactly one real $k$ for which the equation has infinitely many solutions.” False. The coefficient of $x$ never vanishes.
+- “When $k = 3$, the unique solution satisfies $x > 2$.” True, because $x = 3(3 - 1) = 6 > 2$.
+- “For every $k < 1$, the unique solution is strictly negative.” True, because $k - 1 < 0$ forces $x = 3(k - 1) < 0$.
+
+The same routine on a different equation can produce a genuine singular value. For
+
+$$
+(k + 1)x = 2k + 2 = 2(k + 1),
+$$
+
+the case $k = -1$ makes both sides zero, so every $x$ works, while $k \neq -1$ forces the unique root $x = 2$. That contrast is why parameter analysis must be done before any claim about uniqueness.
+
+**Example 2.** A $60$ litre vat starts at $10\%$ acid. Twelve litres of water evaporate, then $12$ litres of $40\%$ acid are poured in. After that, $x$ litres of the new mixture are drawn off and replaced by pure water so that the final concentration equals $12\%$. Find $x$, and decide whether the claim “less than $20$ litres must be drawn off” is true.
+
+First stage: the vat starts with $0.10 \cdot 60 = 6$ litres of pure acid. Evaporating $12$ litres of water leaves those $6$ litres of acid in $48$ litres of mixture. Adding $12$ litres of $40\%$ stock adds
+
+$$
+0.40 \cdot 12 = 4.8
+$$
+
+litres of acid, so $10.8$ litres of acid sit in $60$ litres. The concentration after the first stage is
+
+$$
+\frac{10.8}{60} = 0.18 = 18\%.
+$$
+
+Second stage: draw off $x$ litres of the $18\%$ mix. That removes $0.18x$ litres of acid and leaves $10.8 - 0.18x$ litres of acid in $60 - x$ litres. Adding $x$ litres of water restores volume $60$ and leaves the acid amount unchanged. The final concentration condition is
+
+$$
+\frac{10.8 - 0.18x}{60} = 0.12.
+$$
+
+Solve:
+
+$$
+10.8 - 0.18x = 7.2, \qquad -0.18x = -3.6, \qquad x = 20.
+$$
+
+Check: after drawing $20$ litres of the $18\%$ mix, acid left is $10.8 - 3.6 = 7.2$ litres in $60$ litres, which is exactly $12\%$.
+
+So the required draw-off is $20$ litres. The claim “less than $20$ litres must be drawn off” is false. The trap is stopping after the evaporation step and treating $18\%$ as the final answer, or forgetting that the drawn-off liquid still contains acid.
 
 ### Exam traps in 4.1
 
 - Dividing by a coefficient that might be zero when a parameter is present.
-- Reading $0 = 0$ as “no solution” instead of “every $x$”.
-- Reading $0 = 5$ as “$x = 0$”.
-- Expanding $-(x - 3)$ as $-x - 3$ instead of $-x + 3$.
-- Checking a claimed root by substitution and calling the statement true when the substitution fails.
+- Reading $0 = 0$ as “no solution”, or reading $0 = 5$ as “$x = 0$”.
+- Expanding $-(x - 3)$ as $-x - 3$.
+- In mixture stories, treating removed liquid as pure water when it is still a mixture.
 
 **Working order for a linear claim.** Clean brackets and fractions, collect $x$ on one side, and look at the coefficient of $x$. If a parameter remains, classify the cases $A \neq 0$, $A = 0$ with $B \neq 0$, and $A = B = 0$. Then answer the claim about uniqueness, sign, or a parameter condition.
 
@@ -239,125 +182,46 @@ $$
 ax^{2} + bx + c = 0
 $$
 
-with $a \neq 0$. The number $a$ is the leading coefficient, $b$ is the linear coefficient, and $c$ is the constant term. The unknown may appear only to the second power and the first power. No higher powers, no $x$ in a denominator, and no $x$ under a root in the pure quadratic case.
+with $a \neq 0$. Each unknown appears only to the first or second power.
 
 | Equation | Quadratic? | Reason |
 | --- | --- | --- |
-| $x^{2} - 5x + 6 = 0$ | Yes | Standard form with $a = 1$ |
-| $2x^{2} = 8$ | Yes | Rearranges to $2x^{2} - 8 = 0$ |
+| $x^{2} - 5x + 6 = 0$ | Yes | Standard form |
 | $(x - 3)(x - 5) = 8$ | Yes | Expands to a quadratic |
 | $x^{3} - x = 0$ | No | Degree three |
 | $\dfrac{1}{x} + x = 2$ | No | Unknown in a denominator |
 
-### Factoring when a product is zero
+### Solving methods
 
-If a product equals zero, at least one factor is zero:
+If a product equals zero, at least one factor is zero: $AB = 0$ gives $A = 0$ or $B = 0$.
 
-$$
-AB = 0 \quad \Rightarrow \quad A = 0 \ \text{or}\ B = 0.
-$$
-
-**Example 1.** Solve $x^{2} - 5x + 6 = 0$.
-
-$$
-(x - 2)(x - 3) = 0,
-$$
-
-so $x = 2$ or $x = 3$.
-
-**Example 2.** Solve $x^{2} = 49$.
-
-$$
-x^{2} - 49 = 0, \qquad (x - 7)(x + 7) = 0,
-$$
-
-so $x = 7$ or $x = -7$. Both signs of a square root matter unless the story forbids one of them.
-
-### Completing the square
-
-Rewrite $ax^{2} + bx + c = 0$ so that a perfect square appears. For $a = 1$:
+Completing the square rewrites the equation so a perfect square appears. For $a = 1$,
 
 $$
 x^{2} + bx = \left(x + \frac{b}{2}\right)^{2} - \left(\frac{b}{2}\right)^{2}.
 $$
 
-**Example 3.** Solve $x^{2} + 6x - 7 = 0$ by completing the square.
-
-$$
-x^{2} + 6x = 7,
-$$
-
-$$
-\left(x + 3\right)^{2} - 9 = 7,
-$$
-
-$$
-\left(x + 3\right)^{2} = 16,
-$$
-
-$$
-x + 3 = \pm 4,
-$$
-
-so $x = 1$ or $x = -7$.
-
-Completing the square is also the clean way to read a vertex form such as $(x - h)^{2} = k$ in a profit or operating model.
-
-### The quadratic formula and the discriminant
-
-For $ax^{2} + bx + c = 0$ with $a \neq 0$,
+The quadratic formula for $ax^{2} + bx + c = 0$ is
 
 $$
 x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}.
 $$
 
-The expression under the square root is the **discriminant**:
-
-$$
-\Delta = b^{2} - 4ac.
-$$
+The **discriminant** $\Delta = b^{2} - 4ac$ decides the number of real roots.
 
 | Discriminant | Number of real roots |
 | --- | --- |
 | $\Delta > 0$ | Two distinct real roots |
-| $\Delta = 0$ | Exactly one real root (a repeated root) |
+| $\Delta = 0$ | Exactly one real root (repeated) |
 | $\Delta < 0$ | No real roots |
 
-**Example 4.** For $x^{2} + x + 1 = 0$,
+### Vieta’s relations and signs
 
-$$
-\Delta = 1 - 4 = -3 < 0,
-$$
-
-so there are no real roots. Completing the square gives the same conclusion:
-
-$$
-x^{2} + x + 1 = \left(x + \tfrac12\right)^{2} + \tfrac34 > 0
-$$
-
-for every real $x$.
-
-**Example 5.** For $2x^{2} - 3x - 2 = 0$,
-
-$$
-\Delta = 9 + 16 = 25 > 0,
-$$
-
-$$
-x = \frac{3 \pm 5}{4},
-$$
-
-so $x = 2$ or $x = -\tfrac12$.
-
-### Vieta’s relations
-
-If $ax^{2} + bx + c = 0$ has roots $x_1$ and $x_2$ (counting a repeated root twice), then
+If the roots are $x_1$ and $x_2$, then
 
 $$
 x_1 + x_2 = -\frac{b}{a}, \qquad x_1 x_2 = \frac{c}{a}.
 $$
-
-These identities let you answer claims about sums, products, sums of squares, and sums of reciprocals without naming each root first.
 
 Useful rearrangements:
 
@@ -373,342 +237,313 @@ $$
 |x_1 - x_2| = \frac{\sqrt{\Delta}}{|a|}.
 $$
 
-**Example 6.** The roots of $x^{2} - 9x + 14 = 0$ have sum $9$ and product $14$. They are $2$ and $7$. The claim “both roots exceed $5$” is false because $2 \le 5$.
-
-**Example 7.** If two break-even quantities are roots of a quadratic and their product is negative, then the roots have opposite signs. By Vieta, that means $c/a < 0$.
-
-### Signs of the roots
-
-Once $\Delta \ge 0$, the signs are read from the sum and product:
+Once $\Delta \ge 0$, signs follow from sum and product.
 
 | Product $x_1 x_2$ | Sum $x_1 + x_2$ | Conclusion |
 | --- | --- | --- |
-| Positive | Positive | Both roots positive (or both zero only in degenerate cases) |
+| Positive | Positive | Both roots positive |
 | Positive | Negative | Both roots negative |
 | Negative | Any | Opposite signs |
-| Zero | any | At least one root is zero |
+| Zero | Any | At least one root is zero |
 
-For “both strictly positive” you typically need $\Delta \ge 0$, sum $> 0$, and product $> 0$. Exam statements with a parameter $m$ ask you to turn those three conditions into inequalities on $m$.
+For “both strictly positive” you need $\Delta \ge 0$, sum $> 0$, and product $> 0$. When coefficients depend on a parameter $m$, those three conditions become inequalities in $m$.
 
-### Parametric quadratics
+A **biquadratic** $ay^{4} + by^{2} + c = 0$ is reduced by $u = y^{2}$ with $u \ge 0$. Only nonnegative roots $u$ produce real $y$.
 
-When coefficients depend on a parameter $m$, treat $\Delta(m)$, the sum and the product as functions of $m$. Typical claims:
-
-- “Exactly one real solution if and only if $m = \ldots$” means $\Delta(m) = 0$ at that value alone.
-- “Two distinct positive roots” means $\Delta > 0$, sum $> 0$, product $> 0$.
-- “Opposite signs” means product $< 0$ (and then $\Delta > 0$ follows automatically for real coefficients in the usual monic setup, but still check).
-
-**Example 8.** Suppose a model gives
+**Example 1.** For the parametric break-even model
 
 $$
-x^{2} - (m-1)x + (m - 4) = 0.
+x^{2} - (2m + 1)x + (m^{2} - 4) = 0,
 $$
 
-Then
+determine every real $m$ for which there are two distinct real roots of opposite signs. Then decide whether the claim “those opposite-sign roots occur precisely when $-2 < m < 2$” is true, and whether “the sum of the squares of the roots is minimised at $m = 0$ among all $m$ with $\Delta > 0$” is true.
+
+Here
 
 $$
-\Delta = (m-1)^{2} - 4(m-4).
+a = 1, \qquad b = -(2m + 1), \qquad c = m^{2} - 4,
 $$
 
-Set $\Delta = 0$ to find the parameter values that produce a repeated root. Compare the sum $m-1$ and the product $m-4$ with zero to classify signs.
-
-### Biquadratic equations
-
-An equation of the form $ay^{4} + by^{2} + c = 0$ is **biquadratic**. Set $u = y^{2}$ with $u \ge 0$, solve the quadratic in $u$, then take square roots of every nonnegative root $u$.
-
-**Example 9.** Solve $u^{2} - 5u + 4 = 0$ after the substitution $u = y^{2}$.
+so
 
 $$
-(u - 1)(u - 4) = 0,
+\Delta = (2m + 1)^{2} - 4(m^{2} - 4) = 4m^{2} + 4m + 1 - 4m^{2} + 16 = 4m + 17.
 $$
 
-so $u = 1$ or $u = 4$. Then $y = \pm 1$ or $y = \pm 2$: four distinct real solutions. If a quadratic in $u$ returned a negative root, that root would contribute no real $y$.
-
-### Word problems that become quadratic
-
-Areas, Pythagoras, consecutive integers, and break-even quantities often produce quadratics.
-
-**Example 10.** Two consecutive integers have product $56$.
+Distinct real roots need $\Delta > 0$, that is
 
 $$
-n(n + 1) = 56, \qquad n^{2} + n - 56 = 0.
+m > -\frac{17}{4}.
 $$
 
-$$
-\Delta = 1 + 224 = 225, \qquad n = \frac{-1 \pm 15}{2},
-$$
-
-so $n = 7$ or $n = -8$. The consecutive pairs are $7,8$ and $-8,-7$.
-
-**Example 11.** A rectangle has area $60$ and one side is $5$ more than the other.
+Opposite signs need product $< 0$:
 
 $$
-w(w + 5) = 60, \qquad w^{2} + 5w - 60 = 0.
+m^{2} - 4 < 0 \quad \Leftrightarrow \quad -2 < m < 2.
 $$
 
-The positive root is $w = 5$, so the sides are $5$ and $10$.
+Intersecting with $\Delta > 0$:
+
+$$
+m \in (-2, 2)
+$$
+
+already lies inside $m > -17/4$. So opposite-sign distinct real roots occur precisely for $-2 < m < 2$. The first claim is true.
+
+For the sum of squares, Vieta gives sum $= 2m + 1$ and product $= m^{2} - 4$, hence
+
+$$
+x_1^{2} + x_2^{2} = (2m + 1)^{2} - 2(m^{2} - 4) = 4m^{2} + 4m + 1 - 2m^{2} + 8 = 2m^{2} + 4m + 9.
+$$
+
+On the open interval where $\Delta > 0$, this quadratic in $m$ opens upwards. Its vertex is at
+
+$$
+m = -\frac{4}{2 \cdot 2} = -1.
+$$
+
+The value $m = -1$ lies in $(-17/4, \infty)$, so among all $m$ with two distinct real roots the sum of squares is minimised at $m = -1$, not at $m = 0$. The second claim is false.
+
+At $m = -1$ one also has product $= 1 - 4 = -3 < 0$, so the minimising parameter still produces opposite signs. That is the depth the exam wants: discriminant, Vieta, and a calculus-free quadratic minimum on an interval, all from one model.
+
+**Example 2.** Replace $x$ by $y^{2}$ in
+
+$$
+x^{2} - 5x + 4 = 0
+$$
+
+and study the resulting biquadratic in $y$. Then answer: “exactly four distinct real solutions” and “the product of all real solutions is zero”.
+
+Set $u = y^{2}$. Then
+
+$$
+u^{2} - 5u + 4 = 0, \qquad (u - 1)(u - 4) = 0,
+$$
+
+so $u = 1$ or $u = 4$. Both are positive, hence
+
+$$
+y = \pm 1 \quad \text{or} \quad y = \pm 2.
+$$
+
+There are four distinct real solutions. Their product is
+
+$$
+(-2)(-1)(1)(2) = 4 \neq 0,
+$$
+
+so the claim that the product is zero is false. If the quadratic in $u$ had produced a negative root, that root would have contributed no real $y$, and the count would drop below four. Always filter $u \ge 0$ before taking square roots.
 
 ### Exam traps in 4.2
 
+- Using Vieta while $\Delta < 0$.
 - Forgetting the $\pm$ when taking square roots.
-- Using Vieta while $\Delta < 0$ (there are no real roots to sum).
-- Claiming “unique root” whenever the story wants a positive length, even though the algebra still has two real roots and only one is admissible.
-- Dropping the condition $a \neq 0$ when the leading coefficient depends on a parameter.
-- Treating a biquadratic as if every root of the $u$-quadratic automatically gives two real $y$ values.
+- Dropping $a \neq 0$ when the leading coefficient depends on a parameter.
+- Treating every root of a $u$-quadratic as if it automatically gives two real $y$ values.
+- Confusing “two real roots, only one physically admissible” with “exactly one real root of the equation”.
 
-**Working order for a quadratic claim.** Bring the equation to $ax^{2} + bx + c = 0$. Compute $\Delta$. If the claim is about count of roots, stop there. If it is about sum, product, or signs, use Vieta. If a parameter appears, solve inequalities on $\Delta$, sum and product. Always check which roots the story allows.
+**Working order for a quadratic claim.** Bring the equation to $ax^{2} + bx + c = 0$. Compute $\Delta$. If the claim is about count of roots, stop there. If it is about sum, product, signs or sum of squares, use Vieta. If a parameter appears, solve inequalities on $\Delta$, sum and product. Always check which roots the story allows.
 
 ---
 
 ## 4.3 Rational, radical and absolute-value equations
 
-### Rational equations and the domain
+### Rational equations
 
-A **rational equation** has the unknown in a denominator. Before solving, write the **domain**: every value that makes any denominator zero is excluded.
+A **rational equation** has the unknown in a denominator. Before solving, write the **domain**: every value that zeros a denominator is excluded.
 
-**Example 1.** For
-
-$$
-\frac{x}{x + 3} = \frac{2}{5},
-$$
-
-the hole is $x = -3$. That value is never a solution, even if it appears later as a root of an auxiliary equation.
-
-### Clearing denominators
-
-Multiply through by the common denominator. The new equation is only equivalent on the domain. After solving the auxiliary equation, discard every candidate that hits a hole.
-
-**Example 2.** Solve $\dfrac{x}{x + 3} = \dfrac{2}{5}$.
-
-Exclude $x = -3$. Multiply by $5(x + 3)$:
-
-$$
-5x = 2(x + 3), \qquad 5x = 2x + 6, \qquad 3x = 6, \qquad x = 2.
-$$
-
-The value $2$ is not the hole. Check: $\dfrac{2}{5} = \dfrac{2}{5}$. So $x = 2$ is the unique solution.
-
-**Example 3.** Solve $\dfrac{1}{x} - \dfrac{1}{x + 3} = \dfrac{1}{4}$.
-
-Need $x \neq 0$ and $x \neq -3$. Combine the left side:
-
-$$
-\frac{3}{x(x + 3)} = \frac{1}{4}, \qquad x(x + 3) = 12, \qquad x^{2} + 3x - 12 = 0.
-$$
-
-$$
-\Delta = 9 + 48 = 57, \qquad x = \frac{-3 \pm \sqrt{57}}{2}.
-$$
-
-Both roots miss the holes, so there are two real solutions. A claim that says “exactly one real solution” is false.
-
-### Extraneous roots from clearing
-
-Sometimes clearing denominators creates an extra root that sits on a hole. That root solves the polynomial equation you wrote, but it does not solve the original rational equation.
-
-**Example 4.** Consider $\dfrac{x}{x - 2} = 1$.
-
-Exclude $x = 2$. Clearing gives $x = x - 2$, hence $0 = -2$, a contradiction. There is no solution. If someone multiplies carelessly and then “plugs $x = 2$ back in”, that value is excluded by the domain: it is extraneous in the strongest sense, because the original left side is undefined there.
+Multiply through by the common denominator. The new polynomial equation is equivalent only on the domain. After solving, discard every candidate that hits a hole. Those discarded values are **extraneous**.
 
 ### Radical equations
 
-A **radical equation** contains the unknown under a root. For square roots over the reals:
+For square roots over the reals:
 
-1. State the domain: every radicand must be nonnegative, and if a square root stands alone equal to an expression, that expression must be nonnegative too.
+1. State the domain: every radicand is nonnegative, and a square root equal to an expression forces that expression to be nonnegative.
 2. Isolate one radical.
 3. Square both sides.
-4. Solve the resulting polynomial equation.
+4. Solve the resulting equation.
 5. Check every candidate in the original equation and against the domain.
 
-Squaring is not reversible without a check. The equation $A = B$ implies $A^{2} = B^{2}$, but $A^{2} = B^{2}$ also allows $A = -B$. Candidates that fail the check are called **extraneous roots**.
-
-**Example 5.** Solve $\sqrt{5x + 1} = x + 1$.
-
-Domain from the radicand: $x \ge -\tfrac15$. From the right side: $x + 1 \ge 0$, so $x \ge -1$. The tighter condition is $x \ge -\tfrac15$.
-
-Square:
-
-$$
-5x + 1 = (x + 1)^{2}, \qquad 0 = x^{2} - 3x, \qquad x(x - 3) = 0.
-$$
-
-Candidates: $x = 0$ and $x = 3$. Both lie in the domain. Check:
-
-$$
-\sqrt{1} = 1, \qquad \sqrt{16} = 4.
-$$
-
-Both work, so there are two real solutions. A claim of “exactly one” is false.
-
-**Example 6.** Solve $\sqrt{2x + 1} = 4 - x$.
-
-Need $x \ge -\tfrac12$ and $4 - x \ge 0$, so $-\tfrac12 \le x \le 4$. Squaring yields
-
-$$
-2x + 1 = (4 - x)^{2}, \qquad x^{2} - 10x + 15 = 0, \qquad x = 5 \pm \sqrt{10}.
-$$
-
-Only $5 - \sqrt{10}$ lies in $[-\tfrac12, 4]$. The other root is extraneous. Exactly one real solution survives.
-
-**Example 7.** Isolate-and-square with a difference of roots:
-
-$$
-\sqrt{x + 24} - \sqrt{x} = 2, \qquad x \ge 0.
-$$
-
-Isolate:
-
-$$
-\sqrt{x + 24} = 2 + \sqrt{x}.
-$$
-
-Square:
-
-$$
-x + 24 = 4 + 4\sqrt{x} + x, \qquad 20 = 4\sqrt{x}, \qquad \sqrt{x} = 5, \qquad x = 25.
-$$
-
-Check: $\sqrt{49} - \sqrt{25} = 2$. Valid.
+Squaring is not reversible without a check. From $A = B$ you get $A^{2} = B^{2}$, but $A^{2} = B^{2}$ also allows $A = -B$.
 
 ### Absolute-value equations
 
-The absolute value $|A|$ is $A$ when $A \ge 0$ and $-A$ when $A < 0$. Geometrically, $|x - a|$ is the distance from $x$ to $a$ on the number line.
-
-Basic equation:
+$|A|$ is $A$ when $A \ge 0$ and $-A$ when $A < 0$. Geometrically, $|x - a|$ is distance from $x$ to $a$.
 
 $$
 |A| = b \quad (b \ge 0) \quad \Rightarrow \quad A = b \ \text{or}\ A = -b.
 $$
 
-If $b < 0$, there is no solution.
+If $b < 0$, there is no solution. When several absolute values appear, split the real line at the critical points where inside expressions change sign, solve in each region, and keep only solutions that belong to that region.
 
-**Example 8.** Solve $|x - 3| = 5$.
-
-$$
-x - 3 = 5 \quad \text{or} \quad x - 3 = -5,
-$$
-
-so $x = 8$ or $x = -2$.
-
-When both sides involve absolute values, split into cases according to the critical points where expressions inside absolute values change sign. Solve inside each region, then keep only solutions that lie in that region.
-
-**Example 9.** Solve $|3 - 2x| = |x + 4|$.
-
-Case 1: $3 - 2x = x + 4$ gives $x = -\tfrac13$.
-
-Case 2: $3 - 2x = -(x + 4)$ gives $x = 7$.
-
-Both values are admissible for this equal-absolute-value setup, so there are two real solutions. A claim of “exactly one” is false.
-
-**Example 10.** A depot on a straight road has distances to kilometre-posts $-2$ and $6$ that add to $12$:
+**Example 1.** Solve
 
 $$
-|x + 2| + |x - 6| = 12.
+\frac{2}{x - 3} - \frac{1}{x + 1} = 1
 $$
 
-Between $-2$ and $6$ the sum of distances is constantly $8$, which is less than $12$. Outside that interval the equation recovers $x = -4$ or $x = 8$. The sites are $-4$ and $8$, not $0$ and $8$.
+over the reals, and decide whether the claim “exactly one real solution” is true. Then check the follow-up claim that “if the right-hand side is replaced by $0$, the new equation has no real solution”.
 
-### Parametric rational equations
+Domain: $x \neq 3$ and $x \neq -1$. Multiply through by $(x - 3)(x + 1)$:
 
-If a denominator or a cleared equation depends on a parameter, first write the holes as functions of the parameter, then clear, then discard forbidden roots. Claims often ask whether replacing a numerator changes the number of admissible solutions, or whether the unique survivor is an odd integer, or whether an auxiliary quadratic has roots symmetric about zero.
+$$
+2(x + 1) - 1(x - 3) = (x - 3)(x + 1),
+$$
+
+$$
+2x + 2 - x + 3 = x^{2} - 2x - 3,
+$$
+
+$$
+x + 5 = x^{2} - 2x - 3,
+$$
+
+$$
+0 = x^{2} - 3x - 8,
+$$
+
+$$
+x = \frac{3 \pm \sqrt{9 + 32}}{2} = \frac{3 \pm \sqrt{41}}{2}.
+$$
+
+Neither root equals $3$ or $-1$, because $\sqrt{41}$ is irrational and lies strictly between $6$ and $7$, so
+
+$$
+\frac{3 + \sqrt{41}}{2} \in (4.5, 5), \qquad \frac{3 - \sqrt{41}}{2} \in (-2, -1.5).
+$$
+
+Both candidates are admissible. The original equation has two distinct real solutions, so “exactly one real solution” is false.
+
+Now replace the right-hand side by $0$:
+
+$$
+\frac{2}{x - 3} - \frac{1}{x + 1} = 0 \quad \Rightarrow \quad \frac{2}{x - 3} = \frac{1}{x + 1}.
+$$
+
+On the same domain, cross-multiply:
+
+$$
+2(x + 1) = x - 3, \qquad 2x + 2 = x - 3, \qquad x = -5.
+$$
+
+The value $-5$ is not a hole, and it satisfies the cleared equation. Direct check:
+
+$$
+\frac{2}{-5 - 3} - \frac{1}{-5 + 1} = \frac{2}{-8} - \frac{1}{-4} = -\frac14 + \frac14 = 0.
+$$
+
+So the modified equation has a real solution. The follow-up claim is false. The point of the double claim is that changing a constant can change the solution count, but you still have to solve. You cannot guess “harder right-hand side means no solution”.
+
+**Example 2.** Solve
+
+$$
+\sqrt{4w + 9} - \sqrt{w} = 3
+$$
+
+for real $w$, with the story restriction $w > 0$. Decide whether “no strictly positive solution survives because squaring introduces an extraneous root” is true.
+
+Domain from the radicals: $4w + 9 \ge 0$ (automatic for $w \ge 0$) and $w \ge 0$. The story asks for $w > 0$. Isolate:
+
+$$
+\sqrt{4w + 9} = 3 + \sqrt{w}.
+$$
+
+Both sides are nonnegative for $w \ge 0$, so squaring is safe in direction, but the check is still mandatory:
+
+$$
+4w + 9 = 9 + 6\sqrt{w} + w,
+$$
+
+$$
+3w = 6\sqrt{w}.
+$$
+
+If $w = 0$, this holds, but $w = 0$ is excluded by $w > 0$. For $w > 0$ divide by $3$:
+
+$$
+w = 2\sqrt{w}.
+$$
+
+Set $t = \sqrt{w} > 0$. Then $t^{2} = 2t$, so $t(t - 2) = 0$, hence $t = 2$ and $w = 4$.
+
+Check in the original:
+
+$$
+\sqrt{16 + 9} - \sqrt{4} = 5 - 2 = 3.
+$$
+
+Valid. There is a strictly positive solution $w = 4$. The claim is false: squaring did produce the candidate $w = 0$ as well, but that candidate fails the story filter $w > 0$, while $w = 4$ survives. Extraneous-root language must be used precisely. A root can be excluded by the domain, by the check, or by a physical restriction, and those are three different reasons.
+
+**Example 3.** Solve
+
+$$
+|2x - 1| + |x + 3| = 8
+$$
+
+by splitting at the critical points, and decide whether “exactly one real solution” is true.
+
+The expressions $2x - 1$ and $x + 3$ change sign at $x = \tfrac12$ and $x = -3$. The real line splits into three regions: $x < -3$, $-3 \le x < \tfrac12$, and $x \ge \tfrac12$.
+
+Region $x < -3$:
+
+$$
+-(2x - 1) - (x + 3) = 8, \qquad -2x + 1 - x - 3 = 8, \qquad -3x = 10, \qquad x = -\frac{10}{3}.
+$$
+
+But $-\tfrac{10}{3} \approx -3.33$ is less than $-3$, so it lies in the region. Keep it.
+
+Region $-3 \le x < \tfrac12$:
+
+$$
+-(2x - 1) + (x + 3) = 8, \qquad -2x + 1 + x + 3 = 8, \qquad -x = 4, \qquad x = -4.
+$$
+
+Now $-4 < -3$, so it does **not** lie in this region. Discard it.
+
+Region $x \ge \tfrac12$:
+
+$$
+(2x - 1) + (x + 3) = 8, \qquad 3x + 2 = 8, \qquad 3x = 6, \qquad x = 2.
+$$
+
+The value $2$ is at least $\tfrac12$, so keep it.
+
+The solutions are $x = -\tfrac{10}{3}$ and $x = 2$. Exactly two real solutions, so the claim “exactly one” is false. Direct checks:
+
+$$
+\left|2\left(-\tfrac{10}{3}\right) - 1\right| + \left|-\tfrac{10}{3} + 3\right| = \left|-\tfrac{23}{3}\right| + \left|-\tfrac{1}{3}\right| = \tfrac{23}{3} + \tfrac{1}{3} = 8,
+$$
+
+$$
+|4 - 1| + |2 + 3| = 3 + 5 = 8.
+$$
+
+Both valid. The discarded $x = -4$ is the classic case-error: it solves the algebra of a region it does not belong to.
 
 ### Exam traps in 4.3
 
 - Accepting a root that makes a denominator zero.
 - Squaring without checking, then counting an extraneous root as valid.
-- Forgetting that a square root is nonnegative, so $\sqrt{A} = -3$ is immediately impossible.
-- Solving $|A| = B$ when $B$ might be negative.
-- Mixing the regions when splitting absolute-value cases.
+- Writing $\sqrt{A} = -3$ as if it could hold over the reals.
+- Keeping a case solution that lies outside its own region.
 
-**Working order.** Write the domain first. Transform (clear, isolate and square, or split cases). Solve the auxiliary equation. Filter by domain and by direct substitution into the original equation. Only then answer a claim about uniqueness, sign, or an extraneous root.
+**Working order.** Write the domain first. Transform (clear, isolate and square, or split cases). Solve the auxiliary equation. Filter by domain, by direct substitution, and by any physical restriction. Only then answer a claim about uniqueness, sign, or an extraneous root.
 
 ---
 
 ## 4.4 Exponential and logarithmic equations
 
-### Exponential equations with the same base
+### Exponential equations
 
-An **exponential equation** has the unknown in an exponent. When both sides are powers of the same positive base $a \neq 1$,
+An **exponential equation** has the unknown in an exponent. For a positive base $a \neq 1$,
 
 $$
 a^{u} = a^{v} \quad \Rightarrow \quad u = v.
 $$
 
-**Example 1.** Solve $2^{x} = 8$.
+Powers that look different are rewritten over a common base. For example $4 = 2^{2}$, $8 = 2^{3}$, $9 = 3^{2}$, $27 = 3^{3}$. After both sides are powers of the same base, equate exponents.
 
-$$
-2^{x} = 2^{3} \quad \Rightarrow \quad x = 3.
-$$
-
-The solution is odd, so a claim that it is odd is true.
-
-**Example 2.** Solve $3^{x + 1} = 81$.
-
-$$
-3^{x + 1} = 3^{4} \quad \Rightarrow \quad x + 1 = 4 \quad \Rightarrow \quad x = 3,
-$$
-
-a positive integer.
-
-**Example 3.** Solve $5^{2x} = 125$.
-
-$$
-5^{2x} = 5^{3} \quad \Rightarrow \quad 2x = 3 \quad \Rightarrow \quad x = \tfrac32,
-$$
-
-which is not an integer.
-
-**Example 4.** Solve $2^{x} = \dfrac{1}{16}$.
-
-$$
-2^{x} = 2^{-4} \quad \Rightarrow \quad x = -4,
-$$
-
-which is negative.
-
-**Example 5.** Solve $7^{x - 1} = 1$.
-
-Any nonzero number to the power $0$ is $1$, and $7^{0} = 1$, so
-
-$$
-x - 1 = 0 \quad \Rightarrow \quad x = 1.
-$$
-
-The equation does have a solution. A claim that it has none is false.
-
-### Matching bases that look different
-
-Powers such as $4^{x}$, $8^{x}$ and $16^{x}$ are rewritten as powers of $2$. Powers of $9$ and $27$ become powers of $3$.
-
-**Example 6.** Solve $4^{x} = 8$.
-
-$$
-(2^{2})^{x} = 2^{3}, \qquad 2^{2x} = 2^{3}, \qquad 2x = 3, \qquad x = \tfrac32,
-$$
-
-not an integer.
-
-**Example 7.** Solve $8^{x} = 4^{x + 1}$.
-
-$$
-(2^{3})^{x} = (2^{2})^{x + 1}, \qquad 2^{3x} = 2^{2x + 2}, \qquad 3x = 2x + 2, \qquad x = 2,
-$$
-
-an even number.
-
-**Example 8.** Solve $9^{x} = 27$.
-
-$$
-(3^{2})^{x} = 3^{3}, \qquad 2x = 3, \qquad x = \tfrac32,
-$$
-
-which lies strictly between $1$ and $2$.
-
-### When the unknown is only in the exponent after a rewrite
-
-Sometimes one side is a constant and the other is already a pure exponential. Take logarithms only when bases refuse to match. If they do match after rewriting, prefer matching exponents, because that stays exact.
-
-### Definition of a logarithm
+### Logarithms
 
 The statement
 
@@ -722,61 +557,15 @@ $$
 a^{y} = x,
 $$
 
-where the base satisfies $a > 0$, $a \neq 1$, and the argument satisfies $x > 0$. The **natural logarithm** $\ln x$ is $\log_{e} x$ with $e \approx 2.718$.
+with base $a > 0$, $a \neq 1$, and argument $x > 0$. The natural logarithm $\ln x$ is $\log_{e} x$.
 
-Immediate consequences:
+Immediate facts:
 
 $$
 \log_{a} 1 = 0, \qquad \log_{a} a = 1, \qquad \log_{a}(a^{k}) = k.
 $$
 
-**Example 9.** Solve $\log_{2} x = 5$.
-
-$$
-x = 2^{5} = 32,
-$$
-
-which is larger than $30$.
-
-**Example 10.** Solve $\ln x = 0$.
-
-$$
-x = e^{0} = 1.
-$$
-
-A logarithm can vanish: $\log_{a} 1 = 0$. The claim that $\ln x = 0$ has no solution is false.
-
-**Example 11.** Solve $\log_{3}(x - 2) = 2$.
-
-Domain: $x - 2 > 0$, so $x > 2$. Then
-
-$$
-x - 2 = 3^{2} = 9, \qquad x = 11,
-$$
-
-a two-digit integer.
-
-**Example 12.** Solve $\log_{4} x = \tfrac12$.
-
-$$
-x = 4^{1/2} = 2,
-$$
-
-which is not greater than $3$.
-
-**Example 13.** Solve $\log_{x} 81 = 4$.
-
-Domain for the base: $x > 0$, $x \neq 1$, and the argument $81 > 0$ is fine. Then
-
-$$
-x^{4} = 81 = 3^{4}, \qquad x = 3
-$$
-
-(the real positive solution with $x \neq 1$). The unknown base equals $3$, which is smaller than $4$.
-
-### Logarithm laws
-
-For positive arguments and allowed bases:
+Laws for positive arguments:
 
 $$
 \log_{a}(xy) = \log_{a} x + \log_{a} y,
@@ -790,16 +579,60 @@ $$
 \log_{a}(x^{k}) = k \log_{a} x.
 $$
 
-**Example 14.** Solve $\log_{2}(t + 6) + \log_{2}(t - 1) = 3$.
+Before solving a logarithmic equation, write every domain condition: each argument positive, each base allowed. Domain usually decides which algebraic roots survive.
 
-Domain: $t + 6 > 0$ and $t - 1 > 0$, so $t > 1$. Combine:
+Growth and decay models have the shape $A(t) = A_{0} a^{t}$ or $A(t) = A_{0} e^{kt}$. Solving for time means isolating the exponential factor and taking a logarithm.
+
+**Example 1.** Compare the solutions of
+
+$$
+16^{x} = 8^{x + 1} \qquad \text{and} \qquad 4^{x} = 8.
+$$
+
+Decide whether “the first solution is smaller than the second” is true, and whether “both solutions are integers” is true.
+
+Rewrite everything as powers of $2$.
+
+First equation:
+
+$$
+(2^{4})^{x} = (2^{3})^{x + 1}, \qquad 2^{4x} = 2^{3x + 3}, \qquad 4x = 3x + 3, \qquad x = 3.
+$$
+
+Second equation:
+
+$$
+(2^{2})^{x} = 2^{3}, \qquad 2^{2x} = 2^{3}, \qquad 2x = 3, \qquad x = \tfrac32.
+$$
+
+The first solution is $3$, the second is $\tfrac32$. So $3 > \tfrac32$: the first is **not** smaller than the second. The claim is false. Also only one of the two solutions is an integer, so “both are integers” is false.
+
+The exam move is not just solving one exponential equation. It is solving two related ones carefully enough to compare them, without mixing the rewritten exponents.
+
+**Example 2.** Solve
+
+$$
+\log_{2}(t + 6) + \log_{2}(t - 1) = 3
+$$
+
+and the companion equation
+
+$$
+\log_{2}(t + 6) - \log_{2}(t - 1) = 1
+$$
+
+on their common domain. Then decide whether “the two equations share exactly one common real root” is true, and whether “the product of all algebraic roots of the summed equation (before the domain filter) equals $-14$” is true.
+
+Domain for both: $t + 6 > 0$ and $t - 1 > 0$, so $t > 1$.
+
+Sum equation:
 
 $$
 \log_{2}\big((t + 6)(t - 1)\big) = 3,
 $$
 
 $$
-(t + 6)(t - 1) = 2^{3} = 8,
+(t + 6)(t - 1) = 8,
 $$
 
 $$
@@ -810,105 +643,81 @@ $$
 (t + 7)(t - 2) = 0,
 $$
 
-so $t = -7$ or $t = 2$. Only $t = 2$ lies in $t > 1$. The product of the algebraic roots is $-14$, but only one root is admissible.
+so algebraic roots $t = -7$ and $t = 2$. Only $t = 2$ lies in $t > 1$. The product of the algebraic roots is $-14$, so the second claim is true.
 
-### Domain decides the answer
-
-Before solving a logarithmic equation, write every condition:
-
-- each argument of a logarithm is positive;
-- each base is positive and not equal to $1$;
-- if a logarithm sits in a denominator or under a root, add those restrictions too.
-
-Failing to check the domain is the main source of false “two solutions” claims in 4.4.
-
-### Growth and decay models
-
-Exponential equations appear in capital growth and percentage decay.
-
-If a capital doubles at a fixed periodic rate, or a substance loses a fixed percent each year, the model has the shape
+Difference equation:
 
 $$
-A(t) = A_{0} a^{t}
+\log_{2}\!\left(\frac{t + 6}{t - 1}\right) = 1,
 $$
 
-or
-
 $$
-A(t) = A_{0} e^{kt}.
+\frac{t + 6}{t - 1} = 2, \qquad t + 6 = 2t - 2, \qquad t = 8.
 $$
 
-Solving for time means taking a logarithm after isolating the exponential factor.
+The value $8$ satisfies $t > 1$. Direct check: $\log_{2} 14 - \log_{2} 7 = \log_{2} 2 = 1$.
 
-**Example 15.** A substance loses $5\%$ a year, so a factor of $0.95$ remains each year:
+The admissible roots are $t = 2$ for the sum equation and $t = 8$ for the difference equation. They share no common root. The first claim is false.
 
-$$
-A(t) = A_{0}(0.95)^{t}.
-$$
+This is the standard hard log pattern: combine with a law, solve a quadratic, watch an extraneous negative root, then compare with a second equation on the same domain.
 
-The half-life condition $A(t) = \tfrac12 A_{0}$ becomes
+**Example 3.** A capital grows by the factor $1.25$ each year:
 
 $$
-(0.95)^{t} = \tfrac12, \qquad t = \frac{\ln(1/2)}{\ln(0.95)}.
+A(t) = A_{0}(1.25)^{t}.
 $$
 
-The exact value is what the algebra produces. Exam claims usually compare that $t$ with a stated integer or with another solved time from a companion equation.
+A second fund grows continuously:
+
+$$
+B(t) = A_{0} e^{0.2 t}.
+$$
+
+Find the unique $t > 0$ at which $A(t) = B(t)$, and decide whether that crossing time is strictly less than $2$. Then decide whether the half-capital time for $A$, meaning $A(t) = \tfrac12 A_{0}$, can occur for any real $t$.
+
+Set $A(t) = B(t)$ with $A_{0} > 0$:
+
+$$
+(1.25)^{t} = e^{0.2 t}.
+$$
+
+For $t = 0$ both sides are $1$, but the question asks for $t > 0$. Take the natural log:
+
+$$
+t \ln 1.25 = 0.2 t.
+$$
+
+For $t \neq 0$ divide by $t$:
+
+$$
+\ln 1.25 = 0.2.
+$$
+
+But $\ln 1.25 = \ln(5/4) \approx 0.22314 > 0.2$, so the equality $\ln 1.25 = 0.2$ is false. Therefore the only real solution of $(1.25)^{t} = e^{0.2 t}$ is $t = 0$. There is **no** $t > 0$ at which the two funds meet. The claim that the crossing time is strictly less than $2$ is false, because no positive crossing exists.
+
+For the half-capital equation with fund $A$:
+
+$$
+(1.25)^{t} = \tfrac12.
+$$
+
+The left side is always positive, but for every real $t$ one has $1.25^{t} > 0$, and since $1.25 > 1$ the map $t \mapsto 1.25^{t}$ is increasing with values always at least as large as values heading to $0$ only as $t \to -\infty$. In particular $1.25^{t} = 1/2$ does have a negative solution
+
+$$
+t = \frac{\ln(1/2)}{\ln 1.25} < 0.
+$$
+
+So a real half-capital time exists, but it is not a future time. If an exam claim says “the capital falls to half in some positive number of years”, that claim is false for a growth factor greater than $1$. Growth models do not produce future halving.
 
 ### Exam traps in 4.4
 
 - Writing $\log_{a} 1 = 1$ instead of $0$.
 - Allowing a nonpositive argument of a logarithm.
-- Matching bases incorrectly, for example treating $4^{x} = (2^{x})^{2}$ as if the exponents alone must match without rewriting both sides over $2$.
-- Taking $\log$ of both sides and dropping the condition that both sides are positive.
-- Counting an algebraic root that violates $t > 1$ or $x > 0$.
+- Matching bases incorrectly after a sloppy rewrite.
+- Counting an algebraic root that violates the domain.
+- Comparing two exponential solutions without rewriting both over the same base.
 
-**Working order.** Rewrite to a common base when possible. Otherwise isolate a logarithm or an exponential and apply the definition. Write the domain first for every log equation. Filter roots, then answer the claim about sign, size, or uniqueness.
-
----
-
-## 4.5 Mixed exam sets
-
-### What a mixed set is asking
-
-A mixed task puts several equation types into one story: a linear procurement model, a quadratic break-even, a radical quality check, a rational delivery speed, and a logarithmic growth time may sit in the same five statements. Each letter is still one closed claim. You do not solve “the whole company”. You identify which model the letter refers to, solve that equation, and test the claim.
-
-### A short map from wording to model
-
-| Clue in the story | Likely model |
-| --- | --- |
-| Cost share, mixture volume, rate sum, parameter $k$ in a linear balance | Linear equation in one unknown |
-| Break-even quantities, area, profit zero, two output levels | Quadratic equation |
-| Speeds in a denominator, concentration fractions, holes | Rational equation |
-| Square-root quality gap, isolate-and-square | Radical equation |
-| Distance on a line, tolerance band | Absolute value |
-| Doubling time, same-base powers, $\log$, $\ln$ | Exponential or logarithmic |
-
-### Strategy for each letter
-
-1. Name the equation the letter is talking about.
-2. State the domain or parameter restrictions.
-3. Solve with the method of the matching section above.
-4. Translate the claim into a comparison: “unique”, “two distinct”, “strictly greater than $7$”, “extraneous root”, “no parameter gives infinitely many solutions”.
-5. Decide true or false only after the algebra is finished.
-
-**Example 1.** A mixed logistics claim says the rational overhead equation admits exactly one valid solution because a factor cancels and creates a hole. That is a 4.3 problem inside a 4.5 story: clear denominators, list the holes, and count survivors.
-
-**Example 2.** A mixed start-up claim says a logarithmic milestone is solved by a unique $t > 2.5$. Solve the log equation, keep the domain, and compare the survivor with $2.5$.
-
-**Example 3.** A mixed production claim says there is no real $k$ for which a linear grain model has infinitely many solutions. Rewrite as $A(k)x = B(k)$ and check whether $A$ and $B$ can vanish together. If they never do, the claim is true.
-
-### Keeping models separate
-
-Do not reuse a root from the quadratic profit model as if it answered the radical quality equation. Each statement has its own unknown and its own domain. Shared letters such as $x$ or $t$ in different statements are not the same quantity unless the text explicitly says so.
-
-### Physical filters in applied stories
-
-After the algebra, apply the story’s extra rules:
-
-- volumes, times and speeds are usually nonnegative, and often strictly positive;
-- a cancelled hole in a simplified rational expression is still forbidden;
-- an extraneous squared root is still not a solution;
-- a parameter that makes a leading coefficient zero must be handled as a separate case, not plugged into a formula that divided by that coefficient.
+**Working order.** Rewrite to a common base when possible. Otherwise isolate a logarithm or an exponential and apply the definition. Write the domain first for every log equation. Filter roots, then answer the claim about sign, size, uniqueness or a comparison between two models.
 
 ### Summary reference
 
@@ -918,14 +727,12 @@ After the algebra, apply the story’s extra rules:
 | Linear with parameter | Study $A(k)x = B(k)$ |
 | Quadratic | Factor, complete the square, or use the formula |
 | Count real quadratic roots | Read $\Delta = b^{2} - 4ac$ |
-| Sum and product of roots | Vieta: $-b/a$ and $c/a$ |
+| Sum, product, sum of squares | Vieta and rearrangements |
 | Rational equation | Domain first, clear denominators, discard holes |
 | Radical equation | Domain, isolate, square, check for extraneous roots |
-| Absolute value | Split cases or use distance; reject negative right-hand sides |
-| Exponential, same base | Match exponents |
-| Exponential, related bases | Rewrite as powers of $2$ or $3$, then match |
+| Absolute value | Split cases; keep only in-region solutions |
+| Exponential, same or related bases | Rewrite, then match exponents |
 | Logarithm | Use $a^{y} = x$; keep argument positive and base allowed |
-| Mixed exam letter | Identify the model, solve only that equation, test the claim |
 
 Key formulas:
 
@@ -941,6 +748,6 @@ $$
 a^{u} = a^{v} \Rightarrow u = v, \qquad \log_{a} x = y \Leftrightarrow a^{y} = x.
 $$
 
-**Working order on a Chapter 4 statement.** Identify the equation type. Write every domain or parameter restriction. Solve with the matching technique. Filter illegal or extraneous roots. Only then accept or reject the true/false claim about uniqueness, sign, size, or a parameter condition.
+**Working order on a Chapter 4 statement.** Identify the equation type. Write every domain or parameter restriction. Solve with the matching technique. Filter illegal or extraneous roots. Only then accept or reject the true/false claim.
 
-**Self-check.** When does a linear equation have infinitely many solutions? How do you read the number of real quadratic roots from $\Delta$? What do Vieta’s sum and product tell you about signs? Why must holes be excluded after clearing denominators? Why can squaring create an extraneous root? What domain conditions belong to $\log_{a} x = y$? In a mixed set, why must each letter be solved as its own equation?
+**Self-check.** When does a linear equation have infinitely many solutions? How do you read the number of real quadratic roots from $\Delta$? What do Vieta’s sum and product tell you about signs? Why must holes be excluded after clearing denominators? Why can squaring create an extraneous root? What domain conditions belong to $\log_{a} x = y$?
