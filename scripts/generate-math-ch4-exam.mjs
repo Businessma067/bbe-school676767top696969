@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { initHardTemplates } from "./ch4-hard-templates.mjs";
 import { normalizeStatement, validateStatement } from "./ch4-statement-rules.mjs";
-import { cleanStmt, mkExplLong, explIntro, fracStr } from "./ch4-expl-style.mjs";
+import { cleanStmt, mkExplLong, explIntro, fracStr, buildExplSteps, verdict1318 } from "./ch4-expl-style.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_MAIN = path.join(ROOT, "src/data/math-ch4-equations.ts");
@@ -109,49 +109,35 @@ function mkExpl(isTrue, lines, verdict, kind = "linear") {
   const header = lines.find((l) => /^\*\*/.test(l)) || `**{L}.** → ${isTrue ? "True" : "False"}`;
   const body = lines.filter((l) => l && l !== header);
   const eqs = body.filter((l) => l.startsWith("$$"));
-  const prose = body.filter((l) => l && !l.startsWith("$$"));
+  const prose = body.filter((l) => l && !l.startsWith("$$") && !/^\*\*/.test(l));
 
-  const steps = [];
-  if (prose[0]) {
-    steps.push(prose[0]);
-    if (eqs.length) steps.push("");
-  } else if (eqs.length) {
-    steps.push("Work from the story to a single equation, then solve:");
-    steps.push("");
-  }
-  for (let i = 0; i < eqs.length; i++) {
-    steps.push(eqs[i]);
-    if (i < eqs.length - 1) steps.push("");
-  }
-  if (prose.length > 1) {
-    steps.push("");
-    steps.push(...prose.slice(1));
-  }
-
-  const solvedLine = prose.find((p) => /=\s*\$?\d|Longer|Largest|Second|Runner|Still|Sum |product |Compare|Domain|Vertex|Relative|Left fraction|Counting back|Elapsed/i.test(p));
-  const checkLine =
-    typeof verdict === "string" && verdict.length > 20
-      ? verdict
-      : solvedLine && !steps.includes(solvedLine)
-        ? solvedLine
-        : prose.length > 1 && !steps.includes(prose[prose.length - 1])
-          ? prose[prose.length - 1]
-          : isTrue
-            ? "The value recovered from the model satisfies the inequality in the claim."
-            : "The value recovered from the model contradicts the claim.";
   const stepsDedup = [];
-  for (const line of steps) {
+  for (const line of buildExplSteps(prose, eqs, kind)) {
     if (line === "" && stepsDedup[stepsDedup.length - 1] === "") continue;
     if (line && stepsDedup.includes(line)) continue;
     stepsDedup.push(line);
   }
 
+  const solvedLine = prose.find((p) =>
+    /=\\s*\$?\d|Longer|Largest|Second|Runner|Still|Sum |product |Compare|Domain|Vertex|Relative|Left fraction|Counting back|Elapsed|Since \$x|Net fill|Actual time|Mean-speed|Runner-up|Middle |After tax|gross|net after/i.test(
+      p
+    )
+  );
+  const checkLine =
+    typeof verdict === "string" && verdict.length > 20
+      ? verdict
+      : solvedLine && !stepsDedup.includes(solvedLine)
+        ? solvedLine
+        : isTrue
+          ? "The recovered value satisfies the inequality or comparison in the claim."
+          : "The recovered value contradicts the claim.";
+
   return mkExplLong(isTrue, {
     intro: explIntro(kind),
-    model: eqs.length && prose[0] ? "Set up the model and solve:" : undefined,
+    model: eqs.length ? "Set up the model and solve:" : undefined,
     steps: stepsDedup,
     check: checkLine,
-    verdict: `Matching the solved value to the claim, the statement is ${isTrue ? "True" : "False"}.`,
+    verdict: verdict1318(isTrue),
   });
 }
 
@@ -186,7 +172,8 @@ function linRectArea(slot, isTrue) {
         `$$s=${x}$$`,
         `Longer side: $${longer}$ cm.`,
       ],
-      isTrue ? `The longer side is $${longer}$ cm.` : `The longer side is $${longer}$ cm, not ${claim} cm.`
+      isTrue ? `The longer side is $${longer}$ cm.` : `The longer side is $${longer}$ cm, not ${claim} cm.`,
+      "quadratic"
     ),
   };
 }
@@ -201,9 +188,22 @@ function linRectPerim(slot, isTrue) {
     key: `linRP-${d}-${x}`,
     statement: phrase(
       slot,
-      `If one side of a rectangle is by $${d}$ cm longer than the other and the perimeter is $${p}$ cm, then the longer side is ${claim} cm.`
+      `A rectangular plot is fenced on all four sides using exactly $${p}$ m of wire. One side of the plot is $${d}$ m longer than the adjacent side. The longer side measures ${claim} m.`
     ),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$2(2s+${d})=${p}$$`, `$$s=${x}$$`, `Longer side $${longer}$ cm.`]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Let the shorter side be $s$ m. Perimeter $2s+2(s+${d})=${p}$:`,
+        `$$2(2s+${d})=${p}$$`,
+        `$$4s+${2 * d}=${p}$$`,
+        `$$s=${x}$$`,
+        `Longer side $s+${d}=${longer}$ m.`,
+      ],
+      undefined,
+      "linear"
+    ),
   };
 }
 
@@ -282,31 +282,38 @@ function linPrizeCascade(slot, isTrue) {
 }
 
 function linTwoCars(slot, isTrue) {
-  const D = 144 + (slot % 6) * 18;
-  const v1 = 48 + (slot % 4) * 6;
-  const v2 = 60 + (slot % 5) * 6;
+  const D = 84 + (slot % 5) * 12;
+  const v1 = 48;
+  const v2 = 72;
   const head = 25 + (slot % 4) * 5;
   const headKm = v1 * (head / 60);
   const gap = D - headKm;
   const meetMin = Math.round((gap / (v1 + v2)) * 60);
   const claim = claimEmbed(meetMin, isTrue);
+  const headLabel = head >= 60 ? `$1$ h` : `$12{:}${String(head).padStart(2, "0")}$ pm`;
   return {
     key: `lin2car-${D}-${v1}-${head}`,
     statement: phrase(
       slot,
-      `Towns $P$ and $Q$ are $${D}$ km apart. At noon a car leaves $P$ at $${v1}$ km/h; $${head}$ minutes later another leaves $Q$ at $${v2}$ km/h toward $P$. They meet ${claim} minutes after noon.`
+      `Towns $P$ and $Q$ lie $${D}$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $${v1}$ km/h and keeps constant speed. At ${headLabel} a second car leaves $Q$ towards $P$ at $${v2}$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is ${claim} minutes.`
     ),
-    expl: mkExpl(isTrue, [
-      hdr("?", isTrue).replace("?", "{L}"),
-      "",
-      `Head start: $${headKm}$ km. Gap left: $${gap}$ km.`,
-      `$$t=\\frac{${gap}}{${v1 + v2}}\\text{ h}=${meetMin}\\text{ min after noon}$$`,
-    ]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `In $\\frac{${head}}{60}$ h the first car covers $${headKm}$ km, leaving $${gap}$ km between the cars.`,
+        `$$\\frac{${gap}}{${v1}+${v2}}=\\frac{${gap}}{120}$$ hours until meeting`,
+        `$$\\frac{${gap}}{120}\\times 60=${meetMin}$$ minutes after noon`,
+      ],
+      undefined,
+      "linear"
+    ),
   };
 }
 
 function linBoatCurrent(slot, isTrue) {
-  const d = 24 + (slot % 5) * 6;
+  const d = 24 + (slot % 4) * 6;
   const td = 2 + (slot % 2);
   const tu = 3 + (slot % 3);
   const vd = d / td;
@@ -317,14 +324,20 @@ function linBoatCurrent(slot, isTrue) {
     key: `linBoat-${d}-${td}-${tu}`,
     statement: phrase(
       slot,
-      `A boat covers $${d}$ km downstream in $${td}$ h and the same distance upstream in $${tu}$ h. Its speed in still water is ${claim} km/h.`
+      `A rower travels $${d}$ km downstream in $${td}$ h and returns the same $${d}$ km upstream in $${tu}$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is ${claim} km/h.`
     ),
-    expl: mkExpl(isTrue, [
-      hdr("?", isTrue).replace("?", "{L}"),
-      "",
-      `Downstream $${vd}$ km/h, upstream $${vu}$ km/h.`,
-      `Still water: $\\frac{${vd}+${vu}}{2}=${still}$ km/h.`,
-    ]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Downstream speed $${vd}$ km/h, upstream speed $${vu}$ km/h.`,
+        `Still-water speed is the average of downstream and upstream speeds:`,
+        `$$\\frac{${vd}+${vu}}{2}=${still}$$ km/h`,
+      ],
+      undefined,
+      "linear"
+    ),
   };
 }
 
@@ -538,43 +551,56 @@ function linPipeDrain(slot, isTrue) {
 }
 
 function linDiscountChain(slot, isTrue) {
-  const p0 = 200 + (slot % 5) * 40;
-  const d1 = 20 + (slot % 2) * 5;
-  const d2 = 10 + (slot % 3) * 5;
-  const final = Math.round(p0 * (1 - d1 / 100) * (1 - d2 / 100));
+  const p0 = 48 + (slot % 4) * 12;
+  const after1 = Math.round(p0 * 0.75);
+  const after2 = Math.round(after1 * 0.9);
+  const final = Math.round(after2 * 1.2);
   const claim = claimEmbed(final, isTrue);
   return {
-    key: `linDisc-${p0}-${d1}-${d2}`,
+    key: `linDisc-${p0}`,
     statement: phrase(
       slot,
-      `A jacket priced at $${p0}$ EUR is reduced by $${d1}\\%$, then the sale price is cut by a further $${d2}\\%$. The final price is ${claim} EUR.`
+      `An electronics shop lists a headset at $${p0}$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays ${claim} EUR in total.`
     ),
-    expl: mkExpl(isTrue, [
-      hdr("?", isTrue).replace("?", "{L}"),
-      "",
-      `$$${p0}\\cdot(1-\\frac{${d1}}{100})\\cdot(1-\\frac{${d2}}{100})=${final}$$`,
-    ]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `After $\\frac{1}{4}$ off: $${after1}$ EUR.`,
+        `After further $\\frac{1}{10}$ off: $${after2}$ EUR.`,
+        `$$${after2}+\\frac{1}{5}\\cdot${after2}=${final}$$ EUR with VAT.`,
+      ],
+      undefined,
+      "linear"
+    ),
   };
 }
 
 function linExamMean(slot, isTrue) {
-  const a = 72 + (slot % 5) * 3;
-  const b = 81 + (slot % 4) * 2;
-  const mean = 78 + (slot % 3);
+  const mean = 11 + (slot % 5);
+  const a = mean - 2 + (slot % 3);
+  const b = mean + 1 + (slot % 2);
   const c = 3 * mean - a - b;
   const claim = claimEmbed(c, isTrue);
   return {
     key: `linMean-${a}-${b}-${mean}`,
     statement: phrase(
       slot,
-      `Three test scores average $${mean}$. Two of them are $${a}$ and $${b}$. The third score is ${claim}.`
+      `On a three-question quiz the class average is $${mean}$ points. Student $P$ earned $${a}$ points and student $Q$ earned $${b}$ points. Student $R$'s score is ${claim} points.`
     ),
-    expl: mkExpl(isTrue, [
-      hdr("?", isTrue).replace("?", "{L}"),
-      "",
-      `$$\\frac{a+b+c}{3}=${mean}$$`,
-      `$$c=${c}$$`,
-    ]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Mean condition $\\frac{a+b+c}{3}=${mean}$:`,
+        `$$c=3\\cdot${mean}-${a}-${b}$$`,
+        `$$c=${c}$$`,
+      ],
+      undefined,
+      "linear"
+    ),
   };
 }
 
@@ -663,23 +689,30 @@ function linChase(slot, isTrue) {
 }
 
 function linSalineMix(slot, isTrue) {
-  const c1 = 12 + (slot % 3) * 2;
-  const v1 = 3 + (slot % 2);
-  const c2 = 4;
-  const v2 = 2 + (slot % 3);
+  const c1 = 6 + (slot % 3) * 2;
+  const v1 = 2;
+  const c2 = 3 + (slot % 2);
+  const v2 = 3;
   const mix = Math.round(((c1 * v1 + c2 * v2) / (v1 + v2)) * 10) / 10;
   const claim = claimEmbed(mix, isTrue, false);
   return {
-    key: `linSal-${c1}-${v1}-${v2}`,
+    key: `linSal-${c1}-${c2}`,
     statement: phrase(
       slot,
-      `Mixing $${v1}$ L of $${c1}\\%$ saline with $${v2}$ L of $${c2}\\%$ saline yields a solution of $${claim}\\%$ concentration.`
+      `A chemist pours $${v1}$ L of $${c1}\\%$ saline into a flask, then adds $${v2}$ L of $${c2}\\%$ saline. The two volumes combine with no loss. The resulting concentration by volume is ${claim}\\%.`
     ),
-    expl: mkExpl(isTrue, [
-      hdr("?", isTrue).replace("?", "{L}"),
-      "",
-      `$$\\frac{${c1}\\cdot${v1}+${c2}\\cdot${v2}}{${v1 + v2}}=${mix}$$`,
-    ]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Total salt amount divided by total volume $${v1 + v2}$ L:`,
+        `$$\\frac{${c1}\\cdot${v1}+${c2}\\cdot${v2}}{${v1 + v2}}=\\frac{${c1 * v1 + c2 * v2}}{${v1 + v2}}$$`,
+        `$$\\approx ${mix}\\%$$`,
+      ],
+      undefined,
+      "linear"
+    ),
   };
 }
 
@@ -782,19 +815,51 @@ function quadAreaLonger(slot, isTrue) {
   const claim = claimEmbed(L, isTrue);
   return {
     key: `qArea-${A}`,
-    statement: phrase(slot, `If one side of a rectangle exceeds the other by $${d}$ cm and the area is $${A}$ cm$^{2}$, the longer side is ${claim} cm.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x(x+${d})=${A}$$`, `$$(x-${x})(x+${L})=0$$`, `Longer: $${L}$ cm.`]),
+    statement: phrase(
+      slot,
+      `A rectangular plot must have area exactly $${A}$ m$^{2}$. One side is $${d}$ m shorter than the adjacent side, and both side lengths are whole metres. The longer side is ${claim} m.`
+    ),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Let shorter side be $x$ m. Then $x(x+${d})=${A}$:`,
+        `$$x^2+${d}x-${A}=0$$`,
+        `$$(x-${x})(x+${L})=0$$`,
+        `$$x=${x}$$`,
+        `Longer side: $${L}$ m.`,
+      ],
+      undefined,
+      "quadratic"
+    ),
   };
 }
 
 function quadConsecProd(slot, isTrue) {
-  const n = 6 + (slot % 7);
+  const n = 4 + (slot % 12);
   const p = n * (n + 1);
   const claim = claimEmbed(n + 1, isTrue);
   return {
-    key: `qProd-${p}`,
-    statement: phrase(slot, `The product of two consecutive integers is $${p}$. The larger integer is ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$n(n+1)=${p}$$`, `$$n=${n}$$`, `Larger: $${n + 1}$.`]),
+    key: `qProd-${p}-${slot % 5}`,
+    statement: phrase(
+      slot,
+      `Two consecutive positive integers have product $${p}$. The larger of the two integers is ${claim}.`
+    ),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Let the smaller integer be $n$. Then $n(n+1)=${p}$:`,
+        `$$n^2+n-${p}=0$$`,
+        `$$(n-${n})(n+${n + 1})=0$$`,
+        `$$n=${n}$$`,
+        `Larger integer: $${n + 1}$.`,
+      ],
+      undefined,
+      "quadratic"
+    ),
   };
 }
 
@@ -816,41 +881,63 @@ function quadVietaPair(slot, isTrue) {
 }
 
 function quadFenceMax(slot, isTrue) {
-  const p = 40 + (slot % 5) * 4;
-  const w = 6 + (slot % 4);
+  const p = 28 + (slot % 12) * 4;
+  let w = 3 + (slot % 9);
+  const maxW = Math.max(3, Math.floor(p / 2) - 3);
+  if (w > maxW) w = 3 + ((slot * 7) % maxW);
   const l = p / 2 - w;
-  const area = w * l;
-  const claim = claimEmbed(area, isTrue);
+  if (l <= 0) return quadConsecProd(slot, isTrue);
+  const claim = claimEmbed(l, isTrue);
   return {
-    key: `qFence-${p}-${w}`,
-    statement: phrase(slot, `A $${p}$ m fence forms a rectangle of width $${w}$ m using all the fence. The enclosed area is ${claim} m$^{2}$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$2(w+\\ell)=${p}$$`, `$$\\ell=${l}$$`, `$$A=${area}$$`]),
+    key: `qFence-${p}-${w}-${slot % 7}`,
+    statement: phrase(
+      slot,
+      `A farmer has exactly $${p}$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $${w}$ m and the depth into the field is ${claim} m.`
+    ),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Three-sided fence: $2\\ell+${w}=${p}$ where $\\ell$ is depth into the field.`,
+        `$$2\\ell=${p - w}$$`,
+        `$$\\ell=${l}$$`,
+      ],
+      undefined,
+      "quadratic"
+    ),
   };
 }
 
 function quadNumRecip(slot, isTrue) {
-  const n = 5 + (slot % 6);
+  const n = 3 + ((slot * 13 + taskSalt(slot)) % 18);
   const num = n * n + 1;
   const claim = claimEmbed(num, isTrue);
   return {
-    key: `qRecip-${n}`,
-    statement: phrase(slot, `A positive number plus its reciprocal equals $\\frac{${num}}{${n}}$. The numerator of that reduced sum is ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x+\\frac{1}{x}=\\frac{${num}}{${n}}$$`, `$$x=${n}$$`]),
+    key: `qRecip-${n}-${slot % 11}`,
+    statement: phrase(
+      slot,
+      `A positive number $x$ and its reciprocal add to $\\frac{${num}}{${n}}$. When the sum is written as a single fraction in lowest terms, the numerator is ${claim}.`
+    ),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Multiply by $x$ to obtain a quadratic:`,
+        `$$x+\\frac{1}{x}=\\frac{${num}}{${n}}$$`,
+        `$$x^2+1=\\frac{${num}}{${n}}x$$`,
+        `$$x^2-\\frac{${num}}{${n}}x+1=0$$`,
+        `$$x=${n}$$ gives numerator $${num}$ in the claim.`,
+      ],
+      undefined,
+      "quadratic"
+    ),
   };
 }
 
-function quadDisc(slot, isTrue) {
-  const r1 = 3 + (slot % 4);
-  const r2 = r1 + 4 + (slot % 3);
-  const b = -(r1 + r2);
-  const c = r1 * r2;
-  const D = b * b - 4 * c;
-  const claim = claimEmbed(D, isTrue);
-  return {
-    key: `qDisc-${b}-${c}`,
-    statement: phrase(slot, `For $x^2 ${b >= 0 ? "+" : ""}${b}x+${c}=0$, the discriminant equals ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\Delta=${b}^2-4\\cdot${c}=${D}$$`]),
-  };
+function taskSalt(slot) {
+  return (slot % 7) + (Math.floor(slot / 11) % 5);
 }
 
 function quadPathField(slot, isTrue) {
@@ -863,32 +950,6 @@ function quadPathField(slot, isTrue) {
     key: `qPath-${w}`,
     statement: phrase(slot, `A $1$ m path runs around a $${w}$ m $\\times$ $${w + 6}$ m field. The path area alone is ${claim} m$^{2}$.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$(${w + 2})(${w + 8})-${inner}=${path}$$`]),
-  };
-}
-
-function quadTwoDigit(slot, isTrue) {
-  const t = 4 + (slot % 5);
-  const u = 7 + (slot % 3);
-  const n = 10 * t + u;
-  const cond = 10 * u + t;
-  const sumSq = n * n + cond * cond;
-  const claim = claimEmbed(sumSq, isTrue);
-  return {
-    key: `q2dig-${n}`,
-    statement: phrase(slot, `The sum of squares of $${n}$ and its digit-reversal $${cond}$ equals ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${n}^2+${cond}^2=${sumSq}$$`]),
-  };
-}
-
-function quadAltitude(slot, isTrue) {
-  const base = 12 + (slot % 4) * 2;
-  const h = 5 + (slot % 3);
-  const area = (base * h) / 2;
-  const claim = claimEmbed(area, isTrue);
-  return {
-    key: `qTri-${base}-${h}`,
-    statement: phrase(slot, `A triangle with base $${base}$ cm and height $${h}$ cm has area ${claim} cm$^{2}$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$A=\\frac{1}{2}\\cdot${base}\\cdot${h}=${area}$$`]),
   };
 }
 
@@ -917,18 +978,6 @@ function quadConsecSum(slot, isTrue) {
       `Three consecutive integers add to $${sum}$. The middle integer is ${cmp}.`
     ),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$3n+3=${sum}$$`, `$$n=${n}$$`, `Middle $=${mid}$.`], undefined, "quadratic"),
-  };
-}
-
-function quadDiffSq(slot, isTrue) {
-  const a = 9 + (slot % 5);
-  const b = 4 + (slot % 3);
-  const diff = a * a - b * b;
-  const claim = claimEmbed(diff, isTrue);
-  return {
-    key: `qDS-${a}-${b}`,
-    statement: phrase(slot, `The difference of squares of $${a}$ and $${b}$ equals ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${a}^2-${b}^2=${diff}$$`]),
   };
 }
 
@@ -971,18 +1020,6 @@ function quadNoReal(slot, isTrue) {
   };
 }
 
-function quadGeomHyp(slot, isTrue) {
-  const a = 6 + (slot % 3);
-  const b = 8 + (slot % 4);
-  const c = Math.round(Math.sqrt(a * a + b * b));
-  const claim = claimEmbed(c, isTrue);
-  return {
-    key: `qHyp-${a}-${b}`,
-    statement: phrase(slot, `A right triangle has legs $${a}$ cm and $${b}$ cm. The hypotenuse is ${claim} cm.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$c=\\sqrt{${a}^2+${b}^2}=${c}$$`]),
-  };
-}
-
 const QUAD_TPLS = [
   quadAreaLonger, quadConsecProd, quadVietaPair, quadFenceMax, quadNumRecip,
   quadPathField, quadConsecSum, quadFixedPerim, quadRootSum, quadNoReal, quadProj,
@@ -999,7 +1036,7 @@ function ratWork(slot, isTrue) {
   const claim = claimEmbed(Math.round(t * 100) / 100, isTrue, false);
   return {
     key: `ratW-${a}-${b}`,
-    statement: phrase(slot, `Tap $A$ fills a cistern in $${a}$ h, tap $B$ in $${b}$ h. Both open (empty cistern): full in ${claim} h.`),
+    statement: phrase(slot, `Tap $A$ fills a cistern in $${a}$ h, tap $B$ in $${b}$ h. Both open from empty: full in ${claim} h.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$t=\\frac{${a * b}}{${a + b}}=${t}$$`]),
   };
 }
@@ -1016,29 +1053,6 @@ function ratWorkDrain(slot, isTrue) {
   };
 }
 
-function radLadder(slot, isTrue) {
-  const h = 4 + (slot % 4);
-  const b = 5 + (slot % 3);
-  const L = Math.round(Math.sqrt(h * h + b * b));
-  const claim = claimEmbed(L, isTrue);
-  return {
-    key: `radLad-${h}-${b}`,
-    statement: phrase(slot, `A ladder with foot $${b}$ m from a wall reaches $${h}$ m up the wall. The ladder length is ${claim} m.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$L=\\sqrt{${b}^2+${h}^2}=${L}$$`]),
-  };
-}
-
-function radArea(slot, isTrue) {
-  const side = 6 + (slot % 5);
-  const diag = side * Math.sqrt(2);
-  const claim = claimEmbed(Math.round(diag * 10) / 10, isTrue, false);
-  return {
-    key: `radSq-${side}`,
-    statement: phrase(slot, `A square has side $${side}$ cm. Its diagonal is ${claim} cm (exact surd value squared gives $${side * side * 2}$).`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$d=${side}\\sqrt{2}$$`]),
-  };
-}
-
 function radEq(slot, isTrue) {
   const k = 3 + (slot % 4);
   const off = 5 + (slot % 5);
@@ -1048,19 +1062,6 @@ function radEq(slot, isTrue) {
     key: `radEq-${k}-${off}`,
     statement: phrase(slot, `Every admissible root of $\\sqrt{x+${off}}=${k}$ satisfies $x$ ${cmp}.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x+${off}=${k * k}$$`, `$$x=${root}$$`]),
-  };
-}
-
-function absTaxi(slot, isTrue) {
-  const base = 3 + (slot % 2);
-  const per = 1.5 + (slot % 2) * 0.5;
-  const km = 8 + (slot % 4);
-  const fare = base + per * km;
-  const claim = claimEmbed(fare, isTrue, false);
-  return {
-    key: `absTaxi-${base}-${km}`,
-    statement: phrase(slot, `A taxi charges $${base}$ EUR plus $${per}$ EUR per km. A $${km}$ km ride costs ${claim} EUR.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${base}+${per}\\cdot${km}=${fare}$$`]),
   };
 }
 
@@ -1092,20 +1093,6 @@ function ratCross(slot, isTrue) {
   };
 }
 
-function ratAvgSpeed(slot, isTrue) {
-  const d1 = 90 + (slot % 3) * 15;
-  const v1 = 60;
-  const d2 = 120 + (slot % 2) * 30;
-  const v2 = 80;
-  const t = d1 / v1 + d2 / v2;
-  const claim = claimEmbed(Math.round(t * 100) / 100, isTrue, false);
-  return {
-    key: `ratSp-${d1}-${d2}`,
-    statement: phrase(slot, `A trip: $${d1}$ km at $${v1}$ km/h, then $${d2}$ km at $${v2}$ km/h. Total time ${claim} h.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${d1}}{${v1}}+\\frac{${d2}}{${v2}}=${t}$$`]),
-  };
-}
-
 function ratOpposingTrains(slot, isTrue) {
   const l1 = 150 + (slot % 3) * 30;
   const l2 = 200 + (slot % 2) * 50;
@@ -1117,28 +1104,6 @@ function ratOpposingTrains(slot, isTrue) {
     key: `ratTr-${l1}-${l2}`,
     statement: phrase(slot, `Trains $${l1}$ m and $${l2}$ m long approach at $${v1}$ and $${v2}$ km/h. From front meeting to full pass takes ${claim} s.`),
     expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Relative $${v1 + v2}$ km/h, length $${l1 + l2}$ m.`]),
-  };
-}
-
-function ratMphKmh(slot, isTrue) {
-  const mph = 45 + (slot % 4) * 5;
-  const kmh = Math.round(mph * 1.609);
-  const claim = claimEmbed(kmh, isTrue);
-  return {
-    key: `ratConv-${mph}`,
-    statement: phrase(slot, `Converting $${mph}$ mph to km/h gives ${claim} km/h (use $1.609$).`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${mph}\\cdot 1.609=${kmh}$$`]),
-  };
-}
-
-function radNested(slot, isTrue) {
-  const inner = 5 + (slot % 4);
-  const outer = Math.sqrt(inner + 11);
-  const claim = claimEmbed(Math.round(outer * 100) / 100, isTrue, false);
-  return {
-    key: `radNest-${inner}`,
-    statement: phrase(slot, `$\\sqrt{${inner}+11}$ equals ${claim}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\sqrt{${inner + 11}}=${outer}$$`]),
   };
 }
 
@@ -1223,32 +1188,6 @@ function logProductDomain(slot, isTrue) {
   };
 }
 
-function expBacteria(slot, isTrue) {
-  const period = 2 + (slot % 3);
-  const n0 = 800 + (slot % 5) * 200;
-  const cycles = 4 + (slot % 3);
-  const count = n0 * Math.pow(2, cycles);
-  const claim = claimEmbed(count, isTrue);
-  return {
-    key: `expBac-${n0}-${cycles}`,
-    statement: phrase(slot, `A culture doubles every $${period}$ h. From $${n0}$ cells, after $${cycles * period}$ h the count is ${claim} (ignore death).`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${n0}\\cdot 2^{${cycles}}=${count}$$`]),
-  };
-}
-
-function expCompound(slot, isTrue) {
-  const p = 2000 + (slot % 6) * 500;
-  const r = 3 + (slot % 4);
-  const y = 6 + (slot % 3);
-  const bal = Math.round(p * Math.pow(1 + r / 100, y));
-  const claim = claimEmbed(bal, isTrue);
-  return {
-    key: `expComp-${p}-${r}-${y}`,
-    statement: phrase(slot, `$${p}$ EUR at $${r}\\%$ p.a. compounded annually for $${y}$ years grows to ${claim} EUR.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$${p}(1+\\frac{${r}}{100})^{${y}}=${bal}$$`]),
-  };
-}
-
 function expSubstWord(slot, isTrue) {
   const u1 = 2 + (slot % 3);
   const u2 = u1 + 4 + (slot % 3);
@@ -1262,19 +1201,7 @@ function expSubstWord(slot, isTrue) {
       slot,
       `A heated metal rod model satisfies $e^{2x} - ${s}e^x + ${p} = 0$ with $u=e^x>0$. There are ${cmp} distinct real exponents $x$.`
     ),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${p}=0$$`, `$$(u-${u1})(u-${u2})=0$$`, `Two positive $u$ give two real $x$.`]),
-  };
-}
-
-function expHalfLife(slot, isTrue) {
-  const h = 3 + (slot % 3);
-  const yrs = 2 * h;
-  const pct = Math.round(100 / Math.pow(2, yrs / h));
-  const claim = claimEmbed(pct, isTrue);
-  return {
-    key: `expHL-${h}-${yrs}`,
-    statement: phrase(slot, `Isotope half-life $${h}$ years. After $${yrs}$ years, about $${claim}\\%$ of the original sample remains.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Two half-lives: $(\\frac{1}{2})^2$ → $${pct}\\%$.`]),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$u^2-${s}u+${p}=0$$`, `$$(u-${u1})(u-${u2})=0$$`, `Two positive $u$ give two real $x$.`], undefined, "explog"),
   };
 }
 
@@ -1289,7 +1216,7 @@ function logShiftContext(slot, isTrue) {
       slot,
       `Measuring time after an offset, $\\ln(x-${s})=\\ln ${m}$ holds for an admissible $x$ that ${cmp}.`
     ),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x-${s}=${m}$$`, `$$x=${x}$$`, `Domain requires $x>${s}$.`]),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$x-${s}=${m}$$`, `$$x=${x}$$`, `Domain requires $x>${s}$.`], undefined, "explog"),
   };
 }
 
@@ -1306,48 +1233,34 @@ function logSumFrac(slot, isTrue) {
       slot,
       `Every admissible root of $\\log_{${base}} x + \\frac{\\log_{${base}} x}{${denom}} = ${target}$ satisfies $x$ ${cmp}.`
     ),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${denom + 1}}{${denom}}\\log_{${base}} x = ${target}$$`, `$$x=${base}^{${logv}}=${Math.round(x * 100) / 100}$$`]),
+    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\frac{${denom + 1}}{${denom}}\\log_{${base}} x = ${target}$$`, `$$x=${base}^{${logv}}=${Math.round(x * 100) / 100}$$`], undefined, "explog"),
   };
 }
 
 function expMixedBase(slot, isTrue) {
   const pairs = [
-    { eq: "2^x = 3^{x-1}", x: 1 },
-    { eq: "4^x = 2^{x+4}", x: 4 },
-    { eq: "9^x = 3^{x+2}", x: 2 },
-    { eq: "25^x = 5^{x+3}", x: 3 },
+    { eq: "2^x = 3^{x-1}", x: 1, steps: ["$$2^x = \\frac{3^x}{3}$$", "$$\\left(\\frac{2}{3}\\right)^x = \\frac{1}{3}$$", "$$x = 1$$"] },
+    { eq: "4^x = 2^{x+4}", x: 4, steps: ["$$2^{2x} = 2^{x+4}$$", "$$2x = x+4$$", "$$x = 4$$"] },
+    { eq: "9^x = 3^{x+2}", x: 2, steps: ["$$3^{2x} = 3^{x+2}$$", "$$2x = x+2$$", "$$x = 2$$"] },
+    { eq: "25^x = 5^{x+3}", x: 3, steps: ["$$5^{2x} = 5^{x+3}$$", "$$2x = x+3$$", "$$x = 3$$"] },
   ];
   const p = pairs[slot % pairs.length];
   const cmp = claimRoot(p.x, isTrue);
   return {
     key: `expMix-${p.x}-${slot}`,
     statement: phrase(slot, `Every real root of $${p.eq}$ satisfies $x$ ${cmp}.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `Match bases / monotonicity gives $x=${p.x}$.`]),
-  };
-}
-
-function logChangeBase(slot, isTrue) {
-  const num = 81;
-  const den = 9;
-  const val = Math.log(num) / Math.log(den);
-  const claim = claimEmbed(val, isTrue);
-  return {
-    key: `logCB-${num}-${den}`,
-    statement: phrase(slot, `$\\dfrac{\\log_3 ${num}}{\\log_3 ${den}} = ${claim}$.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$\\log_3 ${num}=4,\\ \\log_3 ${den}=2$$`, `Ratio $=2$.`]),
-  };
-}
-
-function expCooling(slot, isTrue) {
-  const t0 = 80 + (slot % 4) * 5;
-  const k = 0.1 + (slot % 3) * 0.05;
-  const mins = 10 + (slot % 4) * 5;
-  const temp = Math.round(t0 * Math.exp(-k * mins));
-  const claim = claimEmbed(temp, isTrue);
-  return {
-    key: `expCool-${t0}-${k}-${mins}`,
-    statement: phrase(slot, `Newton cooling $T=${t0}e^{-${k}t}$ (minutes). After $${mins}$ min the reading is ${claim}°C.`),
-    expl: mkExpl(isTrue, [hdr("?", isTrue).replace("?", "{L}"), "", `$$T=${t0}e^{-${k}\\cdot${mins}}\\approx${temp}$$`]),
+    expl: mkExpl(
+      isTrue,
+      [
+        hdr("?", isTrue).replace("?", "{L}"),
+        "",
+        `Rewrite with a common base and equate exponents:`,
+        ...p.steps,
+        `Since $x=${p.x}$, compare with the bound in the claim.`,
+      ],
+      undefined,
+      "explog"
+    ),
   };
 }
 
@@ -1487,9 +1400,9 @@ function poolFor(sub, tier) {
     else if (t === 3) pool = LIN_TPLS;
     else if (t === 4) pool = [...T.LIN_4, ...LIN_TPLS];
     else pool = [...T.LIN_5, ...T.LIN_4, ...LIN_TPLS.slice(0, 10)];
-  } else if (sub === "4.2") {
-    if (t === 1) pool = QUAD_TPLS.slice(0, 5);
-    else if (t === 2) pool = QUAD_TPLS.slice(0, 8);
+  } else   if (sub === "4.2") {
+    if (t === 1) pool = QUAD_TPLS.slice(0, 8);
+    else if (t === 2) pool = QUAD_TPLS.slice(0, 10);
     else if (t === 3) pool = QUAD_TPLS;
     else if (t === 4) pool = [...T.QUAD_4, ...QUAD_TPLS];
     else pool = [...T.QUAD_5, ...T.QUAD_4, ...QUAD_TPLS];
@@ -1524,19 +1437,32 @@ function buildLetter(pool, taskN, letter, isTrue, usedTpl, subsection, tier) {
     const wider = poolFor(subsection, Math.max(1, tier - w));
     if (wider !== pools[pools.length - 1]) pools.push(wider);
   }
+  let lastErr = "";
   for (const activePool of pools) {
-    for (let tries = 0; tries < 1200; tries++) {
+    for (let tries = 0; tries < 5000; tries++) {
       const slot = taskN * 7919 + letter * 53 + tries * 19;
       const ti = (slot + tries) % activePool.length;
       if (usedTpl.has(`${activePool.length}-${ti}`) && tries < activePool.length * 3) continue;
-      const spec = activePool[ti](slot, isTrue);
+      let spec;
+      try {
+        spec = activePool[ti](slot, isTrue);
+      } catch (e) {
+        lastErr = `throw:${activePool[ti].name}:${e.message}`;
+        continue;
+      }
       if (spec.forceTrue !== undefined && spec.forceTrue !== isTrue) continue;
       const key = `${spec.key}-t${taskN}-l${letter}`;
       if (usedKeys.has(key)) continue;
       const norm = normalizeStatement(spec.statement);
-      if (usedStatements.has(norm)) continue;
+      if (usedStatements.has(norm)) {
+        lastErr = `dup:${activePool[ti].name}`;
+        continue;
+      }
       const err = validateStatement(spec.statement, isTrue, subsection);
-      if (err) continue;
+      if (err) {
+        lastErr = `val:${activePool[ti].name}:${err}`;
+        continue;
+      }
       usedKeys.add(key);
       usedStatements.add(norm);
       usedTpl.add(`${activePool.length}-${ti}`);
@@ -1546,7 +1472,7 @@ function buildLetter(pool, taskN, letter, isTrue, usedTpl, subsection, tier) {
       return { statement: cleanStmt(spec.statement), expl };
     }
   }
-  throw new Error(`failed task=${taskN} letter=${letter} sub=${subsection}`);
+  throw new Error(`failed task=${taskN} letter=${letter} sub=${subsection} last=${lastErr}`);
 }
 
 const TITLES = {

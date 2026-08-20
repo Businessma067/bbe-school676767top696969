@@ -24,7 +24,7 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
       `A kitchen manual lists $750$ g of sugar for $12$ servings. Baking $21$ servings requires $1316$ g of sugar.`,
       `A city marathon pays exactly three cash prizes that use the full fund of $144$ EUR and leave nothing unallocated. The winner receives amount $W$ EUR. The runner-up receives $\\frac{4}{5}$ of $W$, and third place receives $\\frac{4}{5}$ of the runner-up amount. Before any prize is handed over, $\\frac{3}{20}$ of that person's gross prize is withheld as tax. After tax, the runner-up receives greater than $34$ EUR net.`,
       `A shop doubles a price and adds a $6$ EUR surcharge; the till shows $18$ EUR. The original price is at most $4$ EUR.`,
-      `Towns $P$ and $Q$ are $180$ km apart. At noon a car leaves $P$ at $60$ km/h; $35$ minutes later another leaves $Q$ at $78$ km/h toward $P$. They meet greater than $57$ minutes after noon.`,
+      `Towns $P$ and $Q$ lie $120$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}35$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is greater than $40$ minutes.`,
       `A recipe calls for $7\\%$ vinegar. If the cook only has $1$ litre of $11\\%$ vinegar, he needs to mix it with $3.6$ litres of water to get the right concentration.`,
     ],
     answer_key: [false, true, false, true, false],
@@ -33,11 +33,13 @@ export const MATH_CH4_EQUATIONS: MathTask[] = [
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$750\\cdot\\frac{21}{12}=1313$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -48,28 +50,40 @@ Set up the model and solve:
 
 Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
+Runner-up gross $=47$ EUR; net after $\\frac{3}{20}$ tax $=40$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$W+\\frac{4}{5}W+\\frac{16}{25}W=144$$
+
+Collect like terms and isolate the variable:
 
 $$\\frac{61}{25}W=144$$
 
+Read off the numerical value and compare with the claim:
+
 $$W=59$$
 
-Runner-up gross $=47$ EUR; net after $\\frac{3}{20}$ tax $=40$ EUR.
-
-The value recovered from the model satisfies the inequality in the claim.
+Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$2p+6=18$$
 
+Collect like terms and isolate the variable:
+
 $$p=6$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -78,24 +92,36 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Head start: $35$ km. Gap left: $145$ km.
+In $\\frac{35}{60}$ h the first car covers $28$ km, leaving $92$ km between the cars.
 
-$$t=\\frac{145}{138}\\text{ h}=63\\text{ min after noon}$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$\\frac{92}{48+72}=\\frac{92}{120}$$ hours until meeting
+
+Collect like terms and isolate the variable:
+
+$$\\frac{92}{120}\\times 60=46$$ minutes after noon
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{0.11}{1+w}=\\frac{7}{100}$$
 
+Collect like terms and isolate the variable:
+
 $$w=0.6$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -122,39 +148,55 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+70)=360$$
 
+Collect like terms and isolate the variable:
+
 $$s=145$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=15$$, $$5x+2y=45$$
 
+Collect like terms and isolate the variable:
+
 $$3x=15$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=5$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$750\\cdot\\frac{18}{12}=1125$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -165,28 +207,40 @@ Set up the model and solve:
 
 Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
+Runner-up gross $=63$ EUR; net after $\\frac{3}{20}$ tax $=54$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$W+\\frac{4}{5}W+\\frac{16}{25}W=192$$
+
+Collect like terms and isolate the variable:
 
 $$\\frac{61}{25}W=192$$
 
+Read off the numerical value and compare with the claim:
+
 $$W=79$$
 
-Runner-up gross $=63$ EUR; net after $\\frac{3}{20}$ tax $=54$ EUR.
-
-The value recovered from the model contradicts the claim.
+Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$2p+6=20$$
 
+Collect like terms and isolate the variable:
+
 $$p=7$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -213,13 +267,19 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{5}C=24\\cdot25$$
 
+Collect like terms and isolate the variable:
+
 $$C=17$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -232,44 +292,58 @@ Counting back from $3$ pm gives $13:15$ pm.
 
 $$t=\\frac{98}{56}=1.75$$ h $=105$ min.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+80)=300$$
 
+Collect like terms and isolate the variable:
+
 $$s=110$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{0.07}{1+w}=\\frac{5}{100}$$
 
+Collect like terms and isolate the variable:
+
 $$w=0.4$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$750\\cdot\\frac{19}{12}=1188$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -285,7 +359,7 @@ Matching the solved value to the claim, the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A till contains only $2$ EUR and $5$ EUR coins: $14$ coins totalling $46$ EUR. Exactly greater than $4$ of them are $5$ EUR coins.`,
-      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $44$ cm, then the longer side is $16$ cm.`,
+      `A rectangular plot is fenced on all four sides using exactly $44$ m of wire. One side of the plot is $4$ m longer than the adjacent side. The longer side measures $16$ m.`,
       `A pump delivers $24$ L/min into an empty tank. After $30$ minutes the tank is $\\frac{2}{5}$ full; its capacity is $34$ litres.`,
       `A car travels at an average speed of $56$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $13:00$ pm.`,
       `An aluminium bar of length $3.6$ m is cut into two parts; one part is $50$ cm longer than the other. The shorter part is greater than $145$ cm.`,
@@ -296,15 +370,23 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=14$$, $$5x+2y=46$$
 
+Collect like terms and isolate the variable:
+
 $$3x=18$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=6$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -313,26 +395,42 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $13$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+4)=44$:
+
+Longer side $s+4=13$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+4)=44$$
 
+Collect like terms and isolate the variable:
+
+$$4s+8=44$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=9$$
 
-The value recovered from the model contradicts the claim.
+Longer side $s+4=13$ m.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{2}{5}C=24\\cdot30$$
 
+Collect like terms and isolate the variable:
+
 $$C=30$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -345,20 +443,26 @@ Counting back from $3$ pm gives $13:00$ pm.
 
 $$t=\\frac{112}{56}=2$$ h $=120$ min.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+50)=360$$
 
+Collect like terms and isolate the variable:
+
 $$s=155$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -376,7 +480,7 @@ Matching the solved value to the claim, the statement is True.`,
       `A mother is $28$ years older than her daughter. In $8$ years the mother will be twice as old as the daughter will be then. The daughter is now $24$ years old.`,
       `A groundskeeper lays out a rectangular flower bed so that one side is exactly $2$ cm longer than the adjacent side and the planted area measures $24$ cm$^{2}$. Working with whole centimetres, the longer side of the bed is greater than $4$ cm.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $15$ coins totalling $48$ EUR. Exactly greater than $4$ of them are $5$ EUR coins.`,
-      `If one side of a rectangle is by $5$ cm longer than the other and the perimeter is $46$ cm, then the longer side is $17$ cm.`,
+      `A rectangular plot is fenced on all four sides using exactly $46$ m of wire. One side of the plot is $5$ m longer than the adjacent side. The longer side measures $17$ m.`,
       `A pump delivers $24$ L/min into an empty tank. After $35$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $26$ litres.`,
     ],
     answer_key: [false, true, true, false, false],
@@ -385,30 +489,42 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+28+8=2(d+8)$$
 
+Collect like terms and isolate the variable:
+
 $$d=20$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+2)=24$:
 
+Longer side: $6$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+2s-24=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-4)(s+6)=0$$
 
-$$s=4$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $6$ cm.
+$$s=4$$
 
 The longer side is $6$ cm.
 
@@ -417,15 +533,23 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=15$$, $$5x+2y=48$$
 
+Collect like terms and isolate the variable:
+
 $$3x=18$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=6$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -434,26 +558,42 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $14$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+5)=46$:
+
+Longer side $s+5=14$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+5)=46$$
 
+Collect like terms and isolate the variable:
+
+$$4s+10=46$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=9$$
 
-The value recovered from the model contradicts the claim.
+Longer side $s+5=14$ m.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{5}C=24\\cdot35$$
 
+Collect like terms and isolate the variable:
+
 $$C=23$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -468,7 +608,7 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A boat covers $48$ km downstream in $2$ h and the same distance upstream in $3$ h. Its speed in still water is greater than $18$ km/h.`,
+      `A rower travels $36$ km downstream in $2$ h and returns the same $36$ km upstream in $3$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is greater than $13.5$ km/h.`,
       `Three consecutive odd integers add up to $51$. The largest of the three is at most $17$.`,
       `A mother is $34$ years older than her daughter. In $8$ years the mother will be twice as old as the daughter will be then. The daughter is now greater than $24$ years old.`,
       `A groundskeeper lays out a rectangular flower bed so that one side is exactly $5$ cm longer than the adjacent side and the planted area measures $84$ cm$^{2}$. Working with whole centimetres, the longer side of the bed is greater than $10$ cm.`,
@@ -480,11 +620,15 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $24$ km/h, upstream $16$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{24+16}{2}=20$ km/h.
+Downstream speed $18$ km/h, upstream speed $12$ km/h.
 
-The value recovered from the model satisfies the inequality in the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{18+12}{2}=15$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -497,37 +641,49 @@ Largest $19$.
 
 $$3k+6=51$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+34+8=2(d+8)$$
 
+Collect like terms and isolate the variable:
+
 $$d=26$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+5)=84$:
 
+Longer side: $12$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+5s-84=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-7)(s+12)=0$$
 
-$$s=7$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $12$ cm.
+$$s=7$$
 
 The longer side is $12$ cm.
 
@@ -536,15 +692,23 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=16$$, $$5x+2y=50$$
 
+Collect like terms and isolate the variable:
+
 $$3x=18$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=6$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -559,9 +723,9 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Towns $P$ and $Q$ are $234$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $78$ km/h toward $P$. They meet $97$ minutes after noon.`,
+      `Towns $P$ and $Q$ lie $120$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}30$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is $50$ minutes.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $17$ coins totalling $61$ EUR. Exactly greater than $7$ of them are $5$ EUR coins.`,
-      `A boat covers $48$ km downstream in $3$ h and the same distance upstream in $3$ h. Its speed in still water is $19$ km/h.`,
+      `A rower travels $42$ km downstream in $3$ h and returns the same $42$ km upstream in $3$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is $17$ km/h.`,
       `Three consecutive odd integers add up to $33$. The largest of the three is at most $11$.`,
       `A mother is $28$ years older than her daughter. In $8$ years the mother will be twice as old as the daughter will be then. The daughter is now greater than $18$ years old.`,
     ],
@@ -573,37 +737,55 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Head start: $27$ km. Gap left: $207$ km.
+In $\\frac{30}{60}$ h the first car covers $24$ km, leaving $96$ km between the cars.
 
-$$t=\\frac{207}{132}\\text{ h}=94\\text{ min after noon}$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model contradicts the claim.
+$$\\frac{96}{48+72}=\\frac{96}{120}$$ hours until meeting
+
+Collect like terms and isolate the variable:
+
+$$\\frac{96}{120}\\times 60=48$$ minutes after noon
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=17$$, $$5x+2y=61$$
 
+Collect like terms and isolate the variable:
+
 $$3x=27$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=9$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $16$ km/h, upstream $16$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{16+16}{2}=16$ km/h.
+Downstream speed $14$ km/h, upstream speed $14$ km/h.
 
-The value recovered from the model contradicts the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{14+14}{2}=14$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -616,20 +798,26 @@ Largest $13$.
 
 $$3k+6=33$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+28+8=2(d+8)$$
 
+Collect like terms and isolate the variable:
+
 $$d=20$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -644,7 +832,7 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Towns $P$ and $Q$ are $216$ km apart. At noon a car leaves $P$ at $48$ km/h; $25$ minutes later another leaves $Q$ at $72$ km/h toward $P$. They meet greater than $92$ minutes after noon.`,
+      `Towns $P$ and $Q$ lie $108$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}25$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is greater than $38$ minutes.`,
       `Three consecutive odd integers add up to $75$. The largest is greater than $25$.`,
       `Inlet $A$ fills a pool in $7$ h while outlet $B$ empties it in $9$ h. With both open and an empty pool, the pool fills in greater than $28.5$ h.`,
       `Given a rectangle with area $117$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $16$ cm.`,
@@ -658,54 +846,78 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Head start: $20$ km. Gap left: $196$ km.
+In $\\frac{25}{60}$ h the first car covers $20$ km, leaving $88$ km between the cars.
 
-$$t=\\frac{196}{120}\\text{ h}=98\\text{ min after noon}$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$\\frac{88}{48+72}=\\frac{88}{120}$$ hours until meeting
+
+Collect like terms and isolate the variable:
+
+$$\\frac{88}{120}\\times 60=44$$ minutes after noon
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$3n+6=75$$
 
+Collect like terms and isolate the variable:
+
 $$n=23$$, largest $27$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{1}{7}-\\frac{1}{9}=\\frac{1}{t}$$
 
+Collect like terms and isolate the variable:
+
 $$t=31.5$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+4)=117$:
 
+Longer side: $13$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+4s-117=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-9)(s+13)=0$$
 
-$$s=9$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $13$ cm.
+$$s=9$$
 
 The longer side is $13$ cm, not $16$ cm.
 
@@ -714,13 +926,19 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+50)=280$$
 
+Collect like terms and isolate the variable:
+
 $$s=115$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -739,7 +957,7 @@ Matching the solved value to the claim, the statement is False.`,
       `Inlet $A$ fills a pool in $9$ h while outlet $B$ empties it in $9$ h. With both open and an empty pool, the pool fills in $7$ h.`,
       `Given a rectangle with area $77$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $14$ cm.`,
       `An aluminium bar of length $2.8$ m is cut into two parts; one part is $70$ cm longer than the other. The shorter part is greater than $95$ cm.`,
-      `A jacket priced at $320$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is greater than $186$ EUR.`,
+      `An electronics shop lists a headset at $84$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays greater than $62$ EUR in total.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
@@ -747,43 +965,61 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$3n+6=87$$
 
+Collect like terms and isolate the variable:
+
 $$n=27$$, largest $31$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{1}{9}-\\frac{1}{9}=\\frac{1}{t}$$
 
+Collect like terms and isolate the variable:
+
 $$t=Infinity$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+4)=77$:
 
+Longer side: $11$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+4s-77=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-7)(s+11)=0$$
 
-$$s=7$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $11$ cm.
+$$s=7$$
 
 The longer side is $11$ cm, not $14$ cm.
 
@@ -792,24 +1028,34 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+70)=280$$
 
+Collect like terms and isolate the variable:
+
 $$s=105$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$320\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=192$$
+After $\\frac{1}{4}$ off: $63$ EUR.
 
-The value recovered from the model satisfies the inequality in the claim.
+After further $\\frac{1}{10}$ off: $57$ EUR.
+
+$$57+\\frac{1}{5}\\cdot57=68$$ EUR with VAT.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -827,8 +1073,8 @@ Matching the solved value to the claim, the statement is True.`,
       `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is greater than $29$.`,
       `Given a rectangle with area $45$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $11$ cm.`,
       `A city marathon pays exactly three cash prizes that use the full fund of $240$ EUR and leave nothing unallocated. The winner receives amount $W$ EUR. The runner-up receives $\\frac{4}{5}$ of $W$, and third place receives $\\frac{4}{5}$ of the runner-up amount. Before any prize is handed over, $\\frac{3}{20}$ of that person's gross prize is withheld as tax. After tax, the runner-up receives $68$ EUR net.`,
-      `A jacket priced at $360$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is $218$ EUR.`,
-      `If one side of a rectangle is by $5$ cm longer than the other and the perimeter is $38$ cm, then the longer side is greater than $10$ cm.`,
+      `An electronics shop lists a headset at $60$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays $52$ EUR in total.`,
+      `A rectangular plot is fenced on all four sides using exactly $38$ m of wire. One side of the plot is $5$ m longer than the adjacent side. The longer side measures greater than $10$ m.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
@@ -836,32 +1082,46 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{7}x-\\frac{2}{7}x=16$$
 
+Collect like terms and isolate the variable:
+
 $$\\frac{2}{7}x=16$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=35$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+4)=45$:
 
+Longer side: $9$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+4s-45=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-5)(s+9)=0$$
 
-$$s=5$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $9$ cm.
+$$s=5$$
 
 The longer side is $9$ cm, not $11$ cm.
 
@@ -874,26 +1134,36 @@ Set up the model and solve:
 
 Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
+Runner-up gross $=78$ EUR; net after $\\frac{3}{20}$ tax $=66$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$W+\\frac{4}{5}W+\\frac{16}{25}W=240$$
+
+Collect like terms and isolate the variable:
 
 $$\\frac{61}{25}W=240$$
 
+Read off the numerical value and compare with the claim:
+
 $$W=98$$
 
-Runner-up gross $=78$ EUR; net after $\\frac{3}{20}$ tax $=66$ EUR.
-
-The value recovered from the model contradicts the claim.
+Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$360\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=216$$
+After $\\frac{1}{4}$ off: $45$ EUR.
 
-The value recovered from the model contradicts the claim.
+After further $\\frac{1}{10}$ off: $41$ EUR.
+
+$$41+\\frac{1}{5}\\cdot41=49$$ EUR with VAT.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -902,13 +1172,23 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $12$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+5)=38$:
+
+Longer side $s+5=12$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+5)=38$$
 
+Collect like terms and isolate the variable:
+
+$$4s+10=38$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=7$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Longer side $s+5=12$ m.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -925,27 +1205,33 @@ Matching the solved value to the claim, the statement is True.`,
     statements: [
       `Given a rectangle with area $140$ cm$^{2}$ and sides differing by $4$ cm, the longer side is $17$ cm.`,
       `A mother is $28$ years older than her daughter. In $9$ years the mother will be twice as old as the daughter will be then. The daughter is now greater than $17$ years old.`,
-      `A jacket priced at $200$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is greater than $114$ EUR.`,
-      `If one side of a rectangle is by $3$ cm longer than the other and the perimeter is $38$ cm, then the longer side is greater than $9$ cm.`,
+      `A courier rides $54$ km out at $15$ km/h and returns at $10$ km/h over the same route. The round trip lasts greater than $8$ hours.`,
+      `A rectangular plot is fenced on all four sides using exactly $38$ m of wire. One side of the plot is $3$ m longer than the adjacent side. The longer side measures greater than $9$ m.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $15$ coins totalling $48$ EUR. Exactly $8$ of them are $5$ EUR coins.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+4)=140$:
 
+Longer side: $14$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+4s-140=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-10)(s+14)=0$$
 
-$$s=10$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $14$ cm.
+$$s=10$$
 
 The longer side is $14$ cm, not $17$ cm.
 
@@ -954,24 +1240,32 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+28+9=2(d+9)$$
 
+Collect like terms and isolate the variable:
+
 $$d=19$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$200\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=120$$
+Work from the wording to an equation, then solve step by step:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$\\frac{54}{15}+\\frac{54}{10}=9$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -980,28 +1274,46 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $11$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+3)=38$:
+
+Longer side $s+3=11$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+3)=38$$
 
+Collect like terms and isolate the variable:
+
+$$4s+6=38$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Longer side $s+3=11$ m.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=15$$, $$5x+2y=48$$
 
+Collect like terms and isolate the variable:
+
 $$3x=18$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=6$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1017,7 +1329,7 @@ Matching the solved value to the claim, the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `An aluminium bar of length $2.8$ m is cut into two parts; one part is $50$ cm longer than the other. The shorter part is greater than $105$ cm.`,
-      `A jacket priced at $240$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is greater than $138$ EUR.`,
+      `An electronics shop lists a headset at $60$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays greater than $43$ EUR in total.`,
       `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is at most $20$.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $18$ coins totalling $57$ EUR. Exactly greater than $5$ of them are $5$ EUR coins.`,
       `A rectangular lawn $8$ m by $14$ m is surrounded by a uniform $1.5$ m gravel path. The path alone covers $79$ m$^{2}$.`,
@@ -1028,52 +1340,76 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+50)=280$$
 
+Collect like terms and isolate the variable:
+
 $$s=115$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$240\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=144$$
+After $\\frac{1}{4}$ off: $45$ EUR.
 
-The value recovered from the model satisfies the inequality in the claim.
+After further $\\frac{1}{10}$ off: $41$ EUR.
+
+$$41+\\frac{1}{5}\\cdot41=49$$ EUR with VAT.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{7}n-\\frac{2}{7}n=16$$
 
+Collect like terms and isolate the variable:
+
 $$n=28$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=18$$, $$5x+2y=57$$
 
+Collect like terms and isolate the variable:
+
 $$3x=21$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=7$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -1086,7 +1422,7 @@ Outer minus inner:
 
 $$(11)(17)-112=75$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1101,8 +1437,8 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A jacket priced at $280$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is $170$ EUR.`,
-      `If one side of a rectangle is by $3$ cm longer than the other and the perimeter is $26$ cm, then the longer side is $11$ cm.`,
+      `An electronics shop lists a headset at $84$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays $71$ EUR in total.`,
+      `A rectangular plot is fenced on all four sides using exactly $26$ m of wire. One side of the plot is $3$ m longer than the adjacent side. The longer side measures $11$ m.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $17$ coins totalling $58$ EUR. Exactly greater than $6$ of them are $5$ EUR coins.`,
       `A rectangular lawn $9$ m by $15$ m is surrounded by a uniform $1.5$ m gravel path. The path alone covers $83$ m$^{2}$.`,
       `Three test scores average $12$ points; two of them are $10$ and $14$. The third score is greater than $10$.`,
@@ -1113,11 +1449,15 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$280\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=168$$
+After $\\frac{1}{4}$ off: $63$ EUR.
 
-The value recovered from the model contradicts the claim.
+After further $\\frac{1}{10}$ off: $57$ EUR.
+
+$$57+\\frac{1}{5}\\cdot57=68$$ EUR with VAT.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -1126,28 +1466,46 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $8$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+3)=26$:
+
+Longer side $s+3=8$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+3)=26$$
 
+Collect like terms and isolate the variable:
+
+$$4s+6=26$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=5$$
 
-The value recovered from the model contradicts the claim.
+Longer side $s+3=8$ m.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=17$$, $$5x+2y=58$$
 
+Collect like terms and isolate the variable:
+
 $$3x=24$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -1160,18 +1518,20 @@ Outer minus inner:
 
 $$(12)(18)-135=81$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$c=3\\cdot12-10-14=12$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1186,11 +1546,11 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle is by $5$ cm longer than the other and the perimeter is $34$ cm, then the longer side is greater than $9$ cm.`,
+      `A rectangular plot is fenced on all four sides using exactly $34$ m of wire. One side of the plot is $5$ m longer than the adjacent side. The longer side measures greater than $9$ m.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $20$ coins totalling $67$ EUR. Exactly $11$ of them are $5$ EUR coins.`,
       `A rectangular lawn $10$ m by $16$ m is surrounded by a uniform $1.5$ m gravel path. The path alone covers greater than $81$ m$^{2}$.`,
       `Three test scores average $12$ points; two of them are $10$ and $14$. The third score is at most $10$.`,
-      `A boat covers $42$ km downstream in $2$ h and the same distance upstream in $3$ h. Its speed in still water is $20.5$ km/h.`,
+      `A rower travels $36$ km downstream in $2$ h and returns the same $36$ km upstream in $3$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is $19$ km/h.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -1200,28 +1560,46 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $11$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+5)=34$:
+
+Longer side $s+5=11$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+5)=34$$
 
+Collect like terms and isolate the variable:
+
+$$4s+10=34$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=6$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Longer side $s+5=11$ m.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=20$$, $$5x+2y=67$$
 
+Collect like terms and isolate the variable:
+
 $$3x=27$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=9$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -1234,29 +1612,35 @@ Outer minus inner:
 
 $$(13)(19)-160=87$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$c=3\\cdot12-10-14=12$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $21$ km/h, upstream $14$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{21+14}{2}=17.5$ km/h.
+Downstream speed $18$ km/h, upstream speed $12$ km/h.
 
-The value recovered from the model contradicts the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{18+12}{2}=15$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1272,10 +1656,10 @@ Matching the solved value to the claim, the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A pump delivers $18$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $16$ litres.`,
-      `A boat covers $42$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is greater than $13.7$ km/h.`,
-      `Mixing $3$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $$12.1$\\%$ concentration.`,
+      `A rower travels $36$ km downstream in $2$ h and returns the same $36$ km upstream in $5$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is greater than $11.6$ km/h.`,
+      `A chemist pours $2$ L of $10\\%$ saline into a flask, then adds $3$ L of $3\\%$ saline. The two volumes combine with no loss. The resulting concentration by volume is $8.8$\\%.`,
       `Worker $A$ finishes a job alone in $8$ days, worker $B$ in $8$ days. Together they need greater than $3$ days.`,
-      `A jacket priced at $240$ EUR is reduced by $20\\%$, then the sale price is cut by a further $10\\%$. The final price is greater than $167$ EUR.`,
+      `An electronics shop lists a headset at $48$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays greater than $32$ EUR in total.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
@@ -1283,59 +1667,87 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{5}C=18\\cdot25$$
 
+Collect like terms and isolate the variable:
+
 $$C=13$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $21$ km/h, upstream $8.4$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{21+8.4}{2}=14.7$ km/h.
+Downstream speed $18$ km/h, upstream speed $7.2$ km/h.
 
-The value recovered from the model satisfies the inequality in the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{18+7.2}{2}=12.6$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{16\\cdot3+4\\cdot4}{7}=9.1$$
+Total salt amount divided by total volume $5$ L:
 
-The value recovered from the model contradicts the claim.
+Translate the story into one equation in the unknown:
+
+$$\\frac{10\\cdot2+3\\cdot3}{5}=\\frac{29}{5}$$
+
+Collect like terms and isolate the variable:
+
+$$\\approx 5.8\\%$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{1}{8}+\\frac{1}{8}=\\frac{1}{t}$$
 
+Collect like terms and isolate the variable:
+
 $$t=4$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$240\\cdot(1-\\frac{20}{100})\\cdot(1-\\frac{10}{100})=173$$
+After $\\frac{1}{4}$ off: $36$ EUR.
 
-The value recovered from the model satisfies the inequality in the claim.
+After further $\\frac{1}{10}$ off: $32$ EUR.
+
+$$32+\\frac{1}{5}\\cdot32=38$$ EUR with VAT.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1351,9 +1763,9 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A train $300$ m long passes a signal pole in $12$ s. Its speed is greater than $84$ km/h.`,
-      `If one side of a rectangle is by $4$ cm longer than the other and the perimeter is $36$ cm, then the longer side is $14$ cm.`,
-      `Three test scores average $79$. Two of them are $84$ and $83$. The third score is $74$.`,
-      `Mixing $4$ L of $16\\%$ saline with $4$ L of $4\\%$ saline yields a solution of $greater than $9$\\%$ concentration.`,
+      `A rectangular plot is fenced on all four sides using exactly $36$ m of wire. One side of the plot is $4$ m longer than the adjacent side. The longer side measures $14$ m.`,
+      `On a three-question quiz the class average is $15$ points. Student $P$ earned $14$ points and student $Q$ earned $17$ points. Student $R$'s score is $17$ points.`,
+      `A chemist pours $2$ L of $10\\%$ saline into a flask, then adds $3$ L of $4\\%$ saline. The two volumes combine with no loss. The resulting concentration by volume is greater than $5.4$\\%.`,
       `Worker $A$ finishes a job alone in $5$ days, worker $B$ in $8$ days. Together they need $6.08$ days.`,
     ],
     answer_key: [true, false, false, true, false],
@@ -1362,13 +1774,19 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$v=\\frac{300}{12}=25\\text{ m/s}$$
 
+Collect like terms and isolate the variable:
+
 $$25\\cdot 3.6=90\\text{ km/h}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -1377,50 +1795,80 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $11$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+4)=36$:
+
+Longer side $s+4=11$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+4)=36$$
 
+Collect like terms and isolate the variable:
+
+$$4s+8=36$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=7$$
 
-The value recovered from the model contradicts the claim.
+Longer side $s+4=11$ m.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{a+b+c}{3}=79$$
+Mean condition $\\frac{a+b+c}{3}=15$:
 
-$$c=70$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model contradicts the claim.
+$$c=3\\cdot15-14-17$$
+
+Collect like terms and isolate the variable:
+
+$$c=14$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{16\\cdot4+4\\cdot4}{8}=10$$
+Total salt amount divided by total volume $5$ L:
 
-The value recovered from the model satisfies the inequality in the claim.
+Translate the story into one equation in the unknown:
+
+$$\\frac{10\\cdot2+4\\cdot3}{5}=\\frac{32}{5}$$
+
+Collect like terms and isolate the variable:
+
+$$\\approx 6.4\\%$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{1}{5}+\\frac{1}{8}=\\frac{1}{t}$$
 
+Collect like terms and isolate the variable:
+
 $$t=3.076923076923077$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1438,7 +1886,7 @@ Matching the solved value to the claim, the statement is False.`,
       `A two-digit number has tens digit $5$ and units digit $7$. Swapping the digits increases the number by $20$.`,
       `A train $180$ m long passes a signal pole in $12$ s. Its speed is greater than $48$ km/h.`,
       `A plan charges $20$ EUR per month plus $0.12$ EUR per minute. With $240$ minutes used, the bill is greater than $45.8$ EUR.`,
-      `Three test scores average $79$. Two of them are $78$ and $85$. The third score is $77$.`,
+      `On a three-question quiz the class average is $13$ points. Student $P$ earned $12$ points and student $Q$ earned $14$ points. Student $R$'s score is $16$ points.`,
       `A rectangular lawn $8$ m by $12$ m is surrounded by a uniform $2$ m gravel path. The path alone covers greater than $90$ m$^{2}$.`,
     ],
     answer_key: [false, true, true, false, true],
@@ -1453,44 +1901,58 @@ Original $57$, reversed $75$.
 
 $$(75)-(57)=18$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$v=\\frac{180}{12}=15\\text{ m/s}$$
 
+Collect like terms and isolate the variable:
+
 $$15\\cdot 3.6=54\\text{ km/h}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$20+0.12\\cdot240=48.8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{a+b+c}{3}=79$$
+Mean condition $\\frac{a+b+c}{3}=13$:
 
-$$c=74$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model contradicts the claim.
+$$c=3\\cdot13-12-14$$
+
+Collect like terms and isolate the variable:
+
+$$c=13$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -1503,7 +1965,7 @@ Outer minus inner:
 
 $$(12)(16)-96=96$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1536,7 +1998,7 @@ Head start $44$ km. Relative speed $6$ km/h.
 
 $$t=\\frac{44}{6}\\text{ h}=440\\text{ min}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -1549,48 +2011,68 @@ Original $88$, reversed $88$.
 
 $$(88)-(88)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{1}{6}-\\frac{1}{10}=\\frac{1}{t}$$
 
+Collect like terms and isolate the variable:
+
 $$t=15$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{7}x-\\frac{2}{7}x=16$$
 
+Collect like terms and isolate the variable:
+
 $$\\frac{2}{7}x=16$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=55$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$s+(s+70)=320$$
 
+Collect like terms and isolate the variable:
+
 $$s=125$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1605,11 +2087,11 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A jacket priced at $240$ EUR is reduced by $25\\%$, then the sale price is cut by a further $20\\%$. The final price is $146$ EUR.`,
+      `A pump delivers $18$ L/min into an empty tank. After $20$ minutes the tank is $\\frac{2}{5}$ full; its capacity is $19$ litres.`,
       `A courier rides $54$ km out at $18$ km/h and returns at $10$ km/h over the same route. The round trip lasts $11.4$ hours.`,
       `A kitchen manual lists $600$ g of sugar for $8$ servings. Baking $17$ servings requires greater than $1269$ g of sugar.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $13$ coins totalling $41$ EUR. Exactly greater than $3$ of them are $5$ EUR coins.`,
-      `Towns $P$ and $Q$ are $162$ km apart. At noon a car leaves $P$ at $54$ km/h; $30$ minutes later another leaves $Q$ at $78$ km/h toward $P$. They meet greater than $55$ minutes after noon.`,
+      `Towns $P$ and $Q$ lie $120$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}30$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is greater than $42$ minutes.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
@@ -1617,48 +2099,68 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$240\\cdot(1-\\frac{25}{100})\\cdot(1-\\frac{20}{100})=144$$
+Work from the wording to an equation, then solve step by step:
 
-The value recovered from the model contradicts the claim.
+Translate the story into one equation in the unknown:
+
+$$\\frac{2}{5}C=18\\cdot20$$
+
+Collect like terms and isolate the variable:
+
+$$C=15$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{54}{18}+\\frac{54}{10}=8.4$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$600\\cdot\\frac{17}{8}=1275$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=13$$, $$5x+2y=41$$
 
+Collect like terms and isolate the variable:
+
 $$3x=15$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=5$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -1667,11 +2169,17 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Head start: $27$ km. Gap left: $135$ km.
+In $\\frac{30}{60}$ h the first car covers $24$ km, leaving $96$ km between the cars.
 
-$$t=\\frac{135}{132}\\text{ h}=61\\text{ min after noon}$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$\\frac{96}{48+72}=\\frac{96}{120}$$ hours until meeting
+
+Collect like terms and isolate the variable:
+
+$$\\frac{96}{120}\\times 60=48$$ minutes after noon
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1688,7 +2196,7 @@ Matching the solved value to the claim, the statement is True.`,
     statements: [
       `Three consecutive odd integers add up to $69$. The largest is greater than $23$.`,
       `A pump delivers $27$ L/min into an empty tank. After $25$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $22$ litres.`,
-      `A boat covers $30$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is greater than $9.5$ km/h.`,
+      `On a three-question quiz the class average is $15$ points. Student $P$ earned $14$ points and student $Q$ earned $16$ points. Student $R$'s score is greater than $12$ points.`,
       `A rectangular lawn $10$ m by $14$ m is surrounded by a uniform $2$ m gravel path. The path alone covers $115$ m$^{2}$.`,
       `A city marathon pays exactly three cash prizes that use the full fund of $192$ EUR and leave nothing unallocated. The winner receives amount $W$ EUR. The runner-up receives $\\frac{4}{5}$ of $W$, and third place receives $\\frac{4}{5}$ of the runner-up amount. Before any prize is handed over, $\\frac{3}{20}$ of that person's gross prize is withheld as tax. After tax, the runner-up receives greater than $48$ EUR net.`,
     ],
@@ -1698,37 +2206,57 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$3n+6=69$$
 
+Collect like terms and isolate the variable:
+
 $$n=21$$, largest $25$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{5}C=27\\cdot25$$
 
+Collect like terms and isolate the variable:
+
 $$C=19$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $15$ km/h, upstream $6$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{15+6}{2}=10.5$ km/h.
+Mean condition $\\frac{a+b+c}{3}=15$:
 
-The value recovered from the model satisfies the inequality in the claim.
+Translate the story into one equation in the unknown:
+
+$$c=3\\cdot15-14-16$$
+
+Collect like terms and isolate the variable:
+
+$$c=15$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -1741,7 +2269,7 @@ Outer minus inner:
 
 $$(14)(18)-140=112$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -1752,15 +2280,21 @@ Set up the model and solve:
 
 Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
+Runner-up gross $=63$ EUR; net after $\\frac{3}{20}$ tax $=54$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$W+\\frac{4}{5}W+\\frac{16}{25}W=192$$
+
+Collect like terms and isolate the variable:
 
 $$\\frac{61}{25}W=192$$
 
+Read off the numerical value and compare with the claim:
+
 $$W=79$$
 
-Runner-up gross $=63$ EUR; net after $\\frac{3}{20}$ tax $=54$ EUR.
-
-The value recovered from the model satisfies the inequality in the claim.
+Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1776,7 +2310,7 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `On a four-question quiz the class average is $15$ points. Student $P$ earned $10$ points, student $R$ earned $15$ points, and student $S$ scored exactly one point above the class average. Student $Q$'s score was $22$ points.`,
-      `Three test scores average $80$. Two of them are $78$ and $81$. The third score is greater than $75$.`,
+      `On a three-question quiz the class average is $13$ points. Student $P$ earned $13$ points and student $Q$ earned $14$ points. Student $R$'s score is greater than $10$ points.`,
       `A pump delivers $27$ L/min into an empty tank. After $35$ minutes the tank is $\\frac{3}{5}$ full; its capacity is $29$ litres.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $16$ coins totalling $53$ EUR. Exactly greater than $5$ of them are $5$ EUR coins.`,
       `A mother is $36$ years older than her daughter. In $9$ years the mother will be twice as old as the daughter will be then. The daughter is now $29$ years old.`,
@@ -1791,65 +2325,95 @@ Set up the model and solve:
 
 With $P=10$, $R=15$, $S=16$:
 
+Translate the story into one equation in the unknown:
+
 $$\\frac{P+Q+R+S}{4}=15$$
+
+Collect like terms and isolate the variable:
 
 $$Q=4\\cdot15-10-15-16=19$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{a+b+c}{3}=80$$
+Mean condition $\\frac{a+b+c}{3}=13$:
 
-$$c=81$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$c=3\\cdot13-13-14$$
+
+Collect like terms and isolate the variable:
+
+$$c=12$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{5}C=27\\cdot35$$
 
+Collect like terms and isolate the variable:
+
 $$C=26$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=16$$, $$5x+2y=53$$
 
+Collect like terms and isolate the variable:
+
 $$3x=21$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=7$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+36+9=2(d+9)$$
 
+Collect like terms and isolate the variable:
+
 $$d=27$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1882,7 +2446,7 @@ Counting back from $3$ pm gives $13:45$ pm.
 
 $$t=\\frac{80}{64}=1.25$$ h $=75$ min.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -1895,24 +2459,30 @@ Outer minus inner:
 
 $$(13)(18)-126=108$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+2)=63$:
 
+Longer side: $9$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+2s-63=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-7)(s+9)=0$$
 
-$$s=7$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $9$ cm.
+$$s=7$$
 
 The longer side is $9$ cm, not $11$ cm.
 
@@ -1927,7 +2497,7 @@ Original $86$, reversed $68$.
 
 $$(68)-(86)=-18$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -1938,15 +2508,21 @@ Set up the model and solve:
 
 Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
+Runner-up gross $=78$ EUR; net after $\\frac{3}{20}$ tax $=66$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$W+\\frac{4}{5}W+\\frac{16}{25}W=240$$
+
+Collect like terms and isolate the variable:
 
 $$\\frac{61}{25}W=240$$
 
+Read off the numerical value and compare with the claim:
+
 $$W=98$$
 
-Runner-up gross $=78$ EUR; net after $\\frac{3}{20}$ tax $=66$ EUR.
-
-The value recovered from the model satisfies the inequality in the claim.
+Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1963,7 +2539,7 @@ Matching the solved value to the claim, the statement is True.`,
     statements: [
       `Four-sevenths of a number exceed two-sevenths of the same number by $16$. The number is $39$.`,
       `Three consecutive odd integers add up to $81$. The largest is $32$.`,
-      `An electronics shop lists a headset at $84$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays greater than $62$ EUR in total.`,
+      `An electronics shop lists a headset at $72$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays greater than $53$ EUR in total.`,
       `Inlet $A$ fills a pool in $6$ h while outlet $B$ empties it in $10$ h. With both open and an empty pool, the pool fills in greater than $13.5$ h.`,
       `A plan charges $15$ EUR per month plus $0.1$ EUR per minute. With $210$ minutes used, the bill is $38$ EUR.`,
     ],
@@ -1973,28 +2549,42 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{7}x-\\frac{2}{7}x=16$$
 
+Collect like terms and isolate the variable:
+
 $$\\frac{2}{7}x=16$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=35$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$3n+6=81$$
 
+Collect like terms and isolate the variable:
+
 $$n=25$$, largest $29$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -2003,37 +2593,45 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-After $\\frac{1}{4}$ off: $63$ EUR.
+After $\\frac{1}{4}$ off: $54$ EUR.
 
-$$57\\times1.2=68$$ EUR with VAT.
+After further $\\frac{1}{10}$ off: $49$ EUR.
 
-After further $\\frac{1}{10}$ off: $57$ EUR.
+$$49+\\frac{1}{5}\\cdot49=59$$ EUR with VAT.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{1}{6}-\\frac{1}{10}=\\frac{1}{t}$$
 
+Collect like terms and isolate the variable:
+
 $$t=15$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$15+0.1\\cdot210=36$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2066,46 +2664,62 @@ Counting back from $3$ pm gives $13:45$ pm.
 
 $$t=\\frac{90}{72}=1.25$$ h $=75$ min.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{5}C=30\\cdot25$$
 
+Collect like terms and isolate the variable:
+
 $$C=21$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{36}{21}+\\frac{36}{12}=4.714285714285714$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{7}x-\\frac{2}{7}x=16$$
 
+Collect like terms and isolate the variable:
+
 $$\\frac{2}{7}x=16$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=45$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -2116,11 +2730,11 @@ Set up the model and solve:
 
 Head start distance $40$ km.
 
+Relative speed closes the gap at $30$ km/h:
+
 $$t=\\frac{40}{30}\\text{ h}=80\\text{ min}$$
 
 Relative speed closes the gap at $30$ km/h:
-
-The value recovered from the model satisfies the inequality in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2136,7 +2750,7 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A plan charges $30$ EUR per month plus $0.12$ EUR per minute. With $120$ minutes used, the bill is $47.4$ EUR.`,
-      `A boat covers $42$ km downstream in $2$ h and the same distance upstream in $4$ h. Its speed in still water is greater than $14.3$ km/h.`,
+      `A rower travels $24$ km downstream in $2$ h and returns the same $24$ km upstream in $4$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is greater than $8$ km/h.`,
       `A kitchen manual lists $450$ g of sugar for $10$ servings. Baking $16$ servings requires greater than $714$ g of sugar.`,
       `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $128$ km. Then it started traveling at $14:20$ pm.`,
       `Towns $P$ and $Q$ lie $108$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}30$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the second car has been driving for $14$ minutes since its $12{:}30$ pm departure.`,
@@ -2147,33 +2761,41 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$30+0.12\\cdot120=44.4$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $21$ km/h, upstream $10.5$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{21+10.5}{2}=15.75$ km/h.
+Downstream speed $12$ km/h, upstream speed $6$ km/h.
 
-The value recovered from the model satisfies the inequality in the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{12+6}{2}=9$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$450\\cdot\\frac{16}{10}=720$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -2186,7 +2808,7 @@ Counting back from $3$ pm gives $13:00$ pm.
 
 $$t=\\frac{128}{64}=2$$ h $=120$ min.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -2197,11 +2819,11 @@ Set up the model and solve:
 
 In $\\frac{1}{2}$ h the first car covers $24$ km, leaving $84$ km between the cars.
 
+Meeting is $42$ min after noon, so the second car drove $12$ min.
+
 $$\\frac{84}{48+72}=\\frac{84}{120}$$ hours until meeting
 
 Meeting is $42$ min after noon, so the second car drove $12$ min.
-
-The value recovered from the model contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2216,8 +2838,8 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three test scores average $79$. Two of them are $84$ and $85$. The third score is greater than $62$.`,
-      `Mixing $3$ L of $14\\%$ saline with $3$ L of $4\\%$ saline yields a solution of $$11$\\%$ concentration.`,
+      `A car travels at an average speed of $80$ km/h. At $3$ pm, it has traveled a total distance of $100$ km. Then it started traveling at $13:45$ pm.`,
+      `A chemist pours $2$ L of $8\\%$ saline into a flask, then adds $3$ L of $3\\%$ saline. The two volumes combine with no loss. The resulting concentration by volume is $9$\\%.`,
       `Car $A$ leaves at $2$ pm at $54$ km/h. Car $B$ pursues from the same place at $2{:}20$ pm at $84$ km/h. $B$ catches $A$ after greater than $30$ minutes of chasing.`,
       `A mother is $28$ years older than her daughter. In $11$ years the mother will be twice as old as the daughter will be then. The daughter is now greater than $15$ years old.`,
       `Three consecutive odd integers add up to $75$. The largest is $29$.`,
@@ -2228,24 +2850,32 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{a+b+c}{3}=79$$
+Counting back from $3$ pm gives $13:45$ pm.
 
-$$c=68$$
+$$t=\\frac{100}{80}=1.25$$ h $=75$ min.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\frac{14\\cdot3+4\\cdot3}{6}=9$$
+Total salt amount divided by total volume $5$ L:
 
-The value recovered from the model contradicts the claim.
+Translate the story into one equation in the unknown:
+
+$$\\frac{8\\cdot2+3\\cdot3}{5}=\\frac{25}{5}$$
+
+Collect like terms and isolate the variable:
+
+$$\\approx 5\\%$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -2258,33 +2888,45 @@ Head start $18$ km. Relative speed $30$ km/h.
 
 $$t=\\frac{18}{30}\\text{ h}=36\\text{ min}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+28+11=2(d+11)$$
 
+Collect like terms and isolate the variable:
+
 $$d=17$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$3n+6=75$$
 
+Collect like terms and isolate the variable:
+
 $$n=23$$, largest $27$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2317,24 +2959,30 @@ Outer minus inner:
 
 $$(15)(19)-165=120$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+4)=60$:
 
+Longer side: $10$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+4s-60=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-6)(s+10)=0$$
 
-$$s=6$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $10$ cm.
+$$s=6$$
 
 The longer side is $10$ cm.
 
@@ -2349,7 +2997,7 @@ Original $48$, reversed $84$.
 
 $$(84)-(48)=36$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -2360,28 +3008,40 @@ Set up the model and solve:
 
 Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
+Runner-up gross $=47$ EUR; net after $\\frac{3}{20}$ tax $=40$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$W+\\frac{4}{5}W+\\frac{16}{25}W=144$$
+
+Collect like terms and isolate the variable:
 
 $$\\frac{61}{25}W=144$$
 
+Read off the numerical value and compare with the claim:
+
 $$W=59$$
 
-Runner-up gross $=47$ EUR; net after $\\frac{3}{20}$ tax $=40$ EUR.
-
-The value recovered from the model contradicts the claim.
+Let $W$ be the winner's gross prize. Then runner-up gross is $\\frac{4}{5}W$ and third gross is $\\frac{16}{25}W$.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{2}{5}C=30\\cdot20$$
 
+Collect like terms and isolate the variable:
+
 $$C=25$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2396,10 +3056,10 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A boat covers $36$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is greater than $11.6$ km/h.`,
+      `A rower travels $24$ km downstream in $2$ h and returns the same $24$ km upstream in $5$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is greater than $7.4$ km/h.`,
       `A car travels at an average speed of $64$ km/h. At $3$ pm, it has traveled a total distance of $112$ km. Then it started traveling at $13:15$ pm.`,
       `Inlet $A$ alone fills an empty pool in $4$ hours. Drain $B$ alone empties a full pool in $6$ hours. Both run together from an empty pool. The pool is full for the first time after greater than $10$ hours.`,
-      `An electronics shop lists a headset at $84$ EUR. The shop first reduces the price by $\\frac{1}{4}$, then takes an additional $\\frac{1}{10}$ off the reduced tag. Value-added tax at $\\frac{1}{5}$ of the discounted price is added at the till. The customer pays $71$ EUR in total.`,
+      `A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. The son is now $24$ years old.`,
       `A car travels at an average speed of $96$ km/h. At $3$ pm, it has traveled a total distance of $120$ km. Then it started traveling at $14:05$ pm.`,
     ],
     answer_key: [true, true, true, false, false],
@@ -2408,11 +3068,15 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $18$ km/h, upstream $7.2$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{18+7.2}{2}=12.6$ km/h.
+Downstream speed $12$ km/h, upstream speed $4.8$ km/h.
 
-The value recovered from the model satisfies the inequality in the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{12+4.8}{2}=8.4$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -2423,11 +3087,11 @@ Set up the model and solve:
 
 Elapsed time since departure:
 
-$$t=\\frac{112}{64}=\\frac{7}{4}$$ h $=1$ h $45$ min.
-
 Counting back from $3$ pm gives $13:15$ pm.
 
-The value recovered from the model satisfies the inequality in the claim.
+$$t=\\frac{112}{64}=\\frac{7}{4}$$ h $=1$ h $45$ min.
+
+Elapsed time since departure:
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -2438,11 +3102,15 @@ Set up the model and solve:
 
 Net fill rate per hour:
 
+Express the balance of rates as an equation in one variable:
+
 $$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
+
+Clear denominators and solve:
 
 $$t=12$$ h.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -2451,13 +3119,21 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-After $\\frac{1}{4}$ off: $63$ EUR.
+Let son's present age be $s$ years.
 
-$$57\\times1.2=68$$ EUR with VAT.
+Translate the story into one equation in the unknown:
 
-After further $\\frac{1}{10}$ off: $57$ EUR.
+$$s+28+8=2(s+8)$$
 
-The value recovered from the model contradicts the claim.
+Collect like terms and isolate the variable:
+
+$$s+36=2s+16$$
+
+Read off the numerical value and compare with the claim:
+
+$$s=20$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -2470,7 +3146,7 @@ Counting back from $3$ pm gives $13:45$ pm.
 
 $$t=\\frac{120}{96}=1.25$$ h $=75$ min.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2485,11 +3161,11 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Towns $P$ and $Q$ are $162$ km apart. At noon a car leaves $P$ at $66$ km/h; $40$ minutes later another leaves $Q$ at $66$ km/h toward $P$. They meet $56$ minutes after noon.`,
+      `Towns $P$ and $Q$ lie $96$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}40$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is $35$ minutes.`,
       `If one side of a rectangle is by $3$ cm longer than the other one and the rectangle's area is $40$ cm$^{2}$, then the length of the longer side is $11$ cm.`,
       `A courier rides $30$ km to a village at $15$ km/h and returns along the same road at $10$ km/h. A clerk claims the round trip lasts as long as riding $60$ km at the average $\\frac{15+10}{2}$ km/h, i.e. $7.8$ hours in total.`,
       `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with greater than $-0.4$ litres of water to get the right concentration.`,
-      `If one side of a rectangle is by $6$ cm longer than the other and the perimeter is $44$ cm, then the longer side is greater than $12$ cm.`,
+      `A rectangular plot is fenced on all four sides using exactly $44$ m of wire. One side of the plot is $6$ m longer than the adjacent side. The longer side measures greater than $12$ m.`,
     ],
     answer_key: [false, false, false, true, true],
     tactical_explanations: [
@@ -2499,11 +3175,17 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Head start: $44$ km. Gap left: $118$ km.
+In $\\frac{40}{60}$ h the first car covers $32$ km, leaving $64$ km between the cars.
 
-$$t=\\frac{118}{132}\\text{ h}=54\\text{ min after noon}$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model contradicts the claim.
+$$\\frac{64}{48+72}=\\frac{64}{120}$$ hours until meeting
+
+Collect like terms and isolate the variable:
+
+$$\\frac{64}{120}\\times 60=32$$ minutes after noon
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -2514,15 +3196,21 @@ Set up the model and solve:
 
 Let the shorter side be $x$ cm. Then the longer side is $x+3$ cm.
 
+Longer side $=8$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$x(x+3)=40$$
+
+Factor or simplify the quadratic:
 
 $$x^2+3x-40=0$$
 
+Take the admissible root and evaluate the quantity named in the claim:
+
 $$x=5$$
 
-Longer side $=8$ cm.
-
-The value recovered from the model contradicts the claim.
+Let the shorter side be $x$ cm. Then the longer side is $x+3$ cm.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -2533,11 +3221,11 @@ Set up the model and solve:
 
 Actual time out plus back:
 
-$$\\frac{30}{15}+\\frac{30}{10}=2+3=5$$ h.
-
 Mean-speed shortcut gives $\\frac{60}{12.5}=4.8$ h.
 
-The value recovered from the model contradicts the claim.
+$$\\frac{30}{15}+\\frac{30}{10}=2+3=5$$ h.
+
+Actual time out plus back:
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -2548,11 +3236,15 @@ Set up the model and solve:
 
 Pure vinegar in $1$ L of $8\\%$ stock: $0.08$ L.
 
+Translate the story into one equation in the unknown:
+
 $$\\frac{0.08}{1+w}=\\frac{5}{100}$$
+
+Collect like terms and isolate the variable:
 
 $$w=\\frac{3}{5}$$ L water.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -2561,13 +3253,23 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $14$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+6)=44$:
+
+Longer side $s+6=14$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+6)=44$$
 
+Collect like terms and isolate the variable:
+
+$$4s+12=44$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Longer side $s+6=14$ m.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2583,7 +3285,7 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle's area is $54$ cm$^{2}$; one side exceeds the other by $3$ cm. The longer side measures greater than $7$ cm.`,
-      `Towns $P$ and $Q$ are $144$ km apart. At noon a car leaves $P$ at $60$ km/h; $35$ minutes later another leaves $Q$ at $72$ km/h toward $P$. They meet $54$ minutes after noon.`,
+      `Towns $P$ and $Q$ lie $108$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}35$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the elapsed time since noon is $44$ minutes.`,
       `A rectangular sports field measures $9$ m by $15$ m. A uniform $\\frac{3}{2}$ m maintenance strip is paved around the entire outer edge; the inner field itself stays unpaved. The paved strip alone covers $55$ m$^{2}$.`,
       `Towns $P$ and $Q$ lie $132$ km apart on a straight highway. At noon a car leaves $P$ towards $Q$ at $48$ km/h and keeps constant speed. At $12{:}30$ pm a second car leaves $Q$ towards $P$ at $72$ km/h, also without stopping. When the two cars meet, the second car has been driving for $26$ minutes since its $12{:}30$ pm departure.`,
       `A till contains only $2$ EUR and $5$ EUR coins: $18$ coins totalling $60$ EUR. Exactly greater than $6$ of them are $5$ EUR coins.`,
@@ -2592,19 +3294,25 @@ Matching the solved value to the claim, the statement is True.`,
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
 Let the shorter side be $s$ cm. Then $s(s+3)=54$:
 
+Longer side: $9$ cm.
+
+Write the quadratic model from the geometry or number condition:
+
 $$s^2+3s-54=0$$
+
+Factor or simplify the quadratic:
 
 $$(s-6)(s+9)=0$$
 
-$$s=6$$
+Take the admissible root and evaluate the quantity named in the claim:
 
-Longer side: $9$ cm.
+$$s=6$$
 
 The longer side is $9$ cm.
 
@@ -2615,11 +3323,17 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Head start: $35$ km. Gap left: $109$ km.
+In $\\frac{35}{60}$ h the first car covers $28$ km, leaving $80$ km between the cars.
 
-$$t=\\frac{109}{132}\\text{ h}=50\\text{ min after noon}$$
+Translate the story into one equation in the unknown:
 
-The value recovered from the model contradicts the claim.
+$$\\frac{80}{48+72}=\\frac{80}{120}$$ hours until meeting
+
+Collect like terms and isolate the variable:
+
+$$\\frac{80}{120}\\times 60=40$$ minutes after noon
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -2632,7 +3346,7 @@ Outer rectangle $(9+3)$ m by $(9+9)$ m minus inner $135$ m$^{2}$:
 
 $$(9+3)(9+9)-135=52$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -2643,26 +3357,34 @@ Set up the model and solve:
 
 In $\\frac{1}{2}$ h the first car covers $24$ km, leaving $108$ km between the cars.
 
+Meeting is $54$ min after noon, so the second car drove $24$ min.
+
 $$\\frac{108}{48+72}=\\frac{108}{120}$$ hours until meeting
 
 Meeting is $54$ min after noon, so the second car drove $24$ min.
-
-The value recovered from the model contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=18$$, $$5x+2y=60$$
 
+Collect like terms and isolate the variable:
+
 $$3x=24$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2693,26 +3415,38 @@ Set up the model and solve:
 
 With $P=10$, $R=14$, $S=13$:
 
+Translate the story into one equation in the unknown:
+
 $$\\frac{P+Q+R+S}{4}=12$$
+
+Collect like terms and isolate the variable:
 
 $$Q=4\\cdot12-10-14-13=11$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+y=17$$, $$5x+2y=55$$
 
+Collect like terms and isolate the variable:
+
 $$3x=21$$
+
+Read off the numerical value and compare with the claim:
 
 $$x=7$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -2723,15 +3457,21 @@ Set up the model and solve:
 
 Let first prize be $a$ EUR.
 
+Second place $=\\frac{4}{5}a=158$ EUR.
+
+Translate the story into one equation in the unknown:
+
 $$a+\\frac{4}{5}a+\\frac{16}{25}a=480$$
 
+Collect like terms and isolate the variable:
+
 $$\\frac{61}{25}a=480$$
+
+Read off the numerical value and compare with the claim:
 
 $$a=197$$
 
 Second place $=\\frac{4}{5}a=158$ EUR.
-
-The value recovered from the model satisfies the inequality in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -2744,7 +3484,7 @@ Outer rectangle $(8+3)$ m by $(8+9)$ m minus inner $112$ m$^{2}$:
 
 $$(8+3)(8+9)-112=48$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -2755,11 +3495,11 @@ Set up the model and solve:
 
 In $\\frac{1}{2}$ h the first car covers $24$ km, leaving $60$ km between the cars.
 
+Meeting is $30$ min after noon, so the second car drove $0$ min.
+
 $$\\frac{60}{48+72}=\\frac{60}{120}$$ hours until meeting
 
 Meeting is $30$ min after noon, so the second car drove $0$ min.
-
-The value recovered from the model contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2774,7 +3514,7 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A car travels at an average speed of $80$ km/h. At $3$ pm, it has traveled a total distance of $100$ km. Then it started traveling at $13:45$ pm.`,
+      `A rectangular sports field measures $9$ m by $15$ m. A uniform $\\frac{3}{2}$ m maintenance strip is paved around the entire outer edge; the inner field itself stays unpaved. The paved strip alone covers greater than $46$ m$^{2}$.`,
       `A mother is $32$ years older than her daughter. In $9$ years the mother will be twice as old as the daughter will be then. The daughter is now greater than $21$ years old.`,
       `A recipe calls for $5\\%$ vinegar. If the cook only has $1$ litre of $8\\%$ vinegar, he needs to mix it with $3.6$ litres of water to get the right concentration.`,
       `A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. The son is now greater than $16$ years old.`,
@@ -2784,28 +3524,34 @@ Matching the solved value to the claim, the statement is False.`,
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Counting back from $3$ pm gives $13:45$ pm.
+Outer rectangle $(9+3)$ m by $(9+9)$ m minus inner $135$ m$^{2}$:
 
-$$t=\\frac{100}{80}=1.25$$ h $=75$ min.
+$$(9+3)(9+9)-135=52$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+32+9=2(d+9)$$
 
+Collect like terms and isolate the variable:
+
 $$d=23$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -2816,11 +3562,15 @@ Set up the model and solve:
 
 Pure vinegar in $1$ L of $8\\%$ stock: $0.08$ L.
 
+Translate the story into one equation in the unknown:
+
 $$\\frac{0.08}{1+w}=\\frac{5}{100}$$
+
+Collect like terms and isolate the variable:
 
 $$w=\\frac{3}{5}$$ L water.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -2831,13 +3581,19 @@ Set up the model and solve:
 
 Let son's present age be $s$ years.
 
+Translate the story into one equation in the unknown:
+
 $$s+28+8=2(s+8)$$
+
+Collect like terms and isolate the variable:
 
 $$s+36=2s+16$$
 
+Read off the numerical value and compare with the claim:
+
 $$s=20$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -2848,11 +3604,11 @@ Set up the model and solve:
 
 Head start distance $20$ km.
 
+Relative speed closes the gap at $30$ km/h:
+
 $$t=\\frac{20}{30}\\text{ h}=40\\text{ min}$$
 
 Relative speed closes the gap at $30$ km/h:
-
-The value recovered from the model contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2867,8 +3623,8 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.1`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle is by $6$ cm longer than the other and the perimeter is $40$ cm, then the longer side is $16$ cm.`,
-      `A boat covers $24$ km downstream in $2$ h and the same distance upstream in $5$ h. Its speed in still water is $11.4$ km/h.`,
+      `A rectangular plot is fenced on all four sides using exactly $40$ m of wire. One side of the plot is $6$ m longer than the adjacent side. The longer side measures $16$ m.`,
+      `A rower travels $24$ km downstream in $2$ h and returns the same $24$ km upstream in $5$ h, always at full stroke rate relative to the water. Assuming the river current is constant, the rower's speed in still water is $11.4$ km/h.`,
       `A mother is $30$ years older than her daughter. In $10$ years the mother will be twice as old as the daughter will be then. The daughter is now greater than $18$ years old.`,
       `Inlet $A$ alone fills an empty pool in $4$ hours. Drain $B$ alone empties a full pool in $6$ hours. Both run together from an empty pool. The pool is full for the first time after $14$ hours.`,
       `A pump delivers $21$ L/min into an empty tank. After $20$ minutes the tank is $\\frac{2}{5}$ full; its capacity is greater than $15$ litres.`,
@@ -2881,37 +3637,57 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer side $13$ cm.
+Let the shorter side be $s$ m. Perimeter $2s+2(s+6)=40$:
+
+Longer side $s+6=13$ m.
+
+Translate the story into one equation in the unknown:
 
 $$2(2s+6)=40$$
 
+Collect like terms and isolate the variable:
+
+$$4s+12=40$$
+
+Read off the numerical value and compare with the claim:
+
 $$s=7$$
 
-The value recovered from the model contradicts the claim.
+Longer side $s+6=13$ m.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Downstream $12$ km/h, upstream $4.8$ km/h.
+Set up the model and solve:
 
-Still water: $\\frac{12+4.8}{2}=8.4$ km/h.
+Downstream speed $12$ km/h, upstream speed $4.8$ km/h.
 
-The value recovered from the model contradicts the claim.
+Still-water speed is the average of downstream and upstream speeds:
+
+$$\\frac{12+4.8}{2}=8.4$$ km/h
+
+Still-water speed is the average of downstream and upstream speeds:
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$d+30+10=2(d+10)$$
 
+Collect like terms and isolate the variable:
+
 $$d=20$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -2922,24 +3698,34 @@ Set up the model and solve:
 
 Net fill rate per hour:
 
+Express the balance of rates as an equation in one variable:
+
 $$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
+
+Clear denominators and solve:
 
 $$t=12$$ h.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{2}{5}C=21\\cdot20$$
 
+Collect like terms and isolate the variable:
+
 $$C=18$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2954,40 +3740,50 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The product of two consecutive integers is $132$. The larger integer is greater than $10$.`,
-      `A positive number plus its reciprocal equals $\\frac{37}{6}$. The numerator of that reduced sum is $40$.`,
-      `Two positive numbers have product $54$ and sum greater than $12$. The larger of the two is greater than $7$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $130$ cm$^{2}$, the longer side is $16$ cm.`,
-      `A $52$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is $146$ m$^{2}$.`,
+      `Three consecutive integers add to $33$. The middle integer is greater than $9$.`,
+      `A farmer has exactly $56$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $4$ m and the depth into the field is $26$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{26}{5}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $21$.`,
+      `A $1$ m path runs around a $11$ m $\\times$ $17$ m field. The path area alone is $64$ m$^{2}$.`,
+      `Two positive numbers have product $84$ and sum $22$. The larger of the two is $14$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $12$.
+Middle $=11$.
 
-$$n(n+1)=132$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=11$$
+$$3n+3=33$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$n=10$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{37}{6}$$
+Three-sided fence: $2\\ell+4=56$ where $\\ell$ is depth into the field.
 
-$$x=6$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$2\\ell=52$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=24$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -2996,13 +3792,23 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=15$; larger root $=9$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-15t+54=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-6)(t-9)=0$$
+$$x+\\frac{1}{x}=\\frac{26}{5}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{26}{5}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{26}{5}x+1=0$$
+
+$$x=5$$ gives numerator $26$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -3011,28 +3817,30 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer: $13$ cm.
+Work from the wording to an equation, then solve step by step:
 
-$$x(x+3)=130$$
+$$(13)(19)-187=60$$
 
-$$(x-10)(x+13)=0$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Sum $=19$; larger root $=12$.
 
-$$\\ell=18$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=144$$
+$$t^2-19t+84=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-7)(t-12)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -3047,42 +3855,56 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $54$ cm$^{2}$, the longer side is $11$ cm.`,
-      `A $52$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is greater than $138$ m$^{2}$.`,
-      `The product of two consecutive integers is $56$. The larger integer is $11$.`,
-      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is greater than $76$.`,
-      `Two positive numbers have product $60$ and sum greater than $13$. The larger of the two is greater than $8$.`,
+      `Two consecutive positive integers have product $156$. The larger of the two integers is $16$.`,
+      `Two positive numbers have product $84$ and sum greater than $16$. The larger of the two is greater than $10$.`,
+      `A rectangle has perimeter $48$ cm; one side is $4$ cm longer than the other. The longer side is $17$ cm.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{362}{19}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $356$.`,
+      `A $1$ m path runs around a $10$ m $\\times$ $16$ m field. The path area alone is greater than $50$ m$^{2}$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $9$ cm.
+Let the smaller integer be $n$. Then $n(n+1)=156$:
 
-$$x(x+3)=54$$
+Larger integer: $13$.
 
-$$(x-6)(x+9)=0$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$n^2+n-156=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-12)(n+13)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=12$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Sum $=19$; larger root $=12$.
 
-$$\\ell=18$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=144$$
+$$t^2-19t+84=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-7)(t-12)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -3091,41 +3913,55 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Larger: $8$.
+Longer $14$ cm.
 
-$$n(n+1)=56$$
+Translate the story into one equation in the unknown:
 
-$$n=7$$
+$$2(2s+4)=48$$
 
-The value recovered from the model contradicts the claim.
+Collect like terms and isolate the variable:
+
+$$s=10$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
-
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
-
-Work from the story to a single equation, then solve:
-
-$$x+\\frac{1}{x}=\\frac{82}{9}$$
-
-$$x=9$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → True
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Sum $=16$; larger root $=10$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-16t+60=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-6)(t-10)=0$$
+$$x+\\frac{1}{x}=\\frac{362}{19}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{362}{19}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{362}{19}x+1=0$$
+
+$$x=19$$ gives numerator $362$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
+
+Matching the solved value to the claim, the statement is True.`,
+      `**E.** → True
+
+Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+$$(12)(18)-160=56$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -3140,25 +3976,37 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A positive number plus its reciprocal equals $\\frac{26}{5}$. The numerator of that reduced sum is greater than $21$.`,
-      `Two positive numbers have product $60$ and sum $19$. The larger of the two is $14$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $108$ cm$^{2}$, the longer side is $14$ cm.`,
-      `A $52$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is greater than $147$ m$^{2}$.`,
-      `The product of two consecutive integers is $110$. The larger integer is $14$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{37}{6}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $31$.`,
+      `Two consecutive positive integers have product $90$. The larger of the two integers is $14$.`,
+      `Three consecutive integers add to $39$. The middle integer is $16$.`,
+      `A farmer has exactly $40$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $9$ m and the depth into the field is greater than $9$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{170}{13}$. When the sum is written as a single fraction in lowest terms, the numerator is $174$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{26}{5}$$
+Multiply by $x$ to obtain a quadratic:
 
-$$x=5$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$x+\\frac{1}{x}=\\frac{37}{6}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{37}{6}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{37}{6}x+1=0$$
+
+$$x=6$$ gives numerator $37$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -3167,58 +4015,86 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=16$; larger root $=10$.
+Let the smaller integer be $n$. Then $n(n+1)=90$:
 
-$$t^2-16t+60=0$$
+Larger integer: $10$.
 
-$$(t-6)(t-10)=0$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$n^2+n-90=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-9)(n+10)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=9$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Middle $=13$.
 
-$$x(x+3)=108$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-9)(x+12)=0$$
+$$3n+3=39$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$n=12$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Three-sided fence: $2\\ell+9=40$ where $\\ell$ is depth into the field.
 
-$$\\ell=17$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=153$$
+$$2\\ell=31$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=11$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $11$.
+Multiply by $x$ to obtain a quadratic:
 
-$$n(n+1)=110$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=10$$
+$$x+\\frac{1}{x}=\\frac{170}{13}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{170}{13}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{170}{13}x+1=0$$
+
+$$x=13$$ gives numerator $170$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -3233,55 +4109,69 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $52$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $155$ m$^{2}$.`,
-      `The product of two consecutive integers is $56$. The larger integer is greater than $6$.`,
-      `A positive number plus its reciprocal equals $\\frac{65}{8}$. The numerator of that reduced sum is greater than $59$.`,
+      `A farmer has exactly $72$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $11$ m and the depth into the field is $29$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{290}{17}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $284$.`,
+      `A $1$ m path runs around a $11$ m $\\times$ $17$ m field. The path area alone is greater than $54$ m$^{2}$.`,
       `Two positive numbers have product $66$ and sum $20$. The larger of the two is $14$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $54$ cm$^{2}$, the longer side is greater than $7$ cm.`,
+      `A rectangle has perimeter $48$ cm; one side is $3$ cm longer than the other. The longer side is greater than $12$ cm.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Three-sided fence: $2\\ell+11=72$ where $\\ell$ is depth into the field.
 
-$$\\ell=17$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=153$$
+$$2\\ell=61$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=25$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $8$.
+Multiply by $x$ to obtain a quadratic:
 
-$$n(n+1)=56$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=7$$
+$$x+\\frac{1}{x}=\\frac{290}{17}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{290}{17}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{290}{17}x+1=0$$
+
+$$x=17$$ gives numerator $290$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{65}{8}$$
+Work from the wording to an equation, then solve step by step:
 
-$$x=8$$
+$$(13)(19)-187=60$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -3292,11 +4182,15 @@ Set up the model and solve:
 
 Sum $=17$; larger root $=11$.
 
+Write the quadratic model from the geometry or number condition:
+
 $$t^2-17t+66=0$$
+
+Factor or simplify the quadratic:
 
 $$(t-6)(t-11)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -3305,13 +4199,17 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer: $9$ cm.
+Longer $13.5$ cm.
 
-$$x(x+3)=54$$
+Translate the story into one equation in the unknown:
 
-$$(x-6)(x+9)=0$$
+$$2(2s+3)=48$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Collect like terms and isolate the variable:
+
+$$s=10.5$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -3327,10 +4225,10 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Two positive numbers have product $66$ and sum greater than $14$. The larger of the two is greater than $9$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $88$ cm$^{2}$, the longer side is greater than $9$ cm.`,
-      `A $52$ m fence forms a rectangle of width $6$ m using all the fence. The enclosed area is $124$ m$^{2}$.`,
-      `The product of two consecutive integers is $72$. The larger integer is $11$.`,
-      `A positive number plus its reciprocal equals $\\frac{26}{5}$. The numerator of that reduced sum is $29$.`,
+      `A rectangle has perimeter $48$ cm; one side is $2$ cm longer than the other. The longer side is greater than $11$ cm.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{37}{6}$. When the sum is written as a single fraction in lowest terms, the numerator is $40$.`,
+      `Two consecutive positive integers have product $30$. The larger of the two integers is $8$.`,
+      `Three consecutive integers add to $27$. The middle integer is $11$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -3342,11 +4240,15 @@ Set up the model and solve:
 
 Sum $=17$; larger root $=11$.
 
+Write the quadratic model from the geometry or number condition:
+
 $$t^2-17t+66=0$$
+
+Factor or simplify the quadratic:
 
 $$(t-6)(t-11)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -3355,56 +4257,86 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer: $11$ cm.
+Longer $13$ cm.
 
-$$x(x+3)=88$$
+Translate the story into one equation in the unknown:
 
-$$(x-8)(x+11)=0$$
+$$2(2s+2)=48$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Collect like terms and isolate the variable:
+
+$$s=11$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Multiply by $x$ to obtain a quadratic:
 
-$$\\ell=20$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=120$$
+$$x+\\frac{1}{x}=\\frac{37}{6}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{37}{6}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{37}{6}x+1=0$$
+
+$$x=6$$ gives numerator $37$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $9$.
+Let the smaller integer be $n$. Then $n(n+1)=30$:
 
-$$n(n+1)=72$$
+Larger integer: $6$.
 
-$$n=8$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$n^2+n-30=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-5)(n+6)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=5$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{26}{5}$$
+Middle $=9$.
 
-$$x=5$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$3n+3=27$$
+
+Factor or simplify the quadratic:
+
+$$n=8$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -3419,40 +4351,56 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The product of two consecutive integers is $156$. The larger integer is $16$.`,
-      `A positive number plus its reciprocal equals $\\frac{50}{7}$. The numerator of that reduced sum is $54$.`,
-      `Two positive numbers have product $72$ and sum greater than $15$. The larger of the two is greater than $10$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $40$ cm$^{2}$, the longer side is greater than $6$ cm.`,
-      `A $52$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is greater than $127$ m$^{2}$.`,
+      `Two consecutive positive integers have product $182$. The larger of the two integers is $17$.`,
+      `Three consecutive integers add to $33$. The middle integer is $14$.`,
+      `A farmer has exactly $56$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $7$ m and the depth into the field is greater than $17$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{257}{16}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $251$.`,
+      `A $1$ m path runs around a $13$ m $\\times$ $19$ m field. The path area alone is greater than $62$ m$^{2}$.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $13$.
+Let the smaller integer be $n$. Then $n(n+1)=182$:
 
-$$n(n+1)=156$$
+Larger integer: $14$.
 
-$$n=12$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$n^2+n-182=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-13)(n+14)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=13$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{50}{7}$$
+Middle $=11$.
 
-$$x=7$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$3n+3=33$$
+
+Factor or simplify the quadratic:
+
+$$n=10$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -3461,43 +4409,55 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=18$; larger root $=12$.
+Three-sided fence: $2\\ell+7=56$ where $\\ell$ is depth into the field.
 
-$$t^2-18t+72=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-6)(t-12)=0$$
+$$2\\ell=49$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=21$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $8$ cm.
+Multiply by $x$ to obtain a quadratic:
 
-$$x(x+3)=40$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-5)(x+8)=0$$
+$$x+\\frac{1}{x}=\\frac{257}{16}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{257}{16}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{257}{16}x+1=0$$
+
+$$x=16$$ gives numerator $257$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Work from the wording to an equation, then solve step by step:
 
-$$\\ell=19$$
+$$(15)(21)-247=68$$
 
-$$A=133$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -3512,70 +4472,88 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $70$ cm$^{2}$, the longer side is greater than $8$ cm.`,
-      `A $52$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $136$ m$^{2}$.`,
-      `The product of two consecutive integers is $110$. The larger integer is greater than $9$.`,
-      `A positive number plus its reciprocal equals $\\frac{101}{10}$. The numerator of that reduced sum is $104$.`,
-      `Two positive numbers have product $55$ and sum greater than $13$. The larger of the two is greater than $9$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{17}{4}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $14$.`,
+      `A $1$ m path runs around a $13$ m $\\times$ $19$ m field. The path area alone is $71$ m$^{2}$.`,
+      `Two positive numbers have product $50$ and sum greater than $12$. The larger of the two is greater than $8$.`,
+      `A farmer has exactly $52$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $6$ m and the depth into the field is $24$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{10}{3}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $8$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $10$ cm.
+Multiply by $x$ to obtain a quadratic:
 
-$$x(x+3)=70$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-7)(x+10)=0$$
+$$x+\\frac{1}{x}=\\frac{17}{4}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{17}{4}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{17}{4}x+1=0$$
+
+$$x=4$$ gives numerator $17$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Work from the wording to an equation, then solve step by step:
 
-$$\\ell=19$$
+$$(15)(21)-247=68$$
 
-$$A=133$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $11$.
+Sum $=15$; larger root $=10$.
 
-$$n(n+1)=110$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=10$$
+$$t^2-15t+50=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-5)(t-10)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{101}{10}$$
+Three-sided fence: $2\\ell+6=52$ where $\\ell$ is depth into the field.
 
-$$x=10$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$2\\ell=46$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=20$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -3584,13 +4562,23 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=16$; larger root $=11$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-16t+55=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-11)=0$$
+$$x+\\frac{1}{x}=\\frac{10}{3}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{10}{3}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{10}{3}x+1=0$$
+
+$$x=3$$ gives numerator $10$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -3606,10 +4594,10 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle has perimeter $48$ cm; one side is $3$ cm longer than the other. The longer side is $17$ cm.`,
-      `If one side of a rectangle exceeds the other by $4$ cm and the area is $60$ cm$^{2}$, the longer side is greater than $8$ cm.`,
+      `Two positive numbers have product $54$ and sum greater than $12$. The larger of the two is greater than $7$.`,
       `A $1$ m path runs around a $10$ m $\\times$ $16$ m field. The path area alone is $59$ m$^{2}$.`,
-      `Three consecutive integers add to $39$. The middle integer is greater than $11$.`,
-      `A $44$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $119$ m$^{2}$.`,
+      `The roots of $x^2-22x+112=0$ add up to greater than $18$.`,
+      `Two consecutive positive integers have product $56$. The larger of the two integers is $11$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
@@ -3621,67 +4609,81 @@ Set up the model and solve:
 
 Longer $13.5$ cm.
 
+Translate the story into one equation in the unknown:
+
 $$2(2s+3)=48$$
+
+Collect like terms and isolate the variable:
 
 $$s=10.5$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $10$ cm.
+Sum $=15$; larger root $=9$.
 
-$$x(x+4)=60$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-6)(x+10)=0$$
+$$t^2-15t+54=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-6)(t-9)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$(12)(18)-160=56$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
+
+Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+
+Vieta: sum $=22$.
+
+The recovered value satisfies the inequality or comparison in the claim.
+
+Matching the solved value to the claim, the statement is True.`,
+      `**E.** → False
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Middle $=13$.
+Let the smaller integer be $n$. Then $n(n+1)=56$:
 
-$$3n+3=39$$
+Larger integer: $8$.
 
-$$n=12$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$n^2+n-56=0$$
 
-Matching the solved value to the claim, the statement is True.`,
-      `**E.** → False
+Factor or simplify the quadratic:
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+$$(n-7)(n+8)=0$$
 
-Work from the story to a single equation, then solve:
+Take the admissible root and evaluate the quantity named in the claim:
 
-$$2(w+\\ell)=44$$
+$$n=7$$
 
-$$\\ell=13$$
-
-$$A=117$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -3696,68 +4698,90 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three consecutive integers add to $27$. The middle integer is greater than $7$.`,
-      `A $44$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is greater than $111$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $7$ cm and the area is $144$ cm$^{2}$, the longer side is $19$ cm.`,
-      `A $1$ m path runs around a $11$ m $\\times$ $17$ m field. The path area alone is $64$ m$^{2}$.`,
+      `The roots of $x^2-21x+104=0$ add up to greater than $17$.`,
+      `Two consecutive positive integers have product $240$. The larger of the two integers is greater than $13$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{65}{8}$. When the sum is written as a single fraction in lowest terms, the numerator is $69$.`,
+      `A rectangle has perimeter $40$ cm; one side is $2$ cm longer than the other. The longer side is $14$ cm.`,
       `Two positive numbers have product $36$ and sum greater than $11$. The larger of the two is greater than $7$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
+Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Set up the model and solve:
+Vieta: sum $=21$.
 
-Middle $=9$.
-
-$$3n+3=27$$
-
-$$n=8$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=44$$
+Let the smaller integer be $n$. Then $n(n+1)=240$:
 
-$$\\ell=13$$
+Larger integer: $16$.
 
-$$A=117$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$n^2+n-240=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-15)(n+16)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=15$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $16$ cm.
+Multiply by $x$ to obtain a quadratic:
 
-$$x(x+7)=144$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-9)(x+16)=0$$
+$$x+\\frac{1}{x}=\\frac{65}{8}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{65}{8}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{65}{8}x+1=0$$
+
+$$x=8$$ gives numerator $65$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(13)(19)-187=60$$
+Longer $11$ cm.
 
-The value recovered from the model contradicts the claim.
+Translate the story into one equation in the unknown:
+
+$$2(2s+2)=40$$
+
+Collect like terms and isolate the variable:
+
+$$s=9$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -3768,11 +4792,15 @@ Set up the model and solve:
 
 Sum $=13$; larger root $=9$.
 
+Write the quadratic model from the geometry or number condition:
+
 $$t^2-13t+36=0$$
+
+Factor or simplify the quadratic:
 
 $$(t-4)(t-9)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -3787,10 +4815,10 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The product of two consecutive integers is $42$. The larger integer is $10$.`,
+      `A rectangle has perimeter $40$ cm; one side is $4$ cm longer than the other. The longer side is $14$ cm.`,
       `Two positive numbers have product $36$ and sum $16$. The larger of the two is $11$.`,
-      `A rectangle has perimeter $48$ cm; one side is $2$ cm longer than the other. The longer side is greater than $11$ cm.`,
-      `A positive number plus its reciprocal equals $\\frac{50}{7}$. The numerator of that reduced sum is greater than $44$.`,
+      `A farmer has exactly $40$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $3$ m and the depth into the field is greater than $14$ m.`,
+      `Three consecutive integers add to $36$. The middle integer is greater than $10$.`,
       `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is $67$ m$^{2}$.`,
     ],
     answer_key: [false, false, true, true, false],
@@ -3801,13 +4829,17 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Larger: $7$.
+Longer $12$ cm.
 
-$$n(n+1)=42$$
+Translate the story into one equation in the unknown:
 
-$$n=6$$
+$$2(2s+4)=40$$
 
-The value recovered from the model contradicts the claim.
+Collect like terms and isolate the variable:
+
+$$s=8$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -3818,50 +4850,66 @@ Set up the model and solve:
 
 Sum $=13$; larger root $=9$.
 
+Write the quadratic model from the geometry or number condition:
+
 $$t^2-13t+36=0$$
+
+Factor or simplify the quadratic:
 
 $$(t-4)(t-9)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer $13$ cm.
+Three-sided fence: $2\\ell+3=40$ where $\\ell$ is depth into the field.
 
-$$2(2s+2)=48$$
+Write the quadratic model from the geometry or number condition:
 
-$$s=11$$
+$$2\\ell=37$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=17$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{50}{7}$$
+Middle $=12$.
 
-$$x=7$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$3n+3=36$$
+
+Factor or simplify the quadratic:
+
+$$n=11$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$(14)(20)-216=64$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -3876,42 +4924,56 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $130$ cm$^{2}$, the longer side is greater than $11$ cm.`,
-      `The product of two consecutive integers is $90$. The larger integer is $14$.`,
-      `Three consecutive integers add to $33$. The middle integer is $14$.`,
-      `A $40$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is greater than $93$ m$^{2}$.`,
-      `A positive number plus its reciprocal equals $\\frac{37}{6}$. The numerator of that reduced sum is greater than $31$.`,
+      `Three consecutive integers add to $39$. The middle integer is greater than $11$.`,
+      `Two consecutive positive integers have product $240$. The larger of the two integers is $19$.`,
+      `Two positive numbers have product $45$ and sum $17$. The larger of the two is $11$.`,
+      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is greater than $58$ m$^{2}$.`,
+      `The roots of $x^2-17x+66=0$ add up to greater than $14$.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $13$ cm.
+Middle $=13$.
 
-$$x(x+3)=130$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-10)(x+13)=0$$
+$$3n+3=39$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$n=12$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $10$.
+Let the smaller integer be $n$. Then $n(n+1)=240$:
 
-$$n(n+1)=90$$
+Larger integer: $16$.
 
-$$n=9$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$n^2+n-240=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-15)(n+16)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=15$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -3920,41 +4982,39 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Middle $=11$.
+Sum $=14$; larger root $=9$.
 
-$$3n+3=33$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=10$$
+$$t^2-14t+45=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-5)(t-9)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=40$$
+Work from the wording to an equation, then solve step by step:
 
-$$\\ell=11$$
+$$(14)(20)-216=64$$
 
-$$A=99$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Vieta: sum $=17$.
 
-$$x+\\frac{1}{x}=\\frac{37}{6}$$
-
-$$x=6$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -3969,53 +5029,65 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $40$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $101$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $91$ cm$^{2}$, the longer side is greater than $11$ cm.`,
-      `A $1$ m path runs around a $11$ m $\\times$ $17$ m field. The path area alone is greater than $54$ m$^{2}$.`,
-      `Two positive numbers have product $104$ and sum $23$. The larger of the two is $16$.`,
-      `A rectangle has perimeter $48$ cm; one side is $4$ cm longer than the other. The longer side is $17$ cm.`,
+      `A farmer has exactly $40$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $3$ m and the depth into the field is $20$ m.`,
+      `The roots of $x^2-19x+78=0$ add up to greater than $16$.`,
+      `Two consecutive positive integers have product $30$. The larger of the two integers is greater than $4$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{401}{20}$. When the sum is written as a single fraction in lowest terms, the numerator is $404$.`,
+      `A rectangle has perimeter $44$ cm; one side is $2$ cm longer than the other. The longer side is $14$ cm.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=40$$
+Three-sided fence: $2\\ell+3=40$ where $\\ell$ is depth into the field.
 
-$$\\ell=11$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=99$$
+$$2\\ell=37$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=17$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Set up the model and solve:
+Vieta: sum $=19$.
 
-Longer: $13$ cm.
-
-$$x(x+6)=91$$
-
-$$(x-7)(x+13)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(13)(19)-187=60$$
+Let the smaller integer be $n$. Then $n(n+1)=30$:
 
-The value recovered from the model satisfies the inequality in the claim.
+Larger integer: $6$.
+
+Write the quadratic model from the geometry or number condition:
+
+$$n^2+n-30=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-5)(n+6)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=5$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -4024,13 +5096,23 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=21$; larger root $=13$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-21t+104=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-8)(t-13)=0$$
+$$x+\\frac{1}{x}=\\frac{401}{20}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{401}{20}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{401}{20}x+1=0$$
+
+$$x=20$$ gives numerator $401$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -4039,13 +5121,17 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer $14$ cm.
+Longer $12$ cm.
 
-$$2(2s+4)=48$$
+Translate the story into one equation in the unknown:
+
+$$2(2s+2)=44$$
+
+Collect like terms and isolate the variable:
 
 $$s=10$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -4060,11 +5146,11 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $104$ and sum greater than $17$. The larger of the two is greater than $11$.`,
-      `A $44$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is $115$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $7$ cm and the area is $78$ cm$^{2}$, the longer side is greater than $11$ cm.`,
-      `The product of two consecutive integers is $156$. The larger integer is greater than $11$.`,
-      `Three consecutive integers add to $39$. The middle integer is $16$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{325}{18}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $319$.`,
+      `A rectangle has perimeter $44$ cm; one side is $4$ cm longer than the other. The longer side is $16$ cm.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{122}{11}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $116$.`,
+      `A farmer has exactly $48$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $8$ m and the depth into the field is greater than $13$ m.`,
+      `Three consecutive integers add to $42$. The middle integer is $17$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -4074,58 +5160,86 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=21$; larger root $=13$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-21t+104=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-8)(t-13)=0$$
+$$x+\\frac{1}{x}=\\frac{325}{18}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{325}{18}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{325}{18}x+1=0$$
+
+$$x=18$$ gives numerator $325$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=44$$
+Longer $13$ cm.
 
-$$\\ell=14$$
+Translate the story into one equation in the unknown:
 
-$$A=112$$
+$$2(2s+4)=44$$
 
-The value recovered from the model contradicts the claim.
+Collect like terms and isolate the variable:
+
+$$s=9$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $13$ cm.
+Multiply by $x$ to obtain a quadratic:
 
-$$x(x+7)=78$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-6)(x+13)=0$$
+$$x+\\frac{1}{x}=\\frac{122}{11}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{122}{11}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{122}{11}x+1=0$$
+
+$$x=11$$ gives numerator $122$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $13$.
+Three-sided fence: $2\\ell+8=48$ where $\\ell$ is depth into the field.
 
-$$n(n+1)=156$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=12$$
+$$2\\ell=40$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=16$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -4134,13 +5248,17 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Middle $=13$.
+Middle $=14$.
 
-$$3n+3=39$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=12$$
+$$3n+3=42$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$n=13$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -4155,27 +5273,31 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The product of two consecutive integers is $132$. The larger integer is $14$.`,
-      `Two positive numbers have product $32$ and sum greater than $10$. The larger of the two is greater than $6$.`,
-      `A $56$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $173$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $5$ cm and the area is $126$ cm$^{2}$, the longer side is $17$ cm.`,
-      `A $1$ m path runs around a $13$ m $\\times$ $19$ m field. The path area alone is greater than $62$ m$^{2}$.`,
+      `A farmer has exactly $32$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $10$ m and the depth into the field is $8$ m.`,
+      `Three consecutive integers add to $27$. The middle integer is greater than $7$.`,
+      `A farmer has exactly $72$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $8$ m and the depth into the field is $31$ m.`,
+      `Two positive numbers have product $54$ and sum $19$. The larger of the two is $11$.`,
+      `Two consecutive positive integers have product $72$. The larger of the two integers is greater than $7$.`,
     ],
     answer_key: [false, true, false, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Larger: $12$.
+Three-sided fence: $2\\ell+10=32$ where $\\ell$ is depth into the field.
 
-$$n(n+1)=132$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=11$$
+$$2\\ell=22$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=6$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -4184,54 +5306,80 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=12$; larger root $=8$.
+Middle $=9$.
 
-$$t^2-12t+32=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-4)(t-8)=0$$
+$$3n+3=27$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$n=8$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=56$$
+Three-sided fence: $2\\ell+8=72$ where $\\ell$ is depth into the field.
 
-$$\\ell=19$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=171$$
+$$2\\ell=64$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=28$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $14$ cm.
+Sum $=15$; larger root $=9$.
 
-$$x(x+5)=126$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-9)(x+14)=0$$
+$$t^2-15t+54=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-6)(t-9)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(15)(21)-247=68$$
+Let the smaller integer be $n$. Then $n(n+1)=72$:
 
-The value recovered from the model satisfies the inequality in the claim.
+Larger integer: $9$.
+
+Write the quadratic model from the geometry or number condition:
+
+$$n^2+n-72=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-8)(n+9)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=8$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -4247,10 +5395,10 @@ Matching the solved value to the claim, the statement is True.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `A rectangle has perimeter $36$ cm; one side is $2$ cm longer than the other. The longer side is greater than $8$ cm.`,
-      `A $56$ m fence forms a rectangle of width $6$ m using all the fence. The enclosed area is greater than $126$ m$^{2}$.`,
-      `A ball is thrown upward at $20$ m/s (model $h=v_0 t-5t^2$). Its maximum height is greater than $16$ m.`,
-      `The roots of $x^2-21x+98=0$ add up to $23$.`,
-      `Two positive numbers have product $28$ and sum $14$. The larger of the two is $10$.`,
+      `A farmer has exactly $28$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $9$ m and the depth into the field is greater than $3$ m.`,
+      `Two consecutive positive integers have product $90$. The larger of the two integers is greater than $8$.`,
+      `A ball is thrown upward at $30$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $49$ m.`,
+      `The roots of $x^2-23x+126=0$ add up to $26$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -4262,63 +5410,81 @@ Set up the model and solve:
 
 Longer $10$ cm.
 
+Translate the story into one equation in the unknown:
+
 $$2(2s+2)=36$$
+
+Collect like terms and isolate the variable:
 
 $$s=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=56$$
+Three-sided fence: $2\\ell+9=28$ where $\\ell$ is depth into the field.
 
-$$\\ell=22$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=132$$
+$$2\\ell=19$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=5$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Vertex at $t=\\frac{20}{10}$
+Let the smaller integer be $n$. Then $n(n+1)=90$:
 
-$$h_{\\max}=\\frac{20^2}{20}=20$$
+Larger integer: $10$.
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$n^2+n-90=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-9)(n+10)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=9$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Vieta: sum $=21$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Vertex at $t=\\frac{30}{10}$
+
+$$h_{\\max}=\\frac{30^2}{20}=45$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
-Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
+Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Set up the model and solve:
+Vieta: sum $=23$.
 
-Sum $=11$; larger root $=7$.
-
-$$t^2-11t+28=0$$
-
-$$(t-4)(t-7)=0$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -4333,9 +5499,9 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Three consecutive integers add to $42$. The middle integer is $17$.`,
-      `A positive number plus its reciprocal equals $\\frac{82}{9}$. The numerator of that reduced sum is $85$.`,
-      `If one side of a rectangle exceeds the other by $4$ cm and the area is $117$ cm$^{2}$, the longer side is $16$ cm.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{257}{16}$. When the sum is written as a single fraction in lowest terms, the numerator is $260$.`,
+      `Two positive numbers have product $91$ and sum $24$. The larger of the two is $16$.`,
+      `A farmer has exactly $60$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $11$ m and the depth into the field is $22$ m.`,
       `The equation $x^2+3x+8=0$ has no real roots.`,
       `A rectangle has perimeter $44$ cm; one side is $4$ cm longer than the other. The longer side is greater than $11$ cm.`,
     ],
@@ -4347,52 +5513,74 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Middle $=14$.
+Multiply by $x$ to obtain a quadratic:
 
-$$3n+3=42$$
+Write the quadratic model from the geometry or number condition:
 
-$$n=13$$
+$$x+\\frac{1}{x}=\\frac{257}{16}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{257}{16}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{257}{16}x+1=0$$
+
+$$x=16$$ gives numerator $257$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{82}{9}$$
+Sum $=20$; larger root $=13$.
 
-$$x=9$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$t^2-20t+91=0$$
+
+Factor or simplify the quadratic:
+
+$$(t-7)(t-13)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $13$ cm.
+Three-sided fence: $2\\ell+11=60$ where $\\ell$ is depth into the field.
 
-$$x(x+4)=117$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-9)(x+13)=0$$
+$$2\\ell=49$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=19$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\Delta=-23<0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -4403,11 +5591,15 @@ Set up the model and solve:
 
 Longer $13$ cm.
 
+Translate the story into one equation in the unknown:
+
 $$2(2s+4)=44$$
+
+Collect like terms and isolate the variable:
 
 $$s=9$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -4422,60 +5614,78 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $1$ m path runs around a $12$ m $\\times$ $18$ m field. The path area alone is greater than $58$ m$^{2}$.`,
-      `A ball is thrown upward at $25$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $34$ m.`,
-      `The roots of $x^2-22x+112=0$ add up to $25$.`,
-      `Three consecutive integers add to $36$. The middle integer is $14$.`,
-      `Two positive numbers have product $112$ and sum greater than $18$. The larger of the two is greater than $12$.`,
+      `Two consecutive positive integers have product $20$. The larger of the two integers is greater than $3$.`,
+      `A farmer has exactly $40$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $6$ m and the depth into the field is $17$ m.`,
+      `A ball is thrown upward at $35$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $64$ m.`,
+      `The roots of $x^2-19x+78=0$ add up to $22$.`,
+      `Three consecutive integers add to $30$. The middle integer is greater than $8$.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(14)(20)-216=64$$
+Let the smaller integer be $n$. Then $n(n+1)=20$:
 
-The value recovered from the model satisfies the inequality in the claim.
+Larger integer: $5$.
+
+Write the quadratic model from the geometry or number condition:
+
+$$n^2+n-20=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-4)(n+5)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=4$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Vertex at $t=\\frac{25}{10}$
+Three-sided fence: $2\\ell+6=40$ where $\\ell$ is depth into the field.
 
-$$h_{\\max}=\\frac{25^2}{20}=31.25$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$2\\ell=34$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=14$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Vieta: sum $=22$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Vertex at $t=\\frac{35}{10}$
+
+$$h_{\\max}=\\frac{35^2}{20}=61.25$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
-Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
+Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Set up the model and solve:
+Vieta: sum $=19$.
 
-Middle $=12$.
-
-$$3n+3=36$$
-
-$$n=11$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -4484,13 +5694,17 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=22$; larger root $=14$.
+Middle $=10$.
 
-$$t^2-22t+112=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-8)(t-14)=0$$
+$$3n+3=30$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$n=9$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -4505,25 +5719,37 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A positive number plus its reciprocal equals $\\frac{65}{8}$. The numerator of that reduced sum is $69$.`,
-      `If one side of a rectangle exceeds the other by $4$ cm and the area is $96$ cm$^{2}$, the longer side is greater than $10$ cm.`,
-      `The equation $x^2+4x+7=0$ has no real roots.`,
-      `A rectangle has perimeter $48$ cm; one side is $3$ cm longer than the other. The longer side is greater than $12$ cm.`,
-      `The roots of $x^2-18x+72=0$ add up to $20$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{101}{10}$. When the sum is written as a single fraction in lowest terms, the numerator is $104$.`,
+      `The equation $x^2+2x+9=0$ has no real roots.`,
+      `A rectangle has perimeter $40$ cm; one side is $2$ cm longer than the other. The longer side is greater than $9$ cm.`,
+      `A farmer has exactly $64$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $6$ m and the depth into the field is greater than $21$ m.`,
+      `Two consecutive positive integers have product $42$. The larger of the two integers is $10$.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{65}{8}$$
+Multiply by $x$ to obtain a quadratic:
 
-$$x=8$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$x+\\frac{1}{x}=\\frac{101}{10}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{101}{10}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{101}{10}x+1=0$$
+
+$$x=10$$ gives numerator $101$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -4532,48 +5758,74 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Work from the wording to an equation, then solve step by step:
 
-$$x(x+4)=96$$
+$$\\Delta=-32<0$$
 
-$$(x-8)(x+12)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-12<0$$
+Longer $11$ cm.
 
-The value recovered from the model satisfies the inequality in the claim.
+Translate the story into one equation in the unknown:
+
+$$2(2s+2)=40$$
+
+Collect like terms and isolate the variable:
+
+$$s=9$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer $13.5$ cm.
+Three-sided fence: $2\\ell+6=64$ where $\\ell$ is depth into the field.
 
-$$2(2s+3)=48$$
+Write the quadratic model from the geometry or number condition:
 
-$$s=10.5$$
+$$2\\ell=58$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=26$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Vieta: sum $=18$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Let the smaller integer be $n$. Then $n(n+1)=42$:
+
+Larger integer: $7$.
+
+Write the quadratic model from the geometry or number condition:
+
+$$n^2+n-42=0$$
+
+Factor or simplify the quadratic:
+
+$$(n-6)(n+7)=0$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$n=6$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -4588,27 +5840,31 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $52$ m fence forms a rectangle of width $6$ m using all the fence. The enclosed area is greater than $114$ m$^{2}$.`,
-      `The product of two consecutive integers is $90$. The larger integer is greater than $8$.`,
-      `A ball is thrown upward at $30$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $49$ m.`,
-      `The roots of $x^2-25x+144=0$ add up to greater than $20$.`,
-      `Two positive numbers have product $84$ and sum $22$. The larger of the two is $14$.`,
+      `A farmer has exactly $60$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $5$ m and the depth into the field is greater than $20$ m.`,
+      `A ball is thrown upward at $20$ m/s (model $h=v_0 t-5t^2$). Its maximum height is greater than $16$ m.`,
+      `The roots of $x^2-20x+91=0$ add up to $24$.`,
+      `Two positive numbers have product $88$ and sum greater than $16$. The larger of the two is greater than $9$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{226}{15}$. When the sum is written as a single fraction in lowest terms, the numerator is $229$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=52$$
+Three-sided fence: $2\\ell+5=60$ where $\\ell$ is depth into the field.
 
-$$\\ell=20$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=120$$
+$$2\\ell=55$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=25$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -4617,35 +5873,39 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Larger: $10$.
+Vertex at $t=\\frac{20}{10}$
 
-$$n(n+1)=90$$
+$$h_{\\max}=\\frac{20^2}{20}=20$$
 
-$$n=9$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Set up the model and solve:
+Vieta: sum $=20$.
 
-Vertex at $t=\\frac{30}{10}$
-
-$$h_{\\max}=\\frac{30^2}{20}=45$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Vieta: sum $=25$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Sum $=19$; larger root $=11$.
+
+Write the quadratic model from the geometry or number condition:
+
+$$t^2-19t+88=0$$
+
+Factor or simplify the quadratic:
+
+$$(t-8)(t-11)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -4654,13 +5914,23 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=19$; larger root $=12$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-19t+84=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-7)(t-12)=0$$
+$$x+\\frac{1}{x}=\\frac{226}{15}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{226}{15}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{226}{15}x+1=0$$
+
+$$x=15$$ gives numerator $226$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -4676,7 +5946,7 @@ Matching the solved value to the claim, the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Two positive numbers have product $72$ and sum $20$. The larger of the two is $14$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $40$ cm$^{2}$, the longer side is $11$ cm.`,
+      `A farmer has exactly $44$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $7$ m and the depth into the field is $19$ m.`,
       `The equation $x^2+3x+10=0$ has no real roots.`,
       `A rectangle has perimeter $44$ cm; one side is $3$ cm longer than the other. The longer side is $16$ cm.`,
       `The roots of $x^2-24x+135=0$ add up to greater than $20$.`,
@@ -4691,37 +5961,47 @@ Set up the model and solve:
 
 Sum $=18$; larger root $=12$.
 
+Write the quadratic model from the geometry or number condition:
+
 $$t^2-18t+72=0$$
+
+Factor or simplify the quadratic:
 
 $$(t-6)(t-12)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $8$ cm.
+Three-sided fence: $2\\ell+7=44$ where $\\ell$ is depth into the field.
 
-$$x(x+3)=40$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-5)(x+8)=0$$
+$$2\\ell=37$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=15$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\Delta=-31<0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -4732,11 +6012,15 @@ Set up the model and solve:
 
 Longer $12.5$ cm.
 
+Translate the story into one equation in the unknown:
+
 $$2(2s+3)=44$$
+
+Collect like terms and isolate the variable:
 
 $$s=9.5$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -4745,7 +6029,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Vieta: sum $=24$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -4760,11 +6044,11 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $50$ and sum greater than $12$. The larger of the two is greater than $8$.`,
-      `A ball is thrown upward at $35$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $64$ m.`,
-      `A $\\frac{3}{2}$ m wide running track borders a $9$ m by $15$ m lawn on all sides; the track lies outside the grass. The track surface area alone is greater than $46$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $88$ cm$^{2}$, the longer side is $14$ cm.`,
-      `Two positive numbers have product $77$ and sum $20$. The larger of the two is $14$.`,
+      `A farmer has exactly $52$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $3$ m and the depth into the field is greater than $19$ m.`,
+      `A $\\frac{3}{2}$ m wide running track borders a $9$ m by $15$ m lawn on all sides; the track lies outside the grass. The track surface area alone is $55$ m$^{2}$.`,
+      `The equation $x^2+5x+8=0$ has no real roots.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{290}{17}$. When the sum is written as a single fraction in lowest terms, the numerator is $294$.`,
+      `Two positive numbers have product $40$ and sum $17$. The larger of the two is $14$.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -4774,52 +6058,68 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=15$; larger root $=10$.
+Three-sided fence: $2\\ell+3=52$ where $\\ell$ is depth into the field.
 
-$$t^2-15t+50=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-10)=0$$
+$$2\\ell=49$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=23$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Vertex at $t=\\frac{35}{10}$
+Work from the wording to an equation, then solve step by step:
 
-$$h_{\\max}=\\frac{35^2}{20}=61.25$$
+$$(9+3)(9+9)-135=52$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
-
-Work from the story to a single equation, then solve:
-
-$$(9+3)(9+9)-135=52$$
-
-The value recovered from the model satisfies the inequality in the claim.
-
-Matching the solved value to the claim, the statement is True.`,
-      `**D.** → False
-
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
 Set up the model and solve:
 
-Longer: $11$ cm.
+Work from the wording to an equation, then solve step by step:
 
-$$x(x+3)=88$$
+$$\\Delta=-7<0$$
 
-$$(x-8)(x+11)=0$$
+The recovered value satisfies the inequality or comparison in the claim.
 
-The value recovered from the model contradicts the claim.
+Matching the solved value to the claim, the statement is True.`,
+      `**D.** → False
+
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
+
+Set up the model and solve:
+
+Multiply by $x$ to obtain a quadratic:
+
+Write the quadratic model from the geometry or number condition:
+
+$$x+\\frac{1}{x}=\\frac{290}{17}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{290}{17}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{290}{17}x+1=0$$
+
+$$x=17$$ gives numerator $290$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -4828,13 +6128,17 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=18$; larger root $=11$.
+Sum $=14$; larger root $=10$.
 
-$$t^2-18t+77=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-7)(t-11)=0$$
+$$t^2-14t+40=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-4)(t-10)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -4849,64 +6153,88 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $72$ cm$^{2}$, the longer side is $14$ cm.`,
-      `The equation $x^2+4x+9=0$ has no real roots.`,
-      `A $56$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $149$ m$^{2}$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{50}{7}$. When the sum is written as a single fraction in lowest terms, the numerator is $54$.`,
       `A $\\frac{3}{2}$ m wide running track borders a $8$ m by $14$ m lawn on all sides; the track lies outside the grass. The track surface area alone is greater than $42$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $5$ cm and the area is $84$ cm$^{2}$, the longer side is greater than $10$ cm.`,
+      `A farmer has exactly $28$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $3$ m and the depth into the field is $14$ m.`,
+      `Two positive numbers have product $91$ and sum greater than $16$. The larger of the two is greater than $11$.`,
+      `The equation $x^2+2x+7=0$ has no real roots.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Multiply by $x$ to obtain a quadratic:
 
-$$x(x+6)=72$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-6)(x+12)=0$$
+$$x+\\frac{1}{x}=\\frac{50}{7}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{50}{7}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{50}{7}x+1=0$$
+
+$$x=7$$ gives numerator $50$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-20<0$$
+Work from the wording to an equation, then solve step by step:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$(8+3)(8+9)-112=48$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=56$$
+Three-sided fence: $2\\ell+3=28$ where $\\ell$ is depth into the field.
 
-$$\\ell=21$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=147$$
+$$2\\ell=25$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=11$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(8+3)(8+9)-112=48$$
+Sum $=20$; larger root $=13$.
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$t^2-20t+91=0$$
+
+Factor or simplify the quadratic:
+
+$$(t-7)(t-13)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -4915,13 +6243,11 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Work from the wording to an equation, then solve step by step:
 
-$$x(x+5)=84$$
+$$\\Delta=-24<0$$
 
-$$(x-7)(x+12)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -4936,11 +6262,11 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A positive number plus its reciprocal equals $\\frac{101}{10}$. The numerator of that reduced sum is greater than $95$.`,
-      `A $1$ m path runs around a $13$ m $\\times$ $19$ m field. The path area alone is $71$ m$^{2}$.`,
-      `Two positive numbers have product $70$ and sum $20$. The larger of the two is $14$.`,
-      `A ball is thrown upward at $35$ m/s (model $h=v_0 t-5t^2$). Its maximum height is greater than $55$ m.`,
-      `A $\\frac{3}{2}$ m wide running track borders a $9$ m by $15$ m lawn on all sides; the track lies outside the grass. The track surface area alone is $55$ m$^{2}$.`,
+      `The equation $x^2+5x+10=0$ has no real roots.`,
+      `A farmer has exactly $44$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $10$ m and the depth into the field is $14$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{17}{4}$. When the sum is written as a single fraction in lowest terms, the numerator is $20$.`,
+      `Two positive numbers have product $28$ and sum greater than $9$. The larger of the two is greater than $5$.`,
+      `A $\\frac{3}{2}$ m wide running track borders a $8$ m by $14$ m lawn on all sides; the track lies outside the grass. The track surface area alone is $50$ m$^{2}$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -4948,24 +6274,32 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$x+\\frac{1}{x}=\\frac{101}{10}$$
+Work from the wording to an equation, then solve step by step:
 
-$$x=10$$
+$$\\Delta=-15<0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(15)(21)-247=68$$
+Three-sided fence: $2\\ell+10=44$ where $\\ell$ is depth into the field.
 
-The value recovered from the model contradicts the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$2\\ell=34$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=12$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -4974,37 +6308,55 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=17$; larger root $=10$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-17t+70=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-7)(t-10)=0$$
+$$x+\\frac{1}{x}=\\frac{17}{4}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{17}{4}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{17}{4}x+1=0$$
+
+$$x=4$$ gives numerator $17$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Vertex at $t=\\frac{35}{10}$
+Sum $=11$; larger root $=7$.
 
-$$h_{\\max}=\\frac{35^2}{20}=61.25$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$t^2-11t+28=0$$
+
+Factor or simplify the quadratic:
+
+$$(t-4)(t-7)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(9+3)(9+9)-135=52$$
+Work from the wording to an equation, then solve step by step:
 
-The value recovered from the model contradicts the claim.
+$$(8+3)(8+9)-112=48$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -5019,53 +6371,75 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $48$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is $131$ m$^{2}$.`,
-      `A rectangle has perimeter $36$ cm; one side is $4$ cm longer than the other. The longer side is greater than $9$ cm.`,
-      `A $1$ m path runs around a $10$ m $\\times$ $16$ m field. The path area alone is greater than $50$ m$^{2}$.`,
-      `Two positive numbers have product $45$ and sum $17$. The larger of the two is $11$.`,
-      `A ball is thrown upward at $30$ m/s (model $h=v_0 t-5t^2$). Its maximum height is greater than $39$ m.`,
+      `A farmer has exactly $64$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $6$ m and the depth into the field is $29$ m.`,
+      `Two positive numbers have product $32$ and sum greater than $10$. The larger of the two is greater than $6$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{50}{7}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $44$.`,
+      `A farmer has exactly $32$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $4$ m and the depth into the field is $14$ m.`,
+      `A $\\frac{3}{2}$ m wide running track borders a $9$ m by $15$ m lawn on all sides; the track lies outside the grass. The track surface area alone is greater than $46$ m$^{2}$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=48$$
+Three-sided fence: $2\\ell+6=64$ where $\\ell$ is depth into the field.
 
-$$\\ell=16$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=128$$
+$$2\\ell=58$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=26$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer $11$ cm.
+Sum $=12$; larger root $=8$.
 
-$$2(2s+4)=36$$
+Write the quadratic model from the geometry or number condition:
 
-$$s=7$$
+$$t^2-12t+32=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-4)(t-8)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(12)(18)-160=56$$
+Multiply by $x$ to obtain a quadratic:
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$x+\\frac{1}{x}=\\frac{50}{7}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{50}{7}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{50}{7}x+1=0$$
+
+$$x=7$$ gives numerator $50$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -5074,26 +6448,30 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=14$; larger root $=9$.
+Three-sided fence: $2\\ell+4=32$ where $\\ell$ is depth into the field.
 
-$$t^2-14t+45=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-9)=0$$
+$$2\\ell=28$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=12$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Vertex at $t=\\frac{30}{10}$
+Work from the wording to an equation, then solve step by step:
 
-$$h_{\\max}=\\frac{30^2}{20}=45$$
+$$(9+3)(9+9)-135=52$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -5108,11 +6486,11 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $45$ and sum greater than $12$. The larger of the two is greater than $7$.`,
-      `A $56$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is greater than $141$ m$^{2}$.`,
-      `A $\\frac{3}{2}$ m wide running track borders a $8$ m by $14$ m lawn on all sides; the track lies outside the grass. The track surface area alone is $50$ m$^{2}$.`,
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $91$ cm$^{2}$, the longer side is $16$ cm.`,
-      `Two positive numbers have product $50$ and sum $19$. The larger of the two is $14$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{170}{13}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $164$.`,
+      `Two positive numbers have product $96$ and sum greater than $16$. The larger of the two is greater than $10$.`,
+      `A farmer has exactly $36$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $8$ m and the depth into the field is $14$ m.`,
+      `Two positive numbers have product $28$ and sum $14$. The larger of the two is $10$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{26}{5}$. When the sum is written as a single fraction in lowest terms, the numerator is $29$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -5122,54 +6500,80 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=14$; larger root $=9$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-14t+45=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-9)=0$$
+$$x+\\frac{1}{x}=\\frac{170}{13}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{170}{13}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{170}{13}x+1=0$$
+
+$$x=13$$ gives numerator $170$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=56$$
+Sum $=20$; larger root $=12$.
 
-$$\\ell=21$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=147$$
+$$t^2-20t+96=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-8)(t-12)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$(8+3)(8+9)-112=48$$
+Three-sided fence: $2\\ell+8=36$ where $\\ell$ is depth into the field.
 
-The value recovered from the model contradicts the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$2\\ell=28$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=10$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $13$ cm.
+Sum $=11$; larger root $=7$.
 
-$$x(x+6)=91$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-7)(x+13)=0$$
+$$t^2-11t+28=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-4)(t-7)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -5178,13 +6582,23 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=15$; larger root $=10$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-15t+50=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-10)=0$$
+$$x+\\frac{1}{x}=\\frac{26}{5}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{26}{5}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{26}{5}x+1=0$$
+
+$$x=5$$ gives numerator $26$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -5199,27 +6613,31 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle exceeds the other by $3$ cm and the area is $70$ cm$^{2}$, the longer side is $14$ cm.`,
-      `Two positive numbers have product $54$ and sum $19$. The larger of the two is $11$.`,
-      `A $44$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is greater than $106$ m$^{2}$.`,
-      `The roots of $x^2-21x+104=0$ add up to greater than $17$.`,
-      `If one side of a rectangle exceeds the other by $7$ cm and the area is $120$ cm$^{2}$, the longer side is greater than $12$ cm.`,
+      `A farmer has exactly $68$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $10$ m and the depth into the field is $26$ m.`,
+      `Two positive numbers have product $77$ and sum $20$. The larger of the two is $14$.`,
+      `The equation $x^2+4x+5=0$ has no real roots.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{226}{15}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $220$.`,
+      `The equation $x^2+4x+7=0$ has no real roots.`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $10$ cm.
+Three-sided fence: $2\\ell+10=68$ where $\\ell$ is depth into the field.
 
-$$x(x+3)=70$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-7)(x+10)=0$$
+$$2\\ell=58$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=24$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -5228,37 +6646,55 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=15$; larger root $=9$.
+Sum $=18$; larger root $=11$.
 
-$$t^2-15t+54=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-6)(t-9)=0$$
+$$t^2-18t+77=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-7)(t-11)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=44$$
+Work from the wording to an equation, then solve step by step:
 
-$$\\ell=14$$
+$$\\Delta=-4<0$$
 
-$$A=112$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Vieta: sum $=21$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Multiply by $x$ to obtain a quadratic:
+
+Write the quadratic model from the geometry or number condition:
+
+$$x+\\frac{1}{x}=\\frac{226}{15}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{226}{15}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{226}{15}x+1=0$$
+
+$$x=15$$ gives numerator $226$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -5267,13 +6703,11 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Set up the model and solve:
 
-Longer: $15$ cm.
+Work from the wording to an equation, then solve step by step:
 
-$$x(x+7)=120$$
+$$\\Delta=-12<0$$
 
-$$(x-8)(x+15)=0$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -5288,11 +6722,11 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $84$ and sum greater than $16$. The larger of the two is greater than $10$.`,
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $160$ cm$^{2}$, the longer side is $19$ cm.`,
-      `The equation $x^2+2x+5=0$ has no real roots.`,
-      `A $48$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $122$ m$^{2}$.`,
-      `The equation $x^2+2x+7=0$ has no real roots.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{197}{14}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $191$.`,
+      `A farmer has exactly $56$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $7$ m and the depth into the field is $23$ m.`,
+      `The equation $x^2+5x+7=0$ has no real roots.`,
+      `Two positive numbers have product $70$ and sum $20$. The larger of the two is $14$.`,
+      `A farmer has exactly $72$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $5$ m and the depth into the field is greater than $25$ m.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -5302,65 +6736,93 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=19$; larger root $=12$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-19t+84=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-7)(t-12)=0$$
+$$x+\\frac{1}{x}=\\frac{197}{14}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{197}{14}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{197}{14}x+1=0$$
+
+$$x=14$$ gives numerator $197$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $16$ cm.
+Three-sided fence: $2\\ell+7=56$ where $\\ell$ is depth into the field.
 
-$$x(x+6)=160$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-10)(x+16)=0$$
+$$2\\ell=49$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=21$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-16<0$$
+Work from the wording to an equation, then solve step by step:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$\\Delta=-3<0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=48$$
+Sum $=17$; larger root $=10$.
 
-$$\\ell=17$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=119$$
+$$t^2-17t+70=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-7)(t-10)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-24<0$$
+Three-sided fence: $2\\ell+5=72$ where $\\ell$ is depth into the field.
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$2\\ell=67$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=31$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -5375,75 +6837,109 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A ball is thrown upward at $20$ m/s (model $h=v_0 t-5t^2$). Its maximum height is $24$ m.`,
-      `A $48$ m fence forms a rectangle of width $6$ m using all the fence. The enclosed area is greater than $102$ m$^{2}$.`,
-      `A $40$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $94$ m$^{2}$.`,
-      `The equation $x^2+2x+9=0$ has no real roots.`,
-      `Two positive numbers differ by $7$ and are the two roots of $t^2-17t+p=0$. Their product is $64$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{325}{18}$. When the sum is written as a single fraction in lowest terms, the numerator is $329$.`,
+      `Two positive numbers differ by $7$ and are the two roots of $t^2-17t+p=0$. Their product is greater than $54$.`,
+      `Two positive numbers have product $104$ and sum $23$. The larger of the two is $16$.`,
+      `A farmer has exactly $36$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $5$ m and the depth into the field is greater than $11$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{362}{19}$. When the sum is written as a single fraction in lowest terms, the numerator is $365$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Vertex at $t=\\frac{20}{10}$
+Multiply by $x$ to obtain a quadratic:
 
-$$h_{\\max}=\\frac{20^2}{20}=20$$
+Write the quadratic model from the geometry or number condition:
 
-The value recovered from the model contradicts the claim.
+$$x+\\frac{1}{x}=\\frac{325}{18}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{325}{18}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{325}{18}x+1=0$$
+
+$$x=18$$ gives numerator $325$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+By Vieta's formulas, product $=60$.
 
-$$2(w+\\ell)=48$$
-
-$$\\ell=18$$
-
-$$A=108$$
-
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=40$$
+Sum $=21$; larger root $=13$.
 
-$$\\ell=13$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=91$$
+$$t^2-21t+104=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-8)(t-13)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-32<0$$
+Three-sided fence: $2\\ell+5=36$ where $\\ell$ is depth into the field.
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$2\\ell=31$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=13$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-By Vieta's formulas, product $=60$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Multiply by $x$ to obtain a quadratic:
+
+Write the quadratic model from the geometry or number condition:
+
+$$x+\\frac{1}{x}=\\frac{362}{19}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{362}{19}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{362}{19}x+1=0$$
+
+$$x=19$$ gives numerator $362$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -5458,73 +6954,97 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $x^2+5x+7=0$ has no real roots.`,
-      `Two positive numbers differ by $7$ and are the two roots of $t^2-17t+p=0$. Their product is greater than $54$.`,
-      `Two positive numbers have product $88$ and sum $22$. The larger of the two is $14$.`,
-      `If one side of a rectangle exceeds the other by $5$ cm and the area is $66$ cm$^{2}$, the longer side is $14$ cm.`,
-      `The equation $x^2+4x+5=0$ has no real roots.`,
+      `A farmer has exactly $28$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $6$ m and the depth into the field is greater than $6$ m.`,
+      `The equation $x^2+4x+9=0$ has no real roots.`,
+      `Two positive numbers differ by $7$ and are the two roots of $t^2-17t+p=0$. Their product is $64$.`,
+      `Two positive numbers have product $32$ and sum $14$. The larger of the two is $11$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{145}{12}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $139$.`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-3<0$$
+Three-sided fence: $2\\ell+6=28$ where $\\ell$ is depth into the field.
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$2\\ell=22$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=8$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
-Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
+Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-By Vieta's formulas, product $=60$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Work from the wording to an equation, then solve step by step:
+
+$$\\Delta=-20<0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Set up the model and solve:
+By Vieta's formulas, product $=60$.
 
-Sum $=19$; larger root $=11$.
-
-$$t^2-19t+88=0$$
-
-$$(t-8)(t-11)=0$$
-
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $11$ cm.
+Sum $=12$; larger root $=8$.
 
-$$x(x+5)=66$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-6)(x+11)=0$$
+$$t^2-12t+32=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-4)(t-8)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-4<0$$
+Multiply by $x$ to obtain a quadratic:
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$x+\\frac{1}{x}=\\frac{145}{12}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{145}{12}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{145}{12}x+1=0$$
+
+$$x=12$$ gives numerator $145$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -5539,27 +7059,31 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `If one side of a rectangle exceeds the other by $5$ cm and the area is $104$ cm$^{2}$, the longer side is $16$ cm.`,
-      `Two positive numbers have product $96$ and sum $24$. The larger of the two is $14$.`,
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $72$ cm$^{2}$, the longer side is greater than $10$ cm.`,
-      `The roots of $x^2-17x+66=0$ add up to greater than $14$.`,
-      `If one side of a rectangle exceeds the other by $7$ cm and the area is $60$ cm$^{2}$, the longer side is $14$ cm.`,
+      `Two positive numbers have product $50$ and sum $19$. The larger of the two is $14$.`,
+      `A farmer has exactly $72$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $5$ m and the depth into the field is $34$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{401}{20}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $395$.`,
+      `The equation $x^2+3x+6=0$ has no real roots.`,
+      `A farmer has exactly $48$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $8$ m and the depth into the field is $19$ m.`,
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $13$ cm.
+Sum $=15$; larger root $=10$.
 
-$$x(x+5)=104$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-8)(x+13)=0$$
+$$t^2-15t+50=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-5)(t-10)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -5568,52 +7092,74 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=20$; larger root $=12$.
+Three-sided fence: $2\\ell+5=72$ where $\\ell$ is depth into the field.
 
-$$t^2-20t+96=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-8)(t-12)=0$$
+$$2\\ell=67$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=31$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Multiply by $x$ to obtain a quadratic:
 
-$$x(x+6)=72$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-6)(x+12)=0$$
+$$x+\\frac{1}{x}=\\frac{401}{20}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{401}{20}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{401}{20}x+1=0$$
+
+$$x=20$$ gives numerator $401$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Vieta: sum $=17$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Work from the wording to an equation, then solve step by step:
+
+$$\\Delta=-15<0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Three-sided fence: $2\\ell+8=48$ where $\\ell$ is depth into the field.
 
-$$x(x+7)=60$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-5)(x+12)=0$$
+$$2\\ell=40$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=16$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -5628,11 +7174,11 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $40$ and sum greater than $11$. The larger of the two is greater than $6$.`,
-      `If one side of a rectangle exceeds the other by $5$ cm and the area is $84$ cm$^{2}$, the longer side is $14$ cm.`,
-      `Two positive numbers have product $40$ and sum $16$. The larger of the two is $11$.`,
-      `A $56$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is greater than $154$ m$^{2}$.`,
-      `The equation $x^2+5x+10=0$ has no real roots.`,
+      `A farmer has exactly $48$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $5$ m and the depth into the field is greater than $16$ m.`,
+      `Two positive numbers have product $60$ and sum $19$. The larger of the two is $14$.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{122}{11}$. When the sum is written as a single fraction in lowest terms, the numerator is $125$.`,
+      `A farmer has exactly $60$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $8$ m and the depth into the field is greater than $18$ m.`,
+      `The equation $x^2+2x+5=0$ has no real roots.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
@@ -5642,28 +7188,36 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=13$; larger root $=8$.
+Three-sided fence: $2\\ell+5=48$ where $\\ell$ is depth into the field.
 
-$$t^2-13t+40=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-8)=0$$
+$$2\\ell=43$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=19$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $12$ cm.
+Sum $=16$; larger root $=10$.
 
-$$x(x+5)=84$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-7)(x+12)=0$$
+$$t^2-16t+60=0$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$(t-6)(t-10)=0$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -5672,39 +7226,55 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=13$; larger root $=8$.
+Multiply by $x$ to obtain a quadratic:
 
-$$t^2-13t+40=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-8)=0$$
+$$x+\\frac{1}{x}=\\frac{122}{11}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{122}{11}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{122}{11}x+1=0$$
+
+$$x=11$$ gives numerator $122$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=56$$
+Three-sided fence: $2\\ell+8=60$ where $\\ell$ is depth into the field.
 
-$$\\ell=20$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=160$$
+$$2\\ell=52$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=22$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-15<0$$
+Work from the wording to an equation, then solve step by step:
 
-The value recovered from the model satisfies the inequality in the claim.
+$$\\Delta=-16<0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -5719,53 +7289,75 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A $56$ m fence forms a rectangle of width $8$ m using all the fence. The enclosed area is $164$ m$^{2}$.`,
-      `The equation $x^2+3x+6=0$ has no real roots.`,
-      `If one side of a rectangle exceeds the other by $4$ cm and the area is $140$ cm$^{2}$, the longer side is greater than $12$ cm.`,
-      `Two positive numbers have product $55$ and sum $19$. The larger of the two is $14$.`,
-      `A $48$ m fence forms a rectangle of width $9$ m using all the fence. The enclosed area is $139$ m$^{2}$.`,
+      `A farmer has exactly $40$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $9$ m and the depth into the field is $14$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{65}{8}$. When the sum is written as a single fraction in lowest terms, the numerator is greater than $59$.`,
+      `Two positive numbers have product $60$ and sum greater than $13$. The larger of the two is greater than $8$.`,
+      `A farmer has exactly $52$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $3$ m and the depth into the field is $26$ m.`,
+      `A farmer has exactly $68$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $7$ m and the depth into the field is $29$ m.`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=56$$
+Three-sided fence: $2\\ell+9=40$ where $\\ell$ is depth into the field.
 
-$$\\ell=20$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=160$$
+$$2\\ell=31$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=11$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$\\Delta=-15<0$$
+Multiply by $x$ to obtain a quadratic:
 
-The value recovered from the model satisfies the inequality in the claim.
+Write the quadratic model from the geometry or number condition:
+
+$$x+\\frac{1}{x}=\\frac{65}{8}$$
+
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{65}{8}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{65}{8}x+1=0$$
+
+$$x=8$$ gives numerator $65$ in the claim.
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $14$ cm.
+Sum $=16$; larger root $=10$.
 
-$$x(x+4)=140$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-10)(x+14)=0$$
+$$t^2-16t+60=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-6)(t-10)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -5774,28 +7366,36 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=16$; larger root $=11$.
+Three-sided fence: $2\\ell+3=52$ where $\\ell$ is depth into the field.
 
-$$t^2-16t+55=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-5)(t-11)=0$$
+$$2\\ell=49$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=23$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=48$$
+Three-sided fence: $2\\ell+7=68$ where $\\ell$ is depth into the field.
 
-$$\\ell=15$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=135$$
+$$2\\ell=61$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=27$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -5810,11 +7410,11 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.2`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Two positive numbers have product $77$ and sum greater than $15$. The larger of the two is greater than $9$.`,
-      `A $44$ m fence forms a rectangle of width $7$ m using all the fence. The enclosed area is $109$ m$^{2}$.`,
-      `A rectangle has perimeter $36$ cm; one side is $3$ cm longer than the other. The longer side is greater than $9$ cm.`,
-      `If one side of a rectangle exceeds the other by $6$ cm and the area is $112$ cm$^{2}$, the longer side is greater than $12$ cm.`,
-      `The roots of $x^2-25x+144=0$ add up to $29$.`,
+      `A farmer has exactly $68$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $4$ m and the depth into the field is greater than $24$ m.`,
+      `A positive number $x$ and its reciprocal add to $\\frac{82}{9}$. When the sum is written as a single fraction in lowest terms, the numerator is $85$.`,
+      `Two positive numbers have product $55$ and sum greater than $13$. The larger of the two is greater than $9$.`,
+      `A farmer has exactly $32$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $7$ m and the depth into the field is greater than $7$ m.`,
+      `A farmer has exactly $48$ m of railing to enclose a rectangular pen against a barn wall that supplies one width of the rectangle, so only three sides use the railing. The width perpendicular to the barn is $11$ m and the depth into the field is $16$ m.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
@@ -5824,67 +7424,99 @@ Form a quadratic equation from the geometry or number conditions. Factor when po
 
 Set up the model and solve:
 
-Sum $=18$; larger root $=11$.
+Three-sided fence: $2\\ell+4=68$ where $\\ell$ is depth into the field.
 
-$$t^2-18t+77=0$$
+Write the quadratic model from the geometry or number condition:
 
-$$(t-7)(t-11)=0$$
+$$2\\ell=64$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=30$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
 
-$$2(w+\\ell)=44$$
+Multiply by $x$ to obtain a quadratic:
 
-$$\\ell=15$$
+Write the quadratic model from the geometry or number condition:
 
-$$A=105$$
+$$x+\\frac{1}{x}=\\frac{82}{9}$$
 
-The value recovered from the model contradicts the claim.
+Factor or simplify the quadratic:
+
+$$x^2+1=\\frac{82}{9}x$$
+
+Take the admissible root and evaluate the quantity named in the claim:
+
+$$x^2-\\frac{82}{9}x+1=0$$
+
+$$x=9$$ gives numerator $82$ in the claim.
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer $10.5$ cm.
+Sum $=16$; larger root $=11$.
 
-$$2(2s+3)=36$$
+Write the quadratic model from the geometry or number condition:
 
-$$s=7.5$$
+$$t^2-16t+55=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$(t-5)(t-11)=0$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
 Set up the model and solve:
 
-Longer: $14$ cm.
+Three-sided fence: $2\\ell+7=32$ where $\\ell$ is depth into the field.
 
-$$x(x+6)=112$$
+Write the quadratic model from the geometry or number condition:
 
-$$(x-8)(x+14)=0$$
+$$2\\ell=25$$
 
-The value recovered from the model satisfies the inequality in the claim.
+Factor or simplify the quadratic:
+
+$$\\ell=9$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Form a quadratic equation from the geometry or number conditions. Factor when possible, reject inadmissible roots, then test the claim.
 
-Vieta: sum $=25$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Three-sided fence: $2\\ell+11=48$ where $\\ell$ is depth into the field.
+
+Write the quadratic model from the geometry or number condition:
+
+$$2\\ell=37$$
+
+Factor or simplify the quadratic:
+
+$$\\ell=13$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -5902,7 +7534,7 @@ Matching the solved value to the claim, the statement is False.`,
       `Inlet fills in $6$ h, drain empties in $7$ h; both run on an empty tank. It fills in $44$ h.`,
       `Every admissible root of $\\sqrt{x+6}=5$ satisfies $x$ is greater than $16$.`,
       `Positions on a rail satisfy $|4x -4|=13$. The two positions add to $5$.`,
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $10$ h. Both open: full in $6.33$ h.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $10$ h. Both open from empty: full in $6.33$ h.`,
       `Inlet fills in $5$ h, drain empties in $7$ h; both run on an empty tank. It fills in greater than $16$ h.`,
     ],
     answer_key: [false, true, false, false, true],
@@ -5911,24 +7543,32 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{7}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+6=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=19$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -5941,29 +7581,33 @@ Sum $=2$.
 
 $$x=4.25\\text{ or }-2.25$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{50}{15}=3.3333333333333335$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{7}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -5978,11 +7622,11 @@ Matching the solved value to the claim, the statement is True.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $9$ h. Both open: full in greater than $2.2$ h.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $9$ h. Both open from empty: full in greater than $2.2$ h.`,
       `Inlet fills in $4$ h, drain empties in $7$ h; both run on an empty tank. It fills in greater than $8.3$ h.`,
       `Every admissible root of $\\sqrt{x+8}=5$ satisfies $x$ is greater than $15$.`,
       `Positions on a rail satisfy $|4x -3|=13$. The two positions add to $4.5$.`,
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $8$ h. Both open: full in $6.08$ h.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $8$ h. Both open from empty: full in $6.08$ h.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -5990,35 +7634,45 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{45}{14}=3.2142857142857144$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{7}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+8=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=17$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -6031,18 +7685,20 @@ Sum $=1.5$.
 
 $$x=4\\text{ or }-2.5$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{40}{13}=3.076923076923077$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -6058,7 +7714,7 @@ Matching the solved value to the claim, the statement is False.`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Positions on a rail satisfy $|3x -3|=12$. The two positions add to $5$.`,
-      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $8$ h. Both open: full in $7$ h.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $8$ h. Both open from empty: full in $7$ h.`,
       `Inlet fills in $5$ h, drain empties in $7$ h; both run on an empty tank. It fills in $20.5$ h.`,
       `Every admissible root of $\\sqrt{x+5}=5$ satisfies $x$ is greater than $17$.`,
       `Positions on a rail satisfy $|4x -2|=13$. The two positions add to greater than $0$.`,
@@ -6075,42 +7731,52 @@ Sum $=2$.
 
 $$x=5\\text{ or }-3$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{64}{16}=4$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{7}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+5=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=20$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -6123,7 +7789,7 @@ Sum $=1$.
 
 $$x=3.75\\text{ or }-2.75$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6140,7 +7806,7 @@ Matching the solved value to the claim, the statement is True.`,
     statements: [
       `Every admissible root of $\\sqrt{x+9}=4$ satisfies $x$ is greater than $6$.`,
       `Positions on a rail satisfy $|3x -2|=12$. The two positions add to $4.333333333333334$.`,
-      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $9$ h. Both open: full in $7.24$ h.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $9$ h. Both open from empty: full in $7.24$ h.`,
       `Inlet fills in $4$ h, drain empties in $6$ h; both run on an empty tank. It fills in $14$ h.`,
       `Every admissible root of $\\sqrt{x+8}=3$ satisfies $x$ is greater than $0$.`,
     ],
@@ -6150,13 +7816,19 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+9=16$$
 
+Collect like terms and isolate the variable:
+
 $$x=7$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -6169,42 +7841,52 @@ Sum $=1.3333333333333335$.
 
 $$x=4.666666666666667\\text{ or }-3.3333333333333335$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{72}{17}=4.235294117647059$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+8=9$$
 
+Collect like terms and isolate the variable:
+
 $$x=1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6222,7 +7904,7 @@ Matching the solved value to the claim, the statement is True.`,
       `Inlet fills in $6$ h, drain empties in $6$ h; both run on an empty tank. It fills in $7$ h.`,
       `Every admissible root of $\\sqrt{x+7}=5$ satisfies $x$ is greater than $15$.`,
       `Positions on a rail satisfy $|3x -4|=12$. The two positions add to greater than $1.7$.`,
-      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $10$ h. Both open: full in greater than $3.4$ h.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $10$ h. Both open from empty: full in greater than $3.4$ h.`,
       `Inlet fills in $4$ h, drain empties in $7$ h; both run on an empty tank. It fills in $12.3$ h.`,
     ],
     answer_key: [false, true, true, true, false],
@@ -6231,24 +7913,32 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{6}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+7=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=18$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -6261,29 +7951,33 @@ Sum $=2.6666666666666665$.
 
 $$x=5.333333333333333\\text{ or }-2.6666666666666665$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{80}{18}=4.444444444444445$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{7}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -6298,11 +7992,11 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $8$ h. Both open: full in greater than $2.1$ h.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $8$ h. Both open from empty: full in greater than $2.1$ h.`,
       `Inlet fills in $6$ h, drain empties in $7$ h; both run on an empty tank. It fills in greater than $39$ h.`,
       `Every admissible root of $\\sqrt{x+9}=5$ satisfies $x$ equals $19$.`,
       `Positions on a rail satisfy $|4x -4|=13$. The two positions add to greater than $1$.`,
-      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $9$ h. Both open: full in $6.9399999999999995$ h.`,
+      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $9$ h. Both open from empty: full in $6.9399999999999995$ h.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -6310,35 +8004,45 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{40}{13}=3.076923076923077$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{7}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+9=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=16$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -6351,18 +8055,20 @@ Sum $=2$.
 
 $$x=4.25\\text{ or }-2.25$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{63}{16}=3.9375$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -6391,7 +8097,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $460$ m.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -6400,7 +8106,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $3x=5(x-3)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -6413,31 +8119,39 @@ Sum $=2$.
 
 $$x=3.75\\text{ or }-1.75$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+6=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=19$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{9}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6456,7 +8170,7 @@ Matching the solved value to the claim, the statement is True.`,
       `Trains $180$ m and $200$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
       `Every admissible root of $\\sqrt{x+7}=3$ satisfies $x$ is greater than $1$.`,
       `Positions on a rail satisfy $|3x -2|=10$. The two positions add to $4.333333333333334$.`,
-      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $8$ h. Both open: full in $6.73$ h.`,
+      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $8$ h. Both open from empty: full in $6.73$ h.`,
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
@@ -6466,7 +8180,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $3x=5(x-5)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -6475,20 +8189,26 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $380$ m.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+7=9$$
 
+Collect like terms and isolate the variable:
+
 $$x=2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -6501,18 +8221,20 @@ Sum $=1.3333333333333335$.
 
 $$x=4\\text{ or }-2.6666666666666665$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{56}{15}=3.7333333333333334$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -6545,7 +8267,7 @@ Sum $=2$.
 
 $$x=3.75\\text{ or }-1.75$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -6554,31 +8276,39 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $2x=6(x-4)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{9}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+8=36$$
 
+Collect like terms and isolate the variable:
+
 $$x=28$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -6587,7 +8317,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $460$ m.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6606,7 +8336,7 @@ Matching the solved value to the claim, the statement is True.`,
       `Trains $150$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $11$ s.`,
       `Every admissible root of $\\frac{4}{x-3}=\\frac{5}{x}$ satisfies $x$ equals $14$.`,
       `Inlet fills in $4$ h, drain empties in $8$ h; both run on an empty tank. It fills in greater than $7$ h.`,
-      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $10$ h. Both open: full in $7.44$ h.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $10$ h. Both open from empty: full in $7.44$ h.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
@@ -6614,13 +8344,19 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+9=9$$
 
+Collect like terms and isolate the variable:
+
 $$x=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -6629,7 +8365,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $400$ m.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -6638,29 +8374,33 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $4x=5(x-3)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{8}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{80}{18}=4.444444444444445$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -6687,24 +8427,32 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{6}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+5=36$$
 
+Collect like terms and isolate the variable:
+
 $$x=31$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -6717,7 +8465,7 @@ Sum $=1.5$.
 
 $$x=4\\text{ or }-2.5$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -6726,7 +8474,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $3x=5(x-5)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -6735,7 +8483,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $380$ m.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6764,7 +8512,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $2.6666666666666665$, $-4$; product $-10.666666666666666$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -6773,7 +8521,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.625$; time $5$ h.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -6782,31 +8530,39 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $2x=5(x-5)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{9}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+8=16$$
 
+Collect like terms and isolate the variable:
+
 $$x=8$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -6824,7 +8580,7 @@ Matching the solved value to the claim, the statement is False.`,
       `Trains $150$ m and $200$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes $10$ s.`,
       `Equation $|2x+2|=10$ has two roots whose product is $-26$.`,
       `A job takes $7$ h alone. After $2$ h, the remaining work needs greater than $4$ more hours at the same rate.`,
-      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $10$ h. Both open: full in greater than $2.3$ h.`,
+      `Tap $A$ fills a cistern in $5$ h, tap $B$ in $10$ h. Both open from empty: full in greater than $2.3$ h.`,
       `Inlet fills in $6$ h, drain empties in $6$ h; both run on an empty tank. It fills in greater than $Infinity$ h.`,
     ],
     answer_key: [false, false, true, true, true],
@@ -6835,7 +8591,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $350$ m.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -6844,7 +8600,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $4$, $-6$; product $-24$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -6853,29 +8609,33 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.7142857142857143$; time $5$ h.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{50}{15}=3.3333333333333335$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{6}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6894,7 +8654,7 @@ Matching the solved value to the claim, the statement is True.`,
       `Inlet fills in $4$ h, drain empties in $8$ h; both run on an empty tank. It fills in $11$ h.`,
       `Equation $|3x+1|=9$ has two roots whose product is greater than $-9.9$.`,
       `A job takes $7$ h alone. After $3$ h, the remaining work needs $7$ more hours at the same rate.`,
-      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $9$ h. Both open: full in greater than $3.2$ h.`,
+      `Tap $A$ fills a cistern in $8$ h, tap $B$ in $9$ h. Both open from empty: full in greater than $3.2$ h.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
@@ -6904,18 +8664,20 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $4x=6(x-6)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{8}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -6924,7 +8686,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $2.6666666666666665$, $-3.3333333333333335$; product $-8.88888888888889$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -6933,18 +8695,20 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.5714285714285714$; time $4$ h.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{72}{17}=4.235294117647059$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -6973,7 +8737,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.5$; time $3$ h.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -6982,7 +8746,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $4x=5(x-3)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -6991,7 +8755,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $410$ m.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -7000,7 +8764,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $4$, $-5$; product $-20$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -7013,7 +8777,7 @@ Sum $=1$.
 
 $$x=3.75\\text{ or }-2.75$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7042,7 +8806,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $4$, $-7$; product $-28$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -7051,7 +8815,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.75$; time $6$ h.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -7060,7 +8824,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $3x=6(x-6)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -7069,20 +8833,26 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $430$ m.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+5=9$$
 
+Collect like terms and isolate the variable:
+
 $$x=4$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -7109,24 +8879,32 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{8}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+5=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=20$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -7135,7 +8913,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.5714285714285714$; time $4$ h.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -7144,18 +8922,20 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $3x=5(x-3)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{9}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7184,7 +8964,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $350$ m.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -7193,7 +8973,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $4x=6(x-4)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -7202,7 +8982,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.6666666666666667$; time $4.000000000000001$ h.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -7211,7 +8991,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $2.6666666666666665$, $-4.666666666666667$; product $-12.444444444444445$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -7224,7 +9004,7 @@ Combined length $330$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{330}{50}=7$$ s.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -7253,7 +9033,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $4x=6(x-6)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -7266,31 +9046,39 @@ Sum $=1.9999999999999996$.
 
 $$x=4.333333333333333\\text{ or }-2.3333333333333335$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+6=16$$
 
+Collect like terms and isolate the variable:
+
 $$x=10$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{8}=\\frac{1}{t}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -7303,7 +9091,7 @@ Combined length $400$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{400}{50}=8$$ s.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7321,7 +9109,7 @@ Matching the solved value to the claim, the statement is False.`,
       `Positions on a rail satisfy $|3x -3|=12$. The two positions add to greater than $1$.`,
       `Every admissible root of $\\sqrt{x+7}=6$ satisfies $x$ equals $32$.`,
       `Every admissible root of $\\frac{4}{x-5}=\\frac{5}{x}$ satisfies $x$ is greater than $18.8$.`,
-      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $9$ h. Both open: full in greater than $2.6$ h.`,
+      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $9$ h. Both open from empty: full in greater than $2.6$ h.`,
       `Two trains of lengths $120$ m and $180$ m move towards each other on parallel tracks at $72$ km/h and $108$ km/h. Timing starts when the fronts meet and stops when neither train overlaps the other. That passing interval lasts $8$ seconds.`,
     ],
     answer_key: [true, false, true, true, false],
@@ -7336,20 +9124,26 @@ Sum $=2$.
 
 $$x=5\\text{ or }-3$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+7=36$$
 
+Collect like terms and isolate the variable:
+
 $$x=29$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -7358,18 +9152,20 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $4x=5(x-5)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{54}{15}=3.6$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -7382,7 +9178,7 @@ Combined length $300$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{300}{50}=6$$ s.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7411,31 +9207,39 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $2.6666666666666665$, $-4.666666666666667$; product $-12.444444444444445$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{6}-\\frac{1}{8}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+8=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=17$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -7444,7 +9248,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.7142857142857143$; time $5$ h.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -7453,7 +9257,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $430$ m.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -7480,13 +9284,19 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+7=36$$
 
+Collect like terms and isolate the variable:
+
 $$x=29$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -7495,7 +9305,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $2x=6(x-6)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -7508,7 +9318,7 @@ Combined length $300$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{300}{50}=6$$ s.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -7517,7 +9327,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.625$; time $5$ h.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -7530,7 +9340,7 @@ Sum $=1.5$.
 
 $$x=3.5\\text{ or }-2$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7557,11 +9367,13 @@ Matching the solved value to the claim, the statement is False.`,
 
 Write the work-rate or rational model as an equation in one variable. Clear denominators if needed, solve, and check against the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -7574,7 +9386,7 @@ Combined length $340$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{340}{50}=7$$ s.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -7587,18 +9399,20 @@ Sum $=1$.
 
 $$x=3.25\\text{ or }-2.25$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{5}-\\frac{1}{8}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -7607,7 +9421,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $2x=5(x-3)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -7625,7 +9439,7 @@ Matching the solved value to the claim, the statement is True.`,
       `Every admissible root of $\\frac{3}{x-4}=\\frac{6}{x}$ satisfies $x$ is greater than $3.6$.`,
       `Every admissible root of $\\sqrt{x+7}=5$ satisfies $x$ equals $20$.`,
       `A ladder touches a wall $3$ m above ground while its foot stands $4$ m from the wall along level ground. The ladder length is $9$ m.`,
-      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $8$ h. Both open: full in $6.43$ h.`,
+      `Tap $A$ fills a cistern in $6$ h, tap $B$ in $8$ h. Both open from empty: full in $6.43$ h.`,
       `A job takes $6$ h alone. After $3$ h, the remaining work needs greater than $2$ more hours at the same rate.`,
     ],
     answer_key: [true, false, false, false, true],
@@ -7636,42 +9450,52 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $3x=6(x-4)$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+7=25$$
 
+Collect like terms and isolate the variable:
+
 $$x=18$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 State the equation implied by the geometry or radical condition. Square only after checking the domain, then verify the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$L=\\sqrt{3^2+4^2}=5$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{48}{14}=3.4285714285714284$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -7680,7 +9504,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Left fraction $0.5$; time $3$ h.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -7713,29 +9537,33 @@ Sum $=2.666666666666667$.
 
 $$x=4.666666666666667\\text{ or }-2$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Write the work-rate or rational model as an equation in one variable. Clear denominators if needed, solve, and check against the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{6}=\\frac{1}{12}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$\\frac{1}{4}-\\frac{1}{9}=\\frac{1}{t}$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -7748,7 +9576,7 @@ Combined length $360$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{360}{50}=7$$ s.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -7757,7 +9585,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $4$, $-7$; product $-28$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7772,7 +9600,7 @@ Matching the solved value to the claim, the statement is False.`,
     subsection: `4.3`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $8$ h. Both open: full in greater than $2.7$ h.`,
+      `Tap $A$ fills a cistern in $7$ h, tap $B$ in $8$ h. Both open from empty: full in greater than $2.7$ h.`,
       `A ladder touches a wall $3$ m above ground while its foot stands $4$ m from the wall along level ground. The ladder length is greater than $3$ m.`,
       `Positions on a rail satisfy $|3x -4|=12$. The two positions add to $5.666666666666666$.`,
       `Trains $150$ m and $250$ m long approach at $72$ and $108$ km/h. From front meeting to full pass takes greater than $6$ s.`,
@@ -7784,22 +9612,26 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$t=\\frac{56}{15}=3.7333333333333334$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 State the equation implied by the geometry or radical condition. Square only after checking the domain, then verify the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$L=\\sqrt{3^2+4^2}=5$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -7812,7 +9644,7 @@ Sum $=2.6666666666666665$.
 
 $$x=5.333333333333333\\text{ or }-2.6666666666666665$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -7821,7 +9653,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Relative $180$ km/h, length $400$ m.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -7834,7 +9666,7 @@ Combined length $330$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{330}{50}=7$$ s.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -7863,7 +9695,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Roots $2.6666666666666665$, $-4$; product $-10.666666666666666$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -7872,7 +9704,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Cross-multiply: $2x=5(x-3)$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -7885,20 +9717,26 @@ Combined length $370$ m; relative speed $180$ km/h $=50$ m/s.
 
 $$t=\\frac{370}{50}=7$$ s.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$x+8=36$$
 
+Collect like terms and isolate the variable:
+
 $$x=28$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -7911,7 +9749,7 @@ Sum $=2.666666666666667$.
 
 $$x=4.666666666666667\\text{ or }-2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],

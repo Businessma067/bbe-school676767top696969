@@ -31,8 +31,8 @@ const TRUE_PLUG_PATS = [
 
 /** Pure calculation — not equation-solving topic. */
 const PURE_ARITH_PATS = [
-  /^(\$\\sqrt\{[^}]+\}\$|\$\\sqrt\{[^}]+\}\s*\+|\$\\sqrt\{[^}]+\}\s*equals)/i,
-  /^\$\\sqrt\{[0-9]+\+[0-9]+\}\$ equals/i,
+  /^(\$\\sqrt\{[^}]*\}\$|\$\\sqrt\{[^}]*\}\s*\+|\$\\sqrt\{[^}]*\}\s*equals)/i,
+  /^\$\\sqrt\{[0-9+\s]+\}\$ equals/i,
   /Converting \$[0-9]+(?:\.[0-9]+)?\$ mph to km\/h/i,
   /^The decadic logarithm of \$[0-9]+\$ equals/i,
   /^In an exam item, the decadic logarithm of \$[0-9]+\$ equals/i,
@@ -136,6 +136,8 @@ const EQUATION_MARKERS = [
   /product of two consecutive/i,
   /Two positive numbers have product/i,
   /positive number plus its reciprocal equals/i,
+  /positive number \$x\$ and its reciprocal/i,
+  /reciprocal add to/i,
   /A job takes \$[0-9]+ h alone\. After/i,
   /A trip: \$[0-9]+ km at/i,
   /Trains \$[0-9]+ m and \$[0-9]+ m long approach/i,

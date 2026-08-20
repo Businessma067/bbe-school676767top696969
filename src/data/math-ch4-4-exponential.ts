@@ -31,7 +31,7 @@ $x > 256$.
 
 $$x=4^{5}=1024$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -44,18 +44,20 @@ Two positive $u$ → two $x$.
 
 $$3u^2-27u+54=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$2^x > 0$$ always; RHS negative.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -64,18 +66,20 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=5$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=4^{6}=4096$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -100,17 +104,21 @@ Matching the solved value to the claim, the statement is False.`,
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
 Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-14u+40=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-4)(u-10)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -119,44 +127,58 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=5^{4}=625$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(4e^{2})$$
 
+Collect like terms and isolate the variable:
+
 $$x=29.56$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(4x)=5$$
 
+Collect like terms and isolate the variable:
+
 $$x=100000$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -183,37 +205,51 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=2^{7}=128$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(5e^{3})$$
 
+Collect like terms and isolate the variable:
+
 $$x=100.43$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(5x)=6$$
 
+Collect like terms and isolate the variable:
+
 $$x=1000000$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -224,13 +260,19 @@ Set up the model and solve:
 
 $x < 7$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{6}-6-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.627$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -241,11 +283,15 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+2)=10^{1}$$
+
+Collect like terms and isolate the variable:
 
 $$x=2.32$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -272,13 +318,19 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(6x)=7$$
 
+Collect like terms and isolate the variable:
+
 $$x=10000000$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -289,13 +341,19 @@ Set up the model and solve:
 
 $x < 8$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -1$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -306,11 +364,15 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+3)=10^{2}$$
+
+Collect like terms and isolate the variable:
 
 $$x=8.61$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -319,7 +381,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -330,11 +392,15 @@ Set up the model and solve:
 
 Domain requires $x>4$.
 
+Translate the story into one equation in the unknown:
+
 $$x-4=5$$
+
+Collect like terms and isolate the variable:
 
 $$x=9$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -365,26 +431,34 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+4)=10^{1}$$
+
+Collect like terms and isolate the variable:
 
 $$x=1.74$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
 Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-8u+12=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-2)(u-6)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -395,33 +469,59 @@ Set up the model and solve:
 
 Domain requires $x>7$.
 
+Translate the story into one equation in the unknown:
+
 $$x-7=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=9$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{3}\\log_{3} x = 5$$
 
+Collect like terms and isolate the variable:
+
 $$x=3^{3.75}=61.55$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=2$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=2$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$3^{2x} = 3^{x+2}$$
+
+Reduce to a single logarithm or power equation:
+
+$$2x = x+2$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 2$$
+
+Since $x=2$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -452,33 +552,59 @@ Set up the model and solve:
 
 Domain requires $x>5$.
 
+Translate the story into one equation in the unknown:
+
 $$x-5=3$$
+
+Collect like terms and isolate the variable:
 
 $$x=8$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{2}\\log_{4} x = 6$$
 
+Collect like terms and isolate the variable:
+
 $$x=4^{4}=256$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=3$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=3$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$5^{2x} = 5^{x+3}$$
+
+Reduce to a single logarithm or power equation:
+
+$$2x = x+3$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 3$$
+
+Since $x=3$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -491,7 +617,7 @@ $x > 4$.
 
 $$x=2^{3}=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -504,7 +630,7 @@ Two positive $u$ → two $x$.
 
 $$3u^2-30u+63=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -529,11 +655,27 @@ Matching the solved value to the claim, the statement is True.`,
     tactical_explanations: [
       `**A.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=1$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=1$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$2^x = \\frac{3^x}{3}$$
+
+Reduce to a single logarithm or power equation:
+
+$$\\left(\\frac{2}{3}\\right)^x = \\frac{1}{3}$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 1$$
+
+Since $x=1$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -546,33 +688,39 @@ Two positive $u$ → two $x$.
 
 $$3u^2-24u+45=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$2^x > 0$$ always; RHS negative.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
 Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-8u+12=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-2)(u-6)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -581,7 +729,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -612,26 +760,34 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+4)=10^{1}$$
+
+Collect like terms and isolate the variable:
 
 $$x=1.74$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
 Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-11u+24=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-3)(u-8)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -640,31 +796,39 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=4^{6}=4096$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(3e^{5})$$
 
+Collect like terms and isolate the variable:
+
 $$x=445.24$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -693,44 +857,58 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=5^{4}=625$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(4e^{2})$$
 
+Collect like terms and isolate the variable:
+
 $$x=29.56$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(4x)=5$$
 
+Collect like terms and isolate the variable:
+
 $$x=100000$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -741,13 +919,19 @@ Set up the model and solve:
 
 $x < 6$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{5}-5-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.714$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -772,26 +956,46 @@ Matching the solved value to the claim, the statement is True.`,
     tactical_explanations: [
       `**A.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=1$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=1$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$2^x = \\frac{3^x}{3}$$
+
+Reduce to a single logarithm or power equation:
+
+$$\\left(\\frac{2}{3}\\right)^x = \\frac{1}{3}$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 1$$
+
+Since $x=1$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
 Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-11u+24=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-3)(u-8)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -804,7 +1008,7 @@ Two positive $u$ → two $x$.
 
 $$2u^2-16u+24=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -815,11 +1019,15 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+2)=10^{1}$$
+
+Collect like terms and isolate the variable:
 
 $$x=2.32$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -830,11 +1038,15 @@ Set up the model and solve:
 
 Domain requires $x>6$.
 
+Translate the story into one equation in the unknown:
+
 $$x-6=5$$
+
+Collect like terms and isolate the variable:
 
 $$x=11$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -861,11 +1073,13 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$3^x > 0$$ always; RHS negative.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -876,11 +1090,15 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+3)=10^{2}$$
+
+Collect like terms and isolate the variable:
 
 $$x=8.61$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -889,31 +1107,39 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=5$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=4^{7}=16384$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{2}\\log_{2} x = 4$$
 
+Collect like terms and isolate the variable:
+
 $$x=2^{2.6666666666666665}=6.35$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -942,7 +1168,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -953,24 +1179,34 @@ Set up the model and solve:
 
 Domain requires $x>7$.
 
+Translate the story into one equation in the unknown:
+
 $$x-7=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=9$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{3}\\log_{3} x = 5$$
 
+Collect like terms and isolate the variable:
+
 $$x=3^{3.75}=61.55$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -983,18 +1219,20 @@ Two positive $u$ → two $x$.
 
 $$2u^2-16u+24=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=5^{7}=78125$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1021,22 +1259,44 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{2}\\log_{4} x = 6$$
 
+Collect like terms and isolate the variable:
+
 $$x=4^{4}=256$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=3$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=3$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$5^{2x} = 5^{x+3}$$
+
+Reduce to a single logarithm or power equation:
+
+$$2x = x+3$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 3$$
+
+Since $x=3$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -1047,24 +1307,32 @@ Set up the model and solve:
 
 $x < 5$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{6}-6-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.627$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$5^x > 0$$ always; RHS negative.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -1075,11 +1343,15 @@ Set up the model and solve:
 
 Domain requires $x>7$.
 
+Translate the story into one equation in the unknown:
+
 $$x-7=5$$
+
+Collect like terms and isolate the variable:
 
 $$x=12$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1108,7 +1380,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -1121,7 +1393,7 @@ Two positive $u$ → two $x$.
 
 $$2u^2-14u+20=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -1132,35 +1404,47 @@ Set up the model and solve:
 
 Domain requires $x>5$.
 
+Translate the story into one equation in the unknown:
+
 $$x-5=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=7$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=4^{3}=64$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{2}\\log_{3} x = 5$$
 
+Collect like terms and isolate the variable:
+
 $$x=3^{3.3333333333333335}=38.94$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1189,7 +1473,7 @@ Translate the wording into one linear equation in a single unknown. Isolate the 
 
 Match powers → $x=4$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
@@ -1200,24 +1484,34 @@ Set up the model and solve:
 
 Domain requires $x>8$.
 
+Translate the story into one equation in the unknown:
+
 $$x-8=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=10$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{3}\\log_{4} x = 6$$
 
+Collect like terms and isolate the variable:
+
 $$x=4^{4.5}=512$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -1230,20 +1524,26 @@ Two positive $u$ → two $x$.
 
 $$2u^2-18u+28=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(3x)=4$$
 
+Collect like terms and isolate the variable:
+
 $$x=10000$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1270,13 +1570,19 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{2}\\log_{2} x = 4$$
 
+Collect like terms and isolate the variable:
+
 $$x=2^{2.6666666666666665}=6.35$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -1287,11 +1593,15 @@ Set up the model and solve:
 
 Domain requires $x>8$.
 
+Translate the story into one equation in the unknown:
+
 $$x-8=4$$
+
+Collect like terms and isolate the variable:
 
 $$x=12$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -1304,18 +1614,20 @@ Two positive $u$ → two $x$.
 
 $$2u^2-14u+20=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$5^x > 0$$ always; RHS negative.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -1326,11 +1638,15 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+5)=10^{2}$$
+
+Collect like terms and isolate the variable:
 
 $$x=7.81$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1357,13 +1673,19 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(5x)=6$$
 
+Collect like terms and isolate the variable:
+
 $$x=1000000$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -1374,44 +1696,72 @@ Set up the model and solve:
 
 Domain requires $x>6$.
 
+Translate the story into one equation in the unknown:
+
 $$x-6=3$$
+
+Collect like terms and isolate the variable:
 
 $$x=9$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(3e^{3})$$
 
+Collect like terms and isolate the variable:
+
 $$x=60.26$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=4^{4}=256$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=2$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=2$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$3^{2x} = 3^{x+2}$$
+
+Reduce to a single logarithm or power equation:
+
+$$2x = x+2$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 2$$
+
+Since $x=2$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1444,7 +1794,7 @@ Two positive $u$ → two $x$.
 
 $$3u^2-30u+63=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -1455,13 +1805,19 @@ Set up the model and solve:
 
 $x < 7$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.831$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -1472,11 +1828,15 @@ Set up the model and solve:
 
 Domain requires $x>8$.
 
+Translate the story into one equation in the unknown:
+
 $$x-8=4$$
+
+Collect like terms and isolate the variable:
 
 $$x=12$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -1489,16 +1849,32 @@ $x > 27$.
 
 $$x=3^{4}=81$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=4$.
+Set up the model and solve:
 
-The value recovered from the model contradicts the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=4$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$2^{2x} = 2^{x+4}$$
+
+Reduce to a single logarithm or power equation:
+
+$$2x = x+4$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 4$$
+
+Since $x=4$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1525,24 +1901,32 @@ Matching the solved value to the claim, the statement is False.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=5^{5}=3125$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(5e^{2})$$
 
+Collect like terms and isolate the variable:
+
 $$x=36.95$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
@@ -1553,20 +1937,40 @@ Set up the model and solve:
 
 Domain requires $x>4$.
 
+Translate the story into one equation in the unknown:
+
 $$x-4=3$$
+
+Collect like terms and isolate the variable:
 
 $$x=7$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Match bases / monotonicity gives $x=4$.
+Set up the model and solve:
 
-The value recovered from the model satisfies the inequality in the claim.
+Rewrite with a common base and equate exponents:
+
+Since $x=4$, compare with the bound in the claim.
+
+Combine log or exponential terms using standard laws:
+
+$$2^{2x} = 2^{x+4}$$
+
+Reduce to a single logarithm or power equation:
+
+$$2x = x+4$$
+
+Solve for the variable and compare with the inequality in the claim:
+
+$$x = 4$$
+
+Since $x=4$, compare with the bound in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
@@ -1577,15 +1981,19 @@ Set up the model and solve:
 
 Use $\\log 100=2$ on the right-hand side.
 
-$$\\log x = 0.4$$
-
-$$x = 10^{0.4} = 2.51$$
-
 Combine coefficients of $\\log x$ on the left:
 
 $x < 12$.
 
-The value recovered from the model contradicts the claim.
+Combine log or exponential terms using standard laws:
+
+$$\\log x = 0.4$$
+
+Reduce to a single logarithm or power equation:
+
+$$x = 10^{0.4} = 2.51$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1616,11 +2024,15 @@ Set up the model and solve:
 
 Domain requires $x>7$.
 
+Translate the story into one equation in the unknown:
+
 $$x-7=4$$
+
+Collect like terms and isolate the variable:
 
 $$x=11$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
@@ -1631,43 +2043,57 @@ Set up the model and solve:
 
 Use $\\log 100=2$ on the right-hand side.
 
-$$\\log x = 0.5$$
-
-$$x = 10^{0.5} = 3.16$$
-
 Combine coefficients of $\\log x$ on the left:
 
 $x < 8$.
 
-The value recovered from the model contradicts the claim.
+Combine log or exponential terms using standard laws:
+
+$$\\log x = 0.5$$
+
+Reduce to a single logarithm or power equation:
+
+$$x = 10^{0.5} = 3.16$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
 
-Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
+Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
 Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-14u+40=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-4)(u-10)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{3}{2}\\log_{3} x = 5$$
 
+Collect like terms and isolate the variable:
+
 $$x=3^{3.3333333333333335}=38.94$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -1680,7 +2106,7 @@ Two positive $u$ → two $x$.
 
 $$3u^2-24u+45=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1707,24 +2133,32 @@ Matching the solved value to the claim, the statement is True.`,
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{3}\\log_{2} x = 4$$
 
+Collect like terms and isolate the variable:
+
 $$x=2^{3}=8$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=5^{3}=125$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -1735,13 +2169,19 @@ Set up the model and solve:
 
 $x < 9$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{6}-6-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.627$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -1752,24 +2192,34 @@ Set up the model and solve:
 
 Domain requires $x>8$.
 
+Translate the story into one equation in the unknown:
+
 $$x-8=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=10$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(5e^{4})$$
 
+Collect like terms and isolate the variable:
+
 $$x=272.99$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1800,48 +2250,66 @@ Set up the model and solve:
 
 Domain requires $x>6$.
 
+Translate the story into one equation in the unknown:
+
 $$x-6=4$$
+
+Collect like terms and isolate the variable:
 
 $$x=10$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(3e^{2})$$
 
+Collect like terms and isolate the variable:
+
 $$x=22.17$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=2^{3}=8$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\log(3x)=4$$
 
+Collect like terms and isolate the variable:
+
 $$x=10000$$.
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -1852,13 +2320,19 @@ Set up the model and solve:
 
 $x < 5$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.831$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -1889,15 +2363,21 @@ Set up the model and solve:
 
 Domain requires $x>0$. With $\\log 100=2$:
 
+$10 \\ge 5$, so the root is not smaller than $5$.
+
+Combine log or exponential terms using standard laws:
+
 $$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Reduce to a single logarithm or power equation:
 
 $$\\log x = 1$$
 
+Solve for the variable and compare with the inequality in the claim:
+
 $$x = 10$$
 
-$10 \\ge 5$, so the root is not smaller than $5$.
-
-The value recovered from the model satisfies the inequality in the claim.
+Domain requires $x>0$. With $\\log 100=2$:
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -1908,15 +2388,19 @@ Set up the model and solve:
 
 Use $\\log 100=2$ on the right-hand side.
 
-$$\\log x = 1$$
-
-$$x = 10^{1} = 10$$
-
 Combine coefficients of $\\log x$ on the left:
 
 $x \\ge 5$.
 
-The value recovered from the model contradicts the claim.
+Combine log or exponential terms using standard laws:
+
+$$\\log x = 1$$
+
+Reduce to a single logarithm or power equation:
+
+$$x = 10^{1} = 10$$
+
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → False
@@ -1927,11 +2411,15 @@ Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-10u+21=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-3)(u-7)=0$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → True
@@ -1944,20 +2432,26 @@ Two positive $u$ → two $x$.
 
 $$3u^2-27u+54=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{3}\\log_{2} x = 4$$
 
+Collect like terms and isolate the variable:
+
 $$x=2^{3}=8$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -1984,15 +2478,23 @@ Matching the solved value to the claim, the statement is False.`,
 
 Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Combine log or exponential terms using standard laws:
 
 $$\\log(x(x+3))=1$$
 
+Reduce to a single logarithm or power equation:
+
 $$x(x+3)=10$$
+
+Solve for the variable and compare with the inequality in the claim:
 
 $$x=2$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → True
@@ -2003,11 +2505,15 @@ Set up the model and solve:
 
 Two positive $u$ give two real $x$.
 
+Combine log or exponential terms using standard laws:
+
 $$u^2-10u+21=0$$
+
+Reduce to a single logarithm or power equation:
 
 $$(u-3)(u-7)=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → True
@@ -2018,24 +2524,34 @@ Set up the model and solve:
 
 Domain requires $x>6$.
 
+Translate the story into one equation in the unknown:
+
 $$x-6=5$$
+
+Collect like terms and isolate the variable:
 
 $$x=11$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\frac{4}{3}\\log_{4} x = 6$$
 
+Collect like terms and isolate the variable:
+
 $$x=4^{4.5}=512$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -2046,15 +2562,19 @@ Set up the model and solve:
 
 Use $\\log 100=2$ on the right-hand side.
 
-$$\\log x = 0.4$$
-
-$$x = 10^{0.4} = 2.51$$
-
 Combine coefficients of $\\log x$ on the left:
 
 $x < 12$.
 
-The value recovered from the model satisfies the inequality in the claim.
+Combine log or exponential terms using standard laws:
+
+$$\\log x = 0.4$$
+
+Reduce to a single logarithm or power equation:
+
+$$x = 10^{0.4} = 2.51$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2085,43 +2605,61 @@ Set up the model and solve:
 
 Use $\\log 100=2$ on the right-hand side.
 
-$$\\log x = 0.5$$
-
-$$x = 10^{0.5} = 3.16$$
-
 Combine coefficients of $\\log x$ on the left:
 
 $x < 8$.
 
-The value recovered from the model satisfies the inequality in the claim.
+Combine log or exponential terms using standard laws:
+
+$$\\log x = 0.5$$
+
+Reduce to a single logarithm or power equation:
+
+$$x = 10^{0.5} = 3.16$$
+
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → True
 
 Use log and exponential laws to reduce the equation to a single logarithm or power. Respect the domain, solve for the variable, then compare with the claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Combine log or exponential terms using standard laws:
 
 $$\\log(x(x+3))=1$$
 
+Reduce to a single logarithm or power equation:
+
 $$x(x+3)=10$$
+
+Solve for the variable and compare with the inequality in the claim:
 
 $$x=2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**C.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
+
+Translate the story into one equation in the unknown:
 
 $$\\ln x = \\ln(4e^{5})$$
 
+Collect like terms and isolate the variable:
+
 $$x=593.65$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**D.** → False
@@ -2132,11 +2670,15 @@ Set up the model and solve:
 
 Domain requires $x>4$.
 
+Translate the story into one equation in the unknown:
+
 $$x-4=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=6$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → False
@@ -2147,11 +2689,15 @@ Set up the model and solve:
 
 Compare with the bound in the claim.
 
+Translate the story into one equation in the unknown:
+
 $$x(x+5)=10^{2}$$
+
+Collect like terms and isolate the variable:
 
 $$x=7.81$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
     ],
@@ -2182,22 +2728,28 @@ Set up the model and solve:
 
 Domain requires $x>8$.
 
+Translate the story into one equation in the unknown:
+
 $$x-8=3$$
+
+Collect like terms and isolate the variable:
 
 $$x=11$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**B.** → False
 
 Translate the wording into one linear equation in a single unknown. Isolate the variable and compare the recovered value with the closing claim.
 
-Work from the story to a single equation, then solve:
+Set up the model and solve:
+
+Work from the wording to an equation, then solve step by step:
 
 $$x=2^{7}=128$$.
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -2210,7 +2762,7 @@ Two positive $u$ → two $x$.
 
 $$2u^2-18u+28=0$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → True
@@ -2221,13 +2773,19 @@ Set up the model and solve:
 
 $x < 8$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{5}-5-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.714$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.2$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**E.** → True
@@ -2238,11 +2796,15 @@ Set up the model and solve:
 
 Domain requires $x>5$.
 
+Translate the story into one equation in the unknown:
+
 $$x-5=5$$
+
+Collect like terms and isolate the variable:
 
 $$x=10$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
@@ -2273,13 +2835,19 @@ Set up the model and solve:
 
 $x < 4$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -1$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**B.** → False
@@ -2290,11 +2858,15 @@ Set up the model and solve:
 
 Domain requires $x>4$.
 
+Translate the story into one equation in the unknown:
+
 $$x-4=5$$
+
+Collect like terms and isolate the variable:
 
 $$x=9$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**C.** → True
@@ -2305,13 +2877,19 @@ Set up the model and solve:
 
 $x < 6$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{3}-3-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -1$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
       `**D.** → False
@@ -2322,11 +2900,15 @@ Set up the model and solve:
 
 Domain requires $x>6$.
 
+Translate the story into one equation in the unknown:
+
 $$x-6=2$$
+
+Collect like terms and isolate the variable:
 
 $$x=8$$
 
-The value recovered from the model contradicts the claim.
+The recovered value contradicts the claim.
 
 Matching the solved value to the claim, the statement is False.`,
       `**E.** → True
@@ -2337,13 +2919,19 @@ Set up the model and solve:
 
 $x < 9$.
 
+Translate the story into one equation in the unknown:
+
 $$\\left(\\frac{1}{4}-4-2\\right)\\log x + \\frac{16}{3} = \\frac{2}{3}\\log x$$
+
+Collect like terms and isolate the variable:
 
 $$\\log x = -0.831$$
 
+Read off the numerical value and compare with the claim:
+
 $$x \\approx 0.1$$
 
-The value recovered from the model satisfies the inequality in the claim.
+The recovered value satisfies the inequality or comparison in the claim.
 
 Matching the solved value to the claim, the statement is True.`,
     ],
