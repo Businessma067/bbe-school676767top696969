@@ -1,0 +1,26 @@
+{
+ "title": "Counting solutions in general families",
+ "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "For every positive number $k$ the equation $2^{x} = k$ has exactly one real solution.",
+  "For every base $a > 1$ the equation $a^{x} = x$ has a real solution.",
+  "The equation $5^{x} = 4^{x} + 3^{x}$ has exactly one real solution.",
+  "The equation $(\\log x)^{3} = \\log x^{4}$ has three solutions.",
+  "The equation $x^{\\log x} = \\frac{1}{100}$ has a real solution."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  true,
+  false
+ ],
+ "solution_overview": "This set of statements evaluates standard properties, existence conditions, and solution counts for exponential and logarithmic equations over the real numbers. Throughout the analysis, the decadic logarithm $\\log$ has base $10$ with domain $(0, \\infty)$. Solving equations involving powers and logarithms relies on monotonicity, transformations that isolate algebraic forms in terms of $\\log x$, and the fundamental identity relating exponentials to logarithms.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe function $f(x) = 2^{x}$ is continuous and strictly increasing on the entire real line $\\mathbb{R}$.\n\nThe range of this exponential function is the set of all strictly positive real numbers:\n\n$$\\lim_{x \\to -\\infty} 2^{x} = 0 \\quad \\text{and} \\quad \\lim_{x \\to \\infty} 2^{x} = \\infty$$\n\nBecause $f$ is strictly monotonic, it is a bijection from $\\mathbb{R}$ to $(0, \\infty)$. Applying the logarithm base $2$ to both sides of the equation yields the unique solution:\n\n$$x = \\log_{2}(k)$$\n\nSince $k > 0$, this logarithm is always uniquely defined in the real numbers, so the statement is True.",
+  "**B.** → False\n\nA universal statement of the form for all $a > 1$ can be disproved by finding a single counterexample.\n\nConsider the base $a = 2$. We examine the function:\n\n$$f(x) = 2^{x} - x$$\n\nThe derivative is:\n\n$$f'(x) = 2^{x} \\ln(2) - 1$$\n\nSetting $f'(x) = 0$ gives the global minimum at:\n\n$$x = -\\frac{\\ln(\\ln 2)}{\\ln 2} \\approx 0.5287$$\n\nEvaluating the function at this minimum yields a strictly positive value:\n\n$$f(x) \\approx 2^{0.5287} - 0.5287 \\approx 1.4427 - 0.5287 = 0.9140 > 0$$\n\nSince $2^{x} - x > 0$ for all real $x$, the equation $2^{x} = x$ has no real solution, so the statement is False.",
+  "**C.** → True\n\nDivide both sides of the equation by $5^{x}$ to reformulate the expression:\n\n$$1 = \\left(\\frac{4}{5}\\right)^{x} + \\left(\\frac{3}{5}\\right)^{x}$$\n\nDefine the function $f(x)$ for all real numbers $x$:\n\n$$f(x) = \\left(\\frac{4}{5}\\right)^{x} + \\left(\\frac{3}{5}\\right)^{x}$$\n\nBecause both bases $\\frac{4}{5}$ and $\\frac{3}{5}$ are strictly between $0$ and $1$, both terms are strictly decreasing continuous functions, making $f(x)$ strictly decreasing on $\\mathbb{R}$.\n\nTesting the integer value $x = 2$ gives:\n\n$$f(2) = \\left(\\frac{4}{5}\\right)^{2} + \\left(\\frac{3}{5}\\right)^{2} = \\frac{16}{25} + \\frac{9}{25} = 1$$\n\nBecause $f$ is strictly decreasing, it can take the value $1$ at most once, which makes $x = 2$ the unique real solution, so the statement is True.",
+  "**D.** → True\n\nThe equation is defined for all $x > 0$. Using the power rule for logarithms, we rewrite the right-hand side:\n\n$$\\log(x^{4}) = 4 \\log x$$\n\nSubstituting this into the equation gives:\n\n$$(\\log x)^{3} = 4 \\log x$$\n\nMoving all terms to the left-hand side and factoring yields:\n\n$$(\\log x)^{3} - 4 \\log x = 0$$\n\n$$\\log x \\cdot ((\\log x)^{2} - 4) = 0$$\n\n$$\\log x \\cdot (\\log x - 2) \\cdot (\\log x + 2) = 0$$\n\nThis product equals zero when $\\log x = 0$, $\\log x = 2$, or $\\log x = -2$. Solving for $x$ in each case gives:\n\n$$x = 10^{0} = 1$$\n\n$$x = 10^{2} = 100$$\n\n$$x = 10^{-2} = \\frac{1}{100}$$\n\nAll three values are positive and thus lie in the domain, giving three distinct solutions, so the statement is True.",
+  "**E.** → False\n\nThe equation is defined for $x > 0$. Taking the decadic logarithm of both sides gives:\n\n$$\\log\\left(x^{\\log x}\\right) = \\log\\left(\\frac{1}{100}\\right)$$\n\nApplying the power property of logarithms to the left-hand side and evaluating the logarithm on the right-hand side yields:\n\n$$(\\log x) \\cdot (\\log x) = \\log\\left(10^{-2}\\right)$$\n\n$$(\\log x)^{2} = -2$$\n\nFor any real number $x > 0$, the quantity $\\log x$ is a real number, and the square of any real number must satisfy $(\\log x)^{2} \\ge 0$.\n\nBecause a non-negative real number cannot equal $-2$, no real solution exists, so the statement is False."
+ ]
+}

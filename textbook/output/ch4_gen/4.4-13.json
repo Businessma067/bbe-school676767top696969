@@ -1,0 +1,26 @@
+{
+ "title": "Comparing logarithms without a calculator",
+ "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "$\\log_{2} 5$ is greater than $\\log_{3} 5$.",
+  "The product $\\log_{2} 5 \\cdot \\log_{5} 2$ equals one.",
+  "$\\log_{4} 9$ and $\\log_{2} 3$ are equal.",
+  "$\\log_{9} 4$ is larger than one.",
+  "For a fixed argument $b > 1$, the value of $\\log_{a} b$ increases when the base $a > 1$ increases."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "We analyze logarithmic expressions with bases and arguments greater than one. The change-of-base formula expresses any logarithm with base $a > 0$ ($a \\neq 1$) and argument $b > 0$ using natural logarithms:\n\n$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$\n\nFrom this definition, the product of reciprocal base-argument pairs evaluates directly:\n\n$$\\log_{a} b \\cdot \\log_{b} a = \\frac{\\ln b}{\\ln a} \\cdot \\frac{\\ln a}{\\ln b} = 1$$\n\nPowers shared by both base and argument simplify via the logarithm power rule:\n\n$$\\log_{a^k} (b^k) = \\frac{\\ln(b^k)}{\\ln(a^k)} = \\frac{k \\ln b}{k \\ln a} = \\frac{\\ln b}{\\ln a} = \\log_{a} b$$\n\nFor any fixed argument $b > 1$, the numerator $\\ln b$ is strictly positive, meaning that the function $f(a) = \\frac{\\ln b}{\\ln a}$ is strictly decreasing in $a$ for all $a > 1$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo compare $\\log_{2} 5$ and $\\log_{3} 5$, we rewrite each using the change-of-base formula:\n\n$$\\log_{2} 5 = \\frac{\\ln 5}{\\ln 2}$$\n\n$$\\log_{3} 5 = \\frac{\\ln 5}{\\ln 3}$$\n\nBecause the argument $5 > 1$, the numerator $\\ln 5$ is strictly positive. Comparing the denominators, $2 < 3$ implies:\n\n$$\\ln 2 < \\ln 3$$\n\nDividing a fixed positive numerator by a smaller positive denominator yields a strictly larger quotient:\n\n$$\\frac{\\ln 5}{\\ln 2} > \\frac{\\ln 5}{\\ln 3}$$\n\nThis shows that $\\log_{2} 5 > \\log_{3} 5$, so the statement is True.",
+  "**B.** → True\n\nTo compute the product of two logarithms with interchanged bases and arguments, we apply the change-of-base formula to each factor:\n\n$$\\log_{2} 5 = \\frac{\\ln 5}{\\ln 2}$$\n\n$$\\log_{5} 2 = \\frac{\\ln 2}{\\ln 5}$$\n\nMultiplying the two fractions gives:\n\n$$\\log_{2} 5 \\cdot \\log_{5} 2 = \\frac{\\ln 5}{\\ln 2} \\cdot \\frac{\\ln 2}{\\ln 5} = 1$$\n\nThe product is exactly $1$, so the statement is True.",
+  "**C.** → True\n\nTo evaluate $\\log_{4} 9$, we write the base and the argument as perfect squares:\n\n$$4 = 2^2$$\n\n$$9 = 3^2$$\n\nApplying the change-of-base formula gives:\n\n$$\\log_{4} 9 = \\frac{\\ln(3^2)}{\\ln(2^2)}$$\n\nUsing the power rule $\\ln(x^k) = k \\ln x$ on both numerator and denominator:\n\n$$\\log_{4} 9 = \\frac{2 \\ln 3}{2 \\ln 2} = \\frac{\\ln 3}{\\ln 2}$$\n\nConverting back to base $2$ yields:\n\n$$\\frac{\\ln 3}{\\ln 2} = \\log_{2} 3$$\n\nHence $\\log_{4} 9$ equals $\\log_{2} 3$, so the statement is True.",
+  "**D.** → False\n\nFor a logarithm $\\log_{a} b$ with base $a > 1$, the value is greater than $1$ if and only if the argument satisfies $b > a$.\n\nWriting $\\log_{9} 4$ with the change-of-base formula gives:\n\n$$\\log_{9} 4 = \\frac{\\ln 4}{\\ln 9}$$\n\nBecause $4 < 9$ and the natural logarithm is strictly increasing:\n\n$$\\ln 4 < \\ln 9$$\n\nDividing both sides by the positive value $\\ln 9$ leads to:\n\n$$\\frac{\\ln 4}{\\ln 9} < 1$$\n\nTherefore $\\log_{9} 4$ is strictly less than $1$, so the statement is False.",
+  "**E.** → False\n\nWe determine the effect of increasing the base $a > 1$ while holding the argument $b > 1$ fixed. Expressing the logarithm via natural logarithms gives:\n\n$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$\n\nBecause $b > 1$, the numerator $\\ln b$ is a fixed positive number. As the base $a$ increases, the denominator $\\ln a$ increases strictly:\n\n$$a_1 < a_2 \\implies \\ln a_1 < \\ln a_2$$\n\nTaking reciprocals reverses the inequality:\n\n$$\\frac{1}{\\ln a_1} > \\frac{1}{\\ln a_2}$$\n\nMultiplying by the positive constant $\\ln b$ gives:\n\n$$\\frac{\\ln b}{\\ln a_1} > \\frac{\\ln b}{\\ln a_2}$$\n\nThus $\\log_{a} b$ decreases as the base $a$ increases, so the statement is False."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Cube-Root Radical Equation Analysis",
+ "context": "A mathematical economics model requires determining all real numbers $x$ that satisfy the cube-root equation $$\\sqrt[3]{x + 6} - \\sqrt[3]{x - 1} = 1$$ to establish the equilibrium values of an investment cycle.",
+ "statements": [
+  "The natural domain of definition of the equation over the real numbers is restricted to $[1, \\infty)$ because the expressions under the radical signs must be non-negative.",
+  "The equation has exactly two distinct real solutions.",
+  "The sum of all real solutions of the equation is strictly positive.",
+  "All real solutions of the equation satisfy the absolute-value inequality $|x + 2| \\le 5$.",
+  "Setting $u = \\sqrt[3]{x + 6}$ and $v = \\sqrt[3]{x - 1}$ reveals that the product $u \\cdot v$ is uniquely determined and equals $2$ for all real solutions."
+ ],
+ "answer_key": [
+  false,
+  true,
+  false,
+  true,
+  true
+ ],
+ "solution_overview": "We analyze the radical equation over the real numbers:\n\n$$\\sqrt[3]{x + 6} - \\sqrt[3]{x - 1} = 1$$\n\nBecause odd roots are well-defined for all real radicands, the equation has the full real line $\\mathbb{R}$ as its domain of definition.\n\nTo solve the equation systematically, let $u = \\sqrt[3]{x + 6}$ and $v = \\sqrt[3]{x - 1}$. The equation and the definitions of $u$ and $v$ yield the system:\n\n$$u - v = 1$$\n\n$$u^3 - v^3 = (x + 6) - (x - 1) = 7$$\n\nWe expand $(u - v)^3$ using the cubic algebraic identity:\n\n$$(u - v)^3 = u^3 - v^3 - 3uv(u - v)$$\n\nSubstituting $u - v = 1$ and $u^3 - v^3 = 7$ gives:\n\n$$1^3 = 7 - 3uv(1)$$\n\n$$3uv = 6$$\n\n$$uv = 2$$\n\nSubstituting $v = u - 1$ into $uv = 2$ produces a quadratic equation in $u$:\n\n$$u(u - 1) = 2$$\n\n$$u^2 - u - 2 = 0$$\n\n$$(u - 2)(u + 1) = 0$$\n\nThis yields two real values for $u$:\n\nFor $u = 2$:\n\n$$\\sqrt[3]{x + 6} = 2 \\implies x + 6 = 8 \\implies x_1 = 2$$\n\nFor $u = -1$:\n\n$$\\sqrt[3]{x + 6} = -1 \\implies x + 6 = -1 \\implies x_2 = -7$$\n\nBoth values satisfy the original equation, giving the solution set $S = \\{-7, 2\\}$.",
+ "tactical_explanations": [
+  "**A.** → False\n\nUnlike even roots such as square roots, an odd radical $\\sqrt[3]{g(x)}$ is defined for all real numbers, whether $g(x)$ is positive, zero, or negative.\n\nEvaluating the domain conditions:\n\n$$x + 6 \\in \\mathbb{R} \\iff x \\in \\mathbb{R}$$\n\n$$x - 1 \\in \\mathbb{R} \\iff x \\in \\mathbb{R}$$\n\nThus, the maximal real domain of definition is $\\mathbb{R}$, not $[1, \\infty)$, so the statement is False.",
+  "**B.** → True\n\nThe algebraic derivation transforms the radical equation into the quadratic equation $u^2 - u - 2 = 0$, which yields two distinct values for $u = \\sqrt[3]{x + 6}$:\n\n$$u_1 = 2 \\implies x_1 = 2$$\n\n$$u_2 = -1 \\implies x_2 = -7$$\n\nChecking $x = 2$ in the original equation:\n\n$$\\sqrt[3]{2 + 6} - \\sqrt[3]{2 - 1} = \\sqrt[3]{8} - \\sqrt[3]{1} = 2 - 1 = 1$$\n\nChecking $x = -7$ in the original equation:\n\n$$\\sqrt[3]{-7 + 6} - \\sqrt[3]{-7 - 1} = \\sqrt[3]{-1} - \\sqrt[3]{-8} = -1 - (-2) = 1$$\n\nBoth solutions are valid, so there are exactly two distinct real solutions, so the statement is True.",
+  "**C.** → False\n\nThe real solutions are $x_1 = 2$ and $x_2 = -7$.\n\nWe compute their sum directly:\n\n$$x_1 + x_2 = 2 + (-7) = -5$$\n\nSince $-5 < 0$, the sum of all real solutions is negative, not strictly positive, so the statement is False.",
+  "**D.** → True\n\nThe absolute-value inequality is $|x + 2| \\le 5$. We test each of the two real solutions $x_1 = 2$ and $x_2 = -7$.\n\nFor $x_1 = 2$:\n\n$$|2 + 2| = |4| = 4 \\le 5$$\n\nFor $x_2 = -7$:\n\n$$|-7 + 2| = |-5| = 5 \\le 5$$\n\nBoth solutions satisfy the inequality, so the statement is True.",
+  "**E.** → True\n\nUsing the substitution $u = \\sqrt[3]{x + 6}$ and $v = \\sqrt[3]{x - 1}$, the given equation imposes $u - v = 1$ while the difference of cubes gives $u^3 - v^3 = 7$.\n\nApplying the cubic identity:\n\n$$(u - v)^3 = u^3 - v^3 - 3uv(u - v)$$\n\n$$1 = 7 - 3uv(1)$$\n\n$$3uv = 6$$\n\n$$uv = 2$$\n\nThis product is invariant across all solution pairs, so the statement is True."
+ ]
+}

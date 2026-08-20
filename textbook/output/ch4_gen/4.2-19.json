@@ -1,0 +1,26 @@
+{
+ "title": "Comparing Parametric Quadratic Equations",
+ "context": "An economic forecaster models two competing investment horizons using two quadratic equations in $x$ parameterized by a market index parameter $m \\in \\mathbb{R}$. The equations are given by $E_1: x^2 - (m+3)x + (3m - 1) = 0$ and $E_2: x^2 - 2mx + (m^2 - m - 2) = 0$.",
+ "statements": [
+  "For every real value of the parameter $m$, equation $E_1$ has two distinct real roots.",
+  "For every parameter value $m > 3$, the sum of the roots of equation $E_2$ is strictly greater than the sum of the roots of equation $E_1$.",
+  "There exists a parameter value $m > 2$ such that the two roots of equation $E_1$ have opposite signs.",
+  "When $m = 1$, the smaller real root of equation $E_2$ is strictly less than the smaller real root of equation $E_1$.",
+  "For all $m \\ge -2$, the distance between the two roots of equation $E_2$ is strictly greater than the distance between the two roots of equation $E_1$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze two quadratic equations of the standard form $a x^2 + b x + c = 0$ with $a = 1$. For equation $E_1$, the coefficients are $b_1 = -(m+3)$ and $c_1 = 3m - 1$. For equation $E_2$, the coefficients are $b_2 = -2m$ and $c_2 = m^2 - m - 2$.\n\nThe discriminant of $E_1$ is computed by expanding and completing the square:\n\n$$\\Delta_1 = (-(m+3))^2 - 4(1)(3m - 1)$$\n\n$$\\Delta_1 = m^2 + 6m + 9 - 12m + 4$$\n\n$$\\Delta_1 = m^2 - 6m + 13$$\n\n$$\\Delta_1 = (m-3)^2 + 4$$\n\nThe discriminant of $E_2$ is given by:\n\n$$\\Delta_2 = (-2m)^2 - 4(1)(m^2 - m - 2)$$\n\n$$\\Delta_2 = 4m^2 - 4m^2 + 4m + 8$$\n\n$$\\Delta_2 = 4(m+2)$$\n\nUsing Vieta's formulas, the sum and product of the roots for each equation are expressed as:\n\n$$S_1 = m+3, \\quad P_1 = 3m - 1$$\n\n$$S_2 = 2m, \\quad P_2 = m^2 - m - 2$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe nature of the roots of a quadratic equation depends on the sign of its discriminant $\\Delta$. A quadratic has two distinct real roots if and only if $\\Delta > 0$.\n\nFor equation $E_1$, the discriminant is:\n\n$$\\Delta_1 = (m-3)^2 + 4$$\n\nBecause the square of any real number satisfies $(m-3)^2 \\ge 0$, we have:\n\n$$\\Delta_1 \\ge 0 + 4 = 4 > 0$$\n\nSince the discriminant is strictly positive for every real value of $m$, the equation always has two distinct real roots, so the statement is True.",
+  "**B.** → True\n\nBy Vieta's formulas, the sum of the roots of a monic quadratic equation $x^2 + bx + c = 0$ is equal to $-b$.\n\nWe determine the sums of the roots for $E_1$ and $E_2$:\n\n$$S_1 = m+3$$\n\n$$S_2 = 2m$$\n\nWe compute the difference $S_2 - S_1$:\n\n$$S_2 - S_1 = 2m - (m+3) = m - 3$$\n\nFor any $m > 3$, this difference is strictly positive, meaning $S_2 > S_1$, so the statement is True.",
+  "**C.** → False\n\nBy Vieta's formulas, two real roots have opposite signs if and only if their product $P = \\frac{c}{a}$ is strictly negative.\n\nFor equation $E_1$, the product of the roots is:\n\n$$P_1 = 3m - 1$$\n\nSetting $P_1 < 0$ yields the condition:\n\n$$3m - 1 < 0$$\n\n$$m < \\frac{1}{3}$$\n\nFor any $m > 2$, we have $P_1 > 3(2) - 1 = 5 > 0$. Thus, both roots must have the same sign whenever $m > 2$, so the statement is False.",
+  "**D.** → True\n\nWe substitute $m = 1$ into both equations and determine their roots using the quadratic formula.\n\nFor equation $E_1$ with $m = 1$:\n\n$$x^2 - 4x + 2 = 0$$\n\n$$x = \\frac{4 \\pm \\sqrt{16 - 8}}{2} = 2 \\pm \\sqrt{2}$$\n\nThe smaller root of $E_1$ is $x_{\\text{min}} = 2 - \\sqrt{2}$, which is approximately $0.586$.\n\nFor equation $E_2$ with $m = 1$:\n\n$$x^2 - 2x - 2 = 0$$\n\n$$x = \\frac{2 \\pm \\sqrt{4 - 4(-2)}}{2} = 1 \\pm \\sqrt{3}$$\n\nThe smaller root of $E_2$ is $y_{\\text{min}} = 1 - \\sqrt{3}$, which is approximately $-0.732$.\n\nComparing the two smaller roots shows that $1 - \\sqrt{3} < 0 < 2 - \\sqrt{2}$, so the smaller root of $E_2$ is strictly less than the smaller root of $E_1$, so the statement is True.",
+  "**E.** → False\n\nFor any monic quadratic equation $x^2 + bx + c = 0$ with real roots, the distance between the two roots is given by the root difference $|x_2 - x_1| = \\sqrt{\\Delta}$.\n\nWe evaluate the distance between the roots of both equations at the admissible value $m = -1$, which satisfies $m \\ge -2$.\n\nFor equation $E_1$ at $m = -1$:\n\n$$d_1 = \\sqrt{\\Delta_1} = \\sqrt{(-1-3)^2 + 4} = \\sqrt{16 + 4} = \\sqrt{20}$$\n\nFor equation $E_2$ at $m = -1$:\n\n$$d_2 = \\sqrt{\\Delta_2} = \\sqrt{4(-1+2)} = \\sqrt{4} = 2 = \\sqrt{4}$$\n\nSince $\\sqrt{4} < \\sqrt{20}$, the distance between the roots of $E_2$ is strictly smaller than the distance between the roots of $E_1$ at $m = -1$, so the statement is False."
+ ]
+}

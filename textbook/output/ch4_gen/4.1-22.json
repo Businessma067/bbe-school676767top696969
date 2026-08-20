@@ -1,0 +1,26 @@
+{
+ "title": "Regional Logistics Hub Balancing",
+ "context": "A logistics network distributes freight across three regional hubs: Alpha, Beta, and Gamma. Under the network operating policy, the volume handled by Beta is $12$ tons less than three times the volume handled by Alpha, while the volume handled by Gamma exceeds half the volume handled by Alpha by an expansion parameter $k$ tons. The total weekly volume processed across all three hubs combined is fixed at $150$ tons.",
+ "statements": [
+  "If the expansion parameter is set to $k = 18$ tons, the weekly volume handled by Alpha is strictly greater than $30$ tons.",
+  "If the expansion parameter is chosen such that Beta and Gamma process identical volumes, the volume handled by Alpha is strictly less than $20$ tons.",
+  "There exists a real value of the parameter $k$ for which the weekly balancing model admits infinitely many solutions for the hub volumes.",
+  "For every integer value of the parameter $k$ that yields integer volumes for all three hubs, the volume handled by Gamma is an even integer.",
+  "If the parameter satisfies $k > 144$, there exists no feasible distribution in which all three regional hubs handle non-negative volumes."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  true
+ ],
+ "solution_overview": "Let $x$ denote the volume handled by Alpha in tons. In terms of $x$ and the parameter $k$, the volumes allocated to Beta and Gamma are expressed as:\n\n$$\\text{Beta} = 3x - 12$$\n\n$$\\text{Gamma} = \\frac{1}{2}x + k$$\n\nThe total weekly volume across all three hubs is $150$ tons, which yields the linear equation in one unknown:\n\n$$x + (3x - 12) + \\left(\\frac{1}{2}x + k\\right) = 150$$\n\nCombining the linear terms in $x$ gives:\n\n$$\\frac{9}{2}x - 12 + k = 150$$\n\n$$\\frac{9}{2}x = 162 - k$$\n\n$$x = 36 - \\frac{2}{9}k$$\n\nSubstituting $x$ back into the expressions for Beta and Gamma gives their respective volumes as functions of $k$:\n\n$$\\text{Beta} = 3\\left(36 - \\frac{2}{9}k\\right) - 12 = 96 - \\frac{2}{3}k$$\n\n$$\\text{Gamma} = \\frac{1}{2}\\left(36 - \\frac{2}{9}k\\right) + k = 18 + \\frac{8}{9}k$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo determine Alpha's volume when $k = 18$, we substitute this value directly into the solution formula for $x$.\n\n$$x = 36 - \\frac{2}{9}(18)$$\n\n$$x = 36 - 4 = 32$$\n\nSince $32 > 30$, Alpha processes strictly more than $30$ tons, so the statement is True.",
+  "**B.** → False\n\nEquating the volumes of Beta and Gamma produces a linear equation in the parameter $k$.\n\n$$96 - \\frac{2}{3}k = 18 + \\frac{8}{9}k$$\n\n$$78 = \\frac{14}{9}k$$\n\n$$k = \\frac{78 \\cdot 9}{14} = \\frac{351}{7}$$\n\nWe substitute this value of $k$ into the formula for Alpha's volume $x$.\n\n$$x = 36 - \\frac{2}{9}\\left(\\frac{351}{7}\\right)$$\n\n$$x = 36 - \\frac{78}{7} = \\frac{174}{7} \\approx 24.86$$\n\nBecause $\\frac{174}{7}$ is strictly greater than $20$, the volume is not strictly less than $20$ tons, so the statement is False.",
+  "**C.** → False\n\nA linear equation in one unknown of the standard form $a x = b$ possesses infinitely many solutions if and only if both $a = 0$ and $b = 0$.\n\nIn our balancing model, the coefficient of $x$ is given by the constant coefficient:\n\n$$a = \\frac{9}{2}$$\n\nBecause the coefficient of $x$ is non-zero for every real number $k$, the equation always possesses a unique solution for $x$ rather than infinitely many solutions, so the statement is False.",
+  "**D.** → True\n\nFor Alpha's volume $x = 36 - \\frac{2}{9}k$ to be an integer, the parameter $k$ must be an integer multiple of $9$. Writing $k = 9m$ for some integer $m$, we evaluate the volume handled by Gamma.\n\n$$\\text{Gamma} = 18 + \\frac{8}{9}(9m)$$\n\n$$\\text{Gamma} = 18 + 8m$$\n\n$$\\text{Gamma} = 2(9 + 4m)$$\n\nBecause $9 + 4m$ is an integer for any integer $m$, Gamma's volume is divisible by $2$ and is therefore always an even integer, so the statement is True.",
+  "**E.** → True\n\nA non-negative volume distribution requires the volume of Beta to satisfy the condition that it is at least zero.\n\n$$96 - \\frac{2}{3}k \\ge 0$$\n\n$$96 \\ge \\frac{2}{3}k$$\n\n$$k \\le 144$$\n\nIf $k > 144$, the volume assigned to Beta is strictly negative, which violates the requirement of non-negative volumes for all hubs, so the statement is True."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Macroeconomic Parameter Model",
+ "context": "A financial analyst models the quarterly revenue growth rate $x$ (in percent) of an investment fund using the fourth-degree polynomial equation $$(x^2 - 4x)^2 - (k+5)(x^2 - 4x) + 5k = 0$$ where $k \\in \\mathbb{R}$ is an external macroeconomic parameter.",
+ "statements": [
+  "For all parameter values $k < -4$, the equation has no real solutions.",
+  "There is exactly one value of $k$ for which the equation has exactly three distinct real solutions.",
+  "When $k = 5$, the equation has four distinct real solutions.",
+  "Whenever $k > -4$ and $k \\neq 5$, the sum of all four distinct real solutions is equal to $8$.",
+  "If $k = 12$, the largest real solution to the equation is strictly greater than $6$."
+ ],
+ "answer_key": [
+  false,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The given fourth-degree equation can be solved by grouping terms. Treating the common expression $u = x^2 - 4x$ as a single quantity, we expand and group the terms:\n\n$$(x^2 - 4x)^2 - (k+5)(x^2 - 4x) + 5k = 0$$\n\n$$(x^2 - 4x)^2 - 5(x^2 - 4x) - k(x^2 - 4x) + 5k = 0$$\n\n$$(x^2 - 4x)(x^2 - 4x - 5) - k(x^2 - 4x - 5) = 0$$\n\n$$(x^2 - 4x - 5)(x^2 - 4x - k) = 0$$\n\nBy the zero-product property, the solutions of the equation are the solutions to the two separate quadratic equations:\n\n$$x^2 - 4x - 5 = 0$$\n\n$$x^2 - 4x - k = 0$$\n\nThe first quadratic equation factorises directly as $(x - 5)(x + 1) = 0$, giving the two fixed real solutions $x = 5$ and $x = -1$. The solutions to the second quadratic equation depend on the value of the parameter $k$.",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe full equation factors into $(x^2 - 4x - 5)(x^2 - 4x - k) = 0$. The first factor $x^2 - 4x - 5 = 0$ is completely independent of $k$.\n\nSolving this factor gives:\n\n$$(x - 5)(x + 1) = 0$$\n\n$$x = 5 \\quad \\text{or} \\quad x = -1$$\n\nEven when $k < -4$, where the second factor $x^2 - 4x - k = 0$ has a negative discriminant and produces no real roots, the two solutions from the first factor remain valid. Thus, the equation always possesses at least two real solutions for any $k < -4$, so the statement is False.",
+  "**B.** → True\n\nThe first quadratic factor provides two distinct solutions, $x = -1$ and $x = 5$. The nature of the solutions from the second factor $x^2 - 4x - k = 0$ is determined by its discriminant $\\Delta$:\n\n$$\\Delta = (-4)^2 - 4(1)(-k)$$\n\n$$\\Delta = 16 + 4k$$\n\nSetting $\\Delta = 0$ gives $k = -4$, which yields a single repeated root:\n\n$$x = -\\frac{-4}{2(1)} = 2$$\n\nSince $x = 2$ is distinct from both $-1$ and $5$, setting $k = -4$ produces the three distinct real solutions $\\{-1, 2, 5\\}$. For $k > -4$, the second factor yields two distinct roots; substituting $x = -1$ or $x = 5$ into $x^2 - 4x - k = 0$ shows that both roots simultaneously coincide with $\\{-1, 5\\}$ if and only if $k = 5$, which results in two distinct solutions rather than three. Hence, $k = -4$ is the only value yielding exactly three distinct solutions, so the statement is True.",
+  "**C.** → False\n\nWhen $k = 5$, the second quadratic factor becomes identical to the first factor:\n\n$$x^2 - 4x - 5 = 0$$\n\nFactorising this quadratic yields:\n\n$$(x - 5)(x + 1) = 0$$\n\nBoth quadratic factors produce the exact same solution set $\\{-1, 5\\}$. Each of these two numbers is a root of multiplicity two, meaning there are only two distinct real solutions in total, not four, so the statement is False.",
+  "**D.** → True\n\nWhen $k > -4$ and $k \\neq 5$, each quadratic factor has two distinct real roots, and none of the roots of the first factor coincide with those of the second factor, giving four distinct real solutions. According to Vieta's formulas, the sum of the roots of any quadratic equation $ax^2 + bx + c = 0$ is equal to $-\\frac{b}{a}$.\n\nFor the first factor $x^2 - 4x - 5 = 0$:\n\n$$x_1 + x_2 = -\\frac{-4}{1} = 4$$\n\nFor the second factor $x^2 - 4x - k = 0$:\n\n$$x_3 + x_4 = -\\frac{-4}{1} = 4$$\n\nThe total sum of all four distinct solutions is therefore:\n\n$$(x_1 + x_2) + (x_3 + x_4) = 4 + 4 = 8$$\n\nThis sum is constantly $8$, so the statement is True.",
+  "**E.** → False\n\nFor $k = 12$, the second quadratic factor becomes:\n\n$$x^2 - 4x - 12 = 0$$\n\nWe solve this by factorising:\n\n$$(x - 6)(x + 2) = 0$$\n\n$$x = 6 \\quad \\text{or} \\quad x = -2$$\n\nThe first quadratic factor yields the solutions $x = 5$ and $x = -1$. Combining these gives the full set of real solutions $\\{-2, -1, 5, 6\\}$. The largest solution in this set is $6$, which is equal to $6$ and not strictly greater than $6$, so the statement is False."
+ ]
+}

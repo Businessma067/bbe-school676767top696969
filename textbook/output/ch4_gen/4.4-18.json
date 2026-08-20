@@ -1,0 +1,26 @@
+{
+ "title": "Exponential equations with untidy solutions",
+ "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $2^{x} = 5$ lies strictly between $2$ and $3$.",
+  "The solution of $3^{x} = 2^{x+1}$ is smaller than $2$.",
+  "The equation $5^{x} = 2^{x}$ has exactly one solution.",
+  "The solution of $2^{x} = 3^{x-1}$ is greater than $3$.",
+  "The equation $2^{x} = x^{2}$ has exactly one solution."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "Exponential equations involving terms with different bases can be analyzed algebraically using logarithms or monotonically increasing properties of exponential functions. For equations of the form $a^x = b^x$, dividing both sides by the non-zero exponential term yields:\n\n$$\\left(\\frac{a}{b}\\right)^x = 1$$\n\nFor equations with linear shifts in the exponent, factoring out the constant power allows isolation of the base ratio before solving. Non-linear comparisons such as $2^x = x^2$ require inspecting integer points and intersection properties across distinct intervals of the real line.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe function $f(x) = 2^x$ is strictly increasing on the set of real numbers because the base satisfies $2 > 1$.\n\nEvaluating the function at the integer bounds $x = 2$ and $x = 3$ gives:\n\n$$2^2 = 4$$\n\n$$2^3 = 8$$\n\nBecause $4 < 5 < 8$, the intermediate value property of continuous, strictly increasing functions guarantees that the unique solution to $2^x = 5$ satisfies:\n\n$$2 < x < 3$$\n\nThus, the solution lies strictly between $2$ and $3$, so the statement is True.",
+  "**B.** → True\n\nWe rewrite the right-hand side of $3^x = 2^{x+1}$ using the rules of exponents:\n\n$$3^x = 2 \\cdot 2^x$$\n\nDividing both sides by $2^x$ isolates the variable in a single exponential term:\n\n$$\\left(\\frac{3}{2}\\right)^x = 2$$\n\nEvaluating the left-hand side at $x = 2$ yields:\n\n$$\\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4} = 2.25$$\n\nBecause $2.25 > 2$ and the base $\\frac{3}{2} > 1$ makes the function strictly increasing, the exact solution $x = \\frac{\\ln 2}{\\ln(1.5)}$ must satisfy $x < 2$, so the statement is True.",
+  "**C.** → True\n\nTo solve $5^x = 2^x$, divide both sides by $2^x$, which is strictly positive for all real $x$:\n\n$$\\left(\\frac{5}{2}\\right)^x = 1$$\n\nAny non-zero real base raised to the power of zero equals $1$, so taking the logarithm of both sides yields:\n\n$$x = 0$$\n\nBecause the exponential function $g(x) = (2.5)^x$ is strictly monotonic on the entire real line, it crosses the horizontal line $y = 1$ at exactly one point. Therefore, the equation has only one solution, so the statement is True.",
+  "**D.** → False\n\nWe rewrite the equation $2^x = 3^{x-1}$ by expanding the exponent on the right-hand side:\n\n$$2^x = \\frac{1}{3} \\cdot 3^x$$\n\nMultiplying by $3$ and dividing by $2^x$ gives:\n\n$$\\left(\\frac{3}{2}\\right)^x = 3$$\n\nEvaluating the expression at $x = 3$ yields:\n\n$$\\left(\\frac{3}{2}\\right)^3 = \\frac{27}{8} = 3.375$$\n\nBecause $3.375 > 3$ and the base $\\frac{3}{2} > 1$ represents a strictly increasing function, the solution must lie strictly below $3$ (in fact, $x = \\frac{\\ln 3}{\\ln 1.5} \\approx 2.71$). The claim states that the solution is greater than $3$, so the statement is False.",
+  "**E.** → False\n\nWe determine the number of real solutions to $2^x = x^2$ by testing integer values and analyzing the intersection points of the two graphs.\n\nDirect evaluation shows that $x = 2$ and $x = 4$ are positive integer solutions:\n\n$$2^2 = 2^2 = 4$$\n\n$$2^4 = 4^2 = 16$$\n\nAdditionally, for negative real values of $x$, $2^x > 0$ decreases toward $0$ while $x^2$ increases toward infinity, creating a third real intersection in the interval $(-1, 0)$ where $2^{-1} = 0.5 < (-1)^2 = 1$ and $2^0 = 1 > 0^2 = 0$. Since there are at least three real solutions, the equation does not have exactly one solution, so the statement is False."
+ ]
+}

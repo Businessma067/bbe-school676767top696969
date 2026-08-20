@@ -1,0 +1,26 @@
+{
+ "title": "Dilution Kinetics and Concentration Balancing",
+ "context": "A compounding pharmacy prepares specialty therapeutic solutions under strict laboratory protocols. Managing active ingredient masses, mixture concentrations, stabilization temperatures, and degradation kinetics over time gives rise to various algebraic governing models across distinct preparation stages.",
+ "statements": [
+  "Blending $V$ liters of a $25\\%$ active ingredient solution with $10$ liters of a $10\\%$ solution yields an overall concentration of $20\\%$ if and only if the added stock volume $V$ is strictly greater than $25$ liters.",
+  "A stabilization stage requires the operating time parameter $t$ (in hours) to satisfy the quadratic relation $2t^2 - 14t + 20 = 0$; the sum of all valid stabilization times equals $7$ hours, and both roots are strictly positive integers.",
+  "A sensor calibration model governed by the radical equation $\\sqrt{3t + 4} = t - 2$ admits exactly two distinct real solutions for the elapsed calibration time $t$.",
+  "To dilute a $6$-liter mixture containing $1.8$ kg of dissolved active compound to a concentration of $15\\%$ by adding a solvent with a $5\\%$ compound concentration, the required solvent volume $x$ is an integer strictly less than $10$ liters.",
+  "An unstable active agent degrades such that its remaining mass in grams after $t$ hours is modeled by $M(t) = 160 \\cdot 4^{-t/6}$; the elapsed time required for the mass to decrease to $5$ grams is an even integer."
+ ],
+ "answer_key": [
+  false,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "Each preparation protocol corresponds to a fundamental equation structure governing the dilution, reaction kinetics, or calibration parameters of the pharmacy solutions.\n\nFor mixture balancing, the total mass of active substance divided by total solution volume equates to the target concentration. For degradation and calibration processes, quadratic factoring, radical isolation with extraneous root verification, and common-base exponential transformations determine the respective time variables.",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe balance of solute mass before and after mixing gives a linear equation in one unknown:\n\n$$0.25V + 0.10 \\cdot 10 = 0.20(V + 10)$$\n\n$$0.25V + 1 = 0.20V + 2$$\n\n$$0.05V = 1$$\n\n$$V = 20$$\n\nThe required volume is $20$ liters, which is not strictly greater than $25$ liters, so the statement is False.",
+  "**B.** → True\n\nThe quadratic equation is simplified by dividing by the common factor $2$ and factoring:\n\n$$2t^2 - 14t + 20 = 0$$\n\n$$t^2 - 7t + 10 = 0$$\n\n$$(t - 2)(t - 5) = 0$$\n\nThe solutions are $t = 2$ and $t = 5$. Both are strictly positive integers, and their sum is $2 + 5 = 7$, so the statement is True.",
+  "**C.** → False\n\nTo solve the radical equation, we isolate the radical and square both sides:\n\n$$\\sqrt{3t + 4} = t - 2$$\n\n$$3t + 4 = (t - 2)^2$$\n\n$$3t + 4 = t^2 - 4t + 4$$\n\n$$t^2 - 7t = 0$$\n\n$$t(t - 7) = 0$$\n\nThe algebraic candidates are $t = 0$ and $t = 7$. Testing $t = 0$ in the original equation gives $\\sqrt{4} = 2$ on the left and $0 - 2 = -2$ on the right, which makes $t = 0$ an extraneous root. Testing $t = 7$ gives $\\sqrt{25} = 5$ on the left and $7 - 2 = 5$ on the right. Because only $t = 7$ is a valid solution, the equation admits only one real solution, so the statement is False.",
+  "**D.** → True\n\nThe concentration after adding $x$ liters of the $5\\%$ solution is modeled by a rational equation:\n\n$$\\frac{1.8 + 0.05x}{6 + x} = 0.15$$\n\n$$1.8 + 0.05x = 0.15(6 + x)$$\n\n$$1.8 + 0.05x = 0.90 + 0.15x$$\n\n$$0.90 = 0.10x$$\n\n$$x = 9$$\n\nThe solution is $x = 9$ liters, which is an integer strictly less than $10$, so the statement is True.",
+  "**E.** → False\n\nSetting the mass equal to $5$ grams yields an exponential equation that can be solved by converting both sides to base $2$:\n\n$$160 \\cdot 4^{-t/6} = 5$$\n\n$$4^{-t/6} = \\frac{5}{160}$$\n\n$$4^{-t/6} = \\frac{1}{32}$$\n\n$$(2^2)^{-t/6} = 2^{-5}$$\n\n$$2^{-t/3} = 2^{-5}$$\n\n$$-\\frac{t}{3} = -5$$\n\n$$t = 15$$\n\nThe time required is $15$ hours, which is an odd integer, so the statement is False."
+ ]
+}

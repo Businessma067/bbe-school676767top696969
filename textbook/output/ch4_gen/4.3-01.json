@@ -1,0 +1,26 @@
+{
+ "title": "Solvability of a Rational Equation",
+ "context": "A financial analyst models a break-even relation by analyzing the real solutions $x$ of the rational equation $$\\frac{x}{x - 2} - \\frac{1}{x + 1} = \\frac{6}{x^2 - x - 2}$$ over the maximal possible subset of real numbers.",
+ "statements": [
+  "The maximal domain of definition for the equation excludes exactly two distinct real numbers.",
+  "Clearing denominators by multiplying with the common denominator yields an auxiliary quadratic equation whose roots are symmetric about zero.",
+  "The original rational equation possesses exactly two distinct real solutions.",
+  "The unique valid real solution to the equation is strictly between $-3$ and $-1$.",
+  "If the numerator on the right-hand side is replaced by $8$, the resulting rational equation possesses no real solutions."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "To determine the solutions of the rational equation, we first establish its maximal domain of definition $D \\subseteq \\mathbb{R}$ by identifying all values of $x$ that make any denominator vanish. Factoring the quadratic denominator gives:\n\n$$x^2 - x - 2 = (x - 2)(x + 1)$$\n\nHence, the denominators vanish at $x = 2$ and $x = -1$, meaning the domain is:\n\n$$D = \\mathbb{R} \\setminus \\{-1, 2\\}$$\n\nOn this domain, we clear the denominators by multiplying both sides by the common denominator $(x - 2)(x + 1)$:\n\n$$x(x + 1) - 1(x - 2) = 6$$\n\nExpanding and simplifying the left-hand side gives:\n\n$$x^2 + x - x + 2 = 6$$\n\n$$x^2 + 2 = 6$$\n\n$$x^2 - 4 = 0$$\n\n$$(x - 2)(x + 2) = 0$$\n\nThe algebraic roots of this cleared polynomial equation are $x = 2$ and $x = -2$. Since $x = 2$ is excluded from the domain $D$, it is an extraneous root. Thus, the only valid solution is $x = -2$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe domain of definition of a rational equation is the set of all real numbers for which all denominators are non-zero.\n\nThe denominators in the equation are $x - 2$, $x + 1$, and $x^2 - x - 2$. Factoring the quadratic expression yields:\n\n$$x^2 - x - 2 = (x - 2)(x + 1)$$\n\nSetting each factor to zero produces the excluded values:\n\n$$x - 2 = 0 \\implies x = 2$$\n\n$$x + 1 = 0 \\implies x = -1$$\n\nThus, the domain excludes precisely the two real numbers $-1$ and $2$, so the statement is True.",
+  "**B.** → True\n\nMultiplying the entire equation by the common denominator $(x - 2)(x + 1)$ eliminates all rational fractions.\n\nPerforming this multiplication on both sides produces:\n\n$$x(x + 1) - (x - 2) = 6$$\n\n$$x^2 + 2 = 6$$\n\n$$x^2 - 4 = 0$$\n\nThe solutions to this auxiliary quadratic equation are given by:\n\n$$x = 2 \\quad \\text{and} \\quad x = -2$$\n\nBecause their sum is $2 + (-2) = 0$, these two roots are symmetric about zero, so the statement is True.",
+  "**C.** → False\n\nA candidate solution obtained after clearing denominators is a genuine solution of the original equation if and only if it belongs to the domain of definition.\n\nThe auxiliary quadratic equation yields $x = 2$ and $x = -2$. We check each candidate against the domain $D = \\mathbb{R} \\setminus \\{-1, 2\\}$:\n\n$$2 \\notin D$$\n\n$$-2 \\in D$$\n\nSubstituting $x = 2$ into the original equation would result in division by zero, making it an extraneous root. Consequently, the equation has only one valid real solution, so the statement is False.",
+  "**D.** → True\n\nThe only valid real solution to the equation is $x = -2$.\n\nWe test whether this value falls strictly between $-3$ and $-1$ by evaluating the compound inequality:\n\n$$-3 < -2 < -1$$\n\nBoth inequalities are satisfied simultaneously, so the statement is True.",
+  "**E.** → False\n\nWe replace the right-hand side numerator $6$ with $8$ and solve the resulting rational equation:\n\n$$\\frac{x}{x - 2} - \\frac{1}{x + 1} = \\frac{8}{x^2 - x - 2}$$\n\nMultiplying both sides by the common denominator $(x - 2)(x + 1)$ on $D = \\mathbb{R} \\setminus \\{-1, 2\\}$ yields:\n\n$$x(x + 1) - (x - 2) = 8$$\n\n$$x^2 + 2 = 8$$\n\n$$x^2 = 6$$\n\n$$x = \\sqrt{6} \\quad \\text{or} \\quad x = -\\sqrt{6}$$\n\nNeither $\\sqrt{6}$ nor $-\\sqrt{6}$ equals $-1$ or $2$, so both values belong to $D$. The modified equation therefore has two distinct real solutions rather than none, so the statement is False."
+ ]
+}

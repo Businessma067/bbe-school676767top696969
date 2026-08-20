@@ -1,0 +1,26 @@
+{
+ "title": "An extraneous candidate in a logarithmic equation",
+ "context": "The equation $\\log x + \\log(x-3) = 1$ is discussed, where $\\log$ is the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "Exactly one candidate survives the domain check.",
+  "The surviving solution is a prime number.",
+  "The rejected candidate is negative.",
+  "Removing the logarithms produces a linear equation.",
+  "The equation is equivalent to $\\log\\big(x(x-3)\\big) = 1$ on the domain of the original expression."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "The given logarithmic equation is defined only where all logarithmic arguments are strictly positive. We establish the natural domain of definition by intersecting the requirements for each individual term:\n\n$$x > 0 \\quad \\text{and} \\quad x - 3 > 0$$\n\n$$D = (3, \\infty)$$\n\nApplying the logarithm product rule on this domain transforms the sum into a single logarithm:\n\n$$\\log\\big(x(x - 3)\\big) = 1$$\n\nExponentiating both sides with base $10$ eliminates the logarithm:\n\n$$x(x - 3) = 10^1$$\n\n$$x^2 - 3x - 10 = 0$$\n\nFactoring this quadratic equation yields the potential candidate solutions:\n\n$$(x - 5)(x + 2) = 0$$\n\n$$x_1 = 5, \\quad x_2 = -2$$\n\nTesting these candidates against the domain $D = (3, \\infty)$ reveals that $x_1 = 5$ is an admissible solution, whereas $x_2 = -2$ is extraneous.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo determine how many algebraic candidates are valid solutions, each candidate must be tested against the natural domain of the original equation.\n\nThe domain requires $x > 0$ and $x - 3 > 0$, giving $x > 3$. The algebraic roots found by solving the underlying polynomial are:\n\n$$x_1 = 5, \\quad x_2 = -2$$\n\nTesting both roots gives $5 > 3$, which is admitted, and $-2 < 3$, which is rejected. Thus, exactly one candidate survives the domain check, so the statement is True.",
+  "**B.** → True\n\nA prime number is an integer strictly greater than $1$ whose only positive divisors are $1$ and itself.\n\nThe unique surviving solution to the logarithmic equation is:\n\n$$x = 5$$\n\nBecause $5$ is an integer greater than $1$ divisible only by $1$ and $5$, it is a prime number, so the statement is True.",
+  "**C.** → True\n\nAn extraneous candidate arises when an algebraic transformation produces a root that lies outside the domain of the original equation.\n\nThe discarded candidate from factoring the quadratic equation is:\n\n$$x = -2$$\n\nEvaluating the sign of this root gives $-2 < 0$, which is negative, so the statement is True.",
+  "**D.** → False\n\nA polynomial equation is classified as linear if its degree is $1$ and quadratic if its degree is $2$.\n\nApplying the product rule and exponentiating base $10$ leads to the algebraic equation:\n\n$$x(x - 3) = 10$$\n\n$$x^2 - 3x - 10 = 0$$\n\nBecause the highest power of $x$ is $2$, the resulting equation is quadratic rather than linear, so the statement is False.",
+  "**E.** → True\n\nTwo equations are equivalent on a given domain if they have the exact same truth value for every value in that domain.\n\nFor any real number $x$ in the domain $D = (3, \\infty)$, both $x > 0$ and $x - 3 > 0$ hold simultaneously. Under these conditions, the logarithm product identity holds without restriction:\n\n$$\\log x + \\log(x - 3) = \\log\\big(x(x - 3)\\big)$$\n\nSubstituting this identity directly into the original equation yields $\\log(x(x-3)) = 1$, so the statement is True."
+ ]
+}

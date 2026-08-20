@@ -1,0 +1,26 @@
+{
+ "title": "Absolute Value Equation with a Linear Right-Hand Side",
+ "context": "An analyst investigates the real solutions to the equation $|x^2 - 5x + 6| = 6 - 2x$, which equates the absolute value of a quadratic expression to a linear expression.",
+ "statements": [
+  "Any real number $x$ satisfying the equation necessarily satisfies the linear inequality $x \\le 3$.",
+  "The equation possesses strictly more than two distinct real solutions.",
+  "Squaring both sides of the equation yields a fourth-degree polynomial equation that introduces exactly two distinct extraneous real solutions.",
+  "Over the open interval $(2, 3)$, where the expression inside the absolute value is strictly negative, the equation has no valid solutions.",
+  "The sum of all valid real solutions to the equation is strictly greater than the extraneous root $x = 4$."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "To solve the equation $|x^2 - 5x + 6| = 6 - 2x$, we first observe that the left-hand side is non-negative for all real $x$. This imposes the domain condition $6 - 2x \\ge 0$, which gives $x \\le 3$.\n\nThe quadratic expression factors as $x^2 - 5x + 6 = (x - 2)(x - 3)$, which changes sign at the partition points $x = 2$ and $x = 3$. We examine the cases based on the sign of the inner quadratic:\n\nFor $x \\in (-\\infty, 2] \\cup [3, \\infty)$, the quadratic is non-negative:\n\n$$x^2 - 5x + 6 = 6 - 2x$$\n\n$$x^2 - 3x = 0$$\n\n$$x(x - 3) = 0$$\n\nThis yields $x = 0$ and $x = 3$. Both satisfy the condition $x \\le 3$.\n\nFor $x \\in (2, 3)$, the quadratic is strictly negative:\n\n$$-(x^2 - 5x + 6) = 6 - 2x$$\n\n$$x^2 - 7x + 12 = 0$$\n\n$$(x - 3)(x - 4) = 0$$\n\nThis gives $x = 3$ and $x = 4$, neither of which lies inside the open interval $(2, 3)$. Thus, the set of all valid real solutions is $S = \\{0, 3\\}$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe absolute value of any real expression is non-negative by definition. Therefore, the left-hand side satisfies:\n\n$$|x^2 - 5x + 6| \\ge 0$$\n\nFor equality to hold, the linear right-hand side must also be non-negative:\n\n$$6 - 2x \\ge 0$$\n\nSolving this inequality for $x$ gives:\n\n$$-2x \\ge -6$$\n\n$$x \\le 3$$\n\nThus, every real solution must satisfy $x \\le 3$, so the statement is True.",
+  "**B.** → False\n\nTo determine the number of real solutions, we evaluate the algebraic roots across all sign intervals.\n\nWhen $x \\le 2$ or $x \\ge 3$, the quadratic inside the absolute value is non-negative, yielding:\n\n$$x^2 - 5x + 6 = 6 - 2x$$\n\n$$x(x - 3) = 0$$\n\nThis produces $x = 0$ and $x = 3$, both of which are valid.\n\nWhen $2 < x < 3$, the quadratic inside is strictly negative, yielding:\n\n$$-(x^2 - 5x + 6) = 6 - 2x$$\n\n$$(x - 3)(x - 4) = 0$$\n\nNeither $x = 3$ nor $x = 4$ belongs to the open interval $(2, 3)$.\n\nHence, the equation has exactly two distinct real solutions, namely $x = 0$ and $x = 3$, which is not strictly more than two, so the statement is False.",
+  "**C.** → False\n\nSquaring both sides of the equation eliminates the absolute value:\n\n$$(x^2 - 5x + 6)^2 = (6 - 2x)^2$$\n\nRearranging all terms to one side and factoring using the difference of squares gives:\n\n$$((x^2 - 5x + 6) - (6 - 2x))((x^2 - 5x + 6) + (6 - 2x)) = 0$$\n\n$$(x^2 - 3x)(x^2 - 7x + 12) = 0$$\n\n$$x(x - 3)^2(x - 4) = 0$$\n\nThe distinct real roots of this polynomial equation are $x = 0$, $x = 3$, and $x = 4$.\n\nTesting these values in the original equation reveals that $x = 0$ and $x = 3$ are genuine solutions, whereas $x = 4$ yields $|2| = -2$, which is invalid.\n\nTherefore, squaring introduces exactly one distinct extraneous solution, not two, so the statement is False.",
+  "**D.** → True\n\nOn the open interval $(2, 3)$, the factored expression $(x - 2)(x - 3)$ is strictly negative, so $|x^2 - 5x + 6| = -(x^2 - 5x + 6)$.\n\nThe equation on this interval becomes:\n\n$$-(x^2 - 5x + 6) = 6 - 2x$$\n\n$$-x^2 + 5x - 6 = 6 - 2x$$\n\n$$x^2 - 7x + 12 = 0$$\n\n$$(x - 3)(x - 4) = 0$$\n\nThe algebraic solutions to this quadratic equation are $x = 3$ and $x = 4$.\n\nNeither $3$ nor $4$ is an element of the open interval $(2, 3)$.\n\nConsequently, no valid solutions originate from this interval, so the statement is True.",
+  "**E.** → False\n\nThe valid real solutions to the equation are $x = 0$ and $x = 3$.\n\nThe sum of these valid solutions is:\n\n$$0 + 3 = 3$$\n\nThe extraneous root produced by solving the negative branch equation $-(x^2 - 5x + 6) = 6 - 2x$ is $x = 4$.\n\nComparing the sum of valid solutions with this extraneous root gives:\n\n$$3 < 4$$\n\nThe sum is strictly less than $4$, not strictly greater, so the statement is False."
+ ]
+}

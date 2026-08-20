@@ -1,0 +1,26 @@
+{
+ "title": "Symmetric Solutions of an Absolute-Value Equation",
+ "context": "Consider the real equation\n\n$$\\frac{|x^2 - 4|}{|x| + 1} = \\frac{1}{2}|x| + 1$$\n\nover the domain of all real numbers $\\mathbb{R}$.",
+ "statements": [
+  "The equation is defined for all real numbers $x$ because the denominator never vanishes on $\\mathbb{R}$.",
+  "The equation possesses exactly two distinct real solutions because an absolute-value equation of degree two cannot have more than two roots.",
+  "Because the equation is invariant under replacing $x$ with $-x$, the solution set is symmetric with respect to the origin, which implies that the sum of all real solutions is equal to zero.",
+  "The product of all real solutions of the equation is strictly negative.",
+  "Under the substitution $u = |x|$, simplifying the equation by dividing out the factor $|x| + 2$ is valid for every real $x$ without discarding any solutions because $|x| + 2$ is strictly positive."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the absolute-value equation by examining its domain, applying the substitution $u = |x| \\ge 0$, and carrying out a case analysis.\n\nThe denominator is $|x| + 1$. Because $|x| \\ge 0$ for every real number $x$, we have $|x| + 1 \\ge 1 > 0$, so the equation is defined on the entire set of real numbers $\\mathbb{R}$.\n\nWe rewrite the numerator using the difference of squares and properties of the absolute value:\n\n$$|x^2 - 4| = |(|x| - 2)(|x| + 2)| = ||x| - 2| \\cdot (|x| + 2)$$\n\nSubstituting this factorization into the original equation gives:\n\n$$\\frac{||x| - 2|(|x| + 2)}{|x| + 1} = \\frac{|x| + 2}{2}$$\n\nBecause $|x| + 2 \\ge 2 > 0$ for all real $x$, dividing both sides by $|x| + 2$ produces the simplified relation:\n\n$$\\frac{||x| - 2|}{|x| + 1} = \\frac{1}{2}$$\n\n$$2||x| - 2| = |x| + 1$$\n\nSetting $u = |x|$ with $u \\ge 0$, we resolve the equation $2|u - 2| = u + 1$ by cases:\n\nFor $u \\ge 2$, we have $2(u - 2) = u + 1$, which leads to:\n\n$$2u - 4 = u + 1$$\n\n$$u = 5$$\n\nSince $5 \\ge 2$, this root is admissible and yields $x = 5$ or $x = -5$.\n\nFor $0 \\le u < 2$, we have $2(2 - u) = u + 1$, which leads to:\n\n$$4 - 2u = u + 1$$\n\n$$3u = 3$$\n\n$$u = 1$$\n\nSince $0 \\le 1 < 2$, this root is admissible and yields $x = 1$ or $x = -1$.\n\nThe complete solution set is therefore $S = \\{-5, -1, 1, 5\\}$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nA rational expression is defined whenever its denominator is nonzero.\n\nThe denominator of the left-hand side is $|x| + 1$.\n\nFor every real number $x$, the absolute value satisfies $|x| \\ge 0$, which gives:\n\n$$|x| + 1 \\ge 0 + 1 = 1 > 0$$\n\nBecause the denominator is strictly positive for all $x \\in \\mathbb{R}$, no real number causes division by zero, so the statement is True.",
+  "**B.** → False\n\nThe number of real solutions is determined by finding all values of $x$ that satisfy the equation.\n\nSubstituting $u = |x|$ into the simplified equation $2|u - 2| = u + 1$ yields two admissible non-negative values, $u = 1$ and $u = 5$.\n\nEach positive value of $u$ generates two symmetric real roots:\n\n$$|x| = 1 \\implies x = 1 \\quad \\text{or} \\quad x = -1$$\n\n$$|x| = 5 \\implies x = 5 \\quad \\text{or} \\quad x = -5$$\n\nThis produces a total of four distinct real solutions, namely $\\{-5, -1, 1, 5\\}$, not two, so the statement is False.",
+  "**C.** → True\n\nA function $f(x)$ is even if $f(-x) = f(x)$ for all $x$ in its domain, which guarantees that if $x_0$ is a solution, then $-x_0$ is also a solution.\n\nReplacing $x$ with $-x$ in the equation leaves every term unchanged because $(-x)^2 = x^2$ and $|-x| = |x|$.\n\nThe solution set is $S = \\{-5, -1, 1, 5\\}$. We calculate the sum of all elements in $S$:\n\n$$\\sum_{x \\in S} x = (-5) + (-1) + 1 + 5 = 0$$\n\nThe roots pair up symmetrically around the origin and sum to zero, so the statement is True.",
+  "**D.** → False\n\nThe product of a set of numbers is obtained by multiplying all of its elements together.\n\nThe real solutions of the equation are $-5$, $-1$, $1$, and $5$.\n\nWe compute their product directly:\n\n$$(-5) \\cdot (-1) \\cdot 1 \\cdot 5 = 25$$\n\nBecause $25 > 0$, the product of all real solutions is positive rather than strictly negative, so the statement is False.",
+  "**E.** → True\n\nDividing both sides of an equation by an algebraic expression is an equivalence transformation if and only if the expression is nowhere equal to zero on the domain.\n\nIn the equation $\\frac{||x| - 2|(|x| + 2)}{|x| + 1} = \\frac{|x| + 2}{2}$, the canceled factor is $|x| + 2$.\n\nFor every real number $x$, we have $|x| \\ge 0$, which ensures:\n\n$$|x| + 2 \\ge 2 > 0$$\n\nBecause $|x| + 2$ can never vanish for any real $x$, dividing both sides by this factor cannot eliminate any valid solutions, so the statement is True."
+ ]
+}

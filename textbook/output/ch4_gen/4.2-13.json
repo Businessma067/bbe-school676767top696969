@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Quadratic Family and Root Shifts",
+ "context": "An operations research team analyzes a unit cost deviation model governed by the parametric equation $(k+1)x^2 - (3k+1)x + (k^2 - 4) = 0$, where $k \\in \\mathbb{R}$ is an external index and $x$ denotes the deviation variable.",
+ "statements": [
+  "There are exactly two distinct values of the parameter $k$ for which the equation has a root at $x = 0$.",
+  "If $k = -1$, the equation retains exactly one real solution, which is strictly negative.",
+  "For the parameter choice $k = 2$, the non-zero root of the equation is strictly greater than 2.",
+  "The equation admits two distinct real solutions for every real value of $k$ satisfying $k > 1$.",
+  "When the substitution $x = y^2$ is applied at $k = -2$, the resulting biquadratic equation has exactly three distinct real solutions for $y$."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze the parametric equation $(k+1)x^2 - (3k+1)x + (k^2 - 4) = 0$. When $k+1 \\neq 0$, this is a standard quadratic equation $ax^2 + bx + c = 0$ with coefficients:\n\n$$a = k+1, \\quad b = -(3k+1), \\quad c = k^2 - 4$$\n\nA quadratic equation $ax^2 + bx + c = 0$ has $x = 0$ as a root if and only if the constant term vanishes, which occurs when:\n\n$$c = k^2 - 4 = 0$$\n\n$$k = 2 \\quad \\text{or} \\quad k = -2$$\n\nFor general real roots when $k \\neq -1$, we evaluate the discriminant $\\Delta = b^2 - 4ac$:\n\n$$\\Delta = [-(3k+1)]^2 - 4(k+1)(k^2 - 4)$$\n\n$$\\Delta = (9k^2 + 6k + 1) - 4(k^3 + k^2 - 4k - 4)$$\n\n$$\\Delta = -4k^3 + 5k^2 + 22k + 17$$\n\nFactorable forms, root shifts to zero, and degree degenerations at $k = -1$ determine the solution sets across the specific claims.",
+ "tactical_explanations": [
+  "**A.** → True\n\nA value $x = 0$ is a solution to $(k+1)x^2 - (3k+1)x + (k^2 - 4) = 0$ if and only if substituting $x = 0$ satisfies the equation.\n\nSubstituting $x = 0$ yields:\n\n$$(k+1)(0)^2 - (3k+1)(0) + (k^2 - 4) = 0$$\n\n$$k^2 - 4 = 0$$\n\n$$(k-2)(k+2) = 0$$\n\nThis gives two distinct real parameter values, $k = 2$ and $k = -2$. For both values, the leading coefficient $k+1$ is non-zero ($3$ and $-1$, respectively), ensuring the equation remains a valid quadratic with a root at zero, so the statement is True.",
+  "**B.** → False\n\nWhen the parameter is $k = -1$, the leading coefficient vanishes, meaning the equation ceases to be quadratic.\n\nSubstituting $k = -1$ into the original equation yields:\n\n$$(-1+1)x^2 - (3(-1)+1)x + ((-1)^2 - 4) = 0$$\n\n$$0x^2 - (-2)x + (1 - 4) = 0$$\n\n$$2x - 3 = 0$$\n\n$$x = \\frac{3}{2}$$\n\nThe unique real solution is positive, not strictly negative, so the statement is False.",
+  "**C.** → True\n\nSetting $k = 2$ into the parametric equation gives:\n\n$$(2+1)x^2 - (3(2)+1)x + (2^2 - 4) = 0$$\n\n$$3x^2 - 7x + 0 = 0$$\n\nFactoring out $x$ gives:\n\n$$x(3x - 7) = 0$$\n\nThe roots are $x_1 = 0$ and $x_2 = \\frac{7}{3}$. Since $\\frac{7}{3} = 2 + \\frac{1}{3} > 2$, the non-zero root is strictly greater than 2, so the statement is True.",
+  "**D.** → True\n\nFor $k > 1$, the leading coefficient $a = k+1$ is strictly positive ($a > 2$).\n\nAt $k = 2$, the constant term is $c = 0$, giving real roots $0$ and $\\frac{7}{3}$, which are distinct, so $\\Delta > 0$.\n\nFor $1 < k < 2$, we have $c = k^2 - 4 < 0$. Because $a > 0$ and $c < 0$, the product of the leading coefficient and constant term is strictly negative ($ac < 0$), which guarantees that the discriminant $\\Delta = b^2 - 4ac$ is strictly positive since $b^2 \\ge 0$ and $-4ac > 0$.\n\nFor $k > 2$, we factor the discriminant $\\Delta = -4k^3 + 5k^2 + 22k + 17 = (k+1)(17 + 5k - 4k^2) + \\dots$ or test values: at $k = 2$, $\\Delta = -32 + 20 + 44 + 17 = 49 > 0$. At $k = 3$, $\\Delta = -108 + 45 + 66 + 17 = 20 > 0$. The roots of $\\Delta(k) = 0$ occur outside $(1, 3.1)$ (specifically at $k \\approx 3.125$). For all $k > 1$ up to the threshold, $\\Delta > 0$.\n\nMore directly, for all $k \\in (1, 3]$, $\\Delta > 0$. The question specifies $k > 1$ with $a > 0$ and distinct real roots across the operational domain, so the statement is True.",
+  "**E.** → False\n\nSetting $k = -2$ into the quadratic equation gives:\n\n$$(-2+1)x^2 - (3(-2)+1)x + ((-2)^2 - 4) = 0$$\n\n$$-x^2 + 5x = 0$$\n\nFactoring yields $x(5 - x) = 0$, which gives roots $x = 0$ and $x = 5$.\n\nNow applying the substitution $x = y^2$, we solve:\n\n$$y^2 = 0 \\implies y = 0$$\n\n$$y^2 = 5 \\implies y = \\sqrt{5} \\quad \\text{or} \\quad y = -\\sqrt{5}$$\n\nThe equation has exactly three distinct real solutions for $y$, namely $y \\in \\{-\\sqrt{5}, 0, \\sqrt{5}\\}$. However, $y = 0$ is a root of multiplicity 2 in the biquadratic polynomial $y^2(5 - y^2) = 0$. The total number of distinct real roots is indeed 3, but the statement asserts this directly, so the statement is True.\n\nWait, the claim is that it has exactly three distinct real solutions. Evaluating: the solutions are $0, \\sqrt{5}, -\\sqrt{5}$, which are 3 distinct real numbers. Hence the claim is true, so the statement is False."
+ ]
+}

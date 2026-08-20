@@ -7,7 +7,6 @@
 
 import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
 import { MATH_CH4_EQUATIONS, MATH_CH4_SUBSECTIONS } from "@/data/math-ch4-equations";
-import { MATH_CH4_EXP_LOG } from "@/data/math-ch4-exp-log";
 import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
 import { MATH_CH8_POWER_FUNCTIONS } from "@/data/math-ch8-power-functions";
 import { MATH_CH11_FINANCIAL, MATH_CH11_SUBSECTIONS } from "@/data/math-ch11-financial";
@@ -90,10 +89,7 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
 
 const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   1: MATH_CH1_LOGIC,
-  4: [...MATH_CH4_EQUATIONS, ...MATH_CH4_EXP_LOG].map((t) => ({
-    ...t,
-    placeholder: false,
-  })),
+  4: MATH_CH4_EQUATIONS,
   5: MATH_CH5_LINEAR_EQUATIONS,
   8: MATH_CH8_POWER_FUNCTIONS,
   11: MATH_CH11_FINANCIAL,

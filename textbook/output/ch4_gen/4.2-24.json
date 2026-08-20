@@ -1,0 +1,26 @@
+{
+ "title": "Parameterized Quadratic Equation and Root Properties",
+ "context": "A financial analyst studies a parameterized model whose equilibrium condition is expressed by the equation $(k - 1)x^2 - 2(k + 1)x + (2k - 1) = 0$, where $k$ is a real parameter and $x$ denotes the equilibrium quantity.",
+ "statements": [
+  "The equation is quadratic and has a double real root if and only if $k \\in \\{0, 5\\}$.",
+  "When $k = 1$, the equation has no real solutions.",
+  "For every $k$ in the open interval $(1, 5)$, the equation possesses two distinct real solutions of opposite signs.",
+  "For the positive value of $k$ that produces a double real root, that double root is strictly greater than $1$.",
+  "Under the substitution $x = y^2$, setting $k = 5$ produces an equation in $y$ with four distinct real solutions."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze the equation $(k - 1)x^2 - 2(k + 1)x + (2k - 1) = 0$ with coefficients $a = k - 1$, $b = -2(k + 1)$, and $c = 2k - 1$.\n\nWhen $k \\neq 1$, the equation is quadratic with discriminant:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = [-2(k + 1)]^2 - 4(k - 1)(2k - 1)$$\n\n$$\\Delta = 4(k^2 + 2k + 1) - 4(2k^2 - 3k + 1)$$\n\n$$\\Delta = 4(-k^2 + 5k)$$\n\n$$\\Delta = 4k(5 - k)$$\n\nSetting $\\Delta = 0$ identifies the parameter values that yield equal roots.",
+ "tactical_explanations": [
+  "**A.** → True\n\nA quadratic equation $ax^2 + bx + c = 0$ has a double real root if and only if its leading coefficient is non-zero, $a \\neq 0$, and its discriminant satisfies $\\Delta = 0$.\n\nHere, the leading coefficient is $a = k - 1$, which is non-zero when $k \\neq 1$.\n\nThe condition for a double root requires setting the discriminant to zero:\n\n$$4k(5 - k) = 0$$\n\nThis product vanishes if and only if:\n\n$$k = 0 \\quad \\text{or} \\quad k = 5$$\n\nSince neither value equals $1$, the equation is quadratic in both cases and has a unique repeated real root, so the statement is True.",
+  "**B.** → False\n\nWhen the parameter is set to $k = 1$, the quadratic term vanishes because the leading coefficient becomes $1 - 1 = 0$.\n\nSubstituting $k = 1$ into the original equation gives:\n\n$$(1 - 1)x^2 - 2(1 + 1)x + (2(1) - 1) = 0$$\n\n$$-4x + 1 = 0$$\n\nSolving this linear equation yields:\n\n$$x = \\frac{1}{4}$$\n\nTherefore, the equation has exactly one real solution rather than no real solutions, so the statement is False.",
+  "**C.** → False\n\nAccording to Vieta's formulas, the product of the roots of a quadratic equation $ax^2 + bx + c = 0$ is given by $\\frac{c}{a}$.\n\nFor $k \\in (1, 5)$, the discriminant is strictly positive, ensuring two distinct real roots:\n\n$$\\Delta = 4k(5 - k) > 0$$\n\nThe product of these two roots is:\n\n$$x_1 \\cdot x_2 = \\frac{2k - 1}{k - 1}$$\n\nFor every $k$ in the interval $(1, 5)$, we have $2k - 1 > 1 > 0$ and $k - 1 > 0$, so the product is strictly positive:\n\n$$x_1 \\cdot x_2 > 0$$\n\nBecause their product is positive, both roots must have the same sign, so the statement is False.",
+  "**D.** → True\n\nThe positive parameter value yielding a double real root is $k = 5$.\n\nSubstituting $k = 5$ into the equation gives:\n\n$$(5 - 1)x^2 - 2(5 + 1)x + (2(5) - 1) = 0$$\n\n$$4x^2 - 12x + 9 = 0$$\n\nWe solve this by factoring the perfect square:\n\n$$(2x - 3)^2 = 0$$\n\n$$x = \\frac{3}{2}$$\n\nSince $\\frac{3}{2} = 1.5 > 1$, the double root is strictly greater than $1$, so the statement is True.",
+  "**E.** → False\n\nFor $k = 5$, the equation in $x$ is $4x^2 - 12x + 9 = 0$, which factors as $(2x - 3)^2 = 0$.\n\nApplying the substitution $x = y^2$ transforms the equation into:\n\n$$(2y^2 - 3)^2 = 0$$\n\nSetting the squared term to zero yields:\n\n$$2y^2 - 3 = 0$$\n\n$$y^2 = \\frac{3}{2}$$\n\nTaking the square root gives the real solutions:\n\n$$y = \\sqrt{\\frac{3}{2}} \\quad \\text{and} \\quad y = -\\sqrt{\\frac{3}{2}}$$\n\nThis results in exactly two distinct real solutions, not four, so the statement is False."
+ ]
+}

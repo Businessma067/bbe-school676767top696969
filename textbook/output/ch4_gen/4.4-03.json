@@ -1,0 +1,26 @@
+{
+ "title": "Powers of two and three on both sides",
+ "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $4^{x} = 8$ is not an integer.",
+  "The solution of $8^{x} = 4^{x+1}$ is an even number.",
+  "The solution of $2^{3x} = 4^{x-1}$ is positive.",
+  "The solution of $9^{x} = 27$ lies strictly between $1$ and $2$.",
+  "The solution of $16^{x} = 8^{x+1}$ is smaller than the solution of $4^{x} = 8$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "Exponential equations of the form $b^{f(x)} = c^{g(x)}$ where both bases $b$ and $c$ share a common prime base $a$ are solved by rewriting each power in base $a$ and equating the resulting exponents. Using the power rule $(a^m)^n = a^{m \\cdot n}$, the equation transforms into:\n\n$$a^{m \\cdot f(x)} = a^{k \\cdot g(x)}$$\n\nSince the exponential function with base $a > 0$ and $a \\neq 1$ is strictly monotonic and thus injective, equating the exponents yields a linear equation:\n\n$$m \\cdot f(x) = k \\cdot g(x)$$\n\nSolving this linear relation provides the unique real solution $x$ in each case.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo solve $4^{x} = 8$, rewrite both sides with the common base $2$.\n\n$$(2^2)^x = 2^3$$\n\n$$2^{2x} = 2^3$$\n\nEquating exponents gives a linear equation:\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2}$$\n\nThe value $\\frac{3}{2} = 1.5$ is a rational number but not an integer, so the statement is True.",
+  "**B.** → True\n\nTo solve $8^{x} = 4^{x+1}$, express both sides as powers of $2$.\n\n$$(2^3)^x = (2^2)^{x+1}$$\n\n$$2^{3x} = 2^{2(x+1)}$$\n\nEquating the exponents gives:\n\n$$3x = 2x + 2$$\n\n$$x = 2$$\n\nThe number $2$ is divisible by $2$, so it is an even number, so the statement is True.",
+  "**C.** → False\n\nTo solve $2^{3x} = 4^{x-1}$, express the right side with base $2$.\n\n$$2^{3x} = (2^2)^{x-1}$$\n\n$$2^{3x} = 2^{2(x-1)}$$\n\nEquating the exponents yields:\n\n$$3x = 2(x - 1)$$\n\n$$3x = 2x - 2$$\n\n$$x = -2$$\n\nThe solution is $x = -2$, which is strictly negative, so the statement is False.",
+  "**D.** → True\n\nTo solve $9^{x} = 27$, rewrite both sides with base $3$.\n\n$$(3^2)^x = 3^3$$\n\n$$3^{2x} = 3^3$$\n\nEquating exponents gives:\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2}$$\n\nSince $1 < \\frac{3}{2} < 2$, the value $1.5$ lies strictly between $1$ and $2$, so the statement is True.",
+  "**E.** → False\n\nFirst, solve $16^{x} = 8^{x+1}$ by converting both sides to base $2$.\n\n$$(2^4)^x = (2^3)^{x+1}$$\n\n$$2^{4x} = 2^{3(x+1)}$$\n\n$$4x = 3x + 3$$\n\n$$x = 3$$\n\nNext, solve $4^x = 8$ with base $2$.\n\n$$(2^2)^x = 2^3$$\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2} = 1.5$$\n\nComparing the two solutions, $3 > 1.5$, so the first solution is greater than the second, so the statement is False."
+ ]
+}

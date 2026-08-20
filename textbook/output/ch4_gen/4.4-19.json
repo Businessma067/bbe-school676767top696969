@@ -1,0 +1,26 @@
+{
+ "title": "When does the smaller fund overtake the bigger one",
+ "context": "Fund A starts with $1000$ EUR and grows by $6\\%$ per year. Fund B starts with $2000$ EUR and grows by $3\\%$ per year. Both compound annually. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "Fund A first exceeds fund B during the twenty-fifth year.",
+  "The moment of overtaking does not depend on the ratio of the two starting amounts.",
+  "Doubling both starting amounts leaves the moment of overtaking unchanged.",
+  "Fund A overtakes fund B within the first twenty years.",
+  "The overtaking time can be computed with logarithms of any base, and the base does not change the result."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "Let $t$ denote time in years. The value of Fund A after $t$ years is modeled by $A(t) = 1000 \\cdot (1.06)^t$, and the value of Fund B is modeled by $B(t) = 2000 \\cdot (1.03)^t$. Fund A overtakes Fund B when $A(t) > B(t)$:\n\n$$1000 \\cdot (1.06)^t > 2000 \\cdot (1.03)^t$$\n\nDividing both sides by $1000 \\cdot (1.03)^t$ isolates the exponential terms:\n\n$$\\left(\\frac{1.06}{1.03}\\right)^t > \\frac{2000}{1000}$$\n\n$$\\left(\\frac{1.06}{1.03}\\right)^t > 2$$\n\nTaking the natural logarithm of both sides gives:\n\n$$t \\cdot \\ln\\left(\\frac{1.06}{1.03}\\right) > \\ln(2)$$\n\n$$t > \\frac{\\ln(2)}{\\ln(1.06) - \\ln(1.03)}$$\n\nEvaluating the numerical expressions:\n\n$$t > \\frac{0.69315}{0.05827 - 0.02956} \\approx 24.14$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe threshold time at which the two funds have equal value satisfies the equation:\n\n$$1000 \\cdot (1.06)^t = 2000 \\cdot (1.03)^t$$\n\nSolving for $t$ by taking natural logarithms yields:\n\n$$t = \\frac{\\ln(2)}{\\ln(1.06 / 1.03)} \\approx 24.14$$\n\nBecause $t \\approx 24.14$ lies strictly between $24$ and $25$, Fund A is still smaller than Fund B at the end of year $24$ and exceeds Fund B during the twenty-fifth year (specifically at integer year $25$), so the statement is True.",
+  "**B.** → False\n\nLet $A_0$ and $B_0$ denote the initial values of Fund A and Fund B respectively. The equality condition for the two accounts is given by:\n\n$$A_0 \\cdot (1.06)^t = B_0 \\cdot (1.03)^t$$\n\nRearranging to isolate the time variable gives:\n\n$$\\left(\\frac{1.06}{1.03}\\right)^t = \\frac{B_0}{A_0}$$\n\n$$t = \\frac{\\ln(B_0 / A_0)}{\\ln(1.06 / 1.03)}$$\n\nThe overtaking time $t$ depends explicitly on the initial ratio $\\frac{B_0}{A_0}$, so the statement is False.",
+  "**C.** → True\n\nThe overtaking time depends on the initial balances through their ratio:\n\n$$t = \\frac{\\ln(B_0 / A_0)}{\\ln(1.06 / 1.03)}$$\n\nIf both starting balances are multiplied by $2$, the new ratio is:\n\n$$\\frac{2 B_0}{2 A_0} = \\frac{B_0}{A_0}$$\n\nBecause the scalar multiple cancels out completely, the ratio remains $\\frac{2000}{1000} = 2$, meaning the value of $t$ is entirely unchanged, so the statement is True.",
+  "**D.** → False\n\nThe time needed for Fund A to catch Fund B is determined by solving:\n\n$$1000 \\cdot (1.06)^t = 2000 \\cdot (1.03)^t$$\n\n$$t = \\frac{\\ln(2)}{\\ln(1.06 / 1.03)} \\approx 24.14$$\n\nEvaluating the values of both funds at $t = 20$ confirms this comparison:\n\n$$A(20) = 1000 \\cdot (1.06)^{20} \\approx 3207.14$$\n\n$$B(20) = 2000 \\cdot (1.03)^{20} \\approx 3612.22$$\n\nSince $A(20) < B(20)$ and the overtaking time exceeds $20$ years, Fund A does not overtake Fund B within the first twenty years, so the statement is False.",
+  "**E.** → True\n\nApplying a logarithm with an arbitrary base $b > 0$ and $b \\neq 1$ to the equation $\\left(\\frac{1.06}{1.03}\\right)^t = 2$ gives:\n\n$$t \\cdot \\log_b\\left(\\frac{1.06}{1.03}\\right) = \\log_b(2)$$\n\n$$t = \\frac{\\log_b(2)}{\\log_b(1.06 / 1.03)}$$\n\nBy the logarithmic change of base formula, $\\frac{\\log_b(x)}{\\log_b(y)} = \\frac{\\ln(x)}{\\ln(y)}$ for every valid base $b$, which proves the numerical result is completely independent of the chosen base, so the statement is True."
+ ]
+}

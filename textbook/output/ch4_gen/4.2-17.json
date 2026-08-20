@@ -1,0 +1,26 @@
+{
+ "title": "Reduction of a Fourth-Degree Polynomial to Quadratic Form",
+ "context": "A financial risk model requires determining the real roots of the fourth-degree polynomial equation $$(x-1)(x-2)(x-4)(x-5) = 40$$ which can be reduced to quadratic form by grouping factors with equal constant sums, as well as analyzing the parameterized family $(x-1)(x-2)(x-4)(x-5) = c$ for $c \\in \\mathbb{R}$.",
+ "statements": [
+  "The equation $(x-1)(x-2)(x-4)(x-5) = 40$ has exactly two distinct real solutions, and their arithmetic mean is equal to $3$.",
+  "By completing the square on the quadratic factor $x^2 - 6x + 13$, the expression is written as $(x-3)^2 + 4$, which proves that the discriminant of this factor is positive.",
+  "According to Vieta's formulas, the sum of all four complex roots of the polynomial equation $(x-1)(x-2)(x-4)(x-5) - 40 = 0$ is equal to $12$.",
+  "The parameterized equation $(x-1)(x-2)(x-4)(x-5) = c$ has four distinct real solutions if and only if the parameter satisfies $-\\frac{9}{4} < c < 4$.",
+  "If the parameter is set to $c = -3$, the equation $(x-1)(x-2)(x-4)(x-5) = c$ has at least one real solution."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  true,
+  false
+ ],
+ "solution_overview": "To solve the equation $(x-1)(x-2)(x-4)(x-5) = 40$, we pair the factors whose constant terms have equal sums: $(x-1)(x-5)$ and $(x-2)(x-4)$.\n\nExpanding each pair gives:\n\n$$(x-1)(x-5) = x^2 - 6x + 5$$\n\n$$(x-2)(x-4) = x^2 - 6x + 8$$\n\nIntroducing the substitution $u = x^2 - 6x$, the equation becomes:\n\n$$(u+5)(u+8) = 40$$\n\n$$u^2 + 13u + 40 = 40$$\n\n$$u(u + 13) = 0$$\n\nThis yields two values for $u$, namely $u = 0$ and $u = -13$.\n\nFor $u = 0$, we have $x^2 - 6x = 0$, which gives the real solutions $x = 0$ and $x = 6$.\n\nFor $u = -13$, we have $x^2 - 6x + 13 = 0$, which has no real solutions because its discriminant is negative.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe real solutions are obtained from the factor $x^2 - 6x = 0$.\n\nFactoring yields:\n\n$$x(x - 6) = 0$$\n\n$$x_1 = 0, \\quad x_2 = 6$$\n\nThe second quadratic factor $x^2 - 6x + 13 = 0$ has discriminant:\n\n$$\\Delta = (-6)^2 - 4(1)(13) = 36 - 52 = -16 < 0$$\n\nThus, there are exactly two distinct real solutions. Their arithmetic mean is:\n\n$$\\frac{x_1 + x_2}{2} = \\frac{0 + 6}{2} = 3$$\n\nBoth the count and the mean match the claim, so the statement is True.",
+  "**B.** → False\n\nCompleting the square on the quadratic expression $x^2 - 6x + 13$ gives:\n\n$$x^2 - 6x + 13 = (x - 3)^2 - 9 + 13 = (x - 3)^2 + 4$$\n\nSetting this expression equal to zero gives $(x - 3)^2 = -4$. Because a squared real expression cannot equal a negative number, the equation $(x - 3)^2 + 4 = 0$ has no real roots.\n\nThe discriminant formula verifies this:\n\n$$\\Delta = (-6)^2 - 4(1)(13) = -16 < 0$$\n\nThe discriminant is negative, not positive, so the statement is False.",
+  "**C.** → True\n\nExpanding the full product gives the polynomial in standard form:\n\n$$(x^2 - 6x + 5)(x^2 - 6x + 8) - 40 = 0$$\n\n$$(x^2 - 6x)^2 + 13(x^2 - 6x) = 0$$\n\n$$x^4 - 12x^3 + 49x^2 - 78x = 0$$\n\nBy Vieta's formulas for a monic fourth-degree polynomial $x^4 + a_3 x^3 + a_2 x^2 + a_1 x + a_0 = 0$, the sum of all roots in $\\mathbb{C}$ is given by $-a_3$:\n\n$$\\sum_{i=1}^4 x_i = -(-12) = 12$$\n\nSumming the four roots directly confirms this:\n\n$$0 + 6 + (3 + 2i) + (3 - 2i) = 12$$\n\nThe sum is indeed $12$, so the statement is True.",
+  "**D.** → True\n\nFor the equation $(x-1)(x-2)(x-4)(x-5) = c$, the substitution $u = x^2 - 6x$ leads to:\n\n$$(u+5)(u+8) = c$$\n\n$$u^2 + 13u + 40 - c = 0$$\n\nBecause $x^2 - 6x = (x-3)^2 - 9$, a value of $u$ yields two distinct real values of $x$ if and only if $u > -9$.\n\nLetting $v = u + 9 > 0$, the quadratic equation becomes:\n\n$$(v - 9)^2 + 13(v - 9) + 40 - c = 0$$\n\n$$v^2 - 5v + (4 - c) = 0$$\n\nFor the original equation to have four distinct real solutions, this equation in $v$ must have two distinct strictly positive real roots. This requires two conditions:\n\n$$\\Delta_v = (-5)^2 - 4(4 - c) = 9 + 4c > 0 \\implies c > -\\frac{9}{4}$$\n\n$$v_1 v_2 = 4 - c > 0 \\implies c < 4$$\n\nThe sum of roots $v_1 + v_2 = 5 > 0$ is automatically satisfied. Combining the inequalities gives $-\\frac{9}{4} < c < 4$, so the statement is True.",
+  "**E.** → False\n\nFor the equation $(x-1)(x-2)(x-4)(x-5) = c$ with $c = -3$, the intermediate quadratic in $u$ is:\n\n$$u^2 + 13u + 40 - (-3) = 0$$\n\n$$u^2 + 13u + 43 = 0$$\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta_u = 13^2 - 4(1)(43) = 169 - 172 = -3 < 0$$\n\nBecause $\\Delta_u < 0$, there are no real values for $u$. Consequently, there can be no real solutions for $x$, so the statement is False."
+ ]
+}

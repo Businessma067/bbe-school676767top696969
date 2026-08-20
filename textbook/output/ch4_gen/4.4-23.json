@@ -1,0 +1,26 @@
+{
+ "title": "Composite decadic equations under pressure",
+ "context": "Throughout, $\\log$ denotes the decadic logarithm of $x$. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $\\log\\sqrt[3]{x} + \\log x^{3} - \\log x + \\frac{4}{3} = \\dfrac{\\log x^{6}}{1 + \\log 100}$ is smaller than $1$.",
+  "The solution of $\\log x^{5} - \\log\\sqrt{x} + \\frac{1}{2}\\log x = 10$ is greater than $50$.",
+  "The equation $\\dfrac{\\log x^{2}}{1 + \\log 10} = \\log x - 1$ has exactly one solution.",
+  "The two solutions of $(\\log x)^{2} - 3\\log x + 2 = 0$ differ by a factor of ten.",
+  "The equation $\\log(x^{2}) = (\\log x)^{2}$ has a solution larger than $10$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  true
+ ],
+ "solution_overview": "Every statement concerns logarithmic equations involving the decadic base ten logarithm $\\log x = \\log_{10} x$. For all real expressions involving logarithms of powers of $x$, the domain of admissible real values is $x > 0$.\n\nWe systematically use the power property of logarithms:\n\n$$\\log(x^{k}) = k \\cdot \\log x$$\n\ntogether with the exact values of integer powers of ten:\n\n$$\\log 10^{k} = k$$\n\nApplying these reduction rules simplifies each logarithmic expression to a linear or quadratic equation in terms of the variable $u = \\log x$. Once $u$ is determined, the corresponding value of $x$ is obtained through the inverse exponential function:\n\n$$x = 10^{u}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo solve the given equation, we apply the power rule to simplify each logarithmic term for $x > 0$.\n\nThe left-hand side expands to:\n\n$$\\log\\sqrt[3]{x} + \\log x^{3} - \\log x + \\frac{4}{3} = \\frac{1}{3}\\log x + 3\\log x - \\log x + \\frac{4}{3} = \\frac{7}{3}\\log x + \\frac{4}{3}$$\n\nEvaluating the denominator of the right-hand side yields $1 + \\log 100 = 1 + 2 = 3$, so the right-hand side becomes:\n\n$$\\frac{\\log x^{6}}{1 + \\log 100} = \\frac{6\\log x}{3} = 2\\log x$$\n\nEquating both sides gives:\n\n$$\\frac{7}{3}\\log x + \\frac{4}{3} = 2\\log x$$\n\nSubtracting $2\\log x$ and $\\frac{4}{3}$ yields:\n\n$$\\frac{1}{3}\\log x = -\\frac{4}{3}$$\n\nMultiplying by $3$ gives $\\log x = -4$, which leads to:\n\n$$x = 10^{-4} = 0.0001$$\n\nSince $0.0001 < 1$, the solution is indeed smaller than $1$, so the statement is True.",
+  "**B.** → True\n\nWe express each term in terms of $\\log x$ using the exponent rule $\\log(x^{k}) = k\\log x$.\n\nRewriting the left-hand side gives:\n\n$$\\log x^{5} - \\log\\sqrt{x} + \\frac{1}{2}\\log x = 5\\log x - \\frac{1}{2}\\log x + \\frac{1}{2}\\log x$$\n\nThe fractional terms cancel, leaving:\n\n$$5\\log x = 10$$\n\nDividing both sides by $5$ results in:\n\n$$\\log x = 2$$\n\nExponentiating with base ten yields:\n\n$$x = 10^{2} = 100$$\n\nSince $100 > 50$, the solution is greater than $50$, so the statement is True.",
+  "**C.** → False\n\nWe simplify the fraction on the left-hand side using $\\log 10 = 1$ and $\\log(x^{2}) = 2\\log x$ for $x > 0$.\n\nThis gives:\n\n$$\\frac{\\log x^{2}}{1 + \\log 10} = \\frac{2\\log x}{1 + 1} = \\frac{2\\log x}{2} = \\log x$$\n\nSubstituting this result back into the original equation produces:\n\n$$\\log x = \\log x - 1$$\n\nSubtracting $\\log x$ from both sides results in the contradiction:\n\n$$0 = -1$$\n\nBecause this contradiction has no solutions, the equation possesses zero solutions rather than exactly one solution, so the statement is False.",
+  "**D.** → True\n\nWe substitute $u = \\log x$ into the given equation to form a standard quadratic equation:\n\n$$u^{2} - 3u + 2 = 0$$\n\nFactoring the quadratic yields:\n\n$$(u - 1)(u - 2) = 0$$\n\nThis gives the two solutions for $u$:\n\n$$u_{1} = 1, \\quad u_{2} = 2$$\n\nTranslating back to $x$ by exponentiating with base ten gives:\n\n$$x_{1} = 10^{1} = 10, \\quad x_{2} = 10^{2} = 100$$\n\nTaking their ratio gives $\\frac{x_{2}}{x_{1}} = \\frac{100}{10} = 10$, meaning the two roots differ by a factor of ten, so the statement is True.",
+  "**E.** → True\n\nUsing the power rule, the left-hand side simplifies to $\\log(x^{2}) = 2\\log x$.\n\nSetting this equal to the right-hand side gives:\n\n$$2\\log x = (\\log x)^{2}$$\n\nRearranging all terms to one side yields:\n\n$$(\\log x)^{2} - 2\\log x = 0$$\n\nFactoring out $\\log x$ produces:\n\n$$\\log x(\\log x - 2) = 0$$\n\nThis yields two possible values for $\\log x$, namely $\\log x = 0$ or $\\log x = 2$. Exponentiating gives the two solutions:\n\n$$x_{1} = 10^{0} = 1, \\quad x_{2} = 10^{2} = 100$$\n\nBecause $x_{2} = 100$ is strictly larger than $10$, the equation possesses a solution larger than $10$, so the statement is True."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Quadratic Profit Model",
+ "context": "A company models its quarterly profit function (in thousands of euros) by the family of quadratic expressions $P_k(x) = x^2 - (2k-1)x - (k+3)$, where $x \\in \\mathbb{R}$ represents the output level and $k \\in \\mathbb{R}$ is a real market parameter. Financial analysts evaluate the algebraic properties of $P_k(x)$, the break-even points where $P_k(x) = 0$, and the roots of related polynomial forms.",
+ "statements": [
+  "The equation $P_k(x) = 0$ has two distinct real solutions for every real value of the parameter $k$.",
+  "The equation $P_k(x) = 0$ possesses two real roots of opposite signs if and only if $k > -3$.",
+  "If $x_1$ and $x_2$ denote the roots of $P_k(x) = 0$, then the sum of their squares, $x_1^2 + x_2^2$, attains its minimum value when $k = \\frac{1}{2}$.",
+  "For any parameter value $k > -3$, the biquadratic equation $y^4 - (2k-1)y^2 - (k+3) = 0$ has four distinct real solutions.",
+  "Completing the square shows that the minimum value of $P_k(x)$ over all $x \\in \\mathbb{R}$ is equal to $-\\left(k^2 + \\frac{13}{4}\\right)$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the quadratic polynomial $P_k(x) = x^2 - (2k-1)x - (k+3)$ with coefficients $a = 1$, $b = -(2k-1)$, and $c = -(k+3)$.\n\nThe discriminant of the quadratic equation $P_k(x) = 0$ is given by:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = (-(2k-1))^2 - 4(1)(-(k+3))$$\n\n$$\\Delta = 4k^2 - 4k + 1 + 4k + 12$$\n\n$$\\Delta = 4k^2 + 13$$\n\nAccording to Vieta's formulas, the sum and product of the roots $x_1$ and $x_2$ satisfy:\n\n$$x_1 + x_2 = -\\frac{b}{a} = 2k - 1$$\n\n$$x_1 x_2 = \\frac{c}{a} = -(k+3)$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe number of distinct real solutions of a quadratic equation is determined by the sign of its discriminant $\\Delta$.\n\nFrom the general formula for the discriminant, we have:\n\n$$\\Delta = 4k^2 + 13$$\n\nBecause $k$ is a real number, $4k^2 \\ge 0$ holds for all $k \\in \\mathbb{R}$, which implies:\n\n$$\\Delta \\ge 13 > 0$$\n\nBecause the discriminant is strictly positive for every real value of $k$, the equation $P_k(x) = 0$ always has two distinct real roots, so the statement is True.",
+  "**B.** → True\n\nTwo real numbers have opposite signs if and only if their product is strictly negative.\n\nFrom Vieta's formulas, the product of the roots of $P_k(x) = 0$ is:\n\n$$x_1 x_2 = -(k+3)$$\n\nSetting this product to be strictly negative gives:\n\n$$-(k+3) < 0$$\n\n$$k + 3 > 0$$\n\n$$k > -3$$\n\nSince the discriminant $\\Delta = 4k^2 + 13$ is strictly positive for all real $k$, real roots always exist, making $k > -3$ both necessary and sufficient for the roots to have opposite signs, so the statement is True.",
+  "**C.** → False\n\nWe express the sum of squares $x_1^2 + x_2^2$ in terms of the elementary symmetric polynomials using the algebraic identity $x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$.\n\nSubstituting Vieta's relations into the identity yields:\n\n$$x_1^2 + x_2^2 = (2k-1)^2 - 2(-(k+3))$$\n\n$$x_1^2 + x_2^2 = (4k^2 - 4k + 1) + 2k + 6$$\n\n$$x_1^2 + x_2^2 = 4k^2 - 2k + 7$$\n\nThis expression is a quadratic function of $k$ with a positive leading coefficient. Its vertex occurs at:\n\n$$k = -\\frac{-2}{2 \\cdot 4} = \\frac{1}{4}$$\n\nThe sum of squares is minimized at $k = \\frac{1}{4}$, not at $k = \\frac{1}{2}$, so the statement is False.",
+  "**D.** → False\n\nLetting $x = y^2$ transforms the biquadratic equation $y^4 - (2k-1)y^2 - (k+3) = 0$ into the quadratic equation $P_k(x) = 0$.\n\nFor each real root $x_i$ of $P_k(x) = 0$, the equation $y^2 = x_i$ yields real solutions for $y$ if and only if $x_i \\ge 0$.\n\nFor $k > -3$, the product of roots $x_1 x_2 = -(k+3)$ is strictly negative, which means that exactly one root is strictly positive ($x_1 > 0$) and the other root is strictly negative ($x_2 < 0$).\n\nThe positive root $x_1$ generates two distinct real values $y = \\pm\\sqrt{x_1}$, whereas the negative root $x_2$ generates no real values for $y$.\n\nThus, the biquadratic equation has exactly two distinct real solutions rather than four, so the statement is False.",
+  "**E.** → True\n\nTo find the minimum value of $P_k(x)$, we complete the square with respect to $x$:\n\n$$P_k(x) = x^2 - (2k-1)x - (k+3)$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\left(\\frac{2k-1}{2}\\right)^2 - (k+3)$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\frac{4k^2 - 4k + 1 + 4k + 12}{4}$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\frac{4k^2 + 13}{4}$$\n\n$$P_k(x) = \\left(x - \\frac{2k-1}{2}\\right)^2 - \\left(k^2 + \\frac{13}{4}\\right)$$\n\nBecause the squared term is non-negative for all real $x$ and vanishes when $x = \\frac{2k-1}{2}$, the absolute minimum value is $-\\left(k^2 + \\frac{13}{4}\\right)$, so the statement is True."
+ ]
+}

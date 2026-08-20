@@ -1,0 +1,26 @@
+{
+ "title": "A small exponential system",
+ "context": "The system $2^{x} \\cdot 2^{y} = 32$ and $2^{x-y} = 2$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "Comparing exponents reduces the system to a linear system in $x$ and $y$.",
+  "In the solution the first unknown is larger than the second.",
+  "The system has infinitely many solutions.",
+  "The two unknowns are consecutive integers.",
+  "The product of the two unknowns is a perfect square."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We are given a system of two exponential equations with the common base $2$. Using the product rule for powers on the first equation gives:\n\n$$2^{x} \\cdot 2^{y} = 2^{x+y}$$\n\nSince $32 = 2^5$, the first equation becomes:\n\n$$2^{x+y} = 2^5$$\n\nEquating exponents yields the linear equation:\n\n$$x + y = 5$$\n\nThe second equation is:\n\n$$2^{x-y} = 2^1$$\n\nEquating exponents yields a second linear equation:\n\n$$x - y = 1$$\n\nAdding these two linear equations cancels $y$:\n\n$$(x + y) + (x - y) = 5 + 1$$\n\n$$2x = 6$$\n\n$$x = 3$$\n\nSubtracting the second equation from the first cancels $x$:\n\n$$(x + y) - (x - y) = 5 - 1$$\n\n$$2y = 4$$\n\n$$y = 2$$\n\nThus, the system has the unique solution $(x, y) = (3, 2)$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nUsing exponent rules with base $2$, the product $2^x \\cdot 2^y$ simplifies to $2^{x+y}$, while the constant $32$ can be written as $2^5$:\n\n$$2^{x+y} = 2^5$$\n\nBecause the exponential function $f(t) = 2^t$ is strictly monotonic, equating exponents produces:\n\n$$x + y = 5$$\n\nSimilarly, rewriting the second equation gives:\n\n$$2^{x-y} = 2^1$$\n\nEquating exponents produces:\n\n$$x - y = 1$$\n\nBoth equations are linear in the variables $x$ and $y$, so the statement is True.",
+  "**B.** → True\n\nSolving the linear system $x + y = 5$ and $x - y = 1$ gives the values of the two unknowns:\n\n$$x = 3$$\n\n$$y = 2$$\n\nComparing the first unknown $x$ with the second unknown $y$ gives:\n\n$$3 > 2$$\n\nThe first unknown is indeed strictly larger than the second unknown, so the statement is True.",
+  "**C.** → False\n\nThe two linear equations in the reduced system are:\n\n$$x + y = 5$$\n\n$$x - y = 1$$\n\nAdding these equations determines $x$ uniquely:\n\n$$2x = 6 \\implies x = 3$$\n\nSubstituting $x = 3$ into $x + y = 5$ determines $y$ uniquely:\n\n$$3 + y = 5 \\implies y = 2$$\n\nThe system has exactly one solution pair $(3, 2)$ rather than infinitely many solutions, so the statement is False.",
+  "**D.** → True\n\nSolving the exponential system yields the unique integer pair:\n\n$$x = 3$$\n\n$$y = 2$$\n\nTwo integers are consecutive if their absolute difference is $1$. Computing the difference between the two values gives:\n\n$$3 - 2 = 1$$\n\nThe numbers $2$ and $3$ are consecutive integers, so the statement is True.",
+  "**E.** → False\n\nThe unique solution to the system is $x = 3$ and $y = 2$. Multiplying the two unknowns yields:\n\n$$x \\cdot y = 3 \\cdot 2$$\n\n$$x \\cdot y = 6$$\n\nA perfect square is an integer of the form $k^2$ for some integer $k$. Because $2^2 = 4$ and $3^2 = 9$, the product $6$ is not a perfect square, so the statement is False."
+ ]
+}

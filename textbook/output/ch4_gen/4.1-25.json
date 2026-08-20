@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Linear Equilibrium Model",
+ "context": "An economic model determines the equilibrium adjustment quantity $x \\in \\mathbb{R}$ as a function of an exogenous policy parameter $a \\in \\mathbb{R} \\setminus \\{-1\\}$ via the equation $$\\frac{a x - 6}{a + 1} + 2 = \\frac{3x - a}{a + 1}$$",
+ "statements": [
+  "For all parameter values $a > 3$, the unique equilibrium adjustment $x$ is strictly negative.",
+  "If the parameter satisfies $a \\in (0, 1)$, the resulting equilibrium adjustment $x$ is strictly positive.",
+  "There is a real parameter value $a \\in \\mathbb{R} \\setminus \\{-1\\}$ for which the equation becomes an identity satisfied by every real number $x$.",
+  "There are exactly three distinct integer values of the parameter $a$ that yield an integer equilibrium adjustment $x$.",
+  "The equation has a non-negative equilibrium adjustment $x \\ge 0$ if and only if the parameter $a$ lies in the half-open interval $\\left[\\frac{4}{3}, 3\\right)$."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "We consider the parametric linear equation for $a \\neq -1$. Clearing the common denominator by multiplying both sides by $a + 1$ yields:\n\n$$a x - 6 + 2(a + 1) = 3x - a$$\n\nExpanding the left-hand side gives:\n\n$$a x - 6 + 2a + 2 = 3x - a$$\n\n$$a x + 2a - 4 = 3x - a$$\n\nRearranging all terms containing $x$ to the left-hand side and all remaining terms to the right-hand side produces:\n\n$$a x - 3x = 4 - 3a$$\n\n$$(a - 3)x = 4 - 3a$$\n\nFor any parameter value $a \\neq 3$ (and $a \\neq -1$), we divide by $a - 3$ to find the unique solution:\n\n$$x = \\frac{4 - 3a}{a - 3} = \\frac{3a - 4}{3 - a}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nFor any parameter value $a > 3$, the denominator of the unique solution $x = \\frac{3a - 4}{3 - a}$ is strictly negative because:\n\n$$3 - a < 0$$\n\nThe numerator is strictly positive because:\n\n$$3a - 4 > 3(3) - 4 = 5 > 0$$\n\nThe quotient of a positive number and a negative number is strictly negative, so $x < 0$ for all $a > 3$, so the statement is True.",
+  "**B.** → False\n\nFor any parameter value $a \\in (0, 1)$, we evaluate the sign of the numerator and denominator in $x = \\frac{3a - 4}{3 - a}$.\n\nSince $a < 1$, the numerator satisfies:\n\n$$3a - 4 < 3(1) - 4 = -1 < 0$$\n\nSince $a < 1 < 3$, the denominator satisfies:\n\n$$3 - a > 3 - 1 = 2 > 0$$\n\nThe quotient of a negative numerator and a positive denominator is strictly negative, meaning $x < 0$ rather than $x > 0$, so the statement is False.",
+  "**C.** → False\n\nA linear equation of the form $A x = B$ is an identity satisfied by every real number $x$ if and only if both $A = 0$ and $B = 0$ hold simultaneously.\n\nHere, the standard form is:\n\n$$(a - 3)x = 4 - 3a$$\n\nSetting the coefficient of $x$ to zero requires:\n\n$$a - 3 = 0 \\implies a = 3$$\n\nSubstituting $a = 3$ into the right-hand constant yields:\n\n$$4 - 3(3) = -5 \\neq 0$$\n\nBecause the coefficient is zero while the constant is non-zero, $a = 3$ produces a contradiction $0x = -5$ with no solution, and no parameter value makes both sides vanish simultaneously, so the statement is False.",
+  "**D.** → False\n\nTo determine when the solution $x$ is an integer for an integer parameter $a$, we rewrite the rational expression by polynomial division:\n\n$$x = \\frac{4 - 3a}{a - 3} = \\frac{-3(a - 3) - 5}{a - 3} = -3 - \\frac{5}{a - 3}$$\n\nFor $x$ to be an integer, the denominator $a - 3$ must be an integer divisor of $5$.\n\nThe integer divisors of $5$ are $1, -1, 5,$ and $-5$.\n\nSetting $a - 3$ equal to each divisor gives:\n\n$$a - 3 = 1 \\implies a = 4 \\implies x = -8$$\n\n$$a - 3 = -1 \\implies a = 2 \\implies x = 2$$\n\n$$a - 3 = 5 \\implies a = 8 \\implies x = -4$$\n\n$$a - 3 = -5 \\implies a = -2 \\implies x = -2$$\n\nAll four values are valid domain elements since none equals $-1$ or $3$. Hence there are four distinct integer values rather than three, so the statement is False.",
+  "**E.** → True\n\nThe equilibrium adjustment is non-negative when $x \\ge 0$, which corresponds to the inequality:\n\n$$\\frac{3a - 4}{3 - a} \\ge 0$$\n\nThe critical points of this rational expression occur at $a = \\frac{4}{3}$, where the numerator is zero, and at $a = 3$, where the denominator is zero.\n\nFor $a < \\frac{4}{3}$ with $a \\neq -1$, the numerator is negative and the denominator is positive, giving a negative quotient.\n\nFor $a \\in \\left[\\frac{4}{3}, 3\\right)$, the numerator satisfies $3a - 4 \\ge 0$ and the denominator satisfies $3 - a > 0$, giving a non-negative quotient.\n\nFor $a > 3$, the numerator is positive and the denominator is negative, giving a negative quotient.\n\nTherefore, $x \\ge 0$ holds if and only if $a \\in \\left[\\frac{4}{3}, 3\\right)$, so the statement is True."
+ ]
+}

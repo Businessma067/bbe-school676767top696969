@@ -1,0 +1,26 @@
+{
+ "title": "Linear Scale Conversion for Vendor Ratings",
+ "context": "A corporate procurement department converts supplier performance ratings between a European regional scale $E$ and a Global benchmark scale $G$. The conversion between the two rating scales is strictly linear, defined by $G(E) = m \\cdot E + b$, where $m$ and $b$ are fixed real constants. A baseline audit score of $E = 20$ corresponds to a global score of $G = 50$, whereas an advanced performance score of $E = 80$ corresponds to a global score of $G = 140$.",
+ "statements": [
+  "The equation $G(x) = x$, representing a performance score whose numerical reading is identical on both scales, has a unique solution that is strictly negative.",
+  "Under a parameterized family of adjusted conversions $G_k(E) = \\left(\\frac{3}{2} + k\\right)E + 20 - 40k$ with parameter $k \\in \\mathbb{R}$, the linear equation $G_k(E) = E$ has no solution if and only if $k = -\\frac{1}{2}$.",
+  "If a supplier increases its score on the European scale by an amount $\\Delta E > 0$, the corresponding increase $\\Delta G$ on the Global scale is strictly smaller than $\\Delta E$.",
+  "There exists a unique European rating $E > 0$ for which the Global benchmark score is exactly double the European rating, and this value is an integer strictly greater than $30$.",
+  "For a real constant $d$, the linear equation $2 \\cdot G(E) - 3E = d$ has infinitely many solutions for $E$ if and only if $d = 20$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The conversion between the European score $E$ and the Global score $G$ is given by the linear model $G(E) = m \\cdot E + b$. Using the two calibration points $(E_1, G_1) = (20, 50)$ and $(E_2, G_2) = (80, 140)$, we first determine the slope $m$:\n\n$$m = \\frac{G_2 - G_1}{E_2 - E_1} = \\frac{140 - 50}{80 - 20} = \\frac{90}{60} = \\frac{3}{2}$$\n\nNext, we determine the intercept $b$ by substituting $(E_1, G_1) = (20, 50)$ into the linear equation:\n\n$$50 = \\frac{3}{2} \\cdot 20 + b$$\n\n$$50 = 30 + b$$\n\n$$b = 20$$\n\nThus, the explicit conversion function is given by:\n\n$$G(E) = \\frac{3}{2} E + 20$$\n\nSolving for $E$ in terms of $G$ yields the inverse conversion:\n\n$$E(G) = \\frac{2}{3}(G - 20) = \\frac{2}{3}G - \\frac{40}{3}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe condition that the numerical rating is identical on both scales corresponds to the fixed-point equation $G(x) = x$.\n\nSubstituting the explicit conversion formula into the equation yields:\n\n$$\\frac{3}{2}x + 20 = x$$\n\nSubtracting $x$ and $20$ from both sides gives:\n\n$$\\frac{1}{2}x = -20$$\n\nMultiplying both sides by $2$ produces the unique solution:\n\n$$x = -40$$\n\nThe solution is unique and strictly negative, so the statement is True.",
+  "**B.** → True\n\nA linear equation in one unknown $c_1 E = c_0$ has no solution (represents a contradiction) if and only if the coefficient of the unknown is zero while the constant term is non-zero.\n\nSetting $G_k(E) = E$ gives:\n\n$$\\left(\\frac{3}{2} + k\\right)E + 20 - 40k = E$$\n\nCollecting all terms in $E$ on the left-hand side yields:\n\n$$\\left(k + \\frac{1}{2}\\right)E = 40k - 20$$\n\nThe coefficient of $E$ vanishes when $k + \\frac{1}{2} = 0$, which means $k = -\\frac{1}{2}$.\n\nEvaluating the right-hand side at $k = -\\frac{1}{2}$ gives:\n\n$$40\\left(-\\frac{1}{2}\\right) - 20 = -20 - 20 = -40 \\neq 0$$\n\nSince the equation simplifies to $0 \\cdot E = -40$, it has no solution when $k = -\\frac{1}{2}$, whereas for any $k \\neq -\\frac{1}{2}$ it possesses a unique solution, so the statement is True.",
+  "**C.** → False\n\nThe change in the Global score resulting from a change in the European score is determined by the slope of the linear conversion.\n\nTaking the difference of $G(E + \\Delta E)$ and $G(E)$ yields:\n\n$$\\Delta G = G(E + \\Delta E) - G(E) = \\frac{3}{2}(E + \\Delta E) + 20 - \\left(\\frac{3}{2}E + 20\\right) = \\frac{3}{2}\\Delta E$$\n\nBecause $\\frac{3}{2} = 1.5 > 1$ and $\\Delta E > 0$, we have $\\Delta G = 1.5\\Delta E > \\Delta E$.\n\nHence, the increase on the Global scale is strictly greater than the increase on the European scale, so the statement is False.",
+  "**D.** → True\n\nThe condition that the Global benchmark score is double the European score translates to the linear equation $G(E) = 2E$.\n\nSubstituting the conversion formula into the equation gives:\n\n$$\\frac{3}{2}E + 20 = 2E$$\n\nSubtracting $\\frac{3}{2}E$ from both sides yields:\n\n$$\\frac{1}{2}E = 20$$\n\nMultiplying by $2$ gives:\n\n$$E = 40$$\n\nThe resulting value $E = 40$ is a positive integer strictly greater than $30$, so the statement is True.",
+  "**E.** → False\n\nA linear equation in one unknown possesses infinitely many solutions if and only if it simplifies to an identity of the form $0 \\cdot E = 0$.\n\nSubstituting $G(E) = \\frac{3}{2}E + 20$ into the expression $2 \\cdot G(E) - 3E = d$ gives:\n\n$$2\\left(\\frac{3}{2}E + 20\\right) - 3E = d$$\n\n$$3E + 40 - 3E = d$$\n\n$$40 = d$$\n\nTherefore, the equation becomes an identity valid for all $E \\in \\mathbb{R}$ if and only if $d = 40$, not $d = 20$, so the statement is False."
+ ]
+}

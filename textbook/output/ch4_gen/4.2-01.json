@@ -1,0 +1,26 @@
+{
+ "title": "Parameter-Dependent Quadratic Equation and Nature of Roots",
+ "context": "A business-mathematics analyst examines a parameterized equation for production optimization given by $(m-2)x^2 + 2mx + (m+3) = 0$, where $m \\in \\mathbb{R}$ is a real parameter and $x$ represents the output level.",
+ "statements": [
+  "The equation possesses exactly one real solution if and only if the parameter is set to $m = 6$.",
+  "For every parameter value $m \\in (-\\infty, -3)$, the equation has two distinct real solutions that are both strictly negative.",
+  "When $m = 6$, the equation has a unique real solution that is strictly less than $-1$.",
+  "There is no real parameter value $m$ for which the sum of the roots equals the product of the roots.",
+  "Replacing $x$ by $y^2$ in the equation for $m = -1$ yields a biquadratic equation in $y$ with exactly four distinct real solutions."
+ ],
+ "answer_key": [
+  false,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "We analyze the equation $(m-2)x^2 + 2mx + (m+3) = 0$ with coefficients $A = m-2$, $B = 2m$, and $C = m+3$.\n\nWhen $m \\neq 2$, the equation is quadratic and its discriminant is computed as follows:\n\n$$D = B^2 - 4AC$$\n\n$$D = (2m)^2 - 4(m-2)(m+3)$$\n\n$$D = 4m^2 - 4(m^2 + m - 6)$$\n\n$$D = 24 - 4m$$\n\n$$D = 4(6-m)$$\n\nThe sign of the discriminant determines the number of real roots for $m \\neq 2$: two distinct real roots if $m < 6$, exactly one double root if $m = 6$, and no real roots if $m > 6$.\n\nFor $m = 2$, the coefficient of $x^2$ vanishes and the equation reduces to a linear form:\n\n$$0 \\cdot x^2 + 4x + 5 = 0$$\n\n$$4x + 5 = 0$$\n\n$$x = -\\frac{5}{4}$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nA polynomial equation of degree at most two can have a single real solution either when it is quadratic with a discriminant equal to zero, or when the leading coefficient vanishes leaving a non-degenerate linear equation.\n\nFor $m = 6$, the leading coefficient is $A = 6 - 2 = 4 \\neq 0$ and the discriminant is:\n\n$$D = 4(6 - 6) = 0$$\n\nThis yields a unique real double root.\n\nHowever, setting $m = 2$ causes the quadratic term to vanish:\n\n$$(2 - 2)x^2 + 2(2)x + (2 + 3) = 0$$\n\n$$4x + 5 = 0$$\n\n$$x = -\\frac{5}{4}$$\n\nBecause $m = 2$ also yields exactly one real solution, $m = 6$ is not the only parameter value with this property, so the statement is False.",
+  "**B.** → True\n\nTo determine the signs of the roots for a quadratic equation $Ax^2 + Bx + C = 0$, we check the discriminant together with Vieta's formulas for the sum $S = -\\frac{B}{A}$ and product $P = \\frac{C}{A}$.\n\nFor $m \\in (-\\infty, -3)$, we have $m < 6$, so the discriminant is strictly positive:\n\n$$D = 4(6 - m) > 0$$\n\nThis guarantees two distinct real roots. The product of the roots is:\n\n$$P = \\frac{m+3}{m-2}$$\n\nSince $m < -3$, both the numerator $m + 3 < 0$ and denominator $m - 2 < 0$ are negative, making $P > 0$.\n\nThe sum of the roots is:\n\n$$S = -\\frac{2m}{m-2}$$\n\nWith $m < -3$, the numerator $-2m > 0$ is positive while $m - 2 < 0$ is negative, so $S < 0$.\n\nBecause the product is positive and the sum is negative, both real roots must be strictly negative, so the statement is True.",
+  "**C.** → True\n\nWhen the parameter is set to $m = 6$, the quadratic equation becomes:\n\n$$(6-2)x^2 + 2(6)x + (6+3) = 0$$\n\n$$4x^2 + 12x + 9 = 0$$\n\nWe complete the square or apply the root formula for a zero discriminant:\n\n$$(2x + 3)^2 = 0$$\n\n$$x = -\\frac{3}{2}$$\n\nComparing this value to $-1$ gives $-\\frac{3}{2} = -1.5 < -1$, so the statement is True.",
+  "**D.** → False\n\nFor $m \\neq 2$, Vieta's formulas state that the sum of the roots is $S = -\\frac{2m}{m-2}$ and the product of the roots is $P = \\frac{m+3}{m-2}$.\n\nSetting the sum equal to the product gives:\n\n$$-\\frac{2m}{m-2} = \\frac{m+3}{m-2}$$\n\n$$-2m = m + 3$$\n\n$$-3m = 3$$\n\n$$m = -1$$\n\nWe verify that at $m = -1$, the discriminant is strictly positive:\n\n$$D = 4(6 - (-1)) = 28 > 0$$\n\nBecause $m = -1$ yields valid real roots whose sum and product are both $-\\frac{2}{3}$, such a parameter value does exist, so the statement is False.",
+  "**E.** → False\n\nSubstituting $x = y^2$ into the equation with $m = -1$ gives the biquadratic equation:\n\n$$(-1-2)(y^2)^2 + 2(-1)y^2 + (-1+3) = 0$$\n\n$$-3y^4 - 2y^2 + 2 = 0$$\n\n$$3y^4 + 2y^2 - 2 = 0$$\n\nLetting $u = y^2 \\ge 0$, we solve the corresponding quadratic equation $3u^2 + 2u - 2 = 0$:\n\n$$u = \\frac{-2 \\pm \\sqrt{2^2 - 4(3)(-2)}}{2(3)}$$\n\n$$u = \\frac{-2 \\pm \\sqrt{28}}{6}$$\n\n$$u = \\frac{-1 \\pm \\sqrt{7}}{3}$$\n\nSince $\\sqrt{7} > 1$, the root $u_1 = \\frac{-1 + \\sqrt{7}}{3}$ is positive, giving two real solutions $y = \\pm \\sqrt{u_1}$. However, $u_2 = \\frac{-1 - \\sqrt{7}}{3}$ is strictly negative and produces no real solutions for $y$.\n\nThus, the biquadratic equation has exactly two distinct real solutions rather than four, so the statement is False."
+ ]
+}

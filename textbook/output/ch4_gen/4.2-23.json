@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Analysis of a Substituted Quadratic Form",
+ "context": "A financial engineering model investigates the equilibrium states $x \\in \\mathbb{R}$ governed by the parametric equation\n$$(x^2 + 2x)^2 - 2(x^2 + 2x) + c = 0$$\nwhere $c \\in \\mathbb{R}$ is an exogenous economic index.",
+ "statements": [
+  "The equation has no real solutions if and only if $c > 1$.",
+  "There exists exactly one real value of $c$ for which the equation possesses exactly three distinct real solutions.",
+  "For all $c \\in (-3, 1)$, the sum of all four distinct real solutions is strictly dependent on $c$.",
+  "When $c = 0$, the product of all distinct real solutions of the equation is strictly negative.",
+  "For $c = -8$, the equation has exactly two real solutions, and the distance between them is equal to $2\\sqrt{5}$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "We define an auxiliary variable $u = x^2 + 2x$. By completing the square, we determine the range of this substitution:\n\n$$u = (x + 1)^2 - 1$$\n\nBecause $(x + 1)^2 \\ge 0$ for all real $x$, the auxiliary variable satisfies $u \\ge -1$. Each value of $u$ produces real values for $x$ according to the equation $x^2 + 2x - u = 0$, which has discriminant $\\Delta_x = 4 + 4u = 4(u + 1)$. Consequently, a value $u > -1$ generates two distinct real solutions for $x$, a value $u = -1$ generates exactly one real solution ($x = -1$), and a value $u < -1$ generates no real solutions.\n\nSubstituting $u$ into the original model produces the auxiliary quadratic equation:\n\n$$u^2 - 2u + c = 0$$\n\nThe discriminant of this quadratic in $u$ is:\n\n$$\\Delta_u = (-2)^2 - 4(1)(c) = 4(1 - c)$$\n\nWhen $\\Delta_u \\ge 0$, the roots of the auxiliary quadratic are:\n\n$$u_{1,2} = 1 \\pm \\sqrt{1 - c}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe original equation has real solutions for $x$ if and only if the auxiliary quadratic in $u$ has at least one real root satisfying $u \\ge -1$.\n\nIf $c > 1$, the discriminant $\\Delta_u = 4(1 - c)$ is strictly negative, which means there are no real values for $u$ and therefore no real solutions for $x$.\n\nIf $c \\le 1$, the larger root in $u$ satisfies:\n\n$$u_1 = 1 + \\sqrt{1 - c} \\ge 1$$\n\nSince $u_1 \\ge 1 > -1$, this root always yields two distinct real solutions for $x$. Hence, the equation has no real solutions if and only if $c > 1$, so the statement is True.",
+  "**B.** → True\n\nTo obtain exactly three distinct real solutions for $x$, the auxiliary quadratic must yield one root with $u > -1$ (yielding two solutions for $x$) and one root with $u = -1$ (yielding one solution for $x$).\n\nWe substitute $u = -1$ into the auxiliary quadratic equation to find the required parameter value:\n\n$$(-1)^2 - 2(-1) + c = 0$$\n\n$$1 + 2 + c = 0$$\n\n$$c = -3$$\n\nWhen $c = -3$, the auxiliary roots are $u_1 = 1 + \\sqrt{4} = 3$ and $u_2 = 1 - \\sqrt{4} = -1$. The root $u_1 = 3 > -1$ gives two distinct real solutions, and $u_2 = -1$ gives the single real solution $x = -1$, producing exactly three distinct solutions. No other configuration can generate an odd count of three roots, so the statement is True.",
+  "**C.** → False\n\nFor any $c \\in (-3, 1)$, the term $\\sqrt{1 - c}$ satisfies $0 < \\sqrt{1 - c} < 2$. Consequently, both roots of the auxiliary equation satisfy the required threshold:\n\n$$u_1 = 1 + \\sqrt{1 - c} > 1 > -1$$\n\n$$u_2 = 1 - \\sqrt{1 - c} > 1 - 2 = -1$$\n\nBoth $u_1$ and $u_2$ exceed $-1$, so each generates two distinct real roots from $x^2 + 2x - u_1 = 0$ and $x^2 + 2x - u_2 = 0$. By Vieta's formulas, the sum of the two roots for any equation of the form $x^2 + 2x - u = 0$ is equal to $-2$. The sum of all four distinct real solutions is therefore:\n\n$$(-2) + (-2) = -4$$\n\nThis sum is a constant $-4$ and does not depend on $c$, so the statement is False.",
+  "**D.** → False\n\nSetting $c = 0$ in the auxiliary equation gives:\n\n$$u^2 - 2u = 0$$\n\n$$u(u - 2) = 0$$\n\nThis yields $u = 0$ and $u = 2$. For $u = 0$, the equation for $x$ becomes:\n\n$$x^2 + 2x = 0$$\n\n$$x(x + 2) = 0$$\n\nThus, $x = 0$ is one of the four distinct real solutions. Because one of the solutions is zero, the product of all distinct real solutions is zero, which is not strictly negative, so the statement is False.",
+  "**E.** → True\n\nSetting $c = -8$ in the auxiliary equation gives:\n\n$$u^2 - 2u - 8 = 0$$\n\n$$(u - 4)(u + 2) = 0$$\n\nThe auxiliary roots are $u = 4$ and $u = -2$. Since $u = -2 < -1$, the equation $x^2 + 2x = -2$ has no real solutions. For $u = 4$, the equation is:\n\n$$x^2 + 2x - 4 = 0$$\n\nApplying the quadratic formula yields the two real solutions:\n\n$$x = \\frac{-2 \\pm \\sqrt{4 - 4(1)(-4)}}{2} = -1 \\pm \\sqrt{5}$$\n\nThe distance between these two solutions is:\n\n$$(-1 + \\sqrt{5}) - (-1 - \\sqrt{5}) = 2\\sqrt{5}$$\n\nThus, there are exactly two real solutions and the distance between them is $2\\sqrt{5}$, so the statement is True."
+ ]
+}

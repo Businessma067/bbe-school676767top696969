@@ -1,0 +1,26 @@
+{
+ "title": "A logarithmic equation with a parameter",
+ "context": "For a parameter $a > 0$ the equation $\\log_{2} x + \\log_{2}(x - a) = 3$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "For every admissible parameter the equation has exactly one solution.",
+  "The solution grows when the parameter grows.",
+  "For the boundary case $a = 0$ the solution is irrational.",
+  "There are parameters for which both roots of the auxiliary quadratic are admissible.",
+  "The step to $\\log_{2}\\big(x(x-a)\\big) = 3$ is only an equivalence while both factors are positive."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the parameter-dependent logarithmic equation for $a > 0$:\n\n$$\\log_{2} x + \\log_{2}(x - a) = 3$$\n\nBecause the logarithm is only defined for strictly positive real arguments, the domain of the equation requires both $x > 0$ and $x - a > 0$, which yields the admissible domain $x > a$.\n\nApplying the logarithm product rule transforms the equation into a single logarithm:\n\n$$\\log_{2}\\big(x(x - a)\\big) = 3$$\n\nExponentiating both sides with base $2$ gives the auxiliary quadratic equation:\n\n$$x(x - a) = 2^3$$\n\n$$x^2 - ax - 8 = 0$$\n\nUsing the quadratic formula, the two roots of the auxiliary quadratic are:\n\n$$x_{1,2} = \\frac{a \\pm \\sqrt{a^2 + 32}}{2}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo determine the number of valid solutions, we test the roots of the quadratic equation against the domain condition $x > a$.\n\nThe discriminant satisfies $\\sqrt{a^2 + 32} > \\sqrt{a^2} = a$ for any $a > 0$. For the smaller root, this gives:\n\n$$x_2 = \\frac{a - \\sqrt{a^2 + 32}}{2} < 0$$\n\nThis negative root lies outside the domain $x > a$. For the larger root, we evaluate:\n\n$$x_1 = \\frac{a + \\sqrt{a^2 + 32}}{2} > \\frac{a + a}{2} = a$$\n\nBecause $x_1 > a$ holds for every $a > 0$, exactly one candidate root satisfies the original equation for every admissible parameter, so the statement is True.",
+  "**B.** → True\n\nTo examine the monotonicity of the solution with respect to the parameter, we express the unique valid solution as a function of $a$:\n\n$$x(a) = \\frac{a + \\sqrt{a^2 + 32}}{2}$$\n\nDifferentiating this function with respect to $a$ yields:\n\n$$\\frac{dx}{da} = \\frac{1}{2} \\left(1 + \\frac{a}{\\sqrt{a^2 + 32}}\\right)$$\n\nBecause $a > 0$, the derivative is strictly positive for all admissible parameters, meaning that the solution strictly increases as $a$ increases, so the statement is True.",
+  "**C.** → True\n\nSetting the parameter to the boundary value $a = 0$ in the original formulation yields:\n\n$$\\log_{2} x + \\log_{2} x = 3$$\n\nCombining the terms leads to:\n\n$$2 \\log_{2} x = 3$$\n\n$$\\log_{2} x = \\frac{3}{2}$$\n\n$$x = 2^{3/2} = \\sqrt{8} = 2\\sqrt{2}$$\n\nBecause $\\sqrt{2}$ is an irrational number, its non-zero integer multiple $2\\sqrt{2}$ is also irrational, so the statement is True.",
+  "**D.** → False\n\nAccording to Vieta's formulas, the product of the roots of the auxiliary quadratic $x^2 - ax - 8 = 0$ equals the constant term:\n\n$$x_1 \\cdot x_2 = -8$$\n\nBecause the product of the two roots is strictly negative, one root must be strictly positive and the other must be strictly negative for any real value of $a$. Since the domain requires $x > a > 0$, the negative root can never be admissible, so the statement is False.",
+  "**E.** → True\n\nThe logarithm product identity $\\log_b(u \\cdot v) = \\log_b u + \\log_b v$ holds if and only if both factors are strictly positive. If both $x < 0$ and $x - a < 0$, their product $x(x - a)$ is strictly positive, making $\\log_{2}\\big(x(x - a)\\big)$ well-defined even though neither $\\log_{2} x$ nor $\\log_{2}(x - a)$ exists in the real numbers. Therefore, replacing the sum of two logarithms with the logarithm of their product is an equivalent transformation strictly when both factors are positive, so the statement is True."
+ ]
+}

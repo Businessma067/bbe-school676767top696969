@@ -1,0 +1,26 @@
+{
+ "title": "Reconstructing Monic Quadratics and Root Transformations",
+ "context": "Let $\\alpha$ and $\\beta$ be the roots of the monic quadratic equation $x^2 - 6x + 4 = 0$. A financial analyst studies this equation and reconstructs several new monic quadratic polynomials and related algebraic equations whose roots are transformations of $\\alpha$ and $\\beta$.",
+ "statements": [
+  "The sum of the roots of the reconstructed monic quadratic polynomial $Q(x)$ having roots $\\alpha^3$ and $\\beta^3$ is an even integer strictly less than $150$.",
+  "Both roots of the reconstructed monic quadratic polynomial $Q(x)$ having roots $\\alpha^3$ and $\\beta^3$ are rational numbers.",
+  "The monic quadratic equation whose roots are $u = \\frac{\\alpha}{\\beta}$ and $v = \\frac{\\beta}{\\alpha}$ has a linear coefficient equal to $-7$ and a constant term equal to $1$.",
+  "The biquadratic equation $y^4 - 6y^2 + 4 = 0$, obtained by substituting $x = y^2$ into the base equation, has exactly two distinct real solutions.",
+  "If the base equation is generalized to $x^2 - 6x + k = 0$ with parameter $k \\in \\mathbb{R}$, the monic quadratic equation with roots $\\frac{1}{\\alpha}$ and $\\frac{1}{\\beta}$ is well-defined and possesses two distinct real roots if and only if $k \\in (-\\infty, 0) \\cup (0, 9)$."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "For the monic quadratic equation $x^2 - 6x + 4 = 0$, Vieta's formulas establish the fundamental symmetric sums:\n\n$$\\alpha + \\beta = 6$$\n\n$$\\alpha \\beta = 4$$\n\nThe discriminant of the base equation is positive:\n\n$$\\Delta = (-6)^2 - 4(1)(4) = 36 - 16 = 20 > 0$$\n\nThus, $\\alpha$ and $\\beta$ are distinct real numbers. The sum of their squares is computed via algebraic identity:\n\n$$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta$$\n\n$$\\alpha^2 + \\beta^2 = 6^2 - 2(4) = 28$$\n\nAny monic quadratic polynomial with roots $r_1$ and $r_2$ is uniquely reconstructed as $x^2 - (r_1 + r_2)x + r_1 r_2 = 0$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe sum of the roots of $Q(x)$ is $S = \\alpha^3 + \\beta^3$. We use the factorization identity for the sum of cubes:\n\n$$\\alpha^3 + \\beta^3 = (\\alpha + \\beta)(\\alpha^2 - \\alpha\\beta + \\beta^2)$$\n\nSubstituting $\\alpha + \\beta = 6$, $\\alpha^2 + \\beta^2 = 28$, and $\\alpha\\beta = 4$ yields:\n\n$$S = 6 \\cdot (28 - 4)$$\n\n$$S = 6 \\cdot 24 = 144$$\n\nThe integer $144$ is even and satisfies $144 < 150$, so the statement is True.",
+  "**B.** → False\n\nTo determine the rationality of the roots of $Q(x)$, we solve the original quadratic equation $x^2 - 6x + 4 = 0$ using the quadratic formula:\n\n$$\\alpha, \\beta = \\frac{6 \\pm \\sqrt{20}}{2} = 3 \\pm \\sqrt{5}$$\n\nCubing the root $\\alpha = 3 - \\sqrt{5}$ using the binomial theorem gives:\n\n$$\\alpha^3 = 3^3 - 3(3^2)(\\sqrt{5}) + 3(3)(\\sqrt{5})^2 - (\\sqrt{5})^3$$\n\n$$\\alpha^3 = 27 - 27\\sqrt{5} + 45 - 5\\sqrt{5} = 72 - 32\\sqrt{5}$$\n\nBecause $\\sqrt{5}$ is irrational, $\\alpha^3$ is irrational, so the statement is False.",
+  "**C.** → True\n\nA monic quadratic equation with roots $u = \\frac{\\alpha}{\\beta}$ and $v = \\frac{\\beta}{\\alpha}$ is given by $x^2 - (u+v)x + uv = 0$. We evaluate the sum of the roots:\n\n$$u + v = \\frac{\\alpha}{\\beta} + \\frac{\\beta}{\\alpha} = \\frac{\\alpha^2 + \\beta^2}{\\alpha\\beta}$$\n\n$$u + v = \\frac{28}{4} = 7$$\n\nWe evaluate the product of the roots:\n\n$$u \\cdot v = \\frac{\\alpha}{\\beta} \\cdot \\frac{\\beta}{\\alpha} = 1$$\n\nThe reconstructed equation is $x^2 - 7x + 1 = 0$, which has linear coefficient $-7$ and constant term $1$, so the statement is True.",
+  "**D.** → False\n\nSetting $x = y^2$ transforms the biquadratic equation $y^4 - 6y^2 + 4 = 0$ into the quadratic equation $x^2 - 6x + 4 = 0$. Its roots are:\n\n$$x_1 = 3 - \\sqrt{5}, \\quad x_2 = 3 + \\sqrt{5}$$\n\nSince $\\sqrt{5} < 3$, both roots $x_1$ and $x_2$ are strictly positive real numbers. For each positive value of $x$, the equation $y^2 = x$ produces two distinct real solutions:\n\n$$y = \\pm \\sqrt{3 - \\sqrt{5}}, \\quad y = \\pm \\sqrt{3 + \\sqrt{5}}$$\n\nThis yields four distinct real solutions in total, not two, so the statement is False.",
+  "**E.** → True\n\nFor the roots $\\frac{1}{\\alpha}$ and $\\frac{1}{\\beta}$ to be defined, neither $\\alpha$ nor $\\beta$ can equal zero, which requires the product of the roots to be non-zero:\n\n$$\\alpha\\beta = k \\neq 0$$\n\nFor the quadratic equation $x^2 - 6x + k = 0$ to possess two distinct real roots, its discriminant must be strictly positive:\n\n$$\\Delta = (-6)^2 - 4(1)(k) = 36 - 4k > 0$$\n\n$$36 > 4k$$\n\n$$k < 9$$\n\nCombining both restrictions yields $k < 9$ and $k \\neq 0$, which is $k \\in (-\\infty, 0) \\cup (0, 9)$, so the statement is True."
+ ]
+}

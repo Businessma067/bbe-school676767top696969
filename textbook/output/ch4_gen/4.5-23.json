@@ -1,0 +1,26 @@
+{
+ "title": "Coffee Blend Optimization and Flavor Dynamics",
+ "context": "A specialty coffee roastery produces a $100\\text{ kg}$ seasonal blend using two bean varieties: Ethiopian Arabica (Grade A, purchased at a unit cost of \\$18 per kilogram) and Vietnamese Robusta (Grade R, purchased at a unit cost of \\$10 per kilogram). Let $x$ denote the mass of Arabica beans in kilograms, so that $100 - x$ kilograms of Robusta are used, with physical domain $0 \\le x \\le 100$. The roastery's production engineering team analyzes five distinct quantitative relations governing batch procurement budget, flavor synergy, moisture extraction, aroma decay, and shelf-life stability.",
+ "statements": [
+  "Under a procurement contract where the total raw ingredient cost for the $100\\text{ kg}$ batch must equal \\$1320, the required quantity of Arabica beans $x$ is uniquely determined and constitutes strictly more than half of the total batch by weight.",
+  "A sensory scoring model dictates that the flavor synergy score $S(x) = -x^2 + 100x - 900$ must equal $1200$; this condition produces exactly two distinct admissible batch compositions within the physical domain $0 \\le x \\le 100$, and the sum of these two solutions equals $100\\text{ kg}$.",
+  "When calibrating the moisture extraction curve modeled by the radical equation $\\sqrt{x + 20} = x - 10$, the algebraic squaring step introduces an extraneous root, leaving exactly one valid physical solution for $x$, which is an even integer.",
+  "An aroma concentration balance requires $\\ln(x + 10) + \\ln(x - 10) = \\ln(300)$; because the associated quadratic equation has roots $x = 20$ and $x = -20$, both values represent valid physical blend amounts within the domain of the logarithmic model.",
+  "A shelf-life kinetic model expresses the degradation rate factor $k$ through the exponential equation $e^{2k} - 6e^k + 8 = 0$; this equation has no real solutions because an exponential function cannot equal an integer."
+ ],
+ "answer_key": [
+  false,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "Let $x \\in [0, 100]$ be the mass of Arabica in kilograms, and $100 - x$ the mass of Robusta. The total cost function in dollars is given by the linear expression:\n\n$$C(x) = 18x + 10(100 - x) = 8x + 1000$$\n\nThe five statements test linear budgeting, quadratic root analysis, radical equations with domain constraints, logarithmic domain validity, and exponential equations reducible to quadratic form.",
+ "tactical_explanations": [
+  "**A.** → False\n\nSetting the total cost function equal to the target budget of \\$1320 yields a linear equation in one unknown:\n\n$$8x + 1000 = 1320$$\n\n$$8x = 320$$\n\n$$x = 40$$\n\nThe unique solution is $x = 40\\text{ kg}$, which represents $40\\%$ of the $100\\text{ kg}$ batch and is not strictly more than half ($50\\text{ kg}$), so the statement is False.",
+  "**B.** → True\n\nSetting the flavor synergy function equal to $1200$ yields a quadratic equation:\n\n$$-x^2 + 100x - 900 = 1200$$\n\n$$x^2 - 100x + 2100 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(x - 30)(x - 70) = 0$$\n\nThe two solutions are $x_1 = 30$ and $x_2 = 70$. Both values lie within the physical domain $[0, 100]$, and their sum is:\n\n$$x_1 + x_2 = 30 + 70 = 100$$\n\nThus there are exactly two admissible compositions summing to $100\\text{ kg}$, so the statement is True.",
+  "**C.** → True\n\nSolving the radical equation requires isolating the radical and squaring both sides:\n\n$$\\sqrt{x + 20} = x - 10$$\n\n$$x + 20 = (x - 10)^2$$\n\n$$x + 20 = x^2 - 20x + 100$$\n\n$$x^2 - 21x + 80 = 0$$\n\nFactoring yields:\n\n$$(x - 16)(x - 5) = 0$$\n\nTesting $x = 5$ in the original equation gives $\\sqrt{25} = 5$ on the left-hand side and $5 - 10 = -5$ on the right-hand side, so $x = 5$ is an extraneous root. Testing $x = 16$ gives $\\sqrt{36} = 6$ and $16 - 10 = 6$, which is valid. The only valid solution is $x = 16$, which is an even integer, so the statement is True.",
+  "**D.** → False\n\nApplying logarithm laws to $\\ln(x + 10) + \\ln(x - 10) = \\ln(300)$ gives:\n\n$$\\ln((x + 10)(x - 10)) = \\ln(300)$$\n\n$$x^2 - 100 = 300$$\n\n$$x^2 = 400$$\n\n$$x = \\pm 20$$\n\nThe natural logarithm requires strictly positive arguments, which defines the domain as $x > 10$. Consequently, $x = -20$ makes both $\\ln(x + 10)$ and $\\ln(x - 10)$ undefined over real numbers, meaning only $x = 20$ is valid, so the statement is False.",
+  "**E.** → False\n\nUsing the substitution $u = e^k$, the exponential equation transforms into a quadratic equation:\n\n$$u^2 - 6u + 8 = 0$$\n\n$$(u - 2)(u - 4) = 0$$\n\nThis yields two positive real values for $u$, namely $u = 2$ and $u = 4$. Reversing the substitution gives:\n\n$$e^k = 2 \\implies k = \\ln(2)$$\n\n$$e^k = 4 \\implies k = \\ln(4)$$\n\nBoth values are valid real solutions, so the statement is False."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "A quadratic hidden behind base two",
+ "context": "The equation $4^{x} - 5 \\cdot 2^{x} + 4 = 0$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The substitution $u = 2^{x}$ turns the equation into a quadratic one.",
+  "The equation has two real solutions.",
+  "Both solutions are positive.",
+  "The sum of all solutions equals the number of solutions.",
+  "Every positive root of the auxiliary quadratic produces a real solution of the original equation."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  true
+ ],
+ "solution_overview": "We are given an exponential equation with base $2$ and base $4$. Expressing the first term in terms of base $2$ via the power rule $4^x = (2^2)^x = (2^x)^2$, the equation becomes:\n\n$$(2^x)^2 - 5 \\cdot 2^x + 4 = 0$$\n\nApplying the substitution $u = 2^x$, where $u > 0$ for any real $x$, yields the auxiliary quadratic equation:\n\n$$u^2 - 5u + 4 = 0$$\n\nFactoring this quadratic expression gives:\n\n$$(u - 1)(u - 4) = 0$$\n\nThe roots of the auxiliary quadratic equation are $u_1 = 1$ and $u_2 = 4$. Solving for $x$ by back-substituting into $2^x = u$ gives:\n\n$$2^{x_1} = 1 \\implies x_1 = 0$$\n\n$$2^{x_2} = 4 \\implies x_2 = 2$$\n\nThus, the solution set in the real numbers is $\\{0, 2\\}$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo transform the given equation into a polynomial form, we express $4^x$ using base $2$ via exponent rules:\n\n$$4^x = (2^2)^x = (2^x)^2$$\n\nSubstituting $u = 2^x$ into the original expression $4^x - 5 \\cdot 2^x + 4 = 0$ produces:\n\n$$u^2 - 5u + 4 = 0$$\n\nThis expression is a second-degree polynomial in the variable $u$, so the statement is True.",
+  "**B.** → True\n\nA real solution $x$ exists for each strictly positive root $u$ of the auxiliary equation $u^2 - 5u + 4 = 0$.\n\nFactoring the auxiliary equation yields:\n\n$$(u - 1)(u - 4) = 0$$\n\nThis gives the two roots $u_1 = 1$ and $u_2 = 4$. Solving for $x$ by taking the base-$2$ logarithm of each positive root gives:\n\n$$2^x = 1 \\implies x = 0$$\n\n$$2^x = 4 \\implies x = 2$$\n\nBoth values are distinct real numbers, which means the equation has exactly two real solutions, so the statement is True.",
+  "**C.** → False\n\nA real number is positive if and only if it is strictly greater than zero.\n\nThe real solutions to the equation $4^x - 5 \\cdot 2^x + 4 = 0$ are found by solving $2^x = 1$ and $2^x = 4$:\n\n$$x_1 = 0$$\n\n$$x_2 = 2$$\n\nWhile the solution $x_2 = 2$ is positive, the solution $x_1 = 0$ is neither positive nor negative. Therefore, it is not the case that both solutions are positive, so the statement is False.",
+  "**D.** → True\n\nWe determine the sum of the solutions and compare it directly to the total count of distinct solutions.\n\nThe solutions to the equation are $x_1 = 0$ and $x_2 = 2$, meaning there are $2$ solutions in total. We compute their sum:\n\n$$x_1 + x_2 = 0 + 2 = 2$$\n\nThe sum of the solutions equals $2$, which is identical to the number of solutions, so the statement is True.",
+  "**E.** → True\n\nThe exponential function $f(x) = 2^x$ maps the real numbers bijectively onto the strictly positive real numbers $(0, \\infty)$.\n\nFor any real number $u > 0$, the equation $2^x = u$ can be solved uniquely for $x$ using the logarithm:\n\n$$x = \\log_2(u)$$\n\nSince the logarithm base $2$ is defined and real-valued for every positive argument, any positive root of the auxiliary quadratic equation necessarily yields a real solution $x$, so the statement is True."
+ ]
+}

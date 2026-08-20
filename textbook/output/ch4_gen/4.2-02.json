@@ -1,0 +1,26 @@
+{
+ "title": "Break-Even Quantities and Vieta Relations",
+ "context": "An operations analyst studies the break-even production quantities of a manufacturing process, modeled by the real roots $x_1$ and $x_2$ of the parameterized quadratic equation $x^2 - (2m - 1)x + (m^2 - m - 6) = 0$, where $m$ is a real design parameter.",
+ "statements": [
+  "The equation has two distinct real solutions for every real value of the parameter $m$.",
+  "If the two break-even quantities have opposite signs, then the parameter $m$ must satisfy $-2 < m < 3$.",
+  "The absolute difference between the two solutions, $|x_1 - x_2|$, depends on $m$ and increases as $m$ increases.",
+  "The sum of the squares of the two solutions, $x_1^2 + x_2^2$, attains a minimum value of $12$ when $m = \\frac{1}{2}$.",
+  "If the sum of the reciprocals of the solutions $\\frac{1}{x_1} + \\frac{1}{x_2}$ is equal to zero, then the product of the solutions is strictly negative."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "A quadratic equation in standard form $a x^2 + b x + c = 0$ has coefficients $a = 1$, $b = -(2m - 1)$, and $c = m^2 - m - 6$. Its discriminant $\\Delta$ is computed as:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = [-(2m - 1)]^2 - 4(1)(m^2 - m - 6)$$\n\n$$\\Delta = 4m^2 - 4m + 1 - 4m^2 + 4m + 24$$\n\n$$\\Delta = 25$$\n\nBy Vieta's formulas, the sum and product of the roots $x_1$ and $x_2$ are given by:\n\n$$x_1 + x_2 = -\\frac{b}{a} = 2m - 1$$\n\n$$x_1 x_2 = \\frac{c}{a} = m^2 - m - 6 = (m - 3)(m + 2)$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nA quadratic equation has two distinct real roots if and only if its discriminant is strictly positive.\n\n$$\\Delta = 25$$\n\nBecause $25 > 0$ for all values of $m$, the equation always has two distinct real roots, so the statement is True.",
+  "**B.** → True\n\nTwo real roots have opposite signs if and only if their product is strictly negative.\n\nUsing Vieta's formula for the product of roots:\n\n$$x_1 x_2 = m^2 - m - 6 < 0$$\n\n$$(m - 3)(m + 2) < 0$$\n\nThe inequality holds for the interval between the two roots of the quadratic factor, which gives $-2 < m < 3$, so the statement is True.",
+  "**C.** → False\n\nThe absolute difference between the roots of a quadratic equation $a x^2 + b x + c = 0$ is expressed via the discriminant.\n\n$$|x_1 - x_2| = \\frac{\\sqrt{\\Delta}}{|a|}$$\n\nSubstituting $\\Delta = 25$ and $a = 1$:\n\n$$|x_1 - x_2| = \\frac{\\sqrt{25}}{1} = 5$$\n\nThe difference is constant and does not depend on $m$, so the statement is False.",
+  "**D.** → False\n\nThe sum of the squares of the roots is expressed in terms of the sum and product of the roots.\n\n$$x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$$\n\nSubstituting $x_1 + x_2 = 2m - 1$ and $x_1 x_2 = m^2 - m - 6$:\n\n$$x_1^2 + x_2^2 = (2m - 1)^2 - 2(m^2 - m - 6)$$\n\n$$x_1^2 + x_2^2 = 4m^2 - 4m + 1 - 2m^2 + 2m + 12$$\n\n$$x_1^2 + x_2^2 = 2m^2 - 2m + 13$$\n\nCompleting the square gives:\n\n$$2m^2 - 2m + 13 = 2\\left(m - \\frac{1}{2}\\right)^2 + \\frac{25}{2}$$\n\nThe minimum value is $\\frac{25}{2} = 12.5$, which is not equal to $12$, so the statement is False.",
+  "**E.** → True\n\nThe sum of the reciprocals is written using a common denominator.\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{x_1 + x_2}{x_1 x_2}$$\n\nSetting this expression to zero requires the numerator to be zero while the denominator is non-zero:\n\n$$x_1 + x_2 = 2m - 1 = 0$$\n\n$$m = \\frac{1}{2}$$\n\nEvaluating the product of the roots at $m = \\frac{1}{2}$:\n\n$$x_1 x_2 = \\left(\\frac{1}{2}\\right)^2 - \\frac{1}{2} - 6 = \\frac{1}{4} - \\frac{2}{4} - \\frac{24}{4} = -\\frac{25}{4}$$\n\nSince $-\\frac{25}{4} < 0$, the product is strictly negative, so the statement is True."
+ ]
+}

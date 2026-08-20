@@ -1,0 +1,26 @@
+{
+ "title": "Acid Solution Mixture Optimization",
+ "context": "A chemical workshop prepares a disinfectant by mixing two acid solutions. A storage tank initially contains $60\\text{ liters}$ of an acidic solution with an acid concentration of $15\\%$. A technician adds $x\\text{ liters}$ of a second solution with acid concentration $p$ (where $0 < p < 1$) to achieve a target concentration $c$ (where $0 < c < 1$). The amount of pure acid in the mixture is modeled by the linear equation $0.15 \\cdot 60 + p \\cdot x = c \\cdot (60 + x)$.",
+ "statements": [
+  "If the target concentration is chosen to equal the concentration of the added solution, so that $c = p$, and $p \\neq 0.15$, the linear equation in $x$ represents a contradiction and has no real solution.",
+  "If the concentration of the added solution is $p = 0.15$ and the target concentration is set to $c = 0.15$, the equation simplifies to an identity that is satisfied by every real number $x$.",
+  "If the added solution has concentration $p = 0.40$ and the desired target concentration is $c = 0.30$, the required volume $x$ is strictly greater than $100\\text{ liters}$.",
+  "Assuming $p > 0.15$, a physically admissible non-negative volume $x \\ge 0$ exists if and only if the target concentration satisfies $0.15 \\le c < p$.",
+  "If the concentration of the added solution is fixed at $p = 0.75$, doubling the difference between the target concentration and the initial concentration, $c - 0.15$, strictly doubles the required volume $x$ for all admissible values of $c$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The total volume of the mixture after adding $x\\text{ liters}$ of the second solution is $60 + x\\text{ liters}$. The conservation of pure acid yields the linear balance equation in the single variable $x$:\n\n$$0.15 \\cdot 60 + p \\cdot x = c \\cdot (60 + x)$$\n\nExpanding both sides of the equation gives:\n\n$$9 + p \\cdot x = 60 \\cdot c + c \\cdot x$$\n\nRearranging all terms containing the unknown $x$ to the left-hand side and constant terms to the right-hand side produces:\n\n$$(p - c) \\cdot x = 60 \\cdot c - 9$$\n\nFactoring $60$ out of the right-hand side, since $9 = 60 \\cdot 0.15$, gives:\n\n$$(p - c) \\cdot x = 60 \\cdot (c - 0.15)$$\n\nWhen $p \\neq c$, dividing by $p - c$ yields the unique solution:\n\n$$x = \\frac{60 \\cdot (c - 0.15)}{p - c}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nA linear equation in one unknown $a \\cdot x = b$ is inconsistent and has no solution if the coefficient of $x$ is zero while the constant term is non-zero.\n\nSetting $c = p$ in the rearranged acid balance equation yields:\n\n$$(p - p) \\cdot x = 60 \\cdot p - 9$$\n\n$$0 \\cdot x = 60 \\cdot p - 9$$\n\nSince $p \\neq 0.15$, the right-hand side is $60 \\cdot p - 9 \\neq 0$. Because no real number $x$ can satisfy $0 = 60 \\cdot p - 9$, the equation has no solution, so the statement is True.",
+  "**B.** → True\n\nA linear equation in one unknown is an identity if it reduces to $0 \\cdot x = 0$, which holds for every real number $x$.\n\nSubstituting $p = 0.15$ and $c = 0.15$ into the acid balance equation gives:\n\n$$(0.15 - 0.15) \\cdot x = 60 \\cdot (0.15 - 0.15)$$\n\n$$0 \\cdot x = 0$$\n\nEvery real number $x$ satisfies this equation, so the statement is True.",
+  "**C.** → False\n\nThe required volume $x$ is obtained by substituting the given parameter values into the general solution formula.\n\nSubstituting $p = 0.40$ and $c = 0.30$ into the expression for $x$ gives:\n\n$$x = \\frac{60 \\cdot (0.30 - 0.15)}{0.40 - 0.30}$$\n\n$$x = \\frac{60 \\cdot 0.15}{0.10}$$\n\n$$x = \\frac{9}{0.10} = 90$$\n\nThe required volume is $90\\text{ liters}$, which is not strictly greater than $100\\text{ liters}$, so the statement is False.",
+  "**D.** → True\n\nA solution volume is physically admissible if $x \\ge 0$.\n\nFrom the solution formula, the volume is given by:\n\n$$x = \\frac{60 \\cdot (c - 0.15)}{p - c}$$\n\nFor $p > 0.15$, the fraction is non-negative if and only if the numerator and denominator have the same sign or the numerator is zero. If $c < p$, the denominator $p - c$ is strictly positive, requiring $c - 0.15 \\ge 0$, which means $c \\ge 0.15$. If $c > p$, the denominator is negative while the numerator $c - 0.15 > p - 0.15 > 0$ is positive, making $x < 0$. If $c = p$, the denominator vanishes and no solution exists. Thus, $x \\ge 0$ holds if and only if $0.15 \\le c < p$, so the statement is True.",
+  "**E.** → False\n\nLet $\\Delta = c - 0.15$ denote the concentration difference, so that $c = 0.15 + \\Delta$.\n\nWith $p = 0.75$, the required volume as a function of $\\Delta$ is:\n\n$$x(\\Delta) = \\frac{60 \\cdot \\Delta}{0.75 - (0.15 + \\Delta)} = \\frac{60 \\cdot \\Delta}{0.60 - \\Delta}$$\n\nDoubling the concentration difference from $\\Delta$ to $2\\Delta$ yields:\n\n$$x(2\\Delta) = \\frac{60 \\cdot (2\\Delta)}{0.60 - 2\\Delta} = \\frac{120 \\cdot \\Delta}{0.60 - 2\\Delta}$$\n\nEvaluating twice the original volume gives:\n\n$$2 \\cdot x(\\Delta) = \\frac{120 \\cdot \\Delta}{0.60 - \\Delta}$$\n\nBecause the denominator also changes when $\\Delta$ is doubled, $x(2\\Delta) \\neq 2 \\cdot x(\\Delta)$, so the statement is False."
+ ]
+}

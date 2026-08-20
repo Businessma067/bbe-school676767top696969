@@ -1,0 +1,26 @@
+{
+ "title": "Perimeter Equivalence of Partitioned Storage Plots",
+ "context": "A municipal planning department is reviewing the fencing layouts for two storage yards whose dimensions depend on a dimension variable $x$ and a real design parameter $a$. The first yard is a rectangle with length $L = 3x - a$ and width $W = x + 4$, having perimeter $P_A = 2(L + W)$. The second yard is a triangular enclosure with side lengths $s_1 = 2x + 3$, $s_2 = 4x - 1$, and $s_3 = ax + 2$, having perimeter $P_B = s_1 + s_2 + s_3$. The primary engineering requirement is the perimeter balance equation $P_A = P_B$.",
+ "statements": [
+  "If the design parameter is set to $a = 2$, the perimeter equation $P_A = P_B$ reduces to an identity with infinitely many real algebraic solutions.",
+  "For any parameter value $a \\neq 2$, the algebraic solution $x$ of the equation $P_A = P_B$ depends strictly monotonically on $a$.",
+  "There exists a real parameter value $a$ for which the perimeter equation $P_A = P_B$ produces a unique positive algebraic solution $x > 0$.",
+  "When $a = 2$, every value of $x$ satisfying $x > \\frac{2}{3}$ yields positive side lengths for both enclosures and forms a non-degenerate triangle.",
+  "If an additional constant offset is introduced such that the perimeter of the rectangle must exceed the perimeter of the triangle by $6$, given by $P_A - P_B = 6$, then the resulting linear equation has no algebraic solution when $a = 2$."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  true
+ ],
+ "solution_overview": "We express both perimeters in terms of the variable $x$ and the parameter $a$. The rectangular perimeter $P_A$ is obtained by expanding the perimeter formula:\n\n$$P_A = 2((3x - a) + (x + 4))$$\n\n$$P_A = 2(4x - a + 4)$$\n\n$$P_A = 8x - 2a + 8$$\n\nThe triangular perimeter $P_B$ is the sum of its three side lengths:\n\n$$P_B = (2x + 3) + (4x - 1) + (ax + 2)$$\n\n$$P_B = (6 + a)x + 4$$\n\nSetting $P_A = P_B$ gives the linear equation in the single unknown $x$:\n\n$$8x - 2a + 8 = (6 + a)x + 4$$\n\nSubtracting $(6 + a)x$ and $(8 - 2a)$ from both sides collects the terms:\n\n$$(8 - (6 + a))x = 4 - (8 - 2a)$$\n\n$$(2 - a)x = 2a - 4$$\n\n$$(2 - a)x = -2(2 - a)$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nA linear equation in one unknown $c \\cdot x = d$ is an identity with infinitely many solutions when $c = 0$ and $d = 0$.\n\nSubstituting $a = 2$ into the simplified perimeter equation yields:\n\n$$(2 - 2)x = 2(2) - 4$$\n\n$$0 \\cdot x = 0$$\n\nBecause $0 = 0$ is true for every real number $x$, the equation has infinitely many algebraic solutions, so the statement is True.",
+  "**B.** → False\n\nFor any parameter value $a \\neq 2$, the coefficient of $x$ is non-zero, allowing us to solve for $x$ by division:\n\n$$x = \\frac{2a - 4}{2 - a}$$\n\nFactoring the numerator gives:\n\n$$x = \\frac{-2(2 - a)}{2 - a}$$\n\n$$x = -2$$\n\nThe root is constant and equal to $-2$ for every $a \\neq 2$, meaning it does not vary monotonically with $a$, so the statement is False.",
+  "**C.** → False\n\nA unique algebraic solution to the linear equation $(2 - a)x = 2a - 4$ exists if and only if the coefficient of $x$ is non-zero, which requires $a \\neq 2$.\n\nWhenever $a \\neq 2$, the unique solution evaluates to:\n\n$$x = \\frac{-2(2 - a)}{2 - a} = -2$$\n\nBecause $-2$ is strictly negative and the case $a = 2$ produces infinitely many solutions rather than a unique solution, no value of $a$ produces a unique positive solution, so the statement is False.",
+  "**D.** → True\n\nWhen $a = 2$, the side lengths are $L = 3x - 2$, $W = x + 4$, $s_1 = 2x + 3$, $s_2 = 4x - 1$, and $s_3 = 2x + 2$.\n\nPositivity of all side lengths requires $x > \\frac{2}{3}$ for $L$, $x > -4$ for $W$, $x > -\\frac{3}{2}$ for $s_1$, $x > \\frac{1}{4}$ for $s_2$, and $x > -1$ for $s_3$, which together require $x > \\frac{2}{3}$.\n\nA non-degenerate triangle requires that the sum of any two sides exceeds the third side:\n\n$$s_1 + s_2 > s_3 \\iff (2x + 3) + (4x - 1) > 2x + 2 \\iff 4x > 0 \\iff x > 0$$\n\n$$s_1 + s_3 > s_2 \\iff (2x + 3) + (2x + 2) > 4x - 1 \\iff 5 > -1$$\n\n$$s_2 + s_3 > s_1 \\iff (4x - 1) + (2x + 2) > 2x + 3 \\iff 4x > 2 \\iff x > \\frac{1}{2}$$\n\nSince any $x > \\frac{2}{3}$ automatically satisfies $x > \\frac{1}{2}$ and $x > 0$, all sides are positive and the triangle inequalities hold, so the statement is True.",
+  "**E.** → True\n\nThe offset perimeter condition is expressed by subtracting $P_B$ from $P_A$:\n\n$$(8x - 2a + 8) - ((6 + a)x + 4) = 6$$\n\n$$(2 - a)x - 2a + 4 = 6$$\n\n$$(2 - a)x = 2a + 2$$\n\nSubstituting $a = 2$ into this linear equation gives:\n\n$$(2 - 2)x = 2(2) + 2$$\n\n$$0 \\cdot x = 6$$\n\nBecause $0 = 6$ is a contradiction, no real value of $x$ satisfies the equation, so the statement is True."
+ ]
+}

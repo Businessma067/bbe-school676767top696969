@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Linear Equation with Nested Expressions",
+ "context": "A financial model requires solving the following linear equation in the unknown $x$, where $a \\in \\mathbb{R}$ is an exogenous contractual parameter:\n\n$$2(a(x - 3) + 4) - 3(x - a) = a(x - 2) - (5 - 3x)$$",
+ "statements": [
+  "There exists a real parameter value $a$ for which every real number $x$ satisfies the equation.",
+  "For $a = 6$, the equation has no solution.",
+  "There are exactly four integer values of $a$ for which the solution $x$ is an integer.",
+  "If $a < 6$, the unique solution $x$ is strictly negative.",
+  "If $a = 2$, the unique solution $x$ lies strictly between $2$ and $3$."
+ ],
+ "answer_key": [
+  false,
+  true,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "To analyze the equation for all values of $a$, we expand the brackets on both sides and bring the equation into the standard linear form $A(a)x = B(a)$.\n\nFirst, expand the left-hand side:\n\n$$2(ax - 3a + 4) - 3x + 3a = 2ax - 6a + 8 - 3x + 3a$$\n\n$$(2a - 3)x - 3a + 8$$\n\nNext, expand the right-hand side:\n\n$$ax - 2a - 5 + 3x = (a + 3)x - 2a - 5$$\n\nEquating both sides and collecting terms in $x$ on the left and constant terms on the right:\n\n$$(2a - 3)x - (a + 3)x = -2a - 5 - (-3a + 8)$$\n\n$$(a - 6)x = a - 13$$\n\nFor any parameter value $a \\neq 6$, the coefficient of $x$ is non-zero, yielding the unique solution:\n\n$$x = \\frac{a - 13}{a - 6} = 1 - \\frac{7}{a - 6}$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nA linear equation in the standard form $Ax = B$ is an identity satisfied by every real number if and only if $A = 0$ and $B = 0$ hold simultaneously.\n\nHere, the coefficient of $x$ is $A = a - 6$ and the constant side is $B = a - 13$.\n\nSetting the coefficient of $x$ to zero gives:\n\n$$a - 6 = 0 \\implies a = 6$$\n\nSubstituting $a = 6$ into the right-hand side yields:\n\n$$B = 6 - 13 = -7 \\neq 0$$\n\nBecause there is no parameter value $a$ that simultaneously makes both sides zero, no value of $a$ turns the equation into an identity, so the statement is False.",
+  "**B.** → True\n\nA linear equation in standard form $Ax = B$ is a contradiction with an empty solution set if and only if $A = 0$ and $B \\neq 0$.\n\nSetting $a = 6$ in the simplified equation $(a - 6)x = a - 13$ gives:\n\n$$(6 - 6)x = 6 - 13$$\n\n$$0 \\cdot x = -7$$\n\nBecause the product of zero and any real number is zero, no real value of $x$ can satisfy $0 = -7$, so the statement is True.",
+  "**C.** → True\n\nThe unique solution for $a \\neq 6$ is decomposed using polynomial division:\n\n$$x = \\frac{a - 13}{a - 6} = 1 - \\frac{7}{a - 6}$$\n\nFor $x$ to be an integer when $a$ is an integer, the term $\\frac{7}{a - 6}$ must evaluate to an integer, which requires the denominator $a - 6$ to be an integer divisor of $7$.\n\nThe integer divisors of the prime number $7$ are:\n\n$$a - 6 \\in \\{-7, -1, 1, 7\\}$$\n\nSolving for $a$ in each case gives:\n\n$$a \\in \\{-1, 5, 7, 13\\}$$\n\nThis yields exactly four distinct integer values of $a$, so the statement is True.",
+  "**D.** → False\n\nThe sign of the solution $x = \\frac{a - 13}{a - 6}$ for $a < 6$ is determined by examining the signs of the numerator and the denominator separately.\n\nFor any $a < 6$, the numerator satisfies:\n\n$$a - 13 < 6 - 13 = -7 < 0$$\n\nThe denominator satisfies:\n\n$$a - 6 < 0$$\n\nThe quotient of two strictly negative numbers is strictly positive:\n\n$$x = \\frac{\\text{negative}}{\\text{negative}} > 0$$\n\nTherefore, the solution is strictly positive for all $a < 6$, so the statement is False.",
+  "**E.** → True\n\nTo find the value of $x$ when $a = 2$, substitute this value into the general solution formula:\n\n$$x = \\frac{2 - 13}{2 - 6}$$\n\n$$x = \\frac{-11}{-4}$$\n\n$$x = 2.75$$\n\nBecause $2 < 2.75 < 3$, the solution lies strictly between $2$ and $3$, so the statement is True."
+ ]
+}

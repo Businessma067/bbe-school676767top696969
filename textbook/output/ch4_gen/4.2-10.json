@@ -1,0 +1,26 @@
+{
+ "title": "Parameterized Quadratic Family and Root Separation",
+ "context": "Consider the parameterized quadratic equation in the variable $x$ given by $x^2 - (m-2)x + (m-5) = 0$, where $m \\in \\mathbb{R}$ is a real parameter. Let $x_1$ and $x_2$ denote the roots of this equation.",
+ "statements": [
+  "There exists at least one real value of the parameter $m$ for which the equation possesses a unique real root with multiplicity two.",
+  "The distance between the two roots $|x_1 - x_2|$ is equal to $\\sqrt{17}$ if and only if $m \\in \\{1, 7\\}$.",
+  "When the parameter $m$ is chosen so that the distance between the two roots is minimized, the sum of the squares of the roots $x_1^2 + x_2^2$ is equal to $10$.",
+  "Under the substitution $x = y^2$, the resulting biquadratic equation $y^4 - (m-2)y^2 + (m-5) = 0$ with parameter $m = 7$ has four distinct real solutions.",
+  "Both roots $x_1$ and $x_2$ are strictly positive real numbers if and only if $m > 2$."
+ ],
+ "answer_key": [
+  false,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze the quadratic equation $x^2 - (m-2)x + (m-5) = 0$ with coefficients $a = 1$, $b = -(m-2)$, and $c = m-5$.\n\nThe discriminant $\\Delta$ is computed as follows:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = [-(m-2)]^2 - 4(1)(m-5)$$\n\n$$\\Delta = m^2 - 4m + 4 - 4m + 20$$\n\n$$\\Delta = m^2 - 8m + 24$$\n\nCompleting the square with respect to $m$ yields:\n\n$$\\Delta = (m-4)^2 + 8$$\n\nThe absolute difference between the roots is expressed in terms of the discriminant:\n\n$$|x_1 - x_2| = \\frac{\\sqrt{\\Delta}}{|a|} = \\sqrt{(m-4)^2 + 8}$$\n\nVieta's formulas provide the sum and product of the roots:\n\n$$x_1 + x_2 = -\\frac{b}{a} = m - 2$$\n\n$$x_1 x_2 = \\frac{c}{a} = m - 5$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nA quadratic equation has a unique real root with multiplicity two if and only if its discriminant is zero.\n\n$$\\Delta = (m-4)^2 + 8$$\n\nSetting the discriminant equal to zero yields:\n\n$$(m-4)^2 + 8 = 0$$\n\n$$(m-4)^2 = -8$$\n\nSince $(m-4)^2 \\ge 0$ for all real numbers $m$, the discriminant satisfies $\\Delta \\ge 8 > 0$ for every $m \\in \\mathbb{R}$. Therefore, the equation always possesses two distinct real roots and never a double root, so the statement is False.",
+  "**B.** → True\n\nThe distance between the two roots is given by the square root of the discriminant divided by the leading coefficient.\n\n$$|x_1 - x_2| = \\sqrt{(m-4)^2 + 8}$$\n\nSetting this distance equal to $\\sqrt{17}$ gives:\n\n$$\\sqrt{(m-4)^2 + 8} = \\sqrt{17}$$\n\n$$(m-4)^2 + 8 = 17$$\n\n$$(m-4)^2 = 9$$\n\nTaking the square root on both sides leads to:\n\n$$m - 4 = 3 \\quad \\text{or} \\quad m - 4 = -3$$\n\n$$m = 7 \\quad \\text{or} \\quad m = 1$$\n\nThus, the root separation is $\\sqrt{17}$ precisely when $m \\in \\{1, 7\\}$, so the statement is True.",
+  "**C.** → False\n\nThe distance $|x_1 - x_2| = \\sqrt{(m-4)^2 + 8}$ attains its global minimum when $(m-4)^2 = 0$, which occurs at $m = 4$.\n\nFor $m = 4$, the sum and product of the roots are:\n\n$$x_1 + x_2 = 4 - 2 = 2$$\n\n$$x_1 x_2 = 4 - 5 = -1$$\n\nWe express the sum of squares using Vieta's formulas:\n\n$$x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$$\n\n$$x_1^2 + x_2^2 = 2^2 - 2(-1)$$\n\n$$x_1^2 + x_2^2 = 4 + 2 = 6$$\n\nThe minimal root distance yields a sum of squares equal to $6$, not $10$, so the statement is False.",
+  "**D.** → True\n\nSetting $x = y^2$ transforms the biquadratic equation $y^4 - (m-2)y^2 + (m-5) = 0$ into the quadratic equation in $x$. Each strictly positive root $x > 0$ produces two distinct real values $y = \\pm \\sqrt{x}$.\n\nFor $m = 7$, the quadratic equation becomes:\n\n$$x^2 - 5x + 2 = 0$$\n\nWe assess the nature of the roots using Vieta's relations:\n\n$$x_1 + x_2 = 5 > 0$$\n\n$$x_1 x_2 = 2 > 0$$\n\n$$\\Delta = (-5)^2 - 4(1)(2) = 17 > 0$$\n\nBecause both roots are real, have a positive sum, and have a positive product, both $x_1$ and $x_2$ are strictly positive real numbers. Therefore, $y^2 = x_1$ and $y^2 = x_2$ yield four distinct real solutions for $y$, so the statement is True.",
+  "**E.** → False\n\nBy Vieta's formulas, two real roots are both strictly positive if and only if their discriminant is non-negative, their product is strictly positive, and their sum is strictly positive.\n\nThe condition on the product requires:\n\n$$x_1 x_2 = m - 5 > 0 \\implies m > 5$$\n\nThe condition on the sum requires:\n\n$$x_1 + x_2 = m - 2 > 0 \\implies m > 2$$\n\nTaking the intersection of these two inequalities gives:\n\n$$m > 5$$\n\nFor values in the range $2 < m \\le 5$, the sum is positive but the product is non-positive, meaning the roots cannot both be strictly positive. Hence the condition $m > 2$ is necessary but not sufficient, so the statement is False."
+ ]
+}

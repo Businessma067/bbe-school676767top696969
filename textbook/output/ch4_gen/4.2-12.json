@@ -1,0 +1,26 @@
+{
+ "title": "Break-Even Analysis with Irrational Roots",
+ "context": "An enterprise models its daily profit $\\Pi(x)$ (in thousands of euros) from manufacturing and selling $x$ hundred units of a high-precision component by the quadratic function $\\Pi(x) = -2x^2 + 12x - 7$. The break-even production levels are the solutions to $\\Pi(x) = 0$, where $x_1$ denotes the smaller break-even quantity and $x_2$ denotes the larger break-even quantity.",
+ "statements": [
+  "The sum of the reciprocals of the two break-even quantities, $\\frac{1}{x_1} + \\frac{1}{x_2}$, is equal to $\\frac{7}{6}$.",
+  "The smaller break-even production quantity $x_1$ is strictly greater than $1$ hundred units.",
+  "The sum of the squared break-even production quantities, $x_1^2 + x_2^2$, is equal to $29$.",
+  "If a constant daily overhead surcharge of $k$ thousand euros is deducted, giving the adjusted profit equation $\\Pi(x) - k = 0$, real break-even production levels exist if and only if $k \\le 11$.",
+  "The related biquadratic equation $-2u^4 + 12u^2 - 7 = 0$, obtained by setting $x = u^2$, possesses exactly two distinct real solutions."
+ ],
+ "answer_key": [
+  false,
+  false,
+  true,
+  true,
+  false
+ ],
+ "solution_overview": "The break-even levels satisfy the quadratic equation $\\Pi(x) = 0$, which is written in standard form by dividing $-2x^2 + 12x - 7 = 0$ by $-1$:\n\n$$2x^2 - 12x + 7 = 0$$\n\nApplying the quadratic formula with $a = 2$, $b = -12$, and $c = 7$, we compute the discriminant:\n\n$$\\Delta = (-12)^2 - 4(2)(7) = 144 - 56 = 88$$\n\nThe roots are therefore irrational:\n\n$$x = \\frac{12 \\pm \\sqrt{88}}{4} = 3 \\pm \\frac{\\sqrt{22}}{2}$$\n\nHence, the two distinct break-even points are $x_1 = 3 - \\frac{\\sqrt{22}}{2}$ and $x_2 = 3 + \\frac{\\sqrt{22}}{2}$. Using Vieta's formulas directly on $2x^2 - 12x + 7 = 0$, the sum and product of the roots are:\n\n$$x_1 + x_2 = -\\frac{-12}{2} = 6$$\n\n$$x_1 x_2 = \\frac{7}{2}$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nTo compute the sum of the reciprocals of the roots, we express the sum over a common denominator:\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{x_1 + x_2}{x_1 x_2}$$\n\nSubstituting the values $x_1 + x_2 = 6$ and $x_1 x_2 = \\frac{7}{2}$ obtained from Vieta's formulas:\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{6}{\\frac{7}{2}} = \\frac{12}{7}$$\n\nThe calculated value is $\\frac{12}{7}$, not $\\frac{7}{6}$, so the statement is False.",
+  "**B.** → False\n\nThe smaller break-even point is given by $x_1 = 3 - \\frac{\\sqrt{22}}{2}$.\n\nSince $22 > 16$, we have $\\sqrt{22} > 4$, which leads to:\n\n$$\\frac{\\sqrt{22}}{2} > 2$$\n\nSubtracting this quantity from $3$ yields:\n\n$$x_1 = 3 - \\frac{\\sqrt{22}}{2} < 3 - 2 = 1$$\n\nThus, $x_1$ is strictly less than $1$, so the statement is False.",
+  "**C.** → True\n\nThe sum of the squared roots can be rewritten in terms of the elementary symmetric polynomials using the algebraic identity:\n\n$$x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$$\n\nSubstituting $x_1 + x_2 = 6$ and $x_1 x_2 = \\frac{7}{2}$ into the identity:\n\n$$x_1^2 + x_2^2 = 6^2 - 2\\left(\\frac{7}{2}\\right)$$\n\n$$x_1^2 + x_2^2 = 36 - 7 = 29$$\n\nThe calculated sum of squares equals $29$, so the statement is True.",
+  "**D.** → True\n\nWe complete the square for the quadratic profit function $\\Pi(x) = -2x^2 + 12x - 7$:\n\n$$\\Pi(x) = -2(x^2 - 6x) - 7$$\n\n$$\\Pi(x) = -2(x - 3)^2 + 18 - 7$$\n\n$$\\Pi(x) = -2(x - 3)^2 + 11$$\n\nSetting the adjusted profit equal to zero gives:\n\n$$-2(x - 3)^2 + 11 - k = 0$$\n\n$$2(x - 3)^2 = 11 - k$$\n\nSince the left side is non-negative for any real $x$, real solutions exist if and only if the right-hand side is non-negative:\n\n$$11 - k \\ge 0 \\iff k \\le 11$$\n\nThus, real break-even points exist if and only if $k \\le 11$, so the statement is True.",
+  "**E.** → False\n\nThe biquadratic equation is $-2(u^2)^2 + 12(u^2) - 7 = 0$. Substituting $x = u^2$ yields the original quadratic equation $2x^2 - 12x + 7 = 0$.\n\nThe two roots for $x$ are $x_1 = 3 - \\frac{\\sqrt{22}}{2}$ and $x_2 = 3 + \\frac{\\sqrt{22}}{2}$.\n\nSince $22 < 25$, we have $\\sqrt{22} < 5$, which implies:\n\n$$\\frac{\\sqrt{22}}{2} < 2.5$$\n\nThis confirms that the smaller root is strictly positive:\n\n$$x_1 = 3 - \\frac{\\sqrt{22}}{2} > 3 - 2.5 = 0.5 > 0$$\n\nBecause both $x_1 > 0$ and $x_2 > 0$, each positive root $x$ produces two distinct real solutions for $u$ via $u = \\pm\\sqrt{x}$, resulting in a total of $2 + 2 = 4$ distinct real solutions, so the statement is False."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Break-Even Equation",
+ "context": "A financial analyst models the break-even production level $x$ (in thousands of units) of a newly launched product line using the parametric equation $$\\frac{a x - 5}{x - 2} + \\frac{a + 1}{2 - x} = 2a - 3$$ where $a \\in \\mathbb{R}$ represents an index of variable input subsidies.",
+ "statements": [
+  "For the parameter value $a = 3$, the linear equation collapses to a false numerical statement, so the solution set is empty.",
+  "If $a = 6$, the formal algebraic rearrangement yields $x = 2$, which is an admissible solution to the original equation.",
+  "There are exactly two distinct real values of the parameter $a$ for which the equation has no solution.",
+  "There exists a real parameter value $a$ for which the equation yields the solution $x = 3$.",
+  "For every parameter value $a$ in the open interval $(3, 4)$, the equation has a unique solution, and this solution is strictly negative."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the parametric equation by first identifying the domain restriction. Because the denominators are $x - 2$ and $2 - x = -(x - 2)$, the equation is defined for all $x \\in \\mathbb{R} \\setminus \\{2\\}$.\n\nWe combine the fractions on the left-hand side over the common denominator $x - 2$:\n\n$$\\frac{a x - 5}{x - 2} - \\frac{a + 1}{x - 2} = 2a - 3$$\n\n$$\\frac{a x - 5 - (a + 1)}{x - 2} = 2a - 3$$\n\n$$\\frac{a x - a - 6}{x - 2} = 2a - 3$$\n\nMultiplying both sides by $x - 2$ under the condition $x \\neq 2$ yields:\n\n$$a x - a - 6 = (2a - 3)(x - 2)$$\n\n$$a x - a - 6 = (2a - 3)x - 4a + 6$$\n\nRearranging terms to isolate $x$ on one side gives:\n\n$$a x - (2a - 3)x = -4a + 6 + a + 6$$\n\n$$(3 - a)x = 12 - 3a$$\n\n$$(a - 3)x = 3(a - 4)$$\n\nThis standard linear form $(a - 3)x = 3(a - 4)$ governs the existence, nature, and admissibility of all solutions across parameter values $a$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo determine the solvability when $a = 3$, we substitute the parameter value directly into the rearranged linear equation.\n\nThe rearranged equation is\n\n$$(a - 3)x = 3(a - 4)$$\n\nSubstituting $a = 3$ yields\n\n$$(3 - 3)x = 3(3 - 4)$$\n\n$$0 \\cdot x = -3$$\n\n$$0 = -3$$\n\nThis is a contradiction, which means that no real number $x$ satisfies the equation. Therefore, the solution set is empty, so the statement is True.",
+  "**B.** → False\n\nTo determine whether a candidate solution is admissible, we must verify that it does not violate the domain of the original rational expression.\n\nThe original equation contains denominators of $x - 2$ and $2 - x$, requiring $x \\neq 2$.\n\nFor $a = 6$, solving the rearranged linear equation gives\n\n$$(6 - 3)x = 3(6 - 4)$$\n\n$$3x = 6$$\n\n$$x = 2$$\n\nBecause $x = 2$ causes division by zero in the original model, this candidate value is an extraneous root and is inadmissible, so the statement is False.",
+  "**C.** → True\n\nTo count the parameter values yielding no solution, we identify every value of $a$ where the linear equation produces either an algebraic contradiction or an extraneous root.\n\nThe general linear form is\n\n$$(a - 3)x = 3(a - 4)$$\n\nThe leading coefficient vanishes when $a - 3 = 0$, giving $a = 3$, which leads to the contradiction $0 = -3$.\n\nFor $a \\neq 3$, the unique candidate root is\n\n$$x = \\frac{3(a - 4)}{a - 3}$$\n\nThis candidate root is extraneous if it equals the excluded domain value $x = 2$:\n\n$$\\frac{3(a - 4)}{a - 3} = 2$$\n\n$$3a - 12 = 2a - 6$$\n\n$$a = 6$$\n\nFor any other real value $a \\notin \\{3, 6\\}$, the equation produces a valid, unique real solution. Hence, the equation has no solution for exactly two distinct parameter values, namely $a = 3$ and $a = 6$, so the statement is True.",
+  "**D.** → False\n\nTo test whether a solution $x = 3$ can be attained, we equate the general solution formula to $3$ and solve for the parameter $a$.\n\nFor $a \\notin \\{3, 6\\}$, the solution to the equation is\n\n$$x = \\frac{3a - 12}{a - 3}$$\n\nSetting this equal to $3$ gives\n\n$$\\frac{3a - 12}{a - 3} = 3$$\n\nMultiplying both sides by $a - 3$ gives\n\n$$3a - 12 = 3(a - 3)$$\n\n$$3a - 12 = 3a - 9$$\n\n$$-12 = -9$$\n\nThis results in a contradiction, showing that no real parameter value $a$ can produce the solution $x = 3$, so the statement is False.",
+  "**E.** → True\n\nTo evaluate the sign of the solution on the interval $(3, 4)$, we examine the quotient that defines $x$.\n\nFor any $a \\in (3, 4)$, we have $a \\neq 3$ and $a \\neq 6$, guaranteeing a unique admissible solution given by\n\n$$x = \\frac{3(a - 4)}{a - 3}$$\n\nSince $a < 4$, the factor $a - 4$ is strictly negative:\n\n$$a - 4 < 0$$\n\nSince $a > 3$, the denominator $a - 3$ is strictly positive:\n\n$$a - 3 > 0$$\n\nThe ratio of a strictly negative numerator to a strictly positive denominator is strictly negative:\n\n$$x < 0$$\n\nTherefore, for every $a \\in (3, 4)$, a unique solution exists and is strictly negative, so the statement is True."
+ ]
+}

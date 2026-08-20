@@ -1,0 +1,26 @@
+{
+ "title": "Solvability and Domain Restrictions of an Algebraic Equation",
+ "context": "An economic analyst investigates the equilibrium condition given by the equation $\\frac{2x^2 - 7x + 3}{x - 3} = \\sqrt{6x + 7}$ over the real numbers.",
+ "statements": [
+  "The maximal real domain of definition of the equation is the set $\\left[-\\frac{7}{6}, \\infty\\right) \\setminus \\{3\\}$.",
+  "Clearing the fraction and squaring both sides transforms the equation into a quadratic equation possessing exactly two distinct real roots, whose sum is positive.",
+  "The negative candidate root obtained from the squared quadratic equation satisfies the original equation because its radicand is strictly positive.",
+  "The candidate $x = 3$ is a valid solution to the original equation because the factor $(x - 3)$ cancels algebraically from the numerator and denominator.",
+  "The set of real solutions to the original equation is empty."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the real equation $\\frac{2x^2 - 7x + 3}{x - 3} = \\sqrt{6x + 7}$. First, we establish the domain of definition. The rational expression requires a non-zero denominator, so $x - 3 \\neq 0$, meaning $x \\neq 3$. The square root requires a non-negative radicand, so $6x + 7 \\ge 0$, which yields $x \\ge -\\frac{7}{6}$. Combining these conditions gives the domain $D = \\left[-\\frac{7}{6}, \\infty\\right) \\setminus \\{3\\}$.\n\nNext, we factor the numerator of the rational expression:\n\n$$2x^2 - 7x + 3 = (2x - 1)(x - 3)$$\n\nFor any $x \\in D$, we simplify the left-hand side:\n\n$$\\frac{(2x - 1)(x - 3)}{x - 3} = 2x - 1$$\n\nThe equation becomes:\n\n$$2x - 1 = \\sqrt{6x + 7}$$\n\nSince the principal square root is non-negative, any real solution must satisfy $2x - 1 \\ge 0$, which requires $x \\ge \\frac{1}{2}$. Squaring both sides produces:\n\n$$(2x - 1)^2 = 6x + 7$$\n\n$$4x^2 - 4x + 1 = 6x + 7$$\n\n$$4x^2 - 10x - 6 = 0$$\n\n$$2x^2 - 5x - 3 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(2x + 1)(x - 3) = 0$$\n\nThis gives two algebraic candidate roots, $x = -\\frac{1}{2}$ and $x = 3$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe domain of definition requires all operations to be well-defined in the real numbers.\n\nThe square root requires the radicand to be non-negative:\n\n$$6x + 7 \\ge 0 \\implies x \\ge -\\frac{7}{6}$$\n\nThe fraction requires the denominator to be non-zero:\n\n$$x - 3 \\neq 0 \\implies x \\neq 3$$\n\nIntersecting these two requirements gives the maximal domain:\n\n$$D = \\left[-\\frac{7}{6}, \\infty\\right) \\setminus \\{3\\}$$\n\nThis matches the stated set, so the statement is True.",
+  "**B.** → True\n\nSimplifying the rational expression for $x \\neq 3$ gives $2x - 1 = \\sqrt{6x + 7}$. Squaring both sides yields:\n\n$$(2x - 1)^2 = 6x + 7$$\n\n$$4x^2 - 10x - 6 = 0$$\n\nDividing by $2$ gives the standard quadratic form:\n\n$$2x^2 - 5x - 3 = 0$$\n\nApplying Vieta's formulas, the sum of the roots of $ax^2 + bx + c = 0$ is $-\\frac{b}{a}$:\n\n$$x_1 + x_2 = -\\frac{-5}{2} = \\frac{5}{2}$$\n\nThe roots are $x_1 = 3$ and $x_2 = -\\frac{1}{2}$, which are distinct, and their sum $\\frac{5}{2}$ is strictly positive, so the statement is True.",
+  "**C.** → False\n\nSquaring both sides of an equation can introduce extraneous roots when the two original sides have opposite signs.\n\nEvaluating both sides of $2x - 1 = \\sqrt{6x + 7}$ at $x = -\\frac{1}{2}$:\n\n$$\\text{LHS} = 2\\left(-\\frac{1}{2}\\right) - 1 = -2$$\n\n$$\\text{RHS} = \\sqrt{6\\left(-\\frac{1}{2}\\right) + 7} = \\sqrt{4} = 2$$\n\nAlthough the radicand $4$ is strictly positive, the left-hand side is $-2$ while the right-hand side is $2$. Since $-2 \\neq 2$, the candidate $x = -\\frac{1}{2}$ does not satisfy the equation, so the statement is False.",
+  "**D.** → False\n\nA candidate value can only be a solution if it belongs to the domain of the original equation.\n\nAt $x = 3$, substituting into the original expression yields a zero denominator:\n\n$$\\frac{2(3)^2 - 7(3) + 3}{3 - 3} = \\frac{0}{0}$$\n\nDivision by zero is undefined. The cancellation of the factor $(x - 3)$ is valid only under the strict condition $x \\neq 3$. Therefore, $x = 3$ is excluded by the domain and cannot be a solution, so the statement is False.",
+  "**E.** → True\n\nA value is a solution if and only if it belongs to the domain $D$ and satisfies the original equation.\n\nThe algebraic derivation generated exactly two candidates, $x = -\\frac{1}{2}$ and $x = 3$.\n\nThe candidate $x = -\\frac{1}{2}$ fails because it produces a negative value on the linear side, contradicting the non-negativity of the principal square root:\n\n$$2\\left(-\\frac{1}{2}\\right) - 1 = -2 < 0$$\n\nThe candidate $x = 3$ is excluded because it makes the denominator of the original fraction equal to zero:\n\n$$3 - 3 = 0$$\n\nSince both candidates are extraneous, no real number satisfies the equation, so the statement is True."
+ ]
+}

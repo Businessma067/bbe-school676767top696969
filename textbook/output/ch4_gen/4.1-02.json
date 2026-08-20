@@ -1,0 +1,26 @@
+{
+ "title": "Joint Venture Balance Price Equation",
+ "context": "In a joint venture pricing model, the negotiated unit balance price $p$ of a manufactured component is governed by the literal equation\n$$\\frac{a(p - c)}{1 - k} = \\frac{b(p + m)}{k}$$\nwhere $a, b, c,$ and $m$ are strictly positive real parameters, and $k \\in (0, 1)$ represents a cost-sharing fraction.",
+ "statements": [
+  "For the specific parameter value $k = \\frac{b}{a + b}$, the equation has no solution for $p$.",
+  "If $k > \\frac{b}{a + b}$, the unique solution for $p$ is strictly positive.",
+  "When $a = b$ and $c = m$, setting $k = \\frac{1}{2}$ turns the equation into an identity that is satisfied by every real number $p$.",
+  "When the relation is solved for the parameter $c$, the resulting expression satisfies $c < p$ for all positive values of $p, m, a, b$ and all $k \\in (0, 1)$.",
+  "If $p = 0$, there exists a combination of positive constants $a, b, c, m$ such that the required cost-sharing parameter $k$ lies in the open interval $(0, 1)$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The given relation is a linear equation in the variable $p$ with parameters $a, b, c, m > 0$ and $k \\in (0, 1)$. To solve for $p$, we multiply both sides of the equation by the common denominator $(1 - k)k$:\n\n$$a k (p - c) = b(1 - k)(p + m)$$\n\nExpanding both sides yields:\n\n$$a k p - a c k = b(1 - k)p + b m (1 - k)$$\n\nCollecting all terms containing $p$ on the left-hand side and all other terms on the right-hand side gives:\n\n$$a k p - b(1 - k)p = a c k + b m (1 - k)$$\n\n$$((a + b)k - b)p = a c k + b m (1 - k)$$\n\nProvided that $(a + b)k - b \\neq 0$, the unique solution for the balance price is:\n\n$$p = \\frac{a c k + b m (1 - k)}{(a + b)k - b}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nA linear equation in the standard form $A p = B$ has no solution when the coefficient of the unknown is zero while the constant term is non-zero.\n\nSetting the coefficient of $p$ to zero gives:\n\n$$(a + b)k - b = 0$$\n\n$$k = \\frac{b}{a + b}$$\n\nSubstituting $k = \\frac{b}{a + b}$ and $1 - k = \\frac{a}{a + b}$ into the right-hand side $B = a c k + b m (1 - k)$ gives:\n\n$$B = a c \\left(\\frac{b}{a + b}\\right) + b m \\left(\\frac{a}{a + b}\\right) = \\frac{a b (c + m)}{a + b}$$\n\nSince $a, b, c,$ and $m$ are strictly positive, $B > 0$. The equation reduces to $0 \\cdot p = B$ with $B \\neq 0$, which is a contradiction, so the statement is True.",
+  "**B.** → True\n\nWhen $(a + b)k - b > 0$, which is equivalent to $k > \\frac{b}{a + b}$, the denominator of the unique solution is strictly positive.\n\nThe unique solution is given by:\n\n$$p = \\frac{a c k + b m (1 - k)}{(a + b)k - b}$$\n\nBecause $a, b, c, m > 0$ and $k \\in (0, 1)$, both terms in the numerator, $a c k$ and $b m (1 - k)$, are strictly positive, making the numerator strictly positive. Since both numerator and denominator are strictly positive, $p > 0$, so the statement is True.",
+  "**C.** → False\n\nAn equation of the form $A p = B$ is an identity with infinitely many solutions if and only if both $A = 0$ and $B = 0$.\n\nWith $a = b$, $c = m$, and $k = \\frac{1}{2}$, we evaluate the coefficient $A$ and the constant term $B$:\n\n$$A = (a + a)\\left(\\frac{1}{2}\\right) - a = a - a = 0$$\n\n$$B = a c \\left(\\frac{1}{2}\\right) + a c \\left(1 - \\frac{1}{2}\\right) = \\frac{1}{2} a c + \\frac{1}{2} a c = a c$$\n\nBecause $a > 0$ and $c > 0$, the product $a c$ is strictly positive. Thus the equation becomes $0 \\cdot p = a c \\neq 0$, which is an impossible equation with no solution rather than an identity, so the statement is False.",
+  "**D.** → True\n\nTo solve the original formula for the parameter $c$, we isolate the term containing $c$ on one side of the equation:\n\n$$\\frac{a(p - c)}{1 - k} = \\frac{b(p + m)}{k}$$\n\nMultiplying both sides by $\\frac{1 - k}{a}$ yields:\n\n$$p - c = \\frac{b(1 - k)(p + m)}{a k}$$\n\nSubtracting $p$ and multiplying by $-1$ gives:\n\n$$c = p - \\frac{b(1 - k)(p + m)}{a k}$$\n\nSince $a, b, m, p > 0$ and $k \\in (0, 1)$, the fraction $\\frac{b(1 - k)(p + m)}{a k}$ is strictly positive. Subtracting a strictly positive quantity from $p$ ensures that $c < p$, so the statement is True.",
+  "**E.** → False\n\nSetting $p = 0$ in the rearranged linear equation $((a + b)k - b)p = a c k + b m (1 - k)$ leads to:\n\n$$0 = a c k + b m (1 - k)$$\n\n$$0 = a c k + b m - b m k$$\n\n$$(b m - a c)k = b m$$\n\nIf $b m - a c \\le 0$, then no positive solution for $k$ exists. If $b m - a c > 0$, solving for $k$ yields:\n\n$$k = \\frac{b m}{b m - a c}$$\n\nBecause $a c > 0$, the denominator $b m - a c$ is strictly smaller than the numerator $b m$, which implies:\n\n$$k = \\frac{b m}{b m - a c} > 1$$\n\nConsequently, the value of $k$ can never fall in the required interval $(0, 1)$ for any choice of positive constants, so the statement is False."
+ ]
+}

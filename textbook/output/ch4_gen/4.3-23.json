@@ -1,0 +1,26 @@
+{
+ "title": "Radical Break-Even Equation",
+ "context": "An economic model yields a break-even condition expressed by the radical equation with a difference of two square roots:\n$$\\sqrt{5x + 1} - \\sqrt{x + 1} = 2$$\nwhere $x \\in \\mathbb{R}$ represents an operational scale parameter.",
+ "statements": [
+  "The maximal real domain on which both radicands are simultaneously non-negative is the closed interval $[-\\frac{1}{5}, \\infty)$.",
+  "Isolating the larger radical and performing a first squaring step produces the equivalent relation $x - 1 = \\sqrt{x + 1}$, which imposes the necessary condition $x \\ge 1$ for any real solution.",
+  "Clearing the remaining square root leads to a quadratic equation whose two real roots both lie strictly outside the maximal real domain of the original equation.",
+  "The original radical equation has exactly one real solution, and this solution satisfies $x \\ge 3$.",
+  "Substituting $u = \\sqrt{x + 1}$ into the intermediate equation $x - 1 = \\sqrt{x + 1}$ yields the quadratic equation $u^2 - u - 2 = 0$, whose negative root produces a valid real solution for $x$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze the radical equation with a difference of two square roots:\n\n$$\\sqrt{5x + 1} - \\sqrt{x + 1} = 2$$\n\nFor real square roots, both radicands must be non-negative:\n\n$$5x + 1 \\ge 0 \\implies x \\ge -\\frac{1}{5}$$\n\n$$x + 1 \\ge 0 \\implies x \\ge -1$$\n\nThe intersection of these conditions defines the maximal real domain $D = [-\\frac{1}{5}, \\infty)$.\n\nTo solve the equation algebraically, we isolate one radical:\n\n$$\\sqrt{5x + 1} = 2 + \\sqrt{x + 1}$$\n\nSquaring both sides:\n\n$$5x + 1 = 4 + 4\\sqrt{x + 1} + (x + 1)$$\n\n$$5x + 1 = x + 5 + 4\\sqrt{x + 1}$$\n\n$$4x - 4 = 4\\sqrt{x + 1}$$\n\n$$x - 1 = \\sqrt{x + 1}$$\n\nSince the principal square root is non-negative ($\\sqrt{x + 1} \\ge 0$), any real solution must satisfy the sign restriction $x - 1 \\ge 0$, which means $x \\ge 1$. Squaring both sides again gives:\n\n$$(x - 1)^2 = x + 1$$\n\n$$x^2 - 2x + 1 = x + 1$$\n\n$$x^2 - 3x = 0$$\n\n$$x(x - 3) = 0$$\n\nThe candidate solutions are $x = 0$ and $x = 3$. Testing both in the original equation:\n\nFor $x = 0$: $\\sqrt{1} - \\sqrt{1} = 0 \\neq 2$ (extraneous root, as $0 < 1$).\n\nFor $x = 3$: $\\sqrt{16} - \\sqrt{4} = 4 - 2 = 2$ (valid solution).",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe real domain of a radical equation requires every expression under an even root to be non-negative.\n\nWe set up the system of inequalities for both radicands:\n\n$$5x + 1 \\ge 0 \\implies x \\ge -\\frac{1}{5}$$\n\n$$x + 1 \\ge 0 \\implies x \\ge -1$$\n\nTaking the intersection of these two intervals gives:\n\n$$D = \\left[-\\frac{1}{5}, \\infty\\right) \\cap [-1, \\infty) = \\left[-\\frac{1}{5}, \\infty\\right)$$\n\nThe maximal real domain is indeed $[-\\frac{1}{5}, \\infty)$, so the statement is True.",
+  "**B.** → True\n\nIsolating $\\sqrt{5x + 1}$ and squaring both sides produces the intermediate equation:\n\n$$x - 1 = \\sqrt{x + 1}$$\n\nBecause the principal square root on the right-hand side is non-negative for all real values where it is defined, the left-hand side must also be non-negative:\n\n$$x - 1 \\ge 0$$\n\n$$x \\ge 1$$\n\nAny real solution must satisfy this necessary restriction, so the statement is True.",
+  "**C.** → False\n\nSquaring the equation $x - 1 = \\sqrt{x + 1}$ yields the quadratic equation:\n\n$$x^2 - 3x = 0$$\n\nThe roots of this quadratic are $x = 0$ and $x = 3$.\n\nBoth candidate roots belong to the maximal real domain $D = [-\\frac{1}{5}, \\infty)$ because:\n\n$$0 \\ge -\\frac{1}{5}$$\n\n$$3 \\ge -\\frac{1}{5}$$\n\nThe claim asserts that both roots lie strictly outside this domain, so the statement is False.",
+  "**D.** → True\n\nThe candidate roots obtained from the quadratic equation are $x = 0$ and $x = 3$.\n\nTesting each candidate in the original equation:\n\n$$\\sqrt{5(0) + 1} - \\sqrt{0 + 1} = 1 - 1 = 0 \\neq 2$$\n\n$$\\sqrt{5(3) + 1} - \\sqrt{3 + 1} = 4 - 2 = 2$$\n\nThus, $x = 3$ is the unique real solution, and it satisfies $3 \\ge 3$, so the statement is True.",
+  "**E.** → False\n\nUsing the substitution $u = \\sqrt{x + 1} \\ge 0$, we have $u^2 = x + 1$, which gives $x = u^2 - 1$.\n\nSubstituting this into $x - 1 = \\sqrt{x + 1}$ yields:\n\n$$(u^2 - 1) - 1 = u$$\n\n$$u^2 - u - 2 = 0$$\n\n$$(u - 2)(u + 1) = 0$$\n\nThe roots are $u = 2$ and $u = -1$.\n\nBecause $u = \\sqrt{x + 1}$ represents a principal square root, it cannot be negative ($u \\ge 0$). The negative root $u = -1$ has no real solution for $x$ and does not produce a valid solution, so the statement is False."
+ ]
+}
