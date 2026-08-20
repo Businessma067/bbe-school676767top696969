@@ -84,7 +84,11 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
-  const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const [progress, setProgress] = useState<Progress>({ passed: [], revision: [] });
+
+  useEffect(() => {
+    setProgress(loadProgress());
+  }, []);
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(chapters.map((c) => [c.num, false])),
   );
