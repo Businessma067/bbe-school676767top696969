@@ -1739,10 +1739,8 @@ function ProbDiceGrid() {
                   return (
                     <td
                       key={c}
-                      className={cn(
-                        "border border-border/70 px-1.5 py-1 tabular-nums",
-                        hit ? "bg-primary/20 font-bold text-primary ring-1 ring-primary/40" : "text-foreground",
-                      )}
+                      className={cn("border border-border/70 px-1.5 py-1 tabular-nums", hit ? "font-bold" : "")}
+                      style={hit ? { background: FILL, color: ACCENT } : { color: INK }}
                     >
                       {sum}
                     </td>
