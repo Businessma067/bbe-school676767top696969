@@ -1,0 +1,26 @@
+{
+ "title": "Roots and Reciprocals of a Parameterized Quadratic Equation",
+ "context": "An economic model generates the parameterized quadratic equation $2x^2 - (k + 2)x + (k - 1) = 0$, where $k \\in \\mathbb{R}$ is a constant market parameter and $x_1, x_2$ denote its real roots whenever they exist.",
+ "statements": [
+  "The quadratic equation possesses two distinct real roots for every parameter value $k \\in \\mathbb{R}$.",
+  "There exists a real parameter value $k \\neq 1$ for which the sum of the reciprocals of the roots, $\\frac{1}{x_1} + \\frac{1}{x_2}$, is equal to $1$.",
+  "If the sum of the reciprocals of the roots is strictly negative, then the two roots $x_1$ and $x_2$ must have opposite algebraic signs.",
+  "For $k = 3$, the sum of the squared reciprocals of the roots, $\\frac{1}{x_1^2} + \\frac{1}{x_2^2}$, is strictly less than $4$.",
+  "If $k > 1$, the associated biquadratic equation $2y^4 - (k + 2)y^2 + (k - 1) = 0$ has exactly four distinct real solutions."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "The given equation is a standard quadratic equation $ax^2 + bx + c = 0$ with coefficients $a = 2$, $b = -(k + 2)$, and $c = k - 1$.\n\nThe nature of its roots is governed by the discriminant:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = (-(k + 2))^2 - 4(2)(k - 1)$$\n\n$$\\Delta = k^2 + 4k + 4 - 8k + 8$$\n\n$$\\Delta = k^2 - 4k + 12$$\n\nCompleting the square yields:\n\n$$\\Delta = (k - 2)^2 + 8$$\n\nBy Vieta's formulas, the sum and product of the roots are:\n\n$$x_1 + x_2 = -\\frac{b}{a} = \\frac{k + 2}{2}$$\n\n$$x_1 x_2 = \\frac{c}{a} = \\frac{k - 1}{2}$$\n\nWhenever $k \\neq 1$, neither root is zero ($x_1 x_2 \\neq 0$), and the sum of the reciprocals is given by:\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{x_1 + x_2}{x_1 x_2} = \\frac{\\frac{k + 2}{2}}{\\frac{k - 1}{2}} = \\frac{k + 2}{k - 1}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe number of distinct real roots of a quadratic equation is determined by the sign of its discriminant $\\Delta$.\n\nFrom completing the square, we have:\n\n$$\\Delta = (k - 2)^2 + 8$$\n\nBecause $(k - 2)^2 \\ge 0$ for every real number $k$, the minimum possible value of the discriminant is $8$.\n\n$$\\Delta \\ge 8 > 0$$\n\nSince $\\Delta$ is strictly positive for all $k \\in \\mathbb{R}$ and $a = 2 \\neq 0$, the equation always has two distinct real roots, so the statement is True.",
+  "**B.** → False\n\nThe sum of the reciprocals of the roots is expressed in terms of $k$ as:\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{k + 2}{k - 1}$$\n\nSetting this expression equal to $1$ gives:\n\n$$\\frac{k + 2}{k - 1} = 1$$\n\nMultiplying both sides by $k - 1$ leads to:\n\n$$k + 2 = k - 1$$\n\n$$2 = -1$$\n\nThis produces a contradiction, showing that no real value of $k$ allows the reciprocal sum to equal $1$, so the statement is False.",
+  "**C.** → True\n\nThe reciprocal sum is strictly negative when:\n\n$$\\frac{k + 2}{k - 1} < 0$$\n\nA rational fraction is strictly negative if and only if its numerator and denominator have opposite signs, which occurs precisely on the open interval $-2 < k < 1$.\n\nFor any parameter value in this interval, $k < 1$, which determines the sign of the product of the roots:\n\n$$x_1 x_2 = \\frac{k - 1}{2} < 0$$\n\nA product of two real roots is strictly negative if and only if one root is strictly positive and the other is strictly negative, so the statement is True.",
+  "**D.** → False\n\nThe sum of the squared reciprocals can be expanded using Vieta's relations:\n\n$$\\frac{1}{x_1^2} + \\frac{1}{x_2^2} = \\left(\\frac{1}{x_1} + \\frac{1}{x_2}\\right)^2 - \\frac{2}{x_1 x_2}$$\n\nSubstituting $k = 3$ into the formulas for the reciprocal sum and root product yields:\n\n$$\\frac{1}{x_1} + \\frac{1}{x_2} = \\frac{3 + 2}{3 - 1} = \\frac{5}{2}$$\n\n$$x_1 x_2 = \\frac{3 - 1}{2} = 1$$\n\nEvaluating the sum of squared reciprocals gives:\n\n$$\\frac{1}{x_1^2} + \\frac{1}{x_2^2} = \\left(\\frac{5}{2}\\right)^2 - \\frac{2}{1} = \\frac{25}{4} - 2 = \\frac{17}{4} = 4.25$$\n\nSince $4.25$ is greater than $4$, it is not strictly less than $4$, so the statement is False.",
+  "**E.** → True\n\nUsing the substitution $u = y^2 \\ge 0$, the biquadratic equation becomes $2u^2 - (k + 2)u + (k - 1) = 0$, whose roots are $u_1 = x_1$ and $u_2 = x_2$.\n\nWhen $k > 1$, the product and sum of the roots satisfy:\n\n$$x_1 x_2 = \\frac{k - 1}{2} > 0$$\n\n$$x_1 + x_2 = \\frac{k + 2}{2} > \\frac{3}{2} > 0$$\n\nBecause their product and sum are both strictly positive, both roots $x_1$ and $x_2$ are strictly positive real numbers. Since $\\Delta > 0$, they are also distinct ($x_1 \\neq x_2$).\n\nEach positive value $x_i$ produces two distinct real solutions $y = \\pm\\sqrt{x_i}$, giving exactly four distinct real solutions $\\pm\\sqrt{x_1}$ and $\\pm\\sqrt{x_2}$, so the statement is True."
+ ]
+}

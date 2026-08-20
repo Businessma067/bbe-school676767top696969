@@ -1,0 +1,26 @@
+{
+ "title": "Cost-Recovery Radical Equation",
+ "context": "An economic analyst investigates the equilibrium conditions of a non-linear cost-recovery model defined by the equation $\\sqrt{2x + 14} - \\frac{10}{\\sqrt{2x + 14}} = 3$, where $x \\in \\mathbb{R}$.",
+ "statements": [
+  "The natural domain of the equation is the open interval $(-7, \\infty)$.",
+  "The auxiliary quadratic equation obtained via the substitution $u = \\sqrt{2x + 14}$ has two real solutions of opposite signs.",
+  "The original equation admits exactly two distinct real solutions.",
+  "The unique valid real solution to the equation is an integer.",
+  "If the constant on the right-hand side is changed from $3$ to $-3$, the modified equation has $x = -5$ as its unique real solution."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "The given equation involves an algebraic expression containing square roots in both the numerator and the denominator:\n\n$$\\sqrt{2x + 14} - \\frac{10}{\\sqrt{2x + 14}} = 3$$\n\nFor the square root $\\sqrt{2x + 14}$ to be defined in the real numbers, the radicand must be non-negative ($2x + 14 \\ge 0$). Additionally, because the radical appears in the denominator, it cannot be zero ($2x + 14 \\neq 0$). Thus, the domain restriction is:\n\n$$2x + 14 > 0$$\n\n$$x > -7$$\n\nUnder this condition, we introduce the auxiliary variable $u = \\sqrt{2x + 14}$, which is strictly positive ($u > 0$). Substituting $u$ into the equation gives:\n\n$$u - \\frac{10}{u} = 3$$\n\nMultiplying both sides by $u$ leads to a standard quadratic equation:\n\n$$u^2 - 3u - 10 = 0$$\n\n$$(u - 5)(u + 2) = 0$$\n\nThis yields two algebraic candidates for $u$, namely $u_1 = 5$ and $u_2 = -2$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe natural domain requires that the expression under the square root is non-negative and that the denominator is non-zero.\n\nWe set the radicand strictly positive:\n\n$$2x + 14 > 0$$\n\n$$2x > -14$$\n\n$$x > -7$$\n\nIn interval notation, this corresponds to $(-7, \\infty)$, so the statement is True.",
+  "**B.** → True\n\nApplying the substitution $u = \\sqrt{2x + 14}$ transforms the equation into a quadratic equation in $u$.\n\n$$u - \\frac{10}{u} = 3$$\n\n$$u^2 - 3u - 10 = 0$$\n\nFactoring the quadratic yields:\n\n$$(u - 5)(u + 2) = 0$$\n\nThe two solutions are $u_1 = 5$ and $u_2 = -2$, which are non-zero real numbers with opposite signs, so the statement is True.",
+  "**C.** → False\n\nEach real solution for $x$ must correspond to a valid non-negative value of $u = \\sqrt{2x + 14}$.\n\nFor the positive root $u_1 = 5$:\n\n$$\\sqrt{2x + 14} = 5$$\n\n$$2x + 14 = 25$$\n\n$$x = \\frac{11}{2} = 5.5$$\n\nFor the negative root $u_2 = -2$:\n\n$$\\sqrt{2x + 14} = -2$$\n\nBecause the principal square root of a real number is always non-negative, a radical cannot equal a negative quantity. Hence, $u_2 = -2$ produces no real solutions, meaning the original equation has only one real solution, so the statement is False.",
+  "**D.** → False\n\nThe only valid real solution comes from the branch where the auxiliary variable is positive ($u = 5$).\n\nSolving for $x$ gives:\n\n$$2x + 14 = 25$$\n\n$$2x = 11$$\n\n$$x = \\frac{11}{2}$$\n\nThe value $\\frac{11}{2} = 5.5$ is a non-integer rational number, so the statement is False.",
+  "**E.** → True\n\nReplacing the right-hand side with $-3$ produces the modified equation with substitution variable $u = \\sqrt{2x + 14} > 0$:\n\n$$u - \\frac{10}{u} = -3$$\n\n$$u^2 + 3u - 10 = 0$$\n\n$$(u + 5)(u - 2) = 0$$\n\nThe algebraic roots are $u = 2$ and $u = -5$. Since the radical cannot be negative, $u = -5$ is discarded, leaving $u = 2$ as the only valid branch:\n\n$$\\sqrt{2x + 14} = 2$$\n\n$$2x + 14 = 4$$\n\n$$2x = -10$$\n\n$$x = -5$$\n\nSince $-5 > -7$, it belongs to the domain and is the unique real solution, so the statement is True."
+ ]
+}

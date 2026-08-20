@@ -1,0 +1,26 @@
+{
+ "title": "A quadratic hidden behind base three",
+ "context": "The equation $9^{x} - 4 \\cdot 3^{x} + 3 = 0$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "Its two solutions are consecutive integers.",
+  "The equation has a negative solution.",
+  "Replacing every base three by base five in the equation leaves the solution set unchanged.",
+  "One of the solutions is irrational.",
+  "The product of all solutions is zero."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "The given equation involves powers of $3$:\n\n$$9^{x} - 4 \\cdot 3^{x} + 3 = 0$$\n\nRecognizing that $9^{x} = (3^{2})^{x} = (3^{x})^{2}$, we rewrite the equation in terms of $3^{x}$:\n\n$$(3^{x})^{2} - 4 \\cdot 3^{x} + 3 = 0$$\n\nApplying the substitution $u = 3^{x}$ with $u > 0$ yields a quadratic equation in $u$:\n\n$$u^{2} - 4u + 3 = 0$$\n\nFactoring this quadratic gives:\n\n$$(u - 1)(u - 3) = 0$$\n\nThus, the solutions for $u$ are $u = 1$ and $u = 3$. Back-substituting into $u = 3^{x}$ produces the solutions for $x$:\n\n$$3^{x} = 1 \\implies x = 0$$\n\n$$3^{x} = 3 \\implies x = 1$$\n\nThe solution set is therefore $\\{0, 1\\}$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTwo integers are consecutive if their difference equals $1$.\n\nThe solutions to the equation are $x = 0$ and $x = 1$.\n\nTaking their difference yields:\n\n$$1 - 0 = 1$$\n\nSince $0$ and $1$ are integers that differ by $1$, they are consecutive integers, so the statement is True.",
+  "**B.** → False\n\nA real number is negative if it is strictly less than zero.\n\nThe solutions obtained for the equation are $x = 0$ and $x = 1$.\n\nChecking each value against the condition $x < 0$:\n\n$$0 \\not< 0$$\n\n$$1 \\not< 0$$\n\nNeither solution is strictly negative, so the statement is False.",
+  "**C.** → False\n\nReplacing base $3$ by base $5$ in the original equation transforms $9^{x} - 4 \\cdot 3^{x} + 3 = 0$ into:\n\n$$25^{x} - 4 \\cdot 5^{x} + 3 = 0$$\n\nSubstituting $v = 5^{x}$ produces the same quadratic equation:\n\n$$v^{2} - 4v + 3 = 0$$\n\nThis factors as $(v - 1)(v - 3) = 0$, giving $v = 1$ and $v = 3$. Solving for $x$:\n\n$$5^{x} = 1 \\implies x = 0$$\n\n$$5^{x} = 3 \\implies x = \\log_{5}(3)$$\n\nBecause $\\log_{5}(3) \\neq 1$, the modified equation has the solution set $\\{0, \\log_{5}(3)\\}$, which differs from $\\{0, 1\\}$, so the statement is False.",
+  "**D.** → False\n\nA number is irrational if it cannot be expressed as a ratio of two integers.\n\nThe solutions to the equation are $x = 0$ and $x = 1$.\n\nBoth values can be written as fractions of integers:\n\n$$0 = \\frac{0}{1}$$\n\n$$1 = \\frac{1}{1}$$\n\nBoth solutions are rational integers, so the statement is False.",
+  "**E.** → True\n\nThe product of all solutions is found by multiplying every element of the solution set.\n\nThe solution set of the equation is $\\{0, 1\\}$.\n\nMultiplying these two values yields:\n\n$$0 \\cdot 1 = 0$$\n\nThe product of all solutions is $0$, so the statement is True."
+ ]
+}

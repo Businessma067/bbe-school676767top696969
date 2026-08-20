@@ -1,0 +1,26 @@
+{
+ "title": "Logarithm laws in one equation",
+ "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $\\log x + \\log 4 = \\log 20$ is a prime number.",
+  "The solution of $\\log x - \\log 3 = \\log 4$ is smaller than $10$.",
+  "The equation $2\\log x = \\log 36$ has two solutions of opposite sign.",
+  "The equation $\\log(x^{2}) = 2\\log 5$ has two solutions.",
+  "In the equation $\\log_{2} x + \\log_{2}(x-2) = 3$ one candidate must be rejected because of the domain."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  true
+ ],
+ "solution_overview": "Logarithmic equations are solved by applying the fundamental laws of logarithms alongside strict domain restrictions. For any logarithm $\\log_b y$, the argument must satisfy $y > 0$. The core operational rules for combining and simplifying terms are:\n\n$$\\log_b u + \\log_b v = \\log_b(u \\cdot v)$$\n\n$$\\log_b u - \\log_b v = \\log_b\\left(\\frac{u}{v}\\right)$$\n\n$$k \\log_b u = \\log_b(u^k)$$\n\nBecause applying these rules can expand or alter the domain of the algebraic expressions involved, all candidate solutions derived from equating arguments must be checked against the domain of the original equation.",
+ "tactical_explanations": [
+  "**A.** → True\n\nWe determine the domain of the equation $\\log x + \\log 4 = \\log 20$, which requires the argument of $\\log x$ to be strictly positive:\n\n$$x > 0$$\n\nUsing the product rule for logarithms, we combine the terms on the left side:\n\n$$\\log(4x) = \\log 20$$\n\nSince the logarithmic function is injective, we equate the arguments:\n\n$$4x = 20$$\n\n$$x = 5$$\n\nThe value $x = 5$ satisfies the domain restriction $x > 0$. Because $5$ is a prime number, the solution is prime, so the statement is True.",
+  "**B.** → False\n\nWe determine the domain of the equation $\\log x - \\log 3 = \\log 4$, which requires:\n\n$$x > 0$$\n\nUsing the quotient rule for logarithms, we combine the left side:\n\n$$\\log\\left(\\frac{x}{3}\\right) = \\log 4$$\n\nEquating the arguments gives:\n\n$$\\frac{x}{3} = 4$$\n\n$$x = 12$$\n\nThe solution $x = 12$ satisfies the domain condition $x > 0$. Since $12$ is greater than $10$, it is not smaller than $10$, so the statement is False.",
+  "**C.** → False\n\nWe determine the domain of the original expression $2\\log x = \\log 36$. For $\\log x$ to be defined, the argument must be strictly positive:\n\n$$x > 0$$\n\nApplying the power rule on the left side gives:\n\n$$\\log(x^2) = \\log 36$$\n\nEquating the arguments yields:\n\n$$x^2 = 36$$\n\n$$x = 6 \\quad \\text{or} \\quad x = -6$$\n\nBecause $x = -6$ violates the domain requirement $x > 0$, the only admissible solution is $x = 6$. The equation has exactly one solution rather than two solutions of opposite sign, so the statement is False.",
+  "**D.** → True\n\nWe determine the domain of the equation $\\log(x^2) = 2\\log 5$. The argument $x^2$ must be strictly positive, which requires:\n\n$$x \\neq 0$$\n\nWe simplify the right side using the power rule for logarithms:\n\n$$2\\log 5 = \\log(5^2) = \\log 25$$\n\nEquating the arguments gives:\n\n$$x^2 = 25$$\n\nSolving for $x$ yields two candidate values:\n\n$$x = 5 \\quad \\text{or} \\quad x = -5$$\n\nBoth values satisfy $x \\neq 0$ and yield valid arguments in the original equation. Therefore, the equation has two distinct solutions, so the statement is True.",
+  "**E.** → True\n\nWe determine the domain of the equation $\\log_2 x + \\log_2(x-2) = 3$. Both logarithmic arguments must be strictly positive:\n\n$$x > 0 \\quad \\text{and} \\quad x - 2 > 0 \\implies x > 2$$\n\nUsing the product rule for base-$2$ logarithms, we combine the terms on the left side:\n\n$$\\log_2(x(x-2)) = 3$$\n\nConverting from logarithmic to exponential form gives:\n\n$$x(x-2) = 2^3$$\n\n$$x^2 - 2x - 8 = 0$$\n\nFactoring the quadratic equation gives:\n\n$$(x - 4)(x + 2) = 0$$\n\nThis yields two algebraic candidates:\n\n$$x = 4 \\quad \\text{or} \\quad x = -2$$\n\nWhile $x = 4$ lies in the domain $x > 2$, the candidate $x = -2$ falls outside the domain and must be rejected, so the statement is True."
+ ]
+}

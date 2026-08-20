@@ -1,0 +1,26 @@
+{
+ "title": "Radical Equation with Extraneous Roots",
+ "context": "Consider the radical equation with two square roots given by $\\sqrt{x + 2} - \\sqrt{2x - 3} = 1$ for real numbers $x$.",
+ "statements": [
+  "The maximal domain of definition of the equation in the real numbers is given by the interval $\\left[-2, \\infty\\right)$.",
+  "Standard algebraic elimination of both square roots leads to a quadratic equation with two distinct positive roots.",
+  "The candidate root $x = 14$ is extraneous because it falls outside the maximal real domain of the original equation.",
+  "The equation possesses exactly one genuine real solution, and this solution is an even integer.",
+  "The sum of all genuine real solutions of the equation is equal to $16$."
+ ],
+ "answer_key": [
+  false,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze the real radical equation $\\sqrt{x + 2} - \\sqrt{2x - 3} = 1$. The maximal real domain $D$ requires every expression under a square root to be non-negative:\n\n$$x + 2 \\ge 0 \\iff x \\ge -2$$\n\n$$2x - 3 \\ge 0 \\iff x \\ge \\frac{3}{2}$$\n\nThe intersection of these conditions defines the domain:\n\n$$D = \\left[\\frac{3}{2}, \\infty\\right)$$\n\nTo solve the equation algebraically, we isolate one radical and square both sides:\n\n$$\\sqrt{x + 2} = 1 + \\sqrt{2x - 3}$$\n\n$$(\\sqrt{x + 2})^2 = (1 + \\sqrt{2x - 3})^2$$\n\n$$x + 2 = 1 + 2\\sqrt{2x - 3} + 2x - 3$$\n\n$$x + 2 = 2x - 2 + 2\\sqrt{2x - 3}$$\n\n$$4 - x = 2\\sqrt{2x - 3}$$\n\nSquaring both sides a second time produces a polynomial equation:\n\n$$(4 - x)^2 = (2\\sqrt{2x - 3})^2$$\n\n$$16 - 8x + x^2 = 4(2x - 3)$$\n\n$$x^2 - 8x + 16 = 8x - 12$$\n\n$$x^2 - 16x + 28 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(x - 2)(x - 14) = 0$$\n\nHence, the algebraic elimination process yields two candidate roots: $x_1 = 2$ and $x_2 = 14$.",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe maximal real domain of definition requires all radicands to be non-negative simultaneously.\n\nWe determine the conditions for each square root:\n\n$$x + 2 \\ge 0 \\iff x \\ge -2$$\n\n$$2x - 3 \\ge 0 \\iff x \\ge \\frac{3}{2}$$\n\nThe intersection of both conditions is:\n\n$$D = [-2, \\infty) \\cap \\left[\\frac{3}{2}, \\infty\\right) = \\left[\\frac{3}{2}, \\infty\\right)$$\n\nThe claim states that the domain is $\\left[-2, \\infty\\right)$, which overlooks the stricter restriction from the second square root, so the statement is False.",
+  "**B.** → True\n\nIsolating one radical and squaring both sides twice produces a quadratic equation in standard form.\n\nFrom the algebraic elimination steps:\n\n$$4 - x = 2\\sqrt{2x - 3}$$\n\n$$(4 - x)^2 = 4(2x - 3)$$\n\n$$x^2 - 16x + 28 = 0$$\n\nSolving for $x$ by factoring gives:\n\n$$(x - 2)(x - 14) = 0$$\n\nThe roots of this quadratic equation are $x_1 = 2$ and $x_2 = 14$. Both are distinct positive real numbers, so the statement is True.",
+  "**C.** → False\n\nA candidate root can be extraneous either because it violates the maximal domain of the radicals or because squaring introduced an equality between quantities of opposite signs.\n\nWe check whether $x = 14$ belongs to the domain $D = \\left[\\frac{3}{2}, \\infty\\right)$:\n\n$$14 \\ge \\frac{3}{2}$$\n\nBoth radicands are strictly positive at $x = 14$, since $14 + 2 = 16 > 0$ and $2(14) - 3 = 25 > 0$. The root is extraneous because the intermediate relation $4 - x = 2\\sqrt{2x - 3}$ evaluates to $-10 = 10$, not because $x = 14$ lies outside the domain, so the statement is False.",
+  "**D.** → True\n\nWe test both candidate roots $x = 2$ and $x = 14$ in the original equation $\\sqrt{x + 2} - \\sqrt{2x - 3} = 1$.\n\nFor $x = 2$:\n\n$$\\sqrt{2 + 2} - \\sqrt{2(2) - 3} = \\sqrt{4} - \\sqrt{1} = 2 - 1 = 1$$\n\nFor $x = 14$:\n\n$$\\sqrt{14 + 2} - \\sqrt{2(14) - 3} = \\sqrt{16} - \\sqrt{25} = 4 - 5 = -1 \\neq 1$$\n\nThus, $x = 2$ is the only valid solution to the original equation, and $2$ is an even integer, so the statement is True.",
+  "**E.** → False\n\nThe sum of all genuine real solutions must only include values that satisfy the original equation.\n\nAs verified previously, the original equation has only one genuine solution:\n\n$$x = 2$$\n\nThe candidate $x = 14$ is extraneous. Therefore, the sum of all genuine real solutions is:\n\n$$\\sum x^* = 2$$\n\nThe value $16$ represents the sum of both algebraic candidates $2 + 14$ obtained before discarding the extraneous root, so the statement is False."
+ ]
+}

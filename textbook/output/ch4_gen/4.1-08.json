@@ -1,0 +1,26 @@
+{
+ "title": "Parameter-Dependent Linear Systems and Solution Sets",
+ "context": "An algebraic cost-allocation model for two competing production runs yields a linear equation in the unknown output variable $x \\in \\mathbb{R}$ with real parameters $m$ and $k$:\n$$m(mx + 2m - 3) + 6 = (k - 4)x + k$$",
+ "statements": [
+  "If $m = 2$ and $k = 8$, the equation collapses to an identity that is satisfied by every real number $x$.",
+  "There exist only finitely many pairs of real parameters $(m, k)$ for which the equation has no solution.",
+  "If $m = 1$ and $k \\neq 5$, the unique solution $x$ is strictly increasing with respect to $k$.",
+  "If $m = 0$, the unique solution $x$ is strictly positive for all real parameters $k > 4$.",
+  "If $k = 0$, the equation has a unique solution for every real parameter $m$, and this solution is strictly positive for all $m \\in \\mathbb{R}$."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "We begin by transforming the given parameter-dependent equation into the standard linear form $A(m, k)x = B(m, k)$.\n\nFirst, expand both sides of the equation:\n\n$$m^2 x + 2m^2 - 3m + 6 = (k - 4)x + k$$\n\nNext, collect all terms containing the unknown $x$ on the left-hand side and all remaining terms on the right-hand side:\n\n$$m^2 x - (k - 4)x = k - (2m^2 - 3m + 6)$$\n\nFactor out $x$ to obtain the standard form:\n\n$$(m^2 - k + 4)x = -2m^2 + 3m + k - 6$$\n\nLet $A(m, k) = m^2 - k + 4$ and $B(m, k) = -2m^2 + 3m + k - 6$. The coefficient of $x$ vanishes when $k = m^2 + 4$. Substituting $k = m^2 + 4$ into $B(m, k)$ yields:\n\n$$B(m, m^2 + 4) = -2m^2 + 3m + (m^2 + 4) - 6$$\n\n$$B(m, m^2 + 4) = -m^2 + 3m - 2 = -(m - 1)(m - 2)$$\n\nWhen $k \\neq m^2 + 4$, the coefficient $A(m, k)$ is non-zero, yielding the unique solution:\n\n$$x = \\frac{-2m^2 + 3m + k - 6}{m^2 - k + 4} = 1 - \\frac{(m - 1)(m - 2)}{k - m^2 - 4}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nA linear equation in standard form $A x = B$ collapses to an identity with solution set $\\mathbb{R}$ if and only if both $A = 0$ and $B = 0$.\n\nFor the parameters $m = 2$ and $k = 8$, we evaluate the coefficient $A$:\n\n$$A(2, 8) = 2^2 - 8 + 4 = 0$$\n\nWe then evaluate the right-hand constant $B$:\n\n$$B(2, 8) = -2(2)^2 + 3(2) + 8 - 6 = -8 + 6 + 8 - 6 = 0$$\n\nThe equation reduces to $0 \\cdot x = 0$, which is satisfied by every real number $x$, so the statement is True.",
+  "**B.** → False\n\nA linear equation $A x = B$ has no solution if and only if $A = 0$ and $B \\neq 0$.\n\nThe coefficient $A(m, k) = m^2 - k + 4$ equals zero when $k = m^2 + 4$. Under this condition, the right-hand side evaluates to:\n\n$$B(m, m^2 + 4) = -(m - 1)(m - 2)$$\n\nThis expression is non-zero for every real number $m \\notin \\{1, 2\\}$. Consequently, every pair $(m, m^2 + 4)$ with $m \\in \\mathbb{R} \\setminus \\{1, 2\\}$ produces the contradiction $0 \\cdot x \\neq 0$. Because $\\mathbb{R} \\setminus \\{1, 2\\}$ contains infinitely many values, there are infinitely many such parameter pairs, so the statement is False.",
+  "**C.** → False\n\nTo analyze the behavior of the solution for $m = 1$ and $k \\neq 5$, we substitute $m = 1$ into the explicit solution formula:\n\n$$x = 1 - \\frac{(1 - 1)(1 - 2)}{k - 1^2 - 4}$$\n\n$$x = 1 - \\frac{0}{k - 5} = 1$$\n\nFor every $k \\neq 5$, the unique solution is identically $x = 1$, which is constant and does not increase with $k$, so the statement is False.",
+  "**D.** → False\n\nWe determine the value of $x$ when $m = 0$ for parameters $k > 4$:\n\n$$x = 1 - \\frac{(0 - 1)(0 - 2)}{k - 0^2 - 4} = 1 - \\frac{2}{k - 4} = \\frac{k - 6}{k - 4}$$\n\nFor any $k$ strictly between $4$ and $6$, the denominator $k - 4$ is positive while the numerator $k - 6$ is negative. Evaluating at $k = 5$ gives:\n\n$$x = \\frac{5 - 6}{5 - 4} = -1$$\n\nBecause the solution is negative on the interval $(4, 6)$, it is not positive for all $k > 4$, so the statement is False.",
+  "**E.** → True\n\nSetting $k = 0$, the coefficient of $x$ is $A(m, 0) = m^2 + 4$. Because $m^2 + 4 \\ge 4 > 0$ for all real $m$, the coefficient is never zero, ensuring that a unique solution exists for every $m \\in \\mathbb{R}$.\n\nThe unique solution is given by:\n\n$$x = \\frac{-2m^2 + 3m + 0 - 6}{-(m^2 + 4)} = \\frac{2m^2 - 3m + 6}{m^2 + 4}$$\n\nThe denominator $m^2 + 4$ is strictly positive. The quadratic numerator $2m^2 - 3m + 6$ has discriminant:\n\n$$\\Delta = (-3)^2 - 4(2)(6) = 9 - 48 = -39 < 0$$\n\nSince its leading coefficient $2$ is positive and $\\Delta < 0$, the numerator is strictly positive for all $m \\in \\mathbb{R}$, making $x > 0$ for every real $m$, so the statement is True."
+ ]
+}

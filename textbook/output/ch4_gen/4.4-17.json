@@ -1,0 +1,26 @@
+{
+ "title": "Logarithms inside logarithms",
+ "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $\\log_{2}(\\log_{3} x) = 1$ is a perfect square.",
+  "The solution of $\\log_{3}(\\log_{2} x) = 0$ is smaller than $3$.",
+  "The solution of $\\log_{2}\\big(\\log_{2}(\\log_{2} x)\\big) = 0$ exceeds $10$.",
+  "The equation $\\log_{2}(\\log_{3} x) = -1$ has no solution.",
+  "In an equation $\\log_{a}(\\log_{b} x) = c$ with $a, b > 1$ every solution is greater than one."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "A nested logarithmic equation of the form $\\log_{a}(\\log_{b} x) = c$ is solved by applying exponential functions from the outside inward. For valid logarithmic evaluations, every inner argument must be strictly positive.\n\nApplying base $a$ to both sides removes the outer logarithm:\n\n$$\\log_{b} x = a^c$$\n\nBecause $a > 0$, the quantity $a^c$ is strictly positive for any real number $c$, satisfying the domain requirement for the inner logarithm. Applying base $b$ then isolates $x$:\n\n$$x = b^{a^c}$$\n\nEach nested layer unwraps by raising the current base to the power of the evaluated expression.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo solve the equation $\\log_{2}(\\log_{3} x) = 1$, we first convert the outer logarithm with base $2$ into exponential form:\n\n$$\\log_{3} x = 2^1 = 2$$\n\nNext, we convert the remaining logarithm with base $3$ into exponential form:\n\n$$x = 3^2 = 9$$\n\nThe integer $9$ is equal to $3^2$, which is an integer squared, so the statement is True.",
+  "**B.** → True\n\nTo solve the equation $\\log_{3}(\\log_{2} x) = 0$, we exponentiate with base $3$ to eliminate the outer logarithm:\n\n$$\\log_{2} x = 3^0 = 1$$\n\nWe then exponentiate with base $2$ to isolate $x$:\n\n$$x = 2^1 = 2$$\n\nThe resulting value $2$ is strictly smaller than $3$, so the statement is True.",
+  "**C.** → False\n\nTo solve the three-layer nested equation $\\log_{2}\\big(\\log_{2}(\\log_{2} x)\\big) = 0$, we peel away the outermost base $2$ logarithm:\n\n$$\\log_{2}(\\log_{2} x) = 2^0 = 1$$\n\nWe apply base $2$ exponentiation again to remove the next logarithm:\n\n$$\\log_{2} x = 2^1 = 2$$\n\nFinally, we isolate $x$ with one more base $2$ exponentiation:\n\n$$x = 2^2 = 4$$\n\nThe solution is $4$, which does not exceed $10$, so the statement is False.",
+  "**D.** → False\n\nTo test whether $\\log_{2}(\\log_{3} x) = -1$ has a real solution, we unwrap the outer logarithm:\n\n$$\\log_{3} x = 2^{-1} = \\frac{1}{2}$$\n\nBecause $\\frac{1}{2} > 0$, the argument of the outer logarithm is well-defined. Exponentiating with base $3$ yields the solution:\n\n$$x = 3^{1/2} = \\sqrt{3}$$\n\nSince $\\sqrt{3} > 1$, both $\\log_3(\\sqrt{3}) = \\frac{1}{2}$ and $\\log_2(\\frac{1}{2}) = -1$ are valid, meaning a real solution does exist, so the statement is False.",
+  "**E.** → True\n\nConsider the general equation $\\log_{a}(\\log_{b} x) = c$ under the assumptions $a > 1$ and $b > 1$. Converting the outer logarithm gives:\n\n$$\\log_{b} x = a^c$$\n\nBecause the exponential function with base $a > 1$ is strictly positive everywhere, we have $a^c > 0$ for any real number $c$. Isolating $x$ gives:\n\n$$x = b^{a^c}$$\n\nBecause $b > 1$ and the exponent satisfies $a^c > 0$, the value $b^{a^c}$ is strictly greater than $b^0 = 1$. Thus, every solution is greater than one, so the statement is True."
+ ]
+}

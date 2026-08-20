@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Fractional Linear Equation",
+ "context": "A financial model requires determining an unknown allocation parameter $x$ satisfying the fractional balance equation $\\frac{2x - 3}{x - 2} - \\frac{x + 1}{x + 2} = \\frac{x^2 + k}{x^2 - 4}$, where $k \\in \\mathbb{R}$ is an exogenous policy parameter and the domain of the equation is restricted to all real numbers where all denominators are non-zero.",
+ "statements": [
+  "For the parameter choice $k = 0$, the equation possesses exactly one valid real solution.",
+  "If $k = -8$, the algebraic candidate root is extraneous, meaning the solution set is empty.",
+  "For every parameter value $k$ in the open interval $(0, 10)$, the unique real solution is strictly greater than $2$.",
+  "There exists a real value of $k$ for which the equation is an identity valid for all numbers in its domain.",
+  "If $k = 12$, the unique solution of the equation is a prime number."
+ ],
+ "answer_key": [
+  false,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "We analyze the given fractional equation on its natural domain. The denominators are $x - 2$, $x + 2$, and $x^2 - 4 = (x - 2)(x + 2)$. The domain of definition consists of all real numbers such that no denominator vanishes:\n\n$$D = \\mathbb{R} \\setminus \\{-2, 2\\}$$\n\nOn the domain $D$, we combine the fractions on the left-hand side over the common denominator $(x - 2)(x + 2) = x^2 - 4$:\n\n$$\\frac{(2x - 3)(x + 2) - (x + 1)(x - 2)}{x^2 - 4} = \\frac{x^2 + k}{x^2 - 4}$$\n\nWe expand both products in the numerator on the left-hand side:\n\n$$(2x - 3)(x + 2) = 2x^2 + 4x - 3x - 6 = 2x^2 + x - 6$$\n\n$$(x + 1)(x - 2) = x^2 - 2x + x - 2 = x^2 - x - 2$$\n\nSubtracting the two expressions gives:\n\n$$(2x^2 + x - 6) - (x^2 - x - 2) = x^2 + 2x - 4$$\n\nThus, the equation simplifies to:\n\n$$\\frac{x^2 + 2x - 4}{x^2 - 4} = \\frac{x^2 + k}{x^2 - 4}$$\n\nMultiplying both sides by $x^2 - 4 \\neq 0$ yields:\n\n$$x^2 + 2x - 4 = x^2 + k$$\n\n$$2x - 4 = k$$\n\n$$2x = k + 4$$\n\n$$x = \\frac{k + 4}{2}$$\n\nA candidate root is valid if and only if it belongs to $D$, which requires $x \\neq 2$ and $x \\neq -2$.",
+ "tactical_explanations": [
+  "**A.** → False\n\nTo evaluate the existence of solutions when $k = 0$, we substitute $k = 0$ into the general candidate formula:\n\n$$x = \\frac{0 + 4}{2}$$\n\n$$x = 2$$\n\nThe candidate root $x = 2$ produces a zero denominator in both $\\frac{2x - 3}{x - 2}$ and $\\frac{x^2 + k}{x^2 - 4}$, so $x = 2 \\notin D$.\n\nBecause the only candidate root is excluded from the domain, the solution set is empty, so the statement is False.",
+  "**B.** → True\n\nTo test whether $k = -8$ leads to an extraneous root, we substitute $k = -8$ into the candidate formula:\n\n$$x = \\frac{-8 + 4}{2}$$\n\n$$x = -2$$\n\nThe value $x = -2$ causes the denominator $x + 2$ as well as $x^2 - 4$ to become zero, which means $x = -2 \\notin D$.\n\nBecause this candidate is extraneous and no other candidates exist, the equation has no valid solution, so the statement is True.",
+  "**C.** → True\n\nWe examine the behavior of the solution $x = \\frac{k + 4}{2}$ on the interval $k \\in (0, 10)$.\n\nSince $k > 0$, we apply the strict inequality directly:\n\n$$x = \\frac{k + 4}{2} > \\frac{0 + 4}{2} = 2$$\n\nFurthermore, for any $k \\in (0, 10)$, we have $x \\in (2, 7)$, which never equals $-2$ or $2$, ensuring that $x \\in D$ is always a valid solution strictly greater than $2$, so the statement is True.",
+  "**D.** → False\n\nAn equation is an identity on its domain if the simplified linear equality holds for every value of $x \\in D$.\n\nThe simplified equation is:\n\n$$2x - 4 = k$$\n\n$$2x - (k + 4) = 0$$\n\nFor a polynomial expression in $x$ to vanish identically for all $x$, the coefficient of $x$ must be zero, but here the coefficient is $2 \\neq 0$.\n\nNo constant parameter $k$ can eliminate the variable $x$, so the equation cannot be an identity, so the statement is False.",
+  "**E.** → False\n\nTo find the solution when $k = 12$, we substitute $k = 12$ into the candidate formula:\n\n$$x = \\frac{12 + 4}{2}$$\n\n$$x = \\frac{16}{2}$$\n\n$$x = 8$$\n\nSince $x = 8$ is in the domain $D$, it is the unique valid solution to the equation.\n\nThe number $8$ has divisors $1, 2, 4, 8$, meaning it is a composite number rather than a prime number, so the statement is False."
+ ]
+}

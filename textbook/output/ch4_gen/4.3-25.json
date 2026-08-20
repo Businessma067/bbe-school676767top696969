@@ -1,0 +1,26 @@
+{
+ "title": "Solvability and Extraneous Roots of a Radical Equation",
+ "context": "An economic model requires determining all real values of $x$ that satisfy the radical equation $2x - 5\\sqrt{x+3} + 3 = 0$ on its maximal real domain of definition.",
+ "statements": [
+  "The maximal real domain of definition for the equation is the open interval $(-3, \\infty)$ because the expression under the square root must be strictly positive.",
+  "Under the substitution $u = \\sqrt{x+3}$ with the restriction $u \\ge 0$, the equation transforms into $2u^2 - 5u - 3 = 0$, which has exactly one positive real root.",
+  "If the rearranged equation $2x + 3 = 5\\sqrt{x+3}$ is squared on both sides, the resulting quadratic equation in $x$ has two distinct real roots whose sum is $\\frac{13}{4}$.",
+  "The candidate value $x = -\\frac{11}{4}$ satisfies the squared equation but is an extraneous root of the original equation because it lies outside the maximal real domain of the radical expression.",
+  "The original equation has exactly one real solution, and this solution is an even integer strictly greater than $5$."
+ ],
+ "answer_key": [
+  false,
+  true,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the radical equation $2x - 5\\sqrt{x+3} + 3 = 0$. The square root $\\sqrt{x+3}$ requires the radicand to be non-negative, defining the maximal real domain:\n\n$$x + 3 \\ge 0 \\iff x \\ge -3$$\n\nThus, the domain is $[-3, \\infty)$. To solve the equation algebraically, we apply the substitution $u = \\sqrt{x+3}$, which imposes the condition $u \\ge 0$. Expressing $x$ in terms of $u$ gives:\n\n$$u^2 = x + 3$$\n\n$$x = u^2 - 3$$\n\nSubstituting this into the original equation yields a quadratic equation in $u$:\n\n$$2(u^2 - 3) - 5u + 3 = 0$$\n\n$$2u^2 - 5u - 3 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(2u + 1)(u - 3) = 0$$\n\nThe algebraic solutions are $u = -\\frac{1}{2}$ and $u = 3$. Because $u = \\sqrt{x+3} \\ge 0$, the negative root $u = -\\frac{1}{2}$ is discarded as extraneous. Setting $u = 3$ gives:\n\n$$\\sqrt{x+3} = 3$$\n\n$$x + 3 = 9$$\n\n$$x = 6$$\n\nTesting $x = 6$ in the original equation confirms $2(6) - 5\\sqrt{6+3} + 3 = 12 - 15 + 3 = 0$.",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe square root function $\\sqrt{g(x)}$ is defined for all real numbers where the radicand is non-negative, meaning $g(x) \\ge 0$.\n\nSetting the radicand greater than or equal to zero gives:\n\n$$x + 3 \\ge 0$$\n\n$$x \\ge -3$$\n\nThe maximal real domain is the closed half-line $[-3, \\infty)$, which includes the endpoint $x = -3$, not the open interval $(-3, \\infty)$, so the statement is False.",
+  "**B.** → True\n\nApplying the substitution $u = \\sqrt{x+3}$ requires $u \\ge 0$ by the definition of the principal square root. Expressing $x$ as $x = u^2 - 3$ and substituting into $2x - 5\\sqrt{x+3} + 3 = 0$ yields:\n\n$$2(u^2 - 3) - 5u + 3 = 0$$\n\n$$2u^2 - 5u - 3 = 0$$\n\nFactoring the quadratic yields:\n\n$$(2u + 1)(u - 3) = 0$$\n\nThe roots are $u_1 = -\\frac{1}{2}$ and $u_2 = 3$. Among these, only $u_2 = 3$ is positive, meaning the quadratic equation has exactly one positive real root, so the statement is True.",
+  "**C.** → True\n\nIsolating the radical term gives $2x + 3 = 5\\sqrt{x+3}$. Squaring both sides produces:\n\n$$(2x + 3)^2 = \\left(5\\sqrt{x+3}\\right)^2$$\n\n$$4x^2 + 12x + 9 = 25(x + 3)$$\n\n$$4x^2 + 12x + 9 = 25x + 75$$\n\n$$4x^2 - 13x - 66 = 0$$\n\nBy Vieta's formulas, the sum of the roots of a quadratic equation $ax^2 + bx + c = 0$ is $-\\frac{b}{a}$. For this equation:\n\n$$\\text{Sum of roots} = -\\frac{-13}{4} = \\frac{13}{4}$$\n\nExplicitly, the roots are $x_1 = 6$ and $x_2 = -\\frac{11}{4}$, whose sum is $6 - \\frac{11}{4} = \\frac{13}{4}$, so the statement is True.",
+  "**D.** → False\n\nA value is outside the domain of $\\sqrt{x+3}$ only if $x < -3$.\n\nFor the candidate root $x = -\\frac{11}{4} = -2.75$, we check the radicand:\n\n$$-\\frac{11}{4} + 3 = \\frac{1}{4} \\ge 0$$\n\nThus, $x = -\\frac{11}{4}$ lies inside the maximal real domain $[-3, \\infty)$. It is extraneous because substituting it into the rearranged equation $2x + 3 = 5\\sqrt{x+3}$ yields a negative left-hand side:\n\n$$2\\left(-\\frac{11}{4}\\right) + 3 = -\\frac{5}{2}$$\n\n$$5\\sqrt{-\\frac{11}{4} + 3} = 5\\sqrt{\\frac{1}{4}} = \\frac{5}{2}$$\n\nSince $-\\frac{5}{2} \\neq \\frac{5}{2}$, the root is extraneous due to the sign mismatch created by squaring, not because of a domain violation, so the statement is False.",
+  "**E.** → True\n\nSolving the equation via the substitution $u = \\sqrt{x+3} \\ge 0$ yields the unique valid solution $u = 3$.\n\nSolving for $x$ gives:\n\n$$\\sqrt{x+3} = 3$$\n\n$$x + 3 = 9$$\n\n$$x = 6$$\n\nThe integer $6$ is even and satisfies $6 > 5$, so the statement is True."
+ ]
+}

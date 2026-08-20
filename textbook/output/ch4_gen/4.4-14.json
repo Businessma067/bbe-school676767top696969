@@ -1,0 +1,26 @@
+{
+ "title": "Decadic logarithms and hidden traps",
+ "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $\\log(x^{3}) - \\log(x^{2}) = 1$ is smaller than $5$.",
+  "The solution of $\\log\\sqrt{x} = 1$ is greater than the solution of $\\log x = 2$.",
+  "The identity $\\log(x^{2}) = 2\\log x$ holds for every real $x \\neq 0$.",
+  "The equation $\\log(x-1) + \\log(x+1) = \\log 3$ has an irrational solution.",
+  "The equation $(\\log x)^{2} = \\log(x^{2})$ has two solutions."
+ ],
+ "answer_key": [
+  false,
+  false,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "The decadic logarithm $\\log x$ denotes the logarithm with base $10$. For any real expression inside a logarithm, the argument must be strictly positive. Key algebraic identities for positive arguments include the power rule $\\log(a^k) = k\\log a$, the product rule $\\log(a \\cdot b) = \\log a + \\log b$, and the quotient rule $\\log(a / b) = \\log a - \\log b$. When solving logarithmic equations, tracking the domain of definition of the original expressions is essential to identify extraneous solutions.",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe domain of the equation $\\log(x^{3}) - \\log(x^{2}) = 1$ requires $x^3 > 0$ and $x^2 > 0$, which restricts $x$ to strictly positive real numbers $x > 0$.\n\nApplying the quotient rule for logarithms gives:\n\n$$\\log\\left(\\frac{x^3}{x^2}\\right) = 1$$\n\n$$\\log x = 1$$\n\nConverting to exponential form with base $10$ yields:\n\n$$x = 10^1 = 10$$\n\nSince $10 > 0$, the unique solution is $x = 10$, which is not smaller than $5$, so the statement is False.",
+  "**B.** → False\n\nFor the first equation $\\log\\sqrt{x} = 1$, the domain requires $x > 0$. Converting to exponential form yields:\n\n$$\\sqrt{x} = 10^1 = 10$$\n\nSquaring both sides gives:\n\n$$x = 100$$\n\nFor the second equation $\\log x = 2$, converting directly to exponential form gives:\n\n$$x = 10^2 = 100$$\n\nBoth equations yield the identical solution $x = 100$. Thus, the solution of the first equation is equal to, not greater than, the solution of the second equation, so the statement is False.",
+  "**C.** → False\n\nThe expression $\\log(x^2)$ is defined for all real numbers where $x^2 > 0$, which means for all $x \\neq 0$. However, the right-hand side $2\\log x$ contains $\\log x$, which is only defined for strictly positive real numbers $x > 0$.\n\nFor any negative real value such as $x = -1$, the left-hand side evaluates to:\n\n$$\\log((-1)^2) = \\log 1 = 0$$\n\nwhile the right-hand side $2\\log(-1)$ is undefined in the real numbers. The correct identity over all non-zero real numbers is $\\log(x^2) = 2\\log|x|$, so the statement is False.",
+  "**D.** → False\n\nThe domain of $\\log(x-1) + \\log(x+1) = \\log 3$ requires both $x - 1 > 0$ and $x + 1 > 0$, which means $x > 1$.\n\nApplying the product rule gives:\n\n$$\\log((x-1)(x+1)) = \\log 3$$\n\n$$\\log(x^2 - 1) = \\log 3$$\n\nEquating arguments yields:\n\n$$x^2 - 1 = 3$$\n\n$$x^2 = 4$$\n\n$$x = 2 \\quad \\text{or} \\quad x = -2$$\n\nSince $x > 1$, the only admissible solution is $x = 2$. The number $2$ is an integer and therefore rational, not irrational, so the statement is False.",
+  "**E.** → True\n\nThe domain of $(\\log x)^2 = \\log(x^2)$ requires $x > 0$ and $x^2 > 0$, which restricts $x$ to $x > 0$.\n\nFor $x > 0$, applying the power rule simplifies the right-hand side:\n\n$$(\\log x)^2 = 2\\log x$$\n\nMoving all terms to one side gives:\n\n$$(\\log x)^2 - 2\\log x = 0$$\n\nFactoring out $\\log x$ yields:\n\n$$\\log x (\\log x - 2) = 0$$\n\nThis produces two cases:\n\n$$\\log x = 0 \\implies x = 10^0 = 1$$\n\n$$\\log x = 2 \\implies x = 10^2 = 100$$\n\nBoth $x = 1$ and $x = 100$ are strictly positive and satisfy the original equation, giving exactly two distinct real solutions, so the statement is True."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Rational Equation and Structural Variations",
+ "context": "In an engineering and economic optimization setting, an analyst investigates the throughput parameter $x \\in \\mathbb{R}$ governed by the rational equation\n$$\\frac{1}{x - 1} + \\frac{1}{x - 4} = \\frac{1}{2}$$\nThe analyst evaluates the solutions of this base equation as well as several structural variations involving domain restrictions, transformations with radicals and absolute values, and extraneous roots.",
+ "statements": [
+  "The rational equation has exactly two real solutions, and their sum is an odd integer.",
+  "If the variable $x$ is replaced by $\\sqrt{u}$, the resulting radical equation $\\frac{1}{\\sqrt{u} - 1} + \\frac{1}{\\sqrt{u} - 4} = \\frac{1}{2}$ has exactly one real solution.",
+  "The absolute-value equation $\\frac{1}{|x| - 1} + \\frac{1}{|x| - 4} = \\frac{1}{2}$ has exactly four distinct real solutions, and the product of all four solutions is equal to $196$.",
+  "Replacing the right-hand side constant with $\\frac{x - 1}{x^2 - 5x + 4}$ yields an equation whose algebraic clearing produces a single candidate value, which is extraneous due to the domain restrictions.",
+  "For every positive real parameter $c > 0$, the equation $\\frac{1}{x - 1} + \\frac{1}{x - 4} = c$ has at least one strictly negative real solution."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  true,
+  false
+ ],
+ "solution_overview": "The base model is a rational equation with two reciprocal terms:\n\n$$\\frac{1}{x - 1} + \\frac{1}{x - 4} = \\frac{1}{2}$$\n\nThe domain of this equation requires all denominators to be non-zero, which gives the restriction $x \\in \\mathbb{R} \\setminus \\{1, 4\\}$. Clearing fractions by multiplying both sides by the least common denominator $2(x - 1)(x - 4)$ gives:\n\n$$2(x - 4) + 2(x - 1) = (x - 1)(x - 4)$$\n\n$$2x - 8 + 2x - 2 = x^2 - 5x + 4$$\n\n$$4x - 10 = x^2 - 5x + 4$$\n\n$$x^2 - 9x + 14 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(x - 2)(x - 7) = 0$$\n\nThis gives candidate roots $x = 2$ and $x = 7$. Both values lie in the admissible domain $\\mathbb{R} \\setminus \\{1, 4\\}$, so the base equation has exactly two valid real solutions, $x_1 = 2$ and $x_2 = 7$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo test the claim about the solutions of the rational equation, we check their admissibility and compute their sum.\n\nThe solutions to the equation are $x_1 = 2$ and $x_2 = 7$, both belonging to the domain $\\mathbb{R} \\setminus \\{1, 4\\}$.\n\nWe compute their sum:\n\n$$x_1 + x_2 = 2 + 7 = 9$$\n\nThe value $9$ is an odd integer, and the equation possesses exactly two real solutions, so the statement is True.",
+  "**B.** → False\n\nTo determine the number of solutions to the radical equation, we apply the substitution $x = \\sqrt{u}$ to the base equation.\n\nThe radical equation requires $u \\ge 0$, $\\sqrt{u} \\neq 1$ (hence $u \\neq 1$), and $\\sqrt{u} \\neq 4$ (hence $u \\neq 16$).\n\nThe valid values for the variable $x$ are $2$ and $7$. Setting $\\sqrt{u} = x$ yields two equations:\n\n$$\\sqrt{u} = 2 \\implies u = 4$$\n\n$$\\sqrt{u} = 7 \\implies u = 49$$\n\nBoth $u = 4$ and $u = 49$ are non-negative and satisfy $u \\notin \\{1, 16\\}$. Thus there are two distinct valid real solutions rather than one, so the statement is False.",
+  "**C.** → True\n\nTo solve the absolute-value equation, we set $|x| = 2$ or $|x| = 7$, since the inner expression $|x|$ replaces the variable in the base equation.\n\nThe domain restrictions are $|x| \\neq 1$ (meaning $x \\neq \\pm 1$) and $|x| \\neq 4$ (meaning $x \\neq \\pm 4$).\n\nSolving $|x| = 2$ yields $x = 2$ and $x = -2$.\n\nSolving $|x| = 7$ yields $x = 7$ and $x = -7$.\n\nAll four values satisfy the domain restrictions. We now compute the product of all four solutions:\n\n$$(-7) \\cdot (-2) \\cdot 2 \\cdot 7 = 196$$\n\nThe equation has exactly four solutions and their product is $196$, so the statement is True.",
+  "**D.** → True\n\nTo verify whether the modified equation produces an extraneous root, we write the full equation:\n\n$$\\frac{1}{x - 1} + \\frac{1}{x - 4} = \\frac{x - 1}{x^2 - 5x + 4}$$\n\nFactoring the denominator on the right gives $x^2 - 5x + 4 = (x - 1)(x - 4)$, so the domain remains $x \\in \\mathbb{R} \\setminus \\{1, 4\\}$.\n\nMultiplying both sides by the common denominator $(x - 1)(x - 4)$ clears the fractions:\n\n$$(x - 4) + (x - 1) = x - 1$$\n\n$$2x - 5 = x - 1$$\n\n$$x = 4$$\n\nThe algebraic clearing produces a single candidate, $x = 4$. Substituting $x = 4$ into the original denominators yields division by zero, making $x = 4$ an extraneous root, so the statement is True.",
+  "**E.** → False\n\nTo check whether a negative solution must exist for every positive constant $c > 0$, we test the case where $c = \\frac{1}{2}$.\n\nFor $c = \\frac{1}{2}$, the solutions were found to be $x = 2$ and $x = 7$.\n\nBoth solutions are strictly positive numbers:\n\n$$2 > 0 \\quad \\text{and} \\quad 7 > 0$$\n\nBecause $c = \\frac{1}{2}$ is a positive real parameter that yields no negative solutions, the property does not hold for every $c > 0$, so the statement is False."
+ ]
+}

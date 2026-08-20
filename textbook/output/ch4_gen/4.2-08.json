@@ -1,0 +1,26 @@
+{
+ "title": "Warehouse Buffer Expansion Model",
+ "context": "A logistics company is designing an expanded industrial storage park. The initial rectangular facility has a length of $50\\text{ m}$ and a width of $30\\text{ m}$. A buffer strip of uniform width $x\\text{ m}$ ($x > 0$) is to be constructed around all four sides. The total footprint area of the expanded facility is $A(x) = (50 + 2x)(30 + 2x) = 4x^2 + 160x + 1500\\text{ m}^2$. The area of the buffer strip alone is given by $B(x) = 4x^2 + 160x$. To evaluate various target area specifications, the engineering team analyzes the normalized quadratic equation $x^2 + 40x - k = 0$, where $k = \\frac{B}{4} > 0$.",
+ "statements": [
+  "For every positive buffer area target $k > 0$, the quadratic equation $x^2 + 40x - k = 0$ has exactly one physically admissible solution $x > 0$, because the discriminant is strictly positive and the product of the algebraic roots is strictly negative.",
+  "Completing the square on the buffer area function $B(x) = 4x^2 + 160x$ results in $4(x + 20)^2 - 400$, meaning the minimum value of $B(x)$ over all real numbers is $-400$.",
+  "As the normalized buffer area target $k$ increases, the sum of the two algebraic roots of $x^2 + 40x - k = 0$ increases strictly monotonically.",
+  "If the developer instead carves an interior setback of width $w$ inside the facility, the remaining area is $R(w) = 4w^2 - 160w + 1500$; setting $R(w) = M$ yields at least one real algebraic solution for $w$ if and only if $M \\ge -100$.",
+  "If a higher-order design constraint leads to the biquadratic equation $x^4 + 40x^2 - 1200 = 0$, the equation possesses four distinct real solutions."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The total area of the expanded site is $A(x) = (50 + 2x)(30 + 2x) = 4x^2 + 160x + 1500$. The added buffer area is $B(x) = 4x^2 + 160x$. Setting $B(x) = 4k$ leads to the normalized quadratic equation:\n\n$$x^2 + 40x - k = 0$$\n\nFor a general quadratic equation $ax^2 + bx + c = 0$, the discriminant is $\\Delta = b^2 - 4ac$, the sum of the roots is $x_1 + x_2 = -\\frac{b}{a}$, and the product of the roots is $x_1 x_2 = \\frac{c}{a}$. For the normalized buffer equation, the coefficients are $a = 1$, $b = 40$, and $c = -k$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe existence and sign of the solutions depend on the discriminant and Vieta's formulas.\n\nThe discriminant of $x^2 + 40x - k = 0$ is:\n\n$$\\Delta = 40^2 - 4(1)(-k)$$\n\n$$\\Delta = 1600 + 4k$$\n\nSince $k > 0$, we have $\\Delta > 1600 > 0$, which guarantees two distinct real roots. By Vieta's formulas, the product of the roots is:\n\n$$x_1 x_2 = \\frac{-k}{1} = -k$$\n\nBecause $k > 0$, the product $x_1 x_2$ is strictly negative. This means one root must be strictly positive and the other strictly negative. Only the positive root satisfies the physical constraint $x > 0$, so the statement is True.",
+  "**B.** → False\n\nTo write the quadratic function in completed-square form, we factor out the leading coefficient and complete the square on the inner expression.\n\n$$B(x) = 4(x^2 + 40x)$$\n\n$$B(x) = 4\\left((x + 20)^2 - 20^2\\right)$$\n\n$$B(x) = 4\\left((x + 20)^2 - 400\\right)$$\n\n$$B(x) = 4(x + 20)^2 - 1600$$\n\nThe constant term obtained after distributing the factor $4$ is $-1600$, not $-400$. The minimum value over all real numbers is therefore $-1600$, attained at $x = -20$, so the statement is False.",
+  "**C.** → False\n\nVieta's formulas give the sum of the roots directly from the linear and leading coefficients.\n\nFor the quadratic equation $x^2 + 40x - k = 0$, the sum of the two algebraic roots is:\n\n$$x_1 + x_2 = -\\frac{40}{1} = -40$$\n\nThis sum is constant and completely independent of the parameter $k$. Increasing $k$ changes the individual values of the roots but leaves their sum unchanged at $-40$, so the statement is False.",
+  "**D.** → True\n\nThe existence of real solutions for a quadratic equation requires its discriminant to be non-negative.\n\nSetting $R(w) = M$ gives the equation:\n\n$$4w^2 - 160w + 1500 = M$$\n\n$$4w^2 - 160w + (1500 - M) = 0$$\n\nThe discriminant of this quadratic equation in $w$ is:\n\n$$\\Delta = (-160)^2 - 4(4)(1500 - M)$$\n\n$$\\Delta = 25600 - 24000 + 16M$$\n\n$$\\Delta = 1600 + 16M$$\n\n$$\\Delta = 16(100 + M)$$\n\nReal algebraic solutions exist if and only if $\\Delta \\ge 0$, which is equivalent to $16(100 + M) \\ge 0$, or $M \\ge -100$, so the statement is True.",
+  "**E.** → False\n\nA biquadratic equation can be solved by introducing a substitution variable.\n\nLet $u = x^2$. Substituting $u$ into $x^4 + 40x^2 - 1200 = 0$ yields:\n\n$$u^2 + 40u - 1200 = 0$$\n\nFactoring the quadratic equation gives:\n\n$$(u + 60)(u - 20) = 0$$\n\nThis gives two solutions for $u$: $u_1 = 20$ and $u_2 = -60$.\n\nSince $x$ is real, $x^2 = u \\ge 0$. The root $u_2 = -60$ yields no real solutions for $x$. The root $u_1 = 20$ yields:\n\n$$x = \\pm\\sqrt{20} = \\pm 2\\sqrt{5}$$\n\nThus, the equation has exactly two real solutions, not four, so the statement is False."
+ ]
+}

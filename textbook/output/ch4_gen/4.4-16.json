@@ -1,0 +1,26 @@
+{
+ "title": "Bounds on solutions of composite logarithmic equations",
+ "context": "Throughout, $\\log$ denotes the decadic logarithm of $x$. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The solution of $\\log\\sqrt{x} + \\log x^{3} - \\log x = 5$ is larger than $50$.",
+  "The solution of $\\log x^{2} - \\log\\sqrt[3]{x} = \\frac{5}{3}$ is a two-digit number.",
+  "The solution of $\\dfrac{\\log x^{4}}{1 + \\log 10} = \\log x + 1$ is smaller than the solution of $\\log x = 2$.",
+  "The equation $(\\log x)^{2} = \\log x + 6$ has exactly one solution.",
+  "The solution of $\\log x^{3} + \\log\\frac{1}{x} = \\log 100$ is greater than $10$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "Each equation requires solving for a positive real variable $x > 0$ using standard properties of the base-10 logarithm. For any positive argument $x$ and real exponent $r$, the logarithm satisfies the power rule and product-to-sum identities:\n\n$$\\log(x^r) = r \\cdot \\log x$$\n\n$$\\log(a \\cdot b) = \\log a + \\log b$$\n\n$$\\log\\left(\\frac{a}{b}\\right) = \\log a - \\log b$$\n\nApplying these laws reduces linear logarithmic equations to the form $\\log x = k$, whose unique solution is recovered through the exponential definition:\n\n$$x = 10^k$$\n\nFor quadratic expressions in $\\log x$, substitution yields a standard polynomial whose real roots must be individually converted back into values of $x$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo solve the equation, we apply the exponent rule to each term on the left-hand side for $x > 0$.\n\n$$\\log\\sqrt{x} + \\log x^3 - \\log x = 5$$\n\n$$\\frac{1}{2}\\log x + 3\\log x - \\log x = 5$$\n\n$$\\frac{5}{2}\\log x = 5$$\n\n$$\\log x = 2$$\n\n$$x = 10^2 = 100$$\n\nBecause $100$ is strictly greater than $50$, the calculated solution satisfies the condition, so the statement is True.",
+  "**B.** → True\n\nWe express the radicals and powers inside the logarithms as constant multiples of $\\log x$.\n\n$$\\log x^2 - \\log\\sqrt[3]{x} = \\frac{5}{3}$$\n\n$$2\\log x - \\frac{1}{3}\\log x = \\frac{5}{3}$$\n\n$$\\frac{5}{3}\\log x = \\frac{5}{3}$$\n\n$$\\log x = 1$$\n\n$$x = 10^1 = 10$$\n\nThe integer $10$ is an integer with two digits, so the statement is True.",
+  "**C.** → True\n\nWe first simplify the base-10 constant $\\log 10 = 1$ and rewrite the numerator.\n\n$$\\frac{\\log x^4}{1 + \\log 10} = \\log x + 1$$\n\n$$\\frac{4\\log x}{1 + 1} = \\log x + 1$$\n\n$$2\\log x = \\log x + 1$$\n\n$$\\log x = 1$$\n\n$$x = 10^1 = 10$$\n\nThe comparison equation $\\log x = 2$ yields $x = 10^2 = 100$. Since $10 < 100$, the solution to the given equation is strictly smaller than the solution to $\\log x = 2$, so the statement is True.",
+  "**D.** → False\n\nWe treat the equation as a quadratic in terms of the variable $u = \\log x$.\n\n$$(\\log x)^2 - \\log x - 6 = 0$$\n\n$$(u - 3)(u + 2) = 0$$\n\nThis factors into two distinct real values for $u$, namely $u = 3$ and $u = -2$.\n\n$$x_1 = 10^3 = 1000$$\n\n$$x_2 = 10^{-2} = 0.01$$\n\nBoth values are strictly positive and satisfy the original equation, giving exactly two distinct solutions rather than one, so the statement is False.",
+  "**E.** → False\n\nWe rewrite the terms using standard logarithmic rules and evaluate $\\log 100$.\n\n$$\\log x^3 + \\log\\frac{1}{x} = \\log 100$$\n\n$$3\\log x - \\log x = 2$$\n\n$$2\\log x = 2$$\n\n$$\\log x = 1$$\n\n$$x = 10^1 = 10$$\n\nThe solution is exactly $10$, which is not strictly greater than $10$, so the statement is False."
+ ]
+}

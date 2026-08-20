@@ -1,0 +1,26 @@
+{
+ "title": "Perimeter and Area of a Rectangular Depot",
+ "context": "A logistics company plans to fence a rectangular storage depot with side lengths $x$ and $y$ measured in meters. The total perimeter of the depot is fixed at $40\\text{ meters}$, so the semi-perimeter satisfies $x + y = 20$. The company investigates different design constraints on the required area $A = x \\cdot y$, the diagonal length, and related algebraic models governing the dimensions.",
+ "statements": [
+  "If the target area is specified as $A = 105\\text{ m}^2$, the quadratic equation governing the side lengths has a positive discriminant, meaning two distinct real dimensions exist.",
+  "For an area of $A = 64\\text{ m}^2$, the diagonal length $d = \\sqrt{x^2 + y^2}$ of the parcel exceeds $17\\text{ meters}$.",
+  "By completing the square on the area function $A(x) = 20x - x^2$, the expression can be written as $A(x) = 100 - (x - 10)^2$, proving that the maximum achievable area is $100\\text{ m}^2$.",
+  "If the dimensions satisfy the biquadratic equation $x^4 - 26x^2 + 25 = 0$ for positive $x$, the two positive roots represent the side lengths of a rectangle with perimeter $12\\text{ meters}$ and area $5\\text{ m}^2$.",
+  "If the ratio of the longer side to the shorter side is exactly $3 : 1$ under the perimeter constraint of $40\\text{ meters}$, the area of the parcel is $A = 75\\text{ m}^2$."
+ ],
+ "answer_key": [
+  false,
+  false,
+  true,
+  true,
+  true
+ ],
+ "solution_overview": "Let $x$ and $y$ denote the side lengths of the rectangle in meters. The perimeter condition is $2(x + y) = 40$, which simplifies to $x + y = 20$, and the area is $x \\cdot y = A$. Substituting $y = 20 - x$ into the area equation gives the quadratic model:\n\n$$x(20 - x) = A$$\n\n$$20x - x^2 = A$$\n\n$$x^2 - 20x + A = 0$$\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = (-20)^2 - 4(1)(A)$$\n\n$$\\Delta = 400 - 4A$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe nature of the solutions to a quadratic equation is determined by its discriminant $\\Delta = b^2 - 4ac$.\n\nFor $x^2 - 20x + A = 0$ with $A = 105$, the discriminant is:\n\n$$\\Delta = 400 - 4(105)$$\n\n$$\\Delta = 400 - 420$$\n\n$$\\Delta = -20$$\n\nBecause the discriminant is strictly negative, the equation has no real solutions for the side lengths. The claim states that the discriminant is positive and that two distinct real dimensions exist, so the statement is False.",
+  "**B.** → False\n\nUsing the algebraic identity for the sum of squares, the square of the diagonal $d = \\sqrt{x^2 + y^2}$ is related to the sum and product of the roots:\n\n$$d^2 = x^2 + y^2 = (x + y)^2 - 2xy$$\n\nSubstituting $x + y = 20$ and $xy = 64$:\n\n$$d^2 = 20^2 - 2(64)$$\n\n$$d^2 = 400 - 128$$\n\n$$d^2 = 272$$\n\nTaking the square root gives $d = \\sqrt{272}$. Since $17^2 = 289$ and $272 < 289$, the diagonal length is strictly less than $17\\text{ meters}$, so the statement is False.",
+  "**C.** → True\n\nThe technique of completing the square expresses a quadratic function in vertex form $a(x - h)^2 + k$.\n\nStarting with the area function $A(x) = 20x - x^2$, we factor out $-1$ and complete the square on the linear term:\n\n$$A(x) = -(x^2 - 20x)$$\n\n$$A(x) = -(x^2 - 20x + 100 - 100)$$\n\n$$A(x) = -((x - 10)^2 - 100)$$\n\n$$A(x) = 100 - (x - 10)^2$$\n\nBecause $(x - 10)^2 \\ge 0$ for all real $x$, the maximum value is $100$, attained when $x = 10$ and $y = 10$, so the statement is True.",
+  "**D.** → True\n\nA biquadratic equation in the variable $x$ can be solved by introducing the substitution $u = x^2$.\n\nRewriting $x^4 - 26x^2 + 25 = 0$ in terms of $u$:\n\n$$u^2 - 26u + 25 = 0$$\n\nFactoring this quadratic gives:\n\n$$(u - 25)(u - 1) = 0$$\n\nThis yields $u = 25$ or $u = 1$. Substituting back $x^2 = u$ for positive dimensions $x > 0$ gives:\n\n$$x = \\sqrt{25} = 5$$\n\n$$x = \\sqrt{1} = 1$$\n\nA rectangle with side lengths $5$ and $1$ has perimeter $2(5 + 1) = 12\\text{ meters}$ and area $5 \\cdot 1 = 5\\text{ m}^2$, so the statement is True.",
+  "**E.** → True\n\nWhen the side lengths satisfy a fixed ratio $x : y = 3 : 1$, the longer side can be written as $x = 3y$.\n\nSubstituting this relationship into the semi-perimeter equation $x + y = 20$:\n\n$$3y + y = 20$$\n\n$$4y = 20$$\n\n$$y = 5$$\n\nThen the longer side length is:\n\n$$x = 3(5) = 15$$\n\nThe enclosed area is the product of the two dimensions:\n\n$$A = x \\cdot y = 15 \\cdot 5 = 75$$\n\nThis confirms that the required area is $75\\text{ m}^2$, so the statement is True."
+ ]
+}

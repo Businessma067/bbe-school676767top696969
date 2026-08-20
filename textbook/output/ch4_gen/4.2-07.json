@@ -1,0 +1,26 @@
+{
+ "title": "Vertex Form and Parametric Analysis of Operating Profit",
+ "context": "A manufacturing company models its monthly operating profit $P_k(q)$ (in thousands of euros) as a quadratic function of production volume $q$ (in thousands of units) and an adjustable technology parameter $k > 0$ according to $P_k(q) = -3q^2 + 6(k+1)q - 3k^2 + 12k - 15$. An operations analyst converts the quadratic function into vertex form by completing the square to analyze profit maxima, break-even thresholds, and structural properties across different parameter regimes.",
+ "statements": [
+  "For every positive parameter value $k$, the vertex form reveals that the profit-maximizing production volume depends linearly on $k$ and is strictly positive.",
+  "The firm can achieve a non-negative operating profit for at least one production volume if and only if the technology parameter satisfies $k \\ge \\frac{2}{3}$.",
+  "Whenever $k > \\frac{2}{3}$ such that two distinct real break-even volumes exist, the product of these two break-even volumes is strictly greater than the square of their average.",
+  "If a related capacity model determines squared production capacity $x = q^2$ via the equation $-3x^2 + 6(k+1)x - 3k^2 + 12k - 15 = 0$, then choosing $k = 2$ yields exactly four distinct real solutions for $q$.",
+  "As the technology parameter $k$ varies over all real numbers, the vertex of the profit parabola moves along the straight line given by $y = 18x - 12$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The operating profit is described by the quadratic function $P_k(q) = -3q^2 + 6(k+1)q - 3k^2 + 12k - 15$. To obtain the vertex form, we complete the square with respect to $q$:\n\n$$P_k(q) = -3\\left(q^2 - 2(k+1)q\\right) - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3\\left((q - (k+1))^2 - (k+1)^2\\right) - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3(q - (k+1))^2 + 3(k+1)^2 - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3(q - (k+1))^2 + 3(k^2 + 2k + 1) - 3k^2 + 12k - 15$$\n\n$$P_k(q) = -3(q - (k+1))^2 + 18k - 12$$\n\nThe vertex coordinates in the $(q, P)$-plane are therefore $(q_v, P_v) = (k+1, 18k - 12)$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo identify the profit-maximizing volume, we look at the vertex form of the downward-opening parabola.\n\nThe profit function in vertex form is:\n\n$$P_k(q) = -3(q - (k+1))^2 + 18k - 12$$\n\nBecause the coefficient of the squared term is $-3 < 0$, the maximum occurs at the vertex abscissa:\n\n$$q_{\\text{max}} = k + 1$$\n\nFor any $k > 0$, the expression $k + 1$ is linear in $k$ and satisfies $k + 1 > 1 > 0$, so the statement is True.",
+  "**B.** → True\n\nA non-negative operating profit is achievable if and only if the maximum value of the profit function is greater than or equal to zero.\n\nFrom the vertex form, the global maximum profit is the ordinate of the vertex:\n\n$$P_{\\text{max}} = 18k - 12$$\n\nSetting this maximum to be non-negative yields the inequality:\n\n$$18k - 12 \\ge 0$$\n\n$$18k \\ge 12$$\n\n$$k \\ge \\frac{12}{18}$$\n\n$$k \\ge \\frac{2}{3}$$\n\nTherefore, at least one production volume yields $P_k(q) \\ge 0$ if and only if $k \\ge \\frac{2}{3}$, so the statement is True.",
+  "**C.** → False\n\nWe determine the relation between the product and average of the roots using the vertex representation.\n\nSetting $P_k(q) = 0$ gives the break-even equation:\n\n$$-3(q - (k+1))^2 + 18k - 12 = 0$$\n\n$$(q - (k+1))^2 = 6k - 4$$\n\nFor $k > \\frac{2}{3}$, the two distinct real roots are:\n\n$$q_1 = k + 1 - \\sqrt{6k - 4}$$\n\n$$q_2 = k + 1 + \\sqrt{6k - 4}$$\n\nThe average of these roots is:\n\n$$\\frac{q_1 + q_2}{2} = k + 1$$\n\nThe square of their average is $(k+1)^2$. The product of the two roots is:\n\n$$q_1 \\cdot q_2 = (k+1)^2 - (6k - 4)$$\n\nSince $k > \\frac{2}{3}$, the term $6k - 4$ is strictly positive, which implies:\n\n$$q_1 \\cdot q_2 < (k+1)^2$$\n\nThe product is strictly less than the square of the average, so the statement is False.",
+  "**D.** → True\n\nTo find the number of real solutions to the biquadratic equation, we solve for $x = q^2$ and evaluate the sign of each solution.\n\nSetting $k = 2$ in the equation transformed into vertex form gives:\n\n$$-3(x - 3)^2 + 18(2) - 12 = 0$$\n\n$$-3(x - 3)^2 + 24 = 0$$\n\n$$(x - 3)^2 = 8$$\n\n$$x = 3 \\pm \\sqrt{8}$$\n\nSince $\\sqrt{8} = 2\\sqrt{2} < 3$, both roots $x_1 = 3 + 2\\sqrt{2}$ and $x_2 = 3 - 2\\sqrt{2}$ are strictly positive real numbers.\n\nSubstituting $q^2 = x$ produces two distinct real solutions for each positive value of $x$:\n\n$$q = \\pm\\sqrt{3 + 2\\sqrt{2}}$$\n\n$$q = \\pm\\sqrt{3 - 2\\sqrt{2}}$$\n\nThis gives exactly four distinct real solutions for $q$, so the statement is True.",
+  "**E.** → False\n\nTo find the locus of the vertex as $k$ varies, we eliminate the parameter $k$ from the parametric equations of the vertex.\n\nThe coordinates of the vertex are:\n\n$$x = k + 1$$\n\n$$y = 18k - 12$$\n\nSolving the first equation for $k$ gives:\n\n$$k = x - 1$$\n\nSubstituting this result into the second equation yields:\n\n$$y = 18(x - 1) - 12$$\n\n$$y = 18x - 18 - 12$$\n\n$$y = 18x - 30$$\n\nThe vertex moves along the line $y = 18x - 30$, which differs from $y = 18x - 12$, so the statement is False."
+ ]
+}

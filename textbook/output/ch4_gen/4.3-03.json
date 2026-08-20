@@ -1,0 +1,26 @@
+{
+ "title": "Radical Equilibrium Equation and Extraneous Roots",
+ "context": "An economic inventory model determines an equilibrium reorder parameter $x \\in \\mathbb{R}$ by solving the radical equation $\\sqrt{5x + 19} - x = 1$. An analyst isolates the radical term and squares both sides to find all candidate solutions.",
+ "statements": [
+  "The natural domain of the radical term requires the variable to satisfy $x \\ge -\\frac{19}{5}$.",
+  "Squaring both sides of the isolated radical equation produces a quadratic equation whose roots sum to $3$.",
+  "The original radical equation has two distinct real solutions because both roots of the squared equation satisfy the non-negativity of the radicand.",
+  "The extraneous root introduced during the solving procedure is strictly less than $-2$.",
+  "The unique valid real solution to the equation is an odd integer strictly greater than $5$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "To find the equilibrium parameter, we first isolate the radical expression on one side of the equation:\n\n$$\\sqrt{5x + 19} = x + 1$$\n\nFor the square root to be defined over the real numbers, the radicand must be non-negative, requiring $5x + 19 \\ge 0$, which gives $x \\ge -\\frac{19}{5}$. Furthermore, because the principal square root is non-negative, the right-hand side must also satisfy $x + 1 \\ge 0$, meaning $x \\ge -1$.\n\nSquaring both sides of the isolated equation yields:\n\n$$(\\sqrt{5x + 19})^2 = (x + 1)^2$$\n\n$$5x + 19 = x^2 + 2x + 1$$\n\nRearranging all terms to one side gives the quadratic equation:\n\n$$x^2 - 3x - 18 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(x - 6)(x + 3) = 0$$\n\nThis yields two algebraic candidate roots, $x = 6$ and $x = -3$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe natural domain of a principal square root function $\\sqrt{u(x)}$ in the real numbers requires the radicand expression to be non-negative.\n\nSetting the radicand greater than or equal to zero gives:\n\n$$5x + 19 \\ge 0$$\n\n$$5x \\ge -19$$\n\n$$x \\ge -\\frac{19}{5}$$\n\nThe domain restriction on the radicand is indeed $x \\ge -\\frac{19}{5}$, so the statement is True.",
+  "**B.** → True\n\nFor any quadratic equation of the standard form $x^2 + bx + c = 0$, Vieta's formulas state that the sum of the roots is equal to $-b$.\n\nFrom the isolated radical equation $\\sqrt{5x + 19} = x + 1$, squaring both sides yields:\n\n$$5x + 19 = x^2 + 2x + 1$$\n\n$$x^2 - 3x - 18 = 0$$\n\nHere the linear coefficient is $b = -3$, so the sum of the roots is:\n\n$$x_1 + x_2 = -(-3) = 3$$\n\nDirect evaluation from the roots $x_1 = 6$ and $x_2 = -3$ confirms $6 + (-3) = 3$, so the statement is True.",
+  "**C.** → False\n\nSquaring both sides of an equation is not an equivalence transformation; it requires the non-negativity of both sides, so candidate roots must satisfy $x + 1 \\ge 0$, or $x \\ge -1$.\n\nTesting the candidate root $x = -3$ in the original equation gives:\n\n$$\\text{LHS} = \\sqrt{5(-3) + 19} - (-3) = \\sqrt{4} + 3 = 2 + 3 = 5$$\n\n$$\\text{RHS} = 1$$\n\nSince $\\text{LHS} \\neq \\text{RHS}$, the candidate $x = -3$ is an extraneous root, leaving $x = 6$ as the only valid solution, so the statement is False.",
+  "**D.** → True\n\nAn extraneous root is an algebraic solution of the squared equation that does not satisfy the original radical equation.\n\nThe two algebraic solutions derived from the quadratic equation are $x = 6$ and $x = -3$. Substituting $x = -3$ into the isolated form $\\sqrt{5x + 19} = x + 1$ gives $\\sqrt{4} = -2$, which is false, identifying $x = -3$ as the extraneous root.\n\nComparing this root to the given bound:\n\n$$-3 < -2$$\n\nThe extraneous root is indeed strictly less than $-2$, so the statement is True.",
+  "**E.** → False\n\nA candidate value is a valid solution only if it satisfies both the radicand condition and the sign condition of the isolated square root expression.\n\nSubstituting $x = 6$ into the original equation gives:\n\n$$\\sqrt{5(6) + 19} - 6 = \\sqrt{49} - 6 = 7 - 6 = 1$$\n\nThus, $x = 6$ is the unique real solution. While $6$ is strictly greater than $5$, it is an even integer rather than an odd integer, so the statement is False."
+ ]
+}

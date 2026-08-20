@@ -1,0 +1,26 @@
+{
+ "title": "Solvability of a Multi-Absolute-Value Equation",
+ "context": "An economic analyst investigates the real solutions to the equation $|2x - 4| + |x + 1| = x - 2$ by partitioning the real number line into sub-intervals based on the critical points of the absolute-value expressions.",
+ "statements": [
+  "Performing case analysis on the interval $(-\\infty, -1)$ yields an algebraic candidate root of $x = \\frac{5}{4}$, which is extraneous because it lies outside that interval.",
+  "Under the case assumption $-1 \\le x < 2$, the simplified linear equation yields an algebraic candidate root that is strictly smaller than $2$.",
+  "On the interval $[2, \\infty)$, the simplified equation produces the candidate value $x = \\frac{1}{2}$, which must be discarded because it violates the defining condition $x \\ge 2$.",
+  "The equation admits exactly one real solution because the candidate root $x = \\frac{1}{2}$ satisfies the necessary condition that the right-hand side expression $x - 2$ is non-negative.",
+  "The difference $|2x - 4| + |x + 1| - (x - 2)$ attains a global minimum of $3$, which proves that the equation has no real solutions."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "To solve the equation $|2x - 4| + |x + 1| = x - 2$, we identify the critical points where the arguments of the absolute values change signs, namely $x = -1$ and $x = 2$. These divide $\\mathbb{R}$ into three disjoint regions: $(-\\infty, -1)$, $[-1, 2)$, and $[2, \\infty)$.\n\nFor $x < -1$, both arguments are negative, giving $|2x - 4| = -(2x - 4) = -2x + 4$ and $|x + 1| = -(x + 1) = -x - 1$. The equation becomes:\n\n$$(-2x + 4) + (-x - 1) = x - 2$$\n\n$$-3x + 3 = x - 2$$\n\n$$-4x = -5$$\n\n$$x = \\frac{5}{4}$$\n\nFor $-1 \\le x < 2$, the argument $x + 1 \\ge 0$ while $2x - 4 < 0$, giving $|2x - 4| = -2x + 4$ and $|x + 1| = x + 1$. The equation becomes:\n\n$$(-2x + 4) + (x + 1) = x - 2$$\n\n$$-x + 5 = x - 2$$\n\n$$-2x = -7$$\n\n$$x = \\frac{7}{2}$$\n\nFor $x \\ge 2$, both arguments are non-negative, giving $|2x - 4| = 2x - 4$ and $|x + 1| = x + 1$. The equation becomes:\n\n$$(2x - 4) + (x + 1) = x - 2$$\n\n$$3x - 3 = x - 2$$\n\n$$2x = 1$$\n\n$$x = \\frac{1}{2}$$\n\nEvery candidate root falls outside its respective validity domain, meaning that no real number satisfies the equation.",
+ "tactical_explanations": [
+  "**A.** → True\n\nFor the interval $(-\\infty, -1)$, both $2x - 4 < 0$ and $x + 1 < 0$, so $|2x - 4| = -2x + 4$ and $|x + 1| = -x - 1$.\n\nSubstituting these expressions into the equation yields:\n\n$$(-2x + 4) + (-x - 1) = x - 2$$\n\n$$-3x + 3 = x - 2$$\n\n$$-4x = -5$$\n\n$$x = \\frac{5}{4}$$\n\nBecause $\\frac{5}{4} = 1.25$ does not satisfy the condition $x < -1$, this candidate is extraneous, so the statement is True.",
+  "**B.** → False\n\nFor the interval $[-1, 2)$, the argument $x + 1$ is non-negative while $2x - 4$ is negative, so $|2x - 4| = -2x + 4$ and $|x + 1| = x + 1$.\n\nSubstituting these expressions gives:\n\n$$(-2x + 4) + (x + 1) = x - 2$$\n\n$$-x + 5 = x - 2$$\n\n$$-2x = -7$$\n\n$$x = \\frac{7}{2}$$\n\nThe candidate root is $x = 3.5$, which is strictly greater than $2$, not smaller than $2$, so the statement is False.",
+  "**C.** → True\n\nFor the interval $[2, \\infty)$, both arguments are non-negative, so $|2x - 4| = 2x - 4$ and $|x + 1| = x + 1$.\n\nSetting up the equation for this case gives:\n\n$$(2x - 4) + (x + 1) = x - 2$$\n\n$$3x - 3 = x - 2$$\n\n$$2x = 1$$\n\n$$x = \\frac{1}{2}$$\n\nBecause $x = \\frac{1}{2} = 0.5$ does not satisfy the case condition $x \\ge 2$, it is an extraneous root, so the statement is True.",
+  "**D.** → False\n\nA candidate value is a valid solution only if it satisfies the case conditions under which it was derived. The candidate $x = \\frac{1}{2}$ was obtained under the assumption $x \\ge 2$, which it fails to satisfy.\n\nFurthermore, substituting $x = \\frac{1}{2}$ into the right-hand side yields:\n\n$$\\frac{1}{2} - 2 = -\\frac{3}{2}$$\n\nThis is negative, whereas the left-hand side is a sum of absolute values and thus non-negative. All three algebraic branches produce extraneous roots, so the equation has zero real solutions, so the statement is False.",
+  "**E.** → True\n\nWe define the difference function $f(x) = |2x - 4| + |x + 1| - (x - 2)$ across the real line.\n\nOn $(-\\infty, -1]$, we have:\n\n$$f(x) = (-2x + 4) + (-x - 1) - x + 2 = -4x + 5$$\n\nThis linear segment is strictly decreasing and reaches its minimum at the boundary $x = -1$ with $f(-1) = 9$.\n\nOn $[-1, 2]$, we have:\n\n$$f(x) = (-2x + 4) + (x + 1) - x + 2 = -2x + 7$$\n\nThis segment decreases from $f(-1) = 9$ to $f(2) = 3$.\n\nOn $[2, \\infty)$, we have:\n\n$$f(x) = (2x - 4) + (x + 1) - x + 2 = 2x - 1$$\n\nThis segment increases from $f(2) = 3$ toward infinity. Consequently, the minimum value of $f(x)$ across all real numbers is $3$, meaning $|2x - 4| + |x + 1| \\ge x - 2 + 3 > x - 2$ everywhere, so the statement is True."
+ ]
+}

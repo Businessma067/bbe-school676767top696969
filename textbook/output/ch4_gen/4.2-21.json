@@ -1,0 +1,26 @@
+{
+ "title": "Break-Even Output and Quadratic Parameters",
+ "context": "A financial analyst models the break-even production levels $x$ (in thousands of units) for a manufacturing firm using the quadratic equation $$2x^2 - 10x + k = 0$$ where $k \\in \\mathbb{R}$ represents a fixed operational overhead parameter.",
+ "statements": [
+  "A candidate reports that the condition $k < \\frac{25}{2}$ is sufficient to guarantee that the equation possesses two distinct strictly positive real roots.",
+  "Completing the square on the quadratic expression $2x^2 - 10x + k$ transforms it into $2\\left(x - \\frac{5}{2}\\right)^2 + k - \\frac{25}{4}$.",
+  "If $x_1$ and $x_2$ denote the two real roots of the equation, the sum of their squares $x_1^2 + x_2^2$ is equal to $25 - k$.",
+  "When the overhead parameter is set to $k = 7$, the larger real root $x_+$ satisfies the inequality $4.1 < x_+ < 4.2$.",
+  "Under the substitution $x = z^2$, the associated biquadratic equation $2z^4 - 10z^2 + k = 0$ has four distinct real solutions if and only if $0 < k < \\frac{25}{2}$."
+ ],
+ "answer_key": [
+  false,
+  false,
+  true,
+  true,
+  true
+ ],
+ "solution_overview": "We consider the quadratic equation $2x^2 - 10x + k = 0$ with coefficients $a = 2$, $b = -10$, and $c = k$.\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = b^2 - 4ac = (-10)^2 - 4(2)(k) = 100 - 8k$$\n\nTwo distinct real roots exist if and only if $\\Delta > 0$, which yields:\n\n$$100 - 8k > 0 \\implies k < \\frac{25}{2}$$\n\nWhen real roots $x_1$ and $x_2$ exist, Vieta's formulas give their sum and product:\n\n$$x_1 + x_2 = -\\frac{b}{a} = -\\frac{-10}{2} = 5$$\n\n$$x_1 x_2 = \\frac{c}{a} = \\frac{k}{2}$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nFor a quadratic equation to have two distinct strictly positive real roots, the discriminant must be strictly positive and both roots must have a positive sum and a positive product.\n\nFrom Vieta's formulas, the product of the roots is:\n\n$$x_1 x_2 = \\frac{k}{2}$$\n\nIf $k \\le 0$, the product of the roots is non-positive, which implies that at least one root is less than or equal to zero. Therefore, $k < \\frac{25}{2}$ alone is not sufficient because $k$ must also satisfy $k > 0$, so the statement is False.",
+  "**B.** → False\n\nTo complete the square, we factor out the leading coefficient $2$ from the quadratic and linear terms:\n\n$$2x^2 - 10x + k = 2\\left(x^2 - 5x\\right) + k$$\n\nWe complete the square inside the parentheses by adding and subtracting $\\left(\\frac{5}{2}\\right)^2 = \\frac{25}{4}$:\n\n$$= 2\\left(\\left(x - \\frac{5}{2}\\right)^2 - \\frac{25}{4}\\right) + k$$\n\nDistributing the factor of $2$ produces:\n\n$$= 2\\left(x - \\frac{5}{2}\\right)^2 - \\frac{25}{2} + k$$\n\nThe constant term is $k - \\frac{25}{2}$ rather than $k - \\frac{25}{4}$, so the statement is False.",
+  "**C.** → True\n\nWe express the sum of squares $x_1^2 + x_2^2$ in terms of the elementary symmetric polynomials $x_1 + x_2$ and $x_1 x_2$:\n\n$$x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$$\n\nSubstituting $x_1 + x_2 = 5$ and $x_1 x_2 = \\frac{k}{2}$ gives:\n\n$$x_1^2 + x_2^2 = 5^2 - 2\\left(\\frac{k}{2}\\right)$$\n\n$$x_1^2 + x_2^2 = 25 - k$$\n\nThis confirms the stated expression, so the statement is True.",
+  "**D.** → True\n\nSetting $k = 7$ into the quadratic formula gives the larger root $x_+$:\n\n$$x_+ = \\frac{-(-10) + \\sqrt{(-10)^2 - 4(2)(7)}}{2(2)} = \\frac{10 + \\sqrt{44}}{4} = \\frac{5 + \\sqrt{11}}{2}$$\n\nWe test the lower bound $x_+ > 4.1$ without solving a quadratic inequality by isolating the radical:\n\n$$\\frac{5 + \\sqrt{11}}{2} > 4.1 \\iff \\sqrt{11} > 3.2 \\iff 11 > 10.24$$\n\nWe test the upper bound $x_+ < 4.2$ in the same manner:\n\n$$\\frac{5 + \\sqrt{11}}{2} < 4.2 \\iff \\sqrt{11} < 3.4 \\iff 11 < 11.56$$\n\nBoth arithmetic inequalities are valid, confirming that $4.1 < x_+ < 4.2$, so the statement is True.",
+  "**E.** → True\n\nApplying the substitution $x = z^2$ transforms the biquadratic equation $2z^4 - 10z^2 + k = 0$ into the quadratic equation $2x^2 - 10x + k = 0$.\n\nEach strictly positive real root $x > 0$ yields two distinct real solutions for $z$, namely $z = \\pm\\sqrt{x}$. A negative root $x < 0$ yields no real solutions for $z$, and $x = 0$ yields only one solution $z = 0$.\n\nThus, the biquadratic equation has four distinct real solutions if and only if the quadratic equation in $x$ has two distinct strictly positive real roots $x_1 > 0$ and $x_2 > 0$ with $x_1 \\neq x_2$. This requires $\\Delta > 0$, $x_1 + x_2 > 0$, and $x_1 x_2 > 0$:\n\n$$k < \\frac{25}{2} \\quad \\text{and} \\quad k > 0$$\n\nThis simplifies directly to $0 < k < \\frac{25}{2}$, so the statement is True."
+ ]
+}

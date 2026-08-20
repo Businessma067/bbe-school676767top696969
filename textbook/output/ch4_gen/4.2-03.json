@@ -1,0 +1,26 @@
+{
+ "title": "Parameter Conditions for Root Signs in a Break-Even Model",
+ "context": "A financial analyst models the break-even quantities $x$ (in thousands of units) of a project depending on a real market parameter $m$ via the quadratic equation $$x^2 - 2(m-1)x + (m+5) = 0.$$",
+ "statements": [
+  "The equation has two real roots (which may coincide) that are both strictly positive if and only if $m \\ge 4$.",
+  "For any parameter value $m > 4$, the sum of the squares of the two roots, $x_1^2 + x_2^2$, is strictly greater than $18$.",
+  "The equation possesses two real roots with opposite signs if and only if $-5 < m < -1$.",
+  "By completing the square, the equation is rewritten as $(x - (m-1))^2 = m^2 - 3m - 4$, which implies that a unique real double root occurs exclusively at $m = 4$.",
+  "Both real roots are strictly negative if and only if $-5 < m \\le -1$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the quadratic equation in standard form $a x^2 + b x + c = 0$ where $a = 1$, $b = -2(m-1)$, and $c = m+5$.\n\nThe discriminant of the quadratic equation is given by:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = [-2(m-1)]^2 - 4(1)(m+5)$$\n\n$$\\Delta = 4(m^2 - 2m + 1) - 4(m+5)$$\n\n$$\\Delta = 4(m^2 - 3m - 4)$$\n\n$$\\Delta = 4(m-4)(m+1)$$\n\nReal roots exist if and only if $\\Delta \\ge 0$, which requires:\n\n$$m \\in (-\\infty, -1] \\cup [4, \\infty)$$\n\nAccording to Vieta's formulas, the sum and product of the roots $x_1$ and $x_2$ are:\n\n$$S = x_1 + x_2 = -\\frac{b}{a} = 2(m-1)$$\n\n$$P = x_1 x_2 = \\frac{c}{a} = m+5$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nFor a quadratic equation with real coefficients to have two strictly positive roots, three conditions must hold simultaneously: real roots must exist ($\\Delta \\ge 0$), their sum must be positive ($S > 0$), and their product must be positive ($P > 0$).\n\nFrom the overview, the three individual requirements are:\n\n$$\\Delta \\ge 0 \\iff m \\le -1 \\quad \\text{or} \\quad m \\ge 4$$\n\n$$S = 2(m-1) > 0 \\iff m > 1$$\n\n$$P = m+5 > 0 \\iff m > -5$$\n\nTaking the intersection of all three conditions yields:\n\n$$m \\in \\big((-\\infty, -1] \\cup [4, \\infty)\\big) \\cap (1, \\infty) \\cap (-5, \\infty) = [4, \\infty)$$\n\nThus, both roots are positive if and only if $m \\ge 4$, so the statement is True.",
+  "**B.** → True\n\nThe sum of the squares of the roots is expressed in terms of the elementary symmetric polynomials using the algebraic identity:\n\n$$x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2$$\n\nSubstituting $S = 2(m-1)$ and $P = m+5$ gives:\n\n$$x_1^2 + x_2^2 = [2(m-1)]^2 - 2(m+5)$$\n\n$$x_1^2 + x_2^2 = 4(m^2 - 2m + 1) - 2m - 10$$\n\n$$x_1^2 + x_2^2 = 4m^2 - 10m - 6$$\n\nEvaluating this expression at the boundary $m = 4$:\n\n$$4(4)^2 - 10(4) - 6 = 64 - 40 - 6 = 18$$\n\nFor $m \\ge 4$, the function $g(m) = 4m^2 - 10m - 6$ is strictly increasing because its vertex is located at $m = \\frac{10}{8} = 1.25$. Consequently, for any $m > 4$, the value is strictly greater than $18$, so the statement is True.",
+  "**C.** → False\n\nTwo real roots have strictly opposite signs if and only if their product is strictly negative ($P < 0$).\n\nSetting the product to be negative gives:\n\n$$P = m+5 < 0 \\iff m < -5$$\n\nWhenever $m < -5$, the discriminant satisfies:\n\n$$\\Delta = 4(m-4)(m+1) > 0$$\n\nbecause both factors $(m-4)$ and $(m+1)$ are strictly negative, making their product strictly positive. Thus, opposite signs occur if and only if $m < -5$, whereas the interval $(-5, -1)$ yields positive products, so the statement is False.",
+  "**D.** → False\n\nCompleting the square for the quadratic expression in $x$ proceeds as follows:\n\n$$x^2 - 2(m-1)x + (m-1)^2 - (m-1)^2 + (m+5) = 0$$\n\n$$(x - (m-1))^2 = (m-1)^2 - (m+5)$$\n\n$$(x - (m-1))^2 = m^2 - 3m - 4$$\n\nA double real root occurs when the right-hand side equals zero:\n\n$$m^2 - 3m - 4 = 0$$\n\n$$(m-4)(m+1) = 0$$\n\nThis yields two distinct parameter values: $m = 4$ and $m = -1$. Because $m = -1$ also produces a double real root, the phenomenon does not occur exclusively at $m = 4$, so the statement is False.",
+  "**E.** → True\n\nFor both roots to be strictly negative, three conditions must hold simultaneously: real roots must exist ($\\Delta \\ge 0$), their sum must be strictly negative ($S < 0$), and their product must be strictly positive ($P > 0$).\n\nEvaluating each condition:\n\n$$\\Delta \\ge 0 \\iff m \\le -1 \\quad \\text{or} \\quad m \\ge 4$$\n\n$$S = 2(m-1) < 0 \\iff m < 1$$\n\n$$P = m+5 > 0 \\iff m > -5$$\n\nTaking the intersection of these parameter ranges:\n\n$$m \\in \\big((-\\infty, -1] \\cup [4, \\infty)\\big) \\cap (-\\infty, 1) \\cap (-5, \\infty) = (-5, -1]$$\n\nThus, both roots are strictly negative if and only if $-5 < m \\le -1$, so the statement is True."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Doubling a capital at a fixed rate",
+ "context": "A capital grows by $4\\%$ per year with annual compounding, so it is multiplied by $1.04$ each year. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The time needed to double the capital does not depend on how much money was invested at the start.",
+  "The capital doubles in fewer than $18$ years.",
+  "Tripling the capital takes more than twice as long as doubling it.",
+  "Doubling the interest rate to $8\\%$ exactly halves the doubling time.",
+  "The doubling time is the same no matter which currency the capital is measured in."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "Let $K_0$ denote the initial capital invested at time $t = 0$. With annual compounding at an interest rate of $r = 0.04$, the capital at year $t$ is given by the exponential growth model:\n\n$$K(t) = K_0 (1 + r)^t$$\n\n$$K(t) = K_0 (1.04)^t$$\n\nTo find the time $t$ required for the capital to reach a multiple $m > 0$ of its initial value, we set $K(t) = m K_0$:\n\n$$K_0 (1.04)^t = m K_0$$\n\n$$1.04^t = m$$\n\nTaking the natural logarithm on both sides yields:\n\n$$t \\ln(1.04) = \\ln(m)$$\n\n$$t = \\frac{\\ln(m)}{\\ln(1.04)}$$\n\nFor doubling ($m = 2$), the doubling time is $t = \\frac{\\ln(2)}{\\ln(1.04)} \\approx \\frac{0.69315}{0.03922} \\approx 17.67$ years.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe doubling condition sets the accumulated capital equal to twice the initial investment $K_0$.\n\n$$K_0 (1.04)^t = 2 K_0$$\n\nDividing both sides by $K_0$ eliminates the initial capital entirely:\n\n$$1.04^t = 2$$\n\n$$t = \\frac{\\ln(2)}{\\ln(1.04)}$$\n\nBecause $K_0$ does not appear in the resulting equation for $t$, the time required to double the capital is independent of the initial amount invested, so the statement is True.",
+  "**B.** → True\n\nThe doubling time $t$ satisfies the equation $(1.04)^t = 2$.\n\nSolving for $t$ gives:\n\n$$t = \\frac{\\ln(2)}{\\ln(1.04)}$$\n\n$$t \\approx \\frac{0.69315}{0.03922} \\approx 17.67$$\n\nAlternatively, evaluating the compounding factor after $18$ years gives:\n\n$$1.04^{18} \\approx 2.0258 > 2$$\n\nSince $17.67 < 18$, the capital doubles in strictly fewer than $18$ years, so the statement is True.",
+  "**C.** → False\n\nThe time required to multiply the capital by a factor $m$ is given by $t_m = \\frac{\\ln(m)}{\\ln(1.04)}$.\n\nThe time required to triple the capital is:\n\n$$t_3 = \\frac{\\ln(3)}{\\ln(1.04)}$$\n\nTwice the time required to double the capital is:\n\n$$2 t_2 = 2 \\cdot \\frac{\\ln(2)}{\\ln(1.04)} = \\frac{\\ln(2^2)}{\\ln(1.04)} = \\frac{\\ln(4)}{\\ln(1.04)}$$\n\nBecause $3 < 4$, the logarithm function gives $\\ln(3) < \\ln(4)$, which implies $t_3 < 2 t_2$. Therefore, tripling takes less than twice as long as doubling, so the statement is False.",
+  "**D.** → False\n\nThe doubling time at an interest rate $r$ is given by $t(r) = \\frac{\\ln(2)}{\\ln(1 + r)}$.\n\nAt an interest rate of $8\\%$, the doubling time is:\n\n$$t(0.08) = \\frac{\\ln(2)}{\\ln(1.08)}$$\n\nExactly half of the doubling time at $4\\%$ is:\n\n$$\\frac{t(0.04)}{2} = \\frac{\\ln(2)}{2 \\ln(1.04)} = \\frac{\\ln(2)}{\\ln(1.04^2)} = \\frac{\\ln(2)}{\\ln(1.0816)}$$\n\nSince $1.08 < 1.0816$, we have $\\ln(1.08) < \\ln(1.0816)$, which means $t(0.08) > \\frac{t(0.04)}{2}$ (specifically, approximately $9.01$ years compared to $8.84$ years). Thus, doubling the rate does not exactly halve the doubling time, so the statement is False.",
+  "**E.** → True\n\nConverting the initial capital $K_0$ into another currency with a constant conversion rate $c > 0$ gives an initial amount of $c K_0$.\n\nThe condition for this amount to double under the annual rate of $4\\%$ is:\n\n$$(c K_0)(1.04)^t = 2 (c K_0)$$\n\nDividing both sides by the non-zero quantity $c K_0$ gives:\n\n$$1.04^t = 2$$\n\n$$t = \\frac{\\ln(2)}{\\ln(1.04)}$$\n\nThe conversion factor $c$ cancels completely, leaving the exact same doubling equation regardless of the currency chosen, so the statement is True."
+ ]
+}

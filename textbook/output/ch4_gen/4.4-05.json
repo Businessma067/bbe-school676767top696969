@@ -1,0 +1,26 @@
+{
+ "title": "Domain decides the answer",
+ "context": "The equation $\\log_{3}(x-1) + \\log_{3}(x-3) = 1$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The equation has exactly one admissible solution.",
+  "Both roots of the quadratic obtained after combining the logarithms are admissible.",
+  "The admissible solution is an even integer.",
+  "The rejected candidate fails because it makes an argument of a logarithm negative.",
+  "Combining the logarithms turns the problem into a linear equation."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  true,
+  false
+ ],
+ "solution_overview": "The logarithmic equation is given by:\n\n$$\\log_{3}(x-1) + \\log_{3}(x-3) = 1$$\n\nFor the logarithmic terms to be defined on the real numbers, both arguments must be strictly positive:\n\n$$x - 1 > 0 \\implies x > 1$$\n\n$$x - 3 > 0 \\implies x > 3$$\n\nThe domain of admissible values is therefore the intersection $(3, \\infty)$. Applying the product rule for logarithms on the left-hand side yields:\n\n$$\\log_{3}((x - 1)(x - 3)) = 1$$\n\nExponentiating both sides with base $3$ removes the logarithm:\n\n$$(x - 1)(x - 3) = 3^1$$\n\nExpanding the product gives:\n\n$$x^2 - 4x + 3 = 3$$\n\nSubtracting $3$ from both sides results in:\n\n$$x^2 - 4x = 0$$\n\nFactoring the quadratic equation gives:\n\n$$x(x - 4) = 0$$\n\nThe algebraic solutions to this quadratic equation are $x = 0$ and $x = 4$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo determine the number of admissible solutions, each algebraic root of the derived equation must be tested against the original domain of the logarithmic expressions.\n\nThe algebraic roots are $x = 0$ and $x = 4$, while the domain requires:\n\n$$x > 3$$\n\nTesting $x = 0$ reveals $0 \\le 3$, which falls outside the domain. Testing $x = 4$ shows:\n\n$$4 > 3$$\n\nThus, only $x = 4$ is a valid solution to the original equation, meaning there is exactly one admissible solution, so the statement is True.",
+  "**B.** → False\n\nAn algebraic root of the transformed equation is admissible only if it satisfies the strict positivity conditions for all logarithmic arguments in the original equation.\n\nThe quadratic equation obtained by combining the logarithmic terms is:\n\n$$x^2 - 4x = 0$$\n\nThis yields two roots, $x = 0$ and $x = 4$. Checking the domain condition $x > 3$ for both candidates gives:\n\n$$0 < 3$$\n\n$$4 > 3$$\n\nSince $x = 0$ violates the domain requirement, only one of the two roots is admissible, so the statement is False.",
+  "**C.** → True\n\nThe unique admissible solution to the logarithmic equation is obtained by selecting the algebraic root that satisfies the domain condition $x > 3$.\n\nSolving the equation yields candidate roots $x = 0$ and $x = 4$. Among these, only $x = 4$ satisfies:\n\n$$x > 3$$\n\nThe integer $4$ is divisible by $2$ with remainder $0$:\n\n$$4 = 2 \\cdot 2$$\n\nTherefore, the unique admissible solution is an even integer, so the statement is True.",
+  "**D.** → True\n\nA candidate solution is rejected as extraneous if it causes at least one argument of the original logarithmic functions to be non-positive.\n\nThe candidate root rejected from the quadratic equation is $x = 0$. Substituting $x = 0$ into the original logarithmic arguments yields:\n\n$$x - 1 = 0 - 1 = -1$$\n\n$$x - 3 = 0 - 3 = -3$$\n\nBecause both $-1 < 0$ and $-3 < 0$, the logarithms $\\log_{3}(-1)$ and $\\log_{3}(-3)$ are undefined in the real numbers, so the statement is True.",
+  "**E.** → False\n\nThe type of equation resulting from combining logarithmic terms depends on the degree of the polynomial obtained after exponentiation.\n\nCombining the logarithms using the product rule produces:\n\n$$\\log_{3}((x - 1)(x - 3)) = 1$$\n\nRewriting in exponential form gives:\n\n$$(x - 1)(x - 3) = 3$$\n\nExpanding this product produces a polynomial of degree $2$:\n\n$$x^2 - 4x = 0$$\n\nBecause the highest power of the variable is $2$, this is a quadratic equation rather than a linear equation, so the statement is False."
+ ]
+}

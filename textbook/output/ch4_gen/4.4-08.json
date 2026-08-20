@@ -1,0 +1,26 @@
+{
+ "title": "A substance losing five percent a year",
+ "context": "A radioactive sample loses $5\\%$ of its mass every year, so the remaining mass is multiplied by $0.95$ annually. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The half-life of the sample is longer than $13$ years.",
+  "After two half-lives exactly a quarter of the original mass is left.",
+  "The time until only a tenth of the mass remains is more than three half-lives.",
+  "Doubling the annual loss to $10\\%$ halves the half-life.",
+  "Under this model the mass reaches zero after a finite number of years."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "Let $M_0 > 0$ denote the initial mass of the radioactive sample. Because the mass decreases by $5\\%$ each year, the remaining mass after $t$ years is modeled by the exponential decay function:\n\n$$M(t) = M_0 \\cdot (0.95)^t$$\n\nThe half-life $T_{1/2}$ is defined as the time required for the mass to reduce to half of its initial value, satisfying the equation:\n\n$$M(T_{1/2}) = \\frac{1}{2} M_0$$\n\n$$(0.95)^{T_{1/2}} = \\frac{1}{2}$$\n\nTaking the natural logarithm of both sides yields:\n\n$$T_{1/2} = \\frac{\\ln(0.5)}{\\ln(0.95)} = -\\frac{\\ln(2)}{\\ln(0.95)}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo determine whether the half-life exceeds $13$ years, we evaluate the remaining fraction of mass after $13$ years.\n\n$$(0.95)^{13} \\approx 0.5133$$\n\nBecause $0.5133 > 0.5$, more than half of the initial mass remains after $13$ years, meaning the half-life $T_{1/2} \\approx 13.51$ years is strictly greater than $13$ years, so the statement is True.",
+  "**B.** → True\n\nBy definition, the remaining mass is multiplied by $\\frac{1}{2}$ over every duration of one half-life $T_{1/2}$.\n\nAfter two half-lives, the remaining mass is given by:\n\n$$M(2 T_{1/2}) = M_0 \\cdot \\left((0.95)^{T_{1/2}}\\right)^2$$\n\n$$M(2 T_{1/2}) = M_0 \\cdot \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4} M_0$$\n\nThus, exactly one quarter of the initial mass remains after two half-lives, so the statement is True.",
+  "**C.** → True\n\nAfter three half-lives, the fraction of initial mass remaining is:\n\n$$\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8} = 0.125$$\n\nBecause the decay function is strictly decreasing and one tenth represents a smaller fraction than one eighth:\n\n$$0.10 < 0.125$$\n\nThe mass must continue to decay beyond three half-lives to reach $10\\%$ of its original value, so the statement is True.",
+  "**D.** → False\n\nIf the annual loss rate doubles from $5\\%$ to $10\\%$, the annual decay factor becomes $0.90$ instead of $0.95$.\n\nThe new half-life $T'_{1/2}$ satisfies:\n\n$$T'_{1/2} = \\frac{\\ln(0.5)}{\\ln(0.90)} \\approx 6.58$$\n\nHalving the original half-life gives:\n\n$$\\frac{T_{1/2}}{2} = \\frac{\\ln(0.5)}{2\\ln(0.95)} = \\frac{\\ln(0.5)}{\\ln(0.95^2)} = \\frac{\\ln(0.5)}{\\ln(0.9025)} \\approx 6.76$$\n\nBecause $(0.95)^2 = 0.9025 \\neq 0.90$, doubling the percentage loss does not exactly halve the half-life, so the statement is False.",
+  "**E.** → False\n\nThe mass at any year $t$ is modeled by $M(t) = M_0 \\cdot (0.95)^t$.\n\nBecause the base $0.95$ is strictly positive, the exponential term $(0.95)^t > 0$ for every finite real number $t$:\n\n$$M(t) > 0 \\quad \\text{for all } t \\in [0, \\infty)$$\n\nThe mass approaches zero asymptotically as $t \\to \\infty$ but never reaches zero at any finite time, so the statement is False."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "title": "Vertical Flight Model of a Test Drone",
+ "context": "An aerospace engineering team analyzes the vertical trajectory of an experimental survey drone launched from an elevated platform. The drone's altitude $h(t)$ in meters above the ground after $t \\ge 0$ seconds is modeled by the quadratic function $h(t) = -5t^2 + 40t + 45$. Engineers evaluate the drone's flight duration, maximum altitude, trajectory symmetry, parametric thruster modifications, and related higher-degree sensor calibration equations.",
+ "statements": [
+  "Solving the equation $h(t) = 0$ yields two real roots of opposite sign, confirming that the drone remains airborne for exactly $9$ seconds after launch.",
+  "Completing the square on $h(t)$ shows that the maximum altitude achieved by the drone during its flight is strictly less than $120$ meters.",
+  "For any target altitude $H$ between $45$ and $125$ meters reached during both ascent and descent, the sum of the two transit times $t_1 + t_2$ strictly increases as $H$ increases.",
+  "If a thruster modification changes the altitude function to $h_k(t) = -5t^2 + 20kt - 20$ for a real parameter $k$, the drone attains an altitude of at least $60$ meters at some time $t \\ge 0$ if and only if $k \\ge 2$.",
+  "The sensor calibration equation $(t^2 - 8t)^2 + 5(t^2 - 8t) - 36 = 0$ has exactly two distinct real solutions."
+ ],
+ "answer_key": [
+  true,
+  false,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "The drone's altitude is described by the quadratic function $h(t) = -5t^2 + 40t + 45$ for $t \\ge 0$. Factoring the leading coefficient gives:\n\n$$h(t) = -5(t^2 - 8t - 9)$$\n\n$$h(t) = -5(t - 9)(t + 1)$$\n\nCompleting the square provides the vertex form of the quadratic trajectory:\n\n$$h(t) = -5\\left((t - 4)^2 - 16\\right) + 45$$\n\n$$h(t) = -5(t - 4)^2 + 80 + 45$$\n\n$$h(t) = -5(t - 4)^2 + 125$$\n\nThis confirms that the parabola opens downward with its vertex at $(4, 125)$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo find when the drone hits the ground, we set the altitude function equal to zero:\n\n$$-5t^2 + 40t + 45 = 0$$\n\nDividing both sides by $-5$ produces the monic quadratic equation:\n\n$$t^2 - 8t - 9 = 0$$\n\n$$(t - 9)(t + 1) = 0$$\n\nThe algebraic roots are $t_1 = 9$ and $t_2 = -1$, which are of opposite sign. Because time is physically restricted to $t \\ge 0$, the negative root is inadmissible, and the drone stays airborne from launch at $t = 0$ until impact at $t = 9$ seconds, so the statement is True.",
+  "**B.** → False\n\nWe convert the altitude function into vertex form by completing the square:\n\n$$h(t) = -5(t - 4)^2 + 125$$\n\nBecause the squared term $(t - 4)^2$ is non-negative for all real $t$, the term $-5(t - 4)^2$ is at most zero, reaching its maximum when $t = 4$:\n\n$$h(4) = 125$$\n\nThe maximum altitude reached is $125$ meters, which is not strictly less than $120$ meters, so the statement is False.",
+  "**C.** → False\n\nThe timestamps at which the drone reaches a specified altitude $H$ satisfy the equation:\n\n$$-5t^2 + 40t + 45 = H$$\n\n$$-5t^2 + 40t + (45 - H) = 0$$\n\nDividing by $-5$ gives:\n\n$$t^2 - 8t + \\frac{H - 45}{5} = 0$$\n\nBy Vieta's formulas, the sum of the roots of any monic quadratic equation $t^2 + b_1 t + c_1 = 0$ equals $-b_1$:\n\n$$t_1 + t_2 = -(-8) = 8$$\n\nThe sum of the ascent and descent times equals $8$ seconds for every valid threshold $H$ and is entirely independent of $H$, so the statement is False.",
+  "**D.** → True\n\nThe drone reaches an altitude of at least $60$ meters if the inequality $h_k(t) \\ge 60$ has at least one solution with $t \\ge 0$:\n\n$$-5t^2 + 20kt - 20 \\ge 60$$\n\n$$-5t^2 + 20kt - 80 \\ge 0$$\n\n$$t^2 - 4kt + 16 \\le 0$$\n\nA upward-opening parabola takes values less than or equal to zero if and only if its discriminant is non-negative:\n\n$$\\Delta = (-4k)^2 - 4(1)(16) \\ge 0$$\n\n$$16k^2 - 64 \\ge 0$$\n\n$$k^2 \\ge 4$$\n\nThis requires $k \\ge 2$ or $k \\le -2$. Next, we evaluate the roots using the quadratic formula:\n\n$$t = \\frac{4k \\pm \\sqrt{16k^2 - 64}}{2} = 2k \\pm 2\\sqrt{k^2 - 4}$$\n\nIf $k \\le -2$, both roots are strictly negative because $2k \\le -4$ and the product of the roots is $16 > 0$, meaning no non-negative time satisfies the condition. If $k \\ge 2$, both roots are positive real numbers. Therefore, a valid flight time $t \\ge 0$ exists if and only if $k \\ge 2$, so the statement is True.",
+  "**E.** → False\n\nWe solve the higher-degree equation by substituting $u = t^2 - 8t$:\n\n$$u^2 + 5u - 36 = 0$$\n\n$$(u + 9)(u - 4) = 0$$\n\nThis produces two intermediate solutions: $u = -9$ and $u = 4$. We now solve for $t$ in each case.\n\nFor $u = -9$:\n\n$$t^2 - 8t + 9 = 0$$\n\n$$\\Delta_1 = (-8)^2 - 4(1)(9) = 64 - 36 = 28 > 0$$\n\nThis quadratic yields two distinct real solutions.\n\nFor $u = 4$:\n\n$$t^2 - 8t - 4 = 0$$\n\n$$\\Delta_2 = (-8)^2 - 4(1)(-4) = 64 + 16 = 80 > 0$$\n\nThis quadratic also yields two distinct real solutions. Since $-9 \\neq 4$, the two sets of roots are disjoint, giving a total of four distinct real solutions, so the statement is False."
+ ]
+}

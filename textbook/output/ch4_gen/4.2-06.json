@@ -1,0 +1,26 @@
+{
+ "title": "Roots of a Parametric Biquadratic Equation",
+ "context": "An analyst investigates the real solutions of the parametric biquadratic equation $x^4 - 2k x^2 + (k^2 - 2k - 3) = 0$, where $k \\in \\mathbb{R}$ is a real parameter. The equation is analyzed by applying the substitution $u = x^2$ with the domain restriction $u \\ge 0$.",
+ "statements": [
+  "The equation possesses four distinct real solutions if and only if the parameter satisfies $k > 3$.",
+  "For every parameter value in the open interval $(-1, 3)$, the equation has exactly two distinct real solutions.",
+  "When $k = 5$, the sum of the fourth powers of all real solutions equals $76$.",
+  "There exists exactly one value of the parameter $k$ for which the equation admits exactly three distinct real solutions.",
+  "If $k = -2$, completing the square in the auxiliary variable $u$ yields at least one real solution for $x$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We substitute $u = x^2 \\ge 0$ into the given biquadratic equation to obtain the auxiliary quadratic equation:\n\n$$u^2 - 2k u + (k^2 - 2k - 3) = 0$$\n\nThe discriminant of this quadratic in $u$ is given by:\n\n$$\\Delta_u = (-2k)^2 - 4(1)(k^2 - 2k - 3)$$\n\n$$\\Delta_u = 4k^2 - 4k^2 + 8k + 12 = 4(2k + 3)$$\n\nBy Vieta's formulas, the sum and product of the roots $u_1$ and $u_2$ are:\n\n$$S = u_1 + u_2 = 2k$$\n\n$$P = u_1 u_2 = k^2 - 2k - 3 = (k - 3)(k + 1)$$\n\nEach strictly positive root $u > 0$ generates two distinct real solutions $x = \\pm\\sqrt{u}$, a root $u = 0$ generates one real solution $x = 0$, and any negative root $u < 0$ produces no real solutions for $x$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nFour distinct real solutions in $x$ require the auxiliary equation in $u$ to have two distinct, strictly positive real roots $u_1 > 0$ and $u_2 > 0$.\n\nFor two distinct positive roots, three conditions must hold simultaneously: $\\Delta_u > 0$, $S > 0$, and $P > 0$.\n\n$$\\Delta_u = 4(2k + 3) > 0 \\implies k > -\\frac{3}{2}$$\n\n$$S = 2k > 0 \\implies k > 0$$\n\n$$P = (k - 3)(k + 1) > 0 \\implies k < -1 \\quad \\text{or} \\quad k > 3$$\n\nIntersecting these three inequalities gives $k > 3$, so the statement is True.",
+  "**B.** → True\n\nThe equation has exactly two distinct real solutions if and only if the auxiliary quadratic in $u$ has exactly one strictly positive real root and one strictly negative real root.\n\nTwo roots of opposite signs occur when the product of the roots is strictly negative:\n\n$$P = (k - 3)(k + 1) < 0$$\n\nSolving this inequality yields the open interval:\n\n$$-1 < k < 3$$\n\nWhen $-1 < k < 3$, the discriminant $\\Delta_u = 4(2k + 3) > 4(1) > 0$ is guaranteed to be positive, ensuring $u_1 < 0 < u_2$. Then $x^2 = u_1$ yields no real roots and $x^2 = u_2$ yields $x = \\pm\\sqrt{u_2}$, so the statement is True.",
+  "**C.** → False\n\nFor $k = 5$, the auxiliary quadratic equation becomes:\n\n$$u^2 - 10u + 12 = 0$$\n\nBoth roots $u_1$ and $u_2$ are strictly positive because $\\Delta_u = 52 > 0$, $S = 10 > 0$, and $P = 12 > 0$. The four real solutions for $x$ are $\\pm\\sqrt{u_1}$ and $\\pm\\sqrt{u_2}$.\n\nThe sum of their fourth powers is:\n\n$$(\\sqrt{u_1})^4 + (-\\sqrt{u_1})^4 + (\\sqrt{u_2})^4 + (-\\sqrt{u_2})^4 = 2u_1^2 + 2u_2^2 = 2(u_1^2 + u_2^2)$$\n\nUsing algebraic identities with Vieta's formulas:\n\n$$u_1^2 + u_2^2 = (u_1 + u_2)^2 - 2u_1 u_2 = 10^2 - 2(12) = 100 - 24 = 76$$\n\nMultiplying by $2$ gives the total sum of fourth powers:\n\n$$2(76) = 152$$\n\nThe claim states that the sum is $76$, which omits the multiplicity of the positive and negative roots, so the statement is False.",
+  "**D.** → True\n\nExactly three distinct real solutions occur when one root in $u$ is strictly positive and the other root is zero, since $u = 0$ yields one solution ($x = 0$) and $u > 0$ yields two solutions ($x = \\pm\\sqrt{u}$).\n\nA root at $u = 0$ requires the constant term $P$ to vanish:\n\n$$P = (k - 3)(k + 1) = 0 \\implies k = 3 \\quad \\text{or} \\quad k = -1$$\n\nTesting $k = 3$ gives $u^2 - 6u = 0$, so $u = 0$ or $u = 6 > 0$, yielding the three solutions $x \\in \\{-\\sqrt{6}, 0, \\sqrt{6}\\}$.\n\nTesting $k = -1$ gives $u^2 + 2u = 0$, so $u = 0$ or $u = -2 < 0$, yielding only the single real solution $x = 0$.\n\nThus, $k = 3$ is the unique value providing exactly three distinct real solutions, so the statement is True.",
+  "**E.** → False\n\nSubstituting $k = -2$ into the auxiliary equation in $u$ gives:\n\n$$u^2 + 4u + 5 = 0$$\n\nCompleting the square in $u$ yields:\n\n$$(u + 2)^2 - 4 + 5 = 0$$\n\n$$(u + 2)^2 = -1$$\n\nBecause the square of any real number cannot be negative, there are no real values of $u$, which implies that there are no real solutions for $x$, so the statement is False."
+ ]
+}

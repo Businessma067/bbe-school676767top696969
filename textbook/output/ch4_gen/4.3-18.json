@@ -1,0 +1,26 @@
+{
+ "title": "Rational Equation with Absolute Value",
+ "context": "Consider the real equation $\\frac{|2x - 1| + 3}{x + 1} = x - 1$, defined for all real numbers $x$ where the denominator is non-zero.",
+ "statements": [
+  "The equation possesses exactly two distinct real solutions.",
+  "The candidate value $x = -1 + \\sqrt{6}$ obtained from the branch $x < \\frac{1}{2}$ is an extraneous root because it violates the condition $x < \\frac{1}{2}$ under which that branch is defined.",
+  "All valid real solutions to the equation are strictly positive.",
+  "The product of all valid real solutions to the equation is strictly less than $-10$.",
+  "The sum of all valid real solutions to the equation is a rational number."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  true,
+  false
+ ],
+ "solution_overview": "We analyze the equation $\\frac{|2x - 1| + 3}{x + 1} = x - 1$. The expression is defined on the domain $D = \\mathbb{R} \\setminus \\{-1\\}$. Multiplying both sides by $x + 1$ yields\n\n$$|2x - 1| + 3 = (x - 1)(x + 1)$$\n\n$$|2x - 1| + 3 = x^2 - 1$$\n\n$$|2x - 1| = x^2 - 4$$\n\nWe solve this by case analysis on the sign of $2x - 1$.\n\nFor $x \\ge \\frac{1}{2}$, we have $|2x - 1| = 2x - 1$:\n\n$$2x - 1 = x^2 - 4$$\n\n$$x^2 - 2x - 3 = 0$$\n\n$$(x - 3)(x + 1) = 0$$\n\nThis produces candidate values $x = 3$ and $x = -1$. The value $x = 3$ satisfies $3 \\ge \\frac{1}{2}$ and $3 \\neq -1$, so it is a valid solution. The candidate $x = -1$ fails the branch requirement $x \\ge \\frac{1}{2}$ and is also excluded by the domain restriction $x \\neq -1$.\n\nFor $x < \\frac{1}{2}$, we have $|2x - 1| = -(2x - 1) = 1 - 2x$:\n\n$$1 - 2x = x^2 - 4$$\n\n$$x^2 + 2x - 5 = 0$$\n\nApplying the quadratic formula yields\n\n$$x = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(-5)}}{2} = \\frac{-2 \\pm \\sqrt{24}}{2} = -1 \\pm \\sqrt{6}$$\n\nSince $\\sqrt{6} > 2.44$, the candidate $x_1 = -1 + \\sqrt{6} > 1.44$ violates $x < \\frac{1}{2}$ and is extraneous. The candidate $x_2 = -1 - \\sqrt{6} < -3.44$ satisfies $-1 - \\sqrt{6} < \\frac{1}{2}$ and $-1 - \\sqrt{6} \\neq -1$, making it a valid solution.\n\nThe complete solution set is therefore $S = \\{3, -1 - \\sqrt{6}\\}$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe total number of solutions is determined by testing all candidates against the domain and branch conditions.\n\nThe case $x \\ge \\frac{1}{2}$ contributes exactly one admissible solution, $x = 3$, while $x = -1$ is disqualified.\n\nThe case $x < \\frac{1}{2}$ contributes exactly one admissible solution, $x = -1 - \\sqrt{6}$, while $x = -1 + \\sqrt{6}$ is disqualified.\n\nThus, there are exactly two distinct real solutions, so the statement is True.",
+  "**B.** → True\n\nAn algebraic candidate derived under a case assumption is valid only if it satisfies the defining inequality of that case.\n\nThe second branch assumes $x < \\frac{1}{2}$. The candidate produced is\n\n$$x = -1 + \\sqrt{6}$$\n\nBecause $\\sqrt{6} > 2.4$, we evaluate the candidate\n\n$$-1 + \\sqrt{6} > -1 + 2.4 = 1.4 > \\frac{1}{2}$$\n\nSince $1.4 > \\frac{1}{2}$, the candidate lies outside the branch domain $x < \\frac{1}{2}$ and is an extraneous root, so the statement is True.",
+  "**C.** → False\n\nWe determine the sign of each solution in the solution set $S = \\{3, -1 - \\sqrt{6}\\}$.\n\nWhile the first solution $x = 3$ is positive, the second solution satisfies\n\n$$x = -1 - \\sqrt{6} < -1 - 2.4 = -3.4 < 0$$\n\nBecause $-1 - \\sqrt{6}$ is strictly negative, not all solutions are positive, so the statement is False.",
+  "**D.** → True\n\nWe compute the product of the two valid solutions $x_1 = 3$ and $x_2 = -1 - \\sqrt{6}$:\n\n$$P = 3(-1 - \\sqrt{6}) = -3 - 3\\sqrt{6}$$\n\nTo check whether $-3 - 3\\sqrt{6} < -10$, we rearrange the inequality:\n\n$$-3\\sqrt{6} < -7$$\n\n$$3\\sqrt{6} > 7$$\n\nSquaring both positive sides gives\n\n$$(3\\sqrt{6})^2 = 9 \\cdot 6 = 54 > 49 = 7^2$$\n\nBecause $54 > 49$, the inequality holds and $P < -10$, so the statement is True.",
+  "**E.** → False\n\nWe calculate the sum of the two valid real solutions $x_1 = 3$ and $x_2 = -1 - \\sqrt{6}$:\n\n$$\\Sigma = 3 + (-1 - \\sqrt{6}) = 2 - \\sqrt{6}$$\n\nBecause $\\sqrt{6}$ is an irrational number, the difference $2 - \\sqrt{6}$ is also irrational, so the statement is False."
+ ]
+}

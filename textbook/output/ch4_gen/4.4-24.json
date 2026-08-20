@@ -1,0 +1,26 @@
+{
+ "title": "Existence questions for mixed equations",
+ "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The equation $2^{x} \\cdot 3^{x} = 6^{x+1}$ has no solution.",
+  "The equation $x^{\\log x} = 100$ has two solutions.",
+  "The equation $2^{2x} - 2^{x+1} + 1 = 0$ has exactly one solution.",
+  "The equation $3^{x} + 3^{-x} = 1$ has a real solution.",
+  "The equation $\\log_{2} x = x$ has a real solution."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "Each statement investigates the existence or count of real solutions for an exponential or logarithmic equation. To evaluate these claims, we apply basic rules of powers, logarithm definitions, substitutions into quadratic form, or range analysis.\n\nFor products of powers with identical exponents, the bases combine via:\n\n$$a^x \\cdot b^x = (a \\cdot b)^x$$\n\nFor power equations with variable bases and exponents, taking the logarithm of both sides brings the exponent down using:\n\n$$\\log(a^b) = b \\cdot \\log a$$\n\nFor exponential terms appearing with doubled exponents or reciprocal powers, substitution by $u = a^x$ (with $u > 0$) converts the expression into a standard polynomial equation.",
+ "tactical_explanations": [
+  "**A.** → True\n\nWe combine the powers on the left-hand side using the power rule for identical exponents:\n\n$$2^x \\cdot 3^x = (2 \\cdot 3)^x = 6^x$$\n\nSubstituting this into the equation gives:\n\n$$6^x = 6^{x+1}$$\n\n$$6^x = 6 \\cdot 6^x$$\n\nDividing both sides by the strictly positive term $6^x$ yields:\n\n$$1 = 6$$\n\nThis is a contradiction, meaning no real number $x$ satisfies the equation, so the statement is True.",
+  "**B.** → True\n\nThe equation is defined on the domain $x > 0$. Taking the decadic logarithm of both sides allows us to bring down the exponent:\n\n$$\\log\\left(x^{\\log x}\\right) = \\log(100)$$\n\n$$(\\log x) \\cdot (\\log x) = 2$$\n\n$$(\\log x)^2 = 2$$\n\nTaking the square root on both sides gives two possibilities for $\\log x$:\n\n$$\\log x = \\sqrt{2} \\quad \\text{or} \\quad \\log x = -\\sqrt{2}$$\n\nExponentiating with base $10$ yields:\n\n$$x_1 = 10^{\\sqrt{2}}, \\quad x_2 = 10^{-\\sqrt{2}}$$\n\nBoth values are strictly positive and distinct, so the equation has exactly two solutions, so the statement is True.",
+  "**C.** → True\n\nWe rewrite the exponential equation using power rules:\n\n$$(2^x)^2 - 2 \\cdot 2^x + 1 = 0$$\n\nSetting $u = 2^x$ gives a quadratic equation in $u$:\n\n$$u^2 - 2u + 1 = 0$$\n\n$$(u - 1)^2 = 0$$\n\nThis yields a unique root $u = 1$. Substituting back into the substitution gives:\n\n$$2^x = 1$$\n\n$$x = 0$$\n\nSince $x = 0$ is the only real solution, the equation has exactly one solution, so the statement is True.",
+  "**D.** → False\n\nWe substitute $u = 3^x$, which must be strictly positive for any real $x$. The equation becomes:\n\n$$u + \\frac{1}{u} = 1$$\n\nMultiplying both sides by $u$ and rearranging terms into standard quadratic form gives:\n\n$$u^2 - u + 1 = 0$$\n\nWe compute the discriminant of this quadratic equation:\n\n$$\\Delta = (-1)^2 - 4 \\cdot 1 \\cdot 1 = 1 - 4 = -3$$\n\nSince the discriminant is negative, there are no real solutions for $u$, which implies that no real number $x$ satisfies the original equation, so the statement is False.",
+  "**E.** → False\n\nThe equation is defined for $x > 0$. Rewriting the logarithmic equation in exponential form gives:\n\n$$x = 2^x$$\n\nConsider the function $f(x) = 2^x - x$ on the domain $x > 0$. Its derivative is:\n\n$$f'(x) = 2^x \\ln 2 - 1$$\n\nSetting $f'(x) = 0$ locates the unique critical point:\n\n$$x_0 = -\\frac{\\ln(\\ln 2)}{\\ln 2} \\approx 0.5287$$\n\nEvaluating the function at this minimum yields:\n\n$$f(x_0) = \\frac{1}{\\ln 2} + \\frac{\\ln(\\ln 2)}{\\ln 2} \\approx 1.4427 - 0.5287 = 0.914 > 0$$\n\nBecause the global minimum of $f(x)$ is strictly positive, $2^x > x$ for all real $x$, meaning $\\log_2 x = x$ has no real solution, so the statement is False."
+ ]
+}

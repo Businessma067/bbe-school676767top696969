@@ -1,0 +1,26 @@
+{
+ "title": "A culture that triples every four hours",
+ "context": "A bacterial culture triples its size every four hours. Evaluate each statement. Mark it TRUE or FALSE.",
+ "statements": [
+  "The growth factor for one single hour is an irrational number.",
+  "Over a full day the culture multiplies by more than $30$.",
+  "The doubling time of the culture is shorter than three hours.",
+  "In two hours the culture more than doubles.",
+  "The time needed to grow tenfold is less than twice the tripling time."
+ ],
+ "answer_key": [
+  true,
+  true,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "Let $N(t)$ denote the size of the bacterial culture at time $t$, measured in hours, with initial size $N_0 = N(0)$. Because the population triples every four hours, the growth follows an exponential model with base $3$:\n\n$$N(t) = N_0 \\cdot 3^{\\frac{t}{4}}$$\n\nThe hourly growth factor $a$ is the multiplicative factor per unit time of one hour, defined by $N(t+1) = a \\cdot N(t)$:\n\n$$a = 3^{\\frac{1}{4}} = \\sqrt[4]{3}$$\n\nFor any elapsed time $t$, the fold-increase of the population relative to its initial state is given by the ratio:\n\n$$\\frac{N(t)}{N_0} = 3^{\\frac{t}{4}}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nThe hourly growth factor is the base factor corresponding to an elapsed time of one hour.\n\n$$a = 3^{\\frac{1}{4}} = \\sqrt[4]{3}$$\n\nIf $a$ were a rational number $\\frac{p}{q}$ with coprime integers $p$ and $q$, then $\\frac{p^4}{q^4} = 3$, which simplifies to:\n\n$$p^4 = 3q^4$$\n\nBy the uniqueness of prime factorizations, the prime factor $3$ appears with an exponent that is a multiple of $4$ in $p^4$, but with an exponent of the form $4k + 1$ in $3q^4$. Since these exponents cannot be equal, no such rational representation exists, which means that $\\sqrt[4]{3}$ is an irrational number, so the statement is True.",
+  "**B.** → True\n\nA full day consists of $24$ hours. To find the multiplicative factor over one day, we evaluate the ratio $\\frac{N(24)}{N_0}$:\n\n$$\\frac{N(24)}{N_0} = 3^{\\frac{24}{4}}$$\n\n$$\\frac{N(24)}{N_0} = 3^6$$\n\n$$\\frac{N(24)}{N_0} = 729$$\n\nSince $729 > 30$, the culture multiplies by substantially more than $30$, so the statement is True.",
+  "**C.** → True\n\nThe doubling time $T_2$ is the duration required for the population to reach twice its initial size, satisfying the equation:\n\n$$3^{\\frac{T_2}{4}} = 2$$\n\nTaking base-$3$ logarithms of both sides yields:\n\n$$\\frac{T_2}{4} = \\log_3(2)$$\n\n$$T_2 = 4 \\log_3(2)$$\n\nTo compare $T_2$ with $3$ hours, we evaluate the growth factor at $t = 3$ hours:\n\n$$\\frac{N(3)}{N_0} = 3^{\\frac{3}{4}} = \\sqrt[4]{27}$$\n\nBecause $2^4 = 16 < 27$, it follows that $\\sqrt[4]{27} > 2$. Since the culture has already more than doubled after $3$ hours, the exact doubling time must be strictly less than $3$ hours, so the statement is True.",
+  "**D.** → False\n\nTo determine the factor by which the culture grows in two hours, we substitute $t = 2$ into the relative growth formula:\n\n$$\\frac{N(2)}{N_0} = 3^{\\frac{2}{4}}$$\n\n$$\\frac{N(2)}{N_0} = 3^{\\frac{1}{2}} = \\sqrt{3}$$\n\nComparing $\\sqrt{3}$ with $2$ by squaring both sides gives:\n\n$$(\\sqrt{3})^2 = 3 < 4 = 2^2$$\n\nThis shows that $\\sqrt{3} < 2$, meaning the culture increases by a factor of approximately $1.732$, which is less than double its original size, so the statement is False.",
+  "**E.** → False\n\nThe tripling time is given as $4$ hours, which means twice the tripling time corresponds to $t = 8$ hours. The fold-increase achieved after $8$ hours is:\n\n$$\\frac{N(8)}{N_0} = 3^{\\frac{8}{4}} = 3^2 = 9$$\n\nBecause $9 < 10$, the culture has only grown ninefold after $8$ hours. Therefore, reaching a tenfold increase requires strictly more than $8$ hours, so the statement is False."
+ ]
+}

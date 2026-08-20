@@ -1,0 +1,26 @@
+{
+ "title": "Parameterized Quadratic Equation and Root Properties",
+ "context": "Consider the parameterized quadratic equation in $x \\in \\mathbb{R}$ given by $x^2 - 2(m-1)x + (2m^2 - 6m + 5) = 0$, where $m$ is a real parameter.",
+ "statements": [
+  "There exists exactly one real value of the parameter $m$ for which the equation possesses at least one real solution.",
+  "When the parameter $m$ is chosen such that the equation has a repeated real root, completing the square on the left-hand side yields $(x - 1)^2 = 0$, so that unique solution is strictly positive.",
+  "For the parameter value that produces a repeated real root, the product of the roots given by Vieta's formulas is strictly greater than the sum of the roots.",
+  "If $x$ is replaced by $y^2$ to form the biquadratic equation $y^4 - 2(m-1)y^2 + (2m^2 - 6m + 5) = 0$, setting $m = 2$ yields an equation with exactly four distinct real solutions.",
+  "If the constant term $(2m^2 - 6m + 5)$ is replaced by $(2m^2 - 6m + 4)$, the resulting quadratic equation has two distinct real solutions for every real value of $m$ in the open interval $(1, 3)$."
+ ],
+ "answer_key": [
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "solution_overview": "A parameterized quadratic equation of the form $a x^2 + b x + c = 0$ has coefficients $a = 1$, $b = -2(m-1)$, and $c = 2m^2 - 6m + 5$. The nature and number of real roots are determined by the discriminant $\\Delta = b^2 - 4ac$, or equivalently the reduced discriminant $\\frac{\\Delta}{4} = \\left(\\frac{b}{2}\\right)^2 - ac$.\n\nWe compute the reduced discriminant in terms of $m$:\n\n$$\\frac{\\Delta}{4} = (m-1)^2 - 1 \\cdot (2m^2 - 6m + 5)$$\n\n$$\\frac{\\Delta}{4} = (m^2 - 2m + 1) - (2m^2 - 6m + 5)$$\n\n$$\\frac{\\Delta}{4} = -m^2 + 4m - 4$$\n\n$$\\frac{\\Delta}{4} = -(m-2)^2$$\n\nBecause $(m-2)^2 \\ge 0$ for all $m \\in \\mathbb{R}$, we have $\\frac{\\Delta}{4} \\le 0$ everywhere on the real line, with $\\Delta = 0$ holding if and only if $m = 2$.",
+ "tactical_explanations": [
+  "**A.** → True\n\nA quadratic equation with real coefficients has at least one real solution if and only if its discriminant satisfies $\\Delta \\ge 0$.\n\nFrom the discriminant expression derived for this equation, we have:\n\n$$\\frac{\\Delta}{4} = -(m-2)^2$$\n\nBecause the square of any real number is non-negative, $-(m-2)^2 \\le 0$ for all $m \\in \\mathbb{R}$. Thus, $\\Delta \\ge 0$ is satisfied only when:\n\n$$-(m-2)^2 = 0$$\n\n$$m = 2$$\n\nFor every other real value of $m$, the discriminant is strictly negative, which yields no real solutions. Therefore, $m = 2$ is the unique real value for which the equation has real solutions, so the statement is True.",
+  "**B.** → True\n\nA repeated real root occurs when the discriminant vanishes, which requires $m = 2$.\n\nSubstituting $m = 2$ into the quadratic equation gives:\n\n$$x^2 - 2(2-1)x + (2(2)^2 - 6(2) + 5) = 0$$\n\n$$x^2 - 2x + 1 = 0$$\n\nCompleting the square on the left-hand side yields:\n\n$$(x - 1)^2 = 0$$\n\nSolving this gives the unique repeated root $x = 1$. Since $1 > 0$, the root is strictly positive, so the statement is True.",
+  "**C.** → False\n\nFor a monic quadratic equation $x^2 + px + q = 0$, Vieta's formulas state that the sum of the roots is $-p$ and the product of the roots is $q$.\n\nFor $m = 2$, the equation is $x^2 - 2x + 1 = 0$, which has the repeated root $x_1 = x_2 = 1$.\n\nThe sum of the roots is:\n\n$$x_1 + x_2 = 1 + 1 = 2$$\n\nThe product of the roots is:\n\n$$x_1 \\cdot x_2 = 1 \\cdot 1 = 1$$\n\nComparing the two quantities gives $1 < 2$, meaning the product is strictly less than the sum, so the statement is False.",
+  "**D.** → False\n\nSetting $m = 2$ in the biquadratic equation $y^4 - 2(m-1)y^2 + (2m^2 - 6m + 5) = 0$ produces:\n\n$$y^4 - 2y^2 + 1 = 0$$\n\nFactoring the left-hand side as a perfect square gives:\n\n$$(y^2 - 1)^2 = 0$$\n\nThis implies that $y^2 = 1$, which factors further into:\n\n$$(y - 1)(y + 1) = 0$$\n\nTaking square roots yields the real solutions $y = 1$ and $y = -1$, each with multiplicity two. Consequently, there are only two distinct real solutions rather than four, so the statement is False.",
+  "**E.** → True\n\nA quadratic equation has two distinct real solutions if and only if its discriminant is strictly positive.\n\nFor the modified equation $x^2 - 2(m-1)x + (2m^2 - 6m + 4) = 0$, we calculate the reduced discriminant:\n\n$$\\frac{\\Delta_{\\text{new}}}{4} = (m-1)^2 - 1 \\cdot (2m^2 - 6m + 4)$$\n\n$$\\frac{\\Delta_{\\text{new}}}{4} = (m^2 - 2m + 1) - (2m^2 - 6m + 4)$$\n\n$$\\frac{\\Delta_{\\text{new}}}{4} = -m^2 + 4m - 3$$\n\n$$\\frac{\\Delta_{\\text{new}}}{4} = -(m-1)(m-3)$$\n\nFor any $m$ in the open interval $(1, 3)$, the factor $(m-1)$ is strictly positive and the factor $(m-3)$ is strictly negative, which makes their product negative and therefore $-(m-1)(m-3) > 0$. Since the discriminant is strictly positive across the entire interval, the equation has two distinct real solutions for all $m \\in (1, 3)$, so the statement is True."
+ ]
+}

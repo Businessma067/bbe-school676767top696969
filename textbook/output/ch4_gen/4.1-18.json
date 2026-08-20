@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Linear Capacity Model",
+ "context": "In an operations planning model, the equilibrium production volume $x$ (in thousands of units) satisfies the parametric linear equation $k^2 x - 2k = 4x + k + 6$, where $k \\in \\mathbb{R}$ is an economic adjustment parameter. A production level is viable only if the equation yields a well-defined unique solution $x$ that satisfies the minimum threshold $x > 1$.",
+ "statements": [
+  "When the parameter is $k = -2$, the equation reduces to an identity that is satisfied by every real number $x$.",
+  "When the parameter is $k = 2$, the equation admits $x = 3$ as its unique solution.",
+  "For every parameter value in the open interval $(2, 5)$, the equation has a unique solution that strictly exceeds the capacity bound $x = 1$.",
+  "If the parameter satisfies $k < -2$, the unique solution $x$ is strictly positive.",
+  "There are exactly two integer values of $k$ for which the unique solution $x$ is an integer."
+ ],
+ "answer_key": [
+  true,
+  false,
+  true,
+  false,
+  false
+ ],
+ "solution_overview": "We analyze the parametric linear equation in the unknown $x$ by grouping all terms containing $x$ on the left-hand side and all constant terms on the right-hand side:\n\n$$k^2 x - 2k = 4x + k + 6$$\n\n$$k^2 x - 4x = 3k + 6$$\n\n$$(k^2 - 4)x = 3(k + 2)$$\n\n$$(k - 2)(k + 2)x = 3(k + 2)$$\n\nThe structure and number of solutions depend entirely on the coefficient of $x$, namely $(k - 2)(k + 2)$:\n\nIf $k = -2$, the equation becomes $0 \\cdot x = 0$, which is an identity true for all $x \\in \\mathbb{R}$.\n\nIf $k = 2$, the equation becomes $0 \\cdot x = 12$, which has no solution.\n\nIf $k \\notin \\{-2, 2\\}$, we divide by $(k - 2)(k + 2)$ to obtain the unique solution:\n\n$$x = \\frac{3(k + 2)}{(k - 2)(k + 2)} = \\frac{3}{k - 2}$$",
+ "tactical_explanations": [
+  "**A.** → True\n\nTo test for an identity, we substitute $k = -2$ directly into the factored linear equation $(k - 2)(k + 2)x = 3(k + 2)$.\n\n$$(-2 - 2)(-2 + 2)x = 3(-2 + 2)$$\n\n$$(-4)(0)x = 3(0)$$\n\n$$0 \\cdot x = 0$$\n\nBecause $0 \\cdot x = 0$ holds for every real number $x$, the equation is an identity with infinitely many solutions, so the statement is True.",
+  "**B.** → False\n\nTo determine the solution set at $k = 2$, we substitute $k = 2$ into the factored form $(k - 2)(k + 2)x = 3(k + 2)$.\n\n$$(2 - 2)(2 + 2)x = 3(2 + 2)$$\n\n$$(0)(4)x = 3(4)$$\n\n$$0 \\cdot x = 12$$\n\nThere is no real number $x$ satisfying $0 = 12$, meaning the equation is inconsistent and has no solution, so the statement is False.",
+  "**C.** → True\n\nTo test whether the unique solution exceeds the threshold $x > 1$, we examine the expression $x = \\frac{3}{k - 2}$ for $k \\in (2, 5)$.\n\nSubtracting $2$ across the interval gives:\n\n$$0 < k - 2 < 3$$\n\nTaking reciprocals reverses the inequality for positive numbers:\n\n$$\\frac{1}{k - 2} > \\frac{1}{3}$$\n\nMultiplying by $3$ yields:\n\n$$x = \\frac{3}{k - 2} > 3 \\cdot \\frac{1}{3} = 1$$\n\nThus, the unique solution strictly exceeds $1$ for all $k \\in (2, 5)$, so the statement is True.",
+  "**D.** → False\n\nTo assess the sign of the solution for $k < -2$, we evaluate the denominator of $x = \\frac{3}{k - 2}$.\n\nSubtracting $2$ from both sides of $k < -2$ gives:\n\n$$k - 2 < -4$$\n\nBecause the numerator is $3 > 0$ and the denominator is strictly negative, the quotient must be negative:\n\n$$x = \\frac{3}{k - 2} < 0$$\n\nThe solution is strictly negative rather than strictly positive, so the statement is False.",
+  "**E.** → False\n\nFor the solution $x = \\frac{3}{k - 2}$ to be an integer, the denominator $k - 2$ must be an integer divisor of $3$, with $k \\notin \\{-2, 2\\}$.\n\nThe integer divisors of $3$ are $-3, -1, 1, 3$.\n\nSetting $k - 2$ equal to each divisor gives:\n\n$$k - 2 = -3 \\implies k = -1$$\n\n$$k - 2 = -1 \\implies k = 1$$\n\n$$k - 2 = 1 \\implies k = 3$$\n\n$$k - 2 = 3 \\implies k = 5$$\n\nAll four values are distinct integers different from $-2$ and $2$, yielding exactly four integer parameters rather than two, so the statement is False."
+ ]
+}

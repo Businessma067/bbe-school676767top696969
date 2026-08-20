@@ -1,0 +1,26 @@
+{
+ "title": "Parametric Rational Equation Reducible to Linear",
+ "context": "Let $a \\in \\mathbb{R}$ be a real parameter. Consider the rational equation\n$$\\frac{2x - a}{x - 3} + \\frac{x + 1}{x + 2} = \\frac{3x^2 + 4}{x^2 - x - 6}.$$",
+ "statements": [
+  "The maximal real domain of the given equation excludes exactly three distinct real numbers.",
+  "There exists a real parameter value $a$ for which the cleared linear equation produces $x = -2$ as an extraneous candidate root.",
+  "The equation has no real solution for exactly two distinct values of the parameter $a$.",
+  "For every parameter value $a$ in the open interval $(-3, 0)$, the equation possesses a unique solution that is strictly positive.",
+  "For $a = 1$, the equation has a unique solution, and this solution is an odd integer."
+ ],
+ "answer_key": [
+  false,
+  false,
+  true,
+  false,
+  true
+ ],
+ "solution_overview": "We analyze the rational equation with parameter $a \\in \\mathbb{R}$. We first factor the quadratic denominator on the right-hand side:\n\n$$x^2 - x - 6 = (x - 3)(x + 2)$$\n\nHence, the common denominator of all terms is $(x - 3)(x + 2)$. The maximal domain of definition $D$ requires that no denominator equals zero:\n\n$$D = \\mathbb{R} \\setminus \\{-2, 3\\}$$\n\nMultiplying both sides of the equation by $(x - 3)(x + 2)$ clears the denominators:\n\n$$(2x - a)(x + 2) + (x + 1)(x - 3) = 3x^2 + 4$$\n\nWe expand each product on the left-hand side:\n\n$$(2x^2 + 4x - ax - 2a) + (x^2 - 2x - 3) = 3x^2 + 4$$\n\nCombining like terms on the left gives:\n\n$$3x^2 + (2 - a)x - (2a + 3) = 3x^2 + 4$$\n\nSubtracting $3x^2$ from both sides eliminates the quadratic terms entirely, reducing the problem to the linear equation:\n\n$$(2 - a)x = 2a + 7$$\n\nWhen $a \\neq 2$, solving for $x$ yields the candidate root:\n\n$$x = \\frac{2a + 7}{2 - a}$$",
+ "tactical_explanations": [
+  "**A.** → False\n\nThe domain restriction rule requires that all denominators in the original expression must be non-zero.\n\nThe denominators in the equation are $x - 3$, $x + 2$, and $x^2 - x - 6$. Factoring the quadratic denominator gives:\n\n$$x^2 - x - 6 = (x - 3)(x + 2)$$\n\nThe values where at least one denominator vanishes are found by setting the factors to zero:\n\n$$x - 3 = 0 \\implies x = 3$$\n\n$$x + 2 = 0 \\implies x = -2$$\n\nThere are only two excluded values, namely $x = -2$ and $x = 3$. The claim states that exactly three values are excluded, so the statement is False.",
+  "**B.** → False\n\nAn extraneous root occurs when the algebraic candidate root equals an excluded domain value.\n\nThe candidate root obtained after clearing denominators is:\n\n$$x = \\frac{2a + 7}{2 - a}$$\n\nSetting this candidate equal to the excluded value $-2$ yields:\n\n$$\\frac{2a + 7}{2 - a} = -2$$\n\nMultiplying both sides by $2 - a$ gives:\n\n$$2a + 7 = -2(2 - a)$$\n\n$$2a + 7 = -4 + 2a$$\n\nSubtracting $2a$ from both sides results in the contradiction:\n\n$$7 = -4$$\n\nThus, no real parameter $a$ can produce $x = -2$ as a candidate solution, so the statement is False.",
+  "**C.** → True\n\nA linear equation of the form $cx = d$ has no solution if $c = 0$ and $d \\neq 0$, or if the candidate solution is outside the domain $D = \\mathbb{R} \\setminus \\{-2, 3\\}$.\n\nFirst, setting the coefficient of $x$ to zero gives $2 - a = 0$, so $a = 2$. Substituting $a = 2$ into the cleared equation yields:\n\n$$0 \\cdot x = 2(2) + 7 = 11$$\n\nThis equation has no solution.\n\nSecond, setting the candidate root equal to the excluded domain value $x = 3$ gives:\n\n$$\\frac{2a + 7}{2 - a} = 3$$\n\n$$2a + 7 = 3(2 - a)$$\n\n$$2a + 7 = 6 - 3a$$\n\n$$5a = -1$$\n\n$$a = -\\frac{1}{5}$$\n\nFor $a = -\\frac{1}{5}$, the only candidate root is $x = 3$, which is not in the domain, leaving the original equation with no solutions. As shown previously, the candidate root cannot equal $-2$. Therefore, the equation has no solution for precisely two values of $a$, namely $a = 2$ and $a = -\\frac{1}{5}$, so the statement is True.",
+  "**D.** → False\n\nA universal statement over an interval fails if there is at least one counterexample in the interval where the equation lacks a solution or yields a non-positive solution.\n\nConsider the parameter value $a = -\\frac{1}{5} = -0.2$, which lies inside the open interval $(-3, 0)$:\n\n$$-3 < -\\frac{1}{5} < 0$$\n\nFor this specific parameter value, the candidate solution is:\n\n$$x = \\frac{2\\left(-\\frac{1}{5}\\right) + 7}{2 - \\left(-\\frac{1}{5}\\right)} = \\frac{\\frac{33}{5}}{\\frac{11}{5}} = 3$$\n\nBecause $x = 3$ makes the original denominator $x - 3$ zero, $x = 3$ is not admitted, and the equation has no solution when $a = -\\frac{1}{5}$. Thus, not every value in $(-3, 0)$ produces a solution, so the statement is False.",
+  "**E.** → True\n\nTo find the solution for a specific parameter value, we substitute $a = 1$ into the linear equation and check admissibility.\n\nSubstituting $a = 1$ into $(2 - a)x = 2a + 7$ gives:\n\n$$(2 - 1)x = 2(1) + 7$$\n\n$$1 \\cdot x = 9$$\n\n$$x = 9$$\n\nSince $9 \\notin \\{-2, 3\\}$, $x = 9$ belongs to the domain and is the unique solution of the equation. The number $9$ is an odd integer, so the statement is True."
+ ]
+}
