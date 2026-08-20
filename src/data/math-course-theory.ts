@@ -42,7 +42,15 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     title: "Financial mathematics",
     markdown: ch11,
   },
+  12: {
+    num: 12,
+    title: "Standard probability",
+    markdown: ch12,
+    materialsPdfUrl: "/bbe-math-probability-theory.pdf",
+    materialsPdfName: "BBE-Math-Standard-Probability-Reference-Guide.pdf",
+  },
   13: {
+
     num: 13,
     title: "Binomial distribution",
     markdown: ch13,
