@@ -1,8 +1,10 @@
 /**
  * Chapter 4 — subsection 4.4 "Exponential and logarithmic equations".
  * Exam format: five True/False claims per task, written as closed prose sentences.
- * Explanations follow MATH 13.18: name the rule in words, show the algebra in
- * display formulas, then close with the verdict.
+ * Claims are qualitative on purpose (bounds, counts, parity, admissibility), so a
+ * candidate cannot verify them by substituting a number that the statement itself
+ * hands over. Explanations follow MATH 13.18: name the rule in words, show the
+ * algebra in display formulas, then close with the verdict.
  */
 
 import type { MathTask } from "@/data/math-chapters";
@@ -11,42 +13,40 @@ export const MATH_CH4_EXP_LOG: MathTask[] = [
   {
     id: `math-4-94`,
     case_id: `MATH 4.94`,
-    title: `Five short same-base exponential claims`,
+    title: `Same-base exponential claims`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A student solves $2^{x} = 8$ and reports that the solution is $x = 3$.`,
-      `In a homework sheet the equation $3^{x+1} = 81$ appears. A candidate claims that $x = 3$.`,
-      `The equation $5^{2x} = 125$ is solved. Its solution is an integer.`,
-      `A tutor writes $2^{x} = \\frac{1}{16}$ on the board and concludes that $x = -4$.`,
+      `The solution of $2^{x} = 8$ is an odd number.`,
+      `The equation $3^{x+1} = 81$ has a positive integer solution.`,
+      `The solution of $5^{2x} = 125$ is an integer.`,
+      `The solution of $2^{x} = \\frac{1}{16}$ is negative.`,
       `The equation $7^{x-1} = 1$ has no solution.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Both sides can be written as powers of $2$, because $8 = 2^{3}$.
+Both sides become powers of one base, because $8 = 2^{3}$.
 
 $$2^{x} = 2^{3}$$
 
-An exponential function with base $2$ takes each value once, so equal powers force equal exponents:
+An exponential function with base $2$ takes every value at most once, so equal powers force equal exponents:
 
 $$x = 3$$
 
-The reported solution is exactly this value, so the statement is True.`,
+That value is odd, so the statement is True.`,
       `**B.** → True
 
-Write $81$ as a power of $3$: $81 = 3^{4}$.
+Write the right side as a power of $3$, since $81 = 3^{4}$.
 
 $$3^{x+1} = 3^{4}$$
-
-Equal bases give equal exponents:
 
 $$x + 1 = 4$$
 
 $$x = 3$$
 
-The candidate's value matches, so the statement is True.`,
+The solution is a positive whole number, so the statement is True.`,
       `**C.** → False
 
 Here $125 = 5^{3}$, so the equation reads
@@ -57,1572 +57,1416 @@ $$2x = 3$$
 
 $$x = \\frac{3}{2}$$
 
-The solution is $1.5$, which is not an integer, so the statement is False.`,
+A half is not a whole number, so the statement is False.`,
       `**D.** → True
 
-A reciprocal power carries a negative exponent: $\\frac{1}{16} = 2^{-4}$.
+A reciprocal power carries a negative exponent, because $\\frac{1}{16} = 2^{-4}$.
 
 $$2^{x} = 2^{-4}$$
 
 $$x = -4$$
 
-The tutor's conclusion is the isolated exponent, so the statement is True.`,
+The exponent that solves the equation is below zero, so the statement is True.`,
       `**E.** → False
 
-Any non-zero base raised to the power $0$ equals $1$, so $1 = 7^{0}$.
+Any non-zero base raised to the power zero equals one, so $1 = 7^{0}$.
 
 $$7^{x-1} = 7^{0}$$
 
 $$x - 1 = 0$$
 
-$$x = 1$$
-
-A solution exists, namely $x = 1$, so the claim of no solution is False.`,
+A solution does exist, so the claim of no solution is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 94,
-    solution_overview: `Every claim rewrites both sides as powers of one base. Once the bases agree, the exponents must agree: $a^{m}=a^{n}$ with $a>0$, $a \\neq 1$ forces $m=n$.`,
+    solution_overview: `Every claim rewrites both sides as powers of one base. Once the bases agree, the exponents must agree: $a^{m}=a^{n}$ with $a>0$ and $a \\neq 1$ forces $m=n$.`,
   },
   {
     id: `math-4-95`,
     case_id: `MATH 4.95`,
-    title: `Reading simple logarithmic equations`,
+    title: `Reading logarithmic equations`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A student solves $\\log_{2} x = 5$ and reports $x = 32$.`,
-      `The equation $\\ln x = 0$ is solved. Its solution is $x = 0$.`,
-      `In an exam item $\\log_{3}(x - 2) = 2$ appears, and a candidate claims that $x = 11$.`,
-      `The equation $\\log_{4} x = \\frac{1}{2}$ is solved. Its solution is greater than $3$.`,
-      `A worksheet asks to solve $\\log_{x} 81 = 4$ for the base. The solution is $x = 3$.`,
+      `The solution of $\\log_{2} x = 5$ is larger than $30$.`,
+      `The equation $\\ln x = 0$ has no solution, because a logarithm never vanishes.`,
+      `The solution of $\\log_{3}(x - 2) = 2$ is a two-digit integer.`,
+      `The solution of $\\log_{4} x = \\frac{1}{2}$ is greater than $3$.`,
+      `In the equation $\\log_{x} 81 = 4$ the unknown base is smaller than $4$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Rewrite the logarithm as a power statement:
+A logarithmic equation is read backwards through its definition: $\\log_{a} x = c$ means $x = a^{c}$.
 
-$$\\log_{2} x = 5 \\iff 2^{5} = x$$
+$$x = 2^{5} = 32$$
 
-$$x = 32$$
-
-The reported value is the same, so the statement is True.`,
+That value sits above the stated threshold, so the statement is True.`,
       `**B.** → False
 
-The natural logarithm has base $e$, so the equation means
+The natural logarithm vanishes exactly at the argument one, since any base to the power zero is one.
 
-$$e^{0} = x$$
+$$x = e^{0} = 1$$
 
-$$x = 1$$
-
-The solution is $1$, not $0$; in fact $x = 0$ is outside the domain of $\\ln x$, so the statement is False.`,
+A perfectly legal solution exists, so the statement is False.`,
       `**C.** → True
 
-Exponential form turns the equation into
+Undo the logarithm first, then the shift inside the bracket.
 
-$$3^{2} = x - 2$$
-
-$$9 = x - 2$$
+$$x - 2 = 3^{2} = 9$$
 
 $$x = 11$$
 
-The argument $x - 2 = 9$ is positive, so the value is admissible and the candidate is right. The statement is True.`,
+The result has two digits, so the statement is True.`,
       `**D.** → False
 
-A logarithm equal to $\\frac{1}{2}$ describes a square root:
+A logarithm equal to one half means a square root of the base.
 
-$$x = 4^{1/2} = \\sqrt{4} = 2$$
+$$x = 4^{1/2} = 2$$
 
-The solution is $2$, and $2 > 3$ is false, so the statement is False.`,
+Two lies below the stated bound, so the statement is False.`,
       `**E.** → True
 
-The equation says that the unknown base, raised to the power $4$, gives $81$:
+Here the base is unknown, so the definition gives a power equation for it.
 
 $$x^{4} = 81$$
 
-A logarithm base must be positive and different from $1$, so only the positive root counts:
+Only a positive base different from one is admissible, so
 
-$$x = \\sqrt[4]{81} = 3$$
+$$x = 3$$
 
-The reported base is exactly this value, so the statement is True.`,
+That base is under the stated bound, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 95,
-    solution_overview: `A logarithm is an exponent: $\\log_{a} b = c$ means exactly $a^{c} = b$. Each claim is checked by rewriting the logarithm in exponential form.`,
+    solution_overview: `Each item applies the definition $\\log_{a} x = c \\iff x = a^{c}$. When the unknown sits in the base, the same definition produces a power equation instead of an exponential one.`,
   },
   {
     id: `math-4-96`,
     case_id: `MATH 4.96`,
-    title: `Rewriting powers of 2, 4 and 8`,
+    title: `Powers of two and three on both sides`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $4^{x} = 2^{x+3}$ is solved. Its solution is $x = 3$.`,
-      `A student solves $8^{x} = 4^{x+1}$ and reports $x = 2$.`,
-      `The equation $9^{x} = 27$ has an integer solution.`,
-      `A candidate claims that $16^{x} = 2$ is solved by $x = \\frac{1}{4}$.`,
-      `The equation $2^{x} = -8$ has exactly one real solution.`,
+      `The solution of $4^{x} = 8$ is not an integer.`,
+      `The solution of $8^{x} = 4^{x+1}$ is an even number.`,
+      `The solution of $2^{3x} = 4^{x-1}$ is positive.`,
+      `The solution of $9^{x} = 27$ lies strictly between $1$ and $2$.`,
+      `The solution of $16^{x} = 8^{x+1}$ is smaller than the solution of $4^{x} = 8$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Write the left side with base $2$: $4^{x} = (2^{2})^{x} = 2^{2x}$.
+Both sides are powers of two, so rewrite them with that single base.
 
-$$2^{2x} = 2^{x+3}$$
-
-$$2x = x + 3$$
-
-$$x = 3$$
-
-The isolated exponent is $3$, so the statement is True.`,
-      `**B.** → True
-
-Both sides become powers of $2$: $8^{x} = 2^{3x}$ and $4^{x+1} = 2^{2x+2}$.
-
-$$2^{3x} = 2^{2x+2}$$
-
-$$3x = 2x + 2$$
-
-$$x = 2$$
-
-The report matches the solution, so the statement is True.`,
-      `**C.** → False
-
-With base $3$ the equation reads $3^{2x} = 3^{3}$.
+$$2^{2x} = 2^{3}$$
 
 $$2x = 3$$
 
 $$x = \\frac{3}{2}$$
 
-The only solution is $1.5$, which is not an integer, so the statement is False.`,
+A fraction with denominator two is not a whole number, so the statement is True.`,
+      `**B.** → True
+
+Express eight and four through the base two.
+
+$$2^{3x} = 2^{2(x+1)}$$
+
+$$3x = 2x + 2$$
+
+$$x = 2$$
+
+The exponent obtained is even, so the statement is True.`,
+      `**C.** → False
+
+Again reduce the right side to base two.
+
+$$2^{3x} = 2^{2(x-1)}$$
+
+$$3x = 2x - 2$$
+
+$$x = -2$$
+
+The solution lies below zero, so the statement is False.`,
       `**D.** → True
 
-Since $16 = 2^{4}$, the equation is
+Both sides are powers of three.
 
-$$2^{4x} = 2^{1}$$
+$$3^{2x} = 3^{3}$$
 
-$$4x = 1$$
+$$x = \\frac{3}{2}$$
 
-$$x = \\frac{1}{4}$$
-
-The claimed value is the solution, so the statement is True.`,
+That number is above one and below two, so the statement is True.`,
       `**E.** → False
 
-An exponential function with a positive base is always positive: $2^{x} > 0$ for every real $x$.
+Reduce the left equation to base two:
 
-$$2^{x} > 0 > -8$$
+$$2^{4x} = 2^{3(x+1)}$$
 
-No real exponent can produce a negative value, so the equation has no solution at all and the statement is False.`,
+$$4x = 3x + 3$$
+
+$$x = 3$$
+
+The comparison equation was solved in claim A and gives $\\frac{3}{2}$. Three is the larger of the two, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 96,
-    solution_overview: `Bases $4$, $8$ and $16$ are all powers of $2$, so each equation collapses to a linear equation in the exponent after rewriting.`,
+    solution_overview: `Every power of $4$, $8$, $9$, $16$ or $27$ collapses to a power of $2$ or $3$. After that the equation is linear in the exponent.`,
   },
   {
     id: `math-4-97`,
     case_id: `MATH 4.97`,
-    title: `Log laws inside one equation`,
+    title: `Logarithm laws in one equation`,
     subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A student solves $\\log_{2} x + \\log_{2} 4 = 5$ and reports $x = 8$.`,
-      `The equation $\\log_{5}(x) - \\log_{5} 2 = 1$ is solved. Its solution is $x = 10$.`,
-      `A candidate rewrites $\\log_{3}(x) + \\log_{3}(x) $ as $\\log_{3}(2x)$ and then solves. The rewriting step is correct.`,
-      `The equation $\\log_{10}(x) + \\log_{10}(x - 3) = 1$ has two solutions.`,
-      `In the equation $\\log_{2}(x) + \\log_{2}(x - 2) = 3$ the solution is $x = 4$.`,
-    ],
-    answer_key: [true, true, false, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Combine the two logarithms with the product law:
-
-$$\\log_{2}(4x) = 5$$
-
-$$4x = 2^{5} = 32$$
-
-$$x = 8$$
-
-The argument $4x = 32$ is positive, so the value is admissible and the report is correct. The statement is True.`,
-      `**B.** → True
-
-The quotient law gives one logarithm:
-
-$$\\log_{5}\\frac{x}{2} = 1$$
-
-$$\\frac{x}{2} = 5$$
-
-$$x = 10$$
-
-The reported value is the solution, so the statement is True.`,
-      `**C.** → False
-
-Adding two logarithms multiplies their arguments, it does not add them:
-
-$$\\log_{3} x + \\log_{3} x = \\log_{3}(x \\cdot x) = \\log_{3}(x^{2})$$
-
-The candidate wrote $\\log_{3}(2x)$, which corresponds to $\\log_{3} 2 + \\log_{3} x$. The rewriting is wrong, so the statement is False.`,
-      `**D.** → False
-
-The product law turns the left side into one logarithm:
-
-$$\\log_{10}\\big(x(x-3)\\big) = 1$$
-
-$$x^{2} - 3x = 10$$
-
-$$x^{2} - 3x - 10 = 0$$
-
-$$x = 5 \\quad \\text{or} \\quad x = -2$$
-
-Both arguments must be positive, which needs $x > 3$. The value $-2$ is rejected and only $x = 5$ survives, so the equation has one solution and the statement is False.`,
-      `**E.** → True
-
-Combining the logarithms:
-
-$$\\log_{2}\\big(x(x-2)\\big) = 3$$
-
-$$x^{2} - 2x = 8$$
-
-$$x^{2} - 2x - 8 = 0$$
-
-$$x = 4 \\quad \\text{or} \\quad x = -2$$
-
-The domain requires $x > 2$, so $-2$ is discarded and $x = 4$ remains. The statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 97,
-    solution_overview: `The product law $\\log_{a} u + \\log_{a} v = \\log_{a}(uv)$ and the quotient law $\\log_{a} u - \\log_{a} v = \\log_{a}\\frac{u}{v}$ combine several logarithms into one, after which the equation is read back in exponential form. Every candidate value must keep all arguments positive.`,
-  },
-  {
-    id: `math-4-98`,
-    case_id: `MATH 4.98`,
-    title: `Doubling an investment`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `After $10$ years the capital exceeds $1600$ EUR.`,
-      `An adviser states that the capital doubles in fewer than $14$ years.`,
-      `The time needed to reach $1500$ EUR is less than the time needed to reach $2000$ EUR.`,
-      `If the rate were $10\\%$ instead of $5\\%$, the doubling time would be exactly half as long.`,
-      `After $20$ years the capital is more than $2.5$ times the initial amount.`,
-    ],
-    answer_key: [true, false, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Ten years of $5\\%$ growth multiply the capital by $1.05^{10}$:
-
-$$1000 \\cdot 1.05^{10} = 1000 \\cdot 1.628894 = 1628.89$$
-
-That is about $1628.89$ EUR, and $1628.89 > 1600$, so the statement is True.`,
-      `**B.** → False
-
-Doubling means solving $1.05^{n} = 2$. Taking logarithms of both sides brings the unknown down from the exponent:
-
-$$n \\ln 1.05 = \\ln 2$$
-
-$$n = \\frac{\\ln 2}{\\ln 1.05} = \\frac{0.693147}{0.048790} = 14.2067$$
-
-Doubling needs about $14.21$ years, which is more than $14$, so the statement is False.`,
-      `**C.** → True
-
-Both waiting times come from the same increasing function $1000 \\cdot 1.05^{n}$:
-
-$$n_{1500} = \\frac{\\ln 1.5}{\\ln 1.05} = 8.3104, \\qquad n_{2000} = \\frac{\\ln 2}{\\ln 1.05} = 14.2067$$
-
-Since $8.31 < 14.21$, the smaller target is reached first, so the statement is True.`,
-      `**D.** → False
-
-At $10\\%$ the doubling time solves $1.10^{n} = 2$:
-
-$$n = \\frac{\\ln 2}{\\ln 1.10} = \\frac{0.693147}{0.095310} = 7.2725$$
-
-Half of the $5\\%$ doubling time would be $\\frac{14.2067}{2} = 7.1033$ years. The actual value $7.27$ is larger than $7.10$, so the doubling time is not exactly halved and the statement is False.`,
-      `**E.** → True
-
-Twenty years of growth give the factor
-
-$$1.05^{20} = 2.653298$$
-
-so the capital is $2653.30$ EUR. Comparing factors, $2.6533 > 2.5$, so the capital is indeed more than $2.5$ times the initial amount and the claim holds. The statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 98,
-    solution_overview: `A capital of $1000$ EUR grows by $5\\%$ per year, so after $n$ years it is $1000 \\cdot 1.05^{n}$. Questions about the required time are exponential equations solved with logarithms: $1.05^{n} = k$ gives $n = \\frac{\\ln k}{\\ln 1.05}$.`,
-  },
-  {
-    id: `math-4-99`,
-    case_id: `MATH 4.99`,
-    title: `Radioactive decay and half-life`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `After $12$ years exactly $20$ mg of the sample remain.`,
-      `After $10$ years more than half of the original mass is still present.`,
-      `The sample needs more than $19$ years to fall below $10$ mg.`,
-      `The time at which $30$ mg remain is between $8$ and $9$ years.`,
-      `The sample never disappears completely, no matter how long one waits.`,
+      `The solution of $\\log x + \\log 4 = \\log 20$ is a prime number.`,
+      `The solution of $\\log x - \\log 3 = \\log 4$ is smaller than $10$.`,
+      `The equation $2\\log x = \\log 36$ has two solutions of opposite sign.`,
+      `The equation $\\log(x^{2}) = 2\\log 5$ has two solutions.`,
+      `In the equation $\\log_{2} x + \\log_{2}(x-2) = 3$ one candidate must be rejected because of the domain.`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Twelve years are two half-lives, so the mass is halved twice:
+A sum of logarithms is the logarithm of the product, and the logarithm is injective.
 
-$$m(12) = 80 \\cdot \\left(\\frac{1}{2}\\right)^{12/6} = 80 \\cdot \\frac{1}{4} = 20$$
+$$\\log(4x) = \\log 20$$
 
-The remaining mass is $20$ mg, exactly as claimed, so the statement is True.`,
-      `**B.** → False
-
-Ten years exceed one half-life of $6$ years, and the mass decreases with time:
-
-$$m(10) = 80 \\cdot \\left(\\frac{1}{2}\\right)^{10/6} = 80 \\cdot 0.314980 = 25.20$$
-
-Half of the original mass is $40$ mg, and $25.20 < 40$, so the statement is False.`,
-      `**C.** → False
-
-Falling to $10$ mg means losing three halves: $80 \\to 40 \\to 20 \\to 10$, which is three half-lives.
-
-$$t = 3 \\cdot 6 = 18$$
-
-After $18$ years the mass is exactly $10$ mg, and any longer time is already below it. Since $18 < 19$, the statement is False.`,
-      `**D.** → True
-
-Solve $80 \\cdot \\left(\\frac{1}{2}\\right)^{t/6} = 30$ by isolating the power and taking logarithms:
-
-$$\\left(\\frac{1}{2}\\right)^{t/6} = 0.375$$
-
-$$\\frac{t}{6} \\ln 0.5 = \\ln 0.375$$
-
-$$t = 6 \\cdot \\frac{\\ln 0.375}{\\ln 0.5} = 6 \\cdot 1.415037 = 8.4902$$
-
-The mass reaches $30$ mg after about $8.49$ years, which lies between $8$ and $9$, so the statement is True.`,
-      `**E.** → True
-
-The model multiplies the mass by a positive factor for every additional year:
-
-$$m(t) = 80 \\cdot \\left(\\frac{1}{2}\\right)^{t/6} > 0 \\quad \\text{for every } t$$
-
-An exponential with a positive base never reaches zero, it only approaches it. The mass stays positive for all times, so the statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 99,
-    solution_overview: `A sample of $80$ mg decays according to $m(t) = 80 \\cdot \\left(\\frac{1}{2}\\right)^{t/6}$, where $t$ is measured in years, so the half-life is $6$ years. Questions about remaining mass are evaluations; questions about time are exponential equations solved with logarithms.`,
-  },
-  {
-    id: `math-4-100`,
-    case_id: `MATH 4.100`,
-    title: `A quadratic hidden behind base 3`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `After the substitution $u = 3^{x}$ the equation becomes $u^{2} - 4u + 3 = 0$.`,
-      `The equation has exactly two real solutions.`,
-      `One of the solutions is $x = 0$.`,
-      `The sum of all solutions equals $3$.`,
-      `A candidate states that $u = -1$ would give a third solution.`,
-    ],
-    answer_key: [true, true, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The first term is the square of the substituted quantity:
-
-$$3^{2x} = (3^{x})^{2} = u^{2}$$
-
-so the whole equation reads
-
-$$u^{2} - 4u + 3 = 0$$
-
-This is exactly the quadratic in the claim, so the statement is True.`,
-      `**B.** → True
-
-Solving the quadratic:
-
-$$u^{2} - 4u + 3 = 0$$
-
-$$u = 1 \\quad \\text{or} \\quad u = 3$$
-
-Both values are positive, so both can be undone:
-
-$$3^{x} = 1 \\Rightarrow x = 0, \\qquad 3^{x} = 3 \\Rightarrow x = 1$$
-
-Two real solutions exist, so the statement is True.`,
-      `**C.** → True
-
-From the branch $u = 1$:
-
-$$3^{x} = 1 = 3^{0}$$
-
-$$x = 0$$
-
-Substituting back into the original equation: $3^{0} - 4 \\cdot 3^{0} + 3 = 1 - 4 + 3 = 0$. The value solves the equation, so the statement is True.`,
-      `**D.** → False
-
-The two solutions found are $x = 0$ and $x = 1$:
-
-$$0 + 1 = 1$$
-
-The sum of the solutions is $1$, not $3$; the value $3$ belongs to the substituted variable $u$, not to $x$. The statement is False.`,
-      `**E.** → False
-
-A power with base $3$ is always positive:
-
-$$3^{x} > 0 \\quad \\text{for every real } x$$
-
-Therefore the equation $3^{x} = -1$ has no solution, and a negative value of $u$ can never be converted back. No third solution arises, so the statement is False.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 100,
-    solution_overview: `The equation $3^{2x} - 4 \\cdot 3^{x} + 3 = 0$ becomes a quadratic after the substitution $u = 3^{x}$, because $3^{2x} = (3^{x})^{2} = u^{2}$. Only positive values of $u$ can be converted back, since $3^{x} > 0$.`,
-  },
-  {
-    id: `math-4-101`,
-    case_id: `MATH 4.101`,
-    title: `A quadratic hidden behind base 2`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The substituted quadratic has the roots $u = 2$ and $u = 4$.`,
-      `The original equation is solved by $x = 1$ and $x = 2$.`,
-      `The product of the solutions in $x$ is greater than the sum of the solutions in $x$.`,
-      `The equation $2^{2x} - 6 \\cdot 2^{x} + 8 = 0$ is equivalent to $4^{x} - 6 \\cdot 2^{x} + 8 = 0$.`,
-      `If the constant $8$ is replaced by $10$, the equation still has two real solutions.`,
-    ],
-    answer_key: [true, true, false, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-With $u = 2^{x}$ the equation becomes
-
-$$u^{2} - 6u + 8 = 0$$
-
-$$(u - 2)(u - 4) = 0$$
-
-$$u = 2 \\quad \\text{or} \\quad u = 4$$
-
-These are the two roots named in the claim, so the statement is True.`,
-      `**B.** → True
-
-Converting each positive root back with base $2$:
-
-$$2^{x} = 2 \\Rightarrow x = 1$$
-
-$$2^{x} = 4 = 2^{2} \\Rightarrow x = 2$$
-
-Both exponents solve the original equation, so the statement is True.`,
-      `**C.** → False
-
-The solutions are $x = 1$ and $x = 2$:
-
-$$1 \\cdot 2 = 2, \\qquad 1 + 2 = 3$$
-
-The product $2$ is smaller than the sum $3$, so the statement is False.`,
-      `**D.** → True
-
-The first term can be regrouped in two ways:
-
-$$2^{2x} = (2^{2})^{x} = 4^{x}$$
-
-Replacing $2^{2x}$ by $4^{x}$ changes nothing else in the equation, so the two forms have exactly the same solutions. The statement is True.`,
-      `**E.** → False
-
-The substituted quadratic becomes
-
-$$u^{2} - 6u + 10 = 0$$
-
-$$D = (-6)^{2} - 4 \\cdot 1 \\cdot 10 = 36 - 40 = -4$$
-
-A negative discriminant means no real value of $u$ at all, hence no real $x$. The statement is False.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 101,
-    solution_overview: `The equation $2^{2x} - 6 \\cdot 2^{x} + 8 = 0$ is quadratic in $u = 2^{x}$, since $2^{2x} = u^{2}$. The substituted values must be positive to be converted back into exponents.`,
-  },
-  {
-    id: `math-4-102`,
-    case_id: `MATH 4.102`,
-    title: `Domain traps in logarithmic equations`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The equation $\\log_{10} x + \\log_{10}(x - 3) = 1$ is solved by $x = 5$.`,
-      `The value $x = -2$ also solves that equation.`,
-      `The equation $\\ln(x - 1) = \\ln(2x - 5)$ has a solution larger than $3$.`,
-      `The equation $\\log_{2}(x^{2}) = \\log_{2}(9)$ has exactly one real solution.`,
-      `The equation $\\log_{3}(x - 4) = -1$ has no solution, because the right-hand side is negative.`,
-    ],
-    answer_key: [true, false, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Combine and exponentiate:
-
-$$\\log_{10}\\big(x(x - 3)\\big) = 1$$
-
-$$x^{2} - 3x - 10 = 0$$
-
-$$x = 5 \\quad \\text{or} \\quad x = -2$$
-
-The domain needs $x > 0$ and $x - 3 > 0$, that is $x > 3$. Only $x = 5$ passes, so the statement is True.`,
-      `**B.** → False
-
-For $x = -2$ the first logarithm would read $\\log_{10}(-2)$:
-
-$$x = -2 < 0$$
-
-A logarithm of a negative number is undefined, so $-2$ is an extraneous root produced by the exponentiation step, not a solution. The statement is False.`,
-      `**C.** → True
-
-The logarithm is injective, so equal logarithms mean equal arguments:
-
-$$x - 1 = 2x - 5$$
-
-$$x = 4$$
-
-Both arguments are then positive: $4 - 1 = 3$ and $2 \\cdot 4 - 5 = 3$. The solution $4$ is larger than $3$, so the statement is True.`,
-      `**D.** → False
-
-Equal logarithms force equal arguments:
-
-$$x^{2} = 9$$
-
-$$x = 3 \\quad \\text{or} \\quad x = -3$$
-
-The argument of the logarithm is $x^{2}$, which is positive for both values, so both are admissible. There are two solutions, so the statement is False.`,
-      `**E.** → False
-
-A logarithm may perfectly well be negative; only its argument must be positive.
-
-$$x - 4 = 3^{-1} = \\frac{1}{3}$$
-
-$$x = 4 + \\frac{1}{3} = \\frac{13}{3}$$
-
-The argument $\\frac{1}{3}$ is positive, so $x = \\frac{13}{3}$ is a genuine solution and the statement is False.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 102,
-    solution_overview: `Every logarithm requires a positive argument. Solving $\\log_{a}(\\cdot) = c$ by exponentiating can create candidate values that break this requirement, so each candidate must be tested against the domain.`,
-  },
-  {
-    id: `math-4-103`,
-    case_id: `MATH 4.103`,
-    title: `Equations with the base e`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `A student solves $e^{2x} = e^{6}$ and reports $x = 3$.`,
-      `The solution of $e^{x} = 5$ is between $1.6$ and $1.7$.`,
-      `The equation $e^{x} = 0$ is solved by $x = \\ln 0$.`,
-      `The equation $e^{3x-1} = 1$ has the solution $x = \\frac{1}{3}$.`,
-      `A candidate claims that $\\ln(e^{7}) + e^{\\ln 2}$ equals $9$.`,
-    ],
-    answer_key: [true, true, false, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Equal bases force equal exponents:
-
-$$2x = 6$$
-
-$$x = 3$$
-
-The reported value is the solution, so the statement is True.`,
-      `**B.** → True
-
-Applying the natural logarithm undoes the exponential:
-
-$$x = \\ln 5 = 1.609438$$
-
-The value $1.6094$ lies between $1.6$ and $1.7$, so the statement is True.`,
-      `**C.** → False
-
-The exponential function with base $e$ takes only positive values:
-
-$$e^{x} > 0 \\quad \\text{for every real } x$$
-
-So $e^{x} = 0$ has no solution, and $\\ln 0$ is not a number at all. The statement is False.`,
-      `**D.** → True
-
-Write $1$ as $e^{0}$:
-
-$$3x - 1 = 0$$
-
-$$x = \\frac{1}{3}$$
-
-The exponent vanishes exactly at this value, so the statement is True.`,
-      `**E.** → True
-
-Exponential and logarithm with base $e$ cancel each other in both orders:
-
-$$\\ln(e^{7}) = 7, \\qquad e^{\\ln 2} = 2$$
-
-$$7 + 2 = 9$$
-
-The total is $9$, exactly as claimed, so the statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 103,
-    solution_overview: `With base $e$ the natural logarithm is the exact inverse: $e^{u} = v$ is the same as $u = \\ln v$ for $v > 0$, and $\\ln(e^{u}) = u$ for every real $u$.`,
-  },
-  {
-    id: `math-4-104`,
-    case_id: `MATH 4.104`,
-    title: `Logarithms with a factor inside`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The equation $\\log_{5}(25x) = 3$ is solved by $x = 5$.`,
-      `The same equation can be written as $2 + \\log_{5} x = 3$.`,
-      `The equation $\\log_{2}(8x) = 1$ has a solution smaller than $1$.`,
-      `The equation $2 \\log_{3} x = 4$ is solved by $x = 9$.`,
-      `A candidate treats $\\log_{2}(8x)$ as $8 \\log_{2} x$ and obtains the same solution.`,
-    ],
-    answer_key: [true, true, true, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Exponentiating with base $5$ removes the logarithm:
-
-$$25x = 5^{3} = 125$$
+$$4x = 20$$
 
 $$x = 5$$
 
-The argument $125$ is positive, so the value is admissible and the statement is True.`,
-      `**B.** → True
+Five has no divisors besides one and itself, so the statement is True.`,
+      `**B.** → False
 
-Splitting the constant factor with the product law:
+A difference of logarithms is the logarithm of the quotient.
 
-$$\\log_{5}(25x) = \\log_{5} 25 + \\log_{5} x$$
+$$\\log\\frac{x}{3} = \\log 4$$
 
-Since $25 = 5^{2}$, the first term is $2$:
+$$x = 12$$
 
-$$2 + \\log_{5} x = 3$$
-
-This is exactly the rewritten form in the claim, so the statement is True.`,
-      `**C.** → True
-
-Exponentiating with base $2$:
-
-$$8x = 2^{1} = 2$$
-
-$$x = \\frac{1}{4}$$
-
-The solution $0.25$ is smaller than $1$, so the statement is True.`,
-      `**D.** → True
-
-Divide by $2$ first, then rewrite as a power:
-
-$$\\log_{3} x = 2$$
-
-$$x = 3^{2} = 9$$
-
-The reported value is the solution, so the statement is True.`,
-      `**E.** → False
-
-A factor inside the argument is not a factor in front of the logarithm; only exponents may be pulled out:
-
-$$\\log_{2}(8x) = 3 + \\log_{2} x \\neq 8 \\log_{2} x$$
-
-Solving the candidate's version, $8 \\log_{2} x = 1$, gives $x = 2^{1/8} = 1.0905$, while the correct solution is $x = \\frac{1}{4}$. The results differ, so the statement is False.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 104,
-    solution_overview: `Inside a single logarithm, constants can be split off with the product law: $\\log_{a}(k x) = \\log_{a} k + \\log_{a} x$. The equations below are solved either by exponentiating directly or by splitting first.`,
-  },
-  {
-    id: `math-4-105`,
-    case_id: `MATH 4.105`,
-    title: `Bacterial growth in a laboratory`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `After $8$ hours the culture contains $4500$ bacteria.`,
-      `The culture passes $10\\,000$ bacteria within the first $12$ hours.`,
-      `Doubling the culture takes longer than $3$ hours.`,
-      `After one full day the culture is more than $100\\,000$ times its initial size.`,
-      `The time needed to reach $1500$ bacteria is exactly $4$ hours.`,
-    ],
-    answer_key: [true, true, false, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Eight hours are two tripling periods:
-
-$$N(8) = 500 \\cdot 3^{8/4} = 500 \\cdot 9 = 4500$$
-
-The count matches the claim, so the statement is True.`,
-      `**B.** → True
-
-Solve $500 \\cdot 3^{t/4} = 10000$ by isolating the power:
-
-$$3^{t/4} = 20$$
-
-$$\\frac{t}{4} \\ln 3 = \\ln 20$$
-
-$$t = 4 \\cdot \\frac{2.995732}{1.098612} = 10.9070$$
-
-The threshold is crossed after about $10.91$ hours, which is inside the first $12$ hours, so the statement is True.`,
+That value exceeds the stated bound, so the statement is False.`,
       `**C.** → False
 
-Doubling means $3^{t/4} = 2$:
+The factor in front of a logarithm moves into the exponent, but the original left side is only defined for positive arguments.
 
-$$t = 4 \\cdot \\frac{\\ln 2}{\\ln 3} = 4 \\cdot 0.630930 = 2.5237$$
+$$\\log(x^{2}) = \\log 36 \\quad\\text{with}\\quad x > 0$$
 
-The culture doubles after about $2.52$ hours, which is less than $3$, so the statement is False.`,
-      `**D.** → False
+$$x = 6$$
 
-Twenty-four hours are six tripling periods:
+The negative candidate never entered the domain of $\\log x$, so only one solution survives and the statement is False.`,
+      `**D.** → True
 
-$$3^{24/4} = 3^{6} = 729$$
+Here the square already sits inside the logarithm, so the domain is every non-zero number.
 
-The culture is $729$ times its initial size, and $729 < 100000$, so the statement is False.`,
+$$x^{2} = 25$$
+
+$$x = 5 \\quad\\text{or}\\quad x = -5$$
+
+Both satisfy $x \\neq 0$, so two solutions exist and the statement is True.`,
       `**E.** → True
 
-Reaching $1500$ from $500$ means tripling once:
+Combine the two logarithms and undo the base two.
 
-$$3^{t/4} = 3$$
+$$x(x-2) = 8$$
 
-$$\\frac{t}{4} = 1$$
+$$x^{2} - 2x - 8 = 0$$
 
-$$t = 4$$
+$$x = 4 \\quad\\text{or}\\quad x = -2$$
 
-Exactly one tripling period is needed, so the statement is True.`,
+The negative candidate makes both arguments negative, so it is thrown out and the statement is True.`,
     ],
-    difficulty_level: `3/5`,
-    sort_order: 105,
-    solution_overview: `A culture starts with $500$ bacteria and triples every $4$ hours, so the count after $t$ hours is $N(t) = 500 \\cdot 3^{t/4}$. Time questions are exponential equations that need logarithms.`,
+    difficulty_level: `2/5`,
+    sort_order: 97,
+    solution_overview: `Product, quotient and power laws turn a sum of logarithms into one logarithm. The laws only hold on the domain of the original expression, which is why some candidates die at the end.`,
   },
   {
-    id: `math-4-106`,
-    case_id: `MATH 4.106`,
-    title: `Unknown base and unknown argument`,
+    id: `math-4-98`,
+    case_id: `MATH 4.98`,
+    title: `Domain decides the answer`,
     subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `The equation $\\log_{3}(x-1) + \\log_{3}(x-3) = 1$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $\\log_{x} 64 = 3$ is solved by $x = 4$.`,
-      `The equation $\\log_{x} 16 = 2$ has the two solutions $x = 4$ and $x = -4$.`,
-      `The equation $\\log_{x} 1 = 0$ is satisfied by every admissible base.`,
-      `The equation $\\log_{2} x = \\log_{4} 16$ is solved by $x = 4$.`,
-      `A candidate claims that $\\log_{1} 5$ is a well-defined number.`,
+      `The equation has exactly one admissible solution.`,
+      `Both roots of the quadratic obtained after combining the logarithms are admissible.`,
+      `The admissible solution is an even integer.`,
+      `The rejected candidate fails because it makes an argument of a logarithm negative.`,
+      `Combining the logarithms turns the problem into a linear equation.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The unknown base cubed must give $64$:
+Both arguments must be positive, so only numbers above three may compete. Combining the logarithms gives
 
-$$x^{3} = 64$$
+$$(x-1)(x-3) = 3$$
 
-$$x = 4$$
+$$x^{2} - 4x = 0$$
 
-The base $4$ is positive and different from $1$, so it is admissible and the statement is True.`,
+$$x = 0 \\quad\\text{or}\\quad x = 4$$
+
+Only the larger root clears the domain, so exactly one solution survives and the statement is True.`,
       `**B.** → False
 
-The base must satisfy $x^{2} = 16$, which gives $4$ and $-4$ as algebraic roots:
-
-$$x = 4 \\quad \\text{or} \\quad x = -4$$
-
-A logarithm base must be positive, so $-4$ is rejected and only $x = 4$ remains. The statement is False.`,
+The domain condition is $x > 3$, and one of the two roots is zero. A single root passes the filter, so the statement is False.`,
       `**C.** → True
 
-Rewriting in exponential form gives
-
-$$x^{0} = 1$$
-
-which holds for every $x > 0$ with $x \\neq 1$. The equation places no further restriction, so every admissible base works and the statement is True.`,
+The surviving root is $x = 4$, an even whole number, so the statement is True.`,
       `**D.** → True
 
-First evaluate the right-hand side: $4^{2} = 16$, so $\\log_{4} 16 = 2$.
+Substituting the rejected candidate into the first bracket gives
 
-$$\\log_{2} x = 2$$
+$$x - 1 = -1 < 0$$
 
-$$x = 2^{2} = 4$$
-
-The solution is $4$, exactly as claimed, so the statement is True.`,
+A logarithm of a negative number is undefined, which is exactly the reason for the rejection, so the statement is True.`,
       `**E.** → False
 
-A base of $1$ would require an exponent with
+The product of the two brackets produces a squared term:
 
-$$1^{c} = 5$$
+$$x^{2} - 4x - 3 + 3 = 0$$
 
-but every power of $1$ equals $1$, so no exponent exists. Base $1$ is excluded from the definition of a logarithm, so the statement is False.`,
+The resulting equation is quadratic, not linear, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
-    sort_order: 106,
-    solution_overview: `Reading $\\log_{a} b = c$ as $a^{c} = b$ works whichever of the three quantities is unknown. Bases must satisfy $a > 0$ and $a \\neq 1$.`,
+    difficulty_level: `2/5`,
+    sort_order: 98,
+    solution_overview: `First read the domain from the original equation, then combine the logarithms, then filter the candidates. Combining logarithms is only an equivalence on the domain of the original expression.`,
   },
   {
-    id: `math-4-107`,
-    case_id: `MATH 4.107`,
-    title: `Taking logarithms of both sides`,
+    id: `math-4-99`,
+    case_id: `MATH 4.99`,
+    title: `Reciprocal bases and impossible right sides`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The solution of $2^{x} = 7$ lies between $2.8$ and $2.9$.`,
-      `The solution of $3^{x} = 100$ is greater than $5$.`,
-      `The equation $5^{x+1} = 30$ has the solution $x = \\frac{\\ln 30}{\\ln 5} - 1$.`,
-      `A candidate claims that $2^{x} = 7$ can be solved as $x = \\frac{7}{2}$.`,
-      `The equation $0.5^{x} = 8$ has a negative solution.`,
+      `The solution of $\\left(\\frac{1}{2}\\right)^{x} = 8$ is negative.`,
+      `The solution of $\\left(\\frac{1}{3}\\right)^{x} = 9$ is larger than the solution of $\\left(\\frac{1}{2}\\right)^{x} = 8$.`,
+      `The equations $2^{-x} = \\frac{1}{8}$ and $2^{x} = 8$ have the same solution.`,
+      `The equation $\\left(\\frac{1}{2}\\right)^{x} = -8$ has exactly one solution.`,
+      `An equation of the form $a^{x} = b$ with $a > 0$, $a \\neq 1$ has a solution for every real number $b$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Take natural logarithms and pull the exponent down:
-
-$$x \\ln 2 = \\ln 7$$
-
-$$x = \\frac{1.945910}{0.693147} = 2.8074$$
-
-The solution $2.8074$ lies between $2.8$ and $2.9$, so the statement is True.`,
-      `**B.** → False
-
-Applying the logarithm to both sides:
-
-$$x = \\frac{\\ln 100}{\\ln 3} = \\frac{4.605170}{1.098612} = 4.1918$$
-
-The solution is about $4.19$, which is not greater than $5$, so the statement is False.`,
-      `**C.** → True
-
-Logarithms turn the exponent into a factor:
-
-$$(x + 1)\\ln 5 = \\ln 30$$
-
-$$x + 1 = \\frac{\\ln 30}{\\ln 5}$$
-
-$$x = \\frac{\\ln 30}{\\ln 5} - 1 = 2.1133 - 1 = 1.1133$$
-
-The written expression is exactly this solution, so the statement is True.`,
-      `**D.** → False
-
-Dividing by the base does not undo an exponent; only a logarithm does.
-
-$$x = \\log_{2} 7 = 2.8074 \\neq 3.5$$
-
-Checking the candidate's value: $2^{3.5} = 11.3137$, which is not $7$. The statement is False.`,
-      `**E.** → True
-
-Write both sides as powers of $2$, using $0.5 = 2^{-1}$:
+A reciprocal base flips the sign of the exponent, since $\\frac{1}{2} = 2^{-1}$.
 
 $$2^{-x} = 2^{3}$$
 
-$$-x = 3$$
-
 $$x = -3$$
 
-The unique solution is negative, so the statement is True.`,
+The solution lies below zero, so the statement is True.`,
+      `**B.** → True
+
+The same flip works with base three:
+
+$$3^{-x} = 3^{2}$$
+
+$$x = -2$$
+
+Comparing with the solution $-3$ from claim A, the larger of the two negative numbers is $-2$, so the statement is True.`,
+      `**C.** → True
+
+Write the reciprocal on the right as a negative power:
+
+$$2^{-x} = 2^{-3}$$
+
+$$x = 3$$
+
+The plain equation $2^{x} = 8$ gives the same exponent, so the statement is True.`,
+      `**D.** → False
+
+An exponential expression with a positive base is positive for every exponent, so it can never reach a negative value. No solution exists and the statement is False.`,
+      `**E.** → False
+
+The range of an exponential function is only the positive numbers:
+
+$$a^{x} > 0 \\quad\\text{for all real } x$$
+
+For $b \\le 0$ there is nothing to solve, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
-    sort_order: 107,
-    solution_overview: `When the bases cannot be matched, one applies a logarithm to both sides and uses the power law $\\ln(a^{x}) = x \\ln a$ to bring the unknown down from the exponent.`,
+    difficulty_level: `2/5`,
+    sort_order: 99,
+    solution_overview: `A reciprocal base is a negative exponent. The range of $a^{x}$ is the positive half-line, which decides all existence questions at a glance.`,
   },
   {
-    id: `math-4-108`,
-    case_id: `MATH 4.108`,
-    title: `Exponentials on both sides`,
+    id: `math-4-100`,
+    case_id: `MATH 4.100`,
+    title: `Doubling a capital at a fixed rate`,
     subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `A capital grows by $4\\%$ per year with annual compounding, so it is multiplied by $1.04$ each year. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $2^{x} = 3^{x}$ has exactly one solution.`,
-      `The equation $2^{x+1} = 3^{x}$ is solved by $x = \\frac{\\ln 2}{\\ln 3 - \\ln 2}$.`,
-      `The equation $4^{x} = 2 \\cdot 2^{x}$ has the solution $x = 1$.`,
-      `The equation $3^{x} = 2^{x} + 1$ is solved by $x = 0$ only.`,
-      `For every real $x$ the expression $2^{x} \\cdot 2^{-x}$ equals $1$.`,
+      `The time needed to double the capital does not depend on how much money was invested at the start.`,
+      `The capital doubles in fewer than $18$ years.`,
+      `Tripling the capital takes more than twice as long as doubling it.`,
+      `Doubling the interest rate to $8\\%$ exactly halves the doubling time.`,
+      `The doubling time is the same no matter which currency the capital is measured in.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Growth is written as a starting amount times a yearly factor. The doubling condition is
+
+$$K_{0} \\cdot 1.04^{t} = 2K_{0}$$
+
+The starting amount cancels on both sides, leaving $1.04^{t} = 2$. Since the initial capital has disappeared from the equation, the statement is True.`,
+      `**B.** → True
+
+Take logarithms of both sides and isolate the time.
+
+$$t = \\frac{\\ln 2}{\\ln 1.04}$$
+
+$$t \\approx 17.67$$
+
+That is below the stated bound, so the statement is True.`,
+      `**C.** → False
+
+The tripling time follows the same recipe.
+
+$$t = \\frac{\\ln 3}{\\ln 1.04} \\approx 28.01$$
+
+Twice the doubling time is about $35.3$ years, which is more. Logarithmic growth times grow slower than the factor itself, so the statement is False.`,
+      `**D.** → False
+
+With the doubled rate the yearly factor is $1.08$, not $1.04^{2}$.
+
+$$t = \\frac{\\ln 2}{\\ln 1.08} \\approx 9.01$$
+
+Half of the original time would be about $8.84$ years, and the true value is bigger, so the statement is False.`,
+      `**E.** → True
+
+Changing the currency multiplies the starting amount by a constant, and that constant cancels exactly as in claim A. The doubling equation is untouched, so the statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 100,
+    solution_overview: `Compound growth is $K_{0} q^{t}$. Any question about relative growth cancels $K_{0}$, and the remaining exponential equation is solved by a logarithm of any base.`,
+  },
+  {
+    id: `math-4-101`,
+    case_id: `MATH 4.101`,
+    title: `A substance losing five percent a year`,
+    subsection: `4.4`,
+    context: `A radioactive sample loses $5\\%$ of its mass every year, so the remaining mass is multiplied by $0.95$ annually. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The half-life of the sample is longer than $13$ years.`,
+      `After two half-lives exactly a quarter of the original mass is left.`,
+      `The time until only a tenth of the mass remains is more than three half-lives.`,
+      `Doubling the annual loss to $10\\%$ halves the half-life.`,
+      `Under this model the mass reaches zero after a finite number of years.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The half-life solves the decay equation with the target one half.
+
+$$0.95^{t} = \\frac{1}{2}$$
+
+$$t = \\frac{\\ln 0.5}{\\ln 0.95} \\approx 13.51$$
+
+That exceeds the stated bound, so the statement is True.`,
+      `**B.** → True
+
+Two half-lives multiply the mass by one half twice.
+
+$$\\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$$
+
+The factor for repeated periods is a product, not a sum, so the statement is True.`,
+      `**C.** → True
+
+Solve for the time that leaves a tenth.
+
+$$t = \\frac{\\ln 0.1}{\\ln 0.95} \\approx 44.89$$
+
+Three half-lives make about $40.5$ years, which is less, so the statement is True.`,
+      `**D.** → False
+
+With the larger loss the yearly factor is $0.9$.
+
+$$t = \\frac{\\ln 0.5}{\\ln 0.9} \\approx 6.58$$
+
+Half of the original half-life would be about $6.76$ years, so the two numbers differ and the statement is False.`,
+      `**E.** → False
+
+Each year the mass is multiplied by a positive factor, so it stays strictly positive:
+
+$$m_{0} \\cdot 0.95^{t} > 0 \\quad\\text{for all } t$$
+
+Exponential decay approaches zero without ever reaching it, so the statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 101,
+    solution_overview: `Decay is $m_{0} q^{t}$ with $0 < q < 1$. Half-life and any other target level come from one logarithm, and the model never reaches zero exactly.`,
+  },
+  {
+    id: `math-4-102`,
+    case_id: `MATH 4.102`,
+    title: `A culture that triples every four hours`,
+    subsection: `4.4`,
+    context: `A bacterial culture triples its size every four hours. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The growth factor for one single hour is an irrational number.`,
+      `Over a full day the culture multiplies by more than $30$.`,
+      `The doubling time of the culture is shorter than three hours.`,
+      `In two hours the culture more than doubles.`,
+      `The time needed to grow tenfold is less than twice the tripling time.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Four equal hourly steps must multiply to the factor three, so the hourly factor is the fourth root.
+
+$$q = 3^{1/4}$$
+
+A root of an integer that is not a perfect fourth power cannot be written as a ratio of integers, so the statement is True.`,
+      `**B.** → True
+
+A day contains six tripling periods.
+
+$$3^{6} = 729$$
+
+That is far above the stated threshold, so the statement is True.`,
+      `**C.** → True
+
+Solve the growth equation for the factor two.
+
+$$3^{t/4} = 2$$
+
+$$t = \\frac{4\\ln 2}{\\ln 3} \\approx 2.52$$
+
+That is below three hours, so the statement is True.`,
+      `**D.** → False
+
+Two hours are half a tripling period.
+
+$$3^{1/2} \\approx 1.73$$
+
+The culture grows by less than a factor two, so the statement is False.`,
+      `**E.** → False
+
+Solve for the tenfold time.
+
+$$t = \\frac{4\\ln 10}{\\ln 3} \\approx 8.38$$
+
+Twice the tripling period is exactly eight hours, which is less, so the statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 102,
+    solution_overview: `Write the size as $3^{t/4}$. Every question is then one exponential equation, and comparisons of times follow from comparing logarithms, not the factors themselves.`,
+  },
+  {
+    id: `math-4-103`,
+    case_id: `MATH 4.103`,
+    title: `A quadratic hidden behind base two`,
+    subsection: `4.4`,
+    context: `The equation $4^{x} - 5 \\cdot 2^{x} + 4 = 0$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The substitution $u = 2^{x}$ turns the equation into a quadratic one.`,
+      `The equation has two real solutions.`,
+      `Both solutions are positive.`,
+      `The sum of all solutions equals the number of solutions.`,
+      `Every positive root of the auxiliary quadratic produces a real solution of the original equation.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The first term is the square of the substituted quantity, because
+
+$$4^{x} = (2^{x})^{2} = u^{2}$$
+
+so the whole equation reads
+
+$$u^{2} - 5u + 4 = 0$$
+
+That is a quadratic in the new unknown, so the statement is True.`,
+      `**B.** → True
+
+Solving the auxiliary quadratic:
+
+$$u = 1 \\quad\\text{or}\\quad u = 4$$
+
+Both values are positive, so both can be converted back:
+
+$$2^{x} = 1 \\Rightarrow x = 0, \\qquad 2^{x} = 4 \\Rightarrow x = 2$$
+
+Two real solutions exist, so the statement is True.`,
+      `**C.** → False
+
+One of the two exponents obtained above is zero, and zero is not positive, so the statement is False.`,
+      `**D.** → True
+
+The solutions are zero and two, so their sum is
+
+$$0 + 2 = 2$$
+
+There are also exactly two solutions, so the two numbers agree and the statement is True.`,
+      `**E.** → True
+
+The equation $2^{x} = u$ is solvable exactly when $u > 0$, because the range of an exponential function is the positive half-line. Every positive root therefore returns one real exponent, so the statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 103,
+    solution_overview: `Substituting $u = a^{x}$ converts $a^{2x} + pa^{x} + q = 0$ into a quadratic. Only positive roots may be converted back, since $a^{x}$ is never zero or negative.`,
+  },
+  {
+    id: `math-4-104`,
+    case_id: `MATH 4.104`,
+    title: `A quadratic hidden behind base three`,
+    subsection: `4.4`,
+    context: `The equation $9^{x} - 4 \\cdot 3^{x} + 3 = 0$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Its two solutions are consecutive integers.`,
+      `The equation has a negative solution.`,
+      `Replacing every base three by base five in the equation leaves the solution set unchanged.`,
+      `One of the solutions is irrational.`,
+      `The product of all solutions is zero.`,
+    ],
+    answer_key: [true, false, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+With $u = 3^{x}$ the first term becomes $u^{2}$, so
+
+$$u^{2} - 4u + 3 = 0$$
+
+$$u = 1 \\quad\\text{or}\\quad u = 3$$
+
+Both are positive, so both convert back:
+
+$$x = 0 \\quad\\text{or}\\quad x = 1$$
+
+These two whole numbers follow one another directly, so the statement is True.`,
+      `**B.** → False
+
+The two exponents found above are zero and one. Neither lies below zero, so the statement is False.`,
+      `**C.** → False
+
+The auxiliary quadratic is untouched by the change of base, so the roots are still $u = 1$ and $u = 3$. Converting back with the new base gives
+
+$$5^{x} = 3 \\Rightarrow x = \\log_{5} 3 \\approx 0.68$$
+
+That is not the earlier exponent one, so the solution set changes and the statement is False.`,
+      `**D.** → False
+
+Both exponents are whole numbers, and a whole number is a ratio of integers, so the statement is False.`,
+      `**E.** → True
+
+One of the solutions is zero, and a product containing a zero factor is zero, so the statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 104,
+    solution_overview: `The substitution removes the base entirely, but converting the roots back does depend on the base. Only the auxiliary quadratic is base-free.`,
+  },
+  {
+    id: `math-4-105`,
+    case_id: `MATH 4.105`,
+    title: `An extraneous candidate in a logarithmic equation`,
+    subsection: `4.4`,
+    context: `The equation $\\log x + \\log(x-3) = 1$ is discussed, where $\\log$ is the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Exactly one candidate survives the domain check.`,
+      `The surviving solution is a prime number.`,
+      `The rejected candidate is negative.`,
+      `Removing the logarithms produces a linear equation.`,
+      `The equation is equivalent to $\\log\\big(x(x-3)\\big) = 1$ on the domain of the original expression.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Taking logarithms of both sides:
+Both arguments must be positive, which forces $x > 3$. Combining the logarithms and undoing the decadic base gives
 
-$$x \\ln 2 = x \\ln 3$$
+$$x(x-3) = 10$$
 
-$$x(\\ln 2 - \\ln 3) = 0$$
+$$x^{2} - 3x - 10 = 0$$
 
-Because $\\ln 2 \\neq \\ln 3$, the bracket is not zero, so the only possibility is
+$$x = 5 \\quad\\text{or}\\quad x = -2$$
 
-$$x = 0$$
-
-Exactly one solution exists, so the statement is True.`,
+Only the first clears the domain, so the statement is True.`,
       `**B.** → True
 
-Logarithms make both sides linear in $x$:
-
-$$(x + 1)\\ln 2 = x \\ln 3$$
-
-$$x \\ln 2 + \\ln 2 = x \\ln 3$$
-
-$$\\ln 2 = x(\\ln 3 - \\ln 2)$$
-
-$$x = \\frac{\\ln 2}{\\ln 3 - \\ln 2} = \\frac{0.693147}{0.405465} = 1.7095$$
-
-The written expression is the solution, so the statement is True.`,
+The surviving root is five, which has no divisors besides one and itself, so the statement is True.`,
       `**C.** → True
 
-Both sides become powers of $2$: $4^{x} = 2^{2x}$ and $2 \\cdot 2^{x} = 2^{x+1}$.
-
-$$2x = x + 1$$
-
-$$x = 1$$
-
-The solution is $1$, so the statement is True.`,
+The discarded root is $-2$, a number below zero, so the statement is True.`,
       `**D.** → False
 
-Test the two obvious candidates directly:
-
-$$x = 0: \\quad 3^{0} = 1, \\quad 2^{0} + 1 = 2$$
-
-so $x = 0$ fails, while
-
-$$x = 1: \\quad 3^{1} = 3, \\quad 2^{1} + 1 = 3$$
-
-so $x = 1$ works. The listed solution is wrong, so the statement is False.`,
+The product of the two arguments contains a squared term, so the resulting equation is quadratic. The statement is False.`,
       `**E.** → True
 
-Multiplying powers with the same base adds the exponents:
+The product law $\\log a + \\log b = \\log(ab)$ holds whenever both arguments are positive, which is exactly the domain of the original left side. On that set the two equations have identical solutions, so the statement is True.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 105,
+    solution_overview: `Combining logarithms can widen the domain, which is how extraneous candidates appear. Always compare the final candidates with the domain of the untouched equation.`,
+  },
+  {
+    id: `math-4-106`,
+    case_id: `MATH 4.106`,
+    title: `Comparing logarithms without a calculator`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$\\log_{2} 5$ is greater than $\\log_{3} 5$.`,
+      `The product $\\log_{2} 5 \\cdot \\log_{5} 2$ equals one.`,
+      `$\\log_{4} 9$ and $\\log_{2} 3$ are equal.`,
+      `$\\log_{9} 4$ is larger than one.`,
+      `For a fixed argument $b > 1$, the value of $\\log_{a} b$ increases when the base $a > 1$ increases.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
 
-$$2^{x} \\cdot 2^{-x} = 2^{x - x} = 2^{0} = 1$$
+Change both to natural logarithms.
 
-The product is $1$ for every real $x$, so the statement is True.`,
+$$\\log_{2} 5 = \\frac{\\ln 5}{\\ln 2}, \\qquad \\log_{3} 5 = \\frac{\\ln 5}{\\ln 3}$$
+
+The numerators agree and the first denominator is smaller, so the first fraction is larger. The statement is True.`,
+      `**B.** → True
+
+Swapping base and argument inverts the value:
+
+$$\\log_{2} 5 \\cdot \\log_{5} 2 = \\frac{\\ln 5}{\\ln 2} \\cdot \\frac{\\ln 2}{\\ln 5} = 1$$
+
+Everything cancels, so the statement is True.`,
+      `**C.** → True
+
+Both base and argument are squared in the first expression:
+
+$$\\log_{4} 9 = \\frac{\\ln 9}{\\ln 4} = \\frac{2\\ln 3}{2\\ln 2} = \\log_{2} 3$$
+
+The factor two cancels, so the statement is True.`,
+      `**D.** → False
+
+The argument is smaller than the base, so the logarithm is below one:
+
+$$\\log_{9} 4 = \\frac{\\ln 4}{\\ln 9} \\approx 0.63$$
+
+That is under the stated bound, so the statement is False.`,
+      `**E.** → False
+
+Write the value as a quotient of natural logarithms:
+
+$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$
+
+A larger base means a larger denominator, so the value falls instead of rising. The statement is False.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 106,
+    solution_overview: `Everything follows from the change-of-base formula $\\log_{a} b = \\frac{\\ln b}{\\ln a}$: comparisons become comparisons of two fractions with the same numerator.`,
+  },
+  {
+    id: `math-4-107`,
+    case_id: `MATH 4.107`,
+    title: `Decadic logarithms and hidden traps`,
+    subsection: `4.4`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The solution of $\\log(x^{3}) - \\log(x^{2}) = 1$ is smaller than $5$.`,
+      `The solution of $\\log\\sqrt{x} = 1$ is greater than the solution of $\\log x = 2$.`,
+      `The identity $\\log(x^{2}) = 2\\log x$ holds for every real $x \\neq 0$.`,
+      `The equation $\\log(x-1) + \\log(x+1) = \\log 3$ has an irrational solution.`,
+      `The equation $(\\log x)^{2} = \\log(x^{2})$ has two solutions.`,
+    ],
+    answer_key: [false, false, false, false, true],
+    tactical_explanations: [
+      `**A.** → False
+
+Pull the exponents in front and abbreviate $t = \\log x$.
+
+$$3t - 2t = 1$$
+
+$$t = 1 \\Rightarrow x = 10$$
+
+Ten lies above the stated bound, so the statement is False.`,
+      `**B.** → False
+
+A square root is the power one half.
+
+$$\\frac{1}{2}\\log x = 1 \\Rightarrow \\log x = 2 \\Rightarrow x = 100$$
+
+The comparison equation gives exactly the same value, so neither is greater and the statement is False.`,
+      `**C.** → False
+
+The left side is defined for every non-zero number, but the right side needs a positive argument. For a negative $x$ the right side does not exist while the left one does, so the identity fails there. The correct version carries an absolute value:
+
+$$\\log(x^{2}) = 2\\log|x|$$
+
+The statement as written is False.`,
+      `**D.** → False
+
+Combine the logarithms and drop them.
+
+$$x^{2} - 1 = 3$$
+
+$$x^{2} = 4$$
+
+Only the positive root lies in the domain, so $x = 2$, a whole number. The statement is False.`,
+      `**E.** → True
+
+Substitute $t = \\log x$ and pull the exponent out on the right.
+
+$$t^{2} = 2t$$
+
+$$t(t-2) = 0 \\Rightarrow t = 0 \\text{ or } t = 2$$
+
+Both give admissible positive arguments, namely $x = 1$ and $x = 100$, so two solutions exist and the statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 107,
+    solution_overview: `Abbreviating $t = \\log x$ turns these equations into linear or quadratic problems in $t$. The traps sit in the domain: $\\log(x^{2})$ and $2\\log x$ do not have the same domain.`,
+  },
+  {
+    id: `math-4-108`,
+    case_id: `MATH 4.108`,
+    title: `A small exponential system`,
+    subsection: `4.4`,
+    context: `The system $2^{x} \\cdot 2^{y} = 32$ and $2^{x-y} = 2$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Comparing exponents reduces the system to a linear system in $x$ and $y$.`,
+      `In the solution the first unknown is larger than the second.`,
+      `The system has infinitely many solutions.`,
+      `The two unknowns are consecutive integers.`,
+      `The product of the two unknowns is a perfect square.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Multiplying powers of one base adds the exponents, and both right sides are powers of two.
+
+$$2^{x+y} = 2^{5}, \\qquad 2^{x-y} = 2^{1}$$
+
+$$x + y = 5, \\qquad x - y = 1$$
+
+Two linear equations remain, so the statement is True.`,
+      `**B.** → True
+
+Adding the two linear equations eliminates the second unknown.
+
+$$2x = 6 \\Rightarrow x = 3, \\qquad y = 2$$
+
+The first value is the larger one, so the statement is True.`,
+      `**C.** → False
+
+The linear system has a unique solution, because the two equations are not multiples of one another. The statement is False.`,
+      `**D.** → True
+
+The values three and two follow one another directly, so the statement is True.`,
+      `**E.** → False
+
+The product is
+
+$$3 \\cdot 2 = 6$$
+
+Six is not the square of a whole number, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 108,
-    solution_overview: `An equation with different bases on both sides is solved by taking logarithms and collecting the unknown, since $\\ln(a^{x}) = x \\ln a$ makes the equation linear in $x$.`,
+    solution_overview: `Reduce every equation to one base, compare exponents, and solve the resulting linear system. The exponential layer disappears completely in the first step.`,
   },
   {
     id: `math-4-109`,
     case_id: `MATH 4.109`,
-    title: `Logarithmic equations with coefficients`,
+    title: `Bounds on solutions of composite logarithmic equations`,
+    subsection: `4.4`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm of $x$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The solution of $\\log\\sqrt{x} + \\log x^{3} - \\log x = 5$ is larger than $50$.`,
+      `The solution of $\\log x^{2} - \\log\\sqrt[3]{x} = \\frac{5}{3}$ is a two-digit number.`,
+      `The solution of $\\dfrac{\\log x^{4}}{1 + \\log 10} = \\log x + 1$ is smaller than the solution of $\\log x = 2$.`,
+      `The equation $(\\log x)^{2} = \\log x + 6$ has exactly one solution.`,
+      `The solution of $\\log x^{3} + \\log\\frac{1}{x} = \\log 100$ is greater than $10$.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Every power inside a logarithm becomes a factor in front, so with $t = \\log x$:
+
+$$\\frac{t}{2} + 3t - t = 5$$
+
+$$\\frac{5t}{2} = 5 \\Rightarrow t = 2$$
+
+$$x = 10^{2} = 100$$
+
+That value clears the stated bound, so the statement is True.`,
+      `**B.** → True
+
+A cube root is the power one third.
+
+$$2t - \\frac{t}{3} = \\frac{5}{3}$$
+
+$$\\frac{5t}{3} = \\frac{5}{3} \\Rightarrow t = 1$$
+
+$$x = 10$$
+
+Ten has two digits, so the statement is True.`,
+      `**C.** → True
+
+The decadic logarithm of ten is one, so the denominator is two.
+
+$$\\frac{4t}{2} = t + 1$$
+
+$$2t = t + 1 \\Rightarrow t = 1 \\Rightarrow x = 10$$
+
+The comparison equation gives $x = 100$, which is larger, so the statement is True.`,
+      `**D.** → False
+
+The abbreviation turns this into a quadratic.
+
+$$t^{2} - t - 6 = 0$$
+
+$$t = 3 \\quad\\text{or}\\quad t = -2$$
+
+Both give positive arguments, namely $x = 1000$ and $x = 0.01$, so there are two solutions and the statement is False.`,
+      `**E.** → False
+
+A reciprocal inside a logarithm contributes the negative of the logarithm.
+
+$$3t - t = 2$$
+
+$$t = 1 \\Rightarrow x = 10$$
+
+The solution equals the bound instead of exceeding it, so the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 109,
+    solution_overview: `Set $t = \\log x$ once, then translate roots, powers and reciprocals into coefficients of $t$. Constants such as $\\log 10$ and $\\log 100$ are simply $1$ and $2$.`,
+  },
+  {
+    id: `math-4-110`,
+    case_id: `MATH 4.110`,
+    title: `Logarithms inside logarithms`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The equation $2 \\log_{2} x - \\log_{2}(x + 3) = 1$ has the solution $x = 6$.`,
-      `The equation $\\log_{3}(x^{2}) = 2 \\log_{3} x$ holds for every $x > 0$.`,
-      `For $x = -2$ the two sides of $\\log_{3}(x^{2}) = 2 \\log_{3} x$ are still equal.`,
-      `The equation $\\frac{1}{2}\\log_{5} x = 1$ is solved by $x = 25$.`,
-      `The equation $\\log_{2}(x) = 3 - \\log_{2}(x)$ is solved by $x = 2\\sqrt{2}$.`,
+      `The solution of $\\log_{2}(\\log_{3} x) = 1$ is a perfect square.`,
+      `The solution of $\\log_{3}(\\log_{2} x) = 0$ is smaller than $3$.`,
+      `The solution of $\\log_{2}\\big(\\log_{2}(\\log_{2} x)\\big) = 0$ exceeds $10$.`,
+      `The equation $\\log_{2}(\\log_{3} x) = -1$ has no solution.`,
+      `In an equation $\\log_{a}(\\log_{b} x) = c$ with $a, b > 1$ every solution is greater than one.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Peel the outer logarithm first.
+
+$$\\log_{3} x = 2^{1} = 2$$
+
+$$x = 3^{2} = 9$$
+
+Nine is the square of a whole number, so the statement is True.`,
+      `**B.** → True
+
+An outer logarithm equal to zero means the inner value is one.
+
+$$\\log_{2} x = 3^{0} = 1$$
+
+$$x = 2$$
+
+Two lies below the stated bound, so the statement is True.`,
+      `**C.** → False
+
+Peel the layers one at a time.
+
+$$\\log_{2}(\\log_{2} x) = 1 \\Rightarrow \\log_{2} x = 2 \\Rightarrow x = 4$$
+
+Four does not exceed ten, so the statement is False.`,
+      `**D.** → False
+
+A negative outer value is perfectly legal, because the inner logarithm only has to be positive.
+
+$$\\log_{3} x = 2^{-1} = \\frac{1}{2}$$
+
+$$x = \\sqrt{3}$$
+
+A solution exists, so the statement is False.`,
+      `**E.** → True
+
+The outer equation forces the inner logarithm to be a power of $a$, hence strictly positive:
+
+$$\\log_{b} x = a^{c} > 0$$
+
+With a base above one, a positive logarithm means an argument above one, so the statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 110,
+    solution_overview: `Nested logarithms are undone from the outside inwards, one definition at a time. Each layer only requires its own argument to be positive.`,
+  },
+  {
+    id: `math-4-111`,
+    case_id: `MATH 4.111`,
+    title: `Exponential equations with untidy solutions`,
+    subsection: `4.4`,
+    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The solution of $2^{x} = 5$ lies strictly between $2$ and $3$.`,
+      `The solution of $3^{x} = 2^{x+1}$ is smaller than $2$.`,
+      `The equation $5^{x} = 2^{x}$ has exactly one solution.`,
+      `The solution of $2^{x} = 3^{x-1}$ is greater than $3$.`,
+      `The equation $2^{x} = x^{2}$ has exactly one solution.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+No power of two hits five exactly, so bracket the value instead of computing it.
+
+$$2^{2} = 4 < 5 < 8 = 2^{3}$$
+
+Since $2^{x}$ is strictly increasing, the exponent must lie between the two integers, so the statement is True.`,
+      `**B.** → True
+
+Take logarithms of both sides and collect the unknown.
+
+$$x\\ln 3 = (x+1)\\ln 2$$
+
+$$x(\\ln 3 - \\ln 2) = \\ln 2$$
+
+$$x = \\frac{\\ln 2}{\\ln 1.5} \\approx 1.71$$
+
+That is under the stated bound, so the statement is True.`,
+      `**C.** → True
+
+Divide both sides by the positive right-hand side.
+
+$$\\left(\\frac{5}{2}\\right)^{x} = 1$$
+
+An exponential with base different from one equals one only at exponent zero, so exactly one solution exists and the statement is True.`,
+      `**D.** → False
+
+Logarithms again separate the unknown.
+
+$$x\\ln 2 = (x-1)\\ln 3$$
+
+$$x = \\frac{\\ln 3}{\\ln 1.5} \\approx 2.71$$
+
+That stays below three, so the statement is False.`,
+      `**E.** → False
+
+Two obvious matches are the exponents that make both sides equal powers, namely $x = 2$ and $x = 4$, since
+
+$$2^{2} = 2^{2}, \\qquad 2^{4} = 4^{2}$$
+
+For negative arguments the parabola falls from large values while the exponential tends to zero, so they cross once more below zero. Three solutions exist, so the statement is False.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 111,
+    solution_overview: `When the bases differ, take a logarithm of both sides and collect the unknown. When the solution is untidy, bracket it between neighbouring integer powers instead of computing it.`,
+  },
+  {
+    id: `math-4-112`,
+    case_id: `MATH 4.112`,
+    title: `When does the smaller fund overtake the bigger one`,
+    subsection: `4.4`,
+    context: `Fund A starts with $1000$ EUR and grows by $6\\%$ per year. Fund B starts with $2000$ EUR and grows by $3\\%$ per year. Both compound annually. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Fund A first exceeds fund B during the twenty-fifth year.`,
+      `The moment of overtaking does not depend on the ratio of the two starting amounts.`,
+      `Doubling both starting amounts leaves the moment of overtaking unchanged.`,
+      `Fund A overtakes fund B within the first twenty years.`,
+      `The overtaking time can be computed with logarithms of any base, and the base does not change the result.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Set the two capitals equal and gather the growth factors on one side.
+
+$$1000 \\cdot 1.06^{t} = 2000 \\cdot 1.03^{t}$$
+
+$$\\left(\\frac{1.06}{1.03}\\right)^{t} = 2$$
+
+$$t = \\frac{\\ln 2}{\\ln(1.06/1.03)} \\approx 24.14$$
+
+The crossing happens after $24$ full years, hence inside the twenty-fifth, so the statement is True.`,
+      `**B.** → False
+
+The number that appears on the right of the reduced equation is exactly the ratio of the starting amounts. Changing that ratio changes the logarithm, so the statement is False.`,
+      `**C.** → True
+
+Doubling both amounts multiplies each side by the same factor, which cancels:
+
+$$\\frac{2 \\cdot 1000}{2 \\cdot 2000} = \\frac{1000}{2000}$$
+
+The reduced equation is untouched, so the statement is True.`,
+      `**D.** → False
+
+The computed crossing time is above twenty-four years, well past the stated window, so the statement is False.`,
+      `**E.** → True
+
+Change of base multiplies numerator and denominator by the same constant:
+
+$$\\frac{\\log_{a} 2}{\\log_{a} q} = \\frac{\\ln 2 / \\ln a}{\\ln q / \\ln a} = \\frac{\\ln 2}{\\ln q}$$
+
+The constant cancels, so the statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 112,
+    solution_overview: `Equal-capital problems reduce to $(q_{A}/q_{B})^{t} = K_{B}/K_{A}$: only the ratio of factors and the ratio of starting amounts matter, and one logarithm of any base finishes the job.`,
+  },
+  {
+    id: `math-4-113`,
+    case_id: `MATH 4.113`,
+    title: `A logarithmic equation with a parameter`,
+    subsection: `4.4`,
+    context: `For a parameter $a > 0$ the equation $\\log_{2} x + \\log_{2}(x - a) = 3$ is discussed. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `For every admissible parameter the equation has exactly one solution.`,
+      `The solution grows when the parameter grows.`,
+      `For the boundary case $a = 0$ the solution is irrational.`,
+      `There are parameters for which both roots of the auxiliary quadratic are admissible.`,
+      `The step to $\\log_{2}\\big(x(x-a)\\big) = 3$ is only an equivalence while both factors are positive.`,
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Combining the logarithms and undoing base two gives
+
+$$x(x-a) = 8$$
+
+$$x^{2} - ax - 8 = 0$$
+
+$$x = \\frac{a + \\sqrt{a^{2} + 32}}{2} \\quad\\text{or}\\quad x = \\frac{a - \\sqrt{a^{2} + 32}}{2}$$
+
+The root under the square sign is larger than the parameter, so the second candidate is negative and dies. The first one satisfies
+
+$$x - a = \\frac{\\sqrt{a^{2}+32} - a}{2} > 0$$
+
+so exactly one solution survives and the statement is True.`,
+      `**B.** → True
+
+In the surviving root both the isolated parameter and the square root grow when the parameter grows:
+
+$$x = \\frac{a + \\sqrt{a^{2} + 32}}{2}$$
+
+A sum of two increasing terms is increasing, so the statement is True.`,
+      `**C.** → True
+
+Setting the parameter to zero collapses the quadratic.
+
+$$x^{2} = 8 \\Rightarrow x = 2\\sqrt{2}$$
+
+The square root of two cannot be written as a ratio of integers, so the statement is True.`,
+      `**D.** → False
+
+The product of the two roots of the quadratic is $-8$, so the roots always have opposite signs. A negative root can never satisfy the domain condition, so the statement is False.`,
+      `**E.** → True
+
+The product law needs both arguments positive; otherwise the combined form has a wider domain than the original. That extra domain is precisely where extraneous candidates appear, so the statement is True.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 113,
+    solution_overview: `With a parameter, argue through the structure of the quadratic: the product of the roots is negative, so the sign pattern is fixed for every parameter value.`,
+  },
+  {
+    id: `math-4-114`,
+    case_id: `MATH 4.114`,
+    title: `Which logarithm identities really hold`,
+    subsection: `4.4`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `There is no pair of positive numbers $a$ and $b$ with $\\log(a+b) = \\log a + \\log b$.`,
+      `The identity $\\log(ab) = \\log a + \\log b$ holds for all positive $a$ and $b$.`,
+      `The quotient $\\dfrac{\\log a}{\\log b}$ equals $\\log\\dfrac{a}{b}$ for all admissible $a$ and $b$.`,
+      `For admissible bases and arguments, $\\log_{a} b$ and $\\log_{b} a$ are reciprocals of one another.`,
+      `The identity $\\log(x^{2}) = 2\\log|x|$ holds for every $x \\neq 0$.`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
       `**A.** → False
 
-Move the coefficient inside and merge with the quotient law:
+The claim is a universal denial, so one counterexample kills it. Take both numbers equal to two:
 
-$$\\log_{2}\\frac{x^{2}}{x + 3} = 1$$
+$$\\log(2+2) = \\log 4, \\qquad \\log 2 + \\log 2 = \\log 4$$
 
-$$x^{2} = 2(x + 3)$$
-
-$$x^{2} - 2x - 6 = 0$$
-
-$$x = 1 \\pm \\sqrt{7}$$
-
-Numerically the positive root is $1 + 2.6458 = 3.6458$, not $6$. Checking the claimed value: $\\frac{6^{2}}{9} = 4 \\neq 2$. The statement is False.`,
+The two sides agree, so such a pair exists and the statement is False.`,
       `**B.** → True
 
-The power law states that an exponent inside the argument becomes a factor in front:
+This is the product law, valid on the whole domain of both sides:
 
-$$\\log_{3}(x^{2}) = 2 \\log_{3} x \\quad \\text{for } x > 0$$
+$$\\log(ab) = \\log a + \\log b \\quad\\text{for } a, b > 0$$
 
-Both sides are defined precisely when $x > 0$, and there they agree identically. The statement is True.`,
+Nothing more is required, so the statement is True.`,
       `**C.** → False
 
-The left side is defined, because the argument is squared:
+The quotient law concerns a difference, not a ratio of logarithms:
 
-$$\\log_{3}((-2)^{2}) = \\log_{3} 4$$
+$$\\log\\frac{a}{b} = \\log a - \\log b$$
 
-The right side needs $\\log_{3}(-2)$, which does not exist. One side is undefined, so the two cannot be equal and the statement is False.`,
+A single counterexample confirms the failure: with $a = 100$ and $b = 10$ the left side of the claim is two while the right side is one. The statement is False.`,
       `**D.** → True
-
-Multiplying by $2$ isolates the logarithm:
-
-$$\\log_{5} x = 2$$
-
-$$x = 5^{2} = 25$$
-
-The reported value is the solution, so the statement is True.`,
-      `**E.** → True
-
-Collect the two equal logarithms on one side:
-
-$$2 \\log_{2} x = 3$$
-
-$$\\log_{2} x = \\frac{3}{2}$$
-
-$$x = 2^{3/2} = 2\\sqrt{2} = 2.8284$$
-
-The reported value is exactly this power, so the statement is True.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 109,
-    solution_overview: `The power law $c \\log_{a} u = \\log_{a}(u^{c})$ moves coefficients into the argument, and the resulting equation is read back in exponential form. Candidate values must keep all arguments positive.`,
-  },
-  {
-    id: `math-4-110`,
-    case_id: `MATH 4.110`,
-    title: `Change of base and comparisons`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The value of $\\log_{4} 8$ equals $1.5$.`,
-      `For the same argument $10$, the logarithm to base $2$ is larger than the logarithm to base $10$.`,
-      `The equation $\\log_{2} x = \\log_{8} x$ is solved by every positive $x$.`,
-      `The number $\\log_{3} 20$ lies between $2$ and $3$.`,
-      `The equation $\\log_{2} x + \\log_{4} x = 3$ is solved by $x = 4$.`,
-    ],
-    answer_key: [true, true, false, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Both numbers are powers of $2$, so change to base $2$:
-
-$$\\log_{4} 8 = \\frac{\\log_{2} 8}{\\log_{2} 4} = \\frac{3}{2} = 1.5$$
-
-The value is exactly $1.5$, so the statement is True.`,
-      `**B.** → True
 
 Change both to natural logarithms:
 
-$$\\log_{2} 10 = \\frac{2.302585}{0.693147} = 3.3219, \\qquad \\log_{10} 10 = 1$$
+$$\\log_{a} b \\cdot \\log_{b} a = \\frac{\\ln b}{\\ln a} \\cdot \\frac{\\ln a}{\\ln b} = 1$$
 
-A smaller base needs a larger exponent to reach the same number. Since $3.3219 > 1$, the statement is True.`,
-      `**C.** → False
-
-Change the right side to base $2$:
-
-$$\\log_{8} x = \\frac{\\log_{2} x}{3}$$
-
-$$\\log_{2} x = \\frac{\\log_{2} x}{3}$$
-
-$$\\frac{2}{3}\\log_{2} x = 0$$
-
-$$\\log_{2} x = 0 \\Rightarrow x = 1$$
-
-Only $x = 1$ works, not every positive $x$, so the statement is False.`,
-      `**D.** → True
-
-Bracket the argument by powers of $3$:
-
-$$3^{2} = 9 < 20 < 27 = 3^{3}$$
-
-Because the logarithm is increasing, the exponent belonging to $20$ lies between $2$ and $3$; numerically
-
-$$\\log_{3} 20 = \\frac{2.995732}{1.098612} = 2.7268$$
-
-The statement is True.`,
+A product equal to one means the two numbers are reciprocals, so the statement is True.`,
       `**E.** → True
 
-Write everything in base $2$, using $\\log_{4} x = \\frac{\\log_{2} x}{2}$:
+The square is positive for every non-zero argument, and squaring the absolute value gives the same number:
 
-$$\\log_{2} x + \\frac{\\log_{2} x}{2} = 3$$
+$$x^{2} = |x|^{2} \\Rightarrow \\log(x^{2}) = 2\\log|x|$$
 
-$$\\frac{3}{2}\\log_{2} x = 3$$
-
-$$\\log_{2} x = 2 \\Rightarrow x = 4$$
-
-The reported value is the solution, so the statement is True.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 110,
-    solution_overview: `The change-of-base formula $\\log_{a} b = \\frac{\\ln b}{\\ln a}$ turns any logarithm into natural logarithms, which makes different bases comparable.`,
-  },
-  {
-    id: `math-4-111`,
-    case_id: `MATH 4.111`,
-    title: `Loan interest and waiting times`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `After $5$ years the debt exceeds $11\\,000$ EUR.`,
-      `The debt needs more than $10$ years to reach $16\\,000$ EUR.`,
-      `At a rate of $7\\%$ the debt triples in less than $16$ years.`,
-      `Halving the interest rate to $3.5\\%$ would more than double the time needed to double the debt.`,
-      `After $3$ years the debt has grown by more than $1800$ EUR.`,
-    ],
-    answer_key: [true, true, false, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Five years of $7\\%$ growth multiply the debt by $1.07^{5}$:
-
-$$8000 \\cdot 1.07^{5} = 8000 \\cdot 1.402552 = 11220.41$$
-
-The debt is about $11\\,220.41$ EUR, which is more than $11\\,000$, so the statement is True.`,
-      `**B.** → True
-
-Doubling means $1.07^{n} = 2$:
-
-$$n = \\frac{\\ln 2}{\\ln 1.07} = \\frac{0.693147}{0.067659} = 10.2448$$
-
-About $10.24$ years are needed, which is more than $10$, so the statement is True.`,
-      `**C.** → False
-
-Tripling means $1.07^{n} = 3$:
-
-$$n = \\frac{\\ln 3}{\\ln 1.07} = \\frac{1.098612}{0.067659} = 16.2372$$
-
-About $16.24$ years are needed, which is more than $16$, so the statement is False.`,
-      `**D.** → False
-
-At $3.5\\%$ the doubling time is
-
-$$n = \\frac{\\ln 2}{\\ln 1.035} = \\frac{0.693147}{0.034401} = 20.1489$$
-
-Twice the original doubling time is $2 \\cdot 10.2448 = 20.4896$ years. Since $20.15 < 20.49$, the time is not more than doubled, so the statement is False.`,
-      `**E.** → True
-
-Compute the amount after three years and subtract the original debt:
-
-$$8000 \\cdot 1.07^{3} = 8000 \\cdot 1.225043 = 9800.34$$
-
-$$9800.34 - 8000 = 1800.34$$
-
-The growth is about $1800.34$ EUR, which exceeds $1800$, so the statement is True.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 111,
-    solution_overview: `A debt of $8000$ EUR grows by $7\\%$ per year, so after $n$ years it is $8000 \\cdot 1.07^{n}$. Amount questions are evaluations; time questions are exponential equations solved with logarithms.`,
-  },
-  {
-    id: `math-4-112`,
-    case_id: `MATH 4.112`,
-    title: `Substitution with the base e`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `After the substitution $u = e^{x}$ the equation reads $u^{2} - u - 6 = 0$.`,
-      `The quadratic has the roots $u = 3$ and $u = -2$.`,
-      `The original equation has two real solutions.`,
-      `The unique solution is $x = \\ln 3$, a number between $1$ and $1.2$.`,
-      `Replacing the constant $-6$ by $+6$ leaves the equation with exactly one real solution.`,
-    ],
-    answer_key: [true, true, false, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The first term is the square of the substituted quantity:
-
-$$e^{2x} = (e^{x})^{2} = u^{2}$$
-
-so the equation becomes
-
-$$u^{2} - u - 6 = 0$$
-
-This is the quadratic named in the claim, so the statement is True.`,
-      `**B.** → True
-
-Factoring the quadratic:
-
-$$u^{2} - u - 6 = (u - 3)(u + 2) = 0$$
-
-$$u = 3 \\quad \\text{or} \\quad u = -2$$
-
-These are exactly the two roots claimed, so the statement is True.`,
-      `**C.** → False
-
-Only positive roots can be converted back, because $e^{x} > 0$ for every real $x$.
-
-$$e^{x} = 3 \\Rightarrow x = \\ln 3, \\qquad e^{x} = -2 \\Rightarrow \\text{no solution}$$
-
-Exactly one real solution survives, so the statement is False.`,
-      `**D.** → True
-
-The surviving branch gives
-
-$$e^{x} = 3$$
-
-$$x = \\ln 3 = 1.098612$$
-
-The value $1.0986$ lies between $1$ and $1.2$, so the statement is True.`,
-      `**E.** → False
-
-The substituted quadratic becomes
-
-$$u^{2} - u + 6 = 0$$
-
-$$D = (-1)^{2} - 4 \\cdot 1 \\cdot 6 = 1 - 24 = -23$$
-
-A negative discriminant leaves no real $u$, hence no real $x$ at all. The statement is False.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 112,
-    solution_overview: `The equation $e^{2x} - e^{x} - 6 = 0$ is quadratic in $u = e^{x}$, because $e^{2x} = (e^{x})^{2}$. Only positive values of $u$ can be converted back, since $e^{x} > 0$.`,
-  },
-  {
-    id: `math-4-113`,
-    case_id: `MATH 4.113`,
-    title: `Exponential and logarithmic cancellation`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The expression $2^{\\log_{2} 9}$ equals $9$.`,
-      `The expression $\\log_{5}(5^{-3})$ equals $\\frac{1}{125}$.`,
-      `The equation $10^{\\log_{10}(x - 1)} = 4$ is solved by $x = 5$.`,
-      `The equation $\\log_{3}(3^{2x-4}) = 0$ is solved by $x = 2$.`,
-      `For every real number $x$ the identity $e^{\\ln x} = x$ holds.`,
-    ],
-    answer_key: [true, false, true, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The exponent is precisely the power of $2$ that produces $9$, so raising $2$ to it returns the argument:
-
-$$2^{\\log_{2} 9} = 9$$
-
-The value is $9$, so the statement is True.`,
-      `**B.** → False
-
-The logarithm returns the exponent itself, not the power:
-
-$$\\log_{5}(5^{-3}) = -3$$
-
-The value $\\frac{1}{125}$ is $5^{-3}$, the number inside, not its logarithm. The statement is False.`,
-      `**C.** → True
-
-Cancellation removes the outer power, keeping the domain condition $x - 1 > 0$:
-
-$$x - 1 = 4$$
-
-$$x = 5$$
-
-The argument $4$ is positive, so the value is admissible and the statement is True.`,
-      `**D.** → True
-
-The logarithm returns the exponent directly:
-
-$$2x - 4 = 0$$
-
-$$x = 2$$
-
-The reported value is the solution, so the statement is True.`,
-      `**E.** → False
-
-The cancellation is valid only where the inner logarithm exists:
-
-$$\\ln x \\text{ is defined only for } x > 0$$
-
-For $x = -1$ or $x = 0$ the left side has no value, so the identity cannot hold for every real $x$. The statement is False.`,
-    ],
-    difficulty_level: `4/5`,
-    sort_order: 113,
-    solution_overview: `Exponential and logarithmic functions with the same base undo each other: $a^{\\log_{a} u} = u$ for $u > 0$ and $\\log_{a}(a^{v}) = v$ for every real $v$.`,
-  },
-  {
-    id: `math-4-114`,
-    case_id: `MATH 4.114`,
-    title: `A system with exponentials`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The first equation is equivalent to $x + y = 5$.`,
-      `The second equation is equivalent to $x - y = 1$.`,
-      `The system is solved by $x = 3$ and $y = 2$.`,
-      `The product $2^{x} \\cdot 2^{y}$ would be $64$ if $x$ and $y$ each increased by $1$.`,
-      `There is a second solution pair with $x$ negative.`,
-    ],
-    answer_key: [true, true, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Multiplying powers with the same base adds the exponents:
-
-$$2^{x} \\cdot 2^{y} = 2^{x+y} = 32 = 2^{5}$$
-
-$$x + y = 5$$
-
-This is the linear equation in the claim, so the statement is True.`,
-      `**B.** → True
-
-Dividing powers with the same base subtracts the exponents:
-
-$$\\frac{2^{x}}{2^{y}} = 2^{x-y} = 2 = 2^{1}$$
-
-$$x - y = 1$$
-
-This is exactly the stated linear equation, so the statement is True.`,
-      `**C.** → True
-
-Adding the two linear equations eliminates $y$:
-
-$$(x + y) + (x - y) = 5 + 1$$
-
-$$2x = 6 \\Rightarrow x = 3$$
-
-$$y = 5 - 3 = 2$$
-
-Both original equations hold for this pair, so the statement is True.`,
-      `**D.** → False
-
-Increasing both exponents by $1$ raises the sum by $2$:
-
-$$2^{(x+1)+(y+1)} = 2^{x+y+2} = 2^{7} = 128$$
-
-The product would be $128$, not $64$, so the statement is False.`,
-      `**E.** → False
-
-The two power equations are equivalent to the linear system
-
-$$x + y = 5, \\qquad x - y = 1$$
-
-Two independent linear equations in two unknowns have exactly one solution, namely $(3, 2)$. No further pair exists, so the statement is False.`,
+Both sides now have the same domain, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 114,
-    solution_overview: `For a system such as $2^{x} \\cdot 2^{y} = 32$ and $2^{x} : 2^{y} = 2$, the power laws $a^{x} a^{y} = a^{x+y}$ and $\\frac{a^{x}}{a^{y}} = a^{x-y}$ turn the two equations into a linear system in $x$ and $y$.`,
+    solution_overview: `A universal claim falls to one counterexample; a genuine law must hold on the full common domain. The absolute value is what repairs the power law for negative arguments.`,
   },
   {
     id: `math-4-115`,
     case_id: `MATH 4.115`,
-    title: `Depreciation of a machine`,
+    title: `Comparing solutions across equations`,
     subsection: `4.4`,
     context: `Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `After $4$ years the machine is worth more than $12\\,000$ EUR.`,
-      `The machine loses half of its value in less than $4$ years.`,
-      `After $10$ years less than $5000$ EUR of value remain.`,
-      `The value reaches exactly zero after $20$ years.`,
-      `The value drops below $8000$ EUR during the seventh year of use.`,
+      `The equation $4^{x} = 8^{x-1}$ has an integer solution.`,
+      `The solution of $9^{x+1} = 27^{x}$ is greater than the solution of $4^{x} = 8^{x-1}$.`,
+      `The solution of $25^{x} = 5$ is not an integer.`,
+      `The equation $8^{x} = 2^{x}$ has infinitely many solutions.`,
+      `The equation $16^{x} = 4^{2x}$ is satisfied by every real number.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Four years of $15\\%$ loss multiply the value by $0.85^{4}$:
+Both sides reduce to base two.
 
-$$24000 \\cdot 0.85^{4} = 24000 \\cdot 0.522006 = 12528.15$$
+$$2^{2x} = 2^{3(x-1)}$$
 
-The value is about $12\\,528.15$ EUR, which is more than $12\\,000$, so the statement is True.`,
+$$2x = 3x - 3 \\Rightarrow x = 3$$
+
+The result is a whole number, so the statement is True.`,
       `**B.** → False
 
-Halving means $0.85^{t} = 0.5$:
+Reduce this one to base three.
 
-$$t = \\frac{\\ln 0.5}{\\ln 0.85} = \\frac{-0.693147}{-0.162519} = 4.2650$$
+$$3^{2(x+1)} = 3^{3x}$$
 
-About $4.27$ years are needed, which is more than $4$, so the statement is False.`,
+$$2x + 2 = 3x \\Rightarrow x = 2$$
+
+The comparison solution from claim A is three, which is larger, so the statement is False.`,
       `**C.** → True
 
-Ten years give the factor
+Here $25 = 5^{2}$, so the equation reads
 
-$$0.85^{10} = 0.196874$$
+$$5^{2x} = 5^{1} \\Rightarrow x = \\frac{1}{2}$$
 
-$$24000 \\cdot 0.196874 = 4724.98$$
-
-The remaining value is about $4724.98$ EUR, which is below $5000$, so the statement is True.`,
+A half is not a whole number, so the statement is True.`,
       `**D.** → False
 
-Each year multiplies the value by the positive factor $0.85$:
+Divide by the right-hand side, which is never zero:
 
-$$24000 \\cdot 0.85^{20} = 24000 \\cdot 0.038760 = 930.23$$
+$$4^{x} = 1$$
 
-The value stays positive forever and only approaches zero, so it is not zero after $20$ years. The statement is False.`,
+An exponential with base different from one hits the value one exactly once, so there is a single solution and the statement is False.`,
       `**E.** → True
 
-Solve $0.85^{t} = \\frac{8000}{24000} = \\frac{1}{3}$:
+Both sides reduce to the same power of two:
 
-$$t = \\frac{\\ln(1/3)}{\\ln 0.85} = \\frac{-1.098612}{-0.162519} = 6.7599$$
+$$2^{4x} = 2^{4x}$$
 
-The threshold is crossed after about $6.76$ years, that is between the sixth and the seventh anniversary, so it happens during the seventh year of use. The statement is True.`,
+The equation is an identity, so every real number works and the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 115,
-    solution_overview: `A machine bought for $24\\,000$ EUR loses $15\\%$ of its value each year, so its value after $t$ years is $24000 \\cdot 0.85^{t}$. Value questions are evaluations; time questions need logarithms, and $\\ln 0.85$ is negative.`,
+    solution_overview: `Reduce to a common base, then compare exponents. If the exponents collapse to the same expression, the equation is an identity rather than a problem with isolated solutions.`,
   },
   {
     id: `math-4-116`,
     case_id: `MATH 4.116`,
-    title: `Common traps with logarithm laws`,
+    title: `Composite decadic equations under pressure`,
     subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm of $x$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `For all positive $u$ and $v$ the identity $\\log_{2}(u + v) = \\log_{2} u + \\log_{2} v$ holds.`,
-      `For all positive $u$ and $v$ the identity $\\frac{\\log_{2} u}{\\log_{2} v} = \\log_{2}(u - v)$ holds.`,
-      `The equation $\\log_{2}(x) - \\log_{2}(x - 1) = 1$ is solved by $x = 2$.`,
-      `The identity $\\log_{3}(x^{4}) = 4 \\log_{3} x$ holds for every $x > 0$.`,
-      `For positive $x$ the expression $\\log_{5}(5x) - \\log_{5} x$ depends on $x$.`,
+      `The solution of $\\log\\sqrt[3]{x} + \\log x^{3} - \\log x + \\frac{4}{3} = \\dfrac{\\log x^{6}}{1 + \\log 100}$ is smaller than $1$.`,
+      `The solution of $\\log x^{5} - \\log\\sqrt{x} + \\frac{1}{2}\\log x = 10$ is greater than $50$.`,
+      `The equation $\\dfrac{\\log x^{2}}{1 + \\log 10} = \\log x - 1$ has exactly one solution.`,
+      `The two solutions of $(\\log x)^{2} - 3\\log x + 2 = 0$ differ by a factor of ten.`,
+      `The equation $\\log(x^{2}) = (\\log x)^{2}$ has a solution larger than $10$.`,
     ],
-    answer_key: [false, false, true, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
-The sum of two logarithms corresponds to a product of arguments, not to a sum:
+Set $t = \\log x$ and note that $\\log 100 = 2$, so the denominator on the right is three.
 
-$$\\log_{2} u + \\log_{2} v = \\log_{2}(uv)$$
+$$\\frac{t}{3} + 3t - t + \\frac{4}{3} = \\frac{6t}{3}$$
 
-A single counterexample settles the claim. With $u = 2$ and $v = 6$:
+$$\\frac{7t + 4}{3} = 2t$$
 
-$$\\log_{2}(2 + 6) = \\log_{2} 8 = 3$$
+$$7t + 4 = 6t \\Rightarrow t = -4$$
 
-$$\\log_{2} 2 + \\log_{2} 6 = 1 + 2.584963 = 3.584963$$
+$$x = 10^{-4}$$
 
-The two sides differ, so the statement is False.`,
-      `**B.** → False
+A negative decadic logarithm means an argument below one, so the statement is True.`,
+      `**B.** → True
 
-A quotient of logarithms is a change of base, and a difference of logarithms is a quotient of arguments; neither produces $\\log_{2}(u - v)$.
+Collect the coefficients of $t$.
 
-$$\\frac{\\log_{2} u}{\\log_{2} v} = \\log_{v} u, \\qquad \\log_{2} u - \\log_{2} v = \\log_{2}\\frac{u}{v}$$
+$$5t - \\frac{t}{2} + \\frac{t}{2} = 10$$
 
-With $u = 8$ and $v = 2$ the left side is $\\frac{3}{1} = 3$, while $\\log_{2}(8 - 2) = \\log_{2} 6 = 2.585$. The statement is False.`,
-      `**C.** → True
+$$5t = 10 \\Rightarrow t = 2 \\Rightarrow x = 100$$
 
-The quotient law merges the two logarithms:
+That value clears the stated bound, so the statement is True.`,
+      `**C.** → False
 
-$$\\log_{2}\\frac{x}{x - 1} = 1$$
+The decadic logarithm of ten is one, so the denominator equals two.
 
-$$\\frac{x}{x - 1} = 2$$
+$$\\frac{2t}{2} = t - 1$$
 
-$$x = 2x - 2 \\Rightarrow x = 2$$
+$$t = t - 1$$
 
-The domain needs $x > 1$, which $2$ satisfies, so the statement is True.`,
+The unknown cancels and leaves a false numerical statement, so no solution exists at all and the statement is False.`,
       `**D.** → True
 
-The power law lets an exponent inside the argument become a factor in front:
+The abbreviation gives an ordinary quadratic.
 
-$$\\log_{3}(x^{4}) = 4 \\log_{3} x \\quad \\text{for } x > 0$$
+$$t^{2} - 3t + 2 = 0 \\Rightarrow t = 1 \\text{ or } t = 2$$
 
-Both sides are defined for all positive $x$ and agree there, so the statement is True.`,
-      `**E.** → False
+$$x = 10 \\quad\\text{and}\\quad x = 100$$
 
-Merging with the quotient law cancels the unknown:
+Two arguments whose decadic logarithms differ by one stand in the ratio ten, so the statement is True.`,
+      `**E.** → True
 
-$$\\log_{5}(5x) - \\log_{5} x = \\log_{5}\\frac{5x}{x} = \\log_{5} 5 = 1$$
+Pull the exponent out on the left and abbreviate.
 
-The difference is constantly $1$, independent of $x$, so the statement is False.`,
+$$2t = t^{2}$$
+
+$$t(t - 2) = 0 \\Rightarrow t = 0 \\text{ or } t = 2$$
+
+The second value gives $x = 100$, which is above the stated bound, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 116,
-    solution_overview: `Each claim tests one law: $\\log_{a}(uv) = \\log_{a} u + \\log_{a} v$, $\\log_{a}\\frac{u}{v} = \\log_{a} u - \\log_{a} v$ and $\\log_{a}(u^{c}) = c \\log_{a} u$. Sums and quotients of logarithms themselves obey no such rules.`,
+    solution_overview: `Reduce everything to $t = \\log x$: roots and powers become coefficients, constants such as $\\log 10$ and $\\log 100$ become $1$ and $2$. A cancelling unknown signals no solution, not infinitely many.`,
   },
   {
     id: `math-4-117`,
     case_id: `MATH 4.117`,
-    title: `Comparing two savings plans`,
+    title: `Existence questions for mixed equations`,
     subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `After $5$ years Plan A is still worth more than Plan B.`,
-      `The two plans are equally valuable after fewer than $10$ years.`,
-      `After $20$ years Plan B is worth more than Plan A.`,
-      `Plan B needs fewer years to double than Plan A.`,
-      `Plan A reaches $10\\,000$ EUR earlier than Plan B reaches $8000$ EUR.`,
+      `The equation $2^{x} \\cdot 3^{x} = 6^{x+1}$ has no solution.`,
+      `The equation $x^{\\log x} = 100$ has two solutions.`,
+      `The equation $2^{2x} - 2^{x+1} + 1 = 0$ has exactly one solution.`,
+      `The equation $3^{x} + 3^{-x} = 1$ has a real solution.`,
+      `The equation $\\log_{2} x = x$ has a real solution.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Powers with the same exponent multiply base by base.
+
+$$6^{x} = 6^{x+1}$$
+
+$$x = x + 1$$
+
+The unknown cancels and leaves a contradiction, so nothing solves the equation and the statement is True.`,
+      `**B.** → True
+
+Take the decadic logarithm of both sides and use the power law with $t = \\log x$.
+
+$$t \\cdot t = 2$$
+
+$$t^{2} = 2 \\Rightarrow t = \\sqrt{2} \\text{ or } t = -\\sqrt{2}$$
+
+Both give positive arguments $x = 10^{\\pm\\sqrt{2}}$, so two solutions exist and the statement is True.`,
+      `**C.** → True
+
+Substitute $u = 2^{x}$ and notice the double product.
+
+$$u^{2} - 2u + 1 = 0$$
+
+$$(u-1)^{2} = 0 \\Rightarrow u = 1$$
+
+The single positive root converts back to one exponent, so the statement is True.`,
+      `**D.** → False
+
+Write $u = 3^{x} > 0$. The left side becomes a sum of a positive number and its reciprocal, which never drops below two:
+
+$$u + \\frac{1}{u} \\ge 2$$
+
+The target one is unreachable, so the statement is False.`,
+      `**E.** → False
+
+Rewrite the equation through the definition of the logarithm.
+
+$$x = 2^{x}$$
+
+An exponential with base above one stays strictly above its exponent for every real number, so the two sides never meet and the statement is False.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 117,
+    solution_overview: `Existence is settled by structure, not by a formula: cancelling unknowns give contradictions, a perfect square gives a double root, and range arguments rule out impossible right-hand sides.`,
+  },
+  {
+    id: `math-4-118`,
+    case_id: `MATH 4.118`,
+    title: `Counting solutions in general families`,
+    subsection: `4.4`,
+    context: `Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `For every positive number $k$ the equation $2^{x} = k$ has exactly one real solution.`,
+      `For every base $a > 1$ the equation $a^{x} = x$ has a real solution.`,
+      `The equation $5^{x} = 4^{x} + 3^{x}$ has exactly one real solution.`,
+      `The equation $(\\log x)^{3} = \\log x^{4}$ has three solutions.`,
+      `The equation $x^{\\log x} = \\frac{1}{100}$ has a real solution.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Evaluate both plans after five years:
+An exponential function with base two is strictly increasing and covers the whole positive half-line:
 
-$$5000 \\cdot 1.04^{5} = 5000 \\cdot 1.216653 = 6083.26$$
+$$2^{x} \\in (0, \\infty)$$
 
-$$4000 \\cdot 1.06^{5} = 4000 \\cdot 1.338226 = 5352.90$$
-
-Since $6083.26 > 5352.90$, Plan A is ahead and the statement is True.`,
+A strictly increasing function meets each value of its range once, so the statement is True.`,
       `**B.** → False
 
-Equality means $5000 \\cdot 1.04^{n} = 4000 \\cdot 1.06^{n}$, that is
+For a large base the exponential outruns the straight line everywhere. Take base three and test the most favourable region:
 
-$$\\left(\\frac{1.06}{1.04}\\right)^{n} = \\frac{5}{4}$$
+$$3^{0} = 1 > 0, \\qquad 3^{1} = 3 > 1$$
 
-$$n = \\frac{\\ln 1.25}{\\ln 1.019231} = \\frac{0.223144}{0.019048} = 11.7148$$
-
-The plans meet after about $11.71$ years, which is more than $10$, so the statement is False.`,
+Between those points the exponential is convex and stays above the line, so no crossing occurs for base three. One counterexample suffices, and the statement is False.`,
       `**C.** → True
 
-Evaluate both plans after twenty years:
+Divide the whole equation by the largest power to compare shrinking terms.
 
-$$5000 \\cdot 1.04^{20} = 5000 \\cdot 2.191123 = 10955.62$$
+$$1 = \\left(\\frac{4}{5}\\right)^{x} + \\left(\\frac{3}{5}\\right)^{x}$$
 
-$$4000 \\cdot 1.06^{20} = 4000 \\cdot 3.207135 = 12828.54$$
-
-Since $12828.54 > 10955.62$, Plan B has overtaken Plan A and the statement is True.`,
+The right side is a sum of two strictly decreasing functions, hence strictly decreasing, and it runs from very large values to zero. It therefore meets the level one exactly once, so the statement is True.`,
       `**D.** → True
 
-Each doubling time solves $q^{n} = 2$ for its own factor:
+Abbreviate $t = \\log x$ and pull the exponent out on the right.
 
-$$n_{A} = \\frac{\\ln 2}{\\ln 1.04} = 17.6730, \\qquad n_{B} = \\frac{\\ln 2}{\\ln 1.06} = 11.8957$$
+$$t^{3} = 4t$$
 
-Since $11.90 < 17.67$, the plan with the higher rate doubles faster and the statement is True.`,
+$$t(t^{2} - 4) = 0 \\Rightarrow t = 0, \\; t = 2, \\; t = -2$$
+
+Each value returns a positive argument, so three solutions exist and the statement is True.`,
       `**E.** → False
 
-Each plan must double its own starting capital, so both times are the doubling times computed from the respective rates:
+Take decadic logarithms on both sides with $t = \\log x$.
 
-$$n_{A} = \\frac{\\ln 2}{\\ln 1.04} = 17.6730, \\qquad n_{B} = \\frac{\\ln 2}{\\ln 1.06} = 11.8957$$
+$$t^{2} = -2$$
 
-Plan A needs about $17.67$ years while Plan B needs about $11.90$, so Plan A is later, not earlier. The statement is False.`,
-    ],
-    difficulty_level: `5/5`,
-    sort_order: 117,
-    solution_overview: `Plan A pays $4\\%$ per year on $5000$ EUR, so its value is $5000 \\cdot 1.04^{n}$. Plan B pays $6\\%$ per year on $4000$ EUR, so its value is $4000 \\cdot 1.06^{n}$. Comparing the plans leads to an exponential equation solved with logarithms.`,
-  },
-  {
-    id: `math-4-118`,
-    case_id: `MATH 4.118`,
-    title: `Five closing claims on exponential and logarithmic equations`,
-    subsection: `4.4`,
-    context: `Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The equation $2^{x^{2} - 3x} = 16$ has two integer solutions.`,
-      `The equation $\\log_{2}(x - 1) + \\log_{2}(x + 1) = 3$ has a solution larger than $2$.`,
-      `The equation $5^{x} = 0.2$ has the solution $x = -1$.`,
-      `The equation $\\ln(x) + \\ln(x - 2) = \\ln(3)$ has two solutions.`,
-      `The equation $3 \\cdot 2^{x} = 5^{x}$ has a solution smaller than $2.2$.`,
-    ],
-    answer_key: [true, true, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Write $16 = 2^{4}$ and compare exponents:
-
-$$x^{2} - 3x = 4$$
-
-$$x^{2} - 3x - 4 = 0$$
-
-$$x = 4 \\quad \\text{or} \\quad x = -1$$
-
-Both values are integers and both solve the equation, so the statement is True.`,
-      `**B.** → True
-
-The product law gives a difference of squares:
-
-$$\\log_{2}\\big((x-1)(x+1)\\big) = 3$$
-
-$$x^{2} - 1 = 8$$
-
-$$x^{2} = 9 \\Rightarrow x = 3 \\text{ or } x = -3$$
-
-The domain requires $x > 1$, so only $x = 3$ survives, and $3 > 2$. The statement is True.`,
-      `**C.** → True
-
-The right side is the reciprocal of the base: $0.2 = \\frac{1}{5} = 5^{-1}$.
-
-$$5^{x} = 5^{-1}$$
-
-$$x = -1$$
-
-The reported value is the solution, so the statement is True.`,
-      `**D.** → False
-
-Merging the left side and comparing arguments:
-
-$$x(x - 2) = 3$$
-
-$$x^{2} - 2x - 3 = 0$$
-
-$$x = 3 \\quad \\text{or} \\quad x = -1$$
-
-The domain needs $x > 2$, so $-1$ is extraneous and only $x = 3$ remains. There is one solution, so the statement is False.`,
-      `**E.** → True
-
-Collect the powers on one side and take logarithms:
-
-$$\\left(\\frac{5}{2}\\right)^{x} = 3$$
-
-$$x = \\frac{\\ln 3}{\\ln 2.5} = \\frac{1.098612}{0.916291} = 1.1990$$
-
-The solution is about $1.20$, which is smaller than $2.2$, so the statement is True.`,
+A square is never negative, so no real argument works and the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 118,
-    solution_overview: `A mixed final set: matching bases, substitution, domain checks and logarithms of both sides, each applied to one short claim.`,
+    solution_overview: `Counting solutions uses monotonicity and range: strictly monotone sides cross a level once, sums of decreasing exponentials cross once, and a squared logarithm can never be negative.`,
   },
 ];
