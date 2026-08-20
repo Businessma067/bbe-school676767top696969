@@ -1,7 +1,10 @@
 import type { ReactNode } from "react";
 import {
+  Bar,
+  BarChart,
   Line,
   LineChart,
+
   CartesianGrid,
   ResponsiveContainer,
   XAxis,
@@ -1708,8 +1711,201 @@ function PowerCompare() {
   );
 }
 
+/* ── Chapter 12: Standard probability figures ───────────────────────── */
+
+function ProbDiceGrid() {
+  const rows = [6, 5, 4, 3, 2, 1];
+  const cols = [1, 2, 3, 4, 5, 6];
+  return (
+    <div>
+      <div className="mb-2 text-sm font-bold text-primary">Sample space: sum of two dice (36 outcomes)</div>
+      <div className="mx-auto w-full max-w-[420px] overflow-x-auto">
+        <table className="w-full border-collapse text-center text-[12px] sm:text-[13px]">
+          <tbody>
+            <tr>
+              <th className="border border-border/70 bg-secondary/40 px-1.5 py-1 text-muted-foreground" />
+              {cols.map((c) => (
+                <th key={c} className="border border-border/70 bg-secondary/40 px-1.5 py-1 font-bold text-foreground">
+                  {c}
+                </th>
+              ))}
+            </tr>
+            {rows.map((r) => (
+              <tr key={r}>
+                <th className="border border-border/70 bg-secondary/40 px-1.5 py-1 font-bold text-foreground">{r}</th>
+                {cols.map((c) => {
+                  const sum = r + c;
+                  const hit = sum === 7;
+                  return (
+                    <td
+                      key={c}
+                      className={cn("border border-border/70 px-1.5 py-1 tabular-nums", hit ? "font-bold" : "")}
+                      style={hit ? { background: FILL, color: ACCENT } : { color: INK }}
+                    >
+                      {sum}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <Hint>Gold cells: the 6 outcomes where the sum equals 7, so P(sum = 7) = 6/36 ≈ 16.67%.</Hint>
+    </div>
+  );
+}
+
+function ProbVennApps() {
+  const T = (x: number, y: number, v: string, strong = false) => (
+    <text
+      key={`${x}-${y}-${v}`}
+      x={x}
+      y={y}
+      textAnchor="middle"
+      fill={strong ? ACCENT : INK}
+      fontSize="12"
+      fontWeight="700"
+    >
+      {v}
+    </text>
+  );
+  return (
+    <div>
+      <div className="mb-2 text-sm font-bold text-primary">Three-set Venn diagram (Example 3.1)</div>
+      <svg viewBox="0 0 300 230" className="mx-auto h-auto w-full max-w-[360px]" role="img">
+        <rect x="6" y="6" width="288" height="218" fill={FILL_SOFT} stroke={GRID} strokeWidth="1.5" rx="6" />
+        <text x="18" y="24" fill={MUTED} fontSize="11" fontWeight="600">
+          U = 200 employees
+        </text>
+        <circle cx="118" cy="98" r="62" fill="#fff" fillOpacity="0.65" stroke={STROKE} strokeWidth="1.75" />
+        <circle cx="182" cy="98" r="62" fill="#fff" fillOpacity="0.45" stroke={STROKE} strokeWidth="1.75" />
+        <circle cx="150" cy="152" r="62" fill="#fff" fillOpacity="0.35" stroke={STROKE} strokeWidth="1.75" />
+        <text x="62" y="58" fill={INK} fontSize="13" fontWeight="800">
+          A
+        </text>
+        <text x="236" y="58" fill={INK} fontSize="13" fontWeight="800">
+          B
+        </text>
+        <text x="150" y="216" textAnchor="middle" fill={INK} fontSize="13" fontWeight="800">
+          C
+        </text>
+        {T(92, 82, "45")}
+        {T(210, 82, "30")}
+        {T(150, 186, "25")}
+        {T(150, 78, "20")}
+        {T(113, 136, "15")}
+        {T(188, 136, "10")}
+        {T(150, 122, "10", true)}
+        {T(268, 214, "45")}
+      </svg>
+      <Hint>
+        Only A = 45, only B = 30, only C = 25; pairwise-only 20, 15, 10; all three = 10; none = 45. Total inside at
+        least one circle = 155.
+      </Hint>
+    </div>
+  );
+}
+
+function ProbBayesTree() {
+  const Branch = ({
+    label,
+    prob,
+    sub,
+  }: {
+    label: string;
+    prob: string;
+    sub: { name: string; p: string; joint: string; strong?: boolean }[];
+  }) => (
+    <div className="min-w-0 flex-1 border border-border/70 bg-secondary/30 p-3">
+      <div className="text-[13px] font-bold text-foreground">
+        {label} <span className="font-semibold text-muted-foreground">({prob})</span>
+      </div>
+      <div className="mt-2 space-y-1.5">
+        {sub.map((s) => (
+          <div
+            key={s.name}
+            className={cn(
+              "flex items-center justify-between gap-2 px-2 py-1 text-[12px]",
+              s.strong ? "bg-primary/10 text-primary ring-1 ring-primary/25" : "bg-background/60 text-foreground",
+            )}
+          >
+            <span className="font-semibold">
+              {s.name} <span className="font-normal text-muted-foreground">({s.p})</span>
+            </span>
+            <span className="tabular-nums font-bold">{s.joint}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+  return (
+    <div>
+      <div className="mb-2 text-sm font-bold text-primary">
+        Probability tree — law of total probability &amp; Bayes&rsquo; theorem (Example 8.1)
+      </div>
+      <div className="mx-auto flex w-full max-w-[520px] flex-col gap-3 sm:flex-row">
+        <Branch
+          label="Machine X"
+          prob="P(X) = 0.60"
+          sub={[
+            { name: "Defective", p: "0.03", joint: "0.018", strong: true },
+            { name: "OK", p: "0.97", joint: "0.582" },
+          ]}
+        />
+        <Branch
+          label="Machine Y"
+          prob="P(Y) = 0.40"
+          sub={[
+            { name: "Defective", p: "0.07", joint: "0.028", strong: true },
+            { name: "OK", p: "0.93", joint: "0.372" },
+          ]}
+        />
+      </div>
+      <Hint>
+        Multiply along a path for its joint probability. Adding the two defective paths gives P(defective) = 0.018 +
+        0.028 = 0.046.
+      </Hint>
+    </div>
+  );
+}
+
+function ProbPmfBars() {
+  const data = [
+    { x: "0", p: 0.1 },
+    { x: "1", p: 0.25 },
+    { x: "2", p: 0.3 },
+    { x: "3", p: 0.2 },
+    { x: "4", p: 0.15 },
+  ];
+  return (
+    <ChartFrame title="Discrete probability distribution (Example 9.1)" height="h-[240px] sm:h-[280px]">
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart data={data} margin={{ top: 10, right: 16, bottom: 24, left: 8 }}>
+          <CartesianGrid stroke={GRID} strokeDasharray="3 3" vertical={false} />
+          <XAxis
+            dataKey="x"
+            stroke={MUTED}
+            tick={{ fill: MUTED, fontSize: 12 }}
+            label={{ value: "X = number of daily complaints", position: "bottom", fill: MUTED, fontSize: 12 }}
+          />
+          <YAxis stroke={MUTED} tick={{ fill: MUTED, fontSize: 12 }} domain={[0, 0.35]} />
+          <ReferenceLine
+            x="2"
+            stroke={ACCENT}
+            strokeDasharray="4 4"
+            label={{ value: "E(X) = 2.05", fill: ACCENT, fontSize: 11, position: "top" }}
+          />
+          <Bar dataKey="p" fill={ACCENT} radius={[3, 3, 0, 0]} />
+        </BarChart>
+      </ResponsiveContainer>
+    </ChartFrame>
+  );
+}
+
 /** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
 const FIGURES: Record<string, () => ReactNode> = {
+
   "circular-flow": CircularFlow,
   "supply-curve": SupplyCurve,
   "demand-curve": DemandCurve,
@@ -1747,6 +1943,11 @@ const FIGURES: Record<string, () => ReactNode> = {
   "power-even-odd": PowerEvenOdd,
   "power-reciprocal": PowerReciprocal,
   "power-compare": PowerCompare,
+  "prob-dice-grid": ProbDiceGrid,
+  "prob-venn-apps": ProbVennApps,
+  "prob-bayes-tree": ProbBayesTree,
+  "prob-pmf-bars": ProbPmfBars,
+
 };
 
 export function TheoryFigure({ id, caption, className }: Props) {

@@ -8,7 +8,9 @@ import ch1 from "./math-theory/ch1.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
 import ch8 from "./math-theory/ch8.md?raw";
 import ch11 from "./math-theory/ch11.md?raw";
+import ch12 from "./math-theory/ch12.md?raw";
 import ch13 from "./math-theory/ch13.md?raw";
+
 
 export type MathCourseTheoryChapter = {
   num: number;
@@ -40,8 +42,16 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     title: "Financial mathematics",
     markdown: ch11,
   },
+  12: {
+    num: 12,
+    title: "Standard probability",
+    markdown: ch12,
+    materialsPdfUrl: "/bbe-math-probability-theory.pdf",
+    materialsPdfName: "BBE-Math-Standard-Probability-Reference-Guide.pdf",
+  },
   13: {
     num: 13,
+
     title: "Binomial distribution",
     markdown: ch13,
     materialsPdfUrl: "/bbe-math-binomial-theory.pdf",
