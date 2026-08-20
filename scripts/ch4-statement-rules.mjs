@@ -181,34 +181,16 @@ export function isPluginTrue(stmt, isTrue, subsection) {
   if (!isTrue) return null;
 
   // Log/exp comparison claims (photo style) — not plug-in
-  if (/smaller than|not smaller than|greater than \$[0-9]+\$|less than \$[0-9]+\$|exceeds \$|at least two distinct|more than one distinct/i.test(stmt)) {
+  if (/smaller than|not smaller than|greater than \$[0-9]+\$|less than \$[0-9]+\$|exceeds \$|at least two distinct|more than \$[0-9]+\$ distinct|more than \$[0-9]+\$ minutes|more than \$[0-9]+\$ real|is greater than \$|greater than \$0\$|at most \$|not smaller than/i.test(stmt)) {
     return null;
   }
 
-  // Word problems needing a model + solve — allow exact numeric claims only if non-trivial
-  const wordEqStory =
-    /rectangle|area is|perimeter|consecutive|product of two|fence forms|reciprocal equals|roots of \$|path runs|path alone|ladder|pipe|tap|inlet|vinegar|prize fund|prize money|travels at|leaves \$|years older|coins totalling|worker \$|Together they need|meet \$|catch|downstream|upstream|still water|saline|concentration|discount|VAT|chemist pours|vehicle \$|towns \$|depot|exam item.*average|scores average|aluminium bar|pump delivers|gravel path|kitchen manual|phone plan|round trip|mean-speed trap|Positions on a rail|Equation \$\||Model \$\\frac/i.test(
-      stmt
-    );
-  if (wordEqStory) return null;
+  // Story parameters (gap, distance, difference) — check only the closing claim
+  const paramStory = /\$[0-9]+\$ years older|\$[0-9]+\$ cm longer|\$[0-9]+\$ km apart|bar of length \$|part is \$[0-9]+\$ cm longer|leaves \$[A-Z]\$ at \$|km\/h toward/i.test(stmt);
+  const checkTarget = paramStory ? (stmt.split(/\. /).pop() || stmt) : stmt;
 
-  if (["4.1", "4.2", "4.3"].includes(subsection)) {
-    const hasExplicitEq = /equation|discriminant|quadratic|factor|Vieta|roots of/i.test(stmt);
-    const trivialArith =
-      /^(Half of a number is|A scale shows|The (?:sum|product|difference) of|If .* then .* is \$[0-9]+\.$)/i.test(stmt) ||
-      (/Then the (?:change|number) was \$[0-9]+\.$/.test(stmt) && !/equation/i.test(stmt));
-    if (
-      !trivialArith &&
-      (hasExplicitEq ||
-        /times a number|increased by|decreased by|per hour|per cent|area|perimeter|rectangle|tank|pipe|wage|purse|rod|batch|sample/i.test(
-          stmt
-        ))
-    ) {
-      return null;
-    }
-  }
   for (const p of TRUE_PLUG_PATS) {
-    if (p.re.test(stmt)) return p.kind;
+    if (p.re.test(checkTarget)) return p.kind;
   }
   return null;
 }
