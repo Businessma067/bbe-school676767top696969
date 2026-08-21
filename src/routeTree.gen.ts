@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TutorExamRouteImport } from './routes/tutor-exam'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
@@ -26,10 +27,12 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TutorExamIndexRouteImport } from './routes/tutor-exam.index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
 import { Route as FlashcardsIndexRouteImport } from './routes/flashcards.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
+import { Route as TutorExamSubjectRouteImport } from './routes/tutor-exam.$subject'
 import { Route as ProductsLiteBbeCourseSubjectsRouteImport } from './routes/products.lite-bbe-course-subjects'
 import { Route as ProductsLiteBbeCourseMathRouteImport } from './routes/products.lite-bbe-course-math'
 import { Route as ProductsLiteBbeCourseEnglishRouteImport } from './routes/products.lite-bbe-course-english'
@@ -51,6 +54,11 @@ import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
 
+const TutorExamRoute = TutorExamRouteImport.update({
+  id: '/tutor-exam',
+  path: '/tutor-exam',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
@@ -136,6 +144,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TutorExamIndexRoute = TutorExamIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => TutorExamRoute,
+} as any)
 const ProductsIndexRoute = ProductsIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -155,6 +168,11 @@ const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => DemoPracticeRoute,
+} as any)
+const TutorExamSubjectRoute = TutorExamSubjectRouteImport.update({
+  id: '/$subject',
+  path: '/$subject',
+  getParentRoute: () => TutorExamRoute,
 } as any)
 const ProductsLiteBbeCourseSubjectsRoute =
   ProductsLiteBbeCourseSubjectsRouteImport.update({
@@ -282,6 +300,7 @@ export interface FileRoutesByFullPath {
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
+  '/tutor-exam': typeof TutorExamRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -300,10 +319,12 @@ export interface FileRoutesByFullPath {
   '/products/lite-bbe-course-english': typeof ProductsLiteBbeCourseEnglishRoute
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
+  '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/tutor-exam/': typeof TutorExamIndexRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
@@ -339,10 +360,12 @@ export interface FileRoutesByTo {
   '/products/lite-bbe-course-english': typeof ProductsLiteBbeCourseEnglishRoute
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
+  '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/flashcards': typeof FlashcardsIndexRoute
   '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
+  '/tutor-exam': typeof TutorExamIndexRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
@@ -365,6 +388,7 @@ export interface FileRoutesById {
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
+  '/tutor-exam': typeof TutorExamRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -383,10 +407,12 @@ export interface FileRoutesById {
   '/products/lite-bbe-course-english': typeof ProductsLiteBbeCourseEnglishRoute
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
+  '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/tutor-exam/': typeof TutorExamIndexRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
@@ -410,6 +436,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/signup'
     | '/terms'
+    | '/tutor-exam'
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -428,10 +455,12 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-english'
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
+    | '/tutor-exam/$subject'
     | '/demo-practice/'
     | '/flashcards/'
     | '/mock-exams/'
     | '/products/'
+    | '/tutor-exam/'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   fileRoutesByTo: FileRoutesByTo
@@ -467,10 +496,12 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-english'
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
+    | '/tutor-exam/$subject'
     | '/demo-practice'
     | '/flashcards'
     | '/mock-exams'
     | '/products'
+    | '/tutor-exam'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   id:
@@ -492,6 +523,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/signup'
     | '/terms'
+    | '/tutor-exam'
     | '/admin/economics'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -510,10 +542,12 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-english'
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
+    | '/tutor-exam/$subject'
     | '/demo-practice/'
     | '/flashcards/'
     | '/mock-exams/'
     | '/products/'
+    | '/tutor-exam/'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   fileRoutesById: FileRoutesById
@@ -536,12 +570,20 @@ export interface RootRouteChildren {
   ResetPasswordRoute: typeof ResetPasswordRoute
   SignupRoute: typeof SignupRoute
   TermsRoute: typeof TermsRoute
+  TutorExamRoute: typeof TutorExamRouteWithChildren
   ApiChatRoute: typeof ApiChatRoute
   FeaturesAnswerSheetRoute: typeof FeaturesAnswerSheetRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tutor-exam': {
+      id: '/tutor-exam'
+      path: '/tutor-exam'
+      fullPath: '/tutor-exam'
+      preLoaderRoute: typeof TutorExamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/terms': {
       id: '/terms'
       path: '/terms'
@@ -661,6 +703,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tutor-exam/': {
+      id: '/tutor-exam/'
+      path: '/'
+      fullPath: '/tutor-exam/'
+      preLoaderRoute: typeof TutorExamIndexRouteImport
+      parentRoute: typeof TutorExamRoute
+    }
     '/products/': {
       id: '/products/'
       path: '/'
@@ -688,6 +737,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/demo-practice/'
       preLoaderRoute: typeof DemoPracticeIndexRouteImport
       parentRoute: typeof DemoPracticeRoute
+    }
+    '/tutor-exam/$subject': {
+      id: '/tutor-exam/$subject'
+      path: '/$subject'
+      fullPath: '/tutor-exam/$subject'
+      preLoaderRoute: typeof TutorExamSubjectRouteImport
+      parentRoute: typeof TutorExamRoute
     }
     '/products/lite-bbe-course-subjects': {
       id: '/products/lite-bbe-course-subjects'
@@ -924,6 +980,20 @@ const ProductsRouteWithChildren = ProductsRoute._addFileChildren(
   ProductsRouteChildren,
 )
 
+interface TutorExamRouteChildren {
+  TutorExamSubjectRoute: typeof TutorExamSubjectRoute
+  TutorExamIndexRoute: typeof TutorExamIndexRoute
+}
+
+const TutorExamRouteChildren: TutorExamRouteChildren = {
+  TutorExamSubjectRoute: TutorExamSubjectRoute,
+  TutorExamIndexRoute: TutorExamIndexRoute,
+}
+
+const TutorExamRouteWithChildren = TutorExamRoute._addFileChildren(
+  TutorExamRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AccountRoute: AccountRoute,
@@ -942,6 +1012,7 @@ const rootRouteChildren: RootRouteChildren = {
   ResetPasswordRoute: ResetPasswordRoute,
   SignupRoute: SignupRoute,
   TermsRoute: TermsRoute,
+  TutorExamRoute: TutorExamRouteWithChildren,
   ApiChatRoute: ApiChatRoute,
   FeaturesAnswerSheetRoute: FeaturesAnswerSheetRoute,
 }

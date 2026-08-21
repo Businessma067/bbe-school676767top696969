@@ -24,6 +24,7 @@ import { StudyProgressSection } from "@/components/StudyProgressSection";
 import flashcardsBanner from "../../assets/flashcard-previews/games-flashcards-banner.png";
 import {
   BookOpen,
+  Bot,
   ClipboardCheck,
   Flame,
   Target,
@@ -540,6 +541,31 @@ function GamesTab() {
               Drill Economics terms, Math formulas, and English vocabulary with flip cards.
             </p>
             <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
+          </div>
+        </Link>
+        <Link
+          to="/tutor-exam"
+          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <div className="flex h-32 w-full items-center justify-center bg-gradient-to-br from-[#e8f0ec] via-[#f3ebe2] to-[#e8d5bc]">
+            <div className="flex items-center gap-3">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-caramel/30 bg-white/85 shadow-sm">
+                <Bot className="h-6 w-6 text-caramel-deep" />
+              </span>
+              <span className="rounded-xl border border-caramel/30 bg-white/80 px-3 py-2 text-xs font-semibold text-caramel-deep shadow-sm">
+                Theory exam
+              </span>
+            </div>
+          </div>
+          <div className="p-5">
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+              Study game
+            </p>
+            <h3 className="mt-1 font-display text-lg font-bold">Tutor Exam</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              A tutor robot runs a random theoretical quiz — new questions every time.
+            </p>
+            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open tutor exam →</p>
           </div>
         </Link>
       </div>
