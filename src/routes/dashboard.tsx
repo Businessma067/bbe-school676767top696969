@@ -21,7 +21,7 @@ import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
-import flashcardsBanner from "../../assets/flashcard-previews/games-flashcards-banner.png";
+import { InteractiveFlashcardsBanner } from "@/components/games/InteractiveDeckPreview";
 import {
   BookOpen,
   Bot,
@@ -525,12 +525,8 @@ function GamesTab() {
           to="/flashcards"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
-            <img
-              src={flashcardsBanner}
-              alt=""
-              className="h-full w-full object-cover object-top"
-            />
+          <div className="h-32 w-full overflow-hidden">
+            <InteractiveFlashcardsBanner />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
