@@ -21,10 +21,10 @@ import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
-import { InteractiveFlashcardsBanner } from "@/components/games/InteractiveDeckPreview";
+import flashcardsBanner from "../../assets/flashcard-previews/games-flashcards-banner.png";
+import subjectsBannerStraight from "../../assets/flashcard-previews/games-subjects-banner-straight.png";
 import {
   BookOpen,
-  Bot,
   ClipboardCheck,
   Flame,
   Target,
@@ -525,8 +525,12 @@ function GamesTab() {
           to="/flashcards"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="h-32 w-full overflow-hidden">
-            <InteractiveFlashcardsBanner />
+          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
+            <img
+              src={flashcardsBanner}
+              alt=""
+              className="h-full w-full object-cover object-top"
+            />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
@@ -543,16 +547,12 @@ function GamesTab() {
           to="/matching"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="flex h-32 w-full items-center justify-center bg-gradient-to-br from-[#f7ebdc] via-[#f3e6d4] to-[#e8d5bc]">
-            <div className="flex items-center gap-3">
-              <span className="rounded-xl border border-caramel/30 bg-white/80 px-3 py-2 text-xs font-semibold text-caramel-deep shadow-sm">
-                Concept
-              </span>
-              <span className="text-caramel-deep">⟷</span>
-              <span className="rounded-xl border border-caramel/30 bg-white/80 px-3 py-2 text-xs font-semibold text-caramel-deep shadow-sm">
-                Meaning
-              </span>
-            </div>
+          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
+            <img
+              src={subjectsBannerStraight}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
@@ -569,15 +569,12 @@ function GamesTab() {
           to="/tutor-exam"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="flex h-32 w-full items-center justify-center bg-gradient-to-br from-[#e8f0ec] via-[#f3ebe2] to-[#e8d5bc]">
-            <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-caramel/30 bg-white/85 shadow-sm">
-                <Bot className="h-6 w-6 text-caramel-deep" />
-              </span>
-              <span className="rounded-xl border border-caramel/30 bg-white/80 px-3 py-2 text-xs font-semibold text-caramel-deep shadow-sm">
-                Theory exam
-              </span>
-            </div>
+          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
+            <img
+              src={subjectsBannerStraight}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">

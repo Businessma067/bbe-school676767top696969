@@ -350,24 +350,6 @@ body.flashcard-swiping {
   transform: rotateY(180deg);
 }
 
-/* Games / subject pickers: crisp mini decks (no soft photo edges) */
-.games-preview-inner {
-  min-height: 0;
-  aspect-ratio: 3 / 4;
-  filter: none;
-}
-
-.games-preview-inner--mini {
-  aspect-ratio: 3 / 4;
-}
-
-.games-preview-face {
-  overflow: hidden;
-  box-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.06),
-    0 6px 14px -6px rgba(0, 0, 0, 0.18);
-}
-
 .flashcard-face .katex {
   font-size: 1.05em;
 }

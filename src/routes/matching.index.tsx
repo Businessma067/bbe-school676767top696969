@@ -1,8 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
-import { InteractiveDeckPreview } from "@/components/games/InteractiveDeckPreview";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
 import { Link2 } from "lucide-react";
+import economicsImage from "../../assets/flashcard-previews/straight-economics.png";
+import mathImage from "../../assets/flashcard-previews/straight-math.png";
+import englishImage from "../../assets/flashcard-previews/straight-english.png";
+
+const SUBJECT_IMAGES: Record<string, string> = {
+  economics: economicsImage,
+  math: mathImage,
+  english: englishImage,
+};
 
 export const Route = createFileRoute("/matching/")({
   head: () => ({
@@ -61,14 +69,14 @@ function MatchingIndexPage() {
               const n = countCards(s.sections);
               const cardInner = (
                 <>
-                  <div className="relative">
-                    <InteractiveDeckPreview
-                      subject={s.id}
-                      title={s.title}
-                      backLabel="Flip · then match"
+                  <div className="relative aspect-video overflow-hidden bg-[#f7ebdc]">
+                    <img
+                      src={SUBJECT_IMAGES[s.id]}
+                      alt={`${s.title} matching`}
+                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                     />
                     <span
-                      className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
+                      className="absolute bottom-3 left-4 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm backdrop-blur-sm"
                       style={{ color: s.accent }}
                     >
                       {s.tag}
