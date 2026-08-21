@@ -105,17 +105,19 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
   return (
     <div
       className={
-        "flex h-full w-full flex-col items-center justify-center gap-2 bg-[#f7ebdc] px-4 py-3 " +
+        "flex h-full w-full items-center justify-center bg-[#f7ebdc] px-4 " +
         className
       }
     >
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-caramel-deep">
-        Tap to flip
-      </p>
-      <div className="flex items-center justify-center gap-2.5 sm:gap-3">
-        <MiniCard subject="economics" label="Econ" />
-        <MiniCard subject="math" label="Math" />
-        <MiniCard subject="english" label="Eng" />
+      <div className="flex flex-col items-center gap-2.5">
+        <p className="leading-none text-[10px] font-semibold uppercase tracking-widest text-caramel-deep">
+          Tap to flip
+        </p>
+        <div className="flex items-center justify-center gap-2.5 sm:gap-3">
+          <MiniCard subject="economics" label="Econ" />
+          <MiniCard subject="math" label="Math" />
+          <MiniCard subject="english" label="Eng" />
+        </div>
       </div>
     </div>
   );
