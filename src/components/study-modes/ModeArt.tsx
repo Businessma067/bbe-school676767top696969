@@ -6,6 +6,176 @@ const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
   english: "#d9e8f2",
 };
 
+const SUBJECT_LABEL: Record<FlashcardSubjectId, string> = {
+  economics: "Economics",
+  math: "Math",
+  english: "English",
+};
+
+function SubjectGlyph({
+  subject,
+  className = "h-7 w-7",
+}: {
+  subject: FlashcardSubjectId;
+  className?: string;
+}) {
+  if (subject === "economics") {
+    return (
+      <svg viewBox="0 0 32 32" className={className} aria-hidden fill="none">
+        <path
+          d="M6 24V18M12 24V14M18 24V12M24 24V8"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+        />
+        <path
+          d="M6 16l7-5 5 2.5 8-7.5"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+  if (subject === "math") {
+    return (
+      <svg viewBox="0 0 32 32" className={className} aria-hidden fill="none">
+        <path
+          d="M5 12h4l5 14 4-22h9"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M20 18l4 4M24 18l-4 4"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 32 32" className={className} aria-hidden fill="none">
+      <path
+        d="M16 9v15"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M16 9c-2.2-1.4-5-2-7.8-2-1.5 0-2.8.2-3.8.5v14.8c1.1-.4 2.4-.6 3.8-.6 2.8 0 5.6.6 7.8 2"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M16 9c2.2-1.4 5-2 7.8-2 1.5 0 2.8.2 3.8.5v14.8c-1.1-.4-2.4-.6-3.8-.6-2.8 0-5.6.6-7.8 2"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function MiniCard({
+  subject,
+  label,
+}: {
+  subject: FlashcardSubjectId;
+  label: string;
+}) {
+  return (
+    <div className="relative flex aspect-[3/4] w-[4.75rem] flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white sm:w-[5.25rem]">
+      <span
+        aria-hidden
+        className="absolute inset-x-0 -bottom-1 h-full translate-y-1 rounded-xl border-[1.5px] border-foreground/15 bg-white"
+      />
+      <span
+        aria-hidden
+        className="absolute left-2.5 top-2.5 h-2 w-2 rounded-full border-[1.5px] border-foreground/40"
+      />
+      <SubjectGlyph subject={subject} className="relative z-10 h-7 w-7 text-foreground" />
+      <span className="relative z-10 mt-2 text-[9px] font-semibold uppercase tracking-wider text-taupe">
+        {label}
+      </span>
+    </div>
+  );
+}
+
+/** Dashboard / tile banner for Flashcards. */
+export function FlashcardsModeArt({ className = "" }: { className?: string }) {
+  return (
+    <div
+      className={
+        "flex h-full w-full flex-col items-center justify-center gap-2 bg-[#f7ebdc] px-4 py-3 " +
+        className
+      }
+    >
+      <p className="text-[10px] font-semibold uppercase tracking-widest text-caramel-deep">
+        Tap to flip
+      </p>
+      <div className="flex items-end justify-center gap-2.5 sm:gap-3">
+        <MiniCard subject="economics" label="Econ" />
+        <MiniCard subject="math" label="Math" />
+        <MiniCard subject="english" label="Eng" />
+      </div>
+    </div>
+  );
+}
+
+/** Subject-picker hero for Flashcards. */
+export function FlashcardsSubjectArt({
+  subject,
+  accent,
+}: {
+  subject: FlashcardSubjectId;
+  accent: string;
+}) {
+  return (
+    <div
+      className="relative flex aspect-video w-full items-center justify-center px-5 py-4"
+      style={{ backgroundColor: SUBJECT_BG[subject] }}
+    >
+      <div className="relative flex h-[78%] max-h-40 w-[42%] max-w-[9.5rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white">
+        <span
+          aria-hidden
+          className="absolute inset-0 translate-y-2 rounded-2xl border-[1.5px] border-foreground/15 bg-white"
+        />
+        <span
+          aria-hidden
+          className="absolute inset-0 translate-y-4 rounded-2xl border-[1.5px] border-foreground/10 bg-white"
+        />
+        <span
+          aria-hidden
+          className="absolute left-3.5 top-3.5 z-10 h-3 w-3 rounded-full border-[1.5px] border-foreground/45"
+        />
+        <div className="relative z-10 flex flex-col items-center px-3 text-center">
+          <SubjectGlyph
+            subject={subject}
+            className="h-10 w-10 text-foreground"
+          />
+          <p className="mt-2 font-display text-sm font-bold text-foreground">
+            {SUBJECT_LABEL[subject]}
+          </p>
+          <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-widest text-taupe">
+            Flashcards
+          </p>
+          <span
+            className="mt-2 h-1 w-8 rounded-full"
+            style={{ backgroundColor: accent }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 type Pair = [string, string];
 
 function MatchingPairs({

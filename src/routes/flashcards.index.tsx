@@ -1,16 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
+import { FlashcardsSubjectArt } from "@/components/study-modes/ModeArt";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
 import { Layers } from "lucide-react";
-import economicsImage from "../../assets/flashcard-previews/flashcards-economics-single.png";
-import mathImage from "../../assets/flashcard-previews/flashcards-math-single.png";
-import englishImage from "../../assets/flashcard-previews/flashcards-english-single.png";
-
-const SUBJECT_IMAGES: Record<string, string> = {
-  economics: economicsImage,
-  math: mathImage,
-  english: englishImage,
-};
 
 export const Route = createFileRoute("/flashcards/")({
   head: () => ({
@@ -69,14 +61,10 @@ function FlashcardsIndexPage() {
               const n = countCards(s.sections);
               const cardInner = (
                 <>
-                  <div className="relative aspect-video overflow-hidden">
-                    <img
-                      src={SUBJECT_IMAGES[s.id]}
-                      alt={`${s.title} flashcards`}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                    />
+                  <div className="relative overflow-hidden">
+                    <FlashcardsSubjectArt subject={s.id} accent={s.accent} />
                     <span
-                      className="absolute bottom-3 left-4 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm backdrop-blur-sm"
+                      className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
                       style={{ color: s.accent }}
                     >
                       {s.tag}
