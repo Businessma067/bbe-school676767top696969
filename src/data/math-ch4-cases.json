@@ -3103,15 +3103,15 @@
     {
       "id": "math-4-101",
       "case_id": "MATH 4.101",
-      "title": "Five independent mixed equations",
+      "title": "Independent linear and quadratic openers",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The unique real solution of $5x - 2 = 3x + 6$ is an even integer.",
-        "The equation $x^{2} - 5x + 6 = 0$ has two distinct positive roots whose product is $6$.",
-        "The equation $\\dfrac{x}{x - 2} = 3$ has a unique real solution greater than $2$.",
-        "The equation $\\sqrt{2x + 1} = x - 1$ has two distinct real solutions.",
-        "The solution of $2^{x} = \\dfrac{1}{8}$ is negative."
+        "In a practice paper the linear equation $5x - 2 = 3x + 6$ appears as a closed one-unknown model. After the unknown terms are collected on one side, a candidate claims that the unique real solution is an even integer.",
+        "A quadratic marking scheme presents $x^{2} - 5x + 6 = 0$ and asks only for properties of the roots. A student factors the left side and reports that there are two distinct positive roots whose product equals $6$.",
+        "The rational equation $\\dfrac{x}{x - 2} = 3$ is first restricted by excluding every value that zeros a denominator. After the cleared linear equation is solved, the unique admissible real solution is strictly greater than $2$.",
+        "Over its natural domain the radical equation $\\sqrt{2x + 1} = x - 1$ is isolated and squared, and every candidate is checked in the original equation. A student concludes that two distinct real solutions survive that check.",
+        "The exponential equation $2^{x} = \\dfrac{1}{8}$ is rewritten so that both sides are powers of the same base. Then the unique real solution recovered from matching exponents is negative."
       ],
       "answer_key": [
         true,
@@ -3124,25 +3124,25 @@
         "**A.** → True\n\n$$5x - 2 = 3x + 6$$\n\n$$2x = 8$$\n\n$$x = 4$$\n\nThe unique real solution is the even integer $4$, so the statement is True.",
         "**B.** → True\n\n$$(x - 2)(x - 3) = 0$$\n\ngives roots $2$ and $3$. Both are positive and the product is $6$. The statement is True.",
         "**C.** → True\n\nExclude $x = 2$. Then $x = 3(x - 2)$ yields $x = 3 > 2$. The statement is True.",
-        "**D.** → False\n\nNeed $x \\ge 1$. Squaring gives $x(x - 4) = 0$. Only $x = 4$ survives the check $\\sqrt{9} = 3$. Exactly one real solution, not two. The statement is False.",
+        "**D.** → False\n\nNeed $x \\ge 1$. Squaring gives $x(x - 4) = 0$. Only $x = 4$ survives $\\sqrt{9} = 3$. Exactly one real solution, not two. The statement is False.",
         "**E.** → True\n\n$$2^{x} = 2^{-3}$$\n\nso $x = -3$, which is negative. The statement is True."
       ],
-      "solution_overview": "Five independent mixed claims: linear, quadratic, rational, radical, and exponential.",
+      "solution_overview": "Five fully independent mixed openers: linear parity, Vieta product, a rational hole, a radical extraneous check, and a negative exponential root.",
       "difficulty_level": "4/5",
       "sort_order": 101
     },
     {
       "id": "math-4-102",
       "case_id": "MATH 4.102",
-      "title": "Hard radicals, logs, and a quadratic exponential",
+      "title": "Hard independent radicals and quadratic exponentials",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The equation $\\sqrt{x + 3} + \\sqrt{x} = 3$ has a unique real solution, and that solution is an integer.",
-        "The equation $\\log_{2}(x + 3) + \\log_{2}(x - 1) = 3$ has exactly one admissible real solution.",
-        "The substitution $u = 2^{x}$ turns $4^{x} - 5 \\cdot 2^{x} + 4 = 0$ into a quadratic with two positive roots, and both yield real values of $x$.",
-        "The equation $|2x - 1| + |x + 4| = 9$ has exactly two real solutions.",
-        "The equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 4}{x + 2} = 1$ has no real solution."
+        "The two-radical equation $\\sqrt{x + 3} + \\sqrt{x} = 3$ is solved for real $x \\ge 0$ by isolating one square root and squaring once. After the mandatory check, it has a unique real solution, and that solution is an integer.",
+        "In the logarithmic equation $\\log_{2}(x + 3) + \\log_{2}(x - 1) = 3$, every argument must stay positive, so the domain is $x > 1$. After the product law produces a quadratic, exactly one algebraic root remains admissible.",
+        "The exponential equation $4^{x} - 5 \\cdot 2^{x} + 4 = 0$ is reduced by the substitution $u = 2^{x}$ with $u > 0$. A candidate claims that the resulting quadratic has two positive roots and that both of those roots yield real values of $x$.",
+        "The absolute-value sum $|2x - 1| + |x + 4| = 9$ is split at the critical points where the insides change sign. After each regional linear equation is solved and filtered, exactly two real solutions remain.",
+        "The rational equation $\\dfrac{2x + 1}{x - 1} - \\dfrac{x + 4}{x + 2} = 1$ is cleared after excluding the holes $x = 1$ and $x = -2$. A student concludes that no real number survives both the auxiliary solve and the domain filter."
       ],
       "answer_key": [
         true,
@@ -3152,28 +3152,28 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDomain $x \\ge 0$. Isolate $\\sqrt{x + 3} = 3 - \\sqrt{x}$ and square:\n\n$$x + 3 = 9 - 6\\sqrt{x} + x$$\n\n$$x = 1$$\n\nCheck: $\\sqrt{4} + 1 = 3$. Unique integer solution. The statement is True.",
-        "**B.** → True\n\nDomain $x > 1$. Then $(x + 3)(x - 1) = 8$, so $x^{2} + 2x - 11 = 0$ and $x = -1 \\pm 2\\sqrt{3}$. Only $-1 + 2\\sqrt{3}$ exceeds $1$. Exactly one admissible solution. The statement is True.",
-        "**C.** → True\n\nWith $u = 2^{x}$ one gets $(u - 1)(u - 4) = 0$. Then $x = 0$ or $x = 2$, both real. The statement is True.",
-        "**D.** → True\n\nCritical points $x = -4$ and $x = \\tfrac12$. The admissible solutions are $x = -4$ and $x = 2$ only. Exactly two real solutions. The statement is True.",
-        "**E.** → False\n\nExclude $x = 1$ and $x = -2$. Clearing denominators yields $x = -8$, which is allowed and checks. A real solution exists. The statement is False."
+        "**A.** → True\n\nIsolate $\\sqrt{x + 3} = 3 - \\sqrt{x}$ and square to get $x = 1$. Check: $\\sqrt{4} + 1 = 3$. Unique integer solution. The statement is True.",
+        "**B.** → True\n\n$(x + 3)(x - 1) = 8$ gives $x^{2} + 2x - 11 = 0$, so $x = -1 \\pm 2\\sqrt{3}$. Only $-1 + 2\\sqrt{3}$ exceeds $1$. Exactly one admissible solution. The statement is True.",
+        "**C.** → True\n\n$(u - 1)(u - 4) = 0$ yields $x = 0$ or $x = 2$, both real. The statement is True.",
+        "**D.** → True\n\nRegion analysis keeps $x = -4$ and $x = 2$ only. Exactly two real solutions. The statement is True.",
+        "**E.** → False\n\nClearing yields $x = -8$, which is allowed and checks. A real solution exists. The statement is False."
       ],
-      "solution_overview": "Five harder independent equations: a two-radical sum, a log product, a quadratic in $2^{x}$, a two-modulus sum, and a rational clear-and-filter.",
+      "solution_overview": "Five independent hard claims: a two-radical sum, a log product with domain, a quadratic in $2^{x}$, a two-modulus sum, and a rational clear-and-filter.",
       "difficulty_level": "5/5",
       "sort_order": 102
     },
     {
       "id": "math-4-103",
       "case_id": "MATH 4.103",
-      "title": "A short bakery model with four equation types",
+      "title": "Independent parametric and break-even claims",
       "subsection": "4.5",
-      "context": "A bakery tracks flour cost by $(k - 4)x = 2k - 8$, daily profit by $\\Pi(q) = -q^{2} + 10q - 16$, delivery by $\\dfrac{30}{v} = 2$, and growth by $N(t) = 5 \\cdot 2^{t}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "There is a real value of $k$ for which the flour-cost equation has infinitely many solutions for $x$.",
-        "The profit equation $\\Pi(q) = 0$ has two distinct positive break-even values whose sum is $10$.",
-        "The delivery equation has a unique positive solution $v = 15$.",
-        "The time when $N(t) = 40$ is an integer.",
-        "For $k = 4$ the flour-cost equation has no solution."
+        "The parametric linear equation $(k - 4)x = 2k - 8$ is rewritten in factored form as $(k - 4)x = 2(k - 4)$. Reading the coefficient of $x$, there exists a real value of $k$ for which every real number $x$ is a solution.",
+        "The quadratic break-even equation $-q^{2} + 10q - 16 = 0$ is multiplied by $-1$ and factored. A student reports that the two distinct positive break-even outputs have sum equal to $10$.",
+        "Under the physical restriction $v > 0$, the reciprocal speed equation $\\dfrac{30}{v} = 2$ is solved by cross-multiplication. Then the unique admissible solution equals $15$.",
+        "The exponential growth model $5 \\cdot 2^{t} = 40$ is divided by $5$ and rewritten with matching bases. Then the unique real time $t$ recovered from the exponents is an integer.",
+        "When the parameter in $(k - 4)x = 2k - 8$ is specialised to $k = 4$, the cleaned equation becomes $0 = 0$. A candidate nevertheless claims that this specialised equation has no real solution for $x$."
       ],
       "answer_key": [
         true,
@@ -3183,28 +3183,28 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$(k - 4)x = 2(k - 4)$$\n\nAt $k = 4$ both sides vanish, so every $x$ works. The statement is True.",
+        "**A.** → True\n\nAt $k = 4$ both sides vanish, so every $x$ works. The statement is True.",
         "**B.** → True\n\n$$q^{2} - 10q + 16 = 0$$\n\ngives $q = 2$ or $q = 8$. Sum $10$. The statement is True.",
-        "**C.** → True\n\n$$\\dfrac{30}{v} = 2$$\n\ngives $v = 15$. The statement is True.",
-        "**D.** → True\n\n$$5 \\cdot 2^{t} = 40 \\Rightarrow 2^{t} = 8 \\Rightarrow t = 3$$\n\nThe statement is True.",
+        "**C.** → True\n\n$$v = 15 > 0$$\n\nThe statement is True.",
+        "**D.** → True\n\n$$2^{t} = 8 \\Rightarrow t = 3$$\n\nThe statement is True.",
         "**E.** → False\n\nAt $k = 4$ the equation is the identity $0 = 0$, not a contradiction. The statement is False."
       ],
-      "solution_overview": "Compact bakery stem: parametric linear identity, quadratic break-even, reciprocal speed, exponential growth.",
-      "difficulty_level": "4/5",
+      "solution_overview": "Five independent claims: a parametric identity, a quadratic break-even, a reciprocal speed, an exponential time, and a false 'no solution' reading of $0 = 0$.",
+      "difficulty_level": "5/5",
       "sort_order": 103
     },
     {
       "id": "math-4-104",
       "case_id": "MATH 4.104",
-      "title": "Equal moduli, a cancelled hole, and matching bases",
+      "title": "Independent moduli, holes, and matching bases",
       "subsection": "4.5",
-      "context": "Consider the equations $|x - 2| = |2x + 1|$, $\\dfrac{x^{2} - 9}{x - 3} = x + 1$, $\\sqrt{3x + 1} = x - 1$, $\\ln(2x - 1) = 0$, and $3^{2x} = 27^{x - 1}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The absolute-value equation has exactly one real solution.",
-        "After cancelling the common factor in the rational equation, $x = 3$ is still a solution of the original equation.",
-        "The radical equation has exactly one real solution.",
-        "The logarithmic equation has a unique real solution equal to $1$.",
-        "The exponential equation has a negative solution."
+        "The absolute-value equation $|x - 2| = |2x + 1|$ is converted into the two ordinary cases $x - 2 = \\pm(2x + 1)$. After both cases are solved, a student concludes that exactly one real solution appears.",
+        "In the rational equation $\\dfrac{x^{2} - 9}{x - 3} = x + 1$, a common linear factor is cancelled for every $x \\neq 3$. A candidate then claims that the excluded hole $x = 3$ is still a solution of the original unsimplified equation.",
+        "The radical equation $\\sqrt{3x + 1} = x - 1$ is solved subject to $x \\ge -\\tfrac13$ and $x \\ge 1$. After squaring produces a quadratic and every candidate is checked, exactly one real solution survives.",
+        "The logarithmic equation $\\ln(2x - 1) = 0$ is rewritten as an exponential statement with base $e$. Then it has a unique real solution, and that solution equals $1$.",
+        "The exponential equation $3^{2x} = 27^{x - 1}$ is rewritten entirely over base $3$ before the exponents are matched. A student reports that the unique real solution obtained this way is negative."
       ],
       "answer_key": [
         false,
@@ -3216,26 +3216,26 @@
       "tactical_explanations": [
         "**A.** → False\n\nCases give $x = -3$ and $x = \\tfrac13$. Two solutions. The statement is False.",
         "**B.** → False\n\nFor $x \\neq 3$ the left side is $x + 3$, and $x + 3 = x + 1$ is impossible. Also $x = 3$ is excluded. The statement is False.",
-        "**C.** → True\n\nNeed $x \\ge 1$. Squaring yields $x = 0$ or $x = 5$; only $x = 5$ survives. Exactly one real solution. The statement is True.",
-        "**D.** → True\n\n$$\\ln(2x - 1) = 0 \\Rightarrow x = 1$$\n\nThe statement is True.",
+        "**C.** → True\n\nSquaring yields $x = 0$ or $x = 5$; only $x = 5$ lies in $x \\ge 1$ and checks. Exactly one real solution. The statement is True.",
+        "**D.** → True\n\n$$2x - 1 = 1 \\Rightarrow x = 1$$\n\nThe statement is True.",
         "**E.** → False\n\n$$3^{2x} = 3^{3x - 3} \\Rightarrow x = 3$$\n\nwhich is positive. The statement is False."
       ],
-      "solution_overview": "Short named-equation stem mixing absolute values, a rational hole, a radical check, a logarithm, and exponential base matching.",
+      "solution_overview": "Five independent claims about equal moduli, a cancelled hole, a radical check, a natural log, and matched exponential bases.",
       "difficulty_level": "5/5",
       "sort_order": 104
     },
     {
       "id": "math-4-105",
       "case_id": "MATH 4.105",
-      "title": "Parameter gates across three models",
+      "title": "Independent parameter gates and Vieta",
       "subsection": "4.5",
-      "context": "A planning desk uses the linear gate $(m - 1)x = m^{2} - 1$, the quadratic gate $x^{2} - (m + 3)x + 2m = 0$, and the exponential check $2^{x} = m$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The linear gate has infinitely many solutions for $x$ precisely when $m = 1$.",
-        "If $m = 2$, the quadratic gate has two distinct positive roots.",
-        "If $m = 2$, the sum of the squares of the quadratic roots equals $17$.",
-        "There exists $m > 0$ for which the linear gate has no solution for $x$.",
-        "For $m = -1$ the quadratic gate has opposite-sign roots."
+        "The parametric linear gate $(m - 1)x = m^{2} - 1$ is factored as $(m - 1)x = (m - 1)(m + 1)$ and then classified by cases on $m$. The equation has infinitely many solutions for $x$ if and only if $m = 1$.",
+        "When the parameter in the quadratic gate $x^{2} - (m + 3)x + 2m = 0$ is set equal to $m = 2$, the specialised quadratic is solved by factoring. It then has two distinct positive roots.",
+        "For that same specialised quadratic obtained at $m = 2$ from $x^{2} - (m + 3)x + 2m = 0$, Vieta's identities are used to compute $x_1^{2} + x_2^{2}$ without naming intermediate decimals. The sum of the squares equals $17$.",
+        "A candidate inspects the factored linear gate $(m - 1)x = (m - 1)(m + 1)$ and claims that there exists some positive parameter $m > 0$ for which the gate has no real solution for $x$.",
+        "Substituting $m = -1$ into $x^{2} - (m + 3)x + 2m = 0$ produces a quadratic whose discriminant is positive. The two real roots then have opposite signs."
       ],
       "answer_key": [
         true,
@@ -3245,28 +3245,28 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$(m - 1)x = (m - 1)(m + 1)$$\n\nInfinitely many solutions occur exactly at $m = 1$. Otherwise $x = m + 1$. The statement is True.",
+        "**A.** → True\n\nInfinitely many solutions occur exactly at $m = 1$; otherwise $x = m + 1$. The statement is True.",
         "**B.** → True\n\nFor $m = 2$: $x^{2} - 5x + 4 = 0$ gives $1$ and $4$. The statement is True.",
         "**C.** → True\n\n$1^{2} + 4^{2} = 17$. The statement is True.",
-        "**D.** → False\n\nThe factored form never produces a contradiction $0 = c$ with $c \\neq 0$. There is no such $m$. The statement is False.",
-        "**E.** → True\n\nFor $m = -1$ the product of roots is $-2 < 0$. Opposite signs. The statement is True."
+        "**D.** → False\n\nThe factored form never produces $0 = c$ with $c \\neq 0$. The statement is False.",
+        "**E.** → True\n\nFor $m = -1$ the product is $-2 < 0$. Opposite signs. The statement is True."
       ],
-      "solution_overview": "Parametric mixed stem: linear identity at $m = 1$, Vieta on a quadratic gate, and an exponential side condition.",
+      "solution_overview": "Five independent parametric claims: a linear identity case, positive roots, sum of squares, an impossible empty case, and opposite signs via Vieta.",
       "difficulty_level": "5/5",
       "sort_order": 105
     },
     {
       "id": "math-4-106",
       "case_id": "MATH 4.106",
-      "title": "Two-radical isolation and a reciprocal quadratic",
+      "title": "Independent two-radical and reciprocal hard cases",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The equation $\\sqrt{2x + 6} - \\sqrt{x - 1} = 2$ has a unique real solution strictly greater than $5$.",
-        "The equation $\\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{5}{6}$ has two distinct real solutions.",
-        "The equation $|x^{2} - 5| = 4$ has exactly four real solutions.",
-        "The equation $\\log_{3}(2x - 1) = 2$ has an integer solution.",
-        "The equation $9^{x} = 3^{x + 2}$ has solution $x = 2$."
+        "The difference of radicals $\\sqrt{2x + 6} - \\sqrt{x - 1} = 2$ is isolated and squared over the domain $x \\ge 1$, and the resulting candidate is checked. Then the unique real solution is strictly greater than $5$.",
+        "The reciprocal-sum equation $\\dfrac{1}{x} + \\dfrac{1}{x + 1} = \\dfrac{5}{6}$ is written over a common denominator after excluding $x = 0$ and $x = -1$. Clearing then produces a quadratic with two distinct admissible real roots.",
+        "The absolute-value equation $|x^{2} - 5| = 4$ is split into the pair $x^{2} - 5 = 4$ and $x^{2} - 5 = -4$. Solving both branches yields exactly four distinct real solutions.",
+        "The logarithmic equation $\\log_{3}(2x - 1) = 2$ is converted to exponential form with base $3$ and positive argument. Then the unique real solution is an integer.",
+        "The matched-base equation $9^{x} = 3^{x + 2}$ is rewritten so both sides are powers of $3$. Matching the exponents recovers the unique real solution $x = 2$."
       ],
       "answer_key": [
         false,
@@ -3276,28 +3276,28 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nDomain $x \\ge 1$. Isolating and squaring yields the unique checked solution $x = 5$, which is not strictly greater than $5$. The statement is False.",
-        "**B.** → True\n\n$$\\dfrac{2x + 1}{x(x + 1)} = \\dfrac{5}{6}$$\n\n$$5x^{2} - 7x - 6 = 0$$\n\n$$x = 2 \\quad \\text{or} \\quad x = -\\tfrac{3}{5}$$\n\nBoth are allowed. Two distinct real solutions. The statement is True.",
-        "**C.** → True\n\n$$x^{2} - 5 = 4$$ or $$x^{2} - 5 = -4$$\n\ngives $x = \\pm 3$ or $x = \\pm 1$. Four real solutions. The statement is True.",
-        "**D.** → True\n\n$$2x - 1 = 9 \\Rightarrow x = 5$$\n\nan integer. The statement is True.",
+        "**A.** → False\n\nIsolating and squaring yields the unique checked solution $x = 5$, which is not strictly greater than $5$. The statement is False.",
+        "**B.** → True\n\n$$5x^{2} - 7x - 6 = 0$$\n\ngives $x = 2$ or $x = -\\tfrac{3}{5}$, both allowed. The statement is True.",
+        "**C.** → True\n\n$x^{2} = 9$ or $x^{2} = 1$ gives $x = \\pm 3$ or $x = \\pm 1$. Four solutions. The statement is True.",
+        "**D.** → True\n\n$$2x - 1 = 9 \\Rightarrow x = 5$$\n\nThe statement is True.",
         "**E.** → True\n\n$$3^{2x} = 3^{x + 2} \\Rightarrow x = 2$$\n\nThe statement is True."
       ],
-      "solution_overview": "Dry hard set: two-radical isolation, reciprocal sum, absolute-value quadratic, logarithm, and matching powers of $3$.",
+      "solution_overview": "Five independent hard dry claims: two-radical isolation, a reciprocal quadratic, four absolute-value roots, a log integer, and matching powers of $3$.",
       "difficulty_level": "5/5",
       "sort_order": 106
     },
     {
       "id": "math-4-107",
       "case_id": "MATH 4.107",
-      "title": "Fleet cost schedule in three lines",
+      "title": "Independent cost, break-even, and mix equations",
       "subsection": "4.5",
-      "context": "A fleet desk writes three working equations only: $C(x) = 40x + 200$, break-even $40x + 200 = 60x$, and fuel-mix $\\dfrac{2}{x} + \\dfrac{3}{x + 1} = 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The break-even equation has unique solution $x = 10$.",
-        "At that break-even load, the cost $C(x)$ exceeds $500$.",
-        "The fuel-mix equation has a unique positive solution.",
-        "The fuel-mix equation also has a negative real solution.",
-        "Adding $100$ to both sides of the break-even equation changes its solution."
+        "A linear break-even model is written in isolation as $40x + 200 = 60x$, with no other equation attached to the claim. After constants and variable terms are collected, the unique real solution equals $10$.",
+        "Separately from any other model, the cost formula $C(x) = 40x + 200$ is evaluated at the load $x = 10$. The resulting cost is then strictly greater than $500$.",
+        "The fuel-mix equation $\\dfrac{2}{x} + \\dfrac{3}{x + 1} = 1$ is cleared after excluding its holes and produces a quadratic. Exactly one of the two real roots is positive.",
+        "Returning to the same fuel-mix equation $\\dfrac{2}{x} + \\dfrac{3}{x + 1} = 1$ as its own closed problem, the second real root obtained after clearing is strictly negative and still admissible.",
+        "A student starts from the break-even equation $40x + 200 = 60x$ alone and adds $100$ to both sides. The student then claims that this move changes the unique solution of that equation."
       ],
       "answer_key": [
         true,
@@ -3309,26 +3309,26 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$200 = 20x \\Rightarrow x = 10$$\n\nThe statement is True.",
         "**B.** → True\n\n$$C(10) = 600 > 500$$\n\nThe statement is True.",
-        "**C.** → True\n\nClearing gives $x^{2} - 4x - 2 = 0$, so $x = 2 \\pm \\sqrt{6}$. Only $2 + \\sqrt{6}$ is positive. The statement is True.",
-        "**D.** → True\n\n$2 - \\sqrt{6}$ is negative and allowed. The statement is True.",
-        "**E.** → False\n\nAdding the same number to both sides preserves the solution set. The statement is False."
+        "**C.** → True\n\n$$x^{2} - 4x - 2 = 0$$\n\ngives $x = 2 \\pm \\sqrt{6}$. Only $2 + \\sqrt{6}$ is positive. The statement is True.",
+        "**D.** → True\n\n$2 - \\sqrt{6} < 0$ and is allowed. The statement is True.",
+        "**E.** → False\n\nAdding the same number to both sides preserves the solution. The statement is False."
       ],
-      "solution_overview": "Very short three-equation stem: linear cost, break-even, and a two-term rational mix.",
+      "solution_overview": "Five independent applied claims, each carrying its own equation: break-even, cost evaluation, a rational mix, a negative mix root, and an equivalence trap.",
       "difficulty_level": "4/5",
       "sort_order": 107
     },
     {
       "id": "math-4-108",
       "case_id": "MATH 4.108",
-      "title": "A quadratic exponential and a nested radical",
+      "title": "Independent nested radical and unknown base",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The equation $2^{2x} - 3 \\cdot 2^{x} - 4 = 0$ has exactly two real solutions.",
-        "The equation $\\sqrt{x + \\sqrt{x + 2}} = 2$ has a unique real solution equal to $2$.",
-        "The equation $\\dfrac{x + 5}{x - 1} - \\dfrac{x - 2}{x + 3} = 2$ has two distinct real solutions.",
-        "The equation $\\log_{x} 16 = 2$ forces the unknown base to equal $4$.",
-        "The equation $|3 - 2x| = 5$ has solutions whose product is negative."
+        "The quadratic exponential $2^{2x} - 3 \\cdot 2^{x} - 4 = 0$ is reduced by setting $u = 2^{x}$ with the restriction $u > 0$. A candidate claims that exactly two real values of $x$ arise from the positive roots of the quadratic in $u$.",
+        "The nested radical equation $\\sqrt{x + \\sqrt{x + 2}} = 2$ is squared twice, and every candidate is filtered by the domain conditions created along the way. Then there is a unique real solution, and it equals $2$.",
+        "The rational difference $\\dfrac{x + 5}{x - 1} - \\dfrac{x - 2}{x + 3} = 2$ is multiplied through by the common denominator after excluding $x = 1$ and $x = -3$. Two distinct real solutions then survive the filter.",
+        "In the logarithmic equation $\\log_{x} 16 = 2$ the unknown is the base, so the base restrictions $x > 0$ and $x \\neq 1$ are imposed before solving. Under those restrictions the unique admissible base equals $4$.",
+        "The absolute-value equation $|3 - 2x| = 5$ is split into $3 - 2x = 5$ and $3 - 2x = -5$. The two real solutions obtained this way have a negative product."
       ],
       "answer_key": [
         false,
@@ -3338,28 +3338,28 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSet $u = 2^{x} > 0$. Then $u^{2} - 3u - 4 = 0$, so $(u - 4)(u + 1) = 0$. Only $u = 4$ is positive, hence only $x = 2$. Exactly one real solution, not two. The statement is False.",
-        "**B.** → True\n\nSquaring twice and filtering the domain leaves only $x = 2$. The statement is True.",
-        "**C.** → True\n\nExclude $x = 1$ and $x = -3$. Clearing produces $2x^{2} - 7x - 19 = 0$ with $\\Delta = 201 > 0$ and both roots off the holes. Two distinct real solutions. The statement is True.",
+        "**A.** → False\n\n$u^{2} - 3u - 4 = 0$ gives only the positive root $u = 4$, hence only $x = 2$. Not two solutions. The statement is False.",
+        "**B.** → True\n\nSquaring twice and filtering leaves only $x = 2$. The statement is True.",
+        "**C.** → True\n\nClearing produces $2x^{2} - 7x - 19 = 0$ with $\\Delta = 201 > 0$ and both roots off the holes. The statement is True.",
         "**D.** → True\n\n$$x^{2} = 16$$\n\nwith $x > 0$, $x \\neq 1$, so $x = 4$. The statement is True.",
         "**E.** → True\n\nSolutions $x = -1$ and $x = 4$ have product $-4 < 0$. The statement is True."
       ],
-      "solution_overview": "Hard dry mix: quadratic in $2^{x}$, nested radical, rational difference, unknown log base, and absolute value.",
+      "solution_overview": "Five independent hard forms: quadratic in $2^{x}$, a nested radical, a rational difference, an unknown log base, and an absolute-value product.",
       "difficulty_level": "5/5",
       "sort_order": 108
     },
     {
       "id": "math-4-109",
       "case_id": "MATH 4.109",
-      "title": "Clinic dosing: short context, hard filters",
+      "title": "Independent clinic-style filters",
       "subsection": "4.5",
-      "context": "A clinic uses concentration $\\dfrac{12}{c - 2} = 3$, dilution $\\sqrt{5y + 1} = y + 1$, and shelf-life $\\log_{2}(t + 6) - \\log_{2}(t - 1) = 1$ with $t > 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The concentration equation has unique solution $c = 6$.",
-        "The dilution equation has two distinct real solutions.",
-        "The shelf-life equation has unique admissible solution $t = 8$.",
-        "Among the admissible dilution roots, at least one is negative.",
-        "Replacing the right-hand side of the shelf-life equation by $2$ keeps the same unique admissible root $t = 8$."
+        "The concentration equation $\\dfrac{12}{c - 2} = 3$ is treated as a stand-alone rational model and solved after excluding the hole $c = 2$. The unique real solution equals $6$.",
+        "The dilution equation $\\sqrt{5y + 1} = y + 1$ is solved with both the radicand condition and the nonnegativity of the right-hand side. After squaring and checking, two distinct real solutions survive.",
+        "The shelf-life equation $\\log_{2}(t + 6) - \\log_{2}(t - 1) = 1$ is compressed by the quotient law under the domain $t > 1$. Then the unique admissible solution equals $8$.",
+        "Looking only at the admissible real solutions of the dilution equation $\\sqrt{5y + 1} = y + 1$, a technician claims that at least one of those solutions is strictly negative.",
+        "Starting again from $\\log_{2}(t + 6) - \\log_{2}(t - 1) = 1$ but replacing the right-hand side by $2$, a planner claims that the unique admissible root is still $t = 8$."
       ],
       "answer_key": [
         true,
@@ -3370,27 +3370,27 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$12 = 3(c - 2) \\Rightarrow c = 6$$\n\nThe statement is True.",
-        "**B.** → True\n\nNeed $y \\ge -\\tfrac15$. Squaring gives $y(y - 3) = 0$, so $y = 0$ or $y = 3$, both valid. Two solutions. The statement is True.",
+        "**B.** → True\n\nSquaring gives $y(y - 3) = 0$, so $y = 0$ or $y = 3$, both valid. The statement is True.",
         "**C.** → True\n\n$$\\dfrac{t + 6}{t - 1} = 2 \\Rightarrow t = 8 > 1$$\n\nThe statement is True.",
         "**D.** → False\n\nBoth admissible roots $0$ and $3$ are nonnegative. The statement is False.",
-        "**E.** → False\n\nWith right-hand side $2$: $\\dfrac{t + 6}{t - 1} = 4$ gives $t = \\tfrac{10}{3} \\neq 8$. The statement is False."
+        "**E.** → False\n\nWith right-hand side $2$ one gets $t = \\tfrac{10}{3} \\neq 8$. The statement is False."
       ],
-      "solution_overview": "Short clinic stem with rational, radical, and log-difference equations, focused on domain filters.",
+      "solution_overview": "Five independent filter-heavy claims: a rational concentration, a radical dilution, a log difference, a sign check, and a changed right-hand side.",
       "difficulty_level": "5/5",
       "sort_order": 109
     },
     {
       "id": "math-4-110",
       "case_id": "MATH 4.110",
-      "title": "Compare two exponential clocks",
+      "title": "Independent exponential comparison claims",
       "subsection": "4.5",
-      "context": "Let $A(t) = 2^{t}$ and $B(t) = 4^{t - 1}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The equation $A(t) = B(t)$ has unique solution $t = 2$.",
-        "For that solution, $A(t) = 4$.",
-        "The equation $A(t) = 8$ has an odd integer solution.",
-        "The equation $\\log_{2} A(t) = t$ is an identity for every real $t$.",
-        "The equation $B(t) = 1$ has a negative solution."
+        "The crossing equation $2^{t} = 4^{t - 1}$ is rewritten entirely over base $2$ before the exponents are matched. Then it has a unique real solution, and that solution equals $2$.",
+        "Using the unique solution $t = 2$ of the separate crossing problem $2^{t} = 4^{t - 1}$, the left-hand side $2^{t}$ is evaluated directly. The value obtained equals $4$.",
+        "The level equation $2^{t} = 8$ is solved on its own by writing $8$ as a power of $2$. The unique real solution is then an odd integer.",
+        "The proposed identity $\\log_{2}(2^{t}) = t$ is tested for an arbitrary real number $t$, with no other equation attached. The equality holds for every real $t$.",
+        "The special-value equation $4^{t - 1} = 1$ is solved by recognising that $4^{0} = 1$. A candidate reports that the unique real solution is negative."
       ],
       "answer_key": [
         true,
@@ -3401,27 +3401,27 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$2^{t} = 2^{2t - 2} \\Rightarrow t = 2$$\n\nThe statement is True.",
-        "**B.** → True\n\n$$A(2) = 4$$\n\nThe statement is True.",
-        "**C.** → True\n\n$$2^{t} = 8 \\Rightarrow t = 3$$\n\nodd. The statement is True.",
+        "**B.** → True\n\n$$2^{2} = 4$$\n\nThe statement is True.",
+        "**C.** → True\n\n$$t = 3$$\n\nodd. The statement is True.",
         "**D.** → True\n\n$$\\log_{2}(2^{t}) = t$$\n\nholds for every real $t$. The statement is True.",
-        "**E.** → False\n\n$$4^{t - 1} = 1 \\Rightarrow t = 1$$\n\nwhich is positive. The statement is False."
+        "**E.** → False\n\n$$t - 1 = 0 \\Rightarrow t = 1$$\n\nwhich is positive. The statement is False."
       ],
-      "solution_overview": "Comparison stem built from two exponential clocks $2^{t}$ and $4^{t-1}$, with log and special values.",
+      "solution_overview": "Five independent exponential claims, each with its own equation: a crossing, an evaluation, a level, an identity, and a false sign report.",
       "difficulty_level": "5/5",
       "sort_order": 110
     },
     {
       "id": "math-4-111",
       "case_id": "MATH 4.111",
-      "title": "Piecewise distance on a line and a hard rational",
+      "title": "Independent distance sums and impossible roots",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The equation $|x + 1| + |x - 4| = 5$ has infinitely many real solutions.",
-        "The equation $|x + 1| + |x - 4| = 4$ has no real solution.",
-        "The equation $\\dfrac{x}{x^{2} - 1} = \\dfrac{2}{x + 1}$ has two distinct real solutions.",
-        "The equation $\\sqrt{x} = -2$ has no real solution.",
-        "The equation $5^{x} = 25^{x - 1}$ has solution $x = 2$."
+        "The distance-sum equation $|x + 1| + |x - 4| = 5$ is analysed by comparing the target $5$ with the distance between the points $-1$ and $4$. The solution set then contains infinitely many real numbers.",
+        "The related but separate distance-sum equation $|x + 1| + |x - 4| = 4$ is compared with the minimum value attained by the left-hand side. Because that minimum is $5$, the equation has no real solution.",
+        "The rational equation $\\dfrac{x}{x^{2} - 1} = \\dfrac{2}{x + 1}$ is cleared after excluding both holes $x = \\pm 1$. A student concludes that two distinct real solutions survive the domain filter.",
+        "The radical equation $\\sqrt{x} = -2$ is examined over the real numbers with the principal square root. Because a principal square root cannot be negative, the equation has no real solution.",
+        "The matched-base equation $5^{x} = 25^{x - 1}$ is rewritten over base $5$ and the exponents are equated. The unique real solution equals $2$."
       ],
       "answer_key": [
         true,
@@ -3431,28 +3431,28 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nOn the segment $[-1, 4]$ the left side equals the constant $5$. Every point of that segment is a solution. The statement is True.",
+        "**A.** → True\n\nOn the segment $[-1, 4]$ the left side equals the constant $5$. Infinitely many solutions. The statement is True.",
         "**B.** → True\n\nThe minimum of the left side is $5$, so the value $4$ is impossible. The statement is True.",
-        "**C.** → False\n\nExclude $x = \\pm 1$. Clearing gives the single solution $x = 2$. Not two solutions. The statement is False.",
+        "**C.** → False\n\nClearing gives the single solution $x = 2$. Not two solutions. The statement is False.",
         "**D.** → True\n\nA principal square root is never negative. The statement is True.",
         "**E.** → True\n\n$$5^{x} = 5^{2x - 2} \\Rightarrow x = 2$$\n\nThe statement is True."
       ],
-      "solution_overview": "Distance-sum absolute values, a rational with two holes, an impossible square root, and matching exponential bases.",
+      "solution_overview": "Five independent claims: an interval of absolute-value solutions, an empty distance sum, a single rational root, an impossible square root, and matching bases.",
       "difficulty_level": "5/5",
       "sort_order": 111
     },
     {
       "id": "math-4-112",
       "case_id": "MATH 4.112",
-      "title": "Warehouse inventory identities",
+      "title": "Independent inventory identities",
       "subsection": "4.5",
-      "context": "Inventory satisfies $3(w - 2) = 2w + 1$, spoilage $w^{2} - 7w + 12 = 0$, and reorder $\\log_{2}(w) = 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The linear inventory equation has unique solution $w = 7$.",
-        "The spoilage equation has roots $3$ and $4$.",
-        "The reorder equation has solution $w = 8$.",
-        "Exactly one spoilage root also solves the reorder equation.",
-        "The linear solution is larger than both spoilage roots."
+        "The linear inventory equation $3(w - 2) = 2w + 1$ is expanded by the distributive law and solved by inverse operations. Its unique real solution equals $7$.",
+        "The spoilage quadratic $w^{2} - 7w + 12 = 0$ is factored independently of any other inventory relation. The two roots obtained are $3$ and $4$.",
+        "The reorder logarithm $\\log_{2}(w) = 3$ is rewritten as an exponential statement with base $2$. The unique positive solution equals $8$.",
+        "Taking the spoilage roots of $w^{2} - 7w + 12 = 0$ and the reorder solution of $\\log_{2}(w) = 3$ as answers to two separate equations, a student claims that exactly one spoilage root also solves the reorder equation.",
+        "The unique solution of the linear equation $3(w - 2) = 2w + 1$ is compared with both roots of the separate quadratic $w^{2} - 7w + 12 = 0$. That linear solution is strictly larger than both quadratic roots."
       ],
       "answer_key": [
         true,
@@ -3464,26 +3464,26 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$3w - 6 = 2w + 1 \\Rightarrow w = 7$$\n\nThe statement is True.",
         "**B.** → True\n\n$$(w - 3)(w - 4) = 0$$\n\nThe statement is True.",
-        "**C.** → True\n\n$$w = 2^{3} = 8$$\n\nThe statement is True.",
+        "**C.** → True\n\n$$w = 8$$\n\nThe statement is True.",
         "**D.** → False\n\nNeither $3$ nor $4$ equals $8$. The statement is False.",
         "**E.** → True\n\n$7 > 4 > 3$. The statement is True."
       ],
-      "solution_overview": "Short three-equation warehouse stem linking a linear solve, a factored quadratic, and a logarithm.",
+      "solution_overview": "Five independent inventory claims, each naming its own equation: a linear solve, a factored quadratic, a log, a false shared-root claim, and a comparison.",
       "difficulty_level": "4/5",
       "sort_order": 112
     },
     {
       "id": "math-4-113",
       "case_id": "MATH 4.113",
-      "title": "Hard parameter discriminant and a log domain cut",
+      "title": "Independent discriminant and log-domain cuts",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For $x^{2} - 2mx + (m + 2) = 0$, there are two distinct real roots precisely when $m < -1$ or $m > 2$.",
-        "If those two distinct real roots exist, their product equals $m + 2$.",
-        "The equation $\\log_{2}(x - 1) + \\log_{2}(x - 3) = 3$ has exactly one admissible real solution.",
-        "That admissible solution is strictly greater than $5$.",
-        "The equation $e^{2x} - 3e^{x} + 2 = 0$ has two distinct real solutions."
+        "For the parametric quadratic $x^{2} - 2mx + (m + 2) = 0$, the discriminant is expanded as a quadratic polynomial in $m$. There are two distinct real roots for $x$ precisely when $m < -1$ or $m > 2$.",
+        "Whenever that same parametric quadratic $x^{2} - 2mx + (m + 2) = 0$ has two real roots, Vieta's product identity is applied directly to the monic coefficients. The product of the roots equals $m + 2$.",
+        "The logarithmic equation $\\log_{2}(x - 1) + \\log_{2}(x - 3) = 3$ is solved under the domain restriction $x > 3$ forced by both arguments. After the product law, exactly one admissible real solution remains.",
+        "For that same stand-alone equation $\\log_{2}(x - 1) + \\log_{2}(x - 3) = 3$, the unique admissible solution obtained after the domain filter is strictly greater than $5$.",
+        "The exponential equation $e^{2x} - 3e^{x} + 2 = 0$ is reduced by the substitution $u = e^{x}$ with $u > 0$. Both positive roots of the quadratic in $u$ then produce distinct real values of $x$."
       ],
       "answer_key": [
         true,
@@ -3495,26 +3495,26 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$\\Delta = 4(m - 2)(m + 1)$$\n\nso $\\Delta > 0$ iff $m < -1$ or $m > 2$. The statement is True.",
         "**B.** → True\n\nBy Vieta the product is $m + 2$. The statement is True.",
-        "**C.** → True\n\nDomain $x > 3$. Then $(x - 1)(x - 3) = 8$, so $x = 5$ or $x = -1$. Only $x = 5$ is admissible. The statement is True.",
+        "**C.** → True\n\n$(x - 1)(x - 3) = 8$ gives $x = 5$ or $x = -1$; only $x = 5$ is admissible. The statement is True.",
         "**D.** → False\n\nThe admissible root is $x = 5$, not strictly greater than $5$. The statement is False.",
-        "**E.** → True\n\nSet $u = e^{x} > 0$: $(u - 1)(u - 2) = 0$ gives $x = 0$ or $x = \\ln 2$. Two distinct real solutions. The statement is True."
+        "**E.** → True\n\n$(u - 1)(u - 2) = 0$ gives $x = 0$ or $x = \\ln 2$. The statement is True."
       ],
-      "solution_overview": "Hard parametric discriminant with Vieta, a two-log domain cut, and a quadratic in $e^{x}$.",
+      "solution_overview": "Five independent hard claims: a parametric discriminant, Vieta product, a two-log domain cut, a false strict inequality, and a quadratic in $e^{x}$.",
       "difficulty_level": "5/5",
       "sort_order": 113
     },
     {
       "id": "math-4-114",
       "case_id": "MATH 4.114",
-      "title": "Mixed exam strip: five closed claims",
+      "title": "Independent mixed hard strip",
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The equation $\\dfrac{2}{x - 3} - \\dfrac{1}{x + 1} = 1$ has two distinct real solutions.",
-        "The equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ has a unique positive solution $w = 4$.",
-        "The equation $|2x - 1| + |x + 3| = 8$ has exactly one real solution.",
-        "The equation $16^{x} = 8^{x + 1}$ has a larger solution than $4^{x} = 8$.",
-        "The equation $(k + 1)x = 2k + 2$ has infinitely many solutions when $k = -1$."
+        "The rational equation $\\dfrac{2}{x - 3} - \\dfrac{1}{x + 1} = 1$ is cleared after excluding the holes $x = 3$ and $x = -1$, producing a quadratic auxiliary equation. Both of its roots miss the holes, so two distinct real solutions survive.",
+        "The radical equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ is isolated and squared under $w \\ge 0$, and each candidate is checked in the original equation. The unique positive solution that survives equals $4$.",
+        "The absolute-value sum $|2x - 1| + |x + 3| = 8$ is solved by splitting the line at $x = -3$ and $x = \\tfrac12$ and discarding out-of-region roots. A student concludes that exactly one real solution remains after that filter.",
+        "The exponential equation $16^{x} = 8^{x + 1}$ is solved over base $2$ and then compared with the separately solved equation $4^{x} = 8$. The solution of the first equation is strictly larger than the solution of the second.",
+        "The parametric linear equation $(k + 1)x = 2k + 2$ is specialised at $k = -1$ and read as a statement about the coefficient of $x$. At that parameter value every real number $x$ is a solution."
       ],
       "answer_key": [
         true,
@@ -3524,28 +3524,28 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nClearing yields $x^{2} - 3x - 8 = 0$ with two roots off the holes $x = 3$ and $x = -1$. The statement is True.",
-        "**B.** → True\n\nIsolating and squaring leaves the checked positive root $w = 4$. The statement is True.",
-        "**C.** → False\n\nRegion analysis produces $x = -\\tfrac{10}{3}$ and $x = 2$. Two solutions, not one. The statement is False.",
-        "**D.** → True\n\n$16^{x} = 8^{x + 1}$ gives $x = 3$, while $4^{x} = 8$ gives $x = \\tfrac32$. Since $3 > \\tfrac32$, the statement is True.",
-        "**E.** → True\n\nAt $k = -1$ both sides vanish, so every $x$ works. The statement is True."
+        "**A.** → True\n\nClearing yields $x^{2} - 3x - 8 = 0$ with both roots off the holes. The statement is True.",
+        "**B.** → True\n\nThe checked positive root is $w = 4$. The statement is True.",
+        "**C.** → False\n\nThe solutions are $x = -\\tfrac{10}{3}$ and $x = 2$. Two solutions, not one. The statement is False.",
+        "**D.** → True\n\n$16^{x} = 8^{x + 1}$ gives $x = 3$, while $4^{x} = 8$ gives $x = \\tfrac32$, and $3 > \\tfrac32$. The statement is True.",
+        "**E.** → True\n\nAt $k = -1$ both sides vanish. The statement is True."
       ],
-      "solution_overview": "Compressed mixed strip revisiting hard rational, radical, absolute-value, exponential comparison, and parametric linear cases.",
+      "solution_overview": "Five independent mixed hard claims: a two-root rational, a positive radical, a false unique absolute-value claim, an exponential comparison, and a parametric identity.",
       "difficulty_level": "5/5",
       "sort_order": 114
     },
     {
       "id": "math-4-115",
       "case_id": "MATH 4.115",
-      "title": "Start-up milestones in four equations",
+      "title": "Independent start-up milestone equations",
       "subsection": "4.5",
-      "context": "A start-up writes $R(q) = 12q - q^{2}$, unlock $\\dfrac{1}{q} = \\dfrac{1}{6}$, hiring $\\sqrt{q + 12} = 4$, and cash-out $\\ln q = \\ln 9 - \\ln 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The revenue equation $R(q) = 0$ has two nonnegative roots whose average is $6$.",
-        "The unlock equation has unique positive solution $q = 6$.",
-        "The hiring equation has unique solution $q = 4$.",
-        "The cash-out equation has the same solution as the unlock equation.",
-        "At $q = 6$, revenue $R(q)$ exceeds $30$."
+        "The revenue equation $12q - q^{2} = 0$ is factored as a stand-alone quadratic. It has two nonnegative roots, and the arithmetic mean of those roots equals $6$.",
+        "The unlock equation $\\dfrac{1}{q} = \\dfrac{1}{6}$ is solved under the single restriction $q \\neq 0$. The unique positive solution equals $6$.",
+        "The hiring equation $\\sqrt{q + 12} = 4$ is squared after noting that the right-hand side is already positive. The unique real solution recovered this way equals $4$.",
+        "The cash-out equation $\\ln q = \\ln 9 - \\ln 3$ is compressed by the difference law into a single logarithm. A student claims that its unique positive solution coincides with the unlock solution of the separate equation $\\dfrac{1}{q} = \\dfrac{1}{6}$.",
+        "Evaluating the revenue rule $R(q) = 12q - q^{2}$ at the single input $q = 6$, with no other model required, a manager claims that the resulting revenue exceeds $30$."
       ],
       "answer_key": [
         true,
@@ -3559,11 +3559,104 @@
         "**B.** → True\n\n$$q = 6$$\n\nThe statement is True.",
         "**C.** → True\n\n$$q + 12 = 16 \\Rightarrow q = 4$$\n\nThe statement is True.",
         "**D.** → False\n\n$$\\ln q = \\ln 3 \\Rightarrow q = 3 \\neq 6$$\n\nThe statement is False.",
-        "**E.** → True\n\n$$R(6) = 72 - 36 = 36 > 30$$\n\nThe statement is True."
+        "**E.** → True\n\n$$R(6) = 36 > 30$$\n\nThe statement is True."
       ],
-      "solution_overview": "Short start-up stem: quadratic revenue zeros, reciprocal unlock, radical hiring, and a log cash-out identity.",
+      "solution_overview": "Five independent milestone claims: quadratic zeros, a reciprocal unlock, a radical hire, a false shared log/unlock root, and a revenue evaluation.",
       "difficulty_level": "4/5",
       "sort_order": 115
+    },
+    {
+      "id": "math-4-116",
+      "case_id": "MATH 4.116",
+      "title": "Independent work-rate and alloy style mixtures",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Pipes $A$ and $B$ finish a tank in $12$ and $18$ minutes, and their combined-rate equation is written as $\\dfrac{1}{12} + \\dfrac{1}{18} = \\dfrac{1}{t}$. Solving for the positive time $t$ yields a value strictly less than $8$ minutes.",
+        "Thirty kilograms of $20\\%$ copper are mixed with $x$ kilograms of $70\\%$ copper according to the closed balance $6 + 0.7x = 0.4(30 + x)$. The unique real solution for the richer amount $x$ equals $20$.",
+        "The absolute-value equation $|x - 3| = 2x + 1$ is solved together with the requirement that the right-hand side is nonnegative. After both cases are checked against that restriction, exactly one real solution survives.",
+        "The exponential equation $8^{x} = 4^{x + 1}$ is rewritten over base $2$ and the exponents are matched. The unique real solution is an even integer.",
+        "The rational equation $\\dfrac{x + 1}{x - 2} = \\dfrac{x - 1}{x + 3}$ is cross-multiplied after excluding the holes. A student claims that no real solution remains after the domain filter."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\\dfrac{1}{t} = \\dfrac{5}{36} \\Rightarrow t = \\dfrac{36}{5} = 7.2 < 8$$\n\nThe statement is True.",
+        "**B.** → True\n\n$$6 + 0.7x = 12 + 0.4x \\Rightarrow 0.3x = 6 \\Rightarrow x = 20$$\n\nThe statement is True.",
+        "**C.** → True\n\nNeed $2x + 1 \\ge 0$, so $x \\ge -\\tfrac12$. Cases give $x - 3 = 2x + 1$ or $x - 3 = -(2x + 1)$, hence $x = -4$ or $x = \\tfrac23$. Only $\\tfrac23$ meets $x \\ge -\\tfrac12$. Exactly one solution. The statement is True.",
+        "**D.** → True\n\n$$3x = 2x + 2 \\Rightarrow x = 2$$\n\neven. The statement is True.",
+        "**E.** → False\n\nCross-multiplying yields $x = -\\tfrac12$, which is allowed. A real solution exists. The statement is False."
+      ],
+      "solution_overview": "Five independent applied-algebra claims: a work-rate time, an alloy mix, a constrained absolute value, a matched exponential, and a rational with a surviving root.",
+      "difficulty_level": "5/5",
+      "sort_order": 116
+    },
+    {
+      "id": "math-4-117",
+      "case_id": "MATH 4.117",
+      "title": "Independent hard completing-the-square and logs",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The quadratic equation $x^{2} + 6x - 7 = 0$ is rewritten by completing the square and then taking square roots. One of the two real roots is positive and the other is negative.",
+        "Replacing $x$ by $y^{2}$ in the already solved pattern $x^{2} - 5x + 4 = 0$ produces a biquadratic in $y$. Under the filter $y^{2} \\ge 0$, exactly four distinct real values of $y$ appear.",
+        "The logarithmic equation $\\log_{2}(t + 6) + \\log_{2}(t - 1) = 3$ produces two algebraic roots before the domain filter $t > 1$ is applied. Those algebraic roots have product $-14$, but only one of them is admissible.",
+        "The radical gap equation $\\sqrt{x + 24} - \\sqrt{x} = 2$ is isolated and squared over $x \\ge 0$, then checked in the original form. The unique real solution equals $25$.",
+        "A continuous-growth comparison is written as the stand-alone equation $(1.25)^{t} = e^{0.2 t}$. After natural logs are taken and $t$ is cancelled for $t \\neq 0$, a student claims that a strictly positive crossing time exists."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$(x + 3)^{2} = 16$$\n\ngives $x = 1$ or $x = -7$. Opposite signs. The statement is True.",
+        "**B.** → True\n\n$u = 1$ or $u = 4$ both nonnegative, so $y = \\pm 1$ or $y = \\pm 2$. Four values. The statement is True.",
+        "**C.** → True\n\nAlgebraic roots $-7$ and $2$ multiply to $-14$; only $t = 2$ meets $t > 1$. The statement is True.",
+        "**D.** → True\n\nIsolating and squaring recovers $x = 25$, which checks. The statement is True.",
+        "**E.** → False\n\n$$t \\ln 1.25 = 0.2 t$$\n\nand $\\ln 1.25 \\neq 0.2$, so only $t = 0$ solves the equality. No positive crossing. The statement is False."
+      ],
+      "solution_overview": "Five independent hard theory claims: completing the square, a biquadratic, a log product with an extraneous algebraic root, a radical gap, and a false positive crossing.",
+      "difficulty_level": "5/5",
+      "sort_order": 117
+    },
+    {
+      "id": "math-4-118",
+      "case_id": "MATH 4.118",
+      "title": "Independent closing mixed exam sentences",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A surveyor records that the square root of a distance plus $24$ m, minus the square root of the distance itself, equals $2$ m, giving the closed model $\\sqrt{x + 24} - \\sqrt{x} = 2$ with $x \\ge 0$. The recovered distance is then $25$ m.",
+        "The equal-moduli equation $|3 - 2x| = |x + 4|$ is split into the two linear cases $3 - 2x = \\pm(x + 4)$ and both candidates are kept when consistent. A candidate claims that exactly one real solution appears.",
+        "The reciprocal-difference equation $\\dfrac{1}{x} - \\dfrac{1}{x + 3} = \\dfrac{1}{4}$ is combined over a common denominator after excluding the holes $x = 0$ and $x = -3$. Exactly one real solution then survives.",
+        "The radical equation $\\sqrt{5x + 1} = x + 1$ is squared under its domain, producing two algebraic candidates. A student reports that both candidates survive the check, so there are two distinct real solutions.",
+        "The rational equation $\\dfrac{x + 5}{x - 1} - \\dfrac{x - 2}{x + 3} = 2$ is cleared after excluding its holes and produces a quadratic auxiliary equation. A clerk claims there is no real solution because that auxiliary discriminant is negative."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nIsolating and squaring recovers $x = 25$, which checks: $\\sqrt{49} - \\sqrt{25} = 2$. The statement is True.",
+        "**B.** → False\n\nCases give $x = -\\tfrac13$ and $x = 7$. Two solutions. The statement is False.",
+        "**C.** → False\n\n$$\\dfrac{3}{x(x + 3)} = \\dfrac{1}{4}$$\n\nyields $x^{2} + 3x - 12 = 0$ with $\\Delta = 57 > 0$ and both roots off the holes. Two solutions, not one. The statement is False.",
+        "**D.** → True\n\nSquaring gives $x = 0$ or $x = 3$, both in the domain and both checking. Two solutions. The statement is True.",
+        "**E.** → False\n\nClearing yields $2x^{2} - 7x - 19 = 0$ with $\\Delta = 201 > 0$. Real solutions exist. The statement is False."
+      ],
+      "solution_overview": "Five independent closing mixed sentences: a surveyor radical, equal moduli, a reciprocal difference, a radical with two survivors, and a false empty rational.",
+      "difficulty_level": "5/5",
+      "sort_order": 118
     }
   ]
 }
