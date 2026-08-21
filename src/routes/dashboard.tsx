@@ -21,9 +21,11 @@ import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
+import {
+  MatchingModeArt,
+  TutorModeArt,
+} from "@/components/study-modes/ModeArt";
 import flashcardsBanner from "../../assets/flashcard-previews/games-flashcards-banner.png";
-import matchingBanner from "../../assets/flashcard-previews/matching-banner.png";
-import tutorBanner from "../../assets/flashcard-previews/tutor-banner.png";
 import {
   BookOpen,
   ClipboardCheck,
@@ -548,12 +550,8 @@ function StudyModesTab() {
           to="/matching"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
-            <img
-              src={matchingBanner}
-              alt=""
-              className="h-full w-full object-cover object-center"
-            />
+          <div className="h-32 w-full overflow-hidden">
+            <MatchingModeArt />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
@@ -570,12 +568,8 @@ function StudyModesTab() {
           to="/tutor-exam"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="h-32 w-full overflow-hidden bg-[#e8f0ec]">
-            <img
-              src={tutorBanner}
-              alt=""
-              className="h-full w-full object-cover object-center"
-            />
+          <div className="h-32 w-full overflow-hidden">
+            <TutorModeArt />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">

@@ -1,16 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
+import { MatchingSubjectArt } from "@/components/study-modes/ModeArt";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
 import { Link2 } from "lucide-react";
-import economicsImage from "../../assets/flashcard-previews/matching-economics.png";
-import mathImage from "../../assets/flashcard-previews/matching-math.png";
-import englishImage from "../../assets/flashcard-previews/matching-english.png";
-
-const SUBJECT_IMAGES: Record<string, string> = {
-  economics: economicsImage,
-  math: mathImage,
-  english: englishImage,
-};
 
 export const Route = createFileRoute("/matching/")({
   head: () => ({
@@ -69,14 +61,10 @@ function MatchingIndexPage() {
               const n = countCards(s.sections);
               const cardInner = (
                 <>
-                  <div className="relative aspect-video overflow-hidden bg-[#f7ebdc]">
-                    <img
-                      src={SUBJECT_IMAGES[s.id]}
-                      alt={`${s.title} matching`}
-                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
-                    />
+                  <div className="relative overflow-hidden">
+                    <MatchingSubjectArt subject={s.id} accent={s.accent} />
                     <span
-                      className="absolute bottom-3 left-4 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm backdrop-blur-sm"
+                      className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
                       style={{ color: s.accent }}
                     >
                       {s.tag}
