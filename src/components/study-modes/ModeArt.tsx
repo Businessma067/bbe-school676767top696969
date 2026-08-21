@@ -91,17 +91,9 @@ function MiniCard({
   label: string;
 }) {
   return (
-    <div className="relative flex aspect-[3/4] w-[4.75rem] flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white sm:w-[5.25rem]">
-      <span
-        aria-hidden
-        className="absolute inset-x-0 -bottom-1 h-full translate-y-1 rounded-xl border-[1.5px] border-foreground/15 bg-white"
-      />
-      <span
-        aria-hidden
-        className="absolute left-2.5 top-2.5 h-2 w-2 rounded-full border-[1.5px] border-foreground/40"
-      />
-      <SubjectGlyph subject={subject} className="relative z-10 h-7 w-7 text-foreground" />
-      <span className="relative z-10 mt-2 text-[9px] font-semibold uppercase tracking-wider text-taupe">
+    <div className="flex aspect-[3/4] w-[4.75rem] flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white sm:w-[5.25rem]">
+      <SubjectGlyph subject={subject} className="h-7 w-7 text-foreground" />
+      <span className="mt-2 text-[9px] font-semibold uppercase tracking-wider text-taupe">
         {label}
       </span>
     </div>
@@ -120,7 +112,7 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
       <p className="text-[10px] font-semibold uppercase tracking-widest text-caramel-deep">
         Tap to flip
       </p>
-      <div className="flex items-end justify-center gap-2.5 sm:gap-3">
+      <div className="flex items-center justify-center gap-2.5 sm:gap-3">
         <MiniCard subject="economics" label="Econ" />
         <MiniCard subject="math" label="Math" />
         <MiniCard subject="english" label="Eng" />
@@ -142,20 +134,8 @@ export function FlashcardsSubjectArt({
       className="relative flex aspect-video w-full items-center justify-center px-5 py-4"
       style={{ backgroundColor: SUBJECT_BG[subject] }}
     >
-      <div className="relative flex h-[78%] max-h-40 w-[42%] max-w-[9.5rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white">
-        <span
-          aria-hidden
-          className="absolute inset-0 translate-y-2 rounded-2xl border-[1.5px] border-foreground/15 bg-white"
-        />
-        <span
-          aria-hidden
-          className="absolute inset-0 translate-y-4 rounded-2xl border-[1.5px] border-foreground/10 bg-white"
-        />
-        <span
-          aria-hidden
-          className="absolute left-3.5 top-3.5 z-10 h-3 w-3 rounded-full border-[1.5px] border-foreground/45"
-        />
-        <div className="relative z-10 flex flex-col items-center px-3 text-center">
+      <div className="flex h-[78%] max-h-40 w-[42%] max-w-[9.5rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white">
+        <div className="flex flex-col items-center px-3 text-center">
           <SubjectGlyph
             subject={subject}
             className="h-10 w-10 text-foreground"
