@@ -91,9 +91,9 @@ function MiniCard({
   label: string;
 }) {
   return (
-    <div className="flex aspect-[3/4] w-[4.75rem] flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white sm:w-[5.25rem]">
-      <SubjectGlyph subject={subject} className="h-7 w-7 text-foreground" />
-      <span className="mt-2 text-[9px] font-semibold uppercase tracking-wider text-taupe">
+    <div className="flex h-[4.75rem] w-[3.5rem] flex-col items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white sm:h-[5.25rem] sm:w-[3.85rem]">
+      <SubjectGlyph subject={subject} className="h-6 w-6 text-foreground" />
+      <span className="mt-1.5 text-[8px] font-semibold uppercase tracking-wider text-taupe">
         {label}
       </span>
     </div>
@@ -105,19 +105,17 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
   return (
     <div
       className={
-        "flex h-full w-full items-center justify-center bg-[#f7ebdc] px-4 " +
+        "box-border flex h-full w-full flex-col items-center justify-center gap-2 overflow-hidden bg-[#f7ebdc] px-4 py-2 " +
         className
       }
     >
-      <div className="flex flex-col items-center gap-2.5">
-        <p className="leading-none text-[10px] font-semibold uppercase tracking-widest text-caramel-deep">
-          Tap to flip
-        </p>
-        <div className="flex items-center justify-center gap-2.5 sm:gap-3">
-          <MiniCard subject="economics" label="Econ" />
-          <MiniCard subject="math" label="Math" />
-          <MiniCard subject="english" label="Eng" />
-        </div>
+      <p className="shrink-0 text-center text-[10px] font-semibold uppercase leading-none tracking-widest text-caramel-deep">
+        Tap to flip
+      </p>
+      <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
+        <MiniCard subject="economics" label="Econ" />
+        <MiniCard subject="math" label="Math" />
+        <MiniCard subject="english" label="Eng" />
       </div>
     </div>
   );
