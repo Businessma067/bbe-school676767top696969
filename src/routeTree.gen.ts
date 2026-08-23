@@ -16,6 +16,7 @@ import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as ParentsRouteImport } from './routes/parents'
 import { Route as MockExamsRouteImport } from './routes/mock-exams'
+import { Route as MatchingRouteImport } from './routes/matching'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as ImportantFeaturesRouteImport } from './routes/important-features'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
@@ -28,6 +29,7 @@ import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
+import { Route as MatchingIndexRouteImport } from './routes/matching.index'
 import { Route as FlashcardsIndexRouteImport } from './routes/flashcards.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as ProductsLiteBbeCourseSubjectsRouteImport } from './routes/products.lite-bbe-course-subjects'
@@ -41,6 +43,7 @@ import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/produc
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
 import { Route as ProductsCustomMockBuilderRouteImport } from './routes/products.custom-mock-builder'
+import { Route as MatchingSubjectRouteImport } from './routes/matching.$subject'
 import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
 import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
 import { Route as DemoPracticeMathRouteImport } from './routes/demo-practice.math'
@@ -84,6 +87,11 @@ const ParentsRoute = ParentsRouteImport.update({
 const MockExamsRoute = MockExamsRouteImport.update({
   id: '/mock-exams',
   path: '/mock-exams',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MatchingRoute = MatchingRouteImport.update({
+  id: '/matching',
+  path: '/matching',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginRoute = LoginRouteImport.update({
@@ -145,6 +153,11 @@ const MockExamsIndexRoute = MockExamsIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => MockExamsRoute,
+} as any)
+const MatchingIndexRoute = MatchingIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => MatchingRoute,
 } as any)
 const FlashcardsIndexRoute = FlashcardsIndexRouteImport.update({
   id: '/',
@@ -218,6 +231,11 @@ const ProductsCustomMockBuilderRoute =
     path: '/custom-mock-builder',
     getParentRoute: () => ProductsRoute,
   } as any)
+const MatchingSubjectRoute = MatchingSubjectRouteImport.update({
+  id: '/$subject',
+  path: '/$subject',
+  getParentRoute: () => MatchingRoute,
+} as any)
 const FlashcardsSubjectRoute = FlashcardsSubjectRouteImport.update({
   id: '/$subject',
   path: '/$subject',
@@ -275,6 +293,7 @@ export interface FileRoutesByFullPath {
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
+  '/matching': typeof MatchingRouteWithChildren
   '/mock-exams': typeof MockExamsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/practice': typeof PracticeRoute
@@ -289,6 +308,7 @@ export interface FileRoutesByFullPath {
   '/demo-practice/math': typeof DemoPracticeMathRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
+  '/matching/$subject': typeof MatchingSubjectRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
@@ -302,6 +322,7 @@ export interface FileRoutesByFullPath {
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
+  '/matching/': typeof MatchingIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
@@ -328,6 +349,7 @@ export interface FileRoutesByTo {
   '/demo-practice/math': typeof DemoPracticeMathRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
+  '/matching/$subject': typeof MatchingSubjectRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
@@ -341,6 +363,7 @@ export interface FileRoutesByTo {
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/flashcards': typeof FlashcardsIndexRoute
+  '/matching': typeof MatchingIndexRoute
   '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
@@ -358,6 +381,7 @@ export interface FileRoutesById {
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
+  '/matching': typeof MatchingRouteWithChildren
   '/mock-exams': typeof MockExamsRouteWithChildren
   '/parents': typeof ParentsRoute
   '/practice': typeof PracticeRoute
@@ -372,6 +396,7 @@ export interface FileRoutesById {
   '/demo-practice/math': typeof DemoPracticeMathRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
+  '/matching/$subject': typeof MatchingSubjectRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
@@ -385,6 +410,7 @@ export interface FileRoutesById {
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
+  '/matching/': typeof MatchingIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
@@ -403,6 +429,7 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/important-features'
     | '/login'
+    | '/matching'
     | '/mock-exams'
     | '/parents'
     | '/practice'
@@ -417,6 +444,7 @@ export interface FileRouteTypes {
     | '/demo-practice/math'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
+    | '/matching/$subject'
     | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
@@ -430,6 +458,7 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-subjects'
     | '/demo-practice/'
     | '/flashcards/'
+    | '/matching/'
     | '/mock-exams/'
     | '/products/'
     | '/mock-exams/$examId/review'
@@ -456,6 +485,7 @@ export interface FileRouteTypes {
     | '/demo-practice/math'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
+    | '/matching/$subject'
     | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
@@ -469,6 +499,7 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-subjects'
     | '/demo-practice'
     | '/flashcards'
+    | '/matching'
     | '/mock-exams'
     | '/products'
     | '/mock-exams/$examId/review'
@@ -485,6 +516,7 @@ export interface FileRouteTypes {
     | '/forgot-password'
     | '/important-features'
     | '/login'
+    | '/matching'
     | '/mock-exams'
     | '/parents'
     | '/practice'
@@ -499,6 +531,7 @@ export interface FileRouteTypes {
     | '/demo-practice/math'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
+    | '/matching/$subject'
     | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
@@ -512,6 +545,7 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-subjects'
     | '/demo-practice/'
     | '/flashcards/'
+    | '/matching/'
     | '/mock-exams/'
     | '/products/'
     | '/mock-exams/$examId/review'
@@ -529,6 +563,7 @@ export interface RootRouteChildren {
   ForgotPasswordRoute: typeof ForgotPasswordRoute
   ImportantFeaturesRoute: typeof ImportantFeaturesRoute
   LoginRoute: typeof LoginRoute
+  MatchingRoute: typeof MatchingRouteWithChildren
   MockExamsRoute: typeof MockExamsRouteWithChildren
   ParentsRoute: typeof ParentsRoute
   PracticeRoute: typeof PracticeRoute
@@ -589,6 +624,13 @@ declare module '@tanstack/react-router' {
       path: '/mock-exams'
       fullPath: '/mock-exams'
       preLoaderRoute: typeof MockExamsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/matching': {
+      id: '/matching'
+      path: '/matching'
+      fullPath: '/matching'
+      preLoaderRoute: typeof MatchingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/login': {
@@ -674,6 +716,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/mock-exams/'
       preLoaderRoute: typeof MockExamsIndexRouteImport
       parentRoute: typeof MockExamsRoute
+    }
+    '/matching/': {
+      id: '/matching/'
+      path: '/'
+      fullPath: '/matching/'
+      preLoaderRoute: typeof MatchingIndexRouteImport
+      parentRoute: typeof MatchingRoute
     }
     '/flashcards/': {
       id: '/flashcards/'
@@ -765,6 +814,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/products/custom-mock-builder'
       preLoaderRoute: typeof ProductsCustomMockBuilderRouteImport
       parentRoute: typeof ProductsRoute
+    }
+    '/matching/$subject': {
+      id: '/matching/$subject'
+      path: '/$subject'
+      fullPath: '/matching/$subject'
+      preLoaderRoute: typeof MatchingSubjectRouteImport
+      parentRoute: typeof MatchingRoute
     }
     '/flashcards/$subject': {
       id: '/flashcards/$subject'
@@ -874,6 +930,20 @@ const FlashcardsRouteWithChildren = FlashcardsRoute._addFileChildren(
   FlashcardsRouteChildren,
 )
 
+interface MatchingRouteChildren {
+  MatchingSubjectRoute: typeof MatchingSubjectRoute
+  MatchingIndexRoute: typeof MatchingIndexRoute
+}
+
+const MatchingRouteChildren: MatchingRouteChildren = {
+  MatchingSubjectRoute: MatchingSubjectRoute,
+  MatchingIndexRoute: MatchingIndexRoute,
+}
+
+const MatchingRouteWithChildren = MatchingRoute._addFileChildren(
+  MatchingRouteChildren,
+)
+
 interface MockExamsRouteChildren {
   MockExamsIndexRoute: typeof MockExamsIndexRoute
   MockExamsExamIdReviewRoute: typeof MockExamsExamIdReviewRoute
@@ -935,6 +1005,7 @@ const rootRouteChildren: RootRouteChildren = {
   ForgotPasswordRoute: ForgotPasswordRoute,
   ImportantFeaturesRoute: ImportantFeaturesRoute,
   LoginRoute: LoginRoute,
+  MatchingRoute: MatchingRouteWithChildren,
   MockExamsRoute: MockExamsRouteWithChildren,
   ParentsRoute: ParentsRoute,
   PracticeRoute: PracticeRoute,

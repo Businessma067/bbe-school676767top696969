@@ -542,6 +542,32 @@ function GamesTab() {
             <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
           </div>
         </Link>
+        <Link
+          to="/matching"
+          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <div className="flex h-32 w-full items-center justify-center bg-gradient-to-br from-[#f7ebdc] via-[#f3e6d4] to-[#e8d5bc]">
+            <div className="flex items-center gap-3">
+              <span className="rounded-xl border border-caramel/30 bg-white/80 px-3 py-2 text-xs font-semibold text-caramel-deep shadow-sm">
+                Concept
+              </span>
+              <span className="text-caramel-deep">⟷</span>
+              <span className="rounded-xl border border-caramel/30 bg-white/80 px-3 py-2 text-xs font-semibold text-caramel-deep shadow-sm">
+                Meaning
+              </span>
+            </div>
+          </div>
+          <div className="p-5">
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+              Study game
+            </p>
+            <h3 className="mt-1 font-display text-lg font-bold">Matching</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Connect each concept to the right definition — same decks, different interaction.
+            </p>
+            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open matching →</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
