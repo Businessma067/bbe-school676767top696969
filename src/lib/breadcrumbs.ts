@@ -1,11 +1,8 @@
-import {
-  displayTitleForCustomMock,
-  isCustomExamId,
-} from "@/config/custom-mock-builder";
+import { isCustomExamId } from "@/config/custom-mock-builder";
 import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
 import { getExamById } from "@/lib/mock-exams";
 
-/** Known URL segment → label. Extend when adding new top-level sections. */
+/** Known URL segment → label. Extend when adding new sections. */
 const SEGMENT_LABELS: Record<string, string> = {
   "demo-practice": "Demo Practice",
   products: "Products",
@@ -42,7 +39,6 @@ const SEGMENT_LABELS: Record<string, string> = {
   english: "English",
   take: "Take",
   review: "Review",
-  api: "API",
 };
 
 const SUBJECT_TITLE: Record<string, string> = Object.fromEntries(
@@ -53,6 +49,10 @@ export type BreadcrumbCrumb = {
   label: string;
   to: string | null;
   isLast: boolean;
+};
+
+export type BreadcrumbContext = {
+  customMockTitle?: string | null;
 };
 
 export function normalizePathname(pathname: string): string {
@@ -72,95 +72,77 @@ function prettifySegment(segment: string): string {
     .join(" ");
 }
 
-/** Parse `<title>` from route head — works for future pages that set a title. */
-export function labelFromDocumentTitle(): string | null {
-  if (typeof document === "undefined") return null;
-  const raw = document.title.trim();
-  if (!raw) return null;
-
-  const cleaned = raw
-    .replace(/\s*[·|–—-]\s*BBE School\s*$/i, "")
-    .replace(/\s*\|\s*WU Vienna.*$/i, "")
-    .trim();
-
-  if (!cleaned || /^BBE School(\s|\||$)/i.test(cleaned)) return null;
-  return cleaned;
+function withLastFlags(crumbs: Omit<BreadcrumbCrumb, "isLast">[]): BreadcrumbCrumb[] {
+  return crumbs.map((c, i) => ({
+    ...c,
+    isLast: i === crumbs.length - 1,
+  }));
 }
 
-export type PageLabelContext = {
-  customMockTitle?: string | null;
-};
+function labelForSegment(segment: string, ctx: BreadcrumbContext): string {
+  const decoded = decodeURIComponent(segment);
+  if (isCustomExamId(decoded)) {
+    return ctx.customMockTitle ?? "Custom Mock";
+  }
+  const exam = getExamById(decoded);
+  if (exam) return exam.title;
+  return prettifySegment(decoded);
+}
 
-/** Label for one visited page — used in the navigation trail. */
-export function resolvePageLabel(
+/**
+ * Standard hierarchical breadcrumbs from the URL (not click history).
+ * Home is rendered separately in the component.
+ */
+export function buildBreadcrumbs(
   pathname: string,
-  ctx: PageLabelContext = {},
-): string {
-  const path = normalizePathname(pathname);
-  if (path === "/") return "Home";
-
-  const mockMatch = path.match(/^\/mock-exams\/([^/]+)(?:\/(take|review))?$/);
-  if (mockMatch) {
-    const examId = decodeURIComponent(mockMatch[1]!);
-    const action = mockMatch[2];
-    if (isCustomExamId(examId)) {
-      const title = ctx.customMockTitle ?? "Custom Mock";
-      if (action === "take") return `${title} · Take`;
-      if (action === "review") return `${title} · Review`;
-      return title;
-    }
-    const exam = getExamById(examId);
-    const base = exam?.title ?? prettifySegment(examId);
-    if (action === "take") return `${base} · Take`;
-    if (action === "review") return `${base} · Review`;
-    return base;
-  }
-
-  const studyMatch = path.match(/^\/(flashcards|matching|tutor-exam)\/([^/]+)$/);
-  if (studyMatch) {
-    const mode = prettifySegment(studyMatch[1]!);
-    const subject = SUBJECT_TITLE[studyMatch[2]!] ?? prettifySegment(studyMatch[2]!);
-    return `${subject} · ${mode}`;
-  }
-
-  const fromTitle = labelFromDocumentTitle();
-  if (fromTitle) return fromTitle;
-
-  const segments = path.split("/").filter(Boolean);
-  if (segments.length === 0) return "Home";
-
-  // Composite paths: use last two segments when the last is a subject/id
-  if (segments.length >= 2) {
-    const parent = prettifySegment(segments[segments.length - 2]!);
-    const leaf = prettifySegment(segments[segments.length - 1]!);
-    if (parent !== leaf) return `${leaf} · ${parent}`;
-  }
-
-  return prettifySegment(segments[segments.length - 1]!);
-}
-
-/** URL hierarchy fallback when there is no session trail yet. */
-export function buildHierarchyCrumbs(pathname: string): BreadcrumbCrumb[] {
+  ctx: BreadcrumbContext = {},
+): BreadcrumbCrumb[] {
   const path = normalizePathname(pathname);
   if (path === "/") return [];
 
+  const customMock = path.match(/^\/mock-exams\/([^/]+)(?:\/(take|review))?$/);
+  if (customMock && isCustomExamId(customMock[1]!)) {
+    const examId = decodeURIComponent(customMock[1]!);
+    const action = customMock[2];
+    const mockLabel = ctx.customMockTitle ?? "Custom Mock";
+    const trail: Omit<BreadcrumbCrumb, "isLast">[] = [
+      { label: "Products", to: "/products" },
+      { label: "Custom Mock Builder", to: "/products/custom-mock-builder" },
+      {
+        label: mockLabel,
+        to: action ? `/mock-exams/${examId}/take` : null,
+      },
+    ];
+    if (action === "take") trail.push({ label: "Take", to: null });
+    if (action === "review") trail.push({ label: "Review", to: null });
+    return withLastFlags(trail);
+  }
+
+  const catalogMock = path.match(/^\/mock-exams\/([^/]+)(?:\/(take|review))?$/);
+  if (catalogMock) {
+    const examId = decodeURIComponent(catalogMock[1]!);
+    const action = catalogMock[2];
+    const exam = getExamById(examId);
+    const trail: Omit<BreadcrumbCrumb, "isLast">[] = [
+      { label: "Mock Exams", to: "/mock-exams" },
+      {
+        label: exam?.title ?? prettifySegment(examId),
+        to: action ? `/mock-exams/${examId}/take` : null,
+      },
+    ];
+    if (action === "take") trail.push({ label: "Take", to: null });
+    if (action === "review") trail.push({ label: "Review", to: null });
+    return withLastFlags(trail);
+  }
+
   const segments = path.split("/").filter(Boolean);
-  return segments.map((seg, i) => ({
-    label: prettifySegment(seg),
-    to: i === segments.length - 1 ? null : `/${segments.slice(0, i + 1).join("/")}`,
-    isLast: i === segments.length - 1,
-  }));
-}
-
-export function trailToCrumbs(
-  trail: { pathname: string; label: string }[],
-): BreadcrumbCrumb[] {
-  const items = trail.filter((e) => normalizePathname(e.pathname) !== "/");
-  if (items.length === 0) return [];
-
-  return items.map((e, i) => ({
-    label: e.label,
-    to: i === items.length - 1 ? null : normalizePathname(e.pathname),
-    isLast: i === items.length - 1,
-  }));
+  return withLastFlags(
+    segments.map((seg, i) => ({
+      label: labelForSegment(seg, ctx),
+      to:
+        i === segments.length - 1
+          ? null
+          : `/${segments.slice(0, i + 1).join("/")}`,
+    })),
+  );
 }
