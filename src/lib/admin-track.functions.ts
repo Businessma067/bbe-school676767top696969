@@ -9,6 +9,7 @@ import {
   upsertStoredUser,
   upsertTheory,
 } from "@/lib/admin-store.server";
+import { syncSingleUserFromSupabase } from "@/lib/admin-sync.server";
 
 const EventInput = z.object({
   eventType: z.string(),
@@ -69,102 +70,27 @@ function userName(context: { claims: Record<string, unknown> }, fallback: string
   return fallback;
 }
 
-async function ensureUser(context: {
-  userId: string;
-  claims: Record<string, unknown>;
-  supabase: import("@supabase/supabase-js").SupabaseClient;
-}) {
-  const email = userEmail(context);
-  const displayName = userName(context, email.split("@")[0] || "User");
-
-  const [profileRes, rolesRes, enrollmentsRes] = await Promise.all([
-    context.supabase.from("profiles").select("display_name, created_at").eq("user_id", context.userId).maybeSingle(),
-    context.supabase.from("user_roles").select("role").eq("user_id", context.userId),
-    context.supabase
-      .from("enrollments")
-      .select("product_slug, product_name, tier, created_at")
-      .eq("user_id", context.userId),
-  ]);
-
-  await upsertStoredUser({
-    userId: context.userId,
-    email,
-    displayName: profileRes.data?.display_name?.trim() || displayName,
-    registeredAt: profileRes.data?.created_at ?? new Date().toISOString(),
-    lastSeenAt: new Date().toISOString(),
-    lastPath: null,
-    userAgent: null,
-    roles: (rolesRes.data ?? []).map((r) => r.role),
-    enrollments: (enrollmentsRes.data ?? []).map((e) => ({
-      productSlug: e.product_slug,
-      productName: e.product_name,
-      tier: e.tier,
-      createdAt: e.created_at,
-    })),
-  });
-}
-
-/** Pull this user's Supabase progress into the local admin store. */
+/** Pull this user's Supabase data into their own local file. */
 export const syncMyDataToAdminStore = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }) => {
-    await ensureUser(context);
+    const email = userEmail(context);
+    await syncSingleUserFromSupabase(context.supabase, context.userId, {
+      email,
+      created_at: new Date().toISOString(),
+    });
 
-    const [tasksRes, mocksRes, practiceRes, answersRes, customRes] = await Promise.all([
-      context.supabase.from("task_attempts").select("*").eq("user_id", context.userId),
-      context.supabase.from("mock_attempts").select("*").eq("user_id", context.userId),
-      context.supabase
-        .from("practice_sessions")
-        .select("*")
-        .eq("user_id", context.userId),
-      context.supabase.from("session_answers").select("*").eq("user_id", context.userId),
-      context.supabase.from("custom_mocks").select("*").eq("user_id", context.userId),
-    ]);
-
-    for (const row of tasksRes.data ?? []) {
-      await appendTaskAttempt(context.userId, {
-        id: row.id,
-        subject: row.subject,
-        chapter: row.chapter,
-        taskKey: row.task_key,
-        taskTitle: row.task_title,
-        correctCount: row.correct_count,
-        statementCount: row.statement_count,
-        isPassed: row.is_passed,
-        durationSeconds: (row as { duration_seconds?: number }).duration_seconds ?? null,
-        attemptNumber: (row as { attempt_number?: number }).attempt_number ?? null,
-        statementResults: null,
-        source: (row as { source?: string }).source ?? "supabase_sync",
-        createdAt: row.created_at,
-      });
-    }
-
-    for (const row of mocksRes.data ?? []) {
-      const pointsEarned = Number(row.points_earned);
-      const pointsTotal = Number(row.points_total);
-      const { upsertMock } = await import("@/lib/admin-store.server");
-      await upsertMock(context.userId, {
-        id: row.id,
-        examId: row.exam_id,
-        examTitle: row.exam_title,
-        status: (row as { status?: string }).status ?? "submitted",
-        pointsEarned,
-        pointsTotal,
-        perSubject: (row.per_subject ?? {}) as Record<string, number>,
-        secondsTaken: row.seconds_taken,
-        timed: row.timed,
-        startedAt: (row as { started_at?: string }).started_at ?? null,
-        completedAt: row.completed_at ?? null,
-        scorePct: pointsTotal > 0 ? Math.round((pointsEarned / pointsTotal) * 1000) / 10 : null,
-      });
-    }
+    const record = await import("@/lib/admin-store.server").then((m) =>
+      m.readUserRecord(context.userId),
+    );
 
     return {
-      syncedTasks: tasksRes.data?.length ?? 0,
-      syncedMocks: mocksRes.data?.length ?? 0,
-      syncedPractice: practiceRes.data?.length ?? 0,
-      syncedAnswers: answersRes.data?.length ?? 0,
-      syncedCustomMocks: customRes.data?.length ?? 0,
+      userId: context.userId,
+      syncedTasks: record?.taskAttempts.length ?? 0,
+      syncedMocks: record?.mocks.length ?? 0,
+      syncedPractice: record?.practiceSessions.length ?? 0,
+      syncedAnswers: record?.sessionAnswers.length ?? 0,
+      syncedCustomMocks: record?.customMocks.length ?? 0,
     };
   });
 
@@ -201,7 +127,18 @@ export const mirrorTaskAttemptLocal = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => TaskInput.parse(d))
   .handler(async ({ context, data }) => {
-    await ensureUser(context);
+    const email = userEmail(context);
+    await upsertStoredUser({
+      userId: context.userId,
+      email,
+      displayName: userName(context, email.split("@")[0] || "User"),
+      registeredAt: new Date().toISOString(),
+      lastSeenAt: null,
+      lastPath: null,
+      userAgent: null,
+      roles: ["student"],
+      enrollments: [],
+    });
     await appendTaskAttempt(context.userId, {
       id: crypto.randomUUID(),
       subject: data.subject,
@@ -223,8 +160,7 @@ export const mirrorFlashcardLocal = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => FlashcardInput.parse(d))
   .handler(async ({ context, data }) => {
-    await upsertFlashcard({
-      userId: context.userId,
+    await upsertFlashcard(context.userId, {
       subjectId: data.subjectId,
       cardId: data.cardId,
       knowledge: data.knowledge,

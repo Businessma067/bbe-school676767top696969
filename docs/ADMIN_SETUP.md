@@ -1,19 +1,24 @@
 # Admin panel
 
-Admin access: sign in as **georgtyrin@gmail.com**.
+Sign in as **georgtyrin@gmail.com** to access `/admin`.
 
-## Local database (no Lovable / service role required)
+## Storage — one file per user
 
-Analytics are stored in **`data/admin-store/store.json`** on the server.
+```
+data/admin-store/
+  index.json
+  users/
+    {user-id-1}.json   ← all data for user 1
+    {user-id-2}.json   ← all data for user 2
+    ...
+```
 
-- Every logged-in user auto-syncs their Supabase progress into this file on first visit
-- New activity (tasks, flashcards, theory, page views) is written here automatically
-- Admin panel reads from this local store — works without `SUPABASE_SERVICE_ROLE_KEY`
+Each JSON file contains that user's profile, task attempts, mocks, practice, flashcards, theory, and activity — completely separate.
 
-If you add `SUPABASE_SERVICE_ROLE_KEY` to `.env`, the admin panel also imports all users from Supabase every 5 minutes.
+## Auto-sync
 
-## Where to open
+- **On login:** that user's Supabase data is imported into their own file
+- **On admin page open:** if `SUPABASE_SERVICE_ROLE_KEY` is set, every registered user is synced individually from Supabase
+- **During use:** new activity is appended only to that user's file
 
-- `/admin` — overview
-- `/admin/users` — all users
-- `/account` — Administration card
+No Lovable migrations required for the admin panel to work.

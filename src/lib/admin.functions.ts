@@ -6,7 +6,7 @@ import {
   getStoreUserDetail,
   getStoreUserRows,
   isAtRisk,
-  readStore,
+  readUserEvents,
 } from "@/lib/admin-store.server";
 import { trySyncAllFromSupabase } from "@/lib/admin-sync.server";
 import type {
@@ -132,10 +132,8 @@ export const adminGetUserTimeline = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => TimelineInput.parse(d))
   .handler(async ({ data }): Promise<AdminTimelineResult> => {
-    const store = await readStore();
-    let events = store.events
-      .filter((e) => e.userId === data.userId)
-      .map(({ userId: _uid, ...rest }) => rest);
+    const store = await readUserEvents(data.userId);
+    let events = [...store];
 
     if (data.eventType) {
       events = events.filter((e) => e.eventType === data.eventType);

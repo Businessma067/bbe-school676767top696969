@@ -1,4 +1,4 @@
-import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type {
   AdminActivityEvent,
@@ -20,7 +20,9 @@ import {
 import { isAtRisk, pct } from "@/lib/admin-stats.server";
 
 const STORE_DIR = path.join(process.cwd(), "data", "admin-store");
-const STORE_FILE = path.join(STORE_DIR, "store.json");
+const USERS_DIR = path.join(STORE_DIR, "users");
+const INDEX_FILE = path.join(STORE_DIR, "index.json");
+const LEGACY_FILE = path.join(STORE_DIR, "store.json");
 
 export type StoredUser = {
   userId: string;
@@ -40,7 +42,6 @@ export type StoredUser = {
 };
 
 export type StoredFlashcard = {
-  userId: string;
   subjectId: string;
   cardId: string;
   knowledge: "known" | "unknown" | "new";
@@ -49,32 +50,40 @@ export type StoredFlashcard = {
 
 export type StoredCustomMock = {
   id: string;
-  userId: string;
   title: string;
   subject: string;
   questionCount: number;
   createdAt: string;
 };
 
-type LocalAdminStore = {
+export type UserRecord = {
   version: 1;
-  lastSupabaseSync: string | null;
-  users: Record<string, StoredUser>;
-  taskAttempts: (AdminTaskAttemptRow & { userId: string })[];
-  mocks: (AdminMockRow & { userId: string })[];
-  events: (AdminActivityEvent & { userId: string })[];
-  practiceSessions: (AdminPracticeSessionRow & { userId: string })[];
-  sessionAnswers: (SessionAnswerStat & { userId: string })[];
+  profile: StoredUser;
+  taskAttempts: AdminTaskAttemptRow[];
+  mocks: AdminMockRow[];
+  events: AdminActivityEvent[];
+  practiceSessions: AdminPracticeSessionRow[];
+  sessionAnswers: SessionAnswerStat[];
   flashcards: StoredFlashcard[];
-  theory: (AdminTheoryRow & { userId: string })[];
+  theory: AdminTheoryRow[];
   customMocks: StoredCustomMock[];
+  lastSyncedAt: string | null;
 };
 
-function emptyStore(): LocalAdminStore {
+type StoreIndex = {
+  version: 1;
+  lastSupabaseSync: string | null;
+  userIds: string[];
+};
+
+function userFile(userId: string): string {
+  return path.join(USERS_DIR, `${userId}.json`);
+}
+
+export function emptyUserRecord(profile: StoredUser): UserRecord {
   return {
     version: 1,
-    lastSupabaseSync: null,
-    users: {},
+    profile,
     taskAttempts: [],
     mocks: [],
     events: [],
@@ -83,48 +92,167 @@ function emptyStore(): LocalAdminStore {
     flashcards: [],
     theory: [],
     customMocks: [],
+    lastSyncedAt: null,
   };
 }
 
-let writeQueue: Promise<void> = Promise.resolve();
+const userLocks = new Map<string, Promise<void>>();
 
-async function readStore(): Promise<LocalAdminStore> {
+async function withUserLock<T>(userId: string, fn: () => Promise<T>): Promise<T> {
+  const prev = userLocks.get(userId) ?? Promise.resolve();
+  let release!: () => void;
+  const gate = new Promise<void>((r) => {
+    release = r;
+  });
+  userLocks.set(userId, prev.then(() => gate));
+  await prev;
   try {
-    const raw = await readFile(STORE_FILE, "utf8");
-    const parsed = JSON.parse(raw) as LocalAdminStore;
-    return parsed?.version === 1 ? parsed : emptyStore();
-  } catch {
-    return emptyStore();
+    return await fn();
+  } finally {
+    release();
   }
 }
 
-async function writeStore(store: LocalAdminStore): Promise<void> {
-  await mkdir(STORE_DIR, { recursive: true });
-  const tmp = STORE_FILE + ".tmp";
-  await writeFile(tmp, JSON.stringify(store, null, 2), "utf8");
-  await rename(tmp, STORE_FILE);
+async function readIndex(): Promise<StoreIndex> {
+  try {
+    const raw = await readFile(INDEX_FILE, "utf8");
+    const parsed = JSON.parse(raw) as StoreIndex;
+    if (parsed?.version === 1) return parsed;
+  } catch {
+    /* empty */
+  }
+  return { version: 1, lastSupabaseSync: null, userIds: [] };
 }
 
-export async function withStore<T>(fn: (store: LocalAdminStore) => T | Promise<T>): Promise<T> {
-  const run = async () => {
-    const store = await readStore();
-    const result = await fn(store);
-    await writeStore(store);
+async function writeIndex(index: StoreIndex): Promise<void> {
+  await mkdir(STORE_DIR, { recursive: true });
+  const tmp = INDEX_FILE + ".tmp";
+  await writeFile(tmp, JSON.stringify(index, null, 2), "utf8");
+  await rename(tmp, INDEX_FILE);
+}
+
+async function registerUserId(userId: string): Promise<void> {
+  const index = await readIndex();
+  if (!index.userIds.includes(userId)) {
+    index.userIds.push(userId);
+    await writeIndex(index);
+  }
+}
+
+export async function readUserRecord(userId: string): Promise<UserRecord | null> {
+  try {
+    const raw = await readFile(userFile(userId), "utf8");
+    const parsed = JSON.parse(raw) as UserRecord;
+    return parsed?.version === 1 ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export async function writeUserRecord(userId: string, record: UserRecord): Promise<void> {
+  await mkdir(USERS_DIR, { recursive: true });
+  const file = userFile(userId);
+  const tmp = file + ".tmp";
+  await writeFile(tmp, JSON.stringify(record, null, 2), "utf8");
+  await rename(tmp, file);
+  await registerUserId(userId);
+}
+
+export async function withUserRecord<T>(
+  userId: string,
+  fn: (record: UserRecord) => T | Promise<T>,
+  createProfile?: StoredUser,
+): Promise<T> {
+  return withUserLock(userId, async () => {
+    let record = await readUserRecord(userId);
+    if (!record) {
+      record = emptyUserRecord(
+        createProfile ?? {
+          userId,
+          email: "",
+          displayName: "User",
+          registeredAt: new Date().toISOString(),
+          lastSeenAt: null,
+          lastPath: null,
+          userAgent: null,
+          roles: ["student"],
+          enrollments: [],
+        },
+      );
+    }
+    const result = await fn(record);
+    await writeUserRecord(userId, record);
     return result;
-  };
-  const op = writeQueue.then(run, run);
-  writeQueue = op.then(
-    () => undefined,
-    () => undefined,
-  );
-  return op;
+  });
+}
+
+/** Split legacy monolithic store.json into per-user files (once). */
+export async function migrateLegacyStoreIfNeeded(): Promise<void> {
+  try {
+    const raw = await readFile(LEGACY_FILE, "utf8");
+    const legacy = JSON.parse(raw) as {
+      users?: Record<string, StoredUser>;
+      taskAttempts?: (AdminTaskAttemptRow & { userId: string })[];
+      mocks?: (AdminMockRow & { userId: string })[];
+      events?: (AdminActivityEvent & { userId: string })[];
+      practiceSessions?: (AdminPracticeSessionRow & { userId: string })[];
+      sessionAnswers?: (SessionAnswerStat & { userId: string })[];
+      flashcards?: (StoredFlashcard & { userId: string })[];
+      theory?: (AdminTheoryRow & { userId: string })[];
+      customMocks?: (StoredCustomMock & { userId: string })[];
+      lastSupabaseSync?: string | null;
+    };
+
+    for (const [userId, profile] of Object.entries(legacy.users ?? {})) {
+      const record = emptyUserRecord(profile);
+      record.taskAttempts = (legacy.taskAttempts ?? []).filter((t) => t.userId === userId);
+      record.mocks = (legacy.mocks ?? []).filter((m) => m.userId === userId);
+      record.events = (legacy.events ?? [])
+        .filter((e) => e.userId === userId)
+        .map(({ userId: _u, ...rest }) => rest);
+      record.practiceSessions = (legacy.practiceSessions ?? []).filter((p) => p.userId === userId);
+      record.sessionAnswers = (legacy.sessionAnswers ?? []).filter((s) => s.userId === userId);
+      record.flashcards = (legacy.flashcards ?? [])
+        .filter((f) => f.userId === userId)
+        .map(({ userId: _u, ...rest }) => rest);
+      record.theory = (legacy.theory ?? []).filter((t) => t.userId === userId);
+      record.customMocks = (legacy.customMocks ?? []).filter((c) => c.userId === userId);
+      await writeUserRecord(userId, record);
+    }
+
+    await writeIndex({
+      version: 1,
+      lastSupabaseSync: legacy.lastSupabaseSync ?? null,
+      userIds: Object.keys(legacy.users ?? {}),
+    });
+    await rename(LEGACY_FILE, LEGACY_FILE + ".migrated");
+  } catch {
+    /* no legacy file */
+  }
+}
+
+export async function listStoredUserIds(): Promise<string[]> {
+  await migrateLegacyStoreIfNeeded();
+  const index = await readIndex();
+  if (index.userIds.length > 0) return index.userIds;
+
+  try {
+    await mkdir(USERS_DIR, { recursive: true });
+    const files = await readdir(USERS_DIR);
+    return files.filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, ""));
+  } catch {
+    return [];
+  }
 }
 
 export async function upsertStoredUser(user: StoredUser): Promise<void> {
-  await withStore((store) => {
-    const prev = store.users[user.userId];
-    store.users[user.userId] = { ...prev, ...user };
-  });
+  await withUserRecord(
+    user.userId,
+    (record) => {
+      record.profile = { ...record.profile, ...user };
+    },
+    user,
+  );
 }
 
 export async function touchPresence(input: {
@@ -135,81 +263,89 @@ export async function touchPresence(input: {
   path: string;
   userAgent?: string;
 }): Promise<void> {
-  await withStore((store) => {
-    const prev = store.users[input.userId];
-    store.users[input.userId] = {
+  await withUserRecord(
+    input.userId,
+    (record) => {
+      record.profile = {
+        ...record.profile,
+        userId: input.userId,
+        email: input.email,
+        displayName: input.displayName,
+        registeredAt: record.profile.registeredAt ?? input.registeredAt ?? new Date().toISOString(),
+        lastSeenAt: new Date().toISOString(),
+        lastPath: input.path,
+        userAgent: input.userAgent ?? record.profile.userAgent,
+      };
+    },
+    {
       userId: input.userId,
       email: input.email,
       displayName: input.displayName,
-      registeredAt: prev?.registeredAt ?? input.registeredAt ?? new Date().toISOString(),
+      registeredAt: input.registeredAt ?? new Date().toISOString(),
       lastSeenAt: new Date().toISOString(),
       lastPath: input.path,
-      userAgent: input.userAgent ?? prev?.userAgent ?? null,
-      roles: prev?.roles ?? ["student"],
-      enrollments: prev?.enrollments ?? [],
-    };
-  });
+      userAgent: input.userAgent ?? null,
+      roles: ["student"],
+      enrollments: [],
+    },
+  );
 }
 
 export async function appendEvent(
   userId: string,
   event: Omit<AdminActivityEvent, "id">,
 ): Promise<void> {
-  await withStore((store) => {
-    store.events.push({
-      ...event,
-      id: crypto.randomUUID(),
-      userId,
-    });
-    if (store.events.length > 20_000) {
-      store.events = store.events.slice(-20_000);
-    }
+  await withUserRecord(userId, (record) => {
+    record.events.push({ ...event, id: crypto.randomUUID() });
+    if (record.events.length > 5000) record.events = record.events.slice(-5000);
   });
 }
 
-export async function appendTaskAttempt(
-  userId: string,
-  row: AdminTaskAttemptRow,
-): Promise<void> {
-  await withStore((store) => {
-    if (store.taskAttempts.some((t) => t.id === row.id && t.userId === userId)) return;
-    store.taskAttempts.push({ ...row, userId });
+export async function appendTaskAttempt(userId: string, row: AdminTaskAttemptRow): Promise<void> {
+  await withUserRecord(userId, (record) => {
+    if (record.taskAttempts.some((t) => t.id === row.id)) return;
+    record.taskAttempts.push(row);
   });
 }
 
 export async function upsertMock(userId: string, row: AdminMockRow): Promise<void> {
-  await withStore((store) => {
-    const idx = store.mocks.findIndex(
-      (m) => m.userId === userId && m.examId === row.examId && m.status === "in_progress",
+  await withUserRecord(userId, (record) => {
+    const idx = record.mocks.findIndex(
+      (m) => m.examId === row.examId && m.status === "in_progress",
     );
-    if (idx >= 0) store.mocks[idx] = { ...row, userId };
-    else store.mocks.push({ ...row, userId });
+    if (idx >= 0) record.mocks[idx] = row;
+    else {
+      const existing = record.mocks.findIndex((m) => m.id === row.id);
+      if (existing >= 0) record.mocks[existing] = row;
+      else record.mocks.push(row);
+    }
   });
 }
 
-export async function upsertFlashcard(row: StoredFlashcard): Promise<void> {
-  await withStore((store) => {
-    const idx = store.flashcards.findIndex(
-      (f) =>
-        f.userId === row.userId && f.subjectId === row.subjectId && f.cardId === row.cardId,
+export async function upsertFlashcard(userId: string, row: StoredFlashcard): Promise<void> {
+  await withUserRecord(userId, (record) => {
+    const idx = record.flashcards.findIndex(
+      (f) => f.subjectId === row.subjectId && f.cardId === row.cardId,
     );
-    if (idx >= 0) store.flashcards[idx] = row;
-    else store.flashcards.push(row);
+    if (idx >= 0) record.flashcards[idx] = row;
+    else record.flashcards.push(row);
   });
 }
 
 export async function upsertTheory(userId: string, row: AdminTheoryRow): Promise<void> {
-  await withStore((store) => {
-    const idx = store.theory.findIndex(
-      (t) =>
-        t.userId === userId &&
-        t.subject === row.subject &&
-        t.chapterId === row.chapterId &&
-        t.sectionId === row.sectionId,
+  await withUserRecord(userId, (record) => {
+    const idx = record.theory.findIndex(
+      (t) => t.subject === row.subject && t.chapterId === row.chapterId && t.sectionId === row.sectionId,
     );
-    if (idx >= 0) store.theory[idx] = { ...row, userId };
-    else store.theory.push({ ...row, userId });
+    if (idx >= 0) record.theory[idx] = row;
+    else record.theory.push(row);
   });
+}
+
+/** Replace one user's local record with a full Supabase snapshot. */
+export async function replaceUserRecord(userId: string, record: UserRecord): Promise<void> {
+  record.lastSyncedAt = new Date().toISOString();
+  await writeUserRecord(userId, record);
 }
 
 function highestTier(tiers: string[]): string {
@@ -243,9 +379,10 @@ function summarizeFlashcards(rows: StoredFlashcard[]): AdminFlashcardDeckSummary
   });
 }
 
-function userRowFromStore(user: StoredUser, store: LocalAdminStore): AdminUserRow {
-  const tasks = store.taskAttempts.filter((t) => t.userId === user.userId);
-  const mocks = store.mocks.filter((m) => m.userId === user.userId && m.status === "submitted");
+function userRowFromRecord(record: UserRecord): AdminUserRow {
+  const user = record.profile;
+  const tasks = record.taskAttempts;
+  const mocks = record.mocks.filter((m) => m.status === "submitted");
   let mockBestPct: number | null = null;
   for (const m of mocks) {
     if (m.scorePct != null && (mockBestPct == null || m.scorePct > mockBestPct)) mockBestPct = m.scorePct;
@@ -279,30 +416,17 @@ function userRowFromStore(user: StoredUser, store: LocalAdminStore): AdminUserRo
   };
 }
 
-export async function getStoreUserRows(): Promise<AdminUserRow[]> {
-  const store = await readStore();
-  return Object.values(store.users)
-    .map((u) => userRowFromStore(u, store))
-    .sort((a, b) => new Date(b.registeredAt).getTime() - new Date(a.registeredAt).getTime());
-}
-
-export async function getStoreUserDetail(userId: string): Promise<AdminUserDetail | null> {
-  const store = await readStore();
-  const user = store.users[userId];
-  if (!user) return null;
-
-  const taskAttempts = store.taskAttempts.filter((t) => t.userId === userId);
-  const mocks = store.mocks.filter((m) => m.userId === userId);
-  const sessionAnswers = store.sessionAnswers.filter((s) => s.userId === userId);
-  const practiceSessions = store.practiceSessions.filter((p) => p.userId === userId);
-  const theory = store.theory.filter((t) => t.userId === userId);
-  const flashcards = summarizeFlashcards(store.flashcards.filter((f) => f.userId === userId));
-  const customMocks = store.customMocks.filter((c) => c.userId === userId);
-  const recentActivity = store.events
-    .filter((e) => e.userId === userId)
+function detailFromRecord(record: UserRecord): AdminUserDetail {
+  const user = record.profile;
+  const taskAttempts = record.taskAttempts;
+  const mocks = record.mocks;
+  const sessionAnswers = record.sessionAnswers;
+  const practiceSessions = record.practiceSessions;
+  const theory = record.theory;
+  const flashcards = summarizeFlashcards(record.flashcards);
+  const recentActivity = [...record.events]
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-    .slice(0, 200)
-    .map(({ userId: _uid, ...rest }) => rest);
+    .slice(0, 200);
 
   const toTasks = (): TaskAttempt[] =>
     taskAttempts.map((t) => ({
@@ -335,7 +459,6 @@ export async function getStoreUserDetail(userId: string): Promise<AdminUserDetai
       }));
 
   const studyProgress = buildStudyProgress(toTasks(), toMocks(), sessionAnswers);
-
   const taskDurationSeconds = taskAttempts.reduce((acc, t) => acc + (t.durationSeconds ?? 0), 0);
   const mockDurationSeconds = mocks
     .filter((m) => m.status === "submitted")
@@ -358,7 +481,7 @@ export async function getStoreUserDetail(userId: string): Promise<AdminUserDetai
     studyProgress,
     taskAttempts,
     mocks,
-    customMocks: customMocks.map((m) => ({
+    customMocks: record.customMocks.map((m) => ({
       id: m.id,
       title: m.title,
       subject: m.subject,
@@ -375,11 +498,29 @@ export async function getStoreUserDetail(userId: string): Promise<AdminUserDetai
       mockDurationSeconds,
       theoryTimeSeconds,
       practiceSessionsCount: practiceSessions.length,
-      flashcardsRated: store.flashcards.filter(
-        (f) => f.userId === userId && f.knowledge !== "new",
-      ).length,
+      flashcardsRated: record.flashcards.filter((f) => f.knowledge !== "new").length,
     },
   };
+}
+
+export async function getStoreUserRows(): Promise<AdminUserRow[]> {
+  await migrateLegacyStoreIfNeeded();
+  const ids = await listStoredUserIds();
+  const rows: AdminUserRow[] = [];
+  for (const id of ids) {
+    const record = await readUserRecord(id);
+    if (record) rows.push(userRowFromRecord(record));
+  }
+  return rows.sort(
+    (a, b) => new Date(b.registeredAt).getTime() - new Date(a.registeredAt).getTime(),
+  );
+}
+
+export async function getStoreUserDetail(userId: string): Promise<AdminUserDetail | null> {
+  await migrateLegacyStoreIfNeeded();
+  const record = await readUserRecord(userId);
+  if (!record) return null;
+  return detailFromRecord(record);
 }
 
 export async function getStoreCohortStats(): Promise<{
@@ -389,50 +530,47 @@ export async function getStoreCohortStats(): Promise<{
   averageMockScorePct: number | null;
   enrollmentsByTier: Record<string, number>;
 }> {
-  const store = await readStore();
-  const users = Object.values(store.users).map((u) => userRowFromStore(u, store));
+  const users = await getStoreUserRows();
   const enrollmentsByTier: Record<string, number> = {};
-  for (const u of Object.values(store.users)) {
-    for (const e of u.enrollments) {
+  let totalTaskAttempts = 0;
+  let totalMockSubmissions = 0;
+  let scoreSum = 0;
+  let scoreCount = 0;
+
+  for (const id of await listStoredUserIds()) {
+    const record = await readUserRecord(id);
+    if (!record) continue;
+    totalTaskAttempts += record.taskAttempts.length;
+    for (const m of record.mocks.filter((m) => m.status === "submitted")) {
+      totalMockSubmissions += 1;
+      if (m.scorePct != null) {
+        scoreSum += m.scorePct;
+        scoreCount += 1;
+      }
+    }
+    for (const e of record.profile.enrollments) {
       enrollmentsByTier[e.tier] = (enrollmentsByTier[e.tier] ?? 0) + 1;
     }
   }
-  let scoreSum = 0;
-  let scoreCount = 0;
-  for (const m of store.mocks.filter((m) => m.status === "submitted")) {
-    if (m.scorePct != null) {
-      scoreSum += m.scorePct;
-      scoreCount += 1;
-    }
-  }
+
   return {
     users,
-    totalTaskAttempts: store.taskAttempts.length,
-    totalMockSubmissions: store.mocks.filter((m) => m.status === "submitted").length,
+    totalTaskAttempts,
+    totalMockSubmissions,
     averageMockScorePct: scoreCount > 0 ? Math.round((scoreSum / scoreCount) * 10) / 10 : null,
     enrollmentsByTier,
   };
 }
 
-export async function mergeStore(store: Partial<LocalAdminStore>): Promise<void> {
-  await withStore((current) => {
-    if (store.users) Object.assign(current.users, store.users);
-    if (store.taskAttempts) current.taskAttempts.push(...store.taskAttempts);
-    if (store.mocks) current.mocks.push(...store.mocks);
-    if (store.events) current.events.push(...store.events);
-    if (store.practiceSessions) current.practiceSessions.push(...store.practiceSessions);
-    if (store.sessionAnswers) current.sessionAnswers.push(...store.sessionAnswers);
-    if (store.flashcards) current.flashcards.push(...store.flashcards);
-    if (store.theory) current.theory.push(...store.theory);
-    if (store.customMocks) current.customMocks.push(...store.customMocks);
-    if (store.lastSupabaseSync) current.lastSupabaseSync = store.lastSupabaseSync;
-  });
+export async function readUserEvents(userId: string): Promise<AdminActivityEvent[]> {
+  const record = await readUserRecord(userId);
+  return record?.events ?? [];
 }
 
 export async function markSupabaseSynced(): Promise<void> {
-  await withStore((store) => {
-    store.lastSupabaseSync = new Date().toISOString();
-  });
+  const index = await readIndex();
+  index.lastSupabaseSync = new Date().toISOString();
+  await writeIndex(index);
 }
 
-export { readStore, isAtRisk };
+export { isAtRisk };
