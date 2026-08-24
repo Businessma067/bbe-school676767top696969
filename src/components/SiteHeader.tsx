@@ -61,8 +61,8 @@ export function SiteHeader({
   actions,
   left,
   center,
-  showNav = false,
-  showMobileNav = false,
+  showNav = true,
+  showMobileNav = true,
   maxWidthClassName = "max-w-7xl",
   className,
   innerClassName,
@@ -82,7 +82,7 @@ export function SiteHeader({
           "mx-auto flex items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:px-8",
           maxWidthClassName,
           compact && "py-3 sm:py-4",
-          showNav && "gap-4 sm:gap-6",
+          showNav && "lg:grid lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:items-center lg:gap-4",
           innerClassName,
         )}
       >

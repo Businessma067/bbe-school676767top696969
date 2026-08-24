@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { HashScrollOnLoad } from "../components/HashScrollOnLoad";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { FloatingAssistant } from "../components/FloatingAssistant";
 import { ExplainSelectionChip } from "../components/ExplainSelectionChip";
@@ -135,6 +136,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <PracticeCaseProvider>
         <IntroSplash />
+        <HashScrollOnLoad />
         <Breadcrumbs />
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />

@@ -20,7 +20,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader showNav showMobileNav />
+      <SiteHeader />
 
       <main>
         {/* HERO — light ivory */}

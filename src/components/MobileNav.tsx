@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { navItems } from "@/config/site-nav";
 import { NavItemLink } from "./NavItemLink";
 
 import {
@@ -11,15 +12,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-export const navItems = [
-  { label: "Demo-Practice", href: "/demo-practice", isRoute: true },
-  { label: "Full Course", href: "#full-course", isRoute: false },
-  { label: "Products", href: "/products", isRoute: true },
-  { label: "Features", href: "/important-features", isRoute: true },
-  { label: "Reviews", href: "#reviews", isRoute: false },
-  { label: "FAQ", href: "#faq", isRoute: false },
-];
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -52,14 +44,14 @@ export function MobileNav() {
           </div>
           <SheetDescription className="sr-only">Navigation menu</SheetDescription>
 
-          <nav className="px-6 py-4">
+          <nav className="overflow-y-auto px-6 py-4">
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <NavItemLink
                     item={item}
                     onNavigate={() => setOpen(false)}
-                    className="block w-full text-left rounded-lg px-3 py-2.5 font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
+                    className="block w-full rounded-lg px-3 py-2.5 text-left font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
                   />
                 </li>
               ))}

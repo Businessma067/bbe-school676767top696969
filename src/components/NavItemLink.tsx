@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 
-type NavItem = { label: string; href: string; isRoute: boolean };
+import type { NavItem } from "@/config/site-nav";
 
 export function NavItemLink({
   item,

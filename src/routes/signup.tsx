@@ -171,7 +171,7 @@ export function AuthShell({
 }) {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader compact maxWidthClassName="max-w-md" />
+      <SiteHeader compact maxWidthClassName="max-w-md" showNav={false} showMobileNav={false} />
       <div className="mx-auto flex min-h-[calc(100vh-4.5rem)] max-w-md flex-col justify-center px-6 py-16">
         <Link to="/" className="mb-8 flex items-center gap-3">
           <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30">
