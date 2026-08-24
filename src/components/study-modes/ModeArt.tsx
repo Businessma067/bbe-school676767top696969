@@ -220,7 +220,7 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
       </p>
       <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
         <MiniCard subject="economics" label="Econ" sample="Inflation" />
-        <MiniCard subject="math" label="Math" sample="Chain rule" />
+        <MiniCard subject="math" label="Math" sample="Discriminant" />
         <MiniCard subject="english" label="Eng" sample="Arbitrage" />
       </div>
     </div>
