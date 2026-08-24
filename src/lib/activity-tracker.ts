@@ -103,25 +103,21 @@ export function startActivityHeartbeat(getPath: () => string): () => void {
   };
 }
 
-export async function runOnceOnLogin(): Promise<void> {
-  if (syncDone) return;
+export async function runOnceOnLogin(userId?: string): Promise<void> {
   if (typeof window === "undefined") return;
 
-  const key = "bbe.activity.sync.v2";
-  if (sessionStorage.getItem(key)) {
-    syncDone = true;
-    return;
-  }
+  const key = `bbe.activity.sync.v2:${userId ?? "anon"}`;
+  if (syncDone && sessionStorage.getItem(key)) return;
 
   try {
     await syncMyDataToAdminStore();
+    sessionStorage.setItem(key, "1");
+    syncDone = true;
+    void trackEvent({ eventType: "login" });
   } catch (err) {
     console.error("[activity-tracker] sync", err);
+    // Do not mark done — retry next heartbeat / navigation
   }
-
-  sessionStorage.setItem(key, "1");
-  syncDone = true;
-  void trackEvent({ eventType: "login" });
 }
 
 export async function mirrorTaskAttempt(input: {

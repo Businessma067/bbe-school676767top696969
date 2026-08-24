@@ -1,5 +1,11 @@
-/** Hardcoded admin account — no env or SQL setup required. */
-export const ADMIN_EMAIL = "georgtyrin@gmail.com";
+/** Hardcoded admin accounts — full panel access, no env or SQL setup required. */
+export const ADMIN_EMAILS = [
+  "georgtyrin@gmail.com",
+  "info@spray-go.com",
+] as const;
+
+/** @deprecated Prefer ADMIN_EMAILS / isAdminEmail — kept for older call sites. */
+export const ADMIN_EMAIL = ADMIN_EMAILS[0];
 
 export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
@@ -7,7 +13,8 @@ export function normalizeEmail(email: string): string {
 
 export function isAdminEmail(email: string | null | undefined): boolean {
   if (!email) return false;
-  return normalizeEmail(email) === normalizeEmail(ADMIN_EMAIL);
+  const normalized = normalizeEmail(email);
+  return ADMIN_EMAILS.some((admin) => normalizeEmail(admin) === normalized);
 }
 
 export type AppRole = "admin" | "student" | "user";

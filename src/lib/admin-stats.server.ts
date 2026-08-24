@@ -389,8 +389,20 @@ export async function buildAdminUserRow(
     tasksAttempted: taskRows.length,
     mockBestPct,
     mockAttempts: mockRows.length,
-    currentStreak: computeUserStreak(taskAttemptsMapped, []),
-    averageAccuracy: computeAverageAccuracy(taskAttemptsMapped),
+    practiceSessions: 0,
+    currentStreak: computeStreak([
+      ...taskRows.map((t) => t.created_at),
+      ...mockRows.map((m) => m.completed_at ?? m.started_at ?? ""),
+    ]),
+    averageAccuracy: (() => {
+      let c = 0;
+      let t = 0;
+      for (const row of taskRows) {
+        c += row.correct_count;
+        t += row.statement_count;
+      }
+      return pct(c, t);
+    })(),
   };
 }
 

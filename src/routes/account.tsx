@@ -30,6 +30,9 @@ function AccountPage() {
   const [savingName, setSavingName] = useState(false);
   const [nameMsg, setNameMsg] = useState<string | null>(null);
   const [resetMsg, setResetMsg] = useState<string | null>(null);
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [savingPassword, setSavingPassword] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -88,17 +91,26 @@ function AccountPage() {
     }
   };
 
-  const handlePasswordReset = async () => {
-    if (!user?.email) return;
+  const handlePasswordChange = async () => {
     setResetMsg(null);
-    const { error } = await supabase.auth.resetPasswordForEmail(user.email, {
-      redirectTo: window.location.origin + "/reset-password",
-    });
-    setResetMsg(
-      error
-        ? friendlyAuthError(error, "Could not send reset email.")
-        : "Password reset link sent to your email.",
-    );
+    if (newPassword.length < 8) {
+      setResetMsg("Пароль минимум 8 символов.");
+      return;
+    }
+    if (newPassword !== confirmPassword) {
+      setResetMsg("Пароли не совпадают.");
+      return;
+    }
+    setSavingPassword(true);
+    const { error } = await supabase.auth.updateUser({ password: newPassword });
+    setSavingPassword(false);
+    if (error) {
+      setResetMsg(friendlyAuthError(error, "Не удалось обновить пароль."));
+      return;
+    }
+    setNewPassword("");
+    setConfirmPassword("");
+    setResetMsg("Пароль обновлён.");
   };
 
   const handleLogout = async () => {
@@ -197,15 +209,36 @@ function AccountPage() {
               </dd>
             </div>
           </dl>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <button
-              onClick={handlePasswordReset}
-              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
-            >
+          <div className="mt-6 space-y-3 border-t border-border pt-4">
+            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
               Change password
+            </p>
+            <div className="grid max-w-md gap-2 sm:grid-cols-2">
+              <input
+                type="password"
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="New password"
+                className="rounded-md border border-border bg-background px-2 py-1.5 text-sm"
+              />
+              <input
+                type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Confirm password"
+                className="rounded-md border border-border bg-background px-2 py-1.5 text-sm"
+              />
+            </div>
+            <button
+              type="button"
+              onClick={() => void handlePasswordChange()}
+              disabled={savingPassword}
+              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary disabled:opacity-60"
+            >
+              {savingPassword ? "Saving…" : "Update password"}
             </button>
+            {resetMsg && <p className="text-xs text-muted-foreground">{resetMsg}</p>}
           </div>
-          {resetMsg && <p className="mt-2 text-xs text-muted-foreground">{resetMsg}</p>}
         </Card>
 
         {/* MY COURSE */}

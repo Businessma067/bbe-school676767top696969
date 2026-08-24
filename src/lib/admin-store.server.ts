@@ -28,6 +28,9 @@ export type StoredUser = {
   userId: string;
   email: string;
   displayName: string;
+  firstName?: string | null;
+  lastName?: string | null;
+  phone?: string | null;
   registeredAt: string;
   lastSeenAt: string | null;
   lastPath: string | null;
@@ -411,6 +414,7 @@ function userRowFromRecord(record: UserRecord): AdminUserRow {
     tasksAttempted: tasks.length,
     mockBestPct,
     mockAttempts: mocks.length,
+    practiceSessions: record.practiceSessions.length,
     currentStreak: computeStreak(dates),
     averageAccuracy: pct(correct, total),
   };

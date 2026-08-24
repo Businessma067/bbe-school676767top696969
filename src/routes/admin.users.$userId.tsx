@@ -56,10 +56,10 @@ function AdminUserDetailPage() {
     <AdminLayout wide>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <Link
-          to="/admin/users"
+          to="/admin"
           className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
         >
-          <ChevronLeft className="h-4 w-4" /> All users
+          <ChevronLeft className="h-4 w-4" /> All accounts
         </Link>
         <button
           type="button"

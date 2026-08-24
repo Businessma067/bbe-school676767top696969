@@ -14,6 +14,7 @@ export type AdminUserRow = {
   tasksAttempted: number;
   mockBestPct: number | null;
   mockAttempts: number;
+  practiceSessions: number;
   currentStreak: number;
   averageAccuracy: number | null;
 };

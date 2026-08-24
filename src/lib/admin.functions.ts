@@ -8,7 +8,6 @@ import {
   isAtRisk,
   readUserEvents,
 } from "@/lib/admin-store.server";
-import { trySyncAllFromSupabase } from "@/lib/admin-sync.server";
 import type {
   AdminCohortStats,
   AdminListUsersResult,
@@ -40,7 +39,6 @@ const TimelineInput = z.object({
 export const adminGetCohortStats = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
   .handler(async (): Promise<AdminCohortStats> => {
-    await trySyncAllFromSupabase();
     const cohort = await getStoreCohortStats();
     const now = Date.now();
     const day = 86_400_000;
@@ -73,7 +71,6 @@ export const adminListUsers = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => ListUsersInput.parse(d))
   .handler(async ({ data }): Promise<AdminListUsersResult> => {
-    await trySyncAllFromSupabase();
     let rows = await getStoreUserRows();
 
     const q = data.search?.trim().toLowerCase();
@@ -122,9 +119,8 @@ export const adminGetUserDetail = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => UserIdInput.parse(d))
   .handler(async ({ data }): Promise<AdminUserDetail> => {
-    await trySyncAllFromSupabase();
     const detail = await getStoreUserDetail(data.userId);
-    if (!detail) throw new Error("User not found in admin store");
+    if (!detail) throw new Error("User not found");
     return detail;
   });
 
@@ -155,8 +151,6 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => z.object({ userId: z.string().uuid().optional() }).parse(d))
   .handler(async ({ data }): Promise<{ csv: string }> => {
-    await trySyncAllFromSupabase();
-
     if (data.userId) {
       const detail = await getStoreUserDetail(data.userId);
       if (!detail) throw new Error("User not found");
@@ -177,7 +171,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
 
     const rows = await getStoreUserRows();
     const header =
-      "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,streak,accuracy";
+      "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,practice_sessions,streak,accuracy";
     const lines = [header];
     for (const u of rows) {
       lines.push(
@@ -192,6 +186,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
           u.tasksAttempted,
           u.mockBestPct ?? "",
           u.mockAttempts,
+          u.practiceSessions,
           u.currentStreak,
           u.averageAccuracy ?? "",
         ].join(","),

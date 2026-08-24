@@ -137,12 +137,20 @@ export async function recordTaskAttempt(input: {
   const userId = await currentUserId();
   if (!userId) return;
 
-  const { count } = await supabase
-    .from("task_attempts")
-    .select("id", { count: "exact", head: true })
-    .eq("user_id", userId)
-    .eq("task_key", input.taskKey);
+  // Always mirror to local admin store first so /admin sees attempts even if Supabase schema lags.
+  void mirrorTaskAttempt({
+    subject: input.subject,
+    chapter: input.chapter,
+    taskKey: input.taskKey,
+    taskTitle: input.taskTitle ?? null,
+    correctCount: input.correctCount,
+    statementCount: input.statementCount,
+    durationSeconds: input.durationSeconds ?? null,
+    statementResults: input.statementResults ?? null,
+    source: input.source ?? "web",
+  });
 
+  // Base columns only — extended analytics columns may not exist until migration is applied.
   const { error } = await supabase.from("task_attempts").insert({
     user_id: userId,
     subject: input.subject,
@@ -152,25 +160,8 @@ export async function recordTaskAttempt(input: {
     correct_count: input.correctCount,
     statement_count: input.statementCount,
     is_passed: input.correctCount === input.statementCount,
-    duration_seconds: input.durationSeconds ?? null,
-    attempt_number: (count ?? 0) + 1,
-    statement_results: input.statementResults ?? null,
-    source: input.source ?? "web",
   });
   if (error) console.error("recordTaskAttempt", error);
-  else {
-    void mirrorTaskAttempt({
-      subject: input.subject,
-      chapter: input.chapter,
-      taskKey: input.taskKey,
-      taskTitle: input.taskTitle ?? null,
-      correctCount: input.correctCount,
-      statementCount: input.statementCount,
-      durationSeconds: input.durationSeconds ?? null,
-      statementResults: input.statementResults ?? null,
-      source: input.source ?? "web",
-    });
-  }
 }
 
 export async function fetchTaskAttempts(): Promise<TaskAttempt[]> {

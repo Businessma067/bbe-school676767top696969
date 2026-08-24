@@ -8,7 +8,6 @@ export function ActivityTracker() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
-    if (pathname.startsWith("/admin")) return;
     void trackPageView(pathname);
   }, [pathname]);
 
@@ -17,16 +16,17 @@ export function ActivityTracker() {
 
     const setup = async () => {
       const { data } = await supabase.auth.getSession();
-      if (!data.session) return;
+      const session = data.session;
+      if (!session) return;
       stopHeartbeat = startActivityHeartbeat(() => window.location.pathname);
-      await runOnceOnLogin();
+      await runOnceOnLogin(session.user.id);
     };
 
     void setup();
 
-    const { data: sub } = supabase.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_IN") {
-        void runOnceOnLogin();
+    const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "SIGNED_IN" && session?.user) {
+        void runOnceOnLogin(session.user.id);
         stopHeartbeat?.();
         stopHeartbeat = startActivityHeartbeat(() => window.location.pathname);
       }

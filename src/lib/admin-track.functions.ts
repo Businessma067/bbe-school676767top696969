@@ -151,7 +151,7 @@ export const mirrorTaskAttemptLocal = createServerFn({ method: "POST" })
       durationSeconds: data.durationSeconds ?? null,
       attemptNumber: null,
       statementResults: data.statementResults ?? null,
-      source: data.source ?? "web",
+      source: data.source ?? "local_mirror",
       createdAt: new Date().toISOString(),
     });
   });

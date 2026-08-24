@@ -73,9 +73,8 @@ export function AdminLayout({ children, title, wide }: Props) {
         <aside className="lg:w-52 lg:shrink-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Admin</p>
           <nav className="mt-3 flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-1">
-            <AdminNavLink to="/admin">Overview</AdminNavLink>
+            <AdminNavLink to="/admin">Accounts</AdminNavLink>
             <AdminNavLink to="/admin/users">Users</AdminNavLink>
-            <AdminNavLink to="/admin/economics">Economics cases</AdminNavLink>
           </nav>
         </aside>
         <div className="min-w-0 flex-1">
@@ -89,7 +88,13 @@ export function AdminLayout({ children, title, wide }: Props) {
   );
 }
 
-function AdminNavLink({ to, children }: { to: string; children: ReactNode }) {
+function AdminNavLink({
+  to,
+  children,
+}: {
+  to: "/admin" | "/admin/users";
+  children: ReactNode;
+}) {
   return (
     <Link
       to={to}

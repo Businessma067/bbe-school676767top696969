@@ -2,6 +2,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Database } from "@/integrations/supabase/types";
 import {
   emptyUserRecord,
+  listStoredUserIds,
   markSupabaseSynced,
   replaceUserRecord,
   type StoredUser,
@@ -119,48 +120,153 @@ export async function syncSingleUserFromSupabase(
     createdAt: m.created_at,
   }));
 
+  // Keep local-only activity that Supabase sync cannot see yet.
+  const existing = await import("@/lib/admin-store.server").then((m) => m.readUserRecord(userId));
+  if (existing) {
+    record.events = existing.events;
+    record.flashcards = existing.flashcards;
+    record.theory = existing.theory;
+    if (existing.profile.lastSeenAt) {
+      record.profile.lastSeenAt = existing.profile.lastSeenAt;
+      record.profile.lastPath = existing.profile.lastPath;
+      record.profile.userAgent = existing.profile.userAgent;
+    }
+    const remoteTaskIds = new Set(record.taskAttempts.map((t) => t.id));
+    const remoteTaskKeys = new Set(
+      record.taskAttempts.map((t) => `${t.taskKey}|${t.createdAt}`),
+    );
+    for (const local of existing.taskAttempts) {
+      if (remoteTaskIds.has(local.id)) continue;
+      if (remoteTaskKeys.has(`${local.taskKey}|${local.createdAt}`)) continue;
+      // Keep recent local mirrors (e.g. when Supabase insert failed earlier).
+      if (local.source === "web" || local.source === "local_mirror") {
+        record.taskAttempts.push(local);
+      }
+    }
+  }
+
   await replaceUserRecord(userId, record);
 }
 
-let syncPromise: Promise<void> | null = null;
-const SYNC_INTERVAL_MS = 2 * 60_000;
-let lastSyncAttempt = 0;
+async function syncViaServiceRole(): Promise<number> {
+  const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+  let count = 0;
 
-/** Sync every registered Supabase user into their own local file. */
-export async function trySyncAllFromSupabase(): Promise<void> {
-  const now = Date.now();
-  if (now - lastSyncAttempt < SYNC_INTERVAL_MS && syncPromise) {
-    await syncPromise;
-    return;
+  for (let page = 1; page <= 50; page++) {
+    const { data, error } = await supabaseAdmin.auth.admin.listUsers({ page, perPage: 100 });
+    if (error) break;
+
+    for (const u of data.users) {
+      if (!u.email) continue;
+      await syncSingleUserFromSupabase(supabaseAdmin, u.id, {
+        email: u.email,
+        created_at: u.created_at,
+      });
+      count += 1;
+    }
+
+    if (data.users.length < 100) break;
   }
 
-  if (!process.env.SUPABASE_SERVICE_ROLE_KEY) return;
+  return count;
+}
+
+function serviceRoleConfigured(): boolean {
+  return Boolean(resolveServiceRoleKey());
+}
+
+export function resolveServiceRoleKey(): string | undefined {
+  return (
+    process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ||
+    process.env.SUPABASE_SECRET_KEY?.trim() ||
+    undefined
+  );
+}
+
+async function syncViaAdminClient(db: Db): Promise<{ synced: number; error?: string }> {
+  const { data, error } = await db.rpc("admin_list_users");
+  if (error) {
+    const message = error.message ?? "admin_list_users failed";
+    console.error("[admin-sync] admin_list_users failed:", message);
+    return { synced: 0, error: message };
+  }
+
+  let synced = 0;
+  for (const u of data ?? []) {
+    await syncSingleUserFromSupabase(db, u.user_id, {
+      email: u.email,
+      created_at: u.registered_at,
+    });
+    synced += 1;
+  }
+  return { synced };
+}
+
+let syncPromise: Promise<SyncResult> | null = null;
+const SYNC_INTERVAL_MS = 60_000;
+let lastSyncAttempt = 0;
+
+export type SyncResult = {
+  synced: number;
+  source: "service_role" | "admin_rpc" | "skipped";
+  totalLocal: number;
+  error?: string;
+  hint?: string;
+};
+
+function syncHint(error?: string): string | undefined {
+  if (serviceRoleConfigured()) return undefined;
+  if (error?.includes("admin_list_users")) {
+    return "В Supabase нет функции admin_list_users. Выполните SQL из supabase/migrations/20260824110000_admin_read_policies.sql в SQL Editor, ИЛИ добавьте SUPABASE_SERVICE_ROLE_KEY в .env";
+  }
+  if (!serviceRoleConfigured()) {
+    return "Добавьте SUPABASE_SERVICE_ROLE_KEY в .env (Supabase → Settings → API → service_role), либо примените миграцию admin_read_policies.sql";
+  }
+  return undefined;
+}
+
+/** Sync every registered Supabase user into separate local files. */
+export async function trySyncAllUsers(db?: Db, force = false): Promise<SyncResult> {
+  const now = Date.now();
+  if (!force && now - lastSyncAttempt < SYNC_INTERVAL_MS && syncPromise) {
+    return syncPromise;
+  }
 
   lastSyncAttempt = now;
-  syncPromise = (async () => {
+  syncPromise = (async (): Promise<SyncResult> => {
+    let synced = 0;
+    let source: SyncResult["source"] = "skipped";
+    let error: string | undefined;
+
     try {
-      const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-
-      for (let page = 1; page <= 50; page++) {
-        const { data, error } = await supabaseAdmin.auth.admin.listUsers({ page, perPage: 100 });
-        if (error) break;
-
-        for (const u of data.users) {
-          if (!u.email) continue;
-          await syncSingleUserFromSupabase(supabaseAdmin, u.id, {
-            email: u.email,
-            created_at: u.created_at,
-          });
-        }
-
-        if (data.users.length < 100) break;
+      if (serviceRoleConfigured()) {
+        synced = await syncViaServiceRole();
+        source = "service_role";
+      } else if (db) {
+        const rpc = await syncViaAdminClient(db);
+        synced = rpc.synced;
+        error = rpc.error;
+        source = synced > 0 ? "admin_rpc" : "skipped";
+      } else {
+        error = "No Supabase client — not logged in as admin?";
       }
 
-      await markSupabaseSynced();
+      if (synced > 0) await markSupabaseSynced();
     } catch (err) {
+      error = err instanceof Error ? err.message : String(err);
       console.error("[admin-sync] failed:", err);
     }
+
+    const totalLocal = (await listStoredUserIds()).length;
+    const hint = synced === 0 ? syncHint(error) : undefined;
+
+    return { synced, source, totalLocal, error, hint };
   })();
 
-  await syncPromise;
+  return syncPromise;
+}
+
+/** @deprecated use trySyncAllUsers */
+export async function trySyncAllFromSupabase(db?: Db): Promise<void> {
+  await trySyncAllUsers(db);
 }

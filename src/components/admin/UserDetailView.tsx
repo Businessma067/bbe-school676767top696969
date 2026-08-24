@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import { DataTable, fmtDate, fmtDuration, StatCard } from "@/components/admin/AdminLayout";
+import { UserProgressCharts } from "@/components/admin/UserProgressCharts";
 import { HEATMAP_LEVEL_COLORS, accuracyToLevel } from "@/lib/study-progress";
 import type { AdminUserDetail } from "@/lib/admin-types";
 
@@ -23,50 +24,48 @@ export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
   const p = detail.profile;
 
   return (
-    <div className="space-y-6">
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">User</p>
-            <h2 className="mt-1 font-display text-2xl font-bold tracking-tight">{p.displayName}</h2>
-            <p className="mt-1 text-sm text-muted-foreground">{p.email}</p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {detail.enrollments.map((e) => (
-                <span
-                  key={e.productSlug}
-                  className="rounded-full bg-primary/15 px-2 py-0.5 text-xs font-semibold capitalize text-primary"
-                >
-                  {e.tier}
-                </span>
-              ))}
-              {p.roles.map((r) => (
-                <span
-                  key={r}
-                  className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold capitalize"
-                >
-                  {r}
-                </span>
-              ))}
-              <span className="rounded-full border border-border px-2 py-0.5 text-xs font-semibold">
-                Streak {detail.studyProgress.currentStreak}d
-              </span>
-            </div>
-          </div>
-          <div className="text-right text-xs text-muted-foreground">
-            <p>Registered {fmtDate(p.registeredAt)}</p>
-            <p>Last seen {fmtDate(p.lastSeenAt)}</p>
-            {p.lastPath ? <p className="mt-1 font-mono text-[10px]">{p.lastPath}</p> : null}
-          </div>
+    <div className="space-y-5">
+      <section className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-taupe">Account</p>
+        <h2 className="mt-1 break-all font-mono text-xl font-bold tracking-tight sm:text-2xl">
+          {p.email || "—"}
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">{p.displayName}</p>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {detail.enrollments.map((e) => (
+            <span
+              key={e.productSlug}
+              className="rounded-full bg-primary/15 px-2 py-0.5 text-xs font-semibold capitalize text-primary"
+            >
+              {e.tier}
+            </span>
+          ))}
+          {p.roles.map((r) => (
+            <span
+              key={r}
+              className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold capitalize"
+            >
+              {r}
+            </span>
+          ))}
+          <span className="rounded-full border border-border px-2 py-0.5 text-xs font-semibold">
+            Streak {detail.studyProgress.currentStreak}d
+          </span>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
+          <span>Registered {fmtDate(p.registeredAt)}</span>
+          <span>Last seen {fmtDate(p.lastSeenAt)}</span>
+          {p.lastPath ? <span className="font-mono">{p.lastPath}</span> : null}
         </div>
       </section>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1.5">
         {TABS.map((t) => (
           <button
             key={t}
             type="button"
             onClick={() => setTab(t)}
-            className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition ${
+            className={`rounded-md border px-2.5 py-1 text-xs font-semibold transition ${
               tab === t
                 ? "border-primary bg-primary/10 text-primary"
                 : "border-border bg-card text-foreground hover:bg-secondary"
@@ -108,6 +107,8 @@ function OverviewTab({ detail }: { detail: AdminUserDetail }) {
         <StatCard label="Longest streak" value={`${sp.longestStreak}d`} />
       </div>
 
+      <UserProgressCharts detail={detail} />
+
       <section className="rounded-xl border border-border bg-card p-4">
         <h3 className="font-semibold">Enrollments</h3>
         <DataTable
@@ -122,25 +123,6 @@ function OverviewTab({ detail }: { detail: AdminUserDetail }) {
             date: fmtDate(e.createdAt),
           }))}
           empty="No enrollments."
-        />
-      </section>
-
-      <section className="rounded-xl border border-border bg-card p-4">
-        <h3 className="mb-3 font-semibold">Custom mocks created</h3>
-        <DataTable
-          columns={[
-            { key: "title", label: "Title" },
-            { key: "subject", label: "Subject" },
-            { key: "questions", label: "Questions" },
-            { key: "date", label: "Created" },
-          ]}
-          rows={detail.customMocks.map((m) => ({
-            title: m.title,
-            subject: m.subject,
-            questions: m.questionCount,
-            date: fmtDate(m.createdAt),
-          }))}
-          empty="No custom mocks."
         />
       </section>
     </div>
@@ -365,12 +347,18 @@ function ActivityTab({ detail }: { detail: AdminUserDetail }) {
 export function UserListRowLink({
   userId,
   children,
+  className,
 }: {
   userId: string;
   children: React.ReactNode;
+  className?: string;
 }) {
   return (
-    <Link to="/admin/users/$userId" params={{ userId }} className="font-semibold text-primary hover:underline">
+    <Link
+      to="/admin/users/$userId"
+      params={{ userId }}
+      className={className ?? "font-semibold text-primary hover:underline"}
+    >
       {children}
     </Link>
   );
