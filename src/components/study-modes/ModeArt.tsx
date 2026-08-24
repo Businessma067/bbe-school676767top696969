@@ -9,63 +9,45 @@ const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
 
 type Pair = [string, string];
 
-const FLASHCARD_PREVIEW: Record<
-  FlashcardSubjectId,
-  { hint: string; sample: string }
-> = {
-  economics: { hint: "Tap to flip", sample: "Opportunity cost" },
-  math: { hint: "Tap to flip", sample: "Quadratic formula" },
-  english: { hint: "Tap to flip", sample: "Ubiquitous" },
+const FLASHCARD_PREVIEW: Record<FlashcardSubjectId, string> = {
+  economics: "Opportunity cost",
+  math: "Quadratic formula",
+  english: "Ubiquitous",
 };
 
 const MATCHING_PAIRS: Record<FlashcardSubjectId, Pair[]> = {
   economics: [
     ["Supply", "Qty offered"],
     ["Demand", "Qty bought"],
-    ["Inflation", "Price rise"],
   ],
   math: [
     ["f(x)", "Function"],
     ["x²", "Quadratic"],
-    ["Δx", "Change"],
   ],
   english: [
     ["Ubiquitous", "Everywhere"],
     ["Ephemeral", "Brief"],
-    ["Benevolent", "Kind"],
   ],
 };
 
 const TUTOR_PREVIEW: Record<
   FlashcardSubjectId,
-  { question: string; options: [string, string, string]; correct: 0 | 1 | 2 }
+  { question: string; options: [string, string]; correct: 0 | 1 }
 > = {
   economics: {
-    question: "What is opportunity cost?",
-    options: [
-      "A  Next best alternative given up",
-      "B  Total revenue minus costs",
-      "C  Price × quantity sold",
-    ],
+    question: "Opportunity cost?",
+    options: ["Next best alternative", "Total revenue"],
     correct: 0,
   },
   math: {
-    question: "What does ∫ f(x) dx mean?",
-    options: [
-      "A  Derivative at a point",
-      "B  Area under the curve",
-      "C  Maximum value of f",
-    ],
-    correct: 1,
+    question: "∫ f(x) dx means?",
+    options: ["Area under curve", "Derivative"],
+    correct: 0,
   },
   english: {
-    question: "Synonym for abundant?",
-    options: [
-      "A  Scarce",
-      "B  Plentiful",
-      "C  Fragile",
-    ],
-    correct: 1,
+    question: "Synonym: abundant?",
+    options: ["Plentiful", "Scarce"],
+    correct: 0,
   },
 };
 
@@ -82,8 +64,8 @@ function SubjectPreviewShell({
       className="relative aspect-video w-full overflow-hidden"
       style={{ backgroundColor: SUBJECT_BG[subject] }}
     >
-      <div className="absolute inset-0 flex items-center justify-center px-5 py-4">
-        <div className="max-h-full max-w-full translate-y-0.5">{children}</div>
+      <div className="absolute inset-0 flex items-center justify-center p-3 sm:p-4">
+        {children}
       </div>
     </div>
   );
@@ -171,15 +153,13 @@ function MiniCard({
 }) {
   return (
     <div className="flex h-[4.75rem] w-[3.5rem] flex-col items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white px-1 py-2 sm:h-[5.25rem] sm:w-[3.85rem]">
-      <div className="flex translate-y-0.5 flex-col items-center">
-        <SubjectGlyph subject={subject} className="h-5 w-5 shrink-0 text-foreground" />
-        <span className="mt-1.5 line-clamp-2 w-full px-0.5 text-center text-[7px] font-semibold leading-tight text-foreground">
-          {sample}
-        </span>
-        <span className="mt-1 w-full text-center text-[7px] font-semibold uppercase tracking-wider text-taupe">
-          {label}
-        </span>
-      </div>
+      <SubjectGlyph subject={subject} className="h-5 w-5 shrink-0 text-foreground" />
+      <span className="mt-1.5 line-clamp-2 w-full px-0.5 text-center text-[7px] font-semibold leading-tight text-foreground">
+        {sample}
+      </span>
+      <span className="mt-1 w-full text-center text-[7px] font-semibold uppercase tracking-wider text-taupe">
+        {label}
+      </span>
     </div>
   );
 }
@@ -213,27 +193,17 @@ export function FlashcardsSubjectArt({
   subject: FlashcardSubjectId;
   accent: string;
 }) {
-  const preview = FLASHCARD_PREVIEW[subject];
-
   return (
     <SubjectPreviewShell subject={subject}>
-      <div className="flex h-[9rem] w-[6.75rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 py-3.5 sm:h-[9.5rem] sm:w-[7.25rem]">
-        <div className="flex w-full flex-col items-center text-center">
-          <SubjectGlyph
-            subject={subject}
-            className="h-7 w-7 shrink-0 text-foreground"
-          />
-          <p className="mt-2 line-clamp-2 w-full font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
-            {preview.sample}
-          </p>
-          <span
-            className="mt-2 h-1 w-10 shrink-0 rounded-full"
-            style={{ backgroundColor: accent }}
-          />
-          <p className="mt-2 text-[9px] font-semibold uppercase tracking-widest text-taupe">
-            {preview.hint}
-          </p>
-        </div>
+      <div className="flex w-[6.5rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 py-4 sm:w-[7rem]">
+        <SubjectGlyph subject={subject} className="h-9 w-9 shrink-0 text-foreground" />
+        <p className="mt-3 line-clamp-2 w-full text-center font-display text-sm font-bold leading-snug text-foreground">
+          {FLASHCARD_PREVIEW[subject]}
+        </p>
+        <span
+          className="mt-3 h-1 w-12 shrink-0 rounded-full"
+          style={{ backgroundColor: accent }}
+        />
       </div>
     </SubjectPreviewShell>
   );
@@ -247,10 +217,10 @@ function MatchingPairs({
   accent: string;
 }) {
   return (
-    <div className="flex w-full max-w-[16rem] flex-col gap-1.5">
+    <div className="flex w-full max-w-[15rem] flex-col gap-1.5">
       {pairs.map(([left, right]) => (
         <div key={left} className="grid grid-cols-[1fr_auto_1fr] items-center gap-1.5">
-          <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[10px] font-semibold text-foreground sm:text-[11px]">
+          <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1 text-center text-[10px] font-semibold leading-none text-foreground sm:text-[11px]">
             {left}
           </span>
           <span
@@ -260,7 +230,7 @@ function MatchingPairs({
           >
             →
           </span>
-          <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[10px] font-semibold text-foreground sm:text-[11px]">
+          <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1 text-center text-[10px] font-semibold leading-none text-foreground sm:text-[11px]">
             {right}
           </span>
         </div>
@@ -292,7 +262,6 @@ export function MatchingModeArt({
         pairs={[
           ["Term", "Definition"],
           ["Formula", "Meaning"],
-          ["Word", "Sense"],
         ]}
       />
     </div>
@@ -306,8 +275,8 @@ function TutorRobot({
   accent: string;
   compact?: boolean;
 }) {
-  const head = compact ? "h-10 w-10" : "h-12 w-12";
-  const body = compact ? "h-8 w-9" : "h-9 w-10";
+  const head = compact ? "h-9 w-9" : "h-12 w-12";
+  const body = compact ? "h-7 w-8" : "h-9 w-10";
 
   return (
     <div className="flex shrink-0 flex-col items-center" aria-hidden>
@@ -315,27 +284,27 @@ function TutorRobot({
         className="mb-0.5 h-1.5 w-1.5 rounded-full"
         style={{ backgroundColor: accent }}
       />
-      <span className="mb-0.5 h-2 w-px bg-foreground/80" />
+      <span className="mb-0.5 h-1.5 w-px bg-foreground/80" />
       <div
         className={
           "flex flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white " +
           head
         }
       >
-        <div className="flex gap-1.5">
+        <div className="flex gap-1">
           <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
           <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
         </div>
-        <span className="mt-1 block h-0 w-3 border-b-2 border-foreground" />
+        <span className="mt-0.5 block h-0 w-2.5 border-b-2 border-foreground" />
       </div>
       <div
         className={
-          "mt-1 flex items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white " +
+          "mt-0.5 flex items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white " +
           body
         }
       >
         <span
-          className="h-2.5 w-2.5 rounded-full"
+          className="h-2 w-2 rounded-full"
           style={{ backgroundColor: accent }}
         />
       </div>
@@ -396,7 +365,7 @@ export function MatchingSubjectArt({
   );
 }
 
-/** Subject-picker hero for Tutor Exam. */
+/** Subject-picker hero for Tutor Exam — horizontal layout so nothing clips. */
 export function TutorSubjectArt({
   subject,
   accent,
@@ -408,18 +377,22 @@ export function TutorSubjectArt({
 
   return (
     <SubjectPreviewShell subject={subject}>
-      <div className="flex w-full max-w-[14.5rem] flex-col items-center gap-2">
+      <div className="flex w-full max-w-[16rem] items-center gap-2.5">
         <TutorRobot accent={accent} compact />
-        <div className="w-full rounded-xl border-[1.5px] border-foreground/30 bg-white px-3 py-2.5 text-center">
-          <p className="line-clamp-2 font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
+        <div className="relative min-w-0 flex-1 rounded-xl border-[1.5px] border-foreground/30 bg-white px-2.5 py-2">
+          <span
+            className="absolute -left-1 top-4 h-2.5 w-2.5 rotate-45 border-b border-l border-foreground/30 bg-white"
+            aria-hidden
+          />
+          <p className="font-display text-[11px] font-bold leading-snug text-foreground sm:text-xs">
             {preview.question}
           </p>
-          <div className="mt-2 space-y-1">
+          <div className="mt-1.5 space-y-1">
             {preview.options.map((opt, i) => (
               <div
                 key={opt}
                 className={
-                  "truncate rounded-md border-[1.5px] px-2 py-0.5 text-[10px] font-semibold " +
+                  "truncate rounded-md border-[1.5px] px-2 py-0.5 text-[9px] font-semibold leading-tight sm:text-[10px] " +
                   (i === preview.correct
                     ? "border-transparent text-white"
                     : "border-foreground/25 bg-white text-foreground")
