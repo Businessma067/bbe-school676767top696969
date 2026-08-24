@@ -12,25 +12,42 @@ import {
   readCachedCustomMock,
 } from "@/lib/custom-mock-builder/client";
 import { getExamById } from "@/lib/mock-exams";
+import {
+  getNavTrail,
+  recordNavVisit,
+  truncateNavTrailTo,
+  type NavTrailEntry,
+} from "@/lib/navigation-trail";
 
 const LABELS: Record<string, string> = {
-  "demo-practice": "Demo-Practice",
+  "demo-practice": "Demo Practice",
   bbe: "BBE",
   faq: "FAQ",
   api: "API",
   products: "Products",
   "custom-mock-builder": "Custom Mock Builder",
   "full-course": "Full Course",
-  "full-course-economics": "Full Course Economics",
-  "full-course-math": "Full Course Math",
-  "full-course-english": "Full Course English",
+  "full-course-economics": "Economics",
+  "full-course-math": "Math",
+  "full-course-english": "English",
   "full-course-subjects": "Full Course Subjects",
-  "lite-bbe-course": "Light BBE Course",
+  "lite-bbe-course": "Lite BBE Course",
   "lite-bbe-course-subjects": "Lite Course Subjects",
-  "lite-bbe-course-math": "Lite Course Math",
-  "lite-bbe-course-english": "Lite Course English",
-  math: "Math",
+  "lite-bbe-course-math": "Lite Math",
+  "lite-bbe-course-english": "Lite English",
+  "demo-practice-product": "Demo Practice",
+  dashboard: "Dashboard",
+  flashcards: "Flashcards",
+  matching: "Matching",
+  "tutor-exam": "Tutor Exam",
   "mock-exams": "Mock Exams",
+  "important-features": "Features",
+  parents: "Parents",
+  account: "Account",
+  practice: "Practice",
+  economics: "Economics",
+  english: "English",
+  math: "Math",
   take: "Take",
   review: "Review",
 };
@@ -68,60 +85,46 @@ function buildDefaultCrumbs(pathname: string): Crumb[] {
   );
 }
 
-/**
- * Custom mocks live under `/mock-exams/...` for the exam runner, but belong to
- * the Products › Custom Mock Builder flow — keep that hierarchy in the trail.
- * Home › Products › Custom Mock Builder › Custom Mock 3.3 10q › Take
- */
-function buildCustomMockCrumbs(
-  pathname: string,
-  examId: string,
-  title: string | null,
-): Crumb[] {
-  const action = pathname.endsWith("/review")
-    ? "Review"
-    : pathname.endsWith("/take")
-      ? "Take"
-      : null;
-  const mockLabel = title ?? "Custom Mock";
-  const trail: Omit<Crumb, "isLast">[] = [
-    { label: "Products", to: "/products" },
-    { label: "Custom Mock Builder", to: "/products/custom-mock-builder" },
-    {
-      label: mockLabel,
-      to: action ? `/mock-exams/${examId}/take` : null,
-    },
-  ];
-  if (action) {
-    trail.push({ label: action, to: null });
+function labelForPathname(pathname: string, customTitle: string | null): string {
+  if (pathname === "/") return "Home";
+
+  const mockMatch = pathname.match(/^\/mock-exams\/([^/]+)(?:\/(take|review))?\/?$/);
+  if (mockMatch) {
+    const examId = decodeURIComponent(mockMatch[1]);
+    const action = mockMatch[2];
+    if (isCustomExamId(examId)) {
+      const title = customTitle ?? "Custom Mock";
+      if (action === "take") return `${title} · Take`;
+      if (action === "review") return `${title} · Review`;
+      return title;
+    }
+    const exam = getExamById(examId);
+    const base = exam?.title ?? prettify(examId);
+    if (action === "take") return `${base} · Take`;
+    if (action === "review") return `${base} · Review`;
+    return base;
   }
-  return withLastFlags(trail);
+
+  const segments = pathname.split("/").filter(Boolean);
+  if (segments.length === 0) return "Home";
+  return prettify(decodeURIComponent(segments[segments.length - 1]!));
 }
 
-/** Home › Mock Exams › Mock Exam 1 › Take */
-function buildCatalogMockCrumbs(pathname: string, examId: string): Crumb[] {
-  const action = pathname.endsWith("/review")
-    ? "Review"
-    : pathname.endsWith("/take")
-      ? "Take"
-      : null;
-  const exam = getExamById(examId);
-  const trail: Omit<Crumb, "isLast">[] = [
-    { label: "Mock Exams", to: "/mock-exams" },
-    {
-      label: exam?.title ?? prettify(examId),
-      to: action ? `/mock-exams/${examId}/take` : null,
-    },
-  ];
-  if (action) {
-    trail.push({ label: action, to: null });
-  }
-  return withLastFlags(trail);
+function trailToCrumbs(trail: NavTrailEntry[]): Crumb[] {
+  const items = trail.filter((e) => e.pathname !== "/");
+  if (items.length === 0) return [];
+  return withLastFlags(
+    items.map((e, i) => ({
+      label: e.label,
+      to: i === items.length - 1 ? null : e.pathname,
+    })),
+  );
 }
 
 export function Breadcrumbs() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [customTitle, setCustomTitle] = useState<string | null>(null);
+  const [trail, setTrail] = useState<NavTrailEntry[]>([]);
 
   const mockExamMatch = useMemo(() => {
     const m = pathname.match(/^\/mock-exams\/([^/]+)(?:\/(take|review))?\/?$/);
@@ -157,19 +160,23 @@ export function Breadcrumbs() {
     };
   }, [customMockId]);
 
+  useEffect(() => {
+    const label = labelForPathname(pathname, customTitle);
+    recordNavVisit(pathname, label);
+    setTrail(getNavTrail());
+  }, [pathname, customTitle]);
+
   const crumbs = useMemo(() => {
-    if (mockExamMatch && isCustomExamId(mockExamMatch.examId)) {
-      return buildCustomMockCrumbs(
-        pathname,
-        mockExamMatch.examId,
-        customTitle,
-      );
-    }
-    if (mockExamMatch) {
-      return buildCatalogMockCrumbs(pathname, mockExamMatch.examId);
-    }
+    const fromTrail = trailToCrumbs(trail);
+    if (fromTrail.length > 0) return fromTrail;
+    if (pathname === "/") return [];
     return buildDefaultCrumbs(pathname);
-  }, [pathname, mockExamMatch, customTitle]);
+  }, [trail, pathname]);
+
+  const handleCrumbClick = (to: string) => {
+    truncateNavTrailTo(to);
+    setTrail(getNavTrail());
+  };
 
   return (
     <nav
@@ -187,6 +194,10 @@ export function Breadcrumbs() {
             <Link
               to="/"
               className="inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground"
+              onClick={() => {
+                truncateNavTrailTo("/");
+                setTrail(getNavTrail());
+              }}
             >
               <Home className="h-3.5 w-3.5" />
               Home
@@ -214,6 +225,7 @@ export function Breadcrumbs() {
               <Link
                 to={c.to}
                 className="text-muted-foreground transition-colors hover:text-foreground"
+                onClick={() => handleCrumbClick(c.to!)}
               >
                 {c.label}
               </Link>
@@ -224,4 +236,3 @@ export function Breadcrumbs() {
     </nav>
   );
 }
-
