@@ -20,7 +20,7 @@ const PREVIEW_PAIRS_WIDTH = "w-full max-w-[15rem]";
 
 type Pair = [string, string];
 
-/** Real deck terms — short enough for previews, interesting enough to click through. */
+/** Real deck terms — accurate short hooks from the study bank. */
 const SUBJECT_PREVIEW: Record<
   FlashcardSubjectId,
   {
@@ -30,22 +30,22 @@ const SUBJECT_PREVIEW: Record<
   }
 > = {
   economics: {
-    flashcard: "Cartel",
+    flashcard: "Oligopoly",
     matching: [
-      ["Cartel", "Price collusion"],
-      ["Oligopoly", "Few suppliers"],
+      ["Cartel", "Suppliers fix prices"],
+      ["Free rider", "Benefits without paying"],
     ],
     tutor: {
       question: "What is a cartel?",
-      options: ["Illegal price collusion", "One supplier only"],
+      options: ["Suppliers collude on price", "Only one seller"],
       correct: 0,
     },
   },
   math: {
-    flashcard: "Chain rule",
+    flashcard: "Discriminant",
     matching: [
       ["Discriminant", "b² − 4ac"],
-      ["Chain rule", "Composite fn"],
+      ["Chain rule", "f'(g(x))·g'(x)"],
     ],
     tutor: {
       question: "Discriminant Δ = ?",
@@ -54,10 +54,10 @@ const SUBJECT_PREVIEW: Record<
     },
   },
   english: {
-    flashcard: "Arbitrage",
+    flashcard: "Bellwether",
     matching: [
-      ["Arbitrage", "Riskless trade"],
-      ["Bellwether", "Leading sign"],
+      ["Arbitrage", "Cross-market price gap"],
+      ["Bellwether", "Market direction sign"],
     ],
     tutor: {
       question: "Synonym: bullish?",
@@ -213,9 +213,9 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
         Tap to flip
       </p>
       <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
-        <MiniCard subject="economics" label="Econ" sample="Cartel" />
-        <MiniCard subject="math" label="Math" sample="Chain rule" />
-        <MiniCard subject="english" label="Eng" sample="Arbitrage" />
+        <MiniCard subject="economics" label="Econ" sample="Oligopoly" />
+        <MiniCard subject="math" label="Math" sample="Discriminant" />
+        <MiniCard subject="english" label="Eng" sample="Bellwether" />
       </div>
     </div>
   );
