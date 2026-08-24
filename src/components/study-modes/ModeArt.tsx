@@ -12,15 +12,15 @@ const PREVIEW_CARD_SQUARE =
   "flex h-[7rem] w-[7rem] shrink-0 flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white px-2.5 sm:h-[7.5rem] sm:w-[7.5rem]";
 
 const PREVIEW_TEXT_SLOT =
-  "mt-2.5 flex h-9 w-full items-center justify-center text-center font-display text-sm font-bold leading-tight text-foreground";
+  "mt-2.5 flex h-9 w-full items-center justify-center text-center font-display text-xs font-bold leading-tight text-foreground sm:text-sm";
 
 const PREVIEW_ACCENT_BAR = "mt-2 h-1 w-12 shrink-0 rounded-full";
 
-const PREVIEW_PAIRS_WIDTH = "w-full max-w-[15rem]";
+const PREVIEW_PAIRS_WIDTH = "w-full max-w-[13rem]";
 
 type Pair = [string, string];
 
-/** Per mode, per subject — no term repeats across flashcard / matching / tutor. */
+/** Per mode, per subject — short labels only, no repeats across modes. */
 const SUBJECT_PREVIEW: Record<
   FlashcardSubjectId,
   {
@@ -30,38 +30,38 @@ const SUBJECT_PREVIEW: Record<
   }
 > = {
   economics: {
-    flashcard: "Oligopoly",
+    flashcard: "Cartel",
     matching: [
-      ["Cartel", "Suppliers fix prices"],
-      ["Free rider", "Benefits without paying"],
+      ["Oligopoly", "Few firms"],
+      ["Free rider", "Unpaid use"],
     ],
     tutor: {
-      question: "What is opportunity cost?",
-      options: ["Next best alternative", "Total revenue minus cost"],
+      question: "Opportunity cost?",
+      options: ["Next choice", "Profit"],
       correct: 0,
     },
   },
   math: {
-    flashcard: "Discriminant",
+    flashcard: "Vieta",
     matching: [
-      ["Chain rule", "f'(g(x))·g'(x)"],
-      ["Vieta's formulas", "Sum of roots"],
+      ["Discriminant", "b²−4ac"],
+      ["Chain rule", "f'(g)·g'"],
     ],
     tutor: {
-      question: "Power rule: d/dx xⁿ = ?",
-      options: ["nxⁿ⁻¹", "xⁿ / n"],
+      question: "d/dx xⁿ = ?",
+      options: ["nxⁿ⁻¹", "xⁿ/n"],
       correct: 0,
     },
   },
   english: {
-    flashcard: "Bellwether",
+    flashcard: "Arbitrage",
     matching: [
-      ["Arbitrage", "Cross-market price gap"],
-      ["Bullish", "Expecting price rises"],
+      ["Bellwether", "Market sign"],
+      ["Bullish", "Upbeat"],
     ],
     tutor: {
-      question: "Synonym: austerity?",
-      options: ["Belt-tightening", "Spending spree"],
+      question: "austerity = ?",
+      options: ["Tightening", "Loose spend"],
       correct: 0,
     },
   },
@@ -219,9 +219,9 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
         Tap to flip
       </p>
       <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
-        <MiniCard subject="economics" label="Econ" sample="Oligopoly" />
-        <MiniCard subject="math" label="Math" sample="Discriminant" />
-        <MiniCard subject="english" label="Eng" sample="Bellwether" />
+        <MiniCard subject="economics" label="Econ" sample="Cartel" />
+        <MiniCard subject="math" label="Math" sample="Vieta" />
+        <MiniCard subject="english" label="Eng" sample="Arbitrage" />
       </div>
     </div>
   );
@@ -254,21 +254,21 @@ function MatchingPairs({
   accent: string;
 }) {
   return (
-    <div className={"flex flex-col gap-1.5 " + PREVIEW_PAIRS_WIDTH}>
+    <div className={"flex min-w-0 flex-col gap-1 " + PREVIEW_PAIRS_WIDTH}>
       {pairs.map(([left, right]) => (
-        <div key={left} className="grid grid-cols-[1fr_auto_1fr] items-center gap-1.5">
-          <span className="flex min-h-[1.75rem] items-center justify-center truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1 text-center text-[10px] font-semibold leading-none text-foreground sm:text-[11px]">
-            {left}
+        <div key={left} className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-1">
+          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border-[1.5px] border-foreground/30 bg-white px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
+            <span className="truncate">{left}</span>
           </span>
           <span
-            className="text-center text-xs font-bold leading-none"
+            className="shrink-0 text-center text-[10px] font-bold leading-none"
             style={{ color: accent }}
             aria-hidden
           >
             →
           </span>
-          <span className="flex min-h-[1.75rem] items-center justify-center truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1 text-center text-[10px] font-semibold leading-none text-foreground sm:text-[11px]">
-            {right}
+          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border-[1.5px] border-foreground/30 bg-white px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
+            <span className="truncate">{right}</span>
           </span>
         </div>
       ))}
@@ -365,22 +365,22 @@ function TutorQuizPreview({
           className="absolute -left-1 top-4 h-2.5 w-2.5 rotate-45 border-b border-l border-foreground/30 bg-white"
           aria-hidden
         />
-        <p className="font-display text-[11px] font-bold leading-snug text-foreground sm:text-xs">
+        <p className="line-clamp-2 font-display text-[10px] font-bold leading-snug text-foreground sm:text-[11px]">
           {question}
         </p>
-        <div className="mt-1.5 space-y-1">
+        <div className="mt-1 space-y-0.5">
           {options.map((opt, i) => (
             <div
               key={opt}
               className={
-                "flex min-h-[1.25rem] items-center truncate rounded-md border-[1.5px] px-2 py-0.5 text-[9px] font-semibold leading-tight sm:text-[10px] " +
+                "flex min-h-[1.125rem] min-w-0 items-center overflow-hidden rounded-md border-[1.5px] px-1.5 py-0.5 text-[8px] font-semibold leading-none sm:text-[9px] " +
                 (i === correct
                   ? "border-transparent text-white"
                   : "border-foreground/25 bg-white text-foreground")
               }
               style={i === correct ? { backgroundColor: accent } : undefined}
             >
-              {opt}
+              <span className="truncate">{opt}</span>
             </div>
           ))}
         </div>
@@ -415,7 +415,7 @@ export function TutorModeArt({
         <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
           Tutor Bot
         </p>
-        <p className="mt-0.5 font-display text-sm font-bold leading-snug text-foreground">
+        <p className="line-clamp-2 font-display text-xs font-bold leading-snug text-foreground">
           {preview.question}
         </p>
         <span
