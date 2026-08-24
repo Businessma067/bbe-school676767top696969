@@ -116,6 +116,16 @@ export function AuthNav() {
           >
             Settings
           </Link>
+          {auth.role === "admin" && (
+            <Link
+              to="/admin"
+              onClick={() => setOpen(false)}
+              tabIndex={open ? 0 : -1}
+              className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
+            >
+              Admin panel
+            </Link>
+          )}
         </div>
       </div>
     </div>

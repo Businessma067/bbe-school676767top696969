@@ -9,6 +9,7 @@ import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
 import { getMathCourseTheory } from "@/data/math-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
+import { trackEvent, upsertTheoryProgress } from "@/lib/activity-tracker";
 
 const ECONOMICS_MATERIALS_PDF_URL = "/bbe-economics-textbook.pdf";
 const ECONOMICS_MATERIALS_PDF_NAME = "BBE-Economics-Full-Course-Theory.pdf";
@@ -263,7 +264,59 @@ export function TheoryReader({
   const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const rafRef = useRef<number | null>(null);
   const activeIdRef = useRef(activeId);
+  const theoryStartedRef = useRef(Date.now());
+  const maxScrollRef = useRef(0);
   activeIdRef.current = activeId;
+
+  useEffect(() => {
+    theoryStartedRef.current = Date.now();
+    maxScrollRef.current = 0;
+    void trackEvent({
+      eventType: "theory_open",
+      subject,
+      entityType: "chapter",
+      entityId: String(chapter),
+    });
+  }, [chapter, subject]);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      const el = scrollRef.current;
+      if (!el) return;
+      const max = el.scrollHeight - el.clientHeight;
+      const pct = max > 0 ? (el.scrollTop / max) * 100 : 0;
+      maxScrollRef.current = Math.max(maxScrollRef.current, pct);
+      const seconds = Math.round((Date.now() - theoryStartedRef.current) / 1000);
+      void upsertTheoryProgress({
+        subject,
+        chapterId: String(chapter),
+        sectionId: activeIdRef.current,
+        timeSeconds: seconds,
+        scrollPct: maxScrollRef.current,
+        completed: maxScrollRef.current >= 95,
+      });
+    }, 30_000);
+    return () => {
+      window.clearInterval(interval);
+      const seconds = Math.round((Date.now() - theoryStartedRef.current) / 1000);
+      void upsertTheoryProgress({
+        subject,
+        chapterId: String(chapter),
+        sectionId: activeIdRef.current,
+        timeSeconds: seconds,
+        scrollPct: maxScrollRef.current,
+        completed: maxScrollRef.current >= 95,
+      });
+      if (maxScrollRef.current >= 95) {
+        void trackEvent({
+          eventType: "theory_complete",
+          subject,
+          entityType: "chapter",
+          entityId: String(chapter),
+        });
+      }
+    };
+  }, [chapter, subject]);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTo({ top: 0 });

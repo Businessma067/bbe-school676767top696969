@@ -47,9 +47,11 @@ import { Route as DemoPracticeMathRouteImport } from './routes/demo-practice.mat
 import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as AdminUsersRouteImport } from './routes/admin.users'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
+import { Route as AdminUsersUserIdRouteImport } from './routes/admin.users.$userId'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -248,6 +250,11 @@ const ApiChatRoute = ApiChatRouteImport.update({
   path: '/api/chat',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminUsersRoute = AdminUsersRouteImport.update({
+  id: '/users',
+  path: '/users',
+  getParentRoute: () => AdminRoute,
+} as any)
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/economics',
   path: '/economics',
@@ -262,6 +269,11 @@ const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
   id: '/$examId/review',
   path: '/$examId/review',
   getParentRoute: () => MockExamsRoute,
+} as any)
+const AdminUsersUserIdRoute = AdminUsersUserIdRouteImport.update({
+  id: '/$userId',
+  path: '/$userId',
+  getParentRoute: () => AdminUsersRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -283,6 +295,7 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -304,6 +317,7 @@ export interface FileRoutesByFullPath {
   '/flashcards/': typeof FlashcardsIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/admin/users/$userId': typeof AdminUsersUserIdRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
@@ -322,6 +336,7 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -343,6 +358,7 @@ export interface FileRoutesByTo {
   '/flashcards': typeof FlashcardsIndexRoute
   '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
+  '/admin/users/$userId': typeof AdminUsersUserIdRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
@@ -366,6 +382,7 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -387,6 +404,7 @@ export interface FileRoutesById {
   '/flashcards/': typeof FlashcardsIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/admin/users/$userId': typeof AdminUsersUserIdRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
 }
@@ -411,6 +429,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/admin/economics'
+    | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -432,6 +451,7 @@ export interface FileRouteTypes {
     | '/flashcards/'
     | '/mock-exams/'
     | '/products/'
+    | '/admin/users/$userId'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   fileRoutesByTo: FileRoutesByTo
@@ -450,6 +470,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/admin/economics'
+    | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -471,6 +492,7 @@ export interface FileRouteTypes {
     | '/flashcards'
     | '/mock-exams'
     | '/products'
+    | '/admin/users/$userId'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   id:
@@ -493,6 +515,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/admin/economics'
+    | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -514,6 +537,7 @@ export interface FileRouteTypes {
     | '/flashcards/'
     | '/mock-exams/'
     | '/products/'
+    | '/admin/users/$userId'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
   fileRoutesById: FileRoutesById
@@ -808,6 +832,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiChatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/users': {
+      id: '/admin/users'
+      path: '/users'
+      fullPath: '/admin/users'
+      preLoaderRoute: typeof AdminUsersRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/admin/economics': {
       id: '/admin/economics'
       path: '/economics'
@@ -829,15 +860,36 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
       parentRoute: typeof MockExamsRoute
     }
+    '/admin/users/$userId': {
+      id: '/admin/users/$userId'
+      path: '/$userId'
+      fullPath: '/admin/users/$userId'
+      preLoaderRoute: typeof AdminUsersUserIdRouteImport
+      parentRoute: typeof AdminUsersRoute
+    }
   }
 }
 
+interface AdminUsersRouteChildren {
+  AdminUsersUserIdRoute: typeof AdminUsersUserIdRoute
+}
+
+const AdminUsersRouteChildren: AdminUsersRouteChildren = {
+  AdminUsersUserIdRoute: AdminUsersUserIdRoute,
+}
+
+const AdminUsersRouteWithChildren = AdminUsersRoute._addFileChildren(
+  AdminUsersRouteChildren,
+)
+
 interface AdminRouteChildren {
   AdminEconomicsRoute: typeof AdminEconomicsRoute
+  AdminUsersRoute: typeof AdminUsersRouteWithChildren
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
   AdminEconomicsRoute: AdminEconomicsRoute,
+  AdminUsersRoute: AdminUsersRouteWithChildren,
 }
 
 const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)

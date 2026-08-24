@@ -25,6 +25,7 @@ import {
   type CardKnowledge,
   type FlashcardProgressMap,
 } from "@/lib/flashcard-progress";
+import { upsertFlashcardProgress } from "@/lib/activity-tracker";
 import {
   ChevronLeft,
   ChevronRight,
@@ -228,6 +229,7 @@ function FlashcardSubjectPage() {
       progressRef.current = nextProgress;
       setProgress(nextProgress);
       saveProgress(subjectId, nextProgress);
+      void upsertFlashcardProgress(subjectId, key, status);
 
       const dir = status === "known" ? "right" : "left";
       setExitDir(dir);

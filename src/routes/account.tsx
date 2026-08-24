@@ -54,7 +54,9 @@ function AccountPage() {
 
       setProfile(pRes.data ?? { display_name: null, created_at: u.created_at });
       setNameDraft(pRes.data?.display_name ?? "");
-      setRole(rRes.data?.[0]?.role ?? "student");
+      setRole(
+        rRes.data?.find((r) => r.role === "admin")?.role ?? rRes.data?.[0]?.role ?? "student",
+      );
       setLoading(false);
     })();
     return () => {
@@ -218,6 +220,25 @@ function AccountPage() {
             </Link>
           </div>
         </Card>
+
+        {role === "admin" && (
+          <Card title="Administration">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-sm text-muted-foreground">
+                  View detailed analytics for every registered user — tasks, mocks, time on site,
+                  flashcards, theory and more.
+                </p>
+              </div>
+              <Link
+                to="/admin"
+                className="rounded-md border border-primary bg-primary/10 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary/15"
+              >
+                Open admin panel →
+              </Link>
+            </div>
+          </Card>
+        )}
       </main>
     </div>
   );

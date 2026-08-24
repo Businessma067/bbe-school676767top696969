@@ -13,6 +13,8 @@ export type Enrollment = {
   created_at: string;
 };
 
+export type StatementResult = { statement_index: number; correct: boolean };
+
 export type TaskAttempt = {
   id: string;
   subject: string;
@@ -23,6 +25,10 @@ export type TaskAttempt = {
   statement_count: number;
   is_passed: boolean;
   created_at: string;
+  duration_seconds?: number | null;
+  attempt_number?: number | null;
+  statement_results?: StatementResult[] | null;
+  source?: string;
 };
 
 export type MockAttempt = {
@@ -123,9 +129,19 @@ export async function recordTaskAttempt(input: {
   taskTitle?: string | null;
   correctCount: number;
   statementCount: number;
+  durationSeconds?: number | null;
+  statementResults?: StatementResult[] | null;
+  source?: string;
 }): Promise<void> {
   const userId = await currentUserId();
   if (!userId) return;
+
+  const { count } = await supabase
+    .from("task_attempts")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", userId)
+    .eq("task_key", input.taskKey);
+
   const { error } = await supabase.from("task_attempts").insert({
     user_id: userId,
     subject: input.subject,
@@ -135,6 +151,10 @@ export async function recordTaskAttempt(input: {
     correct_count: input.correctCount,
     statement_count: input.statementCount,
     is_passed: input.correctCount === input.statementCount,
+    duration_seconds: input.durationSeconds ?? null,
+    attempt_number: (count ?? 0) + 1,
+    statement_results: input.statementResults ?? null,
+    source: input.source ?? "web",
   });
   if (error) console.error("recordTaskAttempt", error);
 }
