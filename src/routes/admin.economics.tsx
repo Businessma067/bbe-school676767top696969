@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
+import { isAdminEmail } from "@/lib/admin-access";
 import { AuthNav } from "@/components/AuthNav";
 import { Loader2, ChevronLeft, Check } from "lucide-react";
 
@@ -23,16 +24,11 @@ function AdminEconomics() {
   }, []);
 
   useEffect(() => {
-    if (!user) { setIsAdmin(user === null ? false : null); return; }
-    (async () => {
-      const { data, error } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", user.id)
-        .eq("role", "admin")
-        .maybeSingle();
-      setIsAdmin(!error && !!data);
-    })();
+    if (!user) {
+      setIsAdmin(user === null ? false : null);
+      return;
+    }
+    setIsAdmin(isAdminEmail(user.email));
   }, [user]);
 
   if (user === undefined || (user && isAdmin === null)) {
@@ -54,11 +50,7 @@ function AdminEconomics() {
         <div className="rounded-2xl border border-destructive/40 bg-destructive/10 p-6">
           <p className="text-sm font-semibold text-destructive">Not authorized</p>
           <p className="mt-2 text-xs text-destructive/80">
-            Your account (<code>{user.email}</code>) is not an admin. Ask an existing admin to grant you the
-            <code className="mx-1">admin</code> role in <code>user_roles</code>.
-          </p>
-          <p className="mt-3 text-xs text-muted-foreground">
-            Your user id: <code className="select-all font-mono">{user.id}</code>
+            Admin access is only available for the site owner account.
           </p>
         </div>
       </Shell>

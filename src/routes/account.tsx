@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { SiteHeader } from "@/components/SiteHeader";
 import { friendlyAuthError } from "@/lib/auth-ui";
+import { isAdminEmail, resolveAppRole, type AppRole } from "@/lib/admin-access";
 
 export const Route = createFileRoute("/account")({
   component: AccountPage,
@@ -55,7 +56,12 @@ function AccountPage() {
       setProfile(pRes.data ?? { display_name: null, created_at: u.created_at });
       setNameDraft(pRes.data?.display_name ?? "");
       setRole(
-        rRes.data?.find((r) => r.role === "admin")?.role ?? rRes.data?.[0]?.role ?? "student",
+        resolveAppRole(
+          u.email ?? "",
+          (rRes.data?.find((r) => r.role === "admin")?.role ??
+            rRes.data?.[0]?.role ??
+            "student") as AppRole,
+        ),
       );
       setLoading(false);
     })();
@@ -221,7 +227,7 @@ function AccountPage() {
           </div>
         </Card>
 
-        {role === "admin" && (
+        {isAdminEmail(user?.email) && (
           <Card title="Administration">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>

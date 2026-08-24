@@ -1,6 +1,7 @@
 import { supabase } from "@/integrations/supabase/client";
+import { resolveAppRole, type AppRole } from "@/lib/admin-access";
 
-export type AppRole = "admin" | "student" | "user";
+export type { AppRole };
 
 export type AuthState = {
   userId: string;
@@ -39,7 +40,10 @@ export async function getCurrentAuthState(): Promise<AuthState | null> {
         ? user.user_metadata.name.trim()
         : "";
   const email = user.email ?? "";
-  const role = (roleRes.data?.find((row) => row.role === "admin")?.role ?? roleRes.data?.[0]?.role ?? "student") as AppRole;
+  const dbRole = (roleRes.data?.find((row) => row.role === "admin")?.role ??
+    roleRes.data?.[0]?.role ??
+    "student") as AppRole;
+  const role = resolveAppRole(email, dbRole);
 
   return {
     userId: user.id,

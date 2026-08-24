@@ -1,28 +1,14 @@
-# Admin panel setup
+# Admin panel
 
-Access is restricted to a single admin account via **two checks** (both required):
+Admin access is granted automatically when you sign in with **georgtyrin@gmail.com**.
 
-1. Environment variable `ADMIN_EMAIL` — your login email (set in Lovable Cloud secrets or `.env.local`).
-2. Row in `user_roles` with role `admin` for your user.
+No environment variables or SQL setup required.
 
-## One-time setup
+## Where to open
 
-1. Set `ADMIN_EMAIL=you@example.com` in project secrets.
-2. Sign up / log in on the site with that email.
-3. Run in Supabase SQL Editor:
-
-```sql
-INSERT INTO public.user_roles (user_id, role)
-SELECT id, 'admin'::public.app_role
-FROM auth.users WHERE email = 'you@example.com'
-ON CONFLICT (user_id, role) DO NOTHING;
-```
-
-## Where to open the panel
-
-- **Direct URL:** `/admin`
-- **Header:** “Admin panel” button (desktop)
-- **Account menu:** “Admin panel” item
-- **Account page:** “Open admin panel” in the Administration card
-
-Sub-routes: `/admin/users`, `/admin/users/{userId}`, `/admin/economics`
+- `/admin` — overview
+- `/admin/users` — all users
+- `/admin/users/{id}` — full profile for one user
+- Header button **Admin panel** (after login)
+- **Account** page → Administration card
+- Account dropdown → **Admin panel**
