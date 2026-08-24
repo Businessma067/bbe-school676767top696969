@@ -61,7 +61,7 @@ function MatchingIndexPage() {
               const n = countCards(s.sections);
               const cardInner = (
                 <>
-                  <MatchingSubjectArt subject={s.id} accent={s.accent} tag={s.tag} />
+                  <MatchingSubjectArt subject={s.id} accent={s.accent} />
                   <div className="flex flex-1 flex-col p-6">
                     <h2 className="font-display text-xl font-semibold text-foreground">
                       <span

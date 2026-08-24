@@ -7,22 +7,74 @@ const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
   english: "#d9e8f2",
 };
 
-const SUBJECT_LABEL: Record<FlashcardSubjectId, string> = {
-  economics: "Economics",
-  math: "Math",
-  english: "English",
+type Pair = [string, string];
+
+const FLASHCARD_PREVIEW: Record<
+  FlashcardSubjectId,
+  { hint: string; sample: string }
+> = {
+  economics: { hint: "Tap to flip", sample: "Opportunity cost" },
+  math: { hint: "Tap to flip", sample: "Quadratic formula" },
+  english: { hint: "Tap to flip", sample: "Ubiquitous" },
 };
 
-/** Shared subject-picker frame: fixed aspect, reserved tag strip, centered art. */
+const MATCHING_PAIRS: Record<FlashcardSubjectId, Pair[]> = {
+  economics: [
+    ["Supply", "Qty offered"],
+    ["Demand", "Qty bought"],
+    ["Inflation", "Price rise"],
+  ],
+  math: [
+    ["f(x)", "Function"],
+    ["x²", "Quadratic"],
+    ["Δx", "Change"],
+  ],
+  english: [
+    ["Ubiquitous", "Everywhere"],
+    ["Ephemeral", "Brief"],
+    ["Benevolent", "Kind"],
+  ],
+};
+
+const TUTOR_PREVIEW: Record<
+  FlashcardSubjectId,
+  { question: string; options: [string, string, string]; correct: 0 | 1 | 2 }
+> = {
+  economics: {
+    question: "What is opportunity cost?",
+    options: [
+      "A  Next best alternative given up",
+      "B  Total revenue minus costs",
+      "C  Price × quantity sold",
+    ],
+    correct: 0,
+  },
+  math: {
+    question: "What does ∫ f(x) dx mean?",
+    options: [
+      "A  Derivative at a point",
+      "B  Area under the curve",
+      "C  Maximum value of f",
+    ],
+    correct: 1,
+  },
+  english: {
+    question: "Synonym for abundant?",
+    options: [
+      "A  Scarce",
+      "B  Plentiful",
+      "C  Fragile",
+    ],
+    correct: 1,
+  },
+};
+
+/** Shared subject-picker frame: fixed aspect, centered art with safe padding. */
 function SubjectPreviewShell({
   subject,
-  tag,
-  accent,
   children,
 }: {
   subject: FlashcardSubjectId;
-  tag: string;
-  accent: string;
   children: ReactNode;
 }) {
   return (
@@ -30,15 +82,9 @@ function SubjectPreviewShell({
       className="relative aspect-video w-full overflow-hidden"
       style={{ backgroundColor: SUBJECT_BG[subject] }}
     >
-      <div className="absolute inset-x-0 top-0 bottom-11 flex items-center justify-center px-5 pb-0">
-        <div className="translate-y-1">{children}</div>
+      <div className="absolute inset-0 flex items-center justify-center px-5 py-4">
+        <div className="max-h-full max-w-full translate-y-0.5">{children}</div>
       </div>
-      <span
-        className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
-        style={{ color: accent }}
-      >
-        {tag}
-      </span>
     </div>
   );
 }
@@ -117,15 +163,20 @@ function SubjectGlyph({
 function MiniCard({
   subject,
   label,
+  sample,
 }: {
   subject: FlashcardSubjectId;
   label: string;
+  sample: string;
 }) {
   return (
     <div className="flex h-[4.75rem] w-[3.5rem] flex-col items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white px-1 py-2 sm:h-[5.25rem] sm:w-[3.85rem]">
       <div className="flex translate-y-0.5 flex-col items-center">
-        <SubjectGlyph subject={subject} className="h-6 w-6 shrink-0 text-foreground" />
-        <span className="mt-2 w-full text-center text-[8px] font-semibold uppercase tracking-wider text-taupe">
+        <SubjectGlyph subject={subject} className="h-5 w-5 shrink-0 text-foreground" />
+        <span className="mt-1.5 line-clamp-2 w-full px-0.5 text-center text-[7px] font-semibold leading-tight text-foreground">
+          {sample}
+        </span>
+        <span className="mt-1 w-full text-center text-[7px] font-semibold uppercase tracking-wider text-taupe">
           {label}
         </span>
       </div>
@@ -146,9 +197,9 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
         Tap to flip
       </p>
       <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
-        <MiniCard subject="economics" label="Econ" />
-        <MiniCard subject="math" label="Math" />
-        <MiniCard subject="english" label="Eng" />
+        <MiniCard subject="economics" label="Econ" sample="Supply" />
+        <MiniCard subject="math" label="Math" sample="f(x)" />
+        <MiniCard subject="english" label="Eng" sample="Synonym" />
       </div>
     </div>
   );
@@ -158,34 +209,35 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
 export function FlashcardsSubjectArt({
   subject,
   accent,
-  tag,
 }: {
   subject: FlashcardSubjectId;
   accent: string;
-  tag: string;
 }) {
+  const preview = FLASHCARD_PREVIEW[subject];
+
   return (
-    <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
-      <div className="flex h-[9.5rem] w-[7rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 py-4 sm:h-[10rem] sm:w-[7.5rem]">
-        <div className="flex w-full translate-y-1 flex-col items-center text-center">
+    <SubjectPreviewShell subject={subject}>
+      <div className="flex h-[9rem] w-[6.75rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 py-3.5 sm:h-[9.5rem] sm:w-[7.25rem]">
+        <div className="flex w-full flex-col items-center text-center">
           <SubjectGlyph
             subject={subject}
-            className="h-8 w-8 shrink-0 text-foreground"
+            className="h-7 w-7 shrink-0 text-foreground"
           />
-          <p className="mt-2.5 w-full font-display text-sm font-bold leading-snug text-foreground">
-            {SUBJECT_LABEL[subject]}
+          <p className="mt-2 line-clamp-2 w-full font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
+            {preview.sample}
           </p>
           <span
-            className="mt-2.5 h-1 w-10 shrink-0 rounded-full"
+            className="mt-2 h-1 w-10 shrink-0 rounded-full"
             style={{ backgroundColor: accent }}
           />
+          <p className="mt-2 text-[9px] font-semibold uppercase tracking-widest text-taupe">
+            {preview.hint}
+          </p>
         </div>
       </div>
     </SubjectPreviewShell>
   );
 }
-
-type Pair = [string, string];
 
 function MatchingPairs({
   pairs,
@@ -195,7 +247,7 @@ function MatchingPairs({
   accent: string;
 }) {
   return (
-    <div className="flex w-full max-w-[17rem] flex-col gap-1.5">
+    <div className="flex w-full max-w-[16rem] flex-col gap-1.5">
       {pairs.map(([left, right]) => (
         <div key={left} className="grid grid-cols-[1fr_auto_1fr] items-center gap-1.5">
           <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[10px] font-semibold text-foreground sm:text-[11px]">
@@ -333,22 +385,13 @@ export function TutorModeArt({
 export function MatchingSubjectArt({
   subject,
   accent,
-  tag,
 }: {
   subject: FlashcardSubjectId;
   accent: string;
-  tag: string;
 }) {
   return (
-    <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
-      <MatchingPairs
-        accent={accent}
-        pairs={[
-          ["Concept A", "Meaning 1"],
-          ["Concept B", "Meaning 2"],
-          ["Concept C", "Meaning 3"],
-        ]}
-      />
+    <SubjectPreviewShell subject={subject}>
+      <MatchingPairs accent={accent} pairs={MATCHING_PAIRS[subject]} />
     </SubjectPreviewShell>
   );
 }
@@ -357,37 +400,35 @@ export function MatchingSubjectArt({
 export function TutorSubjectArt({
   subject,
   accent,
-  tag,
 }: {
   subject: FlashcardSubjectId;
   accent: string;
-  tag: string;
 }) {
+  const preview = TUTOR_PREVIEW[subject];
+
   return (
-    <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
-      <div className="flex w-full max-w-[15rem] flex-col items-center gap-2">
+    <SubjectPreviewShell subject={subject}>
+      <div className="flex w-full max-w-[14.5rem] flex-col items-center gap-2">
         <TutorRobot accent={accent} compact />
         <div className="w-full rounded-xl border-[1.5px] border-foreground/30 bg-white px-3 py-2.5 text-center">
-          <p className="font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
-            What does this mean?
+          <p className="line-clamp-2 font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
+            {preview.question}
           </p>
           <div className="mt-2 space-y-1">
-            {["A  Definition one", "B  Definition two", "C  Definition three"].map(
-              (opt, i) => (
-                <div
-                  key={opt}
-                  className={
-                    "truncate rounded-md border-[1.5px] px-2 py-0.5 text-[10px] font-semibold " +
-                    (i === 1
-                      ? "border-transparent text-white"
-                      : "border-foreground/25 bg-white text-foreground")
-                  }
-                  style={i === 1 ? { backgroundColor: accent } : undefined}
-                >
-                  {opt}
-                </div>
-              ),
-            )}
+            {preview.options.map((opt, i) => (
+              <div
+                key={opt}
+                className={
+                  "truncate rounded-md border-[1.5px] px-2 py-0.5 text-[10px] font-semibold " +
+                  (i === preview.correct
+                    ? "border-transparent text-white"
+                    : "border-foreground/25 bg-white text-foreground")
+                }
+                style={i === preview.correct ? { backgroundColor: accent } : undefined}
+              >
+                {opt}
+              </div>
+            ))}
           </div>
         </div>
       </div>
