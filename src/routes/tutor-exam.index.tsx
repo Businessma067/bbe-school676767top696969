@@ -1,30 +1,30 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardsSubjectArt } from "@/components/study-modes/ModeArt";
+import { TutorSubjectArt } from "@/components/study-modes/ModeArt";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
-import { Layers } from "lucide-react";
+import { Bot } from "lucide-react";
 
-export const Route = createFileRoute("/flashcards/")({
+export const Route = createFileRoute("/tutor-exam/")({
   head: () => ({
     meta: [
-      { title: "Flashcards — BBE School" },
+      { title: "Tutor Exam — BBE School" },
       {
         name: "description",
         content:
-          "Study BBE Economics, Math, and English flashcards — terms, formulas, and concepts for the WU entrance exam.",
+          "A tutor robot runs a random theoretical exam on BBE Economics, Math, and English — a new question set every time.",
       },
-      { property: "og:title", content: "Flashcards — BBE School" },
+      { property: "og:title", content: "Tutor Exam — BBE School" },
       {
         property: "og:description",
         content:
-          "Study BBE Economics, Math, and English flashcards — terms, formulas, and concepts for the WU entrance exam.",
+          "A tutor robot runs a random theoretical exam on BBE Economics, Math, and English — a new question set every time.",
       },
     ],
   }),
-  component: FlashcardsIndexPage,
+  component: TutorExamIndexPage,
 });
 
-function FlashcardsIndexPage() {
+function TutorExamIndexPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
@@ -43,16 +43,17 @@ function FlashcardsIndexPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-              <Layers className="h-3.5 w-3.5 text-caramel-deep" />
+              <Bot className="h-3.5 w-3.5 text-caramel-deep" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                Study mode · Flashcards
+                Study mode · Tutor Exam
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Flashcards
+              Tutor Exam
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Choose a subject to drill terms and formulas.
+              A study robot quizzes you on theory — fully random questions each
+              run, per subject.
             </p>
           </div>
 
@@ -62,7 +63,7 @@ function FlashcardsIndexPage() {
               const cardInner = (
                 <>
                   <div className="relative overflow-hidden">
-                    <FlashcardsSubjectArt subject={s.id} accent={s.accent} />
+                    <TutorSubjectArt subject={s.id} accent={s.accent} />
                     <span
                       className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
                       style={{ color: s.accent }}
@@ -79,14 +80,13 @@ function FlashcardsIndexPage() {
                       {s.title}
                     </h2>
                     <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                      {s.description}
+                      Tutor Bot asks random definition and identification
+                      questions from the {s.title.toLowerCase()} theory deck.
                     </p>
                     <p className="mt-3 text-xs font-semibold text-muted-foreground">
                       {s.comingSoon
                         ? "Coming soon"
-                        : s.id === "english"
-                          ? `${n} cards · 3 modes`
-                          : `${n} cards · ${s.sections.length} topics`}
+                        : `${n} concepts · new shuffle every exam`}
                     </p>
                     <span
                       className={
@@ -102,7 +102,7 @@ function FlashcardsIndexPage() {
                           : `0 4px 14px -4px ${s.accent}80`,
                       }}
                     >
-                      {s.comingSoon ? "Coming soon" : "Study flashcards →"}
+                      {s.comingSoon ? "Coming soon" : "Start exam →"}
                     </span>
                   </div>
                 </>
@@ -123,7 +123,7 @@ function FlashcardsIndexPage() {
               return (
                 <Link
                   key={s.id}
-                  to="/flashcards/$subject"
+                  to="/tutor-exam/$subject"
                   params={{ subject: s.id }}
                   className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{ borderTop: `4px solid ${s.accent}` }}

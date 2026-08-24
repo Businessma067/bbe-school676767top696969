@@ -21,7 +21,11 @@ import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
-import flashcardsBanner from "../../assets/flashcard-previews/games-flashcards-banner.png";
+import {
+  FlashcardsModeArt,
+  MatchingModeArt,
+  TutorModeArt,
+} from "@/components/study-modes/ModeArt";
 import {
   BookOpen,
   ClipboardCheck,
@@ -33,7 +37,7 @@ import {
   AlertTriangle,
   GraduationCap,
   Wand2,
-  Gamepad2,
+  Layers,
 } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
@@ -47,7 +51,7 @@ export const Route = createFileRoute("/dashboard")({
   }),
 });
 
-type TabId = "courses" | "mocks" | "custom" | "games";
+type TabId = "courses" | "mocks" | "custom" | "modes";
 
 const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
@@ -145,10 +149,10 @@ function DashboardPage() {
               onClick={() => setTab("custom")}
             />
             <SideItem
-              icon={<Gamepad2 className="h-4 w-4" />}
-              label="Games"
-              active={tab === "games"}
-              onClick={() => setTab("games")}
+              icon={<Layers className="h-4 w-4" />}
+              label="Study Modes"
+              active={tab === "modes"}
+              onClick={() => setTab("modes")}
             />
           </nav>
         </aside>
@@ -206,8 +210,8 @@ function DashboardPage() {
             <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>
               Custom
             </MobileTab>
-            <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
-              Games
+            <MobileTab active={tab === "modes"} onClick={() => setTab("modes")}>
+              Modes
             </MobileTab>
           </div>
 
@@ -229,7 +233,7 @@ function DashboardPage() {
                 attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
               />
             ) : (
-              <GamesTab />
+              <StudyModesTab />
             )}
           </div>
         </main>
@@ -508,13 +512,13 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
   );
 }
 
-/* -------------------- GAMES TAB -------------------- */
+/* -------------------- STUDY MODES TAB -------------------- */
 
-function GamesTab() {
+function StudyModesTab() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="font-display text-xl font-bold tracking-tight">Games</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">Study Modes</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           Practice tools to reinforce Economics, Math, and English for the BBE exam.
         </p>
@@ -524,22 +528,54 @@ function GamesTab() {
           to="/flashcards"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
-            <img
-              src={flashcardsBanner}
-              alt=""
-              className="h-full w-full object-cover object-top"
-            />
+          <div className="h-32 w-full overflow-hidden">
+            <FlashcardsModeArt />
           </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Study game
+              Study mode
             </p>
             <h3 className="mt-1 font-display text-lg font-bold">Flashcards</h3>
             <p className="mt-2 text-sm text-muted-foreground">
               Drill Economics terms, Math formulas, and English vocabulary with flip cards.
             </p>
             <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
+          </div>
+        </Link>
+        <Link
+          to="/matching"
+          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <div className="h-32 w-full overflow-hidden">
+            <MatchingModeArt />
+          </div>
+          <div className="p-5">
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+              Study mode
+            </p>
+            <h3 className="mt-1 font-display text-lg font-bold">Matching</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Connect each concept to the right definition — same decks, different interaction.
+            </p>
+            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open matching →</p>
+          </div>
+        </Link>
+        <Link
+          to="/tutor-exam"
+          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <div className="h-32 w-full overflow-hidden">
+            <TutorModeArt />
+          </div>
+          <div className="p-5">
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+              Study mode
+            </p>
+            <h3 className="mt-1 font-display text-lg font-bold">Tutor Exam</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              A tutor robot runs a random theoretical quiz — new questions every time.
+            </p>
+            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open tutor exam →</p>
           </div>
         </Link>
       </div>
