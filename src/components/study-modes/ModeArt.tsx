@@ -30,8 +30,8 @@ function SubjectPreviewShell({
       className="relative aspect-video w-full overflow-hidden"
       style={{ backgroundColor: SUBJECT_BG[subject] }}
     >
-      <div className="absolute inset-x-0 top-0 bottom-11 flex items-center justify-center px-5 pt-3 pb-0">
-        {children}
+      <div className="absolute inset-x-0 top-0 bottom-11 flex items-center justify-center px-5 pb-0">
+        <div className="translate-y-1">{children}</div>
       </div>
       <span
         className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
@@ -122,11 +122,13 @@ function MiniCard({
   label: string;
 }) {
   return (
-    <div className="flex h-[4.75rem] w-[3.5rem] flex-col items-center justify-end rounded-lg border-[1.5px] border-foreground/35 bg-white pb-2.5 pt-2 sm:h-[5.25rem] sm:w-[3.85rem]">
-      <SubjectGlyph subject={subject} className="h-6 w-6 shrink-0 text-foreground" />
-      <span className="mt-2 w-full text-center text-[8px] font-semibold uppercase tracking-wider text-taupe">
-        {label}
-      </span>
+    <div className="flex h-[4.75rem] w-[3.5rem] flex-col items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white px-1 py-2 sm:h-[5.25rem] sm:w-[3.85rem]">
+      <div className="flex translate-y-0.5 flex-col items-center">
+        <SubjectGlyph subject={subject} className="h-6 w-6 shrink-0 text-foreground" />
+        <span className="mt-2 w-full text-center text-[8px] font-semibold uppercase tracking-wider text-taupe">
+          {label}
+        </span>
+      </div>
     </div>
   );
 }
@@ -164,17 +166,17 @@ export function FlashcardsSubjectArt({
 }) {
   return (
     <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
-      <div className="flex h-[9.5rem] w-[7rem] flex-col items-center justify-end rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 pb-5 pt-3 sm:h-[10rem] sm:w-[7.5rem]">
-        <div className="flex w-full flex-col items-center text-center">
+      <div className="flex h-[9.5rem] w-[7rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 py-4 sm:h-[10rem] sm:w-[7.5rem]">
+        <div className="flex w-full translate-y-1 flex-col items-center text-center">
           <SubjectGlyph
             subject={subject}
             className="h-8 w-8 shrink-0 text-foreground"
           />
-          <p className="mt-3 w-full font-display text-sm font-bold leading-snug text-foreground">
+          <p className="mt-2.5 w-full font-display text-sm font-bold leading-snug text-foreground">
             {SUBJECT_LABEL[subject]}
           </p>
           <span
-            className="mt-3 h-1 w-10 shrink-0 rounded-full"
+            className="mt-2.5 h-1 w-10 shrink-0 rounded-full"
             style={{ backgroundColor: accent }}
           />
         </div>
