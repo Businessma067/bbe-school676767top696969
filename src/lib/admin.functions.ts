@@ -2,20 +2,15 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/require-admin.server";
 import {
-  getStoreCohortStats,
-  getStoreUserDetail,
-  getStoreUserRows,
+  buildAdminUserRow,
+  fetchUserBundle,
   isAtRisk,
-  readUserEvents,
-} from "@/lib/admin-store.server";
-import { fetchLiveUserRows } from "@/lib/admin-live.server";
-import { trySyncAllUsers } from "@/lib/admin-sync.server";
+} from "@/lib/admin-stats.server";
 import type {
   AdminCohortStats,
   AdminListUsersResult,
   AdminTimelineResult,
   AdminUserDetail,
-  AdminUserRow,
 } from "@/lib/admin-types";
 
 const ListUsersInput = z.object({
@@ -39,97 +34,111 @@ const TimelineInput = z.object({
   eventType: z.string().optional(),
 });
 
-async function resolveAdminUserRows(
-  supabase: Parameters<typeof fetchLiveUserRows>[0],
-): Promise<{ rows: AdminUserRow[]; source: AdminListUsersResult["source"]; hint?: string }> {
-  // Best-effort: fill local store when filesystem works (local dev).
-  const sync = await trySyncAllUsers(supabase, true).catch((err) => ({
-    synced: 0,
-    source: "skipped" as const,
-    totalLocal: 0,
-    error: err instanceof Error ? err.message : String(err),
-    hint: undefined as string | undefined,
-  }));
+type AdminDb = Awaited<
+  typeof import("@/integrations/supabase/client.server")
+>["supabaseAdmin"];
 
-  let rows = await getStoreUserRows().catch(() => [] as AdminUserRow[]);
-  if (rows.length > 0) {
-    return { rows, source: "local_store", hint: sync.hint };
+async function listAllAuthUsers(db: AdminDb) {
+  const users: { id: string; email: string; created_at: string }[] = [];
+  let page = 1;
+  const perPage = 200;
+  for (;;) {
+    const { data, error } = await db.auth.admin.listUsers({ page, perPage });
+    if (error) throw error;
+    for (const u of data.users) {
+      if (u.email) {
+        users.push({ id: u.id, email: u.email, created_at: u.created_at });
+      }
+    }
+    if (data.users.length < perPage) break;
+    page += 1;
+    if (page > 50) break;
   }
-
-  // Lovable / empty disk: read accounts live from Supabase.
-  const live = await fetchLiveUserRows(supabase);
-  if (live.rows.length > 0) {
-    return { rows: live.rows, source: "supabase_live" };
-  }
-
-  const hint =
-    live.error ||
-    sync.hint ||
-    sync.error ||
-    "Нет аккаунтов. Выполните SQL из supabase/migrations/20260825010000_admin_emails_and_list_users.sql в Supabase → SQL Editor.";
-
-  return { rows: [], source: "empty", hint };
+  return users;
 }
 
 export const adminGetCohortStats = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
   .handler(async ({ context }): Promise<AdminCohortStats> => {
-    const { rows } = await resolveAdminUserRows(context.supabase);
-    const cohort =
-      rows.length > 0
-        ? {
-            users: rows,
-            totalTaskAttempts: rows.reduce((s, u) => s + u.tasksAttempted, 0),
-            totalMockSubmissions: rows.reduce((s, u) => s + u.mockAttempts, 0),
-            averageMockScorePct: (() => {
-              const scored = rows.filter((u) => u.mockBestPct != null);
-              if (!scored.length) return null;
-              return (
-                Math.round(
-                  (scored.reduce((s, u) => s + (u.mockBestPct ?? 0), 0) / scored.length) * 10,
-                ) / 10
-              );
-            })(),
-            enrollmentsByTier: rows.reduce<Record<string, number>>((acc, u) => {
-              acc[u.tier] = (acc[u.tier] ?? 0) + 1;
-              return acc;
-            }, {}),
-          }
-        : await getStoreCohortStats();
+    const db = context.supabaseAdmin;
+    const authUsers = await listAllAuthUsers(db);
 
     const now = Date.now();
     const day = 86_400_000;
+    const presenceRes = await db.from("user_presence").select("user_id, last_seen_at");
+    const presenceMap = new Map(
+      (presenceRes.error ? [] : (presenceRes.data ?? [])).map((p) => [p.user_id, p.last_seen_at]),
+    );
 
     let dau = 0;
     let wau = 0;
     let mau = 0;
-    for (const u of cohort.users) {
-      if (!u.lastSeenAt) continue;
-      const t = new Date(u.lastSeenAt).getTime();
+    for (const u of authUsers) {
+      const seen = presenceMap.get(u.id);
+      if (!seen) continue;
+      const t = new Date(seen).getTime();
       if (now - t <= day) dau += 1;
       if (now - t <= 7 * day) wau += 1;
       if (now - t <= 30 * day) mau += 1;
     }
 
+    const enrollRes = await db.from("enrollments").select("tier");
+    const enrollmentsByTier: Record<string, number> = {};
+    for (const e of enrollRes.data ?? []) {
+      enrollmentsByTier[e.tier] = (enrollmentsByTier[e.tier] ?? 0) + 1;
+    }
+
+    const taskCountRes = await db.from("task_attempts").select("id", { count: "exact", head: true });
+    const mockRes = await db
+      .from("mock_attempts")
+      .select("points_earned, points_total, status")
+      .or("status.eq.submitted,status.is.null");
+
+    let scoreSum = 0;
+    let scoreCount = 0;
+    for (const m of mockRes.data ?? []) {
+      const total = Number(m.points_total);
+      if (total <= 0) continue;
+      scoreSum += (Number(m.points_earned) / total) * 100;
+      scoreCount += 1;
+    }
+
+    const profilesRes = await db.from("profiles").select("user_id, display_name");
+    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
+
+    const userRows = await Promise.all(
+      authUsers.map((u) =>
+        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
+      ),
+    );
+
     return {
-      totalUsers: cohort.users.length,
+      totalUsers: authUsers.length,
       dau,
       wau,
       mau,
-      enrollmentsByTier: cohort.enrollmentsByTier,
-      totalTaskAttempts: cohort.totalTaskAttempts,
-      totalMockSubmissions: cohort.totalMockSubmissions,
-      averageMockScorePct: cohort.averageMockScorePct,
-      atRiskUsers: cohort.users.filter(isAtRisk).slice(0, 20),
+      enrollmentsByTier,
+      totalTaskAttempts: taskCountRes.count ?? 0,
+      totalMockSubmissions: mockRes.data?.length ?? 0,
+      averageMockScorePct: scoreCount > 0 ? Math.round((scoreSum / scoreCount) * 10) / 10 : null,
+      atRiskUsers: userRows.filter(isAtRisk).slice(0, 20),
     };
   });
 
 export const adminListUsers = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => ListUsersInput.parse(d))
-  .handler(async ({ data, context }): Promise<AdminListUsersResult> => {
-    const resolved = await resolveAdminUserRows(context.supabase);
-    let rows = resolved.rows;
+  .handler(async ({ context, data }): Promise<AdminListUsersResult> => {
+    const db = context.supabaseAdmin;
+    const authUsers = await listAllAuthUsers(db);
+    const profilesRes = await db.from("profiles").select("user_id, display_name");
+    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
+
+    let rows = await Promise.all(
+      authUsers.map((u) =>
+        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
+      ),
+    );
 
     const q = data.search?.trim().toLowerCase();
     if (q) {
@@ -165,57 +174,59 @@ export const adminListUsers = createServerFn({ method: "POST" })
 
     const total = rows.length;
     const start = (data.page - 1) * data.pageSize;
-    return {
-      users: rows.slice(start, start + data.pageSize),
-      total,
-      page: data.page,
-      pageSize: data.pageSize,
-      source: resolved.source,
-      hint: total === 0 ? resolved.hint : undefined,
-    };
+    const users = rows.slice(start, start + data.pageSize);
+
+    return { users, total, page: data.page, pageSize: data.pageSize, source: "supabase_live" };
   });
 
 export const adminGetUserDetail = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => UserIdInput.parse(d))
-  .handler(async ({ data, context }): Promise<AdminUserDetail> => {
-    // Prefer local store; if missing (Lovable), sync this one user from Supabase first.
-    let detail = await getStoreUserDetail(data.userId);
-    if (!detail) {
-      try {
-        const { syncSingleUserFromSupabase } = await import("@/lib/admin-sync.server");
-        const live = await fetchLiveUserRows(context.supabase);
-        const meta = live.rows.find((r) => r.userId === data.userId);
-        await syncSingleUserFromSupabase(context.supabase, data.userId, meta
-          ? { email: meta.email, created_at: meta.registeredAt }
-          : undefined);
-        detail = await getStoreUserDetail(data.userId);
-      } catch (err) {
-        console.error("[admin] live detail sync failed", err);
-      }
-    }
-    if (!detail) throw new Error("User not found");
-    return detail;
+  .handler(async ({ context, data }): Promise<AdminUserDetail> => {
+    const db = context.supabaseAdmin;
+    const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
+    if (error || !authUser.user?.email) throw new Error("User not found");
+    return fetchUserBundle(db, data.userId, authUser.user.email, authUser.user.created_at);
   });
 
 export const adminGetUserTimeline = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => TimelineInput.parse(d))
-  .handler(async ({ data }): Promise<AdminTimelineResult> => {
-    const store = await readUserEvents(data.userId);
-    let events = [...store];
+  .handler(async ({ context, data }): Promise<AdminTimelineResult> => {
+    const db = context.supabaseAdmin;
+    let query = db
+      .from("activity_events")
+      .select("id, event_type, subject, entity_type, entity_id, metadata, duration_ms, created_at", {
+        count: "exact",
+      })
+      .eq("user_id", data.userId)
+      .order("created_at", { ascending: false });
 
     if (data.eventType) {
-      events = events.filter((e) => e.eventType === data.eventType);
+      query = query.eq("event_type", data.eventType as never);
     }
 
-    events.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
-    const total = events.length;
-    const start = (data.page - 1) * data.pageSize;
+    const from = (data.page - 1) * data.pageSize;
+    const to = from + data.pageSize - 1;
+    const { data: rows, count, error } = await query.range(from, to);
+    if (error) {
+      // Table may not exist yet if analytics migration was not applied.
+      console.warn("[admin] activity_events query failed:", error.message);
+      return { events: [], total: 0, page: data.page, pageSize: data.pageSize };
+    }
 
     return {
-      events: events.slice(start, start + data.pageSize),
-      total,
+      events: (rows ?? []).map((row) => ({
+        id: row.id,
+        eventType: row.event_type,
+        subject: row.subject,
+        entityType: row.entity_type,
+        entityId: row.entity_id,
+        metadata: (row.metadata ?? {}) as Record<string, unknown>,
+        durationMs: row.duration_ms,
+        createdAt: row.created_at,
+      })),
+      total: count ?? 0,
       page: data.page,
       pageSize: data.pageSize,
     };
@@ -224,10 +235,19 @@ export const adminGetUserTimeline = createServerFn({ method: "POST" })
 export const adminExportUsersCsv = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => z.object({ userId: z.string().uuid().optional() }).parse(d))
-  .handler(async ({ data, context }): Promise<{ csv: string }> => {
+  .handler(async ({ context, data }): Promise<{ csv: string }> => {
+    const db = context.supabaseAdmin;
+
     if (data.userId) {
-      const detail = await getStoreUserDetail(data.userId);
-      if (!detail) throw new Error("User not found");
+      const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
+      if (error || !authUser.user?.email) throw new Error("User not found");
+      const detail = await fetchUserBundle(
+        db,
+        data.userId,
+        authUser.user.email,
+        authUser.user.created_at,
+      );
+
       const lines = [
         "section,field,value",
         `profile,email,${csvEscape(detail.profile.email)}`,
@@ -235,6 +255,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
         `profile,registered,${detail.profile.registeredAt}`,
         `profile,last_seen,${detail.profile.lastSeenAt ?? ""}`,
         `totals,study_time_seconds,${detail.totals.totalStudyTimeSeconds}`,
+        `totals,tasks_passed,${detail.taskAttempts.filter((t) => t.isPassed).length}`,
         ...detail.taskAttempts.map(
           (t) =>
             `task,${t.createdAt},${csvEscape(`${t.subject}/${t.chapter}/${t.taskKey} ${t.correctCount}/${t.statementCount}`)}`,
@@ -243,10 +264,18 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
       return { csv: lines.join("\n") };
     }
 
-    const resolved = await resolveAdminUserRows(context.supabase);
-    const rows = resolved.rows;
+    const authUsers = await listAllAuthUsers(db);
+    const profilesRes = await db.from("profiles").select("user_id, display_name");
+    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
+
+    const rows = await Promise.all(
+      authUsers.map((u) =>
+        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
+      ),
+    );
+
     const header =
-      "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,practice_sessions,streak,accuracy";
+      "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,streak,accuracy";
     const lines = [header];
     for (const u of rows) {
       lines.push(
@@ -261,7 +290,6 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
           u.tasksAttempted,
           u.mockBestPct ?? "",
           u.mockAttempts,
-          u.practiceSessions,
           u.currentStreak,
           u.averageAccuracy ?? "",
         ].join(","),

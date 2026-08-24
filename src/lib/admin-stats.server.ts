@@ -352,10 +352,15 @@ export async function buildAdminUserRow(
     db.from("mock_attempts").select("points_earned, points_total, status, completed_at, started_at").eq("user_id", userId),
   ]);
 
-  const taskRows = tasksRes.data ?? [];
+  // Ignore missing optional analytics tables (migration not applied yet).
+  const presence = presenceRes.error ? null : presenceRes.data;
+  const taskRows = tasksRes.error ? [] : (tasksRes.data ?? []);
+  const mockData = mocksRes.error ? [] : (mocksRes.data ?? []);
+  const roles = rolesRes.error ? [] : (rolesRes.data ?? []);
+  const enrollments = enrollmentsRes.error ? [] : (enrollmentsRes.data ?? []);
 
   const passed = taskRows.filter((t) => t.is_passed).length;
-  const mockRows = (mocksRes.data ?? []).filter((m) => !m.status || m.status === "submitted");
+  const mockRows = mockData.filter((m) => !m.status || m.status === "submitted");
   let mockBestPct: number | null = null;
   for (const m of mockRows) {
     const score = pct(Number(m.points_earned), Number(m.points_total));
@@ -381,10 +386,10 @@ export async function buildAdminUserRow(
     email,
     displayName: displayName?.trim() || email.split("@")[0] || "User",
     registeredAt,
-    lastSeenAt: presenceRes.data?.last_seen_at ?? null,
-    lastPath: presenceRes.data?.last_path ?? null,
-    tier: highestTier((enrollmentsRes.data ?? []).map((e) => e.tier)),
-    roles: (rolesRes.data ?? []).map((r) => r.role),
+    lastSeenAt: presence?.last_seen_at ?? null,
+    lastPath: presence?.last_path ?? null,
+    tier: highestTier(enrollments.map((e) => e.tier)),
+    roles: roles.map((r) => r.role),
     tasksPassed: passed,
     tasksAttempted: taskRows.length,
     mockBestPct,

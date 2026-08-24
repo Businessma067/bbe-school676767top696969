@@ -2,31 +2,22 @@
 
 Sign in as **georgtyrin@gmail.com** or **info@spray-go.com** → open `/admin`.
 
-Same full access for both: users list, per-user stats, charts, local admin store.
+## Supabase connection (required)
 
-## Why Lovable shows 0 accounts
+Admin reads **all Auth users** through the **service role** client (same as the original panel).
 
-Admin list now loads from **Supabase** (`admin_list_users`). You must run this SQL once in the project:
-
-`supabase/migrations/20260825010000_admin_emails_and_list_users.sql`
-
-Supabase Dashboard → SQL Editor → paste → Run.
-
-Without that function/policies the cloud panel has an empty store and cannot list Auth users.
-
-## Per-user stats
-
-- `/admin` — список аккаунтов: email + личная статистика
-- `/admin/users` — то же, с поиском
-- `/admin/users/{id}` — полная карточка одного человека (Tasks, Mocks, Activity…)
-
-Данные пишутся в `data/admin-store/users/{userId}.json`, когда пользователь заходит и решает задания.
-
-## Storage
+Set in Lovable Cloud secrets / local `.env`:
 
 ```
-data/admin-store/
-  index.json
-  users/
-    {user-id}.json
+SUPABASE_SERVICE_ROLE_KEY=...   # Project Settings → API → service_role
+SUPABASE_URL=https://kntpsdgggolkqnywxedq.supabase.co
+SUPABASE_PUBLISHABLE_KEY=...
 ```
+
+Without `SUPABASE_SERVICE_ROLE_KEY` the panel shows an error instead of an empty list.
+
+## Pages
+
+- `/admin` — accounts + stats
+- `/admin/users` — searchable list
+- `/admin/users/{id}` — per-user detail
