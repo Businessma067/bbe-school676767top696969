@@ -30,10 +30,10 @@ const SUBJECT_PREVIEW: Record<
   }
 > = {
   economics: {
-    flashcard: "Cartel",
+    flashcard: "Inflation",
     matching: [
-      ["Oligopoly", "Few firms"],
-      ["Free rider", "Unpaid use"],
+      ["Cartel", "Fix prices"],
+      ["Monopoly", "One supplier"],
     ],
     tutor: {
       question: "Opportunity cost?",
@@ -42,22 +42,22 @@ const SUBJECT_PREVIEW: Record<
     },
   },
   math: {
-    flashcard: "Vieta",
+    flashcard: "Chain rule",
     matching: [
       ["Discriminant", "b²−4ac"],
-      ["Chain rule", "f'(g)·g'"],
+      ["Power rule", "nxⁿ⁻¹"],
     ],
     tutor: {
-      question: "d/dx xⁿ = ?",
-      options: ["nxⁿ⁻¹", "xⁿ/n"],
+      question: "Vieta: root sum?",
+      options: ["−b/a", "c/a"],
       correct: 0,
     },
   },
   english: {
     flashcard: "Arbitrage",
     matching: [
-      ["Bellwether", "Market sign"],
       ["Bullish", "Upbeat"],
+      ["Bellwether", "Market sign"],
     ],
     tutor: {
       question: "austerity = ?",
@@ -219,8 +219,8 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
         Tap to flip
       </p>
       <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
-        <MiniCard subject="economics" label="Econ" sample="Cartel" />
-        <MiniCard subject="math" label="Math" sample="Vieta" />
+        <MiniCard subject="economics" label="Econ" sample="Inflation" />
+        <MiniCard subject="math" label="Math" sample="Chain rule" />
         <MiniCard subject="english" label="Eng" sample="Arbitrage" />
       </div>
     </div>
