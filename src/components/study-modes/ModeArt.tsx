@@ -36,8 +36,8 @@ const SUBJECT_PREVIEW: Record<
       ["Monopoly", "One supplier"],
     ],
     tutor: {
-      question: "Opportunity cost?",
-      options: ["Next choice", "Profit"],
+      question: "You pick one option — what's lost?",
+      options: ["Next best choice", "Money spent"],
       correct: 0,
     },
   },
@@ -48,8 +48,8 @@ const SUBJECT_PREVIEW: Record<
       ["Power rule", "nxⁿ⁻¹"],
     ],
     tutor: {
-      question: "Vieta: root sum?",
-      options: ["−b/a", "c/a"],
+      question: "If Δ < 0, real roots?",
+      options: ["None", "Two"],
       correct: 0,
     },
   },
@@ -57,11 +57,11 @@ const SUBJECT_PREVIEW: Record<
     flashcard: "Arbitrage",
     matching: [
       ["Bullish", "Upbeat"],
-      ["Bellwether", "Market sign"],
+      ["Bellwether", "Leading sign"],
     ],
     tutor: {
-      question: "austerity = ?",
-      options: ["Tightening", "Loose spend"],
+      question: "Cutting public spending?",
+      options: ["Austerity", "Stimulus"],
       correct: 0,
     },
   },
