@@ -6,6 +6,7 @@ export type NavItem = {
 
 /** Homepage menu — original marketing sections. */
 export const homeNavItems: NavItem[] = [
+  { label: "BBE Entrance exam", href: "/bbe-entrance-exam-guide", isRoute: true },
   { label: "Demo-Practice", href: "/demo-practice", isRoute: true },
   { label: "Full Course", href: "#full-course", isRoute: false },
   { label: "Products", href: "/products", isRoute: true },
@@ -17,6 +18,7 @@ export const homeNavItems: NavItem[] = [
 /** Inner pages — clean page-to-page navigation. */
 export const appNavItems: NavItem[] = [
   { label: "Home", href: "/", isRoute: true },
+  { label: "BBE Entrance exam", href: "/bbe-entrance-exam-guide", isRoute: true },
   { label: "Demo Practice", href: "/demo-practice", isRoute: true },
   { label: "Products", href: "/products", isRoute: true },
   { label: "Mock Exams", href: "/mock-exams", isRoute: true },

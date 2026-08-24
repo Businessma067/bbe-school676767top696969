@@ -24,6 +24,7 @@ import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as BbeEntranceExamGuideRouteImport } from './routes/bbe-entrance-exam-guide'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
@@ -130,6 +131,11 @@ const DemoPracticeRoute = DemoPracticeRouteImport.update({
 const DashboardRoute = DashboardRouteImport.update({
   id: '/dashboard',
   path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeEntranceExamGuideRoute = BbeEntranceExamGuideRouteImport.update({
+  id: '/bbe-entrance-exam-guide',
+  path: '/bbe-entrance-exam-guide',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -305,6 +311,7 @@ export interface FileRoutesByFullPath {
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
+  '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
@@ -354,6 +361,7 @@ export interface FileRoutesByTo {
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
+  '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
   '/dashboard': typeof DashboardRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
@@ -398,6 +406,7 @@ export interface FileRoutesById {
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
+  '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
@@ -449,6 +458,7 @@ export interface FileRouteTypes {
     | '/account'
     | '/admin'
     | '/auth'
+    | '/bbe-entrance-exam-guide'
     | '/dashboard'
     | '/demo-practice'
     | '/flashcards'
@@ -498,6 +508,7 @@ export interface FileRouteTypes {
     | '/account'
     | '/admin'
     | '/auth'
+    | '/bbe-entrance-exam-guide'
     | '/dashboard'
     | '/forgot-password'
     | '/important-features'
@@ -541,6 +552,7 @@ export interface FileRouteTypes {
     | '/account'
     | '/admin'
     | '/auth'
+    | '/bbe-entrance-exam-guide'
     | '/dashboard'
     | '/demo-practice'
     | '/flashcards'
@@ -591,6 +603,7 @@ export interface RootRouteChildren {
   AccountRoute: typeof AccountRoute
   AdminRoute: typeof AdminRouteWithChildren
   AuthRoute: typeof AuthRoute
+  BbeEntranceExamGuideRoute: typeof BbeEntranceExamGuideRoute
   DashboardRoute: typeof DashboardRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
@@ -715,6 +728,13 @@ declare module '@tanstack/react-router' {
       path: '/dashboard'
       fullPath: '/dashboard'
       preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-entrance-exam-guide': {
+      id: '/bbe-entrance-exam-guide'
+      path: '/bbe-entrance-exam-guide'
+      fullPath: '/bbe-entrance-exam-guide'
+      preLoaderRoute: typeof BbeEntranceExamGuideRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -1069,6 +1089,7 @@ const rootRouteChildren: RootRouteChildren = {
   AccountRoute: AccountRoute,
   AdminRoute: AdminRouteWithChildren,
   AuthRoute: AuthRoute,
+  BbeEntranceExamGuideRoute: BbeEntranceExamGuideRoute,
   DashboardRoute: DashboardRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,
