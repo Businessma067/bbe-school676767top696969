@@ -4,6 +4,7 @@ import { getExamById } from "@/lib/mock-exams";
 
 /** Known URL segment → label. Extend when adding new sections. */
 const SEGMENT_LABELS: Record<string, string> = {
+  "bbe-entrance-exam-guide": "BBE Entrance Exam",
   "demo-practice": "Demo Practice",
   products: "Products",
   "custom-mock-builder": "Custom Mock Builder",
