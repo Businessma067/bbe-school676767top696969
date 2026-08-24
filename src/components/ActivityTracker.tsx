@@ -2,7 +2,6 @@ import { useRouterState } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { runOnceOnLogin, startActivityHeartbeat, trackPageView } from "@/lib/activity-tracker";
-import { syncLocalProgressToServer } from "@/lib/sync-local-progress";
 
 /** Global presence + page-view tracking for logged-in users. */
 export function ActivityTracker() {
@@ -20,14 +19,14 @@ export function ActivityTracker() {
       const { data } = await supabase.auth.getSession();
       if (!data.session) return;
       stopHeartbeat = startActivityHeartbeat(() => window.location.pathname);
-      await runOnceOnLogin(syncLocalProgressToServer);
+      await runOnceOnLogin();
     };
 
     void setup();
 
     const { data: sub } = supabase.auth.onAuthStateChange((event) => {
       if (event === "SIGNED_IN") {
-        void runOnceOnLogin(syncLocalProgressToServer);
+        void runOnceOnLogin();
         stopHeartbeat?.();
         stopHeartbeat = startActivityHeartbeat(() => window.location.pathname);
       }

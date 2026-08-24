@@ -2,11 +2,13 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/require-admin.server";
 import {
-  buildAdminUserRow,
-  fetchUserBundle,
+  getStoreCohortStats,
+  getStoreUserDetail,
+  getStoreUserRows,
   isAtRisk,
-  pct,
-} from "@/lib/admin-stats.server";
+  readStore,
+} from "@/lib/admin-store.server";
+import { trySyncAllFromSupabase } from "@/lib/admin-sync.server";
 import type {
   AdminCohortStats,
   AdminListUsersResult,
@@ -35,107 +37,44 @@ const TimelineInput = z.object({
   eventType: z.string().optional(),
 });
 
-async function listAllAuthUsers(db: Awaited<typeof import("@/integrations/supabase/client.server")>["supabaseAdmin"]) {
-  const users: { id: string; email: string; created_at: string }[] = [];
-  let page = 1;
-  const perPage = 200;
-  for (;;) {
-    const { data, error } = await db.auth.admin.listUsers({ page, perPage });
-    if (error) throw error;
-    for (const u of data.users) {
-      if (u.email) {
-        users.push({ id: u.id, email: u.email, created_at: u.created_at });
-      }
-    }
-    if (data.users.length < perPage) break;
-    page += 1;
-    if (page > 50) break;
-  }
-  return users;
-}
-
 export const adminGetCohortStats = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
-  .handler(async ({ context }): Promise<AdminCohortStats> => {
-    const db = context.supabaseAdmin;
-    const authUsers = await listAllAuthUsers(db);
-
+  .handler(async (): Promise<AdminCohortStats> => {
+    await trySyncAllFromSupabase();
+    const cohort = await getStoreCohortStats();
     const now = Date.now();
     const day = 86_400_000;
-    const presenceRes = await db.from("user_presence").select("user_id, last_seen_at");
-    const presenceMap = new Map(
-      (presenceRes.data ?? []).map((p) => [p.user_id, p.last_seen_at]),
-    );
 
     let dau = 0;
     let wau = 0;
     let mau = 0;
-    for (const u of authUsers) {
-      const seen = presenceMap.get(u.id);
-      if (!seen) continue;
-      const t = new Date(seen).getTime();
+    for (const u of cohort.users) {
+      if (!u.lastSeenAt) continue;
+      const t = new Date(u.lastSeenAt).getTime();
       if (now - t <= day) dau += 1;
       if (now - t <= 7 * day) wau += 1;
       if (now - t <= 30 * day) mau += 1;
     }
 
-    const enrollRes = await db.from("enrollments").select("tier");
-    const enrollmentsByTier: Record<string, number> = {};
-    for (const e of enrollRes.data ?? []) {
-      enrollmentsByTier[e.tier] = (enrollmentsByTier[e.tier] ?? 0) + 1;
-    }
-
-    const taskCountRes = await db.from("task_attempts").select("id", { count: "exact", head: true });
-    const mockRes = await db
-      .from("mock_attempts")
-      .select("points_earned, points_total, status")
-      .or("status.eq.submitted,status.is.null");
-
-    let scoreSum = 0;
-    let scoreCount = 0;
-    for (const m of mockRes.data ?? []) {
-      const total = Number(m.points_total);
-      if (total <= 0) continue;
-      scoreSum += (Number(m.points_earned) / total) * 100;
-      scoreCount += 1;
-    }
-
-    const profilesRes = await db.from("profiles").select("user_id, display_name");
-    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
-
-    const userRows = await Promise.all(
-      authUsers.map((u) =>
-        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
-      ),
-    );
-
     return {
-      totalUsers: authUsers.length,
+      totalUsers: cohort.users.length,
       dau,
       wau,
       mau,
-      enrollmentsByTier,
-      totalTaskAttempts: taskCountRes.count ?? 0,
-      totalMockSubmissions: mockRes.data?.length ?? 0,
-      averageMockScorePct: scoreCount > 0 ? Math.round((scoreSum / scoreCount) * 10) / 10 : null,
-      atRiskUsers: userRows.filter(isAtRisk).slice(0, 20),
+      enrollmentsByTier: cohort.enrollmentsByTier,
+      totalTaskAttempts: cohort.totalTaskAttempts,
+      totalMockSubmissions: cohort.totalMockSubmissions,
+      averageMockScorePct: cohort.averageMockScorePct,
+      atRiskUsers: cohort.users.filter(isAtRisk).slice(0, 20),
     };
   });
 
 export const adminListUsers = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => ListUsersInput.parse(d))
-  .handler(async ({ context, data }): Promise<AdminListUsersResult> => {
-    const db = context.supabaseAdmin;
-    const authUsers = await listAllAuthUsers(db);
-    const profilesRes = await db.from("profiles").select("user_id, display_name");
-    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
-
-    let rows = await Promise.all(
-      authUsers.map((u) =>
-        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
-      ),
-    );
+  .handler(async ({ data }): Promise<AdminListUsersResult> => {
+    await trySyncAllFromSupabase();
+    let rows = await getStoreUserRows();
 
     const q = data.search?.trim().toLowerCase();
     if (q) {
@@ -171,60 +110,44 @@ export const adminListUsers = createServerFn({ method: "POST" })
 
     const total = rows.length;
     const start = (data.page - 1) * data.pageSize;
-    const users = rows.slice(start, start + data.pageSize);
-
-    return { users, total, page: data.page, pageSize: data.pageSize };
+    return {
+      users: rows.slice(start, start + data.pageSize),
+      total,
+      page: data.page,
+      pageSize: data.pageSize,
+    };
   });
 
 export const adminGetUserDetail = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => UserIdInput.parse(d))
-  .handler(async ({ context, data }): Promise<AdminUserDetail> => {
-    const db = context.supabaseAdmin;
-    const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
-    if (error || !authUser.user?.email) throw new Error("User not found");
-    return fetchUserBundle(
-      db,
-      data.userId,
-      authUser.user.email,
-      authUser.user.created_at,
-    );
+  .handler(async ({ data }): Promise<AdminUserDetail> => {
+    await trySyncAllFromSupabase();
+    const detail = await getStoreUserDetail(data.userId);
+    if (!detail) throw new Error("User not found in admin store");
+    return detail;
   });
 
 export const adminGetUserTimeline = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => TimelineInput.parse(d))
-  .handler(async ({ context, data }): Promise<AdminTimelineResult> => {
-    const db = context.supabaseAdmin;
-    let query = db
-      .from("activity_events")
-      .select("id, event_type, subject, entity_type, entity_id, metadata, duration_ms, created_at", {
-        count: "exact",
-      })
-      .eq("user_id", data.userId)
-      .order("created_at", { ascending: false });
+  .handler(async ({ data }): Promise<AdminTimelineResult> => {
+    const store = await readStore();
+    let events = store.events
+      .filter((e) => e.userId === data.userId)
+      .map(({ userId: _uid, ...rest }) => rest);
 
     if (data.eventType) {
-      query = query.eq("event_type", data.eventType as never);
+      events = events.filter((e) => e.eventType === data.eventType);
     }
 
-    const from = (data.page - 1) * data.pageSize;
-    const to = from + data.pageSize - 1;
-    const { data: rows, count, error } = await query.range(from, to);
-    if (error) throw error;
+    events.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+    const total = events.length;
+    const start = (data.page - 1) * data.pageSize;
 
     return {
-      events: (rows ?? []).map((row) => ({
-        id: row.id,
-        eventType: row.event_type,
-        subject: row.subject,
-        entityType: row.entity_type,
-        entityId: row.entity_id,
-        metadata: (row.metadata ?? {}) as Record<string, unknown>,
-        durationMs: row.duration_ms,
-        createdAt: row.created_at,
-      })),
-      total: count ?? 0,
+      events: events.slice(start, start + data.pageSize),
+      total,
       page: data.page,
       pageSize: data.pageSize,
     };
@@ -233,19 +156,12 @@ export const adminGetUserTimeline = createServerFn({ method: "POST" })
 export const adminExportUsersCsv = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => z.object({ userId: z.string().uuid().optional() }).parse(d))
-  .handler(async ({ context, data }): Promise<{ csv: string }> => {
-    const db = context.supabaseAdmin;
+  .handler(async ({ data }): Promise<{ csv: string }> => {
+    await trySyncAllFromSupabase();
 
     if (data.userId) {
-      const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
-      if (error || !authUser.user?.email) throw new Error("User not found");
-      const detail = await fetchUserBundle(
-        db,
-        data.userId,
-        authUser.user.email,
-        authUser.user.created_at,
-      );
-
+      const detail = await getStoreUserDetail(data.userId);
+      if (!detail) throw new Error("User not found");
       const lines = [
         "section,field,value",
         `profile,email,${csvEscape(detail.profile.email)}`,
@@ -253,7 +169,6 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
         `profile,registered,${detail.profile.registeredAt}`,
         `profile,last_seen,${detail.profile.lastSeenAt ?? ""}`,
         `totals,study_time_seconds,${detail.totals.totalStudyTimeSeconds}`,
-        `totals,tasks_passed,${detail.taskAttempts.filter((t) => t.isPassed).length}`,
         ...detail.taskAttempts.map(
           (t) =>
             `task,${t.createdAt},${csvEscape(`${t.subject}/${t.chapter}/${t.taskKey} ${t.correctCount}/${t.statementCount}`)}`,
@@ -262,16 +177,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
       return { csv: lines.join("\n") };
     }
 
-    const authUsers = await listAllAuthUsers(db);
-    const profilesRes = await db.from("profiles").select("user_id, display_name");
-    const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
-
-    const rows = await Promise.all(
-      authUsers.map((u) =>
-        buildAdminUserRow(db, u.id, u.email, u.created_at, profileMap.get(u.id) ?? null),
-      ),
-    );
-
+    const rows = await getStoreUserRows();
     const header =
       "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,streak,accuracy";
     const lines = [header];

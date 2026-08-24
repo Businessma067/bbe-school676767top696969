@@ -11,12 +11,5 @@ export const requireAdmin = createMiddleware({ type: "function" })
       throw new Error("Forbidden");
     }
 
-    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-
-    return next({
-      context: {
-        ...context,
-        supabaseAdmin,
-      },
-    });
+    return next({ context });
   });

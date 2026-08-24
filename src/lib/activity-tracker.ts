@@ -1,29 +1,40 @@
-import { supabase } from "@/integrations/supabase/client";
-import type { Database } from "@/integrations/supabase/types";
+import {
+  mirrorFlashcardLocal,
+  mirrorTaskAttemptLocal,
+  mirrorTheoryLocal,
+  syncMyDataToAdminStore,
+  trackEventLocal,
+  trackPresenceLocal,
+} from "@/lib/admin-track.functions";
 
-export type ActivityEventType = Database["public"]["Enums"]["activity_event_type"];
+export type ActivityEventType =
+  | "page_view"
+  | "task_start"
+  | "task_submit"
+  | "mock_start"
+  | "mock_submit"
+  | "mock_abandon"
+  | "practice_start"
+  | "practice_complete"
+  | "theory_open"
+  | "theory_complete"
+  | "flashcard_rate"
+  | "login";
 
 let heartbeatTimer: ReturnType<typeof setInterval> | null = null;
 let lastPath = "";
 let syncDone = false;
 
-async function currentUserId(): Promise<string | null> {
-  const { data } = await supabase.auth.getSession();
-  return data.session?.user?.id ?? null;
+function fire(promise: Promise<unknown>): void {
+  void promise.catch((err) => console.error("[activity-tracker]", err));
 }
 
 export async function trackPresence(path: string): Promise<void> {
-  const userId = await currentUserId();
-  if (!userId || typeof window === "undefined") return;
-
-  await supabase.from("user_presence").upsert(
-    {
-      user_id: userId,
-      last_seen_at: new Date().toISOString(),
-      last_path: path,
-      user_agent: navigator.userAgent.slice(0, 500),
-    },
-    { onConflict: "user_id" },
+  if (typeof window === "undefined") return;
+  fire(
+    trackPresenceLocal({
+      data: { path, userAgent: navigator.userAgent.slice(0, 500) },
+    }),
   );
 }
 
@@ -35,18 +46,7 @@ export async function trackEvent(input: {
   metadata?: Record<string, unknown>;
   durationMs?: number;
 }): Promise<void> {
-  const userId = await currentUserId();
-  if (!userId) return;
-
-  await supabase.from("activity_events").insert({
-    user_id: userId,
-    event_type: input.eventType,
-    subject: input.subject ?? null,
-    entity_type: input.entityType ?? null,
-    entity_id: input.entityId ?? null,
-    metadata: (input.metadata ?? {}) as Database["public"]["Tables"]["activity_events"]["Insert"]["metadata"],
-    duration_ms: input.durationMs ?? null,
-  });
+  fire(trackEventLocal({ data: input }));
 }
 
 export async function trackPageView(path: string): Promise<void> {
@@ -55,10 +55,8 @@ export async function trackPageView(path: string): Promise<void> {
     return;
   }
   lastPath = path;
-  await Promise.all([
-    trackPresence(path),
-    trackEvent({ eventType: "page_view", entityType: "route", entityId: path }),
-  ]);
+  await trackPresence(path);
+  void trackEvent({ eventType: "page_view", entityType: "route", entityId: path });
 }
 
 export async function upsertFlashcardProgress(
@@ -66,19 +64,7 @@ export async function upsertFlashcardProgress(
   cardId: string,
   knowledge: "known" | "unknown",
 ): Promise<void> {
-  const userId = await currentUserId();
-  if (!userId) return;
-
-  await supabase.from("flashcard_progress").upsert(
-    {
-      user_id: userId,
-      subject_id: subjectId,
-      card_id: cardId,
-      knowledge,
-    },
-    { onConflict: "user_id,subject_id,card_id" },
-  );
-
+  fire(mirrorFlashcardLocal({ data: { subjectId, cardId, knowledge } }));
   void trackEvent({
     eventType: "flashcard_rate",
     subject: subjectId,
@@ -96,21 +82,7 @@ export async function upsertTheoryProgress(input: {
   scrollPct: number;
   completed?: boolean;
 }): Promise<void> {
-  const userId = await currentUserId();
-  if (!userId) return;
-
-  await supabase.from("theory_progress").upsert(
-    {
-      user_id: userId,
-      subject: input.subject,
-      chapter_id: input.chapterId,
-      section_id: input.sectionId ?? "",
-      time_seconds: input.timeSeconds,
-      scroll_pct: Math.min(100, Math.max(0, Math.round(input.scrollPct))),
-      completed: input.completed ?? false,
-    },
-    { onConflict: "user_id,subject,chapter_id,section_id" },
-  );
+  fire(mirrorTheoryLocal({ data: input }));
 }
 
 export function startActivityHeartbeat(getPath: () => string): () => void {
@@ -131,17 +103,45 @@ export function startActivityHeartbeat(getPath: () => string): () => void {
   };
 }
 
-export async function runOnceOnLogin(syncFn: () => Promise<void>): Promise<void> {
+export async function runOnceOnLogin(): Promise<void> {
   if (syncDone) return;
-  const userId = await currentUserId();
-  if (!userId) return;
-  const key = `bbe.activity.sync.${userId}`;
+  if (typeof window === "undefined") return;
+
+  const key = "bbe.activity.sync.v2";
   if (sessionStorage.getItem(key)) {
     syncDone = true;
     return;
   }
-  await syncFn();
+
+  try {
+    await syncMyDataToAdminStore();
+  } catch (err) {
+    console.error("[activity-tracker] sync", err);
+  }
+
   sessionStorage.setItem(key, "1");
   syncDone = true;
   void trackEvent({ eventType: "login" });
+}
+
+export async function mirrorTaskAttempt(input: {
+  subject: string;
+  chapter: string;
+  taskKey: string;
+  taskTitle?: string | null;
+  correctCount: number;
+  statementCount: number;
+  durationSeconds?: number | null;
+  statementResults?: { statement_index: number; correct: boolean }[] | null;
+  source?: string;
+}): Promise<void> {
+  fire(
+    mirrorTaskAttemptLocal({
+      data: {
+        ...input,
+        taskTitle: input.taskTitle ?? null,
+        isPassed: input.correctCount === input.statementCount,
+      },
+    }),
+  );
 }

@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import { mirrorTaskAttempt } from "@/lib/activity-tracker";
 import type { MockExamSession } from "@/lib/mock-exam-session";
 
 /* ----------------------------- types ----------------------------- */
@@ -157,6 +158,19 @@ export async function recordTaskAttempt(input: {
     source: input.source ?? "web",
   });
   if (error) console.error("recordTaskAttempt", error);
+  else {
+    void mirrorTaskAttempt({
+      subject: input.subject,
+      chapter: input.chapter,
+      taskKey: input.taskKey,
+      taskTitle: input.taskTitle ?? null,
+      correctCount: input.correctCount,
+      statementCount: input.statementCount,
+      durationSeconds: input.durationSeconds ?? null,
+      statementResults: input.statementResults ?? null,
+      source: input.source ?? "web",
+    });
+  }
 }
 
 export async function fetchTaskAttempts(): Promise<TaskAttempt[]> {
