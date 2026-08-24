@@ -24,7 +24,13 @@ import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as BbeMathematicsRouteImport } from './routes/bbe-mathematics'
+import { Route as BbeExamScoringRouteImport } from './routes/bbe-exam-scoring'
+import { Route as BbeExamPreparationRouteImport } from './routes/bbe-exam-preparation'
 import { Route as BbeEntranceExamGuideRouteImport } from './routes/bbe-entrance-exam-guide'
+import { Route as BbeEntranceExamRouteImport } from './routes/bbe-entrance-exam'
+import { Route as BbeEconomicsEnglishRouteImport } from './routes/bbe-economics-english'
+import { Route as BbeAdmissionRouteImport } from './routes/bbe-admission'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
@@ -133,9 +139,39 @@ const DashboardRoute = DashboardRouteImport.update({
   path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BbeMathematicsRoute = BbeMathematicsRouteImport.update({
+  id: '/bbe-mathematics',
+  path: '/bbe-mathematics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeExamScoringRoute = BbeExamScoringRouteImport.update({
+  id: '/bbe-exam-scoring',
+  path: '/bbe-exam-scoring',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeExamPreparationRoute = BbeExamPreparationRouteImport.update({
+  id: '/bbe-exam-preparation',
+  path: '/bbe-exam-preparation',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BbeEntranceExamGuideRoute = BbeEntranceExamGuideRouteImport.update({
   id: '/bbe-entrance-exam-guide',
   path: '/bbe-entrance-exam-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeEntranceExamRoute = BbeEntranceExamRouteImport.update({
+  id: '/bbe-entrance-exam',
+  path: '/bbe-entrance-exam',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeEconomicsEnglishRoute = BbeEconomicsEnglishRouteImport.update({
+  id: '/bbe-economics-english',
+  path: '/bbe-economics-english',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeAdmissionRoute = BbeAdmissionRouteImport.update({
+  id: '/bbe-admission',
+  path: '/bbe-admission',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -311,7 +347,13 @@ export interface FileRoutesByFullPath {
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
+  '/bbe-admission': typeof BbeAdmissionRoute
+  '/bbe-economics-english': typeof BbeEconomicsEnglishRoute
+  '/bbe-entrance-exam': typeof BbeEntranceExamRoute
   '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
+  '/bbe-exam-preparation': typeof BbeExamPreparationRoute
+  '/bbe-exam-scoring': typeof BbeExamScoringRoute
+  '/bbe-mathematics': typeof BbeMathematicsRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
@@ -361,7 +403,13 @@ export interface FileRoutesByTo {
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
+  '/bbe-admission': typeof BbeAdmissionRoute
+  '/bbe-economics-english': typeof BbeEconomicsEnglishRoute
+  '/bbe-entrance-exam': typeof BbeEntranceExamRoute
   '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
+  '/bbe-exam-preparation': typeof BbeExamPreparationRoute
+  '/bbe-exam-scoring': typeof BbeExamScoringRoute
+  '/bbe-mathematics': typeof BbeMathematicsRoute
   '/dashboard': typeof DashboardRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
@@ -406,7 +454,13 @@ export interface FileRoutesById {
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
+  '/bbe-admission': typeof BbeAdmissionRoute
+  '/bbe-economics-english': typeof BbeEconomicsEnglishRoute
+  '/bbe-entrance-exam': typeof BbeEntranceExamRoute
   '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
+  '/bbe-exam-preparation': typeof BbeExamPreparationRoute
+  '/bbe-exam-scoring': typeof BbeExamScoringRoute
+  '/bbe-mathematics': typeof BbeMathematicsRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
@@ -458,7 +512,13 @@ export interface FileRouteTypes {
     | '/account'
     | '/admin'
     | '/auth'
+    | '/bbe-admission'
+    | '/bbe-economics-english'
+    | '/bbe-entrance-exam'
     | '/bbe-entrance-exam-guide'
+    | '/bbe-exam-preparation'
+    | '/bbe-exam-scoring'
+    | '/bbe-mathematics'
     | '/dashboard'
     | '/demo-practice'
     | '/flashcards'
@@ -508,7 +568,13 @@ export interface FileRouteTypes {
     | '/account'
     | '/admin'
     | '/auth'
+    | '/bbe-admission'
+    | '/bbe-economics-english'
+    | '/bbe-entrance-exam'
     | '/bbe-entrance-exam-guide'
+    | '/bbe-exam-preparation'
+    | '/bbe-exam-scoring'
+    | '/bbe-mathematics'
     | '/dashboard'
     | '/forgot-password'
     | '/important-features'
@@ -552,7 +618,13 @@ export interface FileRouteTypes {
     | '/account'
     | '/admin'
     | '/auth'
+    | '/bbe-admission'
+    | '/bbe-economics-english'
+    | '/bbe-entrance-exam'
     | '/bbe-entrance-exam-guide'
+    | '/bbe-exam-preparation'
+    | '/bbe-exam-scoring'
+    | '/bbe-mathematics'
     | '/dashboard'
     | '/demo-practice'
     | '/flashcards'
@@ -603,7 +675,13 @@ export interface RootRouteChildren {
   AccountRoute: typeof AccountRoute
   AdminRoute: typeof AdminRouteWithChildren
   AuthRoute: typeof AuthRoute
+  BbeAdmissionRoute: typeof BbeAdmissionRoute
+  BbeEconomicsEnglishRoute: typeof BbeEconomicsEnglishRoute
+  BbeEntranceExamRoute: typeof BbeEntranceExamRoute
   BbeEntranceExamGuideRoute: typeof BbeEntranceExamGuideRoute
+  BbeExamPreparationRoute: typeof BbeExamPreparationRoute
+  BbeExamScoringRoute: typeof BbeExamScoringRoute
+  BbeMathematicsRoute: typeof BbeMathematicsRoute
   DashboardRoute: typeof DashboardRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
@@ -730,11 +808,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bbe-mathematics': {
+      id: '/bbe-mathematics'
+      path: '/bbe-mathematics'
+      fullPath: '/bbe-mathematics'
+      preLoaderRoute: typeof BbeMathematicsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-exam-scoring': {
+      id: '/bbe-exam-scoring'
+      path: '/bbe-exam-scoring'
+      fullPath: '/bbe-exam-scoring'
+      preLoaderRoute: typeof BbeExamScoringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-exam-preparation': {
+      id: '/bbe-exam-preparation'
+      path: '/bbe-exam-preparation'
+      fullPath: '/bbe-exam-preparation'
+      preLoaderRoute: typeof BbeExamPreparationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bbe-entrance-exam-guide': {
       id: '/bbe-entrance-exam-guide'
       path: '/bbe-entrance-exam-guide'
       fullPath: '/bbe-entrance-exam-guide'
       preLoaderRoute: typeof BbeEntranceExamGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-entrance-exam': {
+      id: '/bbe-entrance-exam'
+      path: '/bbe-entrance-exam'
+      fullPath: '/bbe-entrance-exam'
+      preLoaderRoute: typeof BbeEntranceExamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-economics-english': {
+      id: '/bbe-economics-english'
+      path: '/bbe-economics-english'
+      fullPath: '/bbe-economics-english'
+      preLoaderRoute: typeof BbeEconomicsEnglishRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-admission': {
+      id: '/bbe-admission'
+      path: '/bbe-admission'
+      fullPath: '/bbe-admission'
+      preLoaderRoute: typeof BbeAdmissionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -1089,7 +1209,13 @@ const rootRouteChildren: RootRouteChildren = {
   AccountRoute: AccountRoute,
   AdminRoute: AdminRouteWithChildren,
   AuthRoute: AuthRoute,
+  BbeAdmissionRoute: BbeAdmissionRoute,
+  BbeEconomicsEnglishRoute: BbeEconomicsEnglishRoute,
+  BbeEntranceExamRoute: BbeEntranceExamRoute,
   BbeEntranceExamGuideRoute: BbeEntranceExamGuideRoute,
+  BbeExamPreparationRoute: BbeExamPreparationRoute,
+  BbeExamScoringRoute: BbeExamScoringRoute,
+  BbeMathematicsRoute: BbeMathematicsRoute,
   DashboardRoute: DashboardRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,

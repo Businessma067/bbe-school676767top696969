@@ -1,10 +1,21 @@
 import { isCustomExamId } from "@/config/custom-mock-builder";
+import {
+  BBE_EXAM_BREADCRUMB_LABELS,
+  BBE_EXAM_HUB_PATH,
+  BBE_EXAM_HUB_SEGMENTS,
+} from "@/config/bbe-exam-hub";
 import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
 import { getExamById } from "@/lib/mock-exams";
 
 /** Known URL segment → label. Extend when adding new sections. */
 const SEGMENT_LABELS: Record<string, string> = {
+  "bbe-entrance-exam": "Overview",
   "bbe-entrance-exam-guide": "BBE Entrance Exam",
+  "bbe-exam-scoring": "Scoring",
+  "bbe-mathematics": "Mathematics",
+  "bbe-economics-english": "Economics & English",
+  "bbe-exam-preparation": "How to Prepare",
+  "bbe-admission": "Admission",
   "demo-practice": "Demo Practice",
   products: "Products",
   "custom-mock-builder": "Custom Mock Builder",
@@ -137,6 +148,17 @@ export function buildBreadcrumbs(
   }
 
   const segments = path.split("/").filter(Boolean);
+
+  // Flat BBE Exam hub URLs → Home / BBE Exam / Page
+  if (segments.length === 1 && BBE_EXAM_HUB_SEGMENTS.has(segments[0]!)) {
+    const seg = segments[0]!;
+    const pageLabel = BBE_EXAM_BREADCRUMB_LABELS[seg] ?? labelForSegment(seg, ctx);
+    return withLastFlags([
+      { label: "BBE Exam", to: BBE_EXAM_HUB_PATH },
+      { label: pageLabel, to: null },
+    ]);
+  }
+
   return withLastFlags(
     segments.map((seg, i) => ({
       label: labelForSegment(seg, ctx),
