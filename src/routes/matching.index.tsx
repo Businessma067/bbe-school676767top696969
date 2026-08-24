@@ -61,15 +61,7 @@ function MatchingIndexPage() {
               const n = countCards(s.sections);
               const cardInner = (
                 <>
-                  <div className="relative overflow-hidden">
-                    <MatchingSubjectArt subject={s.id} accent={s.accent} />
-                    <span
-                      className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
-                      style={{ color: s.accent }}
-                    >
-                      {s.tag}
-                    </span>
-                  </div>
+                  <MatchingSubjectArt subject={s.id} accent={s.accent} tag={s.tag} />
                   <div className="flex flex-1 flex-col p-6">
                     <h2 className="font-display text-xl font-semibold text-foreground">
                       <span

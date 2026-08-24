@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { FlashcardSubjectId } from "@/data/flashcards";
 
 const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
@@ -11,6 +12,36 @@ const SUBJECT_LABEL: Record<FlashcardSubjectId, string> = {
   math: "Math",
   english: "English",
 };
+
+/** Shared subject-picker frame: fixed aspect, reserved tag strip, centered art. */
+function SubjectPreviewShell({
+  subject,
+  tag,
+  accent,
+  children,
+}: {
+  subject: FlashcardSubjectId;
+  tag: string;
+  accent: string;
+  children: ReactNode;
+}) {
+  return (
+    <div
+      className="relative aspect-video w-full overflow-hidden"
+      style={{ backgroundColor: SUBJECT_BG[subject] }}
+    >
+      <div className="absolute inset-x-0 top-0 bottom-11 flex items-center justify-center px-5 pt-1">
+        {children}
+      </div>
+      <span
+        className="pointer-events-none absolute bottom-3 left-4 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm ring-1 ring-foreground/10"
+        style={{ color: accent }}
+      >
+        {tag}
+      </span>
+    </div>
+  );
+}
 
 function SubjectGlyph({
   subject,
@@ -125,34 +156,25 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
 export function FlashcardsSubjectArt({
   subject,
   accent,
+  tag,
 }: {
   subject: FlashcardSubjectId;
   accent: string;
+  tag: string;
 }) {
   return (
-    <div
-      className="relative flex aspect-video w-full items-center justify-center px-5 py-4"
-      style={{ backgroundColor: SUBJECT_BG[subject] }}
-    >
-      <div className="flex h-[78%] max-h-40 w-[42%] max-w-[9.5rem] flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-white">
-        <div className="flex flex-col items-center px-3 text-center">
-          <SubjectGlyph
-            subject={subject}
-            className="h-10 w-10 text-foreground"
-          />
-          <p className="mt-2 font-display text-sm font-bold text-foreground">
-            {SUBJECT_LABEL[subject]}
-          </p>
-          <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Flashcards
-          </p>
-          <span
-            className="mt-2 h-1 w-8 rounded-full"
-            style={{ backgroundColor: accent }}
-          />
-        </div>
+    <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
+      <div className="flex h-[8.5rem] w-[6.75rem] flex-col items-center justify-center gap-2 rounded-2xl border-[1.5px] border-foreground/35 bg-white px-3 py-4 sm:h-[9rem] sm:w-[7.25rem]">
+        <SubjectGlyph subject={subject} className="h-9 w-9 shrink-0 text-foreground" />
+        <p className="font-display text-sm font-bold leading-tight text-foreground">
+          {SUBJECT_LABEL[subject]}
+        </p>
+        <span
+          className="h-1 w-8 shrink-0 rounded-full"
+          style={{ backgroundColor: accent }}
+        />
       </div>
-    </div>
+    </SubjectPreviewShell>
   );
 }
 
@@ -166,20 +188,20 @@ function MatchingPairs({
   accent: string;
 }) {
   return (
-    <div className="flex w-full flex-col gap-1.5">
+    <div className="flex w-full max-w-[17rem] flex-col gap-1.5">
       {pairs.map(([left, right]) => (
-        <div key={left} className="flex items-center gap-2">
-          <span className="min-w-0 flex-1 truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[11px] font-semibold text-foreground sm:text-xs">
+        <div key={left} className="grid grid-cols-[1fr_auto_1fr] items-center gap-1.5">
+          <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[10px] font-semibold text-foreground sm:text-[11px]">
             {left}
           </span>
           <span
-            className="shrink-0 text-sm font-bold leading-none"
+            className="text-center text-xs font-bold leading-none"
             style={{ color: accent }}
             aria-hidden
           >
             →
           </span>
-          <span className="min-w-0 flex-1 truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[11px] font-semibold text-foreground sm:text-xs">
+          <span className="truncate rounded-md border-[1.5px] border-foreground/30 bg-white px-2 py-1.5 text-center text-[10px] font-semibold text-foreground sm:text-[11px]">
             {right}
           </span>
         </div>
@@ -199,11 +221,11 @@ export function MatchingModeArt({
   return (
     <div
       className={
-        "flex h-full w-full flex-col justify-center gap-1.5 bg-[#f7ebdc] px-4 py-3 " +
+        "flex h-full w-full flex-col items-center justify-center gap-2 bg-[#f7ebdc] px-4 py-3 " +
         className
       }
     >
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-caramel-deep">
+      <p className="text-[10px] font-semibold uppercase leading-none tracking-widest text-caramel-deep">
         Concept ↔ Meaning
       </p>
       <MatchingPairs
@@ -218,7 +240,16 @@ export function MatchingModeArt({
   );
 }
 
-function TutorRobot({ accent }: { accent: string }) {
+function TutorRobot({
+  accent,
+  compact = false,
+}: {
+  accent: string;
+  compact?: boolean;
+}) {
+  const head = compact ? "h-10 w-10" : "h-12 w-12";
+  const body = compact ? "h-8 w-9" : "h-9 w-10";
+
   return (
     <div className="flex shrink-0 flex-col items-center" aria-hidden>
       <span
@@ -226,14 +257,24 @@ function TutorRobot({ accent }: { accent: string }) {
         style={{ backgroundColor: accent }}
       />
       <span className="mb-0.5 h-2 w-px bg-foreground/80" />
-      <div className="flex h-12 w-12 flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white">
+      <div
+        className={
+          "flex flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-white " +
+          head
+        }
+      >
         <div className="flex gap-1.5">
           <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
           <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
         </div>
-        <span className="mt-1.5 block h-0 w-3 border-b-2 border-foreground" />
+        <span className="mt-1 block h-0 w-3 border-b-2 border-foreground" />
       </div>
-      <div className="mt-1 flex h-9 w-10 items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white">
+      <div
+        className={
+          "mt-1 flex items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-white " +
+          body
+        }
+      >
         <span
           className="h-2.5 w-2.5 rounded-full"
           style={{ backgroundColor: accent }}
@@ -254,12 +295,12 @@ export function TutorModeArt({
   return (
     <div
       className={
-        "flex h-full w-full items-center gap-3 bg-[#e8f0ec] px-4 py-3 " +
+        "flex h-full w-full items-center justify-center gap-3 bg-[#e8f0ec] px-4 py-3 " +
         className
       }
     >
       <TutorRobot accent={accent} />
-      <div className="relative min-w-0 flex-1 rounded-xl border-[1.5px] border-foreground/30 bg-white px-3 py-2">
+      <div className="relative min-w-0 max-w-[11rem] flex-1 rounded-xl border-[1.5px] border-foreground/30 bg-white px-3 py-2">
         <span
           className="absolute -left-1.5 top-5 h-3 w-3 rotate-45 border-b border-l border-foreground/30 bg-white"
           aria-hidden
@@ -269,9 +310,6 @@ export function TutorModeArt({
         </p>
         <p className="mt-0.5 font-display text-sm font-bold leading-snug text-foreground">
           Ready for a theory exam?
-        </p>
-        <p className="mt-1 text-[10px] font-medium text-muted-foreground">
-          Economics · Math · English
         </p>
         <span
           className="mt-2 inline-flex rounded-md px-2.5 py-1 text-[10px] font-semibold text-white"
@@ -288,18 +326,14 @@ export function TutorModeArt({
 export function MatchingSubjectArt({
   subject,
   accent,
+  tag,
 }: {
   subject: FlashcardSubjectId;
   accent: string;
+  tag: string;
 }) {
   return (
-    <div
-      className="relative flex aspect-video w-full flex-col justify-center gap-2 px-5 py-5"
-      style={{ backgroundColor: SUBJECT_BG[subject] }}
-    >
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-foreground/60">
-        Matching · {subject}
-      </p>
+    <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
       <MatchingPairs
         accent={accent}
         pairs={[
@@ -308,7 +342,7 @@ export function MatchingSubjectArt({
           ["Concept C", "Meaning 3"],
         ]}
       />
-    </div>
+    </SubjectPreviewShell>
   );
 }
 
@@ -316,46 +350,40 @@ export function MatchingSubjectArt({
 export function TutorSubjectArt({
   subject,
   accent,
+  tag,
 }: {
   subject: FlashcardSubjectId;
   accent: string;
+  tag: string;
 }) {
   return (
-    <div
-      className="relative flex aspect-video w-full items-center gap-4 px-5 py-4"
-      style={{ backgroundColor: SUBJECT_BG[subject] }}
-    >
-      <TutorRobot accent={accent} />
-      <div className="relative min-w-0 flex-1 rounded-xl border-[1.5px] border-foreground/30 bg-white px-3.5 py-3">
-        <span
-          className="absolute -left-1.5 top-6 h-3 w-3 rotate-45 border-b border-l border-foreground/30 bg-white"
-          aria-hidden
-        />
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-          Tutor Exam · {subject}
-        </p>
-        <p className="mt-1 font-display text-base font-bold leading-snug text-foreground">
-          What does this mean?
-        </p>
-        <div className="mt-2 space-y-1.5">
-          {["A  Definition one", "B  Definition two", "C  Definition three"].map(
-            (opt, i) => (
-              <div
-                key={opt}
-                className={
-                  "rounded-md border-[1.5px] px-2.5 py-1 text-[11px] font-semibold " +
-                  (i === 1
-                    ? "border-transparent text-white"
-                    : "border-foreground/25 bg-white text-foreground")
-                }
-                style={i === 1 ? { backgroundColor: accent } : undefined}
-              >
-                {opt}
-              </div>
-            ),
-          )}
+    <SubjectPreviewShell subject={subject} tag={tag} accent={accent}>
+      <div className="flex w-full max-w-[15rem] flex-col items-center gap-2">
+        <TutorRobot accent={accent} compact />
+        <div className="w-full rounded-xl border-[1.5px] border-foreground/30 bg-white px-3 py-2.5 text-center">
+          <p className="font-display text-xs font-bold leading-snug text-foreground sm:text-sm">
+            What does this mean?
+          </p>
+          <div className="mt-2 space-y-1">
+            {["A  Definition one", "B  Definition two", "C  Definition three"].map(
+              (opt, i) => (
+                <div
+                  key={opt}
+                  className={
+                    "truncate rounded-md border-[1.5px] px-2 py-0.5 text-[10px] font-semibold " +
+                    (i === 1
+                      ? "border-transparent text-white"
+                      : "border-foreground/25 bg-white text-foreground")
+                  }
+                  style={i === 1 ? { backgroundColor: accent } : undefined}
+                >
+                  {opt}
+                </div>
+              ),
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </SubjectPreviewShell>
   );
 }
