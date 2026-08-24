@@ -20,7 +20,7 @@ const PREVIEW_PAIRS_WIDTH = "w-full max-w-[15rem]";
 
 type Pair = [string, string];
 
-/** Real deck terms — accurate short hooks from the study bank. */
+/** Per mode, per subject — no term repeats across flashcard / matching / tutor. */
 const SUBJECT_PREVIEW: Record<
   FlashcardSubjectId,
   {
@@ -36,20 +36,20 @@ const SUBJECT_PREVIEW: Record<
       ["Free rider", "Benefits without paying"],
     ],
     tutor: {
-      question: "What is a cartel?",
-      options: ["Suppliers collude on price", "Only one seller"],
+      question: "What is opportunity cost?",
+      options: ["Next best alternative", "Total revenue minus cost"],
       correct: 0,
     },
   },
   math: {
     flashcard: "Discriminant",
     matching: [
-      ["Discriminant", "b² − 4ac"],
       ["Chain rule", "f'(g(x))·g'(x)"],
+      ["Vieta's formulas", "Sum of roots"],
     ],
     tutor: {
-      question: "Discriminant Δ = ?",
-      options: ["b² − 4ac", "−b / 2a"],
+      question: "Power rule: d/dx xⁿ = ?",
+      options: ["nxⁿ⁻¹", "xⁿ / n"],
       correct: 0,
     },
   },
@@ -57,15 +57,21 @@ const SUBJECT_PREVIEW: Record<
     flashcard: "Bellwether",
     matching: [
       ["Arbitrage", "Cross-market price gap"],
-      ["Bellwether", "Market direction sign"],
+      ["Bullish", "Expecting price rises"],
     ],
     tutor: {
-      question: "Synonym: bullish?",
-      options: ["Optimistic", "Pessimistic"],
+      question: "Synonym: austerity?",
+      options: ["Belt-tightening", "Spending spree"],
       correct: 0,
     },
   },
 };
+
+/** Dashboard mode tiles — one subject each, all different terms. */
+const DASHBOARD_MODE_PREVIEW = {
+  matching: SUBJECT_PREVIEW.economics.matching,
+  tutor: SUBJECT_PREVIEW.math.tutor,
+} as const;
 
 /** Shared subject-picker frame: fixed aspect, centered art with safe padding. */
 function SubjectPreviewShell({
@@ -290,7 +296,7 @@ export function MatchingModeArt({
       </p>
       <MatchingPairs
         accent={accent}
-        pairs={SUBJECT_PREVIEW.economics.matching}
+        pairs={DASHBOARD_MODE_PREVIEW.matching}
       />
     </div>
   );
@@ -391,7 +397,7 @@ export function TutorModeArt({
   accent?: string;
   className?: string;
 }) {
-  const preview = SUBJECT_PREVIEW.economics.tutor;
+  const preview = DASHBOARD_MODE_PREVIEW.tutor;
 
   return (
     <div
