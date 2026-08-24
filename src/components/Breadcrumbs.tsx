@@ -51,6 +51,8 @@ export function Breadcrumbs() {
     [pathname, customTitle],
   );
 
+  if (pathname === "/" || pathname === "") return null;
+
   return (
     <nav
       aria-label="Breadcrumb"

@@ -1,8 +1,13 @@
 import { Link } from "@tanstack/react-router";
+import { useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { MobileNav } from "@/components/MobileNav";
+import {
+  navItemsForPath,
+  shouldShowSiteNav,
+} from "@/config/site-nav";
 import { cn } from "@/lib/utils";
 
 type SiteHeaderProps = {
@@ -61,14 +66,19 @@ export function SiteHeader({
   actions,
   left,
   center,
-  showNav = true,
-  showMobileNav = true,
+  showNav,
+  showMobileNav,
   maxWidthClassName = "max-w-7xl",
   className,
   innerClassName,
   sticky = true,
   compact = false,
 }: SiteHeaderProps) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const navItems = navItemsForPath(pathname);
+  const navVisible = shouldShowSiteNav(pathname, showNav);
+  const mobileVisible = navVisible && showMobileNav !== false;
+
   return (
     <header
       className={cn(
@@ -82,18 +92,18 @@ export function SiteHeader({
           "mx-auto flex items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:px-8",
           maxWidthClassName,
           compact && "py-3 sm:py-4",
-          showNav && "lg:grid lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:items-center lg:gap-4",
+          navVisible && "gap-4 sm:gap-6",
           innerClassName,
         )}
       >
         {left ?? <BrandMark compact={compact} />}
-        {center ?? (showNav ? <DesktopNav /> : null)}
+        {center ?? (navVisible ? <DesktopNav items={navItems} /> : null)}
         <div className="flex shrink-0 items-center gap-3">
           {actions}
           <AuthNav />
-          {showMobileNav ? (
+          {mobileVisible ? (
             <div className="lg:hidden">
-              <MobileNav />
+              <MobileNav items={navItems} />
             </div>
           ) : null}
         </div>

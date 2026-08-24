@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { navItems } from "@/config/site-nav";
+import type { NavItem } from "@/config/site-nav";
 import { NavItemLink } from "./NavItemLink";
 
 import {
@@ -13,7 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-export function MobileNav() {
+export function MobileNav({ items }: { items: NavItem[] }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -46,7 +46,7 @@ export function MobileNav() {
 
           <nav className="overflow-y-auto px-6 py-4">
             <ul className="flex flex-col gap-1">
-              {navItems.map((item) => (
+              {items.map((item) => (
                 <li key={item.label}>
                   <NavItemLink
                     item={item}

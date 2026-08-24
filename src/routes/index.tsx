@@ -20,7 +20,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader />
+      <SiteHeader showNav showMobileNav />
 
       <main>
         {/* HERO — light ivory */}
@@ -83,7 +83,7 @@ function Index() {
                   Master every detail and tactic of the actual exam.
                 </p>
 
-                <div id="bbe-products" className="mt-10 flex flex-col gap-3 sm:flex-row">
+                <div id="full-course" className="mt-10 flex flex-col gap-3 sm:flex-row">
                   <Link
                     to="/demo-practice"
                     className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
