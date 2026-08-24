@@ -42,9 +42,9 @@ const SUBJECT_PREVIEW: Record<
     },
   },
   math: {
-    flashcard: "Chain rule",
+    flashcard: "Discriminant",
     matching: [
-      ["Discriminant", "b²−4ac"],
+      ["Chain rule", "f'(g)·g'"],
       ["Power rule", "nxⁿ⁻¹"],
     ],
     tutor: {
