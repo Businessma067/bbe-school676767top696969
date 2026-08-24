@@ -4,6 +4,16 @@ Sign in as **georgtyrin@gmail.com** or **info@spray-go.com** → open `/admin`.
 
 Same full access for both: users list, per-user stats, charts, local admin store.
 
+## Why Lovable shows 0 accounts
+
+Admin list now loads from **Supabase** (`admin_list_users`). You must run this SQL once in the project:
+
+`supabase/migrations/20260825010000_admin_emails_and_list_users.sql`
+
+Supabase Dashboard → SQL Editor → paste → Run.
+
+Without that function/policies the cloud panel has an empty store and cannot list Auth users.
+
 ## Per-user stats
 
 - `/admin` — список аккаунтов: email + личная статистика

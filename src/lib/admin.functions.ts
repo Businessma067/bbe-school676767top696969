@@ -8,11 +8,14 @@ import {
   isAtRisk,
   readUserEvents,
 } from "@/lib/admin-store.server";
+import { fetchLiveUserRows } from "@/lib/admin-live.server";
+import { trySyncAllUsers } from "@/lib/admin-sync.server";
 import type {
   AdminCohortStats,
   AdminListUsersResult,
   AdminTimelineResult,
   AdminUserDetail,
+  AdminUserRow,
 } from "@/lib/admin-types";
 
 const ListUsersInput = z.object({
@@ -36,10 +39,64 @@ const TimelineInput = z.object({
   eventType: z.string().optional(),
 });
 
+async function resolveAdminUserRows(
+  supabase: Parameters<typeof fetchLiveUserRows>[0],
+): Promise<{ rows: AdminUserRow[]; source: AdminListUsersResult["source"]; hint?: string }> {
+  // Best-effort: fill local store when filesystem works (local dev).
+  const sync = await trySyncAllUsers(supabase, true).catch((err) => ({
+    synced: 0,
+    source: "skipped" as const,
+    totalLocal: 0,
+    error: err instanceof Error ? err.message : String(err),
+    hint: undefined as string | undefined,
+  }));
+
+  let rows = await getStoreUserRows().catch(() => [] as AdminUserRow[]);
+  if (rows.length > 0) {
+    return { rows, source: "local_store", hint: sync.hint };
+  }
+
+  // Lovable / empty disk: read accounts live from Supabase.
+  const live = await fetchLiveUserRows(supabase);
+  if (live.rows.length > 0) {
+    return { rows: live.rows, source: "supabase_live" };
+  }
+
+  const hint =
+    live.error ||
+    sync.hint ||
+    sync.error ||
+    "Нет аккаунтов. Выполните SQL из supabase/migrations/20260825010000_admin_emails_and_list_users.sql в Supabase → SQL Editor.";
+
+  return { rows: [], source: "empty", hint };
+}
+
 export const adminGetCohortStats = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
-  .handler(async (): Promise<AdminCohortStats> => {
-    const cohort = await getStoreCohortStats();
+  .handler(async ({ context }): Promise<AdminCohortStats> => {
+    const { rows } = await resolveAdminUserRows(context.supabase);
+    const cohort =
+      rows.length > 0
+        ? {
+            users: rows,
+            totalTaskAttempts: rows.reduce((s, u) => s + u.tasksAttempted, 0),
+            totalMockSubmissions: rows.reduce((s, u) => s + u.mockAttempts, 0),
+            averageMockScorePct: (() => {
+              const scored = rows.filter((u) => u.mockBestPct != null);
+              if (!scored.length) return null;
+              return (
+                Math.round(
+                  (scored.reduce((s, u) => s + (u.mockBestPct ?? 0), 0) / scored.length) * 10,
+                ) / 10
+              );
+            })(),
+            enrollmentsByTier: rows.reduce<Record<string, number>>((acc, u) => {
+              acc[u.tier] = (acc[u.tier] ?? 0) + 1;
+              return acc;
+            }, {}),
+          }
+        : await getStoreCohortStats();
+
     const now = Date.now();
     const day = 86_400_000;
 
@@ -70,8 +127,9 @@ export const adminGetCohortStats = createServerFn({ method: "GET" })
 export const adminListUsers = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => ListUsersInput.parse(d))
-  .handler(async ({ data }): Promise<AdminListUsersResult> => {
-    let rows = await getStoreUserRows();
+  .handler(async ({ data, context }): Promise<AdminListUsersResult> => {
+    const resolved = await resolveAdminUserRows(context.supabase);
+    let rows = resolved.rows;
 
     const q = data.search?.trim().toLowerCase();
     if (q) {
@@ -112,14 +170,30 @@ export const adminListUsers = createServerFn({ method: "POST" })
       total,
       page: data.page,
       pageSize: data.pageSize,
+      source: resolved.source,
+      hint: total === 0 ? resolved.hint : undefined,
     };
   });
 
 export const adminGetUserDetail = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => UserIdInput.parse(d))
-  .handler(async ({ data }): Promise<AdminUserDetail> => {
-    const detail = await getStoreUserDetail(data.userId);
+  .handler(async ({ data, context }): Promise<AdminUserDetail> => {
+    // Prefer local store; if missing (Lovable), sync this one user from Supabase first.
+    let detail = await getStoreUserDetail(data.userId);
+    if (!detail) {
+      try {
+        const { syncSingleUserFromSupabase } = await import("@/lib/admin-sync.server");
+        const live = await fetchLiveUserRows(context.supabase);
+        const meta = live.rows.find((r) => r.userId === data.userId);
+        await syncSingleUserFromSupabase(context.supabase, data.userId, meta
+          ? { email: meta.email, created_at: meta.registeredAt }
+          : undefined);
+        detail = await getStoreUserDetail(data.userId);
+      } catch (err) {
+        console.error("[admin] live detail sync failed", err);
+      }
+    }
     if (!detail) throw new Error("User not found");
     return detail;
   });
@@ -150,7 +224,7 @@ export const adminGetUserTimeline = createServerFn({ method: "POST" })
 export const adminExportUsersCsv = createServerFn({ method: "POST" })
   .middleware([requireAdmin])
   .inputValidator((d: unknown) => z.object({ userId: z.string().uuid().optional() }).parse(d))
-  .handler(async ({ data }): Promise<{ csv: string }> => {
+  .handler(async ({ data, context }): Promise<{ csv: string }> => {
     if (data.userId) {
       const detail = await getStoreUserDetail(data.userId);
       if (!detail) throw new Error("User not found");
@@ -169,7 +243,8 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
       return { csv: lines.join("\n") };
     }
 
-    const rows = await getStoreUserRows();
+    const resolved = await resolveAdminUserRows(context.supabase);
+    const rows = resolved.rows;
     const header =
       "user_id,email,name,tier,registered,last_seen,tasks_passed,tasks_attempted,mock_best_pct,mock_attempts,practice_sessions,streak,accuracy";
     const lines = [header];

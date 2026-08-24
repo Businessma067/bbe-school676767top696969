@@ -19,6 +19,7 @@ function AdminOverviewPage() {
   const [stats, setStats] = useState<AdminCohortStats | null>(null);
   const [users, setUsers] = useState<AdminUserRow[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [hint, setHint] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -33,6 +34,7 @@ function AdminOverviewPage() {
         if (cancelled) return;
         setStats(cohort);
         setUsers(list.users);
+        setHint(list.hint ?? null);
       } catch (e) {
         if (!cancelled) setError(e instanceof Error ? e.message : "Failed to load");
       }
@@ -47,6 +49,12 @@ function AdminOverviewPage() {
       {error ? (
         <p className="mb-3 rounded-lg border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive">
           {error}
+        </p>
+      ) : null}
+
+      {hint ? (
+        <p className="mb-3 rounded-lg border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-sm text-amber-900 dark:text-amber-100">
+          {hint}
         </p>
       ) : null}
 

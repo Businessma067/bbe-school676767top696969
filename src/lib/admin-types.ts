@@ -153,6 +153,9 @@ export type AdminListUsersResult = {
   total: number;
   page: number;
   pageSize: number;
+  /** Shown when the account list is empty or sync/RPC failed. */
+  hint?: string;
+  source?: "local_store" | "supabase_live" | "empty";
 };
 
 export type AdminTimelineResult = {

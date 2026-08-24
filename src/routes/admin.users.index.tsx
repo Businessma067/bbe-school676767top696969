@@ -23,6 +23,7 @@ function AdminUsersPage() {
   const [searchDraft, setSearchDraft] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [hint, setHint] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -42,6 +43,7 @@ function AdminUsersPage() {
         if (cancelled) return;
         setRows(res.users);
         setTotal(res.total);
+        setHint(res.hint ?? null);
       } catch (e) {
         if (!cancelled) setError(e instanceof Error ? e.message : "Failed to load users");
       } finally {
@@ -85,6 +87,12 @@ function AdminUsersPage() {
       {error ? (
         <p className="mb-3 rounded-lg border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive">
           {error}
+        </p>
+      ) : null}
+
+      {hint ? (
+        <p className="mb-3 rounded-lg border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-sm text-amber-900 dark:text-amber-100">
+          {hint}
         </p>
       ) : null}
 

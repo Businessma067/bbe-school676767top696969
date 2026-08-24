@@ -1,4 +1,5 @@
--- Allow hardcoded admin emails to read all user progress data (no service role needed).
+-- Allow both hardcoded admin emails to read all user data and list accounts.
+-- Run in Supabase SQL Editor if not applied via migrations.
 
 CREATE OR REPLACE FUNCTION public.is_admin_caller()
 RETURNS boolean
@@ -17,34 +18,42 @@ $$;
 
 GRANT EXECUTE ON FUNCTION public.is_admin_caller() TO authenticated;
 
+DROP POLICY IF EXISTS "Admin read all profiles" ON public.profiles;
 CREATE POLICY "Admin read all profiles"
   ON public.profiles FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all user roles" ON public.user_roles;
 CREATE POLICY "Admin read all user roles"
   ON public.user_roles FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all enrollments" ON public.enrollments;
 CREATE POLICY "Admin read all enrollments"
   ON public.enrollments FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all task attempts" ON public.task_attempts;
 CREATE POLICY "Admin read all task attempts"
   ON public.task_attempts FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all mock attempts" ON public.mock_attempts;
 CREATE POLICY "Admin read all mock attempts"
   ON public.mock_attempts FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all practice sessions" ON public.practice_sessions;
 CREATE POLICY "Admin read all practice sessions"
   ON public.practice_sessions FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all session answers" ON public.session_answers;
 CREATE POLICY "Admin read all session answers"
   ON public.session_answers FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Admin read all custom mocks" ON public.custom_mocks;
 CREATE POLICY "Admin read all custom mocks"
   ON public.custom_mocks FOR SELECT TO authenticated
   USING (public.is_admin_caller() OR auth.uid() = user_id);
