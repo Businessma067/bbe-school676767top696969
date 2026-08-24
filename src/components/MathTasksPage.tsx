@@ -8,6 +8,8 @@ import { TheoryReader } from "@/components/TheoryReader";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { recordTaskAttempt } from "@/lib/user-progress";
+import { trackEvent } from "@/lib/activity-tracker";
 import { Collapse } from "@/components/Collapse";
 import {
   MATH_CHAPTERS,
@@ -127,6 +129,16 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
         ? []
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
+
+  useEffect(() => {
+    if (!activeCase || activeCase.placeholder) return;
+    void trackEvent({
+      eventType: "task_start",
+      subject: "math",
+      entityType: "task",
+      entityId: activeCase.id,
+    });
+  }, [activeCase?.id]);
 
   useEffect(() => {
     if (theoryChapter !== null) {
@@ -727,16 +739,40 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                 explanationsOpen={showExplanations}
                 onShowExplanations={() => setShowExplanations(true)}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
-                onGraded={(allCorrect) => {
+                onGraded={(result) => {
                   setProgress((prev) => {
                     const next: Progress = {
                       passed: prev.passed.filter((x) => x !== activeCase.id),
                       revision: prev.revision.filter((x) => x !== activeCase.id),
                     };
-                    if (allCorrect) next.passed = [...next.passed, activeCase.id];
+                    if (result.allCorrect) next.passed = [...next.passed, activeCase.id];
                     else next.revision = [...next.revision, activeCase.id];
                     saveProgress(next);
                     return next;
+                  });
+                  const chLabel =
+                    activeChapter === "revision"
+                      ? "Revision"
+                      : `Chapter ${activeChapter}`;
+                  void recordTaskAttempt({
+                    subject: "math",
+                    chapter: chLabel,
+                    taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
+                    taskTitle: activeCase.title,
+                    correctCount: result.correctCount,
+                    statementCount: result.statementCount,
+                    statementResults: result.statementResults,
+                  });
+                  void trackEvent({
+                    eventType: "task_submit",
+                    subject: "math",
+                    entityType: "task",
+                    entityId: activeCase.id,
+                    metadata: {
+                      correct: result.correctCount,
+                      total: result.statementCount,
+                      passed: result.allCorrect,
+                    },
                   });
                 }}
                 onResetProgress={() => {
@@ -1610,7 +1646,12 @@ function MathTaskCard({
   explanationsOpen: boolean;
   onShowExplanations: () => void;
   onToggleExplanations: () => void;
-  onGraded: (allCorrect: boolean) => void;
+  onGraded: (result: {
+    allCorrect: boolean;
+    correctCount: number;
+    statementCount: number;
+    statementResults: { statement_index: number; correct: boolean }[];
+  }) => void;
   onResetProgress: () => void;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
@@ -1634,7 +1675,16 @@ function MathTaskCard({
 
   const handleSubmit = () => {
     setChecked(true);
-    onGraded(correctCount === task.answer_key.length);
+    const statementResults = task.answer_key.map((key, i) => ({
+      statement_index: i,
+      correct: (answers[i] === true) === key,
+    }));
+    onGraded({
+      allCorrect: correctCount === task.answer_key.length,
+      correctCount,
+      statementCount: task.answer_key.length,
+      statementResults,
+    });
     onShowExplanations();
   };
 

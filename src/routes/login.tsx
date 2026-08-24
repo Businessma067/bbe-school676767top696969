@@ -1,9 +1,9 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
 import { AuthShell, Field, PasswordField, GoogleButton, Divider } from "./signup";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
+import { signInWithGoogle } from "@/lib/google-auth";
 
 export const Route = createFileRoute("/login")({
   component: LoginPage,
@@ -38,9 +38,7 @@ function LoginPage() {
   const handleGoogle = async () => {
     setError(null);
     setLoading(true);
-    const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
-    });
+    const result = await signInWithGoogle();
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
@@ -53,8 +51,8 @@ function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
-    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Enter a valid email.");
-    if (password.length < 6) return setError("Password must be at least 6 characters.");
+    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Введите корректный email.");
+    if (password.length < 6) return setError("Пароль минимум 6 символов.");
     setLoading(true);
     try {
       const { error: err } = await supabase.auth.signInWithPassword({ email, password });
@@ -62,7 +60,7 @@ function LoginPage() {
       navigate({ to: "/dashboard" });
     } catch (err: any) {
       console.error("Login failed", err);
-      setError(friendlyAuthError(err, "Wrong email or password."));
+      setError(friendlyAuthError(err, "Неверный email или пароль."));
     } finally {
       setLoading(false);
     }

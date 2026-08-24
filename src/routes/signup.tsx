@@ -1,8 +1,8 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
+import { signInWithGoogle } from "@/lib/google-auth";
 import { Eye, EyeOff } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -19,12 +19,12 @@ export const Route = createFileRoute("/signup")({
 
 function SignupPage() {
   const navigate = useNavigate();
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirm, setConfirm] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirm, setShowConfirm] = useState(false);
   const [agree, setAgree] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -46,9 +46,7 @@ function SignupPage() {
     if (!agree)
       return setError("Please accept the Terms of Service and Privacy Policy to continue.");
     setLoading(true);
-    const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
-    });
+    const result = await signInWithGoogle();
     if (result.error) {
       setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
@@ -62,32 +60,83 @@ function SignupPage() {
     e.preventDefault();
     setError(null);
     setInfo(null);
-    if (!name.trim()) return setError("Please enter your name.");
-    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Enter a valid email.");
-    if (password.length < 6) return setError("Password must be at least 6 characters.");
-    if (password !== confirm) return setError("Passwords don't match.");
+    const first = firstName.trim();
+    const last = lastName.trim();
+    const phoneClean = phone.trim();
+    if (!first) return setError("Please enter your first name.");
+    if (!last) return setError("Please enter your last name.");
+    if (!phoneClean || phoneClean.replace(/\D/g, "").length < 7)
+      return setError("Please enter a valid phone number.");
+    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Введите корректный email.");
+    if (password.length < 8)
+      return setError("Пароль минимум 8 символов (лучше буквы + цифры).");
     if (!agree)
-      return setError("Please accept the Terms of Service and Privacy Policy to continue.");
+      return setError("Примите Terms of Service и Privacy Policy.");
+
+    const displayName = `${first} ${last}`;
+    const emailNorm = email.trim().toLowerCase();
     setLoading(true);
     try {
-      const response = await supabase.auth.signUp({
-        email,
+      // Same scheme as before admin panel: implicit link → /account
+      const { data, error: err } = await supabase.auth.signUp({
+        email: emailNorm,
         password,
         options: {
-          emailRedirectTo: window.location.origin + "/account",
-          data: { display_name: name.trim() },
+          emailRedirectTo: `${window.location.origin}/account`,
+          data: {
+            display_name: displayName,
+            first_name: first,
+            last_name: last,
+            phone: phoneClean,
+          },
         },
       });
-      const { data, error: err } = response;
       if (err) throw err;
-      if (data.session) {
-        navigate({ to: "/dashboard" });
-      } else {
-        setInfo("Check your email to confirm your account, then sign in.");
+
+      if (data.user && (data.user.identities?.length ?? 0) === 0) {
+        setError("Этот email уже зарегистрирован. Войдите через Sign in.");
+        return;
       }
+
+      if (data.session) {
+        await supabase.from("profiles").upsert(
+          { user_id: data.session.user.id, display_name: displayName },
+          { onConflict: "user_id" },
+        );
+        navigate({ to: "/dashboard" });
+        return;
+      }
+
+      sessionStorage.setItem("bbe.pendingConfirmEmail", emailNorm);
+      setInfo("Check your email to confirm your account, then sign in.");
     } catch (err: any) {
       console.error("Signup failed", err);
-      setError(friendlyAuthError(err, "Signup failed."));
+      setError(friendlyAuthError(err, "Не удалось создать аккаунт."));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleResend = async () => {
+    setError(null);
+    setInfo(null);
+    const pending =
+      email.trim().toLowerCase() || sessionStorage.getItem("bbe.pendingConfirmEmail") || "";
+    if (!/^\S+@\S+\.\S+$/.test(pending)) {
+      setError("Введите email, на который отправить письмо снова.");
+      return;
+    }
+    setLoading(true);
+    try {
+      const { error: err } = await supabase.auth.resend({
+        type: "signup",
+        email: pending,
+        options: { emailRedirectTo: `${window.location.origin}/account` },
+      });
+      if (err) throw err;
+      setInfo(`Письмо отправлено повторно на ${pending}. Проверьте Inbox и Spam.`);
+    } catch (err) {
+      setError(friendlyAuthError(err, "Не удалось отправить письмо."));
     } finally {
       setLoading(false);
     }
@@ -98,7 +147,29 @@ function SignupPage() {
       <GoogleButton onClick={handleGoogle} disabled={loading} label="Sign up with Google" />
       <Divider />
       <form onSubmit={handleSubmit} className="space-y-4">
-        <Field label="Name" type="text" value={name} onChange={setName} placeholder="Your name" />
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Field
+            label="First name"
+            type="text"
+            value={firstName}
+            onChange={setFirstName}
+            placeholder="Georg"
+          />
+          <Field
+            label="Last name"
+            type="text"
+            value={lastName}
+            onChange={setLastName}
+            placeholder="Tyrin"
+          />
+        </div>
+        <Field
+          label="Phone"
+          type="tel"
+          value={phone}
+          onChange={setPhone}
+          placeholder="+43 660 0000000"
+        />
         <Field
           label="Email"
           type="email"
@@ -110,17 +181,9 @@ function SignupPage() {
           label="Password"
           value={password}
           onChange={setPassword}
-          placeholder="At least 6 characters"
+          placeholder="Минимум 8 символов, не слишком простой"
           show={showPassword}
           onToggle={() => setShowPassword((v) => !v)}
-        />
-        <PasswordField
-          label="Confirm password"
-          value={confirm}
-          onChange={setConfirm}
-          placeholder="Repeat password"
-          show={showConfirm}
-          onToggle={() => setShowConfirm((v) => !v)}
         />
 
         <label className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -149,6 +212,17 @@ function SignupPage() {
         >
           {loading ? "Creating account…" : "Create account"}
         </button>
+
+        {info ? (
+          <button
+            type="button"
+            disabled={loading}
+            onClick={() => void handleResend()}
+            className="w-full rounded-md border border-border px-4 py-2.5 text-sm font-semibold hover:bg-secondary disabled:opacity-60"
+          >
+            Resend confirmation email
+          </button>
+        ) : null}
       </form>
       <p className="mt-6 text-center text-sm text-muted-foreground">
         Already have an account?{" "}

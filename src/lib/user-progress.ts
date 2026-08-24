@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import { mirrorTaskAttempt } from "@/lib/activity-tracker";
 import type { MockExamSession } from "@/lib/mock-exam-session";
 
 /* ----------------------------- types ----------------------------- */
@@ -13,6 +14,8 @@ export type Enrollment = {
   created_at: string;
 };
 
+export type StatementResult = { statement_index: number; correct: boolean };
+
 export type TaskAttempt = {
   id: string;
   subject: string;
@@ -23,6 +26,10 @@ export type TaskAttempt = {
   statement_count: number;
   is_passed: boolean;
   created_at: string;
+  duration_seconds?: number | null;
+  attempt_number?: number | null;
+  statement_results?: StatementResult[] | null;
+  source?: string;
 };
 
 export type MockAttempt = {
@@ -123,9 +130,27 @@ export async function recordTaskAttempt(input: {
   taskTitle?: string | null;
   correctCount: number;
   statementCount: number;
+  durationSeconds?: number | null;
+  statementResults?: StatementResult[] | null;
+  source?: string;
 }): Promise<void> {
   const userId = await currentUserId();
   if (!userId) return;
+
+  // Always mirror to local admin store first so /admin sees attempts even if Supabase schema lags.
+  void mirrorTaskAttempt({
+    subject: input.subject,
+    chapter: input.chapter,
+    taskKey: input.taskKey,
+    taskTitle: input.taskTitle ?? null,
+    correctCount: input.correctCount,
+    statementCount: input.statementCount,
+    durationSeconds: input.durationSeconds ?? null,
+    statementResults: input.statementResults ?? null,
+    source: input.source ?? "web",
+  });
+
+  // Base columns only — extended analytics columns may not exist until migration is applied.
   const { error } = await supabase.from("task_attempts").insert({
     user_id: userId,
     subject: input.subject,

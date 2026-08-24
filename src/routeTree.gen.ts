@@ -24,6 +24,7 @@ import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as ConfirmEmailRouteImport } from './routes/confirm-email'
 import { Route as BbeEntranceExamGuideRouteImport } from './routes/bbe-entrance-exam-guide'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
@@ -35,6 +36,7 @@ import { Route as MockExamsIndexRouteImport } from './routes/mock-exams.index'
 import { Route as MatchingIndexRouteImport } from './routes/matching.index'
 import { Route as FlashcardsIndexRouteImport } from './routes/flashcards.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as TutorExamSubjectRouteImport } from './routes/tutor-exam.$subject'
 import { Route as ProductsLiteBbeCourseSubjectsRouteImport } from './routes/products.lite-bbe-course-subjects'
 import { Route as ProductsLiteBbeCourseMathRouteImport } from './routes/products.lite-bbe-course-math'
@@ -54,9 +56,12 @@ import { Route as DemoPracticeMathRouteImport } from './routes/demo-practice.mat
 import { Route as DemoPracticeEnglishRouteImport } from './routes/demo-practice.english'
 import { Route as DemoPracticeEconomicsRouteImport } from './routes/demo-practice.economics'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as AdminUsersRouteImport } from './routes/admin.users'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
+import { Route as AdminUsersIndexRouteImport } from './routes/admin.users.index'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
+import { Route as AdminUsersUserIdRouteImport } from './routes/admin.users.$userId'
 
 const TutorExamRoute = TutorExamRouteImport.update({
   id: '/tutor-exam',
@@ -133,6 +138,11 @@ const DashboardRoute = DashboardRouteImport.update({
   path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConfirmEmailRoute = ConfirmEmailRouteImport.update({
+  id: '/confirm-email',
+  path: '/confirm-email',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BbeEntranceExamGuideRoute = BbeEntranceExamGuideRouteImport.update({
   id: '/bbe-entrance-exam-guide',
   path: '/bbe-entrance-exam-guide',
@@ -187,6 +197,11 @@ const DemoPracticeIndexRoute = DemoPracticeIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => DemoPracticeRoute,
+} as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
 } as any)
 const TutorExamSubjectRoute = TutorExamSubjectRouteImport.update({
   id: '/$subject',
@@ -290,10 +305,20 @@ const ApiChatRoute = ApiChatRouteImport.update({
   path: '/api/chat',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminUsersRoute = AdminUsersRouteImport.update({
+  id: '/users',
+  path: '/users',
+  getParentRoute: () => AdminRoute,
+} as any)
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/economics',
   path: '/economics',
   getParentRoute: () => AdminRoute,
+} as any)
+const AdminUsersIndexRoute = AdminUsersIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminUsersRoute,
 } as any)
 const MockExamsExamIdTakeRoute = MockExamsExamIdTakeRouteImport.update({
   id: '/$examId/take',
@@ -305,6 +330,11 @@ const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
   path: '/$examId/review',
   getParentRoute: () => MockExamsRoute,
 } as any)
+const AdminUsersUserIdRoute = AdminUsersUserIdRouteImport.update({
+  id: '/$userId',
+  path: '/$userId',
+  getParentRoute: () => AdminUsersRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -312,6 +342,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
   '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
+  '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
@@ -328,6 +359,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -347,21 +379,24 @@ export interface FileRoutesByFullPath {
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
+  '/admin/': typeof AdminIndexRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
   '/matching/': typeof MatchingIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/tutor-exam/': typeof TutorExamIndexRoute
+  '/admin/users/$userId': typeof AdminUsersUserIdRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
+  '/admin/users/': typeof AdminUsersIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/account': typeof AccountRoute
-  '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
   '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
+  '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/important-features': typeof ImportantFeaturesRoute
@@ -391,14 +426,17 @@ export interface FileRoutesByTo {
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
+  '/admin': typeof AdminIndexRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/flashcards': typeof FlashcardsIndexRoute
   '/matching': typeof MatchingIndexRoute
   '/mock-exams': typeof MockExamsIndexRoute
   '/products': typeof ProductsIndexRoute
   '/tutor-exam': typeof TutorExamIndexRoute
+  '/admin/users/$userId': typeof AdminUsersUserIdRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
+  '/admin/users': typeof AdminUsersIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -407,6 +445,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
   '/bbe-entrance-exam-guide': typeof BbeEntranceExamGuideRoute
+  '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
   '/flashcards': typeof FlashcardsRouteWithChildren
@@ -423,6 +462,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -442,14 +482,17 @@ export interface FileRoutesById {
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
+  '/admin/': typeof AdminIndexRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
   '/matching/': typeof MatchingIndexRoute
   '/mock-exams/': typeof MockExamsIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/tutor-exam/': typeof TutorExamIndexRoute
+  '/admin/users/$userId': typeof AdminUsersUserIdRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
+  '/admin/users/': typeof AdminUsersIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -459,6 +502,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/bbe-entrance-exam-guide'
+    | '/confirm-email'
     | '/dashboard'
     | '/demo-practice'
     | '/flashcards'
@@ -475,6 +519,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tutor-exam'
     | '/admin/economics'
+    | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -494,21 +539,24 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
+    | '/admin/'
     | '/demo-practice/'
     | '/flashcards/'
     | '/matching/'
     | '/mock-exams/'
     | '/products/'
     | '/tutor-exam/'
+    | '/admin/users/$userId'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
+    | '/admin/users/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/account'
-    | '/admin'
     | '/auth'
     | '/bbe-entrance-exam-guide'
+    | '/confirm-email'
     | '/dashboard'
     | '/forgot-password'
     | '/important-features'
@@ -538,14 +586,17 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
+    | '/admin'
     | '/demo-practice'
     | '/flashcards'
     | '/matching'
     | '/mock-exams'
     | '/products'
     | '/tutor-exam'
+    | '/admin/users/$userId'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
+    | '/admin/users'
   id:
     | '__root__'
     | '/'
@@ -553,6 +604,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/bbe-entrance-exam-guide'
+    | '/confirm-email'
     | '/dashboard'
     | '/demo-practice'
     | '/flashcards'
@@ -569,6 +621,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tutor-exam'
     | '/admin/economics'
+    | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -588,14 +641,17 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
+    | '/admin/'
     | '/demo-practice/'
     | '/flashcards/'
     | '/matching/'
     | '/mock-exams/'
     | '/products/'
     | '/tutor-exam/'
+    | '/admin/users/$userId'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
+    | '/admin/users/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -604,6 +660,7 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRouteWithChildren
   AuthRoute: typeof AuthRoute
   BbeEntranceExamGuideRoute: typeof BbeEntranceExamGuideRoute
+  ConfirmEmailRoute: typeof ConfirmEmailRoute
   DashboardRoute: typeof DashboardRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
   FlashcardsRoute: typeof FlashcardsRouteWithChildren
@@ -730,6 +787,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/confirm-email': {
+      id: '/confirm-email'
+      path: '/confirm-email'
+      fullPath: '/confirm-email'
+      preLoaderRoute: typeof ConfirmEmailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bbe-entrance-exam-guide': {
       id: '/bbe-entrance-exam-guide'
       path: '/bbe-entrance-exam-guide'
@@ -806,6 +870,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/demo-practice/'
       preLoaderRoute: typeof DemoPracticeIndexRouteImport
       parentRoute: typeof DemoPracticeRoute
+    }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/tutor-exam/$subject': {
       id: '/tutor-exam/$subject'
@@ -940,12 +1011,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiChatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/users': {
+      id: '/admin/users'
+      path: '/users'
+      fullPath: '/admin/users'
+      preLoaderRoute: typeof AdminUsersRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/admin/economics': {
       id: '/admin/economics'
       path: '/economics'
       fullPath: '/admin/economics'
       preLoaderRoute: typeof AdminEconomicsRouteImport
       parentRoute: typeof AdminRoute
+    }
+    '/admin/users/': {
+      id: '/admin/users/'
+      path: '/'
+      fullPath: '/admin/users/'
+      preLoaderRoute: typeof AdminUsersIndexRouteImport
+      parentRoute: typeof AdminUsersRoute
     }
     '/mock-exams/$examId/take': {
       id: '/mock-exams/$examId/take'
@@ -961,15 +1046,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
       parentRoute: typeof MockExamsRoute
     }
+    '/admin/users/$userId': {
+      id: '/admin/users/$userId'
+      path: '/$userId'
+      fullPath: '/admin/users/$userId'
+      preLoaderRoute: typeof AdminUsersUserIdRouteImport
+      parentRoute: typeof AdminUsersRoute
+    }
   }
 }
 
+interface AdminUsersRouteChildren {
+  AdminUsersUserIdRoute: typeof AdminUsersUserIdRoute
+  AdminUsersIndexRoute: typeof AdminUsersIndexRoute
+}
+
+const AdminUsersRouteChildren: AdminUsersRouteChildren = {
+  AdminUsersUserIdRoute: AdminUsersUserIdRoute,
+  AdminUsersIndexRoute: AdminUsersIndexRoute,
+}
+
+const AdminUsersRouteWithChildren = AdminUsersRoute._addFileChildren(
+  AdminUsersRouteChildren,
+)
+
 interface AdminRouteChildren {
   AdminEconomicsRoute: typeof AdminEconomicsRoute
+  AdminUsersRoute: typeof AdminUsersRouteWithChildren
+  AdminIndexRoute: typeof AdminIndexRoute
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
   AdminEconomicsRoute: AdminEconomicsRoute,
+  AdminUsersRoute: AdminUsersRouteWithChildren,
+  AdminIndexRoute: AdminIndexRoute,
 }
 
 const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
@@ -1090,6 +1200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRouteWithChildren,
   AuthRoute: AuthRoute,
   BbeEntranceExamGuideRoute: BbeEntranceExamGuideRoute,
+  ConfirmEmailRoute: ConfirmEmailRoute,
   DashboardRoute: DashboardRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,
   FlashcardsRoute: FlashcardsRouteWithChildren,

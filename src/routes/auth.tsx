@@ -1,8 +1,9 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
 import { SiteHeader } from "@/components/SiteHeader";
+import { signInWithGoogle } from "@/lib/google-auth";
+import { friendlyAuthError } from "@/lib/auth-ui";
 
 export const Route = createFileRoute("/auth")({
   component: AuthPage,
@@ -26,11 +27,9 @@ function AuthPage() {
   const handleGoogle = async () => {
     setError(null);
     setLoading(true);
-    const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
-    });
+    const result = await signInWithGoogle({ redirectTo: window.location.origin });
     if (result.error) {
-      setError(result.error.message ?? "Google sign-in failed");
+      setError(friendlyAuthError(result.error, "Google sign-in failed"));
       setLoading(false);
       return;
     }
