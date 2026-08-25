@@ -6,15 +6,16 @@ LETTERS = "ABCDE"
 
 
 def expl(i: int, truth: bool, body: str) -> str:
+    """Draft explanation; assemble.py rewrites these into Ch4 / Ch13 layout."""
     letter = LETTERS[i]
     verdict = "True" if truth else "False"
     body = body.strip()
-    if not body.endswith("."):
+    if body and not body.endswith((".", "$$")):
         body += "."
     return (
         f"**{letter}.** → {verdict}\n\n"
         f"{body}\n\n"
-        f"So the statement is {verdict}."
+        f"so the statement is {verdict}."
     )
 
 
