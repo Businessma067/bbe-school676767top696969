@@ -1,8 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-  useExplanationLength,
-  type ExplanationLength,
-} from "@/hooks/use-explanation-length";
+import { useExplanationLength, type ExplanationLength } from "@/hooks/use-explanation-length";
 
 const OPTIONS: Array<{ value: ExplanationLength; label: string; hint: string }> = [
   { value: "compact", label: "Short", hint: "Compressed answers" },
@@ -17,21 +14,13 @@ type Props = {
 };
 
 /** Always-visible Short / Full switch — default Short, easy to find on a phone. */
-export function ExplanationLengthToggle({
-  className,
-  size = "header",
-  showLabel = true,
-}: Props) {
+export function ExplanationLengthToggle({ className, size = "header", showLabel = true }: Props) {
   const [length, setLength] = useExplanationLength();
   const compact = size === "header";
 
   return (
     <div
-      className={cn(
-        "flex items-center gap-1.5",
-        compact ? "min-w-0" : "flex-wrap",
-        className,
-      )}
+      className={cn("flex items-center gap-1.5", compact ? "min-w-0" : "flex-wrap", className)}
       role="group"
       aria-label="Solution length"
     >

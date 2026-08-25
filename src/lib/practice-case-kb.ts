@@ -1,8 +1,5 @@
 import type { PracticeCasePayload } from "@/lib/practice-case-context";
-import {
-  applyExplanationLength,
-  type ExplanationLength,
-} from "@/lib/explanation-length";
+import { applyExplanationLength, type ExplanationLength } from "@/lib/explanation-length";
 
 function norm(s: string): string {
   return s
@@ -54,7 +51,11 @@ function buildChunks(c: PracticeCasePayload): KbChunk[] {
   return out;
 }
 
-function bestChunks(chunks: KbChunk[], query: string, limit = 3): Array<KbChunk & { score: number }> {
+function bestChunks(
+  chunks: KbChunk[],
+  query: string,
+  limit = 3,
+): Array<KbChunk & { score: number }> {
   const toks = tokens(query);
   return chunks
     .map((ch) => ({ ...ch, score: scoreOverlap(ch.text, toks) }))
@@ -98,17 +99,12 @@ export function answerFromCaseDatabase(
         clip(applyExplanationLength(fallback, length), maxExpl),
       ].join("\n");
     }
-    return [
-      `**Case:** ${c.title}`,
-      "",
-      clip(c.context || "No stem available.", maxOther),
-    ].join("\n");
+    return [`**Case:** ${c.title}`, "", clip(c.context || "No stem available.", maxOther)].join(
+      "\n",
+    );
   }
 
-  const lines: string[] = [
-    `**Case:** ${c.chapterLabel} · ${c.title}`,
-    "",
-  ];
+  const lines: string[] = [`**Case:** ${c.chapterLabel} · ${c.title}`, ""];
 
   if (mode === "explain") {
     lines.push(`**Selected:** «${clip(q, 160)}»`, "");

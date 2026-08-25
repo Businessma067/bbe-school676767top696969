@@ -29,7 +29,6 @@ async function embedQuery(
   }
 }
 
-
 const Input = z.object({
   stem: z.string().min(1),
   statement: z.string().min(1),
@@ -65,7 +64,6 @@ export const explainCase = createServerFn({ method: "POST" })
     } catch (err) {
       console.error("[explainCase] textbook retrieval failed", err);
     }
-
 
     const truthLabel = data.correctAnswer ? "TRUE" : "FALSE";
     const gateway = createLovableAiGatewayProvider(key, { structuredOutputs: true });
@@ -128,7 +126,9 @@ Produce a JSON object with EXACTLY these three fields:
         try {
           const match = error.text?.match(/\{[\s\S]*\}/);
           if (match) return Output_.parse(JSON.parse(match[0]));
-        } catch { /* ignore */ }
+        } catch {
+          /* ignore */
+        }
       }
       throw error;
     }

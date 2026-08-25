@@ -107,30 +107,30 @@ export function FloatingAssistant() {
     setInput("");
   }, [casePayload?.taskId]);
 
-  const replyInstant = useCallback((text: string, mode: "explain" | "ask") => {
-    const trimmed = text.trim();
-    if (!trimmed) return;
-    const userMsg: ChatMsg = { id: crypto.randomUUID(), role: "user", text: trimmed };
-    const caseNow = caseRef.current;
-    const answer = caseNow
-      ? answerFromCaseDatabase(caseNow, trimmed, mode, length)
-      : answerSiteFaq(trimmed);
-    const assistantMsg: ChatMsg = {
-      id: crypto.randomUUID(),
-      role: "assistant",
-      text: answer,
-    };
-    setMessages([...messagesRef.current, userMsg, assistantMsg]);
-    setInput("");
-  }, [length]);
-
-  const openWithExplain = useCallback(
-    (selection: string) => {
-      setOpen(true);
-      pendingExplainRef.current = selection.trim();
+  const replyInstant = useCallback(
+    (text: string, mode: "explain" | "ask") => {
+      const trimmed = text.trim();
+      if (!trimmed) return;
+      const userMsg: ChatMsg = { id: crypto.randomUUID(), role: "user", text: trimmed };
+      const caseNow = caseRef.current;
+      const answer = caseNow
+        ? answerFromCaseDatabase(caseNow, trimmed, mode, length)
+        : answerSiteFaq(trimmed);
+      const assistantMsg: ChatMsg = {
+        id: crypto.randomUUID(),
+        role: "assistant",
+        text: answer,
+      };
+      setMessages([...messagesRef.current, userMsg, assistantMsg]);
+      setInput("");
     },
-    [],
+    [length],
   );
+
+  const openWithExplain = useCallback((selection: string) => {
+    setOpen(true);
+    pendingExplainRef.current = selection.trim();
+  }, []);
 
   useEffect(() => {
     registerAssistant({
@@ -178,7 +178,9 @@ export function FloatingAssistant() {
               <Database className="h-4 w-4" />
             </div>
             <div className="min-w-0 flex flex-col leading-tight">
-              <span className="font-display text-sm font-semibold text-foreground">Case Assistant</span>
+              <span className="font-display text-sm font-semibold text-foreground">
+                Case Assistant
+              </span>
               {casePayload ? (
                 <span
                   className="truncate text-[10px] font-medium text-muted-foreground"
@@ -238,7 +240,10 @@ export function FloatingAssistant() {
                       <ReactMarkdown
                         remarkPlugins={[remarkGfm, remarkMath]}
                         rehypePlugins={[
-                          [rehypeKatex, { strict: false, trust: true, throwOnError: false, output: "html" }],
+                          [
+                            rehypeKatex,
+                            { strict: false, trust: true, throwOnError: false, output: "html" },
+                          ],
                         ]}
                       >
                         {preprocessMath(m.text)}

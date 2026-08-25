@@ -85,8 +85,7 @@ export function compressParagraph(text: string): string {
   const last = sentences[sentences.length - 1];
   const middle = sentences.slice(1, -1).filter((s) => !isPaddingSentence(s) && hasMeat(s));
   const meat =
-    middle.find((s) => /\d|%|€|\$|£|means |is the |defined |ratio |equals /i.test(s)) ??
-    middle[0];
+    middle.find((s) => /\d|%|€|\$|£|means |is the |defined |ratio |equals /i.test(s)) ?? middle[0];
 
   const kept: string[] = [];
   if (!isPaddingSentence(first) || !meat) {
@@ -121,9 +120,7 @@ export function compressExplanation(text: string): string {
 
   const header = paras.find(isHeaderPara);
   const math = paras.filter(isDisplayMathPara);
-  const body = paras.filter(
-    (p) => p !== header && !isDisplayMathPara(p) && !isNotePara(p),
-  );
+  const body = paras.filter((p) => p !== header && !isDisplayMathPara(p) && !isNotePara(p));
 
   const parts: string[] = [];
   if (header) {

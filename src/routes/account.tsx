@@ -246,7 +246,8 @@ function AccountPage() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="max-w-md text-sm text-muted-foreground">
               Short is the compressed version — verdict plus the key step. Full keeps the tutorial
-              write-up. The same switch sits in the practice header, so you can change it on a phone.
+              write-up. The same switch sits in the practice header, so you can change it on a
+              phone.
             </p>
             <ExplanationLengthToggle size="panel" />
           </div>

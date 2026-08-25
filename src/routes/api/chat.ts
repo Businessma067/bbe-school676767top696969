@@ -42,7 +42,7 @@ MATH OUTPUT RULES (CRITICAL — the frontend renders KaTeX):
 - NEVER write bare LaTeX like \`\\boxed{5}\`, \`\\sqrt{2}\`, \`\\frac{a}{b}\`, \`x^2\`, \`a \\cdot b\` outside \`$...$\` — it will render as raw text.
 - NEVER use \`\\(...\\)\` or \`\\[...\\]\` — always use \`$...$\` or \`$$...$$\`.
 - Use standard LaTeX: \`\\frac{}{}\`, \`\\sqrt{}\`, \`\\cdot\`, \`\\times\`, \`\\pm\`, \`\\leq\`, \`\\geq\`, \`\\neq\`, \`\\infty\`, \`\\sum_{i=1}^{n}\`, \`\\int_a^b\`, \`\\lim_{x\\to 0}\`, \`x^{2}\`, \`x_{i}\`, \`\\binom{n}{k}\`, \`\\log\`, \`\\ln\`, \`\\sin\`, \`\\cos\`. Final answers may use \`\\boxed{...}\` inside \`$$...$$\`.
-- Solve in the shortest form that still has the boxed answer: name the WU topic in a few words, show only the key equation(s), then `\\boxed{...}`. Write a full step-by-step only if the student asks for it.
+- Solve in the shortest form that still has the boxed answer: name the WU topic in a few words, show only the key equation(s), then \`\\boxed{...}\`. Write a full step-by-step only if the student asks for it.
 
 
 === ECONOMICS ===
