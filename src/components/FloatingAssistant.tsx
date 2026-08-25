@@ -13,6 +13,8 @@ import {
   type PracticeCasePayload,
 } from "@/lib/practice-case-context";
 import { answerFromCaseDatabase } from "@/lib/practice-case-kb";
+import { useExplanationLength } from "@/hooks/use-explanation-length";
+import { ExplanationLengthToggle } from "@/components/ExplanationLengthToggle";
 
 function preprocessMath(src: string): string {
   if (!src) return src;
@@ -79,6 +81,7 @@ function answerSiteFaq(query: string): string {
 export function FloatingAssistant() {
   const casePayload = usePracticeCase();
   const { registerAssistant } = usePracticeCaseActions();
+  const [length] = useExplanationLength();
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState("");
@@ -110,7 +113,7 @@ export function FloatingAssistant() {
     const userMsg: ChatMsg = { id: crypto.randomUUID(), role: "user", text: trimmed };
     const caseNow = caseRef.current;
     const answer = caseNow
-      ? answerFromCaseDatabase(caseNow, trimmed, mode)
+      ? answerFromCaseDatabase(caseNow, trimmed, mode, length)
       : answerSiteFaq(trimmed);
     const assistantMsg: ChatMsg = {
       id: crypto.randomUUID(),
@@ -119,7 +122,7 @@ export function FloatingAssistant() {
     };
     setMessages([...messagesRef.current, userMsg, assistantMsg]);
     setInput("");
-  }, []);
+  }, [length]);
 
   const openWithExplain = useCallback(
     (selection: string) => {
@@ -189,11 +192,12 @@ export function FloatingAssistant() {
                 </span>
               )}
             </div>
+            <ExplanationLengthToggle showLabel={false} className="ml-auto" />
             <button
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close"
-              className="ml-auto inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-muted-foreground hover:bg-secondary hover:text-foreground"
+              className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-muted-foreground hover:bg-secondary hover:text-foreground"
             >
               <X className="h-4 w-4" />
             </button>

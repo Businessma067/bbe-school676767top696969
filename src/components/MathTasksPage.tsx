@@ -5,7 +5,10 @@ import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMat
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TheoryReader } from "@/components/TheoryReader";
+import { ExplanationLengthToggle } from "@/components/ExplanationLengthToggle";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { applyExplanationLength } from "@/lib/explanation-length";
+import { useExplanationLength } from "@/hooks/use-explanation-length";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { recordTaskAttempt } from "@/lib/user-progress";
@@ -225,6 +228,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             <ChevronLeft className="h-4 w-4" />{" "}
             <span className="hidden sm:inline">{backLabel}</span>
           </Link>
+          <ExplanationLengthToggle />
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex flex-col items-end leading-tight">
               <span className="font-display text-sm font-bold tracking-tight">Mathematics</span>
@@ -1515,12 +1519,13 @@ function AllExplanationsPanel({
   index: number;
   onClose: () => void;
 }) {
+  const [length] = useExplanationLength();
   const letters = "ABCDEF";
   const body = [
-    task.solution_overview?.trim() ?? "",
+    applyExplanationLength(task.solution_overview, length),
     "",
     ...task.statements.flatMap((_, i) => {
-      const expl = (task.tactical_explanations[i] ?? "").trim();
+      const expl = applyExplanationLength(task.tactical_explanations[i], length);
       if (expl) return [expl, ""];
       const verdict = task.answer_key[i] ? "correct" : "false";
       return [
@@ -1538,19 +1543,22 @@ function AllExplanationsPanel({
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-            Full solution · Task {index + 1}
+            {length === "compact" ? "Short solution" : "Full solution"} · Task {index + 1}
           </p>
           <h3 className="mt-0.5 truncate font-display text-sm font-bold">
             <FlashcardMath text={task.title} />
           </h3>
         </div>
-        <button
-          type="button"
-          onClick={onClose}
-          className="shrink-0 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
-        >
-          Close
-        </button>
+        <div className="flex shrink-0 items-center gap-2">
+          <ExplanationLengthToggle showLabel={false} />
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
+          >
+            Close
+          </button>
+        </div>
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <MathAnswerKeyTable answerKey={task.answer_key} />

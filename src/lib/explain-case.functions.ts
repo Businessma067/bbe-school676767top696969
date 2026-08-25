@@ -34,6 +34,7 @@ const Input = z.object({
   stem: z.string().min(1),
   statement: z.string().min(1),
   correctAnswer: z.boolean(),
+  compact: z.boolean().optional(),
 });
 
 const Output_ = z.object({
@@ -69,7 +70,30 @@ export const explainCase = createServerFn({ method: "POST" })
     const truthLabel = data.correctAnswer ? "TRUE" : "FALSE";
     const gateway = createLovableAiGatewayProvider(key, { structuredOutputs: true });
 
-    const prompt = `You are the BBE School economics tutor. The official theory source is the BBE School Economics Full Course textbook (Introduction to Business & Economics, chapters 2–6) used inside this platform.
+    const compact = data.compact !== false;
+    const prompt = compact
+      ? `You are the BBE School economics tutor. The official theory source is the BBE School Economics Full Course textbook (Introduction to Business & Economics, chapters 2–6) used inside this platform.
+
+The exam question stem: "${data.stem}"
+
+The specific statement being evaluated: "${data.statement}"
+
+The correct answer is: ${truthLabel}
+
+Below are relevant retrieved passages from the BBE textbook. Use them as your source of truth.
+
+===== BOOK CONTEXT =====
+${passages || "(no strong retrieval hits — rely on well-established economics knowledge aligned with the BBE Full Course syllabus)"}
+========================
+
+Produce a JSON object with EXACTLY these three fields. Keep every field brutally short — phone / tweet length.
+
+1. "classic_explanation": ONE sentence (max 28 words) explaining WHY the statement is ${truthLabel}. No preamble ("The claim is correct"), no lists.
+
+2. "textbook_context": ONE sentence (max 22 words) paraphrased from the most relevant retrieved passage.
+
+3. "highlight_text": A verbatim 4-12 word substring from "textbook_context".`
+      : `You are the BBE School economics tutor. The official theory source is the BBE School Economics Full Course textbook (Introduction to Business & Economics, chapters 2–6) used inside this platform.
 
 The exam question stem: "${data.stem}"
 

@@ -1,4 +1,8 @@
 import type { PracticeCasePayload } from "@/lib/practice-case-context";
+import {
+  applyExplanationLength,
+  type ExplanationLength,
+} from "@/lib/explanation-length";
 
 function norm(s: string): string {
   return s
@@ -70,6 +74,7 @@ export function answerFromCaseDatabase(
   c: PracticeCasePayload,
   query: string,
   mode: "explain" | "ask" = "ask",
+  length: ExplanationLength = "compact",
 ): string {
   const q = query.trim();
   if (!q) {
@@ -78,6 +83,8 @@ export function answerFromCaseDatabase(
 
   const chunks = buildChunks(c);
   const hits = bestChunks(chunks, q, mode === "explain" ? 4 : 3);
+  const maxExpl = length === "compact" ? 420 : 1600;
+  const maxOther = length === "compact" ? 280 : 900;
 
   if (!hits.length) {
     const fallback = [
@@ -88,17 +95,13 @@ export function answerFromCaseDatabase(
       return [
         `**Case:** ${c.title}`,
         "",
-        "No tight match for that excerpt in the case bank. Closest authored note:",
-        "",
-        clip(fallback, 1400),
+        clip(applyExplanationLength(fallback, length), maxExpl),
       ].join("\n");
     }
     return [
       `**Case:** ${c.title}`,
       "",
-      "This case bank has the stem and statements, but no matching authored explanation chunk for that query yet.",
-      "",
-      clip(c.context || "No stem available.", 800),
+      clip(c.context || "No stem available.", maxOther),
     ].join("\n");
   }
 
@@ -108,25 +111,18 @@ export function answerFromCaseDatabase(
   ];
 
   if (mode === "explain") {
-    lines.push(`**Selected:** «${clip(q, 280)}»`, "");
-    lines.push(
-      "Pulled from the case database (authored stem + solution notes), not a free-form model guess:",
-      "",
-    );
-  } else {
-    lines.push("Answer from the case database:", "");
+    lines.push(`**Selected:** «${clip(q, 160)}»`, "");
   }
 
   for (const hit of hits) {
     lines.push(`### ${hit.label}`);
-    lines.push(clip(hit.text, hit.kind === "explanation" ? 1600 : 900));
-    lines.push("");
-  }
-
-  if (mode === "explain") {
     lines.push(
-      "_Tip: ask a follow-up about this case (e.g. “why is D false?”) and I will pull the matching statement note._",
+      clip(
+        applyExplanationLength(hit.text, length),
+        hit.kind === "explanation" ? maxExpl : maxOther,
+      ),
     );
+    lines.push("");
   }
 
   return lines.join("\n").trim();

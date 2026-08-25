@@ -9,6 +9,9 @@ import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, B
 import { TheoryReader } from "@/components/TheoryReader";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationText } from "@/components/ExplanationText";
+import { ExplanationLengthToggle } from "@/components/ExplanationLengthToggle";
+import { applyExplanationLength, loadExplanationLength } from "@/lib/explanation-length";
+import { useExplanationLength } from "@/hooks/use-explanation-length";
 import { scrubStatementHints } from "@/lib/case-context";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
@@ -155,7 +158,12 @@ function EconomicsTasks() {
     });
     try {
       const result = await explainFn({
-        data: { stem: caseData.context, statement: stmt, correctAnswer: correct },
+        data: {
+          stem: caseData.context,
+          statement: stmt,
+          correctAnswer: correct,
+          compact: loadExplanationLength() === "compact",
+        },
       });
       setExplanation((prev) => prev && prev.key === key
         ? { ...prev, loading: false, data: result as ExplanationData }
@@ -289,6 +297,7 @@ function EconomicsTasks() {
           <Link to="/products/full-course-subjects" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
             <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
           </Link>
+          <ExplanationLengthToggle />
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex flex-col items-end leading-tight">
               <span className="font-display text-sm font-bold tracking-tight">Economics</span>
@@ -812,6 +821,7 @@ function CaseCard({
   reviewOnly?: boolean;
   timerNote?: string | null;
 }) {
+  const [length] = useExplanationLength();
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
   const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
@@ -968,7 +978,7 @@ function CaseCard({
                   </button>
                   {openExpl[i] && (
                     <ExplanationText
-                      text={data.tactical_explanations[i]}
+                      text={applyExplanationLength(data.tactical_explanations[i], length)}
                       className={cn(
                         "mt-1 w-full rounded-md p-3 text-xs",
                         isCorrect
@@ -1147,6 +1157,7 @@ function ExplanationPanels({
   onClose: () => void;
   onRetry: () => void;
 }) {
+  const [length] = useExplanationLength();
   const [reveal, setReveal] = useState(false);
   const highlightRef = useRef<HTMLSpanElement | null>(null);
 
@@ -1210,11 +1221,14 @@ function ExplanationPanels({
           </div>
         )}
         {state.data && (
-          <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
+          <p className="text-sm leading-relaxed text-foreground">
+            {applyExplanationLength(state.data.classic_explanation, length)}
+          </p>
         )}
       </div>
 
       {/* Panel C: Textbook Canvas */}
+      {length === "full" && (
       <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
         <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
           <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
@@ -1240,6 +1254,7 @@ function ExplanationPanels({
           )}
         </div>
       </div>
+      )}
     </div>
   );
 }

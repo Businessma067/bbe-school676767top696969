@@ -3,6 +3,9 @@ import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
+import { ExplanationLengthToggle } from "@/components/ExplanationLengthToggle";
+import { applyExplanationLength } from "@/lib/explanation-length";
+import { useExplanationLength } from "@/hooks/use-explanation-length";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 
 export const Route = createFileRoute("/practice")({
@@ -36,6 +39,7 @@ type StatementRow = {
 
 function PracticePage() {
   const navigate = useNavigate();
+  const [length] = useExplanationLength();
   const [question, setQuestion] = useState<QuestionRow | null>(null);
   const [statements, setStatements] = useState<StatementRow[]>([]);
   const [answers, setAnswers] = useState<Record<string, boolean | undefined>>({});
@@ -118,6 +122,7 @@ function PracticePage() {
         <div className="flex items-center justify-between gap-3">
           <h1 className="text-2xl font-bold">Practice</h1>
           <div className="flex items-center gap-2">
+            <ExplanationLengthToggle />
             <PracticeCalculatorInline />
             {submitted && (
               <div className="rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold">
@@ -187,7 +192,7 @@ function PracticePage() {
 
                     {submitted && s.explanation && (
                       <p className="pl-6 text-sm text-muted-foreground border-l-2 border-border ml-2">
-                        {s.explanation}
+                        {applyExplanationLength(s.explanation, length)}
                       </p>
                     )}
                   </li>

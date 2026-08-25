@@ -6,7 +6,10 @@ import { AuthNav } from "@/components/AuthNav";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { ExplanationLengthToggle } from "@/components/ExplanationLengthToggle";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { applyExplanationLength } from "@/lib/explanation-length";
+import { useExplanationLength } from "@/hooks/use-explanation-length";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
@@ -232,6 +235,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               <ChevronLeft className="h-4 w-4" />{" "}
               <span className="hidden sm:inline">{backLabel}</span>
             </Link>
+            <ExplanationLengthToggle />
             <div className="flex items-center gap-3">
               <div className="hidden sm:flex flex-col items-end leading-tight">
                 <span className="font-display text-sm font-bold tracking-tight">English</span>
@@ -951,6 +955,7 @@ function CaseCard({
   explanationsOpen: boolean;
   onToggleExplanations: () => void;
 }) {
+  const [length] = useExplanationLength();
   const n = data.statements.length;
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
     data.statements.map(() => null),
@@ -1106,7 +1111,9 @@ function CaseCard({
                           </button>
                         )}
                       </div>
-                      <ExplanationProse text={data.tactical_explanations[i]} />
+                      <ExplanationProse
+                        text={applyExplanationLength(data.tactical_explanations[i], length)}
+                      />
                     </div>
                   )}
                   {isTexts && !(data.tactical_explanations[i] ?? "").trim() && (
@@ -1192,6 +1199,7 @@ function AllExplanationsPanel({
   onRequestShowInText: (i: number) => void;
   onClose: () => void;
 }) {
+  const [length] = useExplanationLength();
   const letters = "ABCDE";
 
   return (
@@ -1202,17 +1210,20 @@ function AllExplanationsPanel({
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-            Full solution · Task {index + 1}
+            {length === "compact" ? "Short solution" : "Full solution"} · Task {index + 1}
           </p>
           <h3 className="mt-0.5 truncate font-display text-sm font-bold">{task.title}</h3>
         </div>
-        <button
-          type="button"
-          onClick={onClose}
-          className="shrink-0 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
-        >
-          Close
-        </button>
+        <div className="flex shrink-0 items-center gap-2">
+          <ExplanationLengthToggle showLabel={false} />
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
+          >
+            Close
+          </button>
+        </div>
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         {task.solution_overview?.trim() && (
@@ -1220,13 +1231,13 @@ function AllExplanationsPanel({
             <p className="mb-3 text-[12px] font-bold uppercase tracking-widest text-foreground">
               Strategy overview
             </p>
-            <ExplanationProse text={task.solution_overview} />
+            <ExplanationProse text={applyExplanationLength(task.solution_overview, length)} />
           </section>
         )}
         <AnswerKeyTable answerKey={task.answer_key} />
         <div className="space-y-8">
           {task.statements.map((stmt, i) => {
-            const expl = (task.tactical_explanations[i] ?? "").trim();
+            const expl = applyExplanationLength(task.tactical_explanations[i], length);
             const letter = letters[i] ?? String(i + 1);
             const body = expl || `**${letter}) ${stmt}.**`;
             return (
@@ -1408,6 +1419,7 @@ function GrammarExplanationPanel({
   tactical: string;
   onClose: () => void;
 }) {
+  const [length] = useExplanationLength();
   const [reveal, setReveal] = useState(false);
   useEffect(() => {
     setReveal(false);
@@ -1471,7 +1483,7 @@ function GrammarExplanationPanel({
               Worked note
             </p>
             <p className="whitespace-pre-line text-[13px] leading-relaxed text-foreground">
-              {tactical}
+              {applyExplanationLength(tactical, length)}
             </p>
           </div>
         </div>

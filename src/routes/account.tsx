@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { SiteHeader } from "@/components/SiteHeader";
+import { ExplanationLengthToggle } from "@/components/ExplanationLengthToggle";
 import { friendlyAuthError } from "@/lib/auth-ui";
 import { isAdminEmail, resolveAppRole, type AppRole } from "@/lib/admin-access";
 
@@ -238,6 +239,16 @@ function AccountPage() {
               {savingPassword ? "Saving…" : "Update password"}
             </button>
             {resetMsg && <p className="text-xs text-muted-foreground">{resetMsg}</p>}
+          </div>
+        </Card>
+
+        <Card title="Solution length">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <p className="max-w-md text-sm text-muted-foreground">
+              Short is the compressed version — verdict plus the key step. Full keeps the tutorial
+              write-up. The same switch sits in the practice header, so you can change it on a phone.
+            </p>
+            <ExplanationLengthToggle size="panel" />
           </div>
         </Card>
 
