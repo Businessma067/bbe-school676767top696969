@@ -297,7 +297,6 @@ function EconomicsTasks() {
           <Link to="/products/full-course-subjects" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
             <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
           </Link>
-          <ExplanationLengthToggle />
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex flex-col items-end leading-tight">
               <span className="font-display text-sm font-bold tracking-tight">Economics</span>
@@ -305,6 +304,7 @@ function EconomicsTasks() {
             </div>
             <AuthNav />
           </div>
+          <ExplanationLengthToggle className="order-last w-full justify-center sm:order-none sm:w-auto" />
         </div>
       </header>
 

@@ -235,7 +235,6 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               <ChevronLeft className="h-4 w-4" />{" "}
               <span className="hidden sm:inline">{backLabel}</span>
             </Link>
-            <ExplanationLengthToggle />
             <div className="flex items-center gap-3">
               <div className="hidden sm:flex flex-col items-end leading-tight">
                 <span className="font-display text-sm font-bold tracking-tight">English</span>
@@ -245,6 +244,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               </div>
               <AuthNav />
             </div>
+            <ExplanationLengthToggle className="order-last w-full justify-center sm:order-none sm:w-auto" />
           </div>
         </header>
 

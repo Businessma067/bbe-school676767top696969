@@ -28,7 +28,7 @@ export function ExplanationLengthToggle({ className, size = "header", showLabel 
         <span
           className={cn(
             "shrink-0 font-bold uppercase tracking-widest text-muted-foreground",
-            compact ? "hidden text-[10px] sm:inline" : "text-[10px]",
+            compact ? "text-[9px] sm:text-[10px]" : "text-[10px]",
           )}
         >
           Answers
