@@ -768,7 +768,7 @@ $$|-2|=2\neq -2.$$""",
         context="After a planetarium talk the astronomy club leaves five mixed identities on the chalkboard: a difference of two squares, a four-term factorisation, a cancelled difference of cubes, a square-root quotient with no sign restriction, and a difference of absolute values. The five lines are independent.",
         items=[
             (
-                "Subtracting $(a-b)^2$ from $(a+b)^2$ is claimed to leave $4ab$ for every real pair $(a,b)$.",
+                "The difference of binomial squares $(a+b)^2-(a-b)^2$ is recorded as the monomial $4ab$ with no restriction on the letters.",
                 True,
                 r"""$$(a+b)^2=a^2+2ab+b^2,\qquad (a-b)^2=a^2-2ab+b^2.$$
 The difference is $4ab$.""",

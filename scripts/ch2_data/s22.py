@@ -67,7 +67,7 @@ The quantity $\dfrac{5}{x+y}$ is a different rational expression.""",
 $$\frac{2}{x}+\frac{3}{y}=\frac{2\cdot y+3\cdot x}{xy}=\frac{2y+3x}{xy}.$$""",
             ),
             (
-                r"Whenever the same denominator $x\neq 0$ is shared, the sum $\dfrac{2}{x}+\dfrac{3}{x}$ is rewritten as $\dfrac{5}{x}$.",
+                r"Adding unit fractions that already share the denominator $x\neq 0$, a clerk writes $\dfrac{2}{x}+\dfrac{3}{x}=\dfrac{5}{x}$.",
                 True,
                 r"""Equal denominators add in the numerators:
 $$\frac{2}{x}+\frac{3}{x}=\frac{2+3}{x}=\frac{5}{x}.$$""",
@@ -107,7 +107,7 @@ not $a+b$. Reciprocating a sum is not the same as summing the original letters."
                 r"""$$a^{-1}+b^{-1}=\frac{b+a}{ab},\qquad \bigl(a^{-1}+b^{-1}\bigr)^{-1}=\frac{ab}{a+b}.$$""",
             ),
             (
-                r"Whenever $a\neq b$ and $ab\neq 0$, the reciprocal $\bigl(\dfrac{1}{a}-\dfrac{1}{b}\bigr)^{-1}$ is identified with $\dfrac{ab}{b-a}$.",
+                r"Inverting the difference of unit fractions, $\bigl(\dfrac{1}{a}-\dfrac{1}{b}\bigr)^{-1}$ equals $\dfrac{ab}{b-a}$ as soon as $a\neq b$ and $ab\neq 0$.",
                 True,
                 r"""$$\frac{1}{a}-\frac{1}{b}=\frac{b-a}{ab},$$
 so
@@ -141,7 +141,7 @@ or $(a+b)^2=ab$, which is not an identity. The reciprocal of a sum is not the su
 for $x\neq -3$.""",
             ),
             (
-                r"On the domain $x\neq y$, the quotient $\dfrac{x^2-y^2}{x-y}$ is identified with $x+y$.",
+                r"Cancelling a difference of squares against $x-y$ (with $x\neq y$) leaves the surviving factor $x+y$.",
                 True,
                 r"""$$\frac{x^2-y^2}{x-y}=\frac{(x-y)(x+y)}{x-y}=x+y.$$""",
             ),
@@ -182,7 +182,7 @@ Its reciprocal is $\dfrac{x}{x+1}$, and adding $1$ gives
 $$1+\frac{x}{x+1}=\frac{x+1+x}{x+1}=\frac{2x+1}{x+1}.$$""",
             ),
             (
-                r"Whenever $x\neq 0$ and $x\neq -1$, the shorter nest $\dfrac{1}{1+\dfrac{1}{x}}$ is identified with $\dfrac{x}{x+1}$.",
+                r"Clearing only the inner layer, the shorter nest $\dfrac{1}{1+\dfrac{1}{x}}$ collapses to $\dfrac{x}{x+1}$ for $x\neq 0,-1$.",
                 True,
                 r"""$$1+\frac{1}{x}=\frac{x+1}{x},\qquad \frac{1}{1+\dfrac{1}{x}}=\frac{x}{x+1}.$$""",
             ),
@@ -226,12 +226,12 @@ $$(2x^{-1}-1)(2x^{-1}+1)=(2x^{-1})^2-1^2=\frac{4}{x^2}-1.$$""",
                 r"""The square is $(2/x)^2=4/x^2$, not $1/(4x^2)$. The latter would come from squaring $1/(2x)$ instead of $2/x$.""",
             ),
             (
-                r"Whenever $x\neq 0$, the square $(2x^{-1}-1)^2$ is written as $\dfrac{4}{x^2}-\dfrac{4}{x}+1$.",
+                r"Expanding the binomial $(2x^{-1}-1)^2$ is claimed to produce $\dfrac{4}{x^2}-\dfrac{4}{x}+1$ for every $x\neq 0$.",
                 True,
                 r"""$$\left(\frac{2}{x}-1\right)^2=\frac{4}{x^2}-2\cdot\frac{2}{x}\cdot 1+1=\frac{4}{x^2}-\frac{4}{x}+1.$$""",
             ),
             (
-                r"Provided $y\neq 0$, the signed quotient $\dfrac{4}{-2y}$ is identified with $-\dfrac{2}{y}$.",
+                r"The signed two-over-minus rewrite $\dfrac{4}{-2y}=-\dfrac{2}{y}$ is accepted for every $y\neq 0$.",
                 True,
                 r"""$$\frac{4}{-2y}=-\frac{4}{2y}=-\frac{2}{y}.$$
 No square is present, so the minus sign in the denominator survives.""",
@@ -266,7 +266,7 @@ Equivalently, the first quotient is $x+2$ and the second is $x-2$, and $(x+2)-(x
 The claimed remainder $x-2$ is $\dfrac{x^2-4}{x+2}$, a different numerator.""",
             ),
             (
-                r"Whenever $x\neq 3$, the quotient $\dfrac{x^2-6x+9}{x-3}$ is identified with $x-3$.",
+                r"After spotting a square, $\dfrac{x^2-6x+9}{x-3}$ is reduced to $x-3$ for $x\neq 3$.",
                 True,
                 r"""$$x^2-6x+9=(x-3)^2,\qquad \frac{(x-3)^2}{x-3}=x-3.$$""",
             ),
@@ -304,7 +304,7 @@ $$\frac{1}{x-2}-\frac{1}{x+2}=\frac{(x+2)-(x-2)}{x^2-4}=\frac{4}{x^2-4}.$$""",
 The numerator is $2$, not $1$.""",
             ),
             (
-                r"Whenever $x\neq \pm 1$, the sum $\dfrac{1}{1-x}+\dfrac{1}{1+x}$ is identified with $\dfrac{2}{1-x^2}$.",
+                r"Combining opposite linear denominators, $\dfrac{1}{1-x}+\dfrac{1}{1+x}$ becomes $\dfrac{2}{1-x^2}$ off $x=\pm 1$.",
                 True,
                 r"""$$\frac{1}{1-x}+\frac{1}{1+x}=\frac{(1+x)+(1-x)}{1-x^2}=\frac{2}{1-x^2}.$$""",
             ),
@@ -339,12 +339,12 @@ Dividing these gives
 $$\frac{x}{x+1}\cdot\frac{x-1}{x}=\frac{x-1}{x+1}.$$""",
             ),
             (
-                r"A marker instead records that same stack, still excluding $x\in\{-1,0,1\}$, as $\dfrac{x+1}{x-1}$.",
+                r"The flipped compound fraction is recorded as $\dfrac{x+1}{x-1}$ on the punctured set $x\notin\{-1,0,1\}$.",
                 False,
                 r"""The calculation of the previous line produces $\dfrac{x-1}{x+1}$. The claimed $\dfrac{x+1}{x-1}$ is the reciprocal of the correct simplification.""",
             ),
             (
-                r"Whenever $x\neq -1$, the elementary split $1-\dfrac{2}{x+1}$ is identified with $\dfrac{x-1}{x+1}$.",
+                r"Splitting off a constant, $1-\dfrac{2}{x+1}$ is rewritten as $\dfrac{x-1}{x+1}$ for $x\neq -1$.",
                 True,
                 r"""$$1-\frac{2}{x+1}=\frac{x+1-2}{x+1}=\frac{x-1}{x+1}.$$""",
             ),
@@ -423,7 +423,7 @@ $$\frac{1}{1-\dfrac{1}{1-\dfrac{1}{x}}}=-(x-1)=1-x.$$""",
                 r"""The algebra of the previous line produces $1-x=-(x-1)$. The claimed $x-1$ is the opposite sign.""",
             ),
             (
-                r"Whenever $x\neq 0$ and $x\neq 1$, the two-layer nest $\dfrac{1}{1-\dfrac{1}{x}}$ is identified with $\dfrac{x}{x-1}$.",
+                r"A minus nest $\dfrac{1}{1-\dfrac{1}{x}}$ is collapsed to $\dfrac{x}{x-1}$ once $x\neq 0,1$.",
                 True,
                 r"""$$1-\frac{1}{x}=\frac{x-1}{x},\qquad \frac{1}{1-\dfrac{1}{x}}=\frac{x}{x-1}.$$""",
             ),
@@ -456,12 +456,12 @@ $$1+\frac{x}{x+1}=\frac{2x+1}{x+1},\qquad \frac{1}{1+\dfrac{1}{1+\dfrac{1}{x}}}=
 $$\frac{x+1}{x^2}\cdot\frac{x^3}{x-1}=\frac{x(x+1)}{x-1}.$$""",
             ),
             (
-                r"A notebook records that same stacked quotient, excluding $x\in\{0,1\}$, as $\dfrac{x+1}{x-1}$.",
+                r"The stacked sibling is entered in a notebook as $\dfrac{x+1}{x-1}$ after excluding $x\in\{0,1\}$.",
                 False,
                 r"""The calculation keeps an extra factor $x$ from $x^3/x^2$. The correct simplified form is $\dfrac{x(x+1)}{x-1}$, not $\dfrac{x+1}{x-1}$.""",
             ),
             (
-                r"Whenever $x\neq 0$ and $x\neq 1$, the sibling stack $\dfrac{\dfrac{1}{x}+\dfrac{1}{x^2}}{\dfrac{1}{x}-\dfrac{1}{x^2}}$ is identified with $\dfrac{x+1}{x-1}$.",
+                r"Dividing matching geometric pieces, $\dfrac{\dfrac{1}{x}+\dfrac{1}{x^2}}{\dfrac{1}{x}-\dfrac{1}{x^2}}$ simplifies to $\dfrac{x+1}{x-1}$ for $x\neq 0,1$.",
                 True,
                 r"""Numerator $\dfrac{x+1}{x^2}$, denominator $\dfrac{x-1}{x^2}$, so the quotient is $\dfrac{x+1}{x-1}$.""",
             ),
@@ -494,12 +494,12 @@ Dividing cancels $b-a$ and leaves
 $$\frac{b-a}{ab}\cdot\frac{a^2b^2}{(b-a)(a+b)}=\frac{ab}{a+b}.$$""",
             ),
             (
-                r"A marker instead records that stacked quotient, for $ab\neq 0$, $a\neq b$, and $a\neq -b$, as $\dfrac{a+b}{ab}$.",
+                r"The two-letter stacked quotient is mis-filed as $\dfrac{a+b}{ab}$ even after excluding $ab=0$ and $a=\pm b$.",
                 False,
                 r"""The correct simplification is $\dfrac{ab}{a+b}$, the reciprocal of the claimed expression. Confusing a fraction with its reciprocal is the trap.""",
             ),
             (
-                r"Whenever $a\neq \pm b$ and $ab\neq 0$, the difference $\dfrac{1}{a^2}-\dfrac{1}{b^2}$ is identified with $\dfrac{b^2-a^2}{a^2b^2}$.",
+                r"Writing unit squares over $a^2b^2$, $\dfrac{1}{a^2}-\dfrac{1}{b^2}$ becomes $\dfrac{b^2-a^2}{a^2b^2}$ for $ab\neq 0$ and $a\neq\pm b$.",
                 True,
                 r"""$$\frac{1}{a^2}-\frac{1}{b^2}=\frac{b^2-a^2}{a^2b^2}.$$""",
             ),
@@ -538,7 +538,7 @@ The reciprocal is $\dfrac{x^2+1}{x(x^2+2)}$.""",
                 r"""The simplified form is $\dfrac{x^2+1}{x(x^2+2)}$. Omitting the factor $x$ in the denominator is the error.""",
             ),
             (
-                r"Whenever $x\neq 0$, the inner sum $x+\dfrac{1}{x}$ is identified with $\dfrac{x^2+1}{x}$.",
+                r"Putting $x+\dfrac{1}{x}$ over a single denominator produces $\dfrac{x^2+1}{x}$ for every $x\neq 0$.",
                 True,
                 r"""$$x+\frac{1}{x}=\frac{x^2}{x}+\frac{1}{x}=\frac{x^2+1}{x}.$$""",
             ),
@@ -548,7 +548,7 @@ The reciprocal is $\dfrac{x^2+1}{x(x^2+2)}$.""",
                 r"""$$x+\frac{1}{x+1}=\frac{x(x+1)+1}{x+1},\qquad \frac{1}{x+\dfrac{1}{x+1}}=\frac{x+1}{x(x+1)+1}.$$""",
             ),
             (
-                r"On the punctured line $x\neq 0$, a candidate claims $\bigl(x+\dfrac{1}{x}\bigr)^2=x^2+\dfrac{1}{x^2}$.",
+                r"Squaring $x+1/x$ without the cross term, a candidate writes $\bigl(x+\dfrac{1}{x}\bigr)^2=x^2+\dfrac{1}{x^2}$ for $x\neq 0$.",
                 False,
                 r"""$$\left(x+\frac{1}{x}\right)^2=x^2+2+\frac{1}{x^2}.$$
 The cross term $2\cdot x\cdot\dfrac{1}{x}=2$ is missing from the claim.""",
@@ -576,7 +576,7 @@ $$(x+2)-(x+1)+\frac{4}{x+1}=1+\frac{4}{x+1}=\frac{x+1+4}{x+1}=\frac{x+5}{x+1}.$$
                 r"""The algebra produces $\dfrac{x+5}{x+1}$. The claimed form is the reciprocal of the correct result.""",
             ),
             (
-                r"Whenever $x\neq 2$, the first piece $\dfrac{x^2-4}{x-2}$ is identified with $x+2$.",
+                r"The opening piece $\dfrac{x^2-4}{x-2}$ cancels to $x+2$ as soon as $x\neq 2$.",
                 True,
                 r"""$$\frac{(x-2)(x+2)}{x-2}=x+2.$$""",
             ),
@@ -610,12 +610,12 @@ Then
 $$\frac{4x}{x^2-4}\cdot\frac{x^2-4}{4x}=1.$$""",
             ),
             (
-                r"A candidate records that same product, still excluding $x\in\{-2,0,2\}$, as $4$.",
+                r"The product of those two cancelled pieces is entered as the constant $4$ off $x\in\{-2,0,2\}$.",
                 False,
                 r"""The two factors are reciprocals of each other (up to the matching $4x$), so the product is $1$, not $4$. The $4$ appears in an intermediate numerator and then cancels.""",
             ),
             (
-                r"Whenever $x\neq \pm 2$, the difference $\dfrac{x}{x-2}-\dfrac{x}{x+2}$ is identified with $\dfrac{4x}{x^2-4}$.",
+                r"Subtracting the pair $\dfrac{x}{x-2}-\dfrac{x}{x+2}$ yields $\dfrac{4x}{x^2-4}$ for $x\neq\pm 2$.",
                 True,
                 r"""As above,
 $$x\left(\frac{1}{x-2}-\frac{1}{x+2}\right)=x\cdot\frac{4}{x^2-4}=\frac{4x}{x^2-4}.$$""",
@@ -626,7 +626,7 @@ $$x\left(\frac{1}{x-2}-\frac{1}{x+2}\right)=x\cdot\frac{4}{x^2-4}=\frac{4x}{x^2-
                 r"""$$\frac{4x}{(x-2)(x+2)}\cdot\frac{x-2}{2}=\frac{4x}{2(x+2)}=\frac{2x}{x+2}.$$""",
             ),
             (
-                r"On the domain $x\neq \pm 2$, someone writes $\dfrac{x+2}{x-2}+\dfrac{x-2}{x+2}=\dfrac{2x}{x^2-4}$.",
+                r"Adding swapped linear ratios, a slip records $\dfrac{x+2}{x-2}+\dfrac{x-2}{x+2}=\dfrac{2x}{x^2-4}$ off $x=\pm 2$.",
                 False,
                 r"""$$\frac{(x+2)^2+(x-2)^2}{x^2-4}=\frac{2x^2+8}{x^2-4}=\frac{2(x^2+4)}{x^2-4}.$$
 The claimed numerator $2x$ belongs to a different combination.""",
@@ -648,12 +648,12 @@ $$(A-B)(A+B)=6\cdot(2x)=12x.$$
 Then $\dfrac{12x}{x}=12$ for $x\neq 0$.""",
             ),
             (
-                r"A marker instead treats $\dfrac{(x+3)^2-(x-3)^2}{x}$ for $x\neq 0$ as the constant $6$.",
+                r"The three-shift quotient $\dfrac{(x+3)^2-(x-3)^2}{x}$ is treated as constantly $6$ for $x\neq 0$.",
                 False,
                 r"""The product $(A-B)(A+B)=6\cdot 2x=12x$, so the quotient is $12$, not $6$. The $6$ is only $A-B$.""",
             ),
             (
-                r"Whenever $x\neq 0$, the sibling quotient $\dfrac{(x+2)^2-(x-2)^2}{x}$ is identified with $8$.",
+                r"The two-shift sibling $\dfrac{(x+2)^2-(x-2)^2}{x}$ collapses to the constant $8$ for $x\neq 0$.",
                 True,
                 r"""Here $A-B=4$ and $A+B=2x$, so the numerator is $8x$ and the quotient is $8$.""",
             ),
@@ -694,7 +694,7 @@ for $2x\neq -3$.""",
 for $x\neq 4$. The claimed remainder $x-4$ is the cancelled factor.""",
             ),
             (
-                r"Whenever $x\neq -1$, the sum $\dfrac{x}{x+1}+\dfrac{1}{x+1}$ is identified with $1$.",
+                r"Adding the matching denominators $\dfrac{x}{x+1}+\dfrac{1}{x+1}$ produces $1$ for $x\neq -1$.",
                 True,
                 r"""$$\frac{x+1}{x+1}=1.$$""",
             ),
@@ -730,7 +730,7 @@ for $x\neq \pm 2$. The quotient is the constant $2$, not the letter $x$.""",
 The surviving numerator is $x+2$, not $x-2$.""",
             ),
             (
-                r"Whenever $x\neq \pm 3$, the quotient $\dfrac{x^2-5x+6}{x^2-9}$ is identified with $\dfrac{x-2}{x+3}$.",
+                r"Factoring both ends of $\dfrac{x^2-5x+6}{x^2-9}$ reduces it to $\dfrac{x-2}{x+3}$ off $x=\pm 3$.",
                 True,
                 r"""$$x^2-5x+6=(x-2)(x-3),\qquad x^2-9=(x-3)(x+3),$$
 so
@@ -738,7 +738,7 @@ $$\frac{(x-2)(x-3)}{(x-3)(x+3)}=\frac{x-2}{x+3}$$
 for $x\neq \pm 3$. (The cancelled root $x=3$ is already among those exclusions.)""",
             ),
             (
-                r"Provided $x\neq \pm 2$, reducing $\dfrac{3x-6}{x^2-4}$ is claimed to leave $\dfrac{3}{x+2}$.",
+                r"Factoring the linear numerator of $\dfrac{3x-6}{x^2-4}$ is claimed to leave $\dfrac{3}{x+2}$ off $x=\pm 2$.",
                 True,
                 r"""$$\frac{3(x-2)}{(x-2)(x+2)}=\frac{3}{x+2}.$$""",
             ),
@@ -770,7 +770,7 @@ The extra term vanishes only if $xy=0$, not identically.""",
                 r"""$$\frac{(x+y)^2}{x+y}=x+y.$$""",
             ),
             (
-                r"Whenever $x\neq y$, the companion $\dfrac{x^2-2xy+y^2}{x-y}$ is identified with $x-y$.",
+                r"The perfect-square companion $\dfrac{x^2-2xy+y^2}{x-y}$ is reduced to $x-y$ for $x\neq y$.",
                 True,
                 r"""$$\frac{(x-y)^2}{x-y}=x-y.$$""",
             ),
@@ -802,12 +802,12 @@ There is no $4x$ cross term in $x^2+4$, so the quotient is not $x+2$.""",
 $$\frac{a^2-b^2}{ab}\cdot\frac{ab}{a^2+b^2}=\frac{a^2-b^2}{a^2+b^2}.$$""",
             ),
             (
-                r"A candidate records that same stack, still for $ab\neq 0$, as $\dfrac{a^2+b^2}{a^2-b^2}$.",
+                r"The $a/b$ versus $b/a$ stack is entered as $\dfrac{a^2+b^2}{a^2-b^2}$ for $ab\neq 0$.",
                 False,
                 r"""The algebra produces $\dfrac{a^2-b^2}{a^2+b^2}$. The claimed form is the reciprocal (and would also require $a\neq \pm b$).""",
             ),
             (
-                r"Whenever $ab\neq 0$, the difference $\dfrac{a}{b}-\dfrac{b}{a}$ is identified with $\dfrac{a^2-b^2}{ab}$.",
+                r"Subtracting the swapped ratios $\dfrac{a}{b}-\dfrac{b}{a}$ produces $\dfrac{a^2-b^2}{ab}$ as soon as $ab\neq 0$.",
                 True,
                 r"""$$\frac{a}{b}-\frac{b}{a}=\frac{a^2-b^2}{ab}.$$""",
             ),
@@ -842,7 +842,7 @@ The letters in each numerator term follow the opposite denominator, so the corre
                 r"""The square $(-2y)^2=4y^2$ is positive, so the quotient is $\dfrac{2}{y}$, not $-\dfrac{2}{y}$. A minus would survive only if the square were omitted from that factor.""",
             ),
             (
-                r"Whenever $y\neq 0$, the unsigned cousin $\dfrac{4}{(-2y)^2}$ is identified with $\dfrac{1}{y^2}$.",
+                r"Squaring the minus in the denominator, $\dfrac{4}{(-2y)^2}$ equals $\dfrac{1}{y^2}$ for every $y\neq 0$.",
                 True,
                 r"""$$\frac{4}{4y^2}=\frac{1}{y^2}.$$""",
             ),
@@ -878,7 +878,7 @@ The claimed $\dfrac{2}{y}$ would require an extra factor $2$ in the numerator, a
                 r"""The expression $\dfrac{2ab}{a+b}$ is not the arithmetic mean $\dfrac{a+b}{2}$. They agree only in special cases (for instance $a=b$), not identically.""",
             ),
             (
-                r"Whenever $abc\neq 0$ and $ab+bc+ca\neq 0$, three times the reciprocal of $\dfrac{1}{a}+\dfrac{1}{b}+\dfrac{1}{c}$ equals $\dfrac{3abc}{ab+bc+ca}$.",
+                r"Tripling the reciprocal of $\dfrac{1}{a}+\dfrac{1}{b}+\dfrac{1}{c}$ is claimed to equal $\dfrac{3abc}{ab+bc+ca}$ when $abc(ab+bc+ca)\neq 0$.",
                 True,
                 r"""$$\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=\frac{ab+bc+ca}{abc},$$
 so
@@ -918,7 +918,7 @@ $$\frac{bc}{abc}+\frac{ac}{abc}+\frac{ab}{abc}=\frac{bc+ac+ab}{abc}.$$""",
                 r"""Each numerator after clearing is the product of the other two letters, not the leftover single letter. The correct numerator is $bc+ac+ab$, not $a+b+c$.""",
             ),
             (
-                r"Whenever $ab\neq 0$, the two-letter sum $\dfrac{1}{2a}+\dfrac{1}{2b}$ is identified with $\dfrac{a+b}{2ab}$.",
+                r"Halves of unit fractions, $\dfrac{1}{2a}+\dfrac{1}{2b}$, combine to $\dfrac{a+b}{2ab}$ for $ab\neq 0$.",
                 True,
                 r"""$$\frac{1}{2a}+\frac{1}{2b}=\frac{b+a}{2ab}=\frac{a+b}{2ab}.$$""",
             ),
@@ -948,17 +948,17 @@ for $a\neq \pm b$. The surviving denominator is the sum $a+b$, not the cancelled
                 r"""$$x^2-5x+6=(x-2)(x-3),\qquad \frac{x-2}{(x-2)(x-3)}=\frac{1}{x-3}.$$""",
             ),
             (
-                r"A marker instead records that reduced form, excluding $x\in\{2,3\}$, as $\dfrac{1}{x-2}$.",
+                r"The reduced split is mis-copied as $\dfrac{1}{x-2}$ after excluding the poles $x\in\{2,3\}$.",
                 False,
                 r"""The cancelled factor is $x-2$, so what remains in the denominator is $x-3$. The claimed $\dfrac{1}{x-2}$ keeps the cancelled factor and drops the surviving one.""",
             ),
             (
-                r"Whenever $x\neq 2$ and $x\neq 3$, the reciprocal-looking split $\dfrac{1}{x-2}-\dfrac{1}{x-3}$ equals $\dfrac{-1}{(x-2)(x-3)}$.",
+                r"Subtracting neighbouring unit factors, $\dfrac{1}{x-2}-\dfrac{1}{x-3}$ equals $\dfrac{-1}{(x-2)(x-3)}$ off $x=2,3$.",
                 True,
                 r"""$$\frac{1}{x-2}-\frac{1}{x-3}=\frac{(x-3)-(x-2)}{(x-2)(x-3)}=\frac{-1}{(x-2)(x-3)}.$$""",
             ),
             (
-                r"Provided $x\neq 0$ and $x\neq \pm 1$, the sum $\dfrac{1}{x(x+1)}+\dfrac{1}{x(x-1)}$ is identified with $\dfrac{2}{x^2-1}$.",
+                r"The pair $\dfrac{1}{x(x+1)}+\dfrac{1}{x(x-1)}$ is combined to $\dfrac{2}{x^2-1}$ for $x\neq 0,\pm 1$.",
                 True,
                 r"""$$\frac{1}{x(x+1)}+\frac{1}{x(x-1)}=\frac{(x-1)+(x+1)}{x(x^2-1)}=\frac{2x}{x(x^2-1)}=\frac{2}{x^2-1}.$$""",
             ),
@@ -988,12 +988,12 @@ Since $b-a=-(a-b)$, this is
 $$\frac{-(a-b)}{ab(a-b)}=-\frac{1}{ab}.$$""",
             ),
             (
-                r"A candidate records that same sum, for $ab\neq 0$ and $a\neq b$, as $+\dfrac{1}{ab}$.",
+                r"The opposite linear pair is entered with a plus sign as $+\dfrac{1}{ab}$ even after $ab\neq 0$ and $a\neq b$.",
                 False,
                 r"""The algebra produces $-\dfrac{1}{ab}$. The extra minus comes from $b-a=-(a-b)$ and is easy to drop.""",
             ),
             (
-                r"Whenever $a\neq b$, the bare pair $\dfrac{1}{a-b}+\dfrac{1}{b-a}$ is identified with $0$.",
+                r"Adding opposite linear unit fractions $\dfrac{1}{a-b}+\dfrac{1}{b-a}$ is claimed to vanish for every $a\neq b$.",
                 True,
                 r"""$$\frac{1}{b-a}=-\frac{1}{a-b},$$
 so the two unit fractions cancel.""",
@@ -1004,7 +1004,7 @@ so the two unit fractions cancel.""",
                 r"""$$\frac{1}{a(a+b)}+\frac{1}{b(a+b)}=\frac{b+a}{ab(a+b)}=\frac{1}{ab}.$$""",
             ),
             (
-                r"With $ab\neq 0$ and $a\neq b$, someone writes $\dfrac{ab}{a-b}+\dfrac{ab}{b-a}=ab$.",
+                r"Opposite linear denominators are added as $\dfrac{ab}{a-b}+\dfrac{ab}{b-a}=ab$ after $ab\neq 0$ and $a\neq b$.",
                 False,
                 r"""The second term is the opposite of the first:
 $$\frac{ab}{b-a}=-\frac{ab}{a-b},$$
@@ -1026,12 +1026,12 @@ so the sum is $0$, not $ab$.""",
 $$\frac{(x^2-1)+x(x-1)+x(x+1)}{x(x^2-1)}=\frac{x^2-1+x^2-x+x^2+x}{x(x^2-1)}=\frac{3x^2-1}{x(x^2-1)}.$$""",
             ),
             (
-                r"A notebook records that same sum, excluding $x\in\{-1,0,1\}$, as $\dfrac{3x^2}{x(x^2-1)}$.",
+                r"The three-pole sum is copied into a notebook as $\dfrac{3x^2}{x(x^2-1)}$ after excluding $x\in\{-1,0,1\}$.",
                 False,
                 r"""The numerator is $3x^2-1$, not $3x^2$. The constant $-1$ comes from the product $(x-1)(x+1)$ attached to the summand $1/x$.""",
             ),
             (
-                r"Whenever $x\notin\{1,2,3\}$, the sum $\dfrac{1}{x-1}+\dfrac{1}{x-2}+\dfrac{1}{x-3}$ is identified with $\dfrac{3x^2-12x+11}{(x-1)(x-2)(x-3)}$.",
+                r"Three neighbouring unit fractions $\dfrac{1}{x-1}+\dfrac{1}{x-2}+\dfrac{1}{x-3}$ combine to $\dfrac{3x^2-12x+11}{(x-1)(x-2)(x-3)}$ off $\{1,2,3\}$.",
                 True,
                 r"""The numerator is
 $$(x-2)(x-3)+(x-1)(x-3)+(x-1)(x-2).$$
@@ -1044,7 +1044,7 @@ $$(x^2-5x+6)+(x^2-4x+3)+(x^2-3x+2)=3x^2-12x+11.$$""",
                 r"""$$\frac{(x^2-4)+x(x-2)+x(x+2)}{x(x^2-4)}=\frac{x^2-4+x^2-2x+x^2+2x}{x(x^2-4)}=\frac{3x^2-4}{x(x^2-4)}.$$""",
             ),
             (
-                r"On the domain $x\neq \pm 1$ and $x\neq \pm 2$, someone writes $\dfrac{1}{x^2-4}-\dfrac{1}{x^2-1}=\dfrac{3}{x^2-4}$.",
+                r"Subtracting reciprocal quadratics, a note claims $\dfrac{1}{x^2-4}-\dfrac{1}{x^2-1}=\dfrac{3}{x^2-4}$ away from $x=\pm 1,\pm 2$.",
                 False,
                 r"""The common denominator is $(x^2-4)(x^2-1)$:
 $$\frac{(x^2-1)-(x^2-4)}{(x^2-4)(x^2-1)}=\frac{3}{(x^2-4)(x^2-1)}.$$
@@ -1073,7 +1073,7 @@ $$\left(\frac{a}{b}+\frac{b}{a}\right)^2=\frac{(a^2+b^2)^2}{a^2b^2}.$$""",
 The claimed numerator $a^2-b^2$ matches $\dfrac{a}{b}-\dfrac{b}{a}$, not the swapped order.""",
             ),
             (
-                r"Whenever $xy\neq 0$ and $x\neq -y$, the stacked ratio $\dfrac{\dfrac{2}{x}-\dfrac{3}{y}}{\dfrac{1}{x}+\dfrac{1}{y}}$ equals $\dfrac{2y-3x}{x+y}$.",
+                r"The stacked ratio $\dfrac{\dfrac{2}{x}-\dfrac{3}{y}}{\dfrac{1}{x}+\dfrac{1}{y}}$ reduces to $\dfrac{2y-3x}{x+y}$ for $xy\neq 0$ and $x\neq -y$.",
                 True,
                 r"""The numerator is $\dfrac{2y-3x}{xy}$ and the denominator is $\dfrac{y+x}{xy}$, so the stack is
 $$\frac{2y-3x}{xy}\cdot\frac{xy}{x+y}=\frac{2y-3x}{x+y}.$$""",
@@ -1086,7 +1086,7 @@ $$x^3-y^3=(x-y)(x^2+xy+y^2),$$
 so the quotient is $x-y$ for $x\neq y$.""",
             ),
             (
-                r"With $x\neq \pm 2$, someone writes $\dfrac{x+2}{x-2}-\dfrac{x-2}{x+2}=\dfrac{4x}{x^2-4}$.",
+                r"A swapped-ratio difference is recorded as $\dfrac{x+2}{x-2}-\dfrac{x-2}{x+2}=\dfrac{4x}{x^2-4}$ once $x\neq\pm 2$.",
                 False,
                 r"""Let $A=x+2$ and $B=x-2$. Then $A-B=4$ and $A+B=2x$, so
 $$\frac{A}{B}-\frac{B}{A}=\frac{A^2-B^2}{AB}=\frac{(A-B)(A+B)}{x^2-4}=\frac{8x}{x^2-4}.$$
@@ -1117,7 +1117,7 @@ $$1+\frac{x+1}{2x+1}=\frac{2x+1+x+1}{2x+1}=\frac{3x+2}{2x+1}.$$""",
                 r"""The value is $\dfrac{3x+2}{2x+1}$. The claimed form is the reciprocal.""",
             ),
             (
-                r"Whenever $x\neq 2$, the cubic cancellation $\dfrac{x^3-8}{x-2}$ is identified with $x^2+2x+4$.",
+                r"Cancelling the cube $x^3-8$ against $x-2$ leaves $x^2+2x+4$ for $x\neq 2$.",
                 True,
                 r"""$$x^3-8=(x-2)(x^2+2x+4),$$
 so the quotient is $x^2+2x+4$ for $x\neq 2$.""",
@@ -1155,14 +1155,14 @@ for $x\neq \pm 1$.""",
 The cross term $\dfrac{2}{xy}$ is missing from the claim.""",
             ),
             (
-                r"Whenever $x\neq \pm 1$, the difference $\dfrac{1}{(x-1)^2}-\dfrac{1}{(x+1)^2}$ equals $\dfrac{4x}{(x^2-1)^2}$.",
+                r"Subtracting reciprocal squares $\dfrac{1}{(x-1)^2}-\dfrac{1}{(x+1)^2}$ produces $\dfrac{4x}{(x^2-1)^2}$ off $x=\pm 1$.",
                 True,
                 r"""Over the common denominator $(x-1)^2(x+1)^2=(x^2-1)^2$,
 $$\frac{(x+1)^2-(x-1)^2}{(x^2-1)^2}=\frac{\bigl((x+1)-(x-1)\bigr)\bigl((x+1)+(x-1)\bigr)}{(x^2-1)^2}.$$
 The first parenthesis is $2$ and the second is $2x$, so the numerator is $4x$.""",
             ),
             (
-                r"Provided $x\neq y$ and $x\neq -y$, the quotient $\dfrac{(x-y)^2}{x^2-y^2}$ is identified with $\dfrac{x-y}{x+y}$.",
+                r"The squared-difference quotient $\dfrac{(x-y)^2}{x^2-y^2}$ reduces to $\dfrac{x-y}{x+y}$ for $x\neq\pm y$.",
                 True,
                 r"""$$\frac{(x-y)^2}{(x-y)(x+y)}=\frac{x-y}{x+y}.$$""",
             ),
