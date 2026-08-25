@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import {
   BbeDemoCta,
   BbeFullPrepCta,
+  BbeGhostButton,
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
@@ -12,9 +14,7 @@ import {
   BBE_EXAM_FORMAT,
   BBE_FORMAT_NOTE,
   BBE_PRACTICE_ROUTES,
-  MATH_TOPICS,
 } from "@/config/bbe-exam-hub";
-import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/bbe-mathematics")({
   head: () => ({
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/bbe-mathematics")({
       {
         name: "description",
         content:
-          "What mathematics is on the WU Vienna BBE entrance exam? Topic breakdown, preparation order, common mistakes, a sample question, and links to BBE math practice.",
+          "WU Vienna BBE mathematics syllabus and preparation: algebra, functions, differentiation, probability, binomial distribution and financial mathematics — with BBE-style practice links.",
       },
       {
         property: "og:title",
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/bbe-mathematics")({
       {
         property: "og:description",
         content:
-          "Complete BBE mathematics topic guide with preparation advice and practice links.",
+          "How BBE mathematics works, what is tested, and how to prepare for accuracy and speed.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What mathematics is on the BBE exam?",
     answer:
-      "Logic, elementary algebra, elementary financial mathematics, equations, linear equations in two unknowns, inequalities, linear and quadratic functions, power functions, polynomial functions, exponential and logarithmic functions, differentiation and single-variable optimization, elementary probability, and binomial distribution.",
+      "The official syllabus covers logic, elementary algebra, elementary financial mathematics, equations, linear equations in two unknowns, inequalities, linear and quadratic functions, power functions, polynomial functions, exponential and logarithmic functions, differentiation and single-variable optimization, elementary probability, and binomial distribution.",
   },
   {
     question: "How many math questions are there?",
@@ -58,9 +58,9 @@ const faqs = [
     answer: "Yes — a formula sheet is provided at the exam.",
   },
   {
-    question: "Is probability included?",
+    question: "Why is BBE mathematics time-consuming?",
     answer:
-      "Yes — elementary probability (including conditional probability / Bayes-style reasoning) and binomial distribution.",
+      "Many questions require evaluating several statements individually, so one stem can mean multiple calculations. Accuracy and speed both need practice.",
   },
   {
     question: "What calculator can I use?",
@@ -69,45 +69,28 @@ const faqs = [
   },
 ];
 
-const sampleOptions = [
-  {
-    letter: "A",
-    text: "The overall probability that a randomly selected component is defective is 3.8%.",
-    answer: "True",
-  },
-  {
-    letter: "B",
-    text: "Given that the component is defective, it is more likely to have come from Supplier B than Supplier A.",
-    answer: "True",
-  },
-  {
-    letter: "C",
-    text: "P(A | defective) is exactly 60%, the same as the prior P(A).",
-    answer: "False",
-  },
-];
-
 function BbeMathematicsPage() {
   return (
     <BbeExamShell
       jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Mathematics: Topics, Syllabus & Practice"
-      lead="What mathematics appears on the WU Vienna BBE entrance exam, how the section fits the overall paper, and how to prepare topic by topic with BBE-style practice."
+      lead="Mathematics is one of the three sections of the BBE entrance exam. Learn what is tested, why the section is time-consuming, and how to prepare topic by topic."
       heroActions={
         <BbePrimaryButton to={BBE_PRACTICE_ROUTES.math}>Practice BBE Mathematics</BbePrimaryButton>
       }
     >
       <div className="space-y-14">
-        <BbeSection id="introduction" title="Introduction">
+        <BbeSection id="introduction" title="Mathematics">
           <p>
-            Mathematics is the section most applicants treat as the preparation bottleneck: broad syllabus,
-            varied question styles across years, and a large share of exam time. This guide walks through
-            the topic list used in BBE School’s preparation materials, aligned with the mathematics areas
-            described in the BBE Entrance Exam Guide.
+            Mathematics is one of the three sections of the BBE entrance exam. The syllabus covers a broad
+            range of topics, from algebra and equations to functions, differentiation, probability, binomial
+            distribution and financial mathematics.
           </p>
-        </BbeSection>
-
-        <BbeSection id="role" title="Role of mathematics in the BBE exam">
+          <p>
+            The mathematics section is not necessarily challenging because the individual concepts are
+            unusually advanced. The main challenge is often the amount of work required per question and the
+            time available.
+          </p>
           <BbeStatGrid
             items={[
               {
@@ -127,148 +110,308 @@ function BbeMathematicsPage() {
             {BBE_EXAM_FORMAT.questionCount} questions with approximately{" "}
             {BBE_EXAM_FORMAT.scoreWeighting.mathematics} score weighting.
           </BbeInfoCallout>
-          <p>
-            Plan for mathematics to take a large share of the two hours — many applicants budget well over
-            an hour here so Economics and English can be completed without rushing earlier.
-          </p>
         </BbeSection>
 
-        <BbeSection id="overview" title="Mathematics exam overview">
+        <BbeSection id="time-consuming" title="Why BBE Mathematics can be time-consuming">
           <p>
-            The level is comparable to Austria’s “Standardised Competence-Oriented Written School-Leaving
-            Examination.” Questions use the same multi-statement format as the rest of the paper: evaluate
-            each option independently under one stem. A formula sheet is provided; calculators must be on
-            WU’s permitted list.
+            Many BBE mathematics questions present several statements that have to be evaluated individually.
+            Instead of finding one answer and moving on, you may need to solve or verify multiple statements
+            within the same question.
           </p>
           <p>
-            WU varies question styles within these topics from year to year. Memorising a narrow set of
-            “typical” drills is weaker preparation than practising volume and variety until unfamiliar
-            wording stops slowing you down.
+            For example, a five-option question may require five separate calculations or pieces of
+            reasoning.
+          </p>
+          <p>
+            This means that even when you know the mathematics, you can lose a significant amount of time if
+            you:
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>spend too long on one statement;</li>
+            <li>recalculate unnecessarily;</li>
+            <li>make small algebraic or sign errors;</li>
+            <li>don&apos;t recognize the required method quickly;</li>
+            <li>fail to check all of the statements.</li>
+          </ul>
+          <p>
+            For BBE Mathematics, preparation therefore needs to train both accuracy and speed.
           </p>
           <BbeTextLink to="/bbe-exam-scoring">Learn how BBE partial-credit scoring works →</BbeTextLink>
         </BbeSection>
 
-        <BbeSection id="topics" title="Complete topic breakdown">
-          <BbeInfoCallout label="Topic list source" tone="official">
-            The topic areas below match the mathematics syllabus described in the BBE Entrance Exam Guide
-            (logic through binomial distribution). Within BBE School practice, these areas are organised as
-            chapters so you can drill one theme at a time.
-          </BbeInfoCallout>
-          <BbeInfoCallout label="BBE School recommendation" tone="advice">
-            Use the order further down this page if you are rebuilding fundamentals: algebra and equations
-            before functions, then calculus/optimisation, then probability and binomial. Always finish with
-            mixed BBE-style stems under time pressure.
-          </BbeInfoCallout>
+        <BbeSection id="what-is-tested" title="What Mathematics is tested?">
+          <TopicBlock title="Algebra &amp; Equations">
+            <p>The mathematics syllabus begins with the fundamentals:</p>
+            <ul className="list-disc space-y-1.5 pl-5">
+              <li>Logic</li>
+              <li>Elementary algebra</li>
+              <li>Equations</li>
+              <li>Linear equations in two unknowns</li>
+            </ul>
+            <p>
+              These skills are also used throughout other parts of the mathematics section, so weaknesses in
+              algebra can affect your performance on otherwise unrelated topics.
+            </p>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>Practice Algebra &amp; Equations →</BbeTextLink>
+          </TopicBlock>
 
+          <TopicBlock title="Inequalities">
+            <p>Inequalities are an important part of the BBE mathematics preparation.</p>
+            <p>
+              You should be comfortable solving inequalities and interpreting their solution sets, including
+              questions involving different algebraic forms and boundary conditions.
+            </p>
+            <p>
+              Because several answer statements may need to be checked separately, being able to solve
+              inequalities quickly and reliably is particularly useful in the exam.
+            </p>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>Practice BBE Inequalities →</BbeTextLink>
+          </TopicBlock>
+
+          <TopicBlock title="Functions">
+            <p>The syllabus includes:</p>
+            <ul className="list-disc space-y-1.5 pl-5">
+              <li>Linear functions</li>
+              <li>Quadratic functions</li>
+              <li>Power functions</li>
+              <li>Polynomial functions</li>
+              <li>Exponential functions</li>
+              <li>Logarithmic functions</li>
+            </ul>
+            <p>
+              Preparation should cover both the algebraic side of functions and their interpretation,
+              including properties and graphs.
+            </p>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>Practice BBE Functions →</BbeTextLink>
+          </TopicBlock>
+
+          <TopicBlock title="Differentiation &amp; Optimization">
+            <p>The syllabus includes:</p>
+            <ul className="list-disc space-y-1.5 pl-5">
+              <li>Differentiation</li>
+              <li>Single-variable optimization</li>
+              <li>Extreme-value problems</li>
+            </ul>
+            <p>
+              These topics can require several steps in one problem: understanding the function,
+              differentiating it, finding relevant points and interpreting the result.
+            </p>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>
+              Practice Differentiation &amp; Optimization →
+            </BbeTextLink>
+          </TopicBlock>
+
+          <TopicBlock title="Probability &amp; Binomial Distribution">
+            <p>Probability deserves particular attention because it contains several distinct types of problems.</p>
+            <p>The core areas to prepare are:</p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Elementary Probability
+            </h4>
+            <p>
+              You should understand the basic rules and relationships used to calculate probabilities and
+              combine events.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Conditional Probability
+            </h4>
+            <p>
+              Conditional probability is one of the key probability topics to focus on. Questions can require
+              you to determine how the probability of an event changes when additional information is given.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">Bayes&apos; Theorem</h4>
+            <p>
+              Bayes&apos; theorem is another particularly important area for preparation. You should be
+              comfortable identifying when a problem requires you to reverse conditional probabilities and
+              working through the relevant probabilities carefully.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">Independence</h4>
+            <p>
+              You should also understand the difference between dependent and independent events and how
+              independence affects probability calculations.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Binomial Distribution
+            </h4>
+            <p>
+              Binomial distribution is explicitly included in the BBE mathematics syllabus and should be
+              prepared alongside the broader probability topics.
+            </p>
+            <p>
+              You should be comfortable identifying when a binomial model applies and calculating the
+              relevant probabilities.
+            </p>
+
+            <BbeInfoCallout label="Official syllabus vs preparation depth" tone="official">
+              Elementary probability and binomial distribution are part of the official topic list.
+              Conditional probability, Bayes&apos; theorem and independence are emphasised here as BBE School
+              preparation within the probability area — useful for exam-style reasoning, not as separately
+              confirmed standalone WU syllabus headings.
+            </BbeInfoCallout>
+
+            <BbeInfoCallout label="BBE preparation tip" tone="advice">
+              Don&apos;t treat probability as one single topic. Make sure you can distinguish elementary
+              probability, conditional probability, Bayes&apos; theorem, independence and binomial
+              distribution. The correct method often depends on recognizing which type of probability problem
+              you are dealing with.
+            </BbeInfoCallout>
+
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>Practice BBE Probability →</BbeTextLink>
+          </TopicBlock>
+
+          <TopicBlock title="Financial Mathematics">
+            <p>
+              Financial mathematics is another area where the BBE School preparation goes beyond simply
+              learning one formula.
+            </p>
+            <BbeInfoCallout label="Official syllabus" tone="official">
+              Elementary financial mathematics is included in the official topic list. The official public
+              syllabus does not provide a detailed subtopic breakdown, so the structure below is how BBE
+              School organises preparation — not a separately published WU checklist.
+            </BbeInfoCallout>
+            <p>The preparation material is divided into several important subtopics:</p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Interest Periods &amp; Effective Rates
+            </h4>
+            <p>
+              Understand how interest rates relate to different compounding periods and how to work with
+              effective rates.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Continuous Compounding
+            </h4>
+            <p>Be comfortable with continuous interest growth and the calculations associated with it.</p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">Geometric Series</h4>
+            <p>
+              Geometric series provide the mathematical foundation for several financial calculations, so you
+              should be able to recognize and work with them.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Annuities, Annuities Due &amp; Perpetuities
+            </h4>
+            <p>You should understand the differences between:</p>
+            <ul className="list-disc space-y-1.5 pl-5">
+              <li>ordinary annuities;</li>
+              <li>annuities due;</li>
+              <li>perpetuities;</li>
+            </ul>
+            <p>and know how the timing of payments affects the calculation.</p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">Mortgage Repayments</h4>
+            <p>
+              This includes calculations involving loan repayment schedules and regular mortgage payments.
+            </p>
+
+            <h4 className="font-display text-base font-semibold text-foreground">
+              Internal Rate of Return
+            </h4>
+            <p>
+              You should understand the concept of the internal rate of return and how it is used to evaluate
+              financial investments.
+            </p>
+
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>Practice BBE Financial Mathematics →</BbeTextLink>
+          </TopicBlock>
+        </BbeSection>
+
+        <BbeSection id="what-makes-different" title="What makes BBE Mathematics different?">
           <div className="space-y-5">
-            {MATH_TOPICS.map((topic) => (
-              <article
-                key={topic.id}
-                id={topic.id}
-                className="scroll-mt-28 rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6"
-              >
-                <h3 className="font-display text-xl font-bold tracking-tight text-foreground">
-                  {topic.title}
-                </h3>
-                <dl className="mt-4 space-y-3 text-sm sm:text-[15px]">
-                  <div>
-                    <dt className="font-semibold text-foreground">What you should know</dt>
-                    <dd className="mt-1 text-muted-foreground">{topic.know}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-semibold text-foreground">Important concepts</dt>
-                    <dd className="mt-1 text-muted-foreground">{topic.concepts}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-semibold text-foreground">Typical mistakes</dt>
-                    <dd className="mt-1 text-muted-foreground">{topic.mistakes}</dd>
-                  </div>
-                </dl>
-                <div className="mt-4">
-                  <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>
-                    Practice BBE {topic.title} →
-                  </BbeTextLink>
-                </div>
-              </article>
-            ))}
+            <DifferenceItem title="The breadth">
+              You need to move between very different areas of mathematics: algebra, functions, calculus,
+              probability and finance.
+            </DifferenceItem>
+            <DifferenceItem title="The question format">
+              A question can require you to evaluate several statements individually. This means that the
+              number of calculations you actually perform can be considerably greater than the number of
+              questions suggests.
+            </DifferenceItem>
+            <DifferenceItem title="The time pressure">
+              Being able to solve a problem eventually is different from being able to solve it quickly enough
+              during the entrance exam.
+            </DifferenceItem>
+            <DifferenceItem title="The need to recognize the method">
+              The formula sheet provided during the exam means that preparation should not focus only on
+              memorizing formulas. You need to recognize which mathematical concept applies and how to use it
+              correctly.
+            </DifferenceItem>
           </div>
         </BbeSection>
 
-        <BbeSection id="how-to-prepare" title="How to prepare for BBE mathematics">
-          <ol className="space-y-3">
+        <BbeSection id="how-to-prepare" title="How should you prepare?">
+          <p>A good preparation sequence is:</p>
+          <ol className="space-y-4">
             {[
-              "Confirm the topic list and question format (this page + the exam guide).",
-              "Diagnose with a mixed math set or mock so you know which chapters leak points.",
-              "Study one chapter at a time: definitions → worked examples → BBE-style stems.",
-              "Keep an error log for recurring traps (signs, “at least”, Bayes mix-ups).",
-              "Mix chapters, then add timed blocks matching exam pacing.",
-              "Finish with full mocks that include all three sections.",
+              {
+                title: "Build the fundamentals",
+                body: "Make sure algebra, equations and functions are solid.",
+              },
+              {
+                title: "Study each topic separately",
+                body: "Work through inequalities, functions, differentiation, probability, binomial distribution and financial mathematics individually.",
+              },
+              {
+                title: "Pay particular attention to probability",
+                body: "Make sure you can distinguish between elementary probability, conditional probability, Bayes’ theorem, independence and binomial distribution.",
+              },
+              {
+                title: "Practice financial mathematics by subtopic",
+                body: "Don’t treat financial mathematics as one chapter. Practice effective rates, continuous compounding, geometric series, annuities, mortgage repayments and internal rate of return separately.",
+              },
+              {
+                title: "Learn the BBE question format",
+                body: "Practice questions where several statements need to be checked individually.",
+              },
+              {
+                title: "Combine topics",
+                body: "Once you are comfortable with individual topics, solve mixed sets without knowing in advance which method you will need.",
+              },
+              {
+                title: "Train for speed",
+                body: "Finally, introduce time limits and practice deciding when to continue working on a question and when to move on.",
+              },
             ].map((step, i) => (
-              <li key={step} className="flex gap-3">
+              <li key={step.title} className="flex gap-3">
                 <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-foreground text-sm font-bold text-background">
                   {i + 1}
                 </span>
-                <span className="pt-1">{step}</span>
+                <div className="pt-0.5">
+                  <p className="font-display text-base font-semibold text-foreground">{step.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed sm:text-base">{step.body}</p>
+                </div>
               </li>
             ))}
           </ol>
-          <BbeTextLink to="/bbe-exam-preparation">Read our complete BBE preparation guide →</BbeTextLink>
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <BbeTextLink to="/bbe-exam-preparation">Read our complete BBE preparation guide →</BbeTextLink>
+            <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>Take a diagnostic or mock exam →</BbeTextLink>
+          </div>
         </BbeSection>
 
-        <BbeSection id="order" title="Recommended order of preparation">
-          <ol className="list-decimal space-y-2 pl-5">
-            <li>Logic &amp; elementary algebra (accuracy under statement-style wording)</li>
-            <li>Equations, two-unknown linear systems, inequalities</li>
-            <li>Linear/quadratic, power, polynomial, exponential &amp; logarithmic functions</li>
-            <li>Differentiation and single-variable optimization</li>
-            <li>Elementary financial mathematics</li>
-            <li>Elementary probability, then binomial distribution</li>
-            <li>Mixed review and timed full-section practice</li>
-          </ol>
-          <p className="text-sm italic">
-            BBE School recommendation — adjust if a diagnostic shows a different weak-area profile.
+        <aside className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-7">
+          <h2 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+            Prepare for BBE Mathematics
+          </h2>
+          <p className="mt-2 text-base leading-relaxed text-muted-foreground">
+            Master the topics. Learn the question format. Then train yourself to solve accurately under time
+            pressure.
           </p>
-        </BbeSection>
-
-        <BbeSection id="sample" title="Sample BBE-style mathematics question">
-          <p className="text-sm italic">BBE-style practice example — not an official WU question.</p>
-          <blockquote className="rounded-xl border-l-4 border-primary/70 bg-secondary/40 px-5 py-4 text-foreground">
-            A factory receives components from two suppliers. Supplier A provides 60% of all components,
-            and Supplier B provides the remaining 40%. 3% of Supplier A’s components are defective, and 5%
-            of Supplier B’s components are defective. A component is selected at random and found to be
-            defective.
-          </blockquote>
-          <ul className="space-y-2">
-            {sampleOptions.map((opt) => (
-              <li
-                key={opt.letter}
-                className="flex flex-wrap items-start gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm"
-              >
-                <span className="grid h-7 w-7 place-items-center rounded-md bg-secondary font-display text-xs font-bold text-foreground">
-                  {opt.letter}
-                </span>
-                <span className="min-w-0 flex-1 text-foreground">{opt.text}</span>
-                <span
-                  className={cn(
-                    "rounded-full px-2.5 py-1 text-[11px] font-bold uppercase",
-                    opt.answer === "True"
-                      ? "bg-emerald-50 text-emerald-800"
-                      : "bg-red-50 text-red-800",
-                  )}
-                >
-                  {opt.answer}
-                </span>
-              </li>
-            ))}
-          </ul>
-          <p>
-            Full five-statement walkthrough with explanations lives on the{" "}
-            <BbeTextLink to="/bbe-entrance-exam" className="inline-flex">
-              exam guide sample →
-            </BbeTextLink>
-          </p>
-          <BbeTextLink to={BBE_PRACTICE_ROUTES.math}>Practice more BBE mathematics →</BbeTextLink>
-        </BbeSection>
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <BbePrimaryButton to={BBE_PRACTICE_ROUTES.math}>
+              Practice BBE Mathematics →
+            </BbePrimaryButton>
+            <BbeGhostButton to={BBE_PRACTICE_ROUTES.demo}>
+              Try the Free BBE Demo Course →
+            </BbeGhostButton>
+          </div>
+        </aside>
 
         <BbeSection id="faq" title="FAQ">
           <BbeFaqAccordion faqs={faqs} />
@@ -287,5 +430,23 @@ function BbeMathematicsPage() {
         <BbeFullPrepCta />
       </div>
     </BbeExamShell>
+  );
+}
+
+function TopicBlock({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+      <h3 className="font-display text-xl font-bold tracking-tight text-foreground">{title}</h3>
+      <div className="mt-3 space-y-3 text-base leading-relaxed text-muted-foreground">{children}</div>
+    </article>
+  );
+}
+
+function DifferenceItem({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <article className="rounded-xl border border-border bg-card p-5">
+      <h3 className="font-display text-base font-semibold text-foreground">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed sm:text-base">{children}</p>
+    </article>
   );
 }
