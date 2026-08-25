@@ -75,19 +75,19 @@ export const BBE_EXAM_FORMAT = {
     mathematics: "40%",
   },
   places: 240,
-  location: "VIECON – Vienna Congress and Convention Center (Messe Wien)",
+  location: "VIECON, Vienna Congress and Convention Center (Messe Wien)",
   /** Time-sensitive cycle details from the existing guide — update yearly. */
   cycle: {
     lastUpdated: "August 22, 2026",
-    examDate: "June 30, 2026, 3:00–5:00 p.m. CEST",
-    registrationWindow: "March 2 – May 19, 2026",
+    examDate: "June 30, 2026, 3:00 to 5:00 p.m. CEST",
+    registrationWindow: "March 2 to May 19, 2026",
     registrationFee: "€50 (waived for Ukrainian citizens)",
     osaDeadline: "May 28, 2026, 12:00 noon CEST",
   },
 } as const;
 
 export const BBE_FORMAT_NOTE =
-  "Based on the most recent BBE entrance exam, the test consisted of 34 questions completed in 2 hours. The next admission cycle is expected to follow a similar structure, although WU may modify the selection procedure.";
+  "The most recent BBE entrance exam had 34 questions over 2 hours. WU has used a similar structure in past cycles, though the university may adjust the selection procedure in future years.";
 
 export const MATH_TOPICS = [
   {

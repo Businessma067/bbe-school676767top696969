@@ -25,7 +25,7 @@ export const Route = createFileRoute("/bbe-mathematics")({
       {
         name: "description",
         content:
-          "WU Vienna BBE mathematics syllabus and preparation: algebra, functions, differentiation, probability, binomial distribution and financial mathematics — with BBE-style practice links.",
+          "WU Vienna BBE mathematics syllabus and preparation: algebra, functions, differentiation, probability, binomial distribution and financial mathematics, with BBE-style practice links.",
       },
       {
         property: "og:title",
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: "Is a formula sheet provided?",
-    answer: "Yes — a formula sheet is provided at the exam.",
+    answer: "Yes. A formula sheet is provided at the exam.",
   },
   {
     question: "Why is BBE mathematics time-consuming?",
@@ -74,7 +74,7 @@ function BbeMathematicsPage() {
     <BbeExamShell
       jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Mathematics: Topics, Syllabus & Practice"
-      lead="Mathematics is one of the three sections of the BBE entrance exam. Learn what is tested, why the section is time-consuming, and how to prepare topic by topic."
+      lead="Mathematics is one of the three BBE entrance exam sections. Here is what WU tests, why the section tends to run long, and how to work through the syllabus topic by topic."
       heroActions={
         <BbePrimaryButton to={BBE_PRACTICE_ROUTES.math}>Practice BBE Mathematics</BbePrimaryButton>
       }
@@ -82,14 +82,13 @@ function BbeMathematicsPage() {
       <div className="space-y-14">
         <BbeSection id="introduction" title="Mathematics">
           <p>
-            Mathematics is one of the three sections of the BBE entrance exam. The syllabus covers a broad
-            range of topics, from algebra and equations to functions, differentiation, probability, binomial
-            distribution and financial mathematics.
+            Mathematics is one of the three sections of the BBE entrance exam. The syllabus spans algebra
+            and equations through functions, differentiation, probability, binomial distribution, and
+            financial mathematics.
           </p>
           <p>
-            The mathematics section is not necessarily challenging because the individual concepts are
-            unusually advanced. The main challenge is often the amount of work required per question and the
-            time available.
+            The section is not necessarily hard because the concepts are unusually advanced. More often,
+            the challenge is the amount of work each question demands and the time you have to do it.
           </p>
           <BbeStatGrid
             items={[
@@ -249,8 +248,8 @@ function BbeMathematicsPage() {
             <BbeInfoCallout label="Official syllabus vs preparation depth" tone="official">
               Elementary probability and binomial distribution are part of the official topic list.
               Conditional probability, Bayes&apos; theorem and independence are emphasised here as BBE School
-              preparation within the probability area — useful for exam-style reasoning, not as separately
-              confirmed standalone WU syllabus headings.
+              preparation within the probability area. They help with exam-style reasoning but are not
+              separately confirmed as standalone WU syllabus headings.
             </BbeInfoCallout>
 
             <BbeInfoCallout label="BBE preparation tip" tone="advice">
@@ -271,7 +270,7 @@ function BbeMathematicsPage() {
             <BbeInfoCallout label="Official syllabus" tone="official">
               Elementary financial mathematics is included in the official topic list. The official public
               syllabus does not provide a detailed subtopic breakdown, so the structure below is how BBE
-              School organises preparation — not a separately published WU checklist.
+              School organises preparation, not a separately published WU checklist.
             </BbeInfoCallout>
             <p>The preparation material is divided into several important subtopics:</p>
 
@@ -400,8 +399,8 @@ function BbeMathematicsPage() {
             Prepare for BBE Mathematics
           </h2>
           <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-            Master the topics. Learn the question format. Then train yourself to solve accurately under time
-            pressure.
+            Work through the syllabus in order. Learn the question format. Then train yourself to solve
+            accurately under time pressure.
           </p>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbePrimaryButton to={BBE_PRACTICE_ROUTES.math}>
@@ -419,7 +418,7 @@ function BbeMathematicsPage() {
 
         <BbeDemoCta
           title="Want to practice BBE mathematics in the real question format?"
-          body="Try the free demo course for sample math lessons, tasks and explanations."
+          body="The free demo course includes sample math lessons, tasks, and explanations in BBE style."
         />
 
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

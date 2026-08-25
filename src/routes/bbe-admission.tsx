@@ -22,7 +22,7 @@ export const Route = createFileRoute("/bbe-admission")({
       {
         name: "description",
         content:
-          "How WU Vienna BBE admission works: application overview, registration, OSA, entrance exam, ranking and dates — with a reminder that administrative details can change.",
+          "How WU Vienna BBE admission works: application overview, registration, OSA, entrance exam, ranking and dates, with a reminder that administrative details can change.",
       },
       {
         property: "og:title",
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/bbe-admission")({
       {
         property: "og:description",
         content:
-          "Registration, OSA, entrance exam and ranking for WU Vienna’s BBE programme — independent overview.",
+          "Registration, OSA, entrance exam and ranking for WU Vienna’s BBE programme: an independent overview.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: "Is the OSA graded?",
-    answer: "No — the OSA is ungraded and does not enter the ranking based on written-exam performance.",
+    answer: "No. The OSA is ungraded and does not enter the ranking based on written-exam performance.",
   },
   {
     question: "How many places are available?",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     question: "Is there an alternative or online exam date?",
-    answer: "None — no exceptions, per the exam overview in the guide.",
+    answer: "None. No exceptions, per the exam overview in the guide.",
   },
   {
     question: "What must I bring on exam day?",
@@ -80,7 +80,7 @@ function BbeAdmissionPage() {
     <BbeExamShell
       jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Admission & Application: Requirements, OSA & Entrance Exam"
-      lead="How application, registration, the OSA and the entrance exam fit together for WU Vienna’s Bachelor in Business and Economics — and which details change by cycle."
+      lead="Application, registration, the OSA, and the entrance exam all fit into WU Vienna’s Bachelor in Business and Economics selection process. Here is how they connect, and which details change from one cycle to the next."
       heroActions={
         <>
           <BbePrimaryButton to="/bbe-entrance-exam">Read the exam overview</BbePrimaryButton>
@@ -113,7 +113,7 @@ function BbeAdmissionPage() {
           <p>
             Formal eligibility, secondary-school credentials, language proof and document checklists are
             defined by WU for each cycle. This independent guide does not replace WU’s application
-            instructions — use official pages for binding requirements.
+            instructions. Use official pages for binding requirements.
           </p>
           <p>
             What this hub can help with is the entrance-exam side of selection: format, subjects, scoring
@@ -134,8 +134,8 @@ function BbeAdmissionPage() {
           <p>
             The OSA must be completed by the published deadline. It is{" "}
             <span className="font-medium text-foreground">ungraded</span> and does not factor into ranking
-            based on written-exam performance. Missing the OSA deadline can still block your application —
-            treat it as a hard administrative step even though it does not produce a score.
+            based on written-exam performance. Missing the OSA deadline can still block your application.
+            Treat it as a hard administrative step even though it does not produce a score.
           </p>
           <DateTable
             rows={cycleDates.filter((r) => r.field.startsWith("OSA"))}
@@ -176,7 +176,7 @@ function BbeAdmissionPage() {
           <p>
             Applicants are ranked by written-exam performance for the {BBE_EXAM_FORMAT.places} available
             places. The OSA does not enter that ranking. Relative standing among candidates in the cycle
-            matters — there is no separate fixed “pass mark” published in this guide.
+            matters. There is no separate fixed “pass mark” published in this guide.
           </p>
         </BbeSection>
 
@@ -207,7 +207,7 @@ function BbeAdmissionPage() {
           </ul>
           <p>
             The multi-section structure and preparation logic remain useful even when administrative details
-            shift — but never treat an independent prep site as a substitute for WU’s published rules.
+            shift. Even so, never treat an independent prep site as a substitute for WU’s published rules.
           </p>
         </BbeSection>
 
@@ -217,7 +217,7 @@ function BbeAdmissionPage() {
 
         <BbeDemoCta
           title="Preparing while you track admission deadlines?"
-          body="Use the free demo course to start BBE-style practice early — then deepen with full materials as registration approaches."
+          body="Use the free demo course to start BBE-style practice early, then deepen with full materials as registration approaches."
         />
 
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

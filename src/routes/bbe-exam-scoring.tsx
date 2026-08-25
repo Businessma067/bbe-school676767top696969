@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     question: "What are the section point totals used in BBE School mocks?",
-    answer: `BBE School practice scoring uses ${SCORING_CONFIG.economics.totalPoints} points for Economics (${SCORING_CONFIG.economics.taskCount} tasks), ${SCORING_CONFIG.english.totalPoints} for English (${SCORING_CONFIG.english.taskCount} tasks), and ${SCORING_CONFIG.math.totalPoints} for Mathematics (${SCORING_CONFIG.math.taskCount} tasks), for ${SCORING_CONFIG.examTotalPoints} points overall — aligning with the most recent exam’s question counts and approximate 40/20/40 score weighting.`,
+    answer: `BBE School practice scoring uses ${SCORING_CONFIG.economics.totalPoints} points for Economics (${SCORING_CONFIG.economics.taskCount} tasks), ${SCORING_CONFIG.english.totalPoints} for English (${SCORING_CONFIG.english.taskCount} tasks), and ${SCORING_CONFIG.math.totalPoints} for Mathematics (${SCORING_CONFIG.math.taskCount} tasks), for ${SCORING_CONFIG.examTotalPoints} points overall. That aligns with the most recent exam’s question counts and approximate 40/20/40 score weighting.`,
   },
   {
     question: "Does the OSA affect my exam score?",
@@ -95,7 +95,7 @@ const workedExamples = [
   {
     title: "Over-ticking cancels progress",
     pattern: [true, true, true, true, true],
-    note: "Marking every statement includes both false ones — penalties can wipe the task to zero.",
+    note: "Marking every statement includes both false ones, and the penalties can wipe the task to zero.",
   },
 ].map((ex) => {
   const statements = marks(ex.pattern, EXAMPLE_TRUTHS);
@@ -113,7 +113,7 @@ function BbeExamScoringPage() {
     <BbeExamShell
       jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Exam Scoring Explained: Points & Partial Credit"
-      lead="How BBE exam points work — why the test is not simple right/wrong, how partial credit is awarded, and what common ticking mistakes cost you."
+      lead="BBE exam points are not simply right or wrong. This page explains partial credit, how selections are scored, and what common ticking mistakes cost you."
       heroActions={
         <BbePrimaryButton to={BBE_PRACTICE_ROUTES.mockExams}>
           See scoring on a mock exam
@@ -125,8 +125,8 @@ function BbeExamScoringPage() {
           <p>
             Applicants often search for “BBE exam scoring” because the written test does not behave like a
             classic single-answer multiple-choice paper. Under each stem you judge several statements
-            independently. Credit and penalties interact — so understanding the scoring logic is part of
-            preparing well, not a minor detail.
+            independently, and credit and penalties interact. Understanding that logic is part of preparing
+            well, not a minor detail you can skip.
           </p>
           <p>
             This page explains the partial-credit approach used for BBE-style tasks, with plain-language
@@ -150,15 +150,15 @@ function BbeExamScoringPage() {
           <p>
             Approximate score weighting across sections (most recent exam): Economics &amp; Business{" "}
             {BBE_EXAM_FORMAT.scoreWeighting.economics}, English {BBE_EXAM_FORMAT.scoreWeighting.english},
-            Mathematics {BBE_EXAM_FORMAT.scoreWeighting.mathematics}. That weighting is about contribution to
-            the overall result — not the percentage of questions in each section.
+            Mathematics {BBE_EXAM_FORMAT.scoreWeighting.mathematics}. That weighting reflects each section’s
+            contribution to the overall result, not the percentage of questions in each section.
           </p>
         </BbeSection>
 
         <BbeSection id="not-right-wrong" title="Why the BBE exam is not simply right/wrong">
           <p>
             A “question” is really a bundle of yes/no decisions. You can be partly right: mark some true
-            statements, miss others, and avoid false ones — and still earn a share of the task maximum. You
+            statements, miss others, and avoid false ones, and still earn a share of the task maximum. You
             can also lose progress by ticking a false statement, even if you found several true ones.
           </p>
           <p>
@@ -207,7 +207,7 @@ function BbeExamScoringPage() {
                   <td className="px-4 py-3 font-semibold text-foreground">
                     {SCORING_CONFIG.examTotalPoints}
                   </td>
-                  <td className="px-4 py-3">—</td>
+                  <td className="px-4 py-3">n/a</td>
                 </tr>
               </tbody>
             </table>
@@ -228,7 +228,7 @@ function BbeExamScoringPage() {
           </p>
           <p>
             Special case: if exactly one statement is true (r = 1), the task behaves in an all-or-nothing
-            way for that single truth — marking the true statement can earn the full maximum, but marking a
+            way for that single truth. Marking the true statement can earn the full maximum, but marking a
             false statement can cancel it entirely.
           </p>
         </BbeSection>
@@ -257,7 +257,7 @@ function BbeExamScoringPage() {
           <p>
             In plain language: you earn a share of the maximum for each true statement you correctly select,
             and you lose a share for each false statement you incorrectly select. Missed true statements
-            simply withhold the credit you could have earned — they are not an extra penalty beyond that.
+            simply withhold the credit you could have earned. They are not an extra penalty beyond that.
           </p>
         </BbeSection>
 
@@ -273,7 +273,7 @@ function BbeExamScoringPage() {
           <p>
             The same scoring idea applies across Economics, English, and Mathematics: one stem, several
             statements, independent judgments. What changes is the content and the maximum points assigned
-            to the task. At least one statement is always true — all-false stems do not occur — but any
+            to the task. At least one statement is always true. All-false stems do not occur, but any
             number of statements from one up to all may be true.
           </p>
         </BbeSection>
@@ -321,7 +321,7 @@ function BbeExamScoringPage() {
           <p>
             Applicants are ranked by written-exam performance for the {BBE_EXAM_FORMAT.places} available
             places. The OSA is ungraded and does not enter that ranking. There is no separate “cutoff score”
-            published as a fixed pass mark on this site — relative performance against other candidates in
+            published as a fixed pass mark on this site. Relative performance against other candidates in
             the cycle determines selection.
           </p>
           <BbeTextLink to="/bbe-admission">Learn how the WU BBE admission process works →</BbeTextLink>
@@ -333,7 +333,7 @@ function BbeExamScoringPage() {
             <li>Treating the stem like a single best-answer question instead of five independent judgments.</li>
             <li>Assuming a fixed number of true statements per question.</li>
             <li>Ignoring that leaving a doubtful option unmarked can protect points.</li>
-            <li>Practicing untimed accuracy only — never seeing how mixed patterns convert into scores.</li>
+            <li>Practicing untimed accuracy only, without ever seeing how mixed patterns convert into scores.</li>
           </ul>
         </BbeSection>
 

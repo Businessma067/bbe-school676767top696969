@@ -28,7 +28,7 @@ export const Route = createFileRoute("/bbe-exam-preparation")({
       {
         property: "og:description",
         content:
-          "A practical BBE study plan — from diagnostic to mocks — with links to free demo practice.",
+          "A practical BBE study plan from diagnostic testing through mock exams, with links to free demo practice.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "How long should I prepare for the BBE exam?",
     answer:
-      "Many applicants use 7–9 months as a baseline to cover all three sections properly. With less calendar time, increase weekly intensity. Shorter example plans (4, 8, 12 weeks) on this page assume focused weekly hours.",
+      "Many applicants use 7 to 9 months as a baseline to cover all three sections properly. With less calendar time, increase weekly intensity. Shorter example plans (4, 8, 12 weeks) on this page assume focused weekly hours.",
   },
   {
     question: "Should I start with a diagnostic?",
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "In what order should I study subjects?",
     answer:
-      "Build Mathematics fundamentals early (highest time demand), study Economics from Fuhrmann chapters 1–6 in parallel, and keep English as a steady reading habit — then mix all three under timed conditions.",
+      "Build Mathematics fundamentals early (highest time demand), study Economics from Fuhrmann chapters 1 to 6 in parallel, and keep English as a steady reading habit. Then mix all three under timed conditions.",
   },
   {
     question: "When should I take full mock exams?",
@@ -98,7 +98,7 @@ function BbeExamPreparationPage() {
     <BbeExamShell
       jsonLd={buildFaqJsonLd(faqs)}
       h1="How to Prepare for the WU Vienna BBE Entrance Exam"
-      lead="A practical preparation path: diagnose, plan by subject, practise BBE-style questions, then move into timed mocks — with example timelines you can adapt."
+      lead="A practical preparation path: diagnose your starting point, plan by subject, practise BBE-style questions, then move into timed mocks. Example timelines below are there to adapt, not copy."
       heroActions={
         <>
           <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Try the Free Demo Course →</BbePrimaryButton>
@@ -110,11 +110,11 @@ function BbeExamPreparationPage() {
         <BbeSection id="introduction" title="Introduction">
           <p>
             Preparing for the BBE entrance exam is less about collecting random PDFs and more about a
-            repeatable loop: understand the format, measure your starting point, close topic gaps, practise
+            repeatable loop. Understand the format, measure your starting point, close topic gaps, practise
             in the real question style, then add time pressure. This page focuses on that process.
           </p>
           <p>
-            Most applicants find that <span className="font-medium text-foreground">7–9 months</span> is a
+            Most applicants find that <span className="font-medium text-foreground">7 to 9 months</span> is a
             reasonable baseline for covering all three sections properly. If you have fewer months, raise
             weekly intensity rather than skipping Mathematics fundamentals.
           </p>
@@ -129,7 +129,7 @@ function BbeExamPreparationPage() {
 
         <BbeSection id="schedule" title="Build a preparation schedule">
           <p>
-            Block weekly hours by subject based on your diagnostic — not equal thirds by default.
+            Block weekly hours by subject based on your diagnostic, not equal thirds by default.
             Mathematics often deserves the largest block; Economics needs consistent chapter coverage;
             English needs frequent shorter sessions.
           </p>
@@ -143,7 +143,7 @@ function BbeExamPreparationPage() {
         <BbeSection id="topic-by-topic" title="Study topic-by-topic">
           <p>
             For Mathematics, finish a chapter’s core skills before jumping to mixed papers. For Economics,
-            move through Fuhrmann chapters 1–6 with active recall (flashcards or closed-book definitions).
+            move through Fuhrmann chapters 1 to 6 with active recall (flashcards or closed-book definitions).
             For English, pair reading with BBE-style statement practice.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -175,7 +175,7 @@ function BbeExamPreparationPage() {
 
         <BbeSection id="timed" title="Introduce timed practice">
           <p>
-            Once untimed accuracy is acceptable, add timed blocks. Train section pacing — especially clearing
+            Once untimed accuracy is acceptable, add timed blocks. Train section pacing, especially clearing
             Economics efficiently so Mathematics keeps enough of the {BBE_EXAM_FORMAT.durationHours}-hour
             window.
           </p>
@@ -184,7 +184,8 @@ function BbeExamPreparationPage() {
         <BbeSection id="mocks" title="Take full mock exams">
           <p>
             Full-length mocks (34 questions, three sections) teach endurance and scoring behaviour. Review
-            every mock as carefully as you sat it — the value is the error analysis, not the raw total alone.
+            every mock as carefully as you sat it. The value is in the error analysis, not the raw total
+            alone.
           </p>
           <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>Take a full mock exam →</BbeTextLink>
         </BbeSection>
@@ -207,50 +208,50 @@ function BbeExamPreparationPage() {
             <li>Leaving probability/binomial until too late</li>
             <li>Treating English as optional because weighting is smaller</li>
             <li>Taking mocks without reviewing statement-level mistakes</li>
-            <li>No diagnostic — discovering weak chapters weeks before the exam</li>
+            <li>No diagnostic, which means discovering weak chapters only weeks before the exam</li>
           </ul>
         </BbeSection>
 
         <BbeSection id="timelines" title="Example preparation timelines">
           <BbeInfoCallout label="BBE School examples" tone="advice">
-            These timelines are illustrative study structures, not official WU requirements. Stretch to 7–9
-            months when you can — compress only if your diagnostic supports it.
+            These timelines are illustrative study structures, not official WU requirements. Stretch to 7 to 9
+            months when you can. Compress only if your diagnostic supports it.
           </BbeInfoCallout>
 
           <TimelineCard
             title="4 weeks (intensive)"
             items={[
-              "Week 1: Diagnostic + algebra/equations/inequalities + Fuhrmann 1–2 + daily English reading",
-              "Week 2: Functions & calculus basics + Fuhrmann 3–4 + economics practice stems",
-              "Week 3: Probability & binomial + financial maths + Fuhrmann 5–6 + mixed timed blocks",
+              "Week 1: Diagnostic + algebra/equations/inequalities + Fuhrmann 1 to 2 + daily English reading",
+              "Week 2: Functions & calculus basics + Fuhrmann 3 to 4 + economics practice stems",
+              "Week 3: Probability & binomial + financial maths + Fuhrmann 5 to 6 + mixed timed blocks",
               "Week 4: Two full mocks, targeted weak-topic drills, exam logistics check",
             ]}
           />
           <TimelineCard
             title="8 weeks (focused)"
             items={[
-              "Weeks 1–2: Diagnostic; rebuild algebra/equations; start Fuhrmann 1–3; English habit",
-              "Weeks 3–4: Functions & optimisation; Fuhrmann 4–6; economics flashcards",
-              "Weeks 5–6: Probability, binomial, financial maths; mixed BBE-style sets",
-              "Weeks 7–8: Timed section practice, 2–3 full mocks, final-week consolidation",
+              "Weeks 1 to 2: Diagnostic; rebuild algebra/equations; start Fuhrmann 1 to 3; English habit",
+              "Weeks 3 to 4: Functions & optimisation; Fuhrmann 4 to 6; economics flashcards",
+              "Weeks 5 to 6: Probability, binomial, financial maths; mixed BBE-style sets",
+              "Weeks 7 to 8: Timed section practice, 2 to 3 full mocks, final-week consolidation",
             ]}
           />
           <TimelineCard
             title="12 weeks (balanced)"
             items={[
-              "Weeks 1–3: Diagnostic; logic through inequalities; Fuhrmann 1–2; English routine",
-              "Weeks 4–6: Functions family + differentiation/optimisation; Fuhrmann 3–4",
-              "Weeks 7–9: Financial maths, probability, binomial; Fuhrmann 5–6; mixed practice",
-              "Weeks 10–12: Timed practice, full mocks, error-log cleanup, exam-day readiness",
+              "Weeks 1 to 3: Diagnostic; logic through inequalities; Fuhrmann 1 to 2; English routine",
+              "Weeks 4 to 6: Functions family + differentiation/optimisation; Fuhrmann 3 to 4",
+              "Weeks 7 to 9: Financial maths, probability, binomial; Fuhrmann 5 to 6; mixed practice",
+              "Weeks 10 to 12: Timed practice, full mocks, error-log cleanup, exam-day readiness",
             ]}
           />
         </BbeSection>
 
         <BbeSection id="bbe-school" title="Preparing with a structured system">
           <p>
-            Instead of collecting preparation materials from different sources, you can prepare with BBE
-            School&apos;s structured system, including topic practice, explanations, flashcards, diagnostics
-            and mock exams.
+            You can prepare with BBE School&apos;s structured system instead of collecting materials from
+            different sources. It includes topic practice, explanations, flashcards, diagnostics, and mock
+            exams.
           </p>
           <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Try the Free Demo Course →</BbePrimaryButton>
@@ -264,8 +265,8 @@ function BbeExamPreparationPage() {
 
         <BbeDemoCta />
         <BbeFullPrepCta
-          title="Ready for the complete BBE preparation system?"
-          body="Continue from the free demo into full topic practice, flashcards and mocks when you are ready."
+          title="Ready to move beyond the demo?"
+          body="Continue from the free demo into full topic practice, flashcards, and mocks when you are ready."
         />
 
         <BbeTextLink to="/bbe-entrance-exam">Back to the BBE Entrance Exam Guide →</BbeTextLink>

@@ -22,7 +22,7 @@ export function BbeExamShell({
   h1,
   lead,
   badges = [
-    "Independent, unofficial guide — not affiliated with WU Vienna",
+    "Independent, unofficial guide. Not affiliated with WU Vienna",
     `Last updated: ${BBE_EXAM_FORMAT.cycle.lastUpdated}`,
   ],
   heroActions,
@@ -72,7 +72,7 @@ export function BbeExamShell({
       <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
           <p className="text-xs leading-relaxed text-muted-foreground">
-            Independent preparation guide. Not affiliated with WU Vienna. Dates and rules can change —
+            Independent preparation guide. Not affiliated with WU Vienna. Dates and rules can change, so
             always confirm details on the official WU website.
           </p>
           <div className="flex items-center gap-2 text-xs text-muted-foreground">

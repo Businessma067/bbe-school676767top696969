@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "What economics material is required?",
     answer:
-      "Independent study of Fuhrmann, B. (2019), Introduction to Business and Economics, Chapters 1–6.",
+      "Independent study of Fuhrmann, B. (2019), Introduction to Business and Economics, Chapters 1 to 6.",
   },
   {
     question: "How many economics and English questions are there?",
@@ -66,7 +66,7 @@ function BbeEconomicsEnglishPage() {
     <BbeExamShell
       jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Economics & English: What to Study"
-      lead="What Economics & Business and English test on the BBE entrance exam, what to study, and how to practice without wasting time."
+      lead="Economics & Business and English each play a distinct role on the BBE entrance exam. This guide covers what WU tests, what to study, and how to practice without wasting time."
       heroActions={
         <>
           <BbePrimaryButton to={BBE_PRACTICE_ROUTES.economics}>
@@ -103,7 +103,7 @@ function BbeEconomicsEnglishPage() {
 
           <BbeSection id="econ-material" title="Required preparation material">
             <p>
-              Preparation is independent literature study of a single required text — not an open-ended
+              Preparation means independent literature study of a single required text, not an open-ended
               “read anything about business” brief.
             </p>
           </BbeSection>
@@ -114,7 +114,7 @@ function BbeEconomicsEnglishPage() {
               title="Fuhrmann, B. (2019), Introduction to Business and Economics"
             >
               <p>
-                Study <span className="font-medium text-foreground">Chapters 1–6</span>. These chapters cover
+                Study <span className="font-medium text-foreground">Chapters 1 to 6</span>. These chapters cover
                 the fundamentals of business and economics: basic economic concepts and market mechanisms,
                 types and forms of businesses, ownership structures, sources of finance, marketing
                 fundamentals, and interpreting short business scenarios and terminology.
@@ -128,7 +128,7 @@ function BbeEconomicsEnglishPage() {
               <li>How businesses are typed, formed and owned</li>
               <li>Sources of finance and related terminology</li>
               <li>Marketing fundamentals used in short scenarios</li>
-              <li>Precise definitions — exam statements often hinge on a single qualifier</li>
+              <li>Precise definitions. Exam statements often hinge on a single qualifier.</li>
             </ul>
           </BbeSection>
 
@@ -140,8 +140,8 @@ function BbeEconomicsEnglishPage() {
             </p>
             <p>
               With strong approximate weighting relative to question count, this section rewards moving
-              quickly once you are fluent with phrasing — many applicants aim to finish Economics in roughly
-              10–20 minutes after enough practice volume.
+              quickly once you are fluent with phrasing. Many applicants aim to finish Economics in roughly
+              10 to 20 minutes after enough practice volume.
             </p>
             <p className="text-sm italic">Timing ranges above are BBE School preparation advice, not official WU rules.</p>
           </BbeSection>
@@ -158,7 +158,7 @@ function BbeEconomicsEnglishPage() {
           <BbeSection id="econ-sample" title="Sample economics question style">
             <p>
               Expect a short business or market scenario followed by several statements to judge true or
-              false independently — the same format illustrated in the{" "}
+              false independently. The format matches the one illustrated in the{" "}
               <BbeTextLink to="/bbe-entrance-exam" className="inline-flex">
                 exam guide →
               </BbeTextLink>
@@ -199,8 +199,8 @@ function BbeEconomicsEnglishPage() {
 
           <BbeSection id="reading" title="Reading comprehension">
             <p>
-              Texts relate to contemporary social issues. You must understand main ideas, implications and
-              carefully worded claims — then evaluate statements under the shared stem.
+              Texts relate to contemporary social issues. You must understand main ideas, implications, and
+              carefully worded claims, then evaluate statements under the shared stem.
             </p>
           </BbeSection>
 
@@ -215,7 +215,7 @@ function BbeEconomicsEnglishPage() {
             <p>
               Grammar and language control are tested at an expected{" "}
               <span className="font-medium text-foreground">B2</span> level, alongside reading and
-              vocabulary — not as an isolated “fill in the blank only” paper.
+              vocabulary. The section is not an isolated “fill in the blank only” paper.
             </p>
           </BbeSection>
 
@@ -236,7 +236,7 @@ function BbeEconomicsEnglishPage() {
             </ul>
             <SubjectCard icon={<Languages className="h-5 w-5" />} title="Practical BBE School advice">
               <p>
-                Treat English as a long-horizon skill: short daily reading plus BBE-style practice stems
+                Treat English as a long-horizon skill. Short daily reading plus BBE-style practice stems
                 beats cramming. Use practice sets to learn how statements try to mislead through near-synonyms
                 and scope words.
               </p>
@@ -246,8 +246,8 @@ function BbeEconomicsEnglishPage() {
           <BbeSection id="eng-sample" title="Sample English question style">
             <p>
               A short passage on a contemporary social or business theme, followed by several statements
-              about meaning, vocabulary or language use. Judge each statement independently — the same
-              discipline as Economics and Mathematics.
+              about meaning, vocabulary or language use. Judge each statement independently, using the same
+              discipline as in Economics and Mathematics.
             </p>
             <BbeTextLink to={BBE_PRACTICE_ROUTES.english}>Practice BBE English →</BbeTextLink>
           </BbeSection>
@@ -256,7 +256,8 @@ function BbeEconomicsEnglishPage() {
         <BbeSection id="together" title="Should I study Economics and English separately?">
           <p>
             <span className="font-medium text-foreground">For learning, yes.</span> Economics has a bounded
-            book; English is proficiency-building. Mixing them too early can feel busy without depth.
+            book; English is proficiency-building. Mixing them too early can feel busy without building real
+            depth in either.
           </p>
           <p>
             <span className="font-medium text-foreground">For exam readiness, combine them.</span> Once
@@ -272,7 +273,7 @@ function BbeEconomicsEnglishPage() {
 
         <BbeDemoCta
           title="Try the BBE School demo course"
-          body="Experience sample lessons and BBE-style Economics and English questions with explanations."
+          body="Sample lessons and BBE-style Economics and English questions, with explanations."
           cta="Start Free Demo →"
         />
 

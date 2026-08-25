@@ -74,8 +74,8 @@ export function BbeTextLink({
 
 /** Mid-page contextual CTA toward the free demo. */
 export function BbeDemoCta({
-  title = "Want to see what BBE School preparation looks like?",
-  body = "Try our free BBE demo course and experience sample lessons, questions and explanations.",
+  title = "Curious what BBE School preparation actually looks like?",
+  body = "The free demo course walks you through sample lessons, BBE-style questions, and worked explanations.",
   cta = "Start Free Demo Course →",
 }: {
   title?: string;
@@ -95,8 +95,8 @@ export function BbeDemoCta({
 
 /** Lower-funnel CTA toward full preparation. */
 export function BbeFullPrepCta({
-  title = "Ready for the complete BBE preparation system?",
-  body = "Explore structured topic practice, explanations, flashcards, diagnostics and mock exams in one place.",
+  title = "Ready to move beyond the demo?",
+  body = "Full preparation brings topic practice, explanations, flashcards, diagnostics, and mock exams together in one place.",
 }: {
   title?: string;
   body?: string;

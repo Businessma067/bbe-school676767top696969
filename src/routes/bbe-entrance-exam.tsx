@@ -35,7 +35,7 @@ export const Route = createFileRoute("/bbe-entrance-exam")({
       {
         name: "description",
         content:
-          "What is the WU Vienna BBE entrance exam? Format, topics, scoring overview, difficulty and how to prepare — with links to practice and the free demo course.",
+          "What is the WU Vienna BBE entrance exam? Format, topics, scoring overview, difficulty, and how to prepare, with links to practice and the free demo course.",
       },
       {
         property: "og:title",
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/bbe-entrance-exam")({
       {
         property: "og:description",
         content:
-          "A practical overview of the WU BBE entrance exam — structure, subjects, scoring, and preparation paths.",
+          "A practical overview of the WU BBE entrance exam: structure, subjects, scoring, and preparation paths.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -66,7 +66,7 @@ const faqs = [
   {
     question: "How many questions are on the exam?",
     answer:
-      "Based on the most recent exam: 34 questions total — 10 Economics & Business, 11 English, and 13 Mathematics.",
+      "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.",
   },
   {
     question: "How long is the exam?",
@@ -75,7 +75,7 @@ const faqs = [
   {
     question: "Is the BBE exam difficult?",
     answer:
-      "Difficulty varies by section — math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.",
+      "Difficulty varies by section. Math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.",
   },
   {
     question: "How is the BBE exam scored?",
@@ -99,14 +99,14 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
   { field: "Exam location", detail: BBE_EXAM_FORMAT.location },
   { field: "Exam duration", detail: `${BBE_EXAM_FORMAT.durationHours} hours` },
   { field: "Exam date / time", detail: BBE_EXAM_FORMAT.cycle.examDate },
-  { field: "Alternative date / online option", detail: "None — no exceptions" },
+  { field: "Alternative date / online option", detail: "None. No exceptions." },
   {
     field: "Exam sections",
     detail: "Economics & Business, English, Mathematics",
   },
   {
     field: "Question count (most recent exam)",
-    detail: `34 total — ${BBE_EXAM_FORMAT.economicsQuestions} Economics & Business, ${BBE_EXAM_FORMAT.englishQuestions} English, ${BBE_EXAM_FORMAT.mathQuestions} Mathematics`,
+    detail: `34 total: ${BBE_EXAM_FORMAT.economicsQuestions} Economics & Business, ${BBE_EXAM_FORMAT.englishQuestions} English, ${BBE_EXAM_FORMAT.mathQuestions} Mathematics`,
   },
   {
     field: "Approximate score weighting",
@@ -116,7 +116,7 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
     field: "Question format",
     detail: (
       <>
-        Multiple-choice with partial credit — see{" "}
+        Multiple-choice with partial credit. See{" "}
         <Link
           to="/bbe-exam-scoring"
           className="font-semibold text-foreground underline-offset-4 hover:underline"
@@ -130,7 +130,7 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
   { field: "Registration window", detail: BBE_EXAM_FORMAT.cycle.registrationWindow },
   { field: "Registration fee", detail: BBE_EXAM_FORMAT.cycle.registrationFee },
   { field: "OSA deadline", detail: BBE_EXAM_FORMAT.cycle.osaDeadline },
-  { field: "OSA graded?", detail: "No — ungraded" },
+  { field: "OSA graded?", detail: "No. Ungraded." },
   {
     field: "Required exam-day items",
     detail:
@@ -160,7 +160,7 @@ const sampleOptions = [
     statement: "P(A | defective) is exactly 60%, the same as the prior P(A).",
     answer: "False" as const,
     explanation:
-      "The posterior P(A | defective) ≈ 47.4% — lower than the 60% prior, since observing a defect shifts the odds toward Supplier B.",
+      "The posterior P(A | defective) ≈ 47.4%, lower than the 60% prior, since observing a defect shifts the odds toward Supplier B.",
   },
   {
     letter: "D",
@@ -184,11 +184,11 @@ const mistakes = [
   "Spending too long on one difficult option at the expense of easier ones elsewhere.",
   "Guessing on a close call without working through the actual calculation or definition.",
   "Confusing “at least” and “exactly” in probability or math phrasing.",
-  "Ignoring precise wording in economics statements — a single qualifier can flip an answer.",
+  "Ignoring precise wording in economics statements. A single qualifier can flip an answer.",
   "Memorizing math formulas without understanding when and why they apply.",
   "Practicing only familiar problem types and skipping unfamiliar question styles.",
   "Not practicing under real time pressure before exam day.",
-  "Not reviewing mistakes after practice sessions — repeating the same error type across multiple practice sets.",
+  "Not reviewing mistakes after practice sessions, which lets the same error type repeat across multiple sets.",
 ];
 
 function BbeEntranceExamHubPage() {
@@ -196,7 +196,7 @@ function BbeEntranceExamHubPage() {
     <BbeExamShell
       jsonLd={faqJsonLd}
       h1="WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide"
-      lead="What is the WU Vienna BBE entrance exam and what should you expect? This hub covers format, subjects, scoring overview, difficulty and preparation — then points you to deeper guides and free practice."
+      lead="What is the WU Vienna BBE entrance exam, and what should you expect? This hub walks through format, subjects, scoring, difficulty, and preparation, then points you toward deeper guides and free practice."
       heroActions={
         <>
           <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Start the Free Demo Course</BbePrimaryButton>
@@ -213,8 +213,9 @@ function BbeEntranceExamHubPage() {
             applicants typically prepare.
           </p>
           <p>
-            Use it as a map: skim the format, sample the question style, then follow the subject and
-            preparation guides for depth — and practice with BBE-style materials when you are ready.
+            Think of it as a map. Skim the format here, sample the question style, then follow the subject
+            and preparation guides when you want more depth. When you are ready, practice with BBE-style
+            materials on BBE School.
           </p>
         </BbeSection>
 
@@ -251,23 +252,23 @@ function BbeEntranceExamHubPage() {
 
         <BbeSection id="how-it-works" title="How the exam works">
           <p>
-            Every BBE question follows the same structure: a stem — a scenario, claim, short passage, or
-            calculation setup — followed by a set of answer options. Your job is to go through the options
-            and decide, one by one, whether each is correct. This is not “pick the best answer out of four”
-            — it is a series of independent judgment calls under one shared stem.
+            Every BBE question follows the same structure. A stem sets the scene: a scenario, claim, short
+            passage, or calculation setup. Below it you get a set of answer options. Your job is to go
+            through those options one by one and decide whether each is correct. This is not “pick the best
+            answer out of four.” It is a series of independent judgment calls under one shared stem.
           </p>
           <QuestionFormatVisual />
           <p>
             Some questions have exactly one correct option; others have several. There is no reliable
-            pattern to lean on — you cannot assume a fixed split between true and false — so each option
-            has to be evaluated on its own merits, every time. One constraint is worth knowing, though: at
-            least one statement is always true. A stem where all five options are false does not happen —
-            five true is possible, but all-false is not.
+            pattern to lean on, so you cannot assume a fixed split between true and false. Each option has
+            to be evaluated on its own merits, every time. One constraint is worth knowing, though: at
+            least one statement is always true. A stem where all five options are false does not happen.
+            Five true is possible, but all-false is not.
           </p>
         </BbeSection>
 
         <BbeSection id="sample" title="Sample BBE-style question">
-          <p className="text-sm italic">BBE-style practice example — not an official WU question.</p>
+          <p className="text-sm italic">BBE-style practice example. Not an official WU question.</p>
           <blockquote className="rounded-xl border-l-4 border-primary/70 bg-secondary/40 px-5 py-4 text-base leading-relaxed text-foreground">
             A factory receives components from two suppliers. Supplier A provides 60% of all components,
             and Supplier B provides the remaining 40%. 3% of Supplier A’s components are defective, and 5%
@@ -280,7 +281,7 @@ function BbeEntranceExamHubPage() {
             ))}
           </div>
           <p>
-            Options A, B, and D are true for different reasons — a direct calculation, a comparison of two
+            Options A, B, and D are true for different reasons: a direct calculation, a comparison of two
             posteriors, and a conceptual “what if” case. Option C confuses the posterior with the prior;
             option E assumes the information is irrelevant when it is not.
           </p>
@@ -323,7 +324,7 @@ function BbeEntranceExamHubPage() {
         </BbeSection>
 
         <BbeSection id="mathematics-overview" title="Mathematics overview">
-          <SectionCard icon={<Calculator className="h-5 w-5" />} title="Mathematics — highest time demand">
+          <SectionCard icon={<Calculator className="h-5 w-5" />} title="Mathematics: the section that eats the clock">
             <p>
               Covers logic, elementary algebra, elementary financial mathematics, equations, linear
               equations in two unknowns, inequalities, linear and quadratic functions, power functions,
@@ -333,9 +334,9 @@ function BbeEntranceExamHubPage() {
               and a formula sheet is provided at the exam.
             </p>
             <p>
-              Math is typically the hardest section and the most time-consuming — plan on a large share of
-              the 2-hour exam here. WU also varies question styles within these topics from year to year, so
-              volume and variety of practice matter.
+              Math is typically the hardest section and the most time-consuming. Plan on spending a large
+              share of the 2-hour exam here. WU also varies question styles within these topics from year
+              to year, so volume and variety of practice matter.
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-2">
               <BbeTextLink to="/bbe-mathematics">See the complete BBE mathematics topic guide →</BbeTextLink>
@@ -345,18 +346,18 @@ function BbeEntranceExamHubPage() {
         </BbeSection>
 
         <BbeSection id="economics-overview" title="Economics & Business overview">
-          <SectionCard icon={<BookOpen className="h-5 w-5" />} title="Economics & Business — 40% approximate weighting">
+          <SectionCard icon={<BookOpen className="h-5 w-5" />} title="Economics & Business: roughly 40% of the score">
             <p>
               Tested via independent literature study of Fuhrmann, B. (2019),{" "}
               <cite className="font-medium not-italic text-foreground">
                 Introduction to Business and Economics
               </cite>
-              , Chapters 1–6. The material covers basic economic concepts and market mechanisms, types and
+              , Chapters 1 to 6. The material covers basic economic concepts and market mechanisms, types and
               forms of businesses, ownership structures, sources of finance, marketing fundamentals, and
               interpreting short business scenarios and terminology.
             </p>
             <p>
-              Exam wording is often precise: a single qualifier can flip a statement. With strong weighting
+              Exam wording is often precise. A single qualifier can flip a statement. With strong weighting
               relative to question count, this section rewards accuracy and speed once you know the book’s
               definitions.
             </p>
@@ -370,7 +371,7 @@ function BbeEntranceExamHubPage() {
         </BbeSection>
 
         <BbeSection id="english-overview" title="English overview">
-          <SectionCard icon={<Languages className="h-5 w-5" />} title="English — proficiency and speed">
+          <SectionCard icon={<Languages className="h-5 w-5" />} title="English: proficiency and pace">
             <p>
               Tests comprehension of English texts on contemporary social issues, vocabulary, and grammar,
               at an expected B2 level. WU recommends practicing on BBC Learning English, British Council
@@ -379,8 +380,8 @@ function BbeEntranceExamHubPage() {
               Conversation.
             </p>
             <p>
-              This section carries the smallest approximate score share and is harder to “study for”
-              directly — it examines general command of English rather than a fixed chapter list.
+              This section carries the smallest approximate score share and is harder to “study for” in the
+              traditional sense. It examines general command of English rather than a fixed chapter list.
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-2">
               <BbeTextLink to="/bbe-economics-english">See the Economics &amp; English study guide →</BbeTextLink>
@@ -393,7 +394,7 @@ function BbeEntranceExamHubPage() {
           <ul className="space-y-4">
             <li className="rounded-xl border border-border bg-card p-5">
               <p className="font-display text-base font-semibold text-foreground">
-                Mathematics — high preparation demand
+                Mathematics: high preparation demand
               </p>
               <p className="mt-2 text-sm leading-relaxed">
                 Wide-ranging topics and yearly variation in question style mean volume and variety of
@@ -402,7 +403,7 @@ function BbeEntranceExamHubPage() {
             </li>
             <li className="rounded-xl border border-border bg-card p-5">
               <p className="font-display text-base font-semibold text-foreground">
-                Economics — concept- and wording-focused
+                Economics: concept- and wording-focused
               </p>
               <p className="mt-2 text-sm leading-relaxed">
                 The material is bounded to one required text, but exam statements hinge on precise phrasing.
@@ -410,7 +411,7 @@ function BbeEntranceExamHubPage() {
             </li>
             <li className="rounded-xl border border-border bg-card p-5">
               <p className="font-display text-base font-semibold text-foreground">
-                English — proficiency- and speed-focused
+                English: proficiency- and speed-focused
               </p>
               <p className="mt-2 text-sm leading-relaxed">
                 Harder to prepare for with a fixed syllabus; reading speed and vocabulary help most.
@@ -421,7 +422,7 @@ function BbeEntranceExamHubPage() {
 
         <BbeSection id="how-to-prepare" title="How should I prepare?">
           <p>
-            Most applicants find that 7–9 months of preparation is a reasonable baseline for covering all
+            Most applicants find that 7 to 9 months of preparation is a reasonable baseline for covering all
             three sections properly. If you have fewer months available, plan for higher intensity. The most
             reliable way to set your timeline is to take a diagnostic or mock early, then adjust focus by
             subject.
@@ -518,7 +519,7 @@ function BbeEntranceExamHubPage() {
 
         <BbeDemoCta
           title="Want to try BBE School preparation for free?"
-          body="Start the free demo course to experience sample lessons, BBE-style questions and explanations."
+          body="The free demo course includes sample lessons, BBE-style questions, and worked explanations."
         />
 
         <BbeFullPrepCta />
