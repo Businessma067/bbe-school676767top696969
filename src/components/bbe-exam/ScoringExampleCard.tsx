@@ -15,7 +15,6 @@ type StatementBreakdown = {
   isTrue: boolean;
   userMarked: boolean;
   points: number;
-  label: string;
 };
 
 function breakdownStatement(
@@ -25,39 +24,15 @@ function breakdownStatement(
   perWrong: number,
 ): StatementBreakdown {
   if (s.isTrue && s.userMarked) {
-    return {
-      letter,
-      isTrue: true,
-      userMarked: true,
-      points: perCorrect,
-      label: `Correct: you marked a true statement (+${perCorrect.toFixed(1)})`,
-    };
+    return { letter, isTrue: true, userMarked: true, points: perCorrect };
   }
   if (s.isTrue && !s.userMarked) {
-    return {
-      letter,
-      isTrue: true,
-      userMarked: false,
-      points: 0,
-      label: "Missed: true statement left unmarked (0, no penalty)",
-    };
+    return { letter, isTrue: true, userMarked: false, points: 0 };
   }
   if (!s.isTrue && s.userMarked) {
-    return {
-      letter,
-      isTrue: false,
-      userMarked: true,
-      points: -perWrong,
-      label: `Wrong tick: false statement marked (−${perWrong.toFixed(1)})`,
-    };
+    return { letter, isTrue: false, userMarked: true, points: -perWrong };
   }
-  return {
-    letter,
-    isTrue: false,
-    userMarked: false,
-    points: 0,
-    label: "Correct skip: false statement left unmarked (0)",
-  };
+  return { letter, isTrue: false, userMarked: false, points: 0 };
 }
 
 function formatPoints(n: number) {
@@ -82,10 +57,7 @@ function StatementCell({ item }: { item: StatementBreakdown }) {
         : "text-muted-foreground";
 
   return (
-    <li
-      className={cn("flex flex-col rounded-xl border p-3 sm:p-3.5", tone)}
-      title={item.label}
-    >
+    <li className={cn("flex flex-col rounded-xl border p-3 sm:p-3.5", tone)}>
       <div className="flex items-center justify-between gap-2">
         <span className="grid h-8 w-8 place-items-center rounded-lg bg-background/80 font-display text-sm font-bold text-foreground shadow-sm">
           {item.letter}
@@ -107,8 +79,6 @@ function StatementCell({ item }: { item: StatementBreakdown }) {
       <p className={cn("mt-2 font-display text-lg font-bold tabular-nums", pointsTone)}>
         {formatPoints(item.points)} pts
       </p>
-
-      <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{item.label}</p>
     </li>
   );
 }
@@ -192,12 +162,6 @@ export function ScoringExampleCard({
                 </td>
                 <td className="px-4 py-3 font-display font-bold tabular-nums text-red-800">
                   {lost.toFixed(1)}
-                </td>
-              </tr>
-              <tr className="border-b border-border/70 bg-background/60">
-                <td className="px-4 py-3 font-medium">Raw total (before zero floor)</td>
-                <td className="px-4 py-3 font-display font-bold tabular-nums">
-                  {rawTotal.toFixed(1)}
                 </td>
               </tr>
               <tr className="bg-background/80">
