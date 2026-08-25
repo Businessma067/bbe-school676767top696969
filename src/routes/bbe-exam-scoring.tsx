@@ -8,6 +8,11 @@ import {
 } from "@/components/bbe-exam/BbeExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
+import {
+  ScoringExampleCard,
+  ScoringExamplesLegend,
+  type ScoringExample,
+} from "@/components/bbe-exam/ScoringExampleCard";
 import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
@@ -76,26 +81,26 @@ function marks(pattern: boolean[], truths: boolean[]): StatementResult[] {
 const EXAMPLE_TRUTHS = [true, true, false, true, false]; // r=3, f=2
 const MAX_EXAMPLE = SCORING_CONFIG.math.defaultMaxPerTask;
 
-const workedExamples = [
+const workedExamples: ScoringExample[] = [
   {
     title: "Perfect selection",
     pattern: [true, true, false, true, false],
-    note: "You mark exactly the three true statements and leave both false ones unmarked.",
+    note: "You mark all three true statements and leave both false ones blank. Every green cell adds points; grey cells stay at 0 with no penalty.",
   },
   {
     title: "Partial credit with one miss",
     pattern: [true, true, false, false, false],
-    note: "You find two of three true statements and avoid both false ones.",
+    note: "You mark two true statements and skip the third. The missed true statement (D) stays grey at 0. You still avoid both penalties.",
   },
   {
     title: "Correct marks plus one wrong tick",
     pattern: [true, true, true, true, false],
-    note: "All three true statements are marked, but one false statement is also selected.",
+    note: "You find all three true statements, but you also mark false statement C. The red penalty pulls the total down even though your true marks were correct.",
   },
   {
     title: "Over-ticking cancels progress",
     pattern: [true, true, true, true, true],
-    note: "Marking every statement includes both false ones, and the penalties can wipe the task to zero.",
+    note: "You mark every option. Green credit from the three true statements is cancelled by red penalties on both false statements, so the task floors at 0.",
   },
 ].map((ex) => {
   const statements = marks(ex.pattern, EXAMPLE_TRUTHS);
@@ -279,40 +284,22 @@ function BbeExamScoringPage() {
         </BbeSection>
 
         <BbeSection id="worked-examples" title="Worked scoring examples">
-          <p>
-            Assume a mathematics-style task worth{" "}
-            <span className="font-medium text-foreground">{MAX_EXAMPLE} points</span> with five
-            statements whose truth pattern is T, T, F, T, F (so r = {r}, f = {f}). Then perCorrect ={" "}
-            {MAX_EXAMPLE} / {r} = {perCorrect.toFixed(1)} and perWrong = {MAX_EXAMPLE} / {f} ={" "}
-            {perWrong.toFixed(1)}.
-          </p>
-          <div className="space-y-4">
+          <ScoringExamplesLegend
+            maxPoints={MAX_EXAMPLE}
+            perCorrect={perCorrect}
+            perWrong={perWrong}
+            r={r}
+            f={f}
+          />
+          <div className="mt-6 space-y-6">
             {workedExamples.map((ex) => (
-              <article
+              <ScoringExampleCard
                 key={ex.title}
-                className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6"
-              >
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-display text-lg font-bold text-foreground">{ex.title}</h3>
-                  <p className="font-display text-lg font-bold text-foreground">
-                    Score: {ex.score.toFixed(1)} / {MAX_EXAMPLE}
-                  </p>
-                </div>
-                <p className="mt-2 text-sm">{ex.note}</p>
-                <ul className="mt-3 grid gap-2 sm:grid-cols-5">
-                  {ex.statements.map((s, i) => (
-                    <li
-                      key={`${ex.title}-${i}`}
-                      className="rounded-lg border border-border bg-secondary/40 px-2 py-2 text-center text-xs"
-                    >
-                      <span className="font-semibold text-foreground">{String.fromCharCode(65 + i)}</span>
-                      <span className="mt-1 block text-muted-foreground">
-                        {s.isTrue ? "True" : "False"} · {s.userMarked ? "marked" : "left"}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </article>
+                example={ex}
+                maxPoints={MAX_EXAMPLE}
+                perCorrect={perCorrect}
+                perWrong={perWrong}
+              />
             ))}
           </div>
         </BbeSection>
