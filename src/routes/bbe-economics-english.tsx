@@ -3,7 +3,6 @@ import { BookOpen, Languages } from "lucide-react";
 import type { ReactNode } from "react";
 import {
   BbeDemoCta,
-  BbeFullPrepCta,
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
@@ -260,8 +259,6 @@ function BbeEconomicsEnglishPage() {
           <BbeTextLink to="/bbe-entrance-exam">Back to the BBE Entrance Exam Guide →</BbeTextLink>
           <BbeTextLink to="/bbe-mathematics">See the BBE mathematics topic guide →</BbeTextLink>
         </div>
-
-        <BbeFullPrepCta />
       </div>
     </BbeExamShell>
   );
@@ -284,7 +281,9 @@ function SubjectCard({
         </span>
         <div className="min-w-0 space-y-3">
           <h3 className="font-display text-lg font-bold tracking-tight text-foreground">{title}</h3>
-          <div className="space-y-3 text-base leading-relaxed text-muted-foreground">{children}</div>
+          <div className="space-y-3 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+            {children}
+          </div>
         </div>
       </div>
     </article>

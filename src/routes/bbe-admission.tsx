@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import {
   BbeDemoCta,
-  BbeFullPrepCta,
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
@@ -72,6 +71,11 @@ const cycleDates: { field: string; detail: string }[] = [
   { field: "OSA deadline", detail: BBE_EXAM_FORMAT.cycle.osaDeadline },
   { field: "Entrance exam", detail: BBE_EXAM_FORMAT.cycle.examDate },
   { field: "Exam location", detail: BBE_EXAM_FORMAT.location },
+  { field: "Available places", detail: String(BBE_EXAM_FORMAT.places) },
+  {
+    field: "Approx. admission rate",
+    detail: "About 8% (roughly 2,900 exam-takers last year)",
+  },
   { field: "Program start", detail: "Winter semester only" },
 ];
 
@@ -228,8 +232,6 @@ function BbeAdmissionPage() {
           <BbeTextLink to="/bbe-entrance-exam">Back to the BBE Entrance Exam Guide →</BbeTextLink>
           <BbeTextLink to="/bbe-exam-preparation">Build your preparation plan →</BbeTextLink>
         </div>
-
-        <BbeFullPrepCta />
       </div>
     </BbeExamShell>
   );
@@ -247,8 +249,10 @@ function DateTable({ rows }: { rows: { field: string; detail: ReactNode }[] }) {
               i % 2 === 0 ? "bg-card" : "bg-secondary/40",
             )}
           >
-            <dt className="text-sm font-semibold text-foreground">{row.field}</dt>
-            <dd className="text-sm leading-relaxed text-muted-foreground">{row.detail}</dd>
+            <dt className="text-[0.975rem] font-semibold text-foreground">{row.field}</dt>
+            <dd className="text-[0.975rem] leading-relaxed text-neutral-800 sm:text-[1.0625rem]">
+              {row.detail}
+            </dd>
           </div>
         ))}
       </dl>
