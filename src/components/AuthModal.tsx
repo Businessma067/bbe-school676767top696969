@@ -124,10 +124,12 @@ export function AuthModal({
         }
 
         if (data.session) {
-          await supabase.from("profiles").upsert(
-            { user_id: data.session.user.id, display_name: displayName },
-            { onConflict: "user_id" },
-          );
+          await supabase
+            .from("profiles")
+            .upsert(
+              { user_id: data.session.user.id, display_name: displayName },
+              { onConflict: "user_id" },
+            );
           onOpenChange(false);
           onSignedIn?.();
           return;
@@ -310,11 +312,7 @@ export function AuthModal({
             disabled={loading}
             className="w-full rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 disabled:opacity-60"
           >
-            {loading
-              ? "Please wait…"
-              : mode === "signin"
-                ? "Sign in"
-                : "Create account"}
+            {loading ? "Please wait…" : mode === "signin" ? "Sign in" : "Create account"}
           </button>
         </form>
 
