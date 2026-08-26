@@ -1,7 +1,7 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Chapters 1 (Logic), 4 (Equations), 5 (Linear equations), 8 (Power functions),
- * 11 (Financial mathematics), 12 (Elementary probability), and 13 (Binomial)
+ * Chapters 1 (Logic), 3 (Financial mathematics), 4 (Equations), 5 (Linear equations),
+ * 8 (Power functions), 11 (Elementary probability), and 12 (Binomial)
  * are populated; others use placeholders.
  */
 
@@ -23,7 +23,7 @@ export type MathTask = {
   tactical_explanations: string[];
   difficulty_level: string;
   sort_order: number;
-  /** Book subsection id within a chapter, e.g. "11.3". */
+  /** Book subsection id within a chapter, e.g. "3.3". */
   subsection?: string;
   /** Shared worked solution (KaTeX / markdown-ish) shown with all statement explanations. */
   solution_overview?: string;
@@ -56,7 +56,7 @@ export const MATH_TASKS_PER_CHAPTER = 5;
 const CHAPTER_TITLES = [
   "Logic",
   "Elementary algebra",
-  "Elementary financial mathematics",
+  "Financial mathematics",
   "Equations",
   "Linear equations in two unknowns",
   "Inequalities",
@@ -64,7 +64,6 @@ const CHAPTER_TITLES = [
   "Power functions",
   "Polynomial functions",
   "Exponential and logarithmic functions",
-  "Financial mathematics",
   "Elementary probability",
   "Binomial distribution",
 ] as const;
@@ -89,12 +88,12 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
 
 const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   1: MATH_CH1_LOGIC,
+  3: MATH_CH11_FINANCIAL,
   4: MATH_CH4_EQUATIONS,
   5: MATH_CH5_LINEAR_EQUATIONS,
   8: MATH_CH8_POWER_FUNCTIONS,
-  11: MATH_CH11_FINANCIAL,
-  12: MATH_CH12_PROBABILITY,
-  13: (ch13Binomial.tasks as MathTask[]).map((t) => ({
+  11: MATH_CH12_PROBABILITY,
+  12: (ch13Binomial.tasks as MathTask[]).map((t) => ({
     ...t,
     placeholder: false,
   })),
@@ -102,9 +101,9 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
 
 const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
   1: MATH_CH1_SUBSECTIONS,
+  3: MATH_CH11_SUBSECTIONS,
   4: MATH_CH4_SUBSECTIONS,
-  11: MATH_CH11_SUBSECTIONS,
-  12: MATH_CH12_SUBSECTIONS,
+  11: MATH_CH12_SUBSECTIONS,
 };
 
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
