@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  BbeDemoCta,
   BbeFullPrepCta,
   BbeInfoCallout,
   BbePrimaryButton,
@@ -263,7 +262,6 @@ function BbeExamPreparationPage() {
           <BbeFaqAccordion faqs={faqs} />
         </BbeSection>
 
-        <BbeDemoCta />
         <BbeFullPrepCta
           title="Ready to move beyond the demo?"
           body="Continue from the free demo into full topic practice, flashcards, and mocks when you are ready."

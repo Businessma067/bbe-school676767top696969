@@ -178,6 +178,10 @@ function BbeAdmissionPage() {
             places. The OSA does not enter that ranking. Relative standing among candidates in the cycle
             matters. There is no separate fixed “pass mark” published in this guide.
           </p>
+          <p>
+            The exam is very competitive. Last year there were about 2,900 exam-takers for roughly{" "}
+            {BBE_EXAM_FORMAT.places} places, so the admission rate was about 8%.
+          </p>
         </BbeSection>
 
         <BbeSection id="after-exam" title="Admission after the exam">
