@@ -1,4 +1,4 @@
-# Chapter 11 — Financial mathematics
+# Chapter 3 — Financial mathematics
 
 Financial mathematics compares money paid or received at different dates. A euro today and a euro in five years are not equivalent, because today's euro can earn interest. This chapter turns that idea into formulas for savings, loans, annuities, mortgages and investment projects.
 
@@ -21,7 +21,7 @@ The chapter starts from zero and keeps the timing visible throughout. Every rate
 
 ---
 
-## 11.1 Interest Periods and Effective Rates
+## 3.1 Interest Periods and Effective Rates
 
 ### One period at a time
 
@@ -274,7 +274,7 @@ The year-end balance is approximately \$20,868.27. Daily compounding gives a sli
 
 ---
 
-## 11.2 Continuous Compounding
+## 3.2 Continuous Compounding
 
 ### Growth at every instant
 
@@ -635,7 +635,7 @@ The continuous advantage grows with both the rate and the horizon. It is not a f
 
 ---
 
-## 11.3 Present Value
+## 3.3 Present Value
 
 ### Moving a future payment back to today
 
@@ -1113,7 +1113,7 @@ If the discount rate were $4\%$ instead, then $f(t)=40{,}000e^{0.01t}$ would kee
 
 ---
 
-## 11.4 Geometric Series
+## 3.4 Geometric Series
 
 ### Sequence, term and sum
 
@@ -1469,7 +1469,7 @@ Thus $\sum 1/n$ diverges, while $\sum 1/n^2$ converges. “The payments get smal
 
 ---
 
-## 11.5 Annuities, Annuities Due & Perpetuities
+## 3.5 Annuities, Annuities Due & Perpetuities
 
 ### Timing comes first
 
@@ -1824,7 +1824,7 @@ The nominal contributions are equal, but their timing is not. Plan A is much lar
 
 ---
 
-## 11.6 Mortgage Repayments
+## 3.6 Mortgage Repayments
 
 ### A loan is an annuity viewed from the other side
 
@@ -2102,7 +2102,7 @@ The instalment plan becomes cheaper. A higher discount rate reduces the value of
 
 ---
 
-## 11.7 Internal Rate of Return
+## 3.7 Internal Rate of Return
 
 ### Cash-flow signs and net present value
 

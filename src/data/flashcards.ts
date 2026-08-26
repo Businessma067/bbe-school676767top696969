@@ -265,7 +265,7 @@ export const MATH_FLASHCARD_SECTIONS: FlashcardSection[] = [
   },
   {
     id: "math-3",
-    title: "Elementary financial mathematics",
+    title: "Financial mathematics",
     cards: [
       { term: "Simple interest", explanation: "Interest $I=Prt$, where $P$ is principal, $r$ is the interest rate per period, and $t$ is the number of periods. Future value: $FV=P(1+rt)$." },
       { term: "Compound interest (discrete)", explanation: "$FV=P(1+r)^{n}$, where $r$ is the rate per compounding period and $n$ is the number of periods." },
