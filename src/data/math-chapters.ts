@@ -47,8 +47,82 @@ export type MathChapter = {
   subsections?: readonly MathSubsection[];
 };
 
-/** How many free (unlocked) tasks per chapter in the Demo tier. */
+/** Fallback: how many free tasks per unspecified chapter in the Demo tier. */
 export const DEMO_MATH_FREE_LIMIT = 2;
+
+/**
+ * Demo unlocks by subsection. Unlisted subsections in these chapters stay locked.
+ * Counts are the first N tasks in that subsection.
+ */
+export const DEMO_MATH_SUBSECTION_FREE: Partial<
+  Record<number, Readonly<Record<string, number>>>
+> = {
+  1: { "1.1": 10, "1.2": 5 },
+  3: { "3.1": 10, "3.2": 5, "3.3": 5, "3.4": 5 },
+  4: { "4.1": 10, "4.2": 5, "4.3": 5, "4.4": 5 },
+};
+
+/** Demo unlocks for chapters without a subsection map (overall first N tasks). */
+export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {
+  5: 10,
+};
+
+function localIndexInSubsection(
+  tasks: MathTask[],
+  idx: number,
+  subsection: string,
+): number {
+  let local = 0;
+  for (let i = 0; i < idx; i++) {
+    if (tasks[i]?.subsection === subsection) local += 1;
+  }
+  return local;
+}
+
+/** Whether a task is locked in the Demo tier. Lite / Full never lock. */
+export function isDemoMathTaskLocked(
+  chapter: number | "revision" | null,
+  idx: number,
+  tasks: MathTask[],
+): boolean {
+  if (chapter === "revision" || chapter === null) return false;
+  const task = tasks[idx];
+  if (!task) return true;
+  const subLimits = DEMO_MATH_SUBSECTION_FREE[chapter];
+  if (subLimits && task.subsection) {
+    const limit = subLimits[task.subsection] ?? 0;
+    return localIndexInSubsection(tasks, idx, task.subsection) >= limit;
+  }
+  const limit = DEMO_MATH_CHAPTER_FREE[chapter] ?? DEMO_MATH_FREE_LIMIT;
+  return idx >= limit;
+}
+
+/** How far past the demo free window this task is (0 = first locked in its group). */
+export function demoMathLockDistance(
+  chapter: number,
+  idx: number,
+  tasks: MathTask[],
+): number {
+  const task = tasks[idx];
+  if (!task) return 0;
+  const subLimits = DEMO_MATH_SUBSECTION_FREE[chapter];
+  if (subLimits && task.subsection) {
+    const limit = subLimits[task.subsection] ?? 0;
+    return localIndexInSubsection(tasks, idx, task.subsection) - limit;
+  }
+  const limit = DEMO_MATH_CHAPTER_FREE[chapter] ?? DEMO_MATH_FREE_LIMIT;
+  return idx - limit;
+}
+
+export function lastUnlockedDemoMathIndex(
+  chapter: number | "revision" | null,
+  tasks: MathTask[],
+): number {
+  for (let i = tasks.length - 1; i >= 0; i--) {
+    if (!isDemoMathTaskLocked(chapter, i, tasks)) return i;
+  }
+  return 0;
+}
 
 /** Placeholder task slots per chapter (structure for upcoming content). */
 export const MATH_TASKS_PER_CHAPTER = 5;
