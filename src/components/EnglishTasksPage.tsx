@@ -2,10 +2,12 @@ import { recordTaskAttempt } from "@/lib/user-progress";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
+import { AuthModal } from "@/components/AuthModal";
 import { AuthNav } from "@/components/AuthNav";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
@@ -92,6 +94,9 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [explanation, setExplanation] = useState<ExplanationState | null>(null);
   const [showExplanations, setShowExplanations] = useState(false);
+  const authGate = useAuthGate();
+  const requireAuthForAnswers =
+    tier === "demo" ? authGate.requireAuth : () => true;
 
   useEffect(() => {
     setActiveIdx(0);
@@ -669,6 +674,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                 onRequestExplanation={(i) => requestExplanation(activeCase, i)}
                 explanationsOpen={showExplanations}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
+                requireAuth={requireAuthForAnswers}
                 onGraded={(ok, correctCount) => {
                   recordResult(activeCase.id, ok);
                   const chLabel =
@@ -757,6 +763,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                   onRequestExplanation={(i) => requestExplanation(activeCase, i)}
                   explanationsOpen={showExplanations}
                   onToggleExplanations={() => setShowExplanations((v) => !v)}
+                  requireAuth={requireAuthForAnswers}
                   onGraded={(ok, correctCount) => {
                     recordResult(activeCase.id, ok);
                     const chLabel =
@@ -817,6 +824,10 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
           </PracticeRightSlot>
         </div>
       </div>
+
+      {tier === "demo" && (
+        <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+      )}
     </PracticeCalcProvider>
   );
 }
@@ -937,6 +948,7 @@ function CaseCard({
   onRequestExplanation,
   explanationsOpen,
   onToggleExplanations,
+  requireAuth,
 }: {
   data: EnglishTask;
   index: number;
@@ -950,6 +962,7 @@ function CaseCard({
   onRequestExplanation: (i: number) => void;
   explanationsOpen: boolean;
   onToggleExplanations: () => void;
+  requireAuth?: () => boolean;
 }) {
   const n = data.statements.length;
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
@@ -963,6 +976,7 @@ function CaseCard({
   }, [data.id, data.statements]);
 
   const setAt = (i: number, v: boolean) => {
+    if (requireAuth && !requireAuth()) return;
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
@@ -972,6 +986,7 @@ function CaseCard({
   );
 
   const handleSubmit = () => {
+    if (requireAuth && !requireAuth()) return;
     setChecked(true);
     onGraded(correctCount === data.answer_key.length, correctCount);
   };

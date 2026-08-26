@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
+import { AuthModal } from "@/components/AuthModal";
 import { AuthNav } from "@/components/AuthNav";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationText } from "@/components/ExplanationText";
@@ -15,6 +16,7 @@ import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { useAuthGate } from "@/hooks/use-auth-gate";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -106,6 +108,7 @@ function EconomicsTasks() {
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const authGate = useAuthGate();
 
   type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
   type ExplanationState = {
@@ -552,6 +555,7 @@ function EconomicsTasks() {
                   ? "Failed on time"
                   : null
               }
+              requireAuth={authGate.requireAuth}
               onGraded={(allCorrect, correctCount) => {
                 recordResult(activeCase.id, allCorrect);
                 if (timed.enabled) timed.markSubmitted(activeCase.id);
@@ -628,6 +632,8 @@ function EconomicsTasks() {
           onReset={(ids) => { resetCaseIds(ids); setCustomResetOpen(false); }}
         />
       )}
+
+      <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
     </div>
     </PracticeCalcProvider>
   );
@@ -759,6 +765,7 @@ function CustomResetModal({
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
   activeExplanationIndex, onRequestExplanation, reviewOnly = false, timerNote = null,
+  requireAuth,
 }: {
   data: Case; index: number;
   reviewOnly?: boolean;
@@ -768,6 +775,7 @@ function CaseCard({
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
   onRequestExplanation: (i: number) => void;
+  requireAuth?: () => boolean;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -785,6 +793,7 @@ function CaseCard({
   }, [reviewOnly, data.id]);
 
   const setAt = (i: number, v: boolean) => {
+    if (requireAuth && !requireAuth()) return;
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
@@ -794,6 +803,7 @@ function CaseCard({
   );
 
   const handleSubmit = () => {
+    if (requireAuth && !requireAuth()) return;
     setChecked(true);
     onGraded(correctCount === 5, correctCount);
   };
