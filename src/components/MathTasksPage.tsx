@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
+import { AuthModal } from "@/components/AuthModal";
 import { AuthNav } from "@/components/AuthNav";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TheoryReader } from "@/components/TheoryReader";
+import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
@@ -87,6 +89,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   const [activeIdx, setActiveIdx] = useState(0);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>({ passed: [], revision: [] });
+  const authGate = useAuthGate();
+  const requireAuthForAnswers =
+    tier === "demo" ? authGate.requireAuth : () => true;
 
   useEffect(() => {
     setProgress(loadProgress());
@@ -739,6 +744,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                 explanationsOpen={showExplanations}
                 onShowExplanations={() => setShowExplanations(true)}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
+                requireAuth={requireAuthForAnswers}
                 onGraded={(result) => {
                   setProgress((prev) => {
                     const next: Progress = {
@@ -860,6 +866,10 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             setCustomResetOpen(false);
           }}
         />
+      )}
+
+      {tier === "demo" && (
+        <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
       )}
     </div>
     </PracticeCalcProvider>
@@ -1638,6 +1648,7 @@ function MathTaskCard({
   onToggleExplanations,
   onGraded,
   onResetProgress,
+  requireAuth,
 }: {
   task: MathTask;
   index: number;
@@ -1653,6 +1664,7 @@ function MathTaskCard({
     statementResults: { statement_index: number; correct: boolean }[];
   }) => void;
   onResetProgress: () => void;
+  requireAuth?: () => boolean;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
     task.statements.map(() => null),
@@ -1665,6 +1677,7 @@ function MathTaskCard({
   }, [task.id, task.statements]);
 
   const setAt = (i: number, v: boolean) => {
+    if (requireAuth && !requireAuth()) return;
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
@@ -1674,6 +1687,7 @@ function MathTaskCard({
   );
 
   const handleSubmit = () => {
+    if (requireAuth && !requireAuth()) return;
     setChecked(true);
     const statementResults = task.answer_key.map((key, i) => ({
       statement_index: i,
