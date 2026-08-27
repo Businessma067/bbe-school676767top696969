@@ -1,8 +1,10 @@
 """Assemble Chapter 2 task JSON from subsection modules.
 
-Explanations are rebound to statements A–E and rewritten in the Chapter 4 /
-MATH 13.18 layout: letter header, named-rule prose, display math on its own
-lines, lowercase closer.
+Explanations follow MATH 13.18: letter header bound to the answer key,
+a named-rule sentence, display math as its own ``$$...$$`` paragraph,
+and a verdict closer. Lengths vary inside each task — one short
+conceptual block (13.18 B), the rest compact or stepped (13.18 A/D/E).
+No padding prelude; no identical five-block template.
 """
 
 from __future__ import annotations
@@ -25,10 +27,25 @@ from s25 import TASKS as T25  # noqa: E402
 LETTERS = "ABCDE"
 _HDR = re.compile(r"^\*\*[A-F]\.\*\*\s*→\s*(True|False)\s*", re.I)
 _CLOSER = re.compile(
-    r"(?:so the statement is (?:True|False)\.?)\s*$",
+    r"(?:,?\s*)?(?:so |matching these figures to the claim, )?"
+    r"(?:the statement is (?:True|False)\.?)\s*$",
     re.I,
 )
 _DISPLAY = re.compile(r"\$\$(.+?)\$\$", re.S)
+_HAS_VERDICT = re.compile(r"the statement is (?:True|False)\.?\s*$", re.I)
+
+# Trailing tautologies that only repeat the closer.
+_TAUTOLOGY = re.compile(
+    r"[,;]?\s*(?:"
+    r"The reported leftover matches\.|"
+    r"The reported value is correct\.|"
+    r"The leftover is the claimed constant\.|"
+    r"The claim matches\.|"
+    r"matching the claim\.|"
+    r"Matching the claim\."
+    r")\s*$",
+    re.I,
+)
 
 
 def _clean_inner(inner: str) -> str:
@@ -37,11 +54,14 @@ def _clean_inner(inner: str) -> str:
     return inner.strip()
 
 
-def format_display_math(text: str) -> str:
-    """Put each $$ formula on its own lines, matching Ch4 / Ch13."""
+def format_display_math(text: str, *, same_line: bool = True) -> str:
+    """Put each display on its own paragraph, MATH 13.18 / Ch4 layout."""
 
     def repl(m: re.Match[str]) -> str:
-        return f"\n\n$$\n{_clean_inner(m.group(1))}\n$$\n\n"
+        inner = _clean_inner(m.group(1))
+        if same_line:
+            return f"\n\n$${inner}$$\n\n"
+        return f"\n\n$$\n{inner}\n$$\n\n"
 
     s = _DISPLAY.sub(repl, text)
     s = re.sub(r"\$\$\n\n\.", "$$\n\n", s)
@@ -58,12 +78,12 @@ def promote_inline_identities(text: str) -> str:
             continue
         only = re.fullmatch(r"\$([^$]+)\$\.?", raw)
         if only and _looks_like_identity(only.group(1)):
-            chunks.append(f"$$\n{_clean_inner(only.group(1))}\n$$")
+            chunks.append(f"$${_clean_inner(only.group(1))}$$")
             continue
         lead = re.match(r"^\$([^$]+)\$\.?\s+(.+)$", raw, re.S)
         if lead and _looks_like_identity(lead.group(1)) and "=" in lead.group(1):
             chunks.append(
-                f"$$\n{_clean_inner(lead.group(1))}\n$$\n\n{lead.group(2).strip()}"
+                f"$${_clean_inner(lead.group(1))}$$\n\n{lead.group(2).strip()}"
             )
             continue
         chunks.append(raw)
@@ -74,60 +94,165 @@ def _looks_like_identity(inner: str) -> bool:
     return any(tok in inner for tok in ("=", r"\frac", r"\sqrt", r"\cdot", "^"))
 
 
-_PRELUDE = {
-    "2.1": (
-        "The claim is checked as an expansion or factoring identity. "
-        "Distribute, collect like terms, or factor, then compare both sides."
-    ),
-    "2.2": (
-        "The claim is checked as an identity of algebraic fractions on the "
-        "stated domain. Clear nested layers or cancel common factors."
-    ),
-    "2.3": (
-        "The claim is checked with the power rules — product, quotient, and "
-        "power of a power — on the stated domain."
-    ),
-    "2.4": (
-        "The claim is checked by rewriting absolute values piecewise, or by "
-        "an algebraic identity that holds for every real input named in the statement."
-    ),
-    "2.5": (
-        "The claim is checked as an algebraic identity on the domain named "
-        "in the statement. Carry out the expansion, cancellation, or exponent arithmetic."
-    ),
-}
-
-
-def format_ch13_explanation(i: int, truth: bool, raw: str, subsection: str = "2.5") -> str:
-    """Bind explanation i to letter A–E and the answer key, Ch13 closing style."""
-    letter = LETTERS[i]
-    verdict = "True" if truth else "False"
+def _strip_raw(raw: str) -> str:
     body = raw.strip()
     body = _HDR.sub("", body).strip()
     body = _CLOSER.sub("", body).strip()
+    body = re.sub(r"\)\.\s*$", ")", body)
+    body = re.sub(r"\n{3,}", "\n\n", body).strip()
+    return body
+
+
+def _strip_tautology(body: str) -> str:
+    body = body.strip()
+    body = _TAUTOLOGY.sub("", body).strip()
+    return body
+
+
+def _sentences(prose: str) -> list[str]:
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z])", prose.strip())
+    return [p.strip() for p in parts if p.strip()]
+
+
+def flatten_short(body: str) -> str:
+    """13.18 B: one or two sentences, inline math, no display block."""
+    displays = [_clean_inner(m) for m in _DISPLAY.findall(body)]
+    # Keep a numeric check inline; drop a pure-letter identity the prose already names.
+    keep = next((d for d in displays if re.search(r"\d", d) and r"\qquad" not in d), None)
+
+    def repl(m: re.Match[str]) -> str:
+        inner = _clean_inner(m.group(1))
+        if keep is not None and inner == keep:
+            return f" ${inner}$ "
+        return " "
+
+    text = _DISPLAY.sub(repl, body)
+    text = re.sub(r"\s+", " ", text).strip()
+    # Display used to complete a colon lead-in; after dropping it, start a new sentence.
+    text = re.sub(r":\s+(?=[A-Z])", ". ", text)
+    text = re.sub(r"\$\s+(?=[A-Z])", "$. ", text)
+    text = _strip_tautology(text).strip(" ,;")
+    if text and not text.endswith((".", "!", "?")):
+        text += "."
+    sents = _sentences(text)
+    if sents and sents[0].endswith(":"):
+        sents = sents[1:] or sents
+    if not sents:
+        return f"${keep}$." if keep else ""
+    if len(sents) == 1:
+        return sents[0]
+    return sents[0] + " " + sents[-1]
+
+
+def split_chain_display(inner: str) -> list[str]:
+    """Turn a numeric a=b=c chain into two 13.18-style display lines."""
+    if r"\qquad" in inner or inner.count("=") < 2:
+        return [inner]
+    if not re.search(r"\d", inner):
+        return [inner]
+    parts = [p.strip() for p in inner.split("=")]
+    if len(parts) < 3:
+        return [inner]
+    left = f"{parts[0]} = {parts[1]}"
+    right = "= " + " = ".join(parts[2:])
+    return [left, right]
+
+
+def restyle_stepped(body: str) -> str:
+    """13.18 A/D: named rule, then one display per step."""
     body = format_display_math(body)
     body = promote_inline_identities(body)
     body = format_display_math(body)
-    body = re.sub(r"\n{3,}", "\n\n", body).strip()
-    body = re.sub(r"\$\$\n\n\.", "$$\n\n", body).strip()
+    pieces: list[str] = []
+    for para in re.split(r"\n\n+", body.strip()):
+        raw = para.strip()
+        if not raw:
+            continue
+        m = re.fullmatch(r"\$\$(.+)\$\$", raw, re.S)
+        if m:
+            for chunk in split_chain_display(_clean_inner(m.group(1))):
+                pieces.append(f"$${chunk}$$")
+            continue
+        pieces.append(raw)
+    return "\n\n".join(pieces)
 
-    math_only = bool(re.fullmatch(r"(?:\s*\$\$.*?\$\$\s*)+", body, re.S))
-    prose = re.sub(r"\$\$.*?\$\$", " ", body, flags=re.S)
-    prose = re.sub(r"\$[^$]+\$", " ", prose)
-    prose = re.sub(r"\s+", " ", prose).strip(" .")
-    if math_only or len(prose) < 48:
-        prelude = _PRELUDE.get(subsection, _PRELUDE["2.5"])
-        body = f"{prelude}\n\n{body}" if body else prelude
 
-    prose = re.sub(r"\$\$.*?\$\$", "", body, flags=re.S).strip()
-    if prose and not re.search(r"[.!?]$", prose) and not body.rstrip().endswith("$$"):
-        body = body.rstrip(".") + "."
+def restyle_medium(body: str) -> str:
+    body = format_display_math(body)
+    body = promote_inline_identities(body)
+    return format_display_math(body)
 
-    return (
-        f"**{letter}.** → {verdict}\n\n"
-        f"{body}\n\n"
-        f"so the statement is {verdict}."
+
+def finish(body: str, verdict: str, style: str) -> str:
+    body = _strip_tautology(body).strip()
+    if _HAS_VERDICT.search(body):
+        return _HAS_VERDICT.sub(f"the statement is {verdict}.", body)
+
+    already_matches = bool(re.search(r"\bmatch", body, re.I))
+    if style == "short" or (style == "match" and already_matches):
+        return f"{body}\n\nSo the statement is {verdict}."
+    if style == "match":
+        return f"{body}\n\nMatching these figures to the claim, the statement is {verdict}."
+    if style == "against":
+        if verdict == "False":
+            return (
+                f"{body}\n\n"
+                f"The claim’s comparison is incorrect, so the statement is False."
+            )
+        return (
+            f"{body}\n\n"
+            f"Comparing this value with the claim shows the statement is True."
+        )
+    # medium / stepped — 13.18 A: closer hangs off the last sentence
+    last = body.split("\n")[-1]
+    if body.rstrip().endswith("$$") or re.search(r"\bso\b", last, re.I):
+        return f"{body}\n\nSo the statement is {verdict}."
+    body = body.rstrip(".")
+    return f"{body}, so the statement is {verdict}."
+
+
+def assign_styles(bodies: list[str]) -> list[str]:
+    """One short, one stepped, one match/against, two medium — like 13.18 A–E."""
+    n = len(bodies)
+    disp_counts = [len(_DISPLAY.findall(b)) for b in bodies]
+    # Flatten a 1-display item: dropping the block is what makes 13.18 B short.
+    short_i = min(
+        range(n),
+        key=lambda i: (0 if disp_counts[i] == 1 else 1, len(bodies[i]), i),
     )
+    long_i = max(
+        (i for i in range(n) if i != short_i),
+        key=lambda i: (len(bodies[i]), disp_counts[i], i),
+        default=short_i,
+    )
+    rest = [i for i in range(n) if i not in (short_i, long_i)]
+    match_i = rest[0] if rest else None
+    against_i = rest[1] if len(rest) > 1 else None
+    styles = ["medium"] * n
+    styles[short_i] = "short"
+    styles[long_i] = "stepped"
+    if match_i is not None:
+        styles[match_i] = "match"
+    if against_i is not None:
+        styles[against_i] = "against"
+    return styles
+
+
+def format_ch13_explanation(i: int, truth: bool, raw: str, style: str) -> str:
+    letter = LETTERS[i]
+    verdict = "True" if truth else "False"
+    body = _strip_raw(raw)
+
+    if style == "short":
+        body = flatten_short(body)
+    elif style == "stepped":
+        body = restyle_stepped(body)
+    else:
+        body = restyle_medium(body)
+
+    body = re.sub(r"\n{3,}", "\n\n", body).strip()
+    body = finish(body, verdict, style)
+    return f"**{letter}.** → {verdict}\n\n{body}"
 
 
 def bind_explanations(task: dict) -> dict:
@@ -135,17 +260,26 @@ def bind_explanations(task: dict) -> dict:
     expls = task["tactical_explanations"]
     if len(expls) != len(keys):
         raise ValueError(f"{task.get('title')}: explanations {len(expls)} vs keys {len(keys)}")
+    stripped = [_strip_raw(e) for e in expls]
+    styles = assign_styles(stripped)
     task["tactical_explanations"] = [
-        format_ch13_explanation(i, bool(keys[i]), expls[i], task.get("subsection", "2.5")) for i in range(len(keys))
+        format_ch13_explanation(i, bool(keys[i]), expls[i], styles[i])
+        for i in range(len(keys))
     ]
     return task
 
 
 def _display_is_isolated(expl: str) -> bool:
-    """Every $$ opener/closer sits on its own line."""
+    """Every $$ is either a lone delimiter line or a full $$...$$ paragraph."""
     for line in expl.split("\n"):
-        if "$$" in line and line.strip() != "$$":
-            return False
+        if "$$" not in line:
+            continue
+        s = line.strip()
+        if s == "$$":
+            continue
+        if s.startswith("$$") and s.endswith("$$") and s.count("$$") == 2:
+            continue
+        return False
     return True
 
 
@@ -179,17 +313,21 @@ def lint(tasks: list[dict]) -> list[str]:
         reused = [k for k, n in latex_hits.items() if n >= 3]
         if reused:
             errs.append(f"{t['title']}: same expression reused on 3+ statements ({reused[0][:40]})")
+        lens = [len(e) for e in t.get("tactical_explanations", [])]
+        if lens and max(lens) - min(lens) < 40:
+            errs.append(f"{t['title']}: explanation lengths too uniform ({min(lens)}–{max(lens)})")
         for i, expl in enumerate(t.get("tactical_explanations", [])):
             letter = LETTERS[i]
             verdict = "True" if t["answer_key"][i] else "False"
             head = f"**{letter}.** → {verdict}"
             if not expl.startswith(head):
                 errs.append(f"{t['title']} {letter}: header {expl[:40]!r} != {head}")
-            closer = f"so the statement is {verdict}."
-            if not expl.rstrip().endswith(closer):
+            if not re.search(rf"the statement is {verdict}\.?\s*$", expl, re.I):
                 errs.append(f"{t['title']} {letter}: closer mismatch")
+            if "The claim is checked" in expl:
+                errs.append(f"{t['title']} {letter}: generic prelude")
             if "$$" in expl and not _display_is_isolated(expl):
-                errs.append(f"{t['title']} {letter}: $$ not on its own line")
+                errs.append(f"{t['title']} {letter}: $$ not isolated")
     if len(titles) != len(set(titles)):
         errs.append("duplicate titles")
     return errs
@@ -215,11 +353,27 @@ def main() -> None:
     print(f"wrote {len(out_tasks)} tasks to {dest}")
     print(Counter(t["subsection"] for t in out_tasks))
     n_disp = sum(
-        expl.count("\n$$\n")
+        expl.count("$$") // 2
         for t in out_tasks
         for expl in t["tactical_explanations"]
     )
-    print(f"display-math delimiters: {n_disp}")
+    print(f"display-math blocks: {n_disp}")
+    lens = [len(e) for t in out_tasks for e in t["tactical_explanations"]]
+    spreads = [
+        max(len(e) for e in t["tactical_explanations"])
+        - min(len(e) for e in t["tactical_explanations"])
+        for t in out_tasks
+    ]
+    lens.sort()
+    print(
+        f"expl len min/med/mean/max: {lens[0]} / {lens[len(lens)//2]} / "
+        f"{sum(lens)//len(lens)} / {lens[-1]}"
+    )
+    spreads.sort()
+    print(
+        f"within-task spread min/med/max: {spreads[0]} / "
+        f"{spreads[len(spreads)//2]} / {spreads[-1]}"
+    )
 
 
 if __name__ == "__main__":

@@ -6,11 +6,11 @@ LETTERS = "ABCDE"
 
 
 def expl(i: int, truth: bool, body: str) -> str:
-    """Draft explanation; assemble.py rewrites these into Ch4 / Ch13 layout."""
+    """Draft explanation; assemble.py rewrites these into MATH 13.18 layout."""
     letter = LETTERS[i]
     verdict = "True" if truth else "False"
     body = body.strip()
-    if body and not body.endswith((".", "$$")):
+    if body and not body.endswith((".", "$$", ")", "]")):
         body += "."
     return (
         f"**{letter}.** → {verdict}\n\n"

@@ -3,8 +3,9 @@
  * Exam format: five True/False claims per task. Each claim has its own
  * hypothesis and wording. Content stays inside elementary algebra:
  * expanding, factoring, rational expressions, powers and roots, and
- * Explanations follow the Chapter 4 / MATH 13.18 style: letter header bound
- * to each statement, named rule, display algebra, then the verdict.
+ * Explanations follow MATH 13.18: letter header bound to each statement,
+ * a named rule, display algebra of mixed length (short conceptual B, or
+ * stepped A/D), then the verdict. Lengths vary inside a task.
  */
 
 import type { MathTask } from "@/data/math-chapters";
