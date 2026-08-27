@@ -276,6 +276,7 @@ export async function upsertMockExamProgress(input: {
       secondsLeft: input.session.secondsLeft,
       visited: input.session.visited,
       updatedAt: input.session.updatedAt,
+      answerSheet: input.session.answerSheet,
     },
   };
 
@@ -324,6 +325,7 @@ export async function fetchInProgressMockSession(
     secondsLeft?: number | null;
     visited?: string[];
     updatedAt?: number;
+    answerSheet?: boolean;
   };
   const answersRaw = (data.answers ?? {}) as { marks?: Record<string, boolean[]> };
   const flagsObj = (data.flags ?? {}) as Record<string, boolean>;
@@ -332,6 +334,7 @@ export async function fetchInProgressMockSession(
     version: 1,
     examId: data.exam_id,
     timed: data.timed,
+    answerSheet: progress.answerSheet !== false,
     startedAt: data.started_at ? new Date(data.started_at).getTime() : Date.now(),
     secondsLeft: progress.secondsLeft ?? null,
     currentIndex: data.current_index ?? 0,

@@ -27,7 +27,7 @@ import {
 } from "@/data/custom-mock-catalog";
 import { SUBJECT_META } from "@/config/scoring-config";
 import { getCurrentAuthState } from "@/lib/auth-ui";
-import { clearSession, loadSession } from "@/lib/mock-exam-session";
+import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import {
   Dialog,
   DialogContent,
@@ -35,6 +35,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode";
 import { TopicWeightSelector } from "@/components/custom-mock/TopicWeightSelector";
 import {
   balancedPoint,
@@ -81,7 +82,10 @@ function CustomMockBuilderPage() {
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<CustomMockSummary[] | null>(null);
   const [selected, setSelected] = useState<CustomMockSummary | null>(null);
-  const [inProgress, setInProgress] = useState<Record<string, { timed: boolean }>>({});
+  const [withAnswerSheet, setWithAnswerSheet] = useState(true);
+  const [inProgress, setInProgress] = useState<Record<string, { timed: boolean; answerSheet: boolean }>>(
+    {},
+  );
 
   const bookChapters = useMemo(() => getCustomMockChapters(subject), [subject]);
   const subjectCfg = CUSTOM_MOCK_SUBJECTS[subject];
@@ -109,10 +113,10 @@ function CustomMockBuilderPage() {
       const list = await fetchCustomMocks();
       if (cancelled) return;
       setHistory(list);
-      const progress: Record<string, { timed: boolean }> = {};
+      const progress: Record<string, { timed: boolean; answerSheet: boolean }> = {};
       for (const m of list) {
         const s = loadSession(m.examId);
-        if (s) progress[m.examId] = { timed: s.timed };
+        if (s) progress[m.examId] = { timed: s.timed, answerSheet: sessionUsesAnswerSheet(s) };
       }
       setInProgress(progress);
     })();
@@ -213,6 +217,7 @@ function CustomMockBuilderPage() {
         createdAt: result.createdAt,
       };
       setHistory((prev) => [summary, ...(prev ?? []).filter((m) => m.id !== summary.id)]);
+      setWithAnswerSheet(true);
       setSelected(summary);
     } catch (e) {
       const raw = e instanceof Error ? e.message : "Could not build mock. Please try again.";
@@ -233,7 +238,7 @@ function CustomMockBuilderPage() {
     navigate({
       to: "/mock-exams/$examId/take",
       params: { examId: selected.examId },
-      search: { timed },
+      search: { timed, answerSheet: withAnswerSheet },
     });
   };
 
@@ -243,13 +248,14 @@ function CustomMockBuilderPage() {
     navigate({
       to: "/mock-exams/$examId/take",
       params: { examId: mock.examId },
-      search: { timed: saved.timed },
+      search: { timed: saved.timed, answerSheet: saved.answerSheet },
     });
   };
 
   const reopen = async (mock: CustomMockSummary) => {
     const row = await fetchCustomMockById(mock.id);
     if (row) cacheCustomMock(row);
+    setWithAnswerSheet(true);
     setSelected(mock);
   };
 
@@ -578,7 +584,7 @@ function CustomMockBuilderPage() {
       </main>
 
       <Dialog open={!!selected} onOpenChange={(o) => !o && setSelected(null)}>
-        <DialogContent className="sm:max-w-md">
+        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-md">
           <DialogHeader>
             <DialogTitle className="font-display">
               {selected ? displayTitleForCustomMock(selected) : "Start mock"}
@@ -588,6 +594,7 @@ function CustomMockBuilderPage() {
             </DialogDescription>
           </DialogHeader>
           <div className="mt-2 grid gap-3">
+            <ExamStartAnswerMode withAnswerSheet={withAnswerSheet} onChange={setWithAnswerSheet} />
             <button
               type="button"
               onClick={() => start(true)}

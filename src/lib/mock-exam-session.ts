@@ -14,6 +14,12 @@ export type MockExamSession = {
   version: 1;
   examId: string;
   timed: boolean;
+  /**
+   * When true, answers are marked on the optical answer sheet.
+   * When false, answers are marked next to each statement (course-style).
+   * Missing on older sessions — treat as true.
+   */
+  answerSheet: boolean;
   startedAt: number;
   /** Remaining seconds when timed; null when untimed */
   secondsLeft: number | null;
@@ -43,18 +49,26 @@ export function emptyAnswers(questionIds: string[]): Record<string, boolean[]> {
   return Object.fromEntries(questionIds.map((id) => [id, [false, false, false, false, false]]));
 }
 
+export function sessionUsesAnswerSheet(
+  session: { answerSheet?: boolean } | null | undefined,
+): boolean {
+  return session?.answerSheet !== false;
+}
+
 export function createFreshSession(
   examId: string,
   timed: boolean,
   questionIds: string[],
   /** Override total seconds for custom/short exams (default: full mock EXAM_SECONDS). */
   durationSeconds: number = EXAM_SECONDS,
+  answerSheet: boolean = true,
 ): MockExamSession {
   const now = Date.now();
   return {
     version: 1,
     examId,
     timed,
+    answerSheet,
     startedAt: now,
     secondsLeft: timed ? durationSeconds : null,
     currentIndex: 0,
@@ -74,7 +88,7 @@ export function loadSession(examId: string): MockExamSession | null {
     if (!raw) return null;
     const parsed = JSON.parse(raw) as MockExamSession;
     if (parsed?.version !== 1 || parsed.examId !== examId) return null;
-    return parsed;
+    return { ...parsed, answerSheet: sessionUsesAnswerSheet(parsed) };
   } catch {
     return null;
   }
