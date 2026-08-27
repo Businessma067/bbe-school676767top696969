@@ -43,6 +43,14 @@ export interface ExamQuestion {
   statements: ExamStatement[];
   /** Custom mocks: light gray label like "#2.3 - Different economic systems". */
   subtopicTag?: string;
+  /** English Texts: full reading passage shown above the stem. */
+  passage?: string;
+  /** Math: optional stem graphic. */
+  figure?: string;
+  /** Math: markdown pipe-tables shown under the stem. */
+  tablesMarkdown?: string;
+  /** Shared worked solution shown with statement explanations on review. */
+  solutionOverview?: string;
 }
 
 /** Available exams. Placeholder content until real questions are added. */

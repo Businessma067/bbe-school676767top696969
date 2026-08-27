@@ -26,6 +26,7 @@ export type CustomMockSummary = {
 };
 
 export type GenerateCustomMockInput = {
+  subject?: "economics" | "math" | "english";
   subtopics: string[];
   questionCount: number;
   /** Per-subtopic question targets (sum must equal questionCount). */
