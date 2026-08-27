@@ -16,7 +16,7 @@ type Props = {
 };
 
 /**
- * Interactive optical answer sheet — sole answering interface for mock exams.
+ * Interactive optical answer sheet for mock exams started with the answer-sheet option.
  * Visual language shared with AnswerSheetPreview (marketing demo).
  */
 export function ExamAnswerSheet({
