@@ -19,14 +19,11 @@ import {
 } from "@/lib/topic-weight-engine";
 import { Dices, Equal, Focus, Keyboard, RotateCcw, Workflow } from "lucide-react";
 
-const DEFAULT_ACCENT = "#E85D3A";
+const ACCENT = "#8B5E3C";
+const ACCENT_SOFT = "#C4A484";
 const VIEW = 240;
 const PAD = 38;
 const R = 102;
-
-function softFromAccent(accent: string): string {
-  return `color-mix(in oklab, ${accent} 55%, white)`;
-}
 
 type Props = {
   topics: TopicWeightTopic[];
@@ -41,9 +38,6 @@ type Props = {
   manualCounts?: Record<string, number>;
   onManualCountsChange?: (counts: Record<string, number>) => void;
   title?: string;
-  /** Subject accent from the site (Economics / Math / English). */
-  accent?: string;
-  subjectLabel?: string;
 };
 
 function toSvg(p: Vec2): Vec2 {
@@ -58,26 +52,48 @@ function PanelShell({
   children,
   className,
   empty,
-  accent,
 }: {
   children: ReactNode;
   className?: string;
   empty?: boolean;
-  accent: string;
 }) {
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm",
+        "relative overflow-hidden rounded-2xl border border-[#8B5E3C]/20 shadow-[0_18px_40px_-28px_rgba(139,94,60,0.55)]",
         className,
       )}
-      style={{ borderTop: `4px solid ${accent}` }}
     >
+      {/* Warm ivory stage + radial caramel wash */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          background: `radial-gradient(ellipse 85% 70% at 50% 0%, color-mix(in oklab, ${accent} 12%, transparent) 0%, transparent 58%)`,
+          background: `
+            radial-gradient(ellipse 85% 70% at 50% 28%, color-mix(in oklab, ${ACCENT} 18%, transparent) 0%, transparent 62%),
+            radial-gradient(ellipse 90% 80% at 80% 100%, color-mix(in oklab, ${ACCENT_SOFT} 22%, transparent) 0%, transparent 55%),
+            linear-gradient(165deg, #FBF7F1 0%, #F3EBE1 48%, #EDE3D6 100%)
+          `,
+        }}
+      />
+      {/* Dot grid */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, color-mix(in oklab, #8B5E3C 28%, transparent) 1px, transparent 0)",
+          backgroundSize: "14px 14px",
+          maskImage: "radial-gradient(ellipse 70% 65% at 50% 45%, black 20%, transparent 75%)",
+        }}
+      />
+      {/* Soft top highlight */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-24 opacity-60"
+        style={{
+          background:
+            "linear-gradient(180deg, color-mix(in oklab, white 70%, transparent), transparent)",
         }}
       />
       <div className={cn("relative z-10 p-4 sm:p-5", empty && "min-h-[300px]")}>{children}</div>
@@ -96,10 +112,7 @@ export function TopicWeightSelector({
   manualCounts,
   onManualCountsChange,
   title = "Topic weights",
-  accent = DEFAULT_ACCENT,
-  subjectLabel = "Economics",
 }: Props) {
-  const accentSoft = softFromAccent(accent);
   const gid = useId().replace(/:/g, "");
   const svgRef = useRef<SVGSVGElement>(null);
   const dragging = useRef(false);
@@ -242,13 +255,10 @@ export function TopicWeightSelector({
 
   if (topics.length === 0) {
     return (
-      <PanelShell className={className} empty accent={accent}>
+      <PanelShell className={className} empty>
         <div className="flex h-full min-h-[260px] flex-col items-center justify-center text-center">
-          <div
-            className="mb-3 grid h-12 w-12 place-items-center rounded-full border bg-secondary/40 shadow-sm"
-            style={{ borderColor: `${accent}40` }}
-          >
-            <Focus className="h-5 w-5" style={{ color: accent }} />
+          <div className="mb-3 grid h-12 w-12 place-items-center rounded-full border border-[#8B5E3C]/25 bg-white/50 shadow-sm">
+            <Focus className="h-5 w-5 text-[#8B5E3C]" />
           </div>
           <p className="font-display text-base font-bold text-foreground">Shape your mock</p>
           <p className="mt-2 max-w-[16rem] text-xs leading-relaxed text-muted-foreground">
@@ -263,25 +273,18 @@ export function TopicWeightSelector({
   if (topics.length === 1) {
     const only = displayTopics[0];
     return (
-      <PanelShell className={className} accent={accent}>
-        <Header title={title} subtitle="One topic selected — full weight" accent={accent} />
-        <div className="mt-4 rounded-xl border border-border bg-secondary/30 p-4">
+      <PanelShell className={className}>
+        <Header title={title} subtitle="One topic selected — full weight" />
+        <div className="mt-4 rounded-xl border border-[#8B5E3C]/15 bg-white/55 p-4 backdrop-blur-sm">
           <div className="flex items-baseline justify-between gap-2">
             <span className="text-sm font-semibold">{only.label}</span>
-            <span className="font-display text-2xl font-bold tabular-nums" style={{ color: accent }}>
-              100%
-            </span>
+            <span className="font-display text-2xl font-bold tabular-nums text-[#8B5E3C]">100%</span>
           </div>
           <p className="mt-1 text-xs text-muted-foreground">
             {only.questions} question{only.questions === 1 ? "" : "s"}
           </p>
         </div>
-        <PreviewList
-          topics={displayTopics}
-          total={questionCount}
-          accent={accent}
-          subjectLabel={subjectLabel}
-        />
+        <PreviewList topics={displayTopics} total={questionCount} />
       </PanelShell>
     );
   }
@@ -292,7 +295,7 @@ export function TopicWeightSelector({
   const labelTopics = displayTopics;
 
   return (
-    <PanelShell className={className} accent={accent}>
+    <PanelShell className={className}>
       <div className="flex flex-wrap items-start justify-between gap-2">
         <Header
           title={title}
@@ -301,12 +304,11 @@ export function TopicWeightSelector({
               ? "Type questions per topic — total always stays exact"
               : "Drag the point to shape how questions are split"
           }
-          accent={accent}
         />
         {isManual ? (
-          <QuickBtn icon={<Workflow className="h-3 w-3" />} label="Use mixer" onClick={() => setManual(false)} accent={accent} />
+          <QuickBtn icon={<Workflow className="h-3 w-3" />} label="Use mixer" onClick={() => setManual(false)} />
         ) : (
-          <QuickBtn icon={<Keyboard className="h-3 w-3" />} label="Enter manually" onClick={enterManual} accent={accent} />
+          <QuickBtn icon={<Keyboard className="h-3 w-3" />} label="Enter manually" onClick={enterManual} />
         )}
       </div>
 
@@ -314,7 +316,7 @@ export function TopicWeightSelector({
       <div className="relative mx-auto mt-2 w-full max-w-[min(100%,400px)]">
         <div
           className="absolute inset-[8%] rounded-full blur-2xl"
-          style={{ backgroundColor: `color-mix(in oklab, ${accent} 8%, transparent)` }}
+          style={{ backgroundColor: "color-mix(in oklab, #8B5E3C 8%, transparent)" }}
           aria-hidden
         />
         <svg
@@ -346,9 +348,9 @@ export function TopicWeightSelector({
         >
           <defs>
             <radialGradient id={`${gid}-glow`} cx="50%" cy="50%" r="55%">
-              <stop offset="0%" stopColor={accent} stopOpacity="0.35" />
-              <stop offset="70%" stopColor={accentSoft} stopOpacity="0.12" />
-              <stop offset="100%" stopColor={accent} stopOpacity="0" />
+              <stop offset="0%" stopColor={ACCENT} stopOpacity="0.35" />
+              <stop offset="70%" stopColor={ACCENT_SOFT} stopOpacity="0.12" />
+              <stop offset="100%" stopColor={ACCENT} stopOpacity="0" />
             </radialGradient>
             <linearGradient id={`${gid}-fill`} x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#FFFCF8" stopOpacity="0.92" />
@@ -367,7 +369,7 @@ export function TopicWeightSelector({
           <polygon
             points={polyPoints}
             fill={`url(#${gid}-fill)`}
-            stroke={accent}
+            stroke={ACCENT}
             strokeOpacity={0.55}
             strokeWidth={1.75}
           />
@@ -388,7 +390,7 @@ export function TopicWeightSelector({
                 y1={ctrl.y}
                 x2={v.x}
                 y2={v.y}
-                stroke={accent}
+                stroke={ACCENT}
                 strokeWidth={0.9 + w * 2.4}
                 strokeOpacity={0.14 + w * 0.55}
                 style={{
@@ -416,7 +418,7 @@ export function TopicWeightSelector({
                     cx={v.x}
                     cy={v.y}
                     r={r + 6}
-                    fill={accent}
+                    fill={ACCENT}
                     opacity={0.16 + w * 0.28}
                     filter={`url(#${gid}-soft)`}
                   />
@@ -425,7 +427,7 @@ export function TopicWeightSelector({
                   cx={v.x}
                   cy={v.y}
                   r={r}
-                  fill={accent}
+                  fill={ACCENT}
                   fillOpacity={0.4 + w * 0.55}
                   stroke="#FFF9F2"
                   strokeWidth={1.4}
@@ -457,7 +459,7 @@ export function TopicWeightSelector({
                   style={{
                     fontSize: 9,
                     fontWeight: 700,
-                    fill: accent,
+                    fill: ACCENT,
                     opacity: 0.6 + w * 0.4,
                     transition: draggingUi ? "none" : "opacity 180ms ease",
                   }}
@@ -472,7 +474,7 @@ export function TopicWeightSelector({
             cx={ctrl.x}
             cy={ctrl.y}
             r={draggingUi ? 11 : 9.5}
-            fill={accent}
+            fill={ACCENT}
             stroke="#FFF9F2"
             strokeWidth={3}
             filter={`url(#${gid}-soft)`}
@@ -506,13 +508,11 @@ export function TopicWeightSelector({
               icon={<Equal className="h-3 w-3" />}
               label="Balanced"
               onClick={() => setPoint(balancedPoint(), false)}
-              accent={accent}
             />
             <QuickBtn
               icon={<RotateCcw className="h-3 w-3" />}
               label="Reset"
               onClick={() => setPoint(balancedPoint(), false)}
-              accent={accent}
             />
             <QuickBtn
               icon={<Focus className="h-3 w-3" />}
@@ -530,23 +530,18 @@ export function TopicWeightSelector({
                 });
                 setPoint(vertexPoint(verts, best), false);
               }}
-              accent={accent}
             />
             <QuickBtn
               icon={<Dices className="h-3 w-3" />}
               label="Random"
               onClick={() => setPoint(randomBalancedPoint(computed.vertices), false)}
-              accent={accent}
             />
       </div>
       )}
 
       {isManual && (
-        <div className="mt-3 space-y-2 rounded-xl border border-border bg-secondary/30 p-3">
-          <p
-            className="text-[10px] font-bold uppercase tracking-widest"
-            style={{ color: accent }}
-          >
+        <div className="mt-3 space-y-2 rounded-xl border border-[#8B5E3C]/15 bg-white/65 p-3 shadow-sm backdrop-blur-sm">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-[#8B5E3C]/75">
             Questions per topic
           </p>
           <ul className="space-y-2">
@@ -555,7 +550,7 @@ export function TopicWeightSelector({
                 <label className="min-w-0 flex-1 truncate text-xs font-medium text-foreground" htmlFor={`q-${t.id}`}>
                   <span className="tabular-nums text-muted-foreground">{t.id}</span>
                   <span className="text-muted-foreground"> · </span>
-                  {t.label.replace(/^\S+\s+/, "")}
+                  {t.label.replace(/^\d+\.\d+\s*/, "")}
                 </label>
                 <input
                   id={`q-${t.id}`}
@@ -564,19 +559,9 @@ export function TopicWeightSelector({
                   max={questionCount}
                   value={counts[t.id] ?? 0}
                   onChange={(e) => onCountField(t.id, e.target.value)}
-                  className="w-16 rounded-md border border-border bg-card px-2 py-1.5 text-center text-sm font-semibold tabular-nums outline-none focus:ring-1"
-                  style={{ ["--tw-ring-color" as string]: accent }}
-                  onFocus={(e) => {
-                    e.currentTarget.style.borderColor = accent;
-                  }}
-                  onBlur={(e) => {
-                    e.currentTarget.style.borderColor = "";
-                  }}
+                  className="w-16 rounded-md border border-[#8B5E3C]/25 bg-white px-2 py-1.5 text-center text-sm font-semibold tabular-nums outline-none focus:border-[#8B5E3C] focus:ring-1 focus:ring-[#8B5E3C]/40"
                 />
-                <span
-                  className="w-10 text-right text-[10px] font-semibold tabular-nums"
-                  style={{ color: accent }}
-                >
+                <span className="w-10 text-right text-[10px] font-semibold tabular-nums text-[#8B5E3C]">
                   {Math.round(displayTopics.find((x) => x.id === t.id)?.percent ?? 0)}%
                 </span>
               </li>
@@ -589,25 +574,15 @@ export function TopicWeightSelector({
         </div>
       )}
 
-      <PreviewList
-        topics={displayTopics}
-        total={questionCount}
-        accent={accent}
-        subjectLabel={subjectLabel}
-      />
+      <PreviewList topics={displayTopics} total={questionCount} />
     </PanelShell>
   );
 }
 
-function Header({ title, subtitle, accent }: { title: string; subtitle: string; accent: string }) {
+function Header({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <div>
-      <p
-        className="text-[10px] font-bold uppercase tracking-[0.18em]"
-        style={{ color: accent }}
-      >
-        Mixer
-      </p>
+      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8B5E3C]/80">Mixer</p>
       <h3 className="mt-0.5 font-display text-base font-bold tracking-tight text-foreground">
         {title}
       </h3>
@@ -620,19 +595,16 @@ function QuickBtn({
   icon,
   label,
   onClick,
-  accent,
 }: {
   icon: ReactNode;
   label: string;
   onClick: () => void;
-  accent: string;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className="inline-flex items-center gap-1 rounded-lg border border-border bg-card px-2.5 py-1.5 text-[10px] font-semibold text-foreground shadow-sm transition hover:bg-secondary"
-      style={{ borderColor: `color-mix(in oklab, ${accent} 28%, var(--border))` }}
+      className="inline-flex items-center gap-1 rounded-lg border border-[#8B5E3C]/20 bg-white/55 px-2.5 py-1.5 text-[10px] font-semibold text-[#5C4634] shadow-sm backdrop-blur-sm transition hover:border-[#8B5E3C]/45 hover:bg-white/80"
     >
       {icon}
       {label}
@@ -640,25 +612,12 @@ function QuickBtn({
   );
 }
 
-function PreviewList({
-  topics,
-  total,
-  accent,
-  subjectLabel,
-}: {
-  topics: WeightedTopic[];
-  total: number;
-  accent: string;
-  subjectLabel: string;
-}) {
+function PreviewList({ topics, total }: { topics: WeightedTopic[]; total: number }) {
   const minutes = total * 2;
   return (
-    <div className="mt-4 rounded-xl border border-border bg-secondary/30 p-3.5">
-      <p
-        className="text-[10px] font-bold uppercase tracking-widest"
-        style={{ color: accent }}
-      >
-        {subjectLabel} Mock
+    <div className="mt-4 rounded-xl border border-[#8B5E3C]/15 bg-white/60 p-3.5 shadow-sm backdrop-blur-sm">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-[#8B5E3C]/75">
+        Economics Mock
       </p>
       <ul className="mt-2 space-y-1.5">
         {topics.map((t) => (
@@ -666,19 +625,17 @@ function PreviewList({
             <span className="min-w-0 truncate font-medium text-foreground">
               <span className="tabular-nums text-muted-foreground">{t.id}</span>{" "}
               <span className="text-muted-foreground">·</span>{" "}
-              {t.label.replace(/^\S+\s+/, "")}
+              {t.label.replace(/^\d+\.\d+\s*/, "")}
             </span>
             <span className="shrink-0 tabular-nums text-muted-foreground">
-              <span className="font-semibold" style={{ color: accent }}>
-                {Math.round(t.percent)}%
-              </span>
-              <span className="mx-1.5 text-border">·</span>
+              <span className="font-semibold text-[#8B5E3C]">{Math.round(t.percent)}%</span>
+              <span className="mx-1.5 text-[#8B5E3C]/25">·</span>
               {t.questions}q
             </span>
           </li>
         ))}
       </ul>
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-2 text-[11px] font-semibold">
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-[#8B5E3C]/12 pt-2 text-[11px] font-semibold">
         <span>
           Total <span className="tabular-nums">{total}</span> Questions
         </span>

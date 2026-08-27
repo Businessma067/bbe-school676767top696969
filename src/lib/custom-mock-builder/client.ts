@@ -117,7 +117,6 @@ export function readCachedCustomMock(id: string): CustomMockRow | null {
 }
 
 export type GenerateArgs = {
-  subject?: "economics" | "math" | "english";
   subtopics: string[];
   questionCount: number;
   /** Per-subtopic question targets from the Topic Weight Selector. */

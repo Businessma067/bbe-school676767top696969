@@ -63,7 +63,7 @@ export const CUSTOM_MOCK_SUBJECTS: Record<CustomMockSubjectId, CustomMockSubject
   math: {
     id: "math",
     label: "Math",
-    enabled: true,
+    enabled: false,
     accent: "#3B82F6",
     pointsPerQuestion: SCORING_CONFIG.math.defaultMaxPerTask,
     chapters: [],
@@ -71,18 +71,12 @@ export const CUSTOM_MOCK_SUBJECTS: Record<CustomMockSubjectId, CustomMockSubject
   english: {
     id: "english",
     label: "English",
-    enabled: true,
+    enabled: false,
     accent: "#2DD4A8",
     pointsPerQuestion: SCORING_CONFIG.english.defaultMaxPerTask,
     chapters: [],
   },
 };
-
-export function getEnabledCustomMockSubjects(): CustomMockSubjectConfig[] {
-  return (Object.keys(CUSTOM_MOCK_SUBJECTS) as CustomMockSubjectId[])
-    .map((id) => CUSTOM_MOCK_SUBJECTS[id])
-    .filter((s) => s.enabled);
-}
 
 export function getEnabledEconomicsChapters(): CustomMockChapter[] {
   return CUSTOM_MOCK_SUBJECTS.economics.chapters.filter((c) => c.enabled);
@@ -111,25 +105,19 @@ export function durationSecondsForQuestionCount(count: number): number {
 }
 
 export function pointsTotalForEconomicsQuestions(count: number): number {
-  return pointsTotalForSubject("economics", count);
-}
-
-export function pointsTotalForSubject(subject: CustomMockSubjectId, count: number): number {
-  const per = CUSTOM_MOCK_SUBJECTS[subject]?.pointsPerQuestion ?? SCORING_CONFIG.economics.defaultMaxPerTask;
-  return Number((count * per).toFixed(2));
+  return Number((count * CUSTOM_MOCK_SUBJECTS.economics.pointsPerQuestion).toFixed(2));
 }
 
 /** Breadcrumb / list title: `Custom Mock 3.3 10q` or `Custom Mock 2.1+2.2 10q`. */
 export function formatCustomMockTitle(
   subtopics: string[],
   questionCount: number,
-  subjectLabel = "Economics",
 ): string {
   const label =
     [...subtopics]
       .filter(Boolean)
       .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-      .join("+") || subjectLabel;
+      .join("+") || "Economics";
   return `Custom Mock ${label} ${questionCount}q`;
 }
 

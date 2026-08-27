@@ -19,7 +19,6 @@ import {
 import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
-import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import {
@@ -616,8 +615,8 @@ function CustomMocksTab({
       <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
         <Wand2 className="mx-auto mb-3 h-6 w-6 text-taupe" />
         <p className="text-sm text-muted-foreground">
-          No custom mocks yet. Generate Economics, Math, or English mocks from Full Course material
-          by topic — they appear here with scores after you finish.
+          No custom mocks yet. Generate Economics mocks from Full Course material by book subtopic —
+          they appear here with scores after you finish.
         </p>
         <Link
           to="/products/custom-mock-builder"
@@ -699,18 +698,9 @@ function CustomMocksTab({
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">
-                        <div className="flex flex-wrap items-center gap-2">
-                          {SUBJECT_META[mock.subject as SubjectKey] ? (
-                            <span
-                              className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${SUBJECT_META[mock.subject as SubjectKey].badgeClass}`}
-                            >
-                              {SUBJECT_META[mock.subject as SubjectKey].label}
-                            </span>
-                          ) : null}
-                          <p className="font-medium">{displayTitleForCustomMock(mock)}</p>
-                        </div>
+                        <p className="font-medium">{displayTitleForCustomMock(mock)}</p>
                         <p className="text-xs text-muted-foreground">
-                          Topics {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
+                          Ch. {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
                           {mock.durationMinutes} min
                         </p>
                       </td>
