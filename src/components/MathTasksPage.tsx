@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
-import { AuthNav } from "@/components/AuthNav";
+import { AuthModal } from "@/components/AuthModal";
+import { SiteHeader } from "@/components/SiteHeader";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TheoryReader } from "@/components/TheoryReader";
-import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { useAuthGate } from "@/hooks/use-auth-gate";
+import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { recordTaskAttempt } from "@/lib/user-progress";
@@ -13,7 +14,9 @@ import { trackEvent } from "@/lib/activity-tracker";
 import { Collapse } from "@/components/Collapse";
 import {
   MATH_CHAPTERS,
-  DEMO_MATH_FREE_LIMIT,
+  demoMathLockDistance,
+  isDemoMathTaskLocked,
+  lastUnlockedDemoMathIndex,
   type MathChapter,
   type MathTask,
 } from "@/data/math-chapters";
@@ -60,19 +63,44 @@ function saveProgress(p: Progress) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
 }
 
-function freeLimitOf(tier: MathTasksTier, _ch: number | "revision" | null): number {
-  if (tier === "demo") return DEMO_MATH_FREE_LIMIT;
-  return Number.POSITIVE_INFINITY;
-}
-
 function phantomCountFor(tier: MathTasksTier): number {
   // Demo already has locked real placeholder slots past the free limit.
   if (tier === "demo") return 0;
   return 0;
 }
 
-function isLocked(tier: MathTasksTier, chapter: number | "revision" | null, idx: number) {
-  return idx >= freeLimitOf(tier, chapter);
+function isLocked(
+  tier: MathTasksTier,
+  chapter: number | "revision" | null,
+  idx: number,
+  tasks: MathTask[],
+) {
+  if (tier !== "demo") return false;
+  return isDemoMathTaskLocked(chapter, idx, tasks);
+}
+
+function nextUnlockedIdx(
+  tier: MathTasksTier,
+  chapter: number | "revision" | null,
+  fromIdx: number,
+  tasks: MathTask[],
+): number | null {
+  for (let i = fromIdx + 1; i < tasks.length; i++) {
+    if (!isLocked(tier, chapter, i, tasks)) return i;
+  }
+  return null;
+}
+
+function prevUnlockedIdx(
+  tier: MathTasksTier,
+  chapter: number | "revision" | null,
+  fromIdx: number,
+  tasks: MathTask[],
+): number | null {
+  for (let i = fromIdx - 1; i >= 0; i--) {
+    if (!isLocked(tier, chapter, i, tasks)) return i;
+  }
+  return null;
 }
 
 type Props = {
@@ -81,12 +109,15 @@ type Props = {
   backLabel?: string;
 };
 
-export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Props) {
+export function MathTasksPage({ tier }: Props) {
   const chapters = MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>({ passed: [], revision: [] });
+  const authGate = useAuthGate();
+  const requireAuthForAnswers =
+    tier === "demo" ? authGate.requireAuth : () => true;
 
   useEffect(() => {
     setProgress(loadProgress());
@@ -131,6 +162,14 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   const activeCase = activeList[activeIdx];
 
   useEffect(() => {
+    if (typeof activeChapter !== "number") return;
+    const sub = activeList[activeIdx]?.subsection;
+    if (!sub) return;
+    const key = `${activeChapter}:${sub}`;
+    setExpandedSub((e) => (e[key] ? e : { ...e, [key]: true }));
+  }, [activeChapter, activeIdx, activeList]);
+
+  useEffect(() => {
     if (!activeCase || activeCase.placeholder) return;
     void trackEvent({
       eventType: "task_start",
@@ -158,7 +197,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
     if (
       activeCase &&
       !activeCase.placeholder &&
-      !isLocked(tier, activeChapter, activeIdx)
+      !isLocked(tier, activeChapter, activeIdx, activeList)
     ) {
       const chapterTitle =
         activeChapter === "revision"
@@ -210,32 +249,38 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
     resetCaseIds(list.map((c) => c.id));
   };
 
-  const tierLabel =
-    tier === "demo" ? "Demo" : tier === "lite" ? "Lite Course" : "Full Course";
+  const showTheory = tier !== "demo";
+
+  const openChapterTasks = (ch: MathChapter) => {
+    setExpanded((e) => ({ ...e, [ch.num]: true }));
+    setTheoryChapter(null);
+    setActiveChapter(ch.num);
+    const list = byChapter.get(ch.num) ?? [];
+    const subs = ch.subsections;
+    if (subs?.length) {
+      setExpandedSub((e) => {
+        const next = { ...e };
+        for (const sub of subs) {
+          const hasUnlocked = list.some(
+            (t, i) =>
+              t.subsection === sub.id && !isLocked(tier, ch.num, i, list),
+          );
+          if (hasUnlocked) next[`${ch.num}:${sub.id}`] = true;
+        }
+        return next;
+      });
+    }
+  };
+
+  const nextTaskIdx = nextUnlockedIdx(tier, activeChapter, activeIdx, activeList);
+  const prevTaskIdx = prevUnlockedIdx(tier, activeChapter, activeIdx, activeList);
+  const remainingLocked =
+    nextTaskIdx === null && activeIdx < activeList.length - 1;
 
   return (
     <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className={PRACTICE_HEADER_INNER}>
-          <Link
-            to={backTo}
-            className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary"
-          >
-            <ChevronLeft className="h-4 w-4" />{" "}
-            <span className="hidden sm:inline">{backLabel}</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:flex flex-col items-end leading-tight">
-              <span className="font-display text-sm font-bold tracking-tight">Mathematics</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                {tierLabel}
-              </span>
-            </div>
-            <AuthNav />
-          </div>
-        </div>
-      </header>
+      <SiteHeader maxWidthClassName="max-w-none" compact />
 
       <div
         className={cn(
@@ -278,7 +323,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                   const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                   const isOpen = !!expanded[ch.num];
                   const isActiveCh = activeChapter === ch.num;
-                  const hasTheory = mathChapterHasTheory(ch.num);
+                  const hasTheory = showTheory && mathChapterHasTheory(ch.num);
                   return (
                     <li key={ch.num} className="overflow-hidden rounded-xl border border-transparent">
                       <div
@@ -329,11 +374,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                         ) : (
                           <button
                             type="button"
-                            onClick={() => {
-                              setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }));
-                              setTheoryChapter(null);
-                              setActiveChapter(ch.num);
-                            }}
+                            onClick={() => openChapterTasks(ch)}
                             className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5 text-left"
                           >
                             <ChevronDown
@@ -426,9 +467,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                           const rev = progress.revision.includes(c.id);
                                           const active =
                                             isActiveCh && activeList[activeIdx]?.id === c.id;
-                                          const locked = isLocked(tier, ch.num, i);
+                                          const locked = isLocked(tier, ch.num, i, list);
                                           const lockedPos = locked
-                                            ? i - freeLimitOf(tier, ch.num)
+                                            ? demoMathLockDistance(ch.num, i, list)
                                             : -1;
                                           const lockedOpacity = locked
                                             ? Math.max(
@@ -509,8 +550,10 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                 const passed = progress.passed.includes(c.id);
                                 const rev = progress.revision.includes(c.id);
                                 const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                                const locked = isLocked(tier, ch.num, i);
-                                const lockedPos = locked ? i - freeLimitOf(tier, ch.num) : -1;
+                                const locked = isLocked(tier, ch.num, i, list);
+                                const lockedPos = locked
+                                  ? demoMathLockDistance(ch.num, i, list)
+                                  : -1;
                                 const lockedOpacity = locked
                                   ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                                   : undefined;
@@ -650,7 +693,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             </button>
           )}
 
-          {theoryChapter !== null ? (
+          {showTheory && theoryChapter !== null ? (
             <TheoryReader
               subject="math"
               chapter={theoryChapter}
@@ -690,7 +733,9 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               </h1>
               </div>
               <div className="flex flex-wrap items-center gap-2">
-                {typeof activeChapter === "number" && mathChapterHasTheory(activeChapter) && (
+                {showTheory &&
+                  typeof activeChapter === "number" &&
+                  mathChapterHasTheory(activeChapter) && (
                   <button
                     type="button"
                     onClick={() => setTheoryChapter(activeChapter)}
@@ -714,11 +759,11 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
           )}
 
           <div key={activeCase?.id ?? "empty-task"} className="practice-panel-enter">
-            {activeCase && isLocked(tier, activeChapter, activeIdx) ? (
+            {activeCase && isLocked(tier, activeChapter, activeIdx, activeList) ? (
               <LockedDemoCard
-                chapter={activeChapter}
-                freeLimit={freeLimitOf(tier, activeChapter)}
-                onBack={() => setActiveIdx(freeLimitOf(tier, activeChapter) - 1)}
+                onBack={() =>
+                  setActiveIdx(lastUnlockedDemoMathIndex(activeChapter, activeList))
+                }
               />
             ) : activeCase?.placeholder ? (
               <PlaceholderTaskCard
@@ -739,6 +784,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                 explanationsOpen={showExplanations}
                 onShowExplanations={() => setShowExplanations(true)}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
+                requireAuth={requireAuthForAnswers}
                 onGraded={(result) => {
                   setProgress((prev) => {
                     const next: Progress = {
@@ -787,8 +833,8 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             <div className="mt-6 flex items-center justify-between">
               <button
                 type="button"
-                onClick={() => setActiveIdx((i) => Math.max(0, i - 1))}
-                disabled={activeIdx === 0}
+                onClick={() => prevTaskIdx !== null && setActiveIdx(prevTaskIdx)}
+                disabled={prevTaskIdx === null}
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
                 <ChevronLeft className="h-4 w-4" /> Prev
@@ -798,19 +844,14 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               </span>
               <button
                 type="button"
-                onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
-                disabled={
-                  activeIdx >= activeList.length - 1 ||
-                  isLocked(tier, activeChapter, activeIdx + 1)
-                }
+                onClick={() => nextTaskIdx !== null && setActiveIdx(nextTaskIdx)}
+                disabled={nextTaskIdx === null}
                 title={
-                  isLocked(tier, activeChapter, activeIdx + 1)
-                    ? "Next task is locked in the demo"
-                    : undefined
+                  remainingLocked ? "Next task is locked in the demo" : undefined
                 }
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                {isLocked(tier, activeChapter, activeIdx + 1) ? (
+                {remainingLocked ? (
                   <>
                     <Lock className="h-3.5 w-3.5" /> Locked
                   </>
@@ -832,13 +873,13 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             showExplanations &&
             !!activeCase &&
             !activeCase.placeholder &&
-            !isLocked(tier, activeChapter, activeIdx)
+            !isLocked(tier, activeChapter, activeIdx, activeList)
           }
         >
           {showExplanations &&
           activeCase &&
           !activeCase.placeholder &&
-          !isLocked(tier, activeChapter, activeIdx) ? (
+          !isLocked(tier, activeChapter, activeIdx, activeList) ? (
             <AllExplanationsPanel
               task={activeCase}
               index={activeIdx}
@@ -860,6 +901,10 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             setCustomResetOpen(false);
           }}
         />
+      )}
+
+      {tier === "demo" && (
+        <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
       )}
     </div>
     </PracticeCalcProvider>
@@ -1603,15 +1648,7 @@ function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
   );
 }
 
-function LockedDemoCard({
-  chapter,
-  freeLimit,
-  onBack,
-}: {
-  chapter: number | "revision" | null;
-  freeLimit: number;
-  onBack: () => void;
-}) {
+function LockedDemoCard({ onBack }: { onBack: () => void }) {
   return (
     <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
       <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
@@ -1619,15 +1656,15 @@ function LockedDemoCard({
       </div>
       <h2 className="font-display text-xl font-bold">Locked in demo</h2>
       <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-        Chapter {chapter} tasks {freeLimit + 1}+ are part of the full course. The first{" "}
-        {freeLimit} are free.
+        This task is part of the full course. Demo practice includes a free sample of
+        each topic.
       </p>
       <button
         type="button"
         onClick={onBack}
         className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
       >
-        <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimit}
+        <ChevronLeft className="h-4 w-4" /> Back to free tasks
       </button>
     </div>
   );
@@ -1643,6 +1680,7 @@ function MathTaskCard({
   onToggleExplanations,
   onGraded,
   onResetProgress,
+  requireAuth,
 }: {
   task: MathTask;
   index: number;
@@ -1658,6 +1696,7 @@ function MathTaskCard({
     statementResults: { statement_index: number; correct: boolean }[];
   }) => void;
   onResetProgress: () => void;
+  requireAuth?: () => boolean;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
     task.statements.map(() => null),
@@ -1670,6 +1709,7 @@ function MathTaskCard({
   }, [task.id, task.statements]);
 
   const setAt = (i: number, v: boolean) => {
+    if (requireAuth && !requireAuth()) return;
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
@@ -1679,6 +1719,7 @@ function MathTaskCard({
   );
 
   const handleSubmit = () => {
+    if (requireAuth && !requireAuth()) return;
     setChecked(true);
     const statementResults = task.answer_key.map((key, i) => ({
       statement_index: i,

@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X, Calculator } from "lucide-react";
+import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X, Calculator, Check } from "lucide-react";
 import { SUBJECT_META } from "@/config/scoring-config";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
@@ -12,6 +12,7 @@ import {
   isQuestionAnswered,
   loadSession,
   saveSession,
+  sessionUsesAnswerSheet,
   type AnnotationStroke,
   type MockExamSession,
 } from "@/lib/mock-exam-session";
@@ -31,8 +32,7 @@ import {
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
-import { CaseContextRich } from "@/components/CaseContextRich";
-import { scrubStatementHints } from "@/lib/case-context";
+import { ExamQuestionBody, ExamStatementText } from "@/components/mock-exam/ExamQuestionContent";
 import {
   Sheet,
   SheetContent,
@@ -45,6 +45,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/mock-exams/$examId/take")({
   validateSearch: (search: Record<string, unknown>) => ({
     timed: search.timed === true || search.timed === "true",
+    answerSheet: search.answerSheet !== false && search.answerSheet !== "false",
   }),
   head: () => ({
     meta: [
@@ -74,7 +75,7 @@ function mergeSessions(
 
 function TakeExamPage() {
   const { examId } = Route.useParams();
-  const { timed } = Route.useSearch();
+  const { timed, answerSheet } = Route.useSearch();
   const navigate = useNavigate();
 
   const [exam, setExam] = useState<MockExamSummary | null>(null);
@@ -130,13 +131,18 @@ function TakeExamPage() {
     if (!contentReady || questions.length === 0 || loadError) return;
     let cancelled = false;
     (async () => {
-      const fresh = createFreshSession(examId, timed, questionIds, examSeconds);
+      const fresh = createFreshSession(examId, timed, questionIds, examSeconds, answerSheet);
       const local = loadSession(examId);
-      const localOk = local && local.timed === timed ? local : null;
+      const localOk =
+        local && local.timed === timed && sessionUsesAnswerSheet(local) === answerSheet
+          ? local
+          : null;
       let remote: MockExamSession | null = null;
       try {
         remote = await fetchInProgressMockSession(examId);
-        if (remote && remote.timed !== timed) remote = null;
+        if (remote && (remote.timed !== timed || sessionUsesAnswerSheet(remote) !== answerSheet)) {
+          remote = null;
+        }
         if (remote) {
           remote = {
             ...remote,
@@ -152,6 +158,7 @@ function TakeExamPage() {
       if (cancelled) return;
       const merged = mergeSessions(localOk, remote, fresh);
       merged.answers = { ...fresh.answers, ...merged.answers };
+      merged.answerSheet = answerSheet;
       if (!merged.visited.includes(questions[merged.currentIndex]?.id ?? "")) {
         const id = questions[merged.currentIndex]?.id;
         if (id) merged.visited = [...new Set([...merged.visited, id])];
@@ -166,7 +173,7 @@ function TakeExamPage() {
     return () => {
       cancelled = true;
     };
-  }, [contentReady, examId, timed, questionIds, questions, examSeconds, loadError]);
+  }, [contentReady, examId, timed, answerSheet, questionIds, questions, examSeconds, loadError]);
 
   // If a fresh timed session starts at full duration, allow all thresholds later.
   useEffect(() => {
@@ -408,6 +415,7 @@ function TakeExamPage() {
           questions={questions}
           answers={session.answers}
           flagged={flaggedSet}
+          usesAnswerSheet={sessionUsesAnswerSheet(session)}
           onJump={goTo}
           onBack={() => setPhase("exam")}
           onSubmit={() => submit()}
@@ -430,6 +438,8 @@ function TakeExamPage() {
   const hasNotes = Boolean(session.notes[q.id]?.trim());
   const hasInk = (session.annotations[q.id]?.length ?? 0) > 0;
   const answered = isQuestionAnswered(session.answers[q.id]);
+  const usesAnswerSheet = sessionUsesAnswerSheet(session);
+  const currentMarks = session.answers[q.id] ?? [false, false, false, false, false];
 
   return (
     <div className={`flex flex-col ${PRACTICE_PAGE}`}>
@@ -479,7 +489,7 @@ function TakeExamPage() {
               onClick={() => setPhase("review")}
               className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
             >
-              Review
+              {usesAnswerSheet ? "Review" : "Finish exam"}
             </button>
             <AuthNav />
           </div>
@@ -601,30 +611,86 @@ function TakeExamPage() {
                   {q.subtopicTag}
                 </p>
               ) : null}
-              <CaseContextRich content={q.stem} emphasized className="text-foreground" />
+              <ExamQuestionBody q={q} emphasized />
 
               <div className="mt-6 overflow-hidden rounded-xl border border-border">
-                <div className="border-b border-border bg-secondary/50 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-taupe">
-                  Statements
+                <div
+                  className={cn(
+                    "border-b border-border bg-secondary/50 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-taupe",
+                    !usesAnswerSheet && "flex items-center gap-3",
+                  )}
+                >
+                  {usesAnswerSheet ? (
+                    "Statements"
+                  ) : (
+                    <>
+                      <span className="w-6">#</span>
+                      <span className="flex-1">Statement</span>
+                      <span className="w-14 text-center">True</span>
+                    </>
+                  )}
                 </div>
-                {q.statements.map((s, i) => (
-                  <div
-                    key={s.id}
-                    className="border-b border-border px-4 py-4 last:border-b-0 sm:px-5"
-                  >
-                    <p className="text-sm leading-relaxed sm:text-[15px] lg:text-base">
-                      <span className="mr-2 font-semibold text-taupe">
-                        {String.fromCharCode(65 + i)}.
-                      </span>
-                      {scrubStatementHints(s.text)}
-                    </p>
-                  </div>
-                ))}
+                {q.statements.map((s, i) => {
+                  const marked = currentMarks[i] === true;
+                  return (
+                    <div
+                      key={s.id}
+                      className={cn(
+                        "border-b border-border px-4 py-4 last:border-b-0 sm:px-5",
+                        !usesAnswerSheet && "flex items-center gap-3",
+                      )}
+                    >
+                      {usesAnswerSheet ? (
+                        <p className="text-sm leading-relaxed sm:text-[15px] lg:text-base">
+                          <span className="mr-2 font-semibold text-taupe">
+                            {String.fromCharCode(65 + i)}.
+                          </span>
+                          <ExamStatementText q={q} text={s.text} />
+                        </p>
+                      ) : (
+                        <>
+                          <span className="w-6 shrink-0 text-center text-xs font-bold text-muted-foreground">
+                            {String.fromCharCode(65 + i)}.
+                          </span>
+                          <p className="min-w-0 flex-1 text-sm leading-relaxed sm:text-[15px] lg:text-base">
+                            <ExamStatementText q={q} text={s.text} />
+                          </p>
+                          <div className="flex w-14 shrink-0 justify-center">
+                            <button
+                              type="button"
+                              role="checkbox"
+                              aria-checked={marked}
+                              aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
+                              onClick={() => toggleMark(q.index, i)}
+                              className={cn(
+                                "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                                marked
+                                  ? "border-primary bg-primary text-primary-foreground"
+                                  : "border-border bg-background hover:border-primary/60",
+                              )}
+                            >
+                              {marked && <Check className="h-4 w-4" strokeWidth={3} />}
+                            </button>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
 
               <p className="mt-4 text-xs text-muted-foreground">
-                Use <strong>Answer Sheet</strong> on the right to mark True.{" "}
-                {answered ? "This question has marks on the sheet." : "No marks yet."}
+                {usesAnswerSheet ? (
+                  <>
+                    Use <strong>Answer Sheet</strong> on the right to mark True.{" "}
+                    {answered ? "This question has marks on the sheet." : "No marks yet."}
+                  </>
+                ) : (
+                  <>
+                    Mark True next to each statement. Answers stay hidden until you finish the exam.
+                    {answered ? " This question has marks saved." : " No marks yet."}
+                  </>
+                )}
               </p>
             </div>
 
@@ -651,7 +717,7 @@ function TakeExamPage() {
                 onClick={() => setPhase("review")}
                 className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
               >
-                Review & submit
+                {usesAnswerSheet ? "Review & submit" : "Finish exam"}
               </button>
             ) : (
               <button
@@ -666,15 +732,17 @@ function TakeExamPage() {
         </main>
 
         <aside className="sticky top-[4.5rem] flex h-fit w-14 shrink-0 flex-col gap-2 sm:w-16">
-          <ToolRailButton
-            label="Answer Sheet"
-            short="Sheet"
-            active={rightPanel === "sheet"}
-            badge={answered}
-            onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
-          >
-            <FileSpreadsheet className="h-5 w-5" />
-          </ToolRailButton>
+          {usesAnswerSheet && (
+            <ToolRailButton
+              label="Answer Sheet"
+              short="Sheet"
+              active={rightPanel === "sheet"}
+              badge={answered}
+              onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
+            >
+              <FileSpreadsheet className="h-5 w-5" />
+            </ToolRailButton>
+          )}
           <ToolRailButton
             label="Calculator"
             short="Calc"
@@ -704,28 +772,40 @@ function TakeExamPage() {
         </aside>
       </div>
 
-      <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
-        <SheetContent side="right" className="w-full overflow-y-auto sm:max-w-md">
-          <SheetHeader className="pr-8 text-left">
-            <SheetTitle className="font-display">Answer Sheet</SheetTitle>
-            <SheetDescription>
-              Mark ✕ for True. This is the only place answers are recorded.
-            </SheetDescription>
-          </SheetHeader>
-          <div className="mt-4 pb-8">
-            <ExamAnswerSheet
-              marksByNumber={marksByNumber}
-              questionCount={questions.length}
-              currentQuestion={q.index}
-              flaggedNumbers={flaggedNumbers}
-              onToggle={toggleMark}
-              onNavigate={(n) => {
-                goTo(n - 1);
-              }}
-            />
-          </div>
-        </SheetContent>
-      </Sheet>
+      {usesAnswerSheet && (
+        <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
+          <SheetContent side="right" className="flex w-full flex-col overflow-y-auto sm:max-w-md">
+            <SheetHeader className="pr-8 text-left">
+              <SheetTitle className="font-display">Answer Sheet</SheetTitle>
+              <SheetDescription>
+                Mark ✕ for True. This is the only place answers are recorded.
+              </SheetDescription>
+            </SheetHeader>
+            <div className="mt-4 flex min-h-0 flex-1 flex-col pb-6">
+              <ExamAnswerSheet
+                marksByNumber={marksByNumber}
+                questionCount={questions.length}
+                currentQuestion={q.index}
+                flaggedNumbers={flaggedNumbers}
+                onToggle={toggleMark}
+                onNavigate={(n) => {
+                  goTo(n - 1);
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => {
+                  setRightPanel(null);
+                  setPhase("review");
+                }}
+                className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-caramel-deep px-4 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
+              >
+                Finish exam
+              </button>
+            </div>
+          </SheetContent>
+        </Sheet>
+      )}
 
       <Sheet open={rightPanel === "calc"} onOpenChange={(o) => setRightPanel(o ? "calc" : null)}>
         <SheetContent side="right" className="w-full overflow-y-auto sm:max-w-lg">

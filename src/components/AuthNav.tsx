@@ -53,7 +53,7 @@ export function AuthNav() {
           to="/login"
           className="rounded-md border border-border bg-card px-2.5 py-1.5 text-xs font-semibold hover:bg-secondary sm:px-3"
         >
-          Log in
+          Sign in
         </Link>
         <Link
           to="/signup"

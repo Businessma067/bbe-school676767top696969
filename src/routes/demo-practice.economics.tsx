@@ -1,5 +1,5 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
@@ -7,14 +7,16 @@ import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
-import { AuthNav } from "@/components/AuthNav";
+import { AuthModal } from "@/components/AuthModal";
+import { SiteHeader } from "@/components/SiteHeader";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationText } from "@/components/ExplanationText";
 import { scrubStatementHints } from "@/lib/case-context";
-import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { useAuthGate } from "@/hooks/use-auth-gate";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -106,6 +108,7 @@ function EconomicsTasks() {
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const authGate = useAuthGate();
 
   type ExplanationData = { classic_explanation: string; textbook_context: string; highlight_text: string };
   type ExplanationState = {
@@ -273,20 +276,7 @@ function EconomicsTasks() {
   return (
     <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className={PRACTICE_HEADER_INNER}>
-          <Link to="/demo-practice" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
-            <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:flex flex-col items-end leading-tight">
-              <span className="font-display text-sm font-bold tracking-tight">Economics</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU BBE · Cases</span>
-            </div>
-            <AuthNav />
-          </div>
-        </div>
-      </header>
+      <SiteHeader maxWidthClassName="max-w-none" compact />
 
       <div className={PRACTICE_BODY_STACK}>
         {/* Sidebar — expandable chapters with per-case checklist */}
@@ -552,6 +542,7 @@ function EconomicsTasks() {
                   ? "Failed on time"
                   : null
               }
+              requireAuth={authGate.requireAuth}
               onGraded={(allCorrect, correctCount) => {
                 recordResult(activeCase.id, allCorrect);
                 if (timed.enabled) timed.markSubmitted(activeCase.id);
@@ -628,6 +619,8 @@ function EconomicsTasks() {
           onReset={(ids) => { resetCaseIds(ids); setCustomResetOpen(false); }}
         />
       )}
+
+      <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
     </div>
     </PracticeCalcProvider>
   );
@@ -759,6 +752,7 @@ function CustomResetModal({
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
   activeExplanationIndex, onRequestExplanation, reviewOnly = false, timerNote = null,
+  requireAuth,
 }: {
   data: Case; index: number;
   reviewOnly?: boolean;
@@ -768,6 +762,7 @@ function CaseCard({
   onResetProgress: () => void;
   activeExplanationIndex: number | null;
   onRequestExplanation: (i: number) => void;
+  requireAuth?: () => boolean;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
@@ -785,6 +780,7 @@ function CaseCard({
   }, [reviewOnly, data.id]);
 
   const setAt = (i: number, v: boolean) => {
+    if (requireAuth && !requireAuth()) return;
     setAnswers((prev) => prev.map((p, idx) => (idx === i ? v : p)));
   };
 
@@ -794,6 +790,7 @@ function CaseCard({
   );
 
   const handleSubmit = () => {
+    if (requireAuth && !requireAuth()) return;
     setChecked(true);
     onGraded(correctCount === 5, correctCount);
   };

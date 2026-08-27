@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import {
   BbeDemoCta,
-  BbeFullPrepCta,
   BbeGhostButton,
   BbeInfoCallout,
   BbePrimaryButton,
@@ -127,6 +126,10 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
     ),
   },
   { field: "Available places", detail: String(BBE_EXAM_FORMAT.places) },
+  {
+    field: "Approx. admission rate",
+    detail: "About 8% (roughly 2,900 exam-takers last year)",
+  },
   { field: "Registration window", detail: BBE_EXAM_FORMAT.cycle.registrationWindow },
   { field: "Registration fee", detail: BBE_EXAM_FORMAT.cycle.registrationFee },
   { field: "OSA deadline", detail: BBE_EXAM_FORMAT.cycle.osaDeadline },
@@ -241,8 +244,10 @@ function BbeEntranceExamHubPage() {
                     i % 2 === 0 ? "bg-card" : "bg-secondary/40",
                   )}
                 >
-                  <dt className="text-sm font-semibold text-foreground">{row.field}</dt>
-                  <dd className="text-sm leading-relaxed text-muted-foreground">{row.detail}</dd>
+                  <dt className="text-[0.975rem] font-semibold text-foreground">{row.field}</dt>
+                  <dd className="text-[0.975rem] leading-relaxed text-neutral-800 sm:text-[1.0625rem]">
+                    {row.detail}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -302,7 +307,7 @@ function BbeEntranceExamHubPage() {
                   <th className="px-4 py-3 font-semibold">Approx. score weighting</th>
                 </tr>
               </thead>
-              <tbody className="text-muted-foreground">
+              <tbody className="text-neutral-800">
                 <tr className="border-t border-border">
                   <td className="px-4 py-3 text-foreground">Economics &amp; Business</td>
                   <td className="px-4 py-3">{BBE_EXAM_FORMAT.economicsQuestions}</td>
@@ -396,7 +401,7 @@ function BbeEntranceExamHubPage() {
               <p className="font-display text-base font-semibold text-foreground">
                 Mathematics: high preparation demand
               </p>
-              <p className="mt-2 text-sm leading-relaxed">
+              <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800">
                 Wide-ranging topics and yearly variation in question style mean volume and variety of
                 practice matter more than memorizing fixed problem types.
               </p>
@@ -405,7 +410,7 @@ function BbeEntranceExamHubPage() {
               <p className="font-display text-base font-semibold text-foreground">
                 Economics: concept- and wording-focused
               </p>
-              <p className="mt-2 text-sm leading-relaxed">
+              <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800">
                 The material is bounded to one required text, but exam statements hinge on precise phrasing.
               </p>
             </li>
@@ -413,7 +418,7 @@ function BbeEntranceExamHubPage() {
               <p className="font-display text-base font-semibold text-foreground">
                 English: proficiency- and speed-focused
               </p>
-              <p className="mt-2 text-sm leading-relaxed">
+              <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800">
                 Harder to prepare for with a fixed syllabus; reading speed and vocabulary help most.
               </p>
             </li>
@@ -521,8 +526,6 @@ function BbeEntranceExamHubPage() {
           title="Want to try BBE School preparation for free?"
           body="The free demo course includes sample lessons, BBE-style questions, and worked explanations."
         />
-
-        <BbeFullPrepCta />
       </div>
     </BbeExamShell>
   );

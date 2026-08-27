@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   BbeDemoCta,
-  BbeFullPrepCta,
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
@@ -187,7 +186,7 @@ function BbeExamScoringPage() {
                   <th className="px-4 py-3 font-semibold">Default max / task</th>
                 </tr>
               </thead>
-              <tbody className="text-muted-foreground">
+              <tbody className="text-neutral-800">
                 <tr className="border-t border-border">
                   <td className="px-4 py-3 text-foreground">Economics &amp; Business</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.economics.taskCount}</td>
@@ -339,8 +338,6 @@ function BbeExamScoringPage() {
           <BbeTextLink to="/bbe-entrance-exam">Back to the BBE Entrance Exam Guide →</BbeTextLink>
           <BbeTextLink to={BBE_PRACTICE_ROUTES.products}>Explore full preparation materials →</BbeTextLink>
         </div>
-
-        <BbeFullPrepCta />
       </div>
     </BbeExamShell>
   );

@@ -7,6 +7,7 @@ type Props = {
   questions: ExamQuestion[];
   answers: Record<string, boolean[]>;
   flagged: Set<string>;
+  usesAnswerSheet?: boolean;
   onJump: (index: number) => void;
   onSubmit: () => void;
   onBack: () => void;
@@ -16,6 +17,7 @@ export function ExamReviewScreen({
   questions,
   answers,
   flagged,
+  usesAnswerSheet = true,
   onJump,
   onSubmit,
   onBack,
@@ -32,7 +34,10 @@ export function ExamReviewScreen({
         Review before submission
       </h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        Check unanswered and flagged items. Submission uses your Answer Sheet marks only.
+        Check unanswered and flagged items.{" "}
+        {usesAnswerSheet
+          ? "Submission uses your Answer Sheet marks only."
+          : "Submission uses the marks you selected next to each statement. Correct answers are revealed after you submit."}
       </p>
 
       <div className="mt-8 grid gap-3 sm:grid-cols-2">

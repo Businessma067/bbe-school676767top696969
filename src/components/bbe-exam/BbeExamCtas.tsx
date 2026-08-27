@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, GraduationCap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import { BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { cn } from "@/lib/utils";
@@ -62,7 +62,7 @@ export function BbeTextLink({
       to={to}
       params={params}
       className={cn(
-        "inline-flex items-center gap-1.5 text-sm font-semibold text-foreground hover:text-primary",
+        "inline-flex items-center gap-1.5 text-[0.975rem] font-semibold text-foreground hover:text-primary",
         className,
       )}
     >
@@ -72,7 +72,7 @@ export function BbeTextLink({
   );
 }
 
-/** Mid-page contextual CTA toward the free demo. */
+/** Mid-page contextual CTA toward the free demo and full preparation. */
 export function BbeDemoCta({
   title = "Curious what BBE School preparation actually looks like?",
   body = "The free demo course walks you through sample lessons, BBE-style questions, and worked explanations.",
@@ -84,41 +84,17 @@ export function BbeDemoCta({
 }) {
   return (
     <aside className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-7">
-      <h3 className="font-display text-lg font-bold tracking-tight sm:text-xl">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">{body}</p>
-      <div className="mt-5">
+      <h3 className="font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
+        {title}
+      </h3>
+      <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+        {body}
+      </p>
+      <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>{cta}</BbePrimaryButton>
-      </div>
-    </aside>
-  );
-}
-
-/** Lower-funnel CTA toward full preparation. */
-export function BbeFullPrepCta({
-  title = "Ready to move beyond the demo?",
-  body = "Full preparation brings topic practice, explanations, flashcards, diagnostics, and mock exams together in one place.",
-}: {
-  title?: string;
-  body?: string;
-}) {
-  return (
-    <aside className="rounded-2xl border border-[#C2643A]/30 bg-gradient-to-br from-[#fff7f0] to-[#ffe9d6] p-6 sm:p-8">
-      <div className="flex items-start gap-3">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/80">
-          <GraduationCap className="h-5 w-5 text-[#C2643A]" />
-        </span>
-        <div className="min-w-0">
-          <h3 className="font-display text-xl font-bold tracking-tight sm:text-2xl">{title}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">{body}</p>
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>
-              Try the Free Demo Course →
-            </BbePrimaryButton>
-            <BbeGhostButton to={BBE_PRACTICE_ROUTES.products}>
-              Explore Full Preparation →
-            </BbeGhostButton>
-          </div>
-        </div>
+        <BbeGhostButton to={BBE_PRACTICE_ROUTES.products}>
+          Explore Full Preparation →
+        </BbeGhostButton>
       </div>
     </aside>
   );
@@ -142,10 +118,10 @@ export function BbeInfoCallout({
 
   return (
     <aside className={cn("rounded-xl border px-4 py-3 sm:px-5 sm:py-4", toneClass)}>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
         {label}
       </p>
-      <div className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+      <div className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
         {children}
       </div>
     </aside>

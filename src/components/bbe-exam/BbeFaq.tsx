@@ -12,10 +12,10 @@ export function BbeFaqAccordion({ faqs }: { faqs: BbeFaqItem[] }) {
     <Accordion type="single" collapsible className="mt-2">
       {faqs.map((faq, index) => (
         <AccordionItem key={faq.question} value={`faq-${index}`}>
-          <AccordionTrigger className="text-left font-display text-base font-semibold hover:no-underline">
+          <AccordionTrigger className="text-left font-display text-[1.0625rem] font-semibold text-foreground hover:no-underline sm:text-lg">
             {faq.question}
           </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed text-muted-foreground sm:text-base">
+          <AccordionContent className="text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
             {faq.answer}
           </AccordionContent>
         </AccordionItem>

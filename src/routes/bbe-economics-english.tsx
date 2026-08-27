@@ -3,7 +3,6 @@ import { BookOpen, Languages } from "lucide-react";
 import type { ReactNode } from "react";
 import {
   BbeDemoCta,
-  BbeFullPrepCta,
   BbeInfoCallout,
   BbePrimaryButton,
   BbeTextLink,
@@ -155,20 +154,6 @@ function BbeEconomicsEnglishPage() {
             </ul>
           </BbeSection>
 
-          <BbeSection id="econ-sample" title="Sample economics question style">
-            <p>
-              Expect a short business or market scenario followed by several statements to judge true or
-              false independently. The format matches the one illustrated in the{" "}
-              <BbeTextLink to="/bbe-entrance-exam" className="inline-flex">
-                exam guide →
-              </BbeTextLink>
-            </p>
-            <BbeInfoCallout label="Practice tip" tone="advice">
-              Drill until you can reject a near-correct statement because one word does not match Fuhrmann’s
-              definition.
-            </BbeInfoCallout>
-          </BbeSection>
-
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbeTextLink to={BBE_PRACTICE_ROUTES.economics}>Practice BBE economics questions →</BbeTextLink>
             <BbeTextLink
@@ -243,14 +228,7 @@ function BbeEconomicsEnglishPage() {
             </SubjectCard>
           </BbeSection>
 
-          <BbeSection id="eng-sample" title="Sample English question style">
-            <p>
-              A short passage on a contemporary social or business theme, followed by several statements
-              about meaning, vocabulary or language use. Judge each statement independently, using the same
-              discipline as in Economics and Mathematics.
-            </p>
-            <BbeTextLink to={BBE_PRACTICE_ROUTES.english}>Practice BBE English →</BbeTextLink>
-          </BbeSection>
+          <BbeTextLink to={BBE_PRACTICE_ROUTES.english}>Practice BBE English →</BbeTextLink>
         </div>
 
         <BbeSection id="together" title="Should I study Economics and English separately?">
@@ -281,8 +259,6 @@ function BbeEconomicsEnglishPage() {
           <BbeTextLink to="/bbe-entrance-exam">Back to the BBE Entrance Exam Guide →</BbeTextLink>
           <BbeTextLink to="/bbe-mathematics">See the BBE mathematics topic guide →</BbeTextLink>
         </div>
-
-        <BbeFullPrepCta />
       </div>
     </BbeExamShell>
   );
@@ -305,7 +281,9 @@ function SubjectCard({
         </span>
         <div className="min-w-0 space-y-3">
           <h3 className="font-display text-lg font-bold tracking-tight text-foreground">{title}</h3>
-          <div className="space-y-3 text-base leading-relaxed text-muted-foreground">{children}</div>
+          <div className="space-y-3 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+            {children}
+          </div>
         </div>
       </div>
     </article>

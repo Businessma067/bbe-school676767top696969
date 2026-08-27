@@ -19,6 +19,7 @@ import {
 import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
+import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import {
@@ -40,8 +41,20 @@ import {
   Layers,
 } from "lucide-react";
 
+export type DashboardTab = "courses" | "mocks" | "custom" | "games";
+
+function parseDashboardTab(raw: unknown): DashboardTab {
+  if (raw === "mocks" || raw === "custom" || raw === "games") return raw;
+  if (raw === "modes") return "games";
+  return "courses";
+}
+
 export const Route = createFileRoute("/dashboard")({
   component: DashboardPage,
+  validateSearch: (search: Record<string, unknown>): { tab?: DashboardTab } => {
+    if (search.tab == null || search.tab === "") return {};
+    return { tab: parseDashboardTab(search.tab) };
+  },
   head: () => ({
     meta: [
       { title: "Dashboard · BBE School" },
@@ -50,8 +63,6 @@ export const Route = createFileRoute("/dashboard")({
     ],
   }),
 });
-
-type TabId = "courses" | "mocks" | "custom" | "modes";
 
 const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
@@ -67,8 +78,13 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigate = useNavigate();
+  const { tab: tabParam } = Route.useSearch();
+  const tab = tabParam ?? "courses";
   const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
-  const [tab, setTab] = useState<TabId>("courses");
+
+  const setTab = (next: DashboardTab) => {
+    void navigate({ to: "/dashboard", search: { tab: next }, replace: true });
+  };
   const [enrollments, setEnrollments] = useState<Enrollment[] | null>(null);
   const [tasks, setTasks] = useState<TaskAttempt[] | null>(null);
   const [mocks, setMocks] = useState<MockAttempt[] | null>(null);
@@ -150,9 +166,9 @@ function DashboardPage() {
             />
             <SideItem
               icon={<Layers className="h-4 w-4" />}
-              label="Study Modes"
-              active={tab === "modes"}
-              onClick={() => setTab("modes")}
+              label="Games"
+              active={tab === "games"}
+              onClick={() => setTab("games")}
             />
           </nav>
         </aside>
@@ -210,8 +226,8 @@ function DashboardPage() {
             <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>
               Custom
             </MobileTab>
-            <MobileTab active={tab === "modes"} onClick={() => setTab("modes")}>
-              Modes
+            <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
+              Games
             </MobileTab>
           </div>
 
@@ -233,7 +249,7 @@ function DashboardPage() {
                 attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
               />
             ) : (
-              <StudyModesTab />
+              <GamesTab />
             )}
           </div>
         </main>
@@ -514,11 +530,11 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 
 /* -------------------- STUDY MODES TAB -------------------- */
 
-function StudyModesTab() {
+function GamesTab() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="font-display text-xl font-bold tracking-tight">Study Modes</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">Games</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           Practice tools to reinforce Economics, Math, and English for the BBE exam.
         </p>
@@ -615,8 +631,8 @@ function CustomMocksTab({
       <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
         <Wand2 className="mx-auto mb-3 h-6 w-6 text-taupe" />
         <p className="text-sm text-muted-foreground">
-          No custom mocks yet. Generate Economics mocks from Full Course material by book subtopic —
-          they appear here with scores after you finish.
+          No custom mocks yet. Generate Economics, Math, or English mocks from Full Course material
+          by topic — they appear here with scores after you finish.
         </p>
         <Link
           to="/products/custom-mock-builder"
@@ -698,9 +714,18 @@ function CustomMocksTab({
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">
-                        <p className="font-medium">{displayTitleForCustomMock(mock)}</p>
+                        <div className="flex flex-wrap items-center gap-2">
+                          {SUBJECT_META[mock.subject as SubjectKey] ? (
+                            <span
+                              className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${SUBJECT_META[mock.subject as SubjectKey].badgeClass}`}
+                            >
+                              {SUBJECT_META[mock.subject as SubjectKey].label}
+                            </span>
+                          ) : null}
+                          <p className="font-medium">{displayTitleForCustomMock(mock)}</p>
+                        </div>
                         <p className="text-xs text-muted-foreground">
-                          Ch. {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
+                          Topics {mock.chapters.join(", ")} · {mock.questionCount}Q ·{" "}
                           {mock.durationMinutes} min
                         </p>
                       </td>

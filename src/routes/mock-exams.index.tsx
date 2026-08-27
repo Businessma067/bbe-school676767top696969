@@ -15,7 +15,7 @@ import {
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exams";
-import { clearSession, loadSession } from "@/lib/mock-exam-session";
+import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import {
   fetchEnrollments,
   fetchMockAttempts,
@@ -23,6 +23,7 @@ import {
   type MockAttempt,
 } from "@/lib/user-progress";
 import { Clock, FileText, PlayCircle, Timer, Trophy } from "lucide-react";
+import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode";
 
 export const Route = createFileRoute("/mock-exams/")({
   head: () => ({
@@ -47,9 +48,12 @@ export const Route = createFileRoute("/mock-exams/")({
 function MockExamsPage() {
   const navigate = useNavigate();
   const [selected, setSelected] = useState<MockExamSummary | null>(null);
+  const [withAnswerSheet, setWithAnswerSheet] = useState(true);
   const [tier, setTier] = useState<ProductTier | null>(null);
   const [attempts, setAttempts] = useState<MockAttempt[] | null>(null);
-  const [inProgress, setInProgress] = useState<Record<string, { timed: boolean }>>({});
+  const [inProgress, setInProgress] = useState<Record<string, { timed: boolean; answerSheet: boolean }>>(
+    {},
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -60,10 +64,10 @@ function MockExamsPage() {
       setTier(owned === "full" ? "full" : "lite");
       setAttempts(history);
 
-      const progress: Record<string, { timed: boolean }> = {};
+      const progress: Record<string, { timed: boolean; answerSheet: boolean }> = {};
       for (const exam of MOCK_EXAMS) {
         const s = loadSession(exam.id);
-        if (s) progress[exam.id] = { timed: s.timed };
+        if (s) progress[exam.id] = { timed: s.timed, answerSheet: sessionUsesAnswerSheet(s) };
       }
       setInProgress(progress);
     })();
@@ -92,7 +96,7 @@ function MockExamsPage() {
     navigate({
       to: "/mock-exams/$examId/take",
       params: { examId: selected.id },
-      search: { timed },
+      search: { timed, answerSheet: withAnswerSheet },
     });
   };
 
@@ -102,7 +106,7 @@ function MockExamsPage() {
     navigate({
       to: "/mock-exams/$examId/take",
       params: { examId: exam.id },
-      search: { timed: saved.timed },
+      search: { timed: saved.timed, answerSheet: saved.answerSheet },
     });
   };
 
@@ -172,7 +176,10 @@ function MockExamsPage() {
                     </button>
                     <button
                       type="button"
-                      onClick={() => setSelected(exam)}
+                      onClick={() => {
+                        setWithAnswerSheet(true);
+                        setSelected(exam);
+                      }}
                       className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2 text-xs font-semibold transition-all hover:bg-secondary"
                     >
                       Start over…
@@ -181,7 +188,10 @@ function MockExamsPage() {
                 ) : (
                   <button
                     type="button"
-                    onClick={() => setSelected(exam)}
+                    onClick={() => {
+                      setWithAnswerSheet(true);
+                      setSelected(exam);
+                    }}
                     className="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
                   >
                     <PlayCircle className="h-4 w-4" />
@@ -258,7 +268,7 @@ function MockExamsPage() {
       </main>
 
       <Dialog open={!!selected} onOpenChange={(o) => !o && setSelected(null)}>
-        <DialogContent className="sm:max-w-md">
+        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-md">
           <DialogHeader>
             <DialogTitle className="font-display text-xl">{selected?.title}</DialogTitle>
             <DialogDescription>
@@ -289,6 +299,8 @@ function MockExamsPage() {
             If you choose the timed option, the exam is limited to 2 hours and submits automatically
             when the timer reaches zero.
           </p>
+
+          <ExamStartAnswerMode withAnswerSheet={withAnswerSheet} onChange={setWithAnswerSheet} />
 
           <div className="mt-1 flex flex-col gap-2">
             <button

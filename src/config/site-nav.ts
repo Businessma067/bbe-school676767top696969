@@ -2,31 +2,162 @@ export type NavItem = {
   label: string;
   href: string;
   isRoute: boolean;
+  search?: Record<string, string>;
+  /** Highlight only on these exact pathnames. */
+  activeExact?: string[];
+  /** Highlight when the pathname is this value or a nested path. */
+  activePrefixes?: string[];
 };
 
-/** Homepage menu — original marketing sections. */
-export const homeNavItems: NavItem[] = [
-  { label: "Exam info", href: "/bbe-entrance-exam", isRoute: true },
-  { label: "Demo-Practice", href: "/demo-practice", isRoute: true },
-  { label: "Full Course", href: "#full-course", isRoute: false },
-  { label: "Products", href: "/products", isRoute: true },
-  { label: "Features", href: "/important-features", isRoute: true },
-  { label: "Reviews", href: "#reviews", isRoute: false },
+export type AccountNavTier = "guest" | "lite" | "full";
+
+const EXAM_INFO_PREFIXES = [
+  "/bbe-entrance-exam",
+  "/bbe-entrance-exam-guide",
+  "/bbe-exam-scoring",
+  "/bbe-mathematics",
+  "/bbe-economics-english",
+  "/bbe-exam-preparation",
+  "/bbe-admission",
+];
+
+const PRODUCTS_EXACT = [
+  "/products",
+  "/products/lite-bbe-course",
+  "/products/full-course",
+];
+
+const examInfoItem: NavItem = {
+  label: "Exam info",
+  href: "/bbe-entrance-exam",
+  isRoute: true,
+  activePrefixes: EXAM_INFO_PREFIXES,
+};
+
+const productsItem: NavItem = {
+  label: "Products",
+  href: "/products",
+  isRoute: true,
+  activeExact: PRODUCTS_EXACT,
+};
+
+/** Logged out (and signed-in users who have not bought Lite or Full). */
+export const guestNavItems: NavItem[] = [
+  examInfoItem,
+  {
+    label: "Demo Practice",
+    href: "/demo-practice",
+    isRoute: true,
+    activePrefixes: ["/demo-practice", "/products/demo-practice"],
+  },
+  productsItem,
+  {
+    label: "Features",
+    href: "/important-features",
+    isRoute: true,
+    activePrefixes: ["/important-features", "/features"],
+  },
   { label: "FAQ", href: "#faq", isRoute: false },
 ];
 
-/** Inner pages — clean page-to-page navigation. */
-export const appNavItems: NavItem[] = [
-  { label: "Home", href: "/", isRoute: true },
-  { label: "Exam info", href: "/bbe-entrance-exam", isRoute: true },
-  { label: "Demo Practice", href: "/demo-practice", isRoute: true },
-  { label: "Products", href: "/products", isRoute: true },
-  { label: "Mock Exams", href: "/mock-exams", isRoute: true },
-  { label: "Flashcards", href: "/flashcards", isRoute: true },
-  { label: "Matching", href: "/matching", isRoute: true },
-  { label: "Tutor Exam", href: "/tutor-exam", isRoute: true },
-  { label: "Dashboard", href: "/dashboard", isRoute: true },
+/** Lite course owners. */
+export const liteNavItems: NavItem[] = [
+  examInfoItem,
+  productsItem,
+  {
+    label: "Practice",
+    href: "/products/lite-bbe-course-subjects",
+    isRoute: true,
+    activePrefixes: [
+      "/products/lite-bbe-course-subjects",
+      "/products/lite-bbe-course-math",
+      "/products/lite-bbe-course-english",
+      "/practice",
+    ],
+  },
+  {
+    label: "Mock Exams",
+    href: "/mock-exams",
+    isRoute: true,
+    activePrefixes: ["/mock-exams"],
+  },
 ];
+
+/** Full course owners. */
+export const fullNavItems: NavItem[] = [
+  examInfoItem,
+  productsItem,
+  {
+    label: "Practice",
+    href: "/products/full-course-subjects",
+    isRoute: true,
+    activePrefixes: [
+      "/products/full-course-subjects",
+      "/products/full-course-math",
+      "/products/full-course-english",
+      "/products/full-course-economics",
+      "/practice",
+    ],
+  },
+  {
+    label: "Mock Exams",
+    href: "/mock-exams",
+    isRoute: true,
+    activePrefixes: ["/mock-exams"],
+  },
+  {
+    label: "Mock Builder",
+    href: "/products/custom-mock-builder",
+    isRoute: true,
+    activePrefixes: ["/products/custom-mock-builder"],
+  },
+  {
+    label: "Games",
+    href: "/dashboard",
+    isRoute: true,
+    search: { tab: "games" },
+    activePrefixes: ["/flashcards", "/matching", "/tutor-exam"],
+  },
+];
+
+export function navItemsForTier(tier: AccountNavTier): NavItem[] {
+  if (tier === "full") return fullNavItems;
+  if (tier === "lite") return liteNavItems;
+  return guestNavItems;
+}
+
+function searchRecord(search: unknown): Record<string, unknown> {
+  if (!search) return {};
+  if (typeof search === "string") {
+    return Object.fromEntries(new URLSearchParams(search.startsWith("?") ? search.slice(1) : search));
+  }
+  if (typeof search === "object") return search as Record<string, unknown>;
+  return {};
+}
+
+export function isNavItemActive(
+  item: NavItem,
+  pathname: string,
+  search?: unknown,
+): boolean {
+  const matchesPrefix = (base: string) =>
+    pathname === base || pathname.startsWith(`${base}/`);
+  const matchesExact = (base: string) => pathname === base;
+
+  if (item.activeExact?.some(matchesExact)) return true;
+  if (item.activePrefixes?.some(matchesPrefix)) return true;
+
+  if (!item.isRoute) return false;
+
+  if (item.search) {
+    if (!matchesExact(item.href)) return false;
+    const params = searchRecord(search);
+    return Object.entries(item.search).every(([key, value]) => String(params[key] ?? "") === value);
+  }
+
+  if (item.activeExact || item.activePrefixes) return false;
+  return matchesPrefix(item.href);
+}
 
 export const AUTH_PATHS = new Set([
   "/login",
@@ -42,14 +173,7 @@ export function normalizePathname(pathname: string): string {
   return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
 }
 
-export function navItemsForPath(pathname: string): NavItem[] {
-  return normalizePathname(pathname) === "/" ? homeNavItems : appNavItems;
-}
-
-export function shouldShowSiteNav(
-  pathname: string,
-  showNav?: boolean,
-): boolean {
+export function shouldShowSiteNav(pathname: string, showNav?: boolean): boolean {
   if (showNav === false) return false;
   if (showNav === true) return true;
   return !AUTH_PATHS.has(normalizePathname(pathname));
