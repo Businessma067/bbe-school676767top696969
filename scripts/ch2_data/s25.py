@@ -2,1309 +2,1273 @@ from __future__ import annotations
 
 from common import task
 
+CTX = "Evaluate each statement. Mark it TRUE or FALSE."
+
 TASKS = [
     task(
-        title="Print-shop galleys of mixed identities",
+        title="Spare-script leftovers with a gh coefficient",
         subsection="2.5",
         difficulty="5/5",
-        context="A Linz print shop is typesetting an identity booklet for a BBE mock. Five unrelated galley proofs sit on five separate pages: an expansion, a factorisation, a cancelled rational, a nested radical, and an absolute-value line. Judge each page on its own; no quantity is shared across pages.",
+        context=CTX,
         items=[
             (
-                "A compositor expands $(x+2y-z)^2$ as $x^2+4y^2+z^2+4xy-2xz+4yz$ and treats the line as an identity.",
+                r"After expanding $(2f+g-3h)^2$ and collecting like terms, the coefficient of $fh$ is read off as $-12$.",
+                True,
+                r"""The square of a three-term sum produces twice every pairwise product. The $f$--$h$ cross term is
+$$2\cdot(2f)\cdot(-3h)=-12fh.$$
+The collected coefficient of $fh$ is therefore $-12$, matching the claim. (The remaining cross terms are $4fg$ and $-6gh$, which are not asked for here.)""",
+            ),
+            (
+                r"Reducing $\dfrac{j^3-1331}{j-11}$ to $j^2+121$ for $j\neq 11$ is treated as an identity, because substituting $j=0$ makes both sides equal $121$.",
                 False,
-                r"""Distribute every pair:
-$$(x+2y-z)^2=x^2+(2y)^2+(-z)^2+2\cdot x\cdot 2y+2\cdot x\cdot(-z)+2\cdot 2y\cdot(-z).$$
-That is
-$$x^2+4y^2+z^2+4xy-2xz-4yz.$$
-The printed middle-to-last cross term carries $+4yz$ instead of $-4yz$, so the two sides differ by $8yz$.""",
+                r"""Difference of cubes with $1331=11^3$ gives
+$$\frac{j^3-1331}{j-11}=j^2+11j+121\qquad(j\neq 11).$$
+The printed remainder drops the linear term $11j$. At $j=0$ that missing term happens to vanish, so both the original fraction and $j^2+121$ equal $121$, but the two polynomials differ at every other point (for instance at $j=1$ the genuine remainder is $133$ while $1+121=122$). A single vanishing check does not restore the identity.""",
             ),
             (
-                "Factoring $x^4+4y^4$ as $(x^2+2xy+2y^2)(x^2-2xy+2y^2)$ is offered as an identity in $x$ and $y$.",
-                True,
-                r"""Complete the square by inserting and subtracting $4x^2y^2$:
-$$x^4+4y^4=x^4+4x^2y^2+4y^4-4x^2y^2=(x^2+2y^2)^2-(2xy)^2.$$
-Difference of squares then gives
-$$(x^2+2y^2-2xy)(x^2+2y^2+2xy)=(x^2-2xy+2y^2)(x^2+2xy+2y^2).$$
-The two factors match the printed order up to commuting the product.""",
-            ),
-            (
-                r"On the cancelled page, $\dfrac{x^3-y^3}{x^2-y^2}$ is rewritten as $\dfrac{x^2+xy+y^2}{x+y}$ whenever $x\neq\pm y$.",
-                True,
-                r"""Factor numerator and denominator:
-$$x^3-y^3=(x-y)(x^2+xy+y^2),\qquad x^2-y^2=(x-y)(x+y).$$
-For $x\neq y$ the common factor $x-y$ cancels, leaving
-$$\frac{x^2+xy+y^2}{x+y}.$$
-The extra restriction $x\neq -y$ is exactly the remaining denominator, so the rewritten form is valid on the stated domain.""",
-            ),
-            (
-                r"Denesting $\sqrt{12+2\sqrt{35}}$ is claimed to produce $\sqrt{7}-\sqrt{5}$.",
+                r"Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce the difference $\sqrt{13}-1$.",
                 False,
-                r"""If $\sqrt{12+2\sqrt{35}}=\sqrt{7}+\sqrt{5}$, squaring the right-hand side gives
-$$(\sqrt{7}+\sqrt{5})^2=7+5+2\sqrt{35}=12+2\sqrt{35}.$$
-Both square roots are positive, so the principal square root equals $\sqrt{7}+\sqrt{5}$, not the difference. The difference squares to $12-2\sqrt{35}$ instead.""",
+                r"""Square the two candidate conjugates:
+$$(1+\sqrt{13})^2=1+2\sqrt{13}+13=14+2\sqrt{13},\qquad(\sqrt{13}-1)^2=14-2\sqrt{13}.$$
+Both $1+\sqrt{13}$ and the principal square root are positive, so
+$$\sqrt{14+2\sqrt{13}}=1+\sqrt{13}.$$
+The printed difference denests the companion $\sqrt{14-2\sqrt{13}}$ instead.""",
             ),
             (
-                "Absolute values of opposite linear forms are declared equal: $|2x-3|=|3-2x|$ for every real $x$.",
+                r"Restricting to negative $\ell$, the quotient $|\ell|/\ell$ equals $-1$.",
                 True,
-                r"""For any real $t$ one has $|-t|=|t|$. Set $t=2x-3$. Then
-$$|3-2x|=|-(2x-3)|=|2x-3|.$$
-The two sides are identical, with no restriction on $x$.""",
+                r"""On $\ell<0$ the definition gives $|\ell|=-\ell$, hence
+$$\frac{|\ell|}{\ell}=\frac{-\ell}{\ell}=-1.$$
+The quotient is the piecewise constant $-1$ on that half-line (and equals $+1$ on $\ell>0$, which is not claimed).""",
+            ),
+            (
+                r"Given the elementary symmetric data $k+m=11$ and $km=13$, the sum of squares $k^2+m^2$ is evaluated as $95$.",
+                True,
+                r"""The identity $k^2+m^2=(k+m)^2-2km$ does not require finding $k$ or $m$:
+$$k^2+m^2=11^2-2\cdot 13=121-26=95.$$
+Omitting the correction $-2km$ would have left the distractor $121$.""",
             ),
         ],
-        overview="Five independent print-shop identities: a three-term square, Sophie Germain’s factorisation of $x^4+4y^4$, a cancelled difference of cubes over a difference of squares, a nested radical, and $|t|=|-t|$.",
+        overview=r"Five unlinked claims: the $fh$ coefficient in $(2f+g-3h)^2$, a cubic remainder that accidentally matches at $0$, the wrong conjugate of $\sqrt{14+2\sqrt{13}}$, the piecewise value of $|\ell|/\ell$ on $\ell<0$, and $k^2+m^2$ from $k+m=11$, $km=13$.",
     ),
     task(
-        title="Two tutors arguing at the board",
+        title="Sophie Germain offcut beside a stacked exponent",
         subsection="2.5",
         difficulty="5/5",
-        context="Two tutors mark a mixed mock independently and argue over five unrelated claims written on one board: a cube factorisation, a simplified power product, a cube expansion, an absolute-value slogan, and a pair of unit fractions. Each claim has its own letters and hypotheses.",
+        context=CTX,
         items=[
             (
-                "Factoring $a^3-b^3$ as $(a-b)(a^2+ab+b^2)$ is accepted as an identity for all real $a$ and $b$.",
+                r"Inserting $f=1$ and $g=1$ into both $f^4+4g^4$ and $(f^2+2fg+2g^2)(f^2-2fg+2g^2)$ produces $5$ on each side, and the two polynomials are then treated as identically equal.",
                 True,
-                r"""Distribute the proposed factors:
-$$(a-b)(a^2+ab+b^2)=a^3+a^2b+ab^2-a^2b-ab^2-b^3=a^3-b^3.$$
-The cross terms cancel, so the factorisation holds with no extra condition.""",
+                r"""At $(1,1)$ one has $1+4=5$ and $(1+2+2)(1-2+2)=5\cdot 1=5$. The numerical match is not accidental: adding and subtracting $4f^2g^2$ produces a difference of squares,
+$$f^4+4g^4=(f^2+2g^2)^2-(2fg)^2=(f^2-2fg+2g^2)(f^2+2fg+2g^2).$$
+The identity holds for every $f$ and $g$, so the factorisation is legitimate.""",
             ),
             (
-                r"Rewriting the product $8^{2/3}\cdot 4^{-1/2}$ as the integer $2$ is treated as valid.",
+                r"Cancelling $h-14$ from $\dfrac{h^2-21h+98}{h-14}$ is said to leave $h-7$ for $h\neq 14$, and substituting $h=0$ recovers $-7$ on both the original fraction and the reduced line.",
                 True,
-                r"""Write both bases as powers of $2$:
-$$8^{2/3}=(2^3)^{2/3}=2^2=4,\qquad 4^{-1/2}=(2^2)^{-1/2}=2^{-1}=\frac{1}{2}.$$
-The product is $4\cdot\dfrac{1}{2}=2$.""",
+                r"""The numerator factors as $(h-14)(h-7)$ because $14+7=21$ and $14\cdot 7=98$. For $h\neq 14$,
+$$\frac{(h-14)(h-7)}{h-14}=h-7.$$
+At $h=0$ the original fraction is $98/(-14)=-7$, matching the reduced value. The check is consistent with a genuine cancellation.""",
             ),
             (
-                "One tutor expands $(p+q)^3$ as $p^3+q^3+3pq$ and calls the formula an identity.",
+                r"Raising the stack $(j^2)^{3/2}$ is claimed to equal $j^3$ for every real $j$.",
                 False,
-                r"""The cube-of-a-sum identity is
-$$(p+q)^3=p^3+3p^2q+3pq^2+q^3=p^3+q^3+3pq(p+q).$$
-The written version drops the factor $(p+q)$ on the cross term. The two sides differ by $3pq(p+q-1)$, which is not identically zero.""",
+                r"""For real $j$,
+$$(j^2)^{3/2}=\bigl(|j|^2\bigr)^{3/2}=|j|^3.$$
+At $j=-2$ the left-hand side is $4^{3/2}=8$ while $j^3=-8$. The identity holds only on $j\ge 0$.""",
             ),
             (
-                "Treating $|x+y|$ as interchangeable with $|x|+|y|$ for every real pair is proposed as an identity.",
+                r"On the half-line $s>16$, the quotient $\dfrac{|s-16|}{16-s}$ is claimed to equal $1$.",
                 False,
-                r"""The triangle inequality says $|x+y|\le |x|+|y|$, with equality only when $x$ and $y$ have the same sign (or one vanishes). For $x=1$ and $y=-1$,
-$$|x+y|=0,\qquad |x|+|y|=2.$$
-The two expressions are not identically equal.""",
+                r"""For $s>16$ one has $|s-16|=s-16$ and $16-s=-(s-16)$, so
+$$\frac{|s-16|}{16-s}=\frac{s-16}{-(s-16)}=-1.$$
+The printed value $1$ has the wrong sign; the quotient is the piecewise constant $-1$ on that half-line.""",
             ),
             (
-                r"Clearing the difference $\dfrac{1}{x-2}-\dfrac{1}{x+2}$ produces $\dfrac{4}{x^2-4}$ whenever $x\neq\pm 2$.",
+                r"Given the pair $u+v=16$ and $uv=15$, the distance $|u-v|$ is read off as $14$.",
                 True,
-                r"""A common denominator is $(x-2)(x+2)=x^2-4$:
-$$\frac{1}{x-2}-\frac{1}{x+2}=\frac{(x+2)-(x-2)}{x^2-4}=\frac{4}{x^2-4}.$$
-The identity holds on the stated domain.""",
+                r"""The elementary identity
+$$(u-v)^2=(u+v)^2-4uv=256-60=196$$
+gives $|u-v|=\sqrt{196}=14$. Taking $196$ itself, or taking $u+v=16$ as the distance, would both be wrong; the square root is required.""",
             ),
         ],
-        overview="Five independent tutor-board claims: difference of cubes, a rewritten power product, the missing factor in $(p+q)^3$, the triangle inequality versus equality, and a difference of unit fractions.",
+        overview=r"Independent claims: Sophie Germain's $f^4+4g^4$ checked at $(1,1)$, a quadratic remainder $h-7$, $(j^2)^{3/2}=|j|^3$, a sign error in $|s-16|/(16-s)$ for $s>16$, and $|u-v|=14$ from $u+v=16$, $uv=15$.",
     ),
     task(
-        title="Five pages of an identity booklet",
-        subsection="2.5",
-        difficulty="5/5",
-        context="An examiner’s identity booklet prints five standalone pages for a mixed review: swapped rational terms, a square-root-of-a-square rule, a cubed binomial, a sum-of-cubes factorisation, and a real cube root of a quotient. Nothing computed on one page is reused on another.",
-        items=[
-            (
-                r"Adding the swapped fractions $\dfrac{x}{x-y}+\dfrac{y}{y-x}$ is said to collapse to $1$ for every $x\neq y$.",
-                True,
-                r"""Rewrite the second denominator:
-$$\frac{y}{y-x}=\frac{y}{-(x-y)}=-\frac{y}{x-y}.$$
-Hence
-$$\frac{x}{x-y}+\frac{y}{y-x}=\frac{x-y}{x-y}=1$$
-whenever $x\neq y$.""",
-            ),
-            (
-                r"The square-root identity $\sqrt{t^2}=|t|$ is asserted for every real $t$.",
-                True,
-                r"""The principal square root is nonnegative. Since $t^2=|t|^2$ and $|t|\ge 0$,
-$$\sqrt{t^2}=\sqrt{|t|^2}=|t|.$$
-Replacing the right-hand side by $t$ would fail for $t<0$.""",
-            ),
-            (
-                "Cubing the binomial $2a-3b$ is written as $8a^3-36a^2b+54ab^2-27b^3$.",
-                True,
-                r"""Use $(u-v)^3=u^3-3u^2v+3uv^2-v^3$ with $u=2a$ and $v=3b$:
-$$(2a)^3-3(2a)^2(3b)+3(2a)(3b)^2-(3b)^3=8a^3-36a^2b+54ab^2-27b^3.$$
-Every coefficient matches.""",
-            ),
-            (
-                "Sum of cubes is factored as $p^3+q^3=(p+q)(p^2+pq+q^2)$ on the next page.",
-                False,
-                r"""The correct factorisation is
-$$p^3+q^3=(p+q)(p^2-pq+q^2).$$
-Distributing the printed quadratic factor produces an extra $2p^2q+2pq^2$ instead of cancelling the mixed terms. The middle sign on the quadratic factor must be minus.""",
-            ),
-            (
-                r"The real cube root $\sqrt[3]{\dfrac{a^3}{b^6}}$ is simplified to $\dfrac{a}{b^2}$ for all real $a$ and all $b\neq 0$.",
-                True,
-                r"""The real cube root splits over a quotient:
-$$\sqrt[3]{\frac{a^3}{b^6}}=\frac{\sqrt[3]{a^3}}{\sqrt[3]{b^6}}.$$
-In the reals, $\sqrt[3]{a^3}=a$. Also $b^6=(b^2)^3$ with $b^2\ge 0$, so $\sqrt[3]{b^6}=b^2$. The quotient is $a/b^2$.""",
-            ),
-        ],
-        overview="Five independent booklet pages: a pair of swapped fractions summing to $1$, $\\sqrt{t^2}=|t|$, a cubed binomial, the middle sign in $p^3+q^3$, and a real cube root of a quotient.",
-    ),
-    task(
-        title="Symmetric polynomials in three letters",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A review sheet on symmetric polynomials never solves a quadratic. It records $s_1=a+b+c$ and $s_2=ab+bc+ca$ in three letters, and separately a pair with $p+q=7$ and $pq=11$. Five claims, five skills; the pair $(p,q)$ is used only where it is named.",
-        items=[
-            (
-                "Squaring $a+b+c$ produces the identity $a^2+b^2+c^2=(a+b+c)^2-2(ab+bc+ca)$.",
-                True,
-                r"""Expand the square:
-$$(a+b+c)^2=a^2+b^2+c^2+2ab+2bc+2ca.$$
-Rearrangement immediately gives
-$$a^2+b^2+c^2=(a+b+c)^2-2(ab+bc+ca).$$""",
-            ),
-            (
-                "The three-cube combination $a^3+b^3+c^3-3abc$ is factored as $(a+b+c)(a^2+b^2+c^2+ab+bc+ca)$.",
-                False,
-                r"""The standard identity is
-$$a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca).$$
-The printed quadratic factor has the opposite signs on $ab$, $bc$, and $ca$. Expanding the printed product does not recover $-3abc$ after the cubic terms.""",
-            ),
-            (
-                r"Given $p+q=7$ and $pq=11$, the sum of reciprocals is evaluated as $\dfrac{1}{p}+\dfrac{1}{q}=\dfrac{7}{11}$.",
-                True,
-                r"""Over a common denominator,
-$$\frac{1}{p}+\frac{1}{q}=\frac{q+p}{pq}=\frac{p+q}{pq}=\frac{7}{11}.$$
-The reciprocal of $pq$ would be $11/7$, which is a different expression. No quadratic needs to be solved.""",
-            ),
-            (
-                "Because $p+q=7$, the power $4^{p+q}$ is rewritten as $2^{7}$.",
-                False,
-                r"""First use the given sum in the exponent:
-$$4^{p+q}=4^7.$$
-Then rewrite the base, not the exponent, as a power of $2$:
-$$4^7=(2^2)^7=2^{14}.$$
-The printed $2^7$ is only $128$, whereas $4^7=16384=2^{14}$.""",
-            ),
-            (
-                "The distance $|p-q|$ is read off as $5$ from $(p-q)^2=5$.",
-                False,
-                r"""From the elementary identity
-$$(p-q)^2=(p+q)^2-4pq=49-44=5,$$
-one obtains $|p-q|=\sqrt{5}$, not $5$. Taking the absolute value after squaring requires a square root.""",
-            ),
-        ],
-        overview="Independent symmetric-polynomial claims: $a^2+b^2+c^2$ from $s_1$ and $s_2$, the sign pattern in $a^3+b^3+c^3-3abc$, $1/p+1/q=(p+q)/pq$, rewriting $4^7$ as $2^{14}$, and $|p-q|=\\sqrt{(p-q)^2}$.",
-    ),
-    task(
-        title="Nested-radicals contest round",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A nested-radicals contest posts five unrelated prompts on a corridor board: one denesting, one binomial square, one difference-of-squares factorisation, one rationalised two-term quotient, and one square root of a square. Contestants must not recycle a number from one prompt into another.",
-        items=[
-            (
-                r"Denesting $\sqrt{10+2\sqrt{21}}$ is claimed to give the sum $\sqrt{7}+\sqrt{3}$.",
-                True,
-                r"""Square the proposed denesting:
-$$(\sqrt{7}+\sqrt{3})^2=7+3+2\sqrt{21}=10+2\sqrt{21}.$$
-Both $\sqrt{7}$ and $\sqrt{3}$ are positive, so the principal square root is exactly $\sqrt{7}+\sqrt{3}$.""",
-            ),
-            (
-                r"Squaring $\sqrt{a}+\sqrt{b}$ is written as $a+b$ for all $a,b\ge 0$.",
-                False,
-                r"""The expansion is
-$$(\sqrt{a}+\sqrt{b})^2=a+2\sqrt{ab}+b.$$
-Dropping the cross term $2\sqrt{ab}$ is legitimate only when $ab=0$, not identically.""",
-            ),
-            (
-                r"Splitting $x^2-5$ as $(x-\sqrt{5})(x+\sqrt{5})$ is presented as an identity over the reals.",
-                True,
-                r"""Difference of squares with $u=x$ and $v=\sqrt{5}$ gives
-$$x^2-5=x^2-(\sqrt{5})^2=(x-\sqrt{5})(x+\sqrt{5}).$$
-Distributing the right-hand side recovers $x^2-5$.""",
-            ),
-            (
-                r"Rationalising $\dfrac{\sqrt{8}-\sqrt{2}}{\sqrt{8}+\sqrt{2}}$ collapses the quotient to $\dfrac{1}{3}$.",
-                True,
-                r"""Write $\sqrt{8}=2\sqrt{2}$:
-$$\frac{2\sqrt{2}-\sqrt{2}}{2\sqrt{2}+\sqrt{2}}=\frac{\sqrt{2}}{3\sqrt{2}}=\frac{1}{3}.$$
-Alternatively multiply numerator and denominator by $\sqrt{8}-\sqrt{2}$ and simplify; both routes give $1/3$.""",
-            ),
-            (
-                r"Extracting $\sqrt{(2-5)^2}$ is claimed to equal $2-5$, hence $-3$.",
-                False,
-                r"""For every real $t$, $\sqrt{t^2}=|t|$. Here $t=2-5=-3$, so
-$$\sqrt{(2-5)^2}=|-3|=3.$$
-The principal square root cannot be negative.""",
-            ),
-        ],
-        overview="Five contest prompts: a denesting $\\sqrt{10+2\\sqrt{21}}$, the missing $2\\sqrt{ab}$ in a binomial square, $x^2-5$ as a difference of squares, a two-term radical quotient, and $\\sqrt{t^2}=|t|$.",
-    ),
-    task(
-        title="Saturday mixed-review packet",
+        title="Nested remainder against a piecewise constant",
         subsection="2.5",
         difficulty="4/5",
-        context="A Saturday mixed-review packet lists five short, independent lines for last-week skills: an absolute-value square, a cancelled quadratic over a linear factor, a product recovering a difference of cubes, a mistaken difference of squares, and a square root of a monomial. Each line has its own letters.",
+        context=CTX,
         items=[
             (
-                "Replacing $|x|^2$ by $x^2$ is licensed as an identity on the whole real line.",
-                True,
-                r"""By definition $|x|$ is $x$ or $-x$. In either case
-$$|x|^2=x^2,$$
-since $(-x)^2=x^2$. Equivalently $|x|^2=x\cdot x$ after dropping the sign.""",
-            ),
-            (
-                r"Cancelling $\dfrac{x^2-5x+6}{x-2}$ down to $x-3$ is claimed for every $x\neq 2$.",
-                True,
-                r"""Factor the numerator:
-$$x^2-5x+6=(x-2)(x-3).$$
-For $x\neq 2$,
-$$\frac{(x-2)(x-3)}{x-2}=x-3.$$""",
-            ),
-            (
-                "Multiplying $(x-1)(x^2+x+1)$ is said to recover $x^3-1$ identically.",
-                True,
-                r"""This is the difference-of-cubes expansion in reverse:
-$$(x-1)(x^2+x+1)=x^3+x^2+x-x^2-x-1=x^3-1.$$""",
-            ),
-            (
-                "Writing $x^2-9$ as $(x-3)^2$ is treated as a factorisation identity.",
+                r"The coefficient of $gh$ in the expansion of $(f-3g+h)^2$ is claimed to be $+6$.",
                 False,
-                r"""Expanding the square gives
-$$(x-3)^2=x^2-6x+9,$$
-not $x^2-9$. The difference of squares is
-$$x^2-9=(x-3)(x+3).$$""",
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-3g)\cdot h=-6gh.$$
+The printed $+6$ has the wrong sign; the two sides of the claimed expansion differ by $12gh$.""",
             ),
             (
-                r"Simplifying $\sqrt{a^2b^4}$ to $ab^2$ is asserted for all real $a$ and $b$.",
-                False,
-                r"""For real $a$ and $b$,
-$$\sqrt{a^2b^4}=\sqrt{a^2}\cdot\sqrt{b^4}=|a|\cdot b^2,$$
-since $b^4=(b^2)^2$ and $b^2\ge 0$. The factor $a$ in place of $|a|$ fails whenever $a<0$ and $b\neq 0$.""",
-            ),
-        ],
-        overview="Five independent review lines: $|x|^2=x^2$, cancelling $(x-2)(x-3)/(x-2)$, the reverse of $x^3-1$, $x^2-9$ versus $(x-3)^2$, and $\\sqrt{a^2b^4}=|a|b^2$.",
-    ),
-    task(
-        title="Choir-rehearsal algebra board",
-        subsection="2.5",
-        difficulty="5/5",
-        context="During a choir rehearsal the accompanist fills a side board with five mixed algebra reminders that are not linked: a paired-sum product, a sum-of-cubes factorisation, a sum of reciprocal-looking terms, a product of powers, and a nested absolute value. Each reminder uses different letters.",
-        items=[
-            (
-                "Multiplying $(a+b+c)(a+b-c)$ is claimed to equal $(a+b)^2-c^2$.",
+                r"Clearing the two-storey nest $1+\dfrac{1}{1+\dfrac{1}{j}}$ for $j\neq 0$ and $j\neq -1$ is said to leave $\dfrac{2j+1}{j+1}$.",
                 True,
-                r"""Set $u=a+b$. Difference of squares gives
-$$(u+c)(u-c)=u^2-c^2=(a+b)^2-c^2.$$
-Expanding the original product produces the same $a^2+2ab+b^2-c^2$.""",
+                r"""Innermost, $1+1/j=(j+1)/j$, so
+$$\frac{1}{1+\dfrac{1}{j}}=\frac{j}{j+1}.$$
+Adding the outer $1$ produces
+$$1+\frac{j}{j+1}=\frac{j+1+j}{j+1}=\frac{2j+1}{j+1}.$$""",
             ),
             (
-                "Factoring $a^3+8$ as $(a+2)(a^2+4a+4)$ is written up as an identity.",
-                False,
-                r"""Sum of cubes uses
-$$a^3+2^3=(a+2)(a^2-2a+4).$$
-The printed quadratic $a^2+4a+4=(a+2)^2$ would make the product $(a+2)^3=a^3+6a^2+12a+8$, not $a^3+8$.""",
-            ),
-            (
-                r"Adding $\dfrac{a}{b}+\dfrac{b}{a}$ is reduced to $\dfrac{a+b}{ab}$ as if it were an identity.",
-                False,
-                r"""The genuine common-denominator form is
-$$\frac{a}{b}+\frac{b}{a}=\frac{a^2+b^2}{ab}.$$
-The printed numerator $a+b$ belongs to $\dfrac{1}{a}+\dfrac{1}{b}$, a different sum.""",
-            ),
-            (
-                r"Combining $a^{-3}\cdot a^{5/2}$ into $a^{-1/2}$ is accepted for $a>0$.",
-                True,
-                r"""Add the exponents:
-$$-3+\frac{5}{2}=\frac{-6+5}{2}=-\frac{1}{2}.$$
-Hence $a^{-3}a^{5/2}=a^{-1/2}$ on $a>0$.""",
-            ),
-            (
-                r"Stripping the outer bars in $\bigl||x|-3\bigr|$ down to $|x|-3$ is proposed for every real $x$.",
-                False,
-                r"""By definition $\bigl||x|-3\bigr|=|x|-3$ only when $|x|-3\ge 0$, i.e. $|x|\ge 3$. For $x=0$,
-$$\bigl||0|-3\bigr|=3,\qquad |0|-3=-3.$$
-The identity fails inside the interval $|x|<3$.""",
-            ),
-        ],
-        overview="Five independent choir-board lines: a difference of squares in $a+b$ and $c$, the quadratic factor of $a^3+8$, $\\frac{a}{b}+\\frac{b}{a}$ versus $\\frac{1}{a}+\\frac{1}{b}$, adding exponents, and a nested absolute value.",
-    ),
-    task(
-        title="Chess-club bulletin identities",
-        subsection="2.5",
-        difficulty="5/5",
-        context="The chess club pins five mixed algebra notes beside a pairing chart: a difference of fourth powers, a binomial fourth power, a sum of two reciprocals, a rational exponent, and a dropped absolute value. The notes do not share a calculation.",
-        items=[
-            (
-                "Factoring $x^4-y^4$ completely over the reals as $(x-y)(x+y)(x^2+y^2)$ is posted as an identity.",
-                True,
-                r"""First difference of squares:
-$$x^4-y^4=(x^2-y^2)(x^2+y^2)=(x-y)(x+y)(x^2+y^2).$$
-The remaining quadratic $x^2+y^2$ has no further real linear factors.""",
-            ),
-            (
-                "Expanding $(1+x)^4$ is recorded as $1+4x+6x^2+4x^3+x^4$.",
-                True,
-                r"""Either iterate $(1+x)^2=1+2x+x^2$ and square again, or read binomial coefficients $\binom{4}{k}$:
-$$(1+x)^4=1+4x+6x^2+4x^3+x^4.$$
-The displayed polynomial matches.""",
-            ),
-            (
-                r"Clearing $\dfrac{1}{x}+\dfrac{1}{y}$ to $\dfrac{x+y}{xy}$ is claimed whenever $xy\neq 0$.",
-                True,
-                r"""A common denominator $xy$ gives
-$$\frac{1}{x}+\frac{1}{y}=\frac{y+x}{xy}=\frac{x+y}{xy}.$$""",
-            ),
-            (
-                "Reducing $16^{3/4}$ to the integer $8$ is treated as correct.",
+                r"Simplifying $16^{5/4}$ is treated as producing the integer $32$.",
                 True,
                 r"""Write $16=2^4$:
-$$16^{3/4}=(2^4)^{3/4}=2^3=8.$$
-Equivalently $\bigl(16^{1/4}\bigr)^3=2^3=8$.""",
+$$16^{5/4}=(2^4)^{5/4}=2^5=32.$$
+Equivalently $\bigl(16^{1/4}\bigr)^5=2^5=32$. The distractor $16^{3/4}=8$ uses a different exponent.""",
             ),
             (
-                "Dropping the bars in $|2x|$ to write $2x$ for every real $x$ is offered as an identity.",
+                r"On the open interval $-11<\ell<11$, the sum $|\ell+11|+|\ell-11|$ is claimed to equal $2|\ell|$.",
                 False,
-                r"""$|2x|=2|x|$. This equals $2x$ precisely when $x\ge 0$. For $x=-1$,
-$$|2x|=2,\qquad 2x=-2.$$
-The identity does not hold on the whole line.""",
+                r"""Inside $|\ell|<11$ the two insides have opposite signs, and
+$$|\ell+11|+|\ell-11|=(\ell+11)+(11-\ell)=22.$$
+The printed $2|\ell|$ is the formula that holds outside $|\ell|\ge 11$, not on the stated interval. At $\ell=0$ the sum is $22$, not $0$.""",
+            ),
+            (
+                r"Whenever $r+s+t=0$ at the specific values $r=2$, $s=11$, $t=-13$, the sum of cubes $r^3+s^3+t^3$ equals $3rst$, hence $-858$.",
+                True,
+                r"""The identity $r^3+s^3+t^3-3rst=(r+s+t)(\cdots)$ collapses when $r+s+t=0$, leaving $r^3+s^3+t^3=3rst$. Directly,
+$$8+1331+(-2197)=-858,\qquad 3\cdot 2\cdot 11\cdot(-13)=-858.$$
+The sum of cubes is not identically $0$ merely because the letters sum to $0$.""",
             ),
         ],
-        overview="Five independent chess-club notes: $x^4-y^4$, the binomial expansion of $(1+x)^4$, a sum of reciprocals, $16^{3/4}=8$, and $|2x|=2|x|$.",
+        overview=r"Five unlinked lines: a wrong-sign $gh$ coefficient, a two-storey unit nest, $16^{5/4}=32$, the piecewise constant $22$ of $|\ell\pm 11|$ inside $(-11,11)$, and $r^3+s^3+t^3=3rst$ at $(2,11,-13)$.",
     ),
     task(
-        title="Greenhouse bench notebook",
+        title="Cubic coefficient vanishing in a biquadratic product",
         subsection="2.5",
         difficulty="5/5",
-        context="A greenhouse bench notebook records five mixed algebra checks used to label seed trays: a cancelled rational, a squared binomial, a difference of cubes, a negative rational exponent, and a sum of opposite absolute values. Tray labels do not share letters.",
+        context=CTX,
         items=[
             (
-                r"Cancelling $\dfrac{x^2-4}{x^2-x-2}$ down to $\dfrac{x+2}{x+1}$ is claimed for $x\neq 2$ and $x\neq -1$.",
+                r"The cubic coefficient in the product $(n^2+2n+2)(n^2-2n+2)$ is claimed to be $0$, so that the product is even in $n$.",
                 True,
-                r"""Factor both polynomials:
-$$x^2-4=(x-2)(x+2),\qquad x^2-x-2=(x-2)(x+1).$$
-For $x\neq 2$,
-$$\frac{(x-2)(x+2)}{(x-2)(x+1)}=\frac{x+2}{x+1},$$
-and $x\neq -1$ keeps the remaining denominator alive.""",
+                r"""Write the factors as $(n^2+2\pm 2n)$. Their product is a difference of squares,
+$$(n^2+2)^2-(2n)^2=n^4+4n^2+4-4n^2=n^4+4,$$
+in which every odd power has cancelled. Equivalently the $n^3$ contributions $n^2\cdot(-2n)+2n\cdot n^2$ sum to $0$. The product equals $n^4+4$, an even polynomial.""",
             ),
             (
-                "Squaring $3m-n$ is written as $9m^2-n^2$ and called an identity.",
+                r"Reducing $\dfrac{w^3-2744}{w-14}$ to $w^2+196$ for $w\neq 14$ is treated as an identity after a check at $w=0$ gives $196$ on both sides.",
                 False,
-                r"""The square is
-$$(3m-n)^2=9m^2-6mn+n^2.$$
-The printed form $9m^2-n^2$ is a difference of squares $(3m-n)(3m+n)$, not a square, and it also drops the cross term $-6mn$.""",
+                r"""Since $2744=14^3$,
+$$\frac{w^3-2744}{w-14}=w^2+14w+196\qquad(w\neq 14).$$
+Dropping $14w$ leaves $w^2+196$. At $w=0$ the missing term vanishes and both sides equal $196$, but at $w=1$ the genuine remainder is $211$ while $1+196=197$. The zero-substitution does not justify the reduction.""",
             ),
             (
-                "Factoring $27x^3-8$ as $(3x-2)(9x^2+6x+4)$ is posted as an identity.",
-                True,
-                r"""Difference of cubes $u^3-v^3=(u-v)(u^2+uv+v^2)$ with $u=3x$ and $v=2$:
-$$(3x)^3-2^3=(3x-2)\bigl((3x)^2+(3x)\cdot 2+2^2\bigr)=(3x-2)(9x^2+6x+4).$$""",
-            ),
-            (
-                r"Rewriting $\bigl(\dfrac{8}{27}\bigr)^{-2/3}$ as $\dfrac{9}{4}$ is accepted.",
-                True,
-                r"""A negative exponent flips the fraction:
-$$\biggl(\frac{8}{27}\biggr)^{-2/3}=\biggl(\frac{27}{8}\biggr)^{2/3}=\biggl(\frac{3^3}{2^3}\biggr)^{2/3}=\frac{3^2}{2^2}=\frac{9}{4}.$$""",
-            ),
-            (
-                "Adding $|x-1|+|1-x|$ is said to vanish identically.",
+                r"Denesting $\sqrt{15+2\sqrt{14}}$ is claimed to equal $\sqrt{14}-1$.",
                 False,
-                r"""Opposite linear forms have the same absolute value:
-$$|1-x|=|x-1|.$$
-The printed sum is therefore
-$$|x-1|+|x-1|=2|x-1|.$$
-This vanishes only at $x=1$. At $x=0$ the sum equals $2$, not $0$.""",
-            ),
-        ],
-        overview="Five independent greenhouse checks: cancelling a quadratic rational, $(3m-n)^2$ versus $9m^2-n^2$, a difference of cubes, a negative rational exponent, and $|x-1|+|1-x|=2|x-1|$.",
-    ),
-    task(
-        title="Library cataloguer's markup",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A library cataloguer marks five unrelated algebra queries in the margins of a donated textbook: a quotient of square roots, an absolute value of a product, a comparison of two squares, a difference-of-cubes factorisation, and a sum of opposite unit fractions. Each query is self-contained.",
-        items=[
-            (
-                r"Reducing $\dfrac{\sqrt{18}}{\sqrt{8}}$ to $\dfrac{3}{2}$ is marked as correct.",
-                True,
-                r"""Either combine under one radical,
-$$\frac{\sqrt{18}}{\sqrt{8}}=\sqrt{\frac{18}{8}}=\sqrt{\frac{9}{4}}=\frac{3}{2},$$
-or write $\sqrt{18}=3\sqrt{2}$ and $\sqrt{8}=2\sqrt{2}$, which cancels to the same $3/2$.""",
+                r"""$$(1+\sqrt{14})^2=1+2\sqrt{14}+14=15+2\sqrt{14},\qquad(\sqrt{14}-1)^2=15-2\sqrt{14}.$$
+The principal square root is $1+\sqrt{14}$, not the printed difference.""",
             ),
             (
-                r"The product rule $|ab^2|=|a|\,b^2$ is asserted for all real $a$ and $b$.",
-                True,
-                r"""Absolute value splits over products:
-$$|ab^2|=|a|\,|b^2|.$$
-For real $b$ one has $b^2\ge 0$, so $|b^2|=b^2$. Hence
-$$|ab^2|=|a|b^2.$$""",
-            ),
-            (
-                "Subtracting $x^2+y^2+z^2$ from $(x+y+z)^2$ is claimed to leave $2(xy+yz+zx)$.",
-                True,
-                r"""Expand the square:
-$$(x+y+z)^2=x^2+y^2+z^2+2xy+2yz+2zx.$$
-The difference is exactly $2(xy+yz+zx)$.""",
-            ),
-            (
-                "Factoring $x^3-1$ as $(x-1)(x^2-x+1)$ is left in the margin as an identity.",
-                False,
-                r"""Difference of cubes requires
-$$x^3-1=(x-1)(x^2+x+1).$$
-The printed middle term $-x$ belongs to $x^3+1=(x+1)(x^2-x+1)$, a different identity.""",
-            ),
-            (
-                r"Adding $\dfrac{1}{a-b}+\dfrac{1}{b-a}$ is said to equal $1$ whenever $a\neq b$.",
-                False,
-                r"""The two denominators are opposites:
-$$\frac{1}{b-a}=\frac{1}{-(a-b)}=-\frac{1}{a-b}.$$
-The sum is identically $0$ on $a\neq b$, not $1$.""",
-            ),
-        ],
-        overview="Five independent catalogue queries: a quotient of square roots, $|ab^2|=|a|b^2$, the cross terms in $(x+y+z)^2$, the middle sign in $x^3-1$, and opposite unit fractions summing to zero.",
-    ),
-    task(
-        title="Orchestra tuning-sheet algebra",
-        subsection="2.5",
-        difficulty="4/5",
-        context="An orchestra’s tuning sheet has five mixed algebra doodles in the unused staves: a scaled absolute value, a perfect-square factorisation, a difference of two fractions, a squared binomial, and a product of mismatched rational exponents. The doodles are not a single calculation.",
-        items=[
-            (
-                "Scaling $|-3x|$ down to $3|x|$ is written as an identity.",
+                r"Pulling out the positive factor $2$, the identity $|2m-14|=2|m-7|$ is accepted for every real $m$.",
                 True,
                 r"""Absolute value splits over a product:
-$$|-3x|=|-3|\,|x|=3|x|.$$
-The factor $-3$ contributes its absolute value $3$, not a minus sign in front of $3|x|$.""",
+$$|2m-14|=|2(m-7)|=|2|\,|m-7|=2|m-7|.$$
+No sign restriction on $m$ is required.""",
             ),
             (
-                "Factoring $x^2-6x+9$ as $(x-3)^2$ is accepted as an identity.",
+                r"Evaluating the cubes at $f=5$, $g=8$, $h=-13$ (which sum to $0$) is claimed to give $f^3+g^3+h^3=-1560$.",
                 True,
-                r"""This is the square of a difference:
-$$(x-3)^2=x^2-6x+9.$$
-The discriminant is zero, so the repeated linear factor is $x-3$.""",
-            ),
-            (
-                r"Clearing $\dfrac{2}{x}-\dfrac{3}{y}$ produces $\dfrac{2y-3x}{xy}$ whenever $xy\neq 0$.",
-                True,
-                r"""A common denominator $xy$ gives
-$$\frac{2}{x}-\frac{3}{y}=\frac{2y-3x}{xy}.$$""",
-            ),
-            (
-                "Expanding $(x+3)^2$ as $x^2+9$ is treated as an identity.",
-                False,
-                r"""The square expands with a cross term:
-$$(x+3)^2=x^2+6x+9.$$
-Replacing the square by $x^2+9$ discards $6x$, which vanishes only at $x=0$.""",
-            ),
-            (
-                r"Multiplying $a^{m/n}\cdot a^{n/m}$ is said to return $a$ for all positive $a$ and all nonzero $m,n$.",
-                False,
-                r"""Exponents add:
-$$a^{m/n}a^{n/m}=a^{m/n+n/m}=a^{(m^2+n^2)/(mn)}.$$
-The combined exponent equals $1$ only in special cases (e.g. $m=n=\pm 1$), not identically. For $m=2$ and $n=1$ one obtains $a^{5/2}$, not $a$.""",
+                r"""First $5+8-13=0$, so $f^3+g^3+h^3=3fgh$. Then
+$$3\cdot 5\cdot 8\cdot(-13)=-1560.$$
+Directly, $125+512-2197=-1560$. The sum of cubes is the product $3fgh$, not $0$.""",
             ),
         ],
-        overview="Five independent tuning-sheet doodles: $|-3x|=3|x|$, a perfect square, a difference of two fractions, the missing $6x$ in $(x+3)^2$, and adding mismatched rational exponents.",
+        overview=r"Unlinked claims: odd powers cancel in a Sophie-Germain product, a cubic remainder that matches at $0$ only, the wrong conjugate of $\sqrt{15+2\sqrt{14}}$, $|2m-14|=2|m-7|$, and $f^3+g^3+h^3=3fgh$ at $(5,8,-13)$.",
     ),
     task(
-        title="Museum archive labels",
+        title="Cancelled cubic checked away from zero",
         subsection="2.5",
         difficulty="5/5",
-        context="Five archive labels in a mathematics exhibition case display unrelated identities: a cubed difference, a factored difference of fourth powers, a cancelled perfect square over a linear term, a real cube root, and a claim that a quadratic absolute value can vanish. Visitors are told to judge each label separately.",
+        context=CTX,
         items=[
             (
-                "Expanding $(a-b)^3$ is printed as $a^3-3a^2b+3ab^2-b^3$.",
-                True,
-                r"""The binomial formula with a minus in the second term is
-$$(a-b)^3=a^3-3a^2b+3ab^2-b^3.$$
-Equivalently $(a-b)^3=a^3-b^3-3ab(a-b)$.""",
-            ),
-            (
-                "Factoring $a^4-16$ as $(a-2)(a+2)(a^2+4)$ is offered as a complete real factorisation.",
-                True,
-                r"""$$a^4-16=(a^2-4)(a^2+4)=(a-2)(a+2)(a^2+4).$$
-The quadratic $a^2+4$ has negative discriminant, so it stays irreducible over the reals.""",
-            ),
-            (
-                r"Cancelling $\dfrac{a^2-2ab+b^2}{a-b}$ down to $a-b$ is claimed for $a\neq b$.",
-                True,
-                r"""The numerator is $(a-b)^2$, so
-$$\frac{(a-b)^2}{a-b}=a-b$$
-whenever $a\neq b$.""",
-            ),
-            (
-                r"Taking the real cube root $\sqrt[3]{-8}$ is said to equal $-2$.",
-                True,
-                r"""The real cube-root function is odd, and $2^3=8$, so
-$$\sqrt[3]{-8}=-\sqrt[3]{8}=-2.$$
-The principal complex cube root is a different convention and is not used here.""",
-            ),
-            (
-                "Someone claims that $|x^2+1|$ can equal $0$ for a real $x$.",
+                r"Expanding $(f+2g-h)^2$ is written with the coefficient of $gh$ equal to $+4$.",
                 False,
-                r"""For every real $x$ one has $x^2+1\ge 1>0$, hence
-$$|x^2+1|=x^2+1\ge 1.$$
-The absolute value never hits zero.""",
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(2g)\cdot(-h)=-4gh.$$
+The printed $+4$ is the wrong sign. The full expansion is $f^2+4g^2+h^2+4fg-2fh-4gh$.""",
+            ),
+            (
+                r"After cancelling, $\dfrac{j^3-3375}{j-15}$ equals $j^2+15j+225$ for $j\neq 15$, and substituting $j=1$ gives $241$ on both the original fraction and the reduced quadratic.",
+                True,
+                r"""Difference of cubes with $3375=15^3$:
+$$\frac{j^3-3375}{j-15}=j^2+15j+225\qquad(j\neq 15).$$
+At $j=1$ the quadratic is $1+15+225=241$, while
+$$\frac{1-3375}{1-15}=\frac{-3374}{-14}=241.$$
+The linear term is visible at this test point, unlike a check at $0$.""",
+            ),
+            (
+                r"Composing the stack $\bigl(k^{2/3}\bigr)^{3/2}$ is claimed to return $k$ for every real $k\neq 0$.",
+                False,
+                r"""In the reals, $k^{2/3}=\bigl(k^2\bigr)^{1/3}=|k|^{2/3}$. Then
+$$\bigl(|k|^{2/3}\bigr)^{3/2}=|k|.$$
+At $k=-8$ the stack is $4$, not $-8$. The identity holds for $k>0$ only.""",
+            ),
+            (
+                r"On the half-line $h<0$, the quotient $|h|/(-h)$ equals $1$.",
+                True,
+                r"""For $h<0$ one has $|h|=-h$, so
+$$\frac{|h|}{-h}=\frac{-h}{-h}=1.$$
+The displayed quotient is the piecewise constant $1$ on that half-line.""",
+            ),
+            (
+                r"Given $u+v=15$ and $uv=14$, the sum $u^2+v^2$ is evaluated as $197$.",
+                True,
+                r"""$$u^2+v^2=(u+v)^2-2uv=225-28=197.$$
+The distractor $225$ is $(u+v)^2$ with the cross term dropped.""",
             ),
         ],
-        overview="Five independent archive labels: $(a-b)^3$, $a^4-16$, cancelling $(a-b)^2/(a-b)$, the real cube root of $-8$, and the range of $|x^2+1|$.",
+        overview=r"Five independent lines: a wrong-sign $gh$ term in $(f+2g-h)^2$, a cubic remainder checked at $j=1$, $(k^{2/3})^{3/2}=|k|$, $|h|/(-h)=1$ on $h<0$, and $u^2+v^2=197$ from $u+v=15$, $uv=14$.",
     ),
     task(
-        title="Baking-lab identity cards",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A baking lab keeps identity cards on a fridge magnet: a cancelled difference of cubes, a four-factor product, a squared quadratic, a rational power of $32$, and a product of absolute values. Each card is a separate claim with its own letters.",
-        items=[
-            (
-                r"Cancelling $\dfrac{x^3-8}{x-2}$ down to $x^2-4x+4$ is claimed for $x\neq 2$.",
-                False,
-                r"""Difference of cubes gives
-$$\frac{x^3-8}{x-2}=x^2+2x+4\qquad(x\neq 2).$$
-The printed quadratic $x^2-4x+4=(x-2)^2$ would be the square of the cancelled factor, not the quotient. Direct division also produces $+2x$, not $-4x$.""",
-            ),
-            (
-                "Multiplying $(x+1)(x-1)(x^2+1)$ is said to recover $x^4-1$.",
-                True,
-                r"""First $(x+1)(x-1)=x^2-1$, then
-$$(x^2-1)(x^2+1)=x^4-1.$$
-This is a difference of squares applied twice.""",
-            ),
-            (
-                "Factoring $x^4+4x^2+4$ as $(x^2+2)^2$ is posted as an identity.",
-                True,
-                r"""Set $u=x^2$. Then
-$$u^2+4u+4=(u+2)^2=(x^2+2)^2.$$
-Expanding the square recovers $x^4+4x^2+4$.""",
-            ),
-            (
-                "Reducing $32^{2/5}$ to $4$ is treated as correct.",
-                True,
-                r"""$32=2^5$, so
-$$32^{2/5}=(2^5)^{2/5}=2^2=4.$$""",
-            ),
-            (
-                r"Replacing $|x-2|\,|x+2|$ by $x^2-4$ is offered as an identity.",
-                False,
-                r"""The product rule gives
-$$|x-2|\,|x+2|=|(x-2)(x+2)|=|x^2-4|.$$
-When $|x|<2$ one has $x^2-4<0$, so $|x^2-4|=4-x^2\neq x^2-4$ (unless both are zero). The bars cannot be dropped.""",
-            ),
-        ],
-        overview="Five independent fridge cards: the quadratic factor of $x^3-8$, a double difference of squares, $(x^2+2)^2$, $32^{2/5}=4$, and $|x^2-4|$ versus $x^2-4$.",
-    ),
-    task(
-        title="Surveyor's field identities",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A surveyor’s field book has five mixed algebra jottings on facing pages: a three-term square, a perfect-square trinomial, a cancelled rational shortcut, a square root of a square, and an absolute-value split. Distances in one jotting are not reused in another.",
-        items=[
-            (
-                "Expanding $(a+b-c)^2$ is written as $a^2+b^2+c^2+2ab+2ac-2bc$.",
-                False,
-                r"""The cross terms are
-$$2ab+2a(-c)+2b(-c)=2ab-2ac-2bc,$$
-so
-$$(a+b-c)^2=a^2+b^2+c^2+2ab-2ac-2bc.$$
-The printed $+2ac$ has the wrong sign.""",
-            ),
-            (
-                "Factoring $4x^2-12x+9$ as $(2x-3)^2$ is recorded as an identity.",
-                True,
-                r"""Expand the binomial:
-$$(2x-3)^2=4x^2-2\cdot 2x\cdot 3+9=4x^2-12x+9.$$
-The coefficients match, so the factorisation is an identity.""",
-            ),
-            (
-                r"Cancelling $\dfrac{2x}{x^2-1}$ down to $\dfrac{2}{x-1}$ by striking an $x$ is treated as valid for $x\neq\pm 1$.",
-                False,
-                r"""The numerator is $2x$, not $2(x^2-1)$ or $2(x+1)$. Factoring the denominator gives
-$$\frac{2x}{(x-1)(x+1)},$$
-which is not $2/(x-1)$. Striking a single letter $x$ is not a cancellation of a common factor.""",
-            ),
-            (
-                r"Simplifying $\sqrt{9x^2}$ to $3|x|$ is claimed for every real $x$.",
-                True,
-                r"""$$\sqrt{9x^2}=\sqrt{9}\,\sqrt{x^2}=3|x|.$$
-Writing $3x$ would fail for $x<0$.""",
-            ),
-            (
-                r"Splitting $|x+3|$ as $|x|+3$ is proposed as an identity on $\mathbb{R}$.",
-                False,
-                r"""$|x+3|=|x|+3$ holds for $x\ge 0$ but fails for $x=-4$:
-$$|-1|=1,\qquad |-4|+3=7.$$
-In general $|x+3|\le |x|+3$, with equality only on a half-line.""",
-            ),
-        ],
-        overview="Five independent field-book jottings: the signs in $(a+b-c)^2$, a perfect square $(2x-3)^2$, illegal cancellation in a rational, $\\sqrt{9x^2}=3|x|$, and $|x+3|$ versus $|x|+3$.",
-    ),
-    task(
-        title="Radio-club QSL algebra",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A radio club prints five mixed identities on the backs of QSL cards: a sum of cubes, a negative-exponent slogan, a sum-of-cubes expansion, a rewritten mixed rational, and a squared absolute difference. Each card is a different skill and a different pair of letters.",
-        items=[
-            (
-                "Factoring $x^3+y^3$ as $(x+y)(x^2-xy+y^2)$ is printed as an identity.",
-                True,
-                r"""Distribute:
-$$(x+y)(x^2-xy+y^2)=x^3-x^2y+xy^2+x^2y-xy^2+y^3=x^3+y^3.$$
-The mixed terms cancel.""",
-            ),
-            (
-                r"Rewriting $(xy)^{-1}$ as $x^{-1}+y^{-1}$ is offered as an identity for $xy\neq 0$.",
-                False,
-                r"""The power rule on a product is
-$$(xy)^{-1}=x^{-1}y^{-1}=\frac{1}{xy}.$$
-The sum of reciprocals is
-$$x^{-1}+y^{-1}=\frac{x+y}{xy},$$
-which equals $1/(xy)$ only if $x+y=1$, not identically.""",
-            ),
-            (
-                "Expanding $(x+2y)(x^2-2xy+4y^2)$ is said to recover $x^3+8y^3$.",
-                True,
-                r"""This is the reverse of $u^3+v^3=(u+v)(u^2-uv+v^2)$ with $u=x$ and $v=2y$:
-$$(x+2y)(x^2-2xy+4y^2)=x^3+(2y)^3=x^3+8y^3.$$""",
-            ),
-            (
-                r"Rewriting $\dfrac{x}{y}+\dfrac{y}{x}-2$ as $\dfrac{(x-y)^2}{xy}$ is claimed for $xy\neq 0$.",
-                True,
-                r"""A common denominator $xy$ gives
-$$\frac{x^2+y^2-2xy}{xy}=\frac{(x-y)^2}{xy}.$$""",
-            ),
-            (
-                "Identifying $|x-y|^2$ with $|x^2-y^2|$ is treated as an identity.",
-                False,
-                r"""$|x-y|^2=(x-y)^2=x^2-2xy+y^2$, whereas
-$$|x^2-y^2|=|x-y|\,|x+y|.$$
-For $x=2$ and $y=1$, the left side is $1$ and the right side is $3$.""",
-            ),
-        ],
-        overview="Five independent QSL identities: $x^3+y^3$, $(xy)^{-1}$ versus $x^{-1}+y^{-1}$, the reverse of $x^3+8y^3$, a completed square in a rational, and $|x-y|^2$ versus $|x^2-y^2|$.",
-    ),
-    task(
-        title="Climbing-gym route card",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A climbing gym prints five mixed algebra problems on the back of a route card: a sum of opposite absolute values, a three-term square, a difference of cubes, a difference of two rationals, and a rational power of a square. Holds on the route are not data for the algebra.",
-        items=[
-            (
-                "Adding $|3-x|+|x-3|$ is claimed to equal $2|x-3|$ for every real $x$.",
-                True,
-                r"""Opposite order does not change the absolute value:
-$$|3-x|=|x-3|.$$
-Adding the two terms therefore gives
-$$|x-3|+|x-3|=2|x-3|.$$""",
-            ),
-            (
-                "Expanding $(2x+3y+z)^2$ is written as $4x^2+9y^2+z^2+12xy+4xz+6yz$.",
-                True,
-                r"""The square of a three-term sum produces twice every pairwise product:
-$$2\cdot 2x\cdot 3y=12xy,\quad 2\cdot 2x\cdot z=4xz,\quad 2\cdot 3y\cdot z=6yz,$$
-together with $4x^2+9y^2+z^2$. The displayed polynomial matches.""",
-            ),
-            (
-                "Factoring $8x^3-27y^3$ as $(2x-3y)(4x^2-6xy+9y^2)$ is posted as an identity.",
-                False,
-                r"""Difference of cubes $u^3-v^3=(u-v)(u^2+uv+v^2)$ with $u=2x$ and $v=3y$ gives
-$$(2x-3y)(4x^2+6xy+9y^2).$$
-The printed middle term $-6xy$ belongs to a sum of cubes, not a difference. Expanding the printed product yields $8x^3-24x^2y+36xy^2-27y^3$, which differs from $8x^3-27y^3$ by $-24x^2y+36xy^2$.""",
-            ),
-            (
-                r"Subtracting $\dfrac{1}{x^2-1}$ from $\dfrac{1}{x^2-4}$ is said to leave $\dfrac{3}{(x^2-4)(x^2-1)}$ whenever $x\neq\pm 1$ and $x\neq\pm 2$.",
-                True,
-                r"""A common denominator $(x^2-4)(x^2-1)$ produces
-$$\frac{(x^2-1)-(x^2-4)}{(x^2-4)(x^2-1)}=\frac{3}{(x^2-4)(x^2-1)}.$$""",
-            ),
-            (
-                "Simplifying $(x^2)^{3/2}$ to $x^3$ is asserted for every real $x$.",
-                False,
-                r"""For real $x$,
-$$(x^2)^{3/2}=\bigl(|x|^2\bigr)^{3/2}=|x|^3.$$
-At $x=-2$ one has $(4)^{3/2}=8$, whereas $x^3=-8$. The identity holds only for $x\ge 0$.""",
-            ),
-        ],
-        overview="Five independent route-card claims: $|3-x|+|x-3|$, a three-term square, the middle sign in $8x^3-27y^3$, a difference of two rationals, and $(x^2)^{3/2}=|x|^3$.",
-    ),
-    task(
-        title="Translation-booth scratchpad",
+        title="Swapped-ratio sum beside a denested sixteen",
         subsection="2.5",
         difficulty="4/5",
-        context="Two interpreters share a scratchpad during a break and jot five mixed algebra claims that are not a single problem: a sum of two fractions, a rational power, a grouping factorisation, a three-term square, and a sign in an absolute value. Each jotting uses different letters.",
+        context=CTX,
         items=[
             (
-                r"Clearing $\dfrac{x}{2}+\dfrac{y}{3}$ to $\dfrac{3x+2y}{6}$ is claimed as an identity.",
+                r"The coefficient of $fh$ in the expansion of $(f-2g+3h)^2$ is recorded as $+6$.",
                 True,
-                r"""A common denominator $6$ gives
-$$\frac{3x}{6}+\frac{2y}{6}=\frac{3x+2y}{6}.$$""",
+                r"""Twice the $f$--$h$ product is
+$$2\cdot f\cdot(3h)=6fh.$$
+The collected coefficient is $+6$. (The $gh$ coefficient, by contrast, is $2\cdot(-2)\cdot 3=-12$.)""",
             ),
             (
-                "Reducing $9^{3/2}$ to $27$ is treated as correct.",
+                r"Adding the swapped pair $\dfrac{j}{k}+\dfrac{k}{j}$ for $jk\neq 0$ is said to equal $\dfrac{j^2+k^2}{jk}$, and substituting $j=3$, $k=5$ makes both sides equal $34/15$.",
                 True,
-                r"""Write $9$ as a power of $3$:
-$$9^{3/2}=(3^2)^{3/2}=3^3=27.$$
-Equivalently $\bigl(\sqrt{9}\bigr)^3=3^3=27$.""",
+                r"""A common denominator $jk$ produces
+$$\frac{j}{k}+\frac{k}{j}=\frac{j^2+k^2}{jk}.$$
+At $j=3$ and $k=5$ both sides equal $34/15$:
+$$\frac{3}{5}+\frac{5}{3}=\frac{9+25}{15}=\frac{34}{15},\qquad\frac{9+25}{15}=\frac{34}{15}.$$
+The printed numerator is $j^2+k^2$, not the distractor $j+k$ that belongs to $1/j+1/k$.""",
             ),
             (
-                "Grouping $xy-2x+3y-6$ as $(x+3)(y-2)$ is offered as an identity.",
-                True,
-                r"""Factor by grouping:
-$$xy-2x+3y-6=x(y-2)+3(y-2)=(x+3)(y-2).$$
-Distributing the right-hand side recovers the four-term original.""",
-            ),
-            (
-                "Expanding $(x+y+1)^2$ as $x^2+y^2+1$ is written up as an identity.",
+                r"Denesting $\sqrt{16+2\sqrt{55}}$ is claimed to equal $\sqrt{11}-\sqrt{5}$.",
                 False,
-                r"""The square is
-$$(x+y+1)^2=x^2+y^2+1+2xy+2x+2y.$$
-Dropping every cross term is legitimate only at special points, not identically.""",
+                r"""$$(\sqrt{11}+\sqrt{5})^2=11+2\sqrt{55}+5=16+2\sqrt{55},\qquad(\sqrt{11}-\sqrt{5})^2=16-2\sqrt{55}.$$
+The principal square root is $\sqrt{11}+\sqrt{5}$. The printed difference denests the minus companion.""",
             ),
             (
-                "Replacing $|-x|$ by $-x$ for every real $x$ is proposed as an identity.",
+                r"Adding the opposite insides $|21-\ell|+|\ell-21|$ is claimed to equal $2|\ell-21|$ for every real $\ell$.",
+                True,
+                r"""Opposite order does not change absolute value: $|21-\ell|=|\ell-21|$. The sum is therefore
+$$|\ell-21|+|\ell-21|=2|\ell-21|.$$""",
+            ),
+            (
+                r"Given $r+s=13$ and $rs=21$, the sum $r^2+s^2$ is claimed to equal $169$.",
                 False,
-                r"""$|-x|=|x|$, which equals $-x$ only when $x\le 0$. For $x=2$,
-$$|-2|=2\neq -2.$$""",
+                r"""$$r^2+s^2=(r+s)^2-2rs=169-42=127.$$
+The printed $169$ is $(r+s)^2$ with the correction $-2rs$ dropped.""",
             ),
         ],
-        overview="Five independent scratchpad claims: a sum of two fractions, $9^{3/2}=27$, grouping four terms, the missing cross terms in $(x+y+1)^2$, and $|-x|=|x|$.",
+        overview=r"Unlinked claims: the $fh$ coefficient $+6$ in $(f-2g+3h)^2$, $j/k+k/j$, the wrong conjugate of $\sqrt{16+2\sqrt{55}}$, $|21-\ell|+|\ell-21|=2|\ell-21|$, and $r^2+s^2=127$ rather than $169$.",
     ),
     task(
-        title="Astronomy-club chalkboard",
+        title="Mixed-term cancellation in a Germain product",
         subsection="2.5",
         difficulty="5/5",
-        context="After a planetarium talk the astronomy club leaves five mixed identities on the chalkboard: a difference of two squares, a four-term factorisation, a cancelled difference of cubes, a square-root quotient with no sign restriction, and a difference of absolute values. The five lines are independent.",
+        context=CTX,
         items=[
             (
-                "The difference of binomial squares $(a+b)^2-(a-b)^2$ is recorded as the monomial $4ab$ with no restriction on the letters.",
+                r"Distributing $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ is said to recover $f^4+4g^4$ after the mixed $f^2g^2$ terms cancel.",
                 True,
-                r"""$$(a+b)^2=a^2+2ab+b^2,\qquad (a-b)^2=a^2-2ab+b^2.$$
-The difference is $4ab$.""",
+                r"""The product is a difference of squares:
+$$(f^2+2g^2)^2-(2fg)^2=f^4+4f^2g^2+4g^4-4f^2g^2=f^4+4g^4.$$
+The two contributions to $f^2g^2$ cancel, leaving no middle even-powered term of that type.""",
             ),
             (
-                "Factoring $a^2+2ab+b^2-c^2$ as $(a+b-c)^2$ is posted as an identity.",
+                r"Clearing the stacked difference $\dfrac{\dfrac{1}{h}-\dfrac{1}{j}}{\dfrac{1}{h}+\dfrac{1}{j}}$ is said to leave $\dfrac{h-j}{h+j}$ whenever $hj\neq 0$ and $h\neq -j$.",
                 False,
-                r"""The first three terms are $(a+b)^2$, so the whole expression is a difference of squares:
-$$(a+b)^2-c^2=(a+b-c)(a+b+c).$$
-The printed single square $(a+b-c)^2$ expands to $a^2+b^2+c^2+2ab-2ac-2bc$, which carries extra $-2ac-2bc$ and a different $c^2$ coefficient.""",
+                r"""The numerator is $(j-h)/(hj)$ and the denominator is $(j+h)/(hj)$, so the stack equals
+$$\frac{j-h}{j+h}=-\frac{h-j}{h+j}.$$
+The printed numerator $h-j$ has the opposite order; the two sides differ by a sign.""",
             ),
             (
-                r"Cancelling $\dfrac{a^3-b^3}{a-b}$ down to $a^2+ab+b^2$ is claimed for $a\neq b$.",
+                r"Matching positive roots, $\sqrt{11+2\sqrt{24}}$ is identified with $2\sqrt{2}+\sqrt{3}$.",
                 True,
-                r"""$$a^3-b^3=(a-b)(a^2+ab+b^2),$$
-so the quotient is $a^2+ab+b^2$ whenever $a\neq b$.""",
+                r"""Square the proposed denesting:
+$$(2\sqrt{2}+\sqrt{3})^2=8+4\sqrt{6}+3=11+4\sqrt{6}.$$
+Since $2\sqrt{24}=2\sqrt{4\cdot 6}=4\sqrt{6}$, the radicand is exactly $11+2\sqrt{24}$. Both $2\sqrt{2}+\sqrt{3}$ and the principal square root are positive, so they are equal.""",
             ),
             (
-                r"Writing $\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}$ for every real $a$ and every $b\neq 0$ is treated as an identity.",
-                False,
-                r"""The identity
-$$\sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}}$$
-requires $a\ge 0$ and $b>0$, so that every square root is defined in the reals. For $a=1$ and $b=-4$ the left-hand side is not real. The printed slogan ignores the sign of $b$.""",
+                r"On the half-line $\ell>21$, the quotient $\dfrac{|\ell-21|}{\ell-21}$ equals $1$.",
+                True,
+                r"""For $\ell>21$ one has $|\ell-21|=\ell-21$, hence
+$$\frac{|\ell-21|}{\ell-21}=1.$$
+The quotient is the piecewise constant $1$ on that half-line.""",
             ),
             (
-                "Identifying $|a|-|b|$ with $|a-b|$ is offered as an identity.",
+                r"Evaluating $m^3+n^3$ from $m+n=11$ and $mn=13$ is claimed to give $1331$.",
                 False,
-                r"""The reverse triangle inequality is
-$$\bigl||a|-|b|\bigr|\le |a-b|.$$
-The printed claim drops the outer bars and asserts equality. For $a=1$ and $b=3$,
-$$|a|-|b|=-2,\qquad |a-b|=2.$$""",
+                r"""The cube-of-a-sum identity rearranges to
+$$m^3+n^3=(m+n)^3-3mn(m+n)=1331-3\cdot 13\cdot 11=1331-429=902.$$
+The printed $1331$ is $(m+n)^3$ with the correction $-3mn(m+n)$ dropped.""",
             ),
         ],
-        overview="Five independent chalkboard claims: $(a+b)^2-(a-b)^2=4ab$, a difference of squares versus a single square, $(a^3-b^3)/(a-b)$, the domain of $\\sqrt{a/b}$, and $|a|-|b|$ versus $|a-b|$.",
+        overview=r"Independent claims: Sophie Germain's product recovering $f^4+4g^4$, a sign error in a stacked difference of unit fractions, the denesting $\sqrt{11+2\sqrt{24}}=2\sqrt{2}+\sqrt{3}$, $|\ell-21|/(\ell-21)=1$ for $\ell>21$, and $m^3+n^3=902$ rather than $1331$.",
     ),
     task(
-        title="Textile-mill pattern book",
+        title="Sign error on gh next to a cube-sum trap",
         subsection="2.5",
         difficulty="5/5",
-        context="A textile mill’s pattern book annotates five mixed algebraic identities used as mnemonic borders: a complete factorisation of $x^6-y^6$, a reverse difference of cubes, a quotient of sums of negative exponents, a composition of rational exponents for $a>0$, and a mistaken split of an absolute value. Borders are not a shared computation.",
+        context=CTX,
         items=[
             (
-                "Factoring $x^6-y^6$ as $(x-y)(x+y)(x^2+xy+y^2)(x^2-xy+y^2)$ is recorded as an identity.",
-                True,
-                r"""First $x^6-y^6=(x^3-y^3)(x^3+y^3)$. Then
-$$x^3-y^3=(x-y)(x^2+xy+y^2),\qquad x^3+y^3=(x+y)(x^2-xy+y^2).$$
-The product of the four factors recovers $x^6-y^6$.""",
+                r"Expanding the trinomial $(3f-g-h)^2$ is written with the coefficient of $gh$ equal to $-2$.",
+                False,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-g)\cdot(-h)=+2gh.$$
+The printed $-2$ has the wrong sign. The two minus signs in $-g$ and $-h$ make that cross term positive.""",
             ),
             (
-                "Expanding $(x^2+xy+y^2)(x-y)$ is said to recover $x^3-y^3$.",
+                r"Cancelling the quadratic ratio $\dfrac{s^2-16}{s^2-s-12}$ down to $\dfrac{s+4}{s+3}$ is claimed for $s\neq 4$ and $s\neq -3$.",
                 True,
-                r"""This is the difference-of-cubes identity read backwards:
-$$(x-y)(x^2+xy+y^2)=x^3-y^3.$$""",
+                r"""Factor both polynomials:
+$$s^2-16=(s-4)(s+4),\qquad s^2-s-12=(s-4)(s+3).$$
+For $s\neq 4$ the common factor $s-4$ cancels, leaving $(s+4)/(s+3)$, and $s\neq -3$ keeps the remaining denominator alive.""",
             ),
             (
-                r"Simplifying $\dfrac{x^{-1}+y^{-1}}{x^{-1}-y^{-1}}$ to $\dfrac{x+y}{y-x}$ is claimed for $xy\neq 0$ and $x\neq y$.",
-                True,
-                r"""Write the negative exponents as fractions:
-$$\frac{\frac{1}{x}+\frac{1}{y}}{\frac{1}{x}-\frac{1}{y}}=\frac{(y+x)/(xy)}{(y-x)/(xy)}=\frac{x+y}{y-x}.$$
-(The equivalent form $-\dfrac{x+y}{x-y}$ is the same number.)""",
-            ),
-            (
-                "Composing $(a^{2/3})^{3/2}$ back to $a$ is accepted for every $a>0$.",
+                r"Composing the rational powers $(t^{3/4})^{4/3}$ is said to return $t$ whenever $t>0$.",
                 True,
                 r"""Multiply the exponents:
-$$\bigl(a^{2/3}\bigr)^{3/2}=a^{(2/3)\cdot(3/2)}=a^1=a.$$
-Positivity of $a$ keeps every real power well-defined in the usual elementary sense.""",
+$$\bigl(t^{3/4}\bigr)^{4/3}=t^{(3/4)\cdot(4/3)}=t^1=t.$$
+Positivity of $t$ keeps every real power well-defined in the usual elementary sense.""",
             ),
             (
-                "Splitting $|2-x|$ as $2-|x|$ is proposed as an identity.",
+                r"The product of absolute values $|u-15|\,|u+15|$ is identified with $|u^2-225|$ for every real $u$.",
+                True,
+                r"""The product rule gives
+$$|u-15|\,|u+15|=\bigl|(u-15)(u+15)\bigr|=|u^2-225|.$$
+Dropping the outer bars would fail whenever $|u|<15$.""",
+            ),
+            (
+                r"Evaluating the cubes at $f=4$, $g=7$, $h=-11$ (which sum to $0$) is claimed to make $f^3+g^3+h^3$ vanish.",
                 False,
-                r"""For $x=0$ both sides equal $2$, but for $x=3$,
-$$|2-3|=1,\qquad 2-|3|=-1.$$
-In general $|2-x|$ cannot be rewritten as $2-|x|$ identically.""",
+                r"""The letters do sum to $0$, so $f^3+g^3+h^3=3fgh$, not $0$:
+$$3\cdot 4\cdot 7\cdot(-11)=-924.$$
+Directly, $64+343-1331=-924$. Vanishing of the linear sum does not force the cubes to vanish.""",
             ),
         ],
-        overview="Five independent pattern-book identities: $x^6-y^6$ in four factors, the reverse of $x^3-y^3$, a quotient of sums of negative exponents, $(a^{2/3})^{3/2}=a$ for $a>0$, and $|2-x|$ versus $2-|x|$.",
+        overview=r"Unlinked claims: a wrong-sign $gh$ coefficient in $(3f-g-h)^2$, cancelling $(s^2-16)/(s^2-s-12)$, $(t^{3/4})^{4/3}=t$ for $t>0$, $|u^2-225|$ as a product of bars, and $f^3+g^3+h^3=3fgh\neq 0$ at $(4,7,-11)$.",
     ),
     task(
-        title="Debate-team brief of forms",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A debate-team brief on elementary identities never solves for the pair $(u,v)$. It only records $u+v=5$ and $uv=3$, then lists five mixed claims: a squared-sum evaluation, a monic quadratic factorisation, a sum of reciprocals, a negative-exponent comparison, and an absolute difference. Each claim is judged on its own wording.",
-        items=[
-            (
-                "Evaluating $u^2+v^2$ from $u+v=5$ as $25$ is treated as immediate.",
-                False,
-                r"""The identity is
-$$u^2+v^2=(u+v)^2-2uv=25-2\cdot 3=19.$$
-Omitting $-2uv$ leaves $25$, which is $(u+v)^2$ rather than $u^2+v^2$.""",
-            ),
-            (
-                "Factoring the monic quadratic with roots $u$ and $v$ as $X^2-5X+3$ is accepted without finding $u$ or $v$.",
-                True,
-                r"""Vieta’s formulae say that a monic quadratic with roots $u,v$ is
-$$(X-u)(X-v)=X^2-(u+v)X+uv=X^2-5X+3.$$
-No quadratic formula is required.""",
-            ),
-            (
-                r"Adding the reciprocals is claimed to give $\dfrac{1}{u}+\dfrac{1}{v}=\dfrac{5}{3}$.",
-                True,
-                r"""$$\frac{1}{u}+\frac{1}{v}=\frac{u+v}{uv}=\frac{5}{3}.$$
-The trap $\dfrac{uv}{u+v}=\dfrac{3}{5}$ is the reciprocal of this sum, not the sum itself.""",
-            ),
-            (
-                r"Identifying $(uv)^{-1}$ with $u^{-1}+v^{-1}$ is said to give $\dfrac{5}{3}$.",
-                False,
-                r"""$(uv)^{-1}=1/3$, whereas
-$$u^{-1}+v^{-1}=\frac{5}{3}.$$
-The two expressions are unequal; the claim conflates a product-power with a sum of powers.""",
-            ),
-            (
-                r"Reading $|u-v|$ as $\sqrt{13}$ from $(u-v)^2=13$ is treated as correct.",
-                True,
-                r"""$$(u-v)^2=(u+v)^2-4uv=25-12=13,$$
-so $|u-v|=\sqrt{13}$. The square root is the absolute value of the difference, not $13$ itself.""",
-            ),
-        ],
-        overview="Five independent claims about a pair with $u+v=5$ and $uv=3$: $u^2+v^2=19$, the Vieta quadratic, $1/u+1/v=5/3$, $(uv)^{-1}$ versus a sum of reciprocals, and $|u-v|=\\sqrt{13}$.",
-    ),
-    task(
-        title="Calligraphy-workshop proofs",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A calligraphy workshop copies five mixed identities onto practice sheets: a cube root of a monomial, a three-term product that recovers $1+x^3$, a sum of squares written as a square, a cancelled rational, and a reversed triangle inequality. Each sheet is a separate exercise.",
-        items=[
-            (
-                r"Simplifying $\sqrt[3]{27a^6}$ to $3a^2$ is claimed for every real $a$.",
-                True,
-                r"""The real cube root splits:
-$$\sqrt[3]{27a^6}=\sqrt[3]{27}\,\sqrt[3]{a^6}=3a^2,$$
-because $a^6=(a^2)^3$ and $a^2\ge 0$. No absolute value is needed on $a^2$.""",
-            ),
-            (
-                "Multiplying $(1-x+x^2)(1+x)$ is said to recover $1+x^3$.",
-                True,
-                r"""Distribute:
-$$(1-x+x^2)(1+x)=1+x-x-x^2+x^2+x^3=1+x^3.$$
-The identity is a three-term product equal to $1+x^3$.""",
-            ),
-            (
-                "Factoring $x^2+4$ as $(x+2)^2$ is written as an identity.",
-                False,
-                r"""$(x+2)^2=x^2+4x+4$. The extra middle term $4x$ means
-$$x^2+4=(x+2)^2-4x,$$
-not a square. Over the reals $x^2+4$ does not factor into real linear terms.""",
-            ),
-            (
-                r"Cancelling $\dfrac{x^2-1}{x^3-1}$ down to $\dfrac{x+1}{x^2+x+1}$ is claimed for $x\neq 1$.",
-                True,
-                r"""$$x^2-1=(x-1)(x+1),\qquad x^3-1=(x-1)(x^2+x+1).$$
-For $x\neq 1$ the factor $x-1$ cancels, leaving $(x+1)/(x^2+x+1)$. The remaining denominator also requires $x^2+x+1\neq 0$, which holds for all real $x$.""",
-            ),
-            (
-                r"Reversing the triangle inequality to $|x+y+z|\ge |x|+|y|+|z|$ is proposed as an identity.",
-                False,
-                r"""The triangle inequality runs the other way:
-$$|x+y+z|\le |x|+|y|+|z|.$$
-For $x=1$, $y=z=-1$ the left side is $1$ and the right side is $3$, so the reversed inequality fails. Equality in the genuine triangle inequality needs a common sign, not a reversed comparison.""",
-            ),
-        ],
-        overview="Five independent practice sheets: a real cube root of $27a^6$, the finite product $(1-x+x^2)(1+x)$, $x^2+4$ versus $(x+2)^2$, cancelling $(x^2-1)/(x^3-1)$, and the direction of the triangle inequality.",
-    ),
-    task(
-        title="Railway-timetable algebra",
+        title="Visible fg coefficient beside a stripped nest",
         subsection="2.5",
         difficulty="4/5",
-        context="In the margin of a railway timetable five mixed algebra notes appear, unrelated to the trains: a sum of two unit multiples, an absolute-value symmetry, a scaled difference of squares, a mistaken binomial square, and a square root of a sum. Each note has its own letters.",
+        context=CTX,
         items=[
             (
-                r"Clearing $\dfrac{3}{x}+\dfrac{2}{y}$ to $\dfrac{3y+2x}{xy}$ is claimed whenever $xy\neq 0$.",
+                r"The coefficient of $fg$ in the expansion of $(f+4g-h)^2$ is recorded as $8$.",
                 True,
-                r"""A common denominator $xy$ gives
-$$\frac{3y+2x}{xy}.$$""",
+                r"""Twice the $f$--$g$ product is
+$$2\cdot f\cdot(4g)=8fg.$$
+The collected coefficient is $8$.""",
             ),
             (
-                "The symmetry $|x-7|=|7-x|$ is asserted for every real $x$.",
-                True,
-                r"""Opposite order does not change the absolute value:
-$$|7-x|=|-(x-7)|=|x-7|.$$""",
-            ),
-            (
-                "Factoring $2x^2-8$ as $2(x-2)(x+2)$ is posted as an identity.",
-                True,
-                r"""$$2x^2-8=2(x^2-4)=2(x-2)(x+2).$$""",
-            ),
-            (
-                "Expanding $(x-5)(x+5)$ as $x^2-10x+25$ is treated as an identity.",
+                r"Reducing the quadratic $\dfrac{j^2-29j+210}{j-14}$ to $j-14$ for $j\neq 14$ is treated as an identity.",
                 False,
-                r"""Difference of squares gives
-$$(x-5)(x+5)=x^2-25.$$
-The printed $x^2-10x+25$ is $(x-5)^2$, a different expansion.""",
+                r"""The numerator is $(j-14)(j-15)$ because $14+15=29$ and $14\cdot 15=210$. For $j\neq 14$,
+$$\frac{(j-14)(j-15)}{j-14}=j-15.$$
+The printed remainder $j-14$ repeats the cancelled factor instead of the surviving one.""",
             ),
             (
-                r"Writing $\sqrt{x^2+y^2}$ as $x+y$ for $x,y\ge 0$ is offered as an identity.",
+                r"Simplifying the power $16^{3/2}$ is treated as producing the integer $64$.",
+                True,
+                r"""$$16^{3/2}=(4^2)^{3/2}=4^3=64,$$
+or equivalently $\bigl(\sqrt{16}\bigr)^3=4^3=64$.""",
+            ),
+            (
+                r"Stripping the outer bars in $\bigl||k|-13\bigr|$ down to $|k|-13$ is proposed for every real $k$.",
                 False,
-                r"""Squaring $x+y$ produces $x^2+2xy+y^2$, not $x^2+y^2$. For $x=y=1$,
-$$\sqrt{2}\neq 2.$$
-The extra cross term $2xy$ is missing from the radicand.""",
+                r"""By definition $\bigl||k|-13\bigr|=|k|-13$ only when $|k|\ge 13$. For $k=0$,
+$$\bigl||0|-13\bigr|=13,\qquad |0|-13=-13.$$
+The identity fails throughout $|k|<13$.""",
+            ),
+            (
+                r"Given the elementary data $v+w=21$ and $vw=35$, the sum of reciprocals $1/v+1/w$ is evaluated as $3/5$.",
+                True,
+                r"""$$\frac{1}{v}+\frac{1}{w}=\frac{v+w}{vw}=\frac{21}{35}=\frac{3}{5}.$$
+The reciprocal $35/21$ is a different number.""",
             ),
         ],
-        overview="Five independent timetable notes: a sum of two fractions, $|x-7|=|7-x|$, a scaled difference of squares, $(x-5)(x+5)$ versus $(x-5)^2$, and $\\sqrt{x^2+y^2}$ versus $x+y$.",
+        overview=r"Five independent lines: the $fg$ coefficient $8$ in $(f+4g-h)^2$, a cancelled-factor leftover, $16^{3/2}=64$, nested bars that cannot be stripped, and $1/v+1/w=3/5$ from $v+w=21$, $vw=35$.",
     ),
     task(
-        title="Archery-club scoring identities",
+        title="Half-line scaling beside a denested twenty-one",
         subsection="2.5",
         difficulty="5/5",
-        context="An archery club prints five mixed identities on the back of a scoring sheet: a squared binomial, a difference of cubes, a pair of complementary rationals, a rational exponent, and a sum of two absolute values. Arrow scores are not inputs to the algebra.",
+        context=CTX,
         items=[
             (
-                "Expanding $(3a-2b)^2$ is written as $9a^2-12ab+4b^2$.",
-                True,
-                r"""Expand with the binomial square:
-$$(3a-2b)^2=(3a)^2-2\cdot 3a\cdot 2b+(2b)^2=9a^2-12ab+4b^2.$$""",
-            ),
-            (
-                "Factoring $a^3-27b^3$ as $(a-3b)(a^2+3ab+9b^2)$ is accepted as an identity.",
-                True,
-                r"""Difference of cubes with $u=a$ and $v=3b$:
-$$a^3-(3b)^3=(a-3b)(a^2+a\cdot 3b+(3b)^2)=(a-3b)(a^2+3ab+9b^2).$$""",
-            ),
-            (
-                r"Adding $\dfrac{a}{a+b}+\dfrac{b}{a+b}$ is said to equal $1$ whenever $a+b\neq 0$.",
-                True,
-                r"""The two numerators add to the common denominator:
-$$\frac{a+b}{a+b}=1.$$""",
-            ),
-            (
-                "Reducing $81^{3/4}$ to $27$ is treated as correct.",
-                True,
-                r"""$81=3^4$, so
-$$81^{3/4}=(3^4)^{3/4}=3^3=27.$$""",
-            ),
-            (
-                "Adding $|a+b|+|a-b|$ is claimed to equal $2|a|$ for every real pair $(a,b)$.",
+                r"Expanding the square $(2f-3g+h)^2$ is written with the coefficient of $fg$ equal to $+12$.",
                 False,
-                r"""The identity fails as soon as $|b|>|a|$. For $a=1$ and $b=3$,
-$$|4|+|-2|=6,\qquad 2|1|=2.$$
-(The genuine identity is $|a+b|+|a-b|=2\max(|a|,|b|)$.)""",
+                r"""Twice the $f$--$g$ product is
+$$2\cdot(2f)\cdot(-3g)=-12fg.$$
+The printed $+12$ has the wrong sign.""",
+            ),
+            (
+                r"Rewriting the stacked ratio $\dfrac{1-\dfrac{1}{j}}{1+\dfrac{1}{j}}$ as $\dfrac{j+1}{j-1}$ is claimed for $j\neq 0$ and $j\neq -1$.",
+                False,
+                r"""Clear the inner layer:
+$$1-\frac{1}{j}=\frac{j-1}{j},\qquad 1+\frac{1}{j}=\frac{j+1}{j},$$
+so the stack equals $(j-1)/(j+1)$. The printed form is the reciprocal of the correct simplification.""",
+            ),
+            (
+                r"Matching positive roots, $\sqrt{21+8\sqrt{5}}$ is identified with $4+\sqrt{5}$.",
+                True,
+                r"""Square the proposed denesting:
+$$(4+\sqrt{5})^2=16+8\sqrt{5}+5=21+8\sqrt{5}.$$
+Both $4+\sqrt{5}$ and the principal square root are positive, so they are equal. The conjugate $4-\sqrt{5}$ squares to $21-8\sqrt{5}$ instead.""",
+            ),
+            (
+                r"Pulling the constant factor, $|-5\ell+15|$ is rewritten as $5|\ell-3|$ for every real $\ell$.",
+                True,
+                r"""Factor $-5$:
+$$|-5\ell+15|=|-5(\ell-3)|=|-5|\,|\ell-3|=5|\ell-3|.$$
+The leading minus is absorbed by the absolute value.""",
+            ),
+            (
+                r"Given the pair $u+v=16$ and $uv=15$, the swapped-ratio sum $u/v+v/u$ is evaluated as $226/15$.",
+                True,
+                r"""$$\frac{u}{v}+\frac{v}{u}=\frac{u^2+v^2}{uv}=\frac{(u+v)^2-2uv}{uv}=\frac{256-30}{15}=\frac{226}{15}.$$
+The distractor $(u+v)/uv=16/15$ is $1/u+1/v$, a different sum.""",
             ),
         ],
-        overview="Five independent scoring-sheet identities: $(3a-2b)^2$, $a^3-27b^3$, complementary rationals summing to $1$, $81^{3/4}=27$, and $|a+b|+|a-b|$ versus $2|a|$.",
+        overview=r"Unlinked claims: a wrong-sign $fg$ coefficient, a reciprocal trap in a stacked unit ratio, $\sqrt{21+8\sqrt{5}}=4+\sqrt{5}$, $|-5\ell+15|=5|\ell-3|$, and $u/v+v/u=226/15$.",
     ),
     task(
-        title="Conservatory theory algebra",
+        title="Cube-root monomial against a linear ratio",
         subsection="2.5",
         difficulty="5/5",
-        context="A conservatory theory class uses five mixed algebra drills between ear-training examples: a squared quadratic, a difference of two cubes of binomials, a telescoping rational, a square root of a sixth power, and a sign error in an absolute value. The drills do not share a common unknown.",
+        context=CTX,
         items=[
             (
-                "Factoring $x^4+8x^2+16$ as $(x^2+4)^2$ is posted as an identity.",
+                r"After collecting terms in $(f-g+2h)^2$, the coefficient of $gh$ is read off as $-4$.",
                 True,
-                r"""Set $u=x^2$. Completing the square in $u$ gives
-$$u^2+8u+16=(u+4)^2=(x^2+4)^2.$$
-Expanding the right-hand side recovers $x^4+8x^2+16$.""",
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-g)\cdot(2h)=-4gh.$$
+The collected coefficient is $-4$.""",
             ),
             (
-                "Expanding $(x+y)^3-(x-y)^3$ is said to leave $2y^3$.",
-                False,
-                r"""The odd-powered terms in $y$ survive:
-$$(x+y)^3-(x-y)^3=2\bigl(3x^2y+y^3\bigr)=2y(3x^2+y^2).$$
-The claim $2y^3$ drops the $6x^2y$ term.""",
-            ),
-            (
-                r"Simplifying $\dfrac{1}{x-1}-\dfrac{2}{x^2-1}$ to $\dfrac{1}{x+1}$ is claimed for $x\neq\pm 1$.",
+                r"Subtracting the swapped pair $\dfrac{k}{m}-\dfrac{m}{k}$ for $km\neq 0$ is said to equal $\dfrac{k^2-m^2}{km}$, and substituting $k=5$, $m=3$ makes both sides equal $16/15$.",
                 True,
-                r"""Write $x^2-1=(x-1)(x+1)$:
-$$\frac{1}{x-1}-\frac{2}{(x-1)(x+1)}=\frac{x+1-2}{(x-1)(x+1)}=\frac{x-1}{(x-1)(x+1)}=\frac{1}{x+1}.$$""",
+                r"""A common denominator $km$ produces
+$$\frac{k}{m}-\frac{m}{k}=\frac{k^2-m^2}{km}.$$
+At $(5,3)$ both sides equal $16/15$:
+$$\frac{5}{3}-\frac{3}{5}=\frac{25-9}{15}=\frac{16}{15}.$$""",
             ),
             (
-                r"Simplifying $\sqrt{4x^6}$ to $2|x|^3$ is asserted for every real $x$.",
-                True,
-                r"""$$\sqrt{4x^6}=2\sqrt{x^6}=2|x|^3,$$
-because $\sqrt{x^6}=\sqrt{(x^3)^2}=|x^3|=|x|^3$.""",
-            ),
-            (
-                "Identifying $-|x|$ with $|-x|$ is offered as an identity.",
-                False,
-                r"""$|-x|=|x|$, which is nonnegative. The quantity $-|x|$ is nonpositive. They agree only at $x=0$. For $x=1$,
-$$-|1|=-1,\qquad |-1|=1.$$""",
-            ),
-        ],
-        overview="Five independent theory drills: $(x^2+4)^2$, the expansion of $(x+y)^3-(x-y)^3$, a telescoping rational, $\\sqrt{4x^6}=2|x|^3$, and $-|x|$ versus $|-x|$.",
-    ),
-    task(
-        title="Cartography-workshop identities",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A cartography workshop prints five mixed identities in the legend of a practice map: a three-term square, a quadratic factorisation, a cancelled trinomial, a negative cube root, and a dropped absolute value on a linear form. Map scales are not used in the algebra.",
-        items=[
-            (
-                "Expanding $(a+2b+3c)^2$ is written as $a^2+4b^2+9c^2+4ab+6ac+12bc$.",
-                True,
-                r"""Twice the pairwise products are
-$$2\cdot a\cdot 2b=4ab,\quad 2\cdot a\cdot 3c=6ac,\quad 2\cdot 2b\cdot 3c=12bc,$$
-together with $a^2+4b^2+9c^2$. The displayed expansion matches.""",
-            ),
-            (
-                "Factoring $x^2-x-6$ as $(x-2)(x+3)$ is posted as an identity.",
-                False,
-                r"""$(x-2)(x+3)=x^2+x-6$. The correct factorisation of $x^2-x-6$ is
-$$(x-3)(x+2).$$
-The constant terms $-2$ and $+3$ have been swapped relative to the needed $-3$ and $+2$.""",
-            ),
-            (
-                r"Cancelling $\dfrac{x^2+5x+6}{x+2}$ down to $x+2$ is claimed for $x\neq -2$.",
-                False,
-                r"""$$x^2+5x+6=(x+2)(x+3),$$
-so the quotient is $x+3$, not $x+2$. The printed right-hand side repeats the cancelled factor instead of the remaining one.""",
-            ),
-            (
-                r"Reducing $64^{-1/3}$ to $\dfrac{1}{4}$ is treated as correct.",
-                True,
-                r"""$64=4^3=2^6$, so
-$$64^{-1/3}=\frac{1}{64^{1/3}}=\frac{1}{4}.$$""",
-            ),
-            (
-                "Omitting the bars around $2x+4$ and writing $2x+4$ for every real $x$ is offered as an identity.",
-                False,
-                r"""Pull out the positive factor $2$:
-$$|2x+4|=2|x+2|.$$
-This equals $2x+4$ only on $x\ge -2$. At $x=-3$,
-$$|2(-3)+4|=|-2|=2,\qquad 2(-3)+4=-2.$$""",
-            ),
-        ],
-        overview="Five independent map-legend claims: $(a+2b+3c)^2$, the factors of $x^2-x-6$, cancelling $(x+2)(x+3)/(x+2)$, $64^{-1/3}=1/4$, and $|2x+4|$ versus $2x+4$.",
-    ),
-    task(
-        title="Beekeeper's log of forms",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A beekeeper’s log never solves a quadratic for the hive pair $(p,q)$. It only stores $p+q=4$ and $pq=1$, then five mixed remarks: a sum of cubes, a Vieta factorisation check, a sum of reciprocal squares, an AM–GM-looking square root, and an absolute difference read without a root. Remarks are independent.",
-        items=[
-            (
-                "Evaluating $p^3+q^3$ from the stored sum and product as $52$ is treated as correct.",
-                True,
-                r"""The elementary identity is
-$$p^3+q^3=(p+q)^3-3pq(p+q)=64-3\cdot 1\cdot 4=64-12=52.$$
-Equivalently $p^3+q^3=(p+q)(p^2-pq+q^2)$ with $p^2+q^2=(p+q)^2-2pq=14$, so $p^2-pq+q^2=14-1=13$ and $4\cdot 13=52$.""",
-            ),
-            (
-                "Factoring $X^2-4X+1$ as $(X-p)(X-q)$ is accepted from Vieta’s formulae alone.",
-                True,
-                r"""$$(X-p)(X-q)=X^2-(p+q)X+pq=X^2-4X+1.$$
-The discriminant $16-4=12$ is not needed to write the factorisation in letters $p$ and $q$.""",
-            ),
-            (
-                r"Adding the reciprocal squares is claimed to give $\dfrac{1}{p^2}+\dfrac{1}{q^2}=14$.",
-                True,
-                r"""$$\frac{1}{p^2}+\frac{1}{q^2}=\frac{p^2+q^2}{p^2q^2}=\frac{(p+q)^2-2pq}{(pq)^2}=\frac{16-2}{1}=14.$$""",
-            ),
-            (
-                r"Identifying $\sqrt{pq}$ with $\dfrac{p+q}{2}$ is said to give the common value $2$.",
-                False,
-                r"""The geometric mean of the product is
-$$\sqrt{pq}=\sqrt{1}=1,$$
-while the arithmetic mean is
-$$\frac{p+q}{2}=2.$$
-Those two numbers coincide only if $p=q$, which would force $pq=4$, contradicting $pq=1$.""",
-            ),
-            (
-                "Reading $|p-q|$ as $12$ from $(p-q)^2=12$ is treated as correct.",
-                False,
-                r"""$$(p-q)^2=(p+q)^2-4pq=16-4=12,$$
-so $|p-q|=\sqrt{12}=2\sqrt{3}$, not $12$.""",
-            ),
-        ],
-        overview="Five independent log remarks for $p+q=4$ and $pq=1$: $p^3+q^3=52$, the Vieta quadratic $X^2-4X+1$, $1/p^2+1/q^2=14$, $\\sqrt{pq}$ versus the arithmetic mean, and $|p-q|=2\\sqrt{3}$.",
-    ),
-    task(
-        title="Fencing-club drill sheet",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A fencing club’s drill sheet prints five mixed algebra lines in the unused column: a completed square in an absolute value, a cancelled sum of cubes, a three-term square, a difference of fourth powers, and a product-power slogan. Footwork counts are not algebraic data.",
-        items=[
-            (
-                r"Completing $|x|^2+2|x|+1$ as $\bigl(|x|+1\bigr)^2$ is claimed as an identity.",
-                True,
-                r"""Set $t=|x|\ge 0$. Then
-$$t^2+2t+1=(t+1)^2=\bigl(|x|+1\bigr)^2.$$""",
-            ),
-            (
-                r"Cancelling $\dfrac{x^3+y^3}{x+y}$ down to $x^2-xy+y^2$ is claimed for $x\neq -y$.",
-                True,
-                r"""$$x^3+y^3=(x+y)(x^2-xy+y^2),$$
-so the quotient is $x^2-xy+y^2$ whenever $x\neq -y$.""",
-            ),
-            (
-                "Expanding $(x+y-2z)^2$ is written as $x^2+y^2+4z^2+2xy-4xz-4yz$.",
-                True,
-                r"""The pairwise products are
-$$2xy+2x(-2z)+2y(-2z)=2xy-4xz-4yz,$$
-together with $x^2+y^2+4z^2$. The displayed polynomial matches.""",
-            ),
-            (
-                "Factoring $x^4-1$ as $(x-1)(x^3-1)$ is posted as an identity.",
-                False,
-                r"""$(x-1)(x^3-1)=x^4-x-x^3+1$, not $x^4-1$. The correct first split is a difference of squares:
-$$x^4-1=(x^2-1)(x^2+1)=(x-1)(x+1)(x^2+1).$$""",
-            ),
-            (
-                "Rewriting $(ab)^{m+n}$ as $a^mb^n$ is treated as an identity for $a,b>0$.",
-                False,
-                r"""The power of a product is
-$$(ab)^{m+n}=a^{m+n}b^{m+n}.$$
-The printed $a^mb^n$ matches $(ab)^{m+n}$ only in special cases, not identically. For $m=n=1$ one would need $ab=(ab)^2$ for all positive $a,b$, which fails.""",
-            ),
-        ],
-        overview="Five independent drill-sheet lines: $\\bigl(|x|+1\\bigr)^2$, $(x^3+y^3)/(x+y)$, $(x+y-2z)^2$, $x^4-1$ versus $(x-1)(x^3-1)$, and $(ab)^{m+n}$ versus $a^mb^n$.",
-    ),
-    task(
-        title="Stonemason's proportion book",
-        subsection="2.5",
-        difficulty="5/5",
-        context="A stonemason’s proportion book lists five mixed identities beside ratio sketches: a reverse difference of cubes, a scaled difference of squares, a difference of reciprocal-looking terms, a real cube root of a monomial quotient, and an absolute value of a quotient. Sketches are not a shared numerical example.",
-        items=[
-            (
-                "Expanding $(a-b)(a^2+ab+b^2)$ is said to recover $a^3-b^3$.",
-                True,
-                r"""This is the difference-of-cubes identity read from right to left:
-$$(a-b)(a^2+ab+b^2)=a^3-b^3.$$""",
-            ),
-            (
-                "Factoring $12x^2-3$ as $3(2x-1)(2x+1)$ is accepted as an identity.",
-                True,
-                r"""$$12x^2-3=3(4x^2-1)=3(2x-1)(2x+1).$$""",
-            ),
-            (
-                r"Clearing $\dfrac{a}{b}-\dfrac{b}{a}$ to $\dfrac{a-b}{ab}$ is claimed for $ab\neq 0$.",
-                False,
-                r"""A common denominator $ab$ produces
-$$\frac{a^2-b^2}{ab}=\frac{(a-b)(a+b)}{ab}.$$
-The printed numerator $a-b$ belongs to $\dfrac{1}{b}-\dfrac{1}{a}$, a different difference.""",
-            ),
-            (
-                r"Simplifying $\sqrt[3]{a^9b^{-3}}$ to $\dfrac{a^3}{b}$ is claimed for all real $a$ and all $b\neq 0$.",
+                r"Extracting the real cube root $\sqrt[3]{-125j^6}$ is claimed to equal $-5j^2$ for every real $j$.",
                 True,
                 r"""The real cube root splits:
-$$\sqrt[3]{a^9b^{-3}}=\sqrt[3]{a^9}\,\sqrt[3]{b^{-3}}=a^3\cdot\frac{1}{b}=\frac{a^3}{b},$$
-since $a^9=(a^3)^3$ and $b^{-3}=1/b^3$ with $\sqrt[3]{1/b^3}=1/b$.""",
+$$\sqrt[3]{-125j^6}=\sqrt[3]{-125}\,\sqrt[3]{j^6}=-5\cdot j^2,$$
+because $j^6=(j^2)^3$ with $j^2\ge 0$. No absolute value is needed on $j^2$.""",
             ),
             (
-                r"Writing $\bigl|\dfrac{a}{b}\bigr|$ as $\dfrac{|a|}{b}$ is offered as an identity for $b\neq 0$.",
+                r"Restricting to negative $s$, the quotient $|s|/s$ is claimed to equal $1$.",
                 False,
-                r"""The correct rule is
-$$\biggl|\frac{a}{b}\biggr|=\frac{|a|}{|b|}.$$
-Dropping the bars on $b$ fails whenever $b<0$: for $a=1$ and $b=-2$,
-$$\biggl|\frac{1}{-2}\biggr|=\frac{1}{2},\qquad \frac{|1|}{-2}=-\frac{1}{2}.$$""",
+                r"""On $s<0$ one has $|s|=-s$, so
+$$\frac{|s|}{s}=\frac{-s}{s}=-1.$$
+The printed value $1$ is the formula that holds on $s>0$, not on the stated half-line.""",
+            ),
+            (
+                r"Reading the distance $|r-s|$ from $r+s=14$ and $rs=13$ as $14$ is treated as correct.",
+                False,
+                r"""$$(r-s)^2=(r+s)^2-4rs=196-52=144,$$
+so $|r-s|=\sqrt{144}=12$, not $14$. The printed $14$ copies the stored sum instead of taking the square root of $144$.""",
             ),
         ],
-        overview="Five independent proportion-book identities: the reverse of $a^3-b^3$, a scaled difference of squares, $\\frac{a}{b}-\\frac{b}{a}$ versus $\\frac{a-b}{ab}$, a real cube root of $a^9b^{-3}$, and $|a/b|=|a|/|b|$.",
+        overview=r"Independent claims: the $gh$ coefficient $-4$ in $(f-g+2h)^2$, $k/m-m/k$ checked at $(5,3)$, $\sqrt[3]{-125j^6}=-5j^2$, $|s|/s=-1$ on $s<0$, and $|r-s|=12$ rather than $14$.",
     ),
     task(
-        title="Lighthouse keeper's log",
+        title="Leftover factor mistaken for a remainder",
         subsection="2.5",
-        difficulty="5/5",
-        context="A lighthouse keeper’s log contains five mixed algebra remarks written on different nights: a cancelled linear-over-quadratic, a three-term square, a cubed binomial, a negative rational exponent, and a squared absolute value. Nightly weather figures are not substituted into the algebra.",
+        difficulty="4/5",
+        context=CTX,
         items=[
             (
-                r"Cancelling $\dfrac{x-4}{x^2-16}$ down to $\dfrac{1}{x+4}$ is claimed for $x\neq\pm 4$.",
-                True,
-                r"""$$x^2-16=(x-4)(x+4),$$
-so for $x\neq 4$
-$$\frac{x-4}{(x-4)(x+4)}=\frac{1}{x+4},$$
-and $x\neq -4$ keeps the remaining denominator nonzero.""",
-            ),
-            (
-                "Expanding $(2x-y-3)^2$ is written as $4x^2+y^2+9-4xy-12x+6y$.",
-                True,
-                r"""The pairwise products are
-$$2\cdot 2x\cdot(-y)=-4xy,\quad 2\cdot 2x\cdot(-3)=-12x,\quad 2\cdot(-y)\cdot(-3)=6y,$$
-together with $4x^2+y^2+9$. The displayed polynomial matches.""",
-            ),
-            (
-                "Factoring $x^3+3x^2+3x+1$ as $(x+1)^3$ is posted as an identity.",
-                True,
-                r"""The binomial formula gives
-$$(x+1)^3=x^3+3x^2+3x+1.$$
-The coefficients $1,3,3,1$ are the third row of Pascal’s triangle.""",
-            ),
-            (
-                r"Reducing $8^{-2/3}$ to $\dfrac{1}{4}$ is treated as correct.",
-                True,
-                r"""$$8^{-2/3}=\frac{1}{8^{2/3}}=\frac{1}{(2^3)^{2/3}}=\frac{1}{2^2}=\frac{1}{4}.$$""",
-            ),
-            (
-                "Expanding $|x+1|^2$ as $x^2+1$ is offered as an identity.",
+                r"The coefficient of $fg$ in the expansion of $(2f+3g-h)^2$ is claimed to be $5$.",
                 False,
-                r"""Because $|t|^2=t^2$ for $t=x+1$,
-$$|x+1|^2=(x+1)^2=x^2+2x+1.$$
-The printed $x^2+1$ drops the cross term $2x$.""",
+                r"""Twice the $f$--$g$ product is
+$$2\cdot(2f)\cdot(3g)=12fg.$$
+The printed $5$ looks like a sum of the visible coefficients $2$ and $3$, not the doubled product.""",
+            ),
+            (
+                r"Cancelling a cubic against a difference of squares, $\dfrac{h^3-16h}{h^2-16}$ is said to equal $h$ for $h\neq\pm 4$.",
+                True,
+                r"""Factor $h$ from the numerator:
+$$\frac{h(h^2-16)}{h^2-16}=h\qquad(h^2\neq 16).$$
+The common factor $h^2-16$ cancels on the stated domain.""",
+            ),
+            (
+                r"Simplifying the radical $\sqrt{16j^2}$ to $4j$ is asserted for every real $j$.",
+                False,
+                r"""$$\sqrt{16j^2}=4\sqrt{j^2}=4|j|.$$
+Writing $4j$ fails as soon as $j<0$: at $j=-1$ the left-hand side is $4$ while $4j=-4$.""",
+            ),
+            (
+                r"On the positive half-line $\ell>0$, the quotient $|2\ell|/\ell$ equals $2$.",
+                True,
+                r"""For $\ell>0$ one has $|2\ell|=2\ell$, hence
+$$\frac{|2\ell|}{\ell}=2.$$
+The quotient is the piecewise constant $2$ on that half-line (and equals $-2$ on $\ell<0$).""",
+            ),
+            (
+                r"Factoring the biquadratic $n^4+64$ as $(n^2+4n+8)(n^2-4n+8)$ is offered as an identity.",
+                True,
+                r"""This is Sophie Germain's identity with a scaled second letter: $n^4+4\cdot 2^4=n^4+64$. Adding and subtracting $16n^2$ gives
+$$n^4+64=(n^2+8)^2-(4n)^2=(n^2-4n+8)(n^2+4n+8).$$""",
             ),
         ],
-        overview="Five independent log remarks: cancelling $(x-4)/(x^2-16)$, $(2x-y-3)^2$, $(x+1)^3$, $8^{-2/3}=1/4$, and $|x+1|^2=(x+1)^2$.",
+        overview=r"Five unlinked lines: a guessed $fg$ coefficient $5$ instead of $12$, $(h^3-16h)/(h^2-16)=h$, $\sqrt{16j^2}=4|j|$, $|2\ell|/\ell=2$ on $\ell>0$, and $n^4+64$ factored by a scaled Sophie-Germain step.",
     ),
     task(
-        title="Exam-coach five-skill drill",
+        title="Middle-sign error in a sum of cubes",
         subsection="2.5",
         difficulty="5/5",
-        context="An exam coach’s five-skill drill prints one expanding claim, one factoring claim, one rational claim, one power claim, and one absolute-value claim as five separate sentences. The coach explicitly warns that the five sentences do not share a figure, a pair of letters, or a common calculation.",
+        context=CTX,
         items=[
             (
-                "Factoring $a^3+b^3+c^3-3abc$ as $(a+b+c)(a^2+b^2+c^2-ab-bc-ca)$ is printed as an identity.",
+                r"After expanding $(f+g-4h)^2$, the coefficient of $fh$ is read off as $-8$.",
                 True,
-                r"""This is the standard three-letter cube identity. Expanding the product,
-$$(a+b+c)(a^2+b^2+c^2-ab-bc-ca)=a^3+b^3+c^3-3abc.$$
-The cubic terms survive and the mixed quadratic products arrange so that the remainder is $-3abc$.""",
+                r"""Twice the $f$--$h$ product is
+$$2\cdot f\cdot(-4h)=-8fh.$$
+The collected coefficient is $-8$.""",
             ),
             (
-                "Expanding $(a+b+c)^3$ as $a^3+b^3+c^3+3abc$ is treated as an identity.",
+                r"Reducing the sum-of-cubes quotient $\dfrac{n^3+2744}{n+14}$ to $n^2+14n+196$ for $n\neq -14$ is treated as an identity.",
                 False,
-                r"""The full expansion is
-$$(a+b+c)^3=a^3+b^3+c^3+3(a+b+c)(ab+bc+ca)-3abc.$$
-The printed $a^3+b^3+c^3+3abc$ retains only a fragment. For $a=b=c=1$ the left side is $27$ and the printed right side is $6$.""",
+                r"""Sum of cubes uses
+$$n^3+14^3=(n+14)(n^2-14n+196).$$
+The printed middle sign $+14n$ belongs to a difference of cubes, not a sum. Expanding the printed quadratic against $n+14$ produces extra linear terms instead of cancelling them.""",
             ),
             (
-                r"Clearing $\dfrac{1}{a}+\dfrac{1}{b}+\dfrac{1}{c}$ to $\dfrac{bc+ca+ab}{abc}$ is claimed whenever $abc\neq 0$.",
+                r"Matching positive roots, $\sqrt{13+4\sqrt{3}}$ is identified with $1+2\sqrt{3}$.",
                 True,
-                r"""A common denominator $abc$ produces
-$$\frac{bc}{abc}+\frac{ca}{abc}+\frac{ab}{abc}=\frac{bc+ca+ab}{abc}.$$""",
+                r"""$$(1+2\sqrt{3})^2=1+4\sqrt{3}+12=13+4\sqrt{3}.$$
+Both sides are positive, so the principal square roots match. The conjugate $2\sqrt{3}-1$ squares to $13-4\sqrt{3}$.""",
             ),
             (
-                r"Simplifying $\sqrt[3]{8x^6y^{-3}}$ to $\dfrac{2x^2}{y}$ is claimed for all real $x$ and all $y\neq 0$.",
+                r"For every real $t\neq 13$, the quotient $\dfrac{|t-13|}{|13-t|}$ equals $1$.",
                 True,
-                r"""The real cube root splits:
-$$\sqrt[3]{8}\,\sqrt[3]{x^6}\,\sqrt[3]{y^{-3}}=2\cdot x^2\cdot\frac{1}{y}=\frac{2x^2}{y},$$
-because $x^6=(x^2)^3$ and $\sqrt[3]{y^{-3}}=1/y$.""",
+                r"""Opposite insides have the same absolute value:
+$$|13-t|=|t-13|,$$
+so the quotient of those two nonnegative quantities is $1$ wherever it is defined.""",
             ),
             (
-                "Splitting $|a-b-c|$ as $|a|-|b|-|c|$ is proposed as an identity.",
+                r"Treating the vanishing of $u+v+w$ at $u=1$, $v=14$, $w=-15$ as forcing $u^3+v^3+w^3=0$ is proposed.",
                 False,
-                r"""Absolute value is not linear. For $a=0$, $b=1$, $c=1$,
-$$|-2|=2,\qquad |0|-|1|-|1|=-2.$$
-The genuine comparison is $|a-b-c|\le |a|+|b|+|c|$.""",
+                r"""The letters sum to $0$, hence $u^3+v^3+w^3=3uvw$:
+$$3\cdot 1\cdot 14\cdot(-15)=-630.$$
+Directly, $1+2744-3375=-630$. The cubes equal $3uvw$, not $0$.""",
             ),
         ],
-        overview="Five independent coach-drill sentences: the factorisation of $a^3+b^3+c^3-3abc$, the missing terms in $(a+b+c)^3$, a sum of three reciprocals, a real cube root of $8x^6y^{-3}$, and the failure of $|a-b-c|=|a|-|b|-|c|$.",
+        overview=r"Independent claims: the $fh$ coefficient $-8$ in $(f+g-4h)^2$, the middle sign in $(n^3+14^3)/(n+14)$, $\sqrt{13+4\sqrt{3}}=1+2\sqrt{3}$, $|t-13|/|13-t|=1$, and $u^3+v^3+w^3=3uvw$ at $(1,14,-15)$.",
+    ),
+    task(
+        title="Grouped four-term product on a mixed card",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"Grouping the four-term polynomial $fg+11f+13g+143$ as $(f+13)(g+11)$ is offered as an identity.",
+                True,
+                r"""Factor by grouping:
+$$fg+11f+13g+143=f(g+11)+13(g+11)=(f+13)(g+11),$$
+using $13\cdot 11=143$. Distributing the right-hand side recovers the original four terms.""",
+            ),
+            (
+                r"Clearing the nested remainder $1-\dfrac{1}{1+\dfrac{1}{j}}$ is said to leave $\dfrac{1}{j+1}$ for $j\neq 0$ and $j\neq -1$.",
+                True,
+                r"""Innermost, $1+1/j=(j+1)/j$, so $1/(1+1/j)=j/(j+1)$. Then
+$$1-\frac{j}{j+1}=\frac{1}{j+1}.$$""",
+            ),
+            (
+                r"Reducing the power $16^{3/4}$ to the integer $4$ is treated as correct.",
+                False,
+                r"""$$16^{3/4}=(2^4)^{3/4}=2^3=8.$$
+The printed $4$ is $16^{1/2}$, a different rational power.""",
+            ),
+            (
+                r"Identifying the sum $|k+m|$ with $|k|+|m|$ identically on the mixed-sign region $k>0$, $m<0$ is proposed.",
+                False,
+                r"""The triangle inequality $|k+m|\le |k|+|m|$ becomes equality only when $k$ and $m$ have the same sign (or one vanishes). On $k>0$ and $m<0$ take $k=3$ and $m=-1$:
+$$|k+m|=2,\qquad |k|+|m|=4.$$
+The two sides are not identically equal on that region.""",
+            ),
+            (
+                r"Given the elementary data $r+s=21$ and $rs=35$, the sum $r^2+s^2$ is evaluated as $371$.",
+                True,
+                r"""$$r^2+s^2=(r+s)^2-2rs=441-70=371.$$
+Dropping $-2rs$ would have left the distractor $441$.""",
+            ),
+        ],
+        overview=r"Unlinked claims: grouping $fg+11f+13g+143$, a nested unit remainder $1/(j+1)$, $16^{3/4}=8$ rather than $4$, the triangle inequality on mixed signs, and $r^2+s^2=371$.",
+    ),
+    task(
+        title="Quadratic remainder beside a cube-root monomial",
+        subsection="2.5",
+        difficulty="4/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the trinomial $(2f-g+h)^2$ is written with the coefficient of $gh$ equal to $+2$.",
+                False,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-g)\cdot h=-2gh.$$
+The printed $+2$ has the wrong sign.""",
+            ),
+            (
+                r"Cancelling a visible linear factor, $\dfrac{j^2-35j+300}{j-15}$ is said to leave $j-20$ for $j\neq 15$.",
+                True,
+                r"""The numerator is $(j-15)(j-20)$ because $15+20=35$ and $15\cdot 20=300$. For $j\neq 15$ the quotient is $j-20$.""",
+            ),
+            (
+                r"Extracting a cube root, $\sqrt[3]{8s^6}$ is simplified to $2s^2$ for every real $s$.",
+                True,
+                r"""$$\sqrt[3]{8s^6}=\sqrt[3]{8}\,\sqrt[3]{s^6}=2s^2,$$
+because $s^6=(s^2)^3$ with $s^2\ge 0$.""",
+            ),
+            (
+                r"Treating the sign quotient $|\ell|/\ell$ as identically $1$ for every $\ell\neq 0$ is proposed.",
+                False,
+                r"""The quotient equals $+1$ on $\ell>0$ and $-1$ on $\ell<0$. At $\ell=-2$ one has $2/(-2)=-1\neq 1$. The identity is only piecewise constant.""",
+            ),
+            (
+                r"Adding the reciprocals from $k+m=11$ and $km=13$ is claimed to give $1/k+1/m=11/13$.",
+                True,
+                r"""$$\frac{1}{k}+\frac{1}{m}=\frac{k+m}{km}=\frac{11}{13}.$$""",
+            ),
+        ],
+        overview=r"Five independent lines: a wrong-sign $gh$ coefficient, the remainder $j-20$, $\sqrt[3]{8s^6}=2s^2$, $|\ell|/\ell$ only piecewise $1$, and $1/k+1/m=11/13$.",
+    ),
+    task(
+        title="Nested bars stripped on a short interval",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $fg$ in the expansion of $(3f-g-2h)^2$ is recorded as $-6$.",
+                True,
+                r"""Twice the $f$--$g$ product is
+$$2\cdot(3f)\cdot(-g)=-6fg.$$
+The collected coefficient is $-6$.""",
+            ),
+            (
+                r"Reducing the cubic $\dfrac{w^3-2197}{w-13}$ to $w^2+169$ for $w\neq 13$ is treated as an identity after a check at $w=0$ gives $169$ on both sides.",
+                False,
+                r"""Since $2197=13^3$,
+$$\frac{w^3-2197}{w-13}=w^2+13w+169\qquad(w\neq 13).$$
+Dropping $13w$ leaves $w^2+169$. At $w=0$ the missing term vanishes, but at $w=1$ the genuine remainder is $183$ while $1+169=170$.""",
+            ),
+            (
+                r"Denesting the radicand $\sqrt{11+6\sqrt{2}}$ is claimed to equal $3+\sqrt{2}$.",
+                True,
+                r"""$$(3+\sqrt{2})^2=9+6\sqrt{2}+2=11+6\sqrt{2}.$$
+Both $3+\sqrt{2}$ and the principal square root are positive, so they are equal. The conjugate $3-\sqrt{2}$ squares to $11-6\sqrt{2}$.""",
+            ),
+            (
+                r"Stripping nested bars, $\bigl||k|-15\bigr|$ is rewritten as $|k|-15$ for every real $k$.",
+                False,
+                r"""The identity $\bigl||k|-15\bigr|=|k|-15$ requires $|k|\ge 15$. For $k=0$,
+$$\bigl||0|-15\bigr|=15,\qquad |0|-15=-15.$$
+The printed stripping fails throughout $|k|<15$.""",
+            ),
+            (
+                r"Given the sums $r+s=13$ and $rs=14$, the sum of squares $r^2+s^2$ is claimed to equal $169$.",
+                False,
+                r"""$$r^2+s^2=(r+s)^2-2rs=169-28=141.$$
+The printed $169$ is $(r+s)^2$ with $-2rs$ dropped.""",
+            ),
+        ],
+        overview=r"Unlinked claims: the $fg$ coefficient $-6$ in $(3f-g-2h)^2$, a cubic remainder that matches only at $0$, $\sqrt{11+6\sqrt{2}}=3+\sqrt{2}$, nested bars that cannot be stripped, and $r^2+s^2=141$ rather than $169$.",
+    ),
+    task(
+        title="Unsigned cube from a stacked square",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the square $(f+2g+h)^2$ is written with the coefficient of $gh$ equal to $2$.",
+                False,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(2g)\cdot h=4gh.$$
+The printed $2$ forgot to double. The collected coefficient is $4$.""",
+            ),
+            (
+                r"Cancelling a difference of fourth powers, $\dfrac{j^4-1}{j^2-1}$ is said to leave $j^2+1$ whenever $j\neq\pm 1$.",
+                True,
+                r"""$$j^4-1=(j^2-1)(j^2+1),$$
+so the quotient is $j^2+1$ on $j^2\neq 1$.""",
+            ),
+            (
+                r"Raising the stacked power $(s^2)^{3/2}$ is claimed to equal $s^3$ for every real $s$.",
+                False,
+                r"""$$(s^2)^{3/2}=|s|^3.$$
+At $s=-2$ the left-hand side is $8$ while $s^3=-8$. The unsigned cube $|s|^3$ is the correct real value.""",
+            ),
+            (
+                r"Pulling a positive factor, $|2t-32|$ is rewritten as $2|t-16|$ for every real $t$.",
+                True,
+                r"""$$|2t-32|=|2(t-16)|=2|t-16|.$$
+No sign restriction on $t$ is required.""",
+            ),
+            (
+                r"Completing the square, $k^4+4m^4$ is identified with $(k^2+2m^2)^2$ as an identity in $k$ and $m$.",
+                False,
+                r"""$$(k^2+2m^2)^2=k^4+4k^2m^2+4m^4.$$
+The extra middle term $4k^2m^2$ is precisely what Sophie Germain's identity subtracts before factoring as a difference of squares. The two polynomials agree only when $km=0$.""",
+            ),
+        ],
+        overview=r"Independent claims: a forgotten doubling of $gh$, $(j^4-1)/(j^2-1)=j^2+1$, $(s^2)^{3/2}=|s|^3$, $|2t-32|=2|t-16|$, and $(k^2+2m^2)^2$ versus $k^4+4m^4$.",
+    ),
+    task(
+        title="Inflated denesting of sixteen plus a surd",
+        subsection="2.5",
+        difficulty="4/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $fg$ in the expansion of $(f-3g-h)^2$ is recorded as $-6$.",
+                True,
+                r"""Twice the $f$--$g$ product is
+$$2\cdot f\cdot(-3g)=-6fg.$$
+The collected coefficient is $-6$.""",
+            ),
+            (
+                r"After cancelling, $\dfrac{h^2-16h+63}{h-7}$ equals $h-9$ for $h\neq 7$.",
+                True,
+                r"""The numerator is $(h-7)(h-9)$ because $7+9=16$ and $7\cdot 9=63$. For $h\neq 7$ the quotient is $h-9$.""",
+            ),
+            (
+                r"Denesting the nested radical $\sqrt{16+2\sqrt{15}}$ is claimed to equal $2+\sqrt{15}$.",
+                False,
+                r"""$$(2+\sqrt{15})^2=4+4\sqrt{15}+15=19+4\sqrt{15}\neq 16+2\sqrt{15}.$$
+The genuine denesting is $1+\sqrt{15}$, whose square is $1+2\sqrt{15}+15=16+2\sqrt{15}$. Inflating the constant from $1$ to $2$ breaks the identity.""",
+            ),
+            (
+                r"Treating the quotient $|k|/k$ as identically $-1$ for every $k\neq 0$ is proposed.",
+                False,
+                r"""The quotient equals $-1$ only on $k<0$. For $k=2$ one has $|2|/2=1\neq -1$. The value is piecewise constant, not a single constant on $k\neq 0$.""",
+            ),
+            (
+                r"Reading the gap $|u-v|$ from $u+v=16$ and $uv=21$ as $16$ is treated as correct.",
+                False,
+                r"""$$(u-v)^2=(u+v)^2-4uv=256-84=172,$$
+so $|u-v|=\sqrt{172}=2\sqrt{43}$, not $16$. The printed $16$ copies the stored sum.""",
+            ),
+        ],
+        overview=r"Five unlinked lines: the $fg$ coefficient $-6$ in $(f-3g-h)^2$, the remainder $h-9$, an inflated denesting of $\sqrt{16+2\sqrt{15}}$, $|k|/k$ only piecewise $-1$, and $|u-v|=\sqrt{172}$ rather than $16$.",
+    ),
+    task(
+        title="Compound ratio reciprocal trap",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the trinomial $(f+2g-5h)^2$ is written with the coefficient of $fh$ equal to $+10$.",
+                False,
+                r"""Twice the $f$--$h$ product is
+$$2\cdot f\cdot(-5h)=-10fh.$$
+The printed $+10$ has the wrong sign.""",
+            ),
+            (
+                r"Rewriting the compound ratio $\dfrac{1+\dfrac{j}{k}}{1-\dfrac{j}{k}}$ as $\dfrac{k-j}{k+j}$ is claimed for $k\neq 0$ and $k\neq j$.",
+                False,
+                r"""$$1+\frac{j}{k}=\frac{k+j}{k},\qquad 1-\frac{j}{k}=\frac{k-j}{k},$$
+so the stack equals $(k+j)/(k-j)$. The printed form is the reciprocal of the correct simplification.""",
+            ),
+            (
+                r"Cubing the two-thirds power, $\bigl(t^{2/3}\bigr)^3$ is said to equal $t^2$ for every real $t$.",
+                True,
+                r"""In the reals, $t^{2/3}=|t|^{2/3}$, hence
+$$\bigl(|t|^{2/3}\bigr)^3=|t|^2=t^2.$$
+Equivalently $\bigl((t^{1/3})^2\bigr)^3=(t^{1/3})^6=t^2$ wherever the real cube root is used.""",
+            ),
+            (
+                r"On the open interval $-15<\ell<15$, the sum $|\ell+15|+|\ell-15|$ equals $30$.",
+                True,
+                r"""Inside $|\ell|<15$ the insides have opposite signs, and
+$$|\ell+15|+|\ell-15|=(\ell+15)+(15-\ell)=30.$$
+The sum is the piecewise constant $30$ on that interval (and equals $2|\ell|$ outside).""",
+            ),
+            (
+                r"Recording the cubes at $r=3$, $s=8$, $t=-11$ (which sum to $0$) as $r^3+s^3+t^3=0$ is proposed.",
+                False,
+                r"""The letters sum to $0$, so $r^3+s^3+t^3=3rst$:
+$$3\cdot 3\cdot 8\cdot(-11)=-792.$$
+Directly, $27+512-1331=-792$. The cubes do not vanish.""",
+            ),
+        ],
+        overview=r"Unlinked claims: a wrong-sign $fh$ coefficient, a reciprocal trap in $(1+j/k)/(1-j/k)$, $(t^{2/3})^3=t^2$, the piecewise constant $30$ of $|\ell\pm 15|$ inside $(-15,15)$, and $r^3+s^3+t^3=-792$ at $(3,8,-11)$.",
+    ),
+    task(
+        title="Dropped bars on a two-letter quotient",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $gh$ in the expansion of $(4f-g-h)^2$ is recorded as $2$.",
+                True,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-g)\cdot(-h)=2gh.$$
+The two minus signs make that cross term positive, with coefficient $2$.""",
+            ),
+            (
+                r"Reducing the quadratic $\dfrac{m^2-15m+56}{m-7}$ to $m-7$ for $m\neq 7$ is treated as an identity.",
+                False,
+                r"""The numerator is $(m-7)(m-8)$ because $7+8=15$ and $7\cdot 8=56$. For $m\neq 7$ the quotient is $m-8$. The printed remainder repeats the cancelled factor.""",
+            ),
+            (
+                r"Simplifying the power $16^{5/4}$ is treated as producing the integer $8$.",
+                False,
+                r"""$$16^{5/4}=(2^4)^{5/4}=2^5=32.$$
+The printed $8$ is $16^{3/4}$, a different rational power.""",
+            ),
+            (
+                r"Writing the quotient $\bigl|\dfrac{r}{s}\bigr|$ as $\dfrac{|r|}{|s|}$ for $s\neq 0$ is accepted.",
+                True,
+                r"""Absolute value splits over a quotient:
+$$\biggl|\frac{r}{s}\biggr|=\frac{|r|}{|s|}.$$
+Dropping the bars on $s$ alone would fail for $s<0$.""",
+            ),
+            (
+                r"Given the elementary data $k+m=11$ and $km=21$, the sum $k^2+m^2$ is claimed to equal $121$.",
+                False,
+                r"""$$k^2+m^2=(k+m)^2-2km=121-42=79.$$
+The printed $121$ is $(k+m)^2$ with $-2km$ dropped.""",
+            ),
+        ],
+        overview=r"Independent claims: the $gh$ coefficient $2$ in $(4f-g-h)^2$, a cancelled-factor leftover $m-7$ instead of $m-8$, $16^{5/4}=32$ rather than $8$, $|r/s|=|r|/|s|$, and $k^2+m^2=79$ rather than $121$.",
+    ),
+    task(
+        title="Single-point check of a fourth-power split",
+        subsection="2.5",
+        difficulty="4/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the square $(f-g+3h)^2$ is written with the coefficient of $fh$ equal to $3$.",
+                False,
+                r"""Twice the $f$--$h$ product is
+$$2\cdot f\cdot(3h)=6fh.$$
+The printed $3$ forgot to double.""",
+            ),
+            (
+                r"Cancelling a difference of squares, $\dfrac{j^2-121}{j-11}$ is said to leave $j+11$ for $j\neq 11$, and substituting $j=0$ recovers $11$ on both sides.",
+                True,
+                r"""$$j^2-121=(j-11)(j+11),$$
+so the quotient is $j+11$ for $j\neq 11$. At $j=0$ the original fraction is $(-121)/(-11)=11$, matching the reduced value.""",
+            ),
+            (
+                r"Matching positive roots, $\sqrt{16+2\sqrt{15}}$ is identified with $1+\sqrt{15}$.",
+                True,
+                r"""$$(1+\sqrt{15})^2=1+2\sqrt{15}+15=16+2\sqrt{15}.$$
+Both sides are positive, so the principal square roots match.""",
+            ),
+            (
+                r"Dropping the bars around $2\ell+16$ and writing $2\ell+16$ for every real $\ell$ is offered as an identity.",
+                False,
+                r"""$$|2\ell+16|=2|\ell+8|.$$
+This equals $2\ell+16$ only on $\ell\ge -8$. At $\ell=-10$,
+$$|2(-10)+16|=|-4|=4,\qquad 2(-10)+16=-4.$$""",
+            ),
+            (
+                r"Squaring a single Sophie-Germain factor, $n^4+4m^4$ is identified with $(n^2+2nm+2m^2)^2$.",
+                False,
+                r"""$$(n^2+2nm+2m^2)^2=n^4+4n^3m+8n^2m^2+8nm^3+4m^4,$$
+which contains odd powers. The genuine factorisation multiplies by the conjugate $n^2-2nm+2m^2$, cancelling those odd terms and recovering $n^4+4m^4$.""",
+            ),
+        ],
+        overview=r"Five unlinked lines: a forgotten doubling of $fh$, $(j^2-121)/(j-11)=j+11$ checked at $0$, $\sqrt{16+2\sqrt{15}}=1+\sqrt{15}$, $|2\ell+16|$ versus $2\ell+16$, and the square of one Sophie-Germain factor.",
+    ),
+    task(
+        title="Continued nest written as its reciprocal",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $fg$ in the expansion of $(f-5g+h)^2$ is recorded as $-10$.",
+                True,
+                r"""Twice the $f$--$g$ product is
+$$2\cdot f\cdot(-5g)=-10fg.$$
+The collected coefficient is $-10$.""",
+            ),
+            (
+                r"Clearing the three-storey nest $1+\dfrac{1}{1+\dfrac{1}{1+\dfrac{1}{j}}}$ is said to leave $\dfrac{2j+1}{3j+2}$ for $j\neq 0$, $j\neq -1$, and $j\neq -1/2$.",
+                False,
+                r"""Innermost, $1+1/j=(j+1)/j$. The next layer is
+$$1+\frac{j}{j+1}=\frac{2j+1}{j+1},\qquad\frac{1}{1+\dfrac{1}{1+\dfrac{1}{j}}}=\frac{j+1}{2j+1}.$$
+Adding the outer $1$ produces
+$$1+\frac{j+1}{2j+1}=\frac{3j+2}{2j+1}.$$
+The printed form is the reciprocal of the correct simplification.""",
+            ),
+            (
+                r"Denesting the radicand $\sqrt{16+2\sqrt{55}}$ is claimed to equal $2+\sqrt{11}$.",
+                False,
+                r"""$$(2+\sqrt{11})^2=4+4\sqrt{11}+11=15+4\sqrt{11}\neq 16+2\sqrt{55}.$$
+The genuine denesting is $\sqrt{11}+\sqrt{5}$, whose square is $11+2\sqrt{55}+5=16+2\sqrt{55}$.""",
+            ),
+            (
+                r"Restricting to positive $\ell$, the quotient $\dfrac{|\ell-21|}{21-\ell}$ is claimed to equal $1$.",
+                False,
+                r"""On $0<\ell<21$ one has $|\ell-21|=21-\ell$, so the quotient is $1$. But on $\ell>21$ one has $|\ell-21|=\ell-21$ and $21-\ell=-(\ell-21)$, so the quotient is $-1$. The printed identity fails on the unbounded part of $\ell>0$.""",
+            ),
+            (
+                r"Given the pair $u+v=14$ and $uv=13$, the sum $u^2+v^2$ is evaluated as $170$.",
+                True,
+                r"""$$u^2+v^2=(u+v)^2-2uv=196-26=170.$$""",
+            ),
+        ],
+        overview=r"Unlinked claims: the $fg$ coefficient $-10$ in $(f-5g+h)^2$, a three-storey nest written as its reciprocal, a false denesting $2+\sqrt{11}$, $|\ell-21|/(21-\ell)$ not constantly $1$ on $\ell>0$, and $u^2+v^2=170$.",
+    ),
+    task(
+        title="Vanishing of a shifted square's absolute value",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the trinomial $(2f+2g-h)^2$ is written with the coefficient of $fg$ equal to $4$.",
+                False,
+                r"""Twice the $f$--$g$ product is
+$$2\cdot(2f)\cdot(2g)=8fg.$$
+The printed $4$ is the product of the visible coefficients without the extra factor $2$ from the square.""",
+            ),
+            (
+                r"Cancelling a quadratic, $\dfrac{h^2-21h+104}{h-13}$ is said to leave $h-8$ for $h\neq 13$.",
+                True,
+                r"""The numerator is $(h-13)(h-8)$ because $13+8=21$ and $13\cdot 8=104$. For $h\neq 13$ the quotient is $h-8$.""",
+            ),
+            (
+                r"Simplifying a monomial radical, $(16k^4)^{1/4}$ is rewritten as $2k$ for every real $k$.",
+                False,
+                r"""$$(16k^4)^{1/4}=2(k^4)^{1/4}=2|k|.$$
+Writing $2k$ fails for $k<0$. At $k=-1$ the left-hand side is $2$ while $2k=-2$.""",
+            ),
+            (
+                r"Claiming the absolute value $|\ell^2+14|$ can equal $0$ for some real $\ell$ is proposed.",
+                False,
+                r"""For every real $\ell$ one has $\ell^2+14\ge 14>0$, hence
+$$|\ell^2+14|=\ell^2+14\ge 14.$$
+The absolute value never hits zero.""",
+            ),
+            (
+                r"Adding the reciprocals from $r+s=13$ and $rs=21$ is claimed to give $1/r+1/s=13/21$.",
+                True,
+                r"""$$\frac{1}{r}+\frac{1}{s}=\frac{r+s}{rs}=\frac{13}{21}.$$""",
+            ),
+        ],
+        overview=r"Independent claims: a forgotten extra factor $2$ in an $fg$ coefficient, the remainder $h-8$, $(16k^4)^{1/4}=2|k|$, the range of $|\ell^2+14|$, and $1/r+1/s=13/21$.",
+    ),
+    task(
+        title="Signed cube root of a monomial",
+        subsection="2.5",
+        difficulty="4/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $fh$ in the expansion of $(f+g+2h)^2$ is claimed to be $2$.",
+                False,
+                r"""Twice the $f$--$h$ product is
+$$2\cdot f\cdot(2h)=4fh.$$
+The printed $2$ forgot to double.""",
+            ),
+            (
+                r"Adding the swapped pair $\dfrac{j}{j-13}+\dfrac{13}{13-j}$ is said to vanish whenever $j\neq 13$.",
+                False,
+                r"""The second denominator is the opposite of the first:
+$$\frac{13}{13-j}=-\frac{13}{j-13}.$$
+The sum is therefore
+$$\frac{j-13}{j-13}=1$$
+on $j\neq 13$, not $0$.""",
+            ),
+            (
+                r"Extracting the real cube root $\sqrt[3]{-8s^9}$ is claimed to equal $-2s^3$ for every real $s$.",
+                True,
+                r"""$$\sqrt[3]{-8s^9}=\sqrt[3]{-8}\,\sqrt[3]{s^9}=-2s^3,$$
+because $s^9=(s^3)^3$ and the real cube root of $-8$ is $-2$.""",
+            ),
+            (
+                r"Dropping a minus, $|-\ell|$ is rewritten as $-\ell$ for every real $\ell$.",
+                False,
+                r"""$|-\ell|=|\ell|$, which equals $-\ell$ only when $\ell\le 0$. For $\ell=3$,
+$$|-3|=3\neq -3.$$""",
+            ),
+            (
+                r"Evaluating the cubes at $r=5$, $u=11$, $w=-16$ (which sum to $0$) is claimed to give $r^3+u^3+w^3=-2640$.",
+                True,
+                r"""First $5+11-16=0$, so $r^3+u^3+w^3=3ruw$. Then
+$$3\cdot 5\cdot 11\cdot(-16)=-2640.$$
+Directly, $125+1331-4096=-2640$. The sum of cubes is $3ruw$, not $0$.""",
+            ),
+        ],
+        overview=r"Five unlinked lines: a forgotten doubling of $fh$, opposite linear fractions summing to $1$ not $0$, $\sqrt[3]{-8s^9}=-2s^3$, $|-\ell|=|\ell|$, and $r^3+u^3+w^3=3ruw$ at $(5,11,-16)$.",
+    ),
+    task(
+        title="Wrong conjugate of twenty-one plus eight roots",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"After expanding $(f-4g+h)^2$, the coefficient of $gh$ is read off as $-8$.",
+                True,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-4g)\cdot h=-8gh.$$
+The collected coefficient is $-8$.""",
+            ),
+            (
+                r"Subtracting the unit fractions $\dfrac{1}{n-11}-\dfrac{1}{n+11}$ is said to leave $\dfrac{11}{n^2-121}$ whenever $n\neq\pm 11$.",
+                False,
+                r"""A common denominator $n^2-121$ produces
+$$\frac{(n+11)-(n-11)}{n^2-121}=\frac{22}{n^2-121}.$$
+The printed numerator $11$ is half of the correct numerator.""",
+            ),
+            (
+                r"Denesting the nested radical $\sqrt{21+8\sqrt{5}}$ is claimed to equal $4-\sqrt{5}$.",
+                False,
+                r"""$$(4-\sqrt{5})^2=16-8\sqrt{5}+5=21-8\sqrt{5}.$$
+The printed conjugate denests $\sqrt{21-8\sqrt{5}}$, not the plus form. The genuine plus denesting is $4+\sqrt{5}$.""",
+            ),
+            (
+                r"Opposite linear forms satisfy $|3\ell-21|=|21-3\ell|$ for every real $\ell$.",
+                True,
+                r"""For any real $T$ one has $|-T|=|T|$. Set $T=3\ell-21$. Then
+$$|21-3\ell|=|-(3\ell-21)|=|3\ell-21|.$$""",
+            ),
+            (
+                r"Rewriting the swapped-ratio sum $k/m+m/k$ from $k+m=15$ and $km=21$ as $15/21$ is treated as correct.",
+                False,
+                r"""$$\frac{k}{m}+\frac{m}{k}=\frac{k^2+m^2}{km}=\frac{(k+m)^2-2km}{km}=\frac{225-42}{21}=\frac{183}{21}=\frac{61}{7}.$$
+The printed $15/21$ is $1/k+1/m$, a different sum.""",
+            ),
+        ],
+        overview=r"Unlinked claims: the $gh$ coefficient $-8$ in $(f-4g+h)^2$, a halved numerator $11$ instead of $22$, the wrong conjugate of $\sqrt{21+8\sqrt{5}}$, $|3\ell-21|=|21-3\ell|$, and $k/m+m/k=61/7$ rather than $5/7$.",
+    ),
+    task(
+        title="Exponent addition flipping a sign",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the square $(3f-2g+h)^2$ is written with the coefficient of $fg$ equal to $-6$.",
+                False,
+                r"""Twice the $f$--$g$ product is
+$$2\cdot(3f)\cdot(-2g)=-12fg.$$
+The printed $-6$ is only half of the genuine coefficient.""",
+            ),
+            (
+                r"Cancelling a quadratic, $\dfrac{k^2-29k+210}{k-15}$ is said to leave $k-14$ for $k\neq 15$.",
+                True,
+                r"""The numerator is $(k-15)(k-14)$ because $15+14=29$ and $15\cdot 14=210$. For $k\neq 15$ the quotient is $k-14$.""",
+            ),
+            (
+                r"Combining the exponents, $t^{-3}t^{5/2}$ is claimed to equal $t^{1/2}$ for every $t>0$.",
+                False,
+                r"""Add the exponents:
+$$-3+\frac{5}{2}=\frac{-6+5}{2}=-\frac{1}{2}.$$
+Hence $t^{-3}t^{5/2}=t^{-1/2}$ on $t>0$. The printed $t^{1/2}$ has the opposite exponent sign.""",
+            ),
+            (
+                r"On the half-line $\ell<11$, the quotient $\dfrac{|\ell-11|}{11-\ell}$ equals $1$ wherever $\ell\neq 11$.",
+                True,
+                r"""For $\ell<11$ one has $|\ell-11|=11-\ell$, hence
+$$\frac{|\ell-11|}{11-\ell}=1.$$
+The quotient is the piecewise constant $1$ on that half-line.""",
+            ),
+            (
+                r"Recording a vanishing of cubes at $r=6$, $s=7$, $t=-13$ (which sum to $0$) as $r^3+s^3+t^3=0$ is proposed.",
+                False,
+                r"""The letters sum to $0$, so $r^3+s^3+t^3=3rst$:
+$$3\cdot 6\cdot 7\cdot(-13)=-1638.$$
+Directly, $216+343-2197=-1638$. The cubes equal $3rst$, not $0$.""",
+            ),
+        ],
+        overview=r"Independent claims: a halved $fg$ coefficient, the remainder $k-14$, $t^{-3}t^{5/2}=t^{-1/2}$ rather than $t^{1/2}$, $|\ell-11|/(11-\ell)=1$ on $\ell<11$, and $r^3+s^3+t^3=-1638$ at $(6,7,-13)$.",
+    ),
+    task(
+        title="Difference of reciprocal squares with a dropped factor",
+        subsection="2.5",
+        difficulty="4/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $fh$ in the expansion of $(2f-g-2h)^2$ is recorded as $-8$.",
+                True,
+                r"""Twice the $f$--$h$ product is
+$$2\cdot(2f)\cdot(-2h)=-8fh.$$
+The collected coefficient is $-8$.""",
+            ),
+            (
+                r"Clearing a difference of reciprocal squares, $\dfrac{1}{j^2}-\dfrac{1}{k^2}$ is said to equal $\dfrac{k-j}{j^2k^2}$ whenever $jk\neq 0$.",
+                False,
+                r"""A common denominator $j^2k^2$ produces
+$$\frac{k^2-j^2}{j^2k^2}=\frac{(k-j)(k+j)}{j^2k^2}.$$
+The printed numerator $k-j$ drops the factor $k+j$.""",
+            ),
+            (
+                r"Composing the powers $(t^{3/2})^{2/3}$ is said to return $t$ whenever $t>0$.",
+                True,
+                r"""Multiply the exponents:
+$$\bigl(t^{3/2}\bigr)^{2/3}=t^{(3/2)\cdot(2/3)}=t^1=t.$$""",
+            ),
+            (
+                r"Subtracting two absolute values, $|\ell+11|-|\ell|$ is claimed to equal $11$ for every real $\ell$.",
+                False,
+                r"""The reverse triangle inequality only gives $\bigl||\ell+11|-|\ell|\bigr|\le 11$. Equality $|\ell+11|-|\ell|=11$ holds for $\ell\ge 0$ but fails for $\ell=-12$:
+$$|-1|-|-12|=1-12=-11\neq 11.$$""",
+            ),
+            (
+                r"Given the elementary data $u+v=21$ and $uv=16$, the sum $u^2+v^2$ is claimed to equal $441$.",
+                False,
+                r"""$$u^2+v^2=(u+v)^2-2uv=441-32=409.$$
+The printed $441$ is $(u+v)^2$ with $-2uv$ dropped.""",
+            ),
+        ],
+        overview=r"Five unlinked lines: the $fh$ coefficient $-8$ in $(2f-g-2h)^2$, a dropped factor $k+j$ in $1/j^2-1/k^2$, $(t^{3/2})^{2/3}=t$ for $t>0$, $|\ell+11|-|\ell|$ not identically $11$, and $u^2+v^2=409$ rather than $441$.",
+    ),
+    task(
+        title="Folded distance on a bounded interval",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the trinomial $(f+3g-2h)^2$ is written with the coefficient of $gh$ equal to $-6$.",
+                False,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(3g)\cdot(-2h)=-12gh.$$
+The printed $-6$ is only half of the genuine coefficient.""",
+            ),
+            (
+                r"Reducing the sum-of-cubes quotient $\dfrac{h^3+1331}{h+11}$ to $h^2+11h+121$ for $h\neq -11$ is treated as an identity.",
+                False,
+                r"""Sum of cubes uses
+$$h^3+11^3=(h+11)(h^2-11h+121).$$
+The printed middle sign $+11h$ belongs to a difference of cubes. Expanding the printed quadratic against $h+11$ fails to cancel the mixed terms.""",
+            ),
+            (
+                r"Denesting the nested radical $\sqrt{13+2\sqrt{30}}$ is claimed to equal $\sqrt{10}-\sqrt{3}$.",
+                False,
+                r"""$$(\sqrt{10}+\sqrt{3})^2=10+2\sqrt{30}+3=13+2\sqrt{30},\qquad(\sqrt{10}-\sqrt{3})^2=13-2\sqrt{30}.$$
+The printed difference denests the minus companion. The principal square root is $\sqrt{10}+\sqrt{3}$.""",
+            ),
+            (
+                r"Folding the distance, $|\ell|+|\ell-21|$ equals $21$ throughout the closed interval $0\le\ell\le 21$.",
+                True,
+                r"""On $0\le\ell\le 21$ one has $|\ell|=\ell$ and $|\ell-21|=21-\ell$, so
+$$|\ell|+|\ell-21|=\ell+(21-\ell)=21.$$
+The sum is the piecewise constant $21$ on that interval (and equals $2|\ell|-21$ for $\ell>21$).""",
+            ),
+            (
+                r"Evaluating the cubes at $r=4$, $s=11$, $t=-15$ (which sum to $0$) is claimed to give $r^3+s^3+t^3=3rst$, hence $-1980$.",
+                True,
+                r"""First $4+11-15=0$, so $r^3+s^3+t^3=3rst$. Then
+$$3\cdot 4\cdot 11\cdot(-15)=-1980.$$
+Directly, $64+1331-3375=-1980$.""",
+            ),
+        ],
+        overview=r"Unlinked claims: a halved $gh$ coefficient, the middle sign in $(h^3+11^3)/(h+11)$, the wrong conjugate of $\sqrt{13+2\sqrt{30}}$, the folded distance $21$ on $[0,21]$, and $r^3+s^3+t^3=3rst$ at $(4,11,-15)$.",
+    ),
+    task(
+        title="Nested j-minus-reciprocal over a plus",
+        subsection="2.5",
+        difficulty="5/5",
+        context=CTX,
+        items=[
+            (
+                r"The coefficient of $gh$ in the expansion of $(f-2g-3h)^2$ is recorded as $12$.",
+                True,
+                r"""Twice the $g$--$h$ product is
+$$2\cdot(-2g)\cdot(-3h)=12gh.$$
+The two minus signs make that cross term positive, with coefficient $12$.""",
+            ),
+            (
+                r"Simplifying the stacked ratio $\dfrac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}$ to $\dfrac{j-1}{j+1}$ is claimed for every real $j\neq 0$.",
+                False,
+                r"""Clear the inner layer over the common denominator $j$:
+$$\frac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}=\frac{(j^2-1)/j}{(j^2+1)/j}=\frac{j^2-1}{j^2+1}.$$
+The printed $(j-1)/(j+1)$ is a different rational function (and would require cancelling $j+1$ from $j^2-1=(j-1)(j+1)$ against a denominator $j+1$, not $j^2+1$).""",
+            ),
+            (
+                r"Composing the fifth-power stack $(w^{2/5})^{5/2}$ is said to return $w$ whenever $w>0$.",
+                True,
+                r"""Multiply the exponents:
+$$\bigl(w^{2/5}\bigr)^{5/2}=w^{(2/5)\cdot(5/2)}=w^1=w.$$""",
+            ),
+            (
+                r"Treating the scaled quotient $|2\ell|/\ell$ as identically $2$ for every $\ell\neq 0$ is proposed.",
+                False,
+                r"""$|2\ell|/\ell=2\ell/\ell=2$ only on $\ell>0$. On $\ell<0$ one has $|2\ell|=-2\ell$, so the quotient is $-2$. At $\ell=-3$ the value is $6/(-3)=-2\neq 2$.""",
+            ),
+            (
+                r"Reading the distance $|k-m|$ from $k+m=16$ and $km=35$ as $6$ is treated as correct.",
+                False,
+                r"""$$(k-m)^2=(k+m)^2-4km=256-140=116,$$
+so $|k-m|=\sqrt{116}=2\sqrt{29}$, not $6$. The printed $6$ is not the square root of $116$.""",
+            ),
+        ],
+        overview=r"Independent claims: the $gh$ coefficient $12$ in $(f-2g-3h)^2$, $(j-1/j)/(j+1/j)=(j^2-1)/(j^2+1)$, $(w^{2/5})^{5/2}=w$ for $w>0$, $|2\ell|/\ell$ only piecewise $2$, and $|k-m|=2\sqrt{29}$ rather than $6$.",
+    ),
+    task(
+        title="Closing card with thirty-five and a piecewise ratio",
+        subsection="2.5",
+        difficulty="4/5",
+        context=CTX,
+        items=[
+            (
+                r"Expanding the square $(2f-5g+h)^2$ is written with the coefficient of $fg$ equal to $-10$.",
+                False,
+                r"""Twice the $f$--$g$ product is
+$$2\cdot(2f)\cdot(-5g)=-20fg.$$
+The printed $-10$ is only half of the genuine coefficient.""",
+            ),
+            (
+                r"Cancelling a cubic against a quadratic, $\dfrac{s^3-35s}{s^2-35}$ is said to equal $s$ whenever $s^2\neq 35$.",
+                True,
+                r"""Factor $s$ from the numerator:
+$$\frac{s(s^2-35)}{s^2-35}=s\qquad(s^2\neq 35).$$""",
+            ),
+            (
+                r"Denesting the nested radical $\sqrt{21+12\sqrt{3}}$ is claimed to equal $2\sqrt{3}-3$.",
+                False,
+                r"""$$(3+2\sqrt{3})^2=9+12\sqrt{3}+12=21+12\sqrt{3}.$$
+The printed conjugate squares to the minus companion:
+$$(2\sqrt{3}-3)^2=12-12\sqrt{3}+9=21-12\sqrt{3}.$$
+Although $2\sqrt{3}-3$ is positive, it denests $\sqrt{21-12\sqrt{3}}$, not the plus form. The genuine plus denesting is $3+2\sqrt{3}$.""",
+            ),
+            (
+                r"Adding opposite quotients, $|\ell|/\ell+|\ell|/(-\ell)$ equals $0$ for every $\ell\neq 0$.",
+                True,
+                r"""On $\ell>0$ one has $|\ell|=\ell$, so
+$$\frac{\ell}{\ell}+\frac{\ell}{-\ell}=1-1=0.$$
+On $\ell<0$ one has $|\ell|=-\ell$, so
+$$\frac{-\ell}{\ell}+\frac{-\ell}{-\ell}=-1+1=0.$$
+The sum of the two piecewise constants is identically $0$ on $\ell\neq 0$.""",
+            ),
+            (
+                r"Given the large sum $u+v=35$ and product $uv=21$, the sum $u^2+v^2$ is claimed to equal $1225$.",
+                False,
+                r"""$$u^2+v^2=(u+v)^2-2uv=1225-42=1183.$$
+The printed $1225$ is $(u+v)^2$ with $-2uv$ dropped.""",
+            ),
+        ],
+        overview=r"Five unlinked lines: a halved $fg$ coefficient, $(s^3-35s)/(s^2-35)=s$, the wrong conjugate of $\sqrt{21+12\sqrt{3}}$, $|\ell|/\ell+|\ell|/(-\ell)=0$, and $u^2+v^2=1183$ rather than $1225$.",
     ),
 ]
