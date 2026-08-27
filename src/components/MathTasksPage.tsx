@@ -1,13 +1,12 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
 import { AuthModal } from "@/components/AuthModal";
-import { AuthNav } from "@/components/AuthNav";
+import { SiteHeader } from "@/components/SiteHeader";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
-import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { recordTaskAttempt } from "@/lib/user-progress";
@@ -110,7 +109,7 @@ type Props = {
   backLabel?: string;
 };
 
-export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Props) {
+export function MathTasksPage({ tier }: Props) {
   const chapters = MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
@@ -250,8 +249,6 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
     resetCaseIds(list.map((c) => c.id));
   };
 
-  const tierLabel =
-    tier === "demo" ? "Demo" : tier === "lite" ? "Lite Course" : "Full Course";
   const showTheory = tier !== "demo";
 
   const openChapterTasks = (ch: MathChapter) => {
@@ -283,26 +280,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   return (
     <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className={PRACTICE_HEADER_INNER}>
-          <Link
-            to={backTo}
-            className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary"
-          >
-            <ChevronLeft className="h-4 w-4" />{" "}
-            <span className="hidden sm:inline">{backLabel}</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:flex flex-col items-end leading-tight">
-              <span className="font-display text-sm font-bold tracking-tight">Mathematics</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                {tierLabel}
-              </span>
-            </div>
-            <AuthNav />
-          </div>
-        </div>
-      </header>
+      <SiteHeader maxWidthClassName="max-w-none" compact />
 
       <div
         className={cn(

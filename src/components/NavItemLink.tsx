@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 
-import type { NavItem } from "@/config/site-nav";
+import { isNavItemActive, type NavItem } from "@/config/site-nav";
 import { cn } from "@/lib/utils";
 
 export function NavItemLink({
@@ -12,13 +12,16 @@ export function NavItemLink({
   className?: string;
   onNavigate?: () => void;
 }) {
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { pathname, search } = useRouterState({
+    select: (s) => ({ pathname: s.location.pathname, search: s.location.search }),
+  });
+  const isActive = isNavItemActive(item, pathname, search);
 
   if (item.isRoute) {
-    const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
     return (
       <Link
         to={item.href}
+        {...(item.search ? { search: item.search as never } : {})}
         className={cn(className, isActive && "text-primary")}
         aria-current={isActive ? "page" : undefined}
         onClick={onNavigate}

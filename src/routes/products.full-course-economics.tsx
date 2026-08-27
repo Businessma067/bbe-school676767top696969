@@ -1,5 +1,5 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
@@ -12,8 +12,8 @@ import { ExplanationText } from "@/components/ExplanationText";
 import { scrubStatementHints } from "@/lib/case-context";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
-import { AuthNav } from "@/components/AuthNav";
-import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { SiteHeader } from "@/components/SiteHeader";
+import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
@@ -284,20 +284,7 @@ function EconomicsTasks() {
   return (
     <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-        <div className={PRACTICE_HEADER_INNER}>
-          <Link to="/products/full-course-subjects" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
-            <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">All subjects</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:flex flex-col items-end leading-tight">
-              <span className="font-display text-sm font-bold tracking-tight">Economics</span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">WU BBE · Cases</span>
-            </div>
-            <AuthNav />
-          </div>
-        </div>
-      </header>
+      <SiteHeader maxWidthClassName="max-w-none" compact />
 
       <div className={PRACTICE_BODY_STACK}>
         {/* Sidebar — expandable chapters with per-case checklist */}

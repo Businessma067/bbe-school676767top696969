@@ -41,8 +41,20 @@ import {
   Layers,
 } from "lucide-react";
 
+export type DashboardTab = "courses" | "mocks" | "custom" | "games";
+
+function parseDashboardTab(raw: unknown): DashboardTab {
+  if (raw === "mocks" || raw === "custom" || raw === "games") return raw;
+  if (raw === "modes") return "games";
+  return "courses";
+}
+
 export const Route = createFileRoute("/dashboard")({
   component: DashboardPage,
+  validateSearch: (search: Record<string, unknown>): { tab?: DashboardTab } => {
+    if (search.tab == null || search.tab === "") return {};
+    return { tab: parseDashboardTab(search.tab) };
+  },
   head: () => ({
     meta: [
       { title: "Dashboard · BBE School" },
@@ -51,8 +63,6 @@ export const Route = createFileRoute("/dashboard")({
     ],
   }),
 });
-
-type TabId = "courses" | "mocks" | "custom" | "modes";
 
 const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
@@ -68,8 +78,13 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigate = useNavigate();
+  const { tab: tabParam } = Route.useSearch();
+  const tab = tabParam ?? "courses";
   const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
-  const [tab, setTab] = useState<TabId>("courses");
+
+  const setTab = (next: DashboardTab) => {
+    void navigate({ to: "/dashboard", search: { tab: next }, replace: true });
+  };
   const [enrollments, setEnrollments] = useState<Enrollment[] | null>(null);
   const [tasks, setTasks] = useState<TaskAttempt[] | null>(null);
   const [mocks, setMocks] = useState<MockAttempt[] | null>(null);
@@ -151,9 +166,9 @@ function DashboardPage() {
             />
             <SideItem
               icon={<Layers className="h-4 w-4" />}
-              label="Study Modes"
-              active={tab === "modes"}
-              onClick={() => setTab("modes")}
+              label="Games"
+              active={tab === "games"}
+              onClick={() => setTab("games")}
             />
           </nav>
         </aside>
@@ -211,8 +226,8 @@ function DashboardPage() {
             <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>
               Custom
             </MobileTab>
-            <MobileTab active={tab === "modes"} onClick={() => setTab("modes")}>
-              Modes
+            <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
+              Games
             </MobileTab>
           </div>
 
@@ -234,7 +249,7 @@ function DashboardPage() {
                 attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
               />
             ) : (
-              <StudyModesTab />
+              <GamesTab />
             )}
           </div>
         </main>
@@ -515,11 +530,11 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 
 /* -------------------- STUDY MODES TAB -------------------- */
 
-function StudyModesTab() {
+function GamesTab() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="font-display text-xl font-bold tracking-tight">Study Modes</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">Games</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           Practice tools to reinforce Economics, Math, and English for the BBE exam.
         </p>
