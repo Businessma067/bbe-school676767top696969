@@ -31,8 +31,7 @@ import {
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
-import { CaseContextRich } from "@/components/CaseContextRich";
-import { scrubStatementHints } from "@/lib/case-context";
+import { ExamQuestionBody, ExamStatementText } from "@/components/mock-exam/ExamQuestionContent";
 import {
   Sheet,
   SheetContent,
@@ -601,7 +600,7 @@ function TakeExamPage() {
                   {q.subtopicTag}
                 </p>
               ) : null}
-              <CaseContextRich content={q.stem} emphasized className="text-foreground" />
+              <ExamQuestionBody q={q} emphasized />
 
               <div className="mt-6 overflow-hidden rounded-xl border border-border">
                 <div className="border-b border-border bg-secondary/50 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-taupe">
@@ -616,7 +615,7 @@ function TakeExamPage() {
                       <span className="mr-2 font-semibold text-taupe">
                         {String.fromCharCode(65 + i)}.
                       </span>
-                      {scrubStatementHints(s.text)}
+                      <ExamStatementText q={q} text={s.text} />
                     </p>
                   </div>
                 ))}
