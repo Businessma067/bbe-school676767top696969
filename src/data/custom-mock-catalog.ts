@@ -116,6 +116,17 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       subs(5, [{ id: "5", title: "Linear equations in two unknowns" }]),
     ),
     toChapterToc(
+      6,
+      "Inequalities",
+      "Chapter 6",
+      subs(6, [
+        { id: "6.1", title: "Rational Inequalities" },
+        { id: "6.2", title: "Quadratic Sign Inequalities" },
+        { id: "6.3", title: "Compound & Special Inequalities" },
+        { id: "6.4", title: "Word Problems" },
+      ]),
+    ),
+    toChapterToc(
       8,
       "Power functions",
       "Chapter 8",
