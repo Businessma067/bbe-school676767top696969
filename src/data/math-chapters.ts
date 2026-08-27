@@ -1,7 +1,7 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
- * 4 (Equations), 5 (Linear equations), 8 (Power functions),
+ * 4 (Equations), 5 (Linear equations), 6 (Inequalities), 8 (Power functions),
  * 11 (Elementary probability), and 12 (Binomial) are populated;
  * others use placeholders.
  */
@@ -11,6 +11,7 @@ import { MATH_CH2_ALGEBRA, MATH_CH2_SUBSECTIONS } from "@/data/math-ch2-elementa
 import { MATH_CH4_EQUATIONS, MATH_CH4_SUBSECTIONS } from "@/data/math-ch4-equations";
 import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
 import { MATH_CH8_POWER_FUNCTIONS } from "@/data/math-ch8-power-functions";
+import { MATH_CH6_INEQUALITIES, MATH_CH6_SUBSECTIONS } from "@/data/math-ch6-inequalities";
 import { MATH_CH11_FINANCIAL, MATH_CH11_SUBSECTIONS } from "@/data/math-ch11-financial";
 import { MATH_CH12_PROBABILITY, MATH_CH12_SUBSECTIONS } from "@/data/math-ch12-probability";
 import ch13Binomial from "@/data/math-cases-ch13-binomial.json";
@@ -63,6 +64,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   2: { "2.1": 10, "2.2": 5, "2.3": 5, "2.4": 5 },
   3: { "3.1": 10, "3.2": 5, "3.3": 5, "3.4": 5 },
   4: { "4.1": 10, "4.2": 5, "4.3": 5, "4.4": 5 },
+  6: { "6.1": 10, "6.2": 5, "6.3": 5, "6.4": 5 },
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */
@@ -169,6 +171,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   3: MATH_CH11_FINANCIAL,
   4: MATH_CH4_EQUATIONS,
   5: MATH_CH5_LINEAR_EQUATIONS,
+  6: MATH_CH6_INEQUALITIES,
   8: MATH_CH8_POWER_FUNCTIONS,
   11: MATH_CH12_PROBABILITY,
   12: (ch13Binomial.tasks as MathTask[]).map((t) => ({
@@ -182,6 +185,7 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
   2: MATH_CH2_SUBSECTIONS,
   3: MATH_CH11_SUBSECTIONS,
   4: MATH_CH4_SUBSECTIONS,
+  6: MATH_CH6_SUBSECTIONS,
   11: MATH_CH12_SUBSECTIONS,
 };
 

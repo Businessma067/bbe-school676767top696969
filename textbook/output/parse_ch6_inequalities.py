@@ -1,0 +1,548 @@
+#!/usr/bin/env python3
+"""Parse Inequalities_Regrouped_By_Topic.pdf into math-ch6 JSON + TS."""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+from pypdf import PdfReader
+
+from ch6_math import leftover_unicode, unpaired_dollars, wrap_math, wrap_statement
+
+PDF = Path("/Users/yehor/Downloads/Inequalities_Regrouped_By_Topic.pdf")
+ROOT = Path(__file__).resolve().parents[2]
+OUT_JSON = ROOT / "src" / "data" / "math-ch6-inequalities.json"
+OUT_TS = ROOT / "src" / "data" / "math-ch6-inequalities.ts"
+DUMP = ROOT / "textbook" / "output" / "ch6_pdf_extract.txt"
+
+SECTIONS = {
+    "Rational Inequalities": ("6.1", "Rational Inequalities"),
+    "Quadratic Sign Inequalities": ("6.2", "Quadratic Sign Inequalities"),
+    "Compound & Special Inequalities": ("6.3", "Compound & Special Inequalities"),
+    "Word Problems": ("6.4", "Word Problems"),
+}
+
+HEADER_RE = re.compile(
+    r"BBE School\s*[—–-]\s*Inequalities Sorted by Topic\s*\n\s*\d+\s*\n",
+    re.I,
+)
+QUESTION_RE = re.compile(r"^Question\s+(\d+)(?:\s+[—–-]\s+(.+))?$")
+STATEMENT_RE = re.compile(r"^Statement\s+([A-E])$")
+DIFF_RE = re.compile(r"^Difficulty:\s*(\d)\s*/\s*5")
+ANSWER_RE = re.compile(r"^Answer:\s*(TRUE|FALSE)\b", re.I)
+TYPE_RE = re.compile(r"^Type:\s*(.+)$")
+TRAP_RE = re.compile(r"^Common trap:\s*(.*)$", re.I)
+QUICK_RE = re.compile(r"^(?:Quick check|Easier method)\b[^:]*:\s*(.*)$", re.I)
+INTERVAL_HDR_RE = re.compile(r"^Interval\s+Sign\s*$", re.I)
+SIGN_ROW_RE = re.compile(
+    r"^(\S.*)\s+([+\-–−])\s*$"
+)
+
+LIGATURE_FIXES = [
+    (r"\blef side\b", "left side"),
+    (r"\blef endpoints\b", "left endpoints"),
+    (r"\blef endpoint\b", "left endpoint"),
+    (r"\blef condition\b", "left condition"),
+    (r"\bthe lef\b", "the left"),
+    (r"\bThe lef\b", "The left"),
+    (r"\bcutof\b", "cutoff"),
+    (r"direction-\s+preserving", "direction-preserving"),
+    (r"non-\s+strict", "non-strict"),
+    (r"non-\s+negative", "non-negative"),
+    (r"non-\s+positive", "non-positive"),
+    (r"(\d)-\s+credit", r"\1-credit"),
+    (r"similar-\s+looking", "similar-looking"),
+    (r"double-\s+checking", "double-checking"),
+    (r"overtime-\s+adjusted", "overtime-adjusted"),
+    (r"break-\s+even", "break-even"),
+]
+
+DOTS_ONLY_RE = re.compile(r"^\.{2,}$")
+MATH_ARROW_STAR_RE = re.compile(r"(?<=[\d)])\s*\*\s*(?=[(A-Za-z])")
+TRAILING_DOTS_RE = re.compile(r"\.\s+\.{2,}\s*")
+FOUR_DOTS_RE = re.compile(r"\.{4,}")
+STRAY_DOT_PAREN_RE = re.compile(r"\((\d+\.\d+)\.\s*\)")
+ENDS_MATH_OP_RE = re.compile(r"[<>=≤≥≠+\-−×/→]$")
+
+
+def fix_extract(s: str) -> str:
+    s = s.replace("\u00a0", " ")
+    s = s.replace("\ufeff", "")
+    for pat, repl in LIGATURE_FIXES:
+        s = re.sub(pat, repl, s)
+    s = FOUR_DOTS_RE.sub("", s)
+    s = STRAY_DOT_PAREN_RE.sub(r"(\1)", s)
+    s = TRAILING_DOTS_RE.sub(". ", s)
+    s = MATH_ARROW_STAR_RE.sub(" → ", s)
+    s = re.sub(r"[ \t]+", " ", s)
+    return s.strip()
+
+
+def join_lines(lines: list[str]) -> str:
+    """Join PDF wrap lines. Blank lines are page breaks, not new paragraphs."""
+    if not lines:
+        return ""
+    cur = ""
+    for raw in lines:
+        line = fix_extract(raw)
+        if not line or DOTS_ONLY_RE.match(line):
+            continue
+        if cur.endswith("-") and re.match(r"^[a-z]", line):
+            cur = cur + line
+        elif cur and ENDS_MATH_OP_RE.search(cur):
+            cur = cur + " " + line
+        else:
+            cur = f"{cur} {line}".strip() if cur else line
+    return fix_extract(cur)
+
+
+def extract_pdf() -> str:
+    reader = PdfReader(str(PDF))
+    chunks: list[str] = []
+    for i, page in enumerate(reader.pages):
+        if i < 18:
+            continue
+        text = page.extract_text() or ""
+        chunks.append(text)
+    raw = "\n".join(chunks)
+    raw = HEADER_RE.sub("\n", raw)
+    return raw
+
+
+def is_question_header(line: str) -> bool:
+    return bool(QUESTION_RE.match(line))
+
+
+def is_section_header(line: str) -> bool:
+    return line in SECTIONS
+
+
+def parse_sign_row(line: str) -> tuple[str, str] | None:
+    m = SIGN_ROW_RE.match(line)
+    if not m:
+        return None
+    interval, sign = m.group(1).strip(), m.group(2)
+    if not re.search(r"[\(\[∞∞]", interval) and "," not in interval:
+        if not re.search(r"[\)\]]", interval):
+            return None
+    sign_tex = "+" if sign == "+" else "-"
+    return interval, sign_tex
+
+
+def parse_document(raw: str) -> list[dict]:
+    lines = [fix_extract(ln) for ln in raw.splitlines()]
+    questions: list[dict] = []
+    section_id = None
+    section_title = None
+    i = 0
+    n = len(lines)
+
+    def peek_nonempty(j: int) -> str:
+        while j < n and not lines[j]:
+            j += 1
+        return lines[j] if j < n else ""
+
+    while i < n:
+        line = lines[i]
+        if is_section_header(line):
+            section_id, section_title = SECTIONS[line]
+            i += 1
+            continue
+        m_q = QUESTION_RE.match(line)
+        if not m_q:
+            i += 1
+            continue
+        if section_id is None:
+            i += 1
+            continue
+
+        qnum = int(m_q.group(1))
+        qtitle = (m_q.group(2) or "").strip()
+        i += 1
+        q_diff = None
+        context_lines: list[str] = []
+
+        def skip_empty(j: int) -> int:
+            while j < n and not lines[j]:
+                j += 1
+            return j
+
+        i = skip_empty(i)
+        if i < n and DIFF_RE.match(lines[i]):
+            q_diff = DIFF_RE.match(lines[i]).group(1) + "/5"
+            i += 1
+
+        while i < n:
+            nxt = lines[i]
+            if STATEMENT_RE.match(nxt) or is_question_header(nxt) or is_section_header(nxt):
+                break
+            context_lines.append(nxt)
+            i += 1
+
+        statements: list[dict] = []
+        i = skip_empty(i)
+        while i < n and STATEMENT_RE.match(lines[i]):
+            letter = STATEMENT_RE.match(lines[i]).group(1)
+            i += 1
+            s_diff = q_diff
+            i = skip_empty(i)
+            if i < n and DIFF_RE.match(lines[i]):
+                s_diff = DIFF_RE.match(lines[i]).group(1) + "/5"
+                i += 1
+
+            stmt_lines: list[str] = []
+            while i < n:
+                if ANSWER_RE.match(lines[i]) or STATEMENT_RE.match(lines[i]) or is_question_header(lines[i]) or is_section_header(lines[i]):
+                    break
+                stmt_lines.append(lines[i])
+                i += 1
+
+            i = skip_empty(i)
+            answer = None
+            if i < n and ANSWER_RE.match(lines[i]):
+                answer = ANSWER_RE.match(lines[i]).group(1).upper() == "TRUE"
+                i += 1
+
+            i = skip_empty(i)
+            typ = ""
+            if i < n and TYPE_RE.match(lines[i]):
+                typ = TYPE_RE.match(lines[i]).group(1).strip()
+                i += 1
+
+            expl_lines: list[str] = []
+            chart: list[tuple[str, str]] = []
+            trap = ""
+            quick = ""
+
+            def at_stmt_boundary(s: str) -> bool:
+                return bool(
+                    STATEMENT_RE.match(s)
+                    or is_question_header(s)
+                    or is_section_header(s)
+                )
+
+            while i < n:
+                cur = lines[i]
+                if at_stmt_boundary(cur):
+                    break
+                if INTERVAL_HDR_RE.match(cur):
+                    i += 1
+                    while i < n:
+                        row = parse_sign_row(lines[i]) if lines[i] else None
+                        if row:
+                            chart.append(row)
+                            i += 1
+                            continue
+                        if not lines[i]:
+                            i += 1
+                            if i < n and parse_sign_row(lines[i]):
+                                continue
+                            break
+                        break
+                    continue
+                tm = TRAP_RE.match(cur)
+                if tm:
+                    trap_lines = [tm.group(1)]
+                    i += 1
+                    while i < n:
+                        nxt = lines[i]
+                        if (
+                            at_stmt_boundary(nxt)
+                            or QUICK_RE.match(nxt)
+                            or INTERVAL_HDR_RE.match(nxt)
+                            or TRAP_RE.match(nxt)
+                            or not nxt and peek_nonempty(i) and (
+                                STATEMENT_RE.match(peek_nonempty(i))
+                                or is_question_header(peek_nonempty(i))
+                                or QUICK_RE.match(peek_nonempty(i))
+                            )
+                        ):
+                            break
+                        if not nxt:
+                            i += 1
+                            continue
+                        trap_lines.append(nxt)
+                        i += 1
+                    trap = join_lines(trap_lines)
+                    continue
+                qm = QUICK_RE.match(cur)
+                if qm:
+                    quick_lines = [qm.group(1)]
+                    i += 1
+                    while i < n:
+                        nxt = lines[i]
+                        if (
+                            at_stmt_boundary(nxt)
+                            or TRAP_RE.match(nxt)
+                            or INTERVAL_HDR_RE.match(nxt)
+                            or QUICK_RE.match(nxt)
+                        ):
+                            break
+                        if not nxt:
+                            i += 1
+                            if i < n and (
+                                at_stmt_boundary(lines[i])
+                                or TRAP_RE.match(lines[i])
+                                or QUICK_RE.match(lines[i])
+                                or is_question_header(lines[i])
+                            ):
+                                break
+                            continue
+                        quick_lines.append(nxt)
+                        i += 1
+                    quick = join_lines(quick_lines)
+                    continue
+                expl_lines.append(cur)
+                i += 1
+
+            stmt_text = join_lines(stmt_lines)
+            dm = DIFF_RE.match(stmt_text)
+            if dm:
+                s_diff = dm.group(1) + "/5"
+                stmt_text = DIFF_RE.sub("", stmt_text, count=1).strip()
+
+            statements.append(
+                {
+                    "letter": letter,
+                    "text": stmt_text,
+                    "answer": answer,
+                    "type": typ,
+                    "explanation": join_lines(expl_lines),
+                    "chart": chart,
+                    "trap": trap,
+                    "quick": quick,
+                    "difficulty": s_diff or "—",
+                }
+            )
+
+        questions.append(
+            {
+                "pdf_num": qnum,
+                "title": qtitle,
+                "section_id": section_id,
+                "section_title": section_title,
+                "context": join_lines(context_lines),
+                "difficulty": q_diff,
+                "statements": statements,
+            }
+        )
+
+    return questions
+
+
+def chart_markdown(chart: list[tuple[str, str]]) -> str:
+    if not chart:
+        return ""
+    rows = ["| Interval | Sign |", "| --- | --- |"]
+    for interval, sign in chart:
+        rows.append(f"| {wrap_math(interval)} | ${sign}$ |")
+    return "\n".join(rows)
+
+
+def max_diff(stmts: list[dict], fallback: str | None) -> str:
+    vals = []
+    for st in stmts:
+        m = re.match(r"(\d)/5", st.get("difficulty") or "")
+        if m:
+            vals.append(int(m.group(1)))
+    if not vals and fallback:
+        m = re.match(r"(\d)/5", fallback)
+        if m:
+            return fallback
+    if not vals:
+        return "—"
+    return f"{max(vals)}/5"
+
+
+def build_explanation(st: dict, statement_katex: str) -> str:
+    letter = st["letter"]
+    verdict = "true" if st["answer"] else "false"
+    parts = [f"**{letter}) {statement_katex}**  ({verdict})"]
+    if st["type"]:
+        parts.append(f"**Type:** {st['type']}")
+    if st["explanation"]:
+        parts.append(wrap_math(st["explanation"]))
+    chart = chart_markdown(st["chart"])
+    if chart:
+        parts.append("**Sign chart**")
+        parts.append(chart)
+    if st["trap"]:
+        parts.append(f"**Common trap:** {wrap_math(st['trap'])}")
+    if st["quick"]:
+        label = "Quick check"
+        if st["quick"].lower().startswith("plug in") or "plug in" in st["quick"][:40].lower():
+            label = "Quick check"
+        parts.append(f"**{label}:** {wrap_math(st['quick'])}")
+    return "\n\n".join(parts)
+
+
+def algebraic_overview(section_title: str, statements: list[dict]) -> str:
+    types = []
+    seen = set()
+    for st in statements:
+        t = (st.get("type") or "").strip()
+        if t and t not in seen:
+            seen.add(t)
+            types.append(t)
+    type_line = "; ".join(types[:3])
+    if section_title.startswith("Rational"):
+        method = (
+            "Find the zeros of the numerator and the excluded zeros of the denominator, "
+            "then read the sign of the expression on each open interval. Include a critical "
+            "point only when it comes from the numerator and the inequality is non-strict. "
+            "A denominator zero is never a solution."
+        )
+    elif section_title.startswith("Quadratic"):
+        method = (
+            "Factor the quadratic (or read the discriminant), mark the roots, and test the "
+            "sign on each interval. A non-strict inequality keeps the roots; a strict one drops them. "
+            "A quadratic that opens upward is non-negative outside its roots and non-positive between them."
+        )
+    else:
+        method = (
+            "Identify the type (compound, absolute value, or radical), write the domain when a "
+            "square root is present, split at the points where expressions change sign, and "
+            "intersect every condition. Boundary points follow the strictness of the piece that produced them."
+        )
+    bits = ["Evaluate each statement. Mark it TRUE or FALSE.", "", method]
+    if type_line:
+        bits.extend(["", f"Types in this set: {type_line}."])
+    return "\n".join(bits)
+
+
+def build_tasks(questions: list[dict]) -> list[dict]:
+    tasks: list[dict] = []
+    n = 0
+    counts: dict[str, int] = {}
+    for q in questions:
+        sid = q["section_id"]
+        counts[sid] = counts.get(sid, 0) + 1
+        local = counts[sid]
+        n += 1
+        stmts_k = []
+        answers = []
+        expls = []
+        for st in q["statements"]:
+            sk = wrap_statement(st["text"])
+            stmts_k.append(sk)
+            answers.append(bool(st["answer"]))
+            expls.append(build_explanation(st, sk))
+
+        is_word = sid == "6.4"
+        if is_word:
+            title = q["title"] or f"Word problem {q['pdf_num']}"
+            context = wrap_math(q["context"]) if q["context"] else "Evaluate each statement. Mark it TRUE or FALSE."
+            overview = context
+        else:
+            title = f"{q['section_title']} — {local}"
+            context = "Evaluate each statement. Mark it TRUE or FALSE."
+            overview = algebraic_overview(q["section_title"], q["statements"])
+
+        tasks.append(
+            {
+                "id": f"math-6-{n}",
+                "case_id": f"MATH 6.{n:02d}",
+                "title": title,
+                "subsection": sid,
+                "context": context,
+                "statements": stmts_k,
+                "answer_key": answers,
+                "tactical_explanations": expls,
+                "difficulty_level": max_diff(q["statements"], q["difficulty"]),
+                "sort_order": n,
+                "solution_overview": overview,
+                "placeholder": False,
+            }
+        )
+    return tasks
+
+
+def emit_ts() -> str:
+    return '''/**
+ * Chapter 6 — Inequalities (subsections 6.1–6.4).
+ * Sourced from Inequalities_Regrouped_By_Topic.pdf.
+ */
+
+import type { MathTask } from "@/data/math-chapters";
+import ch6 from "@/data/math-ch6-inequalities.json";
+
+export const MATH_CH6_SUBSECTIONS = [
+  { id: "6.1", title: "Rational Inequalities" },
+  { id: "6.2", title: "Quadratic Sign Inequalities" },
+  { id: "6.3", title: "Compound & Special Inequalities" },
+  { id: "6.4", title: "Word Problems" },
+] as const;
+
+export const MATH_CH6_INEQUALITIES: MathTask[] = (ch6.tasks as MathTask[]).map((t) => ({
+  ...t,
+  placeholder: false,
+}));
+'''
+
+
+def qa_report(questions: list[dict], tasks: list[dict]) -> None:
+    from collections import Counter
+
+    by_sec = Counter(q["section_id"] for q in questions)
+    print("questions by section:", dict(by_sec))
+    n_stmt = sum(len(q["statements"]) for q in questions)
+    print("statements:", n_stmt)
+    missing_ans = [
+        (q["section_id"], q["pdf_num"], st["letter"])
+        for q in questions
+        for st in q["statements"]
+        if st["answer"] is None
+    ]
+    empty_stmt = [
+        (q["section_id"], q["pdf_num"], st["letter"])
+        for q in questions
+        for st in q["statements"]
+        if not st["text"]
+    ]
+    print("missing answers:", missing_ans)
+    print("empty statements:", empty_stmt)
+    lens = Counter(len(q["statements"]) for q in questions)
+    print("statements-per-question:", dict(lens))
+
+    leftover = []
+    unpaired = []
+    for t in tasks:
+        blob = "\n".join(
+            [t["title"], t["context"], t.get("solution_overview") or "", *t["statements"], *t["tactical_explanations"]]
+        )
+        lu = leftover_unicode(blob)
+        if lu:
+            leftover.append((t["id"], lu[:8]))
+        if unpaired_dollars(blob):
+            unpaired.append(t["id"])
+    print("tasks with leftover unicode math:", leftover[:20], "count", len(leftover))
+    print("unpaired dollars:", unpaired)
+
+    print("\n--- sample statements ---")
+    for t in tasks[:2] + [x for x in tasks if x["subsection"] == "6.2"][:1] + [
+        x for x in tasks if x["subsection"] == "6.3"
+    ][:1] + [x for x in tasks if x["subsection"] == "6.4"][:1]:
+        print(t["id"], t["subsection"], t["title"])
+        print(" ", t["statements"][0][:200])
+        print("  answers", t["answer_key"])
+
+
+def main() -> None:
+    raw = extract_pdf()
+    DUMP.parent.mkdir(parents=True, exist_ok=True)
+    DUMP.write_text(raw, encoding="utf-8")
+    questions = parse_document(raw)
+    tasks = build_tasks(questions)
+    OUT_JSON.write_text(
+        json.dumps({"tasks": tasks}, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
+    )
+    OUT_TS.write_text(emit_ts(), encoding="utf-8")
+    print("wrote", OUT_JSON, "and", OUT_TS)
+    qa_report(questions, tasks)
+
+
+if __name__ == "__main__":
+    sys.exit(main() or 0)
