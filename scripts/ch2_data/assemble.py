@@ -169,6 +169,16 @@ def lint(tasks: list[dict]) -> list[str]:
             firsts.append(" ".join(s.split()[:4]).lower())
         if len(set(firsts)) < 4:
             errs.append(f"{t['title']}: statement openings too similar")
+        if re.search(r"(?i)\blet\s+\$", t["context"]):
+            errs.append(f"{t['title']}: shared Let-hypothesis in context; each statement must carry its own conditions")
+        latex_hits: dict[str, int] = {}
+        for s in t["statements"]:
+            for frag in re.findall(r"\$([^$]{12,})\$", s):
+                key = re.sub(r"\s+", "", frag)[:28]
+                latex_hits[key] = latex_hits.get(key, 0) + 1
+        reused = [k for k, n in latex_hits.items() if n >= 3]
+        if reused:
+            errs.append(f"{t['title']}: same expression reused on 3+ statements ({reused[0][:40]})")
         for i, expl in enumerate(t.get("tactical_explanations", [])):
             letter = LETTERS[i]
             verdict = "True" if t["answer_key"][i] else "False"
