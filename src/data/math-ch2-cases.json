@@ -1921,16 +1921,16 @@
    "sort_order": 60
   },
   {
-   "title": "Stacked exponents versus a plain product",
+   "title": "A stacked power compared with a product after a rewrite",
    "subsection": "2.3",
-   "difficulty_level": "3/5",
+   "difficulty_level": "4/5",
    "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "Stacked powers $(x^{-2})^{-3}$ for $x\\neq 0$ are recorded as $x^{-5}$, the same exponent as the product $x^{-2}x^{-3}$.",
-    "Multiplying $w^{5}w^{-2}$ whenever $w\\neq 0$ is claimed to leave $w^{3}$.",
-    "On $t>0$, raising $(t^{2})^{3}$ is entered as $t^{5}$.",
-    "Whenever $a\\neq 0$, treating $a^{-4}a^{4}$ as $1$ is accepted as an identity.",
-    "A candidate records $(b^{-1})^{2}=b^{-3}$ for every $b\\neq 0$."
+    "After rewriting $(x^{-2})^{-3}$ for $x\\neq 0$, a clerk compares it with the product $x^{-2}x^{-3}$ and reports that both leave $x^{-5}$.",
+    "On $w\\neq 0$, simplifying $w^{5}w^{-2}/w^{-1}$ is claimed to leave $w^{4}$. A marker then substitutes $w=2$ and ticks $16$.",
+    "Whenever $t>0$, a note treats $((t^{2})^{3})^{1/2}$ as $t^{5/2}$, adding $2+3$ before taking the outer half-power.",
+    "Provided $a\\neq 0$, rewriting $a^{-4}(a^{2})^{2}$ as $1$ is accepted, because the second factor is said to cancel the first.",
+    "For $b\\neq 0$, a candidate records $((b^{-1})^{2})^{-1}$ as $b^{-3}$, mixing a stack with the product $b^{-1}b^{-2}$."
    ],
    "answer_key": [
     false,
@@ -1940,45 +1940,45 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nPower of a power multiplies exponents:\n\n$$\n(x^{-2})^{-3}=x^{(-2)\\cdot(-3)}=x^{6}\n$$\n\nThe exponent $-5$ is $-2+(-3)$, which belongs to the product $x^{-2}x^{-3}$, not to the stacked power.\n\nso the statement is False.",
-    "**B.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nThe product rule adds exponents:\n\n$$\nw^{5}w^{-2}=w^{5+(-2)}=w^{3}\n$$\n\non $w\\neq 0$.\n\nso the statement is True.",
-    "**C.** → False\n\nStacked exponents multiply:\n\n$$\n(t^{2})^{3}=t^{6}\n$$\n\nAdding $2+3$ produces the false exponent $5$, which would describe the product $t^{2}t^{3}$.\n\nso the statement is False.",
-    "**D.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nAdd the exponents:\n\n$$\na^{-4}a^{4}=a^{0}=1\n$$\n\nfor $a\\neq 0$.\n\nso the statement is True.",
-    "**E.** → False\n\nMultiply, do not add:\n\n$$\n(b^{-1})^{2}=b^{-2}=\\frac{1}{b^{2}}\n$$\n\nThe exponent $-3$ is $-1+(-2)$, mixing a stacked power with a product.\n\nso the statement is False."
+    "**A.** → False\n\nPower of a power multiplies:\n\n$$\n(x^{-2})^{-3}=x^{6}\n$$\n\nThe product adds:\n\n$$\nx^{-2}x^{-3}=x^{-5}\n$$\n\nThe two results are different, so they cannot both equal $x^{-5}$.\n\nso the statement is False.",
+    "**B.** → True\n\nAdd the exponents in the product, then subtract the denominator:\n\n$$\n\\frac{w^{5}w^{-2}}{w^{-1}}=w^{5-2-(-1)}=w^{4}\n$$\n\nAt $w=2$ one has $16$, matching the claimed check.\n\nso the statement is True.",
+    "**C.** → False\n\nInnermost stack multiplies: $(t^{2})^{3}=t^{6}$, then\n\n$$\n(t^{6})^{1/2}=t^{3}\n$$\n\non $t>0$. Adding $2+3$ first is the product rule, not the power-of-a-power rule.\n\nso the statement is False.",
+    "**D.** → True\n\nThe second factor is a stacked power:\n\n$$\n(a^{2})^{2}=a^{4},\\qquad a^{-4}a^{4}=a^{0}=1\n$$\n\non $a\\neq 0$. The cancellation is genuine, not a dropped exponent.\n\nso the statement is True.",
+    "**E.** → False\n\nInnermost: $(b^{-1})^{2}=b^{-2}$. Then\n\n$$\n(b^{-2})^{-1}=b^{2}\n$$\n\nThe exponent $-3$ is the sum $-1+(-2)$, which belongs to a different expression.\n\nso the statement is False."
    ],
-   "solution_overview": "Five independent exponent claims. Stacked powers multiply; products add. $(x^{-2})^{-3}=x^{6}$, while $x^{-2}x^{-3}=x^{-5}$.",
+   "solution_overview": "Five independent exponent claims. A stack multiplies; a product adds. After rewriting, $(x^{-2})^{-3}=x^{6}$ is not the same as $x^{-2}x^{-3}=x^{-5}$.",
    "placeholder": false,
    "id": "math-2-61",
    "case_id": "MATH 2.61",
    "sort_order": 61
   },
   {
-   "title": "Reciprocals hiding in a denominator",
+   "title": "A minus in the denominator that has to be flipped twice",
    "subsection": "2.3",
-   "difficulty_level": "3/5",
+   "difficulty_level": "4/5",
    "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "Clearing $p^{3}/p^{-2}$ for $p\\neq 0$ is recorded as $p^{5}$.",
-    "Working with $q\\neq 0$, a slip writes $q^{-3}=-q^{3}$.",
-    "Provided $r\\neq 0$, inverting $1/r^{-4}$ is claimed to recover $r^{4}$.",
-    "Someone records $s^{6}/s^{-1}$ as $s^{5}$ whenever $s\\neq 0$, forgetting to flip the minus in the denominator.",
-    "For every $u\\neq 0$, rewriting $u^{-1}=1/u$ is accepted."
+    "Clearing $\\dfrac{p^{3}p^{-1}}{p^{-2}}$ for $p\\neq 0$ is recorded as $p^{4}$. Substituting $p=2$ is then said to recover $16$.",
+    "Working with $q\\neq 0$, a slip writes $\\dfrac{1}{q^{-3}}=-q^{3}$, reading the minus in the exponent as a change of sign.",
+    "Provided $r\\neq 0$, inverting $\\dfrac{r^{-4}}{r^{-1}}$ is claimed to leave $r^{-3}$, the same monomial as the uninverted quotient.",
+    "Someone records $\\dfrac{s^{6}}{s^{-1}s^{2}}$ as $s^{3}$ whenever $s\\neq 0$, treating both denominator exponents as minuses.",
+    "On $u\\neq 0$, rewriting $\\dfrac{u^{-1}+u^{-2}}{u^{-2}}$ as $u+1$ is accepted after a common denominator is cleared in the numerator."
    ],
    "answer_key": [
     true,
     false,
-    true,
+    false,
     false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA quotient subtracts exponents, and subtracting a minus adds:\n\n$$\n\\frac{p^{3}}{p^{-2}}=p^{3-(-2)}=p^{5}\n$$\n\non $p\\neq 0$.\n\nso the statement is True.",
-    "**B.** → False\n\nA negative exponent is a reciprocal, not a change of sign:\n\n$$\nq^{-3}=\\frac{1}{q^{3}}\n$$\n\nFor $q=2$ one has $2^{-3}=1/8$, whereas $-2^{3}=-8$.\n\nso the statement is False.",
-    "**C.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nBy definition $r^{-4}=1/r^{4}$, so\n\n$$\n\\frac{1}{r^{-4}}=r^{4}\n$$\n\non $r\\neq 0$.\n\nso the statement is True.",
-    "**D.** → False\n\nSubtracting the denominator's exponent gives\n\n$$\n\\frac{s^{6}}{s^{-1}}=s^{6-(-1)}=s^{7},\n$$\n\nnot $s^{5}$. Leaving the minus unflipped is the usual bookkeeping error.\n\nso the statement is False.",
-    "**E.** → True\n\nThis is the definition of a negative exponent with $n=1$:\n\n$$\nu^{-1}=\\frac{1}{u}\n$$\n\non $u\\neq 0$.\n\nso the statement is True."
+    "**A.** → True\n\nNumerator first: $p^{3}p^{-1}=p^{2}$. Then\n\n$$\n\\frac{p^{2}}{p^{-2}}=p^{2-(-2)}=p^{4}\n$$\n\nAt $p=2$ the value is $16$, matching the check.\n\nso the statement is True.",
+    "**B.** → False\n\nA negative exponent is a reciprocal:\n\n$$\n\\frac{1}{q^{-3}}=q^{3}\n$$\n\nThe extra minus sign would describe $-q^{3}$. For $q=2$ one has $8$, not $-8$.\n\nso the statement is False.",
+    "**C.** → False\n\nThe quotient is\n\n$$\n\\frac{r^{-4}}{r^{-1}}=r^{-3}\n$$\n\nInverting it produces $r^{3}$, not $r^{-3}$. The clerk stopped before taking the reciprocal.\n\nso the statement is False.",
+    "**D.** → False\n\nThe denominator is $s^{-1}s^{2}=s^{1}$, so\n\n$$\n\\frac{s^{6}}{s^{-1}s^{2}}=s^{5},\n$$\n\nnot $s^{3}$. Writing $6-(-1)-2=5$ is the correct bookkeeping; treating both as minuses produces the false $3$.\n\nso the statement is False.",
+    "**E.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nThe numerator is\n\n$$\nu^{-1}+u^{-2}=\\frac{1}{u}+\\frac{1}{u^{2}}=\\frac{u+1}{u^{2}}\n$$\n\nDividing by $u^{-2}$ multiplies by $u^{2}$:\n\n$$\n\\frac{u+1}{u^{2}}\\cdot u^{2}=u+1\n$$\n\nso the statement is True."
    ],
-   "solution_overview": "Five independent reciprocal-power checks. A minus in a denominator flips when the quotient is written as a product; a negative exponent is not a minus sign.",
+   "solution_overview": "Five independent reciprocal-power checks. A minus in a denominator flips when the quotient is written as a product; inverting a simplified quotient is a further step.",
    "placeholder": false,
    "id": "math-2-62",
    "case_id": "MATH 2.62",
@@ -2017,16 +2017,16 @@
    "sort_order": 63
   },
   {
-   "title": "A zero power is not a zero value",
+   "title": "Zero exponents mixed with a cancelled stack",
    "subsection": "2.3",
-   "difficulty_level": "3/5",
+   "difficulty_level": "4/5",
    "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "For every $a\\neq 0$, the rule $a^{0}=1$ is treated as valid.",
-    "A booklet treats $0^{-3}$ as a defined real number.",
-    "Cancelling inverse cubes, $x^{3}x^{-3}=1$ for $x\\neq 0$ is accepted.",
-    "Treating $b^{0}=0$ for every $b\\neq 0$ is offered as an identity.",
-    "On $c,d\\neq 0$, the product $(cd)^{0}$ is rewritten as $1$."
+    "Whenever $a\\neq 0$, rewriting $\\dfrac{a^{5}}{a^{5}}$ as $a^{0}$ and then as $1$ is accepted.",
+    "A booklet treats $0^{-3}\\cdot 0^{3}$ as $0^{0}$ and then as $1$, by the product rule for exponents.",
+    "On $x\\neq 0$, cancelling $x^{3}x^{-3}x^{0}$ is claimed to leave $x^{0}$, hence $1$.",
+    "Treating $(2b)^{0}=2b^{0}$ for every $b\\neq 0$ is offered, so the left side is read as $2$.",
+    "On $c,d\\neq 0$, rewriting $\\bigl((cd)^{3}\\bigr)^{0}(c^{0}+d^{0})$ as $2$ is accepted."
    ],
    "answer_key": [
     true,
@@ -2036,13 +2036,13 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nFor $a\\neq 0$ one has $a^{n}/a^{n}=a^{0}$ and $a^{n}/a^{n}=1$, so\n\n$$\na^{0}=1\n$$\n\nso the statement is True.",
-    "**B.** → False\n\nBy definition $0^{-3}=1/0^{3}$, and division by zero is undefined. Negative exponents require a nonzero base.\n\nso the statement is False.",
-    "**C.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nAdd the exponents:\n\n$$\nx^{3}x^{-3}=x^{0}=1\n$$\n\non $x\\neq 0$.\n\nso the statement is True.",
-    "**D.** → False\n\nThe zero exponent produces $1$, not $0$. For instance $2^{0}=1$. A zero exponent is not a zero value.\n\nso the statement is False.",
-    "**E.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nA nonzero product still has zero exponent $1$:\n\n$$\n(cd)^{0}=1=c^{0}d^{0}\n$$\n\non $c,d\\neq 0$.\n\nso the statement is True."
+    "**A.** → True\n\nA quotient of equal powers is\n\n$$\n\\frac{a^{5}}{a^{5}}=a^{0}=1\n$$\n\non $a\\neq 0$. The two rewritings are the same number.\n\nso the statement is True.",
+    "**B.** → False\n\nThe factor $0^{-3}=1/0^{3}$ is already undefined, so the product is not a real number. The slogan $a^{n}a^{-n}=1$ needs a nonzero base.\n\nso the statement is False.",
+    "**C.** → True\n\nThe claim is checked with the power rules — product, quotient, and power of a power — on the stated domain.\n\nAdd the exponents:\n\n$$\nx^{3}x^{-3}x^{0}=x^{0}\\cdot x^{0}=x^{0}=1\n$$\n\non $x\\neq 0$.\n\nso the statement is True.",
+    "**D.** → False\n\nA zero exponent applies to the whole base:\n\n$$\n(2b)^{0}=1,\\qquad 2b^{0}=2\\cdot 1=2\n$$\n\nThe two sides differ. Parentheses decide whether $2$ is in the base.\n\nso the statement is False.",
+    "**E.** → True\n\nThe stacked power has outer exponent $0$:\n\n$$\n((cd)^{3})^{0}=1\n$$\n\nEach zero power is $1$, so $c^{0}+d^{0}=2$, and the product is $1\\cdot 2=2$.\n\nso the statement is True."
    ],
-   "solution_overview": "Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$ and inverse powers cancel to $1$. Negative powers of $0$ are undefined.",
+   "solution_overview": "Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$. A negative power of $0$ is undefined; $(2b)^{0}$ is not $2b^{0}$.",
    "placeholder": false,
    "id": "math-2-64",
    "case_id": "MATH 2.64",

@@ -6,92 +6,95 @@ CTX = "Evaluate each statement. Mark it TRUE or FALSE."
 
 TASKS = [
     task(
-        title="Stacked exponents versus a plain product",
+        title="A stacked power compared with a product after a rewrite",
         subsection="2.3",
-        difficulty="3/5",
+        difficulty="4/5",
         context=CTX,
         items=[
             (
-                r"Stacked powers $(x^{-2})^{-3}$ for $x\neq 0$ are recorded as $x^{-5}$, the same exponent as the product $x^{-2}x^{-3}$.",
+                r"After rewriting $(x^{-2})^{-3}$ for $x\neq 0$, a clerk compares it with the product $x^{-2}x^{-3}$ and reports that both leave $x^{-5}$.",
                 False,
-                r"""Power of a power multiplies exponents:
-$$(x^{-2})^{-3}=x^{(-2)\cdot(-3)}=x^{6}.$$
-The exponent $-5$ is $-2+(-3)$, which belongs to the product $x^{-2}x^{-3}$, not to the stacked power.""",
+                r"""Power of a power multiplies:
+$$(x^{-2})^{-3}=x^{6}.$$
+The product adds:
+$$x^{-2}x^{-3}=x^{-5}.$$
+The two results are different, so they cannot both equal $x^{-5}$.""",
             ),
             (
-                r"Multiplying $w^{5}w^{-2}$ whenever $w\neq 0$ is claimed to leave $w^{3}$.",
+                r"On $w\neq 0$, simplifying $w^{5}w^{-2}/w^{-1}$ is claimed to leave $w^{4}$. A marker then substitutes $w=2$ and ticks $16$.",
                 True,
-                r"""The product rule adds exponents:
-$$w^{5}w^{-2}=w^{5+(-2)}=w^{3}$$
-on $w\neq 0$.""",
+                r"""Add the exponents in the product, then subtract the denominator:
+$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{5-2-(-1)}=w^{4}.$$
+At $w=2$ one has $16$, matching the claimed check.""",
             ),
             (
-                r"On $t>0$, raising $(t^{2})^{3}$ is entered as $t^{5}$.",
+                r"Whenever $t>0$, a note treats $((t^{2})^{3})^{1/2}$ as $t^{5/2}$, adding $2+3$ before taking the outer half-power.",
                 False,
-                r"""Stacked exponents multiply:
-$$(t^{2})^{3}=t^{6}.$$
-Adding $2+3$ produces the false exponent $5$, which would describe the product $t^{2}t^{3}$.""",
+                r"""Innermost stack multiplies: $(t^{2})^{3}=t^{6}$, then
+$$(t^{6})^{1/2}=t^{3}$$
+on $t>0$. Adding $2+3$ first is the product rule, not the power-of-a-power rule.""",
             ),
             (
-                r"Whenever $a\neq 0$, treating $a^{-4}a^{4}$ as $1$ is accepted as an identity.",
+                r"Provided $a\neq 0$, rewriting $a^{-4}(a^{2})^{2}$ as $1$ is accepted, because the second factor is said to cancel the first.",
                 True,
-                r"""Add the exponents:
-$$a^{-4}a^{4}=a^{0}=1$$
-for $a\neq 0$.""",
+                r"""The second factor is a stacked power:
+$$(a^{2})^{2}=a^{4},\qquad a^{-4}a^{4}=a^{0}=1$$
+on $a\neq 0$. The cancellation is genuine, not a dropped exponent.""",
             ),
             (
-                r"A candidate records $(b^{-1})^{2}=b^{-3}$ for every $b\neq 0$.",
+                r"For $b\neq 0$, a candidate records $((b^{-1})^{2})^{-1}$ as $b^{-3}$, mixing a stack with the product $b^{-1}b^{-2}$.",
                 False,
-                r"""Multiply, do not add:
-$$(b^{-1})^{2}=b^{-2}=\frac{1}{b^{2}}.$$
-The exponent $-3$ is $-1+(-2)$, mixing a stacked power with a product.""",
+                r"""Innermost: $(b^{-1})^{2}=b^{-2}$. Then
+$$(b^{-2})^{-1}=b^{2}.$$
+The exponent $-3$ is the sum $-1+(-2)$, which belongs to a different expression.""",
             ),
         ],
-        overview=r"Five independent exponent claims. Stacked powers multiply; products add. $(x^{-2})^{-3}=x^{6}$, while $x^{-2}x^{-3}=x^{-5}$.",
+        overview=r"Five independent exponent claims. A stack multiplies; a product adds. After rewriting, $(x^{-2})^{-3}=x^{6}$ is not the same as $x^{-2}x^{-3}=x^{-5}$.",
     ),
     task(
-        title="Reciprocals hiding in a denominator",
+        title="A minus in the denominator that has to be flipped twice",
         subsection="2.3",
-        difficulty="3/5",
+        difficulty="4/5",
         context=CTX,
         items=[
             (
-                r"Clearing $p^{3}/p^{-2}$ for $p\neq 0$ is recorded as $p^{5}$.",
+                r"Clearing $\dfrac{p^{3}p^{-1}}{p^{-2}}$ for $p\neq 0$ is recorded as $p^{4}$. Substituting $p=2$ is then said to recover $16$.",
                 True,
-                r"""A quotient subtracts exponents, and subtracting a minus adds:
-$$\frac{p^{3}}{p^{-2}}=p^{3-(-2)}=p^{5}$$
-on $p\neq 0$.""",
+                r"""Numerator first: $p^{3}p^{-1}=p^{2}$. Then
+$$\frac{p^{2}}{p^{-2}}=p^{2-(-2)}=p^{4}.$$
+At $p=2$ the value is $16$, matching the check.""",
             ),
             (
-                r"Working with $q\neq 0$, a slip writes $q^{-3}=-q^{3}$.",
+                r"Working with $q\neq 0$, a slip writes $\dfrac{1}{q^{-3}}=-q^{3}$, reading the minus in the exponent as a change of sign.",
                 False,
-                r"""A negative exponent is a reciprocal, not a change of sign:
-$$q^{-3}=\frac{1}{q^{3}}.$$
-For $q=2$ one has $2^{-3}=1/8$, whereas $-2^{3}=-8$.""",
+                r"""A negative exponent is a reciprocal:
+$$\frac{1}{q^{-3}}=q^{3}.$$
+The extra minus sign would describe $-q^{3}$. For $q=2$ one has $8$, not $-8$.""",
             ),
             (
-                r"Provided $r\neq 0$, inverting $1/r^{-4}$ is claimed to recover $r^{4}$.",
-                True,
-                r"""By definition $r^{-4}=1/r^{4}$, so
-$$\frac{1}{r^{-4}}=r^{4}$$
-on $r\neq 0$.""",
-            ),
-            (
-                r"Someone records $s^{6}/s^{-1}$ as $s^{5}$ whenever $s\neq 0$, forgetting to flip the minus in the denominator.",
+                r"Provided $r\neq 0$, inverting $\dfrac{r^{-4}}{r^{-1}}$ is claimed to leave $r^{-3}$, the same monomial as the uninverted quotient.",
                 False,
-                r"""Subtracting the denominator's exponent gives
-$$\frac{s^{6}}{s^{-1}}=s^{6-(-1)}=s^{7},$$
-not $s^{5}$. Leaving the minus unflipped is the usual bookkeeping error.""",
+                r"""The quotient is
+$$\frac{r^{-4}}{r^{-1}}=r^{-3}.$$
+Inverting it produces $r^{3}$, not $r^{-3}$. The clerk stopped before taking the reciprocal.""",
             ),
             (
-                r"For every $u\neq 0$, rewriting $u^{-1}=1/u$ is accepted.",
+                r"Someone records $\dfrac{s^{6}}{s^{-1}s^{2}}$ as $s^{3}$ whenever $s\neq 0$, treating both denominator exponents as minuses.",
+                False,
+                r"""The denominator is $s^{-1}s^{2}=s^{1}$, so
+$$\frac{s^{6}}{s^{-1}s^{2}}=s^{5},$$
+not $s^{3}$. Writing $6-(-1)-2=5$ is the correct bookkeeping; treating both as minuses produces the false $3$.""",
+            ),
+            (
+                r"On $u\neq 0$, rewriting $\dfrac{u^{-1}+u^{-2}}{u^{-2}}$ as $u+1$ is accepted after a common denominator is cleared in the numerator.",
                 True,
-                r"""This is the definition of a negative exponent with $n=1$:
-$$u^{-1}=\frac{1}{u}$$
-on $u\neq 0$.""",
+                r"""The numerator is
+$$u^{-1}+u^{-2}=\frac{1}{u}+\frac{1}{u^{2}}=\frac{u+1}{u^{2}}.$$
+Dividing by $u^{-2}$ multiplies by $u^{2}$:
+$$\frac{u+1}{u^{2}}\cdot u^{2}=u+1.$$""",
             ),
         ],
-        overview=r"Five independent reciprocal-power checks. A minus in a denominator flips when the quotient is written as a product; a negative exponent is not a minus sign.",
+        overview=r"Five independent reciprocal-power checks. A minus in a denominator flips when the quotient is written as a product; inverting a simplified quotient is a further step.",
     ),
     task(
         title="Products of roots versus roots of sums",
@@ -136,43 +139,46 @@ $$\sqrt{27}\sqrt{3}=\sqrt{81}=9.$$""",
         overview=r"Five independent surd claims. Products of square roots may pass inside one radicand; sums may not. $\sqrt{12}\sqrt{3}=6$, but $\sqrt{18}+\sqrt{32}\neq\sqrt{50}$.",
     ),
     task(
-        title="A zero power is not a zero value",
+        title="Zero exponents mixed with a cancelled stack",
         subsection="2.3",
-        difficulty="3/5",
+        difficulty="4/5",
         context=CTX,
         items=[
             (
-                r"For every $a\neq 0$, the rule $a^{0}=1$ is treated as valid.",
+                r"Whenever $a\neq 0$, rewriting $\dfrac{a^{5}}{a^{5}}$ as $a^{0}$ and then as $1$ is accepted.",
                 True,
-                r"""For $a\neq 0$ one has $a^{n}/a^{n}=a^{0}$ and $a^{n}/a^{n}=1$, so
-$$a^{0}=1.$$""",
+                r"""A quotient of equal powers is
+$$\frac{a^{5}}{a^{5}}=a^{0}=1$$
+on $a\neq 0$. The two rewritings are the same number.""",
             ),
             (
-                r"A booklet treats $0^{-3}$ as a defined real number.",
+                r"A booklet treats $0^{-3}\cdot 0^{3}$ as $0^{0}$ and then as $1$, by the product rule for exponents.",
                 False,
-                r"""By definition $0^{-3}=1/0^{3}$, and division by zero is undefined. Negative exponents require a nonzero base.""",
+                r"""The factor $0^{-3}=1/0^{3}$ is already undefined, so the product is not a real number. The slogan $a^{n}a^{-n}=1$ needs a nonzero base.""",
             ),
             (
-                r"Cancelling inverse cubes, $x^{3}x^{-3}=1$ for $x\neq 0$ is accepted.",
+                r"On $x\neq 0$, cancelling $x^{3}x^{-3}x^{0}$ is claimed to leave $x^{0}$, hence $1$.",
                 True,
                 r"""Add the exponents:
-$$x^{3}x^{-3}=x^{0}=1$$
+$$x^{3}x^{-3}x^{0}=x^{0}\cdot x^{0}=x^{0}=1$$
 on $x\neq 0$.""",
             ),
             (
-                r"Treating $b^{0}=0$ for every $b\neq 0$ is offered as an identity.",
+                r"Treating $(2b)^{0}=2b^{0}$ for every $b\neq 0$ is offered, so the left side is read as $2$.",
                 False,
-                r"""The zero exponent produces $1$, not $0$. For instance $2^{0}=1$. A zero exponent is not a zero value.""",
+                r"""A zero exponent applies to the whole base:
+$$(2b)^{0}=1,\qquad 2b^{0}=2\cdot 1=2.$$
+The two sides differ. Parentheses decide whether $2$ is in the base.""",
             ),
             (
-                r"On $c,d\neq 0$, the product $(cd)^{0}$ is rewritten as $1$.",
+                r"On $c,d\neq 0$, rewriting $\bigl((cd)^{3}\bigr)^{0}(c^{0}+d^{0})$ as $2$ is accepted.",
                 True,
-                r"""A nonzero product still has zero exponent $1$:
-$$(cd)^{0}=1=c^{0}d^{0}$$
-on $c,d\neq 0$.""",
+                r"""The stacked power has outer exponent $0$:
+$$((cd)^{3})^{0}=1.$$
+Each zero power is $1$, so $c^{0}+d^{0}=2$, and the product is $1\cdot 2=2$.""",
             ),
         ],
-        overview=r"Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$ and inverse powers cancel to $1$. Negative powers of $0$ are undefined.",
+        overview=r"Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$. A negative power of $0$ is undefined; $(2b)^{0}$ is not $2b^{0}$.",
     ),
     task(
         title="Integer values of short fractional powers",
