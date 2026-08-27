@@ -1,11 +1,13 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Chapters 1 (Logic), 3 (Financial mathematics), 4 (Equations), 5 (Linear equations),
- * 8 (Power functions), 11 (Elementary probability), and 12 (Binomial)
- * are populated; others use placeholders.
+ * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
+ * 4 (Equations), 5 (Linear equations), 8 (Power functions),
+ * 11 (Elementary probability), and 12 (Binomial) are populated;
+ * others use placeholders.
  */
 
 import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
+import { MATH_CH2_ALGEBRA, MATH_CH2_SUBSECTIONS } from "@/data/math-ch2-elementary-algebra";
 import { MATH_CH4_EQUATIONS, MATH_CH4_SUBSECTIONS } from "@/data/math-ch4-equations";
 import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
 import { MATH_CH8_POWER_FUNCTIONS } from "@/data/math-ch8-power-functions";
@@ -58,6 +60,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   Record<number, Readonly<Record<string, number>>>
 > = {
   1: { "1.1": 10, "1.2": 5 },
+  2: { "2.1": 10, "2.2": 5, "2.3": 5, "2.4": 5 },
   3: { "3.1": 10, "3.2": 5, "3.3": 5, "3.4": 5 },
   4: { "4.1": 10, "4.2": 5, "4.3": 5, "4.4": 5 },
 };
@@ -162,6 +165,7 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
 
 const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   1: MATH_CH1_LOGIC,
+  2: MATH_CH2_ALGEBRA,
   3: MATH_CH11_FINANCIAL,
   4: MATH_CH4_EQUATIONS,
   5: MATH_CH5_LINEAR_EQUATIONS,
@@ -175,6 +179,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
 
 const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
   1: MATH_CH1_SUBSECTIONS,
+  2: MATH_CH2_SUBSECTIONS,
   3: MATH_CH11_SUBSECTIONS,
   4: MATH_CH4_SUBSECTIONS,
   11: MATH_CH12_SUBSECTIONS,

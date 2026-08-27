@@ -1565,11 +1565,16 @@ function AllExplanationsPanel({
     task.solution_overview?.trim() ?? "",
     "",
     ...task.statements.flatMap((_, i) => {
-      const expl = (task.tactical_explanations[i] ?? "").trim();
-      if (expl) return [expl, ""];
-      const verdict = task.answer_key[i] ? "correct" : "false";
+      const letter = letters[i] ?? String(i + 1);
+      const verdict = task.answer_key[i] ? "True" : "False";
+      let expl = (task.tactical_explanations[i] ?? "").trim();
+      if (expl) {
+        // Always bind panel block i to statement i / answer_key[i], Ch4/Ch13 header.
+        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
+      }
       return [
-        `**${letters[i] ?? String(i + 1)})** ${task.statements[i]} *(${verdict})*`,
+        `**${letter}.** → ${verdict}\n\n${task.statements[i]}`,
         "",
       ];
     }),

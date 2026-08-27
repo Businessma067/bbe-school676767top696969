@@ -72,6 +72,18 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       ]),
     ),
     toChapterToc(
+      2,
+      "Elementary algebra",
+      "Chapter 2",
+      subs(2, [
+        { id: "2.1", title: "Expanding, factoring, and identities" },
+        { id: "2.2", title: "Rational expressions and algebraic fractions" },
+        { id: "2.3", title: "Powers, roots, and negative exponents" },
+        { id: "2.4", title: "Absolute value and algebraic rewriting" },
+        { id: "2.5", title: "Mixed exam sets" },
+      ]),
+    ),
+    toChapterToc(
       3,
       "Financial mathematics",
       "Chapter 3",
