@@ -9,9 +9,12 @@ import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
-import { CaseContextRich } from "@/components/CaseContextRich";
-import { ExplanationText } from "@/components/ExplanationText";
-import { scrubStatementHints } from "@/lib/case-context";
+import {
+  ExamExplanationText,
+  ExamQuestionBody,
+  ExamSolutionOverview,
+  ExamStatementText,
+} from "@/components/mock-exam/ExamQuestionContent";
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
@@ -347,8 +350,15 @@ function ReviewExamPage() {
                         {q.subtopicTag}
                       </p>
                     ) : null}
-                    <CaseContextRich content={q.stem} className="mb-4" />
-                    <div className="space-y-3">
+                    <ExamQuestionBody q={q} />
+                    {q.solutionOverview ? (
+                      <ExamSolutionOverview
+                        text={q.solutionOverview}
+                        subject={q.subject}
+                        className="mb-4 mt-4"
+                      />
+                    ) : null}
+                    <div className="mt-4 space-y-3">
                       {q.statements.map((s, si) => {
                         const userMarked = m.statements[si].userMarked;
                         const correct = userMarked === s.isTrue;
@@ -374,13 +384,14 @@ function ReviewExamPage() {
                                   <span className="mr-2 font-semibold text-taupe">
                                     {String.fromCharCode(65 + si)}.
                                   </span>
-                                  {scrubStatementHints(s.text)}
+                                  <ExamStatementText q={q} text={s.text} />
                                 </p>
                                 <p className="mt-1.5 text-xs text-taupe">
                                   Your answer: <strong>{userMarked ? "True" : "—"}</strong> ·
                                   Correct answer: <strong>{s.isTrue ? "True" : "False"}</strong>
                                 </p>
-                                <ExplanationText
+                                <ExamExplanationText
+                                  q={q}
                                   text={s.explanation}
                                   className="mt-1.5 text-xs text-muted-foreground"
                                 />
