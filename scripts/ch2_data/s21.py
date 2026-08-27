@@ -302,11 +302,13 @@ Those terms vanish only when $uv(u-v)=0$, not identically.""",
             (
                 r"Matching $x^2+2x+1$ with $(x+1)^2+1$ is recorded as an identity.",
                 False,
-                r"""$$
-(x+1)^2=x^2+2x+1
+                r"""A perfect square $(x+1)^2$ already equals the trinomial:
+
+$$
+(x+1)^2=x^2+2x+1.
 $$
 
- already. The extra $+1$ makes the right-hand side one larger for every $x$.""",
+The extra $+1$ on the claimed right-hand side makes it one larger for every $x$.""",
             ),
         ],
         overview="Five rewrite checks: a grouped difference of squares, an elementary gap square, a binomial remainder, a cube with dropped mixed terms, and an off-by-one perfect square.",
