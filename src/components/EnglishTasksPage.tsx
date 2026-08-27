@@ -1,14 +1,13 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "@tanstack/react-router";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { AuthModal } from "@/components/AuthModal";
-import { AuthNav } from "@/components/AuthNav";
+import { SiteHeader } from "@/components/SiteHeader";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { useAuthGate } from "@/hooks/use-auth-gate";
-import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
@@ -80,7 +79,7 @@ type ExplanationState = {
   highlight: string;
 };
 
-export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: Props) {
+export function EnglishTasksPage({ tier }: Props) {
   const chapters = useMemo(() => englishChaptersForTier(tier), [tier]);
   const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
     null,
@@ -217,9 +216,6 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
     });
   };
 
-  const tierLabel =
-    tier === "demo" ? "Demo" : tier === "lite" ? "Lite Course" : "Full Course";
-
   const chapterTitle =
     activeChapter === "revision"
       ? "Fix what tripped you up"
@@ -228,26 +224,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
   return (
     <PracticeCalcProvider>
       <div className={PRACTICE_PAGE}>
-        <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-          <div className={PRACTICE_HEADER_INNER}>
-            <Link
-              to={backTo}
-              className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary"
-            >
-              <ChevronLeft className="h-4 w-4" />{" "}
-              <span className="hidden sm:inline">{backLabel}</span>
-            </Link>
-            <div className="flex items-center gap-3">
-              <div className="hidden sm:flex flex-col items-end leading-tight">
-                <span className="font-display text-sm font-bold tracking-tight">English</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                  {tierLabel} · Texts · Grammar · Vocabulary
-                </span>
-              </div>
-              <AuthNav />
-            </div>
-          </div>
-        </header>
+        <SiteHeader maxWidthClassName="max-w-none" compact />
 
         <div
           className={cn(

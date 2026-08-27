@@ -4,10 +4,8 @@ import type { ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { MobileNav } from "@/components/MobileNav";
-import {
-  navItemsForPath,
-  shouldShowSiteNav,
-} from "@/config/site-nav";
+import { navItemsForTier, shouldShowSiteNav } from "@/config/site-nav";
+import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { cn } from "@/lib/utils";
 
 type SiteHeaderProps = {
@@ -75,7 +73,8 @@ export function SiteHeader({
   compact = false,
 }: SiteHeaderProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const navItems = navItemsForPath(pathname);
+  const { ready, tier } = useAccountNavTier();
+  const navItems = navItemsForTier(tier);
   const navVisible = shouldShowSiteNav(pathname, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 
@@ -97,13 +96,24 @@ export function SiteHeader({
         )}
       >
         {left ?? <BrandMark compact={compact} />}
-        {center ?? (navVisible ? <DesktopNav items={navItems} /> : null)}
+        {center ??
+          (navVisible ? (
+            ready ? (
+              <DesktopNav items={navItems} />
+            ) : (
+              <div className="hidden h-5 flex-1 lg:block" aria-hidden="true" />
+            )
+          ) : null)}
         <div className="flex shrink-0 items-center gap-3">
           {actions}
           <AuthNav />
           {mobileVisible ? (
             <div className="lg:hidden">
-              <MobileNav items={navItems} />
+              {ready ? (
+                <MobileNav items={navItems} />
+              ) : (
+                <div className="h-9 w-9 rounded-md border border-border bg-card" aria-hidden="true" />
+              )}
             </div>
           ) : null}
         </div>
