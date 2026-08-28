@@ -104,13 +104,41 @@ def length_profile(index_in_task: int) -> str:
     return "medium"
 
 
+_TANGLED_MARKERS = re.compile(
+    r"Having first noted|Under the standing hypothesis|Granting the domain|"
+    r"With the provisional reading|Taking as given|A multi-step margin note|"
+    r"A candidate first checks|After a quick numerical|Relying on the observation|"
+    r"The working is arranged|In the version circulated|According to the examiner|"
+    r"A standardisation remark|The board's model solution|"
+    r"elevates the agreement|promotes the local agreement|administrative note asserts",
+    re.I,
+)
+
+
+def is_tangled(statement: str) -> bool:
+    """True when the claim is wrapped in long exam-board / margin-note prose."""
+    return bool(_TANGLED_MARKERS.search(statement)) or len(statement.split()) >= 36
+
+
 def complexity_score(statement: str, subsection: str) -> int:
     """Higher score ⇒ the claim needs more displayed steps."""
     text = statement
     score = 0
     score += len(_LATEX.findall(text)) * 3
     score += len(text) // 80
-    if re.search(r"substitut|test point|counter|disagree at|checking that|remainder", text, re.I):
+    words = len(text.split())
+    if words >= 36:
+        score += 12
+    if words >= 55:
+        score += 8
+    if is_tangled(text):
+        score += 14
+    if re.search(
+        r"substitut|test point|counter|disagree at|checking that|remainder|"
+        r"numerical (?:spot-)?check|single convenient",
+        text,
+        re.I,
+    ):
         score += 8
     if re.search(r"\\(?:d)?frac|common denominator|cancell|reduc", text, re.I):
         score += 6
@@ -138,25 +166,75 @@ def complexity_score(statement: str, subsection: str) -> int:
     if pat in heavy:
         score += 10
     light = {"am_gm_inequality", "polarisation", "perfect_square_match", "sqrt_principal"}
-    if pat in light:
+    if pat in light and not is_tangled(text):
         score -= 4
     return max(0, score)
 
 
 def assign_profiles(statements: list[str], subsection: str) -> list[str]:
-    """Pick short / medium / stepped from content — at least one short and one stepped."""
+    """Pick short / medium / stepped from content — at least one short and one stepped.
+
+    Tangled textual claims are forced toward ``stepped`` so the explanation
+    unpacks the nested prose in MATH 13.18 style.
+    """
     n = len(statements)
     scores = [complexity_score(s, subsection) for s in statements]
     profiles = ["medium"] * n
-    short_i = min(range(n), key=lambda i: (scores[i], len(statements[i]), i))
+    short_i = min(
+        range(n),
+        key=lambda i: (is_tangled(statements[i]), scores[i], len(statements[i]), i),
+    )
     order = sorted(range(n), key=lambda i: (-scores[i], -len(statements[i]), i))
     stepped = [i for i in order if i != short_i][:2]
+    # Prefer tangled items for the stepped slots.
+    tangled_idxs = [i for i in range(n) if is_tangled(statements[i]) and i != short_i]
+    for i in tangled_idxs:
+        if i not in stepped:
+            if len(stepped) < 2:
+                stepped.append(i)
+            else:
+                # Replace the lightest non-tangled stepped slot if needed.
+                for j, s in enumerate(stepped):
+                    if not is_tangled(statements[s]):
+                        stepped[j] = i
+                        break
     if len(stepped) < 1:
         stepped = [order[0]] if order[0] != short_i else [order[1] if len(order) > 1 else 0]
     profiles[short_i] = "short"
     for i in stepped:
         profiles[i] = "stepped"
     return profiles
+
+
+def tangled_opener(statement: str) -> str | None:
+    """Lead sentence that names the rhetorical trap in a tangled claim."""
+    if not is_tangled(statement):
+        return None
+    if re.search(r"test (?:point|value|pair)|numerical (?:spot-)?check|substitut", statement, re.I):
+        return (
+            "The claim leans on a single numerical check. "
+            "An identity on a domain cannot be certified by one favourable substitution; "
+            "the algebra itself must be compared."
+        )
+    if re.search(r"standardisation|administrative|board's model|circulated to markers", statement, re.I):
+        return (
+            "The standardisation wording packages an algebraic claim as if it were already settled. "
+            "Strip the administrative frame and test the identity directly."
+        )
+    if re.search(r"multi-step margin|first rewriting|first clearing|first replacing|first stacking", statement, re.I):
+        return (
+            "The margin note chains several informal steps. "
+            "Rebuild the same chain with named identities and separate displays."
+        )
+    if re.search(r"Having first noted|Under the standing|Granting the domain|provisional reading", statement, re.I):
+        return (
+            "The surrounding hypotheses do not change the algebraic content. "
+            "Check the rewritten form against the elementary identity on the stated domain."
+        )
+    return (
+        "Despite the long surrounding prose, the mathematical content is a single identity claim. "
+        "Verify it with the named elementary rule."
+    )
 
 
 def _split_display_chain(formula: str) -> list[str]:
@@ -461,23 +539,18 @@ def _w_binomial_cross_coefficient(c: Ctx) -> str:
         claimed = f"${raw}$" if raw and not raw.startswith("$") else raw or "the printed value"
     else:
         claimed = "the printed value"
-    if c.profile == "short":
+    if c.profile == "short" and not is_tangled(c.statement):
         return short(
             f"In a square of a sum, each mixed product is doubled. "
             f"The pair contributes ${cross}$, not the undoubled product."
         )
-    if c.profile == "stepped":
-        expand = f"({inner})^2"
-        return _join(
-            "Expand the binomial square and isolate the cross term:",
-            step("Expand", expand),
-            step("Cross term", cross),
-            f"The collected coefficient {'matches' if c.truth else 'contradicts'} {claimed}.",
-        )
+    expand = f"({inner})^2"
+    # Try a concrete collected form for common trinomials
     return _join(
-        "In a square of a sum, each mixed product is doubled. The relevant pair contributes",
-        disp(cross),
-        f"The collected coefficient {'matches' if c.truth else 'is not'} {claimed}.",
+        "Expand the binomial square and isolate the mixed-product contribution:",
+        step("Expand", expand),
+        step("Cross term", cross),
+        f"The collected coefficient {'matches' if c.truth else 'contradicts'} {claimed}.",
     )
 
 
@@ -528,22 +601,17 @@ def _w_vanishing_sum_cubes(c: Ctx) -> str:
 
 
 def _w_polarisation(c: Ctx) -> str:
-    if c.profile == "short":
+    if c.profile == "short" and not is_tangled(c.statement):
         return short(
             "Expand $(r+s)^2$ and $(r-s)^2$; subtracting removes the squares "
             "and leaves the doubled cross term $4rs$."
         )
-    if c.profile == "stepped":
-        return _join(
-            "Expand the two binomial squares:",
-            step("First square", r"(r+s)^2=r^2+2rs+s^2"),
-            step("Second square", r"(r-s)^2=r^2-2rs+s^2"),
-            "Their difference is $4rs$.",
-        )
     return _join(
-        "Expand the two binomial squares:",
-        disp(r"(r+s)^2=r^2+2rs+s^2,\qquad (r-s)^2=r^2-2rs+s^2"),
-        "Their difference is $4rs$.",
+        "Expand the two binomial squares separately:",
+        step("First square", r"(r+s)^2=r^2+2rs+s^2"),
+        step("Second square", r"(r-s)^2=r^2-2rs+s^2"),
+        step("Subtract", r"(r+s)^2-(r-s)^2=4rs"),
+        "The cross terms add rather than cancel.",
     )
 
 
@@ -604,22 +672,28 @@ def _w_complete_square(c: Ctx) -> str:
         v, mid, const = tri.group(1), tri.group(2), tri.group(3)
         b = int(re.search(r"([+-]?\d+)", mid).group(1))  # type: ignore[union-attr]
         half = b // 2
+        c_val = int(const)
     else:
-        v, half, const = "x", -4, "20"
+        v, b, half, c_val = "x", -8, -4, 20
     sq = half * half
-    if c.profile == "stepped":
+    leftover = c_val - sq
+    lin = f"{b:+d}"
+    half_s = f"{half:+d}"
+    left_s = f"{leftover:+d}"
+    if c.profile == "stepped" or is_tangled(c.statement):
         return _join(
-            f"Half of the linear coefficient is ${half}$, and $({half})^2={sq}$.",
-            step("Complete", f"{v}^2{b if 'b' in dir() else '-8'}{v}+{const}=({v}{half})^2+{int(const)-sq}"),
+            f"Half of the linear coefficient ${lin}$ is ${half}$, and $({half})^2={sq}$.",
             step(
-                "Rewrite",
-                f"{v}^2-8{v}+20=({v}-4)^2+4",
+                "Complete",
+                f"{v}^2{lin}{v}{c_val:+d}=({v}^2{lin}{v}+{sq}){left_s}"
+                f"=({v}{half_s})^2{left_s}",
             ),
+            f"The leftover constant is ${left_s}$, not zero." if leftover else "The square completes exactly.",
         )
     return _join(
-        f"Half of $-8$ is $-4$, and $(-4)^2=16$. Add and subtract $16$:",
-        disp(f"{v}^2-8{v}+20=({v}^2-8{v}+16)+4=({v}-4)^2+4"),
-        "The leftover constant is $+4$, not zero.",
+        f"Half of ${lin}$ is ${half}$, and $({half})^2={sq}$. Add and subtract ${sq}$:",
+        disp(f"{v}^2{lin}{v}{c_val:+d}=({v}^2{lin}{v}+{sq}){left_s}=({v}{half_s})^2{left_s}"),
+        f"The leftover constant is ${left_s}$, not zero." if leftover else "The square completes exactly.",
     )
 
 
@@ -799,24 +873,33 @@ def _w_nested_unit_fraction(c: Ctx) -> str:
 
 
 def _w_exponent_stack(c: Ctx) -> str:
-    if c.profile == "stepped":
+    text = c.statement
+    if re.search(r"\(\(t\^\{?2\}?\)\^\{?3\}?\)\^\{?1/2\}?|t\^\{5/2\}|adding\s*2\+3", text, re.I):
         return _join(
+            "A power of a power multiplies the exponents, working from the inside out:",
+            step("Inner stack", r"(t^{2})^{3}=t^{6}"),
+            step("Outer root", r"(t^{6})^{1/2}=t^{3}"),
+            r"Adding $2+3$ before the half-power would describe a different expression, not $((t^{2})^{3})^{1/2}$.",
+        )
+    if "product" in text.lower() or r"x^{-2}x^{-3}" in text or re.search(r"\(x\^\{-2\}\)\^\{-3\}", text):
+        body = _join(
             "A stacked power multiplies exponents; a product adds them:",
             step("Stack", r"(x^{-2})^{-3}=x^{6}"),
             step("Product", r"x^{-2}x^{-3}=x^{-5}"),
             "The two rules produce different results.",
         )
-    if "product" in c.statement.lower() or r"x^{-2}x^{-3}" in c.statement:
+        return body
+    if re.search(r"a\^\{-4\}|cancel.*first", text, re.I):
         return _join(
-            "Power of a power multiplies:",
-            disp(r"(x^{-2})^{-3}=x^{6}"),
-            disp(r"x^{-2}x^{-3}=x^{-5}"),
-            "The two results are different.",
+            "Power of a power multiplies; then multiply the outer factors:",
+            step("Square", r"(a^{2})^{2}=a^{4}"),
+            step("Product", r"a^{-4}\cdot a^{4}=a^{0}=1"),
+            "The cancellation is legitimate on $a\\neq 0$." if c.truth else "The printed cancellation step does not match this product.",
         )
     return _join(
         "Innermost stack multiplies exponents:",
-        disp(r"(t^{2})^{3}=t^{6}"),
-        disp(r"(t^{6})^{1/2}=t^{3}"),
+        step("Inner", r"(t^{2})^{3}=t^{6}"),
+        step("Outer", r"(t^{6})^{1/2}=t^{3}"),
         "Adding exponents first would be the product rule, not the power-of-a-power rule.",
     )
 
@@ -895,7 +978,19 @@ def _w_sqrt_principal(c: Ctx) -> str:
 def _w_abs_piecewise(c: Ctx) -> str:
     inner = re.search(r"\|([^|]+)\|", c.statement)
     expr = inner.group(1) if inner else "w-4"
-    if c.profile == "stepped":
+    # Prefer w-4 style "add the letter → constant"
+    if re.search(r"adding \$[a-zA-Z]\$|leave the constant|leaves the constant", c.statement, re.I) or expr in {"w-4", "h-3", "k-2"}:
+        # Parse centre from expr like w-4
+        m = re.match(r"([a-zA-Z])-(\d+)", expr)
+        if m:
+            v, c0 = m.group(1), m.group(2)
+            return _join(
+                f"On the half-line ${v}<{c0}$ the inside ${expr}$ is negative, so the bars flip the sign:",
+                step("Rewrite", f"|{expr}|={c0}-{v}"),
+                step("Add", f"({c0}-{v})+{v}={c0}"),
+                f"The letter cancels and the constant ${c0}$ remains.",
+            )
+    if c.profile == "stepped" or is_tangled(c.statement):
         return _join(
             f"On the stated half-line the inside ${expr}$ has fixed sign:",
             step("Rewrite", f"|{expr}|"),
@@ -1142,6 +1237,9 @@ def generate_body(
     """Return explanation prose + display math only (no header, no closer)."""
     pattern = detect_pattern(statement, subsection)
     prof = profile or length_profile(index_in_task)
+    # Tangled textual claims always get the stepped treatment.
+    if is_tangled(statement) and prof == "medium":
+        prof = "stepped"
     ctx = Ctx(
         statement=statement.strip(),
         truth=bool(truth),
@@ -1154,6 +1252,11 @@ def generate_body(
     if not body or not str(body).strip():
         body = _w_expanding_generic(ctx)
     body = str(body).strip()
+    opener = tangled_opener(statement)
+    if opener and prof != "short":
+        # Prepend trap-naming lead for tangled claims (MATH 13.18 register).
+        if not body.startswith(opener[:40]):
+            body = _join(opener, body)
     if prof == "stepped":
         body = expand_stepped(body)
     body = body.strip()

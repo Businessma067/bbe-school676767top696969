@@ -12,7 +12,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"On the half-line $w<4$, rewriting $|w-4|$ as $4-w$ and then adding $w$ is claimed to leave the constant $4$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: On the half-line $w<4$, rewriting $|w-4|$ as $4-w$ and then adding $w$ is claimed to leave the constant $4$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w<4$.""",
                 True,
                 
             ),
@@ -22,7 +22,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $z>0$, replacing $\sqrt{z^2}$ by $z$ and concluding $\sqrt{z^2}-z=0$ on that half-line is accepted.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $z>0$, replacing $\sqrt{z^2}$ by $z$ and concluding $\sqrt{z^2}-z=0$ on that half-line is accepted — with the intermediate display still carrying $\sqrt{z^2}$.""",
                 True,
                 
             ),
@@ -61,7 +61,7 @@ TASKS = [
                 
             ),
             (
-                r"On the ray $z\ge 0$, rewriting $\sqrt{z^2}$ as $z$ is accepted.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: On the ray $z\ge 0$, rewriting $\sqrt{z^2}$ as $z$ is accepted. The claim is filed as settled for every admissible value of the letters.""",
                 True,
                 
             ),
@@ -85,7 +85,7 @@ TASKS = [
                 
             ),
             (
-                r"On the half-line $w<0$, the twin $|w|/w$ is recorded as $-1$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: On the half-line $w<0$, the twin $|w|/w$ is recorded as $-1$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -95,7 +95,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $h>0$, the reciprocal $h/|h|$ is claimed to equal $1$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Whenever $h>0$, the reciprocal $h/|h|$ is claimed to equal $1$. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -134,7 +134,7 @@ TASKS = [
                 
             ),
             (
-                r"Treating $|z+6|$ as the scaled copy $6|z|$ is proposed.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Treating $|z+6|$ as the scaled copy $6|z|$ is proposed, and further instructs candidates to treat any matching numerical check as decisive.""",
                 False,
                 
             ),
@@ -158,7 +158,7 @@ TASKS = [
                 
             ),
             (
-                r"Writing $|-u|=-|u|$ as an identity is proposed.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Writing $|-u|=-|u|$ as an identity is proposed.""",
                 False,
                 
             ),
@@ -168,7 +168,7 @@ TASKS = [
                 
             ),
             (
-                r"Someone claims $||h-1||=h-1$ for every real $h$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Someone claims $||h-1||=h-1$ for every real $h$, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -182,7 +182,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"Whenever $w>0$, rewriting $|w|$ as $w$ and then forming $|w|-w$ is claimed to leave $0$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $w>0$, rewriting $|w|$ as $w$ and then forming $|w|-w$ is claimed to leave $0$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w>0$.""",
                 True,
                 
             ),
@@ -216,7 +216,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"On the ray $w\ge 4$, rewriting $|w-4|$ as $w-4$ and subtracting $w$ is claimed to leave $-4$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: On the ray $w\ge 4$, rewriting $|w-4|$ as $w-4$ and subtracting $w$ is claimed to leave $-4$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w\ge 4$.""",
                 True,
                 
             ),
@@ -231,7 +231,7 @@ TASKS = [
                 
             ),
             (
-                r"Adding $h$ to $7$ is said to give the same number as $|h-7|$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Adding $h$ to $7$ is said to give the same number as $|h-7|$. No second independent substitution is attempted.""",
                 False,
                 
             ),
@@ -255,7 +255,7 @@ TASKS = [
                 
             ),
             (
-                r"A quotient identity $|z/h|=|z|/|h|$ whenever $h\neq 0$ is applied to record $|8/(-4)|=2$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: A quotient identity $|z/h|=|z|/|h|$ whenever $h\neq 0$ is applied to record $|8/(-4)|=2$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 True,
                 
             ),
@@ -289,7 +289,7 @@ TASKS = [
                 
             ),
             (
-                r"On the side $u>1$, the fraction $|u-1|/(1-u)$ is recorded as $-1$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: On the side $u>1$, the fraction $|u-1|/(1-u)$ is recorded as $-1$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -304,7 +304,7 @@ TASKS = [
                 
             ),
             (
-                r"Taking $|k-8|/(8-k)$ at $k=8$ as defined and equal to $0$ is proposed.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Taking $|k-8|/(8-k)$ at $k=8$ as defined and equal to $0$ is proposed, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -328,7 +328,7 @@ TASKS = [
                 
             ),
             (
-                r"At the midpoint $z=7$ of $[6,8]$, both distances in $|z-6|+|z-8|$ are $1$, summing to $4$.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: At the midpoint $z=7$ of $[6,8]$, both distances in $|z-6|+|z-8|$ are $1$, summing to $4$ — with the intermediate display still carrying $[6,8]$.""",
                 False,
                 
             ),
@@ -352,7 +352,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"Replacing $\sqrt{(w-4)^2}$ by $w-4$ for every $w$ is proposed.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Replacing $\sqrt{(w-4)^2}$ by $w-4$ for every $w$ is proposed. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt{(w-4)^2}$.""",
                 False,
                 
             ),
@@ -362,7 +362,7 @@ TASKS = [
                 
             ),
             (
-                r"On the region $z\ge 6$, the bars in $\sqrt{(z-6)^2}=|z-6|$ may be dropped.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: On the region $z\ge 6$, the bars in $\sqrt{(z-6)^2}=|z-6|$ may be dropped — with the intermediate display still carrying $\sqrt{(z-6)^2}=|z-6|$.""",
                 True,
                 
             ),
@@ -401,7 +401,7 @@ TASKS = [
                 
             ),
             (
-                r"The identity $\sqrt{z^2}+z=0$ is asserted for every real $z$.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: The identity $\sqrt{z^2}+z=0$ is asserted for every real $z$. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -425,7 +425,7 @@ TASKS = [
                 
             ),
             (
-                r"The comparison $|z+h|\le |z|+|h|$ is treated as always valid.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: The comparison $|z+h|\le |z|+|h|$ is treated as always valid. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -435,7 +435,7 @@ TASKS = [
                 
             ),
             (
-                r"If $w$ and $u$ are both negative, $|w+u|=|w|+|u|$ is asserted.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: If $w$ and $u$ are both negative, $|w+u|=|w|+|u|$ is asserted. Any remaining letters are declared free once that one check has passed.""",
                 True,
                 
             ),
@@ -474,7 +474,7 @@ TASKS = [
                 
             ),
             (
-                r"The two pieces $2k-8$ and $8-2k$ are said to be equal for every $k$.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: The two pieces $2k-8$ and $8-2k$ are said to be equal for every $k$, with the added remark that domain caveats may be left implicit once written once.""",
                 False,
                 
             ),
@@ -498,7 +498,7 @@ TASKS = [
                 
             ),
             (
-                r"Completing $z^2-12z+37$ gives $(z-6)^2+1$, so $|z^2-12z+37|=(z-6)^2+1$.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Completing $z^2-12z+37$ gives $(z-6)^2+1$, so $|z^2-12z+37|=(z-6)^2+1$ — with the intermediate display still carrying $(z-6)^2+1$.""",
                 True,
                 
             ),
@@ -508,7 +508,7 @@ TASKS = [
                 
             ),
             (
-                r"Because $k^2+1\ge 1$, the rewriting $|k^2+1|=k^2+1$ is used for every $k$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Because $k^2+1\ge 1$, the rewriting $|k^2+1|=k^2+1$ is used for every $k$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -522,7 +522,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"A candidate writes $|n|^3=|n^3|$ as an identity.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: A candidate writes $|n|^3=|n^3|$ as an identity. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $|n|^3=|n^3|$.""",
                 True,
                 
             ),
@@ -556,7 +556,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"Whenever $w<4$, the expression $|4-w|$ equals $4-w$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $w<4$, the expression $|4-w|$ equals $4-w$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w<4$.""",
                 True,
                 
             ),
@@ -571,7 +571,7 @@ TASKS = [
                 
             ),
             (
-                r"Combined with the swap rule, $|7-h|=|h-7|$ throughout.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Combined with the swap rule, $|7-h|=|h-7|$ throughout. Any remaining letters are declared free once that one check has passed.""",
                 True,
                 
             ),
@@ -595,7 +595,7 @@ TASKS = [
                 
             ),
             (
-                r"When the scalar is $-4$, $|-4u|=4|u|$ is recorded.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: When the scalar is $-4$, $|-4u|=4|u|$ is recorded. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 True,
                 
             ),
@@ -629,7 +629,7 @@ TASKS = [
                 
             ),
             (
-                r"The correct unrestricted rewriting is $\sqrt{(z-h)^2}=|z-h|$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: The correct unrestricted rewriting is $\sqrt{(z-h)^2}=|z-h|$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -644,7 +644,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $n\ge 4$, replacing $\sqrt{(n-4)^2}$ by $n-4$ and concluding $\sqrt{(n-4)^2}-(n-4)=0$ is accepted.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Whenever $n\ge 4$, replacing $\sqrt{(n-4)^2}$ by $n-4$ and concluding $\sqrt{(n-4)^2}-(n-4)=0$ is accepted, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -668,7 +668,7 @@ TASKS = [
                 
             ),
             (
-                r"At the midpoint $z=4$ of $[1,7]$, both distances in $|z-1|+|z-7|$ are $3$, summing to $8$.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: At the midpoint $z=4$ of $[1,7]$, both distances in $|z-1|+|z-7|$ are $3$, summing to $8$ — with the intermediate display still carrying $[1,7]$.""",
                 False,
                 
             ),
@@ -692,7 +692,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"Completing $w^2-8w+17$ produces $(w-4)^2+1$, hence $|w^2-8w+17|=(w-4)^2+1$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Completing $w^2-8w+17$ produces $(w-4)^2+1$, hence $|w^2-8w+17|=(w-4)^2+1$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w^2-8w+17$.""",
                 True,
                 
             ),
@@ -702,7 +702,7 @@ TASKS = [
                 
             ),
             (
-                r"Because $(z-6)^2-1$ reaches $-1$, writing $|z^2-12z+35|=(z-6)^2-1$ as an identity is proposed.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Because $(z-6)^2-1$ reaches $-1$, writing $|z^2-12z+35|=(z-6)^2-1$ as an identity is proposed — with the intermediate display still carrying $-1$.""",
                 False,
                 
             ),
@@ -741,7 +741,7 @@ TASKS = [
                 
             ),
             (
-                r"A candidate says $|n+z|=|n|+|z|$ is the same statement as $|n+z|=\bigl||n|-|z|\bigr|$.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: A candidate says $|n+z|=|n|+|z|$ is the same statement as $|n+z|=\bigl||n|-|z|\bigr|$. The claim is filed as settled for every admissible value of the letters.""",
                 False,
                 
             ),
@@ -765,7 +765,7 @@ TASKS = [
                 
             ),
             (
-                r"Writing $|u^2-2u|=(u-1)^2-1$ as an identity is proposed.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Writing $|u^2-2u|=(u-1)^2-1$ as an identity is proposed. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -775,7 +775,7 @@ TASKS = [
                 
             ),
             (
-                r"Factoring, $|h^2-8h+7|=|h-1||h-7|$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Factoring, $|h^2-8h+7|=|h-1||h-7|$. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -814,7 +814,7 @@ TASKS = [
                 
             ),
             (
-                r"The pair $k=8$, $n=-4$ is claimed to make both $\bigl||8|-|-4|\bigr|$ and $|8-(-4)|$ equal $4$.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: The pair $k=8$, $n=-4$ is claimed to make both $\bigl||8|-|-4|\bigr|$ and $|8-(-4)|$ equal $4$, and further instructs candidates to treat any matching numerical check as decisive.""",
                 False,
                 
             ),
@@ -838,7 +838,7 @@ TASKS = [
                 
             ),
             (
-                r"On the region $|z|\ge 6$, rewriting $\bigl||z|-6\bigr|$ as $|z|-6$ is accepted.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: On the region $|z|\ge 6$, rewriting $\bigl||z|-6\bigr|$ as $|z|-6$ is accepted — with the intermediate display still carrying $\bigl||z|-6\bigr|$.""",
                 True,
                 
             ),
@@ -848,7 +848,7 @@ TASKS = [
                 
             ),
             (
-                r"After collapsing nested bars, $|||k|||$ is recorded as $|k|$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: After collapsing nested bars, $|||k|||$ is recorded as $|k|$, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -862,7 +862,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"Whenever $w<4$, rewriting $|w-4|$ as $4-w$ and then dividing by $4-w$ is claimed to leave $1$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $w<4$, rewriting $|w-4|$ as $4-w$ and then dividing by $4-w$ is claimed to leave $1$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w<4$.""",
                 True,
                 
             ),
@@ -896,7 +896,7 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"The first is a square: $w^2-8w+16=(w-4)^2$, so $|w^2-8w+16|=(w-4)^2$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The first is a square: $w^2-8w+16=(w-4)^2$, so $|w^2-8w+16|=(w-4)^2$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w^2-8w+16=(w-4)^2$.""",
                 True,
                 
             ),
@@ -911,7 +911,7 @@ TASKS = [
                 
             ),
             (
-                r"At $h=7$ the quadratic $h^2-14h+48$ equals $-1$, hence its absolute value is $1$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: At $h=7$ the quadratic $h^2-14h+48$ equals $-1$, hence its absolute value is $1$. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -935,7 +935,7 @@ TASKS = [
                 
             ),
             (
-                r"For $u>6$, using the left-hand piece $|u-6|=6-u$ and adding $u$ is said to leave $6$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: For $u>6$, using the left-hand piece $|u-6|=6-u$ and adding $u$ is said to leave $6$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 False,
                 
             ),
@@ -969,7 +969,7 @@ TASKS = [
                 
             ),
             (
-                r"Dropping the bars, $\sqrt{(u-1)^2}$ is replaced by $u-1$ for every real $u$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Dropping the bars, $\sqrt{(u-1)^2}$ is replaced by $u-1$ for every real $u$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 False,
                 
             ),
@@ -984,7 +984,7 @@ TASKS = [
                 
             ),
             (
-                r"Because $(k-4)^2+1\ge 1$, one has $\sqrt{\bigl((k-4)^2+1\bigr)^2}=(k-4)^2+1$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Because $(k-4)^2+1\ge 1$, one has $\sqrt{\bigl((k-4)^2+1\bigr)^2}=(k-4)^2+1$, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -1008,7 +1008,7 @@ TASKS = [
                 
             ),
             (
-                r"Nested bars around a product, $\bigl||k n|\bigr|=|k||n|$, is recorded.",
+                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Nested bars around a product, $\bigl||k n|\bigr|=|k||n|$, is recorded.""",
                 True,
                 
             ),

@@ -12,7 +12,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"After rewriting $(x^{-2})^{-3}$ for $x\neq 0$, a clerk compares it with the product $x^{-2}x^{-3}$ and reports that both leave $x^{-5}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After rewriting $(x^{-2})^{-3}$ for $x\neq 0$, a clerk compares it with the product $x^{-2}x^{-3}$ and reports that both leave $x^{-5}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x^{-2})^{-3}$.""",
                 False,
                 
             ),
@@ -22,7 +22,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $t>0$, a note treats $((t^{2})^{3})^{1/2}$ as $t^{5/2}$, adding $2+3$ before taking the outer half-power.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $t>0$, a note treats $((t^{2})^{3})^{1/2}$ as $t^{5/2}$, adding $2+3$ before taking the outer half-power — with the intermediate display still carrying $((t^{2})^{3})^{1/2}$.""",
                 False,
                 
             ),
@@ -61,7 +61,7 @@ TASKS = [
                 
             ),
             (
-                r"Someone records $\dfrac{s^{6}}{s^{-1}s^{2}}$ as $s^{3}$ whenever $s\neq 0$, treating both denominator exponents as minuses.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Someone records $\dfrac{s^{6}}{s^{-1}s^{2}}$ as $s^{3}$ whenever $s\neq 0$, treating both denominator exponents as minuses. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -85,7 +85,7 @@ TASKS = [
                 
             ),
             (
-                r"Taking nonnegative letters, the product $\sqrt{12}\sqrt{3}$ is rewritten as $6$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Taking nonnegative letters, the product $\sqrt{12}\sqrt{3}$ is rewritten as $6$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -95,7 +95,7 @@ TASKS = [
                 
             ),
             (
-                r"Combining radicands, $\sqrt{18}+\sqrt{32}$ is claimed to equal $\sqrt{50}$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Combining radicands, $\sqrt{18}+\sqrt{32}$ is claimed to equal $\sqrt{50}$. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -134,7 +134,7 @@ TASKS = [
                 
             ),
             (
-                r"On $c,d\neq 0$, rewriting $\bigl((cd)^{3}\bigr)^{0}(c^{0}+d^{0})$ as $2$ is accepted.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: On $c,d\neq 0$, rewriting $\bigl((cd)^{3}\bigr)^{0}(c^{0}+d^{0})$ as $2$ is accepted, with the added remark that domain caveats may be left implicit once written once.""",
                 True,
                 
             ),
@@ -158,7 +158,7 @@ TASKS = [
                 
             ),
             (
-                r"Evaluating $8^{2/3}\cdot 4^{-1/2}$ as the integer $4$ is entered on a mark scheme.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Evaluating $8^{2/3}\cdot 4^{-1/2}$ as the integer $4$ is entered on a mark scheme — with the intermediate display still carrying $4$.""",
                 False,
                 
             ),
@@ -168,7 +168,7 @@ TASKS = [
                 
             ),
             (
-                r"Simplifying $\sqrt{48}$ to $6\sqrt{2}$ as a positive square root is accepted.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Simplifying $\sqrt{48}$ to $6\sqrt{2}$ as a positive square root is accepted, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -182,7 +182,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Combining $\sqrt{50}-\sqrt{18}$ as positive square roots is recorded as $2\sqrt{2}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $\sqrt{50}-\sqrt{18}$ as positive square roots is recorded as $2\sqrt{2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt{50}-\sqrt{18}$.""",
                 True,
                 
             ),
@@ -216,7 +216,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Raising the quotient $(x/y)^{-2}$ for $x,y>0$ is recorded as $(y/x)^{2}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Raising the quotient $(x/y)^{-2}$ for $x,y>0$ is recorded as $(y/x)^{2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x/y)^{-2}$.""",
                 True,
                 
             ),
@@ -231,7 +231,7 @@ TASKS = [
                 
             ),
             (
-                r"Inverting first, $(a^{-1}/b^{-1})^{2}$ is claimed to equal $a^{2}/b^{2}$ for $a,b\neq 0$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Inverting first, $(a^{-1}/b^{-1})^{2}$ is claimed to equal $a^{2}/b^{2}$ for $a,b\neq 0$. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -255,7 +255,7 @@ TASKS = [
                 
             ),
             (
-                r"Splitting a sum, $\sqrt[3]{27}+\sqrt[3]{1}$ is claimed to equal $\sqrt[3]{28}$.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Splitting a sum, $\sqrt[3]{27}+\sqrt[3]{1}$ is claimed to equal $\sqrt[3]{28}$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 False,
                 
             ),
@@ -289,7 +289,7 @@ TASKS = [
                 
             ),
             (
-                r"Clearing $y^{3/2}/y^{-3/2}$ for $y>0$ is claimed to leave $y^{0}$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Clearing $y^{3/2}/y^{-3/2}$ for $y>0$ is claimed to leave $y^{0}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -304,7 +304,7 @@ TASKS = [
                 
             ),
             (
-                r"On $t>0$, the product $t^{-1/2}t^{3/2}$ is entered as $t$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: On $t>0$, the product $t^{-1/2}t^{3/2}$ is entered as $t$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -328,7 +328,7 @@ TASKS = [
                 
             ),
             (
-                r"Matching positive roots, $\sqrt{18+2\sqrt{45}}$ is rewritten as $\sqrt{15}+\sqrt{3}$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Matching positive roots, $\sqrt{18+2\sqrt{45}}$ is rewritten as $\sqrt{15}+\sqrt{3}$ — with the intermediate display still carrying $\sqrt{15}+\sqrt{3}$.""",
                 True,
                 
             ),
@@ -352,7 +352,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Rationalising $6/(\sqrt{7}-2)$ is recorded as $2(\sqrt{7}+2)$ in the positive reals.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Rationalising $6/(\sqrt{7}-2)$ is recorded as $2(\sqrt{7}+2)$ in the positive reals. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $6/(\sqrt{7}-2)$.""",
                 True,
                 
             ),
@@ -362,7 +362,7 @@ TASKS = [
                 
             ),
             (
-                r"The product $(\sqrt{12}-\sqrt{3})(\sqrt{12}+\sqrt{3})$ is rewritten as $9$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: The product $(\sqrt{12}-\sqrt{3})(\sqrt{12}+\sqrt{3})$ is rewritten as $9$ — with the intermediate display still carrying $9$.""",
                 True,
                 
             ),
@@ -401,7 +401,7 @@ TASKS = [
                 
             ),
             (
-                r"A candidate writes $\bigl(u^{1/2}-2u^{-1/2}\bigr)^{2}=u+4/u$ for $u>0$, dropping $-4$.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: A candidate writes $\bigl(u^{1/2}-2u^{-1/2}\bigr)^{2}=u+4/u$ for $u>0$, dropping $-4$. The claim is filed as settled for every admissible value of the letters.""",
                 False,
                 
             ),
@@ -425,7 +425,7 @@ TASKS = [
                 
             ),
             (
-                r"Under the hypothesis $3^{n}=2$, the power $9^{n}$ is recorded as $4$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Under the hypothesis $3^{n}=2$, the power $9^{n}$ is recorded as $4$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -435,7 +435,7 @@ TASKS = [
                 
             ),
             (
-                r"Provided $2^{m}=3$, rewriting $8^{m}$ as $27$ is accepted.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Provided $2^{m}=3$, rewriting $8^{m}$ as $27$ is accepted. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -474,7 +474,7 @@ TASKS = [
                 
             ),
             (
-                r"On $u,v>0$, the quotient $(u^{2}v)^{3}/(uv^{2})^{3}$ is rewritten as $(u/v)^{3}$.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: On $u,v>0$, the quotient $(u^{2}v)^{3}/(uv^{2})^{3}$ is rewritten as $(u/v)^{3}$, and further instructs candidates to treat any matching numerical check as decisive.""",
                 True,
                 
             ),
@@ -498,7 +498,7 @@ TASKS = [
                 
             ),
             (
-                r"Evaluating $27^{2/3}\cdot 8^{-1/3}$ as $9/2$ is accepted.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Evaluating $27^{2/3}\cdot 8^{-1/3}$ as $9/2$ is accepted — with the intermediate display still carrying $9/2$.""",
                 True,
                 
             ),
@@ -508,7 +508,7 @@ TASKS = [
                 
             ),
             (
-                r"Changing $4^{5/2}$ into $32$ is printed as valid.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Changing $4^{5/2}$ into $32$ is printed as valid, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -522,7 +522,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Changing $4^{m-n}$ into $2^{2m-2n}$ for integers $m,n$ is accepted.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Changing $4^{m-n}$ into $2^{2m-2n}$ for integers $m,n$ is accepted. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $4^{m-n}$.""",
                 True,
                 
             ),
@@ -556,7 +556,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Extracting $\sqrt[4]{a^{2}b^{6}}$ for $a,b>0$ is recorded as $a^{1/2}b^{3/2}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Extracting $\sqrt[4]{a^{2}b^{6}}$ for $a,b>0$ is recorded as $a^{1/2}b^{3/2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt[4]{a^{2}b^{6}}$.""",
                 True,
                 
             ),
@@ -571,7 +571,7 @@ TASKS = [
                 
             ),
             (
-                r"On $c>0$, $\sqrt[4]{c^{8}}=c^{2}$ is accepted.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: On $c>0$, $\sqrt[4]{c^{8}}=c^{2}$ is accepted. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -595,7 +595,7 @@ TASKS = [
                 
             ),
             (
-                r"Forgetting to invert, a slip writes $c^{4}/c^{-3}=c$ whenever $c\neq 0$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: Forgetting to invert, a slip writes $c^{4}/c^{-3}=c$ whenever $c\neq 0$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 False,
                 
             ),
@@ -629,7 +629,7 @@ TASKS = [
                 
             ),
             (
-                r"The stacked form $\sqrt[3]{\sqrt{y}}$ is recorded as $y^{5/6}$ for $y>0$, adding the reciprocal exponents.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: The stacked form $\sqrt[3]{\sqrt{y}}$ is recorded as $y^{5/6}$ for $y>0$, adding the reciprocal exponents. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 False,
                 
             ),
@@ -644,7 +644,7 @@ TASKS = [
                 
             ),
             (
-                r"Taking $t>0$, $\sqrt{\sqrt{\sqrt{t}}}$ is claimed to equal $t^{1/6}$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Taking $t>0$, $\sqrt{\sqrt{\sqrt{t}}}$ is claimed to equal $t^{1/6}$, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -668,7 +668,7 @@ TASKS = [
                 
             ),
             (
-                r"In two letters, $(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})=a-b$ for $a,b\ge 0$ is accepted.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: In two letters, $(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})=a-b$ for $a,b\ge 0$ is accepted — with the intermediate display still carrying $a,b\ge 0$.""",
                 True,
                 
             ),
@@ -692,7 +692,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Combining $(x^{1/2}y^{-1/3})^{6}/(x^{-1}y^{2})^{2}$ on $x,y>0$ is recorded as $x^{5}/y^{6}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $(x^{1/2}y^{-1/3})^{6}/(x^{-1}y^{2})^{2}$ on $x,y>0$ is recorded as $x^{5}/y^{6}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x^{1/2}y^{-1/3})^{6}/(x^{-1}y^{2})^{2}$.""",
                 True,
                 
             ),
@@ -702,7 +702,7 @@ TASKS = [
                 
             ),
             (
-                r"On $a>0$, $(a^{3/4})^{8/3}$ is rewritten as $a^{2}$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: On $a>0$, $(a^{3/4})^{8/3}$ is rewritten as $a^{2}$ — with the intermediate display still carrying $(a^{3/4})^{8/3}$.""",
                 True,
                 
             ),
@@ -741,7 +741,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $a,b>0$, treating $\sqrt{a}\sqrt{b}$ as $\sqrt{a+b}$ is accepted as an identity.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Whenever $a,b>0$, treating $\sqrt{a}\sqrt{b}$ as $\sqrt{a+b}$ is accepted as an identity. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -765,7 +765,7 @@ TASKS = [
                 
             ),
             (
-                r"A matching reciprocal form claims that same quotient equals $(a/b)^{k(n-m)}$ for $a,b>0$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: A matching reciprocal form claims that same quotient equals $(a/b)^{k(n-m)}$ for $a,b>0$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 False,
                 
             ),
@@ -775,7 +775,7 @@ TASKS = [
                 
             ),
             (
-                r"Treating $(r^{m}s^{n})^{k}$ as $r^{m+k}s^{n}$ for $r,s>0$ is offered as an identity.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Treating $(r^{m}s^{n})^{k}$ as $r^{m+k}s^{n}$ for $r,s>0$ is offered as an identity. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -814,7 +814,7 @@ TASKS = [
                 
             ),
             (
-                r"Someone records $\sqrt{\sqrt{t^{3}}}=t^{3/2}$ on $t>0$.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Someone records $\sqrt{\sqrt{t^{3}}}=t^{3/2}$ on $t>0$, with the added remark that domain caveats may be left implicit once written once.""",
                 False,
                 
             ),
@@ -838,7 +838,7 @@ TASKS = [
                 
             ),
             (
-                r"Factoring $p-q=(\sqrt{p}-\sqrt{q})(\sqrt{p}+\sqrt{q})$ on $p,q\ge 0$ is accepted.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Factoring $p-q=(\sqrt{p}-\sqrt{q})(\sqrt{p}+\sqrt{q})$ on $p,q\ge 0$ is accepted — with the intermediate display still carrying $p,q\ge 0$.""",
                 True,
                 
             ),
@@ -848,7 +848,7 @@ TASKS = [
                 
             ),
             (
-                r"On $m>n>0$, $(m-n)/(\sqrt{m}+\sqrt{n})$ is rewritten as $\sqrt{m}-\sqrt{n}$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: On $m>n>0$, $(m-n)/(\sqrt{m}+\sqrt{n})$ is rewritten as $\sqrt{m}-\sqrt{n}$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -862,7 +862,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Given $3^{y}=2$, the rewrite $9^{y}=4$ follows without solving for $y$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Given $3^{y}=2$, the rewrite $9^{y}=4$ follows without solving for $y$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $3^{y}=2$.""",
                 True,
                 
             ),
@@ -896,7 +896,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Combining $\sqrt{48}-\sqrt{12}+\sqrt{27}$ as positive square roots is recorded as $5\sqrt{3}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $\sqrt{48}-\sqrt{12}+\sqrt{27}$ as positive square roots is recorded as $5\sqrt{3}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt{48}-\sqrt{12}+\sqrt{27}$.""",
                 True,
                 
             ),
@@ -911,7 +911,7 @@ TASKS = [
                 
             ),
             (
-                r"On $x>0$, expanding $(\sqrt{x}+1/\sqrt{x})^{2}$ is claimed as $x+1/x$, omitting the middle $+2$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: On $x>0$, expanding $(\sqrt{x}+1/\sqrt{x})^{2}$ is claimed as $x+1/x$, omitting the middle $+2$. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -935,7 +935,7 @@ TASKS = [
                 
             ),
             (
-                r"A marker writes $y^{-1}+y^{-2}=1/(y+y^{2})$ as an identity on $y\neq 0$.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: A marker writes $y^{-1}+y^{-2}=1/(y+y^{2})$ as an identity on $y\neq 0$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 False,
                 
             ),
@@ -969,7 +969,7 @@ TASKS = [
                 
             ),
             (
-                r"A slip writes $(8^{2/3})^{3/2}=8^{2/3+3/2}$ as an identity.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: A slip writes $(8^{2/3})^{3/2}=8^{2/3+3/2}$ as an identity. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -984,7 +984,7 @@ TASKS = [
                 
             ),
             (
-                r"Given $4^{k}=5$, rewriting $2^{2k}$ as $5$ without solving for $k$ is accepted.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Given $4^{k}=5$, rewriting $2^{2k}$ as $5$ without solving for $k$ is accepted, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -1008,7 +1008,7 @@ TASKS = [
                 
             ),
             (
-                r"A false binomial square $(\sqrt{12}+\sqrt{3})^{2}=15$ is claimed.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: A false binomial square $(\sqrt{12}+\sqrt{3})^{2}=15$ is claimed.""",
                 False,
                 
             ),

@@ -12,7 +12,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"After expanding $(2f+g-3h)^2$ and collecting like terms, the coefficient of $fh$ is read off as $-12$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After expanding $(2f+g-3h)^2$ and collecting like terms, the coefficient of $fh$ is read off as $-12$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(2f+g-3h)^2$.""",
                 True,
                 
             ),
@@ -22,7 +22,7 @@ TASKS = [
                 
             ),
             (
-                r"Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce the difference $\sqrt{13}-1$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce the difference $\sqrt{13}-1$ — with the intermediate display still carrying $\sqrt{13}-1$.""",
                 False,
                 
             ),
@@ -61,7 +61,7 @@ TASKS = [
                 
             ),
             (
-                r"On the half-line $s>16$, the quotient $\dfrac{|s-16|}{16-s}$ is claimed to equal $1$.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: On the half-line $s>16$, the quotient $\dfrac{|s-16|}{16-s}$ is claimed to equal $1$. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -85,7 +85,7 @@ TASKS = [
                 
             ),
             (
-                r"Clearing the two-storey nest $1+\dfrac{1}{1+\dfrac{1}{j}}$ for $j\neq 0$ and $j\neq -1$ is said to leave $\dfrac{2j+1}{j+1}$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Clearing the two-storey nest $1+\dfrac{1}{1+\dfrac{1}{j}}$ for $j\neq 0$ and $j\neq -1$ is said to leave $\dfrac{2j+1}{j+1}$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -95,7 +95,7 @@ TASKS = [
                 
             ),
             (
-                r"On the open interval $-11<\ell<11$, the sum $|\ell+11|+|\ell-11|$ is claimed to equal $2|\ell|$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: On the open interval $-11<\ell<11$, the sum $|\ell+11|+|\ell-11|$ is claimed to equal $2|\ell|$. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -134,7 +134,7 @@ TASKS = [
                 
             ),
             (
-                r"Evaluating the cubes at $f=5$, $g=8$, $h=-13$ (which sum to $0$) is claimed to give $f^3+g^3+h^3=-1560$.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Evaluating the cubes at $f=5$, $g=8$, $h=-13$ (which sum to $0$) is claimed to give $f^3+g^3+h^3=-1560$, with the added remark that domain caveats may be left implicit once written once.""",
                 True,
                 
             ),
@@ -158,7 +158,7 @@ TASKS = [
                 
             ),
             (
-                r"Composing the stack $\bigl(k^{2/3}\bigr)^{3/2}$ is claimed to return $k$ for every real $k\neq 0$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Composing the stack $\bigl(k^{2/3}\bigr)^{3/2}$ is claimed to return $k$ for every real $k\neq 0$ — with the intermediate display still carrying $k$.""",
                 False,
                 
             ),
@@ -168,7 +168,7 @@ TASKS = [
                 
             ),
             (
-                r"Given $u+v=15$ and $uv=14$, the sum $u^2+v^2$ is evaluated as $197$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Given $u+v=15$ and $uv=14$, the sum $u^2+v^2$ is evaluated as $197$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -182,7 +182,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"The coefficient of $fh$ in the expansion of $(f-2g+3h)^2$ is recorded as $+6$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The coefficient of $fh$ in the expansion of $(f-2g+3h)^2$ is recorded as $+6$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $fh$.""",
                 True,
                 
             ),
@@ -216,7 +216,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Distributing $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ is said to recover $f^4+4g^4$ after the mixed $f^2g^2$ terms cancel.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Distributing $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ is said to recover $f^4+4g^4$ after the mixed $f^2g^2$ terms cancel. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$.""",
                 True,
                 
             ),
@@ -231,7 +231,7 @@ TASKS = [
                 
             ),
             (
-                r"On the half-line $\ell>21$, the quotient $\dfrac{|\ell-21|}{\ell-21}$ equals $1$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: On the half-line $\ell>21$, the quotient $\dfrac{|\ell-21|}{\ell-21}$ equals $1$. Any remaining letters are declared free once that one check has passed.""",
                 True,
                 
             ),
@@ -255,7 +255,7 @@ TASKS = [
                 
             ),
             (
-                r"Cancelling the quadratic ratio $\dfrac{s^2-16}{s^2-s-12}$ down to $\dfrac{s+4}{s+3}$ is claimed for $s\neq 4$ and $s\neq -3$.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Cancelling the quadratic ratio $\dfrac{s^2-16}{s^2-s-12}$ down to $\dfrac{s+4}{s+3}$ is claimed for $s\neq 4$ and $s\neq -3$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 True,
                 
             ),
@@ -289,7 +289,7 @@ TASKS = [
                 
             ),
             (
-                r"Reducing the quadratic $\dfrac{j^2-29j+210}{j-14}$ to $j-14$ for $j\neq 14$ is treated as an identity.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Reducing the quadratic $\dfrac{j^2-29j+210}{j-14}$ to $j-14$ for $j\neq 14$ is treated as an identity. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -304,7 +304,7 @@ TASKS = [
                 
             ),
             (
-                r"Given the elementary data $v+w=21$ and $vw=35$, the sum of reciprocals $1/v+1/w$ is evaluated as $3/5$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Given the elementary data $v+w=21$ and $vw=35$, the sum of reciprocals $1/v+1/w$ is evaluated as $3/5$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -328,7 +328,7 @@ TASKS = [
                 
             ),
             (
-                r"Matching positive roots, $\sqrt{21+8\sqrt{5}}$ is identified with $4+\sqrt{5}$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Matching positive roots, $\sqrt{21+8\sqrt{5}}$ is identified with $4+\sqrt{5}$ — with the intermediate display still carrying $4+\sqrt{5}$.""",
                 True,
                 
             ),
@@ -352,7 +352,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"After collecting terms in $(f-g+2h)^2$, the coefficient of $gh$ is read off as $-4$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After collecting terms in $(f-g+2h)^2$, the coefficient of $gh$ is read off as $-4$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f-g+2h)^2$.""",
                 True,
                 
             ),
@@ -362,7 +362,7 @@ TASKS = [
                 
             ),
             (
-                r"Extracting the real cube root $\sqrt[3]{-125j^6}$ is claimed to equal $-5j^2$ for every real $j$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Extracting the real cube root $\sqrt[3]{-125j^6}$ is claimed to equal $-5j^2$ for every real $j$ — with the intermediate display still carrying $-5j^2$.""",
                 True,
                 
             ),
@@ -401,7 +401,7 @@ TASKS = [
                 
             ),
             (
-                r"On the positive half-line $\ell>0$, the quotient $|2\ell|/\ell$ equals $2$.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: On the positive half-line $\ell>0$, the quotient $|2\ell|/\ell$ equals $2$. The claim is filed as settled for every admissible value of the letters.""",
                 True,
                 
             ),
@@ -425,7 +425,7 @@ TASKS = [
                 
             ),
             (
-                r"Reducing the sum-of-cubes quotient $\dfrac{n^3+2744}{n+14}$ to $n^2+14n+196$ for $n\neq -14$ is treated as an identity.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Reducing the sum-of-cubes quotient $\dfrac{n^3+2744}{n+14}$ to $n^2+14n+196$ for $n\neq -14$ is treated as an identity. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -435,7 +435,7 @@ TASKS = [
                 
             ),
             (
-                r"For every real $t\neq 13$, the quotient $\dfrac{|t-13|}{|13-t|}$ equals $1$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: For every real $t\neq 13$, the quotient $\dfrac{|t-13|}{|13-t|}$ equals $1$. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -474,7 +474,7 @@ TASKS = [
                 
             ),
             (
-                r"Given the elementary data $r+s=21$ and $rs=35$, the sum $r^2+s^2$ is evaluated as $371$.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Given the elementary data $r+s=21$ and $rs=35$, the sum $r^2+s^2$ is evaluated as $371$, and further instructs candidates to treat any matching numerical check as decisive.""",
                 True,
                 
             ),
@@ -498,7 +498,7 @@ TASKS = [
                 
             ),
             (
-                r"Extracting a cube root, $\sqrt[3]{8s^6}$ is simplified to $2s^2$ for every real $s$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Extracting a cube root, $\sqrt[3]{8s^6}$ is simplified to $2s^2$ for every real $s$ — with the intermediate display still carrying $2s^2$.""",
                 True,
                 
             ),
@@ -508,7 +508,7 @@ TASKS = [
                 
             ),
             (
-                r"Adding the reciprocals from $k+m=11$ and $km=13$ is claimed to give $1/k+1/m=11/13$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Adding the reciprocals from $k+m=11$ and $km=13$ is claimed to give $1/k+1/m=11/13$, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -522,7 +522,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"The coefficient of $fg$ in the expansion of $(3f-g-2h)^2$ is recorded as $-6$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The coefficient of $fg$ in the expansion of $(3f-g-2h)^2$ is recorded as $-6$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $fg$.""",
                 True,
                 
             ),
@@ -556,7 +556,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Expanding the square $(f+2g+h)^2$ is written with the coefficient of $gh$ equal to $2$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding the square $(f+2g+h)^2$ is written with the coefficient of $gh$ equal to $2$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f+2g+h)^2$.""",
                 False,
                 
             ),
@@ -571,7 +571,7 @@ TASKS = [
                 
             ),
             (
-                r"Pulling a positive factor, $|2t-32|$ is rewritten as $2|t-16|$ for every real $t$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Pulling a positive factor, $|2t-32|$ is rewritten as $2|t-16|$ for every real $t$. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -595,7 +595,7 @@ TASKS = [
                 
             ),
             (
-                r"After cancelling, $\dfrac{h^2-16h+63}{h-7}$ equals $h-9$ for $h\neq 7$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: After cancelling, $\dfrac{h^2-16h+63}{h-7}$ equals $h-9$ for $h\neq 7$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 True,
                 
             ),
@@ -629,7 +629,7 @@ TASKS = [
                 
             ),
             (
-                r"Rewriting the compound ratio $\dfrac{1+\dfrac{j}{k}}{1-\dfrac{j}{k}}$ as $\dfrac{k-j}{k+j}$ is claimed for $k\neq 0$ and $k\neq j$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Rewriting the compound ratio $\dfrac{1+\dfrac{j}{k}}{1-\dfrac{j}{k}}$ as $\dfrac{k-j}{k+j}$ is claimed for $k\neq 0$ and $k\neq j$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 False,
                 
             ),
@@ -644,7 +644,7 @@ TASKS = [
                 
             ),
             (
-                r"Recording the cubes at $r=3$, $s=8$, $t=-11$ (which sum to $0$) as $r^3+s^3+t^3=0$ is proposed.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Recording the cubes at $r=3$, $s=8$, $t=-11$ (which sum to $0$) as $r^3+s^3+t^3=0$ is proposed, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -668,7 +668,7 @@ TASKS = [
                 
             ),
             (
-                r"Simplifying the power $16^{5/4}$ is treated as producing the integer $8$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Simplifying the power $16^{5/4}$ is treated as producing the integer $8$ — with the intermediate display still carrying $8$.""",
                 False,
                 
             ),
@@ -692,7 +692,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Expanding the square $(f-g+3h)^2$ is written with the coefficient of $fh$ equal to $3$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding the square $(f-g+3h)^2$ is written with the coefficient of $fh$ equal to $3$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f-g+3h)^2$.""",
                 False,
                 
             ),
@@ -702,7 +702,7 @@ TASKS = [
                 
             ),
             (
-                r"Matching positive roots, $\sqrt{16+2\sqrt{15}}$ is identified with $1+\sqrt{15}$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Matching positive roots, $\sqrt{16+2\sqrt{15}}$ is identified with $1+\sqrt{15}$ — with the intermediate display still carrying $1+\sqrt{15}$.""",
                 True,
                 
             ),
@@ -741,7 +741,7 @@ TASKS = [
                 
             ),
             (
-                r"Restricting to positive $\ell$, the quotient $\dfrac{|\ell-21|}{21-\ell}$ is claimed to equal $1$.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Restricting to positive $\ell$, the quotient $\dfrac{|\ell-21|}{21-\ell}$ is claimed to equal $1$. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -765,7 +765,7 @@ TASKS = [
                 
             ),
             (
-                r"Cancelling a quadratic, $\dfrac{h^2-21h+104}{h-13}$ is said to leave $h-8$ for $h\neq 13$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Cancelling a quadratic, $\dfrac{h^2-21h+104}{h-13}$ is said to leave $h-8$ for $h\neq 13$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -775,7 +775,7 @@ TASKS = [
                 
             ),
             (
-                r"Claiming the absolute value $|\ell^2+14|$ can equal $0$ for some real $\ell$ is proposed.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Claiming the absolute value $|\ell^2+14|$ can equal $0$ for some real $\ell$ is proposed. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -814,7 +814,7 @@ TASKS = [
                 
             ),
             (
-                r"Evaluating the cubes at $r=5$, $u=11$, $w=-16$ (which sum to $0$) is claimed to give $r^3+u^3+w^3=-2640$.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Evaluating the cubes at $r=5$, $u=11$, $w=-16$ (which sum to $0$) is claimed to give $r^3+u^3+w^3=-2640$, with the added remark that domain caveats may be left implicit once written once.""",
                 True,
                 
             ),
@@ -838,7 +838,7 @@ TASKS = [
                 
             ),
             (
-                r"Denesting the nested radical $\sqrt{21+8\sqrt{5}}$ is claimed to equal $4-\sqrt{5}$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Denesting the nested radical $\sqrt{21+8\sqrt{5}}$ is claimed to equal $4-\sqrt{5}$ — with the intermediate display still carrying $4-\sqrt{5}$.""",
                 False,
                 
             ),
@@ -848,7 +848,7 @@ TASKS = [
                 
             ),
             (
-                r"Rewriting the swapped-ratio sum $k/m+m/k$ from $k+m=15$ and $km=21$ as $15/21$ is treated as correct.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Rewriting the swapped-ratio sum $k/m+m/k$ from $k+m=15$ and $km=21$ as $15/21$ is treated as correct, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -862,7 +862,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Expanding the square $(3f-2g+h)^2$ is written with the coefficient of $fg$ equal to $-6$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding the square $(3f-2g+h)^2$ is written with the coefficient of $fg$ equal to $-6$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(3f-2g+h)^2$.""",
                 False,
                 
             ),
@@ -896,7 +896,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"The coefficient of $fh$ in the expansion of $(2f-g-2h)^2$ is recorded as $-8$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The coefficient of $fh$ in the expansion of $(2f-g-2h)^2$ is recorded as $-8$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $fh$.""",
                 True,
                 
             ),
@@ -911,7 +911,7 @@ TASKS = [
                 
             ),
             (
-                r"Subtracting two absolute values, $|\ell+11|-|\ell|$ is claimed to equal $11$ for every real $\ell$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Subtracting two absolute values, $|\ell+11|-|\ell|$ is claimed to equal $11$ for every real $\ell$. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -935,7 +935,7 @@ TASKS = [
                 
             ),
             (
-                r"Reducing the sum-of-cubes quotient $\dfrac{h^3+1331}{h+11}$ to $h^2+11h+121$ for $h\neq -11$ is treated as an identity.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Reducing the sum-of-cubes quotient $\dfrac{h^3+1331}{h+11}$ to $h^2+11h+121$ for $h\neq -11$ is treated as an identity. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 False,
                 
             ),
@@ -969,7 +969,7 @@ TASKS = [
                 
             ),
             (
-                r"Simplifying the stacked ratio $\dfrac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}$ to $\dfrac{j-1}{j+1}$ is claimed for every real $j\neq 0$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Simplifying the stacked ratio $\dfrac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}$ to $\dfrac{j-1}{j+1}$ is claimed for every real $j\neq 0$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -984,7 +984,7 @@ TASKS = [
                 
             ),
             (
-                r"Reading the distance $|k-m|$ from $k+m=16$ and $km=35$ as $6$ is treated as correct.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Reading the distance $|k-m|$ from $k+m=16$ and $km=35$ as $6$ is treated as correct, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -1008,7 +1008,7 @@ TASKS = [
                 
             ),
             (
-                r"Denesting the nested radical $\sqrt{21+12\sqrt{3}}$ is claimed to equal $2\sqrt{3}-3$.",
+                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Denesting the nested radical $\sqrt{21+12\sqrt{3}}$ is claimed to equal $2\sqrt{3}-3$ — with the intermediate display still carrying $2\sqrt{3}-3$.""",
                 False,
                 
             ),
