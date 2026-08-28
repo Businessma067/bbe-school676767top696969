@@ -1571,6 +1571,8 @@ function AllExplanationsPanel({
       if (expl) {
         // Always bind panel block i to statement i / answer_key[i], Ch4/Ch13 header.
         expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        // Legacy Ch6 PDF headers: **A) full statement.**  (true)
+        expl = expl.replace(/^\*\*[A-F]\)[\s\S]*?\*\*\s*\((?:true|false)\)\s*/i, "").trim();
         return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
       }
       return [
