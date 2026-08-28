@@ -41,6 +41,26 @@ const productsItem: NavItem = {
   activeExact: PRODUCTS_EXACT,
 };
 
+/** Homepage menu — marketing sections that match on-page anchors. */
+export const homeNavItems: NavItem[] = [
+  {
+    label: "Demo-Practice",
+    href: "/demo-practice",
+    isRoute: true,
+    activePrefixes: ["/demo-practice", "/products/demo-practice"],
+  },
+  { label: "Full Course", href: "#full-course", isRoute: false },
+  productsItem,
+  {
+    label: "Features",
+    href: "/important-features",
+    isRoute: true,
+    activePrefixes: ["/important-features", "/features"],
+  },
+  { label: "Reviews", href: "#reviews", isRoute: false },
+  { label: "FAQ", href: "#faq", isRoute: false },
+];
+
 /** Logged out (and signed-in users who have not bought Lite or Full). */
 export const guestNavItems: NavItem[] = [
   examInfoItem,
@@ -124,6 +144,12 @@ export function navItemsForTier(tier: AccountNavTier): NavItem[] {
   if (tier === "full") return fullNavItems;
   if (tier === "lite") return liteNavItems;
   return guestNavItems;
+}
+
+/** Homepage uses marketing nav; inner pages use account-tier nav. */
+export function navItemsForContext(pathname: string, tier: AccountNavTier): NavItem[] {
+  if (normalizePathname(pathname) === "/") return homeNavItems;
+  return navItemsForTier(tier);
 }
 
 function searchRecord(search: unknown): Record<string, unknown> {
