@@ -382,9 +382,15 @@ The reduced power is not the printed radical; the mismatch appears only after al
             (
                 r"""For $a>0$, $(a^2)^3=a^5$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields $x$ to the power $\tfrac{5}{2}$.""",
@@ -546,9 +552,15 @@ The printed coefficient $36$ is the one that survives the expansion.""",
             (
                 r"""For $r\neq 0$, $(6r^{-1}-1)(6r^{-1}+1)=\dfrac{1}{36r^2}-1$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
         ],
         overview=r"""Five independent numerical powers. $27^{2/3}=9$ and $\sqrt[3]{54}=3\sqrt[3]{2}$, but $32^{2/5}=4$ and $8^{2/3}\cdot 4^{-1/2}=2$.""",
@@ -734,15 +746,9 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             (
                 r"""Factoring $\sqrt[3]{32}$ as $4\sqrt[3]{2}$ equals valid.""",
                 False,
-                r"""Combine numerator factors, then subtract the denominator exponent:
+                r"""Add exponents in the product, then subtract the denominator:
 
-Numerator:
-
-$$p^{3}p^{-1}=p^{2}$$
-
-Quotient:
-
-$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
+$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             ),
         ],
         overview=r"""Five independent cube-root lines. Products split; sums do not. $\sqrt[3]{2}\sqrt[3]{4}=2$ and $\sqrt[3]{54}=3\sqrt[3]{2}$, while $\sqrt[3]{24}=2\sqrt[3]{3}$.""",
@@ -795,9 +801,15 @@ The reciprocal square carries numerator $49$, not $1$. Swapping numerator and de
             (
                 r"""For $m>0$, $(m^2)^3=m^5$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For $k\neq 0$, $(5k^{-1}-1)(5k^{-1}+1)=\dfrac{25}{k^2}-1$.""",
@@ -818,9 +830,15 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             (
                 r"""For $r>0$, $(r^2)^3=r^5$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""Squaring $\sqrt{5}+\sqrt{3}$ equals $8+2\sqrt{15}$ in the positive reals.""",
@@ -1027,9 +1045,7 @@ The printed coefficient $1$ is the one that survives the expansion.""",
             (
                 r"""For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $a$.""",
                 True,
-                r"""The principal square root is the unique nonnegative number whose square is $n^2$:
-
-$$\sqrt{n^2}=|n|$$""",
+                r"""The principal square root gives $\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.""",
             ),
             (
                 r"""For $h\neq 0$, $(1h^{-1}-1)(1h^{-1}+1)=\dfrac{1}{1h^2}-1$.""",
@@ -1140,9 +1156,15 @@ The surviving expression is the true remainder on the stated domain.""",
             (
                 r"""For $n\neq 0$, $(3n^{-1}-1)(3n^{-1}+1)=\dfrac{1}{9n^2}-1$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For $s\neq 0$, $(2s^{-1}-1)(2s^{-1}+1)=\dfrac{4}{s^2}-1$.""",
@@ -1160,9 +1182,7 @@ The printed coefficient $4$ is the one that survives the expansion.""",
             (
                 r"""For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields $n$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""The principal square root is the unique nonnegative number whose square is $n^2$:
-
-$$\sqrt{n^2}=|n|$$""",
+                r"""The principal square root gives $\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.""",
             ),
         ],
         overview=r"""Five independent numerical rewrites. $27^{4/3}=81$ and $4^{5/2}=32$, but $32^{3/5}=8$ and $\sqrt{18}\sqrt{8}=12$, not $\sqrt{26}$.""",
@@ -1228,9 +1248,15 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             (
                 r"""For $u\neq 0$, $(3u^{-1}-1)(3u^{-1}+1)=\dfrac{1}{9u^2}-1$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For $n\neq 0$, $(4n^{-1}-1)(4n^{-1}+1)=\dfrac{16}{n^2}-1$.""",
@@ -1377,9 +1403,15 @@ The printed coefficient $25$ is the one that survives the expansion.""",
             (
                 r"""For $m>0$, $(m^2)^3=m^5$ (variant 3).""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $k$.""",
@@ -1458,15 +1490,9 @@ For $a=b=1$ one has $\sqrt{2}\neq 2$.""",
             (
                 r"""For $r\neq 0$, $(2r^{-1}-1)(2r^{-1}+1)=\dfrac{4}{r^2}-1$.""",
                 True,
-                r"""Combine numerator factors, then subtract the denominator exponent:
+                r"""Add exponents in the product, then subtract the denominator:
 
-Numerator:
-
-$$p^{3}p^{-1}=p^{2}$$
-
-Quotient:
-
-$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
+$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             ),
             (
                 r"""For $t\neq 0$, $(7t^{-1}-1)(7t^{-1}+1)=\dfrac{49}{t^2}-1$.""",
@@ -1589,9 +1615,7 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             (
                 r"""For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $q$.""",
                 True,
-                r"""The principal square root is the unique nonnegative number whose square is $n^2$:
-
-$$\sqrt{n^2}=|n|$$""",
+                r"""The principal square root gives $\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.""",
             ),
             (
                 r"""For $h\neq 0$, $(5h^{-1}-1)(5h^{-1}+1)=\dfrac{1}{25h^2}-1$.""",
@@ -1677,9 +1701,15 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             (
                 r"""Stacking $\sqrt[4]{w^{2}}$ as $w^{1/2}$ for $w>0$.""",
                 True,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $h$.""",
@@ -1742,9 +1772,15 @@ The printed coefficient $1$ is the one that survives the expansion.""",
             (
                 r"""For $w\neq 0$, $(6w^{-1}-1)(6w^{-1}+1)=\dfrac{1}{36w^2}-1$.""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
         ],
         overview=r"""Five independent conjugate-cancellation claims. Write $a-b$ as a conjugate product. Then $(\sqrt{a}-\sqrt{b})^{2}/(a-b)$ keeps one factor of $\sqrt{a}-\sqrt{b}$ in the numerator.""",
@@ -1820,9 +1856,7 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
             (
                 r"""For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $t$.""",
                 True,
-                r"""The principal square root is the unique nonnegative number whose square is $n^2$:
-
-$$\sqrt{n^2}=|n|$$""",
+                r"""The principal square root gives $\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.""",
             ),
             (
                 r"""For $w\neq 0$, $(6w^{-1}-1)(6w^{-1}+1)=\dfrac{36}{w^2}-1$.""",
@@ -1989,9 +2023,15 @@ The reciprocal square carries numerator $49$, not $1$. Swapping numerator and de
             (
                 r"""For $m>0$, $(m^2)^3=m^5$ (variant 6).""",
                 False,
-                r"""Add exponents in the product, then subtract the denominator:
+                r"""Combine numerator factors, then subtract the denominator exponent:
 
-$$\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$""",
+Numerator:
+
+$$p^{3}p^{-1}=p^{2}$$
+
+Quotient:
+
+$$\frac{p^{2}}{p^{-2}}=p^{4}$$""",
             ),
             (
                 r"""For $u\neq 0$, $(6u^{-1}-1)(6u^{-1}+1)=\dfrac{36}{u^2}-1$.""",

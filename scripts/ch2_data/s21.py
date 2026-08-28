@@ -56,13 +56,11 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""Factoring a difference: $x^2-y^2=(x-y)(x+y)$ for every real pair $(x,y)$.""",
                 True,
-                r"""Difference of squares in $x$ and $s$:
+                r"""Factor the difference of squares in $x$ and $y$:
 
-$$(x-s)(x+s) = x^2-s^2$$
+$$(x-y)(x+y)=x^2-y^2$$
 
-$$= x^2-(y+z)^2$$
-
-The grouping is an identity in the three letters.""",
+Both factors match the printed identity.""",
             ),
             (
                 r"""The unit shift $a^2-1=(a-1)(a+1)$ holds for every real $a$.""",
@@ -188,9 +186,7 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""The inequality $a^2-ab\ge ab-b^2$ holds for every real pair $(a,b)$.""",
                 True,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""For every real pair $(r,s)$, $(r+s)^3-(r^3+s^3+3rs)=3rs(r+s)$.""",
@@ -376,9 +372,7 @@ For $r=0$, $s=1$ the left side is $0$ and the right side is $1$, so the inequali
             (
                 r"""For every real $f$, $(f+1)^2=f^2+1$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""Splitting $z^2-25$ as $(z-5)(z+5)$ holds for every real $z$.""",
@@ -644,9 +638,7 @@ The Sophie Germain rewrite must subtract $(2fg)^2$ after adding it — the wordi
             (
                 r"""For every real $t$, $(t+1)^2=t^2+1$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
         ],
         overview=r"Five independent claims: a dropped factor two on mixed products, an elementary square-sum, a cube remainder, a scaled difference of squares, and a numerical cross-term check.",
@@ -688,9 +680,7 @@ Both sides match as an identity in the four letters.""",
             (
                 r"""For every real pair $(u,v)$, $(u+v)^2=u^2+v^2$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""If $a^{-3}b^2=2$, then $\dfrac{a^8b^3}{a^2b^7}+3ab\cdot\dfrac{a^{-6}b^5}{a^7b^{-2}}=48.25$ for $a,b\neq 0$.""",
@@ -884,9 +874,7 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
                 False,
                 r"""Difference of squares in $x$ and $s$:
 
-$$(x-s)(x+s) = x^2-s^2$$
-
-$$= x^2-(y+z)^2$$
+$$(x-s)(x+s)=x^2-s^2=x^2-(y+z)^2$$
 
 The grouping is an identity in the three letters.""",
             ),
@@ -945,19 +933,19 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""If $a^{-3}v^2=2$, then $\dfrac{a^8v^3}{a^2v^7}+3uv\cdot\dfrac{a^{-6}v^5}{a^7v^{-2}}=48.25$ for $a,v\neq 0$.""",
+                r"""If $u^{-3}a^2=2$, then $\dfrac{u^8a^3}{u^2a^7}+3uv\cdot\dfrac{u^{-6}a^5}{u^7a^{-2}}=48.25$ for $u,a\neq 0$.""",
                 True,
-                r"""The given relation $a^{-3}v^2=2$ does not determine the claim by inspection alone. Set $R=a^{-3}v^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
+                r"""The given relation $u^{-3}a^2=2$ does not determine the claim by inspection alone. Set $R=u^{-3}a^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
 First summand:
 
-$$\frac{a^8v^3}{a^2v^7}=a^6v^{-4}=R^{-2}$$
+$$\frac{u^8a^3}{u^2a^7}=u^6a^{-4}=R^{-2}$$
 
-Powers of $a$ and $v$ collapse to a negative power of $R$.
+Powers of $u$ and $a$ collapse to a negative power of $R$.
 
 Second summand:
 
-$$3uv\cdot\frac{a^{-6}v^5}{a^7v^{-2}}=3R^{4}$$
+$$3uv\cdot\frac{u^{-6}a^5}{u^7a^{-2}}=3R^{4}$$
 
 The mixed monomial piece also becomes a pure power of $R$.
 
@@ -1059,21 +1047,21 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
                 r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
-                r"""If $c^{-3}b^2=2$, then $\dfrac{c^8b^3}{c^2b^7}+3ab\cdot\dfrac{c^{-6}b^5}{c^7b^{-2}}=48.25$ for $c,b\neq 0$.""",
+                r"""If $a^{-3}c^2=2$, then $\dfrac{a^8c^3}{a^2c^7}+3ab\cdot\dfrac{a^{-6}c^5}{a^7c^{-2}}=48.25$ for $a,c\neq 0$.""",
                 True,
-                r"""The given relation $c^{-3}b^2=2$ does not determine the claim by inspection alone. Set $R=c^{-3}b^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
+                r"""The given relation $a^{-3}c^2=2$ does not determine the claim by inspection alone. Set $R=a^{-3}c^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
 First summand:
 
-$$\frac{c^8b^3}{c^2b^7}=c^6b^{-4}=R^{-2}$$
+$$\frac{a^8c^3}{a^2c^7}=a^6c^{-4}=R^{-2}$$
 
-Powers of $c$ and $b$ collapse to c negative power of $R$.
+Powers of $a$ and $c$ collapse to a negative power of $R$.
 
 Second summand:
 
-$$3ab\cdot\frac{c^{-6}b^5}{c^7b^{-2}}=3R^{4}$$
+$$3ab\cdot\frac{a^{-6}c^5}{a^7c^{-2}}=3R^{4}$$
 
-The mixed monomial piece also becomes c pure power of $R$.
+The mixed monomial piece also becomes a pure power of $R$.
 
 Combine before substituting:
 
@@ -1146,13 +1134,13 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""For every real quadruple $(p,q,a,s)$, $(p^2+q^2)(a^2+s^2)=(pr-qs)^2+(ps+qr)^2$.""",
+                r"""For every real quadruple $(a,q,r,s)$, $(a^2+q^2)(r^2+s^2)=(pr-qs)^2+(ps+qr)^2$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(p^2+q^2)(a^2+s^2)=(pr-qs)^2+(ps+qr)^2$$
+$$(a^2+q^2)(r^2+s^2)=(pr-qs)^2+(ps+qr)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 
@@ -1201,9 +1189,7 @@ Expanding both readings separates them; the error appears only in the cross pair
             (
                 r"""Dropping the middle term: $(p+q)^2=p^2+q^2$ is false for real $(p,q)$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""Another wrong cross pairing: for every real quadruple $(a,b,c,d)$, $(a^2+b^2)(c^2+d^2)=(ac+bc)^2+(ad-bd)^2$.""",
@@ -1281,19 +1267,19 @@ $$(r+s)^2-(r-s)^2=4rs$$
 The cross terms add rather than cancel.""",
             ),
             (
-                r"""The inequality $a^2-rs\ge rs-s^2$ holds for every real pair $(a,s)$.""",
+                r"""The inequality $r^2-rs\ge rs-a^2$ holds for every real pair $(r,a)$.""",
                 True,
-                r"""The inequality compares two quadratic-looking sides in $a$ and $s$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
+                r"""The inequality compares two quadratic-looking sides in $r$ and $a$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
 Rearrange to one side:
 
-$$a^2-rs-(rs-s^2)=a^2-2rs+s^2$$
+$$r^2-rs-(rs-a^2)=r^2-2rs+a^2$$
 
 Collecting like terms exposes a perfect square.
 
 Recognise the square:
 
-$$(a-s)^2\ge 0$$
+$$(r-a)^2\ge 0$$
 
 A square is nonnegative for every real pair.
 
@@ -1321,21 +1307,21 @@ Since the difference is a square, the inequality holds on the whole line.""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""If $c^{-3}b^2=2$, then $\dfrac{c^8b^3}{c^2b^7}+3ab\cdot\dfrac{c^{-6}b^5}{c^7b^{-2}}=48.25$ for $c,b\neq 0$, under the standing domain label $D_{1}$.""",
+                r"""If $a^{-3}c^2=2$, then $\dfrac{a^8c^3}{a^2c^7}+3ab\cdot\dfrac{a^{-6}c^5}{a^7c^{-2}}=48.25$ for $a,c\neq 0$, under the standing domain label $D_{1}$.""",
                 True,
-                r"""The given relation $c^{-3}b^2=2$ does not determine the claim by inspection alone. Set $R=c^{-3}b^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
+                r"""The given relation $a^{-3}c^2=2$ does not determine the claim by inspection alone. Set $R=a^{-3}c^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
 First summand:
 
-$$\frac{c^8b^3}{c^2b^7}=c^6b^{-4}=R^{-2}$$
+$$\frac{a^8c^3}{a^2c^7}=a^6c^{-4}=R^{-2}$$
 
-Powers of $c$ and $b$ collapse to c negative power of $R$.
+Powers of $a$ and $c$ collapse to a negative power of $R$.
 
 Second summand:
 
-$$3ab\cdot\frac{c^{-6}b^5}{c^7b^{-2}}=3R^{4}$$
+$$3ab\cdot\frac{a^{-6}c^5}{a^7c^{-2}}=3R^{4}$$
 
-The mixed monomial piece also becomes c pure power of $R$.
+The mixed monomial piece also becomes a pure power of $R$.
 
 Combine before substituting:
 
@@ -1357,13 +1343,13 @@ The printed value matches the fully reduced substitution.""",
                 r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
-                r"""For every real quadruple $(a,v,w,z)$, $(a^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$.""",
+                r"""For every real quadruple $(u,v,w,a)$, $(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(a^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$$
+$$(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 
@@ -1390,9 +1376,7 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
                 True,
                 r"""A difference of squares is not a square of a difference:
 
-$$w^2-16=(w-4)(w+4)$$
-
-$$(w-4)^2=w^2-8w+4^2$$
+$$w^2-16=(w-4)(w+4),\qquad (w-4)^2=w^2-8w+4^2$$
 
 At the test point $w=0$ the two polynomials already disagree.""",
             ),
@@ -1465,42 +1449,40 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""For every real $p$, $(5p-1)^2=25p^2-10p+1$.""",
                 True,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
-                r"""The sum of the fourth power of $a$ and four times the fourth power of $s$ equals the square of $a^2+2s^2$ for every real pair $(a,s)$.""",
+                r"""The sum of the fourth power of $r$ and four times the fourth power of $a$ equals the square of $r^2+2a^2$ for every real pair $(r,a)$.""",
                 False,
-                r"""The wording stops at a single square. Expand $a^2+2s^2$ and compare with $a^4+4s^4$ before accepting the verbal equality.
+                r"""The wording stops at a single square. Expand $r^2+2a^2$ and compare with $r^4+4a^4$ before accepting the verbal equality.
 
 Expand the printed square:
 
-$$(a^2+2s^2)^2=a^4+4a^2s^2+4s^4$$
+$$(r^2+2a^2)^2=r^4+4r^2a^2+4a^4$$
 
-The cross term $4a^2s^2$ is not present in $a^4+4s^4$.
+The cross term $4r^2a^2$ is not present in $r^4+4a^4$.
 
 The Sophie Germain rewrite must subtract $(2rs)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
-                r"""For every real pair $(m,n)$, $(m+n)^2=m^2+n^2$.""",
+                r"""For every real $m$, $(m+1)^2=m^2+1$ (variant 1).""",
                 False,
                 r"""Apply the relevant binomial or factor identity:
 
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""The inequality $a^2+rs\ge rs+s^2$ holds for every real pair $(a,s)$.""",
+                r"""The inequality $r^2+rs\ge rs+a^2$ holds for every real pair $(r,a)$.""",
                 False,
                 r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
 Difference of the two sides:
 
-$$a^2+rs-(rs+s^2)=a^2-s^2=(a-s)(a+s)$$
+$$r^2+rs-(rs+a^2)=r^2-a^2=(r-a)(r+a)$$
 
-The factorisation $(a-s)(a+s)$ is not a square, so the sign can change.
+The factorisation $(r-a)(r+a)$ is not a square, so the sign can change.
 
-For $a=0$, $s=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
+For $r=0$, $a=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
         ],
         overview=r"Five independent hard checks: a vanishing-sum cube, Sophie Germain, a Newton cube-sum, a truncated Brahmagupta product, and a leading-two leftover.",
@@ -1512,13 +1494,13 @@ For $a=0$, $s=1$ the left side is $0$ and the right side is $1$, so the inequali
         context=CTX,
         items=[
             (
-                r"""For every real quadruple $(f,g,t,a)$, $(f^2+g^2)(t^2+a^2)=(ft-gx)^2+(fx+gt)^2$.""",
+                r"""For every real quadruple $(a,g,t,x)$, $(a^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(f^2+g^2)(t^2+a^2)=(ft-gx)^2+(fx+gt)^2$$
+$$(a^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 
@@ -1588,18 +1570,16 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""For every real $u$, $(2u-1)^2=4u^2-4u+1$.""",
                 True,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
-                r"""For every real quadruple $(a,v,w,z)$, $(a^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$, under the standing domain label $D_{1}$.""",
+                r"""For every real quadruple $(u,v,w,a)$, $(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$, under the standing domain label $D_{1}$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(a^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$$
+$$(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 
@@ -1689,13 +1669,13 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""For every real quadruple $(a,b,e,d)$, $(a^2+b^2)(e^2+d^2)=(ac-bd)^2+(ad+bc)^2$.""",
+                r"""For every real quadruple $(a,e,c,d)$, $(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(a^2+b^2)(e^2+d^2)=(ac-bd)^2+(ad+bc)^2$$
+$$(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 
@@ -1709,11 +1689,9 @@ Both sides match as an identity in the four letters.""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""For every real $m$, $(m+1)^2=m^2+1$ (variant 1).""",
+                r"""For every real $m$, $(m+1)^2=m^2+1$ (variant 2).""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""The inequality $a^2+pq\ge pq+q^2$ holds for every real pair $(a,q)$.""",
@@ -1804,15 +1782,15 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
         context=CTX,
         items=[
             (
-                r"""The sum of the fourth power of $c$ and four times the fourth power of $b$ equals the square of $c^2+2b^2$ for every real pair $(c,b)$.""",
+                r"""The sum of the fourth power of $a$ and four times the fourth power of $c$ equals the square of $a^2+2c^2$ for every real pair $(a,c)$.""",
                 False,
-                r"""The wording stops at c single square. Expand $c^2+2b^2$ and compare with $c^4+4b^4$ before accepting the verbal equality.
+                r"""The wording stops at a single square. Expand $a^2+2c^2$ and compare with $a^4+4c^4$ before accepting the verbal equality.
 
 Expand the printed square:
 
-$$(c^2+2b^2)^2=c^4+4c^2b^2+4b^4$$
+$$(a^2+2c^2)^2=a^4+4a^2c^2+4c^4$$
 
-The cross term $4c^2b^2$ is not present in $c^4+4b^4$.
+The cross term $4a^2c^2$ is not present in $a^4+4c^4$.
 
 The Sophie Germain rewrite must subtract $(2ab)^2$ after adding it — the wording stops one step too early.""",
             ),
@@ -1923,13 +1901,13 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""For every real quadruple $(a,b,e,d)$, $(a^2+b^2)(e^2+d^2)=(ac-bd)^2+(ad+bc)^2$, under the standing domain label $D_{1}$.""",
+                r"""For every real quadruple $(a,e,c,d)$, $(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$, under the standing domain label $D_{1}$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(a^2+b^2)(e^2+d^2)=(ac-bd)^2+(ad+bc)^2$$
+$$(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 
@@ -1943,19 +1921,19 @@ Both sides match as an identity in the four letters.""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""If $a^{-3}v^2=2$, then $\dfrac{a^8v^3}{a^2v^7}+3uv\cdot\dfrac{a^{-6}v^5}{a^7v^{-2}}=48$ for $a,v\neq 0$.""",
+                r"""If $u^{-3}a^2=2$, then $\dfrac{u^8a^3}{u^2a^7}+3uv\cdot\dfrac{u^{-6}a^5}{u^7a^{-2}}=48$ for $u,a\neq 0$.""",
                 False,
-                r"""The given relation $a^{-3}v^2=2$ does not determine the claim by inspection alone. Set $R=a^{-3}v^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
+                r"""The given relation $u^{-3}a^2=2$ does not determine the claim by inspection alone. Set $R=u^{-3}a^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
 First summand:
 
-$$\frac{a^8v^3}{a^2v^7}=a^6v^{-4}=R^{-2}$$
+$$\frac{u^8a^3}{u^2a^7}=u^6a^{-4}=R^{-2}$$
 
-Powers of $a$ and $v$ collapse to a negative power of $R$.
+Powers of $u$ and $a$ collapse to a negative power of $R$.
 
 Second summand:
 
-$$3uv\cdot\frac{a^{-6}v^5}{a^7v^{-2}}=3R^{4}$$
+$$3uv\cdot\frac{u^{-6}a^5}{u^7a^{-2}}=3R^{4}$$
 
 The mixed monomial piece also becomes a pure power of $R$.
 
@@ -1976,9 +1954,7 @@ Dropping the summand $R^{-2}=\tfrac{1}{4}$ leaves $48$, which is not the value o
             (
                 r"""The inequality $a^2+ab\ge ab+b^2$ holds for every real pair $(a,b)$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
         ],
         overview=r"Five hard recognitions: a biquadratic square, a Newton cube-sum, a grouping factorisation, a degree mismatch, and a squared Sophie Germain factor.",
@@ -2016,13 +1992,13 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""For every real quadruple $(m,n,h,a)$, $(m^2+n^2)(h^2+a^2)=(mh-nk)^2+(mk+nh)^2$.""",
+                r"""For every real quadruple $(a,n,h,k)$, $(a^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$.""",
                 True,
                 r"""The claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.
 
 Brahmagupta identity:
 
-$$(m^2+n^2)(h^2+a^2)=(mh-nk)^2+(mk+nh)^2$$
+$$(a^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$$
 
 The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
 

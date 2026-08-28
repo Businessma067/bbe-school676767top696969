@@ -321,7 +321,11 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""Difference of squares: $(p+q)(p-q)=p^2-q^2$ for every real pair $(p,q)$.""",
                 True,
-                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
+                r"""A difference of squares is not a square of a difference:
+
+$$w^2-16=(w-4)(w+4),\qquad (w-4)^2=w^2-8w+4^2$$
+
+At the test point $w=0$ the two polynomials already disagree.""",
             ),
             (
                 r"""A false fourth-power expansion: $(h+k)^4=h^4+k^4+4hk(h+k)$ for real $(h,k)$.""",
@@ -458,14 +462,16 @@ The note uses values that do not sum to zero, so the shortcut fails.""",
             (
                 r"""If $r+s+t=0$, then $r^3+s^3+t^3=3rst$ for every real triple $(r,s,t)$.""",
                 True,
-                r"""Apply the relevant binomial or factor identity:
+                r"""The identity $a^3+b^3+c^3=3abc$ collapses only when $a+b+c=0$.
 
-$$(a+b)^2=a^2+2ab+b^2$$""",
+The note uses values that do not sum to zero, so the shortcut fails.""",
             ),
             (
                 r"""An incorrect cube expansion: $(c+d)^3=c^3+d^3$ for all real $(c,d)$ is false.""",
                 False,
-                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
+                r"""Apply the relevant binomial or factor identity:
+
+$$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
                 r"""Likewise $(f+g)^3=f^3+g^3$ fails for some real pair $(f,g)$.""",
@@ -514,17 +520,7 @@ The printed coefficient $25$ is the one that survives the expansion.""",
             (
                 r"""Expanding $(f+2g-h)^2$ is written with the coefficient of $gh$ equal to $+4$.""",
                 False,
-                r"""Expand the binomial square and isolate the mixed-product contribution:
-
-Expand:
-
-$$(f+2g-h)^2$$
-
-Cross term:
-
-$$2\cdot(f)\cdot(2g)$$
-
-The collected coefficient contradicts $gh$.""",
+                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(f)\cdot(2g)$, not the undoubled product.""",
             ),
             (
                 r"""For every real triple $(p,q,a)$ with $p+q+a=0$, $p^3+q^3+a^3=3pqa$.""",
@@ -621,29 +617,29 @@ The reciprocal square carries numerator $25$, not $1$. Swapping numerator and de
             (
                 r"""Adding squared gaps: $(c+d)^2+(c-d)^2=2(c^2+d^2)$ for every real pair $(c,d)$.""",
                 True,
-                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
+                r"""Apply the relevant binomial or factor identity:
+
+$$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
                 r"""Missing cross terms: $(f+g)^3=f^3+g^3$ is false for real $(f,g)$.""",
                 False,
-                r"""Innermost stack multiplies exponents:
+                r"""Expand the binomial square and isolate the mixed-product contribution:
 
-Inner:
+Expand:
 
-$$(t^{2})^{3}=t^{6}$$
+$$(U+V)^2$$
 
-Outer:
+Cross term:
 
-$$(t^{6})^{1/2}=t^{3}$$
+$$2\cdot(U)\cdot(V)$$
 
-Adding exponents first would be the product rule, not the power-of-a-power rule.""",
+The collected coefficient contradicts the printed value.""",
             ),
             (
                 r"""Polarisation again: $(h+k)^2+(h-k)^2=2(h^2+k^2)$ for real $(h,k)$.""",
                 True,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""Another cube error: $(h+k)^3=h^3+k^3$ is false for real $(h,k)$.""",
@@ -892,17 +888,7 @@ The reduced power is not the printed radical; the mismatch appears only after al
             (
                 r"""Expanding the square $(2f-3g+h)^2$ is written with the coefficient of $fg$ equal to $+12$.""",
                 False,
-                r"""Expand the binomial square and isolate the mixed-product contribution:
-
-Expand:
-
-$$(2f-3g+h)^2$$
-
-Cross term:
-
-$$2\cdot(2f)\cdot(-3g)$$
-
-The collected coefficient contradicts $fg$.""",
+                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(2f)\cdot(-3g)$, not the undoubled product.""",
             ),
             (
                 r"""For every real pair $(c,d)$, $(c+d)^3=c^3+d^3$ (variant 2).""",
@@ -912,23 +898,23 @@ The collected coefficient contradicts $fg$.""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals $h$ divided by the sum of the square of $h$ and one.""",
-                False,
-                r"""The statement is entirely worded. Translate each English phrase into symbols for $h\neq 0$ before comparing the two sides.
+                r"""Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals twice $t$ divided by the sum of the square of $t$ and one.""",
+                True,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $t\neq 0$ before comparing the two sides.
 
 Left-hand wording:
 
-$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
+$$\frac{2}{t+\frac{1}{t}}=\frac{2t}{t^2+1}$$
 
-Twice the reciprocal of $h+\dfrac{1}{h}$ clears to a single rational expression.
+Twice the reciprocal of $t+\dfrac{1}{t}$ clears to a single rational expression.
 
 Right-hand wording:
 
-$$\frac{h}{h^2+1}$$
+$$\frac{2t}{t^2+1}$$
 
 The claim's right side must be read from the same verbal description.
 
-The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
+Both translations agree, so the statement is an identity on $t\neq 0$.""",
             ),
             (
                 r"""Pulling the constant factor, $|-5\ell+15|$ is rewritten as $5|\ell-3|$ for every real $\ell$.""",
@@ -1001,7 +987,9 @@ The reduced power is not the printed radical; the mismatch appears only after al
             (
                 r"""For every real pair $(m,n)$, $(m+n)^3=m^3+n^3$.""",
                 False,
-                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
+                r"""Apply the relevant binomial or factor identity:
+
+$$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
                 r"""For every real pair $(x,y)$, $(x+y)^3=x^3+y^3$ (variant 1).""",
@@ -1170,19 +1158,19 @@ The surviving expression is the true remainder on the stated domain.""",
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals $m$ divided by the sum of the square of $m$ and one.""",
+                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals $h$ divided by the sum of the square of $h$ and one.""",
                 False,
-                r"""The statement is entirely worded. Translate each English phrase into symbols for $m\neq 0$ before comparing the two sides.
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $h\neq 0$ before comparing the two sides.
 
 Left-hand wording:
 
-$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
+$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
 
-Twice the reciprocal of $m+\dfrac{1}{m}$ clears to a single rational expression.
+Twice the reciprocal of $h+\dfrac{1}{h}$ clears to a single rational expression.
 
 Right-hand wording:
 
-$$\frac{m}{m^2+1}$$
+$$\frac{h}{h^2+1}$$
 
 The claim's right side must be read from the same verbal description.
 
@@ -1297,14 +1285,24 @@ The printed coefficient $4$ is the one that survives the expansion.""",
             (
                 r"""Missing cube cross terms: $(c+d)^3=c^3+d^3$ fails for some real pair $(c,d)$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
+                r"""Expand the binomial square and isolate the mixed-product contribution:
 
-$$(a+b)^2=a^2+2ab+b^2$$""",
+Expand:
+
+$$(U+V)^2$$
+
+Cross term:
+
+$$2\cdot(U)\cdot(V)$$
+
+The collected coefficient contradicts the printed value.""",
             ),
             (
                 r"""Polarisation: $(f+g)^2+(f-g)^2=2(f^2+g^2)$ for every real pair $(f,g)$.""",
                 True,
-                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
+                r"""Apply the relevant binomial or factor identity:
+
+$$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
                 r"""Stripping nested bars, $\bigl||k|-15\bigr|$ equals $|k|-15$ for every real $k$ (false).""",
@@ -1316,9 +1314,7 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""A false fourth power: $(h+k)^4=h^4+k^4+4hk(h+k)$ for real $(h,k)$.""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
         ],
         overview=r"""Unlinked claims: the $fg$ coefficient $-6$ in $(3f-g-2h)^2$, a cubic remainder that matches only at $0$, $\sqrt{11+6\sqrt{2}}=3+\sqrt{2}$, nested bars that cannot be stripped, and $r^2+s^2=141$ rather than $169$.""",
@@ -1418,17 +1414,7 @@ The leftover constant is $+4$, not zero.""",
             (
                 r"""The coefficient of $fg$ in the expansion of $(f-3g-h)^2$ equals $-6$.""",
                 True,
-                r"""Expand the binomial square and isolate the mixed-product contribution:
-
-Expand:
-
-$$(f-3g-h)^2$$
-
-Cross term:
-
-$$2\cdot(f)\cdot(-3g)$$
-
-The collected coefficient matches $fg$.""",
+                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(f)\cdot(-3g)$, not the undoubled product.""",
             ),
             (
                 r"""If $f>0$, then $\dfrac{f^{2/3}\cdot\sqrt[3]{f\sqrt{f}}}{f^{1/6}\cdot\sqrt[6]{f^5}}=\sqrt[3]{f}$.""",
@@ -1570,7 +1556,17 @@ The fully reduced power matches the printed right-hand side.""",
             (
                 r"""The coefficient of $gh$ in the expansion of $(4f-g-h)^2$ equals $2$.""",
                 True,
-                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(4f)\cdot(-g)$, not the undoubled product.""",
+                r"""Expand the binomial square and isolate the mixed-product contribution:
+
+Expand:
+
+$$(4f-g-h)^2$$
+
+Cross term:
+
+$$2\cdot(4f)\cdot(-g)$$
+
+The collected coefficient matches $gh$.""",
             ),
             (
                 r"""Reducing the quadratic $\dfrac{m^2-15m+56}{m-7}$ to $m-7$ for $m\neq 7$ is treated as an identity.""",
@@ -1681,9 +1677,7 @@ The fully reduced power matches the printed right-hand side.""",
 
 At the test point:
 
-$$|2\cdot(-2)+1|=3$$
-
-$$2\cdot(-2)+1=-3$$""",
+$$|2\cdot(-2)+1|=3,\qquad 2\cdot(-2)+1=-3$$""",
             ),
             (
                 r"""Squaring a single Sophie-Germain factor, $n^4+4m^4$ is identified with $(n^2+2nm+2m^2)^2$.""",
@@ -1801,23 +1795,23 @@ $$2\cdot(2f)\cdot(2g)$$
 The collected coefficient contradicts $fg$.""",
             ),
             (
-                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals twice $h$ divided by the sum of the square of $h$ and one.""",
-                True,
-                r"""The statement is entirely worded. Translate each English phrase into symbols for $h\neq 0$ before comparing the two sides.
+                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals $m$ divided by the sum of the square of $m$ and one.""",
+                False,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $m\neq 0$ before comparing the two sides.
 
 Left-hand wording:
 
-$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
+$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
 
-Twice the reciprocal of $h+\dfrac{1}{h}$ clears to a single rational expression.
+Twice the reciprocal of $m+\dfrac{1}{m}$ clears to a single rational expression.
 
 Right-hand wording:
 
-$$\frac{2h}{h^2+1}$$
+$$\frac{m}{m^2+1}$$
 
 The claim's right side must be read from the same verbal description.
 
-Both translations agree, so the statement is an identity on $h\neq 0$.""",
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"""Simplifying a monomial radical, $(16k^4)^{1/4}$ is rewritten as $2k$ for every real $k$.""",
@@ -1864,9 +1858,7 @@ The reciprocal square carries numerator $25$, not $1$. Swapping numerator and de
             (
                 r"""For every real pair $(r,s)$, $(r+s)^3=r^3+s^3$ (variant 2).""",
                 False,
-                r"""Apply the relevant binomial or factor identity:
-
-$$(a+b)^2=a^2+2ab+b^2$$""",
+                r"Expand or factor with the named elementary identity; compare the result to the printed claim.",
             ),
             (
                 r"""For every real pair $(c,d)$, $(c+d)^3=c^3+d^3$ (variant 5).""",
@@ -1898,23 +1890,23 @@ Adding exponents first would be the product rule, not the power-of-a-power rule.
 $$(a+b)^2=a^2+2ab+b^2$$""",
             ),
             (
-                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals twice $m$ divided by the sum of the square of $m$ and one.""",
+                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals twice $h$ divided by the sum of the square of $h$ and one.""",
                 True,
-                r"""The statement is entirely worded. Translate each English phrase into symbols for $m\neq 0$ before comparing the two sides.
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $h\neq 0$ before comparing the two sides.
 
 Left-hand wording:
 
-$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
+$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
 
-Twice the reciprocal of $m+\dfrac{1}{m}$ clears to a single rational expression.
+Twice the reciprocal of $h+\dfrac{1}{h}$ clears to a single rational expression.
 
 Right-hand wording:
 
-$$\frac{2m}{m^2+1}$$
+$$\frac{2h}{h^2+1}$$
 
 The claim's right side must be read from the same verbal description.
 
-Both translations agree, so the statement is an identity on $m\neq 0$.""",
+Both translations agree, so the statement is an identity on $h\neq 0$.""",
             ),
         ],
         overview=r"""Five unlinked lines: a forgotten doubling of $fh$, opposite linear fractions summing to $1$ not $0$, $\sqrt[3]{-8s^9}=-2s^3$, $|-\ell|=|\ell|$, and $r^3+u^3+w^3=3ruw$ at $(5,11,-16)$.""",
@@ -1992,17 +1984,23 @@ The fully reduced power matches the printed right-hand side.""",
         context=CTX,
         items=[
             (
-                r"""For $k\neq 0$, $(1k^{-1}-1)(1k^{-1}+1)=\dfrac{1}{k^2}-1$.""",
+                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals twice $m$ divided by the sum of the square of $m$ and one.""",
                 True,
-                r"""The product is a difference of squares. Set $A=1k^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $m\neq 0$ before comparing the two sides.
 
-Apply $A^2-1$:
+Left-hand wording:
 
-$$(1k^{-1})^2-1=\frac{1}{k^2}-1$$
+$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
 
-The reciprocal square carries coefficient $1$ on $k^2$ in the denominator.
+Twice the reciprocal of $m+\dfrac{1}{m}$ clears to a single rational expression.
 
-The printed coefficient $1$ is the one that survives the expansion.""",
+Right-hand wording:
+
+$$\frac{2m}{m^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $m\neq 0$.""",
             ),
             (
                 r"""Cancelling a quadratic, $\dfrac{k^2-29k+210}{k-15}$ equals $k-14$ for $k\neq 15$.""",
@@ -2110,17 +2108,7 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""Expanding the trinomial $(f+3g-2h)^2$ is written with the coefficient of $gh$ equal to $-6$.""",
                 False,
-                r"""Expand the binomial square and isolate the mixed-product contribution:
-
-Expand:
-
-$$(f+3g-2h)^2$$
-
-Cross term:
-
-$$2\cdot(f)\cdot(3g)$$
-
-The collected coefficient contradicts $gh$.""",
+                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(f)\cdot(3g)$, not the undoubled product.""",
             ),
             (
                 r"""The stacked quotient $\dfrac{\dfrac{8b^2c}{4x^2-16}}{\dfrac{4bc}{2x+4}}$ simplifies to $\dfrac{b}{x+2}$ for $x\neq\pm 2$ and $b,c\neq 0$.""",
@@ -2194,7 +2182,17 @@ $$(a+b)^2=a^2+2ab+b^2$$""",
             (
                 r"""The coefficient of $gh$ in the expansion of $(f-2g-3h)^2$ equals $12$.""",
                 True,
-                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(f)\cdot(-2g)$, not the undoubled product.""",
+                r"""Expand the binomial square and isolate the mixed-product contribution:
+
+Expand:
+
+$$(f-2g-3h)^2$$
+
+Cross term:
+
+$$2\cdot(f)\cdot(-2g)$$
+
+The collected coefficient matches $gh$.""",
             ),
             (
                 r"""For $x\neq 0$, $(5x^{-1}-1)(5x^{-1}+1)=\dfrac{1}{25x^2}-1$.""",
@@ -2274,7 +2272,17 @@ After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             (
                 r"""Expanding the square $(2f-5g+h)^2$ is written with the coefficient of $fg$ equal to $-10$.""",
                 False,
-                r"""In a square of a sum, each mixed product is doubled. The pair contributes $2\cdot(2f)\cdot(-5g)$, not the undoubled product.""",
+                r"""Expand the binomial square and isolate the mixed-product contribution:
+
+Expand:
+
+$$(2f-5g+h)^2$$
+
+Cross term:
+
+$$2\cdot(2f)\cdot(-5g)$$
+
+The collected coefficient contradicts $fg$.""",
             ),
             (
                 r"""For every real triple $(c,d,m)$ with $c+d+m=0$, $c^3+d^3+m^3=3cdm$.""",

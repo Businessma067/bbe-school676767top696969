@@ -102,6 +102,22 @@ TASK_PATCHES: dict[str, list[tuple[str, bool]]] = {
         ),
         (r"A false fourth power: $(h+k)^4=h^4+k^4+4hk(h+k)$ for real $(h,k)$.", False),
     ],
+    "Newton sums built from a pair of elementary data": [
+        (
+            r"A mis-paired Brahmagupta product: for every real quadruple $(m,n,h,k)$, $(m^2+n^2)(h^2+k^2)=(mh+nh)^2+(mk-nk)^2$.",
+            False,
+        ),
+        (r"Dropping the middle term: $(p+q)^2=p^2+q^2$ is false for real $(p,q)$.", False),
+        (
+            r"Another wrong cross pairing: for every real quadruple $(a,b,c,d)$, $(a^2+b^2)(c^2+d^2)=(ac+bc)^2+(ad-bd)^2$.",
+            False,
+        ),
+        (
+            r"If $c^{-3}d^2=2$, then $\dfrac{c^8d^3}{c^2d^7}+3cd\cdot\dfrac{c^{-6}d^5}{c^7d^{-2}}=48.25$ for $c,d\neq 0$.",
+            True,
+        ),
+        (r"Again omitting $2pq$: $(x+y)^2=x^2+y^2$ is false for real $(x,y)$.", False),
+    ],
     "Swapped-ratio sum beside a denested sixteen": [
         (
             r"A reciprocal-square trap: for $u\neq 0$, $(5u^{-1}-1)(5u^{-1}+1)=\dfrac{1}{25u^2}-1$.",
@@ -118,21 +134,12 @@ TASK_PATCHES: dict[str, list[tuple[str, bool]]] = {
         ),
         (r"Another cube error: $(h+k)^3=h^3+k^3$ is false for real $(h,k)$.", False),
     ],
-    "Newton sums built from a pair of elementary data": [
-        (
-            r"A mis-paired Brahmagupta product: for every real quadruple $(m,n,h,k)$, $(m^2+n^2)(h^2+k^2)=(mh+nh)^2+(mk-nk)^2$.",
-            False,
-        ),
-        (r"Dropping the middle term: $(p+q)^2=p^2+q^2$ is false for real $(p,q)$.", False),
-        (
-            r"Another wrong cross pairing: for every real quadruple $(a,b,c,d)$, $(a^2+b^2)(c^2+d^2)=(ac+bc)^2+(ad-bd)^2$.",
-            False,
-        ),
-        (
-            r"If $c^{-3}d^2=2$, then $\dfrac{c^8d^3}{c^2d^7}+3cd\cdot\dfrac{c^{-6}d^5}{c^7d^{-2}}=48.25$ for $c,d\neq 0$.",
-            True,
-        ),
-        (r"Again omitting $2pq$: $(x+y)^2=x^2+y^2$ is false for real $(x,y)$.", False),
+    "Sign of a letter over its modulus": [
+        (r"Taking the quotient $|n|/n$ whenever $n>0$ equals $1$.", True),
+        (r"For every real $x$, $|x^2-8x+7|=(x-1)(x-7)$.", False),
+        (r"Without an interval, $|x-1|+|1-x|=2$ is false for every real $x$.", False),
+        (r"For every real $k$, $|k|+|{-k}|=2|k|$.", True),
+        (r"Unrestricted in $x$, $|x-2|+|x-7|=5$ is stated for every real $x$.", False),
     ],
 }
 

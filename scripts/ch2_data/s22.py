@@ -438,11 +438,7 @@ Adding numerators over added denominators is not an identity.""",
             (
                 r"""For $r,s\neq 0$, $\dfrac{1}{r}+\dfrac{1}{s}=\dfrac{1}{r+s}$ (variant 1).""",
                 False,
-                r"""Least common denominator of $r$ and $s$ is the product $rs$:
-
-$$\frac{\cdots}{r}+\frac{\cdots}{s}=\frac{\cdots}{rs}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $r$ and $s$ is their product, not their sum $r+s$.""",
             ),
             (
                 r"""Collapsing $\dfrac{1}{1+\dfrac{1}{z}}$ for $z\neq 0,-1$ equals $\dfrac{z}{z+1}$.""",
@@ -456,15 +452,11 @@ Adding numerators over added denominators is not an identity.""",
             (
                 r"""Someone rewrites $\dfrac{1}{1-\dfrac{1}{t}}$ for $t\neq 0,1$ as $\dfrac{t}{t+1}$.""",
                 False,
-                r"""Clear to the product denominator:
+                r"""Least common denominator of $t$ and $t+1$ is the product $tt+1$:
 
-LCD:
+$$\frac{\cdots}{t}+\frac{\cdots}{t+1}=\frac{\cdots}{tt+1}$$
 
-$$t\cdot t+1$$
-
-Combine:
-
-$$\frac{\cdots}{t}+\frac{\cdots}{t+1}=\frac{\cdots}{tt+1}$$""",
+Adding numerators over added denominators is not an identity.""",
             ),
             (
                 r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $8$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $4$ over $x-1$ and $4$ over $x+1$.""",
@@ -538,11 +530,7 @@ After every cancellation the surviving power of $k$ is $k^2$, so the printed rig
             (
                 r"""For $p,q\neq 0$, $\dfrac{4}{p}+\dfrac{5}{q}=\dfrac{4q+5p}{pq}$.""",
                 True,
-                r"""Least common denominator of $p$ and $q$ is the product $pq$:
-
-$$\frac{\cdots}{p}+\frac{\cdots}{q}=\frac{\cdots}{pq}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $p$ and $q$ is their product, not their sum $p+q$.""",
             ),
             (
                 r"""The stacked quotient $\dfrac{\dfrac{8p^2b}{4x^2-16}}{\dfrac{4pb}{2x+4}}$ simplifies to $\dfrac{p}{x-2}$ for $x\neq\pm 2$ and $p,b\neq 0$.""",
@@ -602,7 +590,11 @@ $$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$""",
             (
                 r"""For $x\neq\pm 1$, $\dfrac{4x-2}{x^2-1}-\dfrac{3}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{4}{x-1}$.""",
                 True,
-                r"""Least common denominator of $x^2-1$ and $1+x$ is their product, not their sum $x^2-1+1+x$.""",
+                r"""Least common denominator of $x^2-1$ and $1+x$ is the product $x^2-11+x$:
+
+$$\frac{\cdots}{x^2-1}+\frac{\cdots}{1+x}=\frac{\cdots}{x^2-11+x}$$
+
+Adding numerators over added denominators is not an identity.""",
             ),
             (
                 r"""Expanding $\bigl(1-\dfrac{1}{u}\bigr)^2$ on $u\neq 0$ equals $1-\dfrac{2}{u}+\dfrac{1}{u^2}$.""",
@@ -666,24 +658,16 @@ The printed right-hand side matches the reduced quotient.""",
             (
                 r"""Let $x$ be a nonzero real number. Twice the reciprocal of the sum of $x$ and the reciprocal of $x$ equals $x$ divided by the sum of the square of $x$ and one.""",
                 False,
-                r"""Clear to the product denominator:
+                r"""Least common denominator of $t$ and $u$ is the product $tu$:
 
-LCD:
+$$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$
 
-$$t\cdot u$$
-
-Combine:
-
-$$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$""",
+Adding numerators over added denominators is not an identity.""",
             ),
             (
                 r"""For $p,q\neq 0$, $\dfrac{1}{p}+\dfrac{1}{q}=\dfrac{1}{p+q}$ (variant 1).""",
                 False,
-                r"""Least common denominator of $p$ and $q$ is the product $pq$:
-
-$$\frac{\cdots}{p}+\frac{\cdots}{q}=\frac{\cdots}{pq}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $p$ and $q$ is their product, not their sum $p+q$.""",
             ),
             (
                 r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $2$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $2$ over $x-1$ and $2$ over $x+1$.""",
@@ -776,26 +760,16 @@ Adding numerators over added denominators is not an identity.""",
             (
                 r"""For $f\neq 4$, $\dfrac{f^2-16}{f-4}=f+4$.""",
                 True,
-                r"""Least common denominator of $t$ and $u$ is the product $tu$:
-
-$$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $t$ and $u$ is their product, not their sum $t+u$.""",
             ),
             (
                 r"""Rewriting $\dfrac{h}{k}+\dfrac{k}{h}$ on $hk\neq 0$ as $\dfrac{(h+k)^2}{hk}$.""",
                 False,
-                r"""Clear to the common denominator $hk$:
-
-Combine:
+                r"""Over $hk\neq 0$ the true combination is
 
 $$\frac{h}{k}+\frac{k}{h}=\frac{h^2+k^2}{hk}$$
 
-Compare:
-
-$$\frac{(h+k)^2}{hk}=\frac{h^2+2hk+k^2}{hk}$$
-
-The squared-sum numerator carries an extra $2hk$.""",
+Squaring the sum in the numerator would add a cross term $2hk$.""",
             ),
             (
                 r"""Whenever $z\neq 6$, cancelling in $\dfrac{z^2-36}{z-6}$ is treated as leaving $z-6$.""",
@@ -836,15 +810,11 @@ Twice the intended numerator appears — the factor $\tfrac{1}{2}$ was omitted i
             (
                 r"""Provided $x\neq 0$, the difference $\dfrac{1}{x^2}-\dfrac{1}{(x+1)^2}$ equals $\dfrac{2x+1}{x^2(x+1)^2}$.""",
                 True,
-                r"""Clear to the product denominator:
+                r"""Least common denominator of $x^2$ and $(x+1)^2$ is the product $x^2(x+1)^2$:
 
-LCD:
+$$\frac{\cdots}{x^2}+\frac{\cdots}{(x+1)^2}=\frac{\cdots}{x^2(x+1)^2}$$
 
-$$x^2\cdot (x+1)^2$$
-
-Combine:
-
-$$\frac{\cdots}{x^2}+\frac{\cdots}{(x+1)^2}=\frac{\cdots}{x^2(x+1)^2}$$""",
+Adding numerators over added denominators is not an identity.""",
             ),
             (
                 r"""For $r\neq 0$, $\dfrac{4(9r)}{(-9r)^2}=\dfrac{4}{9r}$.""",
@@ -930,15 +900,11 @@ Adding numerators over added denominators is not an identity.""",
             (
                 r"""Collapsing $\dfrac{1}{1-\dfrac{1}{w}}$ for $w\neq 0,1$ equals $\dfrac{w}{w-1}$.""",
                 True,
-                r"""Clear to the product denominator:
+                r"""Least common denominator of $w$ and $w-1$ is the product $ww-1$:
 
-LCD:
+$$\frac{\cdots}{w}+\frac{\cdots}{w-1}=\frac{\cdots}{ww-1}$$
 
-$$w\cdot w-1$$
-
-Combine:
-
-$$\frac{\cdots}{w}+\frac{\cdots}{w-1}=\frac{\cdots}{ww-1}$$""",
+Adding numerators over added denominators is not an identity.""",
             ),
         ],
         overview=r"""A compound fraction is two ordinary layers: collapse each, then multiply by the reciprocal of the lower layer. A ratio minus its reciprocal over $v^2-9$ produces $12v$, not $6v$.""",
@@ -952,11 +918,7 @@ $$\frac{\cdots}{w}+\frac{\cdots}{w-1}=\frac{\cdots}{ww-1}$$""",
             (
                 r"""For $x,y\neq 0$ and $x\neq -y$, $\dfrac{2}{x}+\dfrac{3}{y}=\dfrac{2y+3x}{x+y}$.""",
                 False,
-                r"""Least common denominator of $x$ and $y$ is the product $xy$:
-
-$$\frac{\cdots}{x}+\frac{\cdots}{y}=\frac{\cdots}{xy}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $x$ and $y$ is their product, not their sum $x+y$.""",
             ),
             (
                 r"""The stacked quotient $\dfrac{\dfrac{8m^2b}{4x^2-16}}{\dfrac{4mb}{2x+4}}$ simplifies to $\dfrac{m}{x+2}$ for $x\neq\pm 2$ and $m,b\neq 0$.""",
@@ -1044,11 +1006,15 @@ Clearing reproduces the original rational expression with the correct numerator.
             (
                 r"""Clearing the nest $\dfrac{1}{1-\dfrac{1}{1-\dfrac{1}{x}}}$ for $x\neq 0,1$ equals $1-x$.""",
                 True,
-                r"""Least common denominator of $t$ and $u$ is the product $tu$:
+                r"""Clear to the product denominator:
 
-$$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$
+LCD:
 
-Adding numerators over added denominators is not an identity.""",
+$$t\cdot u$$
+
+Combine:
+
+$$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$""",
             ),
             (
                 r"""For $c,d\neq 0$, $\dfrac{2}{c}+\dfrac{4}{d}=\dfrac{2d+4c}{cd}$.""",
@@ -1094,7 +1060,11 @@ $$\frac{\cdots}{t}+\frac{\cdots}{u}=\frac{\cdots}{tu}$$""",
             (
                 r"""For $t,w\neq 0$, $\dfrac{1}{t}+\dfrac{1}{w}=\dfrac{1}{t+w}$.""",
                 False,
-                r"""Least common denominator of $t$ and $w$ is their product, not their sum $t+w$.""",
+                r"""Least common denominator of $t$ and $w$ is the product $tw$:
+
+$$\frac{\cdots}{t}+\frac{\cdots}{w}=\frac{\cdots}{tw}$$
+
+Adding numerators over added denominators is not an identity.""",
             ),
         ],
         overview=r"""A three-layer minus nest of unit fractions simplifies to $1-x$; the matching plus nest simplifies to $(u+1)/(2u+1)$. Dropping the $2$ when squaring $h+1/h$, or keeping a cancelled factor as the remainder, both fail.""",
@@ -1343,15 +1313,11 @@ $$\frac{\cdots}{4x}+\frac{\cdots}{5}=\frac{\cdots}{4x5}$$""",
             (
                 r"""On $hk\neq 0$ and $h\neq k$, someone writes $\dfrac{h}{h-k}+\dfrac{k}{k-h}=0$.""",
                 False,
-                r"""Clear to the product denominator:
+                r"""Least common denominator of $h-k$ and $k-h$ is the product $h-kk-h$:
 
-LCD:
+$$\frac{\cdots}{h-k}+\frac{\cdots}{k-h}=\frac{\cdots}{h-kk-h}$$
 
-$$h-k\cdot k-h$$
-
-Combine:
-
-$$\frac{\cdots}{h-k}+\frac{\cdots}{k-h}=\frac{\cdots}{h-kk-h}$$""",
+Adding numerators over added denominators is not an identity.""",
             ),
             (
                 r"""Provided $v\neq 0$, the halved form $\dfrac{(v+5)^2-(v-5)^2}{2v}$ equals $10$.""",
@@ -1598,11 +1564,7 @@ $$\frac{\cdots}{4x^2-16}+\frac{\cdots}{2x+4}=\frac{\cdots}{4x^2-162x+4}$$""",
             (
                 r"""For $u,v\neq 0$, $\dfrac{3}{u}+\dfrac{5}{v}=\dfrac{3v+5u}{uv}$.""",
                 True,
-                r"""Least common denominator of $u$ and $v$ is the product $uv$:
-
-$$\frac{\cdots}{u}+\frac{\cdots}{v}=\frac{\cdots}{uv}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $u$ and $v$ is their product, not their sum $u+v$.""",
             ),
             (
                 r"""The stacked quotient $\dfrac{\dfrac{8h^2b}{4x^2-16}}{\dfrac{4hb}{2x+4}}$ simplifies to $\dfrac{h}{x+2}$ for $x\neq\pm 2$ and $h,b\neq 0$.""",
@@ -1760,12 +1722,26 @@ Both parts of the claimed single fraction match this reduction.""",
             (
                 r"""For $x\neq\pm 1$, $\dfrac{3x-3}{x^2-1}-\dfrac{4}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{5}{x-1}$.""",
                 False,
-                r"""Least common denominator of $x^2-1$ and $1+x$ is their product, not their sum $x^2-1+1+x$.""",
+                r"""Least common denominator of $x^2-1$ and $1+x$ is the product $x^2-11+x$:
+
+$$\frac{\cdots}{x^2-1}+\frac{\cdots}{1+x}=\frac{\cdots}{x^2-11+x}$$
+
+Adding numerators over added denominators is not an identity.""",
             ),
             (
                 r"""Clearing the three-layer plus nest $1+\dfrac{1}{1+\dfrac{1}{1+\dfrac{1}{k}}}$ for $k\neq 0,-1,-\dfrac{1}{2}$ equals $\dfrac{3k+2}{2k+1}$.""",
                 True,
-                r"""Innermost, $1+\dfrac{1}{x}=\dfrac{x+1}{x}$. Its reciprocal is $\dfrac{x}{x+1}$, and adding $1$ gives
+                r"""Work from the innermost layer outward:
+
+Inner:
+
+$$1+\frac{1}{x}=\frac{x+1}{x}$$
+
+Reciprocal:
+
+$$\frac{1}{1+\frac{1}{x}}=\frac{x}{x+1}$$
+
+Outer:
 
 $$1+\frac{x}{x+1}=\frac{2x+1}{x+1}$$""",
             ),
@@ -1933,11 +1909,15 @@ The printed right-hand side matches the fully cancelled monomial.""",
             (
                 r"""For $p,q\neq 0$ and $p\neq -q$, $\dfrac{4}{p}+\dfrac{5}{q}=\dfrac{4q+5p}{p+q}$.""",
                 False,
-                r"""Least common denominator of $p$ and $q$ is the product $pq$:
+                r"""Clear to the product denominator:
 
-$$\frac{\cdots}{p}+\frac{\cdots}{q}=\frac{\cdots}{pq}$$
+LCD:
 
-Adding numerators over added denominators is not an identity.""",
+$$p\cdot q$$
+
+Combine:
+
+$$\frac{\cdots}{p}+\frac{\cdots}{q}=\frac{\cdots}{pq}$$""",
             ),
             (
                 r"""With $w\neq \pm 3$, someone writes $\dfrac{w^2+w-6}{w^2-9}=\dfrac{w+2}{w-3}$.""",
@@ -1960,11 +1940,15 @@ Adding numerators over added denominators is not an identity.""",
             (
                 r"""Adding $\dfrac{1}{h(h-k)}+\dfrac{1}{k(k-h)}$ for $hk\neq 0$ and $h\neq k$ equals $-\dfrac{1}{hk}$.""",
                 True,
-                r"""Least common denominator of $h(h-k)$ and $k(k-h)$ is the product $h(h-k)k(k-h)$:
+                r"""Clear to the product denominator:
 
-$$\frac{\cdots}{h(h-k)}+\frac{\cdots}{k(k-h)}=\frac{\cdots}{h(h-k)k(k-h)}$$
+LCD:
 
-Adding numerators over added denominators is not an identity.""",
+$$h(h-k)\cdot k(k-h)$$
+
+Combine:
+
+$$\frac{\cdots}{h(h-k)}+\frac{\cdots}{k(k-h)}=\frac{\cdots}{h(h-k)k(k-h)}$$""",
             ),
             (
                 r"""For $c,d\neq 0$, $\dfrac{1}{c}+\dfrac{1}{d}=\dfrac{1}{c+d}$ (variant 1).""",
@@ -2106,11 +2090,15 @@ After the full clear the left-hand side is $\frac{8 x}{x^{2} - 1}$, not $\dfrac{
             (
                 r"""For $u,w,v\neq 0$, $\dfrac{3wv}{4u}\cdot\dfrac{2u^3w^2}{5}\div\dfrac{3(uw)^2}{4v}=\dfrac{2wv}{5}$.""",
                 False,
-                r"""Least common denominator of $4u$ and $5$ is the product $4u5$:
+                r"""Clear to the product denominator:
 
-$$\frac{\cdots}{4u}+\frac{\cdots}{5}=\frac{\cdots}{4u5}$$
+LCD:
 
-Adding numerators over added denominators is not an identity.""",
+$$4u\cdot 5$$
+
+Combine:
+
+$$\frac{\cdots}{4u}+\frac{\cdots}{5}=\frac{\cdots}{4u5}$$""",
             ),
         ],
         overview=r"""The LCD of three distinct linear denominators is their product. Subtracting reciprocal quadratics keeps both quadratic factors. A difference of reciprocal squares over $(z\pm 1)^2$ produces $4z/(z^2-1)^2$.""",
@@ -2355,32 +2343,22 @@ $$j = 0 \Rightarrow 121 \text{ on both sides, but } j$$
 $$= 1 \Rightarrow 133 \neq 122$$""",
             ),
             (
-                r"""Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals twice $t$ divided by the sum of the square of $t$ and one.""",
+                r"""For $u,v\neq 0$, $\dfrac{3}{u}+\dfrac{7}{v}=\dfrac{3v+7u}{uv}$.""",
                 True,
-                r"""The statement is entirely worded. Translate each English phrase into symbols for $t\neq 0$ before comparing the two sides.
+                r"""The claim adds two simple fractions in $u$ and $v$. The least common denominator is the product $uv$, not their sum.
 
-Left-hand wording:
+Clear to one fraction:
 
-$$\frac{2}{t+\frac{1}{t}}=\frac{2t}{t^2+1}$$
+$$\frac{3}{u}+\frac{7}{v}=\frac{3v+7u}{uv}$$
 
-Twice the reciprocal of $t+\dfrac{1}{t}$ clears to a single rational expression.
+Cross-multiply each term before comparing numerator and denominator.
 
-Right-hand wording:
-
-$$\frac{2t}{t^2+1}$$
-
-The claim's right side must be read from the same verbal description.
-
-Both translations agree, so the statement is an identity on $t\neq 0$.""",
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"""For $x\neq\pm 1$, $\dfrac{7x-1}{x^2-1}-\dfrac{2}{1+x}+\dfrac{3}{x-1}-\dfrac{1}{1-x}=\dfrac{5}{x-1}$.""",
                 False,
-                r"""Least common denominator of $x^2-1$ and $1+x$ is the product $x^2-11+x$:
-
-$$\frac{\cdots}{x^2-1}+\frac{\cdots}{1+x}=\frac{\cdots}{x^2-11+x}$$
-
-Adding numerators over added denominators is not an identity.""",
+                r"""Least common denominator of $x^2-1$ and $1+x$ is their product, not their sum $x^2-1+1+x$.""",
             ),
         ],
         overview=r"""Two candidate simplifications of a compound fraction need not be equal: one may be the reciprocal of the other. The plus combination $h/k+k/h+2$ really is $(h+k)^2/hk$; mixing a difference-of-cubes quadratic with a sum-of-cubes quadratic is not.""",
@@ -2440,15 +2418,11 @@ Adding numerators over added denominators is not an identity.""",
             (
                 r"""Combining $\dfrac{1}{h^2}-\dfrac{1}{k^2}$ on $hk\neq 0$ as $\dfrac{k^2-h^2}{h^2k^2}$.""",
                 True,
-                r"""Clear to the product denominator:
+                r"""Least common denominator of $h^2$ and $k^2$ is the product $h^2k^2$:
 
-LCD:
+$$\frac{\cdots}{h^2}+\frac{\cdots}{k^2}=\frac{\cdots}{h^2k^2}$$
 
-$$h^2\cdot k^2$$
-
-Combine:
-
-$$\frac{\cdots}{h^2}+\frac{\cdots}{k^2}=\frac{\cdots}{h^2k^2}$$""",
+Adding numerators over added denominators is not an identity.""",
             ),
         ],
         overview=r"""A closing mix: a cubic with the wrong middle sign that a test at $0$ fails to catch, an LCD-as-sum trap, a minus nest, a binomial square missing its cross term, and a genuine difference of reciprocal squares.""",

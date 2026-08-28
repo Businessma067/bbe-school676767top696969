@@ -230,7 +230,7 @@ def main() -> None:
         for gi, t in enumerate(main_old):
             rewritten.append(_rewrite_task(t, gi=gi, seen=global_seen, sub=sub))
 
-        easy_built = [_finalize_task(t, keep_authored_bodies=True) for t in easy_raw]
+        easy_built = easy_tasks_for(sub)
         main_built = [_finalize_task(t) for t in rewritten]
         tasks = easy_built + main_built
         text = emit_module(subsection=sub, tasks=tasks)

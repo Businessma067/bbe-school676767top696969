@@ -230,17 +230,17 @@ Adding the letter then cancels it, leaving the claimed constant.""",
         context=CTX,
         items=[
             (
-                r"""For every real $x$ with $5\le x\le 11$, $|x-5|+|11-x|=6$.""",
+                r"""For $r,s\neq 0$, $\dfrac{2}{r}+\dfrac{9}{s}=\dfrac{2s+9r}{rs}$.""",
                 True,
-                r"""The claim is about distances on the segment $[5,11]$. On that closed interval each absolute value opens without a minus sign.
+                r"""The claim adds two simple fractions in $r$ and $s$. The least common denominator is the product $rs$, not their sum.
 
-Remove the bars inside the segment:
+Clear to one fraction:
 
-$$|x-5|+|x-11|=(x-5)+(11-x)=6$$
+$$\frac{2}{r}+\frac{9}{s}=\frac{2s+9r}{rs}$$
 
-The $x$ terms cancel, leaving the constant segment length $6$.
+Cross-multiply each term before comparing numerator and denominator.
 
-The sum equals the length $6$ throughout $[5,11]$.""",
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"""For every real $u$, dropping the bars in $|2u+1|=2u+1$ is treated as legal.""",
@@ -336,15 +336,11 @@ The letter cancels and the constant $4$ remains.""",
             (
                 r"""For every real $x$, $|x+2|=x+2$.""",
                 False,
-                r"""On the stated half-line the inside $x+2$ has fixed sign:
+                r"""On the half-line where $x+2<0$, the bars flip the sign:
 
-Rewrite:
+$$|x+2|=4-w$$
 
-$$|x+2|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
         ],
         overview=r"""The identity is $\sqrt{A^2}=|A|$, not $A$. Replacing the root by the inside needs a nonnegative inside; a negative substitute cannot be a principal root.""",
@@ -376,35 +372,31 @@ Each linear factor keeps its own absolute value.
 Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
-                r"""For every real $x$, $|x-1|+|1-x|=2$.""",
+                r"""Without an interval, $|x-1|+|1-x|=2$ is false for every real $x$.""",
                 False,
                 r"""Use $(u-v)^2=(u+v)^2-4uv$ before taking the square root.""",
             ),
             (
                 r"""For every real $k$, $|k|+|{-k}|=2|k|$.""",
                 True,
-                r"""On the stated half-line the inside $k$ has fixed sign:
+                r"""On the half-line where $k<0$, the bars flip the sign:
 
-Rewrite:
+$$|k|=4-w$$
 
-$$|k|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
-                r"""For $u,v\neq 0$, $\dfrac{3}{u}+\dfrac{7}{v}=\dfrac{3v+7u}{uv}$.""",
-                True,
-                r"""The claim adds two simple fractions in $u$ and $v$. The least common denominator is the product $uv$, not their sum.
+                r"""Unrestricted in $x$, $|x-2|+|x-7|=5$ is stated for every real $x$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.
 
-Clear to one fraction:
+For $x>7$:
 
-$$\frac{3}{u}+\frac{7}{v}=\frac{3v+7u}{uv}$$
+$$|x-2|+|x-7|=(x-2)+(x-7)=2x-(2+7)$$
 
-Cross-multiply each term before comparing numerator and denominator.
+The result still depends on $x$, not on the fixed length $5$ alone.
 
-Both parts of the claimed single fraction match this reduction.""",
+A point outside $[2,7]$ already disproves the universal constant claim.""",
             ),
         ],
         overview=r"""The sign quotients $|A|/A$ and $A/|A|$ equal $\pm 1$ according to the sign of $A$, and are undefined at $0$. Neither equals $1$ on the whole punctured line.""",
@@ -418,15 +410,11 @@ Both parts of the claimed single fraction match this reduction.""",
             (
                 r"""For every real $p$, $|p^2-1|=|p-1|\,|p+1|$.""",
                 True,
-                r"""On the stated half-line the inside $p^2-1$ has fixed sign:
+                r"""On the half-line where $p^2-1<0$, the bars flip the sign:
 
-Rewrite:
+$$|p^2-1|=4-w$$
 
-$$|p^2-1|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
                 r"""The companion identity $|n+k|=|n|+|k|$ is written for all real $n$ and $k$.""",
@@ -486,19 +474,19 @@ $$(4-w)+w=4$$""",
         context=CTX,
         items=[
             (
-                r"""For every real $x$, $|x^2-7x+6|=|x-1|\,|x-6|$.""",
+                r"""For every real $x$, $|x^2-8x+7|=|x-1|\,|x-7|$.""",
                 True,
                 r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
 
 Factor the trinomial:
 
-$$x^2-7x+6=(x-1)(x-6)$$
+$$x^2-8x+7=(x-1)(x-7)$$
 
 The roots $p$ and $q$ come from the printed middle term and constant.
 
 Apply $|UV|=|U||V|$:
 
-$$|x^2-7x+6|=|x-1|\,|x-6|$$
+$$|x^2-8x+7|=|x-1|\,|x-7|$$
 
 Each linear factor keeps its own absolute value on the right.
 
@@ -644,33 +632,33 @@ A point outside $[1,7]$ already disproves the universal constant claim.""",
             (
                 r"""If $z\ge 6$, then $|z-6|-(z-6)=0$.""",
                 True,
-                r"""Use $(u-v)^2=(u+v)^2-4uv$ before taking the square root.""",
+                r"""On the half-line where $z-6<0$, the bars flip the sign:
+
+$$|z-6|=4-w$$
+
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
                 r"""Without an interval bound, $|x-4|+|x-10|=6$ is stated for every real $x$.""",
                 False,
-                r"""The claim adds two simple fractions in $r$ and $s$. The least common denominator is the product $rs$, not their sum.
+                r"""The wording drops the interval restriction. Test a point to the right of $10$ before accepting a constant equal to the segment length.
 
-Clear to one fraction:
+For $x>10$:
 
-$$\frac{2}{r}+\frac{9}{s}=\frac{2s+9r}{rs}$$
+$$|x-4|+|x-10|=(x-4)+(x-10)=2x-(4+10)$$
 
-Cross-multiply each term before comparing numerator and denominator.
+The result still depends on $x$, not on the fixed length $6$ alone.
 
-Both parts of the claimed single fraction match this reduction.""",
+A point outside $[4,10]$ already disproves the universal constant claim.""",
             ),
             (
                 r"""Pulling out a factor of two, $|2x-6|=2|x-3|$ for every real $x$.""",
                 True,
-                r"""On the stated half-line the inside $t^2-9$ has fixed sign:
+                r"""On the half-line where $2x-6<0$, the bars flip the sign:
 
-Rewrite:
+$$|2x-6|=4-w$$
 
-$$|t^2-9|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
         ],
         overview=r"""Distance to a mark is nonnegative. On the ray to the right of the mark, dropping bars and then adding or subtracting the letter leaves a constant or recovers the letter; a shift $A+c$ is not that distance.""",
@@ -712,15 +700,11 @@ The letter cancels and the constant $4$ remains.""",
             (
                 r"""Replacing $|k+n|$ by $|k|+|n|$ as a product-style identity, so $|8+(-4)|$ equals $12$.""",
                 False,
-                r"""On the stated half-line the inside $k+n$ has fixed sign:
+                r"""On the half-line where $k+n<0$, the bars flip the sign:
 
-Rewrite:
+$$|k+n|=4-w$$
 
-$$|k+n|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
                 r"""Someone writes $|n/k|=n/k$ whenever $k\neq 0$, hence $|-8/4|$ is entered as $-2$.""",
@@ -784,17 +768,17 @@ $$(4-w)+w=4$$
 The letter cancels and the constant $4$ remains.""",
             ),
             (
-                r"""For every real $x$, $|x-1|+|x-6|=5$.""",
-                False,
-                r"""The wording drops the interval restriction. Test a point to the right of $6$ before accepting a constant equal to the segment length.
+                r"""For every real $x$ with $5\le x\le 11$, $|x-5|+|11-x|=6$.""",
+                True,
+                r"""The claim is about distances on the segment $[5,11]$. On that closed interval each absolute value opens without a minus sign.
 
-For $x>6$:
+Remove the bars inside the segment:
 
-$$|x-1|+|x-6|=(x-1)+(x-6)=2x-(1+6)$$
+$$|x-5|+|x-11|=(x-5)+(11-x)=6$$
 
-The result still depends on $x$, not on the fixed length $5$ alone.
+The $x$ terms cancel, leaving the constant segment length $6$.
 
-A point outside $[1,6]$ already disproves the universal constant claim.""",
+The sum equals the length $6$ throughout $[5,11]$.""",
             ),
             (
                 r"""Away from $h=7$, because $7-h=-(h-7)$, the fraction $|h-7|/(7-h)$ equals $-\dfrac{|h-7|}{h-7}$.""",
@@ -832,17 +816,17 @@ Dropping the bars on the right changes the sign on half-lines. For $x=\min(2,8)-
         context=CTX,
         items=[
             (
-                r"""For every real $x$, $|x-2|+|x-7|=5$.""",
-                False,
-                r"""The wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.
+                r"""For every real $x$ with $1\le x\le 6$, $|x-1|+|6-x|=5$.""",
+                True,
+                r"""The claim is about distances on the segment $[1,6]$. On that closed interval each absolute value opens without a minus sign.
 
-For $x>7$:
+Remove the bars inside the segment:
 
-$$|x-2|+|x-7|=(x-2)+(x-7)=2x-(2+7)$$
+$$|x-1|+|x-6|=(x-1)+(6-x)=5$$
 
-The result still depends on $x$, not on the fixed length $5$ alone.
+The $x$ terms cancel, leaving the constant segment length $5$.
 
-A point outside $[2,7]$ already disproves the universal constant claim.""",
+The sum equals the length $5$ throughout $[1,6]$.""",
             ),
             (
                 r"""Extending the constant $5$ for $|u-1|+|u-6|$ to every real $u$ is proposed.""",
@@ -856,15 +840,11 @@ Adding the letter then cancels it, leaving the claimed constant.""",
             (
                 r"""For every real $x$, $|2x-6|=2|x-3|$.""",
                 True,
-                r"""On the stated half-line the inside $2x-6$ has fixed sign:
+                r"""On the half-line where $2x-6<0$, the bars flip the sign:
 
-Rewrite:
+$$|2x-6|=4-w$$
 
-$$|2x-6|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
                 r"""Left of the knot $h<1$, the sum $|h-1|+|h-8|$ is rewritten as the constant $7$.""",
@@ -896,17 +876,23 @@ $$(4-w)+w=4$$""",
         context=CTX,
         items=[
             (
-                r"""For every real $x$ with $4\le x\le 10$, $|x-4|+|10-x|=6$.""",
+                r"""For every real $x$, $|x^2-7x+6|=|x-1|\,|x-6|$.""",
                 True,
-                r"""The claim is about distances on the segment $[4,10]$. On that closed interval each absolute value opens without a minus sign.
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
 
-Remove the bars inside the segment:
+Factor the trinomial:
 
-$$|x-4|+|x-10|=(x-4)+(10-x)=6$$
+$$x^2-7x+6=(x-1)(x-6)$$
 
-The $x$ terms cancel, leaving the constant segment length $6$.
+The roots $p$ and $q$ come from the printed middle term and constant.
 
-The sum equals the length $6$ throughout $[4,10]$.""",
+Apply $|UV|=|U||V|$:
+
+$$|x^2-7x+6|=|x-1|\,|x-6|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"""The identity $\sqrt{(u-1)^2}=|u-1|$ is recorded.""",
@@ -954,28 +940,24 @@ $$\sqrt{n^2}=|n|$$""",
             (
                 r"""For every real $r$, $|r^2-36|=|r-6|\,|r+6|$.""",
                 True,
-                r"""On the stated half-line the inside $r^2-36$ has fixed sign:
+                r"""On the half-line where $r^2-36<0$, the bars flip the sign:
 
-Rewrite:
+$$|r^2-36|=4-w$$
 
-$$|r^2-36|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
-                r"""For every real $x$, $|x-2|+|x-8|=6$.""",
+                r"""For every real $x$, $|x-1|+|x-6|=5$.""",
                 False,
-                r"""The wording drops the interval restriction. Test a point to the right of $8$ before accepting a constant equal to the segment length.
+                r"""The wording drops the interval restriction. Test a point to the right of $6$ before accepting a constant equal to the segment length.
 
-For $x>8$:
+For $x>6$:
 
-$$|x-2|+|x-8|=(x-2)+(x-8)=2x-(2+8)$$
+$$|x-1|+|x-6|=(x-1)+(x-6)=2x-(1+6)$$
 
-The result still depends on $x$, not on the fixed length $6$ alone.
+The result still depends on $x$, not on the fixed length $5$ alone.
 
-A point outside $[2,8]$ already disproves the universal constant claim.""",
+A point outside $[1,6]$ already disproves the universal constant claim.""",
             ),
             (
                 r"""On the positive half-line $u>0$ the sum $\sqrt{u^2}+u$ equals $2u$.""",
@@ -1000,9 +982,7 @@ $$(4-w)+w=4$$""",
             (
                 r"""Whenever $h<0$, forming $\sqrt{h^2}-h$ equals $0$.""",
                 False,
-                r"""The principal square root is the unique nonnegative number whose square is $n^2$:
-
-$$\sqrt{n^2}=|n|$$""",
+                r"""The principal square root gives $\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.""",
             ),
         ],
         overview=r"""$\sqrt{A^2}+A=|A|+A$ equals $0$ for $A\le 0$ and equals $2A$ for $A\ge 0$. The companion $|A|-A$ vanishes on the opposite ray. Neither formula is an unrestricted identity.""",
@@ -1023,17 +1003,17 @@ $$|a|=4-w$$
 Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
-                r"""For every real $x$, $|x-3|+|x-9|=6$.""",
+                r"""For every real $x$, $|x-2|+|x-8|=6$.""",
                 False,
-                r"""The wording drops the interval restriction. Test a point to the right of $9$ before accepting a constant equal to the segment length.
+                r"""The wording drops the interval restriction. Test a point to the right of $8$ before accepting a constant equal to the segment length.
 
-For $x>9$:
+For $x>8$:
 
-$$|x-3|+|x-9|=(x-3)+(x-9)=2x-(3+9)$$
+$$|x-2|+|x-8|=(x-2)+(x-8)=2x-(2+8)$$
 
 The result still depends on $x$, not on the fixed length $6$ alone.
 
-A point outside $[3,9]$ already disproves the universal constant claim.""",
+A point outside $[2,8]$ already disproves the universal constant claim.""",
             ),
             (
                 r"""For every real $u$, $|u|=u$.""",
@@ -1060,17 +1040,17 @@ $$(4-w)+w=4$$
 The letter cancels and the constant $4$ remains.""",
             ),
             (
-                r"""For every real $x$ with $1\le x\le 6$, $|x-1|+|6-x|=5$.""",
+                r"""For every real $x$ with $4\le x\le 10$, $|x-4|+|10-x|=6$.""",
                 True,
-                r"""The claim is about distances on the segment $[1,6]$. On that closed interval each absolute value opens without a minus sign.
+                r"""The claim is about distances on the segment $[4,10]$. On that closed interval each absolute value opens without a minus sign.
 
 Remove the bars inside the segment:
 
-$$|x-1|+|x-6|=(x-1)+(6-x)=5$$
+$$|x-4|+|x-10|=(x-4)+(10-x)=6$$
 
-The $x$ terms cancel, leaving the constant segment length $5$.
+The $x$ terms cancel, leaving the constant segment length $6$.
 
-The sum equals the length $5$ throughout $[1,6]$.""",
+The sum equals the length $6$ throughout $[4,10]$.""",
             ),
         ],
         overview=r"""The triangle inequality $|A+B|\le |A|+|B|$ always holds. Equality is a same-sign (or zero) phenomenon, not an identity, and opposite-sign numerical pairs are strict.""",
@@ -1104,17 +1084,17 @@ Combine:
 $$(4-w)+w=4$$""",
             ),
             (
-                r"""For every real $a$ with $3\le a\le 9$, $|a-3|+|9-a|=6$.""",
-                True,
-                r"""The claim is about distances on the segment $[3,9]$. On that closed interval each absolute value opens without a minus sign.
+                r"""For every real $x$, $|x-3|+|x-9|=6$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $9$ before accepting a constant equal to the segment length.
 
-Remove the bars inside the segment:
+For $x>9$:
 
-$$|a-3|+|a-9|=(a-3)+(9-a)=6$$
+$$|x-3|+|x-9|=(x-3)+(x-9)=2x-(3+9)$$
 
-The $a$ terms cancel, leaving the constant segment length $6$.
+The result still depends on $x$, not on the fixed length $6$ alone.
 
-The sum equals the length $6$ throughout $[3,9]$.""",
+A point outside $[3,9]$ already disproves the universal constant claim.""",
             ),
             (
                 r"""For every real $h$, $|h|=h$.""",
@@ -1196,15 +1176,11 @@ Adding the letter then cancels it, leaving the claimed constant.""",
             (
                 r"""For every real $x$, $|4x-7|=4|x|-7$ when $x\ge 7/4$.""",
                 True,
-                r"""On the stated half-line the inside $4x-7$ has fixed sign:
+                r"""On the half-line where $4x-7<0$, the bars flip the sign:
 
-Rewrite:
+$$|4x-7|=4-w$$
 
-$$|4x-7|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
         ],
         overview=r"A quadratic that is a square, or that completes to a square plus a positive constant, may drop its bars. Absolute value of a square is not the linear factor, and is not identically zero.",
@@ -1246,28 +1222,24 @@ $$(4-w)+w=4$$""",
             (
                 r"""Whenever $u<0$, $|u^3|$ is rewritten as $-u^3$.""",
                 True,
-                r"""On the stated half-line the inside $u^3$ has fixed sign:
+                r"""On the half-line where $u^3<0$, the bars flip the sign:
 
-Rewrite:
+$$|u^3|=4-w$$
 
-$$|u^3|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
-                r"""For every real $x$, $|x-4|+|x-10|=6$.""",
+                r"""For every real $x$, $|x-1|+|x-7|=6$.""",
                 False,
-                r"""The wording drops the interval restriction. Test a point to the right of $10$ before accepting a constant equal to the segment length.
+                r"""The wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.
 
-For $x>10$:
+For $x>7$:
 
-$$|x-4|+|x-10|=(x-4)+(x-10)=2x-(4+10)$$
+$$|x-1|+|x-7|=(x-1)+(x-7)=2x-(1+7)$$
 
 The result still depends on $x$, not on the fixed length $6$ alone.
 
-A point outside $[4,10]$ already disproves the universal constant claim.""",
+A point outside $[1,7]$ already disproves the universal constant claim.""",
             ),
             (
                 r"""Someone replaces $|h^2|$ by $h$ for every real $h$.""",
@@ -1596,13 +1568,9 @@ The sum equals the length $5$ throughout $[2,7]$.""",
             (
                 r"""Expanding $(k-8)^2+1$ recovers $k^2-16k+65$, so $|k^2-16k+65|=(k-8)^2+1$.""",
                 True,
-                r"""Half of the linear coefficient $-16$ is $-8$, and $(-8)^2=64$.
+                r"""Half of $-16$ is $-8$, and $(-8)^2=64$. Add and subtract $64$:
 
-Complete:
-
-$$k^2-16k+65 = (k^2-16k+64)+1$$
-
-$$= (k-8)^2+1$$
+$$k^2-16k+65=(k^2-16k+64)+1=(k-8)^2+1$$
 
 The leftover constant is $+1$, not zero.""",
             ),
@@ -1704,15 +1672,11 @@ Both parts of the claimed single fraction match this reduction.""",
             (
                 r"""For every real $u$, $|2u-5|=2|u|-5$ when $u\ge 5/2$.""",
                 True,
-                r"""On the stated half-line the inside $2u-5$ has fixed sign:
+                r"""On the half-line where $2u-5<0$, the bars flip the sign:
 
-Rewrite:
+$$|2u-5|=4-w$$
 
-$$|2u-5|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
             (
                 r"""For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $6$ equals the length of the segment from $1$ to $6$.""",
@@ -1814,17 +1778,17 @@ $$(4-w)+w=4$$""",
         context=CTX,
         items=[
             (
-                r"""For $r,s\neq 0$, $\dfrac{2}{r}+\dfrac{9}{s}=\dfrac{2s+9r}{rs}$.""",
-                True,
-                r"""The claim adds two simple fractions in $r$ and $s$. The least common denominator is the product $rs$, not their sum.
+                r"""For every real $x$, $|x-4|+|x-10|=6$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $10$ before accepting a constant equal to the segment length.
 
-Clear to one fraction:
+For $x>10$:
 
-$$\frac{2}{r}+\frac{9}{s}=\frac{2s+9r}{rs}$$
+$$|x-4|+|x-10|=(x-4)+(x-10)=2x-(4+10)$$
 
-Cross-multiply each term before comparing numerator and denominator.
+The result still depends on $x$, not on the fixed length $6$ alone.
 
-Both parts of the claimed single fraction match this reduction.""",
+A point outside $[4,10]$ already disproves the universal constant claim.""",
             ),
             (
                 r"""Stripping the outer bars in $\bigl||u|-1\bigr|$ down to $|u|-1$ is proposed for every real $u$.""",
@@ -1976,11 +1940,7 @@ The identity holds for every real $a$ once the bars are placed correctly.""",
             (
                 r"""Writing $|z^2-12z+35|=(z-6)^2-1$ as an identity is proposed.""",
                 False,
-                r"""A difference of squares is not a square of a difference:
-
-$$z^2-12=(z-3.4641016151377544)(z+3.4641016151377544),\qquad (z-3.4641016151377544)^2=z^2-6.928203230275509z+3.4641016151377544^2$$
-
-At the test point $z=0$ the two polynomials already disagree.""",
+                r"""A difference of squares factors as $(z-3.4641016151377544)(z+3.4641016151377544)$, not as a square of a difference $(z-3.4641016151377544)^2$.""",
             ),
             (
                 r"""For every real $a$ with $2\le a\le 7$, $|a-2|+|7-a|=5$, under the standing domain label $D_{1}$.""",
@@ -2102,7 +2062,7 @@ $$(4-w)+w=4$$
 The letter cancels and the constant $4$ remains.""",
             ),
             (
-                r"""For every real $a$ with $3\le a\le 9$, $|a-3|+|9-a|=6$, under the standing domain label $D_{1}$.""",
+                r"""For every real $a$ with $3\le a\le 9$, $|a-3|+|9-a|=6$.""",
                 True,
                 r"""The claim is about distances on the segment $[3,9]$. On that closed interval each absolute value opens without a minus sign.
 
@@ -2194,15 +2154,11 @@ Adding the letter then cancels it, leaving the claimed constant.""",
             (
                 r"""Whenever $k=8$ and $h=-4$, $|k+h|$ equals $|k|+|h|$.""",
                 False,
-                r"""On the stated half-line the inside $k+h$ has fixed sign:
+                r"""On the half-line where $k+h<0$, the bars flip the sign:
 
-Rewrite:
+$$|k+h|=4-w$$
 
-$$|k+h|$$
-
-Combine:
-
-$$(4-w)+w=4$$""",
+Adding the letter then cancels it, leaving the claimed constant.""",
             ),
         ],
         overview=r"""The product rule and nested bars around a product are identities. The companion slogans $|A+B|=|A|+|B|$ and $|cA|=|A|+|c|$ are not; opposite-sign numerical pairs make the failure visible.""",
