@@ -10,9 +10,19 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Provided $t\neq 3$, reducing $\dfrac{t^2-9}{t-3}$ is recorded as $t+3$. Checking that remainder at $t=0$ is then said to recover the original value $3$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $t\neq 3$.""",
-                True,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-8}{j-2}$ is recorded as $j^2+4$ for $j\neq 2$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point.""",
+                False,
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{j^3-8}{j-2}=j^2+2j+4$$
+
+Printed claim:
+
+$$j^2+4$$
+
+At $j=0$ both may agree (constant term $4$), yet at $j=1$ the linear term $2$ already separates them.""",
             ),
             (
                 r"On $uv\neq 0$, adding $\dfrac{3}{u}+\dfrac{5}{v}$ with common denominator $u+v$ is claimed to produce $\dfrac{8}{u+v}$.",
@@ -20,9 +30,23 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $w\neq 0$, striking $w$ from $\dfrac{w+k}{w}$ is treated as leaving $1+k$. Substituting $w=1$ is then said to confirm the identity because both sides equal $1+k$ — with the intermediate display still carrying $w$.""",
-                False,
-                
+                r"""For $x\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{x}{x-1}-\dfrac{x-1}{x}}{\dfrac{x}{x-1}+\dfrac{x-1}{x}}$ is reduced to $\dfrac{2x-1}{2x^2-2x+1}$ after clearing the inner denominators once.""",
+                True,
+                r"""Clear each inner pair over $x(x-1)$:
+
+Numerator:
+
+$$\frac{x}{x-1}-\frac{x-1}{x}=\frac{x^2-(x-1)^2}{x(x-1)}=\frac{2x-1}{x(x-1)}$$
+
+Denominator:
+
+$$\frac{x}{x-1}+\frac{x-1}{x}=\frac{x^2+(x-1)^2}{x(x-1)}=\frac{2x^2-2x+1}{x(x-1)}$$
+
+Quotient:
+
+$$\frac{2x-1}{2x^2-2x+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"After expanding $\bigl(1+\dfrac{1}{z}\bigr)^2$ for $z\neq 0$, a notebook records $1+\dfrac{2}{z}+\dfrac{1}{z^2}$.",
@@ -59,9 +83,19 @@ TASKS = [
                 
             ),
             (
-                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: After taking $8x$ as a least common denominator of $\dfrac{1}{3x}+\dfrac{1}{5x}$ for $x\neq 0$, a clerk calls that choice legitimate. The claim is filed as settled for every admissible value of the letters.""",
+                r"""After cancelling the linear factor, $\dfrac{j^3-216}{j-6}$ is recorded as $j^2+36$ for $j\neq 6$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point.""",
                 False,
-                
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{j^3-216}{j-6}=j^2+6j+36$$
+
+Printed claim:
+
+$$j^2+36$$
+
+At $j=0$ both may agree (constant term $36$), yet at $j=1$ the linear term $6$ already separates them.""",
             ),
             (
                 r"Clearing $\dfrac{1}{3h}+\dfrac{1}{6h}$ for $h\neq 0$ is said to leave $\dfrac{1}{2h}$.",
@@ -83,9 +117,19 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: On $t\neq 0$, splitting $\dfrac{t+8}{t}$ produces $1+\dfrac{8}{t}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""On $x^2\neq 1$, decomposing $\dfrac{5}{x^2-1}$ as $\dfrac{5}{2}\dfrac{1}{x-1}-\dfrac{5}{2}\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$.""",
                 True,
-                
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$\dfrac{5}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{\dfrac{5}{2}(x+1)-\dfrac{5}{2}(x-1)}{(x-1)(x+1)}=\frac{5}{x^2-1}$$
+
+The coefficients match.""",
             ),
             (
                 r"Reducing $\dfrac{5v+5}{v+1}$ for $v\neq -1$ is recorded as $5$. Checking at $v=0$ is then said to recover the original value $5$.",
@@ -93,9 +137,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: After cancelling in $\dfrac{u(u+7)}{u+7}$ whenever $u\neq -7$, a note leaves $u+7$. No second independent substitution is attempted.""",
+                r"""On $cde\neq 0$, adding $\dfrac{2}{c}+\dfrac{3}{d}+\dfrac{5}{e}$ with common denominator $c+d+e$ is claimed to give $\dfrac{10}{c+d+e}$.""",
                 False,
-                
+                r"""Least common denominator of $c$, $d$, $e$ is the product, not the sum:
+
+Correct combination:
+
+$$\frac{2}{c}+\frac{3}{d}+\frac{5}{e}=\frac{2de+3ce+5cd}{cde}$$
+
+The printed $\dfrac{10}{c+d+e}$ agrees only on a thin set, not identically.""",
             ),
             (
                 r"Factoring $\dfrac{3w-3}{w-1}$ whenever $w\neq 1$ is claimed to leave $3$. At $w=0$ that remainder is then said to match the original value $3$.",
@@ -132,9 +182,19 @@ TASKS = [
                 
             ),
             (
-                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Squaring $\bigl(1-\dfrac{1}{v}\bigr)$ on $v\neq 0$ is treated as $1-\dfrac{1}{v^2}$, and further instructs candidates to treat any matching numerical check as decisive.""",
-                False,
-                
+                r"""On $x^2\neq 1$, decomposing $\dfrac{7}{x^2-1}$ as $\dfrac{7}{2}\dfrac{1}{x-1}-\dfrac{7}{2}\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$.""",
+                True,
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$\dfrac{7}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{\dfrac{7}{2}(x+1)-\dfrac{7}{2}(x-1)}{(x-1)(x+1)}=\frac{7}{x^2-1}$$
+
+The coefficients match.""",
             ),
         ],
         overview=r"A continued unit fraction is cleared from the inside. Plus and minus nests produce $z/(z+1)$ and $t/(t-1)$ respectively; swapping a cleared nest with its reciprocal, or dropping a binomial cross term, both fail.",
@@ -156,9 +216,23 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Provided $h\neq 7$, reducing $\dfrac{h^2-49}{h-7}$ is filed as $h+7$, and that remainder is then treated as equal to $\dfrac{h^2+49}{h+7}$ — with the intermediate display still carrying $\dfrac{h^2-49}{h-7}$.""",
+                r"""For $y\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{y}{y-1}-\dfrac{y-1}{y}}{\dfrac{y}{y-1}+\dfrac{y-1}{y}}$ is reduced to $\dfrac{2y-1}{2y^2-2y}$ after clearing the inner denominators once.""",
                 False,
-                
+                r"""Clear each inner pair over $y(y-1)$:
+
+Numerator:
+
+$$\frac{y}{y-1}-\frac{y-1}{y}=\frac{y^2-(y-1)^2}{y(y-1)}=\frac{2y-1}{y(y-1)}$$
+
+Denominator:
+
+$$\frac{y}{y-1}+\frac{y-1}{y}=\frac{y^2+(y-1)^2}{y(y-1)}=\frac{2y^2-2y+1}{y(y-1)}$$
+
+Quotient:
+
+$$\frac{2y-1}{2y^2-2y+1}$$
+
+The printed denominator drops the constant $+1$, so the claim is false.""",
             ),
             (
                 r"On $k\neq 3$, the quotient $\dfrac{k^3-27}{k-3}$ is recorded as $k^2+3k+9$. Checking at $k=0$ is then said to recover the original value $9$.",
@@ -166,9 +240,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: With $w\neq 5$, someone writes $\dfrac{w^3-125}{w-5}=w^2-5w+25$, while explicitly permitting the omission of a full symbolic expansion.""",
-                False,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-27}{j-3}$ is recorded as $j^2+3j+9$ for $j\neq 3$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point, and the algebraic identity is in fact correct.""",
+                True,
+                r"""Difference of cubes with $3^3$ in the constant term:
+
+Factor:
+
+$$\frac{j^3-27}{j-3}=j^2+3j+9$$
+
+The printed quotient matches. Agreement at $j=0$ is consistent but not the reason the identity holds.""",
             ),
         ],
         overview=r"A cancelled linear factor is not the remainder. Difference of cubes produces $k^2+3k+9$; flipping the middle sign, or equating a cancelled remainder to an unrelated plus-denominator fraction, both fail.",
@@ -180,9 +260,15 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Squaring $\bigl(1+\dfrac{1}{t}\bigr)$ for $t\neq 0$ is claimed to produce $1+\dfrac{1}{t^2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\bigl(1+\dfrac{1}{t}\bigr)$.""",
-                False,
-                
+                r"""Combining $\dfrac{1}{s}+\dfrac{1}{t}+\dfrac{1}{u}$ on $stu\neq 0$ with least common denominator $stu$ produces $\dfrac{tu+su+st}{stu}$. The sum-of-denominators shortcut $s+t+u$ is rejected.""",
+                True,
+                r"""The LCD of three monomial denominators is the product $stu$:
+
+Clear:
+
+$$\frac{1}{s}+\frac{1}{t}+\frac{1}{u}=\frac{tu+su+st}{stu}$$
+
+Using $s+t+u$ as a common denominator is not an identity.""",
             ),
             (
                 r"Expanding $\bigl(1-\dfrac{1}{u}\bigr)^2$ on $u\neq 0$ is recorded as $1-\dfrac{2}{u}+\dfrac{1}{u^2}$.",
@@ -214,9 +300,23 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Taking twice the reciprocal of $\dfrac{1}{h}+\dfrac{1}{k}$ for $hk\neq 0$ and $h+k\neq 0$ is said to produce $\dfrac{2hk}{h+k}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{h}+\dfrac{1}{k}$.""",
-                True,
-                
+                r"""For $r\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{r}{r-1}-\dfrac{r-1}{r}}{\dfrac{r}{r-1}+\dfrac{r-1}{r}}$ is reduced to $\dfrac{2r-1}{2r^2-2r}$ after clearing the inner denominators once.""",
+                False,
+                r"""Clear each inner pair over $r(r-1)$:
+
+Numerator:
+
+$$\frac{r}{r-1}-\frac{r-1}{r}=\frac{r^2-(r-1)^2}{r(r-1)}=\frac{2r-1}{r(r-1)}$$
+
+Denominator:
+
+$$\frac{r}{r-1}+\frac{r-1}{r}=\frac{r^2+(r-1)^2}{r(r-1)}=\frac{2r^2-2r+1}{r(r-1)}$$
+
+Quotient:
+
+$$\frac{2r-1}{2r^2-2r+1}$$
+
+The printed denominator drops the constant $+1$, so the claim is false.""",
             ),
             (
                 r"A candidate identifies $\dfrac{2hk}{h+k}$ with $\dfrac{h+k}{2}$ whenever $hk\neq 0$ and $h+k\neq 0$.",
@@ -229,9 +329,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Whenever $v\neq 0$, striking $v$ from $\dfrac{3v+5}{v}$ is treated as leaving $3+5$. No second independent substitution is attempted.""",
-                False,
-                
+                r"""Combining $\dfrac{1}{r}+\dfrac{1}{s}+\dfrac{1}{t}$ on $rst\neq 0$ with least common denominator $rst$ produces $\dfrac{st+rt+rs}{rst}$. The sum-of-denominators shortcut $r+s+t$ is rejected.""",
+                True,
+                r"""The LCD of three monomial denominators is the product $rst$:
+
+Clear:
+
+$$\frac{1}{r}+\frac{1}{s}+\frac{1}{t}=\frac{st+rt+rs}{rst}$$
+
+Using $r+s+t$ as a common denominator is not an identity.""",
             ),
             (
                 r"Provided $w\neq -1$, reducing $\dfrac{w^2+2w+1}{w+1}$ is recorded as $w+1$. Checking at $w=0$ is then said to recover the original value $1$.",
@@ -253,9 +359,19 @@ TASKS = [
                 
             ),
             (
-                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: On $uv\neq 0$, adding $\dfrac{8}{u}+\dfrac{3}{v}$ with common denominator $u+v$ is claimed to produce $\dfrac{11}{u+v}$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
+                r"""After cancelling the linear factor, $\dfrac{t^3-125}{t-5}$ is recorded as $t^2+25$ for $t\neq 5$. A single substitution $t=0$ is then cited as confirmation because both sides agree at that point.""",
                 False,
-                
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{t^3-125}{t-5}=t^2+5t+25$$
+
+Printed claim:
+
+$$t^2+25$$
+
+At $t=0$ both may agree (constant term $25$), yet at $t=1$ the linear term $5$ already separates them.""",
             ),
             (
                 r"After clearing $\dfrac{1}{1+\dfrac{1}{w}}$ for $w\neq 0,-1$, a candidate reports $\dfrac{w}{w+1}$.",
@@ -287,9 +403,15 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Someone treats $\dfrac{\dfrac{1}{v}-\dfrac{1}{w}}{\dfrac{1}{v}+\dfrac{1}{w}}$ on $vw\neq 0$ and $v\neq -w$ as $\dfrac{v-w}{v+w}$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""On $uvw\neq 0$, adding $\dfrac{2}{u}+\dfrac{3}{v}+\dfrac{5}{w}$ with common denominator $u+v+w$ is claimed to give $\dfrac{10}{u+v+w}$.""",
                 False,
-                
+                r"""Least common denominator of $u$, $v$, $w$ is the product, not the sum:
+
+Correct combination:
+
+$$\frac{2}{u}+\frac{3}{v}+\frac{5}{w}=\frac{2vw+3uw+5uv}{uvw}$$
+
+The printed $\dfrac{10}{u+v+w}$ agrees only on a thin set, not identically.""",
             ),
             (
                 r"Provided $x\neq 0$, the difference $\dfrac{1}{x^2}-\dfrac{1}{(x+1)^2}$ is recorded as $\dfrac{2x+1}{x^2(x+1)^2}$.",
@@ -302,9 +424,19 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Combining $\dfrac{3}{h-3}-\dfrac{3}{h+3}$ for $h\neq \pm 3$ is said to equal $\dfrac{18}{h^2-9}$, while explicitly permitting the omission of a full symbolic expansion.""",
-                True,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-64}{j-4}$ is recorded as $j^2+16$ for $j\neq 4$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point.""",
+                False,
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{j^3-64}{j-4}=j^2+4j+16$$
+
+Printed claim:
+
+$$j^2+16$$
+
+At $j=0$ both may agree (constant term $16$), yet at $j=1$ the linear term $4$ already separates them.""",
             ),
         ],
         overview=r"A difference of unit fractions over a difference of reciprocal squares cancels to $tu/(t+u)$. A sign slip on $w-v$, or claiming that a cancelled remainder disagrees with the original at a legal test point, both fail.",
@@ -326,9 +458,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: On $u\neq 5$, adding $1+\dfrac{1}{u-5}$ is said to produce $\dfrac{u}{u-5}$ — with the intermediate display still carrying $1+\dfrac{1}{u-5}$.""",
-                False,
-                
+                r"""On $x^2\neq 1$, decomposing $\dfrac{2}{x^2-1}$ as $1\dfrac{1}{x-1}-1\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$.""",
+                True,
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$1\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{1(x+1)-1(x-1)}{(x-1)(x+1)}=\frac{2}{x^2-1}$$
+
+The coefficients match.""",
             ),
             (
                 r"Whenever $v\neq \pm 3$, someone writes $\dfrac{v+3}{v-3}-\dfrac{v-3}{v+3}=\dfrac{6v}{v^2-9}$.",
@@ -350,9 +492,23 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $\dfrac{1}{x}+\dfrac{1}{x+1}+\dfrac{1}{x-1}$ for $x\notin\{-1,0,1\}$ is said to equal $\dfrac{3x^2-1}{x(x^2-1)}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{x}+\dfrac{1}{x+1}+\dfrac{1}{x-1}$.""",
+                r"""For $s\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{s}{s-1}-\dfrac{s-1}{s}}{\dfrac{s}{s-1}+\dfrac{s-1}{s}}$ is reduced to $\dfrac{2s-1}{2s^2-2s+1}$ after clearing the inner denominators once.""",
                 True,
-                
+                r"""Clear each inner pair over $s(s-1)$:
+
+Numerator:
+
+$$\frac{s}{s-1}-\frac{s-1}{s}=\frac{s^2-(s-1)^2}{s(s-1)}=\frac{2s-1}{s(s-1)}$$
+
+Denominator:
+
+$$\frac{s}{s-1}+\frac{s-1}{s}=\frac{s^2+(s-1)^2}{s(s-1)}=\frac{2s^2-2s+1}{s(s-1)}$$
+
+Quotient:
+
+$$\frac{2s-1}{2s^2-2s+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"A notebook copies $\dfrac{1}{t}+\dfrac{1}{t+3}+\dfrac{1}{t-3}$ after excluding $t\in\{-3,0,3\}$ as $\dfrac{3t^2}{t(t^2-9)}$.",
@@ -360,9 +516,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Subtracting $\dfrac{1}{u^2-9}-\dfrac{1}{u^2-1}$ away from $u=\pm 1,\pm 3$ is claimed to equal $\dfrac{8}{u^2-9}$ — with the intermediate display still carrying $u=\pm 1,\pm 3$.""",
-                False,
-                
+                r"""After cancelling the linear factor, $\dfrac{w^3-8}{w-2}$ is recorded as $w^2+2w+4$ for $w\neq 2$. A single substitution $w=0$ is then cited as confirmation because both sides agree at that point, and the algebraic identity is in fact correct.""",
+                True,
+                r"""Difference of cubes with $2^3$ in the constant term:
+
+Factor:
+
+$$\frac{w^3-8}{w-2}=w^2+2w+4$$
+
+The printed quotient matches. Agreement at $w=0$ is consistent but not the reason the identity holds.""",
             ),
             (
                 r"After factoring $\dfrac{v-3}{v^2-8v+15}$ for $v\neq 3,5$, a reduction to $\dfrac{1}{v-5}$ is recorded.",
@@ -399,9 +561,23 @@ TASKS = [
                 
             ),
             (
-                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Squaring $h+\dfrac{1}{h}$ without the cross term, someone writes $\bigl(h+\dfrac{1}{h}\bigr)^2=h^2+\dfrac{1}{h^2}$ for $h\neq 0$. The margin note closes without expanding the general case.""",
-                False,
-                
+                r"""For $n\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{n}{n-1}-\dfrac{n-1}{n}}{\dfrac{n}{n-1}+\dfrac{n-1}{n}}$ is reduced to $\dfrac{2n-1}{2n^2-2n+1}$ after clearing the inner denominators once.""",
+                True,
+                r"""Clear each inner pair over $n(n-1)$:
+
+Numerator:
+
+$$\frac{n}{n-1}-\frac{n-1}{n}=\frac{n^2-(n-1)^2}{n(n-1)}=\frac{2n-1}{n(n-1)}$$
+
+Denominator:
+
+$$\frac{n}{n-1}+\frac{n-1}{n}=\frac{n^2+(n-1)^2}{n(n-1)}=\frac{2n^2-2n+1}{n(n-1)}$$
+
+Quotient:
+
+$$\frac{2n-1}{2n^2-2n+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"Whenever $t\neq 8$, reducing $\dfrac{t^2-64}{t-8}$ is claimed as $t-8$, and that remainder at $t=0$ is said to match the original $-8$.",
@@ -423,9 +599,15 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Dividing matching geometric pieces $\dfrac{\dfrac{1}{t}+\dfrac{1}{t^2}}{\dfrac{1}{t}-\dfrac{1}{t^2}}$ is said to leave $\dfrac{t+1}{t-1}$ for $t\neq 0,1$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""Combining $\dfrac{1}{x}+\dfrac{1}{y}+\dfrac{1}{z}$ on $xyz\neq 0$ with least common denominator $xyz$ produces $\dfrac{yz+xz+xy}{xyz}$. The sum-of-denominators shortcut $x+y+z$ is rejected.""",
                 True,
-                
+                r"""The LCD of three monomial denominators is the product $xyz$:
+
+Clear:
+
+$$\frac{1}{x}+\frac{1}{y}+\frac{1}{z}=\frac{yz+xz+xy}{xyz}$$
+
+Using $x+y+z$ as a common denominator is not an identity.""",
             ),
             (
                 r"On $v\neq 0$ and $v\neq 1$, someone writes $\dfrac{1}{v^2}-\dfrac{1}{v^3}=\dfrac{v-1}{v^2}$.",
@@ -433,9 +615,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: After cancelling $\dfrac{w^3-27}{w-3}$ for $w\neq 3$, the quadratic $w^2+3w+9$ is recorded, and at $w=0$ that remainder is said to match the original value $9$. Any remaining letters are declared free once that one check has passed.""",
-                True,
-                
+                r"""A marker writes $\dfrac{4}{x^2-1}=\dfrac{4}{x-1}-\dfrac{4}{x+1}$ for $x^2\neq 1$, omitting the factor $\tfrac{1}{2}$ in each partial term.""",
+                False,
+                r"""Clearing the printed right-hand side gives
+
+Combine:
+
+$$\frac{4}{x-1}-\frac{4}{x+1}=\frac{4(x+1)-4(x-1)}{x^2-1}=\frac{24}{x^2-1)}$$
+
+The result is $\dfrac{24}{x^2-1}$, twice the intended left-hand side.""",
             ),
             (
                 r"Combining $\dfrac{h}{k}-\dfrac{k}{h}$ on $hk\neq 0$ is rewritten as $\dfrac{(h-k)^2}{hk}$.",
@@ -472,9 +660,15 @@ TASKS = [
                 
             ),
             (
-                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Whenever $k\neq -5$, someone writes $\dfrac{k^2+10k+25}{k+5}-\dfrac{k^2-25}{k+5}=0$, with the added remark that domain caveats may be left implicit once written once.""",
-                False,
-                
+                r"""Combining $\dfrac{1}{m}+\dfrac{1}{n}+\dfrac{1}{p}$ on $mnp\neq 0$ with least common denominator $mnp$ produces $\dfrac{np+mp+mn}{mnp}$. The sum-of-denominators shortcut $m+n+p$ is rejected.""",
+                True,
+                r"""The LCD of three monomial denominators is the product $mnp$:
+
+Clear:
+
+$$\frac{1}{m}+\frac{1}{n}+\frac{1}{p}=\frac{np+mp+mn}{mnp}$$
+
+Using $m+n+p$ as a common denominator is not an identity.""",
             ),
         ],
         overview=r"Cancel each difference of squares first, then add the leftover unit-over-linear term. A pair of quotients over the same linear denominator collapses to a constant, not to zero.",
@@ -496,9 +690,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: After clearing $1+\dfrac{1}{1+\dfrac{1}{v}}$ for $v\neq 0,-1$, a report of $\dfrac{2v+1}{v+1}$ is accepted — with the intermediate display still carrying $v\neq 0,-1$.""",
-                True,
-                
+                r"""After cancelling the linear factor, $\dfrac{w^3-27}{w-3}$ is recorded as $w^2+9$ for $w\neq 3$. A single substitution $w=0$ is then cited as confirmation because both sides agree at that point.""",
+                False,
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{w^3-27}{w-3}=w^2+3w+9$$
+
+Printed claim:
+
+$$w^2+9$$
+
+At $w=0$ both may agree (constant term $9$), yet at $w=1$ the linear term $3$ already separates them.""",
             ),
             (
                 r"Provided $t\neq \pm 3$, reducing $\dfrac{6t}{t^2-9}\cdot\dfrac{t-3}{3}$ is claimed to leave $\dfrac{2t}{t+3}$.",
@@ -506,9 +710,23 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Adding swapped linear ratios $\dfrac{u+5}{u-5}+\dfrac{u-5}{u+5}=\dfrac{2u}{u^2-25}$ off $u=\pm 5$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""For $h\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{h}{h-1}-\dfrac{h-1}{h}}{\dfrac{h}{h-1}+\dfrac{h-1}{h}}$ is reduced to $\dfrac{2h-1}{2h^2-2h}$ after clearing the inner denominators once.""",
                 False,
-                
+                r"""Clear each inner pair over $h(h-1)$:
+
+Numerator:
+
+$$\frac{h}{h-1}-\frac{h-1}{h}=\frac{h^2-(h-1)^2}{h(h-1)}=\frac{2h-1}{h(h-1)}$$
+
+Denominator:
+
+$$\frac{h}{h-1}+\frac{h-1}{h}=\frac{h^2+(h-1)^2}{h(h-1)}=\frac{2h^2-2h+1}{h(h-1)}$$
+
+Quotient:
+
+$$\frac{2h-1}{2h^2-2h+1}$$
+
+The printed denominator drops the constant $+1$, so the claim is false.""",
             ),
         ],
         overview=r"The difference $x/(x-3)-x/(x+3)$ simplifies to $6x/(x^2-9)$, which is reciprocal to $(x^2-9)/(6x)$. Adding a ratio to its reciprocal produces $2(u^2+25)/(u^2-25)$, not a linear numerator.",
@@ -520,9 +738,19 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Dividing $(x+3)^2-(x-3)^2$ by $x\neq 0$ is said to leave the constant $12$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x+3)^2-(x-3)^2$.""",
+                r"""On $x^2\neq 1$, decomposing $\dfrac{1}{x^2-1}$ as $\dfrac{1}{2}\dfrac{1}{x-1}-\dfrac{1}{2}\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$.""",
                 True,
-                
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$\dfrac{1}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{\dfrac{1}{2}(x+1)-\dfrac{1}{2}(x-1)}{(x-1)(x+1)}=\frac{1}{x^2-1}$$
+
+The coefficients match.""",
             ),
             (
                 r"On $hk\neq 0$ and $h\neq k$, someone writes $\dfrac{h}{h-k}+\dfrac{k}{k-h}=0$.",
@@ -554,9 +782,21 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Reducing $\dfrac{x^2-25}{x^2-5x}$ for $x\neq 0,5$ is said to leave $\dfrac{x+5}{x}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{x^2-25}{x^2-5x}$.""",
-                True,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-216}{j-6}$ is recorded as $j^2+36$ for $j\neq 6$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                False,
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{j^3-216}{j-6}=j^2+6j+36$$
+
+Printed claim:
+
+$$j^2+36$$
+
+At $j=0$ both may agree (constant term $36$), yet at $j=1$ the linear term $6$ already separates them.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"A notebook records $\dfrac{t^2-36}{t^2-t-30}=\dfrac{t-6}{t+5}$ whenever $t\neq 6$ and $t\neq -5$.",
@@ -569,9 +809,19 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Pulling five from $\dfrac{5v-15}{v^2-9}$ is claimed to leave $\dfrac{5}{v+3}$ off $v=\pm 3$. Any remaining letters are declared free once that one check has passed.""",
+                r"""On $x^2\neq 1$, decomposing $\dfrac{3}{x^2-1}$ as $\dfrac{3}{2}\dfrac{1}{x-1}-\dfrac{3}{2}\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$.""",
                 True,
-                
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$\dfrac{3}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{\dfrac{3}{2}(x+1)-\dfrac{3}{2}(x-1)}{(x-1)(x+1)}=\frac{3}{x^2-1}$$
+
+The coefficients match.""",
             ),
             (
                 r"With $w\neq 1$, someone writes $\dfrac{w^3-1}{w-1}=w^2-w+1$.",
@@ -593,9 +843,23 @@ TASKS = [
                 
             ),
             (
-                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Cancelling a genuine square, $\dfrac{t^2+6t+9}{t+3}$ equals $t+3$ for $t\neq -3$, and at $t=0$ this remainder is said to match the original value $3$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
+                r"""For $q\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{q}{q-1}-\dfrac{q-1}{q}}{\dfrac{q}{q-1}+\dfrac{q-1}{q}}$ is reduced to $\dfrac{2q-1}{2q^2-2q+1}$ after clearing the inner denominators once.""",
                 True,
-                
+                r"""Clear each inner pair over $q(q-1)$:
+
+Numerator:
+
+$$\frac{q}{q-1}-\frac{q-1}{q}=\frac{q^2-(q-1)^2}{q(q-1)}=\frac{2q-1}{q(q-1)}$$
+
+Denominator:
+
+$$\frac{q}{q-1}+\frac{q-1}{q}=\frac{q^2+(q-1)^2}{q(q-1)}=\frac{2q^2-2q+1}{q(q-1)}$$
+
+Quotient:
+
+$$\frac{2q-1}{2q^2-2q+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"The companion $\dfrac{v^2-10v+25}{v-5}$ is reduced to $v-5$ for $v\neq 5$, and at $v=0$ the remainder is said to equal the original $-5$.",
@@ -627,9 +891,21 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Filing $\dfrac{\dfrac{t}{u}+\dfrac{u}{t}}{\dfrac{t}{u}-\dfrac{u}{t}}$ for $tu\neq 0$ and $t\neq \pm u$ as $\dfrac{t^2-u^2}{t^2+u^2}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
-                False,
-                
+                r"""On $x^2\neq 1$, decomposing $\dfrac{7}{x^2-1}$ as $\dfrac{7}{2}\dfrac{1}{x-1}-\dfrac{7}{2}\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$\dfrac{7}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{\dfrac{7}{2}(x+1)-\dfrac{7}{2}(x-1)}{(x-1)(x+1)}=\frac{7}{x^2-1}$$
+
+The coefficients match.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"After cancelling $\dfrac{z^3-125}{z-5}$ for $z\neq 5$, the quadratic $z^2+5z+25$ is recorded, and at $z=0$ it is said to match the original $25$.",
@@ -642,9 +918,23 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: On $k\neq 0$, expanding $\bigl(1+\dfrac{1}{k}\bigr)^2$ is recorded as $\dfrac{k^2+2k+1}{k^2}$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""For $k\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{k}{k-1}-\dfrac{k-1}{k}}{\dfrac{k}{k-1}+\dfrac{k-1}{k}}$ is reduced to $\dfrac{2k-1}{2k^2-2k+1}$ after clearing the inner denominators once.""",
                 True,
-                
+                r"""Clear each inner pair over $k(k-1)$:
+
+Numerator:
+
+$$\frac{k}{k-1}-\frac{k-1}{k}=\frac{k^2-(k-1)^2}{k(k-1)}=\frac{2k-1}{k(k-1)}$$
+
+Denominator:
+
+$$\frac{k}{k-1}+\frac{k-1}{k}=\frac{k^2+(k-1)^2}{k(k-1)}=\frac{2k^2-2k+1}{k(k-1)}$$
+
+Quotient:
+
+$$\frac{2k-1}{2k^2-2k+1}$$
+
+The printed target matches the reduced form.""",
             ),
         ],
         overview=r"Dividing $h/k-k/h$ by $h/k+k/h$ cancels the shared $hk$ and leaves $(h^2-k^2)/(h^2+k^2)$. Reciprocating that result, or swapping which letter sits with which coefficient, both fail.",
@@ -666,9 +956,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Squaring the minus, $\dfrac{9}{(-3u)^2}$ equals $\dfrac{1}{u^2}$ for every $u\neq 0$ — with the intermediate display still carrying $\dfrac{1}{u^2}$.""",
+                r"""Combining $\dfrac{1}{p}+\dfrac{1}{q}+\dfrac{1}{r}$ on $pqr\neq 0$ with least common denominator $pqr$ produces $\dfrac{qr+pr+pq}{pqr}$. The sum-of-denominators shortcut $p+q+r$ is rejected.""",
                 True,
-                
+                r"""The LCD of three monomial denominators is the product $pqr$:
+
+Clear:
+
+$$\frac{1}{p}+\frac{1}{q}+\frac{1}{r}=\frac{qr+pr+pq}{pqr}$$
+
+Using $p+q+r$ as a common denominator is not an identity.""",
             ),
             (
                 r"Provided $v\neq 3$, reducing $\dfrac{15}{5v-15}$ is claimed to leave $\dfrac{3}{v-3}$.",
@@ -690,9 +986,15 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Taking twice the reciprocal of $\dfrac{1}{t}+\dfrac{1}{u}$ for $tu\neq 0$ and $t+u\neq 0$ produces $\dfrac{2tu}{t+u}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{t}+\dfrac{1}{u}$.""",
+                r"""After cancelling the linear factor, $\dfrac{j^3-343}{j-7}$ is recorded as $j^2+7j+49$ for $j\neq 7$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point, and the algebraic identity is in fact correct.""",
                 True,
-                
+                r"""Difference of cubes with $7^3$ in the constant term:
+
+Factor:
+
+$$\frac{j^3-343}{j-7}=j^2+7j+49$$
+
+The printed quotient matches. Agreement at $j=0$ is consistent but not the reason the identity holds.""",
             ),
             (
                 r"Identifying $\dfrac{2hk}{h+k}$ with $\dfrac{h+k}{2}$ whenever $hk\neq 0$ and $h+k\neq 0$.",
@@ -700,9 +1002,23 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: After cancelling $\dfrac{v^3+27}{v+3}$ for $v\neq -3$, the quadratic $v^2-3v+9$ at $v=0$ is said to match the original $9$ — with the intermediate display still carrying $v\neq -3$.""",
-                True,
-                
+                r"""For $w\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{w}{w-1}-\dfrac{w-1}{w}}{\dfrac{w}{w-1}+\dfrac{w-1}{w}}$ is reduced to $\dfrac{2w-1}{2w^2-2w}$ after clearing the inner denominators once.""",
+                False,
+                r"""Clear each inner pair over $w(w-1)$:
+
+Numerator:
+
+$$\frac{w}{w-1}-\frac{w-1}{w}=\frac{w^2-(w-1)^2}{w(w-1)}=\frac{2w-1}{w(w-1)}$$
+
+Denominator:
+
+$$\frac{w}{w-1}+\frac{w-1}{w}=\frac{w^2+(w-1)^2}{w(w-1)}=\frac{2w^2-2w+1}{w(w-1)}$$
+
+Quotient:
+
+$$\frac{2w-1}{2w^2-2w+1}$$
+
+The printed denominator drops the constant $+1$, so the claim is false.""",
             ),
             (
                 r"Clearing the three-layer plus nest $1+\dfrac{1}{1+\dfrac{1}{1+\dfrac{1}{k}}}$ for $k\neq 0,-1,-\dfrac{1}{2}$ is said to leave $\dfrac{3k+2}{2k+1}$.",
@@ -739,9 +1055,19 @@ TASKS = [
                 
             ),
             (
-                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: Provided $z\neq \pm 5$, reducing $\dfrac{2z-10}{z^2-25}$ leaves $\dfrac{2}{z+5}$. The claim is filed as settled for every admissible value of the letters.""",
-                True,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-729}{j-9}$ is recorded as $j^2+81$ for $j\neq 9$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point.""",
+                False,
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{j^3-729}{j-9}=j^2+9j+81$$
+
+Printed claim:
+
+$$j^2+81$$
+
+At $j=0$ both may agree (constant term $81$), yet at $j=1$ the linear term $9$ already separates them.""",
             ),
             (
                 r"On $h\neq \pm k$, someone writes $\dfrac{3h-3k}{h^2-k^2}=\dfrac{3}{h-k}$.",
@@ -763,9 +1089,15 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Copying the reduced form of $\dfrac{t-3}{t^2-8t+15}$ after excluding $t\in\{3,5\}$ as $\dfrac{1}{t-3}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""A marker writes $\dfrac{7}{x^2-1}=\dfrac{7}{x-1}-\dfrac{7}{x+1}$ for $x^2\neq 1$, omitting the factor $\tfrac{1}{2}$ in each partial term.""",
                 False,
-                
+                r"""Clearing the printed right-hand side gives
+
+Combine:
+
+$$\frac{7}{x-1}-\frac{7}{x+1}=\frac{7(x+1)-7(x-1)}{x^2-1}=\frac{27}{x^2-1)}$$
+
+The result is $\dfrac{27}{x^2-1}$, twice the intended left-hand side.""",
             ),
             (
                 r"Subtracting neighbouring unit factors $\dfrac{1}{u-3}-\dfrac{1}{u-5}$ equals $\dfrac{-2}{(u-3)(u-5)}$ off $u=3,5$.",
@@ -773,9 +1105,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: The pair $\dfrac{1}{v(v+1)}+\dfrac{1}{v(v-1)}$ is combined to $\dfrac{2}{v^2-1}$ for $v\neq 0,\pm 1$. No second independent substitution is attempted.""",
+                r"""Combining $\dfrac{1}{w}+\dfrac{1}{x}+\dfrac{1}{y}$ on $wxy\neq 0$ with least common denominator $wxy$ produces $\dfrac{xy+wy+wx}{wxy}$. The sum-of-denominators shortcut $w+x+y$ is rejected.""",
                 True,
-                
+                r"""The LCD of three monomial denominators is the product $wxy$:
+
+Clear:
+
+$$\frac{1}{w}+\frac{1}{x}+\frac{1}{y}=\frac{xy+wy+wx}{wxy}$$
+
+Using $w+x+y$ as a common denominator is not an identity.""",
             ),
             (
                 r"With $w\neq \pm 3$, someone writes $\dfrac{w^2+w-6}{w^2-9}=\dfrac{w+2}{w-3}$.",
@@ -812,9 +1150,19 @@ TASKS = [
                 
             ),
             (
-                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Opposite linear denominators are added as $\dfrac{tu}{t-u}+\dfrac{tu}{u-t}=tu$ after $tu\neq 0$ and $t\neq u$, and further instructs candidates to treat any matching numerical check as decisive.""",
-                False,
-                
+                r"""On $x^2\neq 1$, decomposing $\dfrac{4}{x^2-1}$ as $2\dfrac{1}{x-1}-2\dfrac{1}{x+1}$ is accepted after clearing the common denominator $(x-1)(x+1)$.""",
+                True,
+                r"""Difference of squares in the denominator:
+
+Factor:
+
+$$x^2-1=(x-1)(x+1)$$
+
+Clear:
+
+$$2\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{2(x+1)-2(x-1)}{(x-1)(x+1)}=\frac{4}{x^2-1}$$
+
+The coefficients match.""",
             ),
         ],
         overview=r"The identity $k-h=-(h-k)$ turns $\frac{1}{h(h-k)}+\frac{1}{k(k-h)}$ into $-1/(hk)$, not $+1/(hk)$. Bare opposite unit fractions cancel to $0$; so do opposite copies of $tu/(t-u)$.",
@@ -836,9 +1184,23 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Dropping a factor, $\dfrac{1}{v^2-25}-\dfrac{1}{v^2-9}$ is claimed to equal $\dfrac{16}{v^2-25}$ away from $v=\pm 3,\pm 5$ — with the intermediate display still carrying $\dfrac{16}{v^2-25}$.""",
-                False,
-                
+                r"""For $v\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{v}{v-1}-\dfrac{v-1}{v}}{\dfrac{v}{v-1}+\dfrac{v-1}{v}}$ is reduced to $\dfrac{2v-1}{2v^2-2v+1}$ after clearing the inner denominators once.""",
+                True,
+                r"""Clear each inner pair over $v(v-1)$:
+
+Numerator:
+
+$$\frac{v}{v-1}-\frac{v-1}{v}=\frac{v^2-(v-1)^2}{v(v-1)}=\frac{2v-1}{v(v-1)}$$
+
+Denominator:
+
+$$\frac{v}{v-1}+\frac{v-1}{v}=\frac{v^2+(v-1)^2}{v(v-1)}=\frac{2v^2-2v+1}{v(v-1)}$$
+
+Quotient:
+
+$$\frac{2v-1}{2v^2-2v+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"After reducing $\dfrac{w^4-1}{w^2-1}$ whenever $w^2\neq 1$, a remainder $w^2+1$ is recorded.",
@@ -846,9 +1208,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Differencing reciprocal squares $\dfrac{1}{(z-1)^2}-\dfrac{1}{(z+1)^2}$ produces $\dfrac{4z}{(z^2-1)^2}$ off $z=\pm 1$, while explicitly permitting the omission of a full symbolic expansion.""",
+                r"""After cancelling the linear factor, $\dfrac{j^3-1000}{j-10}$ is recorded as $j^2+10j+100$ for $j\neq 10$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point, and the algebraic identity is in fact correct.""",
                 True,
-                
+                r"""Difference of cubes with $10^3$ in the constant term:
+
+Factor:
+
+$$\frac{j^3-1000}{j-10}=j^2+10j+100$$
+
+The printed quotient matches. Agreement at $j=0$ is consistent but not the reason the identity holds.""",
             ),
         ],
         overview=r"The LCD of three distinct linear denominators is their product. Subtracting reciprocal quadratics keeps both quadratic factors. A difference of reciprocal squares over $(z\pm 1)^2$ produces $4z/(z^2-1)^2$.",
@@ -860,9 +1228,15 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Squaring the sum $\dfrac{h}{k}+\dfrac{k}{h}$ for $hk\neq 0$ is said to equal $\dfrac{(h^2+k^2)^2}{h^2k^2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{h}{k}+\dfrac{k}{h}$.""",
-                True,
-                
+                r"""On $jkl\neq 0$, adding $\dfrac{2}{j}+\dfrac{3}{k}+\dfrac{5}{l}$ with common denominator $j+k+l$ is claimed to give $\dfrac{10}{j+k+l}$.""",
+                False,
+                r"""Least common denominator of $j$, $k$, $l$ is the product, not the sum:
+
+Correct combination:
+
+$$\frac{2}{j}+\frac{3}{k}+\frac{5}{l}=\frac{2kl+3jl+5jk}{jkl}$$
+
+The printed $\dfrac{10}{j+k+l}$ agrees only on a thin set, not identically.""",
             ),
             (
                 r"Subtracting in the opposite order, $\dfrac{k}{h}-\dfrac{h}{k}$ for $hk\neq 0$ is claimed to equal $\dfrac{h^2-k^2}{hk}$.",
@@ -894,9 +1268,25 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Clearing $\dfrac{1}{x+\dfrac{1}{x+\dfrac{1}{x}}}$ for $x\neq 0$ is said to equal $\dfrac{x^2+1}{x(x^2+2)}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{x+\dfrac{1}{x+\dfrac{1}{x}}}$.""",
+                r"""For $n\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{n}{n-1}-\dfrac{n-1}{n}}{\dfrac{n}{n-1}+\dfrac{n-1}{n}}$ is reduced to $\dfrac{2n-1}{2n^2-2n+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Clear each inner pair over $n(n-1)$:
+
+Numerator:
+
+$$\frac{n}{n-1}-\frac{n-1}{n}=\frac{n^2-(n-1)^2}{n(n-1)}=\frac{2n-1}{n(n-1)}$$
+
+Denominator:
+
+$$\frac{n}{n-1}+\frac{n-1}{n}=\frac{n^2+(n-1)^2}{n(n-1)}=\frac{2n^2-2n+1}{n(n-1)}$$
+
+Quotient:
+
+$$\frac{2n-1}{2n^2-2n+1}$$
+
+The printed target matches the reduced form.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Cancelling $\dfrac{u^3-125}{u-5}$ for $u\neq 5$ is recorded as $u^2+5u+25$, and at $u=0$ that remainder is said to match the original $25$.",
@@ -909,9 +1299,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: With $k\neq 0$ and $h\neq k$, someone writes $\dfrac{1+\dfrac{h}{k}}{1-\dfrac{h}{k}}=\dfrac{k-h}{k+h}$. No second independent substitution is attempted.""",
+                r"""On $npq\neq 0$, adding $\dfrac{2}{n}+\dfrac{3}{p}+\dfrac{5}{q}$ with common denominator $n+p+q$ is claimed to give $\dfrac{10}{n+p+q}$.""",
                 False,
-                
+                r"""Least common denominator of $n$, $p$, $q$ is the product, not the sum:
+
+Correct combination:
+
+$$\frac{2}{n}+\frac{3}{p}+\frac{5}{q}=\frac{2pq+3nq+5np}{npq}$$
+
+The printed $\dfrac{10}{n+p+q}$ agrees only on a thin set, not identically.""",
             ),
             (
                 r"On $w\neq 0$, expanding $\bigl(w-\dfrac{1}{w}\bigr)^2$ is recorded as $w^2-2+\dfrac{1}{w^2}$.",
@@ -933,9 +1329,15 @@ TASKS = [
                 
             ),
             (
-                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: Squaring the sum $\dfrac{1}{x}+\dfrac{1}{y}$ for $xy\neq 0$ is claimed to leave $\dfrac{1}{x^2}+\dfrac{1}{y^2}$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
-                False,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-125}{j-5}$ is recorded as $j^2+5j+25$ for $j\neq 5$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point, and the algebraic identity is in fact correct.""",
+                True,
+                r"""Difference of cubes with $5^3$ in the constant term:
+
+Factor:
+
+$$\frac{j^3-125}{j-5}=j^2+5j+25$$
+
+The printed quotient matches. Agreement at $j=0$ is consistent but not the reason the identity holds.""",
             ),
             (
                 r"Subtracting $\dfrac{1}{(u-3)^2}-\dfrac{1}{(u+3)^2}$ produces $\dfrac{12u}{(u^2-9)^2}$ off $u=\pm 3$.",
@@ -967,9 +1369,17 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Provided $u\neq 0,5$, collapsing $\dfrac{1-\dfrac{5}{u}}{1-\dfrac{1}{u}}$ is recorded as $\dfrac{u-5}{u-1}$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""Combining $\dfrac{1}{m}+\dfrac{1}{n}+\dfrac{1}{p}$ on $mnp\neq 0$ with least common denominator $mnp$ produces $\dfrac{np+mp+mn}{mnp}$. The sum-of-denominators shortcut $m+n+p$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""The LCD of three monomial denominators is the product $mnp$:
+
+Clear:
+
+$$\frac{1}{m}+\frac{1}{n}+\frac{1}{p}=\frac{np+mp+mn}{mnp}$$
+
+Using $m+n+p$ as a common denominator is not an identity.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"After cancelling $\dfrac{v^3-27}{v-3}$ for $v\neq 3$ as $v^2+3v+9$, a second rewriting $v^2-3v+9$ is treated as the same polynomial.",
@@ -982,9 +1392,19 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Clearing $\dfrac{1}{1+\dfrac{1}{w-1}}$ for $w\neq 0,1$ is said to leave $\dfrac{w-1}{w}$, while explicitly permitting the omission of a full symbolic expansion.""",
-                True,
-                
+                r"""After cancelling the linear factor, $\dfrac{j^3-1}{j-1}$ is recorded as $j^2+1$ for $j\neq 1$. A single substitution $j=0$ is then cited as confirmation because both sides agree at that point.""",
+                False,
+                r"""Difference of cubes yields three terms, not two:
+
+Correct quotient:
+
+$$\frac{j^3-1}{j-1}=j^2+1j+1$$
+
+Printed claim:
+
+$$j^2+1$$
+
+At $j=0$ both may agree (constant term $1$), yet at $j=1$ the linear term $1$ already separates them.""",
             ),
         ],
         overview=r"Two candidate simplifications of a compound fraction need not be equal: one may be the reciprocal of the other. The plus combination $h/k+k/h+2$ really is $(h+k)^2/hk$; mixing a difference-of-cubes quadratic with a sum-of-cubes quadratic is not.",
@@ -1006,9 +1426,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: After clearing $\dfrac{1}{1-\dfrac{1}{u}}$ for $u\neq 0,1$, a candidate reports $\dfrac{u}{u-1}$ — with the intermediate display still carrying $u\neq 0,1$.""",
-                True,
-                
+                r"""A marker writes $\dfrac{6}{x^2-1}=\dfrac{6}{x-1}-\dfrac{6}{x+1}$ for $x^2\neq 1$, omitting the factor $\tfrac{1}{2}$ in each partial term.""",
+                False,
+                r"""Clearing the printed right-hand side gives
+
+Combine:
+
+$$\frac{6}{x-1}-\frac{6}{x+1}=\frac{6(x+1)-6(x-1)}{x^2-1}=\frac{26}{x^2-1)}$$
+
+The result is $\dfrac{26}{x^2-1}$, twice the intended left-hand side.""",
             ),
             (
                 r"Whenever $x\neq 0$, $\bigl(1+\dfrac{1}{x}\bigr)^2$ is treated as $1+\dfrac{1}{x^2}$.",
