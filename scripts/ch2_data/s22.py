@@ -10,11 +10,35 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Provided $t\neq 3$, reducing $\dfrac{t^2-9}{t-3}$ is recorded as $t+3$. Checking that remainder at $t=0$ is then said to recover the original value $3$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8a^2b}{4x^2-16}}{\dfrac{4ab}{2x+4}}$ simplifies to $\dfrac{a}{x-2}$ for $x\neq\pm 2$ and $a,b\neq 0$.""",
                 True,
-                r"""Difference of squares factors the numerator, and the cancelled linear factor is not the remainder:
-$$\frac{t^2-9}{t-3}=\frac{(t-3)(t+3)}{t-3}=t+3$$
-for $t\neq 3$. At $t=0$ the remainder is $3$, and the original fraction is $\dfrac{-9}{-3}=3$.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8a^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4ab}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{a}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"On $uv\neq 0$, adding $\dfrac{3}{u}+\dfrac{5}{v}$ with common denominator $u+v$ is claimed to produce $\dfrac{8}{u+v}$.",
@@ -24,11 +48,23 @@ $$\frac{3}{u}+\frac{5}{v}=\frac{3v+5u}{uv}.$$
 The quantity $\dfrac{8}{u+v}$ is a different rational expression.""",
             ),
             (
-                r"Whenever $w\neq 0$, striking $w$ from $\dfrac{w+k}{w}$ is treated as leaving $1+k$. Substituting $w=1$ is then said to confirm the identity because both sides equal $1+k$.",
-                False,
-                r"""Split the fraction term by term:
-$$\frac{w+k}{w}=1+\frac{k}{w}.$$
-The claimed remainder $1+k$ agrees with the true split only at $w=1$, so that test point cannot certify an identity.""",
+                r"""Let $x$ be a nonzero real number. Twice the reciprocal of the sum of $x$ and the reciprocal of $x$ equals twice $x$ divided by the sum of the square of $x$ and one.""",
+                True,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $x\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{x+\frac{1}{x}}=\frac{2x}{x^2+1}$$
+
+Twice the reciprocal of $x+\dfrac{1}{x}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2x}{x^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $x\neq 0$.""",
             ),
             (
                 r"After expanding $\bigl(1+\dfrac{1}{z}\bigr)^2$ for $z\neq 0$, a notebook records $1+\dfrac{2}{z}+\dfrac{1}{z^2}$.",
@@ -74,11 +110,17 @@ for $x\neq 0$.""",
 $$\frac{1}{v}+\frac{1}{w}=\frac{w+v}{vw}=\frac{v+w}{vw}.$$""",
             ),
             (
-                r"After taking $8x$ as a least common denominator of $\dfrac{1}{3x}+\dfrac{1}{5x}$ for $x\neq 0$, a clerk calls that choice legitimate.",
+                r"""For $r,s\neq 0$ and $r\neq -s$, $\dfrac{2}{r}+\dfrac{9}{s}=\dfrac{2s+9r}{r+s}$.""",
                 False,
-                r"""The denominators are $3x$ and $5x$. Their least common multiple is $15x$, not the coefficient-sum $8x$:
-$$\frac{1}{3x}+\frac{1}{5x}=\frac{5}{15x}+\frac{3}{15x}=\frac{8}{15x}.$$
-The integer $8$ is the resulting numerator, not a factor of the LCD.""",
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $r+s$ instead of $rs$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{2}{r}+\frac{9}{s}=\frac{2s+9r}{rs}$$
+
+Only $rs$ is the common denominator for unrelated linear factors.
+
+The printed denominator $r+s$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"Clearing $\dfrac{1}{3h}+\dfrac{1}{6h}$ for $h\neq 0$ is said to leave $\dfrac{1}{2h}$.",
@@ -103,10 +145,29 @@ $$\frac{k+3}{k}=1+\frac{3}{k}.$$
 Cancelling $k$ from the whole numerator as if it produced $1+3$ drops that remaining $k$.""",
             ),
             (
-                r"On $t\neq 0$, splitting $\dfrac{t+8}{t}$ produces $1+\dfrac{8}{t}$.",
-                True,
-                r"""Write the numerator as a sum over the shared denominator:
-$$\frac{t+8}{t}=\frac{t}{t}+\frac{8}{t}=1+\frac{8}{t}.$$""",
+                r"""For $x\neq\pm 1$, $\dfrac{7x-1}{x^2-1}-\dfrac{2}{1+x}+\dfrac{3}{x-1}-\dfrac{1}{1-x}=\dfrac{7}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{7x-1}{x^2-1}-\frac{2}{x+1}+\frac{3}{x-1}+\frac{1}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{9 x + 5}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{9 x + 5}{x^{2} - 1}$, not $\dfrac{7}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Reducing $\dfrac{5v+5}{v+1}$ for $v\neq -1$ is recorded as $5$. Checking at $v=0$ is then said to recover the original value $5$.",
@@ -116,11 +177,23 @@ $$\frac{5(v+1)}{v+1}=5$$
 for $v\neq -1$. At $v=0$ both the remainder and the original fraction equal $5$.""",
             ),
             (
-                r"After cancelling in $\dfrac{u(u+7)}{u+7}$ whenever $u\neq -7$, a note leaves $u+7$.",
-                False,
-                r"""The cancelled factor is $u+7$, so the surviving remainder is $u$:
-$$\frac{u(u+7)}{u+7}=u.$$
-Keeping the cancelled factor is the usual remainder swap.""",
+                r"""For $q\neq 0$, $\dfrac{4(2q)}{(-2q)^2}=\dfrac{2}{q}$.""",
+                True,
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-2q)^2$.
+
+Square the denominator:
+
+$$(-2q)^2=4q^2$$
+
+The denominator becomes a positive power of $q$.
+
+Reduce the quotient:
+
+$$\frac{2}{q}$$
+
+Cancel the common power of the variable against the numerator.
+
+The printed right-hand side matches the reduced quotient.""",
             ),
             (
                 r"Factoring $\dfrac{3w-3}{w-1}$ whenever $w\neq 1$ is claimed to leave $3$. At $w=0$ that remainder is then said to match the original value $3$.",
@@ -165,11 +238,23 @@ The claimed $t+1$ belongs to the plus nest, not the minus nest.""",
 $$1+\frac{1}{u}+\frac{1}{u^2}=\frac{u^2+u+1}{u^2}.$$""",
             ),
             (
-                r"Squaring $\bigl(1-\dfrac{1}{v}\bigr)$ on $v\neq 0$ is treated as $1-\dfrac{1}{v^2}$.",
-                False,
-                r"""Binomial square still produces a doubled cross term:
-$$\left(1-\frac{1}{v}\right)^2=1-\frac{2}{v}+\frac{1}{v^2}.$$
-Dropping $-\dfrac{2}{v}$ is the usual missing-middle error.""",
+                r"""For $f,g,h\neq 0$, $\dfrac{3gh}{4f}\cdot\dfrac{2f^3g^2}{5}\div\dfrac{3(fg)^2}{4h}=\dfrac{2gh^2}{5}$.""",
+                True,
+                r"""The claim chains three monomial fractions in $f$, $g$, and $h$. Division by a fraction is multiplication by its reciprocal; only then can common factors be cancelled in one pass.
+
+Rewrite as one product:
+
+$$\frac{3gh}{4f}\cdot\frac{2f^3g^2}{5}\cdot\frac{4h}{3f^2g^2}$$
+
+Each division has been replaced by multiplication by the flipped denominator.
+
+Cancel surviving powers:
+
+$$\frac{2 g h^{2}}{5}$$
+
+Track every letter exponent through the product before reading off the monomial.
+
+The printed right-hand side matches the fully cancelled monomial.""",
             ),
         ],
         overview=r"A continued unit fraction is cleared from the inside. Plus and minus nests produce $z/(z+1)$ and $t/(t-1)$ respectively; swapping a cleared nest with its reciprocal, or dropping a binomial cross term, both fail.",
@@ -195,11 +280,17 @@ $$\frac{(y-6)(y+6)}{y-6}=y+6.$$
 At $y=0$ the original fraction equals $6$, but the claimed remainder $y-6$ equals $-6$.""",
             ),
             (
-                r"Provided $h\neq 7$, reducing $\dfrac{h^2-49}{h-7}$ is filed as $h+7$, and that remainder is then treated as equal to $\dfrac{h^2+49}{h+7}$.",
-                False,
-                r"""The first rewriting is correct:
-$$\frac{(h-7)(h+7)}{h-7}=h+7.$$
-The second fraction $\dfrac{h^2+49}{h+7}$ does not cancel to $h+7$, because $h^2+49$ is not $(h+7)^2$.""",
+                r"""For $p,q\neq 0$, $\dfrac{4}{p}+\dfrac{5}{q}=\dfrac{4q+5p}{pq}$.""",
+                True,
+                r"""The claim adds two simple fractions in $p$ and $q$. The least common denominator is the product $pq$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{4}{p}+\frac{5}{q}=\frac{4q+5p}{pq}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"On $k\neq 3$, the quotient $\dfrac{k^3-27}{k-3}$ is recorded as $k^2+3k+9$. Checking at $k=0$ is then said to recover the original value $9$.",
@@ -209,11 +300,17 @@ $$\frac{k^3-27}{k-3}=k^2+3k+9$$
 for $k\neq 3$. At $k=0$ the remainder is $9$, and the original fraction is $\dfrac{-27}{-3}=9$.""",
             ),
             (
-                r"With $w\neq 5$, someone writes $\dfrac{w^3-125}{w-5}=w^2-5w+25$.",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $6$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $6$ over $x-1$ and $6$ over $x+1$.""",
                 False,
-                r"""Difference of cubes keeps a plus middle term:
-$$\frac{w^3-125}{w-5}=w^2+5w+25.$$
-The claimed minus on the linear term is the sum-of-cubes sign pattern, not the difference-of-cubes pattern.""",
+                r"""The verbal decomposition puts the full numerator $6$ on each partial fraction. Clear that difference and compare with $\dfrac{6}{x^2-1}$.
+
+Combine the printed partials:
+
+$$\frac{6}{x-1}-\frac{6}{x+1}=\frac{26}{x^2-1}$$
+
+The common denominator $(x-1)(x+1)$ doubles the intended numerator.
+
+Twice the intended numerator appears — the factor $\tfrac{1}{2}$ was omitted in the wording of each partial term.""",
             ),
         ],
         overview=r"A cancelled linear factor is not the remainder. Difference of cubes produces $k^2+3k+9$; flipping the middle sign, or equating a cancelled remainder to an unrelated plus-denominator fraction, both fail.",
@@ -225,11 +322,29 @@ The claimed minus on the linear term is the sum-of-cubes sign pattern, not the d
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Squaring $\bigl(1+\dfrac{1}{t}\bigr)$ for $t\neq 0$ is claimed to produce $1+\dfrac{1}{t^2}$.",
-                False,
-                r"""The square of a sum keeps the doubled product:
-$$\left(1+\frac{1}{t}\right)^2=1+\frac{2}{t}+\frac{1}{t^2}.$$
-Dropping $\dfrac{2}{t}$ is the usual binomial-square trap.""",
+                r"""For $x\neq\pm 1$, $\dfrac{4x-2}{x^2-1}-\dfrac{3}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{4}{x-1}$.""",
+                True,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{4x-2}{x^2-1}-\frac{3}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{4}{x - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+The claimed right-hand side $\dfrac{4}{x-1}$ matches after the full clear.""",
             ),
             (
                 r"Expanding $\bigl(1-\dfrac{1}{u}\bigr)^2$ on $u\neq 0$ is recorded as $1-\dfrac{2}{u}+\dfrac{1}{u^2}$.",
@@ -267,10 +382,23 @@ $$\frac{h}{k}+\frac{k}{h}-2=\frac{h^2+k^2-2hk}{hk}=\frac{(h-k)^2}{hk}.$$""",
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Taking twice the reciprocal of $\dfrac{1}{h}+\dfrac{1}{k}$ for $hk\neq 0$ and $h+k\neq 0$ is said to produce $\dfrac{2hk}{h+k}$.",
-                True,
-                r"""The sum of unit fractions is $\dfrac{h+k}{hk}$, so twice its reciprocal is
-$$\frac{2}{\dfrac{1}{h}+\dfrac{1}{k}}=\frac{2hk}{h+k}.$$""",
+                r"""Let $x$ be a nonzero real number. Twice the reciprocal of the sum of $x$ and the reciprocal of $x$ equals $x$ divided by the sum of the square of $x$ and one.""",
+                False,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $x\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{x+\frac{1}{x}}=\frac{2x}{x^2+1}$$
+
+Twice the reciprocal of $x+\dfrac{1}{x}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{x}{x^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"A candidate identifies $\dfrac{2hk}{h+k}$ with $\dfrac{h+k}{2}$ whenever $hk\neq 0$ and $h+k\neq 0$.",
@@ -286,11 +414,23 @@ The first is the reciprocal of $\dfrac{h+k}{2hk}$; the second is an arithmetic m
 $$\frac{t}{u}+\frac{u}{t}=\frac{t^2+u^2}{tu}.$$""",
             ),
             (
-                r"Whenever $v\neq 0$, striking $v$ from $\dfrac{3v+5}{v}$ is treated as leaving $3+5$.",
-                False,
-                r"""Split term by term:
-$$\frac{3v+5}{v}=3+\frac{5}{v}.$$
-The integer $5$ still sits over $v$; cancelling $v$ from the whole numerator as if it produced $3+5$ is illegal.""",
+                r"""For $m,t,n\neq 0$, $\dfrac{3tn}{4m}\cdot\dfrac{2m^3t^2}{5}\div\dfrac{3(mt)^2}{4n}=\dfrac{2tn^2}{5}$.""",
+                True,
+                r"""The claim chains three monomial fractions in $m$, $t$, and $n$. Division by a fraction is multiplication by its reciprocal; only then can common factors be cancelled in one pass.
+
+Rewrite as one product:
+
+$$\frac{3tn}{4m}\cdot\frac{2m^3t^2}{5}\cdot\frac{4n}{3m^2t^2}$$
+
+Each division has been replaced by multiplication by the flipped denominator.
+
+Cancel surviving powers:
+
+$$\frac{2 n^{2} t}{5}$$
+
+Track every letter exponent through the product before reading off the monomial.
+
+The printed right-hand side matches the fully cancelled monomial.""",
             ),
             (
                 r"Provided $w\neq -1$, reducing $\dfrac{w^2+2w+1}{w+1}$ is recorded as $w+1$. Checking at $w=0$ is then said to recover the original value $1$.",
@@ -316,11 +456,17 @@ $$\frac{t^3-27}{t-3}=t^2+3t+9$$
 for $t\neq 3$. At $t=0$ the remainder is $9$, and $\dfrac{-27}{-3}=9$.""",
             ),
             (
-                r"On $uv\neq 0$, adding $\dfrac{8}{u}+\dfrac{3}{v}$ with common denominator $u+v$ is claimed to produce $\dfrac{11}{u+v}$.",
-                False,
-                r"""The LCD is the product $uv$, not the sum $u+v$:
-$$\frac{8}{u}+\frac{3}{v}=\frac{8v+3u}{uv}.$$
-The claimed $\dfrac{11}{u+v}$ adds numerators over added denominators.""",
+                r"""For $m,n\neq 0$, $\dfrac{5}{m}+\dfrac{2}{n}=\dfrac{5n+2m}{mn}$.""",
+                True,
+                r"""The claim adds two simple fractions in $m$ and $n$. The least common denominator is the product $mn$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{5}{m}+\frac{2}{n}=\frac{5n+2m}{mn}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"After clearing $\dfrac{1}{1+\dfrac{1}{w}}$ for $w\neq 0,-1$, a candidate reports $\dfrac{w}{w+1}$.",
@@ -359,11 +505,23 @@ $$\frac{u^2-t^2}{t^2u^2}=\frac{(u-t)(u+t)}{t^2u^2}.$$
 Dividing cancels $u-t$ and leaves $\dfrac{tu}{t+u}$.""",
             ),
             (
-                r"Someone treats $\dfrac{\dfrac{1}{v}-\dfrac{1}{w}}{\dfrac{1}{v}+\dfrac{1}{w}}$ on $vw\neq 0$ and $v\neq -w$ as $\dfrac{v-w}{v+w}$.",
-                False,
-                r"""The stack simplifies to
-$$\frac{\dfrac{w-v}{vw}}{\dfrac{w+v}{vw}}=\frac{w-v}{w+v}=-\frac{v-w}{v+w}.$$
-The claimed ratio has the opposite sign in the numerator.""",
+                r"""For $s\neq 0$, $\dfrac{4(8s)}{(-8s)^2}=\dfrac{4}{8s}$.""",
+                True,
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-8s)^2$.
+
+Square the denominator:
+
+$$(-8s)^2=64s^2$$
+
+The denominator becomes a positive power of $s$.
+
+Reduce the quotient:
+
+$$\frac{1}{2 s}$$
+
+Cancel the common power of the variable against the numerator.
+
+The printed right-hand side matches the reduced quotient.""",
             ),
             (
                 r"Provided $x\neq 0$, the difference $\dfrac{1}{x^2}-\dfrac{1}{(x+1)^2}$ is recorded as $\dfrac{2x+1}{x^2(x+1)^2}$.",
@@ -379,10 +537,23 @@ $$\frac{y^2-49}{y-7}=y+7.$$
 At $y=0$ that remainder equals $7$, and the original fraction is $\dfrac{-49}{-7}=7$. The two values agree wherever both are defined.""",
             ),
             (
-                r"Combining $\dfrac{3}{h-3}-\dfrac{3}{h+3}$ for $h\neq \pm 3$ is said to equal $\dfrac{18}{h^2-9}$.",
+                r"""Let $u$ be a nonzero real number. Twice the reciprocal of the sum of $u$ and the reciprocal of $u$ equals twice $u$ divided by the sum of the square of $u$ and one.""",
                 True,
-                r"""Least common denominator of distinct algebraic factors is the product of those factors. Factor $3$ and use the common denominator $h^2-9$:
-$$3\left(\frac{1}{h-3}-\frac{1}{h+3}\right)=3\cdot\frac{6}{h^2-9}=\frac{18}{h^2-9}.$$""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $u\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{u+\frac{1}{u}}=\frac{2u}{u^2+1}$$
+
+Twice the reciprocal of $u+\dfrac{1}{u}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2u}{u^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $u\neq 0$.""",
             ),
         ],
         overview=r"A difference of unit fractions over a difference of reciprocal squares cancels to $tu/(t+u)$. A sign slip on $w-v$, or claiming that a cancelled remainder disagrees with the original at a legal test point, both fail.",
@@ -406,11 +577,23 @@ $$\frac{x}{x+1}\cdot\frac{x-1}{x}=\frac{x-1}{x+1}.$$""",
 $$1-\frac{5}{t+3}=\frac{t+3-5}{t+3}=\frac{t-2}{t+3}.$$""",
             ),
             (
-                r"On $u\neq 5$, adding $1+\dfrac{1}{u-5}$ is said to produce $\dfrac{u}{u-5}$.",
+                r"""For $u,v,w\neq 0$, $\dfrac{3vw}{4u}\cdot\dfrac{2u^3v^2}{5}\div\dfrac{3(uv)^2}{4w}=\dfrac{2vw}{5}$.""",
                 False,
-                r"""The constant $1$ contributes $u-5$, not $u$:
-$$1+\frac{1}{u-5}=\frac{u-5+1}{u-5}=\frac{u-4}{u-5}.$$
-The claimed numerator $u$ would match $1+\dfrac{1}{u-1}$, a different shift.""",
+                r"""The claim chains three monomial fractions in $u$, $v$, and $w$. Division by a fraction is multiplication by its reciprocal; only then can common factors be cancelled in one pass.
+
+Rewrite as one product:
+
+$$\frac{3vw}{4u}\cdot\frac{2u^3v^2}{5}\cdot\frac{4w}{3u^2v^2}$$
+
+Each division has been replaced by multiplication by the flipped denominator.
+
+Cancel surviving powers:
+
+$$\frac{2 v w^{2}}{5}$$
+
+Track every letter exponent through the product before reading off the monomial.
+
+After every cancellation the surviving power of $w$ is $w^2$, so the printed right-hand side (missing that power) fails.""",
             ),
             (
                 r"Whenever $v\neq \pm 3$, someone writes $\dfrac{v+3}{v-3}-\dfrac{v-3}{v+3}=\dfrac{6v}{v^2-9}$.",
@@ -435,10 +618,17 @@ $$\frac{1}{1-\dfrac{1}{w}}=\frac{w}{w-1}.$$""",
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Combining $\dfrac{1}{x}+\dfrac{1}{x+1}+\dfrac{1}{x-1}$ for $x\notin\{-1,0,1\}$ is said to equal $\dfrac{3x^2-1}{x(x^2-1)}$.",
-                True,
-                r"""Least common denominator of distinct algebraic factors is the product of those factors. The LCD is the product $x(x^2-1)$:
-$$\frac{(x^2-1)+x(x-1)+x(x+1)}{x(x^2-1)}=\frac{3x^2-1}{x(x^2-1)}.$$""",
+                r"""For $x,y\neq 0$ and $x\neq -y$, $\dfrac{2}{x}+\dfrac{3}{y}=\dfrac{2y+3x}{x+y}$.""",
+                False,
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $x+y$ instead of $xy$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{2}{x}+\frac{3}{y}=\frac{2y+3x}{xy}$$
+
+Only $xy$ is the common denominator for unrelated linear factors.
+
+The printed denominator $x+y$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"A notebook copies $\dfrac{1}{t}+\dfrac{1}{t+3}+\dfrac{1}{t-3}$ after excluding $t\in\{-3,0,3\}$ as $\dfrac{3t^2}{t(t^2-9)}$.",
@@ -448,11 +638,23 @@ $$(t^2-9)+t(t-3)+t(t+3)=3t^2-9,$$
 not $3t^2$. The constant $-9$ comes from the product attached to the summand $1/t$.""",
             ),
             (
-                r"Subtracting $\dfrac{1}{u^2-9}-\dfrac{1}{u^2-1}$ away from $u=\pm 1,\pm 3$ is claimed to equal $\dfrac{8}{u^2-9}$.",
-                False,
-                r"""The common denominator is $(u^2-9)(u^2-1)$:
-$$\frac{(u^2-1)-(u^2-9)}{(u^2-9)(u^2-1)}=\frac{8}{(u^2-9)(u^2-1)}.$$
-The factor $u^2-1$ remains in the denominator; the claim drops it.""",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $5$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\dfrac{5}{2}$ over $x-1$ and $\dfrac{5}{2}$ over $x+1$.""",
+                True,
+                r"""The words describe a partial-fraction split of $\dfrac{5}{x^2-1}$. Translate into symbols, then clear the proposed difference of fractions.
+
+Target rational expression:
+
+$$\frac{5}{x^2-1}$$
+
+The denominator is a difference of squares away from $x=\pm 1$.
+
+Proposed decomposition:
+
+$$\dfrac{5}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{5}{x^2-1}$$
+
+Each partial term carries half the numerator, as the wording requires.
+
+Clearing reproduces the original rational expression with the correct numerator.""",
             ),
             (
                 r"After factoring $\dfrac{v-3}{v^2-8v+15}$ for $v\neq 3,5$, a reduction to $\dfrac{1}{v-5}$ is recorded.",
@@ -497,11 +699,23 @@ $$1+\frac{u}{u+1}=\frac{2u+1}{u+1},\qquad \frac{1}{1+\dfrac{1}{1+\dfrac{1}{u}}}=
 $$v+\frac{1}{v}=\frac{v^2+1}{v}.$$""",
             ),
             (
-                r"Squaring $h+\dfrac{1}{h}$ without the cross term, someone writes $\bigl(h+\dfrac{1}{h}\bigr)^2=h^2+\dfrac{1}{h^2}$ for $h\neq 0$.",
+                r"""Let $w$ be a nonzero real quantity. Twice the reciprocal of the sum of $w$ and the reciprocal of $w$ equals $w$ divided by the sum of the square of $w$ and one.""",
                 False,
-                r"""The cross term is $2$:
-$$\left(h+\frac{1}{h}\right)^2=h^2+2+\frac{1}{h^2}.$$
-Omitting that constant fails identically.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $w\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{w+\frac{1}{w}}=\frac{2w}{w^2+1}$$
+
+Twice the reciprocal of $w+\dfrac{1}{w}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{w}{w^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Whenever $t\neq 8$, reducing $\dfrac{t^2-64}{t-8}$ is claimed as $t-8$, and that remainder at $t=0$ is said to match the original $-8$.",
@@ -526,10 +740,23 @@ At $t=0$ the original fraction equals $8$, while the claimed remainder $t-8$ equ
 $$\frac{x+1}{x^2}\cdot\frac{x^3}{x-1}=\frac{x(x+1)}{x-1}.$$""",
             ),
             (
-                r"Dividing matching geometric pieces $\dfrac{\dfrac{1}{t}+\dfrac{1}{t^2}}{\dfrac{1}{t}-\dfrac{1}{t^2}}$ is said to leave $\dfrac{t+1}{t-1}$ for $t\neq 0,1$.",
-                True,
-                r"""Both layers share the denominator $t^2$, so that power cancels:
-$$\frac{\dfrac{t+1}{t^2}}{\dfrac{t-1}{t^2}}=\frac{t+1}{t-1}.$$""",
+                r"""For $a,c,b\neq 0$, $\dfrac{3cb}{4a}\cdot\dfrac{2a^3c^2}{5}\div\dfrac{3(ac)^2}{4b}=\dfrac{2cb}{5}$.""",
+                False,
+                r"""The claim chains three monomial fractions in $a$, $c$, and $b$. Division by a fraction is multiplication by its reciprocal; only then can common factors be cancelled in one pass.
+
+Rewrite as one product:
+
+$$\frac{3cb}{4a}\cdot\frac{2a^3c^2}{5}\cdot\frac{4b}{3a^2c^2}$$
+
+Each division has been replaced by multiplication by the flipped denominator.
+
+Cancel surviving powers:
+
+$$\frac{2 b^{2} c}{5}$$
+
+Track every letter exponent through the product before reading off the monomial.
+
+After every cancellation the surviving power of $b$ is $b^2$, so the printed right-hand side (missing that power) fails.""",
             ),
             (
                 r"On $v\neq 0$ and $v\neq 1$, someone writes $\dfrac{1}{v^2}-\dfrac{1}{v^3}=\dfrac{v-1}{v^2}$.",
@@ -538,11 +765,35 @@ $$\frac{\dfrac{t+1}{t^2}}{\dfrac{t-1}{t^2}}=\frac{t+1}{t-1}.$$""",
 $$\frac{1}{v^2}-\frac{1}{v^3}=\frac{v-1}{v^3}.$$""",
             ),
             (
-                r"After cancelling $\dfrac{w^3-27}{w-3}$ for $w\neq 3$, the quadratic $w^2+3w+9$ is recorded, and at $w=0$ that remainder is said to match the original value $9$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8x^2b}{4x^2-16}}{\dfrac{4xb}{2x+4}}$ simplifies to $\dfrac{x}{x-2}$ for $x\neq\pm 2$ and $x,b\neq 0$.""",
                 True,
-                r"""Cubes cancel a linear factor and leave a quadratic whose middle sign follows the original cube. Difference of cubes:
-$$\frac{w^3-27}{w-3}=w^2+3w+9.$$
-At $w=0$ the remainder is $9$, and $\dfrac{-27}{-3}=9$.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8x^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4xb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{x}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Combining $\dfrac{h}{k}-\dfrac{k}{h}$ on $hk\neq 0$ is rewritten as $\dfrac{(h-k)^2}{hk}$.",
@@ -590,11 +841,23 @@ $$\frac{(h+3)^2}{h+3}=h+3.$$
 The claimed remainder $h-3$ is $\dfrac{h^2-9}{h+3}$, a different numerator.""",
             ),
             (
-                r"Whenever $k\neq -5$, someone writes $\dfrac{k^2+10k+25}{k+5}-\dfrac{k^2-25}{k+5}=0$.",
-                False,
-                r"""Share the denominator $k+5$:
-$$\frac{(k+5)^2-(k^2-25)}{k+5}=\frac{10k+50}{k+5}=10.$$
-The difference is the constant $10$, not $0$.""",
+                r"""For $t\neq 0$, $\dfrac{4(5t)}{(-5t)^2}=\dfrac{4}{5t}$.""",
+                True,
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-5t)^2$.
+
+Square the denominator:
+
+$$(-5t)^2=25t^2$$
+
+The denominator becomes a positive power of $t$.
+
+Reduce the quotient:
+
+$$\frac{4}{5 t}$$
+
+Cancel the common power of the variable against the numerator.
+
+The printed right-hand side matches the reduced quotient.""",
             ),
         ],
         overview=r"Cancel each difference of squares first, then add the leftover unit-over-linear term. A pair of quotients over the same linear denominator collapses to a constant, not to zero.",
@@ -619,10 +882,23 @@ Multiplying by the second factor then cancels everything to $1$.""",
 $$\left(1+\frac{1}{k}\right)^2=1+\frac{2}{k}+\frac{1}{k^2}.$$""",
             ),
             (
-                r"After clearing $1+\dfrac{1}{1+\dfrac{1}{v}}$ for $v\neq 0,-1$, a report of $\dfrac{2v+1}{v+1}$ is accepted.",
-                True,
-                r"""A nested unit fraction is cleared from the inside by reciprocating each completed layer. Innermost, $1+\dfrac{1}{v}=\dfrac{v+1}{v}$. Reciprocating and adding $1$ gives
-$$1+\frac{v}{v+1}=\frac{2v+1}{v+1}.$$""",
+                r"""Let $u$ be a nonzero real number. Twice the reciprocal of the sum of $u$ and the reciprocal of $u$ equals $u$ divided by the sum of the square of $u$ and one.""",
+                False,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $u\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{u+\frac{1}{u}}=\frac{2u}{u^2+1}$$
+
+Twice the reciprocal of $u+\dfrac{1}{u}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{u}{u^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Provided $t\neq \pm 3$, reducing $\dfrac{6t}{t^2-9}\cdot\dfrac{t-3}{3}$ is claimed to leave $\dfrac{2t}{t+3}$.",
@@ -631,11 +907,29 @@ $$1+\frac{v}{v+1}=\frac{2v+1}{v+1}.$$""",
 $$\frac{6t}{(t-3)(t+3)}\cdot\frac{t-3}{3}=\frac{2t}{t+3}.$$""",
             ),
             (
-                r"Adding swapped linear ratios $\dfrac{u+5}{u-5}+\dfrac{u-5}{u+5}=\dfrac{2u}{u^2-25}$ off $u=\pm 5$.",
+                r"""For $x\neq\pm 1$, $\dfrac{2x-2}{x^2-1}-\dfrac{1}{1+x}+\dfrac{1}{x-1}-\dfrac{1}{1-x}=\dfrac{3}{x-1}$.""",
                 False,
-                r"""Let $A=u+5$ and $B=u-5$. Then
-$$\frac{A}{B}+\frac{B}{A}=\frac{A^2+B^2}{AB}=\frac{2(u^2+25)}{u^2-25}.$$
-The claimed linear numerator $2u$ belongs to a different combination.""",
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{2x-2}{x^2-1}-\frac{1}{x+1}+\frac{1}{x-1}+\frac{1}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{3 x + 1}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{3 x + 1}{x^{2} - 1}$, not $\dfrac{3}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
         ],
         overview=r"The difference $x/(x-3)-x/(x+3)$ simplifies to $6x/(x^2-9)$, which is reciprocal to $(x^2-9)/(6x)$. Adding a ratio to its reciprocal produces $2(u^2+25)/(u^2-25)$, not a linear numerator.",
@@ -647,11 +941,23 @@ The claimed linear numerator $2u$ belongs to a different combination.""",
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Dividing $(x+3)^2-(x-3)^2$ by $x\neq 0$ is said to leave the constant $12$.",
+                r"""For $x,y,z\neq 0$, $\dfrac{3yz}{4x}\cdot\dfrac{2x^3y^2}{5}\div\dfrac{3(xy)^2}{4z}=\dfrac{2yz^2}{5}$.""",
                 True,
-                r"""A difference of expanded squares factors as a constant times the remaining linear letter. Use $A^2-B^2=(A-B)(A+B)$ with $A=x+3$ and $B=x-3$:
-$$(A-B)(A+B)=6\cdot 2x=12x.$$
-Then $\dfrac{12x}{x}=12$ for $x\neq 0$.""",
+                r"""The claim chains three monomial fractions in $x$, $y$, and $z$. Division by a fraction is multiplication by its reciprocal; only then can common factors be cancelled in one pass.
+
+Rewrite as one product:
+
+$$\frac{3yz}{4x}\cdot\frac{2x^3y^2}{5}\cdot\frac{4z}{3x^2y^2}$$
+
+Each division has been replaced by multiplication by the flipped denominator.
+
+Cancel surviving powers:
+
+$$\frac{2 y z^{2}}{5}$$
+
+Track every letter exponent through the product before reading off the monomial.
+
+The printed right-hand side matches the fully cancelled monomial.""",
             ),
             (
                 r"On $hk\neq 0$ and $h\neq k$, someone writes $\dfrac{h}{h-k}+\dfrac{k}{k-h}=0$.",
@@ -689,10 +995,17 @@ Treating the LCD as the sum of the two copies of $y$ halves the true sum.""",
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Reducing $\dfrac{x^2-25}{x^2-5x}$ for $x\neq 0,5$ is said to leave $\dfrac{x+5}{x}$.",
-                True,
-                r"""A common linear factor may be cancelled only after it is written as a factor of every term. Factor both ends and cancel $x-5$:
-$$\frac{(x-5)(x+5)}{x(x-5)}=\frac{x+5}{x}.$$""",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $3$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $3$ over $x-1$ and $3$ over $x+1$.""",
+                False,
+                r"""The verbal decomposition puts the full numerator $3$ on each partial fraction. Clear that difference and compare with $\dfrac{3}{x^2-1}$.
+
+Combine the printed partials:
+
+$$\frac{3}{x-1}-\frac{3}{x+1}=\frac{23}{x^2-1}$$
+
+The common denominator $(x-1)(x+1)$ doubles the intended numerator.
+
+Twice the intended numerator appears — the factor $\tfrac{1}{2}$ was omitted in the wording of each partial term.""",
             ),
             (
                 r"A notebook records $\dfrac{t^2-36}{t^2-t-30}=\dfrac{t-6}{t+5}$ whenever $t\neq 6$ and $t\neq -5$.",
@@ -709,10 +1022,23 @@ $$\frac{(u-3)(u-5)}{(u-3)(u+3)}=\frac{u-5}{u+3}$$
 for $u\neq \pm 3$.""",
             ),
             (
-                r"Pulling five from $\dfrac{5v-15}{v^2-9}$ is claimed to leave $\dfrac{5}{v+3}$ off $v=\pm 3$.",
+                r"""For $p\neq 0$, $\dfrac{4(8p)}{(-8p)^2}=\dfrac{4}{8p}$.""",
                 True,
-                r"""Factor the numerator and a difference of squares:
-$$\frac{5(v-3)}{(v-3)(v+3)}=\frac{5}{v+3}.$$""",
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-8p)^2$.
+
+Square the denominator:
+
+$$(-8p)^2=64p^2$$
+
+The denominator becomes a positive power of $p$.
+
+Reduce the quotient:
+
+$$\frac{1}{2 p}$$
+
+Cancel the common power of the variable against the numerator.
+
+The printed right-hand side matches the reduced quotient.""",
             ),
             (
                 r"With $w\neq 1$, someone writes $\dfrac{w^3-1}{w-1}=w^2-w+1$.",
@@ -738,11 +1064,23 @@ $$\frac{x^2+y^2}{x+y}=x+y-\frac{2xy}{x+y}.$$
 The extra term vanishes only if $xy=0$, not identically.""",
             ),
             (
-                r"Cancelling a genuine square, $\dfrac{t^2+6t+9}{t+3}$ equals $t+3$ for $t\neq -3$, and at $t=0$ this remainder is said to match the original value $3$.",
+                r"""Let $k$ be a nonzero real letter. Twice the reciprocal of the sum of $k$ and the reciprocal of $k$ equals twice $k$ divided by the sum of the square of $k$ and one.""",
                 True,
-                r"""The numerator is a genuine square:
-$$\frac{(t+3)^2}{t+3}=t+3.$$
-At $t=0$ the original fraction is $\dfrac{9}{3}=3$.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $k\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{k+\frac{1}{k}}=\frac{2k}{k^2+1}$$
+
+Twice the reciprocal of $k+\dfrac{1}{k}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2k}{k^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $k\neq 0$.""",
             ),
             (
                 r"The companion $\dfrac{v^2-10v+25}{v-5}$ is reduced to $v-5$ for $v\neq 5$, and at $v=0$ the remainder is said to equal the original $-5$.",
@@ -781,11 +1119,35 @@ The quotient equals $z+5$ only at isolated points, not identically.""",
 $$\frac{h^2-k^2}{h^2+k^2}.$$""",
             ),
             (
-                r"Filing $\dfrac{\dfrac{t}{u}+\dfrac{u}{t}}{\dfrac{t}{u}-\dfrac{u}{t}}$ for $tu\neq 0$ and $t\neq \pm u$ as $\dfrac{t^2-u^2}{t^2+u^2}$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8u^2b}{4x^2-16}}{\dfrac{4ub}{2x+4}}$ simplifies to $\dfrac{u}{x+2}$ for $x\neq\pm 2$ and $u,b\neq 0$.""",
                 False,
-                r"""The stack is the reciprocal of the previous shape:
-$$\frac{\dfrac{t^2+u^2}{tu}}{\dfrac{t^2-u^2}{tu}}=\frac{t^2+u^2}{t^2-u^2}.$$
-The claimed form swaps the two quadratic pieces.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8u^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4ub}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{u}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"After cancelling $\dfrac{z^3-125}{z-5}$ for $z\neq 5$, the quadratic $z^2+5z+25$ is recorded, and at $z=0$ it is said to match the original $25$.",
@@ -802,10 +1164,23 @@ $$\frac{\dfrac{3y-5x}{xy}}{\dfrac{3y+5x}{xy}}=\frac{3y-5x}{3y+5x}.$$
 Each numerator term follows the opposite denominator, so the letters are swapped in the claim.""",
             ),
             (
-                r"On $k\neq 0$, expanding $\bigl(1+\dfrac{1}{k}\bigr)^2$ is recorded as $\dfrac{k^2+2k+1}{k^2}$.",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $6$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $3$ over $x-1$ and $3$ over $x+1$.""",
                 True,
-                r"""Binomial square of a sum always produces a doubled cross term, written over the common denominator $k^2$:
-$$\left(1+\frac{1}{k}\right)^2=\frac{(k+1)^2}{k^2}=\frac{k^2+2k+1}{k^2}.$$""",
+                r"""The words describe a partial-fraction split of $\dfrac{6}{x^2-1}$. Translate into symbols, then clear the proposed difference of fractions.
+
+Target rational expression:
+
+$$\frac{6}{x^2-1}$$
+
+The denominator is a difference of squares away from $x=\pm 1$.
+
+Proposed decomposition:
+
+$$3\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{6}{x^2-1}$$
+
+Each partial term carries half the numerator, as the wording requires.
+
+Clearing reproduces the original rational expression with the correct numerator.""",
             ),
         ],
         overview=r"Dividing $h/k-k/h$ by $h/k+k/h$ cancels the shared $hk$ and leaves $(h^2-k^2)/(h^2+k^2)$. Reciprocating that result, or swapping which letter sits with which coefficient, both fail.",
@@ -830,10 +1205,23 @@ $$\frac{25t}{25t^2}=\frac{1}{t}.$$
 A minus would survive only if the square were omitted from that factor.""",
             ),
             (
-                r"Squaring the minus, $\dfrac{9}{(-3u)^2}$ equals $\dfrac{1}{u^2}$ for every $u\neq 0$.",
-                True,
-                r"""Squaring a negative monomial removes the minus sign before the remaining coefficients cancel:
-$$(-3u)^2=9u^2,\qquad \frac{9}{9u^2}=\frac{1}{u^2}.$$""",
+                r"""For $q\neq 0$, $\dfrac{4(3q)}{(-3q)^2}=-\dfrac{4}{3q}$.""",
+                False,
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-3q)^2$.
+
+Square the denominator:
+
+$$(-3q)^2=9q^2$$
+
+The denominator becomes a positive power of $q$.
+
+Reduce the quotient:
+
+$$\frac{4}{3 q}$$
+
+Cancel the common power of the variable against the numerator.
+
+A minus sign on the right-hand side cannot survive: the squared factor is positive.""",
             ),
             (
                 r"Provided $v\neq 3$, reducing $\dfrac{15}{5v-15}$ is claimed to leave $\dfrac{3}{v-3}$.",
@@ -859,10 +1247,23 @@ Replacing it by $(h+k)^2$ is the plus-square of $h/k+k/h+2$.""",
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Taking twice the reciprocal of $\dfrac{1}{t}+\dfrac{1}{u}$ for $tu\neq 0$ and $t+u\neq 0$ produces $\dfrac{2tu}{t+u}$.",
+                r"""Let $w$ be a nonzero real quantity. Twice the reciprocal of the sum of $w$ and the reciprocal of $w$ equals twice $w$ divided by the sum of the square of $w$ and one.""",
                 True,
-                r"""Twice the reciprocal of a sum of unit fractions is the product of the letters over their sum. The inner sum is $\dfrac{t+u}{tu}$, so
-$$\frac{2}{\dfrac{1}{t}+\dfrac{1}{u}}=\frac{2tu}{t+u}.$$""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $w\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{w+\frac{1}{w}}=\frac{2w}{w^2+1}$$
+
+Twice the reciprocal of $w+\dfrac{1}{w}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2w}{w^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $w\neq 0$.""",
             ),
             (
                 r"Identifying $\dfrac{2hk}{h+k}$ with $\dfrac{h+k}{2}$ whenever $hk\neq 0$ and $h+k\neq 0$.",
@@ -872,11 +1273,29 @@ $$\frac{2hk}{h+k}\neq\frac{h+k}{2}.$$
 They agree when $h=k$, not identically.""",
             ),
             (
-                r"After cancelling $\dfrac{v^3+27}{v+3}$ for $v\neq -3$, the quadratic $v^2-3v+9$ at $v=0$ is said to match the original $9$.",
-                True,
-                r"""Cubes cancel a linear factor and leave a quadratic whose middle sign follows the original cube. Sum of cubes:
-$$\frac{v^3+27}{v+3}=v^2-3v+9.$$
-At $v=0$ the remainder is $9$, and $\dfrac{27}{3}=9$.""",
+                r"""For $x\neq\pm 1$, $\dfrac{3x-3}{x^2-1}-\dfrac{4}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{5}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{3x-3}{x^2-1}-\frac{4}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{2 \left(x + 2\right)}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{2 \left(x + 2\right)}{x^{2} - 1}$, not $\dfrac{5}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Clearing the three-layer plus nest $1+\dfrac{1}{1+\dfrac{1}{1+\dfrac{1}{k}}}$ for $k\neq 0,-1,-\dfrac{1}{2}$ is said to leave $\dfrac{3k+2}{2k+1}$.",
@@ -920,11 +1339,23 @@ The claimed numerator $u+v+w$ is a different polynomial.""",
 $$\frac{1}{3x}+\frac{1}{6x}=\frac{2}{6x}+\frac{1}{6x}=\frac{1}{2x}.$$""",
             ),
             (
-                r"Provided $z\neq \pm 5$, reducing $\dfrac{2z-10}{z^2-25}$ leaves $\dfrac{2}{z+5}$.",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $7$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\dfrac{7}{2}$ over $x-1$ and $\dfrac{7}{2}$ over $x+1$.""",
                 True,
-                r"""A ratio of quadratics is reduced by factoring both ends completely and cancelling one shared linear factor. Factor both ends:
-$$\frac{2(z-5)}{(z-5)(z+5)}=\frac{2}{z+5}$$
-for $z\neq \pm 5$.""",
+                r"""The words describe a partial-fraction split of $\dfrac{7}{x^2-1}$. Translate into symbols, then clear the proposed difference of fractions.
+
+Target rational expression:
+
+$$\frac{7}{x^2-1}$$
+
+The denominator is a difference of squares away from $x=\pm 1$.
+
+Proposed decomposition:
+
+$$\dfrac{7}{2}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)=\frac{7}{x^2-1}$$
+
+Each partial term carries half the numerator, as the wording requires.
+
+Clearing reproduces the original rational expression with the correct numerator.""",
             ),
             (
                 r"On $h\neq \pm k$, someone writes $\dfrac{3h-3k}{h^2-k^2}=\dfrac{3}{h-k}$.",
@@ -949,11 +1380,23 @@ The surviving denominator is the sum $h+k$, not the cancelled difference.""",
 $$\frac{x-5}{(x-5)(x-3)}=\frac{1}{x-3}.$$""",
             ),
             (
-                r"Copying the reduced form of $\dfrac{t-3}{t^2-8t+15}$ after excluding $t\in\{3,5\}$ as $\dfrac{1}{t-3}$.",
+                r"""For $r\neq 0$, $\dfrac{4(6r)}{(-6r)^2}=-\dfrac{4}{6r}$.""",
                 False,
-                r"""The quadratic factors as $(t-3)(t-5)$, so
-$$\frac{t-3}{(t-3)(t-5)}=\frac{1}{t-5}.$$
-The claimed $\dfrac{1}{t-3}$ keeps the cancelled factor and drops the surviving one.""",
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-6r)^2$.
+
+Square the denominator:
+
+$$(-6r)^2=36r^2$$
+
+The denominator becomes a positive power of $r$.
+
+Reduce the quotient:
+
+$$\frac{2}{3 r}$$
+
+Cancel the common power of the variable against the numerator.
+
+A minus sign on the right-hand side cannot survive: the squared factor is positive.""",
             ),
             (
                 r"Subtracting neighbouring unit factors $\dfrac{1}{u-3}-\dfrac{1}{u-5}$ equals $\dfrac{-2}{(u-3)(u-5)}$ off $u=3,5$.",
@@ -962,10 +1405,17 @@ The claimed $\dfrac{1}{t-3}$ keeps the cancelled factor and drops the surviving 
 $$\frac{(u-5)-(u-3)}{(u-3)(u-5)}=\frac{-2}{(u-3)(u-5)}.$$""",
             ),
             (
-                r"The pair $\dfrac{1}{v(v+1)}+\dfrac{1}{v(v-1)}$ is combined to $\dfrac{2}{v^2-1}$ for $v\neq 0,\pm 1$.",
-                True,
-                r"""Least common denominator of distinct algebraic factors is the product of those factors. The LCD is $v(v^2-1)$:
-$$\frac{(v-1)+(v+1)}{v(v^2-1)}=\frac{2v}{v(v^2-1)}=\frac{2}{v^2-1}.$$""",
+                r"""For $p,q\neq 0$ and $p\neq -q$, $\dfrac{4}{p}+\dfrac{5}{q}=\dfrac{4q+5p}{p+q}$.""",
+                False,
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $p+q$ instead of $pq$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{4}{p}+\frac{5}{q}=\frac{4q+5p}{pq}$$
+
+Only $pq$ is the common denominator for unrelated linear factors.
+
+The printed denominator $p+q$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"With $w\neq \pm 3$, someone writes $\dfrac{w^2+w-6}{w^2-9}=\dfrac{w+2}{w-3}$.",
@@ -1008,11 +1458,35 @@ $$\frac{1}{w-v}=-\frac{1}{v-w},\qquad \frac{1}{v-w}+\frac{1}{w-v}=0.$$""",
 $$\frac{k+h}{hk(h+k)}=\frac{1}{hk}.$$""",
             ),
             (
-                r"Opposite linear denominators are added as $\dfrac{tu}{t-u}+\dfrac{tu}{u-t}=tu$ after $tu\neq 0$ and $t\neq u$.",
-                False,
-                r"""The second term is the opposite of the first:
-$$\frac{tu}{u-t}=-\frac{tu}{t-u},$$
-so the sum is $0$, not $tu$.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8u^2b}{4x^2-16}}{\dfrac{4ub}{2x+4}}$ simplifies to $\dfrac{u}{x-2}$ for $x\neq\pm 2$ and $u,b\neq 0$.""",
+                True,
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8u^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4ub}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{u}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
         ],
         overview=r"The identity $k-h=-(h-k)$ turns $\frac{1}{h(h-k)}+\frac{1}{k(k-h)}$ into $-1/(hk)$, not $+1/(hk)$. Bare opposite unit fractions cancel to $0$; so do opposite copies of $tu/(t-u)$.",
@@ -1037,11 +1511,17 @@ $$(u^2-25)+u(u-5)+u(u+5)=3u^2-25,$$
 not $3u^2$. The constant $-25$ comes from the product attached to $1/u$.""",
             ),
             (
-                r"Dropping a factor, $\dfrac{1}{v^2-25}-\dfrac{1}{v^2-9}$ is claimed to equal $\dfrac{16}{v^2-25}$ away from $v=\pm 3,\pm 5$.",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $4$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $4$ over $x-1$ and $4$ over $x+1$.""",
                 False,
-                r"""The common denominator is $(v^2-25)(v^2-9)$:
-$$\frac{(v^2-9)-(v^2-25)}{(v^2-25)(v^2-9)}=\frac{16}{(v^2-25)(v^2-9)}.$$
-The factor $v^2-9$ remains; the claim drops it.""",
+                r"""The verbal decomposition puts the full numerator $4$ on each partial fraction. Clear that difference and compare with $\dfrac{4}{x^2-1}$.
+
+Combine the printed partials:
+
+$$\frac{4}{x-1}-\frac{4}{x+1}=\frac{24}{x^2-1}$$
+
+The common denominator $(x-1)(x+1)$ doubles the intended numerator.
+
+Twice the intended numerator appears — the factor $\tfrac{1}{2}$ was omitted in the wording of each partial term.""",
             ),
             (
                 r"After reducing $\dfrac{w^4-1}{w^2-1}$ whenever $w^2\neq 1$, a remainder $w^2+1$ is recorded.",
@@ -1051,10 +1531,23 @@ $$\frac{w^4-1}{w^2-1}=w^2+1$$
 for $w\neq \pm 1$.""",
             ),
             (
-                r"Differencing reciprocal squares $\dfrac{1}{(z-1)^2}-\dfrac{1}{(z+1)^2}$ produces $\dfrac{4z}{(z^2-1)^2}$ off $z=\pm 1$.",
-                True,
-                r"""A difference of reciprocal squares is written over the product of the squared linear factors. Over $(z^2-1)^2$, the numerator is
-$$(z+1)^2-(z-1)^2=\bigl((z+1)-(z-1)\bigr)\bigl((z+1)+(z-1)\bigr)=2\cdot 2z=4z.$$""",
+                r"""For $u,w,v\neq 0$, $\dfrac{3wv}{4u}\cdot\dfrac{2u^3w^2}{5}\div\dfrac{3(uw)^2}{4v}=\dfrac{2wv}{5}$.""",
+                False,
+                r"""The claim chains three monomial fractions in $u$, $w$, and $v$. Division by a fraction is multiplication by its reciprocal; only then can common factors be cancelled in one pass.
+
+Rewrite as one product:
+
+$$\frac{3wv}{4u}\cdot\frac{2u^3w^2}{5}\cdot\frac{4v}{3u^2w^2}$$
+
+Each division has been replaced by multiplication by the flipped denominator.
+
+Cancel surviving powers:
+
+$$\frac{2 v^{2} w}{5}$$
+
+Track every letter exponent through the product before reading off the monomial.
+
+After every cancellation the surviving power of $v$ is $v^2$, so the printed right-hand side (missing that power) fails.""",
             ),
         ],
         overview=r"The LCD of three distinct linear denominators is their product. Subtracting reciprocal quadratics keeps both quadratic factors. A difference of reciprocal squares over $(z\pm 1)^2$ produces $4z/(z^2-1)^2$.",
@@ -1066,10 +1559,23 @@ $$(z+1)^2-(z-1)^2=\bigl((z+1)-(z-1)\bigr)\bigl((z+1)+(z-1)\bigr)=2\cdot 2z=4z.$$
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Squaring the sum $\dfrac{h}{k}+\dfrac{k}{h}$ for $hk\neq 0$ is said to equal $\dfrac{(h^2+k^2)^2}{h^2k^2}$.",
+                r"""For $s\neq 0$, $\dfrac{4(2s)}{(-2s)^2}=\dfrac{2}{s}$.""",
                 True,
-                r"""The square of a sum of swapped ratios is the square of the single cleared fraction. The inner sum is $\dfrac{h^2+k^2}{hk}$, so its square is
-$$\left(\frac{h}{k}+\frac{k}{h}\right)^2=\frac{(h^2+k^2)^2}{h^2k^2}.$$""",
+                r"""The quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-2s)^2$.
+
+Square the denominator:
+
+$$(-2s)^2=4s^2$$
+
+The denominator becomes a positive power of $s$.
+
+Reduce the quotient:
+
+$$\frac{2}{s}$$
+
+Cancel the common power of the variable against the numerator.
+
+The printed right-hand side matches the reduced quotient.""",
             ),
             (
                 r"Subtracting in the opposite order, $\dfrac{k}{h}-\dfrac{h}{k}$ for $hk\neq 0$ is claimed to equal $\dfrac{h^2-k^2}{hk}$.",
@@ -1108,11 +1614,29 @@ The claimed numerator $6v$ is half of the correct numerator.""",
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Clearing $\dfrac{1}{x+\dfrac{1}{x+\dfrac{1}{x}}}$ for $x\neq 0$ is said to equal $\dfrac{x^2+1}{x(x^2+2)}$.",
-                True,
-                r"""Innermost, $x+\dfrac{1}{x}=\dfrac{x^2+1}{x}$. Reciprocating and adding the outer $x$ gives
-$$x+\frac{x}{x^2+1}=\frac{x(x^2+2)}{x^2+1}.$$
-The outer reciprocal is $\dfrac{x^2+1}{x(x^2+2)}$.""",
+                r"""For $x\neq\pm 1$, $\dfrac{5x-1}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{3}{1-x}=\dfrac{6}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{3}{1-x}=\frac{3}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{5x-1}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{3}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{7 x + 5}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{7 x + 5}{x^{2} - 1}$, not $\dfrac{6}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Cancelling $\dfrac{u^3-125}{u-5}$ for $u\neq 5$ is recorded as $u^2+5u+25$, and at $u=0$ that remainder is said to match the original $25$.",
@@ -1129,11 +1653,35 @@ $$\frac{6}{t}+\frac{8}{u}=\frac{6u+8t}{tu}.$$
 Adding numerators over added denominators is not an identity.""",
             ),
             (
-                r"With $k\neq 0$ and $h\neq k$, someone writes $\dfrac{1+\dfrac{h}{k}}{1-\dfrac{h}{k}}=\dfrac{k-h}{k+h}$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8p^2b}{4x^2-16}}{\dfrac{4pb}{2x+4}}$ simplifies to $\dfrac{p}{x+2}$ for $x\neq\pm 2$ and $p,b\neq 0$.""",
                 False,
-                r"""The upper layer is $\dfrac{k+h}{k}$ and the lower layer is $\dfrac{k-h}{k}$, so the stack is
-$$\frac{k+h}{k-h}.$$
-The claimed ratio is the reciprocal of the correct simplification.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8p^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4pb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{p}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"On $w\neq 0$, expanding $\bigl(w-\dfrac{1}{w}\bigr)^2$ is recorded as $w^2-2+\dfrac{1}{w^2}$.",
@@ -1158,10 +1706,17 @@ $$\frac{t^4-1}{t^2-1}=t^2+1$$
 for $t\neq \pm 1$.""",
             ),
             (
-                r"Squaring the sum $\dfrac{1}{x}+\dfrac{1}{y}$ for $xy\neq 0$ is claimed to leave $\dfrac{1}{x^2}+\dfrac{1}{y^2}$.",
+                r"""Away from the zeros of $x^2-1$, the rational expression whose numerator is $1$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $1$ over $x-1$ and $1$ over $x+1$.""",
                 False,
-                r"""Binomial square of a sum always produces a doubled cross term in the expansion:
-$$\left(\frac{1}{x}+\frac{1}{y}\right)^2=\frac{1}{x^2}+\frac{2}{xy}+\frac{1}{y^2}.$$""",
+                r"""The verbal decomposition puts the full numerator $1$ on each partial fraction. Clear that difference and compare with $\dfrac{1}{x^2-1}$.
+
+Combine the printed partials:
+
+$$\frac{1}{x-1}-\frac{1}{x+1}=\frac{21}{x^2-1}$$
+
+The common denominator $(x-1)(x+1)$ doubles the intended numerator.
+
+Twice the intended numerator appears — the factor $\tfrac{1}{2}$ was omitted in the wording of each partial term.""",
             ),
             (
                 r"Subtracting $\dfrac{1}{(u-3)^2}-\dfrac{1}{(u+3)^2}$ produces $\dfrac{12u}{(u^2-9)^2}$ off $u=\pm 3$.",
@@ -1199,10 +1754,17 @@ $$\frac{\dfrac{t-3}{t}}{\dfrac{t+3}{t}}=\frac{t-3}{t+3}.$$
 The two listed forms are reciprocals of each other, not identical.""",
             ),
             (
-                r"Provided $u\neq 0,5$, collapsing $\dfrac{1-\dfrac{5}{u}}{1-\dfrac{1}{u}}$ is recorded as $\dfrac{u-5}{u-1}$.",
-                True,
-                r"""A compound fraction is cleared by writing each layer over the same inner denominator $u$:
-$$\frac{\dfrac{u-5}{u}}{\dfrac{u-1}{u}}=\frac{u-5}{u-1}.$$""",
+                r"""For $c,d\neq 0$ and $c\neq -d$, $\dfrac{8}{c}+\dfrac{3}{d}=\dfrac{8d+3c}{c+d}$.""",
+                False,
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $c+d$ instead of $cd$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{8}{c}+\frac{3}{d}=\frac{8d+3c}{cd}$$
+
+Only $cd$ is the common denominator for unrelated linear factors.
+
+The printed denominator $c+d$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"After cancelling $\dfrac{v^3-27}{v-3}$ for $v\neq 3$ as $v^2+3v+9$, a second rewriting $v^2-3v+9$ is treated as the same polynomial.",
@@ -1218,10 +1780,29 @@ The companion $v^2-3v+9$ is the sum-of-cubes factor of $\dfrac{v^3+27}{v+3}$, a 
 $$\frac{h}{k}+\frac{k}{h}+2=\frac{h^2+2hk+k^2}{hk}=\frac{(h+k)^2}{hk}.$$""",
             ),
             (
-                r"Clearing $\dfrac{1}{1+\dfrac{1}{w-1}}$ for $w\neq 0,1$ is said to leave $\dfrac{w-1}{w}$.",
-                True,
-                r"""A nested unit fraction is cleared from the inside by reciprocating each completed layer. The inner sum is $\dfrac{w}{w-1}$, so the reciprocal is
-$$\frac{1}{1+\dfrac{1}{w-1}}=\frac{w-1}{w}.$$""",
+                r"""For $x\neq\pm 1$, $\dfrac{7x-1}{x^2-1}-\dfrac{2}{1+x}+\dfrac{3}{x-1}-\dfrac{1}{1-x}=\dfrac{5}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{7x-1}{x^2-1}-\frac{2}{x+1}+\frac{3}{x-1}+\frac{1}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{9 x + 5}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{9 x + 5}{x^{2} - 1}$, not $\dfrac{5}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
         ],
         overview=r"Two candidate simplifications of a compound fraction need not be equal: one may be the reciprocal of the other. The plus combination $h/k+k/h+2$ really is $(h+k)^2/hk$; mixing a difference-of-cubes quadratic with a sum-of-cubes quadratic is not.",
@@ -1247,10 +1828,35 @@ $$\frac{7}{y}+\frac{3}{z}=\frac{7z+3y}{yz}.$$
 The claimed $\dfrac{10}{y+z}$ adds numerators over added denominators.""",
             ),
             (
-                r"After clearing $\dfrac{1}{1-\dfrac{1}{u}}$ for $u\neq 0,1$, a candidate reports $\dfrac{u}{u-1}$.",
-                True,
-                r"""A nested unit fraction is cleared from the inside by reciprocating each completed layer. The inner difference is $\dfrac{u-1}{u}$, so the reciprocal is
-$$\frac{1}{1-\dfrac{1}{u}}=\frac{u}{u-1}.$$""",
+                r"""The stacked quotient $\dfrac{\dfrac{8a^2b}{4x^2-16}}{\dfrac{4ab}{2x+4}}$ simplifies to $\dfrac{a}{x+2}$ for $x\neq\pm 2$ and $a,b\neq 0$.""",
+                False,
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8a^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4ab}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{a}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Whenever $x\neq 0$, $\bigl(1+\dfrac{1}{x}\bigr)^2$ is treated as $1+\dfrac{1}{x^2}$.",

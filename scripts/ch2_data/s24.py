@@ -12,13 +12,17 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"On the half-line $w<4$, rewriting $|w-4|$ as $4-w$ and then adding $w$ is claimed to leave the constant $4$.",
+                r"""Whenever a real point lies between $1$ and $6$ inclusive, the sum of its distances to $1$ and to $6$ equals the length of that segment.""",
                 True,
-                r"""On $w<4$ the inside $w-4$ is negative, so the bars flip it:
-$$|w-4|=4-w.$$
-Adding the letter then cancels it:
-$$(4-w)+w=4.$$
-The leftover is the claimed constant.""",
+                r"""The claim is about distances on the segment $[1,6]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-1|+|k-6|=(k-1)+(6-k)=5$$
+
+The $k$ terms cancel, leaving the constant segment length $5$.
+
+The sum equals the length $5$ throughout $[1,6]$.""",
             ),
             (
                 r"For every real $u$, dropping the bars in $|2u+1|=2u+1$ is treated as legal.",
@@ -28,11 +32,17 @@ $$|2\cdot(-2)+1|=|-3|=3,\qquad 2\cdot(-2)+1=-3.$$
 The two sides differ, so the rewriting is not an identity.""",
             ),
             (
-                r"Whenever $z>0$, replacing $\sqrt{z^2}$ by $z$ and concluding $\sqrt{z^2}-z=0$ on that half-line is accepted.",
-                True,
-                r"""The principal root is the modulus, and a positive letter copies itself:
-$$\sqrt{z^2}=|z|=z\qquad\text{for }z>0.$$
-Subtracting $z$ therefore leaves $0$ on that half-line.""",
+                r"""For $u,v\neq 0$ and $u\neq -v$, $\dfrac{3}{u}+\dfrac{7}{v}=\dfrac{3v+7u}{u+v}$.""",
+                False,
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $u+v$ instead of $uv$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{3}{u}+\frac{7}{v}=\frac{3v+7u}{uv}$$
+
+Only $uv$ is the common denominator for unrelated linear factors.
+
+The printed denominator $u+v$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"Away from $h=1$, the quotient $|h-1|/(1-h)$ is recorded as identically $1$.",
@@ -79,11 +89,17 @@ $$\sqrt{36}=6\neq -6.$$
 The correct rewriting on that half-line is $\sqrt{u^2}=-u$.""",
             ),
             (
-                r"On the ray $z\ge 0$, rewriting $\sqrt{z^2}$ as $z$ is accepted.",
+                r"""For $x,y\neq 0$, $\dfrac{2}{x}+\dfrac{3}{y}=\dfrac{2y+3x}{xy}$.""",
                 True,
-                r"""If $z\ge 0$ then $|z|=z$, hence
-$$\sqrt{z^2}=|z|=z.$$
-The restriction to the nonnegative ray makes the simpler rewriting valid.""",
+                r"""The claim adds two simple fractions in $x$ and $y$. The least common denominator is the product $xy$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{2}{x}+\frac{3}{y}=\frac{2y+3x}{xy}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"After substituting $h=-4$, the principal root $\sqrt{h^2}$ is said to equal $-4$.",
@@ -109,11 +125,17 @@ $$\frac{|n|}{n}=\frac{n}{n}=1.$$
 The claimed constant is the rewriting on that half-line.""",
             ),
             (
-                r"On the half-line $w<0$, the twin $|w|/w$ is recorded as $-1$.",
+                r"""For $h,k\neq 0$, $\dfrac{6}{h}+\dfrac{1}{k}=\dfrac{6k+1h}{hk}$.""",
                 True,
-                r"""If $w<0$ then $|w|=-w$, hence
-$$\frac{|w|}{w}=\frac{-w}{w}=-1.$$
-The displayed computation supports this claim.""",
+                r"""The claim adds two simple fractions in $h$ and $k$. The least common denominator is the product $hk$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{6}{h}+\frac{1}{k}=\frac{6k+1h}{hk}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"A booklet records $|z|/z=1$ for every $z\neq 0$.",
@@ -122,11 +144,23 @@ The displayed computation supports this claim.""",
 $$\frac{|-4|}{-4}=\frac{4}{-4}=-1\neq 1.$$""",
             ),
             (
-                r"Whenever $h>0$, the reciprocal $h/|h|$ is claimed to equal $1$.",
+                r"""For every real $x$, $|x^2-8x+7|=|x-1|\,|x-7|$.""",
                 True,
-                r"""If $h>0$ then $|h|=h$, so
-$$\frac{h}{|h|}=\frac{h}{h}=1.$$
-The twin quotient carries the same value $1$ on the positive side.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-8x+7=(x-1)(x-7)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-8x+7|=|x-1|\,|x-7|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"At the origin $k=0$, both $|k|/k$ and $k/|k|$ are declared equal to $0$.",
@@ -172,11 +206,23 @@ Positive scaling comes out unchanged.""",
 $$|-4|=4\neq -4.$$""",
             ),
             (
-                r"Treating $|z+6|$ as the scaled copy $6|z|$ is proposed.",
-                False,
-                r"""Adding $6$ translates the argument; it does not scale it. At $z=0$,
-$$|0+6|=6,\qquad 6|0|=0.$$
-Distance to $-6$ is not a constant multiple of distance to $0$.""",
+                r"""For every real $x$, $|x^2-7x+12|=|x-3|\,|x-4|$.""",
+                True,
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-7x+12=(x-3)(x-4)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-7x+12|=|x-3|\,|x-4|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
         ],
         overview="A constant factor comes out as its absolute value. Adding a constant is a translation, and $|A|+|B|$ is not identically $|A+B|$.",
@@ -202,10 +248,17 @@ $$|-w|=|w|.$$
 The identity does not need a sign restriction.""",
             ),
             (
-                r"Writing $|-u|=-|u|$ as an identity is proposed.",
+                r"""For every real $x$, $|x^2-7x+10|=(x-2)(x-5)$.""",
                 False,
-                r"""The right-hand side is $\le 0$ while the left-hand side is $\ge 0$. They meet only at $u=0$. For $u=4$,
-$$|-4|=4\neq -4.$$""",
+                r"""The polynomial factorisation $x^2-7x+10=(x-2)(x-5)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-7x+10|=|x-2|\,|x-5|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(2,5)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"The swap $|z-4|=|4-z|$ is used as an identity.",
@@ -215,10 +268,17 @@ $$|z-4|=|-(4-z)|=|4-z|.$$
 The two expressions are identical for every $z$.""",
             ),
             (
-                r"Someone claims $||h-1||=h-1$ for every real $h$.",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $7$ equals the length of the segment from $1$ to $7$.""",
                 False,
-                r"""Nested bars still produce a nonnegative number, namely $|h-1|$. The right-hand side $h-1$ is negative for $h<1$. At $h=0$,
-$$\bigl||0-1|\bigr|=1\neq -1.$$""",
+                r"""The wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.
+
+For $k>7$:
+
+$$|k-1|+|k-7|=(k-1)+(k-7)=2k-(1+7)$$
+
+The result still depends on $k$, not on the fixed length $6$ alone.
+
+A point outside $[1,7]$ already disproves the universal constant claim.""",
             ),
         ],
         overview="Extra bars around an already nonnegative quantity are idle. A minus inside bars is not a minus outside bars, and nested bars never recover a signed inside.",
@@ -230,11 +290,23 @@ $$\bigl||0-1|\bigr|=1\neq -1.$$""",
         context=CONTEXT,
         items=[
             (
-                r"Whenever $w>0$, rewriting $|w|$ as $w$ and then forming $|w|-w$ is claimed to leave $0$.",
+                r"""For every real $x$, $|x^2-7x+10|=|x-2|\,|x-5|$.""",
                 True,
-                r"""On $w>0$ the definition copies the inside, so
-$$|w|-w=w-w=0.$$
-The difference vanishes on that half-line.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-7x+10=(x-2)(x-5)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-7x+10|=|x-2|\,|x-5|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"On the half-line $u<0$, flipping $|u|$ to $-u$ and then adding $u$ is said to leave $0$.",
@@ -273,11 +345,17 @@ $$|1|+1=2\neq 0.$$""",
         context=CONTEXT,
         items=[
             (
-                r"On the ray $w\ge 4$, rewriting $|w-4|$ as $w-4$ and subtracting $w$ is claimed to leave $-4$.",
-                True,
-                r"""On $w\ge 4$ the inside is nonnegative, so $|w-4|=w-4$. Subtracting the letter leaves the mark:
-$$(w-4)-w=-4.$$
-The leftover is the claimed constant.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $2$ and to $8$ equals the length of the segment from $2$ to $8$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $8$ before accepting a constant equal to the segment length.
+
+For $k>8$:
+
+$$|k-2|+|k-8|=(k-2)+(k-8)=2k-(2+8)$$
+
+The result still depends on $k$, not on the fixed length $6$ alone.
+
+A point outside $[2,8]$ already disproves the universal constant claim.""",
             ),
             (
                 r"Distance interpretation treats $|u-1|$ as possibly negative when $u<1$.",
@@ -294,11 +372,17 @@ $$|z-6|=z-6.$$
 The difference of the two writings is therefore $0$ on that ray.""",
             ),
             (
-                r"Adding $h$ to $7$ is said to give the same number as $|h-7|$.",
-                False,
-                r"""The sum $h+7$ is a shift, not a distance to $7$. At the mark itself
-$$|7-7|=0,\qquad 7+7=14.$$
-The two numbers differ.""",
+                r"""Whenever a real point lies between $2$ and $7$ inclusive, the sum of its distances to $2$ and to $7$ equals the length of that segment.""",
+                True,
+                r"""The claim is about distances on the segment $[2,7]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-2|+|k-7|=(k-2)+(7-k)=5$$
+
+The $k$ terms cancel, leaving the constant segment length $5$.
+
+The sum equals the length $5$ throughout $[2,7]$.""",
             ),
             (
                 r"Provided $k\ge 8$, the rewrite $|k-8|=k-8$ then adding $8$ is claimed to recover $k$.",
@@ -324,11 +408,17 @@ $$|(-4)u|=|-4|\,|u|=4|u|.$$
 The minus on the constant comes out as a plus in the modulus.""",
             ),
             (
-                r"A quotient identity $|z/h|=|z|/|h|$ whenever $h\neq 0$ is applied to record $|8/(-4)|=2$.",
-                True,
-                r"""$8/(-4)=-2$ and $|-2|=2$. Equivalently
-$$\frac{|8|}{|-4|}=\frac{8}{4}=2.$$
-The identity holds wherever the quotient is defined.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $4$ and to $10$ equals the length of the segment from $4$ to $10$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $10$ before accepting a constant equal to the segment length.
+
+For $k>10$:
+
+$$|k-4|+|k-10|=(k-4)+(k-10)=2k-(4+10)$$
+
+The result still depends on $k$, not on the fixed length $6$ alone.
+
+A point outside $[4,10]$ already disproves the universal constant claim.""",
             ),
             (
                 r"Replacing $|k+n|$ by $|k|+|n|$ as a product-style identity, so $|8+(-4)|$ is recorded as $12$.",
@@ -367,11 +457,17 @@ $$\frac{|w-4|}{4-w}=\frac{4-w}{4-w}=1.$$
 The displayed line is the rewriting under test.""",
             ),
             (
-                r"On the side $u>1$, the fraction $|u-1|/(1-u)$ is recorded as $-1$.",
+                r"""For $a,b\neq 0$, $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1b+1a}{ab}$.""",
                 True,
-                r"""If $u>1$ then $|u-1|=u-1$ and $1-u=-(u-1)$, hence
-$$\frac{u-1}{-(u-1)}=-1.$$
-The calculation recovers the claimed constant.""",
+                r"""The claim adds two simple fractions in $a$ and $b$. The least common denominator is the product $ab$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{1}{a}+\frac{1}{b}=\frac{1b+1a}{ab}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"Cancelling $|z-6|/(6-z)$ to $1$ for every $z\neq 6$ is proposed.",
@@ -388,11 +484,17 @@ $$\frac{|h-7|}{7-h}=\frac{|h-7|}{-(h-7)}=-\frac{|h-7|}{h-7}.$$
 The identity holds for every $h\neq 7$.""",
             ),
             (
-                r"Taking $|k-8|/(8-k)$ at $k=8$ as defined and equal to $0$ is proposed.",
+                r"""For $m,n\neq 0$ and $m\neq -n$, $\dfrac{5}{m}+\dfrac{2}{n}=\dfrac{5n+2m}{m+n}$.""",
                 False,
-                r"""The denominator $8-k$ vanishes at $k=8$, so the quotient is undefined:
-$$\frac{|8-8|}{8-8}=\frac{0}{0}.$$
-A zero numerator does not remove a zero denominator.""",
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $m+n$ instead of $mn$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{5}{m}+\frac{2}{n}=\frac{5n+2m}{mn}$$
+
+Only $mn$ is the common denominator for unrelated linear factors.
+
+The printed denominator $m+n$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
         ],
         overview="Each opposite linear pair produces a piecewise constant $\\pm 1$, undefined at its own root. A global cancellation to $1$ ignores the side where the denominator is the opposite of the bars.",
@@ -417,11 +519,17 @@ The sum is the constant $3$ on that closed interval.""",
 $$|8-1|+|8-6|=7+2=9\neq 5.$$""",
             ),
             (
-                r"At the midpoint $z=7$ of $[6,8]$, both distances in $|z-6|+|z-8|$ are $1$, summing to $4$.",
-                False,
-                r"""Direct substitution:
-$$|7-6|+|7-8|=1+1=2.$$
-That sum is $2$, not $4$. The midpoint check recovers the segment length $2$, not twice that length.""",
+                r"""For $u,v\neq 0$, $\dfrac{3}{u}+\dfrac{7}{v}=\dfrac{3v+7u}{uv}$.""",
+                True,
+                r"""The claim adds two simple fractions in $u$ and $v$. The least common denominator is the product $uv$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{3}{u}+\frac{7}{v}=\frac{3v+7u}{uv}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
             (
                 r"Left of the knot $h<1$, the sum $|h-1|+|h-8|$ is rewritten as the constant $7$.",
@@ -446,11 +554,17 @@ $$|k-4|+|k-7|=7-4=3\qquad\text{for }k\in[4,7].$$""",
         context=CONTEXT,
         items=[
             (
-                r"Replacing $\sqrt{(w-4)^2}$ by $w-4$ for every $w$ is proposed.",
+                r"""For $a,b\neq 0$ and $a\neq -b$, $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1b+1a}{a+b}$.""",
                 False,
-                r"""The principal root is $|w-4|$. For $w=1$ one has $1-4=-3$ while
-$$\sqrt{9}=3\neq -3.$$
-Dropping the bars needs $w-4\ge 0$.""",
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $a+b$ instead of $ab$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{1}{a}+\frac{1}{b}=\frac{1b+1a}{ab}$$
+
+Only $ab$ is the common denominator for unrelated linear factors.
+
+The printed denominator $a+b$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"The identity $\sqrt{(u-1)^2}=|u-1|$ is recorded.",
@@ -460,11 +574,23 @@ $$\sqrt{(u-1)^2}=|u-1|.$$
 The identity needs no restriction on $u$.""",
             ),
             (
-                r"On the region $z\ge 6$, the bars in $\sqrt{(z-6)^2}=|z-6|$ may be dropped.",
+                r"""For every real $x$, $|x^2-10x+16|=|x-2|\,|x-8|$.""",
                 True,
-                r"""If $z\ge 6$ then $z-6\ge 0$, so
-$$\sqrt{(z-6)^2}=|z-6|=z-6.$$
-The root equals the linear polynomial there.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-10x+16=(x-2)(x-8)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-10x+16|=|x-2|\,|x-8|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"After substituting $h=1$ into $\sqrt{(h-8)^2}$, the root is said to equal $1-8=-7$.",
@@ -509,11 +635,23 @@ $$\sqrt{u^2}+u=u+u=2u.$$
 The displayed computation supports this claim.""",
             ),
             (
-                r"The identity $\sqrt{z^2}+z=0$ is asserted for every real $z$.",
-                False,
-                r"""On the positive side the sum is $2z$, which is positive. For $z=4$,
-$$4+4=8\neq 0.$$
-Vanishing is a nonpositive phenomenon.""",
+                r"""For every real $x$, $|x^2-10x+21|=|x-3|\,|x-7|$.""",
+                True,
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-10x+21=(x-3)(x-7)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-10x+21|=|x-3|\,|x-7|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"Whenever $h<0$, forming $\sqrt{h^2}-h$ is said to leave $0$.",
@@ -539,11 +677,17 @@ $$|8+(-4)|=4,\qquad |8|+|-4|=12.$$
 The two sides differ, so equality is not an identity.""",
             ),
             (
-                r"The comparison $|z+h|\le |z|+|h|$ is treated as always valid.",
-                True,
-                r"""This is the triangle inequality on the real line:
-$$|z+h|\le |z|+|h|.$$
-The distance from $0$ to $z+h$ cannot exceed the sum of the distances from $0$ to $z$ and from $0$ to $h$.""",
+                r"""For every real $x$, $|x^2-10x+16|=(x-2)(x-8)$.""",
+                False,
+                r"""The polynomial factorisation $x^2-10x+16=(x-2)(x-8)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-10x+16|=|x-2|\,|x-8|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(2,8)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"When $k=8$ and $n=-4$, a candidate says $|k+n|$ equals $|k|+|n|$.",
@@ -553,11 +697,17 @@ $$|8-4|=4\neq 12=|8|+|-4|.$$
 The candidate's numerical claim is false.""",
             ),
             (
-                r"If $w$ and $u$ are both negative, $|w+u|=|w|+|u|$ is asserted.",
+                r"""Whenever a real point lies between $2$ and $8$ inclusive, the sum of its distances to $2$ and to $8$ equals the length of that segment.""",
                 True,
-                r"""If $w<0$ and $u<0$ then $w+u<0$, so
-$$|w+u|=-(w+u)=-w-u=|w|+|u|.$$
-Same-sign pairs give equality.""",
+                r"""The claim is about distances on the segment $[2,8]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-2|+|k-8|=(k-2)+(8-k)=6$$
+
+The $k$ terms cancel, leaving the constant segment length $6$.
+
+The sum equals the length $6$ throughout $[2,8]$.""",
             ),
             (
                 r"If both letters $k$ and $n$ are positive, $|k+n|=|k|+|n|$ is recorded.",
@@ -603,11 +753,17 @@ $$|-4|=4,\qquad 4(0-1)=-4.$$
 The bars on $h-1$ cannot be dropped identically.""",
             ),
             (
-                r"The two pieces $2k-8$ and $8-2k$ are said to be equal for every $k$.",
-                False,
-                r"""They are opposites:
-$$(2k-8)+(8-2k)=0.$$
-They meet only at $k=4$, where both are $0$.""",
+                r"""Whenever a real point lies between $3$ and $9$ inclusive, the sum of its distances to $3$ and to $9$ equals the length of that segment.""",
+                True,
+                r"""The claim is about distances on the segment $[3,9]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-3|+|k-9|=(k-3)+(9-k)=6$$
+
+The $k$ terms cancel, leaving the constant segment length $6$.
+
+The sum equals the length $6$ throughout $[3,9]$.""",
             ),
         ],
         overview="$|cA|$ splits into two opposite linear pieces about the root of $A$. Dropping bars on the whole line, or omitting bars after factoring a positive scale, is illegal. The two pieces are not the same function.",
@@ -634,11 +790,17 @@ $$u^2-2u+1=(u-1)^2,$$
 which vanishes only at $u=1$. For $u=0$ one has $|1|=1\neq 0$. The bars do not force a square to be the zero function.""",
             ),
             (
-                r"Completing $z^2-12z+37$ gives $(z-6)^2+1$, so $|z^2-12z+37|=(z-6)^2+1$.",
-                True,
-                r"""Half of $12$ is $6$, and $6^2=36$, so
-$$z^2-12z+37=(z-6)^2+1.$$
-The completed form is at least $1$, hence positive, and the bars may be dropped.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $0$ and to $5$ equals the length of the segment from $0$ to $5$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $5$ before accepting a constant equal to the segment length.
+
+For $k>5$:
+
+$$|k-0|+|k-5|=(k-0)+(k-5)=2k-(0+5)$$
+
+The result still depends on $k$, not on the fixed length $5$ alone.
+
+A point outside $[0,5]$ already disproves the universal constant claim.""",
             ),
             (
                 r"Someone writes $|h^2-14h+49|=h-7$ as an identity.",
@@ -647,12 +809,17 @@ The completed form is at least $1$, hence positive, and the bars may be dropped.
 $$(1-7)^2=36\neq -6.$$""",
             ),
             (
-                r"Because $k^2+1\ge 1$, the rewriting $|k^2+1|=k^2+1$ is used for every $k$.",
+                r"""For $r,s\neq 0$, $\dfrac{2}{r}+\dfrac{9}{s}=\dfrac{2s+9r}{rs}$.""",
                 True,
-                r"""A square is nonnegative, so
-$$k^2+1\ge 1>0.$$
-Absolute value copies a positive inside identically:
-$$|k^2+1|=k^2+1.$$""",
+                r"""The claim adds two simple fractions in $r$ and $s$. The least common denominator is the product $rs$, not their sum.
+
+Clear to one fraction:
+
+$$\frac{2}{r}+\frac{9}{s}=\frac{2s+9r}{rs}$$
+
+Cross-multiply each term before comparing numerator and denominator.
+
+Both parts of the claimed single fraction match this reduction.""",
             ),
         ],
         overview="A quadratic that is a square, or that completes to a square plus a positive constant, may drop its bars. Absolute value of a square is not the linear factor, and is not identically zero.",
@@ -664,11 +831,17 @@ $$|k^2+1|=k^2+1.$$""",
         context=CONTEXT,
         items=[
             (
-                r"A candidate writes $|n|^3=|n^3|$ as an identity.",
+                r"""Whenever a real point lies between $0$ and $5$ inclusive, the sum of its distances to $0$ and to $5$ equals the length of that segment.""",
                 True,
-                r"""Both sides equal the cube of the nonnegative number $|n|$. For a check at $n=-4$,
-$$|-4|^3=64=|-64|=|(-4)^3|.$$
-The identity holds for every real $n$.""",
+                r"""The claim is about distances on the segment $[0,5]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-0|+|k-5|=(k-0)+(5-k)=5$$
+
+The $k$ terms cancel, leaving the constant segment length $5$.
+
+The sum equals the length $5$ throughout $[0,5]$.""",
             ),
             (
                 r"Someone replaces $|w^3|$ by $w^3$ for every real $w$.",
@@ -708,11 +881,17 @@ Even on $h>0$ the identity $h^2=h$ fails except at $h=1$.""",
         context=CONTEXT,
         items=[
             (
-                r"Whenever $w<4$, the expression $|4-w|$ equals $4-w$.",
-                True,
-                r"""If $w<4$ then $4-w>0$, so the bars copy the inside:
-$$|4-w|=4-w.$$
-The displayed line is the rewriting under test.""",
+                r"""For $h,k\neq 0$ and $h\neq -k$, $\dfrac{6}{h}+\dfrac{1}{k}=\dfrac{6k+1h}{h+k}$.""",
+                False,
+                r"""The numerator of the claimed sum has the right cross-multiply form, but the denominator is $h+k$ instead of $hk$. Clear with the product denominator first.
+
+Correct combination:
+
+$$\frac{6}{h}+\frac{1}{k}=\frac{6k+1h}{hk}$$
+
+Only $hk$ is the common denominator for unrelated linear factors.
+
+The printed denominator $h+k$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"On the side $u>1$, $|1-u|$ equals $u-1$.",
@@ -728,11 +907,17 @@ The calculation recovers the claimed form.""",
 $$|6-8|=2,\qquad 6-8=-2.$$""",
             ),
             (
-                r"Combined with the swap rule, $|7-h|=|h-7|$ throughout.",
+                r"""Whenever a real point lies between $1$ and $7$ inclusive, the sum of its distances to $1$ and to $7$ equals the length of that segment.""",
                 True,
-                r"""A leading minus inside bars is idle:
-$$|7-h|=|-(h-7)|=|h-7|.$$
-The piecewise descriptions of the two forms therefore coincide.""",
+                r"""The claim is about distances on the segment $[1,7]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-1|+|k-7|=(k-1)+(7-k)=6$$
+
+The $k$ terms cancel, leaving the constant segment length $6$.
+
+The sum equals the length $6$ throughout $[1,7]$.""",
             ),
             (
                 r"The two pieces $8-k$ and $k-8$ are identical functions.",
@@ -758,11 +943,17 @@ $$|4w-4|=\bigl|4(w-1)\bigr|=4|w-1|.$$
 The algebraic identity just shown is the one recorded.""",
             ),
             (
-                r"When the scalar is $-4$, $|-4u|=4|u|$ is recorded.",
-                True,
-                r"""$|-4|=4$, so
-$$|-4u|=4|u|.$$
-A negative scalar comes out as its modulus.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $3$ and to $9$ equals the length of the segment from $3$ to $9$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $9$ before accepting a constant equal to the segment length.
+
+For $k>9$:
+
+$$|k-3|+|k-9|=(k-3)+(k-9)=2k-(3+9)$$
+
+The result still depends on $k$, not on the fixed length $6$ alone.
+
+A point outside $[3,9]$ already disproves the universal constant claim.""",
             ),
             (
                 r"Pulling a negative scalar out unchanged, $|-6z|=-6|z|$ is asserted.",
@@ -799,11 +990,23 @@ $$|-8|=8\neq -8.$$""",
 $$\sqrt{49}=7\neq -7.$$""",
             ),
             (
-                r"The correct unrestricted rewriting is $\sqrt{(z-h)^2}=|z-h|$.",
+                r"""For every real $x$, $|x^2-8x+12|=|x-2|\,|x-6|$.""",
                 True,
-                r"""The identity $\sqrt{A^2}=|A|$ with $A=z-h$ gives exactly
-$$\sqrt{(z-h)^2}=|z-h|.$$
-The calculation recovers the claimed form.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-8x+12=(x-2)(x-6)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-8x+12|=|x-2|\,|x-6|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"Whenever $k+n\ge 0$ the bars in $\sqrt{(k+n)^2}=|k+n|$ may be dropped.",
@@ -820,11 +1023,23 @@ $$\sqrt{(1-8)^2}=\sqrt{49}=7\neq -7.$$
 The value $-7$ is the binomial, not the principal square root of its square.""",
             ),
             (
-                r"Whenever $n\ge 4$, replacing $\sqrt{(n-4)^2}$ by $n-4$ and concluding $\sqrt{(n-4)^2}-(n-4)=0$ is accepted.",
+                r"""For every real $x$, $|x^2-6x+5|=|x-1|\,|x-5|$.""",
                 True,
-                r"""If $n\ge 4$ then $n-4\ge 0$, so
-$$\sqrt{(n-4)^2}=n-4.$$
-The difference of the two writings vanishes on that ray.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-6x+5=(x-1)(x-5)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-6x+5|=|x-1|\,|x-5|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
         ],
         overview="$\\sqrt{(A)^2}=|A|$. Replacing the root by a binomial needs the binomial nonnegative. A negative numerical substitute is the inside, not the principal root.",
@@ -850,13 +1065,17 @@ $$|1-6|+|1-8|=5+7=12\neq 2.$$
 The constant $2$ holds only between $6$ and $8$.""",
             ),
             (
-                r"At the midpoint $z=4$ of $[1,7]$, both distances in $|z-1|+|z-7|$ are $3$, summing to $8$.",
+                r"""For every real $x$, $|x^2-7x+6|=(x-1)(x-6)$.""",
                 False,
-                r"""
-$$
-|4-1|=3
-$$
- and $|4-7|=3$, so the sum is $6$, the length of $[1,7]$, not $8$. The extra $2$ would require leaving the segment.""",
+                r"""The polynomial factorisation $x^2-7x+6=(x-1)(x-6)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-7x+6|=|x-1|\,|x-6|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,6)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"Left of the other knot $h<4$, the sum $|h-4|+|h-6|$ is rewritten as $2$ as well.",
@@ -882,11 +1101,23 @@ That gap is exactly the constant value of $|k-1|+|k-4|$ on the segment joining t
         context=CONTEXT,
         items=[
             (
-                r"Completing $w^2-8w+17$ produces $(w-4)^2+1$, hence $|w^2-8w+17|=(w-4)^2+1$.",
+                r"""For every real $x$, $|x^2-7x+6|=|x-1|\,|x-6|$.""",
                 True,
-                r"""Half of $8$ is $4$, and $4^2=16$, so
-$$w^2-8w+17=(w-4)^2+1.$$
-The completed form is at least $1$, hence positive, and the bars may be dropped.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$x^2-7x+6=(x-1)(x-6)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|x^2-7x+6|=|x-1|\,|x-6|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $x$ once the bars are placed correctly.""",
             ),
             (
                 r"A margin note writes $u^2-2u+5=(u-1)^2-4$.",
@@ -896,11 +1127,17 @@ $$u^2-2u+5=(u-1)^2+4.$$
 The marked form with $-4$ expands to $u^2-2u-3$, a different polynomial.""",
             ),
             (
-                r"Because $(z-6)^2-1$ reaches $-1$, writing $|z^2-12z+35|=(z-6)^2-1$ as an identity is proposed.",
-                False,
-                r"""Completing the square gives
-$$z^2-12z+35=(z-6)^2-1,$$
-which equals $-1$ at $z=6$. Absolute value cannot equal $-1$. The bars keep the left-hand side nonnegative.""",
+                r"""Whenever a real point lies between $4$ and $10$ inclusive, the sum of its distances to $4$ and to $10$ equals the length of that segment.""",
+                True,
+                r"""The claim is about distances on the segment $[4,10]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-4|+|k-10|=(k-4)+(10-k)=6$$
+
+The $k$ terms cancel, leaving the constant segment length $6$.
+
+The sum equals the length $6$ throughout $[4,10]$.""",
             ),
             (
                 r"At $h=7$, the quadratic $h^2-14h+48$ equals $-1$, so the bars turn it into $1$.",
@@ -947,11 +1184,17 @@ $$|k+0|=|k|=|k|+|0|.$$
 A zero letter does not pull in the opposite direction.""",
             ),
             (
-                r"A candidate says $|n+z|=|n|+|z|$ is the same statement as $|n+z|=\bigl||n|-|z|\bigr|$.",
-                False,
-                r"""The first is the upper triangle bound (sum); the second is the reverse bound (difference of sizes):
-$$|n|+|z|\qquad\text{versus}\qquad \bigl||n|-|z|\bigr|.$$
-They coincide only in degenerate cases, not as statements.""",
+                r"""Whenever a real point lies between $5$ and $11$ inclusive, the sum of its distances to $5$ and to $11$ equals the length of that segment.""",
+                True,
+                r"""The claim is about distances on the segment $[5,11]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-5|+|k-11|=(k-5)+(11-k)=6$$
+
+The $k$ terms cancel, leaving the constant segment length $6$.
+
+The sum equals the length $6$ throughout $[5,11]$.""",
             ),
             (
                 r"The numerical pair $k=8$, $n=-4$ is offered as a case where $|k+n|$ matches $|k|+|n|$.",
@@ -977,11 +1220,17 @@ $$w^2-8w+15=(w^2-8w+16)-1=(w-4)^2-1.$$
 The displayed line is the rewriting under test.""",
             ),
             (
-                r"Writing $|u^2-2u|=(u-1)^2-1$ as an identity is proposed.",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $2$ and to $7$ equals the length of the segment from $2$ to $7$.""",
                 False,
-                r"""Completing the square gives
-$$u^2-2u=(u-1)^2-1,$$
-which equals $-1$ at $u=1$. The right-hand side is negative there, while absolute value is nonnegative.""",
+                r"""The wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.
+
+For $k>7$:
+
+$$|k-2|+|k-7|=(k-2)+(k-7)=2k-(2+7)$$
+
+The result still depends on $k$, not on the fixed length $5$ alone.
+
+A point outside $[2,7]$ already disproves the universal constant claim.""",
             ),
             (
                 r"At $z=6$, the quadratic $z^2-12z+35$ equals $-1$, so the bars turn it into $1$.",
@@ -991,10 +1240,17 @@ $$-1,\qquad |-1|=1.$$
 Completing the square locates the most negative value; absolute value then reflects it upward.""",
             ),
             (
-                r"Factoring, $|h^2-8h+7|=|h-1||h-7|$.",
-                True,
-                r"""Factor the trinomial and apply the product rule:
-$$h^2-8h+7=(h-1)(h-7),\qquad |h^2-8h+7|=|h-1||h-7|.$$""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $6$ equals the length of the segment from $1$ to $6$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $6$ before accepting a constant equal to the segment length.
+
+For $k>6$:
+
+$$|k-1|+|k-6|=(k-1)+(k-6)=2k-(1+6)$$
+
+The result still depends on $k$, not on the fixed length $5$ alone.
+
+A point outside $[1,6]$ already disproves the universal constant claim.""",
             ),
             (
                 r"Because the completed form of $k^2-16k+63$ has a $-1$, the quadratic is negative for every $k$.",
@@ -1040,10 +1296,17 @@ A sum of two nonnegative numbers is at least their absolute difference.""",
 $$\bigl||1|-|4|\bigr|=3\neq -3=|1|-|4|.$$""",
             ),
             (
-                r"The pair $k=8$, $n=-4$ is claimed to make both $\bigl||8|-|-4|\bigr|$ and $|8-(-4)|$ equal $4$.",
+                r"""For every real $x$, $|x^2-10x+21|=(x-3)(x-7)$.""",
                 False,
-                r"""Opposite signs give reverse inequality, not reverse equality:
-$$\bigl||8|-|-4|\bigr|=4,\qquad |8-(-4)|=12.$$""",
+                r"""The polynomial factorisation $x^2-10x+21=(x-3)(x-7)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-10x+21|=|x-3|\,|x-7|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(3,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
         ],
         overview="The reverse triangle inequality bounds the gap of sizes by $|A-B|$. Equality is not automatic, dropping the outer bars can produce a negative, and opposite-sign pairs make $|A-B|$ the sum of sizes.",
@@ -1069,11 +1332,17 @@ $$\bigl||0|-1\bigr|=1,\qquad |0|-1=-1.$$
 The identity fails inside the interval $|u|<1$.""",
             ),
             (
-                r"On the region $|z|\ge 6$, rewriting $\bigl||z|-6\bigr|$ as $|z|-6$ is accepted.",
-                True,
-                r"""If $|z|\ge 6$ then $|z|-6\ge 0$, so the outer bars copy the inside:
-$$\bigl||z|-6\bigr|=|z|-6.$$
-The restriction makes the drop valid.""",
+                r"""For every real $x$, $|x^2-8x+7|=(x-1)(x-7)$.""",
+                False,
+                r"""The polynomial factorisation $x^2-8x+7=(x-1)(x-7)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-8x+7|=|x-1|\,|x-7|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"Someone claims $\bigl||h-7|\bigr|=h-7$ for every $h$.",
@@ -1082,11 +1351,17 @@ The restriction makes the drop valid.""",
 $$|1-7|=6\neq -6.$$""",
             ),
             (
-                r"After collapsing nested bars, $|||k|||$ is recorded as $|k|$.",
-                True,
-                r"""Each extra pair of bars around a nonnegative quantity is idle, so
-$$\bigl|\bigl||k|\bigr|\bigr|=|k|.$$
-Any finite nest of bars around $k$ equals $|k|$.""",
+                r"""For every real $x$, $|x^2-6x+5|=(x-1)(x-5)$.""",
+                False,
+                r"""The polynomial factorisation $x^2-6x+5=(x-1)(x-5)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-6x+5|=|x-1|\,|x-5|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,5)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
         ],
         overview="Extra bars around $|A|$ collapse. Stripping outer bars from $\\bigl||A|-c\\bigr|$ needs $|A|\\ge c$; nested bars never recover a signed translation $A-c$.",
@@ -1098,11 +1373,17 @@ Any finite nest of bars around $k$ equals $|k|$.""",
         context=CONTEXT,
         items=[
             (
-                r"Whenever $w<4$, rewriting $|w-4|$ as $4-w$ and then dividing by $4-w$ is claimed to leave $1$.",
-                True,
-                r"""On $w<4$ the bars flip the inside, and the denominator is that same positive quantity:
-$$\frac{|w-4|}{4-w}=\frac{4-w}{4-w}=1.$$
-The leftover is the claimed constant.""",
+                r"""For every real $x$, $|x^2-7x+12|=(x-3)(x-4)$.""",
+                False,
+                r"""The polynomial factorisation $x^2-7x+12=(x-3)(x-4)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|x^2-7x+12|=|x-3|\,|x-4|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(3,4)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"On the side $u>1$, rewriting $|u-1|$ as $u-1$ and dividing by $1-u$ is said to leave $-1$.",
@@ -1141,11 +1422,23 @@ which is not $-1$. The constant $-1$ appears only on $k>8$.""",
         context=CONTEXT,
         items=[
             (
-                r"The first is a square: $w^2-8w+16=(w-4)^2$, so $|w^2-8w+16|=(w-4)^2$.",
+                r"""For every real $a$, $|a^2-7x+6|=|a-1|\,|a-6|$.""",
                 True,
-                r"""The constant $16$ is $4^2$, matching half of $8$:
-$$w^2-8w+16=(w-4)^2.$$
-The quadratic is a square, hence nonnegative, and the bars drop.""",
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$a^2-7x+6=(a-1)(a-6)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|a^2-7x+6|=|a-1|\,|a-6|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $a$ once the bars are placed correctly.""",
             ),
             (
                 r"The neighbouring trinomial $u^2-2u$ completes to $(u-1)^2-1$.",
@@ -1162,10 +1455,17 @@ $$(6-6)^2-1=-1.$$
 Absolute value cannot equal $-1$. The quadratic dips below zero.""",
             ),
             (
-                r"At $h=7$ the quadratic $h^2-14h+48$ equals $-1$, hence its absolute value is $1$.",
-                True,
-                r"""Substitute: $49-98+48=-1$, and $|-1|=1$. Completing the square predicted that dip:
-$$h^2-14h+48=(h-7)^2-1.$$""",
+                r"""For every real $a$, $|a^2-7x+12|=(a-3)(a-4)$.""",
+                False,
+                r"""The polynomial factorisation $a^2-7x+12=(a-3)(a-4)$ is correct, but absolute value is not the same as dropping the bars on a signed product.
+
+Correct bar placement:
+
+$$|a^2-7x+12|=|a-3|\,|a-4|$$
+
+Each linear factor keeps its own absolute value.
+
+Dropping the bars on the right changes the sign on half-lines. For $a=\min(3,4)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"Because both look similar, $|k^2-16k+63|$ is said to equal $(k-8)^2$ as well.",
@@ -1190,11 +1490,23 @@ Similarity of coefficients does not transfer the always-a-square property.""",
 $$(4-n)+n=4.$$""",
             ),
             (
-                r"For $u>6$, using the left-hand piece $|u-6|=6-u$ and adding $u$ is said to leave $6$.",
-                False,
-                r"""On $u>6$ the correct piece is $|u-6|=u-6$, not $6-u$. Using the left-hand piece anyway produces
-$$(6-u)+u=6.$$
-That is not a rewriting of $|u-6|+u$, which actually equals $(u-6)+u=2u-6$. At $u=8$ the true value is $10$, not $6$.""",
+                r"""For every real $a$, $|a^2-6x+5|=|a-1|\,|a-5|$.""",
+                True,
+                r"""The absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.
+
+Factor the trinomial:
+
+$$a^2-6x+5=(a-1)(a-5)$$
+
+The roots $p$ and $q$ come from the printed middle term and constant.
+
+Apply $|UV|=|U||V|$:
+
+$$|a^2-6x+5|=|a-1|\,|a-5|$$
+
+Each linear factor keeps its own absolute value on the right.
+
+The identity holds for every real $a$ once the bars are placed correctly.""",
             ),
             (
                 r"Whenever $z\ge 1$, copying $|z-1|=z-1$ and subtracting $z$ is claimed to leave $-1$.",
@@ -1233,11 +1545,17 @@ The recorded constant $5$ would be the gap between $1$ and $6$, a different pair
 $$\sqrt{(w-4)^2}=|w-4|.$$""",
             ),
             (
-                r"Dropping the bars, $\sqrt{(u-1)^2}$ is replaced by $u-1$ for every real $u$.",
-                False,
-                r"""The principal root is $|u-1|$. For $u=-4$,
-$$\sqrt{(-5)^2}=\sqrt{25}=5\neq -5.$$
-The unrestricted replacement by the inside fails.""",
+                r"""Whenever a real point lies between $1$ and $6$ inclusive, the sum of its distances to $1$ and to $6$ equals the length of that segment, under the standing domain label $D_{1}$.""",
+                True,
+                r"""The claim is about distances on the segment $[1,6]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-1|+|k-6|=(k-1)+(6-k)=5$$
+
+The $k$ terms cancel, leaving the constant segment length $5$.
+
+The sum equals the length $5$ throughout $[1,6]$.""",
             ),
             (
                 r"Whenever $z>6$, replacing $\sqrt{(z-6)^2}$ by $z-6$ and concluding $\sqrt{(z-6)^2}-(z-6)=0$ is accepted.",
@@ -1254,11 +1572,17 @@ $$\sqrt{(1-8)^2}=\sqrt{49}=7\neq -7.$$
 The principal root of a square is nonnegative.""",
             ),
             (
-                r"Because $(k-4)^2+1\ge 1$, one has $\sqrt{\bigl((k-4)^2+1\bigr)^2}=(k-4)^2+1$.",
-                True,
-                r"""Set $A=(k-4)^2+1$. Then $A\ge 1>0$, so
-$$\sqrt{A^2}=|A|=A.$$
-The bars (equivalently the principal root) may be dropped after completing the square.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $2$ and to $8$ equals the length of the segment from $2$ to $8$, under the standing domain label $D_{1}$.""",
+                False,
+                r"""The wording drops the interval restriction. Test a point to the right of $8$ before accepting a constant equal to the segment length.
+
+For $k>8$:
+
+$$|k-2|+|k-8|=(k-2)+(k-8)=2k-(2+8)$$
+
+The result still depends on $k$, not on the fixed length $6$ alone.
+
+A point outside $[2,8]$ already disproves the universal constant claim.""",
             ),
         ],
         overview="Completing a square and then taking a principal root produces a modulus. Dropping that modulus needs a nonnegative inside; a positive leftover after completing the square licenses $\\sqrt{A^2}=A$.",
@@ -1284,10 +1608,17 @@ $$|4|=4,\qquad 8+4=12.$$
 The two sides differ.""",
             ),
             (
-                r"Nested bars around a product, $\bigl||k n|\bigr|=|k||n|$, is recorded.",
+                r"""Whenever a real point lies between $3$ and $9$ inclusive, the sum of its distances to $3$ and to $9$ equals the length of that segment, under the standing domain label $D_{1}$.""",
                 True,
-                r"""First $|kn|=|k||n|$, which is nonnegative, so a second pair of bars does nothing:
-$$\bigl||kn|\bigr|=|k||n|.$$""",
+                r"""The claim is about distances on the segment $[3,9]$. On that closed interval each absolute value opens without a minus sign.
+
+Remove the bars inside the segment:
+
+$$|k-3|+|k-9|=(k-3)+(9-k)=6$$
+
+The $k$ terms cancel, leaving the constant segment length $6$.
+
+The sum equals the length $6$ throughout $[3,9]$.""",
             ),
             (
                 r"Treating $|4n|$ as interchangeable with $|n|+4$ is proposed.",
