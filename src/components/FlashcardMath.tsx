@@ -156,7 +156,7 @@ function looksLikeMathInner(inner: string): boolean {
   // "exists" / "for".
   const withoutCmds = t.replace(/\\[a-zA-Z]+/g, " ");
   if (
-    /\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
+    /\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|is|are|was|be|if|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
       withoutCmds,
     )
   ) {
