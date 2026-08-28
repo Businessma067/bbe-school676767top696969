@@ -534,7 +534,51 @@ def wrap_math(text: str) -> str:
     s = re.sub(r"\$\\le (?=\d)", r"$\\le$ $", s)
     s = re.sub(r"\$\\ge (?=\d)", r"$\\ge$ $", s)
     s = re.sub(r" {2,}", " ", s)
-    return s
+    return escape_currency_outside_math(s)
+
+
+def escape_currency_outside_math(text: str) -> str:
+    """Write `$60` as `\\$60` outside KaTeX spans so prose like `$60 is $100` won't merge."""
+    if not text or "$" not in text:
+        return text
+
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        if text[i] == "$" and (i == 0 or text[i - 1] != "\\"):
+            if text.startswith("$$", i):
+                j = text.find("$$", i + 2)
+                if j != -1:
+                    out.append(text[i : j + 2])
+                    i = j + 2
+                    continue
+            cur = CURRENCY_RE.match(text, i)
+            if cur:
+                out.append("\\" + cur.group(0))
+                i += len(cur.group(0))
+                continue
+            j = i + 1
+            while j < n:
+                if text[j] == "$" and text[j - 1] != "\\":
+                    break
+                j += 1
+            if j < n:
+                inner = text[i + 1 : j].strip()
+                if (
+                    worth_wrapping(inner)
+                    or "\\" in inner
+                    or "dfrac" in inner
+                    or "sqrt" in inner
+                    or "frac" in inner
+                    or re.search(r"[≤≥≠∪_^]", inner)
+                ):
+                    out.append(text[i : j + 1])
+                    i = j + 1
+                    continue
+        out.append(text[i])
+        i += 1
+    return "".join(out)
 
 
 def wrap_statement(text: str) -> str:
@@ -614,7 +658,13 @@ def _self_test() -> None:
         ),
         (wrap_math("It's tempting to think"), []),
         (wrap_math("Keep the non-negative regions"), []),
-        (wrap_math("A bill is $400, but wants $250 or less."), ["$400", "$250"]),
+        (wrap_math("A bill is $400, but wants $250 or less."), [r"\$400", r"\$250"]),
+        (
+            wrap_math(
+                "The maximum original price that keeps the final price at or under $60 is $100."
+            ),
+            [r"\$60", r"\$100", "!$60 is $"],
+        ),
         (wrap_math("Redeeming 300 points brings the bill"), ["300 points"]),
         (wrap_math("Solving 400 − 0.5x ≤ 250 gives x ≥ 300."), [r"\le", r"\ge"]),
         (wrap_math("stays entirely above the x-axis"), ["x-axis", "!$x-$"]),

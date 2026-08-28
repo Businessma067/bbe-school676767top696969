@@ -581,6 +581,52 @@ def expand_word_explanation(text: str) -> str:
     return split_arrow_chains(text)
 
 
+def split_compound_algebra_steps(text: str) -> str:
+    """Put each rewrite of a compound/radical inequality on its own line."""
+    text = re.sub(r"(\))\.\s+([xX]|[-−]?\d+\s*[<≤])", r"\1.\n\n\2", text)
+    text = re.sub(r"(\))\.\s+(x²|x\^2|\()", r"\1.\n\n\2", text)
+    text = re.sub(r"(> 0|≥ 0|≤ 0|< 0),\s+(true for every)", r"\1.\n\n**Result for this part:** \2", text)
+    text = re.sub(r"(> 0|≥ 0|≤ 0|< 0)\.\s+(true for every)", r"\1.\n\n**Result for this part:** True for every", text)
+    text = re.sub(r"(?<=[0-9\)])\s*, giving ", r".\n\n**Interval from this part:** ", text)
+    text = re.sub(r", so this piece gives ", r".\n\n**Interval from this part:** ", text)
+    text = re.sub(r"(?<=[\)0-9])\s*, i\.e\. ", r".\n\n**Equivalent form:** that is, ", text)
+    text = re.sub(r"(?<=[\)0-9])\s*, which factors as ", r".\n\n**Factor:** which factors as ", text)
+    return text
+
+
+def expand_absolute_value_regions(text: str) -> str:
+    """Split multi-region absolute-value walkthroughs into labeled cases."""
+    if not re.search(r"split into (?:two|three|four) regions", text):
+        return text
+    text = re.sub(
+        r"(split into (?:two|three|four) regions\.)\s*",
+        r"\1\n\n",
+        text,
+    )
+    region_n = 1
+    text = re.sub(
+        r"(regions\.)\s+(x\s*[<>−-]\s*[^.:]+):",
+        lambda m: f"{m.group(1)}\n\n**Region 1**\n\n{m.group(2)}:",
+        text,
+        count=1,
+    )
+
+    def next_region(match: re.Match[str]) -> str:
+        nonlocal region_n
+        region_n += 1
+        return f".\n\n**Region {region_n}**\n\n{match.group(1)}:"
+
+    text = re.sub(r"\.\s+([-−]?\d+\s*≤\s*x\s*≤\s*[^.:]+):", next_region, text)
+    text = re.sub(r"(included)\.\s*(x\s*>\s*[^.:]+):", r"\1.\n\n**Region 3**\n\n\2:", text)
+    text = re.sub(r"\.\s+(x\s*>\s*[^.:]+):", next_region, text)
+    text = re.sub(
+        r"(Combining all (?:three )?pieces gives|Combining all pieces gives)",
+        r"\n\n**Combine regions**\n\n\1",
+        text,
+    )
+    return text
+
+
 def expand_compound_explanation(text: str) -> str:
     """Break compound-inequality solutions into labeled, step-by-step blocks."""
     text = re.sub(
@@ -599,29 +645,87 @@ def expand_compound_explanation(text: str) -> str:
         text,
     )
     text = split_arrow_chains(text)
-    text = re.sub(r"\.\s+(True solution:)", r".\n\n\1", text)
-    text = re.sub(r"\.\s+(Since the left condition)", r".\n\n\1", text)
+    text = split_compound_algebra_steps(text)
+    text = expand_absolute_value_regions(text)
+
+    text = re.sub(r"\bCase 1 —", "**Case 1** —", text)
+    text = re.sub(r"\bCase 2 —", "**Case 2** —", text)
+    text = re.sub(r"(?<!\*)\bCase 1\b(?!\*)", "**Case 1**", text)
+    text = re.sub(r"(?<!\*)\bCase 2\b(?!\*)", "**Case 2**", text)
+    text = re.sub(r"(\*\*Case [12]\*\* — [^:\n]+:)\s+", r"\1\n\n", text)
+
     text = re.sub(
-        r"\.\s+(By the quadratic formula, the roots are)",
-        r".\n\n\1",
+        r"([.!?])\s+(\*\*Case 2\*\* —)",
+        r"\1\n\n\2",
         text,
     )
-    text = re.sub(r"\bDomain:\s*", "**Domain**\n\n", text)
-    text = re.sub(r"\bCase 1\b", "**Case 1**", text)
-    text = re.sub(r"\bCase 2\b", "**Case 2**", text)
+    text = re.sub(
+        r"(\*\*Case 1 result\*\*\s*\n\n[^\n]+)\.\s+(\*\*Case 2\*\* —)",
+        r"\1.\n\n\2",
+        text,
+    )
+
+    text = re.sub(r"\bDomain:\s*", "**Domain restriction**\n\n", text)
+
+    text = re.sub(r"\.\s+(True solution:)", r".\n\n**Correct answer**\n\nTrue solution:", text)
+    text = re.sub(
+        r"\.\s+(Since the left condition)",
+        r".\n\n**Final answer**\n\nSince the left condition",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(By the quadratic formula, the roots are)",
+        r".\n\n**Quadratic formula**\n\nBy the quadratic formula, the roots are",
+        text,
+    )
+    text = re.sub(r"\. Discriminant:", r".\n\n**Discriminant check**\n\nDiscriminant:", text)
+
     text = re.sub(
         r"\.\s+(Union of both cases:)",
-        r".\n\n**Combine cases**\n\n\1",
+        r".\n\n**Combine cases**\n\nUnion of both cases:",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Combining both cases:)",
+        r".\n\n**Combine cases**\n\nCombining both cases:",
         text,
     )
     text = re.sub(
         r"\.\s+(Combined with )",
-        r".\n\n**Restrict to case**\n\nCombined with ",
+        r".\n\n**Restrict to this case**\n\nCombined with ",
         text,
     )
     text = re.sub(
         r"\.\s+(Every domain value here works:)",
         r".\n\n**Case 1 result**\n\nEvery domain value here works:",
+        text,
+    )
+    text = re.sub(
+        r"(holds automatically for (?:all|the entire)[^.]+\.)\s+(\*\*Case 2\*\* —)",
+        r"\1\n\n\2",
+        text,
+    )
+    text = re.sub(
+        r"(automatically greater than a negative number\.)\s+(\*\*Case 2\*\* —)",
+        r"\1\n\n**Case 1 result**\n\nEvery domain value in this slice works.\n\n\2",
+        text,
+    )
+    text = re.sub(
+        r"(So this case contributes [^.]+\.)\s+(Combining both cases:|\*\*Combine cases\*\*)",
+        r"\1\n\n**Case 2 result**\n\n\2",
+        text,
+    )
+    text = re.sub(
+        r"\):\s*split the absolute value:",
+        r"):\n\n**Split |·| into branches**\n\nSplit the absolute value:",
+        text,
+    )
+    text = re.sub(r"squaring is safe:\s*", "squaring is safe:\n\n", text)
+    text = re.sub(r", so square:\s*", ", so square both sides:\n\n", text)
+    text = re.sub(r", so square both sides:\s*", ", so square both sides:\n\n", text)
+    text = re.sub(
+        r"\) or \((?=[^)]*(?:giving|impossible|x ≤|x \\ge))",
+        r")\n\n**OR branch**\n\n(",
         text,
     )
     return text
