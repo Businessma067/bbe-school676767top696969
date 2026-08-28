@@ -64,7 +64,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   2: { "2.1": 10, "2.2": 5, "2.3": 5, "2.4": 5 },
   3: { "3.1": 10, "3.2": 5, "3.3": 5, "3.4": 5 },
   4: { "4.1": 10, "4.2": 5, "4.3": 5, "4.4": 5 },
-  6: { "6.1": 10, "6.2": 5, "6.3": 5, "6.4": 5, "6.5": 2 },
+  6: { "6.1": 10, "6.2": 5, "6.3": 5, "6.4": 5, "6.5": 3 },
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */

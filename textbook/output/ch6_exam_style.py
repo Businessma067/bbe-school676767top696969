@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Exam-style mixed inequality tasks for subsection 6.5 (30 statements, 6 tasks)."""
+"""Exam-style inequality tasks for subsection 6.5.
+
+Includes classic mixed exam claims plus varied real-life word scenarios.
+Explanations emphasize reading the wording, translating to an inequality,
+then solving step by step.
+"""
 from __future__ import annotations
 
 from ch6_math import (
@@ -756,6 +761,11 @@ $x < -3$ or $x > 2$.
         ],
     },
 ]
+
+
+from ch6_exam_style_life import LIFE_SPECS
+
+SPECS.extend(LIFE_SPECS)
 
 
 def exam_style_tasks(start_n: int = 89) -> list[dict]:
