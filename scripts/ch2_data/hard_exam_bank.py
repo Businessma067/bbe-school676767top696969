@@ -36,8 +36,18 @@ def slots_to_harden(global_task_i: int) -> list[int]:
     return sorted(set(out))
 
 
+def _is_warmup_slot(global_task_i: int) -> bool:
+    """First four tasks per subsection (1/5 and 2/5) are prepended warm-ups."""
+    return (global_task_i % 34) < 4
+
+
 def hard_slots() -> list[tuple[int, int]]:
-    return [(gi, ii) for gi in range(150) for ii in slots_to_harden(gi)]
+    return [
+        (gi, ii)
+        for gi in range(170)
+        if not _is_warmup_slot(gi)
+        for ii in slots_to_harden(gi)
+    ]
 
 
 # ---------------------------------------------------------------------------
@@ -57,7 +67,14 @@ class Claim:
     difficulty: str = "3/5"  # "3/5" ≈ photo, "5/5" ≈ text-to-math + hard rules
 
 
+_SOFT_AVOID: set[str] = set()
 _SEEN: set[str] = set()
+
+
+def set_soft_statement_avoid(stmts: set[str]) -> None:
+    """Statements already used on soft slots — hard bank must not collide."""
+    global _SOFT_AVOID
+    _SOFT_AVOID = set(stmts)
 
 # ---------------------------------------------------------------------------
 # 2–3/5 families — symbolic, photo-adjacent, must-finish
@@ -758,7 +775,7 @@ def _text_reciprocal_sum(seed: int) -> Claim:
 
 
 def _text_product_of_sums(seed: int) -> Claim:
-    """Words describing Brahmagupta / sum of squares product — letters only."""
+    """Brahmagupta / sum-of-squares product — exam-direct LaTeX."""
     letter_sets = [
         ("a", "b", "c", "d"),
         ("p", "q", "r", "s"),
@@ -770,46 +787,44 @@ def _text_product_of_sums(seed: int) -> Claim:
     truth = seed % 2 == 0
     if truth:
         stmt = (
-            f"The product of the sum of the squares of ${a}$ and ${b}$ with the sum of the squares "
-            f"of ${c}$ and ${d}$ equals the sum of the square of ${a}\\cdot {c}-{b}\\cdot {d}$ and "
-            f"the square of ${a}\\cdot {d}+{b}\\cdot {c}$, for every real quadruple."
+            f"For every real quadruple $({a},{b},{c},{d})$, "
+            f"$({a}^2+{b}^2)({c}^2+{d}^2)=({a}{c}-{b}{d})^2+({a}{d}+{b}{c})^2$."
         )
         body = explain(
-            f"The claim describes a product of two sums of squares in four letters. "
-            "Translate the wording, then verify with Brahmagupta's identity.",
+            f"The claim is Brahmagupta's product of two sums of squares in four letters. "
+            "Expand both sides or verify the standard cross pairing.",
             [
                 (
                     "Brahmagupta identity",
                     rf"({a}^2+{b}^2)({c}^2+{d}^2)"
-                    rf"=({a}\cdot {c}-{b}\cdot {d})^2+({a}\cdot {d}+{b}\cdot {c})^2",
-                    "Cross pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.",
+                    rf"=({a}{c}-{b}{d})^2+({a}{d}+{b}{c})^2",
+                    "The pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.",
                 ),
             ],
-            "The symbolic translation matches the printed verbal pairing on both squares.",
+            "Both sides match as an identity in the four letters.",
         )
     else:
         stmt = (
-            f"The product of the sum of the squares of ${a}$ and ${b}$ with the sum of the squares "
-            f"of ${c}$ and ${d}$ equals the sum of the square of ${a}\\cdot {c}+{b}\\cdot {c}$ and "
-            f"the square of ${a}\\cdot {d}-{b}\\cdot {d}$, for every real quadruple."
+            f"For every real quadruple $({a},{b},{c},{d})$, "
+            f"$({a}^2+{b}^2)({c}^2+{d}^2)=({a}{c}+{b}{c})^2+({a}{d}-{b}{d})^2$."
         )
         body = explain(
-            f"The wording pairs \"like letters\" inside each square. Write the correct "
-            f"Brahmagupta form first, then the pairing the words actually force.",
+            f"The right-hand squares use a wrong letter pairing inside each square. "
+            f"Compare with the standard Brahmagupta cross terms.",
             [
                 (
                     "Correct identity",
                     rf"({a}^2+{b}^2)({c}^2+{d}^2)"
-                    rf"=({a}\cdot {c}-{b}\cdot {d})^2+({a}\cdot {d}+{b}\cdot {c})^2",
+                    rf"=({a}{c}-{b}{d})^2+({a}{d}+{b}{c})^2",
                     "This is the standard sum-of-squares product factorisation.",
                 ),
                 (
-                    "Printed verbal pairing",
-                    rf"({a}\cdot {c}+{b}\cdot {c})^2+({a}\cdot {d}-{b}\cdot {d})^2",
-                    "Factoring out $c$ and $d$ shows these squares are not the same polynomials.",
+                    "Printed pairing",
+                    rf"({a}{c}+{b}{c})^2+({a}{d}-{b}{d})^2",
+                    "Factoring shows these squares are not the same polynomials.",
                 ),
             ],
-            "Expanding both readings separates them; the error is invisible until the cross terms are written out.",
+            "Expanding both readings separates them; the error appears only in the cross pairing.",
         )
     return Claim(stmt, truth, body, "text_brahmagupta", "2.1", "5/5")
 
@@ -835,11 +850,11 @@ def _text_abs_distance(seed: int) -> Claim:
     ]
     lo, hi, truth = catalog[seed % len(catalog)]
     span = hi - lo
-    var = "k"
+    var = "x"
     if truth:
         stmt = (
-            f"Whenever a real point lies between ${lo}$ and ${hi}$ inclusive, "
-            f"the sum of its distances to ${lo}$ and to ${hi}$ equals the length of that segment."
+            f"For every real ${var}$ with ${lo}\\le {var}\\le {hi}$, "
+            f"$|{var}-{lo}|+|{hi}-{var}|={span}$."
         )
         body = explain(
             f"The claim is about distances on the segment $[{lo},{hi}]$. "
@@ -855,9 +870,8 @@ def _text_abs_distance(seed: int) -> Claim:
         )
     else:
         stmt = (
-            f"For every real point (with no restriction to an interval), "
-            f"the sum of its distances to ${lo}$ and to ${hi}$ equals the length of the segment "
-            f"from ${lo}$ to ${hi}$."
+            f"For every real ${var}$, "
+            f"$|{var}-{lo}|+|{var}-{hi}|={span}$."
         )
         body = explain(
             f"The wording drops the interval restriction. Test a point to the right of ${hi}$ "
@@ -1069,6 +1083,11 @@ def _text_exponent_stack(seed: int) -> Claim:
     return Claim(stmt, truth, body, "text_exponent", "2.3", "5/5")
 
 
+def _coeff_var(n: int, var: str) -> str:
+    """Format a coefficient times a letter without a spurious leading 1."""
+    return var if n == 1 else f"{n}{var}"
+
+
 def _lcd_sum_trap_must_finish(seed: int) -> Claim:
     """Two fractions — claimed sum uses wrong denominator but matching numerator form.
 
@@ -1096,18 +1115,18 @@ def _lcd_sum_trap_must_finish(seed: int) -> Claim:
         stmt = (
             f"For ${x},{y}\\neq 0$, "
             f"$\\dfrac{{{n1}}}{{{x}}}+\\dfrac{{{n2}}}{{{y}}}"
-            f"=\\dfrac{{{n1}{y}+{n2}{x}}}{{{x}{y}}}$."
+            f"=\\dfrac{{{_coeff_var(n1, y)}+{_coeff_var(n2, x)}}}{{{x}{y}}}$."
         )
         body = explain(
             f"The claim adds two simple fractions in ${x}$ and ${y}$. "
             f"The least common denominator is the product ${x}{y}$, not their sum.",
             [
-                (
-                    "Clear to one fraction",
-                    rf"\frac{{{n1}}}{{{x}}}+\frac{{{n2}}}{{{y}}}"
-                    rf"=\frac{{{n1}{y}+{n2}{x}}}{{{x}{y}}}",
-                    "Cross-multiply each term before comparing numerator and denominator.",
-                ),
+            (
+                "Clear to one fraction",
+                rf"\frac{{{n1}}}{{{x}}}+\frac{{{n2}}}{{{y}}}"
+                rf"=\frac{{{'' if n1==1 else n1}{y}+{'' if n2==1 else n2}{x}}}{{{x}{y}}}",
+                "Cross-multiply each term before comparing numerator and denominator.",
+            ),
             ],
             "Both parts of the claimed single fraction match this reduction.",
         )
@@ -1115,7 +1134,7 @@ def _lcd_sum_trap_must_finish(seed: int) -> Claim:
         stmt = (
             f"For ${x},{y}\\neq 0$ and ${x}\\neq -{y}$, "
             f"$\\dfrac{{{n1}}}{{{x}}}+\\dfrac{{{n2}}}{{{y}}}"
-            f"=\\dfrac{{{n1}{y}+{n2}{x}}}{{{x}+{y}}}$."
+            f"=\\dfrac{{{_coeff_var(n1, y)}+{_coeff_var(n2, x)}}}{{{x}+{y}}}$."
         )
         body = explain(
             f"The numerator of the claimed sum has the right cross-multiply form, but the "
@@ -1260,6 +1279,13 @@ def _families_for(subsection: str) -> list[Callable[[int], Claim]]:
     return _FAMILIES_25
 
 
+def _rename_letter(text: str, old: str, new: str) -> str:
+    text = text.replace(f"${old}", f"${new}")
+    text = re.sub(rf"(?<=[\d\-\+]){old}(?=[\^\-\+\)\],]|$)", new, text)
+    text = re.sub(rf"\b{old}\b", new, text)
+    return text
+
+
 def claim_for(global_task_i: int, item_i: int, subsection: str) -> Claim:
     families = _families_for(subsection)
     seed = global_task_i * 5 + item_i
@@ -1273,7 +1299,11 @@ def claim_for(global_task_i: int, item_i: int, subsection: str) -> Claim:
             candidate.subsection = subsection
             # Tag difficulty into a distinguishing silent detail via letter choice already;
             # reject duplicates and "slot" fallbacks.
-            if candidate.statement not in _SEEN and "slot $" not in candidate.statement:
+            if (
+                candidate.statement not in _SEEN
+                and candidate.statement not in _SOFT_AVOID
+                and "slot $" not in candidate.statement
+            ):
                 _SEEN.add(candidate.statement)
                 return candidate
     # Last resort: rename the primary letter to a fresh one
@@ -1288,8 +1318,8 @@ def claim_for(global_task_i: int, item_i: int, subsection: str) -> Claim:
         if ch not in used:
             # rename first occurring letter variable
             old = next(iter(used), "x")
-            claim.statement = re.sub(rf"\b{old}\b", ch, claim.statement)
-            claim.body = re.sub(rf"\b{old}\b", ch, claim.body)
+            claim.statement = _rename_letter(claim.statement, old, ch)
+            claim.body = _rename_letter(claim.body, old, ch)
             break
     n = 0
     base = claim.statement
@@ -1305,8 +1335,10 @@ def claim_for(global_task_i: int, item_i: int, subsection: str) -> Claim:
 def all_hard_claims() -> list[Claim]:
     _SEEN.clear()
     out: list[Claim] = []
-    for gi in range(150):
-        sub = f"2.{1 + gi // 30}"
+    for gi in range(170):
+        if _is_warmup_slot(gi):
+            continue
+        sub = f"2.{1 + gi // 34}"
         for ii in slots_to_harden(gi):
             out.append(claim_for(gi, ii, sub))
     return out
