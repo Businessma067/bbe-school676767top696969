@@ -12,19 +12,23 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""From the elementary symmetric data $u+v=5$ and $uv=6$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $1$.""",
-                True,
-                r"""Pass to the squared gap before taking roots:
+                r"""For $x\neq\pm 1$, $\dfrac{5x-1}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{3}{1-x}=\dfrac{3}{x-1}$.""",
+                False,
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-Identity:
+Rewrite the last term:
 
-$$(u-v)^2=(u+v)^2-4uv=5^2-4\cdot 6=1$$
+$$-\frac{3}{1-x}=\frac{3}{x-1}$$
 
-Principal root:
+Clear:
 
-$$|u-v|=\sqrt{1}=1$$
+$$\frac{5x-1}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{3}{x-1}$$
 
-The printed constant matches.""",
+Simplified left-hand side:
+
+$$\frac{7 x + 5}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{7 x + 5}{x^{2} - 1}$, not $\dfrac{3}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Reducing $\dfrac{j^3-1331}{j-11}$ to $j^2+121$ for $j\neq 11$ is treated as an identity, because substituting $j=0$ makes both sides equal $121$.",
@@ -32,15 +36,23 @@ The printed constant matches.""",
                 
             ),
             (
-                r"""Cancelling $w-2$ from $\dfrac{w^3-8}{w-2}$ leaves $w^2+2w+4$ for $w\neq 2$. Substituting $w=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
+                r"""If $n>0$, then $\dfrac{n^{2/3}\cdot\sqrt[3]{n\sqrt{n}}}{n^{1/6}\cdot\sqrt[6]{n^5}}=\sqrt[6]{n}$.""",
                 True,
-                r"""Difference of cubes with constant $2^3$:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Identity:
+Numerator:
 
-$$\frac{w^3-8}{w-2}=w^2+2w+4$$
+$$n^{2/3}\cdot(n\cdotn^{1/2})^{1/3}=n^{2/3}\cdotn^{(1+1/2)/3}=n^{2/3}\cdotn^{1/2}$$
 
-The substitution check is consistent with a true polynomial identity.""",
+Denominator:
+
+$$n^{1/6}\cdot(n^5)^{1/6}=n^{1/6}\cdotn^{5/6}=n$$
+
+Quotient:
+
+$$\sqrt[6]{n}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Restricting to negative $\ell$, the quotient $|\ell|/\ell$ equals $-1$.",
@@ -77,15 +89,23 @@ The substitution check is consistent with a true polynomial identity.""",
                 
             ),
             (
-                r"""Cancelling $m-6$ from $\dfrac{m^3-216}{m-6}$ leaves $m^2+6m+36$ for $m\neq 6$. Substituting $m=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
-                True,
-                r"""Difference of cubes with constant $6^3$:
+                r"""For $x\neq\pm 1$, $\dfrac{8x-4}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{4}{x-1}$.""",
+                False,
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-Identity:
+Rewrite the last term:
 
-$$\frac{m^3-216}{m-6}=m^2+6m+36$$
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
 
-The substitution check is consistent with a true polynomial identity.""",
+Clear:
+
+$$\frac{8x-4}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+Simplified left-hand side:
+
+$$\frac{9 x + 1}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{9 x + 1}{x^{2} - 1}$, not $\dfrac{4}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Given the pair $u+v=16$ and $uv=15$, the distance $|u-v|$ is read off as $14$.",
@@ -107,25 +127,23 @@ The substitution check is consistent with a true polynomial identity.""",
                 
             ),
             (
-                r"""For $q\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{q}{q-1}-\dfrac{q-1}{q}}{\dfrac{q}{q-1}+\dfrac{q-1}{q}}$ is reduced to $\dfrac{2q-1}{2q^2-2q+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""Clear each inner pair over $q(q-1)$:
+                r"""If $a>0$, then $\dfrac{a^{2/3}\cdot\sqrt[3]{a\sqrt{a}}}{a^{1/6}\cdot\sqrt[6]{a^5}}=\sqrt[3]{a}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
 Numerator:
 
-$$\frac{q}{q-1}-\frac{q-1}{q}=\frac{q^2-(q-1)^2}{q(q-1)}=\frac{2q-1}{q(q-1)}$$
+$$a^{2/3}\cdot(a\cdota^{1/2})^{1/3}=a^{2/3}\cdota^{(1+1/2)/3}=a^{2/3}\cdota^{1/2}$$
 
 Denominator:
 
-$$\frac{q}{q-1}+\frac{q-1}{q}=\frac{q^2+(q-1)^2}{q(q-1)}=\frac{2q^2-2q+1}{q(q-1)}$$
+$$a^{1/6}\cdot(a^5)^{1/6}=a^{1/6}\cdota^{5/6}=a$$
 
 Quotient:
 
-$$\frac{2q-1}{2q^2-2q+1}$$
+$$\sqrt[6]{a}$$
 
-The printed target matches the reduced form.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Simplifying $16^{5/4}$ is treated as producing the integer $32$.",
@@ -133,17 +151,27 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Provided $v\neq 0$, reducing $\dfrac{(v^{2})^{3}}{v^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $v^{2}$. A numerical check at $v=2$ recovers $4$ on both sides and is consistent with the identity.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8p^2b}{4x^2-16}}{\dfrac{4pb}{2x+4}}$ simplifies to $\dfrac{p}{x-2}$ for $x\neq\pm 2$ and $p,b\neq 0$.""",
                 True,
-                r"""Numerator:
+                r"""Factor every polynomial factor before cancelling:
 
-$$(v^{2})^{3}=v^{6}$$
+Difference of squares:
 
-Quotient:
+$$4x^2-16=4(x-2)(x+2)$$
 
-$$\frac{v^{6}}{v^{4}}=v^{2}$$
+Linear factor:
 
-The check at $v=2$ is consistent because the algebra already matches.""",
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8p^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4pb}$$
+
+Result:
+
+$$\frac{p}{x - 2}$$
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Whenever $r+s+t=0$ at the specific values $r=2$, $s=11$, $t=-13$, the sum of cubes $r^3+s^3+t^3$ equals $3rst$, hence $-858$.",
@@ -180,17 +208,23 @@ The check at $v=2$ is consistent because the algebra already matches.""",
                 
             ),
             (
-                r"""Provided $c\neq 0$, reducing $\dfrac{(c^{2})^{3}}{c^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $c^{2}$. A numerical check at $c=2$ recovers $4$ on both sides and is consistent with the identity.""",
-                True,
-                r"""Numerator:
+                r"""If $c>0$, then $\dfrac{c^{2/3}\cdot\sqrt[3]{c\sqrt{c}}}{c^{1/6}\cdot\sqrt[6]{c^5}}=\sqrt[3]{c}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(c^{2})^{3}=c^{6}$$
+Numerator:
+
+$$c^{2/3}\cdot(c\cdotc^{1/2})^{1/3}=c^{2/3}\cdotc^{(1+1/2)/3}=c^{2/3}\cdotc^{1/2}$$
+
+Denominator:
+
+$$c^{1/6}\cdot(c^5)^{1/6}=c^{1/6}\cdotc^{5/6}=c$$
 
 Quotient:
 
-$$\frac{c^{6}}{c^{4}}=c^{2}$$
+$$\sqrt[6]{c}$$
 
-The check at $c=2$ is consistent because the algebra already matches.""",
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
         ],
         overview=r"Unlinked claims: odd powers cancel in a Sophie-Germain product, a cubic remainder that matches at $0$ only, the wrong conjugate of $\sqrt{15+2\sqrt{14}}$, $|2m-14|=2|m-7|$, and $f^3+g^3+h^3=3fgh$ at $(5,8,-13)$.",
@@ -212,17 +246,15 @@ The check at $c=2$ is consistent because the algebra already matches.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $\sqrt{13}-1$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""Square the printed difference:
+                r"""For $x\neq 0$, $(8x^{-1}-1)(8x^{-1}+1)=\dfrac{64}{x^2}-1$.""",
+                True,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=8x^{-1}$:
 
-Square:
+Expand:
 
-$$(\sqrt{13}-1)^2=13-2\sqrt{13}+1=14-2\sqrt{13}$$
+$$(8x^{-1})^2-1=\frac{64}{x^2}-1$$
 
-The cross term has the wrong sign for $\sqrt{14+2\sqrt{13}}$.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The coefficient on the reciprocal square is $64$, matching the claim.""",
             ),
             (
                 r"On the half-line $h<0$, the quotient $|h|/(-h)$ equals $1$.",
@@ -230,19 +262,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""From the elementary symmetric data $u+v=7$ and $uv=10$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $3$.""",
-                True,
-                r"""Pass to the squared gap before taking roots:
+                r"""For $x\neq\pm 1$, $\dfrac{8x-4}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{8}{x-1}$.""",
+                False,
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-Identity:
+Rewrite the last term:
 
-$$(u-v)^2=(u+v)^2-4uv=7^2-4\cdot 10=9$$
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
 
-Principal root:
+Clear:
 
-$$|u-v|=\sqrt{9}=3$$
+$$\frac{8x-4}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
 
-The printed constant matches.""",
+Simplified left-hand side:
+
+$$\frac{9 x + 1}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{9 x + 1}{x^{2} - 1}$, not $\dfrac{8}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
         ],
         overview=r"Five independent lines: a wrong-sign $gh$ term in $(f+2g-h)^2$, a cubic remainder checked at $j=1$, $(k^{2/3})^{3/2}=|k|$, $|h|/(-h)=1$ on $h<0$, and $u^2+v^2=197$ from $u+v=15$, $uv=14$.",
@@ -254,13 +290,23 @@ The printed constant matches.""",
         context=CTX,
         items=[
             (
-                r"""Provided $m\neq 0$, reducing $\dfrac{(m^{2})^{3}}{m^{4}}$ by cancelling the printed digits $2,3,4$ in order is claimed to leave $m^{-1}$, and substituting $m=1$ is offered as confirmation.""",
+                r"""If $e>0$, then $\dfrac{e^{2/3}\cdot\sqrt[3]{e\sqrt{e}}}{e^{1/6}\cdot\sqrt[6]{e^5}}=\sqrt[3]{e}$.""",
                 False,
-                r"""Correct reduction:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$\frac{(m^{2})^{3}}{m^{4}}=m^{2}$$
+Numerator:
 
-Digit-wise cancellation is not a law of exponents. Agreement at $m=1$ hides the error because every power of $1$ equals $1$.""",
+$$e^{2/3}\cdot(e\cdote^{1/2})^{1/3}=e^{2/3}\cdote^{(1+1/2)/3}=e^{2/3}\cdote^{1/2}$$
+
+Denominator:
+
+$$e^{1/6}\cdot(e^5)^{1/6}=e^{1/6}\cdote^{5/6}=e$$
+
+Quotient:
+
+$$\sqrt[6]{e}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Adding the swapped pair $\dfrac{j}{k}+\dfrac{k}{j}$ for $jk\neq 0$ is said to equal $\dfrac{j^2+k^2}{jk}$, and substituting $j=3$, $k=5$ makes both sides equal $34/15$.",
@@ -292,19 +338,15 @@ Digit-wise cancellation is not a law of exponents. Agreement at $m=1$ hides the 
         context=CTX,
         items=[
             (
-                r"""From the elementary symmetric data $u+v=12$ and $uv=32$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $4$.""",
+                r"""For $h\neq 0$, $(8h^{-1}-1)(8h^{-1}+1)=\dfrac{64}{h^2}-1$.""",
                 True,
-                r"""Pass to the squared gap before taking roots:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=8h^{-1}$:
 
-Identity:
+Expand:
 
-$$(u-v)^2=(u+v)^2-4uv=12^2-4\cdot 32=16$$
+$$(8h^{-1})^2-1=\frac{64}{h^2}-1$$
 
-Principal root:
-
-$$|u-v|=\sqrt{16}=4$$
-
-The printed constant matches.""",
+The coefficient on the reciprocal square is $64$, matching the claim.""",
             ),
             (
                 r"Clearing the stacked difference $\dfrac{\dfrac{1}{h}-\dfrac{1}{j}}{\dfrac{1}{h}+\dfrac{1}{j}}$ is said to leave $\dfrac{h-j}{h+j}$ whenever $hj\neq 0$ and $h\neq -j$.",
@@ -317,15 +359,19 @@ The printed constant matches.""",
                 
             ),
             (
-                r"""A marker treats $w^4+4z^4$ as identically equal to $(w^2+2z^2)^2$ for every real pair $(w,z)$, citing a shortened Sophie Germain argument.""",
-                False,
-                r"""The expression $w^4+4z^4$ is not already a square:
+                r"""Let $p$ be a nonzero real parameter. Twice the reciprocal of the sum of $p$ and the reciprocal of $p$ equals twice $p$ divided by the sum of the square of $p$ and one.""",
+                True,
+                r"""Translate the wording into symbols before simplifying:
 
-Expand:
+Left-hand wording:
 
-$$(w^2+2z^2)^2=w^4+4w^2z^2+4z^4$$
+$$\frac{2}{p+\frac{1}{p}}=\frac{2p}{p^2+1}$$
 
-An extra middle term $4w^2z^2$ appears. The Sophie Germain rewrite must subtract $(2wz)^2$ after adding it.""",
+Right-hand wording:
+
+$$\frac{2p}{p^2+1}$$
+
+Both translations agree, so the statement is an identity on $p\neq 0$.""",
             ),
             (
                 r"Evaluating $m^3+n^3$ from $m+n=11$ and $mn=13$ is claimed to give $1331$.",
@@ -347,19 +393,19 @@ An extra middle term $4w^2z^2$ appears. The Sophie Germain rewrite must subtract
                 
             ),
             (
-                r"""From the elementary symmetric data $u+v=15$ and $uv=50$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $5$.""",
-                True,
-                r"""Pass to the squared gap before taking roots:
+                r"""Let $k$ be a nonzero real letter. Twice the reciprocal of the sum of $k$ and the reciprocal of $k$ equals $k$ divided by the sum of the square of $k$ and one.""",
+                False,
+                r"""Translate the wording into symbols before simplifying:
 
-Identity:
+Left-hand wording:
 
-$$(u-v)^2=(u+v)^2-4uv=15^2-4\cdot 50=25$$
+$$\frac{2}{k+\frac{1}{k}}=\frac{2k}{k^2+1}$$
 
-Principal root:
+Right-hand wording:
 
-$$|u-v|=\sqrt{25}=5$$
+$$\frac{k}{k^2+1}$$
 
-The printed constant matches.""",
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Composing the rational powers $(t^{3/4})^{4/3}$ is said to return $t$ whenever $t>0$.",
@@ -391,23 +437,19 @@ The printed constant matches.""",
                 
             ),
             (
-                r"""For $z\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{z}{z-1}-\dfrac{z-1}{z}}{\dfrac{z}{z-1}+\dfrac{z-1}{z}}$ is reduced to $\dfrac{2z-1}{2z^2-2z+1}$ after clearing the inner denominators once.""",
+                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals twice $h$ divided by the sum of the square of $h$ and one.""",
                 True,
-                r"""Clear each inner pair over $z(z-1)$:
+                r"""Translate the wording into symbols before simplifying:
 
-Numerator:
+Left-hand wording:
 
-$$\frac{z}{z-1}-\frac{z-1}{z}=\frac{z^2-(z-1)^2}{z(z-1)}=\frac{2z-1}{z(z-1)}$$
+$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
 
-Denominator:
+Right-hand wording:
 
-$$\frac{z}{z-1}+\frac{z-1}{z}=\frac{z^2+(z-1)^2}{z(z-1)}=\frac{2z^2-2z+1}{z(z-1)}$$
+$$\frac{2h}{h^2+1}$$
 
-Quotient:
-
-$$\frac{2z-1}{2z^2-2z+1}$$
-
-The printed target matches the reduced form.""",
+Both translations agree, so the statement is an identity on $h\neq 0$.""",
             ),
             (
                 r"Simplifying the power $16^{3/2}$ is treated as producing the integer $64$.",
@@ -420,15 +462,27 @@ The printed target matches the reduced form.""",
                 
             ),
             (
-                r"""Cancelling $t-4$ from $\dfrac{t^3-64}{t-4}$ leaves $t^2+4t+16$ for $t\neq 4$. Substituting $t=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8v^2b}{4x^2-16}}{\dfrac{4vb}{2x+4}}$ simplifies to $\dfrac{v}{x-2}$ for $x\neq\pm 2$ and $v,b\neq 0$.""",
                 True,
-                r"""Difference of cubes with constant $4^3$:
+                r"""Factor every polynomial factor before cancelling:
 
-Identity:
+Difference of squares:
 
-$$\frac{t^3-64}{t-4}=t^2+4t+16$$
+$$4x^2-16=4(x-2)(x+2)$$
 
-The substitution check is consistent with a true polynomial identity.""",
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8v^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4vb}$$
+
+Result:
+
+$$\frac{v}{x - 2}$$
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
         ],
         overview=r"Five independent lines: the $fg$ coefficient $8$ in $(f+4g-h)^2$, a cancelled-factor leftover, $16^{3/2}=64$, nested bars that cannot be stripped, and $1/v+1/w=3/5$ from $v+w=21$, $vw=35$.",
@@ -450,25 +504,15 @@ The substitution check is consistent with a true polynomial identity.""",
                 
             ),
             (
-                r"""For $v\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{v}{v-1}-\dfrac{v-1}{v}}{\dfrac{v}{v-1}+\dfrac{v-1}{v}}$ is reduced to $\dfrac{2v-1}{2v^2-2v+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""Clear each inner pair over $v(v-1)$:
+                r"""For $h\neq 0$, $(3h^{-1}-1)(3h^{-1}+1)=\dfrac{1}{9h^2}-1$.""",
+                False,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=3h^{-1}$:
 
-Numerator:
+Expand:
 
-$$\frac{v}{v-1}-\frac{v-1}{v}=\frac{v^2-(v-1)^2}{v(v-1)}=\frac{2v-1}{v(v-1)}$$
+$$(3h^{-1})^2-1=\frac{9}{h^2}-1$$
 
-Denominator:
-
-$$\frac{v}{v-1}+\frac{v-1}{v}=\frac{v^2+(v-1)^2}{v(v-1)}=\frac{2v^2-2v+1}{v(v-1)}$$
-
-Quotient:
-
-$$\frac{2v-1}{2v^2-2v+1}$$
-
-The printed target matches the reduced form.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The reciprocal square carries numerator $9$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Pulling the constant factor, $|-5\ell+15|$ is rewritten as $5|\ell-3|$ for every real $\ell$.",
@@ -490,15 +534,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
         context=CTX,
         items=[
             (
-                r"""Cancelling $w-12$ from $\dfrac{w^3-1728}{w-12}$ leaves $w^2+12w+144$ for $w\neq 12$. Substituting $w=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
-                True,
-                r"""Difference of cubes with constant $12^3$:
+                r"""If $q>0$, then $\dfrac{q^{2/3}\cdot\sqrt[3]{q\sqrt{q}}}{q^{1/6}\cdot\sqrt[6]{q^5}}=\sqrt[3]{q}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Identity:
+Numerator:
 
-$$\frac{w^3-1728}{w-12}=w^2+12w+144$$
+$$q^{2/3}\cdot(q\cdotq^{1/2})^{1/3}=q^{2/3}\cdotq^{(1+1/2)/3}=q^{2/3}\cdotq^{1/2}$$
 
-The substitution check is consistent with a true polynomial identity.""",
+Denominator:
+
+$$q^{1/6}\cdot(q^5)^{1/6}=q^{1/6}\cdotq^{5/6}=q$$
+
+Quotient:
+
+$$\sqrt[6]{q}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Subtracting the swapped pair $\dfrac{k}{m}-\dfrac{m}{k}$ for $km\neq 0$ is said to equal $\dfrac{k^2-m^2}{km}$, and substituting $k=5$, $m=3$ makes both sides equal $16/15$.",
@@ -506,13 +558,27 @@ The substitution check is consistent with a true polynomial identity.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{10+4\sqrt{6}}$ is claimed to produce $\sqrt{6}+2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8q^2b}{4x^2-16}}{\dfrac{4qb}{2x+4}}$ simplifies to $\dfrac{q}{x-2}$ for $x\neq\pm 2$ and $q,b\neq 0$.""",
                 True,
-                r"""Square:
+                r"""Factor every polynomial factor before cancelling:
 
-$$(\sqrt{6}+2)^2=6+4\sqrt{6}+4=10+4\sqrt{6}$$
+Difference of squares:
 
-Match.""",
+$$4x^2-16=4(x-2)(x+2)$$
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8q^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4qb}$$
+
+Result:
+
+$$\frac{q}{x - 2}$$
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Restricting to negative $s$, the quotient $|s|/s$ is claimed to equal $1$.",
@@ -549,13 +615,23 @@ Match.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{15+6\sqrt{6}}$ is claimed to produce $3+\sqrt{6}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""If $d>0$, then $\dfrac{d^{2/3}\cdot\sqrt[3]{d\sqrt{d}}}{d^{1/6}\cdot\sqrt[6]{d^5}}=\sqrt[6]{d}$.""",
                 True,
-                r"""Square:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(3+\sqrt{6})^2=9+6\sqrt{6}+6=15+6\sqrt{6}$$
+Numerator:
 
-Match.""",
+$$d^{2/3}\cdot(d\cdotd^{1/2})^{1/3}=d^{2/3}\cdotd^{(1+1/2)/3}=d^{2/3}\cdotd^{1/2}$$
+
+Denominator:
+
+$$d^{1/6}\cdot(d^5)^{1/6}=d^{1/6}\cdotd^{5/6}=d$$
+
+Quotient:
+
+$$\sqrt[6]{d}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Factoring the biquadratic $n^4+64$ as $(n^2+4n+8)(n^2-4n+8)$ is offered as an identity.",
@@ -577,13 +653,27 @@ Match.""",
                 
             ),
             (
-                r"""Provided $v\neq 0$, reducing $\dfrac{(v^{2})^{3}}{v^{4}}$ by cancelling the printed digits $2,3,4$ in order is claimed to leave $v^{-1}$, and substituting $v=1$ is offered as confirmation.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8x^2b}{4x^2-16}}{\dfrac{4xb}{2x+4}}$ simplifies to $\dfrac{x}{x+2}$ for $x\neq\pm 2$ and $x,b\neq 0$.""",
                 False,
-                r"""Correct reduction:
+                r"""Factor every polynomial factor before cancelling:
 
-$$\frac{(v^{2})^{3}}{v^{4}}=v^{2}$$
+Difference of squares:
 
-Digit-wise cancellation is not a law of exponents. Agreement at $v=1$ hides the error because every power of $1$ equals $1$.""",
+$$4x^2-16=4(x-2)(x+2)$$
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8x^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4xb}$$
+
+Result:
+
+$$\frac{x}{x - 2}$$
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Matching positive roots, $\sqrt{13+4\sqrt{3}}$ is identified with $1+2\sqrt{3}$.",
@@ -591,15 +681,15 @@ Digit-wise cancellation is not a law of exponents. Agreement at $v=1$ hides the 
                 
             ),
             (
-                r"""A marker treats $u^4+4v^4$ as identically equal to $(u^2+2v^2)^2$ for every real pair $(u,v)$, citing a shortened Sophie Germain argument.""",
-                False,
-                r"""The expression $u^4+4v^4$ is not already a square:
+                r"""For $s\neq 0$, $(2s^{-1}-1)(2s^{-1}+1)=\dfrac{4}{s^2}-1$.""",
+                True,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=2s^{-1}$:
 
 Expand:
 
-$$(u^2+2v^2)^2=u^4+4u^2v^2+4v^4$$
+$$(2s^{-1})^2-1=\frac{4}{s^2}-1$$
 
-An extra middle term $4u^2v^2$ appears. The Sophie Germain rewrite must subtract $(2uv)^2$ after adding it.""",
+The coefficient on the reciprocal square is $4$, matching the claim.""",
             ),
             (
                 r"Treating the vanishing of $u+v+w$ at $u=1$, $v=14$, $w=-15$ as forcing $u^3+v^3+w^3=0$ is proposed.",
@@ -636,15 +726,27 @@ An extra middle term $4u^2v^2$ appears. The Sophie Germain rewrite must subtract
                 
             ),
             (
-                r"""A marker treats $h^4+4k^4$ as identically equal to $(h^2+2k^2)(h^2-2k^2)$ for every real pair $(h,k)$, citing a shortened Sophie Germain argument.""",
-                False,
-                r"""A difference of squares in $h^2$ and $2k^2$ would give
+                r"""The stacked quotient $\dfrac{\dfrac{8m^2b}{4x^2-16}}{\dfrac{4mb}{2x+4}}$ simplifies to $\dfrac{m}{x-2}$ for $x\neq\pm 2$ and $m,b\neq 0$.""",
+                True,
+                r"""Factor every polynomial factor before cancelling:
 
-Product:
+Difference of squares:
 
-$$(h^2+2k^2)(h^2-2k^2)=h^4-4k^4$$
+$$4x^2-16=4(x-2)(x+2)$$
 
-The sign of the last term is wrong for $h^4+4k^4$.""",
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8m^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4mb}$$
+
+Result:
+
+$$\frac{m}{x - 2}$$
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
         ],
         overview=r"Unlinked claims: grouping $fg+11f+13g+143$, a nested unit remainder $1/(j+1)$, $16^{3/4}=8$ rather than $4$, the triangle inequality on mixed signs, and $r^2+s^2=371$.",
@@ -666,19 +768,23 @@ The sign of the last term is wrong for $h^4+4k^4$.""",
                 
             ),
             (
-                r"""From the elementary symmetric data $u+v=13$ and $uv=36$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $5$.""",
-                True,
-                r"""Pass to the squared gap before taking roots:
+                r"""For $x\neq\pm 1$, $\dfrac{6x-4}{x^2-1}-\dfrac{1}{1+x}+\dfrac{2}{x-1}-\dfrac{1}{1-x}=\dfrac{-4}{x-1}$.""",
+                False,
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-Identity:
+Rewrite the last term:
 
-$$(u-v)^2=(u+v)^2-4uv=13^2-4\cdot 36=25$$
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
 
-Principal root:
+Clear:
 
-$$|u-v|=\sqrt{25}=5$$
+$$\frac{6x-4}{x^2-1}-\frac{1}{x+1}+\frac{2}{x-1}+\frac{1}{x-1}$$
 
-The printed constant matches.""",
+Simplified left-hand side:
+
+$$\frac{8 x}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{8 x}{x^{2} - 1}$, not $\dfrac{-4}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Treating the sign quotient $|\ell|/\ell$ as identically $1$ for every $\ell\neq 0$ is proposed.",
@@ -686,15 +792,23 @@ The printed constant matches.""",
                 
             ),
             (
-                r"""Cancelling $j-13$ from $\dfrac{j^3-2197}{j-13}$ leaves $j^2+13j+169$ for $j\neq 13$. Substituting $j=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
-                True,
-                r"""Difference of cubes with constant $13^3$:
+                r"""If $k>0$, then $\dfrac{k^{2/3}\cdot\sqrt[3]{k\sqrt{k}}}{k^{1/6}\cdot\sqrt[6]{k^5}}=\sqrt[3]{k}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Identity:
+Numerator:
 
-$$\frac{j^3-2197}{j-13}=j^2+13j+169$$
+$$k^{2/3}\cdot(k\cdotk^{1/2})^{1/3}=k^{2/3}\cdotk^{(1+1/2)/3}=k^{2/3}\cdotk^{1/2}$$
 
-The substitution check is consistent with a true polynomial identity.""",
+Denominator:
+
+$$k^{1/6}\cdot(k^5)^{1/6}=k^{1/6}\cdotk^{5/6}=k$$
+
+Quotient:
+
+$$\sqrt[6]{k}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
         ],
         overview=r"Five independent lines: a wrong-sign $gh$ coefficient, the remainder $j-20$, $\sqrt[3]{8s^6}=2s^2$, $|\ell|/\ell$ only piecewise $1$, and $1/k+1/m=11/13$.",
@@ -706,21 +820,19 @@ The substitution check is consistent with a true polynomial identity.""",
         context=CTX,
         items=[
             (
-                r"""Adding and subtracting $4f^2g^2$ inside $f^4+4g^4$ is claimed to produce the difference of squares $(f^2+2g^2)^2-(2fg)^2$, which then factors as $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ on every real pair $(f,g)$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""Complete to a difference of squares by inserting $\pm 4f^2g^2$:
+                r"""Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals $t$ divided by the sum of the square of $t$ and one.""",
+                False,
+                r"""Translate the wording into symbols before simplifying:
 
-Rewrite:
+Left-hand wording:
 
-$$f^4+4g^4=(f^2+2g^2)^2-(2fg)^2$$
+$$\frac{2}{t+\frac{1}{t}}=\frac{2t}{t^2+1}$$
 
-Factor:
+Right-hand wording:
 
-$$=(f^2-2fg+2g^2)(f^2+2fg+2g^2)$$
+$$\frac{t}{t^2+1}$$
 
-Both steps are identities in the two letters.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Reducing the cubic $\dfrac{w^3-2197}{w-13}$ to $w^2+169$ for $w\neq 13$ is treated as an identity after a check at $w=0$ gives $169$ on both sides.",
@@ -752,17 +864,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
         context=CTX,
         items=[
             (
-                r"""Cancelling $m-6$ from $\dfrac{m^3-216}{m-6}$ leaves $m^2+6m+36$ for $m\neq 6$. Substituting $m=1$ recovers the same integer on the original fraction and on the reduced quadratic, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""Difference of cubes with constant $6^3$:
+                r"""For $x\neq\pm 1$, $\dfrac{3x-3}{x^2-1}-\dfrac{4}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{1}{x-1}$.""",
+                False,
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-Identity:
+Rewrite the last term:
 
-$$\frac{m^3-216}{m-6}=m^2+6m+36$$
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
 
-The substitution check is consistent with a true polynomial identity.
+Clear:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$\frac{3x-3}{x^2-1}-\frac{4}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+Simplified left-hand side:
+
+$$\frac{2 \left(x + 2\right)}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{2 \left(x + 2\right)}{x^{2} - 1}$, not $\dfrac{1}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Cancelling a difference of fourth powers, $\dfrac{j^4-1}{j^2-1}$ is said to leave $j^2+1$ whenever $j\neq\pm 1$.",
@@ -775,23 +893,19 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""For $u\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{u}{u-1}-\dfrac{u-1}{u}}{\dfrac{u}{u-1}+\dfrac{u-1}{u}}$ is reduced to $\dfrac{2u-1}{2u^2-2u+1}$ after clearing the inner denominators once.""",
+                r"""Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals twice $t$ divided by the sum of the square of $t$ and one.""",
                 True,
-                r"""Clear each inner pair over $u(u-1)$:
+                r"""Translate the wording into symbols before simplifying:
 
-Numerator:
+Left-hand wording:
 
-$$\frac{u}{u-1}-\frac{u-1}{u}=\frac{u^2-(u-1)^2}{u(u-1)}=\frac{2u-1}{u(u-1)}$$
+$$\frac{2}{t+\frac{1}{t}}=\frac{2t}{t^2+1}$$
 
-Denominator:
+Right-hand wording:
 
-$$\frac{u}{u-1}+\frac{u-1}{u}=\frac{u^2+(u-1)^2}{u(u-1)}=\frac{2u^2-2u+1}{u(u-1)}$$
+$$\frac{2t}{t^2+1}$$
 
-Quotient:
-
-$$\frac{2u-1}{2u^2-2u+1}$$
-
-The printed target matches the reduced form.""",
+Both translations agree, so the statement is an identity on $t\neq 0$.""",
             ),
             (
                 r"Completing the square, $k^4+4m^4$ is identified with $(k^2+2m^2)^2$ as an identity in $k$ and $m$.",
@@ -813,15 +927,15 @@ The printed target matches the reduced form.""",
                 
             ),
             (
-                r"""Cancelling $q-10$ from $\dfrac{q^3-1000}{q-10}$ leaves $q^2+10q+100$ for $q\neq 10$. Substituting $q=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
-                True,
-                r"""Difference of cubes with constant $10^3$:
+                r"""For $w\neq 0$, $(4w^{-1}-1)(4w^{-1}+1)=\dfrac{1}{16w^2}-1$.""",
+                False,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=4w^{-1}$:
 
-Identity:
+Expand:
 
-$$\frac{q^3-1000}{q-10}=q^2+10q+100$$
+$$(4w^{-1})^2-1=\frac{16}{w^2}-1$$
 
-The substitution check is consistent with a true polynomial identity.""",
+The reciprocal square carries numerator $16$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Denesting the nested radical $\sqrt{16+2\sqrt{15}}$ is claimed to equal $2+\sqrt{15}$.",
@@ -853,19 +967,19 @@ The substitution check is consistent with a true polynomial identity.""",
                 
             ),
             (
-                r"""Provided $c\neq 0$, reducing $\dfrac{(c^{2})^{3}}{c^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $c^{2}$. A numerical check at $c=2$ recovers $4$ on both sides and is consistent with the identity, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals twice $m$ divided by the sum of the square of $m$ and one.""",
                 True,
-                r"""Numerator:
+                r"""Translate the wording into symbols before simplifying:
 
-$$(c^{2})^{3}=c^{6}$$
+Left-hand wording:
 
-Quotient:
+$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
 
-$$\frac{c^{6}}{c^{4}}=c^{2}$$
+Right-hand wording:
 
-The check at $c=2$ is consistent because the algebra already matches.
+$$\frac{2m}{m^2+1}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Both translations agree, so the statement is an identity on $m\neq 0$.""",
             ),
             (
                 r"Cubing the two-thirds power, $\bigl(t^{2/3}\bigr)^3$ is said to equal $t^2$ for every real $t$.",
@@ -878,13 +992,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{9+4\sqrt{5}}$ is claimed to produce $2+\sqrt{5}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""For $w\neq 0$, $(3w^{-1}-1)(3w^{-1}+1)=\dfrac{9}{w^2}-1$.""",
                 True,
-                r"""Square:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=3w^{-1}$:
 
-$$(2+\sqrt{5})^2=4+4\sqrt{5}+5=9+4\sqrt{5}$$
+Expand:
 
-Match.""",
+$$(3w^{-1})^2-1=\frac{9}{w^2}-1$$
+
+The coefficient on the reciprocal square is $9$, matching the claim.""",
             ),
         ],
         overview=r"Unlinked claims: a wrong-sign $fh$ coefficient, a reciprocal trap in $(1+j/k)/(1-j/k)$, $(t^{2/3})^3=t^2$, the piecewise constant $30$ of $|\ell\pm 15|$ inside $(-15,15)$, and $r^3+s^3+t^3=-792$ at $(3,8,-11)$.",
@@ -906,13 +1022,19 @@ Match.""",
                 
             ),
             (
-                r"""Provided $g\neq 0$, reducing $\dfrac{(g^{2})^{3}}{g^{4}}$ by cancelling the printed digits $2,3,4$ in order is claimed to leave $g^{-1}$, and substituting $g=1$ is offered as confirmation.""",
+                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals $h$ divided by the sum of the square of $h$ and one.""",
                 False,
-                r"""Correct reduction:
+                r"""Translate the wording into symbols before simplifying:
 
-$$\frac{(g^{2})^{3}}{g^{4}}=g^{2}$$
+Left-hand wording:
 
-Digit-wise cancellation is not a law of exponents. Agreement at $g=1$ hides the error because every power of $1$ equals $1$.""",
+$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
+
+Right-hand wording:
+
+$$\frac{h}{h^2+1}$$
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Writing the quotient $\bigl|\dfrac{r}{s}\bigr|$ as $\dfrac{|r|}{|s|}$ for $s\neq 0$ is accepted.",
@@ -934,15 +1056,27 @@ Digit-wise cancellation is not a law of exponents. Agreement at $g=1$ hides the 
         context=CTX,
         items=[
             (
-                r"""Denesting $\sqrt{11+6\sqrt{2}}$ is claimed to produce $3-\sqrt{2}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8v^2b}{4x^2-16}}{\dfrac{4vb}{2x+4}}$ simplifies to $\dfrac{v}{x+2}$ for $x\neq\pm 2$ and $v,b\neq 0$.""",
                 False,
-                r"""Square:
+                r"""Factor every polynomial factor before cancelling:
 
-$$(3-\sqrt{2})^2=9-6\sqrt{2}+2=11-6\sqrt{2}$$
+Difference of squares:
 
-Wrong middle sign.
+$$4x^2-16=4(x-2)(x+2)$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8v^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4vb}$$
+
+Result:
+
+$$\frac{v}{x - 2}$$
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Cancelling a difference of squares, $\dfrac{j^2-121}{j-11}$ is said to leave $j+11$ for $j\neq 11$, and substituting $j=0$ recovers $11$ on both sides.",
@@ -950,19 +1084,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""From the elementary symmetric data $u+v=6$ and $uv=8$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $2$.""",
+                r"""For $q\neq 0$, $(3q^{-1}-1)(3q^{-1}+1)=\dfrac{9}{q^2}-1$.""",
                 True,
-                r"""Pass to the squared gap before taking roots:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=3q^{-1}$:
 
-Identity:
+Expand:
 
-$$(u-v)^2=(u+v)^2-4uv=6^2-4\cdot 8=4$$
+$$(3q^{-1})^2-1=\frac{9}{q^2}-1$$
 
-Principal root:
-
-$$|u-v|=\sqrt{4}=2$$
-
-The printed constant matches.""",
+The coefficient on the reciprocal square is $9$, matching the claim.""",
             ),
             (
                 r"Dropping the bars around $2\ell+16$ and writing $2\ell+16$ for every real $\ell$ is offered as an identity.",
@@ -999,21 +1129,27 @@ The printed constant matches.""",
                 
             ),
             (
-                r"""From the elementary symmetric data $u+v=12$ and $uv=32$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $4$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8n^2b}{4x^2-16}}{\dfrac{4nb}{2x+4}}$ simplifies to $\dfrac{n}{x-2}$ for $x\neq\pm 2$ and $n,b\neq 0$.""",
                 True,
-                r"""Pass to the squared gap before taking roots:
+                r"""Factor every polynomial factor before cancelling:
 
-Identity:
+Difference of squares:
 
-$$(u-v)^2=(u+v)^2-4uv=12^2-4\cdot 32=16$$
+$$4x^2-16=4(x-2)(x+2)$$
 
-Principal root:
+Linear factor:
 
-$$|u-v|=\sqrt{16}=4$$
+$$2x+4=2(x+2)$$
 
-The printed constant matches.
+Division:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$\frac{8n^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4nb}$$
+
+Result:
+
+$$\frac{n}{x - 2}$$
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Given the pair $u+v=14$ and $uv=13$, the sum $u^2+v^2$ is evaluated as $170$.",
@@ -1035,15 +1171,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""A marker treats $n^4+4m^4$ as identically equal to $(n^2+2m^2)(n^2-2m^2)$ for every real pair $(n,m)$, citing a shortened Sophie Germain argument.""",
+                r"""For $q\neq 0$, $(6q^{-1}-1)(6q^{-1}+1)=\dfrac{1}{36q^2}-1$.""",
                 False,
-                r"""A difference of squares in $n^2$ and $2m^2$ would give
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=6q^{-1}$:
 
-Product:
+Expand:
 
-$$(n^2+2m^2)(n^2-2m^2)=n^4-4m^4$$
+$$(6q^{-1})^2-1=\frac{36}{q^2}-1$$
 
-The sign of the last term is wrong for $n^4+4m^4$.""",
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Simplifying a monomial radical, $(16k^4)^{1/4}$ is rewritten as $2k$ for every real $k$.",
@@ -1051,23 +1187,19 @@ The sign of the last term is wrong for $n^4+4m^4$.""",
                 
             ),
             (
-                r"""For $m\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{m}{m-1}-\dfrac{m-1}{m}}{\dfrac{m}{m-1}+\dfrac{m-1}{m}}$ is reduced to $\dfrac{2m-1}{2m^2-2m}$ after clearing the inner denominators once.""",
+                r"""Let $p$ be a nonzero real parameter. Twice the reciprocal of the sum of $p$ and the reciprocal of $p$ equals $p$ divided by the sum of the square of $p$ and one.""",
                 False,
-                r"""Clear each inner pair over $m(m-1)$:
+                r"""Translate the wording into symbols before simplifying:
 
-Numerator:
+Left-hand wording:
 
-$$\frac{m}{m-1}-\frac{m-1}{m}=\frac{m^2-(m-1)^2}{m(m-1)}=\frac{2m-1}{m(m-1)}$$
+$$\frac{2}{p+\frac{1}{p}}=\frac{2p}{p^2+1}$$
 
-Denominator:
+Right-hand wording:
 
-$$\frac{m}{m-1}+\frac{m-1}{m}=\frac{m^2+(m-1)^2}{m(m-1)}=\frac{2m^2-2m+1}{m(m-1)}$$
+$$\frac{p}{p^2+1}$$
 
-Quotient:
-
-$$\frac{2m-1}{2m^2-2m+1}$$
-
-The printed denominator drops the constant $+1$, so the claim is false.""",
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Adding the reciprocals from $r+s=13$ and $rs=21$ is claimed to give $1/r+1/s=13/21$.",
@@ -1104,25 +1236,15 @@ The printed denominator drops the constant $+1$, so the claim is false.""",
                 
             ),
             (
-                r"""For $z\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{z}{z-1}-\dfrac{z-1}{z}}{\dfrac{z}{z-1}+\dfrac{z-1}{z}}$ is reduced to $\dfrac{2z-1}{2z^2-2z+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For $q\neq 0$, $(5q^{-1}-1)(5q^{-1}+1)=\dfrac{25}{q^2}-1$.""",
                 True,
-                r"""Clear each inner pair over $z(z-1)$:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=5q^{-1}$:
 
-Numerator:
+Expand:
 
-$$\frac{z}{z-1}-\frac{z-1}{z}=\frac{z^2-(z-1)^2}{z(z-1)}=\frac{2z-1}{z(z-1)}$$
+$$(5q^{-1})^2-1=\frac{25}{q^2}-1$$
 
-Denominator:
-
-$$\frac{z}{z-1}+\frac{z-1}{z}=\frac{z^2+(z-1)^2}{z(z-1)}=\frac{2z^2-2z+1}{z(z-1)}$$
-
-Quotient:
-
-$$\frac{2z-1}{2z^2-2z+1}$$
-
-The printed target matches the reduced form.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The coefficient on the reciprocal square is $25$, matching the claim.""",
             ),
         ],
         overview=r"Five unlinked lines: a forgotten doubling of $fh$, opposite linear fractions summing to $1$ not $0$, $\sqrt[3]{-8s^9}=-2s^3$, $|-\ell|=|\ell|$, and $r^3+u^3+w^3=3ruw$ at $(5,11,-16)$.",
@@ -1144,15 +1266,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Cancelling $j-8$ from $\dfrac{j^3-512}{j-8}$ leaves $j^2+8j+64$ for $j\neq 8$. Substituting $j=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
-                True,
-                r"""Difference of cubes with constant $8^3$:
+                r"""If $b>0$, then $\dfrac{b^{2/3}\cdot\sqrt[3]{b\sqrt{b}}}{b^{1/6}\cdot\sqrt[6]{b^5}}=\sqrt[3]{b}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Identity:
+Numerator:
 
-$$\frac{j^3-512}{j-8}=j^2+8j+64$$
+$$b^{2/3}\cdot(b\cdotb^{1/2})^{1/3}=b^{2/3}\cdotb^{(1+1/2)/3}=b^{2/3}\cdotb^{1/2}$$
 
-The substitution check is consistent with a true polynomial identity.""",
+Denominator:
+
+$$b^{1/6}\cdot(b^5)^{1/6}=b^{1/6}\cdotb^{5/6}=b$$
+
+Quotient:
+
+$$\sqrt[6]{b}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Opposite linear forms satisfy $|3\ell-21|=|21-3\ell|$ for every real $\ell$.",
@@ -1160,13 +1290,27 @@ The substitution check is consistent with a true polynomial identity.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}+\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
-                True,
-                r"""Square:
+                r"""The stacked quotient $\dfrac{\dfrac{8q^2b}{4x^2-16}}{\dfrac{4qb}{2x+4}}$ simplifies to $\dfrac{q}{x+2}$ for $x\neq\pm 2$ and $q,b\neq 0$.""",
+                False,
+                r"""Factor every polynomial factor before cancelling:
 
-$$(\sqrt{5}+\sqrt{3})^2=5+2\sqrt{15}+3=8+2\sqrt{15}$$
+Difference of squares:
 
-Both sides positive.""",
+$$4x^2-16=4(x-2)(x+2)$$
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8q^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4qb}$$
+
+Result:
+
+$$\frac{q}{x - 2}$$
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
         ],
         overview=r"Unlinked claims: the $gh$ coefficient $-8$ in $(f-4g+h)^2$, a halved numerator $11$ instead of $22$, the wrong conjugate of $\sqrt{21+8\sqrt{5}}$, $|3\ell-21|=|21-3\ell|$, and $k/m+m/k=61/7$ rather than $5/7$.",
@@ -1178,25 +1322,27 @@ Both sides positive.""",
         context=CTX,
         items=[
             (
-                r"""For $s\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{s}{s-1}-\dfrac{s-1}{s}}{\dfrac{s}{s-1}+\dfrac{s-1}{s}}$ is reduced to $\dfrac{2s-1}{2s^2-2s+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8h^2b}{4x^2-16}}{\dfrac{4hb}{2x+4}}$ simplifies to $\dfrac{h}{x-2}$ for $x\neq\pm 2$ and $h,b\neq 0$.""",
                 True,
-                r"""Clear each inner pair over $s(s-1)$:
+                r"""Factor every polynomial factor before cancelling:
 
-Numerator:
+Difference of squares:
 
-$$\frac{s}{s-1}-\frac{s-1}{s}=\frac{s^2-(s-1)^2}{s(s-1)}=\frac{2s-1}{s(s-1)}$$
+$$4x^2-16=4(x-2)(x+2)$$
 
-Denominator:
+Linear factor:
 
-$$\frac{s}{s-1}+\frac{s-1}{s}=\frac{s^2+(s-1)^2}{s(s-1)}=\frac{2s^2-2s+1}{s(s-1)}$$
+$$2x+4=2(x+2)$$
 
-Quotient:
+Division:
 
-$$\frac{2s-1}{2s^2-2s+1}$$
+$$\frac{8h^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4hb}$$
 
-The printed target matches the reduced form.
+Result:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$\frac{h}{x - 2}$$
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Cancelling a quadratic, $\dfrac{k^2-29k+210}{k-15}$ is said to leave $k-14$ for $k\neq 15$.",
@@ -1228,15 +1374,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
         context=CTX,
         items=[
             (
-                r"""Denesting $\sqrt{15+6\sqrt{6}}$ is claimed to produce $3+\sqrt{6}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""If $q>0$, then $\dfrac{q^{2/3}\cdot\sqrt[3]{q\sqrt{q}}}{q^{1/6}\cdot\sqrt[6]{q^5}}=\sqrt[6]{q}$.""",
                 True,
-                r"""Square:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(3+\sqrt{6})^2=9+6\sqrt{6}+6=15+6\sqrt{6}$$
+Numerator:
 
-Match.
+$$q^{2/3}\cdot(q\cdotq^{1/2})^{1/3}=q^{2/3}\cdotq^{(1+1/2)/3}=q^{2/3}\cdotq^{1/2}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Denominator:
+
+$$q^{1/6}\cdot(q^5)^{1/6}=q^{1/6}\cdotq^{5/6}=q$$
+
+Quotient:
+
+$$\sqrt[6]{q}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Clearing a difference of reciprocal squares, $\dfrac{1}{j^2}-\dfrac{1}{k^2}$ is said to equal $\dfrac{k-j}{j^2k^2}$ whenever $jk\neq 0$.",
@@ -1249,17 +1403,27 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Provided $r\neq 0$, reducing $\dfrac{(r^{2})^{3}}{r^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $r^{2}$. A numerical check at $r=2$ recovers $4$ on both sides and is consistent with the identity.""",
-                True,
-                r"""Numerator:
+                r"""The stacked quotient $\dfrac{\dfrac{8m^2b}{4x^2-16}}{\dfrac{4mb}{2x+4}}$ simplifies to $\dfrac{m}{x+2}$ for $x\neq\pm 2$ and $m,b\neq 0$.""",
+                False,
+                r"""Factor every polynomial factor before cancelling:
 
-$$(r^{2})^{3}=r^{6}$$
+Difference of squares:
 
-Quotient:
+$$4x^2-16=4(x-2)(x+2)$$
 
-$$\frac{r^{6}}{r^{4}}=r^{2}$$
+Linear factor:
 
-The check at $r=2$ is consistent because the algebra already matches.""",
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8m^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4mb}$$
+
+Result:
+
+$$\frac{m}{x - 2}$$
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Given the elementary data $u+v=21$ and $uv=16$, the sum $u^2+v^2$ is claimed to equal $441$.",
@@ -1281,15 +1445,23 @@ The check at $r=2$ is consistent because the algebra already matches.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{7+4\sqrt{3}}$ is claimed to produce $\sqrt{3}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For $x\neq\pm 1$, $\dfrac{6x-4}{x^2-1}-\dfrac{1}{1+x}+\dfrac{2}{x-1}-\dfrac{1}{1-x}=\dfrac{4}{x-1}$.""",
                 False,
-                r"""Square:
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-$$(\sqrt{3}-2)^2=3-4\sqrt{3}+4=7-4\sqrt{3}$$
+Rewrite the last term:
 
-Wrong sign on the middle term; also $\sqrt{3}-2<0$ cannot be a principal root.
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Clear:
+
+$$\frac{6x-4}{x^2-1}-\frac{1}{x+1}+\frac{2}{x-1}+\frac{1}{x-1}$$
+
+Simplified left-hand side:
+
+$$\frac{8 x}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{8 x}{x^{2} - 1}$, not $\dfrac{4}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Denesting the nested radical $\sqrt{13+2\sqrt{30}}$ is claimed to equal $\sqrt{10}-\sqrt{3}$.",
@@ -1321,17 +1493,27 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""A marker treats $h^4+4k^4$ as identically equal to $(h^2+2k^2)(h^2-2k^2)$ for every real pair $(h,k)$, citing a shortened Sophie Germain argument, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8h^2b}{4x^2-16}}{\dfrac{4hb}{2x+4}}$ simplifies to $\dfrac{h}{x+2}$ for $x\neq\pm 2$ and $h,b\neq 0$.""",
                 False,
-                r"""A difference of squares in $h^2$ and $2k^2$ would give
+                r"""Factor every polynomial factor before cancelling:
 
-Product:
+Difference of squares:
 
-$$(h^2+2k^2)(h^2-2k^2)=h^4-4k^4$$
+$$4x^2-16=4(x-2)(x+2)$$
 
-The sign of the last term is wrong for $h^4+4k^4$.
+Linear factor:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$2x+4=2(x+2)$$
+
+Division:
+
+$$\frac{8h^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4hb}$$
+
+Result:
+
+$$\frac{h}{x - 2}$$
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Composing the fifth-power stack $(w^{2/5})^{5/2}$ is said to return $w$ whenever $w>0$.",
@@ -1344,19 +1526,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""From the elementary symmetric data $u+v=11$ and $uv=24$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $6$.""",
+                r"""For $x\neq\pm 1$, $\dfrac{2x-2}{x^2-1}-\dfrac{1}{1+x}+\dfrac{1}{x-1}-\dfrac{1}{1-x}=\dfrac{2}{x-1}$.""",
                 False,
-                r"""Pass to the squared gap before taking roots:
+                r"""Common denominator $(x-1)(x+1)=x^2-1$. Rewrite $\dfrac{1}{1-x}=-\dfrac{1}{x-1}$:
 
-Identity:
+Rewrite the last term:
 
-$$(u-v)^2=(u+v)^2-4uv=11^2-4\cdot 24=25$$
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
 
-Principal root:
+Clear:
 
-$$|u-v|=\sqrt{25}=5$$
+$$\frac{2x-2}{x^2-1}-\frac{1}{x+1}+\frac{1}{x-1}+\frac{1}{x-1}$$
 
-The true distance is $5$, not $6$.""",
+Simplified left-hand side:
+
+$$\frac{3 x + 1}{x^{2} - 1}$$
+
+After the full clear the left-hand side is $\frac{3 x + 1}{x^{2} - 1}$, not $\dfrac{2}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
         ],
         overview=r"Independent claims: the $gh$ coefficient $12$ in $(f-2g-3h)^2$, $(j-1/j)/(j+1/j)=(j^2-1)/(j^2+1)$, $(w^{2/5})^{5/2}=w$ for $w>0$, $|2\ell|/\ell$ only piecewise $2$, and $|k-m|=2\sqrt{29}$ rather than $6$.",
@@ -1378,17 +1564,19 @@ The true distance is $5$, not $6$.""",
                 
             ),
             (
-                r"""A marker treats $j^4+4k^4$ as identically equal to $(j^2+2jk+2k^2)^2$ for every real pair $(j,k)$, citing a shortened Sophie Germain argument, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals $m$ divided by the sum of the square of $m$ and one.""",
                 False,
-                r"""Squaring one Sophie Germain factor alone produces
+                r"""Translate the wording into symbols before simplifying:
 
-Expand:
+Left-hand wording:
 
-$$(j^2+2jk+2k^2)^2=j^4+4j^3k+8j^2k^2+8jk^3+4k^4$$
+$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
 
-Cross terms survive; the identity requires the product of both conjugate factors.
+Right-hand wording:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$\frac{m}{m^2+1}$$
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Adding opposite quotients, $|\ell|/\ell+|\ell|/(-\ell)$ equals $0$ for every $\ell\neq 0$.",

@@ -12,15 +12,15 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Restricting to $n<0$, the quotient $\dfrac{|n|}{n}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""Whenever a real point lies between $1$ and $6$ inclusive, the sum of its distances to $1$ and to $6$ equals the length of that segment.""",
                 True,
-                r"""On $n<0$ one has $|n|=-n$, hence
+                r"""On $[1,6]$ open the bars:
 
-Quotient:
+Rewrite:
 
-$$\frac{|n|}{n}=\frac{-n}{n}=-1$$
+$$|k-1|+|k-6|=(k-1)+(6-k)=5$$
 
-The constant $-1$ matches.""",
+The constant equals the segment length $5$.""",
             ),
             (
                 r"For every real $u$, dropping the bars in $|2u+1|=2u+1$ is treated as legal.",
@@ -28,19 +28,15 @@ The constant $-1$ matches.""",
                 
             ),
             (
-                r"""Factoring inside the bars, $|x^2-8x+7|$ is rewritten as $|x-1|\,|x-7|$ for every real $x$. The identity is then used to read off the zeros $x=1$ and $x=7$ without expanding.""",
-                True,
-                r"""The trinomial factors as $(x-1)(x-7)$:
+                r"""For $u,v\neq 0$ and $u\neq -v$, $\dfrac{3}{u}+\dfrac{7}{v}=\dfrac{3v+7u}{u+v}$.""",
+                False,
+                r"""Clear with the product denominator (not the sum):
 
-Factor:
+Correct identity:
 
-$$x^2-8x+7=(x-1)(x-7)$$
+$$\frac{3}{u}+\frac{7}{v}=\frac{3v+7u}{uv}$$
 
-Absolute value:
-
-$$|x^2-8x+7|=|x-1|\,|x-7|$$
-
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+The printed denominator $u+v$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"Away from $h=1$, the quotient $|h-1|/(1-h)$ is recorded as identically $1$.",
@@ -77,15 +73,15 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""Restricting to $\ell<0$, the quotient $\dfrac{|\ell|}{\ell}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""For $x,y\neq 0$, $\dfrac{2}{x}+\dfrac{3}{y}=\dfrac{2y+3x}{xy}$.""",
                 True,
-                r"""On $\ell<0$ one has $|\ell|=-\ell$, hence
+                r"""Least common denominator of $x$ and $y$ is the product $xy$:
 
-Quotient:
+Clear:
 
-$$\frac{|\ell|}{\ell}=\frac{-\ell}{\ell}=-1$$
+$$\frac{2}{x}+\frac{3}{y}=\frac{2y+3x}{xy}$$
 
-The constant $-1$ matches.""",
+Numerator and denominator both match.""",
             ),
             (
                 r"After substituting $h=-4$, the principal root $\sqrt{h^2}$ is said to equal $-4$.",
@@ -107,15 +103,15 @@ The constant $-1$ matches.""",
                 
             ),
             (
-                r"""On the whole real line, $|k-3|+|k-6|+|k-9|$ is claimed to equal the constant $6$, by extending the two-point segment rule to three marks.""",
-                False,
-                r"""The two-point identity $|k-3|+|k-9|=6$ holds only on $[3,9]$. With a third mark the piecewise expression changes:
+                r"""For $h,k\neq 0$, $\dfrac{6}{h}+\dfrac{1}{k}=\dfrac{6k+1h}{hk}$.""",
+                True,
+                r"""Least common denominator of $h$ and $k$ is the product $hk$:
 
-On $[3,6]$:
+Clear:
 
-$$|k-3|+|k-6|+|k-9|=(k-3)+(6-k)+(9-k)=12-k$$
+$$\frac{6}{h}+\frac{1}{k}=\frac{6k+1h}{hk}$$
 
-The right-hand side still depends on $k$, so it is not the constant $6$.""",
+Numerator and denominator both match.""",
             ),
             (
                 r"A booklet records $|z|/z=1$ for every $z\neq 0$.",
@@ -123,15 +119,19 @@ The right-hand side still depends on $k$, so it is not the constant $6$.""",
                 
             ),
             (
-                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-4|$ collapses to $|x-4|$, because $|x|=x$ removes the inner bars before the outer comparison with $4$.""",
+                r"""For every real $x$, $|x^2-8x+7|=|x-1|\,|x-7|$.""",
                 True,
-                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-Collapse:
+Factor:
 
-$$||x|-4|=|x-4|$$
+$$x^2-8x+7=(x-1)(x-7)$$
 
-The two expressions agree on the stated half-line.""",
+Bars:
+
+$$|x^2-8x+7|=|x-1|\,|x-7|$$
+
+The identity holds on the whole line.""",
             ),
             (
                 r"At the origin $k=0$, both $|k|/k$ and $k/|k|$ are declared equal to $0$.",
@@ -168,15 +168,19 @@ The two expressions agree on the stated half-line.""",
                 
             ),
             (
-                r"""On the whole real line, $|k-4|+|k-7|+|k-12|$ is claimed to equal the constant $8$, by extending the two-point segment rule to three marks.""",
-                False,
-                r"""The two-point identity $|k-4|+|k-12|=8$ holds only on $[4,12]$. With a third mark the piecewise expression changes:
+                r"""For every real $x$, $|x^2-7x+12|=|x-3|\,|x-4|$.""",
+                True,
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-On $[4,7]$:
+Factor:
 
-$$|k-4|+|k-7|+|k-12|=(k-4)+(7-k)+(12-k)=15-k$$
+$$x^2-7x+12=(x-3)(x-4)$$
 
-The right-hand side still depends on $k$, so it is not the constant $8$.""",
+Bars:
+
+$$|x^2-7x+12|=|x-3|\,|x-4|$$
+
+The identity holds on the whole line.""",
             ),
         ],
         overview="A constant factor comes out as its absolute value. Adding a constant is a translation, and $|A|+|B|$ is not identically $|A+B|$.",
@@ -198,19 +202,15 @@ The right-hand side still depends on $k$, so it is not the constant $8$.""",
                 
             ),
             (
-                r"""Factoring inside the bars, $|x^2-7x+10|$ is rewritten as $|x-2|\,|x-5|$ for every real $x$. The identity is then used to read off the zeros $x=2$ and $x=5$ without expanding.""",
-                True,
-                r"""The trinomial factors as $(x-2)(x-5)$:
+                r"""For every real $x$, $|x^2-7x+10|=(x-2)(x-5)$.""",
+                False,
+                r"""The polynomial factorisation $x^2-7x+10=(x-2)(x-5)$ is correct, but
 
-Factor:
-
-$$x^2-7x+10=(x-2)(x-5)$$
-
-Absolute value:
+With bars:
 
 $$|x^2-7x+10|=|x-2|\,|x-5|$$
 
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(2,5)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"The swap $|z-4|=|4-z|$ is used as an identity.",
@@ -218,15 +218,15 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""Restricting to $n>0$, the quotient $\dfrac{|n|}{n}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
-                True,
-                r"""On $n>0$ one has $|n|=n$, hence
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $7$ equals the length of the segment from $1$ to $7$.""",
+                False,
+                r"""Outside $[1,7]$ the identity fails. For $k>7$:
 
-Quotient:
+Outside:
 
-$$\frac{|n|}{n}=1$$
+$$|k-1|+|k-7|=( k-1)+(k-7)=2k-(1+7)$$
 
-The constant $1$ matches.""",
+The right-hand side still depends on $k$, so it is not the constant $6$.""",
             ),
         ],
         overview="Extra bars around an already nonnegative quantity are idle. A minus inside bars is not a minus outside bars, and nested bars never recover a signed inside.",
@@ -238,19 +238,19 @@ The constant $1$ matches.""",
         context=CONTEXT,
         items=[
             (
-                r"""On the whole real line, $||x|-6|$ is treated as identical to $|x-6|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
-                False,
-                r"""For $x=-6-1<0$ one has $|x|=6+1$, so
+                r"""For every real $x$, $|x^2-7x+10|=|x-2|\,|x-5|$.""",
+                True,
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-Nested:
+Factor:
 
-$$||x|-6|=|6+1-6|=1$$
+$$x^2-7x+10=(x-2)(x-5)$$
 
-Single:
+Bars:
 
-$$|x-6|=|-6-1-6|=|-13|=13$$
+$$|x^2-7x+10|=|x-2|\,|x-5|$$
 
-Since $1\neq 13$, the expressions differ for negative $x$.""",
+The identity holds on the whole line.""",
             ),
             (
                 r"On the half-line $u<0$, flipping $|u|$ to $-u$ and then adding $u$ is said to leave $0$.",
@@ -282,19 +282,15 @@ Since $1\neq 13$, the expressions differ for negative $x$.""",
         context=CONTEXT,
         items=[
             (
-                r"""Factoring inside the bars, $|x^2-9x+8|$ is rewritten as $|x-1|\,|x-8|$ for every real $x$. The identity is then used to read off the zeros $x=1$ and $x=8$ without expanding.""",
-                True,
-                r"""The trinomial factors as $(x-1)(x-8)$:
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $2$ and to $8$ equals the length of the segment from $2$ to $8$.""",
+                False,
+                r"""Outside $[2,8]$ the identity fails. For $k>8$:
 
-Factor:
+Outside:
 
-$$x^2-9x+8=(x-1)(x-8)$$
+$$|k-2|+|k-8|=( k-2)+(k-8)=2k-(2+8)$$
 
-Absolute value:
-
-$$|x^2-9x+8|=|x-1|\,|x-8|$$
-
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+The right-hand side still depends on $k$, so it is not the constant $6$.""",
             ),
             (
                 r"Distance interpretation treats $|u-1|$ as possibly negative when $u<1$.",
@@ -307,19 +303,15 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""On the whole real line, $||x|-5|$ is treated as identical to $|x-5|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
-                False,
-                r"""For $x=-5-1<0$ one has $|x|=5+1$, so
+                r"""Whenever a real point lies between $2$ and $7$ inclusive, the sum of its distances to $2$ and to $7$ equals the length of that segment.""",
+                True,
+                r"""On $[2,7]$ open the bars:
 
-Nested:
+Rewrite:
 
-$$||x|-5|=|5+1-5|=1$$
+$$|k-2|+|k-7|=(k-2)+(7-k)=5$$
 
-Single:
-
-$$|x-5|=|-5-1-5|=|-11|=11$$
-
-Since $1\neq 11$, the expressions differ for negative $x$.""",
+The constant equals the segment length $5$.""",
             ),
             (
                 r"Provided $k\ge 8$, the rewrite $|k-8|=k-8$ then adding $8$ is claimed to recover $k$.",
@@ -341,15 +333,15 @@ Since $1\neq 11$, the expressions differ for negative $x$.""",
                 
             ),
             (
-                r"""Restricting to $r<0$, the quotient $\dfrac{|r|}{r}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $4$ and to $10$ equals the length of the segment from $4$ to $10$.""",
                 False,
-                r"""On $r<0$ one has $|r|=-r$, hence
+                r"""Outside $[4,10]$ the identity fails. For $k>10$:
 
-Quotient:
+Outside:
 
-$$\frac{|r|}{r}=\frac{-r}{r}=-1$$
+$$|k-4|+|k-10|=( k-4)+(k-10)=2k-(4+10)$$
 
-The true constant is $-1$, not $1$.""",
+The right-hand side still depends on $k$, so it is not the constant $6$.""",
             ),
             (
                 r"Replacing $|k+n|$ by $|k|+|n|$ as a product-style identity, so $|8+(-4)|$ is recorded as $12$.",
@@ -381,17 +373,15 @@ The true constant is $-1$, not $1$.""",
                 
             ),
             (
-                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-4|$ collapses to $|x-4|$, because $|x|=x$ removes the inner bars before the outer comparison with $4$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For $a,b\neq 0$, $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1b+1a}{ab}$.""",
                 True,
-                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+                r"""Least common denominator of $a$ and $b$ is the product $ab$:
 
-Collapse:
+Clear:
 
-$$||x|-4|=|x-4|$$
+$$\frac{1}{a}+\frac{1}{b}=\frac{1b+1a}{ab}$$
 
-The two expressions agree on the stated half-line.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Numerator and denominator both match.""",
             ),
             (
                 r"Cancelling $|z-6|/(6-z)$ to $1$ for every $z\neq 6$ is proposed.",
@@ -404,15 +394,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Restricting to $w<0$, the quotient $\dfrac{|w|}{w}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
-                True,
-                r"""On $w<0$ one has $|w|=-w$, hence
+                r"""For $m,n\neq 0$ and $m\neq -n$, $\dfrac{5}{m}+\dfrac{2}{n}=\dfrac{5n+2m}{m+n}$.""",
+                False,
+                r"""Clear with the product denominator (not the sum):
 
-Quotient:
+Correct identity:
 
-$$\frac{|w|}{w}=\frac{-w}{w}=-1$$
+$$\frac{5}{m}+\frac{2}{n}=\frac{5n+2m}{mn}$$
 
-The constant $-1$ matches.""",
+The printed denominator $m+n$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
         ],
         overview="Each opposite linear pair produces a piecewise constant $\\pm 1$, undefined at its own root. A global cancellation to $1$ ignores the side where the denominator is the opposite of the bars.",
@@ -434,15 +424,15 @@ The constant $-1$ matches.""",
                 
             ),
             (
-                r"""On the whole real line, $|k-1|+|k-3|+|k-9|$ is claimed to equal the constant $8$, by extending the two-point segment rule to three marks.""",
-                False,
-                r"""The two-point identity $|k-1|+|k-9|=8$ holds only on $[1,9]$. With a third mark the piecewise expression changes:
+                r"""For $u,v\neq 0$, $\dfrac{3}{u}+\dfrac{7}{v}=\dfrac{3v+7u}{uv}$.""",
+                True,
+                r"""Least common denominator of $u$ and $v$ is the product $uv$:
 
-On $[1,3]$:
+Clear:
 
-$$|k-1|+|k-3|+|k-9|=(k-1)+(3-k)+(9-k)=11-k$$
+$$\frac{3}{u}+\frac{7}{v}=\frac{3v+7u}{uv}$$
 
-The right-hand side still depends on $k$, so it is not the constant $8$.""",
+Numerator and denominator both match.""",
             ),
             (
                 r"Left of the knot $h<1$, the sum $|h-1|+|h-8|$ is rewritten as the constant $7$.",
@@ -464,19 +454,15 @@ The right-hand side still depends on $k$, so it is not the constant $8$.""",
         context=CONTEXT,
         items=[
             (
-                r"""Factoring inside the bars, $|x^2-9x+18|$ is rewritten as $|x-3|\,|x-6|$ for every real $x$. The identity is then used to read off the zeros $x=3$ and $x=6$ without expanding.""",
-                True,
-                r"""The trinomial factors as $(x-3)(x-6)$:
+                r"""For $a,b\neq 0$ and $a\neq -b$, $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1b+1a}{a+b}$.""",
+                False,
+                r"""Clear with the product denominator (not the sum):
 
-Factor:
+Correct identity:
 
-$$x^2-9x+18=(x-3)(x-6)$$
+$$\frac{1}{a}+\frac{1}{b}=\frac{1b+1a}{ab}$$
 
-Absolute value:
-
-$$|x^2-9x+18|=|x-3|\,|x-6|$$
-
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+The printed denominator $a+b$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"The identity $\sqrt{(u-1)^2}=|u-1|$ is recorded.",
@@ -484,19 +470,19 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""Restricting to $m\neq 0$, the quotient $\dfrac{|m|}{m}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
-                False,
-                r"""Away from zero the quotient equals $\mathrm{sign}(m)\in\{\pm 1\}$, not a single constant:
+                r"""For every real $x$, $|x^2-10x+16|=|x-2|\,|x-8|$.""",
+                True,
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-Positive side:
+Factor:
 
-$$\frac{|m|}{m}=1$$
+$$x^2-10x+16=(x-2)(x-8)$$
 
-Negative side:
+Bars:
 
-$$\frac{|m|}{m}=-1$$
+$$|x^2-10x+16|=|x-2|\,|x-8|$$
 
-A single value $-1$ cannot cover both sides.""",
+The identity holds on the whole line.""",
             ),
             (
                 r"After substituting $h=1$ into $\sqrt{(h-8)^2}$, the root is said to equal $1-8=-7$.",
@@ -533,19 +519,19 @@ A single value $-1$ cannot cover both sides.""",
                 
             ),
             (
-                r"""Factoring inside the bars, $|x^2-11x+24|$ is rewritten as $|x-3|\,|x-8|$ for every real $x$. The identity is then used to read off the zeros $x=3$ and $x=8$ without expanding.""",
+                r"""For every real $x$, $|x^2-10x+21|=|x-3|\,|x-7|$.""",
                 True,
-                r"""The trinomial factors as $(x-3)(x-8)$:
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
 Factor:
 
-$$x^2-11x+24=(x-3)(x-8)$$
+$$x^2-10x+21=(x-3)(x-7)$$
 
-Absolute value:
+Bars:
 
-$$|x^2-11x+24|=|x-3|\,|x-8|$$
+$$|x^2-10x+21|=|x-3|\,|x-7|$$
 
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+The identity holds on the whole line.""",
             ),
             (
                 r"Whenever $h<0$, forming $\sqrt{h^2}-h$ is said to leave $0$.",
@@ -567,21 +553,15 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""On the whole real line, $||x|-5|$ is treated as identical to $|x-5|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For every real $x$, $|x^2-10x+16|=(x-2)(x-8)$.""",
                 False,
-                r"""For $x=-5-1<0$ one has $|x|=5+1$, so
+                r"""The polynomial factorisation $x^2-10x+16=(x-2)(x-8)$ is correct, but
 
-Nested:
+With bars:
 
-$$||x|-5|=|5+1-5|=1$$
+$$|x^2-10x+16|=|x-2|\,|x-8|$$
 
-Single:
-
-$$|x-5|=|-5-1-5|=|-11|=11$$
-
-Since $1\neq 11$, the expressions differ for negative $x$.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(2,8)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"When $k=8$ and $n=-4$, a candidate says $|k+n|$ equals $|k|+|n|$.",
@@ -589,15 +569,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the closed interval $1\le k\le 8$, the two-point distance sum $|k-1|+|k-8|$ equals the constant $7$. Inserting the interior mark $5$ into a three-bar sum is a different expression and is not claimed here.""",
+                r"""Whenever a real point lies between $2$ and $8$ inclusive, the sum of its distances to $2$ and to $8$ equals the length of that segment.""",
                 True,
-                r"""For $k$ between $1$ and $8$ the bars open as
+                r"""On $[2,8]$ open the bars:
 
 Rewrite:
 
-$$|k-1|+|k-8|=(k-1)+(8-k)=7$$
+$$|k-2|+|k-8|=(k-2)+(8-k)=6$$
 
-The constant equals the length of the segment.""",
+The constant equals the segment length $6$.""",
             ),
             (
                 r"If both letters $k$ and $n$ are positive, $|k+n|=|k|+|n|$ is recorded.",
@@ -634,19 +614,15 @@ The constant equals the length of the segment.""",
                 
             ),
             (
-                r"""On the whole real line, $||x|-7|$ is treated as identical to $|x-7|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
-                False,
-                r"""For $x=-7-1<0$ one has $|x|=7+1$, so
+                r"""Whenever a real point lies between $3$ and $9$ inclusive, the sum of its distances to $3$ and to $9$ equals the length of that segment.""",
+                True,
+                r"""On $[3,9]$ open the bars:
 
-Nested:
+Rewrite:
 
-$$||x|-7|=|7+1-7|=1$$
+$$|k-3|+|k-9|=(k-3)+(9-k)=6$$
 
-Single:
-
-$$|x-7|=|-7-1-7|=|-15|=15$$
-
-Since $1\neq 15$, the expressions differ for negative $x$.""",
+The constant equals the segment length $6$.""",
             ),
         ],
         overview="$|cA|$ splits into two opposite linear pieces about the root of $A$. Dropping bars on the whole line, or omitting bars after factoring a positive scale, is illegal. The two pieces are not the same function.",
@@ -668,15 +644,15 @@ Since $1\neq 15$, the expressions differ for negative $x$.""",
                 
             ),
             (
-                r"""Restricting to $p<0$, the quotient $\dfrac{|p|}{p}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
-                True,
-                r"""On $p<0$ one has $|p|=-p$, hence
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $0$ and to $5$ equals the length of the segment from $0$ to $5$.""",
+                False,
+                r"""Outside $[0,5]$ the identity fails. For $k>5$:
 
-Quotient:
+Outside:
 
-$$\frac{|p|}{p}=\frac{-p}{p}=-1$$
+$$|k-0|+|k-5|=( k-0)+(k-5)=2k-(0+5)$$
 
-The constant $-1$ matches.""",
+The right-hand side still depends on $k$, so it is not the constant $5$.""",
             ),
             (
                 r"Someone writes $|h^2-14h+49|=h-7$ as an identity.",
@@ -684,15 +660,15 @@ The constant $-1$ matches.""",
                 
             ),
             (
-                r"""A marker drops the bars after factoring and writes $|x^2-9x+14|=(x-2)(x-7)$ as an identity on the whole line, citing that the two linear factors are "already ordered".""",
-                False,
-                r"""While $x^2-9x+14=(x-2)(x-7)$ as polynomials,
+                r"""For $r,s\neq 0$, $\dfrac{2}{r}+\dfrac{9}{s}=\dfrac{2s+9r}{rs}$.""",
+                True,
+                r"""Least common denominator of $r$ and $s$ is the product $rs$:
 
-With bars:
+Clear:
 
-$$|x^2-9x+14|=|x-2|\,|x-7|$$
+$$\frac{2}{r}+\frac{9}{s}=\frac{2s+9r}{rs}$$
 
-Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $|14|=14$ on the left but $(-2)(-7)=14$ only if the signs cooperate — already for $x=\min(2,7)-1$ the two sides disagree in sign.""",
+Numerator and denominator both match.""",
             ),
         ],
         overview="A quadratic that is a square, or that completes to a square plus a positive constant, may drop its bars. Absolute value of a square is not the linear factor, and is not identically zero.",
@@ -704,15 +680,15 @@ Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $
         context=CONTEXT,
         items=[
             (
-                r"""On the closed interval $1\le k\le 7$, the two-point distance sum $|k-1|+|k-7|$ equals the constant $6$. Inserting the interior mark $4$ into a three-bar sum is a different expression and is not claimed here.""",
+                r"""Whenever a real point lies between $0$ and $5$ inclusive, the sum of its distances to $0$ and to $5$ equals the length of that segment.""",
                 True,
-                r"""For $k$ between $1$ and $7$ the bars open as
+                r"""On $[0,5]$ open the bars:
 
 Rewrite:
 
-$$|k-1|+|k-7|=(k-1)+(7-k)=6$$
+$$|k-0|+|k-5|=(k-0)+(5-k)=5$$
 
-The constant equals the length of the segment.""",
+The constant equals the segment length $5$.""",
             ),
             (
                 r"Someone replaces $|w^3|$ by $w^3$ for every real $w$.",
@@ -744,17 +720,15 @@ The constant equals the length of the segment.""",
         context=CONTEXT,
         items=[
             (
-                r"""Restricting to $\ell<0$, the quotient $\dfrac{|\ell|}{\ell}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""On $\ell<0$ one has $|\ell|=-\ell$, hence
+                r"""For $h,k\neq 0$ and $h\neq -k$, $\dfrac{6}{h}+\dfrac{1}{k}=\dfrac{6k+1h}{h+k}$.""",
+                False,
+                r"""Clear with the product denominator (not the sum):
 
-Quotient:
+Correct identity:
 
-$$\frac{|\ell|}{\ell}=\frac{-\ell}{\ell}=-1$$
+$$\frac{6}{h}+\frac{1}{k}=\frac{6k+1h}{hk}$$
 
-The constant $-1$ matches.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The printed denominator $h+k$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.""",
             ),
             (
                 r"On the side $u>1$, $|1-u|$ equals $u-1$.",
@@ -767,15 +741,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the whole real line, $|k-0|+|k-4|+|k-7|$ is claimed to equal the constant $7$, by extending the two-point segment rule to three marks.""",
-                False,
-                r"""The two-point identity $|k-0|+|k-7|=7$ holds only on $[0,7]$. With a third mark the piecewise expression changes:
+                r"""Whenever a real point lies between $1$ and $7$ inclusive, the sum of its distances to $1$ and to $7$ equals the length of that segment.""",
+                True,
+                r"""On $[1,7]$ open the bars:
 
-On $[0,4]$:
+Rewrite:
 
-$$|k-0|+|k-4|+|k-7|=(k-0)+(4-k)+(7-k)=11-k$$
+$$|k-1|+|k-7|=(k-1)+(7-k)=6$$
 
-The right-hand side still depends on $k$, so it is not the constant $7$.""",
+The constant equals the segment length $6$.""",
             ),
             (
                 r"The two pieces $8-k$ and $k-8$ are identical functions.",
@@ -797,15 +771,15 @@ The right-hand side still depends on $k$, so it is not the constant $7$.""",
                 
             ),
             (
-                r"""A marker drops the bars after factoring and writes $|x^2-9x+20|=(x-4)(x-5)$ as an identity on the whole line, citing that the two linear factors are "already ordered".""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $3$ and to $9$ equals the length of the segment from $3$ to $9$.""",
                 False,
-                r"""While $x^2-9x+20=(x-4)(x-5)$ as polynomials,
+                r"""Outside $[3,9]$ the identity fails. For $k>9$:
 
-With bars:
+Outside:
 
-$$|x^2-9x+20|=|x-4|\,|x-5|$$
+$$|k-3|+|k-9|=( k-3)+(k-9)=2k-(3+9)$$
 
-Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $|20|=20$ on the left but $(-4)(-5)=20$ only if the signs cooperate — already for $x=\min(4,5)-1$ the two sides disagree in sign.""",
+The right-hand side still depends on $k$, so it is not the constant $6$.""",
             ),
             (
                 r"Pulling a negative scalar out unchanged, $|-6z|=-6|z|$ is asserted.",
@@ -837,17 +811,19 @@ Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $
                 
             ),
             (
-                r"""On the whole real line, $|k-4|+|k-7|+|k-12|$ is claimed to equal the constant $8$, by extending the two-point segment rule to three marks, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""The two-point identity $|k-4|+|k-12|=8$ holds only on $[4,12]$. With a third mark the piecewise expression changes:
+                r"""For every real $x$, $|x^2-8x+12|=|x-2|\,|x-6|$.""",
+                True,
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-On $[4,7]$:
+Factor:
 
-$$|k-4|+|k-7|+|k-12|=(k-4)+(7-k)+(12-k)=15-k$$
+$$x^2-8x+12=(x-2)(x-6)$$
 
-The right-hand side still depends on $k$, so it is not the constant $8$.
+Bars:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$|x^2-8x+12|=|x-2|\,|x-6|$$
+
+The identity holds on the whole line.""",
             ),
             (
                 r"Whenever $k+n\ge 0$ the bars in $\sqrt{(k+n)^2}=|k+n|$ may be dropped.",
@@ -860,19 +836,19 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Factoring inside the bars, $|x^2-10x+24|$ is rewritten as $|x-4|\,|x-6|$ for every real $x$. The identity is then used to read off the zeros $x=4$ and $x=6$ without expanding.""",
+                r"""For every real $x$, $|x^2-6x+5|=|x-1|\,|x-5|$.""",
                 True,
-                r"""The trinomial factors as $(x-4)(x-6)$:
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
 Factor:
 
-$$x^2-10x+24=(x-4)(x-6)$$
+$$x^2-6x+5=(x-1)(x-5)$$
 
-Absolute value:
+Bars:
 
-$$|x^2-10x+24|=|x-4|\,|x-6|$$
+$$|x^2-6x+5|=|x-1|\,|x-5|$$
 
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+The identity holds on the whole line.""",
             ),
         ],
         overview="$\\sqrt{(A)^2}=|A|$. Replacing the root by a binomial needs the binomial nonnegative. A negative numerical substitute is the inside, not the principal root.",
@@ -894,19 +870,15 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""On the whole real line, $||x|-3|$ is treated as identical to $|x-3|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
+                r"""For every real $x$, $|x^2-7x+6|=(x-1)(x-6)$.""",
                 False,
-                r"""For $x=-3-1<0$ one has $|x|=3+1$, so
+                r"""The polynomial factorisation $x^2-7x+6=(x-1)(x-6)$ is correct, but
 
-Nested:
+With bars:
 
-$$||x|-3|=|3+1-3|=1$$
+$$|x^2-7x+6|=|x-1|\,|x-6|$$
 
-Single:
-
-$$|x-3|=|-3-1-3|=|-7|=7$$
-
-Since $1\neq 7$, the expressions differ for negative $x$.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,6)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"Left of the other knot $h<4$, the sum $|h-4|+|h-6|$ is rewritten as $2$ as well.",
@@ -928,19 +900,19 @@ Since $1\neq 7$, the expressions differ for negative $x$.""",
         context=CONTEXT,
         items=[
             (
-                r"""Restricting to $t\neq 0$, the quotient $\dfrac{|t|}{t}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
-                False,
-                r"""Away from zero the quotient equals $\mathrm{sign}(t)\in\{\pm 1\}$, not a single constant:
+                r"""For every real $x$, $|x^2-7x+6|=|x-1|\,|x-6|$.""",
+                True,
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-Positive side:
+Factor:
 
-$$\frac{|t|}{t}=1$$
+$$x^2-7x+6=(x-1)(x-6)$$
 
-Negative side:
+Bars:
 
-$$\frac{|t|}{t}=-1$$
+$$|x^2-7x+6|=|x-1|\,|x-6|$$
 
-A single value $1$ cannot cover both sides.""",
+The identity holds on the whole line.""",
             ),
             (
                 r"A margin note writes $u^2-2u+5=(u-1)^2-4$.",
@@ -948,19 +920,15 @@ A single value $1$ cannot cover both sides.""",
                 
             ),
             (
-                r"""Factoring inside the bars, $|x^2-6x+5|$ is rewritten as $|x-1|\,|x-5|$ for every real $x$. The identity is then used to read off the zeros $x=1$ and $x=5$ without expanding.""",
+                r"""Whenever a real point lies between $4$ and $10$ inclusive, the sum of its distances to $4$ and to $10$ equals the length of that segment.""",
                 True,
-                r"""The trinomial factors as $(x-1)(x-5)$:
+                r"""On $[4,10]$ open the bars:
 
-Factor:
+Rewrite:
 
-$$x^2-6x+5=(x-1)(x-5)$$
+$$|k-4|+|k-10|=(k-4)+(10-k)=6$$
 
-Absolute value:
-
-$$|x^2-6x+5|=|x-1|\,|x-5|$$
-
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
+The constant equals the segment length $6$.""",
             ),
             (
                 r"At $h=7$, the quadratic $h^2-14h+48$ equals $-1$, so the bars turn it into $1$.",
@@ -997,15 +965,15 @@ Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
                 
             ),
             (
-                r"""Restricting to $k>0$, the quotient $\dfrac{|k|}{k}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""Whenever a real point lies between $5$ and $11$ inclusive, the sum of its distances to $5$ and to $11$ equals the length of that segment.""",
                 True,
-                r"""On $k>0$ one has $|k|=k$, hence
+                r"""On $[5,11]$ open the bars:
 
-Quotient:
+Rewrite:
 
-$$\frac{|k|}{k}=1$$
+$$|k-5|+|k-11|=(k-5)+(11-k)=6$$
 
-The constant $1$ matches.""",
+The constant equals the segment length $6$.""",
             ),
             (
                 r"The numerical pair $k=8$, $n=-4$ is offered as a case where $|k+n|$ matches $|k|+|n|$.",
@@ -1027,15 +995,15 @@ The constant $1$ matches.""",
                 
             ),
             (
-                r"""On the closed interval $1\le k\le 6$, the two-point distance sum $|k-1|+|k-6|$ equals the constant $5$. Inserting the interior mark $2$ into a three-bar sum is a different expression and is not claimed here.""",
-                True,
-                r"""For $k$ between $1$ and $6$ the bars open as
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $2$ and to $7$ equals the length of the segment from $2$ to $7$.""",
+                False,
+                r"""Outside $[2,7]$ the identity fails. For $k>7$:
 
-Rewrite:
+Outside:
 
-$$|k-1|+|k-6|=(k-1)+(6-k)=5$$
+$$|k-2|+|k-7|=( k-2)+(k-7)=2k-(2+7)$$
 
-The constant equals the length of the segment.""",
+The right-hand side still depends on $k$, so it is not the constant $5$.""",
             ),
             (
                 r"At $z=6$, the quadratic $z^2-12z+35$ equals $-1$, so the bars turn it into $1$.",
@@ -1043,19 +1011,15 @@ The constant equals the length of the segment.""",
                 
             ),
             (
-                r"""On the whole real line, $||x|-9|$ is treated as identical to $|x-9|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $6$ equals the length of the segment from $1$ to $6$.""",
                 False,
-                r"""For $x=-9-1<0$ one has $|x|=9+1$, so
+                r"""Outside $[1,6]$ the identity fails. For $k>6$:
 
-Nested:
+Outside:
 
-$$||x|-9|=|9+1-9|=1$$
+$$|k-1|+|k-6|=( k-1)+(k-6)=2k-(1+6)$$
 
-Single:
-
-$$|x-9|=|-9-1-9|=|-19|=19$$
-
-Since $1\neq 19$, the expressions differ for negative $x$.""",
+The right-hand side still depends on $k$, so it is not the constant $5$.""",
             ),
             (
                 r"Because the completed form of $k^2-16k+63$ has a $-1$, the quadratic is negative for every $k$.",
@@ -1092,15 +1056,15 @@ Since $1\neq 19$, the expressions differ for negative $x$.""",
                 
             ),
             (
-                r"""On the whole real line, $|k-2|+|k-5|+|k-9|$ is claimed to equal the constant $7$, by extending the two-point segment rule to three marks.""",
+                r"""For every real $x$, $|x^2-10x+21|=(x-3)(x-7)$.""",
                 False,
-                r"""The two-point identity $|k-2|+|k-9|=7$ holds only on $[2,9]$. With a third mark the piecewise expression changes:
+                r"""The polynomial factorisation $x^2-10x+21=(x-3)(x-7)$ is correct, but
 
-On $[2,5]$:
+With bars:
 
-$$|k-2|+|k-5|+|k-9|=(k-2)+(5-k)+(9-k)=12-k$$
+$$|x^2-10x+21|=|x-3|\,|x-7|$$
 
-The right-hand side still depends on $k$, so it is not the constant $7$.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(3,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
         ],
         overview="The reverse triangle inequality bounds the gap of sizes by $|A-B|$. Equality is not automatic, dropping the outer bars can produce a negative, and opposite-sign pairs make $|A-B|$ the sum of sizes.",
@@ -1122,15 +1086,15 @@ The right-hand side still depends on $k$, so it is not the constant $7$.""",
                 
             ),
             (
-                r"""A marker drops the bars after factoring and writes $|x^2-10x+21|=(x-3)(x-7)$ as an identity on the whole line, citing that the two linear factors are "already ordered".""",
+                r"""For every real $x$, $|x^2-8x+7|=(x-1)(x-7)$.""",
                 False,
-                r"""While $x^2-10x+21=(x-3)(x-7)$ as polynomials,
+                r"""The polynomial factorisation $x^2-8x+7=(x-1)(x-7)$ is correct, but
 
 With bars:
 
-$$|x^2-10x+21|=|x-3|\,|x-7|$$
+$$|x^2-8x+7|=|x-1|\,|x-7|$$
 
-Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $|21|=21$ on the left but $(-3)(-7)=21$ only if the signs cooperate — already for $x=\min(3,7)-1$ the two sides disagree in sign.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"Someone claims $\bigl||h-7|\bigr|=h-7$ for every $h$.",
@@ -1138,15 +1102,15 @@ Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $
                 
             ),
             (
-                r"""Restricting to $u<0$, the quotient $\dfrac{|u|}{u}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""For every real $x$, $|x^2-6x+5|=(x-1)(x-5)$.""",
                 False,
-                r"""On $u<0$ one has $|u|=-u$, hence
+                r"""The polynomial factorisation $x^2-6x+5=(x-1)(x-5)$ is correct, but
 
-Quotient:
+With bars:
 
-$$\frac{|u|}{u}=\frac{-u}{u}=-1$$
+$$|x^2-6x+5|=|x-1|\,|x-5|$$
 
-The true constant is $-1$, not $1$.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(1,5)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
         ],
         overview="Extra bars around $|A|$ collapse. Stripping outer bars from $\\bigl||A|-c\\bigr|$ needs $|A|\\ge c$; nested bars never recover a signed translation $A-c$.",
@@ -1158,15 +1122,15 @@ The true constant is $-1$, not $1$.""",
         context=CONTEXT,
         items=[
             (
-                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-8|$ collapses to $|x-8|$, because $|x|=x$ removes the inner bars before the outer comparison with $8$.""",
-                True,
-                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+                r"""For every real $x$, $|x^2-7x+12|=(x-3)(x-4)$.""",
+                False,
+                r"""The polynomial factorisation $x^2-7x+12=(x-3)(x-4)$ is correct, but
 
-Collapse:
+With bars:
 
-$$||x|-8|=|x-8|$$
+$$|x^2-7x+12|=|x-3|\,|x-4|$$
 
-The two expressions agree on the stated half-line.""",
+Dropping the bars on the right changes the sign on half-lines. For $x=\min(3,4)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"On the side $u>1$, rewriting $|u-1|$ as $u-1$ and dividing by $1-u$ is said to leave $-1$.",
@@ -1198,21 +1162,19 @@ The two expressions agree on the stated half-line.""",
         context=CONTEXT,
         items=[
             (
-                r"""Factoring inside the bars, $|x^2-11x+24|$ is rewritten as $|x-3|\,|x-8|$ for every real $x$. The identity is then used to read off the zeros $x=3$ and $x=8$ without expanding, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For every real $a$, $|a^2-7x+6|=|a-1|\,|a-6|$.""",
                 True,
-                r"""The trinomial factors as $(x-3)(x-8)$:
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
 Factor:
 
-$$x^2-11x+24=(x-3)(x-8)$$
+$$a^2-7x+6=(a-1)(a-6)$$
 
-Absolute value:
+Bars:
 
-$$|x^2-11x+24|=|x-3|\,|x-8|$$
+$$|a^2-7x+6|=|a-1|\,|a-6|$$
 
-Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The identity holds on the whole line.""",
             ),
             (
                 r"The neighbouring trinomial $u^2-2u$ completes to $(u-1)^2-1$.",
@@ -1225,15 +1187,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-5|$ collapses to $|x-5|$, because $|x|=x$ removes the inner bars before the outer comparison with $5$.""",
-                True,
-                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+                r"""For every real $a$, $|a^2-7x+12|=(a-3)(a-4)$.""",
+                False,
+                r"""The polynomial factorisation $a^2-7x+12=(a-3)(a-4)$ is correct, but
 
-Collapse:
+With bars:
 
-$$||x|-5|=|x-5|$$
+$$|a^2-7x+12|=|a-3|\,|a-4|$$
 
-The two expressions agree on the stated half-line.""",
+Dropping the bars on the right changes the sign on half-lines. For $a=\min(3,4)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested.""",
             ),
             (
                 r"Because both look similar, $|k^2-16k+63|$ is said to equal $(k-8)^2$ as well.",
@@ -1255,15 +1217,19 @@ The two expressions agree on the stated half-line.""",
                 
             ),
             (
-                r"""Restricting to $w>0$, the quotient $\dfrac{|w|}{w}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""For every real $a$, $|a^2-6x+5|=|a-1|\,|a-5|$.""",
                 True,
-                r"""On $w>0$ one has $|w|=w$, hence
+                r"""Factor the trinomial, then use $|UV|=|U||V|$:
 
-Quotient:
+Factor:
 
-$$\frac{|w|}{w}=1$$
+$$a^2-6x+5=(a-1)(a-5)$$
 
-The constant $1$ matches.""",
+Bars:
+
+$$|a^2-6x+5|=|a-1|\,|a-5|$$
+
+The identity holds on the whole line.""",
             ),
             (
                 r"Whenever $z\ge 1$, copying $|z-1|=z-1$ and subtracting $z$ is claimed to leave $-1$.",
@@ -1295,21 +1261,15 @@ The constant $1$ matches.""",
                 
             ),
             (
-                r"""On the whole real line, $||x|-7|$ is treated as identical to $|x-7|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""For $x=-7-1<0$ one has $|x|=7+1$, so
+                r"""Whenever a real point lies between $1$ and $6$ inclusive, the sum of its distances to $1$ and to $6$ equals the length of that segment, under the standing domain label $D_{1}$.""",
+                True,
+                r"""On $[1,6]$ open the bars:
 
-Nested:
+Rewrite:
 
-$$||x|-7|=|7+1-7|=1$$
+$$|k-1|+|k-6|=(k-1)+(6-k)=5$$
 
-Single:
-
-$$|x-7|=|-7-1-7|=|-15|=15$$
-
-Since $1\neq 15$, the expressions differ for negative $x$.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The constant equals the segment length $5$.""",
             ),
             (
                 r"Whenever $z>6$, replacing $\sqrt{(z-6)^2}$ by $z-6$ and concluding $\sqrt{(z-6)^2}-(z-6)=0$ is accepted.",
@@ -1322,15 +1282,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Restricting to $v>0$, the quotient $\dfrac{|v|}{v}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
+                r"""For every real point (with no restriction to an interval), the sum of its distances to $2$ and to $8$ equals the length of the segment from $2$ to $8$, under the standing domain label $D_{1}$.""",
                 False,
-                r"""On $v>0$ one has $|v|=v$, hence
+                r"""Outside $[2,8]$ the identity fails. For $k>8$:
 
-Quotient:
+Outside:
 
-$$\frac{|v|}{v}=1$$
+$$|k-2|+|k-8|=( k-2)+(k-8)=2k-(2+8)$$
 
-The true constant is $1$, not $-1$.""",
+The right-hand side still depends on $k$, so it is not the constant $6$.""",
             ),
         ],
         overview="Completing a square and then taking a principal root produces a modulus. Dropping that modulus needs a nonnegative inside; a positive leftover after completing the square licenses $\\sqrt{A^2}=A$.",
@@ -1352,15 +1312,15 @@ The true constant is $1$, not $-1$.""",
                 
             ),
             (
-                r"""On the closed interval $0\le k\le 5$, the two-point distance sum $|k-0|+|k-5|$ equals the constant $5$. Inserting the interior mark $2$ into a three-bar sum is a different expression and is not claimed here.""",
+                r"""Whenever a real point lies between $3$ and $9$ inclusive, the sum of its distances to $3$ and to $9$ equals the length of that segment, under the standing domain label $D_{1}$.""",
                 True,
-                r"""For $k$ between $0$ and $5$ the bars open as
+                r"""On $[3,9]$ open the bars:
 
 Rewrite:
 
-$$|k-0|+|k-5|=(k-0)+(5-k)=5$$
+$$|k-3|+|k-9|=(k-3)+(9-k)=6$$
 
-The constant equals the length of the segment.""",
+The constant equals the segment length $6$.""",
             ),
             (
                 r"Treating $|4n|$ as interchangeable with $|n|+4$ is proposed.",
