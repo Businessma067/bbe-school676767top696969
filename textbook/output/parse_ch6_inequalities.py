@@ -751,6 +751,10 @@ def format_explanation_body(text: str, section_id: str) -> str:
         text = expand_compound_explanation(text)
     elif section_id == "6.4":
         text = expand_word_explanation(text)
+    elif section_id == "6.5":
+        # Exam-style writeups already use labeled blocks; keep arrow splits + compound labels.
+        text = expand_compound_explanation(text)
+        text = expand_word_explanation(text)
     else:
         text = split_arrow_chains(text)
     return prepare_prose_math(text)
@@ -803,6 +807,7 @@ def section_progress_band(section_id: str, local_index: int, section_size: int) 
         "6.2": [(0.20, (1, 2)), (0.45, (2, 3)), (0.70, (3, 4)), (1.01, (4, 5))],
         "6.3": [(0.23, (2, 3)), (0.46, (3, 4)), (0.77, (4, 4)), (1.01, (4, 5))],
         "6.4": [(0.32, (2, 3)), (0.64, (3, 4)), (0.88, (4, 4)), (1.01, (4, 5))],
+        "6.5": [(0.20, (3, 3)), (0.50, (3, 4)), (0.80, (4, 5)), (1.01, (5, 5))],
     }
     for threshold, band in bands.get(section_id, bands["6.1"]):
         if t <= threshold:
@@ -948,8 +953,9 @@ def build_tasks(questions: list[dict]) -> list[dict]:
 
 def emit_ts() -> str:
     return '''/**
- * Chapter 6 — Inequalities (subsections 6.1–6.4).
- * Sourced from Inequalities_Regrouped_By_Topic.pdf.
+ * Chapter 6 — Inequalities (subsections 6.1–6.5).
+ * 6.1–6.4 sourced from Inequalities_Regrouped_By_Topic.pdf;
+ * 6.5 exam-style tasks from textbook/output/ch6_exam_style.py.
  */
 
 import type { MathTask } from "@/data/math-chapters";
@@ -960,6 +966,7 @@ export const MATH_CH6_SUBSECTIONS = [
   { id: "6.2", title: "Quadratic Sign Inequalities" },
   { id: "6.3", title: "Compound & Special Inequalities" },
   { id: "6.4", title: "Word Problems" },
+  { id: "6.5", title: "Exam-style tasks" },
 ] as const;
 
 export const MATH_CH6_INEQUALITIES: MathTask[] = (ch6.tasks as MathTask[]).map((t) => ({
@@ -1017,11 +1024,14 @@ def qa_report(questions: list[dict], tasks: list[dict]) -> None:
 
 
 def main() -> None:
+    from ch6_exam_style import exam_style_tasks
+
     raw = extract_pdf()
     DUMP.parent.mkdir(parents=True, exist_ok=True)
     DUMP.write_text(raw, encoding="utf-8")
     questions = parse_document(raw)
     tasks = build_tasks(questions)
+    tasks.extend(exam_style_tasks(start_n=len(tasks) + 1))
     OUT_JSON.write_text(
         json.dumps({"tasks": tasks}, ensure_ascii=False, indent=1) + "\n",
         encoding="utf-8",
