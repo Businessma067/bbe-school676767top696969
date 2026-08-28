@@ -34,8 +34,9 @@ OPS = set("=<>≤≥≠+−-*/^_|∪∩±×·≈√")
 
 CURRENCY_RE = re.compile(
     r"\$\d+(?:,\d{3})*(?:\.\d+)?"
-    r"(?![\dA-Za-z+\-*=<>≠≤≥(\\{^_])"
-    r"(?!\s*[=<>≤≥≠+\\])"
+    r"(?![\dA-Za-z+\-−*=<>≠≤≥(\\{^_])"  # not mid-identifier / algebra
+    r"(?!\.\d)"  # not `$0` sliced out of `$0.25k`
+    r"(?!\s*[=<>≤≥≠+\-−\\])"  # not `$40 - 36` style math
 )
 
 INTERVAL_ATOM = (
