@@ -12,15 +12,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $1+\sqrt{13}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""For $p\neq 0$, $(2p^{-1}-1)(2p^{-1}+1)=\dfrac{4}{p^2}-1$.""",
                 True,
-                r"""Square the candidate conjugate:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=2p^{-1}$:
 
-Square:
+Expand:
 
-$$(1+\sqrt{13})^2=1+2\sqrt{13}+13=14+2\sqrt{13}$$
+$$(2p^{-1})^2-1=\frac{4}{p^2}-1$$
 
-Both $1+\sqrt{13}$ and the principal square root are positive, so they coincide.""",
+The coefficient on the reciprocal square is $4$, matching the claim.""",
             ),
             (
                 r"On $w\neq 0$, simplifying $w^{5}w^{-2}/w^{-1}$ is claimed to leave $w^{4}$. A marker then substitutes $w=2$ and ticks $16$.",
@@ -28,15 +28,19 @@ Both $1+\sqrt{13}$ and the principal square root are positive, so they coincide.
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{2}\sqrt{8}=\sqrt{16}=4$ is accepted; a competing note that would replace the product by $\sqrt{2}+\sqrt{8}$ is rejected.""",
+                r"""For positive $b$, raising $b$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $b$.""",
                 True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""Translate the tower, multiplying exponents inside out:
 
-Identity:
+Inner:
 
-$$\sqrt{2}\sqrt{8}=\sqrt{16}=4$$
+$$(b^{2})^{3}=b^{6}$$
 
-By contrast $(\sqrt{2}+\sqrt{8})^2=2+8+2\sqrt{16}\neq 16$ in general.""",
+Outer root:
+
+$$(b^{6})^{1/2}=b^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"Provided $a\neq 0$, rewriting $a^{-4}(a^{2})^{2}$ as $1$ is accepted, because the second factor is said to cancel the first.",
@@ -73,15 +77,15 @@ By contrast $(\sqrt{2}+\sqrt{8})^2=2+8+2\sqrt{16}\neq 16$ in general.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{4}\sqrt{9}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{4}+\sqrt{9}$ is rejected.""",
+                r"""For $p\neq 0$, $(7p^{-1}-1)(7p^{-1}+1)=\dfrac{49}{p^2}-1$.""",
                 True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=7p^{-1}$:
 
-Identity:
+Expand:
 
-$$\sqrt{4}\sqrt{9}=\sqrt{36}=6$$
+$$(7p^{-1})^2-1=\frac{49}{p^2}-1$$
 
-By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.""",
+The coefficient on the reciprocal square is $49$, matching the claim.""",
             ),
             (
                 r"On $u\neq 0$, rewriting $\dfrac{u^{-1}+u^{-2}}{u^{-2}}$ as $u+1$ is accepted after a common denominator is cleared in the numerator.",
@@ -103,15 +107,15 @@ By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{8}\sqrt{2}=\sqrt{16}=4$ is accepted; a competing note that would replace the product by $\sqrt{8}+\sqrt{2}$ is rejected.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields $x$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Identity:
+Correct tower:
 
-$$\sqrt{8}\sqrt{2}=\sqrt{16}=4$$
+$$((x^{2})^{3})^{1/2}=x^{3}$$
 
-By contrast $(\sqrt{8}+\sqrt{2})^2=8+2+2\sqrt{16}\neq 16$ in general.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"On $c,d\ge 0$, the product rule $\sqrt{c}\sqrt{d}=\sqrt{cd}$ is printed as valid.",
@@ -119,15 +123,23 @@ By contrast $(\sqrt{8}+\sqrt{2})^2=8+2+2\sqrt{16}\neq 16$ in general.""",
                 
             ),
             (
-                r"""On $q\neq 0$, simplifying $\dfrac{q^{5}q^{-2}}{q^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $q^{4}$.""",
+                r"""If $e>0$, then $\dfrac{e^{2/3}\cdot\sqrt[3]{e\sqrt{e}}}{e^{1/6}\cdot\sqrt[6]{e^5}}=\sqrt[6]{e}$.""",
                 True,
-                r"""Numerator:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$q^{5}q^{-2}=q^{3}$$
+Numerator:
+
+$$e^{2/3}\cdot(e\cdote^{1/2})^{1/3}=e^{2/3}\cdote^{(1+1/2)/3}=e^{2/3}\cdote^{1/2}$$
+
+Denominator:
+
+$$e^{1/6}\cdot(e^5)^{1/6}=e^{1/6}\cdote^{5/6}=e$$
 
 Quotient:
 
-$$\frac{q^{3}}{q^{-1}}=q^{4}$$""",
+$$\sqrt[6]{e}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"A booklet claims $\sqrt{27}\sqrt{3}=9$ as positive square roots.",
@@ -164,19 +176,19 @@ $$\frac{q^{3}}{q^{-1}}=q^{4}$$""",
                 
             ),
             (
-                r"""Whenever $a>0$, a note treats $((a^{2})^{3})^{1/2}$ as $a^{3}$, multiplying exponents inward before the outer root.""",
+                r"""For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $x$.""",
                 True,
-                r"""Power of a power multiplies, working inside out:
+                r"""Translate the tower, multiplying exponents inside out:
 
 Inner:
 
-$$(a^{2})^{3}=a^{6}$$
+$$(x^{2})^{3}=x^{6}$$
 
 Outer root:
 
-$$(a^{6})^{1/2}=a^{3}$$
+$$(x^{6})^{1/2}=x^{3}$$
 
-The printed target matches.""",
+The wording matches the reduced power.""",
             ),
         ],
         overview=r"Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$. A negative power of $0$ is undefined; $(2b)^{0}$ is not $2b^{0}$.",
@@ -198,17 +210,15 @@ The printed target matches.""",
                 
             ),
             (
-                r"""For $w\neq 0$, rewriting $(w^{-2})^{-3}$ as $w^{6}$ is accepted; comparing with the product $w^{-2}w^{-3}=w^{-5}$ shows the two rules diverge.""",
-                True,
-                r"""Power of a power:
+                r"""For positive $z$, raising $z$ to the second power, then to the third, and finally taking the principal square root of the result yields $z$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-$$(w^{-2})^{-3}=w^{6}$$
+Correct tower:
 
-Product rule:
+$$((z^{2})^{3})^{1/2}=z^{3}$$
 
-$$w^{-2}w^{-3}=w^{-5}$$
-
-The stacked form is $$w^{6}$$; the product is different.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Extracting $\sqrt[3]{54}$ as $3\sqrt[3]{2}$ is claimed in the reals.",
@@ -216,15 +226,15 @@ The stacked form is $$w^{6}$$; the product is different.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $\sqrt{13}-1$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""For $r\neq 0$, $(6r^{-1}-1)(6r^{-1}+1)=\dfrac{1}{36r^2}-1$.""",
                 False,
-                r"""Square the printed difference:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=6r^{-1}$:
 
-Square:
+Expand:
 
-$$(\sqrt{13}-1)^2=13-2\sqrt{13}+1=14-2\sqrt{13}$$
+$$(6r^{-1})^2-1=\frac{36}{r^2}-1$$
 
-The cross term has the wrong sign for $\sqrt{14+2\sqrt{13}}$.""",
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
         ],
         overview=r"Five independent numerical powers. $27^{2/3}=9$ and $\sqrt[3]{54}=3\sqrt[3]{2}$, but $32^{2/5}=4$ and $8^{2/3}\cdot 4^{-1/2}=2$.",
@@ -236,17 +246,23 @@ The cross term has the wrong sign for $\sqrt{14+2\sqrt{13}}$.""",
         context=CTX,
         items=[
             (
-                r"""On $q\neq 0$, simplifying $\dfrac{q^{5}q^{-2}}{q^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $q^{4}$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""If $a>0$, then $\dfrac{a^{2/3}\cdot\sqrt[3]{a\sqrt{a}}}{a^{1/6}\cdot\sqrt[6]{a^5}}=\sqrt[6]{a}$.""",
                 True,
-                r"""Numerator:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$q^{5}q^{-2}=q^{3}$$
+Numerator:
+
+$$a^{2/3}\cdot(a\cdota^{1/2})^{1/3}=a^{2/3}\cdota^{(1+1/2)/3}=a^{2/3}\cdota^{1/2}$$
+
+Denominator:
+
+$$a^{1/6}\cdot(a^5)^{1/6}=a^{1/6}\cdota^{5/6}=a$$
 
 Quotient:
 
-$$\frac{q^{3}}{q^{-1}}=q^{4}$$
+$$\sqrt[6]{a}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Reducing $\sqrt{12}+\sqrt{27}$ is claimed to equal $\sqrt{39}$.",
@@ -278,13 +294,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
         context=CTX,
         items=[
             (
-                r"""Denesting $\sqrt{16+6\sqrt{7}}$ is claimed to produce $\sqrt{7}-3$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields $k$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""Square:
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-$$(\sqrt{7}-3)^2=7-6\sqrt{7}+9=16-6\sqrt{7}$$
+Correct tower:
 
-Wrong sign; also negative.""",
+$$((k^{2})^{3})^{1/2}=k^{3}$$
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"A mistaken swap writes $(p/q)^{-3}=p^{3}/q^{3}$ for $p,q>0$.",
@@ -297,15 +315,23 @@ Wrong sign; also negative.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{16+6\sqrt{7}}$ is claimed to produce $\sqrt{7}-3$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""Square:
+                r"""If $g>0$, then $\dfrac{g^{2/3}\cdot\sqrt[3]{g\sqrt{g}}}{g^{1/6}\cdot\sqrt[6]{g^5}}=\sqrt[6]{g}$.""",
+                True,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(\sqrt{7}-3)^2=7-6\sqrt{7}+9=16-6\sqrt{7}$$
+Numerator:
 
-Wrong sign; also negative.
+$$g^{2/3}\cdot(g\cdotg^{1/2})^{1/3}=g^{2/3}\cdotg^{(1+1/2)/3}=g^{2/3}\cdotg^{1/2}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Denominator:
+
+$$g^{1/6}\cdot(g^5)^{1/6}=g^{1/6}\cdotg^{5/6}=g$$
+
+Quotient:
+
+$$\sqrt[6]{g}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"On $c,d>0$, rewriting $(c/d)^{0}=0$ is printed as valid.",
@@ -327,13 +353,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{9+4\sqrt{5}}$ is claimed to produce $\sqrt{5}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""For $k\neq 0$, $(6k^{-1}-1)(6k^{-1}+1)=\dfrac{1}{36k^2}-1$.""",
                 False,
-                r"""Square:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=6k^{-1}$:
 
-$$(\sqrt{5}-2)^2=5-4\sqrt{5}+4=9-4\sqrt{5}$$
+Expand:
 
-Wrong sign.""",
+$$(6k^{-1})^2-1=\frac{36}{k^2}-1$$
+
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Extracting $\sqrt[3]{54}=3\sqrt[3]{2}$ in the reals is accepted.",
@@ -365,15 +393,23 @@ Wrong sign.""",
                 
             ),
             (
-                r"""A candidate replaces $\sqrt{5+b}$ by $\sqrt{5}+\sqrt{5}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$.""",
-                False,
-                r"""Square roots do not split over addition:
+                r"""If $j>0$, then $\dfrac{j^{2/3}\cdot\sqrt[3]{j\sqrt{j}}}{j^{1/6}\cdot\sqrt[6]{j^5}}=\sqrt[6]{j}$.""",
+                True,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Square the sum:
+Numerator:
 
-$$(\sqrt{5}+\sqrt{5})^2=5+5+2\sqrt{25}$$
+$$j^{2/3}\cdot(j\cdotj^{1/2})^{1/3}=j^{2/3}\cdotj^{(1+1/2)/3}=j^{2/3}\cdotj^{1/2}$$
 
-For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.""",
+Denominator:
+
+$$j^{1/6}\cdot(j^5)^{1/6}=j^{1/6}\cdotj^{5/6}=j$$
+
+Quotient:
+
+$$\sqrt[6]{j}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Working with $z>0$, the stack $(z^{1/3})^{-3/2}$ is rewritten as $z^{-1/2}$.",
@@ -386,17 +422,15 @@ For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.""",
                 
             ),
             (
-                r"""A candidate replaces $\sqrt{5+b}$ by $\sqrt{5}+\sqrt{5}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""Square roots do not split over addition:
+                r"""For $k\neq 0$, $(5k^{-1}-1)(5k^{-1}+1)=\dfrac{25}{k^2}-1$.""",
+                True,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=5k^{-1}$:
 
-Square the sum:
+Expand:
 
-$$(\sqrt{5}+\sqrt{5})^2=5+5+2\sqrt{25}$$
+$$(5k^{-1})^2-1=\frac{25}{k^2}-1$$
 
-For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The coefficient on the reciprocal square is $25$, matching the claim.""",
             ),
         ],
         overview=r"Five independent fractional-power calculations. Inside the mixed quotient the exponents total $1$, and the outer square makes $x^{2}$. Stacking multiplies; a quotient subtracts.",
@@ -418,15 +452,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{2}\sqrt{18}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{2}+\sqrt{18}$ is rejected.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields $a$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Identity:
+Correct tower:
 
-$$\sqrt{2}\sqrt{18}=\sqrt{36}=6$$
+$$((a^{2})^{3})^{1/2}=a^{3}$$
 
-By contrast $(\sqrt{2}+\sqrt{18})^2=2+18+2\sqrt{36}\neq 36$ in general.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"A naive split writes $\sqrt{12+2\sqrt{32}}=\sqrt{12}+\sqrt{32}$ as positive square roots.",
@@ -448,15 +482,15 @@ By contrast $(\sqrt{2}+\sqrt{18})^2=2+18+2\sqrt{36}\neq 36$ in general.""",
         context=CTX,
         items=[
             (
-                r"""A candidate replaces $\sqrt{4+b}$ by $\sqrt{4}+\sqrt{4}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$.""",
+                r"""For positive $b$, raising $b$ to the second power, then to the third, and finally taking the principal square root of the result yields $b$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""Square roots do not split over addition:
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Square the sum:
+Correct tower:
 
-$$(\sqrt{4}+\sqrt{4})^2=4+4+2\sqrt{16}$$
+$$((b^{2})^{3})^{1/2}=b^{3}$$
 
-For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Clearing $1/(\sqrt{5}-\sqrt{3})$ is claimed to equal $(\sqrt{5}-\sqrt{3})/2$, the conjugate already in the denominator.",
@@ -464,17 +498,15 @@ For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.""",
                 
             ),
             (
-                r"""For $x\neq 0$, rewriting $(x^{-2})^{-3}$ as $x^{6}$ is accepted; comparing with the product $x^{-2}x^{-3}=x^{-5}$ shows the two rules diverge.""",
+                r"""For $x\neq 0$, $(5x^{-1}-1)(5x^{-1}+1)=\dfrac{25}{x^2}-1$.""",
                 True,
-                r"""Power of a power:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=5x^{-1}$:
 
-$$(x^{-2})^{-3}=x^{6}$$
+Expand:
 
-Product rule:
+$$(5x^{-1})^2-1=\frac{25}{x^2}-1$$
 
-$$x^{-2}x^{-3}=x^{-5}$$
-
-The stacked form is $$x^{6}$$; the product is different.""",
+The coefficient on the reciprocal square is $25$, matching the claim.""",
             ),
             (
                 r"Someone rationalises $4/(\sqrt{18}-\sqrt{8})$ and claims the value $\sqrt{18}+\sqrt{8}$ without dividing by the difference of squares.",
@@ -511,15 +543,19 @@ The stacked form is $$x^{6}$$; the product is different.""",
                 
             ),
             (
-                r"""On $w\neq 0$, simplifying $\dfrac{w^{5}w^{-2}}{w^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $w^{4}$.""",
+                r"""For positive $z$, raising $z$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $z$.""",
                 True,
-                r"""Numerator:
+                r"""Translate the tower, multiplying exponents inside out:
 
-$$w^{5}w^{-2}=w^{3}$$
+Inner:
 
-Quotient:
+$$(z^{2})^{3}=z^{6}$$
 
-$$\frac{w^{3}}{w^{-1}}=w^{4}$$""",
+Outer root:
+
+$$(z^{6})^{1/2}=z^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"Working with $w>0$, $\bigl(\sqrt{w}-1/\sqrt{w}\bigr)^{2}$ is rewritten as $(w-1)^{2}/w$.",
@@ -541,19 +577,23 @@ $$\frac{w^{3}}{w^{-1}}=w^{4}$$""",
                 
             ),
             (
-                r"""Whenever $q>0$, a note treats $((q^{2})^{3})^{1/2}$ as $q^{3}$, multiplying exponents inward before the outer root.""",
-                True,
-                r"""Power of a power multiplies, working inside out:
+                r"""If $g>0$, then $\dfrac{g^{2/3}\cdot\sqrt[3]{g\sqrt{g}}}{g^{1/6}\cdot\sqrt[6]{g^5}}=\sqrt[3]{g}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Inner:
+Numerator:
 
-$$(q^{2})^{3}=q^{6}$$
+$$g^{2/3}\cdot(g\cdotg^{1/2})^{1/3}=g^{2/3}\cdotg^{(1+1/2)/3}=g^{2/3}\cdotg^{1/2}$$
 
-Outer root:
+Denominator:
 
-$$(q^{6})^{1/2}=q^{3}$$
+$$g^{1/6}\cdot(g^5)^{1/6}=g^{1/6}\cdotg^{5/6}=g$$
 
-The printed target matches.""",
+Quotient:
+
+$$\sqrt[6]{g}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"From $2^{k}=5$, a student concludes $2^{3k}=15$.",
@@ -561,13 +601,19 @@ The printed target matches.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{7+4\sqrt{3}}$ is claimed to produce $\sqrt{3}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
-                False,
-                r"""Square:
+                r"""For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $a$.""",
+                True,
+                r"""Translate the tower, multiplying exponents inside out:
 
-$$(\sqrt{3}-2)^2=3-4\sqrt{3}+4=7-4\sqrt{3}$$
+Inner:
 
-Wrong sign on the middle term; also $\sqrt{3}-2<0$ cannot be a principal root.""",
+$$(a^{2})^{3}=a^{6}$$
+
+Outer root:
+
+$$(a^{6})^{1/2}=a^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"Starting from $5^{t}=4$, a slip writes $25^{t}=8$.",
@@ -604,13 +650,23 @@ Wrong sign on the middle term; also $\sqrt{3}-2<0$ cannot be a principal root.""
                 
             ),
             (
-                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}-\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
-                False,
-                r"""Square:
+                r"""If $m>0$, then $\dfrac{m^{2/3}\cdot\sqrt[3]{m\sqrt{m}}}{m^{1/6}\cdot\sqrt[6]{m^5}}=\sqrt[6]{m}$.""",
+                True,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(\sqrt{5}-\sqrt{3})^2=5-2\sqrt{15}+3=8-2\sqrt{15}$$
+Numerator:
 
-Wrong sign.""",
+$$m^{2/3}\cdot(m\cdotm^{1/2})^{1/3}=m^{2/3}\cdotm^{(1+1/2)/3}=m^{2/3}\cdotm^{1/2}$$
+
+Denominator:
+
+$$m^{1/6}\cdot(m^5)^{1/6}=m^{1/6}\cdotm^{5/6}=m$$
+
+Quotient:
+
+$$\sqrt[6]{m}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
         ],
         overview=r"Five independent two-letter power claims. $(a^{m}b^{n})^{k}=a^{mk}b^{nk}$, not $a^{m+k}$. Adding the outer exponent is the product trap.",
@@ -632,13 +688,15 @@ Wrong sign.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{10+4\sqrt{6}}$ is claimed to produce $\sqrt{6}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                r"""For $n\neq 0$, $(3n^{-1}-1)(3n^{-1}+1)=\dfrac{1}{9n^2}-1$.""",
                 False,
-                r"""Square:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=3n^{-1}$:
 
-$$(\sqrt{6}-2)^2=6-4\sqrt{6}+4=10-4\sqrt{6}$$
+Expand:
 
-Wrong sign.""",
+$$(3n^{-1})^2-1=\frac{9}{n^2}-1$$
+
+The reciprocal square carries numerator $9$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"A candidate records $\sqrt{18}\cdot\sqrt{8}=\sqrt{26}$ as positive square roots.",
@@ -646,15 +704,15 @@ Wrong sign.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{9}\sqrt{4}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{9}+\sqrt{4}$ is rejected.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields $n$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Identity:
+Correct tower:
 
-$$\sqrt{9}\sqrt{4}=\sqrt{36}=6$$
+$$((n^{2})^{3})^{1/2}=n^{3}$$
 
-By contrast $(\sqrt{9}+\sqrt{4})^2=9+4+2\sqrt{36}\neq 36$ in general.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
         ],
         overview=r"Five independent numerical rewrites. $27^{4/3}=81$ and $4^{5/2}=32$, but $32^{3/5}=8$ and $\sqrt{18}\sqrt{8}=12$, not $\sqrt{26}$.",
@@ -666,17 +724,19 @@ By contrast $(\sqrt{9}+\sqrt{4})^2=9+4+2\sqrt{36}\neq 36$ in general.""",
         context=CTX,
         items=[
             (
-                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $1+\sqrt{13}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For positive $p$, raising $p$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $p$.""",
                 True,
-                r"""Square the candidate conjugate:
+                r"""Translate the tower, multiplying exponents inside out:
 
-Square:
+Inner:
 
-$$(1+\sqrt{13})^2=1+2\sqrt{13}+13=14+2\sqrt{13}$$
+$$(p^{2})^{3}=p^{6}$$
 
-Both $1+\sqrt{13}$ and the principal square root are positive, so they coincide.
+Outer root:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$(p^{6})^{1/2}=p^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"A slip expands $8^{m}$ as $2^{m+3}$ as an identity in the integer $m$.",
@@ -708,17 +768,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
         context=CTX,
         items=[
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{4}\sqrt{9}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{4}+\sqrt{9}$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For $u\neq 0$, $(3u^{-1}-1)(3u^{-1}+1)=\dfrac{1}{9u^2}-1$.""",
+                False,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=3u^{-1}$:
 
-Identity:
+Expand:
 
-$$\sqrt{4}\sqrt{9}=\sqrt{36}=6$$
+$$(3u^{-1})^2-1=\frac{9}{u^2}-1$$
 
-By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The reciprocal square carries numerator $9$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Combining $\sqrt[4]{16}\sqrt[4]{81}$ as positive fourth roots is claimed to equal $12$.",
@@ -731,17 +789,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{4}\sqrt{9}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{4}+\sqrt{9}$ is rejected, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For positive $p$, raising $p$ to the second power, then to the third, and finally taking the principal square root of the result yields $p$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Identity:
+Correct tower:
 
-$$\sqrt{4}\sqrt{9}=\sqrt{36}=6$$
+$$((p^{2})^{3})^{1/2}=p^{3}$$
 
-By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.
-
-A single probe at $1$ cannot replace the algebraic comparison above.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Someone records $\sqrt[4]{32}=4\sqrt[4]{2}$ as a positive fourth root.",
@@ -763,17 +819,15 @@ A single probe at $1$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{8}\sqrt{2}=\sqrt{16}=4$ is accepted; a competing note that would replace the product by $\sqrt{8}+\sqrt{2}$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields $t$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Identity:
+Correct tower:
 
-$$\sqrt{8}\sqrt{2}=\sqrt{16}=4$$
+$$((t^{2})^{3})^{1/2}=t^{3}$$
 
-By contrast $(\sqrt{8}+\sqrt{2})^2=8+2+2\sqrt{16}\neq 16$ in general.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Subtracting exponents, $d^{5}/d^{-2}=d^{7}$ for $d\neq 0$ is accepted.",
@@ -805,21 +859,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Whenever $a>0$, a note treats $((a^{2})^{3})^{1/2}$ as $a^{3}$, multiplying exponents inward before the outer root, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""Power of a power multiplies, working inside out:
+                r"""For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields $q$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Inner:
+Correct tower:
 
-$$(a^{2})^{3}=a^{6}$$
+$$((q^{2})^{3})^{1/2}=q^{3}$$
 
-Outer root:
-
-$$(a^{6})^{1/2}=a^{3}$$
-
-The printed target matches.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"On $z>0$, a cube root of a square $\sqrt[3]{z^{2}}$ is rewritten as $z^{2/3}$.",
@@ -832,19 +880,19 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Whenever $w>0$, a note treats $((w^{2})^{3})^{1/2}$ as $w^{3}$, multiplying exponents inward before the outer root.""",
+                r"""For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $k$.""",
                 True,
-                r"""Power of a power multiplies, working inside out:
+                r"""Translate the tower, multiplying exponents inside out:
 
 Inner:
 
-$$(w^{2})^{3}=w^{6}$$
+$$(k^{2})^{3}=k^{6}$$
 
 Outer root:
 
-$$(w^{6})^{1/2}=w^{3}$$
+$$(k^{6})^{1/2}=k^{3}$$
 
-The printed target matches.""",
+The wording matches the reduced power.""",
             ),
         ],
         overview=r"Five independent stacked-root rewrites. Reciprocal exponents multiply: a cube root inside a fourth root is $x^{1/12}$. Adding $1/2+1/3$ is the wrong operation.",
@@ -866,17 +914,23 @@ The printed target matches.""",
                 
             ),
             (
-                r"""For $q\neq 0$, rewriting $(q^{-2})^{-3}$ as $q^{6}$ is accepted; comparing with the product $q^{-2}q^{-3}=q^{-5}$ shows the two rules diverge.""",
-                True,
-                r"""Power of a power:
+                r"""If $p>0$, then $\dfrac{p^{2/3}\cdot\sqrt[3]{p\sqrt{p}}}{p^{1/6}\cdot\sqrt[6]{p^5}}=\sqrt[3]{p}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(q^{-2})^{-3}=q^{6}$$
+Numerator:
 
-Product rule:
+$$p^{2/3}\cdot(p\cdotp^{1/2})^{1/3}=p^{2/3}\cdotp^{(1+1/2)/3}=p^{2/3}\cdotp^{1/2}$$
 
-$$q^{-2}q^{-3}=q^{-5}$$
+Denominator:
 
-The stacked form is $$q^{6}$$; the product is different.""",
+$$p^{1/6}\cdot(p^5)^{1/6}=p^{1/6}\cdotp^{5/6}=p$$
+
+Quotient:
+
+$$\sqrt[6]{p}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"A note writes $(\sqrt{8}-\sqrt{2})^{2}=6$ as an identity on the positive reals.",
@@ -898,15 +952,15 @@ The stacked form is $$q^{6}$$; the product is different.""",
         context=CTX,
         items=[
             (
-                r"""On $x\neq 0$, simplifying $\dfrac{x^{5}x^{-2}}{x^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $x^{4}$.""",
+                r"""For $r\neq 0$, $(2r^{-1}-1)(2r^{-1}+1)=\dfrac{4}{r^2}-1$.""",
                 True,
-                r"""Numerator:
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=2r^{-1}$:
 
-$$x^{5}x^{-2}=x^{3}$$
+Expand:
 
-Quotient:
+$$(2r^{-1})^2-1=\frac{4}{r^2}-1$$
 
-$$\frac{x^{3}}{x^{-1}}=x^{4}$$""",
+The coefficient on the reciprocal square is $4$, matching the claim.""",
             ),
             (
                 r"A slip writes the stack $(y^{-1/3})^{6}=y^{-1/18}$ for $y>0$.",
@@ -914,13 +968,19 @@ $$\frac{x^{3}}{x^{-1}}=x^{4}$$""",
                 
             ),
             (
-                r"""Denesting $\sqrt{11+6\sqrt{2}}$ is claimed to produce $3-\sqrt{2}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
-                False,
-                r"""Square:
+                r"""For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $n$.""",
+                True,
+                r"""Translate the tower, multiplying exponents inside out:
 
-$$(3-\sqrt{2})^2=9-6\sqrt{2}+2=11-6\sqrt{2}$$
+Inner:
 
-Wrong middle sign.""",
+$$(n^{2})^{3}=n^{6}$$
+
+Outer root:
+
+$$(n^{6})^{1/2}=n^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"Someone records $(b^{-2}c^{1/2})^{4}=b^{2}c^{2}$ for $b,c>0$.",
@@ -957,15 +1017,15 @@ Wrong middle sign.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{16+6\sqrt{7}}$ is claimed to produce $\sqrt{7}-3$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
-                False,
-                r"""Square:
+                r"""For $r\neq 0$, $(7r^{-1}-1)(7r^{-1}+1)=\dfrac{49}{r^2}-1$.""",
+                True,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=7r^{-1}$:
 
-$$(\sqrt{7}-3)^2=7-6\sqrt{7}+9=16-6\sqrt{7}$$
+Expand:
 
-Wrong sign; also negative.
+$$(7r^{-1})^2-1=\frac{49}{r^2}-1$$
 
-A single probe at $1$ cannot replace the algebraic comparison above.""",
+The coefficient on the reciprocal square is $49$, matching the claim.""",
             ),
             (
                 r"Rationalising $1/(\sqrt{48}-\sqrt{12})$ is claimed to equal $\sqrt{48}+\sqrt{12}$.",
@@ -987,15 +1047,19 @@ A single probe at $1$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{9+4\sqrt{5}}$ is claimed to produce $\sqrt{5}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""Square:
+                r"""For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $q$.""",
+                True,
+                r"""Translate the tower, multiplying exponents inside out:
 
-$$(\sqrt{5}-2)^2=5-4\sqrt{5}+4=9-4\sqrt{5}$$
+Inner:
 
-Wrong sign.
+$$(q^{2})^{3}=q^{6}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Outer root:
+
+$$(q^{6})^{1/2}=q^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"Expanding only a cube, $(p^{2}q^{-3})^{3}=p^{6}q^{-9}$ on $p,q>0$ is accepted.",
@@ -1003,15 +1067,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{5}\sqrt{20}=\sqrt{100}=10$ is accepted; a competing note that would replace the product by $\sqrt{5}+\sqrt{20}$ is rejected.""",
+                r"""If $p>0$, then $\dfrac{p^{2/3}\cdot\sqrt[3]{p\sqrt{p}}}{p^{1/6}\cdot\sqrt[6]{p^5}}=\sqrt[6]{p}$.""",
                 True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Identity:
+Numerator:
 
-$$\sqrt{5}\sqrt{20}=\sqrt{100}=10$$
+$$p^{2/3}\cdot(p\cdotp^{1/2})^{1/3}=p^{2/3}\cdotp^{(1+1/2)/3}=p^{2/3}\cdotp^{1/2}$$
 
-By contrast $(\sqrt{5}+\sqrt{20})^2=5+20+2\sqrt{100}\neq 100$ in general.""",
+Denominator:
+
+$$p^{1/6}\cdot(p^5)^{1/6}=p^{1/6}\cdotp^{5/6}=p$$
+
+Quotient:
+
+$$\sqrt[6]{p}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Collecting $u^{6}v^{-4}/(u^{-2}v^{3})$ for $u,v>0$ is rewritten as $u^{8}/v^{7}$.",
@@ -1048,17 +1120,19 @@ By contrast $(\sqrt{5}+\sqrt{20})^2=5+20+2\sqrt{100}\neq 100$ in general.""",
                 
             ),
             (
-                r"""A candidate replaces $\sqrt{5+b}$ by $\sqrt{5}+\sqrt{5}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
-                False,
-                r"""Square roots do not split over addition:
+                r"""For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $h$.""",
+                True,
+                r"""Translate the tower, multiplying exponents inside out:
 
-Square the sum:
+Inner:
 
-$$(\sqrt{5}+\sqrt{5})^2=5+5+2\sqrt{25}$$
+$$(h^{2})^{3}=h^{6}$$
 
-For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.
+Outer root:
 
-A single probe at $1$ cannot replace the algebraic comparison above.""",
+$$(h^{6})^{1/2}=h^{3}$$
+
+The wording matches the reduced power.""",
             ),
         ],
         overview=r"Five independent nests, each with its own index. Write every root as a reciprocal exponent and multiply. $\sqrt{x\sqrt{x}}=x^{3/4}$ and the three-storey cube nest is $y^{13/27}$.",
@@ -1080,17 +1154,15 @@ A single probe at $1$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On the nonnegative reals, the product identity $\sqrt{2}\sqrt{18}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{2}+\sqrt{18}$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""A product of principal square roots is the principal root of the product:
+                r"""For positive $w$, raising $w$ to the second power, then to the third, and finally taking the principal square root of the result yields $w$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-Identity:
+Correct tower:
 
-$$\sqrt{2}\sqrt{18}=\sqrt{36}=6$$
+$$((w^{2})^{3})^{1/2}=w^{3}$$
 
-By contrast $(\sqrt{2}+\sqrt{18})^2=2+18+2\sqrt{36}\neq 36$ in general.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"A candidate cancels twice in $(\sqrt{u}-\sqrt{v})^{2}/(u-v)$ and obtains $1/(u-v)$ for $u>v>0$.",
@@ -1098,19 +1170,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Whenever $x>0$, a note treats $((x^{2})^{3})^{1/2}$ as $x^{3}$, multiplying exponents inward before the outer root.""",
-                True,
-                r"""Power of a power multiplies, working inside out:
+                r"""For $w\neq 0$, $(6w^{-1}-1)(6w^{-1}+1)=\dfrac{1}{36w^2}-1$.""",
+                False,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=6w^{-1}$:
 
-Inner:
+Expand:
 
-$$(x^{2})^{3}=x^{6}$$
+$$(6w^{-1})^2-1=\frac{36}{w^2}-1$$
 
-Outer root:
-
-$$(x^{6})^{1/2}=x^{3}$$
-
-The printed target matches.""",
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
         ],
         overview=r"Five independent conjugate-cancellation claims. Write $a-b$ as a conjugate product. Then $(\sqrt{a}-\sqrt{b})^{2}/(a-b)$ keeps one factor of $\sqrt{a}-\sqrt{b}$ in the numerator.",
@@ -1122,17 +1190,23 @@ The printed target matches.""",
         context=CTX,
         items=[
             (
-                r"""A candidate replaces $\sqrt{4+b}$ by $\sqrt{4}+\sqrt{4}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                False,
-                r"""Square roots do not split over addition:
+                r"""If $c>0$, then $\dfrac{c^{2/3}\cdot\sqrt[3]{c\sqrt{c}}}{c^{1/6}\cdot\sqrt[6]{c^5}}=\sqrt[6]{c}$.""",
+                True,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-Square the sum:
+Numerator:
 
-$$(\sqrt{4}+\sqrt{4})^2=4+4+2\sqrt{16}$$
+$$c^{2/3}\cdot(c\cdotc^{1/2})^{1/3}=c^{2/3}\cdotc^{(1+1/2)/3}=c^{2/3}\cdotc^{1/2}$$
 
-For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.
+Denominator:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$c^{1/6}\cdot(c^5)^{1/6}=c^{1/6}\cdotc^{5/6}=c$$
+
+Quotient:
+
+$$\sqrt[6]{c}$$
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"A product-of-powers slip writes $x^{m}x^{n}=x^{mn}$ for $x>0$.",
@@ -1164,17 +1238,19 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
         context=CTX,
         items=[
             (
-                r"""On $w\neq 0$, simplifying $\dfrac{w^{5}w^{-2}}{w^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $w^{4}$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $t$.""",
                 True,
-                r"""Numerator:
+                r"""Translate the tower, multiplying exponents inside out:
 
-$$w^{5}w^{-2}=w^{3}$$
+Inner:
 
-Quotient:
+$$(t^{2})^{3}=t^{6}$$
 
-$$\frac{w^{3}}{w^{-1}}=w^{4}$$
+Outer root:
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+$$(t^{6})^{1/2}=t^{3}$$
+
+The wording matches the reduced power.""",
             ),
             (
                 r"Denesting $\sqrt{12+2\sqrt{32}}$ is claimed to equal $\sqrt{8}-\sqrt{4}$.",
@@ -1187,17 +1263,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""On $q\neq 0$, simplifying $\dfrac{q^{5}q^{-2}}{q^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $q^{4}$, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
-                True,
-                r"""Numerator:
+                r"""If $j>0$, then $\dfrac{j^{2/3}\cdot\sqrt[3]{j\sqrt{j}}}{j^{1/6}\cdot\sqrt[6]{j^5}}=\sqrt[3]{j}$.""",
+                False,
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$q^{5}q^{-2}=q^{3}$$
+Numerator:
+
+$$j^{2/3}\cdot(j\cdotj^{1/2})^{1/3}=j^{2/3}\cdotj^{(1+1/2)/3}=j^{2/3}\cdotj^{1/2}$$
+
+Denominator:
+
+$$j^{1/6}\cdot(j^5)^{1/6}=j^{1/6}\cdotj^{5/6}=j$$
 
 Quotient:
 
-$$\frac{q^{3}}{q^{-1}}=q^{4}$$
+$$\sqrt[6]{j}$$
 
-A single probe at $1$ cannot replace the algebraic comparison above.""",
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Evaluating $32^{2/5}\cdot 27^{-1/3}$ as $4/3$ is accepted.",
@@ -1219,21 +1301,15 @@ A single probe at $1$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Whenever $x>0$, a note treats $((x^{2})^{3})^{1/2}$ as $x^{3}$, multiplying exponents inward before the outer root, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
-                True,
-                r"""Power of a power multiplies, working inside out:
+                r"""For $x\neq 0$, $(6x^{-1}-1)(6x^{-1}+1)=\dfrac{1}{36x^2}-1$.""",
+                False,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=6x^{-1}$:
 
-Inner:
+Expand:
 
-$$(x^{2})^{3}=x^{6}$$
+$$(6x^{-1})^2-1=\frac{36}{x^2}-1$$
 
-Outer root:
-
-$$(x^{6})^{1/2}=x^{3}$$
-
-The printed target matches.
-
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Squaring a reciprocal, $z^{-2}=(z^{-1})^{2}$ for $z\neq 0$ is accepted.",
@@ -1265,15 +1341,23 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}-\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""If $m>0$, then $\dfrac{m^{2/3}\cdot\sqrt[3]{m\sqrt{m}}}{m^{1/6}\cdot\sqrt[6]{m^5}}=\sqrt[3]{m}$.""",
                 False,
-                r"""Square:
+                r"""Convert every radical to a fractional exponent, then add and subtract:
 
-$$(\sqrt{5}-\sqrt{3})^2=5-2\sqrt{15}+3=8-2\sqrt{15}$$
+Numerator:
 
-Wrong sign.
+$$m^{2/3}\cdot(m\cdotm^{1/2})^{1/3}=m^{2/3}\cdotm^{(1+1/2)/3}=m^{2/3}\cdotm^{1/2}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+Denominator:
+
+$$m^{1/6}\cdot(m^5)^{1/6}=m^{1/6}\cdotm^{5/6}=m$$
+
+Quotient:
+
+$$\sqrt[6]{m}$$
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"On $t>0$, $(t^{-3})^{2/3}=t^{-2}$ is accepted.",
@@ -1286,15 +1370,15 @@ A single probe at $0$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}-\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
-                False,
-                r"""Square:
+                r"""For $u\neq 0$, $(6u^{-1}-1)(6u^{-1}+1)=\dfrac{36}{u^2}-1$.""",
+                True,
+                r"""Difference of squares $(A-1)(A+1)=A^2-1$ with $A=6u^{-1}$:
 
-$$(\sqrt{5}-\sqrt{3})^2=5-2\sqrt{15}+3=8-2\sqrt{15}$$
+Expand:
 
-Wrong sign.
+$$(6u^{-1})^2-1=\frac{36}{u^2}-1$$
 
-A single probe at $1$ cannot replace the algebraic comparison above.""",
+The coefficient on the reciprocal square is $36$, matching the claim.""",
             ),
         ],
         overview=r"Five independent stacked fractional powers. Multiply the two exponents, or rewrite each base as a power of $2$. Adding the fractional exponents is the product trap.",
@@ -1316,15 +1400,15 @@ A single probe at $1$ cannot replace the algebraic comparison above.""",
                 
             ),
             (
-                r"""Denesting $\sqrt{10+4\sqrt{6}}$ is claimed to produce $\sqrt{6}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                r"""For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields $h$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""Square:
+                r"""Power of a power multiplies; it does not add $2+3$ before the root:
 
-$$(\sqrt{6}-2)^2=6-4\sqrt{6}+4=10-4\sqrt{6}$$
+Correct tower:
 
-Wrong sign.
+$$((h^{2})^{3})^{1/2}=h^{3}$$
 
-A single probe at $0$ cannot replace the algebraic comparison above.""",
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Raising a two-thirds power, $(x^{2/3})^{3}=x^{2}$ holds on $x>0$.",

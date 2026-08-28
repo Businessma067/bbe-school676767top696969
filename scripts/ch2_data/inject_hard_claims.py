@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-"""Replace ~30% of Ch2 statements with genuinely hard exam claims.
-
-Reads s21–s25.py, swaps selected item slots for (statement, truth, body)
-triples from hard_exam_bank, and writes the files back.
-"""
+"""Replace ~30% of Ch2 statements with must-finish hard exam claims."""
 
 from __future__ import annotations
 
 import re
 from pathlib import Path
 
-from hard_exam_bank import claim_for, hard_slots, slots_to_harden
+from hard_exam_bank import all_hard_claims, hard_slots, slots_to_harden
 
 HERE = Path(__file__).resolve().parent
 
@@ -33,7 +29,7 @@ def _escape_raw(s: str) -> str:
     return 'r"' + s.replace('"', r"\"") + '"'
 
 
-def rewrite_file(path: Path, task_offset: int) -> int:
+def rewrite_file(path: Path, task_offset: int, by_slot: dict) -> int:
     text = path.read_text()
     matches = list(_ITEM.finditer(text))
     n_tasks = len(re.findall(r"^\s*task\(", text, re.M))
@@ -48,15 +44,13 @@ def rewrite_file(path: Path, task_offset: int) -> int:
         global_i = task_offset + task_i
         if item_i not in slots_to_harden(global_i):
             continue
-        sub = f"2.{1 + global_i // 30}"
-        claim = claim_for(global_i, item_i, sub)
+        claim = by_slot[(global_i, item_i)]
         block = (
             f"{m.group(1)}{_escape_raw(claim.statement)},\n"
             f"                {claim.truth},\n"
             f"                {_escape_raw(claim.body)},\n"
             f"            )"
         )
-        # Replace from start of "(" through end of ")"
         replacements.append((m.start(), m.end(), block))
         count += 1
 
@@ -68,13 +62,13 @@ def rewrite_file(path: Path, task_offset: int) -> int:
 
 
 def main() -> None:
-    # Reset statement memory inside the bank
-    from hard_exam_bank import _SEEN_STATEMENTS, all_hard_claims
-
-    _SEEN_STATEMENTS.clear()
-    # Pre-generate in order so uniqueness pass is stable
-    _ = all_hard_claims()
-    _SEEN_STATEMENTS.clear()
+    claims = all_hard_claims()
+    slots = hard_slots()
+    assert len(claims) == len(slots)
+    by_slot = {slot: claim for slot, claim in zip(slots, claims)}
+    # uniqueness report
+    stmts = [c.statement for c in claims]
+    print(f"unique hard statements: {len(set(stmts))} / {len(stmts)}")
 
     files = [
         (HERE / "s21.py", 0),
@@ -83,12 +77,14 @@ def main() -> None:
         (HERE / "s24.py", 90),
         (HERE / "s25.py", 120),
     ]
+    # Restore clean soft+old by re-reading is wrong — files already have previous hard.
+    # Re-inject overwrites hard slots only; OK.
     total = 0
     for path, offset in files:
-        n = rewrite_file(path, offset)
+        n = rewrite_file(path, offset, by_slot)
         total += n
         print(f"{path.name}: injected {n}")
-    print(f"TOTAL injected {total} / {len(hard_slots())}")
+    print(f"TOTAL injected {total} / {len(slots)}")
 
 
 if __name__ == "__main__":
