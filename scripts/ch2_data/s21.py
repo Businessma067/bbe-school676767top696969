@@ -524,13 +524,27 @@ The constant $16$ is not $5^2$, so the trinomial is not a square of a linear bin
             (
                 r"Expanding $(x+y+z)^2$ and subtracting $x^2+y^2+z^2$, a clerk reports the remainder $xy+yz+zx$.",
                 False,
-                r"""Each pair appears twice in the product of sums, so
+                r"""The clerk subtracts the three squares from the expanded trinomial square. Expand the product of sums first — each mixed pair appears twice:
+
+Expand $(x+y+z)^2$:
 
 $$
-(x+y+z)^2=x^2+y^2+z^2+2xy+2yz+2zx.
+(x+y+z)^2=x^2+y^2+z^2+2xy+2yz+2zx
 $$
 
-The remainder is $2(xy+yz+zx)$, not the undoubled sum of mixed products.""",
+Subtract $x^2+y^2+z^2$ from both sides:
+
+$$
+(x+y+z)^2-(x^2+y^2+z^2)=2xy+2yz+2zx
+$$
+
+Factor the surviving cross terms:
+
+$$
+2(xy+yz+zx)
+$$
+
+The reported remainder $xy+yz+zx$ drops the factor $2$ on every mixed product.""",
             ),
             (
                 r"""The inequality $x^2+xy\ge xy+y^2$ holds for every real pair $(x,y)$.""",
