@@ -12,7 +12,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Whenever $p+q=7$ and $pq=10$, expanding $(p+q)^2-2pq$ is reported to leave $p^2+q^2=29$. A clerk ticks the line.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $p+q=7$ and $pq=10$, expanding $(p+q)^2-2pq$ is reported to leave $p^2+q^2=29$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $p+q=7$.""",
                 True,
                 
             ),
@@ -22,7 +22,7 @@ TASKS = [
                 
             ),
             (
-                r"On every real pair $(m,n)$, rewriting $(m+n)^3-(m-n)^3$ as $2n(3m^2+n^2)$ is accepted.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: On every real pair $(m,n)$, rewriting $(m+n)^3-(m-n)^3$ as $2n(3m^2+n^2)$ is accepted — with the intermediate display still carrying $(m+n)^3-(m-n)^3$.""",
                 True,
                 
             ),
@@ -61,7 +61,7 @@ TASKS = [
                 
             ),
             (
-                r"Completing the square rewrites $x^2-8x+20$ as $(x-4)^2+4$ for every real $x$.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Completing the square rewrites $x^2-8x+20$ as $(x-4)^2+4$ for every real $x$. The margin note closes without expanding the general case.""",
                 True,
                 
             ),
@@ -85,7 +85,7 @@ TASKS = [
                 
             ),
             (
-                r"Because $(d-e)^2\ge 0$ for all reals, the comparison $d^2+e^2\ge 2de$ is accepted on every pair.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Because $(d-e)^2\ge 0$ for all reals, the comparison $d^2+e^2\ge 2de$ is accepted on every pair. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -95,7 +95,7 @@ TASKS = [
                 
             ),
             (
-                r"Once $s=y+z$ is written, the product $(x-s)(x+s)$ is rewritten as $x^2-(y+z)^2$ identically.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Once $s=y+z$ is written, the product $(x-s)(x+s)$ is rewritten as $x^2-(y+z)^2$ identically. Any remaining letters are declared free once that one check has passed.""",
                 True,
                 
             ),
@@ -134,7 +134,7 @@ TASKS = [
                 
             ),
             (
-                r"A booklet claims $(2x+3)^2-(4x^2+9)$ is identically zero.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: A booklet claims $(2x+3)^2-(4x^2+9)$ is identically zero, with the added remark that domain caveats may be left implicit once written once.""",
                 False,
                 
             ),
@@ -158,7 +158,7 @@ TASKS = [
                 
             ),
             (
-                r"After expanding $(2a+b)^2$ and subtracting $4a^2+b^2$, the remainder is identically $4ab$.",
+                r"""A multi-step margin note proceeds by first expanding the binomial and collecting like terms, then comparing the collected coefficient with the figure written beside the claim, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: After expanding $(2a+b)^2$ and subtracting $4a^2+b^2$, the remainder is identically $4ab$ — with the intermediate display still carrying $4a^2+b^2$.""",
                 True,
                 
             ),
@@ -168,7 +168,7 @@ TASKS = [
                 
             ),
             (
-                r"Matching $x^2+2x+1$ with $(x+1)^2+1$ is recorded as an identity.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Matching $x^2+2x+1$ with $(x+1)^2+1$ is recorded as an identity, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -182,7 +182,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Comparing $(3q+2)^2$ with $(3q-2)^2$, a marker claims the two expansions are identical.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Comparing $(3q+2)^2$ with $(3q-2)^2$, a marker claims the two expansions are identical. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(3q+2)^2$.""",
                 False,
                 
             ),
@@ -216,7 +216,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Collecting the $xy$ term in $(x+3y)^2$, the recorded coefficient $+6$ is accepted.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Collecting the $xy$ term in $(x+3y)^2$, the recorded coefficient $+6$ is accepted. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $xy$.""",
                 True,
                 
             ),
@@ -231,7 +231,7 @@ TASKS = [
                 
             ),
             (
-                r"An examiner lists $(2h+5k)^2=4h^2+10hk+25k^2$ as a standard expansion.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: An examiner lists $(2h+5k)^2=4h^2+10hk+25k^2$ as a standard expansion. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -255,7 +255,7 @@ TASKS = [
                 
             ),
             (
-                r"Provided $h+k=9$ and $hk=14$, the square sum $h^2+k^2$ is reported as $53$.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Provided $h+k=9$ and $hk=14$, the square sum $h^2+k^2$ is reported as $53$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 True,
                 
             ),
@@ -289,7 +289,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $p+q=4$ and $pq=3$, the sum of cubes $p^3+q^3$ is reported as $28$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Whenever $p+q=4$ and $pq=3$, the sum of cubes $p^3+q^3$ is reported as $28$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -304,7 +304,7 @@ TASKS = [
                 
             ),
             (
-                r"Completing the square rewrites $x^2-6x+10$ as $(x-3)^2+1$ for every real $x$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Completing the square rewrites $x^2-6x+10$ as $(x-3)^2+1$ for every real $x$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -328,7 +328,7 @@ TASKS = [
                 
             ),
             (
-                r"Factoring $x^3+8$ as $(x+2)(x^2+2x+4)$ is accepted.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Factoring $x^3+8$ as $(x+2)(x^2+2x+4)$ is accepted — with the intermediate display still carrying $(x+2)(x^2+2x+4)$.""",
                 False,
                 
             ),
@@ -352,7 +352,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Factoring over the reals, a script writes $x^4-16=(x-2)(x+2)(x^2+4)$ and checks the constant term $(-2)(2)(4)=-16$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Factoring over the reals, a script writes $x^4-16=(x-2)(x+2)(x^2+4)$ and checks the constant term $(-2)(2)(4)=-16$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $x^4-16=(x-2)(x+2)(x^2+4)$.""",
                 True,
                 
             ),
@@ -362,7 +362,7 @@ TASKS = [
                 
             ),
             (
-                r"Grouping four terms, $ac+ad+bc+bd$ is rewritten as $(a+b)(c+d)$ identically.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Grouping four terms, $ac+ad+bc+bd$ is rewritten as $(a+b)(c+d)$ identically — with the intermediate display still carrying $(a+b)(c+d)$.""",
                 True,
                 
             ),
@@ -401,7 +401,7 @@ TASKS = [
                 
             ),
             (
-                r"On every real $y\neq\pm 1$, factoring $y^4-1$ as $(y-1)(y+1)(y^2+1)$ is accepted.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: On every real $y\neq\pm 1$, factoring $y^4-1$ as $(y-1)(y+1)(y^2+1)$ is accepted. The claim is filed as settled for every admissible value of the letters.""",
                 True,
                 
             ),
@@ -425,7 +425,7 @@ TASKS = [
                 
             ),
             (
-                r"With $p+q+r=0$ and $p=2$, $q=3$, a note sets $r=-5$ and concludes $p^3+q^3+r^3=3pqr$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: With $p+q+r=0$ and $p=2$, $q=3$, a note sets $r=-5$ and concludes $p^3+q^3+r^3=3pqr$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -435,7 +435,7 @@ TASKS = [
                 
             ),
             (
-                r"Completing the square for $2x^2-8x+10$ is recorded as $2(x-2)^2$ with no leftover.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Completing the square for $2x^2-8x+10$ is recorded as $2(x-2)^2$ with no leftover. No second independent substitution is attempted.""",
                 False,
                 
             ),
@@ -474,7 +474,7 @@ TASKS = [
                 
             ),
             (
-                r"Evaluating $(1^2+2^2)(2^2+3^2)$ by quoting only $(2-6)^2=16$, a clerk declares the product equal to $16$.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Evaluating $(1^2+2^2)(2^2+3^2)$ by quoting only $(2-6)^2=16$, a clerk declares the product equal to $16$, and further instructs candidates to treat any matching numerical check as decisive.""",
                 False,
                 
             ),
@@ -498,7 +498,7 @@ TASKS = [
                 
             ),
             (
-                r"Difference of cubes factors $8-t^3$ as $(2-t)(4+2t+t^2)$ identically.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Difference of cubes factors $8-t^3$ as $(2-t)(4+2t+t^2)$ identically — with the intermediate display still carrying $(2-t)(4+2t+t^2)$.""",
                 True,
                 
             ),
@@ -508,7 +508,7 @@ TASKS = [
                 
             ),
             (
-                r"A student expands $(2x-y+3)^2$, subtracts $4x^2+y^2+9$, and claims the difference is identically zero.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: A student expands $(2x-y+3)^2$, subtracts $4x^2+y^2+9$, and claims the difference is identically zero, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -522,7 +522,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"After grouping $a-(b+c)$, the coefficient of $bc$ in $(a-b-c)^2$ is recorded as $+2$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After grouping $a-(b+c)$, the coefficient of $bc$ in $(a-b-c)^2$ is recorded as $+2$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $a-(b+c)$.""",
                 True,
                 
             ),
@@ -556,7 +556,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Given $p+q=4$ and $pq=1$, a computation of $p^4+q^4$ is reported as $194$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Given $p+q=4$ and $pq=1$, a computation of $p^4+q^4$ is reported as $194$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $p+q=4$.""",
                 True,
                 
             ),
@@ -571,7 +571,7 @@ TASKS = [
                 
             ),
             (
-                r"Factoring by grouping, $x^3+x^2-x-1$ is rewritten as $(x+1)^2(x-1)$ identically.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Factoring by grouping, $x^3+x^2-x-1$ is rewritten as $(x+1)^2(x-1)$ identically. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -595,7 +595,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $u+v=9$ and $uv=20$, expanding $(u+v)^2-2uv$ is said to leave $61$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: Whenever $u+v=9$ and $uv=20$, expanding $(u+v)^2-2uv$ is said to leave $61$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 False,
                 
             ),
@@ -629,7 +629,7 @@ TASKS = [
                 
             ),
             (
-                r"With $\alpha+\beta=12$ and $\alpha\beta=32$, the value $(\alpha-\beta)^2$ is reported as $16$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: With $\alpha+\beta=12$ and $\alpha\beta=32$, the value $(\alpha-\beta)^2$ is reported as $16$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -644,7 +644,7 @@ TASKS = [
                 
             ),
             (
-                r"A booklet claims $(2u-3v)^2-(4u^2+9v^2)$ is identically zero.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: A booklet claims $(2u-3v)^2-(4u^2+9v^2)$ is identically zero, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -668,7 +668,7 @@ TASKS = [
                 
             ),
             (
-                r"On every real pair, $(2u-3v)^2-(4u^2+9v^2)$ equals $-12uv$.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: On every real pair, $(2u-3v)^2-(4u^2+9v^2)$ equals $-12uv$ — with the intermediate display still carrying $-12uv$.""",
                 True,
                 
             ),
@@ -692,7 +692,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Given $a+b+c=0$ with $a=2$, $b=3$, a note sets $c=-5$ and concludes $a^3+b^3+c^3=3abc$ without expanding, then checks $-90=-90$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Given $a+b+c=0$ with $a=2$, $b=3$, a note sets $c=-5$ and concludes $a^3+b^3+c^3=3abc$ without expanding, then checks $-90=-90$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $a+b+c=0$.""",
                 True,
                 
             ),
@@ -702,7 +702,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $p+q=6$ and $pq=7$, the Newton evaluation $p^3+q^3=90$ is reported.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Whenever $p+q=6$ and $pq=7$, the Newton evaluation $p^3+q^3=90$ is reported — with the intermediate display still carrying $pq=7$.""",
                 True,
                 
             ),
@@ -741,7 +741,7 @@ TASKS = [
                 
             ),
             (
-                r"Stopping after an incomplete square, a booklet prints $x^4+4=(x^2+2)^2$.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Stopping after an incomplete square, a booklet prints $x^4+4=(x^2+2)^2$. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -765,7 +765,7 @@ TASKS = [
                 
             ),
             (
-                r"Under $a+b+c=0$, the combination $a^3+b^3+c^3-3abc$ is reported to vanish even though $a^2+b^2+c^2-ab-bc-ca$ need not.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Under $a+b+c=0$, the combination $a^3+b^3+c^3-3abc$ is reported to vanish even though $a^2+b^2+c^2-ab-bc-ca$ need not. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -775,7 +775,7 @@ TASKS = [
                 
             ),
             (
-                r"Omitting the factor $\dfrac{1}{2}$, a clerk equates $u^2+v^2+w^2-uv-vw-wu$ with $(u-v)^2+(v-w)^2+(w-u)^2$ identically.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Omitting the factor $\dfrac{1}{2}$, a clerk equates $u^2+v^2+w^2-uv-vw-wu$ with $(u-v)^2+(v-w)^2+(w-u)^2$ identically. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -814,7 +814,7 @@ TASKS = [
                 
             ),
             (
-                r"The coefficient of $xyz$ in $(2x+y+z)^2$ is recorded as $2$.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: The coefficient of $xyz$ in $(2x+y+z)^2$ is recorded as $2$, with the added remark that domain caveats may be left implicit once written once.""",
                 False,
                 
             ),
@@ -838,7 +838,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $m-n=2$ and $mn=15$, expanding $(m-n)^2+4mn$ yields $(m+n)^2=64$.",
+                r"""A multi-step margin note proceeds by first expanding the binomial and collecting like terms, then comparing the collected coefficient with the figure written beside the claim, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $m-n=2$ and $mn=15$, expanding $(m-n)^2+4mn$ yields $(m+n)^2=64$ — with the intermediate display still carrying $mn=15$.""",
                 True,
                 
             ),
@@ -848,7 +848,7 @@ TASKS = [
                 
             ),
             (
-                r"Collecting $x^2 y$ in $(x+y+z)^3$, a marker records the coefficient $1$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Collecting $x^2 y$ in $(x+y+z)^3$, a marker records the coefficient $1$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -862,7 +862,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Expanding $(x+2)^3$ and subtracting $x^3+8$, the remainder is identically $6x^2+12x$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding $(x+2)^3$ and subtracting $x^3+8$, the remainder is identically $6x^2+12x$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x+2)^3$.""",
                 True,
                 
             ),
@@ -896,7 +896,7 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"The polarisation identity $(m+n)^2-(m-n)^2=4mn$ is used, with $m=5$ and $n=3$, to report the left-hand side equal to $60$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The polarisation identity $(m+n)^2-(m-n)^2=4mn$ is used, with $m=5$ and $n=3$, to report the left-hand side equal to $60$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(m+n)^2-(m-n)^2=4mn$.""",
                 True,
                 
             ),
@@ -911,7 +911,7 @@ TASKS = [
                 
             ),
             (
-                r"Given $y+\dfrac{1}{y}=5$ with $y\neq 0$, a note reports $y^4+\dfrac{1}{y^4}=625$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Given $y+\dfrac{1}{y}=5$ with $y\neq 0$, a note reports $y^4+\dfrac{1}{y^4}=625$. Any remaining letters are declared free once that one check has passed.""",
                 False,
                 
             ),
@@ -935,7 +935,7 @@ TASKS = [
                 
             ),
             (
-                r"Given $c+d=0$ and $cd=-4$, a booklet reports $c^2+d^2=0$.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Given $c+d=0$ and $cd=-4$, a booklet reports $c^2+d^2=0$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 False,
                 
             ),
@@ -969,7 +969,7 @@ TASKS = [
                 
             ),
             (
-                r"With $p+q=1$ and $pq=-6$, the cube sum $p^3+q^3$ is reported as $19$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: With $p+q=1$ and $pq=-6$, the cube sum $p^3+q^3$ is reported as $19$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -984,7 +984,7 @@ TASKS = [
                 
             ),
             (
-                r"A booklet prints $x^4+4y^4=(x^2+2xy+2y^2)^2$ for every real pair.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: A booklet prints $x^4+4y^4=(x^2+2xy+2y^2)^2$ for every real pair, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -1008,7 +1008,7 @@ TASKS = [
                 
             ),
             (
-                r"On every real pair $(h,k)$, rewriting $(h+k)^3+(h-k)^3$ as $2h(h^2+3k^2)$ is accepted.",
+                r"""A multi-step margin note proceeds by first rewriting the left-hand side by the named elementary identity, then equating the simplified display with the printed target expression, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: On every real pair $(h,k)$, rewriting $(h+k)^3+(h-k)^3$ as $2h(h^2+3k^2)$ is accepted — with the intermediate display still carrying $(h+k)^3+(h-k)^3$.""",
                 True,
                 
             ),

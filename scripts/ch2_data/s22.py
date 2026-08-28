@@ -10,7 +10,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Provided $t\neq 3$, reducing $\dfrac{t^2-9}{t-3}$ is recorded as $t+3$. Checking that remainder at $t=0$ is then said to recover the original value $3$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Provided $t\neq 3$, reducing $\dfrac{t^2-9}{t-3}$ is recorded as $t+3$. Checking that remainder at $t=0$ is then said to recover the original value $3$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $t\neq 3$.""",
                 True,
                 
             ),
@@ -20,7 +20,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $w\neq 0$, striking $w$ from $\dfrac{w+k}{w}$ is treated as leaving $1+k$. Substituting $w=1$ is then said to confirm the identity because both sides equal $1+k$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $w\neq 0$, striking $w$ from $\dfrac{w+k}{w}$ is treated as leaving $1+k$. Substituting $w=1$ is then said to confirm the identity because both sides equal $1+k$ — with the intermediate display still carrying $w$.""",
                 False,
                 
             ),
@@ -59,7 +59,7 @@ TASKS = [
                 
             ),
             (
-                r"After taking $8x$ as a least common denominator of $\dfrac{1}{3x}+\dfrac{1}{5x}$ for $x\neq 0$, a clerk calls that choice legitimate.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: After taking $8x$ as a least common denominator of $\dfrac{1}{3x}+\dfrac{1}{5x}$ for $x\neq 0$, a clerk calls that choice legitimate. The claim is filed as settled for every admissible value of the letters.""",
                 False,
                 
             ),
@@ -83,7 +83,7 @@ TASKS = [
                 
             ),
             (
-                r"On $t\neq 0$, splitting $\dfrac{t+8}{t}$ produces $1+\dfrac{8}{t}$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: On $t\neq 0$, splitting $\dfrac{t+8}{t}$ produces $1+\dfrac{8}{t}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 True,
                 
             ),
@@ -93,7 +93,7 @@ TASKS = [
                 
             ),
             (
-                r"After cancelling in $\dfrac{u(u+7)}{u+7}$ whenever $u\neq -7$, a note leaves $u+7$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: After cancelling in $\dfrac{u(u+7)}{u+7}$ whenever $u\neq -7$, a note leaves $u+7$. No second independent substitution is attempted.""",
                 False,
                 
             ),
@@ -132,7 +132,7 @@ TASKS = [
                 
             ),
             (
-                r"Squaring $\bigl(1-\dfrac{1}{v}\bigr)$ on $v\neq 0$ is treated as $1-\dfrac{1}{v^2}$.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Squaring $\bigl(1-\dfrac{1}{v}\bigr)$ on $v\neq 0$ is treated as $1-\dfrac{1}{v^2}$, and further instructs candidates to treat any matching numerical check as decisive.""",
                 False,
                 
             ),
@@ -156,7 +156,7 @@ TASKS = [
                 
             ),
             (
-                r"Provided $h\neq 7$, reducing $\dfrac{h^2-49}{h-7}$ is filed as $h+7$, and that remainder is then treated as equal to $\dfrac{h^2+49}{h+7}$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Provided $h\neq 7$, reducing $\dfrac{h^2-49}{h-7}$ is filed as $h+7$, and that remainder is then treated as equal to $\dfrac{h^2+49}{h+7}$ — with the intermediate display still carrying $\dfrac{h^2-49}{h-7}$.""",
                 False,
                 
             ),
@@ -166,7 +166,7 @@ TASKS = [
                 
             ),
             (
-                r"With $w\neq 5$, someone writes $\dfrac{w^3-125}{w-5}=w^2-5w+25$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: With $w\neq 5$, someone writes $\dfrac{w^3-125}{w-5}=w^2-5w+25$, while explicitly permitting the omission of a full symbolic expansion.""",
                 False,
                 
             ),
@@ -180,7 +180,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Squaring $\bigl(1+\dfrac{1}{t}\bigr)$ for $t\neq 0$ is claimed to produce $1+\dfrac{1}{t^2}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Squaring $\bigl(1+\dfrac{1}{t}\bigr)$ for $t\neq 0$ is claimed to produce $1+\dfrac{1}{t^2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\bigl(1+\dfrac{1}{t}\bigr)$.""",
                 False,
                 
             ),
@@ -214,7 +214,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Taking twice the reciprocal of $\dfrac{1}{h}+\dfrac{1}{k}$ for $hk\neq 0$ and $h+k\neq 0$ is said to produce $\dfrac{2hk}{h+k}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Taking twice the reciprocal of $\dfrac{1}{h}+\dfrac{1}{k}$ for $hk\neq 0$ and $h+k\neq 0$ is said to produce $\dfrac{2hk}{h+k}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{h}+\dfrac{1}{k}$.""",
                 True,
                 
             ),
@@ -229,7 +229,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $v\neq 0$, striking $v$ from $\dfrac{3v+5}{v}$ is treated as leaving $3+5$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Whenever $v\neq 0$, striking $v$ from $\dfrac{3v+5}{v}$ is treated as leaving $3+5$. No second independent substitution is attempted.""",
                 False,
                 
             ),
@@ -253,7 +253,7 @@ TASKS = [
                 
             ),
             (
-                r"On $uv\neq 0$, adding $\dfrac{8}{u}+\dfrac{3}{v}$ with common denominator $u+v$ is claimed to produce $\dfrac{11}{u+v}$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: On $uv\neq 0$, adding $\dfrac{8}{u}+\dfrac{3}{v}$ with common denominator $u+v$ is claimed to produce $\dfrac{11}{u+v}$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 False,
                 
             ),
@@ -287,7 +287,7 @@ TASKS = [
                 
             ),
             (
-                r"Someone treats $\dfrac{\dfrac{1}{v}-\dfrac{1}{w}}{\dfrac{1}{v}+\dfrac{1}{w}}$ on $vw\neq 0$ and $v\neq -w$ as $\dfrac{v-w}{v+w}$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Someone treats $\dfrac{\dfrac{1}{v}-\dfrac{1}{w}}{\dfrac{1}{v}+\dfrac{1}{w}}$ on $vw\neq 0$ and $v\neq -w$ as $\dfrac{v-w}{v+w}$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 False,
                 
             ),
@@ -302,7 +302,7 @@ TASKS = [
                 
             ),
             (
-                r"Combining $\dfrac{3}{h-3}-\dfrac{3}{h+3}$ for $h\neq \pm 3$ is said to equal $\dfrac{18}{h^2-9}$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Combining $\dfrac{3}{h-3}-\dfrac{3}{h+3}$ for $h\neq \pm 3$ is said to equal $\dfrac{18}{h^2-9}$, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -326,7 +326,7 @@ TASKS = [
                 
             ),
             (
-                r"On $u\neq 5$, adding $1+\dfrac{1}{u-5}$ is said to produce $\dfrac{u}{u-5}$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: On $u\neq 5$, adding $1+\dfrac{1}{u-5}$ is said to produce $\dfrac{u}{u-5}$ — with the intermediate display still carrying $1+\dfrac{1}{u-5}$.""",
                 False,
                 
             ),
@@ -350,7 +350,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Combining $\dfrac{1}{x}+\dfrac{1}{x+1}+\dfrac{1}{x-1}$ for $x\notin\{-1,0,1\}$ is said to equal $\dfrac{3x^2-1}{x(x^2-1)}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $\dfrac{1}{x}+\dfrac{1}{x+1}+\dfrac{1}{x-1}$ for $x\notin\{-1,0,1\}$ is said to equal $\dfrac{3x^2-1}{x(x^2-1)}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{x}+\dfrac{1}{x+1}+\dfrac{1}{x-1}$.""",
                 True,
                 
             ),
@@ -360,7 +360,7 @@ TASKS = [
                 
             ),
             (
-                r"Subtracting $\dfrac{1}{u^2-9}-\dfrac{1}{u^2-1}$ away from $u=\pm 1,\pm 3$ is claimed to equal $\dfrac{8}{u^2-9}$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Subtracting $\dfrac{1}{u^2-9}-\dfrac{1}{u^2-1}$ away from $u=\pm 1,\pm 3$ is claimed to equal $\dfrac{8}{u^2-9}$ — with the intermediate display still carrying $u=\pm 1,\pm 3$.""",
                 False,
                 
             ),
@@ -399,7 +399,7 @@ TASKS = [
                 
             ),
             (
-                r"Squaring $h+\dfrac{1}{h}$ without the cross term, someone writes $\bigl(h+\dfrac{1}{h}\bigr)^2=h^2+\dfrac{1}{h^2}$ for $h\neq 0$.",
+                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Squaring $h+\dfrac{1}{h}$ without the cross term, someone writes $\bigl(h+\dfrac{1}{h}\bigr)^2=h^2+\dfrac{1}{h^2}$ for $h\neq 0$. The margin note closes without expanding the general case.""",
                 False,
                 
             ),
@@ -423,7 +423,7 @@ TASKS = [
                 
             ),
             (
-                r"Dividing matching geometric pieces $\dfrac{\dfrac{1}{t}+\dfrac{1}{t^2}}{\dfrac{1}{t}-\dfrac{1}{t^2}}$ is said to leave $\dfrac{t+1}{t-1}$ for $t\neq 0,1$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Dividing matching geometric pieces $\dfrac{\dfrac{1}{t}+\dfrac{1}{t^2}}{\dfrac{1}{t}-\dfrac{1}{t^2}}$ is said to leave $\dfrac{t+1}{t-1}$ for $t\neq 0,1$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -433,7 +433,7 @@ TASKS = [
                 
             ),
             (
-                r"After cancelling $\dfrac{w^3-27}{w-3}$ for $w\neq 3$, the quadratic $w^2+3w+9$ is recorded, and at $w=0$ that remainder is said to match the original value $9$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: After cancelling $\dfrac{w^3-27}{w-3}$ for $w\neq 3$, the quadratic $w^2+3w+9$ is recorded, and at $w=0$ that remainder is said to match the original value $9$. Any remaining letters are declared free once that one check has passed.""",
                 True,
                 
             ),
@@ -472,7 +472,7 @@ TASKS = [
                 
             ),
             (
-                r"Whenever $k\neq -5$, someone writes $\dfrac{k^2+10k+25}{k+5}-\dfrac{k^2-25}{k+5}=0$.",
+                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Whenever $k\neq -5$, someone writes $\dfrac{k^2+10k+25}{k+5}-\dfrac{k^2-25}{k+5}=0$, with the added remark that domain caveats may be left implicit once written once.""",
                 False,
                 
             ),
@@ -496,7 +496,7 @@ TASKS = [
                 
             ),
             (
-                r"After clearing $1+\dfrac{1}{1+\dfrac{1}{v}}$ for $v\neq 0,-1$, a report of $\dfrac{2v+1}{v+1}$ is accepted.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: After clearing $1+\dfrac{1}{1+\dfrac{1}{v}}$ for $v\neq 0,-1$, a report of $\dfrac{2v+1}{v+1}$ is accepted — with the intermediate display still carrying $v\neq 0,-1$.""",
                 True,
                 
             ),
@@ -506,7 +506,7 @@ TASKS = [
                 
             ),
             (
-                r"Adding swapped linear ratios $\dfrac{u+5}{u-5}+\dfrac{u-5}{u+5}=\dfrac{2u}{u^2-25}$ off $u=\pm 5$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Adding swapped linear ratios $\dfrac{u+5}{u-5}+\dfrac{u-5}{u+5}=\dfrac{2u}{u^2-25}$ off $u=\pm 5$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 False,
                 
             ),
@@ -520,7 +520,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Dividing $(x+3)^2-(x-3)^2$ by $x\neq 0$ is said to leave the constant $12$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Dividing $(x+3)^2-(x-3)^2$ by $x\neq 0$ is said to leave the constant $12$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x+3)^2-(x-3)^2$.""",
                 True,
                 
             ),
@@ -554,7 +554,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Reducing $\dfrac{x^2-25}{x^2-5x}$ for $x\neq 0,5$ is said to leave $\dfrac{x+5}{x}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Reducing $\dfrac{x^2-25}{x^2-5x}$ for $x\neq 0,5$ is said to leave $\dfrac{x+5}{x}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{x^2-25}{x^2-5x}$.""",
                 True,
                 
             ),
@@ -569,7 +569,7 @@ TASKS = [
                 
             ),
             (
-                r"Pulling five from $\dfrac{5v-15}{v^2-9}$ is claimed to leave $\dfrac{5}{v+3}$ off $v=\pm 3$.",
+                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Pulling five from $\dfrac{5v-15}{v^2-9}$ is claimed to leave $\dfrac{5}{v+3}$ off $v=\pm 3$. Any remaining letters are declared free once that one check has passed.""",
                 True,
                 
             ),
@@ -593,7 +593,7 @@ TASKS = [
                 
             ),
             (
-                r"Cancelling a genuine square, $\dfrac{t^2+6t+9}{t+3}$ equals $t+3$ for $t\neq -3$, and at $t=0$ this remainder is said to match the original value $3$.",
+                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Cancelling a genuine square, $\dfrac{t^2+6t+9}{t+3}$ equals $t+3$ for $t\neq -3$, and at $t=0$ this remainder is said to match the original value $3$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
                 True,
                 
             ),
@@ -627,7 +627,7 @@ TASKS = [
                 
             ),
             (
-                r"Filing $\dfrac{\dfrac{t}{u}+\dfrac{u}{t}}{\dfrac{t}{u}-\dfrac{u}{t}}$ for $tu\neq 0$ and $t\neq \pm u$ as $\dfrac{t^2-u^2}{t^2+u^2}$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Filing $\dfrac{\dfrac{t}{u}+\dfrac{u}{t}}{\dfrac{t}{u}-\dfrac{u}{t}}$ for $tu\neq 0$ and $t\neq \pm u$ as $\dfrac{t^2-u^2}{t^2+u^2}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -642,7 +642,7 @@ TASKS = [
                 
             ),
             (
-                r"On $k\neq 0$, expanding $\bigl(1+\dfrac{1}{k}\bigr)^2$ is recorded as $\dfrac{k^2+2k+1}{k^2}$.",
+                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: On $k\neq 0$, expanding $\bigl(1+\dfrac{1}{k}\bigr)^2$ is recorded as $\dfrac{k^2+2k+1}{k^2}$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
                 True,
                 
             ),
@@ -666,7 +666,7 @@ TASKS = [
                 
             ),
             (
-                r"Squaring the minus, $\dfrac{9}{(-3u)^2}$ equals $\dfrac{1}{u^2}$ for every $u\neq 0$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Squaring the minus, $\dfrac{9}{(-3u)^2}$ equals $\dfrac{1}{u^2}$ for every $u\neq 0$ — with the intermediate display still carrying $\dfrac{1}{u^2}$.""",
                 True,
                 
             ),
@@ -690,7 +690,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Taking twice the reciprocal of $\dfrac{1}{t}+\dfrac{1}{u}$ for $tu\neq 0$ and $t+u\neq 0$ produces $\dfrac{2tu}{t+u}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Taking twice the reciprocal of $\dfrac{1}{t}+\dfrac{1}{u}$ for $tu\neq 0$ and $t+u\neq 0$ produces $\dfrac{2tu}{t+u}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{t}+\dfrac{1}{u}$.""",
                 True,
                 
             ),
@@ -700,7 +700,7 @@ TASKS = [
                 
             ),
             (
-                r"After cancelling $\dfrac{v^3+27}{v+3}$ for $v\neq -3$, the quadratic $v^2-3v+9$ at $v=0$ is said to match the original $9$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: After cancelling $\dfrac{v^3+27}{v+3}$ for $v\neq -3$, the quadratic $v^2-3v+9$ at $v=0$ is said to match the original $9$ — with the intermediate display still carrying $v\neq -3$.""",
                 True,
                 
             ),
@@ -739,7 +739,7 @@ TASKS = [
                 
             ),
             (
-                r"Provided $z\neq \pm 5$, reducing $\dfrac{2z-10}{z^2-25}$ leaves $\dfrac{2}{z+5}$.",
+                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: Provided $z\neq \pm 5$, reducing $\dfrac{2z-10}{z^2-25}$ leaves $\dfrac{2}{z+5}$. The claim is filed as settled for every admissible value of the letters.""",
                 True,
                 
             ),
@@ -763,7 +763,7 @@ TASKS = [
                 
             ),
             (
-                r"Copying the reduced form of $\dfrac{t-3}{t^2-8t+15}$ after excluding $t\in\{3,5\}$ as $\dfrac{1}{t-3}$.",
+                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Copying the reduced form of $\dfrac{t-3}{t^2-8t+15}$ after excluding $t\in\{3,5\}$ as $\dfrac{1}{t-3}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
                 False,
                 
             ),
@@ -773,7 +773,7 @@ TASKS = [
                 
             ),
             (
-                r"The pair $\dfrac{1}{v(v+1)}+\dfrac{1}{v(v-1)}$ is combined to $\dfrac{2}{v^2-1}$ for $v\neq 0,\pm 1$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: The pair $\dfrac{1}{v(v+1)}+\dfrac{1}{v(v-1)}$ is combined to $\dfrac{2}{v^2-1}$ for $v\neq 0,\pm 1$. No second independent substitution is attempted.""",
                 True,
                 
             ),
@@ -812,7 +812,7 @@ TASKS = [
                 
             ),
             (
-                r"Opposite linear denominators are added as $\dfrac{tu}{t-u}+\dfrac{tu}{u-t}=tu$ after $tu\neq 0$ and $t\neq u$.",
+                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Opposite linear denominators are added as $\dfrac{tu}{t-u}+\dfrac{tu}{u-t}=tu$ after $tu\neq 0$ and $t\neq u$, and further instructs candidates to treat any matching numerical check as decisive.""",
                 False,
                 
             ),
@@ -836,7 +836,7 @@ TASKS = [
                 
             ),
             (
-                r"Dropping a factor, $\dfrac{1}{v^2-25}-\dfrac{1}{v^2-9}$ is claimed to equal $\dfrac{16}{v^2-25}$ away from $v=\pm 3,\pm 5$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Dropping a factor, $\dfrac{1}{v^2-25}-\dfrac{1}{v^2-9}$ is claimed to equal $\dfrac{16}{v^2-25}$ away from $v=\pm 3,\pm 5$ — with the intermediate display still carrying $\dfrac{16}{v^2-25}$.""",
                 False,
                 
             ),
@@ -846,7 +846,7 @@ TASKS = [
                 
             ),
             (
-                r"Differencing reciprocal squares $\dfrac{1}{(z-1)^2}-\dfrac{1}{(z+1)^2}$ produces $\dfrac{4z}{(z^2-1)^2}$ off $z=\pm 1$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Differencing reciprocal squares $\dfrac{1}{(z-1)^2}-\dfrac{1}{(z+1)^2}$ produces $\dfrac{4z}{(z^2-1)^2}$ off $z=\pm 1$, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -860,7 +860,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Squaring the sum $\dfrac{h}{k}+\dfrac{k}{h}$ for $hk\neq 0$ is said to equal $\dfrac{(h^2+k^2)^2}{h^2k^2}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Squaring the sum $\dfrac{h}{k}+\dfrac{k}{h}$ for $hk\neq 0$ is said to equal $\dfrac{(h^2+k^2)^2}{h^2k^2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{h}{k}+\dfrac{k}{h}$.""",
                 True,
                 
             ),
@@ -894,7 +894,7 @@ TASKS = [
         context="Evaluate each statement. Mark it TRUE or FALSE.",
         items=[
             (
-                r"Clearing $\dfrac{1}{x+\dfrac{1}{x+\dfrac{1}{x}}}$ for $x\neq 0$ is said to equal $\dfrac{x^2+1}{x(x^2+2)}$.",
+                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Clearing $\dfrac{1}{x+\dfrac{1}{x+\dfrac{1}{x}}}$ for $x\neq 0$ is said to equal $\dfrac{x^2+1}{x(x^2+2)}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\dfrac{1}{x+\dfrac{1}{x+\dfrac{1}{x}}}$.""",
                 True,
                 
             ),
@@ -909,7 +909,7 @@ TASKS = [
                 
             ),
             (
-                r"With $k\neq 0$ and $h\neq k$, someone writes $\dfrac{1+\dfrac{h}{k}}{1-\dfrac{h}{k}}=\dfrac{k-h}{k+h}$.",
+                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: With $k\neq 0$ and $h\neq k$, someone writes $\dfrac{1+\dfrac{h}{k}}{1-\dfrac{h}{k}}=\dfrac{k-h}{k+h}$. No second independent substitution is attempted.""",
                 False,
                 
             ),
@@ -933,7 +933,7 @@ TASKS = [
                 
             ),
             (
-                r"Squaring the sum $\dfrac{1}{x}+\dfrac{1}{y}$ for $xy\neq 0$ is claimed to leave $\dfrac{1}{x^2}+\dfrac{1}{y^2}$.",
+                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: Squaring the sum $\dfrac{1}{x}+\dfrac{1}{y}$ for $xy\neq 0$ is claimed to leave $\dfrac{1}{x^2}+\dfrac{1}{y^2}$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
                 False,
                 
             ),
@@ -967,7 +967,7 @@ TASKS = [
                 
             ),
             (
-                r"Provided $u\neq 0,5$, collapsing $\dfrac{1-\dfrac{5}{u}}{1-\dfrac{1}{u}}$ is recorded as $\dfrac{u-5}{u-1}$.",
+                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Provided $u\neq 0,5$, collapsing $\dfrac{1-\dfrac{5}{u}}{1-\dfrac{1}{u}}$ is recorded as $\dfrac{u-5}{u-1}$. On that basis, the claim is then entered in the answer key without a second expansion.""",
                 True,
                 
             ),
@@ -982,7 +982,7 @@ TASKS = [
                 
             ),
             (
-                r"Clearing $\dfrac{1}{1+\dfrac{1}{w-1}}$ for $w\neq 0,1$ is said to leave $\dfrac{w-1}{w}$.",
+                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Clearing $\dfrac{1}{1+\dfrac{1}{w-1}}$ for $w\neq 0,1$ is said to leave $\dfrac{w-1}{w}$, while explicitly permitting the omission of a full symbolic expansion.""",
                 True,
                 
             ),
@@ -1006,7 +1006,7 @@ TASKS = [
                 
             ),
             (
-                r"After clearing $\dfrac{1}{1-\dfrac{1}{u}}$ for $u\neq 0,1$, a candidate reports $\dfrac{u}{u-1}$.",
+                r"""A multi-step margin note proceeds by first clearing shared factors or writing a common denominator, then reading the surviving expression as the claimed remainder, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: After clearing $\dfrac{1}{1-\dfrac{1}{u}}$ for $u\neq 0,1$, a candidate reports $\dfrac{u}{u-1}$ — with the intermediate display still carrying $u\neq 0,1$.""",
                 True,
                 
             ),
