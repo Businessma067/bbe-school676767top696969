@@ -9,7 +9,15 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-from ch6_math import leftover_unicode, unpaired_dollars, wrap_math, wrap_statement
+from ch6_math import (
+    embed_display_fractions_stashed,
+    leftover_unicode,
+    normalize_division_to_fractions,
+    restore_fraction_stash,
+    unpaired_dollars,
+    wrap_math,
+    wrap_statement,
+)
 
 PDF = Path("/Users/yehor/Downloads/Inequalities_Regrouped_By_Topic.pdf")
 ROOT = Path(__file__).resolve().parents[2]
@@ -425,6 +433,154 @@ def split_arrow_chains(text: str) -> str:
     return "\n\n".join(p.strip() for p in parts if p.strip())
 
 
+def split_sentences(text: str) -> list[str]:
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z(])", text.strip())
+    return [p.strip() for p in parts if p.strip()]
+
+
+def expand_critical_points_block(text: str) -> str:
+    m = re.match(r"^(Critical points:\s*)(.+)$", text, re.S)
+    if not m:
+        return text
+    body = m.group(2).strip()
+    chunks = [c.strip() for c in re.split(r";\s*", body) if c.strip()]
+    if len(chunks) <= 1:
+        return f"**Critical points**\n\n{body}"
+    lines = []
+    for chunk in chunks:
+        if chunk and chunk[0].islower():
+            chunk = chunk[0].upper() + chunk[1:]
+        lines.append(chunk)
+    return "**Critical points**\n\n" + "\n\n".join(lines)
+
+
+def expand_rational_explanation(text: str) -> str:
+    text = expand_critical_points_block(text)
+    text = re.sub(r"\bCritical points:\s*", "**Critical points**\n\n", text, count=1)
+    text = re.sub(
+        r"\.\s+The inequality asks for ",
+        r".\n\n**Solution selection**\n\nThe inequality asks for ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Keep the (?:non-)?(?:positive|negative|non-negative|non-positive) )",
+        r".\n\n**Solution selection**\n\n\1",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(The inequality is strict )",
+        r".\n\n**Strictness**\n\n\1",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+Solution:\s*",
+        r".\n\n**Solution**\n\n",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(True solution set:\s*)",
+        r".\n\n**Correct solution**\n\n\1",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Notice the pattern )",
+        r".\n\n**Sign note**\n\nNotice the pattern ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(The numerator )",
+        r".\n\n**Numerator note**\n\nThe numerator ",
+        text,
+        count=1,
+    )
+    text = re.sub(
+        r"\.\s+(For \$x > 3\$)",
+        r".\n\n**Case analysis**\n\nFor $x > 3$",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(But \$x = -2\$ also works:)",
+        r".\n\n**Extra zero**\n\nBut $x = -2$ also works:",
+        text,
+    )
+    return split_arrow_chains(text)
+
+
+def expand_quadratic_explanation(text: str) -> str:
+    text = re.sub(r"^Factor:\s*", "**Factor**\n\n", text)
+    text = re.sub(r"\.\s+Critical points:\s*", ".\n\n**Critical points**\n\n", text)
+    text = re.sub(
+        r"\.\s+(Keep the (?:non-)?(?:positive|negative|non-negative|non-positive) )",
+        r".\n\n**Solution selection**\n\n\1",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(The (?:parabola|discriminant|quadratic|inequality is strict) )",
+        r".\n\n**Analysis**\n\n\1",
+        text,
+        count=1,
+    )
+    text = re.sub(
+        r"\.\s+(A non-strict )",
+        r".\n\n**Endpoint rule**\n\nA non-strict ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Since )",
+        r".\n\n**Conclusion**\n\nSince ",
+        text,
+        count=1,
+    )
+    text = re.sub(
+        r"\.\s+(The branch )",
+        r".\n\n**Second branch**\n\nThe branch ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(The stated )",
+        r".\n\n**Compare to claim**\n\nThe stated ",
+        text,
+    )
+    return split_arrow_chains(text)
+
+
+def expand_word_explanation(text: str) -> str:
+    if re.match(r"^Solving ", text):
+        text = re.sub(r"^Solving ", "**Solve**\n\nSet up and solve. ", text, count=1)
+    starters = [
+        (r"^Average speed ", "**Setup**\n\nAverage speed "),
+        (r"^Each one-hour ", "**Setup**\n\nEach one-hour "),
+        (r"^Isolating ", "**Solve**\n\nIsolating "),
+        (r"^Set up ", "**Setup**\n\nSet up "),
+        (r"^At \$", "**Evaluate**\n\nAt $"),
+        (r"^With \$", "**Evaluate**\n\nWith $"),
+        (r"^This restates ", "**Conclusion**\n\nThis restates "),
+        (r"^Applying ", "**Order of operations**\n\nApplying "),
+        (r"^\"Discount first\"", "**Model**\n\n\"Discount first\""),
+        (r"^500 \+", "**Evaluate**\n\n500 +"),
+    ]
+    for pat, repl in starters:
+        if re.search(pat, text):
+            text = re.sub(pat, repl, text, count=1)
+            break
+    text = re.sub(
+        r"\.\s+(Requiring at least )",
+        r".\n\n**Inequality**\n\nRequiring at least ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Dividing both sides )",
+        r".\n\n**Solve**\n\nDividing both sides ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Clearing the denominator )",
+        r".\n\n**Solve**\n\nClearing the denominator ",
+        text,
+    )
+    return split_arrow_chains(text)
+
+
 def expand_compound_explanation(text: str) -> str:
     """Break compound-inequality solutions into labeled, step-by-step blocks."""
     text = re.sub(
@@ -450,16 +606,50 @@ def expand_compound_explanation(text: str) -> str:
         r".\n\n\1",
         text,
     )
+    text = re.sub(r"\bDomain:\s*", "**Domain**\n\n", text)
+    text = re.sub(r"\bCase 1\b", "**Case 1**", text)
+    text = re.sub(r"\bCase 2\b", "**Case 2**", text)
+    text = re.sub(
+        r"\.\s+(Union of both cases:)",
+        r".\n\n**Combine cases**\n\n\1",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Combined with )",
+        r".\n\n**Restrict to case**\n\nCombined with ",
+        text,
+    )
+    text = re.sub(
+        r"\.\s+(Every domain value here works:)",
+        r".\n\n**Case 1 result**\n\nEvery domain value here works:",
+        text,
+    )
     return text
+
+
+def prepare_prose_math(text: str) -> str:
+    if not text:
+        return text
+    prepared = normalize_division_to_fractions(text)
+    prepared, fracs = embed_display_fractions_stashed(prepared)
+    wrapped = wrap_math(prepared)
+    return restore_fraction_stash(wrapped, fracs)
 
 
 def format_explanation_body(text: str, section_id: str) -> str:
     if not text:
         return text
-    wrapped = wrap_math(text)
-    if section_id == "6.3":
-        return expand_compound_explanation(wrapped)
-    return split_arrow_chains(wrapped)
+    if section_id == "6.1":
+        text = expand_rational_explanation(text)
+    elif section_id == "6.2":
+        text = expand_quadratic_explanation(text)
+    elif section_id == "6.3":
+        text = expand_compound_explanation(text)
+    elif section_id == "6.4":
+        text = expand_word_explanation(text)
+    else:
+        text = split_arrow_chains(text)
+    return prepare_prose_math(text)
 
 
 def should_keep_trap(trap: str, st: dict) -> bool:
@@ -494,19 +684,59 @@ def apply_statement_overrides(q: dict) -> None:
             st["answer"] = override["answer"]
 
 
-def max_diff(stmts: list[dict], fallback: str | None) -> str:
-    vals = []
-    for st in stmts:
-        m = re.match(r"(\d)/5", st.get("difficulty") or "")
-        if m:
-            vals.append(int(m.group(1)))
-    if not vals and fallback:
-        m = re.match(r"(\d)/5", fallback)
-        if m:
-            return fallback
-    if not vals:
-        return "—"
-    return f"{max(vals)}/5"
+def parse_diff(value: str | None) -> int | None:
+    m = re.match(r"(\d)/5", value or "")
+    return int(m.group(1)) if m else None
+
+
+def section_progress_band(section_id: str, local_index: int, section_size: int) -> tuple[int, int]:
+    """Return the target difficulty band for a question's position within its subsection."""
+    if section_size <= 0:
+        return (2, 3)
+    t = local_index / section_size
+    bands: dict[str, list[tuple[float, tuple[int, int]]]] = {
+        "6.1": [(0.20, (1, 2)), (0.45, (2, 3)), (0.70, (3, 4)), (1.01, (4, 5))],
+        "6.2": [(0.20, (1, 2)), (0.45, (2, 3)), (0.70, (3, 4)), (1.01, (4, 5))],
+        "6.3": [(0.23, (2, 3)), (0.46, (3, 4)), (0.77, (4, 4)), (1.01, (4, 5))],
+        "6.4": [(0.32, (2, 3)), (0.64, (3, 4)), (0.88, (4, 4)), (1.01, (4, 5))],
+    }
+    for threshold, band in bands.get(section_id, bands["6.1"]):
+        if t <= threshold:
+            return band
+    return (4, 5)
+
+
+def compute_task_difficulty(
+    q: dict,
+    local_index: int,
+    section_size: int,
+) -> str:
+    stmt_vals = [parse_diff(st.get("difficulty")) for st in q["statements"]]
+    stmt_vals = [v for v in stmt_vals if v is not None]
+    q_val = parse_diff(q.get("difficulty"))
+    if q_val is not None:
+        stmt_vals.append(q_val)
+
+    lo, hi = section_progress_band(q["section_id"], local_index, section_size)
+    if not stmt_vals:
+        return f"{max(lo, min(3, hi))}/5"
+
+    peak = max(stmt_vals)
+    avg = round(sum(stmt_vals) / len(stmt_vals))
+
+    # Blend statement signal with subsection progression.
+    target = max(avg, lo)
+    target = min(target, hi)
+
+    # Allow a late-set peak to reach the top band when statements are genuinely hard.
+    if peak >= 5 and local_index >= max(1, section_size - 2):
+        target = 5
+    elif peak >= 4 and target < 4 and local_index >= max(1, round(section_size * 0.55)):
+        target = 4
+    elif peak <= 2 and local_index <= max(1, round(section_size * 0.2)):
+        target = min(target, 2)
+
+    return f"{target}/5"
 
 
 def build_explanation(st: dict, statement_katex: str, section_id: str) -> str:
@@ -520,9 +750,9 @@ def build_explanation(st: dict, statement_katex: str, section_id: str) -> str:
         parts.append("**Sign chart**")
         parts.append(chart)
     if st["trap"] and should_keep_trap(st["trap"], st):
-        parts.append(f"**Common trap:** {wrap_math(st['trap'])}")
+        parts.append(f"**Common trap:** {prepare_prose_math(st['trap'])}")
     if st["quick"]:
-        parts.append(f"**Quick check:** {wrap_math(st['quick'])}")
+        parts.append(f"**Quick check:** {prepare_prose_math(st['quick'])}")
     return "\n\n".join(parts)
 
 
@@ -564,6 +794,10 @@ def build_tasks(questions: list[dict]) -> list[dict]:
     tasks: list[dict] = []
     n = 0
     counts: dict[str, int] = {}
+    section_totals: dict[str, int] = {}
+    for q in questions:
+        sid = q["section_id"]
+        section_totals[sid] = section_totals.get(sid, 0) + 1
     for q in questions:
         apply_statement_overrides(q)
         sid = q["section_id"]
@@ -599,7 +833,7 @@ def build_tasks(questions: list[dict]) -> list[dict]:
                 "statements": stmts_k,
                 "answer_key": answers,
                 "tactical_explanations": expls,
-                "difficulty_level": max_diff(q["statements"], q["difficulty"]),
+                "difficulty_level": compute_task_difficulty(q, local, section_totals[sid]),
                 "sort_order": n,
                 "solution_overview": overview,
                 "placeholder": False,

@@ -339,6 +339,97 @@ def consume_math(s: str, start: int) -> int:
     return last
 
 
+def normalize_division_to_fractions(text: str) -> str:
+    """Rewrite inline division as (num)/(den) for fraction embedding."""
+    if not text or "/" not in text:
+        return text
+
+    def frac(num: str, den: str) -> str:
+        return f"({num})/({den})"
+
+    work = text
+    work = re.sub(
+        r"\(([^()]+)\)\s*/\s*\(([^()]+)\)",
+        lambda m: frac(m.group(1), m.group(2)),
+        work,
+    )
+    work = re.sub(
+        r"\(([^()]+)\)\s*/\s*(-?\d+(?:\.\d+)?)",
+        lambda m: frac(m.group(1), m.group(2)),
+        work,
+    )
+    work = re.sub(
+        r"(-?\d+(?:\.\d+)?)\s*/\s*\(([^()]+)\)",
+        lambda m: frac(m.group(1), m.group(2)),
+        work,
+    )
+    work = re.sub(
+        r"(?<![\d/.\\])(-?\d+(?:\.\d+)?)\s*/\s*(-?\d+(?:\.\d+)?)(?![\d/])",
+        lambda m: frac(m.group(1), m.group(2)),
+        work,
+    )
+    return work
+
+
+FRAC_STASH_TOKEN = "⟦FRAC:{}⟧"
+
+
+def embed_display_fractions_stashed(text: str) -> tuple[str, list[str]]:
+    """Stash (num)/(den) as tokens until after wrap_math completes."""
+    fracs: list[str] = []
+
+    def repl(match: re.Match[str]) -> str:
+        num = match.group(1).strip()
+        den = match.group(2).strip()
+        fracs.append(dollar_wrap(f"\\dfrac{{{num}}}{{{den}}}"))
+        return FRAC_STASH_TOKEN.format(len(fracs) - 1)
+
+    if not text or "/(" not in text:
+        return text, fracs
+    return re.sub(r"\(([^()]+)\)/\(([^()]+)\)", repl, text), fracs
+
+
+def restore_fraction_stash(text: str, fracs: list[str]) -> str:
+    for i, frac in enumerate(fracs):
+        text = text.replace(FRAC_STASH_TOKEN.format(i), frac)
+    return text
+
+
+def embed_display_fractions_outside_math(text: str) -> str:
+    """Convert (num)/(den) to KaTeX fractions outside existing math/currency."""
+
+    def embed_chunk(chunk: str) -> str:
+        return re.sub(
+            r"\(([^()]+)\)/\(([^()]+)\)",
+            lambda m: dollar_wrap(f"\\dfrac{{{m.group(1).strip()}}}{{{m.group(2).strip()}}}"),
+            chunk,
+        )
+
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        cur = CURRENCY_RE.match(text, i)
+        if cur:
+            out.append(cur.group(0))
+            i += len(cur.group(0))
+            continue
+        if text[i] == "$":
+            j = text.find("$", i + 1)
+            if j == -1:
+                out.append(embed_chunk(text[i:]))
+                break
+            out.append(text[i : j + 1])
+            i = j + 1
+            continue
+        j = i + 1
+        while j < n and text[j] != "$":
+            j += 1
+        out.append(embed_chunk(text[i:j]))
+        i = j
+    return "".join(out)
+
+
 def wrap_math(text: str) -> str:
     if not text:
         return text
