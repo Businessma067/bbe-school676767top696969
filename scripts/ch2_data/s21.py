@@ -12,15 +12,23 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"Whenever $p+q=7$ and $pq=10$, expanding $(p+q)^2-2pq$ is reported to leave $p^2+q^2=29$. A clerk ticks the line.",
+                r"""The inequality $a^2-ab\ge ab-b^2$ holds for every real pair $(a,b)$.""",
                 True,
-                r"""The elementary identity $p^2+q^2=(p+q)^2-2pq$ converts the given data into a number:
+                r"""The inequality compares two quadratic-looking sides in $a$ and $b$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-$$
-(p+q)^2-2pq=7^2-2\cdot 10=49-20=29.
-$$
+Rearrange to one side:
 
-The reported leftover matches.""",
+$$a^2-ab-(ab-b^2)=a^2-2ab+b^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(a-b)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"After collecting only the $xy$ term in $(2x-y+3)^2$, a marker records its coefficient as $+4$. The remaining terms are not needed to judge the claim.",
@@ -34,15 +42,23 @@ $$
 The collected coefficient is $-4$, not $+4$.""",
             ),
             (
-                r"On every real pair $(m,n)$, rewriting $(m+n)^3-(m-n)^3$ as $2n(3m^2+n^2)$ is accepted.",
+                r"""The sum of the fourth power of $u$ and four times the fourth power of $v$ factors as the product of $u^2-2uv+2v^2$ and $u^2+2uv+2v^2$ for every real pair $(u,v)$.""",
                 True,
-                r"""Set $A=m+n$ and $B=m-n$. Then $A-B=2n$ and
+                r"""The verbal claim is a Sophie Germain factorisation in $u$ and $v$. Insert $\pm 4u^2v^2$ to create a difference of squares, then factor.
 
-$$
-A^3-B^3=(A-B)(A^2+AB+B^2).
-$$
+Complete to a difference of squares:
 
-The quadratic factor expands to $3m^2+n^2$, so the difference is $2n(3m^2+n^2)$.""",
+$$u^4+4v^4=(u^2+2v^2)^2-(2uv)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(u^2-2uv+2v^2)(u^2+2uv+2v^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
             (
                 r"Given $a+b+c=0$ with $a=4$ and $b=-1$, a note sets $c=3$ and concludes $a^3+b^3+c^3=3abc$ without expanding.",
@@ -109,15 +125,23 @@ $$
 The two polynomials already disagree at $w=0$.""",
             ),
             (
-                r"Completing the square rewrites $x^2-8x+20$ as $(x-4)^2+4$ for every real $x$.",
+                r"""The inequality $r^2-rs\ge rs-s^2$ holds for every real pair $(r,s)$.""",
                 True,
-                r"""Half of $-8$ is $-4$, and $(-4)^2=16$. Add and subtract $16$:
+                r"""The inequality compares two quadratic-looking sides in $r$ and $s$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-$$
-x^2-8x+20=(x^2-8x+16)+4=(x-4)^2+4.
-$$
+Rearrange to one side:
 
-The leftover constant is $+4$, not zero.""",
+$$r^2-rs-(rs-s^2)=r^2-2rs+s^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(r-s)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"An examiner lists $(2h+5)^2=4h^2+10h+25$ as a standard expansion.",
@@ -151,15 +175,35 @@ $$
 The collected coefficient of $k$ is $-24$.""",
             ),
             (
-                r"Because $(d-e)^2\ge 0$ for all reals, the comparison $d^2+e^2\ge 2de$ is accepted on every pair.",
-                True,
-                r"""Expand the square:
+                r"""If $c^{-3}d^2=2$, then $\dfrac{c^8d^3}{c^2d^7}+3cd\cdot\dfrac{c^{-6}d^5}{c^7d^{-2}}=48$ for $c,d\neq 0$.""",
+                False,
+                r"""The given relation $c^{-3}d^2=2$ does not determine the claim by inspection alone. Set $R=c^{-3}d^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-(d-e)^2=d^2-2de+e^2\ge 0,
-$$
+First summand:
 
-which rearranges to $d^2+e^2\ge 2de$, with equality only when $d=e$.""",
+$$\frac{c^8d^3}{c^2d^7}=c^6d^{-4}=R^{-2}$$
+
+Powers of $c$ and $d$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3cd\cdot\frac{c^{-6}d^5}{c^7d^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+Dropping the summand $R^{-2}=\tfrac{1}{4}$ leaves $48$, which is not the value of the original expression.""",
             ),
             (
                 r"A student expands $(f+g)^2$, subtracts $f^2+g^2$, and claims the remainder is identically zero.",
@@ -169,15 +213,17 @@ $$2fg,$$
 which is not the zero polynomial.""",
             ),
             (
-                r"Once $s=y+z$ is written, the product $(x-s)(x+s)$ is rewritten as $x^2-(y+z)^2$ identically.",
+                r"""The product of the sum of the squares of $a$ and $b$ with the sum of the squares of $c$ and $d$ equals the sum of the square of $a\cdot c-b\cdot d$ and the square of $a\cdot d+b\cdot c$, for every real quadruple.""",
                 True,
-                r"""Difference of squares in $x$ and $s$:
+                r"""The claim describes a product of two sums of squares in four letters. Translate the wording, then verify with Brahmagupta's identity.
 
-$$
-(x-s)(x+s)=x^2-s^2=x^2-(y+z)^2.
-$$
+Brahmagupta identity:
 
-The grouping is an identity in the three letters.""",
+$$(a^2+b^2)(c^2+d^2)=(a\cdot c-b\cdot d)^2+(a\cdot d+b\cdot c)^2$$
+
+Cross pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
+
+The symbolic translation matches the printed verbal pairing on both squares.""",
             ),
             (
                 r"Matching $n^2+6n+8$ with $(n+3)^2$ is accepted as an identity.",
@@ -242,11 +288,35 @@ $$
 Distributing the right-hand side recovers $z^2-25$ with no leftover.""",
             ),
             (
-                r"A booklet claims $(2x+3)^2-(4x^2+9)$ is identically zero.",
-                False,
-                r"""Expand the square and subtract the outer terms:
-$$(2x+3)^2=4x^2+12x+9.$$
-Subtracting $4x^2+9$ leaves $12x$, the doubled cross term, not zero.""",
+                r"""If $p^{-3}q^2=2$, then $\dfrac{p^8q^3}{p^2q^7}+3pq\cdot\dfrac{p^{-6}q^5}{p^7q^{-2}}=48.25$ for $p,q\neq 0$.""",
+                True,
+                r"""The given relation $p^{-3}q^2=2$ does not determine the claim by inspection alone. Set $R=p^{-3}q^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
+
+First summand:
+
+$$\frac{p^8q^3}{p^2q^7}=p^6q^{-4}=R^{-2}$$
+
+Powers of $p$ and $q$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3pq\cdot\frac{p^{-6}q^5}{p^7q^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+The printed value matches the fully reduced substitution.""",
             ),
         ],
         overview="Five recognition checks: a genuine perfect square, a missing middle, an undoubled elementary product, a difference of squares, and a subtracted-square remainder.",
@@ -280,13 +350,17 @@ $$
 The reported value matches.""",
             ),
             (
-                r"After expanding $(2a+b)^2$ and subtracting $4a^2+b^2$, the remainder is identically $4ab$.",
-                True,
-                r"""$$
-(2a+b)^2=4a^2+4ab+b^2
-$$
+                r"""The sum of the fourth power of $p$ and four times the fourth power of $q$ equals the square of $p^2+2q^2$ for every real pair $(p,q)$.""",
+                False,
+                r"""The wording stops at a single square. Expand $p^2+2q^2$ and compare with $p^4+4q^4$ before accepting the verbal equality.
 
-Removing the two outer squares leaves the doubled cross term $4ab$.""",
+Expand the printed square:
+
+$$(p^2+2q^2)^2=p^4+4p^2q^2+4q^4$$
+
+The cross term $4p^2q^2$ is not present in $p^4+4q^4$.
+
+The Sophie Germain rewrite must subtract $(2pq)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
                 r"A note concludes that $(u-v)^3=u^3-v^3$ for every real pair, the middle terms being cancelled by habit.",
@@ -300,13 +374,17 @@ $$
 Those terms vanish only when $uv(u-v)=0$, not identically.""",
             ),
             (
-                r"Matching $x^2+2x+1$ with $(x+1)^2+1$ is recorded as an identity.",
+                r"""The inequality $c^2+cd\ge cd+d^2$ holds for every real pair $(c,d)$.""",
                 False,
-                r"""$$
-(x+1)^2=x^2+2x+1
-$$
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
- already. The extra $+1$ makes the right-hand side one larger for every $x$.""",
+Difference of the two sides:
+
+$$c^2+cd-(cd+d^2)=c^2-d^2=(c-d)(c+d)$$
+
+The factorisation $(c-d)(c+d)$ is not a square, so the sign can change.
+
+For $c=0$, $d=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
         ],
         overview="Five rewrite checks: a grouped difference of squares, an elementary gap square, a binomial remainder, a cube with dropped mixed terms, and an off-by-one perfect square.",
@@ -318,11 +396,17 @@ $$
         context=CTX,
         items=[
             (
-                r"Comparing $(3q+2)^2$ with $(3q-2)^2$, a marker claims the two expansions are identical.",
-                False,
-                r"""The two expansions are
-$$(3q+2)^2=9q^2+12q+4,\qquad (3q-2)^2=9q^2-12q+4.$$
-They differ by $24q$, so they are not identical.""",
+                r"""The product of the sum of the squares of $u$ and $v$ with the sum of the squares of $w$ and $z$ equals the sum of the square of $u\cdot w-v\cdot z$ and the square of $u\cdot z+v\cdot w$, for every real quadruple.""",
+                True,
+                r"""The claim describes a product of two sums of squares in four letters. Translate the wording, then verify with Brahmagupta's identity.
+
+Brahmagupta identity:
+
+$$(u^2+v^2)(w^2+z^2)=(u\cdot w-v\cdot z)^2+(u\cdot z+v\cdot w)^2$$
+
+Cross pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
+
+The symbolic translation matches the printed verbal pairing on both squares.""",
             ),
             (
                 r"Factoring $16-t^2$ as $(4-t)(4+t)$ is accepted for every real $t$.",
@@ -374,15 +458,17 @@ Together with $x^2$ and $4y^2$, the expansion is $x^2+4xy+4y^2$.""",
         context=CTX,
         items=[
             (
-                r"Collecting the $xy$ term in $(x+3y)^2$, the recorded coefficient $+6$ is accepted.",
-                True,
-                r"""The cross term is
+                r"""The sum of the fourth power of $m$ and four times the fourth power of $n$ equals the square of $m^2+2n^2$ for every real pair $(m,n)$.""",
+                False,
+                r"""The wording stops at a single square. Expand $m^2+2n^2$ and compare with $m^4+4n^4$ before accepting the verbal equality.
 
-$$
-2\cdot x\cdot(3y)=6xy
-$$
+Expand the printed square:
 
-The expansion is $x^2+6xy+9y^2$.""",
+$$(m^2+2n^2)^2=m^4+4m^2n^2+4n^4$$
+
+The cross term $4m^2n^2$ is not present in $m^4+4n^4$.
+
+The Sophie Germain rewrite must subtract $(2mn)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
                 r"With $a-b=3$ and $ab=10$, expanding $(a-b)^2+4ab$ is said to leave $(a+b)^2=49$.",
@@ -405,15 +491,17 @@ $$
 Matching a square $(px+q)^2$ to this trinomial forces $p^2=4$ and $2pq=12$, hence $p=2$ and $q=3$.""",
             ),
             (
-                r"An examiner lists $(2h+5k)^2=4h^2+10hk+25k^2$ as a standard expansion.",
-                False,
-                r"""The mixed coefficient must be
+                r"""The product of the sum of the squares of $f$ and $g$ with the sum of the squares of $t$ and $x$ equals the sum of the square of $f\cdot t-g\cdot x$ and the square of $f\cdot x+g\cdot t$, for every real quadruple.""",
+                True,
+                r"""The claim describes a product of two sums of squares in four letters. Translate the wording, then verify with Brahmagupta's identity.
 
-$$
-2\cdot 2h\cdot 5k=20hk
-$$
+Brahmagupta identity:
 
-The listed $10hk$ is the undoubled product $2h\cdot 5k$.""",
+$$(f^2+g^2)(t^2+x^2)=(f\cdot t-g\cdot x)^2+(f\cdot x+g\cdot t)^2$$
+
+Cross pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
+
+The symbolic translation matches the printed verbal pairing on both squares.""",
             ),
             (
                 r"Matching $n^2+10n+16$ with $(n+5)^2$ is accepted on a checklist.",
@@ -436,22 +524,40 @@ The constant $16$ is not $5^2$, so the trinomial is not a square of a linear bin
             (
                 r"Expanding $(x+y+z)^2$ and subtracting $x^2+y^2+z^2$, a clerk reports the remainder $xy+yz+zx$.",
                 False,
-                r"""Each pair appears twice in the product of sums, so
+                r"""The clerk subtracts the three squares from the expanded trinomial square. Expand the product of sums first — each mixed pair appears twice:
+
+Expand $(x+y+z)^2$:
 
 $$
-(x+y+z)^2=x^2+y^2+z^2+2xy+2yz+2zx.
+(x+y+z)^2=x^2+y^2+z^2+2xy+2yz+2zx
 $$
 
-The remainder is $2(xy+yz+zx)$, not the undoubled sum of mixed products.""",
+Subtract $x^2+y^2+z^2$ from both sides:
+
+$$
+(x+y+z)^2-(x^2+y^2+z^2)=2xy+2yz+2zx
+$$
+
+Factor the surviving cross terms:
+
+$$
+2(xy+yz+zx)
+$$
+
+The reported remainder $xy+yz+zx$ drops the factor $2$ on every mixed product.""",
             ),
             (
-                r"Provided $h+k=9$ and $hk=14$, the square sum $h^2+k^2$ is reported as $53$.",
-                True,
-                r"""$$
-(h+k)^2-2hk=81-28=53.
-$$
+                r"""The inequality $x^2+xy\ge xy+y^2$ holds for every real pair $(x,y)$.""",
+                False,
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
-The reported value matches the identity.""",
+Difference of the two sides:
+
+$$x^2+xy-(xy+y^2)=x^2-y^2=(x-y)(x+y)$$
+
+The factorisation $(x-y)(x+y)$ is not a square, so the sign can change.
+
+For $x=0$, $y=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
             (
                 r"A student expands $(a+b)^3$, subtracts $a^3+b^3$, and claims the difference is identically zero.",
@@ -505,15 +611,17 @@ $$
 Equivalently the factorisation $2\beta(3\alpha^2+\beta^2)$.""",
             ),
             (
-                r"Whenever $p+q=4$ and $pq=3$, the sum of cubes $p^3+q^3$ is reported as $28$.",
+                r"""The product of the sum of the squares of $p$ and $q$ with the sum of the squares of $r$ and $s$ equals the sum of the square of $p\cdot r-q\cdot s$ and the square of $p\cdot s+q\cdot r$, for every real quadruple.""",
                 True,
-                r"""Newton’s rewrite $p^3+q^3=(p+q)^3-3pq(p+q)$ gives
+                r"""The claim describes a product of two sums of squares in four letters. Translate the wording, then verify with Brahmagupta's identity.
 
-$$
-4^3-3\cdot 3\cdot 4=64-36=28.
-$$
+Brahmagupta identity:
 
-The reported value is correct.""",
+$$(p^2+q^2)(r^2+s^2)=(p\cdot r-q\cdot s)^2+(p\cdot s+q\cdot r)^2$$
+
+Cross pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
+
+The symbolic translation matches the printed verbal pairing on both squares.""",
             ),
             (
                 r"After collecting only the $xy$ term in $(3x-y)^2$, a marker records its coefficient as $-3$.",
@@ -536,15 +644,23 @@ $$
 which still contains an $x^2$ term. At $x=0$ the two sides are $-16$ and $+16$.""",
             ),
             (
-                r"Completing the square rewrites $x^2-6x+10$ as $(x-3)^2+1$ for every real $x$.",
+                r"""The inequality $m^2-mn\ge mn-n^2$ holds for every real pair $(m,n)$.""",
                 True,
-                r"""Half of $-6$ is $-3$, and $9$ is added and subtracted:
+                r"""The inequality compares two quadratic-looking sides in $m$ and $n$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-$$
-x^2-6x+10=(x-3)^2+1.
-$$
+Rearrange to one side:
 
-The leftover $+1$ is required.""",
+$$m^2-mn-(mn-n^2)=m^2-2mn+n^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(m-n)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
         ],
         overview="Five mixed claims: a cube difference, a Newton cube-sum, a halved cross term, a biquadratic near-miss, and a completed-square leftover.",
@@ -578,15 +694,35 @@ $$
 The reported value matches.""",
             ),
             (
-                r"Factoring $x^3+8$ as $(x+2)(x^2+2x+4)$ is accepted.",
+                r"""If $m^{-3}n^2=2$, then $\dfrac{m^8n^3}{m^2n^7}+3mn\cdot\dfrac{m^{-6}n^5}{m^7n^{-2}}=48$ for $m,n\neq 0$.""",
                 False,
-                r"""Sum of cubes uses a minus in the quadratic factor:
+                r"""The given relation $m^{-3}n^2=2$ does not determine the claim by inspection alone. Set $R=m^{-3}n^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-x^3+8=(x+2)(x^2-2x+4).
-$$
+First summand:
 
-The printed plus on the middle term is the difference-of-cubes pattern, used on a sum.""",
+$$\frac{m^8n^3}{m^2n^7}=m^6n^{-4}=R^{-2}$$
+
+Powers of $m$ and $n$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3mn\cdot\frac{m^{-6}n^5}{m^7n^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+Dropping the summand $R^{-2}=\tfrac{1}{4}$ leaves $48$, which is not the value of the original expression.""",
             ),
             (
                 r"Expanding $(x^2+x+1)(x^2-x+1)$ is claimed to recover $x^4+x^2+1$ after the odd powers cancel.",
@@ -620,15 +756,23 @@ The inner square contributes $+2bc$, and $-2a(b+c)$ produces no $bc$. The collec
         context=CTX,
         items=[
             (
-                r"Factoring over the reals, a script writes $x^4-16=(x-2)(x+2)(x^2+4)$ and checks the constant term $(-2)(2)(4)=-16$.",
+                r"""The sum of the fourth power of $f$ and four times the fourth power of $g$ factors as the product of $f^2-2fg+2g^2$ and $f^2+2fg+2g^2$ for every real pair $(f,g)$.""",
                 True,
-                r"""Difference of squares twice:
+                r"""The verbal claim is a Sophie Germain factorisation in $f$ and $g$. Insert $\pm 4f^2g^2$ to create a difference of squares, then factor.
 
-$$
-x^4-16=(x^2-4)(x^2+4)=(x-2)(x+2)(x^2+4).
-$$
+Complete to a difference of squares:
 
-The quadratic $x^2+4$ has no real root, so the real factorisation stops there. The constant-term check is consistent.""",
+$$f^4+4g^4=(f^2+2g^2)^2-(2fg)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(f^2-2fg+2g^2)(f^2+2fg+2g^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
             (
                 r"Whenever $\lambda+\mu=7$ and $\lambda\mu=10$, completing the evaluation of $(\lambda-\mu)^2$ yields $9$.",
@@ -640,15 +784,23 @@ $$
 The reported gap square is correct.""",
             ),
             (
-                r"Grouping four terms, $ac+ad+bc+bd$ is rewritten as $(a+b)(c+d)$ identically.",
+                r"""The inequality $c^2-cd\ge cd-d^2$ holds for every real pair $(c,d)$.""",
                 True,
-                r"""Factor by grouping:
+                r"""The inequality compares two quadratic-looking sides in $c$ and $d$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-$$
-a(c+d)+b(c+d)=(a+b)(c+d).
-$$
+Rearrange to one side:
 
-Distributing the product recovers the four original terms.""",
+$$c^2-cd-(cd-d^2)=c^2-2cd+d^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(c-d)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"The coefficient of $xyz$ in $(x+y+z)^3$ is recorded as $3$.",
@@ -709,15 +861,23 @@ $$
 Dropping $-2bc$ is the usual mixed-term error.""",
             ),
             (
-                r"On every real $y\neq\pm 1$, factoring $y^4-1$ as $(y-1)(y+1)(y^2+1)$ is accepted.",
+                r"""The sum of the fourth power of $c$ and four times the fourth power of $d$ factors as the product of $c^2-2cd+2d^2$ and $c^2+2cd+2d^2$ for every real pair $(c,d)$.""",
                 True,
-                r"""Difference of squares twice:
+                r"""The verbal claim is a Sophie Germain factorisation in $c$ and $d$. Insert $\pm 4c^2d^2$ to create a difference of squares, then factor.
 
-$$
-y^4-1=(y^2-1)(y^2+1)=(y-1)(y+1)(y^2+1).
-$$
+Complete to a difference of squares:
 
-The identity holds for every real $y$; the restriction $y\neq\pm 1$ is needed only if one later cancels a linear factor.""",
+$$c^4+4d^4=(c^2+2d^2)^2-(2cd)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(c^2-2cd+2d^2)(c^2+2cd+2d^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
             (
                 r"Distributing $(2x-3y)^2$ is said to produce $4x^2-6xy+9y^2$.",
@@ -749,15 +909,17 @@ $$
 $$""",
             ),
             (
-                r"With $p+q+r=0$ and $p=2$, $q=3$, a note sets $r=-5$ and concludes $p^3+q^3+r^3=3pqr$.",
+                r"""The product of the sum of the squares of $m$ and $n$ with the sum of the squares of $h$ and $k$ equals the sum of the square of $m\cdot h-n\cdot k$ and the square of $m\cdot k+n\cdot h$, for every real quadruple.""",
                 True,
-                r"""The third letter is forced: $r=-(2+3)=-5$. Then
+                r"""The claim describes a product of two sums of squares in four letters. Translate the wording, then verify with Brahmagupta's identity.
 
-$$
-8+27-125=-90,\qquad 3\cdot 2\cdot 3\cdot(-5)=-90.
-$$
+Brahmagupta identity:
 
-The vanishing-sum rule applies, and the numerical check matches.""",
+$$(m^2+n^2)(h^2+k^2)=(m\cdot h-n\cdot k)^2+(m\cdot k+n\cdot h)^2$$
+
+Cross pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.
+
+The symbolic translation matches the printed verbal pairing on both squares.""",
             ),
             (
                 r"Hunting $x^2 y^2$ in $(x+y)^4$, a marker records the coefficient $6$.",
@@ -771,15 +933,35 @@ $$
 Equivalently, $(x^2+2xy+y^2)^2$ contributes $2\cdot x^2\cdot y^2+(2xy)^2=6x^2 y^2$.""",
             ),
             (
-                r"Completing the square for $2x^2-8x+10$ is recorded as $2(x-2)^2$ with no leftover.",
-                False,
-                r"""Factor $2$ first:
+                r"""If $a^{-3}b^2=2$, then $\dfrac{a^8b^3}{a^2b^7}+3ab\cdot\dfrac{a^{-6}b^5}{a^7b^{-2}}=48.25$ for $a,b\neq 0$.""",
+                True,
+                r"""The given relation $a^{-3}b^2=2$ does not determine the claim by inspection alone. Set $R=a^{-3}b^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-2x^2-8x+10=2(x^2-4x)+10=2\bigl((x-2)^2-4\bigr)+10=2(x-2)^2+2.
-$$
+First summand:
 
-The leftover $+2$ cannot be dropped.""",
+$$\frac{a^8b^3}{a^2b^7}=a^6b^{-4}=R^{-2}$$
+
+Powers of $a$ and $b$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3ab\cdot\frac{a^{-6}b^5}{a^7b^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+The printed value matches the fully reduced substitution.""",
             ),
             (
                 r"Hunting $xy$ in $(x-2y+4)^2$, a marker records the coefficient as $-2$.",
@@ -842,15 +1024,23 @@ $$
 The coefficient of $x^2 y$ is $3$, not $1$.""",
             ),
             (
-                r"Evaluating $(1^2+2^2)(2^2+3^2)$ by quoting only $(2-6)^2=16$, a clerk declares the product equal to $16$.",
-                False,
-                r"""Brahmagupta’s identity needs two squares:
+                r"""The sum of the fourth power of $p$ and four times the fourth power of $q$ factors as the product of $p^2-2pq+2q^2$ and $p^2+2pq+2q^2$ for every real pair $(p,q)$.""",
+                True,
+                r"""The verbal claim is a Sophie Germain factorisation in $p$ and $q$. Insert $\pm 4p^2q^2$ to create a difference of squares, then factor.
 
-$$
-(ac-bd)^2+(ad+bc)^2=(2-6)^2+(3+4)^2=16+49=65,
-$$
+Complete to a difference of squares:
 
-matching $5\cdot 13=65$. The omitted second square is $49$.""",
+$$p^4+4q^4=(p^2+2q^2)^2-(2pq)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(p^2-2pq+2q^2)(p^2+2pq+2q^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
         ],
         overview="Five identity checks: a half-sum of squared gaps, an elementary difference square, a cubes-factor sign, a binomial coefficient, and a truncated Brahmagupta product.",
@@ -882,13 +1072,17 @@ $$
 The reported cube-sum matches.""",
             ),
             (
-                r"Difference of cubes factors $8-t^3$ as $(2-t)(4+2t+t^2)$ identically.",
-                True,
-                r"""$$
-8-t^3=2^3-t^3=(2-t)(4+2t+t^2).
-$$
+                r"""The inequality $p^2+pq\ge pq+q^2$ holds for every real pair $(p,q)$.""",
+                False,
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
-The quadratic factor carries a plus on the middle term.""",
+Difference of the two sides:
+
+$$p^2+pq-(pq+q^2)=p^2-q^2=(p-q)(p+q)$$
+
+The factorisation $(p-q)(p+q)$ is not a square, so the sign can change.
+
+For $p=0$, $q=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
             (
                 r"Given $s=x+y+z=4$ and $p=xy+yz+zx=1$, a clerk reports $x^2+y^2+z^2=15$.",
@@ -902,15 +1096,17 @@ $$
 Reporting $15$ computes $s^2-p$, dropping the factor $2$.""",
             ),
             (
-                r"A student expands $(2x-y+3)^2$, subtracts $4x^2+y^2+9$, and claims the difference is identically zero.",
+                r"""The sum of the fourth power of $a$ and four times the fourth power of $b$ equals the square of $a^2+2b^2$ for every real pair $(a,b)$.""",
                 False,
-                r"""The full square is
+                r"""The wording stops at a single square. Expand $a^2+2b^2$ and compare with $a^4+4b^4$ before accepting the verbal equality.
 
-$$
-4x^2+y^2+9-4xy+12x-6y
-$$
+Expand the printed square:
 
-Subtracting the three outer squares leaves $-4xy+12x-6y$, not zero.""",
+$$(a^2+2b^2)^2=a^4+4a^2b^2+4b^4$$
+
+The cross term $4a^2b^2$ is not present in $a^4+4b^4$.
+
+The Sophie Germain rewrite must subtract $(2ab)^2$ after adding it — the wording stops one step too early.""",
             ),
         ],
         overview="Five mixed claims: a cyclic-product remainder, a Newton cube-sum, a difference of cubes, a three-letter square-sum, and a trinomial-square leftover.",
@@ -922,13 +1118,35 @@ Subtracting the three outer squares leaves $-4xy+12x-6y$, not zero.""",
         context=CTX,
         items=[
             (
-                r"After grouping $a-(b+c)$, the coefficient of $bc$ in $(a-b-c)^2$ is recorded as $+2$.",
+                r"""If $u^{-3}v^2=2$, then $\dfrac{u^8v^3}{u^2v^7}+3uv\cdot\dfrac{u^{-6}v^5}{u^7v^{-2}}=48.25$ for $u,v\neq 0$.""",
                 True,
-                r"""$$
-\bigl(a-(b+c)\bigr)^2=a^2-2a(b+c)+(b+c)^2.
-$$
+                r"""The given relation $u^{-3}v^2=2$ does not determine the claim by inspection alone. Set $R=u^{-3}v^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-The inner square contributes $+2bc$, and the cross terms with $a$ do not produce $bc$.""",
+First summand:
+
+$$\frac{u^8v^3}{u^2v^7}=u^6v^{-4}=R^{-2}$$
+
+Powers of $u$ and $v$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3uv\cdot\frac{u^{-6}v^5}{u^7v^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+The printed value matches the fully reduced substitution.""",
             ),
             (
                 r"Whenever $f+g=10$ and $fg=21$, a note reports $f^2+g^2=79$.",
@@ -978,15 +1196,17 @@ Subtracting the outer squares leaves $-8pq$, not the zero polynomial.""",
         context=CTX,
         items=[
             (
-                r"Given $p+q=4$ and $pq=1$, a computation of $p^4+q^4$ is reported as $194$.",
-                True,
-                r"""First $p^2+q^2=16-2=14$. Then
+                r"""The inequality $u^2+uv\ge uv+v^2$ holds for every real pair $(u,v)$.""",
+                False,
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
-$$
-p^4+q^4=(p^2+q^2)^2-2(pq)^2=196-2=194.
-$$
+Difference of the two sides:
 
-The reported power-sum is correct.""",
+$$u^2+uv-(uv+v^2)=u^2-v^2=(u-v)(u+v)$$
+
+The factorisation $(u-v)(u+v)$ is not a square, so the sign can change.
+
+For $u=0$, $v=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
             (
                 r"From $r+s=5$ and $rs=3$, a clerk reports $r^2+s^2=22$.",
@@ -1009,15 +1229,35 @@ $$
 No other pair produces a linear $x$ term, so the collected coefficient is $+4$.""",
             ),
             (
-                r"Factoring by grouping, $x^3+x^2-x-1$ is rewritten as $(x+1)^2(x-1)$ identically.",
+                r"""If $c^{-3}d^2=2$, then $\dfrac{c^8d^3}{c^2d^7}+3cd\cdot\dfrac{c^{-6}d^5}{c^7d^{-2}}=48.25$ for $c,d\neq 0$.""",
                 True,
-                r"""Group:
+                r"""The given relation $c^{-3}d^2=2$ does not determine the claim by inspection alone. Set $R=c^{-3}d^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-x^2(x+1)-(x+1)=(x^2-1)(x+1)=(x-1)(x+1)^2.
-$$
+First summand:
 
-The factorisation is an identity.""",
+$$\frac{c^8d^3}{c^2d^7}=c^6d^{-4}=R^{-2}$$
+
+Powers of $c$ and $d$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3cd\cdot\frac{c^{-6}d^5}{c^7d^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+The printed value matches the fully reduced substitution.""",
             ),
             (
                 r"Hunting the monomial $x^3 y$ in $(x+y)^5$, a marker records the coefficient $5$.",
@@ -1047,13 +1287,17 @@ $$
  with $U=x^2$ and $V=y^2$ yields $x^4-2x^2 y^2+y^4$.""",
             ),
             (
-                r"Whenever $u+v=9$ and $uv=20$, expanding $(u+v)^2-2uv$ is said to leave $61$.",
+                r"""The sum of the fourth power of $r$ and four times the fourth power of $s$ equals the square of $r^2+2s^2$ for every real pair $(r,s)$.""",
                 False,
-                r"""$$
-81-40=41.
-$$
+                r"""The wording stops at a single square. Expand $r^2+2s^2$ and compare with $r^4+4s^4$ before accepting the verbal equality.
 
-Reporting $61$ computes $81-20$, dropping the factor $2$.""",
+Expand the printed square:
+
+$$(r^2+2s^2)^2=r^4+4r^2s^2+4s^4$$
+
+The cross term $4r^2s^2$ is not present in $r^4+4s^4$.
+
+The Sophie Germain rewrite must subtract $(2rs)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
                 r"The identity $(m+n)^2-(m-n)^2=4mn$ is used to report that $mn=6$ forces the left-hand side to equal $24$, independently of how the mass is split.",
@@ -1098,13 +1342,35 @@ $$(a+b+c+d)^2=\sum a^2+2\sum ab.$$
 The collected coefficient of $ab$ is $2$, just as in a two-letter square.""",
             ),
             (
-                r"With $\alpha+\beta=12$ and $\alpha\beta=32$, the value $(\alpha-\beta)^2$ is reported as $16$.",
-                True,
-                r"""$$
-(\alpha-\beta)^2=(\alpha+\beta)^2-4\alpha\beta=144-128=16.
-$$
+                r"""If $p^{-3}q^2=2$, then $\dfrac{p^8q^3}{p^2q^7}+3pq\cdot\dfrac{p^{-6}q^5}{p^7q^{-2}}=48$ for $p,q\neq 0$.""",
+                False,
+                r"""The given relation $p^{-3}q^2=2$ does not determine the claim by inspection alone. Set $R=p^{-3}q^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-The reported gap square matches.""",
+First summand:
+
+$$\frac{p^8q^3}{p^2q^7}=p^6q^{-4}=R^{-2}$$
+
+Powers of $p$ and $q$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3pq\cdot\frac{p^{-6}q^5}{p^7q^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+Dropping the summand $R^{-2}=\tfrac{1}{4}$ leaves $48$, which is not the value of the original expression.""",
             ),
             (
                 r"Sophie Germain’s completing step writes $t^4+4=(t^2+2)^2-(2t)^2$ before factoring.",
@@ -1129,13 +1395,23 @@ $$
 so $y^2+1/y^2=14$. Reporting $16$ forgets to subtract $2$.""",
             ),
             (
-                r"A booklet claims $(2u-3v)^2-(4u^2+9v^2)$ is identically zero.",
-                False,
-                r"""$$
-(2u-3v)^2=4u^2-12uv+9v^2
-$$
+                r"""The sum of the fourth power of $a$ and four times the fourth power of $b$ factors as the product of $a^2-2ab+2b^2$ and $a^2+2ab+2b^2$ for every real pair $(a,b)$.""",
+                True,
+                r"""The verbal claim is a Sophie Germain factorisation in $a$ and $b$. Insert $\pm 4a^2b^2$ to create a difference of squares, then factor.
 
-Subtracting the outer squares leaves $-12uv$, not zero.""",
+Complete to a difference of squares:
+
+$$a^4+4b^4=(a^2+2b^2)^2-(2ab)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(a^2-2ab+2b^2)(a^2+2ab+2b^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
         ],
         overview="Five coefficient and rewrite claims: a four-letter mixed product, an elementary gap, a Sophie Germain completing step, a reciprocal square, and a binomial remainder.",
@@ -1165,13 +1441,23 @@ $$
 Reporting $37$ computes $49-12$, dropping the factor $2$.""",
             ),
             (
-                r"On every real pair, $(2u-3v)^2-(4u^2+9v^2)$ equals $-12uv$.",
+                r"""The sum of the fourth power of $h$ and four times the fourth power of $k$ factors as the product of $h^2-2hk+2k^2$ and $h^2+2hk+2k^2$ for every real pair $(h,k)$.""",
                 True,
-                r"""$$
-(2u-3v)^2=4u^2-12uv+9v^2
-$$
+                r"""The verbal claim is a Sophie Germain factorisation in $h$ and $k$. Insert $\pm 4h^2k^2$ to create a difference of squares, then factor.
 
-Subtracting $4u^2+9v^2$ leaves exactly the cross term $-12uv$.""",
+Complete to a difference of squares:
+
+$$h^4+4k^4=(h^2+2k^2)^2-(2hk)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(h^2-2hk+2k^2)(h^2+2hk+2k^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
             (
                 r"Factoring $y^4-1$ as $(y-1)^4$ is accepted over the reals.",
@@ -1201,13 +1487,23 @@ A vanishing sum does not force a vanishing square-sum; here $a=-b$ and $ab=-a^2=
         context=CTX,
         items=[
             (
-                r"Given $a+b+c=0$ with $a=2$, $b=3$, a note sets $c=-5$ and concludes $a^3+b^3+c^3=3abc$ without expanding, then checks $-90=-90$.",
+                r"""The inequality $p^2-pq\ge pq-q^2$ holds for every real pair $(p,q)$.""",
                 True,
-                r"""The third letter is forced: $c=-(2+3)=-5$. The identity $a+b+c=0\Rightarrow a^3+b^3+c^3=3abc$ then gives
+                r"""The inequality compares two quadratic-looking sides in $p$ and $q$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-$$
-8+27-125=-90,\qquad 3\cdot 2\cdot 3\cdot(-5)=-90.
-$$""",
+Rearrange to one side:
+
+$$p^2-pq-(pq-q^2)=p^2-2pq+q^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(p-q)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"Expanding $(x^2+2xy+2y^2)(x^2-2xy+2y^2)$ is claimed to recover $x^4+4y^4$ after the $4x^2 y^2$ terms cancel.",
@@ -1221,13 +1517,23 @@ $$
 This is Sophie Germain’s identity.""",
             ),
             (
-                r"Whenever $p+q=6$ and $pq=7$, the Newton evaluation $p^3+q^3=90$ is reported.",
+                r"""The sum of the fourth power of $r$ and four times the fourth power of $s$ factors as the product of $r^2-2rs+2s^2$ and $r^2+2rs+2s^2$ for every real pair $(r,s)$.""",
                 True,
-                r"""$$
-(p+q)^3-3pq(p+q)=216-3\cdot 7\cdot 6=216-126=90.
-$$
+                r"""The verbal claim is a Sophie Germain factorisation in $r$ and $s$. Insert $\pm 4r^2s^2$ to create a difference of squares, then factor.
 
-The reported cube-sum is correct.""",
+Complete to a difference of squares:
+
+$$r^4+4s^4=(r^2+2s^2)^2-(2rs)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(r^2-2rs+2s^2)(r^2+2rs+2s^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
             (
                 r"Evaluating $(1^2+2^2)(3^2+4^2)$ by quoting only $(1\cdot 3-2\cdot 4)^2=25$, a clerk declares the product equal to $25$.",
@@ -1284,13 +1590,23 @@ $$
 and $(1+4)(9+16)=5\cdot 25=125$. The two routes agree.""",
             ),
             (
-                r"Stopping after an incomplete square, a booklet prints $x^4+4=(x^2+2)^2$.",
-                False,
-                r"""$$
-(x^2+2)^2=x^4+4x^2+4
-$$
+                r"""The inequality $h^2-hk\ge hk-k^2$ holds for every real pair $(h,k)$.""",
+                True,
+                r"""The inequality compares two quadratic-looking sides in $h$ and $k$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-The extra $4x^2$ is the term Sophie Germain subtracts before factoring.""",
+Rearrange to one side:
+
+$$h^2-hk-(hk-k^2)=h^2-2hk+k^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(h-k)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"Hunting $x^2 y^2$ in $(x+y)^4$, a marker records the coefficient $4$.",
@@ -1322,15 +1638,35 @@ $$
 and $(1+1)(4+9)=2\cdot 13=26$. The two routes agree.""",
             ),
             (
-                r"Under $a+b+c=0$, the combination $a^3+b^3+c^3-3abc$ is reported to vanish even though $a^2+b^2+c^2-ab-bc-ca$ need not.",
+                r"""If $m^{-3}n^2=2$, then $\dfrac{m^8n^3}{m^2n^7}+3mn\cdot\dfrac{m^{-6}n^5}{m^7n^{-2}}=48.25$ for $m,n\neq 0$.""",
                 True,
-                r"""The factorisation is
+                r"""The given relation $m^{-3}n^2=2$ does not determine the claim by inspection alone. Set $R=m^{-3}n^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-(a+b+c)(a^2+b^2+c^2-ab-bc-ca)
-$$
+First summand:
 
-The first factor vanishes, so the whole product vanishes. The quadratic factor equals $\frac12\sum(a-b)^2$, which is zero only when $a=b=c$ (hence only at the origin under a vanishing sum).""",
+$$\frac{m^8n^3}{m^2n^7}=m^6n^{-4}=R^{-2}$$
+
+Powers of $m$ and $n$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3mn\cdot\frac{m^{-6}n^5}{m^7n^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+The printed value matches the fully reduced substitution.""",
             ),
             (
                 r"Whenever $x+\dfrac{1}{x}=4$ with $x\neq 0$, the cube sum $x^3+\dfrac{1}{x^3}$ is reported as $52$.",
@@ -1342,11 +1678,17 @@ $$
 so $x^3+1/x^3=64-12=52$.""",
             ),
             (
-                r"Omitting the factor $\dfrac{1}{2}$, a clerk equates $u^2+v^2+w^2-uv-vw-wu$ with $(u-v)^2+(v-w)^2+(w-u)^2$ identically.",
+                r"""The sum of the fourth power of $c$ and four times the fourth power of $d$ equals the square of $c^2+2d^2$ for every real pair $(c,d)$.""",
                 False,
-                r"""The correct identity includes a factor $\frac12$ on the right. At $(u,v,w)=(2,0,0)$
-$$u^2+v^2+w^2-uv-vw-wu=4,\qquad (u-v)^2+(v-w)^2+(w-u)^2=8.$$
-The two sides are not identical.""",
+                r"""The wording stops at a single square. Expand $c^2+2d^2$ and compare with $c^4+4d^4$ before accepting the verbal equality.
+
+Expand the printed square:
+
+$$(c^2+2d^2)^2=c^4+4c^2d^2+4d^4$$
+
+The cross term $4c^2d^2$ is not present in $c^4+4d^4$.
+
+The Sophie Germain rewrite must subtract $(2cd)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
                 r"Hunting $x^2 y^2$ in $(x+2y)^4$, a marker records the coefficient $4$.",
@@ -1406,15 +1748,35 @@ The identity needs both elementary symmetric sums.""",
 $$(x-1)^5=x^5-5x^4+10x^3-10x^2+5x-1.$$""",
             ),
             (
-                r"The coefficient of $xyz$ in $(2x+y+z)^2$ is recorded as $2$.",
+                r"""If $a^{-3}b^2=2$, then $\dfrac{a^8b^3}{a^2b^7}+3ab\cdot\dfrac{a^{-6}b^5}{a^7b^{-2}}=48$ for $a,b\neq 0$.""",
                 False,
-                r"""A square of a linear form is homogeneous of degree $2$, so the degree-$3$ monomial $xyz$ does not appear. Its coefficient is $0$, not $2$. The count $2$ belongs to mixed products such as
+                r"""The given relation $a^{-3}b^2=2$ does not determine the claim by inspection alone. Set $R=a^{-3}b^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-2\cdot(2x)\cdot y=4xy
-$$
+First summand:
 
-""",
+$$\frac{a^8b^3}{a^2b^7}=a^6b^{-4}=R^{-2}$$
+
+Powers of $a$ and $b$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3ab\cdot\frac{a^{-6}b^5}{a^7b^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+Dropping the summand $R^{-2}=\tfrac{1}{4}$ leaves $48$, which is not the value of the original expression.""",
             ),
         ],
         overview="Five hard rewrites: a leading-two completed square, a scaled fourth-power coefficient, a three-letter square-sum, a fifth-power near-miss, and a degree mismatch.",
@@ -1446,13 +1808,17 @@ $$
 Both sides equal $31$.""",
             ),
             (
-                r"Whenever $m-n=2$ and $mn=15$, expanding $(m-n)^2+4mn$ yields $(m+n)^2=64$.",
-                True,
-                r"""$$
-(m+n)^2=(m-n)^2+4mn=4+60=64.
-$$
+                r"""The sum of the fourth power of $u$ and four times the fourth power of $v$ equals the square of $u^2+2v^2$ for every real pair $(u,v)$.""",
+                False,
+                r"""The wording stops at a single square. Expand $u^2+2v^2$ and compare with $u^4+4v^4$ before accepting the verbal equality.
 
-The reported square is correct.""",
+Expand the printed square:
+
+$$(u^2+2v^2)^2=u^4+4u^2v^2+4v^4$$
+
+The cross term $4u^2v^2$ is not present in $u^4+4v^4$.
+
+The Sophie Germain rewrite must subtract $(2uv)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
                 r"Hunting $x^2 y^3$ in $(x+y)^5$, a marker records the coefficient $5$.",
@@ -1466,15 +1832,17 @@ $$
 Recording $5$ copies the outer coefficient of $x^4 y$ onto the wrong monomial.""",
             ),
             (
-                r"Collecting $x^2 y$ in $(x+y+z)^3$, a marker records the coefficient $1$.",
+                r"""The inequality $r^2+rs\ge rs+s^2$ holds for every real pair $(r,s)$.""",
                 False,
-                r"""The expansion contains $3x^2(y+z)$, so the coefficient of $x^2 y$ is $3$:
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
-$$
-(x+y+z)^3=\sum x^3+3\sum x^2(y+z)+6xyz.
-$$
+Difference of the two sides:
 
-Recording $1$ counts only one of the three contributing permutations.""",
+$$r^2+rs-(rs+s^2)=r^2-s^2=(r-s)(r+s)$$
+
+The factorisation $(r-s)(r+s)$ is not a square, so the sign can change.
+
+For $r=0$, $s=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
         ],
         overview="Five hard checks: Sophie Germain’s completing step, a three-cube numerical test, a polarisation square, a degree mismatch, and a cubed-trinomial count.",
@@ -1486,13 +1854,23 @@ Recording $1$ counts only one of the three contributing permutations.""",
         context=CTX,
         items=[
             (
-                r"Expanding $(x+2)^3$ and subtracting $x^3+8$, the remainder is identically $6x^2+12x$.",
+                r"""The sum of the fourth power of $m$ and four times the fourth power of $n$ factors as the product of $m^2-2mn+2n^2$ and $m^2+2mn+2n^2$ for every real pair $(m,n)$.""",
                 True,
-                r"""$$
-(x+2)^3=x^3+6x^2+12x+8
-$$
+                r"""The verbal claim is a Sophie Germain factorisation in $m$ and $n$. Insert $\pm 4m^2n^2$ to create a difference of squares, then factor.
 
-Removing the two cubes leaves the mixed terms $6x^2+12x$, which factor as $6x(x+2)$.""",
+Complete to a difference of squares:
+
+$$m^4+4n^4=(m^2+2n^2)^2-(2mn)^2$$
+
+The middle term is borrowed and repaid inside one square minus another.
+
+Factor:
+
+$$=(m^2-2mn+2n^2)(m^2+2mn+2n^2)$$
+
+Both quadratic factors match the wording of the claim.
+
+The product reproduces the original fourth-power sum.""",
             ),
             (
                 r"Given $p+q+r=0$ with $p=4$, $q=-1$, a note sets $r=3$ and concludes $p^3+q^3+r^3=3pqr$.",
@@ -1540,15 +1918,17 @@ so they agree only at $w=0$, not identically.""",
         context=CTX,
         items=[
             (
-                r"The polarisation identity $(m+n)^2-(m-n)^2=4mn$ is used, with $m=5$ and $n=3$, to report the left-hand side equal to $60$.",
-                True,
-                r"""Directly,
+                r"""The sum of the fourth power of $f$ and four times the fourth power of $g$ equals the square of $f^2+2g^2$ for every real pair $(f,g)$.""",
+                False,
+                r"""The wording stops at a single square. Expand $f^2+2g^2$ and compare with $f^4+4g^4$ before accepting the verbal equality.
 
-$$
-8^2-2^2=64-4=60
-$$
+Expand the printed square:
 
-The identity $4mn=4\cdot 5\cdot 3=60$ agrees.""",
+$$(f^2+2g^2)^2=f^4+4f^2g^2+4g^4$$
+
+The cross term $4f^2g^2$ is not present in $f^4+4g^4$.
+
+The Sophie Germain rewrite must subtract $(2fg)^2$ after adding it — the wording stops one step too early.""",
             ),
             (
                 r"Factoring $x^4-y^4$ as $(x-y)(x+y)(x^2+y^2)$ is accepted over the reals.",
@@ -1571,15 +1951,35 @@ $$
 Squaring the given sum produces the extra constant $2$, which must be subtracted.""",
             ),
             (
-                r"Given $y+\dfrac{1}{y}=5$ with $y\neq 0$, a note reports $y^4+\dfrac{1}{y^4}=625$.",
+                r"""If $u^{-3}v^2=2$, then $\dfrac{u^8v^3}{u^2v^7}+3uv\cdot\dfrac{u^{-6}v^5}{u^7v^{-2}}=48$ for $u,v\neq 0$.""",
                 False,
-                r"""First $y^2+1/y^2=23$. Then
+                r"""The given relation $u^{-3}v^2=2$ does not determine the claim by inspection alone. Set $R=u^{-3}v^2$, rewrite each summand in terms of $R$, and only then substitute $R=2$.
 
-$$
-y^4+\frac{1}{y^4}=\left(y^2+\frac{1}{y^2}\right)^2-2=529-2=527.
-$$
+First summand:
 
-Reporting $625$ is $(y+1/y)^4$, which still contains the mixed terms.""",
+$$\frac{u^8v^3}{u^2v^7}=u^6v^{-4}=R^{-2}$$
+
+Powers of $u$ and $v$ collapse to a negative power of $R$.
+
+Second summand:
+
+$$3uv\cdot\frac{u^{-6}v^5}{u^7v^{-2}}=3R^{4}$$
+
+The mixed monomial piece also becomes a pure power of $R$.
+
+Combine before substituting:
+
+$$R^{-2}+3R^{4}$$
+
+Both summands must be present; dropping either one changes the final value.
+
+Substitute $R=2$:
+
+$$2^{-2}+3\cdot 2^{4}=\tfrac{1}{4}+48=\tfrac{193}{4}=48.25$$
+
+The small reciprocal term survives alongside the larger power term.
+
+Dropping the summand $R^{-2}=\tfrac{1}{4}$ leaves $48$, which is not the value of the original expression.""",
             ),
             (
                 r"The companion difference $(h+k)^3-(h-k)^3$ is rewritten as $2h(h^2+3k^2)$ as well.",
@@ -1611,13 +2011,23 @@ $$
 The constant $3$ does not affect that monomial.""",
             ),
             (
-                r"Given $c+d=0$ and $cd=-4$, a booklet reports $c^2+d^2=0$.",
-                False,
-                r"""$$
-c^2+d^2=(c+d)^2-2cd=0-2(-4)=8.
-$$
+                r"""The inequality $u^2-uv\ge uv-v^2$ holds for every real pair $(u,v)$.""",
+                True,
+                r"""The inequality compares two quadratic-looking sides in $u$ and $v$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-A vanishing sum does not force a vanishing square-sum.""",
+Rearrange to one side:
+
+$$u^2-uv-(uv-v^2)=u^2-2uv+v^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(u-v)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"The three-cube factorisation is used at $(a,b,c)=(1,1,-2)$ to report $a^3+b^3+c^3-3abc=0$ because $a+b+c=0$.",
@@ -1659,13 +2069,23 @@ $$x^4+2x^2 y^2+y^4=(x^2+y^2)^2.$$
 The trinomial in $x^2$ and $y^2$ is a perfect square.""",
             ),
             (
-                r"With $p+q=1$ and $pq=-6$, the cube sum $p^3+q^3$ is reported as $19$.",
+                r"""The inequality $x^2-xy\ge xy-y^2$ holds for every real pair $(x,y)$.""",
                 True,
-                r"""$$
-(p+q)^3-3pq(p+q)=1-3(-6)(1)=1+18=19.
-$$
+                r"""The inequality compares two quadratic-looking sides in $x$ and $y$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.
 
-The roots $3$ and $-2$ confirm $27-8=19$.""",
+Rearrange to one side:
+
+$$x^2-xy-(xy-y^2)=x^2-2xy+y^2$$
+
+Collecting like terms exposes a perfect square.
+
+Recognise the square:
+
+$$(x-y)^2\ge 0$$
+
+A square is nonnegative for every real pair.
+
+Since the difference is a square, the inequality holds on the whole line.""",
             ),
             (
                 r"Grouping $x^3+3x^2-x-3$ as $x^2(x+3)-(x+3)$ factors as $(x^2-1)(x+3)=(x-1)(x+1)(x+3)$.",
@@ -1683,15 +2103,17 @@ $$
 The coefficient of $x^2 y$ is $12$, not $2$. Recording $2$ copies the leading $2$ from $2x$ and stops.""",
             ),
             (
-                r"A booklet prints $x^4+4y^4=(x^2+2xy+2y^2)^2$ for every real pair.",
+                r"""The inequality $a^2+ab\ge ab+b^2$ holds for every real pair $(a,b)$.""",
                 False,
-                r"""Squaring one Sophie Germain factor produces extra cubic terms:
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
-$$
-(x^2+2xy+2y^2)^2=x^4+4x^3 y+8x^2 y^2+8xy^3+4y^4,
-$$
+Difference of the two sides:
 
-which is not $x^4+4y^4$. The identity multiplies by the mirror factor $x^2-2xy+2y^2$.""",
+$$a^2+ab-(ab+b^2)=a^2-b^2=(a-b)(a+b)$$
+
+The factorisation $(a-b)(a+b)$ is not a square, so the sign can change.
+
+For $a=0$, $b=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
         ],
         overview="Five hard recognitions: a biquadratic square, a Newton cube-sum, a grouping factorisation, a degree mismatch, and a squared Sophie Germain factor.",
@@ -1723,13 +2145,17 @@ $$
  expands with a $4x^3$ term and a $8x^2$ term. Sophie Germain multiplies by the mirror $x^2-2x+2$, rather than squaring one factor.""",
             ),
             (
-                r"On every real pair $(h,k)$, rewriting $(h+k)^3+(h-k)^3$ as $2h(h^2+3k^2)$ is accepted.",
-                True,
-                r"""The even-powered terms in $k$ survive:
+                r"""The inequality $m^2+mn\ge mn+n^2$ holds for every real pair $(m,n)$.""",
+                False,
+                r"""The printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.
 
-$$
-(h+k)^3+(h-k)^3=2(h^3+3hk^2)=2h(h^2+3k^2).
-$$""",
+Difference of the two sides:
+
+$$m^2+mn-(mn+n^2)=m^2-n^2=(m-n)(m+n)$$
+
+The factorisation $(m-n)(m+n)$ is not a square, so the sign can change.
+
+For $m=0$, $n=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.""",
             ),
             (
                 r"Rewriting the difference $(\rho+\sigma)^3-(\rho-\sigma)^3$ as $2\rho(\rho^2+3\sigma^2)$ is accepted on every real pair.",

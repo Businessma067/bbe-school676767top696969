@@ -12,13 +12,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"After rewriting $(x^{-2})^{-3}$ for $x\neq 0$, a clerk compares it with the product $x^{-2}x^{-3}$ and reports that both leave $x^{-5}$.",
-                False,
-                r"""Power of a power multiplies:
-$$(x^{-2})^{-3}=x^{6}.$$
-The product adds:
-$$x^{-2}x^{-3}=x^{-5}.$$
-The two results are different, so they cannot both equal $x^{-5}$.""",
+                r"""For $p\neq 0$, $(2p^{-1}-1)(2p^{-1}+1)=\dfrac{4}{p^2}-1$.""",
+                True,
+                r"""The product is a difference of squares. Set $A=2p^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(2p^{-1})^2-1=\frac{4}{p^2}-1$$
+
+The reciprocal square carries coefficient $4$ on $p^2$ in the denominator.
+
+The printed coefficient $4$ is the one that survives the expansion.""",
             ),
             (
                 r"On $w\neq 0$, simplifying $w^{5}w^{-2}/w^{-1}$ is claimed to leave $w^{4}$. A marker then substitutes $w=2$ and ticks $16$.",
@@ -28,11 +32,23 @@ $$\frac{w^{5}w^{-2}}{w^{-1}}=w^{5-2-(-1)}=w^{4}.$$
 At $w=2$ one has $16$, matching the claimed check.""",
             ),
             (
-                r"Whenever $t>0$, a note treats $((t^{2})^{3})^{1/2}$ as $t^{5/2}$, adding $2+3$ before taking the outer half-power.",
-                False,
-                r"""Innermost stack multiplies: $(t^{2})^{3}=t^{6}$, then
-$$(t^{6})^{1/2}=t^{3}$$
-on $t>0$. Adding $2+3$ first is the product rule, not the power-of-a-power rule.""",
+                r"""For positive $b$, raising $b$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $b$.""",
+                True,
+                r"""The claim describes a tower of powers on positive $b$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(b^{2})^{3}=b^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(b^{6})^{1/2}=b^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"Provided $a\neq 0$, rewriting $a^{-4}(a^{2})^{2}$ as $1$ is accepted, because the second factor is said to cancel the first.",
@@ -79,11 +95,17 @@ $$\frac{r^{-4}}{r^{-1}}=r^{-3}.$$
 Inverting it produces $r^{3}$, not $r^{-3}$. The clerk stopped before taking the reciprocal.""",
             ),
             (
-                r"Someone records $\dfrac{s^{6}}{s^{-1}s^{2}}$ as $s^{3}$ whenever $s\neq 0$, treating both denominator exponents as minuses.",
-                False,
-                r"""The denominator is $s^{-1}s^{2}=s^{1}$, so
-$$\frac{s^{6}}{s^{-1}s^{2}}=s^{5},$$
-not $s^{3}$. Writing $6-(-1)-2=5$ is the correct bookkeeping; treating both as minuses produces the false $3$.""",
+                r"""For $p\neq 0$, $(7p^{-1}-1)(7p^{-1}+1)=\dfrac{49}{p^2}-1$.""",
+                True,
+                r"""The product is a difference of squares. Set $A=7p^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(7p^{-1})^2-1=\frac{49}{p^2}-1$$
+
+The reciprocal square carries coefficient $49$ on $p^2$ in the denominator.
+
+The printed coefficient $49$ is the one that survives the expansion.""",
             ),
             (
                 r"On $u\neq 0$, rewriting $\dfrac{u^{-1}+u^{-2}}{u^{-2}}$ as $u+1$ is accepted after a common denominator is cleared in the numerator.",
@@ -110,10 +132,17 @@ $$(\sqrt{a}+\sqrt{b})^{2}=a+b+2\sqrt{ab},$$
 not $a+b$. For $a=b=1$ one has $\sqrt{2}\neq 2$.""",
             ),
             (
-                r"Taking nonnegative letters, the product $\sqrt{12}\sqrt{3}$ is rewritten as $6$.",
-                True,
-                r"""On the nonnegative reals a product of square roots is the square root of the product:
-$$\sqrt{12}\sqrt{3}=\sqrt{36}=6.$$""",
+                r"""For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields $x$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $x$ first.
+
+Correct tower:
+
+$$((x^{2})^{3})^{1/2}=x^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"On $c,d\ge 0$, the product rule $\sqrt{c}\sqrt{d}=\sqrt{cd}$ is printed as valid.",
@@ -123,11 +152,29 @@ $$c^{1/2}d^{1/2}=(cd)^{1/2}=\sqrt{cd}$$
 for $c,d\ge 0$.""",
             ),
             (
-                r"Combining radicands, $\sqrt{18}+\sqrt{32}$ is claimed to equal $\sqrt{50}$.",
-                False,
-                r"""Extract squares first:
-$$\sqrt{18}=3\sqrt{2},\qquad \sqrt{32}=4\sqrt{2},\qquad \sqrt{50}=5\sqrt{2}.$$
-The sum is $7\sqrt{2}$, not $5\sqrt{2}$. Roots do not add inside a single radicand.""",
+                r"""If $e>0$, then $\dfrac{e^{2/3}\cdot\sqrt[3]{e\sqrt{e}}}{e^{1/6}\cdot\sqrt[6]{e^5}}=\sqrt[6]{e}$.""",
+                True,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$e^{2/3}\cdot(e\cdote^{1/2})^{1/3}=e^{2/3}\cdote^{(1+1/2)/3}=e^{2/3}\cdote^{1/2}$$
+
+Inside the cube root, $e\cdot\sqrt{e}$ becomes a single power of $e$.
+
+Denominator:
+
+$$e^{1/6}\cdot(e^5)^{1/6}=e^{1/6}\cdote^{5/6}=e$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{e}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"A booklet claims $\sqrt{27}\sqrt{3}=9$ as positive square roots.",
@@ -171,11 +218,23 @@ $$(2b)^{0}=1,\qquad 2b^{0}=2\cdot 1=2.$$
 The two sides differ. Parentheses decide whether $2$ is in the base.""",
             ),
             (
-                r"On $c,d\neq 0$, rewriting $\bigl((cd)^{3}\bigr)^{0}(c^{0}+d^{0})$ as $2$ is accepted.",
+                r"""For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $x$.""",
                 True,
-                r"""The stacked power has outer exponent $0$:
-$$((cd)^{3})^{0}=1.$$
-Each zero power is $1$, so $c^{0}+d^{0}=2$, and the product is $1\cdot 2=2$.""",
+                r"""The claim describes a tower of powers on positive $x$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(x^{2})^{3}=x^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(x^{6})^{1/2}=x^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
         ],
         overview=r"Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$. A negative power of $0$ is undefined; $(2b)^{0}$ is not $2b^{0}$.",
@@ -200,11 +259,17 @@ $$32^{2/5}=(2^{5})^{2/5}=2^{2}=4,$$
 not $8$. The figure $8$ would be $2^{3}=32^{3/5}$.""",
             ),
             (
-                r"Evaluating $8^{2/3}\cdot 4^{-1/2}$ as the integer $4$ is entered on a mark scheme.",
+                r"""For positive $z$, raising $z$ to the second power, then to the third, and finally taking the principal square root of the result yields $z$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""Rewrite both bases as powers of $2$:
-$$8^{2/3}=(2^{3})^{2/3}=2^{2}=4,\qquad 4^{-1/2}=(2^{2})^{-1/2}=2^{-1}=\frac{1}{2}.$$
-The product is $4\cdot\frac{1}{2}=2$, not $4$. The factor $4^{-1/2}$ was dropped.""",
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $z$ first.
+
+Correct tower:
+
+$$((z^{2})^{3})^{1/2}=z^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Extracting $\sqrt[3]{54}$ as $3\sqrt[3]{2}$ is claimed in the reals.",
@@ -213,11 +278,17 @@ The product is $4\cdot\frac{1}{2}=2$, not $4$. The factor $4^{-1/2}$ was dropped
 $$\sqrt[3]{54}=3\sqrt[3]{2}.$$""",
             ),
             (
-                r"Simplifying $\sqrt{48}$ to $6\sqrt{2}$ as a positive square root is accepted.",
+                r"""For $r\neq 0$, $(6r^{-1}-1)(6r^{-1}+1)=\dfrac{1}{36r^2}-1$.""",
                 False,
-                r"""The largest square factor of $48$ is $16$:
-$$\sqrt{48}=\sqrt{16\cdot 3}=4\sqrt{3},$$
-not $6\sqrt{2}$. The coefficient $6$ would belong to $\sqrt{72}$.""",
+                r"""The product is a difference of squares. Set $A=6r^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(6r^{-1})^2-1=\frac{36}{r^2}-1$$
+
+The reciprocal square carries coefficient $36$ on $r^2$ in the denominator.
+
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
         ],
         overview=r"Five independent numerical powers. $27^{2/3}=9$ and $\sqrt[3]{54}=3\sqrt[3]{2}$, but $32^{2/5}=4$ and $8^{2/3}\cdot 4^{-1/2}=2$.",
@@ -229,11 +300,29 @@ not $6\sqrt{2}$. The coefficient $6$ would belong to $\sqrt{72}$.""",
         context=CTX,
         items=[
             (
-                r"Combining $\sqrt{50}-\sqrt{18}$ as positive square roots is recorded as $2\sqrt{2}$.",
+                r"""If $a>0$, then $\dfrac{a^{2/3}\cdot\sqrt[3]{a\sqrt{a}}}{a^{1/6}\cdot\sqrt[6]{a^5}}=\sqrt[6]{a}$.""",
                 True,
-                r"""Extract the square factors:
-$$\sqrt{50}=5\sqrt{2},\qquad \sqrt{18}=3\sqrt{2}.$$
-The difference is $5\sqrt{2}-3\sqrt{2}=2\sqrt{2}$.""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$a^{2/3}\cdot(a\cdota^{1/2})^{1/3}=a^{2/3}\cdota^{(1+1/2)/3}=a^{2/3}\cdota^{1/2}$$
+
+Inside the cube root, $a\cdot\sqrt{a}$ becomes a single power of $a$.
+
+Denominator:
+
+$$a^{1/6}\cdot(a^5)^{1/6}=a^{1/6}\cdota^{5/6}=a$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{a}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Reducing $\sqrt{12}+\sqrt{27}$ is claimed to equal $\sqrt{39}$.",
@@ -267,11 +356,17 @@ $$2\sqrt{2}+3\sqrt{2}=5\sqrt{2}.$$""",
         context=CTX,
         items=[
             (
-                r"Raising the quotient $(x/y)^{-2}$ for $x,y>0$ is recorded as $(y/x)^{2}$.",
-                True,
-                r"""A negative exponent inverts the base:
-$$\Bigl(\frac{x}{y}\Bigr)^{-2}=\Bigl(\frac{y}{x}\Bigr)^{2}$$
-on $x,y>0$.""",
+                r"""For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields $k$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $k$ first.
+
+Correct tower:
+
+$$((k^{2})^{3})^{1/2}=k^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"A mistaken swap writes $(p/q)^{-3}=p^{3}/q^{3}$ for $p,q>0$.",
@@ -288,11 +383,29 @@ $$\Bigl(\frac{u}{v}\Bigr)^{4}=\frac{u^{4}}{v^{4}}$$
 on $u,v>0$.""",
             ),
             (
-                r"Inverting first, $(a^{-1}/b^{-1})^{2}$ is claimed to equal $a^{2}/b^{2}$ for $a,b\neq 0$.",
-                False,
-                r"""The inner quotient is $a^{-1}/b^{-1}=b/a$, so the square is
-$$\Bigl(\frac{b}{a}\Bigr)^{2}=\frac{b^{2}}{a^{2}},$$
-the reciprocal of the claimed form.""",
+                r"""If $g>0$, then $\dfrac{g^{2/3}\cdot\sqrt[3]{g\sqrt{g}}}{g^{1/6}\cdot\sqrt[6]{g^5}}=\sqrt[6]{g}$.""",
+                True,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$g^{2/3}\cdot(g\cdotg^{1/2})^{1/3}=g^{2/3}\cdotg^{(1+1/2)/3}=g^{2/3}\cdotg^{1/2}$$
+
+Inside the cube root, $g\cdot\sqrt{g}$ becomes a single power of $g$.
+
+Denominator:
+
+$$g^{1/6}\cdot(g^5)^{1/6}=g^{1/6}\cdotg^{5/6}=g$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{g}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"On $c,d>0$, rewriting $(c/d)^{0}=0$ is printed as valid.",
@@ -317,9 +430,17 @@ for $c,d>0$. The value $0$ would require a zero base, not a zero exponent.""",
 $$\sqrt[3]{2}\sqrt[3]{4}=\sqrt[3]{8}=2.$$""",
             ),
             (
-                r"Splitting a sum, $\sqrt[3]{27}+\sqrt[3]{1}$ is claimed to equal $\sqrt[3]{28}$.",
+                r"""For $k\neq 0$, $(6k^{-1}-1)(6k^{-1}+1)=\dfrac{1}{36k^2}-1$.""",
                 False,
-                r"""Cube roots do not pass through a sum. The left-hand side is $3+1=4$, while $\sqrt[3]{28}$ is not an integer. In general $\sqrt[3]{a}+\sqrt[3]{b}\neq\sqrt[3]{a+b}$.""",
+                r"""The product is a difference of squares. Set $A=6k^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(6k^{-1})^2-1=\frac{36}{k^2}-1$$
+
+The reciprocal square carries coefficient $36$ on $k^2$ in the denominator.
+
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Extracting $\sqrt[3]{54}=3\sqrt[3]{2}$ in the reals is accepted.",
@@ -356,11 +477,29 @@ $$-2+\frac{5}{2}+\frac{1}{2}=1,$$
 so the inner monomial is $x$. The outer square produces $x^{2}$.""",
             ),
             (
-                r"Clearing $y^{3/2}/y^{-3/2}$ for $y>0$ is claimed to leave $y^{0}$.",
-                False,
-                r"""Subtract exponents:
-$$\frac{y^{3/2}}{y^{-3/2}}=y^{3/2-(-3/2)}=y^{3},$$
-not $y^{0}$. Cancelling the matching $3/2$ while dropping both minus signs is the slip.""",
+                r"""If $j>0$, then $\dfrac{j^{2/3}\cdot\sqrt[3]{j\sqrt{j}}}{j^{1/6}\cdot\sqrt[6]{j^5}}=\sqrt[6]{j}$.""",
+                True,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$j^{2/3}\cdot(j\cdotj^{1/2})^{1/3}=j^{2/3}\cdotj^{(1+1/2)/3}=j^{2/3}\cdotj^{1/2}$$
+
+Inside the cube root, $j\cdot\sqrt{j}$ becomes a single power of $j$.
+
+Denominator:
+
+$$j^{1/6}\cdot(j^5)^{1/6}=j^{1/6}\cdotj^{5/6}=j$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{j}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Working with $z>0$, the stack $(z^{1/3})^{-3/2}$ is rewritten as $z^{-1/2}$.",
@@ -377,11 +516,17 @@ $$\bigl(w^{2/3}\bigr)^{3}=w^{2}.$$
 Adding $2+3$ in the numerator produces the false $w^{5/3}$. Stacked exponents multiply, they do not add.""",
             ),
             (
-                r"On $t>0$, the product $t^{-1/2}t^{3/2}$ is entered as $t$.",
+                r"""For $k\neq 0$, $(5k^{-1}-1)(5k^{-1}+1)=\dfrac{25}{k^2}-1$.""",
                 True,
-                r"""Add the exponents:
-$$-\frac{1}{2}+\frac{3}{2}=1,$$
-so the product is $t$.""",
+                r"""The product is a difference of squares. Set $A=5k^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(5k^{-1})^2-1=\frac{25}{k^2}-1$$
+
+The reciprocal square carries coefficient $25$ on $k^2$ in the denominator.
+
+The printed coefficient $25$ is the one that survives the expansion.""",
             ),
         ],
         overview=r"Five independent fractional-power calculations. Inside the mixed quotient the exponents total $1$, and the outer square makes $x^{2}$. Stacking multiplies; a quotient subtracts.",
@@ -406,11 +551,17 @@ That denests the companion $\sqrt{8-2\sqrt{15}}$. The plus form $\sqrt{8+2\sqrt{
 $$(\sqrt{5}+\sqrt{3})^{2}=5+2\sqrt{15}+3=8+2\sqrt{15}.$$""",
             ),
             (
-                r"Matching positive roots, $\sqrt{18+2\sqrt{45}}$ is rewritten as $\sqrt{15}+\sqrt{3}$.",
-                True,
-                r"""Square the proposed sum:
-$$(\sqrt{15}+\sqrt{3})^{2}=15+2\sqrt{45}+3=18+2\sqrt{45}.$$
-Both sides are positive, so the principal square roots agree.""",
+                r"""For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields $a$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $a$ first.
+
+Correct tower:
+
+$$((a^{2})^{3})^{1/2}=a^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"A naive split writes $\sqrt{12+2\sqrt{32}}=\sqrt{12}+\sqrt{32}$ as positive square roots.",
@@ -434,10 +585,17 @@ which is not $\sqrt{12}+\sqrt{32}$.""",
         context=CTX,
         items=[
             (
-                r"Rationalising $6/(\sqrt{7}-2)$ is recorded as $2(\sqrt{7}+2)$ in the positive reals.",
-                True,
-                r"""Multiply numerator and denominator by the conjugate $\sqrt{7}+2$:
-$$\frac{6}{\sqrt{7}-2}\cdot\frac{\sqrt{7}+2}{\sqrt{7}+2}=\frac{6(\sqrt{7}+2)}{7-4}=\frac{6(\sqrt{7}+2)}{3}=2(\sqrt{7}+2).$$""",
+                r"""For positive $b$, raising $b$ to the second power, then to the third, and finally taking the principal square root of the result yields $b$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $b$ first.
+
+Correct tower:
+
+$$((b^{2})^{3})^{1/2}=b^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Clearing $1/(\sqrt{5}-\sqrt{3})$ is claimed to equal $(\sqrt{5}-\sqrt{3})/2$, the conjugate already in the denominator.",
@@ -447,10 +605,17 @@ $$\frac{1}{\sqrt{5}-\sqrt{3}}=\frac{\sqrt{5}+\sqrt{3}}{2}.$$
 Keeping $\sqrt{5}-\sqrt{3}$ in the numerator claims the other conjugate.""",
             ),
             (
-                r"The product $(\sqrt{12}-\sqrt{3})(\sqrt{12}+\sqrt{3})$ is rewritten as $9$.",
+                r"""For $x\neq 0$, $(5x^{-1}-1)(5x^{-1}+1)=\dfrac{25}{x^2}-1$.""",
                 True,
-                r"""Difference of squares:
-$$(\sqrt{12})^{2}-(\sqrt{3})^{2}=12-3=9.$$""",
+                r"""The product is a difference of squares. Set $A=5x^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(5x^{-1})^2-1=\frac{25}{x^2}-1$$
+
+The reciprocal square carries coefficient $25$ on $x^2$ in the denominator.
+
+The printed coefficient $25$ is the one that survives the expansion.""",
             ),
             (
                 r"Someone rationalises $4/(\sqrt{18}-\sqrt{8})$ and claims the value $\sqrt{18}+\sqrt{8}$ without dividing by the difference of squares.",
@@ -496,11 +661,23 @@ $$t^{1/2}t^{-1/2}=t^{0}=1$$
 on $t>0$.""",
             ),
             (
-                r"A candidate writes $\bigl(u^{1/2}-2u^{-1/2}\bigr)^{2}=u+4/u$ for $u>0$, dropping $-4$.",
-                False,
-                r"""The cross term is $-2\cdot u^{1/2}\cdot 2u^{-1/2}=-4$, so
-$$u-4+\frac{4}{u}.$$
-Dropping $-4$ leaves the incomplete $u+4/u$.""",
+                r"""For positive $z$, raising $z$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $z$.""",
+                True,
+                r"""The claim describes a tower of powers on positive $z$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(z^{2})^{3}=z^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(z^{6})^{1/2}=z^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"Working with $w>0$, $\bigl(\sqrt{w}-1/\sqrt{w}\bigr)^{2}$ is rewritten as $(w-1)^{2}/w$.",
@@ -525,9 +702,29 @@ $$4^{k}=(2^{2})^{k}=(2^{k})^{2}=5^{2}=25.$$
 The given power is substituted after a change of base; $k$ is never solved for.""",
             ),
             (
-                r"Under the hypothesis $3^{n}=2$, the power $9^{n}$ is recorded as $4$.",
-                True,
-                r"""$9^{n}=(3^{2})^{n}=(3^{n})^{2}=2^{2}=4$. This is exponent algebra, not solving $3^{n}=2$.""",
+                r"""If $g>0$, then $\dfrac{g^{2/3}\cdot\sqrt[3]{g\sqrt{g}}}{g^{1/6}\cdot\sqrt[6]{g^5}}=\sqrt[3]{g}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$g^{2/3}\cdot(g\cdotg^{1/2})^{1/3}=g^{2/3}\cdotg^{(1+1/2)/3}=g^{2/3}\cdotg^{1/2}$$
+
+Inside the cube root, $g\cdot\sqrt{g}$ becomes a single power of $g$.
+
+Denominator:
+
+$$g^{1/6}\cdot(g^5)^{1/6}=g^{1/6}\cdotg^{5/6}=g$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{g}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"From $2^{k}=5$, a student concludes $2^{3k}=15$.",
@@ -537,9 +734,23 @@ $$2^{3k}=(2^{k})^{3}=5^{3}=125,$$
                 not $15$. The figure $15$ looks like $3\cdot 5$ rather than $5^{3}$.""",
             ),
             (
-                r"Provided $2^{m}=3$, rewriting $8^{m}$ as $27$ is accepted.",
+                r"""For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $a$.""",
                 True,
-                r"""$8^{m}=(2^{3})^{m}=(2^{m})^{3}=3^{3}=27$.""",
+                r"""The claim describes a tower of powers on positive $a$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(a^{2})^{3}=a^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(a^{6})^{1/2}=a^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"Starting from $5^{t}=4$, a slip writes $25^{t}=8$.",
@@ -581,10 +792,29 @@ $$(p^{3}q^{-1})^{2}=p^{6}q^{-2}=\frac{p^{6}}{q^{2}}.$$
 Adding $3+2$ on $p$ and dropping the minus on $q$ produces the false $p^{5}q$.""",
             ),
             (
-                r"On $u,v>0$, the quotient $(u^{2}v)^{3}/(uv^{2})^{3}$ is rewritten as $(u/v)^{3}$.",
+                r"""If $m>0$, then $\dfrac{m^{2/3}\cdot\sqrt[3]{m\sqrt{m}}}{m^{1/6}\cdot\sqrt[6]{m^5}}=\sqrt[6]{m}$.""",
                 True,
-                r"""Numerator $u^{6}v^{3}$, denominator $u^{3}v^{6}$. The quotient is
-$$u^{3}v^{-3}=\Bigl(\frac{u}{v}\Bigr)^{3}.$$""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$m^{2/3}\cdot(m\cdotm^{1/2})^{1/3}=m^{2/3}\cdotm^{(1+1/2)/3}=m^{2/3}\cdotm^{1/2}$$
+
+Inside the cube root, $m\cdot\sqrt{m}$ becomes a single power of $m$.
+
+Denominator:
+
+$$m^{1/6}\cdot(m^5)^{1/6}=m^{1/6}\cdotm^{5/6}=m$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{m}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
         ],
         overview=r"Five independent two-letter power claims. $(a^{m}b^{n})^{k}=a^{mk}b^{nk}$, not $a^{m+k}$. Adding the outer exponent is the product trap.",
@@ -609,9 +839,17 @@ $$32^{3/5}=(2^{5})^{3/5}=2^{3}=8,$$
 not $4$. The integer $4$ is $32^{2/5}$.""",
             ),
             (
-                r"Evaluating $27^{2/3}\cdot 8^{-1/3}$ as $9/2$ is accepted.",
-                True,
-                r"""$27^{2/3}=9$ and $8^{-1/3}=1/2$, so the product is $9/2$.""",
+                r"""For $n\neq 0$, $(3n^{-1}-1)(3n^{-1}+1)=\dfrac{1}{9n^2}-1$.""",
+                False,
+                r"""The product is a difference of squares. Set $A=3n^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(3n^{-1})^2-1=\frac{9}{n^2}-1$$
+
+The reciprocal square carries coefficient $9$ on $n^2$ in the denominator.
+
+The reciprocal square carries numerator $9$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"A candidate records $\sqrt{18}\cdot\sqrt{8}=\sqrt{26}$ as positive square roots.",
@@ -621,10 +859,17 @@ $$\sqrt{18}\sqrt{8}=\sqrt{144}=12,$$
 not $\sqrt{18+8}$. Adding inside the radicand is the $\sqrt{a}+\sqrt{b}$ trap applied to a product.""",
             ),
             (
-                r"Changing $4^{5/2}$ into $32$ is printed as valid.",
-                True,
-                r"""$4=2^{2}$, so
-$$4^{5/2}=(2^{2})^{5/2}=2^{5}=32.$$""",
+                r"""For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields $n$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $n$ first.
+
+Correct tower:
+
+$$((n^{2})^{3})^{1/2}=n^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
         ],
         overview=r"Five independent numerical rewrites. $27^{4/3}=81$ and $4^{5/2}=32$, but $32^{3/5}=8$ and $\sqrt{18}\sqrt{8}=12$, not $\sqrt{26}$.",
@@ -636,10 +881,23 @@ $$4^{5/2}=(2^{2})^{5/2}=2^{5}=32.$$""",
         context=CTX,
         items=[
             (
-                r"Changing $4^{m-n}$ into $2^{2m-2n}$ for integers $m,n$ is accepted.",
+                r"""For positive $p$, raising $p$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $p$.""",
                 True,
-                r"""$4=2^{2}$, so
-$$4^{m-n}=(2^{2})^{m-n}=2^{2(m-n)}=2^{2m-2n}.$$""",
+                r"""The claim describes a tower of powers on positive $p$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(p^{2})^{3}=p^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(p^{6})^{1/2}=p^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"A slip expands $8^{m}$ as $2^{m+3}$ as an identity in the integer $m$.",
@@ -673,11 +931,17 @@ $$\frac{2^{2n}}{2^{n}}=2^{n}.$$""",
         context=CTX,
         items=[
             (
-                r"Extracting $\sqrt[4]{a^{2}b^{6}}$ for $a,b>0$ is recorded as $a^{1/2}b^{3/2}$.",
-                True,
-                r"""Divide each exponent by $4$:
-$$(a^{2}b^{6})^{1/4}=a^{2/4}b^{6/4}=a^{1/2}b^{3/2}$$
-on $a,b>0$.""",
+                r"""For $u\neq 0$, $(3u^{-1}-1)(3u^{-1}+1)=\dfrac{1}{9u^2}-1$.""",
+                False,
+                r"""The product is a difference of squares. Set $A=3u^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(3u^{-1})^2-1=\frac{9}{u^2}-1$$
+
+The reciprocal square carries coefficient $9$ on $u^2$ in the denominator.
+
+The reciprocal square carries numerator $9$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Combining $\sqrt[4]{16}\sqrt[4]{81}$ as positive fourth roots is claimed to equal $12$.",
@@ -690,9 +954,17 @@ on $a,b>0$.""",
                 r"""$(x^{4})^{1/4}=x$ on $x>0$, not $x^{2}$. Dividing the exponent by $4$ yields $1$, not $2$.""",
             ),
             (
-                r"On $c>0$, $\sqrt[4]{c^{8}}=c^{2}$ is accepted.",
-                True,
-                r"""$(c^{8})^{1/4}=c^{2}$ on $c>0$.""",
+                r"""For positive $p$, raising $p$ to the second power, then to the third, and finally taking the principal square root of the result yields $p$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $p$ first.
+
+Correct tower:
+
+$$((p^{2})^{3})^{1/2}=p^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Someone records $\sqrt[4]{32}=4\sqrt[4]{2}$ as a positive fourth root.",
@@ -717,9 +989,17 @@ $$\sqrt[4]{32}=2\sqrt[4]{2},$$
 $$a^{5+2}b^{-3-4}=a^{7}b^{-7}=\frac{a^{7}}{b^{7}}.$$""",
             ),
             (
-                r"Forgetting to invert, a slip writes $c^{4}/c^{-3}=c$ whenever $c\neq 0$.",
+                r"""For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields $t$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""$4-(-3)=7$, so $c^{4}/c^{-3}=c^{7}$. Treating the denominator's $-3$ as an ordinary $3$ to be subtracted from $4$ leaves the false $c^{1}$.""",
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $t$ first.
+
+Correct tower:
+
+$$((t^{2})^{3})^{1/2}=t^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Subtracting exponents, $d^{5}/d^{-2}=d^{7}$ for $d\neq 0$ is accepted.",
@@ -753,9 +1033,17 @@ $$(x^{1/3})^{1/4}=x^{1/12}$$
 on $x>0$.""",
             ),
             (
-                r"The stacked form $\sqrt[3]{\sqrt{y}}$ is recorded as $y^{5/6}$ for $y>0$, adding the reciprocal exponents.",
+                r"""For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields $q$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""Stacked roots multiply the reciprocal exponents: $(1/2)\cdot(1/3)=1/6$. Adding $1/2+1/3=5/6$ is the product-of-powers rule applied by mistake.""",
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $q$ first.
+
+Correct tower:
+
+$$((q^{2})^{3})^{1/2}=q^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"On $z>0$, a cube root of a square $\sqrt[3]{z^{2}}$ is rewritten as $z^{2/3}$.",
@@ -768,11 +1056,23 @@ on $x>0$.""",
                 r"""$(w^{3})^{1/4}=w^{3/4}$, not $w^{4/3}$. The fraction $4/3$ inverts the correct $3/4$.""",
             ),
             (
-                r"Taking $t>0$, $\sqrt{\sqrt{\sqrt{t}}}$ is claimed to equal $t^{1/6}$.",
-                False,
-                r"""Three square roots multiply three factors $1/2$:
-$$t^{(1/2)^{3}}=t^{1/8},$$
-not $t^{1/6}$. The exponent $1/6$ would be a cube root of a square root.""",
+                r"""For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $k$.""",
+                True,
+                r"""The claim describes a tower of powers on positive $k$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(k^{2})^{3}=k^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(k^{6})^{1/2}=k^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
         ],
         overview=r"Five independent stacked-root rewrites. Reciprocal exponents multiply: a cube root inside a fourth root is $x^{1/12}$. Adding $1/2+1/3$ is the wrong operation.",
@@ -795,9 +1095,29 @@ $$(\sqrt{5})^{2}-(\sqrt{3})^{2}=5-3=2.$$""",
                 r"""The conjugate product is the difference $12-3=9$, not the sum $15$. Adding the radicands would be $(\sqrt{12})^{2}+(\sqrt{3})^{2}$.""",
             ),
             (
-                r"In two letters, $(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})=a-b$ for $a,b\ge 0$ is accepted.",
-                True,
-                r"""Difference of squares: $(\sqrt{a})^{2}-(\sqrt{b})^{2}=a-b$ on $a,b\ge 0$.""",
+                r"""If $p>0$, then $\dfrac{p^{2/3}\cdot\sqrt[3]{p\sqrt{p}}}{p^{1/6}\cdot\sqrt[6]{p^5}}=\sqrt[3]{p}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$p^{2/3}\cdot(p\cdotp^{1/2})^{1/3}=p^{2/3}\cdotp^{(1+1/2)/3}=p^{2/3}\cdotp^{1/2}$$
+
+Inside the cube root, $p\cdot\sqrt{p}$ becomes a single power of $p$.
+
+Denominator:
+
+$$p^{1/6}\cdot(p^5)^{1/6}=p^{1/6}\cdotp^{5/6}=p$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{p}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"A note writes $(\sqrt{8}-\sqrt{2})^{2}=6$ as an identity on the positive reals.",
@@ -819,10 +1139,17 @@ $$(\sqrt{5})^{2}-(\sqrt{3})^{2}=5-3=2.$$""",
         context=CTX,
         items=[
             (
-                r"Combining $(x^{1/2}y^{-1/3})^{6}/(x^{-1}y^{2})^{2}$ on $x,y>0$ is recorded as $x^{5}/y^{6}$.",
+                r"""For $r\neq 0$, $(2r^{-1}-1)(2r^{-1}+1)=\dfrac{4}{r^2}-1$.""",
                 True,
-                r"""Numerator: $x^{3}y^{-2}$. Denominator: $x^{-2}y^{4}$. The quotient is
-$$x^{3-(-2)}y^{-2-4}=x^{5}y^{-6}=\frac{x^{5}}{y^{6}}.$$""",
+                r"""The product is a difference of squares. Set $A=2r^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(2r^{-1})^2-1=\frac{4}{r^2}-1$$
+
+The reciprocal square carries coefficient $4$ on $r^2$ in the denominator.
+
+The printed coefficient $4$ is the one that survives the expansion.""",
             ),
             (
                 r"A slip writes the stack $(y^{-1/3})^{6}=y^{-1/18}$ for $y>0$.",
@@ -830,11 +1157,23 @@ $$x^{3-(-2)}y^{-2-4}=x^{5}y^{-6}=\frac{x^{5}}{y^{6}}.$$""",
                 r"""Multiply, do not divide: $(-1/3)\cdot 6=-2$. The exponent $-1/18$ is $(-1/3)/6$.""",
             ),
             (
-                r"On $a>0$, $(a^{3/4})^{8/3}$ is rewritten as $a^{2}$.",
+                r"""For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $n$.""",
                 True,
-                r"""Multiply the exponents:
-$$\frac{3}{4}\cdot\frac{8}{3}=2,$$
-so the stacked power is $a^{2}$.""",
+                r"""The claim describes a tower of powers on positive $n$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(n^{2})^{3}=n^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(n^{6})^{1/2}=n^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"Someone records $(b^{-2}c^{1/2})^{4}=b^{2}c^{2}$ for $b,c>0$.",
@@ -877,9 +1216,17 @@ $$2^{3k}=(2^{k})^{3}=5^{3}=125.$$""",
                 r"""The cross term is $-2\cdot\sqrt{x}\cdot x^{-1/2}=-2$, so the square is $x-2+1/x$.""",
             ),
             (
-                r"Whenever $a,b>0$, treating $\sqrt{a}\sqrt{b}$ as $\sqrt{a+b}$ is accepted as an identity.",
-                False,
-                r"""The product rule gives $\sqrt{a}\sqrt{b}=\sqrt{ab}$, not $\sqrt{a+b}$. For $a=b=4$ one has $2\cdot 2=4$ while $\sqrt{8}=2\sqrt{2}$.""",
+                r"""For $r\neq 0$, $(7r^{-1}-1)(7r^{-1}+1)=\dfrac{49}{r^2}-1$.""",
+                True,
+                r"""The product is a difference of squares. Set $A=7r^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(7r^{-1})^2-1=\frac{49}{r^2}-1$$
+
+The reciprocal square carries coefficient $49$ on $r^2$ in the denominator.
+
+The printed coefficient $49$ is the one that survives the expansion.""",
             ),
             (
                 r"Rationalising $1/(\sqrt{48}-\sqrt{12})$ is claimed to equal $\sqrt{48}+\sqrt{12}$.",
@@ -904,9 +1251,23 @@ Leaving the conjugate undivided is the slip.""",
 $$\frac{a^{mk}b^{nk}}{a^{nk}b^{mk}}=a^{k(m-n)}b^{k(n-m)}=\Bigl(\frac{a}{b}\Bigr)^{k(m-n)}.$$""",
             ),
             (
-                r"A matching reciprocal form claims that same quotient equals $(a/b)^{k(n-m)}$ for $a,b>0$.",
-                False,
-                r"""The exponent $k(n-m)$ is the negative of $k(m-n)$. That would describe $(b/a)^{k(m-n)}$, not $(a/b)^{k(m-n)}$.""",
+                r"""For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $q$.""",
+                True,
+                r"""The claim describes a tower of powers on positive $q$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(q^{2})^{3}=q^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(q^{6})^{1/2}=q^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"Expanding only a cube, $(p^{2}q^{-3})^{3}=p^{6}q^{-9}$ on $p,q>0$ is accepted.",
@@ -915,9 +1276,29 @@ $$\frac{a^{mk}b^{nk}}{a^{nk}b^{mk}}=a^{k(m-n)}b^{k(n-m)}=\Bigl(\frac{a}{b}\Bigr)
 $$2\cdot 3=6,\qquad (-3)\cdot 3=-9.$$""",
             ),
             (
-                r"Treating $(r^{m}s^{n})^{k}$ as $r^{m+k}s^{n}$ for $r,s>0$ is offered as an identity.",
-                False,
-                r"""The outer $k$ multiplies every inner exponent: $r^{mk}s^{nk}$. Adding $k$ only to $r$ is the product rule $r^{m}r^{k}$ with $s$ left untouched.""",
+                r"""If $p>0$, then $\dfrac{p^{2/3}\cdot\sqrt[3]{p\sqrt{p}}}{p^{1/6}\cdot\sqrt[6]{p^5}}=\sqrt[6]{p}$.""",
+                True,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$p^{2/3}\cdot(p\cdotp^{1/2})^{1/3}=p^{2/3}\cdotp^{(1+1/2)/3}=p^{2/3}\cdotp^{1/2}$$
+
+Inside the cube root, $p\cdot\sqrt{p}$ becomes a single power of $p$.
+
+Denominator:
+
+$$p^{1/6}\cdot(p^5)^{1/6}=p^{1/6}\cdotp^{5/6}=p$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{p}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Collecting $u^{6}v^{-4}/(u^{-2}v^{3})$ for $u,v>0$ is rewritten as $u^{8}/v^{7}$.",
@@ -957,11 +1338,23 @@ $$\sqrt{x\sqrt{x}}=(x^{3/2})^{1/2}=x^{3/4}.$$""",
                 r"""$(w^{2})^{1/4}=w^{1/2}$ on $w>0$.""",
             ),
             (
-                r"Someone records $\sqrt{\sqrt{t^{3}}}=t^{3/2}$ on $t>0$.",
-                False,
-                r"""Two square roots make a fourth root:
-$$\sqrt{\sqrt{t^{3}}}=(t^{3})^{1/4}=t^{3/4},$$
-not $t^{3/2}$. The exponent $3/2$ would be a single square root of $t^{3}$.""",
+                r"""For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $h$.""",
+                True,
+                r"""The claim describes a tower of powers on positive $h$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(h^{2})^{3}=h^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(h^{6})^{1/2}=h^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
         ],
         overview=r"Five independent nests, each with its own index. Write every root as a reciprocal exponent and multiply. $\sqrt{x\sqrt{x}}=x^{3/4}$ and the three-storey cube nest is $y^{13/27}$.",
@@ -984,9 +1377,17 @@ $$\frac{(\sqrt{a}-\sqrt{b})^{2}}{(\sqrt{a}-\sqrt{b})(\sqrt{a}+\sqrt{b})}=\frac{\
                 r"""Cancel one factor $\sqrt{c}-\sqrt{d}$ from $c-d=(\sqrt{c}-\sqrt{d})(\sqrt{c}+\sqrt{d})$. The surviving factor is $\sqrt{c}+\sqrt{d}$, not $\sqrt{c}-\sqrt{d}$.""",
             ),
             (
-                r"Factoring $p-q=(\sqrt{p}-\sqrt{q})(\sqrt{p}+\sqrt{q})$ on $p,q\ge 0$ is accepted.",
-                True,
-                r"""This is the difference-of-squares identity with $\sqrt{p}$ and $\sqrt{q}$, valid on $p,q\ge 0$.""",
+                r"""For positive $w$, raising $w$ to the second power, then to the third, and finally taking the principal square root of the result yields $w$ to the power $\tfrac{5}{2}$.""",
+                False,
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $w$ first.
+
+Correct tower:
+
+$$((w^{2})^{3})^{1/2}=w^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"A candidate cancels twice in $(\sqrt{u}-\sqrt{v})^{2}/(u-v)$ and obtains $1/(u-v)$ for $u>v>0$.",
@@ -994,9 +1395,17 @@ $$\frac{(\sqrt{a}-\sqrt{b})^{2}}{(\sqrt{a}-\sqrt{b})(\sqrt{a}+\sqrt{b})}=\frac{\
                 r"""The denominator is already $u-v$. Cancelling both copies of $\sqrt{u}-\sqrt{v}$ from the numerator would require two such factors in $u-v$, which it does not have. The result $1/(u-v)$ is not the simplified quotient.""",
             ),
             (
-                r"On $m>n>0$, $(m-n)/(\sqrt{m}+\sqrt{n})$ is rewritten as $\sqrt{m}-\sqrt{n}$.",
-                True,
-                r"""Cancel $\sqrt{m}+\sqrt{n}$ from $m-n=(\sqrt{m}-\sqrt{n})(\sqrt{m}+\sqrt{n})$.""",
+                r"""For $w\neq 0$, $(6w^{-1}-1)(6w^{-1}+1)=\dfrac{1}{36w^2}-1$.""",
+                False,
+                r"""The product is a difference of squares. Set $A=6w^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(6w^{-1})^2-1=\frac{36}{w^2}-1$$
+
+The reciprocal square carries coefficient $36$ on $w^2$ in the denominator.
+
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
         ],
         overview=r"Five independent conjugate-cancellation claims. Write $a-b$ as a conjugate product. Then $(\sqrt{a}-\sqrt{b})^{2}/(a-b)$ keeps one factor of $\sqrt{a}-\sqrt{b}$ in the numerator.",
@@ -1008,9 +1417,29 @@ $$\frac{(\sqrt{a}-\sqrt{b})^{2}}{(\sqrt{a}-\sqrt{b})(\sqrt{a}+\sqrt{b})}=\frac{\
         context=CTX,
         items=[
             (
-                r"Given $3^{y}=2$, the rewrite $9^{y}=4$ follows without solving for $y$.",
+                r"""If $c>0$, then $\dfrac{c^{2/3}\cdot\sqrt[3]{c\sqrt{c}}}{c^{1/6}\cdot\sqrt[6]{c^5}}=\sqrt[6]{c}$.""",
                 True,
-                r"""$9^{y}=(3^{2})^{y}=(3^{y})^{2}=2^{2}=4$. This substitutes the given power; it does not solve $3^{y}=2$.""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$c^{2/3}\cdot(c\cdotc^{1/2})^{1/3}=c^{2/3}\cdotc^{(1+1/2)/3}=c^{2/3}\cdotc^{1/2}$$
+
+Inside the cube root, $c\cdot\sqrt{c}$ becomes a single power of $c$.
+
+Denominator:
+
+$$c^{1/6}\cdot(c^5)^{1/6}=c^{1/6}\cdotc^{5/6}=c$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{c}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"A product-of-powers slip writes $x^{m}x^{n}=x^{mn}$ for $x>0$.",
@@ -1042,10 +1471,23 @@ $$\frac{(\sqrt{a}-\sqrt{b})^{2}}{(\sqrt{a}-\sqrt{b})(\sqrt{a}+\sqrt{b})}=\frac{\
         context=CTX,
         items=[
             (
-                r"Combining $\sqrt{48}-\sqrt{12}+\sqrt{27}$ as positive square roots is recorded as $5\sqrt{3}$.",
+                r"""For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $t$.""",
                 True,
-                r"""$\sqrt{48}=4\sqrt{3}$, $\sqrt{12}=2\sqrt{3}$, and $\sqrt{27}=3\sqrt{3}$, so
-$$4\sqrt{3}-2\sqrt{3}+3\sqrt{3}=5\sqrt{3}.$$""",
+                r"""The claim describes a tower of powers on positive $t$. Translate each English step into an exponent, multiplying powers inside out.
+
+Inner power:
+
+$$(t^{2})^{3}=t^{6}$$
+
+Squaring then cubing multiplies the exponents.
+
+Principal square root:
+
+$$(t^{6})^{1/2}=t^{3}$$
+
+The outer root halves the accumulated exponent.
+
+The reduced power is the cube of the base, matching the wording.""",
             ),
             (
                 r"Denesting $\sqrt{12+2\sqrt{32}}$ is claimed to equal $\sqrt{8}-\sqrt{4}$.",
@@ -1058,9 +1500,29 @@ $$4\sqrt{3}-2\sqrt{3}+3\sqrt{3}=5\sqrt{3}.$$""",
                 r"""Multiply by $\sqrt{5}+1$. The denominator is $5-1=4$, so the value is $3(\sqrt{5}+1)/4$.""",
             ),
             (
-                r"On $x>0$, expanding $(\sqrt{x}+1/\sqrt{x})^{2}$ is claimed as $x+1/x$, omitting the middle $+2$.",
+                r"""If $j>0$, then $\dfrac{j^{2/3}\cdot\sqrt[3]{j\sqrt{j}}}{j^{1/6}\cdot\sqrt[6]{j^5}}=\sqrt[3]{j}$.""",
                 False,
-                r"""The cross term is $+2\cdot\sqrt{x}\cdot x^{-1/2}=+2$, so the square is $x+2+1/x$. Omitting $+2$ is the incomplete square.""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$j^{2/3}\cdot(j\cdotj^{1/2})^{1/3}=j^{2/3}\cdotj^{(1+1/2)/3}=j^{2/3}\cdotj^{1/2}$$
+
+Inside the cube root, $j\cdot\sqrt{j}$ becomes a single power of $j$.
+
+Denominator:
+
+$$j^{1/6}\cdot(j^5)^{1/6}=j^{1/6}\cdotj^{5/6}=j$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{j}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Evaluating $32^{2/5}\cdot 27^{-1/3}$ as $4/3$ is accepted.",
@@ -1083,9 +1545,17 @@ $$4\sqrt{3}-2\sqrt{3}+3\sqrt{3}=5\sqrt{3}.$$""",
 $$\frac{1}{x}+\frac{1}{x^{2}}=\frac{x+1}{x^{2}}.$$""",
             ),
             (
-                r"A marker writes $y^{-1}+y^{-2}=1/(y+y^{2})$ as an identity on $y\neq 0$.",
+                r"""For $x\neq 0$, $(6x^{-1}-1)(6x^{-1}+1)=\dfrac{1}{36x^2}-1$.""",
                 False,
-                r"""The sum of reciprocals is not the reciprocal of the sum. The correct common-denominator form is $(y+1)/y^{2}$, whereas $1/(y+y^{2})=1/(y(y+1))$.""",
+                r"""The product is a difference of squares. Set $A=6x^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(6x^{-1})^2-1=\frac{36}{x^2}-1$$
+
+The reciprocal square carries coefficient $36$ on $x^2$ in the denominator.
+
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Squaring a reciprocal, $z^{-2}=(z^{-1})^{2}$ for $z\neq 0$ is accepted.",
@@ -1119,9 +1589,29 @@ $$\bigl(4^{3/2}\bigr)^{2/3}=4^{(3/2)\cdot(2/3)}=4^{1}=4.$$
 Equivalently $4^{3/2}=8$ and $8^{2/3}=4$.""",
             ),
             (
-                r"A slip writes $(8^{2/3})^{3/2}=8^{2/3+3/2}$ as an identity.",
+                r"""If $m>0$, then $\dfrac{m^{2/3}\cdot\sqrt[3]{m\sqrt{m}}}{m^{1/6}\cdot\sqrt[6]{m^5}}=\sqrt[3]{m}$.""",
                 False,
-                r"""Stacked exponents multiply: $(8^{2/3})^{3/2}=8^{1}=8$. Adding $2/3+3/2=13/6$ is the product rule $8^{2/3}\cdot 8^{3/2}$.""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$m^{2/3}\cdot(m\cdotm^{1/2})^{1/3}=m^{2/3}\cdotm^{(1+1/2)/3}=m^{2/3}\cdotm^{1/2}$$
+
+Inside the cube root, $m\cdot\sqrt{m}$ becomes a single power of $m$.
+
+Denominator:
+
+$$m^{1/6}\cdot(m^5)^{1/6}=m^{1/6}\cdotm^{5/6}=m$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{m}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"On $t>0$, $(t^{-3})^{2/3}=t^{-2}$ is accepted.",
@@ -1134,9 +1624,17 @@ Equivalently $4^{3/2}=8$ and $8^{2/3}=4$.""",
                 r"""$16^{3/4}=(2^{4})^{3/4}=2^{3}=8$ and $8^{-1/3}=1/2$, so the product is $4$, not $2$.""",
             ),
             (
-                r"Given $4^{k}=5$, rewriting $2^{2k}$ as $5$ without solving for $k$ is accepted.",
+                r"""For $u\neq 0$, $(6u^{-1}-1)(6u^{-1}+1)=\dfrac{36}{u^2}-1$.""",
                 True,
-                r"""$2^{2k}=(2^{2})^{k}=4^{k}=5$. The given power is reused after a change of base.""",
+                r"""The product is a difference of squares. Set $A=6u^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(6u^{-1})^2-1=\frac{36}{u^2}-1$$
+
+The reciprocal square carries coefficient $36$ on $u^2$ in the denominator.
+
+The printed coefficient $36$ is the one that survives the expansion.""",
             ),
         ],
         overview=r"Five independent stacked fractional powers. Multiply the two exponents, or rewrite each base as a power of $2$. Adding the fractional exponents is the product trap.",
@@ -1159,9 +1657,17 @@ Equivalently $4^{3/2}=8$ and $8^{2/3}=4$.""",
 $$\frac{\sqrt{45}}{\sqrt{5}}=\sqrt{9}=3.$$""",
             ),
             (
-                r"A false binomial square $(\sqrt{12}+\sqrt{3})^{2}=15$ is claimed.",
+                r"""For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields $h$ to the power $\tfrac{5}{2}$.""",
                 False,
-                r"""$(\sqrt{12}+\sqrt{3})^{2}=12+2\sqrt{36}+3=15+12=27$, not $15$. The cross term $2\cdot\sqrt{12}\cdot\sqrt{3}=12$ was dropped, leaving the sum of radicands.""",
+                r"""Power of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $h$ first.
+
+Correct tower:
+
+$$((h^{2})^{3})^{1/2}=h^{3}$$
+
+The accumulated exponent is $6$, then halved by the principal square root.
+
+The power $\tfrac{5}{2}$ would describe a different expression.""",
             ),
             (
                 r"Raising a two-thirds power, $(x^{2/3})^{3}=x^{2}$ holds on $x>0$.",

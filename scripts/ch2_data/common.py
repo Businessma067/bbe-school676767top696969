@@ -2,21 +2,9 @@
 
 from __future__ import annotations
 
+from explain import assign_profiles, generate_body
+
 LETTERS = "ABCDE"
-
-
-def expl(i: int, truth: bool, body: str) -> str:
-    """Draft explanation; assemble.py rewrites these into Ch4 / Ch13 layout."""
-    letter = LETTERS[i]
-    verdict = "True" if truth else "False"
-    body = body.strip()
-    if body and not body.endswith((".", "$$")):
-        body += "."
-    return (
-        f"**{letter}.** → {verdict}\n\n"
-        f"{body}\n\n"
-        f"so the statement is {verdict}."
-    )
 
 
 def task(
@@ -25,16 +13,38 @@ def task(
     subsection: str,
     difficulty: str,
     context: str,
-    items: list[tuple[str, bool, str]],
+    items: list[tuple[str, bool] | tuple[str, bool, str]],
     overview: str,
 ) -> dict:
     if len(items) != 5:
         raise ValueError(f"{title}: expected 5 items, got {len(items)}")
-    statements, keys, explanations = [], [], []
-    for i, (stmt, truth, body) in enumerate(items):
-        statements.append(stmt.strip())
+    statements: list[str] = []
+    keys: list[bool] = []
+    authored: list[str | None] = []
+    for item in items:
+        if len(item) == 2:
+            stmt, truth = item
+            body: str | None = None
+        elif len(item) == 3:
+            stmt, truth, body = item
+        else:
+            raise ValueError(f"{title}: item must be (statement, truth[, body])")
+        statements.append(str(stmt).strip())
         keys.append(bool(truth))
-        explanations.append(expl(i, bool(truth), body))
+        authored.append(None if body is None else str(body).strip())
+
+    profiles = assign_profiles(statements, subsection)
+    explanations: list[str] = []
+    for i in range(5):
+        if authored[i]:
+            explanations.append(authored[i])
+        else:
+            explanations.append(
+                generate_body(
+                    statements[i], keys[i], subsection, i, profile=profiles[i]
+                )
+            )
+
     return {
         "title": title.strip(),
         "subsection": subsection,

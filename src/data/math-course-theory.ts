@@ -1,7 +1,7 @@
 /**
  * Mathematics Full Course theory for TheoryReader.
  * Full Course mathematics theory chapters rendered by TheoryReader.
- * (sync marker for Lovable GitHub pull)
+ * (sync marker for Lovable GitHub pull — Ch2 independent claims 2026-08-27)
  */
 
 import ch1 from "./math-theory/ch1.md?raw";

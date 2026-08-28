@@ -12,11 +12,29 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"After expanding $(2f+g-3h)^2$ and collecting like terms, the coefficient of $fh$ is read off as $-12$.",
-                True,
-                r"""The square of a three-term sum produces twice every pairwise product. The $f$--$h$ cross term is
-$$2\cdot(2f)\cdot(-3h)=-12fh.$$
-The collected coefficient of $fh$ is therefore $-12$, matching the claim. (The remaining cross terms are $4fg$ and $-6gh$, which are not asked for here.)""",
+                r"""For $x\neq\pm 1$, $\dfrac{5x-1}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{3}{1-x}=\dfrac{3}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{3}{1-x}=\frac{3}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{5x-1}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{3}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{7 x + 5}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{7 x + 5}{x^{2} - 1}$, not $\dfrac{3}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Reducing $\dfrac{j^3-1331}{j-11}$ to $j^2+121$ for $j\neq 11$ is treated as an identity, because substituting $j=0$ makes both sides equal $121$.",
@@ -26,13 +44,29 @@ $$\frac{j^3-1331}{j-11}=j^2+11j+121\qquad(j\neq 11).$$
 The printed remainder drops the linear term $11j$. At $j=0$ that missing term happens to vanish, so both the original fraction and $j^2+121$ equal $121$, but the two polynomials differ at every other point (for instance at $j=1$ the genuine remainder is $133$ while $1+121=122$). A single vanishing check does not restore the identity.""",
             ),
             (
-                r"Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce the difference $\sqrt{13}-1$.",
-                False,
-                r"""Square the two candidate conjugates:
-$$(1+\sqrt{13})^2=1+2\sqrt{13}+13=14+2\sqrt{13},\qquad(\sqrt{13}-1)^2=14-2\sqrt{13}.$$
-Both $1+\sqrt{13}$ and the principal square root are positive, so
-$$\sqrt{14+2\sqrt{13}}=1+\sqrt{13}.$$
-The printed difference denests the companion $\sqrt{14-2\sqrt{13}}$ instead.""",
+                r"""If $n>0$, then $\dfrac{n^{2/3}\cdot\sqrt[3]{n\sqrt{n}}}{n^{1/6}\cdot\sqrt[6]{n^5}}=\sqrt[6]{n}$.""",
+                True,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$n^{2/3}\cdot(n\cdotn^{1/2})^{1/3}=n^{2/3}\cdotn^{(1+1/2)/3}=n^{2/3}\cdotn^{1/2}$$
+
+Inside the cube root, $n\cdot\sqrt{n}$ becomes a single power of $n$.
+
+Denominator:
+
+$$n^{1/6}\cdot(n^5)^{1/6}=n^{1/6}\cdotn^{5/6}=n$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{n}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Restricting to negative $\ell$, the quotient $|\ell|/\ell$ equals $-1$.",
@@ -79,11 +113,29 @@ $$(j^2)^{3/2}=\bigl(|j|^2\bigr)^{3/2}=|j|^3.$$
 At $j=-2$ the left-hand side is $4^{3/2}=8$ while $j^3=-8$. The identity holds only on $j\ge 0$.""",
             ),
             (
-                r"On the half-line $s>16$, the quotient $\dfrac{|s-16|}{16-s}$ is claimed to equal $1$.",
+                r"""For $x\neq\pm 1$, $\dfrac{8x-4}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{4}{x-1}$.""",
                 False,
-                r"""For $s>16$ one has $|s-16|=s-16$ and $16-s=-(s-16)$, so
-$$\frac{|s-16|}{16-s}=\frac{s-16}{-(s-16)}=-1.$$
-The printed value $1$ has the wrong sign; the quotient is the piecewise constant $-1$ on that half-line.""",
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{8x-4}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{9 x + 1}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{9 x + 1}{x^{2} - 1}$, not $\dfrac{4}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Given the pair $u+v=16$ and $uv=15$, the distance $|u-v|$ is read off as $14$.",
@@ -109,12 +161,29 @@ $$2\cdot(-3g)\cdot h=-6gh.$$
 The printed $+6$ has the wrong sign; the two sides of the claimed expansion differ by $12gh$.""",
             ),
             (
-                r"Clearing the two-storey nest $1+\dfrac{1}{1+\dfrac{1}{j}}$ for $j\neq 0$ and $j\neq -1$ is said to leave $\dfrac{2j+1}{j+1}$.",
-                True,
-                r"""Innermost, $1+1/j=(j+1)/j$, so
-$$\frac{1}{1+\dfrac{1}{j}}=\frac{j}{j+1}.$$
-Adding the outer $1$ produces
-$$1+\frac{j}{j+1}=\frac{j+1+j}{j+1}=\frac{2j+1}{j+1}.$$""",
+                r"""If $a>0$, then $\dfrac{a^{2/3}\cdot\sqrt[3]{a\sqrt{a}}}{a^{1/6}\cdot\sqrt[6]{a^5}}=\sqrt[3]{a}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$a^{2/3}\cdot(a\cdota^{1/2})^{1/3}=a^{2/3}\cdota^{(1+1/2)/3}=a^{2/3}\cdota^{1/2}$$
+
+Inside the cube root, $a\cdot\sqrt{a}$ becomes a single power of $a$.
+
+Denominator:
+
+$$a^{1/6}\cdot(a^5)^{1/6}=a^{1/6}\cdota^{5/6}=a$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{a}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Simplifying $16^{5/4}$ is treated as producing the integer $32$.",
@@ -124,11 +193,35 @@ $$16^{5/4}=(2^4)^{5/4}=2^5=32.$$
 Equivalently $\bigl(16^{1/4}\bigr)^5=2^5=32$. The distractor $16^{3/4}=8$ uses a different exponent.""",
             ),
             (
-                r"On the open interval $-11<\ell<11$, the sum $|\ell+11|+|\ell-11|$ is claimed to equal $2|\ell|$.",
-                False,
-                r"""Inside $|\ell|<11$ the two insides have opposite signs, and
-$$|\ell+11|+|\ell-11|=(\ell+11)+(11-\ell)=22.$$
-The printed $2|\ell|$ is the formula that holds outside $|\ell|\ge 11$, not on the stated interval. At $\ell=0$ the sum is $22$, not $0$.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8p^2b}{4x^2-16}}{\dfrac{4pb}{2x+4}}$ simplifies to $\dfrac{p}{x-2}$ for $x\neq\pm 2$ and $p,b\neq 0$.""",
+                True,
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8p^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4pb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{p}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Whenever $r+s+t=0$ at the specific values $r=2$, $s=11$, $t=-13$, the sum of cubes $r^3+s^3+t^3$ equals $3rst$, hence $-858$.",
@@ -174,11 +267,29 @@ $$|2m-14|=|2(m-7)|=|2|\,|m-7|=2|m-7|.$$
 No sign restriction on $m$ is required.""",
             ),
             (
-                r"Evaluating the cubes at $f=5$, $g=8$, $h=-13$ (which sum to $0$) is claimed to give $f^3+g^3+h^3=-1560$.",
-                True,
-                r"""First $5+8-13=0$, so $f^3+g^3+h^3=3fgh$. Then
-$$3\cdot 5\cdot 8\cdot(-13)=-1560.$$
-Directly, $125+512-2197=-1560$. The sum of cubes is the product $3fgh$, not $0$.""",
+                r"""If $c>0$, then $\dfrac{c^{2/3}\cdot\sqrt[3]{c\sqrt{c}}}{c^{1/6}\cdot\sqrt[6]{c^5}}=\sqrt[3]{c}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$c^{2/3}\cdot(c\cdotc^{1/2})^{1/3}=c^{2/3}\cdotc^{(1+1/2)/3}=c^{2/3}\cdotc^{1/2}$$
+
+Inside the cube root, $c\cdot\sqrt{c}$ becomes a single power of $c$.
+
+Denominator:
+
+$$c^{1/6}\cdot(c^5)^{1/6}=c^{1/6}\cdotc^{5/6}=c$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{c}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
         ],
         overview=r"Unlinked claims: odd powers cancel in a Sophie-Germain product, a cubic remainder that matches at $0$ only, the wrong conjugate of $\sqrt{15+2\sqrt{14}}$, $|2m-14|=2|m-7|$, and $f^3+g^3+h^3=3fgh$ at $(5,8,-13)$.",
@@ -206,11 +317,17 @@ $$\frac{1-3375}{1-15}=\frac{-3374}{-14}=241.$$
 The linear term is visible at this test point, unlike a check at $0$.""",
             ),
             (
-                r"Composing the stack $\bigl(k^{2/3}\bigr)^{3/2}$ is claimed to return $k$ for every real $k\neq 0$.",
-                False,
-                r"""In the reals, $k^{2/3}=\bigl(k^2\bigr)^{1/3}=|k|^{2/3}$. Then
-$$\bigl(|k|^{2/3}\bigr)^{3/2}=|k|.$$
-At $k=-8$ the stack is $4$, not $-8$. The identity holds for $k>0$ only.""",
+                r"""For $x\neq 0$, $(8x^{-1}-1)(8x^{-1}+1)=\dfrac{64}{x^2}-1$.""",
+                True,
+                r"""The product is a difference of squares. Set $A=8x^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(8x^{-1})^2-1=\frac{64}{x^2}-1$$
+
+The reciprocal square carries coefficient $64$ on $x^2$ in the denominator.
+
+The printed coefficient $64$ is the one that survives the expansion.""",
             ),
             (
                 r"On the half-line $h<0$, the quotient $|h|/(-h)$ equals $1$.",
@@ -220,10 +337,29 @@ $$\frac{|h|}{-h}=\frac{-h}{-h}=1.$$
 The displayed quotient is the piecewise constant $1$ on that half-line.""",
             ),
             (
-                r"Given $u+v=15$ and $uv=14$, the sum $u^2+v^2$ is evaluated as $197$.",
-                True,
-                r"""$$u^2+v^2=(u+v)^2-2uv=225-28=197.$$
-The distractor $225$ is $(u+v)^2$ with the cross term dropped.""",
+                r"""For $x\neq\pm 1$, $\dfrac{8x-4}{x^2-1}-\dfrac{2}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{8}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{8x-4}{x^2-1}-\frac{2}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{9 x + 1}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{9 x + 1}{x^{2} - 1}$, not $\dfrac{8}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
         ],
         overview=r"Five independent lines: a wrong-sign $gh$ term in $(f+2g-h)^2$, a cubic remainder checked at $j=1$, $(k^{2/3})^{3/2}=|k|$, $|h|/(-h)=1$ on $h<0$, and $u^2+v^2=197$ from $u+v=15$, $uv=14$.",
@@ -235,11 +371,29 @@ The distractor $225$ is $(u+v)^2$ with the cross term dropped.""",
         context=CTX,
         items=[
             (
-                r"The coefficient of $fh$ in the expansion of $(f-2g+3h)^2$ is recorded as $+6$.",
-                True,
-                r"""Twice the $f$--$h$ product is
-$$2\cdot f\cdot(3h)=6fh.$$
-The collected coefficient is $+6$. (The $gh$ coefficient, by contrast, is $2\cdot(-2)\cdot 3=-12$.)""",
+                r"""If $e>0$, then $\dfrac{e^{2/3}\cdot\sqrt[3]{e\sqrt{e}}}{e^{1/6}\cdot\sqrt[6]{e^5}}=\sqrt[3]{e}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$e^{2/3}\cdot(e\cdote^{1/2})^{1/3}=e^{2/3}\cdote^{(1+1/2)/3}=e^{2/3}\cdote^{1/2}$$
+
+Inside the cube root, $e\cdot\sqrt{e}$ becomes a single power of $e$.
+
+Denominator:
+
+$$e^{1/6}\cdot(e^5)^{1/6}=e^{1/6}\cdote^{5/6}=e$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{e}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Adding the swapped pair $\dfrac{j}{k}+\dfrac{k}{j}$ for $jk\neq 0$ is said to equal $\dfrac{j^2+k^2}{jk}$, and substituting $j=3$, $k=5$ makes both sides equal $34/15$.",
@@ -278,11 +432,17 @@ The printed $169$ is $(r+s)^2$ with the correction $-2rs$ dropped.""",
         context=CTX,
         items=[
             (
-                r"Distributing $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ is said to recover $f^4+4g^4$ after the mixed $f^2g^2$ terms cancel.",
+                r"""For $h\neq 0$, $(8h^{-1}-1)(8h^{-1}+1)=\dfrac{64}{h^2}-1$.""",
                 True,
-                r"""The product is a difference of squares:
-$$(f^2+2g^2)^2-(2fg)^2=f^4+4f^2g^2+4g^4-4f^2g^2=f^4+4g^4.$$
-The two contributions to $f^2g^2$ cancel, leaving no middle even-powered term of that type.""",
+                r"""The product is a difference of squares. Set $A=8h^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(8h^{-1})^2-1=\frac{64}{h^2}-1$$
+
+The reciprocal square carries coefficient $64$ on $h^2$ in the denominator.
+
+The printed coefficient $64$ is the one that survives the expansion.""",
             ),
             (
                 r"Clearing the stacked difference $\dfrac{\dfrac{1}{h}-\dfrac{1}{j}}{\dfrac{1}{h}+\dfrac{1}{j}}$ is said to leave $\dfrac{h-j}{h+j}$ whenever $hj\neq 0$ and $h\neq -j$.",
@@ -299,11 +459,23 @@ $$(2\sqrt{2}+\sqrt{3})^2=8+4\sqrt{6}+3=11+4\sqrt{6}.$$
 Since $2\sqrt{24}=2\sqrt{4\cdot 6}=4\sqrt{6}$, the radicand is exactly $11+2\sqrt{24}$. Both $2\sqrt{2}+\sqrt{3}$ and the principal square root are positive, so they are equal.""",
             ),
             (
-                r"On the half-line $\ell>21$, the quotient $\dfrac{|\ell-21|}{\ell-21}$ equals $1$.",
+                r"""Let $p$ be a nonzero real parameter. Twice the reciprocal of the sum of $p$ and the reciprocal of $p$ equals twice $p$ divided by the sum of the square of $p$ and one.""",
                 True,
-                r"""For $\ell>21$ one has $|\ell-21|=\ell-21$, hence
-$$\frac{|\ell-21|}{\ell-21}=1.$$
-The quotient is the piecewise constant $1$ on that half-line.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $p\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{p+\frac{1}{p}}=\frac{2p}{p^2+1}$$
+
+Twice the reciprocal of $p+\dfrac{1}{p}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2p}{p^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $p\neq 0$.""",
             ),
             (
                 r"Evaluating $m^3+n^3$ from $m+n=11$ and $mn=13$ is claimed to give $1331$.",
@@ -329,11 +501,23 @@ $$2\cdot(-g)\cdot(-h)=+2gh.$$
 The printed $-2$ has the wrong sign. The two minus signs in $-g$ and $-h$ make that cross term positive.""",
             ),
             (
-                r"Cancelling the quadratic ratio $\dfrac{s^2-16}{s^2-s-12}$ down to $\dfrac{s+4}{s+3}$ is claimed for $s\neq 4$ and $s\neq -3$.",
-                True,
-                r"""Factor both polynomials:
-$$s^2-16=(s-4)(s+4),\qquad s^2-s-12=(s-4)(s+3).$$
-For $s\neq 4$ the common factor $s-4$ cancels, leaving $(s+4)/(s+3)$, and $s\neq -3$ keeps the remaining denominator alive.""",
+                r"""Let $k$ be a nonzero real letter. Twice the reciprocal of the sum of $k$ and the reciprocal of $k$ equals $k$ divided by the sum of the square of $k$ and one.""",
+                False,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $k\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{k+\frac{1}{k}}=\frac{2k}{k^2+1}$$
+
+Twice the reciprocal of $k+\dfrac{1}{k}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{k}{k^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Composing the rational powers $(t^{3/4})^{4/3}$ is said to return $t$ whenever $t>0$.",
@@ -373,11 +557,23 @@ $$2\cdot f\cdot(4g)=8fg.$$
 The collected coefficient is $8$.""",
             ),
             (
-                r"Reducing the quadratic $\dfrac{j^2-29j+210}{j-14}$ to $j-14$ for $j\neq 14$ is treated as an identity.",
-                False,
-                r"""The numerator is $(j-14)(j-15)$ because $14+15=29$ and $14\cdot 15=210$. For $j\neq 14$,
-$$\frac{(j-14)(j-15)}{j-14}=j-15.$$
-The printed remainder $j-14$ repeats the cancelled factor instead of the surviving one.""",
+                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals twice $h$ divided by the sum of the square of $h$ and one.""",
+                True,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $h\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
+
+Twice the reciprocal of $h+\dfrac{1}{h}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2h}{h^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $h\neq 0$.""",
             ),
             (
                 r"Simplifying the power $16^{3/2}$ is treated as producing the integer $64$.",
@@ -393,10 +589,35 @@ $$\bigl||0|-13\bigr|=13,\qquad |0|-13=-13.$$
 The identity fails throughout $|k|<13$.""",
             ),
             (
-                r"Given the elementary data $v+w=21$ and $vw=35$, the sum of reciprocals $1/v+1/w$ is evaluated as $3/5$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8v^2b}{4x^2-16}}{\dfrac{4vb}{2x+4}}$ simplifies to $\dfrac{v}{x-2}$ for $x\neq\pm 2$ and $v,b\neq 0$.""",
                 True,
-                r"""$$\frac{1}{v}+\frac{1}{w}=\frac{v+w}{vw}=\frac{21}{35}=\frac{3}{5}.$$
-The reciprocal $35/21$ is a different number.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8v^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4vb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{v}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
         ],
         overview=r"Five independent lines: the $fg$ coefficient $8$ in $(f+4g-h)^2$, a cancelled-factor leftover, $16^{3/2}=64$, nested bars that cannot be stripped, and $1/v+1/w=3/5$ from $v+w=21$, $vw=35$.",
@@ -422,11 +643,17 @@ $$1-\frac{1}{j}=\frac{j-1}{j},\qquad 1+\frac{1}{j}=\frac{j+1}{j},$$
 so the stack equals $(j-1)/(j+1)$. The printed form is the reciprocal of the correct simplification.""",
             ),
             (
-                r"Matching positive roots, $\sqrt{21+8\sqrt{5}}$ is identified with $4+\sqrt{5}$.",
-                True,
-                r"""Square the proposed denesting:
-$$(4+\sqrt{5})^2=16+8\sqrt{5}+5=21+8\sqrt{5}.$$
-Both $4+\sqrt{5}$ and the principal square root are positive, so they are equal. The conjugate $4-\sqrt{5}$ squares to $21-8\sqrt{5}$ instead.""",
+                r"""For $h\neq 0$, $(3h^{-1}-1)(3h^{-1}+1)=\dfrac{1}{9h^2}-1$.""",
+                False,
+                r"""The product is a difference of squares. Set $A=3h^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(3h^{-1})^2-1=\frac{9}{h^2}-1$$
+
+The reciprocal square carries coefficient $9$ on $h^2$ in the denominator.
+
+The reciprocal square carries numerator $9$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Pulling the constant factor, $|-5\ell+15|$ is rewritten as $5|\ell-3|$ for every real $\ell$.",
@@ -451,11 +678,29 @@ The distractor $(u+v)/uv=16/15$ is $1/u+1/v$, a different sum.""",
         context=CTX,
         items=[
             (
-                r"After collecting terms in $(f-g+2h)^2$, the coefficient of $gh$ is read off as $-4$.",
-                True,
-                r"""Twice the $g$--$h$ product is
-$$2\cdot(-g)\cdot(2h)=-4gh.$$
-The collected coefficient is $-4$.""",
+                r"""If $q>0$, then $\dfrac{q^{2/3}\cdot\sqrt[3]{q\sqrt{q}}}{q^{1/6}\cdot\sqrt[6]{q^5}}=\sqrt[3]{q}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$q^{2/3}\cdot(q\cdotq^{1/2})^{1/3}=q^{2/3}\cdotq^{(1+1/2)/3}=q^{2/3}\cdotq^{1/2}$$
+
+Inside the cube root, $q\cdot\sqrt{q}$ becomes a single power of $q$.
+
+Denominator:
+
+$$q^{1/6}\cdot(q^5)^{1/6}=q^{1/6}\cdotq^{5/6}=q$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{q}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Subtracting the swapped pair $\dfrac{k}{m}-\dfrac{m}{k}$ for $km\neq 0$ is said to equal $\dfrac{k^2-m^2}{km}$, and substituting $k=5$, $m=3$ makes both sides equal $16/15$.",
@@ -466,11 +711,35 @@ At $(5,3)$ both sides equal $16/15$:
 $$\frac{5}{3}-\frac{3}{5}=\frac{25-9}{15}=\frac{16}{15}.$$""",
             ),
             (
-                r"Extracting the real cube root $\sqrt[3]{-125j^6}$ is claimed to equal $-5j^2$ for every real $j$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8q^2b}{4x^2-16}}{\dfrac{4qb}{2x+4}}$ simplifies to $\dfrac{q}{x-2}$ for $x\neq\pm 2$ and $q,b\neq 0$.""",
                 True,
-                r"""The real cube root splits:
-$$\sqrt[3]{-125j^6}=\sqrt[3]{-125}\,\sqrt[3]{j^6}=-5\cdot j^2,$$
-because $j^6=(j^2)^3$ with $j^2\ge 0$. No absolute value is needed on $j^2$.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8q^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4qb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{q}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Restricting to negative $s$, the quotient $|s|/s$ is claimed to equal $1$.",
@@ -515,11 +784,29 @@ The common factor $h^2-16$ cancels on the stated domain.""",
 Writing $4j$ fails as soon as $j<0$: at $j=-1$ the left-hand side is $4$ while $4j=-4$.""",
             ),
             (
-                r"On the positive half-line $\ell>0$, the quotient $|2\ell|/\ell$ equals $2$.",
+                r"""If $d>0$, then $\dfrac{d^{2/3}\cdot\sqrt[3]{d\sqrt{d}}}{d^{1/6}\cdot\sqrt[6]{d^5}}=\sqrt[6]{d}$.""",
                 True,
-                r"""For $\ell>0$ one has $|2\ell|=2\ell$, hence
-$$\frac{|2\ell|}{\ell}=2.$$
-The quotient is the piecewise constant $2$ on that half-line (and equals $-2$ on $\ell<0$).""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$d^{2/3}\cdot(d\cdotd^{1/2})^{1/3}=d^{2/3}\cdotd^{(1+1/2)/3}=d^{2/3}\cdotd^{1/2}$$
+
+Inside the cube root, $d\cdot\sqrt{d}$ becomes a single power of $d$.
+
+Denominator:
+
+$$d^{1/6}\cdot(d^5)^{1/6}=d^{1/6}\cdotd^{5/6}=d$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{d}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Factoring the biquadratic $n^4+64$ as $(n^2+4n+8)(n^2-4n+8)$ is offered as an identity.",
@@ -544,11 +831,35 @@ $$2\cdot f\cdot(-4h)=-8fh.$$
 The collected coefficient is $-8$.""",
             ),
             (
-                r"Reducing the sum-of-cubes quotient $\dfrac{n^3+2744}{n+14}$ to $n^2+14n+196$ for $n\neq -14$ is treated as an identity.",
+                r"""The stacked quotient $\dfrac{\dfrac{8x^2b}{4x^2-16}}{\dfrac{4xb}{2x+4}}$ simplifies to $\dfrac{x}{x+2}$ for $x\neq\pm 2$ and $x,b\neq 0$.""",
                 False,
-                r"""Sum of cubes uses
-$$n^3+14^3=(n+14)(n^2-14n+196).$$
-The printed middle sign $+14n$ belongs to a difference of cubes, not a sum. Expanding the printed quadratic against $n+14$ produces extra linear terms instead of cancelling them.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8x^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4xb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{x}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Matching positive roots, $\sqrt{13+4\sqrt{3}}$ is identified with $1+2\sqrt{3}$.",
@@ -557,11 +868,17 @@ The printed middle sign $+14n$ belongs to a difference of cubes, not a sum. Expa
 Both sides are positive, so the principal square roots match. The conjugate $2\sqrt{3}-1$ squares to $13-4\sqrt{3}$.""",
             ),
             (
-                r"For every real $t\neq 13$, the quotient $\dfrac{|t-13|}{|13-t|}$ equals $1$.",
+                r"""For $s\neq 0$, $(2s^{-1}-1)(2s^{-1}+1)=\dfrac{4}{s^2}-1$.""",
                 True,
-                r"""Opposite insides have the same absolute value:
-$$|13-t|=|t-13|,$$
-so the quotient of those two nonnegative quantities is $1$ wherever it is defined.""",
+                r"""The product is a difference of squares. Set $A=2s^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(2s^{-1})^2-1=\frac{4}{s^2}-1$$
+
+The reciprocal square carries coefficient $4$ on $s^2$ in the denominator.
+
+The printed coefficient $4$ is the one that survives the expansion.""",
             ),
             (
                 r"Treating the vanishing of $u+v+w$ at $u=1$, $v=14$, $w=-15$ as forcing $u^3+v^3+w^3=0$ is proposed.",
@@ -606,10 +923,35 @@ $$|k+m|=2,\qquad |k|+|m|=4.$$
 The two sides are not identically equal on that region.""",
             ),
             (
-                r"Given the elementary data $r+s=21$ and $rs=35$, the sum $r^2+s^2$ is evaluated as $371$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8m^2b}{4x^2-16}}{\dfrac{4mb}{2x+4}}$ simplifies to $\dfrac{m}{x-2}$ for $x\neq\pm 2$ and $m,b\neq 0$.""",
                 True,
-                r"""$$r^2+s^2=(r+s)^2-2rs=441-70=371.$$
-Dropping $-2rs$ would have left the distractor $441$.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8m^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4mb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{m}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
         ],
         overview=r"Unlinked claims: grouping $fg+11f+13g+143$, a nested unit remainder $1/(j+1)$, $16^{3/4}=8$ rather than $4$, the triangle inequality on mixed signs, and $r^2+s^2=371$.",
@@ -633,10 +975,29 @@ The printed $+2$ has the wrong sign.""",
                 r"""The numerator is $(j-15)(j-20)$ because $15+20=35$ and $15\cdot 20=300$. For $j\neq 15$ the quotient is $j-20$.""",
             ),
             (
-                r"Extracting a cube root, $\sqrt[3]{8s^6}$ is simplified to $2s^2$ for every real $s$.",
-                True,
-                r"""$$\sqrt[3]{8s^6}=\sqrt[3]{8}\,\sqrt[3]{s^6}=2s^2,$$
-because $s^6=(s^2)^3$ with $s^2\ge 0$.""",
+                r"""For $x\neq\pm 1$, $\dfrac{6x-4}{x^2-1}-\dfrac{1}{1+x}+\dfrac{2}{x-1}-\dfrac{1}{1-x}=\dfrac{-4}{x-1}$.""",
+                False,
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{6x-4}{x^2-1}-\frac{1}{x+1}+\frac{2}{x-1}+\frac{1}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{8 x}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{8 x}{x^{2} - 1}$, not $\dfrac{-4}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Treating the sign quotient $|\ell|/\ell$ as identically $1$ for every $\ell\neq 0$ is proposed.",
@@ -644,9 +1005,29 @@ because $s^6=(s^2)^3$ with $s^2\ge 0$.""",
                 r"""The quotient equals $+1$ on $\ell>0$ and $-1$ on $\ell<0$. At $\ell=-2$ one has $2/(-2)=-1\neq 1$. The identity is only piecewise constant.""",
             ),
             (
-                r"Adding the reciprocals from $k+m=11$ and $km=13$ is claimed to give $1/k+1/m=11/13$.",
-                True,
-                r"""$$\frac{1}{k}+\frac{1}{m}=\frac{k+m}{km}=\frac{11}{13}.$$""",
+                r"""If $k>0$, then $\dfrac{k^{2/3}\cdot\sqrt[3]{k\sqrt{k}}}{k^{1/6}\cdot\sqrt[6]{k^5}}=\sqrt[3]{k}$.""",
+                False,
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$k^{2/3}\cdot(k\cdotk^{1/2})^{1/3}=k^{2/3}\cdotk^{(1+1/2)/3}=k^{2/3}\cdotk^{1/2}$$
+
+Inside the cube root, $k\cdot\sqrt{k}$ becomes a single power of $k$.
+
+Denominator:
+
+$$k^{1/6}\cdot(k^5)^{1/6}=k^{1/6}\cdotk^{5/6}=k$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{k}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
         ],
         overview=r"Five independent lines: a wrong-sign $gh$ coefficient, the remainder $j-20$, $\sqrt[3]{8s^6}=2s^2$, $|\ell|/\ell$ only piecewise $1$, and $1/k+1/m=11/13$.",
@@ -658,11 +1039,23 @@ because $s^6=(s^2)^3$ with $s^2\ge 0$.""",
         context=CTX,
         items=[
             (
-                r"The coefficient of $fg$ in the expansion of $(3f-g-2h)^2$ is recorded as $-6$.",
-                True,
-                r"""Twice the $f$--$g$ product is
-$$2\cdot(3f)\cdot(-g)=-6fg.$$
-The collected coefficient is $-6$.""",
+                r"""Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals $t$ divided by the sum of the square of $t$ and one.""",
+                False,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $t\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{t+\frac{1}{t}}=\frac{2t}{t^2+1}$$
+
+Twice the reciprocal of $t+\dfrac{1}{t}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{t}{t^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Reducing the cubic $\dfrac{w^3-2197}{w-13}$ to $w^2+169$ for $w\neq 13$ is treated as an identity after a check at $w=0$ gives $169$ on both sides.",
@@ -700,11 +1093,29 @@ The printed $169$ is $(r+s)^2$ with $-2rs$ dropped.""",
         context=CTX,
         items=[
             (
-                r"Expanding the square $(f+2g+h)^2$ is written with the coefficient of $gh$ equal to $2$.",
+                r"""For $x\neq\pm 1$, $\dfrac{3x-3}{x^2-1}-\dfrac{4}{1+x}+\dfrac{1}{x-1}-\dfrac{2}{1-x}=\dfrac{1}{x-1}$.""",
                 False,
-                r"""Twice the $g$--$h$ product is
-$$2\cdot(2g)\cdot h=4gh.$$
-The printed $2$ forgot to double. The collected coefficient is $4$.""",
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{2}{1-x}=\frac{2}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{3x-3}{x^2-1}-\frac{4}{x+1}+\frac{1}{x-1}+\frac{2}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{2 \left(x + 2\right)}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{2 \left(x + 2\right)}{x^{2} - 1}$, not $\dfrac{1}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Cancelling a difference of fourth powers, $\dfrac{j^4-1}{j^2-1}$ is said to leave $j^2+1$ whenever $j\neq\pm 1$.",
@@ -719,10 +1130,23 @@ so the quotient is $j^2+1$ on $j^2\neq 1$.""",
 At $s=-2$ the left-hand side is $8$ while $s^3=-8$. The unsigned cube $|s|^3$ is the correct real value.""",
             ),
             (
-                r"Pulling a positive factor, $|2t-32|$ is rewritten as $2|t-16|$ for every real $t$.",
+                r"""Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals twice $t$ divided by the sum of the square of $t$ and one.""",
                 True,
-                r"""$$|2t-32|=|2(t-16)|=2|t-16|.$$
-No sign restriction on $t$ is required.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $t\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{t+\frac{1}{t}}=\frac{2t}{t^2+1}$$
+
+Twice the reciprocal of $t+\dfrac{1}{t}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2t}{t^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $t\neq 0$.""",
             ),
             (
                 r"Completing the square, $k^4+4m^4$ is identified with $(k^2+2m^2)^2$ as an identity in $k$ and $m$.",
@@ -747,9 +1171,17 @@ $$2\cdot f\cdot(-3g)=-6fg.$$
 The collected coefficient is $-6$.""",
             ),
             (
-                r"After cancelling, $\dfrac{h^2-16h+63}{h-7}$ equals $h-9$ for $h\neq 7$.",
-                True,
-                r"""The numerator is $(h-7)(h-9)$ because $7+9=16$ and $7\cdot 9=63$. For $h\neq 7$ the quotient is $h-9$.""",
+                r"""For $w\neq 0$, $(4w^{-1}-1)(4w^{-1}+1)=\dfrac{1}{16w^2}-1$.""",
+                False,
+                r"""The product is a difference of squares. Set $A=4w^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(4w^{-1})^2-1=\frac{16}{w^2}-1$$
+
+The reciprocal square carries coefficient $16$ on $w^2$ in the denominator.
+
+The reciprocal square carries numerator $16$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Denesting the nested radical $\sqrt{16+2\sqrt{15}}$ is claimed to equal $2+\sqrt{15}$.",
@@ -785,10 +1217,23 @@ $$2\cdot f\cdot(-5h)=-10fh.$$
 The printed $+10$ has the wrong sign.""",
             ),
             (
-                r"Rewriting the compound ratio $\dfrac{1+\dfrac{j}{k}}{1-\dfrac{j}{k}}$ as $\dfrac{k-j}{k+j}$ is claimed for $k\neq 0$ and $k\neq j$.",
-                False,
-                r"""$$1+\frac{j}{k}=\frac{k+j}{k},\qquad 1-\frac{j}{k}=\frac{k-j}{k},$$
-so the stack equals $(k+j)/(k-j)$. The printed form is the reciprocal of the correct simplification.""",
+                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals twice $m$ divided by the sum of the square of $m$ and one.""",
+                True,
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $m\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
+
+Twice the reciprocal of $m+\dfrac{1}{m}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{2m}{m^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+Both translations agree, so the statement is an identity on $m\neq 0$.""",
             ),
             (
                 r"Cubing the two-thirds power, $\bigl(t^{2/3}\bigr)^3$ is said to equal $t^2$ for every real $t$.",
@@ -805,11 +1250,17 @@ $$|\ell+15|+|\ell-15|=(\ell+15)+(15-\ell)=30.$$
 The sum is the piecewise constant $30$ on that interval (and equals $2|\ell|$ outside).""",
             ),
             (
-                r"Recording the cubes at $r=3$, $s=8$, $t=-11$ (which sum to $0$) as $r^3+s^3+t^3=0$ is proposed.",
-                False,
-                r"""The letters sum to $0$, so $r^3+s^3+t^3=3rst$:
-$$3\cdot 3\cdot 8\cdot(-11)=-792.$$
-Directly, $27+512-1331=-792$. The cubes do not vanish.""",
+                r"""For $w\neq 0$, $(3w^{-1}-1)(3w^{-1}+1)=\dfrac{9}{w^2}-1$.""",
+                True,
+                r"""The product is a difference of squares. Set $A=3w^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(3w^{-1})^2-1=\frac{9}{w^2}-1$$
+
+The reciprocal square carries coefficient $9$ on $w^2$ in the denominator.
+
+The printed coefficient $9$ is the one that survives the expansion.""",
             ),
         ],
         overview=r"Unlinked claims: a wrong-sign $fh$ coefficient, a reciprocal trap in $(1+j/k)/(1-j/k)$, $(t^{2/3})^3=t^2$, the piecewise constant $30$ of $|\ell\pm 15|$ inside $(-15,15)$, and $r^3+s^3+t^3=-792$ at $(3,8,-11)$.",
@@ -833,10 +1284,23 @@ The two minus signs make that cross term positive, with coefficient $2$.""",
                 r"""The numerator is $(m-7)(m-8)$ because $7+8=15$ and $7\cdot 8=56$. For $m\neq 7$ the quotient is $m-8$. The printed remainder repeats the cancelled factor.""",
             ),
             (
-                r"Simplifying the power $16^{5/4}$ is treated as producing the integer $8$.",
+                r"""Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals $h$ divided by the sum of the square of $h$ and one.""",
                 False,
-                r"""$$16^{5/4}=(2^4)^{5/4}=2^5=32.$$
-The printed $8$ is $16^{3/4}$, a different rational power.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $h\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{h+\frac{1}{h}}=\frac{2h}{h^2+1}$$
+
+Twice the reciprocal of $h+\dfrac{1}{h}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{h}{h^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Writing the quotient $\bigl|\dfrac{r}{s}\bigr|$ as $\dfrac{|r|}{|s|}$ for $s\neq 0$ is accepted.",
@@ -861,11 +1325,35 @@ The printed $121$ is $(k+m)^2$ with $-2km$ dropped.""",
         context=CTX,
         items=[
             (
-                r"Expanding the square $(f-g+3h)^2$ is written with the coefficient of $fh$ equal to $3$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8v^2b}{4x^2-16}}{\dfrac{4vb}{2x+4}}$ simplifies to $\dfrac{v}{x+2}$ for $x\neq\pm 2$ and $v,b\neq 0$.""",
                 False,
-                r"""Twice the $f$--$h$ product is
-$$2\cdot f\cdot(3h)=6fh.$$
-The printed $3$ forgot to double.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8v^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4vb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{v}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Cancelling a difference of squares, $\dfrac{j^2-121}{j-11}$ is said to leave $j+11$ for $j\neq 11$, and substituting $j=0$ recovers $11$ on both sides.",
@@ -874,10 +1362,17 @@ The printed $3$ forgot to double.""",
 so the quotient is $j+11$ for $j\neq 11$. At $j=0$ the original fraction is $(-121)/(-11)=11$, matching the reduced value.""",
             ),
             (
-                r"Matching positive roots, $\sqrt{16+2\sqrt{15}}$ is identified with $1+\sqrt{15}$.",
+                r"""For $q\neq 0$, $(3q^{-1}-1)(3q^{-1}+1)=\dfrac{9}{q^2}-1$.""",
                 True,
-                r"""$$(1+\sqrt{15})^2=1+2\sqrt{15}+15=16+2\sqrt{15}.$$
-Both sides are positive, so the principal square roots match.""",
+                r"""The product is a difference of squares. Set $A=3q^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(3q^{-1})^2-1=\frac{9}{q^2}-1$$
+
+The reciprocal square carries coefficient $9$ on $q^2$ in the denominator.
+
+The printed coefficient $9$ is the one that survives the expansion.""",
             ),
             (
                 r"Dropping the bars around $2\ell+16$ and writing $2\ell+16$ for every real $\ell$ is offered as an identity.",
@@ -924,9 +1419,35 @@ The printed form is the reciprocal of the correct simplification.""",
 The genuine denesting is $\sqrt{11}+\sqrt{5}$, whose square is $11+2\sqrt{55}+5=16+2\sqrt{55}$.""",
             ),
             (
-                r"Restricting to positive $\ell$, the quotient $\dfrac{|\ell-21|}{21-\ell}$ is claimed to equal $1$.",
-                False,
-                r"""On $0<\ell<21$ one has $|\ell-21|=21-\ell$, so the quotient is $1$. But on $\ell>21$ one has $|\ell-21|=\ell-21$ and $21-\ell=-(\ell-21)$, so the quotient is $-1$. The printed identity fails on the unbounded part of $\ell>0$.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8n^2b}{4x^2-16}}{\dfrac{4nb}{2x+4}}$ simplifies to $\dfrac{n}{x-2}$ for $x\neq\pm 2$ and $n,b\neq 0$.""",
+                True,
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8n^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4nb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{n}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Given the pair $u+v=14$ and $uv=13$, the sum $u^2+v^2$ is evaluated as $170$.",
@@ -950,9 +1471,17 @@ $$2\cdot(2f)\cdot(2g)=8fg.$$
 The printed $4$ is the product of the visible coefficients without the extra factor $2$ from the square.""",
             ),
             (
-                r"Cancelling a quadratic, $\dfrac{h^2-21h+104}{h-13}$ is said to leave $h-8$ for $h\neq 13$.",
-                True,
-                r"""The numerator is $(h-13)(h-8)$ because $13+8=21$ and $13\cdot 8=104$. For $h\neq 13$ the quotient is $h-8$.""",
+                r"""For $q\neq 0$, $(6q^{-1}-1)(6q^{-1}+1)=\dfrac{1}{36q^2}-1$.""",
+                False,
+                r"""The product is a difference of squares. Set $A=6q^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(6q^{-1})^2-1=\frac{36}{q^2}-1$$
+
+The reciprocal square carries coefficient $36$ on $q^2$ in the denominator.
+
+The reciprocal square carries numerator $36$, not $1$. Swapping numerator and denominator is the last-step error.""",
             ),
             (
                 r"Simplifying a monomial radical, $(16k^4)^{1/4}$ is rewritten as $2k$ for every real $k$.",
@@ -961,11 +1490,23 @@ The printed $4$ is the product of the visible coefficients without the extra fac
 Writing $2k$ fails for $k<0$. At $k=-1$ the left-hand side is $2$ while $2k=-2$.""",
             ),
             (
-                r"Claiming the absolute value $|\ell^2+14|$ can equal $0$ for some real $\ell$ is proposed.",
+                r"""Let $p$ be a nonzero real parameter. Twice the reciprocal of the sum of $p$ and the reciprocal of $p$ equals $p$ divided by the sum of the square of $p$ and one.""",
                 False,
-                r"""For every real $\ell$ one has $\ell^2+14\ge 14>0$, hence
-$$|\ell^2+14|=\ell^2+14\ge 14.$$
-The absolute value never hits zero.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $p\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{p+\frac{1}{p}}=\frac{2p}{p^2+1}$$
+
+Twice the reciprocal of $p+\dfrac{1}{p}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{p}{p^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Adding the reciprocals from $r+s=13$ and $rs=21$ is claimed to give $1/r+1/s=13/21$.",
@@ -1010,11 +1551,17 @@ because $s^9=(s^3)^3$ and the real cube root of $-8$ is $-2$.""",
 $$|-3|=3\neq -3.$$""",
             ),
             (
-                r"Evaluating the cubes at $r=5$, $u=11$, $w=-16$ (which sum to $0$) is claimed to give $r^3+u^3+w^3=-2640$.",
+                r"""For $q\neq 0$, $(5q^{-1}-1)(5q^{-1}+1)=\dfrac{25}{q^2}-1$.""",
                 True,
-                r"""First $5+11-16=0$, so $r^3+u^3+w^3=3ruw$. Then
-$$3\cdot 5\cdot 11\cdot(-16)=-2640.$$
-Directly, $125+1331-4096=-2640$. The sum of cubes is $3ruw$, not $0$.""",
+                r"""The product is a difference of squares. Set $A=5q^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.
+
+Apply $A^2-1$:
+
+$$(5q^{-1})^2-1=\frac{25}{q^2}-1$$
+
+The reciprocal square carries coefficient $25$ on $q^2$ in the denominator.
+
+The printed coefficient $25$ is the one that survives the expansion.""",
             ),
         ],
         overview=r"Five unlinked lines: a forgotten doubling of $fh$, opposite linear fractions summing to $1$ not $0$, $\sqrt[3]{-8s^9}=-2s^3$, $|-\ell|=|\ell|$, and $r^3+u^3+w^3=3ruw$ at $(5,11,-16)$.",
@@ -1040,10 +1587,29 @@ $$\frac{(n+11)-(n-11)}{n^2-121}=\frac{22}{n^2-121}.$$
 The printed numerator $11$ is half of the correct numerator.""",
             ),
             (
-                r"Denesting the nested radical $\sqrt{21+8\sqrt{5}}$ is claimed to equal $4-\sqrt{5}$.",
+                r"""If $b>0$, then $\dfrac{b^{2/3}\cdot\sqrt[3]{b\sqrt{b}}}{b^{1/6}\cdot\sqrt[6]{b^5}}=\sqrt[3]{b}$.""",
                 False,
-                r"""$$(4-\sqrt{5})^2=16-8\sqrt{5}+5=21-8\sqrt{5}.$$
-The printed conjugate denests $\sqrt{21-8\sqrt{5}}$, not the plus form. The genuine plus denesting is $4+\sqrt{5}$.""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$b^{2/3}\cdot(b\cdotb^{1/2})^{1/3}=b^{2/3}\cdotb^{(1+1/2)/3}=b^{2/3}\cdotb^{1/2}$$
+
+Inside the cube root, $b\cdot\sqrt{b}$ becomes a single power of $b$.
+
+Denominator:
+
+$$b^{1/6}\cdot(b^5)^{1/6}=b^{1/6}\cdotb^{5/6}=b$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{b}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The reduced power is not the printed radical; the mismatch appears only after all exponents are combined.""",
             ),
             (
                 r"Opposite linear forms satisfy $|3\ell-21|=|21-3\ell|$ for every real $\ell$.",
@@ -1052,10 +1618,35 @@ The printed conjugate denests $\sqrt{21-8\sqrt{5}}$, not the plus form. The genu
 $$|21-3\ell|=|-(3\ell-21)|=|3\ell-21|.$$""",
             ),
             (
-                r"Rewriting the swapped-ratio sum $k/m+m/k$ from $k+m=15$ and $km=21$ as $15/21$ is treated as correct.",
+                r"""The stacked quotient $\dfrac{\dfrac{8q^2b}{4x^2-16}}{\dfrac{4qb}{2x+4}}$ simplifies to $\dfrac{q}{x+2}$ for $x\neq\pm 2$ and $q,b\neq 0$.""",
                 False,
-                r"""$$\frac{k}{m}+\frac{m}{k}=\frac{k^2+m^2}{km}=\frac{(k+m)^2-2km}{km}=\frac{225-42}{21}=\frac{183}{21}=\frac{61}{7}.$$
-The printed $15/21$ is $1/k+1/m$, a different sum.""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8q^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4qb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{q}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
         ],
         overview=r"Unlinked claims: the $gh$ coefficient $-8$ in $(f-4g+h)^2$, a halved numerator $11$ instead of $22$, the wrong conjugate of $\sqrt{21+8\sqrt{5}}$, $|3\ell-21|=|21-3\ell|$, and $k/m+m/k=61/7$ rather than $5/7$.",
@@ -1067,11 +1658,35 @@ The printed $15/21$ is $1/k+1/m$, a different sum.""",
         context=CTX,
         items=[
             (
-                r"Expanding the square $(3f-2g+h)^2$ is written with the coefficient of $fg$ equal to $-6$.",
-                False,
-                r"""Twice the $f$--$g$ product is
-$$2\cdot(3f)\cdot(-2g)=-12fg.$$
-The printed $-6$ is only half of the genuine coefficient.""",
+                r"""The stacked quotient $\dfrac{\dfrac{8h^2b}{4x^2-16}}{\dfrac{4hb}{2x+4}}$ simplifies to $\dfrac{h}{x-2}$ for $x\neq\pm 2$ and $h,b\neq 0$.""",
+                True,
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8h^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4hb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{h}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+After cancelling $(x+2)$ the surviving linear factor is $(x-2)$.""",
             ),
             (
                 r"Cancelling a quadratic, $\dfrac{k^2-29k+210}{k-15}$ is said to leave $k-14$ for $k\neq 15$.",
@@ -1109,11 +1724,29 @@ Directly, $216+343-2197=-1638$. The cubes equal $3rst$, not $0$.""",
         context=CTX,
         items=[
             (
-                r"The coefficient of $fh$ in the expansion of $(2f-g-2h)^2$ is recorded as $-8$.",
+                r"""If $q>0$, then $\dfrac{q^{2/3}\cdot\sqrt[3]{q\sqrt{q}}}{q^{1/6}\cdot\sqrt[6]{q^5}}=\sqrt[6]{q}$.""",
                 True,
-                r"""Twice the $f$--$h$ product is
-$$2\cdot(2f)\cdot(-2h)=-8fh.$$
-The collected coefficient is $-8$.""",
+                r"""Every radical in the quotient must be written as a fractional exponent before powers are added or subtracted. Work the numerator and denominator separately.
+
+Numerator:
+
+$$q^{2/3}\cdot(q\cdotq^{1/2})^{1/3}=q^{2/3}\cdotq^{(1+1/2)/3}=q^{2/3}\cdotq^{1/2}$$
+
+Inside the cube root, $q\cdot\sqrt{q}$ becomes a single power of $q$.
+
+Denominator:
+
+$$q^{1/6}\cdot(q^5)^{1/6}=q^{1/6}\cdotq^{5/6}=q$$
+
+The sixth-root factor collapses to one power of the base.
+
+Quotient:
+
+$$\sqrt[6]{q}$$
+
+Subtract exponents only after both sides use the same base and fractional form.
+
+The fully reduced power matches the printed right-hand side.""",
             ),
             (
                 r"Clearing a difference of reciprocal squares, $\dfrac{1}{j^2}-\dfrac{1}{k^2}$ is said to equal $\dfrac{k-j}{j^2k^2}$ whenever $jk\neq 0$.",
@@ -1129,10 +1762,35 @@ The printed numerator $k-j$ drops the factor $k+j$.""",
 $$\bigl(t^{3/2}\bigr)^{2/3}=t^{(3/2)\cdot(2/3)}=t^1=t.$$""",
             ),
             (
-                r"Subtracting two absolute values, $|\ell+11|-|\ell|$ is claimed to equal $11$ for every real $\ell$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8m^2b}{4x^2-16}}{\dfrac{4mb}{2x+4}}$ simplifies to $\dfrac{m}{x+2}$ for $x\neq\pm 2$ and $m,b\neq 0$.""",
                 False,
-                r"""The reverse triangle inequality only gives $\bigl||\ell+11|-|\ell|\bigr|\le 11$. Equality $|\ell+11|-|\ell|=11$ holds for $\ell\ge 0$ but fails for $\ell=-12$:
-$$|-1|-|-12|=1-12=-11\neq 11.$$""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8m^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4mb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{m}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Given the elementary data $u+v=21$ and $uv=16$, the sum $u^2+v^2$ is claimed to equal $441$.",
@@ -1157,11 +1815,29 @@ $$2\cdot(3g)\cdot(-2h)=-12gh.$$
 The printed $-6$ is only half of the genuine coefficient.""",
             ),
             (
-                r"Reducing the sum-of-cubes quotient $\dfrac{h^3+1331}{h+11}$ to $h^2+11h+121$ for $h\neq -11$ is treated as an identity.",
+                r"""For $x\neq\pm 1$, $\dfrac{6x-4}{x^2-1}-\dfrac{1}{1+x}+\dfrac{2}{x-1}-\dfrac{1}{1-x}=\dfrac{4}{x-1}$.""",
                 False,
-                r"""Sum of cubes uses
-$$h^3+11^3=(h+11)(h^2-11h+121).$$
-The printed middle sign $+11h$ belongs to a difference of cubes. Expanding the printed quadratic against $h+11$ fails to cancel the mixed terms.""",
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{6x-4}{x^2-1}-\frac{1}{x+1}+\frac{2}{x-1}+\frac{1}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{8 x}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{8 x}{x^{2} - 1}$, not $\dfrac{4}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
             (
                 r"Denesting the nested radical $\sqrt{13+2\sqrt{30}}$ is claimed to equal $\sqrt{10}-\sqrt{3}$.",
@@ -1200,11 +1876,35 @@ $$2\cdot(-2g)\cdot(-3h)=12gh.$$
 The two minus signs make that cross term positive, with coefficient $12$.""",
             ),
             (
-                r"Simplifying the stacked ratio $\dfrac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}$ to $\dfrac{j-1}{j+1}$ is claimed for every real $j\neq 0$.",
+                r"""The stacked quotient $\dfrac{\dfrac{8h^2b}{4x^2-16}}{\dfrac{4hb}{2x+4}}$ simplifies to $\dfrac{h}{x+2}$ for $x\neq\pm 2$ and $h,b\neq 0$.""",
                 False,
-                r"""Clear the inner layer over the common denominator $j$:
-$$\frac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}=\frac{(j^2-1)/j}{(j^2+1)/j}=\frac{j^2-1}{j^2+1}.$$
-The printed $(j-1)/(j+1)$ is a different rational function (and would require cancelling $j+1$ from $j^2-1=(j-1)(j+1)$ against a denominator $j+1$, not $j^2+1$).""",
+                r"""The stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\pm 2)$ factor.
+
+Difference of squares:
+
+$$4x^2-16=4(x-2)(x+2)$$
+
+The quadratic denominator splits into the two linear factors the claim will test.
+
+Linear factor:
+
+$$2x+4=2(x+2)$$
+
+The inner denominator shares the $(x+2)$ factor with the quadratic.
+
+Rewrite the division:
+
+$$\frac{8h^2b}{4(x-2)(x+2)}\cdot\frac{2(x+2)}{4hb}$$
+
+Division becomes multiplication by the reciprocal; like factors can now cancel.
+
+Reduced form:
+
+$$\frac{h}{x - 2}$$
+
+Only the surviving linear factor in the denominator determines the final claim.
+
+Cancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder.""",
             ),
             (
                 r"Composing the fifth-power stack $(w^{2/5})^{5/2}$ is said to return $w$ whenever $w>0$.",
@@ -1218,10 +1918,29 @@ $$\bigl(w^{2/5}\bigr)^{5/2}=w^{(2/5)\cdot(5/2)}=w^1=w.$$""",
                 r"""$|2\ell|/\ell=2\ell/\ell=2$ only on $\ell>0$. On $\ell<0$ one has $|2\ell|=-2\ell$, so the quotient is $-2$. At $\ell=-3$ the value is $6/(-3)=-2\neq 2$.""",
             ),
             (
-                r"Reading the distance $|k-m|$ from $k+m=16$ and $km=35$ as $6$ is treated as correct.",
+                r"""For $x\neq\pm 1$, $\dfrac{2x-2}{x^2-1}-\dfrac{1}{1+x}+\dfrac{1}{x-1}-\dfrac{1}{1-x}=\dfrac{2}{x-1}$.""",
                 False,
-                r"""$$(k-m)^2=(k+m)^2-4km=256-140=116,$$
-so $|k-m|=\sqrt{116}=2\sqrt{29}$, not $6$. The printed $6$ is not the square root of $116$.""",
+                r"""The claim is an identity away from $x=\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\dfrac{1}{1-x}$ as $-\dfrac{1}{x-1}$ before combining like pieces.
+
+Rewrite the last term:
+
+$$-\frac{1}{1-x}=\frac{1}{x-1}$$
+
+The reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.
+
+Clear denominators:
+
+$$\frac{2x-2}{x^2-1}-\frac{1}{x+1}+\frac{1}{x-1}+\frac{1}{x-1}$$
+
+All four pieces now share the same quadratic denominator or a factor of it.
+
+Simplified left-hand side:
+
+$$\frac{3 x + 1}{x^{2} - 1}$$
+
+Only after this full reduction can the result be compared with the claimed single fraction.
+
+After the full clear the left-hand side is $\frac{3 x + 1}{x^{2} - 1}$, not $\dfrac{2}{x-1}$. The discrepancy appears only at the last coefficient.""",
             ),
         ],
         overview=r"Independent claims: the $gh$ coefficient $12$ in $(f-2g-3h)^2$, $(j-1/j)/(j+1/j)=(j^2-1)/(j^2+1)$, $(w^{2/5})^{5/2}=w$ for $w>0$, $|2\ell|/\ell$ only piecewise $2$, and $|k-m|=2\sqrt{29}$ rather than $6$.",
@@ -1246,12 +1965,23 @@ The printed $-10$ is only half of the genuine coefficient.""",
 $$\frac{s(s^2-35)}{s^2-35}=s\qquad(s^2\neq 35).$$""",
             ),
             (
-                r"Denesting the nested radical $\sqrt{21+12\sqrt{3}}$ is claimed to equal $2\sqrt{3}-3$.",
+                r"""Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals $m$ divided by the sum of the square of $m$ and one.""",
                 False,
-                r"""$$(3+2\sqrt{3})^2=9+12\sqrt{3}+12=21+12\sqrt{3}.$$
-The printed conjugate squares to the minus companion:
-$$(2\sqrt{3}-3)^2=12-12\sqrt{3}+9=21-12\sqrt{3}.$$
-Although $2\sqrt{3}-3$ is positive, it denests $\sqrt{21-12\sqrt{3}}$, not the plus form. The genuine plus denesting is $3+2\sqrt{3}$.""",
+                r"""The statement is entirely worded. Translate each English phrase into symbols for $m\neq 0$ before comparing the two sides.
+
+Left-hand wording:
+
+$$\frac{2}{m+\frac{1}{m}}=\frac{2m}{m^2+1}$$
+
+Twice the reciprocal of $m+\dfrac{1}{m}$ clears to a single rational expression.
+
+Right-hand wording:
+
+$$\frac{m}{m^2+1}$$
+
+The claim's right side must be read from the same verbal description.
+
+The right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols.""",
             ),
             (
                 r"Adding opposite quotients, $|\ell|/\ell+|\ell|/(-\ell)$ equals $0$ for every $\ell\neq 0$.",
