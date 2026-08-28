@@ -12,9 +12,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After rewriting $(x^{-2})^{-3}$ for $x\neq 0$, a clerk compares it with the product $x^{-2}x^{-3}$ and reports that both leave $x^{-5}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x^{-2})^{-3}$.""",
-                False,
-                
+                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $1+\sqrt{13}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                True,
+                r"""Square the candidate conjugate:
+
+Square:
+
+$$(1+\sqrt{13})^2=1+2\sqrt{13}+13=14+2\sqrt{13}$$
+
+Both $1+\sqrt{13}$ and the principal square root are positive, so they coincide.""",
             ),
             (
                 r"On $w\neq 0$, simplifying $w^{5}w^{-2}/w^{-1}$ is claimed to leave $w^{4}$. A marker then substitutes $w=2$ and ticks $16$.",
@@ -22,9 +28,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $t>0$, a note treats $((t^{2})^{3})^{1/2}$ as $t^{5/2}$, adding $2+3$ before taking the outer half-power — with the intermediate display still carrying $((t^{2})^{3})^{1/2}$.""",
-                False,
-                
+                r"""On the nonnegative reals, the product identity $\sqrt{2}\sqrt{8}=\sqrt{16}=4$ is accepted; a competing note that would replace the product by $\sqrt{2}+\sqrt{8}$ is rejected.""",
+                True,
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{2}\sqrt{8}=\sqrt{16}=4$$
+
+By contrast $(\sqrt{2}+\sqrt{8})^2=2+8+2\sqrt{16}\neq 16$ in general.""",
             ),
             (
                 r"Provided $a\neq 0$, rewriting $a^{-4}(a^{2})^{2}$ as $1$ is accepted, because the second factor is said to cancel the first.",
@@ -61,9 +73,15 @@ TASKS = [
                 
             ),
             (
-                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Someone records $\dfrac{s^{6}}{s^{-1}s^{2}}$ as $s^{3}$ whenever $s\neq 0$, treating both denominator exponents as minuses. The margin note closes without expanding the general case.""",
-                False,
-                
+                r"""On the nonnegative reals, the product identity $\sqrt{4}\sqrt{9}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{4}+\sqrt{9}$ is rejected.""",
+                True,
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{4}\sqrt{9}=\sqrt{36}=6$$
+
+By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.""",
             ),
             (
                 r"On $u\neq 0$, rewriting $\dfrac{u^{-1}+u^{-2}}{u^{-2}}$ as $u+1$ is accepted after a common denominator is cleared in the numerator.",
@@ -85,9 +103,15 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Taking nonnegative letters, the product $\sqrt{12}\sqrt{3}$ is rewritten as $6$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""On the nonnegative reals, the product identity $\sqrt{8}\sqrt{2}=\sqrt{16}=4$ is accepted; a competing note that would replace the product by $\sqrt{8}+\sqrt{2}$ is rejected.""",
                 True,
-                
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{8}\sqrt{2}=\sqrt{16}=4$$
+
+By contrast $(\sqrt{8}+\sqrt{2})^2=8+2+2\sqrt{16}\neq 16$ in general.""",
             ),
             (
                 r"On $c,d\ge 0$, the product rule $\sqrt{c}\sqrt{d}=\sqrt{cd}$ is printed as valid.",
@@ -95,9 +119,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Combining radicands, $\sqrt{18}+\sqrt{32}$ is claimed to equal $\sqrt{50}$. Any remaining letters are declared free once that one check has passed.""",
-                False,
-                
+                r"""On $q\neq 0$, simplifying $\dfrac{q^{5}q^{-2}}{q^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $q^{4}$.""",
+                True,
+                r"""Numerator:
+
+$$q^{5}q^{-2}=q^{3}$$
+
+Quotient:
+
+$$\frac{q^{3}}{q^{-1}}=q^{4}$$""",
             ),
             (
                 r"A booklet claims $\sqrt{27}\sqrt{3}=9$ as positive square roots.",
@@ -134,9 +164,19 @@ TASKS = [
                 
             ),
             (
-                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: On $c,d\neq 0$, rewriting $\bigl((cd)^{3}\bigr)^{0}(c^{0}+d^{0})$ as $2$ is accepted, with the added remark that domain caveats may be left implicit once written once.""",
+                r"""Whenever $a>0$, a note treats $((a^{2})^{3})^{1/2}$ as $a^{3}$, multiplying exponents inward before the outer root.""",
                 True,
-                
+                r"""Power of a power multiplies, working inside out:
+
+Inner:
+
+$$(a^{2})^{3}=a^{6}$$
+
+Outer root:
+
+$$(a^{6})^{1/2}=a^{3}$$
+
+The printed target matches.""",
             ),
         ],
         overview=r"Five independent zero-exponent claims. On a nonzero base, $a^{0}=1$. A negative power of $0$ is undefined; $(2b)^{0}$ is not $2b^{0}$.",
@@ -158,9 +198,17 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Evaluating $8^{2/3}\cdot 4^{-1/2}$ as the integer $4$ is entered on a mark scheme — with the intermediate display still carrying $4$.""",
-                False,
-                
+                r"""For $w\neq 0$, rewriting $(w^{-2})^{-3}$ as $w^{6}$ is accepted; comparing with the product $w^{-2}w^{-3}=w^{-5}$ shows the two rules diverge.""",
+                True,
+                r"""Power of a power:
+
+$$(w^{-2})^{-3}=w^{6}$$
+
+Product rule:
+
+$$w^{-2}w^{-3}=w^{-5}$$
+
+The stacked form is $$w^{6}$$; the product is different.""",
             ),
             (
                 r"Extracting $\sqrt[3]{54}$ as $3\sqrt[3]{2}$ is claimed in the reals.",
@@ -168,9 +216,15 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Simplifying $\sqrt{48}$ to $6\sqrt{2}$ as a positive square root is accepted, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $\sqrt{13}-1$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
                 False,
-                
+                r"""Square the printed difference:
+
+Square:
+
+$$(\sqrt{13}-1)^2=13-2\sqrt{13}+1=14-2\sqrt{13}$$
+
+The cross term has the wrong sign for $\sqrt{14+2\sqrt{13}}$.""",
             ),
         ],
         overview=r"Five independent numerical powers. $27^{2/3}=9$ and $\sqrt[3]{54}=3\sqrt[3]{2}$, but $32^{2/5}=4$ and $8^{2/3}\cdot 4^{-1/2}=2$.",
@@ -182,9 +236,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $\sqrt{50}-\sqrt{18}$ as positive square roots is recorded as $2\sqrt{2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt{50}-\sqrt{18}$.""",
+                r"""On $q\neq 0$, simplifying $\dfrac{q^{5}q^{-2}}{q^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $q^{4}$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Numerator:
+
+$$q^{5}q^{-2}=q^{3}$$
+
+Quotient:
+
+$$\frac{q^{3}}{q^{-1}}=q^{4}$$
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Reducing $\sqrt{12}+\sqrt{27}$ is claimed to equal $\sqrt{39}$.",
@@ -216,9 +278,13 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Raising the quotient $(x/y)^{-2}$ for $x,y>0$ is recorded as $(y/x)^{2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x/y)^{-2}$.""",
-                True,
-                
+                r"""Denesting $\sqrt{16+6\sqrt{7}}$ is claimed to produce $\sqrt{7}-3$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                False,
+                r"""Square:
+
+$$(\sqrt{7}-3)^2=7-6\sqrt{7}+9=16-6\sqrt{7}$$
+
+Wrong sign; also negative.""",
             ),
             (
                 r"A mistaken swap writes $(p/q)^{-3}=p^{3}/q^{3}$ for $p,q>0$.",
@@ -231,9 +297,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Inverting first, $(a^{-1}/b^{-1})^{2}$ is claimed to equal $a^{2}/b^{2}$ for $a,b\neq 0$. Any remaining letters are declared free once that one check has passed.""",
+                r"""Denesting $\sqrt{16+6\sqrt{7}}$ is claimed to produce $\sqrt{7}-3$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{7}-3)^2=7-6\sqrt{7}+9=16-6\sqrt{7}$$
+
+Wrong sign; also negative.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"On $c,d>0$, rewriting $(c/d)^{0}=0$ is printed as valid.",
@@ -255,9 +327,13 @@ TASKS = [
                 
             ),
             (
-                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Splitting a sum, $\sqrt[3]{27}+\sqrt[3]{1}$ is claimed to equal $\sqrt[3]{28}$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
+                r"""Denesting $\sqrt{9+4\sqrt{5}}$ is claimed to produce $\sqrt{5}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{5}-2)^2=5-4\sqrt{5}+4=9-4\sqrt{5}$$
+
+Wrong sign.""",
             ),
             (
                 r"Extracting $\sqrt[3]{54}=3\sqrt[3]{2}$ in the reals is accepted.",
@@ -289,9 +365,15 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Clearing $y^{3/2}/y^{-3/2}$ for $y>0$ is claimed to leave $y^{0}$. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""A candidate replaces $\sqrt{5+b}$ by $\sqrt{5}+\sqrt{5}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$.""",
                 False,
-                
+                r"""Square roots do not split over addition:
+
+Square the sum:
+
+$$(\sqrt{5}+\sqrt{5})^2=5+5+2\sqrt{25}$$
+
+For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.""",
             ),
             (
                 r"Working with $z>0$, the stack $(z^{1/3})^{-3/2}$ is rewritten as $z^{-1/2}$.",
@@ -304,9 +386,17 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: On $t>0$, the product $t^{-1/2}t^{3/2}$ is entered as $t$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
-                True,
-                
+                r"""A candidate replaces $\sqrt{5+b}$ by $\sqrt{5}+\sqrt{5}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                False,
+                r"""Square roots do not split over addition:
+
+Square the sum:
+
+$$(\sqrt{5}+\sqrt{5})^2=5+5+2\sqrt{25}$$
+
+For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
         ],
         overview=r"Five independent fractional-power calculations. Inside the mixed quotient the exponents total $1$, and the outer square makes $x^{2}$. Stacking multiplies; a quotient subtracts.",
@@ -328,9 +418,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Matching positive roots, $\sqrt{18+2\sqrt{45}}$ is rewritten as $\sqrt{15}+\sqrt{3}$ — with the intermediate display still carrying $\sqrt{15}+\sqrt{3}$.""",
+                r"""On the nonnegative reals, the product identity $\sqrt{2}\sqrt{18}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{2}+\sqrt{18}$ is rejected.""",
                 True,
-                
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{2}\sqrt{18}=\sqrt{36}=6$$
+
+By contrast $(\sqrt{2}+\sqrt{18})^2=2+18+2\sqrt{36}\neq 36$ in general.""",
             ),
             (
                 r"A naive split writes $\sqrt{12+2\sqrt{32}}=\sqrt{12}+\sqrt{32}$ as positive square roots.",
@@ -352,9 +448,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Rationalising $6/(\sqrt{7}-2)$ is recorded as $2(\sqrt{7}+2)$ in the positive reals. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $6/(\sqrt{7}-2)$.""",
-                True,
-                
+                r"""A candidate replaces $\sqrt{4+b}$ by $\sqrt{4}+\sqrt{4}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$.""",
+                False,
+                r"""Square roots do not split over addition:
+
+Square the sum:
+
+$$(\sqrt{4}+\sqrt{4})^2=4+4+2\sqrt{16}$$
+
+For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.""",
             ),
             (
                 r"Clearing $1/(\sqrt{5}-\sqrt{3})$ is claimed to equal $(\sqrt{5}-\sqrt{3})/2$, the conjugate already in the denominator.",
@@ -362,9 +464,17 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: The product $(\sqrt{12}-\sqrt{3})(\sqrt{12}+\sqrt{3})$ is rewritten as $9$ — with the intermediate display still carrying $9$.""",
+                r"""For $x\neq 0$, rewriting $(x^{-2})^{-3}$ as $x^{6}$ is accepted; comparing with the product $x^{-2}x^{-3}=x^{-5}$ shows the two rules diverge.""",
                 True,
-                
+                r"""Power of a power:
+
+$$(x^{-2})^{-3}=x^{6}$$
+
+Product rule:
+
+$$x^{-2}x^{-3}=x^{-5}$$
+
+The stacked form is $$x^{6}$$; the product is different.""",
             ),
             (
                 r"Someone rationalises $4/(\sqrt{18}-\sqrt{8})$ and claims the value $\sqrt{18}+\sqrt{8}$ without dividing by the difference of squares.",
@@ -401,9 +511,15 @@ TASKS = [
                 
             ),
             (
-                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: A candidate writes $\bigl(u^{1/2}-2u^{-1/2}\bigr)^{2}=u+4/u$ for $u>0$, dropping $-4$. The claim is filed as settled for every admissible value of the letters.""",
-                False,
-                
+                r"""On $w\neq 0$, simplifying $\dfrac{w^{5}w^{-2}}{w^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $w^{4}$.""",
+                True,
+                r"""Numerator:
+
+$$w^{5}w^{-2}=w^{3}$$
+
+Quotient:
+
+$$\frac{w^{3}}{w^{-1}}=w^{4}$$""",
             ),
             (
                 r"Working with $w>0$, $\bigl(\sqrt{w}-1/\sqrt{w}\bigr)^{2}$ is rewritten as $(w-1)^{2}/w$.",
@@ -425,9 +541,19 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Under the hypothesis $3^{n}=2$, the power $9^{n}$ is recorded as $4$. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""Whenever $q>0$, a note treats $((q^{2})^{3})^{1/2}$ as $q^{3}$, multiplying exponents inward before the outer root.""",
                 True,
-                
+                r"""Power of a power multiplies, working inside out:
+
+Inner:
+
+$$(q^{2})^{3}=q^{6}$$
+
+Outer root:
+
+$$(q^{6})^{1/2}=q^{3}$$
+
+The printed target matches.""",
             ),
             (
                 r"From $2^{k}=5$, a student concludes $2^{3k}=15$.",
@@ -435,9 +561,13 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Provided $2^{m}=3$, rewriting $8^{m}$ as $27$ is accepted. No second independent substitution is attempted.""",
-                True,
-                
+                r"""Denesting $\sqrt{7+4\sqrt{3}}$ is claimed to produce $\sqrt{3}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                False,
+                r"""Square:
+
+$$(\sqrt{3}-2)^2=3-4\sqrt{3}+4=7-4\sqrt{3}$$
+
+Wrong sign on the middle term; also $\sqrt{3}-2<0$ cannot be a principal root.""",
             ),
             (
                 r"Starting from $5^{t}=4$, a slip writes $25^{t}=8$.",
@@ -474,9 +604,13 @@ TASKS = [
                 
             ),
             (
-                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: On $u,v>0$, the quotient $(u^{2}v)^{3}/(uv^{2})^{3}$ is rewritten as $(u/v)^{3}$, and further instructs candidates to treat any matching numerical check as decisive.""",
-                True,
-                
+                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}-\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                False,
+                r"""Square:
+
+$$(\sqrt{5}-\sqrt{3})^2=5-2\sqrt{15}+3=8-2\sqrt{15}$$
+
+Wrong sign.""",
             ),
         ],
         overview=r"Five independent two-letter power claims. $(a^{m}b^{n})^{k}=a^{mk}b^{nk}$, not $a^{m+k}$. Adding the outer exponent is the product trap.",
@@ -498,9 +632,13 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Evaluating $27^{2/3}\cdot 8^{-1/3}$ as $9/2$ is accepted — with the intermediate display still carrying $9/2$.""",
-                True,
-                
+                r"""Denesting $\sqrt{10+4\sqrt{6}}$ is claimed to produce $\sqrt{6}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                False,
+                r"""Square:
+
+$$(\sqrt{6}-2)^2=6-4\sqrt{6}+4=10-4\sqrt{6}$$
+
+Wrong sign.""",
             ),
             (
                 r"A candidate records $\sqrt{18}\cdot\sqrt{8}=\sqrt{26}$ as positive square roots.",
@@ -508,9 +646,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Changing $4^{5/2}$ into $32$ is printed as valid, while explicitly permitting the omission of a full symbolic expansion.""",
+                r"""On the nonnegative reals, the product identity $\sqrt{9}\sqrt{4}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{9}+\sqrt{4}$ is rejected.""",
                 True,
-                
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{9}\sqrt{4}=\sqrt{36}=6$$
+
+By contrast $(\sqrt{9}+\sqrt{4})^2=9+4+2\sqrt{36}\neq 36$ in general.""",
             ),
         ],
         overview=r"Five independent numerical rewrites. $27^{4/3}=81$ and $4^{5/2}=32$, but $32^{3/5}=8$ and $\sqrt{18}\sqrt{8}=12$, not $\sqrt{26}$.",
@@ -522,9 +666,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Changing $4^{m-n}$ into $2^{2m-2n}$ for integers $m,n$ is accepted. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $4^{m-n}$.""",
+                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $1+\sqrt{13}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Square the candidate conjugate:
+
+Square:
+
+$$(1+\sqrt{13})^2=1+2\sqrt{13}+13=14+2\sqrt{13}$$
+
+Both $1+\sqrt{13}$ and the principal square root are positive, so they coincide.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"A slip expands $8^{m}$ as $2^{m+3}$ as an identity in the integer $m$.",
@@ -556,9 +708,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Extracting $\sqrt[4]{a^{2}b^{6}}$ for $a,b>0$ is recorded as $a^{1/2}b^{3/2}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt[4]{a^{2}b^{6}}$.""",
+                r"""On the nonnegative reals, the product identity $\sqrt{4}\sqrt{9}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{4}+\sqrt{9}$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{4}\sqrt{9}=\sqrt{36}=6$$
+
+By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Combining $\sqrt[4]{16}\sqrt[4]{81}$ as positive fourth roots is claimed to equal $12$.",
@@ -571,9 +731,17 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: On $c>0$, $\sqrt[4]{c^{8}}=c^{2}$ is accepted. No second independent substitution is attempted.""",
+                r"""On the nonnegative reals, the product identity $\sqrt{4}\sqrt{9}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{4}+\sqrt{9}$ is rejected, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
                 True,
-                
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{4}\sqrt{9}=\sqrt{36}=6$$
+
+By contrast $(\sqrt{4}+\sqrt{9})^2=4+9+2\sqrt{36}\neq 36$ in general.
+
+A single probe at $1$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Someone records $\sqrt[4]{32}=4\sqrt[4]{2}$ as a positive fourth root.",
@@ -595,9 +763,17 @@ TASKS = [
                 
             ),
             (
-                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: Forgetting to invert, a slip writes $c^{4}/c^{-3}=c$ whenever $c\neq 0$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
-                False,
-                
+                r"""On the nonnegative reals, the product identity $\sqrt{8}\sqrt{2}=\sqrt{16}=4$ is accepted; a competing note that would replace the product by $\sqrt{8}+\sqrt{2}$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{8}\sqrt{2}=\sqrt{16}=4$$
+
+By contrast $(\sqrt{8}+\sqrt{2})^2=8+2+2\sqrt{16}\neq 16$ in general.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Subtracting exponents, $d^{5}/d^{-2}=d^{7}$ for $d\neq 0$ is accepted.",
@@ -629,9 +805,21 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: The stacked form $\sqrt[3]{\sqrt{y}}$ is recorded as $y^{5/6}$ for $y>0$, adding the reciprocal exponents. On that basis, the claim is then entered in the answer key without a second expansion.""",
-                False,
-                
+                r"""Whenever $a>0$, a note treats $((a^{2})^{3})^{1/2}$ as $a^{3}$, multiplying exponents inward before the outer root, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Power of a power multiplies, working inside out:
+
+Inner:
+
+$$(a^{2})^{3}=a^{6}$$
+
+Outer root:
+
+$$(a^{6})^{1/2}=a^{3}$$
+
+The printed target matches.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"On $z>0$, a cube root of a square $\sqrt[3]{z^{2}}$ is rewritten as $z^{2/3}$.",
@@ -644,9 +832,19 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Taking $t>0$, $\sqrt{\sqrt{\sqrt{t}}}$ is claimed to equal $t^{1/6}$, while explicitly permitting the omission of a full symbolic expansion.""",
-                False,
-                
+                r"""Whenever $w>0$, a note treats $((w^{2})^{3})^{1/2}$ as $w^{3}$, multiplying exponents inward before the outer root.""",
+                True,
+                r"""Power of a power multiplies, working inside out:
+
+Inner:
+
+$$(w^{2})^{3}=w^{6}$$
+
+Outer root:
+
+$$(w^{6})^{1/2}=w^{3}$$
+
+The printed target matches.""",
             ),
         ],
         overview=r"Five independent stacked-root rewrites. Reciprocal exponents multiply: a cube root inside a fourth root is $x^{1/12}$. Adding $1/2+1/3$ is the wrong operation.",
@@ -668,9 +866,17 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: In two letters, $(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})=a-b$ for $a,b\ge 0$ is accepted — with the intermediate display still carrying $a,b\ge 0$.""",
+                r"""For $q\neq 0$, rewriting $(q^{-2})^{-3}$ as $q^{6}$ is accepted; comparing with the product $q^{-2}q^{-3}=q^{-5}$ shows the two rules diverge.""",
                 True,
-                
+                r"""Power of a power:
+
+$$(q^{-2})^{-3}=q^{6}$$
+
+Product rule:
+
+$$q^{-2}q^{-3}=q^{-5}$$
+
+The stacked form is $$q^{6}$$; the product is different.""",
             ),
             (
                 r"A note writes $(\sqrt{8}-\sqrt{2})^{2}=6$ as an identity on the positive reals.",
@@ -692,9 +898,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $(x^{1/2}y^{-1/3})^{6}/(x^{-1}y^{2})^{2}$ on $x,y>0$ is recorded as $x^{5}/y^{6}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(x^{1/2}y^{-1/3})^{6}/(x^{-1}y^{2})^{2}$.""",
+                r"""On $x\neq 0$, simplifying $\dfrac{x^{5}x^{-2}}{x^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $x^{4}$.""",
                 True,
-                
+                r"""Numerator:
+
+$$x^{5}x^{-2}=x^{3}$$
+
+Quotient:
+
+$$\frac{x^{3}}{x^{-1}}=x^{4}$$""",
             ),
             (
                 r"A slip writes the stack $(y^{-1/3})^{6}=y^{-1/18}$ for $y>0$.",
@@ -702,9 +914,13 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: On $a>0$, $(a^{3/4})^{8/3}$ is rewritten as $a^{2}$ — with the intermediate display still carrying $(a^{3/4})^{8/3}$.""",
-                True,
-                
+                r"""Denesting $\sqrt{11+6\sqrt{2}}$ is claimed to produce $3-\sqrt{2}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                False,
+                r"""Square:
+
+$$(3-\sqrt{2})^2=9-6\sqrt{2}+2=11-6\sqrt{2}$$
+
+Wrong middle sign.""",
             ),
             (
                 r"Someone records $(b^{-2}c^{1/2})^{4}=b^{2}c^{2}$ for $b,c>0$.",
@@ -741,9 +957,15 @@ TASKS = [
                 
             ),
             (
-                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Whenever $a,b>0$, treating $\sqrt{a}\sqrt{b}$ as $\sqrt{a+b}$ is accepted as an identity. The margin note closes without expanding the general case.""",
+                r"""Denesting $\sqrt{16+6\sqrt{7}}$ is claimed to produce $\sqrt{7}-3$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{7}-3)^2=7-6\sqrt{7}+9=16-6\sqrt{7}$$
+
+Wrong sign; also negative.
+
+A single probe at $1$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Rationalising $1/(\sqrt{48}-\sqrt{12})$ is claimed to equal $\sqrt{48}+\sqrt{12}$.",
@@ -765,9 +987,15 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: A matching reciprocal form claims that same quotient equals $(a/b)^{k(n-m)}$ for $a,b>0$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""Denesting $\sqrt{9+4\sqrt{5}}$ is claimed to produce $\sqrt{5}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{5}-2)^2=5-4\sqrt{5}+4=9-4\sqrt{5}$$
+
+Wrong sign.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Expanding only a cube, $(p^{2}q^{-3})^{3}=p^{6}q^{-9}$ on $p,q>0$ is accepted.",
@@ -775,9 +1003,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Treating $(r^{m}s^{n})^{k}$ as $r^{m+k}s^{n}$ for $r,s>0$ is offered as an identity. Any remaining letters are declared free once that one check has passed.""",
-                False,
-                
+                r"""On the nonnegative reals, the product identity $\sqrt{5}\sqrt{20}=\sqrt{100}=10$ is accepted; a competing note that would replace the product by $\sqrt{5}+\sqrt{20}$ is rejected.""",
+                True,
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{5}\sqrt{20}=\sqrt{100}=10$$
+
+By contrast $(\sqrt{5}+\sqrt{20})^2=5+20+2\sqrt{100}\neq 100$ in general.""",
             ),
             (
                 r"Collecting $u^{6}v^{-4}/(u^{-2}v^{3})$ for $u,v>0$ is rewritten as $u^{8}/v^{7}$.",
@@ -814,9 +1048,17 @@ TASKS = [
                 
             ),
             (
-                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Someone records $\sqrt{\sqrt{t^{3}}}=t^{3/2}$ on $t>0$, with the added remark that domain caveats may be left implicit once written once.""",
+                r"""A candidate replaces $\sqrt{5+b}$ by $\sqrt{5}+\sqrt{5}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square roots do not split over addition:
+
+Square the sum:
+
+$$(\sqrt{5}+\sqrt{5})^2=5+5+2\sqrt{25}$$
+
+For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.
+
+A single probe at $1$ cannot replace the algebraic comparison above.""",
             ),
         ],
         overview=r"Five independent nests, each with its own index. Write every root as a reciprocal exponent and multiply. $\sqrt{x\sqrt{x}}=x^{3/4}$ and the three-storey cube nest is $y^{13/27}$.",
@@ -838,9 +1080,17 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Factoring $p-q=(\sqrt{p}-\sqrt{q})(\sqrt{p}+\sqrt{q})$ on $p,q\ge 0$ is accepted — with the intermediate display still carrying $p,q\ge 0$.""",
+                r"""On the nonnegative reals, the product identity $\sqrt{2}\sqrt{18}=\sqrt{36}=6$ is accepted; a competing note that would replace the product by $\sqrt{2}+\sqrt{18}$ is rejected, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""A product of principal square roots is the principal root of the product:
+
+Identity:
+
+$$\sqrt{2}\sqrt{18}=\sqrt{36}=6$$
+
+By contrast $(\sqrt{2}+\sqrt{18})^2=2+18+2\sqrt{36}\neq 36$ in general.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"A candidate cancels twice in $(\sqrt{u}-\sqrt{v})^{2}/(u-v)$ and obtains $1/(u-v)$ for $u>v>0$.",
@@ -848,9 +1098,19 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: On $m>n>0$, $(m-n)/(\sqrt{m}+\sqrt{n})$ is rewritten as $\sqrt{m}-\sqrt{n}$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""Whenever $x>0$, a note treats $((x^{2})^{3})^{1/2}$ as $x^{3}$, multiplying exponents inward before the outer root.""",
                 True,
-                
+                r"""Power of a power multiplies, working inside out:
+
+Inner:
+
+$$(x^{2})^{3}=x^{6}$$
+
+Outer root:
+
+$$(x^{6})^{1/2}=x^{3}$$
+
+The printed target matches.""",
             ),
         ],
         overview=r"Five independent conjugate-cancellation claims. Write $a-b$ as a conjugate product. Then $(\sqrt{a}-\sqrt{b})^{2}/(a-b)$ keeps one factor of $\sqrt{a}-\sqrt{b}$ in the numerator.",
@@ -862,9 +1122,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Given $3^{y}=2$, the rewrite $9^{y}=4$ follows without solving for $y$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $3^{y}=2$.""",
-                True,
-                
+                r"""A candidate replaces $\sqrt{4+b}$ by $\sqrt{4}+\sqrt{4}$ and, after checking the single case where one radicand vanishes, treats the split as an identity on all nonnegative $a,b$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                False,
+                r"""Square roots do not split over addition:
+
+Square the sum:
+
+$$(\sqrt{4}+\sqrt{4})^2=4+4+2\sqrt{16}$$
+
+For a concrete counter-example take equal radicands $1$: $\sqrt{2}\neq 2$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"A product-of-powers slip writes $x^{m}x^{n}=x^{mn}$ for $x>0$.",
@@ -896,9 +1164,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Combining $\sqrt{48}-\sqrt{12}+\sqrt{27}$ as positive square roots is recorded as $5\sqrt{3}$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt{48}-\sqrt{12}+\sqrt{27}$.""",
+                r"""On $w\neq 0$, simplifying $\dfrac{w^{5}w^{-2}}{w^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $w^{4}$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Numerator:
+
+$$w^{5}w^{-2}=w^{3}$$
+
+Quotient:
+
+$$\frac{w^{3}}{w^{-1}}=w^{4}$$
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Denesting $\sqrt{12+2\sqrt{32}}$ is claimed to equal $\sqrt{8}-\sqrt{4}$.",
@@ -911,9 +1187,17 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: On $x>0$, expanding $(\sqrt{x}+1/\sqrt{x})^{2}$ is claimed as $x+1/x$, omitting the middle $+2$. Any remaining letters are declared free once that one check has passed.""",
-                False,
-                
+                r"""On $q\neq 0$, simplifying $\dfrac{q^{5}q^{-2}}{q^{-1}}$ by adding exponents in the numerator then subtracting the denominator leaves $q^{4}$, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
+                True,
+                r"""Numerator:
+
+$$q^{5}q^{-2}=q^{3}$$
+
+Quotient:
+
+$$\frac{q^{3}}{q^{-1}}=q^{4}$$
+
+A single probe at $1$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Evaluating $32^{2/5}\cdot 27^{-1/3}$ as $4/3$ is accepted.",
@@ -935,9 +1219,21 @@ TASKS = [
                 
             ),
             (
-                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: A marker writes $y^{-1}+y^{-2}=1/(y+y^{2})$ as an identity on $y\neq 0$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
-                False,
-                
+                r"""Whenever $x>0$, a note treats $((x^{2})^{3})^{1/2}$ as $x^{3}$, multiplying exponents inward before the outer root, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Power of a power multiplies, working inside out:
+
+Inner:
+
+$$(x^{2})^{3}=x^{6}$$
+
+Outer root:
+
+$$(x^{6})^{1/2}=x^{3}$$
+
+The printed target matches.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Squaring a reciprocal, $z^{-2}=(z^{-1})^{2}$ for $z\neq 0$ is accepted.",
@@ -969,9 +1265,15 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: A slip writes $(8^{2/3})^{3/2}=8^{2/3+3/2}$ as an identity. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}-\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{5}-\sqrt{3})^2=5-2\sqrt{15}+3=8-2\sqrt{15}$$
+
+Wrong sign.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"On $t>0$, $(t^{-3})^{2/3}=t^{-2}$ is accepted.",
@@ -984,9 +1286,15 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Given $4^{k}=5$, rewriting $2^{2k}$ as $5$ without solving for $k$ is accepted, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
-                True,
-                
+                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}-\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $1$ is cited as supporting evidence.""",
+                False,
+                r"""Square:
+
+$$(\sqrt{5}-\sqrt{3})^2=5-2\sqrt{15}+3=8-2\sqrt{15}$$
+
+Wrong sign.
+
+A single probe at $1$ cannot replace the algebraic comparison above.""",
             ),
         ],
         overview=r"Five independent stacked fractional powers. Multiply the two exponents, or rewrite each base as a power of $2$. Adding the fractional exponents is the product trap.",
@@ -1008,9 +1316,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: A false binomial square $(\sqrt{12}+\sqrt{3})^{2}=15$ is claimed.""",
+                r"""Denesting $\sqrt{10+4\sqrt{6}}$ is claimed to produce $\sqrt{6}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{6}-2)^2=6-4\sqrt{6}+4=10-4\sqrt{6}$$
+
+Wrong sign.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Raising a two-thirds power, $(x^{2/3})^{3}=x^{2}$ holds on $x>0$.",

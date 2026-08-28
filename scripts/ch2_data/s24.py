@@ -12,9 +12,15 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: On the half-line $w<4$, rewriting $|w-4|$ as $4-w$ and then adding $w$ is claimed to leave the constant $4$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w<4$.""",
+                r"""Restricting to $n<0$, the quotient $\dfrac{|n|}{n}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
                 True,
-                
+                r"""On $n<0$ one has $|n|=-n$, hence
+
+Quotient:
+
+$$\frac{|n|}{n}=\frac{-n}{n}=-1$$
+
+The constant $-1$ matches.""",
             ),
             (
                 r"For every real $u$, dropping the bars in $|2u+1|=2u+1$ is treated as legal.",
@@ -22,9 +28,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Whenever $z>0$, replacing $\sqrt{z^2}$ by $z$ and concluding $\sqrt{z^2}-z=0$ on that half-line is accepted — with the intermediate display still carrying $\sqrt{z^2}$.""",
+                r"""Factoring inside the bars, $|x^2-8x+7|$ is rewritten as $|x-1|\,|x-7|$ for every real $x$. The identity is then used to read off the zeros $x=1$ and $x=7$ without expanding.""",
                 True,
-                
+                r"""The trinomial factors as $(x-1)(x-7)$:
+
+Factor:
+
+$$x^2-8x+7=(x-1)(x-7)$$
+
+Absolute value:
+
+$$|x^2-8x+7|=|x-1|\,|x-7|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
             (
                 r"Away from $h=1$, the quotient $|h-1|/(1-h)$ is recorded as identically $1$.",
@@ -61,9 +77,15 @@ TASKS = [
                 
             ),
             (
-                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: On the ray $z\ge 0$, rewriting $\sqrt{z^2}$ as $z$ is accepted. The claim is filed as settled for every admissible value of the letters.""",
+                r"""Restricting to $\ell<0$, the quotient $\dfrac{|\ell|}{\ell}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
                 True,
-                
+                r"""On $\ell<0$ one has $|\ell|=-\ell$, hence
+
+Quotient:
+
+$$\frac{|\ell|}{\ell}=\frac{-\ell}{\ell}=-1$$
+
+The constant $-1$ matches.""",
             ),
             (
                 r"After substituting $h=-4$, the principal root $\sqrt{h^2}$ is said to equal $-4$.",
@@ -85,9 +107,15 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: On the half-line $w<0$, the twin $|w|/w$ is recorded as $-1$. On that basis, a second marker initials the line after comparing only the leading terms.""",
-                True,
-                
+                r"""On the whole real line, $|k-3|+|k-6|+|k-9|$ is claimed to equal the constant $6$, by extending the two-point segment rule to three marks.""",
+                False,
+                r"""The two-point identity $|k-3|+|k-9|=6$ holds only on $[3,9]$. With a third mark the piecewise expression changes:
+
+On $[3,6]$:
+
+$$|k-3|+|k-6|+|k-9|=(k-3)+(6-k)+(9-k)=12-k$$
+
+The right-hand side still depends on $k$, so it is not the constant $6$.""",
             ),
             (
                 r"A booklet records $|z|/z=1$ for every $z\neq 0$.",
@@ -95,9 +123,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Whenever $h>0$, the reciprocal $h/|h|$ is claimed to equal $1$. No second independent substitution is attempted.""",
+                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-4|$ collapses to $|x-4|$, because $|x|=x$ removes the inner bars before the outer comparison with $4$.""",
                 True,
-                
+                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+
+Collapse:
+
+$$||x|-4|=|x-4|$$
+
+The two expressions agree on the stated half-line.""",
             ),
             (
                 r"At the origin $k=0$, both $|k|/k$ and $k/|k|$ are declared equal to $0$.",
@@ -134,9 +168,15 @@ TASKS = [
                 
             ),
             (
-                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Treating $|z+6|$ as the scaled copy $6|z|$ is proposed, and further instructs candidates to treat any matching numerical check as decisive.""",
+                r"""On the whole real line, $|k-4|+|k-7|+|k-12|$ is claimed to equal the constant $8$, by extending the two-point segment rule to three marks.""",
                 False,
-                
+                r"""The two-point identity $|k-4|+|k-12|=8$ holds only on $[4,12]$. With a third mark the piecewise expression changes:
+
+On $[4,7]$:
+
+$$|k-4|+|k-7|+|k-12|=(k-4)+(7-k)+(12-k)=15-k$$
+
+The right-hand side still depends on $k$, so it is not the constant $8$.""",
             ),
         ],
         overview="A constant factor comes out as its absolute value. Adding a constant is a translation, and $|A|+|B|$ is not identically $|A+B|$.",
@@ -158,9 +198,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Writing $|-u|=-|u|$ as an identity is proposed.""",
-                False,
-                
+                r"""Factoring inside the bars, $|x^2-7x+10|$ is rewritten as $|x-2|\,|x-5|$ for every real $x$. The identity is then used to read off the zeros $x=2$ and $x=5$ without expanding.""",
+                True,
+                r"""The trinomial factors as $(x-2)(x-5)$:
+
+Factor:
+
+$$x^2-7x+10=(x-2)(x-5)$$
+
+Absolute value:
+
+$$|x^2-7x+10|=|x-2|\,|x-5|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
             (
                 r"The swap $|z-4|=|4-z|$ is used as an identity.",
@@ -168,9 +218,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Someone claims $||h-1||=h-1$ for every real $h$, while explicitly permitting the omission of a full symbolic expansion.""",
-                False,
-                
+                r"""Restricting to $n>0$, the quotient $\dfrac{|n|}{n}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                True,
+                r"""On $n>0$ one has $|n|=n$, hence
+
+Quotient:
+
+$$\frac{|n|}{n}=1$$
+
+The constant $1$ matches.""",
             ),
         ],
         overview="Extra bars around an already nonnegative quantity are idle. A minus inside bars is not a minus outside bars, and nested bars never recover a signed inside.",
@@ -182,9 +238,19 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $w>0$, rewriting $|w|$ as $w$ and then forming $|w|-w$ is claimed to leave $0$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w>0$.""",
-                True,
-                
+                r"""On the whole real line, $||x|-6|$ is treated as identical to $|x-6|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
+                False,
+                r"""For $x=-6-1<0$ one has $|x|=6+1$, so
+
+Nested:
+
+$$||x|-6|=|6+1-6|=1$$
+
+Single:
+
+$$|x-6|=|-6-1-6|=|-13|=13$$
+
+Since $1\neq 13$, the expressions differ for negative $x$.""",
             ),
             (
                 r"On the half-line $u<0$, flipping $|u|$ to $-u$ and then adding $u$ is said to leave $0$.",
@@ -216,9 +282,19 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: On the ray $w\ge 4$, rewriting $|w-4|$ as $w-4$ and subtracting $w$ is claimed to leave $-4$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w\ge 4$.""",
+                r"""Factoring inside the bars, $|x^2-9x+8|$ is rewritten as $|x-1|\,|x-8|$ for every real $x$. The identity is then used to read off the zeros $x=1$ and $x=8$ without expanding.""",
                 True,
-                
+                r"""The trinomial factors as $(x-1)(x-8)$:
+
+Factor:
+
+$$x^2-9x+8=(x-1)(x-8)$$
+
+Absolute value:
+
+$$|x^2-9x+8|=|x-1|\,|x-8|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
             (
                 r"Distance interpretation treats $|u-1|$ as possibly negative when $u<1$.",
@@ -231,9 +307,19 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Adding $h$ to $7$ is said to give the same number as $|h-7|$. No second independent substitution is attempted.""",
+                r"""On the whole real line, $||x|-5|$ is treated as identical to $|x-5|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
                 False,
-                
+                r"""For $x=-5-1<0$ one has $|x|=5+1$, so
+
+Nested:
+
+$$||x|-5|=|5+1-5|=1$$
+
+Single:
+
+$$|x-5|=|-5-1-5|=|-11|=11$$
+
+Since $1\neq 11$, the expressions differ for negative $x$.""",
             ),
             (
                 r"Provided $k\ge 8$, the rewrite $|k-8|=k-8$ then adding $8$ is claimed to recover $k$.",
@@ -255,9 +341,15 @@ TASKS = [
                 
             ),
             (
-                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: A quotient identity $|z/h|=|z|/|h|$ whenever $h\neq 0$ is applied to record $|8/(-4)|=2$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
-                True,
-                
+                r"""Restricting to $r<0$, the quotient $\dfrac{|r|}{r}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                False,
+                r"""On $r<0$ one has $|r|=-r$, hence
+
+Quotient:
+
+$$\frac{|r|}{r}=\frac{-r}{r}=-1$$
+
+The true constant is $-1$, not $1$.""",
             ),
             (
                 r"Replacing $|k+n|$ by $|k|+|n|$ as a product-style identity, so $|8+(-4)|$ is recorded as $12$.",
@@ -289,9 +381,17 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: On the side $u>1$, the fraction $|u-1|/(1-u)$ is recorded as $-1$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-4|$ collapses to $|x-4|$, because $|x|=x$ removes the inner bars before the outer comparison with $4$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+
+Collapse:
+
+$$||x|-4|=|x-4|$$
+
+The two expressions agree on the stated half-line.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Cancelling $|z-6|/(6-z)$ to $1$ for every $z\neq 6$ is proposed.",
@@ -304,9 +404,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Taking $|k-8|/(8-k)$ at $k=8$ as defined and equal to $0$ is proposed, while explicitly permitting the omission of a full symbolic expansion.""",
-                False,
-                
+                r"""Restricting to $w<0$, the quotient $\dfrac{|w|}{w}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
+                True,
+                r"""On $w<0$ one has $|w|=-w$, hence
+
+Quotient:
+
+$$\frac{|w|}{w}=\frac{-w}{w}=-1$$
+
+The constant $-1$ matches.""",
             ),
         ],
         overview="Each opposite linear pair produces a piecewise constant $\\pm 1$, undefined at its own root. A global cancellation to $1$ ignores the side where the denominator is the opposite of the bars.",
@@ -328,9 +434,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: At the midpoint $z=7$ of $[6,8]$, both distances in $|z-6|+|z-8|$ are $1$, summing to $4$ — with the intermediate display still carrying $[6,8]$.""",
+                r"""On the whole real line, $|k-1|+|k-3|+|k-9|$ is claimed to equal the constant $8$, by extending the two-point segment rule to three marks.""",
                 False,
-                
+                r"""The two-point identity $|k-1|+|k-9|=8$ holds only on $[1,9]$. With a third mark the piecewise expression changes:
+
+On $[1,3]$:
+
+$$|k-1|+|k-3|+|k-9|=(k-1)+(3-k)+(9-k)=11-k$$
+
+The right-hand side still depends on $k$, so it is not the constant $8$.""",
             ),
             (
                 r"Left of the knot $h<1$, the sum $|h-1|+|h-8|$ is rewritten as the constant $7$.",
@@ -352,9 +464,19 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Replacing $\sqrt{(w-4)^2}$ by $w-4$ for every $w$ is proposed. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $\sqrt{(w-4)^2}$.""",
-                False,
-                
+                r"""Factoring inside the bars, $|x^2-9x+18|$ is rewritten as $|x-3|\,|x-6|$ for every real $x$. The identity is then used to read off the zeros $x=3$ and $x=6$ without expanding.""",
+                True,
+                r"""The trinomial factors as $(x-3)(x-6)$:
+
+Factor:
+
+$$x^2-9x+18=(x-3)(x-6)$$
+
+Absolute value:
+
+$$|x^2-9x+18|=|x-3|\,|x-6|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
             (
                 r"The identity $\sqrt{(u-1)^2}=|u-1|$ is recorded.",
@@ -362,9 +484,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: On the region $z\ge 6$, the bars in $\sqrt{(z-6)^2}=|z-6|$ may be dropped — with the intermediate display still carrying $\sqrt{(z-6)^2}=|z-6|$.""",
-                True,
-                
+                r"""Restricting to $m\neq 0$, the quotient $\dfrac{|m|}{m}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
+                False,
+                r"""Away from zero the quotient equals $\mathrm{sign}(m)\in\{\pm 1\}$, not a single constant:
+
+Positive side:
+
+$$\frac{|m|}{m}=1$$
+
+Negative side:
+
+$$\frac{|m|}{m}=-1$$
+
+A single value $-1$ cannot cover both sides.""",
             ),
             (
                 r"After substituting $h=1$ into $\sqrt{(h-8)^2}$, the root is said to equal $1-8=-7$.",
@@ -401,9 +533,19 @@ TASKS = [
                 
             ),
             (
-                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: The identity $\sqrt{z^2}+z=0$ is asserted for every real $z$. The margin note closes without expanding the general case.""",
-                False,
-                
+                r"""Factoring inside the bars, $|x^2-11x+24|$ is rewritten as $|x-3|\,|x-8|$ for every real $x$. The identity is then used to read off the zeros $x=3$ and $x=8$ without expanding.""",
+                True,
+                r"""The trinomial factors as $(x-3)(x-8)$:
+
+Factor:
+
+$$x^2-11x+24=(x-3)(x-8)$$
+
+Absolute value:
+
+$$|x^2-11x+24|=|x-3|\,|x-8|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
             (
                 r"Whenever $h<0$, forming $\sqrt{h^2}-h$ is said to leave $0$.",
@@ -425,9 +567,21 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: The comparison $|z+h|\le |z|+|h|$ is treated as always valid. On that basis, the claim is then entered in the answer key without a second expansion.""",
-                True,
-                
+                r"""On the whole real line, $||x|-5|$ is treated as identical to $|x-5|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                False,
+                r"""For $x=-5-1<0$ one has $|x|=5+1$, so
+
+Nested:
+
+$$||x|-5|=|5+1-5|=1$$
+
+Single:
+
+$$|x-5|=|-5-1-5|=|-11|=11$$
+
+Since $1\neq 11$, the expressions differ for negative $x$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"When $k=8$ and $n=-4$, a candidate says $|k+n|$ equals $|k|+|n|$.",
@@ -435,9 +589,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: If $w$ and $u$ are both negative, $|w+u|=|w|+|u|$ is asserted. Any remaining letters are declared free once that one check has passed.""",
+                r"""On the closed interval $1\le k\le 8$, the two-point distance sum $|k-1|+|k-8|$ equals the constant $7$. Inserting the interior mark $5$ into a three-bar sum is a different expression and is not claimed here.""",
                 True,
-                
+                r"""For $k$ between $1$ and $8$ the bars open as
+
+Rewrite:
+
+$$|k-1|+|k-8|=(k-1)+(8-k)=7$$
+
+The constant equals the length of the segment.""",
             ),
             (
                 r"If both letters $k$ and $n$ are positive, $|k+n|=|k|+|n|$ is recorded.",
@@ -474,9 +634,19 @@ TASKS = [
                 
             ),
             (
-                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: The two pieces $2k-8$ and $8-2k$ are said to be equal for every $k$, with the added remark that domain caveats may be left implicit once written once.""",
+                r"""On the whole real line, $||x|-7|$ is treated as identical to $|x-7|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
                 False,
-                
+                r"""For $x=-7-1<0$ one has $|x|=7+1$, so
+
+Nested:
+
+$$||x|-7|=|7+1-7|=1$$
+
+Single:
+
+$$|x-7|=|-7-1-7|=|-15|=15$$
+
+Since $1\neq 15$, the expressions differ for negative $x$.""",
             ),
         ],
         overview="$|cA|$ splits into two opposite linear pieces about the root of $A$. Dropping bars on the whole line, or omitting bars after factoring a positive scale, is illegal. The two pieces are not the same function.",
@@ -498,9 +668,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Completing $z^2-12z+37$ gives $(z-6)^2+1$, so $|z^2-12z+37|=(z-6)^2+1$ — with the intermediate display still carrying $(z-6)^2+1$.""",
+                r"""Restricting to $p<0$, the quotient $\dfrac{|p|}{p}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
                 True,
-                
+                r"""On $p<0$ one has $|p|=-p$, hence
+
+Quotient:
+
+$$\frac{|p|}{p}=\frac{-p}{p}=-1$$
+
+The constant $-1$ matches.""",
             ),
             (
                 r"Someone writes $|h^2-14h+49|=h-7$ as an identity.",
@@ -508,9 +684,15 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Because $k^2+1\ge 1$, the rewriting $|k^2+1|=k^2+1$ is used for every $k$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
-                True,
-                
+                r"""A marker drops the bars after factoring and writes $|x^2-9x+14|=(x-2)(x-7)$ as an identity on the whole line, citing that the two linear factors are "already ordered".""",
+                False,
+                r"""While $x^2-9x+14=(x-2)(x-7)$ as polynomials,
+
+With bars:
+
+$$|x^2-9x+14|=|x-2|\,|x-7|$$
+
+Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $|14|=14$ on the left but $(-2)(-7)=14$ only if the signs cooperate — already for $x=\min(2,7)-1$ the two sides disagree in sign.""",
             ),
         ],
         overview="A quadratic that is a square, or that completes to a square plus a positive constant, may drop its bars. Absolute value of a square is not the linear factor, and is not identically zero.",
@@ -522,9 +704,15 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: A candidate writes $|n|^3=|n^3|$ as an identity. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $|n|^3=|n^3|$.""",
+                r"""On the closed interval $1\le k\le 7$, the two-point distance sum $|k-1|+|k-7|$ equals the constant $6$. Inserting the interior mark $4$ into a three-bar sum is a different expression and is not claimed here.""",
                 True,
-                
+                r"""For $k$ between $1$ and $7$ the bars open as
+
+Rewrite:
+
+$$|k-1|+|k-7|=(k-1)+(7-k)=6$$
+
+The constant equals the length of the segment.""",
             ),
             (
                 r"Someone replaces $|w^3|$ by $w^3$ for every real $w$.",
@@ -556,9 +744,17 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $w<4$, the expression $|4-w|$ equals $4-w$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w<4$.""",
+                r"""Restricting to $\ell<0$, the quotient $\dfrac{|\ell|}{\ell}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""On $\ell<0$ one has $|\ell|=-\ell$, hence
+
+Quotient:
+
+$$\frac{|\ell|}{\ell}=\frac{-\ell}{\ell}=-1$$
+
+The constant $-1$ matches.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"On the side $u>1$, $|1-u|$ equals $u-1$.",
@@ -571,9 +767,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Combined with the swap rule, $|7-h|=|h-7|$ throughout. Any remaining letters are declared free once that one check has passed.""",
-                True,
-                
+                r"""On the whole real line, $|k-0|+|k-4|+|k-7|$ is claimed to equal the constant $7$, by extending the two-point segment rule to three marks.""",
+                False,
+                r"""The two-point identity $|k-0|+|k-7|=7$ holds only on $[0,7]$. With a third mark the piecewise expression changes:
+
+On $[0,4]$:
+
+$$|k-0|+|k-4|+|k-7|=(k-0)+(4-k)+(7-k)=11-k$$
+
+The right-hand side still depends on $k$, so it is not the constant $7$.""",
             ),
             (
                 r"The two pieces $8-k$ and $k-8$ are identical functions.",
@@ -595,9 +797,15 @@ TASKS = [
                 
             ),
             (
-                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: When the scalar is $-4$, $|-4u|=4|u|$ is recorded. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
-                True,
-                
+                r"""A marker drops the bars after factoring and writes $|x^2-9x+20|=(x-4)(x-5)$ as an identity on the whole line, citing that the two linear factors are "already ordered".""",
+                False,
+                r"""While $x^2-9x+20=(x-4)(x-5)$ as polynomials,
+
+With bars:
+
+$$|x^2-9x+20|=|x-4|\,|x-5|$$
+
+Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $|20|=20$ on the left but $(-4)(-5)=20$ only if the signs cooperate — already for $x=\min(4,5)-1$ the two sides disagree in sign.""",
             ),
             (
                 r"Pulling a negative scalar out unchanged, $|-6z|=-6|z|$ is asserted.",
@@ -629,9 +837,17 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: The correct unrestricted rewriting is $\sqrt{(z-h)^2}=|z-h|$. On that basis, a second marker initials the line after comparing only the leading terms.""",
-                True,
-                
+                r"""On the whole real line, $|k-4|+|k-7|+|k-12|$ is claimed to equal the constant $8$, by extending the two-point segment rule to three marks, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                False,
+                r"""The two-point identity $|k-4|+|k-12|=8$ holds only on $[4,12]$. With a third mark the piecewise expression changes:
+
+On $[4,7]$:
+
+$$|k-4|+|k-7|+|k-12|=(k-4)+(7-k)+(12-k)=15-k$$
+
+The right-hand side still depends on $k$, so it is not the constant $8$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Whenever $k+n\ge 0$ the bars in $\sqrt{(k+n)^2}=|k+n|$ may be dropped.",
@@ -644,9 +860,19 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Whenever $n\ge 4$, replacing $\sqrt{(n-4)^2}$ by $n-4$ and concluding $\sqrt{(n-4)^2}-(n-4)=0$ is accepted, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""Factoring inside the bars, $|x^2-10x+24|$ is rewritten as $|x-4|\,|x-6|$ for every real $x$. The identity is then used to read off the zeros $x=4$ and $x=6$ without expanding.""",
                 True,
-                
+                r"""The trinomial factors as $(x-4)(x-6)$:
+
+Factor:
+
+$$x^2-10x+24=(x-4)(x-6)$$
+
+Absolute value:
+
+$$|x^2-10x+24|=|x-4|\,|x-6|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
         ],
         overview="$\\sqrt{(A)^2}=|A|$. Replacing the root by a binomial needs the binomial nonnegative. A negative numerical substitute is the inside, not the principal root.",
@@ -668,9 +894,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: At the midpoint $z=4$ of $[1,7]$, both distances in $|z-1|+|z-7|$ are $3$, summing to $8$ — with the intermediate display still carrying $[1,7]$.""",
+                r"""On the whole real line, $||x|-3|$ is treated as identical to $|x-3|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
                 False,
-                
+                r"""For $x=-3-1<0$ one has $|x|=3+1$, so
+
+Nested:
+
+$$||x|-3|=|3+1-3|=1$$
+
+Single:
+
+$$|x-3|=|-3-1-3|=|-7|=7$$
+
+Since $1\neq 7$, the expressions differ for negative $x$.""",
             ),
             (
                 r"Left of the other knot $h<4$, the sum $|h-4|+|h-6|$ is rewritten as $2$ as well.",
@@ -692,9 +928,19 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Completing $w^2-8w+17$ produces $(w-4)^2+1$, hence $|w^2-8w+17|=(w-4)^2+1$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w^2-8w+17$.""",
-                True,
-                
+                r"""Restricting to $t\neq 0$, the quotient $\dfrac{|t|}{t}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                False,
+                r"""Away from zero the quotient equals $\mathrm{sign}(t)\in\{\pm 1\}$, not a single constant:
+
+Positive side:
+
+$$\frac{|t|}{t}=1$$
+
+Negative side:
+
+$$\frac{|t|}{t}=-1$$
+
+A single value $1$ cannot cover both sides.""",
             ),
             (
                 r"A margin note writes $u^2-2u+5=(u-1)^2-4$.",
@@ -702,9 +948,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Because $(z-6)^2-1$ reaches $-1$, writing $|z^2-12z+35|=(z-6)^2-1$ as an identity is proposed — with the intermediate display still carrying $-1$.""",
-                False,
-                
+                r"""Factoring inside the bars, $|x^2-6x+5|$ is rewritten as $|x-1|\,|x-5|$ for every real $x$. The identity is then used to read off the zeros $x=1$ and $x=5$ without expanding.""",
+                True,
+                r"""The trinomial factors as $(x-1)(x-5)$:
+
+Factor:
+
+$$x^2-6x+5=(x-1)(x-5)$$
+
+Absolute value:
+
+$$|x^2-6x+5|=|x-1|\,|x-5|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.""",
             ),
             (
                 r"At $h=7$, the quadratic $h^2-14h+48$ equals $-1$, so the bars turn it into $1$.",
@@ -741,9 +997,15 @@ TASKS = [
                 
             ),
             (
-                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: A candidate says $|n+z|=|n|+|z|$ is the same statement as $|n+z|=\bigl||n|-|z|\bigr|$. The claim is filed as settled for every admissible value of the letters.""",
-                False,
-                
+                r"""Restricting to $k>0$, the quotient $\dfrac{|k|}{k}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                True,
+                r"""On $k>0$ one has $|k|=k$, hence
+
+Quotient:
+
+$$\frac{|k|}{k}=1$$
+
+The constant $1$ matches.""",
             ),
             (
                 r"The numerical pair $k=8$, $n=-4$ is offered as a case where $|k+n|$ matches $|k|+|n|$.",
@@ -765,9 +1027,15 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Writing $|u^2-2u|=(u-1)^2-1$ as an identity is proposed. On that basis, a second marker initials the line after comparing only the leading terms.""",
-                False,
-                
+                r"""On the closed interval $1\le k\le 6$, the two-point distance sum $|k-1|+|k-6|$ equals the constant $5$. Inserting the interior mark $2$ into a three-bar sum is a different expression and is not claimed here.""",
+                True,
+                r"""For $k$ between $1$ and $6$ the bars open as
+
+Rewrite:
+
+$$|k-1|+|k-6|=(k-1)+(6-k)=5$$
+
+The constant equals the length of the segment.""",
             ),
             (
                 r"At $z=6$, the quadratic $z^2-12z+35$ equals $-1$, so the bars turn it into $1$.",
@@ -775,9 +1043,19 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Factoring, $|h^2-8h+7|=|h-1||h-7|$. No second independent substitution is attempted.""",
-                True,
-                
+                r"""On the whole real line, $||x|-9|$ is treated as identical to $|x-9|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant.""",
+                False,
+                r"""For $x=-9-1<0$ one has $|x|=9+1$, so
+
+Nested:
+
+$$||x|-9|=|9+1-9|=1$$
+
+Single:
+
+$$|x-9|=|-9-1-9|=|-19|=19$$
+
+Since $1\neq 19$, the expressions differ for negative $x$.""",
             ),
             (
                 r"Because the completed form of $k^2-16k+63$ has a $-1$, the quadratic is negative for every $k$.",
@@ -814,9 +1092,15 @@ TASKS = [
                 
             ),
             (
-                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: The pair $k=8$, $n=-4$ is claimed to make both $\bigl||8|-|-4|\bigr|$ and $|8-(-4)|$ equal $4$, and further instructs candidates to treat any matching numerical check as decisive.""",
+                r"""On the whole real line, $|k-2|+|k-5|+|k-9|$ is claimed to equal the constant $7$, by extending the two-point segment rule to three marks.""",
                 False,
-                
+                r"""The two-point identity $|k-2|+|k-9|=7$ holds only on $[2,9]$. With a third mark the piecewise expression changes:
+
+On $[2,5]$:
+
+$$|k-2|+|k-5|+|k-9|=(k-2)+(5-k)+(9-k)=12-k$$
+
+The right-hand side still depends on $k$, so it is not the constant $7$.""",
             ),
         ],
         overview="The reverse triangle inequality bounds the gap of sizes by $|A-B|$. Equality is not automatic, dropping the outer bars can produce a negative, and opposite-sign pairs make $|A-B|$ the sum of sizes.",
@@ -838,9 +1122,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: On the region $|z|\ge 6$, rewriting $\bigl||z|-6\bigr|$ as $|z|-6$ is accepted — with the intermediate display still carrying $\bigl||z|-6\bigr|$.""",
-                True,
-                
+                r"""A marker drops the bars after factoring and writes $|x^2-10x+21|=(x-3)(x-7)$ as an identity on the whole line, citing that the two linear factors are "already ordered".""",
+                False,
+                r"""While $x^2-10x+21=(x-3)(x-7)$ as polynomials,
+
+With bars:
+
+$$|x^2-10x+21|=|x-3|\,|x-7|$$
+
+Without bars the right-hand side changes sign on half-lines. For $x=0$ one has $|21|=21$ on the left but $(-3)(-7)=21$ only if the signs cooperate — already for $x=\min(3,7)-1$ the two sides disagree in sign.""",
             ),
             (
                 r"Someone claims $\bigl||h-7|\bigr|=h-7$ for every $h$.",
@@ -848,9 +1138,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: After collapsing nested bars, $|||k|||$ is recorded as $|k|$, while explicitly permitting the omission of a full symbolic expansion.""",
-                True,
-                
+                r"""Restricting to $u<0$, the quotient $\dfrac{|u|}{u}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                False,
+                r"""On $u<0$ one has $|u|=-u$, hence
+
+Quotient:
+
+$$\frac{|u|}{u}=\frac{-u}{u}=-1$$
+
+The true constant is $-1$, not $1$.""",
             ),
         ],
         overview="Extra bars around $|A|$ collapse. Stripping outer bars from $\\bigl||A|-c\\bigr|$ needs $|A|\\ge c$; nested bars never recover a signed translation $A-c$.",
@@ -862,9 +1158,15 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Whenever $w<4$, rewriting $|w-4|$ as $4-w$ and then dividing by $4-w$ is claimed to leave $1$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w<4$.""",
+                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-8|$ collapses to $|x-8|$, because $|x|=x$ removes the inner bars before the outer comparison with $8$.""",
                 True,
-                
+                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+
+Collapse:
+
+$$||x|-8|=|x-8|$$
+
+The two expressions agree on the stated half-line.""",
             ),
             (
                 r"On the side $u>1$, rewriting $|u-1|$ as $u-1$ and dividing by $1-u$ is said to leave $-1$.",
@@ -896,9 +1198,21 @@ TASKS = [
         context=CONTEXT,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The first is a square: $w^2-8w+16=(w-4)^2$, so $|w^2-8w+16|=(w-4)^2$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $w^2-8w+16=(w-4)^2$.""",
+                r"""Factoring inside the bars, $|x^2-11x+24|$ is rewritten as $|x-3|\,|x-8|$ for every real $x$. The identity is then used to read off the zeros $x=3$ and $x=8$ without expanding, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""The trinomial factors as $(x-3)(x-8)$:
+
+Factor:
+
+$$x^2-11x+24=(x-3)(x-8)$$
+
+Absolute value:
+
+$$|x^2-11x+24|=|x-3|\,|x-8|$$
+
+Because $|uv|=|u||v|$ holds for all reals, the rewrite is an identity.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"The neighbouring trinomial $u^2-2u$ completes to $(u-1)^2-1$.",
@@ -911,9 +1225,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: At $h=7$ the quadratic $h^2-14h+48$ equals $-1$, hence its absolute value is $1$. No second independent substitution is attempted.""",
+                r"""On the half-line $x\ge 0$, the nested absolute value $||x|-5|$ collapses to $|x-5|$, because $|x|=x$ removes the inner bars before the outer comparison with $5$.""",
                 True,
-                
+                r"""For $x\ge 0$ the inner identity $|x|=x$ holds, so
+
+Collapse:
+
+$$||x|-5|=|x-5|$$
+
+The two expressions agree on the stated half-line.""",
             ),
             (
                 r"Because both look similar, $|k^2-16k+63|$ is said to equal $(k-8)^2$ as well.",
@@ -935,9 +1255,15 @@ TASKS = [
                 
             ),
             (
-                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: For $u>6$, using the left-hand piece $|u-6|=6-u$ and adding $u$ is said to leave $6$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
-                False,
-                
+                r"""Restricting to $w>0$, the quotient $\dfrac{|w|}{w}$ is recorded as the constant $1$. The complementary half-line is deliberately excluded from the claim.""",
+                True,
+                r"""On $w>0$ one has $|w|=w$, hence
+
+Quotient:
+
+$$\frac{|w|}{w}=1$$
+
+The constant $1$ matches.""",
             ),
             (
                 r"Whenever $z\ge 1$, copying $|z-1|=z-1$ and subtracting $z$ is claimed to leave $-1$.",
@@ -969,9 +1295,21 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Dropping the bars, $\sqrt{(u-1)^2}$ is replaced by $u-1$ for every real $u$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""On the whole real line, $||x|-7|$ is treated as identical to $|x-7|$, including for negative $x$, with a follow-up claim that the outer bars make the inner sign irrelevant, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""For $x=-7-1<0$ one has $|x|=7+1$, so
+
+Nested:
+
+$$||x|-7|=|7+1-7|=1$$
+
+Single:
+
+$$|x-7|=|-7-1-7|=|-15|=15$$
+
+Since $1\neq 15$, the expressions differ for negative $x$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Whenever $z>6$, replacing $\sqrt{(z-6)^2}$ by $z-6$ and concluding $\sqrt{(z-6)^2}-(z-6)=0$ is accepted.",
@@ -984,9 +1322,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Because $(k-4)^2+1\ge 1$, one has $\sqrt{\bigl((k-4)^2+1\bigr)^2}=(k-4)^2+1$, while explicitly permitting the omission of a full symbolic expansion.""",
-                True,
-                
+                r"""Restricting to $v>0$, the quotient $\dfrac{|v|}{v}$ is recorded as the constant $-1$. The complementary half-line is deliberately excluded from the claim.""",
+                False,
+                r"""On $v>0$ one has $|v|=v$, hence
+
+Quotient:
+
+$$\frac{|v|}{v}=1$$
+
+The true constant is $1$, not $-1$.""",
             ),
         ],
         overview="Completing a square and then taking a principal root produces a modulus. Dropping that modulus needs a nonnegative inside; a positive leftover after completing the square licenses $\\sqrt{A^2}=A$.",
@@ -1008,9 +1352,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first replacing each absolute-value bar by its signed form on the stated side, then simplifying the resulting expression to the printed constant or quotient, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Nested bars around a product, $\bigl||k n|\bigr|=|k||n|$, is recorded.""",
+                r"""On the closed interval $0\le k\le 5$, the two-point distance sum $|k-0|+|k-5|$ equals the constant $5$. Inserting the interior mark $2$ into a three-bar sum is a different expression and is not claimed here.""",
                 True,
-                
+                r"""For $k$ between $0$ and $5$ the bars open as
+
+Rewrite:
+
+$$|k-0|+|k-5|=(k-0)+(5-k)=5$$
+
+The constant equals the length of the segment.""",
             ),
             (
                 r"Treating $|4n|$ as interchangeable with $|n|+4$ is proposed.",

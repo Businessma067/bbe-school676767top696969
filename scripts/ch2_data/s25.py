@@ -12,9 +12,19 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After expanding $(2f+g-3h)^2$ and collecting like terms, the coefficient of $fh$ is read off as $-12$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(2f+g-3h)^2$.""",
+                r"""From the elementary symmetric data $u+v=5$ and $uv=6$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $1$.""",
                 True,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=5^2-4\cdot 6=1$$
+
+Principal root:
+
+$$|u-v|=\sqrt{1}=1$$
+
+The printed constant matches.""",
             ),
             (
                 r"Reducing $\dfrac{j^3-1331}{j-11}$ to $j^2+121$ for $j\neq 11$ is treated as an identity, because substituting $j=0$ makes both sides equal $121$.",
@@ -22,9 +32,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce the difference $\sqrt{13}-1$ — with the intermediate display still carrying $\sqrt{13}-1$.""",
-                False,
-                
+                r"""Cancelling $w-2$ from $\dfrac{w^3-8}{w-2}$ leaves $w^2+2w+4$ for $w\neq 2$. Substituting $w=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
+                True,
+                r"""Difference of cubes with constant $2^3$:
+
+Identity:
+
+$$\frac{w^3-8}{w-2}=w^2+2w+4$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
             (
                 r"Restricting to negative $\ell$, the quotient $|\ell|/\ell$ equals $-1$.",
@@ -61,9 +77,15 @@ TASKS = [
                 
             ),
             (
-                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: On the half-line $s>16$, the quotient $\dfrac{|s-16|}{16-s}$ is claimed to equal $1$. The margin note closes without expanding the general case.""",
-                False,
-                
+                r"""Cancelling $m-6$ from $\dfrac{m^3-216}{m-6}$ leaves $m^2+6m+36$ for $m\neq 6$. Substituting $m=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
+                True,
+                r"""Difference of cubes with constant $6^3$:
+
+Identity:
+
+$$\frac{m^3-216}{m-6}=m^2+6m+36$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
             (
                 r"Given the pair $u+v=16$ and $uv=15$, the distance $|u-v|$ is read off as $14$.",
@@ -85,9 +107,25 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Clearing the two-storey nest $1+\dfrac{1}{1+\dfrac{1}{j}}$ for $j\neq 0$ and $j\neq -1$ is said to leave $\dfrac{2j+1}{j+1}$. On that basis, the claim is then entered in the answer key without a second expansion.""",
+                r"""For $q\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{q}{q-1}-\dfrac{q-1}{q}}{\dfrac{q}{q-1}+\dfrac{q-1}{q}}$ is reduced to $\dfrac{2q-1}{2q^2-2q+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Clear each inner pair over $q(q-1)$:
+
+Numerator:
+
+$$\frac{q}{q-1}-\frac{q-1}{q}=\frac{q^2-(q-1)^2}{q(q-1)}=\frac{2q-1}{q(q-1)}$$
+
+Denominator:
+
+$$\frac{q}{q-1}+\frac{q-1}{q}=\frac{q^2+(q-1)^2}{q(q-1)}=\frac{2q^2-2q+1}{q(q-1)}$$
+
+Quotient:
+
+$$\frac{2q-1}{2q^2-2q+1}$$
+
+The printed target matches the reduced form.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Simplifying $16^{5/4}$ is treated as producing the integer $32$.",
@@ -95,9 +133,17 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: On the open interval $-11<\ell<11$, the sum $|\ell+11|+|\ell-11|$ is claimed to equal $2|\ell|$. Any remaining letters are declared free once that one check has passed.""",
-                False,
-                
+                r"""Provided $v\neq 0$, reducing $\dfrac{(v^{2})^{3}}{v^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $v^{2}$. A numerical check at $v=2$ recovers $4$ on both sides and is consistent with the identity.""",
+                True,
+                r"""Numerator:
+
+$$(v^{2})^{3}=v^{6}$$
+
+Quotient:
+
+$$\frac{v^{6}}{v^{4}}=v^{2}$$
+
+The check at $v=2$ is consistent because the algebra already matches.""",
             ),
             (
                 r"Whenever $r+s+t=0$ at the specific values $r=2$, $s=11$, $t=-13$, the sum of cubes $r^3+s^3+t^3$ equals $3rst$, hence $-858$.",
@@ -134,9 +180,17 @@ TASKS = [
                 
             ),
             (
-                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Evaluating the cubes at $f=5$, $g=8$, $h=-13$ (which sum to $0$) is claimed to give $f^3+g^3+h^3=-1560$, with the added remark that domain caveats may be left implicit once written once.""",
+                r"""Provided $c\neq 0$, reducing $\dfrac{(c^{2})^{3}}{c^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $c^{2}$. A numerical check at $c=2$ recovers $4$ on both sides and is consistent with the identity.""",
                 True,
-                
+                r"""Numerator:
+
+$$(c^{2})^{3}=c^{6}$$
+
+Quotient:
+
+$$\frac{c^{6}}{c^{4}}=c^{2}$$
+
+The check at $c=2$ is consistent because the algebra already matches.""",
             ),
         ],
         overview=r"Unlinked claims: odd powers cancel in a Sophie-Germain product, a cubic remainder that matches at $0$ only, the wrong conjugate of $\sqrt{15+2\sqrt{14}}$, $|2m-14|=2|m-7|$, and $f^3+g^3+h^3=3fgh$ at $(5,8,-13)$.",
@@ -158,9 +212,17 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Composing the stack $\bigl(k^{2/3}\bigr)^{3/2}$ is claimed to return $k$ for every real $k\neq 0$ — with the intermediate display still carrying $k$.""",
+                r"""Denesting $\sqrt{14+2\sqrt{13}}$ is claimed to produce $\sqrt{13}-1$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square the printed difference:
+
+Square:
+
+$$(\sqrt{13}-1)^2=13-2\sqrt{13}+1=14-2\sqrt{13}$$
+
+The cross term has the wrong sign for $\sqrt{14+2\sqrt{13}}$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"On the half-line $h<0$, the quotient $|h|/(-h)$ equals $1$.",
@@ -168,9 +230,19 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Given $u+v=15$ and $uv=14$, the sum $u^2+v^2$ is evaluated as $197$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""From the elementary symmetric data $u+v=7$ and $uv=10$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $3$.""",
                 True,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=7^2-4\cdot 10=9$$
+
+Principal root:
+
+$$|u-v|=\sqrt{9}=3$$
+
+The printed constant matches.""",
             ),
         ],
         overview=r"Five independent lines: a wrong-sign $gh$ term in $(f+2g-h)^2$, a cubic remainder checked at $j=1$, $(k^{2/3})^{3/2}=|k|$, $|h|/(-h)=1$ on $h<0$, and $u^2+v^2=197$ from $u+v=15$, $uv=14$.",
@@ -182,9 +254,13 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The coefficient of $fh$ in the expansion of $(f-2g+3h)^2$ is recorded as $+6$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $fh$.""",
-                True,
-                
+                r"""Provided $m\neq 0$, reducing $\dfrac{(m^{2})^{3}}{m^{4}}$ by cancelling the printed digits $2,3,4$ in order is claimed to leave $m^{-1}$, and substituting $m=1$ is offered as confirmation.""",
+                False,
+                r"""Correct reduction:
+
+$$\frac{(m^{2})^{3}}{m^{4}}=m^{2}$$
+
+Digit-wise cancellation is not a law of exponents. Agreement at $m=1$ hides the error because every power of $1$ equals $1$.""",
             ),
             (
                 r"Adding the swapped pair $\dfrac{j}{k}+\dfrac{k}{j}$ for $jk\neq 0$ is said to equal $\dfrac{j^2+k^2}{jk}$, and substituting $j=3$, $k=5$ makes both sides equal $34/15$.",
@@ -216,9 +292,19 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Distributing $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ is said to recover $f^4+4g^4$ after the mixed $f^2g^2$ terms cancel. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$.""",
+                r"""From the elementary symmetric data $u+v=12$ and $uv=32$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $4$.""",
                 True,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=12^2-4\cdot 32=16$$
+
+Principal root:
+
+$$|u-v|=\sqrt{16}=4$$
+
+The printed constant matches.""",
             ),
             (
                 r"Clearing the stacked difference $\dfrac{\dfrac{1}{h}-\dfrac{1}{j}}{\dfrac{1}{h}+\dfrac{1}{j}}$ is said to leave $\dfrac{h-j}{h+j}$ whenever $hj\neq 0$ and $h\neq -j$.",
@@ -231,9 +317,15 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: On the half-line $\ell>21$, the quotient $\dfrac{|\ell-21|}{\ell-21}$ equals $1$. Any remaining letters are declared free once that one check has passed.""",
-                True,
-                
+                r"""A marker treats $w^4+4z^4$ as identically equal to $(w^2+2z^2)^2$ for every real pair $(w,z)$, citing a shortened Sophie Germain argument.""",
+                False,
+                r"""The expression $w^4+4z^4$ is not already a square:
+
+Expand:
+
+$$(w^2+2z^2)^2=w^4+4w^2z^2+4z^4$$
+
+An extra middle term $4w^2z^2$ appears. The Sophie Germain rewrite must subtract $(2wz)^2$ after adding it.""",
             ),
             (
                 r"Evaluating $m^3+n^3$ from $m+n=11$ and $mn=13$ is claimed to give $1331$.",
@@ -255,9 +347,19 @@ TASKS = [
                 
             ),
             (
-                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Cancelling the quadratic ratio $\dfrac{s^2-16}{s^2-s-12}$ down to $\dfrac{s+4}{s+3}$ is claimed for $s\neq 4$ and $s\neq -3$. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
+                r"""From the elementary symmetric data $u+v=15$ and $uv=50$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $5$.""",
                 True,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=15^2-4\cdot 50=25$$
+
+Principal root:
+
+$$|u-v|=\sqrt{25}=5$$
+
+The printed constant matches.""",
             ),
             (
                 r"Composing the rational powers $(t^{3/4})^{4/3}$ is said to return $t$ whenever $t>0$.",
@@ -289,9 +391,23 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Reducing the quadratic $\dfrac{j^2-29j+210}{j-14}$ to $j-14$ for $j\neq 14$ is treated as an identity. On that basis, a second marker initials the line after comparing only the leading terms.""",
-                False,
-                
+                r"""For $z\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{z}{z-1}-\dfrac{z-1}{z}}{\dfrac{z}{z-1}+\dfrac{z-1}{z}}$ is reduced to $\dfrac{2z-1}{2z^2-2z+1}$ after clearing the inner denominators once.""",
+                True,
+                r"""Clear each inner pair over $z(z-1)$:
+
+Numerator:
+
+$$\frac{z}{z-1}-\frac{z-1}{z}=\frac{z^2-(z-1)^2}{z(z-1)}=\frac{2z-1}{z(z-1)}$$
+
+Denominator:
+
+$$\frac{z}{z-1}+\frac{z-1}{z}=\frac{z^2+(z-1)^2}{z(z-1)}=\frac{2z^2-2z+1}{z(z-1)}$$
+
+Quotient:
+
+$$\frac{2z-1}{2z^2-2z+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"Simplifying the power $16^{3/2}$ is treated as producing the integer $64$.",
@@ -304,9 +420,15 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Given the elementary data $v+w=21$ and $vw=35$, the sum of reciprocals $1/v+1/w$ is evaluated as $3/5$, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""Cancelling $t-4$ from $\dfrac{t^3-64}{t-4}$ leaves $t^2+4t+16$ for $t\neq 4$. Substituting $t=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
                 True,
-                
+                r"""Difference of cubes with constant $4^3$:
+
+Identity:
+
+$$\frac{t^3-64}{t-4}=t^2+4t+16$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
         ],
         overview=r"Five independent lines: the $fg$ coefficient $8$ in $(f+4g-h)^2$, a cancelled-factor leftover, $16^{3/2}=64$, nested bars that cannot be stripped, and $1/v+1/w=3/5$ from $v+w=21$, $vw=35$.",
@@ -328,9 +450,25 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Matching positive roots, $\sqrt{21+8\sqrt{5}}$ is identified with $4+\sqrt{5}$ — with the intermediate display still carrying $4+\sqrt{5}$.""",
+                r"""For $v\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{v}{v-1}-\dfrac{v-1}{v}}{\dfrac{v}{v-1}+\dfrac{v-1}{v}}$ is reduced to $\dfrac{2v-1}{2v^2-2v+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Clear each inner pair over $v(v-1)$:
+
+Numerator:
+
+$$\frac{v}{v-1}-\frac{v-1}{v}=\frac{v^2-(v-1)^2}{v(v-1)}=\frac{2v-1}{v(v-1)}$$
+
+Denominator:
+
+$$\frac{v}{v-1}+\frac{v-1}{v}=\frac{v^2+(v-1)^2}{v(v-1)}=\frac{2v^2-2v+1}{v(v-1)}$$
+
+Quotient:
+
+$$\frac{2v-1}{2v^2-2v+1}$$
+
+The printed target matches the reduced form.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Pulling the constant factor, $|-5\ell+15|$ is rewritten as $5|\ell-3|$ for every real $\ell$.",
@@ -352,9 +490,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: After collecting terms in $(f-g+2h)^2$, the coefficient of $gh$ is read off as $-4$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f-g+2h)^2$.""",
+                r"""Cancelling $w-12$ from $\dfrac{w^3-1728}{w-12}$ leaves $w^2+12w+144$ for $w\neq 12$. Substituting $w=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
                 True,
-                
+                r"""Difference of cubes with constant $12^3$:
+
+Identity:
+
+$$\frac{w^3-1728}{w-12}=w^2+12w+144$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
             (
                 r"Subtracting the swapped pair $\dfrac{k}{m}-\dfrac{m}{k}$ for $km\neq 0$ is said to equal $\dfrac{k^2-m^2}{km}$, and substituting $k=5$, $m=3$ makes both sides equal $16/15$.",
@@ -362,9 +506,13 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Extracting the real cube root $\sqrt[3]{-125j^6}$ is claimed to equal $-5j^2$ for every real $j$ — with the intermediate display still carrying $-5j^2$.""",
+                r"""Denesting $\sqrt{10+4\sqrt{6}}$ is claimed to produce $\sqrt{6}+2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
                 True,
-                
+                r"""Square:
+
+$$(\sqrt{6}+2)^2=6+4\sqrt{6}+4=10+4\sqrt{6}$$
+
+Match.""",
             ),
             (
                 r"Restricting to negative $s$, the quotient $|s|/s$ is claimed to equal $1$.",
@@ -401,9 +549,13 @@ TASKS = [
                 
             ),
             (
-                r"""Relying on the observation that a particular test pair does not immediately refute the line, the marker records the universal claim: On the positive half-line $\ell>0$, the quotient $|2\ell|/\ell$ equals $2$. The claim is filed as settled for every admissible value of the letters.""",
+                r"""Denesting $\sqrt{15+6\sqrt{6}}$ is claimed to produce $3+\sqrt{6}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
                 True,
-                
+                r"""Square:
+
+$$(3+\sqrt{6})^2=9+6\sqrt{6}+6=15+6\sqrt{6}$$
+
+Match.""",
             ),
             (
                 r"Factoring the biquadratic $n^4+64$ as $(n^2+4n+8)(n^2-4n+8)$ is offered as an identity.",
@@ -425,9 +577,13 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Reducing the sum-of-cubes quotient $\dfrac{n^3+2744}{n+14}$ to $n^2+14n+196$ for $n\neq -14$ is treated as an identity. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""Provided $v\neq 0$, reducing $\dfrac{(v^{2})^{3}}{v^{4}}$ by cancelling the printed digits $2,3,4$ in order is claimed to leave $v^{-1}$, and substituting $v=1$ is offered as confirmation.""",
                 False,
-                
+                r"""Correct reduction:
+
+$$\frac{(v^{2})^{3}}{v^{4}}=v^{2}$$
+
+Digit-wise cancellation is not a law of exponents. Agreement at $v=1$ hides the error because every power of $1$ equals $1$.""",
             ),
             (
                 r"Matching positive roots, $\sqrt{13+4\sqrt{3}}$ is identified with $1+2\sqrt{3}$.",
@@ -435,9 +591,15 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: For every real $t\neq 13$, the quotient $\dfrac{|t-13|}{|13-t|}$ equals $1$. No second independent substitution is attempted.""",
-                True,
-                
+                r"""A marker treats $u^4+4v^4$ as identically equal to $(u^2+2v^2)^2$ for every real pair $(u,v)$, citing a shortened Sophie Germain argument.""",
+                False,
+                r"""The expression $u^4+4v^4$ is not already a square:
+
+Expand:
+
+$$(u^2+2v^2)^2=u^4+4u^2v^2+4v^4$$
+
+An extra middle term $4u^2v^2$ appears. The Sophie Germain rewrite must subtract $(2uv)^2$ after adding it.""",
             ),
             (
                 r"Treating the vanishing of $u+v+w$ at $u=1$, $v=14$, $w=-15$ as forcing $u^3+v^3+w^3=0$ is proposed.",
@@ -474,9 +636,15 @@ TASKS = [
                 
             ),
             (
-                r"""According to the examiner's standardisation sheet, the following holds on the stated domain: Given the elementary data $r+s=21$ and $rs=35$, the sum $r^2+s^2$ is evaluated as $371$, and further instructs candidates to treat any matching numerical check as decisive.""",
-                True,
-                
+                r"""A marker treats $h^4+4k^4$ as identically equal to $(h^2+2k^2)(h^2-2k^2)$ for every real pair $(h,k)$, citing a shortened Sophie Germain argument.""",
+                False,
+                r"""A difference of squares in $h^2$ and $2k^2$ would give
+
+Product:
+
+$$(h^2+2k^2)(h^2-2k^2)=h^4-4k^4$$
+
+The sign of the last term is wrong for $h^4+4k^4$.""",
             ),
         ],
         overview=r"Unlinked claims: grouping $fg+11f+13g+143$, a nested unit remainder $1/(j+1)$, $16^{3/4}=8$ rather than $4$, the triangle inequality on mixed signs, and $r^2+s^2=371$.",
@@ -498,9 +666,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Extracting a cube root, $\sqrt[3]{8s^6}$ is simplified to $2s^2$ for every real $s$ — with the intermediate display still carrying $2s^2$.""",
+                r"""From the elementary symmetric data $u+v=13$ and $uv=36$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $5$.""",
                 True,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=13^2-4\cdot 36=25$$
+
+Principal root:
+
+$$|u-v|=\sqrt{25}=5$$
+
+The printed constant matches.""",
             ),
             (
                 r"Treating the sign quotient $|\ell|/\ell$ as identically $1$ for every $\ell\neq 0$ is proposed.",
@@ -508,9 +686,15 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Adding the reciprocals from $k+m=11$ and $km=13$ is claimed to give $1/k+1/m=11/13$, while explicitly permitting the omission of a full symbolic expansion.""",
+                r"""Cancelling $j-13$ from $\dfrac{j^3-2197}{j-13}$ leaves $j^2+13j+169$ for $j\neq 13$. Substituting $j=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
                 True,
-                
+                r"""Difference of cubes with constant $13^3$:
+
+Identity:
+
+$$\frac{j^3-2197}{j-13}=j^2+13j+169$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
         ],
         overview=r"Five independent lines: a wrong-sign $gh$ coefficient, the remainder $j-20$, $\sqrt[3]{8s^6}=2s^2$, $|\ell|/\ell$ only piecewise $1$, and $1/k+1/m=11/13$.",
@@ -522,9 +706,21 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The coefficient of $fg$ in the expansion of $(3f-g-2h)^2$ is recorded as $-6$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $fg$.""",
+                r"""Adding and subtracting $4f^2g^2$ inside $f^4+4g^4$ is claimed to produce the difference of squares $(f^2+2g^2)^2-(2fg)^2$, which then factors as $(f^2-2fg+2g^2)(f^2+2fg+2g^2)$ on every real pair $(f,g)$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Complete to a difference of squares by inserting $\pm 4f^2g^2$:
+
+Rewrite:
+
+$$f^4+4g^4=(f^2+2g^2)^2-(2fg)^2$$
+
+Factor:
+
+$$=(f^2-2fg+2g^2)(f^2+2fg+2g^2)$$
+
+Both steps are identities in the two letters.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Reducing the cubic $\dfrac{w^3-2197}{w-13}$ to $w^2+169$ for $w\neq 13$ is treated as an identity after a check at $w=0$ gives $169$ on both sides.",
@@ -556,9 +752,17 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding the square $(f+2g+h)^2$ is written with the coefficient of $gh$ equal to $2$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f+2g+h)^2$.""",
-                False,
-                
+                r"""Cancelling $m-6$ from $\dfrac{m^3-216}{m-6}$ leaves $m^2+6m+36$ for $m\neq 6$. Substituting $m=1$ recovers the same integer on the original fraction and on the reduced quadratic, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Difference of cubes with constant $6^3$:
+
+Identity:
+
+$$\frac{m^3-216}{m-6}=m^2+6m+36$$
+
+The substitution check is consistent with a true polynomial identity.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Cancelling a difference of fourth powers, $\dfrac{j^4-1}{j^2-1}$ is said to leave $j^2+1$ whenever $j\neq\pm 1$.",
@@ -571,9 +775,23 @@ TASKS = [
                 
             ),
             (
-                r"""The working is arranged so that an intermediate numerical check looks supportive; from that support the following identity is asserted on the whole domain: Pulling a positive factor, $|2t-32|$ is rewritten as $2|t-16|$ for every real $t$. No second independent substitution is attempted.""",
+                r"""For $u\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{u}{u-1}-\dfrac{u-1}{u}}{\dfrac{u}{u-1}+\dfrac{u-1}{u}}$ is reduced to $\dfrac{2u-1}{2u^2-2u+1}$ after clearing the inner denominators once.""",
                 True,
-                
+                r"""Clear each inner pair over $u(u-1)$:
+
+Numerator:
+
+$$\frac{u}{u-1}-\frac{u-1}{u}=\frac{u^2-(u-1)^2}{u(u-1)}=\frac{2u-1}{u(u-1)}$$
+
+Denominator:
+
+$$\frac{u}{u-1}+\frac{u-1}{u}=\frac{u^2+(u-1)^2}{u(u-1)}=\frac{2u^2-2u+1}{u(u-1)}$$
+
+Quotient:
+
+$$\frac{2u-1}{2u^2-2u+1}$$
+
+The printed target matches the reduced form.""",
             ),
             (
                 r"Completing the square, $k^4+4m^4$ is identified with $(k^2+2m^2)^2$ as an identity in $k$ and $m$.",
@@ -595,9 +813,15 @@ TASKS = [
                 
             ),
             (
-                r"""With the provisional reading that like terms have already been collected correctly, the following assertion is recorded: After cancelling, $\dfrac{h^2-16h+63}{h-7}$ equals $h-9$ for $h\neq 7$. On that basis, the remaining cross-check against a concrete numerical pair is judged unnecessary.""",
+                r"""Cancelling $q-10$ from $\dfrac{q^3-1000}{q-10}$ leaves $q^2+10q+100$ for $q\neq 10$. Substituting $q=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
                 True,
-                
+                r"""Difference of cubes with constant $10^3$:
+
+Identity:
+
+$$\frac{q^3-1000}{q-10}=q^2+10q+100$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
             (
                 r"Denesting the nested radical $\sqrt{16+2\sqrt{15}}$ is claimed to equal $2+\sqrt{15}$.",
@@ -629,9 +853,19 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Rewriting the compound ratio $\dfrac{1+\dfrac{j}{k}}{1-\dfrac{j}{k}}$ as $\dfrac{k-j}{k+j}$ is claimed for $k\neq 0$ and $k\neq j$. On that basis, the claim is then entered in the answer key without a second expansion.""",
-                False,
-                
+                r"""Provided $c\neq 0$, reducing $\dfrac{(c^{2})^{3}}{c^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $c^{2}$. A numerical check at $c=2$ recovers $4$ on both sides and is consistent with the identity, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Numerator:
+
+$$(c^{2})^{3}=c^{6}$$
+
+Quotient:
+
+$$\frac{c^{6}}{c^{4}}=c^{2}$$
+
+The check at $c=2$ is consistent because the algebra already matches.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Cubing the two-thirds power, $\bigl(t^{2/3}\bigr)^3$ is said to equal $t^2$ for every real $t$.",
@@ -644,9 +878,13 @@ TASKS = [
                 
             ),
             (
-                r"""A standardisation remark distributed with the script states that the following holds on the stated domain: Recording the cubes at $r=3$, $s=8$, $t=-11$ (which sum to $0$) as $r^3+s^3+t^3=0$ is proposed, while explicitly permitting the omission of a full symbolic expansion.""",
-                False,
-                
+                r"""Denesting $\sqrt{9+4\sqrt{5}}$ is claimed to produce $2+\sqrt{5}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                True,
+                r"""Square:
+
+$$(2+\sqrt{5})^2=4+4\sqrt{5}+5=9+4\sqrt{5}$$
+
+Match.""",
             ),
         ],
         overview=r"Unlinked claims: a wrong-sign $fh$ coefficient, a reciprocal trap in $(1+j/k)/(1-j/k)$, $(t^{2/3})^3=t^2$, the piecewise constant $30$ of $|\ell\pm 15|$ inside $(-15,15)$, and $r^3+s^3+t^3=-792$ at $(3,8,-11)$.",
@@ -668,9 +906,13 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then discarding what remains after the principal operation as 'identically zero'. The finished claim reads: Simplifying the power $16^{5/4}$ is treated as producing the integer $8$ — with the intermediate display still carrying $8$.""",
+                r"""Provided $g\neq 0$, reducing $\dfrac{(g^{2})^{3}}{g^{4}}$ by cancelling the printed digits $2,3,4$ in order is claimed to leave $g^{-1}$, and substituting $g=1$ is offered as confirmation.""",
                 False,
-                
+                r"""Correct reduction:
+
+$$\frac{(g^{2})^{3}}{g^{4}}=g^{2}$$
+
+Digit-wise cancellation is not a law of exponents. Agreement at $g=1$ hides the error because every power of $1$ equals $1$.""",
             ),
             (
                 r"Writing the quotient $\bigl|\dfrac{r}{s}\bigr|$ as $\dfrac{|r|}{|s|}$ for $s\neq 0$ is accepted.",
@@ -692,9 +934,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding the square $(f-g+3h)^2$ is written with the coefficient of $fh$ equal to $3$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(f-g+3h)^2$.""",
+                r"""Denesting $\sqrt{11+6\sqrt{2}}$ is claimed to produce $3-\sqrt{2}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(3-\sqrt{2})^2=9-6\sqrt{2}+2=11-6\sqrt{2}$$
+
+Wrong middle sign.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Cancelling a difference of squares, $\dfrac{j^2-121}{j-11}$ is said to leave $j+11$ for $j\neq 11$, and substituting $j=0$ recovers $11$ on both sides.",
@@ -702,9 +950,19 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Matching positive roots, $\sqrt{16+2\sqrt{15}}$ is identified with $1+\sqrt{15}$ — with the intermediate display still carrying $1+\sqrt{15}$.""",
+                r"""From the elementary symmetric data $u+v=6$ and $uv=8$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $2$.""",
                 True,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=6^2-4\cdot 8=4$$
+
+Principal root:
+
+$$|u-v|=\sqrt{4}=2$$
+
+The printed constant matches.""",
             ),
             (
                 r"Dropping the bars around $2\ell+16$ and writing $2\ell+16$ for every real $\ell$ is offered as an identity.",
@@ -741,9 +999,21 @@ TASKS = [
                 
             ),
             (
-                r"""A candidate first checks a single convenient substitution, finds that both sides agree numerically at that point, and then elevates the agreement to a claimed identity: Restricting to positive $\ell$, the quotient $\dfrac{|\ell-21|}{21-\ell}$ is claimed to equal $1$. The margin note closes without expanding the general case.""",
-                False,
-                
+                r"""From the elementary symmetric data $u+v=12$ and $uv=32$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $4$, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=12^2-4\cdot 32=16$$
+
+Principal root:
+
+$$|u-v|=\sqrt{16}=4$$
+
+The printed constant matches.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Given the pair $u+v=14$ and $uv=13$, the sum $u^2+v^2$ is evaluated as $170$.",
@@ -765,9 +1035,15 @@ TASKS = [
                 
             ),
             (
-                r"""Taking as given that the clerk's intermediate cancellation step introduces no hidden factors, the following assertion is recorded: Cancelling a quadratic, $\dfrac{h^2-21h+104}{h-13}$ is said to leave $h-8$ for $h\neq 13$. On that basis, the claim is then entered in the answer key without a second expansion.""",
-                True,
-                
+                r"""A marker treats $n^4+4m^4$ as identically equal to $(n^2+2m^2)(n^2-2m^2)$ for every real pair $(n,m)$, citing a shortened Sophie Germain argument.""",
+                False,
+                r"""A difference of squares in $n^2$ and $2m^2$ would give
+
+Product:
+
+$$(n^2+2m^2)(n^2-2m^2)=n^4-4m^4$$
+
+The sign of the last term is wrong for $n^4+4m^4$.""",
             ),
             (
                 r"Simplifying a monomial radical, $(16k^4)^{1/4}$ is rewritten as $2k$ for every real $k$.",
@@ -775,9 +1051,23 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Claiming the absolute value $|\ell^2+14|$ can equal $0$ for some real $\ell$ is proposed. Any remaining letters are declared free once that one check has passed.""",
+                r"""For $m\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{m}{m-1}-\dfrac{m-1}{m}}{\dfrac{m}{m-1}+\dfrac{m-1}{m}}$ is reduced to $\dfrac{2m-1}{2m^2-2m}$ after clearing the inner denominators once.""",
                 False,
-                
+                r"""Clear each inner pair over $m(m-1)$:
+
+Numerator:
+
+$$\frac{m}{m-1}-\frac{m-1}{m}=\frac{m^2-(m-1)^2}{m(m-1)}=\frac{2m-1}{m(m-1)}$$
+
+Denominator:
+
+$$\frac{m}{m-1}+\frac{m-1}{m}=\frac{m^2+(m-1)^2}{m(m-1)}=\frac{2m^2-2m+1}{m(m-1)}$$
+
+Quotient:
+
+$$\frac{2m-1}{2m^2-2m+1}$$
+
+The printed denominator drops the constant $+1$, so the claim is false.""",
             ),
             (
                 r"Adding the reciprocals from $r+s=13$ and $rs=21$ is claimed to give $1/r+1/s=13/21$.",
@@ -814,9 +1104,25 @@ TASKS = [
                 
             ),
             (
-                r"""The board's model solution records, as if it were an identity, the following holds on the stated domain: Evaluating the cubes at $r=5$, $u=11$, $w=-16$ (which sum to $0$) is claimed to give $r^3+u^3+w^3=-2640$, with the added remark that domain caveats may be left implicit once written once.""",
+                r"""For $z\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{z}{z-1}-\dfrac{z-1}{z}}{\dfrac{z}{z-1}+\dfrac{z-1}{z}}$ is reduced to $\dfrac{2z-1}{2z^2-2z+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Clear each inner pair over $z(z-1)$:
+
+Numerator:
+
+$$\frac{z}{z-1}-\frac{z-1}{z}=\frac{z^2-(z-1)^2}{z(z-1)}=\frac{2z-1}{z(z-1)}$$
+
+Denominator:
+
+$$\frac{z}{z-1}+\frac{z-1}{z}=\frac{z^2+(z-1)^2}{z(z-1)}=\frac{2z^2-2z+1}{z(z-1)}$$
+
+Quotient:
+
+$$\frac{2z-1}{2z^2-2z+1}$$
+
+The printed target matches the reduced form.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
         ],
         overview=r"Five unlinked lines: a forgotten doubling of $fh$, opposite linear fractions summing to $1$ not $0$, $\sqrt[3]{-8s^9}=-2s^3$, $|-\ell|=|\ell|$, and $r^3+u^3+w^3=3ruw$ at $(5,11,-16)$.",
@@ -838,9 +1144,15 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then treating the rewritten line as settled on the whole stated domain. The finished claim reads: Denesting the nested radical $\sqrt{21+8\sqrt{5}}$ is claimed to equal $4-\sqrt{5}$ — with the intermediate display still carrying $4-\sqrt{5}$.""",
-                False,
-                
+                r"""Cancelling $j-8$ from $\dfrac{j^3-512}{j-8}$ leaves $j^2+8j+64$ for $j\neq 8$. Substituting $j=1$ recovers the same integer on the original fraction and on the reduced quadratic.""",
+                True,
+                r"""Difference of cubes with constant $8^3$:
+
+Identity:
+
+$$\frac{j^3-512}{j-8}=j^2+8j+64$$
+
+The substitution check is consistent with a true polynomial identity.""",
             ),
             (
                 r"Opposite linear forms satisfy $|3\ell-21|=|21-3\ell|$ for every real $\ell$.",
@@ -848,9 +1160,13 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Rewriting the swapped-ratio sum $k/m+m/k$ from $k+m=15$ and $km=21$ as $15/21$ is treated as correct, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
-                False,
-                
+                r"""Denesting $\sqrt{8+2\sqrt{15}}$ is claimed to produce $\sqrt{5}+\sqrt{3}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign.""",
+                True,
+                r"""Square:
+
+$$(\sqrt{5}+\sqrt{3})^2=5+2\sqrt{15}+3=8+2\sqrt{15}$$
+
+Both sides positive.""",
             ),
         ],
         overview=r"Unlinked claims: the $gh$ coefficient $-8$ in $(f-4g+h)^2$, a halved numerator $11$ instead of $22$, the wrong conjugate of $\sqrt{21+8\sqrt{5}}$, $|3\ell-21|=|21-3\ell|$, and $k/m+m/k=61/7$ rather than $5/7$.",
@@ -862,9 +1178,25 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: Expanding the square $(3f-2g+h)^2$ is written with the coefficient of $fg$ equal to $-6$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $(3f-2g+h)^2$.""",
-                False,
-                
+                r"""For $s\notin\{0,1\}$, the nested quotient $\dfrac{\dfrac{s}{s-1}-\dfrac{s-1}{s}}{\dfrac{s}{s-1}+\dfrac{s-1}{s}}$ is reduced to $\dfrac{2s-1}{2s^2-2s+1}$ after clearing the inner denominators once, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
+                True,
+                r"""Clear each inner pair over $s(s-1)$:
+
+Numerator:
+
+$$\frac{s}{s-1}-\frac{s-1}{s}=\frac{s^2-(s-1)^2}{s(s-1)}=\frac{2s-1}{s(s-1)}$$
+
+Denominator:
+
+$$\frac{s}{s-1}+\frac{s-1}{s}=\frac{s^2+(s-1)^2}{s(s-1)}=\frac{2s^2-2s+1}{s(s-1)}$$
+
+Quotient:
+
+$$\frac{2s-1}{2s^2-2s+1}$$
+
+The printed target matches the reduced form.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Cancelling a quadratic, $\dfrac{k^2-29k+210}{k-15}$ is said to leave $k-14$ for $k\neq 15$.",
@@ -896,9 +1228,15 @@ TASKS = [
         context=CTX,
         items=[
             (
-                r"""Having first noted the printed data and working without solving the underlying system for each letter separately, an examiner restates the claim as follows: The coefficient of $fh$ in the expansion of $(2f-g-2h)^2$ is recorded as $-8$. The same note then ticks the line as settled, arguing that no further algebraic check is required once the rewritten form has been written beside the original expression involving $fh$.""",
+                r"""Denesting $\sqrt{15+6\sqrt{6}}$ is claimed to produce $3+\sqrt{6}$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 True,
-                
+                r"""Square:
+
+$$(3+\sqrt{6})^2=9+6\sqrt{6}+6=15+6\sqrt{6}$$
+
+Match.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Clearing a difference of reciprocal squares, $\dfrac{1}{j^2}-\dfrac{1}{k^2}$ is said to equal $\dfrac{k-j}{j^2k^2}$ whenever $jk\neq 0$.",
@@ -911,9 +1249,17 @@ TASKS = [
                 
             ),
             (
-                r"""After a quick numerical spot-check that happens to match, the notebook promotes the local agreement into a general rule: Subtracting two absolute values, $|\ell+11|-|\ell|$ is claimed to equal $11$ for every real $\ell$. Any remaining letters are declared free once that one check has passed.""",
-                False,
-                
+                r"""Provided $r\neq 0$, reducing $\dfrac{(r^{2})^{3}}{r^{4}}$ by multiplying exponents upstairs then subtracting downstairs leaves $r^{2}$. A numerical check at $r=2$ recovers $4$ on both sides and is consistent with the identity.""",
+                True,
+                r"""Numerator:
+
+$$(r^{2})^{3}=r^{6}$$
+
+Quotient:
+
+$$\frac{r^{6}}{r^{4}}=r^{2}$$
+
+The check at $r=2$ is consistent because the algebra already matches.""",
             ),
             (
                 r"Given the elementary data $u+v=21$ and $uv=16$, the sum $u^2+v^2$ is claimed to equal $441$.",
@@ -935,9 +1281,15 @@ TASKS = [
                 
             ),
             (
-                r"""Under the standing hypothesis that every letter is real (and nonzero wherever a denominator appears), the following assertion is recorded: Reducing the sum-of-cubes quotient $\dfrac{h^3+1331}{h+11}$ to $h^2+11h+121$ for $h\neq -11$ is treated as an identity. On that basis, the notebook treats the rewritten form as an identity on the whole stated domain.""",
+                r"""Denesting $\sqrt{7+4\sqrt{3}}$ is claimed to produce $\sqrt{3}-2$ as the principal square root, after comparing squared conjugates and discarding the form whose cross term has the opposite sign, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Square:
+
+$$(\sqrt{3}-2)^2=3-4\sqrt{3}+4=7-4\sqrt{3}$$
+
+Wrong sign on the middle term; also $\sqrt{3}-2<0$ cannot be a principal root.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Denesting the nested radical $\sqrt{13+2\sqrt{30}}$ is claimed to equal $\sqrt{10}-\sqrt{3}$.",
@@ -969,9 +1321,17 @@ TASKS = [
                 
             ),
             (
-                r"""Granting the domain restrictions printed with the claim, and further assuming the marker's shorthand is exact, the following assertion is recorded: Simplifying the stacked ratio $\dfrac{j-\dfrac{1}{j}}{j+\dfrac{1}{j}}$ to $\dfrac{j-1}{j+1}$ is claimed for every real $j\neq 0$. On that basis, a second marker initials the line after comparing only the leading terms.""",
+                r"""A marker treats $h^4+4k^4$ as identically equal to $(h^2+2k^2)(h^2-2k^2)$ for every real pair $(h,k)$, citing a shortened Sophie Germain argument, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""A difference of squares in $h^2$ and $2k^2$ would give
+
+Product:
+
+$$(h^2+2k^2)(h^2-2k^2)=h^4-4k^4$$
+
+The sign of the last term is wrong for $h^4+4k^4$.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Composing the fifth-power stack $(w^{2/5})^{5/2}$ is said to return $w$ whenever $w>0$.",
@@ -984,9 +1344,19 @@ TASKS = [
                 
             ),
             (
-                r"""In the version circulated to markers, an administrative note asserts that the following holds on the stated domain: Reading the distance $|k-m|$ from $k+m=16$ and $km=35$ as $6$ is treated as correct, together with the instruction that mixed-product coefficients need not be recomputed from scratch.""",
+                r"""From the elementary symmetric data $u+v=11$ and $uv=24$, the distance $|u-v|$ is evaluated by first forming $(u-v)^2=(u+v)^2-4uv$ and then taking the principal square root, yielding the constant $6$.""",
                 False,
-                
+                r"""Pass to the squared gap before taking roots:
+
+Identity:
+
+$$(u-v)^2=(u+v)^2-4uv=11^2-4\cdot 24=25$$
+
+Principal root:
+
+$$|u-v|=\sqrt{25}=5$$
+
+The true distance is $5$, not $6$.""",
             ),
         ],
         overview=r"Independent claims: the $gh$ coefficient $12$ in $(f-2g-3h)^2$, $(j-1/j)/(j+1/j)=(j^2-1)/(j^2+1)$, $(w^{2/5})^{5/2}=w$ for $w>0$, $|2\ell|/\ell$ only piecewise $2$, and $|k-m|=2\sqrt{29}$ rather than $6$.",
@@ -1008,9 +1378,17 @@ TASKS = [
                 
             ),
             (
-                r"""A multi-step margin note proceeds by first stacking or combining the exponents by the printed power rule, then equating the simplified monomial with the target written in the margin, and then substituting a single convenient test value and reading agreement as confirmation. The finished claim reads: Denesting the nested radical $\sqrt{21+12\sqrt{3}}$ is claimed to equal $2\sqrt{3}-3$ — with the intermediate display still carrying $2\sqrt{3}-3$.""",
+                r"""A marker treats $j^4+4k^4$ as identically equal to $(j^2+2jk+2k^2)^2$ for every real pair $(j,k)$, citing a shortened Sophie Germain argument, and a margin check at the probe value equal to $0$ is cited as supporting evidence.""",
                 False,
-                
+                r"""Squaring one Sophie Germain factor alone produces
+
+Expand:
+
+$$(j^2+2jk+2k^2)^2=j^4+4j^3k+8j^2k^2+8jk^3+4k^4$$
+
+Cross terms survive; the identity requires the product of both conjugate factors.
+
+A single probe at $0$ cannot replace the algebraic comparison above.""",
             ),
             (
                 r"Adding opposite quotients, $|\ell|/\ell+|\ell|/(-\ell)$ equals $0$ for every $\ell\neq 0$.",

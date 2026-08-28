@@ -20,21 +20,30 @@ def task(
         raise ValueError(f"{title}: expected 5 items, got {len(items)}")
     statements: list[str] = []
     keys: list[bool] = []
+    authored: list[str | None] = []
     for item in items:
         if len(item) == 2:
             stmt, truth = item
+            body: str | None = None
         elif len(item) == 3:
-            stmt, truth, _legacy = item
+            stmt, truth, body = item
         else:
-            raise ValueError(f"{title}: item must be (statement, truth)")
+            raise ValueError(f"{title}: item must be (statement, truth[, body])")
         statements.append(str(stmt).strip())
         keys.append(bool(truth))
+        authored.append(None if body is None else str(body).strip())
 
     profiles = assign_profiles(statements, subsection)
-    explanations = [
-        generate_body(statements[i], keys[i], subsection, i, profile=profiles[i])
-        for i in range(5)
-    ]
+    explanations: list[str] = []
+    for i in range(5):
+        if authored[i]:
+            explanations.append(authored[i])
+        else:
+            explanations.append(
+                generate_body(
+                    statements[i], keys[i], subsection, i, profile=profiles[i]
+                )
+            )
 
     return {
         "title": title.strip(),
