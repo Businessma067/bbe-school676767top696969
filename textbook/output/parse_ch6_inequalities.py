@@ -66,6 +66,82 @@ FOUR_DOTS_RE = re.compile(r"\.{4,}")
 STRAY_DOT_PAREN_RE = re.compile(r"\((\d+\.\d+)\.\s*\)")
 ENDS_MATH_OP_RE = re.compile(r"[<>=≤≥≠+\-−×/→]$")
 
+ARROW_STEP_RE = re.compile(r"\s→\s")
+
+GENERIC_TRAP_PATTERNS = [
+    r"always test (?:a )?(?:point|one value|a value) in (?:every|each) region",
+    r"test one value in every region",
+    r"test (?:a )?(?:specific )?number rather than (?:guessing|trusting)",
+    r"(?:four|three|five) (?:regions|intervals).*(?:chances to slip|easy to)",
+    r"lose track of (?:one )?sign flip",
+    r"sign pattern just alternates",
+    r"assuming the pattern simply alternates",
+    r"see Questions?",
+    r"Question\s+\d+",
+    r"appears here for (?:a )?(?:third|second) time",
+    r"both halves of a compound inequality must be solved and intersected",
+    r"each half of (?:a|the) compound inequality must (?:still be )?solved",
+    r"An irrational boundary makes the single-interval answer look plausible",
+    r"Seeing an irrational boundary.*makes it tempting",
+    r"makes it tempting to report one continuous interval",
+    r"When both halves of a compound inequality produce irrational roots",
+    r"Combining a double quadratic inequality into what looks like one smooth range",
+    r"When one half of a compound inequality turns out to be true for all real numbers",
+    r"When one half of a compound inequality reduces to a perfect square",
+    r"When one half of a compound inequality collapses to a perfect square",
+    r"When a compound inequality's left half collapses to a perfect square",
+    r"Don't assume the left half of a compound inequality is automatically",
+    r"Don't assume a compound inequality's left half is automatically",
+    r"always intersect both halves carefully rather than reporting only the outer",
+    r"With (?:two|three|four) critical points",
+    r"With (?:two|three|four) (?:numerator roots|intervals)",
+    r"it's easy to (?:forget|lose track|assume|only check)",
+    r"always verify with a test point, since a quadratic numerator",
+]
+
+USEFUL_TRAP_PATTERNS = [
+    r"denominator zero|denominator's root|division by 0|makes the denominator",
+    r"squared numerator",
+    r"isolated (?:point|extra)",
+    r"perfect square.*(?:strictly|never negative|exactly one|single gap)",
+    r"strict factored|excludes a whole interval|whole middle|interior region is excluded",
+    r"don't commute|order.*(?:discount|coupon|percent)",
+    r"rounds in opposite directions",
+    r"target average|average speed.*not|goal.*not the|not the target speed|not the number that solves",
+    r"extraneous|square root.*(?:negative|domain)|under the square root",
+    r"absolute value.*(?:distance|split|cases)",
+    r"sign doesn't flip|numerator stays (?:non-)?negative|quadratic numerator.*negative between",
+    r"multiplying or dividing by a negative|direction.*flip",
+    r"negative discriminant.*(?:good news|guarantees|no real|always true)",
+    r"repeated root behaves",
+    r"only the one that comes from the numerator",
+    r"numerator.*denominator|denominator.*numerator",
+    r"percentage discounts and flat-amount",
+    r"whole number.*round",
+]
+
+# Word Problems — Average Cycling Speed (task 10 in 6.4): replace meta statement E.
+STATEMENT_OVERRIDES: dict[tuple[str, str, str], dict[str, str]] = {
+    ("6.4", "Average Cycling Speed", "E"): {
+        "text": (
+            "The inequality (12+x)/2 ≥ 15 correctly models "
+            "the average-speed requirement."
+        ),
+        "explanation": (
+            "Average speed equals total distance divided by total time. "
+            "The first hour covers 12 miles and the second covers x miles, "
+            "so the average is (12+x)/2. "
+            "Requiring at least 15 mph over 2 hours gives (12+x)/2 ≥ 15."
+        ),
+    },
+    ("6.4", "Average Cycling Speed", "C"): {
+        "trap": (
+            "The number 15 is the target average speed, not the minimum speed "
+            "required in the second hour when the first segment falls below that goal."
+        ),
+    },
+}
+
 
 def fix_extract(s: str) -> str:
     s = s.replace("\u00a0", " ")
@@ -337,8 +413,85 @@ def chart_markdown(chart: list[tuple[str, str]]) -> str:
         return ""
     rows = ["| Interval | Sign |", "| --- | --- |"]
     for interval, sign in chart:
-        rows.append(f"| {wrap_math(interval)} | ${sign}$ |")
+        rows.append(f"| {wrap_math(interval)} | {sign} |")
     return "\n".join(rows)
+
+
+def split_arrow_chains(text: str) -> str:
+    """Put each algebraic step on its own line instead of chaining with arrows."""
+    if " → " not in text:
+        return text
+    parts = ARROW_STEP_RE.split(text)
+    return "\n\n".join(p.strip() for p in parts if p.strip())
+
+
+def expand_compound_explanation(text: str) -> str:
+    """Break compound-inequality solutions into labeled, step-by-step blocks."""
+    text = re.sub(
+        r"\bSplit (?:the compound inequality into two separate ones|into two inequalities)\.\s*",
+        "Split the compound inequality into two separate parts.\n\n",
+        text,
+        count=1,
+    )
+    text = re.sub(r"\bLeft part:\s*", "**Left part**\n\n", text)
+    text = re.sub(r"\bRight part:\s*", "\n\n**Right part**\n\n", text)
+    text = re.sub(r"\bFirst:\s*", "**First inequality**\n\n", text)
+    text = re.sub(r"\bSecond:\s*", "\n\n**Second inequality**\n\n", text)
+    text = re.sub(
+        r"\bIntersecting(?: both| the two)?:\s*",
+        "\n\n**Intersection**\n\n",
+        text,
+    )
+    text = split_arrow_chains(text)
+    text = re.sub(r"\.\s+(True solution:)", r".\n\n\1", text)
+    text = re.sub(r"\.\s+(Since the left condition)", r".\n\n\1", text)
+    text = re.sub(
+        r"\.\s+(By the quadratic formula, the roots are)",
+        r".\n\n\1",
+        text,
+    )
+    return text
+
+
+def format_explanation_body(text: str, section_id: str) -> str:
+    if not text:
+        return text
+    wrapped = wrap_math(text)
+    if section_id == "6.3":
+        return expand_compound_explanation(wrapped)
+    return split_arrow_chains(wrapped)
+
+
+def should_keep_trap(trap: str, st: dict) -> bool:
+    if not trap:
+        return False
+    for pat in GENERIC_TRAP_PATTERNS:
+        if re.search(pat, trap, re.I):
+            return False
+    if st.get("chart") and re.search(
+        r"test (?:a )?(?:point|one value|a value|a specific).{0,30}region",
+        trap,
+        re.I,
+    ):
+        return False
+    return any(re.search(pat, trap, re.I) for pat in USEFUL_TRAP_PATTERNS)
+
+
+def apply_statement_overrides(q: dict) -> None:
+    key_base = (q["section_id"], q.get("title") or "")
+    for st in q["statements"]:
+        key = (*key_base, st["letter"])
+        override = STATEMENT_OVERRIDES.get(key)
+        if not override:
+            continue
+        if "text" in override:
+            st["text"] = override["text"]
+        if "explanation" in override:
+            st["explanation"] = override["explanation"]
+        if "trap" in override:
+            st["trap"] = override["trap"]
+        if "answer" in override:
+            st["answer"] = override["answer"]
 
 
 def max_diff(stmts: list[dict], fallback: str | None) -> str:
@@ -356,25 +509,20 @@ def max_diff(stmts: list[dict], fallback: str | None) -> str:
     return f"{max(vals)}/5"
 
 
-def build_explanation(st: dict, statement_katex: str) -> str:
+def build_explanation(st: dict, statement_katex: str, section_id: str) -> str:
     letter = st["letter"]
     verdict = "true" if st["answer"] else "false"
     parts = [f"**{letter}) {statement_katex}**  ({verdict})"]
-    if st["type"]:
-        parts.append(f"**Type:** {st['type']}")
     if st["explanation"]:
-        parts.append(wrap_math(st["explanation"]))
+        parts.append(format_explanation_body(st["explanation"], section_id))
     chart = chart_markdown(st["chart"])
     if chart:
         parts.append("**Sign chart**")
         parts.append(chart)
-    if st["trap"]:
+    if st["trap"] and should_keep_trap(st["trap"], st):
         parts.append(f"**Common trap:** {wrap_math(st['trap'])}")
     if st["quick"]:
-        label = "Quick check"
-        if st["quick"].lower().startswith("plug in") or "plug in" in st["quick"][:40].lower():
-            label = "Quick check"
-        parts.append(f"**{label}:** {wrap_math(st['quick'])}")
+        parts.append(f"**Quick check:** {wrap_math(st['quick'])}")
     return "\n\n".join(parts)
 
 
@@ -417,6 +565,7 @@ def build_tasks(questions: list[dict]) -> list[dict]:
     n = 0
     counts: dict[str, int] = {}
     for q in questions:
+        apply_statement_overrides(q)
         sid = q["section_id"]
         counts[sid] = counts.get(sid, 0) + 1
         local = counts[sid]
@@ -428,7 +577,7 @@ def build_tasks(questions: list[dict]) -> list[dict]:
             sk = wrap_statement(st["text"])
             stmts_k.append(sk)
             answers.append(bool(st["answer"]))
-            expls.append(build_explanation(st, sk))
+            expls.append(build_explanation(st, sk, sid))
 
         is_word = sid == "6.4"
         if is_word:
