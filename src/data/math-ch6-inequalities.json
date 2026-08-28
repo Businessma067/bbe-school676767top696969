@@ -2785,6 +2785,198 @@
    "sort_order": 88,
    "solution_overview": "A store applies a 20% discount to an item's original price p, then adds 8% sales tax on the discounted price, then subtracts a flat \\$5 loyalty coupon at the very end. The final price is ${0.8p \\times 1.08 - 5 = 0.864p - 5}$. A customer wants the final price to be \\$70 or less.",
    "placeholder": false
+  },
+  {
+   "id": "math-6-89",
+   "case_id": "MATH 6.89",
+   "title": "Exam-style tasks — 1",
+   "subsection": "6.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A farmer is planning a new rectangular field. He has 80 meters of fencing available. If he wants the field area to be at least 48 m^2 and to maintain the ratio 3:1 between the longer and shorter side of the field, then the shorter side can be between 4 and 20 meters long (both values included).",
+    "If the position of an object above ground in meters after x seconds is described by the function $f(x) = -5x^{2} + 70x + 3$, then the object is more than 123 meters above ground between 2 and 12 seconds.",
+    "If the costs of producing x units of a product are ${150 + 0.2x}$ EUR, at least 83 units must be produced for the average costs per unit to be below 2 EUR (note that only whole numbers of units can be produced).",
+    "To produce one unit of a certain product, three raw materials — A, B, and C — are required. Specifically, 3 units of A, 2 units of B, and 4 units of C are used. The raw materials cost 40 EUR, 50 EUR, and 25 EUR per unit, respectively, and the production of one unit of the product costs 12 EUR. The producer has a total budget of 21,400 EUR and storage capacity for at most 475 units of all raw materials combined. Then, the maximum number of products that can be produced is less than 50.",
+    "The inequality system $\\dfrac{4}{x} < x < |2 - 3x|$ is satisfied if and only if $|x| > 2$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    false,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A) A farmer is planning a new rectangular field. He has 80 meters of fencing available. If he wants the field area to be at least 48 m^2 and to maintain the ratio 3:1 between the longer and shorter side of the field, then the shorter side can be between 4 and 20 meters long (both values included).**  (false)\n\n**Setup**\n\nLet the shorter side be $w$ meters and the longer side $3w$ meters.\n\n**Fencing**\n\nAt most 80 m is available:\n$2(3w + w) \\le 80$\n$8w \\le 80$\n$w \\le 10$.\n\n**Area**\n\n$3w \\cdot w \\ge 48$\n$w^{2} \\ge 16$\n$w \\ge 4$ (using $w > 0$).\n\n**Intersection**\n\n$4 \\le w \\le 10$.\n\n**Compare to claim**\n\nThe claimed interval $[4, 20]$ overshoots the fencing limit: $w = 20$ would need 160 m of fence. The true range is $[4, 10]$.\n\n**Quick check:** $w = 4$ gives area 48 and uses 32 m of fence; $w = 10$ uses 80 m; $w = 20$ needs 160 m.",
+    "**B) If the position of an object above ground in meters after x seconds is described by the function $f(x) = -5x^{2} + 70x + 3$, then the object is more than 123 meters above ground between 2 and 12 seconds.**  (true)\n\n**Inequality**\n\n$-5x^{2} + 70x + 3 > 123$\n$-5x^{2} + 70x - 120 > 0$.\n\n**Solve**\n\nDivide by $-5$ and reverse the inequality:\n$x^{2} - 14x + 24 < 0$\n$(x - 2)(x - 12) < 0$\n$2 < x < 12$.\n\n**Compare to claim**\n\n“More than 123 m” excludes the endpoints, where $f(2) = f(12) = 123$. The object is above 123 m on the open interval $(2, 12)$.\n\n**Quick check:** $f(7) = 248 > 123$; $f(2) = 123$.",
+    "**C) If the costs of producing x units of a product are ${150 + 0.2x}$ EUR, at least 83 units must be produced for the average costs per unit to be below 2 EUR (note that only whole numbers of units can be produced).**  (false)\n\n**Inequality**\n\n$\\dfrac{150 + 0.2x}{x} < 2$, $x > 0$.\n\n**Solve**\n\n$\\dfrac{150}{x} < 1.8$\n$x > \\dfrac{150}{1.8} = 83.\\overline{3}$.\n\n**Integer production**\n\nThe smallest whole $x$ is 84, not 83.\n\n**Compare to claim**\n\nAt $x = 83$, average cost is $\\dfrac{166.6}{83} \\approx 2.007$ EUR, still above 2 EUR.\n\n**Quick check:** $x = 84$ gives $\\dfrac{166.8}{84} = 1.986 < 2$.",
+    "**D) To produce one unit of a certain product, three raw materials — A, B, and C — are required. Specifically, 3 units of A, 2 units of B, and 4 units of C are used. The raw materials cost 40 EUR, 50 EUR, and 25 EUR per unit, respectively, and the production of one unit of the product costs 12 EUR. The producer has a total budget of 21,400 EUR and storage capacity for at most 475 units of all raw materials combined. Then, the maximum number of products that can be produced is less than 50.**  (false)\n\n**Setup**\n\nLet $n$ be the number of products.\n\n**Storage**\n\n$9n \\le 475$\n$n \\le 52$.\n\n**Budget**\n\nCost per product: $3 \\cdot 40 + 2 \\cdot 50 + 4 \\cdot 25 + 12 = 332$ EUR.\n$332n \\le 21400$\n$n \\le 64$.\n\n**Binding constraint**\n\nStorage gives the tighter cap $n \\le 52$. The maximum is 52, which is not less than 50.\n\n**Quick check:** $n = 52$ stores 468 units and costs 17,264 EUR; $n = 53$ needs 477 stored units.",
+    "**E) The inequality system $\\dfrac{4}{x} < x < |2 - 3x|$ is satisfied if and only if $|x| > 2$.**  (false)\n\n**Domain**\n\n$x \\ne 0$.\n\n**Left part:** $\\dfrac{4}{x} < x$\n\n**Case 1** — $x > 0$: $x^{2} > 4$, so $x > 2$.\n\n**Case 2** — $x < 0$: multiplying reverses, $x^{2} < 4$, so $-2 < x < 0$.\n\n**Right part:** $x < |2 - 3x|$\n\n**Case 1** — $x \\le \\dfrac{2}{3}$: $x < 2 - 3x$ gives $x < \\dfrac{1}{2}$. Combined: $x < \\dfrac{1}{2}$.\n\n**Case 2** — $x > \\dfrac{2}{3}$: $x < 3x - 2$ gives $x > 1$. Combined: $x > 1$.\n\n**Intersection**\n\nLeft set $(2, \\infty) \\cup (-2, 0)$ with right set $(-\\infty, \\dfrac{1}{2}) \\cup (1, \\infty)$ yields\n$(-2, 0) \\cup (2, \\infty)$.\n\n**Compare to claim**\n\n$|x| > 2$ is $(-\\infty, -2) \\cup (2, \\infty)$. It wrongly includes numbers less than $-2$ and drops the working interval $(-2, 0)$.\n\n**Quick check:** $x = -1$ satisfies $\\dfrac{4}{-1} < -1 < |2+3|$, but $|-1|$ is not greater than 2."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 89,
+   "solution_overview": "Mixed exam claims: a fenced rectangle with a 3:1 ratio, a quadratic height model, average production cost, a storage-and-budget factory, and a rational/absolute-value system. Solve every constraint, including integer rounding and case splits.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-90",
+   "case_id": "MATH 6.90",
+   "title": "Exam-style tasks — 2",
+   "subsection": "6.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A gardener has 80 meters of fencing for a rectangular plot and wants the longer side to stay in a 4:1 ratio with the shorter side. If the area must be at least 64 m^2, then the shorter side can be any length from 4 m to 20 m, inclusive.",
+    "If the height in meters after t seconds is $h(t) = -5t^{2} + 40t + 8$, then the object is more than 83 meters above the ground between 3 and 5 seconds.",
+    "If producing x units costs ${200 + 0.5x}$ EUR, then at least 45 whole units must be made for the average cost per unit to fall below 5 EUR.",
+    "Each product uses 2 units of A, 3 units of B, and 1 unit of C. The materials cost 30 EUR, 20 EUR, and 40 EUR per unit, and finishing one product costs 8 EUR. With a 10,000 EUR budget and storage for at most 200 raw-material units in total, the maximum number of products is less than 30.",
+    "The inequality $x^{2} - 9x + 14 \\le 0$ has solution set $[2, 7]$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) A gardener has 80 meters of fencing for a rectangular plot and wants the longer side to stay in a 4:1 ratio with the shorter side. If the area must be at least 64 m^2, then the shorter side can be any length from 4 m to 20 m, inclusive.**  (false)\n\n**Setup**\n\nShorter side $w$, longer side $4w$.\n\n**Fencing**\n\n$2(4w + w) \\le 80$\n$w \\le 8$.\n\n**Area**\n\n$4w^{2} \\ge 64$\n$w \\ge 4$.\n\n**Intersection**\n\n$4 \\le w \\le 8$, not $[4, 20]$.\n\n**Quick check:** $w = 20$ would need 200 m of fence.",
+    "**B) If the height in meters after t seconds is $h(t) = -5t^{2} + 40t + 8$, then the object is more than 83 meters above the ground between 3 and 5 seconds.**  (true)\n\n**Inequality**\n\n$-5t^{2} + 40t + 8 > 83$\n$-5t^{2} + 40t - 75 > 0$.\n\n**Solve**\n\n$t^{2} - 8t + 15 < 0$\n$(t - 3)(t - 5) < 0$\n$3 < t < 5$.\n\n**Quick check:** $h(4) = 88 > 83$; $h(3) = 83$.",
+    "**C) If producing x units costs ${200 + 0.5x}$ EUR, then at least 45 whole units must be made for the average cost per unit to fall below 5 EUR.**  (true)\n\n**Inequality**\n\n$\\dfrac{200 + 0.5x}{x} < 5$.\n\n**Solve**\n\n$x > \\dfrac{200}{4.5} \\approx 44.44$, so the first whole number is 45.\n\n**Quick check:** $x = 44$ averages about 5.045 EUR; $x = 45$ averages about 4.944 EUR.",
+    "**D) Each product uses 2 units of A, 3 units of B, and 1 unit of C. The materials cost 30 EUR, 20 EUR, and 40 EUR per unit, and finishing one product costs 8 EUR. With a 10,000 EUR budget and storage for at most 200 raw-material units in total, the maximum number of products is less than 30.**  (false)\n\n**Storage**\n\n$6n \\le 200$\n$n \\le 33$.\n\n**Budget**\n\n$168n \\le 10000$\n$n \\le 59$.\n\n**Binding constraint**\n\nMaximum is 33, which is not less than 30.\n\n**Quick check:** $n = 33$ stores 198 units and costs 5,544 EUR.",
+    "**E) The inequality $x^{2} - 9x + 14 \\le 0$ has solution set $[2, 7]$.**  (true)\n\n**Factor**\n\n$(x - 2)(x - 7) \\le 0$.\n\n**Solution selection**\n\nKeep the closed interval between the roots: $[2, 7]$.\n\n**Quick check:** $x = 4$ gives $-6 \\le 0$; $x = 8$ gives $6 > 0$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 90,
+   "solution_overview": "A 4:1 fenced plot, a quadratic height window, a unit-cost cutoff, a two-constraint factory, and a factored quadratic inequality.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-91",
+   "case_id": "MATH 6.91",
+   "title": "Exam-style tasks — 3",
+   "subsection": "6.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 ratio of length to width, and must have area at least 160 m^2. Then every shorter-side length from 8 m to 12 m inclusive is feasible.",
+    "If $p(x) = -2x^{2} + 24x - 10$, then the solution set of $p(x) > 50$ is exactly the closed interval $[4, 8]$.",
+    "If producing x units costs ${80 + 0.4x}$ EUR, then at least 40 whole units are needed for the average cost to fall below 3 EUR.",
+    "Each product uses 5 units of A, 1 unit of B, and 2 units of C, costing 10 EUR, 80 EUR, and 15 EUR per unit of material, plus 20 EUR to finish. Budget 8,000 EUR, storage at most 240 raw-material units. Then the maximum number of products is less than 50.",
+    "The inequality $|x - 3| \\le 5$ has solution set $[-2, 8]$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 ratio of length to width, and must have area at least 160 m^2. Then every shorter-side length from 8 m to 12 m inclusive is feasible.**  (true)\n\n**Setup**\n\nWidth $w$, length $\\dfrac{5w}{2}$.\n\n**Fencing**\n\n$7w \\le 96$\n$w \\le \\dfrac{96}{7} \\approx 13.71$.\n\n**Area**\n\n$\\dfrac{5}{2} w^{2} \\ge 160$\n$w \\ge 8$.\n\n**Intersection**\n\n$8 \\le w \\le 13.71$. The closed interval $[8, 12]$ lies inside this, so every such width works.\n\n**Quick check:** $w = 12$ uses 84 m of fence and has area 360 m^2.",
+    "**B) If $p(x) = -2x^{2} + 24x - 10$, then the solution set of $p(x) > 50$ is exactly the closed interval $[4, 8]$.**  (false)\n\n**Inequality**\n\n$-2x^{2} + 24x - 10 > 50$\n$x^{2} - 12x + 30 < 0$.\n\n**Quadratic formula**\n\nRoots $6 \\pm \\sqrt{6}$. Since $\\sqrt{6} \\approx 2.45$, the solution is the open interval\n$(6 - \\sqrt{6},\\, 6 + \\sqrt{6}) \\approx (3.55, 8.45)$.\n\n**Compare to claim**\n\nThe true set is open, not closed, and its endpoints are $6 \\pm \\sqrt{6}$, not 4 and 8.\n\n**Quick check:** $p(4) = 54 > 50$, so 4 is inside the true set, not a boundary.",
+    "**C) If producing x units costs ${80 + 0.4x}$ EUR, then at least 40 whole units are needed for the average cost to fall below 3 EUR.**  (false)\n\n**Inequality**\n\n$\\dfrac{80 + 0.4x}{x} < 3$\n$x > \\dfrac{80}{2.6} \\approx 30.77$.\n\n**Integer production**\n\nThe cutoff is $x \\ge 31$, not 40. Forty units work, but 31 through 39 already work too.\n\n**Quick check:** $x = 31$ gives $\\dfrac{92.4}{31} \\approx 2.98 < 3$.",
+    "**D) Each product uses 5 units of A, 1 unit of B, and 2 units of C, costing 10 EUR, 80 EUR, and 15 EUR per unit of material, plus 20 EUR to finish. Budget 8,000 EUR, storage at most 240 raw-material units. Then the maximum number of products is less than 50.**  (true)\n\n**Storage**\n\n$8n \\le 240$\n$n \\le 30$.\n\n**Budget**\n\nCost per product: $50 + 80 + 30 + 20 = 180$ EUR.\n$180n \\le 8000$\n$n \\le 44$.\n\n**Binding constraint**\n\nMaximum $n = 30$, which is less than 50.\n\n**Quick check:** $n = 30$ stores 240 units and costs 5,400 EUR.",
+    "**E) The inequality $|x - 3| \\le 5$ has solution set $[-2, 8]$.**  (true)\n\n**Rewrite**\n\n$-5 \\le x - 3 \\le 5$\n$-2 \\le x \\le 8$.\n\n**Quick check:** $x = -2$ gives $|-5| = 5$; $x = 8$ gives $|5| = 5$; $x = -3$ gives 6, which is not $\\le 5$."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 91,
+   "solution_overview": "A 5:2 courtyard, a quadratic profit window claimed as an exact closed interval, average-cost rounding, a factory with a storage bind, and an absolute-value inequality.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-92",
+   "case_id": "MATH 6.92",
+   "title": "Exam-style tasks — 4",
+   "subsection": "6.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A rectangular pen uses at most 60 m of fencing, has sides in the ratio 2:1, and needs area at least 72 m^2. Then the shorter side can be any length from 6 m to 15 m inclusive.",
+    "If $s(t) = -4t^{2} + 32t + 5$ is height in meters, then $s(t) \\ge 53$ for all t in $[2, 6]$.",
+    "If costs are ${120 + 0.25x}$ EUR, then 80 whole units are enough to bring average cost strictly below 1.70 EUR.",
+    "Each finished good uses 4 units of A and 3 units of B. A costs 25 EUR and B costs 40 EUR; finishing costs 10 EUR. Budget 9,000 EUR and at most 180 stored raw-material units. Then the maximum output is less than 25.",
+    "The solution set of $\\sqrt{x + 3} \\ge 2$ is $x \\ge 1$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) A rectangular pen uses at most 60 m of fencing, has sides in the ratio 2:1, and needs area at least 72 m^2. Then the shorter side can be any length from 6 m to 15 m inclusive.**  (false)\n\n**Setup**\n\nSides $w$ and $2w$.\n\n**Fencing**\n\n$6w \\le 60$\n$w \\le 10$.\n\n**Area**\n\n$2w^{2} \\ge 72$\n$w \\ge 6$.\n\n**Intersection**\n\n$6 \\le w \\le 10$. The claimed 15 m upper bound exceeds the 10 m fencing cap.\n\n**Quick check:** $w = 15$ would need 90 m of fence.",
+    "**B) If $s(t) = -4t^{2} + 32t + 5$ is height in meters, then $s(t) \\ge 53$ for all t in $[2, 6]$.**  (true)\n\n**Inequality**\n\n$-4t^{2} + 32t + 5 \\ge 53$\n$t^{2} - 8t + 12 \\le 0$\n$(t - 2)(t - 6) \\le 0$\n$2 \\le t \\le 6$.\n\n**Compare to claim**\n\nThe closed interval $[2, 6]$ is exactly the solution, so the height is at least 53 m throughout that interval.\n\n**Quick check:** $s(2) = 53$; $s(4) = 69$.",
+    "**C) If costs are ${120 + 0.25x}$ EUR, then 80 whole units are enough to bring average cost strictly below 1.70 EUR.**  (false)\n\n**Inequality**\n\n$\\dfrac{120 + 0.25x}{x} < 1.70$\n$\\dfrac{120}{x} < 1.45$\n$x > \\dfrac{120}{1.45} \\approx 82.76$.\n\n**Integer production**\n\nNeed $x \\ge 83$. Eighty units give $\\dfrac{120 + 20}{80} = 1.75$, which is still above 1.70 EUR.\n\n**Quick check:** $x = 83$ gives $\\dfrac{120 + 20.75}{83} \\approx 1.696 < 1.70$.",
+    "**D) Each finished good uses 4 units of A and 3 units of B. A costs 25 EUR and B costs 40 EUR; finishing costs 10 EUR. Budget 9,000 EUR and at most 180 stored raw-material units. Then the maximum output is less than 25.**  (false)\n\n**Storage**\n\n$7n \\le 180$\n$n \\le 25$ (since $7 \\cdot 25 = 175$, $7 \\cdot 26 = 182$).\n\n**Budget**\n\n$100n + 120n + 10n = 230n \\le 9000$\n$n \\le 39$.\n\n**Binding constraint**\n\nMaximum is 25, which is not less than 25. The claim says less than 25, so it is false.\n\n**Quick check:** $n = 25$ stores 175 units and costs 5,750 EUR.",
+    "**E) The solution set of $\\sqrt{x + 3} \\ge 2$ is $x \\ge 1$.**  (true)\n\n**Domain restriction**\n\n$x + 3 \\ge 0$, so $x \\ge -3$.\n\n**Case 1** — right side negative: 2 is positive, so this case does not apply.\n\n**Case 2** — both sides non-negative: square:\n$x + 3 \\ge 4$\n$x \\ge 1$.\n\n**Restrict to this case**\n\nCombined with the domain $x \\ge -3$, the tighter bound is $x \\ge 1$.\n\n**Quick check:** $x = 1$ gives $\\sqrt{4} = 2$; $x = 0$ gives $\\sqrt{3} \\approx 1.73 < 2$."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 92,
+   "solution_overview": "A 2:1 pen, a closed quadratic height interval, a unit-cost claim, a budget-bound factory, and a square-root inequality with domain.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-93",
+   "case_id": "MATH 6.93",
+   "title": "Exam-style tasks — 5",
+   "subsection": "6.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A greenhouse uses at most 120 m of fencing, keeps a 5:3 ratio of length to width, and needs area at least 375 m^2. Then the shorter side can be any length from 5 m to 15 m inclusive.",
+    "If $f(x) = -x^{2} + 10x + 4$, then $f(x) > 20$ between 1 and 9, endpoints included.",
+    "If producing x units costs ${90 + 0.6x}$ EUR, then 150 whole units are the fewest that make average cost strictly less than 1.20 EUR.",
+    "A product needs 1 unit of A, 4 units of B, and 2 units of C at 60 EUR, 15 EUR, and 20 EUR, plus 5 EUR finishing. Budget 12,000 EUR, storage 400. Then the maximum number of products is less than 50.",
+    "The compound inequality $-1 \\le 2x - 5 \\le 7$ has solution set $[2, 6]$."
+   ],
+   "answer_key": [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) A greenhouse uses at most 120 m of fencing, keeps a 5:3 ratio of length to width, and needs area at least 375 m^2. Then the shorter side can be any length from 5 m to 15 m inclusive.**  (false)\n\n**Setup**\n\nWidth $w$, length $\\dfrac{5w}{3}$. Perimeter bound:\n$2\\bigl(\\dfrac{5w}{3} + w\\bigr) \\le 120$\n$\\dfrac{16w}{3} \\le 120$\n$w \\le 22.5$.\n\n**Area**\n\n$\\dfrac{5}{3} w^{2} \\ge 375$\n$w^{2} \\ge 225$\n$w \\ge 15$.\n\n**Intersection**\n\n$15 \\le w \\le 22.5$. The claimed lower end 5 m fails the area bound: $w = 5$ gives area $\\dfrac{5}{3} \\cdot 25 \\approx 41.7$, far below 375.\n\n**Quick check:** $w = 15$ gives area 375 and uses $\\dfrac{16 \\cdot 15}{3} = 80$ m of fence.",
+    "**B) If $f(x) = -x^{2} + 10x + 4$, then $f(x) > 20$ between 1 and 9, endpoints included.**  (false)\n\n**Inequality**\n\n$-x^{2} + 10x + 4 > 20$\n$x^{2} - 10x + 16 < 0$\n$(x - 2)(x - 8) < 0$\n$2 < x < 8$.\n\n**Compare to claim**\n\nThe true interval is $(2, 8)$, not the closed $[1, 9]$. Both claimed endpoints fail: $f(1) = 13$ and $f(9) = 13$, neither greater than 20.\n\n**Quick check:** $f(5) = 29 > 20$; $f(1) = 13$.",
+    "**C) If producing x units costs ${90 + 0.6x}$ EUR, then 150 whole units are the fewest that make average cost strictly less than 1.20 EUR.**  (false)\n\n**Inequality**\n\n$\\dfrac{90 + 0.6x}{x} < 1.20$\n$\\dfrac{90}{x} < 0.60$\n$x > 150$.\n\n**Integer production**\n\n$x = 150$ gives $\\dfrac{90 + 90}{150} = 1.20$, which is not strictly below 1.20. The first whole number that works is 151.\n\n**Quick check:** $x = 151$ gives $\\dfrac{90 + 90.6}{151} \\approx 1.196 < 1.20$.",
+    "**D) A product needs 1 unit of A, 4 units of B, and 2 units of C at 60 EUR, 15 EUR, and 20 EUR, plus 5 EUR finishing. Budget 12,000 EUR, storage 400. Then the maximum number of products is less than 50.**  (false)\n\n**Storage**\n\n$7n \\le 400$\n$n \\le 57$.\n\n**Budget**\n\n$60 + 60 + 40 + 5 = 165$ EUR per product.\n$165n \\le 12000$\n$n \\le 72$.\n\n**Binding constraint**\n\nMaximum 57, which is not less than 50.\n\n**Quick check:** $n = 57$ stores 399 units and costs 9,405 EUR.",
+    "**E) The compound inequality $-1 \\le 2x - 5 \\le 7$ has solution set $[2, 6]$.**  (true)\n\n**Split**\n\n$-1 \\le 2x - 5$ and $2x - 5 \\le 7$.\n\n**Left part**\n\n$4 \\le 2x$\n$x \\ge 2$.\n\n**Right part**\n\n$2x \\le 12$\n$x \\le 6$.\n\n**Intersection**\n\n$[2, 6]$.\n\n**Quick check:** $x = 2$ gives $-1$; $x = 6$ gives 7."
+   ],
+   "difficulty_level": "5/5",
+   "sort_order": 93,
+   "solution_overview": "A 5:3 greenhouse, a quadratic “between” claim with the wrong interval, average cost with a trap at the boundary, a three-material plan, and a two-sided compound inequality.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-94",
+   "case_id": "MATH 6.94",
+   "title": "Exam-style tasks — 6",
+   "subsection": "6.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A square plot uses at most 40 m of fencing and must have area at least 81 m^2. Then every side length from 9 m to 12 m inclusive is feasible.",
+    "If $h(t) = -5t^{2} + 30t + 10$, then the object is at least 40 m above the ground for every t in $[1, 5]$, endpoints included.",
+    "If producing x units costs ${48 + 1.2x}$ EUR, then at least 40 whole units must be produced for average cost to be at most 2.40 EUR.",
+    "Each product uses 6 units of A and 2 units of B at 12 EUR and 90 EUR, plus 4 EUR to finish. Budget 7,000 EUR, storage 300. Then the maximum number of products is less than 50.",
+    "The inequality $|2x + 1| > 5$ has solution set $x < -3$ or $x > 2$."
+   ],
+   "answer_key": [
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) A square plot uses at most 40 m of fencing and must have area at least 81 m^2. Then every side length from 9 m to 12 m inclusive is feasible.**  (false)\n\n**Setup**\n\nA square of side $s$ has perimeter $4s$ and area $s^{2}$.\n\n**Fencing**\n\n$4s \\le 40$\n$s \\le 10$.\n\n**Area**\n\n$s^{2} \\ge 81$\n$s \\ge 9$.\n\n**Intersection**\n\n$9 \\le s \\le 10$. Side 12 m would need 48 m of fence, so the claimed interval $[9, 12]$ is too wide.\n\n**Quick check:** $s = 10$ uses 40 m and has area 100; $s = 12$ needs 48 m.",
+    "**B) If $h(t) = -5t^{2} + 30t + 10$, then the object is at least 40 m above the ground for every t in $[1, 5]$, endpoints included.**  (false)\n\n**Inequality**\n\n$-5t^{2} + 30t + 10 \\ge 40$\n$-5t^{2} + 30t - 30 \\ge 0$\n$t^{2} - 6t + 6 \\le 0$.\n\n**Quadratic formula**\n\nRoots $3 \\pm \\sqrt{3}$. Since $\\sqrt{3} \\approx 1.73$, the solution is\n$[3 - \\sqrt{3},\\, 3 + \\sqrt{3}] \\approx [1.27, 4.73]$.\n\n**Compare to claim**\n\n$[1, 5]$ is larger than the true interval. At $t = 1$, $h(1) = -5 + 30 + 10 = 35 < 40$. At $t = 5$, $h(5) = -125 + 150 + 10 = 35 < 40$.\n\n**Quick check:** $h(3) = -45 + 90 + 10 = 55 \\ge 40$.",
+    "**C) If producing x units costs ${48 + 1.2x}$ EUR, then at least 40 whole units must be produced for average cost to be at most 2.40 EUR.**  (true)\n\n**Inequality**\n\n$\\dfrac{48 + 1.2x}{x} \\le 2.40$\n$\\dfrac{48}{x} \\le 1.20$\n$x \\ge 40$.\n\n**Integer production**\n\nThe bound is already an integer, and the inequality is non-strict, so 40 units meet it exactly.\n\n**Quick check:** $x = 40$ gives $\\dfrac{48 + 48}{40} = 2.40$; $x = 39$ gives $\\dfrac{48 + 46.8}{39} \\approx 2.43 > 2.40$.",
+    "**D) Each product uses 6 units of A and 2 units of B at 12 EUR and 90 EUR, plus 4 EUR to finish. Budget 7,000 EUR, storage 300. Then the maximum number of products is less than 50.**  (true)\n\n**Storage**\n\n$8n \\le 300$\n$n \\le 37$.\n\n**Budget**\n\n$72 + 180 + 4 = 256$ EUR per product.\n$256n \\le 7000$\n$n \\le 27.34$, so $n \\le 27$.\n\n**Binding constraint**\n\nBudget is tighter. Maximum is 27, which is less than 50.\n\n**Quick check:** $n = 27$ costs 6,912 EUR and stores 216 units; $n = 28$ costs 7,168 EUR, over budget.",
+    "**E) The inequality $|2x + 1| > 5$ has solution set $x < -3$ or $x > 2$.**  (true)\n\n**Split**\n\n$2x + 1 > 5$ or $2x + 1 < -5$.\n\n**First inequality**\n\n$2x > 4$\n$x > 2$.\n\n**Second inequality**\n\n$2x < -6$\n$x < -3$.\n\n**Combine cases**\n\n$x < -3$ or $x > 2$.\n\n**Quick check:** $x = 0$ gives $|1| = 1$, not $> 5$; $x = 3$ gives $|7| = 7 > 5$."
+   ],
+   "difficulty_level": "5/5",
+   "sort_order": 94,
+   "solution_overview": "A triangle-inequality style fence is not used; instead: a 1:1 square plot claim, a motion quadratic with a false closed interval, a cost-average trap, a factory where budget binds, and $|2x+1| > 5$.",
+   "placeholder": false
   }
  ]
 }

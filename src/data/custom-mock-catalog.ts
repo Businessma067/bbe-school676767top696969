@@ -124,6 +124,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "6.2", title: "Quadratic Sign Inequalities" },
         { id: "6.3", title: "Compound & Special Inequalities" },
         { id: "6.4", title: "Word Problems" },
+        { id: "6.5", title: "Exam-style tasks" },
       ]),
     ),
     toChapterToc(

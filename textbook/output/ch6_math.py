@@ -32,9 +32,16 @@ STOP_WORDS = {
 
 OPS = set("=<>≤≥≠+−-*/^_|∪∩±×·≈√")
 
-CURRENCY_RE = re.compile(r"\$\d+(?:,\d{3})*(?:\.\d+)?")
+CURRENCY_RE = re.compile(
+    r"\$\d+(?:,\d{3})*(?:\.\d+)?"
+    r"(?![\dA-Za-z+\-*=<>≠≤≥(\\{^_])"
+    r"(?!\s*[=<>≤≥≠+\\])"
+)
 
-INTERVAL_ATOM = r"(?:\{[^{}]+\}|[\(\[][^\(\)\[\]]*,[^\(\)\[\]]*[\)\]])"
+INTERVAL_ATOM = (
+    r"(?:\{[^{}]*,[^{}]*\}|"
+    r"[\(\[][^\(\)\[\]]*,[^\(\)\[\]]*[\)\]])"
+)
 INTERVAL_CHAIN_RE = re.compile(
     INTERVAL_ATOM + r"(?:\s*∪\s*" + INTERVAL_ATOM + r")+"
     r"|" + INTERVAL_ATOM
@@ -448,7 +455,16 @@ def wrap_math(text: str) -> str:
             s = s[: m.start()] + stash[int(m.group(1))] + s[m.end() :]
 
     work = text
-    work = CURRENCY_RE.sub(lambda m: hold(m.group(0)), work)
+
+    def hold_currency(m: re.Match[str]) -> str:
+        start, end = m.start(), m.end()
+        after = text.find("$", end)
+        between = text[start + 1 : after] if after != -1 else ""
+        if after != -1 and looks_like_inline_math_span(between):
+            return m.group(0)  # leave full `$…$` math for the main loop
+        return hold(m.group(0))
+
+    work = CURRENCY_RE.sub(hold_currency, work)
 
     def hold_interval(m: re.Match) -> str:
         raw = m.group(0)
@@ -456,7 +472,39 @@ def wrap_math(text: str) -> str:
             return raw
         return hold(dollar_wrap(tex_math(raw)))
 
-    work = INTERVAL_CHAIN_RE.sub(hold_interval, work)
+    def apply_intervals_outside_math(s: str) -> str:
+        pieces: list[str] = []
+        i = 0
+        n = len(s)
+        while i < n:
+            if s.startswith("§§", i):
+                j = s.find("§§", i + 2)
+                if j == -1:
+                    pieces.append(s[i:])
+                    break
+                pieces.append(s[i : j + 2])
+                i = j + 2
+                continue
+            if s[i] == "$":
+                if s.startswith("$$", i):
+                    j = s.find("$$", i + 2)
+                    if j != -1:
+                        pieces.append(s[i : j + 2])
+                        i = j + 2
+                        continue
+                j = s.find("$", i + 1)
+                if j != -1:
+                    pieces.append(s[i : j + 1])
+                    i = j + 1
+                    continue
+            j = i + 1
+            while j < n and s[j] != "$" and not s.startswith("§§", j):
+                j += 1
+            pieces.append(INTERVAL_CHAIN_RE.sub(hold_interval, s[i:j]))
+            i = j
+        return "".join(pieces)
+
+    work = apply_intervals_outside_math(work)
 
     out: list[str] = []
     i = 0
@@ -469,6 +517,33 @@ def wrap_math(text: str) -> str:
                 break
             out.append(work[i : j + 2])
             i = j + 2
+            continue
+        # Preserve already-authored KaTeX / currency spans.
+        if work[i] == "$":
+            if work.startswith("$$", i):
+                j = work.find("$$", i + 2)
+                if j != -1:
+                    out.append(work[i : j + 2])
+                    i = j + 2
+                    continue
+            cur = CURRENCY_RE.match(work, i)
+            if cur:
+                after = work.find("$", i + len(cur.group(0)))
+                between = work[i + 1 : after] if after != -1 else ""
+                if after != -1 and looks_like_inline_math_span(between):
+                    out.append(work[i : after + 1])
+                    i = after + 1
+                    continue
+                out.append(cur.group(0))
+                i += len(cur.group(0))
+                continue
+            j = work.find("$", i + 1)
+            if j != -1:
+                out.append(work[i : j + 1])
+                i = j + 1
+                continue
+            out.append(work[i])
+            i += 1
             continue
         if can_start_math(work, i):
             end = consume_math(work, i)
@@ -531,10 +606,28 @@ def wrap_math(text: str) -> str:
             .replace("±", r" $\pm$ ")
         ),
     )
-    s = re.sub(r"\$\\le (?=\d)", r"$\\le$ $", s)
-    s = re.sub(r"\$\\ge (?=\d)", r"$\\ge$ $", s)
+    # Do not split `$\le 5$` into `$\le$ $5$` — that orphans a dollar and breaks algebra.
+    # Currency prose like `$60 is $100` is handled by escape_currency_outside_math.
     s = re.sub(r" {2,}", " ", s)
     return escape_currency_outside_math(s)
+
+
+def looks_like_inline_math_span(between: str) -> bool:
+    """True when `$…$` starting at currency-like `$digits` is really algebra, not `$60 is $100`."""
+    if not between:
+        return False
+    # Prose between two dollar amounts: `$400, but wants $250` / `$60 is $100`
+    if re.search(r",\s+[A-Za-z]", between):
+        return False
+    if re.search(
+        r"\b(?:is|are|was|were|be|been|the|and|or|but|at|to|for|with|from|"
+        r"that|which|this|under|over|wants|want|less|more|than|only|still|"
+        r"already|must|can|need|needs|keeps|keep)\b",
+        between,
+        re.I,
+    ):
+        return False
+    return bool(re.search(r"[A-Za-z=<>≤≥+\-−*/^\\]", between))
 
 
 def escape_currency_outside_math(text: str) -> str:
@@ -555,6 +648,12 @@ def escape_currency_outside_math(text: str) -> str:
                     continue
             cur = CURRENCY_RE.match(text, i)
             if cur:
+                after = text.find("$", i + len(cur.group(0)))
+                between = text[i + 1 : after] if after != -1 else ""
+                if after != -1 and looks_like_inline_math_span(between):
+                    out.append(text[i : after + 1])
+                    i = after + 1
+                    continue
                 out.append("\\" + cur.group(0))
                 i += len(cur.group(0))
                 continue
