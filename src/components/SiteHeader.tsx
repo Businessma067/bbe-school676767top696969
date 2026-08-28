@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { MobileNav } from "@/components/MobileNav";
-import { navItemsForTier, shouldShowSiteNav } from "@/config/site-nav";
+import { navItemsForContext, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { cn } from "@/lib/utils";
 
@@ -74,7 +74,7 @@ export function SiteHeader({
 }: SiteHeaderProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { ready, tier } = useAccountNavTier();
-  const navItems = navItemsForTier(tier);
+  const navItems = navItemsForContext(pathname, tier);
   const navVisible = shouldShowSiteNav(pathname, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 
