@@ -37,15 +37,18 @@ LETTERS = "ABCDE"
 
 
 def _hybrid_source() -> dict:
-    """88 pre-13.18 tasks + any newer tasks already on main (e.g. 6.5 exam bank)."""
+    """Prefer /tmp/ch6_hybrid_source.json (clean PDF-style bodies for all tasks)."""
+    hybrid = Path("/tmp/ch6_hybrid_source.json")
+    if hybrid.exists():
+        return json.loads(hybrid.read_text())
     current = json.loads(DST.read_text())
     pre_by_id = {t["case_id"]: t for t in json.loads(PRE.read_text())["tasks"]}
     tasks = []
     for t in current["tasks"]:
         if t["case_id"] in pre_by_id:
             base = json.loads(json.dumps(pre_by_id[t["case_id"]]))
-            # Keep any metadata added later on main
-            for k in ("subsection", "sort_order", "difficulty_level", "placeholder"):
+            for k in ("subsection", "sort_order", "difficulty_level", "placeholder",
+                       "title", "context", "statements", "answer_key"):
                 if k in t:
                     base[k] = t[k]
             tasks.append(base)
@@ -154,12 +157,19 @@ def _is_equation_line(line: str) -> bool:
     m = _INLINE_ONLY.match(s)
     if m:
         return bool(re.search(r"[=<>≤≥]|\\le|\\ge|\\leq|\\geq", m.group(1)))
+    # Prose with embedded math is not a pure equation line
+    if re.search(r"[A-Za-z]{3,}", s) and not re.match(r"^\$", s):
+        # Allow short factorizations like (x-2)(x-3)=0 without words; reject "Current load: …"
+        words = re.findall(r"[A-Za-z]{2,}", s)
+        if len(words) >= 2:
+            return False
     if re.search(
         r"\b(the|numerator|denominator|keep|plug|try|since|which|claim|true|false|"
         r"every|except|result|giving|gives|region|interval|solution|factor|opens|"
         r"stated|wrongly|split|compound|confirming|tempting|belongs|branch|"
         r"comparing|reading|intersecting|putting|combining|restricting|setting|"
-        r"solving|evaluating|checking|equivalently|matching)\b",
+        r"solving|evaluating|checking|equivalently|matching|current|load|with|"
+        r"children|adults|fence|area|budget|storage)\b",
         s,
         re.I,
     ):
@@ -207,7 +217,7 @@ def _lead_for(label: str, subsection: str) -> str | None:
 
     table = {
         "Solution selection": "Reading the sign chart against the inequality symbol:",
-        "Strictness": "Because the inequality is strict,",
+        "Strictness": None,  # rewritten specially below
         "Solution": "The solution set is",
         "Correct solution": "The correct solution set is",
         "Correct answer": "The correct answer is",
@@ -234,6 +244,13 @@ def _lead_for(label: str, subsection: str) -> str | None:
         "Split": "Splitting into cases:",
         "Domain": "The domain is:",
         "Rewrite": "Rewriting:",
+        "Reading the wording": "Reading the wording:",
+        "Choose a variable": "Choose a variable:",
+        "Translate into an inequality": "Translate into an inequality:",
+        "Solve step by step": "Solving step by step:",
+        "Solve / compare the sets": "Solving and comparing the sets:",
+        "Interpret the result": "Interpreting the result:",
+        "Compare to the claim": "Comparing with the printed claim:",
         "Order of operations": None,
         "Model": None,
         "Left part": "Left part:",
@@ -540,6 +557,146 @@ def _num_den_block(para: str) -> list[str] | None:
     return None
 
 
+
+def _rewrite_critical_list(para: str) -> str:
+    """Turn denominator/numerator zero lists into math prose."""
+    s = para.strip().rstrip(".")
+    den_nums: list[str] = []
+    num_nums: list[str] = []
+    for m in re.finditer(
+        r"(-?\d+(?:\s+and\s+-?\d+)*)\s*\(([^)]*(?:numerator|denominator)[^)]*)\)",
+        s,
+        re.I,
+    ):
+        nums = re.findall(r"-?\d+", m.group(1))
+        kind = m.group(2).lower()
+        if "denominator" in kind:
+            den_nums.extend(nums)
+        elif "numerator" in kind:
+            num_nums.extend(nums)
+    parts = []
+    if den_nums:
+        parts.append(
+            "denominator zero (always excluded) at "
+            + ", ".join(f"${n}$" for n in den_nums)
+        )
+    if num_nums:
+        parts.append("numerator zeros at " + ", ".join(f"${n}$" for n in num_nums))
+    if not parts:
+        return re.sub(r"(?<!\$)(-?\d+)(?!\$)", r"$\1$", para)
+    text_out = "; ".join(parts)
+    return text_out[0].upper() + text_out[1:] + "."
+
+
+def _rewrite_strictness(prose: str) -> str:
+    """Turn Strictness notes into 13.18 prose + display solution set (no orphan period)."""
+    s = prose.strip()
+    # Pull a trailing "True solution: $...$ — …" into a clean display
+    true_sol = ""
+    m_true = re.search(
+        r"(?i)(?:True solution|The true solution(?: set)?)\s*:\s*"
+        r"(\$[^$]+\$)"
+        r"(?:\s*,)?\s*(?:[—–]\s*|\.\s*)?(.*)$",
+        s,
+    )
+    if m_true:
+        sol_raw = m_true.group(1).strip()
+        note = m_true.group(2).strip().rstrip(".")
+        # Drop a leading "an open interval…" clause that is still part of the note
+        note = re.sub(
+            r"(?i)^an open interval on both ends\s*[—–]?\s*",
+            "",
+            note,
+        ).strip(" ,—–")
+        true_sol = D(sol_raw.strip("$"))
+        if note:
+            true_sol += "\n\n" + note[0].upper() + note[1:] + "."
+        s = s[: m_true.start()].rstrip(" ,;")
+
+    m = re.match(
+        r"(?i)The inequality is strict\s*\(([^)]+)\)\s*,?\s*so\s+(.+?):\s*(.+?)\.\s*$",
+        s,
+    )
+    if m:
+        rel, action, sol = m.group(1).strip(), m.group(2).strip(), m.group(3).strip()
+        rel_m = rel if rel.startswith("$") else f"${rel}$"
+        body = (
+            f"Because the inequality is strict ({rel_m}), {_lower_first(action)}:\n\n"
+            f"{D(sol.strip('$'))}"
+        )
+        return body if not true_sol else body + "\n\nThe true solution set is\n\n" + true_sol
+
+    m = re.match(r"(?i)The inequality is strict\s*\(([^)]+)\)\s*,?\s*so\s+(.+)$", s)
+    if m:
+        rel, rest = m.group(1).strip(), m.group(2).strip().rstrip(".")
+        rel_m = rel if rel.startswith("$") else f"${rel}$"
+        body = f"Because the inequality is strict ({rel_m}), {_lower_first(rest)}."
+        if true_sol:
+            return body + "\n\nThe true solution set is\n\n" + true_sol
+        return body
+
+    m = re.match(r"(?i)The inequality is strict\s*\(([^)]+)\)\s*,?\s*(.+)$", s)
+    if m:
+        rel, rest = m.group(1).strip(), m.group(2).strip().rstrip(".")
+        rel_m = rel if rel.startswith("$") else f"${rel}$"
+        m2 = re.match(r"^(.+?):\s*(\$.+\$|[^:]+)$", rest)
+        if m2:
+            action, sol = m2.group(1).strip(), m2.group(2).strip()
+            body = (
+                f"Because the inequality is strict ({rel_m}), {_lower_first(action)}:\n\n"
+                f"{D(sol.strip('$'))}"
+            )
+        else:
+            body = f"Because the inequality is strict ({rel_m}), {_lower_first(rest)}."
+        if true_sol:
+            return body + "\n\nThe true solution set is\n\n" + true_sol
+        return body
+
+    if true_sol:
+        lead = s if s else "The true solution set is"
+        if s:
+            return s + "\n\nThe true solution set is\n\n" + true_sol
+        return "The true solution set is\n\n" + true_sol
+    if s:
+        return s if s[0].isupper() else s[0].upper() + s[1:]
+    return s
+
+
+def _polish_math_style(text: str) -> str:
+    """Unify bare signs/intervals into math and kill orphan punctuation lines."""
+    # Repair corrupted \\approx (\\a → bell) from bad source escapes
+    text = text.replace("\x07pprox", r"\approx")
+    text = re.sub(r"(?<!\\)\\approx", r"\\approx", text)  # no-op safety
+
+    def wrap_rel(m: re.Match[str]) -> str:
+        inner = m.group(1).strip()
+        return f"(${inner}$)"
+
+    text = re.sub(
+        r"(?<!\$)\(\s*([<>≤≥]|\\le|\\ge|\\leq|\\geq)\s*0\s*\)",
+        wrap_rel,
+        text,
+    )
+    # ": $interval$." → display math (period not orphaned after KaTeX)
+    def to_disp(m: re.Match[str]) -> str:
+        return f":\n\n{D(m.group(1))}"
+
+    text = re.sub(r":\s*\$([^$]+)\$\s*\.(?=\s*(?:\n|$))", to_disp, text)
+    text = re.sub(r"\n\.\s*(?=\n|$)", "\n", text)
+    text = re.sub(r"(?m)^\.\s*$\n?", "", text)
+    text = re.sub(r"(\$\$)\s*\.", r"\1", text)
+    # Clean ", which…" crumbs left when a mixed eq+prose line was split
+    text = re.sub(r"(\$\$)\n\n,\s*", r"\1\n\n", text)
+    text = re.sub(
+        r"(\$\$)\n\n([a-z])",
+        lambda m: m.group(1) + "\n\n" + m.group(2).upper(),
+        text,
+    )
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
 def _convert_body(raw: str, *, subsection: str, statement: str) -> str:
     body = _OLD_HDR.sub("", raw.strip()).strip()
     body = _CLOSER.sub("", body).strip()
@@ -561,14 +718,24 @@ def _convert_body(raw: str, *, subsection: str, statement: str) -> str:
 
         if p == "__SIGN__":
             if chart_rows:
-                pieces = [rf"{iv}:\ {sg}" for iv, sg in chart_rows]
-                out.append(
-                    "The sign on each open interval is\n\n"
-                    + D(r",\quad ".join(pieces))
-                )
+                # Tables only when the interval method is non-trivial (3+ open pieces).
+                # Simpler charts stay as a short display line.
+                if len(chart_rows) >= 3:
+                    rows = ["| Interval | Sign |", "| --- | --- |"]
+                    for iv, sg in chart_rows:
+                        rows.append(f"| ${iv}$ | ${sg}$ |")
+                    out.append(
+                        "Reading the signs on the open intervals made by the critical points:\n\n"
+                        + "\n".join(rows)
+                    )
+                else:
+                    pieces = [rf"{iv}:\ {sg}" for iv, sg in chart_rows]
+                    out.append(
+                        "The signs on the open intervals are\n\n"
+                        + D(r",\quad ".join(pieces))
+                    )
             i += 1
             continue
-
         # Numerator / denominator zero notes
         nd = _num_den_block(p)
         if nd is not None:
@@ -616,6 +783,11 @@ def _convert_body(raw: str, *, subsection: str, statement: str) -> str:
                     out.append(lead)
                 i += 1
                 continue
+            if raw_label == "Strictness":
+                displays, prose_after, j = _consume_math_after(paras, i + 1)
+                out.append(_rewrite_strictness(prose_after))
+                i = j
+                continue
             displays, prose_after, j = _consume_math_after(paras, i + 1)
             _emit_lead_then(lead, displays, prose_after, out)
             i = j
@@ -632,6 +804,13 @@ def _convert_body(raw: str, *, subsection: str, statement: str) -> str:
                 out.append(D(r",\quad ".join(f"x = {n}" for n in nums)))
                 i += 1
                 continue
+        # "-4 (denominator zero, excluded), -1 and 2 (numerator zero)."
+        if re.search(r"(?i)numerator zero|denominator zero", p) and re.match(
+            r"^-?\d", p.strip()
+        ):
+            out.append(_rewrite_critical_list(p))
+            i += 1
+            continue
         if _is_equation_line(p):
             out.append(_eq_display(p))
             i += 1
@@ -720,7 +899,12 @@ def _finish(body: str, verdict: str, style: str) -> str:
             return f"{body}\n\nThe claim’s comparison is incorrect, so the statement is False."
         return f"{body}\n\nComparing this value with the claim shows the statement is True."
     last = body.split("\n")[-1]
-    if body.rstrip().endswith("$$") or re.search(r"\bso\b", last, re.I):
+    if (
+        body.rstrip().endswith("$$")
+        or body.rstrip().endswith("|")
+        or "| Interval | Sign |" in body[-200:]
+        or re.search(r"\bso\b", last, re.I)
+    ):
         return f"{body}\n\nSo the statement is {verdict}."
     return f"{body.rstrip('.')}, so the statement is {verdict}."
 
@@ -728,6 +912,14 @@ def _finish(body: str, verdict: str, style: str) -> str:
 def _flatten_short(body: str) -> str:
     """13.18 B: one or two sentences of prose, no display algebra."""
     text = re.sub(r"\$\$.*?\$\$", " ", body, flags=re.S)
+    # Drop markdown sign tables from short items
+    text = re.sub(
+        r"Reading the signs on the open intervals[^\n]*\n+(?:\|[^\n]+\n+)+",
+        "",
+        text,
+        flags=re.I,
+    )
+    text = re.sub(r"\| Interval \| Sign \|[\s\S]*?(?=\n\n|\Z)", " ", text)
     text = re.sub(
         r"(?i)^A rational inequality is decided by the zeros of the numerator and the "
         r"excluded zeros of the denominator\.\s*(?:Start from\s*)?",
@@ -852,7 +1044,27 @@ def rewrite_one(
     verdict = "True" if truth else "False"
     body = _convert_body(raw, subsection=subsection, statement=statement)
     if style == "short":
-        body = _flatten_short(body)
+        short = _flatten_short(body)
+        # Reject hollow shorts (empty leads / table crumbs / dropped key numbers)
+        hollow = bool(re.search(r"(?i)(condition is:|inequality is:)\s*(The |$)", short))
+        hollow = hollow or bool(re.search(r"\|\s*\$", short))  # table fragment
+        hollow = hollow or bool(
+            re.search(r"(?i)true solution is\s+A quick check", short)
+        )
+        hollow = hollow or bool(
+            re.search(r"(?i)^(Or |And )\$", short.strip())
+        )
+        stmt_nums = set(re.findall(r"-?\d+(?:\.\d+)?", statement))
+        # Keep distinctive values; drop lone 0/1 which appear everywhere
+        stmt_nums = {n for n in stmt_nums if n not in {"0", "1", "-1"}}
+        short_nums = set(re.findall(r"-?\d+(?:\.\d+)?", short))
+        if stmt_nums and len(stmt_nums - short_nums) >= 2 and len(short) < 450:
+            hollow = True
+        # Fragmented leftovers from flatten
+        hollow = hollow or bool(re.search(r"(?i)^(Or |And )\b", short.strip()))
+        hollow = hollow or (len(short) < 220 and len(body) > 450)
+        body = body if hollow else short
+        style = "medium" if hollow else style
     body = _finish(body, verdict, style)
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
 
@@ -863,6 +1075,7 @@ def rewrite_one(
     body = re.sub(r"\$\$(.+?)\$\$", fix, body, flags=re.S)
     # Strip any leftover bold-only section labels
     body = re.sub(r"^\*\*[A-Za-z][^*]{0,60}\*\*\s*$", "", body, flags=re.M)
+    body = _polish_math_style(body)
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
     return f"**{letter}.** → {verdict}\n\n{body}"
 
@@ -887,8 +1100,16 @@ def audit(tasks: list[dict]) -> list[str]:
                 ):
                     errs.append(f"{t['case_id']} {letter}: bold label {line[:50]}")
                     break
-            if "| Interval | Sign |" in expl:
-                errs.append(f"{t['case_id']} {letter}: table")
+            if re.search(
+                r"(?i)because the inequality is strict,\s*the inequality is strict",
+                expl,
+            ):
+                errs.append(f"{t['case_id']} {letter}: dup strict")
+            if re.search(r"(?m)^\.\s*$", expl) or re.search(r"\n\.\s*(\n|$)", expl):
+                errs.append(f"{t['case_id']} {letter}: orphan period")
+            # Bare (> 0) outside math
+            if re.search(r"(?<!\$)\(\s*[<>≤≥]\s*0\s*\)", expl):
+                errs.append(f"{t['case_id']} {letter}: bare relation")
             # Glued sentences without punctuation (heuristic)
             if re.search(
                 r"(zeros|symbol|claim|formula|pieces|branches) [A-Z]",
@@ -898,6 +1119,39 @@ def audit(tasks: list[dict]) -> list[str]:
                 expl,
             ):
                 errs.append(f"{t['case_id']} {letter}: possible glue")
+    return errs
+
+
+def verify_statement_match(tasks: list[dict]) -> list[str]:
+    """Flag explanations that drop key numbers from the matching statement."""
+    errs = []
+    for t in tasks:
+        for i, (stmt, expl) in enumerate(
+            zip(t["statements"], t["tactical_explanations"])
+        ):
+            letter = LETTERS[i]
+            # Numbers from statement (skip lonely 0/1 noise somewhat)
+            nums = set(re.findall(r"-?\d+(?:\.\d+)?", stmt.replace("{", " ").replace("}", " ")))
+            # Drop tiny structural noise
+            nums = {n for n in nums if n not in {"0", "1", "-1"} or n in stmt}
+            # Keep distinctive numbers (>=2 digits or appears in inequality context)
+            key = []
+            for n in nums:
+                if len(n.lstrip("-").replace(".", "")) >= 2:
+                    key.append(n)
+                elif n in ("2", "3", "4", "5", "6", "7", "8", "9", "-2", "-3", "-4", "-5", "-6", "-7"):
+                    key.append(n)
+            missing = [n for n in key if n not in expl and n.replace("-", r"\-") not in expl]
+            # Also try without sign
+            missing = [
+                n
+                for n in missing
+                if n.lstrip("-") not in expl and n not in expl.replace(" ", "")
+            ]
+            if len(missing) >= 3:
+                errs.append(
+                    f"{t['case_id']} {letter}: missing nums {missing[:6]} from statement"
+                )
     return errs
 
 
@@ -922,6 +1176,7 @@ def main() -> None:
         ]
 
     errs = audit(tasks)
+    match_errs = verify_statement_match(tasks)
     DST.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
     print(f"wrote explanations for {len(tasks)} tasks → {DST}")
     if errs:
@@ -930,6 +1185,19 @@ def main() -> None:
             print(" -", e)
     else:
         print("audit clean")
+    if match_errs:
+        print(f"MATCH WARNINGS ({len(match_errs)}):")
+        for e in match_errs[:25]:
+            print(" -", e)
+    else:
+        print("statement match clean")
+    n_tables = sum(
+        1
+        for t in tasks
+        for e in t["tactical_explanations"]
+        if "| Interval | Sign |" in e
+    )
+    print(f"sign-chart tables: {n_tables}")
     lens = sorted(len(e) for t in tasks for e in t["tactical_explanations"])
     n_disp = sum(e.count("$$") // 2 for t in tasks for e in t["tactical_explanations"])
     print(
