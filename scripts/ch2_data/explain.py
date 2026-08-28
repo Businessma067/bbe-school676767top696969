@@ -729,6 +729,21 @@ def _w_am_gm(c: Ctx) -> str:
 
 
 def _w_diff_of_squares_group(c: Ctx) -> str:
+    pair = re.search(
+        r"(\w)\^2-(\w)\^2=\((\w)-(\w)\)\((\w)\+(\w)\)",
+        c.statement,
+    )
+    if pair:
+        a, b = pair.group(1), pair.group(2)
+        if c.profile == "short":
+            return short(
+                f"Difference of squares: $({a}-{b})({a}+{b})={a}^2-{b}^2$."
+            )
+        return _join(
+            f"Factor the difference of squares in ${a}$ and ${b}$:",
+            disp(rf"({a}-{b})({a}+{b})={a}^2-{b}^2"),
+            "Both factors match the printed identity.",
+        )
     if c.profile == "short":
         return short(
             "Difference of squares in the outer letters: "

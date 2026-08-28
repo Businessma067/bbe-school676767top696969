@@ -42,6 +42,8 @@ def rewrite_file(path: Path, task_offset: int, by_slot: dict) -> int:
         task_i = idx // 5
         item_i = idx % 5
         global_i = task_offset + task_i
+        if task_i < 4:
+            continue
         if item_i not in slots_to_harden(global_i):
             continue
         claim = by_slot[(global_i, item_i)]
@@ -62,6 +64,29 @@ def rewrite_file(path: Path, task_offset: int, by_slot: dict) -> int:
 
 
 def main() -> None:
+    import importlib
+    import sys
+
+    from hard_exam_bank import all_hard_claims, hard_slots, set_soft_statement_avoid
+
+    sys.path.insert(0, str(HERE))
+    soft_stmts: set[str] = set()
+    mods = []
+    for name in ("s21", "s22", "s23", "s24", "s25"):
+        mods.append(importlib.import_module(name))
+
+    all_tasks = []
+    for m in mods:
+        all_tasks.extend(m.TASKS)
+
+    hard_set = set(hard_slots())
+    for gi, t in enumerate(all_tasks):
+        for ii, s in enumerate(t["statements"]):
+            if (gi, ii) not in hard_set:
+                soft_stmts.add(s.strip())
+
+    set_soft_statement_avoid(soft_stmts)
+
     claims = all_hard_claims()
     slots = hard_slots()
     assert len(claims) == len(slots)
@@ -72,10 +97,10 @@ def main() -> None:
 
     files = [
         (HERE / "s21.py", 0),
-        (HERE / "s22.py", 30),
-        (HERE / "s23.py", 60),
-        (HERE / "s24.py", 90),
-        (HERE / "s25.py", 120),
+        (HERE / "s22.py", 34),
+        (HERE / "s23.py", 68),
+        (HERE / "s24.py", 102),
+        (HERE / "s25.py", 136),
     ]
     # Restore clean soft+old by re-reading is wrong — files already have previous hard.
     # Re-inject overwrites hard slots only; OK.
