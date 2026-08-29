@@ -109,7 +109,7 @@ export function EnglishTasksPage({ tier }: Props) {
   };
 
   /** Topic name: if any subtopics are open, close them; otherwise toggle the topic. */
-  const onTopicNameClick = (chKey: string) => {
+  const onTopicNameClick = (chKey: EnglishChapter["key"] | "revision") => {
     const prefix = `${chKey}:`;
     const anySubOpen = Object.entries(expandedSub).some(
       ([key, open]) => open && key.startsWith(prefix),
