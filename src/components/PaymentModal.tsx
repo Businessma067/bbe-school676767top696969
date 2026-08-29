@@ -85,12 +85,20 @@ export function PaymentModal({
       return;
     }
 
+    // Discount-only code: applies 15% off, nothing else.
+    if (code.toLowerCase() === DISCOUNT_CODE.toLowerCase()) {
+      setDiscountApplied(true);
+      return;
+    }
+    setDiscountApplied(false);
+
     const { data } = await supabase.auth.getSession();
     if (!data.session) {
       setAuthOpen(true);
       setError("Sign in to redeem a promocode and unlock full access.");
       return;
     }
+
 
     setLoading(true);
     try {
