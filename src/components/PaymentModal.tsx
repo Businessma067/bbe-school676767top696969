@@ -36,7 +36,9 @@ export function PaymentModal({
   const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
+  const [discountApplied, setDiscountApplied] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+
 
   useEffect(() => {
     if (!open) return;
