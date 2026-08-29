@@ -75,6 +75,7 @@ export function AdminLayout({ children, title, wide }: Props) {
           <nav className="mt-3 flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-1">
             <AdminNavLink to="/admin">Accounts</AdminNavLink>
             <AdminNavLink to="/admin/users">Users</AdminNavLink>
+            <AdminNavLink to="/admin/promocodes">Promocodes</AdminNavLink>
           </nav>
         </aside>
         <div className="min-w-0 flex-1">
@@ -92,7 +93,7 @@ function AdminNavLink({
   to,
   children,
 }: {
-  to: "/admin" | "/admin/users";
+  to: "/admin" | "/admin/users" | "/admin/promocodes";
   children: ReactNode;
 }) {
   return (
