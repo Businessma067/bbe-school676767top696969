@@ -152,9 +152,12 @@ export function navItemsForTier(tier: AccountNavTier): NavItem[] {
   return guestNavItems;
 }
 
-/** Homepage uses marketing nav; inner pages use account-tier nav. */
+/**
+ * Guests on the homepage get marketing anchors; signed-in users (lite/full)
+ * keep their course nav (Practice, Mock Exams, …) on every page including `/`.
+ */
 export function navItemsForContext(pathname: string, tier: AccountNavTier): NavItem[] {
-  if (normalizePathname(pathname) === "/") return homeNavItems;
+  if (normalizePathname(pathname) === "/" && tier === "guest") return homeNavItems;
   return navItemsForTier(tier);
 }
 
