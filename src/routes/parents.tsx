@@ -28,11 +28,11 @@ export const Route = createFileRoute("/parents")({
       { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:image",
-        content: `https://bbe-school676767top696969.lovable.app${hallAsset.url}`,
+        content: `https://bbe-school.com${hallAsset.url}`,
       },
       {
         name: "twitter:image",
-        content: `https://bbe-school676767top696969.lovable.app${hallAsset.url}`,
+        content: `https://bbe-school.com${hallAsset.url}`,
       },
     ],
   }),
