@@ -1,7 +1,8 @@
 /**
  * Chapter 2 — Elementary algebra (subsections 2.1–2.5).
- * Exam format: five True/False claims per task. Each claim has its own
- * hypothesis and wording. Content stays inside elementary algebra:
+ * Exam format: five True/False claims per task with domain conditions.
+ * Formal stems (“Let … Which statements is/are correct?”). Subsection 2.5
+ * mixes deep multi-step algebra. Content stays inside elementary algebra:
  * expanding, factoring, rational expressions, powers and roots, and
  * Explanations follow MATH 13.18: letter header bound to each statement,
  * a named rule, display algebra of mixed length (short conceptual B, or
