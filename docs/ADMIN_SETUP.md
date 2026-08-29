@@ -24,6 +24,12 @@ Run this migration once in **Supabase → SQL Editor** (safe to re-run):
 
 It creates `promocodes` + `promo_redeem_attempts` and seeds the ten `BBE-FREE-*` codes.
 
+## Revoke Full Course enrollments
+
+To clear existing Full Course access for everyone and block self-enroll into paid tiers, run:
+
+`supabase/migrations/20260829220000_revoke_full_course_enrollments.sql`
+
 ## Pages
 
 - `/admin` — accounts + stats

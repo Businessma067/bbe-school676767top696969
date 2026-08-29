@@ -3,6 +3,10 @@ import { supabase } from "@/integrations/supabase/client";
 import type { AccountNavTier } from "@/config/site-nav";
 import { fetchEnrollments, highestTier } from "@/lib/user-progress";
 
+/**
+ * Signed-in users get the course header (Demo-course, Products, Practice, …).
+ * Guests keep the marketing guest nav. Lite owners keep lite nav until Full is owned.
+ */
 export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
   const [ready, setReady] = useState(false);
   const [tier, setTier] = useState<AccountNavTier>("guest");
@@ -23,7 +27,14 @@ export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
       const enrollments = await fetchEnrollments();
       if (cancelled) return;
       const highest = highestTier(enrollments);
-      setTier(highest === "full" ? "full" : highest === "lite" ? "lite" : "guest");
+      if (highest === "full") {
+        setTier("full");
+      } else if (highest === "lite") {
+        setTier("lite");
+      } else {
+        // Signed in without a paid course: still show the signed-in course chrome.
+        setTier("full");
+      }
       setReady(true);
     };
 

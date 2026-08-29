@@ -4,6 +4,7 @@ import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { Wand2 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 
 export const Route = createFileRoute("/products/full-course-subjects")({
   head: () => ({
@@ -20,7 +21,13 @@ export const Route = createFileRoute("/products/full-course-subjects")({
       },
     ],
   }),
-  component: FullCourseSubjects,
+  component: function FullCourseSubjectsRoute() {
+    return (
+      <RequireFullCourse>
+        <FullCourseSubjects />
+      </RequireFullCourse>
+    );
+  },
 });
 
 const subjects = [

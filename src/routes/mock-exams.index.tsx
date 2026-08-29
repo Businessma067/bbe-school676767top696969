@@ -49,7 +49,7 @@ function MockExamsPage() {
   const navigate = useNavigate();
   const [selected, setSelected] = useState<MockExamSummary | null>(null);
   const [withAnswerSheet, setWithAnswerSheet] = useState(true);
-  const [tier, setTier] = useState<ProductTier | null>(null);
+  const [tier, setTier] = useState<ProductTier | "none" | null>(null);
   const [attempts, setAttempts] = useState<MockAttempt[] | null>(null);
   const [inProgress, setInProgress] = useState<Record<string, { timed: boolean; answerSheet: boolean }>>(
     {},
@@ -61,7 +61,8 @@ function MockExamsPage() {
       const [enrollments, history] = await Promise.all([fetchEnrollments(), fetchMockAttempts()]);
       if (cancelled) return;
       const owned = highestTier(enrollments);
-      setTier(owned === "full" ? "full" : "lite");
+      // Full Course mocks require a Full Course enrollment; do not grant lite mocks to guests.
+      setTier(owned === "full" ? "full" : owned === "lite" ? "lite" : "none");
       setAttempts(history);
 
       const progress: Record<string, { timed: boolean; answerSheet: boolean }> = {};
@@ -76,7 +77,7 @@ function MockExamsPage() {
     };
   }, []);
 
-  const exams = getExamsForTier(tier ?? "lite");
+  const exams = tier === "full" || tier === "lite" ? getExamsForTier(tier) : [];
   const completed = attempts ?? [];
   const bestByExam = new Map<string, MockAttempt>();
   for (const a of completed) {

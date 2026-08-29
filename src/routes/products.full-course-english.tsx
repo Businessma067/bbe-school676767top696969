@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EnglishTasksPage } from "@/components/EnglishTasksPage";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 
 export const Route = createFileRoute("/products/full-course-english")({
   head: () => ({
@@ -17,9 +18,8 @@ export const Route = createFileRoute("/products/full-course-english")({
 
 function FullCourseEnglishTasks() {
   return (
-    <EnglishTasksPage
-      tier="full"
-      backTo="/products/full-course-subjects"
-    />
+    <RequireFullCourse>
+      <EnglishTasksPage tier="full" backTo="/products/full-course-subjects" />
+    </RequireFullCourse>
   );
 }

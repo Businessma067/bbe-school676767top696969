@@ -13,6 +13,7 @@ import { scrubStatementHints } from "@/lib/case-context";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { SiteHeader } from "@/components/SiteHeader";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
@@ -31,7 +32,13 @@ export const Route = createFileRoute("/products/full-course-economics")({
       { name: "description", content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam." },
     ],
   }),
-  component: EconomicsTasks,
+  component: function EconomicsTasksRoute() {
+    return (
+      <RequireFullCourse>
+        <EconomicsTasks />
+      </RequireFullCourse>
+    );
+  },
 });
 
 type Case = {

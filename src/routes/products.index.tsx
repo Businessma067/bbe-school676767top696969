@@ -4,6 +4,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
+import { useFullCourseAccess } from "@/hooks/use-full-course-access";
+import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -36,6 +38,9 @@ type Product = {
   to?: string;
   disabled?: boolean;
   badge?: string;
+  /** When set, CTA switches for Full Course owners. */
+  ownedCta?: string;
+  ownedTo?: string;
 };
 
 const products: Product[] = [
@@ -53,7 +58,9 @@ const products: Product[] = [
     description:
       "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
     cta: "Buy course · €479",
-    to: "/products/full-course",
+    to: FULL_COURSE_PRODUCT_HREF,
+    ownedCta: "Go to course",
+    ownedTo: FULL_COURSE_HREF,
     badge: "#BEST DEAL",
   },
   {
@@ -67,6 +74,8 @@ const products: Product[] = [
 ];
 
 function ProductsPage() {
+  const { ready, ownsFullCourse } = useFullCourseAccess();
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
@@ -98,58 +107,73 @@ function ProductsPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {products.map((p) => (
-              <div
-                key={p.title}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-              >
+            {products.map((p) => {
+              const isFull = p.title === "Full BBE Course";
+              const owned = isFull && ownsFullCourse;
+              const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
+              const to = owned && p.ownedTo ? p.ownedTo : p.to;
+
+              return (
                 <div
-                  className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}
+                  key={p.title}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
                 >
-                  {p.badge && (
-                    <span
-                      className="absolute left-1/2 top-0 z-10 -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
-                      style={{ backgroundColor: ORANGE }}
-                    >
-                      {p.badge}
-                    </span>
-                  )}
                   <div
-                    className={`h-full w-full ${p.badge ? "overflow-hidden rounded-t-2xl" : ""}`}
+                    className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}
                   >
-                    <img
-                      src={p.image}
-                      alt={p.title}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                    {p.badge && (
+                      <span
+                        className="absolute left-1/2 top-0 z-10 -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
+                        style={{ backgroundColor: ORANGE }}
+                      >
+                        {p.badge}
+                      </span>
+                    )}
+                    <div
+                      className={`h-full w-full ${p.badge ? "overflow-hidden rounded-t-2xl" : ""}`}
+                    >
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h2 className="font-display text-xl font-semibold text-foreground">{p.title}</h2>
+                    <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
+                      {p.description}
+                    </p>
+                    {!ready && isFull ? (
+                      <div
+                        className="mt-5 h-10 animate-pulse rounded-md bg-secondary"
+                        aria-hidden
+                      />
+                    ) : to && !p.disabled ? (
+                      <Link
+                        to={to}
+                        className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                        style={{
+                          backgroundColor: ORANGE,
+                          boxShadow: `0 4px 14px -4px ${ORANGE}80`,
+                        }}
+                      >
+                        {cta} →
+                      </Link>
+                    ) : (
+                      <button
+                        disabled
+                        className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-80 shadow-sm"
+                        style={{ backgroundColor: ORANGE }}
+                      >
+                        {cta}
+                      </button>
+                    )}
                   </div>
                 </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <h2 className="font-display text-xl font-semibold text-foreground">{p.title}</h2>
-                  <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
-                    {p.description}
-                  </p>
-                  {p.to && !p.disabled ? (
-                    <Link
-                      to={p.to}
-                      className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                      style={{ backgroundColor: ORANGE, boxShadow: `0 4px 14px -4px ${ORANGE}80` }}
-                    >
-                      {p.cta} →
-                    </Link>
-                  ) : (
-                    <button
-                      disabled
-                      className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-80 shadow-sm"
-                      style={{ backgroundColor: ORANGE }}
-                    >
-                      {p.cta}
-                    </button>
-                  )}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <CompareTable />
