@@ -20,8 +20,11 @@ import {
 } from "@/components/ui/accordion";
 import { CompareTable } from "@/components/CompareTable";
 import { PaymentModal } from "@/components/PaymentModal";
+import { AuthModal } from "@/components/AuthModal";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { useFullCourseAccess } from "@/hooks/use-full-course-access";
+import { FULL_COURSE_HREF } from "@/lib/full-course-access";
 
 const FULL_COURSE_PRICE = 479;
 
@@ -201,7 +204,13 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
   );
 }
 
-function CtaButton({ onClick }: { onClick: () => void }) {
+function CtaButton({
+  onClick,
+  label = "Buy course",
+}: {
+  onClick: () => void;
+  label?: string;
+}) {
   return (
     <button
       type="button"
@@ -209,13 +218,23 @@ function CtaButton({ onClick }: { onClick: () => void }) {
       className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
       style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
     >
-      Buy course →
+      {label} →
     </button>
   );
 }
 
 function FullCourseProduct() {
+  const { ready, signedIn, ownsFullCourse } = useFullCourseAccess();
   const [paymentOpen, setPaymentOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
+
+  const openBuy = () => {
+    if (!signedIn) {
+      setAuthOpen(true);
+      return;
+    }
+    setPaymentOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -281,16 +300,34 @@ function FullCourseProduct() {
           <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
             <div>
               <div className="text-xs font-medium uppercase tracking-widest text-taupe">
-                One-time payment
+                {ownsFullCourse ? "Your access" : "One-time payment"}
               </div>
               <div className="mt-1 flex items-baseline gap-2">
-                <span className="font-display text-4xl font-bold text-foreground">
-                  €{FULL_COURSE_PRICE}
-                </span>
-                <span className="text-sm text-muted-foreground">full access</span>
+                {ownsFullCourse ? (
+                  <span className="font-display text-2xl font-bold text-foreground">Unlocked</span>
+                ) : (
+                  <>
+                    <span className="font-display text-4xl font-bold text-foreground">
+                      €{FULL_COURSE_PRICE}
+                    </span>
+                    <span className="text-sm text-muted-foreground">full access</span>
+                  </>
+                )}
               </div>
             </div>
-            <CtaButton onClick={() => setPaymentOpen(true)} />
+            {!ready ? (
+              <div className="h-12 w-40 animate-pulse rounded-xl bg-secondary" />
+            ) : ownsFullCourse ? (
+              <Link
+                to={FULL_COURSE_HREF}
+                className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 sm:w-auto"
+                style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
+              >
+                Go to course →
+              </Link>
+            ) : (
+              <CtaButton onClick={openBuy} label="Buy course" />
+            )}
           </div>
 
           {/* Section 1 — Feature grid */}
@@ -534,6 +571,15 @@ function FullCourseProduct() {
         onOpenChange={setPaymentOpen}
         productName="Full BBE Course"
         priceEuros={FULL_COURSE_PRICE}
+      />
+      <AuthModal
+        open={authOpen}
+        onOpenChange={setAuthOpen}
+        defaultMode="signin"
+        onSignedIn={() => {
+          setAuthOpen(false);
+          setPaymentOpen(true);
+        }}
       />
     </div>
   );

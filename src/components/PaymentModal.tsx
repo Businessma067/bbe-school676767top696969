@@ -48,7 +48,16 @@ export function PaymentModal({
     setSubmitted(false);
     setPromoUnlocked(false);
     setAuthOpen(false);
-  }, [open]);
+
+    // Buying requires an account first.
+    void (async () => {
+      const { data } = await supabase.auth.getSession();
+      if (!data.session) {
+        onOpenChange(false);
+        setAuthOpen(true);
+      }
+    })();
+  }, [open, onOpenChange]);
 
   const handlePaySubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -262,7 +271,7 @@ export function PaymentModal({
         defaultMode="signin"
         onSignedIn={() => {
           setAuthOpen(false);
-          setError(null);
+          onOpenChange(true);
         }}
       />
     </>

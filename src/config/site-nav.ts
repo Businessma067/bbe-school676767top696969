@@ -103,9 +103,15 @@ export const liteNavItems: NavItem[] = [
   },
 ];
 
-/** Full course owners. */
+/** Full course owners (and signed-in users who should see the course chrome). */
 export const fullNavItems: NavItem[] = [
   examInfoItem,
+  {
+    label: "Demo-course",
+    href: "/demo-practice",
+    isRoute: true,
+    activePrefixes: ["/demo-practice", "/products/demo-practice"],
+  },
   productsItem,
   {
     label: "Practice",

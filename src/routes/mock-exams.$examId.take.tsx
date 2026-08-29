@@ -20,6 +20,7 @@ import {
   fetchInProgressMockSession,
   upsertMockExamProgress,
 } from "@/lib/user-progress";
+import { userOwnsFullCourse, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { AnnotationLayer } from "@/components/mock-exam/AnnotationLayer";
 import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
 import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
@@ -117,6 +118,14 @@ function TakeExamPage() {
         setContentReady(true);
         return;
       }
+      if (resolved.summary.tier === "full") {
+        const owns = await userOwnsFullCourse();
+        if (cancelled) return;
+        if (!owns) {
+          navigate({ to: FULL_COURSE_PRODUCT_HREF });
+          return;
+        }
+      }
       setExam(resolved.summary);
       setQuestions(resolved.questions);
       setExamSeconds(resolved.durationSeconds);
@@ -125,7 +134,7 @@ function TakeExamPage() {
     return () => {
       cancelled = true;
     };
-  }, [examId]);
+  }, [examId, navigate]);
 
   useEffect(() => {
     if (!contentReady || questions.length === 0 || loadError) return;
