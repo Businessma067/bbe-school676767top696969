@@ -117,7 +117,7 @@ export const trackEventLocal = createServerFn({ method: "POST" })
       subject: data.subject ?? null,
       entityType: data.entityType ?? null,
       entityId: data.entityId ?? null,
-      metadata: data.metadata ?? {},
+      metadata: (data.metadata ?? {}) as Record<string, import("@/lib/admin-types").AdminJsonValue>,
       durationMs: data.durationMs ?? null,
       createdAt: new Date().toISOString(),
     });
