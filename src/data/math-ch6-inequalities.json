@@ -3169,6 +3169,474 @@
    "sort_order": 100,
    "solution_overview": "A delivery-drone battery range, a paint-mix cost cap, overtime pay to hit a weekly earnings goal, a swimming-pool chlorine window, and a shared-taxi fare split.",
    "placeholder": false
+  },
+  {
+   "id": "math-6-101",
+   "case_id": "MATH 6.101",
+   "title": "Taxi fare budget",
+   "subsection": "6.5",
+   "context": "A taxi charges 3.50 EUR as a base fare plus 1.20 EUR for every kilometre driven. A passenger has exactly 18 EUR for the ride. What is the greatest whole number of kilometres the passenger can travel without going over budget?",
+   "statements": [
+    "The greatest whole number of kilometres is 12.",
+    "Travelling 13 km still stays within the 18 EUR budget.",
+    "The exact continuous maximum distance is greater than 12 km."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest whole number of kilometres is 12.**  (true)\n\n**Reading the wording**\n\nBase fare 3.50 EUR plus 1.20 EUR per km; budget 18 EUR. Find the largest whole km count with fare at most 18 EUR.\n\n**Choose a variable**\n\nLet $d$ be the distance in kilometres. For a whole-number answer, $d$ is an integer.\n\n**Translate into an inequality**\n\nFare: $3.50 + 1.20d$. Budget: $3.50 + 1.20d \\le 18$.\n\n**Solve step by step**\n\n$1.20d \\le 14.50$\n$d \\le \\dfrac{14.50}{1.20} \u0007pprox 12.083$.\nLargest whole $d$: 12.\n\n**Interpret the result**\n\nAt most about 12.08 km are affordable, so the greatest whole number is 12.\n\n**Compare to the claim**\n\nThe claim matches the solution, so it is true.\n\n**Quick check:** $d = 12$ costs $17.90 \\le 18$; $d = 13$ costs $19.10 > 18$.",
+    "**B) Travelling 13 km still stays within the 18 EUR budget.**  (false)\n\n**Reading the wording**\n\nSame fare model; check whether 13 km is affordable.\n\n**Choose a variable**\n\nLet $d = 13$.\n\n**Translate into an inequality**\n\n$3.50 + 1.20 \\cdot 13 \\le 18$?\n\n**Solve step by step**\n\n$3.50 + 15.60 = 19.10 > 18$.\n\n**Interpret the result**\n\nThirteen kilometres overshoots the budget.\n\n**Compare to the claim**\n\nThe claim is false.\n\n**Quick check:** Maximum whole km is 12.",
+    "**C) The exact continuous maximum distance is greater than 12 km.**  (true)\n\n**Reading the wording**\n\nBefore rounding to whole kilometres, the continuous bound was about 12.08 km.\n\n**Choose a variable**\n\nLet $d$ be a real distance.\n\n**Translate into an inequality**\n\n$3.50 + 1.20d \\le 18$ gives $d \\le 12.083\\ldots$.\n\n**Solve step by step**\n\nThe continuous maximum is about 12.08 km.\n\n**Interpret the result**\n\nThat value is greater than 12.\n\n**Compare to the claim**\n\nThe claim is true.\n\n**Quick check:** $d = 12.08$ is allowed; $d = 12.09$ is not."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 101,
+   "solution_overview": "Set up a linear inequality for the fare, solve for distance, then round down to a whole number of kilometres.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-102",
+   "case_id": "MATH 6.102",
+   "title": "Mobile data overage",
+   "subsection": "6.5",
+   "context": "A mobile plan costs 12 EUR per month plus 0.08 EUR for every megabyte used beyond the allowance. A customer has already used 200 MB over the allowance this month and wants the total bill to stay at or under 40 EUR. How many more over-allowance megabytes can they still use?",
+   "statements": [
+    "They can still use at most 150 more over-allowance megabytes.",
+    "Using 160 more over-allowance megabytes still keeps the bill at or under 40 EUR.",
+    "If they use no more overage at all, the bill is already over 40 EUR."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A) They can still use at most 150 more over-allowance megabytes.**  (true)\n\n**Reading the wording**\n\nFixed 12 EUR; 0.08 EUR per overage MB; already 200 MB over; bill at most 40 EUR.\n\n**Choose a variable**\n\nLet $m$ be additional over-allowance megabytes ($m \\ge 0$).\n\n**Translate into an inequality**\n\n$12 + 0.08(200 + m) \\le 40$.\n\n**Solve step by step**\n\n$28 + 0.08m \\le 40$\n$m \\le 150$.\n\n**Interpret the result**\n\nAt most 150 further MB keep the bill within 40 EUR.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $m = 150$ gives bill 40 EUR; $m = 151$ gives 40.08 EUR.",
+    "**B) Using 160 more over-allowance megabytes still keeps the bill at or under 40 EUR.**  (false)\n\n**Reading the wording**\n\nCheck $m = 160$ in the same bill formula.\n\n**Choose a variable**\n\n$m = 160$.\n\n**Translate into an inequality**\n\n$12 + 0.08(360) = 40.80$.\n\n**Solve step by step**\n\n$40.80 > 40$.\n\n**Interpret the result**\n\n160 MB more is too much.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** The cutoff is $m \\le 150$.",
+    "**C) If they use no more overage at all, the bill is already over 40 EUR.**  (false)\n\n**Reading the wording**\n\nCheck the bill with only the 200 MB already used.\n\n**Choose a variable**\n\n$m = 0$.\n\n**Translate into an inequality**\n\n$12 + 0.08 \\cdot 200 = 28$.\n\n**Solve step by step**\n\n$28 \\le 40$.\n\n**Interpret the result**\n\nThe bill is still well under 40 EUR.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** They have room for up to 150 more MB."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 102,
+   "solution_overview": "Write the bill as a linear expression in the remaining overage, solve the inequality, and read the upper bound.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-103",
+   "case_id": "MATH 6.103",
+   "title": "Weekend trip savings",
+   "subsection": "6.5",
+   "context": "Maya already has 40 EUR and saves 25 EUR every week. She needs at least 300 EUR for a weekend trip. What is the smallest number of whole weeks she must keep saving to reach her goal?",
+   "statements": [
+    "The smallest number of whole weeks is 11.",
+    "After 10 weeks she already has enough money.",
+    "Any real number of weeks greater than or equal to 10.4 would work if fractional weeks were allowed."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The smallest number of whole weeks is 11.**  (true)\n\n**Reading the wording**\n\nStart 40 EUR; +25 EUR/week; need at least 300 EUR.\n\n**Choose a variable**\n\nLet $w$ be whole weeks of saving.\n\n**Translate into an inequality**\n\n$40 + 25w \\ge 300$.\n\n**Solve step by step**\n\n$25w \\ge 260$\n$w \\ge 10.4$.\nSmallest whole $w$: 11.\n\n**Interpret the result**\n\nAfter 10 weeks she is still short; 11 weeks is the first that works.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $w = 10$ gives 290 EUR; $w = 11$ gives 315 EUR.",
+    "**B) After 10 weeks she already has enough money.**  (false)\n\n**Reading the wording**\n\nEvaluate the amount after 10 weeks.\n\n**Choose a variable**\n\n$w = 10$.\n\n**Translate into an inequality**\n\n$40 + 250 = 290$.\n\n**Solve step by step**\n\n$290 < 300$.\n\n**Interpret the result**\n\nShe is 10 EUR short.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** She needs 11 weeks.",
+    "**C) Any real number of weeks greater than or equal to 10.4 would work if fractional weeks were allowed.**  (true)\n\n**Reading the wording**\n\nThe continuous solution of the inequality is $w \\ge 10.4$.\n\n**Choose a variable**\n\nReal $w \\ge 0$.\n\n**Translate into an inequality**\n\n$40 + 25w \\ge 300$ iff $w \\ge 10.4$.\n\n**Solve step by step**\n\nEvery real $w \\ge 10.4$ meets the goal.\n\n**Interpret the result**\n\nThat is exactly the continuous solution set.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** In practice she counts whole weeks, so she uses 11."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 103,
+   "solution_overview": "Solve a linear inequality for weeks and round up to the next whole week.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-104",
+   "case_id": "MATH 6.104",
+   "title": "Elevator load limit",
+   "subsection": "6.5",
+   "context": "An elevator may carry at most 600 kg. Three adults of 70 kg, 85 kg, and 90 kg are already inside. Each child weighs 35 kg. What is the greatest number of such children who can still enter without exceeding the limit?",
+   "statements": [
+    "At most 10 children can still enter.",
+    "Eleven children can still enter safely.",
+    "With no children, more than half of the capacity is already used."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A) At most 10 children can still enter.**  (true)\n\n**Reading the wording**\n\nCapacity 600 kg; adults already 245 kg; each child 35 kg.\n\n**Choose a variable**\n\nLet $c$ be the number of children (whole number).\n\n**Translate into an inequality**\n\n$245 + 35c \\le 600$.\n\n**Solve step by step**\n\n$35c \\le 355$\n$c \\le 10.14\\ldots$.\nLargest whole $c$: 10.\n\n**Interpret the result**\n\nTen children add 350 kg for a total of 595 kg.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $c = 10$ gives 595 kg; $c = 11$ gives 630 kg.",
+    "**B) Eleven children can still enter safely.**  (false)\n\n**Reading the wording**\n\nCheck $c = 11$.\n\n**Choose a variable**\n\n$c = 11$.\n\n**Translate into an inequality**\n\n$245 + 385 = 630$.\n\n**Solve step by step**\n\n$630 > 600$.\n\n**Interpret the result**\n\nEleven children exceed the limit.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Maximum is 10.",
+    "**C) With no children, more than half of the capacity is already used.**  (false)\n\n**Reading the wording**\n\nAdults alone weigh 245 kg; half of 600 is 300 kg.\n\n**Choose a variable**\n\nCompare 245 with 300.\n\n**Translate into an inequality**\n\n$245 < 300$.\n\n**Solve step by step**\n\nLess than half the capacity is used.\n\n**Interpret the result**\n\nAbout 40.8% of capacity is used by the adults.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** $$\\dfrac{245}{600}$ \u0007pprox 0.408$."
+   ],
+   "difficulty_level": "2/5",
+   "sort_order": 104,
+   "solution_overview": "Subtract the current load from the capacity and divide by the child mass; take the integer part.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-105",
+   "case_id": "MATH 6.105",
+   "title": "Car rental kilometres",
+   "subsection": "6.5",
+   "context": "A car rental costs 45 EUR per day plus 0.25 EUR per kilometre. A tourist rents the car for exactly 3 days and has a total budget of 200 EUR for the rental. What is the greatest whole number of kilometres they can drive without exceeding the budget?",
+   "statements": [
+    "The greatest whole number of kilometres is 260.",
+    "Driving 300 km stays within the 200 EUR budget.",
+    "The fixed 3-day charge alone already uses more than half of the budget."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest whole number of kilometres is 260.**  (true)\n\n**Reading the wording**\n\n3 days $\\times$ 45 EUR = 135 EUR fixed; +0.25 EUR/km; budget 200 EUR.\n\n**Choose a variable**\n\nLet $k$ be kilometres (whole number).\n\n**Translate into an inequality**\n\n$135 + 0.25k \\le 200$.\n\n**Solve step by step**\n\n$0.25k \\le 65$\n$k \\le 260$.\n\n**Interpret the result**\n\nExactly 260 km uses the full budget.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $k = 260$ costs 200 EUR; $k = 261$ costs 200.25 EUR.",
+    "**B) Driving 300 km stays within the 200 EUR budget.**  (false)\n\n**Reading the wording**\n\nCheck $k = 300$.\n\n**Choose a variable**\n\n$k = 300$.\n\n**Translate into an inequality**\n\n$135 + 75 = 210$.\n\n**Solve step by step**\n\n$210 > 200$.\n\n**Interpret the result**\n\n300 km is over budget.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Maximum is 260 km.",
+    "**C) The fixed 3-day charge alone already uses more than half of the budget.**  (true)\n\n**Reading the wording**\n\nFixed charge 135 EUR; budget 200 EUR; half is 100 EUR.\n\n**Choose a variable**\n\nCompare 135 with 100.\n\n**Translate into an inequality**\n\n$135 > 100$.\n\n**Solve step by step**\n\nThe daily charges alone exceed half the budget.\n\n**Interpret the result**\n\nOnly 65 EUR remains for kilometres.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $$\\dfrac{135}{200}$ = 0.675$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 105,
+   "solution_overview": "Fix the 3-day charge, solve for kilometres, then take the greatest whole number.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-106",
+   "case_id": "MATH 6.106",
+   "title": "Weekly pay with bonus",
+   "subsection": "6.5",
+   "context": "Leo earns 14 EUR per hour and receives a 50 EUR bonus if he works more than 25 hours in a week. He wants total pay of at least 450 EUR this week and will work more than 25 hours (so the bonus applies). What is the smallest whole number of hours he must work?",
+   "statements": [
+    "The smallest whole number of hours is 29.",
+    "Working 28 hours is enough to reach 450 EUR.",
+    "Without the bonus, he would need more than 32 hours to reach 450 EUR."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The smallest whole number of hours is 29.**  (true)\n\n**Reading the wording**\n\nFor $h > 25$, pay $= 14h + 50$. Need pay at least 450 EUR.\n\n**Choose a variable**\n\nLet $h$ be hours ($h > 25$, whole).\n\n**Translate into an inequality**\n\n$14h + 50 \\ge 450$.\n\n**Solve step by step**\n\n$14h \\ge 400$\n$h \\ge \\dfrac{400}{14} \u0007pprox 28.57$.\nSmallest whole $h$: 29.\n\n**Interpret the result**\n\n28 hours give only 442 EUR; 29 hours give 456 EUR.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $h = 28$: $442 < 450$; $h = 29$: $456 \\ge 450$.",
+    "**B) Working 28 hours is enough to reach 450 EUR.**  (false)\n\n**Reading the wording**\n\nEvaluate pay at 28 hours with bonus.\n\n**Choose a variable**\n\n$h = 28$.\n\n**Translate into an inequality**\n\n$14 \\cdot 28 + 50 = 442$.\n\n**Solve step by step**\n\n$442 < 450$.\n\n**Interpret the result**\n\n28 hours is not enough.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** He needs 29 hours.",
+    "**C) Without the bonus, he would need more than 32 hours to reach 450 EUR.**  (true)\n\n**Reading the wording**\n\nWithout bonus, pay $= 14h$. Need $14h \\ge 450$.\n\n**Choose a variable**\n\n$h$ hours, no bonus.\n\n**Translate into an inequality**\n\n$h \\ge \\dfrac{450}{14} \u0007pprox 32.14$.\n\n**Solve step by step**\n\nHe would need at least 33 whole hours.\n\n**Interpret the result**\n\nThat is more than 32 hours.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $h = 32$ gives 448 EUR without bonus."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 106,
+   "solution_overview": "Include the bonus in the pay formula, solve the inequality, and round up to a whole hour.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-107",
+   "case_id": "MATH 6.107",
+   "title": "Fuel budget for a trip",
+   "subsection": "6.5",
+   "context": "A car uses 0.07 litres of fuel per kilometre. Fuel costs 1.60 EUR per litre. A driver has 56 EUR to spend on fuel for a trip. What is the greatest trip distance in kilometres that stays within this fuel budget?",
+   "statements": [
+    "The greatest distance is exactly 500 km.",
+    "A 480 km trip costs more than 56 EUR in fuel.",
+    "Each kilometre costs 0.112 EUR in fuel."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest distance is exactly 500 km.**  (true)\n\n**Reading the wording**\n\n${0.07 L/km}$ at 1.60 EUR/L; budget 56 EUR.\n\n**Choose a variable**\n\nLet $d$ be distance in km.\n\n**Translate into an inequality**\n\nCost: $1.60 \\cdot 0.07d = 0.112d \\le 56$.\n\n**Solve step by step**\n\n$d \\le \\dfrac{56}{0.112} = 500$.\n\n**Interpret the result**\n\nThe maximum is exactly 500 km.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $d = 500$ costs 56 EUR; $d = 501$ costs 56.112 EUR.",
+    "**B) A 480 km trip costs more than 56 EUR in fuel.**  (false)\n\n**Reading the wording**\n\nCompute cost at 480 km.\n\n**Choose a variable**\n\n$d = 480$.\n\n**Translate into an inequality**\n\n$0.112 \\cdot 480 = 53.76$.\n\n**Solve step by step**\n\n$53.76 \\le 56$.\n\n**Interpret the result**\n\n480 km is still within budget.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Only beyond 500 km exceeds 56 EUR.",
+    "**C) Each kilometre costs 0.112 EUR in fuel.**  (true)\n\n**Reading the wording**\n\nPrice per litre times litres per kilometre.\n\n**Choose a variable**\n\nUnit cost $= 1.60 \\cdot 0.07$.\n\n**Translate into an inequality**\n\n$1.60 \\cdot 0.07 = 0.112$ EUR/km.\n\n**Solve step by step**\n\nThat is the slope of the cost function.\n\n**Interpret the result**\n\nBudget divided by 0.112 gives 500 km.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $$\\dfrac{56}{0.112}$ = 500$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 107,
+   "solution_overview": "Combine consumption and price into a cost-per-kilometre rate, then solve the budget inequality.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-108",
+   "case_id": "MATH 6.108",
+   "title": "Medicine fridge temperature",
+   "subsection": "6.5",
+   "context": "A medicine fridge must stay between 2 °C and 8 °C inclusive. A technician proposes the condition $|T - 5| \\le 3$ as a test for acceptable temperature T. Does this absolute-value condition match the required temperature range exactly?",
+   "statements": [
+    "The condition $|T - 5| \\le 3$ is exactly the same as 2 $\\le$ T $\\le$ 8.",
+    "The wider condition $|T - 5| \\le 4$ also matches the required range exactly.",
+    "Every temperature that satisfies $|T - 5| \\le 3$ is at least 2 °C."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The condition $|T - 5| \\le 3$ is exactly the same as 2 $\\le$ T $\\le$ 8.**  (true)\n\n**Reading the wording**\n\nRequired range $[2, 8]$. Proposed: $|T - 5| \\le 3$.\n\n**Choose a variable**\n\nLet $T$ be temperature in °C.\n\n**Translate into an inequality**\n\n$|T - 5| \\le 3$ means $-3 \\le T - 5 \\le 3$, so $2 \\le T \\le 8$.\n\n**Solve step by step**\n\nThe two descriptions are identical.\n\n**Interpret the result**\n\nThe condition matches the range exactly.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $T = 2$ and $T = 8$ give absolute deviation 3; $T = 1$ gives 4.",
+    "**B) The wider condition $|T - 5| \\le 4$ also matches the required range exactly.**  (false)\n\n**Reading the wording**\n\n$|T - 5| \\le 4$ expands to $[1, 9]$, which is wider than $[2, 8]$.\n\n**Choose a variable**\n\n$T$ temperature.\n\n**Translate into an inequality**\n\n$1 \\le T \\le 9$ versus $2 \\le T \\le 8$.\n\n**Solve step by step**\n\nThe sets are not equal.\n\n**Interpret the result**\n\nThe wider condition allows unsafe temperatures.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** $T = 1$ satisfies $|T - 5| \\le 4$ but not the required range.",
+    "**C) Every temperature that satisfies $|T - 5| \\le 3$ is at least 2 °C.**  (true)\n\n**Reading the wording**\n\nFrom $|T - 5| \\le 3$ we get T $\\ge$ 2.\n\n**Choose a variable**\n\n$T$ temperature.\n\n**Translate into an inequality**\n\n$-3 \\le T - 5$ implies $T \\ge 2$.\n\n**Solve step by step**\n\nThe lower bound is included.\n\n**Interpret the result**\n\nSame for the upper bound $T \\le 8$.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** The interval is exactly $[2, 8]$."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 108,
+   "solution_overview": "Rewrite the absolute-value inequality as a closed interval and compare it with $[2, 8]$.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-109",
+   "case_id": "MATH 6.109",
+   "title": "Water tank filling time",
+   "subsection": "6.5",
+   "context": "An empty tank holds 480 litres. A tap fills it at 12 litres per minute. After how many minutes of continuous filling from empty is the tank exactly half full?",
+   "statements": [
+    "The tank is exactly half full after 20 minutes.",
+    "After 30 minutes the tank is still at most half full.",
+    "The tank becomes completely full in 40 minutes."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The tank is exactly half full after 20 minutes.**  (true)\n\n**Reading the wording**\n\nCapacity ${480 L}$; half = ${240 L}$; rate ${12 L/min}$.\n\n**Choose a variable**\n\nLet $t$ be minutes.\n\n**Translate into an inequality**\n\n$12t = 240$.\n\n**Solve step by step**\n\n$t = 20$.\n\n**Interpret the result**\n\nAfter 20 minutes the volume is exactly half.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $12 \\cdot 20 = 240$.",
+    "**B) After 30 minutes the tank is still at most half full.**  (false)\n\n**Reading the wording**\n\nVolume after 30 min is ${360 L}$; half is ${240 L}$.\n\n**Choose a variable**\n\n$t = 30$.\n\n**Translate into an inequality**\n\n$360 \\le 240$?\n\n**Solve step by step**\n\n$360 > 240$.\n\n**Interpret the result**\n\nThe tank is three-quarters full.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** $$\\dfrac{360}{480}$ = 0.75$.",
+    "**C) The tank becomes completely full in 40 minutes.**  (true)\n\n**Reading the wording**\n\nFull means ${480 L}$ at ${12 L/min}$.\n\n**Choose a variable**\n\n$12t = 480$.\n\n**Translate into an inequality**\n\n$t = 40$.\n\n**Solve step by step**\n\n40 minutes fill the tank.\n\n**Interpret the result**\n\nYes.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $12 \\cdot 40 = 480$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 109,
+   "solution_overview": "Set volume = rate $\\times$ time and compare with half capacity.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-110",
+   "case_id": "MATH 6.110",
+   "title": "Courier delivery deadline",
+   "subsection": "6.5",
+   "context": "A courier must finish a delivery within 90 minutes. Driving takes 1.5 minutes per kilometre, and there is a fixed 15-minute stop at the warehouse. What is the greatest delivery distance in kilometres that can still be completed on time?",
+   "statements": [
+    "The greatest on-time distance is 50 km.",
+    "A 45 km delivery cannot be completed on time.",
+    "Without the warehouse stop, the courier could cover more than 50 km in 90 minutes."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest on-time distance is 50 km.**  (true)\n\n**Reading the wording**\n\nLimit 90 min; fixed stop 15 min; 1.5 min/km driving.\n\n**Choose a variable**\n\nLet $d$ be distance in km.\n\n**Translate into an inequality**\n\n$15 + 1.5d \\le 90$.\n\n**Solve step by step**\n\n$1.5d \\le 75$\n$d \\le 50$.\n\n**Interpret the result**\n\nMaximum on-time distance is 50 km.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $d = 50$ uses exactly 90 min; $d = 51$ uses 91.5 min.",
+    "**B) A 45 km delivery cannot be completed on time.**  (false)\n\n**Reading the wording**\n\nCheck time for 45 km.\n\n**Choose a variable**\n\n$d = 45$.\n\n**Translate into an inequality**\n\n$15 + 67.5 = 82.5$.\n\n**Solve step by step**\n\n$82.5 \\le 90$.\n\n**Interpret the result**\n\n45 km is on time.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Anything up to 50 km works.",
+    "**C) Without the warehouse stop, the courier could cover more than 50 km in 90 minutes.**  (true)\n\n**Reading the wording**\n\nIf only driving: $1.5d \\le 90$ gives $d \\le 60$.\n\n**Choose a variable**\n\n$d$ distance, no stop.\n\n**Translate into an inequality**\n\n$d \\le 60$.\n\n**Solve step by step**\n\n60 km is greater than 50 km.\n\n**Interpret the result**\n\nThe 15-minute stop costs 10 km of range.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $$\\dfrac{90}{1.5}$ = 60$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 110,
+   "solution_overview": "Subtract the fixed stop from the time limit, then divide by the per-kilometre driving time.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-111",
+   "case_id": "MATH 6.111",
+   "title": "Shop discount budget",
+   "subsection": "6.5",
+   "context": "A shop offers 20% off every marked price. Nora has 48 EUR and wants to buy one item after the discount. What is the greatest marked price she can afford?",
+   "statements": [
+    "The greatest affordable marked price is 60 EUR.",
+    "An item marked 55 EUR costs more than 48 EUR after the discount.",
+    "If the marked price is halved, Nora pays 40% of the original marked price."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest affordable marked price is 60 EUR.**  (true)\n\n**Reading the wording**\n\n20% off means she pays 80%; cash 48 EUR.\n\n**Choose a variable**\n\nLet $p$ be marked price.\n\n**Translate into an inequality**\n\n$0.8p \\le 48$.\n\n**Solve step by step**\n\n$p \\le 60$.\n\n**Interpret the result**\n\nMaximum marked price is 60 EUR.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $p = 60$ costs 48 EUR; $p = 61$ costs 48.80 EUR.",
+    "**B) An item marked 55 EUR costs more than 48 EUR after the discount.**  (false)\n\n**Reading the wording**\n\nDiscounted price of 55 EUR is 44 EUR.\n\n**Choose a variable**\n\n$p = 55$.\n\n**Translate into an inequality**\n\n$0.8 \\cdot 55 = 44$.\n\n**Solve step by step**\n\n$44 \\le 48$.\n\n**Interpret the result**\n\n44 EUR is affordable.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Only marked prices above 60 EUR fail.",
+    "**C) If the marked price is halved, Nora pays 40% of the original marked price.**  (true)\n\n**Reading the wording**\n\nShe always pays 80% of the shown mark.\n\n**Choose a variable**\n\nOriginal mark $p$; new mark $p/2$.\n\n**Translate into an inequality**\n\nPayment $= 0.8 \\cdot (p/2) = 0.4p$.\n\n**Solve step by step**\n\nThat is 40% of the original mark.\n\n**Interpret the result**\n\nTrue as a percentage of the original mark.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** Mark 60 → pay 48; mark 30 → pay 24 = 40% of 60."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 111,
+   "solution_overview": "Paying 80% of the marked price, solve ${0.8p \\le 48}$ for p.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-112",
+   "case_id": "MATH 6.112",
+   "title": "Weighted exam grade",
+   "subsection": "6.5",
+   "context": "An exam has Part A worth 40% of the grade and Part B worth 60%. Sam scored 70% on Part A. What is the lowest whole-number percent he needs on Part B to reach an overall grade of at least 85%?",
+   "statements": [
+    "He needs at least 95% on Part B.",
+    "Scoring 80% on Part B is enough for an 85% overall grade.",
+    "Part A alone already contributes 28 percentage points to the overall grade."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) He needs at least 95% on Part B.**  (true)\n\n**Reading the wording**\n\nOverall = ${0.4 \\cdot 70 + 0.6 \\cdot b = 28 + 0.6b}$. Need at least 85.\n\n**Choose a variable**\n\nLet $b$ be Part B percent.\n\n**Translate into an inequality**\n\n$28 + 0.6b \\ge 85$.\n\n**Solve step by step**\n\n$0.6b \\ge 57$\n$b \\ge 95$.\n\n**Interpret the result**\n\nThe lowest whole percent is 95.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $b = 95$ gives 85%; $b = 94$ gives 84.4%.",
+    "**B) Scoring 80% on Part B is enough for an 85% overall grade.**  (false)\n\n**Reading the wording**\n\nOverall at $b = 80$ is 76%.\n\n**Choose a variable**\n\n$b = 80$.\n\n**Translate into an inequality**\n\n$28 + 48 = 76$.\n\n**Solve step by step**\n\n$76 < 85$.\n\n**Interpret the result**\n\n80% on B only yields 76% overall.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** He needs 95% on B.",
+    "**C) Part A alone already contributes 28 percentage points to the overall grade.**  (true)\n\n**Reading the wording**\n\n$0.4 \\cdot 70 = 28$.\n\n**Choose a variable**\n\nFixed contribution from A.\n\n**Translate into an inequality**\n\nOverall $= 28 + 0.6b$.\n\n**Solve step by step**\n\n28 points are locked in.\n\n**Interpret the result**\n\nHe still needs 57 more points from Part B’s 60% weight.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $0.6 \\cdot 95 = 57$."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 112,
+   "solution_overview": "Write the weighted average inequality and solve for Part B; round up to a whole percent.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-113",
+   "case_id": "MATH 6.113",
+   "title": "Weekly calorie goal",
+   "subsection": "6.5",
+   "context": "Ana burns about 8 kcal per minute of jogging. She has already burned 900 kcal from other activity this week and wants a weekly total of at least 2500 kcal. What is the smallest whole number of jogging minutes she still needs?",
+   "statements": [
+    "She needs at least 200 minutes of jogging.",
+    "Three hours of jogging (180 minutes) are enough.",
+    "Each additional jogging minute closes the gap by 8 kcal."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) She needs at least 200 minutes of jogging.**  (true)\n\n**Reading the wording**\n\nAlready 900 kcal; +8 kcal/min; goal at least 2500.\n\n**Choose a variable**\n\nLet $m$ be jogging minutes.\n\n**Translate into an inequality**\n\n$900 + 8m \\ge 2500$.\n\n**Solve step by step**\n\n$8m \\ge 1600$\n$m \\ge 200$.\n\n**Interpret the result**\n\nExactly 200 minutes meet the goal.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $m = 200$ gives 2500 kcal; $m = 199$ gives 2492.",
+    "**B) Three hours of jogging (180 minutes) are enough.**  (false)\n\n**Reading the wording**\n\n$900 + 8\\cdot180 = 2340 < 2500$.\n\n**Choose a variable**\n\n$m = 180$.\n\n**Translate into an inequality**\n\n$2340 \\ge 2500$?\n\n**Solve step by step**\n\nNo.\n\n**Interpret the result**\n\nThree hours leave her 160 kcal short.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** She needs 200 minutes.",
+    "**C) Each additional jogging minute closes the gap by 8 kcal.**  (true)\n\n**Reading the wording**\n\nThe coefficient of $m$ in $900 + 8m$ is 8.\n\n**Choose a variable**\n\nRate of calorie burn while jogging.\n\n**Translate into an inequality**\n\nSlope is 8 kcal per minute.\n\n**Solve step by step**\n\nGap from 900 to 2500 is 1600 kcal.\n\n**Interpret the result**\n\n$\\dfrac{1600}{8}$ = 200 minutes.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $900 + 8\\cdot200 = 2500$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 113,
+   "solution_overview": "Solve 900 + 8m $\\ge$ 2500 for m and round up.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-114",
+   "case_id": "MATH 6.114",
+   "title": "Parcel weight limit",
+   "subsection": "6.5",
+   "context": "A courier accepts a parcel only if its mass is at most 5 kg. A box with packaging weighs 1.2 kg, and each item placed inside weighs 0.4 kg. What is the greatest number of items that can go in the box and still be accepted?",
+   "statements": [
+    "The greatest number of items is 9.",
+    "Ten items are still accepted.",
+    "The empty box alone uses less than 25% of the allowed mass."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest number of items is 9.**  (true)\n\n**Reading the wording**\n\nMax mass 5 kg; box 1.2 kg; items 0.4 kg each.\n\n**Choose a variable**\n\nLet $n$ be the number of items (whole).\n\n**Translate into an inequality**\n\n$1.2 + 0.4n \\le 5$.\n\n**Solve step by step**\n\n$0.4n \\le 3.8$\n$n \\le 9.5$.\nLargest whole $n$: 9.\n\n**Interpret the result**\n\nNine items give total mass 4.8 kg.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $n = 9$ → 4.8 kg; $n = 10$ → 5.2 kg.",
+    "**B) Ten items are still accepted.**  (false)\n\n**Reading the wording**\n\n$1.2 + 4.0 = 5.2 > 5$.\n\n**Choose a variable**\n\n$n = 10$.\n\n**Translate into an inequality**\n\n$5.2 \\le 5$?\n\n**Solve step by step**\n\nNo.\n\n**Interpret the result**\n\nTen items are rejected.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Maximum is 9.",
+    "**C) The empty box alone uses less than 25% of the allowed mass.**  (true)\n\n**Reading the wording**\n\nEmpty box 1.2 kg; 25% of 5 kg is 1.25 kg.\n\n**Choose a variable**\n\nCompare 1.2 with 1.25.\n\n**Translate into an inequality**\n\n$1.2 < 1.25$.\n\n**Solve step by step**\n\nSlightly under 25%.\n\n**Interpret the result**\n\nTrue.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $$\\dfrac{1.2}{5}$ = 0.24$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 114,
+   "solution_overview": "Solve ${1.2 + 0.4n \\le 5}$ for a whole number n.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-115",
+   "case_id": "MATH 6.115",
+   "title": "Concert group tickets",
+   "subsection": "6.5",
+   "context": "Concert tickets cost 28 EUR each, and a group booking fee of 12 EUR is added once for the whole group. A club has 160 EUR to spend. What is the greatest number of people they can buy tickets for without going over budget?",
+   "statements": [
+    "The greatest number of people is 5.",
+    "Six people can be booked within the 160 EUR budget.",
+    "The booking fee alone is less than 10% of the club’s budget."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The greatest number of people is 5.**  (true)\n\n**Reading the wording**\n\n28 EUR/ticket + 12 EUR fee once; budget 160 EUR.\n\n**Choose a variable**\n\nLet $n$ be the number of tickets (whole, $n \\ge 1$).\n\n**Translate into an inequality**\n\n$28n + 12 \\le 160$.\n\n**Solve step by step**\n\n$28n \\le 148$\n$n \\le 5.286\\ldots$.\nLargest whole $n$: 5.\n\n**Interpret the result**\n\nFive tickets cost 152 EUR.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $n = 5$ → 152 EUR; $n = 6$ → 180 EUR.",
+    "**B) Six people can be booked within the 160 EUR budget.**  (false)\n\n**Reading the wording**\n\n$28\\cdot6 + 12 = 180 > 160$.\n\n**Choose a variable**\n\n$n = 6$.\n\n**Translate into an inequality**\n\n$180 \\le 160$?\n\n**Solve step by step**\n\nNo.\n\n**Interpret the result**\n\nSix people are over budget.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Maximum is 5.",
+    "**C) The booking fee alone is less than 10% of the club’s budget.**  (true)\n\n**Reading the wording**\n\nFee 12 EUR; budget 160 EUR; 10% of 160 is 16 EUR.\n\n**Choose a variable**\n\nCompare 12 with 16.\n\n**Translate into an inequality**\n\n$12 < 16$.\n\n**Solve step by step**\n\nThe fee is 7.5% of the budget.\n\n**Interpret the result**\n\nMost of the budget goes to ticket prices.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $$\\dfrac{12}{160}$ = 0.075$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 115,
+   "solution_overview": "Solve ${28n + 12 \\le 160}$ for a whole number n.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-116",
+   "case_id": "MATH 6.116",
+   "title": "Train arrival speed",
+   "subsection": "6.5",
+   "context": "A train journey is 180 km long. A passenger needs to arrive in at most 2.5 hours. What is the smallest constant average speed in km/h that gets them there on time?",
+   "statements": [
+    "The smallest sufficient average speed is 72 km/h.",
+    "An average speed of 70 km/h is fast enough.",
+    "Higher speed always means shorter travel time for this trip."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) The smallest sufficient average speed is 72 km/h.**  (true)\n\n**Reading the wording**\n\nDistance 180 km; time at most ${2.5 h}$.\n\n**Choose a variable**\n\nLet $v > 0$ be average speed in km/h.\n\n**Translate into an inequality**\n\n$\\dfrac{180}{v} \\le 2.5$.\n\n**Solve step by step**\n\n$180 \\le 2.5v$\n$v \\ge 72$.\n\n**Interpret the result**\n\nMinimum speed is 72 km/h.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $v = 72$ gives time ${2.5 h}$; $v = 71$ gives about ${2.535 h}$.",
+    "**B) An average speed of 70 km/h is fast enough.**  (false)\n\n**Reading the wording**\n\nTime at 70 km/h is about ${2.571 h}$.\n\n**Choose a variable**\n\n$v = 70$.\n\n**Translate into an inequality**\n\n$$\\dfrac{180}{70}$ \u0007pprox 2.571$.\n\n**Solve step by step**\n\n$2.571 > 2.5$.\n\n**Interpret the result**\n\n70 km/h is too slow.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Need at least 72 km/h.",
+    "**C) Higher speed always means shorter travel time for this trip.**  (true)\n\n**Reading the wording**\n\nTime $180/v$ decreases as $v$ increases for $v > 0$.\n\n**Choose a variable**\n\n$v$ speed.\n\n**Translate into an inequality**\n\nIf $v_1 < v_2$ then $180/v_1 > 180/v_2$.\n\n**Solve step by step**\n\nLarger speed shortens time.\n\n**Interpret the result**\n\nThat is why the inequality opens as $v \\ge 72$.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** Doubling speed halves the time."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 116,
+   "solution_overview": "Use time = distance/speed and solve the inequality for speed.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-117",
+   "case_id": "MATH 6.117",
+   "title": "Bridge weight capacity",
+   "subsection": "6.5",
+   "context": "A bridge may carry at most 12 tonnes. Each delivery truck weighs 2.8 tonnes empty and may carry up to 1.5 tonnes of cargo. What is the greatest number of fully loaded trucks that may be on the bridge at the same time?",
+   "statements": [
+    "At most 2 fully loaded trucks may be on the bridge.",
+    "Three fully loaded trucks are allowed.",
+    "One empty truck (no cargo) uses less than a quarter of the bridge limit."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) At most 2 fully loaded trucks may be on the bridge.**  (true)\n\n**Reading the wording**\n\nOne full truck: 2.8 + 1.5 = 4.3 tonnes; limit 12 tonnes.\n\n**Choose a variable**\n\nLet $n$ be the number of full trucks (whole).\n\n**Translate into an inequality**\n\n$4.3n \\le 12$.\n\n**Solve step by step**\n\n$n \\le \\dfrac{12}{4.3} \u0007pprox 2.79$.\nLargest whole $n$: 2.\n\n**Interpret the result**\n\nTwo trucks weigh 8.6 tonnes; three would weigh 12.9 tonnes.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $n = 2$ → 8.6 $\\le$ 12; $n = 3$ → 12.9 > 12.",
+    "**B) Three fully loaded trucks are allowed.**  (false)\n\n**Reading the wording**\n\n$4.3 \\cdot 3 = 12.9 > 12$.\n\n**Choose a variable**\n\n$n = 3$.\n\n**Translate into an inequality**\n\n$12.9 \\le 12$?\n\n**Solve step by step**\n\nNo.\n\n**Interpret the result**\n\nThree trucks exceed the limit.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** Maximum is 2.",
+    "**C) One empty truck (no cargo) uses less than a quarter of the bridge limit.**  (true)\n\n**Reading the wording**\n\nEmpty truck 2.8 tonnes; quarter of 12 is 3.\n\n**Choose a variable**\n\nCompare 2.8 with 3.\n\n**Translate into an inequality**\n\n$2.8 < 3$.\n\n**Solve step by step**\n\nAbout 23.3% of the limit.\n\n**Interpret the result**\n\nTrue.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $$\\dfrac{2.8}{12}$ \u0007pprox 0.233$."
+   ],
+   "difficulty_level": "3/5",
+   "sort_order": 117,
+   "solution_overview": "Compute one fully loaded truck’s mass, then solve $n \\cdot 4.3 \\le 12$ for a whole n.",
+   "placeholder": false
+  },
+  {
+   "id": "math-6-118",
+   "case_id": "MATH 6.118",
+   "title": "Comparing two phone plans",
+   "subsection": "6.5",
+   "context": "Plan A costs 10 EUR per month plus 0.10 EUR per call-minute. Plan B costs 20 EUR per month plus 0.05 EUR per call-minute. For which numbers of call-minutes x is Plan A strictly cheaper than Plan B?",
+   "statements": [
+    "Plan A is strictly cheaper exactly when $x < 200$.",
+    "At exactly 200 call-minutes, Plan A is still strictly cheaper.",
+    "For heavy users with more than 200 call-minutes, Plan B is cheaper."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A) Plan A is strictly cheaper exactly when $x < 200$.**  (true)\n\n**Reading the wording**\n\nCompare A: ${10+0.10x}$ with B: ${20+0.05x}$.\n\n**Choose a variable**\n\nLet $x$ be call-minutes ($x \\ge 0$).\n\n**Translate into an inequality**\n\n$10 + 0.10x < 20 + 0.05x$.\n\n**Solve step by step**\n\n$0.05x < 10$\n$x < 200$.\n\n**Interpret the result**\n\nA is strictly cheaper iff $x < 200$ (they tie at 200).\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** $x = 100$: A=20, B=25; $x = 200$: both 30; $x = 300$: A=40, B=35.",
+    "**B) At exactly 200 call-minutes, Plan A is still strictly cheaper.**  (false)\n\n**Reading the wording**\n\nAt $x = 200$ both plans cost 30 EUR.\n\n**Choose a variable**\n\n$x = 200$.\n\n**Translate into an inequality**\n\n$30 < 30$?\n\n**Solve step by step**\n\nNo — they are equal.\n\n**Interpret the result**\n\nStrict inequality fails at the boundary.\n\n**Compare to the claim**\n\nFalse.\n\n**Quick check:** A is cheaper only for $x < 200$.",
+    "**C) For heavy users with more than 200 call-minutes, Plan B is cheaper.**  (true)\n\n**Reading the wording**\n\nFrom the same algebra, A costs more than B when $x > 200$.\n\n**Choose a variable**\n\n$x > 200$.\n\n**Translate into an inequality**\n\n$10 + 0.10x > 20 + 0.05x$.\n\n**Solve step by step**\n\nB has the smaller cost.\n\n**Interpret the result**\n\nTrue.\n\n**Compare to the claim**\n\nTrue.\n\n**Quick check:** Example $x = 300$: A=40, B=35."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 118,
+   "solution_overview": "Set up the strict inequality between the two linear cost functions and solve for x.",
+   "placeholder": false
   }
  ]
 }
