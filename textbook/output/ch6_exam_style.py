@@ -45,6 +45,7 @@ def task(
     overview: str,
     items: list[tuple[str, bool, str]],
     difficulty: str,
+    context: str | None = None,
 ) -> dict:
     statements = [it[0] for it in items]
     answers = [it[1] for it in items]
@@ -52,12 +53,13 @@ def task(
         _expl(LETTERS[i], statements[i], answers[i], items[i][2])
         for i in range(len(items))
     ]
+    ctx = context or "Evaluate each statement. Mark it TRUE or FALSE."
     return {
         "id": f"math-6-{n}",
         "case_id": f"MATH 6.{n:02d}",
         "title": title,
         "subsection": "6.5",
-        "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+        "context": wrap_math(ctx) if context else ctx,
         "statements": [_stmt(s) for s in statements],
         "answer_key": answers,
         "tactical_explanations": expls,
@@ -764,15 +766,26 @@ $x < -3$ or $x > 2$.
 
 
 from ch6_exam_style_life import LIFE_SPECS
+from ch6_exam_style_questions import QUESTION_SPECS
 
 SPECS.extend(LIFE_SPECS)
+SPECS.extend(QUESTION_SPECS)
 
 
 def exam_style_tasks(start_n: int = 89) -> list[dict]:
-    return [
-        task(start_n + i, s["title"], s["overview"], s["items"], s["diff"])
-        for i, s in enumerate(SPECS)
-    ]
+    out = []
+    for i, s in enumerate(SPECS):
+        out.append(
+            task(
+                start_n + i,
+                s["title"],
+                s["overview"],
+                s["items"],
+                s["diff"],
+                context=s.get("context"),
+            )
+        )
+    return out
 
 
 def main() -> None:
