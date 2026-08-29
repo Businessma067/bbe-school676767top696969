@@ -61,7 +61,7 @@ const products: Product[] = [
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
     ownedTo: FULL_COURSE_HREF,
-    badge: "#BEST DEAL",
+    badge: "Best option",
   },
   {
     title: "Lite BBE Course",
@@ -106,7 +106,7 @@ function ProductsPage() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => {
               const isFull = p.title === "Full BBE Course";
               const owned = isFull && ownsFullCourse;
@@ -116,29 +116,42 @@ function ProductsPage() {
               return (
                 <div
                   key={p.title}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                  className={`group relative flex flex-col overflow-visible rounded-2xl border bg-card transition-all hover:-translate-y-1 ${
+                    p.badge
+                      ? "z-10 border-2 shadow-lg md:-my-2 md:scale-[1.03]"
+                      : "border-border shadow-sm hover:shadow-lg"
+                  }`}
+                  style={
+                    p.badge
+                      ? {
+                          borderColor: ORANGE,
+                          boxShadow: `0 12px 40px -12px ${ORANGE}55`,
+                        }
+                      : undefined
+                  }
                 >
-                  <div
-                    className={`relative aspect-[3/2] bg-secondary ${p.badge ? "overflow-visible pt-5" : "overflow-hidden"}`}
-                  >
-                    {p.badge && (
-                      <span
-                        className="absolute left-1/2 top-0 z-10 -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow-md"
-                        style={{ backgroundColor: ORANGE }}
-                      >
-                        {p.badge}
-                      </span>
-                    )}
-                    <div
-                      className={`h-full w-full ${p.badge ? "overflow-hidden rounded-t-2xl" : ""}`}
+                  {p.badge && (
+                    <span
+                      className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide text-white ring-4 ring-background"
+                      style={{
+                        backgroundColor: ORANGE,
+                        boxShadow: `0 8px 24px -4px ${ORANGE}aa`,
+                      }}
                     >
-                      <img
-                        src={p.image}
-                        alt={p.title}
-                        loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
+                      {p.badge}
+                    </span>
+                  )}
+                  <div
+                    className={`relative flex min-h-[200px] items-center justify-center overflow-hidden bg-secondary sm:min-h-[220px] ${
+                      p.badge ? "rounded-t-[14px]" : "rounded-t-2xl"
+                    }`}
+                  >
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      loading="lazy"
+                      className="max-h-[240px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:max-h-[280px]"
+                    />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h2 className="font-display text-xl font-semibold text-foreground">{p.title}</h2>

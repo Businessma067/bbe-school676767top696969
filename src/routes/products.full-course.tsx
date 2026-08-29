@@ -261,7 +261,7 @@ function FullCourseProduct() {
             <img
               src={fullAsset.url}
               alt="Full BBE Course"
-              className="w-full object-cover"
+              className="w-full object-contain"
               draggable={false}
             />
           </div>
