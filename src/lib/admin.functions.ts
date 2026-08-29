@@ -8,6 +8,7 @@ import {
 } from "@/lib/admin-stats.server";
 import type {
   AdminCohortStats,
+  AdminJsonValue,
   AdminListUsersResult,
   AdminTimelineResult,
   AdminUserDetail,

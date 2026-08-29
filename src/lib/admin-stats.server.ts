@@ -3,6 +3,7 @@ import type { Database } from "@/integrations/supabase/types";
 import type {
   AdminActivityEvent,
   AdminFlashcardDeckSummary,
+  AdminJsonValue,
   AdminMockRow,
   AdminPracticeSessionRow,
   AdminTaskAttemptRow,
