@@ -82,7 +82,7 @@ SPECS: list[dict] = [
         "items": [
             (
                 "A farmer is planning a new rectangular field. He has 80 meters of fencing "
-                "available. If he wants the field area to be at least 48 m^2 and to maintain "
+                "available. If he wants the field area to be at least 48 $m^{2}$ and to maintain "
                 "the ratio 3:1 between the longer and shorter side of the field, then the "
                 "shorter side can be between 4 and 20 meters long (both values included).",
                 False,
@@ -233,7 +233,7 @@ $|x| > 2$ is $(-\\infty, -2) \\cup (2, \\infty)$. It wrongly includes numbers le
             (
                 "A gardener has 80 meters of fencing for a rectangular plot and wants the longer "
                 "side to stay in a 4:1 ratio with the shorter side. If the area must be at least "
-                "64 m^2, then the shorter side can be any length from 4 m to 20 m, inclusive.",
+                "64 $m^{2}$, then the shorter side can be any length from 4 m to 20 m, inclusive.",
                 False,
                 """**Setup**
 
@@ -333,7 +333,7 @@ Keep the closed interval between the roots: $[2, 7]$.
         "items": [
             (
                 "A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 ratio of "
-                "length to width, and must have area at least 160 m^2. Then every shorter-side "
+                "length to width, and must have area at least 160 $m^{2}$. Then every shorter-side "
                 "length from 8 m to 12 m inclusive is feasible.",
                 True,
                 """**Setup**
@@ -354,7 +354,7 @@ $w \\ge 8$.
 
 $8 \\le w \\le 13.71$. The closed interval $[8, 12]$ lies inside this, so every such width works.
 
-**Quick check:** $w = 12$ uses 84 m of fence and has area 360 m^2.""",
+**Quick check:** $w = 12$ uses 84 m of fence and has area 360 $m^{2}$.""",
             ),
             (
                 "If $p(x) = -2x^{2} + 24x - 10$, then the solution set of $p(x) > 50$ is exactly "
@@ -436,7 +436,7 @@ $-2 \\le x \\le 8$.
         "items": [
             (
                 "A rectangular pen uses at most 60 m of fencing, has sides in the ratio 2:1, and "
-                "needs area at least 72 m^2. Then the shorter side can be any length from 6 m to "
+                "needs area at least 72 $m^{2}$. Then the shorter side can be any length from 6 m to "
                 "15 m inclusive.",
                 False,
                 """**Setup**
@@ -544,7 +544,7 @@ Combined with the domain $x \\ge -3$, the tighter bound is $x \\ge 1$.
         "items": [
             (
                 "A greenhouse uses at most 120 m of fencing, keeps a 5:3 ratio of length to width, "
-                "and needs area at least 375 m^2. Then the shorter side can be any length from "
+                "and needs area at least 375 $m^{2}$. Then the shorter side can be any length from "
                 "5 m to 15 m inclusive.",
                 False,
                 """**Setup**
@@ -655,7 +655,7 @@ $[2, 6]$.
         ),
         "items": [
             (
-                "A square plot uses at most 40 m of fencing and must have area at least 81 m^2. "
+                "A square plot uses at most 40 m of fencing and must have area at least 81 $m^{2}$. "
                 "Then every side length from 9 m to 12 m inclusive is feasible.",
                 False,
                 """**Setup**
