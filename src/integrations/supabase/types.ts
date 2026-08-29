@@ -161,63 +161,6 @@ export type Database = {
         }
         Relationships: []
       }
-      promo_redeem_attempts: {
-        Row: {
-          code_attempted: string
-          created_at: string
-          id: string
-          ip_address: string
-          success: boolean
-          user_id: string | null
-        }
-        Insert: {
-          code_attempted?: string
-          created_at?: string
-          id?: string
-          ip_address: string
-          success?: boolean
-          user_id?: string | null
-        }
-        Update: {
-          code_attempted?: string
-          created_at?: string
-          id?: string
-          ip_address?: string
-          success?: boolean
-          user_id?: string | null
-        }
-        Relationships: []
-      }
-      promocodes: {
-        Row: {
-          code: string
-          created_at: string
-          id: string
-          product_slug: string
-          used_at: string | null
-          used_by: string | null
-          used_by_email: string | null
-        }
-        Insert: {
-          code: string
-          created_at?: string
-          id?: string
-          product_slug?: string
-          used_at?: string | null
-          used_by?: string | null
-          used_by_email?: string | null
-        }
-        Update: {
-          code?: string
-          created_at?: string
-          id?: string
-          product_slug?: string
-          used_at?: string | null
-          used_by?: string | null
-          used_by_email?: string | null
-        }
-        Relationships: []
-      }
       mock_attempts: {
         Row: {
           annotations: Json
@@ -523,48 +466,36 @@ export type Database = {
       }
       task_attempts: {
         Row: {
-          attempt_number: number | null
           chapter: string
           correct_count: number
           created_at: string
-          duration_seconds: number | null
           id: string
           is_passed: boolean
-          source: string
           statement_count: number
-          statement_results: Json | null
           subject: string
           task_key: string
           task_title: string | null
           user_id: string
         }
         Insert: {
-          attempt_number?: number | null
           chapter: string
           correct_count?: number
           created_at?: string
-          duration_seconds?: number | null
           id?: string
           is_passed?: boolean
-          source?: string
           statement_count?: number
-          statement_results?: Json | null
           subject: string
           task_key: string
           task_title?: string | null
           user_id: string
         }
         Update: {
-          attempt_number?: number | null
           chapter?: string
           correct_count?: number
           created_at?: string
-          duration_seconds?: number | null
           id?: string
           is_passed?: boolean
-          source?: string
           statement_count?: number
-          statement_results?: Json | null
           subject?: string
           task_key?: string
           task_title?: string | null
@@ -604,129 +535,6 @@ export type Database = {
           },
         ]
       }
-      activity_events: {
-        Row: {
-          created_at: string
-          duration_ms: number | null
-          entity_id: string | null
-          entity_type: string | null
-          event_type: Database["public"]["Enums"]["activity_event_type"]
-          id: string
-          metadata: Json
-          subject: string | null
-          user_id: string
-        }
-        Insert: {
-          created_at?: string
-          duration_ms?: number | null
-          entity_id?: string | null
-          entity_type?: string | null
-          event_type: Database["public"]["Enums"]["activity_event_type"]
-          id?: string
-          metadata?: Json
-          subject?: string | null
-          user_id: string
-        }
-        Update: {
-          created_at?: string
-          duration_ms?: number | null
-          entity_id?: string | null
-          entity_type?: string | null
-          event_type?: Database["public"]["Enums"]["activity_event_type"]
-          id?: string
-          metadata?: Json
-          subject?: string | null
-          user_id?: string
-        }
-        Relationships: []
-      }
-      flashcard_progress: {
-        Row: {
-          card_id: string
-          id: string
-          knowledge: Database["public"]["Enums"]["flashcard_knowledge"]
-          subject_id: string
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          card_id: string
-          id?: string
-          knowledge?: Database["public"]["Enums"]["flashcard_knowledge"]
-          subject_id: string
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          card_id?: string
-          id?: string
-          knowledge?: Database["public"]["Enums"]["flashcard_knowledge"]
-          subject_id?: string
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
-      theory_progress: {
-        Row: {
-          chapter_id: string
-          completed: boolean
-          id: string
-          scroll_pct: number
-          section_id: string
-          subject: string
-          time_seconds: number
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          chapter_id: string
-          completed?: boolean
-          id?: string
-          scroll_pct?: number
-          section_id?: string
-          subject: string
-          time_seconds?: number
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          chapter_id?: string
-          completed?: boolean
-          id?: string
-          scroll_pct?: number
-          section_id?: string
-          subject?: string
-          time_seconds?: number
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
-      user_presence: {
-        Row: {
-          last_path: string | null
-          last_seen_at: string
-          updated_at: string
-          user_agent: string | null
-          user_id: string
-        }
-        Insert: {
-          last_path?: string | null
-          last_seen_at?: string
-          updated_at?: string
-          user_agent?: string | null
-          user_id: string
-        }
-        Update: {
-          last_path?: string | null
-          last_seen_at?: string
-          updated_at?: string
-          user_agent?: string | null
-          user_id?: string
-        }
-        Relationships: []
-      }
       user_roles: {
         Row: {
           created_at: string
@@ -753,15 +561,6 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      admin_list_users: {
-        Args: Record<PropertyKey, never>
-        Returns: {
-          user_id: string
-          email: string
-          display_name: string | null
-          registered_at: string
-        }[]
-      }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
@@ -780,21 +579,7 @@ export type Database = {
       }
     }
     Enums: {
-      activity_event_type:
-        | "page_view"
-        | "task_start"
-        | "task_submit"
-        | "mock_start"
-        | "mock_submit"
-        | "mock_abandon"
-        | "practice_start"
-        | "practice_complete"
-        | "theory_open"
-        | "theory_complete"
-        | "flashcard_rate"
-        | "login"
       app_role: "admin" | "user" | "student"
-      flashcard_knowledge: "known" | "unknown" | "new"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -922,22 +707,7 @@ export type CompositeTypes<
 export const Constants = {
   public: {
     Enums: {
-      activity_event_type: [
-        "page_view",
-        "task_start",
-        "task_submit",
-        "mock_start",
-        "mock_submit",
-        "mock_abandon",
-        "practice_start",
-        "practice_complete",
-        "theory_open",
-        "theory_complete",
-        "flashcard_rate",
-        "login",
-      ],
       app_role: ["admin", "user", "student"],
-      flashcard_knowledge: ["known", "unknown", "new"],
     },
   },
 } as const
