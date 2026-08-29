@@ -1,7 +1,7 @@
 /**
  * Chapter 6 — Inequalities (subsections 6.1–6.5).
  * 6.1–6.4 sourced from Inequalities_Regrouped_By_Topic.pdf;
- * 6.5 pure exam-style True/False claims from textbook/output/ch6_exam_style.py.
+ * 6.5 exam-style tasks from textbook/output/ch6_exam_style.py.
  */
 
 import type { MathTask } from "@/data/math-chapters";
