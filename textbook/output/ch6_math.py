@@ -419,6 +419,11 @@ def embed_display_fractions_outside_math(text: str) -> str:
     while i < n:
         cur = CURRENCY_RE.match(text, i)
         if cur:
+            math_end = currency_match_is_math_span(text, i, cur)
+            if math_end is not None:
+                out.append(text[i:math_end])
+                i = math_end
+                continue
             out.append(cur.group(0))
             i += len(cur.group(0))
             continue
@@ -458,10 +463,8 @@ def wrap_math(text: str) -> str:
     work = text
 
     def hold_currency(m: re.Match[str]) -> str:
-        start, end = m.start(), m.end()
-        after = text.find("$", end)
-        between = text[start + 1 : after] if after != -1 else ""
-        if after != -1 and looks_like_inline_math_span(between):
+        start = m.start()
+        if currency_match_is_math_span(text, start, m) is not None:
             return m.group(0)  # leave full `$…$` math for the main loop
         return hold(m.group(0))
 
@@ -529,11 +532,10 @@ def wrap_math(text: str) -> str:
                     continue
             cur = CURRENCY_RE.match(work, i)
             if cur:
-                after = work.find("$", i + len(cur.group(0)))
-                between = work[i + 1 : after] if after != -1 else ""
-                if after != -1 and looks_like_inline_math_span(between):
-                    out.append(work[i : after + 1])
-                    i = after + 1
+                math_end = currency_match_is_math_span(work, i, cur)
+                if math_end is not None:
+                    out.append(work[i:math_end])
+                    i = math_end
                     continue
                 out.append(cur.group(0))
                 i += len(cur.group(0))
@@ -631,6 +633,25 @@ def looks_like_inline_math_span(between: str) -> bool:
     return bool(re.search(r"[A-Za-z=<>≤≥+\-−*/^\\]", between))
 
 
+def currency_match_is_math_span(text: str, start: int, cur: re.Match[str]) -> int | None:
+    """If `$digits` begins an authored `$…$` math span, return the index after its closing `$`.
+
+    Handles both `$120 + 0.25x$` (algebra after the amount) and bare `$1.75$`
+    (immediate close). The latter must not be treated as currency plus an orphan `$`,
+    or later spans desync and LaTeX like `\\to` / `\\approx` become `\\$to` / `\\$approx`.
+    """
+    cur_end = start + len(cur.group(0))
+    after = text.find("$", cur_end)
+    if after == -1:
+        return None
+    if after == cur_end:
+        return after + 1
+    between = text[start + 1 : after]
+    if looks_like_inline_math_span(between):
+        return after + 1
+    return None
+
+
 def escape_currency_outside_math(text: str) -> str:
     """Write `$60` as `\\$60` outside KaTeX spans so prose like `$60 is $100` won't merge."""
     if not text or "$" not in text:
@@ -649,11 +670,10 @@ def escape_currency_outside_math(text: str) -> str:
                     continue
             cur = CURRENCY_RE.match(text, i)
             if cur:
-                after = text.find("$", i + len(cur.group(0)))
-                between = text[i + 1 : after] if after != -1 else ""
-                if after != -1 and looks_like_inline_math_span(between):
-                    out.append(text[i : after + 1])
-                    i = after + 1
+                math_end = currency_match_is_math_span(text, i, cur)
+                if math_end is not None:
+                    out.append(text[i:math_end])
+                    i = math_end
                     continue
                 out.append("\\" + cur.group(0))
                 i += len(cur.group(0))
