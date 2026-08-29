@@ -717,11 +717,11 @@ The claim is true.
 **Quick check:** $n = 62$ uses 24.8 kg; $n = 63$ uses 25.2 kg $> 25$.""",
             ),
             (
-                'A gardener fences three sides of a rectangular bed against an existing wall (the wall is the fourth side). There are 40 m of fencing. The gardener wants the area to be at least 96 m^2 and claims that every width from 4 m to 18 m inclusive is possible. That claim is true.',
+                'A gardener fences three sides of a rectangular bed against an existing wall (the wall is the fourth side). There are 40 m of fencing. The gardener wants the area to be at least 96 $m^{2}$ and claims that every width from 4 m to 18 m inclusive is possible. That claim is true.',
                 False,
                 """**Reading the wording**
 
-Three sides are fenced: two widths $w$ and one length $L$ parallel to the wall, using all 40 m: $2w + L = 40$. Area must be at least 96 m^2. The claim is that every width in $[4, 18]$ works.
+Three sides are fenced: two widths $w$ and one length $L$ parallel to the wall, using all 40 m: $2w + L = 40$. Area must be at least 96 $m^{2}$. The claim is that every width in $[4, 18]$ works.
 
 **Choose a variable**
 

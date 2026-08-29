@@ -7,7 +7,7 @@ QUESTION_SPECS: list[dict] = [
         "overview": ('Classic exam mix: fencing ratio, quadratic height, average cost, factory constraints, algebraic system.'),
         "items": [
             (
-                'A farmer is planning a rectangular field. He has 80 meters of fencing available. If he wants the area to be at least 48 m^2 and to keep a 3:1 ratio between the longer and shorter sides, then the shorter side can be between 4 and 20 meters long (both values included).',
+                'A farmer is planning a rectangular field. He has 80 meters of fencing available. If he wants the area to be at least 48 $m^{2}$ and to keep a 3:1 ratio between the longer and shorter sides, then the shorter side can be between 4 and 20 meters long (both values included).',
                 False,
                 """**Reading the wording**
 
@@ -463,152 +463,208 @@ True.
     {
         "title": 'Exam-style inequalities — set D',
         "diff": '4/5',
-        "overview": ('Absolute-value bands, iff claims, square-root domain, compound linear inequality.'),
+        "overview": (
+            "Decision logs, deriving an absolute-value model, a sensor alert that is wider than the "
+            "spec, a two-variable courier rule, and a calibrated square-root reading threshold."
+        ),
         "items": [
             (
-                'A medicine fridge must stay between 2 °C and 8 °C inclusive. The condition $|T-5|\\le 4$ describes exactly that required range.',
+                "A medicine fridge must stay between 2 °C and 8 °C inclusive. A technician logs "
+                "$T = 8.5$ °C and, because $|8.5 - 5| = 3.5 \\le 4$, reports that the fridge is "
+                "not in violation of the required range. That report is correct.",
                 False,
                 """**Reading the wording**
 
-Claim: $|T-5|\le 4$ equals $[2,8]$.
+Two different ideas are being mixed. The operational requirement is the closed band $[2, 8]$. The technician instead checks a different absolute-value test, $|T - 5| \\le 4$, and from that test alone concludes “not in violation”.
 
 **Choose a variable**
 
-Let $T$ be °C.
+Let $T$ be the logged temperature in °C. Here $T = 8.5$.
 
 **Translate into an inequality**
 
-$|T-5|\le 4\Rightarrow 1\le T\le 9$.
+Required range: $2 \\le T \\le 8$.
+Technician’s test: $|T - 5| \\le 4$, which rewrites as $1 \\le T \\le 9$.
 
 **Solve step by step**
 
-Compare $[1,9]$ with $[2,8]$.
+Check the log against the requirement:
+$8.5 > 8$, so $T = 8.5$ is already outside $[2, 8]$.
+
+Separately, the technician’s test holds:
+$|8.5 - 5| = 3.5 \\le 4$, so $T = 8.5$ sits inside $[1, 9]$.
 
 **Interpret the result**
 
-The absolute-value set is wider.
+Passing a wider absolute-value check does not clear the narrower fridge rule. At 8.5 °C the fridge is in violation, regardless of the $|T - 5| \\le 4$ calculation.
 
 **Compare to the claim**
 
-False — correct form is $|T-5|\le 3$.
+The report is incorrect, so the statement is false. (The absolute-value form that matches $[2, 8]$ exactly is $|T - 5| \\le 3$.)
 
-**Quick check:** $T=1$ satisfies $|T-5|\le 4$ but not $[2,8]$.""",
+**Quick check:** $T = 8$ is allowed and gives $|8 - 5| = 3$; $T = 8.5$ fails the fridge band even though $|8.5 - 5| = 3.5 \\le 4$.""",
             ),
             (
-                'Pool chlorine should stay between 1.0 and 3.0 mg/L inclusive. The reading C is acceptable if and only if $|C-2|\\le 1$.',
+                "Pool chlorine must stay between 1.0 and 3.0 mg/L inclusive. Starting from that "
+                "worded band alone, the absolute-value inequality that describes exactly the "
+                "acceptable readings $C$ is $|C - 2| \\le 1$.",
                 True,
                 """**Reading the wording**
 
-Claim: acceptable iff $|C-2|\le 1$.
+The band is given in words: every acceptable reading lies between 1.0 and 3.0 mg/L, endpoints included. The task is to build the matching absolute-value model, not to solve a pre-written inequality.
 
 **Choose a variable**
 
-Let $C$ be mg/L.
+Let $C$ be the chlorine reading in mg/L.
 
 **Translate into an inequality**
 
-$|C-2|\le 1\Rightarrow 1\le C\le 3$.
+Worded band: $1 \\le C \\le 3$.
+Centre of the band: midpoint $\\dfrac{1 + 3}{2} = 2$.
+Half-width: $\\dfrac{3 - 1}{2} = 1$.
+So the same band is $|C - 2| \\le 1$.
 
 **Solve step by step**
 
-Sets coincide.
+Expand the absolute-value form:
+$-1 \\le C - 2 \\le 1$
+$1 \\le C \\le 3$.
+
+The two descriptions are identical.
 
 **Interpret the result**
 
-Iff claim is correct.
+The derived absolute-value inequality matches the worded specification exactly (including the endpoints).
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** $C=1,3$ are boundaries; $C=0.5$ fails.""",
+**Quick check:** $C = 1$ and $C = 3$ give absolute value 1; $C = 0.5$ gives $|0.5 - 2| = 1.5 > 1$.""",
             ),
             (
-                'A storage room should keep humidity between 42% and 48%. Whenever $|H-45|\\le 5$, the humidity is automatically inside that band.',
+                "A museum archive must keep relative humidity between 42% and 48% inclusive to "
+                "protect the paper collection. Facilities installed a cheap corridor sensor that "
+                "stays quiet whenever $|H - 45| \\le 5$ and sounds an alert otherwise. After a "
+                "week with no alerts, a technician concludes that the archive humidity has "
+                "automatically stayed inside the 42%–48% conservation band the whole time. "
+                "That conclusion is justified.",
                 False,
                 """**Reading the wording**
 
-Claim: $|H-45|\le 5$ forces $[42,48]$.
+There are two nested conditions, and they are not the same size.
+
+- Conservation requirement (what the paper needs): humidity between 42% and 48% inclusive.
+- Sensor behaviour (what the hardware watches): the alarm stays off when $|H - 45| \\le 5$.
+
+The technician’s conclusion is an implication: “no alert all week” $\\Rightarrow$ “humidity stayed inside $[42, 48]$ all week”. That implication is what we must test.
+
+Useful phrases: “between 42% and 48% inclusive”, “stays quiet whenever”, “automatically stayed inside”.
 
 **Choose a variable**
 
-Let $H$ be humidity %.
+Let $H$ be relative humidity in percent.
 
 **Translate into an inequality**
 
-$|H-45|\le 5\Rightarrow 40\le H\le 50$.
+Conservation band:
+$42 \\le H \\le 48$.
 
-**Solve step by step**
+Quiet-sensor condition:
+$|H - 45| \\le 5$
+$-5 \\le H - 45 \\le 5$
+$40 \\le H \\le 50$.
 
-$[40,50]$ properly contains $[42,48]$.
+**Solve / compare the sets**
+
+Quiet-sensor set: $[40, 50]$.
+Conservation set: $[42, 48]$.
+
+The quiet set is strictly larger. Every reading in $[42, 48]$ keeps the sensor quiet, but the converse fails: readings such as $H = 41$ or $H = 49$ also keep the sensor quiet while lying outside the conservation band.
+
+In interval language, $[42, 48] \\subset [40, 50]$, so “inside the wider set” does not force “inside the tighter set”.
 
 **Interpret the result**
 
-$H=41$ keeps the abs bound but is too dry.
+A week of silence only proves that humidity stayed inside $[40, 50]$. It does not prove that humidity never drifted into the danger strips $40 \\le H < 42$ or $48 < H \\le 50$. The technician’s implication runs the wrong way.
+
+**Compare to the claim**
+
+The conclusion is not justified, so the statement is false. A sensor matched to the archive would need $|H - 45| \\le 3$, which is exactly $[42, 48]$.
+
+**Quick check:** $H = 41$ gives $|41 - 45| = 4 \\le 5$ (quiet), but $41 \\notin [42, 48]$; $H = 45$ is quiet and safe; $H = 50$ is quiet at the edge of the sensor band but far too humid for the paper.""",
+            ),
+            (
+                "A courier may accept a parcel only when both conditions hold at once: mass "
+                "$m$ at most 20 kg, and girth-plus-length $g$ at most 300 cm. A parcel with "
+                "$m = 18$ kg and $g = 310$ cm is accepted under that rule.",
+                False,
+                """**Reading the wording**
+
+Acceptance is a compound rule in two variables: mass and girth-plus-length must both clear their caps. Failing either condition blocks the parcel.
+
+**Choose variables**
+
+Let $m$ be mass in kilograms and $g$ be girth-plus-length in centimetres.
+Given values: $m = 18$, $g = 310$.
+
+**Translate into an inequality**
+
+Both must hold:
+$m \\le 20$ and $g \\le 300$.
+
+**Solve step by step**
+
+Mass: $18 \\le 20$ — satisfied.
+Girth-plus-length: $310 \\le 300$ — failed.
+
+The compound condition is false because one conjunct fails.
+
+**Interpret the result**
+
+A light parcel can still be rejected if it is too long/girthy. Both inequalities are required.
+
+**Compare to the claim**
+
+The parcel is not acceptable, so the statement is false.
+
+**Quick check:** $(m, g) = (18, 300)$ would pass; $(18, 310)$ fails on $g$ alone.""",
+            ),
+            (
+                "A light sensor’s calibrated output is $\\sqrt{x + 3}$, where $x$ is the "
+                "lux offset above a fixed baseline. Regulations require that output to be at "
+                "least 2. A technician claims that every offset $x \\ge 0$ already meets the "
+                "regulation.",
+                False,
+                """**Reading the wording**
+
+The sensor output is a square-root expression in the offset $x$. The regulation is a lower bound on that output. The technician claims the half-line $x \\ge 0$ is enough.
+
+**Choose a variable**
+
+Let $x$ be the lux offset. Domain of the expression: $x + 3 \\ge 0$, so $x \\ge -3$.
+
+**Translate into an inequality**
+
+Regulation: $\\sqrt{x + 3} \\ge 2$.
+
+**Solve step by step**
+
+Square both sides (valid because both sides are non-negative when the inequality can hold):
+$x + 3 \\ge 4$
+$x \\ge 1$.
+
+Intersect with the domain $x \\ge -3$: the solution remains $x \\ge 1$.
+
+**Interpret the result**
+
+Offsets between 0 and 1 are non-negative but still too dim: for example $x = 0$ gives $\\sqrt{3} < 2$. The technician’s claimed set $x \\ge 0$ is larger than the true solution $x \\ge 1$.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** $|41-45|=4\le 5$, yet $41\notin[42,48]$.""",
-            ),
-            (
-                'The solution set of $\\sqrt{x+3}\\ge 2$ is exactly $x\\ge 1$.',
-                True,
-                """**Reading the wording**
-
-Claim: solution is $x\ge 1$.
-
-**Choose a variable**
-
-Domain $x\ge -3$.
-
-**Translate into an inequality**
-
-Square: $x+3\ge 4\Rightarrow x\ge 1$.
-
-**Solve step by step**
-
-Intersect with domain: still $x\ge 1$.
-
-**Interpret the result**
-
-Matches the claim.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $x=1\to\sqrt{4}=2$; $x=0\to\sqrt{3}<2$.""",
-            ),
-            (
-                'The compound inequality $-1\\le 2x-5\\le 7$ has solution set $[2,6]$.',
-                True,
-                """**Reading the wording**
-
-Claim: solution is $[2,6]$.
-
-**Choose a variable**
-
-Let $x$ be real.
-
-**Translate into an inequality**
-
-$-1\le 2x-5$ and $2x-5\le 7$.
-
-**Solve step by step**
-
-$x\ge 2$ and $x\le 6$.
-
-**Interpret the result**
-
-Closed interval $[2,6]$.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $x=2\to -1$; $x=6\to 7$.""",
+**Quick check:** $x = 1$ gives $\\sqrt{4} = 2$; $x = 0$ gives $\\sqrt{3} \\approx 1.73 < 2$.""",
             ),
         ],
     },
@@ -922,7 +978,7 @@ False.
         "overview": ('Fence-and-area geometry with changing ratios and a square plot.'),
         "items": [
             (
-                'A gardener fences three sides of a rectangular bed against a wall with 40 m of fencing. For area at least 96 m^2, every width from 4 m to 18 m inclusive is possible.',
+                'A gardener fences three sides of a rectangular bed against a wall with 40 m of fencing. For area at least 96 $m^{2}$, every width from 4 m to 18 m inclusive is possible.',
                 False,
                 """**Reading the wording**
 
@@ -951,7 +1007,7 @@ False.
 **Quick check:** $w=16\to 128$; $w=18\to 72$.""",
             ),
             (
-                'A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 length-to-width ratio, and needs area at least 160 m^2. Every shorter-side length from 8 m to 12 m inclusive is feasible.',
+                'A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 length-to-width ratio, and needs area at least 160 $m^{2}$. Every shorter-side length from 8 m to 12 m inclusive is feasible.',
                 True,
                 """**Reading the wording**
 
@@ -980,7 +1036,7 @@ True.
 **Quick check:** $w=12$ uses 84 m and has area 360.""",
             ),
             (
-                'A square plot uses at most 40 m of fencing and must have area at least 81 m^2. Every side length from 9 m to 12 m inclusive is feasible.',
+                'A square plot uses at most 40 m of fencing and must have area at least 81 $m^{2}$. Every side length from 9 m to 12 m inclusive is feasible.',
                 False,
                 """**Reading the wording**
 
@@ -1009,7 +1065,7 @@ False.
 **Quick check:** $s=10$ uses 40 m; $s=12$ needs 48 m.""",
             ),
             (
-                'A rectangular pen uses at most 60 m of fencing with sides in ratio 2:1 and needs area at least 72 m^2. The shorter side can be any length from 6 m to 15 m inclusive.',
+                'A rectangular pen uses at most 60 m of fencing with sides in ratio 2:1 and needs area at least 72 $m^{2}$. The shorter side can be any length from 6 m to 15 m inclusive.',
                 False,
                 """**Reading the wording**
 
@@ -1038,7 +1094,7 @@ False.
 **Quick check:** $w=10$ uses 60 m; $w=15$ would need 90 m.""",
             ),
             (
-                'A greenhouse uses at most 120 m of fencing, keeps a 5:3 length-to-width ratio, and needs area at least 375 m^2. The shorter side can be any length from 5 m to 15 m inclusive.',
+                'A greenhouse uses at most 120 m of fencing, keeps a 5:3 length-to-width ratio, and needs area at least 375 $m^{2}$. The shorter side can be any length from 5 m to 15 m inclusive.',
                 False,
                 """**Reading the wording**
 
@@ -1494,7 +1550,7 @@ True.
 **Quick check:** $m=150\to 40$; $m=151\to 40.08$.""",
             ),
             (
-                'A gardener has 80 m of fencing for a 4:1 rectangular plot and needs area at least 64 m^2. The shorter side can be any length from 4 m to 20 m inclusive.',
+                'A gardener has 80 m of fencing for a 4:1 rectangular plot and needs area at least 64 $m^{2}$. The shorter side can be any length from 4 m to 20 m inclusive.',
                 False,
                 """**Reading the wording**
 
@@ -2441,7 +2497,7 @@ $(x-1)(x-5) \le 0$.
         **Quick check:** $g(1) = 0 \ge 0$; $g(3) = 4 \ge 0$; $g(0) = -5 < 0$.""",
             ),
             (
-                'A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 m^2. Every shorter-side length from 8 m to 16 m inclusive is possible.',
+                'A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 $m^{2}$. Every shorter-side length from 8 m to 16 m inclusive is possible.',
                 False,
                 """**Reading the wording**
 
@@ -2637,7 +2693,7 @@ $d \le 32.5$.
         "overview": ('Utility bills, cinema tickets, backpack constraints, temperature band, and quadratic profit window.'),
         "items": [
             (
-                'A water bill is 12 EUR fixed plus 1.80 EUR per cubic metre. With 30 EUR, a household can use at most 12 m^3.',
+                'A water bill is 12 EUR fixed plus 1.80 EUR per cubic metre. With 30 EUR, a household can use at most 12 $m^{3}$.',
                 False,
                 """**Reading the wording**
 
