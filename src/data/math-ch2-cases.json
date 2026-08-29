@@ -5385,11 +5385,11 @@
    "difficulty_level": "5/5",
    "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $a=3$, $b=-2$, it holds that $c=1$: $(a+b+c)^2=4$.",
-    "For $a=3$, $b=-2$, it holds that $c=1$: $a^2+b^2+c^2+2(ab+bc+ca)=14$.",
-    "For $a=3$, $b=-2$, it holds that $c=1$: $ab+bc+ca=-5$.",
-    "For $a=3$, $b=-2$, it holds that $c=1$: $a^3+b^3+c^3-3abc=38$.",
-    "For $a=3$, $b=-2$, it holds that $c=1$: $ab+bc+ca=5$."
+    "For $a=3$, $b=-2$, $c=1$, it holds that $(a+b+c)^2=4$.",
+    "For $a=3$, $b=-2$, $c=1$, it holds that $a^2+b^2+c^2+2(ab+bc+ca)=14$.",
+    "For $a=3$, $b=-2$, $c=1$, it holds that $ab+bc+ca=-5$.",
+    "For $a=3$, $b=-2$, $c=1$, it holds that $a^3+b^3+c^3-3abc=38$.",
+    "For $a=3$, $b=-2$, $c=1$, it holds that $ab+bc+ca=5$."
    ],
    "answer_key": [
     true,
