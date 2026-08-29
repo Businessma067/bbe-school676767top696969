@@ -1,3 +1,5 @@
+export type AdminJsonValue = string | number | boolean | null | AdminJsonValue[] | { [key: string]: AdminJsonValue };
+
 import type { DayProgress, StudyProgressSummary } from "@/lib/study-progress";
 import type { SubjectStats } from "@/lib/user-progress";
 
@@ -65,8 +67,8 @@ export type AdminMockRow = {
 export type AdminPracticeSessionRow = {
   id: string;
   mode: string;
-  subjectId: string;
-  topicId: string;
+  subjectId: string | null;
+  topicId: string | null;
   totalQuestions: number;
   correctAnswers: number;
   accuracyPct: number | null;
@@ -101,7 +103,7 @@ export type AdminActivityEvent = {
   subject: string | null;
   entityType: string | null;
   entityId: string | null;
-  metadata: Record<string, unknown>;
+  metadata: Record<string, AdminJsonValue>;
   durationMs: number | null;
   createdAt: string;
 };

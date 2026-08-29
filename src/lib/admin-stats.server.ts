@@ -270,7 +270,7 @@ export async function fetchUserBundle(
     subject: row.subject,
     entityType: row.entity_type,
     entityId: row.entity_id,
-    metadata: (row.metadata ?? {}) as Record<string, unknown>,
+    metadata: (row.metadata ?? {}) as Record<string, AdminJsonValue>,
     durationMs: row.duration_ms,
     createdAt: row.created_at,
   }));
