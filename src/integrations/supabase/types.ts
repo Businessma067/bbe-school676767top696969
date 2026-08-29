@@ -305,6 +305,63 @@ export type Database = {
         }
         Relationships: []
       }
+      promo_redeem_attempts: {
+        Row: {
+          code_attempted: string
+          created_at: string
+          id: string
+          ip_address: string
+          success: boolean
+          user_id: string | null
+        }
+        Insert: {
+          code_attempted?: string
+          created_at?: string
+          id?: string
+          ip_address: string
+          success?: boolean
+          user_id?: string | null
+        }
+        Update: {
+          code_attempted?: string
+          created_at?: string
+          id?: string
+          ip_address?: string
+          success?: boolean
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      promocodes: {
+        Row: {
+          code: string
+          created_at: string
+          id: string
+          product_slug: string
+          used_at: string | null
+          used_by: string | null
+          used_by_email: string | null
+        }
+        Insert: {
+          code: string
+          created_at?: string
+          id?: string
+          product_slug?: string
+          used_at?: string | null
+          used_by?: string | null
+          used_by_email?: string | null
+        }
+        Update: {
+          code?: string
+          created_at?: string
+          id?: string
+          product_slug?: string
+          used_at?: string | null
+          used_by?: string | null
+          used_by_email?: string | null
+        }
+        Relationships: []
+      }
       questions: {
         Row: {
           created_at: string
@@ -568,6 +625,7 @@ export type Database = {
         }
         Returns: boolean
       }
+      is_admin_caller: { Args: never; Returns: boolean }
       match_book_chunks: {
         Args: { match_count?: number; query_embedding: string }
         Returns: {
