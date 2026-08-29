@@ -4,7 +4,7 @@
    "title": "Warm-up: square of a sum",
    "subsection": "2.1",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The identity $(a+b)^2=a^2+2ab+b^2$ holds for every real pair $(a,b)$.",
     "Squaring $x+1$ yields $x^2+2x+1$ for every real $x$.",
@@ -36,7 +36,7 @@
    "title": "Warm-up: difference of two squares",
    "subsection": "2.1",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Factoring a difference: $x^2-y^2=(x-y)(x+y)$ for every real pair $(x,y)$.",
     "The unit shift $a^2-1=(a-1)(a+1)$ holds for every real $a$.",
@@ -68,7 +68,7 @@
    "title": "Warm-up: elementary sum and product data",
    "subsection": "2.1",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $a+b=s$ and $ab=p$, then $a^2+b^2=s^2-2p$ for every real pair with sum $s$ and product $p$.",
     "Whenever $m+n=t$ and $mn=q$, one has $m^2+n^2=t^2-2q$.",
@@ -100,7 +100,7 @@
    "title": "Warm-up: cube sum under a vanishing triple sum",
    "subsection": "2.1",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $a+b+c=0$, then $a^3+b^3+c^3=3abc$ for every real triple $(a,b,c)$.",
     "Vanishing $x+y+z=0$ implies $x^3+y^3+z^3=3xyz$ for every real triple $(x,y,z)$.",
@@ -132,10 +132,10 @@
    "title": "Binomial identities — set 1",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The inequality $a^2-ab\\ge ab-b^2$ holds for every real pair $(a,b)$.",
-    "For every real pair $(r,s)$, $(r+s)^3-(r^3+s^3+3rs)=3rs(r+s)$.",
+    "For every real pair $(r,s)$, it holds that $(r+s)^3-(r^3+s^3+3rs)=3rs(r+s)$.",
     "The sum of the fourth power of $m$ and four times the fourth power of $n$ equals the square of $m^2+2n^2$ for every real pair $(m,n)$.",
     "Given $a+b+c=0$ with $a=4$ and $b=-1$, sets $c=3$ and concludes $a^3+b^3+c^3=3abc$.",
     "The inequality $c^2+cd\\ge cd+d^2$ holds for every real pair $(c,d)$."
@@ -164,11 +164,11 @@
    "title": "Binomial identities — set 2",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real quadruple $(a,b,c,d)$, $(a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$.",
-    "For every real pair $(c,d)$, $(c+d)^2=c^2+2cd+d^2$.",
-    "For every real $k$, $(3k-2)^2-(9k^2-12k+3)=1$.",
+    "For every real quadruple $(a,b,c,d)$, it holds that $(a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$.",
+    "For every real pair $(c,d)$, it holds that $(c+d)^2=c^2+2cd+d^2$.",
+    "For every real $k$, it holds that $(3k-2)^2-(9k^2-12k+3)=1$.",
     "The inequality $r^2-rs\\ge rs-s^2$ holds for every real pair $(r,s)$.",
     "The identity $(2h+5)^2=4h^2+10h+25$ as a standard expansion."
    ],
@@ -196,13 +196,13 @@
    "title": "Binomial identities — set 3",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $a$ and four times the fourth power of $b$ equals the square of $a^2+2b^2$ for every real pair $(a,b)$.",
     "If $c^{-3}d^2=2$, then $\\dfrac{c^8d^3}{c^2d^7}+3cd\\cdot\\dfrac{c^{-6}d^5}{c^7d^{-2}}=48$ for $c,d\\neq 0$.",
-    "For every real value where defined, $(f+g)^2-(f^2+g^2)=the remainder is identically zero$.",
-    "For every real quadruple $(u,v,w,z)$, $(u^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$.",
-    "For every real pair $(x,y)$, $(x+y)^2-(x^2+xy+xy+y^2)=0$."
+    "For all real $f$ and $g$, it holds that $(f+g)^2-(f^2+g^2)=0$.",
+    "For every real quadruple $(u,v,w,z)$, it holds that $(u^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^2-(x^2+xy+xy+y^2)=0$."
    ],
    "answer_key": [
     false,
@@ -214,7 +214,7 @@
    "tactical_explanations": [
     "**A.** → False\n\nThe wording stops at a single square. Expand $a^2+2b^2$ and compare with $a^4+4b^4$ before accepting the verbal equality.\n\nExpand the printed square:\n\n$$(a^2+2b^2)^2=a^4+4a^2b^2+4b^4$$\n\nThe cross term $4a^2b^2$ is not present in $a^4+4b^4$.\n\nThe Sophie Germain rewrite must subtract $(2ab)^2$ after adding it — the wording stops one step too early, so the statement is False.",
     "**B.** → False\n\nApply the relevant binomial or factor identity: $(a+b)^2=a^2+2ab+b^2$.\n\nSo the statement is False.",
-    "**C.** → False\n\nApply the relevant binomial or factor identity:\n\n$$(a+b)^2=a^2+2ab+b^2$$\n\nMatching these figures to the claim, the statement is False.",
+    "**C.** → False\n\nExpanding the square gives $(f+g)^2=f^2+2fg+g^2$, so\n\n$$(f+g)^2-(f^2+g^2)=2fg$$\n\nThe difference vanishes for every pair only if $2fg=0$ identically, which fails (for example at $f=g=1$). So the statement is False.",
     "**D.** → True\n\nThe claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.\n\nBrahmagupta identity:\n\n$$(u^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$$\n\nThe pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.\n\nBoth sides match as an identity in the four letters.\n\nComparing this value with the claim shows the statement is True.",
     "**E.** → False\n\nExpand or factor with the named elementary identity; compare the result to the printed claim, so the statement is False."
    ],
@@ -228,11 +228,11 @@
    "title": "Perfect squares that miss the constant by one",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Reading $9y^2-12y+4$ as $(3y-2)^2$ is valid for every real $y$.",
     "The inequality $r^2+rs\\ge rs+s^2$ holds for every real pair $(r,s)$.",
-    "For every real $f$, $(f+1)^2=f^2+1$.",
+    "For every real $f$, it holds that $(f+1)^2=f^2+1$.",
     "Splitting $z^2-25$ as $(z-5)(z+5)$ holds for every real $z$.",
     "If $p^{-3}q^2=2$, then $\\dfrac{p^8q^3}{p^2q^7}+3pq\\cdot\\dfrac{p^{-6}q^5}{p^7q^{-2}}=48.25$ for $p,q\\neq 0$."
    ],
@@ -260,12 +260,12 @@
    "title": "Grouping a linear sum inside a square difference",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(p,q)$, $(p+q)^2-(p-q)^2=4pq$.",
-    "For every real quadruple $(f,g,t,x)$, $(f^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$.",
+    "For every real pair $(p,q)$, it holds that $(p+q)^2-(p-q)^2=4pq$.",
+    "For every real quadruple $(f,g,t,x)$, it holds that $(f^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$.",
     "The sum of the fourth power of $p$ and four times the fourth power of $q$ equals the square of $p^2+2q^2$ for every real pair $(p,q)$.",
-    "For every real $m$, $(m+1)^2=m^2+1$.",
+    "For every real $m$, it holds that $(m+1)^2=m^2+1$.",
     "The inequality $c^2-cd\\ge cd-d^2$ holds for every real pair $(c,d)$."
    ],
    "answer_key": [
@@ -292,10 +292,10 @@
    "title": "Signs that flip only the cross term",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(m,n)$, $(m+n)^2-(m^2+n^2)=2mn$.",
-    "For every real pair $(a,b)$, $a^3+b^3=(a+b)(a^2-ab+b^2)$.",
+    "For every real pair $(m,n)$, it holds that $(m+n)^2-(m^2+n^2)=2mn$.",
+    "For every real pair $(a,b)$, it holds that $a^3+b^3=(a+b)(a^2-ab+b^2)$.",
     "If $p^{-3}q^2=2$, then $\\dfrac{p^8q^3}{p^2q^7}+3pq\\cdot\\dfrac{p^{-6}q^5}{p^7q^{-2}}=48$ for $p,q\\neq 0$.",
     "Completing the square, $x^2+6x+5$ is rewritten as $(x+3)^2$ with no leftover constant.",
     "Collecting the $xy$ term in $(x+2y)^2$, the recorded coefficient $+4$."
@@ -324,13 +324,13 @@
    "title": "A doubled middle that refuses to be halved",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $u$ and four times the fourth power of $v$ factors as the product of $u^2-2uv+2v^2$ and $u^2+2uv+2v^2$ for every real pair $(u,v)$.",
     "With $a-b=3$ and $ab=10$, expanding $(a-b)^2+4ab$ equals $(a+b)^2=49$.",
     "The inequality $x^2-xy\\ge xy-y^2$ holds for every real pair $(x,y)$.",
-    "For every real pair $(m,n)$, $(m+n)^2-(m-n)^2=4mn$.",
-    "For every real pair $(x,y)$, $(x+y)^2=x^2+y^2$."
+    "For every real pair $(m,n)$, it holds that $(m+n)^2-(m-n)^2=4mn$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^2=x^2+y^2$."
    ],
    "answer_key": [
     true,
@@ -356,13 +356,13 @@
    "title": "Three-term squares with a dropped factor two",
    "subsection": "2.1",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "For all real values in $(x+y+z)^2$, subtracting $x^2+y^2+z^2$ from the expansion leaves $xy+yz+zx$.",
     "The inequality $x^2+xy\\ge xy+y^2$ holds for every real pair $(x,y)$.",
-    "For every real value where defined, $(a+b)^3-(a^3+b^3)=identically zero$.",
+    "For every real value where defined, it holds that $(a+b)^3-(a^3+b^3)=identically zero$.",
     "The sum of the fourth power of $f$ and four times the fourth power of $g$ equals the square of $f^2+2g^2$ for every real pair $(f,g)$.",
-    "For every real $t$, $(t+1)^2=t^2+1$."
+    "For every real $t$, it holds that $(t+1)^2=t^2+1$."
    ],
    "answer_key": [
     false,
@@ -388,11 +388,11 @@
    "title": "Cubes whose odd-powered terms survive",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Working from the pair $(\\alpha,\\beta)$, rewriting $(\\alpha+\\beta)^3-(\\alpha-\\beta)^3$ as $6\\alpha^2\\beta+2\\beta^3$.",
-    "For every real quadruple $(p,q,r,s)$, $(p^2+q^2)(r^2+s^2)=(pr-qs)^2+(ps+qr)^2$.",
-    "For every real pair $(u,v)$, $(u+v)^2=u^2+v^2$.",
+    "For every real quadruple $(p,q,r,s)$, it holds that $(p^2+q^2)(r^2+s^2)=(pr-qs)^2+(ps+qr)^2$.",
+    "For every real pair $(u,v)$, it holds that $(u+v)^2=u^2+v^2$.",
     "If $a^{-3}b^2=2$, then $\\dfrac{a^8b^3}{a^2b^7}+3ab\\cdot\\dfrac{a^{-6}b^5}{a^7b^{-2}}=48.25$ for $a,b\\neq 0$.",
     "The inequality $m^2-mn\\ge mn-n^2$ holds for every real pair $(m,n)$."
    ],
@@ -420,13 +420,13 @@
    "title": "Elementary cubes evaluated from two symmetric values",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $(r+1)^2=r^2+1$.",
-    "For every real $c$, $(6c-1)^2=36c^2-12c+1$.",
+    "For every real $r$, it holds that $(r+1)^2=r^2+1$.",
+    "For every real $c$, it holds that $(6c-1)^2=36c^2-12c+1$.",
     "If $m^{-3}n^2=2$, then $\\dfrac{m^8n^3}{m^2n^7}+3mn\\cdot\\dfrac{m^{-6}n^5}{m^7n^{-2}}=48$ for $m,n\\neq 0$.",
-    "For every real pair $(h,k)$, $(h+k)^2-(h-k)^2=4hk$.",
-    "For every real quadruple $(m,n,h,k)$, $(m^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$."
+    "For every real pair $(h,k)$, it holds that $(h+k)^2-(h-k)^2=4hk$.",
+    "For every real quadruple $(m,n,h,k)$, it holds that $(m^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$."
    ],
    "answer_key": [
     false,
@@ -452,7 +452,7 @@
    "title": "A hidden square inside a biquadratic difference",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $f$ and four times the fourth power of $g$ factors as the product of $f^2-2fg+2g^2$ and $f^2+2fg+2g^2$ for every real pair $(f,g)$.",
     "Whenever $\\lambda+\\mu=7$ and $\\lambda\\mu=10$, completing the evaluation of $(\\lambda-\\mu)^2$ yields $9$.",
@@ -484,10 +484,10 @@
    "title": "Reciprocal squares built from a linear sum",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $r$ and four times the fourth power of $s$ factors as the product of $r^2-2rs+2s^2$ and $r^2+2rs+2s^2$ for every real pair $(r,s)$.",
-    "For every real pair $(c,d)$, $(c+d)^2=c^2+d^2$.",
+    "For every real pair $(c,d)$, it holds that $(c+d)^2=c^2+d^2$.",
     "After grouping $b+c$, treats $x^2-(b+c)^2$ as identical to $x^2-b^2-c^2$.",
     "The sum of the fourth power of $c$ and four times the fourth power of $d$ factors as the product of $c^2-2cd+2d^2$ and $c^2+2cd+2d^2$ for every real pair $(c,d)$.",
     "Distributing $(2x-3y)^2$ equals $4x^2-6xy+9y^2$."
@@ -516,13 +516,13 @@
    "title": "Four terms that group into a difference of squares",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real quadruple $(f,g,t,x)$, $(f^2+g^2)(t^2+x^2)=(ft+gt)^2+(fx-gx)^2$.",
-    "For every real $p$, $(7p-1)^2=49p^2-14p+1$.",
+    "For every real quadruple $(f,g,t,x)$, it holds that $(f^2+g^2)(t^2+x^2)=(ft+gt)^2+(fx-gx)^2$.",
+    "For every real $p$, it holds that $(7p-1)^2=49p^2-14p+1$.",
     "If $u+v=s$ and $uv=p$, then $u^2+v^2=s^2-2p$ for every real pair with sum $s$ and product $p$.",
     "If $u^{-3}a^2=2$, then $\\dfrac{u^8a^3}{u^2a^7}+3uv\\cdot\\dfrac{u^{-6}a^5}{u^7a^{-2}}=48.25$ for $u,a\\neq 0$.",
-    "For every real $x$, $(x+1)^2=x^2+1$."
+    "For every real $x$, it holds that $(x+1)^2=x^2+1$."
    ],
    "answer_key": [
     false,
@@ -548,10 +548,10 @@
    "title": "Half the sum of three squared gaps",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $r+s=s$ and $rs=p$, then $r^2+s^2=s^2-2p$ for every real pair with sum $s$ and product $p$.",
-    "For every real quadruple $(u,v,w,z)$, $(u^2+v^2)(w^2+z^2)=(uw+vw)^2+(uz-vz)^2$.",
+    "For every real quadruple $(u,v,w,z)$, it holds that $(u^2+v^2)(w^2+z^2)=(uw+vw)^2+(uz-vz)^2$.",
     "Factoring $x^3-1$ as $(x-1)(x^2-x+1)$.",
     "The coefficient of $x^2 y$ in $(x+y)^3$ equals $1$.",
     "The sum of the fourth power of $p$ and four times the fourth power of $q$ factors as the product of $p^2-2pq+2q^2$ and $p^2+2pq+2q^2$ for every real pair $(p,q)$."
@@ -580,13 +580,13 @@
    "title": "A cyclic product of three linear binomials",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $(2a-1)^2=4a^2-4a+1$.",
+    "For every real $a$, it holds that $(2a-1)^2=4a^2-4a+1$.",
     "If $a^{-3}c^2=2$, then $\\dfrac{a^8c^3}{a^2c^7}+3ab\\cdot\\dfrac{a^{-6}c^5}{a^7c^{-2}}=48.25$ for $a,c\\neq 0$.",
     "The inequality $p^2+pq\\ge pq+q^2$ holds for every real pair $(p,q)$.",
     "If $s=x+y+z=4$ and $p=xy+yz+zx=1$, then $x^2+y^2+z^2=15$.",
-    "For every real quadruple $(p,q,r,s)$, $(p^2+q^2)(r^2+s^2)=(pr+qr)^2+(ps-qs)^2$."
+    "For every real quadruple $(p,q,r,s)$, it holds that $(p^2+q^2)(r^2+s^2)=(pr+qr)^2+(ps-qs)^2$."
    ],
    "answer_key": [
     true,
@@ -612,13 +612,13 @@
    "title": "Mixed signs inside a three-letter square",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $u^{-3}v^2=2$, then $\\dfrac{u^8v^3}{u^2v^7}+3uv\\cdot\\dfrac{u^{-6}v^5}{u^7v^{-2}}=48.25$ for $u,v\\neq 0$.",
-    "For every real $c$, $(c+1)^2=c^2+1$.",
-    "For every real quadruple $(a,q,r,s)$, $(a^2+q^2)(r^2+s^2)=(pr-qs)^2+(ps+qr)^2$.",
+    "For every real $c$, it holds that $(c+1)^2=c^2+1$.",
+    "For every real quadruple $(a,q,r,s)$, it holds that $(a^2+q^2)(r^2+s^2)=(pr-qs)^2+(ps+qr)^2$.",
     "Someone equates $(x^2-y^2)^2$ with $x^4-y^4$.",
-    "For every real pair $(t,w)$, $(t+w)^2=t^2+w^2$."
+    "For every real pair $(t,w)$, it holds that $(t+w)^2=t^2+w^2$."
    ],
    "answer_key": [
     true,
@@ -644,7 +644,7 @@
    "title": "Newton sums built from a pair of elementary data",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "A mis-paired Brahmagupta product: for every real quadruple $(m,n,h,k)$, $(m^2+n^2)(h^2+k^2)=(mh+nh)^2+(mk-nk)^2$.",
     "Dropping the middle term: $(p+q)^2=p^2+q^2$ is false for real $(p,q)$.",
@@ -676,7 +676,7 @@
    "title": "A square of a difference of two squares",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding $(x^2-y^2)^2$ produces $x^4-2x^2 y^2+y^4$ identically.",
     "The sum of the fourth power of $r$ and four times the fourth power of $s$ equals the square of $r^2+2s^2$ for every real pair $(r,s)$.",
@@ -708,12 +708,12 @@
    "title": "Four letters and the six doubled pairwise products",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Collecting the mixed term $ab$ in $(a+b+c+d)^2$, the coefficient $2$ is recorded.",
     "If $a^{-3}c^2=2$, then $\\dfrac{a^8c^3}{a^2c^7}+3ab\\cdot\\dfrac{a^{-6}c^5}{a^7c^{-2}}=48.25$ for $a,c\\neq 0$, under the standing domain label $D_{1}$.",
     "Sophie Germain’s completing step writes $t^4+4=(t^2+2)^2-(2t)^2$ before factoring.",
-    "For every real quadruple $(u,v,w,a)$, $(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$.",
+    "For every real quadruple $(u,v,w,a)$, it holds that $(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$.",
     "The sum of the fourth power of $a$ and four times the fourth power of $b$ factors as the product of $a^2-2ab+2b^2$ and $a^2+2ab+2b^2$ for every real pair $(a,b)$."
    ],
    "answer_key": [
@@ -740,12 +740,12 @@
    "title": "Mirror quadratics whose odd powers cancel",
    "subsection": "2.1",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Rewriting $x^4+x^2+1$ as $(x^2+1)^2-x^2$ exhibits a difference of squares in $x^2+1$ and $x$.",
     "Given $k+\\ell=7$ and $k\\ell=12$, a report sets $k^2+\\ell^2=37$.",
     "The sum of the fourth power of $h$ and four times the fourth power of $k$ factors as the product of $h^2-2hk+2k^2$ and $h^2+2hk+2k^2$ for every real pair $(h,k)$.",
-    "For every real pair $(h,k)$, $(h+k)^2=h^2+k^2$.",
+    "For every real pair $(h,k)$, it holds that $(h+k)^2=h^2+k^2$.",
     "If $a^{-3}n^2=2$, then $\\dfrac{a^8n^3}{a^2n^7}+3mn\\cdot\\dfrac{a^{-6}n^5}{a^7n^{-2}}=48.25$ for $a,n\\neq 0$."
    ],
    "answer_key": [
@@ -772,12 +772,12 @@
    "title": "Three cubes after a vanishing linear sum",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The inequality $p^2-pq\\ge pq-q^2$ holds for every real pair $(p,q)$.",
-    "For every real $p$, $(5p-1)^2=25p^2-10p+1$.",
+    "For every real $p$, it holds that $(5p-1)^2=25p^2-10p+1$.",
     "The sum of the fourth power of $r$ and four times the fourth power of $a$ equals the square of $r^2+2a^2$ for every real pair $(r,a)$.",
-    "For every real $m$, $(m+1)^2=m^2+1$ (variant 1).",
+    "For every real $m$, it holds that $(m+1)^2=m^2+1$ (variant 1).",
     "The inequality $r^2+rs\\ge rs+a^2$ holds for every real pair $(r,a)$."
    ],
    "answer_key": [
@@ -804,13 +804,13 @@
    "title": "Brahmagupta’s product against a cubed trinomial",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real quadruple $(a,g,t,x)$, $(a^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$.",
-    "For every real $c$, $(3c-1)^2=9c^2-6c+1$.",
+    "For every real quadruple $(a,g,t,x)$, it holds that $(a^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$.",
+    "For every real $c$, it holds that $(3c-1)^2=9c^2-6c+1$.",
     "If $f+g=s$ and $fg=p$, then $f^2+g^2=s^2-2p$ for every real pair with sum $s$ and product $p$.",
     "The inequality $h^2-hk\\ge hk-k^2$ holds for every real pair $(h,k)$.",
-    "For every real $t$, $(t+1)^2=t^2+1$ (variant 2)."
+    "For every real $t$, it holds that $(t+1)^2=t^2+1$ (variant 2)."
    ],
    "answer_key": [
     true,
@@ -836,13 +836,13 @@
    "title": "Brahmagupta’s product of two sums of squares",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $a$ and four times the fourth power of $n$ factors as the product of $a^2-2mn+2n^2$ and $a^2+2mn+2n^2$ for every real pair $(a,n)$.",
     "If $m^{-3}n^2=2$, then $\\dfrac{m^8n^3}{m^2n^7}+3mn\\cdot\\dfrac{m^{-6}n^5}{m^7n^{-2}}=48.25$ for $m,n\\neq 0$.",
-    "For every real $u$, $(2u-1)^2=4u^2-4u+1$.",
-    "For every real quadruple $(u,v,w,a)$, $(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$, under the standing domain label $D_{1}$.",
-    "For every real pair $(x,y)$, $(x+y)^2=x^2+y^2$ (variant 2)."
+    "For every real $u$, it holds that $(2u-1)^2=4u^2-4u+1$.",
+    "For every real quadruple $(u,v,w,a)$, it holds that $(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$, under the standing domain label $D_{1}$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^2=x^2+y^2$ (variant 2)."
    ],
    "answer_key": [
     true,
@@ -868,12 +868,12 @@
    "title": "Completing the square under a leading coefficient two",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Completing the square rewrites $2x^2-8x+10$ as $2(x-2)^2+2$ for every real $x$.",
     "The inequality $a^2-xy\\ge xy-y^2$ holds for every real pair $(a,y)$.",
-    "For every real pair $(f,g)$, $(f+g)^2-(f-g)^2=4fg$.",
-    "For every real $h$, $(h+1)^2=h^2+1$.",
+    "For every real pair $(f,g)$, it holds that $(f+g)^2-(f-g)^2=4fg$.",
+    "For every real $h$, it holds that $(h+1)^2=h^2+1$.",
     "If $a^{-3}b^2=2$, then $\\dfrac{a^8b^3}{a^2b^7}+3ab\\cdot\\dfrac{a^{-6}b^5}{a^7b^{-2}}=48$ for $a,b\\neq 0$."
    ],
    "answer_key": [
@@ -900,12 +900,12 @@
    "title": "Factoring a biquadratic after a completed square",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Adding and subtracting $4x^2 y^2$ turns $x^4+4y^4$ into $(x^2+2y^2)^2-(2xy)^2$.",
-    "For every real quadruple $(a,e,c,d)$, $(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$.",
+    "For every real quadruple $(a,e,c,d)$, it holds that $(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$.",
     "The sum of the fourth power of $u$ and four times the fourth power of $v$ equals the square of $u^2+2v^2$ for every real pair $(u,v)$.",
-    "For every real $m$, $(m+1)^2=m^2+1$ (variant 2).",
+    "For every real $m$, it holds that $(m+1)^2=m^2+1$ (variant 2).",
     "The inequality $a^2+pq\\ge pq+q^2$ holds for every real pair $(a,q)$."
    ],
    "answer_key": [
@@ -932,13 +932,13 @@
    "title": "A cubic leftover after a cubed binomial is subtracted",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $m$ and four times the fourth power of $n$ factors as the product of $m^2-2mn+2n^2$ and $m^2+2mn+2n^2$ for every real pair $(m,n)$.",
     "Given $p+q+r=0$ with $p=4$, $q=-1$, sets $r=3$ and concludes $p^3+q^3+r^3=3pqr$.",
     "If $a^{-3}q^2=2$, then $\\dfrac{a^8q^3}{a^2q^7}+3pq\\cdot\\dfrac{a^{-6}q^5}{a^7q^{-2}}=48.25$ for $a,q\\neq 0$.",
     "Someone writes $(x+y)(y+z)(z+x)=(x+y+z)(xy+yz+zx)$, dropping the $-xyz$ correction.",
-    "For every real $t$, $(t+1)^2=t^2+1$ (variant 3)."
+    "For every real $t$, it holds that $(t+1)^2=t^2+1$ (variant 3)."
    ],
    "answer_key": [
     true,
@@ -964,7 +964,7 @@
    "title": "Binomial identities — set 27",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The sum of the fourth power of $a$ and four times the fourth power of $c$ equals the square of $a^2+2c^2$ for every real pair $(a,c)$.",
     "If $p+q=s$ and $pq=p$, then $p^2+q^2=s^2-2p$ for every real pair with sum $s$ and product $p$ (variant 1).",
@@ -996,11 +996,11 @@
    "title": "Hunting one mixed product in a shifted trinomial square",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(r,s)$, $(r+s)^2-(r-s)^2=4rs$.",
+    "For every real pair $(r,s)$, it holds that $(r+s)^2-(r-s)^2=4rs$.",
     "The inequality $u^2-uv\\ge uv-v^2$ holds for every real pair $(u,v)$.",
-    "For every real $f$, $(6f-1)^2=36f^2-12f+1$.",
+    "For every real $f$, it holds that $(6f-1)^2=36f^2-12f+1$.",
     "The sum of the fourth power of $a$ and four times the fourth power of $q$ factors as the product of $a^2-2pq+2q^2$ and $a^2+2pq+2q^2$ for every real pair $(a,q)$.",
     "If $p+q+r=3$ and $pq+qr+rp=2$, then $p^2+q^2+r^2=7$."
    ],
@@ -1028,10 +1028,10 @@
    "title": "A biquadratic that is already a completed square",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$, $b$, and $c$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Recognising $x^4+2x^2 y^2+y^4$ as $(x^2+y^2)^2$ is valid for every real pair.",
-    "For every real quadruple $(a,e,c,d)$, $(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$, under the standing domain label $D_{1}$.",
+    "For every real quadruple $(a,e,c,d)$, it holds that $(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$, under the standing domain label $D_{1}$.",
     "Grouping $x^3+3x^2-x-3$ as $x^2(x+3)-(x+3)$ factors as $(x^2-1)(x+3)=(x-1)(x+1)(x+3)$.",
     "If $u^{-3}a^2=2$, then $\\dfrac{u^8a^3}{u^2a^7}+3uv\\cdot\\dfrac{u^{-6}a^5}{u^7a^{-2}}=48$ for $u,a\\neq 0$.",
     "The inequality $a^2+ab\\ge ab+b^2$ holds for every real pair $(a,b)$."
@@ -1060,13 +1060,13 @@
    "title": "Walking around three squared differences",
    "subsection": "2.1",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $(7r-1)^2=49r^2-14r+1$.",
+    "For every real $r$, it holds that $(7r-1)^2=49r^2-14r+1$.",
     "prints $x^4+4=(x^2+2x+2)^2$ for every real $x$.",
     "The inequality $m^2+mn\\ge mn+n^2$ holds for every real pair $(m,n)$.",
-    "For every real pair $(h,k)$, $(h+k)^2=h^2+k^2$ (variant 2).",
-    "For every real quadruple $(a,n,h,k)$, $(a^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$."
+    "For every real pair $(h,k)$, it holds that $(h+k)^2=h^2+k^2$ (variant 2).",
+    "For every real quadruple $(a,n,h,k)$, it holds that $(a^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$."
    ],
    "answer_key": [
     true,
@@ -1092,7 +1092,7 @@
    "title": "Warm-up: adding two fractions",
    "subsection": "2.2",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Adding reciprocals: for $a,b\\neq 0$, $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$.",
     "Cross-multiplying gives $\\dfrac{2}{x}+\\dfrac{3}{y}=\\dfrac{2y+3x}{xy}$ for $x,y\\neq 0$.",
@@ -1124,7 +1124,7 @@
    "title": "Warm-up: cancelling a common factor",
    "subsection": "2.2",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "After cancelling, for $x\\neq 3$, $\\dfrac{x^2-9}{x-3}=x+3$.",
     "For $t\\neq -2$, simplifying $\\dfrac{t^2-4}{t+2}$ leaves $t-2$.",
@@ -1156,13 +1156,13 @@
    "title": "Warm-up: product of simple fractions",
    "subsection": "2.2",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Multiplying monomial fractions: for $a,b\\neq 0$, $\\dfrac{3a}{2b}\\cdot\\dfrac{4b}{3a}=2$.",
-    "For $x,y\\neq 0$, $\\dfrac{2x}{y}\\cdot\\dfrac{y}{4x}=\\dfrac{1}{2}$.",
+    "For $x,y\\neq 0$, it holds that $\\dfrac{2x}{y}\\cdot\\dfrac{y}{4x}=\\dfrac{1}{2}$.",
     "Reciprocal factors collapse: for $p,q\\neq 0$, $\\dfrac{5p}{q}\\cdot\\dfrac{q}{5p}=1$.",
     "For $m,n\\neq 0$, the product $\\dfrac{m}{n}\\cdot\\dfrac{n}{m}$ equals $0$ (false).",
-    "For $u,v\\neq 0$, $\\dfrac{6u}{v}\\cdot\\dfrac{v}{3u}=2$."
+    "For $u,v\\neq 0$, it holds that $\\dfrac{6u}{v}\\cdot\\dfrac{v}{3u}=2$."
    ],
    "answer_key": [
     true,
@@ -1188,13 +1188,13 @@
    "title": "Warm-up: partial fraction split on $x^2-1$",
    "subsection": "2.2",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Decomposing over $x^2-1$: for $x\\neq\\pm 1$, $\\dfrac{1}{x^2-1}=\\dfrac{1}{2(x-1)}-\\dfrac{1}{2(x+1)}$.",
     "Doubling the numerator, for $x\\neq\\pm 1$, $\\dfrac{2}{x^2-1}=\\dfrac{1}{x-1}-\\dfrac{1}{x+1}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{3}{x^2-1}=\\dfrac{3}{2(x-1)}-\\dfrac{3}{2(x+1)}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{3}{x^2-1}=\\dfrac{3}{2(x-1)}-\\dfrac{3}{2(x+1)}$.",
     "Omitting the factor $\\tfrac12$ makes $\\dfrac{1}{x^2-1}=\\dfrac{1}{x-1}-\\dfrac{1}{x+1}$ false for $x\\neq\\pm 1$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{4}{x^2-1}=\\dfrac{2}{x-1}-\\dfrac{2}{x+1}$."
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{4}{x^2-1}=\\dfrac{2}{x-1}-\\dfrac{2}{x+1}$."
    ],
    "answer_key": [
     true,
@@ -1220,12 +1220,12 @@
    "title": "Cancelled factor kept as the remainder",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The stacked quotient $\\dfrac{\\dfrac{8a^2b}{4x^2-16}}{\\dfrac{4ab}{2x+4}}$ simplifies to $\\dfrac{a}{x-2}$ for $x\\neq\\pm 2$ and $a,b\\neq 0$.",
-    "For $m\\neq 0$, $\\dfrac{4(9m)}{(-9m)^2}=\\dfrac{4}{9m}$.",
+    "For $m\\neq 0$, it holds that $\\dfrac{4(9m)}{(-9m)^2}=\\dfrac{4}{9m}$.",
     "Let $x$ be a nonzero real number. Twice the reciprocal of the sum of $x$ and the reciprocal of $x$ equals twice $x$ divided by the sum of the square of $x$ and one.",
-    "For $m,n\\neq 0$, $\\dfrac{m}{n}+\\dfrac{n}{m}=\\dfrac{m^2+n^2}{mn}$.",
+    "For $m,n\\neq 0$, it holds that $\\dfrac{m}{n}+\\dfrac{n}{m}=\\dfrac{m^2+n^2}{mn}$.",
     "Let $k$ be a nonzero real letter. Twice the reciprocal of the sum of $k$ and the reciprocal of $k$ equals $k$ divided by the sum of the square of $k$ and one."
    ],
    "answer_key": [
@@ -1252,12 +1252,12 @@
    "title": "LCD taken as a sum of denominators",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r,s\\neq 0$, $\\dfrac{1}{r}+\\dfrac{1}{s}=\\dfrac{1}{r+s}$.",
+    "For $r,s\\neq 0$, it holds that $\\dfrac{1}{r}+\\dfrac{1}{s}=\\dfrac{1}{r+s}$.",
     "Provided $x\\neq 0$, the sum $\\dfrac{3}{x}+\\dfrac{5}{x}$ equals $\\dfrac{8}{x}$.",
-    "For $h,k,s\\neq 0$, $\\dfrac{3ks}{4h}\\cdot\\dfrac{2h^3k^2}{5}\\div\\dfrac{3(hk)^2}{4s}=\\dfrac{2ks}{5}$.",
-    "For $r,s\\neq 0$ and $r\\neq -s$, $\\dfrac{2}{r}+\\dfrac{9}{s}=\\dfrac{2s+9r}{r+s}$.",
+    "For $h,k,s\\neq 0$, it holds that $\\dfrac{3ks}{4h}\\cdot\\dfrac{2h^3k^2}{5}\\div\\dfrac{3(hk)^2}{4s}=\\dfrac{2ks}{5}$.",
+    "For $r,s\\neq 0$ and $r\\neq -s$, it holds that $\\dfrac{2}{r}+\\dfrac{9}{s}=\\dfrac{2s+9r}{r+s}$.",
     "Clearing $\\dfrac{1}{3h}+\\dfrac{1}{6h}$ for $h\\neq 0$ equals $\\dfrac{1}{2h}$."
    ],
    "answer_key": [
@@ -1284,13 +1284,13 @@
    "title": "A letter struck from only one term",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $a,b\\neq 0$ and $a\\neq -b$, $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{a+b}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{7x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{3}{x-1}-\\dfrac{1}{1-x}=\\dfrac{7}{x-1}$.",
+    "For $a,b\\neq 0$ and $a\\neq -b$, it holds that $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{a+b}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{7x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{3}{x-1}-\\dfrac{1}{1-x}=\\dfrac{7}{x-1}$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $1$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\\dfrac{1}{2}$ over $x-1$ and $\\dfrac{1}{2}$ over $x+1$.",
-    "For $q\\neq 0$, $\\dfrac{4(2q)}{(-2q)^2}=\\dfrac{2}{q}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{x+3}{x^2-1}-\\dfrac{1}{x+1}=\\dfrac{2}{x-1}$."
+    "For $q\\neq 0$, it holds that $\\dfrac{4(2q)}{(-2q)^2}=\\dfrac{2}{q}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{x+3}{x^2-1}-\\dfrac{1}{x+1}=\\dfrac{2}{x-1}$."
    ],
    "answer_key": [
     false,
@@ -1316,13 +1316,13 @@
    "title": "Nested unit fraction with a swapped report",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r,s\\neq 0$, $\\dfrac{1}{r}+\\dfrac{1}{s}=\\dfrac{1}{r+s}$ (variant 1).",
+    "For $r,s\\neq 0$, it holds that $\\dfrac{1}{r}+\\dfrac{1}{s}=\\dfrac{1}{r+s}$ (variant 1).",
     "Collapsing $\\dfrac{1}{1+\\dfrac{1}{z}}$ for $z\\neq 0,-1$ equals $\\dfrac{z}{z+1}$.",
     "Someone rewrites $\\dfrac{1}{1-\\dfrac{1}{t}}$ for $t\\neq 0,1$ as $\\dfrac{t}{t+1}$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $8$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $4$ over $x-1$ and $4$ over $x+1$.",
-    "For $f,g,h\\neq 0$, $\\dfrac{3gh}{4f}\\cdot\\dfrac{2f^3g^2}{5}\\div\\dfrac{3(fg)^2}{4h}=\\dfrac{2gh^2}{5}$."
+    "For $f,g,h\\neq 0$, it holds that $\\dfrac{3gh}{4f}\\cdot\\dfrac{2f^3g^2}{5}\\div\\dfrac{3(fg)^2}{4h}=\\dfrac{2gh^2}{5}$."
    ],
    "answer_key": [
     false,
@@ -1348,11 +1348,11 @@
    "title": "Test point after a difference-of-squares cancel",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x\\neq\\pm 2$, $\\dfrac{1}{x-2}-\\dfrac{1}{x+2}=\\dfrac{4}{x^2-4}$.",
-    "For $h,s,k\\neq 0$, $\\dfrac{3sk}{4h}\\cdot\\dfrac{2h^3s^2}{5}\\div\\dfrac{3(hs)^2}{4k}=\\dfrac{2sk}{5}$.",
-    "For $p,q\\neq 0$, $\\dfrac{4}{p}+\\dfrac{5}{q}=\\dfrac{4q+5p}{pq}$.",
+    "For $x\\neq\\pm 2$, it holds that $\\dfrac{1}{x-2}-\\dfrac{1}{x+2}=\\dfrac{4}{x^2-4}$.",
+    "For $h,s,k\\neq 0$, it holds that $\\dfrac{3sk}{4h}\\cdot\\dfrac{2h^3s^2}{5}\\div\\dfrac{3(hs)^2}{4k}=\\dfrac{2sk}{5}$.",
+    "For $p,q\\neq 0$, it holds that $\\dfrac{4}{p}+\\dfrac{5}{q}=\\dfrac{4q+5p}{pq}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8p^2b}{4x^2-16}}{\\dfrac{4pb}{2x+4}}$ simplifies to $\\dfrac{p}{x-2}$ for $x\\neq\\pm 2$ and $p,b\\neq 0$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $6$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $6$ over $x-1$ and $6$ over $x+1$."
    ],
@@ -1380,13 +1380,13 @@
    "title": "Binomial square missing the doubled cross term",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x\\neq\\pm 1$, $\\dfrac{4x-2}{x^2-1}-\\dfrac{3}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{4}{x-1}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{4x-2}{x^2-1}-\\dfrac{3}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{4}{x-1}$.",
     "Expanding $\\bigl(1-\\dfrac{1}{u}\\bigr)^2$ on $u\\neq 0$ equals $1-\\dfrac{2}{u}+\\dfrac{1}{u^2}$.",
     "Provided $v\\neq 0$, rewriting $\\bigl(v+\\dfrac{1}{v}\\bigr)^2$ as $v^2+\\dfrac{1}{v^2}$.",
     "After cancelling a factor of $\\dfrac{5y^2-45}{y-3}$ for $y\\neq 3$, the remainder $5y-15$ is recorded.",
-    "For $q\\neq 0$, $\\dfrac{4(6q)}{(-6q)^2}=\\dfrac{4}{6q}$."
+    "For $q\\neq 0$, it holds that $\\dfrac{4(6q)}{(-6q)^2}=\\dfrac{4}{6q}$."
    ],
    "answer_key": [
     true,
@@ -1412,13 +1412,13 @@
    "title": "Twice a reciprocal without an arithmetic mean",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Let $x$ be a nonzero real number. Twice the reciprocal of the sum of $x$ and the reciprocal of $x$ equals $x$ divided by the sum of the square of $x$ and one.",
-    "For $p,q\\neq 0$, $\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{1}{p+q}$ (variant 1).",
+    "For $p,q\\neq 0$, it holds that $\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{1}{p+q}$ (variant 1).",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $2$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $2$ over $x-1$ and $2$ over $x+1$.",
-    "For $m,t,n\\neq 0$, $\\dfrac{3tn}{4m}\\cdot\\dfrac{2m^3t^2}{5}\\div\\dfrac{3(mt)^2}{4n}=\\dfrac{2tn^2}{5}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{8x-4}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{8}{x-1}$."
+    "For $m,t,n\\neq 0$, it holds that $\\dfrac{3tn}{4m}\\cdot\\dfrac{2m^3t^2}{5}\\div\\dfrac{3(mt)^2}{4n}=\\dfrac{2tn^2}{5}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{8x-4}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{8}{x-1}$."
    ],
    "answer_key": [
     false,
@@ -1444,11 +1444,11 @@
    "title": "Cubic remainder checked at a vanishing test point",
    "subsection": "2.2",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $p,q,r\\neq 0$, $\\dfrac{3qr}{4p}\\cdot\\dfrac{2p^3q^2}{5}\\div\\dfrac{3(pq)^2}{4r}=\\dfrac{2qr^2}{5}$.",
-    "For $m,n\\neq 0$, $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{mn}$.",
-    "For $f\\neq 4$, $\\dfrac{f^2-16}{f-4}=f+4$.",
+    "For $p,q,r\\neq 0$, it holds that $\\dfrac{3qr}{4p}\\cdot\\dfrac{2p^3q^2}{5}\\div\\dfrac{3(pq)^2}{4r}=\\dfrac{2qr^2}{5}$.",
+    "For $m,n\\neq 0$, it holds that $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{mn}$.",
+    "For $f\\neq 4$, it holds that $\\dfrac{f^2-16}{f-4}=f+4$.",
     "Rewriting $\\dfrac{h}{k}+\\dfrac{k}{h}$ on $hk\\neq 0$ as $\\dfrac{(h+k)^2}{hk}$.",
     "Whenever $z\\neq 6$, cancelling in $\\dfrac{z^2-36}{z-6}$ is treated as leaving $z-6$."
    ],
@@ -1476,12 +1476,12 @@
    "title": "Difference of reciprocals over reciprocal squares",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $5$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $5$ over $x-1$ and $5$ over $x+1$.",
-    "For $s\\neq 0$, $\\dfrac{4(8s)}{(-8s)^2}=\\dfrac{4}{8s}$.",
+    "For $s\\neq 0$, it holds that $\\dfrac{4(8s)}{(-8s)^2}=\\dfrac{4}{8s}$.",
     "Provided $x\\neq 0$, the difference $\\dfrac{1}{x^2}-\\dfrac{1}{(x+1)^2}$ equals $\\dfrac{2x+1}{x^2(x+1)^2}$.",
-    "For $r\\neq 0$, $\\dfrac{4(9r)}{(-9r)^2}=\\dfrac{4}{9r}$.",
+    "For $r\\neq 0$, it holds that $\\dfrac{4(9r)}{(-9r)^2}=\\dfrac{4}{9r}$.",
     "Let $u$ be a nonzero real number. Twice the reciprocal of the sum of $u$ and the reciprocal of $u$ equals twice $u$ divided by the sum of the square of $u$ and one."
    ],
    "answer_key": [
@@ -1508,11 +1508,11 @@
    "title": "Compound fraction whose simplified ratio is flipped",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r\\neq 5$, $\\dfrac{r^2-25}{r-5}=r+5$.",
+    "For $r\\neq 5$, it holds that $\\dfrac{r^2-25}{r-5}=r+5$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $7$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $7$ over $x-1$ and $7$ over $x+1$.",
-    "For $u,v,w\\neq 0$, $\\dfrac{3vw}{4u}\\cdot\\dfrac{2u^3v^2}{5}\\div\\dfrac{3(uv)^2}{4w}=\\dfrac{2vw}{5}$.",
+    "For $u,v,w\\neq 0$, it holds that $\\dfrac{3vw}{4u}\\cdot\\dfrac{2u^3v^2}{5}\\div\\dfrac{3(uv)^2}{4w}=\\dfrac{2vw}{5}$.",
     "Whenever $v\\neq \\pm 3$, someone writes $\\dfrac{v+3}{v-3}-\\dfrac{v-3}{v+3}=\\dfrac{6v}{v^2-9}$.",
     "Collapsing $\\dfrac{1}{1-\\dfrac{1}{w}}$ for $w\\neq 0,1$ equals $\\dfrac{w}{w-1}$."
    ],
@@ -1540,9 +1540,9 @@
    "title": "Three poles sharing a product LCD",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x,y\\neq 0$ and $x\\neq -y$, $\\dfrac{2}{x}+\\dfrac{3}{y}=\\dfrac{2y+3x}{x+y}$.",
+    "For $x,y\\neq 0$ and $x\\neq -y$, it holds that $\\dfrac{2}{x}+\\dfrac{3}{y}=\\dfrac{2y+3x}{x+y}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8m^2b}{4x^2-16}}{\\dfrac{4mb}{2x+4}}$ simplifies to $\\dfrac{m}{x+2}$ for $x\\neq\\pm 2$ and $m,b\\neq 0$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $5$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\\dfrac{5}{2}$ over $x-1$ and $\\dfrac{5}{2}$ over $x+1$.",
     "After factoring $\\dfrac{v-3}{v^2-8v+15}$ for $v\\neq 3,5$, a reduction to $\\dfrac{1}{v-5}$ is recorded.",
@@ -1572,13 +1572,13 @@
    "title": "Continued nest that lands on a linear remainder",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Clearing the nest $\\dfrac{1}{1-\\dfrac{1}{1-\\dfrac{1}{x}}}$ for $x\\neq 0,1$ equals $1-x$.",
-    "For $c,d\\neq 0$, $\\dfrac{2}{c}+\\dfrac{4}{d}=\\dfrac{2d+4c}{cd}$.",
-    "For $s\\neq 0$, $\\dfrac{4(4s)}{(-4s)^2}=-\\dfrac{4}{4s}$.",
+    "For $c,d\\neq 0$, it holds that $\\dfrac{2}{c}+\\dfrac{4}{d}=\\dfrac{2d+4c}{cd}$.",
+    "For $s\\neq 0$, it holds that $\\dfrac{4(4s)}{(-4s)^2}=-\\dfrac{4}{4s}$.",
     "Let $w$ be a nonzero real quantity. Twice the reciprocal of the sum of $w$ and the reciprocal of $w$ equals $w$ divided by the sum of the square of $w$ and one.",
-    "For $t,w\\neq 0$, $\\dfrac{1}{t}+\\dfrac{1}{w}=\\dfrac{1}{t+w}$."
+    "For $t,w\\neq 0$, it holds that $\\dfrac{1}{t}+\\dfrac{1}{w}=\\dfrac{1}{t+w}$."
    ],
    "answer_key": [
     true,
@@ -1604,11 +1604,11 @@
    "title": "Stacked negative powers missing a leftover factor",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $3$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\\dfrac{3}{2}$ over $x-1$ and $\\dfrac{3}{2}$ over $x+1$.",
-    "For $a,c,b\\neq 0$, $\\dfrac{3cb}{4a}\\cdot\\dfrac{2a^3c^2}{5}\\div\\dfrac{3(ac)^2}{4b}=\\dfrac{2cb}{5}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{2x-2}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{1}{x-1}-\\dfrac{1}{1-x}=\\dfrac{2}{x-1}$.",
+    "For $a,c,b\\neq 0$, it holds that $\\dfrac{3cb}{4a}\\cdot\\dfrac{2a^3c^2}{5}\\div\\dfrac{3(ac)^2}{4b}=\\dfrac{2cb}{5}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{2x-2}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{1}{x-1}-\\dfrac{1}{1-x}=\\dfrac{2}{x-1}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8x^2b}{4x^2-16}}{\\dfrac{4xb}{2x+4}}$ simplifies to $\\dfrac{x}{x-2}$ for $x\\neq\\pm 2$ and $x,b\\neq 0$.",
     "Combining $\\dfrac{h}{k}-\\dfrac{k}{h}$ on $hk\\neq 0$ is rewritten as $\\dfrac{(h-k)^2}{hk}$."
    ],
@@ -1636,13 +1636,13 @@
    "title": "Cancel two pieces then add a leftover ratio",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r\\neq 4$, $\\dfrac{r^2-16}{r-4}=r+4$.",
-    "For $c,d\\neq 0$, $\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{1}{c+d}$.",
-    "For $f\\neq 6$, $\\dfrac{f^2-36}{f-6}=f+6$.",
+    "For $r\\neq 4$, it holds that $\\dfrac{r^2-16}{r-4}=r+4$.",
+    "For $c,d\\neq 0$, it holds that $\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{1}{c+d}$.",
+    "For $f\\neq 6$, it holds that $\\dfrac{f^2-36}{f-6}=f+6$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $4$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $2$ over $x-1$ and $2$ over $x+1$.",
-    "For $t\\neq 0$, $\\dfrac{4(5t)}{(-5t)^2}=\\dfrac{4}{5t}$."
+    "For $t\\neq 0$, it holds that $\\dfrac{4(5t)}{(-5t)^2}=\\dfrac{4}{5t}$."
    ],
    "answer_key": [
     true,
@@ -1668,13 +1668,13 @@
    "title": "A product of reciprocal rational pieces",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Multiplying $\\Bigl(\\dfrac{x}{x-3}-\\dfrac{x}{x+3}\\Bigr)\\cdot\\dfrac{x^2-9}{6x}$ for $x\\neq 0,\\pm 3$ equals $1$.",
-    "For $n\\neq 0$, $\\dfrac{4(7n)}{(-7n)^2}=-\\dfrac{4}{7n}$.",
+    "For $n\\neq 0$, it holds that $\\dfrac{4(7n)}{(-7n)^2}=-\\dfrac{4}{7n}$.",
     "Let $u$ be a nonzero real number. Twice the reciprocal of the sum of $u$ and the reciprocal of $u$ equals $u$ divided by the sum of the square of $u$ and one.",
-    "For $m,n\\neq 0$ and $m\\neq -n$, $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{m+n}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{2x-2}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{1}{x-1}-\\dfrac{1}{1-x}=\\dfrac{3}{x-1}$."
+    "For $m,n\\neq 0$ and $m\\neq -n$, it holds that $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{m+n}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{2x-2}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{1}{x-1}-\\dfrac{1}{1-x}=\\dfrac{3}{x-1}$."
    ],
    "answer_key": [
     true,
@@ -1700,9 +1700,9 @@
    "title": "Constant from a difference of expanded squares",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x,y,z\\neq 0$, $\\dfrac{3yz}{4x}\\cdot\\dfrac{2x^3y^2}{5}\\div\\dfrac{3(xy)^2}{4z}=\\dfrac{2yz^2}{5}$.",
+    "For $x,y,z\\neq 0$, it holds that $\\dfrac{3yz}{4x}\\cdot\\dfrac{2x^3y^2}{5}\\div\\dfrac{3(xy)^2}{4z}=\\dfrac{2yz^2}{5}$.",
     "On $hk\\neq 0$ and $h\\neq k$, someone writes $\\dfrac{h}{h-k}+\\dfrac{k}{k-h}=0$.",
     "Provided $v\\neq 0$, the halved form $\\dfrac{(v+5)^2-(v-5)^2}{2v}$ equals $10$.",
     "Whenever $w\\neq z$, rewriting $\\dfrac{w}{w-z}-\\dfrac{z}{w-z}$ as $1$.",
@@ -1732,13 +1732,13 @@
    "title": "Quadratic over quadratic with the wrong leftover",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $3$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $3$ over $x-1$ and $3$ over $x+1$.",
-    "For $p,q\\neq 0$, $\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{1}{p+q}$ (variant 3).",
-    "For $x\\neq\\pm 1$, $\\dfrac{9x-3}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{2}{x-1}-\\dfrac{2}{1-x}=\\dfrac{6}{x-1}$.",
-    "For $p\\neq 0$, $\\dfrac{4(8p)}{(-8p)^2}=\\dfrac{4}{8p}$.",
-    "For $m,n,t\\neq 0$, $\\dfrac{3nt}{4m}\\cdot\\dfrac{2m^3n^2}{5}\\div\\dfrac{3(mn)^2}{4t}=\\dfrac{2nt^2}{5}$."
+    "For $p,q\\neq 0$, it holds that $\\dfrac{1}{p}+\\dfrac{1}{q}=\\dfrac{1}{p+q}$ (variant 3).",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{9x-3}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{2}{x-1}-\\dfrac{2}{1-x}=\\dfrac{6}{x-1}$.",
+    "For $p\\neq 0$, it holds that $\\dfrac{4(8p)}{(-8p)^2}=\\dfrac{4}{8p}$.",
+    "For $m,n,t\\neq 0$, it holds that $\\dfrac{3nt}{4m}\\cdot\\dfrac{2m^3n^2}{5}\\div\\dfrac{3(mn)^2}{4t}=\\dfrac{2nt^2}{5}$."
    ],
    "answer_key": [
     false,
@@ -1764,11 +1764,11 @@
    "title": "Sum of squares treated as a square of a sum",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $m\\neq 0$, $\\dfrac{4(3m)}{(-3m)^2}=\\dfrac{4}{3m}$.",
+    "For $m\\neq 0$, it holds that $\\dfrac{4(3m)}{(-3m)^2}=\\dfrac{4}{3m}$.",
     "Let $k$ be a nonzero real letter. Twice the reciprocal of the sum of $k$ and the reciprocal of $k$ equals twice $k$ divided by the sum of the square of $k$ and one.",
-    "For $f\\neq 5$, $\\dfrac{f^2-25}{f-5}=f+5$.",
+    "For $f\\neq 5$, it holds that $\\dfrac{f^2-25}{f-5}=f+5$.",
     "Provided $h\\neq -k$ and $h\\neq k$, the quotient $\\dfrac{h^2-k^2}{(h+k)^2}$ equals $\\dfrac{h+k}{h-k}$.",
     "On $z\\neq -5$, someone writes $\\dfrac{z^2+25}{z+5}=z+5$."
    ],
@@ -1796,11 +1796,11 @@
    "title": "Swapped two-letter ratios in a stacked quotient",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x\\neq\\pm 1$, $\\dfrac{6x-4}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{2}{x-1}-\\dfrac{1}{1-x}=\\dfrac{-4}{x-1}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{6x-4}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{2}{x-1}-\\dfrac{1}{1-x}=\\dfrac{-4}{x-1}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8u^2b}{4x^2-16}}{\\dfrac{4ub}{2x+4}}$ simplifies to $\\dfrac{u}{x+2}$ for $x\\neq\\pm 2$ and $u,b\\neq 0$.",
-    "For $u,v\\neq 0$, $\\dfrac{3}{u}+\\dfrac{5}{v}=\\dfrac{3v+5u}{uv}$.",
+    "For $u,v\\neq 0$, it holds that $\\dfrac{3}{u}+\\dfrac{5}{v}=\\dfrac{3v+5u}{uv}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8h^2b}{4x^2-16}}{\\dfrac{4hb}{2x+4}}$ simplifies to $\\dfrac{h}{x+2}$ for $x\\neq\\pm 2$ and $h,b\\neq 0$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $6$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $3$ over $x-1$ and $3$ over $x+1$."
    ],
@@ -1828,12 +1828,12 @@
    "title": "Squared minus sign in a monomial denominator",
    "subsection": "2.2",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r\\neq 6$, $\\dfrac{r^2-36}{r-6}=r+6$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{3x-3}{x^2-1}-\\dfrac{4}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{1}{x-1}$.",
-    "For $q\\neq 0$, $\\dfrac{4(3q)}{(-3q)^2}=-\\dfrac{4}{3q}$.",
-    "For $h,k\\neq 0$, $\\dfrac{2}{h}+\\dfrac{6}{k}=\\dfrac{2k+6h}{hk}$.",
+    "For $r\\neq 6$, it holds that $\\dfrac{r^2-36}{r-6}=r+6$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{3x-3}{x^2-1}-\\dfrac{4}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{1}{x-1}$.",
+    "For $q\\neq 0$, it holds that $\\dfrac{4(3q)}{(-3q)^2}=-\\dfrac{4}{3q}$.",
+    "For $h,k\\neq 0$, it holds that $\\dfrac{2}{h}+\\dfrac{6}{k}=\\dfrac{2k+6h}{hk}$.",
     "Combining $\\dfrac{h}{k}+\\dfrac{k}{h}-2$ on $hk\\neq 0$ as $\\dfrac{(h+k)^2}{hk}$."
    ],
    "answer_key": [
@@ -1860,13 +1860,13 @@
    "title": "Harmonic-looking product over a two-letter sum",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Let $w$ be a nonzero real quantity. Twice the reciprocal of the sum of $w$ and the reciprocal of $w$ equals twice $w$ divided by the sum of the square of $w$ and one.",
-    "For $a,b\\neq 0$, $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{ab}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{3x-3}{x^2-1}-\\dfrac{4}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{5}{x-1}$.",
+    "For $a,b\\neq 0$, it holds that $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{ab}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{3x-3}{x^2-1}-\\dfrac{4}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{5}{x-1}$.",
     "Clearing the three-layer plus nest $1+\\dfrac{1}{1+\\dfrac{1}{1+\\dfrac{1}{k}}}$ for $k\\neq 0,-1,-\\dfrac{1}{2}$ equals $\\dfrac{3k+2}{2k+1}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{8x-4}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{4}{x-1}$."
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{8x-4}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{4}{x-1}$."
    ],
    "answer_key": [
     true,
@@ -1892,9 +1892,9 @@
    "title": "Three unit fractions with a false linear numerator",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r,s\\neq 0$, $\\dfrac{2}{r}+\\dfrac{3}{s}=\\dfrac{2s+3r}{rs}$.",
+    "For $r,s\\neq 0$, it holds that $\\dfrac{2}{r}+\\dfrac{3}{s}=\\dfrac{2s+3r}{rs}$.",
     "A script writes $\\dfrac{1}{u}+\\dfrac{1}{v}+\\dfrac{1}{w}=\\dfrac{u+v+w}{uvw}$ whenever $uvw\\neq 0$.",
     "The stacked quotient $\\dfrac{\\dfrac{8x^2b}{4x^2-16}}{\\dfrac{4xb}{2x+4}}$ simplifies to $\\dfrac{x}{x+2}$ for $x\\neq\\pm 2$ and $x,b\\neq 0$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $7$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\\dfrac{7}{2}$ over $x-1$ and $\\dfrac{7}{2}$ over $x+1$.",
@@ -1924,12 +1924,12 @@
    "title": "Cancelled linear factor kept in the denominator",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x\\neq\\pm 1$, $\\dfrac{5x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{3}{1-x}=\\dfrac{3}{x-1}$.",
-    "For $r\\neq 0$, $\\dfrac{4(6r)}{(-6r)^2}=-\\dfrac{4}{6r}$.",
-    "For $x,z,y\\neq 0$, $\\dfrac{3zy}{4x}\\cdot\\dfrac{2x^3z^2}{5}\\div\\dfrac{3(xz)^2}{4y}=\\dfrac{2zy^2}{5}$.",
-    "For $p,q\\neq 0$ and $p\\neq -q$, $\\dfrac{4}{p}+\\dfrac{5}{q}=\\dfrac{4q+5p}{p+q}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{5x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{3}{1-x}=\\dfrac{3}{x-1}$.",
+    "For $r\\neq 0$, it holds that $\\dfrac{4(6r)}{(-6r)^2}=-\\dfrac{4}{6r}$.",
+    "For $x,z,y\\neq 0$, it holds that $\\dfrac{3zy}{4x}\\cdot\\dfrac{2x^3z^2}{5}\\div\\dfrac{3(xz)^2}{4y}=\\dfrac{2zy^2}{5}$.",
+    "For $p,q\\neq 0$ and $p\\neq -q$, it holds that $\\dfrac{4}{p}+\\dfrac{5}{q}=\\dfrac{4q+5p}{p+q}$.",
     "With $w\\neq \\pm 3$, someone writes $\\dfrac{w^2+w-6}{w^2-9}=\\dfrac{w+2}{w-3}$."
    ],
    "answer_key": [
@@ -1956,12 +1956,12 @@
    "title": "Opposite linear factors that differ by a minus",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Adding $\\dfrac{1}{h(h-k)}+\\dfrac{1}{k(k-h)}$ for $hk\\neq 0$ and $h\\neq k$ equals $-\\dfrac{1}{hk}$.",
-    "For $c,d\\neq 0$, $\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{1}{c+d}$ (variant 1).",
+    "For $c,d\\neq 0$, it holds that $\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{1}{c+d}$ (variant 1).",
     "Bare opposite unit fractions $\\dfrac{1}{v-w}+\\dfrac{1}{w-v}$ are claimed to vanish for every $v\\neq w$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{4x-2}{x^2-1}-\\dfrac{3}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{2}{x-1}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{4x-2}{x^2-1}-\\dfrac{3}{1+x}+\\dfrac{1}{x-1}-\\dfrac{2}{1-x}=\\dfrac{2}{x-1}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8u^2b}{4x^2-16}}{\\dfrac{4ub}{2x+4}}$ simplifies to $\\dfrac{u}{x-2}$ for $x\\neq\\pm 2$ and $u,b\\neq 0$."
    ],
    "answer_key": [
@@ -1988,13 +1988,13 @@
    "title": "Cubic LCD of three neighbouring linears",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $a,b\\neq 0$, $\\dfrac{3}{a}+\\dfrac{3}{b}=\\dfrac{3b+3a}{ab}$.",
+    "For $a,b\\neq 0$, it holds that $\\dfrac{3}{a}+\\dfrac{3}{b}=\\dfrac{3b+3a}{ab}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8h^2b}{4x^2-16}}{\\dfrac{4hb}{2x+4}}$ simplifies to $\\dfrac{h}{x-2}$ for $x\\neq\\pm 2$ and $h,b\\neq 0$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $4$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $4$ over $x-1$ and $4$ over $x+1$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{6x-4}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{2}{x-1}-\\dfrac{1}{1-x}=\\dfrac{4}{x-1}$.",
-    "For $u,w,v\\neq 0$, $\\dfrac{3wv}{4u}\\cdot\\dfrac{2u^3w^2}{5}\\div\\dfrac{3(uw)^2}{4v}=\\dfrac{2wv}{5}$."
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{6x-4}{x^2-1}-\\dfrac{1}{1+x}+\\dfrac{2}{x-1}-\\dfrac{1}{1-x}=\\dfrac{4}{x-1}$.",
+    "For $u,w,v\\neq 0$, it holds that $\\dfrac{3wv}{4u}\\cdot\\dfrac{2u^3w^2}{5}\\div\\dfrac{3(uw)^2}{4v}=\\dfrac{2wv}{5}$."
    ],
    "answer_key": [
     true,
@@ -2020,13 +2020,13 @@
    "title": "Square of a swapped-ratio sum beside a cubic",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $s\\neq 0$, $\\dfrac{4(2s)}{(-2s)^2}=\\dfrac{2}{s}$.",
-    "For $c,d\\neq 0$, $\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{1}{c+d}$ (variant 2).",
+    "For $s\\neq 0$, it holds that $\\dfrac{4(2s)}{(-2s)^2}=\\dfrac{2}{s}$.",
+    "For $c,d\\neq 0$, it holds that $\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{1}{c+d}$ (variant 2).",
     "The stacked ratio $\\dfrac{\\dfrac{3}{x}-\\dfrac{5}{y}}{\\dfrac{1}{x}+\\dfrac{1}{y}}$ reduces to $\\dfrac{3y-5x}{x+y}$ for $xy\\neq 0$ and $x\\neq -y$.",
     "Provided $t\\neq u$, the cubic ratio $\\dfrac{t^3-u^3}{t^2+tu+u^2}$ equals $t-u$.",
-    "For $h,k\\neq 0$ and $h\\neq -k$, $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{h+k}$."
+    "For $h,k\\neq 0$ and $h\\neq -k$, it holds that $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{h+k}$."
    ],
    "answer_key": [
     true,
@@ -2052,13 +2052,13 @@
    "title": "Outer reciprocal of a two-storey $x$-nest",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $x\\neq\\pm 1$, $\\dfrac{5x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{3}{1-x}=\\dfrac{6}{x-1}$.",
-    "For $p\\neq 7$, $\\dfrac{p^2-49}{p-7}=p+7$.",
-    "For $c,d,e\\neq 0$, $\\dfrac{3de}{4c}\\cdot\\dfrac{2c^3d^2}{5}\\div\\dfrac{3(cd)^2}{4e}=\\dfrac{2de^2}{5}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{5x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{1}{x-1}-\\dfrac{3}{1-x}=\\dfrac{6}{x-1}$.",
+    "For $p\\neq 7$, it holds that $\\dfrac{p^2-49}{p-7}=p+7$.",
+    "For $c,d,e\\neq 0$, it holds that $\\dfrac{3de}{4c}\\cdot\\dfrac{2c^3d^2}{5}\\div\\dfrac{3(cd)^2}{4e}=\\dfrac{2de^2}{5}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8p^2b}{4x^2-16}}{\\dfrac{4pb}{2x+4}}$ simplifies to $\\dfrac{p}{x+2}$ for $x\\neq\\pm 2$ and $p,b\\neq 0$.",
-    "For $n\\neq 0$, $\\dfrac{4(6n)}{(-6n)^2}=-\\dfrac{4}{6n}$."
+    "For $n\\neq 0$, it holds that $\\dfrac{4(6n)}{(-6n)^2}=-\\dfrac{4}{6n}$."
    ],
    "answer_key": [
     false,
@@ -2084,9 +2084,9 @@
    "title": "Quartic cancel mixed with reciprocal squares",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $h,k\\neq 0$, $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{hk}$.",
+    "For $h,k\\neq 0$, it holds that $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{hk}$.",
     "Away from the zeros of $x^2-1$, the rational expression whose numerator is $1$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $1$ over $x-1$ and $1$ over $x+1$.",
     "Subtracting $\\dfrac{1}{(u-3)^2}-\\dfrac{1}{(u+3)^2}$ produces $\\dfrac{12u}{(u^2-9)^2}$ off $u=\\pm 3$.",
     "The squared-difference quotient $\\dfrac{(v-w)^2}{v^2-w^2}$ reduces to $\\dfrac{v-w}{v+w}$ for $v\\neq\\pm w$.",
@@ -2116,13 +2116,13 @@
    "title": "Two candidate rewritings of a compound stack",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r,s,t\\neq 0$, $\\dfrac{3st}{4r}\\cdot\\dfrac{2r^3s^2}{5}\\div\\dfrac{3(rs)^2}{4t}=\\dfrac{2st}{5}$.",
-    "For $c,d\\neq 0$ and $c\\neq -d$, $\\dfrac{8}{c}+\\dfrac{3}{d}=\\dfrac{8d+3c}{c+d}$.",
+    "For $r,s,t\\neq 0$, it holds that $\\dfrac{3st}{4r}\\cdot\\dfrac{2r^3s^2}{5}\\div\\dfrac{3(rs)^2}{4t}=\\dfrac{2st}{5}$.",
+    "For $c,d\\neq 0$ and $c\\neq -d$, it holds that $\\dfrac{8}{c}+\\dfrac{3}{d}=\\dfrac{8d+3c}{c+d}$.",
     "After cancelling $\\dfrac{v^3-27}{v-3}$ for $v\\neq 3$ as $v^2+3v+9$, a second rewriting $v^2-3v+9$ is treated as the same polynomial.",
-    "For $u,v\\neq 0$, $\\dfrac{3}{u}+\\dfrac{7}{v}=\\dfrac{3v+7u}{uv}$.",
-    "For $x\\neq\\pm 1$, $\\dfrac{7x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{3}{x-1}-\\dfrac{1}{1-x}=\\dfrac{5}{x-1}$."
+    "For $u,v\\neq 0$, it holds that $\\dfrac{3}{u}+\\dfrac{7}{v}=\\dfrac{3v+7u}{uv}$.",
+    "For $x\\neq\\pm 1$, it holds that $\\dfrac{7x-1}{x^2-1}-\\dfrac{2}{1+x}+\\dfrac{3}{x-1}-\\dfrac{1}{1-x}=\\dfrac{5}{x-1}$."
    ],
    "answer_key": [
     false,
@@ -2148,10 +2148,10 @@
    "title": "Exam mix of leftover cancellation traps",
    "subsection": "2.2",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r,s\\neq 0$, $\\dfrac{1}{r}+\\dfrac{1}{s}=\\dfrac{1}{r+s}$ (variant 3).",
-    "For $p,r,q\\neq 0$, $\\dfrac{3rq}{4p}\\cdot\\dfrac{2p^3r^2}{5}\\div\\dfrac{3(pr)^2}{4q}=\\dfrac{2rq^2}{5}$.",
+    "For $r,s\\neq 0$, it holds that $\\dfrac{1}{r}+\\dfrac{1}{s}=\\dfrac{1}{r+s}$ (variant 3).",
+    "For $p,r,q\\neq 0$, it holds that $\\dfrac{3rq}{4p}\\cdot\\dfrac{2p^3r^2}{5}\\div\\dfrac{3(pr)^2}{4q}=\\dfrac{2rq^2}{5}$.",
     "The stacked quotient $\\dfrac{\\dfrac{8a^2b}{4x^2-16}}{\\dfrac{4ab}{2x+4}}$ simplifies to $\\dfrac{a}{x+2}$ for $x\\neq\\pm 2$ and $a,b\\neq 0$.",
     "Whenever $x\\neq 0$, $\\bigl(1+\\dfrac{1}{x}\\bigr)^2$ is treated as $1+\\dfrac{1}{x^2}$.",
     "Combining $\\dfrac{1}{h^2}-\\dfrac{1}{k^2}$ on $hk\\neq 0$ as $\\dfrac{k^2-h^2}{h^2k^2}$."
@@ -2180,7 +2180,7 @@
    "title": "Warm-up: product and quotient of powers",
    "subsection": "2.3",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Multiplying powers: for $a\\neq 0$, $a^3\\cdot a^4=a^7$.",
     "Dividing indices, for $x\\neq 0$, $x^5/x^2=x^3$.",
@@ -2212,7 +2212,7 @@
    "title": "Warm-up: power of a power",
    "subsection": "2.3",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "For $x>0$, raising a square to the third power gives $(x^2)^3=x^6$.",
     "Adding exponents incorrectly, $(a^3)^2=a^5$ is false for $a>0$.",
@@ -2244,13 +2244,13 @@
    "title": "Warm-up: negative and zero exponents",
    "subsection": "2.3",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "For $a\\neq 0$, a negative index means $a^{-3}=1/a^3$.",
     "Reciprocating once, for $x\\neq 0$, $x^{-1}=1/x$.",
     "Any nonzero base satisfies $b^0=1$.",
     "A sign error makes $t^{-2}=-1/t^2$ for $t\\neq 0$ (false).",
-    "For $p\\neq 0$, $p^{-4}=1/p^4$."
+    "For $p\\neq 0$, it holds that $p^{-4}=1/p^4$."
    ],
    "answer_key": [
     true,
@@ -2276,13 +2276,13 @@
    "title": "Warm-up: fractional exponents and roots",
    "subsection": "2.3",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "For $x>0$, the half-power $x^{1/2}$ equals $\\sqrt{x}$.",
     "For $a>0$, the cube root is $a^{1/3}=\\sqrt[3]{a}$.",
-    "For $b>0$, $b^{2/3}=(\\sqrt[3]{b})^2$.",
+    "For $b>0$, it holds that $b^{2/3}=(\\sqrt[3]{b})^2$.",
     "Confusing a half-power with a square, $y^{1/2}=y^2$ is false for $y>0$.",
-    "For $z>0$, $z^{3/2}=z\\sqrt{z}$."
+    "For $z>0$, it holds that $z^{3/2}=z\\sqrt{z}$."
    ],
    "answer_key": [
     true,
@@ -2308,13 +2308,13 @@
    "title": "A stacked power compared with a product after a rewrite",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $p\\neq 0$, $(2p^{-1}-1)(2p^{-1}+1)=\\dfrac{4}{p^2}-1$.",
+    "For $p\\neq 0$, it holds that $(2p^{-1}-1)(2p^{-1}+1)=\\dfrac{4}{p^2}-1$.",
     "If $a>0$, then $\\dfrac{a^{2/3}\\cdot\\sqrt[3]{a\\sqrt{a}}}{a^{1/6}\\cdot\\sqrt[6]{a^5}}=\\sqrt[3]{a}$.",
     "For positive $b$, raising $b$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $b$.",
     "For positive $m$, raising $m$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $m$.",
-    "For $u>0$, $(u^4)^{1/2}/u=u$."
+    "For $u>0$, it holds that $(u^4)^{1/2}/u=u$."
    ],
    "answer_key": [
     true,
@@ -2340,12 +2340,12 @@
    "title": "A minus in the denominator that has to be flipped twice",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $w>0$, $(w^{2/3})(w^{1/3})=w$.",
+    "For $w>0$, it holds that $(w^{2/3})(w^{1/3})=w$.",
     "Working with $q\\neq 0$, a slip writes $\\dfrac{1}{q^{-3}}=-q^{3}$, reading the minus in the exponent as a change of sign.",
-    "For $v\\neq 0$, $(v^2/v^{-3})^{1/2}=v^{5/2}$.",
-    "For $p\\neq 0$, $(7p^{-1}-1)(7p^{-1}+1)=\\dfrac{49}{p^2}-1$.",
+    "For $v\\neq 0$, it holds that $(v^2/v^{-3})^{1/2}=v^{5/2}$.",
+    "For $p\\neq 0$, it holds that $(7p^{-1}-1)(7p^{-1}+1)=\\dfrac{49}{p^2}-1$.",
     "If $c>0$, then $\\dfrac{c^{2/3}\\cdot\\sqrt[3]{c\\sqrt{c}}}{c^{1/6}\\cdot\\sqrt[6]{c^5}}=\\sqrt[3]{c}$."
    ],
    "answer_key": [
@@ -2372,11 +2372,11 @@
    "title": "Products of roots versus roots of sums",
    "subsection": "2.3",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $a>0$, $(a^2)^3=a^5$.",
+    "For $a>0$, it holds that $(a^2)^3=a^5$.",
     "For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields $x$ to the power $\\tfrac{5}{2}$.",
-    "For $r\\neq 0$, $(4r^{-1}-1)(4r^{-1}+1)=\\dfrac{1}{16r^2}-1$.",
+    "For $r\\neq 0$, it holds that $(4r^{-1}-1)(4r^{-1}+1)=\\dfrac{1}{16r^2}-1$.",
     "If $e>0$, then $\\dfrac{e^{2/3}\\cdot\\sqrt[3]{e\\sqrt{e}}}{e^{1/6}\\cdot\\sqrt[6]{e^5}}=\\sqrt[6]{e}$.",
     "For positive $w$, raising $w$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $w$."
    ],
@@ -2404,11 +2404,11 @@
    "title": "Zero exponents mixed with a cancelled stack",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "For positive $m$, raising $m$ to the second power, then to the third, and finally taking the principal square root of the result yields $m$ to the power $\\tfrac{5}{2}$.",
     "treats $0^{-3}\\cdot 0^{3}$ as $0^{0}$ and then as $1$, by the product rule for exponents.",
-    "For $a\\neq 0$, $(a^{-2}a^5)/a= a^2$.",
+    "For $a\\neq 0$, it holds that $(a^{-2}a^5)/a= a^2$.",
     "Treating $(2b)^{0}=2b^{0}$ for every $b\\neq 0$ is offered, so the left side is read as $2$.",
     "For positive $x$, raising $x$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $x$."
    ],
@@ -2436,13 +2436,13 @@
    "title": "Integer values of short fractional powers",
    "subsection": "2.3",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $w\\neq 0$, $(4w^{-1}-1)(4w^{-1}+1)=\\dfrac{1}{16w^2}-1$.",
+    "For $w\\neq 0$, it holds that $(4w^{-1}-1)(4w^{-1}+1)=\\dfrac{1}{16w^2}-1$.",
     "Rewriting $32^{2/5}$ as $8$ is entered on a mark scheme.",
     "For positive $z$, raising $z$ to the second power, then to the third, and finally taking the principal square root of the result yields $z$ to the power $\\tfrac{5}{2}$.",
-    "For $p\\neq 0$, $(6p^{-1}-1)(6p^{-1}+1)=\\dfrac{36}{p^2}-1$.",
-    "For $r\\neq 0$, $(6r^{-1}-1)(6r^{-1}+1)=\\dfrac{1}{36r^2}-1$."
+    "For $p\\neq 0$, it holds that $(6p^{-1}-1)(6p^{-1}+1)=\\dfrac{36}{p^2}-1$.",
+    "For $r\\neq 0$, it holds that $(6r^{-1}-1)(6r^{-1}+1)=\\dfrac{1}{36r^2}-1$."
    ],
    "answer_key": [
     false,
@@ -2468,10 +2468,10 @@
    "title": "Like surds collected after extracting squares",
    "subsection": "2.3",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "If $a>0$, then $\\dfrac{a^{2/3}\\cdot\\sqrt[3]{a\\sqrt{a}}}{a^{1/6}\\cdot\\sqrt[6]{a^5}}=\\sqrt[6]{a}$.",
-    "For $t\\neq 0$, $(2t^{-1}-1)(2t^{-1}+1)=\\dfrac{1}{4t^2}-1$.",
+    "For $t\\neq 0$, it holds that $(2t^{-1}-1)(2t^{-1}+1)=\\dfrac{1}{4t^2}-1$.",
     "Extracting $\\sqrt{32}=4\\sqrt{2}$ as a positive square root.",
     "writes $\\sqrt{45}-\\sqrt{20}=\\sqrt{25}$ as positive roots.",
     "Taking positive roots, $\\sqrt{8}+\\sqrt{18}$ is rewritten as $5\\sqrt{2}$."
@@ -2500,13 +2500,13 @@
    "title": "A negative exponent swapping a quotient",
    "subsection": "2.3",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields $k$ to the power $\\tfrac{5}{2}$.",
-    "For $r\\neq 0$, $(6r^{-1}-1)(6r^{-1}+1)=\\dfrac{36}{r^2}-1$.",
+    "For $r\\neq 0$, it holds that $(6r^{-1}-1)(6r^{-1}+1)=\\dfrac{36}{r^2}-1$.",
     "Whenever $u,v>0$, treating $(u/v)^{4}=u^{4}/v^{4}$.",
     "If $g>0$, then $\\dfrac{g^{2/3}\\cdot\\sqrt[3]{g\\sqrt{g}}}{g^{1/6}\\cdot\\sqrt[6]{g^5}}=\\sqrt[6]{g}$.",
-    "For $t\\neq 0$, $(7t^{-1}-1)(7t^{-1}+1)=\\dfrac{1}{49t^2}-1$."
+    "For $t\\neq 0$, it holds that $(7t^{-1}-1)(7t^{-1}+1)=\\dfrac{1}{49t^2}-1$."
    ],
    "answer_key": [
     false,
@@ -2532,10 +2532,10 @@
    "title": "Cube roots split over products only",
    "subsection": "2.3",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The cube-root product $\\sqrt[3]{2}\\sqrt[3]{4}$ is rewritten as $2$ in the reals.",
-    "For $k\\neq 0$, $(6k^{-1}-1)(6k^{-1}+1)=\\dfrac{1}{36k^2}-1$.",
+    "For $k\\neq 0$, it holds that $(6k^{-1}-1)(6k^{-1}+1)=\\dfrac{1}{36k^2}-1$.",
     "If $e>0$, then $\\dfrac{e^{2/3}\\cdot\\sqrt[3]{e\\sqrt{e}}}{e^{1/6}\\cdot\\sqrt[6]{e^5}}=\\sqrt[3]{e}$.",
     "writes $\\sqrt[3]{24}=8\\sqrt[3]{3}$ in the reals.",
     "Factoring $\\sqrt[3]{32}$ as $4\\sqrt[3]{2}$ equals valid."
@@ -2564,13 +2564,13 @@
    "title": "Several fractional exponents on one letter",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $x\\neq 0$, $(3x^{-1}-1)(3x^{-1}+1)=\\dfrac{9}{x^2}-1$.",
+    "For $x\\neq 0$, it holds that $(3x^{-1}-1)(3x^{-1}+1)=\\dfrac{9}{x^2}-1$.",
     "If $j>0$, then $\\dfrac{j^{2/3}\\cdot\\sqrt[3]{j\\sqrt{j}}}{j^{1/6}\\cdot\\sqrt[6]{j^5}}=\\sqrt[6]{j}$.",
-    "For $k\\neq 0$, $(7k^{-1}-1)(7k^{-1}+1)=\\dfrac{1}{49k^2}-1$.",
-    "For $m>0$, $(m^2)^3=m^5$.",
-    "For $k\\neq 0$, $(5k^{-1}-1)(5k^{-1}+1)=\\dfrac{25}{k^2}-1$."
+    "For $k\\neq 0$, it holds that $(7k^{-1}-1)(7k^{-1}+1)=\\dfrac{1}{49k^2}-1$.",
+    "For $m>0$, it holds that $(m^2)^3=m^5$.",
+    "For $k\\neq 0$, it holds that $(5k^{-1}-1)(5k^{-1}+1)=\\dfrac{25}{k^2}-1$."
    ],
    "answer_key": [
     true,
@@ -2596,13 +2596,13 @@
    "title": "Denesting a nested radical by the wrong conjugate",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $r>0$, $(r^2)^3=r^5$.",
+    "For $r>0$, it holds that $(r^2)^3=r^5$.",
     "Squaring $\\sqrt{5}+\\sqrt{3}$ equals $8+2\\sqrt{15}$ in the positive reals.",
     "For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields $a$ to the power $\\tfrac{5}{2}$.",
-    "For $x\\neq 0$, $(8x^{-1}-1)(8x^{-1}+1)=\\dfrac{64}{x^2}-1$.",
-    "For $t>0$, $(t^{2})^{1/2}=t$."
+    "For $x\\neq 0$, it holds that $(8x^{-1}-1)(8x^{-1}+1)=\\dfrac{64}{x^2}-1$.",
+    "For $t>0$, it holds that $(t^{2})^{1/2}=t$."
    ],
    "answer_key": [
     false,
@@ -2628,12 +2628,12 @@
    "title": "Rationalising by the conjugate of the other binomial",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "For positive $b$, raising $b$ to the second power, then to the third, and finally taking the principal square root of the result yields $b$ to the power $\\tfrac{5}{2}$.",
-    "For $k\\neq 0$, $(4k^{-1}-1)(4k^{-1}+1)=\\dfrac{1}{16k^2}-1$.",
-    "For $x\\neq 0$, $(5x^{-1}-1)(5x^{-1}+1)=\\dfrac{25}{x^2}-1$.",
-    "For $v\\neq 0$, $(3v^{-1}-1)(3v^{-1}+1)=\\dfrac{1}{9v^2}-1$.",
+    "For $k\\neq 0$, it holds that $(4k^{-1}-1)(4k^{-1}+1)=\\dfrac{1}{16k^2}-1$.",
+    "For $x\\neq 0$, it holds that $(5x^{-1}-1)(5x^{-1}+1)=\\dfrac{25}{x^2}-1$.",
+    "For $v\\neq 0$, it holds that $(3v^{-1}-1)(3v^{-1}+1)=\\dfrac{1}{9v^2}-1$.",
     "On the positive denominator $\\sqrt{5}-1$, the unit $1/(\\sqrt{5}-1)$ is rewritten as $(\\sqrt{5}+1)/4$."
    ],
    "answer_key": [
@@ -2660,13 +2660,13 @@
    "title": "A binomial square of a root and its reciprocal",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "On $x>0$, expanding $\\bigl(\\sqrt{x}-x^{-1/2}\\bigr)^{2}$ equals $x+1/x$ with the cross term omitted.",
-    "For $c\\neq 0$, $c^{2}/c^{0}=c^2$.",
-    "For $f>0$, $(f^{3})^{1/3}=f$.",
+    "For $c\\neq 0$, it holds that $c^{2}/c^{0}=c^2$.",
+    "For $f>0$, it holds that $(f^{3})^{1/3}=f$.",
     "For positive $z$, raising $z$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $z$.",
-    "For $k\\neq 0$, $(3k^{-1}-1)(3k^{-1}+1)=\\dfrac{9}{k^2}-1$."
+    "For $k\\neq 0$, it holds that $(3k^{-1}-1)(3k^{-1}+1)=\\dfrac{9}{k^2}-1$."
    ],
    "answer_key": [
     false,
@@ -2692,13 +2692,13 @@
    "title": "Rewriting a new base from a given power",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Given $2^{k}=5$, rewrites $4^{k}$ as $25$ without solving for $k$.",
     "If $g>0$, then $\\dfrac{g^{2/3}\\cdot\\sqrt[3]{g\\sqrt{g}}}{g^{1/6}\\cdot\\sqrt[6]{g^5}}=\\sqrt[3]{g}$.",
-    "For $v\\neq 0$, $(1v^{-1}-1)(1v^{-1}+1)=\\dfrac{1}{v^2}-1$.",
+    "For $v\\neq 0$, it holds that $(1v^{-1}-1)(1v^{-1}+1)=\\dfrac{1}{v^2}-1$.",
     "For positive $a$, raising $a$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $a$.",
-    "For $h\\neq 0$, $(1h^{-1}-1)(1h^{-1}+1)=\\dfrac{1}{1h^2}-1$."
+    "For $h\\neq 0$, it holds that $(1h^{-1}-1)(1h^{-1}+1)=\\dfrac{1}{1h^2}-1$."
    ],
    "answer_key": [
     true,
@@ -2724,12 +2724,12 @@
    "title": "Distributing an outer exponent across two letters",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $s\\neq 0$, $(3s^{-1}-1)(3s^{-1}+1)=\\dfrac{1}{9s^2}-1$.",
+    "For $s\\neq 0$, it holds that $(3s^{-1}-1)(3s^{-1}+1)=\\dfrac{1}{9s^2}-1$.",
     "claims $(a^{m})^{k}=a^{m+k}$ identically for $a>0$.",
     "Whenever $c,d>0$, treating $(c^{2}d^{3})^{4}$ as $c^{8}d^{12}$.",
-    "For $h>0$, $(h^2)^3=h^5$.",
+    "For $h>0$, it holds that $(h^2)^3=h^5$.",
     "If $m>0$, then $\\dfrac{m^{2/3}\\cdot\\sqrt[3]{m\\sqrt{m}}}{m^{1/6}\\cdot\\sqrt[6]{m^5}}=\\sqrt[6]{m}$."
    ],
    "answer_key": [
@@ -2756,12 +2756,12 @@
    "title": "Fractional powers of twelve, twenty-seven, and thirty-two",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $n\\neq 0$, $(1n^{-1}-1)(1n^{-1}+1)=\\dfrac{1}{n^2}-1$.",
+    "For $n\\neq 0$, it holds that $(1n^{-1}-1)(1n^{-1}+1)=\\dfrac{1}{n^2}-1$.",
     "Reducing $32^{3/5}$ to $4$ is treated as correct.",
-    "For $n\\neq 0$, $(3n^{-1}-1)(3n^{-1}+1)=\\dfrac{1}{9n^2}-1$.",
-    "For $s\\neq 0$, $(2s^{-1}-1)(2s^{-1}+1)=\\dfrac{4}{s^2}-1$.",
+    "For $n\\neq 0$, it holds that $(3n^{-1}-1)(3n^{-1}+1)=\\dfrac{1}{9n^2}-1$.",
+    "For $s\\neq 0$, it holds that $(2s^{-1}-1)(2s^{-1}+1)=\\dfrac{4}{s^2}-1$.",
     "For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields $n$ to the power $\\tfrac{5}{2}$."
    ],
    "answer_key": [
@@ -2788,10 +2788,10 @@
    "title": "Rewriting four, eight, and thirty-two as powers of two",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "For positive $p$, raising $p$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $p$.",
-    "For $u\\neq 0$, $(1u^{-1}-1)(1u^{-1}+1)=\\dfrac{1}{1u^2}-1$.",
+    "For $u\\neq 0$, it holds that $(1u^{-1}-1)(1u^{-1}+1)=\\dfrac{1}{1u^2}-1$.",
     "Reducing $2^{m+n}4^{m-n}/8^{m}$ to $2^{-n}$ for integers $m,n$ equals valid.",
     "Someone writes $32^{k}=2^{k+5}$ for every integer $k$.",
     "On integer $n$, rewriting $4^{n}/2^{n}=2^{n}$."
@@ -2820,13 +2820,13 @@
    "title": "Fourth roots of even powers",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $u\\neq 0$, $(3u^{-1}-1)(3u^{-1}+1)=\\dfrac{1}{9u^2}-1$.",
-    "For $n\\neq 0$, $(4n^{-1}-1)(4n^{-1}+1)=\\dfrac{16}{n^2}-1$.",
+    "For $u\\neq 0$, it holds that $(3u^{-1}-1)(3u^{-1}+1)=\\dfrac{1}{9u^2}-1$.",
+    "For $n\\neq 0$, it holds that $(4n^{-1}-1)(4n^{-1}+1)=\\dfrac{16}{n^2}-1$.",
     "writes $\\sqrt[4]{x^{4}}=x^{2}$ for every $x>0$.",
     "For positive $p$, raising $p$ to the second power, then to the third, and finally taking the principal square root of the result yields $p$ to the power $\\tfrac{5}{2}$.",
-    "For $w\\neq 0$, $(1w^{-1}-1)(1w^{-1}+1)=\\dfrac{1}{w^2}-1$."
+    "For $w\\neq 0$, it holds that $(1w^{-1}-1)(1w^{-1}+1)=\\dfrac{1}{w^2}-1$."
    ],
    "answer_key": [
     false,
@@ -2852,12 +2852,12 @@
    "title": "A minus sign stranded in a denominator",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Working with $a,b\\neq 0$, the quotient $a^{5}b^{-3}/(a^{-2}b^{4})$ equals $a^{7}/b^{7}$.",
     "For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields $t$ to the power $\\tfrac{5}{2}$.",
-    "For $n\\neq 0$, $(8n^{-1}-1)(8n^{-1}+1)=\\dfrac{64}{n^2}-1$.",
-    "For $h>0$, $(h^2)^3=h^5$ (variant 1).",
+    "For $n\\neq 0$, it holds that $(8n^{-1}-1)(8n^{-1}+1)=\\dfrac{64}{n^2}-1$.",
+    "For $h>0$, it holds that $(h^2)^3=h^5$ (variant 1).",
     "Provided $f\\neq 0$, inverting $1/f^{-5}$ is rewritten as $f^{5}$."
    ],
    "answer_key": [
@@ -2884,12 +2884,12 @@
    "title": "Stacked roots multiplying reciprocal exponents",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $p\\neq 0$, $(5p^{-1}-1)(5p^{-1}+1)=\\dfrac{1}{25p^2}-1$.",
+    "For $p\\neq 0$, it holds that $(5p^{-1}-1)(5p^{-1}+1)=\\dfrac{1}{25p^2}-1$.",
     "For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields $q$ to the power $\\tfrac{5}{2}$.",
-    "For $h\\neq 0$, $(5h^{-1}-1)(5h^{-1}+1)=\\dfrac{25}{h^2}-1$.",
-    "For $m>0$, $(m^2)^3=m^5$ (variant 3).",
+    "For $h\\neq 0$, it holds that $(5h^{-1}-1)(5h^{-1}+1)=\\dfrac{25}{h^2}-1$.",
+    "For $m>0$, it holds that $(m^2)^3=m^5$ (variant 3).",
     "For positive $k$, raising $k$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $k$."
    ],
    "answer_key": [
@@ -2916,12 +2916,12 @@
    "title": "Conjugate surds multiplying to a difference of radicands",
    "subsection": "2.3",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The numerical product $(\\sqrt{5}+\\sqrt{3})(\\sqrt{5}-\\sqrt{3})$ equals $2$ in the positive reals.",
-    "For $c>0$, $(c^2)^3=c^5$ (variant 1).",
+    "For $c>0$, it holds that $(c^2)^3=c^5$ (variant 1).",
     "If $p>0$, then $\\dfrac{p^{2/3}\\cdot\\sqrt[3]{p\\sqrt{p}}}{p^{1/6}\\cdot\\sqrt[6]{p^5}}=\\sqrt[3]{p}$.",
-    "For $p\\neq 0$, $(4p^{-1}-1)(4p^{-1}+1)=\\dfrac{16}{p^2}-1$.",
+    "For $p\\neq 0$, it holds that $(4p^{-1}-1)(4p^{-1}+1)=\\dfrac{16}{p^2}-1$.",
     "On $p,q\\ge 0$, $(\\sqrt{p}+\\sqrt{q})^{2}=p+q+2\\sqrt{pq}$ is printed as valid."
    ],
    "answer_key": [
@@ -2948,13 +2948,13 @@
    "title": "A sixth power in the numerator against a squared denominator",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $r\\neq 0$, $(2r^{-1}-1)(2r^{-1}+1)=\\dfrac{4}{r^2}-1$.",
-    "For $t\\neq 0$, $(7t^{-1}-1)(7t^{-1}+1)=\\dfrac{49}{t^2}-1$.",
+    "For $r\\neq 0$, it holds that $(2r^{-1}-1)(2r^{-1}+1)=\\dfrac{4}{r^2}-1$.",
+    "For $t\\neq 0$, it holds that $(7t^{-1}-1)(7t^{-1}+1)=\\dfrac{49}{t^2}-1$.",
     "For positive $n$, raising $n$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $n$.",
-    "For $w\\neq 0$, $(7w^{-1}-1)(7w^{-1}+1)=\\dfrac{1}{49w^2}-1$.",
-    "For $x\\neq 0$, $x^{8}/x^{6}=x^2$."
+    "For $w\\neq 0$, it holds that $(7w^{-1}-1)(7w^{-1}+1)=\\dfrac{1}{49w^2}-1$.",
+    "For $x\\neq 0$, it holds that $x^{8}/x^{6}=x^2$."
    ],
    "answer_key": [
     true,
@@ -2980,13 +2980,13 @@
    "title": "Independent traps from nested roots to given powers",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $r>0$, $(r^2)^3=r^5$ (variant 1).",
-    "For $c\\neq 0$, $c^{3}/c^{1}=c^2$.",
+    "For $r>0$, it holds that $(r^2)^3=r^5$ (variant 1).",
+    "For $c\\neq 0$, it holds that $c^{3}/c^{1}=c^2$.",
     "Working with $x>0$, the expansion of $\\bigl(\\sqrt{x}-x^{-1/2}\\bigr)^{2}$ equals $x-2+1/x$.",
-    "For $r\\neq 0$, $(7r^{-1}-1)(7r^{-1}+1)=\\dfrac{49}{r^2}-1$.",
-    "For $t\\neq 0$, $(6t^{-1}-1)(6t^{-1}+1)=\\dfrac{1}{36t^2}-1$."
+    "For $r\\neq 0$, it holds that $(7r^{-1}-1)(7r^{-1}+1)=\\dfrac{49}{r^2}-1$.",
+    "For $t\\neq 0$, it holds that $(6t^{-1}-1)(6t^{-1}+1)=\\dfrac{1}{36t^2}-1$."
    ],
    "answer_key": [
     false,
@@ -3012,13 +3012,13 @@
    "title": "A powered monomial quotient in two letters",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The quotient identity $(a^{m}b^{n})^{k}/(a^{n}b^{m})^{k}=(a/b)^{k(m-n)}$ holds for $a,b>0$.",
     "For positive $q$, raising $q$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $q$.",
-    "For $h\\neq 0$, $(5h^{-1}-1)(5h^{-1}+1)=\\dfrac{1}{25h^2}-1$.",
+    "For $h\\neq 0$, it holds that $(5h^{-1}-1)(5h^{-1}+1)=\\dfrac{1}{25h^2}-1$.",
     "If $p>0$, then $\\dfrac{p^{2/3}\\cdot\\sqrt[3]{p\\sqrt{p}}}{p^{1/6}\\cdot\\sqrt[6]{p^5}}=\\sqrt[6]{p}$.",
-    "For $r\\neq 0$, $(2r^{-1}-1)(2r^{-1}+1)=\\dfrac{1}{4r^2}-1$."
+    "For $r\\neq 0$, it holds that $(2r^{-1}-1)(2r^{-1}+1)=\\dfrac{1}{4r^2}-1$."
    ],
    "answer_key": [
     true,
@@ -3044,11 +3044,11 @@
    "title": "Nested radicals rewritten as a single rational power",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $r\\neq 0$, $(1r^{-1}-1)(1r^{-1}+1)=\\dfrac{1}{1r^2}-1$.",
+    "For $r\\neq 0$, it holds that $(1r^{-1}-1)(1r^{-1}+1)=\\dfrac{1}{1r^2}-1$.",
     "A three-storey cube nest $\\sqrt[3]{y\\sqrt[3]{y\\sqrt[3]{y}}}$ equals $y^{13/27}$ on $y>0$.",
-    "For $f>0$, $(f^2)^3=f^5$.",
+    "For $f>0$, it holds that $(f^2)^3=f^5$.",
     "Stacking $\\sqrt[4]{w^{2}}$ as $w^{1/2}$ for $w>0$.",
     "For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $h$."
    ],
@@ -3076,13 +3076,13 @@
    "title": "Cancelling one conjugate factor, not two",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For $m\\neq 0$, $(3m^{-1}-1)(3m^{-1}+1)=\\dfrac{1}{9m^2}-1$.",
-    "For $p>0$, $(p^2)^3=p^5$ (variant 2).",
+    "For $m\\neq 0$, it holds that $(3m^{-1}-1)(3m^{-1}+1)=\\dfrac{1}{9m^2}-1$.",
+    "For $p>0$, it holds that $(p^2)^3=p^5$ (variant 2).",
     "For positive $w$, raising $w$ to the second power, then to the third, and finally taking the principal square root of the result yields $w$ to the power $\\tfrac{5}{2}$.",
-    "For $x\\neq 0$, $(1x^{-1}-1)(1x^{-1}+1)=\\dfrac{1}{x^2}-1$.",
-    "For $w\\neq 0$, $(6w^{-1}-1)(6w^{-1}+1)=\\dfrac{1}{36w^2}-1$."
+    "For $x\\neq 0$, it holds that $(1x^{-1}-1)(1x^{-1}+1)=\\dfrac{1}{x^2}-1$.",
+    "For $w\\neq 0$, it holds that $(6w^{-1}-1)(6w^{-1}+1)=\\dfrac{1}{36w^2}-1$."
    ],
    "answer_key": [
     false,
@@ -3108,12 +3108,12 @@
    "title": "Multiplying, stacking, and dividing exponents on one base",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $c>0$, then $\\dfrac{c^{2/3}\\cdot\\sqrt[3]{c\\sqrt{c}}}{c^{1/6}\\cdot\\sqrt[6]{c^5}}=\\sqrt[6]{c}$.",
-    "For $k\\neq 0$, $(2k^{-1}-1)(2k^{-1}+1)=\\dfrac{1}{4k^2}-1$.",
+    "For $k\\neq 0$, it holds that $(2k^{-1}-1)(2k^{-1}+1)=\\dfrac{1}{4k^2}-1$.",
     "A rational-power identity $(x^{m/n})^{n}=x^{m}$ holds for $x>0$ and $n\\neq 0$.",
-    "For $h>0$, $(h^2)^3=h^5$ (variant 2).",
+    "For $h>0$, it holds that $(h^2)^3=h^5$ (variant 2).",
     "Three powers multiplying, $t^{m}t^{n}t^{-m-n}=1$ for $t>0$."
    ],
    "answer_key": [
@@ -3140,13 +3140,13 @@
    "title": "A mixed sheet of roots, conjugates, and a missing two",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "For positive $t$, raising $t$ to the second power, then to the third, and finally taking the principal square root of the result yields the cube of $t$.",
-    "For $w\\neq 0$, $(6w^{-1}-1)(6w^{-1}+1)=\\dfrac{36}{w^2}-1$.",
+    "For $w\\neq 0$, it holds that $(6w^{-1}-1)(6w^{-1}+1)=\\dfrac{36}{w^2}-1$.",
     "Rationalising $3/(\\sqrt{5}-1)$ equals $3(\\sqrt{5}+1)/4$.",
     "If $j>0$, then $\\dfrac{j^{2/3}\\cdot\\sqrt[3]{j\\sqrt{j}}}{j^{1/6}\\cdot\\sqrt[6]{j^5}}=\\sqrt[3]{j}$.",
-    "For $n\\neq 0$, $(2n^{-1}-1)(2n^{-1}+1)=\\dfrac{4}{n^2}-1$."
+    "For $n\\neq 0$, it holds that $(2n^{-1}-1)(2n^{-1}+1)=\\dfrac{4}{n^2}-1$."
    ],
    "answer_key": [
     true,
@@ -3172,13 +3172,13 @@
    "title": "Adding reciprocal powers is not multiplying them",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Adding $x^{-1}+x^{-2}$ for $x\\neq 0$ equals $(x+1)/x^{2}$.",
-    "For $x\\neq 0$, $(6x^{-1}-1)(6x^{-1}+1)=\\dfrac{1}{36x^2}-1$.",
-    "For $v\\neq 0$, $(5v^{-1}-1)(5v^{-1}+1)=\\dfrac{25}{v^2}-1$.",
-    "For $h>0$, $(h^2)^3=h^5$ (variant 3).",
-    "For $t>0$, $(t^2)^3=t^5$ (variant 1)."
+    "For $x\\neq 0$, it holds that $(6x^{-1}-1)(6x^{-1}+1)=\\dfrac{1}{36x^2}-1$.",
+    "For $v\\neq 0$, it holds that $(5v^{-1}-1)(5v^{-1}+1)=\\dfrac{25}{v^2}-1$.",
+    "For $h>0$, it holds that $(h^2)^3=h^5$ (variant 3).",
+    "For $t>0$, it holds that $(t^2)^3=t^5$ (variant 1)."
    ],
    "answer_key": [
     true,
@@ -3204,13 +3204,13 @@
    "title": "Changing bases inside a stacked fractional power",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $w\\neq 0$, $(2w^{-1}-1)(2w^{-1}+1)=\\dfrac{4}{w^2}-1$.",
+    "For $w\\neq 0$, it holds that $(2w^{-1}-1)(2w^{-1}+1)=\\dfrac{4}{w^2}-1$.",
     "If $m>0$, then $\\dfrac{m^{2/3}\\cdot\\sqrt[3]{m\\sqrt{m}}}{m^{1/6}\\cdot\\sqrt[6]{m^5}}=\\sqrt[3]{m}$.",
-    "For $x\\neq 0$, $(7x^{-1}-1)(7x^{-1}+1)=\\dfrac{1}{49x^2}-1$.",
-    "For $m>0$, $(m^2)^3=m^5$ (variant 6).",
-    "For $u\\neq 0$, $(6u^{-1}-1)(6u^{-1}+1)=\\dfrac{36}{u^2}-1$."
+    "For $x\\neq 0$, it holds that $(7x^{-1}-1)(7x^{-1}+1)=\\dfrac{1}{49x^2}-1$.",
+    "For $m>0$, it holds that $(m^2)^3=m^5$ (variant 6).",
+    "For $u\\neq 0$, it holds that $(6u^{-1}-1)(6u^{-1}+1)=\\dfrac{36}{u^2}-1$."
    ],
    "answer_key": [
     true,
@@ -3236,13 +3236,13 @@
    "title": "Exam leftover traps from powers and nested roots",
    "subsection": "2.3",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "A leftover nested form, $\\sqrt{x^{3}}=x^{3/2}$ on $x>0$.",
-    "For $c\\neq 0$, $c^{8}/c^{6}=c^2$.",
+    "For $c\\neq 0$, it holds that $c^{8}/c^{6}=c^2$.",
     "For positive $h$, raising $h$ to the second power, then to the third, and finally taking the principal square root of the result yields $h$ to the power $\\tfrac{5}{2}$.",
-    "For $w\\neq 0$, $(7w^{-1}-1)(7w^{-1}+1)=\\dfrac{49}{w^2}-1$.",
-    "For $t>0$, $(t^2)^3=t^5$ (variant 2)."
+    "For $w\\neq 0$, it holds that $(7w^{-1}-1)(7w^{-1}+1)=\\dfrac{49}{w^2}-1$.",
+    "For $t>0$, it holds that $(t^2)^3=t^5$ (variant 2)."
    ],
    "answer_key": [
     true,
@@ -3268,13 +3268,13 @@
    "title": "Warm-up: definition of absolute value",
    "subsection": "2.4",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Nonnegativity: for every real $x$, $|x|\\ge 0$.",
     "Negating the input, for every real $t$, $|-t|=|t|$.",
-    "For every real $a$, $|a|=|-a|$.",
+    "For every real $a$, it holds that $|a|=|-a|$.",
     "Equating $|x|=-x$ for every real $x$ is false.",
-    "For every real $k$, $|k|=0$ if and only if $k=0$."
+    "For every real $k$, it holds that $|k|=0$ if and only if $k=0$."
    ],
    "answer_key": [
     true,
@@ -3300,12 +3300,12 @@
    "title": "Warm-up: absolute value of a product",
    "subsection": "2.4",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Products split under bars: for every real pair $(a,b)$, $|ab|=|a|\\,|b|$.",
     "Pulling out a factor of two, $|2x|=2|x|$ for every real $x$.",
     "Independently, $|pq|=|p|\\,|q|$ for every real pair $(p,q)$.",
-    "For every real $t$, $|-3t|=3t$ is false.",
+    "For every real $t$, it holds that $|-3t|=3t$ is false.",
     "Squares are transparent: for every real $m$, $|m^2|=m^2$."
    ],
    "answer_key": [
@@ -3332,13 +3332,13 @@
    "title": "Warm-up: piecewise distance on an interval",
    "subsection": "2.4",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "On the interval $1\\le x\\le 5$, $|x-1|+|5-x|=4$.",
     "When $0\\le t\\le 7$, the sum $|t|+|7-t|$ equals $7$.",
     "Throughout $2\\le k\\le 8$, $|k-2|+|8-k|=6$.",
     "On $1\\le x\\le 5$, the claim $|x-1|+|5-x|=5$ is false.",
-    "For $3\\le p\\le 9$, $|p-3|+|9-p|=6$."
+    "For $3\\le p\\le 9$, it holds that $|p-3|+|9-p|=6$."
    ],
    "answer_key": [
     true,
@@ -3364,13 +3364,13 @@
    "title": "Warm-up: quadratic under absolute value bars",
    "subsection": "2.4",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Factoring under bars: for every real $x$, $|x^2-4|=|(x-2)(x+2)|$.",
-    "For every real $t$, $|t^2-9|=|t-3|\\,|t+3|$.",
+    "For every real $t$, it holds that $|t^2-9|=|t-3|\\,|t+3|$.",
     "A perfect square inside bars: $|x^2-2x+1|=(x-1)^2$ for every real $x$.",
     "Dropping the bars on factors makes $|x^2-4|=(x-2)(x+2)$ false for real $x$.",
-    "For every real $w$, $|w^2-16|=|w-4|\\,|w+4|$."
+    "For every real $w$, it holds that $|w^2-16|=|w-4|\\,|w+4|$."
    ],
    "answer_key": [
     true,
@@ -3396,12 +3396,12 @@
    "title": "Piecewise rewrite then a leftover constant",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $r,s\\neq 0$, $\\dfrac{2}{r}+\\dfrac{9}{s}=\\dfrac{2s+9r}{rs}$.",
+    "For $r,s\\neq 0$, it holds that $\\dfrac{2}{r}+\\dfrac{9}{s}=\\dfrac{2s+9r}{rs}$.",
     "For every real $u$, dropping the bars in $|2u+1|=2u+1$ is treated as legal.",
-    "For $u,v\\neq 0$ and $u\\neq -v$, $\\dfrac{3}{u}+\\dfrac{7}{v}=\\dfrac{3v+7u}{u+v}$.",
-    "For every real $x$ with $1\\le x\\le 7$, $|x-1|+|7-x|=6$.",
+    "For $u,v\\neq 0$ and $u\\neq -v$, it holds that $\\dfrac{3}{u}+\\dfrac{7}{v}=\\dfrac{3v+7u}{u+v}$.",
+    "For every real $x$ with $1\\le x\\le 7$, it holds that $|x-1|+|7-x|=6$.",
     "On $1\\le k\\le 6$, rewriting $|k-1|+|k-6|$ as the constant $5$ is proposed."
    ],
    "answer_key": [
@@ -3428,13 +3428,13 @@
    "title": "Principal roots versus dropped bars",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "For every real $n$, the identity $\\sqrt{n^2}=|n|$ is recorded.",
-    "For every real $x$, $|x-0|+|x-5|=5$.",
+    "For every real $x$, it holds that $|x-0|+|x-5|=5$.",
     "Whenever $u<0$, replacing $\\sqrt{u^2}$ by $u$ is treated as valid.",
-    "For $x,y\\neq 0$, $\\dfrac{2}{x}+\\dfrac{3}{y}=\\dfrac{2y+3x}{xy}$.",
-    "For every real $x$, $|x+2|=x+2$."
+    "For $x,y\\neq 0$, it holds that $\\dfrac{2}{x}+\\dfrac{3}{y}=\\dfrac{2y+3x}{xy}$.",
+    "For every real $x$, it holds that $|x+2|=x+2$."
    ],
    "answer_key": [
     true,
@@ -3460,12 +3460,12 @@
    "title": "Sign of a letter over its modulus",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Taking the quotient $|n|/n$ whenever $n>0$ equals $1$.",
-    "For every real $x$, $|x^2-8x+7|=(x-1)(x-7)$.",
+    "For every real $x$, it holds that $|x^2-8x+7|=(x-1)(x-7)$.",
     "Without an interval, $|x-1|+|1-x|=2$ is false for every real $x$.",
-    "For every real $k$, $|k|+|{-k}|=2|k|$.",
+    "For every real $k$, it holds that $|k|+|{-k}|=2|k|$.",
     "Unrestricted in $x$, $|x-2|+|x-7|=5$ is stated for every real $x$."
    ],
    "answer_key": [
@@ -3492,13 +3492,13 @@
    "title": "Scaling a letter is not adding a constant",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $p$, $|p^2-1|=|p-1|\\,|p+1|$.",
+    "For every real $p$, it holds that $|p^2-1|=|p-1|\\,|p+1|$.",
     "The companion identity $|n+k|=|n|+|k|$ is written for all real $n$ and $k$.",
-    "For every real $x$, $|x^2-7x+10|=(x-2)(x-5)$.",
+    "For every real $x$, it holds that $|x^2-7x+10|=(x-2)(x-5)$.",
     "Scaling by minus four, $|-4u|=-4|u|$ is asserted.",
-    "For every real $x$, $|x^2-7x+12|=|x-3|\\,|x-4|$."
+    "For every real $x$, it holds that $|x^2-7x+12|=|x-3|\\,|x-4|$."
    ],
    "answer_key": [
     true,
@@ -3524,11 +3524,11 @@
    "title": "Nested bars collapse, a minus does not",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $x$, $|x^2-8x+7|=|x-1|\\,|x-7|$.",
-    "For every real $x$, $|x^2-4x+4|=(x-2)^2$.",
-    "For every real $x$ with $3\\le x\\le 9$, $|x-3|+|9-x|=6$.",
+    "For every real $x$, it holds that $|x^2-8x+7|=|x-1|\\,|x-7|$.",
+    "For every real $x$, it holds that $|x^2-4x+4|=(x-2)^2$.",
+    "For every real $x$ with $3\\le x\\le 9$, it holds that $|x-3|+|9-x|=6$.",
     "The swap $|z-4|=|4-z|$ is used as an identity.",
     "For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $7$ equals the length of the segment from $1$ to $7$."
    ],
@@ -3556,12 +3556,12 @@
    "title": "Copying a nonnegative inside then a vanishing difference",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $x$, $|x^2-7x+10|=|x-2|\\,|x-5|$.",
+    "For every real $x$, it holds that $|x^2-7x+10|=|x-2|\\,|x-5|$.",
     "On the half-line $u<0$, flipping $|u|$ to $-u$ and then adding $u$ equals $0$.",
     "For every real $z$, the identity $|z|=z$ is printed, so $|z|-z$ is declared identically $0$.",
-    "For every real $x$ with $2\\le x\\le 7$, $|x-2|+|7-x|=5$.",
+    "For every real $x$ with $2\\le x\\le 7$, it holds that $|x-2|+|7-x|=5$.",
     "Dropping the minus unconditionally, someone writes $|k|=-k$ and concludes $|k|+k=0$ on the whole line."
    ],
    "answer_key": [
@@ -3588,7 +3588,7 @@
    "title": "Distance to five different marks",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Without an interval restriction, the sum of distances from a real point to $2$ and to $8$ equals the segment length from $2$ to $8$.",
     "Unrestricted in $x$, $|x-1|+|x-7|=6$.",
@@ -3620,13 +3620,13 @@
    "title": "Products and quotients of bars, never a sum",
    "subsection": "2.4",
    "difficulty_level": "3/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $w$ and $u$, $|wu|=|w||u|$ is used, so $|(-4)u|=4|u|$.",
+    "For every real $w$ and $u$, it holds that $|wu|=|w||u|$ is used, so $|(-4)u|=4|u|$.",
     "For every real point (with no restriction to an interval), the sum of its distances to $4$ and to $10$ equals the length of the segment from $4$ to $10$.",
     "Replacing $|k+n|$ by $|k|+|n|$ as a product-style identity, so $|8+(-4)|$ equals $12$.",
     "Someone writes $|n/k|=n/k$ whenever $k\\neq 0$, hence $|-8/4|$ is entered as $-2$.",
-    "For every real $x$ with $2\\le x\\le 8$, $|x-2|+|8-x|=6$."
+    "For every real $x$ with $2\\le x\\le 8$, it holds that $|x-2|+|8-x|=6$."
    ],
    "answer_key": [
     true,
@@ -3652,13 +3652,13 @@
    "title": "Opposite linear factors, five different pairs",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
     "Whenever $w<4$, the quotient $|w-4|/(4-w)$ equals $1$.",
-    "For $a,b\\neq 0$, $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{1b+1a}{ab}$.",
-    "For every real $x$ with $5\\le x\\le 11$, $|x-5|+|11-x|=6$.",
+    "For $a,b\\neq 0$, it holds that $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{1b+1a}{ab}$.",
+    "For every real $x$ with $5\\le x\\le 11$, it holds that $|x-5|+|11-x|=6$.",
     "Away from $h=7$, because $7-h=-(h-7)$, the fraction $|h-7|/(7-h)$ equals $-\\dfrac{|h-7|}{h-7}$.",
-    "For every real $x$, $|x^2-10x+16|=(x-2)(x-8)$."
+    "For every real $x$, it holds that $|x^2-10x+16|=(x-2)(x-8)$."
    ],
    "answer_key": [
     true,
@@ -3684,11 +3684,11 @@
    "title": "Two distances on five different segments",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $x$ with $1\\le x\\le 6$, $|x-1|+|6-x|=5$.",
+    "For every real $x$ with $1\\le x\\le 6$, it holds that $|x-1|+|6-x|=5$.",
     "Extending the constant $5$ for $|u-1|+|u-6|$ to every real $u$ is proposed.",
-    "For every real $x$, $|2x-6|=2|x-3|$.",
+    "For every real $x$, it holds that $|2x-6|=2|x-3|$.",
     "Left of the knot $h<1$, the sum $|h-1|+|h-8|$ is rewritten as the constant $7$.",
     "Distance interpretation: on $[4,7]$ the marks $4$ and $7$ are $3$ units apart, so $|k-4|+|k-7|$ equals $3$ there."
    ],
@@ -3716,12 +3716,12 @@
    "title": "Root of a squared linear form, five insides",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $x$, $|x^2-7x+6|=|x-1|\\,|x-6|$.",
+    "For every real $x$, it holds that $|x^2-7x+6|=|x-1|\\,|x-6|$.",
     "The identity $\\sqrt{(u-1)^2}=|u-1|$ is recorded.",
-    "For every real $x$, $|x^2-10x+16|=|x-2|\\,|x-8|$.",
-    "For every real $x$ with $0\\le x\\le 5$, $|x-0|+|5-x|=5$.",
+    "For every real $x$, it holds that $|x^2-10x+16|=|x-2|\\,|x-8|$.",
+    "For every real $x$ with $0\\le x\\le 5$, it holds that $|x-0|+|5-x|=5$.",
     "Factoring $4$, $\\sqrt{(4n-4)^2}=4|n-1|$ is used."
    ],
    "answer_key": [
@@ -3748,12 +3748,12 @@
    "title": "Adding the letter after the root of its square",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $|r^2-36|=|r-6|\\,|r+6|$.",
-    "For every real $x$, $|x-1|+|x-6|=5$.",
+    "For every real $r$, it holds that $|r^2-36|=|r-6|\\,|r+6|$.",
+    "For every real $x$, it holds that $|x-1|+|x-6|=5$.",
     "On the positive half-line $u>0$ the sum $\\sqrt{u^2}+u$ equals $2u$.",
-    "For every real $x$, $|x^2-10x+21|=|x-3|\\,|x-7|$.",
+    "For every real $x$, it holds that $|x^2-10x+21|=|x-3|\\,|x-7|$.",
     "Whenever $h<0$, forming $\\sqrt{h^2}-h$ equals $0$."
    ],
    "answer_key": [
@@ -3780,13 +3780,13 @@
    "title": "Triangle inequality as a comparison",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $|a|=a$.",
-    "For every real $x$, $|x-2|+|x-8|=6$.",
-    "For every real $u$, $|u|=u$.",
+    "For every real $a$, it holds that $|a|=a$.",
+    "For every real $x$, it holds that $|x-2|+|x-8|=6$.",
+    "For every real $u$, it holds that $|u|=u$.",
     "Whenever a real point lies between $2$ and $8$ inclusive, the sum of its distances to $2$ and to $8$ equals the length of that segment.",
-    "For every real $x$ with $4\\le x\\le 10$, $|x-4|+|10-x|=6$."
+    "For every real $x$ with $4\\le x\\le 10$, it holds that $|x-4|+|10-x|=6$."
    ],
    "answer_key": [
     false,
@@ -3812,12 +3812,12 @@
    "title": "Linear pieces of a scaled inside then a leftover",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $|r^2-16|=|r-4|\\,|r+4|$.",
+    "For every real $r$, it holds that $|r^2-16|=|r-4|\\,|r+4|$.",
     "On the region $u<1$, $|4u-4|$ is rewritten as $4-4u$.",
-    "For every real $x$, $|x-3|+|x-9|=6$.",
-    "For every real $h$, $|h|=h$.",
+    "For every real $x$, it holds that $|x-3|+|x-9|=6$.",
+    "For every real $h$, it holds that $|h|=h$.",
     "Whenever a real point lies between $3$ and $9$ inclusive, the sum of its distances to $3$ and to $9$ equals the length of that segment."
    ],
    "answer_key": [
@@ -3844,13 +3844,13 @@
    "title": "A quadratic already a square, and neighbours",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $|a-1|+|a-7|=6$.",
+    "For every real $a$, it holds that $|a-1|+|a-7|=6$.",
     "claims $|u^2-2u+1|=0$ for every $u$.",
-    "For $h,k\\neq 0$, $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{hk}$, under the standing domain label $D_{1}$.",
+    "For $h,k\\neq 0$, it holds that $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{hk}$, under the standing domain label $D_{1}$.",
     "Someone writes $|h^2-14h+49|=h-7$ as an identity.",
-    "For every real $x$, $|4x-7|=4|x|-7$ when $x\\ge 7/4$."
+    "For every real $x$, it holds that $|4x-7|=4|x|-7$ when $x\\ge 7/4$."
    ],
    "answer_key": [
     false,
@@ -3876,12 +3876,12 @@
    "title": "Cubes inside bars versus cubes of bars",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Whenever a real point lies between $0$ and $5$ inclusive, the sum of its distances to $0$ and to $5$ equals the length of that segment.",
     "Someone replaces $|w^3|$ by $w^3$ for every real $w$.",
     "Whenever $u<0$, $|u^3|$ is rewritten as $-u^3$.",
-    "For every real $x$, $|x-1|+|x-7|=6$.",
+    "For every real $x$, it holds that $|x-1|+|x-7|=6$.",
     "Someone replaces $|h^2|$ by $h$ for every real $h$."
    ],
    "answer_key": [
@@ -3908,12 +3908,12 @@
    "title": "Reversed insides split by five breakpoints",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $h,k\\neq 0$ and $h\\neq -k$, $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+1h}{h+k}$.",
-    "For $a,b\\neq 0$, $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{ab}$, under the standing domain label $D_{1}$.",
+    "For $h,k\\neq 0$ and $h\\neq -k$, it holds that $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+1h}{h+k}$.",
+    "For $a,b\\neq 0$, it holds that $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{ab}$, under the standing domain label $D_{1}$.",
     "Writing $|6-z|=6-z$ as an unrestricted identity is proposed.",
-    "For every real $a$, $|a^2-7a+12|=(a-3)(a-4)$.",
+    "For every real $a$, it holds that $|a^2-7a+12|=(a-3)(a-4)$.",
     "The two pieces $8-k$ and $k-8$ are identical functions."
    ],
    "answer_key": [
@@ -3940,13 +3940,13 @@
    "title": "Homogeneity pulled out of bars",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $|r^2-9|=|r-3|\\,|r+3|$.",
+    "For every real $r$, it holds that $|r^2-9|=|r-3|\\,|r+3|$.",
     "For every real point (with no restriction to an interval), the sum of its distances to $3$ and to $9$ equals the length of the segment from $3$ to $9$.",
     "Pulling a negative scalar out unchanged, $|-6z|=-6|z|$ is asserted.",
     "Treating $|4h|$ as interchangeable with $|h|+4$ is proposed.",
-    "For every real $a$, $|a^2-10a+21|=(a-3)(a-7)$."
+    "For every real $a$, it holds that $|a^2-10a+21|=(a-3)(a-7)$."
    ],
    "answer_key": [
     true,
@@ -3972,13 +3972,13 @@
    "title": "Root of a squared binomial in two letters",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "replaces $\\sqrt{(w+u)^2}$ by $w+u$ for every real pair.",
-    "For every real $x$, $|x^2-8x+12|=|x-2|\\,|x-6|$.",
-    "For every real $a$, $|a^2-8a+7|=(a-1)(a-7)$.",
-    "For every real $m$, $|m|=m$ (variant 1).",
-    "For every real $a$, $|a-2|+|a-8|=6$."
+    "For every real $x$, it holds that $|x^2-8x+12|=|x-2|\\,|x-6|$.",
+    "For every real $a$, it holds that $|a^2-8a+7|=(a-1)(a-7)$.",
+    "For every real $m$, it holds that $|m|=m$ (variant 1).",
+    "For every real $a$, it holds that $|a-2|+|a-8|=6$."
    ],
    "answer_key": [
     false,
@@ -4004,11 +4004,11 @@
    "title": "Folding a segment then leaving it",
    "subsection": "2.4",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $|a^2-7a+6|=|a-1|\\,|a-6|$.",
+    "For every real $a$, it holds that $|a^2-7a+6|=|a-1|\\,|a-6|$.",
     "Keeping the constant $2$ of $|u-6|+|u-8|$ also for $u=1$ is proposed.",
-    "For every real $x$, $|x^2-7x+6|=(x-1)(x-6)$.",
+    "For every real $x$, it holds that $|x^2-7x+6|=(x-1)(x-6)$.",
     "Left of the other knot $h<4$, the sum $|h-4|+|h-6|$ is rewritten as $2$ as well.",
     "Distance interpretation: the marks $1$ and $4$ are $3$ units apart, so on $[1,4]$ one has $|k-1|+|k-4|=3$."
    ],
@@ -4036,12 +4036,12 @@
    "title": "Completing the square then deciding whether bars drop",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $|a-1|+|a-7|=6$, under the standing domain label $D_{1}$.",
-    "For every real $p$, $|p|=p$.",
+    "For every real $a$, it holds that $|a-1|+|a-7|=6$, under the standing domain label $D_{1}$.",
+    "For every real $p$, it holds that $|p|=p$.",
     "Whenever a real point lies between $4$ and $10$ inclusive, the sum of its distances to $4$ and to $10$ equals the length of that segment.",
-    "For every real $a$ with $2\\le a\\le 7$, $|a-2|+|7-a|=5$.",
+    "For every real $a$ with $2\\le a\\le 7$, it holds that $|a-2|+|7-a|=5$.",
     "Expanding $(k-8)^2+1$ recovers $k^2-16k+65$, so $|k^2-16k+65|=(k-8)^2+1$."
    ],
    "answer_key": [
@@ -4068,13 +4068,13 @@
    "title": "Equality cases of the triangle inequality",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Same-sign letters make $|w+u|$ match $|w|+|u|$ as soon as $wu\\ge 0$.",
-    "For every real $a$ with $1\\le a\\le 6$, $|a-1|+|6-a|=5$.",
+    "For every real $a$ with $1\\le a\\le 6$, it holds that $|a-1|+|6-a|=5$.",
     "One of the two letters being $0$ is enough for $|k+0|=|k|+|0|$.",
     "Whenever a real point lies between $5$ and $11$ inclusive, the sum of its distances to $5$ and to $11$ equals the length of that segment.",
-    "For every real $t$, $|t|=t$ (variant 1)."
+    "For every real $t$, it holds that $|t|=t$ (variant 1)."
    ],
    "answer_key": [
     true,
@@ -4100,13 +4100,13 @@
    "title": "A completed square that dips below zero",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The completed rewriting $w^2-8w+15=(w-4)^2-1$ is recorded.",
-    "For $a,b\\neq 0$, $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{ab}$, under the standing domain label $D_{2}$.",
-    "For every real $u$, $|2u-5|=2|u|-5$ when $u\\ge 5/2$.",
+    "For $a,b\\neq 0$, it holds that $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{b+a}{ab}$, under the standing domain label $D_{2}$.",
+    "For every real $u$, it holds that $|2u-5|=2|u|-5$ when $u\\ge 5/2$.",
     "For every real point (with no restriction to an interval), the sum of its distances to $1$ and to $6$ equals the length of the segment from $1$ to $6$.",
-    "For $m,n\\neq 0$ and $m\\neq -n$, $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{m+n}$, under the standing domain label $D_{1}$."
+    "For $m,n\\neq 0$ and $m\\neq -n$, it holds that $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{m+n}$, under the standing domain label $D_{1}$."
    ],
    "answer_key": [
     true,
@@ -4132,13 +4132,13 @@
    "title": "Reverse triangle comparison of sizes",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $|r^2-25|=|r-5|\\,|r+5|$.",
-    "For every real $c$, $|c|=c$ (variant 1).",
-    "For $h,k\\neq 0$, $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{hk}$, under the standing domain label $D_{2}$.",
+    "For every real $r$, it holds that $|r^2-25|=|r-5|\\,|r+5|$.",
+    "For every real $c$, it holds that $|c|=c$ (variant 1).",
+    "For $h,k\\neq 0$, it holds that $\\dfrac{6}{h}+\\dfrac{1}{k}=\\dfrac{6k+h}{hk}$, under the standing domain label $D_{2}$.",
     "Writing $\\bigl||h|-|w|\\bigr|=|h|-|w|$ as an identity is proposed.",
-    "For every real $x$, $|x^2-10x+21|=(x-3)(x-7)$."
+    "For every real $x$, it holds that $|x^2-10x+21|=(x-3)(x-7)$."
    ],
    "answer_key": [
     true,
@@ -4164,13 +4164,13 @@
    "title": "Nested bars around a translated letter",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $x$, $|x-4|+|x-10|=6$.",
+    "For every real $x$, it holds that $|x-4|+|x-10|=6$.",
     "Stripping the outer bars in $\\bigl||u|-1\\bigr|$ down to $|u|-1$ is proposed for every real $u$.",
-    "For every real $a$, $|a^2-8a+7|=(a-1)(a-7)$, under the standing domain label $D_{1}$.",
+    "For every real $a$, it holds that $|a^2-8a+7|=(a-1)(a-7)$, under the standing domain label $D_{1}$.",
     "Someone claims $\\bigl||h-7|\\bigr|=h-7$ for every $h$.",
-    "For every real $x$, $|x^2-6x+5|=(x-1)(x-5)$."
+    "For every real $x$, it holds that $|x^2-6x+5|=(x-1)(x-5)$."
    ],
    "answer_key": [
     false,
@@ -4196,12 +4196,12 @@
    "title": "Quotient of opposite linears then a false global constant",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $x$, $|x^2-7x+12|=(x-3)(x-4)$.",
+    "For every real $x$, it holds that $|x^2-7x+12|=(x-3)(x-4)$.",
     "On the side $u>1$, rewriting $|u-1|$ as $u-1$ and dividing by $1-u$ equals $-1$.",
     "Cancelling to $1$ in $|z-6|/(z-6)$ for every $z\\neq 6$ is proposed.",
-    "For every real $a$, $|a^2-7a+12|=(a-3)(a-4)$, under the standing domain label $D_{1}$.",
+    "For every real $a$, it holds that $|a^2-7a+12|=(a-3)(a-4)$, under the standing domain label $D_{1}$.",
     "Recording $|k-8|/(8-k)$ as identically $-1$ away from $k=8$ is proposed."
    ],
    "answer_key": [
@@ -4228,13 +4228,13 @@
    "title": "Two quadratics, only one a square",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $|a^2-7x+6|=|a-1|\\,|a-6|$.",
-    "For every real $a$, $|a^2-6a+5|=|a-1|\\,|a-5|$.",
+    "For every real $a$, it holds that $|a^2-7x+6|=|a-1|\\,|a-6|$.",
+    "For every real $a$, it holds that $|a^2-6a+5|=|a-1|\\,|a-5|$.",
     "Writing $|z^2-12z+35|=(z-6)^2-1$ as an identity is proposed.",
-    "For every real $a$ with $2\\le a\\le 7$, $|a-2|+|7-a|=5$, under the standing domain label $D_{1}$.",
-    "For every real $x$, $|x|=x$."
+    "For every real $a$ with $2\\le a\\le 7$, it holds that $|a-2|+|7-a|=5$, under the standing domain label $D_{1}$.",
+    "For every real $x$, it holds that $|x|=x$."
    ],
    "answer_key": [
     true,
@@ -4260,13 +4260,13 @@
    "title": "Wrong piece chosen then a leftover constant",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $r$, $|4r-3|=4|r|-3$ when $r\\ge 3/4$.",
-    "For every real $a$, $|a^2-6x+5|=|a-1|\\,|a-5|$.",
-    "For every real $f$, $|f^2-36|=|f-6|\\,|f+6|$.",
-    "For every real $h$, $|h|=h$ (variant 1).",
-    "For every real $a$, $|a-2|+|a-8|=6$, under the standing domain label $D_{1}$."
+    "For every real $r$, it holds that $|4r-3|=4|r|-3$ when $r\\ge 3/4$.",
+    "For every real $a$, it holds that $|a^2-6x+5|=|a-1|\\,|a-5|$.",
+    "For every real $f$, it holds that $|f^2-36|=|f-6|\\,|f+6|$.",
+    "For every real $h$, it holds that $|h|=h$ (variant 1).",
+    "For every real $a$, it holds that $|a-2|+|a-8|=6$, under the standing domain label $D_{1}$."
    ],
    "answer_key": [
     true,
@@ -4292,13 +4292,13 @@
    "title": "Root of a square after completing versus dropping bars",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Completing $w^2-8w+16$ first, $\\sqrt{(w-4)^2}$ is rewritten as $|w-4|$.",
     "Whenever a real point lies between $1$ and $6$ inclusive, the sum of its distances to $1$ and to $6$ equals the length of that segment, under the standing domain label $D_{1}$.",
-    "For every real $a$ with $3\\le a\\le 9$, $|a-3|+|9-a|=6$.",
-    "For every real $m$, $|m|=m$ (variant 2).",
-    "For $m,n\\neq 0$ and $m\\neq -n$, $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{m+n}$, under the standing domain label $D_{2}$."
+    "For every real $a$ with $3\\le a\\le 9$, it holds that $|a-3|+|9-a|=6$.",
+    "For every real $m$, it holds that $|m|=m$ (variant 2).",
+    "For $m,n\\neq 0$ and $m\\neq -n$, it holds that $\\dfrac{5}{m}+\\dfrac{2}{n}=\\dfrac{5n+2m}{m+n}$, under the standing domain label $D_{2}$."
    ],
    "answer_key": [
     true,
@@ -4324,9 +4324,9 @@
    "title": "Mixed slogans that look like product rules",
    "subsection": "2.4",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ be a real number. Which of the following statements is/are correct?",
    "statements": [
-    "For every real $a$, $|a-1|+|a-7|=6$, under the standing domain label $D_{2}$.",
+    "For every real $a$, it holds that $|a-1|+|a-7|=6$, under the standing domain label $D_{2}$.",
     "The companion $|z+h|=|z|+|h|$ is written as an identity.",
     "Whenever a real point lies between $3$ and $9$ inclusive, the sum of its distances to $3$ and to $9$ equals the length of that segment, under the standing domain label $D_{1}$.",
     "Treating $|4n|$ as interchangeable with $|n|+4$ is proposed.",
@@ -4356,7 +4356,7 @@
    "title": "Warm-up: polarisation identity",
    "subsection": "2.5",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The polarisation remainder $(a+b)^2-(a-b)^2=4ab$ holds for every real pair $(a,b)$.",
     "Likewise for $(x+y)^2-(x-y)^2=4xy$ with real $(x,y)$.",
@@ -4388,7 +4388,7 @@
    "title": "Warm-up: symmetric sums in three letters",
    "subsection": "2.5",
    "difficulty_level": "1/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $a+b+c=s$, then $a^2+b^2+c^2=s^2-2(ab+bc+ca)$ for every real triple.",
     "With $x+y+z=s$, one has $x^2+y^2+z^2=s^2-2(xy+yz+zx)$ for every real triple.",
@@ -4420,12 +4420,12 @@
    "title": "Warm-up: mixed fraction and square",
    "subsection": "2.5",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "For $x\\neq 2$, cancelling gives $\\dfrac{x^2-4}{x-2}=x+2$.",
     "Expanding a binomial: $(a+b)^2=a^2+2ab+b^2$ for every real pair $(a,b)$.",
     "For $t\\neq 0$, index arithmetic gives $t^3/t=t^2$.",
-    "For every real $k$, $|k-3|=3-k$ is false.",
+    "For every real $k$, it holds that $|k-3|=3-k$ is false.",
     "For $p\\neq 0$, combining powers yields $p^{-1}\\cdot p^3=p^2$."
    ],
    "answer_key": [
@@ -4452,7 +4452,7 @@
    "title": "Warm-up: inequality from a square",
    "subsection": "2.5",
    "difficulty_level": "2/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "From $(a-b)^2\\ge 0$, one gets $a^2+b^2\\ge 2ab$ for every real pair $(a,b)$.",
     "Similarly, $x^2+y^2\\ge xy$ for every real pair $(x,y)$.",
@@ -4484,13 +4484,13 @@
    "title": "Mixed algebra — set 1",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The stacked quotient $\\dfrac{\\dfrac{8v^2b}{4x^2-16}}{\\dfrac{4vb}{2x+4}}$ simplifies to $\\dfrac{v}{x+2}$ for $x\\neq\\pm 2$ and $v,b\\neq 0$.",
-    "For every real pair $(r,s)$, $(r+s)^3=r^3+s^3$.",
-    "For $q\\neq 0$, $(3q^{-1}-1)(3q^{-1}+1)=\\dfrac{9}{q^2}-1$.",
+    "For every real pair $(r,s)$, it holds that $(r+s)^3=r^3+s^3$.",
+    "For $q\\neq 0$, it holds that $(3q^{-1}-1)(3q^{-1}+1)=\\dfrac{9}{q^2}-1$.",
     "Restricting to negative $\\ell$, the quotient $|\\ell|/\\ell$ equals $-1$.",
-    "For every real pair $(a,b)$, $(a+b)^2+(a-b)^2=2(a^2+b^2)$."
+    "For every real pair $(a,b)$, it holds that $(a+b)^2+(a-b)^2=2(a^2+b^2)$."
    ],
    "answer_key": [
     false,
@@ -4516,7 +4516,7 @@
    "title": "Sophie Germain offcut beside a stacked exponent",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The cube-sum identity $(x+y)^3+(x-y)^3=2x(x^2+3y^2)$ holds for every real pair $(x,y)$.",
     "Difference of squares: $(p+q)(p-q)=p^2-q^2$ for every real pair $(p,q)$.",
@@ -4548,10 +4548,10 @@
    "title": "Nested remainder against a piecewise constant",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(a,b)$, $(a+b)^3=a^3+b^3$.",
-    "For $q\\neq 0$, $(6q^{-1}-1)(6q^{-1}+1)=\\dfrac{1}{36q^2}-1$.",
+    "For every real pair $(a,b)$, it holds that $(a+b)^3=a^3+b^3$.",
+    "For $q\\neq 0$, it holds that $(6q^{-1}-1)(6q^{-1}+1)=\\dfrac{1}{36q^2}-1$.",
     "Simplifying $16^{5/4}$ is treated as producing the integer $32$.",
     "Let $p$ be a nonzero real parameter. Twice the reciprocal of the sum of $p$ and the reciprocal of $p$ equals $p$ divided by the sum of the square of $p$ and one.",
     "Whenever $r+s+t=0$ at the specific values $r=2$, $s=11$, $t=-13$, the sum of cubes $r^3+s^3+t^3$ equals $3rst$, hence $-858$."
@@ -4580,7 +4580,7 @@
    "title": "Cubic coefficient vanishing in a biquadratic product",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $r+s+t=0$, then $r^3+s^3+t^3=3rst$ for every real triple $(r,s,t)$.",
     "An incorrect cube expansion: $(c+d)^3=c^3+d^3$ for all real $(c,d)$ is false.",
@@ -4612,10 +4612,10 @@
    "title": "Cancelled cubic checked away from zero",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding $(f+2g-h)^2$ is written with the coefficient of $gh$ equal to $+4$.",
-    "For every real triple $(p,q,a)$ with $p+q+a=0$, $p^3+q^3+a^3=3pqa$.",
+    "For every real triple $(p,q,a)$ with $p+q+a=0$, it holds that $p^3+q^3+a^3=3pqa$.",
     "If $n>0$, then $\\dfrac{n^{2/3}\\cdot\\sqrt[3]{n\\sqrt{n}}}{n^{1/6}\\cdot\\sqrt[6]{n^5}}=\\sqrt[6]{n}$.",
     "On the half-line $h<0$, the quotient $|h|/(-h)$ equals $1$.",
     "The stacked quotient $\\dfrac{\\dfrac{8q^2b}{4x^2-16}}{\\dfrac{4qb}{2x+4}}$ simplifies to $\\dfrac{q}{x+2}$ for $x\\neq\\pm 2$ and $q,b\\neq 0$."
@@ -4644,7 +4644,7 @@
    "title": "Swapped-ratio sum beside a denested sixteen",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "A reciprocal-square trap: for $u\\neq 0$, $(5u^{-1}-1)(5u^{-1}+1)=\\dfrac{1}{25u^2}-1$.",
     "Adding squared gaps: $(c+d)^2+(c-d)^2=2(c^2+d^2)$ for every real pair $(c,d)$.",
@@ -4676,13 +4676,13 @@
    "title": "Mixed-term cancellation in a Germain product",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $q>0$, then $\\dfrac{q^{2/3}\\cdot\\sqrt[3]{q\\sqrt{q}}}{q^{1/6}\\cdot\\sqrt[6]{q^5}}=\\sqrt[6]{q}$.",
     "Clearing the stacked difference $\\dfrac{\\dfrac{1}{h}-\\dfrac{1}{j}}{\\dfrac{1}{h}+\\dfrac{1}{j}}$ equals $\\dfrac{h-j}{h+j}$ whenever $hj\\neq 0$ and $h\\neq -j$.",
     "Matching positive roots, $\\sqrt{11+2\\sqrt{24}}$ is identified with $2\\sqrt{2}+\\sqrt{3}$.",
-    "For $u\\neq 0$, $(4u^{-1}-1)(4u^{-1}+1)=\\dfrac{16}{u^2}-1$.",
-    "For every real pair $(x,y)$, $(x+y)^3=x^3+y^3$."
+    "For $u\\neq 0$, it holds that $(4u^{-1}-1)(4u^{-1}+1)=\\dfrac{16}{u^2}-1$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^3=x^3+y^3$."
    ],
    "answer_key": [
     true,
@@ -4708,13 +4708,13 @@
    "title": "Sign error on gh next to a cube-sum trap",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the trinomial $(3f-g-h)^2$ is written with the coefficient of $gh$ equal to $-2$.",
     "If $d>0$, then $\\dfrac{d^{2/3}\\cdot\\sqrt[3]{d\\sqrt{d}}}{d^{1/6}\\cdot\\sqrt[6]{d^5}}=\\sqrt[6]{d}$.",
-    "For every real triple $(f,g,h)$ with $f+g+h=0$, $f^3+g^3+h^3=3fgh$.",
+    "For every real triple $(f,g,h)$ with $f+g+h=0$, it holds that $f^3+g^3+h^3=3fgh$.",
     "The product of absolute values $|u-15|\\,|u+15|$ is identified with $|u^2-225|$ for every real $u$.",
-    "For every real pair $(t,w)$, $(t+w)^3=t^3+w^3$."
+    "For every real pair $(t,w)$, it holds that $(t+w)^3=t^3+w^3$."
    ],
    "answer_key": [
     false,
@@ -4740,10 +4740,10 @@
    "title": "Visible fg coefficient beside a stripped nest",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The coefficient of $fg$ in the expansion of $(f+4g-h)^2$ equals $8$.",
-    "For $m\\neq 0$, $(4m^{-1}-1)(4m^{-1}+1)=\\dfrac{16}{m^2}-1$.",
+    "For $m\\neq 0$, it holds that $(4m^{-1}-1)(4m^{-1}+1)=\\dfrac{16}{m^2}-1$.",
     "Simplifying the power $16^{3/2}$ is treated as producing the integer $64$.",
     "Stripping the outer bars in $\\bigl||k|-13\\bigr|$ down to $|k|-13$ is proposed for every real $k$.",
     "If $h>0$, then $\\dfrac{h^{2/3}\\cdot\\sqrt[3]{h\\sqrt{h}}}{h^{1/6}\\cdot\\sqrt[6]{h^5}}=\\sqrt[3]{h}$."
@@ -4772,13 +4772,13 @@
    "title": "Half-line scaling beside a denested twenty-one",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the square $(2f-3g+h)^2$ is written with the coefficient of $fg$ equal to $+12$.",
-    "For every real pair $(c,d)$, $(c+d)^3=c^3+d^3$ (variant 2).",
+    "For every real pair $(c,d)$, it holds that $(c+d)^3=c^3+d^3$ (variant 2).",
     "Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals twice $t$ divided by the sum of the square of $t$ and one.",
     "Pulling the constant factor, $|-5\\ell+15|$ is rewritten as $5|\\ell-3|$ for every real $\\ell$.",
-    "For every real triple $(t,w,x)$ with $t+w+x=0$, $t^3+w^3+x^3=3twx$."
+    "For every real triple $(t,w,x)$ with $t+w+x=0$, it holds that $t^3+w^3+x^3=3twx$."
    ],
    "answer_key": [
     false,
@@ -4804,13 +4804,13 @@
    "title": "Cube-root monomial against a linear ratio",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $m\\neq 0$, $(1m^{-1}-1)(1m^{-1}+1)=\\dfrac{1}{1m^2}-1$.",
-    "For every real triple $(p,q,r)$ with $p+q+r=0$, $p^3+q^3+r^3=3pqr$.",
+    "For $m\\neq 0$, it holds that $(1m^{-1}-1)(1m^{-1}+1)=\\dfrac{1}{1m^2}-1$.",
+    "For every real triple $(p,q,r)$ with $p+q+r=0$, it holds that $p^3+q^3+r^3=3pqr$.",
     "If $k>0$, then $\\dfrac{k^{2/3}\\cdot\\sqrt[3]{k\\sqrt{k}}}{k^{1/6}\\cdot\\sqrt[6]{k^5}}=\\sqrt[3]{k}$.",
-    "For every real pair $(m,n)$, $(m+n)^3=m^3+n^3$.",
-    "For every real pair $(x,y)$, $(x+y)^3=x^3+y^3$ (variant 1)."
+    "For every real pair $(m,n)$, it holds that $(m+n)^3=m^3+n^3$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^3=x^3+y^3$ (variant 1)."
    ],
    "answer_key": [
     true,
@@ -4836,12 +4836,12 @@
    "title": "Leftover factor mistaken for a remainder",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(r,s)$, $(r+s)^3=r^3+s^3$ (variant 1).",
-    "For every real triple $(c,d,h)$ with $c+d+h=0$, $c^3+d^3+h^3=3cdh$.",
+    "For every real pair $(r,s)$, it holds that $(r+s)^3=r^3+s^3$ (variant 1).",
+    "For every real triple $(c,d,h)$ with $c+d+h=0$, it holds that $c^3+d^3+h^3=3cdh$.",
     "Simplifying the radical $\\sqrt{16j^2}$ to $4j$ is asserted for every real $j$.",
-    "For $m\\neq 0$, $(6m^{-1}-1)(6m^{-1}+1)=\\dfrac{36}{m^2}-1$.",
+    "For $m\\neq 0$, it holds that $(6m^{-1}-1)(6m^{-1}+1)=\\dfrac{36}{m^2}-1$.",
     "Factoring the biquadratic $n^4+64$ as $(n^2+4n+8)(n^2-4n+8)$ is offered as an identity."
    ],
    "answer_key": [
@@ -4868,13 +4868,13 @@
    "title": "Middle-sign error in a sum of cubes",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(a,b)$, $(a+b)^2+( a-b)^2=2(a^2+b^2)$.",
+    "For every real pair $(a,b)$, it holds that $(a+b)^2+( a-b)^2=2(a^2+b^2)$.",
     "Let $p$ be a nonzero real parameter. Twice the reciprocal of the sum of $p$ and the reciprocal of $p$ equals twice $p$ divided by the sum of the square of $p$ and one.",
     "Matching positive roots, $\\sqrt{13+4\\sqrt{3}}$ is identified with $1+2\\sqrt{3}$.",
     "Let $t$ be a nonzero real number. Twice the reciprocal of the sum of $t$ and the reciprocal of $t$ equals $t$ divided by the sum of the square of $t$ and one.",
-    "For every real pair $(x,y)$, $(x+y)^3=x^3+y^3$ (variant 2)."
+    "For every real pair $(x,y)$, it holds that $(x+y)^3=x^3+y^3$ (variant 2)."
    ],
    "answer_key": [
     true,
@@ -4900,7 +4900,7 @@
    "title": "Grouped four-term product on a mixed card",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Grouping the four-term polynomial $fg+11f+13g+143$ as $(f+13)(g+11)$ is offered as an identity.",
     "Clearing the nested remainder $1-\\dfrac{1}{1+\\dfrac{1}{j}}$ equals $\\dfrac{1}{j+1}$ for $j\\neq 0$ and $j\\neq -1$.",
@@ -4932,13 +4932,13 @@
    "title": "Quadratic remainder beside a cube-root monomial",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the trinomial $(2f-g+h)^2$ is written with the coefficient of $gh$ equal to $+2$.",
     "Cancelling a visible linear factor, $\\dfrac{j^2-35j+300}{j-15}$ equals $j-20$ for $j\\neq 15$.",
     "The stacked quotient $\\dfrac{\\dfrac{8n^2b}{4x^2-16}}{\\dfrac{4nb}{2x+4}}$ simplifies to $\\dfrac{n}{x+2}$ for $x\\neq\\pm 2$ and $n,b\\neq 0$.",
     "Treating the sign quotient $|\\ell|/\\ell$ as identically $1$ for every $\\ell\\neq 0$ is proposed.",
-    "For $t\\neq 0$, $(4t^{-1}-1)(4t^{-1}+1)=\\dfrac{1}{16t^2}-1$."
+    "For $t\\neq 0$, it holds that $(4t^{-1}-1)(4t^{-1}+1)=\\dfrac{1}{16t^2}-1$."
    ],
    "answer_key": [
     false,
@@ -4964,7 +4964,7 @@
    "title": "Nested bars stripped on a short interval",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Difference of squares in reciprocals: for $t\\neq 0$, $(2t^{-1}-1)(2t^{-1}+1)=\\dfrac{4}{t^2}-1$.",
     "Missing cube cross terms: $(c+d)^3=c^3+d^3$ fails for some real pair $(c,d)$.",
@@ -4996,12 +4996,12 @@
    "title": "Unsigned cube from a stacked square",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The stacked quotient $\\dfrac{\\dfrac{8t^2b}{4x^2-16}}{\\dfrac{4tb}{2x+4}}$ simplifies to $\\dfrac{t}{x+2}$ for $x\\neq\\pm 2$ and $t,b\\neq 0$.",
     "Cancelling a difference of fourth powers, $\\dfrac{j^4-1}{j^2-1}$ equals $j^2+1$ whenever $j\\neq\\pm 1$.",
-    "For every real pair $(u,v)$, $(u+v)^3=u^3+v^3$.",
-    "For $v\\neq 0$, $(8v^{-1}-1)(8v^{-1}+1)=\\dfrac{64}{v^2}-1$.",
+    "For every real pair $(u,v)$, it holds that $(u+v)^3=u^3+v^3$.",
+    "For $v\\neq 0$, it holds that $(8v^{-1}-1)(8v^{-1}+1)=\\dfrac{64}{v^2}-1$.",
     "Completing the square, $k^4+4m^4$ is identified with $(k^2+2m^2)^2$ as an identity in $k$ and $m$."
    ],
    "answer_key": [
@@ -5028,13 +5028,13 @@
    "title": "Inflated denesting of sixteen plus a surd",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The coefficient of $fg$ in the expansion of $(f-3g-h)^2$ equals $-6$.",
     "If $f>0$, then $\\dfrac{f^{2/3}\\cdot\\sqrt[3]{f\\sqrt{f}}}{f^{1/6}\\cdot\\sqrt[6]{f^5}}=\\sqrt[3]{f}$.",
-    "For every real pair $(f,g)$, $(f+g)^3=f^3+g^3$ (variant 2).",
+    "For every real pair $(f,g)$, it holds that $(f+g)^3=f^3+g^3$ (variant 2).",
     "Treating the quotient $|k|/k$ as identically $-1$ for every $k\\neq 0$ is proposed.",
-    "For every real pair $(t,w)$, $(t+w)^3=t^3+w^3$ (variant 1)."
+    "For every real pair $(t,w)$, it holds that $(t+w)^3=t^3+w^3$ (variant 1)."
    ],
    "answer_key": [
     true,
@@ -5060,11 +5060,11 @@
    "title": "Compound ratio reciprocal trap",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the trinomial $(f+2g-5h)^2$ is written with the coefficient of $fh$ equal to $+10$.",
-    "For $k\\neq 0$, $(7k^{-1}-1)(7k^{-1}+1)=\\dfrac{49}{k^2}-1$.",
-    "For every real pair $(u,v)$, $(u+v)^2+( u-v)^2=2(u^2+v^2)$.",
+    "For $k\\neq 0$, it holds that $(7k^{-1}-1)(7k^{-1}+1)=\\dfrac{49}{k^2}-1$.",
+    "For every real pair $(u,v)$, it holds that $(u+v)^2+( u-v)^2=2(u^2+v^2)$.",
     "On the open interval $-15<\\ell<15$, the sum $|\\ell+15|+|\\ell-15|$ equals $30$.",
     "If $k>0$, then $\\dfrac{k^{2/3}\\cdot\\sqrt[3]{k\\sqrt{k}}}{k^{1/6}\\cdot\\sqrt[6]{k^5}}=\\sqrt[6]{k}$."
    ],
@@ -5092,13 +5092,13 @@
    "title": "Dropped bars on a two-letter quotient",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The coefficient of $gh$ in the expansion of $(4f-g-h)^2$ equals $2$.",
     "Reducing the quadratic $\\dfrac{m^2-15m+56}{m-7}$ to $m-7$ for $m\\neq 7$ is treated as an identity.",
-    "For $h\\neq 0$, $(1h^{-1}-1)(1h^{-1}+1)=\\dfrac{1}{h^2}-1$.",
+    "For $h\\neq 0$, it holds that $(1h^{-1}-1)(1h^{-1}+1)=\\dfrac{1}{h^2}-1$.",
     "Writing the quotient $\\bigl|\\dfrac{r}{s}\\bigr|$ as $\\dfrac{|r|}{|s|}$ for $s\\neq 0$.",
-    "For every real pair $(t,w)$, $(t+w)^3=t^3+w^3$ (variant 2)."
+    "For every real pair $(t,w)$, it holds that $(t+w)^3=t^3+w^3$ (variant 2)."
    ],
    "answer_key": [
     true,
@@ -5124,10 +5124,10 @@
    "title": "Single-point check of a fourth-power split",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "If $n>0$, then $\\dfrac{n^{2/3}\\cdot\\sqrt[3]{n\\sqrt{n}}}{n^{1/6}\\cdot\\sqrt[6]{n^5}}=\\sqrt[3]{n}$.",
-    "For every real pair $(p,q)$, $(p+q)^2+( p-q)^2=2(p^2+q^2)$.",
+    "For every real pair $(p,q)$, it holds that $(p+q)^2+( p-q)^2=2(p^2+q^2)$.",
     "If $b>0$, then $\\dfrac{b^{2/3}\\cdot\\sqrt[3]{b\\sqrt{b}}}{b^{1/6}\\cdot\\sqrt[6]{b^5}}=\\sqrt[6]{b}$.",
     "Dropping the bars around $2\\ell+16$ and writing $2\\ell+16$ for every real $\\ell$ is offered as an identity.",
     "Squaring a single Sophie-Germain factor, $n^4+4m^4$ is identified with $(n^2+2nm+2m^2)^2$."
@@ -5156,13 +5156,13 @@
    "title": "Continued nest written as its reciprocal",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The coefficient of $fg$ in the expansion of $(f-5g+h)^2$ equals $-10$.",
     "Clearing the three-storey nest $1+\\dfrac{1}{1+\\dfrac{1}{1+\\dfrac{1}{j}}}$ equals $\\dfrac{2j+1}{3j+2}$ for $j\\neq 0$, $j\\neq -1$, and $j\\neq -1/2$.",
-    "For every real pair $(f,g)$, $(f+g)^3=f^3+g^3$ (variant 3).",
+    "For every real pair $(f,g)$, it holds that $(f+g)^3=f^3+g^3$ (variant 3).",
     "If $f>0$, then $\\dfrac{f^{2/3}\\cdot\\sqrt[3]{f\\sqrt{f}}}{f^{1/6}\\cdot\\sqrt[6]{f^5}}=\\sqrt[6]{f}$.",
-    "For every real pair $(t,w)$, $(t+w)^2+( t-w)^2=2(t^2+w^2)$."
+    "For every real pair $(t,w)$, it holds that $(t+w)^2+( t-w)^2=2(t^2+w^2)$."
    ],
    "answer_key": [
     true,
@@ -5188,13 +5188,13 @@
    "title": "Vanishing of a shifted square's absolute value",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the trinomial $(2f+2g-h)^2$ is written with the coefficient of $fg$ equal to $4$.",
     "Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals $m$ divided by the sum of the square of $m$ and one.",
     "Simplifying a monomial radical, $(16k^4)^{1/4}$ is rewritten as $2k$ for every real $k$.",
-    "For $s\\neq 0$, $(5s^{-1}-1)(5s^{-1}+1)=\\dfrac{1}{25s^2}-1$.",
-    "For every real pair $(x,y)$, $(x+y)^2+( x-y)^2=2(x^2+y^2)$."
+    "For $s\\neq 0$, it holds that $(5s^{-1}-1)(5s^{-1}+1)=\\dfrac{1}{25s^2}-1$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^2+( x-y)^2=2(x^2+y^2)$."
    ],
    "answer_key": [
     false,
@@ -5220,11 +5220,11 @@
    "title": "Signed cube root of a monomial",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(r,s)$, $(r+s)^3=r^3+s^3$ (variant 2).",
-    "For every real pair $(c,d)$, $(c+d)^3=c^3+d^3$ (variant 5).",
-    "For every real triple $(f,g,h)$ with $f+g+h=0$, $f^3+g^3+h^3=3fgh$ (variant 1).",
+    "For every real pair $(r,s)$, it holds that $(r+s)^3=r^3+s^3$ (variant 2).",
+    "For every real pair $(c,d)$, it holds that $(c+d)^3=c^3+d^3$ (variant 5).",
+    "For every real triple $(f,g,h)$ with $f+g+h=0$, it holds that $f^3+g^3+h^3=3fgh$ (variant 1).",
     "Dropping a minus, $|-\\ell|$ is rewritten as $-\\ell$ for every real $\\ell$.",
     "Let $h$ be a nonzero real letter. Twice the reciprocal of the sum of $h$ and the reciprocal of $h$ equals twice $h$ divided by the sum of the square of $h$ and one."
    ],
@@ -5252,11 +5252,11 @@
    "title": "Wrong conjugate of twenty-one plus eight roots",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For every real pair $(a,b)$, $(a+b)^2+( a-b)^2=2(a^2+b^2)$ (variant 1).",
+    "For every real pair $(a,b)$, it holds that $(a+b)^2+( a-b)^2=2(a^2+b^2)$ (variant 1).",
     "Subtracting the unit fractions $\\dfrac{1}{n-11}-\\dfrac{1}{n+11}$ equals $\\dfrac{11}{n^2-121}$ whenever $n\\neq\\pm 11$.",
-    "For $s\\neq 0$, $(8s^{-1}-1)(8s^{-1}+1)=\\dfrac{64}{s^2}-1$.",
+    "For $s\\neq 0$, it holds that $(8s^{-1}-1)(8s^{-1}+1)=\\dfrac{64}{s^2}-1$.",
     "Opposite linear forms satisfy $|3\\ell-21|=|21-3\\ell|$ for every real $\\ell$.",
     "If $h>0$, then $\\dfrac{h^{2/3}\\cdot\\sqrt[3]{h\\sqrt{h}}}{h^{1/6}\\cdot\\sqrt[6]{h^5}}=\\sqrt[6]{h}$."
    ],
@@ -5284,13 +5284,13 @@
    "title": "Exponent addition flipping a sign",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Let $m$ be a nonzero real letter. Twice the reciprocal of the sum of $m$ and the reciprocal of $m$ equals twice $m$ divided by the sum of the square of $m$ and one.",
     "Cancelling a quadratic, $\\dfrac{k^2-29k+210}{k-15}$ equals $k-14$ for $k\\neq 15$.",
-    "For every real pair $(f,g)$, $(f+g)^3=f^3+g^3$ (variant 4).",
+    "For every real pair $(f,g)$, it holds that $(f+g)^3=f^3+g^3$ (variant 4).",
     "On the half-line $\\ell<11$, the quotient $\\dfrac{|\\ell-11|}{11-\\ell}$ equals $1$ wherever $\\ell\\neq 11$.",
-    "For every real pair $(t,w)$, $(t+w)^3=t^3+w^3$ (variant 3)."
+    "For every real pair $(t,w)$, it holds that $(t+w)^3=t^3+w^3$ (variant 3)."
    ],
    "answer_key": [
     true,
@@ -5316,13 +5316,13 @@
    "title": "Difference of reciprocal squares with a dropped factor",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
-    "For $p\\neq 0$, $(8p^{-1}-1)(8p^{-1}+1)=\\dfrac{64}{p^2}-1$.",
-    "For every real pair $(p,q)$, $(p+q)^3=p^3+q^3$ (variant 1).",
-    "For every real triple $(u,v,c)$ with $u+v+c=0$, $u^3+v^3+c^3=3uvc$.",
-    "For $p\\neq 0$, $(4p^{-1}-1)(4p^{-1}+1)=\\dfrac{1}{16p^2}-1$.",
-    "For every real pair $(x,y)$, $(x+y)^3=x^3+y^3$ (variant 3)."
+    "For $p\\neq 0$, it holds that $(8p^{-1}-1)(8p^{-1}+1)=\\dfrac{64}{p^2}-1$.",
+    "For every real pair $(p,q)$, it holds that $(p+q)^3=p^3+q^3$ (variant 1).",
+    "For every real triple $(u,v,c)$ with $u+v+c=0$, it holds that $u^3+v^3+c^3=3uvc$.",
+    "For $p\\neq 0$, it holds that $(4p^{-1}-1)(4p^{-1}+1)=\\dfrac{1}{16p^2}-1$.",
+    "For every real pair $(x,y)$, it holds that $(x+y)^3=x^3+y^3$ (variant 3)."
    ],
    "answer_key": [
     true,
@@ -5348,13 +5348,13 @@
    "title": "Folded distance on a bounded interval",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the trinomial $(f+3g-2h)^2$ is written with the coefficient of $gh$ equal to $-6$.",
     "The stacked quotient $\\dfrac{\\dfrac{8b^2c}{4x^2-16}}{\\dfrac{4bc}{2x+4}}$ simplifies to $\\dfrac{b}{x+2}$ for $x\\neq\\pm 2$ and $b,c\\neq 0$.",
-    "For every real pair $(f,g)$, $(f+g)^3=f^3+g^3$ (variant 5).",
+    "For every real pair $(f,g)$, it holds that $(f+g)^3=f^3+g^3$ (variant 5).",
     "Folding the distance, $|\\ell|+|\\ell-21|$ equals $21$ throughout the closed interval $0\\le\\ell\\le 21$.",
-    "For every real triple $(t,w,u)$ with $t+w+u=0$, $t^3+w^3+u^3=3twu$."
+    "For every real triple $(t,w,u)$ with $t+w+u=0$, it holds that $t^3+w^3+u^3=3twu$."
    ],
    "answer_key": [
     false,
@@ -5380,11 +5380,11 @@
    "title": "Nested j-minus-reciprocal over a plus",
    "subsection": "2.5",
    "difficulty_level": "5/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "The coefficient of $gh$ in the expansion of $(f-2g-3h)^2$ equals $12$.",
-    "For $x\\neq 0$, $(5x^{-1}-1)(5x^{-1}+1)=\\dfrac{1}{25x^2}-1$.",
-    "For every real triple $(u,v,p)$ with $u+v+p=0$, $u^3+v^3+p^3=3uvp$.",
+    "For $x\\neq 0$, it holds that $(5x^{-1}-1)(5x^{-1}+1)=\\dfrac{1}{25x^2}-1$.",
+    "For every real triple $(u,v,p)$ with $u+v+p=0$, it holds that $u^3+v^3+p^3=3uvp$.",
     "Treating the scaled quotient $|2\\ell|/\\ell$ as identically $2$ for every $\\ell\\neq 0$ is proposed.",
     "The stacked quotient $\\dfrac{\\dfrac{8q^2b}{4x^2-16}}{\\dfrac{4qb}{2x+4}}$ simplifies to $\\dfrac{q}{x-2}$ for $x\\neq\\pm 2$ and $q,b\\neq 0$."
    ],
@@ -5412,13 +5412,13 @@
    "title": "Closing card with thirty-five and a piecewise ratio",
    "subsection": "2.5",
    "difficulty_level": "4/5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Let $x$, $y$, and $z$ be real numbers. Which of the following statements is/are correct?",
    "statements": [
     "Expanding the square $(2f-5g+h)^2$ is written with the coefficient of $fg$ equal to $-10$.",
-    "For every real triple $(c,d,m)$ with $c+d+m=0$, $c^3+d^3+m^3=3cdm$.",
-    "For $p\\neq 0$, $(3p^{-1}-1)(3p^{-1}+1)=\\dfrac{1}{9p^2}-1$.",
+    "For every real triple $(c,d,m)$ with $c+d+m=0$, it holds that $c^3+d^3+m^3=3cdm$.",
+    "For $p\\neq 0$, it holds that $(3p^{-1}-1)(3p^{-1}+1)=\\dfrac{1}{9p^2}-1$.",
     "Adding opposite quotients, $|\\ell|/\\ell+|\\ell|/(-\\ell)$ equals $0$ for every $\\ell\\neq 0$.",
-    "For every real pair $(t,w)$, $(t+w)^3=t^3+w^3$ (variant 4)."
+    "For every real pair $(t,w)$, it holds that $(t+w)^3=t^3+w^3$ (variant 4)."
    ],
    "answer_key": [
     false,
