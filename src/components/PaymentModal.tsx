@@ -14,6 +14,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode } from "@/lib/promo.functions";
 
 const ORANGE = "#C2643A";
+const DISCOUNT_CODE = "BBE-JfkDjt15";
+const DISCOUNT_PCT = 15;
 
 type PaymentModalProps = {
   open: boolean;
@@ -49,6 +51,7 @@ export function PaymentModal({
     setError(null);
     setSubmitted(false);
     setPromoUnlocked(false);
+    setDiscountApplied(false);
     setAuthOpen(false);
 
     // Buying requires an account first.
