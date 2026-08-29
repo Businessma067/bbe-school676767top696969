@@ -1,5 +1,5 @@
-import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import {
   BookOpen,
   ListChecks,
@@ -19,8 +19,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CompareTable } from "@/components/CompareTable";
+import { PaymentModal } from "@/components/PaymentModal";
 import fullAsset from "@/assets/full-course-product.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+
+const FULL_COURSE_PRICE = 479;
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
@@ -108,7 +111,7 @@ const fullCourseFaqs = [
   {
     question: "Is this a subscription or a one-time payment?",
     answer:
-      "It is a strict one-time payment of €359. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
+      "It is a strict one-time payment of €479. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
   },
   {
     question: "How does the AI Study Companion work?",
@@ -198,20 +201,22 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
   );
 }
 
-function CtaButton({ label = "Unlock Full Access" }: { label?: string }) {
+function CtaButton({ onClick }: { onClick: () => void }) {
   return (
-    <EnrollButton
-      slug="full-course"
-      to="/products/full-course-subjects"
+    <button
+      type="button"
+      onClick={onClick}
       className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
       style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
     >
-      {label} →
-    </EnrollButton>
+      Buy course →
+    </button>
   );
 }
 
 function FullCourseProduct() {
+  const [paymentOpen, setPaymentOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
@@ -279,11 +284,13 @@ function FullCourseProduct() {
                 One-time payment
               </div>
               <div className="mt-1 flex items-baseline gap-2">
-                <span className="font-display text-4xl font-bold text-foreground">€359</span>
+                <span className="font-display text-4xl font-bold text-foreground">
+                  €{FULL_COURSE_PRICE}
+                </span>
                 <span className="text-sm text-muted-foreground">full access</span>
               </div>
             </div>
-            <CtaButton />
+            <CtaButton onClick={() => setPaymentOpen(true)} />
           </div>
 
           {/* Section 1 — Feature grid */}
@@ -450,7 +457,7 @@ function FullCourseProduct() {
                 Stop guessing. Start training the way the exam actually tests you.
               </p>
               <p className="mt-2 text-xs text-muted-foreground">
-                One-time payment · €359 · Instant full access
+                One-time payment · €{FULL_COURSE_PRICE} · Instant full access
               </p>
             </div>
           </section>
@@ -521,6 +528,13 @@ function FullCourseProduct() {
           </section>
         </div>
       </main>
+
+      <PaymentModal
+        open={paymentOpen}
+        onOpenChange={setPaymentOpen}
+        productName="Full BBE Course"
+        priceEuros={FULL_COURSE_PRICE}
+      />
     </div>
   );
 }

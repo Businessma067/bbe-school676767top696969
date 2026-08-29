@@ -52,7 +52,7 @@ const products: Product[] = [
     image: fullAsset.url,
     description:
       "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
-    cta: "Unlock full access",
+    cta: "Buy course · €479",
     to: "/products/full-course",
     badge: "#BEST DEAL",
   },
@@ -61,8 +61,8 @@ const products: Product[] = [
     image: liteAsset.url,
     description:
       "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.",
-    cta: "Unlock lite access",
-    to: "/products/lite-bbe-course",
+    cta: "Coming soon",
+    disabled: true,
   },
 ];
 
