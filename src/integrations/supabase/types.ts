@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      activity_events: {
+        Row: {
+          created_at: string
+          duration_ms: number | null
+          entity_id: string | null
+          entity_type: string | null
+          event_type: Database["public"]["Enums"]["activity_event_type"]
+          id: string
+          metadata: Json
+          subject: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          duration_ms?: number | null
+          entity_id?: string | null
+          entity_type?: string | null
+          event_type: Database["public"]["Enums"]["activity_event_type"]
+          id?: string
+          metadata?: Json
+          subject?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          duration_ms?: number | null
+          entity_id?: string | null
+          entity_type?: string | null
+          event_type?: Database["public"]["Enums"]["activity_event_type"]
+          id?: string
+          metadata?: Json
+          subject?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
       book_chunks: {
         Row: {
           chunk_index: number
@@ -161,60 +197,30 @@ export type Database = {
         }
         Relationships: []
       }
-      promo_redeem_attempts: {
+      flashcard_progress: {
         Row: {
-          code_attempted: string
-          created_at: string
+          card_id: string
           id: string
-          ip_address: string
-          success: boolean
-          user_id: string | null
+          knowledge: Database["public"]["Enums"]["flashcard_knowledge"]
+          subject_id: string
+          updated_at: string
+          user_id: string
         }
         Insert: {
-          code_attempted?: string
-          created_at?: string
+          card_id: string
           id?: string
-          ip_address: string
-          success?: boolean
-          user_id?: string | null
+          knowledge?: Database["public"]["Enums"]["flashcard_knowledge"]
+          subject_id: string
+          updated_at?: string
+          user_id: string
         }
         Update: {
-          code_attempted?: string
-          created_at?: string
+          card_id?: string
           id?: string
-          ip_address?: string
-          success?: boolean
-          user_id?: string | null
-        }
-        Relationships: []
-      }
-      promocodes: {
-        Row: {
-          code: string
-          created_at: string
-          id: string
-          product_slug: string
-          used_at: string | null
-          used_by: string | null
-          used_by_email: string | null
-        }
-        Insert: {
-          code: string
-          created_at?: string
-          id?: string
-          product_slug?: string
-          used_at?: string | null
-          used_by?: string | null
-          used_by_email?: string | null
-        }
-        Update: {
-          code?: string
-          created_at?: string
-          id?: string
-          product_slug?: string
-          used_at?: string | null
-          used_by?: string | null
-          used_by_email?: string | null
+          knowledge?: Database["public"]["Enums"]["flashcard_knowledge"]
+          subject_id?: string
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
@@ -359,6 +365,63 @@ export type Database = {
           id?: string
           updated_at?: string
           user_id?: string
+        }
+        Relationships: []
+      }
+      promo_redeem_attempts: {
+        Row: {
+          code_attempted: string
+          created_at: string
+          id: string
+          ip_address: string
+          success: boolean
+          user_id: string | null
+        }
+        Insert: {
+          code_attempted?: string
+          created_at?: string
+          id?: string
+          ip_address: string
+          success?: boolean
+          user_id?: string | null
+        }
+        Update: {
+          code_attempted?: string
+          created_at?: string
+          id?: string
+          ip_address?: string
+          success?: boolean
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      promocodes: {
+        Row: {
+          code: string
+          created_at: string
+          id: string
+          product_slug: string
+          used_at: string | null
+          used_by: string | null
+          used_by_email: string | null
+        }
+        Insert: {
+          code: string
+          created_at?: string
+          id?: string
+          product_slug?: string
+          used_at?: string | null
+          used_by?: string | null
+          used_by_email?: string | null
+        }
+        Update: {
+          code?: string
+          created_at?: string
+          id?: string
+          product_slug?: string
+          used_at?: string | null
+          used_by?: string | null
+          used_by_email?: string | null
         }
         Relationships: []
       }
@@ -572,101 +635,6 @@ export type Database = {
         }
         Relationships: []
       }
-      topics: {
-        Row: {
-          created_at: string
-          id: string
-          name: string
-          slug: string
-          subject_id: string | null
-        }
-        Insert: {
-          created_at?: string
-          id?: string
-          name: string
-          slug: string
-          subject_id?: string | null
-        }
-        Update: {
-          created_at?: string
-          id?: string
-          name?: string
-          slug?: string
-          subject_id?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "topics_subject_id_fkey"
-            columns: ["subject_id"]
-            isOneToOne: false
-            referencedRelation: "subjects"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      activity_events: {
-        Row: {
-          created_at: string
-          duration_ms: number | null
-          entity_id: string | null
-          entity_type: string | null
-          event_type: Database["public"]["Enums"]["activity_event_type"]
-          id: string
-          metadata: Json
-          subject: string | null
-          user_id: string
-        }
-        Insert: {
-          created_at?: string
-          duration_ms?: number | null
-          entity_id?: string | null
-          entity_type?: string | null
-          event_type: Database["public"]["Enums"]["activity_event_type"]
-          id?: string
-          metadata?: Json
-          subject?: string | null
-          user_id: string
-        }
-        Update: {
-          created_at?: string
-          duration_ms?: number | null
-          entity_id?: string | null
-          entity_type?: string | null
-          event_type?: Database["public"]["Enums"]["activity_event_type"]
-          id?: string
-          metadata?: Json
-          subject?: string | null
-          user_id?: string
-        }
-        Relationships: []
-      }
-      flashcard_progress: {
-        Row: {
-          card_id: string
-          id: string
-          knowledge: Database["public"]["Enums"]["flashcard_knowledge"]
-          subject_id: string
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          card_id: string
-          id?: string
-          knowledge?: Database["public"]["Enums"]["flashcard_knowledge"]
-          subject_id: string
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          card_id?: string
-          id?: string
-          knowledge?: Database["public"]["Enums"]["flashcard_knowledge"]
-          subject_id?: string
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
       theory_progress: {
         Row: {
           chapter_id: string
@@ -702,6 +670,38 @@ export type Database = {
           user_id?: string
         }
         Relationships: []
+      }
+      topics: {
+        Row: {
+          created_at: string
+          id: string
+          name: string
+          slug: string
+          subject_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          name: string
+          slug: string
+          subject_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          name?: string
+          slug?: string
+          subject_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "topics_subject_id_fkey"
+            columns: ["subject_id"]
+            isOneToOne: false
+            referencedRelation: "subjects"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       user_presence: {
         Row: {
@@ -754,12 +754,12 @@ export type Database = {
     }
     Functions: {
       admin_list_users: {
-        Args: Record<PropertyKey, never>
+        Args: never
         Returns: {
-          user_id: string
+          display_name: string
           email: string
-          display_name: string | null
           registered_at: string
+          user_id: string
         }[]
       }
       has_role: {
@@ -769,6 +769,7 @@ export type Database = {
         }
         Returns: boolean
       }
+      is_admin_caller: { Args: never; Returns: boolean }
       match_book_chunks: {
         Args: { match_count?: number; query_embedding: string }
         Returns: {

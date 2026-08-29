@@ -8,6 +8,7 @@ import {
 } from "@/lib/admin-stats.server";
 import type {
   AdminCohortStats,
+  AdminJsonValue,
   AdminListUsersResult,
   AdminTimelineResult,
   AdminUserDetail,
@@ -222,7 +223,7 @@ export const adminGetUserTimeline = createServerFn({ method: "POST" })
         subject: row.subject,
         entityType: row.entity_type,
         entityId: row.entity_id,
-        metadata: (row.metadata ?? {}) as Record<string, unknown>,
+        metadata: (row.metadata ?? {}) as Record<string, AdminJsonValue>,
         durationMs: row.duration_ms,
         createdAt: row.created_at,
       })),
