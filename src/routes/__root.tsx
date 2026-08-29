@@ -87,6 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "BBE School | WU Vienna BBE Exam Prep" },
       { name: "description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
       { name: "author", content: "BBE School" },
+      { name: "google-site-verification", content: "3lPV7T3noTUbd1bD7X-m8CUYNLhXWe6LTqY2HV7YBQo" },
       { property: "og:title", content: "BBE School | WU Vienna BBE Exam Prep" },
       { property: "og:description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
       { property: "og:type", content: "website" },
