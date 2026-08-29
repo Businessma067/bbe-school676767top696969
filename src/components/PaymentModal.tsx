@@ -250,6 +250,17 @@ export function PaymentModal({
                     />
                   </div>
 
+                  {discountApplied && (
+                    <p
+                      className="rounded-md border px-3 py-2 text-sm font-semibold"
+                      style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10`, color: ORANGE }}
+                    >
+                      {DISCOUNT_PCT}% discount applied
+                    </p>
+                  )}
+
+
+
                   {error && (
                     <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
                       {error}
