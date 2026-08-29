@@ -16,8 +16,17 @@ SUPABASE_PUBLISHABLE_KEY=...
 
 Without `SUPABASE_SERVICE_ROLE_KEY` the panel shows an error instead of an empty list.
 
+## Promocodes (required for `/admin/promocodes` and checkout redeem)
+
+Run this migration once in **Supabase → SQL Editor** (safe to re-run):
+
+`supabase/migrations/20260829210000_promocodes.sql`
+
+It creates `promocodes` + `promo_redeem_attempts` and seeds the ten `BBE-FREE-*` codes.
+
 ## Pages
 
 - `/admin` — accounts + stats
 - `/admin/users` — searchable list
 - `/admin/users/{id}` — per-user detail
+- `/admin/promocodes` — available vs used Full Course codes

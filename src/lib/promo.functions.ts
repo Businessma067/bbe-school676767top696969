@@ -1,5 +1,4 @@
 import { createServerFn } from "@tanstack/react-start";
-import { getRequest } from "@tanstack/react-start/server";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { requireAdmin } from "@/lib/require-admin.server";
@@ -7,6 +6,9 @@ import { COURSE_CATALOG, type CourseSlug } from "@/lib/user-progress";
 
 const MAX_ATTEMPTS_PER_IP = 10;
 const ATTEMPT_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+const MIGRATION_HINT =
+  "Promocode tables are missing in Supabase. Run supabase/migrations/20260829210000_promocodes.sql in the Supabase SQL Editor, then reload.";
 
 const RedeemInput = z.object({
   code: z.string().min(1).max(64),
@@ -27,18 +29,22 @@ export type AdminPromocodeRow = {
   status: "available" | "used";
 };
 
+export type AdminPromocodesResult =
+  | { ok: true; codes: AdminPromocodeRow[]; available: number; used: number }
+  | { ok: false; error: string };
+
 function normalizeCode(raw: string): string {
   return raw.trim().toUpperCase().replace(/\s+/g, "");
 }
 
-function clientIp(request: Request): string {
-  const xf = request.headers.get("x-forwarded-for");
+function clientIpFromHeaders(headers: Headers): string {
+  const xf = headers.get("x-forwarded-for");
   if (xf) {
     const first = xf.split(",")[0]?.trim();
     if (first) return first.slice(0, 128);
   }
   for (const key of ["cf-connecting-ip", "x-real-ip", "x-vercel-forwarded-for"] as const) {
-    const v = request.headers.get(key)?.trim();
+    const v = headers.get(key)?.trim();
     if (v) return v.slice(0, 128);
   }
   return "unknown";
@@ -52,13 +58,38 @@ function resolveCatalog(slug: string): { slug: CourseSlug; meta: (typeof COURSE_
   return { slug: "full-course", meta: COURSE_CATALOG["full-course"] };
 }
 
+function isMissingRelationError(error: { message?: string; code?: string; details?: string } | null) {
+  if (!error) return false;
+  const blob = `${error.code ?? ""} ${error.message ?? ""} ${error.details ?? ""}`.toLowerCase();
+  return (
+    blob.includes("promocodes") ||
+    blob.includes("promo_redeem_attempts") ||
+    blob.includes("pgrst205") ||
+    blob.includes("does not exist") ||
+    blob.includes("schema cache")
+  );
+}
+
+function errorMessage(error: unknown, fallback: string): string {
+  if (!error) return fallback;
+  if (typeof error === "string") return error;
+  if (error instanceof Error && error.message) return error.message;
+  if (typeof error === "object" && error !== null && "message" in error) {
+    const msg = (error as { message?: unknown }).message;
+    if (typeof msg === "string" && msg.trim()) return msg;
+  }
+  return fallback;
+}
+
 export const redeemPromocode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => RedeemInput.parse(d))
   .handler(async ({ context, data }): Promise<PromoRedeemResult> => {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    // Dynamic import keeps this module safe to import from client components.
+    const { getRequest } = await import("@tanstack/react-start/server");
     const request = getRequest();
-    const ip = clientIp(request);
+    const ip = clientIpFromHeaders(request.headers);
     const code = normalizeCode(data.code);
     const userId = context.userId;
     const email =
@@ -73,6 +104,9 @@ export const redeemPromocode = createServerFn({ method: "POST" })
 
     if (countError) {
       console.error("promo rate count", countError);
+      if (isMissingRelationError(countError)) {
+        return { ok: false, error: MIGRATION_HINT };
+      }
       return { ok: false, error: "Could not verify promocode. Try again." };
     }
 
@@ -97,6 +131,9 @@ export const redeemPromocode = createServerFn({ method: "POST" })
 
     if (attemptError || !attemptRow) {
       console.error("promo attempt insert", attemptError);
+      if (isMissingRelationError(attemptError)) {
+        return { ok: false, error: MIGRATION_HINT };
+      }
       return { ok: false, error: "Could not verify promocode. Try again." };
     }
 
@@ -119,6 +156,9 @@ export const redeemPromocode = createServerFn({ method: "POST" })
 
     if (claimError) {
       console.error("promo claim", claimError);
+      if (isMissingRelationError(claimError)) {
+        return { ok: false, error: MIGRATION_HINT };
+      }
       return { ok: false, error: "Could not verify promocode. Try again." };
     }
 
@@ -160,18 +200,20 @@ export const redeemPromocode = createServerFn({ method: "POST" })
 
 export const adminListPromocodes = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
-  .handler(async ({ context }): Promise<{
-    codes: AdminPromocodeRow[];
-    available: number;
-    used: number;
-  }> => {
+  .handler(async ({ context }): Promise<AdminPromocodesResult> => {
     const db = context.supabaseAdmin;
     const { data, error } = await db
       .from("promocodes")
       .select("id, code, product_slug, used_at, used_by, used_by_email, created_at")
       .order("code", { ascending: true });
 
-    if (error) throw error;
+    if (error) {
+      console.error("adminListPromocodes", error);
+      if (isMissingRelationError(error)) {
+        return { ok: false, error: MIGRATION_HINT };
+      }
+      return { ok: false, error: errorMessage(error, "Failed to load promocodes") };
+    }
 
     const codes: AdminPromocodeRow[] = (data ?? []).map((row) => ({
       id: row.id,
@@ -185,5 +227,5 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
     }));
 
     const used = codes.filter((c) => c.status === "used").length;
-    return { codes, available: codes.length - used, used };
+    return { ok: true, codes, available: codes.length - used, used };
   });
