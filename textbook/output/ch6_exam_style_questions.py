@@ -1,979 +1,411 @@
-"""Chapter 6.5 word-problem questions (context = question, statements = short answer checks)."""
+"""Chapter 6.5 exam-style questions: 18 tasks × 5 independent TRUE/FALSE statements."""
 
 QUESTION_SPECS: list[dict] = [
     {
-        "title": 'Taxi fare budget',
-        "diff": '3/5',
-        "context": 'A taxi charges 3.50 EUR as a base fare plus 1.20 EUR for every kilometre driven. A passenger has exactly 18 EUR for the ride. What is the greatest whole number of kilometres the passenger can travel without going over budget?',
-        "overview": ('Set up a linear inequality for the fare, solve for distance, then round down to a whole number of kilometres.'),
-        "items": [
-            (
-                'The greatest whole number of kilometres is 12.',
-                True,
-                """**Reading the wording**
-
-Base fare 3.50 EUR plus 1.20 EUR per km; budget 18 EUR. Find the largest whole km count with fare at most 18 EUR.
-
-**Choose a variable**
-
-Let $d$ be the distance in kilometres. For a whole-number answer, $d$ is an integer.
-
-**Translate into an inequality**
-
-Fare: $3.50 + 1.20d$. Budget: $3.50 + 1.20d \le 18$.
-
-**Solve step by step**
-
-$1.20d \le 14.50$
-$d \le \dfrac{14.50}{1.20} \approx 12.083$.
-Largest whole $d$: 12.
-
-**Interpret the result**
-
-At most about 12.08 km are affordable, so the greatest whole number is 12.
-
-**Compare to the claim**
-
-The claim matches the solution, so it is true.
-
-**Quick check:** $d = 12$ costs $17.90 \le 18$; $d = 13$ costs $19.10 > 18$.""",
-            ),
-            (
-                'Travelling 13 km still stays within the 18 EUR budget.',
-                False,
-                """**Reading the wording**
-
-Same fare model; check whether 13 km is affordable.
-
-**Choose a variable**
-
-Let $d = 13$.
-
-**Translate into an inequality**
-
-$3.50 + 1.20 \cdot 13 \le 18$?
-
-**Solve step by step**
-
-$3.50 + 15.60 = 19.10 > 18$.
-
-**Interpret the result**
-
-Thirteen kilometres overshoots the budget.
-
-**Compare to the claim**
-
-The claim is false.
-
-**Quick check:** Maximum whole km is 12.""",
-            ),
-            (
-                'The exact continuous maximum distance is greater than 12 km.',
-                True,
-                """**Reading the wording**
-
-Before rounding to whole kilometres, the continuous bound was about 12.08 km.
-
-**Choose a variable**
-
-Let $d$ be a real distance.
-
-**Translate into an inequality**
-
-$3.50 + 1.20d \le 18$ gives $d \le 12.083\ldots$.
-
-**Solve step by step**
-
-The continuous maximum is about 12.08 km.
-
-**Interpret the result**
-
-That value is greater than 12.
-
-**Compare to the claim**
-
-The claim is true.
-
-**Quick check:** $d = 12.08$ is allowed; $d = 12.09$ is not.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Mobile data overage',
-        "diff": '3/5',
-        "context": 'A mobile plan costs 12 EUR per month plus 0.08 EUR for every megabyte used beyond the allowance. A customer has already used 200 MB over the allowance this month and wants the total bill to stay at or under 40 EUR. How many more over-allowance megabytes can they still use?',
-        "overview": ('Write the bill as a linear expression in the remaining overage, solve the inequality, and read the upper bound.'),
-        "items": [
-            (
-                'They can still use at most 150 more over-allowance megabytes.',
-                True,
-                """**Reading the wording**
-
-Fixed 12 EUR; 0.08 EUR per overage MB; already 200 MB over; bill at most 40 EUR.
-
-**Choose a variable**
-
-Let $m$ be additional over-allowance megabytes ($m \ge 0$).
-
-**Translate into an inequality**
-
-$12 + 0.08(200 + m) \le 40$.
-
-**Solve step by step**
-
-$28 + 0.08m \le 40$
-$m \le 150$.
-
-**Interpret the result**
-
-At most 150 further MB keep the bill within 40 EUR.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $m = 150$ gives bill 40 EUR; $m = 151$ gives 40.08 EUR.""",
-            ),
-            (
-                'Using 160 more over-allowance megabytes still keeps the bill at or under 40 EUR.',
-                False,
-                """**Reading the wording**
-
-Check $m = 160$ in the same bill formula.
-
-**Choose a variable**
-
-$m = 160$.
-
-**Translate into an inequality**
-
-$12 + 0.08(360) = 40.80$.
-
-**Solve step by step**
-
-$40.80 > 40$.
-
-**Interpret the result**
-
-160 MB more is too much.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** The cutoff is $m \le 150$.""",
-            ),
-            (
-                'If they use no more overage at all, the bill is already over 40 EUR.',
-                False,
-                """**Reading the wording**
-
-Check the bill with only the 200 MB already used.
-
-**Choose a variable**
-
-$m = 0$.
-
-**Translate into an inequality**
-
-$12 + 0.08 \cdot 200 = 28$.
-
-**Solve step by step**
-
-$28 \le 40$.
-
-**Interpret the result**
-
-The bill is still well under 40 EUR.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** They have room for up to 150 more MB.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Weekend trip savings',
-        "diff": '3/5',
-        "context": 'Maya already has 40 EUR and saves 25 EUR every week. She needs at least 300 EUR for a weekend trip. What is the smallest number of whole weeks she must keep saving to reach her goal?',
-        "overview": ('Solve a linear inequality for weeks and round up to the next whole week.'),
-        "items": [
-            (
-                'The smallest number of whole weeks is 11.',
-                True,
-                """**Reading the wording**
-
-Start 40 EUR; +25 EUR/week; need at least 300 EUR.
-
-**Choose a variable**
-
-Let $w$ be whole weeks of saving.
-
-**Translate into an inequality**
-
-$40 + 25w \ge 300$.
-
-**Solve step by step**
-
-$25w \ge 260$
-$w \ge 10.4$.
-Smallest whole $w$: 11.
-
-**Interpret the result**
-
-After 10 weeks she is still short; 11 weeks is the first that works.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $w = 10$ gives 290 EUR; $w = 11$ gives 315 EUR.""",
-            ),
-            (
-                'After 10 weeks she already has enough money.',
-                False,
-                """**Reading the wording**
-
-Evaluate the amount after 10 weeks.
-
-**Choose a variable**
-
-$w = 10$.
-
-**Translate into an inequality**
-
-$40 + 250 = 290$.
-
-**Solve step by step**
-
-$290 < 300$.
-
-**Interpret the result**
-
-She is 10 EUR short.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** She needs 11 weeks.""",
-            ),
-            (
-                'Any real number of weeks greater than or equal to 10.4 would work if fractional weeks were allowed.',
-                True,
-                """**Reading the wording**
-
-The continuous solution of the inequality is $w \ge 10.4$.
-
-**Choose a variable**
-
-Real $w \ge 0$.
-
-**Translate into an inequality**
-
-$40 + 25w \ge 300$ iff $w \ge 10.4$.
-
-**Solve step by step**
-
-Every real $w \ge 10.4$ meets the goal.
-
-**Interpret the result**
-
-That is exactly the continuous solution set.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** In practice she counts whole weeks, so she uses 11.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Elevator load limit',
-        "diff": '2/5',
-        "context": 'An elevator may carry at most 600 kg. Three adults of 70 kg, 85 kg, and 90 kg are already inside. Each child weighs 35 kg. What is the greatest number of such children who can still enter without exceeding the limit?',
-        "overview": ('Subtract the current load from the capacity and divide by the child mass; take the integer part.'),
-        "items": [
-            (
-                'At most 10 children can still enter.',
-                True,
-                """**Reading the wording**
-
-Capacity 600 kg; adults already 245 kg; each child 35 kg.
-
-**Choose a variable**
-
-Let $c$ be the number of children (whole number).
-
-**Translate into an inequality**
-
-$245 + 35c \le 600$.
-
-**Solve step by step**
-
-$35c \le 355$
-$c \le 10.14\ldots$.
-Largest whole $c$: 10.
-
-**Interpret the result**
-
-Ten children add 350 kg for a total of 595 kg.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $c = 10$ gives 595 kg; $c = 11$ gives 630 kg.""",
-            ),
-            (
-                'Eleven children can still enter safely.',
-                False,
-                """**Reading the wording**
-
-Check $c = 11$.
-
-**Choose a variable**
-
-$c = 11$.
-
-**Translate into an inequality**
-
-$245 + 385 = 630$.
-
-**Solve step by step**
-
-$630 > 600$.
-
-**Interpret the result**
-
-Eleven children exceed the limit.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** Maximum is 10.""",
-            ),
-            (
-                'With no children, more than half of the capacity is already used.',
-                False,
-                """**Reading the wording**
-
-Adults alone weigh 245 kg; half of 600 is 300 kg.
-
-**Choose a variable**
-
-Compare 245 with 300.
-
-**Translate into an inequality**
-
-$245 < 300$.
-
-**Solve step by step**
-
-Less than half the capacity is used.
-
-**Interpret the result**
-
-About 40.8% of capacity is used by the adults.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** $245/600 \approx 0.408$.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Car rental kilometres',
-        "diff": '3/5',
-        "context": 'A car rental costs 45 EUR per day plus 0.25 EUR per kilometre. A tourist rents the car for exactly 3 days and has a total budget of 200 EUR for the rental. What is the greatest whole number of kilometres they can drive without exceeding the budget?',
-        "overview": ('Fix the 3-day charge, solve for kilometres, then take the greatest whole number.'),
-        "items": [
-            (
-                'The greatest whole number of kilometres is 260.',
-                True,
-                """**Reading the wording**
-
-3 days × 45 EUR = 135 EUR fixed; +0.25 EUR/km; budget 200 EUR.
-
-**Choose a variable**
-
-Let $k$ be kilometres (whole number).
-
-**Translate into an inequality**
-
-$135 + 0.25k \le 200$.
-
-**Solve step by step**
-
-$0.25k \le 65$
-$k \le 260$.
-
-**Interpret the result**
-
-Exactly 260 km uses the full budget.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $k = 260$ costs 200 EUR; $k = 261$ costs 200.25 EUR.""",
-            ),
-            (
-                'Driving 300 km stays within the 200 EUR budget.',
-                False,
-                """**Reading the wording**
-
-Check $k = 300$.
-
-**Choose a variable**
-
-$k = 300$.
-
-**Translate into an inequality**
-
-$135 + 75 = 210$.
-
-**Solve step by step**
-
-$210 > 200$.
-
-**Interpret the result**
-
-300 km is over budget.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** Maximum is 260 km.""",
-            ),
-            (
-                'The fixed 3-day charge alone already uses more than half of the budget.',
-                True,
-                """**Reading the wording**
-
-Fixed charge 135 EUR; budget 200 EUR; half is 100 EUR.
-
-**Choose a variable**
-
-Compare 135 with 100.
-
-**Translate into an inequality**
-
-$135 > 100$.
-
-**Solve step by step**
-
-The daily charges alone exceed half the budget.
-
-**Interpret the result**
-
-Only 65 EUR remains for kilometres.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $135/200 = 0.675$.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Weekly pay with bonus',
+        "title": 'Exam-style inequalities — set A',
         "diff": '4/5',
-        "context": 'Leo earns 14 EUR per hour and receives a 50 EUR bonus if he works more than 25 hours in a week. He wants total pay of at least 450 EUR this week and will work more than 25 hours (so the bonus applies). What is the smallest whole number of hours he must work?',
-        "overview": ('Include the bonus in the pay formula, solve the inequality, and round up to a whole hour.'),
+        "overview": ('Classic exam mix: fencing ratio, quadratic height, average cost, factory constraints, algebraic system.'),
         "items": [
             (
-                'The smallest whole number of hours is 29.',
-                True,
-                """**Reading the wording**
-
-For $h > 25$, pay $= 14h + 50$. Need pay at least 450 EUR.
-
-**Choose a variable**
-
-Let $h$ be hours ($h > 25$, whole).
-
-**Translate into an inequality**
-
-$14h + 50 \ge 450$.
-
-**Solve step by step**
-
-$14h \ge 400$
-$h \ge \dfrac{400}{14} \approx 28.57$.
-Smallest whole $h$: 29.
-
-**Interpret the result**
-
-28 hours give only 442 EUR; 29 hours give 456 EUR.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $h = 28$: $442 < 450$; $h = 29$: $456 \ge 450$.""",
-            ),
-            (
-                'Working 28 hours is enough to reach 450 EUR.',
+                'A farmer is planning a rectangular field. He has 80 meters of fencing available. If he wants the area to be at least 48 m^2 and to keep a 3:1 ratio between the longer and shorter sides, then the shorter side can be between 4 and 20 meters long (both values included).',
                 False,
                 """**Reading the wording**
 
-Evaluate pay at 28 hours with bonus.
+        Fencing ≤ 80 m; area ≥ 48; sides 3:1. Claim: shorter side may be any value in [4, 20].
+
+        **Choose a variable**
+
+        Let $w>0$ be the shorter side; longer side $3w$.
+
+        **Translate into an inequality**
+
+        Fencing $2(3w+w)\le 80$. Area $3w^{2}\ge 48$.
+
+        **Solve step by step**
+
+        $8w\le 80\Rightarrow w\le 10$.
+$w^{2}\ge 16\Rightarrow w\ge 4$.
+Intersection: $4\le w\le 10$.
+
+        **Interpret the result**
+
+        True range is $[4,10]$, not $[4,20]$.
+
+        **Compare to the claim**
+
+        False — $w=20$ needs 160 m of fence.
+
+        **Quick check:** $w=4$ area 48; $w=10$ uses 80 m; $w=20$ needs 160 m.""",
+            ),
+            (
+                'If the height in meters after x seconds is $f(x)=-5x^{2}+70x+3$, then the object is more than 123 meters above the ground between 2 and 12 seconds.',
+                True,
+                """**Reading the wording**
+
+        Claim: $f(x)>123$ holds between 2 and 12 seconds.
+
+        **Choose a variable**
+
+        Let $x$ be time in seconds.
+
+        **Translate into an inequality**
+
+        $-5x^{2}+70x+3>123$.
+
+        **Solve step by step**
+
+        $-5x^{2}+70x-120>0$. Divide by $-5$ (reverse): $x^{2}-14x+24<0$
+$(x-2)(x-12)<0\Rightarrow 2<x<12$.
+
+        **Interpret the result**
+
+        Strictly above 123 m on the open interval $(2,12)$.
+
+        **Compare to the claim**
+
+        True — matches the claim’s open timing window.
+
+        **Quick check:** $f(7)=248>123$; $f(2)=f(12)=123$.""",
+            ),
+            (
+                'If producing x units costs $150+0.2x$ EUR, then at least 83 whole units must be produced for the average cost per unit to fall below 2 EUR.',
+                False,
+                """**Reading the wording**
+
+Average cost $<2$ EUR; whole units. Claim: 83 already works.
 
 **Choose a variable**
 
-$h = 28$.
+Let $x>0$ be whole units.
 
 **Translate into an inequality**
 
-$14 \cdot 28 + 50 = 442$.
+$\dfrac{150+0.2x}{x}<2$.
 
 **Solve step by step**
 
-$442 < 450$.
+$x>150/1.8=83.\overline{3}$. Smallest whole $x$ is 84.
 
 **Interpret the result**
 
-28 hours is not enough.
+At 83 the average is still slightly above 2 EUR.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** He needs 29 hours.""",
+**Quick check:** $x=83\approx 2.007$ EUR; $x=84\approx 1.986$ EUR.""",
             ),
             (
-                'Without the bonus, he would need more than 32 hours to reach 450 EUR.',
-                True,
+                'One product uses 3 units of A, 2 of B, and 4 of C at 40, 50, and 25 EUR, plus 12 EUR finishing. Budget 21,400 EUR and storage at most 475 raw units. The maximum number of products is less than 50.',
+                False,
                 """**Reading the wording**
 
-Without bonus, pay $= 14h$. Need $14h \ge 450$.
+9 raw units and 332 EUR per product.
 
 **Choose a variable**
 
-$h$ hours, no bonus.
+Let $n$ be whole products.
 
 **Translate into an inequality**
 
-$h \ge \dfrac{450}{14} \approx 32.14$.
+$9n\le 475$ and $332n\le 21400$.
 
 **Solve step by step**
 
-He would need at least 33 whole hours.
+$n\le 52$ (storage binds); budget allows up to 64.
 
 **Interpret the result**
 
-That is more than 32 hours.
+Maximum is 52, not less than 50.
 
 **Compare to the claim**
 
-True.
+False.
 
-**Quick check:** $h = 32$ gives 448 EUR without bonus.""",
+**Quick check:** $n=52$ stores 468, costs 17264; $n=53$ needs 477 stored units.""",
+            ),
+            (
+                'The inequality system $\\dfrac{4}{x}<x<|2-3x|$ is satisfied if and only if $|x|>2$.',
+                False,
+                """**Reading the wording**
+
+Claim: solution equals $|x|>2$.
+
+**Choose a variable**
+
+Domain $x\ne 0$.
+
+**Translate into an inequality**
+
+Solve $\dfrac{4}{x}<x$ and $x<|2-3x|$ separately, then intersect.
+
+**Solve step by step**
+
+Left: $(2,\infty)\cup(-2,0)$. Right: $x<\tfrac{1}{2}$ or $x>1$. Intersection: $(-2,0)\cup(2,\infty)$.
+
+**Interpret the result**
+
+$|x|>2$ includes $(-\infty,-2)$ and drops $(-2,0)$.
+
+**Compare to the claim**
+
+False — sets differ.
+
+**Quick check:** $x=-1$ works but $|-1|\not>2$; $x=-3$ fails the left part.""",
             ),
         ],
     },
     {
-        "title": 'Fuel budget for a trip',
+        "title": 'Exam-style inequalities — set B',
         "diff": '3/5',
-        "context": 'A car uses 0.07 litres of fuel per kilometre. Fuel costs 1.60 EUR per litre. A driver has 56 EUR to spend on fuel for a trip. What is the greatest trip distance in kilometres that stays within this fuel budget?',
-        "overview": ('Combine consumption and price into a cost-per-kilometre rate, then solve the budget inequality.'),
+        "overview": ('Claims about greatest/smallest whole values and a closed quadratic height interval.'),
         "items": [
             (
-                'The greatest distance is exactly 500 km.',
-                True,
-                """**Reading the wording**
-
-0.07 L/km at 1.60 EUR/L; budget 56 EUR.
-
-**Choose a variable**
-
-Let $d$ be distance in km.
-
-**Translate into an inequality**
-
-Cost: $1.60 \cdot 0.07d = 0.112d \le 56$.
-
-**Solve step by step**
-
-$d \le \dfrac{56}{0.112} = 500$.
-
-**Interpret the result**
-
-The maximum is exactly 500 km.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $d = 500$ costs 56 EUR; $d = 501$ costs 56.112 EUR.""",
-            ),
-            (
-                'A 480 km trip costs more than 56 EUR in fuel.',
+                'A taxi charges 3.50 EUR base plus 1.20 EUR per kilometre. With 18 EUR, the greatest whole number of kilometres without going over budget is 15.',
                 False,
                 """**Reading the wording**
 
-Compute cost at 480 km.
+Claim: max whole km is 15.
 
 **Choose a variable**
 
-$d = 480$.
+Let $d$ be whole kilometres.
 
 **Translate into an inequality**
 
-$0.112 \cdot 480 = 53.76$.
+$3.50+1.20d\le 18$.
 
 **Solve step by step**
 
-$53.76 \le 56$.
+$d\le 14.5/1.2\approx 12.08\Rightarrow$ max whole $d=12$.
 
 **Interpret the result**
 
-480 km is still within budget.
+15 km costs 21.50 EUR.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** Only beyond 500 km exceeds 56 EUR.""",
+**Quick check:** $d=12$ costs 17.90; $d=13$ costs 19.10.""",
             ),
             (
-                'Each kilometre costs 0.112 EUR in fuel.',
-                True,
-                """**Reading the wording**
-
-Price per litre times litres per kilometre.
-
-**Choose a variable**
-
-Unit cost $= 1.60 \cdot 0.07$.
-
-**Translate into an inequality**
-
-$1.60 \cdot 0.07 = 0.112$ EUR/km.
-
-**Solve step by step**
-
-That is the slope of the cost function.
-
-**Interpret the result**
-
-Budget divided by 0.112 gives 500 km.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $56 / 0.112 = 500$.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Medicine fridge temperature',
-        "diff": '4/5',
-        "context": 'A medicine fridge must stay between 2 °C and 8 °C inclusive. A technician proposes the condition |T − 5| ≤ 3 as a test for acceptable temperature T. Does this absolute-value condition match the required temperature range exactly?',
-        "overview": ('Rewrite the absolute-value inequality as a closed interval and compare it with [2, 8].'),
-        "items": [
-            (
-                'The condition |T − 5| ≤ 3 is exactly the same as 2 ≤ T ≤ 8.',
-                True,
-                """**Reading the wording**
-
-Required range [2, 8]. Proposed: |T−5|≤3.
-
-**Choose a variable**
-
-Let $T$ be temperature in °C.
-
-**Translate into an inequality**
-
-$|T - 5| \le 3$ means $-3 \le T - 5 \le 3$, so $2 \le T \le 8$.
-
-**Solve step by step**
-
-The two descriptions are identical.
-
-**Interpret the result**
-
-The condition matches the range exactly.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $T = 2$ and $T = 8$ give absolute deviation 3; $T = 1$ gives 4.""",
-            ),
-            (
-                'The wider condition |T − 5| ≤ 4 also matches the required range exactly.',
+                'Maya has 40 EUR and saves 25 EUR each week. The smallest number of whole weeks needed to reach at least 300 EUR is 10.',
                 False,
                 """**Reading the wording**
 
-|T−5|≤4 expands to [1, 9], which is wider than [2, 8].
+Claim: 10 weeks suffice.
 
 **Choose a variable**
 
-$T$ temperature.
+Let $w$ be whole weeks.
 
 **Translate into an inequality**
 
-$1 \le T \le 9$ versus $2 \le T \le 8$.
+$40+25w\ge 300$.
 
 **Solve step by step**
 
-The sets are not equal.
+$w\ge 10.4\Rightarrow$ smallest whole $w=11$.
 
 **Interpret the result**
 
-The wider condition allows unsafe temperatures.
+After 10 weeks she has 290 EUR.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** $T = 1$ satisfies |T−5|≤4 but not the required range.""",
+**Quick check:** $w=10\to 290$; $w=11\to 315$.""",
             ),
             (
-                'Every temperature that satisfies |T − 5| ≤ 3 is at least 2 °C.',
+                'If $s(t)=-4t^{2}+32t+5$, then $s(t)\\ge 53$ for every t in the closed interval $[2,6]$.',
                 True,
                 """**Reading the wording**
 
-From |T−5|≤3 we get T≥2.
+Claim: height ≥ 53 throughout $[2,6]$.
 
 **Choose a variable**
 
-$T$ temperature.
+Let $t$ be seconds.
 
 **Translate into an inequality**
 
-$-3 \le T - 5$ implies $T \ge 2$.
+$-4t^{2}+32t+5\ge 53$.
 
 **Solve step by step**
 
-The lower bound is included.
+$t^{2}-8t+12\le 0\Rightarrow (t-2)(t-6)\le 0\Rightarrow 2\le t\le 6$.
 
 **Interpret the result**
 
-Same for the upper bound $T \le 8$.
+Solution set is exactly $[2,6]$.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** The interval is exactly $[2, 8]$.""",
+**Quick check:** $s(2)=s(6)=53$; $s(4)=69$.""",
+            ),
+            (
+                'A 3-day car rental costs 45 EUR/day plus 0.25 EUR/km with a 200 EUR budget. The greatest whole number of kilometres allowed is 260.',
+                True,
+                """**Reading the wording**
+
+Claim: max km is 260.
+
+**Choose a variable**
+
+Let $k$ be whole kilometres.
+
+**Translate into an inequality**
+
+$135+0.25k\le 200$.
+
+**Solve step by step**
+
+$k\le 260$.
+
+**Interpret the result**
+
+260 km uses the budget exactly.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $k=260\to 200$; $k=261\to 200.25$.""",
+            ),
+            (
+                'An elevator limit is 600 kg. Adults of 70, 85, and 90 kg are already inside. At most 8 children of 35 kg each can still enter.',
+                False,
+                """**Reading the wording**
+
+Claim: maximum children is 8.
+
+**Choose a variable**
+
+Let $c$ be children.
+
+**Translate into an inequality**
+
+$245+35c\le 600$.
+
+**Solve step by step**
+
+$c\le 10.14\Rightarrow$ max $c=10$.
+
+**Interpret the result**
+
+8 is allowed, but the maximum is 10.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $c=10\to 595$ kg; $c=11\to 630$ kg.""",
             ),
         ],
     },
     {
-        "title": 'Water tank filling time',
+        "title": 'Exam-style inequalities — set C',
         "diff": '3/5',
-        "context": 'An empty tank holds 480 litres. A tap fills it at 12 litres per minute. After how many minutes of continuous filling from empty is the tank exactly half full?',
-        "overview": ('Set volume = rate × time and compare with half capacity.'),
+        "overview": ('Sufficiency claims, plan comparison, fuel range, discount ceiling, courier timing.'),
         "items": [
             (
-                'The tank is exactly half full after 20 minutes.',
-                True,
-                """**Reading the wording**
-
-Capacity 480 L; half = 240 L; rate 12 L/min.
-
-**Choose a variable**
-
-Let $t$ be minutes.
-
-**Translate into an inequality**
-
-$12t = 240$.
-
-**Solve step by step**
-
-$t = 20$.
-
-**Interpret the result**
-
-After 20 minutes the volume is exactly half.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $12 \cdot 20 = 240$.""",
-            ),
-            (
-                'After 30 minutes the tank is still at most half full.',
+                'Leo earns 14 EUR/h plus a 50 EUR bonus when he works more than 25 hours. Working 28 hours is enough to earn at least 450 EUR.',
                 False,
                 """**Reading the wording**
 
-Volume after 30 min is 360 L; half is 240 L.
+Claim: 28 hours with bonus reach ≥ 450.
 
 **Choose a variable**
 
-$t = 30$.
+Let $h=28>25$.
 
 **Translate into an inequality**
 
-$360 \le 240$?
+$14h+50\ge 450$.
 
 **Solve step by step**
 
-$360 > 240$.
+$h\ge 400/14\approx 28.57$. At $h=28$: pay $=442<450$.
 
 **Interpret the result**
 
-The tank is three-quarters full.
+Need at least 29 hours.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** $360/480 = 0.75$.""",
+**Quick check:** $h=29\to 456$ EUR.""",
             ),
             (
-                'The tank becomes completely full in 40 minutes.',
+                'Plan A costs 10 EUR plus 0.10 EUR per call-minute; Plan B costs 20 EUR plus 0.05 EUR per call-minute. Plan A is strictly cheaper whenever fewer than 200 call-minutes are used.',
                 True,
                 """**Reading the wording**
 
-Full means 480 L at 12 L/min.
+Claim: A < B for $x<200$.
 
 **Choose a variable**
 
-$12t = 480$.
+Let $x$ be call-minutes.
 
 **Translate into an inequality**
 
-$t = 40$.
+$10+0.10x<20+0.05x$.
 
 **Solve step by step**
 
-40 minutes fill the tank.
+$0.05x<10\Rightarrow x<200$.
 
 **Interpret the result**
 
-Yes.
+Strict inequality holds exactly for $x<200$.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** $12 \cdot 40 = 480$.""",
+**Quick check:** $x=100$: A=20, B=25; $x=200$: both 30.""",
             ),
-        ],
-    },
-    {
-        "title": 'Courier delivery deadline',
-        "diff": '3/5',
-        "context": 'A courier must finish a delivery within 90 minutes. Driving takes 1.5 minutes per kilometre, and there is a fixed 15-minute stop at the warehouse. What is the greatest delivery distance in kilometres that can still be completed on time?',
-        "overview": ('Subtract the fixed stop from the time limit, then divide by the per-kilometre driving time.'),
-        "items": [
             (
-                'The greatest on-time distance is 50 km.',
+                'A car uses 0.07 L/km and fuel costs 1.60 EUR/L. With 56 EUR for fuel, any trip of 500 km or less stays within budget.',
                 True,
                 """**Reading the wording**
 
-Limit 90 min; fixed stop 15 min; 1.5 min/km driving.
+Claim: every $d\le 500$ is affordable.
 
 **Choose a variable**
 
-Let $d$ be distance in km.
+Let $d$ be km.
 
 **Translate into an inequality**
 
-$15 + 1.5d \le 90$.
+$0.112d\le 56$.
 
 **Solve step by step**
 
-$1.5d \le 75$
-$d \le 50$.
+$d\le 500$.
 
 **Interpret the result**
 
-Maximum on-time distance is 50 km.
+500 km is the exact cutoff.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** $d = 50$ uses exactly 90 min; $d = 51$ uses 91.5 min.""",
+**Quick check:** $d=500\to 56$; $d=501\to 56.112$.""",
             ),
             (
-                'A 45 km delivery cannot be completed on time.',
+                'A shop offers 20% off. With 48 EUR, Nora can afford any item whose marked price is at most 55 EUR.',
                 False,
                 """**Reading the wording**
 
-Check time for 45 km.
-
-**Choose a variable**
-
-$d = 45$.
-
-**Translate into an inequality**
-
-$15 + 67.5 = 82.5$.
-
-**Solve step by step**
-
-$82.5 \le 90$.
-
-**Interpret the result**
-
-45 km is on time.
-
-**Compare to the claim**
-
-False.
-
-**Quick check:** Anything up to 50 km works.""",
-            ),
-            (
-                'Without the warehouse stop, the courier could cover more than 50 km in 90 minutes.',
-                True,
-                """**Reading the wording**
-
-If only driving: $1.5d \le 90$ gives $d \le 60$.
-
-**Choose a variable**
-
-$d$ distance, no stop.
-
-**Translate into an inequality**
-
-$d \le 60$.
-
-**Solve step by step**
-
-60 km is greater than 50 km.
-
-**Interpret the result**
-
-The 15-minute stop costs 10 km of range.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $90/1.5 = 60$.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Shop discount budget',
-        "diff": '3/5',
-        "context": 'A shop offers 20% off every marked price. Nora has 48 EUR and wants to buy one item after the discount. What is the greatest marked price she can afford?',
-        "overview": ('Paying 80% of the marked price, solve 0.8p ≤ 48 for p.'),
-        "items": [
-            (
-                'The greatest affordable marked price is 60 EUR.',
-                True,
-                """**Reading the wording**
-
-20% off means she pays 80%; cash 48 EUR.
+Claim: marked-price ceiling is 55 EUR.
 
 **Choose a variable**
 
@@ -981,190 +413,824 @@ Let $p$ be marked price.
 
 **Translate into an inequality**
 
-$0.8p \le 48$.
+$0.8p\le 48\Rightarrow p\le 60$.
 
 **Solve step by step**
 
-$p \le 60$.
+She can afford up to 60 EUR marked.
 
 **Interpret the result**
 
-Maximum marked price is 60 EUR.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $p = 60$ costs 48 EUR; $p = 61$ costs 48.80 EUR.""",
-            ),
-            (
-                'An item marked 55 EUR costs more than 48 EUR after the discount.',
-                False,
-                """**Reading the wording**
-
-Discounted price of 55 EUR is 44 EUR.
-
-**Choose a variable**
-
-$p = 55$.
-
-**Translate into an inequality**
-
-$0.8 \cdot 55 = 44$.
-
-**Solve step by step**
-
-$44 \le 48$.
-
-**Interpret the result**
-
-44 EUR is affordable.
+55 understates the true ceiling.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** Only marked prices above 60 EUR fail.""",
+**Quick check:** $p=60\to 48$ EUR; $p=55\to 44$ EUR.""",
             ),
             (
-                'If the marked price is halved, Nora pays 40% of the original marked price.',
+                'A courier has 90 minutes including a fixed 15-minute warehouse stop and drives at 1.5 min/km. Every address within 45 km can be reached on time.',
                 True,
                 """**Reading the wording**
 
-She always pays 80% of the shown mark.
+Claim: all $d\le 45$ finish within 90 min.
 
 **Choose a variable**
 
-Original mark $p$; new mark $p/2$.
+Let $d$ be km.
 
 **Translate into an inequality**
 
-Payment $= 0.8 \cdot (p/2) = 0.4p$.
+$15+1.5d\le 90\Rightarrow d\le 50$.
 
 **Solve step by step**
 
-That is 40% of the original mark.
+$[0,45]\subset[0,50]$.
 
 **Interpret the result**
 
-True as a percentage of the original mark.
+45 km is safely inside the limit.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** Mark 60 → pay 48; mark 30 → pay 24 = 40% of 60.""",
+**Quick check:** $d=45\to 82.5$ min; $d=50\to 90$ min.""",
             ),
         ],
     },
     {
-        "title": 'Weighted exam grade',
+        "title": 'Exam-style inequalities — set D',
         "diff": '4/5',
-        "context": 'An exam has Part A worth 40% of the grade and Part B worth 60%. Sam scored 70% on Part A. What is the lowest whole-number percent he needs on Part B to reach an overall grade of at least 85%?',
-        "overview": ('Write the weighted average inequality and solve for Part B; round up to a whole percent.'),
+        "overview": ('Absolute-value bands, iff claims, square-root domain, compound linear inequality.'),
         "items": [
             (
-                'He needs at least 95% on Part B.',
-                True,
+                'A medicine fridge must stay between 2 °C and 8 °C inclusive. The condition $|T-5|\\le 4$ describes exactly that required range.',
+                False,
                 """**Reading the wording**
 
-Overall = 0.4·70 + 0.6·b = 28 + 0.6b. Need at least 85.
+Claim: $|T-5|\le 4$ equals $[2,8]$.
 
 **Choose a variable**
 
-Let $b$ be Part B percent.
+Let $T$ be °C.
 
 **Translate into an inequality**
 
-$28 + 0.6b \ge 85$.
+$|T-5|\le 4\Rightarrow 1\le T\le 9$.
 
 **Solve step by step**
 
-$0.6b \ge 57$
-$b \ge 95$.
+Compare $[1,9]$ with $[2,8]$.
 
 **Interpret the result**
 
-The lowest whole percent is 95.
+The absolute-value set is wider.
+
+**Compare to the claim**
+
+False — correct form is $|T-5|\le 3$.
+
+**Quick check:** $T=1$ satisfies $|T-5|\le 4$ but not $[2,8]$.""",
+            ),
+            (
+                'Pool chlorine should stay between 1.0 and 3.0 mg/L inclusive. The reading C is acceptable if and only if $|C-2|\\le 1$.',
+                True,
+                """**Reading the wording**
+
+Claim: acceptable iff $|C-2|\le 1$.
+
+**Choose a variable**
+
+Let $C$ be mg/L.
+
+**Translate into an inequality**
+
+$|C-2|\le 1\Rightarrow 1\le C\le 3$.
+
+**Solve step by step**
+
+Sets coincide.
+
+**Interpret the result**
+
+Iff claim is correct.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** $b = 95$ gives 85%; $b = 94$ gives 84.4%.""",
+**Quick check:** $C=1,3$ are boundaries; $C=0.5$ fails.""",
             ),
             (
-                'Scoring 80% on Part B is enough for an 85% overall grade.',
+                'A storage room should keep humidity between 42% and 48%. Whenever $|H-45|\\le 5$, the humidity is automatically inside that band.',
                 False,
                 """**Reading the wording**
 
-Overall at b=80 is 76%.
+Claim: $|H-45|\le 5$ forces $[42,48]$.
 
 **Choose a variable**
 
-$b = 80$.
+Let $H$ be humidity %.
 
 **Translate into an inequality**
 
-$28 + 48 = 76$.
+$|H-45|\le 5\Rightarrow 40\le H\le 50$.
 
 **Solve step by step**
 
-$76 < 85$.
+$[40,50]$ properly contains $[42,48]$.
 
 **Interpret the result**
 
-80% on B only yields 76% overall.
+$H=41$ keeps the abs bound but is too dry.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** He needs 95% on B.""",
+**Quick check:** $|41-45|=4\le 5$, yet $41\notin[42,48]$.""",
             ),
             (
-                'Part A alone already contributes 28 percentage points to the overall grade.',
+                'The solution set of $\\sqrt{x+3}\\ge 2$ is exactly $x\\ge 1$.',
                 True,
                 """**Reading the wording**
 
-$0.4 \cdot 70 = 28$.
+Claim: solution is $x\ge 1$.
 
 **Choose a variable**
 
-Fixed contribution from A.
+Domain $x\ge -3$.
 
 **Translate into an inequality**
 
-Overall $= 28 + 0.6b$.
+Square: $x+3\ge 4\Rightarrow x\ge 1$.
 
 **Solve step by step**
 
-28 points are locked in.
+Intersect with domain: still $x\ge 1$.
 
 **Interpret the result**
 
-He still needs 57 more points from Part B’s 60% weight.
+Matches the claim.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** $0.6 \cdot 95 = 57$.""",
+**Quick check:** $x=1\to\sqrt{4}=2$; $x=0\to\sqrt{3}<2$.""",
+            ),
+            (
+                'The compound inequality $-1\\le 2x-5\\le 7$ has solution set $[2,6]$.',
+                True,
+                """**Reading the wording**
+
+Claim: solution is $[2,6]$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$-1\le 2x-5$ and $2x-5\le 7$.
+
+**Solve step by step**
+
+$x\ge 2$ and $x\le 6$.
+
+**Interpret the result**
+
+Closed interval $[2,6]$.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=2\to -1$; $x=6\to 7$.""",
             ),
         ],
     },
     {
-        "title": 'Weekly calorie goal',
+        "title": 'Exam-style inequalities — set E',
         "diff": '3/5',
-        "context": 'Ana burns about 8 kcal per minute of jogging. She has already burned 900 kcal from other activity this week and wants a weekly total of at least 2500 kcal. What is the smallest whole number of jogging minutes she still needs?',
-        "overview": ('Solve 900 + 8m ≥ 2500 for m and round up.'),
+        "overview": ('Packing, tickets, bakery, paint mix, drone range.'),
         "items": [
             (
-                'She needs at least 200 minutes of jogging.',
+                'A parcel may weigh at most 5 kg. The box is 1.2 kg and each item is 0.4 kg. Packing 10 items is still allowed.',
+                False,
+                """**Reading the wording**
+
+Claim: $n=10$ stays ≤ 5 kg.
+
+**Choose a variable**
+
+Let $n$ be items.
+
+**Translate into an inequality**
+
+$1.2+0.4n\le 5\Rightarrow n\le 9.5$.
+
+**Solve step by step**
+
+Max whole $n=9$.
+
+**Interpret the result**
+
+10 items weigh 5.2 kg.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $n=9\to 4.8$ kg; $n=10\to 5.2$ kg.""",
+            ),
+            (
+                'Concert tickets cost 28 EUR each plus a one-time 12 EUR fee. With 160 EUR, a club can buy tickets for at most 5 people.',
                 True,
                 """**Reading the wording**
 
-Already 900 kcal; +8 kcal/min; goal at least 2500.
+Claim: max people is 5.
+
+**Choose a variable**
+
+Let $n\ge 1$ be people.
+
+**Translate into an inequality**
+
+$28n+12\le 160\Rightarrow n\le 5.286$.
+
+**Solve step by step**
+
+Max whole $n=5$.
+
+**Interpret the result**
+
+5 costs 152 EUR; 6 costs 180 EUR.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $n=5\to 152$; $n=6\to 180$.""",
+            ),
+            (
+                'A bakery has 25 kg of flour and each loaf needs 0.4 kg. It is possible to bake 60 loaves from this stock.',
+                True,
+                """**Reading the wording**
+
+Claim: 60 loaves are feasible.
+
+**Choose a variable**
+
+Let $n$ be loaves.
+
+**Translate into an inequality**
+
+$0.4n\le 25\Rightarrow n\le 62.5$.
+
+**Solve step by step**
+
+60 ≤ 62.5, so allowed.
+
+**Interpret the result**
+
+60 loaves use 24 kg.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $n=62\to 24.8$ kg; $n=63\to 25.2$ kg.""",
+            ),
+            (
+                'A 2:1 paint mix (white 3 EUR/L, colour 9 EUR/L) costs at most 50 EUR whenever total blend volume is at most 12 litres.',
+                False,
+                """**Reading the wording**
+
+Claim: every $V\le 12$ costs ≤ 50 EUR.
+
+**Choose a variable**
+
+Let $V$ be litres of blend.
+
+**Translate into an inequality**
+
+Cost $5V\le 50\Rightarrow V\le 10$.
+
+**Solve step by step**
+
+At $V=12$, cost is 60 EUR.
+
+**Interpret the result**
+
+Only up to 10 L stay within 50 EUR.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $V=10\to 50$; $V=12\to 60$.""",
+            ),
+            (
+                'A drone can fly at most 40 minutes and uses 0.8 min per kilometre. Any one-way delivery of 55 km can be completed on one charge.',
+                False,
+                """**Reading the wording**
+
+Claim: 55 km fits in 40 min.
+
+**Choose a variable**
+
+Let $d$ be one-way km.
+
+**Translate into an inequality**
+
+$0.8d\le 40\Rightarrow d\le 50$.
+
+**Solve step by step**
+
+55 km needs 44 minutes.
+
+**Interpret the result**
+
+Beyond battery life.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $d=50\to 40$ min; $d=55\to 44$ min.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set F',
+        "diff": '4/5',
+        "overview": ('Train speed, overtime, loan payoff, parking, quadratic profit solution set.'),
+        "items": [
+            (
+                'A 180 km train trip must finish in at most 2.5 hours. Any constant average speed of at least 70 km/h is fast enough.',
+                False,
+                """**Reading the wording**
+
+Claim: every $v\ge 70$ works.
+
+**Choose a variable**
+
+Let $v>0$ be km/h.
+
+**Translate into an inequality**
+
+$\dfrac{180}{v}\le 2.5\Rightarrow v\ge 72$.
+
+**Solve step by step**
+
+At $v=70$, time ≈ 2.57 h > 2.5.
+
+**Interpret the result**
+
+Need at least 72 km/h.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $v=72\to$ exactly 2.5 h.""",
+            ),
+            (
+                'Jordan earns 12 EUR/h for the first 40 hours and 18 EUR/h thereafter. Working 46 hours yields at least 600 EUR.',
+                False,
+                """**Reading the wording**
+
+Claim: 46 hours → ≥ 600 EUR.
+
+**Choose a variable**
+
+Let $h=46$.
+
+**Translate into an inequality**
+
+Pay $=480+18\cdot 6=588$.
+
+**Solve step by step**
+
+$588<600$. Need $h\ge 46.67\Rightarrow$ at least 47.
+
+**Interpret the result**
+
+46 hours fall short.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $h=47\to 606$ EUR.""",
+            ),
+            (
+                'A student owes 1,200 EUR interest-free and pays 150 EUR each month. The loan is fully paid after at most 8 monthly payments.',
+                True,
+                """**Reading the wording**
+
+Claim: ≤ 8 payments clear 1200 EUR.
+
+**Choose a variable**
+
+Let $n$ be payments.
+
+**Translate into an inequality**
+
+$150n\ge 1200\Rightarrow n\ge 8$.
+
+**Solve step by step**
+
+Exactly 8 payments clear the debt.
+
+**Interpret the result**
+
+8 is necessary and sufficient.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $n=7\to 1050$; $n=8\to 1200$.""",
+            ),
+            (
+                'A parking garage has 2.10 m clearance. A car 1.70 m tall with a 0.35 m roof box can enter.',
+                True,
+                """**Reading the wording**
+
+Claim: $1.70+0.35\le 2.10$.
+
+**Choose a variable**
+
+Total height $h=2.05$.
+
+**Translate into an inequality**
+
+$2.05\le 2.10$.
+
+**Solve step by step**
+
+5 cm spare.
+
+**Interpret the result**
+
+Entry allowed.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** A 0.45 m box would give 2.15 m and fail.""",
+            ),
+            (
+                'If $p(x)=-2x^{2}+24x-10$, then the solution set of $p(x)>50$ is exactly the closed interval $[4,8]$.',
+                False,
+                """**Reading the wording**
+
+Claim: $p(x)>50$ iff $x\in[4,8]$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$x^{2}-12x+30<0$.
+
+**Solve step by step**
+
+Roots $6\pm\sqrt{6}$; solution $(6-\sqrt{6},\,6+\sqrt{6})$, open.
+
+**Interpret the result**
+
+Not the closed interval $[4,8]$.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $p(4)=54>50$, but true endpoints are $6\pm\sqrt{6}$.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set G',
+        "diff": '4/5',
+        "overview": ('Fence-and-area geometry with changing ratios and a square plot.'),
+        "items": [
+            (
+                'A gardener fences three sides of a rectangular bed against a wall with 40 m of fencing. For area at least 96 m^2, every width from 4 m to 18 m inclusive is possible.',
+                False,
+                """**Reading the wording**
+
+Claim: every $w\in[4,18]$ works.
+
+**Choose a variable**
+
+Let $w$ be width; $L=40-2w$.
+
+**Translate into an inequality**
+
+$w(40-2w)\ge 96\Rightarrow w^{2}-20w+48\le 0$.
+
+**Solve step by step**
+
+$(w-4)(w-16)\le 0\Rightarrow 4\le w\le 16$.
+
+**Interpret the result**
+
+Width 18 m gives area 72 < 96.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $w=16\to 128$; $w=18\to 72$.""",
+            ),
+            (
+                'A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 length-to-width ratio, and needs area at least 160 m^2. Every shorter-side length from 8 m to 12 m inclusive is feasible.',
+                True,
+                """**Reading the wording**
+
+Claim: every $w\in[8,12]$ works.
+
+**Choose a variable**
+
+Width $w$, length $5w/2$.
+
+**Translate into an inequality**
+
+$7w\le 96$ and $\tfrac{5}{2}w^{2}\ge 160$.
+
+**Solve step by step**
+
+$8\le w\le 96/7\approx 13.71$, which contains $[8,12]$.
+
+**Interpret the result**
+
+All claimed widths are feasible.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $w=12$ uses 84 m and has area 360.""",
+            ),
+            (
+                'A square plot uses at most 40 m of fencing and must have area at least 81 m^2. Every side length from 9 m to 12 m inclusive is feasible.',
+                False,
+                """**Reading the wording**
+
+Claim: every $s\in[9,12]$ works.
+
+**Choose a variable**
+
+Let $s$ be side length.
+
+**Translate into an inequality**
+
+$4s\le 40$ and $s^{2}\ge 81$.
+
+**Solve step by step**
+
+$9\le s\le 10$.
+
+**Interpret the result**
+
+Side 12 m needs 48 m of fence.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $s=10$ uses 40 m; $s=12$ needs 48 m.""",
+            ),
+            (
+                'A rectangular pen uses at most 60 m of fencing with sides in ratio 2:1 and needs area at least 72 m^2. The shorter side can be any length from 6 m to 15 m inclusive.',
+                False,
+                """**Reading the wording**
+
+Claim: shorter side in $[6,15]$.
+
+**Choose a variable**
+
+Sides $w$ and $2w$.
+
+**Translate into an inequality**
+
+$6w\le 60$ and $2w^{2}\ge 72$.
+
+**Solve step by step**
+
+$6\le w\le 10$.
+
+**Interpret the result**
+
+15 m exceeds fencing.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $w=10$ uses 60 m; $w=15$ would need 90 m.""",
+            ),
+            (
+                'A greenhouse uses at most 120 m of fencing, keeps a 5:3 length-to-width ratio, and needs area at least 375 m^2. The shorter side can be any length from 5 m to 15 m inclusive.',
+                False,
+                """**Reading the wording**
+
+Claim: shorter side in $[5,15]$.
+
+**Choose a variable**
+
+Width $w$, length $5w/3$.
+
+**Translate into an inequality**
+
+$\tfrac{16w}{3}\le 120$ and $\tfrac{5}{3}w^{2}\ge 375$.
+
+**Solve step by step**
+
+$15\le w\le 22.5$.
+
+**Interpret the result**
+
+Width 5 m fails area badly.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $w=15$ area 375, uses 80 m of fence.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set H',
+        "diff": '5/5',
+        "overview": ('Mostly algebraic solution-set claims plus one average-cost boundary trap.'),
+        "items": [
+            (
+                'The inequality $x^{2}-9x+14\\le 0$ has solution set $[2,7]$.',
+                True,
+                """**Reading the wording**
+
+Claim: solution is $[2,7]$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$(x-2)(x-7)\le 0$.
+
+**Solve step by step**
+
+Closed interval between roots: $[2,7]$.
+
+**Interpret the result**
+
+Matches.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=4\to -6\le 0$; $x=8\to 6>0$.""",
+            ),
+            (
+                'The inequality $|x-3|\\le 5$ has solution set $[-2,8]$.',
+                True,
+                """**Reading the wording**
+
+Claim: solution is $[-2,8]$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$-5\le x-3\le 5$.
+
+**Solve step by step**
+
+$-2\le x\le 8$.
+
+**Interpret the result**
+
+Matches.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=-2$ and $x=8$ give abs value 5.""",
+            ),
+            (
+                'The inequality $|2x+1|>5$ has solution set $x<-3$ or $x>2$.',
+                True,
+                """**Reading the wording**
+
+Claim: $x<-3$ or $x>2$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$2x+1>5$ or $2x+1<-5$.
+
+**Solve step by step**
+
+$x>2$ or $x<-3$.
+
+**Interpret the result**
+
+Matches.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=0$ fails; $x=3$ works.""",
+            ),
+            (
+                'The inequality $\\dfrac{x-2}{x+1}\\le 0$ has solution set $-1<x\\le 2$.',
+                True,
+                """**Reading the wording**
+
+Claim: $-1<x\le 2$.
+
+**Choose a variable**
+
+Domain $x\ne -1$.
+
+**Translate into an inequality**
+
+Sign chart for $(x-2)/(x+1)\le 0$.
+
+**Solve step by step**
+
+Between roots, exclude $-1$, include 2: $-1<x\le 2$.
+
+**Interpret the result**
+
+Matches.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=0\to -2\le 0$; $x=3\to 1/4>0$.""",
+            ),
+            (
+                'If producing x units costs $90+0.6x$ EUR, then 150 whole units are the fewest that make average cost strictly less than 1.20 EUR.',
+                False,
+                """**Reading the wording**
+
+Claim: 150 is the first whole $x$ with average $<1.20$.
+
+**Choose a variable**
+
+Let $x$ be whole units.
+
+**Translate into an inequality**
+
+$\dfrac{90+0.6x}{x}<1.20\Rightarrow x>150$.
+
+**Solve step by step**
+
+First whole is 151; at 150 average equals 1.20.
+
+**Interpret the result**
+
+Strict inequality excludes 150.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $x=150\to 1.20$; $x=151\approx 1.196$.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set I',
+        "diff": '3/5',
+        "overview": ('Fitness, charging, tank filling, exam weighting, taxi fare implication.'),
+        "items": [
+            (
+                'Ana has already burned 900 kcal and burns 8 kcal per minute of jogging. Three hours of jogging are enough to reach a weekly total of at least 2500 kcal.',
+                False,
+                """**Reading the wording**
+
+Claim: 180 minutes suffice.
 
 **Choose a variable**
 
@@ -1172,167 +1238,250 @@ Let $m$ be jogging minutes.
 
 **Translate into an inequality**
 
-$900 + 8m \ge 2500$.
+$900+8m\ge 2500\Rightarrow m\ge 200$.
 
 **Solve step by step**
 
-$8m \ge 1600$
-$m \ge 200$.
+At $m=180$: total 2340 < 2500.
 
 **Interpret the result**
 
-Exactly 200 minutes meet the goal.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $m = 200$ gives 2500 kcal; $m = 199$ gives 2492.""",
-            ),
-            (
-                'Three hours of jogging (180 minutes) are enough.',
-                False,
-                """**Reading the wording**
-
-$900 + 8\cdot180 = 2340 < 2500$.
-
-**Choose a variable**
-
-$m = 180$.
-
-**Translate into an inequality**
-
-$2340 \ge 2500$?
-
-**Solve step by step**
-
-No.
-
-**Interpret the result**
-
-Three hours leave her 160 kcal short.
+Need 200 minutes.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** She needs 200 minutes.""",
+**Quick check:** $m=200\to$ exactly 2500.""",
             ),
             (
-                'Each additional jogging minute closes the gap by 8 kcal.',
-                True,
-                """**Reading the wording**
-
-The coefficient of $m$ in $900 + 8m$ is 8.
-
-**Choose a variable**
-
-Rate of calorie burn while jogging.
-
-**Translate into an inequality**
-
-Slope is 8 kcal per minute.
-
-**Solve step by step**
-
-Gap from 900 to 2500 is 1600 kcal.
-
-**Interpret the result**
-
-1600 / 8 = 200 minutes.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $900 + 8\cdot200 = 2500$.""",
-            ),
-        ],
-    },
-    {
-        "title": 'Parcel weight limit',
-        "diff": '3/5',
-        "context": 'A courier accepts a parcel only if its mass is at most 5 kg. A box with packaging weighs 1.2 kg, and each item placed inside weighs 0.4 kg. What is the greatest number of items that can go in the box and still be accepted?',
-        "overview": ('Solve 1.2 + 0.4n ≤ 5 for a whole number n.'),
-        "items": [
-            (
-                'The greatest number of items is 9.',
-                True,
-                """**Reading the wording**
-
-Max mass 5 kg; box 1.2 kg; items 0.4 kg each.
-
-**Choose a variable**
-
-Let $n$ be the number of items (whole).
-
-**Translate into an inequality**
-
-$1.2 + 0.4n \le 5$.
-
-**Solve step by step**
-
-$0.4n \le 3.8$
-$n \le 9.5$.
-Largest whole $n$: 9.
-
-**Interpret the result**
-
-Nine items give total mass 4.8 kg.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $n = 9$ → 4.8 kg; $n = 10$ → 5.2 kg.""",
-            ),
-            (
-                'Ten items are still accepted.',
+                'A phone battery at 20% charges at 2 percentage points per minute. Charging for 25 minutes is enough to reach at least 80%.',
                 False,
                 """**Reading the wording**
 
-$1.2 + 4.0 = 5.2 > 5$.
+Claim: 25 min → ≥ 80%.
 
 **Choose a variable**
 
-$n = 10$.
+Let $t$ be minutes.
 
 **Translate into an inequality**
 
-$5.2 \le 5$?
+$20+2t\ge 80\Rightarrow t\ge 30$.
 
 **Solve step by step**
 
-No.
+At $t=25$: level 70%.
 
 **Interpret the result**
 
-Ten items are rejected.
+Need 30 minutes.
 
 **Compare to the claim**
 
 False.
 
-**Quick check:** Maximum is 9.""",
+**Quick check:** $t=30\to$ exactly 80%.""",
             ),
             (
-                'The empty box alone uses less than 25% of the allowed mass.',
-                True,
+                'An empty 480 L tank fills at 12 L/min. After 30 minutes of filling from empty, the tank is still not more than half full.',
+                False,
                 """**Reading the wording**
 
-Empty box 1.2 kg; 25% of 5 kg is 1.25 kg.
+Claim: after 30 min, volume ≤ 240 L.
 
 **Choose a variable**
 
-Compare 1.2 with 1.25.
+Let $t=30$.
 
 **Translate into an inequality**
 
-$1.2 < 1.25$.
+$12\cdot 30=360>240$.
 
 **Solve step by step**
 
-Slightly under 25%.
+Tank is three-quarters full.
+
+**Interpret the result**
+
+Claim is wrong.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** Half full at $t=20$.""",
+            ),
+            (
+                'An exam is 40% Part A and 60% Part B. With 70% on Part A, scoring at least 80% on Part B is enough for an overall grade of at least 85%.',
+                False,
+                """**Reading the wording**
+
+Claim: $b\ge 80$ gives overall ≥ 85.
+
+**Choose a variable**
+
+Let $b$ be Part B %.
+
+**Translate into an inequality**
+
+$28+0.6b\ge 85\Rightarrow b\ge 95$.
+
+**Solve step by step**
+
+At $b=80$: overall 76%.
+
+**Interpret the result**
+
+Need 95% on B.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $b=95\to$ exactly 85%.""",
+            ),
+            (
+                'Four friends share a taxi with meter fare F EUR plus a 4 EUR booking fee. If each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR.',
+                True,
+                """**Reading the wording**
+
+Claim: each ≤ 9 EUR forces $F\le 32$.
+
+**Choose a variable**
+
+Let $F$ be meter fare.
+
+**Translate into an inequality**
+
+$\dfrac{F+4}{4}\le 9\Rightarrow F\le 32$.
+
+**Solve step by step**
+
+Equivalent inequality.
+
+**Interpret the result**
+
+Implication holds.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $F=32\to$ share 9; $F=33\to$ share 9.25.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set J',
+        "diff": '4/5',
+        "overview": ('Factory, bridge, coffee blend, mobile overage, 4:1 fencing.'),
+        "items": [
+            (
+                'Each product uses 2 of A, 3 of B, and 1 of C at 30, 20, and 40 EUR, plus 8 EUR finishing. Budget 10,000 EUR and storage at most 200 raw units. The maximum number of products is less than 30.',
+                False,
+                """**Reading the wording**
+
+Claim: max products < 30.
+
+**Choose a variable**
+
+Let $n$ be products.
+
+**Translate into an inequality**
+
+$6n\le 200$ and $168n\le 10000$.
+
+**Solve step by step**
+
+Storage binds: $n\le 33$.
+
+**Interpret the result**
+
+Max is 33, not < 30.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $n=33$ stores 198, costs 5544.""",
+            ),
+            (
+                'A bridge limit is 12 tonnes. Each fully loaded truck weighs 4.3 tonnes. Three fully loaded trucks can be on the bridge at once.',
+                False,
+                """**Reading the wording**
+
+Claim: $n=3$ is allowed.
+
+**Choose a variable**
+
+Let $n$ be trucks.
+
+**Translate into an inequality**
+
+$4.3n\le 12\Rightarrow n\le 2.79$.
+
+**Solve step by step**
+
+Max $n=2$; three weigh 12.9 tonnes.
+
+**Interpret the result**
+
+Not allowed.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $n=2\to 8.6$ tonnes.""",
+            ),
+            (
+                'A café mixes equal masses of 8 EUR/kg and 14 EUR/kg beans. Any batch of at least 6 kg of this blend costs at most 60 EUR.',
+                False,
+                """**Reading the wording**
+
+Claim: every $M\ge 6$ costs ≤ 60.
+
+**Choose a variable**
+
+Let $M$ be total kg.
+
+**Translate into an inequality**
+
+Cost $11M\le 60\Rightarrow M\le 5.45$.
+
+**Solve step by step**
+
+$M=6$ costs 66 EUR.
+
+**Interpret the result**
+
+Larger batches cost more.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $M=5\to 55$; $M=6\to 66$.""",
+            ),
+            (
+                'A mobile plan costs 12 EUR plus 0.08 EUR per over-allowance megabyte. After 200 MB overage already used, using at most 150 more MB keeps the bill at or under 40 EUR.',
+                True,
+                """**Reading the wording**
+
+Claim: ≤ 150 more MB keeps bill ≤ 40.
+
+**Choose a variable**
+
+Let $m$ be additional MB.
+
+**Translate into an inequality**
+
+$12+0.08(200+m)\le 40\Rightarrow m\le 150$.
+
+**Solve step by step**
+
+Bound matches the claim.
 
 **Interpret the result**
 
@@ -1342,393 +1491,1304 @@ True.
 
 True.
 
-**Quick check:** $1.2/5 = 0.24$.""",
+**Quick check:** $m=150\to 40$; $m=151\to 40.08$.""",
+            ),
+            (
+                'A gardener has 80 m of fencing for a 4:1 rectangular plot and needs area at least 64 m^2. The shorter side can be any length from 4 m to 20 m inclusive.',
+                False,
+                """**Reading the wording**
+
+Claim: shorter side in $[4,20]$.
+
+**Choose a variable**
+
+Sides $w$ and $4w$.
+
+**Translate into an inequality**
+
+$10w\le 80$ and $4w^{2}\ge 64$.
+
+**Solve step by step**
+
+$4\le w\le 8$.
+
+**Interpret the result**
+
+20 m needs 200 m of fence.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $w=8$ uses 80 m; $w=20$ needs 200 m.""",
             ),
         ],
     },
     {
-        "title": 'Concert group tickets',
-        "diff": '3/5',
-        "context": 'Concert tickets cost 28 EUR each, and a group booking fee of 12 EUR is added once for the whole group. A club has 160 EUR to spend. What is the greatest number of people they can buy tickets for without going over budget?',
-        "overview": ('Solve 28n + 12 ≤ 160 for a whole number n.'),
+        "title": 'Exam-style inequalities — set K',
+        "diff": '4/5',
+        "overview": ('Average cost, projectile window, two-resource factory, quadratic open interval, abs inequality.'),
         "items": [
             (
-                'The greatest number of people is 5.',
+                'If producing x units costs $200+0.5x$ EUR, then at least 45 whole units must be made for average cost to fall below 5 EUR.',
                 True,
                 """**Reading the wording**
 
-28 EUR/ticket + 12 EUR fee once; budget 160 EUR.
+Claim: first whole $x$ is 45.
 
 **Choose a variable**
 
-Let $n$ be the number of tickets (whole, $n \ge 1$).
+Let $x$ be whole units.
 
 **Translate into an inequality**
 
-$28n + 12 \le 160$.
+$\dfrac{200+0.5x}{x}<5\Rightarrow x>44.44$.
 
 **Solve step by step**
 
-$28n \le 148$
-$n \le 5.286\ldots$.
+Smallest whole $x=45$.
+
+**Interpret the result**
+
+44 still averages above 5.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=44\approx 5.045$; $x=45\approx 4.944$.""",
+            ),
+            (
+                'If $h(t)=-5t^{2}+40t+8$, then the object is more than 83 m above ground between 3 and 5 seconds.',
+                True,
+                """**Reading the wording**
+
+Claim: $h(t)>83$ on $(3,5)$.
+
+**Choose a variable**
+
+Let $t$ be seconds.
+
+**Translate into an inequality**
+
+$h(t)>83\Rightarrow (t-3)(t-5)<0$.
+
+**Solve step by step**
+
+$3<t<5$.
+
+**Interpret the result**
+
+Open interval matches.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $h(4)=88$; $h(3)=83$.""",
+            ),
+            (
+                'Each finished good uses 4 of A and 3 of B at 25 and 40 EUR, plus 10 EUR finishing. Budget 9,000 EUR and storage ≤ 180 raw units. The maximum output is less than 25.',
+                False,
+                """**Reading the wording**
+
+Claim: max output < 25.
+
+**Choose a variable**
+
+Let $n$ be output.
+
+**Translate into an inequality**
+
+$7n\le 180$ and $230n\le 9000$.
+
+**Solve step by step**
+
+$n\le 25$ from storage ($7\cdot 25=175$).
+
+**Interpret the result**
+
+Maximum is 25, not less than 25.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $n=25$ stores 175, costs 5750.""",
+            ),
+            (
+                'If $f(x)=-x^{2}+10x+4$, then $f(x)>20$ between 1 and 9, endpoints included.',
+                False,
+                """**Reading the wording**
+
+Claim: solution is closed $[1,9]$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$(x-2)(x-8)<0\Rightarrow 2<x<8$.
+
+**Solve step by step**
+
+Open $(2,8)$; endpoints 1 and 9 fail.
+
+**Interpret the result**
+
+Not $[1,9]$.
+
+**Compare to the claim**
+
+False.
+
+**Quick check:** $f(1)=13$; $f(5)=29$.""",
+            ),
+            (
+                'The inequality $|x+4|\\ge 3$ has solution set $x\\le -7$ or $x\\ge -1$.',
+                True,
+                """**Reading the wording**
+
+Claim: $x\le -7$ or $x\ge -1$.
+
+**Choose a variable**
+
+Let $x$ be real.
+
+**Translate into an inequality**
+
+$x+4\ge 3$ or $x+4\le -3$.
+
+**Solve step by step**
+
+$x\ge -1$ or $x\le -7$.
+
+**Interpret the result**
+
+Matches.
+
+**Compare to the claim**
+
+True.
+
+**Quick check:** $x=-4\to 0<3$; $x=-7\to 3$.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set L',
+        "diff": '3/5',
+        "overview": ('Everyday budgets: streaming downloads, gym guests, printer paper, rideshare distance, cafeteria lunches.'),
+        "items": [
+            (
+                'A streaming service costs 9 EUR per month plus 0.03 EUR per downloaded track. With a 15 EUR budget, a user can download at most 250 tracks.',
+                False,
+                """**Reading the wording**
+
+        Monthly fee 9 EUR plus 0.03 EUR per track; budget 15 EUR. Claim: maximum downloads is 250.
+
+        **Choose a variable**
+
+        Let $n$ be the number of downloaded tracks.
+
+        **Translate into an inequality**
+
+        $9 + 0.03n \le 15$.
+
+        **Solve step by step**
+
+        $0.03n \le 6$
+$n \le 200$.
+
+        **Interpret the result**
+
+        At most 200 tracks fit the budget, not 250.
+
+        **Compare to the claim**
+
+        False — 250 tracks would cost 16.50 EUR.
+
+        **Quick check:** $n = 200$ costs exactly 15 EUR; $n = 250$ costs 16.50 EUR.""",
+            ),
+            (
+                'A gym membership is 40 EUR per month and each guest pass costs 6 EUR. With 70 EUR this month, at most 5 guest passes can be bought.',
+                True,
+                """**Reading the wording**
+
+        Fixed 40 EUR plus 6 EUR per guest; budget 70 EUR. Claim: maximum guest passes is 5.
+
+        **Choose a variable**
+
+        Let $g$ be the number of guest passes.
+
+        **Translate into an inequality**
+
+        $40 + 6g \le 70$.
+
+        **Solve step by step**
+
+        $6g \le 30$
+$g \le 5$.
+
+        **Interpret the result**
+
+        The greatest whole number of guest passes is 5.
+
+        **Compare to the claim**
+
+        True — the claim matches the solution.
+
+        **Quick check:** $g = 5$ costs 70 EUR; $g = 6$ costs 76 EUR.""",
+            ),
+            (
+                'A printer cartridge costs 22 EUR and premium paper is 0.05 EUR per sheet. With 30 EUR total, printing 200 premium sheets including one cartridge is affordable.',
+                False,
+                """**Reading the wording**
+
+        One cartridge plus paper cost; budget 30 EUR. Claim: 200 sheets are affordable.
+
+        **Choose a variable**
+
+        Let $s$ be the number of premium sheets.
+
+        **Translate into an inequality**
+
+        $22 + 0.05s \le 30$.
+
+        **Solve step by step**
+
+        $0.05s \le 8$
+$s \le 160$.
+
+        **Interpret the result**
+
+        At most 160 sheets fit; 200 sheets overshoot.
+
+        **Compare to the claim**
+
+        False — 200 sheets cost 32 EUR in total.
+
+        **Quick check:** $s = 160$ costs 30 EUR; $s = 200$ costs 32 EUR.""",
+            ),
+            (
+                'A rideshare charges 2.50 EUR pickup plus 0.90 EUR per kilometre. With 20 EUR, any trip of at most 22 km stays within budget.',
+                False,
+                """**Reading the wording**
+
+        Pickup 2.50 EUR plus 0.90 EUR/km; budget 20 EUR. Claim: every distance ≤ 22 km is affordable.
+
+        **Choose a variable**
+
+        Let $d$ be the trip distance in kilometres.
+
+        **Translate into an inequality**
+
+        $2.50 + 0.90d \le 20$.
+
+        **Solve step by step**
+
+        $0.90d \le 17.50$
+$d \le \dfrac{17.50}{0.90} \approx 19.44$.
+
+        **Interpret the result**
+
+        Trips longer than about 19.44 km exceed the budget, so 22 km does not always work.
+
+        **Compare to the claim**
+
+        False — 22 km costs 22.30 EUR.
+
+        **Quick check:** $d = 19$ costs 19.60 EUR; $d = 22$ costs 22.30 EUR.""",
+            ),
+            (
+                'A cafeteria card starts with 25 EUR and lunch costs 3.20 EUR each day. The card lasts for at least 8 full lunch days.',
+                False,
+                """**Reading the wording**
+
+        Each lunch 3.20 EUR; starting balance 25 EUR. Claim: at least 8 full lunches are possible.
+
+        **Choose a variable**
+
+        Let $n$ be the number of full lunch days.
+
+        **Translate into an inequality**
+
+        $3.20n \le 25$.
+
+        **Solve step by step**
+
+        $n \le \dfrac{25}{3.20} = 7.8125$.
+Largest whole $n$: 7.
+
+        **Interpret the result**
+
+        Only 7 full lunches fit; 8 would overspend.
+
+        **Compare to the claim**
+
+        False — eight lunches cost 25.60 EUR.
+
+        **Quick check:** $n = 7$ costs 22.40 EUR; $n = 8$ costs 25.60 EUR.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set M',
+        "diff": '4/5',
+        "overview": ('Energy use, bike-share minutes, draining tank, shipping comparison, and overtime pay.'),
+        "items": [
+            (
+                'Home heating costs 55 EUR fixed plus 0.12 EUR per kWh. With a 100 EUR energy budget, at most 400 kWh can be used.',
+                False,
+                """**Reading the wording**
+
+        Fixed 55 EUR plus 0.12 EUR/kWh; budget 100 EUR. Claim: maximum usage is 400 kWh.
+
+        **Choose a variable**
+
+        Let $k$ be the number of kilowatt-hours.
+
+        **Translate into an inequality**
+
+        $55 + 0.12k \le 100$.
+
+        **Solve step by step**
+
+        $0.12k \le 45$
+$k \le 375$.
+
+        **Interpret the result**
+
+        At most 375 kWh are affordable, not 400.
+
+        **Compare to the claim**
+
+        False — 400 kWh would cost 103 EUR.
+
+        **Quick check:** $k = 375$ costs 100 EUR; $k = 400$ costs 103 EUR.""",
+            ),
+            (
+                'A bike-share charges 1 EUR to unlock plus 0.15 EUR per minute. With 10 EUR, a ride of 65 minutes stays within budget.',
+                False,
+                """**Reading the wording**
+
+        Unlock 1 EUR plus 0.15 EUR/min; budget 10 EUR. Claim: 65 minutes is affordable.
+
+        **Choose a variable**
+
+        Let $t$ be the ride time in minutes.
+
+        **Translate into an inequality**
+
+        $1 + 0.15t \le 10$.
+
+        **Solve step by step**
+
+        $0.15t \le 9$
+$t \le 60$.
+
+        **Interpret the result**
+
+        At most 60 minutes fit the budget.
+
+        **Compare to the claim**
+
+        False — 65 minutes cost 10.75 EUR.
+
+        **Quick check:** $t = 60$ costs 10 EUR; $t = 65$ costs 10.75 EUR.""",
+            ),
+            (
+                'A full 480 L tank drains at 8 L per minute. After 50 minutes of draining from full, at least one quarter of the water remains.',
+                False,
+                """**Reading the wording**
+
+        Start 480 L; drain 8 L/min for 50 min. Claim: remaining volume ≥ 120 L.
+
+        **Choose a variable**
+
+        Let $t = 50$ be the draining time in minutes.
+
+        **Translate into an inequality**
+
+        Volume left $= 480 - 8t$. Need $480 - 8t \ge 120$.
+
+        **Solve step by step**
+
+        At $t = 50$: volume $= 480 - 400 = 80$.
+$80 < 120$.
+
+        **Interpret the result**
+
+        Only 80 L remain, which is less than one quarter.
+
+        **Compare to the claim**
+
+        False — a quarter remains only while $t \le 45$.
+
+        **Quick check:** At $t = 45$, volume $= 120$; at $t = 50$, volume $= 80$.""",
+            ),
+            (
+                'Shipper A charges 12 EUR plus 0.80 EUR per kg; shipper B charges 20 EUR plus 0.40 EUR per kg. For a 25 kg parcel, A is strictly cheaper than B.',
+                False,
+                """**Reading the wording**
+
+        Compare A and B at weight 25 kg. Claim: A < B at that weight.
+
+        **Choose a variable**
+
+        Let $w = 25$ be the parcel mass in kilograms.
+
+        **Translate into an inequality**
+
+        A $= 12 + 0.80w$. B $= 20 + 0.40w$.
+
+        **Solve step by step**
+
+        A $= 12 + 20 = 32$.
+B $= 20 + 10 = 30$.
+$32 > 30$.
+
+        **Interpret the result**
+
+        B is cheaper at 25 kg. Crossing point: $12 + 0.80w = 20 + 0.40w \Rightarrow w = 20$.
+
+        **Compare to the claim**
+
+        False — A is cheaper only when $w < 20$.
+
+        **Quick check:** $w = 15$: A $= 24$, B $= 26$; $w = 25$: A $= 32$, B $= 30$.""",
+            ),
+            (
+                'Pat earns 11 EUR per hour up to 40 hours and 16.50 EUR per hour thereafter. Working 43 hours yields at least 500 EUR.',
+                False,
+                """**Reading the wording**
+
+        Regular 11 EUR/h for 40 h, then 16.50 EUR/h. Claim: 43 hours → pay ≥ 500 EUR.
+
+        **Choose a variable**
+
+        Let $h = 43$ be hours worked.
+
+        **Translate into an inequality**
+
+        Pay $= 11 \cdot 40 + 16.50 \cdot (h - 40)$ for $h > 40$.
+
+        **Solve step by step**
+
+        Pay $= 440 + 16.50 \cdot 3 = 440 + 49.50 = 489.50$.
+$489.50 < 500$.
+
+        **Interpret the result**
+
+        43 hours fall short of 500 EUR.
+
+        **Compare to the claim**
+
+        False — need at least 44 hours (506 EUR).
+
+        **Quick check:** $h = 43 \to 489.50$; $h = 44 \to 506$.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set N',
+        "diff": '4/5',
+        "overview": ('Quadratic height window, average-cost threshold, absolute-value interval, compound inequality, and storage-bound production.'),
+        "items": [
+            (
+                'If $f(x)=-5x^{2}+30x+10$, then the object is at least 40 m above the ground for every t in $[1,5]$, endpoints included.',
+                False,
+                """**Reading the wording**
+
+        Height model $f$; claim $f(t) \ge 40$ on the whole closed interval $[1,5]$.
+
+        **Choose a variable**
+
+        Let $t$ be time in seconds.
+
+        **Translate into an inequality**
+
+        $-5t^{2}+30t+10 \ge 40$
+$-5t^{2}+30t-30 \ge 0$
+$t^{2}-6t+6 \le 0$.
+
+        **Solve step by step**
+
+        Roots $3 \pm \sqrt{3} \approx 1.27, 4.73$.
+Solution: $3-\sqrt{3} \le t \le 3+\sqrt{3}$.
+
+        **Interpret the result**
+
+        The true window is roughly $[1.27, 4.73]$, narrower than $[1,5]$.
+
+        **Compare to the claim**
+
+        False — $f(1) = f(5) = 35 < 40$.
+
+        **Quick check:** $f(3) = 55 \ge 40$; $f(1) = 35 < 40$.""",
+            ),
+            (
+                'If producing x units costs $120+0.25x$ EUR, then 80 whole units are enough to bring average cost strictly below 1.70 EUR.',
+                False,
+                """**Reading the wording**
+
+        Total cost $120 + 0.25x$; claim average cost at $x = 80$ is already $< 1.70$.
+
+        **Choose a variable**
+
+        Let $x$ be the number of whole units produced.
+
+        **Translate into an inequality**
+
+        $\dfrac{120 + 0.25x}{x} < 1.70$.
+
+        **Solve step by step**
+
+        $\dfrac{120}{x} + 0.25 < 1.70$
+$\dfrac{120}{x} < 1.45$
+$x > \dfrac{120}{1.45} \approx 82.76$.
+Need $x \ge 83$.
+
+        **Interpret the result**
+
+        Eighty units give average cost $1.75$, still too high.
+
+        **Compare to the claim**
+
+        False — need at least 83 whole units.
+
+        **Quick check:** $x = 80 \to 1.75$; $x = 83 \approx 1.696 < 1.70$.""",
+            ),
+            (
+                'The inequality $|3x-6|\\le 9$ has solution set $[-1,5]$.',
+                True,
+                """**Reading the wording**
+
+        Absolute-value inequality; claim solution set is the closed interval $[-1,5]$.
+
+        **Choose a variable**
+
+        Let $x$ be a real number.
+
+        **Translate into an inequality**
+
+        $-9 \le 3x - 6 \le 9$.
+
+        **Solve step by step**
+
+        $-3 \le 3x \le 15$
+$-1 \le x \le 5$.
+
+        **Interpret the result**
+
+        The solution set is exactly $[-1,5]$.
+
+        **Compare to the claim**
+
+        True — the claim matches.
+
+        **Quick check:** $x = -1$ and $x = 5$ give absolute value 9; $x = 0$ gives 6.""",
+            ),
+            (
+                'The compound inequality $4<3x+1\\le 13$ has solution set $1<x\\le 4$.',
+                True,
+                """**Reading the wording**
+
+        Two-sided linear inequality; claim solution $1 < x \le 4$.
+
+        **Choose a variable**
+
+        Let $x$ be a real number.
+
+        **Translate into an inequality**
+
+        $4 < 3x + 1$ and $3x + 1 \le 13$.
+
+        **Solve step by step**
+
+        $3 < 3x \Rightarrow x > 1$
+$3x \le 12 \Rightarrow x \le 4$.
+
+        **Interpret the result**
+
+        Intersection: $1 < x \le 4$.
+
+        **Compare to the claim**
+
+        True — the claim matches.
+
+        **Quick check:** $x = 1$ gives 4 (excluded); $x = 4$ gives 13 (included).""",
+            ),
+            (
+                'Each product uses 5 units of A, 1 of B, and 2 of C priced at 10, 80, and 15 EUR, plus 20 EUR finishing. Budget 8,000 EUR and storage capacity at most 240 resource units. The maximum number of products is less than 50.',
+                True,
+                """**Reading the wording**
+
+        Per product: resources $5+1+2=8$, cost $50+80+30+20=180$ EUR. Claim: max products $< 50$.
+
+        **Choose a variable**
+
+        Let $n$ be the number of products.
+
+        **Translate into an inequality**
+
+        $8n \le 240$ and $180n \le 8000$.
+
+        **Solve step by step**
+
+        Storage: $n \le 30$.
+Budget: $n \le \dfrac{8000}{180} \approx 44.4$.
+Binding limit: $n \le 30$.
+
+        **Interpret the result**
+
+        Maximum is 30, which is less than 50.
+
+        **Compare to the claim**
+
+        True — $30 < 50$.
+
+        **Quick check:** $n = 30$ uses 240 storage and costs 5,400 EUR.""",
+            ),
+        ],
+    },
+    {
+        "title": 'Exam-style inequalities — set O',
+        "diff": '3/5',
+        "overview": ('Parking hours, library fines, ferry tickets, ice-cream scoops, and laundry cycles.'),
+        "items": [
+            (
+                'Street parking costs 1.50 EUR for the first hour and 0.80 EUR for each extra hour. With 5 EUR, at most 6 hours of parking are possible.',
+                False,
+                """**Reading the wording**
+
+        First hour 1.50 EUR, then 0.80 EUR per extra hour; budget 5 EUR. Claim: maximum hours is 6.
+
+        **Choose a variable**
+
+        Let $h \ge 1$ be the number of whole hours parked.
+
+        **Translate into an inequality**
+
+        For $h \ge 1$: $1.50 + 0.80(h - 1) \le 5$.
+
+        **Solve step by step**
+
+        $0.80(h - 1) \le 3.50$
+$h - 1 \le 4.375$
+$h \le 5.375$.
+Largest whole $h$: 5.
+
+        **Interpret the result**
+
+        At most 5 whole hours fit; 6 hours overspend.
+
+        **Compare to the claim**
+
+        False — 6 hours cost 5.50 EUR.
+
+        **Quick check:** $h = 5$ costs 4.70 EUR; $h = 6$ costs 5.50 EUR.""",
+            ),
+            (
+                'A library fine is 0.40 EUR per day late. With a 6 EUR limit before a block, a book can be at most 15 days late.',
+                True,
+                """**Reading the wording**
+
+Fine 0.40 EUR/day; block at 6 EUR. Claim: maximum late days is 15.
+
+**Choose a variable**
+
+Let $d$ be the number of days late.
+
+**Translate into an inequality**
+
+$0.40d \le 6$.
+
+**Solve step by step**
+
+$d \le 15$.
+
+**Interpret the result**
+
+The greatest whole number of late days is 15.
+
+**Compare to the claim**
+
+True — the claim matches.
+
+**Quick check:** $d = 15$ costs 6 EUR; $d = 16$ costs 6.40 EUR.""",
+            ),
+            (
+                'Ferry tickets cost 18 EUR for adults and 9 EUR for children. A family has 72 EUR and buys 2 adult tickets. They can still buy at most 5 child tickets.',
+                False,
+                """**Reading the wording**
+
+        2 adults already bought; remaining budget for children. Claim: max children is 5.
+
+        **Choose a variable**
+
+        Let $c$ be the number of child tickets.
+
+        **Translate into an inequality**
+
+        $2 \cdot 18 + 9c \le 72$
+$36 + 9c \le 72$.
+
+        **Solve step by step**
+
+        $9c \le 36$
+$c \le 4$.
+
+        **Interpret the result**
+
+        At most 4 child tickets remain affordable.
+
+        **Compare to the claim**
+
+        False — 5 children would make the total 81 EUR.
+
+        **Quick check:** $c = 4$ totals 72 EUR; $c = 5$ totals 81 EUR.""",
+            ),
+            (
+                'An ice-cream stand sells scoops at 1.80 EUR each. With a 10 EUR note and buying only scoops, at most 5 scoops can be bought.',
+                True,
+                """**Reading the wording**
+
+        Each scoop 1.80 EUR; budget 10 EUR. Claim: maximum scoops is 5.
+
+        **Choose a variable**
+
+        Let $n$ be the number of scoops.
+
+        **Translate into an inequality**
+
+        $1.80n \le 10$.
+
+        **Solve step by step**
+
+        $n \le \dfrac{10}{1.80} \approx 5.56$.
 Largest whole $n$: 5.
 
-**Interpret the result**
+        **Interpret the result**
 
-Five tickets cost 152 EUR.
+        Five scoops fit; six do not.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-True.
+        True — the claim matches.
 
-**Quick check:** $n = 5$ → 152 EUR; $n = 6$ → 180 EUR.""",
+        **Quick check:** $n = 5$ costs 9 EUR; $n = 6$ costs 10.80 EUR.""",
             ),
             (
-                'Six people can be booked within the 160 EUR budget.',
+                'Laundry machines cost 3.50 EUR per cycle. With 20 EUR on a laundry card, at most 6 cycles can be run.',
                 False,
                 """**Reading the wording**
 
-$28\cdot6 + 12 = 180 > 160$.
+        Each cycle 3.50 EUR; card balance 20 EUR. Claim: maximum cycles is 6.
 
-**Choose a variable**
+        **Choose a variable**
 
-$n = 6$.
+        Let $n$ be the number of cycles.
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-$180 \le 160$?
+        $3.50n \le 20$.
 
-**Solve step by step**
+        **Solve step by step**
 
-No.
+        $n \le \dfrac{20}{3.50} \approx 5.71$.
+Largest whole $n$: 5.
 
-**Interpret the result**
+        **Interpret the result**
 
-Six people are over budget.
+        Only 5 cycles fit; 6 cycles overspend.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-False.
+        False — 6 cycles cost 21 EUR.
 
-**Quick check:** Maximum is 5.""",
-            ),
-            (
-                'The booking fee alone is less than 10% of the club’s budget.',
-                True,
-                """**Reading the wording**
-
-Fee 12 EUR; budget 160 EUR; 10% of 160 is 16 EUR.
-
-**Choose a variable**
-
-Compare 12 with 16.
-
-**Translate into an inequality**
-
-$12 < 16$.
-
-**Solve step by step**
-
-The fee is 7.5% of the budget.
-
-**Interpret the result**
-
-Most of the budget goes to ticket prices.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $12/160 = 0.075$.""",
+        **Quick check:** $n = 5$ costs 17.50 EUR; $n = 6$ costs 21 EUR.""",
             ),
         ],
     },
     {
-        "title": 'Train arrival speed',
-        "diff": '4/5',
-        "context": 'A train journey is 180 km long. A passenger needs to arrive in at most 2.5 hours. What is the smallest constant average speed in km/h that gets them there on time?',
-        "overview": ('Use time = distance/speed and solve the inequality for speed.'),
+        "title": 'Exam-style inequalities — set P',
+        "diff": '5/5',
+        "overview": ('Algebraic solution sets: quadratic, two-absolute-value sum, rational inequality, open quadratic window, and a 2:1 fencing claim.'),
         "items": [
             (
-                'The smallest sufficient average speed is 72 km/h.',
+                'The inequality $x^{2}-x-6>0$ has solution set $x<-2$ or $x>3$.',
                 True,
                 """**Reading the wording**
 
-Distance 180 km; time at most 2.5 h.
+        Quadratic strict inequality; claim solution $x < -2$ or $x > 3$.
 
-**Choose a variable**
+        **Choose a variable**
 
-Let $v > 0$ be average speed in km/h.
+        Let $x$ be a real number.
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-$\dfrac{180}{v} \le 2.5$.
+        $(x - 3)(x + 2) > 0$.
 
-**Solve step by step**
+        **Solve step by step**
 
-$180 \le 2.5v$
-$v \ge 72$.
+        Critical points $x = -2$ and $x = 3$.
+Positive outside: $x < -2$ or $x > 3$.
 
-**Interpret the result**
+        **Interpret the result**
 
-Minimum speed is 72 km/h.
+        The solution set matches the claim.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-True.
+        True.
 
-**Quick check:** $v = 72$ gives time 2.5 h; $v = 71$ gives about 2.535 h.""",
+        **Quick check:** $x = 0$ gives $-6 \not> 0$; $x = 4$ gives $6 > 0$.""",
             ),
             (
-                'An average speed of 70 km/h is fast enough.',
+                'The inequality $|x-1|+|x+1|\\le 4$ has solution set $[-2,2]$.',
+                True,
+                """**Reading the wording**
+
+        Sum of absolute values ≤ 4; claim solution $[-2,2]$.
+
+        **Choose a variable**
+
+        Let $x$ be a real number.
+
+        **Translate into an inequality**
+
+        For $|x| \le 1$: $|x-1|+|x+1| = 2$.
+For $|x| \ge 1$: $|x-1|+|x+1| = 2|x|$.
+
+        **Solve step by step**
+
+        If $|x| \le 1$, then $2 \le 4$ always.
+If $|x| \ge 1$, then $2|x| \le 4 \Rightarrow |x| \le 2$.
+Overall: $-2 \le x \le 2$.
+
+        **Interpret the result**
+
+        The solution set is exactly $[-2,2]$.
+
+        **Compare to the claim**
+
+        True.
+
+        **Quick check:** $x = 2$ gives 4; $x = 3$ gives 6 > 4.""",
+            ),
+            (
+                'The inequality $\\dfrac{2x-1}{x-3}\\ge 0$ has solution set $\\dfrac{1}{2}\\le x<3$.',
                 False,
                 """**Reading the wording**
 
-Time at 70 km/h is about 2.571 h.
+        Rational inequality ≥ 0; claim solution is $[\tfrac{1}{2}, 3)$.
 
-**Choose a variable**
+        **Choose a variable**
 
-$v = 70$.
+        Critical points $x = \tfrac{1}{2}$ (zero) and $x = 3$ (undefined).
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-$180/70 \approx 2.571$.
+        Sign chart of $\dfrac{2x-1}{x-3}$.
 
-**Solve step by step**
+        **Solve step by step**
 
-$2.571 > 2.5$.
+        Non-negative on $(-\infty, \tfrac{1}{2}] \cup (3, \infty)$.
+The claimed interval $[\tfrac{1}{2}, 3)$ is where the expression is ≤ 0 (except undefined at 3).
 
-**Interpret the result**
+        **Interpret the result**
 
-70 km/h is too slow.
+        The claimed set is nearly the opposite of the true ≥ 0 set.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-False.
+        False — correct set is $x \le \tfrac{1}{2}$ or $x > 3$.
 
-**Quick check:** Need at least 72 km/h.""",
+        **Quick check:** $x = 0$: $\dfrac{-1}{-3} > 0$ (in true set, not in claim); $x = 2$: $\dfrac{3}{-1} < 0$.""",
             ),
             (
-                'Higher speed always means shorter travel time for this trip.',
-                True,
+                'If $g(x)=-x^{2}+6x-5$, then $g(x)\\ge 0$ exactly on the open interval $(1,5)$.',
+                False,
                 """**Reading the wording**
 
-Time $180/v$ decreases as $v$ increases for $v > 0$.
+        Quadratic ≥ 0; claim solution is the open interval $(1,5)$.
 
-**Choose a variable**
+        **Choose a variable**
 
-$v$ speed.
+        Let $x$ be a real number.
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-If $v_1 < v_2$ then $180/v_1 > 180/v_2$.
+        $-x^{2}+6x-5 \ge 0$
+$x^{2}-6x+5 \le 0$
+$(x-1)(x-5) \le 0$.
 
-**Solve step by step**
+        **Solve step by step**
 
-Larger speed shortens time.
+        Solution: $1 \le x \le 5$.
 
-**Interpret the result**
+        **Interpret the result**
 
-That is why the inequality opens as $v \ge 72$.
+        Endpoints are included because $g(1) = g(5) = 0$.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-True.
+        False — the correct set is the closed interval $[1,5]$.
 
-**Quick check:** Doubling speed halves the time.""",
+        **Quick check:** $g(1) = 0 \ge 0$; $g(3) = 4 \ge 0$; $g(0) = -5 < 0$.""",
+            ),
+            (
+                'A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 m^2. Every shorter-side length from 8 m to 16 m inclusive is possible.',
+                False,
+                """**Reading the wording**
+
+        Perimeter ≤ 100, sides 2:1, area ≥ 200. Claim: shorter side may be any value in $[8,16]$.
+
+        **Choose a variable**
+
+        Let $w > 0$ be the shorter side; longer side $2w$.
+
+        **Translate into an inequality**
+
+        Fencing $2(2w + w) \le 100$. Area $2w^{2} \ge 200$.
+
+        **Solve step by step**
+
+        $6w \le 100 \Rightarrow w \le \dfrac{50}{3} \approx 16.67$.
+$w^{2} \ge 100 \Rightarrow w \ge 10$.
+True range: $10 \le w \le \dfrac{50}{3}$.
+
+        **Interpret the result**
+
+        $w = 8$ fails the area requirement even though fencing would allow it.
+
+        **Compare to the claim**
+
+        False — the lower end must be 10 m, not 8 m.
+
+        **Quick check:** $w = 8$ area 128 < 200; $w = 10$ area 200; $w = 16$ uses 96 m of fence.""",
             ),
         ],
     },
     {
-        "title": 'Bridge weight capacity',
+        "title": 'Exam-style inequalities — set Q',
         "diff": '3/5',
-        "context": 'A bridge may carry at most 12 tonnes. Each delivery truck weighs 2.8 tonnes empty and may carry up to 1.5 tonnes of cargo. What is the greatest number of fully loaded trucks that may be on the bridge at the same time?',
-        "overview": ('Compute one fully loaded truck’s mass, then solve n · 4.3 ≤ 12 for a whole n.'),
+        "overview": ('Sufficiency and comparison claims: wages with bonus, phone plans, fuel range, sale discount, and delivery timing.'),
         "items": [
             (
-                'At most 2 fully loaded trucks may be on the bridge.',
-                True,
-                """**Reading the wording**
-
-One full truck: 2.8 + 1.5 = 4.3 tonnes; limit 12 tonnes.
-
-**Choose a variable**
-
-Let $n$ be the number of full trucks (whole).
-
-**Translate into an inequality**
-
-$4.3n \le 12$.
-
-**Solve step by step**
-
-$n \le \dfrac{12}{4.3} \approx 2.79$.
-Largest whole $n$: 2.
-
-**Interpret the result**
-
-Two trucks weigh 8.6 tonnes; three would weigh 12.9 tonnes.
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $n = 2$ → 8.6 ≤ 12; $n = 3$ → 12.9 > 12.""",
-            ),
-            (
-                'Three fully loaded trucks are allowed.',
+                'Sam earns 15 EUR per hour plus a 40 EUR bonus whenever more than 20 hours are worked. Working 22 hours is enough to earn at least 400 EUR.',
                 False,
                 """**Reading the wording**
 
-$4.3 \cdot 3 = 12.9 > 12$.
+        15 EUR/h with a 40 EUR bonus if hours > 20. Claim: 22 hours → ≥ 400 EUR.
 
-**Choose a variable**
+        **Choose a variable**
 
-$n = 3$.
+        Let $h = 22$.
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-$12.9 \le 12$?
+        Pay $= 15h + 40$ when $h > 20$.
 
-**Solve step by step**
+        **Solve step by step**
 
-No.
+        Pay $= 15 \cdot 22 + 40 = 330 + 40 = 370$.
+$370 < 400$.
 
-**Interpret the result**
+        **Interpret the result**
 
-Three trucks exceed the limit.
+        22 hours yield only 370 EUR.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-False.
+        False — need $15h + 40 \ge 400 \Rightarrow h \ge 24$.
 
-**Quick check:** Maximum is 2.""",
+        **Quick check:** $h = 24 \to 400$; $h = 22 \to 370$.""",
             ),
             (
-                'One empty truck (no cargo) uses less than a quarter of the bridge limit.',
+                'Plan A costs 8 EUR plus 0.12 EUR per message; Plan B costs 15 EUR plus 0.04 EUR per message. For 100 messages, Plan A is cheaper than Plan B.',
+                False,
+                """**Reading the wording**
+
+        Compare plans at 100 messages. Claim: A < B at that volume.
+
+        **Choose a variable**
+
+        Let $m = 100$ be the number of messages.
+
+        **Translate into an inequality**
+
+        A $= 8 + 0.12m$. B $= 15 + 0.04m$.
+
+        **Solve step by step**
+
+        A $= 8 + 12 = 20$.
+B $= 15 + 4 = 19$.
+$20 > 19$.
+
+        **Interpret the result**
+
+        Plan B is cheaper at 100 messages. Break-even at $m = 87.5$.
+
+        **Compare to the claim**
+
+        False — A is cheaper only for fewer than 87.5 messages.
+
+        **Quick check:** $m = 50$: A $= 14$, B $= 17$; $m = 100$: A $= 20$, B $= 19$.""",
+            ),
+            (
+                'A car uses 0.08 L per km and fuel costs 1.50 EUR per litre. With 48 EUR for fuel, any trip of 400 km or less stays within budget.',
                 True,
                 """**Reading the wording**
 
-Empty truck 2.8 tonnes; quarter of 12 is 3.
+        Consumption 0.08 L/km at 1.50 EUR/L; budget 48 EUR. Claim: every $d \le 400$ is affordable.
 
-**Choose a variable**
+        **Choose a variable**
 
-Compare 2.8 with 3.
+        Let $d$ be distance in kilometres.
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-$2.8 < 3$.
+        Cost $= 0.08 \cdot 1.50 \cdot d = 0.12d$.
+Need $0.12d \le 48$.
 
-**Solve step by step**
+        **Solve step by step**
 
-About 23.3% of the limit.
+        $d \le 400$.
 
-**Interpret the result**
+        **Interpret the result**
 
-True.
+        Exactly 400 km uses the full 48 EUR, so every shorter trip fits.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-True.
+        True.
 
-**Quick check:** $2.8/12 \approx 0.233$.""",
+        **Quick check:** $d = 400$ costs 48 EUR; $d = 401$ costs 48.12 EUR.""",
+            ),
+            (
+                'A shop offers 25% off. With 60 EUR, Priya can afford any item whose marked price is at most 85 EUR.',
+                False,
+                """**Reading the wording**
+
+        25% discount; budget 60 EUR. Claim: every marked price ≤ 85 EUR is affordable after discount.
+
+        **Choose a variable**
+
+        Let $p$ be the marked price in EUR.
+
+        **Translate into an inequality**
+
+        Pay $0.75p \le 60 \Rightarrow p \le 80$.
+
+        **Solve step by step**
+
+        Marked prices above 80 EUR overshoot after discount.
+At $p = 85$: pay $0.75 \cdot 85 = 63.75 > 60$.
+
+        **Interpret the result**
+
+        The true ceiling is 80 EUR, not 85 EUR.
+
+        **Compare to the claim**
+
+        False.
+
+        **Quick check:** $p = 80$ costs 60 EUR; $p = 85$ costs 63.75 EUR.""",
+            ),
+            (
+                'A courier has 75 minutes including a fixed 10-minute warehouse stop and drives at 2 minutes per kilometre. Every delivery of at most 35 km can be finished on time.',
+                False,
+                """**Reading the wording**
+
+        Total time ≤ 75 min with a 10-minute stop and 2 min/km driving. Claim: every $d \le 35$ works.
+
+        **Choose a variable**
+
+        Let $d$ be delivery distance in kilometres.
+
+        **Translate into an inequality**
+
+        $10 + 2d \le 75$.
+
+        **Solve step by step**
+
+        $2d \le 65$
+$d \le 32.5$.
+
+        **Interpret the result**
+
+        Distances above 32.5 km miss the deadline, so 35 km is not always feasible.
+
+        **Compare to the claim**
+
+        False — 35 km needs 80 minutes.
+
+        **Quick check:** $d = 32$ needs 74 min; $d = 35$ needs 80 min.""",
             ),
         ],
     },
     {
-        "title": 'Comparing two phone plans',
+        "title": 'Exam-style inequalities — set R',
         "diff": '4/5',
-        "context": 'Plan A costs 10 EUR per month plus 0.10 EUR per call-minute. Plan B costs 20 EUR per month plus 0.05 EUR per call-minute. For which numbers of call-minutes x is Plan A strictly cheaper than Plan B?',
-        "overview": ('Set up the strict inequality between the two linear cost functions and solve for x.'),
+        "overview": ('Utility bills, cinema tickets, backpack constraints, temperature band, and quadratic profit window.'),
         "items": [
             (
-                'Plan A is strictly cheaper exactly when x < 200.',
-                True,
-                """**Reading the wording**
-
-Compare A: 10+0.10x with B: 20+0.05x.
-
-**Choose a variable**
-
-Let $x$ be call-minutes ($x \ge 0$).
-
-**Translate into an inequality**
-
-$10 + 0.10x < 20 + 0.05x$.
-
-**Solve step by step**
-
-$0.05x < 10$
-$x < 200$.
-
-**Interpret the result**
-
-A is strictly cheaper iff $x < 200$ (they tie at 200).
-
-**Compare to the claim**
-
-True.
-
-**Quick check:** $x = 100$: A=20, B=25; $x = 200$: both 30; $x = 300$: A=40, B=35.""",
-            ),
-            (
-                'At exactly 200 call-minutes, Plan A is still strictly cheaper.',
+                'A water bill is 12 EUR fixed plus 1.80 EUR per cubic metre. With 30 EUR, a household can use at most 12 m^3.',
                 False,
                 """**Reading the wording**
 
-At x=200 both plans cost 30 EUR.
+        Fixed 12 EUR plus 1.80 EUR per m³; budget 30 EUR. Claim: maximum usage is 12 m³.
 
-**Choose a variable**
+        **Choose a variable**
 
-$x = 200$.
+        Let $m$ be cubic metres used.
 
-**Translate into an inequality**
+        **Translate into an inequality**
 
-$30 < 30$?
+        $12 + 1.80m \le 30$.
 
-**Solve step by step**
+        **Solve step by step**
 
-No — they are equal.
+        $1.80m \le 18$
+$m \le 10$.
 
-**Interpret the result**
+        **Interpret the result**
 
-Strict inequality fails at the boundary.
+        At most 10 m³ fit the budget, not 12.
 
-**Compare to the claim**
+        **Compare to the claim**
 
-False.
+        False — 12 m³ would cost 33.60 EUR.
 
-**Quick check:** A is cheaper only for $x < 200$.""",
+        **Quick check:** $m = 10$ costs 30 EUR; $m = 12$ costs 33.60 EUR.""",
             ),
             (
-                'For heavy users with more than 200 call-minutes, Plan B is cheaper.',
+                'Cinema tickets cost 9 EUR each. With 50 EUR, a group can buy at most 6 tickets.',
+                False,
+                """**Reading the wording**
+
+        Each ticket 9 EUR; budget 50 EUR. Claim: maximum tickets is 6.
+
+        **Choose a variable**
+
+        Let $n$ be the number of tickets.
+
+        **Translate into an inequality**
+
+        $9n \le 50$.
+
+        **Solve step by step**
+
+        $n \le \dfrac{50}{9} \approx 5.56$.
+Largest whole $n$: 5.
+
+        **Interpret the result**
+
+        Only 5 tickets fit; 6 tickets overspend.
+
+        **Compare to the claim**
+
+        False — 6 tickets cost 54 EUR.
+
+        **Quick check:** $n = 5$ costs 45 EUR; $n = 6$ costs 54 EUR.""",
+            ),
+            (
+                'A backpack may carry at most 4 kg and at most 20 litres. Each book weighs 0.5 kg and takes 3 litres. The greatest number of books that satisfy both limits is 8.',
+                False,
+                """**Reading the wording**
+
+        Weight ≤ 4 kg and volume ≤ 20 L; each book 0.5 kg and 3 L. Claim: maximum books is 8.
+
+        **Choose a variable**
+
+        Let $n$ be the number of books.
+
+        **Translate into an inequality**
+
+        $0.5n \le 4$ and $3n \le 20$.
+
+        **Solve step by step**
+
+        Weight: $n \le 8$.
+Volume: $n \le \dfrac{20}{3} \approx 6.67$.
+Binding limit: $n \le 6$.
+
+        **Interpret the result**
+
+        Volume binds first, so the maximum is 6, not 8.
+
+        **Compare to the claim**
+
+        False.
+
+        **Quick check:** $n = 6$ uses 3 kg and 18 L; $n = 7$ needs 21 L > 20.""",
+            ),
+            (
+                'A vaccine fridge must stay between 2 °C and 6 °C inclusive. The condition $|T-4|\\le 2$ describes exactly that temperature band.',
                 True,
                 """**Reading the wording**
 
-From the same algebra, A costs more than B when $x > 200$.
+Required band $[2,6]$. Claim: $|T-4| \le 2$ is exactly that band.
 
 **Choose a variable**
 
-$x > 200$.
+Let $T$ be the temperature in °C.
 
 **Translate into an inequality**
 
-$10 + 0.10x > 20 + 0.05x$.
+$|T - 4| \le 2 \Leftrightarrow -2 \le T - 4 \le 2$.
 
 **Solve step by step**
 
-B has the smaller cost.
+$2 \le T \le 6$.
 
 **Interpret the result**
 
-True.
+The absolute-value condition matches the required band exactly.
 
 **Compare to the claim**
 
 True.
 
-**Quick check:** Example $x = 300$: A=40, B=35.""",
+**Quick check:** $T = 2$ and $T = 6$ are endpoints; $T = 7$ gives $|3| = 3 > 2$.""",
+            ),
+            (
+                'If $p(x)=-x^{2}+10x-9$, then the solution set of $p(x)>12$ is exactly the closed interval $[3,7]$.',
+                False,
+                """**Reading the wording**
+
+        Quadratic profit/height-style model; claim $p(x) > 12$ on the closed interval $[3,7]$.
+
+        **Choose a variable**
+
+        Let $x$ be a real number.
+
+        **Translate into an inequality**
+
+        $-x^{2}+10x-9 > 12$
+$-x^{2}+10x-21 > 0$
+$x^{2}-10x+21 < 0$
+$(x-3)(x-7) < 0$.
+
+        **Solve step by step**
+
+        Solution: $3 < x < 7$.
+
+        **Interpret the result**
+
+        Endpoints give $p(3) = p(7) = 12$, which is not strictly greater than 12.
+
+        **Compare to the claim**
+
+        False — the correct set is the open interval $(3,7)$.
+
+        **Quick check:** $p(5) = 16 > 12$; $p(3) = 12 \not> 12$.""",
             ),
         ],
     },
 ]
+
