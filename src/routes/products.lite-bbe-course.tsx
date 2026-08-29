@@ -1,4 +1,3 @@
-import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BookOpen, ListChecks, Clock, Users, Lightbulb, Check, Quote } from "lucide-react";
 import {
@@ -232,17 +231,17 @@ function LiteBbeCourseProduct() {
                   <span className="font-display text-4xl font-bold text-foreground">€279</span>
                 </div>
               </div>
-              <EnrollButton
-                slug="lite-bbe-course"
-                to="/products/lite-bbe-course-subjects"
-                className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
-                style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
+              <button
+                type="button"
+                disabled
+                className="inline-flex w-full cursor-not-allowed items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white opacity-70 shadow-sm sm:w-auto"
+                style={{ backgroundColor: ORANGE }}
               >
-                Get Light Access →
-              </EnrollButton>
+                Coming soon
+              </button>
             </div>
             <p className="mt-3 text-center text-xs text-muted-foreground sm:text-left">
-              A focused starting point — see terms for access details.
+              Lite access is not available for purchase yet.
             </p>
           </div>
 
