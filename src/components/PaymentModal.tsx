@@ -14,6 +14,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode } from "@/lib/promo.functions";
 
 const ORANGE = "#C2643A";
+const DISCOUNT_CODE = "BBE-JfkDjt15";
+const DISCOUNT_PCT = 15;
 
 type PaymentModalProps = {
   open: boolean;
@@ -36,7 +38,9 @@ export function PaymentModal({
   const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
+  const [discountApplied, setDiscountApplied] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+
 
   useEffect(() => {
     if (!open) return;
@@ -47,6 +51,7 @@ export function PaymentModal({
     setError(null);
     setSubmitted(false);
     setPromoUnlocked(false);
+    setDiscountApplied(false);
     setAuthOpen(false);
 
     // Buying requires an account first.
@@ -85,12 +90,20 @@ export function PaymentModal({
       return;
     }
 
+    // Discount-only code: applies 15% off, nothing else.
+    if (code.toLowerCase() === DISCOUNT_CODE.toLowerCase()) {
+      setDiscountApplied(true);
+      return;
+    }
+    setDiscountApplied(false);
+
     const { data } = await supabase.auth.getSession();
     if (!data.session) {
       setAuthOpen(true);
       setError("Sign in to redeem a promocode and unlock full access.");
       return;
     }
+
 
     setLoading(true);
     try {
@@ -236,6 +249,17 @@ export function PaymentModal({
                       className="w-full rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase outline-none focus:ring-2 focus:ring-ring"
                     />
                   </div>
+
+                  {discountApplied && (
+                    <p
+                      className="rounded-md border px-3 py-2 text-sm font-semibold"
+                      style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10`, color: ORANGE }}
+                    >
+                      {DISCOUNT_PCT}% discount applied
+                    </p>
+                  )}
+
+
 
                   {error && (
                     <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
