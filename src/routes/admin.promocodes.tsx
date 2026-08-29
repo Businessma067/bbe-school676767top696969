@@ -26,11 +26,23 @@ function AdminPromocodesPage() {
       try {
         const res = await adminListPromocodes();
         if (cancelled) return;
+        if (!res.ok) {
+          setError(res.error);
+          return;
+        }
         setCodes(res.codes);
         setAvailable(res.available);
         setUsed(res.used);
       } catch (e) {
-        if (!cancelled) setError(e instanceof Error ? e.message : "Failed to load promocodes");
+        if (!cancelled) {
+          const message =
+            e instanceof Error
+              ? e.message
+              : typeof e === "object" && e && "message" in e && typeof (e as { message: unknown }).message === "string"
+                ? (e as { message: string }).message
+                : "Failed to load promocodes";
+          setError(message);
+        }
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -43,9 +55,17 @@ function AdminPromocodesPage() {
   return (
     <AdminLayout title="Promocodes" wide>
       {error ? (
-        <p className="mb-3 rounded-lg border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive">
-          {error}
-        </p>
+        <div className="mb-3 space-y-2 rounded-lg border border-destructive/40 bg-destructive/10 px-3 py-3 text-sm text-destructive">
+          <p className="font-semibold">Could not load promocodes</p>
+          <p className="whitespace-pre-wrap text-destructive/90">{error}</p>
+          <p className="text-xs text-destructive/80">
+            Open Supabase → SQL Editor, paste{" "}
+            <code className="rounded bg-destructive/10 px-1">
+              supabase/migrations/20260829210000_promocodes.sql
+            </code>
+            , run it, then refresh this page.
+          </p>
+        </div>
       ) : null}
 
       <div className="mb-6 grid gap-3 sm:grid-cols-3">
