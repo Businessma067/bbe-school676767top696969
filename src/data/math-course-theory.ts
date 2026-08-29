@@ -7,6 +7,7 @@
 import ch1 from "./math-theory/ch1.md?raw";
 import ch3 from "./math-theory/ch3.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
+import ch6 from "./math-theory/ch6.md?raw";
 import ch8 from "./math-theory/ch8.md?raw";
 import ch12 from "./math-theory/ch12.md?raw";
 import ch13 from "./math-theory/ch13.md?raw";
@@ -36,6 +37,13 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     num: 5,
     title: "Linear equations in two unknowns",
     markdown: ch5,
+  },
+  6: {
+    num: 6,
+    title: "Inequalities",
+    markdown: ch6,
+    materialsPdfUrl: "/bbe-math-inequalities-theory.pdf",
+    materialsPdfName: "BBE-Math-Inequalities-Prep-Guide.pdf",
   },
   8: {
     num: 8,

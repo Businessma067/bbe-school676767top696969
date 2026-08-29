@@ -1903,6 +1903,56 @@ function ProbPmfBars() {
   );
 }
 
+function StaticTheoryImage({
+  src,
+  alt,
+}: {
+  src: string;
+  alt: string;
+}) {
+  return (
+    <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-lg border border-border/50 bg-white">
+      <img src={src} alt={alt} className="mx-auto h-auto w-full object-contain" loading="lazy" />
+    </div>
+  );
+}
+
+function IneqWavyCurveGeneral() {
+  return (
+    <StaticTheoryImage
+      src="/bbe-theory/math-inequalities/wavy-curve-general.png"
+      alt="Wavy curve through three simple roots, alternating above and below the axis"
+    />
+  );
+}
+
+function IneqWavyCurveFourRoots() {
+  return (
+    <StaticTheoryImage
+      src="/bbe-theory/math-inequalities/wavy-curve-four-roots.png"
+      alt="Wavy curve for (x² − 9)/(x² − 16), alternating leftward from the rightmost positive region"
+    />
+  );
+}
+
+function IneqWavyCurveEvenPower() {
+  return (
+    <StaticTheoryImage
+      src="/bbe-theory/math-inequalities/wavy-curve-even-power.png"
+      alt="Wavy curve bouncing at an even-power root x = 1 while crossing at odd-power and denominator zeros"
+    />
+  );
+}
+
+function IneqCompoundIntersection() {
+  return (
+    <StaticTheoryImage
+      src="/bbe-theory/math-inequalities/compound-intersection.png"
+      alt="Number-line shading for left and right parts of a compound inequality, with their intersection highlighted"
+    />
+  );
+}
+
 /** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
 const FIGURES: Record<string, () => ReactNode> = {
 
@@ -1947,6 +1997,10 @@ const FIGURES: Record<string, () => ReactNode> = {
   "prob-venn-apps": ProbVennApps,
   "prob-bayes-tree": ProbBayesTree,
   "prob-pmf-bars": ProbPmfBars,
+  "ineq-wavy-general": IneqWavyCurveGeneral,
+  "ineq-wavy-four-roots": IneqWavyCurveFourRoots,
+  "ineq-wavy-even-power": IneqWavyCurveEvenPower,
+  "ineq-compound-intersection": IneqCompoundIntersection,
 
 };
 
