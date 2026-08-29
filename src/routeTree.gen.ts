@@ -38,6 +38,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TutorExamRouteImport } from './routes/tutor-exam'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
+import { Route as AdminPromocodesRouteImport } from './routes/admin.promocodes'
 import { Route as AdminUsersRouteImport } from './routes/admin.users'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
@@ -212,6 +213,11 @@ const AdminIndexRoute = AdminIndexRouteImport.update({
 const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   id: '/economics',
   path: '/economics',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminPromocodesRoute = AdminPromocodesRouteImport.update({
+  id: '/promocodes',
+  path: '/promocodes',
   getParentRoute: () => AdminRoute,
 } as any)
 const AdminUsersRoute = AdminUsersRouteImport.update({
@@ -401,6 +407,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -455,6 +462,7 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/promocodes': typeof AdminPromocodesRoute
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
   '/demo-practice/english': typeof DemoPracticeEnglishRoute
@@ -516,6 +524,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
   '/admin/economics': typeof AdminEconomicsRoute
+  '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
   '/api/chat': typeof ApiChatRoute
   '/demo-practice/economics': typeof DemoPracticeEconomicsRoute
@@ -579,6 +588,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tutor-exam'
     | '/admin/economics'
+    | '/admin/promocodes'
     | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -633,6 +643,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/admin/economics'
+    | '/admin/promocodes'
     | '/api/chat'
     | '/demo-practice/economics'
     | '/demo-practice/english'
@@ -693,6 +704,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tutor-exam'
     | '/admin/economics'
+    | '/admin/promocodes'
     | '/admin/users'
     | '/api/chat'
     | '/demo-practice/economics'
@@ -963,6 +975,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminEconomicsRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/admin/promocodes': {
+      id: '/admin/promocodes'
+      path: '/promocodes'
+      fullPath: '/admin/promocodes'
+      preLoaderRoute: typeof AdminPromocodesRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/admin/users': {
       id: '/admin/users'
       path: '/users'
@@ -1192,12 +1211,14 @@ const AdminUsersRouteWithChildren = AdminUsersRoute._addFileChildren(
 
 interface AdminRouteChildren {
   AdminEconomicsRoute: typeof AdminEconomicsRoute
+  AdminPromocodesRoute: typeof AdminPromocodesRoute
   AdminUsersRoute: typeof AdminUsersRouteWithChildren
   AdminIndexRoute: typeof AdminIndexRoute
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
   AdminEconomicsRoute: AdminEconomicsRoute,
+  AdminPromocodesRoute: AdminPromocodesRoute,
   AdminUsersRoute: AdminUsersRouteWithChildren,
   AdminIndexRoute: AdminIndexRoute,
 }
