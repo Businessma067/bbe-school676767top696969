@@ -251,25 +251,49 @@ export function MathTasksPage({ tier }: Props) {
 
   const showTheory = tier !== "demo";
 
+  const closeChapterSubtopics = (chapterNum: number) => {
+    const prefix = `${chapterNum}:`;
+    setExpandedSub((e) => {
+      const next = { ...e };
+      for (const key of Object.keys(next)) {
+        if (key.startsWith(prefix)) next[key] = false;
+      }
+      return next;
+    });
+  };
+
+  const chapterHasOpenSubtopics = (chapterNum: number) => {
+    const prefix = `${chapterNum}:`;
+    return Object.entries(expandedSub).some(([key, open]) => open && key.startsWith(prefix));
+  };
+
   const openChapterTasks = (ch: MathChapter) => {
     setExpanded((e) => ({ ...e, [ch.num]: true }));
     setTheoryChapter(null);
     setActiveChapter(ch.num);
-    const list = byChapter.get(ch.num) ?? [];
-    const subs = ch.subsections;
-    if (subs?.length) {
-      setExpandedSub((e) => {
-        const next = { ...e };
-        for (const sub of subs) {
-          const hasUnlocked = list.some(
-            (t, i) =>
-              t.subsection === sub.id && !isLocked(tier, ch.num, i, list),
-          );
-          if (hasUnlocked) next[`${ch.num}:${sub.id}`] = true;
-        }
-        return next;
-      });
+  };
+
+  /** Topic name: if any subtopics are open, close them; otherwise toggle the topic. */
+  const onTopicNameClick = (ch: MathChapter, hasTheory: boolean) => {
+    if (ch.comingSoon) return;
+    if (chapterHasOpenSubtopics(ch.num)) {
+      closeChapterSubtopics(ch.num);
+      setActiveChapter(ch.num);
+      return;
     }
+    const isOpen = !!expanded[ch.num];
+    if (isOpen) {
+      setExpanded((e) => ({ ...e, [ch.num]: false }));
+      setActiveChapter(ch.num);
+      return;
+    }
+    if (hasTheory) {
+      setExpanded((e) => ({ ...e, [ch.num]: true }));
+      setActiveChapter(ch.num);
+      setTheoryChapter(ch.num);
+      return;
+    }
+    openChapterTasks(ch);
   };
 
   const nextTaskIdx = nextUnlockedIdx(tier, activeChapter, activeIdx, activeList);
@@ -324,6 +348,25 @@ export function MathTasksPage({ tier }: Props) {
                   const isOpen = !!expanded[ch.num];
                   const isActiveCh = activeChapter === ch.num;
                   const hasTheory = showTheory && mathChapterHasTheory(ch.num);
+                  if (ch.comingSoon) {
+                    return (
+                      <li key={ch.num} className="overflow-hidden rounded-xl border border-transparent">
+                        <div className="flex items-stretch rounded-xl opacity-70">
+                          <div className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5">
+                            <ChevronDown className="h-4 w-4 shrink-0 -rotate-90 text-muted-foreground" />
+                            <div className="flex min-w-0 flex-1 items-center gap-2">
+                              <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
+                                {ch.num}. {ch.title}
+                              </span>
+                              <span className="shrink-0 rounded-md border border-border bg-secondary px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                                Coming soon
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  }
                   return (
                     <li key={ch.num} className="overflow-hidden rounded-xl border border-transparent">
                       <div
@@ -337,14 +380,22 @@ export function MathTasksPage({ tier }: Props) {
                             <button
                               type="button"
                               onClick={() => {
-                                // Same as Economics: opening the chapter goes to theory first.
+                                if (isOpen) {
+                                  closeChapterSubtopics(ch.num);
+                                  setExpanded((e) => ({ ...e, [ch.num]: false }));
+                                  return;
+                                }
                                 setExpanded((e) => ({ ...e, [ch.num]: true }));
                                 setActiveChapter(ch.num);
                                 setTheoryChapter(ch.num);
                               }}
                               className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
-                              aria-label="Open learning material"
-                              title="Open learning material for this chapter"
+                              aria-label={isOpen ? "Collapse chapter" : "Open learning material"}
+                              title={
+                                isOpen
+                                  ? "Collapse chapter"
+                                  : "Open learning material for this chapter"
+                              }
                             >
                               <ChevronDown
                                 className={cn(
@@ -355,11 +406,7 @@ export function MathTasksPage({ tier }: Props) {
                             </button>
                             <button
                               type="button"
-                              onClick={() => {
-                                setExpanded((e) => ({ ...e, [ch.num]: true }));
-                                setActiveChapter(ch.num);
-                                setTheoryChapter(ch.num);
-                              }}
+                              onClick={() => onTopicNameClick(ch, true)}
                               className="flex min-w-0 flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
                               title="Open learning material for this chapter"
                             >
@@ -374,7 +421,7 @@ export function MathTasksPage({ tier }: Props) {
                         ) : (
                           <button
                             type="button"
-                            onClick={() => openChapterTasks(ch)}
+                            onClick={() => onTopicNameClick(ch, false)}
                             className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5 text-left"
                           >
                             <ChevronDown

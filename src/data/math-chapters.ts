@@ -3,7 +3,7 @@
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
  * 4 (Equations), 5 (Linear equations), 6 (Inequalities), 8 (Power functions),
  * 11 (Elementary probability), and 12 (Binomial) are populated;
- * others use placeholders.
+ * chapters 9–10 are marked coming soon; others use placeholders.
  */
 
 import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
@@ -48,6 +48,8 @@ export type MathChapter = {
   title: string;
   tasks: MathTask[];
   subsections?: readonly MathSubsection[];
+  /** Chapter listed in the syllabus but not available for practice yet. */
+  comingSoon?: boolean;
 };
 
 /** Fallback: how many free tasks per unspecified chapter in the Demo tier. */
@@ -189,13 +191,20 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
   11: MATH_CH12_SUBSECTIONS,
 };
 
+/** Syllabus chapters with structure ready but no practice content yet. */
+const COMING_SOON_CHAPTERS = new Set([9, 10]);
+
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
   const num = i + 1;
+  const comingSoon = COMING_SOON_CHAPTERS.has(num);
   return {
     num,
     title,
-    tasks: CHAPTER_OVERRIDES[num] ?? makePlaceholders(num, MATH_TASKS_PER_CHAPTER),
+    tasks: comingSoon
+      ? []
+      : (CHAPTER_OVERRIDES[num] ?? makePlaceholders(num, MATH_TASKS_PER_CHAPTER)),
     subsections: CHAPTER_SUBSECTIONS[num],
+    comingSoon,
   };
 });
 
