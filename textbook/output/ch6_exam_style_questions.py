@@ -94,7 +94,7 @@ At 83 the average is still slightly above 2 EUR.
 
 False.
 
-**Quick check:** $x=83\approx 2.007$ EUR; $x=84\approx 1.986$ EUR.""",
+**Quick check:** $x=83\\approx 2.007$ EUR; $x=84\\approx 1.986$ EUR.""",
             ),
             (
                 'One product uses 3 units of A, 2 of B, and 4 of C at 40, 50, and 25 EUR, plus 12 EUR finishing. Budget 21,400 EUR and storage at most 475 raw units. The maximum number of products is less than 50.',
@@ -142,7 +142,7 @@ Solve $\dfrac{4}{x}<x$ and $x<|2-3x|$ separately, then intersect.
 
 **Solve step by step**
 
-Left: $(2,\infty)\cup(-2,0)$. Right: $x<\tfrac{1}{2}$ or $x>1$. Intersection: $(-2,0)\cup(2,\infty)$.
+Left: $(2,\infty)\cup(-2,0)$. Right: $x<\\tfrac{1}{2}$ or $x>1$. Intersection: $(-2,0)\cup(2,\infty)$.
 
 **Interpret the result**
 
@@ -178,7 +178,7 @@ $3.50+1.20d\le 18$.
 
 **Solve step by step**
 
-$d\le 14.5/1.2\approx 12.08\Rightarrow$ max whole $d=12$.
+$d\le 14.5/1.2\\approx 12.08\Rightarrow$ max whole $d=12$.
 
 **Interpret the result**
 
@@ -217,7 +217,7 @@ After 10 weeks she has 290 EUR.
 
 False.
 
-**Quick check:** $w=10\to 290$; $w=11\to 315$.""",
+**Quick check:** $w=10\\to 290$; $w=11\\to 315$.""",
             ),
             (
                 'If $s(t)=-4t^{2}+32t+5$, then $s(t)\\ge 53$ for every t in the closed interval $[2,6]$.',
@@ -275,7 +275,7 @@ $k\le 260$.
 
 True.
 
-**Quick check:** $k=260\to 200$; $k=261\to 200.25$.""",
+**Quick check:** $k=260\\to 200$; $k=261\\to 200.25$.""",
             ),
             (
                 'An elevator limit is 600 kg. Adults of 70, 85, and 90 kg are already inside. At most 8 children of 35 kg each can still enter.',
@@ -304,7 +304,7 @@ $c\le 10.14\Rightarrow$ max $c=10$.
 
 False.
 
-**Quick check:** $c=10\to 595$ kg; $c=11\to 630$ kg.""",
+**Quick check:** $c=10\\to 595$ kg; $c=11\\to 630$ kg.""",
             ),
         ],
     },
@@ -330,7 +330,7 @@ $14h+50\ge 450$.
 
 **Solve step by step**
 
-$h\ge 400/14\approx 28.57$. At $h=28$: pay $=442<450$.
+$h\ge 400/14\\approx 28.57$. At $h=28$: pay $=442<450$.
 
 **Interpret the result**
 
@@ -340,7 +340,7 @@ Need at least 29 hours.
 
 False.
 
-**Quick check:** $h=29\to 456$ EUR.""",
+**Quick check:** $h=29\\to 456$ EUR.""",
             ),
             (
                 'Plan A costs 10 EUR plus 0.10 EUR per call-minute; Plan B costs 20 EUR plus 0.05 EUR per call-minute. Plan A is strictly cheaper whenever fewer than 200 call-minutes are used.',
@@ -398,7 +398,7 @@ $d\le 500$.
 
 True.
 
-**Quick check:** $d=500\to 56$; $d=501\to 56.112$.""",
+**Quick check:** $d=500\\to 56$; $d=501\\to 56.112$.""",
             ),
             (
                 'A shop offers 20% off. With 48 EUR, Nora can afford any item whose marked price is at most 55 EUR.',
@@ -427,7 +427,7 @@ She can afford up to 60 EUR marked.
 
 False.
 
-**Quick check:** $p=60\to 48$ EUR; $p=55\to 44$ EUR.""",
+**Quick check:** $p=60\\to 48$ EUR; $p=55\\to 44$ EUR.""",
             ),
             (
                 'A courier has 90 minutes including a fixed 15-minute warehouse stop and drives at 1.5 min/km. Every address within 45 km can be reached on time.',
@@ -456,7 +456,7 @@ $[0,45]\subset[0,50]$.
 
 True.
 
-**Quick check:** $d=45\to 82.5$ min; $d=50\to 90$ min.""",
+**Quick check:** $d=45\\to 82.5$ min; $d=50\\to 90$ min.""",
             ),
         ],
     },
@@ -700,7 +700,7 @@ Max whole $n=9$.
 
 False.
 
-**Quick check:** $n=9\to 4.8$ kg; $n=10\to 5.2$ kg.""",
+**Quick check:** $n=9\\to 4.8$ kg; $n=10\\to 5.2$ kg.""",
             ),
             (
                 'Concert tickets cost 28 EUR each plus a one-time 12 EUR fee. With 160 EUR, a club can buy tickets for at most 5 people.',
@@ -729,7 +729,7 @@ Max whole $n=5$.
 
 True.
 
-**Quick check:** $n=5\to 152$; $n=6\to 180$.""",
+**Quick check:** $n=5\\to 152$; $n=6\\to 180$.""",
             ),
             (
                 'A bakery has 25 kg of flour and each loaf needs 0.4 kg. It is possible to bake 60 loaves from this stock.',
@@ -758,7 +758,7 @@ $0.4n\le 25\Rightarrow n\le 62.5$.
 
 True.
 
-**Quick check:** $n=62\to 24.8$ kg; $n=63\to 25.2$ kg.""",
+**Quick check:** $n=62\\to 24.8$ kg; $n=63\\to 25.2$ kg.""",
             ),
             (
                 'A 2:1 paint mix (white 3 EUR/L, colour 9 EUR/L) costs at most 50 EUR whenever total blend volume is at most 12 litres.',
@@ -787,7 +787,7 @@ Only up to 10 L stay within 50 EUR.
 
 False.
 
-**Quick check:** $V=10\to 50$; $V=12\to 60$.""",
+**Quick check:** $V=10\\to 50$; $V=12\\to 60$.""",
             ),
             (
                 'A drone can fly at most 40 minutes and uses 0.8 min per kilometre. Any one-way delivery of 55 km can be completed on one charge.',
@@ -816,7 +816,7 @@ Beyond battery life.
 
 False.
 
-**Quick check:** $d=50\to 40$ min; $d=55\to 44$ min.""",
+**Quick check:** $d=50\\to 40$ min; $d=55\\to 44$ min.""",
             ),
         ],
     },
@@ -852,7 +852,7 @@ Need at least 72 km/h.
 
 False.
 
-**Quick check:** $v=72\to$ exactly 2.5 h.""",
+**Quick check:** $v=72\\to$ exactly 2.5 h.""",
             ),
             (
                 'Jordan earns 12 EUR/h for the first 40 hours and 18 EUR/h thereafter. Working 46 hours yields at least 600 EUR.',
@@ -881,7 +881,7 @@ $588<600$. Need $h\ge 46.67\Rightarrow$ at least 47.
 
 False.
 
-**Quick check:** $h=47\to 606$ EUR.""",
+**Quick check:** $h=47\\to 606$ EUR.""",
             ),
             (
                 'A student owes 1,200 EUR interest-free and pays 150 EUR each month. The loan is fully paid after at most 8 monthly payments.',
@@ -910,7 +910,7 @@ Exactly 8 payments clear the debt.
 
 True.
 
-**Quick check:** $n=7\to 1050$; $n=8\to 1200$.""",
+**Quick check:** $n=7\\to 1050$; $n=8\\to 1200$.""",
             ),
             (
                 'A parking garage has 2.10 m clearance. A car 1.70 m tall with a 0.35 m roof box can enter.',
@@ -1004,7 +1004,7 @@ Width 18 m gives area 72 < 96.
 
 False.
 
-**Quick check:** $w=16\to 128$; $w=18\to 72$.""",
+**Quick check:** $w=16\\to 128$; $w=18\\to 72$.""",
             ),
             (
                 'A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 length-to-width ratio, and needs area at least 160 $m^{2}$. Every shorter-side length from 8 m to 12 m inclusive is feasible.',
@@ -1019,11 +1019,11 @@ Width $w$, length $5w/2$.
 
 **Translate into an inequality**
 
-$7w\le 96$ and $\tfrac{5}{2}w^{2}\ge 160$.
+$7w\le 96$ and $\\tfrac{5}{2}w^{2}\ge 160$.
 
 **Solve step by step**
 
-$8\le w\le 96/7\approx 13.71$, which contains $[8,12]$.
+$8\le w\le 96/7\\approx 13.71$, which contains $[8,12]$.
 
 **Interpret the result**
 
@@ -1106,7 +1106,7 @@ Width $w$, length $5w/3$.
 
 **Translate into an inequality**
 
-$\tfrac{16w}{3}\le 120$ and $\tfrac{5}{3}w^{2}\ge 375$.
+$\\tfrac{16w}{3}\le 120$ and $\\tfrac{5}{3}w^{2}\ge 375$.
 
 **Solve step by step**
 
@@ -1156,7 +1156,7 @@ Matches.
 
 True.
 
-**Quick check:** $x=4\to -6\le 0$; $x=8\to 6>0$.""",
+**Quick check:** $x=4\\to -6\le 0$; $x=8\\to 6>0$.""",
             ),
             (
                 'The inequality $|x-3|\\le 5$ has solution set $[-2,8]$.',
@@ -1243,7 +1243,7 @@ Matches.
 
 True.
 
-**Quick check:** $x=0\to -2\le 0$; $x=3\to 1/4>0$.""",
+**Quick check:** $x=0\\to -2\le 0$; $x=3\\to 1/4>0$.""",
             ),
             (
                 'If producing x units costs $90+0.6x$ EUR, then 150 whole units are the fewest that make average cost strictly less than 1.20 EUR.',
@@ -1272,7 +1272,7 @@ Strict inequality excludes 150.
 
 False.
 
-**Quick check:** $x=150\to 1.20$; $x=151\approx 1.196$.""",
+**Quick check:** $x=150\\to 1.20$; $x=151\\approx 1.196$.""",
             ),
         ],
     },
@@ -1308,7 +1308,7 @@ Need 200 minutes.
 
 False.
 
-**Quick check:** $m=200\to$ exactly 2500.""",
+**Quick check:** $m=200\\to$ exactly 2500.""",
             ),
             (
                 'A phone battery at 20% charges at 2 percentage points per minute. Charging for 25 minutes is enough to reach at least 80%.',
@@ -1337,7 +1337,7 @@ Need 30 minutes.
 
 False.
 
-**Quick check:** $t=30\to$ exactly 80%.""",
+**Quick check:** $t=30\\to$ exactly 80%.""",
             ),
             (
                 'An empty 480 L tank fills at 12 L/min. After 30 minutes of filling from empty, the tank is still not more than half full.',
@@ -1395,7 +1395,7 @@ Need 95% on B.
 
 False.
 
-**Quick check:** $b=95\to$ exactly 85%.""",
+**Quick check:** $b=95\\to$ exactly 85%.""",
             ),
             (
                 'Four friends share a taxi with meter fare F EUR plus a 4 EUR booking fee. If each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR.',
@@ -1424,7 +1424,7 @@ Implication holds.
 
 True.
 
-**Quick check:** $F=32\to$ share 9; $F=33\to$ share 9.25.""",
+**Quick check:** $F=32\\to$ share 9; $F=33\\to$ share 9.25.""",
             ),
         ],
     },
@@ -1489,7 +1489,7 @@ Not allowed.
 
 False.
 
-**Quick check:** $n=2\to 8.6$ tonnes.""",
+**Quick check:** $n=2\\to 8.6$ tonnes.""",
             ),
             (
                 'A café mixes equal masses of 8 EUR/kg and 14 EUR/kg beans. Any batch of at least 6 kg of this blend costs at most 60 EUR.',
@@ -1518,7 +1518,7 @@ Larger batches cost more.
 
 False.
 
-**Quick check:** $M=5\to 55$; $M=6\to 66$.""",
+**Quick check:** $M=5\\to 55$; $M=6\\to 66$.""",
             ),
             (
                 'A mobile plan costs 12 EUR plus 0.08 EUR per over-allowance megabyte. After 200 MB overage already used, using at most 150 more MB keeps the bill at or under 40 EUR.',
@@ -1547,7 +1547,7 @@ True.
 
 True.
 
-**Quick check:** $m=150\to 40$; $m=151\to 40.08$.""",
+**Quick check:** $m=150\\to 40$; $m=151\\to 40.08$.""",
             ),
             (
                 'A gardener has 80 m of fencing for a 4:1 rectangular plot and needs area at least 64 $m^{2}$. The shorter side can be any length from 4 m to 20 m inclusive.',
@@ -1612,7 +1612,7 @@ Smallest whole $x=45$.
 
 True.
 
-**Quick check:** $x=44\approx 5.045$; $x=45\approx 4.944$.""",
+**Quick check:** $x=44\\approx 5.045$; $x=45\\approx 4.944$.""",
             ),
             (
                 'If $h(t)=-5t^{2}+40t+8$, then the object is more than 83 m above ground between 3 and 5 seconds.',
@@ -1728,7 +1728,7 @@ Matches.
 
 True.
 
-**Quick check:** $x=-4\to 0<3$; $x=-7\to 3$.""",
+**Quick check:** $x=-4\\to 0<3$; $x=-7\\to 3$.""",
             ),
         ],
     },
@@ -1845,7 +1845,7 @@ $s \le 160$.
         **Solve step by step**
 
         $0.90d \le 17.50$
-$d \le \dfrac{17.50}{0.90} \approx 19.44$.
+$d \le \dfrac{17.50}{0.90} \\approx 19.44$.
 
         **Interpret the result**
 
@@ -2043,7 +2043,7 @@ $489.50 < 500$.
 
         False — need at least 44 hours (506 EUR).
 
-        **Quick check:** $h = 43 \to 489.50$; $h = 44 \to 506$.""",
+        **Quick check:** $h = 43 \\to 489.50$; $h = 44 \\to 506$.""",
             ),
         ],
     },
@@ -2071,7 +2071,7 @@ $t^{2}-6t+6 \le 0$.
 
         **Solve step by step**
 
-        Roots $3 \pm \sqrt{3} \approx 1.27, 4.73$.
+        Roots $3 \pm \sqrt{3} \\approx 1.27, 4.73$.
 Solution: $3-\sqrt{3} \le t \le 3+\sqrt{3}$.
 
         **Interpret the result**
@@ -2103,7 +2103,7 @@ Solution: $3-\sqrt{3} \le t \le 3+\sqrt{3}$.
 
         $\dfrac{120}{x} + 0.25 < 1.70$
 $\dfrac{120}{x} < 1.45$
-$x > \dfrac{120}{1.45} \approx 82.76$.
+$x > \dfrac{120}{1.45} \\approx 82.76$.
 Need $x \ge 83$.
 
         **Interpret the result**
@@ -2114,7 +2114,7 @@ Need $x \ge 83$.
 
         False — need at least 83 whole units.
 
-        **Quick check:** $x = 80 \to 1.75$; $x = 83 \approx 1.696 < 1.70$.""",
+        **Quick check:** $x = 80 \\to 1.75$; $x = 83 \\approx 1.696 < 1.70$.""",
             ),
             (
                 'The inequality $|3x-6|\\le 9$ has solution set $[-1,5]$.',
@@ -2194,7 +2194,7 @@ $3x \le 12 \Rightarrow x \le 4$.
         **Solve step by step**
 
         Storage: $n \le 30$.
-Budget: $n \le \dfrac{8000}{180} \approx 44.4$.
+Budget: $n \le \dfrac{8000}{180} \\approx 44.4$.
 Binding limit: $n \le 30$.
 
         **Interpret the result**
@@ -2323,7 +2323,7 @@ $c \le 4$.
 
         **Solve step by step**
 
-        $n \le \dfrac{10}{1.80} \approx 5.56$.
+        $n \le \dfrac{10}{1.80} \\approx 5.56$.
 Largest whole $n$: 5.
 
         **Interpret the result**
@@ -2353,7 +2353,7 @@ Largest whole $n$: 5.
 
         **Solve step by step**
 
-        $n \le \dfrac{20}{3.50} \approx 5.71$.
+        $n \le \dfrac{20}{3.50} \\approx 5.71$.
 Largest whole $n$: 5.
 
         **Interpret the result**
@@ -2440,11 +2440,11 @@ Overall: $-2 \le x \le 2$.
                 False,
                 """**Reading the wording**
 
-        Rational inequality ≥ 0; claim solution is $[\tfrac{1}{2}, 3)$.
+        Rational inequality ≥ 0; claim solution is $[\\tfrac{1}{2}, 3)$.
 
         **Choose a variable**
 
-        Critical points $x = \tfrac{1}{2}$ (zero) and $x = 3$ (undefined).
+        Critical points $x = \\tfrac{1}{2}$ (zero) and $x = 3$ (undefined).
 
         **Translate into an inequality**
 
@@ -2452,8 +2452,8 @@ Overall: $-2 \le x \le 2$.
 
         **Solve step by step**
 
-        Non-negative on $(-\infty, \tfrac{1}{2}] \cup (3, \infty)$.
-The claimed interval $[\tfrac{1}{2}, 3)$ is where the expression is ≤ 0 (except undefined at 3).
+        Non-negative on $(-\infty, \\tfrac{1}{2}] \cup (3, \infty)$.
+The claimed interval $[\\tfrac{1}{2}, 3)$ is where the expression is ≤ 0 (except undefined at 3).
 
         **Interpret the result**
 
@@ -2461,7 +2461,7 @@ The claimed interval $[\tfrac{1}{2}, 3)$ is where the expression is ≤ 0 (excep
 
         **Compare to the claim**
 
-        False — correct set is $x \le \tfrac{1}{2}$ or $x > 3$.
+        False — correct set is $x \le \\tfrac{1}{2}$ or $x > 3$.
 
         **Quick check:** $x = 0$: $\dfrac{-1}{-3} > 0$ (in true set, not in claim); $x = 2$: $\dfrac{3}{-1} < 0$.""",
             ),
@@ -2513,7 +2513,7 @@ $(x-1)(x-5) \le 0$.
 
         **Solve step by step**
 
-        $6w \le 100 \Rightarrow w \le \dfrac{50}{3} \approx 16.67$.
+        $6w \le 100 \Rightarrow w \le \dfrac{50}{3} \\approx 16.67$.
 $w^{2} \ge 100 \Rightarrow w \ge 10$.
 True range: $10 \le w \le \dfrac{50}{3}$.
 
@@ -2562,7 +2562,7 @@ $370 < 400$.
 
         False — need $15h + 40 \ge 400 \Rightarrow h \ge 24$.
 
-        **Quick check:** $h = 24 \to 400$; $h = 22 \to 370$.""",
+        **Quick check:** $h = 24 \\to 400$; $h = 22 \\to 370$.""",
             ),
             (
                 'Plan A costs 8 EUR plus 0.12 EUR per message; Plan B costs 15 EUR plus 0.04 EUR per message. For 100 messages, Plan A is cheaper than Plan B.',
@@ -2739,7 +2739,7 @@ $m \le 10$.
 
         **Solve step by step**
 
-        $n \le \dfrac{50}{9} \approx 5.56$.
+        $n \le \dfrac{50}{9} \\approx 5.56$.
 Largest whole $n$: 5.
 
         **Interpret the result**
@@ -2770,7 +2770,7 @@ Largest whole $n$: 5.
         **Solve step by step**
 
         Weight: $n \le 8$.
-Volume: $n \le \dfrac{20}{3} \approx 6.67$.
+Volume: $n \le \dfrac{20}{3} \\approx 6.67$.
 Binding limit: $n \le 6$.
 
         **Interpret the result**

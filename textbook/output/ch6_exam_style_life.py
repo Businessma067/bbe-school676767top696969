@@ -65,7 +65,7 @@ $3.50 + 1.20d \le 18$.
 **Solve step by step**
 
 $1.20d \le 14.50$
-$d \le \dfrac{14.50}{1.20} = \dfrac{145}{12} \approx 12.08$ km.
+$d \le \dfrac{14.50}{1.20} = \dfrac{145}{12} \\approx 12.08$ km.
 
 **Interpret the result**
 
@@ -134,7 +134,7 @@ With $c$ children: $245 + 35c \le 600$.
 **Solve step by step**
 
 $35c \le 355$
-$c \le \dfrac{355}{35} \approx 10.14$.
+$c \le \dfrac{355}{35} \\approx 10.14$.
 
 So up to 10 such children would be allowed. In particular $c = 2$ is allowed.
 
@@ -209,7 +209,7 @@ $14h + 50 \ge 450$.
 **Solve step by step**
 
 $14h \ge 400$
-$h \ge \dfrac{400}{14} \approx 28.57$.
+$h \ge \dfrac{400}{14} \\approx 28.57$.
 
 Even with the bonus, he needs more than 28 hours.
 
@@ -498,7 +498,7 @@ Within budget: $28n + 12 \le 160$.
 **Solve step by step**
 
 $28n \le 148$
-$n \le \dfrac{148}{28} \approx 5.286$.
+$n \le \dfrac{148}{28} \\approx 5.286$.
 
 So the largest whole $n$ is 5.
 
@@ -533,7 +533,7 @@ Let $M$ be the total mass of the blend in kilograms ($M > 0$).
 **Translate into an inequality**
 
 Cost: $\dfrac{M}{2}\cdot 8 + \dfrac{M}{2}\cdot 14 = 4M + 7M = 11M$.
-“At most 60 EUR” means $11M \le 60$, so $M \le \dfrac{60}{11} \approx 5.45$.
+“At most 60 EUR” means $11M \le 60$, so $M \le \dfrac{60}{11} \\approx 5.45$.
 
 **Solve step by step**
 
@@ -578,7 +578,7 @@ They need at least 72 km/h. Seventy km/h is too slow.
 
 **Compare to the claim**
 
-At $v = 70$: time $= \dfrac{180}{70} \approx 2.57 > 2.5$ hours. The claim is false.
+At $v = 70$: time $= \dfrac{180}{70} \\approx 2.57 > 2.5$ hours. The claim is false.
 
 **Quick check:** $v = 72$ gives exactly 2.5 hours.""",
             ),
@@ -599,7 +599,7 @@ $4.3n \le 12$.
 
 **Solve step by step**
 
-$n \le \dfrac{12}{4.3} \approx 2.79$.
+$n \le \dfrac{12}{4.3} \\approx 2.79$.
 
 So the largest whole number is $n = 2$. Three trucks are not allowed.
 
@@ -926,7 +926,7 @@ Target: $480 + 18(h - 40) \ge 600$.
 **Solve step by step**
 
 $18(h - 40) \ge 120$
-$h - 40 \ge \dfrac{120}{18} = \dfrac{20}{3} \approx 6.67$
+$h - 40 \ge \dfrac{120}{18} = \dfrac{20}{3} \\approx 6.67$
 $h \ge 46.67$.
 
 **Interpret the result**
