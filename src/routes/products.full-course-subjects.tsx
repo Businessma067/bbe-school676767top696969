@@ -159,9 +159,8 @@ function FullCourseSubjects() {
           </div>
 
           <div className="mt-6 space-y-6">
-            <Link
-              to="/mock-exams"
-              className="group flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
+            <div
+              className="flex flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between"
               style={{ borderTop: "4px solid #C2703A" }}
             >
               <div>
@@ -175,12 +174,12 @@ function FullCourseSubjects() {
                 </p>
               </div>
               <span
-                className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all group-hover:brightness-110"
-                style={{ backgroundColor: "#C2703A", boxShadow: "0 4px 14px -4px #C2703A80" }}
+                className="inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-70 shadow-sm"
+                style={{ backgroundColor: "#C2703A" }}
               >
-                Go to mock exams →
+                Coming soon
               </span>
-            </Link>
+            </div>
 
             <Link
               to="/products/custom-mock-builder"

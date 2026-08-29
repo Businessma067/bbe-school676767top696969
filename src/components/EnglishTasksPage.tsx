@@ -97,6 +97,32 @@ export function EnglishTasksPage({ tier }: Props) {
   const requireAuthForAnswers =
     tier === "demo" ? authGate.requireAuth : () => true;
 
+  const closeChapterSubtopics = (chapterKey: string) => {
+    const prefix = `${chapterKey}:`;
+    setExpandedSub((e) => {
+      const next = { ...e };
+      for (const key of Object.keys(next)) {
+        if (key.startsWith(prefix)) next[key] = false;
+      }
+      return next;
+    });
+  };
+
+  /** Topic name: if any subtopics are open, close them; otherwise toggle the topic. */
+  const onTopicNameClick = (chKey: string) => {
+    const prefix = `${chKey}:`;
+    const anySubOpen = Object.entries(expandedSub).some(
+      ([key, open]) => open && key.startsWith(prefix),
+    );
+    if (anySubOpen) {
+      closeChapterSubtopics(chKey);
+      setActiveChapter(chKey);
+      return;
+    }
+    setExpanded((e) => ({ ...e, [chKey]: !e[chKey] }));
+    setActiveChapter(chKey);
+  };
+
   useEffect(() => {
     setActiveIdx(0);
     setExplanation(null);
@@ -275,10 +301,7 @@ export function EnglishTasksPage({ tier }: Props) {
                         >
                           <button
                             type="button"
-                            onClick={() => {
-                              setExpanded((e) => ({ ...e, [ch.key]: !e[ch.key] }));
-                              setActiveChapter(ch.key);
-                            }}
+                            onClick={() => onTopicNameClick(ch.key)}
                             className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5 text-left"
                           >
                             <ChevronDown
