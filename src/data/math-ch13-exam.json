@@ -7,11 +7,11 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A student guesses independently on a $10$-question true/false quiz, so each answer is correct with probability $0.5$. The probability of getting exactly $7$ correct is strictly less than $0.12$.",
-        "A call centre handles $8$ independent calls, each closing with probability $0.3$. The manager claims that the chance of at least one closed call is below $90\\%$.",
-        "A factory inspects $20$ independent parts, each defective with probability $0.1$. The expected number of defects is greater than the standard deviation of the defect count.",
-        "Two players each take $12$ independent shots; one scores with probability $0.4$ and the other with probability $0.6$. The first player's score count has strictly larger variance.",
-        "A safety panel contains $4$ independent switches, each working with probability $1/2$. The probability that at least one switch works is exactly $15/16$."
+        "A laboratory runs $9$ independent assays, each producing a positive result with probability $\\dfrac{1}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $3$ positives is $\\dfrac{344064}{1953125}$.",
+        "A quality team checks $7$ independent devices, each failing with probability $\\dfrac{1}{3}$. If $X$ counts failures, the probability of finding at most $2$ failures is $\\dfrac{139}{243}$.",
+        "A support desk independently resolves each of $12$ tickets on first contact with probability $\\dfrac{1}{10}$. Its daily resolution count has mean $\\dfrac{6}{5}$ and variance $\\dfrac{27}{25}$.",
+        "Production line A independently passes each of $8$ items with probability $\\dfrac{1}{4}$, while line B independently passes each of $9$ items with probability $\\dfrac{2}{5}$. The probability that A records exactly $3$ passes is greater than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $4$ independent activation attempts with success probability $\\dfrac{1}{10}$ per attempt. System B makes $7$ independent attempts with success probability $\\dfrac{1}{10}$ per attempt. The probability of at least one activation for A is less than that for B."
       ],
       "answer_key": [
         true,
@@ -21,15 +21,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=7)&=\\binom{10}{7}(0.5)^{10}=\\frac{120}{1024} \\\\ &\\approx0.11719<0.12\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-P(X=0)=1-(0.7)^8 \\\\ &\\approx0.94235>0.90\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=20(0.1)=2 \\\\ \\operatorname{SD}(X)&=\\sqrt{20(0.1)(0.9)}=\\sqrt{1.8}\\approx1.342<2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=12(0.4)(0.6)=2.88 \\\\ \\operatorname{Var}(Y)&=12(0.6)(0.4)=2.88\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-P(X=0) \\\\ &=1-\\left(\\frac12\\right)^4=\\frac{15}{16}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → True\n\nThe count is binomial because the $9$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=3)=\\binom{9}{3}\n\\left(\\dfrac{1}{5}\\right)^{3}\n\\left(\\dfrac{4}{5}\\right)^{6}$$\n\n$$P(X=3)=84\n\\left(\\dfrac{1}{125}\\right)\n\\left(\\dfrac{4096}{15625}\\right)\n=\\dfrac{344064}{1953125}\\approx 0.17616077$$\n\nThe coefficient counts which $3$ assays are positive; the statement claims $\\dfrac{344064}{1953125}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nThe phrase at most $2$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{7}{x}\\left(\\dfrac{1}{3}\\right)^x\n\\left(\\dfrac{2}{3}\\right)^{7-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{7}{0}\\left(\\dfrac{1}{3}\\right)^{0}\\left(\\dfrac{2}{3}\\right)^{7}=\\dfrac{128}{2187}$$\n\n$$P(X=1)=\\binom{7}{1}\\left(\\dfrac{1}{3}\\right)^{1}\\left(\\dfrac{2}{3}\\right)^{6}=\\dfrac{448}{2187}$$\n\n$$P(X=2)=\\binom{7}{2}\\left(\\dfrac{1}{3}\\right)^{2}\\left(\\dfrac{2}{3}\\right)^{5}=\\dfrac{224}{729}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 2)=\\dfrac{128}{2187}+\\dfrac{448}{2187}+\\dfrac{224}{729}\n=\\dfrac{416}{729}\\approx 0.57064472$$\n\nThe full tail is compared with the claimed $\\dfrac{139}{243}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nFor a binomial count, the mean and variance come from summing $12$ independent Bernoulli trials:\n\n$$E(X)=np=12\\left(\\dfrac{1}{10}\\right)=\\dfrac{6}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=12\\left(\\dfrac{1}{10}\\right)\\left(\\dfrac{9}{10}\\right)\n=\\dfrac{27}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{27}{25}}\\approx 1.03923$$\n\nThe statement's two values are $\\dfrac{6}{5}$ and $\\dfrac{27}{25}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{4}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{2}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{8}{3}\n\\left(\\dfrac{1}{4}\\right)^{3}\n\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{1701}{8192}\\approx 0.2076416$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{9}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{489888}{1953125}\\approx 0.25082266$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{1953125}{2359296}\\approx 0.82784$$\n\nThus A's exact-count probability is less than B's, while the statement says greater than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{4}\n=\\dfrac{3439}{10000}\\approx 0.3439$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{7}\n=\\dfrac{5217031}{10000000}\\approx 0.5217031$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-1778031}{10000000}\\approx -0.1778031$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 56,
-      "solution_overview": "Exact probabilities, complements, moments, and variance comparisons in binomial settings.",
+      "solution_overview": "Topics: exact, tail, moments, compare, complement. Map: A tests an exact binomial mass; B tests a multi-term binomial tail; C tests binomial moments; D tests a comparison of two binomial models; E tests an at-least-one complement comparison.",
       "placeholder": false
     },
     {
@@ -39,29 +39,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A greenhouse plants $6$ independent seeds, each germinating with probability $1/3$. A researcher claims that the probability of exactly $2$ germinations is below $0.30$.",
-        "A salesperson gives $5$ independent demonstrations, each succeeding with probability $0.4$. The probability of at least $4$ successes is greater than $0.08$.",
-        "A student guesses on $12$ independent true/false questions. The instructor claims that the number correct has equal mean and variance.",
-        "Student A answers $10$ questions correctly with probability $0.3$ each, while student B does so with probability $0.7$ each. A's correct count has the same distribution as B's incorrect count.",
-        "A campaign compares $5$ and $10$ independent contacts, each converting with probability $0.2$. Doubling the contacts from $5$ to $10$ exactly doubles the chance of at least one conversion."
+        "A quality team checks $8$ independent devices, each failing with probability $\\dfrac{2}{5}$. If $X$ counts failures, the probability of finding at least $4$ failures is $\\dfrac{31712}{78125}$.",
+        "A bottling line independently rejects each of $13$ bottles with probability $\\dfrac{1}{5}$. The standard deviation of the rejection count is less than $\\dfrac{7}{5}$ bottles.",
+        "Production line A independently passes each of $9$ items with probability $\\dfrac{3}{10}$, while line B independently passes each of $9$ items with probability $\\dfrac{3}{5}$. The probability that A records exactly $4$ passes is greater than the probability that B records exactly $4$ passes.",
+        "Backup system A makes $5$ independent activation attempts with success probability $\\dfrac{1}{5}$ per attempt. System B makes $6$ independent attempts with success probability $\\dfrac{1}{3}$ per attempt. The probability of at least one activation for A is greater than that for B.",
+        "A laboratory runs $10$ independent assays, each producing a positive result with probability $\\dfrac{3}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $5$ positives is $\\dfrac{64324591}{625000000}$."
       ],
       "answer_key": [
-        false,
         true,
         false,
         true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=2)&=\\binom62\\left(\\frac13\\right)^2\\left(\\frac23\\right)^4 \\\\ &=\\frac{80}{243}\\approx0.32922>0.30\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge4)&=\\binom54(0.4)^4(0.6)+(0.4)^5 \\\\ &=0.0768+0.01024=0.08704>0.08\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\nE(X)&=12(0.5)=6 \\\\ \\operatorname{Var}(X)&=12(0.5)(0.5)=3\\ne6\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\nX&\\sim\\operatorname{Bin}(10,0.3) \\\\ 10-Y&\\sim\\operatorname{Bin}(10,1-0.7)=\\operatorname{Bin}(10,0.3)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP_5&=1-(0.8)^5\\approx0.67232 \\\\ P_{10}&=1-(0.8)^{10}\\approx0.89263\\ne2P_5\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → True\n\nThe phrase at least $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 4)=\\sum_{x=4}^{8}\n\\binom{8}{x}\\left(\\dfrac{2}{5}\\right)^x\n\\left(\\dfrac{3}{5}\\right)^{8-x}$$\n\nCompute every included mass:\n\n$$P(X=4)=\\binom{8}{4}\\left(\\dfrac{2}{5}\\right)^{4}\\left(\\dfrac{3}{5}\\right)^{4}=\\dfrac{18144}{78125}$$\n\n$$P(X=5)=\\binom{8}{5}\\left(\\dfrac{2}{5}\\right)^{5}\\left(\\dfrac{3}{5}\\right)^{3}=\\dfrac{48384}{390625}$$\n\n$$P(X=6)=\\binom{8}{6}\\left(\\dfrac{2}{5}\\right)^{6}\\left(\\dfrac{3}{5}\\right)^{2}=\\dfrac{16128}{390625}$$\n\n$$P(X=7)=\\binom{8}{7}\\left(\\dfrac{2}{5}\\right)^{7}\\left(\\dfrac{3}{5}\\right)^{1}=\\dfrac{3072}{390625}$$\n\n$$P(X=8)=\\binom{8}{8}\\left(\\dfrac{2}{5}\\right)^{8}\\left(\\dfrac{3}{5}\\right)^{0}=\\dfrac{256}{390625}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 4)=\\dfrac{18144}{78125}+\\dfrac{48384}{390625}+\\dfrac{16128}{390625}+\\dfrac{3072}{390625}+\\dfrac{256}{390625}\n=\\dfrac{31712}{78125}\\approx 0.4059136$$\n\nThe full tail is compared with the claimed $\\dfrac{31712}{78125}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nFor a binomial count, the mean and variance come from summing $13$ independent Bernoulli trials:\n\n$$E(X)=np=13\\left(\\dfrac{1}{5}\\right)=\\dfrac{13}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=13\\left(\\dfrac{1}{5}\\right)\\left(\\dfrac{4}{5}\\right)\n=\\dfrac{52}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{52}{25}}\\approx 1.44222$$\n\nThe computed SD $1.44222$ is compared with $\\dfrac{7}{5}=1.4$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{10}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=4)=\\binom{9}{4}\n\\left(\\dfrac{3}{10}\\right)^{4}\n\\left(\\dfrac{7}{10}\\right)^{5}\n=\\dfrac{85766121}{500000000}\\approx 0.17153224$$\n\nFor line B,\n\n$$P(X_B=4)=\\binom{9}{4}\n\\left(\\dfrac{3}{5}\\right)^{4}\n\\left(\\dfrac{2}{5}\\right)^{5}\n=\\dfrac{326592}{1953125}\\approx 0.1672151$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=4)}{P(X_B=4)}\n=\\dfrac{16807}{16384}\\approx 1.02582$$\n\nThus A's exact-count probability is greater than B's, while the statement says greater than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{5}\n=\\dfrac{2101}{3125}\\approx 0.67232$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{6}\n=\\dfrac{665}{729}\\approx 0.9122085$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-546496}{2278125}\\approx -0.2398885$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → False\n\nThe count is binomial because the $10$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=5)=\\binom{10}{5}\n\\left(\\dfrac{3}{10}\\right)^{5}\n\\left(\\dfrac{7}{10}\\right)^{5}$$\n\n$$P(X=5)=252\n\\left(\\dfrac{243}{100000}\\right)\n\\left(\\dfrac{16807}{100000}\\right)\n=\\dfrac{257298363}{2500000000}\\approx 0.10291935$$\n\nThe coefficient counts which $5$ assays are positive; the statement claims $\\dfrac{64324591}{625000000}$.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 57,
-      "solution_overview": "Binomial mass, upper tails, moments, complementary success rates, and nonlinear complements.",
+      "solution_overview": "Topics: tail, moments, compare, complement, exact. Map: A tests a multi-term binomial tail; B tests binomial moments; C tests a comparison of two binomial models; D tests an at-least-one complement comparison; E tests an exact binomial mass.",
       "placeholder": false
     },
     {
@@ -71,29 +71,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A basketball player takes $4$ independent shots with success probability $0.5$. The combined probability of making either none of the shots or all four shots is exactly $1/8$.",
-        "A lab tests $8$ independent samples, each positive with probability $0.25$. It reports that $P(X\\le1)$ is strictly less than $(0.75)^8+8(0.25)(0.75)^7$.",
-        "A goalkeeper faces $9$ independent penalties and saves each with probability $1/3$. The save count has mean $3$ and variance $2$.",
-        "Two factories each inspect $100$ items; defect probabilities are $0.1$ and $0.5$. The first factory's defect count has larger variance than the second's.",
-        "A backup system runs $n$ independent units, each activating with probability $p$. Its probability of at least one activation is $1-(1-p)^n$, whereas $np$ is only the expected count."
+        "A seed company tests $14$ independent seeds, each germinating with probability $\\dfrac{3}{10}$. For the germination count, the ratio of variance to mean is $\\dfrac{4}{5}$.",
+        "Production line A independently passes each of $10$ items with probability $\\dfrac{2}{5}$, while line B independently passes each of $10$ items with probability $\\dfrac{7}{10}$. The probability that A records exactly $5$ passes is less than the probability that B records exactly $5$ passes.",
+        "Backup system A makes $6$ independent activation attempts with success probability $\\dfrac{1}{4}$ per attempt. System B makes $9$ independent attempts with success probability $\\dfrac{1}{4}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $11$ independent assays, each producing a positive result with probability $\\dfrac{2}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $7$ positives is $\\dfrac{684288}{9765625}$.",
+        "A quality team checks $9$ independent devices, each failing with probability $\\dfrac{1}{2}$. If $X$ counts failures, the probability of finding at most $4$ failures is $1$."
       ],
       "answer_key": [
         true,
         false,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=0\\ \\text{or}\\ X=4)&=(0.5)^4+(0.5)^4 \\\\ &=\\frac1{16}+\\frac1{16}=\\frac18\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\le1)&=P(X=0)+P(X=1) \\\\ &=(0.75)^8+8(0.25)(0.75)^7\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=9\\left(\\frac13\\right)=3 \\\\ \\operatorname{Var}(X)&=9\\left(\\frac13\\right)\\left(\\frac23\\right)=2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=100(0.1)(0.9)=9 \\\\ \\operatorname{Var}(Y)&=100(0.5)(0.5)=25>9\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-P(X=0)=1-(1-p)^n \\\\ E(X)&=np\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → True\n\nFor a binomial count, the mean and variance come from summing $14$ independent Bernoulli trials:\n\n$$E(X)=np=14\\left(\\dfrac{3}{10}\\right)=\\dfrac{21}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=14\\left(\\dfrac{3}{10}\\right)\\left(\\dfrac{7}{10}\\right)\n=\\dfrac{147}{50}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{147}{50}}\\approx 1.71464$$\n\nNow divide the two moments:\n\n$$\\dfrac{\\operatorname{Var}(X)}{E(X)}\n=\\dfrac{np(1-p)}{np}=1-p=\\dfrac{7}{10}$$\n\nThe ratio in the statement is $\\dfrac{4}{5}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{7}{10}\\right)$$\n\nFor line A,\n\n$$P(X_A=5)=\\binom{10}{5}\n\\left(\\dfrac{2}{5}\\right)^{5}\n\\left(\\dfrac{3}{5}\\right)^{5}\n=\\dfrac{1959552}{9765625}\\approx 0.20065812$$\n\nFor line B,\n\n$$P(X_B=5)=\\binom{10}{5}\n\\left(\\dfrac{7}{10}\\right)^{5}\n\\left(\\dfrac{3}{10}\\right)^{5}\n=\\dfrac{257298363}{2500000000}\\approx 0.10291935$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=5)}{P(X_B=5)}\n=\\dfrac{32768}{16807}\\approx 1.94966$$\n\nThus A's exact-count probability is greater than B's, while the statement says less than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{6}\n=\\dfrac{3367}{4096}\\approx 0.82202148$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{9}\n=\\dfrac{242461}{262144}\\approx 0.92491531$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-26973}{262144}\\approx -0.10289383$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → True\n\nThe count is binomial because the $11$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{2}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=7)=\\binom{11}{7}\n\\left(\\dfrac{2}{5}\\right)^{7}\n\\left(\\dfrac{3}{5}\\right)^{4}$$\n\n$$P(X=7)=330\n\\left(\\dfrac{128}{78125}\\right)\n\\left(\\dfrac{81}{625}\\right)\n=\\dfrac{684288}{9765625}\\approx 0.07007109$$\n\nThe coefficient counts which $7$ assays are positive; the statement claims $\\dfrac{684288}{9765625}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nThe phrase at most $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\n\\binom{9}{x}\\left(\\dfrac{1}{2}\\right)^x\n\\left(\\dfrac{1}{2}\\right)^{9-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{9}{0}\\left(\\dfrac{1}{2}\\right)^{0}\\left(\\dfrac{1}{2}\\right)^{9}=\\dfrac{1}{512}$$\n\n$$P(X=1)=\\binom{9}{1}\\left(\\dfrac{1}{2}\\right)^{1}\\left(\\dfrac{1}{2}\\right)^{8}=\\dfrac{9}{512}$$\n\n$$P(X=2)=\\binom{9}{2}\\left(\\dfrac{1}{2}\\right)^{2}\\left(\\dfrac{1}{2}\\right)^{7}=\\dfrac{9}{128}$$\n\n$$P(X=3)=\\binom{9}{3}\\left(\\dfrac{1}{2}\\right)^{3}\\left(\\dfrac{1}{2}\\right)^{6}=\\dfrac{21}{128}$$\n\n$$P(X=4)=\\binom{9}{4}\\left(\\dfrac{1}{2}\\right)^{4}\\left(\\dfrac{1}{2}\\right)^{5}=\\dfrac{63}{256}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 4)=\\dfrac{1}{512}+\\dfrac{9}{512}+\\dfrac{9}{128}+\\dfrac{21}{128}+\\dfrac{63}{256}\n=\\dfrac{1}{2}\\approx 0.5$$\n\nThe full tail is compared with the claimed $1$.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 58,
-      "solution_overview": "Symmetric outcomes, lower tails, binomial moments, variance size, and at-least-one events.",
+      "solution_overview": "Topics: moments, compare, complement, exact, tail. Map: A tests binomial moments; B tests a comparison of two binomial models; C tests an at-least-one complement comparison; D tests an exact binomial mass; E tests a multi-term binomial tail.",
       "placeholder": false
     },
     {
@@ -103,29 +103,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A fair coin is tossed $7$ times. A student claims that the combined probability of exactly $3$ or exactly $4$ heads is $35/128$.",
-        "A student guesses on $6$ independent true/false items. By symmetry, the chance of at least $4$ correct answers equals the chance of at most $2$ correct answers.",
-        "A lab keeps $n=10$ trials but raises success probability from $0.2$ to $0.4$. An analyst claims that this change exactly doubles the binomial variance.",
-        "One server delivers each of $5$ messages with probability $0.2$, while another does so with probability $0.8$. The chance of exactly $1$ delivery on the first equals exactly $4$ on the second.",
-        "A machine makes $3$ independent attempts, each succeeding with probability $0.1$. A supervisor claims that the chance of at least one success is exactly $0.30$."
+        "Production line A independently passes each of $11$ items with probability $\\dfrac{3}{5}$, while line B independently passes each of $12$ items with probability $\\dfrac{4}{5}$. The probability that A records exactly $6$ passes is greater than the probability that B records exactly $6$ passes.",
+        "Backup system A makes $7$ independent activation attempts with success probability $\\dfrac{1}{3}$ per attempt. System B makes $8$ independent attempts with success probability $\\dfrac{1}{10}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $12$ independent assays, each producing a positive result with probability $\\dfrac{3}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $9$ positives is $\\dfrac{6928417}{48828125}$.",
+        "A quality team checks $10$ independent devices, each failing with probability $\\dfrac{3}{5}$. If $X$ counts failures, the probability of finding at least $3$ failures is $\\dfrac{9645561}{9765625}$.",
+        "A scanner flags each item independently with probability $\\dfrac{2}{5}$. One shift scans $15$ items and another scans $30$ items. The second shift's flag-count standard deviation is exactly $2$ times the first's."
       ],
       "answer_key": [
-        false,
         true,
+        false,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=3\\ \\text{or}\\ X=4)&=\\frac{\\binom73+\\binom74}{2^7} \\\\ &=\\frac{35+35}{128}=\\frac{70}{128}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge4)&=P(X=4)+P(X=5)+P(X=6) \\\\ &=P(X=2)+P(X=1)+P(X=0)=P(X\\le2)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\nV_{0.2}&=10(0.2)(0.8)=1.6 \\\\ V_{0.4}&=10(0.4)(0.6)=2.4\\ne2(1.6)\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\nP(X=1)&=\\binom51(0.2)(0.8)^4 \\\\ P(Y=4)&=\\binom54(0.8)^4(0.2)=P(X=1)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(0.9)^3 \\\\ &=1-0.729=0.271\\ne0.30\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(11,\\dfrac{3}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{4}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=6)=\\binom{11}{6}\n\\left(\\dfrac{3}{5}\\right)^{6}\n\\left(\\dfrac{2}{5}\\right)^{5}\n=\\dfrac{10777536}{48828125}\\approx 0.22072394$$\n\nFor line B,\n\n$$P(X_B=6)=\\binom{12}{6}\n\\left(\\dfrac{4}{5}\\right)^{6}\n\\left(\\dfrac{1}{5}\\right)^{6}\n=\\dfrac{3784704}{244140625}\\approx 0.01550215$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=6)}{P(X_B=6)}\n=\\dfrac{3645}{256}\\approx 14.23828$$\n\nThus A's exact-count probability is greater than B's, while the statement says greater than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{7}\n=\\dfrac{2059}{2187}\\approx 0.94147234$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{8}\n=\\dfrac{56953279}{100000000}\\approx 0.56953279$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{81343178827}{218700000000}\\approx 0.37193955$$\n\nThe sign shows that A's at-least-one probability is greater than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → False\n\nThe count is binomial because the $12$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=9)=\\binom{12}{9}\n\\left(\\dfrac{3}{5}\\right)^{9}\n\\left(\\dfrac{2}{5}\\right)^{3}$$\n\n$$P(X=9)=220\n\\left(\\dfrac{19683}{1953125}\\right)\n\\left(\\dfrac{8}{125}\\right)\n=\\dfrac{6928416}{48828125}\\approx 0.14189396$$\n\nThe coefficient counts which $9$ assays are positive; the statement claims $\\dfrac{6928417}{48828125}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nThe phrase at least $3$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 3)=\\sum_{x=3}^{10}\n\\binom{10}{x}\\left(\\dfrac{3}{5}\\right)^x\n\\left(\\dfrac{2}{5}\\right)^{10-x}$$\n\nCompute every included mass:\n\n$$P(X=3)=\\binom{10}{3}\\left(\\dfrac{3}{5}\\right)^{3}\\left(\\dfrac{2}{5}\\right)^{7}=\\dfrac{82944}{1953125}$$\n\n$$P(X=4)=\\binom{10}{4}\\left(\\dfrac{3}{5}\\right)^{4}\\left(\\dfrac{2}{5}\\right)^{6}=\\dfrac{217728}{1953125}$$\n\n$$P(X=5)=\\binom{10}{5}\\left(\\dfrac{3}{5}\\right)^{5}\\left(\\dfrac{2}{5}\\right)^{5}=\\dfrac{1959552}{9765625}$$\n\n$$P(X=6)=\\binom{10}{6}\\left(\\dfrac{3}{5}\\right)^{6}\\left(\\dfrac{2}{5}\\right)^{4}=\\dfrac{489888}{1953125}$$\n\n$$P(X=7)=\\binom{10}{7}\\left(\\dfrac{3}{5}\\right)^{7}\\left(\\dfrac{2}{5}\\right)^{3}=\\dfrac{419904}{1953125}$$\n\n$$P(X=8)=\\binom{10}{8}\\left(\\dfrac{3}{5}\\right)^{8}\\left(\\dfrac{2}{5}\\right)^{2}=\\dfrac{236196}{1953125}$$\n\n$$P(X=9)=\\binom{10}{9}\\left(\\dfrac{3}{5}\\right)^{9}\\left(\\dfrac{2}{5}\\right)^{1}=\\dfrac{78732}{1953125}$$\n\n$$P(X=10)=\\binom{10}{10}\\left(\\dfrac{3}{5}\\right)^{10}\\left(\\dfrac{2}{5}\\right)^{0}=\\dfrac{59049}{9765625}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 3)=\\dfrac{82944}{1953125}+\\dfrac{217728}{1953125}+\\dfrac{1959552}{9765625}+\\dfrac{489888}{1953125}+\\dfrac{419904}{1953125}+\\dfrac{236196}{1953125}+\\dfrac{78732}{1953125}+\\dfrac{59049}{9765625}\n=\\dfrac{9645561}{9765625}\\approx 0.98770545$$\n\nThe full tail is compared with the claimed $\\dfrac{9645561}{9765625}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nFor a binomial count, the mean and variance come from summing $15$ independent Bernoulli trials:\n\n$$E(X)=np=15\\left(\\dfrac{2}{5}\\right)=6$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=15\\left(\\dfrac{2}{5}\\right)\\left(\\dfrac{3}{5}\\right)\n=\\dfrac{18}{5}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{18}{5}}\\approx 1.89737$$\n\nWith the same $p$ and twice as many trials,\n\n$$\\operatorname{Var}(Y)=(30)p(1-p)\n=2\\operatorname{Var}(X)=\\dfrac{36}{5}$$\n\nTaking positive square roots gives\n\n$$\\dfrac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}\n=\\sqrt{\\dfrac{2\\operatorname{Var}(X)}{\\operatorname{Var}(X)}}\n=\\sqrt{2}$$\n\nNumerically, the two SDs are $1.89737$ and $2.68328$; the statement claims a factor of $2$.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 59,
-      "solution_overview": "Fair-trial symmetry, variance changes, complementary binomial counts, and complements.",
+      "solution_overview": "Topics: compare, complement, exact, tail, moments. Map: A tests a comparison of two binomial models; B tests an at-least-one complement comparison; C tests an exact binomial mass; D tests a multi-term binomial tail; E tests binomial moments.",
       "placeholder": false
     },
     {
@@ -135,29 +135,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A pitcher throws $3$ independent strikes, each with probability $0.4$. The probability of throwing exactly one strike is exactly $54/125$.",
-        "A student guesses on $10$ independent true/false questions. The probability of getting at least $6$ answers correct is greater than $1/2$.",
-        "A bottling line checks $20$ independent bottles, each underfilled with probability $0.25$. The count has mean $5$ and standard deviation $\\sqrt{3.75}$.",
-        "A quality analyst counts defects in $n$ independent items with defect chance $p$. She claims the ratio $P(X=k+1)/P(X=k)$ equals $\\frac{k+1}{n-k}\\frac{p}{1-p}$.",
-        "A fair-component test changes from $4$ to $5$ independent components. The chance that none pass is multiplied by exactly $1/2$."
+        "Backup system A makes $8$ independent activation attempts with success probability $\\dfrac{2}{5}$ per attempt. System B makes $11$ independent attempts with success probability $\\dfrac{2}{5}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $13$ independent assays, each producing a positive result with probability $\\dfrac{7}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $11$ positives is $\\dfrac{694041686793}{5000000000000}$.",
+        "A quality team checks $11$ independent devices, each failing with probability $\\dfrac{1}{4}$. If $X$ counts failures, the probability of finding at most $3$ failures is $\\dfrac{186989}{262144}$.",
+        "A support desk independently resolves each of $16$ tickets on first contact with probability $\\dfrac{3}{5}$. Its daily resolution count has mean $\\dfrac{48}{5}$ and variance $\\dfrac{96}{25}$.",
+        "Production line A independently passes each of $12$ items with probability $\\dfrac{1}{5}$, while line B independently passes each of $12$ items with probability $\\dfrac{1}{2}$. The probability that A records exactly $7$ passes is greater than the probability that B records exactly $7$ passes."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=1)&=\\binom31(0.4)(0.6)^2 \\\\ &=3\\left(\\frac25\\right)\\left(\\frac35\\right)^2=\\frac{54}{125}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge6)&=\\frac{1-P(X=5)}2 \\\\ &=\\frac{1-\\binom{10}{5}/2^{10}}2\\approx0.37695<\\frac12\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=20(0.25)=5 \\\\ \\operatorname{SD}(X)&=\\sqrt{20(0.25)(0.75)}=\\sqrt{3.75}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\n\\frac{P(X=k+1)}{P(X=k)}&=\\frac{\\binom n{k+1}}{\\binom nk}\\frac{p}{1-p} \\\\ &=\\frac{n-k}{k+1}\\frac{p}{1-p}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP_4(X=0)&=\\left(\\frac12\\right)^4 \\\\ \\frac{P_5(X=0)}{P_4(X=0)}&=\\frac{(1/2)^5}{(1/2)^4}=\\frac12\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{8}\n=\\dfrac{384064}{390625}\\approx 0.98320384$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{11}\n=\\dfrac{48650978}{48828125}\\approx 0.99637203$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-642978}{48828125}\\approx -0.01316819$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → True\n\nThe count is binomial because the $13$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(13,\\dfrac{7}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=11)=\\binom{13}{11}\n\\left(\\dfrac{7}{10}\\right)^{11}\n\\left(\\dfrac{3}{10}\\right)^{2}$$\n\n$$P(X=11)=78\n\\left(\\dfrac{1977326743}{100000000000}\\right)\n\\left(\\dfrac{9}{100}\\right)\n=\\dfrac{694041686793}{5000000000000}\\approx 0.13880834$$\n\nThe coefficient counts which $11$ assays are positive; the statement claims $\\dfrac{694041686793}{5000000000000}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nThe phrase at most $3$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 3)=\\sum_{x=0}^{3}\n\\binom{11}{x}\\left(\\dfrac{1}{4}\\right)^x\n\\left(\\dfrac{3}{4}\\right)^{11-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{11}{0}\\left(\\dfrac{1}{4}\\right)^{0}\\left(\\dfrac{3}{4}\\right)^{11}=\\dfrac{177147}{4194304}$$\n\n$$P(X=1)=\\binom{11}{1}\\left(\\dfrac{1}{4}\\right)^{1}\\left(\\dfrac{3}{4}\\right)^{10}=\\dfrac{649539}{4194304}$$\n\n$$P(X=2)=\\binom{11}{2}\\left(\\dfrac{1}{4}\\right)^{2}\\left(\\dfrac{3}{4}\\right)^{9}=\\dfrac{1082565}{4194304}$$\n\n$$P(X=3)=\\binom{11}{3}\\left(\\dfrac{1}{4}\\right)^{3}\\left(\\dfrac{3}{4}\\right)^{8}=\\dfrac{1082565}{4194304}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 3)=\\dfrac{177147}{4194304}+\\dfrac{649539}{4194304}+\\dfrac{1082565}{4194304}+\\dfrac{1082565}{4194304}\n=\\dfrac{373977}{524288}\\approx 0.71330452$$\n\nThe full tail is compared with the claimed $\\dfrac{186989}{262144}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nFor a binomial count, the mean and variance come from summing $16$ independent Bernoulli trials:\n\n$$E(X)=np=16\\left(\\dfrac{3}{5}\\right)=\\dfrac{48}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=16\\left(\\dfrac{3}{5}\\right)\\left(\\dfrac{2}{5}\\right)\n=\\dfrac{96}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{96}{25}}\\approx 1.95959$$\n\nThe statement's two values are $\\dfrac{48}{5}$ and $\\dfrac{96}{25}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{2}\\right)$$\n\nFor line A,\n\n$$P(X_A=7)=\\binom{12}{7}\n\\left(\\dfrac{1}{5}\\right)^{7}\n\\left(\\dfrac{4}{5}\\right)^{5}\n=\\dfrac{811008}{244140625}\\approx 0.00332189$$\n\nFor line B,\n\n$$P(X_B=7)=\\binom{12}{7}\n\\left(\\dfrac{1}{2}\\right)^{7}\n\\left(\\dfrac{1}{2}\\right)^{5}\n=\\dfrac{99}{512}\\approx 0.19335938$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=7)}{P(X_B=7)}\n=\\dfrac{4194304}{244140625}\\approx 0.01718$$\n\nThus A's exact-count probability is less than B's, while the statement says greater than.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 60,
-      "solution_overview": "Exact mass, majority tails, moments, consecutive probabilities, and zero-success scaling.",
+      "solution_overview": "Topics: complement, exact, tail, moments, compare. Map: A tests an at-least-one complement comparison; B tests an exact binomial mass; C tests a multi-term binomial tail; D tests binomial moments; E tests a comparison of two binomial models.",
       "placeholder": false
     },
     {
@@ -167,11 +167,11 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A player takes $5$ independent penalties and scores each with probability $0.6$. A commentator claims the chance of scoring all five exceeds $0.08$.",
-        "A sales team makes $4$ independent calls, each closing with probability $0.3$. The chance of at least one close is exactly $1-(0.7)^4$.",
-        "A factory checks $16$ independent parts, each defective with probability $0.25$. A report claims that the defect count's variance equals its mean.",
-        "Two quizzes each have $8$ independent items, with success probabilities $0.5$ and $0.25$. The first expected score is exactly twice the second expected score.",
-        "A fair die is rolled $4$ times independently. A student claims that the probability of seeing at least one six exceeds $0.55$."
+        "A laboratory runs $9$ independent assays, each producing a positive result with probability $\\dfrac{1}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $7$ positives is $\\dfrac{577}{1953125}$.",
+        "A quality team checks $7$ independent devices, each failing with probability $\\dfrac{1}{3}$. If $X$ counts failures, the probability of finding at least $5$ failures is $\\dfrac{11}{243}$.",
+        "A bottling line independently rejects each of $17$ bottles with probability $\\dfrac{7}{10}$. The standard deviation of the rejection count is less than $\\dfrac{9}{5}$ bottles.",
+        "Production line A independently passes each of $8$ items with probability $\\dfrac{1}{4}$, while line B independently passes each of $8$ items with probability $\\dfrac{2}{5}$. The probability that A records exactly $3$ passes is less than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $9$ independent activation attempts with success probability $\\dfrac{1}{10}$ per attempt. System B makes $10$ independent attempts with success probability $\\dfrac{1}{4}$ per attempt. The probability of at least one activation for A is greater than that for B."
       ],
       "answer_key": [
         false,
@@ -181,15 +181,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=5)&=(0.6)^5=0.07776 \\\\ 0.07776&<0.08\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-P(X=0) \\\\ &=1-(1-0.3)^4=1-(0.7)^4\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\nE(X)&=16(0.25)=4 \\\\ \\operatorname{Var}(X)&=16(0.25)(0.75)=3\\ne4\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\nE(X)&=8(0.5)=4,\\quad E(Y)=8(0.25)=2 \\\\ \\frac{E(X)}{E(Y)}&=2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-\\left(\\frac56\\right)^4 \\\\ &=\\frac{671}{1296}\\approx0.51775<0.55\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → False\n\nThe count is binomial because the $9$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=7)=\\binom{9}{7}\n\\left(\\dfrac{1}{5}\\right)^{7}\n\\left(\\dfrac{4}{5}\\right)^{2}$$\n\n$$P(X=7)=36\n\\left(\\dfrac{1}{78125}\\right)\n\\left(\\dfrac{16}{25}\\right)\n=\\dfrac{576}{1953125}\\approx 0.00029491$$\n\nThe coefficient counts which $7$ assays are positive; the statement claims $\\dfrac{577}{1953125}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nThe phrase at least $5$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 5)=\\sum_{x=5}^{7}\n\\binom{7}{x}\\left(\\dfrac{1}{3}\\right)^x\n\\left(\\dfrac{2}{3}\\right)^{7-x}$$\n\nCompute every included mass:\n\n$$P(X=5)=\\binom{7}{5}\\left(\\dfrac{1}{3}\\right)^{5}\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{28}{729}$$\n\n$$P(X=6)=\\binom{7}{6}\\left(\\dfrac{1}{3}\\right)^{6}\\left(\\dfrac{2}{3}\\right)^{1}=\\dfrac{14}{2187}$$\n\n$$P(X=7)=\\binom{7}{7}\\left(\\dfrac{1}{3}\\right)^{7}\\left(\\dfrac{2}{3}\\right)^{0}=\\dfrac{1}{2187}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 5)=\\dfrac{28}{729}+\\dfrac{14}{2187}+\\dfrac{1}{2187}\n=\\dfrac{11}{243}\\approx 0.04526749$$\n\nThe full tail is compared with the claimed $\\dfrac{11}{243}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nFor a binomial count, the mean and variance come from summing $17$ independent Bernoulli trials:\n\n$$E(X)=np=17\\left(\\dfrac{7}{10}\\right)=\\dfrac{119}{10}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=17\\left(\\dfrac{7}{10}\\right)\\left(\\dfrac{3}{10}\\right)\n=\\dfrac{357}{100}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{357}{100}}\\approx 1.88944$$\n\nThe computed SD $1.88944$ is compared with $\\dfrac{9}{5}=1.8$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{4}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(8,\\dfrac{2}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{8}{3}\n\\left(\\dfrac{1}{4}\\right)^{3}\n\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{1701}{8192}\\approx 0.2076416$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{8}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{5}\n=\\dfrac{108864}{390625}\\approx 0.27869184$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{390625}{524288}\\approx 0.74506$$\n\nThus A's exact-count probability is less than B's, while the statement says less than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{9}\n=\\dfrac{612579511}{1000000000}\\approx 0.61257951$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{10}\n=\\dfrac{989527}{1048576}\\approx 0.94368649$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-678107083347}{2048000000000}\\approx -0.33110697$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 61,
-      "solution_overview": "All-success events, at-least-one events, moments, ratios of means, and die trials.",
+      "solution_overview": "Topics: exact, tail, moments, compare, complement. Map: A tests an exact binomial mass; B tests a multi-term binomial tail; C tests binomial moments; D tests a comparison of two binomial models; E tests an at-least-one complement comparison.",
       "placeholder": false
     },
     {
@@ -199,29 +199,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A fair coin is tossed $9$ times. The probability of obtaining exactly $5$ heads is exactly $63/256$.",
-        "A marketer sends $7$ independent offers, each accepted with probability $0.2$. She computes the chance of at least $2$ acceptances as $1-P(X=0)$.",
-        "A rare-fault test examines $50$ independent devices, each failing with probability $0.02$. The failure count has mean $1$ and variance strictly below $1$.",
-        "Two archers take $12$ independent shots with hit probabilities $0.4$ and $0.6$. A coach claims that the second archer's hit count has larger standard deviation.",
-        "A monitoring system has fixed alert probability $p$ with $0<p<1$ on each independent check. The probability of at least one alert strictly increases as the positive number of checks increases."
+        "A quality team checks $8$ independent devices, each failing with probability $\\dfrac{2}{5}$. If $X$ counts failures, the probability of finding at most $2$ failures is $\\dfrac{123202}{390625}$.",
+        "A seed company tests $18$ independent seeds, each germinating with probability $\\dfrac{1}{10}$. For the germination count, the ratio of variance to mean is $1$.",
+        "Production line A independently passes each of $9$ items with probability $\\dfrac{3}{10}$, while line B independently passes each of $10$ items with probability $\\dfrac{3}{5}$. The probability that A records exactly $3$ passes is less than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $4$ independent activation attempts with success probability $\\dfrac{1}{5}$ per attempt. System B makes $7$ independent attempts with success probability $\\dfrac{1}{5}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $10$ independent assays, each producing a positive result with probability $\\dfrac{3}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $8$ positives is $\\dfrac{2893401}{2000000000}$."
       ],
       "answer_key": [
-        true,
         false,
         true,
         false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=5)&=\\binom95\\left(\\frac12\\right)^9 \\\\ &=\\frac{126}{512}=\\frac{63}{256}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge2)&=1-P(X=0)-P(X=1) \\\\ &\\ne1-P(X=0)\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=50(0.02)=1 \\\\ \\operatorname{Var}(X)&=50(0.02)(0.98)=0.98<1\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=12(0.4)(0.6)=2.88 \\\\ \\operatorname{Var}(Y)&=12(0.6)(0.4)=2.88\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP_n(X\\ge1)&=1-(1-p)^n \\\\ P_{n+1}-P_n&=p(1-p)^n>0\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → False\n\nThe phrase at most $2$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{8}{x}\\left(\\dfrac{2}{5}\\right)^x\n\\left(\\dfrac{3}{5}\\right)^{8-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{8}{0}\\left(\\dfrac{2}{5}\\right)^{0}\\left(\\dfrac{3}{5}\\right)^{8}=\\dfrac{6561}{390625}$$\n\n$$P(X=1)=\\binom{8}{1}\\left(\\dfrac{2}{5}\\right)^{1}\\left(\\dfrac{3}{5}\\right)^{7}=\\dfrac{34992}{390625}$$\n\n$$P(X=2)=\\binom{8}{2}\\left(\\dfrac{2}{5}\\right)^{2}\\left(\\dfrac{3}{5}\\right)^{6}=\\dfrac{81648}{390625}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 2)=\\dfrac{6561}{390625}+\\dfrac{34992}{390625}+\\dfrac{81648}{390625}\n=\\dfrac{123201}{390625}\\approx 0.31539456$$\n\nThe full tail is compared with the claimed $\\dfrac{123202}{390625}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nFor a binomial count, the mean and variance come from summing $18$ independent Bernoulli trials:\n\n$$E(X)=np=18\\left(\\dfrac{1}{10}\\right)=\\dfrac{9}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=18\\left(\\dfrac{1}{10}\\right)\\left(\\dfrac{9}{10}\\right)\n=\\dfrac{81}{50}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{81}{50}}\\approx 1.27279$$\n\nNow divide the two moments:\n\n$$\\dfrac{\\operatorname{Var}(X)}{E(X)}\n=\\dfrac{np(1-p)}{np}=1-p=\\dfrac{9}{10}$$\n\nThe ratio in the statement is $1$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{10}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{9}{3}\n\\left(\\dfrac{3}{10}\\right)^{3}\n\\left(\\dfrac{7}{10}\\right)^{6}\n=\\dfrac{66706983}{250000000}\\approx 0.26682793$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{10}{3}\n\\left(\\dfrac{3}{5}\\right)^{3}\n\\left(\\dfrac{2}{5}\\right)^{7}\n=\\dfrac{82944}{1953125}\\approx 0.04246733$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{823543}{131072}\\approx 6.28313$$\n\nThus A's exact-count probability is greater than B's, while the statement says less than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{4}\n=\\dfrac{369}{625}\\approx 0.5904$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{7}\n=\\dfrac{61741}{78125}\\approx 0.7902848$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-15616}{78125}\\approx -0.1998848$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → True\n\nThe count is binomial because the $10$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=8)=\\binom{10}{8}\n\\left(\\dfrac{3}{10}\\right)^{8}\n\\left(\\dfrac{7}{10}\\right)^{2}$$\n\n$$P(X=8)=45\n\\left(\\dfrac{6561}{100000000}\\right)\n\\left(\\dfrac{49}{100}\\right)\n=\\dfrac{2893401}{2000000000}\\approx 0.0014467$$\n\nThe coefficient counts which $8$ assays are positive; the statement claims $\\dfrac{2893401}{2000000000}$.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 62,
-      "solution_overview": "Fair-trial mass, tail complements, rare-event moments, symmetric variances, and monotonicity.",
+      "solution_overview": "Topics: tail, moments, compare, complement, exact. Map: A tests a multi-term binomial tail; B tests binomial moments; C tests a comparison of two binomial models; D tests an at-least-one complement comparison; E tests an exact binomial mass.",
       "placeholder": false
     },
     {
@@ -231,29 +231,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A lab runs $4$ independent assays, each positive with probability $0.25$. A scientist claims that the chance of exactly $2$ positives exceeds $0.22$.",
-        "A student guesses independently on $5$ true/false questions. The chance of at least $3$ correct equals the chance of at most $2$ correct.",
-        "A premium machine passes each of $10$ independent tests with probability $0.9$. A manager claims the standard deviation of its pass count is exactly $0.9$.",
-        "One fair-coin experiment uses $5$ tosses and another uses $10$. The second experiment has exactly twice both the expected head count and its variance.",
-        "A server makes $6$ independent attempts with success probability $1/3$. A technician claims that the chance of no successes exceeds $0.10$."
+        "A scanner flags each item independently with probability $\\dfrac{1}{5}$. One shift scans $19$ items and another scans $38$ items. The second shift's flag-count standard deviation is exactly $2$ times the first's.",
+        "Production line A independently passes each of $10$ items with probability $\\dfrac{2}{5}$, while line B independently passes each of $10$ items with probability $\\dfrac{7}{10}$. The probability that A records exactly $3$ passes is greater than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $5$ independent activation attempts with success probability $\\dfrac{1}{4}$ per attempt. System B makes $6$ independent attempts with success probability $\\dfrac{2}{5}$ per attempt. The probability of at least one activation for A is greater than that for B.",
+        "A laboratory runs $11$ independent assays, each producing a positive result with probability $\\dfrac{2}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $9$ positives is $\\dfrac{50689}{9765625}$.",
+        "A quality team checks $9$ independent devices, each failing with probability $\\dfrac{1}{2}$. If $X$ counts failures, the probability of finding at least $4$ failures is $\\dfrac{191}{256}$."
       ],
       "answer_key": [
         false,
         true,
         false,
-        true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=2)&=\\binom42(0.25)^2(0.75)^2 \\\\ &=\\frac{27}{128}\\approx0.21094<0.22\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge3)&=P(X=3)+P(X=4)+P(X=5) \\\\ &=P(X=2)+P(X=1)+P(X=0)=P(X\\le2)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=10(0.9)(0.1)=0.9 \\\\ \\operatorname{SD}(X)&=\\sqrt{0.9}\\ne0.9\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\nE_5&=2.5,\\quad E_{10}=5=2E_5 \\\\ V_5&=1.25,\\quad V_{10}=2.5=2V_5\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X=0)&=\\left(\\frac23\\right)^6=\\frac{64}{729} \\\\ &\\approx0.08779<0.10\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → False\n\nFor a binomial count, the mean and variance come from summing $19$ independent Bernoulli trials:\n\n$$E(X)=np=19\\left(\\dfrac{1}{5}\\right)=\\dfrac{19}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=19\\left(\\dfrac{1}{5}\\right)\\left(\\dfrac{4}{5}\\right)\n=\\dfrac{76}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{76}{25}}\\approx 1.74356$$\n\nWith the same $p$ and twice as many trials,\n\n$$\\operatorname{Var}(Y)=(38)p(1-p)\n=2\\operatorname{Var}(X)=\\dfrac{152}{25}$$\n\nTaking positive square roots gives\n\n$$\\dfrac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}\n=\\sqrt{\\dfrac{2\\operatorname{Var}(X)}{\\operatorname{Var}(X)}}\n=\\sqrt{2}$$\n\nNumerically, the two SDs are $1.74356$ and $2.46577$; the statement claims a factor of $2$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{7}{10}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{10}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{7}\n=\\dfrac{419904}{1953125}\\approx 0.21499085$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{10}{3}\n\\left(\\dfrac{7}{10}\\right)^{3}\n\\left(\\dfrac{3}{10}\\right)^{7}\n=\\dfrac{2250423}{250000000}\\approx 0.00900169$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{8192}{343}\\approx 23.88338$$\n\nThus A's exact-count probability is greater than B's, while the statement says greater than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{781}{1024}\\approx 0.76269531$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{14896}{15625}\\approx 0.953344$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-3050379}{16000000}\\approx -0.19064869$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → False\n\nThe count is binomial because the $11$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{2}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=9)=\\binom{11}{9}\n\\left(\\dfrac{2}{5}\\right)^{9}\n\\left(\\dfrac{3}{5}\\right)^{2}$$\n\n$$P(X=9)=55\n\\left(\\dfrac{512}{1953125}\\right)\n\\left(\\dfrac{9}{25}\\right)\n=\\dfrac{50688}{9765625}\\approx 0.00519045$$\n\nThe coefficient counts which $9$ assays are positive; the statement claims $\\dfrac{50689}{9765625}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nThe phrase at least $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 4)=\\sum_{x=4}^{9}\n\\binom{9}{x}\\left(\\dfrac{1}{2}\\right)^x\n\\left(\\dfrac{1}{2}\\right)^{9-x}$$\n\nCompute every included mass:\n\n$$P(X=4)=\\binom{9}{4}\\left(\\dfrac{1}{2}\\right)^{4}\\left(\\dfrac{1}{2}\\right)^{5}=\\dfrac{63}{256}$$\n\n$$P(X=5)=\\binom{9}{5}\\left(\\dfrac{1}{2}\\right)^{5}\\left(\\dfrac{1}{2}\\right)^{4}=\\dfrac{63}{256}$$\n\n$$P(X=6)=\\binom{9}{6}\\left(\\dfrac{1}{2}\\right)^{6}\\left(\\dfrac{1}{2}\\right)^{3}=\\dfrac{21}{128}$$\n\n$$P(X=7)=\\binom{9}{7}\\left(\\dfrac{1}{2}\\right)^{7}\\left(\\dfrac{1}{2}\\right)^{2}=\\dfrac{9}{128}$$\n\n$$P(X=8)=\\binom{9}{8}\\left(\\dfrac{1}{2}\\right)^{8}\\left(\\dfrac{1}{2}\\right)^{1}=\\dfrac{9}{512}$$\n\n$$P(X=9)=\\binom{9}{9}\\left(\\dfrac{1}{2}\\right)^{9}\\left(\\dfrac{1}{2}\\right)^{0}=\\dfrac{1}{512}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 4)=\\dfrac{63}{256}+\\dfrac{63}{256}+\\dfrac{21}{128}+\\dfrac{9}{128}+\\dfrac{9}{512}+\\dfrac{1}{512}\n=\\dfrac{191}{256}\\approx 0.74609375$$\n\nThe full tail is compared with the claimed $\\dfrac{191}{256}$.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 63,
-      "solution_overview": "Exact probability checks, fair symmetry, standard deviation, scaling in trial count, and no-success events.",
+      "solution_overview": "Topics: moments, compare, complement, exact, tail. Map: A tests binomial moments; B tests a comparison of two binomial models; C tests an at-least-one complement comparison; D tests an exact binomial mass; E tests a multi-term binomial tail.",
       "placeholder": false
     },
     {
@@ -263,29 +263,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A student guesses on $8$ independent true/false questions. The probability of getting exactly $4$ correct is exactly $35/128$.",
-        "A player takes $3$ independent shots with scoring probability $0.8$. A reporter says the probability of at least $2$ scores is just $3(0.8)^2(0.2)$.",
-        "A plant inspects $25$ independent items, each defective with probability $0.2$. The defect count's variance is $4$, which is below its mean of $5$.",
-        "A clerk records one six-toss fair-coin head count as $X$ and copies the same count as $Y=X$. The clerk claims that $X+Y$ has a $\\operatorname{Bin}(12,0.5)$ distribution.",
-        "A salesperson makes $2$ independent attempts with success probability $0.4$. The chance of at least one success is $0.64$, which is less than the expected count $0.8$."
+        "Production line A independently passes each of $11$ items with probability $\\dfrac{3}{5}$, while line B independently passes each of $11$ items with probability $\\dfrac{4}{5}$. The probability that A records exactly $3$ passes is less than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $6$ independent activation attempts with success probability $\\dfrac{1}{3}$ per attempt. System B makes $9$ independent attempts with success probability $\\dfrac{1}{3}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $12$ independent assays, each producing a positive result with probability $\\dfrac{3}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $10$ positives is $\\dfrac{15588936}{244140625}$.",
+        "A quality team checks $10$ independent devices, each failing with probability $\\dfrac{3}{5}$. If $X$ counts failures, the probability of finding at most $4$ failures is $\\dfrac{64937}{390625}$.",
+        "A support desk independently resolves each of $20$ tickets on first contact with probability $\\dfrac{3}{10}$. Its daily resolution count has mean $6$ and variance $\\dfrac{21}{5}$."
       ],
       "answer_key": [
-        true,
         false,
+        true,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=4)&=\\binom84\\left(\\frac12\\right)^8 \\\\ &=\\frac{70}{256}=\\frac{35}{128}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge2)&=P(X=2)+P(X=3) \\\\ &=3(0.8)^2(0.2)+(0.8)^3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=25(0.2)=5 \\\\ \\operatorname{Var}(X)&=25(0.2)(0.8)=4<5\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\nX+Y&=2X\\in\\{0,2,4,\\ldots,12\\} \\\\ P(X+Y=1)&=0,\\quad P(\\operatorname{Bin}(12,0.5)=1)>0\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(0.6)^2=0.64 \\\\ E(X)&=2(0.4)=0.8>0.64\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(11,\\dfrac{3}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(11,\\dfrac{4}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{11}{3}\n\\left(\\dfrac{3}{5}\\right)^{3}\n\\left(\\dfrac{2}{5}\\right)^{8}\n=\\dfrac{228096}{9765625}\\approx 0.02335703$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{11}{3}\n\\left(\\dfrac{4}{5}\\right)^{3}\n\\left(\\dfrac{1}{5}\\right)^{8}\n=\\dfrac{2112}{9765625}\\approx 0.00021627$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=108\\approx 108$$\n\nThus A's exact-count probability is greater than B's, while the statement says less than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{6}\n=\\dfrac{665}{729}\\approx 0.9122085$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{9}\n=\\dfrac{19171}{19683}\\approx 0.97398771$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-1216}{19683}\\approx -0.0617792$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → True\n\nThe count is binomial because the $12$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=10)=\\binom{12}{10}\n\\left(\\dfrac{3}{5}\\right)^{10}\n\\left(\\dfrac{2}{5}\\right)^{2}$$\n\n$$P(X=10)=66\n\\left(\\dfrac{59049}{9765625}\\right)\n\\left(\\dfrac{4}{25}\\right)\n=\\dfrac{15588936}{244140625}\\approx 0.06385228$$\n\nThe coefficient counts which $10$ assays are positive; the statement claims $\\dfrac{15588936}{244140625}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nThe phrase at most $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\n\\binom{10}{x}\\left(\\dfrac{3}{5}\\right)^x\n\\left(\\dfrac{2}{5}\\right)^{10-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{10}{0}\\left(\\dfrac{3}{5}\\right)^{0}\\left(\\dfrac{2}{5}\\right)^{10}=\\dfrac{1024}{9765625}$$\n\n$$P(X=1)=\\binom{10}{1}\\left(\\dfrac{3}{5}\\right)^{1}\\left(\\dfrac{2}{5}\\right)^{9}=\\dfrac{3072}{1953125}$$\n\n$$P(X=2)=\\binom{10}{2}\\left(\\dfrac{3}{5}\\right)^{2}\\left(\\dfrac{2}{5}\\right)^{8}=\\dfrac{20736}{1953125}$$\n\n$$P(X=3)=\\binom{10}{3}\\left(\\dfrac{3}{5}\\right)^{3}\\left(\\dfrac{2}{5}\\right)^{7}=\\dfrac{82944}{1953125}$$\n\n$$P(X=4)=\\binom{10}{4}\\left(\\dfrac{3}{5}\\right)^{4}\\left(\\dfrac{2}{5}\\right)^{6}=\\dfrac{217728}{1953125}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 4)=\\dfrac{1024}{9765625}+\\dfrac{3072}{1953125}+\\dfrac{20736}{1953125}+\\dfrac{82944}{1953125}+\\dfrac{217728}{1953125}\n=\\dfrac{1623424}{9765625}\\approx 0.16623862$$\n\nThe full tail is compared with the claimed $\\dfrac{64937}{390625}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nFor a binomial count, the mean and variance come from summing $20$ independent Bernoulli trials:\n\n$$E(X)=np=20\\left(\\dfrac{3}{10}\\right)=6$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=20\\left(\\dfrac{3}{10}\\right)\\left(\\dfrac{7}{10}\\right)\n=\\dfrac{21}{5}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{21}{5}}\\approx 2.04939$$\n\nThe statement's two values are $6$ and $\\dfrac{21}{5}$.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 64,
-      "solution_overview": "Central probability, upper tails, moments, dependence, and an at-least-one bound.",
+      "solution_overview": "Topics: compare, complement, exact, tail, moments. Map: A tests a comparison of two binomial models; B tests an at-least-one complement comparison; C tests an exact binomial mass; D tests a multi-term binomial tail; E tests binomial moments.",
       "placeholder": false
     },
     {
@@ -295,29 +295,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A campaign sends $5$ independent messages, each answered with probability $0.2$. An analyst claims that the probability of no answers is below $0.30$.",
-        "A fair coin is tossed $9$ times. The probability of at most $3$ heads equals the probability of at least $6$ heads.",
-        "A survey asks $18$ independent respondents a question with yes probability $1/3$. A report says the yes count has mean $6$ and standard deviation $4$.",
-        "A designer can choose a success probability $p$ for a fixed number $n$ of independent trials. The binomial variance is largest at $p=1/2$.",
-        "A building has $10$ independent alarms, each triggering with probability $0.05$. A technician claims that the chance of at least one trigger exceeds $0.50$."
+        "Backup system A makes $7$ independent activation attempts with success probability $\\dfrac{2}{5}$ per attempt. System B makes $8$ independent attempts with success probability $\\dfrac{1}{5}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $13$ independent assays, each producing a positive result with probability $\\dfrac{7}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $11$ positives is $\\dfrac{347020843397}{2500000000000}$.",
+        "A quality team checks $11$ independent devices, each failing with probability $\\dfrac{1}{4}$. If $X$ counts failures, the probability of finding at least $3$ failures is $\\dfrac{2285053}{4194304}$.",
+        "A bottling line independently rejects each of $12$ bottles with probability $\\dfrac{2}{5}$. The standard deviation of the rejection count is less than $\\dfrac{8}{5}$ bottles.",
+        "Production line A independently passes each of $12$ items with probability $\\dfrac{1}{5}$, while line B independently passes each of $13$ items with probability $\\dfrac{1}{2}$. The probability that A records exactly $3$ passes is greater than the probability that B records exactly $3$ passes."
       ],
       "answer_key": [
         false,
-        true,
         false,
         true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=0)&=(0.8)^5=0.32768 \\\\ 0.32768&>0.30\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\le3)&=P(X=0)+\\cdots+P(X=3) \\\\ &=P(X=9)+\\cdots+P(X=6)=P(X\\ge6)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\nE(X)&=18\\left(\\frac13\\right)=6 \\\\ \\operatorname{SD}(X)&=\\sqrt{18(1/3)(2/3)}=2\\ne4\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=np(1-p)=n\\left(\\frac14-\\left(p-\\frac12\\right)^2\\right) \\\\ \\max\\operatorname{Var}(X)&=\\frac n4\\ \\text{at }p=\\frac12\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(0.95)^{10} \\\\ &\\approx0.40126<0.50\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{7}\n=\\dfrac{75938}{78125}\\approx 0.9720064$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{8}\n=\\dfrac{325089}{390625}\\approx 0.83222784$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{54601}{390625}\\approx 0.13977856$$\n\nThe sign shows that A's at-least-one probability is greater than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → False\n\nThe count is binomial because the $13$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(13,\\dfrac{7}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=11)=\\binom{13}{11}\n\\left(\\dfrac{7}{10}\\right)^{11}\n\\left(\\dfrac{3}{10}\\right)^{2}$$\n\n$$P(X=11)=78\n\\left(\\dfrac{1977326743}{100000000000}\\right)\n\\left(\\dfrac{9}{100}\\right)\n=\\dfrac{694041686793}{5000000000000}\\approx 0.13880834$$\n\nThe coefficient counts which $11$ assays are positive; the statement claims $\\dfrac{347020843397}{2500000000000}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nThe phrase at least $3$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 3)=\\sum_{x=3}^{11}\n\\binom{11}{x}\\left(\\dfrac{1}{4}\\right)^x\n\\left(\\dfrac{3}{4}\\right)^{11-x}$$\n\nCompute every included mass:\n\n$$P(X=3)=\\binom{11}{3}\\left(\\dfrac{1}{4}\\right)^{3}\\left(\\dfrac{3}{4}\\right)^{8}=\\dfrac{1082565}{4194304}$$\n\n$$P(X=4)=\\binom{11}{4}\\left(\\dfrac{1}{4}\\right)^{4}\\left(\\dfrac{3}{4}\\right)^{7}=\\dfrac{360855}{2097152}$$\n\n$$P(X=5)=\\binom{11}{5}\\left(\\dfrac{1}{4}\\right)^{5}\\left(\\dfrac{3}{4}\\right)^{6}=\\dfrac{168399}{2097152}$$\n\n$$P(X=6)=\\binom{11}{6}\\left(\\dfrac{1}{4}\\right)^{6}\\left(\\dfrac{3}{4}\\right)^{5}=\\dfrac{56133}{2097152}$$\n\n$$P(X=7)=\\binom{11}{7}\\left(\\dfrac{1}{4}\\right)^{7}\\left(\\dfrac{3}{4}\\right)^{4}=\\dfrac{13365}{2097152}$$\n\n$$P(X=8)=\\binom{11}{8}\\left(\\dfrac{1}{4}\\right)^{8}\\left(\\dfrac{3}{4}\\right)^{3}=\\dfrac{4455}{4194304}$$\n\n$$P(X=9)=\\binom{11}{9}\\left(\\dfrac{1}{4}\\right)^{9}\\left(\\dfrac{3}{4}\\right)^{2}=\\dfrac{495}{4194304}$$\n\n$$P(X=10)=\\binom{11}{10}\\left(\\dfrac{1}{4}\\right)^{10}\\left(\\dfrac{3}{4}\\right)^{1}=\\dfrac{33}{4194304}$$\n\n$$P(X=11)=\\binom{11}{11}\\left(\\dfrac{1}{4}\\right)^{11}\\left(\\dfrac{3}{4}\\right)^{0}=\\dfrac{1}{4194304}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 3)=\\dfrac{1082565}{4194304}+\\dfrac{360855}{2097152}+\\dfrac{168399}{2097152}+\\dfrac{56133}{2097152}+\\dfrac{13365}{2097152}+\\dfrac{4455}{4194304}+\\dfrac{495}{4194304}+\\dfrac{33}{4194304}+\\dfrac{1}{4194304}\n=\\dfrac{2285053}{4194304}\\approx 0.54479909$$\n\nThe full tail is compared with the claimed $\\dfrac{2285053}{4194304}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nFor a binomial count, the mean and variance come from summing $12$ independent Bernoulli trials:\n\n$$E(X)=np=12\\left(\\dfrac{2}{5}\\right)=\\dfrac{24}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=12\\left(\\dfrac{2}{5}\\right)\\left(\\dfrac{3}{5}\\right)\n=\\dfrac{72}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{72}{25}}\\approx 1.69706$$\n\nThe computed SD $1.69706$ is compared with $\\dfrac{8}{5}=1.6$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(13,\\dfrac{1}{2}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{12}{3}\n\\left(\\dfrac{1}{5}\\right)^{3}\n\\left(\\dfrac{4}{5}\\right)^{9}\n=\\dfrac{11534336}{48828125}\\approx 0.2362232$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{13}{3}\n\\left(\\dfrac{1}{2}\\right)^{3}\n\\left(\\dfrac{1}{2}\\right)^{10}\n=\\dfrac{143}{4096}\\approx 0.03491211$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{4294967296}{634765625}\\approx 6.76623$$\n\nThus A's exact-count probability is greater than B's, while the statement says greater than.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 65,
-      "solution_overview": "No-success probability, symmetric tails, moments, maximum variance, and alarms.",
+      "solution_overview": "Topics: complement, exact, tail, moments, compare. Map: A tests an at-least-one complement comparison; B tests an exact binomial mass; C tests a multi-term binomial tail; D tests binomial moments; E tests a comparison of two binomial models.",
       "placeholder": false
     },
     {
@@ -327,11 +327,11 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A game uses $6$ independent tosses of a fair coin and awards a prize for exactly $3$ heads. The probability of winning the prize is below $1/3$.",
-        "A machine runs $4$ independent tests with pass probability $0.25$. An engineer calculates $P(X\\ge3)$ as only $\\binom43(0.25)^3(0.75)$.",
-        "A network checks $30$ independent links, each failing with probability $0.1$. The failure count has expected value $3$ and variance $2.7$.",
-        "Two teams each attempt $7$ independent tasks, with success probabilities $0.4$ and $0.6$. A manager claims their expected total number of successes is $14$.",
-        "A student guesses on $3$ independent true/false questions. The probability of at least one correct answer is exactly $7/8$."
+        "A laboratory runs $9$ independent assays, each producing a positive result with probability $\\dfrac{1}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $5$ positives is $\\dfrac{32256}{1953125}$.",
+        "A quality team checks $7$ independent devices, each failing with probability $\\dfrac{1}{3}$. If $X$ counts failures, the probability of finding at most $3$ failures is $\\dfrac{67}{81}$.",
+        "A seed company tests $13$ independent seeds, each germinating with probability $\\dfrac{3}{5}$. For the germination count, the ratio of variance to mean is $\\dfrac{3}{5}$.",
+        "Production line A independently passes each of $8$ items with probability $\\dfrac{1}{4}$, while line B independently passes each of $8$ items with probability $\\dfrac{2}{5}$. The probability that A records exactly $3$ passes is greater than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $8$ independent activation attempts with success probability $\\dfrac{1}{10}$ per attempt. System B makes $11$ independent attempts with success probability $\\dfrac{1}{10}$ per attempt. The probability of at least one activation for A is less than that for B."
       ],
       "answer_key": [
         true,
@@ -341,15 +341,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=3)&=\\binom63\\left(\\frac12\\right)^6=\\frac{20}{64} \\\\ &=\\frac5{16}=0.3125<\\frac13\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge3)&=P(X=3)+P(X=4) \\\\ &=\\binom43(0.25)^3(0.75)+(0.25)^4\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=30(0.1)=3 \\\\ \\operatorname{Var}(X)&=30(0.1)(0.9)=2.7\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\nE(X+Y)&=7(0.4)+7(0.6) \\\\ &=2.8+4.2=7\\ne14\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-P(X=0) \\\\ &=1-\\left(\\frac12\\right)^3=\\frac78\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → True\n\nThe count is binomial because the $9$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=5)=\\binom{9}{5}\n\\left(\\dfrac{1}{5}\\right)^{5}\n\\left(\\dfrac{4}{5}\\right)^{4}$$\n\n$$P(X=5)=126\n\\left(\\dfrac{1}{3125}\\right)\n\\left(\\dfrac{256}{625}\\right)\n=\\dfrac{32256}{1953125}\\approx 0.01651507$$\n\nThe coefficient counts which $5$ assays are positive; the statement claims $\\dfrac{32256}{1953125}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nThe phrase at most $3$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 3)=\\sum_{x=0}^{3}\n\\binom{7}{x}\\left(\\dfrac{1}{3}\\right)^x\n\\left(\\dfrac{2}{3}\\right)^{7-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{7}{0}\\left(\\dfrac{1}{3}\\right)^{0}\\left(\\dfrac{2}{3}\\right)^{7}=\\dfrac{128}{2187}$$\n\n$$P(X=1)=\\binom{7}{1}\\left(\\dfrac{1}{3}\\right)^{1}\\left(\\dfrac{2}{3}\\right)^{6}=\\dfrac{448}{2187}$$\n\n$$P(X=2)=\\binom{7}{2}\\left(\\dfrac{1}{3}\\right)^{2}\\left(\\dfrac{2}{3}\\right)^{5}=\\dfrac{224}{729}$$\n\n$$P(X=3)=\\binom{7}{3}\\left(\\dfrac{1}{3}\\right)^{3}\\left(\\dfrac{2}{3}\\right)^{4}=\\dfrac{560}{2187}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 3)=\\dfrac{128}{2187}+\\dfrac{448}{2187}+\\dfrac{224}{729}+\\dfrac{560}{2187}\n=\\dfrac{1808}{2187}\\approx 0.82670325$$\n\nThe full tail is compared with the claimed $\\dfrac{67}{81}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nFor a binomial count, the mean and variance come from summing $13$ independent Bernoulli trials:\n\n$$E(X)=np=13\\left(\\dfrac{3}{5}\\right)=\\dfrac{39}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=13\\left(\\dfrac{3}{5}\\right)\\left(\\dfrac{2}{5}\\right)\n=\\dfrac{78}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{78}{25}}\\approx 1.76635$$\n\nNow divide the two moments:\n\n$$\\dfrac{\\operatorname{Var}(X)}{E(X)}\n=\\dfrac{np(1-p)}{np}=1-p=\\dfrac{2}{5}$$\n\nThe ratio in the statement is $\\dfrac{3}{5}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{4}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(8,\\dfrac{2}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{8}{3}\n\\left(\\dfrac{1}{4}\\right)^{3}\n\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{1701}{8192}\\approx 0.2076416$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{8}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{5}\n=\\dfrac{108864}{390625}\\approx 0.27869184$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{390625}{524288}\\approx 0.74506$$\n\nThus A's exact-count probability is less than B's, while the statement says greater than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{8}\n=\\dfrac{56953279}{100000000}\\approx 0.56953279$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{11}\n=\\dfrac{68618940391}{100000000000}\\approx 0.6861894$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-11665661391}{100000000000}\\approx -0.11665661$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 66,
-      "solution_overview": "Central mass, upper tails, rare-event moments, expected totals, and fair complements.",
+      "solution_overview": "Topics: exact, tail, moments, compare, complement. Map: A tests an exact binomial mass; B tests a multi-term binomial tail; C tests binomial moments; D tests a comparison of two binomial models; E tests an at-least-one complement comparison.",
       "placeholder": false
     },
     {
@@ -359,29 +359,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A call centre receives $10$ independent sales opportunities, each closing with probability $0.2$. A supervisor claims the probability of exactly $2$ closes is exactly $0.32$.",
-        "A student guesses independently on $5$ true/false questions. The probability of at least one correct answer is exactly $31/32$.",
-        "A clinic observes $12$ independent treatments, each effective with probability $0.25$. A report states that the standard deviation of the effective-treatment count is $2.25$.",
-        "A binomial count records successes in $n$ independent trials with success probability $p\\in(0,1)$. Its variance-to-mean ratio is exactly $1-p$.",
-        "A five-contact campaign raises each contact's conversion probability from $0.1$ to $0.2$. A manager claims this change more than doubles the chance of at least one conversion."
+        "A quality team checks $8$ independent devices, each failing with probability $\\dfrac{2}{5}$. If $X$ counts failures, the probability of finding at least $5$ failures is $\\dfrac{13568}{78125}$.",
+        "A scanner flags each item independently with probability $\\dfrac{7}{10}$. One shift scans $14$ items and another scans $28$ items. The second shift's flag-count standard deviation is exactly $2$ times the first's.",
+        "Production line A independently passes each of $9$ items with probability $\\dfrac{3}{10}$, while line B independently passes each of $9$ items with probability $\\dfrac{3}{5}$. The probability that A records exactly $2$ passes is greater than the probability that B records exactly $2$ passes.",
+        "Backup system A makes $9$ independent activation attempts with success probability $\\dfrac{1}{5}$ per attempt. System B makes $10$ independent attempts with success probability $\\dfrac{1}{3}$ per attempt. The probability of at least one activation for A is greater than that for B.",
+        "A laboratory runs $10$ independent assays, each producing a positive result with probability $\\dfrac{3}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $4$ positives is $\\dfrac{4002419}{20000000}$."
       ],
       "answer_key": [
-        false,
         true,
         false,
         true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=2)&=\\binom{10}{2}(0.2)^2(0.8)^8 \\\\ &\\approx0.30199\\ne0.32\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-\\left(\\frac12\\right)^5 \\\\ &=1-\\frac1{32}=\\frac{31}{32}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=12(0.25)(0.75)=2.25 \\\\ \\operatorname{SD}(X)&=\\sqrt{2.25}=1.5\\ne2.25\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{\\operatorname{Var}(X)}{E(X)}&=\\frac{np(1-p)}{np} \\\\ &=1-p\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP_{0.1}&=1-(0.9)^5\\approx0.40951 \\\\ P_{0.2}&=1-(0.8)^5\\approx0.67232<2P_{0.1}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → True\n\nThe phrase at least $5$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 5)=\\sum_{x=5}^{8}\n\\binom{8}{x}\\left(\\dfrac{2}{5}\\right)^x\n\\left(\\dfrac{3}{5}\\right)^{8-x}$$\n\nCompute every included mass:\n\n$$P(X=5)=\\binom{8}{5}\\left(\\dfrac{2}{5}\\right)^{5}\\left(\\dfrac{3}{5}\\right)^{3}=\\dfrac{48384}{390625}$$\n\n$$P(X=6)=\\binom{8}{6}\\left(\\dfrac{2}{5}\\right)^{6}\\left(\\dfrac{3}{5}\\right)^{2}=\\dfrac{16128}{390625}$$\n\n$$P(X=7)=\\binom{8}{7}\\left(\\dfrac{2}{5}\\right)^{7}\\left(\\dfrac{3}{5}\\right)^{1}=\\dfrac{3072}{390625}$$\n\n$$P(X=8)=\\binom{8}{8}\\left(\\dfrac{2}{5}\\right)^{8}\\left(\\dfrac{3}{5}\\right)^{0}=\\dfrac{256}{390625}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 5)=\\dfrac{48384}{390625}+\\dfrac{16128}{390625}+\\dfrac{3072}{390625}+\\dfrac{256}{390625}\n=\\dfrac{13568}{78125}\\approx 0.1736704$$\n\nThe full tail is compared with the claimed $\\dfrac{13568}{78125}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nFor a binomial count, the mean and variance come from summing $14$ independent Bernoulli trials:\n\n$$E(X)=np=14\\left(\\dfrac{7}{10}\\right)=\\dfrac{49}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=14\\left(\\dfrac{7}{10}\\right)\\left(\\dfrac{3}{10}\\right)\n=\\dfrac{147}{50}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{147}{50}}\\approx 1.71464$$\n\nWith the same $p$ and twice as many trials,\n\n$$\\operatorname{Var}(Y)=(28)p(1-p)\n=2\\operatorname{Var}(X)=\\dfrac{147}{25}$$\n\nTaking positive square roots gives\n\n$$\\dfrac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}\n=\\sqrt{\\dfrac{2\\operatorname{Var}(X)}{\\operatorname{Var}(X)}}\n=\\sqrt{2}$$\n\nNumerically, the two SDs are $1.71464$ and $2.42487$; the statement claims a factor of $2$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{10}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=2)=\\binom{9}{2}\n\\left(\\dfrac{3}{10}\\right)^{2}\n\\left(\\dfrac{7}{10}\\right)^{7}\n=\\dfrac{66706983}{250000000}\\approx 0.26682793$$\n\nFor line B,\n\n$$P(X_B=2)=\\binom{9}{2}\n\\left(\\dfrac{3}{5}\\right)^{2}\n\\left(\\dfrac{2}{5}\\right)^{7}\n=\\dfrac{41472}{1953125}\\approx 0.02123366$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=2)}{P(X_B=2)}\n=\\dfrac{823543}{65536}\\approx 12.56627$$\n\nThus A's exact-count probability is greater than B's, while the statement says greater than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{9}\n=\\dfrac{1690981}{1953125}\\approx 0.86578227$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{10}\n=\\dfrac{58025}{59049}\\approx 0.98265847$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-13479341056}{115330078125}\\approx -0.1168762$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → False\n\nThe count is binomial because the $10$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=4)=\\binom{10}{4}\n\\left(\\dfrac{3}{10}\\right)^{4}\n\\left(\\dfrac{7}{10}\\right)^{6}$$\n\n$$P(X=4)=210\n\\left(\\dfrac{81}{10000}\\right)\n\\left(\\dfrac{117649}{1000000}\\right)\n=\\dfrac{200120949}{1000000000}\\approx 0.20012095$$\n\nThe coefficient counts which $4$ assays are positive; the statement claims $\\dfrac{4002419}{20000000}$.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 67,
-      "solution_overview": "Point probability, fair complements, standard deviation, dispersion ratio, and probability changes.",
+      "solution_overview": "Topics: tail, moments, compare, complement, exact. Map: A tests a multi-term binomial tail; B tests binomial moments; C tests a comparison of two binomial models; D tests an at-least-one complement comparison; E tests an exact binomial mass.",
       "placeholder": false
     },
     {
@@ -391,29 +391,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A student guesses on $7$ independent true/false items. The probability of getting no answers correct is exactly $1/128$.",
-        "A salesperson makes $6$ independent calls with close probability $0.4$. A report computes the probability of more than $5$ closes by adding both the $5$-close and $6$-close probabilities.",
-        "A simulation independently tosses a fair coin $40$ times and records the total number of heads. This recorded head count has mean $20$ and variance $10$.",
-        "A lab counts positives in $9$ trials as $X$, then sets $Y=X$ rather than running new trials. It claims that $X+Y$ is binomial with $18$ trials and the same success probability $0.3$.",
-        "A student records the number of successes in a fixed set of trials and also the waiting time to the first success. Even with the same $p$, the first variable is binomial and the second is geometric, not binomial."
+        "A support desk independently resolves each of $15$ tickets on first contact with probability $\\dfrac{1}{10}$. Its daily resolution count has mean $\\dfrac{3}{2}$ and variance $\\dfrac{27}{20}$.",
+        "Production line A independently passes each of $10$ items with probability $\\dfrac{2}{5}$, while line B independently passes each of $11$ items with probability $\\dfrac{7}{10}$. The probability that A records exactly $8$ passes is greater than the probability that B records exactly $8$ passes.",
+        "Backup system A makes $4$ independent activation attempts with success probability $\\dfrac{1}{4}$ per attempt. System B makes $7$ independent attempts with success probability $\\dfrac{1}{4}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $11$ independent assays, each producing a positive result with probability $\\dfrac{2}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $3$ positives is $\\dfrac{1732104}{9765625}$.",
+        "A quality team checks $9$ independent devices, each failing with probability $\\dfrac{1}{2}$. If $X$ counts failures, the probability of finding at most $2$ failures is $\\dfrac{3}{32}$."
       ],
       "answer_key": [
         true,
         false,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=0)&=\\left(\\frac12\\right)^7=\\frac1{128}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\n\\{X>5\\}&=\\{X=6\\} \\\\ P(X>5)&=(0.4)^6,\\ \\text{with no }P(X=5)\\text{ term}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=40(0.5)=20 \\\\ \\operatorname{Var}(X)&=40(0.5)(0.5)=10\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\nX+Y&=2X\\ \\text{takes only even values} \\\\ \\operatorname{Bin}(18,0.3)&\\ \\text{assigns positive probability to odd values}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nX_{\\text{bin}}&\\in\\{0,1,\\ldots,n\\} \\\\ T_{\\text{geom}}&\\in\\{1,2,\\ldots\\}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → True\n\nFor a binomial count, the mean and variance come from summing $15$ independent Bernoulli trials:\n\n$$E(X)=np=15\\left(\\dfrac{1}{10}\\right)=\\dfrac{3}{2}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=15\\left(\\dfrac{1}{10}\\right)\\left(\\dfrac{9}{10}\\right)\n=\\dfrac{27}{20}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{27}{20}}\\approx 1.1619$$\n\nThe statement's two values are $\\dfrac{3}{2}$ and $\\dfrac{27}{20}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(11,\\dfrac{7}{10}\\right)$$\n\nFor line A,\n\n$$P(X_A=8)=\\binom{10}{8}\n\\left(\\dfrac{2}{5}\\right)^{8}\n\\left(\\dfrac{3}{5}\\right)^{2}\n=\\dfrac{20736}{1953125}\\approx 0.01061683$$\n\nFor line B,\n\n$$P(X_B=8)=\\binom{11}{8}\n\\left(\\dfrac{7}{10}\\right)^{8}\n\\left(\\dfrac{3}{10}\\right)^{3}\n=\\dfrac{5136437691}{20000000000}\\approx 0.25682188$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=8)}{P(X_B=8)}\n=\\dfrac{2621440}{63412811}\\approx 0.04134$$\n\nThus A's exact-count probability is less than B's, while the statement says greater than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{4}\n=\\dfrac{175}{256}\\approx 0.68359375$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{7}\n=\\dfrac{14197}{16384}\\approx 0.86651611$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-2997}{16384}\\approx -0.18292236$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → True\n\nThe count is binomial because the $11$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{2}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=3)=\\binom{11}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{8}$$\n\n$$P(X=3)=165\n\\left(\\dfrac{8}{125}\\right)\n\\left(\\dfrac{6561}{390625}\\right)\n=\\dfrac{1732104}{9765625}\\approx 0.17736745$$\n\nThe coefficient counts which $3$ assays are positive; the statement claims $\\dfrac{1732104}{9765625}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nThe phrase at most $2$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{9}{x}\\left(\\dfrac{1}{2}\\right)^x\n\\left(\\dfrac{1}{2}\\right)^{9-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{9}{0}\\left(\\dfrac{1}{2}\\right)^{0}\\left(\\dfrac{1}{2}\\right)^{9}=\\dfrac{1}{512}$$\n\n$$P(X=1)=\\binom{9}{1}\\left(\\dfrac{1}{2}\\right)^{1}\\left(\\dfrac{1}{2}\\right)^{8}=\\dfrac{9}{512}$$\n\n$$P(X=2)=\\binom{9}{2}\\left(\\dfrac{1}{2}\\right)^{2}\\left(\\dfrac{1}{2}\\right)^{7}=\\dfrac{9}{128}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 2)=\\dfrac{1}{512}+\\dfrac{9}{512}+\\dfrac{9}{128}\n=\\dfrac{23}{256}\\approx 0.08984375$$\n\nThe full tail is compared with the claimed $\\dfrac{3}{32}$.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 68,
-      "solution_overview": "Zero-success events, singleton tails, moments, dependent sums, and distribution choice.",
+      "solution_overview": "Topics: moments, compare, complement, exact, tail. Map: A tests binomial moments; B tests a comparison of two binomial models; C tests an at-least-one complement comparison; D tests an exact binomial mass; E tests a multi-term binomial tail.",
       "placeholder": false
     },
     {
@@ -423,29 +423,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A candidate answers $5$ independent multiple-choice questions correctly with probability $0.4$ each. A tutor claims that the chance of exactly $3$ correct answers is $0.24$.",
-        "A fair coin is tossed $8$ times. The probability of at most $2$ heads equals the probability of at least $6$ heads.",
-        "A factory checks $15$ independent items, each defective with probability $0.2$. An inspector claims the defect count's standard deviation exceeds its mean.",
-        "Two production lines each inspect $20$ independent parts, with defect probabilities $0.3$ and $0.1$. The first line's defect-count variance is larger.",
-        "A sample contains $20$ independent items, each defective with probability $0.01$. A manager claims that the chance of at least one defective item exceeds $0.20$."
+        "Production line A independently passes each of $11$ items with probability $\\dfrac{3}{5}$, while line B independently passes each of $11$ items with probability $\\dfrac{4}{5}$. The probability that A records exactly $8$ passes is less than the probability that B records exactly $8$ passes.",
+        "Backup system A makes $5$ independent activation attempts with success probability $\\dfrac{1}{3}$ per attempt. System B makes $6$ independent attempts with success probability $\\dfrac{1}{10}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $12$ independent assays, each producing a positive result with probability $\\dfrac{3}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $2$ positives is $\\dfrac{608257}{244140625}$.",
+        "A quality team checks $10$ independent devices, each failing with probability $\\dfrac{3}{5}$. If $X$ counts failures, the probability of finding at least $4$ failures is $\\dfrac{9230841}{9765625}$.",
+        "A bottling line independently rejects each of $16$ bottles with probability $\\dfrac{1}{5}$. The standard deviation of the rejection count is less than $\\dfrac{3}{2}$ bottles."
       ],
       "answer_key": [
-        false,
         true,
+        false,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=3)&=\\binom53(0.4)^3(0.6)^2 \\\\ &=10(0.064)(0.36)=0.2304\\ne0.24\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X=k)&=P(X=8-k) \\\\ P(X\\le2)&=P(X\\ge6)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\nE(X)&=15(0.2)=3 \\\\ \\operatorname{SD}(X)&=\\sqrt{15(0.2)(0.8)}=\\sqrt{2.4}\\approx1.549<3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\nV_{0.3}&=20(0.3)(0.7)=4.2 \\\\ V_{0.1}&=20(0.1)(0.9)=1.8<4.2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(0.99)^{20} \\\\ &\\approx0.18209<0.20\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(11,\\dfrac{3}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(11,\\dfrac{4}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=8)=\\binom{11}{8}\n\\left(\\dfrac{3}{5}\\right)^{8}\n\\left(\\dfrac{2}{5}\\right)^{3}\n=\\dfrac{1732104}{9765625}\\approx 0.17736745$$\n\nFor line B,\n\n$$P(X_B=8)=\\binom{11}{8}\n\\left(\\dfrac{4}{5}\\right)^{8}\n\\left(\\dfrac{1}{5}\\right)^{3}\n=\\dfrac{2162688}{9765625}\\approx 0.22145925$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=8)}{P(X_B=8)}\n=\\dfrac{6561}{8192}\\approx 0.8009$$\n\nThus A's exact-count probability is less than B's, while the statement says less than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{5}\n=\\dfrac{211}{243}\\approx 0.86831276$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{6}\n=\\dfrac{468559}{1000000}\\approx 0.468559$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{97140163}{243000000}\\approx 0.39975376$$\n\nThe sign shows that A's at-least-one probability is greater than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → False\n\nThe count is binomial because the $12$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=2)=\\binom{12}{2}\n\\left(\\dfrac{3}{5}\\right)^{2}\n\\left(\\dfrac{2}{5}\\right)^{10}$$\n\n$$P(X=2)=66\n\\left(\\dfrac{9}{25}\\right)\n\\left(\\dfrac{1024}{9765625}\\right)\n=\\dfrac{608256}{244140625}\\approx 0.00249142$$\n\nThe coefficient counts which $2$ assays are positive; the statement claims $\\dfrac{608257}{244140625}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nThe phrase at least $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 4)=\\sum_{x=4}^{10}\n\\binom{10}{x}\\left(\\dfrac{3}{5}\\right)^x\n\\left(\\dfrac{2}{5}\\right)^{10-x}$$\n\nCompute every included mass:\n\n$$P(X=4)=\\binom{10}{4}\\left(\\dfrac{3}{5}\\right)^{4}\\left(\\dfrac{2}{5}\\right)^{6}=\\dfrac{217728}{1953125}$$\n\n$$P(X=5)=\\binom{10}{5}\\left(\\dfrac{3}{5}\\right)^{5}\\left(\\dfrac{2}{5}\\right)^{5}=\\dfrac{1959552}{9765625}$$\n\n$$P(X=6)=\\binom{10}{6}\\left(\\dfrac{3}{5}\\right)^{6}\\left(\\dfrac{2}{5}\\right)^{4}=\\dfrac{489888}{1953125}$$\n\n$$P(X=7)=\\binom{10}{7}\\left(\\dfrac{3}{5}\\right)^{7}\\left(\\dfrac{2}{5}\\right)^{3}=\\dfrac{419904}{1953125}$$\n\n$$P(X=8)=\\binom{10}{8}\\left(\\dfrac{3}{5}\\right)^{8}\\left(\\dfrac{2}{5}\\right)^{2}=\\dfrac{236196}{1953125}$$\n\n$$P(X=9)=\\binom{10}{9}\\left(\\dfrac{3}{5}\\right)^{9}\\left(\\dfrac{2}{5}\\right)^{1}=\\dfrac{78732}{1953125}$$\n\n$$P(X=10)=\\binom{10}{10}\\left(\\dfrac{3}{5}\\right)^{10}\\left(\\dfrac{2}{5}\\right)^{0}=\\dfrac{59049}{9765625}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 4)=\\dfrac{217728}{1953125}+\\dfrac{1959552}{9765625}+\\dfrac{489888}{1953125}+\\dfrac{419904}{1953125}+\\dfrac{236196}{1953125}+\\dfrac{78732}{1953125}+\\dfrac{59049}{9765625}\n=\\dfrac{9230841}{9765625}\\approx 0.94523812$$\n\nThe full tail is compared with the claimed $\\dfrac{9230841}{9765625}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nFor a binomial count, the mean and variance come from summing $16$ independent Bernoulli trials:\n\n$$E(X)=np=16\\left(\\dfrac{1}{5}\\right)=\\dfrac{16}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=16\\left(\\dfrac{1}{5}\\right)\\left(\\dfrac{4}{5}\\right)\n=\\dfrac{64}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{64}{25}}\\approx 1.6$$\n\nThe computed SD $1.6$ is compared with $\\dfrac{3}{2}=1.5$.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 69,
-      "solution_overview": "Decimal probability, symmetric tails, mean versus standard deviation, variance comparison, and rare events.",
+      "solution_overview": "Topics: compare, complement, exact, tail, moments. Map: A tests a comparison of two binomial models; B tests an at-least-one complement comparison; C tests an exact binomial mass; D tests a multi-term binomial tail; E tests binomial moments.",
       "placeholder": false
     },
     {
@@ -455,29 +455,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A student guesses on $3$ independent true/false items. For scores $0,1,2,3$, the probability distribution is exactly $(1/8,3/8,3/8,1/8)$.",
-        "A sales team makes $10$ independent calls, each closing with probability $0.4$. It claims that the chance of at least $9$ closes is just $(0.4)^{10}$.",
-        "A fair die is rolled $24$ times and sixes are counted. The count has expected value $4$ and variance $10/3$, which is below the mean.",
-        "A quality team records $X$ successes in $n$ trials and then counts failures as $n-X$. It claims the failure count's variance is $n^{2}$ times the success count's variance.",
-        "A reliability analyst expands the chance of at least one success in $n$ independent trials. The sum $\\sum_{k=1}^{n}\\binom nkp^k(1-p)^{n-k}$ equals $1-(1-p)^n$."
+        "Backup system A makes $6$ independent activation attempts with success probability $\\dfrac{2}{5}$ per attempt. System B makes $9$ independent attempts with success probability $\\dfrac{2}{5}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $13$ independent assays, each producing a positive result with probability $\\dfrac{7}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $11$ positives is $\\dfrac{694041686793}{5000000000000}$.",
+        "A quality team checks $11$ independent devices, each failing with probability $\\dfrac{1}{4}$. If $X$ counts failures, the probability of finding at most $4$ failures is $\\dfrac{464191}{524288}$.",
+        "A seed company tests $17$ independent seeds, each germinating with probability $\\dfrac{3}{10}$. For the germination count, the ratio of variance to mean is $\\dfrac{4}{5}$.",
+        "Production line A independently passes each of $12$ items with probability $\\dfrac{1}{5}$, while line B independently passes each of $12$ items with probability $\\dfrac{1}{2}$. The probability that A records exactly $8$ passes is greater than the probability that B records exactly $8$ passes."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=k)&=\\binom3k\\left(\\frac12\\right)^3 \\\\ (P_0,P_1,P_2,P_3)&=\\frac18(1,3,3,1)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge9)&=P(X=9)+P(X=10) \\\\ &=\\binom{10}{9}(0.4)^9(0.6)+(0.4)^{10}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=24\\left(\\frac16\\right)=4 \\\\ \\operatorname{Var}(X)&=24\\left(\\frac16\\right)\\left(\\frac56\\right)=\\frac{10}{3}<4\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(n-X)&=(-1)^2\\operatorname{Var}(X) \\\\ &=\\operatorname{Var}(X),\\ \\text{not }n^2\\operatorname{Var}(X)\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\n\\sum_{k=0}^{n}\\binom nkp^k(1-p)^{n-k}&=1 \\\\ \\sum_{k=1}^{n}\\binom nkp^k(1-p)^{n-k}&=1-(1-p)^n\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{14896}{15625}\\approx 0.953344$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{9}\n=\\dfrac{1933442}{1953125}\\approx 0.9899223$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-71442}{1953125}\\approx -0.0365783$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**B.** → True\n\nThe count is binomial because the $13$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(13,\\dfrac{7}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=11)=\\binom{13}{11}\n\\left(\\dfrac{7}{10}\\right)^{11}\n\\left(\\dfrac{3}{10}\\right)^{2}$$\n\n$$P(X=11)=78\n\\left(\\dfrac{1977326743}{100000000000}\\right)\n\\left(\\dfrac{9}{100}\\right)\n=\\dfrac{694041686793}{5000000000000}\\approx 0.13880834$$\n\nThe coefficient counts which $11$ assays are positive; the statement claims $\\dfrac{694041686793}{5000000000000}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nThe phrase at most $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\n\\binom{11}{x}\\left(\\dfrac{1}{4}\\right)^x\n\\left(\\dfrac{3}{4}\\right)^{11-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{11}{0}\\left(\\dfrac{1}{4}\\right)^{0}\\left(\\dfrac{3}{4}\\right)^{11}=\\dfrac{177147}{4194304}$$\n\n$$P(X=1)=\\binom{11}{1}\\left(\\dfrac{1}{4}\\right)^{1}\\left(\\dfrac{3}{4}\\right)^{10}=\\dfrac{649539}{4194304}$$\n\n$$P(X=2)=\\binom{11}{2}\\left(\\dfrac{1}{4}\\right)^{2}\\left(\\dfrac{3}{4}\\right)^{9}=\\dfrac{1082565}{4194304}$$\n\n$$P(X=3)=\\binom{11}{3}\\left(\\dfrac{1}{4}\\right)^{3}\\left(\\dfrac{3}{4}\\right)^{8}=\\dfrac{1082565}{4194304}$$\n\n$$P(X=4)=\\binom{11}{4}\\left(\\dfrac{1}{4}\\right)^{4}\\left(\\dfrac{3}{4}\\right)^{7}=\\dfrac{360855}{2097152}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 4)=\\dfrac{177147}{4194304}+\\dfrac{649539}{4194304}+\\dfrac{1082565}{4194304}+\\dfrac{1082565}{4194304}+\\dfrac{360855}{2097152}\n=\\dfrac{1856763}{2097152}\\approx 0.88537359$$\n\nThe full tail is compared with the claimed $\\dfrac{464191}{524288}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nFor a binomial count, the mean and variance come from summing $17$ independent Bernoulli trials:\n\n$$E(X)=np=17\\left(\\dfrac{3}{10}\\right)=\\dfrac{51}{10}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=17\\left(\\dfrac{3}{10}\\right)\\left(\\dfrac{7}{10}\\right)\n=\\dfrac{357}{100}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{357}{100}}\\approx 1.88944$$\n\nNow divide the two moments:\n\n$$\\dfrac{\\operatorname{Var}(X)}{E(X)}\n=\\dfrac{np(1-p)}{np}=1-p=\\dfrac{7}{10}$$\n\nThe ratio in the statement is $\\dfrac{4}{5}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{2}\\right)$$\n\nFor line A,\n\n$$P(X_A=8)=\\binom{12}{8}\n\\left(\\dfrac{1}{5}\\right)^{8}\n\\left(\\dfrac{4}{5}\\right)^{4}\n=\\dfrac{25344}{48828125}\\approx 0.00051905$$\n\nFor line B,\n\n$$P(X_B=8)=\\binom{12}{8}\n\\left(\\dfrac{1}{2}\\right)^{8}\n\\left(\\dfrac{1}{2}\\right)^{4}\n=\\dfrac{495}{4096}\\approx 0.12084961$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=8)}{P(X_B=8)}\n=\\dfrac{1048576}{244140625}\\approx 0.00429$$\n\nThus A's exact-count probability is less than B's, while the statement says greater than.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 70,
-      "solution_overview": "Full distributions, extreme tails, moments, transformed variance, and binomial expansion.",
+      "solution_overview": "Topics: complement, exact, tail, moments, compare. Map: A tests an at-least-one complement comparison; B tests an exact binomial mass; C tests a multi-term binomial tail; D tests binomial moments; E tests a comparison of two binomial models.",
       "placeholder": false
     },
     {
@@ -487,11 +487,11 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A machine passes each of $4$ independent tests with probability $0.6$. A technician claims the chance of exactly $2$ passes is $0.36$.",
-        "A student guesses on $12$ independent true/false questions. The probability of at least $7$ correct answers equals the probability of at most $5$ correct answers.",
-        "A simulation independently tosses a fair coin $9$ times and records the number of heads. A report claims that this head count's mean equals its variance.",
-        "Two inspection plans use $20$ and $40$ independent items with the same defect probability $0.25$. Doubling the item count doubles both the mean and variance of the defect count.",
-        "A campaign makes $8$ independent contacts with conversion probability $0.25$. A manager claims the chance of at least one conversion exceeds $0.90$."
+        "A laboratory runs $9$ independent assays, each producing a positive result with probability $\\dfrac{1}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $3$ positives is $\\dfrac{68813}{390625}$.",
+        "A quality team checks $7$ independent devices, each failing with probability $\\dfrac{1}{3}$. If $X$ counts failures, the probability of finding at least $3$ failures is $\\dfrac{313}{729}$.",
+        "A scanner flags each item independently with probability $\\dfrac{2}{5}$. One shift scans $18$ items and another scans $36$ items. The second shift's flag-count standard deviation is exactly $2$ times the first's.",
+        "Production line A independently passes each of $8$ items with probability $\\dfrac{1}{4}$, while line B independently passes each of $9$ items with probability $\\dfrac{2}{5}$. The probability that A records exactly $3$ passes is less than the probability that B records exactly $3$ passes.",
+        "Backup system A makes $7$ independent activation attempts with success probability $\\dfrac{1}{10}$ per attempt. System B makes $8$ independent attempts with success probability $\\dfrac{1}{4}$ per attempt. The probability of at least one activation for A is greater than that for B."
       ],
       "answer_key": [
         false,
@@ -501,15 +501,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=2)&=\\binom42(0.6)^2(0.4)^2 \\\\ &=6(0.36)(0.16)=0.3456\\ne0.36\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X=6+j)&=P(X=6-j) \\\\ P(X\\ge7)&=P(X\\le5)\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\nE(X)&=9(0.5)=4.5 \\\\ \\operatorname{Var}(X)&=9(0.5)(0.5)=2.25\\ne4.5\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{E(Y)}{E(X)}&=\\frac{40(0.25)}{20(0.25)}=2 \\\\ \\frac{\\operatorname{Var}(Y)}{\\operatorname{Var}(X)}&=\\frac{40(0.25)(0.75)}{20(0.25)(0.75)}=2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(0.75)^8 \\\\ &\\approx0.89989<0.90\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → False\n\nThe count is binomial because the $9$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=3)=\\binom{9}{3}\n\\left(\\dfrac{1}{5}\\right)^{3}\n\\left(\\dfrac{4}{5}\\right)^{6}$$\n\n$$P(X=3)=84\n\\left(\\dfrac{1}{125}\\right)\n\\left(\\dfrac{4096}{15625}\\right)\n=\\dfrac{344064}{1953125}\\approx 0.17616077$$\n\nThe coefficient counts which $3$ assays are positive; the statement claims $\\dfrac{68813}{390625}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nThe phrase at least $3$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 3)=\\sum_{x=3}^{7}\n\\binom{7}{x}\\left(\\dfrac{1}{3}\\right)^x\n\\left(\\dfrac{2}{3}\\right)^{7-x}$$\n\nCompute every included mass:\n\n$$P(X=3)=\\binom{7}{3}\\left(\\dfrac{1}{3}\\right)^{3}\\left(\\dfrac{2}{3}\\right)^{4}=\\dfrac{560}{2187}$$\n\n$$P(X=4)=\\binom{7}{4}\\left(\\dfrac{1}{3}\\right)^{4}\\left(\\dfrac{2}{3}\\right)^{3}=\\dfrac{280}{2187}$$\n\n$$P(X=5)=\\binom{7}{5}\\left(\\dfrac{1}{3}\\right)^{5}\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{28}{729}$$\n\n$$P(X=6)=\\binom{7}{6}\\left(\\dfrac{1}{3}\\right)^{6}\\left(\\dfrac{2}{3}\\right)^{1}=\\dfrac{14}{2187}$$\n\n$$P(X=7)=\\binom{7}{7}\\left(\\dfrac{1}{3}\\right)^{7}\\left(\\dfrac{2}{3}\\right)^{0}=\\dfrac{1}{2187}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 3)=\\dfrac{560}{2187}+\\dfrac{280}{2187}+\\dfrac{28}{729}+\\dfrac{14}{2187}+\\dfrac{1}{2187}\n=\\dfrac{313}{729}\\approx 0.42935528$$\n\nThe full tail is compared with the claimed $\\dfrac{313}{729}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nFor a binomial count, the mean and variance come from summing $18$ independent Bernoulli trials:\n\n$$E(X)=np=18\\left(\\dfrac{2}{5}\\right)=\\dfrac{36}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=18\\left(\\dfrac{2}{5}\\right)\\left(\\dfrac{3}{5}\\right)\n=\\dfrac{108}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{108}{25}}\\approx 2.07846$$\n\nWith the same $p$ and twice as many trials,\n\n$$\\operatorname{Var}(Y)=(36)p(1-p)\n=2\\operatorname{Var}(X)=\\dfrac{216}{25}$$\n\nTaking positive square roots gives\n\n$$\\dfrac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}\n=\\sqrt{\\dfrac{2\\operatorname{Var}(X)}{\\operatorname{Var}(X)}}\n=\\sqrt{2}$$\n\nNumerically, the two SDs are $2.07846$ and $2.93939$; the statement claims a factor of $2$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{4}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{2}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=3)=\\binom{8}{3}\n\\left(\\dfrac{1}{4}\\right)^{3}\n\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{1701}{8192}\\approx 0.2076416$$\n\nFor line B,\n\n$$P(X_B=3)=\\binom{9}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{489888}{1953125}\\approx 0.25082266$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{1953125}{2359296}\\approx 0.82784$$\n\nThus A's exact-count probability is less than B's, while the statement says less than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{7}\n=\\dfrac{5217031}{10000000}\\approx 0.5217031$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{8}\n=\\dfrac{58975}{65536}\\approx 0.89988708$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-1936302003}{5120000000}\\approx -0.37818398$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 71,
-      "solution_overview": "Probability mass, symmetric tails, fair-trial moments, scaling with trial count, and a tight bound.",
+      "solution_overview": "Topics: exact, tail, moments, compare, complement. Map: A tests an exact binomial mass; B tests a multi-term binomial tail; C tests binomial moments; D tests a comparison of two binomial models; E tests an at-least-one complement comparison.",
       "placeholder": false
     },
     {
@@ -519,29 +519,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A student guesses on $11$ independent true/false questions. The probabilities of exactly $5$ and exactly $6$ correct are equal, and each is $\\binom{11}{5}/2^{11}$.",
-        "A call centre handles $6$ independent calls, each closing with probability $0.3$. A supervisor claims that the chance of at most one close is simply $(0.7)^6$.",
-        "A board game independently tosses a fair coin $14$ times and uses the total number of heads as a score. The variance of this score is exactly $3.5$.",
-        "A student claims that the number of heads in $10$ fixed tosses and the number of tosses until the first head have the same distribution because both use $p=0.5$.",
-        "A monitoring system performs $n>0$ independent checks. Replacing alert probability $p=0.2$ by $0.8$ changes the probability of at least one alert."
+        "A quality team checks $8$ independent devices, each failing with probability $\\dfrac{2}{5}$. If $X$ counts failures, the probability of finding at most $3$ failures is $\\dfrac{46414}{78125}$.",
+        "A support desk independently resolves each of $19$ tickets on first contact with probability $\\dfrac{3}{5}$. Its daily resolution count has mean $\\dfrac{57}{5}$ and variance $\\dfrac{114}{25}$.",
+        "Production line A independently passes each of $9$ items with probability $\\dfrac{3}{10}$, while line B independently passes each of $9$ items with probability $\\dfrac{3}{5}$. The probability that A records exactly $7$ passes is greater than the probability that B records exactly $7$ passes.",
+        "Backup system A makes $8$ independent activation attempts with success probability $\\dfrac{1}{5}$ per attempt. System B makes $11$ independent attempts with success probability $\\dfrac{1}{5}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $10$ independent assays, each producing a positive result with probability $\\dfrac{3}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $7$ positives is $\\dfrac{2250423}{250000000}$."
       ],
       "answer_key": [
-        true,
         false,
         true,
         false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=5)&=\\frac{\\binom{11}{5}}{2^{11}} \\\\ P(X=6)&=\\frac{\\binom{11}{6}}{2^{11}}=\\frac{\\binom{11}{5}}{2^{11}}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\le1)&=P(X=0)+P(X=1) \\\\ &=(0.7)^6+6(0.3)(0.7)^5>(0.7)^6\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=14(0.5)(0.5)=3.5\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\nX_{\\text{fixed}}&\\in\\{0,1,\\ldots,10\\} \\\\ T_{\\text{waiting}}&\\in\\{1,2,\\ldots\\}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP_{0.2}(X\\ge1)&=1-(0.8)^n \\\\ P_{0.8}(X\\ge1)&=1-(0.2)^n,\\quad n>0\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → False\n\nThe phrase at most $3$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 3)=\\sum_{x=0}^{3}\n\\binom{8}{x}\\left(\\dfrac{2}{5}\\right)^x\n\\left(\\dfrac{3}{5}\\right)^{8-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{8}{0}\\left(\\dfrac{2}{5}\\right)^{0}\\left(\\dfrac{3}{5}\\right)^{8}=\\dfrac{6561}{390625}$$\n\n$$P(X=1)=\\binom{8}{1}\\left(\\dfrac{2}{5}\\right)^{1}\\left(\\dfrac{3}{5}\\right)^{7}=\\dfrac{34992}{390625}$$\n\n$$P(X=2)=\\binom{8}{2}\\left(\\dfrac{2}{5}\\right)^{2}\\left(\\dfrac{3}{5}\\right)^{6}=\\dfrac{81648}{390625}$$\n\n$$P(X=3)=\\binom{8}{3}\\left(\\dfrac{2}{5}\\right)^{3}\\left(\\dfrac{3}{5}\\right)^{5}=\\dfrac{108864}{390625}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 3)=\\dfrac{6561}{390625}+\\dfrac{34992}{390625}+\\dfrac{81648}{390625}+\\dfrac{108864}{390625}\n=\\dfrac{46413}{78125}\\approx 0.5940864$$\n\nThe full tail is compared with the claimed $\\dfrac{46414}{78125}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nFor a binomial count, the mean and variance come from summing $19$ independent Bernoulli trials:\n\n$$E(X)=np=19\\left(\\dfrac{3}{5}\\right)=\\dfrac{57}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=19\\left(\\dfrac{3}{5}\\right)\\left(\\dfrac{2}{5}\\right)\n=\\dfrac{114}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{114}{25}}\\approx 2.13542$$\n\nThe statement's two values are $\\dfrac{57}{5}$ and $\\dfrac{114}{25}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{10}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=7)=\\binom{9}{7}\n\\left(\\dfrac{3}{10}\\right)^{7}\n\\left(\\dfrac{7}{10}\\right)^{2}\n=\\dfrac{964467}{250000000}\\approx 0.00385787$$\n\nFor line B,\n\n$$P(X_B=7)=\\binom{9}{7}\n\\left(\\dfrac{3}{5}\\right)^{7}\n\\left(\\dfrac{2}{5}\\right)^{2}\n=\\dfrac{314928}{1953125}\\approx 0.16124314$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=7)}{P(X_B=7)}\n=\\dfrac{49}{2048}\\approx 0.02393$$\n\nThus A's exact-count probability is less than B's, while the statement says greater than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{8}\n=\\dfrac{325089}{390625}\\approx 0.83222784$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{11}\n=\\dfrac{44633821}{48828125}\\approx 0.91410065$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-3997696}{48828125}\\approx -0.08187281$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**E.** → True\n\nThe count is binomial because the $10$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=7)=\\binom{10}{7}\n\\left(\\dfrac{3}{10}\\right)^{7}\n\\left(\\dfrac{7}{10}\\right)^{3}$$\n\n$$P(X=7)=120\n\\left(\\dfrac{2187}{10000000}\\right)\n\\left(\\dfrac{343}{1000}\\right)\n=\\dfrac{2250423}{250000000}\\approx 0.00900169$$\n\nThe coefficient counts which $7$ assays are positive; the statement claims $\\dfrac{2250423}{250000000}$.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 72,
-      "solution_overview": "Twin central probabilities, lower tails, fair variance, distribution confusion, and complementary probabilities.",
+      "solution_overview": "Topics: tail, moments, compare, complement, exact. Map: A tests a multi-term binomial tail; B tests binomial moments; C tests a comparison of two binomial models; D tests an at-least-one complement comparison; E tests an exact binomial mass.",
       "placeholder": false
     },
     {
@@ -551,29 +551,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A server makes $2$ independent connection attempts, each succeeding with probability $0.3$. An engineer claims that the probability of exactly one success is $0.49$.",
-        "A fair coin is tossed $15$ times. The probability of at least $8$ heads equals the probability of at most $7$ heads, so each event has probability $1/2$.",
-        "A player takes $8$ independent shots with scoring probability $0.75$. A coach claims the standard deviation of the score count is exactly $1.5$.",
-        "Two independent test plans use $5$ and $20$ items, each failing with probability $0.2$. The ratio of their no-failure probabilities, $P_{20}(0)/P_{5}(0)$, is $(0.8)^{15}$.",
-        "A campaign runs $n$ independent trials with success probability $p\\in(0,1)$. A planner claims that $1-(1-p)^n$ is the probability of at least two successes."
+        "A bottling line independently rejects each of $20$ bottles with probability $\\dfrac{7}{10}$. The standard deviation of the rejection count is less than $2$ bottles.",
+        "Production line A independently passes each of $10$ items with probability $\\dfrac{2}{5}$, while line B independently passes each of $10$ items with probability $\\dfrac{7}{10}$. The probability that A records exactly $6$ passes is less than the probability that B records exactly $6$ passes.",
+        "Backup system A makes $9$ independent activation attempts with success probability $\\dfrac{1}{4}$ per attempt. System B makes $10$ independent attempts with success probability $\\dfrac{2}{5}$ per attempt. The probability of at least one activation for A is greater than that for B.",
+        "A laboratory runs $11$ independent assays, each producing a positive result with probability $\\dfrac{2}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $5$ positives is $\\dfrac{10777537}{48828125}$.",
+        "A quality team checks $9$ independent devices, each failing with probability $\\dfrac{1}{2}$. If $X$ counts failures, the probability of finding at least $5$ failures is $\\dfrac{1}{2}$."
       ],
       "answer_key": [
         false,
         true,
         false,
-        true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=1)&=\\binom21(0.3)(0.7) \\\\ &=0.42\\ne0.49\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X=k)&=P(X=15-k) \\\\ P(X\\ge8)&=P(X\\le7)=\\frac12\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=8(0.75)(0.25)=1.5 \\\\ \\operatorname{SD}(X)&=\\sqrt{1.5}\\ne1.5\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{P_{20}(0)}{P_5(0)}&=\\frac{(0.8)^{20}}{(0.8)^5} \\\\ &=(0.8)^{15}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\n1-(1-p)^n&=P(X\\ge1) \\\\ P(X\\ge2)&=1-(1-p)^n-np(1-p)^{n-1}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → False\n\nFor a binomial count, the mean and variance come from summing $20$ independent Bernoulli trials:\n\n$$E(X)=np=20\\left(\\dfrac{7}{10}\\right)=14$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=20\\left(\\dfrac{7}{10}\\right)\\left(\\dfrac{3}{10}\\right)\n=\\dfrac{21}{5}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{21}{5}}\\approx 2.04939$$\n\nThe computed SD $2.04939$ is compared with $2=2$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{7}{10}\\right)$$\n\nFor line A,\n\n$$P(X_A=6)=\\binom{10}{6}\n\\left(\\dfrac{2}{5}\\right)^{6}\n\\left(\\dfrac{3}{5}\\right)^{4}\n=\\dfrac{217728}{1953125}\\approx 0.11147674$$\n\nFor line B,\n\n$$P(X_B=6)=\\binom{10}{6}\n\\left(\\dfrac{7}{10}\\right)^{6}\n\\left(\\dfrac{3}{10}\\right)^{4}\n=\\dfrac{200120949}{1000000000}\\approx 0.20012095$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=6)}{P(X_B=6)}\n=\\dfrac{65536}{117649}\\approx 0.55705$$\n\nThus A's exact-count probability is less than B's, while the statement says less than.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{9}\n=\\dfrac{242461}{262144}\\approx 0.92491531$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{10}\n=\\dfrac{9706576}{9765625}\\approx 0.99395338$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-176737455819}{2560000000000}\\approx -0.06903807$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**D.** → False\n\nThe count is binomial because the $11$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{2}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=5)=\\binom{11}{5}\n\\left(\\dfrac{2}{5}\\right)^{5}\n\\left(\\dfrac{3}{5}\\right)^{6}$$\n\n$$P(X=5)=462\n\\left(\\dfrac{32}{3125}\\right)\n\\left(\\dfrac{729}{15625}\\right)\n=\\dfrac{10777536}{48828125}\\approx 0.22072394$$\n\nThe coefficient counts which $5$ assays are positive; the statement claims $\\dfrac{10777537}{48828125}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nThe phrase at least $5$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 5)=\\sum_{x=5}^{9}\n\\binom{9}{x}\\left(\\dfrac{1}{2}\\right)^x\n\\left(\\dfrac{1}{2}\\right)^{9-x}$$\n\nCompute every included mass:\n\n$$P(X=5)=\\binom{9}{5}\\left(\\dfrac{1}{2}\\right)^{5}\\left(\\dfrac{1}{2}\\right)^{4}=\\dfrac{63}{256}$$\n\n$$P(X=6)=\\binom{9}{6}\\left(\\dfrac{1}{2}\\right)^{6}\\left(\\dfrac{1}{2}\\right)^{3}=\\dfrac{21}{128}$$\n\n$$P(X=7)=\\binom{9}{7}\\left(\\dfrac{1}{2}\\right)^{7}\\left(\\dfrac{1}{2}\\right)^{2}=\\dfrac{9}{128}$$\n\n$$P(X=8)=\\binom{9}{8}\\left(\\dfrac{1}{2}\\right)^{8}\\left(\\dfrac{1}{2}\\right)^{1}=\\dfrac{9}{512}$$\n\n$$P(X=9)=\\binom{9}{9}\\left(\\dfrac{1}{2}\\right)^{9}\\left(\\dfrac{1}{2}\\right)^{0}=\\dfrac{1}{512}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 5)=\\dfrac{63}{256}+\\dfrac{21}{128}+\\dfrac{9}{128}+\\dfrac{9}{512}+\\dfrac{1}{512}\n=\\dfrac{1}{2}\\approx 0.5$$\n\nThe full tail is compared with the claimed $\\dfrac{1}{2}$.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 73,
-      "solution_overview": "Two-trial mass, odd fair symmetry, standard deviation, no-success ratios, and at-least-two events.",
+      "solution_overview": "Topics: moments, compare, complement, exact, tail. Map: A tests binomial moments; B tests a comparison of two binomial models; C tests an at-least-one complement comparison; D tests an exact binomial mass; E tests a multi-term binomial tail.",
       "placeholder": false
     },
     {
@@ -583,29 +583,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A sensor runs $8$ independent checks, each alerting with probability $1/3$. The probability of receiving no alerts is less than $0.04$.",
-        "A student guesses on $4$ independent true/false questions. A tutor claims that the probability of at least $2$ correct answers is exactly $3/4$.",
-        "A manufacturer checks $100$ independent products, each defective with probability $0.05$. The defect count has mean $5$ and standard deviation $\\sqrt{4.75}$.",
-        "Two binomial inspection plans have the same expected number of defects $np$. A manager claims this equality forces the two defect counts to have the same variance.",
-        "A machine performs one trial with success probability $p$. In this one-trial case, the probability of at least one success is exactly $p$."
+        "Production line A independently passes each of $11$ items with probability $\\dfrac{3}{5}$, while line B independently passes each of $12$ items with probability $\\dfrac{4}{5}$. The probability that A records exactly $5$ passes is less than the probability that B records exactly $5$ passes.",
+        "Backup system A makes $4$ independent activation attempts with success probability $\\dfrac{1}{3}$ per attempt. System B makes $7$ independent attempts with success probability $\\dfrac{1}{3}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $12$ independent assays, each producing a positive result with probability $\\dfrac{3}{5}$. If $X$ is the number of positives, the exact probability of observing exactly $3$ positives is $\\dfrac{608256}{48828125}$.",
+        "A quality team checks $10$ independent devices, each failing with probability $\\dfrac{3}{5}$. If $X$ counts failures, the probability of finding at most $2$ failures is $\\dfrac{24013}{1953125}$.",
+        "A seed company tests $12$ independent seeds, each germinating with probability $\\dfrac{1}{10}$. For the germination count, the ratio of variance to mean is $1$."
       ],
       "answer_key": [
-        true,
         false,
+        true,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\begin{aligned}\nP(X=0)&=\\left(\\frac23\\right)^8=\\frac{256}{6561} \\\\ &\\approx0.03902<0.04\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**B.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge2)&=1-P(X=0)-P(X=1) \\\\ &=1-\\frac1{16}-\\frac4{16}=\\frac{11}{16}\\ne\\frac34\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**C.** → True\n\n$$\n\\begin{aligned}\nE(X)&=100(0.05)=5 \\\\ \\operatorname{SD}(X)&=\\sqrt{100(0.05)(0.95)}=\\sqrt{4.75}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**D.** → False\n\n$$\n\\begin{aligned}\nX&\\sim\\operatorname{Bin}(10,0.5):\\quad E(X)=5,\\ V(X)=2.5 \\\\ Y&\\sim\\operatorname{Bin}(20,0.25):\\quad E(Y)=5,\\ V(Y)=3.75\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**E.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(1-p)^1 \\\\ &=p\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+        "**A.** → False\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(11,\\dfrac{3}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{4}{5}\\right)$$\n\nFor line A,\n\n$$P(X_A=5)=\\binom{11}{5}\n\\left(\\dfrac{3}{5}\\right)^{5}\n\\left(\\dfrac{2}{5}\\right)^{6}\n=\\dfrac{7185024}{48828125}\\approx 0.14714929$$\n\nFor line B,\n\n$$P(X_B=5)=\\binom{12}{5}\n\\left(\\dfrac{4}{5}\\right)^{5}\n\\left(\\dfrac{1}{5}\\right)^{7}\n=\\dfrac{811008}{244140625}\\approx 0.00332189$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=5)}{P(X_B=5)}\n=\\dfrac{2835}{64}\\approx 44.29688$$\n\nThus A's exact-count probability is greater than B's, while the statement says less than.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{4}\n=\\dfrac{65}{81}\\approx 0.80246914$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{7}\n=\\dfrac{2059}{2187}\\approx 0.94147234$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-304}{2187}\\approx -0.1390032$$\n\nThe sign shows that A's at-least-one probability is less than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**C.** → True\n\nThe count is binomial because the $12$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{5}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=3)=\\binom{12}{3}\n\\left(\\dfrac{3}{5}\\right)^{3}\n\\left(\\dfrac{2}{5}\\right)^{9}$$\n\n$$P(X=3)=220\n\\left(\\dfrac{27}{125}\\right)\n\\left(\\dfrac{512}{1953125}\\right)\n=\\dfrac{608256}{48828125}\\approx 0.01245708$$\n\nThe coefficient counts which $3$ assays are positive; the statement claims $\\dfrac{608256}{48828125}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nThe phrase at most $2$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{10}{x}\\left(\\dfrac{3}{5}\\right)^x\n\\left(\\dfrac{2}{5}\\right)^{10-x}$$\n\nCompute every included mass:\n\n$$P(X=0)=\\binom{10}{0}\\left(\\dfrac{3}{5}\\right)^{0}\\left(\\dfrac{2}{5}\\right)^{10}=\\dfrac{1024}{9765625}$$\n\n$$P(X=1)=\\binom{10}{1}\\left(\\dfrac{3}{5}\\right)^{1}\\left(\\dfrac{2}{5}\\right)^{9}=\\dfrac{3072}{1953125}$$\n\n$$P(X=2)=\\binom{10}{2}\\left(\\dfrac{3}{5}\\right)^{2}\\left(\\dfrac{2}{5}\\right)^{8}=\\dfrac{20736}{1953125}$$\n\nAdd the disjoint terms:\n\n$$P(X\\le 2)=\\dfrac{1024}{9765625}+\\dfrac{3072}{1953125}+\\dfrac{20736}{1953125}\n=\\dfrac{120064}{9765625}\\approx 0.01229455$$\n\nThe full tail is compared with the claimed $\\dfrac{24013}{1953125}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nFor a binomial count, the mean and variance come from summing $12$ independent Bernoulli trials:\n\n$$E(X)=np=12\\left(\\dfrac{1}{10}\\right)=\\dfrac{6}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=12\\left(\\dfrac{1}{10}\\right)\\left(\\dfrac{9}{10}\\right)\n=\\dfrac{27}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{27}{25}}\\approx 1.03923$$\n\nNow divide the two moments:\n\n$$\\dfrac{\\operatorname{Var}(X)}{E(X)}\n=\\dfrac{np(1-p)}{np}=1-p=\\dfrac{9}{10}$$\n\nThe ratio in the statement is $1$.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 74,
-      "solution_overview": "No-success bounds, fair upper tails, rare-event moments, equal means, and one-trial events.",
+      "solution_overview": "Topics: compare, complement, exact, tail, moments. Map: A tests a comparison of two binomial models; B tests an at-least-one complement comparison; C tests an exact binomial mass; D tests a multi-term binomial tail; E tests binomial moments.",
       "placeholder": false
     },
     {
@@ -615,29 +615,29 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A clinic gives $6$ independent treatments, each effective with probability $0.25$. A researcher claims that the probability of exactly one effective treatment is below $0.35$.",
-        "A contest independently tosses a fair coin $9$ times and wins whenever at least $5$ heads appear. The probability of winning is exactly $1/2$.",
-        "A network tests $7$ independent links, each failing with probability $0.2$. A report claims the standard deviation of the failure count is exactly $1.12$.",
-        "Two students answer $10$ independent items with success probabilities $0.4$ and $0.6$. The ratio of their expected scores is exactly $2/3$.",
-        "A salesperson makes $5$ independent calls, each closing with probability $0.2$. A manager claims that the chance of at least one close exceeds $0.70$."
+        "Backup system A makes $5$ independent activation attempts with success probability $\\dfrac{2}{5}$ per attempt. System B makes $6$ independent attempts with success probability $\\dfrac{1}{5}$ per attempt. The probability of at least one activation for A is less than that for B.",
+        "A laboratory runs $13$ independent assays, each producing a positive result with probability $\\dfrac{7}{10}$. If $X$ is the number of positives, the exact probability of observing exactly $11$ positives is $\\dfrac{347020843397}{2500000000000}$.",
+        "A quality team checks $11$ independent devices, each failing with probability $\\dfrac{1}{4}$. If $X$ counts failures, the probability of finding at least $4$ failures is $\\dfrac{150311}{524288}$.",
+        "A scanner flags each item independently with probability $\\dfrac{1}{5}$. One shift scans $13$ items and another scans $26$ items. The second shift's flag-count standard deviation is exactly $2$ times the first's.",
+        "Production line A independently passes each of $12$ items with probability $\\dfrac{1}{5}$, while line B independently passes each of $12$ items with probability $\\dfrac{1}{2}$. The probability that A records exactly $4$ passes is greater than the probability that B records exactly $4$ passes."
       ],
       "answer_key": [
         false,
-        true,
         false,
         true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\n\\begin{aligned}\nP(X=1)&=\\binom61(0.25)(0.75)^5 \\\\ &\\approx0.35596>0.35\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**B.** → True\n\n$$\n\\begin{aligned}\nP(X\\ge5)&=P(X\\le4) \\\\ P(X\\ge5)+P(X\\le4)&=1\\Rightarrow P(X\\ge5)=\\frac12\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**C.** → False\n\n$$\n\\begin{aligned}\n\\operatorname{Var}(X)&=7(0.2)(0.8)=1.12 \\\\ \\operatorname{SD}(X)&=\\sqrt{1.12}\\ne1.12\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
-        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{E(X)}{E(Y)}&=\\frac{10(0.4)}{10(0.6)} \\\\ &=\\frac46=\\frac23\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
-        "**E.** → False\n\n$$\n\\begin{aligned}\nP(X\\ge1)&=1-(0.8)^5 \\\\ &=0.67232<0.70\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+        "**A.** → False\n\nFor each system, 'at least one' is the complement of zero successes:\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{5}\n=\\dfrac{2882}{3125}\\approx 0.92224$$\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{6}\n=\\dfrac{11529}{15625}\\approx 0.737856$$\n\nTheir difference is\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{2881}{15625}\\approx 0.184384$$\n\nThe sign shows that A's at-least-one probability is greater than B's; comparing only $n$ or only $p$ would miss their combined effect.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**B.** → False\n\nThe count is binomial because the $13$ trials are independent and have the same success probability:\n\n$$X\\sim\\operatorname{Bin}\\left(13,\\dfrac{7}{10}\\right)$$\n\nFor one exact count, use the binomial PMF:\n\n$$P(X=11)=\\binom{13}{11}\n\\left(\\dfrac{7}{10}\\right)^{11}\n\\left(\\dfrac{3}{10}\\right)^{2}$$\n\n$$P(X=11)=78\n\\left(\\dfrac{1977326743}{100000000000}\\right)\n\\left(\\dfrac{9}{100}\\right)\n=\\dfrac{694041686793}{5000000000000}\\approx 0.13880834$$\n\nThe coefficient counts which $11$ assays are positive; the statement claims $\\dfrac{347020843397}{2500000000000}$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nThe phrase at least $4$ names several mutually exclusive counts, so one PMF term is not enough:\n\n$$P(X\\ge 4)=\\sum_{x=4}^{11}\n\\binom{11}{x}\\left(\\dfrac{1}{4}\\right)^x\n\\left(\\dfrac{3}{4}\\right)^{11-x}$$\n\nCompute every included mass:\n\n$$P(X=4)=\\binom{11}{4}\\left(\\dfrac{1}{4}\\right)^{4}\\left(\\dfrac{3}{4}\\right)^{7}=\\dfrac{360855}{2097152}$$\n\n$$P(X=5)=\\binom{11}{5}\\left(\\dfrac{1}{4}\\right)^{5}\\left(\\dfrac{3}{4}\\right)^{6}=\\dfrac{168399}{2097152}$$\n\n$$P(X=6)=\\binom{11}{6}\\left(\\dfrac{1}{4}\\right)^{6}\\left(\\dfrac{3}{4}\\right)^{5}=\\dfrac{56133}{2097152}$$\n\n$$P(X=7)=\\binom{11}{7}\\left(\\dfrac{1}{4}\\right)^{7}\\left(\\dfrac{3}{4}\\right)^{4}=\\dfrac{13365}{2097152}$$\n\n$$P(X=8)=\\binom{11}{8}\\left(\\dfrac{1}{4}\\right)^{8}\\left(\\dfrac{3}{4}\\right)^{3}=\\dfrac{4455}{4194304}$$\n\n$$P(X=9)=\\binom{11}{9}\\left(\\dfrac{1}{4}\\right)^{9}\\left(\\dfrac{3}{4}\\right)^{2}=\\dfrac{495}{4194304}$$\n\n$$P(X=10)=\\binom{11}{10}\\left(\\dfrac{1}{4}\\right)^{10}\\left(\\dfrac{3}{4}\\right)^{1}=\\dfrac{33}{4194304}$$\n\n$$P(X=11)=\\binom{11}{11}\\left(\\dfrac{1}{4}\\right)^{11}\\left(\\dfrac{3}{4}\\right)^{0}=\\dfrac{1}{4194304}$$\n\nAdd the disjoint terms:\n\n$$P(X\\ge 4)=\\dfrac{360855}{2097152}+\\dfrac{168399}{2097152}+\\dfrac{56133}{2097152}+\\dfrac{13365}{2097152}+\\dfrac{4455}{4194304}+\\dfrac{495}{4194304}+\\dfrac{33}{4194304}+\\dfrac{1}{4194304}\n=\\dfrac{150311}{524288}\\approx 0.28669548$$\n\nThe full tail is compared with the claimed $\\dfrac{150311}{524288}$.\n\nThe recomputed result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nFor a binomial count, the mean and variance come from summing $13$ independent Bernoulli trials:\n\n$$E(X)=np=13\\left(\\dfrac{1}{5}\\right)=\\dfrac{13}{5}$$\n\n$$\\operatorname{Var}(X)=np(1-p)\n=13\\left(\\dfrac{1}{5}\\right)\\left(\\dfrac{4}{5}\\right)\n=\\dfrac{52}{25}$$\n\n$$\\operatorname{SD}(X)=\\sqrt{np(1-p)}\n=\\sqrt{\\dfrac{52}{25}}\\approx 1.44222$$\n\nWith the same $p$ and twice as many trials,\n\n$$\\operatorname{Var}(Y)=(26)p(1-p)\n=2\\operatorname{Var}(X)=\\dfrac{104}{25}$$\n\nTaking positive square roots gives\n\n$$\\dfrac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}\n=\\sqrt{\\dfrac{2\\operatorname{Var}(X)}{\\operatorname{Var}(X)}}\n=\\sqrt{2}$$\n\nNumerically, the two SDs are $1.44222$ and $2.03961$; the statement claims a factor of $2$.\n\nThe recomputed result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nModel the two pass counts separately:\n\n$$X_A\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{2}\\right)$$\n\nFor line A,\n\n$$P(X_A=4)=\\binom{12}{4}\n\\left(\\dfrac{1}{5}\\right)^{4}\n\\left(\\dfrac{4}{5}\\right)^{8}\n=\\dfrac{6488064}{48828125}\\approx 0.13287555$$\n\nFor line B,\n\n$$P(X_B=4)=\\binom{12}{4}\n\\left(\\dfrac{1}{2}\\right)^{4}\n\\left(\\dfrac{1}{2}\\right)^{8}\n=\\dfrac{495}{4096}\\approx 0.12084961$$\n\nThe probability ratio in the statement's order is\n\n$$\\dfrac{P(X_A=4)}{P(X_B=4)}\n=\\dfrac{268435456}{244140625}\\approx 1.09951$$\n\nThus A's exact-count probability is greater than B's, while the statement says greater than.\n\nThe recomputed result agrees with the claim, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 75,
-      "solution_overview": "One-success mass, fair odd tails, standard deviation, mean ratios, and numerical complements.",
+      "solution_overview": "Topics: complement, exact, tail, moments, compare. Map: A tests an at-least-one complement comparison; B tests an exact binomial mass; C tests a multi-term binomial tail; D tests binomial moments; E tests a comparison of two binomial models.",
       "placeholder": false
     }
   ]
