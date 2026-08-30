@@ -875,7 +875,7 @@
     "If $5$ is added to a number and the sum is halved, the result is $3$ less than the original number. Then the number is $12$.",
     "Three consecutive integers add to $48$. The middle integer is even.",
     "If $1$ is added to a number and the sum is divided by $5$, the result is $3$ less than half the number. Then the number is $12$.",
-    "A tank is $\frac{2}{5}$ full after $12$ minutes at a constant fill rate. The operator concludes that the tank is therefore full after $30$ minutes."
+    "A tank is $\\frac{2}{5}$ full after $12$ minutes at a constant fill rate. The operator concludes that the tank is therefore full after $30$ minutes."
    ],
    "answer_key": [
     true,
