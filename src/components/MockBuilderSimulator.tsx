@@ -238,23 +238,20 @@ export default function MockBuilderSimulator() {
         let from: Vec2 = balancedPoint();
         for (const p of path) {
           if (cancelled) return;
-          const STEPS = 10;
-          for (let i = 1; i <= STEPS; i++) {
-            if (cancelled) return;
-            const t = i / STEPS;
-            const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+          const dist = Math.hypot(p.x - from.x, p.y - from.y);
+          const start = from;
+          await tween(700 + dist * 900, (eased) => {
             setWeightPoint({
-              x: from.x + (p.x - from.x) * eased,
-              y: from.y + (p.y - from.y) * eased,
+              x: start.x + (p.x - start.x) * eased,
+              y: start.y + (p.y - start.y) * eased,
             });
-            await new Promise<void>((r) => requestAnimationFrame(() => r()));
             snapCursor("[data-sim-weight] [data-weight-handle]");
-            await wait(45);
-          }
+          });
           from = p;
-          await wait(260);
+          await wait(320);
         }
         await wait(600);
+
 
         // ---- 5. build ----
         await moveTo("[data-sim-build]");
