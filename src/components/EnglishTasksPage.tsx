@@ -670,15 +670,10 @@ export function EnglishTasksPage({ tier }: Props) {
                 key={activeCase.id}
                 data={activeCase}
                 index={activeIdx}
-                passage=""
                 inRevision={progress.revision.includes(activeCase.id)}
                 alreadyPassed={progress.passed.includes(activeCase.id)}
-                isTexts={false}
-                activeExplanationIndex={
-                  explanation?.caseId === activeCase.id ? explanation.statementIndex : null
-                }
-                onRequestExplanation={(i) => requestExplanation(activeCase, i)}
                 explanationsOpen={showExplanations}
+                onShowExplanations={() => setShowExplanations(true)}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
                 requireAuth={requireAuthForAnswers}
                 onGraded={(ok, correctCount) => {
@@ -759,15 +754,10 @@ export function EnglishTasksPage({ tier }: Props) {
                   key={activeCase.id}
                   data={activeCase}
                   index={activeIdx}
-                  passage={activePassage}
                   inRevision={progress.revision.includes(activeCase.id)}
                   alreadyPassed={progress.passed.includes(activeCase.id)}
-                  isTexts
-                  activeExplanationIndex={
-                    explanation?.caseId === activeCase.id ? explanation.statementIndex : null
-                  }
-                  onRequestExplanation={(i) => requestExplanation(activeCase, i)}
                   explanationsOpen={showExplanations}
+                  onShowExplanations={() => setShowExplanations(true)}
                   onToggleExplanations={() => setShowExplanations((v) => !v)}
                   requireAuth={requireAuthForAnswers}
                   onGraded={(ok, correctCount) => {
@@ -822,9 +812,9 @@ export function EnglishTasksPage({ tier }: Props) {
               </div>
             ) : (
               <div className="flex h-full items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
-                Submit answers, then open <span className="mx-1 font-semibold text-foreground">View solutions</span>
-                for the worked notes.
-                for a full walkthrough of every statement.
+                Submit answers to open the{" "}
+                <span className="mx-1 font-semibold text-foreground">Full solution</span>
+                with the answer key and a walkthrough of every statement.
               </div>
             )}
           </PracticeRightSlot>
@@ -944,29 +934,23 @@ function ChapterProgressRing({
 function CaseCard({
   data,
   index,
-  passage,
   onGraded,
   inRevision,
   alreadyPassed,
   onResetProgress,
-  isTexts,
-  activeExplanationIndex,
-  onRequestExplanation,
   explanationsOpen,
+  onShowExplanations,
   onToggleExplanations,
   requireAuth,
 }: {
   data: EnglishTask;
   index: number;
-  passage: string;
   onGraded: (allCorrect: boolean, correctCount: number) => void;
   inRevision: boolean;
   alreadyPassed: boolean;
   onResetProgress: () => void;
-  isTexts: boolean;
-  activeExplanationIndex: number | null;
-  onRequestExplanation: (i: number) => void;
   explanationsOpen: boolean;
+  onShowExplanations: () => void;
   onToggleExplanations: () => void;
   requireAuth?: () => boolean;
 }) {
@@ -995,6 +979,7 @@ function CaseCard({
     if (requireAuth && !requireAuth()) return;
     setChecked(true);
     onGraded(correctCount === data.answer_key.length, correctCount);
+    onShowExplanations();
   };
 
   const handleReset = () => {
@@ -1022,12 +1007,12 @@ function CaseCard({
           Difficulty {data.difficulty_level}
         </span>
         {alreadyPassed && (
-          <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
+          <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
           </span>
         )}
         {inRevision && (
-          <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
             In revision
           </span>
         )}
@@ -1056,19 +1041,18 @@ function CaseCard({
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
           <span className="w-6 text-center">#</span>
           <span className="flex-1">Statement</span>
-          <span className="w-14 text-center">Correct</span>
+          <span className="w-14 text-center">True</span>
           {checked && <span className="w-6" aria-hidden />}
         </li>
         {data.statements.map((stmt, i) => {
-          const userAns = answers[i];
-          const isChecked = userAns === true;
+          const isChecked = answers[i] === true;
           const correctAns = data.answer_key[i];
           const isCorrect = checked && isChecked === correctAns;
           return (
             <li key={i} className="px-4 py-3">
               <div className="flex items-center gap-3">
                 <span className="w-6 text-center text-xs font-bold text-muted-foreground">
-                  {i + 1}.
+                  {String.fromCharCode(65 + i)}.
                 </span>
                 <p className="flex-1 text-sm leading-relaxed text-foreground">{stmt}</p>
                 <div className="flex w-14 justify-center">
@@ -1076,6 +1060,7 @@ function CaseCard({
                     type="button"
                     role="checkbox"
                     aria-checked={isChecked}
+                    aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
                     disabled={checked}
                     onClick={() => setAt(i, !isChecked)}
                     className={cn(
@@ -1092,49 +1077,17 @@ function CaseCard({
                 {checked && (
                   <span
                     className={cn(
-                      "grid h-6 w-6 place-items-center rounded-full border",
+                      "grid h-6 w-6 place-items-center rounded-full",
                       isCorrect
-                        ? "border-foreground/30 bg-foreground text-background"
-                        : "border-border bg-secondary text-foreground",
+                        ? "bg-emerald-500 text-white"
+                        : "bg-destructive text-destructive-foreground",
                     )}
+                    aria-label={isCorrect ? "Correct" : "Incorrect"}
                   >
                     {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
                   </span>
                 )}
               </div>
-
-              {checked && isTexts && (
-                <div className="mt-3 space-y-2">
-                  {(data.tactical_explanations[i] ?? "").trim() && (
-                    <div className="rounded-md border border-border bg-secondary/40 p-3 text-xs leading-relaxed text-foreground">
-                      <div className="mb-2 flex flex-wrap items-center gap-2">
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-                          Solution note
-                        </span>
-                        {isTexts && (
-                          <button
-                            type="button"
-                            onClick={() => onRequestExplanation(i)}
-                            className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
-                          >
-                            {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
-                          </button>
-                        )}
-                      </div>
-                      <ExplanationProse text={data.tactical_explanations[i]} />
-                    </div>
-                  )}
-                  {isTexts && !(data.tactical_explanations[i] ?? "").trim() && (
-                    <button
-                      type="button"
-                      onClick={() => onRequestExplanation(i)}
-                      className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
-                    >
-                      {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
-                    </button>
-                  )}
-                </div>
-              )}
             </li>
           );
         })}
@@ -1165,7 +1118,7 @@ function CaseCard({
               onClick={onToggleExplanations}
               className={practiceExplanationToggleClass(explanationsOpen)}
             >
-              {explanationsOpen ? "Hide solutions" : "View solutions"}
+              {explanationsOpen ? "Hide Explanation" : "Explanation"}
             </button>
           )}
         </div>
@@ -1195,7 +1148,25 @@ function AllExplanationsPanel({
   onRequestShowInText: (i: number) => void;
   onClose: () => void;
 }) {
-  const letters = "ABCDE";
+  const letters = "ABCDEF";
+  const body = [
+    task.solution_overview?.trim() ?? "",
+    "",
+    ...task.statements.flatMap((_, i) => {
+      const letter = letters[i] ?? String(i + 1);
+      const verdict = task.answer_key[i] ? "True" : "False";
+      let expl = (task.tactical_explanations[i] ?? "").trim();
+      if (expl) {
+        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
+        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
+      }
+      return [`**${letter}.** → ${verdict}\n\n${task.statements[i]}`, ""];
+    }),
+  ]
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 
   return (
     <div
@@ -1218,61 +1189,40 @@ function AllExplanationsPanel({
         </button>
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
-        {task.solution_overview?.trim() && (
-          <section className="mb-8 border-b border-border/60 pb-7">
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-widest text-foreground">
-              Strategy overview
-            </p>
-            <ExplanationProse text={task.solution_overview} />
-          </section>
-        )}
         <AnswerKeyTable answerKey={task.answer_key} />
-        <div className="space-y-8">
-          {task.statements.map((stmt, i) => {
-            const expl = (task.tactical_explanations[i] ?? "").trim();
-            const letter = letters[i] ?? String(i + 1);
-            const body = expl || `**${letter}) ${stmt}.**`;
-            return (
-              <section key={i} className="border-b border-border/60 pb-6 last:border-b-0 last:pb-0">
-                <div className="mb-3 flex flex-wrap items-center gap-2">
-                  <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-                    {letter}
-                  </span>
-                  <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
-                    {task.answer_key[i] ? "TRUE" : "FALSE"}
-                  </span>
-                  {isTexts && (
-                    <button
-                      type="button"
-                      onClick={() => onRequestShowInText(i)}
-                      className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
-                    >
-                      {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
-                    </button>
-                  )}
-                </div>
-                <ExplanationProse text={body} />
-              </section>
-            );
-          })}
-        </div>
+        {isTexts && (
+          <div className="mb-6 flex flex-wrap gap-2">
+            {task.statements.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => onRequestShowInText(i)}
+                className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
+              >
+                {letters[i] ?? i + 1}
+                {activeExplanationIndex === i ? " · located" : " · locate"}
+              </button>
+            ))}
+          </div>
+        )}
+        <ExplanationProse text={body} />
       </div>
     </div>
   );
 }
 
 function AnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
-  const letters = "ABCDE";
-  const cols = answerKey.slice(0, 5);
+  const letters = "ABCDEF";
+
   return (
-    <div className="mb-8 overflow-x-auto">
+    <section className="mb-8 overflow-x-auto border-b border-border/60 pb-7">
       <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
         Answer key
       </p>
-      <table className="w-full min-w-[16rem] border-collapse rounded-none border border-foreground/20 text-center text-[14px] shadow-sm">
+      <table className="w-full min-w-[16rem] border-collapse border border-foreground/20 text-center text-[14px] shadow-sm">
         <thead>
           <tr className="bg-foreground text-background">
-            {cols.map((_, i) => (
+            {answerKey.map((_, i) => (
               <th
                 key={i}
                 className="border-b border-foreground/20 px-3 py-2.5 text-[12px] font-bold uppercase tracking-wide"
@@ -1284,18 +1234,18 @@ function AnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
         </thead>
         <tbody>
           <tr className="bg-card">
-            {cols.map((ok, i) => (
+            {answerKey.map((isTrue, i) => (
               <td
                 key={i}
-                className="border-b border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground last:border-b-0"
+                className="border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground"
               >
-                {ok ? "TRUE" : "FALSE"}
+                {isTrue ? "TRUE" : "FALSE"}
               </td>
             ))}
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
   );
 }
 

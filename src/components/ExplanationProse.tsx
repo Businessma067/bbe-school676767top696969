@@ -30,7 +30,7 @@ export function ExplanationProse({
       chunks.push({ kind: "part", title: partOnly[1].replace(/[.!:]+$/, "") });
       continue;
     }
-    if (/^\*\*[A-E]\)/.test(p)) {
+    if (/^\*\*[A-F](?:\)|\.\*\*)/.test(p)) {
       chunks.push({ kind: "claim", text: p });
       continue;
     }
