@@ -1,0 +1,644 @@
+{
+ "tasks": [
+  {
+   "id": "math-8-98",
+   "case_id": "MATH 8.98",
+   "title": "Exam-style tasks - 1",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = 3x^{4}$, then $f(2) = 48$.",
+    "If $g(x) = 5x^{3/2}$ for $x > 0$, then $g(16) = 320$.",
+    "If $h(x) = 2x^{-2}$, then $h(4) = \\dfrac{1}{8}$.",
+    "If $p(x) = 7x^{0}$, then $p(12) = 0$.",
+    "If $q(x) = \\dfrac{1}{2}x^{5}$, then $q(-2) = -16$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$f(2) = 3 \\cdot 2^{4} = 3 \\cdot 16 = 48$$\n\nThe claim matches, so the statement is True.",
+    "**B.** → True\n\n$$g(16) = 5 \\cdot 16^{3/2} = 5 \\cdot (16^{1/2})^{3} = 5 \\cdot 4^{3} = 5 \\cdot 64 = 320$$\n\nThe claim matches, so the statement is True.",
+    "**C.** → True\n\n$$h(4) = 2 \\cdot 4^{-2} = 2 \\cdot \\dfrac{1}{16} = \\dfrac{1}{8}$$\n\nThe claim matches, so the statement is True.",
+    "**D.** → False\n\nFor $x \\ne 0$, $x^{0} = 1$, so $p(12) = 7 \\ne 0$. so the statement is False.",
+    "**E.** → True\n\n$$q(-2) = \\dfrac{1}{2}(-2)^{5} = \\dfrac{1}{2}(-32) = -16$$\n\nThe claim matches, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 98,
+   "solution_overview": "Direct evaluation of $Ax^{r}$ at concrete inputs, including fractional, negative, and zero exponents.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-99",
+   "case_id": "MATH 8.99",
+   "title": "Exam-style tasks - 2",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = Ax^{3}$ with $A > 0$, then $f(2x) = 8f(x)$ for every $x$.",
+    "If $v(r) = \\dfrac{4}{3}\\pi r^{3}$ models ball volume, scaling the radius by $k = 2$ multiplies volume by 8.",
+    "If $T(e) = 8e^{3/2}$ for $e > 0$, then $\\dfrac{T(4e)}{T(e)} = 4$.",
+    "If $w(L) = cL^{2}$ for constant $c$, doubling $L$ multiplies $w$ by 4, independent of $c$.",
+    "If $f(x) = x^{1/2}$ for $x > 0$, then $\\dfrac{f(9x)}{f(x)} = 3$ for every $x > 0$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$f(2x) = A(2x)^{3} = 8Ax^{3} = 8f(x)$$\n\nThe identity holds for every $x$, so the statement is True.",
+    "**B.** → True\n\nVolume scales as $r^{3}$, so the factor is $2^{3} = 8$. so the statement is True.",
+    "**C.** → False\n\n$$\\dfrac{T(4e)}{T(e)} = 4^{3/2} = 8 \\ne 4$$\n\nThe claimed factor 4 is wrong, so the statement is False.",
+    "**D.** → True\n\n$$\\dfrac{w(2L)}{w(L)} = 4$$\n\nindependent of $c$. so the statement is True.",
+    "**E.** → True\n\n$$\\dfrac{\\sqrt{9x}}{\\sqrt{x}} = 3$$\n\nfor every $x > 0$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 99,
+   "solution_overview": "Scaling laws $k^{r}$ for cubes, spheres, fractional powers, and coefficient cancellation.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-100",
+   "case_id": "MATH 8.100",
+   "title": "Exam-style tasks - 3",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "The equation $2x^{3} = 54$ has unique real solution $x = 3$.",
+    "The equation $5x^{1/2} = 20$ with $x \\ge 0$ has solution $x = 16$.",
+    "The equation $4x^{-1} = 8$ has solution $x = \\dfrac{1}{2}$.",
+    "The equation $x^{4} = 16$ has exactly one real solution.",
+    "If $3x^{2/3} = 12$ and $x$ is required to be positive, then $x = 8$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$x^{3} = 27$$\n\n$$x = 3$$\n\n(the real cube root is unique). so the statement is True.",
+    "**B.** → True\n\n$$x^{1/2} = 4$$\n\n$$x = 16$$\n\nso the statement is True.",
+    "**C.** → True\n\n$$\\dfrac{4}{x} = 8$$\n\n$$x = \\dfrac{1}{2}$$\n\nso the statement is True.",
+    "**D.** → False\n\n$x^{4} = 16$ has two real solutions $x = \\pm 2$, not exactly one. so the statement is False.",
+    "**E.** → True\n\n$$x^{2/3} = 4$$\n\n$$x^{1/3} = 2$$\n\n(positive root)\n\n$$x = 8$$\n\nso the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 100,
+   "solution_overview": "Solving $Ax^{r} = B$, including unique/non-unique real roots and domain restrictions.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-101",
+   "case_id": "MATH 8.101",
+   "title": "Exam-style tasks - 4",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = x^{2}$ and $g(x) = x^{3}$, then $(f \\circ g)(x) = x^{6}$ for all real $x$.",
+    "If $f(x) = 2x^{1/2}$ for $x \\ge 0$ and $g(x) = x^{4}$, then $(f \\circ g)(2) = 4$.",
+    "If $u(x) = x^{-1}$ for $x \\ne 0$ and $v(x) = x^{2}$, then $(u \\circ v)(x) = x^{-2}$ for all $x \\ne 0$.",
+    "If $f(x) = 3x^{2}$ and $g(x) = 2x$, then $(g \\circ f)(x) = 6x^{2}$.",
+    "If $f(x) = x^{1/3}$ and $g(x) = x^{6}$, then $(f \\circ g)(x) = x^{2}$ for all real $x$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$(f \\circ g)(x) = (x^{3})^{2} = x^{6}$$\n\nso the statement is True.",
+    "**B.** → False\n\n$$(f \\circ g)(2) = 2 \\cdot (2^{4})^{1/2} = 2 \\cdot 4 = 8 \\ne 4$$\n\nso the statement is False.",
+    "**C.** → True\n\n$$u(v(x)) = (x^{2})^{-1} = x^{-2}$$\n\nfor $x \\ne 0$. so the statement is True.",
+    "**D.** → True\n\n$$g(f(x)) = 2 \\cdot 3x^{2} = 6x^{2}$$\n\nso the statement is True.",
+    "**E.** → True\n\n$$(x^{6})^{1/3} = x^{2}$$\n\nfor all real $x$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 101,
+   "solution_overview": "Composition of power maps, including order of composition and evaluation traps.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-102",
+   "case_id": "MATH 8.102",
+   "title": "Exam-style tasks - 5",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "The real domain of $f(x) = x^{1/2}$ is $[0, \\infty)$.",
+    "The real domain of $g(x) = x^{2/3}$ is all real $x$.",
+    "The real domain of $h(x) = x^{-1/2}$ is $(0, \\infty)$.",
+    "The range of $f(x) = x^{3}$ over $\\mathbb{R}$ is $[0, \\infty)$.",
+    "For $q(x) = x^{3/2}$ with real values, $x$ must satisfy $x \\ge 0$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nThe real square root requires $x \\ge 0$. so the statement is True.",
+    "**B.** → True\n\n$x^{2/3} = (x^{1/3})^{2}$ is defined for every real $x$. so the statement is True.",
+    "**C.** → True\n\n$x^{-1/2} = 1/\\sqrt{x}$ requires $x > 0$. so the statement is True.",
+    "**D.** → False\n\n$x^{3}$ maps $\\mathbb{R}$ onto $\\mathbb{R}$, so the range is not only $[0, \\infty)$. so the statement is False.",
+    "**E.** → True\n\n$x^{3/2} = (\\sqrt{x})^{3}$ needs $x \\ge 0$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 102,
+   "solution_overview": "Domain and range of fractional powers $x^{p/q}$, including even vs odd roots.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-103",
+   "case_id": "MATH 8.103",
+   "title": "Exam-style tasks - 6",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "For large positive $x$, $x^{3}$ grows faster than $x^{2}$.",
+    "For $0 < x < 1$, $x^{1/2} > x^{2}$.",
+    "If $a(t) = t^{1.1}$ and $b(t) = t^{0.9}$ for $t > 1$, then $a(t) > b(t)$.",
+    "As $x \\to 0^{+}$, $x^{-2}$ tends to $0$.",
+    "Among $x^{1/3}$, $x^{1/2}$, and $x$ on $(0, 1)$, the largest is $x^{1/3}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$\\dfrac{x^{3}}{x^{2}} = x \\to \\infty$$\n\nas $x \\to \\infty$. so the statement is True.",
+    "**B.** → True\n\nOn $(0, 1)$, larger exponents give smaller values, and $\\tfrac{1}{2} < 2$, so $x^{1/2} > x^{2}$. so the statement is True.",
+    "**C.** → True\n\nFor $t > 1$, $r \\mapsto t^{r}$ increases in $r$, and $1.1 > 0.9$. so the statement is True.",
+    "**D.** → False\n\n$$x^{-2} \\to +\\infty$$\n\nas $x \\to 0^{+}$, not to 0. so the statement is False.",
+    "**E.** → True\n\nOn $(0, 1)$, smaller positive exponents give larger values: $x^{1/3} > x^{1/2} > x$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 103,
+   "solution_overview": "Growth comparisons of power functions for large $x$, on $(0,1)$, and near 0.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-104",
+   "case_id": "MATH 8.104",
+   "title": "Exam-style tasks - 7",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = Ax^{r}$ with $A > 0$ and $r = 2$, a 10% increase in $x$ multiplies $f$ by $1.1^{2} = 1.21$, a 21% increase.",
+    "For $f(x) = x^{3}$, a 5% decrease in $x$ (factor $0.95$) multiplies $f$ by less than $0.86$.",
+    "Elasticity of $f(x) = Ax^{r}$ with respect to $x$ equals the constant $r$ (for $x > 0$, $A \\ne 0$).",
+    "If revenue $R = kp^{1-\\varepsilon}$ with $\\varepsilon = 2$, then raising price by 10% reduces revenue by exactly 10%.",
+    "For $Q = L^{0.5}$, a 4% rise in $L$ raises $Q$ by about 2% (first-order elasticity approximation)."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$1.1^{2} = 1.21$$\n\na 21% increase. so the statement is True.",
+    "**B.** → True\n\n$$0.95^{3} = 0.857375 < 0.86$$\n\nso the statement is True.",
+    "**C.** → True\n\n$$\\dfrac{d\\ln f}{d\\ln x} = r$$\n\nElasticity equals $r$. so the statement is True.",
+    "**D.** → False\n\nWith $\\varepsilon = 2$, $R = kp^{-1}$. A 10% price rise multiplies $R$ by $1.1^{-1} \\approx 0.909$, about a 9.1% drop, not exactly 10%. so the statement is False.",
+    "**E.** → True\n\nElasticity $0.5$ times a 4% labor rise is about 2%. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 104,
+   "solution_overview": "Percent-change / elasticity reasoning for power laws.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-105",
+   "case_id": "MATH 8.105",
+   "title": "Exam-style tasks - 8",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $y = 4x^{3}$, then $x = \\left(\\dfrac{y}{4}\\right)^{1/3}$ for real $y$ (unique real cube root).",
+    "If $y = x^{2}$ for $x \\ge 0$, then $x = \\sqrt{y}$ for $y \\ge 0$.",
+    "The inverse of $f(x) = x^{5}$ on $\\mathbb{R}$ is $f^{-1}(y) = y^{1/5}$.",
+    "If $y = 2x^{-1}$ for $x > 0$, then $x = \\dfrac{2}{y}$ for $y > 0$.",
+    "If $y = x^{2}$ for all real $x$, then $x = \\sqrt{y}$ recovers every preimage for $y > 0$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$x^{3} = y/4$$ has a unique real cube root. so the statement is True.",
+    "**B.** → True\n\nRestricting to $x \\ge 0$ makes $x = \\sqrt{y}$ the inverse. so the statement is True.",
+    "**C.** → True\n\nOdd integer powers are bijective on $\\mathbb{R}$. so the statement is True.",
+    "**D.** → True\n\n$$x = 2/y$$\n\nfor $y > 0$. so the statement is True.",
+    "**E.** → False\n\nFor $y > 0$ there are two real preimages $\\pm \\sqrt{y}$. The nonnegative square root recovers only one. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 105,
+   "solution_overview": "Inverse power relations and the need for domain restrictions.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-106",
+   "case_id": "MATH 8.106",
+   "title": "Exam-style tasks - 9",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A Cobb–Douglas production $Q = 2L^{0.5}K^{0.5}$ with $K = 16$ fixed satisfies $Q = 8L^{0.5}$.",
+    "If $Q = AL^{\\alpha}$ with $A = 10$, $\\alpha = 0.4$, and $L = 32$, then $Q = 10 \\cdot 32^{0.4}$.",
+    "Under $Q = AL^{2/3}$, tripling labor multiplies output by $3^{2/3}$.",
+    "If $Q = 5L^{0.8}$ and labor rises 10%, output rises by more than 10%.",
+    "For $Q = AL^{\\alpha}$ with $0 < \\alpha < 1$, doubling $L$ less than doubles $Q$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$Q = 2L^{0.5}\\cdot 4 = 8L^{0.5}$$\n\nso the statement is True.",
+    "**B.** → True\n\nDirect substitution gives $Q = 10 \\cdot 32^{0.4}$. so the statement is True.",
+    "**C.** → True\n\n$$\\dfrac{Q(3L)}{Q(L)} = 3^{2/3}$$\n\nso the statement is True.",
+    "**D.** → False\n\n$$1.1^{0.8} \\approx 1.079 < 1.10$$\n\nOutput rises by less than 10%. so the statement is False.",
+    "**E.** → True\n\n$$2^{\\alpha} < 2$$\n\nwhen $\\alpha < 1$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 106,
+   "solution_overview": "Economic production $Q = AL^{\\alpha}$ and Cobb–Douglas scaling.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-107",
+   "case_id": "MATH 8.107",
+   "title": "Exam-style tasks - 10",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If mass scales with volume and density is constant, and linear size scales by $k = 3$, then mass scales by 27.",
+    "A cube of side $s$ has surface area proportional to $s^{2}$ and volume proportional to $s^{3}$.",
+    "If an animal's metabolic rate scales as mass$^{3/4}$ and mass scales as length$^{3}$, then metabolic rate scales as length$^{9/4}$.",
+    "Doubling all linear dimensions of a solid of constant density multiplies mass by 6.",
+    "If volume $V = cL^{3}$ and mass $m = \\rho V$ with constant $\\rho$, then $m \\propto L^{3}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nMass $\\propto L^{3}$, so factor $3^{3} = 27$. so the statement is True.",
+    "**B.** → True\n\nCube area $\\propto s^{2}$ and volume $\\propto s^{3}$. so the statement is True.",
+    "**C.** → True\n\n$$(L^{3})^{3/4} = L^{9/4}$$\n\nso the statement is True.",
+    "**D.** → False\n\nScale factor 2 multiplies mass by $2^{3} = 8$, not 6. so the statement is False.",
+    "**E.** → True\n\n$$m = \\rho c L^{3} \\propto L^{3}$$\n\nso the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 107,
+   "solution_overview": "Mass/volume/surface scaling with linear size.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-108",
+   "case_id": "MATH 8.108",
+   "title": "Exam-style tasks - 11",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = 6x^{5/2}$ for $x > 0$, then $f(4) = 192$.",
+    "Solving $x^{-3} = 8$ gives $x = \\dfrac{1}{2}$.",
+    "The function $f(x) = (-x)^{1/2}$ is defined for all $x \\le 0$ in the reals.",
+    "If $f(x) = Ax^{r}$ and $f(3) = 81$, $f(1) = 1$ with $A > 0$, then $r = 4$ and $A = 1$.",
+    "If $f(x) = x^{2}$ and $g(x) = 4x^{1/2}$ for $x \\ge 0$, then $(g \\circ f)(3) = 6$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$6 \\cdot 4^{5/2} = 6 \\cdot 32 = 192$$\n\nso the statement is True.",
+    "**B.** → True\n\n$$x^{3} = 1/8 \\Rightarrow x = 1/2$$\n\nso the statement is True.",
+    "**C.** → True\n\nNeed $-x \\ge 0$, i.e. $x \\le 0$. so the statement is True.",
+    "**D.** → True\n\n$$A = f(1) = 1$$\n\n$$3^{r} = 81 = 3^{4}$$\n\nso $r = 4$. so the statement is True.",
+    "**E.** → False\n\n$$(g \\circ f)(3) = 4\\sqrt{9} = 12 \\ne 6$$\n\nso the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 108,
+   "solution_overview": "Mixed evaluation, solving, domain, recovery of $A$ and $r$, composition trap.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-109",
+   "case_id": "MATH 8.109",
+   "title": "Exam-style tasks - 12",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If intensity $I$ satisfies $I = k/d^{2}$ and distance doubles, intensity falls to one fourth.",
+    "If $T^{2} \\propto a^{3}$ and $a$ scales by 4, then $T$ scales by 8.",
+    "If $P = kV^{-1}$ and $V$ is multiplied by 1.25, then $P$ is multiplied by 0.8.",
+    "For $f(x) = x^{-3}$, $\\dfrac{f(2x)}{f(x)} = \\dfrac{1}{8}$.",
+    "If stopping distance $d = kv^{2}$ and speed rises 20%, stopping distance rises 40%."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$I(2d)/I(d) = 1/4$$\n\nso the statement is True.",
+    "**B.** → True\n\n$$4^{3/2} = 8$$\n\nso the statement is True.",
+    "**C.** → True\n\n$$1/1.25 = 0.8$$\n\nso the statement is True.",
+    "**D.** → True\n\n$$2^{-3} = 1/8$$\n\nso the statement is True.",
+    "**E.** → False\n\n$$1.2^{2} = 1.44$$\n\na 44% rise, not 40%. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 109,
+   "solution_overview": "Inverse-square and other applied power scalings; percent trap on squares.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-110",
+   "case_id": "MATH 8.110",
+   "title": "Exam-style tasks - 13",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "The equation $9x^{4/3} = 144$ with $x > 0$ has solution $x = 8$.",
+    "If $f(x) = 2^{x}$ were a power function $Ax^{r}$, then $f(2)/f(1)$ would equal $f(4)/f(2)$. This equality fails for $2^{x}$, so $2^{x}$ is not a power function of that form.",
+    "For $f(x) = 5x^{0}$, the graph is the horizontal line $y = 5$ for $x \\ne 0$.",
+    "Solving $(2x)^{3} = 64$ gives $x = 4$.",
+    "The domain of $x^{-2/3}$ (real-valued) includes $x = 0$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$x^{4/3} = 16$$\n\n$$x^{1/3} = 2$$\n\n$$x = 8$$\n\nso the statement is True.",
+    "**B.** → True\n\nFor $Ax^{r}$ the doubling ratio is constant $2^{r}$. For $2^{x}$ the ratios 2 and 4 differ. so the statement is True.",
+    "**C.** → True\n\n$x^{0} = 1$ for $x \\ne 0$, hence $y = 5$. so the statement is True.",
+    "**D.** → False\n\n$$2x = 4 \\Rightarrow x = 2 \\ne 4$$\n\nso the statement is False.",
+    "**E.** → False\n\n$x^{-2/3}$ is undefined at $x = 0$. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 110,
+   "solution_overview": "Solving fractional powers, recognizing non-power exponentials, zero-exponent graph, domain at 0.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-111",
+   "case_id": "MATH 8.111",
+   "title": "Exam-style tasks - 14",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If cost $C(q) = 50q^{0.8}$, then $C(32)/C(16) = 2^{0.8}$.",
+    "A city's population model $P = P_{0}A^{t}$ is a power function in the time variable $t$ of the form $kt^{r}$.",
+    "If $y = 3x^{-4}$, then a 10% rise in $x$ multiplies $y$ by $1.1^{-4}$.",
+    "For $f(x) = x^{7/2}$ with $x > 0$, $f$ is strictly increasing.",
+    "The equation $x^{2/5} = -2$ has a real solution."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$(32/16)^{0.8} = 2^{0.8}$$\n\nso the statement is True.",
+    "**B.** → False\n\n$P = P_{0}A^{t}$ is exponential in $t$, not a monomial $kt^{r}$. so the statement is False.",
+    "**C.** → True\n\nThe scale factor is $1.1^{-4}$. so the statement is True.",
+    "**D.** → True\n\nExponent $7/2 > 0$, so $f$ is strictly increasing on $(0, \\infty)$. so the statement is True.",
+    "**E.** → False\n\n$x^{2/5} = (x^{1/5})^{2} \\ge 0$, so it cannot equal $-2$. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 111,
+   "solution_overview": "Cost scaling, exponential vs power, negative-exponent percent change, monotonicity, sign of even-over-odd powers.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-112",
+   "case_id": "MATH 8.112",
+   "title": "Exam-style tasks - 15",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $Q = 100L^{0.6}K^{0.4}$ and both $L$ and $K$ are scaled by $t > 0$, then $Q$ scales by $t$.",
+    "Under constant returns $Q = AL^{\\alpha}K^{1-\\alpha}$, doubling both inputs doubles output.",
+    "If only labor doubles in $Q = AL^{0.3}K^{0.7}$, output becomes $2^{0.3}$ times as large.",
+    "For $Q = L^{1/2}$, output at $L = 9$ is 3.",
+    "If $Q = 4L^{3/4}$ and $Q = 32$, then $L = 8$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nExponents sum to 1, so scaling both inputs by $t$ multiplies $Q$ by $t$. so the statement is True.",
+    "**B.** → True\n\nDegree-1 homogeneity: factor $2$. so the statement is True.",
+    "**C.** → True\n\nOnly $L$ scales: factor $2^{0.3}$. so the statement is True.",
+    "**D.** → True\n\n$$\\sqrt{9} = 3$$\n\nso the statement is True.",
+    "**E.** → False\n\n$$L^{3/4} = 8 \\Rightarrow L = 8^{4/3} = 16 \\ne 8$$\n\nso the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 112,
+   "solution_overview": "Cobb–Douglas returns to scale and solving for labor.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-113",
+   "case_id": "MATH 8.113",
+   "title": "Exam-style tasks - 16",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = \\dfrac{1}{8}x^{3}$, then $f^{-1}(y) = 2y^{1/3}$ for real $y$.",
+    "A wire's resistance satisfies $R \\propto L/A$. Under a similar enlargement with linear scale 2 (so $L \\mapsto 2L$ and $A \\mapsto 4A$), resistance is halved.",
+    "For similar solids, surface-to-volume ratio scales as $1/L$.",
+    "If $y = x^{-1/3}$ for $x > 0$, then as $x \\to \\infty$, $y \\to 0$.",
+    "The function $f(x) = |x|^{3}$ equals the power $x^{3}$ for all real $x$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$x^{3} = 8y \\Rightarrow x = 2y^{1/3}$$\n\nso the statement is True.",
+    "**B.** → True\n\n$$R'/R = 2/4 = 1/2$$\n\nResistance is halved. so the statement is True.",
+    "**C.** → True\n\nArea/volume $\\propto L^{2}/L^{3} = 1/L$. so the statement is True.",
+    "**D.** → True\n\n$x^{-1/3} \\to 0$ as $x \\to \\infty$. so the statement is True.",
+    "**E.** → False\n\nFor $x < 0$, $|x|^{3} > 0$ while $x^{3} < 0$. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 113,
+   "solution_overview": "Inverse cube, resistance scaling, surface-to-volume, decay at infinity, absolute-value trap.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-114",
+   "case_id": "MATH 8.114",
+   "title": "Exam-style tasks - 17",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = 3x^{2}$ and $g(x) = 5x^{2}$, then $\\dfrac{f(2x)}{f(x)} = \\dfrac{g(2x)}{g(x)}$.",
+    "If $f(x) = Ax^{r}$ with $A > 0$ and $f(2)/f(1) = 8$, then $r = 3$.",
+    "If $s(t) = 4.9t^{2}$, then $s(3)/s(1) = 9$.",
+    "The real solution set of $x^{4/3} = 81$ is exactly $\\{27\\}$.",
+    "For $0 < a < b$ and $r < 0$, $a^{r} > b^{r}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nBoth ratios equal $2^{2} = 4$. so the statement is True.",
+    "**B.** → True\n\n$$2^{r} = 8 = 2^{3}$$\n\nso $r = 3$. so the statement is True.",
+    "**C.** → True\n\n$$s(3)/s(1) = 9/1 = 9$$\n\nso the statement is True.",
+    "**D.** → False\n\n$$(x^{1/3})^{4} = 81$$\n\n$$x^{1/3} = \\pm 3$$\n\n$$x = 27$$ or $x = -27$\n\nNot exactly $\\{27\\}$. so the statement is False.",
+    "**E.** → True\n\nNegative exponents reverse inequalities on positive bases. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 114,
+   "solution_overview": "Scale-factor independence of $A$, recovering $r$, free-fall ratio, even-power roots, negative-exponent inequality.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-115",
+   "case_id": "MATH 8.115",
+   "title": "Exam-style tasks - 18",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A company's learning curve $H(n) = 40n^{-0.3}$ hours for the $n$-th unit satisfies $H(8)/H(1) = 8^{-0.3}$.",
+    "If price $p$ and demand $q$ meet $q = 100p^{-1.5}$, then elasticity of demand equals $-1.5$.",
+    "For $f(x) = x^{\\pi}$ on $(0, \\infty)$, $f$ is a power function with exponent $\\pi$.",
+    "The equation $x^{0} = 1$ holds for $x = 0$ in the standard real arithmetic used here.",
+    "If $V = \\dfrac{4}{3}\\pi r^{3}$ and $r$ increases 1%, volume increases by about 3% (first-order)."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$H(8)/H(1) = 8^{-0.3}$$\n\nso the statement is True.",
+    "**B.** → True\n\nFor $q = Ap^{r}$, elasticity is $r = -1.5$. so the statement is True.",
+    "**C.** → True\n\n$x^{\\pi}$ is a power function with exponent $\\pi$. so the statement is True.",
+    "**D.** → False\n\n$0^{0}$ is undefined in standard real arithmetic; $x^{0} = 1$ is for $x \\ne 0$. so the statement is False.",
+    "**E.** → True\n\nVolume elasticity w.r.t. radius is 3, so about a 3% volume rise. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 115,
+   "solution_overview": "Learning curves, demand elasticity, irrational exponents, zero-power convention, sphere volume sensitivity.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-116",
+   "case_id": "MATH 8.116",
+   "title": "Exam-style tasks - 19",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = 2x^{3} + 5$, then $f$ is a power function of the form $Ax^{r}$.",
+    "Composition $f(x) = (3x^{2})^{1/2}$ for $x \\ge 0$ simplifies to $f(x) = \\sqrt{3}\\, x$.",
+    "Solving $5x^{-2} = 45$ gives $x = \\pm \\dfrac{1}{3}$.",
+    "If mass $m \\propto L^{3}$ and strength of a limb $\\propto$ cross-section $\\propto L^{2}$, then strength/mass scales as $1/L$.",
+    "For $f(x) = x^{-1}$ on $(0, \\infty)$, the inverse function is $f^{-1}(y) = y^{-1}$ on $(0, \\infty)$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\nThe additive constant 5 means it is not a pure monomial $Ax^{r}$. so the statement is False.",
+    "**B.** → True\n\n$$(3x^{2})^{1/2} = \\sqrt{3}\\, x$$\n\nfor $x \\ge 0$. so the statement is True.",
+    "**C.** → True\n\n$$x^{-2} = 9 \\Rightarrow x = \\pm 1/3$$\n\nso the statement is True.",
+    "**D.** → True\n\nStrength/mass $\\propto L^{2}/L^{3} = 1/L$. so the statement is True.",
+    "**E.** → True\n\n$y = 1/x$ inverts to $x = 1/y$ on $(0, \\infty)$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 116,
+   "solution_overview": "Recognizing pure power form, simplifying radicals, negative even powers, biomechanical scaling, reciprocal inverse.",
+   "placeholder": false
+  },
+  {
+   "id": "math-8-117",
+   "case_id": "MATH 8.117",
+   "title": "Exam-style tasks - 20",
+   "subsection": "8.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $f(x) = 7x^{4/5}$ for $x \\ge 0$, then near $x = 1$ the graph is concave down because the exponent lies in $(0, 1)$.",
+    "A 50% cut in $x$ multiplies $x^{3}$ by $1/8$.",
+    "If $Q = 20L^{0.5}$ and $Q$ must reach at least 100, then $L \\ge 25$.",
+    "The graphs of $y = x^{2}$ and $y = x^{4}$ on $(0, 1)$ satisfy $x^{4} < x^{2}$.",
+    "For $f(x) = Ax^{r}$ with $r = -2$ and $A = 3$, $f(0.5) = 6$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nFor $0 < r < 1$, $x^{r}$ is concave down on $(0, \\infty)$. Here $r = 4/5$. so the statement is True.",
+    "**B.** → True\n\n$$0.5^{3} = 1/8$$\n\nso the statement is True.",
+    "**C.** → True\n\n$$20\\sqrt{L} \\ge 100 \\Rightarrow L \\ge 25$$\n\nso the statement is True.",
+    "**D.** → True\n\nOn $(0, 1)$, $x^{4} < x^{2}$. so the statement is True.",
+    "**E.** → False\n\n$$3 \\cdot (0.5)^{-2} = 12 \\ne 6$$\n\nso the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 117,
+   "solution_overview": "Concavity of sublinear powers, scaling cuts, production threshold, ordering on $(0,1)$, evaluation trap.",
+   "placeholder": false
+  }
+ ]
+}
