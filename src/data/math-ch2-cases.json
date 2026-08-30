@@ -151,7 +151,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nMove every term to one side and factor the resulting quadratic form.\n\nAfter rearrangement the difference of the two sides becomes a perfect square or a product whose sign is controlled on the whole real line.\n\nBecause that difference never goes negative (respectively positive), the printed inequality holds identically. So the statement is True.",
-    "**B.** → False\n\nApply the cube-of-a-sum identity and simplify the left-hand side before comparing.\n\nExpand the cube:\n\n$$(r+s)^3=r^3+3r^2s+3rs^2+s^3$$\n\nSubtract the printed terms:\n\n$$(r+s)^3-(r^3+s^3+3rs)=3r^2s+3rs^2-3rs$$\n\nFactor:\n\n$$=3rs(r+s-1)$$\n\nThis differs from the claimed \\(3rs(r+s)\\) by \\(-3rs\\) in general, so the statement is False.",
+    "**B.** → False\n\nApply the cube-of-a-sum identity and simplify the left-hand side before comparing.\n\nExpand the cube:\n\n$$(r+s)^3=r^3+3r^2s+3rs^2+s^3$$\n\nSubtract the printed terms:\n\n$$(r+s)^3-(r^3+s^3+3rs)=3r^2s+3rs^2-3rs$$\n\nFactor:\n\n$$=3rs(r+s-1)$$\n\nThis differs from the claimed $3rs(r+s)$ by $-3rs$ in general, so the statement is False.",
     "**C.** → False\n\nThe wording stops at a single square. Expand $m^2+2n^2$ and compare with $m^4+4n^4$ before accepting the verbal equality.\n\nExpand the printed square:\n\n$$(m^2+2n^2)^2=m^4+4m^2n^2+4n^4$$\n\nThe cross term $4m^2n^2$ is not present in $m^4+4n^4$.\n\nThe Sophie Germain rewrite must subtract $(2mn)^2$ after adding it — the wording stops one step too early.\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**D.** → True\n\nComplete the square on $x^2+6x+11$ by halving the linear coefficient:\n\n$$x^2+6x+11=(x^2+6x+9)+2=(x+3)^2+2$$\n\nSince $(x+3)^2\\ge 0$ for every real $x$, adding $2$ gives $x^2+6x+11\\ge 2$, with equality exactly at $x=-3$.\n\nSo the statement is True.",
     "**E.** → False\n\nThe printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.\n\nDifference of the two sides:\n\n$$c^2+cd-(cd+d^2) = c^2-d^2$$\n\n$$= (c-d)(c+d)$$\n\nThe factorisation $(c-d)(c+d)$ is not a square, so the sign can change.\n\nFor $c=0$, $d=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.\n\nSo the statement is False."
@@ -1079,7 +1079,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nFactor a difference of cubes with the named rule:\n\n$$p^3-q^3=(p-q)(p^2+pq+q^2)$$\n\nMultiplying out the right side gives $(p-q)p^2+(p-q)pq+(p-q)q^2=p^3+p^2q+pq^2-p^2q-pq^2-q^3=p^3-q^3$, the same polynomial as the left side.\n\nSo the statement is True.",
-    "**B.** → False\n\nParse the printed claim and reduce both sides by expanding or factoring.\n\nA mismatch appears: either a missing cross term, a wrong coefficient, or a domain issue.\n\nBecause the reduced forms are not identical, the universal statement is false. So the statement is False.",
+    "**B.** → False\n\nExpand the proposed square completely; a trinomial square creates several cross terms.\n\nExpand:\n\n$$(x^2+2x+2)^2=x^4+4x^3+8x^2+8x+4$$\n\nSubtract the claimed expression:\n\n$$(x^2+2x+2)^2-(x^4+4)=4x^3+8x^2+8x$$\n\nThe difference is not the zero polynomial, so the statement is False.",
     "**C.** → True\n\nGroup the four terms in pairs and pull out a common factor from each pair:\n\n$$uw+uz+vw+vz=u(w+z)+v(w+z)$$\n\n$$=u(w+z)+v(w+z)=(u+v)(w+z)$$\n\nThe regrouped expression matches the printed factorisation exactly.\n\nSo the statement is True.",
     "**D.** → False\n\nExpand the left-hand side fully:\n\n$$(h+k)^2$$\n\nThe expansion produces cross terms that the claimed right-hand side $h^2+k^2$ does not match. Comparing coefficients shows the identity fails in general. So the statement is False.",
     "**E.** → True\n\nThe claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.\n\nBrahmagupta identity:\n\n$$(a^2+n^2)(h^2+k^2)=(mh-nk)^2+(mk+nh)^2$$\n\nThe pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.\n\nBoth sides match as an identity in the four letters, so the statement is True."
@@ -1110,9 +1110,9 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nLeast common denominator of $a$ and $b$ is their product, not their sum $a+b$.\n\nMatching these figures to the claim, the statement is True.",
+    "**A.** → True\n\nUse the least common denominator $ab$ and scale each numerator by the missing factor.\n\nRewrite:\n\n$$\\frac1a+\\frac1b=\\frac{b}{ab}+\\frac{a}{ab}$$\n\nAdd:\n\n$$=\\frac{a+b}{ab}$$\n\nThe combined fraction matches the claim, so the statement is True.",
     "**B.** → True\n\nLeast common denominator of $x$ and $y$ is the product $xy$:\n\n$$\\frac{\\cdots}{x}+\\frac{\\cdots}{y}=\\frac{\\cdots}{xy}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True.",
-    "**C.** → True\n\nOver $hk\\neq 0$ the true combination is $\\frac{h}{k}+\\frac{k}{h}=\\frac{h^2+k^2}{hk}$. Squaring the sum in the numerator would add a cross term $2hk$.\n\nSo the statement is True.",
+    "**C.** → True\n\nUse the product denominator $pq$ and cross-multiply the two numerators.\n\nRewrite:\n\n$$\\frac pq+\\frac qp=\\frac{p^2}{pq}+\\frac{q^2}{pq}$$\n\nAdd:\n\n$$=\\frac{p^2+q^2}{pq}$$\n\nThe recovered numerator and denominator match the claim, so the statement is True.",
     "**D.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$m\\cdot n$$\n\nCombine:\n\n$$\\frac{\\cdots}{m}+\\frac{\\cdots}{n}=\\frac{\\cdots}{mn}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$u\\cdot v$$\n\nCombine:\n\n$$\\frac{\\cdots}{u}+\\frac{\\cdots}{v}=\\frac{\\cdots}{uv}$$\n\nSo the statement is True."
    ],
@@ -1143,10 +1143,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nDifference of squares (or another factorisation) clears the denominator:\n\n$$\\frac{x^2-9}{x-3}$$\n\nThe surviving expression is the true remainder on the stated domain.\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**B.** → True\n\nFactor the numerator as a difference of squares, then cancel on the stated domain.\n\nFactor:\n\n$$t^2-4=(t-2)(t+2)$$\n\nCancel:\n\n$$\\frac{(t-2)(t+2)}{t+2}=t-2\\qquad(t\\ne-2)$$\n\nThe surviving factor is the claimed $t-2$, so the statement is True.",
     "**C.** → True\n\nDifference of squares (or another factorisation) clears the denominator:\n\n$$\\frac{a^2-25}{a-5}$$\n\nThe surviving expression is the true remainder on the stated domain.\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → True\n\nLeast common denominator of $t$ and $u$ is the product $tu$:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True.",
-    "**E.** → False\n\nLeast common denominator of $t$ and $u$ is their product, not their sum $t+u$, so the statement is False."
+    "**E.** → False\n\nFactor the difference of squares before cancelling the nonzero denominator.\n\nFactor and cancel:\n\n$$\\frac{x^2-4}{x-2}=\\frac{(x-2)(x+2)}{x-2}=x+2$$\n\nCompare:\n\n$$(x+2)-(x-2)=4$$\n\nThe quotient is $x+2$, not $x-2$, so the statement is False."
    ],
    "solution_overview": "Five difference-of-squares cancellations, including one sign error.",
    "sort_order": 36,
@@ -1176,7 +1176,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nLeast common denominator of $2b$ and $3a$ is the product $2b3a$:\n\n$$\\frac{\\cdots}{2b}+\\frac{\\cdots}{3a}=\\frac{\\cdots}{2b3a}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True.",
     "**B.** → True\n\nLeast common denominator of $y$ and $4x$ is the product $y4x$:\n\n$$\\frac{\\cdots}{y}+\\frac{\\cdots}{4x}=\\frac{\\cdots}{y4x}$$\n\nAdding numerators over added denominators is not an identity.\n\nMatching these figures to the claim, the statement is True.",
-    "**C.** → True\n\nDifference of squares (or another factorisation) clears the denominator: $\\frac{5p}{q}$. The surviving expression is the true remainder on the stated domain.\n\nSo the statement is True.",
+    "**C.** → True\n\nMultiply the fractions and cancel equal nonzero factors.\n\nMultiply:\n\n$$\\frac{5p}{q}\\cdot\\frac{q}{5p}=\\frac{5pq}{5pq}$$\n\nCancel:\n\n$$=1$$\n\nThe product is exactly the claimed value, so the statement is True.",
     "**D.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$n\\cdot m$$\n\nCombine:\n\n$$\\frac{\\cdots}{n}+\\frac{\\cdots}{m}=\\frac{\\cdots}{nm}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nMultiply the top and bottom of the compound fraction by $xy$ to clear the inner reciprocals:\n\n$$\\dfrac{\\frac1x-\\frac1y}{\\frac1x+\\frac1y}=\\dfrac{xy\\left(\\frac1x-\\frac1y\\right)}{xy\\left(\\frac1x+\\frac1y\\right)}=\\dfrac{y-x}{y+x}$$\n\nClearing denominators this way reproduces the printed right side.\n\nSo the statement is True."
    ],
@@ -1209,8 +1209,8 @@
     "**A.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$x^2-1\\cdot 2(x-1)$$\n\nCombine:\n\n$$\\frac{\\cdots}{x^2-1}+\\frac{\\cdots}{2(x-1)}=\\frac{\\cdots}{x^2-12(x-1)}$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nLeast common denominator of $x^2-1$ and $x-1$ is the product $x^2-1x-1$:\n\n$$\\frac{\\cdots}{x^2-1}+\\frac{\\cdots}{x-1}=\\frac{\\cdots}{x^2-1x-1}$$\n\nAdding numerators over added denominators is not an identity.\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → True\n\nLeast common denominator of $x^2-1$ and $2(x-1)$ is the product $x^2-12(x-1)$:\n\n$$\\frac{\\cdots}{x^2-1}+\\frac{\\cdots}{2(x-1)}=\\frac{\\cdots}{x^2-12(x-1)}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True.",
-    "**D.** → False\n\nDifference of squares (or another factorisation) clears the denominator: $\\frac{1}{x^2-1}$. The surviving expression is the true remainder on the stated domain.\n\nSo the statement is False.",
-    "**E.** → True\n\nLeast common denominator of $x^2-1$ and $x-1$ is their product, not their sum $x^2-1+x-1$, so the statement is True."
+    "**D.** → False\n\nCombine the two proposed partial fractions over $(x-1)(x+1)$.\n\nCombine:\n\n$$\\frac1{x-1}-\\frac1{x+1}=\\frac{(x+1)-(x-1)}{(x-1)(x+1)}$$\n\nSimplify:\n\n$$=\\frac2{x^2-1}$$\n\nThe proposed right side is twice $1/(x^2-1)$, not equal to it, so the statement is False.",
+    "**E.** → True\n\nUse the common denominator $(x-1)(x+1)=x^2-1$.\n\nCombine:\n\n$$\\frac2{x-1}-\\frac2{x+1}=\\frac{2(x+1)-2(x-1)}{x^2-1}$$\n\nSimplify:\n\n$$=\\frac4{x^2-1}$$\n\nThe combined expression matches the claim, so the statement is True."
    ],
    "solution_overview": "Five partial-fraction decompositions with a missing one-half factor on one line.",
    "sort_order": 38,
@@ -1241,7 +1241,7 @@
     "**A.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$4x^2-16\\cdot 2x+4$$\n\nCombine:\n\n$$\\frac{\\cdots}{4x^2-16}+\\frac{\\cdots}{2x+4}=\\frac{\\cdots}{4x^2-162x+4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nThe quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-9m)^2$.\n\nSquare the denominator:\n\n$$(-9m)^2=81m^2$$\n\nThe denominator becomes a positive power of $m$.\n\nReduce the quotient:\n\n$$\\frac{4}{9 m}$$\n\nCancel the common power of the variable against the numerator.\n\nThe printed right-hand side matches the reduced quotient.\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nSo the statement is True.",
-    "**D.** → True\n\nOver $hk\\neq 0$ the true combination is $\\frac{h}{k}+\\frac{k}{h}=\\frac{h^2+k^2}{hk}$. Squaring the sum in the numerator would add a cross term $2hk$.\n\nSo the statement is True.",
+    "**D.** → True\n\nUse the least common denominator $mn$.\n\nRewrite:\n\n$$\\frac mn+\\frac nm=\\frac{m^2}{mn}+\\frac{n^2}{mn}$$\n\nAdd:\n\n$$=\\frac{m^2+n^2}{mn}$$\n\nThis is the claimed symmetric fraction, so the statement is True.",
     "**E.** → False\n\nThe statement is entirely worded. Translate each English phrase into symbols for $k\\neq 0$ before comparing the two sides.\n\nLeft-hand wording:\n\n$$\\frac{2}{k+\\frac{1}{k}}=\\frac{2k}{k^2+1}$$\n\nTwice the reciprocal of $k+\\dfrac{1}{k}$ clears to a single rational expression.\n\nRight-hand wording:\n\n$$\\frac{k}{k^2+1}$$\n\nThe claim's right side must be read from the same verbal description.\n\nThe right-hand wording omits the factor $2$ in the numerator; the two sides disagree only after both have been written in symbols, so the statement is False."
    ],
    "solution_overview": "Five independent fraction claims. A cancelled linear factor is not the remainder; an LCD is a product; striking a letter that is not a factor of every term fails even if a single test point hides the error.",
@@ -1270,9 +1270,9 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nLeast common denominator of $r$ and $s$ is their product, not their sum $r+s$.\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → True\n\nLeast common denominator of $x$ and $x$ is the product $xx$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
-    "**C.** → False\n\nNumerator $(x+2)(x+3)$, so the quotient is $x+2$ for $x\\neq -3$, not $x+1$. So the statement is False.",
+    "**A.** → False\n\nAdding reciprocals requires the product denominator $rs$, not the sum denominator.\n\nCombine correctly:\n\n$$\\frac1r+\\frac1s=\\frac{s+r}{rs}$$\n\nCheck a valid pair:\n\n$$r=s=1\\implies \\frac1r+\\frac1s=2,\\quad \\frac1{r+s}=\\frac12$$\n\nThe two fractions are not identical, so the statement is False.",
+    "**B.** → True\n\nThe denominators already agree, so add only the numerators.\n\nAdd:\n\n$$\\frac3x+\\frac5x=\\frac{3+5}{x}$$\n\nSimplify:\n\n$$=\\frac8x$$\n\nThe result matches the claim, so the statement is True.",
+    "**C.** → False\n\nFactor the numerator and cancel the nonzero factor $x+3$.\n\nFactor:\n\n$$x^2+5x+6=(x+2)(x+3)$$\n\nCancel:\n\n$$\\frac{(x+2)(x+3)}{x+3}=x+2$$\n\nThe quotient is $x+2$, not the claimed $x+1$, so the statement is False.",
     "**D.** → True\n\nFactor the numerator as a difference of squares:\n\n$$x^{2}-16=(x-4)(x+4)$$\n\nCancelling $x-4$ for $x\\neq 4$ leaves $x+4$. So the statement is True.",
     "**E.** → True\n\nLeast common denominator of $3h$ and $6h$ is the product $3h6h$:\n\n$$\\frac{\\cdots}{3h}+\\frac{\\cdots}{6h}=\\frac{\\cdots}{3h6h}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True."
    ],
@@ -1303,9 +1303,9 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nThe numerator of the claimed sum has the right cross-multiply form, but the denominator is $a+b$ instead of $ab$. Clear with the product denominator first.\n\nCorrect combination:\n\n$$\\frac{1}{a}+\\frac{1}{b}=\\frac{1b+1a}{ab}$$\n\nOnly $ab$ is the common denominator for unrelated linear factors.\n\nThe printed denominator $a+b$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → False\n\nLeast common denominator of $x^2-1$ and $1+x$ is the product $x^2-11+x$: $\\frac{\\cdots}{x^2-1}+\\frac{\\cdots}{1+x}=\\frac{\\cdots}{x^2-11+x}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False.",
+    "**B.** → False\n\nRewrite every term over the common denominator $(x-1)(x+1)$.\n\nCombine numerators:\n\n$$\\frac{7x-1-2(x-1)+3(x+1)+(x+1)}{x^2-1}$$\n\nCollect:\n\n$$=\\frac{9x+5}{x^2-1}$$\n\nRewrite the claim:\n\n$$\\frac7{x-1}=\\frac{7x+7}{x^2-1}$$\n\nThe numerators $9x+5$ and $7x+7$ are not identical, so the statement is False.",
     "**C.** → True\n\nThe words describe a partial-fraction split of $\\dfrac{1}{x^2-1}$. Translate into symbols, then clear the proposed difference of fractions.\n\nTarget rational expression:\n\n$$\\frac{1}{x^2-1}$$\n\nThe denominator is a difference of squares away from $x=\\pm 1$.\n\nProposed decomposition:\n\n$$\\dfrac{1}{2}\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)=\\frac{1}{x^2-1}$$\n\nEach partial term carries half the numerator, as the wording requires.\n\nClearing reproduces the original rational expression with the correct numerator, so the statement is True.",
-    "**D.** → True\n\nCommon denominator $ab$ yields $\\dfrac{a^{2}+b^{2}}{ab}$. So the statement is True.",
+    "**D.** → True\n\nUse the common denominator $ab$ and scale each numerator.\n\nCombine:\n\n$$\\frac ab+\\frac ba=\\frac{a^2+b^2}{ab}$$\n\nThe result is exactly the claimed fraction, so the statement is True.",
     "**E.** → True\n\nLeast common denominator of $x^2-1$ and $x+1$ is the product $x^2-1x+1$:\n\n$$\\frac{\\cdots}{x^2-1}+\\frac{\\cdots}{x+1}=\\frac{\\cdots}{x^2-1x+1}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True."
    ],
    "solution_overview": "A letter may be cancelled only when it is a factor of every term. Splitting a sum over a shared denominator is legal; keeping a cancelled linear factor as the remainder is not.",
@@ -1334,11 +1334,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nLeast common denominator of $r$ and $s$ is their product, not their sum $r+s$.\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → True\n\nLeast common denominator of $z$ and $z+1$ is the product $zz+1$: $\\frac{\\cdots}{z}+\\frac{\\cdots}{z+1}=\\frac{\\cdots}{zz+1}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
+    "**A.** → False\n\nThe least common denominator of $r$ and $s$ is $rs$.\n\nCombine:\n\n$$\\frac1r+\\frac1s=\\frac{r+s}{rs}$$\n\nCounterexample:\n\n$$r=s=1\\implies \\frac{r+s}{rs}=2\\ne\\frac12=\\frac1{r+s}$$\n\nThe proposed denominator gives a different value, so the statement is False.",
+    "**B.** → True\n\nClear the inner denominator by rewriting the sum in the outer denominator.\n\nCombine the denominator:\n\n$$1+\\frac1z=\\frac{z+1}{z}$$\n\nInvert:\n\n$$\\frac1{1+\\frac1z}=\\frac1{(z+1)/z}=\\frac{z}{z+1}$$\n\nThe collapsed fraction matches the claim, so the statement is True.",
     "**C.** → False\n\nLeast common denominator of $t$ and $t+1$ is the product $tt+1$:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{t+1}=\\frac{\\cdots}{tt+1}$$\n\nAdding numerators over added denominators is not an identity.\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**D.** → True\n\nThe words describe a partial-fraction split of $\\dfrac{8}{x^2-1}$. Translate into symbols, then clear the proposed difference of fractions.\n\nTarget rational expression:\n\n$$\\frac{8}{x^2-1}$$\n\nThe denominator is a difference of squares away from $x=\\pm 1$.\n\nProposed decomposition:\n\n$$4\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)=\\frac{8}{x^2-1}$$\n\nEach partial term carries half the numerator, as the wording requires.\n\nClearing reproduces the original rational expression with the correct numerator, so the statement is True.",
-    "**E.** → False\n\nThe correct numerator is $a^{2}+b^{2}$, not $a+b$. So the statement is False."
+    "**E.** → False\n\nUse the product denominator $ab$; the numerators acquire another factor of their own variable.\n\nCombine:\n\n$$\\frac ab+\\frac ba=\\frac{a^2+b^2}{ab}$$\n\nCompare numerators:\n\n$$(a^2+b^2)-(a+b)\\not\\equiv0$$\n\nThe claim uses $a+b$ instead of the required $a^2+b^2$, so the statement is False."
    ],
    "solution_overview": "A continued unit fraction is cleared from the inside. Plus and minus nests produce $z/(z+1)$ and $t/(t-1)$ respectively; swapping a cleared nest with its reciprocal, or dropping a binomial cross term, both fail.",
    "sort_order": 42,
@@ -1366,9 +1366,9 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nLeast common denominator of $x-2$ and $x+2$ is the product $x-2x+2$: $\\frac{\\cdots}{x-2}+\\frac{\\cdots}{x+2}=\\frac{\\cdots}{x-2x+2}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
-    "**B.** → True\n\nCommon denominator $x^{2}-4$ gives $\\dfrac{(x+2)-(x-2)}{x^{2}-4}=\\dfrac{4}{x^{2}-4}$. So the statement is True.",
-    "**C.** → True\n\nLeast common denominator of $p$ and $q$ is their product, not their sum $p+q$.\n\nComparing this value with the claim shows the statement is True.",
+    "**A.** → True\n\nCombine the difference over $(x-2)(x+2)$.\n\nCombine:\n\n$$\\frac1{x-2}-\\frac1{x+2}=\\frac{(x+2)-(x-2)}{(x-2)(x+2)}$$\n\nSimplify:\n\n$$=\\frac4{x^2-4}$$\n\nThe result matches the claim, so the statement is True.",
+    "**B.** → True\n\nUse the difference-of-squares denominator and subtract the scaled numerators.\n\nCombine:\n\n$$\\frac1{x-2}-\\frac1{x+2}=\\frac{x+2-(x-2)}{x^2-4}$$\n\nCollect:\n\n$$=\\frac4{x^2-4}$$\n\nThis is the claimed fraction, so the statement is True.",
+    "**C.** → True\n\nUse the least common denominator $pq$.\n\nScale the terms:\n\n$$\\frac4p+\\frac5q=\\frac{4q}{pq}+\\frac{5p}{pq}$$\n\nAdd:\n\n$$=\\frac{4q+5p}{pq}$$\n\nBoth numerator and denominator agree with the claim, so the statement is True.",
     "**D.** → True\n\nThe stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\\pm 2)$ factor.\n\nDifference of squares:\n\n$$4x^2-16=4(x-2)(x+2)$$\n\nThe quadratic denominator splits into the two linear factors the claim will test.\n\nLinear factor:\n\n$$2x+4=2(x+2)$$\n\nThe inner denominator shares the $(x+2)$ factor with the quadratic.\n\nRewrite the division:\n\n$$\\frac{8p^2b}{4(x-2)(x+2)}\\cdot\\frac{2(x+2)}{4pb}$$\n\nDivision becomes multiplication by the reciprocal; like factors can now cancel.\n\nReduced form:\n\n$$\\frac{p}{x - 2}$$\n\nOnly the surviving linear factor in the denominator determines the final claim.\n\nAfter cancelling $(x+2)$ the surviving linear factor is $(x-2)$, so the statement is True.",
     "**E.** → False\n\nDespite the long surrounding prose, the mathematical content is a single identity claim. Verify it with the named elementary rule.\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nSo the statement is False."
    ],
@@ -1401,7 +1401,7 @@
     "**A.** → True\n\nLeast common denominator of $b$ and $a$ is the product $ba$:\n\n$$\\frac{\\cdots}{b}+\\frac{\\cdots}{a}=\\frac{\\cdots}{ba}$$\n\nAdding numerators over added denominators is not an identity.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$u\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{u}+\\frac{\\cdots}{u}=\\frac{\\cdots}{uu}$$\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → False\n\nLeast common denominator of $v$ and $v^2$ is the product $vv^2$:\n\n$$\\frac{\\cdots}{v}+\\frac{\\cdots}{v^2}=\\frac{\\cdots}{vv^2}$$\n\nAdding numerators over added denominators is not an identity, so the statement is False.",
-    "**D.** → False\n\nDifference of squares (or another factorisation) clears the denominator: $\\frac{5y^2-45}{y-3}$. The surviving expression is the true remainder on the stated domain.\n\nSo the statement is False.",
+    "**D.** → False\n\nFactor the quotient that supplies the recorded remainder, then cancel on its domain.\n\nFactor:\n\n$$\\frac{5y^2-45}{y-3}=\\frac{5(y-3)(y+3)}{y-3}$$\n\nCancel:\n\n$$=5(y+3)=5y+15$$\n\nThe actual remainder is $5y+15$, not $5y-15$, so the statement is False.",
     "**E.** → True\n\nThe quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-6q)^2$.\n\nSquare the denominator:\n\n$$(-6q)^2=36q^2$$\n\nThe denominator becomes a positive power of $q$.\n\nReduce the quotient:\n\n$$\\frac{2}{3 q}$$\n\nCancel the common power of the variable against the numerator.\n\nThe printed right-hand side matches the reduced quotient, so the statement is True."
    ],
    "solution_overview": "A binomial square always produces a doubled cross term. The combination $h/k+k/h-2$ is a genuine square in the numerator; keeping a cancelled factor $y-3$ as the remainder is not.",
@@ -1430,11 +1430,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nMultiply numerator and denominator by $x$: $\\dfrac{2}{x+\\frac{1}{x}}=\\dfrac{2x}{x^{2}+1}$. So the statement is True.",
-    "**B.** → False\n\nThe left side is $\\dfrac{p+q}{pq}$, which equals $\\dfrac{1}{p+q}$ only in special cases, not identically. So the statement is False.",
-    "**C.** → False\n\nPartial fractions yield $\\dfrac{1/2}{x-1}-\\dfrac{1/2}{x+1}$, so a factor $\\tfrac12$ is missing on the right-hand side. So the statement is False.",
-    "**D.** → True\n\nLCD $x^{2}-1$: $\\dfrac{2(x+1)+3(x-1)}{x^{2}-1}=\\dfrac{5x-1}{x^{2}-1}$. So the statement is True.",
-    "**E.** → False\n\nPolynomial division (or splitting) gives $\\dfrac{x^{3}-8}{x}=x^{2}-\\dfrac{8}{x}$.\n\nThe printed right-hand side inserts an extra linear term $2x$ and flips the sign of the remainder, so it does not match. So the statement is False."
+    "**A.** → True\n\nMultiply the compound denominator and numerator by $x$ to clear its inner fraction.\n\nClear:\n\n$$\\frac2{x+\\frac1x}\\cdot\\frac{x}{x}=\\frac{2x}{x^2+1}$$\n\nThe cleared form matches the claim, so the statement is True.",
+    "**B.** → False\n\nUse the common denominator $pq$ rather than adding denominators.\n\nCombine:\n\n$$\\frac1p+\\frac1q=\\frac{p+q}{pq}$$\n\nCompare:\n\n$$\\frac{p+q}{pq}\\ne\\frac1{p+q}\\quad\\text{in general}$$\n\nThe proposed fraction is not an identity, so the statement is False.",
+    "**C.** → False\n\nCombine the proposed partial fractions over $x^2-1$.\n\nCombine:\n\n$$\\frac1{x-1}-\\frac1{x+1}=\\frac{(x+1)-(x-1)}{x^2-1}$$\n\nSimplify:\n\n$$=\\frac2{x^2-1}$$\n\nA factor of $1/2$ is needed to recover the left side, so the statement is False.",
+    "**D.** → True\n\nUse the common denominator $(x-1)(x+1)$.\n\nCombine:\n\n$$\\frac2{x-1}+\\frac3{x+1}=\\frac{2(x+1)+3(x-1)}{x^2-1}$$\n\nCollect:\n\n$$=\\frac{5x-1}{x^2-1}$$\n\nThe reduced numerator matches the claim, so the statement is True.",
+    "**E.** → False\n\nSplit the numerator term by term over $x$.\n\nDivide:\n\n$$\\frac{x^3-8}{x}=x^2-\\frac8x$$\n\nCompare:\n\n$$\\left(x^2+2x+\\frac8x\\right)-\\left(x^2-\\frac8x\\right)=2x+\\frac{16}{x}$$\n\nThe claimed linear term and remainder sign are wrong, so the statement is False."
    ],
    "solution_overview": "Twice the reciprocal of a sum of unit fractions is $2hk/(h+k)$, which is not the arithmetic mean $(h+k)/2$. Striking a letter from only one term of a numerator still fails.",
    "sort_order": 45,
@@ -1463,10 +1463,10 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFactor $x(3x-1)/x=3x-1$ for $x\\neq 0$. So the statement is True.",
+    "**A.** → True\n\nFactor $x$ from the numerator and cancel it on the stated domain.\n\nFactor:\n\n$$\\frac{3x^2-x}{x}=\\frac{x(3x-1)}x$$\n\nCancel:\n\n$$=3x-1$$\n\nThe quotient matches the claim, so the statement is True.",
     "**B.** → True\n\nLeast common denominator of $m$ and $n$ is the product $mn$:\n\n$$\\frac{\\cdots}{m}+\\frac{\\cdots}{n}=\\frac{\\cdots}{mn}$$\n\nAdding numerators over added denominators is not an identity.\n\nMatching these figures to the claim, the statement is True.",
-    "**C.** → True\n\nLeast common denominator of $t$ and $u$ is their product, not their sum $t+u$.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nOver $hk\\neq 0$ the true combination is $\\frac{h}{k}+\\frac{k}{h}=\\frac{h^2+k^2}{hk}$. Squaring the sum in the numerator would add a cross term $2hk$.\n\nSo the statement is False.",
+    "**C.** → True\n\nFactor the numerator as a difference of squares.\n\nFactor:\n\n$$f^2-16=(f-4)(f+4)$$\n\nCancel:\n\n$$\\frac{(f-4)(f+4)}{f-4}=f+4\\qquad(f\\ne4)$$\n\nThe surviving factor agrees with the claim, so the statement is True.",
+    "**D.** → False\n\nCombine the two fractions over $hk$, then expand the claimed numerator.\n\nActual sum:\n\n$$\\frac hk+\\frac kh=\\frac{h^2+k^2}{hk}$$\n\nClaimed numerator:\n\n$$(h+k)^2=h^2+2hk+k^2$$\n\nThe claim inserts the extra term $2hk$, so the statement is False.",
     "**E.** → False\n\nDifference of squares (or another factorisation) clears the denominator:\n\n$$\\frac{z^2-36}{z-6}$$\n\nThe surviving expression is the true remainder on the stated domain, so the statement is False."
    ],
    "solution_overview": "A cubic-over-linear difference of cubes cancels to a quadratic whose value at $0$ matches the original fraction. An LCD is still a product; a cancelled linear factor is still not the remainder.",
@@ -1496,9 +1496,9 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nThe verbal decomposition puts the full numerator $5$ on each partial fraction. Clear that difference and compare with $\\dfrac{5}{x^2-1}$.\n\nCombine the printed partials:\n\n$$\\frac{5}{x-1}-\\frac{5}{x+1}=\\frac{25}{x^2-1}$$\n\nThe common denominator $(x-1)(x+1)$ doubles the intended numerator.\n\nTwice the intended numerator appears — the factor $\\tfrac{1}{2}$ was omitted in the wording of each partial term, so the statement is False.",
-    "**B.** → True\n\nLeast common denominator of $(-8s)^2$ and $8s$ is their product, not their sum $(-8s)^2+8s$.\n\nMatching these figures to the claim, the statement is True.",
-    "**C.** → True\n\nLeast common denominator of $x^2$ and $(x+1)^2$ is the product $x^2(x+1)^2$: $\\frac{\\cdots}{x^2}+\\frac{\\cdots}{(x+1)^2}=\\frac{\\cdots}{x^2(x+1)^2}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
-    "**D.** → False\n\nClearing the inner reciprocals by multiplying by $xy$ gives $\\dfrac{y-x}{y+x}$, not $\\dfrac{x-y}{x+y}$: the numerator picks up a sign flip that the printed claim misses. Since $\\dfrac{y-x}{y+x}=-\\dfrac{x-y}{x+y}$, the two sides are opposite, not equal, in general.\n\nSo the statement is False.",
+    "**B.** → True\n\nSquare the denominator first; its minus sign disappears.\n\nSquare and reduce:\n\n$$\\frac{4(8s)}{(-8s)^2}=\\frac{32s}{64s^2}$$\n\nCancel:\n\n$$=\\frac1{2s}=\\frac4{8s}$$\n\nThe reduced quotient matches the claim, so the statement is True.",
+    "**C.** → True\n\nUse the product denominator $x^2(x+1)^2$ and subtract the scaled numerators.\n\nCombine:\n\n$$\\frac1{x^2}-\\frac1{(x+1)^2}=\\frac{(x+1)^2-x^2}{x^2(x+1)^2}$$\n\nExpand the numerator:\n\n$$(x+1)^2-x^2=2x+1$$\n\nThe resulting fraction is the one claimed, so the statement is True.",
+    "**D.** → False\n\nClear the inner fractions by multiplying the numerator and denominator by $xy$.\n\nClear:\n\n$$\\frac{\\frac1x-\\frac1y}{\\frac1x+\\frac1y}=\\frac{y-x}{y+x}$$\n\nCompare signs:\n\n$$\\frac{y-x}{y+x}=-\\frac{x-y}{x+y}$$\n\nThe claimed ratio has the opposite sign, so the statement is False.",
     "**E.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nSo the statement is True."
    ],
    "solution_overview": "A difference of unit fractions over a difference of reciprocal squares cancels to $tu/(t+u)$. A sign slip on $w-v$, or claiming that a cancelled remainder disagrees with the original at a legal test point, both fail.",
@@ -1527,11 +1527,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nLeast common denominator of $t$ and $u$ is their product, not their sum $t+u$.\n\nMatching these figures to the claim, the statement is True.",
+    "**A.** → True\n\nFactor the difference of squares and cancel $r-5$.\n\nFactor:\n\n$$r^2-25=(r-5)(r+5)$$\n\nCancel:\n\n$$\\frac{(r-5)(r+5)}{r-5}=r+5$$\n\nThe quotient matches the claim, so the statement is True.",
     "**B.** → False\n\nThe verbal decomposition puts the full numerator $7$ on each partial fraction. Clear that difference and compare with $\\dfrac{7}{x^2-1}$.\n\nCombine the printed partials:\n\n$$\\frac{7}{x-1}-\\frac{7}{x+1}=\\frac{27}{x^2-1}$$\n\nThe common denominator $(x-1)(x+1)$ doubles the intended numerator.\n\nTwice the intended numerator appears — the factor $\\tfrac{1}{2}$ was omitted in the wording of each partial term, so the statement is False.",
-    "**C.** → True\n\nDifference of cubes: $t^{3}-1=(t-1)(t^{2}+t+1)$. So the statement is True.",
+    "**C.** → True\n\nUse the difference-of-cubes factorisation.\n\nFactor:\n\n$$t^3-1=(t-1)(t^2+t+1)$$\n\nCancel:\n\n$$\\frac{t^3-1}{t-1}=t^2+t+1\\qquad(t\\ne1)$$\n\nThe quotient is the claimed trinomial, so the statement is True.",
     "**D.** → False\n\nLeast common denominator of $v-3$ and $v+3$ is the product $v-3v+3$:\n\n$$\\frac{\\cdots}{v-3}+\\frac{\\cdots}{v+3}=\\frac{\\cdots}{v-3v+3}$$\n\nAdding numerators over added denominators is not an identity, so the statement is False.",
-    "**E.** → True\n\nLeast common denominator of $w$ and $w-1$ is the product $ww-1$: $\\frac{\\cdots}{w}+\\frac{\\cdots}{w-1}=\\frac{\\cdots}{ww-1}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True."
+    "**E.** → True\n\nRewrite the inner denominator over $w$ and then invert.\n\nCombine:\n\n$$1-\\frac1w=\\frac{w-1}{w}$$\n\nInvert:\n\n$$\\frac1{1-\\frac1w}=\\frac{w}{w-1}$$\n\nThe collapsed expression matches the claim, so the statement is True."
    ],
    "solution_overview": "A compound fraction is two ordinary layers: collapse each, then multiply by the reciprocal of the lower layer. A ratio minus its reciprocal over $v^2-9$ produces $12v$, not $6v$.",
    "sort_order": 48,
@@ -1559,10 +1559,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nLeast common denominator of $2v$ and $9u$ is their product, not their sum $2v+9u$.\n\nMatching these figures to the claim, the statement is False.",
+    "**A.** → False\n\nMultiply numerators and denominators, then cancel the nonzero common factors.\n\nMultiply:\n\n$$\\frac{3u}{2v}\\cdot\\frac{4v^2}{9u}=\\frac{12uv^2}{18uv}$$\n\nCancel:\n\n$$=\\frac{2v}{3}$$\n\nThe product is $2v/3$, not $2v$, so the statement is False.",
     "**B.** → False\n\nThe stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\\pm 2)$ factor.\n\nDifference of squares:\n\n$$4x^2-16=4(x-2)(x+2)$$\n\nThe quadratic denominator splits into the two linear factors the claim will test.\n\nLinear factor:\n\n$$2x+4=2(x+2)$$\n\nThe inner denominator shares the $(x+2)$ factor with the quadratic.\n\nRewrite the division:\n\n$$\\frac{8m^2b}{4(x-2)(x+2)}\\cdot\\frac{2(x+2)}{4mb}$$\n\nDivision becomes multiplication by the reciprocal; like factors can now cancel.\n\nReduced form:\n\n$$\\frac{m}{x - 2}$$\n\nOnly the surviving linear factor in the denominator determines the final claim.\n\nCancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder, so the statement is False.",
     "**C.** → True\n\nDespite the long surrounding prose, the mathematical content is a single identity claim. Verify it with the named elementary rule.\n\nClear to the product denominator:\n\nLCD:\n\n$$2\\cdot 2$$\n\nCombine:\n\n$$\\frac{\\cdots}{2}+\\frac{\\cdots}{2}=\\frac{\\cdots}{22}$$\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → True\n\nDifference of squares (or another factorisation) clears the denominator: $\\frac{v-3}{v^2-8v+15}$. The surviving expression is the true remainder on the stated domain.\n\nSo the statement is True.",
+    "**D.** → True\n\nFactor the quadratic denominator and cancel the common factor $v-3$.\n\nFactor:\n\n$$v^2-8v+15=(v-3)(v-5)$$\n\nCancel:\n\n$$\\frac{v-3}{(v-3)(v-5)}=\\frac1{v-5}$$\n\nThe stated domain makes the cancellation valid and the claim correct, so the statement is True.",
     "**E.** → True\n\nFactor the numerator by grouping, then by a difference of squares:\n\n$$x^3+x^2-4x-4=x^2(x+1)-4(x+1)=(x+1)(x^2-4)$$\n\nDividing by $x^2-4$ cancels that factor and leaves $x+1$, exactly the printed claim.\n\nSo the statement is True."
    ],
    "solution_overview": "The LCD of three distinct linear denominators is their product; expanding produces a quadratic whose constant term is easy to drop. Cancelling one linear factor from a quadratic ratio leaves the other factor, not the cancelled one.",
@@ -1592,7 +1592,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nLeast common denominator of $c$ and $d$ is the product $cd$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
+    "**B.** → True\n\nUse the least common denominator $cd$.\n\nScale:\n\n$$\\frac2c+\\frac4d=\\frac{2d}{cd}+\\frac{4c}{cd}$$\n\nAdd:\n\n$$=\\frac{2d+4c}{cd}$$\n\nThe combined fraction agrees with the claim, so the statement is True.",
     "**C.** → False\n\nThe quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-4s)^2$.\n\nSquare the denominator:\n\n$$(-4s)^2=16s^2$$\n\nThe denominator becomes a positive power of $s$.\n\nReduce the quotient:\n\n$$\\frac{1}{s}$$\n\nCancel the common power of the variable against the numerator.\n\nA minus sign on the right-hand side cannot survive: the squared factor is positive, so the statement is False.",
     "**D.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → False\n\nLeast common denominator of $t$ and $w$ is the product $tw$:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{w}=\\frac{\\cdots}{tw}$$\n\nAdding numerators over added denominators is not an identity, so the statement is False."
@@ -1624,10 +1624,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nThe words describe a partial-fraction split of $\\dfrac{3}{x^2-1}$. Translate into symbols, then clear the proposed difference of fractions.\n\nTarget rational expression:\n\n$$\\frac{3}{x^2-1}$$\n\nThe denominator is a difference of squares away from $x=\\pm 1$.\n\nProposed decomposition:\n\n$$\\dfrac{3}{2}\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)=\\frac{3}{x^2-1}$$\n\nEach partial term carries half the numerator, as the wording requires.\n\nClearing reproduces the original rational expression with the correct numerator.\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → False\n\nThe correct quotient is $t^{2}+t+1$, not $t^{2}-t+1$. So the statement is False.",
+    "**B.** → False\n\nFactor the difference of cubes before cancelling.\n\nFactor:\n\n$$t^3-1=(t-1)(t^2+t+1)$$\n\nCancel:\n\n$$\\frac{t^3-1}{t-1}=t^2+t+1$$\n\nThe middle sign is positive, not the claimed negative sign, so the statement is False.",
     "**C.** → False\n\nThe claim is an identity away from $x=\\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\\dfrac{1}{1-x}$ as $-\\dfrac{1}{x-1}$ before combining like pieces.\n\nRewrite the last term:\n\n$$-\\frac{1}{1-x}=\\frac{1}{x-1}$$\n\nThe reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.\n\nClear denominators:\n\n$$\\frac{2x-2}{x^2-1}-\\frac{1}{x+1}+\\frac{1}{x-1}+\\frac{1}{x-1}$$\n\nAll four pieces now share the same quadratic denominator or a factor of it.\n\nSimplified left-hand side:\n\n$$\\frac{3 x + 1}{x^{2} - 1}$$\n\nOnly after this full reduction can the result be compared with the claimed single fraction.\n\nAfter the full clear the left-hand side is $\\frac{3 x + 1}{x^{2} - 1}$, not $\\dfrac{2}{x-1}$. The discrepancy appears only at the last coefficient, so the statement is False.",
     "**D.** → True\n\nLeast common denominator of $4x^2-16$ and $2x+4$ is the product $4x^2-162x+4$:\n\n$$\\frac{\\cdots}{4x^2-16}+\\frac{\\cdots}{2x+4}=\\frac{\\cdots}{4x^2-162x+4}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True.",
-    "**E.** → False\n\nUse $(h-k)^2=(h+k)^2-4hk$ with the printed symmetric data. $(h-k)^2=(h+k)^2-4hk$.\n\nSo the statement is False."
+    "**E.** → False\n\nCombine the difference over the common denominator $hk$.\n\nCombine:\n\n$$\\frac hk-\\frac kh=\\frac{h^2-k^2}{hk}$$\n\nFactor:\n\n$$=\\frac{(h-k)(h+k)}{hk}$$\n\nThe second factor is $h+k$, not another $h-k$, so the statement is False."
    ],
    "solution_overview": "A stack of negative powers is two ordinary fractions. Multiply by the reciprocal of the lower layer; dropping a leftover factor $x$, or using the wrong common power, both fail. Difference of cubes still cancels to $w^2+3w+9$.",
    "sort_order": 51,
@@ -1655,9 +1655,9 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nLeast common denominator of $t$ and $u$ is their product, not their sum $t+u$.\n\nMatching these figures to the claim, the statement is True.",
+    "**A.** → True\n\nApply the difference-of-squares rule and cancel the permitted factor.\n\nFactor:\n\n$$r^2-16=(r-4)(r+4)$$\n\nCancel:\n\n$$\\frac{(r-4)(r+4)}{r-4}=r+4$$\n\nThe reduced quotient matches the claim, so the statement is True.",
     "**B.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$c\\cdot d$$\n\nCombine:\n\n$$\\frac{\\cdots}{c}+\\frac{\\cdots}{d}=\\frac{\\cdots}{cd}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**C.** → False\n\nGrouping the numerator gives $x^2(x+1)-4(x+1)=(x+1)(x^2-4)$, so the reduced ratio is $x+1$, not $x-1$. The printed claim has the wrong sign on the constant term.\n\nSo the statement is False.",
+    "**C.** → False\n\nFactor the numerator by grouping and then cancel $x^2-4$.\n\nGroup:\n\n$$x^3+x^2-4x-4=x^2(x+1)-4(x+1)$$\n\nFactor:\n\n$$=(x+1)(x^2-4)$$\n\nCancel:\n\n$$\\frac{(x+1)(x^2-4)}{x^2-4}=x+1$$\n\nThe quotient is $x+1$, not $x-1$, so the statement is False.",
     "**D.** → True\n\nCombine each level over a common denominator first:\n\n$$1+\\dfrac1x=\\dfrac{x+1}{x},\\qquad 1-\\dfrac1{x^2}=\\dfrac{x^2-1}{x^2}=\\dfrac{(x-1)(x+1)}{x^2}$$\n\nDividing the first by the second multiplies by $\\dfrac{x^2}{(x-1)(x+1)}$, cancelling $(x+1)$ and one factor of $x$ to leave $\\dfrac{x}{x-1}$.\n\nSo the statement is True.",
     "**E.** → True\n\nLeast common denominator of $(-5t)^2$ and $5t$ is the product $(-5t)^25t$:\n\n$$\\frac{\\cdots}{(-5t)^2}+\\frac{\\cdots}{5t}=\\frac{\\cdots}{(-5t)^25t}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True."
    ],
@@ -1691,7 +1691,7 @@
     "**B.** → False\n\nThe quotient has a squared monomial in the denominator. Square that factor first — the minus sign cannot survive inside $(-7n)^2$.\n\nSquare the denominator:\n\n$$(-7n)^2=49n^2$$\n\nThe denominator becomes a positive power of $n$.\n\nReduce the quotient:\n\n$$\\frac{4}{7 n}$$\n\nCancel the common power of the variable against the numerator.\n\nA minus sign on the right-hand side cannot survive: the squared factor is positive.\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**C.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nSo the statement is False.",
     "**D.** → False\n\nThe numerator of the claimed sum has the right cross-multiply form, but the denominator is $m+n$ instead of $mn$. Clear with the product denominator first.\n\nCorrect combination:\n\n$$\\frac{5}{m}+\\frac{2}{n}=\\frac{5n+2m}{mn}$$\n\nOnly $mn$ is the common denominator for unrelated linear factors.\n\nThe printed denominator $m+n$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.\n\nSo the statement is False.",
-    "**E.** → False\n\nLeast common denominator of $x^2-1$ and $1+x$ is the product $x^2-11+x$: $\\frac{\\cdots}{x^2-1}+\\frac{\\cdots}{1+x}=\\frac{\\cdots}{x^2-11+x}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False."
+    "**E.** → False\n\nFirst use $1-x=-(x-1)$, then combine the four terms.\n\nSimplify the first pair:\n\n$$\\frac{2x-2}{x^2-1}-\\frac1{x+1}=\\frac2{x+1}-\\frac1{x+1}=\\frac1{x+1}$$\n\nSimplify the second pair:\n\n$$\\frac1{x-1}-\\frac1{1-x}=\\frac2{x-1}$$\n\nCombine:\n\n$$\\frac1{x+1}+\\frac2{x-1}=\\frac{3x+1}{x^2-1}$$\n\nThe claim equals $(3x+3)/(x^2-1)$, so its numerator is two too large, so the statement is False."
    ],
    "solution_overview": "The difference $x/(x-3)-x/(x+3)$ simplifies to $6x/(x^2-9)$, which is reciprocal to $(x^2-9)/(6x)$. Adding a ratio to its reciprocal produces $2(u^2+25)/(u^2-25)$, not a linear numerator.",
    "sort_order": 53,
@@ -1720,8 +1720,8 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$p\\cdot q$$\n\nCombine:\n\n$$\\frac{\\cdots}{p}+\\frac{\\cdots}{q}=\\frac{\\cdots}{pq}$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → False\n\nLeast common denominator of $h-k$ and $k-h$ is the product $h-kk-h$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False.",
-    "**C.** → True\n\nExpand $(r+s)^2$ and $(r-s)^2$; subtracting removes the squares and leaves the doubled cross term $4rs$.\n\nComparing this value with the claim shows the statement is True.",
+    "**B.** → False\n\nReverse the second denominator before combining.\n\nRewrite:\n\n$$\\frac{k}{k-h}=-\\frac{k}{h-k}$$\n\nAdd:\n\n$$\\frac{h}{h-k}-\\frac{k}{h-k}=\\frac{h-k}{h-k}=1$$\n\nThe sum is $1$, not $0$, so the statement is False.",
+    "**C.** → True\n\nExpand the two squares; their pure-square terms cancel.\n\nSubtract:\n\n$$(v+5)^2-(v-5)^2=(v^2+10v+25)-(v^2-10v+25)$$\n\nCollect:\n\n$$=20v$$\n\nDivide:\n\n$$\\frac{20v}{2v}=10$$\n\nThe quotient is the claimed constant, so the statement is True.",
     "**D.** → True\n\nLeast common denominator of $w-z$ and $w-z$ is the product $w-zw-z$:\n\n$$\\frac{\\cdots}{w-z}+\\frac{\\cdots}{w-z}=\\frac{\\cdots}{w-zw-z}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True.",
     "**E.** → True\n\nThe stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\\pm 2)$ factor.\n\nDifference of squares:\n\n$$4x^2-16=4(x-2)(x+2)$$\n\nThe quadratic denominator splits into the two linear factors the claim will test.\n\nLinear factor:\n\n$$2x+4=2(x+2)$$\n\nThe inner denominator shares the $(x+2)$ factor with the quadratic.\n\nRewrite the division:\n\n$$\\frac{8m^2b}{4(x-2)(x+2)}\\cdot\\frac{2(x+2)}{4mb}$$\n\nDivision becomes multiplication by the reciprocal; like factors can now cancel.\n\nReduced form:\n\n$$\\frac{m}{x - 2}$$\n\nOnly the surviving linear factor in the denominator determines the final claim.\n\nAfter cancelling $(x+2)$ the surviving linear factor is $(x-2)$, so the statement is True."
    ],
@@ -1751,11 +1751,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nCombining each level gives $\\dfrac{(x+1)/x}{(x-1)(x+1)/x^2}=\\dfrac{x}{x-1}$ after cancelling $(x+1)$, not $\\dfrac{x}{x+1}$. The printed answer cancelled the wrong factor from the denominator.\n\nSo the statement is False.",
-    "**B.** → False\n\nLeast common denominator of $p$ and $q$ is the product $pq$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False.",
+    "**A.** → False\n\nRewrite the numerator and denominator as ordinary fractions, then multiply by the reciprocal.\n\nRewrite:\n\n$$\\frac{1+\\frac1x}{1-\\frac1{x^2}}=\\frac{(x+1)/x}{(x^2-1)/x^2}$$\n\nFactor and cancel:\n\n$$=\\frac{x(x+1)}{(x-1)(x+1)}=\\frac{x}{x-1}$$\n\nThe denominator is $x-1$, not the claimed $x+1$, so the statement is False.",
+    "**B.** → False\n\nUse the product denominator $pq$ to add the reciprocals.\n\nCombine:\n\n$$\\frac1p+\\frac1q=\\frac{p+q}{pq}$$\n\nCounterexample:\n\n$$p=q=1\\implies 2\\ne\\frac12$$\n\nThe proposed reciprocal of the sum is not identical, so the statement is False.",
     "**C.** → False\n\nThe claim is an identity away from $x=\\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\\dfrac{1}{1-x}$ as $-\\dfrac{1}{x-1}$ before combining like pieces.\n\nRewrite the last term:\n\n$$-\\frac{2}{1-x}=\\frac{2}{x-1}$$\n\nThe reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.\n\nClear denominators:\n\n$$\\frac{9x-3}{x^2-1}-\\frac{1}{x+1}+\\frac{2}{x-1}+\\frac{2}{x-1}$$\n\nAll four pieces now share the same quadratic denominator or a factor of it.\n\nSimplified left-hand side:\n\n$$\\frac{2 \\left(6 x + 1\\right)}{x^{2} - 1}$$\n\nOnly after this full reduction can the result be compared with the claimed single fraction.\n\nAfter the full clear the left-hand side is $\\frac{2 \\left(6 x + 1\\right)}{x^{2} - 1}$, not $\\dfrac{6}{x-1}$. The discrepancy appears only at the last coefficient, so the statement is False.",
     "**D.** → True\n\nFactor the numerator with a leading coefficient of $2$:\n\n$$2x^2-x-1=(2x+1)(x-1)$$\n\nDividing by $(x-1)$ cancels that factor and leaves $2x+1$, matching the printed right side.\n\nSo the statement is True.",
-    "**E.** → True\n\nClear the inner denominators by multiplying numerator and denominator by $x$. So the statement is True."
+    "**E.** → True\n\nClear the inner denominators by multiplying the numerator and denominator by $x$.\n\nClear:\n\n$$\\frac{1+\\frac1x}{1-\\frac1x}=\\frac{x+1}{x-1}$$\n\nThe result matches the claim, so the statement is True."
    ],
    "solution_overview": "Factor both quadratics completely, cancel one shared linear factor, and keep the leftover linear ratio. Difference of cubes produces $w^2+w+1$, not $w^2-w+1$.",
    "sort_order": 55,
@@ -1783,11 +1783,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nFactoring the numerator gives $2x^2-x-1=(2x+1)(x-1)$, so dividing by $(x-1)$ leaves $2x+1$, not $2x-1$. The printed answer has the wrong sign on the constant term.\n\nSo the statement is False.",
+    "**A.** → False\n\nFactor the quadratic numerator and cancel $x-1$.\n\nFactor:\n\n$$2x^2-x-1=(2x+1)(x-1)$$\n\nCancel:\n\n$$\\frac{(2x+1)(x-1)}{x-1}=2x+1$$\n\nThe quotient has $+1$, not the claimed $-1$, so the statement is False.",
     "**B.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nMatching these figures to the claim, the statement is True.",
     "**C.** → True\n\nRewrite the second denominator as $y-x=-(x-y)$ so both terms share a common denominator:\n\n$$\\dfrac{x}{x-y}+\\dfrac{y}{y-x}=\\dfrac{x}{x-y}-\\dfrac{y}{x-y}=\\dfrac{x-y}{x-y}$$\n\nThe numerator equals the denominator, so the ratio is $1$.\n\nSo the statement is True.",
     "**D.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$(h+k)^2\\cdot h-k$$\n\nCombine:\n\n$$\\frac{\\cdots}{(h+k)^2}+\\frac{\\cdots}{h-k}=\\frac{\\cdots}{(h+k)^2h-k}$$\n\nSo the statement is False.",
-    "**E.** → False\n\nLeast common denominator of $t$ and $u$ is the product $tu$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False."
+    "**E.** → False\n\nPolynomial division exposes the nonzero remainder.\n\nDivide:\n\n$$z^2+25=(z+5)(z-5)+50$$\n\nWrite the quotient:\n\n$$\\frac{z^2+25}{z+5}=z-5+\\frac{50}{z+5}$$\n\nThis is not identically $z+5$, so the statement is False."
    ],
    "solution_overview": "Only a genuine expanded square $(t\\pm 3)^2$ cancels to $t\\pm 3$. A sum of squares leaves a leftover cross-term correction $-2xy/(x+y)$.",
    "sort_order": 56,
@@ -1817,8 +1817,8 @@
    "tactical_explanations": [
     "**A.** → False\n\nThe claim is an identity away from $x=\\pm 1$. Put every term over the common denominator $(x-1)(x+1)=x^2-1$, and rewrite $\\dfrac{1}{1-x}$ as $-\\dfrac{1}{x-1}$ before combining like pieces.\n\nRewrite the last term:\n\n$$-\\frac{1}{1-x}=\\frac{1}{x-1}$$\n\nThe reciprocal of $1-x$ carries a minus sign into the $(x-1)$ slot.\n\nClear denominators:\n\n$$\\frac{6x-4}{x^2-1}-\\frac{1}{x+1}+\\frac{2}{x-1}+\\frac{1}{x-1}$$\n\nAll four pieces now share the same quadratic denominator or a factor of it.\n\nSimplified left-hand side:\n\n$$\\frac{8 x}{x^{2} - 1}$$\n\nOnly after this full reduction can the result be compared with the claimed single fraction.\n\nAfter the full clear the left-hand side is $\\frac{8 x}{x^{2} - 1}$, not $\\dfrac{-4}{x-1}$. The discrepancy appears only at the last coefficient.\n\nMatching these figures to the claim, the statement is False.",
     "**B.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$4x^2-16\\cdot 2x+4$$\n\nCombine:\n\n$$\\frac{\\cdots}{4x^2-16}+\\frac{\\cdots}{2x+4}=\\frac{\\cdots}{4x^2-162x+4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**C.** → True\n\nLeast common denominator of $u$ and $v$ is their product, not their sum $u+v$.\n\nSo the statement is True.",
-    "**D.** → False\n\nRewriting $y-x=-(x-y)$ turns the sum into $\\dfrac{x}{x-y}-\\dfrac{y}{x-y}=\\dfrac{x-y}{x-y}=1$, not $0$. Treating the second fraction as if it kept the same sign instead of flipping is the error that produces the wrong claim.\n\nSo the statement is False.",
+    "**C.** → True\n\nUse the least common denominator $uv$.\n\nScale:\n\n$$\\frac3u+\\frac5v=\\frac{3v}{uv}+\\frac{5u}{uv}$$\n\nAdd:\n\n$$=\\frac{3v+5u}{uv}$$\n\nThe result agrees with the claim, so the statement is True.",
+    "**D.** → False\n\nReverse the second denominator and combine like fractions.\n\nRewrite:\n\n$$\\frac{y}{y-x}=-\\frac{y}{x-y}$$\n\nAdd:\n\n$$\\frac{x}{x-y}-\\frac{y}{x-y}=1$$\n\nThe sum is $1$, not $0$, so the statement is False.",
     "**E.** → True\n\nSplit the product in the denominator into a difference of unit fractions and recombine over the common denominator:\n\n$$\\dfrac{1}{x}-\\dfrac{1}{x+1}=\\dfrac{(x+1)-x}{x(x+1)}$$\n\n$$=\\dfrac{1}{x(x+1)}$$\n\nThe numerator collapses to $1$, matching the left side exactly.\n\nSo the statement is True."
    ],
    "solution_overview": "Dividing $h/k-k/h$ by $h/k+k/h$ cancels the shared $hk$ and leaves $(h^2-k^2)/(h^2+k^2)$. Reciprocating that result, or swapping which letter sits with which coefficient, both fail.",
@@ -1847,10 +1847,10 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nAdding the two unit fractions gives $\\dfrac{1}{x}+\\dfrac{1}{x+1}=\\dfrac{2x+1}{x(x+1)}$, not $\\dfrac{1}{x(x+1)}$. The correct decomposition uses a minus sign, $\\dfrac{1}{x}-\\dfrac{1}{x+1}$, so the printed sum is not the right partial-fraction split.\n\nSo the statement is False.",
+    "**A.** → False\n\nCombine the proposed right-hand side over $x(x+1)$.\n\nCombine:\n\n$$\\frac1x+\\frac1{x+1}=\\frac{x+1+x}{x(x+1)}$$\n\nCollect:\n\n$$=\\frac{2x+1}{x(x+1)}$$\n\nIts numerator is not the $1$ on the left, so the statement is False.",
     "**B.** → True\n\nFactor both numerators as differences of squares before multiplying:\n\n$$\\dfrac{(x-2)(x+2)}{x+3}\\cdot\\dfrac{(x-3)(x+3)}{x-2}$$\n\nThe factor $(x-2)$ cancels with the second denominator and $(x+3)$ cancels with the first denominator, leaving $(x+2)(x-3)$, which matches the printed product.\n\nSo the statement is True.",
     "**C.** → False\n\nLeast common denominator of $(-3q)^2$ and $3q$ is the product $(-3q)^23q$:\n\n$$\\frac{\\cdots}{(-3q)^2}+\\frac{\\cdots}{3q}=\\frac{\\cdots}{(-3q)^23q}$$\n\nAdding numerators over added denominators is not an identity.\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**D.** → False\n\nFactoring both numerators gives $\\dfrac{(x-2)(x+2)}{x+3}\\cdot\\dfrac{(x-3)(x+3)}{x-2}$, where $(x-2)$ and $(x+3)$ cancel, leaving $(x+2)(x-3)$. The printed answer keeps the factor $(x+3)$ instead of cancelling it, so it does not match the reduced product.\n\nSo the statement is False.",
+    "**D.** → False\n\nFactor both numerators and cancel only common nonzero factors.\n\nFactor:\n\n$$\\frac{(x-2)(x+2)}{x+3}\\cdot\\frac{(x-3)(x+3)}{x-2}$$\n\nCancel:\n\n$$=(x+2)(x-3)$$\n\nThe surviving second factor is $x-3$, not $x+3$, so the statement is False.",
     "**E.** → False\n\nClear to the common denominator $hk$:\n\nCombine:\n\n$$\\frac{h}{k}+\\frac{k}{h}=\\frac{h^2+k^2}{hk}$$\n\nCompare:\n\n$$\\frac{(h+k)^2}{hk}=\\frac{h^2+2hk+k^2}{hk}$$\n\nThe squared-sum numerator carries an extra $2hk$, so the statement is False."
    ],
    "solution_overview": "Squaring a negative monomial removes the minus sign. Coefficients in the numerator must be counted exactly. The combination $h/k+k/h-2$ is $(h-k)^2/hk$, not $(h+k)^2/hk$.",
@@ -1883,7 +1883,7 @@
     "**B.** → True\n\nThe claim adds two simple fractions in $a$ and $b$. The least common denominator is the product $ab$, not their sum.\n\nClear to one fraction:\n\n$$\\frac{1}{a}+\\frac{1}{b}=\\frac{b+a}{ab}$$\n\nCross-multiply each term before comparing numerator and denominator.\n\nBoth parts of the claimed single fraction match this reduction.\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → True\n\nDividing by a fraction means multiplying by its reciprocal:\n\n$$\\dfrac{x^2-1}{\\dfrac{x+1}{3}}=(x^2-1)\\cdot\\dfrac{3}{x+1}=\\dfrac{3(x-1)(x+1)}{x+1}$$\n\nThe factor $(x+1)$ cancels, leaving $3(x-1)$, exactly as claimed.\n\nSo the statement is True.",
     "**D.** → True\n\nWork from the innermost layer outward:\n\nInner:\n\n$$1+\\frac{1}{x}=\\frac{x+1}{x}$$\n\nReciprocal:\n\n$$\\frac{1}{1+\\frac{1}{x}}=\\frac{x}{x+1}$$\n\nOuter:\n\n$$1+\\frac{x}{x+1}=\\frac{2x+1}{x+1}$$\n\nSo the statement is True.",
-    "**E.** → False\n\nMultiplying by the reciprocal $\\dfrac{3}{x+1}$ gives $\\dfrac{3(x-1)(x+1)}{x+1}=3(x-1)$ after cancelling $(x+1)$, not $3(x+1)$. The printed claim keeps the wrong factor.\n\nSo the statement is False."
+    "**E.** → False\n\nDividing by a fraction means multiplying by its reciprocal.\n\nInvert and multiply:\n\n$$\\frac{x^2-1}{(x+1)/3}=\\frac{3(x-1)(x+1)}{x+1}$$\n\nCancel:\n\n$$=3(x-1)$$\n\nThe result is $3(x-1)$, not $3(x+1)$, so the statement is False."
    ],
    "solution_overview": "Twice the reciprocal of a sum of unit fractions is $2tu/(t+u)$, not the arithmetic mean. A three-layer plus nest of unit fractions simplifies to $(3k+2)/(2k+1)$. Sum of cubes still cancels to $v^2-3v+9$.",
    "sort_order": 59,
@@ -1912,7 +1912,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nMultiply the top and bottom of the compound fraction by $ab$ to clear the inner reciprocals:\n\n$$\\dfrac{\\frac1a-\\frac1b}{\\frac1a+\\frac1b}=\\dfrac{ab\\left(\\frac1a-\\frac1b\\right)}{ab\\left(\\frac1a+\\frac1b\\right)}=\\dfrac{b-a}{b+a}$$\n\nClearing denominators this way reproduces the printed right side.\n\nSo the statement is True.",
-    "**B.** → False\n\nLeast common denominator of $u$ and $v$ is the product $uv$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False.",
+    "**B.** → False\n\nUse the three-factor common denominator $uvw$.\n\nScale and add:\n\n$$\\frac1u+\\frac1v+\\frac1w=\\frac{vw+uw+uv}{uvw}$$\n\nThe numerator consists of pairwise products, not $u+v+w$, so the statement is False.",
     "**C.** → False\n\nThe stacked quotient mixes a difference of squares with a linear factor. Factor every polynomial piece before cancelling any $(x\\pm 2)$ factor.\n\nDifference of squares:\n\n$$4x^2-16=4(x-2)(x+2)$$\n\nThe quadratic denominator splits into the two linear factors the claim will test.\n\nLinear factor:\n\n$$2x+4=2(x+2)$$\n\nThe inner denominator shares the $(x+2)$ factor with the quadratic.\n\nRewrite the division:\n\n$$\\frac{8x^2b}{4(x-2)(x+2)}\\cdot\\frac{2(x+2)}{4xb}$$\n\nDivision becomes multiplication by the reciprocal; like factors can now cancel.\n\nReduced form:\n\n$$\\frac{x}{x - 2}$$\n\nOnly the surviving linear factor in the denominator determines the final claim.\n\nCancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the factor that was cancelled, not the remainder, so the statement is False.",
     "**D.** → True\n\nDespite the long surrounding prose, the mathematical content is a single identity claim. Verify it with the named elementary rule.\n\nClear to the product denominator:\n\nLCD:\n\n$$2\\cdot 2$$\n\nCombine:\n\n$$\\frac{\\cdots}{2}+\\frac{\\cdots}{2}=\\frac{\\cdots}{22}$$\n\nComparing this value with the claim shows the statement is True.",
     "**E.** → False\n\nLeast common denominator of $h^2-k^2$ and $h-k$ is the product $h^2-k^2h-k$:\n\n$$\\frac{\\cdots}{h^2-k^2}+\\frac{\\cdots}{h-k}=\\frac{\\cdots}{h^2-k^2h-k}$$\n\nAdding numerators over added denominators is not an identity, so the statement is False."
@@ -1943,11 +1943,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nClearing the inner reciprocals by multiplying by $ab$ gives $\\dfrac{b-a}{b+a}$, not $\\dfrac{a-b}{a+b}$: the numerator picks up a sign flip that the printed claim misses. Since $\\dfrac{b-a}{b+a}=-\\dfrac{a-b}{a+b}$, the two sides are opposite, not equal, in general.\n\nSo the statement is False.",
-    "**B.** → False\n\nLeast common denominator of $(-6r)^2$ and $6r$ is their product, not their sum $(-6r)^2+6r$.\n\nMatching these figures to the claim, the statement is False.",
-    "**C.** → True\n\nDividing by $\\dfrac{x}{4}$ is multiplying by $\\dfrac{4}{x}$, so $\\dfrac{x}{2}\\cdot\\dfrac{4}{x}=2$. So the statement is True.",
+    "**A.** → False\n\nClear all inner fractions by multiplying the stacked numerator and denominator by $ab$.\n\nClear:\n\n$$\\frac{\\frac1a-\\frac1b}{\\frac1a+\\frac1b}=\\frac{b-a}{b+a}$$\n\nCompare signs:\n\n$$\\frac{b-a}{b+a}=-\\frac{a-b}{a+b}$$\n\nThe proposed ratio has the opposite sign, so the statement is False.",
+    "**B.** → False\n\nSquare the entire denominator before cancelling.\n\nSquare and reduce:\n\n$$\\frac{4(6r)}{(-6r)^2}=\\frac{24r}{36r^2}$$\n\nCancel:\n\n$$=\\frac2{3r}=\\frac4{6r}$$\n\nThe true quotient is positive, not the claimed negative value, so the statement is False.",
+    "**C.** → True\n\nMultiply by the reciprocal of the lower fraction.\n\nDivide:\n\n$$\\frac{x/2}{x/4}=\\frac{x}{2}\\cdot\\frac4x$$\n\nCancel:\n\n$$=2$$\n\nThe stacked quotient equals the claimed value, so the statement is True.",
     "**D.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$p\\cdot q$$\n\nCombine:\n\n$$\\frac{\\cdots}{p}+\\frac{\\cdots}{q}=\\frac{\\cdots}{pq}$$\n\nSo the statement is False.",
-    "**E.** → False\n\nLeast common denominator of $w^2-9$ and $w-3$ is the product $w^2-9w-3$: $\\frac{\\cdots}{w^2-9}+\\frac{\\cdots}{w-3}=\\frac{\\cdots}{w^2-9w-3}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False."
+    "**E.** → False\n\nFactor numerator and denominator before cancelling.\n\nFactor:\n\n$$\\frac{w^2+w-6}{w^2-9}=\\frac{(w+3)(w-2)}{(w+3)(w-3)}$$\n\nCancel:\n\n$$=\\frac{w-2}{w-3}$$\n\nThe numerator is $w-2$, not $w+2$, so the statement is False."
    ],
    "solution_overview": "Factor $x^2-8x+15=(x-5)(x-3)$ and cancel $x-5$ to leave $1/(x-3)$. Keeping the cancelled factor, or swapping a constant in a nearby quadratic ratio, both fail.",
    "sort_order": 61,
@@ -1976,8 +1976,8 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$h(h-k)\\cdot k(k-h)$$\n\nCombine:\n\n$$\\frac{\\cdots}{h(h-k)}+\\frac{\\cdots}{k(k-h)}=\\frac{\\cdots}{h(h-k)k(k-h)}$$\n\nSo the statement is True.",
-    "**B.** → False\n\nLeast common denominator of $c$ and $d$ is their product, not their sum $c+d$.\n\nMatching these figures to the claim, the statement is False.",
-    "**C.** → True\n\nLeast common denominator of $v-w$ and $w-v$ is the product $v-ww-v$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
+    "**B.** → False\n\nAdd the reciprocals over the common denominator $cd$.\n\nCombine:\n\n$$\\frac1c+\\frac1d=\\frac{c+d}{cd}$$\n\nCounterexample:\n\n$$c=d=1\\implies 2\\ne\\frac12$$\n\nThe reciprocal of the sum is not the same expression, so the statement is False.",
+    "**C.** → True\n\nUse $w-v=-(v-w)$ to rewrite the second fraction.\n\nRewrite:\n\n$$\\frac1{w-v}=-\\frac1{v-w}$$\n\nAdd:\n\n$$\\frac1{v-w}+\\frac1{w-v}=0$$\n\nThe opposite unit fractions cancel exactly, so the statement is True.",
     "**D.** → True\n\nFactor the numerator by grouping, then by a difference of squares:\n\n$$t^3+t^2-4t-4=t^2(t+1)-4(t+1)=(t+1)(t^2-4)$$\n\nDividing by $t^2-4$ cancels that factor and leaves $t+1$, exactly the printed claim.\n\nSo the statement is True.",
     "**E.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$4x^2-16\\cdot 2x+4$$\n\nCombine:\n\n$$\\frac{\\cdots}{4x^2-16}+\\frac{\\cdots}{2x+4}=\\frac{\\cdots}{4x^2-162x+4}$$\n\nSo the statement is True."
    ],
@@ -2007,11 +2007,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nGrouping the numerator gives $t^2(t+1)-4(t+1)=(t+1)(t^2-4)$, so the reduced ratio is $t+1$, not $t-1$. The printed claim has the wrong sign on the constant term.\n\nSo the statement is False.",
+    "**A.** → False\n\nFactor the numerator by grouping and cancel the denominator.\n\nGroup:\n\n$$t^3+t^2-4t-4=(t+1)(t^2-4)$$\n\nCancel:\n\n$$\\frac{(t+1)(t^2-4)}{t^2-4}=t+1$$\n\nThe quotient is $t+1$, not $t-1$, so the statement is False.",
     "**B.** → True\n\nCombine each level over a common denominator first:\n\n$$1+\\dfrac1t=\\dfrac{t+1}{t},\\qquad 1-\\dfrac1{t^2}=\\dfrac{t^2-1}{t^2}=\\dfrac{(t-1)(t+1)}{t^2}$$\n\nDividing the first by the second multiplies by $\\dfrac{t^2}{(t-1)(t+1)}$, cancelling $(t+1)$ and one factor of $t$ to leave $\\dfrac{t}{t-1}$.\n\nSo the statement is True.",
-    "**C.** → False\n\nCombining each level gives $\\dfrac{(t+1)/t}{(t-1)(t+1)/t^2}=\\dfrac{t}{t-1}$ after cancelling $(t+1)$, not $\\dfrac{t}{t+1}$. The printed answer cancelled the wrong factor from the denominator.\n\nSo the statement is False.",
+    "**C.** → False\n\nClear the inner powers of $t$ and factor the difference of squares.\n\nRewrite:\n\n$$\\frac{1+\\frac1t}{1-\\frac1{t^2}}=\\frac{(t+1)/t}{(t^2-1)/t^2}$$\n\nCancel:\n\n$$=\\frac{t(t+1)}{(t-1)(t+1)}=\\frac{t}{t-1}$$\n\nThe denominator is $t-1$, not $t+1$, so the statement is False.",
     "**D.** → True\n\nFactor the numerator with a leading coefficient of $2$:\n\n$$2t^2-t-1=(2t+1)(t-1)$$\n\nDividing by $(t-1)$ cancels that factor and leaves $2t+1$, matching the printed right side.\n\nSo the statement is True.",
-    "**E.** → False\n\n$\\dfrac{x}{y}\\cdot\\dfrac{x}{y}=\\dfrac{x^{2}}{y^{2}}$, which equals $1$ only when $|x|=|y|$. So the statement is False."
+    "**E.** → False\n\nDivision by a fraction requires multiplication by its reciprocal.\n\nInvert and multiply:\n\n$$\\frac xy\\div\\frac yx=\\frac xy\\cdot\\frac xy$$\n\nMultiply:\n\n$$=\\frac{x^2}{y^2}$$\n\nThe quotient is not identically $1$, so the statement is False."
    ],
    "solution_overview": "The LCD of three distinct linear denominators is their product. Subtracting reciprocal quadratics keeps both quadratic factors. A difference of reciprocal squares over $(z\\pm 1)^2$ produces $4z/(z^2-1)^2$.",
    "sort_order": 63,
@@ -2039,9 +2039,9 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\n$\\dfrac{x}{x-4}-1=\\dfrac{x-(x-4)}{x-4}=\\dfrac{4}{x-4}$. So the statement is True.",
+    "**A.** → True\n\nPut the two terms over the common denominator $x-4$.\n\nCombine:\n\n$$\\frac{x}{x-4}-1=\\frac{x-(x-4)}{x-4}$$\n\nSimplify:\n\n$$=\\frac4{x-4}$$\n\nThe difference matches the claim, so the statement is True.",
     "**B.** → False\n\nLeast common denominator of $c$ and $d$ is the product $cd$:\n\n$$\\frac{\\cdots}{c}+\\frac{\\cdots}{d}=\\frac{\\cdots}{cd}$$\n\nAdding numerators over added denominators is not an identity.\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**C.** → True\n\nDifference of squares (or another factorisation) clears the denominator: $\\frac{3}{x}$. The surviving expression is the true remainder on the stated domain.\n\nSo the statement is True.",
+    "**C.** → True\n\nClear the inner denominators by multiplying the stacked numerator and denominator by $xy$.\n\nClear:\n\n$$\\frac{\\frac3x-\\frac5y}{\\frac1x+\\frac1y}=\\frac{3y-5x}{y+x}$$\n\nSince $y+x=x+y$, this is the claimed ratio, so the statement is True.",
     "**D.** → True\n\nClear to the product denominator:\n\nLCD:\n\n$$t\\cdot u$$\n\nCombine:\n\n$$\\frac{\\cdots}{t}+\\frac{\\cdots}{u}=\\frac{\\cdots}{tu}$$\n\nSo the statement is True.",
     "**E.** → False\n\nThe numerator of the claimed sum has the right cross-multiply form, but the denominator is $h+k$ instead of $hk$. Clear with the product denominator first.\n\nCorrect combination:\n\n$$\\frac{6}{h}+\\frac{1}{k}=\\frac{6k+1h}{hk}$$\n\nOnly $hk$ is the common denominator for unrelated linear factors.\n\nThe printed denominator $h+k$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.\n\nSo the statement is False."
    ],
@@ -2071,9 +2071,9 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nFactoring the numerator gives $2t^2-t-1=(2t+1)(t-1)$, so dividing by $(t-1)$ leaves $2t+1$, not $2t-1$. The printed answer has the wrong sign on the constant term.\n\nSo the statement is False.",
+    "**A.** → False\n\nFactor the numerator and cancel the nonzero factor $t-1$.\n\nFactor:\n\n$$2t^2-t-1=(2t+1)(t-1)$$\n\nCancel:\n\n$$\\frac{(2t+1)(t-1)}{t-1}=2t+1$$\n\nThe quotient is $2t+1$, not $2t-1$, so the statement is False.",
     "**B.** → True\n\nRewrite the second denominator as $b-a=-(a-b)$ so both terms share a common denominator:\n\n$$\\dfrac{a}{a-b}+\\dfrac{b}{b-a}=\\dfrac{a}{a-b}-\\dfrac{b}{a-b}=\\dfrac{a-b}{a-b}$$\n\nThe numerator equals the denominator, so the ratio is $1$.\n\nSo the statement is True.",
-    "**C.** → True\n\nPolynomial division: $2x+1=2(x-3)+7$, hence the claim. So the statement is True.",
+    "**C.** → True\n\nUse polynomial division by writing the numerator as a multiple of $x-3$ plus a remainder.\n\nDecompose:\n\n$$2x+1=2(x-3)+7$$\n\nDivide:\n\n$$\\frac{2x+1}{x-3}=2+\\frac7{x-3}$$\n\nThe quotient-and-remainder form matches the claim, so the statement is True.",
     "**D.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$4x^2-16\\cdot 2x+4$$\n\nCombine:\n\n$$\\frac{\\cdots}{4x^2-16}+\\frac{\\cdots}{2x+4}=\\frac{\\cdots}{4x^2-162x+4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nSplit the product in the denominator into a difference of unit fractions and recombine over the common denominator:\n\n$$\\dfrac{1}{t}-\\dfrac{1}{t+1}=\\dfrac{(t+1)-t}{t(t+1)}$$\n\n$$=\\dfrac{1}{t(t+1)}$$\n\nThe numerator collapses to $1$, matching the left side exactly.\n\nSo the statement is True."
    ],
@@ -2104,10 +2104,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nThe claim adds two simple fractions in $h$ and $k$. The least common denominator is the product $hk$, not their sum.\n\nClear to one fraction:\n\n$$\\frac{6}{h}+\\frac{1}{k}=\\frac{6k+h}{hk}$$\n\nCross-multiply each term before comparing numerator and denominator.\n\nBoth parts of the claimed single fraction match this reduction, so the statement is True.",
-    "**B.** → False\n\nRewriting $b-a=-(a-b)$ turns the sum into $\\dfrac{a}{a-b}-\\dfrac{b}{a-b}=\\dfrac{a-b}{a-b}=1$, not $0$. Treating the second fraction as if it kept the same sign instead of flipping is the error that produces the wrong claim.\n\nSo the statement is False.",
+    "**B.** → False\n\nReverse the denominator in the second term, then combine.\n\nRewrite:\n\n$$\\frac{b}{b-a}=-\\frac{b}{a-b}$$\n\nAdd:\n\n$$\\frac{a}{a-b}-\\frac{b}{a-b}=1$$\n\nThe sum equals $1$, not $0$, so the statement is False.",
     "**C.** → True\n\nLeast common denominator of $(u-3)^2$ and $(u+3)^2$ is the product $(u-3)^2(u+3)^2$:\n\n$$\\frac{\\cdots}{(u-3)^2}+\\frac{\\cdots}{(u+3)^2}=\\frac{\\cdots}{(u-3)^2(u+3)^2}$$\n\nAdding numerators over added denominators is not an identity.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → True\n\nUse $(v-w)^2=(v+w)^2-4vw$ with the printed symmetric data. $(v-w)^2=(v+w)^2-4vw$.\n\nSo the statement is True.",
-    "**E.** → False\n\nLeast common denominator of $t$ and $u$ is their product, not their sum $t+u$, so the statement is False."
+    "**D.** → True\n\nFactor the denominator as a difference of squares and cancel one factor.\n\nFactor:\n\n$$\\frac{(v-w)^2}{v^2-w^2}=\\frac{(v-w)^2}{(v-w)(v+w)}$$\n\nCancel:\n\n$$=\\frac{v-w}{v+w}$$\n\nThe stated domain permits the cancellation and the result matches, so the statement is True.",
+    "**E.** → False\n\nFactor the numerator and cancel $z-5$.\n\nFactor:\n\n$$z^2-25=(z-5)(z+5)$$\n\nCancel:\n\n$$\\frac{(z-5)(z+5)}{z-5}=z+5$$\n\nThe quotient has $+5$, not the claimed $-5$, so the statement is False."
    ],
    "solution_overview": "A cancellation $t^4-1$ over $t^2-1$ leaves $t^2+1$. A squared sum of unit fractions keeps the cross term $2/xy$. A difference of reciprocal squares over $(u\\pm 3)^2$ produces $12u/(u^2-9)^2$.",
    "sort_order": 66,
@@ -2135,10 +2135,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe remainder is $7$, not $1$: $2(x-3)+7=2x+1$. So the statement is False.",
-    "**B.** → False\n\nLeast common denominator of $c$ and $d$ is the product $cd$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False.",
+    "**A.** → False\n\nPerform polynomial division by isolating the remainder.\n\nDecompose:\n\n$$2x+1=2(x-3)+7$$\n\nDivide:\n\n$$\\frac{2x+1}{x-3}=2+\\frac7{x-3}$$\n\nThe remainder is $7$, not $1$, so the statement is False.",
+    "**B.** → False\n\nUse the product denominator $cd$ when adding the fractions.\n\nCombine:\n\n$$\\frac8c+\\frac3d=\\frac{8d+3c}{cd}$$\n\nCompare denominators:\n\n$$cd\\ne c+d\\quad\\text{in general}$$\n\nThe claim uses the wrong denominator, so the statement is False.",
     "**C.** → False\n\nDifference of cubes leaves three terms in the quotient:\n\nFactor:\n\n$$\\frac{j^3-1331}{j-11}=j^2+11j+121$$\n\nAt the test point:\n\n$$j = 0 \\Rightarrow 121 \\text{ on both sides, but } j$$\n\n$$= 1 \\Rightarrow 133 \\neq 122$$\n\nMatching these figures to the claim, the statement is False.",
-    "**D.** → False\n\nAdding the two unit fractions gives $\\dfrac{1}{t}+\\dfrac{1}{t+1}=\\dfrac{2t+1}{t(t+1)}$, not $\\dfrac{1}{t(t+1)}$. The correct decomposition uses a minus sign, $\\dfrac{1}{t}-\\dfrac{1}{t+1}$, so the printed sum is not the right partial-fraction split.\n\nSo the statement is False.",
+    "**D.** → False\n\nCombine the proposed right side over $t(t+1)$.\n\nCombine:\n\n$$\\frac1t+\\frac1{t+1}=\\frac{t+1+t}{t(t+1)}$$\n\nCollect:\n\n$$=\\frac{2t+1}{t(t+1)}$$\n\nThis does not equal the left side with numerator $1$, so the statement is False.",
     "**E.** → True\n\nFactor both numerators as differences of squares before multiplying:\n\n$$\\dfrac{(t-2)(t+2)}{t+3}\\cdot\\dfrac{(t-3)(t+3)}{t-2}$$\n\nThe factor $(t-2)$ cancels with the second denominator and $(t+3)$ cancels with the first denominator, leaving $(t+2)(t-3)$, which matches the printed product.\n\nSo the statement is True."
    ],
    "solution_overview": "Two candidate simplifications of a compound fraction need not be equal: one may be the reciprocal of the other. The plus combination $h/k+k/h+2$ really is $(h+k)^2/hk$; mixing a difference-of-cubes quadratic with a sum-of-cubes quadratic is not.",
@@ -2167,10 +2167,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nFactoring both numerators gives $\\dfrac{(t-2)(t+2)}{t+3}\\cdot\\dfrac{(t-3)(t+3)}{t-2}$, where $(t-2)$ and $(t+3)$ cancel, leaving $(t+2)(t-3)$. The printed answer keeps the factor $(t+3)$ instead of cancelling it, so it does not match the reduced product.\n\nSo the statement is False.",
-    "**B.** → True\n\nDifference of squares cancels $a-b$. So the statement is True.",
+    "**A.** → False\n\nFactor both differences of squares and cancel common factors.\n\nFactor:\n\n$$\\frac{(t-2)(t+2)}{t+3}\\cdot\\frac{(t-3)(t+3)}{t-2}$$\n\nCancel:\n\n$$=(t+2)(t-3)$$\n\nThe surviving factor is $t-3$, not $t+3$, so the statement is False.",
+    "**B.** → True\n\nApply the difference-of-squares identity and cancel the permitted factor.\n\nFactor:\n\n$$a^2-b^2=(a-b)(a+b)$$\n\nCancel:\n\n$$\\frac{(a-b)(a+b)}{a-b}=a+b$$\n\nThe quotient matches the claim, so the statement is True.",
     "**C.** → False\n\nClear to the product denominator:\n\nLCD:\n\n$$4x^2-16\\cdot 2x+4$$\n\nCombine:\n\n$$\\frac{\\cdots}{4x^2-16}+\\frac{\\cdots}{2x+4}=\\frac{\\cdots}{4x^2-162x+4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**D.** → False\n\nLeast common denominator of $x$ and $x^2$ is the product $xx^2$: $\\frac{\\cdots}{x}+\\frac{\\cdots}{x^2}=\\frac{\\cdots}{xx^2}$. Adding numerators over added denominators is not an identity.\n\nSo the statement is False.",
+    "**D.** → False\n\nApply the square-of-a-sum identity to the reciprocal term.\n\nExpand:\n\n$$\\left(1+\\frac1x\\right)^2=1+\\frac2x+\\frac1{x^2}$$\n\nCompare:\n\n$$\\left(1+\\frac1x\\right)^2-\\left(1+\\frac1{x^2}\\right)=\\frac2x$$\n\nThe missing middle term is nonzero on the stated domain, so the statement is False.",
     "**E.** → True\n\nLeast common denominator of $h^2$ and $k^2$ is the product $h^2k^2$:\n\n$$\\frac{\\cdots}{h^2}+\\frac{\\cdots}{k^2}=\\frac{\\cdots}{h^2k^2}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True."
    ],
    "solution_overview": "A closing mix: a cubic with the wrong middle sign that a test at $0$ fails to catch, an LCD-as-sum trap, a minus nest, a binomial square missing its cross term, and a genuine difference of reciprocal squares.",
