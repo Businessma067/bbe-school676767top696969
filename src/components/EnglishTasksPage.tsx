@@ -973,7 +973,8 @@ function EnglishPracticeAside({
 }
 
 function parseDifficulty(level: string): { n: number; max: number } {
-  const [rawN, rawMax] = level.split("/");
+  const frac = level.match(/\\frac\{(\d+)\}\{(\d+)\}/);
+  const [rawN, rawMax] = frac ? [frac[1], frac[2]] : level.split("/");
   const max = Math.max(1, Number(rawMax) || 5);
   const n = Math.max(0, Math.min(Number(rawN) || 0, max));
   return { n, max };
