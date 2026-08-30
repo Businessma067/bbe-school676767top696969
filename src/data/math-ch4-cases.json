@@ -5379,127 +5379,127 @@
   {
    "id": "math-4-169",
    "case_id": "MATH 4.169",
-   "title": "Same-base exponential claims",
+   "title": "A quadratic hidden behind base three",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The exponential equation $9^{x} - 4 \\cdot 3^{x+1} + 27 = 0$ is studied. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $2^{x} = 8$ is an odd number.",
-    "The equation $3^{x+1} = 81$ has a positive integer solution.",
-    "The solution of $5^{2x} = 125$ is an integer.",
-    "The solution of $2^{x} = \\frac{1}{16}$ is negative.",
-    "The equation $7^{x-1} = 1$ has no solution."
+    "The substitution $u = 3^{x}$ turns the equation into the quadratic equation $u^{2} - 12u + 27 = 0$.",
+    "The sum of all real solutions of the equation equals $3$.",
+    "Both roots of the auxiliary quadratic equation are admissible values of $3^{x}$.",
+    "The equation possesses a strictly negative real solution.",
+    "If the constant term $27$ is replaced by $30$, the resulting equation has no real solution."
    ],
    "answer_key": [
     true,
     true,
-    false,
     true,
+    false,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo solve the equation $2^{x} = 8$, we express the right-hand side as a power of base $2$:\n\n$$8 = 2^{3}$$\n\nSubstituting this back into the original equation yields:\n\n$$2^{x} = 2^{3}$$\n\nEquating the exponents gives:\n\n$$x = 3$$\n\nThe integer $3$ is odd, so the statement is True.",
-    "**B.** → True\n\nTo solve the equation $3^{x+1} = 81$, we express the constant $81$ as a power of base $3$:\n\n$$81 = 3^{4}$$\n\nSubstituting this into the equation gives:\n\n$$3^{x+1} = 3^{4}$$\n\nEquating the exponents yields a linear equation:\n\n$$x + 1 = 4$$\n\nSubtracting $1$ from both sides gives:\n\n$$x = 3$$\n\nThe value $x = 3$ is a positive integer, so the statement is True.",
-    "**C.** → False\n\nTo solve $5^{2x} = 125$, we rewrite the right-hand side with base $5$:\n\n$$125 = 5^{3}$$\n\nEquating the powers gives:\n\n$$5^{2x} = 5^{3}$$\n\nEquating exponents leads to:\n\n$$2x = 3$$\n\nDividing both sides by $2$ gives:\n\n$$x = \\frac{3}{2}$$\n\nThe fraction $\\frac{3}{2}$ is not an integer, so the statement is False.",
-    "**D.** → True\n\nTo solve $2^{x} = \\frac{1}{16}$, we express the fraction as a power of $2$ using negative exponents:\n\n$$\\frac{1}{16} = \\frac{1}{2^{4}} = 2^{-4}$$\n\nEquating the bases gives:\n\n$$2^{x} = 2^{-4}$$\n\nEquating exponents yields:\n\n$$x = -4$$\n\nThe value $-4$ is strictly less than zero, so the statement is True.",
-    "**E.** → False\n\nTo solve $7^{x-1} = 1$, we rewrite $1$ as a power of $7$ using the zero exponent rule $7^{0} = 1$:\n\n$$7^{x-1} = 7^{0}$$\n\nEquating the exponents yields:\n\n$$x - 1 = 0$$\n\nSolving for $x$ gives:\n\n$$x = 1$$\n\nThe equation has the unique real solution $x = 1$, so the statement is False."
+    "**A.** → True\n\nTo turn the equation into polynomial form, we rewrite both exponential terms with base $3$:\n\n$$9^{x} = (3^{2})^{x} = (3^{x})^{2}$$\n\n$$3^{x+1} = 3 \\cdot 3^{x}$$\n\nSubstituting these expressions into $9^{x} - 4 \\cdot 3^{x+1} + 27 = 0$ gives:\n\n$$(3^{x})^{2} - 12 \\cdot 3^{x} + 27 = 0$$\n\nWith $u = 3^{x}$ this is exactly the quadratic equation:\n\n$$u^{2} - 12u + 27 = 0$$\n\nThe stated auxiliary equation is obtained, so the statement is True.",
+    "**B.** → True\n\nWe solve the auxiliary quadratic equation by factoring:\n\n$$u^{2} - 12u + 27 = 0$$\n\n$$(u - 3)(u - 9) = 0$$\n\nThe roots are $u_{1} = 3$ and $u_{2} = 9$. Returning to the substitution $u = 3^{x}$:\n\n$$3^{x} = 3 \\implies x_{1} = 1$$\n\n$$3^{x} = 9 \\implies x_{2} = 2$$\n\nThe sum of the real solutions is:\n\n$$x_{1} + x_{2} = 1 + 2 = 3$$\n\nThe sum equals $3$, so the statement is True.",
+    "**C.** → True\n\nThe exponential function $u = 3^{x}$ takes strictly positive values only, so a root of the auxiliary equation is admissible exactly when it is strictly positive.\n\nThe roots of $u^{2} - 12u + 27 = 0$ are:\n\n$$u_{1} = 3, \\qquad u_{2} = 9$$\n\nBoth numbers satisfy $u > 0$, hence each of them yields a real value of $x$ through $x = \\log_{3} u$. Both auxiliary roots are therefore admissible, so the statement is True.",
+    "**D.** → False\n\nA solution is strictly negative if it satisfies $x < 0$.\n\nThe complete solution set of the equation is:\n\n$$x_{1} = 1, \\qquad x_{2} = 2$$\n\nBoth values are strictly positive, and no further real solution exists because the auxiliary quadratic equation has exactly two roots. There is no negative solution, so the statement is False.",
+    "**E.** → False\n\nReplacing the constant term produces the auxiliary equation:\n\n$$u^{2} - 12u + 30 = 0$$\n\nIts discriminant is:\n\n$$\\Delta = (-12)^{2} - 4 \\cdot 1 \\cdot 30 = 144 - 120 = 24$$\n\nSince $\\Delta > 0$, there are two distinct real roots:\n\n$$u_{1,2} = \\frac{12 \\pm \\sqrt{24}}{2} = 6 \\pm \\sqrt{6}$$\n\nBecause $\\sqrt{6} < 6$, both roots are strictly positive, so both give real solutions $x = \\log_{3}(6 \\pm \\sqrt{6})$. The modified equation therefore has two real solutions rather than none, so the statement is False."
    ],
-   "solution_overview": "An exponential equation of the form $b^{f(x)} = c$ with a positive base $b \\neq 1$ can be solved by rewriting the right-hand side as a power of the same base, $c = b^{k}$. Because the exponential function $f(u) = b^u$ is strictly monotonic on $\\mathbb{R}$, it is one-to-one, allowing the exponents to be equated directly:\n\n$$b^{f(x)} = b^{k} \\iff f(x) = k$$\n\nApplying this property transforms each exponential equation into an equivalent linear algebraic equation in $x$.",
-   "difficulty_level": "3/5",
+   "solution_overview": "Every equation of the form $b^{2x} + p\\,b^{x} + q = 0$ with $b>0,\\ b \\neq 1$ becomes a quadratic equation under the substitution $u = b^{x}$, because $b^{2x} = (b^{x})^{2}$. The substitution is only reversible for strictly positive roots, since $b^{x} > 0$ holds for every real $x$:\n\n$$b^{x} = u > 0 \\iff x = \\log_{b} u$$",
+   "difficulty_level": "5/5",
    "sort_order": 169,
    "placeholder": false
   },
   {
    "id": "math-4-170",
    "case_id": "MATH 4.170",
-   "title": "Reading logarithmic equations",
+   "title": "A quadratic in the logarithm itself",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $(\\log_{2} x)^{2} - 3\\log_{2} x + 2 = 0$ is studied on its natural domain. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $\\log_{2} x = 5$ is larger than $30$.",
-    "The equation $\\ln x = 0$ has no solution, because a logarithm never vanishes.",
-    "The solution of $\\log_{3}(x - 2) = 2$ is a two-digit integer.",
-    "The solution of $\\log_{4} x = \\frac{1}{2}$ is greater than $3$.",
-    "In the equation $\\log_{x} 81 = 4$ the unknown base is smaller than $4$."
+    "The natural domain of the equation is the set of all strictly positive real numbers.",
+    "The substitution $t = \\log_{2} x$ transforms the equation into a quadratic equation with roots $t = 1$ and $t = 2$.",
+    "The product of all real solutions of the equation equals $8$.",
+    "One of the solutions of the equation is smaller than $1$.",
+    "If the constant term $2$ is replaced by $3$, the resulting equation still has two distinct real solutions."
    ],
    "answer_key": [
     true,
-    false,
+    true,
     true,
     false,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo solve a basic logarithmic equation, we rewrite it in exponential form. For the equation $\\log_{2} x = 5$, the base is $2$ and the exponent is $5$:\n\n$$x = 2^5$$\n\n$$x = 32$$\n\nSince $32 > 30$, the solution is strictly larger than $30$, so the statement is True.",
-    "**B.** → False\n\nThe natural logarithm $\\ln x$ denotes the logarithm with base $e$. Converting the equation $\\ln x = 0$ to its exponential equivalent yields:\n\n$$x = e^0$$\n\n$$x = 1$$\n\nSince $x = 1$ is positive and satisfies $\\ln 1 = 0$, the equation possesses a valid real solution, so the statement is False.",
-    "**C.** → True\n\nWe convert the logarithmic equation with base $3$ into an exponential equation:\n\n$$x - 2 = 3^2$$\n\n$$x - 2 = 9$$\n\nAdding $2$ to both sides gives the solution:\n\n$$x = 11$$\n\nThe value $11$ is a positive two-digit integer, so the statement is True.",
-    "**D.** → False\n\nRewriting the logarithmic equation in exponential form gives the value of $x$:\n\n$$x = 4^{\\frac{1}{2}}$$\n\n$$x = \\sqrt{4}$$\n\n$$x = 2$$\n\nThe solution $x = 2$ is strictly less than $3$, so the statement is False.",
-    "**E.** → True\n\nIn this equation, the unknown appears as the logarithmic base $x$, which must be positive and not equal to $1$. Converting to exponential form gives:\n\n$$x^4 = 81$$\n\nTaking the positive real fourth root of both sides yields:\n\n$$x = 81^{\\frac{1}{4}}$$\n\n$$x = 3$$\n\nThe resulting base $x = 3$ is smaller than $4$, so the statement is True."
+    "**A.** → True\n\nThe expression $\\log_{2} x$ is defined exactly when its argument is strictly positive:\n\n$$x > 0$$\n\nNo other restriction appears, since the equation contains only powers of $\\log_{2} x$ and constants. The natural domain is therefore $x \\in (0, \\infty)$, which is the set of all strictly positive real numbers, so the statement is True.",
+    "**B.** → True\n\nSetting $t = \\log_{2} x$ turns the equation into:\n\n$$t^{2} - 3t + 2 = 0$$\n\nFactoring the quadratic expression gives:\n\n$$(t - 1)(t - 2) = 0$$\n\nThe roots are $t_{1} = 1$ and $t_{2} = 2$, exactly as claimed, so the statement is True.",
+    "**C.** → True\n\nTransferring the two values of $t$ back through $x = 2^{t}$ gives the solutions:\n\n$$x_{1} = 2^{1} = 2$$\n\n$$x_{2} = 2^{2} = 4$$\n\nThe product of the solutions is:\n\n$$x_{1} \\cdot x_{2} = 2 \\cdot 4 = 8$$\n\nThe product equals $8$, so the statement is True.",
+    "**D.** → False\n\nA solution is smaller than $1$ precisely when the corresponding logarithm is negative, that is when $t < 0$.\n\nThe auxiliary roots are $t_{1} = 1$ and $t_{2} = 2$, and both are strictly positive. The resulting solutions are:\n\n$$x_{1} = 2, \\qquad x_{2} = 4$$\n\nBoth exceed $1$, so no solution lies below $1$ and the statement is False.",
+    "**E.** → False\n\nReplacing the constant term gives the auxiliary equation:\n\n$$t^{2} - 3t + 3 = 0$$\n\nIts discriminant is:\n\n$$\\Delta = (-3)^{2} - 4 \\cdot 1 \\cdot 3 = 9 - 12 = -3$$\n\nBecause $\\Delta < 0$, the quadratic equation has no real root $t$, and consequently the logarithmic equation has no real solution at all. It does not have two distinct solutions, so the statement is False."
    ],
-   "solution_overview": "A logarithmic equation relates a base, an argument, and an exponent. For a positive base $b \\neq 1$ and a positive argument $z > 0$, the fundamental equivalence between logarithmic and exponential forms is given by:\n\n$$\\log_b(z) = y \\iff z = b^y$$\n\nEvaluating the claims requires converting each logarithmic equation into its corresponding exponential form and solving for the unknown quantity.",
-   "difficulty_level": "4/5",
+   "solution_overview": "An equation that contains a logarithm only through the expression $t = \\log_{b} x$ is reduced to an algebraic equation in $t$. Each admissible value of $t$ is transferred back with the definition of the logarithm:\n\n$$\\log_{b} x = t \\iff x = b^{t}$$\n\nBecause $b^{t} > 0$ for every real $t$, every real value of $t$ produces exactly one admissible $x$.",
+   "difficulty_level": "5/5",
    "sort_order": 170,
    "placeholder": false
   },
   {
    "id": "math-4-171",
    "case_id": "MATH 4.171",
-   "title": "Powers of two and three on both sides",
+   "title": "Different bases on the two sides",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The exponential equation $5^{x} = 2^{x+3}$ is studied over the real numbers. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $4^{x} = 8$ is not an integer.",
-    "The solution of $8^{x} = 4^{x+1}$ is an even number.",
-    "The solution of $2^{3x} = 4^{x-1}$ is positive.",
-    "The solution of $9^{x} = 27$ lies strictly between $1$ and $2$.",
-    "The solution of $16^{x} = 8^{x+1}$ is smaller than the solution of $4^{x} = 8$."
+    "Taking logarithms of both sides leads to the linear equation $x\\log\\left(\\frac{5}{2}\\right) = 3\\log 2$.",
+    "The equation has exactly one real solution.",
+    "The unique solution can be written as $x = \\dfrac{3\\ln 2}{\\ln 5 - \\ln 2}$.",
+    "The unique solution is an integer.",
+    "The unique solution is strictly greater than $3$."
    ],
    "answer_key": [
     true,
     true,
-    false,
     true,
+    false,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo solve $4^{x} = 8$, rewrite both sides with the common base $2$.\n\n$$(2^2)^x = 2^3$$\n\n$$2^{2x} = 2^3$$\n\nEquating exponents gives a linear equation:\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2}$$\n\nThe value $\\frac{3}{2} = 1.5$ is a rational number but not an integer, so the statement is True.",
-    "**B.** → True\n\nTo solve $8^{x} = 4^{x+1}$, express both sides as powers of $2$.\n\n$$(2^3)^x = (2^2)^{x+1}$$\n\n$$2^{3x} = 2^{2(x+1)}$$\n\nEquating the exponents gives:\n\n$$3x = 2x + 2$$\n\n$$x = 2$$\n\nThe number $2$ is divisible by $2$, so it is an even number, so the statement is True.",
-    "**C.** → False\n\nTo solve $2^{3x} = 4^{x-1}$, express the right side with base $2$.\n\n$$2^{3x} = (2^2)^{x-1}$$\n\n$$2^{3x} = 2^{2(x-1)}$$\n\nEquating the exponents yields:\n\n$$3x = 2(x - 1)$$\n\n$$3x = 2x - 2$$\n\n$$x = -2$$\n\nThe solution is $x = -2$, which is strictly negative, so the statement is False.",
-    "**D.** → True\n\nTo solve $9^{x} = 27$, rewrite both sides with base $3$.\n\n$$(3^2)^x = 3^3$$\n\n$$3^{2x} = 3^3$$\n\nEquating exponents gives:\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2}$$\n\nSince $1 < \\frac{3}{2} < 2$, the value $1.5$ lies strictly between $1$ and $2$, so the statement is True.",
-    "**E.** → False\n\nFirst, solve $16^{x} = 8^{x+1}$ by converting both sides to base $2$.\n\n$$(2^4)^x = (2^3)^{x+1}$$\n\n$$2^{4x} = 2^{3(x+1)}$$\n\n$$4x = 3x + 3$$\n\n$$x = 3$$\n\nNext, solve $4^x = 8$ with base $2$.\n\n$$(2^2)^x = 2^3$$\n\n$$2x = 3$$\n\n$$x = \\frac{3}{2} = 1.5$$\n\nComparing the two solutions, $3 > 1.5$, so the first solution is greater than the second, so the statement is False."
+    "**A.** → True\n\nTaking the decadic logarithm of both sides of $5^{x} = 2^{x+3}$ and using the power rule gives:\n\n$$x \\log 5 = (x + 3)\\log 2$$\n\nExpanding the right-hand side and collecting the terms containing $x$ yields:\n\n$$x \\log 5 - x \\log 2 = 3\\log 2$$\n\n$$x(\\log 5 - \\log 2) = 3\\log 2$$\n\nBy the quotient rule, $\\log 5 - \\log 2 = \\log\\left(\\frac{5}{2}\\right)$, so the equation reads:\n\n$$x\\log\\left(\\frac{5}{2}\\right) = 3\\log 2$$\n\nThis is exactly the stated linear equation, so the statement is True.",
+    "**B.** → True\n\nThe equation has been reduced to the linear form:\n\n$$x\\log\\left(\\frac{5}{2}\\right) = 3\\log 2$$\n\nBecause $\\frac{5}{2} > 1$, the coefficient satisfies $\\log\\left(\\frac{5}{2}\\right) \\neq 0$. A linear equation with a non-zero coefficient has exactly one real solution:\n\n$$x = \\frac{3\\log 2}{\\log\\left(\\frac{5}{2}\\right)}$$\n\nThere is exactly one real solution, so the statement is True.",
+    "**C.** → True\n\nThe solution may be expressed with any logarithm base, since the change-of-base factor cancels in the quotient. Using natural logarithms from the start gives:\n\n$$x \\ln 5 = (x + 3)\\ln 2$$\n\n$$x(\\ln 5 - \\ln 2) = 3\\ln 2$$\n\n$$x = \\frac{3\\ln 2}{\\ln 5 - \\ln 2}$$\n\nThis is precisely the stated expression, so the statement is True.",
+    "**D.** → False\n\nWe estimate the numerical value of the solution:\n\n$$x = \\frac{3\\ln 2}{\\ln 5 - \\ln 2} \\approx \\frac{3 \\cdot 0.6931}{1.6094 - 0.6931} = \\frac{2.0794}{0.9163} \\approx 2.269$$\n\nThe value lies strictly between the integers $2$ and $3$, so it is not an integer and the statement is False.",
+    "**E.** → False\n\nTo compare the solution with $3$ without a calculator, we test the value $x = 3$ in the original equation:\n\n$$5^{3} = 125, \\qquad 2^{3+3} = 2^{6} = 64$$\n\nAt $x = 3$ the left-hand side already exceeds the right-hand side. Since $5^{x}$ grows faster than $2^{x+3}$, the two sides can only be equal for a smaller value of $x$; indeed $x \\approx 2.269 < 3$. The solution is therefore not greater than $3$, so the statement is False."
    ],
-   "solution_overview": "Exponential equations of the form $b^{f(x)} = c^{g(x)}$ where both bases $b$ and $c$ share a common prime base $a$ are solved by rewriting each power in base $a$ and equating the resulting exponents. Using the power rule $(a^m)^n = a^{m \\cdot n}$, the equation transforms into:\n\n$$a^{m \\cdot f(x)} = a^{k \\cdot g(x)}$$\n\nSince the exponential function with base $a > 0$ and $a \\neq 1$ is strictly monotonic and thus injective, equating the exponents yields a linear equation:\n\n$$m \\cdot f(x) = k \\cdot g(x)$$\n\nSolving this linear relation provides the unique real solution $x$ in each case.",
-   "difficulty_level": "4/5",
+   "solution_overview": "When the two sides of an exponential equation carry different bases, no common base can be produced by rewriting powers. The standard technique is to take the logarithm of both sides, which converts each exponent into a factor:\n\n$$\\log\\left(a^{f(x)}\\right) = f(x)\\log a$$\n\nThe result is a linear equation in $x$, so such an equation has exactly one real solution whenever the two bases differ.",
+   "difficulty_level": "5/5",
    "sort_order": 171,
    "placeholder": false
   },
   {
    "id": "math-4-172",
    "case_id": "MATH 4.172",
-   "title": "Logarithm laws in one equation",
+   "title": "An exponential term and its reciprocal",
    "subsection": "4.4",
-   "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $3^{x} + 3^{1-x} = 4$ is studied over the real numbers. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $\\log x + \\log 4 = \\log 20$ is a prime number.",
-    "The solution of $\\log x - \\log 3 = \\log 4$ is smaller than $10$.",
-    "The equation $2\\log x = \\log 36$ has two solutions of opposite sign.",
-    "The equation $\\log(x^{2}) = 2\\log 5$ has two solutions.",
-    "In the equation $\\log_{2} x + \\log_{2}(x-2) = 3$ one candidate must be rejected because of the domain."
+    "The substitution $u = 3^{x}$ transforms the equation into the quadratic equation $u^{2} - 4u + 3 = 0$.",
+    "The equation has exactly two distinct real solutions.",
+    "The sum of all real solutions of the equation equals $1$.",
+    "Both real solutions of the equation are strictly positive.",
+    "If the right-hand side $4$ is replaced by $2\\sqrt{3}$, the resulting equation has exactly one real solution."
    ],
    "answer_key": [
     true,
-    false,
-    false,
     true,
+    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nWe determine the domain of the equation $\\log x + \\log 4 = \\log 20$, which requires the argument of $\\log x$ to be strictly positive:\n\n$$x > 0$$\n\nUsing the product rule for logarithms, we combine the terms on the left side:\n\n$$\\log(4x) = \\log 20$$\n\nSince the logarithmic function is injective, we equate the arguments:\n\n$$4x = 20$$\n\n$$x = 5$$\n\nThe value $x = 5$ satisfies the domain restriction $x > 0$. Because $5$ is a prime number, the solution is prime, so the statement is True.",
-    "**B.** → False\n\nWe determine the domain of the equation $\\log x - \\log 3 = \\log 4$, which requires:\n\n$$x > 0$$\n\nUsing the quotient rule for logarithms, we combine the left side:\n\n$$\\log\\left(\\frac{x}{3}\\right) = \\log 4$$\n\nEquating the arguments gives:\n\n$$\\frac{x}{3} = 4$$\n\n$$x = 12$$\n\nThe solution $x = 12$ satisfies the domain condition $x > 0$. Since $12$ is greater than $10$, it is not smaller than $10$, so the statement is False.",
-    "**C.** → False\n\nWe determine the domain of the original expression $2\\log x = \\log 36$. For $\\log x$ to be defined, the argument must be strictly positive:\n\n$$x > 0$$\n\nApplying the power rule on the left side gives:\n\n$$\\log(x^2) = \\log 36$$\n\nEquating the arguments yields:\n\n$$x^2 = 36$$\n\n$$x = 6 \\quad \\text{or} \\quad x = -6$$\n\nBecause $x = -6$ violates the domain requirement $x > 0$, the only admissible solution is $x = 6$. The equation has exactly one solution rather than two solutions of opposite sign, so the statement is False.",
-    "**D.** → True\n\nWe determine the domain of the equation $\\log(x^2) = 2\\log 5$. The argument $x^2$ must be strictly positive, which requires:\n\n$$x \\neq 0$$\n\nWe simplify the right side using the power rule for logarithms:\n\n$$2\\log 5 = \\log(5^2) = \\log 25$$\n\nEquating the arguments gives:\n\n$$x^2 = 25$$\n\nSolving for $x$ yields two candidate values:\n\n$$x = 5 \\quad \\text{or} \\quad x = -5$$\n\nBoth values satisfy $x \\neq 0$ and yield valid arguments in the original equation. Therefore, the equation has two distinct solutions, so the statement is True.",
-    "**E.** → True\n\nWe determine the domain of the equation $\\log_2 x + \\log_2(x-2) = 3$. Both logarithmic arguments must be strictly positive:\n\n$$x > 0 \\quad \\text{and} \\quad x - 2 > 0 \\implies x > 2$$\n\nUsing the product rule for base-$2$ logarithms, we combine the terms on the left side:\n\n$$\\log_2(x(x-2)) = 3$$\n\nConverting from logarithmic to exponential form gives:\n\n$$x(x-2) = 2^3$$\n\n$$x^2 - 2x - 8 = 0$$\n\nFactoring the quadratic equation gives:\n\n$$(x - 4)(x + 2) = 0$$\n\nThis yields two algebraic candidates:\n\n$$x = 4 \\quad \\text{or} \\quad x = -2$$\n\nWhile $x = 4$ lies in the domain $x > 2$, the candidate $x = -2$ falls outside the domain and must be rejected, so the statement is True."
+    "**A.** → True\n\nUsing the quotient rule for powers we rewrite the second term:\n\n$$3^{1-x} = \\frac{3^{1}}{3^{x}} = \\frac{3}{3^{x}}$$\n\nWith $u = 3^{x}$ the equation becomes:\n\n$$u + \\frac{3}{u} = 4$$\n\nBecause $u > 0$, we may multiply both sides by $u$:\n\n$$u^{2} + 3 = 4u$$\n\n$$u^{2} - 4u + 3 = 0$$\n\nThis is exactly the stated quadratic equation, so the statement is True.",
+    "**B.** → True\n\nFactoring the auxiliary equation gives:\n\n$$u^{2} - 4u + 3 = 0$$\n\n$$(u - 1)(u - 3) = 0$$\n\nThe roots are $u_{1} = 1$ and $u_{2} = 3$, and both are strictly positive, hence admissible. Transferring them back:\n\n$$3^{x} = 1 \\implies x_{1} = 0$$\n\n$$3^{x} = 3 \\implies x_{2} = 1$$\n\nThe equation has the two distinct real solutions $0$ and $1$, so the statement is True.",
+    "**C.** → True\n\nThe real solutions of the equation are:\n\n$$x_{1} = 0, \\qquad x_{2} = 1$$\n\nTheir sum is:\n\n$$x_{1} + x_{2} = 0 + 1 = 1$$\n\nThe sum equals $1$, so the statement is True.",
+    "**D.** → False\n\nA real number is strictly positive when it is greater than zero.\n\nThe solutions are $x_{1} = 0$ and $x_{2} = 1$. The value $x_{1} = 0$ is neither positive nor negative, so it is not true that both solutions are strictly positive, and the statement is False.",
+    "**E.** → True\n\nWith the new right-hand side the auxiliary equation reads:\n\n$$u + \\frac{3}{u} = 2\\sqrt{3}$$\n\n$$u^{2} - 2\\sqrt{3}\\,u + 3 = 0$$\n\nIts discriminant is:\n\n$$\\Delta = \\left(2\\sqrt{3}\\right)^{2} - 4 \\cdot 1 \\cdot 3 = 12 - 12 = 0$$\n\nThe quadratic equation therefore has the single double root:\n\n$$u = \\sqrt{3}$$\n\nBecause $\\sqrt{3} = 3^{1/2} > 0$, it is admissible and gives:\n\n$$3^{x} = 3^{1/2} \\implies x = \\frac{1}{2}$$\n\nThere is exactly one real solution, so the statement is True."
    ],
-   "solution_overview": "Logarithmic equations are solved by applying the fundamental laws of logarithms alongside strict domain restrictions. For any logarithm $\\log_b y$, the argument must satisfy $y > 0$. The core operational rules for combining and simplifying terms are:\n\n$$\\log_b u + \\log_b v = \\log_b(u \\cdot v)$$\n\n$$\\log_b u - \\log_b v = \\log_b\\left(\\frac{u}{v}\\right)$$\n\n$$k \\log_b u = \\log_b(u^k)$$\n\nBecause applying these rules can expand or alter the domain of the algebraic expressions involved, all candidate solutions derived from equating arguments must be checked against the domain of the original equation.",
+   "solution_overview": "A term of the form $b^{c-x}$ is the reciprocal of $b^{x}$ up to a constant factor, because\n\n$$b^{c-x} = \\frac{b^{c}}{b^{x}}$$\n\nAfter the substitution $u = b^{x} > 0$ the equation becomes a rational equation in $u$, and multiplying by $u \\neq 0$ turns it into a quadratic equation. Only strictly positive roots are transferred back.",
    "difficulty_level": "5/5",
    "sort_order": 172,
    "placeholder": false
@@ -5539,32 +5539,32 @@
   {
    "id": "math-4-174",
    "case_id": "MATH 4.174",
-   "title": "Reciprocal bases and impossible right sides",
+   "title": "A sum of logarithms with an extraneous candidate",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $\\log_{5}(x - 1) + \\log_{5}(x + 3) = 1$ is studied. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $\\left(\\frac{1}{2}\\right)^{x} = 8$ is negative.",
-    "The solution of $\\left(\\frac{1}{3}\\right)^{x} = 9$ is larger than the solution of $\\left(\\frac{1}{2}\\right)^{x} = 8$.",
-    "The equations $2^{-x} = \\frac{1}{8}$ and $2^{x} = 8$ have the same solution.",
-    "The equation $\\left(\\frac{1}{2}\\right)^{x} = -8$ has exactly one solution.",
-    "An equation of the form $a^{x} = b$ with $a > 0$, $a \\neq 1$ has a solution for every real number $b$."
+    "The natural domain of the equation is described by the single condition $x > 1$.",
+    "Applying the product rule for logarithms leads to the equation $(x - 1)(x + 3) = 5$.",
+    "The equation has two distinct valid real solutions.",
+    "The candidate value $x = -4$ has to be rejected because it lies outside the domain.",
+    "The unique valid solution of the equation is an even integer."
    ],
    "answer_key": [
     true,
     true,
-    true,
     false,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo solve the exponential equation, we express both sides as powers of the prime base $2$:\n\n$$\\left(\\frac{1}{2}\\right)^{x} = (2^{-1})^{x} = 2^{-x}$$\n\n$$8 = 2^{3}$$\n\nEquating exponents yields:\n\n$$-x = 3$$\n\n$$x = -3$$\n\nSince $-3 < 0$, the solution is negative, so the statement is True.",
-    "**B.** → True\n\nWe determine the solution to each equation by rewriting both sides with matching bases.\n\nFor the first equation:\n\n$$\\left(\\frac{1}{3}\\right)^{x} = 9$$\n\n$$3^{-x} = 3^{2}$$\n\n$$x = -2$$\n\nFor the second equation:\n\n$$\\left(\\frac{1}{2}\\right)^{x} = 8$$\n\n$$2^{-x} = 2^{3}$$\n\n$$x = -3$$\n\nComparing the two solutions, $-2 > -3$, which means the first solution is larger than the second solution, so the statement is True.",
-    "**C.** → True\n\nWe solve both equations for $x$.\n\nFor the first equation, write $\\frac{1}{8}$ as a power of $2$:\n\n$$2^{-x} = 2^{-3}$$\n\n$$-x = -3$$\n\n$$x = 3$$\n\nFor the second equation, write $8$ as a power of $2$:\n\n$$2^{x} = 2^{3}$$\n\n$$x = 3$$\n\nBoth equations yield the identical solution $x = 3$, so the statement is True.",
-    "**D.** → False\n\nThe exponential expression $\\left(\\frac{1}{2}\\right)^{x}$ satisfies:\n\n$$\\left(\\frac{1}{2}\\right)^{x} > 0$$\n\nfor every real number $x$. Because the right-hand side is $-8 < 0$, no real number $x$ can satisfy the equation:\n\n$$\\left(\\frac{1}{2}\\right)^{x} = -8$$\n\nThe equation has zero solutions rather than exactly one solution, so the statement is False.",
-    "**E.** → False\n\nFor any base $a > 0$ with $a \\neq 1$, the range of the exponential function $f(x) = a^x$ is the open interval $(0, \\infty)$.\n\nTherefore, if $b \\le 0$, the equation\n\n$$a^x = b$$\n\nhas no real solution. Because no solution exists for non-positive values of $b$, the equation does not have a solution for every real number $b$, so the statement is False."
+    "**A.** → True\n\nBoth logarithms require strictly positive arguments, which gives the system:\n\n$$x - 1 > 0 \\quad \\text{and} \\quad x + 3 > 0$$\n\n$$x > 1 \\quad \\text{and} \\quad x > -3$$\n\nThe intersection of the two conditions is the stronger one:\n\n$$x > 1$$\n\nThe domain is described by this single inequality, so the statement is True.",
+    "**B.** → True\n\nBy the product rule for logarithms with equal bases the left-hand side becomes:\n\n$$\\log_{5}\\big((x - 1)(x + 3)\\big) = 1$$\n\nConverting the logarithmic equation into exponential form with $5^{1} = 5$ gives:\n\n$$(x - 1)(x + 3) = 5$$\n\nThis is exactly the stated equation, so the statement is True.",
+    "**C.** → False\n\nExpanding and rearranging the merged equation gives:\n\n$$x^{2} + 2x - 3 = 5$$\n\n$$x^{2} + 2x - 8 = 0$$\n\n$$(x - 2)(x + 4) = 0$$\n\nThe candidates are $x = 2$ and $x = -4$. Only $x = 2$ satisfies the domain condition $x > 1$; the value $x = -4$ makes both original arguments negative. The equation therefore has exactly one valid solution, not two, so the statement is False.",
+    "**D.** → True\n\nWe test the candidate $x = -4$ in the original equation:\n\n$$\\log_{5}(-4 - 1) = \\log_{5}(-5)$$\n\nThe logarithm of a negative number is undefined over the real numbers, and the condition $x > 1$ of the domain is violated. The candidate must therefore be rejected as extraneous, so the statement is True.",
+    "**E.** → True\n\nThe only candidate surviving the domain test is:\n\n$$x = 2$$\n\nSubstituting it back confirms the solution:\n\n$$\\log_{5}(2 - 1) + \\log_{5}(2 + 3) = \\log_{5} 1 + \\log_{5} 5 = 0 + 1 = 1$$\n\nThe unique valid solution is $2$, which is an even integer, so the statement is True."
    ],
-   "solution_overview": "Exponential equations with constant bases can be analyzed by expressing both sides with a common base using the exponent rule $(a^{-1})^x = a^{-x}$ and matching exponents. For any base $a > 0$ with $a \\neq 1$, the function $f(x) = a^x$ is strictly positive for all real numbers $x$, meaning its image is the interval $(0, \\infty)$. Consequently, an equation of the form\n\n$$a^x = b$$\n\nhas a unique real solution if $b > 0$, and no real solution if $b \\le 0$.",
-   "difficulty_level": "3/5",
+   "solution_overview": "Two logarithms with the same base are merged by the product rule, valid for strictly positive arguments:\n\n$$\\log_{b} A + \\log_{b} B = \\log_{b}(AB)$$\n\nThe merged equation may have more roots than the original one, because the product $AB$ can be positive even when $A$ and $B$ are both negative. Every candidate must therefore be checked against the domain of the original equation.",
+   "difficulty_level": "5/5",
    "sort_order": 174,
    "placeholder": false
   },
@@ -5763,15 +5763,47 @@
   {
    "id": "math-4-181",
    "case_id": "MATH 4.181",
-   "title": "Comparing logarithms without a calculator",
+   "title": "Two logarithms with related bases",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $\\log_{4} x + \\log_{2} x = 6$ is studied on its natural domain. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "$\\log_{2} 5$ is greater than $\\log_{3} 5$.",
-    "The product $\\log_{2} 5 \\cdot \\log_{5} 2$ equals one.",
-    "$\\log_{4} 9$ and $\\log_{2} 3$ are equal.",
-    "$\\log_{9} 4$ is larger than one.",
-    "For a fixed argument $b > 1$, the value of $\\log_{a} b$ increases when the base $a > 1$ increases."
+    "Changing to base $2$ transforms the equation into $\\tfrac{3}{2}\\log_{2} x = 6$.",
+    "The equation has the unique solution $x = 16$.",
+    "The solution is a power of $2$ with an integer exponent.",
+    "The equation has a second solution lying strictly between $0$ and $1$.",
+    "If the right-hand side $6$ is replaced by $0$, the only solution of the resulting equation is $x = 1$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nApplying the change-of-base formula to the first term and using $\\log_{2} 4 = 2$ gives:\n\n$$\\log_{4} x = \\frac{\\log_{2} x}{\\log_{2} 4} = \\frac{\\log_{2} x}{2}$$\n\nSubstituting this into the equation yields:\n\n$$\\frac{\\log_{2} x}{2} + \\log_{2} x = 6$$\n\n$$\\frac{1}{2}\\log_{2} x + \\log_{2} x = \\frac{3}{2}\\log_{2} x = 6$$\n\nThis is exactly the stated equation, so the statement is True.",
+    "**B.** → True\n\nSolving the linear equation in $t = \\log_{2} x$:\n\n$$\\frac{3}{2}t = 6$$\n\n$$t = 4$$\n\nReturning to $x$ through the definition of the logarithm:\n\n$$x = 2^{4} = 16$$\n\nThe value satisfies the domain condition $x > 0$, and a check confirms $\\log_{4} 16 + \\log_{2} 16 = 2 + 4 = 6$. The unique solution is $x = 16$, so the statement is True.",
+    "**C.** → True\n\nThe solution obtained above is:\n\n$$x = 2^{4} = 16$$\n\nIt is written as the base $2$ raised to the integer exponent $4$, so the statement is True.",
+    "**D.** → False\n\nA solution in the interval $(0, 1)$ would satisfy $t = \\log_{2} x < 0$.\n\nThe reduced equation $\\frac{3}{2}t = 6$ is linear with the non-zero coefficient $\\frac{3}{2}$, so it has exactly one root, namely $t = 4$. No negative value of $t$ solves it, hence no solution lies between $0$ and $1$ and the statement is False.",
+    "**E.** → True\n\nWith the right-hand side $0$ the reduced equation becomes:\n\n$$\\frac{3}{2}\\log_{2} x = 0$$\n\n$$\\log_{2} x = 0$$\n\n$$x = 2^{0} = 1$$\n\nThe value $x = 1$ lies in the domain $x > 0$, and the linear equation has no other root. The only solution is $x = 1$, so the statement is True."
+   ],
+   "solution_overview": "Logarithms with different but related bases are unified by the change-of-base formula:\n\n$$\\log_{a} x = \\frac{\\log_{b} x}{\\log_{b} a}$$\n\nOnce all terms use one base, the equation becomes linear in $t = \\log_{b} x$, and a linear equation with a non-zero coefficient has exactly one solution.",
+   "difficulty_level": "5/5",
+   "sort_order": 181,
+   "placeholder": false
+  },
+  {
+   "id": "math-4-182",
+   "case_id": "MATH 4.182",
+   "title": "A rational equation with a factored denominator",
+   "subsection": "4.4",
+   "context": "The equation $\\dfrac{2}{x - 1} + \\dfrac{3}{x + 2} = \\dfrac{5}{x^{2} + x - 2}$ is studied. Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "The values $x = 1$ and $x = -2$ have to be excluded from the domain of the equation.",
+    "Multiplying by the common denominator leads to the linear equation $5x + 1 = 5$.",
+    "The equation has the unique solution $x = 0.8$.",
+    "The solution of the equation is an integer.",
+    "Clearing the denominators produces a candidate that has to be rejected as extraneous."
    ],
    "answer_key": [
     true,
@@ -5781,45 +5813,13 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo compare $\\log_{2} 5$ and $\\log_{3} 5$, we rewrite each using the change-of-base formula:\n\n$$\\log_{2} 5 = \\frac{\\ln 5}{\\ln 2}$$\n\n$$\\log_{3} 5 = \\frac{\\ln 5}{\\ln 3}$$\n\nBecause the argument $5 > 1$, the numerator $\\ln 5$ is strictly positive. Comparing the denominators, $2 < 3$ implies:\n\n$$\\ln 2 < \\ln 3$$\n\nDividing a fixed positive numerator by a smaller positive denominator yields a strictly larger quotient:\n\n$$\\frac{\\ln 5}{\\ln 2} > \\frac{\\ln 5}{\\ln 3}$$\n\nThis shows that $\\log_{2} 5 > \\log_{3} 5$, so the statement is True.",
-    "**B.** → True\n\nTo compute the product of two logarithms with interchanged bases and arguments, we apply the change-of-base formula to each factor:\n\n$$\\log_{2} 5 = \\frac{\\ln 5}{\\ln 2}$$\n\n$$\\log_{5} 2 = \\frac{\\ln 2}{\\ln 5}$$\n\nMultiplying the two fractions gives:\n\n$$\\log_{2} 5 \\cdot \\log_{5} 2 = \\frac{\\ln 5}{\\ln 2} \\cdot \\frac{\\ln 2}{\\ln 5} = 1$$\n\nThe product is exactly $1$, so the statement is True.",
-    "**C.** → True\n\nTo evaluate $\\log_{4} 9$, we write the base and the argument as perfect squares:\n\n$$4 = 2^2$$\n\n$$9 = 3^2$$\n\nApplying the change-of-base formula gives:\n\n$$\\log_{4} 9 = \\frac{\\ln(3^2)}{\\ln(2^2)}$$\n\nUsing the power rule $\\ln(x^k) = k \\ln x$ on both numerator and denominator:\n\n$$\\log_{4} 9 = \\frac{2 \\ln 3}{2 \\ln 2} = \\frac{\\ln 3}{\\ln 2}$$\n\nConverting back to base $2$ yields:\n\n$$\\frac{\\ln 3}{\\ln 2} = \\log_{2} 3$$\n\nHence $\\log_{4} 9$ equals $\\log_{2} 3$, so the statement is True.",
-    "**D.** → False\n\nFor a logarithm $\\log_{a} b$ with base $a > 1$, the value is greater than $1$ if and only if the argument satisfies $b > a$.\n\nWriting $\\log_{9} 4$ with the change-of-base formula gives:\n\n$$\\log_{9} 4 = \\frac{\\ln 4}{\\ln 9}$$\n\nBecause $4 < 9$ and the natural logarithm is strictly increasing:\n\n$$\\ln 4 < \\ln 9$$\n\nDividing both sides by the positive value $\\ln 9$ leads to:\n\n$$\\frac{\\ln 4}{\\ln 9} < 1$$\n\nTherefore $\\log_{9} 4$ is strictly less than $1$, so the statement is False.",
-    "**E.** → False\n\nWe determine the effect of increasing the base $a > 1$ while holding the argument $b > 1$ fixed. Expressing the logarithm via natural logarithms gives:\n\n$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$\n\nBecause $b > 1$, the numerator $\\ln b$ is a fixed positive number. As the base $a$ increases, the denominator $\\ln a$ increases strictly:\n\n$$a_1 < a_2 \\implies \\ln a_1 < \\ln a_2$$\n\nTaking reciprocals reverses the inequality:\n\n$$\\frac{1}{\\ln a_1} > \\frac{1}{\\ln a_2}$$\n\nMultiplying by the positive constant $\\ln b$ gives:\n\n$$\\frac{\\ln b}{\\ln a_1} > \\frac{\\ln b}{\\ln a_2}$$\n\nThus $\\log_{a} b$ decreases as the base $a$ increases, so the statement is False."
+    "**A.** → True\n\nFactoring the quadratic denominator gives:\n\n$$x^{2} + x - 2 = (x - 1)(x + 2)$$\n\nA fraction is undefined when its denominator vanishes, which happens for:\n\n$$x - 1 = 0 \\implies x = 1$$\n\n$$x + 2 = 0 \\implies x = -2$$\n\nBoth values must be excluded from the domain, so the statement is True.",
+    "**B.** → True\n\nMultiplying every term by the least common denominator $(x - 1)(x + 2)$ removes the fractions:\n\n$$2(x + 2) + 3(x - 1) = 5$$\n\nExpanding both products gives:\n\n$$2x + 4 + 3x - 3 = 5$$\n\n$$5x + 1 = 5$$\n\nThis is exactly the stated linear equation, so the statement is True.",
+    "**C.** → True\n\nSolving the linear equation:\n\n$$5x + 1 = 5$$\n\n$$5x = 4$$\n\n$$x = \\frac{4}{5} = 0.8$$\n\nThe value $0.8$ differs from both excluded values $1$ and $-2$, so it is admissible and is the unique solution, so the statement is True.",
+    "**D.** → False\n\nThe unique solution is:\n\n$$x = \\frac{4}{5}$$\n\nSince $\\frac{4}{5}$ lies strictly between the integers $0$ and $1$, it is not an integer, so the statement is False.",
+    "**E.** → False\n\nClearing the denominators produced the linear equation $5x + 1 = 5$ with the single candidate:\n\n$$x = \\frac{4}{5}$$\n\nThis candidate satisfies both domain conditions $x \\neq 1$ and $x \\neq -2$, so no candidate has to be rejected. No extraneous root appears, so the statement is False."
    ],
-   "solution_overview": "We analyze logarithmic expressions with bases and arguments greater than one. The change-of-base formula expresses any logarithm with base $a > 0$ ($a \\neq 1$) and argument $b > 0$ using natural logarithms:\n\n$$\\log_{a} b = \\frac{\\ln b}{\\ln a}$$\n\nFrom this definition, the product of reciprocal base-argument pairs evaluates directly:\n\n$$\\log_{a} b \\cdot \\log_{b} a = \\frac{\\ln b}{\\ln a} \\cdot \\frac{\\ln a}{\\ln b} = 1$$\n\nPowers shared by both base and argument simplify via the logarithm power rule:\n\n$$\\log_{a^k} (b^k) = \\frac{\\ln(b^k)}{\\ln(a^k)} = \\frac{k \\ln b}{k \\ln a} = \\frac{\\ln b}{\\ln a} = \\log_{a} b$$\n\nFor any fixed argument $b > 1$, the numerator $\\ln b$ is strictly positive, meaning that the function $f(a) = \\frac{\\ln b}{\\ln a}$ is strictly decreasing in $a$ for all $a > 1$.",
-   "difficulty_level": "4/5",
-   "sort_order": 181,
-   "placeholder": false
-  },
-  {
-   "id": "math-4-182",
-   "case_id": "MATH 4.182",
-   "title": "Decadic logarithms and hidden traps",
-   "subsection": "4.4",
-   "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "The solution of $\\log(x^{3}) - \\log(x^{2}) = 1$ is smaller than $5$.",
-    "The solution of $\\log\\sqrt{x} = 1$ is greater than the solution of $\\log x = 2$.",
-    "The identity $\\log(x^{2}) = 2\\log x$ holds for every real $x \\neq 0$.",
-    "The equation $\\log(x-1) + \\log(x+1) = \\log 3$ has an irrational solution.",
-    "The equation $(\\log x)^{2} = \\log(x^{2})$ has two solutions."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nThe domain of the equation $\\log(x^{3}) - \\log(x^{2}) = 1$ requires $x^3 > 0$ and $x^2 > 0$, which restricts $x$ to strictly positive real numbers $x > 0$.\n\nApplying the quotient rule for logarithms gives:\n\n$$\\log\\left(\\frac{x^3}{x^2}\\right) = 1$$\n\n$$\\log x = 1$$\n\nConverting to exponential form with base $10$ yields:\n\n$$x = 10^1 = 10$$\n\nSince $10 > 0$, the unique solution is $x = 10$, which is not smaller than $5$, so the statement is False.",
-    "**B.** → False\n\nFor the first equation $\\log\\sqrt{x} = 1$, the domain requires $x > 0$. Converting to exponential form yields:\n\n$$\\sqrt{x} = 10^1 = 10$$\n\nSquaring both sides gives:\n\n$$x = 100$$\n\nFor the second equation $\\log x = 2$, converting directly to exponential form gives:\n\n$$x = 10^2 = 100$$\n\nBoth equations yield the identical solution $x = 100$. Thus, the solution of the first equation is equal to, not greater than, the solution of the second equation, so the statement is False.",
-    "**C.** → False\n\nThe expression $\\log(x^2)$ is defined for all real numbers where $x^2 > 0$, which means for all $x \\neq 0$. However, the right-hand side $2\\log x$ contains $\\log x$, which is only defined for strictly positive real numbers $x > 0$.\n\nFor any negative real value such as $x = -1$, the left-hand side evaluates to:\n\n$$\\log((-1)^2) = \\log 1 = 0$$\n\nwhile the right-hand side $2\\log(-1)$ is undefined in the real numbers. The correct identity over all non-zero real numbers is $\\log(x^2) = 2\\log|x|$, so the statement is False.",
-    "**D.** → False\n\nThe domain of $\\log(x-1) + \\log(x+1) = \\log 3$ requires both $x - 1 > 0$ and $x + 1 > 0$, which means $x > 1$.\n\nApplying the product rule gives:\n\n$$\\log((x-1)(x+1)) = \\log 3$$\n\n$$\\log(x^2 - 1) = \\log 3$$\n\nEquating arguments yields:\n\n$$x^2 - 1 = 3$$\n\n$$x^2 = 4$$\n\n$$x = 2 \\quad \\text{or} \\quad x = -2$$\n\nSince $x > 1$, the only admissible solution is $x = 2$. The number $2$ is an integer and therefore rational, not irrational, so the statement is False.",
-    "**E.** → True\n\nThe domain of $(\\log x)^2 = \\log(x^2)$ requires $x > 0$ and $x^2 > 0$, which restricts $x$ to $x > 0$.\n\nFor $x > 0$, applying the power rule simplifies the right-hand side:\n\n$$(\\log x)^2 = 2\\log x$$\n\nMoving all terms to one side gives:\n\n$$(\\log x)^2 - 2\\log x = 0$$\n\nFactoring out $\\log x$ yields:\n\n$$\\log x (\\log x - 2) = 0$$\n\nThis produces two cases:\n\n$$\\log x = 0 \\implies x = 10^0 = 1$$\n\n$$\\log x = 2 \\implies x = 10^2 = 100$$\n\nBoth $x = 1$ and $x = 100$ are strictly positive and satisfy the original equation, giving exactly two distinct real solutions, so the statement is True."
-   ],
-   "solution_overview": "The decadic logarithm $\\log x$ denotes the logarithm with base $10$. For any real expression inside a logarithm, the argument must be strictly positive. Key algebraic identities for positive arguments include the power rule $\\log(a^k) = k\\log a$, the product rule $\\log(a \\cdot b) = \\log a + \\log b$, and the quotient rule $\\log(a / b) = \\log a - \\log b$. When solving logarithmic equations, tracking the domain of definition of the original expressions is essential to identify extraneous solutions.",
+   "solution_overview": "A rational equation is solved by factoring all denominators, stating the excluded values, and multiplying by the least common denominator. Here\n\n$$x^{2} + x - 2 = (x - 1)(x + 2)$$\n\nso the least common denominator is $(x-1)(x+2)$. Every candidate obtained after clearing the fractions must be compared with the excluded values.",
    "difficulty_level": "5/5",
    "sort_order": 182,
    "placeholder": false
@@ -5891,64 +5891,64 @@
   {
    "id": "math-4-185",
    "case_id": "MATH 4.185",
-   "title": "Logarithms inside logarithms",
+   "title": "A radical equation and its hidden condition",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $\\sqrt{2x + 7} = x - 4$ is studied over the real numbers. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $\\log_{2}(\\log_{3} x) = 1$ is a perfect square.",
-    "The solution of $\\log_{3}(\\log_{2} x) = 0$ is smaller than $3$.",
-    "The solution of $\\log_{2}\\big(\\log_{2}(\\log_{2} x)\\big) = 0$ exceeds $10$.",
-    "The equation $\\log_{2}(\\log_{3} x) = -1$ has no solution.",
-    "In an equation $\\log_{a}(\\log_{b} x) = c$ with $a, b > 1$ every solution is greater than one."
+    "Every solution of the equation must satisfy the condition $x \\ge 4$.",
+    "Squaring both sides produces the quadratic equation $x^{2} - 10x + 9 = 0$.",
+    "Both candidates obtained after squaring satisfy the original equation.",
+    "The equation has the unique valid solution $x = 9$.",
+    "The candidate $x = 1$ is extraneous."
    ],
    "answer_key": [
     true,
     true,
     false,
-    false,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo solve the equation $\\log_{2}(\\log_{3} x) = 1$, we first convert the outer logarithm with base $2$ into exponential form:\n\n$$\\log_{3} x = 2^1 = 2$$\n\nNext, we convert the remaining logarithm with base $3$ into exponential form:\n\n$$x = 3^2 = 9$$\n\nThe integer $9$ is equal to $3^2$, which is an integer squared, so the statement is True.",
-    "**B.** → True\n\nTo solve the equation $\\log_{3}(\\log_{2} x) = 0$, we exponentiate with base $3$ to eliminate the outer logarithm:\n\n$$\\log_{2} x = 3^0 = 1$$\n\nWe then exponentiate with base $2$ to isolate $x$:\n\n$$x = 2^1 = 2$$\n\nThe resulting value $2$ is strictly smaller than $3$, so the statement is True.",
-    "**C.** → False\n\nTo solve the three-layer nested equation $\\log_{2}\\big(\\log_{2}(\\log_{2} x)\\big) = 0$, we peel away the outermost base $2$ logarithm:\n\n$$\\log_{2}(\\log_{2} x) = 2^0 = 1$$\n\nWe apply base $2$ exponentiation again to remove the next logarithm:\n\n$$\\log_{2} x = 2^1 = 2$$\n\nFinally, we isolate $x$ with one more base $2$ exponentiation:\n\n$$x = 2^2 = 4$$\n\nThe solution is $4$, which does not exceed $10$, so the statement is False.",
-    "**D.** → False\n\nTo test whether $\\log_{2}(\\log_{3} x) = -1$ has a real solution, we unwrap the outer logarithm:\n\n$$\\log_{3} x = 2^{-1} = \\frac{1}{2}$$\n\nBecause $\\frac{1}{2} > 0$, the argument of the outer logarithm is well-defined. Exponentiating with base $3$ yields the solution:\n\n$$x = 3^{1/2} = \\sqrt{3}$$\n\nSince $\\sqrt{3} > 1$, both $\\log_3(\\sqrt{3}) = \\frac{1}{2}$ and $\\log_2(\\frac{1}{2}) = -1$ are valid, meaning a real solution does exist, so the statement is False.",
-    "**E.** → True\n\nConsider the general equation $\\log_{a}(\\log_{b} x) = c$ under the assumptions $a > 1$ and $b > 1$. Converting the outer logarithm gives:\n\n$$\\log_{b} x = a^c$$\n\nBecause the exponential function with base $a > 1$ is strictly positive everywhere, we have $a^c > 0$ for any real number $c$. Isolating $x$ gives:\n\n$$x = b^{a^c}$$\n\nBecause $b > 1$ and the exponent satisfies $a^c > 0$, the value $b^{a^c}$ is strictly greater than $b^0 = 1$. Thus, every solution is greater than one, so the statement is True."
+    "**A.** → True\n\nThe left-hand side $\\sqrt{2x + 7}$ is non-negative wherever it is defined, so the right-hand side must satisfy:\n\n$$x - 4 \\ge 0$$\n\n$$x \\ge 4$$\n\nThe radicand condition $2x + 7 \\ge 0$, that is $x \\ge -3.5$, is weaker and is already implied. Every solution must satisfy $x \\ge 4$, so the statement is True.",
+    "**B.** → True\n\nSquaring both sides of the equation gives:\n\n$$2x + 7 = (x - 4)^{2}$$\n\n$$2x + 7 = x^{2} - 8x + 16$$\n\nBringing all terms to one side yields:\n\n$$x^{2} - 10x + 9 = 0$$\n\nThis is exactly the stated quadratic equation, so the statement is True.",
+    "**C.** → False\n\nFactoring the quadratic equation gives:\n\n$$(x - 1)(x - 9) = 0$$\n\nso the candidates are $x = 1$ and $x = 9$. Substituting $x = 1$ into the original equation:\n\n$$\\sqrt{2 \\cdot 1 + 7} = \\sqrt{9} = 3, \\qquad 1 - 4 = -3$$\n\nSince $3 \\neq -3$, the candidate $x = 1$ fails. Not both candidates satisfy the equation, so the statement is False.",
+    "**D.** → True\n\nWe substitute the second candidate $x = 9$ into the original equation:\n\n$$\\sqrt{2 \\cdot 9 + 7} = \\sqrt{25} = 5$$\n\n$$9 - 4 = 5$$\n\nBoth sides agree, and $x = 9$ satisfies the condition $x \\ge 4$. Since the other candidate was rejected, $x = 9$ is the unique valid solution, so the statement is True.",
+    "**E.** → True\n\nThe candidate $x = 1$ violates the necessary condition $x \\ge 4$, and the direct substitution gives $3$ on the left and $-3$ on the right. It solves the squared equation but not the original one, which is precisely the definition of an extraneous root, so the statement is True."
    ],
-   "solution_overview": "A nested logarithmic equation of the form $\\log_{a}(\\log_{b} x) = c$ is solved by applying exponential functions from the outside inward. For valid logarithmic evaluations, every inner argument must be strictly positive.\n\nApplying base $a$ to both sides removes the outer logarithm:\n\n$$\\log_{b} x = a^c$$\n\nBecause $a > 0$, the quantity $a^c$ is strictly positive for any real number $c$, satisfying the domain requirement for the inner logarithm. Applying base $b$ then isolates $x$:\n\n$$x = b^{a^c}$$\n\nEach nested layer unwraps by raising the current base to the power of the evaluated expression.",
-   "difficulty_level": "4/5",
+   "solution_overview": "For a radical equation of the form $\\sqrt{f(x)} = g(x)$ the square root is non-negative by definition, so two conditions must hold before squaring:\n\n$$f(x) \\ge 0 \\quad \\text{and} \\quad g(x) \\ge 0$$\n\nSquaring is not an equivalence transformation, therefore every candidate has to be substituted back into the original equation.",
+   "difficulty_level": "5/5",
    "sort_order": 185,
    "placeholder": false
   },
   {
    "id": "math-4-186",
    "case_id": "MATH 4.186",
-   "title": "Exponential equations with untidy solutions",
+   "title": "An absolute value on one side of the equation",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $|2x - 5| = x + 1$ is studied over the real numbers. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The solution of $2^{x} = 5$ lies strictly between $2$ and $3$.",
-    "The solution of $3^{x} = 2^{x+1}$ is smaller than $2$.",
-    "The equation $5^{x} = 2^{x}$ has exactly one solution.",
-    "The solution of $2^{x} = 3^{x-1}$ is greater than $3$.",
-    "The equation $2^{x} = x^{2}$ has exactly one solution."
+    "The equation has exactly two distinct real solutions.",
+    "The sum of all real solutions equals $\\dfrac{22}{3}$.",
+    "Both real solutions of the equation are integers.",
+    "The product of all real solutions equals $8$.",
+    "The equation $|2x - 5| = -3$ has no real solution."
    ],
    "answer_key": [
     true,
     true,
-    true,
     false,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe function $f(x) = 2^x$ is strictly increasing on the set of real numbers because the base satisfies $2 > 1$.\n\nEvaluating the function at the integer bounds $x = 2$ and $x = 3$ gives:\n\n$$2^2 = 4$$\n\n$$2^3 = 8$$\n\nBecause $4 < 5 < 8$, the intermediate value property of continuous, strictly increasing functions guarantees that the unique solution to $2^x = 5$ satisfies:\n\n$$2 < x < 3$$\n\nThus, the solution lies strictly between $2$ and $3$, so the statement is True.",
-    "**B.** → True\n\nWe rewrite the right-hand side of $3^x = 2^{x+1}$ using the rules of exponents:\n\n$$3^x = 2 \\cdot 2^x$$\n\nDividing both sides by $2^x$ isolates the variable in a single exponential term:\n\n$$\\left(\\frac{3}{2}\\right)^x = 2$$\n\nEvaluating the left-hand side at $x = 2$ yields:\n\n$$\\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4} = 2.25$$\n\nBecause $2.25 > 2$ and the base $\\frac{3}{2} > 1$ makes the function strictly increasing, the exact solution $x = \\frac{\\ln 2}{\\ln(1.5)}$ must satisfy $x < 2$, so the statement is True.",
-    "**C.** → True\n\nTo solve $5^x = 2^x$, divide both sides by $2^x$, which is strictly positive for all real $x$:\n\n$$\\left(\\frac{5}{2}\\right)^x = 1$$\n\nAny non-zero real base raised to the power of zero equals $1$, so taking the logarithm of both sides yields:\n\n$$x = 0$$\n\nBecause the exponential function $g(x) = (2.5)^x$ is strictly monotonic on the entire real line, it crosses the horizontal line $y = 1$ at exactly one point. Therefore, the equation has only one solution, so the statement is True.",
-    "**D.** → False\n\nWe rewrite the equation $2^x = 3^{x-1}$ by expanding the exponent on the right-hand side:\n\n$$2^x = \\frac{1}{3} \\cdot 3^x$$\n\nMultiplying by $3$ and dividing by $2^x$ gives:\n\n$$\\left(\\frac{3}{2}\\right)^x = 3$$\n\nEvaluating the expression at $x = 3$ yields:\n\n$$\\left(\\frac{3}{2}\\right)^3 = \\frac{27}{8} = 3.375$$\n\nBecause $3.375 > 3$ and the base $\\frac{3}{2} > 1$ represents a strictly increasing function, the solution must lie strictly below $3$ (in fact, $x = \\frac{\\ln 3}{\\ln 1.5} \\approx 2.71$). The claim states that the solution is greater than $3$, so the statement is False.",
-    "**E.** → False\n\nWe determine the number of real solutions to $2^x = x^2$ by testing integer values and analyzing the intersection points of the two graphs.\n\nDirect evaluation shows that $x = 2$ and $x = 4$ are positive integer solutions:\n\n$$2^2 = 2^2 = 4$$\n\n$$2^4 = 4^2 = 16$$\n\nAdditionally, for negative real values of $x$, $2^x > 0$ decreases toward $0$ while $x^2$ increases toward infinity, creating a third real intersection in the interval $(-1, 0)$ where $2^{-1} = 0.5 < (-1)^2 = 1$ and $2^0 = 1 > 0^2 = 0$. Since there are at least three real solutions, the equation does not have exactly one solution, so the statement is False."
+    "**A.** → True\n\nThe right-hand side must be non-negative, so $x + 1 \\ge 0$, that is $x \\ge -1$. We split the absolute value into two cases.\n\nFirst case:\n\n$$2x - 5 = x + 1 \\implies x = 6$$\n\nSecond case:\n\n$$2x - 5 = -(x + 1)$$\n\n$$3x = 4 \\implies x = \\frac{4}{3}$$\n\nBoth values satisfy $x \\ge -1$, so the equation has exactly two distinct real solutions, so the statement is True.",
+    "**B.** → True\n\nThe two solutions found above are:\n\n$$x_{1} = 6, \\qquad x_{2} = \\frac{4}{3}$$\n\nTheir sum is:\n\n$$6 + \\frac{4}{3} = \\frac{18}{3} + \\frac{4}{3} = \\frac{22}{3}$$\n\nThe sum equals $\\frac{22}{3}$, so the statement is True.",
+    "**C.** → False\n\nThe solutions are $x_{1} = 6$ and $x_{2} = \\frac{4}{3}$. While $6$ is an integer, the value $\\frac{4}{3}$ lies strictly between $1$ and $2$ and is therefore not an integer. Not both solutions are integers, so the statement is False.",
+    "**D.** → True\n\nThe product of the two solutions is:\n\n$$6 \\cdot \\frac{4}{3} = \\frac{24}{3} = 8$$\n\nThe product equals $8$, so the statement is True.",
+    "**E.** → True\n\nBy definition the absolute value of a real number is never negative:\n\n$$|2x - 5| \\ge 0 \\quad \\text{for every real } x$$\n\nA value that is greater than or equal to zero can never equal $-3$, so the equation has no real solution and the statement is True."
    ],
-   "solution_overview": "Exponential equations involving terms with different bases can be analyzed algebraically using logarithms or monotonically increasing properties of exponential functions. For equations of the form $a^x = b^x$, dividing both sides by the non-zero exponential term yields:\n\n$$\\left(\\frac{a}{b}\\right)^x = 1$$\n\nFor equations with linear shifts in the exponent, factoring out the constant power allows isolation of the base ratio before solving. Non-linear comparisons such as $2^x = x^2$ require inspecting integer points and intersection properties across distinct intervals of the real line.",
-   "difficulty_level": "4/5",
+   "solution_overview": "An equation of the form $|A| = B$ is solved by splitting it into two cases, subject to the necessary condition $B \\ge 0$:\n\n$$|A| = B \\iff \\big(A = B \\ \\text{or}\\ A = -B\\big) \\ \\text{and}\\ B \\ge 0$$\n\nEach case gives a linear equation, and every candidate is checked against the condition $B \\ge 0$.",
+   "difficulty_level": "5/5",
    "sort_order": 186,
    "placeholder": false
   },
@@ -6019,64 +6019,64 @@
   {
    "id": "math-4-189",
    "case_id": "MATH 4.189",
-   "title": "Which logarithm identities really hold",
+   "title": "A linear equation controlled by a parameter",
    "subsection": "4.4",
-   "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "For a real parameter $a$ the equation $(a^{2} - 4)x = a - 2$ in the unknown $x$ is studied. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "There is no pair of positive numbers $a$ and $b$ with $\\log(a+b) = \\log a + \\log b$.",
-    "The identity $\\log(ab) = \\log a + \\log b$ holds for all positive $a$ and $b$.",
-    "The quotient $\\dfrac{\\log a}{\\log b}$ equals $\\log\\dfrac{a}{b}$ for all admissible $a$ and $b$.",
-    "For admissible bases and arguments, $\\log_{a} b$ and $\\log_{b} a$ are reciprocals of one another.",
-    "The identity $\\log(x^{2}) = 2\\log|x|$ holds for every $x \\neq 0$."
+    "For $a = 2$ the equation is satisfied by every real number $x$.",
+    "For $a = -2$ the equation has no solution.",
+    "For $a = 3$ the unique solution is $x = \\dfrac{1}{5}$.",
+    "For every parameter value with $a \\neq 2$ and $a \\neq -2$ the unique solution equals $\\dfrac{1}{a + 2}$.",
+    "The equation has exactly one solution for every real value of the parameter $a$."
    ],
    "answer_key": [
-    false,
     true,
-    false,
     true,
-    true
+    true,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nUsing the product rule for logarithms on the right hand side, the equation becomes:\n\n$$\\log(a+b) = \\log(ab)$$\n\nApplying the exponential function to both sides gives the equivalent equation for positive real numbers $a$ and $b$:\n\n$$a + b = ab$$\n\nRearranging this relationship yields:\n\n$$ab - a - b + 1 = 1$$\n\n$$(a - 1)(b - 1) = 1$$\n\nChoosing $a = 2$ gives $(2-1)(b-1) = 1$, which yields $b = 2$. For this pair of positive numbers, $a + b = 4$ and $ab = 4$, so $\\log(2+2) = \\log(2 \\cdot 2) = \\log 2 + \\log 2$. Because valid positive pairs exist, the claim is contradicted, so the statement is False.",
-    "**B.** → True\n\nThe fundamental product rule of logarithms states that the logarithm of a product of two positive numbers equals the sum of the logarithms of the individual factors.\n\nFor any $a > 0$ and $b > 0$, let $x = \\log a$ and $y = \\log b$. In exponential form with base $10$, this means:\n\n$$a = 10^{x}$$\n\n$$b = 10^{y}$$\n\nMultiplying the two values gives:\n\n$$ab = 10^{x} \\cdot 10^{y} = 10^{x+y}$$\n\nTaking the base $10$ logarithm of both sides gives $\\log(ab) = x + y = \\log a + \\log b$, so the statement is True.",
-    "**C.** → False\n\nThe logarithm of a quotient is given by the difference of logarithms rather than their quotient:\n\n$$\\log\\left(\\frac{a}{b}\\right) = \\log a - \\log b$$\n\nThe ratio of two logarithms with the same base represents a change of base:\n\n$$\\frac{\\log a}{\\log b} = \\log_{b} a$$\n\nTo see that these expressions are not generally equal, choose $a = 100$ and $b = 10$. Evaluating the ratio of logarithms yields:\n\n$$\\frac{\\log 100}{\\log 10} = \\frac{2}{1} = 2$$\n\nEvaluating the logarithm of the quotient yields:\n\n$$\\log\\left(\\frac{100}{10}\\right) = \\log 10 = 1$$\n\nBecause $2 \\neq 1$, the two expressions do not coincide for all admissible values, so the statement is False.",
-    "**D.** → True\n\nFor bases and arguments satisfying $a, b > 0$ with $a \\neq 1$ and $b \\neq 1$, we convert each logarithm to common logarithms using the change of base formula:\n\n$$\\log_{a} b = \\frac{\\log b}{\\log a}$$\n\n$$\\log_{b} a = \\frac{\\log a}{\\log b}$$\n\nMultiplying these two expressions gives:\n\n$$\\log_{a} b \\cdot \\log_{b} a = \\frac{\\log b}{\\log a} \\cdot \\frac{\\log a}{\\log b} = 1$$\n\nSince their product is $1$, the numbers $\\log_{a} b$ and $\\log_{b} a$ are reciprocals of each other, so the statement is True.",
-    "**E.** → True\n\nFor any non-zero real number $x \\neq 0$, the quantity $x^{2}$ is strictly positive, ensuring that $\\log(x^{2})$ is well defined. The absolute value $|x|$ is also strictly positive for all $x \\neq 0$.\n\nBecause $x^{2} = |x|^{2}$, substituting $|x|$ into the logarithm gives:\n\n$$\\log(x^{2}) = \\log\\left(|x|^{2}\\right)$$\n\nApplying the power rule $\\log(u^{2}) = 2\\log u$ to the positive argument $u = |x|$ yields:\n\n$$\\log\\left(|x|^{2}\\right) = 2\\log|x|$$\n\nThis identity holds for every $x \\neq 0$, so the statement is True."
+    "**A.** → True\n\nSubstituting $a = 2$ into the equation gives:\n\n$$(2^{2} - 4)x = 2 - 2$$\n\n$$0 \\cdot x = 0$$\n\nThis identity holds for every real number $x$, so the solution set is all of $\\mathbb{R}$ and the statement is True.",
+    "**B.** → True\n\nSubstituting $a = -2$ gives:\n\n$$\\big((-2)^{2} - 4\\big)x = -2 - 2$$\n\n$$0 \\cdot x = -4$$\n\nThe left-hand side equals $0$ for every real $x$, so no value of $x$ can produce $-4$. The equation has no solution, so the statement is True.",
+    "**C.** → True\n\nSubstituting $a = 3$ gives:\n\n$$(3^{2} - 4)x = 3 - 2$$\n\n$$5x = 1$$\n\n$$x = \\frac{1}{5}$$\n\nThe coefficient $5$ is non-zero, so this is the unique solution and the statement is True.",
+    "**D.** → True\n\nFor $a \\neq \\pm 2$ the coefficient $a^{2} - 4$ is non-zero, so we may divide:\n\n$$x = \\frac{a - 2}{a^{2} - 4} = \\frac{a - 2}{(a - 2)(a + 2)}$$\n\nCancelling the non-zero factor $a - 2$ gives:\n\n$$x = \\frac{1}{a + 2}$$\n\nThis is exactly the stated formula, so the statement is True.",
+    "**E.** → False\n\nThe classification above shows that the number of solutions depends on the parameter. For $a = 2$ every real number solves the equation, and for $a = -2$ there is no solution at all. Hence the equation does not have exactly one solution for every real $a$, so the statement is False."
    ],
-   "solution_overview": "The decadic logarithm $\\log x = \\log_{10} x$ is defined for all strictly positive real numbers $x > 0$. Evaluating algebraic statements involving logarithms relies on the foundational operational laws and the change of base formula. For any strictly positive real numbers $u, v > 0$ and any real exponent $k$, the product, quotient, and power rules are given by:\n\n$$\\log(uv) = \\log u + \\log v$$\n\n$$\\log\\left(\\frac{u}{v}\\right) = \\log u - \\log v$$\n\n$$\\log(u^{k}) = k \\log u$$\n\nFor any positive bases $a, b \\neq 1$ and any positive argument $x > 0$, the change of base identity converts logarithms between different bases:\n\n$$\\log_{a} x = \\frac{\\log x}{\\log a}$$",
-   "difficulty_level": "3/5",
+   "solution_overview": "A parametric linear equation $k\\,x = b$ is classified by its coefficient:\n\n$$k \\neq 0 \\implies \\text{exactly one solution } x = \\frac{b}{k}$$\n\n$$k = 0,\\ b = 0 \\implies \\text{infinitely many solutions}$$\n\n$$k = 0,\\ b \\neq 0 \\implies \\text{no solution}$$\n\nHere $k = a^{2} - 4 = (a-2)(a+2)$ vanishes exactly for $a = 2$ and $a = -2$.",
+   "difficulty_level": "5/5",
    "sort_order": 189,
    "placeholder": false
   },
   {
    "id": "math-4-190",
    "case_id": "MATH 4.190",
-   "title": "Comparing solutions across equations",
+   "title": "Discriminant and root relations with a parameter",
    "subsection": "4.4",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "For a real parameter $m$ the quadratic equation $x^{2} - 2(m - 1)x + m^{2} - 3m = 0$ is studied. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The equation $4^{x} = 8^{x-1}$ has an integer solution.",
-    "The solution of $9^{x+1} = 27^{x}$ is greater than the solution of $4^{x} = 8^{x-1}$.",
-    "The solution of $25^{x} = 5$ is not an integer.",
-    "The equation $8^{x} = 2^{x}$ has infinitely many solutions.",
-    "The equation $16^{x} = 4^{2x}$ is satisfied by every real number."
+    "The equation has two distinct real roots exactly for the parameter values $m > -1$.",
+    "For $m = -1$ the equation has the double root $x = -2$.",
+    "The product of the roots equals zero exactly for $m = 0$ and $m = 3$.",
+    "For $m = 4$ the two roots of the equation are $2$ and $4$.",
+    "The sum of the roots equals zero exactly for $m = 1$."
    ],
    "answer_key": [
     true,
-    false,
+    true,
     true,
     false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTo solve an exponential equation with powers of $2$, we rewrite both sides with base $2$:\n\n$$4^x = (2^2)^x = 2^{2x}$$\n\n$$8^{x-1} = (2^3)^{x-1} = 2^{3(x-1)}$$\n\nEquating the exponents gives:\n\n$$2x = 3(x-1)$$\n\n$$2x = 3x - 3$$\n\n$$x = 3$$\n\nThe solution is $x = 3$, which is an integer, so the statement is True.",
-    "**B.** → False\n\nWe find the solution to each equation by expressing both sides with a shared base. For the first equation, we write both sides with base $3$:\n\n$$9^{x+1} = (3^2)^{x+1} = 3^{2(x+1)}$$\n\n$$27^x = (3^3)^x = 3^{3x}$$\n\nEquating exponents yields:\n\n$$2(x+1) = 3x$$\n\n$$2x + 2 = 3x$$\n\n$$x = 2$$\n\nFor the second equation, $4^x = 8^{x-1}$, rewriting with base $2$ gives:\n\n$$2^{2x} = 2^{3(x-1)}$$\n\n$$2x = 3x - 3$$\n\n$$x = 3$$\n\nComparing the two solutions, $2$ is not greater than $3$, so the statement is False.",
-    "**C.** → True\n\nTo solve $25^x = 5$, we rewrite the left-hand side with base $5$:\n\n$$25^x = (5^2)^x = 5^{2x}$$\n\nSetting this equal to $5^1$ gives:\n\n$$5^{2x} = 5^1$$\n\nEquating the exponents yields:\n\n$$2x = 1$$\n\n$$x = \\frac{1}{2}$$\n\nSince $\\frac{1}{2}$ is a fraction and not an integer, the solution is not an integer, so the statement is True.",
-    "**D.** → False\n\nTo solve $8^x = 2^x$, we write $8$ as $2^3$:\n\n$$(2^3)^x = 2^x$$\n\n$$2^{3x} = 2^x$$\n\nEquating exponents leads to a linear equation in $x$:\n\n$$3x = x$$\n\n$$2x = 0$$\n\n$$x = 0$$\n\nThis linear equation has exactly one unique solution, $x = 0$, rather than infinitely many solutions, so the statement is False.",
-    "**E.** → True\n\nTo analyze $16^x = 4^{2x}$, we rewrite the base of the left-hand side in terms of $4$:\n\n$$16^x = (4^2)^x = 4^{2x}$$\n\nSubstituting this back into the original equation gives:\n\n$$4^{2x} = 4^{2x}$$\n\nEquating exponents gives $2x = 2x$, which holds as an identity for all real numbers $x$, so the statement is True."
+    "**A.** → True\n\nWe compute the discriminant of the equation:\n\n$$\\Delta = \\big(-2(m-1)\\big)^{2} - 4\\big(m^{2} - 3m\\big)$$\n\n$$\\Delta = 4(m^{2} - 2m + 1) - 4m^{2} + 12m$$\n\n$$\\Delta = 4m^{2} - 8m + 4 - 4m^{2} + 12m = 4m + 4$$\n\nTwo distinct real roots occur exactly when $\\Delta > 0$:\n\n$$4m + 4 > 0 \\implies m > -1$$\n\nThis matches the stated condition, so the statement is True.",
+    "**B.** → True\n\nFor $m = -1$ the discriminant becomes:\n\n$$\\Delta = 4(-1) + 4 = 0$$\n\nso the equation has a double root equal to half the sum of the roots:\n\n$$x = \\frac{2(m - 1)}{2} = m - 1 = -1 - 1 = -2$$\n\nA direct check with $m = -1$ gives $x^{2} + 4x + 4 = (x + 2)^{2} = 0$, confirming the double root $x = -2$, so the statement is True.",
+    "**C.** → True\n\nBy Vieta's formula the product of the roots equals the constant term:\n\n$$x_{1}x_{2} = m^{2} - 3m = m(m - 3)$$\n\nThis product vanishes exactly when:\n\n$$m = 0 \\quad \\text{or} \\quad m = 3$$\n\nBoth values satisfy $m > -1$, so the roots are real in each case. The stated parameter values are correct, so the statement is True.",
+    "**D.** → False\n\nSubstituting $m = 4$ gives:\n\n$$x^{2} - 2(4 - 1)x + 4^{2} - 3 \\cdot 4 = 0$$\n\n$$x^{2} - 6x + 4 = 0$$\n\nThe roots follow from the quadratic formula:\n\n$$x_{1,2} = \\frac{6 \\pm \\sqrt{36 - 16}}{2} = 3 \\pm \\sqrt{5}$$\n\nThese are irrational numbers, and the proposed pair $2$ and $4$ would give the product $8$ instead of $4$. The claim is therefore wrong, so the statement is False.",
+    "**E.** → True\n\nBy Vieta's formula the sum of the roots equals:\n\n$$x_{1} + x_{2} = 2(m - 1)$$\n\nSetting this expression equal to zero gives:\n\n$$2(m - 1) = 0 \\implies m = 1$$\n\nSince $m = 1$ satisfies $m > -1$, the roots are real in this case. The sum vanishes exactly for $m = 1$, so the statement is True."
    ],
-   "solution_overview": "Exponential equations of the form $a^{f(x)} = b^{g(x)}$ can be solved by expressing both bases $a$ and $b$ as powers of a common positive base $c > 0$ with $c \\neq 1$. Applying the power of a power rule $(c^m)^k = c^{m \\cdot k}$ converts the equation into a single shared base:\n\n$$c^{m \\cdot f(x)} = c^{n \\cdot g(x)}$$\n\nBecause the exponential function $y = c^u$ is strictly monotonic and therefore one-to-one, equating the expressions in the exponents yields an algebraic equation:\n\n$$m \\cdot f(x) = n \\cdot g(x)$$\n\nSolving this resulting equation identifies the solution set, which may consist of a single number, no solutions, or all real numbers if the exponents are identically equal.",
-   "difficulty_level": "4/5",
+   "solution_overview": "For $x^{2} + px + q = 0$ the nature of the roots is governed by the discriminant, and Vieta's formulas link the roots to the coefficients:\n\n$$\\Delta = p^{2} - 4q, \\qquad x_{1} + x_{2} = -p, \\qquad x_{1}x_{2} = q$$\n\nHere $p = -2(m-1)$ and $q = m^{2} - 3m$, so the sum of the roots is $2(m-1)$ and their product is $m^{2} - 3m$.",
+   "difficulty_level": "5/5",
    "sort_order": 190,
    "placeholder": false
   },
@@ -6115,31 +6115,31 @@
   {
    "id": "math-4-192",
    "case_id": "MATH 4.192",
-   "title": "Existence questions for mixed equations",
+   "title": "When an exponential equation has no solution at all",
    "subsection": "4.4",
-   "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $4^{x} - 2^{x+2} + 5 = 0$ and its modifications are studied over the real numbers. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The equation $2^{x} \\cdot 3^{x} = 6^{x+1}$ has no solution.",
-    "The equation $x^{\\log x} = 100$ has two solutions.",
-    "The equation $2^{2x} - 2^{x+1} + 1 = 0$ has exactly one solution.",
-    "The equation $3^{x} + 3^{-x} = 1$ has a real solution.",
-    "The equation $\\log_{2} x = x$ has a real solution."
+    "The substitution $u = 2^{x}$ transforms the equation into $u^{2} - 4u + 5 = 0$.",
+    "The equation $4^{x} - 2^{x+2} + 5 = 0$ has no real solution.",
+    "The equation $4^{x} - 2^{x+2} + 4 = 0$ has exactly one real solution.",
+    "The equation $4^{x} - 2^{x+2} - 5 = 0$ has two distinct real solutions.",
+    "The equation $4^{x} - 2^{x+2} + c = 0$ has two distinct real solutions exactly for the values $0 < c < 4$."
    ],
    "answer_key": [
     true,
     true,
     true,
     false,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nWe combine the powers on the left-hand side using the power rule for identical exponents:\n\n$$2^x \\cdot 3^x = (2 \\cdot 3)^x = 6^x$$\n\nSubstituting this into the equation gives:\n\n$$6^x = 6^{x+1}$$\n\n$$6^x = 6 \\cdot 6^x$$\n\nDividing both sides by the strictly positive term $6^x$ yields:\n\n$$1 = 6$$\n\nThis is a contradiction, meaning no real number $x$ satisfies the equation, so the statement is True.",
-    "**B.** → True\n\nThe equation is defined on the domain $x > 0$. Taking the decadic logarithm of both sides allows us to bring down the exponent:\n\n$$\\log\\left(x^{\\log x}\\right) = \\log(100)$$\n\n$$(\\log x) \\cdot (\\log x) = 2$$\n\n$$(\\log x)^2 = 2$$\n\nTaking the square root on both sides gives two possibilities for $\\log x$:\n\n$$\\log x = \\sqrt{2} \\quad \\text{or} \\quad \\log x = -\\sqrt{2}$$\n\nExponentiating with base $10$ yields:\n\n$$x_1 = 10^{\\sqrt{2}}, \\quad x_2 = 10^{-\\sqrt{2}}$$\n\nBoth values are strictly positive and distinct, so the equation has exactly two solutions, so the statement is True.",
-    "**C.** → True\n\nWe rewrite the exponential equation using power rules:\n\n$$(2^x)^2 - 2 \\cdot 2^x + 1 = 0$$\n\nSetting $u = 2^x$ gives a quadratic equation in $u$:\n\n$$u^2 - 2u + 1 = 0$$\n\n$$(u - 1)^2 = 0$$\n\nThis yields a unique root $u = 1$. Substituting back into the substitution gives:\n\n$$2^x = 1$$\n\n$$x = 0$$\n\nSince $x = 0$ is the only real solution, the equation has exactly one solution, so the statement is True.",
-    "**D.** → False\n\nWe substitute $u = 3^x$, which must be strictly positive for any real $x$. The equation becomes:\n\n$$u + \\frac{1}{u} = 1$$\n\nMultiplying both sides by $u$ and rearranging terms into standard quadratic form gives:\n\n$$u^2 - u + 1 = 0$$\n\nWe compute the discriminant of this quadratic equation:\n\n$$\\Delta = (-1)^2 - 4 \\cdot 1 \\cdot 1 = 1 - 4 = -3$$\n\nSince the discriminant is negative, there are no real solutions for $u$, which implies that no real number $x$ satisfies the original equation, so the statement is False.",
-    "**E.** → False\n\nThe equation is defined for $x > 0$. Rewriting the logarithmic equation in exponential form gives:\n\n$$x = 2^x$$\n\nConsider the function $f(x) = 2^x - x$ on the domain $x > 0$. Its derivative is:\n\n$$f'(x) = 2^x \\ln 2 - 1$$\n\nSetting $f'(x) = 0$ locates the unique critical point:\n\n$$x_0 = -\\frac{\\ln(\\ln 2)}{\\ln 2} \\approx 0.5287$$\n\nEvaluating the function at this minimum yields:\n\n$$f(x_0) = \\frac{1}{\\ln 2} + \\frac{\\ln(\\ln 2)}{\\ln 2} \\approx 1.4427 - 0.5287 = 0.914 > 0$$\n\nBecause the global minimum of $f(x)$ is strictly positive, $2^x > x$ for all real $x$, meaning $\\log_2 x = x$ has no real solution, so the statement is False."
+    "**A.** → True\n\nRewriting both exponential terms with base $2$ gives:\n\n$$4^{x} = (2^{x})^{2}, \\qquad 2^{x+2} = 4 \\cdot 2^{x}$$\n\nSubstituting $u = 2^{x}$ into the equation produces:\n\n$$u^{2} - 4u + 5 = 0$$\n\nThis is exactly the stated auxiliary equation, so the statement is True.",
+    "**B.** → True\n\nThe discriminant of the auxiliary equation is:\n\n$$\\Delta = (-4)^{2} - 4 \\cdot 1 \\cdot 5 = 16 - 20 = -4$$\n\nBecause $\\Delta < 0$, there is no real value of $u$ solving $u^{2} - 4u + 5 = 0$, hence no real $x$ with $2^{x} = u$. The equation has no real solution, so the statement is True.",
+    "**C.** → True\n\nWith the constant $4$ the auxiliary equation becomes:\n\n$$u^{2} - 4u + 4 = 0$$\n\n$$(u - 2)^{2} = 0$$\n\nThe single double root is $u = 2$, which is strictly positive and therefore admissible:\n\n$$2^{x} = 2 \\implies x = 1$$\n\nThere is exactly one real solution, so the statement is True.",
+    "**D.** → False\n\nWith the constant $-5$ the auxiliary equation reads:\n\n$$u^{2} - 4u - 5 = 0$$\n\n$$(u - 5)(u + 1) = 0$$\n\nThe roots are $u_{1} = 5$ and $u_{2} = -1$. Since $2^{x} > 0$, the negative root is inadmissible, and only:\n\n$$2^{x} = 5 \\implies x = \\log_{2} 5$$\n\nremains. The equation has exactly one real solution rather than two, so the statement is False.",
+    "**E.** → True\n\nThe auxiliary equation $u^{2} - 4u + c = 0$ has two distinct real roots exactly when:\n\n$$\\Delta = 16 - 4c > 0 \\implies c < 4$$\n\nBoth roots are strictly positive exactly when their sum and their product are positive; by Vieta's formulas:\n\n$$u_{1} + u_{2} = 4 > 0, \\qquad u_{1}u_{2} = c > 0$$\n\nCombining the two conditions gives $0 < c < 4$, and in that range each of the two positive roots yields one real $x$. The stated range is correct, so the statement is True."
    ],
-   "solution_overview": "Each statement investigates the existence or count of real solutions for an exponential or logarithmic equation. To evaluate these claims, we apply basic rules of powers, logarithm definitions, substitutions into quadratic form, or range analysis.\n\nFor products of powers with identical exponents, the bases combine via:\n\n$$a^x \\cdot b^x = (a \\cdot b)^x$$\n\nFor power equations with variable bases and exponents, taking the logarithm of both sides brings the exponent down using:\n\n$$\\log(a^b) = b \\cdot \\log a$$\n\nFor exponential terms appearing with doubled exponents or reciprocal powers, substitution by $u = a^x$ (with $u > 0$) converts the expression into a standard polynomial equation.",
+   "solution_overview": "With $u = 2^{x}$ the family $4^{x} - 2^{x+2} + c = 0$ becomes the quadratic equation\n\n$$u^{2} - 4u + c = 0$$\n\nOnly strictly positive roots $u$ correspond to real values of $x$, because $2^{x} > 0$ for every real $x$. Counting solutions therefore means counting positive roots of the auxiliary equation.",
    "difficulty_level": "5/5",
    "sort_order": 192,
    "placeholder": false
@@ -6147,31 +6147,31 @@
   {
    "id": "math-4-193",
    "case_id": "MATH 4.193",
-   "title": "Counting solutions in general families",
+   "title": "A logarithm of a quadratic expression",
    "subsection": "4.4",
-   "context": "Throughout, $\\log$ denotes the decadic logarithm. Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "The equation $\\log_{3}\\left(x^{2} - 2x + 9\\right) = 2$ is studied over the real numbers. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "For every positive number $k$ the equation $2^{x} = k$ has exactly one real solution.",
-    "For every base $a > 1$ the equation $a^{x} = x$ has a real solution.",
-    "The equation $5^{x} = 4^{x} + 3^{x}$ has exactly one real solution.",
-    "The equation $(\\log x)^{3} = \\log x^{4}$ has three solutions.",
-    "The equation $x^{\\log x} = \\frac{1}{100}$ has a real solution."
+    "The argument of the logarithm is strictly positive for every real number $x$.",
+    "The equation has two distinct real solutions.",
+    "The sum of all real solutions equals $2$.",
+    "One of the solutions of the equation is strictly negative.",
+    "The equation $\\log_{3}\\left(x^{2} - 2x + 9\\right) = 1$ has no real solution."
    ],
    "answer_key": [
     true,
+    true,
+    true,
     false,
-    true,
-    true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe function $f(x) = 2^{x}$ is continuous and strictly increasing on the entire real line $\\mathbb{R}$.\n\nThe range of this exponential function is the set of all strictly positive real numbers:\n\n$$\\lim_{x \\to -\\infty} 2^{x} = 0 \\quad \\text{and} \\quad \\lim_{x \\to \\infty} 2^{x} = \\infty$$\n\nBecause $f$ is strictly monotonic, it is a bijection from $\\mathbb{R}$ to $(0, \\infty)$. Applying the logarithm base $2$ to both sides of the equation yields the unique solution:\n\n$$x = \\log_{2}(k)$$\n\nSince $k > 0$, this logarithm is always uniquely defined in the real numbers, so the statement is True.",
-    "**B.** → False\n\nA universal statement of the form for all $a > 1$ can be disproved by finding a single counterexample.\n\nConsider the base $a = 2$. We examine the function:\n\n$$f(x) = 2^{x} - x$$\n\nThe derivative is:\n\n$$f'(x) = 2^{x} \\ln(2) - 1$$\n\nSetting $f'(x) = 0$ gives the global minimum at:\n\n$$x = -\\frac{\\ln(\\ln 2)}{\\ln 2} \\approx 0.5287$$\n\nEvaluating the function at this minimum yields a strictly positive value:\n\n$$f(x) \\approx 2^{0.5287} - 0.5287 \\approx 1.4427 - 0.5287 = 0.9140 > 0$$\n\nSince $2^{x} - x > 0$ for all real $x$, the equation $2^{x} = x$ has no real solution, so the statement is False.",
-    "**C.** → True\n\nDivide both sides of the equation by $5^{x}$ to reformulate the expression:\n\n$$1 = \\left(\\frac{4}{5}\\right)^{x} + \\left(\\frac{3}{5}\\right)^{x}$$\n\nDefine the function $f(x)$ for all real numbers $x$:\n\n$$f(x) = \\left(\\frac{4}{5}\\right)^{x} + \\left(\\frac{3}{5}\\right)^{x}$$\n\nBecause both bases $\\frac{4}{5}$ and $\\frac{3}{5}$ are strictly between $0$ and $1$, both terms are strictly decreasing continuous functions, making $f(x)$ strictly decreasing on $\\mathbb{R}$.\n\nTesting the integer value $x = 2$ gives:\n\n$$f(2) = \\left(\\frac{4}{5}\\right)^{2} + \\left(\\frac{3}{5}\\right)^{2} = \\frac{16}{25} + \\frac{9}{25} = 1$$\n\nBecause $f$ is strictly decreasing, it can take the value $1$ at most once, which makes $x = 2$ the unique real solution, so the statement is True.",
-    "**D.** → True\n\nThe equation is defined for all $x > 0$. Using the power rule for logarithms, we rewrite the right-hand side:\n\n$$\\log(x^{4}) = 4 \\log x$$\n\nSubstituting this into the equation gives:\n\n$$(\\log x)^{3} = 4 \\log x$$\n\nMoving all terms to the left-hand side and factoring yields:\n\n$$(\\log x)^{3} - 4 \\log x = 0$$\n\n$$\\log x \\cdot ((\\log x)^{2} - 4) = 0$$\n\n$$\\log x \\cdot (\\log x - 2) \\cdot (\\log x + 2) = 0$$\n\nThis product equals zero when $\\log x = 0$, $\\log x = 2$, or $\\log x = -2$. Solving for $x$ in each case gives:\n\n$$x = 10^{0} = 1$$\n\n$$x = 10^{2} = 100$$\n\n$$x = 10^{-2} = \\frac{1}{100}$$\n\nAll three values are positive and thus lie in the domain, giving three distinct solutions, so the statement is True.",
-    "**E.** → False\n\nThe equation is defined for $x > 0$. Taking the decadic logarithm of both sides gives:\n\n$$\\log\\left(x^{\\log x}\\right) = \\log\\left(\\frac{1}{100}\\right)$$\n\nApplying the power property of logarithms to the left-hand side and evaluating the logarithm on the right-hand side yields:\n\n$$(\\log x) \\cdot (\\log x) = \\log\\left(10^{-2}\\right)$$\n\n$$(\\log x)^{2} = -2$$\n\nFor any real number $x > 0$, the quantity $\\log x$ is a real number, and the square of any real number must satisfy $(\\log x)^{2} \\ge 0$.\n\nBecause a non-negative real number cannot equal $-2$, no real solution exists, so the statement is False."
+    "**A.** → True\n\nWe examine the quadratic expression $f(x) = x^{2} - 2x + 9$. Its discriminant is:\n\n$$\\Delta = (-2)^{2} - 4 \\cdot 1 \\cdot 9 = 4 - 36 = -32$$\n\nSince $\\Delta < 0$ and the leading coefficient $1$ is positive, the parabola has no real zero and lies entirely above the horizontal axis. Completing the square confirms this:\n\n$$x^{2} - 2x + 9 = (x - 1)^{2} + 8 \\ge 8 > 0$$\n\nThe argument is strictly positive for every real $x$, so the statement is True.",
+    "**B.** → True\n\nConverting the logarithmic equation into exponential form with $3^{2} = 9$ gives:\n\n$$x^{2} - 2x + 9 = 9$$\n\n$$x^{2} - 2x = 0$$\n\n$$x(x - 2) = 0$$\n\nThe candidates are $x_{1} = 0$ and $x_{2} = 2$. Because the argument is positive everywhere, both are valid, so the equation has two distinct real solutions and the statement is True.",
+    "**C.** → True\n\nThe two solutions are $x_{1} = 0$ and $x_{2} = 2$, and their sum is:\n\n$$x_{1} + x_{2} = 0 + 2 = 2$$\n\nThe same value follows from Vieta's formula applied to $x^{2} - 2x = 0$. The sum equals $2$, so the statement is True.",
+    "**D.** → False\n\nA solution is strictly negative when it is smaller than zero.\n\nThe solution set of the equation is $\\{0,\\ 2\\}$. The value $0$ is neither positive nor negative and $2$ is positive, so no solution is strictly negative and the statement is False.",
+    "**E.** → True\n\nWith the right-hand side $1$ the exponential form reads:\n\n$$x^{2} - 2x + 9 = 3^{1} = 3$$\n\n$$x^{2} - 2x + 6 = 0$$\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = (-2)^{2} - 4 \\cdot 1 \\cdot 6 = 4 - 24 = -20$$\n\nSince $\\Delta < 0$, there is no real $x$ satisfying the equation; equivalently, the minimum value $8$ of the argument already exceeds $3$. The equation has no real solution, so the statement is True."
    ],
-   "solution_overview": "This set of statements evaluates standard properties, existence conditions, and solution counts for exponential and logarithmic equations over the real numbers. Throughout the analysis, the decadic logarithm $\\log$ has base $10$ with domain $(0, \\infty)$. Solving equations involving powers and logarithms relies on monotonicity, transformations that isolate algebraic forms in terms of $\\log x$, and the fundamental identity relating exponentials to logarithms.",
+   "solution_overview": "A logarithmic equation $\\log_{b} f(x) = k$ is converted into the algebraic equation\n\n$$f(x) = b^{k}$$\n\ntogether with the domain condition $f(x) > 0$. When $f$ is a quadratic expression with a negative discriminant and a positive leading coefficient, the domain condition holds for every real $x$ and no candidate can be extraneous.",
    "difficulty_level": "5/5",
    "sort_order": 193,
    "placeholder": false
@@ -6213,13 +6213,13 @@
    "case_id": "MATH 4.195",
    "title": "Logistics Pricing and Operational Fleet Equations",
    "subsection": "4.5",
-   "context": "A logistics company operates two delivery tariffs, Tariff A (Regional Cargo) and Tariff B (Express Freight), across an urban delivery network. The billing rates, operational cost structures, tracking metrics, and vehicle efficiency depend on shipment weight $x$ (in hundreds of kilograms, with $x > 0$), fleet operating speed $v$ (in tens of km/h, with $v > 0$), operating duration $t$ (in months, with $t > 0$), and cargo load $w$ (in tons, with $w > 0$). Management relies on five governing equations across these operations:\n1. Under Tariff A, customer billing is $C_A(x) = 75 + 18x$, while Tariff B with an adjustable margin parameter $m > 0$ bills $C_B(x) = 135 + (3m)x$.\n2. The trip handling cost under fleet speed $v$ is modeled by $K(v) = 3v^2 - 27v + 84$, subject to a target budget of $K(v) = 24$.\n3. The unit administrative overhead under congested weight $x$ satisfies $\\frac{2x^2 - 18}{x - 3} = 14 + \\frac{x^2 - 9}{x - 3}$.\n4. Customer satisfaction index $S(t)$ over time $t$ obeys the logarithmic relation $\\log_2(t + 6) + \\log_2(t - 1) = 3$.\n5. Fleet fuel-load efficiency under cargo weight $w$ follows the radical balance $\\sqrt{4w + 9} - \\sqrt{w} = 3$.",
+   "context": "A logistics company checks five separate calculations. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "For the margin parameter value $m = 6$, the pricing schedules $C_A(x)$ and $C_B(x)$ yield an identical total billing charge for exactly one positive shipment weight $x$.",
-    "The budget equation $K(v) = 24$ possesses two distinct admissible operating speeds in tens of km/h, and their sum is strictly greater than 8.",
-    "The rational overhead equation $\\frac{2x^2 - 18}{x - 3} = 14 + \\frac{x^2 - 9}{x - 3}$ admits exactly one valid solution in the domain of the expression, because the algebraic candidate $x = 3$ is extraneous.",
-    "The tracking equation $\\log_2(t + 6) + \\log_2(t - 1) = 3$ produces two real algebraic roots whose product is $-14$, but only the single root $t = 2$ lies in the admissible domain.",
-    "The radical efficiency equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ has no solution in the set of strictly positive cargo weights $w > 0$ because squaring introduces an extraneous root."
+    "Tariff A bills a customer $C_A(x) = 75 + 18x$ and Tariff B bills $C_B(x) = 135 + 3mx$, where $x > 0$ is the shipment weight. For the margin value $m = 6$ the two tariffs give the same total charge for exactly one positive weight $x$.",
+    "The trip handling cost at speed $v > 0$ is $K(v) = 3v^{2} - 27v + 84$. The budget equation $K(v) = 24$ has two different admissible speeds, and their sum is greater than $8$.",
+    "The overhead equation $\\frac{2x^2 - 18}{x - 3} = 14 + \\frac{x^2 - 9}{x - 3}$ has exactly one valid solution, because the candidate $x = 3$ is extraneous.",
+    "The tracking equation $\\log_2(t + 6) + \\log_2(t - 1) = 3$ gives two algebraic roots whose product is $-14$, but only the root $t = 2$ lies in the domain.",
+    "The efficiency equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ has no solution with $w > 0$, because squaring introduces an extraneous root."
    ],
    "answer_key": [
     false,
@@ -6437,13 +6437,13 @@
    "case_id": "MATH 4.202",
    "title": "Enterprise Software Churn and Scaling Dynamics",
    "subsection": "4.5",
-   "context": "A software-as-a-service enterprise analyzes its quarterly growth, pricing structure, infrastructure expenditures, and customer attrition. The financial planning department models quarterly operational parameters using four distinct structural equations. The baseline quarterly marketing budget $m$ in thousands of euros satisfies a linear resource constraint $4m - 18 = m + 27$. The enterprise tier subscription fee $p$ in hundreds of euros determines quarterly gross profit via the quadratic model $\\Pi(p) = -2p^2 + 28p - 48$. The server optimization factor $x > 0$ balances average load balancing costs according to the rational relation $\\frac{6}{x - 2} - \\frac{x + 1}{x - 2} = \\frac{1}{2}$. Finally, the retention half-life parameter $k$ governing customer retention over quarters satisfies the exponential relation $e^{2k} - 6e^k + 8 = 0$, while user growth feedback is modeled by the logarithmic equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ on the domain $y > 1$.",
+   "context": "A software company checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The linear marketing budget equation yields a unique equilibrium expenditure $m$ that is an odd integer strictly greater than 12 thousand euros.",
-    "Under the gross profit equation $\\Pi(p) = 42$, there exist two distinct positive price levels whose sum equals 14 hundred euros.",
-    "The rational server optimization equation has exactly two distinct real solutions in its algebraic formulation, but exactly one admissible solution within the operational domain $x > 2$.",
-    "The logarithmic feedback equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ possesses an extraneous negative algebraic root, yielding exactly one valid solution $y$ that is strictly less than 4.",
-    "The exponential retention equation $e^{2k} - 6e^k + 8 = 0$ admits two real values for $k$, and the sum of these two values is equal to $\\ln(8)$."
+    "The marketing budget $m$ (in thousands of euros) satisfies $4m - 18 = m + 27$. The unique solution is an odd integer greater than $12$.",
+    "The quarterly profit at price $p$ (in hundreds of euros) is $\\Pi(p) = -2p^2 + 28p - 48$. The equation $\\Pi(p) = 42$ has two different positive prices whose sum is $14$.",
+    "The server equation $\\frac{6}{x - 2} - \\frac{x + 1}{x - 2} = \\frac{1}{2}$ has two algebraic solutions, but only one of them lies in the domain $x > 2$.",
+    "The growth equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ has one extraneous negative root, so exactly one valid solution remains, and it is smaller than $4$.",
+    "The retention equation $e^{2k} - 6e^{k} + 8 = 0$ has two real solutions $k$, and their sum equals $\\ln(8)$."
    ],
    "answer_key": [
     true,
@@ -6469,13 +6469,13 @@
    "case_id": "MATH 4.203",
    "title": "Museum Group Ticketing and Capacity Equations",
    "subsection": "4.5",
-   "context": "The management of a metropolitan art museum deploys mathematical models to coordinate group admissions, corporate event pricing, queue throughput, and promotional adoption. For guided educational groups of size $x$, the museum compares a standard package with total cost $C_1(x) = 150 + 12x$ against an all-inclusive package with total cost $C_2(x) = 30 + 20x$. For corporate evening events of size $n$, the per-person ticket price is discounted to $p(n) = 140 - 2n$ with fixed setup costs of \\$600, yielding net revenue $N(n) = n(140 - 2n) - 600$. Operational throughput in the express queue satisfies the radical relation $\\sqrt{5y + 24} - y = 2$ for throughput index $y$. Digital reservation adoption follows the logarithmic relation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ across planning weeks $t$, while a per-visitor subsidy reallocation model is governed by the rational equation $\\frac{120}{x} - \\frac{120}{x + 4} = 1$.",
+   "context": "A museum checks five separate calculations. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "If an educational institution compares the cost structures of the standard and all-inclusive guided tour packages, the group size for which both packages have identical total cost is strictly greater than 16 attendees.",
-    "For the corporate evening event model to yield a target net revenue of \\$1400, there exist exactly two distinct feasible group sizes, and the sum of these two group sizes equals 70 attendees.",
-    "When solving the queue throughput radical equation $\\sqrt{5y + 24} - y = 2$, algebraic squaring produces two candidate real roots, but exactly one of these candidates is an extraneous solution that violates the original equation.",
-    "The logarithmic calibration equation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ possesses a unique positive real solution for the operational timeline parameter $t$.",
-    "The positive solution to the rational budget equation $\\frac{120}{x} - \\frac{120}{x + 4} = 1$ is strictly greater than the break-even group size obtained from the educational package cost parity equation."
+    "A guided group of $x$ people pays $C_1(x) = 150 + 12x$ for the standard package and $C_2(x) = 30 + 20x$ for the all-inclusive package. The group size at which both packages cost the same is greater than $16$.",
+    "An evening event with $n$ guests brings the net revenue $N(n) = n(140 - 2n) - 600$ in dollars. The target $N(n) = 1400$ is reached for exactly two group sizes, and their sum is $70$.",
+    "Squaring the queue equation $\\sqrt{5y + 24} - y = 2$ gives two candidates, but exactly one of them is extraneous.",
+    "The booking equation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ has exactly one positive solution $t$.",
+    "The positive solution of the subsidy equation $\\frac{120}{x} - \\frac{120}{x + 4} = 1$ is greater than the group size at which the two ticket packages cost the same."
    ],
    "answer_key": [
     false,
@@ -6597,13 +6597,13 @@
    "case_id": "MATH 4.207",
    "title": "Metropolitan Bus Network Planning",
    "subsection": "4.5",
-   "context": "A municipal transport authority manages a transit network divided into an inner core (Zone 1) and an outer belt (Zone 2). To evaluate pricing reforms, operational corridor speeds, fleet synchronization, maintenance limits, and digital adoption, the authority analyzes five operational equations across its system: (1) a monthly travel budget model where an upfront administrative fee of \\$12 is charged, single Zone 1 tickets cost \\$2.50, Zone 2 tickets cost \\$4.00, and a commuter who has a \\$120 budget takes twice as many Zone 1 trips as Zone 2 trips; (2) an express corridor speed model $v^2 - 45v - 900 = 0$, where $v > 0$ represents average operating speed in km/h; (3) a cross-zone transfer buffer model governed by the rational equation $\\frac{2t}{t-4} - \\frac{3}{t+2} = \\frac{36}{t^2-2t-8}$ for headway adjustment parameter $t$; (4) a maintenance tolerance model $|2s - 9| = s + 3$ for route mileage variance $s > 0$; and (5) a mobile ticketing adoption rate $P(m) = \\frac{1}{1 + 8e^{-0.25m}}$, where $m \\ge 0$ is the number of elapsed months.",
+   "context": "A city transport authority checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "Under the fare revenue balance model, the total number of monthly trips combining Zone 1 and Zone 2 that exhausts the commuter's budget is an odd integer strictly greater than 35.",
-    "The quadratic equation for the corridor speed admits exactly one physically meaningful real solution, and this operating speed exceeds 55 km/h.",
-    "The rational equation governing the buffer parameter $t$ possesses exactly two distinct real solutions in its algebraic domain, and the sum of these solutions is strictly negative.",
-    "The absolute value equation for the maintenance tolerance admits two positive solutions whose product is strictly less than 20.",
-    "To reach an adoption target of 80% ($P(m) = 0.80$), the required elapsed time expressed in exact logarithmic form is $m = 20\\ln(2)$ months, which corresponds to a duration of less than 14 months."
+    "A commuter pays a fee of \\$12 per month, \\$2.50 for a Zone 1 ticket and \\$4.00 for a Zone 2 ticket, makes twice as many Zone 1 trips as Zone 2 trips and spends exactly \\$120. The total number of trips is an odd integer greater than $35$.",
+    "The corridor speed $v > 0$ in km/h satisfies $v^{2} - 45v - 900 = 0$. The equation has exactly one physically meaningful solution, and this speed is above $55$ km/h.",
+    "The buffer equation $\\frac{2t}{t-4} - \\frac{3}{t+2} = \\frac{36}{t^2-2t-8}$ has exactly two solutions in its domain, and their sum is negative.",
+    "The tolerance equation $|2s - 9| = s + 3$ has two positive solutions, and their product is smaller than $20$.",
+    "Mobile ticket use after $m$ months is $P(m) = \\frac{1}{1 + 8e^{-0.25m}}$. The target $P(m) = 0.80$ is reached at $m = 20\\ln(2)$ months, which is less than $14$ months."
    ],
    "answer_key": [
     false,
@@ -6693,13 +6693,13 @@
    "case_id": "MATH 4.210",
    "title": "Fleet Leasing and Depreciation Models",
    "subsection": "4.5",
-   "context": "A commercial car dealership uses several mathematical models to structure corporate vehicle leases, calculate residual values, and set maintenance budgets. First, the market resale value of an electric sedan after $t$ years decays according to $S(t) = 40\\,000 \\cdot e^{-0.15 t}$, while a corporate client's buyout threshold is modeled by $B(t) = 10\\,000 \\cdot e^{0.05 t}$ (both in euros). Second, the annual servicing cost $M(n)$ (in thousands of euros) for a fleet of $n$ commercial delivery vans is given by $M(n) = n^2 - 18n + 120$, subject to an agreed annual budget cap of $40$ thousand euros ($M(n) = 40$). Third, an excess wear penalty index $x$ (in tens of thousands of kilometers) is governed by the radical equation $\\sqrt{3x + 16} - x = 2$. Fourth, the administrative overhead rate per contract $q$ (in hundreds of euros) must satisfy the rational equilibrium equation $\\frac{2q}{q - 2} - \\frac{q + 6}{q + 2} = \\frac{16}{q^2 - 4}$. Fifth, an end-of-year promotional rebate $y$ under a negotiated policy parameter $p$ satisfies the linear relation $(p - 5)y + 3 = 2y + p - 1$.",
+   "context": "A car dealership checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The time $t$ at which the market resale value $S(t)$ equals the buyout threshold $B(t)$ is uniquely determined and equals an integer multiple of $\\ln(2)$.",
-    "The quadratic equation for the fleet size $n$ under the capped maintenance budget has two distinct real solutions whose sum is $18$ and whose product is $80$.",
-    "Squaring both sides of the wear-and-tear radical equation produces two real algebraic roots, both of which are valid solutions to the original equation.",
-    "The rational administrative overhead equation possesses exactly two distinct real solutions in its domain of definition.",
-    "If the discount parameter is set to $p = 7$, the promotional rebate linear equation possesses infinitely many solutions for $y$."
+    "After $t$ years the resale value is $S(t) = 40\\,000 e^{-0.15t}$ euros and the buyout threshold is $B(t) = 10\\,000 e^{0.05t}$ euros. The time at which $S(t) = B(t)$ is unique and equals an integer multiple of $\\ln(2)$.",
+    "The servicing cost of $n$ vans is $M(n) = n^{2} - 18n + 120$ in thousands of euros. The equation $M(n) = 40$ has two different real solutions whose sum is $18$ and whose product is $80$.",
+    "Squaring the wear equation $\\sqrt{3x + 16} - x = 2$ gives two algebraic roots, and both of them solve the original equation.",
+    "The overhead equation $\\frac{2q}{q - 2} - \\frac{q + 6}{q + 2} = \\frac{16}{q^2 - 4}$ has exactly two solutions in its domain.",
+    "The rebate $y$ under the policy parameter $p$ satisfies $(p - 5)y + 3 = 2y + p - 1$. For $p = 7$ this equation has infinitely many solutions."
    ],
    "answer_key": [
     true,
@@ -6725,13 +6725,13 @@
    "case_id": "MATH 4.211",
    "title": "Backhaus Wien Franchise Royalty and Performance Equations",
    "subsection": "4.5",
-   "context": "A Viennese artisanal bakery franchise, Backhaus Wien, evaluates its partner outlets using four distinct mathematical models covering contract royalties, performance bonuses, maintenance surcharges, and brand growth. Under the standard royalty contract, an outlet generating a monthly revenue of $x$ (in thousands of euros) pays a royalty of $R_1(x) = 0.06x + 3.6$, whereas a dynamic revenue-sharing agreement charges $R_2(x) = 0.10x + 1.2$. Monthly performance bonuses $B(q)$ (in hundreds of euros) depend on the volume $q$ of artisanal loaves baked (in thousands of units) via $B(q) = -q^2 + 14q - 40$. In addition, the technical maintenance surcharge depends on an efficiency rating $s \\ge 0$ satisfying $\\sqrt{3s + 16} - s = 2$, the store overhead coefficient $w$ satisfies $\\frac{w}{w-2} + \\frac{2}{w+2} = \\frac{8}{w^2-4}$, and long-term brand valuation after $t$ operating years follows the relation $\\ln(4t - 3) - \\ln(t + 2) = \\ln(2)$.",
+   "context": "A Viennese bakery franchise checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "If the dynamic royalty contract introduces a promotional marketing discount of $k$ thousand euros such that $R_2(x) = 0.10x + 1.2 - k$, the breakeven monthly revenue at which both royalty schedules are equal increases by exactly $25$ thousand euros for every one-unit increase in $k$.",
-    "The monthly performance bonus $B(q)$ is strictly positive for all monthly production quantities between $3$ and $11$ thousand loaves.",
-    "Squaring both sides of the radical maintenance efficiency equation yields two real algebraic roots, but exactly one of these roots is an admissible solution because the other is extraneous.",
-    "The logarithmic brand valuation equation yields a unique operating duration $t$ in the natural domain of the logarithmic expressions, and this duration is strictly less than $3$ years.",
-    "The rational equation governing the store overhead coefficient $w$ possesses two distinct real solutions in its algebraic domain."
+    "An outlet with monthly revenue $x$ (in thousands of euros) pays $R_1(x) = 0.06x + 3.6$ under the standard contract and $R_2(x) = 0.10x + 1.2 - k$ under the dynamic contract with a discount $k$. The revenue at which both contracts charge the same amount rises by exactly $25$ thousand euros for every increase of $k$ by one unit.",
+    "The monthly bonus for $q$ thousand loaves is $B(q) = -q^{2} + 14q - 40$. This bonus is strictly positive for every production volume between $3$ and $11$ thousand loaves.",
+    "Squaring the maintenance equation $\\sqrt{3s + 16} - s = 2$ gives two algebraic roots, but exactly one of them is admissible.",
+    "The valuation equation $\\ln(4t - 3) - \\ln(t + 2) = \\ln(2)$ has exactly one solution in its domain, and this duration is shorter than $3$ years.",
+    "The overhead equation $\\frac{w}{w-2} + \\frac{2}{w+2} = \\frac{8}{w^2-4}$ has two different solutions in its algebraic domain."
    ],
    "answer_key": [
     true,
