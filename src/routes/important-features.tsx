@@ -75,7 +75,24 @@ function ImportantFeaturesPage() {
             <FeatureCard key={f.title} feature={f} />
           ))}
         </div>
+
+        <section className="mt-14">
+          <div className="mb-5 max-w-2xl">
+            <span className="mb-3 inline-block rounded-full border border-border bg-card px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              Live Preview
+            </span>
+            <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+              Custom Mock Builder
+            </h2>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              Watch how a personal Economics mock exam is assembled: pick the subtopics, set the
+              number of questions, shape the topic weights, and the exam opens on question one.
+            </p>
+          </div>
+          <MockBuilderSimulator />
+        </section>
       </main>
+
     </div>
   );
 }
