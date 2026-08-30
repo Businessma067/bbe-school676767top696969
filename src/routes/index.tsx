@@ -7,7 +7,9 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SiteHeader } from "@/components/SiteHeader";
-import { HowItWorksVideo } from "@/components/HowItWorksVideo";
+import FiveStatementSimulator from "@/components/FiveStatementSimulator";
+import MathParabolaSimulator from "@/components/MathParabolaSimulator";
+import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -197,7 +199,13 @@ function Index() {
             })}
           </div>
           <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
-            <HowItWorksVideo subject={demoSubject} />
+            {demoSubject === "economics" ? (
+              <FiveStatementSimulator />
+            ) : demoSubject === "math" ? (
+              <MathParabolaSimulator />
+            ) : (
+              <EnglishReadingSimulator />
+            )}
           </div>
         </section>
 

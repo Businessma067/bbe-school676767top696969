@@ -68,10 +68,10 @@ export default function FiveStatementSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE_DURATION = 840;
+    const MOVE_DURATION = 620;
     const CLICK_PRESS_DURATION = 90;
     const CLICK_SETTLE_DURATION = 90;
-    const STEP_SETTLE_DURATION = 208;
+    const STEP_SETTLE_DURATION = 150;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -196,7 +196,7 @@ export default function FiveStatementSimulator() {
 
   return (
     // Outer "video frame" — matches the Rimini video block styling above
-    <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[520px] lg:h-[560px]">
+    <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[540px] lg:h-[600px]">
       <div
         ref={stageRef}
         className={cn(
@@ -204,20 +204,6 @@ export default function FiveStatementSimulator() {
           dim ? "opacity-40" : "opacity-100",
         )}
       >
-        {/* Browser chrome */}
-        <div className="flex items-center gap-2 border-b border-border bg-secondary/60 px-4 py-2.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-          <div className="ml-3 flex-1">
-            <div className="mx-auto max-w-md rounded-md border border-border bg-background px-3 py-1 text-center text-[11px] text-muted-foreground">
-              bbe-school.app / demo-practice / economics / {CASE.case_id.toLowerCase().replace(" ", "-")}
-            </div>
-          </div>
-          <div className="hidden text-[10px] font-semibold tracking-widest text-primary sm:block">
-            LIVE DEMO
-          </div>
-        </div>
 
         <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
           {/* LEFT: real CaseCard replica */}
