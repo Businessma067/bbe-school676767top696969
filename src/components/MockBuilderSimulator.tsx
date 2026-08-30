@@ -108,19 +108,34 @@ export default function MockBuilderSimulator() {
       });
     };
 
+    const clampToStage = (p: { x: number; y: number }) => {
+      const stage = stageRef.current;
+      if (!stage) return p;
+      const r = stage.getBoundingClientRect();
+      return {
+        x: Math.max(4, Math.min(p.x, r.width - 14)),
+        y: Math.max(4, Math.min(p.y, r.height - 14)),
+      };
+    };
+
+    const setCursorAt = (p: { x: number; y: number }) => {
+      const c = clampToStage(p);
+      cursorRef.current = c;
+      setCursor(c);
+    };
+
     const glideCursor = (target: { x: number; y: number }, duration = 620) => {
       const start = { ...cursorRef.current };
-      const dist = Math.hypot(target.x - start.x, target.y - start.y);
+      const goal = clampToStage(target);
+      const dist = Math.hypot(goal.x - start.x, goal.y - start.y);
       if (dist < 1) return Promise.resolve();
       // scale duration a bit with distance so short hops don't feel sluggish
       const d = Math.max(320, Math.min(duration, 240 + dist * 1.6));
       return tween(d, (eased) => {
-        const next = {
-          x: start.x + (target.x - start.x) * eased,
-          y: start.y + (target.y - start.y) * eased,
-        };
-        cursorRef.current = next;
-        setCursor(next);
+        setCursorAt({
+          x: start.x + (goal.x - start.x) * eased,
+          y: start.y + (goal.y - start.y) * eased,
+        });
       });
     };
 
@@ -131,6 +146,7 @@ export default function MockBuilderSimulator() {
       if (!el) return null;
       const s = stage.getBoundingClientRect();
       const eb = el.getBoundingClientRect();
+      if (eb.width === 0 && eb.height === 0) return null;
       return {
         x: eb.left - s.left + eb.width / 2 - 5,
         y: eb.top - s.top + eb.height / 2 - 3,
@@ -141,18 +157,30 @@ export default function MockBuilderSimulator() {
       const stage = stageRef.current;
       const box = scrollRef.current;
       if (!stage) return;
-      let el = stage.querySelector<HTMLElement>(selector);
+      const el = stage.querySelector<HTMLElement>(selector);
       if (!el) return;
+
       if (box && box.contains(el)) {
         const lb = box.getBoundingClientRect();
         const eb0 = el.getBoundingClientRect();
         const desired = box.scrollTop + (eb0.top - lb.top) - lb.height / 2 + eb0.height / 2;
         const clamped = Math.max(0, Math.min(desired, box.scrollHeight - box.clientHeight));
-        // glide the cursor while the list scrolls, so both move together
-        const before = pointOf(selector);
-        const scrolling = smoothScroll(box, clamped, 700);
-        if (before) void glideCursor(before, 520);
-        await scrolling;
+        if (Math.abs(clamped - box.scrollTop) > 1) {
+          // Scroll and let the cursor chase the element's *live* position, so it
+          // never lands on a stale coordinate once the list has moved.
+          const startCursor = { ...cursorRef.current };
+          const startScroll = box.scrollTop;
+          const change = clamped - startScroll;
+          await tween(700, (eased) => {
+            box.scrollTop = startScroll + change * eased;
+            const live = pointOf(selector);
+            if (!live) return;
+            setCursorAt({
+              x: startCursor.x + (live.x - startCursor.x) * eased,
+              y: startCursor.y + (live.y - startCursor.y) * eased,
+            });
+          });
+        }
       }
       if (cancelled) return;
       await new Promise<void>((r) => requestAnimationFrame(() => r()));
@@ -165,9 +193,9 @@ export default function MockBuilderSimulator() {
     const snapCursor = (selector: string) => {
       const p = pointOf(selector);
       if (!p) return;
-      cursorRef.current = p;
-      setCursor(p);
+      setCursorAt(p);
     };
+
 
 
     const click = async () => {
