@@ -5365,19 +5365,49 @@ The converse is $Q \\Rightarrow P$. The inverse is $\\neg P \\Rightarrow \\neg Q
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that J is a liar. The claim is that same type, so the statement is True.`,
+The claim says J is a liar. Test the opposite by assuming J is a truth-teller. J's sentence must then be true, so exactly one of the three is a truth-teller. Since J already fills that one place, K and L must both be liars:
+
+$$J=\\text{true},\\qquad K=L=\\text{false}$$
+
+K's sentence "J is lying" is false, which fits K being a liar. But L says that K and L are the same type. Under this assignment they are both liars, so L's sentence is true. A liar cannot make a true statement, and the J-truthful case fails.
+
+Therefore J cannot be a truth-teller and must be a liar, so the statement is True.`,
       `**B.** → True
 
-The overview recovered that K is a truth-teller. The claim is that same type, so the statement is True.`,
+The claim says K is a truth-teller. From letter A, J is already forced to be a liar. K's sentence is precisely "J is lying," so its content is true:
+
+$$\\neg J\\quad\\Rightarrow\\quad \\text{K's sentence is true}$$
+
+An islander's type must match the truth value of the sentence spoken. K therefore cannot be a liar while making this true accusation. K is a truth-teller, so the statement is True.`,
       `**C.** → True
 
-The overview recovered that L is a truth-teller. The claim is that same type, so the statement is True.`,
+The claim says L is a truth-teller. The shared forcing has J as a liar and K as a truth-teller. Try making L a liar as well:
+
+$$J=\\text{false},\qquad K=\\text{true},\qquad L=\\text{false}$$
+
+Then K would be the only truth-teller. That makes J's sentence, "Exactly one of us is a truth-teller," true. But J is already forced to be a liar, so this case is impossible.
+
+The only alternative is $L=\\text{true}$. With K and L both truth-tellers, L's "same type" sentence is indeed true, so the statement is True.`,
       `**D.** → False
 
-The overview recovered J a liar and K, L truth-tellers, so the truth-teller count is $2$. J's sentence claimed the count was $1$, and a liar's sentence is false. The actual count is two, not one, so the statement is False.`,
+The claim requires the final assignment to contain exactly one truth-teller. J is forced to be a liar, and K's true accusation then forces K to be a truth-teller. If L were a liar, K alone would be the one truth-teller:
+
+$$J=0,\qquad K=1,\qquad L=0$$
+
+That would make J's "exactly one" sentence true, contradicting J's liar type. Thus L must also be a truth-teller. The actual count is
+
+$$0+1+1=2,$$
+
+not one, so the statement is False.`,
       `**E.** → False
 
-The overview recovered one surviving assignment: J a liar, K and L truth-tellers. The J-truthful branch and the L-liar branch both collapsed. One consistent picture is not two, so the statement is False.`,
+The claim needs a second assignment, so split first on J's type. If J is truthful, J's sentence makes K and L liars, but then L truthfully says that K and L are the same type. That branch fails.
+
+If J is a liar, K's accusation "J is lying" is true, so K must be truthful. Now split on L. If L is a liar, K is the unique truth-teller, which makes J's sentence true and breaks J's liar type. Hence L must be truthful:
+
+$$J=\\text{liar},\qquad K=L=\\text{truth-teller}$$
+
+In this assignment J's sentence is false, K's is true, and L's is true, so it survives. Every alternative case has failed, leaving no second assignment, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 22,
@@ -5420,19 +5450,56 @@ The unique assignment is $J$ false, $K$ true, $L$ true: J a liar, K and L truth-
     tactical_explanations: [
       `**A.** → True
 
-Rule (4) already asserts $D$. Both recovered rosters include Dmitri, so the statement is True.`,
+The claim says Dmitri attends. Rule (4) states this directly:
+
+$$(4)\qquad D$$
+
+The other rules can restrict Ana, Boris, and Ceci, but none can cancel an explicit fact. For example, $\\{A,C,D\\}$ obeys (1) and (2), and Ana's presence activates the exception in (3), so rule (4) is consistent with the system. Dmitri is in every solution, so the statement is True.`,
       `**B.** → False
 
-Uniqueness about Ana would need the two recovered rosters to agree on $A$. One has Ana in and the other has Ana out, so the statement is False.`,
+The claim says the rules force one truth value for Ana. Test both values.
+
+If $A$ is true, rule (1) gives $\\neg B$, and rule (2) then gives $C$:
+
+$$A\\Rightarrow\\neg B\\Rightarrow C$$
+
+Rule (4) gives $D$. Because Ana attends, the exception in rule (3) applies, so Ceci and Dmitri may attend together. Thus $\\{A,C,D\\}$ is legal.
+
+If $A$ is false, choose $B$ true and $C$ false. Rules (1) and (2) are idle, rule (3) has false hypothesis $C\\land\\neg A$, and rule (4) gives $D$. Thus $\\{B,D\\}$ is also legal. Ana is in one valid roster and out of another, so the statement is False.`,
       `**C.** → True
 
-The Ana-in roster is $\\{A,C,D\\}$, which has size $3$. An existence claim needs one legal witness, so the statement is True.`,
+The claim only needs one valid roster with exactly three attendees. Start with Ana attending. Rule (1) forces Boris out, and then rule (2) forces Ceci in:
+
+$$A\\Rightarrow\\neg B\\Rightarrow C$$
+
+Rule (4) puts Dmitri in. Rule (3) normally acts when $C\\land\\neg A$ holds, but here $A$ is true, so its "unless Ana attends" exception leaves Dmitri unrestricted. The roster is
+
+$$\\{A,C,D\\},\qquad |\\{A,C,D\\}|=3.$$
+
+This is a legal witness for the existence claim, so the statement is True.`,
       `**D.** → False
 
-The recovered rosters are $\\{A,C,D\\}$ and $\\{B,D\\}$. The first still has Ana; the second still has Boris. Neither has both absent, so the statement is False.`,
+The claim requires a solution with both Ana and Boris absent. Assume
+
+$$\\neg A\\land\\neg B.$$
+
+Rule (2) turns $\\neg B$ into $C$. Since Ana is absent, the exception in rule (3) is unavailable, so $C\\land\\neg A$ forces Dmitri out:
+
+$$\\neg B\\overset{(2)}{\\Rightarrow}C,\qquad
+C\\land\\neg A\\overset{(3)}{\\Rightarrow}\\neg D.$$
+
+But rule (4) requires $D$. The attempted assignment forces both $D$ and $\\neg D$, so Ana and Boris cannot both be absent, so the statement is False.`,
       `**E.** → False
 
-Drop the exception in (3), so $C\\Rightarrow\\neg D$ with no escape. Rule (4) keeps $D$ true, and that forces $\\neg C$. The Ana-in roster had both $C$ and $D$, so it dies. The Ana-out roster $\\{B,D\\}$ already has Ceci out, so the stricter (3) is idle and still holds. One legal roster remains, so the statement is False.`,
+The claim says replacing rule (3) by the stricter implication would destroy every solution:
+
+$$(3')\qquad C\\Rightarrow\\neg D.$$
+
+Rule (4) still gives $D$, so the contrapose of (3') forces $\\neg C$. The contrapose of rule (2), $\\neg C\\Rightarrow B$, then puts Boris in. Choose Ana out:
+
+$$\\neg A,\qquad B,\qquad\\neg C,\qquad D.$$
+
+This is the roster $\\{B,D\\}$. Rule (1) is idle because Ana is out, rule (2) is idle because Boris is in, (3') is idle because Ceci is out, and (4) holds. At least one solution survives the stricter rule, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 23,
@@ -5483,19 +5550,60 @@ Both cases survive.`,
     tactical_explanations: [
       `**A.** → True
 
-The contrapose of rule (4) is $N\\Rightarrow\\neg Z$. That is the claimed implication, so the statement is True.`,
+The claim asks what follows if Noah joins. Rule (4) says that Zoe joining forces Noah out:
+
+$$(4)\qquad Z\\Rightarrow\\neg N.$$
+
+Take its contrapositive by negating and reversing both sides:
+
+$$\\neg(\\neg N)\\Rightarrow\\neg Z,$$
+
+so
+
+$$N\\Rightarrow\\neg Z.$$
+
+Thus any roster with Noah must omit Zoe, exactly as claimed, so the statement is True.`,
       `**B.** → False
 
-The overview recovered the chain $L\\Rightarrow Z\\Rightarrow\\neg N$. Leo joining already forces Noah out, so the statement is False.`,
+The claim requires a valid roster containing both Leo and Noah. Assume $L\\land N$. Rule (2), "Leo joins only if Zoe joins," means
+
+$$(2)\qquad L\\Rightarrow Z.$$
+
+Rule (4) then sends Zoe's attendance to Noah's absence:
+
+$$L\\overset{(2)}{\\Rightarrow}Z
+\\overset{(4)}{\\Rightarrow}\\neg N.$$
+
+This contradicts the assumed $N$. Rules (2) and (4) therefore forbid Leo and Noah from joining together, so the statement is False.`,
       `**C.** → True
 
-The overview recovered $\\{M\\}$ as a legal roster: Maria in, Leo out. One witness is enough, so the statement is True.`,
+The claim needs one solution with Maria in and Leo out. Try the roster with Maria alone:
+
+$$N=0,\qquad M=1,\qquad L=0,\qquad Z=0.$$
+
+Rule (1) is satisfied because its hypothesis $N$ is false. Rule (2) is satisfied because Leo is out. Rule (3), $M\\lor L$, holds through Maria. Rule (4) is satisfied because Zoe is out.
+
+Thus $\\{M\\}$ is a legal roster with Maria joining and Leo not joining, so the statement is True.`,
       `**D.** → True
 
-The contrapose of rule (1) is $\\neg M\\Rightarrow\\neg N$. That is the claimed implication, so the statement is True.`,
+The claim asks whether Maria's absence forces Noah's absence. Rule (1) is
+
+$$(1)\qquad N\\Rightarrow M.$$
+
+Its contrapositive reverses the implication and negates both parts:
+
+$$\\neg M\\Rightarrow\\neg N.$$
+
+If Maria is out, Noah cannot be in, because Noah's presence would immediately require Maria by rule (1). This is exactly the claimed consequence, so the statement is True.`,
       `**E.** → False
 
-The overview recovered $\\{M\\}$ as legal, and that roster omits Zoe. A "must join" claim fails on one counterexample, so the statement is False.`,
+The claim says every legal roster includes Zoe. To disprove a "must" claim, it is enough to build one legal roster with $\\neg Z$.
+
+Let Maria join alone:
+
+$$\\{M\\},\qquad N=L=Z=0.$$
+
+With Noah out, rule (1) is idle. With Leo out, rule (2) is idle. Maria satisfies rule (3), $M\\lor L$, and Zoe's absence makes rule (4) idle. This valid roster omits Zoe, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 24,
@@ -5544,19 +5652,52 @@ Five rosters survive in all.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $B\\Rightarrow C\\Rightarrow\\neg D$. Ben playing therefore forces Dan out, so the statement is True.`,
+The claim asks what Ben's participation forces. Rule (1) sends Ben to Carla, and rule (3) sends Carla to Dan's absence:
+
+$$B\\overset{(1)}{\\Rightarrow}C
+\\overset{(3)}{\\Rightarrow}\\neg D.$$
+
+There is no branch in which Ben plays without Carla, and no branch in which Carla and Dan both play. Therefore Ben playing always forces Dan out, so the statement is True.`,
       `**B.** → False
 
-The same recovered chain is $B\\Rightarrow\\neg D$. Ben and Dan cannot both play, so the statement is False.`,
+The claim requires a legal roster with both Ben and Dan. Assume $B\\land D$. By rule (1), Ben forces Carla in:
+
+$$B\\overset{(1)}{\\Rightarrow}C.$$
+
+Then rule (3) forces Dan out:
+
+$$C\\overset{(3)}{\\Rightarrow}\\neg D.$$
+
+The attempted roster contains $D$ and also forces $\\neg D$. Ella's status cannot repair that collision, so Ben and Dan cannot play together, so the statement is False.`,
       `**C.** → True
 
-The overview recovered $\\{E\\}$ as a legal roster: Ella in, and Ben, Carla, and Dan out. One witness is enough, so the statement is True.`,
+The claim needs one valid roster in which Ella is the only player. Assign
+
+$$B=0,\qquad C=0,\qquad D=0,\qquad E=1.$$
+
+Rules (1), (2), and (3) all have false hypotheses, so none forces another player in. Rule (4), $B\\lor E$, is satisfied by Ella. Hence $\\{E\\}$ is a legal one-person roster, so the statement is True.`,
       `**D.** → True
 
-The contrapose of rule (3) is $D\\Rightarrow\\neg C$. That is the claimed implication, so the statement is True.`,
+The claim asks whether Dan playing forces Carla out. Rule (3) says
+
+$$(3)\qquad C\\Rightarrow\\neg D.$$
+
+Its contrapositive negates and reverses the two parts:
+
+$$\\neg(\\neg D)\\Rightarrow\\neg C,$$
+
+which simplifies to
+
+$$D\\Rightarrow\\neg C.$$
+
+Thus any roster containing Dan must omit Carla, exactly as claimed, so the statement is True.`,
       `**E.** → False
 
-The overview recovered $\\{E\\}$ and $\\{D,E\\}$, both of which omit Carla. A "must play" claim fails on either roster, so the statement is False.`,
+The claim says Carla appears in every legal roster. Test Carla's absence by letting Ella play alone:
+
+$$\\{E\\},\qquad B=C=D=0.$$
+
+Ben's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 25,
@@ -5605,19 +5746,52 @@ Five rosters survive in all.`,
     tactical_explanations: [
       `**A.** → True
 
-The contrapose of rule (4) is $O\\Rightarrow\\neg Q$. That is the claimed implication, so the statement is True.`,
+The claim asks what follows if Owen cooks. Rule (4), "Quinn cooks only if Owen does not," translates as
+
+$$(4)\qquad Q\\Rightarrow\\neg O.$$
+
+Taking the contrapositive gives
+
+$$\\neg(\\neg O)\\Rightarrow\\neg Q,$$
+
+so
+
+$$O\\Rightarrow\\neg Q.$$
+
+Therefore an evening with Owen cooking cannot also have Quinn cooking, so the statement is True.`,
       `**B.** → False
 
-Rule (1) is $O\\Rightarrow\\neg P$. Both cooking would make the hypothesis true and the conclusion false, so the statement is False.`,
+The claim requires a legal evening with Owen and Priya both cooking. Assume $O\\land P$. Rule (1) applies as soon as Owen cooks:
+
+$$(1)\qquad O\\Rightarrow\\neg P.$$
+
+The assumption $O$ therefore forces $\\neg P$, directly contradicting the assumed $P$. Quinn's status does not affect rule (1), so no assignment can contain both Owen and Priya, so the statement is False.`,
       `**C.** → False
 
-Rule (2) requires $O\\lor P$. The attempted evening $\\{Q\\}$ has neither Owen nor Priya, which breaks (2), so the statement is False.`,
+The claim proposes Quinn cooking alone, with both Owen and Priya absent:
+
+$$\\neg O\\land\\neg P\\land Q.$$
+
+Rule (2) requires at least one of Owen or Priya:
+
+$$(2)\qquad O\\lor P.$$
+
+Under the proposed assignment both disjuncts are false. Although Quinn with Owen absent satisfies rule (4), satisfying one rule cannot repair the failure of rule (2). Quinn cannot cook alone under all four rules, so the statement is False.`,
       `**D.** → True
 
-Rule (3) is $P\\Rightarrow Q$. That is the claimed guarantee, so the statement is True.`,
+The claim says Priya's participation guarantees Quinn's. Rule (3) is exactly the forward implication
+
+$$(3)\qquad P\\Rightarrow Q.$$
+
+Starting with $P$, rule (3) immediately forces $Q$. Rule (4) then forces $\\neg O$, which is compatible with rule (2) because Priya already satisfies $O\\lor P$. There is no exception to rule (3), so Priya cooking always brings Quinn in, so the statement is True.`,
       `**E.** → False
 
-The overview recovered $\\{P,Q\\}$ as a legal evening, and that evening omits Owen. A "must cook" claim fails on one counterexample, so the statement is False.`,
+The claim says Owen cooks in every solution. Test the opposite by putting Priya in instead. Rule (3) then brings Quinn in:
+
+$$P\\overset{(3)}{\\Rightarrow}Q
+\\overset{(4)}{\\Rightarrow}\\neg O.$$
+
+The resulting evening is $\\{P,Q\\}$. Rule (1) is idle because Owen is out, rule (2) is satisfied by Priya, rule (3) is satisfied by Quinn, and rule (4) is satisfied because Owen is out. This valid evening omits Owen, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 26,
@@ -5668,19 +5842,65 @@ Those are the only two legal evenings.`,
     tactical_explanations: [
       `**A.** → False
 
-The overview recovered that Diego's chain collides on Fatima, so $D$ is false in every legal roster. There is no valid scenario in which Diego attends, so the statement is False.`,
+The claim needs at least one valid roster with Diego. Assume $D$. Rule (1) forces Fatima in, and rule (3) then forces Grace out:
+
+$$D\\overset{(1)}{\\Rightarrow}F
+\\overset{(3)}{\\Rightarrow}\\neg G.$$
+
+Rule (2), "Grace goes unless Hugo goes," is $G\\lor H$. Since Grace is out, Hugo must go. Rule (6) then forces Fatima out:
+
+$$\\neg G\\overset{(2)}{\\Rightarrow}H
+\\overset{(6)}{\\Rightarrow}\\neg F.$$
+
+Diego's attendance has forced both $F$ and $\\neg F$. Thus no valid roster contains Diego, so the statement is False.`,
       `**B.** → True
 
-The contrapose of rule (6) is $F\\Rightarrow\\neg H$. That is the claimed implication, so the statement is True.`,
+The claim asks whether Fatima going forces Hugo out. Rule (6), "Hugo goes only if Fatima does not," means
+
+$$(6)\qquad H\\Rightarrow\\neg F.$$
+
+Take the contrapositive:
+
+$$\\neg(\\neg F)\\Rightarrow\\neg H,$$
+
+which simplifies to
+
+$$F\\Rightarrow\\neg H.$$
+
+Therefore Fatima and Hugo cannot attend together, exactly as the claim says, so the statement is True.`,
       `**C.** → True
 
-The overview recovered $\\neg D$ in every roster, so rule (4) forces $H$ throughout. Hugo attends in every surviving assignment, so the statement is True.`,
+The claim says Hugo appears in every valid roster. Letter A forced Diego out:
+
+$$\\neg D.$$
+
+Rule (4) requires at least one of Diego or Hugo, so
+
+$$(4)\qquad D\\lor H.$$
+
+With the Diego disjunct false, the Hugo disjunct must be true:
+
+$$\\neg D\\land(D\\lor H)\\Rightarrow H.$$
+
+Every valid roster therefore contains Hugo, so the statement is True.`,
       `**D.** → True
 
-The overview recovered $\\{H,G,I\\}$ as a legal roster. Grace and Iris both attend there, so the statement is True.`,
+The claim needs one legal roster containing both Grace and Iris. Try
+
+$$\\{G,H,I\\},\qquad D=F=0.$$
+
+Rule (1) is idle because Diego is out. Rule (2), $G\\lor H$, holds. Rule (3) is idle because Fatima is out. Hugo satisfies rule (4), Iris satisfies rule (5) because Diego is out, and Hugo satisfies rule (6) because Fatima is out.
+
+All six rules hold while Grace and Iris both attend, so the statement is True.`,
       `**E.** → False
 
-The claim needs $I\\Rightarrow F$. The recovered roster $\\{H,G,I\\}$ has Iris in and Fatima out, so the statement is False.`,
+The claim is the implication $I\\Rightarrow F$. To refute it, look for a legal roster with Iris in and Fatima out. Use
+
+$$\\{G,H,I\\},\qquad I=1,\qquad F=0.$$
+
+As rule (5) requires, Iris has Diego out. Hugo then satisfies rule (4), and rule (6) agrees with Fatima being out. Grace satisfies rule (2), while rules (1) and (3) are idle because Diego and Fatima are absent.
+
+This valid roster makes the hypothesis $I$ true and the conclusion $F$ false, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 27,
@@ -5731,19 +5951,59 @@ The legal rosters are $\\{H\\}$, $\\{H,G\\}$, $\\{H,I\\}$, and $\\{H,G,I\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that Aiden needs Bella and that Bella is impossible. Aiden is therefore out of every legal roster, so the statement is True.`,
+The claim says Aiden is absent from every valid roster. Test the opposite by assuming $A$. Rule (1) forces both Bella and Caleb, and rule (4) sends Caleb to Ethan:
+
+$$A\\overset{(1)}{\\Rightarrow}(B\\land C),\qquad
+C\\overset{(4)}{\\Rightarrow}E.$$
+
+Rule (6), $E\\Rightarrow\\neg B$, then forces Bella out:
+
+$$A\\Rightarrow C\\Rightarrow E\\Rightarrow\\neg B.$$
+
+But rule (1) already forced $B$. Since $A$ leads to both $B$ and $\\neg B$, Aiden cannot present in any valid scenario, so the statement is True.`,
       `**B.** → False
 
-The overview recovered that Bella removes Daisy by (3) and Ethan by (6), leaving rule (2) empty. No legal roster contains Bella, so the statement is False.`,
+The claim needs one valid scenario with Bella presenting. Assume $B$. Rule (3) forces Daisy out. Rule (6) says $E\\Rightarrow\\neg B$; its contrapositive forces Ethan out when Bella is in:
+
+$$B\\overset{(3)}{\\Rightarrow}\\neg D,\qquad
+B\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg E.$$
+
+Rule (2) requires $D\\lor E$, but both choices have now been forced false:
+
+$$\\neg D\\land\\neg E\\quad\\text{contradicts}\quad D\\lor E.$$
+
+No valid scenario can contain Bella, so the statement is False.`,
       `**C.** → True
 
-Rule (4) is $C\\Rightarrow E$. That is the claimed implication, so the statement is True.`,
+The claim asks what must happen if Caleb presents. Rule (4), "Caleb presents only if Ethan presents," translates in the only-if direction as
+
+$$(4)\qquad C\\Rightarrow E.$$
+
+Starting from $C$, rule (4) immediately forces $E$. The reverse $E\\Rightarrow C$ is not promised, but the claim uses the correct forward direction. Therefore every roster with Caleb also has Ethan, so the statement is True.`,
       `**D.** → False
 
-The overview recovered that Faye needs Aiden and that Aiden is already out. Faye is therefore out of every legal roster, so the statement is False.`,
+The claim needs a valid roster with Faye. Assume $F$. Rule (5) forces Aiden, and rule (1) then forces Bella and Caleb:
+
+$$F\\overset{(5)}{\\Rightarrow}A
+\\overset{(1)}{\\Rightarrow}(B\\land C).$$
+
+Caleb forces Ethan by rule (4), while Ethan forces Bella out by rule (6):
+
+$$C\\overset{(4)}{\\Rightarrow}E
+\\overset{(6)}{\\Rightarrow}\\neg B.$$
+
+This collides with the Bella forced by rule (1). Faye's attendance creates a contradiction, so no valid roster contains Faye, so the statement is False.`,
       `**E.** → False
 
-The overview recovered five legal rosters. Uniqueness needs exactly one, so the statement is False.`,
+The claim says exactly one valid roster exists. Two distinct legal rosters are enough to defeat uniqueness.
+
+First take $\\{D\\}$. Daisy satisfies rule (2), and every implication in (1), (3), (4), (5), and (6) has a false hypothesis.
+
+Next take $\\{E\\}$. Ethan satisfies rule (2). Rule (6) requires Bella to be out, which she is, and the other implications again have false hypotheses:
+
+$$\\{D\\}\\neq\\{E\\}.$$
+
+Both rosters satisfy all six rules, so there is more than one valid way, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -5794,19 +6054,68 @@ The live people are $C,D,E$, still constrained by (2) and (4). The legal rosters
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that dropping Petra also drops Sana and then breaks rule (4). Petra therefore reviews in every valid assignment, so the statement is True.`,
+The claim says Petra reviews in every valid assignment. Test the opposite by assuming $\\neg P$. Rule (6) is $S\\Rightarrow P$, so its contrapositive gives
+
+$$\\neg P\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg S.$$
+
+Rule (4) requires at least one of Petra or Sana:
+
+$$(4)\qquad P\\lor S.$$
+
+Under the assumption, both disjuncts are false. Thus Petra's absence makes rule (4) impossible to satisfy, so Petra is forced to review, so the statement is True.`,
       `**B.** → True
 
-The contrapose of rule (1) is $Q\\Rightarrow\\neg P$. That is the claimed implication, so the statement is True.`,
+The claim asks what follows if Quinn reviews. Rule (1) says
+
+$$(1)\qquad P\\Rightarrow\\neg Q.$$
+
+Taking the contrapositive reverses and negates both sides:
+
+$$\\neg(\\neg Q)\\Rightarrow\\neg P,$$
+
+so
+
+$$Q\\Rightarrow\\neg P.$$
+
+Therefore Quinn's presence forces Petra's absence, exactly as claimed, so the statement is True.`,
       `**C.** → False
 
-The overview recovered the unique assignment $\\{P,S,T\\}$, with Ravi out. There is no legal assignment in which Ravi reviews, so the statement is False.`,
+The claim needs at least one valid assignment with Ravi. Petra is already forced in by rule (4) together with rule (6). Rule (1) then forces Quinn out, and rule (3) forces Theo in:
+
+$$P\\overset{(1)}{\\Rightarrow}\\neg Q
+\\overset{(3)}{\\Rightarrow}T.$$
+
+Rule (5) now applies:
+
+$$T\\overset{(5)}{\\Rightarrow}\\neg R.$$
+
+Thus every valid assignment forces Ravi out. Assuming Ravi in would collide with the forced $\\neg R$, so the statement is False.`,
       `**D.** → True
 
-The overview recovered the unique assignment $\\{P,S,T\\}$. Both Theo and Sana review there, so the statement is True.`,
+The claim says the unique assignment includes both Theo and Sana. Begin with Petra, who is forced in. Rules (1) and (3) then force Quinn out and Theo in:
+
+$$P\\overset{(1)}{\\Rightarrow}\\neg Q
+\\overset{(3)}{\\Rightarrow}T.$$
+
+Rule (5) forces Ravi out. Rule (2) requires $R\\lor S$, so Ravi's absence forces Sana in:
+
+$$T\\overset{(5)}{\\Rightarrow}\\neg R,\qquad
+\\neg R\\land(R\\lor S)\\overset{(2)}{\\Rightarrow}S.$$
+
+The forced assignment is $\\{P,S,T\\}$, which contains Theo and Sana, so the statement is True.`,
       `**E.** → False
 
-The overview recovered one assignment, with every reviewer pinned by a numbered rule. Multiple valid ways would need a second surviving row, so the statement is False.`,
+The claim requires at least two different valid assignments. Instead, each reviewer's status is forced in sequence.
+
+Rule (4) together with rule (6) forces $P$. Then (1) gives $\\neg Q$, (3) gives $T$, and (5) gives $\\neg R$. Finally, rule (2), $R\\lor S$, gives $S$:
+
+$$P\\Rightarrow\\neg Q\\Rightarrow T\\Rightarrow\\neg R\\Rightarrow S.$$
+
+So every valid assignment has exactly
+
+$$P=S=T=1,\qquad Q=R=0.$$
+
+This assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 29,
