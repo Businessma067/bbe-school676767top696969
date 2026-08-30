@@ -6181,13 +6181,13 @@
    "case_id": "MATH 4.194",
    "title": "Production and Logistics Planning for AlpenBrot",
    "subsection": "4.5",
-   "context": "AlpenBrot GmbH is planning a new central industrial bakery to supply its regional retail branches. The management team evaluates four mathematical relations governing procurement, pricing, delivery logistics, and regional expansion: a linear grain procurement cost balance $(k - 180) x + 4500 = 1500 + 120 x$ for $x$ metric tons with price parameter $k$; a quadratic net profit model $\\Pi(q) = -2q^2 + 28q - 48$ for output $q$ in thousands of sourdough loaves; a logistics delivery speed relation $\\frac{60}{v - 10} + \\frac{60}{v + 10} = \\frac{5}{2}$ for base transit velocity $v$ in kilometers per hour; a radical quality-control index equation $\\sqrt{3y + 16} - y = 2$; and a retail expansion dynamic where store count reaches $N(t) = 15 \\cdot 2^{0.5 t}$ while promotional amortization satisfies $\\ln(2t + 4) - \\ln(t - 1) = \\ln 4$ across operational quarters $t$.",
+   "context": "AlpenBrot GmbH is planning a new central industrial bakery and reviews five separate calculations covering procurement, profit, delivery, quality control, and store expansion. Mark each statement TRUE or FALSE.",
    "statements": [
-    "In the linear grain procurement model, there is no real parameter value $k$ for which the equation admits infinitely many solutions.",
-    "The quadratic profit model yields two distinct positive break-even output quantities whose arithmetic mean is strictly greater than $7$ thousand loaves.",
-    "Solving the radical quality-control equation over the real numbers generates an extraneous root introduced by squaring, leaving exactly one valid real solution.",
-    "The rational delivery equation admits two real algebraic solutions, but only one satisfies the physical speed requirement $v > 10$, and that admissible base velocity is strictly less than $45\\text{ km/h}$.",
-    "The unique valid solution to the logarithmic promotional amortization equation is strictly smaller than the time $t$ required for the retail network to expand to $120$ partner stores."
+    "For the grain procurement balance $(k - 180)x + 4500 = 1500 + 120x$ in metric tons $x$, there is no real parameter value $k$ for which the equation admits infinitely many solutions.",
+    "The quadratic profit model $\\Pi(q) = -2q^2 + 28q - 48$, with $q$ in thousands of loaves, yields two distinct positive break-even quantities whose arithmetic mean is strictly greater than $7$ thousand loaves.",
+    "Solving the quality-control equation $\\sqrt{3y + 16} - y = 2$ over the real numbers generates an extraneous root introduced by squaring, leaving exactly one valid real solution.",
+    "The delivery equation $\\frac{60}{v - 10} + \\frac{60}{v + 10} = \\frac{5}{2}$ admits two real algebraic solutions, but only one satisfies the physical requirement $v > 10$, and that admissible base velocity is strictly less than $45\\text{ km/h}$.",
+    "The unique valid solution of $\\ln(2t + 4) - \\ln(t - 1) = \\ln 4$ is strictly smaller than the time $t$ at which the store count $N(t) = 15 \\cdot 2^{0.5t}$ reaches $120$ partner stores."
    ],
    "answer_key": [
     true,
@@ -6245,13 +6245,13 @@
    "case_id": "MATH 4.196",
    "title": "Start-Up Growth and Operational Break-Even",
    "subsection": "4.5",
-   "context": "A digital subscription start-up analyzes its performance and capacity planning using four algebraic models. Monthly revenue (in thousands of dollars) as a function of subscriber count $x$ (in thousands) is given by $R(x) = 18x - x^2$, while total monthly operating cost is modeled by $C(x) = 3x + 36$. Server infrastructure stability depends on a tuning parameter $q$ satisfying the rational balance relation $\\frac{q-1}{q-3} + \\frac{q+2}{q+3} = \\frac{12}{q^2-9}$. Server response latency depends on a damping coefficient $z$ satisfying $\\sqrt{4 - 3z} = z + 2$. Subscriber acquisition timeline $t$ (in months) follows the logarithmic growth milestone $\\log_2(t + 1) + \\log_2(t - 2) = 2$. Finally, an auxiliary department budget allocation $w$ is governed by the linear equation $(a^2 - 9)w = a - 3$ for a real parameter $a$.",
+   "context": "A digital subscription start-up reviews five separate models covering revenue, server tuning, latency, subscriber growth, and budget allocation. Mark each statement TRUE or FALSE.",
    "statements": [
-    "The difference between the two break-even subscriber volumes where total revenue equals total operating cost is strictly greater than 8 thousand subscribers.",
-    "The rational equation governing the infrastructure stability parameter $q$ possesses exactly two distinct real solutions.",
-    "The radical equation governing the latency damping coefficient $z$ admits at least one strictly negative valid real solution.",
-    "The subscriber acquisition milestone equation is satisfied by a unique time $t$ that is strictly greater than 2.5 months.",
-    "If the budget parameter is set to $a = -3$, the linear budget equation possesses infinitely many solutions for $w$."
+    "With monthly revenue $R(x) = 18x - x^2$ and operating cost $C(x) = 3x + 36$ (both in thousands, $x$ in thousands of subscribers), the difference between the two break-even subscriber volumes is strictly greater than $8$ thousand.",
+    "The stability equation $\\frac{q-1}{q-3} + \\frac{q+2}{q+3} = \\frac{12}{q^2-9}$ possesses exactly two distinct real solutions.",
+    "The latency equation $\\sqrt{4 - 3z} = z + 2$ admits at least one strictly negative valid real solution.",
+    "The acquisition milestone equation $\\log_2(t + 1) + \\log_2(t - 2) = 2$ is satisfied by a unique time $t$ that is strictly greater than $2.5$ months.",
+    "If the budget parameter is set to $a = -3$, the linear equation $(a^2 - 9)w = a - 3$ possesses infinitely many solutions for $w$."
    ],
    "answer_key": [
     true,
@@ -6277,7 +6277,7 @@
    "case_id": "MATH 4.197",
    "title": "Hotel Room Pricing and Revenue Optimization Models",
    "subsection": "4.5",
-   "context": "A boutique hotel in Vienna with a maximum capacity of $100$ rooms analyzes its pricing, operational metrics, and customer loyalty programs using several mathematical models. Daily room demand $q$ at a base nightly price $p$ (in euros) is given by the linear relation $q = 140 - p$, generating total nightly room revenue $R(p) = p \\cdot q$. In parallel, operational analysts evaluate amenity utilization time $t$ (in hours) via a radical equilibrium relation, marketing channel budget shares $x$ through a rational equation, and a loyalty points tier index $y$ via a logarithmic growth model.",
+   "context": "A boutique hotel in Vienna reviews five separate models covering room demand, revenue, amenity usage, marketing spend, and a loyalty program. Mark each statement TRUE or FALSE.",
    "statements": [
     "Under the linear demand model $q = 140 - p$, achieving a target occupancy of exactly $90$ booked rooms requires setting a nightly room price strictly greater than $55$ euros.",
     "Targeting a total nightly room revenue of $4800$ euros generates exactly two distinct admissible price levels whose sum equals $140$ euros.",
@@ -6309,7 +6309,7 @@
    "case_id": "MATH 4.198",
    "title": "Bespoke Fertiliser Mixing and Application Dynamics",
    "subsection": "4.5",
-   "context": "An agricultural enterprise designs a bespoke liquid fertiliser programme by mixing two commercial preparations: Blend Alpha, which contains 12% active nitrogen by volume and costs \\$4 per litre, and Blend Beta, which contains 32% active nitrogen by volume and costs \\$9 per litre. The estate agronomist investigates five mathematical models governing mixture proportions, crop yield response, irrigation spreader flow rates, multi-cycle organic matter accumulation, and soil acidity equilibrium.",
+   "context": "An agricultural enterprise blending two fertiliser preparations reviews five separate models covering mixture proportions, crop yield, irrigation flow, organic matter accumulation, and soil acidity. Mark each statement TRUE or FALSE.",
    "statements": [
     "In the linear blending model, achieving an overall nitrogen concentration of 27% in a total batch of 200 litres requires Blend Alpha to constitute strictly less than 30% of the total mixture volume.",
     "Under the quadratic crop yield model $Y(n) = -\\frac{1}{20}n^2 + 6n + 20$, the sum of all nitrogen application levels $n$ that produce a target yield of 160 metric tonnes per hectare equals 120 kg/ha, and both feasible targets represent strictly positive nitrogen amounts.",
@@ -6341,7 +6341,7 @@
    "case_id": "MATH 4.199",
    "title": "Commercial Energy Contracting and Billing Models",
    "subsection": "4.5",
-   "context": "An energy retailer supplies commercial clients through customized contracts incorporating fixed monthly fees, tiered consumption rates, storage options, and grid maintenance allocations. Monthly power consumption is measured in megawatt-hours ($x$, in MWh), and several operational billing, profit, capacity, and indexing relationships arise across the retailer's portfolio.",
+   "context": "An energy retailer serving commercial clients reviews five separate billing and operational models covering tariffs, profit, maintenance allocation, network load, and tariff indexing. Mark each statement TRUE or FALSE.",
    "statements": [
     "Under the baseline condition that monthly demand exceeds 10 MWh, the break-even consumption level at which Tariff Plan I (fixed fee of €120 plus €8 per MWh) and Tariff Plan II (fixed fee of €300 plus €5 per MWh, less a flat €30 high-volume rebate) yield identical total monthly billing is strictly greater than 45 MWh and represents an integer quantity.",
     "If the retailer targets a monthly net operating profit of 98 hundred euros from an energy storage asset with profit function $\\Pi(x) = -2x^2 + 52x - 240$, the resulting quadratic equation has a discriminant of zero, yielding exactly one unique operating volume in the open interval $(10, 15)$.",
@@ -6373,7 +6373,7 @@
    "case_id": "MATH 4.200",
    "title": "Treasury Liquidity and Bond Ladder Optimization",
    "subsection": "4.5",
-   "context": "A corporate treasury department evaluates several liquidity management instruments, comparing an operational bank reserve with a structured bond ladder. Under the operational reserve, cash balances evolve under fixed periodic withdrawals and linear maintenance fees. In the bond portfolio, multi-period coupon structures, yield spread adjustments, duration matching, and continuous compounding give rise to linear, quadratic, rational, exponential, and radical equations governing the firm's capital allocation.",
+   "context": "A corporate treasury department evaluates several liquidity management instruments, including cash reserves, bond pricing, and rate models. Mark each statement TRUE or FALSE.",
    "statements": [
     "If an uninvested cash reserve of $12\\,000 subject to quarterly withdrawals of $600 and a constant annual custody fee $f$ is completely depleted after exactly 4 years, then the annual fee $f$ strictly exceeds the quarterly withdrawal amount.",
     "For a 2-year bond with an annual coupon of \\$20 and a face value of \\$120 purchased at a price of \\$100, the growth factor $x = 1+r$ satisfies a quadratic equation with exactly one positive real root, and this root implies an annual yield $r$ strictly greater than 15%.",
@@ -6405,10 +6405,10 @@
    "case_id": "MATH 4.201",
    "title": "Shift Production and Machine Calibration",
    "subsection": "4.5",
-   "context": "An industrial manufacturing plant operates two production shifts to produce precision valves. The daily direct labor cost (in hundreds of euros) for an output of $x$ production units is modeled linearly by $C(x) = 4x + 18$. The net daily operating profit (in hundreds of euros) across both shifts is given by the quadratic function $\\Pi(x) = -x^2 + 22x - 40$. For machine calibration, the joint cycle time $y$ (in minutes) required by two synchronized robotic arms satisfies the rational balance equation $\\frac{10}{y-1} - \\frac{10}{y+4} = 1$. The automated quality-control scanner requires a baseline inspection speed $v$ (in meters per second) satisfying the radical relation $\\sqrt{4v + 9} = v - 3$. Finally, the cumulative machine wear index over $t$ operating months satisfies the logarithmic relation $\\ln(2t - 3) + \\ln(t + 1) = \\ln(25)$.",
+   "context": "An industrial manufacturing plant tracks production costs, profit, machine calibration, and wear indices across its two shifts. Mark each statement TRUE or FALSE.",
    "statements": [
-    "If management caps the daily direct labor cost at $50$ hundred euros, the maximum attainable production output is strictly greater than $8$ units.",
-    "There exists a unique output level $x$ at which the net daily operating profit reaches $81$ hundred euros, and this output is an odd integer.",
+    "The daily direct labor cost (in hundreds of euros) for an output of $x$ production units is $C(x) = 4x + 18$. If management caps this cost at $50$ hundred euros, the maximum attainable production output is strictly greater than $8$ units.",
+    "The net daily operating profit (in hundreds of euros) across both shifts is $\\Pi(x) = -x^2 + 22x - 40$. There exists a unique output level $x$ at which this profit reaches $81$ hundred euros, and this output is an odd integer.",
     "The rational calibration equation $\\frac{10}{y-1} - \\frac{10}{y+4} = 1$ admits two real solutions whose sum is negative, but only one solution is physically admissible as a positive cycle time.",
     "Squaring both sides of the radical inspection equation $\\sqrt{4v + 9} = v - 3$ introduces an extraneous candidate solution at $v = 0$, leaving exactly one valid real solution.",
     "The logarithmic equation $\\ln(2t - 3) + \\ln(t + 1) = \\ln(25)$ admits two distinct real solutions because the corresponding quadratic equation $(2t - 3)(t + 1) = 25$ has two real roots."
@@ -6501,7 +6501,7 @@
    "case_id": "MATH 4.204",
    "title": "Foundation Slab Engineering and Curing Models",
    "subsection": "4.5",
-   "context": "A construction engineering team is pouring a large rectangular concrete foundation slab for a commercial logistics center. The geometry of the slab requires its length $L$ (in meters) to exceed its width $w$ (in meters, with $w > 0$) by $3$ meters, giving $L = w + 3$. Various structural calculations, equipment scheduling models, drainage slope tolerances, and concrete curing milestone equations arise during project planning, depending on the dimension $w$ and the curing time $t$ (in days).",
+   "context": "A construction engineering team is pouring a rectangular concrete foundation slab and scheduling related equipment and curing milestones. Mark each statement TRUE or FALSE.",
    "statements": [
     "If the site manager balances the framing budget via the linear parameter equation $k(2w + 3) - 12w = 3(k - 4) + 6$, then there exists a unique real value of the parameter $k$ for which the equation possesses infinitely many solutions for $w$, and that parameter value is strictly positive.",
     "If the base surface area of the slab is constrained to be $108\\text{ m}^2$, modeled by $w(w + 3) = 108$, then the resulting quadratic equation has two real roots with opposite signs, and the unique physically admissible width $w > 0$ is an even integer.",
@@ -6533,7 +6533,7 @@
    "case_id": "MATH 4.205",
    "title": "Maritime Fleet Optimization and Engine Governance",
    "subsection": "4.5",
-   "context": "A logistics carrier operates a commercial cargo vessel and monitors its performance across scheduled routes. Analysts model speed $v > 0$ (in knots), scheduling time $t$ (in hours), and an engine particulate tuning index $x$ using four governance relations. A river transit schedule over a $240$-nautical-mile round trip against and with a $3$-knot current is modeled by transit time $T(v) = \\frac{120}{v+3} + \\frac{120}{v-3}$. Net voyage financial return is governed by $N(v) = -2v^2 + 48v - 216$ thousand euros. Hydrodynamic hull resistance satisfies the radical balance $\\sqrt{2v + 9} - \\sqrt{v + 1} = 2$. Engine particulate emissions are calibrated by $\\log_3(x + 5) + \\log_3(x - 3) = 2$, while fleet time coordination across regional hubs follows $\\frac{2t - 5}{3} - \\frac{t + 1}{4} = \\frac{5t - 17}{12} + m$ for a scheduling parameter $m$.",
+   "context": "A logistics carrier operates a commercial cargo vessel and monitors its speed, financial return, hull resistance, and engine tuning across scheduled routes. Mark each statement TRUE or FALSE.",
    "statements": [
     "For the linear fleet scheduling model $\\frac{2t - 5}{3} - \\frac{t + 1}{4} = \\frac{5t - 17}{12} + m$, there exists no value of the scheduling parameter $m$ for which the equation has a unique real solution $t$.",
     "A break-even analysis requires solving the quadratic equation $-2v^2 + 48v - 216 = 0$. The two distinct real break-even cruising speeds have a product equal to $108$ and an average speed strictly greater than $11$ knots.",
@@ -6565,7 +6565,7 @@
    "case_id": "MATH 4.206",
    "title": "Dilution Kinetics and Concentration Balancing",
    "subsection": "4.5",
-   "context": "A compounding pharmacy prepares specialty therapeutic solutions under strict laboratory protocols. Managing active ingredient masses, mixture concentrations, stabilization temperatures, and degradation kinetics over time gives rise to various algebraic governing models across distinct preparation stages.",
+   "context": "A compounding pharmacy checks five separate preparation calculations. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "Blending $V$ liters of a $25\\%$ active ingredient solution with $10$ liters of a $10\\%$ solution yields an overall concentration of $20\\%$ if and only if the added stock volume $V$ is strictly greater than $25$ liters.",
     "A stabilization stage requires the operating time parameter $t$ (in hours) to satisfy the quadratic relation $2t^2 - 14t + 20 = 0$; the sum of all valid stabilization times equals $7$ hours, and both roots are strictly positive integers.",
@@ -6629,7 +6629,7 @@
    "case_id": "MATH 4.208",
    "title": "Vineyard Expansion and Harvest Yield Dynamics",
    "subsection": "4.5",
-   "context": "A vineyard in the Wachau valley is restructuring its production after an investment in new parcel acreage and cellar technology. Let $x$ denote the additional land planted in hectares ($x > 0$), $t$ denote the vintage aging time in years ($t > 0$), and let the associated operational costs, yield density, irrigation requirements, and aging profiles be governed by formal algebraic relations across the estate's management models.",
+   "context": "A vineyard checks five separate production and aging models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "If the baseline operating balance between maintenance overhead and seasonal picking wages is modeled by the linear equation $3(2x + 5) - 4(x - 2) = 35$, the required expansion acreage $x$ is strictly greater than $5$ hectares.",
     "When vine crowding limits output, total grape yield meets a target threshold whenever $x^2 - 14x + 40 = 0$; both solutions to this quadratic model represent strictly positive, distinct admissible land allocations.",
@@ -6661,7 +6661,7 @@
    "case_id": "MATH 4.209",
    "title": "Plastics Recycling Facility Operations",
    "subsection": "4.5",
-   "context": "A regional plastics recycling plant models its technical systems across four processing stages. In the secondary shredding line, throughput depends linearly on an adjustment parameter $x$. The daily operating profit from pellet extrusion follows a quadratic function of output $q$. Sensor calibration on the optical sorting conveyor is governed by a radical equation in velocity $v$, while overall daily plant capacity decays exponentially over operational time $t$ (in months). Finally, the hydraulic balance across dual-filter wash stations is modeled by a rational equation in flow rate $w$.",
+   "context": "A regional plastics recycling plant checks five separate operational models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "In the shredding line, equating the throughput expressions $4x + 12$ and $7x - 24$ yields an equilibrium parameter $x$ that is an even integer strictly greater than 10.",
     "If daily operating profit in thousands of euros is modeled by $\\Pi(q) = -q^2 + 14q - 40$, the sum of the two break-even output levels is strictly greater than 15.",
@@ -6757,7 +6757,7 @@
    "case_id": "MATH 4.212",
    "title": "Telecom Service Bundles and Operational Modeling",
    "subsection": "4.5",
-   "context": "A telecommunications company, AlpenMobile, packages data bandwidth and voice services for enterprise clients. The company models its operational metrics, costs, and customer demand using several specialized mathematical functions. Contract tiers depend on a standard monthly linear usage fee, profit on bulk enterprise data packages follows a quadratic margin model, network latency over fiber connections follows a radical response equation, SLA bandwidth deviations are governed by an absolute-value threshold equation, and customer adoption of 5G corporate add-ons follows an exponential growth trajectory.",
+   "context": "A telecommunications company checks five separate operational calculations. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "A client comparing the standard plan of $40$ euros plus $2$ euros per gigabyte with a flexible plan of $15$ euros plus $3.5$ euros per gigabyte finds that the break-even data consumption is strictly greater than $18$ gigabytes.",
     "Under the bulk enterprise data plan where profit in hundreds of euros is modeled by $\\Pi(q) = -2q^2 + 52q - 120$ for quantity $q$ in terabytes, there are two distinct positive break-even quantities whose sum is equal to $26$.",
@@ -6789,7 +6789,7 @@
    "case_id": "MATH 4.213",
    "title": "Gym Membership Pricing and Member Dynamics",
    "subsection": "4.5",
-   "context": "A premium fitness studio, FitCorp, operates several pricing and membership programs. Individual members choose between standard contracts with different fixed joining fees and monthly rates. For corporate partners, the studio offers a bulk membership program where the monthly rate per employee decreases linearly with the size of the enrolled group. In addition, the studio tracks operational parameters across multi-tier accounts and monitors cohort retention over time using standard business-mathematics models.",
+   "context": "A fitness studio checks five separate membership and pricing models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "If an administrative surcharge of $k$ dollars per month (where $k > 0$) is added equally to Option 1 (joining fee of \\$60 and monthly fee of \\$45) and Option 2 (joining fee of \\$180 and monthly fee of \\$30), the duration in months at which the total cumulative costs of the two options coincide is strictly independent of $k$ and equals exactly 8 months.",
     "For the corporate group package where the monthly fee per employee is $P(n) = 90 - 2n$ dollars for a group of $n$ employees, the studio's total monthly revenue from a single company can reach \\$1050 for two distinct group sizes, and the sum of these two group sizes equals 45.",
@@ -6821,7 +6821,7 @@
    "case_id": "MATH 4.214",
    "title": "Wind Farm Operations and Maintenance Modeling",
    "subsection": "4.5",
-   "context": "An energy asset manager models the technical and financial operations of an offshore wind farm. The hourly dispatch balance requires adjusting baseline output $p$ (in $\\text{MW}$) such that $3(2p - 15) - 4(p - 5) = 25$. The quadratic net revenue per turbine $R(w)$ (in thousands of euros) as a function of average wind speed $w$ (in $\\text{m/s}$) follows $R(w) = -2w^2 + 44w - 160$. The maintenance response time $T(n)$ (in hours) as a function of the active turbine fleet size $n$ satisfies the radical relationship $\\sqrt{2n + 15} - n = -6$. The long-term blade wear index $W(t)$ over operating years $t \\ge 0$ is governed by the exponential law $120 \\cdot 2^{-0.5t} + 15 = 45$, while the acoustic emission radius $r$ (in hundred meters) obeys the logarithmic equation $\\ln(r + 3) + \\ln(r - 1) = \\ln(12)$.",
+   "context": "An energy asset manager checks five separate operational and financial models for an offshore wind farm. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The baseline dispatch equation has a unique solution for $p$, and this required output strictly exceeds $22\\text{ MW}$.",
     "The net revenue function $R(w)$ admits two break-even wind speeds whose product is equal to $80$.",
@@ -6853,7 +6853,7 @@
    "case_id": "MATH 4.215",
    "title": "Textbook Publishing Economics and Market Dynamics",
    "subsection": "4.5",
-   "context": "An academic publishing house models the economics of printing and distributing a textbook. For a print run of $x$ thousand copies with $x > 0$, the total printing cost in thousands of euros is given by $C(x) = 16 + 2x$, which results in an average cost per thousand books of $\\bar{C}(x) = \\frac{C(x)}{x}$. The unit selling price per thousand books is governed by the inverse demand function $p(x) = 18 - x$. In addition, an alternative digital workflow introduces an efficiency relation modeled by the radical equation $\\sqrt{2x + 9} - \\sqrt{x + 1} = 2$. Following publication, monthly sales volume decays according to the exponential function $D(t) = 400 \\cdot e^{-0.1t}$, where $t$ denotes the elapsed time in months.",
+   "context": "An academic publishing house checks five separate economic models for producing and distributing a textbook. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "If a wholesale distributor offers to purchase the entire print run at a fixed rate of $6$ thousand euros per thousand books, the unique break-even batch size $x$ satisfying $6x = C(x)$ is an integer strictly less than $5$ thousand copies.",
     "Under the inverse demand price $p(x) = 18 - x$, the total profit equation $x \\cdot p(x) - C(x) = 0$ yields exactly two distinct positive break-even production levels whose sum equals $16$ thousand copies.",
@@ -6885,7 +6885,7 @@
    "case_id": "MATH 4.216",
    "title": "Coffee Blend Optimization and Flavor Dynamics",
    "subsection": "4.5",
-   "context": "A specialty coffee roastery produces a $100\\text{ kg}$ seasonal blend using two bean varieties: Ethiopian Arabica (Grade A, purchased at a unit cost of \\$18 per kilogram) and Vietnamese Robusta (Grade R, purchased at a unit cost of \\$10 per kilogram). Let $x$ denote the mass of Arabica beans in kilograms, so that $100 - x$ kilograms of Robusta are used, with physical domain $0 \\le x \\le 100$. The roastery's production engineering team analyzes five distinct quantitative relations governing batch procurement budget, flavor synergy, moisture extraction, aroma decay, and shelf-life stability.",
+   "context": "A specialty coffee roastery checks five separate quantitative models for its seasonal blend production. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "Under a procurement contract where the total raw ingredient cost for the $100\\text{ kg}$ batch must equal \\$1320, the required quantity of Arabica beans $x$ is uniquely determined and constitutes strictly more than half of the total batch by weight.",
     "A sensory scoring model dictates that the flavor synergy score $S(x) = -x^2 + 100x - 900$ must equal $1200$; this condition produces exactly two distinct admissible batch compositions within the physical domain $0 \\le x \\le 100$, and the sum of these two solutions equals $100\\text{ kg}$.",
