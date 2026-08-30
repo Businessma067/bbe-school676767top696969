@@ -8,7 +8,7 @@ import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { TheoryReader } from "@/components/TheoryReader";
 import { CaseContextRich } from "@/components/CaseContextRich";
-import { ExplanationText } from "@/components/ExplanationText";
+import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
@@ -16,8 +16,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
+  practiceExplanationToggleClass,
   practiceInlineAiButtonClass,
-  practiceInlineExplanationButtonClass,
   practicePanelSectionLabelClass,
   practiceSubmitButtonClass,
   practiceTryAgainButtonClass,
@@ -130,6 +130,7 @@ function EconomicsTasks() {
     error: string | null;
   };
   const [explanation, setExplanation] = useState<ExplanationState | null>(null);
+  const [showExplanations, setShowExplanations] = useState(false);
   const explainFn = useServerFn(explainCase);
 
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
@@ -154,12 +155,13 @@ function EconomicsTasks() {
     return () => { cancel = true; };
   }, []);
 
-  useEffect(() => { setActiveIdx(0); setExplanation(null); }, [activeChapter]);
-  useEffect(() => { setExplanation(null); }, [activeIdx]);
+  useEffect(() => { setActiveIdx(0); setExplanation(null); setShowExplanations(false); }, [activeChapter]);
+  useEffect(() => { setExplanation(null); setShowExplanations(false); }, [activeIdx]);
 
   const requestExplanation = async (caseData: Case, i: number) => {
     const key = `${caseData.id}:${i}`;
     if (explanation?.key === key) return;
+    setShowExplanations(false);
     const stmt = caseData.statements[i];
     const correct = caseData.answer_key[i];
     setExplanation({
@@ -605,8 +607,15 @@ function EconomicsTasks() {
                 });
               }}
               onResetProgress={() => resetCaseIds([activeCase.id])}
-              activeExplanationIndex={explanation?.caseId === activeCase.id ? explanation.statementIndex : null}
-              onRequestExplanation={(i) => requestExplanation(activeCase, i)}
+              explanationsOpen={showExplanations && !explanation}
+              onShowExplanations={() => {
+                setExplanation(null);
+                setShowExplanations(true);
+              }}
+              onToggleExplanations={() => {
+                setExplanation(null);
+                setShowExplanations((v) => !v);
+              }}
             />
           )}
 
@@ -639,9 +648,9 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Right panel: Calculator (when open) or AI Explanation — no empty Theory slot. */}
+        {/* Right panel: Calculator, Full solution, or AI Explanation */}
         {theoryChapter === null && (
-        <EconomicsPracticeAside hasExplanation={!!explanation}>
+        <EconomicsPracticeAside hasExplanation={showExplanations || !!explanation}>
           {explanation ? (
             <ExplanationPanels
               state={explanation}
@@ -650,6 +659,13 @@ function EconomicsTasks() {
                 if (!activeCase) return;
                 requestExplanation(activeCase, explanation.statementIndex);
               }}
+            />
+          ) : showExplanations && activeCase ? (
+            <AllExplanationsPanel
+              task={activeCase}
+              index={activeIdx}
+              onClose={() => setShowExplanations(false)}
+              onRequestAi={(i) => requestExplanation(activeCase, i)}
             />
           ) : null}
         </EconomicsPracticeAside>
@@ -802,29 +818,32 @@ function CustomResetModal({
 
 function CaseCard({
   data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
-  activeExplanationIndex, onRequestExplanation, reviewOnly = false, timerNote = null,
+  explanationsOpen, onShowExplanations, onToggleExplanations,
+  reviewOnly = false, timerNote = null,
 }: {
   data: Case; index: number;
   onGraded: (allCorrect: boolean, correctCount: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
-  activeExplanationIndex: number | null;
-  onRequestExplanation: (i: number) => void;
+  explanationsOpen: boolean;
+  onShowExplanations: () => void;
+  onToggleExplanations: () => void;
   reviewOnly?: boolean;
   timerNote?: string | null;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
-  const [openExpl, setOpenExpl] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     setAnswers([null, null, null, null, null]);
     setChecked(false);
-    setOpenExpl({});
   }, [data.id]);
 
   useEffect(() => {
-    if (reviewOnly) setChecked(true);
+    if (!reviewOnly) return;
+    setChecked(true);
+    onShowExplanations();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- onShowExplanations is an inline parent callback
   }, [reviewOnly, data.id]);
 
 
@@ -840,12 +859,12 @@ function CaseCard({
   const handleSubmit = () => {
     setChecked(true);
     onGraded(correctCount === 5, correctCount);
+    onShowExplanations();
   };
 
   const handleReset = () => {
     setChecked(false);
     setAnswers([null, null, null, null, null]);
-    setOpenExpl({});
   };
 
   const handleFullReset = () => {
@@ -880,6 +899,7 @@ function CaseCard({
         <span className="flex-1" />
         {(alreadyPassed || inRevision || checked) && (
           <button
+            type="button"
             onClick={handleFullReset}
             title="Reset this task"
             aria-label="Reset this task"
@@ -892,33 +912,33 @@ function CaseCard({
 
       <CaseContextRich content={data.context} className="mt-3" />
 
-
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
           <span className="w-6 text-center">#</span>
           <span className="flex-1">Statement</span>
-          <span className="w-14 text-center">Correct</span>
+          <span className="w-14 text-center">True</span>
           {checked && <span className="w-6" aria-hidden />}
         </li>
         {data.statements.map((stmt, i) => {
-          const userAns = answers[i];
-          const isChecked = userAns === true;
+          const isChecked = answers[i] === true;
           const correctAns = data.answer_key[i];
-          const effective = isChecked;
-          const isCorrect = checked && effective === correctAns;
+          const isCorrect = checked && isChecked === correctAns;
           return (
             <li
               key={i}
               className="px-4 py-3"
             >
               <div className="flex items-center gap-3">
-                <span className="w-6 text-center text-xs font-bold text-muted-foreground">{i + 1}.</span>
+                <span className="w-6 text-center text-xs font-bold text-muted-foreground">
+                  {String.fromCharCode(65 + i)}.
+                </span>
                 <p className="flex-1 text-sm leading-relaxed text-foreground">{scrubStatementHints(stmt)}</p>
                 <div className="flex w-14 justify-center">
                   <button
+                    type="button"
                     role="checkbox"
                     aria-checked={isChecked}
-                    aria-label={`Mark statement ${i + 1} as correct`}
+                    aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
                     disabled={checked}
                     onClick={() => setAt(i, !isChecked)}
                     className={cn(
@@ -944,71 +964,156 @@ function CaseCard({
                   </span>
                 )}
               </div>
-
-              {checked && (
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                  <button
-                    onClick={() => setOpenExpl((s) => ({ ...s, [i]: !s[i] }))}
-                    className={practiceInlineExplanationButtonClass}
-                    aria-expanded={!!openExpl[i]}
-                  >
-                    Explanation
-                    <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", openExpl[i] && "rotate-180")} />
-                  </button>
-                  <button
-                    onClick={() => onRequestExplanation(i)}
-                    className={practiceInlineAiButtonClass(activeExplanationIndex === i)}
-                  >
-                    {activeExplanationIndex === i ? "AI textbook shown →" : "Show AI textbook explanation"}
-                  </button>
-                  {openExpl[i] && (
-                    <ExplanationText
-                      text={data.tactical_explanations[i]}
-                      className={cn(
-                        "mt-1 w-full rounded-md p-3 text-xs",
-                        isCorrect
-                          ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
-                          : "bg-destructive/10 text-destructive",
-                      )}
-                    />
-                  )}
-                </div>
-              )}
             </li>
           );
         })}
       </ol>
 
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-        {!checked ? (
-          <button
-            onClick={handleSubmit}
-            className={practiceSubmitButtonClass}
-          >
-            Check Answers / Submit
-          </button>
-        ) : (
-          <button
-            onClick={handleReset}
-            className={practiceTryAgainButtonClass}
-          >
-            Try again
-          </button>
-        )}
-
-        {checked && (
-          <div className={cn(
-            "rounded-lg px-4 py-2 text-sm font-bold",
-            correctCount === 5 ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-              : "bg-destructive/15 text-destructive",
-          )}>
-            {correctCount === 5
-              ? "5/5 — case counted ✓"
-              : `${correctCount}/5 — sent to Revision`}
-          </div>
+        <div className="flex flex-wrap items-center gap-2">
+          {reviewOnly ? (
+            <span className="text-xs font-semibold text-muted-foreground">
+              Review only — the countdown ran out on this task.
+            </span>
+          ) : !checked ? (
+            <button
+              type="button"
+              onClick={handleSubmit}
+              className={practiceSubmitButtonClass}
+            >
+              Check Answers / Submit
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={handleReset}
+              className={practiceTryAgainButtonClass}
+            >
+              Try again
+            </button>
+          )}
+          {checked && (
+            <button
+              type="button"
+              onClick={onToggleExplanations}
+              className={practiceExplanationToggleClass(explanationsOpen)}
+            >
+              {explanationsOpen ? "Hide Explanation" : "Explanation"}
+            </button>
+          )}
+        </div>
+        {checked && !reviewOnly && (
+          <span className="text-sm font-semibold text-muted-foreground">
+            {correctCount}/{data.answer_key.length} correct
+          </span>
         )}
       </div>
     </article>
+  );
+}
+
+function AllExplanationsPanel({
+  task,
+  index,
+  onClose,
+  onRequestAi,
+}: {
+  task: Case;
+  index: number;
+  onClose: () => void;
+  onRequestAi: (i: number) => void;
+}) {
+  const letters = "ABCDEF";
+  const body = [
+    ...task.statements.flatMap((_, i) => {
+      const letter = letters[i] ?? String(i + 1);
+      const verdict = task.answer_key[i] ? "True" : "False";
+      const expl = (task.tactical_explanations[i] ?? "").trim();
+      if (expl) {
+        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
+      }
+      return [
+        `**${letter}.** → ${verdict}\n\n${scrubStatementHints(task.statements[i])}`,
+        "",
+      ];
+    }),
+  ]
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
+  return (
+    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
+      <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
+        <div className="min-w-0">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Full solution · Task {index + 1}
+          </p>
+          <h3 className="mt-0.5 truncate font-display text-sm font-bold">{task.title}</h3>
+        </div>
+        <button
+          type="button"
+          onClick={onClose}
+          className="shrink-0 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
+        >
+          Close
+        </button>
+      </div>
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+        <EconAnswerKeyTable answerKey={task.answer_key} />
+        <div className="mb-6 flex flex-wrap gap-2">
+          {task.statements.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => onRequestAi(i)}
+              className={practiceInlineAiButtonClass(false)}
+            >
+              AI · {letters[i] ?? i + 1}
+            </button>
+          ))}
+        </div>
+        <ExplanationProse text={body} />
+      </div>
+    </div>
+  );
+}
+
+function EconAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
+  const letters = "ABCDEF";
+
+  return (
+    <section className="mb-8 overflow-x-auto border-b border-border/60 pb-7">
+      <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
+        Answer key
+      </p>
+      <table className="w-full min-w-[16rem] border-collapse border border-foreground/20 text-center text-[14px] shadow-sm">
+        <thead>
+          <tr className="bg-foreground text-background">
+            {answerKey.map((_, i) => (
+              <th
+                key={i}
+                className="border-b border-foreground/20 px-3 py-2.5 text-[12px] font-bold uppercase tracking-wide"
+              >
+                {letters[i] ?? i + 1}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-card">
+            {answerKey.map((isTrue, i) => (
+              <td
+                key={i}
+                className="border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground"
+              >
+                {isTrue ? "TRUE" : "FALSE"}
+              </td>
+            ))}
+          </tr>
+        </tbody>
+      </table>
+    </section>
   );
 }
 
