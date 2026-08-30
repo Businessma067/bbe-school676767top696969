@@ -13,13 +13,7 @@
         "For a tournament roster, Ava, Bruno, Cleo, Darius, and Esme may compete. The rules are: (1) Bruno competes if and only if Ava competes; (2) if Ava competes, then Darius competes; (3) exactly one of Darius and Esme competes; (4) if Esme competes, then Cleo does not compete; (5) at least one of Bruno or Cleo competes; (6) at least 2 people compete. A coordinator concludes that Bruno must compete in every valid assignment.",
         "A curator groups the museum specimen numbers in $G=\\{1,2,3,4,5,6,7\\}$ as $\\mathcal B=\\{\\{1,2\\},\\{3,4,2\\},\\{5,6,7\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{a,b,c,d,e,f\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\emptyset$$\n\nThe displayed collection passes all three tests, so the statement is True.",
         "**B.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=10-3=7,\\quad AC\\text{ only}=8-3=5,\\quad BC\\text{ only}=7-3=4$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=33+28+23-10-8-7+3=62$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=9$$\n\nThe report gives $11$, which does not match the disjoint-region calculation, so the statement is False.",
@@ -45,13 +39,7 @@
         "A curator groups the rail-platform zones in $G=\\{N,S,E,W,C\\}$ as $\\mathcal B=\\{\\{N,C\\},\\{S\\},\\{E,W\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct.",
         "In a city transport poll of $112$ people, $56$ belong to the bus group, $42$ to the rail group, and $37$ to the cycling group. The reported pairwise totals are $16$, $14$, and $12$, each including the $5$ people in all three. The report concludes that exactly $35$ people belong to the bus group but neither the rail nor cycling group."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=12-4=8,\\quad AC\\text{ only}=10-4=6,\\quad BC\\text{ only}=9-4=5$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=40+34+28-12-10-9+4=75$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=19$$\n\nThe report gives $19$, which matches the disjoint-region calculation, so the statement is True.",
         "**B.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Devon, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{F}=\\mathrm{F}$$\n\nThus Devon is rejected. The statement says approved, which does not match the biconditional, so the statement is False.",
@@ -77,13 +65,7 @@
         "In a campus society census of $73$ people, $28$ belong to the debate group, $34$ to the robotics group, and $26$ to the drama group. The reported pairwise totals are $9$, $7$, and $10$, each including the $3$ people in all three. The report concludes that exactly $45$ people belong to exactly one of the three groups.",
         "A policy says a research diver is approved if and only if either advanced diving certification or a naval diving waiver, and additionally a current medical clearance. Owen meets the condition \"advanced diving certification\", fails the condition \"a naval diving waiver\", and meets the condition \"a current medical clearance\". The policy therefore rejects Owen."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Nia, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Nia is approved. The statement says approved, which matches the biconditional, so the statement is True.",
         "**B.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Leo}\\}\\quad \\{\\text{Leo},\\text{Nolan},\\text{Orla}\\}\\quad \\{\\text{Leo},\\text{Mina}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
@@ -109,13 +91,7 @@
         "A policy says an apartment applicant is approved if and only if either income above three times rent or an approved co-signer, and additionally no unresolved eviction. Priya fails the condition \"income above three times rent\", meets the condition \"an approved co-signer\", and fails the condition \"no unresolved eviction\". The policy therefore rejects Priya.",
         "For a film selection jury, Vera, Wyatt, Xena, Yusuf, and Zoe may vote. The rules are: (1) Xena votes if and only if Wyatt votes; (2) if Wyatt votes, then Yusuf votes; (3) exactly one of Vera and Zoe votes; (4) if Yusuf votes, then Vera does not vote; (5) at least one of Xena or Zoe votes; (6) at least 3 people vote. A coordinator concludes that some valid assignment contains Vera but omits Xena."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Rina},\\text{Umar}\\}\\quad \\{\\text{Rina},\\text{Samir},\\text{Umar}\\}\\quad \\{\\text{Pavel},\\text{Samir}\\}\\quad \\{\\text{Pavel},\\text{Rina}\\}\\quad \\{\\text{Pavel},\\text{Rina},\\text{Talia}\\}\\quad \\{\\text{Pavel},\\text{Rina},\\text{Samir}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
         "**B.** → True\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{10,12,2,4,6,8\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\emptyset$$\n\nThe displayed collection passes all three tests, so the statement is True.",
@@ -141,13 +117,7 @@
         "For a museum night shift, Adrian, Bea, Colin, Dina, and Emil may work. The rules are: (1) Emil works if and only if Bea works; (2) if Bea works, then Adrian works; (3) exactly one of Adrian and Dina works; (4) if Dina works, then Colin does not work; (5) at least one of Emil or Colin works; (6) at least 2 people work. A coordinator concludes that Bea is not forced to work; at least one valid assignment omits Bea.",
         "A curator groups the warehouse aisle markers in $G=\\{g,h,j,k,m,n\\}$ as $\\mathcal B=\\{\\{g,j\\},\\{h,k\\},\\{m,n\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{A1,A2,B1,B2,C1,C2\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\{B1\\}$$\n\nThe displayed collection fails at least one required test, so the statement is False.",
         "**B.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=13-4=9,\\quad AC\\text{ only}=11-4=7,\\quad BC\\text{ only}=9-4=5$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=44+34+30-13-11-9+4=79$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=10$$\n\nThe report gives $10$, which matches the disjoint-region calculation, so the statement is True.",
@@ -173,13 +143,7 @@
         "A catalog stores $K=\\{\\text{red tag},\\{\\text{red tag}\\},\\{\\{\\text{red tag}\\}\\},\\text{blue tag}\\}$. The combined claim $\\{\\text{red tag}\\}\\in K$, $\\{\\{\\text{red tag}\\}\\}\\in K$, and $\\{\\{\\{\\{\\text{red tag}\\}\\}\\}\\}\\subseteq K$ is valid.",
         "In a farm equipment census of $85$ people, $37$ belong to the tractor group, $33$ to the drone group, and $29$ to the irrigation group. The reported pairwise totals are $11$, $9$, and $8$, each including the $3$ people in all three. The report concludes that exactly $20$ people belong to the tractor group but neither the drone nor irrigation group."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=19-7=12,\\quad AC\\text{ only}=17-7=10,\\quad BC\\text{ only}=18-7=11$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=58+53+54-19-17-18+7=118$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=33$$\n\nThe report gives $37$, which does not match the disjoint-region calculation, so the statement is False.",
         "**B.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Leila, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Leila is approved. The statement says approved, which matches the biconditional, so the statement is True.",
@@ -205,13 +169,7 @@
         "In a tourist activity poll of $99$ people, $30$ belong to the diving group, $45$ to the hiking group, and $37$ to the sailing group. The reported pairwise totals are $11$, $9$, and $13$, each including the $4$ people in all three. The report concludes that exactly $60$ people belong to exactly one of the three groups.",
         "A policy says a paramedic candidate is approved if and only if either two years of ambulance service or a recognized military medic record, and additionally a passed clinical assessment. Amara fails the condition \"two years of ambulance service\", meets the condition \"a recognized military medic record\", and meets the condition \"a passed clinical assessment\". The policy therefore approves Amara."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, true, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Jasper, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{F}=\\mathrm{F}$$\n\nThus Jasper is rejected. The statement says approved, which does not match the biconditional, so the statement is False.",
         "**B.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Lara}\\}\\quad \\{\\text{Lara},\\text{Moses}\\}\\quad \\{\\text{Kenji},\\text{Lara},\\text{Nora}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
@@ -237,13 +195,7 @@
         "A policy says a tournament player is approved if and only if either a top-eight ranking or a defending-champion exemption, and additionally registration before Friday. Ruben meets the condition \"a top-eight ranking\", fails the condition \"a defending-champion exemption\", and meets the condition \"registration before Friday\". The policy therefore rejects Ruben.",
         "For an airport audit crew, Uma, Victor, Wendy, Xavier, and Yara may inspect. The rules are: (1) Yara inspects if and only if Xavier inspects; (2) if Xavier inspects, then Wendy inspects; (3) exactly one of Uma and Victor inspects; (4) if Wendy inspects, then Uma does not inspect; (5) at least one of Yara or Victor inspects; (6) at least 3 people inspect. A coordinator concludes that every valid assignment containing Uma also contains Wendy."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, false, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Ravi},\\text{Theo}\\}\\quad \\{\\text{Ravi},\\text{Sana}\\}\\quad \\{\\text{Quinn},\\text{Ravi},\\text{Sana}\\}\\quad \\{\\text{Petra},\\text{Sana}\\}\\quad \\{\\text{Petra},\\text{Ravi},\\text{Theo}\\}\\quad \\{\\text{Petra},\\text{Ravi},\\text{Sana}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
         "**B.** → False\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{route 7}\\}\\in K,\\qquad \\{\\{\\text{route 7}\\}\\}\\in K$$\n\nThe only member of the last singleton is $\\{\\{\\{\\text{route 7}\\}\\}\\}$, which is not listed in $K$.\n\nThus the first two relations hold and the final relation fails, so the statement is False.",
@@ -269,13 +221,7 @@
         "For a community garden team, Zane, Bianca, Arlo, Camila, and Diego may volunteer. The rules are: (1) Camila volunteers if and only if Diego volunteers; (2) if Diego volunteers, then Arlo volunteers; (3) exactly one of Arlo and Bianca volunteers; (4) if Bianca volunteers, then Zane does not volunteer; (5) at least one of Camila or Zane volunteers; (6) at least 2 people volunteer. A coordinator concludes that Bianca must volunteer in every valid assignment.",
         "A catalog stores $K=\\{\\text{violin},\\{\\text{violin}\\},\\{\\{\\text{violin}\\}\\},\\text{cello}\\}$. The combined claim $\\{\\text{violin}\\}\\in K$, $\\{\\{\\text{violin}\\}\\}\\in K$, and $\\{\\{\\{\\{\\text{violin}\\}\\}\\}\\}\\subseteq K$ is valid."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{invoice 14}\\}\\in K,\\qquad \\{\\{\\text{invoice 14}\\}\\}\\in K$$\n\nThe only member of $\\{\\{\\{\\text{invoice 14}\\}\\}\\}$ is $\\{\\{\\text{invoice 14}\\}\\}$, which is listed in $K$.\n\nThus the first two relations hold and the final relation also holds, so the statement is True.",
         "**B.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=13-4=9,\\quad AC\\text{ only}=10-4=6,\\quad BC\\text{ only}=12-4=8$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=40+45+35-13-10-12+4=89$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=10$$\n\nThe report gives $14$, which does not match the disjoint-region calculation, so the statement is False.",
@@ -301,13 +247,7 @@
         "A catalog stores $K=\\{\\text{north key},\\{\\text{north key}\\},\\{\\{\\text{north key}\\}\\},\\text{west key}\\}$. The combined claim $\\{\\text{north key}\\}\\in K$, $\\{\\{\\text{north key}\\}\\}\\in K$, and $\\{\\{\\{\\text{north key}\\}\\}\\}\\subseteq K$ is valid.",
         "In a sports membership audit of $99$ people, $45$ belong to the tennis group, $38$ to the rowing group, and $41$ to the climbing group. The reported pairwise totals are $13$, $14$, and $12$, each including the $5$ people in all three. The report concludes that exactly $25$ people belong to the tennis group but neither the rowing nor climbing group."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=14-4=10,\\quad AC\\text{ only}=11-4=7,\\quad BC\\text{ only}=10-4=6$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=47+40+32-14-11-10+4=88$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=23$$\n\nThe report gives $23$, which matches the disjoint-region calculation, so the statement is True.",
         "**B.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Caleb, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Caleb is approved. The statement says rejected, which does not match the biconditional, so the statement is False.",
@@ -333,13 +273,7 @@
         "In a retail buying survey of $143$ people, $65$ belong to the books group, $59$ to the games group, and $47$ to the music group. The reported pairwise totals are $20$, $16$, and $15$, each including the $6$ people in all three. The report concludes that exactly $87$ people belong to exactly one of the three groups.",
         "A bistro awards a dessert stamp whenever a diner orders a plated dessert. Hana received a dessert stamp from a birthday promotion and did not order dessert. Hana's case refutes the original policy because Hana received dessert stamp without having ordered dessert."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Imani, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Imani is approved. The statement says approved, which matches the biconditional, so the statement is True.",
         "**B.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Jamal}\\}\\quad \\{\\text{Jamal},\\text{Luca}\\}\\quad \\{\\text{Jamal},\\text{Keira},\\text{Nikhil}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
@@ -365,13 +299,7 @@
         "An airline grants lounge access whenever a traveler buys a business-class ticket. Elliot received lounge access through elite status and flew economy. Elliot's case refutes the converse, \"Anyone with lounge access must have bought business class,\" but does not refute the original policy.",
         "For a charity allocation council, Anwar, Brooke, Chen, Delia, and Evan may serve. The rules are: (1) Anwar serves if and only if Evan serves; (2) if Evan serves, then Chen serves; (3) exactly one of Brooke and Delia serves; (4) if Chen serves, then Brooke does not serve; (5) at least one of Anwar or Delia serves; (6) at least 3 people serve. A coordinator concludes that some valid assignment contains Anwar but omits Chen."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Pedro},\\text{Tess}\\}\\quad \\{\\text{Pedro},\\text{Soren},\\text{Tess}\\}\\quad \\{\\text{Pedro},\\text{Rosa}\\}\\quad \\{\\text{Olive},\\text{Tess}\\}\\quad \\{\\text{Olive},\\text{Pedro},\\text{Tess}\\}\\quad \\{\\text{Olive},\\text{Pedro},\\text{Rosa}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
         "**B.** → True\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. That is exactly the conclusion claimed, so the statement is True.",
@@ -397,13 +325,7 @@
         "For a sailing relay squad, Freya, Goran, Hazel, Ibrahim, and Jo may race. The rules are: (1) Ibrahim races if and only if Goran races; (2) if Goran races, then Jo races; (3) exactly one of Jo and Hazel races; (4) if Hazel races, then Freya does not race; (5) at least one of Ibrahim or Freya races; (6) at least 2 people race. A coordinator concludes that Goran is not forced to race; at least one valid assignment omits Goran.",
         "Let $H=\\{\\ldots,-5,0,5,\\ldots\\}$ be the set of integer multiples of $5$. The map $f(n)=5n$ is a bijection from the integers onto $H$; consequently, $H$ is a proper subset with the same cardinality as its parent set."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. The final finite-set inference is therefore invalid, so the statement is False.",
         "**B.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=16-5=11,\\quad AC\\text{ only}=14-5=9,\\quad BC\\text{ only}=13-5=8$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=53+49+43-16-14-13+5=107$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=14$$\n\nThe report gives $14$, which matches the disjoint-region calculation, so the statement is True.",
@@ -429,13 +351,7 @@
         "Let $H=\\{1,4,9,\\ldots\\}$ be the set of perfect squares of positive integers. The map $f(n)=n^2$ is a bijection from the positive integers onto $H$; consequently, $H$ must have strictly smaller cardinality than its parent set because it is proper.",
         "In a volunteer training audit of $97$ people, $38$ belong to the first aid group, $39$ to the logistics group, and $32$ to the fundraising group. The reported pairwise totals are $11$, $10$, and $9$, each including the $3$ people in all three. The report concludes that exactly $20$ people belong to the first aid group but neither the logistics nor fundraising group."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=11-4=7,\\quad AC\\text{ only}=10-4=6,\\quad BC\\text{ only}=14-4=10$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=34+47+38-11-10-14+4=88$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=23$$\n\nThe report gives $25$, which does not match the disjoint-region calculation, so the statement is False.",
         "**B.** → True\n\nNoah's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Noah bought a premiere package}=\\mathrm{F},\\qquad\n\\text{Noah received signed poster}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{signed poster}\\Longrightarrow\\text{bought a premiere package}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
@@ -461,13 +377,7 @@
         "In a restaurant preference study of $106$ people, $50$ belong to the vegan group, $39$ to the local group, and $44$ to the late-night group. The reported pairwise totals are $14$, $16$, and $12$, each including the $5$ people in all three. The report concludes that exactly $68$ people belong to exactly one of the three groups.",
         "A library grants archive-room access whenever a scholar presents a faculty letter. Theo has archive access as a donor and presented no faculty letter. Theo's case refutes the converse, \"Anyone with archive access must have presented a faculty letter,\" but does not refute the original policy."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, true, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nMei's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Mei prepaid an annual berth}=\\mathrm{F},\\qquad\n\\text{Mei received priority flag}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{priority flag}\\Longrightarrow\\text{prepaid an annual berth}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False.",
         "**B.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Selma}\\}\\quad \\{\\text{Selma},\\text{Ursa}\\}\\quad \\{\\text{Raj},\\text{Selma},\\text{Tobin}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
@@ -493,13 +403,7 @@
         "A hotel adds breakfast credit whenever a guest books a conference rate. Anika received breakfast credit after a service complaint and booked a leisure rate. Anika's case refutes the original policy because Anika received breakfast credit without having booked a conference rate.",
         "For a clinic weekend rota, Aisha, Ben, Carla, Dmitri, and Eun may work. The rules are: (1) Carla works if and only if Eun works; (2) if Eun works, then Dmitri works; (3) exactly one of Ben and Aisha works; (4) if Dmitri works, then Ben does not work; (5) at least one of Carla or Aisha works; (6) at least 3 people work. A coordinator concludes that every valid assignment containing Aisha also contains Carla."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, false, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Willow},\\text{Yanni}\\}\\quad \\{\\text{Willow},\\text{Yanni},\\text{Zara}\\}\\quad \\{\\text{Willow},\\text{Ximena}\\}\\quad \\{\\text{Val},\\text{Yanni}\\}\\quad \\{\\text{Val},\\text{Willow},\\text{Yanni}\\}\\quad \\{\\text{Val},\\text{Willow},\\text{Ximena}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
         "**B.** → False\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. The final finite-set inference is therefore invalid, so the statement is False.",
@@ -525,13 +429,7 @@
         "For an orchestra touring group, Flora, Gus, Hana, Idris, and Jules may travel. The rules are: (1) Idris travels if and only if Gus travels; (2) if Gus travels, then Flora travels; (3) exactly one of Flora and Hana travels; (4) if Hana travels, then Jules does not travel; (5) at least one of Idris or Jules travels; (6) at least 2 people travel. A coordinator concludes that Gus must travel in every valid assignment.",
         "A registry has a set $S$ of $6$ distinct research samples and fixes a particular $3$-element subset $F$. It claims that exactly $7$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nEvery admissible $A$ contains the $2$ fixed objects and independently chooses from the remaining $3$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{3}=8$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count also matches, so the statement is True.",
         "**B.** → False\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=6,\\quad |B|=4,\\quad |A\\cap B|=2$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=6+4-2(2)=6$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=24-6=18$$\n\nThe auditor's $16$ is not the computed complement size, so the statement is False.",
@@ -557,13 +455,7 @@
         "A registry has a set $S$ of $7$ distinct jury badges and fixes a particular $2$-element subset $F$. It claims that exactly $32$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$.",
         "Let $U$ contain the locker numbers from $1$ through $36$. Let $A$ be the multiples of $6$ in $U$ and $B$ the multiples of $8$. An auditor claims $|(A\\triangle B)^c|=26$, where the complement is taken in $U$."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=6,\\quad |B|=4,\\quad |A\\cap B|=0$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=6+4-2(0)=10$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=30-10=20$$\n\nThe auditor's $20$ is the computed complement size, so the statement is True.",
         "**B.** → False\n\nGrace's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Grace sponsored a screening}=\\mathrm{F},\\qquad\n\\text{Grace received balcony badge}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{balcony badge}\\Longrightarrow\\text{sponsored a screening}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False.",
@@ -589,13 +481,7 @@
         "Let $U$ contain the route codes from $1$ through $28$. Let $A$ be the multiples of $4$ in $U$ and $B$ the multiples of $7$. An auditor claims $|(A\\triangle B)^c|=19$, where the complement is taken in $U$.",
         "A farm cooperative pays a transport rebate whenever a member ships at least ten crates. Elena received a rebate for a delayed pickup and shipped six crates. Elena's case refutes the original policy because Elena received transport rebate without having shipped at least ten crates."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nBashir's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Bashir attended day surgery}=\\mathrm{F},\\qquad\n\\text{Bashir received free parking}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{free parking}\\Longrightarrow\\text{attended day surgery}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
         "**B.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Tom}\\}\\quad \\{\\text{Suki},\\text{Tom},\\text{Una}\\}\\quad \\{\\text{Reed},\\text{Tom}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
@@ -621,13 +507,7 @@
         "A conference issues a speaker pin whenever a delegate leads a workshop. Kwame received a speaker pin as last year's chair and led no workshop. Kwame's case refutes the converse, \"Anyone with speaker pin must have led a workshop,\" but does not refute the original policy.",
         "For a harbor safety board, Alma, Boris, Chi, Dora, and Eli may sit. The rules are: (1) Chi sits if and only if Eli sits; (2) if Eli sits, then Alma sits; (3) exactly one of Dora and Boris sits; (4) if Alma sits, then Dora does not sit; (5) at least one of Chi or Boris sits; (6) at least 3 people sit. A coordinator concludes that some valid assignment contains Alma but omits Chi."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Willa},\\text{Zed}\\}\\quad \\{\\text{Willa},\\text{Yasmin},\\text{Zed}\\}\\quad \\{\\text{Vik},\\text{Yasmin}\\}\\quad \\{\\text{Vik},\\text{Willa}\\}\\quad \\{\\text{Vik},\\text{Willa},\\text{Yasmin}\\}\\quad \\{\\text{Vik},\\text{Willa},\\text{Xavi}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
         "**B.** → True\n\nEvery admissible $A$ contains the $1$ fixed objects and independently chooses from the remaining $4$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{4}=16$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count also matches, so the statement is True.",

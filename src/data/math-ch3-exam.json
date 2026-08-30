@@ -13,13 +13,7 @@
         "For a private-equity food chain, a recession scenario begins with \\$1{,}800{,}000.00 of annual cash flow and shrinks it by $7.00\\%$ forever. A recovery scenario begins with \\$1{,}500{,}000.00 and grows it by $8.00\\%$ for $8$ years. An investment memo says the recovery total is \\$15{,}954{,}941.44 and exceeds the recession scenario's full infinite total.",
         "In an equipment lease and maintenance reserve, $7$ annual lease payments of \\$7{,}200.00 are due at each year-start. Separately, an endowment pays \\$4{,}200.00 one year from now and grows that payment by $1.80\\%$ forever. At a $6.70\\%$ valuation rate, a controller says the two obligations have a combined present value of \\$127{,}553.53."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nBoth nominal quotes must first be converted through their own periodic rates:\n\n$$R_1=\\left(1+\\frac{0.06100}{12}\\right)^{12}-1=0.06273469,\\qquad\nR_2=\\left(1+\\frac{0.06250}{4}\\right)^{4}-1=0.06398016$$\n\nSolve the target equation in each account's compounding periods:\n\n$$t_1=\\frac{\\ln(1.480000)}{12\\ln(1+0.06100/12)}=6.443241\\text{ years}$$\n\n$$t_2=\\frac{\\ln(1.480000)}{4\\ln(1+0.06250/4)}=6.321552\\text{ years}$$\n\nThe actual winner is Harbor Account, and the time gap is\n\n$$12|t_1-t_2|=1.46\\text{ months}$$\n\nThe stated winner matches this calculation, so the statement is True.",
         "**B.** → False\n\nReverse the continuous depreciation model rather than treating the percentage loss as simple interest:\n\n$$v(t)=v_0e^{-\\delta t}\\Longrightarrow\n\\delta=\\frac1t\\ln\\left(\\frac{v_0}{v(t)}\\right)$$\n\n$$\\delta=\\frac1{7}\\ln\\left(\\frac{125000}{51000}\\right)\n=0.12806973=12.8070\\%$$\n\nThe comparison asset has\n\n$$v_2(7)=125000e^{-0.12000(7)}=53963.815429$$\n\nSince $\\$51{,}000.00$ is below $\\$53{,}963.82$, the comparison asset retains more value. The ranking is correct, while the quoted inferred rate does not match, so the statement is False.",
@@ -45,13 +39,7 @@
         "In a gallery lease and conservation fund, $6$ annual lease payments of \\$11{,}000.00 are due at each year-start. Separately, an endowment pays \\$5{,}000.00 one year from now and grows that payment by $1.20\\%$ forever. At a $5.80\\%$ valuation rate, a controller says the two obligations have a combined present value of \\$166{,}284.85.",
         "A neighborhood grocery finances \\$325{,}000.00 with $300$ month-end payments at $0.46\\%$ per month. An amortisation review reports a payment of \\$1{,}999.67, a balance of \\$280{,}589.47 immediately after payment $72$, and \\$101{,}015.57 of interest paid through that date."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nReverse the continuous depreciation model rather than treating the percentage loss as simple interest:\n\n$$v(t)=v_0e^{-\\delta t}\\Longrightarrow\n\\delta=\\frac1t\\ln\\left(\\frac{v_0}{v(t)}\\right)$$\n\n$$\\delta=\\frac1{6}\\ln\\left(\\frac{88000}{43000}\\right)\n=0.11935612=11.9356\\%$$\n\nThe comparison asset has\n\n$$v_2(6)=88000e^{-0.11500(6)}=44138.694078$$\n\nSince $\\$43{,}000.00$ is below $\\$44{,}138.69$, the comparison asset retains more value. The ranking is correct, while the quoted inferred rate does not match, so the statement is False.",
         "**B.** → True\n\nEach payment must be moved independently to time zero using its own date:\n\n$$PV=22000e^{-0.0840(0.5)} + 35000e^{-0.0840(2.5)} + 48000e^{-0.0840(5)}$$\n\n$$ PV_{1}=21095.135173\\quad PV_{2}=28370.448609\\quad PV_{3}=31538.247351 $$\n\n$$PV=81003.831133$$\n\nThe immediate offer comparison is\n\n$$ \\$82{,}603.83 > \\$81{,}003.83 $$\n\nThe offer conclusion is correct, and the adviser's quoted total matches the discounted sum, so the statement is True.",
@@ -77,13 +65,7 @@
         "A dental suite finances \\$285{,}000.00 with $216$ month-end payments at $0.51\\%$ per month. An amortisation review reports a payment of \\$2{,}180.04, a balance of \\$244{,}074.70 immediately after payment $48$, and \\$65{,}241.86 of interest paid through that date.",
         "For a community wind installation, Design A costs \\$150{,}000.00 now and returns \\$65{,}000.00 in year 1 and \\$112{,}000.00 in year 2. Design B costs \\$90{,}000.00 and returns \\$108{,}000.00 in year 1. A board says Design B has the higher IRR; at a $12.00\\%$ hurdle rate, Design B has the higher NPV."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nEach payment must be moved independently to time zero using its own date:\n\n$$PV=\\frac{14000}{(1+0.0610)^{2}} + \\frac{24000}{(1+0.0610)^{4}} + \\frac{39000}{(1+0.0610)^{7}}$$\n\n$$ PV_{1}=12436.474046\\quad PV_{2}=18938.680005\\quad PV_{3}=25766.588382 $$\n\n$$PV=57141.742433$$\n\nThe immediate offer comparison is\n\n$$ \\$55{,}941.74 < \\$57{,}141.74 $$\n\nThe offer conclusion is correct, and the adviser's quoted total matches the discounted sum, so the statement is True.",
         "**B.** → True\n\nThe recession stream converges because its ratio is below one:\n\n$$S_\\infty=\\frac{1250000}{1-0.91000}=13888888.888889$$\n\nThe recovery stream is finite and uses exactly $6$ terms:\n\n$$S_{6}=980000\\frac{1.10000^{6}-1}{1.10000-1}\n=7561297.800000$$\n\nIts share of the recession total is\n\n$$\\frac{S_{6}}{S_\\infty}=0.544413$$\n\nThus the recovery total does not exceed the infinite recession total. The memo's comparison agrees, so the statement is True.",
@@ -109,13 +91,7 @@
         "For a hospital sterilisation upgrade, Design A costs \\$220{,}000.00 now and returns \\$98{,}000.00 in year 1 and \\$158{,}000.00 in year 2. Design B costs \\$125{,}000.00 and returns \\$148{,}000.00 in year 1. A board says Design B has the higher IRR; at a $11.00\\%$ hurdle rate, Design B has the higher NPV.",
         "For a dental clinic's equipment fund, \\$24{,}000.00 must grow to \\$38{,}880.00. Sterling Account quotes $5.70\\%$ nominal compounded $12$ times yearly; Meadow Account quotes $5.80\\%$ nominal compounded $2$ times yearly. A treasurer says Sterling Account reaches the target first, with the two algebraic waiting times differing by about $0.55$ months."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [false, false, true, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nThe recession stream converges because its ratio is below one:\n\n$$S_\\infty=\\frac{3100000}{1-0.94000}=51666666.666667$$\n\nThe recovery stream is finite and uses exactly $9$ terms:\n\n$$S_{9}=2600000\\frac{1.06000^{9}-1}{1.06000-1}\n=29877421.556783$$\n\nIts share of the recession total is\n\n$$\\frac{S_{9}}{S_\\infty}=0.578273$$\n\nThus the recovery total does not exceed the infinite recession total. The memo's comparison disagrees, so the statement is False.",
         "**B.** → False\n\nThe lease is an annuity due, so first value an ordinary annuity and shift it one period earlier:\n\n$$PV_{\\mathrm{due}}=6400\n\\frac{1-(1+0.06200)^{-8}}{0.06200}(1+0.06200)\n=41874.657076$$\n\nThe growing perpetuity converges because $6.20\\%>1.00\\%$:\n\n$$PV_{\\mathrm{perp}}=\\frac{3100}{0.06200-0.01000}\n=59615.384615$$\n\nAdd values measured at the same date:\n\n$$PV_0=41874.657076+59615.384615=101490.041692$$\n\nThe controller quotes $\\$104{,}540.04$, which does not match the mixed-stream value, so the statement is False.",
@@ -141,13 +117,7 @@
         "For a theater's renovation reserve, \\$31{,}500.00 must grow to \\$43{,}155.00. Orchid Account quotes $6.80\\%$ nominal compounded $4$ times yearly; Summit Account quotes $6.70\\%$ nominal compounded $12$ times yearly. A treasurer says Orchid Account reaches the target first, with the two algebraic waiting times differing by about $0.52$ months.",
         "For a printing press valued at \\$146{,}000.00 today and scheduled to be worth \\$69{,}000.00 after $8$ years under continuous depreciation, an analyst infers $\\delta=9.37\\%$. A second identical asset depreciating continuously at $10.00\\%$ would then be worth \\$65{,}602.03, so the scheduled asset retains more value."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
         "**A.** → True\n\nThe lease is an annuity due, so first value an ordinary annuity and shift it one period earlier:\n\n$$PV_{\\mathrm{due}}=12500\n\\frac{1-(1+0.07500)^{-5}}{0.07500}(1+0.07500)\n=54366.578371$$\n\nThe growing perpetuity converges because $7.50\\%>2.00\\%$:\n\n$$PV_{\\mathrm{perp}}=\\frac{5700}{0.07500-0.02000}\n=103636.363636$$\n\nAdd values measured at the same date:\n\n$$PV_0=54366.578371+103636.363636=158002.942007$$\n\nThe controller quotes $\\$158{,}002.94$, which matches the mixed-stream value, so the statement is True.",
         "**B.** → False\n\nThe level payment is based on all $300$ monthly periods:\n\n$$PMT=620000\\frac{0.004200}{1-(1+0.004200)^{-300}}\n=3638.922053$$\n\nImmediately after payment $60$, value the remaining $240$ payments:\n\n$$B_{60}=PMT\\frac{1-(1+0.004200)^{-240}}{0.004200}\n=549547.126745$$\n\nSeparate principal and interest in the first $60$ payments:\n\n$$\\text{principal repaid}=620000-549547.126745=70452.873255$$\n\n$$\\text{interest}=60(3638.922053)-70452.873255\n=147882.449942$$\n\nThe payment and interest figures are correct, while the reported balance does not match, so the statement is False.",
@@ -173,13 +143,7 @@
         "For a cinema projector valued at \\$96{,}000.00 today and scheduled to be worth \\$45{,}500.00 after $5$ years under continuous depreciation, an analyst infers $\\delta=15.58\\%$. A second identical asset depreciating continuously at $14.00\\%$ would then be worth \\$47{,}672.19, so the comparison asset retains more value.",
         "Under an airport retail franchise, the owner receives \\$30{,}000.00 after 1 year, \\$28{,}000.00 after $3$ years, \\$52{,}000.00 after $6$ years. At a $7.70\\%$ continuous discount rate, an adviser values the rights at \\$84{,}987.56. An immediate offer of \\$84{,}362.56 is therefore better than keeping the dated payments."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [false, true, true, false, false],
       "tactical_explanations": [
         "**A.** → False\n\nThe level payment is based on all $240$ monthly periods:\n\n$$PMT=370000\\frac{0.004900}{1-(1+0.004900)^{-240}}\n=2625.244186$$\n\nImmediately after payment $96$, value the remaining $144$ payments:\n\n$$B_{96}=PMT\\frac{1-(1+0.004900)^{-144}}{0.004900}\n=270740.995630$$\n\nSeparate principal and interest in the first $96$ payments:\n\n$$\\text{principal repaid}=370000-270740.995630=99259.004370$$\n\n$$\\text{interest}=96(2625.244186)-99259.004370\n=152764.437468$$\n\nThe payment and interest figures are correct, while the reported balance does not match, so the statement is False.",
         "**B.** → True\n\nFor Design A, set $x=1+r$ and solve the two-period IRR equation:\n\n$$0=-480000+\\frac{205000}x+\\frac{350000}{x^2}$$\n\n$$ 480000x^2-205000x-350000=0\n\\Longrightarrow x=1.09375000,\\quad r_A=0.09375000$$\n\nDesign B has one dated return:\n\n$$r_B=\\frac{317000}{260000}-1=0.21923077$$\n\nAt the board's hurdle rate,\n\n$$NPV_A=-480000+\\frac{205000}{1+0.13000}\n+\\frac{350000}{(1+0.13000)^2}=-24482.731616$$\n\n$$NPV_B=-260000+\\frac{317000}{1+0.13000}=20530.973451$$\n\nThe NPV ranking is stated correctly. The higher IRR belongs to Design B, matching the board's IRR claim, so the statement is True.",
@@ -205,13 +169,7 @@
         "Under a music catalog earnout, the owner receives \\$25{,}000.00 after 1 year, \\$45{,}000.00 after $4$ years, \\$60{,}000.00 after $8$ years. At a $9.30\\%$ effective annual discount rate, an adviser values the rights at \\$83{,}860.50. An immediate offer of \\$82{,}660.50 is therefore worse than keeping the dated payments.",
         "For a renewable-services platform, a recession scenario begins with \\$2{,}200{,}000.00 of annual cash flow and shrinks it by $8.00\\%$ forever. A recovery scenario begins with \\$1{,}750{,}000.00 and grows it by $9.00\\%$ for $7$ years. An investment memo says the recovery total is \\$16{,}100{,}760.68 and exceeds the recession scenario's full infinite total."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nFor Design A, set $x=1+r$ and solve the two-period IRR equation:\n\n$$0=-175000+\\frac{76000}x+\\frac{126000}{x^2}$$\n\n$$ 175000x^2-76000x-126000=0\n\\Longrightarrow x=1.09301443,\\quad r_A=0.09301443$$\n\nDesign B has one dated return:\n\n$$r_B=\\frac{112000}{95000}-1=0.17894737$$\n\nAt the board's hurdle rate,\n\n$$NPV_A=-175000+\\frac{76000}{1+0.10000}\n+\\frac{126000}{(1+0.10000)^2}=-1776.859504$$\n\n$$NPV_B=-95000+\\frac{112000}{1+0.10000}=6818.181818$$\n\nThe NPV ranking is stated correctly. The higher IRR belongs to Design B, matching the board's IRR claim, so the statement is True.",
         "**B.** → False\n\nBoth nominal quotes must first be converted through their own periodic rates:\n\n$$R_1=\\left(1+\\frac{0.07300}{2}\\right)^{2}-1=0.07433225,\\qquad\nR_2=\\left(1+\\frac{0.07150}{12}\\right)^{12}-1=0.07389028$$\n\nSolve the target equation in each account's compounding periods:\n\n$$t_1=\\frac{\\ln(1.440000)}{2\\ln(1+0.07300/2)}=5.085727\\text{ years}$$\n\n$$t_2=\\frac{\\ln(1.440000)}{12\\ln(1+0.07150/12)}=5.115082\\text{ years}$$\n\nThe actual winner is Vine Account, and the time gap is\n\n$$12|t_1-t_2|=0.35\\text{ months}$$\n\nThe stated winner reverses this calculation, so the statement is False.",
@@ -237,13 +195,7 @@
         "For a publishing roll-up, a recession scenario begins with \\$1{,}450{,}000.00 of annual cash flow and shrinks it by $4.00\\%$ forever. A recovery scenario begins with \\$1{,}300{,}000.00 and grows it by $5.00\\%$ for $10$ years. An investment memo says the recovery total is \\$16{,}351{,}260.30 and exceeds the recession scenario's full infinite total.",
         "In a theater rental and arts endowment, $10$ annual lease payments of \\$9{,}300.00 are due at each year-start. Separately, an endowment pays \\$4{,}000.00 one year from now and grows that payment by $1.40\\%$ forever. At a $6.40\\%$ valuation rate, a controller says the two obligations have a combined present value of \\$151{,}469.00."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nBoth nominal quotes must first be converted through their own periodic rates:\n\n$$R_1=\\left(1+\\frac{0.06400}{12}\\right)^{12}-1=0.06591111,\\qquad\nR_2=\\left(1+\\frac{0.06500}{4}\\right)^{4}-1=0.06660161$$\n\nSolve the target equation in each account's compounding periods:\n\n$$t_1=\\frac{\\ln(1.710000)}{12\\ln(1+0.06400/12)}=8.405043\\text{ years}$$\n\n$$t_2=\\frac{\\ln(1.710000)}{4\\ln(1+0.06500/4)}=8.320626\\text{ years}$$\n\nThe actual winner is Maple Account, and the time gap is\n\n$$12|t_1-t_2|=1.01\\text{ months}$$\n\nThe stated winner reverses this calculation, so the statement is False.",
         "**B.** → True\n\nReverse the continuous depreciation model rather than treating the percentage loss as simple interest:\n\n$$v(t)=v_0e^{-\\delta t}\\Longrightarrow\n\\delta=\\frac1t\\ln\\left(\\frac{v_0}{v(t)}\\right)$$\n\n$$\\delta=\\frac1{8}\\ln\\left(\\frac{240000}{126000}\\right)\n=0.08054463=8.0545\\%$$\n\nThe comparison asset has\n\n$$v_2(8)=240000e^{-0.09000(8)}=116820.541430$$\n\nSince $\\$126{,}000.00$ exceeds $\\$116{,}820.54$, the scheduled asset retains more value. The ranking is correct, while the quoted inferred rate also matches, so the statement is True.",
@@ -269,13 +221,7 @@
         "In a laboratory lease and research prize, $6$ annual lease payments of \\$15{,}000.00 are due at each year-start. Separately, an endowment pays \\$6{,}800.00 one year from now and grows that payment by $1.90\\%$ forever. At a $6.90\\%$ valuation rate, a controller says the two obligations have a combined present value of \\$216{,}017.99.",
         "A boutique hotel finances \\$780{,}000.00 with $360$ month-end payments at $0.41\\%$ per month. An amortisation review reports a payment of \\$4{,}149.16, a balance of \\$631{,}107.83 immediately after payment $120$, and \\$350{,}831.51 of interest paid through that date."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, true, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nReverse the continuous depreciation model rather than treating the percentage loss as simple interest:\n\n$$v(t)=v_0e^{-\\delta t}\\Longrightarrow\n\\delta=\\frac1t\\ln\\left(\\frac{v_0}{v(t)}\\right)$$\n\n$$\\delta=\\frac1{10}\\ln\\left(\\frac{315000}{174000}\\right)\n=0.05935173=5.9352\\%$$\n\nThe comparison asset has\n\n$$v_2(10)=315000e^{-0.07500(10)}=148795.464113$$\n\nSince $\\$174{,}000.00$ exceeds $\\$148{,}795.46$, the scheduled asset retains more value. The ranking is correct, while the quoted inferred rate also matches, so the statement is True.",
         "**B.** → True\n\nEach payment must be moved independently to time zero using its own date:\n\n$$PV=\\frac{21000}{(1+0.0570)^{2}} + \\frac{29000}{(1+0.0570)^{5}} + \\frac{44000}{(1+0.0570)^{9}}$$\n\n$$ PV_{1}=18796.168088\\quad PV_{2}=21979.765839\\quad PV_{3}=26716.390993 $$\n\n$$PV=67492.324920$$\n\nThe immediate offer comparison is\n\n$$ \\$66{,}292.32 < \\$67{,}492.32 $$\n\nThe offer conclusion is correct, and the adviser's quoted total matches the discounted sum, so the statement is True.",
@@ -301,13 +247,7 @@
         "A solar workshop finances \\$455{,}000.00 with $264$ month-end payments at $0.53\\%$ per month. An amortisation review reports a payment of \\$3{,}205.54, a balance of \\$392{,}454.81 immediately after payment $66$, and \\$149{,}020.23 of interest paid through that date.",
         "For a farm irrigation project, Design A costs \\$265{,}000.00 now and returns \\$118{,}000.00 in year 1 and \\$190{,}000.00 in year 2. Design B costs \\$145{,}000.00 and returns \\$174{,}000.00 in year 1. A board says Design B has the higher IRR; at a $12.50\\%$ hurdle rate, Design B has the higher NPV."
       ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [false, false, false, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nEach payment must be moved independently to time zero using its own date:\n\n$$PV=17500e^{-0.0810(1)} + 37500e^{-0.0810(3.5)} + 50000e^{-0.0810(7)}$$\n\n$$ PV_{1}=16138.389600\\quad PV_{2}=28242.867080\\quad PV_{3}=28361.228121 $$\n\n$$PV=72742.484802$$\n\nThe immediate offer comparison is\n\n$$ \\$74{,}342.48 > \\$72{,}742.48 $$\n\nThe offer conclusion is correct, and the adviser's quoted total does not match the discounted sum, so the statement is False.",
         "**B.** → False\n\nThe recession stream converges because its ratio is below one:\n\n$$S_\\infty=\\frac{1700000}{1-0.90000}=17000000.000000$$\n\nThe recovery stream is finite and uses exactly $6$ terms:\n\n$$S_{6}=1200000\\frac{1.12000^{6}-1}{1.12000-1}\n=9738226.851840$$\n\nIts share of the recession total is\n\n$$\\frac{S_{6}}{S_\\infty}=0.572837$$\n\nThus the recovery total does not exceed the infinite recession total. The memo's comparison disagrees, so the statement is False.",
@@ -333,13 +273,7 @@
         "For a hotel heat-pump retrofit, Design A costs \\$390{,}000.00 now and returns \\$170{,}000.00 in year 1 and \\$278{,}000.00 in year 2. Design B costs \\$210{,}000.00 and returns \\$250{,}000.00 in year 1. A board says Design B has the higher IRR; at a $11.50\\%$ hurdle rate, Design B has the higher NPV.",
         "For a marina's dock-repair fund, \\$45{,}500.00 must grow to \\$63{,}245.00. Tide Account quotes $5.50\\%$ nominal compounded $4$ times yearly; Anchor Account quotes $5.45\\%$ nominal compounded $12$ times yearly. A treasurer says Anchor Account reaches the target first, with the two algebraic waiting times differing by about $0.33$ months."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nThe recession stream converges because its ratio is below one:\n\n$$S_\\infty=\\frac{2800000}{1-0.94500}=50909090.909091$$\n\nThe recovery stream is finite and uses exactly $9$ terms:\n\n$$S_{9}=2250000\\frac{1.06500^{9}-1}{1.06500-1}\n=26396667.343533$$\n\nIts share of the recession total is\n\n$$\\frac{S_{9}}{S_\\infty}=0.518506$$\n\nThus the recovery total does not exceed the infinite recession total. The memo's comparison agrees, so the statement is True.",
         "**B.** → True\n\nThe lease is an annuity due, so first value an ordinary annuity and shift it one period earlier:\n\n$$PV_{\\mathrm{due}}=7800\n\\frac{1-(1+0.07300)^{-9}}{0.07300}(1+0.07300)\n=53839.460209$$\n\nThe growing perpetuity converges because $7.30\\%>1.70\\%$:\n\n$$PV_{\\mathrm{perp}}=\\frac{4500}{0.07300-0.01700}\n=80357.142857$$\n\nAdd values measured at the same date:\n\n$$PV_0=53839.460209+80357.142857=134196.603066$$\n\nThe controller quotes $\\$134{,}196.60$, which matches the mixed-stream value, so the statement is True.",
@@ -365,13 +299,7 @@
         "For a publisher's royalty reserve, \\$52{,}000.00 must grow to \\$82{,}160.00. Quill Account quotes $8.20\\%$ nominal compounded $12$ times yearly; Press Account quotes $8.30\\%$ nominal compounded $2$ times yearly. A treasurer says Press Account reaches the target first, with the two algebraic waiting times differing by about $0.33$ months.",
         "For a bakery oven valued at \\$72{,}000.00 today and scheduled to be worth \\$39{,}000.00 after $6$ years under continuous depreciation, an analyst infers $\\delta=10.22\\%$. A second identical asset depreciating continuously at $10.50\\%$ would then be worth \\$38{,}346.61, so the scheduled asset retains more value."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, false, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nThe lease is an annuity due, so first value an ordinary annuity and shift it one period earlier:\n\n$$PV_{\\mathrm{due}}=13600\n\\frac{1-(1+0.06600)^{-7}}{0.06600}(1+0.06600)\n=79233.241731$$\n\nThe growing perpetuity converges because $6.60\\%>1.60\\%$:\n\n$$PV_{\\mathrm{perp}}=\\frac{5200}{0.06600-0.01600}\n=104000.000000$$\n\nAdd values measured at the same date:\n\n$$PV_0=79233.241731+104000.000000=183233.241731$$\n\nThe controller quotes $\\$186{,}883.24$, which does not match the mixed-stream value, so the statement is False.",
         "**B.** → False\n\nThe level payment is based on all $300$ monthly periods:\n\n$$PMT=515000\\frac{0.004300}{1-(1+0.004300)^{-300}}\n=3058.841581$$\n\nImmediately after payment $100$, value the remaining $200$ payments:\n\n$$B_{100}=PMT\\frac{1-(1+0.004300)^{-200}}{0.004300}\n=409783.052662$$\n\nSeparate principal and interest in the first $100$ payments:\n\n$$\\text{principal repaid}=515000-409783.052662=105216.947338$$\n\n$$\\text{interest}=100(3058.841581)-105216.947338\n=200667.210794$$\n\nThe payment and interest figures are correct, while the reported balance does not match, so the statement is False.",
@@ -397,13 +325,7 @@
         "For a forestry skidder valued at \\$198{,}000.00 today and scheduled to be worth \\$92{,}000.00 after $7$ years under continuous depreciation, an analyst infers $\\delta=11.60\\%$. A second identical asset depreciating continuously at $11.00\\%$ would then be worth \\$91{,}676.59, so the scheduled asset retains more value.",
         "Under a software reseller agreement, the owner receives \\$19{,}000.00 after 1 year, \\$31{,}000.00 after $4$ years, \\$47{,}000.00 after $6$ years. At a $7.40\\%$ effective annual discount rate, an adviser values the rights at \\$71{,}614.99. An immediate offer of \\$70{,}414.99 is therefore worse than keeping the dated payments."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nThe level payment is based on all $288$ monthly periods:\n\n$$PMT=690000\\frac{0.005000}{1-(1+0.005000)^{-288}}\n=4526.248659$$\n\nImmediately after payment $80$, value the remaining $208$ payments:\n\n$$B_{80}=PMT\\frac{1-(1+0.005000)^{-208}}{0.005000}\n=584454.754798$$\n\nSeparate principal and interest in the first $80$ payments:\n\n$$\\text{principal repaid}=690000-584454.754798=105545.245202$$\n\n$$\\text{interest}=80(4526.248659)-105545.245202\n=256554.647504$$\n\nThe payment and interest figures are correct, while the reported balance also matches, so the statement is True.",
         "**B.** → False\n\nFor Design A, set $x=1+r$ and solve the two-period IRR equation:\n\n$$0=-520000+\\frac{230000}x+\\frac{365000}{x^2}$$\n\n$$ 520000x^2-230000x-365000=0\n\\Longrightarrow x=1.08765953,\\quad r_A=0.08765953$$\n\nDesign B has one dated return:\n\n$$r_B=\\frac{337000}{285000}-1=0.18245614$$\n\nAt the board's hurdle rate,\n\n$$NPV_A=-520000+\\frac{230000}{1+0.12000}\n+\\frac{365000}{(1+0.12000)^2}=-23667.091837$$\n\n$$NPV_B=-285000+\\frac{337000}{1+0.12000}=15892.857143$$\n\nThe NPV ranking is stated correctly. The higher IRR belongs to Design B, not matching the board's IRR claim, so the statement is False.",
@@ -429,13 +351,7 @@
         "Under a hotel management contract, the owner receives \\$27{,}000.00 after $2$ years, \\$36{,}000.00 after $5$ years, \\$65{,}000.00 after $9$ years. At a $6.60\\%$ continuous discount rate, an adviser values the rights at \\$85{,}429.90. An immediate offer of \\$87{,}029.90 is therefore better than keeping the dated payments.",
         "For a craft-retail portfolio, a recession scenario begins with \\$1{,}950{,}000.00 of annual cash flow and shrinks it by $7.50\\%$ forever. A recovery scenario begins with \\$1{,}600{,}000.00 and grows it by $8.50\\%$ for $7$ years. An investment memo says the recovery total is \\$14{,}496{,}795.24 and exceeds the recession scenario's full infinite total."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nFor Design A, set $x=1+r$ and solve the two-period IRR equation:\n\n$$0=-340000+\\frac{145000}x+\\frac{252000}{x^2}$$\n\n$$ 340000x^2-145000x-252000=0\n\\Longrightarrow x=1.10016582,\\quad r_A=0.10016582$$\n\nDesign B has one dated return:\n\n$$r_B=\\frac{224000}{190000}-1=0.17894737$$\n\nAt the board's hurdle rate,\n\n$$NPV_A=-340000+\\frac{145000}{1+0.13500}\n+\\frac{252000}{(1+0.13500)^2}=-16628.694522$$\n\n$$NPV_B=-190000+\\frac{224000}{1+0.13500}=7356.828194$$\n\nThe NPV ranking is stated correctly. The higher IRR belongs to Design B, not matching the board's IRR claim, so the statement is False.",
         "**B.** → True\n\nBoth nominal quotes must first be converted through their own periodic rates:\n\n$$R_1=\\left(1+\\frac{0.07100}{4}\\right)^{4}-1=0.07291284,\\qquad\nR_2=\\left(1+\\frac{0.07050}{12}\\right)^{12}-1=0.07282324$$\n\nSolve the target equation in each account's compounding periods:\n\n$$t_1=\\frac{\\ln(1.520000)}{4\\ln(1+0.07100/4)}=5.949514\\text{ years}$$\n\n$$t_2=\\frac{\\ln(1.520000)}{12\\ln(1+0.07050/12)}=5.956583\\text{ years}$$\n\nThe actual winner is Paw Account, and the time gap is\n\n$$12|t_1-t_2|=0.08\\text{ months}$$\n\nThe stated winner matches this calculation, so the statement is True.",
@@ -461,13 +377,7 @@
         "For a cold-storage operator, a recession scenario begins with \\$3{,}600{,}000.00 of annual cash flow and shrinks it by $4.50\\%$ forever. A recovery scenario begins with \\$3{,}100{,}000.00 and grows it by $5.50\\%$ for $10$ years. An investment memo says the recovery total is \\$39{,}913{,}596.74 and does not exceed the recession scenario's full infinite total.",
         "In a ferry lease and harbor reserve, $6$ annual lease payments of \\$11{,}800.00 are due at each year-start. Separately, an endowment pays \\$4{,}700.00 one year from now and grows that payment by $1.30\\%$ forever. At a $6.10\\%$ valuation rate, a controller says the two obligations have a combined present value of \\$159{,}287.63."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
         "**A.** → True\n\nBoth nominal quotes must first be converted through their own periodic rates:\n\n$$R_1=\\left(1+\\frac{0.06600}{12}\\right)^{12}-1=0.06803356,\\qquad\nR_2=\\left(1+\\frac{0.06700}{4}\\right)^{4}-1=0.06870225$$\n\nSolve the target equation in each account's compounding periods:\n\n$$t_1=\\frac{\\ln(1.660000)}{12\\ln(1+0.06600/12)}=7.700153\\text{ years}$$\n\n$$t_2=\\frac{\\ln(1.660000)}{4\\ln(1+0.06700/4)}=7.627619\\text{ years}$$\n\nThe actual winner is Reel Account, and the time gap is\n\n$$12|t_1-t_2|=0.87\\text{ months}$$\n\nThe stated winner matches this calculation, so the statement is True.",
         "**B.** → False\n\nReverse the continuous depreciation model rather than treating the percentage loss as simple interest:\n\n$$v(t)=v_0e^{-\\delta t}\\Longrightarrow\n\\delta=\\frac1t\\ln\\left(\\frac{v_0}{v(t)}\\right)$$\n\n$$\\delta=\\frac1{8}\\ln\\left(\\frac{225000}{119000}\\right)\n=0.07962211=7.9622\\%$$\n\nThe comparison asset has\n\n$$v_2(8)=225000e^{-0.08000(8)}=118640.795410$$\n\nSince $\\$119{,}000.00$ exceeds $\\$118{,}640.80$, the scheduled asset retains more value. The ranking is correct, while the quoted inferred rate does not match, so the statement is False.",
@@ -493,13 +403,7 @@
         "In a publisher lease and literacy fund, $10$ annual lease payments of \\$8{,}900.00 are due at each year-start. Separately, an endowment pays \\$3{,}300.00 one year from now and grows that payment by $1.20\\%$ forever. At a $7.00\\%$ valuation rate, a controller says the two obligations have a combined present value of \\$127{,}632.12.",
         "A film studio finances \\$840{,}000.00 with $360$ month-end payments at $0.40\\%$ per month. An amortisation review reports a payment of \\$4{,}407.19, a balance of \\$634{,}418.66 immediately after payment $144$, and \\$431{,}253.87 of interest paid through that date."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [false, true, true, false, false],
       "tactical_explanations": [
         "**A.** → False\n\nReverse the continuous depreciation model rather than treating the percentage loss as simple interest:\n\n$$v(t)=v_0e^{-\\delta t}\\Longrightarrow\n\\delta=\\frac1t\\ln\\left(\\frac{v_0}{v(t)}\\right)$$\n\n$$\\delta=\\frac1{11}\\ln\\left(\\frac{280000}{151000}\\right)\n=0.05613725=5.6137\\%$$\n\nThe comparison asset has\n\n$$v_2(11)=280000e^{-0.07000(11)}=129643.659127$$\n\nSince $\\$151{,}000.00$ exceeds $\\$129{,}643.66$, the scheduled asset retains more value. The ranking is correct, while the quoted inferred rate does not match, so the statement is False.",
         "**B.** → True\n\nEach payment must be moved independently to time zero using its own date:\n\n$$PV=15000e^{-0.0630(0.5)} + 28000e^{-0.0630(2.5)} + 49000e^{-0.0630(6)}$$\n\n$$ PV_{1}=14534.864347\\quad PV_{2}=23919.750781\\quad PV_{3}=33576.294533 $$\n\n$$PV=72030.909660$$\n\nThe immediate offer comparison is\n\n$$ \\$73{,}630.91 > \\$72{,}030.91 $$\n\nThe offer conclusion is correct, and the adviser's quoted total matches the discounted sum, so the statement is True.",
@@ -525,13 +429,7 @@
         "A farm processing unit finances \\$345{,}000.00 with $240$ month-end payments at $0.52\\%$ per month. An amortisation review reports a payment of \\$2{,}519.69, a balance of \\$297{,}616.88 immediately after payment $54$, and \\$90{,}955.24 of interest paid through that date.",
         "For a school solar canopy, Design A costs \\$610{,}000.00 now and returns \\$260{,}000.00 in year 1 and \\$440{,}000.00 in year 2. Design B costs \\$335{,}000.00 and returns \\$395{,}000.00 in year 1. A board says Design B has the higher IRR; at a $11.00\\%$ hurdle rate, Design B has the higher NPV."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nEach payment must be moved independently to time zero using its own date:\n\n$$PV=\\frac{20000}{(1+0.0710)^{1}} + \\frac{34000}{(1+0.0710)^{4}} + \\frac{53000}{(1+0.0710)^{7}}$$\n\n$$ PV_{1}=18674.136321\\quad PV_{2}=25841.697223\\quad PV_{3}=32790.615882 $$\n\n$$PV=77306.449426$$\n\nThe immediate offer comparison is\n\n$$ \\$76{,}106.45 < \\$77{,}306.45 $$\n\nThe offer conclusion is correct, and the adviser's quoted total matches the discounted sum, so the statement is True.",
         "**B.** → True\n\nThe recession stream converges because its ratio is below one:\n\n$$S_\\infty=\\frac{2050000}{1-0.94000}=34166666.666667$$\n\nThe recovery stream is finite and uses exactly $9$ terms:\n\n$$S_{9}=1650000\\frac{1.07000^{9}-1}{1.07000-1}\n=19763681.435618$$\n\nIts share of the recession total is\n\n$$\\frac{S_{9}}{S_\\infty}=0.578449$$\n\nThus the recovery total does not exceed the infinite recession total. The memo's comparison agrees, so the statement is True.",
@@ -557,13 +455,7 @@
         "For a marina dredging design, Design A costs \\$285{,}000.00 now and returns \\$126{,}000.00 in year 1 and \\$202{,}000.00 in year 2. Design B costs \\$158{,}000.00 and returns \\$187{,}000.00 in year 1. A board says Design B has the higher IRR; at a $13.00\\%$ hurdle rate, Design B has the higher NPV.",
         "For a factory's replacement fund, \\$47{,}500.00 must grow to \\$67{,}925.00. Forge Account quotes $5.20\\%$ nominal compounded $4$ times yearly; Mill Account quotes $5.15\\%$ nominal compounded $12$ times yearly. A treasurer says Mill Account reaches the target first, with the two algebraic waiting times differing by about $0.44$ months."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [false, false, true, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nThe recession stream converges because its ratio is below one:\n\n$$S_\\infty=\\frac{1500000}{1-0.92000}=18750000.000000$$\n\nThe recovery stream is finite and uses exactly $7$ terms:\n\n$$S_{7}=1150000\\frac{1.11000^{7}-1}{1.11000-1}\n=11250765.234850$$\n\nIts share of the recession total is\n\n$$\\frac{S_{7}}{S_\\infty}=0.600041$$\n\nThus the recovery total does not exceed the infinite recession total. The memo's comparison disagrees, so the statement is False.",
         "**B.** → False\n\nThe lease is an annuity due, so first value an ordinary annuity and shift it one period earlier:\n\n$$PV_{\\mathrm{due}}=14200\n\\frac{1-(1+0.07400)^{-5}}{0.07400}(1+0.07400)\n=61867.240066$$\n\nThe growing perpetuity converges because $7.40\\%>2.10\\%$:\n\n$$PV_{\\mathrm{perp}}=\\frac{6100}{0.07400-0.02100}\n=115094.339623$$\n\nAdd values measured at the same date:\n\n$$PV_0=61867.240066+115094.339623=176961.579688$$\n\nThe controller quotes $\\$181{,}011.58$, which does not match the mixed-stream value, so the statement is False.",
@@ -589,13 +481,7 @@
         "For a charity's building reserve, \\$56{,}000.00 must grow to \\$87{,}920.00. Hope Account quotes $7.60\\%$ nominal compounded $2$ times yearly; Bridge Account quotes $7.45\\%$ nominal compounded $12$ times yearly. A treasurer says Hope Account reaches the target first, with the two algebraic waiting times differing by about $0.31$ months.",
         "For a dairy separator valued at \\$118{,}000.00 today and scheduled to be worth \\$67{,}000.00 after $6$ years under continuous depreciation, an analyst infers $\\delta=10.08\\%$. A second identical asset depreciating continuously at $9.50\\%$ would then be worth \\$66{,}732.00, so the scheduled asset retains more value."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nThe lease is an annuity due, so first value an ordinary annuity and shift it one period earlier:\n\n$$PV_{\\mathrm{due}}=13100\n\\frac{1-(1+0.06800)^{-7}}{0.06800}(1+0.06800)\n=75929.072942$$\n\nThe growing perpetuity converges because $6.80\\%>1.80\\%$:\n\n$$PV_{\\mathrm{perp}}=\\frac{5400}{0.06800-0.01800}\n=108000.000000$$\n\nAdd values measured at the same date:\n\n$$PV_0=75929.072942+108000.000000=183929.072942$$\n\nThe controller quotes $\\$183{,}929.07$, which matches the mixed-stream value, so the statement is True.",
         "**B.** → False\n\nThe level payment is based on all $216$ monthly periods:\n\n$$PMT=430000\\frac{0.004800}{1-(1+0.004800)^{-216}}\n=3202.324313$$\n\nImmediately after payment $72$, value the remaining $144$ payments:\n\n$$B_{72}=PMT\\frac{1-(1+0.004800)^{-144}}{0.004800}\n=332372.155262$$\n\nSeparate principal and interest in the first $72$ payments:\n\n$$\\text{principal repaid}=430000-332372.155262=97627.844738$$\n\n$$\\text{interest}=72(3202.324313)-97627.844738\n=132939.505763$$\n\nThe payment and interest figures are correct, while the reported balance does not match, so the statement is False.",
@@ -621,13 +507,7 @@
         "For a construction excavator valued at \\$360{,}000.00 today and scheduled to be worth \\$194{,}000.00 after $10$ years under continuous depreciation, an analyst infers $\\delta=6.83\\%$. A second identical asset depreciating continuously at $6.00\\%$ would then be worth \\$197{,}572.19, so the comparison asset retains more value.",
         "Under a medical-device distribution right, the owner receives \\$23{,}000.00 after $1.5$ years, \\$39{,}000.00 after $3$ years, \\$61{,}000.00 after $8$ years. At a $7.90\\%$ continuous discount rate, an adviser values the rights at \\$83{,}623.64. An immediate offer of \\$85{,}223.64 is therefore better than keeping the dated payments."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nThe level payment is based on all $324$ monthly periods:\n\n$$PMT=725000\\frac{0.004250}{1-(1+0.004250)^{-324}}\n=4125.229028$$\n\nImmediately after payment $108$, value the remaining $216$ payments:\n\n$$B_{108}=PMT\\frac{1-(1+0.004250)^{-216}}{0.004250}\n=582293.645807$$\n\nSeparate principal and interest in the first $108$ payments:\n\n$$\\text{principal repaid}=725000-582293.645807=142706.354193$$\n\n$$\\text{interest}=108(4125.229028)-142706.354193\n=302818.380785$$\n\nThe payment and interest figures are correct, while the reported balance does not match, so the statement is False.",
         "**B.** → True\n\nFor Design A, set $x=1+r$ and solve the two-period IRR equation:\n\n$$0=-455000+\\frac{195000}x+\\frac{329000}{x^2}$$\n\n$$ 455000x^2-195000x-329000=0\n\\Longrightarrow x=1.09120948,\\quad r_A=0.09120948$$\n\nDesign B has one dated return:\n\n$$r_B=\\frac{296000}{250000}-1=0.18400000$$\n\nAt the board's hurdle rate,\n\n$$NPV_A=-455000+\\frac{195000}{1+0.12500}\n+\\frac{329000}{(1+0.12500)^2}=-21716.049383$$\n\n$$NPV_B=-250000+\\frac{296000}{1+0.12500}=13111.111111$$\n\nThe NPV ranking is stated correctly. The higher IRR belongs to Design B, matching the board's IRR claim, so the statement is True.",
