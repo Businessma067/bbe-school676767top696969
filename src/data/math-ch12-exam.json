@@ -13,13 +13,7 @@
         "A charity ticket has net returns $-4$, $3$, and $12$ euros with probabilities $\\frac12$, $\\frac13$, and $\\frac16$. Its expected net return is claimed to be $2$ euros.",
         "Factory A supplies $\\frac35$ of parts with defect rate $\\frac1{50}$; factory B supplies the rest with rate $\\frac1{20}$. Given a defect, the probability it came from A is claimed to be $\\dfrac{3}{8}$."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=\\binom{52}{3}=22100$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=\\binom{4}{2}\\binom{48}{1}=288$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{288}{22100}=\\dfrac{72}{5525}\n\\approx 0.013032$$\n\nThe claimed probability is $\\dfrac{72}{5525}$. Exact comparison gives\n\n$$\\dfrac{72}{5525}=\\dfrac{72}{5525}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)\n=40+50-20=70$$\n\nThe associated disjoint counts are\n\n$$N(\\text{exactly one})=40+50-2(20)=50$$\n\n$$N(\\text{only A})=40-20=20,\\qquad\nN(\\text{neither})=100-70=30$$\n\nFor the category asked about in the stem, the correct count is $20$ rather than $21$:\n\n$$20\\ne21$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -45,13 +39,7 @@
         "A disease affects $1\\%$ of patients. A screen is $99\\%$ sensitive and falsely flags $2\\%$ of healthy patients. After a positive result, the stated disease probability is $\\dfrac{2}{3}$.",
         "At a school fair, an urn holds five red and seven blue balls; two are selected together. Organizers list the probability of two red balls as $\\dfrac{1}{6}$."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)\n=58+46-17=87$$\n\nThe associated disjoint counts are\n\n$$N(\\text{exactly one})=58+46-2(17)=70$$\n\n$$N(\\text{only A})=58-17=41,\\qquad\nN(\\text{neither})=120-87=33$$\n\nFor the category asked about in the stem, the correct count is $87$ rather than $87$:\n\n$$87=87$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nIndependence requires the observed intersection to equal the product of the marginal probabilities:\n\n$$P(A\\cap B)=\\frac{14}{104}$$\n\n$$P(A)P(B)=\\frac{47}{104}\\cdot\n\\frac{41}{104}$$\n\nAvoid rounding by cross-multiplying:\n\n$$14\\cdot104=1456,\\qquad\n47\\cdot41=1927$$\n\nThese products are unequal, so the events are not independent. The stem instead says independent:\n\n$$1456\\ne1927$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -77,13 +65,7 @@
         "A research committee of four is chosen from six men and five women. The selection has exactly two women with probability $\\dfrac{5}{11}$, according to the minutes.",
         "A commuter census records 72 bus users, 55 rail users, and 21 who use both. It states that 86 use exactly one of the two services."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{N(A\\cap B)}{N(B)}$$\n\nHere the favorable and conditional totals are\n\n$$N(A\\cap B)=65,\\qquad N(B)=80$$\n\nTherefore,\n\n$$P(A\\mid B)=\\frac{65}{80}\n=\\dfrac{13}{16}\\approx 0.8125$$\n\nThe stem uses $\\dfrac{13}{16}$, so exact fractions give\n\n$$\\dfrac{13}{16}=\\dfrac{13}{16}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(-6)(\\dfrac{1}{4})+(3)(\\dfrac{1}{2})+(14)(\\dfrac{1}{4})=\\dfrac{7}{2}$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(-6)^2(\\dfrac{1}{4})+(3)^2(\\dfrac{1}{2})+(14)^2(\\dfrac{1}{4})=\\dfrac{125}{2}$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=\\dfrac{125}{2}-(\\dfrac{7}{2})^2=\\dfrac{201}{4}$$\n\n\n\nThe requested variance is $\\dfrac{201}{4}$, compared with $\\dfrac{205}{4}$ in the stem:\n\n$$\\dfrac{201}{4}\\ne\\dfrac{205}{4}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -109,13 +91,7 @@
         "Among 140 phones, 64 have app A, 59 have app B, and 23 have both. The technician says 40 have neither app.",
         "A warehouse starts with 114 orders, 49 requiring a signature. One known signature order is removed; the chance that the next order also requires a signature is reported as $\\dfrac{49}{113}$."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(-4)(\\dfrac{3}{8})+(6)(\\dfrac{3}{8})+(18)(\\dfrac{1}{4})=\\dfrac{21}{4}$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(-4)^2(\\dfrac{3}{8})+(6)^2(\\dfrac{3}{8})+(18)^2(\\dfrac{1}{4})=\\dfrac{201}{2}$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=\\dfrac{201}{2}-(\\dfrac{21}{4})^2=\\dfrac{1167}{16}$$\n\n\n\nFor independent plays, covariance is zero and variances add:\n\n$$\\operatorname{Var}(X_1+X_2)\n=\\operatorname{Var}(X_1)+\\operatorname{Var}(X_2)$$\n\n$$\\operatorname{Var}(X_1+X_2)\n=2\\left(\\dfrac{1167}{16}\\right)=\\dfrac{1167}{8}$$\n\nThe requested two-play variance is $\\dfrac{1167}{8}$, compared with $\\dfrac{1167}{8}$ in the stem:\n\n$$\\dfrac{1167}{8}=\\dfrac{1167}{8}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{5}\\cdot\\dfrac{19}{20}=\\dfrac{19}{100},\\qquad w_2=\\dfrac{4}{5}\\cdot\\dfrac{1}{20}=\\dfrac{1}{25}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{19}{100}+\\dfrac{1}{25}=\\dfrac{23}{100}$$\n\nNormalize the weight for source 1:\n\n$$P(C_1\\mid E)\n=\\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n=\\frac{\\dfrac{19}{100}}{\\dfrac{23}{100}}\n=\\dfrac{19}{23}\\approx 0.826087$$\n\nThe stem claims $\\dfrac{20}{23}$, so\n\n$$\\dfrac{19}{23}\\ne\\dfrac{20}{23}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -141,13 +117,7 @@
         "A fair die is rolled at a game club. Given that the face is at least four, the probability that it is even is advertised as $\\dfrac{2}{3}$.",
         "A fair four-sided die pays its face value in tokens. The games teacher says the payoff variance equals $\\dfrac{9}{4}$."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{2}\\cdot\\dfrac{49}{50}=\\dfrac{49}{100},\\qquad w_2=\\dfrac{3}{10}\\cdot\\dfrac{19}{20}=\\dfrac{57}{200},\\qquad w_3=\\dfrac{1}{5}\\cdot\\dfrac{9}{10}=\\dfrac{9}{50}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{49}{100}+\\dfrac{57}{200}+\\dfrac{9}{50}=\\dfrac{191}{200}$$\n\nNormalize the weight for source 2:\n\n$$P(C_2\\mid E)\n=\\frac{P(C_2)P(E\\mid C_2)}{P(E)}\n=\\frac{\\dfrac{57}{200}}{\\dfrac{191}{200}}\n=\\dfrac{57}{191}\\approx 0.298429$$\n\nThe stem claims $\\dfrac{57}{191}$, so\n\n$$\\dfrac{57}{191}=\\dfrac{57}{191}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=\\binom{52}{5}=2598960$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=4\\binom{13}{5}=5148$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{5148}{2598960}=\\dfrac{33}{16660}\n\\approx 0.001981$$\n\nThe claimed probability is $\\dfrac{33}{16660}$. Exact comparison gives\n\n$$\\dfrac{33}{16660}=\\dfrac{33}{16660}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -173,13 +143,7 @@
         "A spinner awards $-1$, $0$, or $1$ point with probabilities $\\frac15$, $\\frac12$, and $\\frac3{10}$. The advertised expected score is $\\dfrac{1}{10}$.",
         "Three possible faults have priors $\\frac12$, $\\frac3{10}$, and $\\frac15$. Their alarm probabilities are $\\frac1{10}$, $\\frac25$, and $\\frac12$. After an alarm, fault 2 is assigned posterior $\\dfrac{5}{9}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=\\binom{14}{3}=364$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=\\binom{8}{3}=56$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{56}{364}=\\dfrac{2}{13}\n\\approx 0.153846$$\n\nThe claimed probability is $\\dfrac{57}{364}$. Exact comparison gives\n\n$$\\dfrac{2}{13}\\ne\\dfrac{57}{364}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)\n=51+44-19=76$$\n\nThe associated disjoint counts are\n\n$$N(\\text{exactly one})=51+44-2(19)=57$$\n\n$$N(\\text{only A})=51-19=32,\\qquad\nN(\\text{neither})=120-76=44$$\n\nFor the category asked about in the stem, the correct count is $76$ rather than $76$:\n\n$$76=76$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -205,13 +169,7 @@
         "A condition has prevalence $5\\%$. A test always detects the condition but falsely tests positive for $10\\%$ of healthy people. The reported posterior after a positive is $\\dfrac{10}{29}$.",
         "A laboratory jar contains ten white and ten black capsules. Three capsules are sampled without replacement, and the all-white probability is reported as $\\dfrac{2}{19}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)\n=63+57-18=102$$\n\nThe associated disjoint counts are\n\n$$N(\\text{exactly one})=63+57-2(18)=84$$\n\n$$N(\\text{only A})=63-18=45,\\qquad\nN(\\text{neither})=150-102=48$$\n\nFor the category asked about in the stem, the correct count is $48$ rather than $49$:\n\n$$48\\ne49$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{N(A\\cap B)}{N(B)}$$\n\nHere the favorable and conditional totals are\n\n$$N(A\\cap B)=1,\\qquad N(B)=2$$\n\nTherefore,\n\n$$P(A\\mid B)=\\frac{1}{2}\n=\\dfrac{1}{2}\\approx 0.5$$\n\nThe stem uses $\\dfrac{1}{2}$, so exact fractions give\n\n$$\\dfrac{1}{2}=\\dfrac{1}{2}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -237,13 +195,7 @@
         "A poker archive classifies random five-card hands. It asserts that exactly two aces occur with probability $\\dfrac{103777}{2598960}$.",
         "A control room receives alerts from 74 temperature sensors and 61 pressure sensors; 29 devices issue both. The engineer says 45 issue only temperature alerts."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{N(A\\cap B)}{N(B)}$$\n\nHere the favorable and conditional totals are\n\n$$N(A\\cap B)=28,\\qquad N(B)=35$$\n\nTherefore,\n\n$$P(A\\mid B)=\\frac{28}{35}\n=\\dfrac{4}{5}\\approx 0.8$$\n\nThe stem uses $\\dfrac{29}{35}$, so exact fractions give\n\n$$\\dfrac{4}{5}\\ne\\dfrac{29}{35}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(48)(\\dfrac{1}{100})+(-2)(\\dfrac{99}{100})=\\dfrac{-3}{2}$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(48)^2(\\dfrac{1}{100})+(-2)^2(\\dfrac{99}{100})=27$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=27-(\\dfrac{-3}{2})^2=\\dfrac{99}{4}$$\n\n\n\nThe requested mean is $\\dfrac{-3}{2}$, compared with $\\dfrac{-3}{2}$ in the stem:\n\n$$\\dfrac{-3}{2}=\\dfrac{-3}{2}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -269,13 +221,7 @@
         "Festival bookings show 68 jazz tickets, 52 theatre tickets, and 94 patrons with at least one type. The organiser concludes that 27 patrons booked both.",
         "Across 80 rainy-or-dry mornings, 30 are rainy, umbrellas appear on 34, and both occur on 24. Given an umbrella, the forecast desk quotes rain probability $\\dfrac{12}{17}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, true, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(1)(\\dfrac{1}{6})+(2)(\\dfrac{1}{6})+(3)(\\dfrac{1}{6})+(4)(\\dfrac{1}{6})+(5)(\\dfrac{1}{6})+(6)(\\dfrac{1}{6})=\\dfrac{7}{2}$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(1)^2(\\dfrac{1}{6})+(2)^2(\\dfrac{1}{6})+(3)^2(\\dfrac{1}{6})+(4)^2(\\dfrac{1}{6})+(5)^2(\\dfrac{1}{6})+(6)^2(\\dfrac{1}{6})=\\dfrac{91}{6}$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=\\dfrac{91}{6}-(\\dfrac{7}{2})^2=\\dfrac{35}{12}$$\n\n\n\nThe requested variance is $\\dfrac{35}{12}$, compared with $\\dfrac{47}{12}$ in the stem:\n\n$$\\dfrac{35}{12}\\ne\\dfrac{47}{12}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{10}\\cdot\\dfrac{9}{10}=\\dfrac{9}{100},\\qquad w_2=\\dfrac{1}{5}\\cdot\\dfrac{3}{5}=\\dfrac{3}{25},\\qquad w_3=\\dfrac{7}{10}\\cdot\\dfrac{1}{10}=\\dfrac{7}{100}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{9}{100}+\\dfrac{3}{25}+\\dfrac{7}{100}=\\dfrac{7}{25}$$\n\nNormalize the weight for source 3:\n\n$$P(C_3\\mid E)\n=\\frac{P(C_3)P(E\\mid C_3)}{P(E)}\n=\\frac{\\dfrac{7}{100}}{\\dfrac{7}{25}}\n=\\dfrac{1}{4}\\approx 0.25$$\n\nThe stem claims $\\dfrac{1}{4}$, so\n\n$$\\dfrac{1}{4}=\\dfrac{1}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -301,13 +247,7 @@
         "A clinic records 120 patients: 45 have fever, 50 have cough, and 20 have both. For a patient with fever, the stated chance of cough is $\\dfrac{7}{15}$.",
         "A parcel insurer observes zero, two, or five damaged items with probabilities $\\frac35$, $\\frac3{10}$, and $\\frac1{10}$. It reports mean damage count $\\dfrac{11}{10}$."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, false, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{7}{10}\\cdot\\dfrac{1}{50}=\\dfrac{7}{500},\\qquad w_2=\\dfrac{3}{10}\\cdot\\dfrac{2}{25}=\\dfrac{3}{125}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{7}{500}+\\dfrac{3}{125}=\\dfrac{19}{500}$$\n\nNormalize the weight for source 2:\n\n$$P(C_2\\mid E)\n=\\frac{P(C_2)P(E\\mid C_2)}{P(E)}\n=\\frac{\\dfrac{3}{125}}{\\dfrac{19}{500}}\n=\\dfrac{12}{19}\\approx 0.631579$$\n\nThe stem claims $\\dfrac{13}{19}$, so\n\n$$\\dfrac{12}{19}\\ne\\dfrac{13}{19}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=10\\cdot9\\cdot8=720$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=5\\cdot9\\cdot8=360$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{360}{720}=\\dfrac{1}{2}\n\\approx 0.5$$\n\nThe claimed probability is $\\dfrac{361}{720}$. Exact comparison gives\n\n$$\\dfrac{1}{2}\\ne\\dfrac{361}{720}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -333,13 +273,7 @@
         "A game awards $3$ points with probability $\\frac13$ and deducts $1$ point otherwise. Its score variance is claimed to be $\\dfrac{41}{9}$.",
         "A fraud rule starts from prior $P(F)=0.02$, flags $95\\%$ of fraud, and flags $5\\%$ of legitimate cases. The investigator quotes posterior $P(F\\mid+)=\\dfrac{19}{68}$."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=\\binom{12}{4}=495$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=\\binom{5}{3}\\binom{7}{1}=70$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{70}{495}=\\dfrac{14}{99}\n\\approx 0.141414$$\n\nThe claimed probability is $\\dfrac{14}{99}$. Exact comparison gives\n\n$$\\dfrac{14}{99}=\\dfrac{14}{99}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)\n=88+75-39=124$$\n\nThe associated disjoint counts are\n\n$$N(\\text{exactly one})=88+75-2(39)=85$$\n\n$$N(\\text{only A})=88-39=49,\\qquad\nN(\\text{neither})=150-124=26$$\n\nFor the category asked about in the stem, the correct count is $124$ rather than $125$:\n\n$$124\\ne125$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -365,13 +299,7 @@
         "Causes H1 and H2 have priors $0.6$ and $0.4$ and evidence rates $0.3$ and $0.8$. Given the evidence, a report assigns H2 probability $\\dfrac{17}{25}$.",
         "A carnival booth replaces a ball after each draw from a box containing four red and six green balls. Its posted probability of two red draws is $\\dfrac{17}{100}$."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)\n=62+70-31=101$$\n\nThe associated disjoint counts are\n\n$$N(\\text{exactly one})=62+70-2(31)=70$$\n\n$$N(\\text{only A})=62-31=31,\\qquad\nN(\\text{neither})=140-101=39$$\n\nFor the category asked about in the stem, the correct count is $39$ rather than $39$:\n\n$$39=39$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nIndependence requires the observed intersection to equal the product of the marginal probabilities:\n\n$$P(A\\cap B)=\\frac{12}{100}$$\n\n$$P(A)P(B)=\\frac{30}{100}\\cdot\n\\frac{40}{100}$$\n\nAvoid rounding by cross-multiplying:\n\n$$12\\cdot100=1200,\\qquad\n30\\cdot40=1200$$\n\nThese products are equal, so the events are independent. The stem instead says not independent:\n\n$$1200=1200$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -397,13 +325,7 @@
         "A paint shop has five red and five blue sample cards. After a red card is drawn and kept out, a blue card is drawn; the probability of that ordered colour sequence is claimed to be $\\dfrac{5}{18}$.",
         "A streaming poll records 55 documentary viewers, 67 drama viewers, and 93 who watch one or both. The pollster says 30 watch both."
       ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, false, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{N(A\\cap B)}{N(B)}$$\n\nHere the favorable and conditional totals are\n\n$$N(A\\cap B)=15,\\qquad N(B)=60$$\n\nTherefore,\n\n$$P(A\\mid B)=\\frac{15}{60}\n=\\dfrac{1}{4}\\approx 0.25$$\n\nThe stem uses $\\dfrac{1}{4}$, so exact fractions give\n\n$$\\dfrac{1}{4}=\\dfrac{1}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(10)(\\dfrac{1}{2})+(20)(\\dfrac{1}{2})=15$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(10)^2(\\dfrac{1}{2})+(20)^2(\\dfrac{1}{2})=250$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=250-(15)^2=25$$\n\n\n\nThe requested variance is $25$, compared with $26$ in the stem:\n\n$$25\\ne26$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -429,13 +351,7 @@
         "At a college, 80 students take algebra, 65 take statistics, and 28 take both. The dean claims 89 take exactly one course.",
         "A school lists 70 athletes and 54 honour students, with 28 students in both groups. Among athletes, the counsellor gives $\\dfrac{29}{70}$ as the probability of honours."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nRecover variance from the first two moments:\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2$$\n\n$$\\operatorname{Var}(X)=20-4^2=4$$\n\nStandard deviation is the nonnegative square root:\n\n$$\\operatorname{SD}(X)=\\sqrt4=2$$\n\nThe note states $2$, hence\n\n$$2=2$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{200}\\cdot\\dfrac{99}{100}=\\dfrac{99}{20000},\\qquad w_2=\\dfrac{199}{200}\\cdot\\dfrac{1}{100}=\\dfrac{199}{20000}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{99}{20000}+\\dfrac{199}{20000}=\\dfrac{149}{10000}$$\n\nNormalize the weight for source 1:\n\n$$P(C_1\\mid E)\n=\\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n=\\frac{\\dfrac{99}{20000}}{\\dfrac{149}{10000}}\n=\\dfrac{99}{298}\\approx 0.332215$$\n\nThe stem claims $\\dfrac{50}{149}$, so\n\n$$\\dfrac{99}{298}\\ne\\dfrac{50}{149}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
@@ -461,13 +377,7 @@
         "Two fair dice are rolled, and the first die is known to show three. The board-game host says the conditional chance that the total is eight equals $\\dfrac{1}{6}$.",
         "A portfolio return has variance $16$. After every return is doubled, the analyst says the new variance is $65$."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{2}\\cdot\\dfrac{3}{5}=\\dfrac{3}{10},\\qquad w_2=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{3}{10}+\\dfrac{1}{10}=\\dfrac{2}{5}$$\n\nNormalize the weight for source 1:\n\n$$P(C_1\\mid E)\n=\\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n=\\frac{\\dfrac{3}{10}}{\\dfrac{2}{5}}\n=\\dfrac{3}{4}\\approx 0.75$$\n\nThe stem claims $\\dfrac{3}{4}$, so\n\n$$\\dfrac{3}{4}=\\dfrac{3}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
         "**B.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=\\binom{52}{2}=1326$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=\\binom{4}{2}=6$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{6}{1326}=\\dfrac{1}{221}\n\\approx 0.004525$$\n\nThe claimed probability is $\\dfrac{1}{221}$. Exact comparison gives\n\n$$\\dfrac{1}{221}=\\dfrac{1}{221}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -493,13 +403,7 @@
         "Independent route delays $X$ and $Y$ have variances $4$ and $9$. The transport model assigns variance $13$ to $X+Y$.",
         "A small workshop supplies $25\\%$ of goods at a $4\\%$ defect rate; a large workshop supplies $75\\%$ at $2\\%$. Given a defect, the smaller workshop's posterior share is stated as $\\dfrac{3}{5}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [false, true, false, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=6\\cdot5\\cdot4=120$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=3(5\\cdot4)=60$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{60}{120}=\\dfrac{1}{2}\n\\approx 0.5$$\n\nThe claimed probability is $\\dfrac{61}{120}$. Exact comparison gives\n\n$$\\dfrac{1}{2}\\ne\\dfrac{61}{120}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nCollect the first-order and pairwise sums:\n\n$$S_1=52+59+49=160,\\qquad\nS_2=16+14+15=45$$\n\nThree-set inclusion-exclusion gives\n\n$$N(A\\cup B\\cup C)=S_1-S_2+6\n=160-45+6=121$$\n\nSeparate the overlap regions:\n\n$$N(\\text{exactly two})=S_2-3(6)=27$$\n\n$$N(\\text{exactly one})=S_1-2S_2+3(6)=88$$\n\nThus the requested count is $27$, compared with the report's $27$:\n\n$$27=27$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -525,13 +429,7 @@
         "Three causes are initially equally likely and produce evidence E with probabilities $0.9$, $0.5$, and $0.2$. Once E occurs, cause 1 is assigned probability $\\dfrac{9}{16}$.",
         "A museum game reveals one uniformly chosen playing card. Its guide says the probability of a jack, queen, or king is $\\dfrac{3}{13}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [false, true, false, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nCollect the first-order and pairwise sums:\n\n$$S_1=44+38+35=117,\\qquad\nS_2=12+10+9=31$$\n\nThree-set inclusion-exclusion gives\n\n$$N(A\\cup B\\cup C)=S_1-S_2+4\n=117-31+4=90$$\n\nSeparate the overlap regions:\n\n$$N(\\text{exactly two})=S_2-3(4)=19$$\n\n$$N(\\text{exactly one})=S_1-2S_2+3(4)=67$$\n\nThus the requested count is $90$, compared with the report's $91$:\n\n$$90\\ne91$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{N(A\\cap B)}{N(B)}$$\n\nHere the favorable and conditional totals are\n\n$$N(A\\cap B)=9,\\qquad N(B)=27$$\n\nTherefore,\n\n$$P(A\\mid B)=\\frac{9}{27}\n=\\dfrac{1}{3}\\approx 0.333333$$\n\nThe stem uses $\\dfrac{1}{3}$, so exact fractions give\n\n$$\\dfrac{1}{3}=\\dfrac{1}{3}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -557,13 +455,7 @@
         "From seven men and five women, a community centre draws a two-person welcome team. The chance of one person of each gender is printed as $\\dfrac{6}{11}$.",
         "Among 160 clinic files, tests A, B, and C were ordered in 71, 64, and 52 cases. Pair intersections are 22, 18, and 16, with seven files in all three. An auditor says 22 files have none of the tests."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [false, true, false, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nIndependence requires the observed intersection to equal the product of the marginal probabilities:\n\n$$P(A\\cap B)=\\frac{18}{120}$$\n\n$$P(A)P(B)=\\frac{40}{120}\\cdot\n\\frac{50}{120}$$\n\nAvoid rounding by cross-multiplying:\n\n$$18\\cdot120=2160,\\qquad\n40\\cdot50=2000$$\n\nThese products are unequal, so the events are not independent. The stem instead says independent:\n\n$$2160\\ne2000$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(0)(\\dfrac{1}{2})+(5)(\\dfrac{2}{5})+(15)(\\dfrac{1}{10})=\\dfrac{7}{2}$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(0)^2(\\dfrac{1}{2})+(5)^2(\\dfrac{2}{5})+(15)^2(\\dfrac{1}{10})=\\dfrac{65}{2}$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=\\dfrac{65}{2}-(\\dfrac{7}{2})^2=\\dfrac{81}{4}$$\n\n\n\nThe requested variance is $\\dfrac{81}{4}$, compared with $\\dfrac{81}{4}$ in the stem:\n\n$$\\dfrac{81}{4}=\\dfrac{81}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -589,13 +481,7 @@
         "A club records 60 members in music, 55 in sport, and 45 in art. Pairwise memberships are 20, 15, and 13, and five members join all three. The secretary states that 80 members join exactly one activity.",
         "A heart is drawn from a standard deck and held aside. The croupier claims the next card is also a heart with conditional probability $\\dfrac{4}{17}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, true, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nCompute the first moment from every possible outcome:\n\n$$E(X)=(-2)(\\dfrac{1}{4})+(4)(\\dfrac{1}{2})+(10)(\\dfrac{1}{4})=4$$\n\nCompute the second moment separately:\n\n$$E(X^2)=(-2)^2(\\dfrac{1}{4})+(4)^2(\\dfrac{1}{2})+(10)^2(\\dfrac{1}{4})=34$$\n\nThen\n\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=34-(4)^2=18$$\n\n\n\nThe requested mean is $4$, compared with $5$ in the stem:\n\n$$4\\ne5$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{100}\\cdot\\dfrac{9}{10}=\\dfrac{9}{1000},\\qquad w_2=\\dfrac{99}{100}\\cdot\\dfrac{1}{25}=\\dfrac{99}{2500}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{9}{1000}+\\dfrac{99}{2500}=\\dfrac{243}{5000}$$\n\nNormalize the weight for source 1:\n\n$$P(C_1\\mid E)\n=\\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n=\\frac{\\dfrac{9}{1000}}{\\dfrac{243}{5000}}\n=\\dfrac{5}{27}\\approx 0.185185$$\n\nThe stem claims $\\dfrac{5}{27}$, so\n\n$$\\dfrac{5}{27}=\\dfrac{5}{27}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
@@ -621,13 +507,7 @@
         "A farm study has 100 plots, 48 irrigated, 60 fertilized, and 24 receiving both treatments. The agronomist declares irrigation and fertilization independent.",
         "A fund's daily percentage return is $-5$, $2$, or $8$ with probabilities $\\frac15$, $\\frac12$, and $\\frac3{10}$. The risk sheet states variance $\\dfrac{511}{25}$."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
+      "answer_key": [false, false, true, false, true],
       "tactical_explanations": [
         "**A.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$w_1=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10},\\qquad w_2=\\dfrac{3}{10}\\cdot\\dfrac{1}{2}=\\dfrac{3}{20},\\qquad w_3=\\dfrac{1}{5}\\cdot\\dfrac{2}{5}=\\dfrac{2}{25}$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$P(E)=\\dfrac{1}{10}+\\dfrac{3}{20}+\\dfrac{2}{25}=\\dfrac{33}{100}$$\n\nNormalize the weight for source 2:\n\n$$P(C_2\\mid E)\n=\\frac{P(C_2)P(E\\mid C_2)}{P(E)}\n=\\frac{\\dfrac{3}{20}}{\\dfrac{33}{100}}\n=\\dfrac{5}{11}\\approx 0.454545$$\n\nThe stem claims $\\dfrac{6}{11}$, so\n\n$$\\dfrac{5}{11}\\ne\\dfrac{6}{11}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
         "**B.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$N=4\\cdot3=12$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$F=3=3$$\n\nThe required probability is therefore\n\n$$P=\\frac{F}{N}=\\frac{3}{12}=\\dfrac{1}{4}\n\\approx 0.25$$\n\nThe claimed probability is $\\dfrac{1}{3}$. Exact comparison gives\n\n$$\\dfrac{1}{4}\\ne\\dfrac{1}{3}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
