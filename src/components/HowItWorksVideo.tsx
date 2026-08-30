@@ -5,20 +5,23 @@ export type HowItWorksSubject = "economics" | "math" | "english";
 
 const DEMOS: Record<
   HowItWorksSubject,
-  { src: string; pathLabel: string; label: string }
+  { src: string; poster: string; pathLabel: string; label: string }
 > = {
   economics: {
     src: "/how-it-works/economics.mp4",
+    poster: "/how-it-works/economics-poster.jpg",
     pathLabel: "bbe-school.app / demo-practice / economics",
     label: "Economics practice demo",
   },
   math: {
     src: "/how-it-works/math.mp4",
+    poster: "/how-it-works/math-poster.jpg",
     pathLabel: "bbe-school.app / demo-practice / math",
     label: "Math practice demo",
   },
   english: {
     src: "/how-it-works/english.mp4",
+    poster: "/how-it-works/english-poster.jpg",
     pathLabel: "bbe-school.app / demo-practice / english",
     label: "English practice demo",
   },
@@ -35,13 +38,26 @@ export function HowItWorksVideo({ subject }: { subject: HowItWorksSubject }) {
   useEffect(() => {
     const el = videoRef.current;
     if (!el) return;
-    el.load();
-    const play = () => {
+
+    let cancelled = false;
+    const tryPlay = () => {
+      if (cancelled) return;
       void el.play().catch(() => {
-        /* autoplay can be blocked until gesture; muted+playsInline usually ok */
+        /* muted + playsInline should allow autoplay; ignore gesture blocks */
       });
     };
-    play();
+
+    el.load();
+    if (el.readyState >= 2) {
+      tryPlay();
+    } else {
+      el.addEventListener("canplay", tryPlay, { once: true });
+    }
+
+    return () => {
+      cancelled = true;
+      el.removeEventListener("canplay", tryPlay);
+    };
   }, [subject]);
 
   return (
@@ -68,11 +84,12 @@ export function HowItWorksVideo({ subject }: { subject: HowItWorksSubject }) {
             ref={videoRef}
             className="absolute inset-0 h-full w-full object-cover object-top"
             src={demo.src}
+            poster={demo.poster}
             autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             aria-label={demo.label}
           />
         </div>
