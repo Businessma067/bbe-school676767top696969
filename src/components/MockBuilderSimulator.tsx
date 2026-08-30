@@ -23,6 +23,8 @@ const FIRST_QUESTION = {
     "The supply curve shifts to the left and the new equilibrium price is higher.",
     "The equilibrium quantity traded falls compared with the previous equilibrium.",
     "Because demand is inelastic, total revenue of wheat farmers falls after the shock.",
+    "The demand curve itself shifts to the left as soon as the market price rises.",
+    "Consumer surplus in the wheat market is smaller at the new equilibrium.",
   ],
 };
 
@@ -112,6 +114,19 @@ export default function MockBuilderSimulator() {
       await wait(MOVE);
     };
 
+    const snapCursor = (selector: string) => {
+      const stage = stageRef.current;
+      if (!stage) return;
+      const el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return;
+      const s = stage.getBoundingClientRect();
+      const eb = el.getBoundingClientRect();
+      setCursor({
+        x: eb.left - s.left + eb.width / 2 - 5,
+        y: eb.top - s.top + eb.height / 2 - 3,
+      });
+    };
+
     const click = async () => {
       setClicking(true);
       await wait(120);
@@ -167,7 +182,7 @@ export default function MockBuilderSimulator() {
         setQuestionCount(12);
         await wait(600);
 
-        // ---- 4. shape the topic weights ----
+        // ---- 4. shape the topic weights (cursor drags the handle) ----
         const path: Vec2[] = [
           { x: 0.12, y: -0.32 },
           { x: 0.42, y: -0.1 },
@@ -175,13 +190,28 @@ export default function MockBuilderSimulator() {
           { x: -0.18, y: 0.2 },
           { x: -0.05, y: -0.08 },
         ];
-        await moveTo("[data-sim-weight] svg");
+        await moveTo("[data-sim-weight] [data-weight-handle]");
+        await click();
+        let from: Vec2 = balancedPoint();
         for (const p of path) {
           if (cancelled) return;
-          setWeightPoint(p);
-          await wait(420);
+          const STEPS = 10;
+          for (let i = 1; i <= STEPS; i++) {
+            if (cancelled) return;
+            const t = i / STEPS;
+            const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+            setWeightPoint({
+              x: from.x + (p.x - from.x) * eased,
+              y: from.y + (p.y - from.y) * eased,
+            });
+            await new Promise<void>((r) => requestAnimationFrame(() => r()));
+            snapCursor("[data-sim-weight] [data-weight-handle]");
+            await wait(45);
+          }
+          from = p;
+          await wait(260);
         }
-        await wait(700);
+        await wait(600);
 
         // ---- 5. build ----
         await moveTo("[data-sim-build]");
@@ -412,7 +442,7 @@ export default function MockBuilderSimulator() {
 
       {/* Animated cursor */}
       <div
-        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-300 ease-out"
+        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-100 ease-out"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
         <div className={cn("transition-transform duration-75", clicking ? "scale-90" : "scale-100")}>

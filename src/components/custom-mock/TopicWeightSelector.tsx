@@ -469,6 +469,7 @@ export function TopicWeightSelector({
           })}
 
           <circle
+            data-weight-handle
             cx={ctrl.x}
             cy={ctrl.y}
             r={draggingUi ? 11 : 9.5}
