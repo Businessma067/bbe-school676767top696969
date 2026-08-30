@@ -79,8 +79,17 @@ function cleanExplanation(text: string) {
  * practice pages; economics shows Timed Mode, math shows the calculator.
  */
 export default function PracticeSimulator({ subject }: { subject: SimSubject }) {
-  const pool = SIM_TASKS[subject];
+  // Economics: skip cases whose context embeds tables/charts (they render badly here).
+  const pool = useMemo(() => {
+    const all = SIM_TASKS[subject];
+    if (subject !== "economics") return all;
+    const clean = all.filter(
+      (t) => !t.context.includes("[[CHART") && !t.context.includes("|"),
+    );
+    return clean.length ? clean : all;
+  }, [subject]);
   const [taskIdx, setTaskIdx] = useState(0);
+
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [checked, setChecked] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
@@ -116,9 +125,14 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 220;
+    // Per-subject pacing: economics ~17s, english slower, math the longest.
+    const PACE = subject === "math" ? 3.2 : subject === "english" ? 2.2 : 1.7;
+    const READ_STEPS = subject === "math" ? 10 : subject === "english" ? 7 : 6;
+    const MOVE = Math.round(200 * Math.min(PACE, 1.7));
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
+    const pause = (ms: number) => wait(Math.round(ms * PACE));
+
 
     const smoothScroll = (el: HTMLElement, to: number, duration: number) => {
       const start = el.scrollTop;
