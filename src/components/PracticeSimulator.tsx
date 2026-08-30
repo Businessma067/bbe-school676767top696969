@@ -91,7 +91,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 460;
+    const MOVE = 340;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -115,40 +115,46 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
     const moveTo = async (selector: string) => {
       const stage = stageRef.current;
-      const el = stage?.querySelector<HTMLElement>(selector);
-      if (!stage || !el) return;
-      const s = stage.getBoundingClientRect();
       const box = scrollRef.current;
-      let scrollPromise = Promise.resolve();
-      let shift = 0;
+      if (!stage) return;
+      let el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return;
+
+      // 1) bring the target into view first, then measure where it landed
       if (box && box.contains(el)) {
         const lb = box.getBoundingClientRect();
         const eb0 = el.getBoundingClientRect();
-        const desired = box.scrollTop + (eb0.top - lb.top) - lb.height / 2 + eb0.height / 2;
-        const clamped = Math.max(0, Math.min(desired, box.scrollHeight - box.clientHeight));
-        shift = clamped - box.scrollTop;
-        scrollPromise = smoothScroll(box, clamped, MOVE);
+        const desired =
+          box.scrollTop + (eb0.top - lb.top) - lb.height / 2 + eb0.height / 2;
+        const clamped = Math.max(
+          0,
+          Math.min(desired, box.scrollHeight - box.clientHeight),
+        );
+        await smoothScroll(box, clamped, MOVE);
       }
+      if (cancelled) return;
+      el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return;
+      const s = stage.getBoundingClientRect();
       const eb = el.getBoundingClientRect();
       setCursor({
         x: eb.left - s.left + eb.width / 2,
-        y: eb.top - s.top + eb.height / 2 - shift,
+        y: eb.top - s.top + eb.height / 2,
       });
-      await Promise.all([scrollPromise, wait(MOVE)]);
-      await wait(100);
+      await wait(MOVE);
     };
 
     const click = async () => {
       setClicking(true);
-      await wait(80);
+      await wait(70);
       setClicking(false);
-      await wait(80);
+      await wait(70);
     };
 
     const run = async () => {
       while (!cancelled) {
         setFade(true);
-        await wait(260);
+        await wait(200);
         setAnswers({});
         setChecked(false);
         setShowSolution(false);
@@ -157,27 +163,27 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
         setSecondsLeft(90);
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
         setFade(false);
-        await wait(420);
+        await wait(300);
 
         // Feature demo: Timed Mode (economics) / Calculator (math)
         if (subject === "economics") {
           await moveTo("[data-sim-timed]");
           await click();
           setTimed(true);
-          await wait(900);
+          await wait(700);
         } else if (subject === "math") {
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(true);
-          await wait(1600);
+          await wait(1300);
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(false);
-          await wait(400);
+          await wait(300);
         }
 
-        if (scrollRef.current) await smoothScroll(scrollRef.current, 80, 800);
-        await wait(400);
+        if (scrollRef.current) await smoothScroll(scrollRef.current, 80, 600);
+        await wait(250);
 
         const current = pool[Math.min(taskIdx, pool.length - 1)];
         const trap = current.answerKey.findIndex((v) => !v);
@@ -189,30 +195,30 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           await moveTo(`[data-sim-check="${i}"]`);
           await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(150);
+          await wait(110);
         }
 
         await moveTo("[data-sim-submit]");
         await click();
         setChecked(true);
-        await wait(800);
+        await wait(650);
 
         await moveTo("[data-sim-explain]");
         await click();
         setShowSolution(true);
-        await wait(700);
+        await wait(550);
 
         const box = scrollRef.current;
         if (box) {
           const max = box.scrollHeight - box.clientHeight;
-          const steps = 6;
+          const steps = Math.max(6, Math.min(14, Math.round(max / 320)));
           for (let s = 1; s <= steps; s++) {
             if (cancelled) return;
-            await smoothScroll(box, (max * s) / steps, 1400);
-            await wait(900);
+            await smoothScroll(box, (max * s) / steps, 1000);
+            await wait(650);
           }
         }
-        await wait(1000);
+        await wait(800);
 
         setTaskIdx((i) => {
           if (pool.length < 2) return i;
@@ -426,7 +432,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
       {/* Animated cursor */}
       <div
-        className="pointer-events-none absolute z-20 transition-transform duration-500 ease-out"
+        className="pointer-events-none absolute z-20 transition-transform duration-300 ease-out"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
         <div
