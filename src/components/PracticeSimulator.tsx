@@ -173,10 +173,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
     const click = async () => {
       setClicking(true);
-      await wait(45);
+      await wait(70);
       setClicking(false);
-      await wait(45);
+      await wait(70);
     };
+
 
     const run = async () => {
       while (!cancelled) {
