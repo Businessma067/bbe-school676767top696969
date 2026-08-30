@@ -4356,9 +4356,9 @@
   {
    "id": "math-2-137",
    "case_id": "MATH 2.137",
-   "title": "Exam-style tasks — 1",
+   "title": "Exam-style tasks - 1",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For all real $x$, $y$, $z$, it holds that $x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$.",
     "For every real $t$ with $t\\neq0$, $t\\neq-1$ and $t\\neq-\\tfrac12$, it holds that $\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}=\\dfrac{t+1}{2t+1}$.",
@@ -4388,9 +4388,9 @@
   {
    "id": "math-2-138",
    "case_id": "MATH 2.138",
-   "title": "Exam-style tasks — 2",
+   "title": "Exam-style tasks - 2",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The equation $\\dfrac{1}{z-1}=\\dfrac1z$ has no real solution.",
     "The equation $\\sqrt{z+3}=z+1$ has exactly one real solution.",
@@ -4420,9 +4420,9 @@
   {
    "id": "math-2-139",
    "case_id": "MATH 2.139",
-   "title": "Exam-style tasks — 3",
+   "title": "Exam-style tasks - 3",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "It holds that $\\sqrt{7+4\\sqrt3}=2+\\sqrt3$.",
     "The solution set of the inequality $|z-2|\\le1$ is the interval $[1,3]$.",
@@ -4452,9 +4452,9 @@
   {
    "id": "math-2-140",
    "case_id": "MATH 2.140",
-   "title": "Exam-style tasks — 4",
+   "title": "Exam-style tasks - 4",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For $u>0$ and $v>0$, it holds that $|u-v|=u-v$.",
     "If $a+b=s$ and $ab=p$ for real numbers $s$ and $p$, then $a^3+b^3=s^3-3ps$.",
@@ -4484,9 +4484,9 @@
   {
    "id": "math-2-141",
    "case_id": "MATH 2.141",
-   "title": "Exam-style tasks — 5",
+   "title": "Exam-style tasks - 5",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "If $a+b+c=0$, then $a^2+b^2+c^2=-2(ab+bc+ca)$.",
     "The solution set of the equation $\\dfrac{1}{x-1}=\\dfrac{2}{x+1}$ is $\\{3\\}$.",
@@ -4516,9 +4516,9 @@
   {
    "id": "math-2-142",
    "case_id": "MATH 2.142",
-   "title": "Exam-style tasks — 6",
+   "title": "Exam-style tasks - 6",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "If $abc\\neq0$ and $ab+bc+ca=0$, then $\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
     "For $s>0$, it holds that $\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
@@ -4548,9 +4548,9 @@
   {
    "id": "math-2-143",
    "case_id": "MATH 2.143",
-   "title": "Exam-style tasks — 7",
+   "title": "Exam-style tasks - 7",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For nonzero $a$ and $b$ with $a+b\\neq0$, it holds that $\\dfrac{a^{-1}-b^{-1}}{a^{-1}+b^{-1}}=\\dfrac{b-a}{b+a}$.",
     "For every real $x$, the bounded expression $\\dfrac{|x|}{1+|x|}$ is strictly less than $1$.",
@@ -4580,9 +4580,9 @@
   {
    "id": "math-2-144",
    "case_id": "MATH 2.144",
-   "title": "Exam-style tasks — 8",
+   "title": "Exam-style tasks - 8",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For real numbers $a$ and $b$, the identity $|a+b|=|a|+|b|$ holds if and only if $ab\\ge0$.",
     "If the equation $ax^2+bx+c=0$ with $a\\neq0$ has no real solution, then $b^2>4ac$.",
@@ -4612,9 +4612,9 @@
   {
    "id": "math-2-145",
    "case_id": "MATH 2.145",
-   "title": "Exam-style tasks — 9",
+   "title": "Exam-style tasks - 9",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For $u>0$ and $v>0$, it holds that $\\left(u^2v\\right)^3=u^6v^3$.",
     "If $a+b+c=0$ and $abc\\neq0$, then $\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=0$.",
@@ -4644,9 +4644,9 @@
   {
    "id": "math-2-146",
    "case_id": "MATH 2.146",
-   "title": "Exam-style tasks — 10",
+   "title": "Exam-style tasks - 10",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For nonzero $x$ and $y$, it holds that $\\dfrac yx+\\dfrac xy=\\dfrac{x^2+y^2}{xy}$.",
     "For every real $v$, it holds that $\\sqrt{(v-2)^2}=v-2$.",
@@ -4676,321 +4676,321 @@
   {
    "id": "math-2-147",
    "case_id": "MATH 2.147",
-   "title": "Exam-style tasks — 11",
+   "title": "Exam-style tasks - 11",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=10$ and $ab=21$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$. No decimal approximation is used in the audit.",
    "statements": [
-    "For $y>0$, it holds that $\\left(\\dfrac1y\\right)^{-1/2}=\\dfrac{1}{\\sqrt y}$.",
-    "For every real $x$, the distance sum $|x-2|+|x+2|$ equals $4$ exactly when $-2\\le x\\le2$.",
-    "If $x^2=xy$, then $x=y$.",
-    "For all real $q$ and $r$ with $r\\neq0$, it holds that $\\dfrac{r+q}{r}=1+q$.",
-    "For $q\\ge0$, it holds that $\\dfrac{q-1}{\\sqrt q+1}=\\sqrt q-1$."
+    "$a^2+b^2=58$.",
+    "$(a-b)^2=16$.",
+    "$a^3+b^3=371$.",
+    "$\\{a,b\\}=\\{3,7\\}$.",
+    "$\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}$."
    ],
    "answer_key": [
-    false,
+    true,
     true,
     false,
-    false,
-    true
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA negative exponent applied to a reciprocal turns the base back the right way up.\n\nRewrite the base and multiply the exponents:\n\n$$\\left(\\frac1y\\right)^{-1/2}=\\left(y^{-1}\\right)^{-1/2}=y^{1/2}=\\sqrt y$$\n\nThe correct value is $\\sqrt y$, whereas the claim gives its reciprocal. The two agree only at $y=1$. So the statement is False.",
-    "**B.** → True\n\nSplit at the two points whose distances are being added.\n\n$$|x-2|+|x+2|=\\begin{cases}-2x,&x<-2,\\\\4,&-2\\le x\\le2,\\\\2x,&x>2.\\end{cases}$$\n\n$$|x-2|+|x+2|=4\\iff -2\\le x\\le2$$\n\nOutside the segment the sum grows strictly beyond $4$. Therefore the statement is True.",
-    "**C.** → False\n\nCancelling a variable factor is only allowed once that factor is known to be nonzero.\n\nMove everything to one side and factor:\n\n$$x^2-xy=0\\quad\\Longleftrightarrow\\quad x(x-y)=0$$\n\nThe product vanishes if $x=0$ or if $x=y$. The first branch is a genuine alternative: every pair with $x=0$ and $y\\neq0$ satisfies the hypothesis while contradicting the conclusion. So the statement is False.",
-    "**D.** → False\n\nSplitting a fraction divides every term of the numerator by the denominator.\n\nSplit correctly:\n\n$$\\frac{r+q}{r}=\\frac rr+\\frac qr=1+\\frac qr$$\n\nThe claim leaves $q$ undivided, so the two sides differ by $q-\\dfrac qr$, which is nonzero whenever $q\\neq0$ and $r\\neq1$. So the statement is False.",
-    "**E.** → True\n\nThe numerator factors as a product of conjugates once $q$ is written as $\\left(\\sqrt q\\right)^2$.\n\nFactor the numerator:\n\n$$q-1=\\left(\\sqrt q\\right)^2-1^2=\\left(\\sqrt q-1\\right)\\left(\\sqrt q+1\\right)$$\n\nThe denominator cancels one factor, and it is never zero because $\\sqrt q\\ge0$ gives $\\sqrt q+1\\ge1$:\n\n$$\\frac{q-1}{\\sqrt q+1}=\\sqrt q-1$$\n\nSo the statement is True."
+    "**A.** → True\n\n$(a+b)^2-2ab=10^2-2(21)=58$.\n\nThe claim is True.",
+    "**B.** → True\n\n$(a-b)^2=(a+b)^2-4ab=10^2-4(21)=16$.\n\nThe claim is True.",
+    "**C.** → False\n\n$(a+b)^3-3ab(a+b)=10^3-3(21)(10)=370$.\n\nThe claim is False.",
+    "**D.** → True\n\n$t^2-10t+21=(t-3)(t-7)$.\n\nThe claim is True.",
+    "**E.** → False\n\n$1/a+1/b=(a+b)/(ab)=10/21$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 147,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests distance sum on a segment; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.1.\n\nShared solution:\n1. Use the single shared stem for topic 2.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared identity data determine five symmetric consequences.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(a+b)^2-2ab=10^2-2(21)=58$.\n5. A: The computed result makes this claim True.\n6. B: $(a-b)^2=(a+b)^2-4ab=10^2-4(21)=16$.\n7. B: The computed result makes this claim True.\n8. C: $(a+b)^3-3ab(a+b)=10^3-3(21)(10)=370$.\n9. C: The computed result makes this claim False.\n10. D: $t^2-10t+21=(t-3)(t-7)$.\n11. D: The computed result makes this claim True.\n12. E: $1/a+1/b=(a+b)/(ab)=10/21$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-148",
    "case_id": "MATH 2.148",
-   "title": "Exam-style tasks — 12",
+   "title": "Exam-style tasks - 12",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A symbolic calculator studies $R(x)=\\dfrac{x^2-4}{x-2}$ and $S(x)=\\dfrac1{x-2}+\\dfrac1{x+2}$. The first expression is defined for $x\\ne 2$, while the second also excludes $x=-2$. Simplifications must retain these original domain restrictions even after factors cancel.",
    "statements": [
-    "For all real $a$ and $b$, it holds that $|a-b|=|a|-|b|$.",
-    "For all real $a$ and $b$, it holds that $a^2+b^2+1\\ge ab+a+b$.",
-    "For every real $c$, it holds that $\\dfrac{c^2+5}{c^2+2}=1+\\dfrac{5}{c^2+2}$.",
-    "For nonzero $u$ and $v$ with $u+v\\neq0$, it holds that $\\dfrac{u^{-1}+v^{-1}}{(uv)^{-1}}=\\dfrac{1}{u+v}$.",
-    "For all real $p$ and $q$, it holds that $|p+q|\\ge|p|+|q|$."
+    "$R(x)=x+2$ on its domain.",
+    "$R(2)=4$.",
+    "$S(x)=\\dfrac{2x}{x^2-4}$.",
+    "$S(0)=0$.",
+    "$S(x)=0$ has exactly one real solution."
    ],
    "answer_key": [
-    false,
     true,
     false,
-    false,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe right-hand side can be negative, while the left-hand side never is.\n\nCorrect general bound:\n\n$$|a|-|b|\\le|a-b|$$\n\nEquality is special: it needs $|b|\\le|a|$ together with $a$ and $b$ of the same sign. As soon as $|b|>|a|$ the right-hand side is negative and cannot equal an absolute value. So the statement is False.",
-    "**B.** → True\n\nDoubling the difference of the two sides makes three complete squares appear.\n\nDouble and regroup:\n\n$$2\\left(a^2+b^2+1-ab-a-b\\right)=(a-b)^2+(a-1)^2+(b-1)^2$$\n\nEach bracket on the right is a square, so the sum is nonnegative, and therefore\n\n$$a^2+b^2+1-ab-a-b\\ge0$$\n\nEquality needs $a=b$, $a=1$ and $b=1$ at once, that is $a=b=1$. So the statement is True.",
-    "**C.** → False\n\nSplitting off the integer part means writing the numerator as the denominator plus a remainder.\n\nRewrite the numerator against $c^2+2$:\n\n$$\\frac{c^2+5}{c^2+2}=\\frac{\\left(c^2+2\\right)+3}{c^2+2}=1+\\frac{3}{c^2+2}$$\n\nThe remainder is $3$, not $5$, so the claimed right-hand side is too large by $\\dfrac{2}{c^2+2}$. Since $c^2+2\\ge2$, that gap never closes for any real $c$. So the statement is False.",
-    "**D.** → False\n\nDividing by $(uv)^{-1}$ means multiplying by $uv$, which clears the whole numerator.\n\nCombine the numerator first:\n\n$$u^{-1}+v^{-1}=\\frac{v+u}{uv}$$\n\nDividing by $(uv)^{-1}=\\dfrac{1}{uv}$ multiplies by $uv$:\n\n$$\\frac{\\frac{u+v}{uv}}{\\frac{1}{uv}}=\\frac{u+v}{uv}\\cdot uv=u+v$$\n\nThe correct value is $u+v$, whereas the claim offers its reciprocal. Equality would force $(u+v)^2=1$, so the identity fails for all other admissible pairs. So the statement is False.",
-    "**E.** → False\n\nThe triangle inequality runs in the opposite direction.\n\nCorrect bound:\n\n$$|p+q|\\le|p|+|q|$$\n\nWhenever $p$ and $q$ have opposite signs the two contributions partly cancel on the left while the right-hand side keeps both magnitudes, so the left-hand side is strictly smaller there. The claimed inequality can therefore hold only in the equality case $pq\\ge0$, never as a general law. So the statement is False."
+    "**A.** → True\n\nFactor $x^2-4=(x-2)(x+2)$ and cancel only for $x\\ne2$.\n\nThe claim is True.",
+    "**B.** → False\n\nThe original denominator is zero at $x=2$, so $R(2)$ is undefined.\n\nThe claim is False.",
+    "**C.** → True\n\nAdding over $(x-2)(x+2)$ gives numerator $(x+2)+(x-2)=2x$.\n\nThe claim is True.",
+    "**D.** → True\n\nZero is admissible and $1/(-2)+1/2=0$.\n\nThe claim is True.",
+    "**E.** → True\n\nThe simplified numerator is $2x$, so $x=0$ is the only zero and is admissible.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 148,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests absolute value or a piecewise algebraic rewrite. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.2.\n\nShared solution:\n1. Use the single shared stem for topic 2.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared rational expressions are simplified without restoring excluded inputs.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Factor $x^2-4=(x-2)(x+2)$ and cancel only for $x\\ne2$.\n5. A: The computed result makes this claim True.\n6. B: The original denominator is zero at $x=2$, so $R(2)$ is undefined.\n7. B: The computed result makes this claim False.\n8. C: Adding over $(x-2)(x+2)$ gives numerator $(x+2)+(x-2)=2x$.\n9. C: The computed result makes this claim True.\n10. D: Zero is admissible and $1/(-2)+1/2=0$.\n11. D: The computed result makes this claim True.\n12. E: The simplified numerator is $2x$, so $x=0$ is the only zero and is admissible.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-2-149",
    "case_id": "MATH 2.149",
-   "title": "Exam-style tasks — 13",
+   "title": "Exam-style tasks - 13",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A materials model fixes a positive scale variable at $x=16$. The report uses the principal real roots and the exponent laws $x^r x^s=x^{r+s}$ and $(x^r)^s=x^{rs}$. Negative exponents are interpreted as reciprocals, and all claims refer to this same positive value of $x$.",
    "statements": [
-    "If $p+q+r=0$, then $(p+q)(q+r)(r+p)=-pqr$.",
-    "For nonzero $u$ and $v$ with $u\\neq v$, it holds that $\\dfrac{\\frac{1}{u^2}-\\frac{1}{v^2}}{\\frac1u-\\frac1v}=\\dfrac1u+\\dfrac1v$.",
-    "For $u>0$ and $v>0$, it holds that $\\sqrt u\\cdot\\sqrt v=\\sqrt{uv}$.",
-    "For every real $a$, it holds that $|a-1|=|a|-1$.",
-    "If $p<q$ and $r<0$, then $pr<qr$."
+    "$x^{1/2}=4$.",
+    "$x^{1/4}=2$.",
+    "$x^{-1/2}=\\dfrac1{4}$.",
+    "$x^{3/4}=8$.",
+    "$x^0=0$."
    ],
    "answer_key": [
     true,
     true,
     true,
-    false,
+    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe condition lets each two-term bracket be replaced by a single letter.\n\nRewrite the three brackets:\n\n$$p+q=-r,\\qquad q+r=-p,\\qquad r+p=-q$$\n\nMultiplying the three replacements collects three minus signs:\n\n$$(p+q)(q+r)(r+p)=(-r)(-p)(-q)=-pqr$$\n\nSo the statement is True.",
-    "**B.** → True\n\nThe numerator is a difference of squares in the two reciprocals, and one of its factors is the denominator.\n\nFactor the numerator:\n\n$$\\frac{1}{u^2}-\\frac{1}{v^2}=\\left(\\frac1u-\\frac1v\\right)\\left(\\frac1u+\\frac1v\\right)$$\n\nThe condition $u\\neq v$ makes $\\dfrac1u-\\dfrac1v$ nonzero, so it cancels:\n\n$$\\frac{\\left(\\frac1u-\\frac1v\\right)\\left(\\frac1u+\\frac1v\\right)}{\\frac1u-\\frac1v}=\\frac1u+\\frac1v$$\n\nSo the statement is True.",
-    "**C.** → True\n\nFor nonnegative bases the square root is multiplicative.\n\nSquare the left-hand side:\n\n$$\\left(\\sqrt u\\cdot\\sqrt v\\right)^2=\\left(\\sqrt u\\right)^2\\left(\\sqrt v\\right)^2=uv$$\n\nThe left-hand side is positive and squares to $uv$, so it equals $\\sqrt{uv}$. So the statement is True.",
-    "**D.** → False\n\nAn absolute value is never negative, while the proposed right-hand side can be.\n\nCompare the two sides on the interval $0\\le a<1$:\n\n$$|a-1|=1-a>0,\\qquad |a|-1=a-1<0$$\n\nA positive number cannot equal a negative one, so the claim already fails on that whole interval. So the statement is False.",
-    "**E.** → False\n\nMultiplication by a negative number reverses the direction of an inequality.\n\nSubtract the two sides of the claim:\n\n$$qr-pr=r(q-p)$$\n\nHere $q-p>0$ because $p<q$, and $r<0$, so the product $r(q-p)$ is negative. That means $qr<pr$, the opposite of the claim, and it happens for every admissible pair. So the statement is False."
+    "**A.** → True\n\nThe principal square root of $16$ is $4$.\n\nThe claim is True.",
+    "**B.** → True\n\nThe positive fourth root of $16$ is $2$.\n\nThe claim is True.",
+    "**C.** → True\n\n$x^{-1/2}=1/x^{1/2}=1/4$.\n\nThe claim is True.",
+    "**D.** → True\n\n$(x^{1/4})^3=2^3=8$.\n\nThe claim is True.",
+    "**E.** → False\n\n$x$ is nonzero, so the zero-exponent rule gives $x^0=1$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 149,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests absolute value or a piecewise algebraic rewrite; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.3.\n\nShared solution:\n1. Use the single shared stem for topic 2.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared positive-base data support root, reciprocal, and exponent claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: The principal square root of $16$ is $4$.\n5. A: The computed result makes this claim True.\n6. B: The positive fourth root of $16$ is $2$.\n7. B: The computed result makes this claim True.\n8. C: $x^{-1/2}=1/x^{1/2}=1/4$.\n9. C: The computed result makes this claim True.\n10. D: $(x^{1/4})^3=2^3=8$.\n11. D: The computed result makes this claim True.\n12. E: $x$ is nonzero, so the zero-exponent rule gives $x^0=1$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-150",
    "case_id": "MATH 2.150",
-   "title": "Exam-style tasks — 14",
+   "title": "Exam-style tasks - 14",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A calibration reading $x$ is accepted when its distance from the target 4 is at most 3 units, written $|x-4|\\le 3$. A warning band uses the strict version $|x-4|<3$. The endpoint readings are physically possible and all readings are real.",
    "statements": [
-    "If $x>y>0$, then $\\dfrac{x}{x+1}<\\dfrac{y}{y+1}$.",
-    "For every real $a$ with $a\\neq0$, it holds that $\\left(a^{-3}\\right)^{-2}=a^{-6}$.",
-    "The equation $\\bigl||x|-3\\bigr|=1$ has exactly the four real solutions $x=\\pm2,\\pm4$.",
-    "For all real $u$ and $v$, it holds that $u^5-v^5=(u-v)\\left(u^4+u^3v+u^2v^2+uv^3+v^4\\right)$.",
-    "If $a>0$ and $b>0$, then $\\dfrac ab+\\dfrac ba\\ge2$."
+    "The accepted interval is $[1,7]$.",
+    "$x=1$ is accepted.",
+    "$x=7$ lies in the warning band.",
+    "There are $7$ accepted integer readings.",
+    "$|x-4|>3$ means $1<x<7$."
    ],
    "answer_key": [
-    false,
-    false,
     true,
     true,
-    true
+    false,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSubtracting the two fractions shows which one is larger.\n\nSubtract over the common denominator:\n\n$$\\frac{x}{x+1}-\\frac{y}{y+1}=\\frac{x(y+1)-y(x+1)}{(x+1)(y+1)}=\\frac{x-y}{(x+1)(y+1)}$$\n\nFor $x>y>0$ the numerator $x-y$ is positive and both factors of the denominator are positive, so the difference is positive and $\\dfrac{x}{x+1}>\\dfrac{y}{y+1}$. The claim has the inequality the wrong way round. So the statement is False.",
-    "**B.** → False\n\nTwo negative exponents multiply to a positive exponent.\n\nMultiply the exponents:\n\n$$\\left(a^{-3}\\right)^{-2}=a^{(-3)\\cdot(-2)}=a^{6}$$\n\nThe claim keeps the sign negative. Since $a^6=a^{-6}$ would force $a^{12}=1$, that is $a=\\pm1$, the identity fails for every other nonzero $a$. So the statement is False.",
-    "**C.** → True\n\nResolve the outer absolute value first and then the inner one.\n\n$$\\bigl||x|-3\\bigr|=1\\iff |x|-3=\\pm1$$\n\n$$|x|=2\\quad\\text{or}\\quad |x|=4$$\n\n$$x\\in\\{-4,-2,2,4\\}$$\n\nThe four displayed values are distinct and exhaust both branches. Therefore the statement is True.",
-    "**D.** → True\n\nA difference of equal powers always carries the factor $u-v$, with a full symmetric sum beside it.\n\nMultiply out the right-hand side:\n\n$$u\\left(u^4+u^3v+u^2v^2+uv^3+v^4\\right)=u^5+u^4v+u^3v^2+u^2v^3+uv^4$$\n\n$$v\\left(u^4+u^3v+u^2v^2+uv^3+v^4\\right)=u^4v+u^3v^2+u^2v^3+uv^4+v^5$$\n\nSubtracting the second line from the first cancels every mixed term and leaves $u^5-v^5$. So the statement is True.",
-    "**E.** → True\n\nPutting the two fractions over the common denominator $ab$ exposes a square.\n\nCombine and subtract $2$:\n\n$$\\frac ab+\\frac ba-2=\\frac{a^2+b^2-2ab}{ab}=\\frac{(a-b)^2}{ab}$$\n\nThe numerator is a square, hence nonnegative, and the denominator $ab$ is positive because $a>0$ and $b>0$. The quotient is therefore nonnegative, which is the claimed bound, with equality exactly for $a=b$. So the statement is True."
+    "**A.** → True\n\n$-3\\le x-4\\le3$ gives $1\\le x\\le7$.\n\nThe claim is True.",
+    "**B.** → True\n\n$|1-4|=3$, and equality is allowed.\n\nThe claim is True.",
+    "**C.** → False\n\nThe strict warning condition fails because $|7-4|=3$.\n\nThe claim is False.",
+    "**D.** → True\n\nThe integers from $1$ through $7$ total $7$.\n\nThe claim is True.",
+    "**E.** → False\n\nThe exterior solution is $x<1$ or $x>7$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 150,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests nested absolute-value equation; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.4.\n\nShared solution:\n1. Use the single shared stem for topic 2.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared distance condition is translated into closed, open, and exterior sets.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $-3\\le x-4\\le3$ gives $1\\le x\\le7$.\n5. A: The computed result makes this claim True.\n6. B: $|1-4|=3$, and equality is allowed.\n7. B: The computed result makes this claim True.\n8. C: The strict warning condition fails because $|7-4|=3$.\n9. C: The computed result makes this claim False.\n10. D: The integers from $1$ through $7$ total $7$.\n11. D: The computed result makes this claim True.\n12. E: The exterior solution is $x<1$ or $x>7$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-151",
    "case_id": "MATH 2.151",
-   "title": "Exam-style tasks — 15",
+   "title": "Exam-style tasks - 15",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=9$ and $ab=20$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$. No decimal approximation is used in the audit.",
    "statements": [
-    "For $r>0$, it holds that $r^{\\sqrt2}\\cdot r^{\\sqrt2}=r^{2}$.",
-    "The equation $|x+4|=2|x-1|$ has exactly two real solutions.",
-    "If $x+y+z=0$, then $x^2+y^2+z^2=2(xy+yz+zx)$.",
-    "For every real $p$ with $p\\neq0$, it holds that $\\left(p+\\dfrac1p\\right)\\left(p-\\dfrac1p\\right)=p^2-\\dfrac{1}{p^2}$.",
-    "For $a>0$, it holds that $\\sqrt a\\cdot\\sqrt[4]a=a^{3/4}$."
+    "$a^2+b^2=41$.",
+    "$(a-b)^2=1$.",
+    "$a^3+b^3=190$.",
+    "$\\{a,b\\}=\\{4,5\\}$.",
+    "$\\dfrac1a+\\dfrac1b=\\dfrac{20}{9}$."
    ],
    "answer_key": [
-    false,
+    true,
     true,
     false,
     true,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nMultiplying two powers of one base adds the exponents; it does not multiply them.\n\nAdd the exponents:\n\n$$r^{\\sqrt2}\\cdot r^{\\sqrt2}=r^{\\sqrt2+\\sqrt2}=r^{2\\sqrt2}$$\n\nThe claimed exponent $2$ comes from computing $\\sqrt2\\cdot\\sqrt2$ instead. Since $2\\sqrt2\\neq2$, the two sides agree only at $r=1$. So the statement is False.",
-    "**B.** → True\n\nBoth sides are nonnegative, so squaring is reversible.\n\n$$(x+4)^2=4(x-1)^2$$\n\n$$x^2+8x+16=4x^2-8x+4$$\n\n$$3x^2-16x-12=0$$\n\n$$(3x+2)(x-6)=0$$\n\nThe solutions $x=-\frac23$ and $x=6$ both satisfy the original equation. Therefore the statement is True.",
-    "**C.** → False\n\nSquaring the condition links the sum of squares to the sum of products, but with the opposite sign.\n\nSquare the condition:\n\n$$0=(x+y+z)^2=x^2+y^2+z^2+2(xy+yz+zx)$$\n\nSolving for the sum of squares gives\n\n$$x^2+y^2+z^2=-2(xy+yz+zx)$$\n\nThe claim drops the minus sign. Both versions can agree only when $xy+yz+zx=0$, which under the condition forces $x=y=z=0$. So the statement is False.",
-    "**D.** → True\n\nThe two brackets are conjugates, so their product is a difference of squares.\n\nApply the identity with the bases $p$ and $\\dfrac1p$:\n\n$$\\left(p+\\frac1p\\right)\\left(p-\\frac1p\\right)=p^2-\\left(\\frac1p\\right)^2=p^2-\\frac{1}{p^2}$$\n\nSo the statement is True.",
-    "**E.** → True\n\nBoth roots are written as fractional powers, after which the exponents add.\n\nConvert and add:\n\n$$\\sqrt a\\cdot\\sqrt[4]a=a^{1/2}\\cdot a^{1/4}=a^{\\frac12+\\frac14}=a^{3/4}$$\n\nSo the statement is True."
+    "**A.** → True\n\n$(a+b)^2-2ab=9^2-2(20)=41$.\n\nThe claim is True.",
+    "**B.** → True\n\n$(a-b)^2=(a+b)^2-4ab=9^2-4(20)=1$.\n\nThe claim is True.",
+    "**C.** → False\n\n$(a+b)^3-3ab(a+b)=9^3-3(20)(9)=189$.\n\nThe claim is False.",
+    "**D.** → True\n\n$t^2-9t+20=(t-4)(t-5)$.\n\nThe claim is True.",
+    "**E.** → False\n\n$1/a+1/b=(a+b)/(ab)=9/20$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 151,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests scaled absolute-value equation; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.1.\n\nShared solution:\n1. Use the single shared stem for topic 2.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared identity data determine five symmetric consequences.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(a+b)^2-2ab=9^2-2(20)=41$.\n5. A: The computed result makes this claim True.\n6. B: $(a-b)^2=(a+b)^2-4ab=9^2-4(20)=1$.\n7. B: The computed result makes this claim True.\n8. C: $(a+b)^3-3ab(a+b)=9^3-3(20)(9)=189$.\n9. C: The computed result makes this claim False.\n10. D: $t^2-9t+20=(t-4)(t-5)$.\n11. D: The computed result makes this claim True.\n12. E: $1/a+1/b=(a+b)/(ab)=9/20$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-152",
    "case_id": "MATH 2.152",
-   "title": "Exam-style tasks — 16",
+   "title": "Exam-style tasks - 16",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A symbolic calculator studies $R(x)=\\dfrac{x^2-9}{x-3}$ and $S(x)=\\dfrac1{x-3}+\\dfrac1{x+3}$. The first expression is defined for $x\\ne 3$, while the second also excludes $x=-3$. Simplifications must retain these original domain restrictions even after factors cancel.",
    "statements": [
-    "For every real $x$, it holds that $|x|^3=\\left|x^3\\right|$.",
-    "For all real $p$ and $q$, it holds that $p^2-q^2+p-q=(p-q)(p+q+1)$.",
-    "For every real $y$ with $y\\neq0$ and $y\\neq1$, it holds that $\\dfrac{y}{y-1}-\\dfrac1y=\\dfrac{y^2+y-1}{y(y-1)}$.",
-    "For $w>0$, it holds that $\\left(w^{1/2}\\right)^{1/3}=w^{2/3}$.",
-    "For every real $z$, it holds that $|z-3|=3-z$."
+    "$R(x)=x+3$ on its domain.",
+    "$R(3)=6$.",
+    "$S(x)=\\dfrac{2x}{x^2-9}$.",
+    "$S(0)=0$.",
+    "$S(x)=0$ has exactly one real solution."
    ],
    "answer_key": [
     true,
+    false,
     true,
-    false,
-    false,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe absolute value is multiplicative, so it passes through any power.\n\nWrite the cube as a product and split it:\n\n$$\\left|x^3\\right|=|x\\cdot x\\cdot x|=|x|\\,|x|\\,|x|=|x|^3$$\n\nBoth sides are nonnegative and agree for positive and negative $x$ alike, since an odd power of a negative number has its sign removed on both sides. So the statement is True.",
-    "**B.** → True\n\nBoth halves of the left-hand side contain the factor $p-q$, one after factoring a difference of squares.\n\nGroup the four terms in pairs:\n\n$$p^2-q^2+p-q=(p-q)(p+q)+(p-q)$$\n\nPulling out the common factor gives\n\n$$(p-q)(p+q)+(p-q)=(p-q)(p+q+1)$$\n\nSo the statement is True.",
-    "**C.** → False\n\nThe two fractions are combined over $y(y-1)$, and the sign of the second numerator has to be carried along.\n\nCombine over $y(y-1)$:\n\n$$\\frac{y}{y-1}-\\frac1y=\\frac{y\\cdot y-(y-1)}{y(y-1)}=\\frac{y^2-y+1}{y(y-1)}$$\n\nThe correct numerator is $y^2-y+1$, while the claim offers $y^2+y-1$. The two differ by $2y-2$, which vanishes only at $y=1$, an excluded value. So the statement is False.",
-    "**D.** → False\n\nIterated exponents are multiplied, and the product of two proper fractions is smaller than either.\n\nMultiply the exponents:\n\n$$\\left(w^{1/2}\\right)^{1/3}=w^{\\frac12\\cdot\\frac13}=w^{1/6}$$\n\nThe claim reads $w^{2/3}$, which is what one gets by adding a wrong pair of fractions. For $w>0$ the equality $w^{1/6}=w^{2/3}$ holds only at $w=1$. So the statement is False.",
-    "**E.** → False\n\nAn absolute value equals the negated argument only where that argument is nonpositive.\n\nCase description:\n\n$$|z-3|=\\begin{cases}z-3,&z\\ge3\\\\ 3-z,&z<3\\end{cases}$$\n\nThe claimed formula is the second branch, so it is correct only for $z\\le3$. For $z>3$ the left-hand side is positive while $3-z$ is negative. So the statement is False."
+    "**A.** → True\n\nFactor $x^2-9=(x-3)(x+3)$ and cancel only for $x\\ne3$.\n\nThe claim is True.",
+    "**B.** → False\n\nThe original denominator is zero at $x=3$, so $R(3)$ is undefined.\n\nThe claim is False.",
+    "**C.** → True\n\nAdding over $(x-3)(x+3)$ gives numerator $(x+3)+(x-3)=2x$.\n\nThe claim is True.",
+    "**D.** → True\n\nZero is admissible and $1/(-3)+1/3=0$.\n\nThe claim is True.",
+    "**E.** → True\n\nThe simplified numerator is $2x$, so $x=0$ is the only zero and is admissible.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 152,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests absolute value or a piecewise algebraic rewrite. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.2.\n\nShared solution:\n1. Use the single shared stem for topic 2.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared rational expressions are simplified without restoring excluded inputs.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Factor $x^2-9=(x-3)(x+3)$ and cancel only for $x\\ne3$.\n5. A: The computed result makes this claim True.\n6. B: The original denominator is zero at $x=3$, so $R(3)$ is undefined.\n7. B: The computed result makes this claim False.\n8. C: Adding over $(x-3)(x+3)$ gives numerator $(x+3)+(x-3)=2x$.\n9. C: The computed result makes this claim True.\n10. D: Zero is admissible and $1/(-3)+1/3=0$.\n11. D: The computed result makes this claim True.\n12. E: The simplified numerator is $2x$, so $x=0$ is the only zero and is admissible.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-2-153",
    "case_id": "MATH 2.153",
-   "title": "Exam-style tasks — 17",
+   "title": "Exam-style tasks - 17",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A materials model fixes a positive scale variable at $x=81$. The report uses the principal real roots and the exponent laws $x^r x^s=x^{r+s}$ and $(x^r)^s=x^{rs}$. Negative exponents are interpreted as reciprocals, and all claims refer to this same positive value of $x$.",
    "statements": [
-    "For all real $x$ and $y$, it holds that $x^2+2xy+y^2-1=(x+y-1)(x+y+1)$.",
-    "For every real $u$ with $u\\neq0$ and $u\\neq-1$, it holds that $\\dfrac{u^2+u}{u^2}\\cdot\\dfrac{u}{u+1}=1$.",
-    "For $b>0$, it holds that $\\dfrac{1}{b^{-2/3}}=b^{-3/2}$.",
-    "For all real $x$ and $y$, it holds that $|x+y|=|x|+|y|$.",
-    "For all real $a$ and $b$, the polynomial $a^3+b^3$ is divisible by $a+b$."
+    "$x^{1/2}=9$.",
+    "$x^{1/4}=3$.",
+    "$x^{-1/2}=\\dfrac1{9}$.",
+    "$x^{3/4}=27$.",
+    "$x^0=0$."
    ],
    "answer_key": [
     true,
     true,
-    false,
-    false,
-    true
+    true,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe first three terms form a complete square, which turns the whole expression into a difference of squares.\n\nCollect the square:\n\n$$x^2+2xy+y^2-1=(x+y)^2-1$$\n\nNow factor with the bases $x+y$ and $1$:\n\n$$(x+y)^2-1^2=(x+y-1)(x+y+1)$$\n\nSo the statement is True.",
-    "**B.** → True\n\nFactoring the first numerator exposes the factors that the second fraction removes.\n\nFactor and multiply:\n\n$$\\frac{u(u+1)}{u^2}\\cdot\\frac{u}{u+1}=\\frac{u^2(u+1)}{u^2(u+1)}$$\n\nBoth $u$ and $u+1$ are nonzero under the stated restrictions, so the quotient reduces to $1$. So the statement is True.",
-    "**C.** → False\n\nDividing by a negative power changes the sign of the exponent; it does not invert the fraction in the exponent.\n\nMove the power into the numerator:\n\n$$\\frac{1}{b^{-2/3}}=b^{2/3}$$\n\nThe claim replaces $\\tfrac23$ by $-\\tfrac32$, which mixes a sign change with an inversion. For $b>0$ the equality $b^{2/3}=b^{-3/2}$ forces $\\tfrac23=-\\tfrac32$ unless $b=1$. So the statement is False.",
-    "**D.** → False\n\nThe triangle inequality gives only one direction, and equality is a special case.\n\nGeneral bound:\n\n$$|x+y|\\le|x|+|y|$$\n\nEquality requires $x$ and $y$ to have the same sign, that is $xy\\ge0$. For any pair of opposite signs the left-hand side is strictly smaller, since the two contributions partly cancel. So the statement is False.",
-    "**E.** → True\n\nRead as a polynomial in $a$, the expression vanishes at the zero of $a+b$.\n\nSubstitute $a=-b$:\n\n$$(-b)^3+b^3=-b^3+b^3=0$$\n\nThe remainder is $0$, so $a+b$ is a factor, and the explicit quotient is the standard one:\n\n$$a^3+b^3=(a+b)\\left(a^2-ab+b^2\\right)$$\n\nSo the statement is True."
+    "**A.** → True\n\nThe principal square root of $81$ is $9$.\n\nThe claim is True.",
+    "**B.** → True\n\nThe positive fourth root of $81$ is $3$.\n\nThe claim is True.",
+    "**C.** → True\n\n$x^{-1/2}=1/x^{1/2}=1/9$.\n\nThe claim is True.",
+    "**D.** → True\n\n$(x^{1/4})^3=3^3=27$.\n\nThe claim is True.",
+    "**E.** → False\n\n$x$ is nonzero, so the zero-exponent rule gives $x^0=1$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 153,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests absolute value or a piecewise algebraic rewrite; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.3.\n\nShared solution:\n1. Use the single shared stem for topic 2.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared positive-base data support root, reciprocal, and exponent claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: The principal square root of $81$ is $9$.\n5. A: The computed result makes this claim True.\n6. B: The positive fourth root of $81$ is $3$.\n7. B: The computed result makes this claim True.\n8. C: $x^{-1/2}=1/x^{1/2}=1/9$.\n9. C: The computed result makes this claim True.\n10. D: $(x^{1/4})^3=3^3=27$.\n11. D: The computed result makes this claim True.\n12. E: $x$ is nonzero, so the zero-exponent rule gives $x^0=1$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-154",
    "case_id": "MATH 2.154",
-   "title": "Exam-style tasks — 18",
+   "title": "Exam-style tasks - 18",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A calibration reading $x$ is accepted when its distance from the target 5 is at most 3 units, written $|x-5|\\le 3$. A warning band uses the strict version $|x-5|<3$. The endpoint readings are physically possible and all readings are real.",
    "statements": [
-    "For every real $q$ with $q\\neq0$, it holds that $\\dfrac1q-\\dfrac{1}{q^2}=\\dfrac{1}{q-q^2}$.",
-    "For $z>0$, it holds that $\\left(z^{1/3}\\right)^{6}=z^{3}$.",
-    "For every real $u$, it holds that $\\left|u^2-4\\right|=|u-2|\\,|u+2|$.",
-    "For every real $a$, it holds that $a^4+a^2+1=\\left(a^2+a+1\\right)\\left(a^2-a+1\\right)$.",
-    "If $s>t$, then $\\dfrac1s<\\dfrac1t$."
+    "The accepted interval is $[2,8]$.",
+    "$x=2$ is accepted.",
+    "$x=8$ lies in the warning band.",
+    "There are $7$ accepted integer readings.",
+    "$|x-5|>3$ means $2<x<8$."
    ],
    "answer_key": [
-    false,
-    false,
     true,
+    true,
+    false,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe left-hand side is combined over $q^2$, and the outcome is then compared with the proposed fraction.\n\nCombine over $q^2$:\n\n$$\\frac1q-\\frac{1}{q^2}=\\frac{q-1}{q^2}$$\n\nThe proposed right-hand side is $\\dfrac{1}{q(1-q)}$. Equating the two and clearing denominators gives\n\n$$q(q-1)(1-q)=q^2\\quad\\Longleftrightarrow\\quad q^2-q+1=0$$\n\nafter dividing by the nonzero factor $-q$. The last quadratic has discriminant $1-4=-3<0$, so no real $q$ satisfies it and the two sides never agree. So the statement is False.",
-    "**B.** → False\n\nA power of a power multiplies the two exponents.\n\nMultiply the exponents:\n\n$$\\left(z^{1/3}\\right)^{6}=z^{\\frac13\\cdot 6}=z^{2}$$\n\nThe claim reads $z^3$, which would require $\\tfrac13\\cdot 6=3$. For $z>0$ the equation $z^2=z^3$ holds only at $z=1$, so the claimed identity fails for every other positive $z$. So the statement is False.",
-    "**C.** → True\n\nThe absolute value of a product is the product of the absolute values, so the radicand may be factored first.\n\nFactor inside the bars:\n\n$$u^2-4=(u-2)(u+2)$$\n\nNow apply multiplicativity:\n\n$$\\left|u^2-4\\right|=|(u-2)(u+2)|=|u-2|\\,|u+2|$$\n\nNo sign assumption on $u$ is needed, since the rule holds for arbitrary real factors. So the statement is True.",
-    "**D.** → True\n\nAdding and subtracting $a^2$ turns the quartic into a difference of two squares.\n\nComplete the square in $a^2$:\n\n$$a^4+a^2+1=\\left(a^4+2a^2+1\\right)-a^2=\\left(a^2+1\\right)^2-a^2$$\n\nNow factor the difference of squares:\n\n$$\\left(a^2+1\\right)^2-a^2=\\left(a^2+1-a\\right)\\left(a^2+1+a\\right)$$\n\nReordering the terms inside each bracket gives exactly $\\left(a^2+a+1\\right)\\left(a^2-a+1\\right)$. So the statement is True.",
-    "**E.** → False\n\nPassing to reciprocals reverses an inequality only when both sides carry the same sign.\n\nSubtract the two reciprocals:\n\n$$\\frac1s-\\frac1t=\\frac{t-s}{st}$$\n\nThe numerator $t-s$ is negative because $s>t$, so the sign of the whole expression is decided by $st$. Whenever $s$ and $t$ have opposite signs, $st<0$ and the difference is positive, so $\\dfrac1s>\\dfrac1t$. So the statement is False."
+    "**A.** → True\n\n$-3\\le x-5\\le3$ gives $2\\le x\\le8$.\n\nThe claim is True.",
+    "**B.** → True\n\n$|2-5|=3$, and equality is allowed.\n\nThe claim is True.",
+    "**C.** → False\n\nThe strict warning condition fails because $|8-5|=3$.\n\nThe claim is False.",
+    "**D.** → True\n\nThe integers from $2$ through $8$ total $7$.\n\nThe claim is True.",
+    "**E.** → False\n\nThe exterior solution is $x<2$ or $x>8$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 154,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests absolute value or a piecewise algebraic rewrite; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.4.\n\nShared solution:\n1. Use the single shared stem for topic 2.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared distance condition is translated into closed, open, and exterior sets.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $-3\\le x-5\\le3$ gives $2\\le x\\le8$.\n5. A: The computed result makes this claim True.\n6. B: $|2-5|=3$, and equality is allowed.\n7. B: The computed result makes this claim True.\n8. C: The strict warning condition fails because $|8-5|=3$.\n9. C: The computed result makes this claim False.\n10. D: The integers from $2$ through $8$ total $7$.\n11. D: The computed result makes this claim True.\n12. E: The exterior solution is $x<2$ or $x>8$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-155",
    "case_id": "MATH 2.155",
-   "title": "Exam-style tasks — 19",
+   "title": "Exam-style tasks - 19",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=11$ and $ab=18$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$. No decimal approximation is used in the audit.",
    "statements": [
-    "For every real $b$, it holds that $\\sqrt{b^2-2b+1}=b-1$.",
-    "For every real $y$, it holds that $|y-3|+|3-y|=2|y-3|$.",
-    "For all real $y$ and $z$, it holds that $(y+z)^2-(y-z)^2=2yz$.",
-    "For every real $c$ with $c\\neq0$ and $c\\neq-1$, it holds that $\\dfrac1c+\\dfrac{1}{c+1}=\\dfrac{1}{c(c+1)}$.",
-    "For every real $z$, it holds that $\\sqrt[4]{z^4}=z$."
+    "$a^2+b^2=85$.",
+    "$(a-b)^2=49$.",
+    "$a^3+b^3=738$.",
+    "$\\{a,b\\}=\\{2,9\\}$.",
+    "$\\dfrac1a+\\dfrac1b=\\dfrac{18}{11}$."
    ],
    "answer_key": [
-    false,
+    true,
     true,
     false,
-    false,
+    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe radicand is a completed square, and the square root of a square is an absolute value.\n\nRewrite the radicand:\n\n$$b^2-2b+1=(b-1)^2$$\n\nHence\n\n$$\\sqrt{b^2-2b+1}=\\sqrt{(b-1)^2}=|b-1|$$\n\nFor $b<1$ the value $|b-1|=1-b$ is positive while $b-1$ is negative, so the claimed equality fails on the whole half-line $b<1$. So the statement is False.",
-    "**B.** → True\n\nAn absolute value is unchanged when the sign of its argument is flipped.\n\nUse the symmetry:\n\n$$|3-y|=|-(y-3)|=|y-3|$$\n\nThe left-hand side is therefore a sum of two equal terms:\n\n$$|y-3|+|3-y|=|y-3|+|y-3|=2|y-3|$$\n\nSo the statement is True.",
-    "**C.** → False\n\nThe squares of the sum and of the difference differ only in the sign of the mixed term, so subtracting them keeps two copies of it.\n\nExpand both squares:\n\n$$(y+z)^2=y^2+2yz+z^2,\\qquad (y-z)^2=y^2-2yz+z^2$$\n\nSubtracting removes the pure squares and doubles the mixed term:\n\n$$(y+z)^2-(y-z)^2=4yz$$\n\nThe claim gives half of the correct value, so the two agree only when $yz=0$. So the statement is False.",
-    "**D.** → False\n\nAdding the two fractions over their product keeps a linear numerator.\n\nCombine over $c(c+1)$:\n\n$$\\frac1c+\\frac{1}{c+1}=\\frac{(c+1)+c}{c(c+1)}=\\frac{2c+1}{c(c+1)}$$\n\nThe numerator is $2c+1$, not $1$. The numerator $1$ belongs to the difference of the same two fractions, so the claim replaces a subtraction by an addition. Equality would need $2c+1=1$, that is $c=0$, which is excluded. So the statement is False.",
-    "**E.** → False\n\nAn even root is nonnegative by definition, so it cannot reproduce a negative base.\n\nCorrect rule:\n\n$$\\sqrt[4]{z^4}=|z|$$\n\nFor $z<0$ the left-hand side is positive while the right-hand side of the claim is negative, so the identity fails on the whole negative half-line. So the statement is False."
+    "**A.** → True\n\n$(a+b)^2-2ab=11^2-2(18)=85$.\n\nThe claim is True.",
+    "**B.** → True\n\n$(a-b)^2=(a+b)^2-4ab=11^2-4(18)=49$.\n\nThe claim is True.",
+    "**C.** → False\n\n$(a+b)^3-3ab(a+b)=11^3-3(18)(11)=737$.\n\nThe claim is False.",
+    "**D.** → True\n\n$t^2-11t+18=(t-2)(t-9)$.\n\nThe claim is True.",
+    "**E.** → False\n\n$1/a+1/b=(a+b)/(ab)=11/18$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 155,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests absolute value or a piecewise algebraic rewrite; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.1.\n\nShared solution:\n1. Use the single shared stem for topic 2.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared identity data determine five symmetric consequences.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(a+b)^2-2ab=11^2-2(18)=85$.\n5. A: The computed result makes this claim True.\n6. B: $(a-b)^2=(a+b)^2-4ab=11^2-4(18)=49$.\n7. B: The computed result makes this claim True.\n8. C: $(a+b)^3-3ab(a+b)=11^3-3(18)(11)=737$.\n9. C: The computed result makes this claim False.\n10. D: $t^2-11t+18=(t-2)(t-9)$.\n11. D: The computed result makes this claim True.\n12. E: $1/a+1/b=(a+b)/(ab)=11/18$.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-2-156",
    "case_id": "MATH 2.156",
-   "title": "Exam-style tasks — 20",
+   "title": "Exam-style tasks - 20",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A symbolic calculator studies $R(x)=\\dfrac{x^2-16}{x-4}$ and $S(x)=\\dfrac1{x-4}+\\dfrac1{x+4}$. The first expression is defined for $x\\ne 4$, while the second also excludes $x=-4$. Simplifications must retain these original domain restrictions even after factors cancel.",
    "statements": [
-    "For every real $s$, the inequality $|s|>1$ holds precisely when $s>1$.",
-    "For every real $s$, it holds that $s^3-8=(s-2)\\left(s^2+2s+4\\right)$.",
-    "For all real $a$, $b$, $c$ with $b\\neq0$, it holds that $\\dfrac ab+\\dfrac cb=\\dfrac{a+c}{b}$.",
-    "For $y>0$, it holds that $\\dfrac{1}{\\sqrt{y+1}+\\sqrt y}=\\sqrt{y+1}-\\sqrt y$.",
-    "For every real $y$, it holds that $|y-1|+|y-4|\\ge3$."
+    "$R(x)=x+4$ on its domain.",
+    "$R(4)=8$.",
+    "$S(x)=\\dfrac{2x}{x^2-16}$.",
+    "$S(0)=0$.",
+    "$S(x)=0$ has exactly one real solution."
    ],
    "answer_key": [
-    false,
     true,
+    false,
     true,
     true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nAn absolute value measures distance from the origin in both directions.\n\nSolve the inequality:\n\n$$|s|>1\\quad\\Longleftrightarrow\\quad s\\in(-\\infty,-1)\\cup(1,\\infty)$$\n\nThe claim keeps only the right branch and loses the whole half-line $s<-1$, where $|s|>1$ also holds. So the statement is False.",
-    "**B.** → True\n\nHere $8=2^3$, so the expression is a difference of cubes.\n\nApply the identity with the second base equal to $2$:\n\n$$s^3-2^3=(s-2)\\left(s^2+2s+2^2\\right)$$\n\nA direct expansion confirms it, since\n\n$$(s-2)\\left(s^2+2s+4\\right)=s^3+2s^2+4s-2s^2-4s-8=s^3-8$$\n\nSo the statement is True.",
-    "**C.** → True\n\nTwo fractions with the same denominator are added by adding numerators.\n\nAdd over the common denominator $b$:\n\n$$\\frac ab+\\frac cb=\\frac{a+c}{b}$$\n\nThe denominator is unchanged, and $b\\neq0$ keeps both sides defined. So the statement is True.",
-    "**D.** → True\n\nMultiplying by the conjugate turns the two-term radical denominator into a difference of squares.\n\nExpand the conjugate product:\n\n$$\\left(\\sqrt{y+1}+\\sqrt y\\right)\\left(\\sqrt{y+1}-\\sqrt y\\right)=(y+1)-y=1$$\n\nThe two factors multiply to $1$, so each is the reciprocal of the other:\n\n$$\\frac{1}{\\sqrt{y+1}+\\sqrt y}=\\sqrt{y+1}-\\sqrt y$$\n\nSo the statement is True.",
-    "**E.** → True\n\nThe two arguments are chosen so that their difference is constant, which is exactly what the triangle inequality needs.\n\nReverse the second term and add:\n\n$$|y-1|+|y-4|=|y-1|+|4-y|\\ge|(y-1)+(4-y)|=3$$\n\nThe inner sum is the constant $3$, independent of $y$, so the bound holds everywhere. Equality is attained on the interval $1\\le y\\le4$. So the statement is True."
+    "**A.** → True\n\nFactor $x^2-16=(x-4)(x+4)$ and cancel only for $x\\ne4$.\n\nThe claim is True.",
+    "**B.** → False\n\nThe original denominator is zero at $x=4$, so $R(4)$ is undefined.\n\nThe claim is False.",
+    "**C.** → True\n\nAdding over $(x-4)(x+4)$ gives numerator $(x+4)+(x-4)=2x$.\n\nThe claim is True.",
+    "**D.** → True\n\nZero is admissible and $1/(-4)+1/4=0$.\n\nThe claim is True.",
+    "**E.** → True\n\nThe simplified numerator is $2x$, so $x=0$ is the only zero and is admissible.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 156,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests absolute value or a piecewise algebraic rewrite. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 2.2.\n\nShared solution:\n1. Use the single shared stem for topic 2.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Shared rational expressions are simplified without restoring excluded inputs.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Factor $x^2-16=(x-4)(x+4)$ and cancel only for $x\\ne4$.\n5. A: The computed result makes this claim True.\n6. B: The original denominator is zero at $x=4$, so $R(4)$ is undefined.\n7. B: The computed result makes this claim False.\n8. C: Adding over $(x-4)(x+4)$ gives numerator $(x+4)+(x-4)=2x$.\n9. C: The computed result makes this claim True.\n10. D: Zero is admissible and $1/(-4)+1/4=0$.\n11. D: The computed result makes this claim True.\n12. E: The simplified numerator is $2x$, so $x=0$ is the only zero and is admissible.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   }
  ]

@@ -2789,14 +2789,14 @@
   {
    "id": "math-6-89",
    "case_id": "MATH 6.89",
-   "title": "Exam-style tasks — 1",
+   "title": "Exam-style tasks - 1",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The strict inequality $\\dfrac{(x-2)(x-3)}{(x-1)(x+1)}>0$ holds on $(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$.",
     "A rectangular display has sides $x$ and $12-x$, with $0<x<12$. Its area is at least $27$ exactly when $3\\le x\\le9$.",
     "The nested inequality $\\bigl||x-1|-2\\bigr|\\ge1$ has solution set $(-\\infty,-2]\\cup[0,2]\\cup[4,\\infty)$.",
-    "To produce one unit of a certain product, three raw materials — A, B, and C — are required. Specifically, 3 units of A, 2 units of B, and 4 units of C are used. The raw materials cost 40 EUR, 50 EUR, and 25 EUR per unit, respectively, and the production of one unit of the product costs 12 EUR. The producer has a total budget of 21,400 EUR and storage capacity for at most 475 units of all raw materials combined. Then, the maximum number of products that can be produced is less than 50.",
+    "A service charges 15 EUR plus 6 EUR per unit, with a budget of 153 EUR. The budget covers at most $25$ units.",
     "For a fixed parameter $a>0$, $\\dfrac{x-a}{x+a}>0$ exactly when $x<-a$ or $x>a$."
    ],
    "answer_key": [
@@ -2810,7 +2810,7 @@
     "**A.** → True\n\nAll four factors have simple critical points, so the sign alternates at each one.\n\n$$-1,\\ 1,\\ 2,\\ 3$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$$\n\nStrictness excludes zeros as well as poles. Therefore the statement is True.",
     "**B.** → True\n\nTranslate the area requirement into a quadratic inequality.\n\n$$x(12-x)\\ge27$$\n\n$$x^2-12x+27\\le0$$\n\n$$(x-3)(x-9)\\le0$$\n\n$$3\\le x\\le9$$\n\nThe resulting interval lies inside the physical side-length domain. Therefore the statement is True.",
     "**C.** → True\n\nSet $u=|x-1|\\ge0$ and solve the outer inequality first.\n\n$$|u-2|\\ge1\\iff u\\le1\\quad\\text{or}\\quad u\\ge3$$\n\n$$|x-1|\\le1\\iff 0\\le x\\le2$$\n\n$$|x-1|\\ge3\\iff x\\le-2\\quad\\text{or}\\quad x\\ge4$$\n\nThe three closed pieces form the stated union. Therefore the statement is True.",
-    "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be the number of products.\n\n$$9n \\le 475$$\n\n$$n \\le 52$$\n\nCost per product:\n\n$$3 \\cdot 40 + 2 \\cdot 50 + 4 \\cdot 25 + 12 = 332$$\n\n$$332n \\le 21400$$\n\n$$n \\le 64$$\n\nStorage gives the tighter cap:\n\n$$n \\le 52$$\n\nThe maximum is 52, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → False\n\nThe budget condition is $15+6u\\le 153$, so $u\\le(153-15)/6=23$.\n\nThe claim is False.",
     "**E.** → True\n\nThe zero $a$ and pole $-a$ split the line into three sign intervals.\n\n$$x=-a\\ (\\text{pole}),\\qquad x=a\\ (\\text{zero})$$\n\n$$\\frac{x-a}{x+a}>0\\iff x\\in(-\\infty,-a)\\cup(a,\\infty)$$\n\nStrictness excludes both critical points. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
@@ -2821,13 +2821,13 @@
   {
    "id": "math-6-90",
    "case_id": "MATH 6.90",
-   "title": "Exam-style tasks — 2",
+   "title": "Exam-style tasks - 2",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The biquadratic inequality $x^4-10x^2+9<0$ has solution set $(-3,-1)\\cup(1,3)$.",
     "The condition $\\max\\{x-1,\\,3-x\\}<2$ is equivalent to the open interval $1<x<3$.",
-    "A painter mixes 2 litres of white paint (3 EUR per litre) with 1 litre of colour concentrate (9 EUR per litre) to make 3 litres of blend. They claim that any amount of this same 2:1 mix whose total volume is at most 12 litres will cost at most 50 EUR in materials. That claim is true.",
+    "A service charges 14 EUR plus 6 EUR per unit, with a budget of 176 EUR. The budget covers at most $29$ units.",
     "The comparison $\\dfrac{2x+1}{x-4}\\le1$ is equivalent to $-5\\le x<4$.",
     "A quality score is $q(x)=-2(x-5)^2+18$. The requirement $q(x)\\ge10$ is met exactly for $3\\le x\\le7$."
    ],
@@ -2841,7 +2841,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nUse $u=x^2$ and then translate the positive interval for $u$ back to $x$.\n\n$$u^2-10u+9<0$$\n\n$$(u-1)(u-9)<0\\iff 1<u<9$$\n\n$$1<x^2<9$$\n\n$$x\\in(-3,-1)\\cup(1,3)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
     "**B.** → True\n\nA maximum is below a threshold exactly when each entry is below it.\n\n$$x-1<2\\quad\\text{and}\\quad 3-x<2$$\n\n$$x<3\\quad\\text{and}\\quad x>1$$\n\n$$1<x<3$$\n\nBoth inequalities are strict, so both endpoints are excluded. Therefore the statement is True.",
-    "**C.** → False\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $V$ be the total volume of blend in litres ($V > 0$).\n\nCost:\n\n$$\\dfrac{2}{3}V \\cdot 3 + \\dfrac{1}{3}V \\cdot 9 = 2V + 3V = 5V$$\n\n“At most 50 EUR” means $5V \\le 50$, so $V \\le 10$.\n\nBatches up to 12 litres include $V = 12$, which costs $5 \\cdot 12 = 60 > 50$ EUR.\n\nOnly volumes up to 10 litres stay within 50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\nThe budget condition is $14+6u\\le 176$, so $u\\le(176-14)/6=27$.\n\nThe claim is False.",
     "**D.** → True\n\nMove the constant to the left over a common denominator.\n\n$$\\frac{2x+1}{x-4}-1=\\frac{x+5}{x-4}$$\n\n$$\\frac{x+5}{x-4}\\le0$$\n\n$$x\\in[-5,4)$$\n\nThe zero $-5$ is included and the pole $4$ is excluded. Therefore the statement is True.",
     "**E.** → True\n\nWork from vertex form and divide by the negative coefficient carefully.\n\n$$-2(x-5)^2+18\\ge10$$\n\n$$(x-5)^2\\le4$$\n\n$$|x-5|\\le2$$\n\n$$3\\le x\\le7$$\n\nThe endpoints give the threshold value exactly. Therefore the statement is True."
    ],
@@ -2853,12 +2853,12 @@
   {
    "id": "math-6-91",
    "case_id": "MATH 6.91",
-   "title": "Exam-style tasks — 3",
+   "title": "Exam-style tasks - 3",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The inequality $|x^2-1|>0$ is true for every real $x$ except $x=-1$ and $x=1$.",
-    "A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 $m^{2}$. Every shorter-side length from 8 m to 16 m inclusive is possible.",
+    "A service charges 13 EUR plus 6 EUR per unit, with a budget of 151 EUR. The budget covers at most $25$ units.",
     "The solution set of $\\dfrac{x^2-1}{x-1}>0$ is the uninterrupted interval $(-1,\\infty)$.",
     "The non-strict inequality $(x-3)^2\\ge0$ is true for every real $x$, with equality only at $x=3$.",
     "The combined conditions “$x<-2$ or $x\\ge1$” and “$x<4$” give $(-\\infty,-2)\\cup[1,4)$."
@@ -2872,7 +2872,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nAn absolute value is positive exactly when its inside is nonzero.\n\n$$|x^2-1|>0\\iff x^2-1\\ne0$$\n\n$$(x-1)(x+1)\\ne0$$\n\n$$x\\ne-1,\\quad x\\ne1$$\n\nNo sign chart beyond the two zeros is needed. Therefore the statement is True.",
-    "**B.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w > 0$ be the shorter side; longer side $2w$.\n\nFencing:\n\n$$2(2w + w) \\le 100$$\n\nArea:\n\n$$2w^{2} \\ge 200$$\n\n$$6w \\le 100$$\n\n$$w \\le \\dfrac{50}{3} \\approx 16.67$$\n\n$$w^{2} \\ge 100$$\n\n$$w \\ge 10$$\n\nTrue range:\n\n$$10 \\le w \\le \\dfrac{50}{3}$$\n\n$$w = 8$$\n\nThis fails the area requirement even though fencing would allow it.\n\nThe lower end must be 10 m, not 8 m.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → False\n\nThe budget condition is $13+6u\\le 151$, so $u\\le(151-13)/6=23$.\n\nThe claim is False.",
     "**C.** → False\n\nThe common factor may cancel algebraically, but the original hole remains.\n\n$$x\\ne1,\\qquad \\frac{x^2-1}{x-1}=x+1$$\n\n$$x+1>0\\iff x>-1$$\n\n$$x\\in(-1,1)\\cup(1,\\infty)$$\n\nThe claim incorrectly restores the undefined point $x=1$. Therefore the statement is False.",
     "**D.** → True\n\nEvery real square is nonnegative.\n\n$$(x-3)^2\\ge0\\quad\\text{for all }x\\in\\mathbb R$$\n\n$$(x-3)^2=0\\iff x=3$$\n\nThe equality description is exact. Therefore the statement is True.",
     "**E.** → True\n\nIntersect the union from the first condition with the final half-line.\n\n$$\\bigl((-\\infty,-2)\\cup[1,\\infty)\\bigr)\\cap(-\\infty,4)$$\n\n$$(-\\infty,-2)\\cup[1,4)$$\n\nThe mixed open and closed endpoints are preserved. Therefore the statement is True."
@@ -2885,29 +2885,29 @@
   {
    "id": "math-6-92",
    "case_id": "MATH 6.92",
-   "title": "Exam-style tasks — 4",
+   "title": "Exam-style tasks - 4",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "A bridge limit is 12 tonnes. Each fully loaded truck weighs 4.3 tonnes. Three fully loaded trucks can be on the bridge at once.",
+    "A service charges 12 EUR plus 6 EUR per unit, with a budget of 174 EUR. The budget covers at most $29$ units.",
     "The rational expression $\\dfrac{(x-2)^2}{(x+4)(x-1)}$ is negative exactly on $(-4,1)$.",
     "The inequality $2x^2+8x+3<0$ is equivalent to $|x+2|<\\sqrt{\\dfrac52}$.",
     "The simultaneous conditions $x+1\\le|x-1|<4$ hold exactly for $-3<x\\le0$.",
-    "Plan A costs 10 EUR per month plus 0.10 EUR per call-minute. Plan B costs 20 EUR per month plus 0.05 EUR per call-minute. A user claims that Plan A is strictly cheaper than Plan B whenever they use fewer than 200 call-minutes in a month. That claim is true."
+    "A service charges 16 EUR plus 6 EUR per unit, with a budget of 154 EUR. The budget covers at most $25$ units."
    ],
    "answer_key": [
     false,
     true,
     true,
     true,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be trucks.\n\n$$4.3n\\le 12$$\n\n$$n\\le 2.79$$\n\nMax $n=2$; three weigh 12.9 tonnes.\n\nNot allowed.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**A.** → False\n\nThe budget condition is $12+6u\\le 174$, so $u\\le(174-12)/6=27$.\n\nThe claim is False.",
     "**B.** → True\n\nThe numerator is positive except at $x=2$, which lies outside the candidate negative interval.\n\n$$(x-2)^2\\ge0$$\n\n$$(x+4)(x-1)<0\\iff -4<x<1$$\n\n$$\\frac{(x-2)^2}{(x+4)(x-1)}<0\\iff -4<x<1$$\n\nBoth denominator zeros are excluded automatically by the open interval. Therefore the statement is True.",
     "**C.** → True\n\nComplete the square and divide by the positive coefficient.\n\n$$2x^2+8x+3=2(x+2)^2-5$$\n\n$$2(x+2)^2-5<0$$\n\n$$(x+2)^2<\\frac52$$\n\n$$|x+2|<\\sqrt{\\frac52}$$\n\nEvery transformation is reversible. Therefore the statement is True.",
     "**D.** → True\n\nSolve each condition independently and intersect the results.\n\n$$x+1\\le|x-1|\\iff x\\le0$$\n\n$$|x-1|<4\\iff -3<x<5$$\n\n$$(-\\infty,0]\\cap(-3,5)=(-3,0]$$\n\nThe left endpoint is strict while $x=0$ satisfies both conditions. Therefore the statement is True.",
-    "**E.** → True\n\nCompare the two linear cost rules at the same usage.\n\nLet $x$ be call-minutes in a month ($x \\ge 0$).\n\nPlan A:\n\n$$10 + 0.10x$$\n\nPlan B:\n\n$$20 + 0.05x$$\n\n“A strictly cheaper than B” means\n\n$$10 + 0.10x < 20 + 0.05x$$\n\n$$0.10x - 0.05x < 20 - 10$$\n\n$$0.05x < 10$$\n\n$$x < 200$$\n\nPlan A is strictly cheaper exactly when $x < 200$. At $x = 200$ the plans cost the same; for $x > 200$, Plan B is cheaper.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**E.** → False\n\nThe budget condition is $16+6u\\le 154$, so $u\\le(154-16)/6=23$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 92,
@@ -2917,14 +2917,14 @@
   {
    "id": "math-6-93",
    "case_id": "MATH 6.93",
-   "title": "Exam-style tasks — 5",
+   "title": "Exam-style tasks - 5",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "On its domain, $\\dfrac{x^2-9}{x-3}<5$ holds exactly when $x<2$.",
     "The strict inequality $x^2-7x+10<0$ contains exactly the two integer solutions $x=3$ and $x=4$.",
     "The inequality $|x|-|x-2|>0$ holds exactly when $x>1$.",
-    "Leo earns 14 EUR per hour and gets a 50 EUR bonus if he works more than 25 hours in a week. He claims that working 28 hours this week will bring him at least 450 EUR in total pay. That claim is true.",
+    "A service charges 15 EUR plus 6 EUR per unit, with a budget of 177 EUR. The budget covers at most $29$ units.",
     "The inequality $\\dfrac{x}{x^2+4}<\\dfrac14$ holds for every real $x$ except $x=2$."
    ],
    "answer_key": [
@@ -2938,7 +2938,7 @@
     "**A.** → True\n\nFactor first, retaining the original domain restriction.\n\n$$x\\ne3,\\qquad \\frac{x^2-9}{x-3}=x+3$$\n\n$$x+3<5\\iff x<2$$\n\nThe removed point $x=3$ lies outside the resulting interval, so no extra hole appears. Therefore the statement is True.",
     "**B.** → True\n\nFactor and inspect the integers in the open interval.\n\n$$(x-2)(x-5)<0$$\n\n$$2<x<5$$\n\n$$x\\in\\mathbb Z\\implies x\\in\\{3,4\\}$$\n\nThe roots themselves are excluded. Therefore the statement is True.",
     "**C.** → True\n\nThe inequality says that $x$ is farther from $0$ than from $2$.\n\n$$|x|>|x-2|$$\n\n$$x^2>(x-2)^2$$\n\n$$4x>4$$\n\n$$x>1$$\n\nSquaring is reversible because both sides are nonnegative. Therefore the statement is True.",
-    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h$ be hours worked. Here $h = 28 > 25$, so pay $= 14h + 50$.\n\n“At least 450” with the bonus means\n\n$$14h + 50 \\ge 450$$\n\n$$14h \\ge 400$$\n\n$$h \\ge \\dfrac{400}{14} \\approx 28.57$$\n\nEven with the bonus, he needs more than 28 hours.\n\nAt 28 hours:\n\n$$14 \\cdot 28 + 50 = 442$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → False\n\nThe budget condition is $15+6u\\le 177$, so $u\\le(177-15)/6=27$.\n\nThe claim is False.",
     "**E.** → True\n\nThe denominator is positive, so clear it and complete the square.\n\n$$4x<x^2+4$$\n\n$$x^2-4x+4>0$$\n\n$$(x-2)^2>0$$\n\n$$x\\ne2$$\n\nEquality occurs only at $x=2$. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
@@ -2949,27 +2949,27 @@
   {
    "id": "math-6-94",
    "case_id": "MATH 6.94",
-   "title": "Exam-style tasks — 6",
+   "title": "Exam-style tasks - 6",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "For every real parameter $a$, the strict inequality $x^2-2ax+a^2<0$ has no real solution.",
     "The equation $|x-1|=|2x+3|$ has exactly the two real solutions $x=-4$ and $x=-\\dfrac23$.",
-    "A student owes 1,200 EUR interest-free and pays 150 EUR each month. The loan is fully paid after at most 8 monthly payments.",
+    "A service charges 14 EUR plus 6 EUR per unit, with a budget of 152 EUR. The budget covers at most $25$ units.",
     "The inequality $\\dfrac{(x-1)^2}{x+2}\\ge0$ is satisfied exactly for $x>-2$.",
     "The inequality $x^2+2x\\le3x+4$ holds for $\\dfrac{1-\\sqrt{17}}2\\le x\\le\\dfrac{1+\\sqrt{17}}2$."
    ],
    "answer_key": [
     true,
     true,
-    true,
+    false,
     true,
     true
    ],
    "tactical_explanations": [
     "**A.** → True\n\nRecognize the parameterized perfect square.\n\n$$x^2-2ax+a^2=(x-a)^2$$\n\n$$(x-a)^2\\ge0$$\n\nA real square cannot be strictly negative. Therefore the statement is True.",
     "**B.** → True\n\nEqual absolute values split into equal and opposite linear branches.\n\n$$x-1=2x+3\\quad\\text{or}\\quad x-1=-(2x+3)$$\n\n$$x=-4\\quad\\text{or}\\quad 3x=-2$$\n\n$$x\\in\\left\\{-4,-\\frac23\\right\\}$$\n\nBoth branch solutions satisfy the original equation. Therefore the statement is True.",
-    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be payments.\n\n$$150n\\ge 1200$$\n\n$$n\\ge 8$$\n\nExactly 8 payments clear the debt.\n\n8 is necessary and sufficient.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**C.** → False\n\nThe budget condition is $14+6u\\le 152$, so $u\\le(152-14)/6=23$.\n\nThe claim is False.",
     "**D.** → True\n\nThe squared numerator is nonnegative, while the denominator controls the nonzero sign.\n\n$$(x-1)^2\\ge0,\\qquad x\\ne-2$$\n\n$$x>-2\\implies \\frac{(x-1)^2}{x+2}\\ge0$$\n\n$$x<-2\\implies \\frac{(x-1)^2}{x+2}<0$$\n\nThe zero at $x=1$ is already contained in the interval. Therefore the statement is True.",
     "**E.** → True\n\nBring the two models to one side and use the quadratic formula.\n\n$$x^2-x-4\\le0$$\n\n$$x=\\frac{1\\pm\\sqrt{1+16}}2=\\frac{1\\pm\\sqrt{17}}2$$\n\n$$\\frac{1-\\sqrt{17}}2\\le x\\le\\frac{1+\\sqrt{17}}2$$\n\nThe upward-opening quadratic is nonpositive between its roots. Therefore the statement is True."
    ],
@@ -2981,12 +2981,12 @@
   {
    "id": "math-6-95",
    "case_id": "MATH 6.95",
-   "title": "Exam-style tasks — 7",
+   "title": "Exam-style tasks - 7",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The inequality $|x-1|\\,|x+1|\\le0$ is satisfied only at $x=-1$ and $x=1$.",
-    "Shipper A charges 12 EUR plus 0.80 EUR per kg; shipper B charges 20 EUR plus 0.40 EUR per kg. For a 25 kg parcel, A is strictly cheaper than B.",
+    "A service charges 13 EUR plus 6 EUR per unit, with a budget of 175 EUR. The budget covers at most $29$ units.",
     "The reciprocal inequality $\\dfrac1{x^2-4}>0$ has solution set $(-\\infty,-2)\\cup(2,\\infty)$.",
     "The inequality $x^2-6x+k<0$ has at least one real solution exactly when $k\\le9$.",
     "The simultaneous inequalities $|x-2|<3$ and $|x+1|\\ge2$ have solution set $[1,5)$."
@@ -3000,7 +3000,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nA product of two absolute values is always nonnegative.\n\n$$|x-1|\\,|x+1|\\ge0$$\n\n$$|x-1|\\,|x+1|\\le0\\iff |x-1|\\,|x+1|=0$$\n\n$$x=-1\\quad\\text{or}\\quad x=1$$\n\nNo interval can satisfy the inequality away from the two zeros. Therefore the statement is True.",
-    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $w = 25$ be the parcel mass in kilograms.\n\nA $= 12 + 0.80w$. B $= 20 + 0.40w$.\n\nA $= 12 + 20 = 32$.\n\nB $= 20 + 10 = 30$.\n\n$$32 > 30$$\n\nB is cheaper at 25 kg. Crossing point:\n\n$$12 + 0.80w = 20 + 0.40w$$\n\n$$w = 20$$\n\nA is cheaper only when $w < 20$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → False\n\nThe budget condition is $13+6u\\le 175$, so $u\\le(175-13)/6=27$.\n\nThe claim is False.",
     "**C.** → True\n\nA reciprocal is positive exactly when its nonzero denominator is positive.\n\n$$x^2-4>0$$\n\n$$(x-2)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>2$$\n\nBoth poles are excluded. Therefore the statement is True.",
     "**D.** → False\n\nComplete the square to identify the minimum value.\n\n$$x^2-6x+k=(x-3)^2+k-9$$\n\n$$\\min_x\\bigl(x^2-6x+k\\bigr)=k-9$$\n\n$$\\exists x:\\ x^2-6x+k<0\\iff k<9$$\n\nAt $k=9$ the minimum is zero, so the strict inequality has no solution. Therefore the statement is False.",
     "**E.** → True\n\nSolve the two distance conditions and intersect them.\n\n$$|x-2|<3\\iff -1<x<5$$\n\n$$|x+1|\\ge2\\iff x\\le-3\\quad\\text{or}\\quad x\\ge1$$\n\n$$(-1,5)\\cap\\bigl((-\\infty,-3]\\cup[1,\\infty)\\bigr)=[1,5)$$\n\nThe left endpoint comes from a non-strict condition; the right remains strict. Therefore the statement is True."
@@ -3013,15 +3013,15 @@
   {
    "id": "math-6-96",
    "case_id": "MATH 6.96",
-   "title": "Exam-style tasks — 8",
+   "title": "Exam-style tasks - 8",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "An empty ${480 L}$ tank fills at ${12 L/min}$. After 30 minutes of filling from empty, the tank is still not more than half full.",
+    "A service charges 12 EUR plus 6 EUR per unit, with a budget of 150 EUR. The budget covers at most $25$ units.",
     "The inequality $\\dfrac1{(x-2)^2}\\le1$ is equivalent to $x\\le1$ or $x\\ge3$.",
     "The parabola inequality $-x^2+4x+5>x+3$ holds exactly between $\\dfrac{3-\\sqrt{17}}2$ and $\\dfrac{3+\\sqrt{17}}2$.",
     "The condition $\\min\\{x+2,\\,4-x\\}\\ge1$ is equivalent to $-1\\le x\\le3$.",
-    "A courier may accept a parcel only when both conditions hold at once: mass $m$ at most 20 kg, and girth-plus-length $g$ at most 300 cm. A parcel with $m = 18$ kg and $g = 310$ cm is accepted under that rule."
+    "A service charges 16 EUR plus 6 EUR per unit, with a budget of 178 EUR. The budget covers at most $29$ units."
    ],
    "answer_key": [
     false,
@@ -3031,11 +3031,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $t=30$.\n\n$$12\\cdot 30=360>240$$\n\nTank is three-quarters full.\n\nClaim is wrong.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**A.** → False\n\nThe budget condition is $12+6u\\le 150$, so $u\\le(150-12)/6=23$.\n\nThe claim is False.",
     "**B.** → True\n\nThe squared denominator is positive on the domain, so cross-multiplication is safe.\n\n$$x\\ne2,\\qquad 1\\le(x-2)^2$$\n\n$$|x-2|\\ge1$$\n\n$$x\\le1\\quad\\text{or}\\quad x\\ge3$$\n\nThe forbidden point $2$ lies in the rejected central interval. Therefore the statement is True.",
     "**C.** → True\n\nSubtract the line and solve the resulting quadratic sign condition.\n\n$$-x^2+3x+2>0$$\n\n$$x^2-3x-2<0$$\n\n$$x=\\frac{3\\pm\\sqrt{9+8}}2=\\frac{3\\pm\\sqrt{17}}2$$\n\nThe interval is open because the comparison is strict. Therefore the statement is True.",
     "**D.** → True\n\nA minimum is at least a threshold exactly when both entries are.\n\n$$x+2\\ge1\\quad\\text{and}\\quad4-x\\ge1$$\n\n$$x\\ge-1\\quad\\text{and}\\quad x\\le3$$\n\n$$-1\\le x\\le3$$\n\nBoth endpoints meet the non-strict threshold. Therefore the statement is True.",
-    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $m$ be mass in kilograms and $g$ be girth-plus-length in centimetres.\n\nGiven values:\n\n$$m = 18$$\n\n$g = 310$.\n\nBoth must hold:\n\n$$m \\le 20$$\n\nAlso, $g \\le 300$.\n\nMass:\n\n$$18 \\le 20$$\n\nSatisfied.\n\nGirth-plus-length:\n\n$$310 \\le 300$$\n\nFailed.\n\nThe compound condition is false because one conjunct fails.\n\nA light parcel can still be rejected if it is too long/girthy. Both inequalities are required.\n\nThe parcel is not acceptable, so the statement is false.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**E.** → False\n\nThe budget condition is $16+6u\\le 178$, so $u\\le(178-16)/6=27$.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 96,
@@ -3045,14 +3045,14 @@
   {
    "id": "math-6-97",
    "case_id": "MATH 6.97",
-   "title": "Exam-style tasks — 9",
+   "title": "Exam-style tasks - 9",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The inequality $\\dfrac1x\\ge\\dfrac1{x+2}$ holds for $x\\in(-\\infty,-2)\\cup(0,\\infty)$.",
     "The strict inequality $(x^2-4)(x^2-16)>0$ holds exactly for $x<-4$, $-2<x<2$, or $x>4$.",
     "The compound inequality $-2<\\dfrac{x-1}{3}\\le4$ has solution set $-5<x\\le13$.",
-    "An elevator limit is 600 kg. Adults of 70, 85, and 90 kg are already inside. At most 8 children of 35 kg each can still enter.",
+    "A service charges 15 EUR plus 6 EUR per unit, with a budget of 153 EUR. The budget covers at most $25$ units.",
     "The strict inequality $\\dfrac{x-3}{(x+1)^2}>0$ holds exactly when $x>3$."
    ],
    "answer_key": [
@@ -3066,7 +3066,7 @@
     "**A.** → True\n\nSubtract the two sides and retain both domain exclusions.\n\n$$\\frac1x-\\frac1{x+2}=\\frac{2}{x(x+2)}$$\n\n$$\\frac{2}{x(x+2)}\\ge0\\iff x(x+2)>0$$\n\n$$x\\in(-\\infty,-2)\\cup(0,\\infty)$$\n\nThe numerator never vanishes, so equality never occurs. Therefore the statement is True.",
     "**B.** → True\n\nOrder the four simple roots and keep the positive sign intervals.\n\n$$(x-2)(x+2)(x-4)(x+4)>0$$\n\n$$-4,\\ -2,\\ 2,\\ 4$$\n\n$$x\\in(-\\infty,-4)\\cup(-2,2)\\cup(4,\\infty)$$\n\nEvery root is excluded by strictness. Therefore the statement is True.",
     "**C.** → True\n\nMultiply all three parts by the positive denominator and then translate.\n\n$$-6<x-1\\le12$$\n\n$$-5<x\\le13$$\n\nMultiplication by $3$ does not reverse either sign. Therefore the statement is True.",
-    "**D.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $c$ be children.\n\n$$245+35c\\le 600$$\n\n$$c\\le 10.14$$\n\nMax $c=10$.\n\n8 is allowed, but the maximum is 10.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → False\n\nThe budget condition is $15+6u\\le 153$, so $u\\le(153-15)/6=23$.\n\nThe claim is False.",
     "**E.** → True\n\nAway from its pole, the squared denominator is positive.\n\n$$(x+1)^2>0\\quad(x\\ne-1)$$\n\n$$\\frac{x-3}{(x+1)^2}>0\\iff x-3>0$$\n\n$$x>3$$\n\nNeither the pole nor the numerator zero lies in the strict solution set. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
@@ -3077,27 +3077,27 @@
   {
    "id": "math-6-98",
    "case_id": "MATH 6.98",
-   "title": "Exam-style tasks — 10",
+   "title": "Exam-style tasks - 10",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
     "The inequality $x^2+kx+4\\ge0$ holds for every real $x$ exactly when $|k|\\le4$.",
     "The radical inequality $\\sqrt{x+2}\\ge x$ has solution set $[-2,2]$.",
-    "A car rental costs 45 EUR per day plus 0.25 EUR per kilometre. A tourist rents for exactly 3 days and has a total budget of 200 EUR for the rental. They claim that they can drive up to 300 km without exceeding the budget. That tourist claim is wrong.",
+    "A service charges 14 EUR plus 6 EUR per unit, with a budget of 176 EUR. The budget covers at most $29$ units.",
     "The inequality $\\dfrac{x^2-4x+3}{x-1}\\le0$ has solution set $(-\\infty,1)\\cup(1,3]$.",
     "The inequality $(x-2)^2(x+1)<0$ is satisfied exactly for $x<-1$."
    ],
    "answer_key": [
     true,
     true,
-    true,
+    false,
     true,
     true
    ],
    "tactical_explanations": [
     "**A.** → True\n\nAn upward-opening quadratic is nonnegative everywhere exactly when its discriminant is nonpositive.\n\n$$\\Delta=k^2-16$$\n\n$$\\Delta\\le0\\iff k^2\\le16$$\n\n$$|k|\\le4$$\n\nAt the two boundary parameters the quadratic has a double zero. Therefore the statement is True.",
     "**B.** → True\n\nRespect the radical domain and separate the branch where the right side is nonpositive.\n\n$$x\\ge-2$$\n\n$$-2\\le x\\le0\\implies \\sqrt{x+2}\\ge0\\ge x$$\n\n$$x>0:\\quad x+2\\ge x^2\\iff (x-2)(x+1)\\le0$$\n\n$$x\\in[-2,2]$$\n\nSquaring is used only where both sides are nonnegative. Therefore the statement is True.",
-    "**C.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $k$ be the number of kilometres driven ($k \\ge 0$).\n\nCost:\n\n$$135 + 0.25k$$\n\nWithin budget:\n\n$$135 + 0.25k \\le 200$$\n\n$$0.25k \\le 65$$\n\n$$k \\le \\dfrac{65}{0.25} = 260$$\n\nThey may drive at most 260 km. Three hundred kilometres would overshoot the budget.\n\nAt $k = 300$, cost is $135 + 75 = 210 > 200$. So the tourist claim is indeed wrong.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**C.** → False\n\nThe budget condition is $14+6u\\le 176$, so $u\\le(176-14)/6=27$.\n\nThe claim is False.",
     "**D.** → True\n\nFactor and cancel while preserving the original excluded point.\n\n$$x\\ne1,\\qquad \\frac{(x-1)(x-3)}{x-1}=x-3$$\n\n$$x-3\\le0\\iff x\\le3$$\n\n$$x\\in(-\\infty,1)\\cup(1,3]$$\n\nThe hole at $x=1$ splits the otherwise closed half-line. Therefore the statement is True.",
     "**E.** → True\n\nThe even-multiplicity factor never changes sign.\n\n$$(x-2)^2\\ge0$$\n\n$$(x-2)^2(x+1)<0\\iff x+1<0$$\n\n$$x<-1$$\n\nThe double zero $x=2$ is not admitted by a strict inequality. Therefore the statement is True."
    ],
@@ -3109,271 +3109,271 @@
   {
    "id": "math-6-99",
    "case_id": "MATH 6.99",
-   "title": "Exam-style tasks — 11",
+   "title": "Exam-style tasks - 11",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A control ratio is $R(x)=\\dfrac{x-3}{x+1}$. The input $x=-1$ is excluded because it makes the denominator zero, while $x=3$ is a zero of the ratio. Engineers use a sign chart across these two critical points to classify positive and nonpositive readings.",
    "statements": [
-    "The inequality $|x|+|x-4|>6$ has solution set $(-\\infty,-1)\\cup(5,\\infty)$.",
-    "Concert tickets cost 28 EUR each, and a group booking fee of 12 EUR is added once for the whole group. A club has 160 EUR and claims that they can buy tickets for at most 5 people without going over budget. That claim is true.",
-    "The rational inequality $\\dfrac{x^2-2x-3}{x^2+2x+5}<0$ has solution set $(-1,3)$.",
-    "The inequality $x^2+4x+5\\le0$ has no real solution.",
-    "The inequality $|x-3|\\le2|x+1|$ holds exactly for $x\\le-5$ or $x\\ge\\dfrac13$."
+    "$R(x)>0$ for $x<-1$ or $x>3$.",
+    "$x=-1$ belongs to the solution of $R(x)\\le0$.",
+    "$R(3)=0$.",
+    "$R(x)\\le0$ on $(-1,3]$.",
+    "$R(x)>1$ exactly when $x<-1$."
    ],
    "answer_key": [
     true,
-    true,
+    false,
     true,
     true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSplit at the two reference points.\n\n$$x<0:\\quad |x|+|x-4|=4-2x>6\\iff x<-1$$\n\n$$0\\le x\\le4:\\quad |x|+|x-4|=4$$\n\n$$x>4:\\quad |x|+|x-4|=2x-4>6\\iff x>5$$\n\nThe central segment contributes no solutions. Therefore the statement is True.",
-    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of people (tickets), a whole number $n \\ge 1$.\n\nCost:\n\n$$28n + 12$$\n\nWithin budget:\n\n$$28n + 12 \\le 160$$\n\n$$28n \\le 148$$\n\n$$n \\le \\dfrac{148}{28} \\approx 5.286$$\n\nSo the largest whole $n$ is 5.\n\nFive tickets cost $140 + 12 = 152 \\le 160$. Six tickets would cost $168 + 12 = 180 > 160$.\n\n“At most 5 people” matches the solution, so\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → True\n\nThe denominator is always positive, leaving only the factored numerator to test.\n\n$$x^2+2x+5=(x+1)^2+4>0$$\n\n$$x^2-2x-3=(x+1)(x-3)$$\n\n$$(x+1)(x-3)<0\\iff -1<x<3$$\n\nStrictness excludes both numerator zeros. Therefore the statement is True.",
-    "**D.** → True\n\nComplete the square to identify the global minimum.\n\n$$x^2+4x+5=(x+2)^2+1$$\n\n$$(x+2)^2+1\\ge1>0$$\n\nThe expression cannot be nonpositive. Therefore the statement is True.",
-    "**E.** → True\n\nBoth sides are nonnegative, so square and factor the difference.\n\n$$(x-3)^2\\le4(x+1)^2$$\n\n$$4(x+1)^2-(x-3)^2\\ge0$$\n\n$$(x+5)(3x-1)\\ge0$$\n\n$$x\\le-5\\quad\\text{or}\\quad x\\ge\\frac13$$\n\nEquality includes both boundary points. Therefore the statement is True."
+    "**A.** → True\n\nNumerator and denominator have the same sign on the two outer intervals.\n\nThe claim is True.",
+    "**B.** → False\n\nThe pole is excluded from every solution set.\n\nThe claim is False.",
+    "**C.** → True\n\nThe numerator is zero and the denominator is nonzero.\n\nThe claim is True.",
+    "**D.** → True\n\nThe ratio is negative between pole and zero, then equals zero at the zero.\n\nThe claim is True.",
+    "**E.** → True\n\n$R-1=(-1-3)/(x+1)$, which is positive exactly below the pole.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 99,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests sum of distances above a threshold; B tests a contextual inequality with all practical constraints; C tests factorable numerator over an irreducible denominator; D tests empty quadratic sublevel set; E tests scaled comparison of two distances. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.1.\n\nShared solution:\n1. Use the single shared stem for topic 6.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One rational sign chart controls all five claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Numerator and denominator have the same sign on the two outer intervals.\n5. A: The computed result makes this claim True.\n6. B: The pole is excluded from every solution set.\n7. B: The computed result makes this claim False.\n8. C: The numerator is zero and the denominator is nonzero.\n9. C: The computed result makes this claim True.\n10. D: The ratio is negative between pole and zero, then equals zero at the zero.\n11. D: The computed result makes this claim True.\n12. E: $R-1=(-1-3)/(x+1)$, which is positive exactly below the pole.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-100",
    "case_id": "MATH 6.100",
-   "title": "Exam-style tasks — 12",
+   "title": "Exam-style tasks - 12",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A quality score is $Q(x)=-(x-3)(x-9)$. The process accepts settings with $Q(x)\\ge0$ and gives its highest score on the axis of symmetry. The roots, endpoint inclusion, and maximum must all be read from this same downward-opening quadratic.",
    "statements": [
-    "A product needs 1 unit of A, 4 units of B, and 2 units of C at 60 EUR, 15 EUR, and 20 EUR, plus 5 EUR finishing. Budget 12,000 EUR, storage 400. Then the maximum number of products is less than 50.",
-    "The solution set of $\\dfrac{x^2-4}{x-2}\\ge0$ is the single interval $[-2,\\infty)$.",
-    "The closed quadratic inequality $(x-4)(x+3)\\le0$ contains exactly eight integer solutions.",
-    "The mixed inequality $|2x-3|<x+1$ has solution set $\\left(\\dfrac23,4\\right)$.",
-    "A shop offers 20% off. With 48 EUR, Nora can afford any item whose marked price is at most 55 EUR."
+    "The accepted settings are $[3,9]$.",
+    "$Q(6)=9$.",
+    "The maximum occurs at $x=6$.",
+    "$Q(x)>0$ includes $x=3$.",
+    "$Q(x)<0$ for $x<3$ or $x>9$."
    ],
    "answer_key": [
-    false,
-    false,
     true,
     true,
-    false
+    true,
+    false,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$7n \\le 400$$\n\n$$n \\le 57$$\n\n$$60 + 60 + 40 + 5 = 165$$\n\n$$165n \\le 12000$$\n\n$$n \\le 72$$\n\nMaximum 57, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nCancellation simplifies the sign test but does not restore an excluded denominator zero.\n\n$$x\\ne2,\\qquad \\frac{x^2-4}{x-2}=x+2$$\n\n$$x+2\\ge0\\iff x\\ge-2$$\n\n$$x\\in[-2,2)\\cup(2,\\infty)$$\n\nThe claimed interval wrongly includes the undefined point $x=2$. Therefore the statement is False.",
-    "**C.** → True\n\nAn upward-opening factored quadratic is nonpositive between its roots.\n\n$$(x-4)(x+3)\\le0\\iff -3\\le x\\le4$$\n\n$$x\\in\\{-3,-2,-1,0,1,2,3,4\\}$$\n\n$$\\#=8$$\n\nBoth integer endpoints count. Therefore the statement is True.",
-    "**D.** → True\n\nThe right side must be positive, and the modulus then unfolds into two simultaneous bounds.\n\n$$-(x+1)<2x-3<x+1$$\n\n$$x>\\frac23,\\qquad x<4$$\n\n$$x\\in\\left(\\frac23,4\\right)$$\n\nThe resulting interval already satisfies $x+1>0$. Therefore the statement is True.",
-    "**E.** → False\n\nAfter a percentage discount, the amount paid is the remaining percentage of the marked price.\n\nLet $p$ be marked price.\n\n$$0.8p\\le 48$$\n\n$$p\\le 60$$\n\nShe can afford up to 60 EUR marked.\n\n55 understates the true ceiling.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nA downward-opening factored quadratic is nonnegative between its roots.\n\nThe claim is True.",
+    "**B.** → True\n\n$Q(6)=-(3)(-3)=9$.\n\nThe claim is True.",
+    "**C.** → True\n\nThe axis is the midpoint of the two roots.\n\nThe claim is True.",
+    "**D.** → False\n\nAt the root the score is zero, so strict positivity excludes it.\n\nThe claim is False.",
+    "**E.** → True\n\nThe quadratic is negative outside its roots.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 100,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests cancellation hole inside the answer; C tests integer count in a quadratic interval; D tests absolute value bounded by a linear function; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.2.\n\nShared solution:\n1. Use the single shared stem for topic 6.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared quadratic sign model supplies interval and vertex facts.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(6)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-101",
    "case_id": "MATH 6.101",
-   "title": "Exam-style tasks — 13",
+   "title": "Exam-style tasks - 13",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A storage room is compliant when its temperature $T$ differs from the target 20 by at most 4 degrees: $|T-20|\\le4$. A stricter comfort rule replaces $\\le$ by $<$. Temperatures are real numbers, and equality is allowed only by the compliance rule.",
    "statements": [
-    "The rational expression $\\dfrac{x^2+1}{x-2}$ is negative exactly when $x<2$.",
-    "The inequality $(x-1)^2-4>0$ has solution set $(-\\infty,-1)\\cup(3,\\infty)$.",
-    "The distance inequality $|x-2|+|x+2|\\le6$ has solution set $[-3,3]$.",
-    "A bakery has 25 kg of flour and each loaf needs 0.4 kg. It is possible to bake 60 loaves from this stock.",
-    "The inequality $\\dfrac{x^2+4x+5}{x^2-1}\\le0$ is satisfied exactly for $-1<x<1$."
+    "Compliance means $16\\le T\\le24$.",
+    "$T=24$ is compliant.",
+    "$T=16$ satisfies the comfort rule.",
+    "Noncompliance means $T<16$ or $T>24$.",
+    "$|T-20|\\ge4$ gives an open exterior set."
    ],
    "answer_key": [
     true,
     true,
+    false,
     true,
-    true,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe numerator is positive everywhere, so only the denominator sign matters.\n\n$$x^2+1>0$$\n\n$$\\frac{x^2+1}{x-2}<0\\iff x-2<0$$\n\n$$x<2$$\n\nThe pole $x=2$ is excluded by the strict half-line. Therefore the statement is True.",
-    "**B.** → True\n\nCompare the shifted square with $4$.\n\n$$(x-1)^2>4$$\n\n$$|x-1|>2$$\n\n$$x<-1\\quad\\text{or}\\quad x>3$$\n\nStrictness excludes the two boundary roots. Therefore the statement is True.",
-    "**C.** → True\n\nSplit the line at the two absolute-value breakpoints.\n\n$$|x-2|+|x+2|=\\begin{cases}-2x,&x<-2,\\\\4,&-2\\le x\\le2,\\\\2x,&x>2,\\end{cases}$$\n\n$$|x-2|+|x+2|\\le6\\iff -3\\le x\\le3$$\n\nThe whole central segment works, with one additional unit on each side. Therefore the statement is True.",
-    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be loaves.\n\n$$0.4n\\le 25$$\n\n$$n\\le 62.5$$\n\n60 $\\le$ 62.5, so allowed.\n\n60 loaves use 24 kg.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nThe numerator has a positive completed-square form.\n\n$$x^2+4x+5=(x+2)^2+1>0$$\n\n$$\\frac{x^2+4x+5}{x^2-1}\\le0\\iff x^2-1<0$$\n\n$$-1<x<1$$\n\nEquality cannot occur because the numerator never vanishes. Therefore the statement is True."
+    "**A.** → True\n\nUnfolding the absolute value gives the closed interval.\n\nThe claim is True.",
+    "**B.** → True\n\nIts distance from the target equals the allowed radius.\n\nThe claim is True.",
+    "**C.** → False\n\nThe comfort rule is strict and excludes both endpoints.\n\nThe claim is False.",
+    "**D.** → True\n\nThis is the complement of the closed compliance interval.\n\nThe claim is True.",
+    "**E.** → False\n\nA non-strict exterior condition includes both boundary points.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 101,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests positive quadratic numerator over a pole; B tests quadratic exterior from a shifted square; C tests sum of distances bounded above; D tests a contextual inequality with all practical constraints; E tests positive numerator over a difference of squares. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.3.\n\nShared solution:\n1. Use the single shared stem for topic 6.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared absolute-value band is read with careful endpoint logic.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Unfolding the absolute value gives the closed interval.\n5. A: The computed result makes this claim True.\n6. B: Its distance from the target equals the allowed radius.\n7. B: The computed result makes this claim True.\n8. C: The comfort rule is strict and excludes both endpoints.\n9. C: The computed result makes this claim False.\n10. D: This is the complement of the closed compliance interval.\n11. D: The computed result makes this claim True.\n12. E: A non-strict exterior condition includes both boundary points.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-6-102",
    "case_id": "MATH 6.102",
-   "title": "Exam-style tasks — 14",
+   "title": "Exam-style tasks - 14",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A workshop has orders for at least 40 kits. Each kit uses 2 kg of material A, 3 kg of material B, and 1.5 labor hours. Available resources are 100 kg of A, 180 kg of B, and 72 labor hours. The production count must be a nonnegative integer and must satisfy every resource limit at the same time.",
    "statements": [
-    "The inequality $3x^2-12x+13>0$ holds for every real $x$.",
-    "The inequality $|x+1|\\ge4$ has solution set $(-\\infty,-5]\\cup[3,\\infty)$.",
-    "A parking garage has a clearance of 2.10 m. A car is 1.70 m tall and a roof box adds 0.35 m. The driver claims the car with the roof box can enter the garage. That claim is true.",
-    "The inequality $\\dfrac{x+2}{(x-1)^2}\\le0$ has solution set $(-\\infty,-2]$.",
-    "The quartic sign inequality $(x^2-1)(x^2-9)\\le0$ has solution set $[-3,-1]\\cup[1,3]$."
+    "Material A permits at most $50$ kits.",
+    "Material B permits at most $60$ kits.",
+    "Labor permits at most $48$ kits.",
+    "The overall production cap is $50$ kits.",
+    "The order minimum of $40$ kits is feasible."
    ],
    "answer_key": [
     true,
     true,
     true,
-    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nComplete the square to expose a positive minimum.\n\n$$3x^2-12x+13=3(x-2)^2+1$$\n\n$$3(x-2)^2+1\\ge1>0$$\n\nThe expression never reaches zero. Therefore the statement is True.",
-    "**B.** → True\n\nA lower bound on distance gives two outer rays.\n\n$$|x+1|\\ge4$$\n\n$$x+1\\le-4\\quad\\text{or}\\quad x+1\\ge4$$\n\n$$x\\le-5\\quad\\text{or}\\quad x\\ge3$$\n\nEquality includes both boundary points. Therefore the statement is True.",
-    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $h$ be total height:\n\n$$h = 1.70 + 0.35$$\n\nEntry is allowed when:\n\n$$h \\le 2.10$$\n\n$$1.70 + 0.35 = 2.05 \\le 2.10$$\n\nThere are 0.05 m (5 cm) to spare.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nThe squared denominator is positive wherever the fraction is defined.\n\n$$(x-1)^2>0\\quad(x\\ne1)$$\n\n$$\\frac{x+2}{(x-1)^2}\\le0\\iff x+2\\le0$$\n\n$$x\\le-2$$\n\nThe excluded value $1$ is not in the resulting half-line. Therefore the statement is True.",
-    "**E.** → True\n\nFactor into four linear terms and alternate signs across the simple roots.\n\n$$(x-1)(x+1)(x-3)(x+3)\\le0$$\n\n$$-3,\\ -1,\\ 1,\\ 3$$\n\n$$x\\in[-3,-1]\\cup[1,3]$$\n\nAll four roots are included because the inequality is non-strict. Therefore the statement is True."
+    "**A.** → True\n\n$2n\\le100$ gives $n\\le50$.\n\nThe claim is True.",
+    "**B.** → True\n\n$3n\\le180$ gives $n\\le60$.\n\nThe claim is True.",
+    "**C.** → True\n\n$1.5n\\le72$ gives $n\\le48$.\n\nThe claim is True.",
+    "**D.** → False\n\nThe tightest of the three upper bounds is $48$.\n\nThe claim is False.",
+    "**E.** → True\n\nThe feasible integer range reaches $48$, and $40\\le48$.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 102,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests globally positive quadratic; B tests exterior absolute-value rays; C tests a contextual inequality with all practical constraints; D tests nonpositive numerator over a square; E tests symmetric quartic sign pattern. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.4.\n\nShared solution:\n1. Use the single shared stem for topic 6.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared production story requires intersecting three resource inequalities.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $2n\\le100$ gives $n\\le50$.\n5. A: The computed result makes this claim True.\n6. B: $3n\\le180$ gives $n\\le60$.\n7. B: The computed result makes this claim True.\n8. C: $1.5n\\le72$ gives $n\\le48$.\n9. C: The computed result makes this claim True.\n10. D: The tightest of the three upper bounds is $48$.\n11. D: The computed result makes this claim False.\n12. E: The feasible integer range reaches $48$, and $40\\le48$.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-103",
    "case_id": "MATH 6.103",
-   "title": "Exam-style tasks — 15",
+   "title": "Exam-style tasks - 15",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A control ratio is $R(x)=\\dfrac{x-4}{x+2}$. The input $x=-2$ is excluded because it makes the denominator zero, while $x=4$ is a zero of the ratio. Engineers use a sign chart across these two critical points to classify positive and nonpositive readings.",
    "statements": [
-    "The inequality $|x|+x<2$ has solution set $(-\\infty,1)$.",
-    "A gym membership is 40 EUR per month and each guest pass costs 6 EUR. With 70 EUR this month, at most 5 guest passes can be bought.",
-    "The inequality $\\dfrac1{x-1}+\\dfrac1{x+1}>0$ has solution set $(-1,0)\\cup(1,\\infty)$.",
-    "The strict inequality $4x^2-12x+9<0$ has no real solution.",
-    "The inequality $|x|-x\\ge2$ has solution set $(-\\infty,-1]$."
+    "$R(x)>0$ for $x<-2$ or $x>4$.",
+    "$x=-2$ belongs to the solution of $R(x)\\le0$.",
+    "$R(4)=0$.",
+    "$R(x)\\le0$ on $(-2,4]$.",
+    "$R(x)>1$ exactly when $x<-2$."
    ],
    "answer_key": [
     true,
-    true,
+    false,
     true,
     true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nResolve the expression on the negative and nonnegative half-lines.\n\n$$x<0:\\quad |x|+x=-x+x=0<2$$\n\n$$x\\ge0:\\quad |x|+x=2x<2\\iff x<1$$\n\n$$x<1$$\n\nThe two branches join without a gap at zero. Therefore the statement is True.",
-    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $g$ be the number of guest passes.\n\n$$40 + 6g \\le 70$$\n\n$$6g \\le 30$$\n\n$$g \\le 5$$\n\nThe greatest whole number of guest passes is 5.\n\nThe claim matches the solution.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → True\n\nCombine the fractions before making a sign chart.\n\n$$\\frac1{x-1}+\\frac1{x+1}=\\frac{2x}{x^2-1}$$\n\n$$-1,\\ 0,\\ 1\\ \\text{are the critical points}$$\n\n$$\\frac{2x}{x^2-1}>0\\iff x\\in(-1,0)\\cup(1,\\infty)$$\n\nStrictness excludes the numerator zero, and both poles are excluded. Therefore the statement is True.",
-    "**D.** → True\n\nThe trinomial is a perfect square.\n\n$$4x^2-12x+9=(2x-3)^2$$\n\n$$(2x-3)^2\\ge0$$\n\nThe expression reaches zero but never becomes negative. Therefore the statement is True.",
-    "**E.** → True\n\nSplit according to the sign of $x$.\n\n$$x\\ge0:\\quad |x|-x=0$$\n\n$$x<0:\\quad |x|-x=-2x\\ge2\\iff x\\le-1$$\n\n$$x\\in(-\\infty,-1]$$\n\nOnly the negative branch contributes. Therefore the statement is True."
+    "**A.** → True\n\nNumerator and denominator have the same sign on the two outer intervals.\n\nThe claim is True.",
+    "**B.** → False\n\nThe pole is excluded from every solution set.\n\nThe claim is False.",
+    "**C.** → True\n\nThe numerator is zero and the denominator is nonzero.\n\nThe claim is True.",
+    "**D.** → True\n\nThe ratio is negative between pole and zero, then equals zero at the zero.\n\nThe claim is True.",
+    "**E.** → True\n\n$R-1=(-2-4)/(x+2)$, which is positive exactly below the pole.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 103,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests one-sided cancellation in a modulus sum; B tests a contextual inequality with all practical constraints; C tests sum of two reciprocals; D tests strict inequality for a double-root quadratic; E tests one-sided modulus difference. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.1.\n\nShared solution:\n1. Use the single shared stem for topic 6.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One rational sign chart controls all five claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Numerator and denominator have the same sign on the two outer intervals.\n5. A: The computed result makes this claim True.\n6. B: The pole is excluded from every solution set.\n7. B: The computed result makes this claim False.\n8. C: The numerator is zero and the denominator is nonzero.\n9. C: The computed result makes this claim True.\n10. D: The ratio is negative between pole and zero, then equals zero at the zero.\n11. D: The computed result makes this claim True.\n12. E: $R-1=(-2-4)/(x+2)$, which is positive exactly below the pole.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-104",
    "case_id": "MATH 6.104",
-   "title": "Exam-style tasks — 16",
+   "title": "Exam-style tasks - 16",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A quality score is $Q(x)=-(x-4)(x-10)$. The process accepts settings with $Q(x)\\ge0$ and gives its highest score on the axis of symmetry. The roots, endpoint inclusion, and maximum must all be read from this same downward-opening quadratic.",
    "statements": [
-    "A backpack may carry at most 4 kg and at most 20 litres. Each book weighs 0.5 kg and takes 3 litres. The greatest number of books that satisfy both limits is 8.",
-    "The inequality $\\left(\\dfrac{x-1}{x+1}\\right)^2<1$ has solution set $(0,\\infty)$.",
-    "The inequality $-x^2+x+6<0$ has solution set $(-\\infty,-2)\\cup(3,\\infty)$.",
-    "The radical inequality $\\sqrt{x+1}<3$ has solution set $[-1,8)$.",
-    "Ferry tickets cost 18 EUR for adults and 9 EUR for children. A family has 72 EUR and buys 2 adult tickets. They can still buy 5 child tickets without exceeding the budget."
+    "The accepted settings are $[4,10]$.",
+    "$Q(7)=9$.",
+    "The maximum occurs at $x=7$.",
+    "$Q(x)>0$ includes $x=4$.",
+    "$Q(x)<0$ for $x<4$ or $x>10$."
    ],
    "answer_key": [
+    true,
+    true,
+    true,
     false,
-    true,
-    true,
-    true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe number of books must satisfy both the mass and volume limits.\n\nLet $n$ be the number of books.\n\n$$0.5n \\le 4$$\n\nAlso, $3n \\le 20$.\n\nWeight:\n\n$$n \\le 8$$\n\nVolume:\n\n$$n \\le \\dfrac{20}{3} \\approx 6.67$$\n\nBinding limit:\n\n$$n \\le 6$$\n\nVolume binds first, so the maximum is 6, not 8.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nCompare the absolute values after taking the square root of two nonnegative quantities.\n\n$$\\left|\\frac{x-1}{x+1}\\right|<1$$\n\n$$|x-1|<|x+1|$$\n\n$$(x-1)^2<(x+1)^2$$\n\n$$x>0$$\n\nThe pole $x=-1$ is already outside the solution half-line. Therefore the statement is True.",
-    "**C.** → True\n\nFactor after reversing the sign of the inequality.\n\n$$-x^2+x+6<0\\iff x^2-x-6>0$$\n\n$$(x-3)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>3$$\n\nStrictness leaves both roots open. Therefore the statement is True.",
-    "**D.** → True\n\nCombine the radical domain with the squared upper bound.\n\n$$x+1\\ge0\\iff x\\ge-1$$\n\n$$\\sqrt{x+1}<3\\iff x+1<9\\iff x<8$$\n\n$$x\\in[-1,8)$$\n\nThe domain endpoint is included, while the threshold endpoint is not. Therefore the statement is True.",
-    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $c$ be the number of child tickets.\n\n$$2 \\cdot 18 + 9c \\le 72$$\n\n$$36 + 9c \\le 72$$\n\n$$9c \\le 36$$\n\n$$c \\le 4$$\n\nAt most 4 child tickets remain affordable.\n\n5 children would make the total 81 EUR.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nA downward-opening factored quadratic is nonnegative between its roots.\n\nThe claim is True.",
+    "**B.** → True\n\n$Q(7)=-(3)(-3)=9$.\n\nThe claim is True.",
+    "**C.** → True\n\nThe axis is the midpoint of the two roots.\n\nThe claim is True.",
+    "**D.** → False\n\nAt the root the score is zero, so strict positivity excludes it.\n\nThe claim is False.",
+    "**E.** → True\n\nThe quadratic is negative outside its roots.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 104,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests square of a Möbius expression; C tests downward quadratic negative outside; D tests bounded principal square root; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.2.\n\nShared solution:\n1. Use the single shared stem for topic 6.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared quadratic sign model supplies interval and vertex facts.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(7)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-105",
    "case_id": "MATH 6.105",
-   "title": "Exam-style tasks — 17",
+   "title": "Exam-style tasks - 17",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A storage room is compliant when its temperature $T$ differs from the target 21 by at most 4 degrees: $|T-21|\\le4$. A stricter comfort rule replaces $\\le$ by $<$. Temperatures are real numbers, and equality is allowed only by the compliance rule.",
    "statements": [
-    "The rational inequality $\\dfrac{(x-4)(x+1)}{(x-2)(x+3)}\\le0$ has solution set $(-3,-1]\\cup(2,4]$.",
-    "The inequality $-2x^2+8x-6\\ge0$ has solution set $[1,3]$.",
-    "The inequality $\\left|\\dfrac1{x-1}\\right|>1$ has solution set $(0,1)\\cup(1,2)$.",
-    "A courier has 75 minutes including a fixed 10-minute warehouse stop and drives at 2 minutes per kilometre. Every delivery of at most 35 km can be finished on time.",
-    "The inequality $\\dfrac{x^2-4}{x^2-9}\\ge0$ has solution set $(-\\infty,-3)\\cup[-2,2]\\cup(3,\\infty)$."
+    "Compliance means $17\\le T\\le25$.",
+    "$T=25$ is compliant.",
+    "$T=17$ satisfies the comfort rule.",
+    "Noncompliance means $T<17$ or $T>25$.",
+    "$|T-21|\\ge4$ gives an open exterior set."
    ],
    "answer_key": [
     true,
     true,
-    true,
     false,
-    true
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nZeros and poles partition the line; poles are never included.\n\n$$-3\\ (\\text{pole}),\\ -1\\ (\\text{zero}),\\ 2\\ (\\text{pole}),\\ 4\\ (\\text{zero})$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-3,-1]\\cup(2,4]$$\n\nThe nonpositive intervals include numerator zeros and exclude denominator zeros. Therefore the statement is True.",
-    "**B.** → True\n\nFactor after dividing by a negative number and reverse the sign.\n\n$$-2x^2+8x-6\\ge0$$\n\n$$x^2-4x+3\\le0$$\n\n$$(x-1)(x-3)\\le0$$\n\n$$1\\le x\\le3$$\n\nBoth roots are included. Therefore the statement is True.",
-    "**C.** → True\n\nRewrite the reciprocal modulus as a positive distance condition.\n\n$$x\\ne1,\\qquad \\frac1{|x-1|}>1$$\n\n$$0<|x-1|<1$$\n\n$$x\\in(0,1)\\cup(1,2)$$\n\nThe center is excluded because the reciprocal is undefined. Therefore the statement is True.",
-    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be delivery distance in kilometres.\n\n$$10 + 2d \\le 75$$\n\n$$2d \\le 65$$\n\n$$d \\le 32.5$$\n\nDistances above 32.5 km miss the deadline, so 35 km is not always feasible.\n\n35 km needs 80 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nFactor both quadratics and order all four critical points.\n\n$$\\frac{(x-2)(x+2)}{(x-3)(x+3)}\\ge0$$\n\n$$-3,\\ -2,\\ 2,\\ 3$$\n\n$$x\\in(-\\infty,-3)\\cup[-2,2]\\cup(3,\\infty)$$\n\nNumerator zeros are included; denominator zeros are not. Therefore the statement is True."
+    "**A.** → True\n\nUnfolding the absolute value gives the closed interval.\n\nThe claim is True.",
+    "**B.** → True\n\nIts distance from the target equals the allowed radius.\n\nThe claim is True.",
+    "**C.** → False\n\nThe comfort rule is strict and excludes both endpoints.\n\nThe claim is False.",
+    "**D.** → True\n\nThis is the complement of the closed compliance interval.\n\nThe claim is True.",
+    "**E.** → False\n\nA non-strict exterior condition includes both boundary points.\n\nThe claim is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 105,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests four-critical-point rational sign chart; B tests closed interval under a downward parabola; C tests reciprocal absolute-value neighborhood; D tests a contextual inequality with all practical constraints; E tests even quadratic over even quadratic. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.3.\n\nShared solution:\n1. Use the single shared stem for topic 6.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared absolute-value band is read with careful endpoint logic.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Unfolding the absolute value gives the closed interval.\n5. A: The computed result makes this claim True.\n6. B: Its distance from the target equals the allowed radius.\n7. B: The computed result makes this claim True.\n8. C: The comfort rule is strict and excludes both endpoints.\n9. C: The computed result makes this claim False.\n10. D: This is the complement of the closed compliance interval.\n11. D: The computed result makes this claim True.\n12. E: A non-strict exterior condition includes both boundary points.\n13. E: The computed result makes this claim False.",
    "placeholder": false
   },
   {
    "id": "math-6-106",
    "case_id": "MATH 6.106",
-   "title": "Exam-style tasks — 18",
+   "title": "Exam-style tasks - 18",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A workshop has orders for at least 42 kits. Each kit uses 2 kg of material A, 3 kg of material B, and 1.5 labor hours. Available resources are 100 kg of A, 180 kg of B, and 72 labor hours. The production count must be a nonnegative integer and must satisfy every resource limit at the same time.",
    "statements": [
-    "The inequality $x(x-1)>2$ has solution set $(-\\infty,-1)\\cup(2,\\infty)$.",
-    "The inequality $|3x-2|\\le|x+4|$ has solution set $\\left[-\\dfrac12,3\\right]$.",
-    "A café mixes beans that cost 8 EUR/kg with beans that cost 14 EUR/kg. They use equal masses of each type. They claim that any batch of at least 6 kg of the blend (half and half) will have a total ingredient cost of at most 60 EUR. That claim is false.",
-    "The inequality $\\dfrac{x+1}{x^2+1}\\ge0$ has solution set $[-1,\\infty)$.",
-    "The inequality $-x^2+2x-5<0$ holds for every real $x$."
+    "Material A permits at most $50$ kits.",
+    "Material B permits at most $60$ kits.",
+    "Labor permits at most $48$ kits.",
+    "The overall production cap is $50$ kits.",
+    "The order minimum of $42$ kits is feasible."
    ],
    "answer_key": [
     true,
     true,
     true,
-    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nMove the threshold into the quadratic and factor.\n\n$$x^2-x-2>0$$\n\n$$(x+1)(x-2)>0$$\n\n$$x<-1\\quad\\text{or}\\quad x>2$$\n\nAn upward-opening quadratic is positive outside its roots. Therefore the statement is True.",
-    "**B.** → True\n\nBoth sides are nonnegative, so compare their squares.\n\n$$(3x-2)^2\\le(x+4)^2$$\n\n$$2x^2-5x-3\\le0$$\n\n$$(2x+1)(x-3)\\le0$$\n\n$$-\\frac12\\le x\\le3$$\n\nBoth equality points are included. Therefore the statement is True.",
-    "**C.** → True\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $M$ be the total mass of the blend in kilograms ($M > 0$).\n\nCost:\n\n$$\\dfrac{M}{2}\\cdot 8 + \\dfrac{M}{2}\\cdot 14 = 4M + 7M = 11M$$\n\n“At most 60 EUR” means $11M \\le 60$, so $M \\le \\dfrac{60}{11} \\approx 5.45$.\n\nBatches of at least 6 kg have $M \\ge 6 > 5.45$, so their cost is at least $11 \\cdot 6 = 66 > 60$ EUR.\n\nLarger batches cost more, not less. The café’s claim reverses the inequality direction.\n\nThe café claim is wrong, so our statement is true.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nThe quadratic denominator is strictly positive for every real input.\n\n$$x^2+1>0$$\n\n$$\\frac{x+1}{x^2+1}\\ge0\\iff x+1\\ge0$$\n\n$$x\\ge-1$$\n\nThe numerator zero is included. Therefore the statement is True.",
-    "**E.** → True\n\nComplete the square in a form that is visibly negative.\n\n$$-x^2+2x-5=-(x-1)^2-4$$\n\n$$-(x-1)^2-4\\le-4<0$$\n\nThe expression never reaches zero. Therefore the statement is True."
+    "**A.** → True\n\n$2n\\le100$ gives $n\\le50$.\n\nThe claim is True.",
+    "**B.** → True\n\n$3n\\le180$ gives $n\\le60$.\n\nThe claim is True.",
+    "**C.** → True\n\n$1.5n\\le72$ gives $n\\le48$.\n\nThe claim is True.",
+    "**D.** → False\n\nThe tightest of the three upper bounds is $48$.\n\nThe claim is False.",
+    "**E.** → True\n\nThe feasible integer range reaches $48$, and $42\\le48$.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 106,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests quadratic produced by a product threshold; B tests comparison of two absolute distances; C tests a contextual inequality with all practical constraints; D tests linear numerator over an always-positive quadratic; E tests globally negative quadratic. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.4.\n\nShared solution:\n1. Use the single shared stem for topic 6.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared production story requires intersecting three resource inequalities.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $2n\\le100$ gives $n\\le50$.\n5. A: The computed result makes this claim True.\n6. B: $3n\\le180$ gives $n\\le60$.\n7. B: The computed result makes this claim True.\n8. C: $1.5n\\le72$ gives $n\\le48$.\n9. C: The computed result makes this claim True.\n10. D: The tightest of the three upper bounds is $48$.\n11. D: The computed result makes this claim False.\n12. E: The feasible integer range reaches $48$, and $42\\le48$.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-107",
    "case_id": "MATH 6.107",
-   "title": "Exam-style tasks — 19",
+   "title": "Exam-style tasks - 19",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A control ratio is $R(x)=\\dfrac{x-5}{x+3}$. The input $x=-3$ is excluded because it makes the denominator zero, while $x=5$ is a zero of the ratio. Engineers use a sign chart across these two critical points to classify positive and nonpositive readings.",
    "statements": [
-    "The nested inequality $\\bigl||x|-3\\bigr|<1$ has solution set $(-4,-2)\\cup(2,4)$.",
-    "Ana has already burned 900 kcal and burns 8 kcal per minute of jogging. Three hours of jogging are enough to reach a weekly total of at least 2500 kcal.",
-    "The inequality $\\dfrac{x+3}{(x-1)^2(x-4)}\\ge0$ has solution set $(-\\infty,-3]\\cup(4,\\infty)$.",
-    "The inequality $(2x-1)(x+3)\\le0$ has solution set $\\left[-3,\\dfrac12\\right]$.",
-    "The inequality $|x^2-4|\\le3$ has solution set $[-\\sqrt7,-1]\\cup[1,\\sqrt7]$."
+    "$R(x)>0$ for $x<-3$ or $x>5$.",
+    "$x=-3$ belongs to the solution of $R(x)\\le0$.",
+    "$R(5)=0$.",
+    "$R(x)\\le0$ on $(-3,5]$.",
+    "$R(x)>1$ exactly when $x<-3$."
    ],
    "answer_key": [
     true,
@@ -3383,47 +3383,47 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nUnfold the outer modulus before resolving the inner one.\n\n$$\\bigl||x|-3\\bigr|<1\\iff -1<|x|-3<1$$\n\n$$2<|x|<4$$\n\n$$x\\in(-4,-2)\\cup(2,4)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
-    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be jogging minutes.\n\n$$900+8m\\ge 2500$$\n\n$$m\\ge 200$$\n\nAt $m=180$: total 2340 < 2500.\n\nNeed 200 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nThe repeated pole at $x=1$ does not change sign; the remaining linear factors control the chart.\n\n$$(x-1)^2>0\\quad(x\\ne1)$$\n\n$$\\frac{x+3}{x-4}\\ge0$$\n\n$$x\\in(-\\infty,-3]\\cup(4,\\infty)$$\n\nThe repeated pole lies in a rejected interval, while $x=4$ is always excluded. Therefore the statement is True.",
-    "**D.** → True\n\nThe two simple roots bound the nonpositive region.\n\n$$x=-3,\\qquad x=\\frac12$$\n\n$$(2x-1)(x+3)\\le0\\iff -3\\le x\\le\\frac12$$\n\nNon-strictness includes both roots. Therefore the statement is True.",
-    "**E.** → True\n\nUnfold the absolute value into a double inequality in $x^2$.\n\n$$-3\\le x^2-4\\le3$$\n\n$$1\\le x^2\\le7$$\n\n$$1\\le|x|\\le\\sqrt7$$\n\n$$x\\in[-\\sqrt7,-1]\\cup[1,\\sqrt7]$$\n\nAll four boundaries are included. Therefore the statement is True."
+    "**A.** → True\n\nNumerator and denominator have the same sign on the two outer intervals.\n\nThe claim is True.",
+    "**B.** → False\n\nThe pole is excluded from every solution set.\n\nThe claim is False.",
+    "**C.** → True\n\nThe numerator is zero and the denominator is nonzero.\n\nThe claim is True.",
+    "**D.** → True\n\nThe ratio is negative between pole and zero, then equals zero at the zero.\n\nThe claim is True.",
+    "**E.** → True\n\n$R-1=(-3-5)/(x+3)$, which is positive exactly below the pole.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 107,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests nested absolute-value band; B tests a contextual inequality with all practical constraints; C tests rational inequality with a repeated pole; D tests unequal linear factors; E tests absolute value of a quadratic. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.1.\n\nShared solution:\n1. Use the single shared stem for topic 6.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One rational sign chart controls all five claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Numerator and denominator have the same sign on the two outer intervals.\n5. A: The computed result makes this claim True.\n6. B: The pole is excluded from every solution set.\n7. B: The computed result makes this claim False.\n8. C: The numerator is zero and the denominator is nonzero.\n9. C: The computed result makes this claim True.\n10. D: The ratio is negative between pole and zero, then equals zero at the zero.\n11. D: The computed result makes this claim True.\n12. E: $R-1=(-3-5)/(x+3)$, which is positive exactly below the pole.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   },
   {
    "id": "math-6-108",
    "case_id": "MATH 6.108",
-   "title": "Exam-style tasks — 20",
+   "title": "Exam-style tasks - 20",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "A quality score is $Q(x)=-(x-5)(x-11)$. The process accepts settings with $Q(x)\\ge0$ and gives its highest score on the axis of symmetry. The roots, endpoint inclusion, and maximum must all be read from this same downward-opening quadratic.",
    "statements": [
-    "Four friends share a taxi with meter fare F EUR plus a 4 EUR booking fee. If each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR.",
-    "The inequality $\\dfrac{x^3-x}{x^2-1}\\ge0$ has solution set $[0,1)\\cup(1,\\infty)$.",
-    "The inequality $x^2+6x+8\\ge0$ has solution set $(-\\infty,-4]\\cup[-2,\\infty)$.",
-    "The inequality $|x+2|\\le x+4$ has solution set $[-3,\\infty)$.",
-    "A 180 km train trip must finish in at most 2.5 hours. Any constant average speed of at least 70 km/h is fast enough."
+    "The accepted settings are $[5,11]$.",
+    "$Q(8)=9$.",
+    "The maximum occurs at $x=8$.",
+    "$Q(x)>0$ includes $x=5$.",
+    "$Q(x)<0$ for $x<5$ or $x>11$."
    ],
    "answer_key": [
     true,
     true,
     true,
-    true,
-    false
+    false,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $F$ be meter fare.\n\n$$\\dfrac{F+4}{4}\\le 9$$\n\n$$F\\le 32$$\n\nEquivalent inequality.\n\nImplication holds.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → True\n\nCancel the common quadratic factor but retain both original holes.\n\n$$x\\ne\\pm1,\\qquad \\frac{x(x-1)(x+1)}{(x-1)(x+1)}=x$$\n\n$$x\\ge0$$\n\n$$x\\in[0,1)\\cup(1,\\infty)$$\n\nThe negative hole is outside the half-line; the positive hole splits it. Therefore the statement is True.",
-    "**C.** → True\n\nFactor the upward-opening quadratic and keep the outer regions.\n\n$$x^2+6x+8=(x+4)(x+2)$$\n\n$$(x+4)(x+2)\\ge0$$\n\n$$x\\le-4\\quad\\text{or}\\quad x\\ge-2$$\n\nBoth roots are included. Therefore the statement is True.",
-    "**D.** → True\n\nThe right side must be nonnegative before the two sides may be squared.\n\n$$x+4\\ge0$$\n\n$$(x+2)^2\\le(x+4)^2$$\n\n$$4x+12\\ge0$$\n\n$$x\\ge-3$$\n\nThis final half-line automatically satisfies the sign requirement. Therefore the statement is True.",
-    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $v>0$ be km/h.\n\n$$\\dfrac{180}{v}\\le 2.5$$\n\n$$v\\ge 72$$\n\nAt $v=70$, time ≈ $2.57 h > 2.5$.\n\nNeed at least 72 km/h.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nA downward-opening factored quadratic is nonnegative between its roots.\n\nThe claim is True.",
+    "**B.** → True\n\n$Q(8)=-(3)(-3)=9$.\n\nThe claim is True.",
+    "**C.** → True\n\nThe axis is the midpoint of the two roots.\n\nThe claim is True.",
+    "**D.** → False\n\nAt the root the score is zero, so strict positivity excludes it.\n\nThe claim is False.",
+    "**E.** → True\n\nThe quadratic is negative outside its roots.\n\nThe claim is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 108,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests two removable holes after cubic cancellation; C tests nonnegative quadratic outside two negative roots; D tests modulus bounded by an affine function; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Shared context topic 6.2.\n\nShared solution:\n1. Use the single shared stem for topic 6.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared quadratic sign model supplies interval and vertex facts.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(8)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True.",
    "placeholder": false
   }
  ]
