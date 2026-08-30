@@ -164,7 +164,31 @@ export default function MathParabolaSimulator() {
           dim ? "opacity-40" : "opacity-100",
         )}
       >
-        
+
+        <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
+          {/* LEFT */}
+          <article
+            ref={leftRef}
+            className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6"
+          >
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+              <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                {CASE.case_id}
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+                Difficulty {CASE.difficulty}
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+                Optimization
+              </span>
+              <span className="flex-1" />
+              {checked && (
+                <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground">
+                  <RotateCcw className="h-3 w-3" /> Reset task
+                </span>
+              )}
+            </div>
+
             <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
               {CASE.context}
             </p>
