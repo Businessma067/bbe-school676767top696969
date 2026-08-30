@@ -211,22 +211,23 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
         setFade(false);
         await wait(320);
 
-        // ---- feature demo ----
+        // ---- feature demo (kept snappy: no long cursor idling) ----
         if (subject === "economics") {
           await moveTo("[data-sim-timed]");
           await click();
           setTimed(true);
-          await pause(420);
+          await wait(160);
         } else if (subject === "math") {
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(true);
-          await pause(900);
+          await wait(500);
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(false);
-          await pause(200);
+          await wait(120);
         }
+
 
         // ---- phase 1: read the case, statements gently grow ----
         if (scrollRef.current) await smoothScroll(scrollRef.current, 90, 900);
