@@ -1,11 +1,18 @@
 /**
- * Chapter 5  -  Linear equations in two unknowns
+ * Chapter 5  -  Linear equations in two unknowns (subsections 5 and 5.5).
  * Structured prose + markdown tables from PDF (UI-native, no screenshots).
+ * 5.5 exam-style tasks from math-ch5-exam.json.
  */
 
 import type { MathTask } from "@/data/math-chapters";
+import ch5Exam from "@/data/math-ch5-exam.json";
 
-export const MATH_CH5_LINEAR_EQUATIONS: MathTask[] = [
+export const MATH_CH5_SUBSECTIONS = [
+  { id: "5", title: "Linear equations in two unknowns" },
+  { id: "5.5", title: "Exam-style tasks" },
+] as const;
+
+const MATH_CH5_CORE: MathTask[] = [
   {
     id: `math-5-1`,
     case_id: `MATH 5.01`,
@@ -6109,4 +6116,12 @@ versus 3,553 MWh recorded, a 10 MWh discrepancy.
 
 **Answer.** Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded).`,
   },
+];
+
+export const MATH_CH5_LINEAR_EQUATIONS: MathTask[] = [
+  ...MATH_CH5_CORE.map((task) => ({
+    ...task,
+    subsection: task.subsection ?? "5",
+  })),
+  ...(ch5Exam.tasks as MathTask[]),
 ];

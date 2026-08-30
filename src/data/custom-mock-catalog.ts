@@ -69,6 +69,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "1.2", title: "Set Operations, Complements & Counting" },
         { id: "1.3", title: "Propositional Logic & Implications" },
         { id: "1.4", title: "Quantifiers, Validity & Deduction" },
+        { id: "1.5", title: "Exam-style tasks" },
       ]),
     ),
     toChapterToc(
@@ -95,6 +96,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "3.5", title: "Annuities, Annuities Due & Perpetuities" },
         { id: "3.6", title: "Mortgage Repayments" },
         { id: "3.7", title: "Internal Rate of Return" },
+        { id: "3.8", title: "Exam-style tasks" },
       ]),
     ),
     toChapterToc(
@@ -113,7 +115,10 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       5,
       "Linear equations in two unknowns",
       "Chapter 5",
-      subs(5, [{ id: "5", title: "Linear equations in two unknowns" }]),
+      subs(5, [
+        { id: "5", title: "Linear equations in two unknowns" },
+        { id: "5.5", title: "Exam-style tasks" },
+      ]),
     ),
     toChapterToc(
       6,
@@ -131,7 +136,10 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       8,
       "Power functions",
       "Chapter 8",
-      subs(8, [{ id: "8", title: "Power functions" }]),
+      subs(8, [
+        { id: "8", title: "Power functions" },
+        { id: "8.5", title: "Exam-style tasks" },
+      ]),
     ),
     toChapterToc(
       11,
@@ -143,13 +151,17 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "12.3", title: "Conditional Probability" },
         { id: "12.4", title: "Expected Value, Variance & SD" },
         { id: "12.5", title: "Bayes' Theorem" },
+        { id: "12.6", title: "Exam-style tasks" },
       ]),
     ),
     toChapterToc(
       12,
       "Binomial distribution",
       "Chapter 12",
-      subs(12, [{ id: "12", title: "Binomial distribution" }]),
+      subs(12, [
+        { id: "13", title: "Binomial distribution" },
+        { id: "13.5", title: "Exam-style tasks" },
+      ]),
     ),
   ];
 }

@@ -1,11 +1,18 @@
 /**
- * Chapter 8 — Power functions (Sydsæter §4.8 style exam tasks).
- * BBE True/False bank: dry claims, multi-step recovery / scaling / composition.
+ * Chapter 8 — Power functions (subsections 8 and 8.5).
+ * Core bank: Sydsæter §4.8 style recovery / scaling / composition.
+ * 8.5 exam-style tasks from math-ch8-exam.json (textual mini-stems).
  */
 
 import type { MathTask } from "@/data/math-chapters";
+import ch8Exam from "@/data/math-ch8-exam.json";
 
-export const MATH_CH8_POWER_FUNCTIONS: MathTask[] = [
+export const MATH_CH8_SUBSECTIONS = [
+  { id: "8", title: "Power functions" },
+  { id: "8.5", title: "Exam-style tasks" },
+] as const;
+
+const MATH_CH8_CORE: MathTask[] = [
   {
     id: `math-8-1`,
     case_id: `MATH 8.01`,
@@ -7570,4 +7577,12 @@ The recovered law is $T(e)=8e^{\\frac{3}{2}}$.
 
 **Answer.** $A=8$ | $T(e)=8e^{\\frac{3}{2}}$`,
   },
+];
+
+export const MATH_CH8_POWER_FUNCTIONS: MathTask[] = [
+  ...MATH_CH8_CORE.map((task) => ({
+    ...task,
+    subsection: task.subsection ?? "8",
+  })),
+  ...(ch8Exam.tasks as MathTask[]),
 ];

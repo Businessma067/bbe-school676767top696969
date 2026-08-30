@@ -1,0 +1,644 @@
+{
+ "tasks": [
+  {
+   "id": "math-5-61",
+   "case_id": "MATH 5.61",
+   "title": "Exam-style tasks - 1",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A theater sold adult tickets at \\$12 and student tickets at \\$7. One evening it sold 240 tickets for a total of \\$2,310. Then exactly 126 adult tickets were sold.",
+    "A chemist mixes a 20% acid solution with a 50% acid solution to obtain 30 liters of a 32% acid solution. Then exactly 12 liters of the 50% solution are required.",
+    "The sum of two numbers is 47 and their difference is 15. The larger number is 31.",
+    "Adult tickets cost \\$18 and child tickets cost \\$11. Selling 85 tickets brought in \\$1,240. Then the number of adult tickets sold must have been 45.",
+    "A boat travels 24 km upstream in 3 hours and the same 24 km downstream in 2 hours. Then the still-water speed of the boat is exactly 10 km/h."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nLet $a$ be adult tickets and $s$ student tickets.\n\n$$a + s = 240$$\n\n$$12a + 7s = 2310$$\n\nSubstitute $s = 240 - a$:\n\n$$12a + 7(240 - a) = 2310$$\n\n$$12a + 1680 - 7a = 2310$$\n\n$$5a = 630$$\n\n$$a = 126$$\n\nThe claim matches the unique solution, so the statement is True.",
+    "**B.** → True\n\nLet $x$ be liters of the 20% solution and $y$ liters of the 50% solution.\n\n$$x + y = 30$$\n\n$$0.20x + 0.50y = 0.32 \\cdot 30 = 9.6$$\n\nWith $x = 30 - y$:\n\n$$0.20(30 - y) + 0.50y = 9.6$$\n\n$$6 - 0.20y + 0.50y = 9.6$$\n\n$$0.30y = 3.6$$\n\n$$y = 12$$\n\nExactly 12 liters of the 50% solution are required, so the statement is True.",
+    "**C.** → True\n\nLet $L$ be the larger number and $S$ the smaller.\n\n$$L + S = 47$$\n\n$$L - S = 15$$\n\nAdding gives\n\n$$2L = 62$$\n\n$$L = 31$$\n\nThe larger number is 31, so the statement is True.",
+    "**D.** → False\n\nLet $a$ be adult tickets and $c$ child tickets.\n\n$$a + c = 85$$\n\n$$18a + 11c = 1240$$\n\n$$c = 85 - a$$\n\n$$18a + 11(85 - a) = 1240$$\n\n$$18a + 935 - 11a = 1240$$\n\n$$7a = 305$$\n\n$$a = \\dfrac{305}{7} \\approx 43.57$$\n\nThat is not an integer ticket count. Checking $a = 45$:\n\n$$18(45) + 11(40) = 810 + 440 = 1250 \\ne 1240$$\n\nThe claim fails, so the statement is False.",
+    "**E.** → True\n\nLet $b$ be still-water speed and $c$ current speed in km/h.\n\n$$b - c = \\dfrac{24}{3} = 8$$\n\n$$b + c = \\dfrac{24}{2} = 12$$\n\nAdding:\n\n$$2b = 20$$\n\n$$b = 10$$\n\nThe still-water speed is exactly 10 km/h, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 61,
+   "solution_overview": "Ticket counts, acid mixture, sum-difference, non-integer ticket trap, and upstream/downstream speeds.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-62",
+   "case_id": "MATH 5.62",
+   "title": "Exam-style tasks - 2",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Anna is twice as old as Ben. In 6 years, Anna will be 1.5 times as old as Ben will be then. Anna is now 24 years old.",
+    "A jar holds nickels (\\$0.05) and dimes (\\$0.10). There are 40 coins worth \\$2.75 in total. Then there are exactly 25 nickels.",
+    "Two printers together produce 180 pages in 1 hour. Alone, printer A needs 3 hours for those 180 pages and printer B needs 2 hours. This pair of rate statements is consistent with the joint output.",
+    "A rectangle has perimeter 56 cm and the length is 4 cm more than the width. Then the area is exactly 192 $cm^{2}$.",
+    "Coffee A costs \\$8/kg and coffee B costs \\$12/kg. Mixing 5 kg of A with $y$ kg of B yields a blend costing exactly \\$9.50/kg. Then $y = 3$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\nLet Anna's age be $a$ and Ben's age $b$.\n\n$$a = 2b$$\n\n$$a + 6 = 1.5(b + 6)$$\n\n$$2b + 6 = 1.5b + 9$$\n\n$$0.5b = 3$$\n\n$$b = 6$$\n\n$$a = 12$$\n\nAnna is 12, not 24, so the statement is False.",
+    "**B.** → True\n\nLet $n$ be nickels and $d$ dimes.\n\n$$n + d = 40$$\n\n$$5n + 10d = 275$$\n\n(working in cents). Divide by 5:\n\n$$n + 2d = 55$$\n\nSubtract $n + d = 40$:\n\n$$d = 15$$\n\n$$n = 25$$\n\nThere are exactly 25 nickels, so the statement is True.",
+    "**C.** → False\n\nAlone, A produces $\\dfrac{180}{3} = 60$ pages/h and B produces $\\dfrac{180}{2} = 90$ pages/h. Together:\n\n$$60 + 90 = 150 \\ne 180$$\n\nThe joint claim contradicts the individual rates, so the statement is False.",
+    "**D.** → True\n\n$$2(\\ell + w) = 56$$\n\n$$\\ell + w = 28$$\n\n$$\\ell = w + 4$$\n\n$$2w + 4 = 28$$\n\n$$w = 12$$\n\n$$\\ell = 16$$\n\n$$\\ell w = 192$$\n\nThe area is 192 $cm^{2}$, so the statement is True.",
+    "**E.** → True\n\n$$\\dfrac{40 + 12y}{5 + y} = 9.5$$\n\n$$40 + 12y = 47.5 + 9.5y$$\n\n$$2.5y = 7.5$$\n\n$$y = 3$$\n\nExactly 3 kg of B are used, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 62,
+   "solution_overview": "Ages, coin values, inconsistent printer rates, rectangle area, and coffee blend cost.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-63",
+   "case_id": "MATH 5.63",
+   "title": "Exam-style tasks - 3",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A two-digit number equals 4 times the sum of its digits, and its units digit is twice its tens digit. If the tens digit is 2, then the number is 24.",
+    "Pens cost \\$p each and notebooks cost \\$n each. Two pens and three notebooks cost \\$21, while four pens and one notebook cost \\$17. Then $p = 3$ and $n = 5$ is the unique price pair.",
+    "An \\$8,000 investment is split between account A at 4% and account B at 6% simple annual interest, yielding \\$400 interest in one year. Then exactly \\$5,000 was placed in A.",
+    "A 40% antifreeze mix is combined with a 10% mix to make 20 liters of 25% antifreeze. Then exactly 10 liters of the 40% mix are used.",
+    "The linear system $2x + 3y = 12$ and $4x + 6y = 24$ has exactly one solution $(x, y)$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$10t + u = 4(t + u)$$\n\n$$6t = 3u$$\n\n$$u = 2t$$\n\nWith $t = 2$: $u = 4$, so the number is 24. The claim holds, so the statement is True.",
+    "**B.** → True\n\n$$2p + 3n = 21$$\n\n$$4p + n = 17$$\n\n$$n = 17 - 4p$$\n\n$$2p + 3(17 - 4p) = 21$$\n\n$$51 - 10p = 21$$\n\n$$p = 3$$\n\n$$n = 5$$\n\nThe determinant $2\\cdot 1 - 4\\cdot 3 = -10 \\ne 0$, so the solution is unique. so the statement is True.",
+    "**C.** → False\n\n$$A + B = 8000$$\n\n$$0.04A + 0.06B = 400$$\n\n$$0.04A + 0.06(8000 - A) = 400$$\n\n$$480 - 0.02A = 400$$\n\n$$A = 4000$$\n\nExactly \\$4,000 was placed in A, not \\$5,000, so the statement is False.",
+    "**D.** → True\n\n$$x + y = 20$$\n\n$$0.40x + 0.10y = 5$$\n\n$$0.40x + 0.10(20 - x) = 5$$\n\n$$2 + 0.30x = 5$$\n\n$$x = 10$$\n\nExactly 10 liters of the 40% mix are used, so the statement is True.",
+    "**E.** → False\n\nThe second equation is twice the first, so the equations describe the same line. There are infinitely many solutions, not exactly one. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 63,
+   "solution_overview": "Digit constraint, unique prices, interest split trap, antifreeze mix, dependent equations.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-64",
+   "case_id": "MATH 5.64",
+   "title": "Exam-style tasks - 4",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Three adult tickets and two child tickets cost \\$46. One adult ticket and four child tickets cost \\$32. Then an adult ticket costs exactly \\$12.",
+    "A two-digit number has digit sum 11, and the number exceeds its digit reversal by 27. The number is 74.",
+    "The system $2x + 3y = 50$ and $4x + 6y = 100$ has a unique solution.",
+    "Milk with 3% fat is mixed with milk with 5% fat to obtain 40 liters of 4.5% milk. Then exactly 10 liters of the 3% milk are used.",
+    "Worker A alone finishes a job in 6 hours and worker B alone finishes it in 12 hours. Working together they finish the job in under 3 hours."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$3a + 2c = 46$$\n\n$$a + 4c = 32$$\n\n$$a = 32 - 4c$$\n\n$$3(32 - 4c) + 2c = 46$$\n\n$$96 - 10c = 46$$\n\n$$c = 5$$\n\n$$a = 12$$\n\nAn adult ticket costs \\$12, so the statement is True.",
+    "**B.** → True\n\n$$t + u = 11$$\n\n$$9t - 9u = 27$$\n\n$$t - u = 3$$\n\n$$2t = 14$$\n\n$$t = 7$$\n\n$$u = 4$$\n\nThe number is 74, so the statement is True.",
+    "**C.** → False\n\nThe second equation is twice the first, so the equations are dependent. There is not a unique solution, so the statement is False.",
+    "**D.** → True\n\n$$x + y = 40$$\n\n$$0.03x + 0.05y = 1.8$$\n\n$$0.03x + 0.05(40 - x) = 1.8$$\n\n$$2 - 0.02x = 1.8$$\n\n$$x = 10$$\n\nExactly 10 liters of the 3% milk are used, so the statement is True.",
+    "**E.** → False\n\n$$\\dfrac{1}{6} + \\dfrac{1}{12} = \\dfrac{1}{4}$$\n\nTogether they need exactly 4 hours, which is not under 3. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 64,
+   "solution_overview": "Ticket prices, digit reversal, dependent system, milk-fat mixture, work-rate time.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-65",
+   "case_id": "MATH 5.65",
+   "title": "Exam-style tasks - 5",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Two single rooms and one double room cost \\$280. One single and three doubles cost \\$440. Then a single room costs \\$80.",
+    "A mother is three times as old as her daughter. In 12 years the mother will be twice as old as the daughter will be then. The mother is now 36.",
+    "The system $x + y = 10$ and $2x + 2y = 25$ has at least one real solution.",
+    "Two pens and three notebooks cost \\$22. One pen and two notebooks cost \\$13. Then a pen costs \\$5.",
+    "A warehouse holds $x$ crates of type A and $y$ crates of type B with $3x + 5y = 100$ and $x + 2y = 35$. Then $x = 25$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$2s + d = 280$$\n\n$$s + 3d = 440$$\n\n$$d = 280 - 2s$$\n\n$$s + 3(280 - 2s) = 440$$\n\n$$840 - 5s = 440$$\n\n$$s = 80$$\n\nA single room costs \\$80, so the statement is True.",
+    "**B.** → True\n\n$$m = 3d$$\n\n$$m + 12 = 2(d + 12)$$\n\n$$3d + 12 = 2d + 24$$\n\n$$d = 12$$\n\n$$m = 36$$\n\nThe mother is now 36, so the statement is True.",
+    "**C.** → False\n\nTwice the first equation is $2x + 2y = 20 \\ne 25$. The system is inconsistent, so the statement is False.",
+    "**D.** → True\n\n$$2p + 3n = 22$$\n\n$$p + 2n = 13$$\n\n$$p = 13 - 2n$$\n\n$$2(13 - 2n) + 3n = 22$$\n\n$$26 - n = 22$$\n\n$$n = 4$$\n\n$$p = 5$$\n\nA pen costs \\$5, so the statement is True.",
+    "**E.** → True\n\n$$x = 35 - 2y$$\n\n$$3(35 - 2y) + 5y = 100$$\n\n$$105 - y = 100$$\n\n$$y = 5$$\n\n$$x = 25$$\n\nThus $x = 25$, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 65,
+   "solution_overview": "Hotel rates, mother/daughter ages, inconsistent system, pen prices, warehouse inventory.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-66",
+   "case_id": "MATH 5.66",
+   "title": "Exam-style tasks - 6",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A vendor sells apples at \\$2/kg and oranges at \\$3/kg. Selling 15 kg of fruit brings \\$36. Then exactly 9 kg of apples were sold.",
+    "Plane speed in still air is $p$ km/h and wind speed is $w$ km/h. A 900 km trip takes 3 hours with the wind and 5 hours against the wind. Then $p = 240$.",
+    "The lines $3x - y = 7$ and $6x - 2y = 10$ intersect at exactly one point.",
+    "A 70% alcohol solution is diluted with pure water (0%) to make 14 liters of 40% alcohol. Then 8 liters of the 70% solution are used.",
+    "Break-even for products A and B: contribution margins \\$5 and \\$8, fixed cost \\$200, and total units sold $x + y = 30$ with $5x + 8y = 200$. Then exactly 10 units of A are sold at break-even."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$a + o = 15$$\n\n$$2a + 3o = 36$$\n\n$$2a + 3(15 - a) = 36$$\n\n$$45 - a = 36$$\n\n$$a = 9$$\n\nExactly 9 kg of apples were sold, so the statement is True.",
+    "**B.** → True\n\n$$p + w = 300$$\n\n$$p - w = 180$$\n\n$$2p = 480$$\n\n$$p = 240$$\n\nStill-air speed is 240 km/h, so the statement is True.",
+    "**C.** → False\n\nTwice the first equation is $6x - 2y = 14 \\ne 10$. The lines are parallel and distinct, so they do not intersect. so the statement is False.",
+    "**D.** → True\n\n$$0.70x = 0.40 \\cdot 14 = 5.6$$\n\n$$x = 8$$\n\nExactly 8 liters of the 70% solution are used, so the statement is True.",
+    "**E.** → False\n\n$$5x + 8(30 - x) = 200$$\n\n$$240 - 3x = 200$$\n\n$$x = \\dfrac{40}{3} \\approx 13.33 \\ne 10$$\n\nChecking $x = 10$: $50 + 160 = 210 \\ne 200$. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 66,
+   "solution_overview": "Fruit mix, wind-assisted flight, parallel lines, alcohol dilution, non-integer break-even.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-67",
+   "case_id": "MATH 5.67",
+   "title": "Exam-style tasks - 7",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A collection of 50-cent and 20-cent stamps has 18 stamps worth \\$6.60 in total. Then there are exactly 10 of the 50-cent stamps.",
+    "The system $x + 2y = 14$ and $3x - y = 7$ has solution $x = 4$, $y = 5$.",
+    "A canoeist rows 12 km upstream in 4 hours and 12 km downstream in 1.5 hours. The current speed is 2.5 km/h.",
+    "Two adult and three student tickets cost \\$31; four adult and one student ticket cost \\$27. An adult ticket costs \\$5.",
+    "The system $x - y = 4$ and $2x - 2y = 8$ has infinitely many solutions."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$f + t = 18$$\n\n$$50f + 20t = 660$$\n\n$$5f + 2(18 - f) = 66$$\n\n$$3f + 36 = 66$$\n\n$$f = 10$$\n\nExactly 10 of the 50-cent stamps, so the statement is True.",
+    "**B.** → True\n\n$$y = 3x - 7$$\n\n$$x + 2(3x - 7) = 14$$\n\n$$7x - 14 = 14$$\n\n$$x = 4$$\n\n$$y = 5$$\n\nThe solution is $(4, 5)$, so the statement is True.",
+    "**C.** → True\n\n$$b - c = 3$$\n\n$$b + c = 8$$\n\n$$2c = 5$$\n\n$$c = 2.5$$\n\nThe current is 2.5 km/h, so the statement is True.",
+    "**D.** → True\n\n$$2a + 3s = 31$$\n\n$$4a + s = 27$$\n\n$$s = 27 - 4a$$\n\n$$2a + 3(27 - 4a) = 31$$\n\n$$81 - 10a = 31$$\n\n$$a = 5$$\n\nAn adult ticket costs \\$5, so the statement is True.",
+    "**E.** → True\n\nThe second equation is twice the first, so they describe the same line. There are infinitely many solutions, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 67,
+   "solution_overview": "Stamps, linear solve, canoe current, ticket prices, dependent equations.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-68",
+   "case_id": "MATH 5.68",
+   "title": "Exam-style tasks - 8",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A factory makes desks costing \\$40 to produce and chairs costing \\$25. Producing 12 desks and some chairs costs \\$730 in total. Then exactly 10 chairs were produced.",
+    "Kai is 5 years older than Lia. Five years ago, Kai was twice as old as Lia was then. Kai is now 15.",
+    "Mixing 2 kg of nuts at \\$9/kg with $m$ kg of dried fruit at \\$6/kg yields a mix worth \\$7.50/kg. Then $m = 2$.",
+    "The system $5x + 2y = 19$ and $3x - 2y = 5$ has solution $x = 3$, $y = 2$.",
+    "The inventory equation $4x + 6y = 48$ forces a unique pair $(x, y)$ of whole-number stock units."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$480 + 25c = 730$$\n\n$$c = 10$$\n\nExactly 10 chairs, so the statement is True.",
+    "**B.** → True\n\n$$k = \\ell + 5$$\n\n$$k - 5 = 2(\\ell - 5)$$\n\n$$\\ell = 2\\ell - 10$$\n\n$$\\ell = 10$$\n\n$$k = 15$$\n\nKai is now 15, so the statement is True.",
+    "**C.** → True\n\n$$\\dfrac{18 + 6m}{2 + m} = 7.5$$\n\n$$18 + 6m = 15 + 7.5m$$\n\n$$m = 2$$\n\nThus $m = 2$, so the statement is True.",
+    "**D.** → True\n\nAdding the equations: $8x = 24$, so $x = 3$ and $y = 2$. so the statement is True.",
+    "**E.** → False\n\n$$2x + 3y = 24$$ is one constraint on two variables. Whole-number solutions include $(0,8)$, $(3,6)$, $(6,4)$, $(9,2)$, $(12,0)$. Not unique, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 68,
+   "solution_overview": "Production cost, ages, nut-fruit blend, elimination solve, underdetermined inventory.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-69",
+   "case_id": "MATH 5.69",
+   "title": "Exam-style tasks - 9",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A taxi charges flag drop \\$F$ plus \\$r$ per km. An 8 km ride costs \\$18 and a 15 km ride costs \\$29. Then $F = 6$ and $r = 1.5$.",
+    "Two investments totaling \\$12,000 earn 5% and 8%. Total annual interest is \\$750. Then \\$7,000 is in the 5% account.",
+    "A rectangle's length is thrice its width and its perimeter is 64 m. The area is 192 $m^{2}$.",
+    "Solution A is 15% acid and B is 45% acid. Mixing them to get 24 L of 25% acid uses more than 15 L of A.",
+    "The equations $x + y = 9$ and $2x + 2y = 18$ describe the same line, so every pair with $x + y = 9$ is a solution."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\n$$F + 8r = 18$$\n\n$$F + 15r = 29$$\n\n$$7r = 11$$\n\n$$r = \\dfrac{11}{7}$$\n\n$$F = \\dfrac{38}{7}$$\n\nThe pair $(6, 1.5)$ fails the second ride ($28.5 \\ne 29$), so the statement is False.",
+    "**B.** → True\n\n$$0.05x + 0.08(12000 - x) = 750$$\n\n$$960 - 0.03x = 750$$\n\n$$x = 7000$$\n\nExactly \\$7,000 is in the 5% account, so the statement is True.",
+    "**C.** → True\n\n$$2(3w + w) = 64$$\n\n$$w = 8$$\n\n$$\\ell = 24$$\n\nArea $192$, so the statement is True.",
+    "**D.** → True\n\n$$0.15a + 0.45(24 - a) = 6$$\n\n$$10.8 - 0.30a = 6$$\n\n$$a = 16 > 15$$\n\nMore than 15 L of A are used, so the statement is True.",
+    "**E.** → True\n\nThe second equation is twice the first, so every pair with $x + y = 9$ works. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 69,
+   "solution_overview": "Taxi fare trap, interest allocation, 3:1 rectangle, acid mix threshold, dependent equations.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-70",
+   "case_id": "MATH 5.70",
+   "title": "Exam-style tasks - 10",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A boat travels at still-water speed 15 km/h. Going 30 km upstream takes 3 hours. Then the current is 5 km/h, and returning the same 30 km downstream takes exactly 1.5 hours under that current.",
+    "Two sandwiches and one drink cost \\$11; one sandwich and two drinks cost \\$13. A sandwich costs \\$3.",
+    "The system $3x + y = 10$ and $6x + 2y = 15$ has infinitely many solutions.",
+    "A 40-question exam awards 4 points per correct answer and subtracts 1 point per wrong answer (every question answered). A score of 95 means exactly 27 answers were correct.",
+    "Four short 3 m rods and two long 5 m rods use 22 m of stock in total. Then one short and five long rods use more than 28 m of stock."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$15 - c = 10 \\Rightarrow c = 5$$\n\nDownstream: $\\dfrac{30}{20} = 1.5$ hours. Both parts hold, so the statement is True.",
+    "**B.** → True\n\n$$2s + d = 11$$\n\n$$s + 2d = 13$$\n\n$$4s + 2d = 22$$\n\n$$3s = 9$$\n\n$$s = 3$$\n\nA sandwich costs \\$3, so the statement is True.",
+    "**C.** → False\n\nTwice the first would be $6x + 2y = 20 \\ne 15$. Parallel distinct lines: no solutions, not infinitely many. so the statement is False.",
+    "**D.** → True\n\n$$4c - (40 - c) = 95$$\n\n$$5c = 135$$\n\n$$c = 27$$\n\nExactly 27 correct, so the statement is True.",
+    "**E.** → False\n\n$$3 + 25 = 28$$\n\nmeters, which is not more than 28. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 70,
+   "solution_overview": "Upstream current check, lunch prices, parallel inconsistent system, exam scoring, rod-length comparison.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-71",
+   "case_id": "MATH 5.71",
+   "title": "Exam-style tasks - 11",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A merchant mixes tea worth \\$4/kg with tea worth \\$7/kg to get 30 kg worth \\$5.20/kg. Then 18 kg of the cheaper tea are used.",
+    "Two numbers sum to 100. Twice the first plus three times the second equals 250. The first number is 50.",
+    "Car A travels 20 km/h faster than car B. Together they cover 300 km in the same 3 hours heading in opposite directions from one point. Then car B's speed is 40 km/h.",
+    "The system $x = 2y + 1$ and $3x - 6y = 4$ has a unique real solution.",
+    "Printer ink: 2 black + 1 color cartridge cost \\$45; 1 black + 3 color cost \\$55. A color cartridge costs \\$15."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$4c + 7(30 - c) = 156$$\n\n$$210 - 3c = 156$$\n\n$$c = 18$$\n\nExactly 18 kg of the cheaper tea, so the statement is True.",
+    "**B.** → True\n\n$$2x + 3(100 - x) = 250$$\n\n$$300 - x = 250$$\n\n$$x = 50$$\n\nThe first number is 50, so the statement is True.",
+    "**C.** → True\n\n$$3b + 3(b + 20) = 300$$\n\n$$6b = 240$$\n\n$$b = 40$$\n\nCar B's speed is 40 km/h, so the statement is True.",
+    "**D.** → False\n\n$$3(2y + 1) - 6y = 4$$\n\n$$3 = 4$$\n\nContradiction: no solution exists. so the statement is False.",
+    "**E.** → False\n\n$$2(55 - 3c) + c = 45$$\n\n$$110 - 5c = 45$$\n\n$$c = 13 \\ne 15$$\n\nso the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 71,
+   "solution_overview": "Tea blend, linear number pair, opposite cars, inconsistent system, ink cartridge prices.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-72",
+   "case_id": "MATH 5.72",
+   "title": "Exam-style tasks - 12",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A theater sold 120 tickets. Adult tickets are \\$15 and child tickets \\$9, totaling \\$1,500. Then 75 adult tickets were sold.",
+    "Two kg of alloy A and three kg of alloy B cost \\$28; four kg of A and one kg of B cost \\$26. Then alloy A costs \\$5 per kg.",
+    "A 12 km trip walking takes 2 hours more than cycling the same distance. Cycling speed is three times walking speed. Then walking speed is 4 km/h.",
+    "The pair $(x, y) = (2, 5)$ solves both $3x + 2y = 16$ and $x - y = -3$.",
+    "The system $2x - y = 5$ and $4x - 2y = 11$ has a real solution."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\n$$15a + 9(120 - a) = 1500$$\n\n$$6a = 420$$\n\n$$a = 70 \\ne 75$$\n\nso the statement is False.",
+    "**B.** → True\n\n$$B = 26 - 4A$$\n\n$$2A + 3(26 - 4A) = 28$$\n\n$$78 - 10A = 28$$\n\n$$A = 5$$\n\nAlloy A costs \\$5/kg, so the statement is True.",
+    "**C.** → True\n\n$$\\dfrac{12}{w} - \\dfrac{12}{3w} = 2$$\n\n$$\\dfrac{8}{w} = 2$$\n\n$$w = 4$$\n\nWalking speed is 4 km/h, so the statement is True.",
+    "**D.** → True\n\n$$3(2) + 2(5) = 16$$\n\n$$2 - 5 = -3$$\n\nBoth hold, so the statement is True.",
+    "**E.** → False\n\nTwice the first gives $4x - 2y = 10 \\ne 11$. No solution. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 72,
+   "solution_overview": "Ticket overcount trap, alloy prices, walk vs cycle, point verification, inconsistent parallel system.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-73",
+   "case_id": "MATH 5.73",
+   "title": "Exam-style tasks - 13",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A piggy bank has \\$1 and \\$5 coins. Thirty coins total \\$78. Then there are exactly 12 of the \\$5 coins.",
+    "Supply and demand curves $p = 40 - 2q$ and $p = 10 + q$ meet at equilibrium quantity $q = 10$.",
+    "Three tulip packs and two daffodil packs cost \\$26; one tulip and four daffodil packs cost \\$22. A tulip pack costs \\$6.",
+    "The only real solution of $x + y = 7$ and $2x + 3y = 18$ is $(x, y) = (3, 4)$.",
+    "Mixing 40% and 70% acid to get 50 L of 52% acid uses 30 L of the 40% acid."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$30 - f + 5f = 78$$\n\n$$4f = 48$$\n\n$$f = 12$$\n\nExactly 12 of the \\$5 coins, so the statement is True.",
+    "**B.** → True\n\n$$40 - 2q = 10 + q$$\n\n$$q = 10$$\n\nEquilibrium quantity is 10, so the statement is True.",
+    "**C.** → True\n\n$$t = 22 - 4d$$\n\n$$3(22 - 4d) + 2d = 26$$\n\n$$66 - 10d = 26$$\n\n$$d = 4$$\n\n$$t = 6$$\n\nA tulip pack costs \\$6, so the statement is True.",
+    "**D.** → True\n\n$$2x + 3(7 - x) = 18$$\n\n$$21 - x = 18$$\n\n$$x = 3$$\n\n$$y = 4$$\n\nThe unique solution is $(3, 4)$, so the statement is True.",
+    "**E.** → True\n\n$$0.4x + 0.7(50 - x) = 26$$\n\n$$35 - 0.3x = 26$$\n\n$$x = 30$$\n\nExactly 30 L of the 40% acid, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 73,
+   "solution_overview": "Coins, market equilibrium, garden packs, unique linear solution, acid blend.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-74",
+   "case_id": "MATH 5.74",
+   "title": "Exam-style tasks - 14",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A ferry crosses 20 km with the current in 1 hour and against the current in 2.5 hours. Still-water speed is 14 km/h.",
+    "Laptop price $L$ and tablet price $T$ satisfy $2L + T = 2800$ and $L + 3T = 2400$. Then $L = 1200$.",
+    "Nonnegative integers $x, y$ satisfy $x + 2y = 11$ and $3x + y = 18$. Then $(x, y) = (5, 3)$ is the unique solution in nonnegative integers.",
+    "A 25% saline solution and an 80% saline solution make 10 kg of 40% saline. More than 7 kg of the 25% solution are needed.",
+    "The lines $y = 2x + 1$ and $y = 2x - 4$ intersect in the first quadrant."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$b + c = 20$$\n\n$$b - c = 8$$\n\n$$b = 14$$\n\nStill-water speed is 14 km/h, so the statement is True.",
+    "**B.** → True\n\n$$T = 2800 - 2L$$\n\n$$L + 3(2800 - 2L) = 2400$$\n\n$$8400 - 5L = 2400$$\n\n$$L = 1200$$\n\nThus $L = 1200$, so the statement is True.",
+    "**C.** → True\n\n$$x = 11 - 2y$$\n\n$$3(11 - 2y) + y = 18$$\n\n$$33 - 5y = 18$$\n\n$$y = 3$$\n\n$$x = 5$$\n\nUnique nonnegative integer solution $(5, 3)$, so the statement is True.",
+    "**D.** → True\n\n$$0.25x + 0.80(10 - x) = 4$$\n\n$$8 - 0.55x = 4$$\n\n$$x = \\dfrac{80}{11} \\approx 7.27 > 7$$\n\nMore than 7 kg of the 25% solution are needed, so the statement is True.",
+    "**E.** → False\n\n$2x + 1 = 2x - 4$ is impossible. Parallel lines never intersect. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 74,
+   "solution_overview": "Ferry current, device prices, integer system, saline mix threshold, parallel lines.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-75",
+   "case_id": "MATH 5.75",
+   "title": "Exam-style tasks - 15",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A bakery sells muffins at \\$2 and cookies at \\$1.50. Selling 40 items brings \\$70. Then exactly 20 muffins were sold.",
+    "Two passenger cars and one freight car weigh 85 tons; one passenger and three freight cars weigh 105 tons. A passenger car weighs 30 tons.",
+    "Two ages sum to 50 and differ by 8. The older age is 29.",
+    "The equations $3x + 5y = 60$ and $6x + 10y = 120$ admit infinitely many real solutions.",
+    "A chemist needs 8 L of 30% acid using 20% and 50% stock. Then 5 L of the 20% stock and 3 L of the 50% stock work."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$2m + 1.5(40 - m) = 70$$\n\n$$60 + 0.5m = 70$$\n\n$$m = 20$$\n\nExactly 20 muffins, so the statement is True.",
+    "**B.** → True\n\n$$p = 105 - 3f$$\n\n$$2(105 - 3f) + f = 85$$\n\n$$210 - 5f = 85$$\n\n$$f = 25$$\n\n$$p = 30$$\n\nA passenger car weighs 30 tons, so the statement is True.",
+    "**C.** → True\n\n$$L + S = 50$$\n\n$$L - S = 8$$\n\n$$L = 29$$\n\nThe older age is 29, so the statement is True.",
+    "**D.** → True\n\nThe second equation is twice the first, so they describe one line. Infinitely many solutions exist, so the statement is True.",
+    "**E.** → False\n\n$$0.2\\cdot 5 + 0.5\\cdot 3 = 2.5 \\ne 0.3\\cdot 8 = 2.4$$\n\nSolving: $0.2x + 0.5(8 - x) = 2.4$ gives $x = \\dfrac{16}{3} \\approx 5.33$, not 5. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 75,
+   "solution_overview": "Bakery mix, railcar weights, age sum-difference, dependent revenue line, acid volume trap.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-76",
+   "case_id": "MATH 5.76",
+   "title": "Exam-style tasks - 16",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Five cars and three motorcycles pay \\$39 in parking; two cars and six motorcycles pay \\$30. Then a car's fee is \\$6.",
+    "A phone plan has monthly fee $F$ plus rate $r$ per minute. Forty minutes cost \\$18 and one hundred minutes cost \\$30. Then $r = 0.20$.",
+    "An isosceles triangle has equal sides $s$, base $b$, perimeter 50, and $s = 2b$. Then $s = 20$.",
+    "The system $x + 2y = 7$ and $2x + 4y = 10$ has no real solution.",
+    "Apples cost \\$2.50/kg and pears \\$3.50/kg. Buying 6 kg total for \\$18 means exactly 4 kg of apples were bought."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$c + 3m = 15$$\n\n$$5(15 - 3m) + 3m = 39$$\n\n$$75 - 12m = 39$$\n\n$$m = 3$$\n\n$$c = 6$$\n\nA car's fee is \\$6, so the statement is True.",
+    "**B.** → True\n\n$$60r = 12$$\n\n$$r = 0.20$$\n\nThe per-minute rate is \\$0.20, so the statement is True.",
+    "**C.** → True\n\n$$2(2b) + b = 50$$\n\n$$b = 10$$\n\n$$s = 20$$\n\nThus $s = 20$, so the statement is True.",
+    "**D.** → True\n\nTwice the first is $2x + 4y = 14 \\ne 10$. No real solution, so the statement is True.",
+    "**E.** → False\n\n$$2.5a + 3.5(6 - a) = 18$$\n\n$$a = 3 \\ne 4$$\n\nso the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 76,
+   "solution_overview": "Parking fees, phone plan rate, isosceles perimeter, inconsistent system, fruit purchase trap.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-77",
+   "case_id": "MATH 5.77",
+   "title": "Exam-style tasks - 17",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A lab mixes protein powder at 80% protein with filler at 10% protein to make 14 kg of 50% protein mix. Then 8 kg of the 80% powder are used.",
+    "Two machines print $x$ and $y$ pages/min with $x + y = 25$ and $3x - y = 35$. Then $x = 15$.",
+    "Twelve bills of \\$5 and \\$10 total \\$95. Then there are seven \\$10 bills.",
+    "Selling $x$ of product A (contribution \\$5) and $y$ of B (contribution \\$6) with fixed cost \\$150 and $x + y = 40$ reaches break-even when $5x + 6y = 150$. Then $x = 30$ at break-even under that unit total.",
+    "The lines $x + y = 4$ and $2x + 2y = 9$ have infinitely many intersection points."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$0.8p + 0.1(14 - p) = 7$$\n\n$$1.4 + 0.7p = 7$$\n\n$$p = 8$$\n\nExactly 8 kg of the 80% powder, so the statement is True.",
+    "**B.** → True\n\nAdding $x + y = 25$ and $3x - y = 35$ gives $4x = 60$, so $x = 15$. so the statement is True.",
+    "**C.** → True\n\n$$5(12 - t) + 10t = 95$$\n\n$$60 + 5t = 95$$\n\n$$t = 7$$\n\nThere are seven \\$10 bills, so the statement is True.",
+    "**D.** → False\n\n$$5x + 6(40 - x) = 150$$\n\n$$240 - x = 150$$\n\n$$x = 90$$\n\nWhich contradicts $x + y = 40$ with $y \\ge 0$. Break-even is impossible under that unit total, so $x = 30$ fails. so the statement is False.",
+    "**E.** → False\n\nTwice $x + y = 4$ is $2x + 2y = 8 \\ne 9$. No intersection. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 77,
+   "solution_overview": "Protein blend, machine speeds, bill counts, break-even impossibility, parallel lines.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-78",
+   "case_id": "MATH 5.78",
+   "title": "Exam-style tasks - 18",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A river cruise goes 36 km downstream in 2 hours and returns upstream in 3 hours. Still-water speed is 15 km/h.",
+    "Adult tickets cost \\$12 and student tickets \\$8. Revenue \\$1,040 from 100 tickets means 65 adult tickets were sold.",
+    "The system $5x - 2y = 4$ and $x + 2y = 8$ has solution $(x, y) = (2, 3)$.",
+    "A 10% sugar syrup and a 25% sugar syrup make 15 L of 18% syrup. Then 7 L of the 10% syrup are used.",
+    "Every pair of the form $(t,\\, 5 - 2t)$ solves both $2x + y = 5$ and $4x + 2y = 10$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$b + c = 18$$\n\n$$b - c = 12$$\n\n$$b = 15$$\n\nStill-water speed is 15 km/h, so the statement is True.",
+    "**B.** → False\n\n$$12a + 8(100 - a) = 1040$$\n\n$$4a = 240$$\n\n$$a = 60 \\ne 65$$\n\nso the statement is False.",
+    "**C.** → True\n\nAdding gives $6x = 12$, so $x = 2$ and $y = 3$. so the statement is True.",
+    "**D.** → True\n\n$$0.10x + 0.25(15 - x) = 2.7$$\n\n$$3.75 - 0.15x = 2.7$$\n\n$$x = 7$$\n\nExactly 7 L of the 10% syrup, so the statement is True.",
+    "**E.** → True\n\nFor $x = t$, $y = 5 - 2t$, both equations hold identically for every real $t$. so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 78,
+   "solution_overview": "River cruise, fundraiser ticket trap, elimination solve, sugar syrup, parametric dependent solutions.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-79",
+   "case_id": "MATH 5.79",
+   "title": "Exam-style tasks - 19",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A workshop uses $x$ hours of machine A and $y$ hours of machine B with $2x + 3y = 30$ and $x + y = 12$. Then $x = 6$.",
+    "A two-digit number has tens digit 3 more than its units digit, and the number equals 7 times the sum of its digits. The number is 63.",
+    "Four burritos and two drinks cost \\$22; one burrito and three drinks cost \\$13. A burrito costs \\$4.",
+    "Combining some positive amounts of a 20% acid solution and a 30% acid solution can produce a 40% acid solution.",
+    "Pump A fills a tank in 4 hours and pump B fills it in 6 hours. Working together they fill the tank in under 2.5 hours."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$2x + 3(12 - x) = 30$$\n\n$$36 - x = 30$$\n\n$$x = 6$$\n\nThus $x = 6$, so the statement is True.",
+    "**B.** → True\n\n$$t = u + 3$$\n\n$$10(u + 3) + u = 7(2u + 3)$$\n\n$$11u + 30 = 14u + 21$$\n\n$$u = 3$$\n\n$$t = 6$$\n\nThe number is 63, so the statement is True.",
+    "**C.** → True\n\n$$2b + d = 11$$\n\n$$b + 3(11 - 2b) = 13$$\n\n$$33 - 5b = 13$$\n\n$$b = 4$$\n\nA burrito costs \\$4, so the statement is True.",
+    "**D.** → False\n\nAny mixture of 20% and 30% acid has concentration between 20% and 30%. Reaching 40% is impossible. so the statement is False.",
+    "**E.** → True\n\n$$\\dfrac{1}{4} + \\dfrac{1}{6} = \\dfrac{5}{12}$$\n\n$$T = 2.4 < 2.5$$\n\nTogether they finish in under 2.5 hours, so the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 79,
+   "solution_overview": "Machine hours, digit number, burrito prices, impossible mixture concentration, pump rates.",
+   "placeholder": false
+  },
+  {
+   "id": "math-5-80",
+   "case_id": "MATH 5.80",
+   "title": "Exam-style tasks - 20",
+   "subsection": "5.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A bookstore sells hardcovers at \\$28 and paperbacks at \\$12. Forty books bring \\$720. Then 15 hardcovers were sold.",
+    "An aircraft flies 500 km with the wind in 2 hours and 500 km against the wind in 2.5 hours. The wind speed is 25 km/h.",
+    "The system $x - 3y = -1$ and $2x + y = 12$ has solution $(x, y) = (5, 2)$.",
+    "Shelf weights satisfy $3A + 5B = 47$ and $4A + 2B = 34$. Then type A weighs 5 units.",
+    "If $3x + 4y = 18$ and $6x + 8y = 36$, then the solution set is empty."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$28h + 12(40 - h) = 720$$\n\n$$16h + 480 = 720$$\n\n$$h = 15$$\n\nExactly 15 hardcovers, so the statement is True.",
+    "**B.** → True\n\n$$p + w = 250$$\n\n$$p - w = 200$$\n\n$$w = 25$$\n\nWind speed is 25 km/h, so the statement is True.",
+    "**C.** → True\n\n$$y = 12 - 2x$$\n\n$$x - 3(12 - 2x) = -1$$\n\n$$7x = 35$$\n\n$$x = 5$$\n\n$$y = 2$$\n\nThe solution is $(5, 2)$, so the statement is True.",
+    "**D.** → False\n\n$$B = 17 - 2A$$\n\n$$3A + 5(17 - 2A) = 47$$\n\n$$85 - 7A = 47$$\n\n$$A = \\dfrac{38}{7} \\approx 5.43 \\ne 5$$\n\nso the statement is False.",
+    "**E.** → False\n\nThe second equation is twice the first, so the solution set is infinite, not empty. so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 80,
+   "solution_overview": "Bookstore mix, wind speed, linear solution check, shelf-weight trap, dependent system misread as empty.",
+   "placeholder": false
+  }
+ ]
+}
