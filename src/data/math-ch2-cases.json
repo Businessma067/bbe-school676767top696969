@@ -362,7 +362,7 @@
    "statements": [
     "For all real values in $(x+y+z)^2$, subtracting $x^2+y^2+z^2$ from the expansion leaves $xy+yz+zx$.",
     "The inequality $x^2+xy\\ge xy+y^2$ holds for every real pair $(x,y)$.",
-    "For every real value where defined, it holds that $(a+b)^3-(a^3+b^3)=identically zero$.",
+    "For every real value where defined, it holds that $(a+b)^3-(a^3+b^3)$ is identically zero.",
     "The sum of the fourth power of $f$ and four times the fourth power of $g$ equals the square of $f^2+2g^2$ for every real pair $(f,g)$.",
     "For every real pair $(a,b)$, it holds that $(a+b)^3-(a-b)^3=2b(3a^2+b^2)$."
    ],

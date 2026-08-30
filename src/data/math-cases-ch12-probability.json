@@ -4518,13 +4518,13 @@
    "id": "math-12-144",
    "case_id": "MATH 12.144",
    "title": "The Vending Machine Puzzle",
-   "context": "A vending machine dispenses a prize X worth $0, \\$5, or \\$10, with X equals 0 with probability p, X equals 5 with probability 0.4, and X equals 10 with probability 0.6 minus p, for some unknown p. It is given that the variance of X equals 10, and separately that winning $0 is less likely than winning \\$10.",
+   "context": "A vending machine dispenses a prize X worth \\$0, \\$5, or \\$10, with X equals 0 with probability p, X equals 5 with probability 0.4, and X equals 10 with probability 0.6 minus p, for some unknown p. It is given that the variance of X equals 10, and separately that winning \\$0 is less likely than winning \\$10.",
    "statements": [
     "The unknown value p equals 0.4.",
     "The quadratic condition that the variance of X equals 10 has a second mathematically valid root, p ≈ 0.5236, which is rejected here only because it would make the probability that X equals 0 greater than the probability that X equals 10.",
     "The expected value of X equals exactly 8.",
     "The standard deviation of X is less than 3.",
-    "If the machine's condition were reversed instead (winning $0 more likely than winning $10), the correct root would be p ≈ 0.5236, and the variance of X would no longer equal 10 in that case."
+    "If the machine's condition were reversed instead (winning \\$0 more likely than winning \\$10), the correct root would be p ≈ 0.5236, and the variance of X would no longer equal 10 in that case."
    ],
    "answer_key": [
     false,
@@ -4613,13 +4613,13 @@
    "id": "math-12-147",
    "case_id": "MATH 12.147",
    "title": "A Charity Raffle (Unknown Probabilities)",
-   "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are \\$0 with probability p, \\$50 with probability q, and \\$250 with probability 0.10. It is known that the expected value of X equals $40.",
+   "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are \\$0 with probability p, \\$50 with probability q, and \\$250 with probability 0.10. It is known that the expected value of X equals \\$40.",
    "statements": [
     "The unknown value p equals 0.55.",
     "The variance of X equals 5,400.",
     "The standard deviation of X is approximately \\$73.48.",
-    "The $0 outcome is less likely than the $50 outcome.",
-    "If every prize were reduced by $10 (to -$10, \\$40, and $240), the variance of X would still equal 5,400."
+    "The \\$0 outcome is less likely than the \\$50 outcome.",
+    "If every prize were reduced by \\$10 (to -\\$10, \\$40, and \\$240), the variance of X would still equal 5,400."
    ],
    "answer_key": [
     false,
@@ -4629,16 +4629,16 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe probability $p$ associated with the $0 prize is determined by the conditions that the probabilities sum to 1 and the expected value is 40. From the calculations in the overview, $p\\$ is derived as:\n$$p = 0.60$$\nThe claim states that $p = 0.55$, so the statement is False.",
+    "**A.** → False\n\nThe probability $p$ associated with the \\$0 prize is determined by the conditions that the probabilities sum to 1 and the expected value is 40. From the calculations in the overview, $p$ is derived as:\n$$p = 0.60$$\nThe claim states that $p = 0.55$, so the statement is False.",
     "**B.** → True\n\nThe variance of a discrete random variable $X$ is computed as $E[X^2] - (E[X])^2$. We know $E[X] = 40$. We first calculate $E[X^2]$ using the derived probabilities $P(X=0) = 0.60$, $P(X=50) = 0.30$, and $P(X=250) = 0.10$.\n$$E[X^2] = (0^2 \\cdot 0.60) + (50^2 \\cdot 0.30) + (250^2 \\cdot 0.10)$$\n$$E[X^2] = 0 + (2500 \\cdot 0.30) + (62500 \\cdot 0.10)$$\n$$E[X^2] = 0 + 750 + 6250$$\n$$E[X^2] = 7000$$\nWith $E[X^2] = 7000$ and $E[X] = 40$, the variance is:\n$$\\mathrm{Var}(X) = 7000 - (40)^2$$\n$$\\mathrm{Var}(X) = 7000 - 1600$$\n$$\\mathrm{Var}(X) = 5400$$\nThis value matches the claim, so the statement is True.",
     "**C.** → True\n\nThe standard deviation is the square root of the variance. Using the variance $\\mathrm{Var}(X) = 5400$ found in the overview:\n$$\\mathrm{SD}(X) = \\sqrt{5400}$$\n$$\\mathrm{SD}(X) \\approx 73.48469$$\nThis value rounds to $73.48$ dollars, so the statement is True.",
     "**D.** → False\n\nThe likelihood of an outcome is given by its probability. We compare $P(X=0)$ with $P(X=50)$. From the overview:\n$$P(X=0) = 0.60$$\n$$P(X=50) = 0.30$$\nSince $0.60 > 0.30$, the $0$ dollar outcome is more likely than the $50$ dollars outcome. The claim states it is less likely, so the statement is False.",
-    "**E.** → True\n\nIf every prize is reduced by \\$10, the new random variable $Y$ relates to $X$ as $Y = X - 10$. The variance of a random variable is unchanged by an additive constant shift. That is, for any constant $b$, $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)\\$.\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)$$\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X)$$\nUsing $\\mathrm{Var}(X) = 5400$ from part B:\n$$\\mathrm{Var}(Y) = 5400$$\nThe variance remains $5400$, so the statement is True."
+    "**E.** → True\n\nIf every prize is reduced by \\$10, the new random variable $Y$ relates to $X$ as $Y = X - 10$. The variance of a random variable is unchanged by an additive constant shift. That is, for any constant $b$, $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)$.\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)$$\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X)$$\nUsing $\\mathrm{Var}(X) = 5400$ from part B:\n$$\\mathrm{Var}(Y) = 5400$$\nThe variance remains $5400$, so the statement is True."
    ],
    "difficulty_level": "4/5",
    "sort_order": 147,
    "subsection": "12.4",
-   "solution_overview": "The winnings $X$ for a ticket drawn from a charity raffle are a discrete random variable with three possible values: $0, \\$50, and \\$250. The probabilities associated with these winnings are $P(X=0)=p$, $P(X=50)=q$, and $P(X=250)=0.10$. We are given that the expected value of $X$ is $E[X] = 40\\$.\n\nSince the sum of all probabilities for a discrete random variable must equal 1:\n$$p + q + 0.10 = 1$$\n$$p + q = 0.90 \\quad (1)$$\n\nThe expected value of a discrete random variable is calculated as the sum of each outcome multiplied by its probability:\n$$E[X] = \\sum x P(X=x)$$\nUsing the given values and $E[X]=40$:\n$$40 = (0 \\cdot p) + (50 \\cdot q) + (250 \\cdot 0.10)$$\n$$40 = 0 + 50q + 25$$\n$$15 = 50q$$\n$$q = \\frac{15}{50}$$\n$$q = 0.30$$\n\nSubstitute the value of $q$ back into equation (1) to find $p$:\n$$p + 0.30 = 0.90$$\n$$p = 0.60$$\n\nSo, the complete probability distribution for $X$ is:\n$P(X=0) = 0.60$\n$P(X=50) = 0.30$\n$P(X=250) = 0.10$"
+   "solution_overview": "The winnings $X$ for a ticket drawn from a charity raffle are a discrete random variable with three possible values: \\$0, \\$50, and \\$250. The probabilities associated with these winnings are $P(X=0)=p$, $P(X=50)=q$, and $P(X=250)=0.10$. We are given that the expected value of $X$ is $E[X] = 40$.\n\nSince the sum of all probabilities for a discrete random variable must equal 1:\n$$p + q + 0.10 = 1$$\n$$p + q = 0.90 \\quad (1)$$\n\nThe expected value of a discrete random variable is calculated as the sum of each outcome multiplied by its probability:\n$$E[X] = \\sum x P(X=x)$$\nUsing the given values and $E[X]=40$:\n$$40 = (0 \\cdot p) + (50 \\cdot q) + (250 \\cdot 0.10)$$\n$$40 = 0 + 50q + 25$$\n$$15 = 50q$$\n$$q = \\frac{15}{50}$$\n$$q = 0.30$$\n\nSubstitute the value of $q$ back into equation (1) to find $p$:\n$$p + 0.30 = 0.90$$\n$$p = 0.60$$\n\nSo, the complete probability distribution for $X$ is:\n$P(X=0) = 0.60$\n$P(X=50) = 0.30$\n$P(X=250) = 0.10$"
   },
   {
    "id": "math-12-148",

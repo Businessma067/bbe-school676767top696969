@@ -2183,12 +2183,12 @@
    "case_id": "MATH 6.70",
    "title": "Manufacturing Quality Control",
    "subsection": "6.4",
-   "context": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were $340g$, $355g$, $345g$, $360g$, and $338g$. Let x represent the weight of the 6th box.",
+   "context": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were $340\\,\\mathrm{g}$, $355\\,\\mathrm{g}$, $345\\,\\mathrm{g}$, $360\\,\\mathrm{g}$, and $338\\,\\mathrm{g}$. Let x represent the weight of the 6th box.",
    "statements": [
-    "A 6th box weighing $362g$ meets the regulation exactly.",
-    "A 6th box weighing $360g$ meets the regulation.",
-    "The minimum weight needed for the 6th box is $350g$.",
-    "A 6th box weighing $400g$ results in a batch average above $350g$.",
+    "A 6th box weighing $362\\,\\mathrm{g}$ meets the regulation exactly.",
+    "A 6th box weighing $360\\,\\mathrm{g}$ meets the regulation.",
+    "The minimum weight needed for the 6th box is $350\\,\\mathrm{g}$.",
+    "A 6th box weighing $400\\,\\mathrm{g}$ results in a batch average above $350\\,\\mathrm{g}$.",
     "Multiplying both sides of $\\dfrac{1738+x}{6} \\ge 350$ by 6 gives $1738 + x \\ge 2100$."
    ],
    "answer_key": [
@@ -2207,7 +2207,7 @@
    ],
    "difficulty_level": "3/5",
    "sort_order": 70,
-   "solution_overview": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were $340g$, $355g$, $345g$, $360g$, and $338g$. Let x represent the weight of the 6th box.",
+   "solution_overview": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were $340\\,\\mathrm{g}$, $355\\,\\mathrm{g}$, $345\\,\\mathrm{g}$, $360\\,\\mathrm{g}$, and $338\\,\\mathrm{g}$. Let x represent the weight of the 6th box.",
    "placeholder": false
   },
   {
@@ -2599,13 +2599,13 @@
    "case_id": "MATH 6.83",
    "title": "Manufacturing Tolerance Inspection",
    "subsection": "6.4",
-   "context": "A metal rod passes inspection only if both conditions hold at once: its diameter d (mm) must satisfy $|d - 12| \\le 0.3$, and its weight w (grams) must be strictly less than $50g$.",
+   "context": "A metal rod passes inspection only if both conditions hold at once: its diameter d (mm) must satisfy $|d - 12| \\le 0.3$, and its weight w (grams) must be strictly less than $50\\,\\mathrm{g}$.",
    "statements": [
-    "A rod with d = 12.2mm and w = $45g$ passes inspection.",
-    "A rod with d = 12.4mm and w = $40g$ passes inspection.",
-    "A rod with d = 11.7mm and w = $52g$ passes inspection.",
-    "A rod with d = 12.3mm and w = $30g$ passes inspection.",
-    "A rod with d = 12.3mm and w = $50g$ passes inspection."
+    "A rod with d = $12.2\\,\\mathrm{mm}$ and w = $45\\,\\mathrm{g}$ passes inspection.",
+    "A rod with d = $12.4\\,\\mathrm{mm}$ and w = $40\\,\\mathrm{g}$ passes inspection.",
+    "A rod with d = $11.7\\,\\mathrm{mm}$ and w = $52\\,\\mathrm{g}$ passes inspection.",
+    "A rod with d = $12.3\\,\\mathrm{mm}$ and w = $30\\,\\mathrm{g}$ passes inspection.",
+    "A rod with d = $12.3\\,\\mathrm{mm}$ and w = $50\\,\\mathrm{g}$ passes inspection."
    ],
    "answer_key": [
     true,
@@ -2623,7 +2623,7 @@
    ],
    "difficulty_level": "4/5",
    "sort_order": 83,
-   "solution_overview": "A metal rod passes inspection only if both conditions hold at once: its diameter d (mm) must satisfy $|d - 12| \\le 0.3$, and its weight w (grams) must be strictly less than $50g$.",
+   "solution_overview": "A metal rod passes inspection only if both conditions hold at once: its diameter d (mm) must satisfy $|d - 12| \\le 0.3$, and its weight w (grams) must be strictly less than $50\\,\\mathrm{g}$.",
    "placeholder": false
   },
   {

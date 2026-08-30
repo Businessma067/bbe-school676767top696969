@@ -333,6 +333,60 @@ function unwrapOuterMathBraces(input: string): string {
 function normalizeBrokenMathMarkup(input: string): string {
   let s = unwrapOuterMathBraces(input);
 
+  // `$…latex…\$` — author closed math with escaped `\$` (leaves raw KaTeX / odd $).
+  // Rewrite only when the span clearly contains LaTeX commands or relations.
+  {
+    let out = "";
+    let i = 0;
+    while (i < s.length) {
+      if (s[i] === "\\" && s[i + 1] === "$") {
+        out += "\\$";
+        i += 2;
+        continue;
+      }
+      if (s[i] === "$" && !s.startsWith("$$", i)) {
+        // Find closer: either bare `$` or mistaken `\$`
+        let j = i + 1;
+        let closer = -1;
+        let closerLen = 1;
+        while (j < s.length) {
+          if (s.startsWith("$$", j)) break; // don't cross display
+          if (s[j] === "\\" && s[j + 1] === "$") {
+            // `\$12` is currency inside/near math — not a closer.
+            if (/\d/.test(s[j + 2] || "")) {
+              j += 2;
+              continue;
+            }
+            // tentative mistaken closer — accept if inner looks like math
+            const inner = s.slice(i + 1, j);
+            if (/\\[a-zA-Z]/.test(inner) || /[=<>≠≤≥^_]/.test(inner)) {
+              closer = j;
+              closerLen = 2;
+              break;
+            }
+            j += 2;
+            continue;
+          }
+          if (s[j] === "$") {
+            closer = j;
+            closerLen = 1;
+            break;
+          }
+          j++;
+        }
+        if (closer !== -1) {
+          const inner = s.slice(i + 1, closer);
+          out += `$${inner}$`;
+          i = closer + closerLen;
+          continue;
+        }
+      }
+      out += s[i];
+      i++;
+    }
+    s = out;
+  }
+
   // `\$…\$` used as math delimiters (common in some generated explanations).
   s = s.replace(/\\\$([^$]*?)\\\$/g, (_m, inner: string) => {
     const t = inner.trim();
@@ -342,6 +396,12 @@ function normalizeBrokenMathMarkup(input: string): string {
     }
     return _m;
   });
+
+  // `$362g$` / `$12.2mm$` — unit letter glued onto a number inside math.
+  s = s.replace(
+    /\$(\d+(?:\.\d+)?)(g|kg|mm|cm)\$/g,
+    (_m, num: string, unit: string) => `$${num}\\,\\mathrm{${unit}}$`,
+  );
 
   // `$12\,000 subject` → `$12,000 subject` (not `$$40\,000 e`)
   s = s.replace(
