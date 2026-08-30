@@ -2199,7 +2199,7 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**A.** → True\n\nUse the product rule for equal bases: add the exponents.\n\nAdd exponents:\n\n$$a^3\\cdot a^4=a^{3+4}$$\n\nSimplify:\n\n$$=a^7$$\n\nThe resulting power matches the claim, so the statement is True.",
     "**B.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**C.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is False.",
@@ -2233,7 +2233,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is False.",
-    "**C.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**C.** → True\n\nUse the power-of-a-power rule: multiply the exponents.\n\nMultiply exponents:\n\n$$(b^4)^{1/2}=b^{4\\cdot(1/2)}$$\n\nSimplify:\n\n$$=b^2$$\n\nThe positivity condition makes this reduction valid, so the statement is True.",
     "**D.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nComparing this value with the claim shows the statement is True.",
     "**E.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True."
    ],
@@ -2264,7 +2264,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**B.** → True\n\nApply the definition of a negative integer exponent.\n\nReciprocate:\n\n$$x^{-1}=\\frac{1}{x^1}$$\n\nSimplify:\n\n$$=\\frac1x\\qquad(x\\ne0)$$\n\nThis is exactly the claimed reciprocal, so the statement is True.",
     "**C.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is False.",
     "**E.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True."
@@ -2297,7 +2297,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is True.",
-    "**C.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**C.** → True\n\nUse the definition $b^{m/n}=(\\sqrt[n]{b})^m$ on the positive domain.\n\nRewrite the rational power:\n\n$$b^{2/3}=\\left(b^{1/3}\\right)^2$$\n\nUse radical notation:\n\n$$=\\left(\\sqrt[3]{b}\\right)^2$$\n\nThe two forms in the claim are equal, so the statement is True.",
     "**D.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True."
    ],
@@ -2359,7 +2359,7 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**A.** → True\n\nUse the product rule for powers with the same positive base.\n\nAdd exponents:\n\n$$w^{2/3}w^{1/3}=w^{2/3+1/3}$$\n\nSimplify:\n\n$$=w^1=w$$\n\nThe product reduces to the claimed base, so the statement is True.",
     "**B.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nMatching these figures to the claim, the statement is False.",
     "**C.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**D.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True.",
@@ -2392,7 +2392,7 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → False\n\nThe principal square root is the unique nonnegative number whose square is $n^2$: $\\sqrt{n^2}=|n|$.\n\nSo the statement is False.",
+    "**B.** → False\n\nApply the power-of-a-power rule at each operation; successive powers multiply.\n\nSquare, then cube:\n\n$$(x^2)^3=x^{2\\cdot3}=x^6$$\n\nTake the principal square root:\n\n$$\\sqrt{x^6}=x^3\\qquad(x>0)$$\n\nThe final exponent is $3$, not $5/2$, so the statement is False.",
     "**C.** → False\n\nThe product is a difference of squares. Set $A=4r^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.\n\nApply $A^2-1$:\n\n$$(4r^{-1})^2-1=\\frac{16}{r^2}-1$$\n\nThe reciprocal square carries coefficient $16$ on $r^2$ in the denominator.\n\nThe reciprocal square carries numerator $16$, not $1$. Swapping numerator and denominator is the last-step error.\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**D.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is True.",
     "**E.** → True\n\nThe claim describes a tower of powers on positive $w$. Translate each English step into an exponent, multiplying powers inside out.\n\nInner power:\n\n$$(w^{2})^{3}=w^{6}$$\n\nSquaring then cubing multiplies the exponents.\n\nPrincipal square root:\n\n$$(w^{6})^{1/2}=w^{3}$$\n\nThe outer root halves the accumulated exponent.\n\nThe reduced power is the cube of the base, matching the wording, so the statement is True."
@@ -2424,7 +2424,7 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nPower of a power multiplies exponents; it does not add $2+3$ before the root. Reduce the tower on positive $m$ first.\n\nCorrect tower:\n\n$$((m^{2})^{3})^{1/2}=m^{3}$$\n\nThe accumulated exponent is $6$, then halved by the principal square root.\n\nThe power $\\tfrac{5}{2}$ would describe a different expression, so the statement is False.",
-    "**B.** → False\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is False.",
+    "**B.** → False\n\nThe negative-exponent rule requires a nonzero base, so it cannot be applied to zero.\n\nExpose the reciprocal:\n\n$$0^{-3}=\\frac1{0^3}=\\frac10$$\n\nDomain verdict:\n\n$$\\frac10\\ \\text{is undefined}$$\n\nThe product never reaches a legitimate $0^0$ expression, so the statement is False.",
     "**C.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**D.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nThe principal square root is the unique nonnegative number whose square is $n^2$:\n\n$$\\sqrt{n^2}=|n|$$\n\nSo the statement is True."
@@ -2456,10 +2456,10 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nThe product is a difference of squares. Set $A=4w^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.\n\nApply $A^2-1$:\n\n$$(4w^{-1})^2-1=\\frac{16}{w^2}-1$$\n\nThe reciprocal square carries coefficient $16$ on $w^2$ in the denominator.\n\nThe reciprocal square carries numerator $16$, not $1$. Swapping numerator and denominator is the last-step error, so the statement is False.",
-    "**B.** → False\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is False.",
+    "**B.** → False\n\nWrite $32$ as a fifth power and multiply the exponents.\n\nRewrite the base:\n\n$$32^{2/5}=(2^5)^{2/5}$$\n\nSimplify:\n\n$$=2^{5\\cdot(2/5)}=2^2=4$$\n\nThe value is $4$, not $8$, so the statement is False.",
     "**C.** → False\n\nThe principal square root is the unique nonnegative number whose square is $n^2$:\n\n$$\\sqrt{n^2}=|n|$$\n\nMatching these figures to the claim, the statement is False.",
     "**D.** → True\n\nThe product is a difference of squares. Set $A=6p^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.\n\nApply $A^2-1$:\n\n$$(6p^{-1})^2-1=\\frac{36}{p^2}-1$$\n\nThe reciprocal square carries coefficient $36$ on $p^2$ in the denominator.\n\nThe printed coefficient $36$ is the one that survives the expansion.\n\nComparing this value with the claim shows the statement is True.",
-    "**E.** → False\n\nSince $25=5^2$, $25^{x}=(5^{x})^2=3^2=9$, not $6$. Doubling the given value of $3$ instead of squaring it is the error behind the printed claim.\n\nSo the statement is False."
+    "**E.** → False\n\nRewrite $25^x$ as a power of the known quantity $5^x$.\n\nPower rule:\n\n$$25^x=(5^2)^x=(5^x)^2$$\n\nSubstitute:\n\n$$=(3)^2=9$$\n\nThe implied value is $9$, not $6$, so the statement is False."
    ],
    "solution_overview": "Five independent numerical powers. $27^{2/3}=9$ and $\\sqrt[3]{54}=3\\sqrt[3]{2}$, but $32^{2/5}=4$ and $8^{2/3}\\cdot 4^{-1/2}=2$.",
    "sort_order": 77,
@@ -2489,7 +2489,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → False\n\nThe product is a difference of squares. Set $A=2t^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.\n\nApply $A^2-1$:\n\n$$(2t^{-1})^2-1=\\frac{4}{t^2}-1$$\n\nThe reciprocal square carries coefficient $4$ on $t^2$ in the denominator.\n\nThe reciprocal square carries numerator $4$, not $1$. Swapping numerator and denominator is the last-step error, so the statement is False.",
-    "**C.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**C.** → True\n\nExtract the largest perfect-square factor from the radicand.\n\nFactor:\n\n$$\\sqrt{32}=\\sqrt{16\\cdot2}$$\n\nExtract:\n\n$$=\\sqrt{16}\\sqrt2=4\\sqrt2$$\n\nThe simplified radical matches the claim, so the statement is True.",
     "**D.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nSquare roots do not split over addition. Squaring the sum produces\n\n$$(\\sqrt{a}+\\sqrt{b})^{2}=a+b+2\\sqrt{ab}$$\n\nFor $a=b=1$ one has $\\sqrt{2}\\neq 2$, so the statement is True."
    ],
@@ -2521,7 +2521,7 @@
    "tactical_explanations": [
     "**A.** → False\n\nThe principal square root is the unique nonnegative number whose square is $n^2$:\n\n$$\\sqrt{n^2}=|n|$$\n\nMatching these figures to the claim, the statement is False.",
     "**B.** → True\n\nThe product is a difference of squares. Set $A=6r^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.\n\nApply $A^2-1$:\n\n$$(6r^{-1})^2-1=\\frac{36}{r^2}-1$$\n\nThe reciprocal square carries coefficient $36$ on $r^2$ in the denominator.\n\nThe printed coefficient $36$ is the one that survives the expansion.\n\nComparing this value with the claim shows the statement is True.",
-    "**C.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**C.** → True\n\nApply the power of a quotient rule on the positive domain.\n\nDistribute the exponent:\n\n$$\\left(\\frac uv\\right)^4=\\frac{u^4}{v^4}$$\n\nThe numerator and denominator receive the same exponent, so the statement is True.",
     "**D.** → True\n\nBoth terms share the common factor $x^3$, the lower of the two exponents:\n\n$$x^5+x^3=x^3\\cdot x^2+x^3\\cdot 1$$\n\n$$=x^3(x^2+1)$$\n\nFactoring out the common power reproduces the printed right side.\n\nSo the statement is True.",
     "**E.** → False\n\nThe product is a difference of squares. Set $A=7t^{-1}$ so $(A-1)(A+1)=A^2-1$, then expand the reciprocal square.\n\nApply $A^2-1$:\n\n$$(7t^{-1})^2-1=\\frac{49}{t^2}-1$$\n\nThe reciprocal square carries coefficient $49$ on $t^2$ in the denominator.\n\nThe reciprocal square carries numerator $49$, not $1$. Swapping numerator and denominator is the last-step error, so the statement is False."
    ],
@@ -2552,7 +2552,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → False\n\nExponents add only when the bases are multiplied, not when they are added: $x^5\\cdot x^3=x^8$, but $x^5+x^3$ is a sum, which factors as $x^3(x^2+1)$ and is not a single power of $x$ in general. Treating a sum like a product is the error here.\n\nSo the statement is False.",
+    "**B.** → False\n\nExponent addition applies to multiplication, not addition; factor the actual sum.\n\nFactor:\n\n$$x^5+x^3=x^3(x^2+1)$$\n\nCheck against the claim:\n\n$$x=1\\implies x^5+x^3=2\\ne1=x^8$$\n\nA valid nonzero input disproves the identity, so the statement is False.",
     "**C.** → True\n\nWrite the radicand as a perfect cube: $x^6y^9=(x^2y^3)^3$. The cube root undoes a cube exactly, with no sign ambiguity, because the real cube-root function is defined for every real number:\n\n$$\\sqrt[3]{(x^2y^3)^3}=x^2y^3$$\n\nThis holds for every real pair, including negative values of $x$ or $y$.\n\nSo the statement is True.",
     "**D.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → False\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is False."
@@ -2585,7 +2585,7 @@
    "tactical_explanations": [
     "**A.** → False\n\nSince $x^6y^9=(x^2y^3)^3$, the cube root recovers $x^2y^3$, not $x^3y^3$: dividing every exponent inside the radicand by $3$ gives exponents $2$ and $3$, not $3$ and $3$. Taking $x=2,y=1$, the left side is $\\sqrt[3]{64}=4$ while the printed right side gives $8$, so they disagree.\n\nSo the statement is False.",
     "**B.** → True\n\nWrite the radicand as a perfect fourth power: $x^8=(x^2)^4$. The principal fourth root of a fourth power is the absolute value of the base, and here the base is already nonnegative:\n\n$$\\sqrt[4]{(x^2)^4}=\\left|x^2\\right|=x^2$$\n\nsince $x^2\\ge 0$ for every real $x$.\n\nSo the statement is True.",
-    "**C.** → False\n\nThe principal fourth root is always nonnegative, so $\\sqrt[4]{x^4}=|x|$, not $x$. Taking $x=-2$: the left side is $\\sqrt[4]{16}=2$, while the printed right side gives $-2$, so they disagree for negative values.\n\nSo the statement is False.",
+    "**C.** → False\n\nAn even-index principal root is nonnegative, so it recovers an absolute value.\n\nApply the principal-root rule:\n\n$$\\sqrt[4]{x^4}=|x|$$\n\nUse a negative input:\n\n$$x=-1\\implies \\sqrt[4]{x^4}=1\\ne-1=x$$\n\nThe claimed equality fails for negative $x$, so the statement is False.",
     "**D.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is False.",
     "**E.** → True\n\nCombine the exponents by adding them, since all three factors share the same base $x$:\n\n$$x^5\\cdot x^{-2}\\cdot x^{-1}=x^{5+(-2)+(-1)}$$\n\n$$=x^{2}$$\n\nThe exponent sum matches the printed right side.\n\nSo the statement is True."
    ],
@@ -2617,9 +2617,9 @@
    "tactical_explanations": [
     "**A.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is False.",
     "**B.** → True\n\nSquare roots do not split over addition. Squaring the sum produces\n\n$$(\\sqrt{a}+\\sqrt{b})^{2}=a+b+2\\sqrt{ab}$$\n\nFor $a=b=1$ one has $\\sqrt{2}\\neq 2$.\n\nComparing this value with the claim shows the statement is True.",
-    "**C.** → False\n\nAdding the exponents correctly gives $5+(-2)+(-1)=2$, so the product is $x^2$, not $x^8$. Treating the negative exponents as if they added instead of subtracted is the error behind the printed claim.\n\nSo the statement is False.",
+    "**C.** → False\n\nFor a product of equal bases, add all three exponents.\n\nAdd exponents:\n\n$$x^5x^{-2}x^{-1}=x^{5-2-1}$$\n\nSimplify:\n\n$$=x^2$$\n\nThe exponent is $2$, not $8$, so the statement is False.",
     "**D.** → True\n\nA negative outer exponent flips the fraction before the power is applied:\n\n$$\\left(\\dfrac{x}{y}\\right)^{-3}=\\left(\\dfrac{y}{x}\\right)^{3}=\\dfrac{y^3}{x^3}$$\n\nFlipping first and then cubing reproduces the printed right side.\n\nSo the statement is True.",
-    "**E.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True."
+    "**E.** → True\n\nUse the principal-square-root rule and the given positive domain.\n\nApply the rule:\n\n$$(t^2)^{1/2}=\\sqrt{t^2}=|t|$$\n\nUse $t>0$:\n\n$$|t|=t$$\n\nThe expression reduces to the claimed value, so the statement is True."
    ],
    "solution_overview": "Five independent nested-radical checks. $\\sqrt{8+2\\sqrt{15}}=\\sqrt{5}+\\sqrt{3}$; the minus conjugate denests the minus companion. Splitting a radicand as a sum of roots fails.",
    "sort_order": 82,
@@ -2647,9 +2647,9 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA negative exponent flips the fraction and keeps the result positive for positive $x,y$: $\\left(\\dfrac{x}{y}\\right)^{-3}=\\dfrac{y^3}{x^3}$. Reading the exponent as introducing an overall minus sign, as the printed claim does, is not what a negative exponent means.\n\nSo the statement is False.",
+    "**A.** → False\n\nA negative exponent takes the reciprocal; it does not attach a minus sign.\n\nReciprocate:\n\n$$\\left(\\frac xy\\right)^{-3}=\\left(\\frac yx\\right)^3$$\n\nDistribute the cube:\n\n$$=\\frac{y^3}{x^3}$$\n\nThis differs from the claimed $-x^3/y^3$, so the statement is False.",
     "**B.** → True\n\nEach square root is a power of $\\frac12$, so nesting two of them multiplies the exponents:\n\n$$\\sqrt{\\sqrt{x}}=\\left(x^{1/2}\\right)^{1/2}$$\n\n$$=x^{1/2\\cdot 1/2}=x^{1/4}$$\n\nmatching the printed right side exactly.\n\nSo the statement is True.",
-    "**C.** → False\n\nNesting two square roots multiplies the exponents $\\frac12\\cdot\\frac12=\\frac14$, giving $\\sqrt{\\sqrt{x}}=x^{1/4}$, not $\\dfrac{x^{1/2}}{2}$. Dividing by $2$ instead of taking a further square root is the error behind the printed claim.\n\nSo the statement is False.",
+    "**C.** → False\n\nWrite each square root as exponent $1/2$ and multiply the exponents.\n\nFirst root:\n\n$$\\sqrt{x}=x^{1/2}$$\n\nSecond root:\n\n$$\\sqrt{\\sqrt{x}}=(x^{1/2})^{1/2}=x^{1/4}$$\n\nTaking another root halves the exponent rather than dividing the value by $2$, so the statement is False.",
     "**D.** → True\n\nA power raised to another power multiplies the exponents:\n\n$$(x^3)^4=x^{3\\cdot 4}$$\n\n$$=x^{12}$$\n\nsince the outer exponent $4$ is a positive integer, this multiplication rule holds for every real $x$, with no sign restriction needed.\n\nSo the statement is True.",
     "**E.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is True."
    ],
@@ -2680,10 +2680,10 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nExpand the binomial square and isolate the mixed-product contribution:\n\nExpand:\n\n$$(U+V)^2$$\n\nCross term:\n\n$$2\\cdot(U)\\cdot(V)$$\n\nThe collected coefficient contradicts the printed value.\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**B.** → True\n\nUse the zero-exponent and quotient rules for the nonzero base.\n\nZero exponent:\n\n$$c^0=1$$\n\nDivide:\n\n$$\\frac{c^2}{c^0}=\\frac{c^2}{1}=c^2$$\n\nThe quotient agrees with the claim, so the statement is True.",
     "**C.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → True\n\nThe principal square root is the unique nonnegative number whose square is $n^2$:\n\n$$\\sqrt{n^2}=|n|$$\n\nSo the statement is True.",
-    "**E.** → False\n\nRaising a power to a power multiplies the exponents, $(x^3)^4=x^{3\\cdot 4}=x^{12}$, not $x^7$. Adding the exponents instead of multiplying them is the error behind the printed claim.\n\nSo the statement is False."
+    "**E.** → False\n\nUse the power-of-a-power rule, which multiplies exponents.\n\nMultiply:\n\n$$(x^3)^4=x^{3\\cdot4}$$\n\nSimplify:\n\n$$=x^{12}$$\n\nThe exponent is $12$, not $7$, so the statement is False."
    ],
    "solution_overview": "Five independent binomial-square checks. $(\\sqrt{x}-x^{-1/2})^{2}=x-2+1/x$; the cross term is identically $\\pm 2$ or $\\pm 4$ and must not be dropped.",
    "sort_order": 84,
@@ -2715,7 +2715,7 @@
     "**B.** → True\n\nThe product rule for square roots lets two nonnegative radicands combine under one root:\n\n$$\\sqrt{x}\\cdot\\sqrt{y}=\\sqrt{xy}$$\n\nSquaring both sides confirms it: $\\left(\\sqrt{x}\\sqrt{y}\\right)^2=xy=\\left(\\sqrt{xy}\\right)^2$, and both original expressions are nonnegative, so the square roots themselves agree.\n\nSo the statement is True.",
     "**C.** → True\n\nInside the radical one has a perfect square:\n\n$$x^{2}+2x+1=(x+1)^{2}$$\n\nFor $x>0$ one has $x+1>0$, so $\\sqrt{(x+1)^{2}}=x+1$. So the statement is True.",
     "**D.** → False\n\nSubtract exponents carefully:\n\n$$\\dfrac{x^{-2}}{x^{3}}=x^{-2-3}=x^{-5}$$\n\nThe claimed power $x^{1}$ is wrong. So the statement is False.",
-    "**E.** → True\n\nThe identity $\\dfrac{\\sqrt{a}}{\\sqrt{b}}=\\sqrt{\\dfrac{a}{b}}$ holds for positive $a,b$, which is exactly the printed power form. So the statement is True."
+    "**E.** → True\n\nFor positive inputs, principal square roots obey the quotient rule.\n\nRewrite as powers:\n\n$$\\frac{a^{1/2}}{b^{1/2}}=\\left(\\frac ab\\right)^{1/2}$$\n\nUse radical notation:\n\n$$=\\sqrt{\\frac ab}$$\n\nThis is the identity stated in the claim, so the statement is True."
    ],
    "solution_overview": "Five independent given-power rewrites. A new base is written as a power of the given base, then the given value is raised to that integer. No logarithm is taken.",
    "sort_order": 85,
@@ -2744,10 +2744,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nMultiplying powers of the same base adds the exponents:\n\n$$x^{2/3}\\cdot x^{1/3}=x^{2/3+1/3}$$\n\n$$=x^{1}=x$$\n\nThe fractional exponents add to exactly $1$, matching the claim.\n\nSo the statement is True.",
-    "**B.** → False\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is False.",
+    "**B.** → False\n\nThe power-of-a-power rule multiplies the inner and outer exponents.\n\nApply the rule:\n\n$$(a^m)^k=a^{mk}$$\n\nCompare with the claim:\n\n$$mk\\ne m+k\\quad\\text{in general}$$\n\nThe claimed exponent uses addition instead of multiplication, so the statement is False.",
     "**C.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**D.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**E.** → False\n\nMultiplying same-base powers adds exponents, $x^{2/3}\\cdot x^{1/3}=x^{2/3+1/3}=x^{1}=x$, not $x^{2/9}$. Multiplying the exponents ($\\frac23\\cdot\\frac13=\\frac29$) instead of adding them is the error behind the printed claim.\n\nSo the statement is False."
+    "**E.** → False\n\nUse the product rule for equal bases by adding the rational exponents.\n\nAdd:\n\n$$x^{2/3}x^{1/3}=x^{2/3+1/3}$$\n\nSimplify:\n\n$$=x$$\n\nThe exponent is $1$, not $2/9$, so the statement is False."
    ],
    "solution_overview": "Five independent two-letter power claims. $(a^{m}b^{n})^{k}=a^{mk}b^{nk}$, not $a^{m+k}$. Adding the outer exponent is the product trap.",
    "sort_order": 86,
@@ -2776,7 +2776,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nMultiply top and bottom by the conjugate $\\sqrt{x}-\\sqrt{y}$ so the denominator becomes a difference of squares:\n\n$$\\dfrac{1}{\\sqrt{x}+\\sqrt{y}}\\cdot\\dfrac{\\sqrt{x}-\\sqrt{y}}{\\sqrt{x}-\\sqrt{y}}=\\dfrac{\\sqrt{x}-\\sqrt{y}}{x-y}$$\n\nThe denominator is rational, matching the printed right side.\n\nSo the statement is True.",
-    "**B.** → False\n\nDifference of squares (or another factorisation) clears the denominator: $\\frac{t^2-9}{t-3}$. The surviving expression is the true remainder on the stated domain.\n\nSo the statement is False.",
+    "**B.** → False\n\nExpress $32$ as $2^5$ and apply the power-of-a-power rule.\n\nRewrite:\n\n$$32^{3/5}=(2^5)^{3/5}$$\n\nSimplify:\n\n$$=2^3=8$$\n\nThe correct value is $8$, not $4$, so the statement is False.",
     "**C.** → False\n\nMultiplying by the conjugate $\\sqrt{x}-\\sqrt{y}$, not $\\sqrt{x}+\\sqrt{y}$, is what clears the radical from the denominator: $\\dfrac{1}{\\sqrt{x}+\\sqrt{y}}=\\dfrac{\\sqrt{x}-\\sqrt{y}}{x-y}$. Using the same sign as the original denominator, as the printed claim does, leaves a radical in the denominator instead of clearing it.\n\nSo the statement is False.",
     "**D.** → True\n\nThe radicand is already a perfect square, $(xy)^2$, so its principal square root is the nonnegative factor:\n\n$$\\sqrt{x^2y^2}=\\sqrt{(xy)^2}=xy$$\n\nBecause both $x$ and $y$ are positive, $xy$ is already nonnegative, so no absolute value bars are needed.\n\nSo the statement is True.",
     "**E.** → False\n\nThe right side simplifies to $|x|+|y|$, while the left side is $\\sqrt{x^2+y^2}$. Taking $x=3,y=4$: the left side is $\\sqrt{9+16}=\\sqrt{25}=5$, while the right side is $3+4=7$. These disagree, so the square root of a sum of squares is not, in general, the sum of the individual square roots.\n\nSo the statement is False."
@@ -2808,9 +2808,9 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nApply the zero-exponent rule to the first term and the inverse-product rule to the second:\n\n$$x^0=1,\\qquad x^{-1}\\cdot x=x^{-1+1}=x^0=1$$\n\n$$1+1=2$$\n\nBoth terms reduce to $1$ for every $x\\neq 0$, so their sum is always $2$, matching the claim.\n\nSo the statement is True.",
-    "**B.** → False\n\nBoth $x^0$ and $x^{-1}\\cdot x$ equal $1$ for every $x\\neq 0$, so the sum is the constant $2$, not $x$: the printed claim mistakes a constant sum for a variable expression.\n\nSo the statement is False.",
+    "**B.** → False\n\nEvaluate the zero power and the reciprocal product separately.\n\nZero power:\n\n$$x^0=1$$\n\nReciprocal product:\n\n$$x^{-1}x=x^0=1$$\n\nAdd:\n\n$$x^0+x^{-1}x=1+1=2$$\n\nThe expression is the constant $2$, not identically $x$, so the statement is False.",
     "**C.** → True\n\nDifference of squares (or another factorisation) clears the denominator:\n\n$$\\frac{t^2-9}{t-3}$$\n\nThe surviving expression is the true remainder on the stated domain.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is False.",
+    "**D.** → False\n\nRewrite $32$ as $2^5$; raising a power multiplies exponents.\n\nRewrite:\n\n$$32^k=(2^5)^k$$\n\nSimplify:\n\n$$=2^{5k}$$\n\nThe exponent $5k$ is not generally the claimed $k+5$, so the statement is False.",
     "**E.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True."
    ],
    "solution_overview": "Five independent change-of-base lines. Rewrite $4=2^{2}$, $8=2^{3}$, $32=2^{5}$, then multiply exponents. Adding the index $3$ or $5$ is the product trap.",
@@ -2842,7 +2842,7 @@
     "**A.** → True\n\nSince $125=5^3$, raise both sides of the hypothesis to the third power using the power-of-a-power rule:\n\n$$125^{t}=(5^3)^{t}=(5^{t})^3$$\n\n$$=3^3=27$$\n\nThe value of $t$ itself is never needed; only the given power $5^{t}=3$ is used.\n\nSo the statement is True.",
     "**B.** → True\n\nBoth terms share the common factor $t^3$, the lower of the two exponents:\n\n$$t^5+t^3=t^3\\cdot t^2+t^3\\cdot 1$$\n\n$$=t^3(t^2+1)$$\n\nFactoring out the common power reproduces the printed right side.\n\nSo the statement is True.",
     "**C.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**D.** → False\n\nExponents add only when the bases are multiplied, not when they are added: $t^5\\cdot t^3=t^8$, but $t^5+t^3$ is a sum, which factors as $t^3(t^2+1)$ and is not a single power of $t$ in general. Treating a sum like a product is the error here.\n\nSo the statement is False.",
+    "**D.** → False\n\nPowers cannot be combined across addition; factor the common power instead.\n\nFactor:\n\n$$t^5+t^3=t^3(t^2+1)$$\n\nCounterexample:\n\n$$t=1\\implies t^5+t^3=2\\ne1=t^8$$\n\nThe proposed exponent sum rule is being used on a sum, so the statement is False.",
     "**E.** → True\n\nWrite the radicand as a perfect cube: $a^6b^9=(a^2b^3)^3$. The cube root undoes a cube exactly, with no sign ambiguity, because the real cube-root function is defined for every real number:\n\n$$\\sqrt[3]{(a^2b^3)^3}=a^2b^3$$\n\nThis holds for every real pair, including negative values of $a$ or $b$.\n\nSo the statement is True."
    ],
    "solution_overview": "Five independent fourth-root claims. Divide exponents by $4$. $\\sqrt[4]{a^{2}b^{6}}=a^{1/2}b^{3/2}$ and $\\sqrt[4]{c^{8}}=c^{2}$, while $\\sqrt[4]{x^{4}}=x$ on $x>0$.",
@@ -2872,10 +2872,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → False\n\nSince $25=5^2$, $25^{t}=(5^{t})^2=3^2=9$, not $6$. Doubling the given value of $3$ instead of squaring it is the error behind the printed claim.\n\nSo the statement is False.",
+    "**B.** → False\n\nTurn $25^t$ into the square of the known value $5^t$.\n\nRewrite:\n\n$$25^t=(5^2)^t=(5^t)^2$$\n\nSubstitute:\n\n$$=3^2=9$$\n\nThe recovered value is $9$, not $6$, so the statement is False.",
     "**C.** → False\n\nSince $a^6b^9=(a^2b^3)^3$, the cube root recovers $a^2b^3$, not $a^3b^3$: dividing every exponent inside the radicand by $3$ gives exponents $2$ and $3$, not $3$ and $3$. Taking $a=2,b=1$, the left side is $\\sqrt[3]{64}=4$ while the printed right side gives $8$, so they disagree.\n\nSo the statement is False.",
     "**D.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nSo the statement is False.",
-    "**E.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True."
+    "**E.** → True\n\nA negative exponent already represents a reciprocal, so invert it carefully.\n\nRewrite:\n\n$$f^{-5}=\\frac1{f^5}$$\n\nInvert:\n\n$$\\frac1{f^{-5}}=\\frac1{1/f^5}=f^5$$\n\nThe simplification matches the claim, so the statement is True."
    ],
    "solution_overview": "Five independent monomial quotients. A negative exponent in a denominator flips sign. $a^{5}b^{-3}/(a^{-2}b^{4})=a^{7}/b^{7}$; forgetting the flip leaves $c^{4}/c^{-3}$ looking like $c$.",
    "sort_order": 90,
@@ -2904,7 +2904,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nWrite the radicand as a perfect fourth power: $t^8=(t^2)^4$. The principal fourth root of a fourth power is the absolute value of the base, and here the base is already nonnegative:\n\n$$\\sqrt[4]{(t^2)^4}=\\left|t^2\\right|=t^2$$\n\nsince $t^2\\ge 0$ for every real $t$.\n\nSo the statement is True.",
-    "**B.** → False\n\nThe principal fourth root is always nonnegative, so $\\sqrt[4]{t^4}=|t|$, not $t$. Taking $t=-2$: the left side is $\\sqrt[4]{16}=2$, while the printed right side gives $-2$, so they disagree for negative values.\n\nSo the statement is False.",
+    "**B.** → False\n\nThe principal fourth root of a fourth power is an absolute value.\n\nApply the rule:\n\n$$\\sqrt[4]{t^4}=|t|$$\n\nNegative test:\n\n$$t=-1\\implies |t|=1\\ne-1=t$$\n\nThe equality does not hold on the whole real line, so the statement is False.",
     "**C.** → True\n\nCombine the exponents by adding them, since all three factors share the same base $t$:\n\n$$t^5\\cdot t^{-2}\\cdot t^{-1}=t^{5+(-2)+(-1)}$$\n\n$$=t^{2}$$\n\nThe exponent sum matches the printed right side.\n\nSo the statement is True.",
     "**D.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**E.** → True\n\nA negative outer exponent flips the fraction before the power is applied:\n\n$$\\left(\\dfrac{a}{b}\\right)^{-3}=\\left(\\dfrac{b}{a}\\right)^{3}=\\dfrac{b^3}{a^3}$$\n\nFlipping first and then cubing reproduces the printed right side.\n\nSo the statement is True."
@@ -2936,9 +2936,9 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nSquare roots do not split over addition. Squaring the sum produces\n\n$$(\\sqrt{a}+\\sqrt{b})^{2}=a+b+2\\sqrt{ab}$$\n\nFor $a=b=1$ one has $\\sqrt{2}\\neq 2$.\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → False\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is False.",
-    "**C.** → False\n\nAdding the exponents correctly gives $5+(-2)+(-1)=2$, so the product is $t^2$, not $t^8$. Treating the negative exponents as if they added instead of subtracted is the error behind the printed claim.\n\nSo the statement is False.",
-    "**D.** → False\n\nA negative exponent flips the fraction and keeps the result positive for positive $a,b$: $\\left(\\dfrac{a}{b}\\right)^{-3}=\\dfrac{b^3}{a^3}$. Reading the exponent as introducing an overall minus sign, as the printed claim does, is not what a negative exponent means.\n\nSo the statement is False.",
+    "**B.** → False\n\nApply the power-of-a-power rule by multiplying the exponents.\n\nMultiply:\n\n$$(c^2)^3=c^{2\\cdot3}$$\n\nSimplify:\n\n$$=c^6$$\n\nThe correct exponent is $6$, not $5$, so the statement is False.",
+    "**C.** → False\n\nAdd the exponents in the product of equal bases.\n\nAdd:\n\n$$t^5t^{-2}t^{-1}=t^{5-2-1}$$\n\nSimplify:\n\n$$=t^2$$\n\nThe product is $t^2$, not $t^8$, so the statement is False.",
+    "**D.** → False\n\nUse the negative-exponent rule: reciprocal first, then cube.\n\nReciprocate:\n\n$$\\left(\\frac ab\\right)^{-3}=\\left(\\frac ba\\right)^3$$\n\nCube:\n\n$$=\\frac{b^3}{a^3}$$\n\nNo negative sign appears, and the fraction is inverted, so the statement is False.",
     "**E.** → True\n\nSquare roots do not split over addition. Squaring the sum produces\n\n$$(\\sqrt{a}+\\sqrt{b})^{2}=a+b+2\\sqrt{ab}$$\n\nFor $a=b=1$ one has $\\sqrt{2}\\neq 2$, so the statement is True."
    ],
    "solution_overview": "Five independent conjugate-surd claims. The product of conjugates is a difference of radicands. Each separate square still carries a cross term $\\pm 2\\sqrt{\\,\\cdot\\,}$.",
@@ -2968,7 +2968,7 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nEach square root is a power of $\\frac12$, so nesting two of them multiplies the exponents:\n\n$$\\sqrt{\\sqrt{t}}=\\left(t^{1/2}\\right)^{1/2}$$\n\n$$=t^{1/2\\cdot 1/2}=t^{1/4}$$\n\nmatching the printed right side exactly.\n\nSo the statement is True.",
-    "**B.** → False\n\nNesting two square roots multiplies the exponents $\\frac12\\cdot\\frac12=\\frac14$, giving $\\sqrt{\\sqrt{t}}=t^{1/4}$, not $\\dfrac{t^{1/2}}{2}$. Dividing by $2$ instead of taking a further square root is the error behind the printed claim.\n\nSo the statement is False.",
+    "**B.** → False\n\nEach square root multiplies the current exponent by $1/2$.\n\nFirst root:\n\n$$\\sqrt t=t^{1/2}$$\n\nSecond root:\n\n$$\\sqrt{\\sqrt t}=(t^{1/2})^{1/2}=t^{1/4}$$\n\nThe result is not $t^{1/2}/2$, so the statement is False.",
     "**C.** → True\n\nA power raised to another power multiplies the exponents:\n\n$$(t^3)^4=t^{3\\cdot 4}$$\n\n$$=t^{12}$$\n\nsince the outer exponent $4$ is a positive integer, this multiplication rule holds for every real $t$, with no sign restriction needed.\n\nSo the statement is True.",
     "**D.** → True\n\nThe product rule for square roots lets two nonnegative radicands combine under one root:\n\n$$\\sqrt{a}\\cdot\\sqrt{b}=\\sqrt{ab}$$\n\nSquaring both sides confirms it: $\\left(\\sqrt{a}\\sqrt{b}\\right)^2=ab=\\left(\\sqrt{ab}\\right)^2$, and both original expressions are nonnegative, so the square roots themselves agree.\n\nSo the statement is True.",
     "**E.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True."
@@ -3000,10 +3000,10 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**B.** → True\n\nApply the quotient rule by subtracting denominator exponents.\n\nSubtract:\n\n$$\\frac{c^3}{c^1}=c^{3-1}$$\n\nSimplify:\n\n$$=c^2$$\n\nThe quotient matches the claim, so the statement is True.",
     "**C.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nRaising a power to a power multiplies the exponents, $(t^3)^4=t^{3\\cdot 4}=t^{12}$, not $t^7$. Adding the exponents instead of multiplying them is the error behind the printed claim.\n\nSo the statement is False.",
-    "**E.** → False\n\nThe product of two square roots combines under multiplication, $\\sqrt{a}\\cdot\\sqrt{b}=\\sqrt{ab}$, not under addition. Taking $a=b=4$: the left side is $2\\cdot 2=4$, while the printed right side is $\\sqrt{8}\\approx 2.83$, so they disagree.\n\nSo the statement is False."
+    "**D.** → False\n\nA power raised to another power multiplies the exponents.\n\nApply:\n\n$$(t^3)^4=t^{3\\cdot4}$$\n\nSimplify:\n\n$$=t^{12}$$\n\nThe claimed exponent $7$ is incorrect, so the statement is False.",
+    "**E.** → False\n\nThe product rule for nonnegative radicands multiplies inside the radical; it does not add.\n\nCorrect rule:\n\n$$\\sqrt a\\sqrt b=\\sqrt{ab}$$\n\nCounterexample:\n\n$$a=b=1\\implies \\sqrt a\\sqrt b=1\\ne\\sqrt2=\\sqrt{a+b}$$\n\nThe proposed sum under the radical fails, so the statement is False."
    ],
    "solution_overview": "Five independent calculations: a minus-conjugate denesting, a given-power cube, a binomial square of a root and its reciprocal, $\\sqrt{a}\\sqrt{b}$ versus $\\sqrt{a+b}$, and a rationalised unit.",
    "sort_order": 94,
@@ -3031,11 +3031,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**A.** → True\n\nDistribute the outer exponent, then subtract exponents of like bases in the quotient.\n\nExpand powers:\n\n$$\\frac{(a^mb^n)^k}{(a^nb^m)^k}=\\frac{a^{mk}b^{nk}}{a^{nk}b^{mk}}$$\n\nSubtract:\n\n$$=a^{k(m-n)}b^{k(n-m)}$$\n\nCombine:\n\n$$=\\left(\\frac ab\\right)^{k(m-n)}$$\n\nThe reduction is exactly the claimed identity, so the statement is True.",
     "**B.** → True\n\nDividing powers of the same base subtracts the exponents:\n\n$$\\dfrac{t^{-2}}{t^3}=t^{-2-3}$$\n\n$$=t^{-5}$$\n\nThe exponent subtraction matches the printed right side.\n\nSo the statement is True.",
-    "**C.** → False\n\nDividing powers of the same base subtracts the exponents: $\\dfrac{t^{-2}}{t^3}=t^{-2-3}=t^{-5}$, not $t^{1}$. Adding $-2+3=1$ instead of subtracting $-2-3=-5$ is the error behind the printed claim.\n\nSo the statement is False.",
+    "**C.** → False\n\nUse the quotient rule by subtracting the exponent in the denominator.\n\nSubtract:\n\n$$\\frac{t^{-2}}{t^3}=t^{-2-3}$$\n\nRewrite:\n\n$$=t^{-5}=\\frac1{t^5}$$\n\nThe quotient is not $t^1$, so the statement is False.",
     "**D.** → True\n\nMultiplying powers of the same base adds the exponents:\n\n$$t^{2/3}\\cdot t^{1/3}=t^{2/3+1/3}$$\n\n$$=t^{1}=t$$\n\nThe fractional exponents add to exactly $1$, matching the claim.\n\nSo the statement is True.",
-    "**E.** → False\n\nMultiplying same-base powers adds exponents, $t^{2/3}\\cdot t^{1/3}=t^{2/3+1/3}=t^{1}=t$, not $t^{2/9}$. Multiplying the exponents ($\\frac23\\cdot\\frac13=\\frac29$) instead of adding them is the error behind the printed claim.\n\nSo the statement is False."
+    "**E.** → False\n\nApply the product rule by adding exponents.\n\nAdd:\n\n$$t^{2/3}t^{1/3}=t^{2/3+1/3}$$\n\nSimplify:\n\n$$=t$$\n\nThe claimed exponent $2/9$ does not result, so the statement is False."
    ],
    "solution_overview": "Five independent monomial-quotient claims. After distributing $k$, $(a^{m}b^{n})^{k}/(a^{n}b^{m})^{k}=(a/b)^{k(m-n)}$. Adding the outer exponent instead of multiplying it is the trap.",
    "sort_order": 95,
@@ -3097,7 +3097,7 @@
    "tactical_explanations": [
     "**A.** → False\n\nThe right side simplifies to $|a|+|b|$, while the left side is $\\sqrt{a^2+b^2}$. Taking $a=3,b=4$: the left side is $\\sqrt{9+16}=\\sqrt{25}=5$, while the right side is $3+4=7$. These disagree, so the square root of a sum of squares is not, in general, the sum of the individual square roots.\n\nSo the statement is False.",
     "**B.** → True\n\nApply the zero-exponent rule to the first term and the inverse-product rule to the second:\n\n$$t^0=1,\\qquad t^{-1}\\cdot t=t^{-1+1}=t^0=1$$\n\n$$1+1=2$$\n\nBoth terms reduce to $1$ for every $t\\neq 0$, so their sum is always $2$, matching the claim.\n\nSo the statement is True.",
-    "**C.** → False\n\nBoth $t^0$ and $t^{-1}\\cdot t$ equal $1$ for every $t\\neq 0$, so the sum is the constant $2$, not $t$: the printed claim mistakes a constant sum for a variable expression.\n\nSo the statement is False.",
+    "**C.** → False\n\nEvaluate the zero power and reciprocal product before adding.\n\nSimplify each term:\n\n$$t^0=1,\\qquad t^{-1}t=t^0=1$$\n\nAdd:\n\n$$t^0+t^{-1}t=2$$\n\nThe expression is not identically $t$, so the statement is False.",
     "**D.** → True\n\nSince $125=5^3$, raise both sides of the hypothesis to the third power using the power-of-a-power rule:\n\n$$125^{u}=(5^3)^{u}=(5^{u})^3$$\n\n$$=3^3=27$$\n\nThe value of $u$ itself is never needed; only the given power $5^{u}=3$ is used.\n\nSo the statement is True.",
     "**E.** → True\n\nBoth terms share the common factor $u^3$, the lower of the two exponents:\n\n$$u^5+u^3=u^3\\cdot u^2+u^3\\cdot 1$$\n\n$$=u^3(u^2+1)$$\n\nFactoring out the common power reproduces the printed right side.\n\nSo the statement is True."
    ],
@@ -3127,9 +3127,9 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSince $25=5^2$, $25^{u}=(5^{u})^2=3^2=9$, not $6$. Doubling the given value of $3$ instead of squaring it is the error behind the printed claim.\n\nSo the statement is False.",
-    "**B.** → False\n\nExponents add only when the bases are multiplied, not when they are added: $u^5\\cdot u^3=u^8$, but $u^5+u^3$ is a sum, which factors as $u^3(u^2+1)$ and is not a single power of $u$ in general. Treating a sum like a product is the error here.\n\nSo the statement is False.",
-    "**C.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
+    "**A.** → False\n\nUse $25=5^2$ and the given value of $5^u$.\n\nRewrite:\n\n$$25^u=(5^2)^u=(5^u)^2$$\n\nSubstitute:\n\n$$=3^2=9$$\n\nThe implied value is $9$, not $6$, so the statement is False.",
+    "**B.** → False\n\nDo not add exponents across a sum; factor the common power.\n\nFactor:\n\n$$u^5+u^3=u^3(u^2+1)$$\n\nCounterexample:\n\n$$u=1\\implies 2\\ne1=u^8$$\n\nThe proposed identity fails on its domain, so the statement is False.",
+    "**C.** → True\n\nUse the power-of-a-power rule on the positive domain.\n\nMultiply exponents:\n\n$$(x^{m/n})^n=x^{(m/n)n}$$\n\nSimplify:\n\n$$=x^m$$\n\nThe rational exponents collapse as claimed, so the statement is True.",
     "**D.** → True\n\nWrite the radicand as a perfect cube: $p^6q^9=(p^2q^3)^3$. The cube root undoes a cube exactly, with no sign ambiguity, because the real cube-root function is defined for every real number:\n\n$$\\sqrt[3]{(p^2q^3)^3}=p^2q^3$$\n\nThis holds for every real pair, including negative values of $p$ or $q$.\n\nSo the statement is True.",
     "**E.** → True\n\nAdd exponents in the product, then subtract the denominator:\n\n$$\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$$\n\nSo the statement is True."
    ],
@@ -3162,7 +3162,7 @@
     "**A.** → False\n\nSince $p^6q^9=(p^2q^3)^3$, the cube root recovers $p^2q^3$, not $p^3q^3$: dividing every exponent inside the radicand by $3$ gives exponents $2$ and $3$, not $3$ and $3$. Taking $p=2,q=1$, the left side is $\\sqrt[3]{64}=4$ while the printed right side gives $8$, so they disagree.\n\nSo the statement is False.",
     "**B.** → True\n\nWrite the radicand as a perfect fourth power: $u^8=(u^2)^4$. The principal fourth root of a fourth power is the absolute value of the base, and here the base is already nonnegative:\n\n$$\\sqrt[4]{(u^2)^4}=\\left|u^2\\right|=u^2$$\n\nsince $u^2\\ge 0$ for every real $u$.\n\nSo the statement is True.",
     "**C.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nThe principal fourth root is always nonnegative, so $\\sqrt[4]{u^4}=|u|$, not $u$. Taking $u=-2$: the left side is $\\sqrt[4]{16}=2$, while the printed right side gives $-2$, so they disagree for negative values.\n\nSo the statement is False.",
+    "**D.** → False\n\nAn even-index principal root returns the nonnegative magnitude.\n\nApply:\n\n$$\\sqrt[4]{u^4}=|u|$$\n\nNegative test:\n\n$$u=-2\\implies \\sqrt[4]{u^4}=2\\ne-2=u$$\n\nThe equality fails for negative $u$, so the statement is False.",
     "**E.** → True\n\nCombine the exponents by adding them, since all three factors share the same base $u$:\n\n$$u^5\\cdot u^{-2}\\cdot u^{-1}=u^{5+(-2)+(-1)}$$\n\n$$=u^{2}$$\n\nThe exponent sum matches the printed right side.\n\nSo the statement is True."
    ],
    "solution_overview": "Five independent mixed calculations: a like-surd combination equal to $5\\sqrt{3}$, a minus-conjugate denesting trap, a rationalised unit, a missing cross term $+2$, and $32^{2/5}\\cdot 27^{-1/3}=4/3$.",
@@ -3191,10 +3191,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
-    "**B.** → False\n\nAdding the exponents correctly gives $5+(-2)+(-1)=2$, so the product is $u^2$, not $u^8$. Treating the negative exponents as if they added instead of subtracted is the error behind the printed claim.\n\nSo the statement is False.",
+    "**A.** → True\n\nRewrite both negative powers as fractions and use the common denominator $x^2$.\n\nRewrite:\n\n$$x^{-1}+x^{-2}=\\frac1x+\\frac1{x^2}$$\n\nCombine:\n\n$$=\\frac{x+1}{x^2}$$\n\nThe sum matches the claim, so the statement is True.",
+    "**B.** → False\n\nAdd the three exponents in the product.\n\nAdd:\n\n$$u^5u^{-2}u^{-1}=u^{5-2-1}$$\n\nSimplify:\n\n$$=u^2$$\n\nThe exponent is $2$, not $8$, so the statement is False.",
     "**C.** → True\n\nA negative outer exponent flips the fraction before the power is applied:\n\n$$\\left(\\dfrac{p}{q}\\right)^{-3}=\\left(\\dfrac{q}{p}\\right)^{3}=\\dfrac{q^3}{p^3}$$\n\nFlipping first and then cubing reproduces the printed right side.\n\nSo the statement is True.",
-    "**D.** → False\n\nA negative exponent flips the fraction and keeps the result positive for positive $p,q$: $\\left(\\dfrac{p}{q}\\right)^{-3}=\\dfrac{q^3}{p^3}$. Reading the exponent as introducing an overall minus sign, as the printed claim does, is not what a negative exponent means.\n\nSo the statement is False.",
+    "**D.** → False\n\nA negative exponent reciprocates the base fraction.\n\nReciprocate:\n\n$$\\left(\\frac pq\\right)^{-3}=\\left(\\frac qp\\right)^3$$\n\nCube:\n\n$$=\\frac{q^3}{p^3}$$\n\nThe result neither has a minus sign nor keeps the original orientation, so the statement is False.",
     "**E.** → True\n\nEach square root is a power of $\\frac12$, so nesting two of them multiplies the exponents:\n\n$$\\sqrt{\\sqrt{u}}=\\left(u^{1/2}\\right)^{1/2}$$\n\n$$=u^{1/2\\cdot 1/2}=u^{1/4}$$\n\nmatching the printed right side exactly.\n\nSo the statement is True."
    ],
    "solution_overview": "Five independent reciprocal-power claims. Adding $x^{-1}+x^{-2}$ needs a common denominator; it is not $x^{-3}$ and not $1/(x+x^{2})$. Products still add exponents.",
@@ -3223,10 +3223,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nNesting two square roots multiplies the exponents $\\frac12\\cdot\\frac12=\\frac14$, giving $\\sqrt{\\sqrt{u}}=u^{1/4}$, not $\\dfrac{u^{1/2}}{2}$. Dividing by $2$ instead of taking a further square root is the error behind the printed claim.\n\nSo the statement is False.",
+    "**A.** → False\n\nTranslate nested square roots into powers and multiply the exponents.\n\nFirst root:\n\n$$\\sqrt u=u^{1/2}$$\n\nSecond root:\n\n$$\\sqrt{\\sqrt u}=u^{(1/2)(1/2)}=u^{1/4}$$\n\nThis is not $u^{1/2}/2$, so the statement is False.",
     "**B.** → True\n\nA power raised to another power multiplies the exponents:\n\n$$(u^3)^4=u^{3\\cdot 4}$$\n\n$$=u^{12}$$\n\nsince the outer exponent $4$ is a positive integer, this multiplication rule holds for every real $u$, with no sign restriction needed.\n\nSo the statement is True.",
     "**C.** → True\n\nThe product rule for square roots lets two nonnegative radicands combine under one root:\n\n$$\\sqrt{p}\\cdot\\sqrt{q}=\\sqrt{pq}$$\n\nSquaring both sides confirms it: $\\left(\\sqrt{p}\\sqrt{q}\\right)^2=pq=\\left(\\sqrt{pq}\\right)^2$, and both original expressions are nonnegative, so the square roots themselves agree.\n\nSo the statement is True.",
-    "**D.** → False\n\nThe product of two square roots combines under multiplication, $\\sqrt{p}\\cdot\\sqrt{q}=\\sqrt{pq}$, not under addition. Taking $p=q=4$: the left side is $2\\cdot 2=4$, while the printed right side is $\\sqrt{8}\\approx 2.83$, so they disagree.\n\nSo the statement is False.",
+    "**D.** → False\n\nUse the product rule for principal square roots of nonnegative numbers.\n\nCorrect product:\n\n$$\\sqrt p\\sqrt q=\\sqrt{pq}$$\n\nCounterexample:\n\n$$p=q=1\\implies 1\\ne\\sqrt2=\\sqrt{p+q}$$\n\nMultiplication under the radical cannot be replaced by addition, so the statement is False.",
     "**E.** → True\n\nDividing powers of the same base subtracts the exponents:\n\n$$\\dfrac{u^{-2}}{u^3}=u^{-2-3}$$\n\n$$=u^{-5}$$\n\nThe exponent subtraction matches the printed right side.\n\nSo the statement is True."
    ],
    "solution_overview": "Five independent stacked fractional powers. Multiply the two exponents, or rewrite each base as a power of $2$. Adding the fractional exponents is the product trap.",
@@ -3256,9 +3256,9 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nAdd exponents in the product, then subtract the denominator: $\\frac{w^{5}w^{-2}}{w^{-1}}=w^{4}$.\n\nSo the statement is True.",
-    "**C.** → False\n\nRaising a power to a power multiplies the exponents, $(u^3)^4=u^{3\\cdot 4}=u^{12}$, not $u^7$. Adding the exponents instead of multiplying them is the error behind the printed claim.\n\nSo the statement is False.",
-    "**D.** → False\n\nDividing powers of the same base subtracts the exponents: $\\dfrac{u^{-2}}{u^3}=u^{-2-3}=u^{-5}$, not $u^{1}$. Adding $-2+3=1$ instead of subtracting $-2-3=-5$ is the error behind the printed claim.\n\nSo the statement is False.",
+    "**B.** → True\n\nUse the quotient rule by subtracting exponents.\n\nSubtract:\n\n$$\\frac{c^8}{c^6}=c^{8-6}$$\n\nSimplify:\n\n$$=c^2$$\n\nThe quotient matches the claim, so the statement is True.",
+    "**C.** → False\n\nApply the power-of-a-power rule.\n\nMultiply:\n\n$$(u^3)^4=u^{3\\cdot4}$$\n\nSimplify:\n\n$$=u^{12}$$\n\nThe correct exponent is $12$, not $7$, so the statement is False.",
+    "**D.** → False\n\nSubtract the denominator exponent from the numerator exponent.\n\nSubtract:\n\n$$\\frac{u^{-2}}{u^3}=u^{-2-3}$$\n\nRewrite:\n\n$$=u^{-5}=\\frac1{u^5}$$\n\nThe quotient is not $u^1$, so the statement is False.",
     "**E.** → True\n\nMultiplying powers of the same base adds the exponents:\n\n$$u^{2/3}\\cdot u^{1/3}=u^{2/3+1/3}$$\n\n$$=u^{1}=u$$\n\nThe fractional exponents add to exactly $1$, matching the claim.\n\nSo the statement is True."
    ],
    "solution_overview": "Five leftover independent claims. Fractional powers still add, subtract, and multiply in the usual way. A binomial square of roots keeps the cross term; $\\sqrt{x}\\cdot\\sqrt{x}=x$.",
