@@ -235,57 +235,111 @@ export const SIM_TASKS: Record<"economics" | "math" | "english", SimTask[]> = {
   ],
   "english": [
     {
-      "caseId": "ENG T.5.08",
-      "chapter": "Grammar · t.5",
+      "caseId": "ENG T.1.08",
+      "chapter": "Vocabulary · t.1",
       "title": "Task 8",
-      "context": "Each sentence is newly constructed, using vocabulary echoing the passage. Decide if each sentence is grammatically correct.",
+      "context": "Each sentence uses a word from the passage paired with a preposition or partner word. Decide if the pairing is a natural, correct collocation in English.",
       "statements": [
-        "\"Despite of the conditions attached, most governments accepted the aid readily.\"",
-        "\"Whoever administers the fund should account for the differing needs of each recipient.\"",
-        "\"The government denied having deliberately delayed its currency stabilisation measures.\"",
-        "\"There is several reasons why historians continue to disagree about the plan's impact.\"",
-        "\"The programme, which was authorised in 1948, aimed to accelerate European recovery.\""
+        "\"Critics caution against the new proposal, citing several risks.\"",
+        "\"The sample was skewed of larger firms in the region.\"",
+        "\"The company committed to reducing its emissions by next year.\"",
+        "\"The policy remains confined in a small number of pilot regions.\"",
+        "\"Analysts warn that the trend could erode over the coming decade.\""
       ],
       "answerKey": [
-        false,
         true,
+        false,
         true,
         false,
         true
       ],
       "explanations": [
-        "**A) \"Despite of the conditions attached, most governments accepted the aid readily.\"**\n\nDespite never takes of. Either drop of (despite the conditions) or switch to in spite of. Despite of is a common blend of the two patterns. The noun phrase the conditions attached is fine; only the preposition pairing is wrong.\n\n**Trap:** In spite of needs of; despite stands alone before a noun phrase.\n\nRemember the short rule: despite + noun; in spite of + noun. Despite of is ungrammatical, so the line fails — \"Despite the conditions attached, most governments accepted the aid readily.\"",
-        "**B) \"Whoever administers the fund should account for the differing needs of each recipient.\"**\n\nWhoever correctly heads the subject clause (whoever administers the fund), and should account is a well-formed modal predicate for that subject. The relative sense of whoever as \"the person who\" fits the advising tone. Administers is singular because whoever is treated as a singular indefinite subject.\n\nWhomever would be wrong here because the pronoun is the subject of administers, not an object. Whoever + singular verb + should account is sound, so the sentence stands.",
-        "**C) \"The government denied having deliberately delayed its currency stabilisation measures.\"**\n\nAfter deny, a perfect gerund (having + past participle) reports a prior act as the content of the denial. Having deliberately delayed places the delay before the denying, which is the intended time relation. Denied delaying would also be possible, but the perfect gerund makes the earlier timing especially clear.\n\nKeep the -ing form after deny; a bare that-clause with a finite past is a different pattern. Denied having… is the right pattern for a prior act, so the wording holds.",
-        "**D) \"There is several reasons why historians continue to disagree about the plan's impact.\"**\n\nExistential there agrees with the notional subject that follows. Several reasons is plural, so the verb must be are, not is. There itself is a dummy; number comes from reasons, not from there.\n\n**Trap:** There is feels default in speech even when a plural noun is coming.\n\nGlance ahead to the noun after the verb before choosing is or are. Plural reasons needs There are, so this is false — \"There are several reasons why historians continue to disagree about the plan's impact.\"",
-        "**E) \"The programme, which was authorised in 1948, aimed to accelerate European recovery.\"**\n\nThe non-restrictive relative which was authorised modifies singular programme, and the main verb aimed agrees with that same singular subject. Relative and main clauses stay aligned. Commas mark the which-clause as extra information about the already-identified programme.\n\nThat was authorised would be more restrictive in feel; which with commas fits a known programme dated to 1948. Singular programme with was / aimed is consistent, so the sentence is sound."
+        "**A) \"Critics caution against the new proposal, citing several risks.\"**\n\n\"Caution against\" is the fixed pairing for warning people away from a plan or practice.\n\nThe sentence uses that collocation cleanly before naming risks. The passage itself models the same pattern when critics \"caution against drawing overly broad conclusions,\" which is a useful memory hook.\n\nThe preposition \"against\" carries the sense of opposition, so the object must be the thing being warned about. The pairing stands: caution against + proposal is natural English.",
+        "**B) \"The sample was skewed of larger firms in the region.\"**\n\nEnglish wants \"skewed toward/towards\" (or \"skewed in favour of\"), not \"skewed of.\"\n\n\"Of\" is the wrong preposition after skewed when naming the overrepresented group. Directional prepositions fit here because a skew points somewhere, and \"of\" carries no direction at all.\n\n**Trap:** Copy the passage's \"skewed toward,\" not a guessed \"of.\"\n\nWhen unsure of a preposition, hunt for the same word in the reading text and reuse its pattern. The collocation fails; repair to \"The sample was skewed toward larger firms in the region.\"",
+        "**C) \"The company committed to reducing its emissions by next year.\"**\n\n\"Commit to\" takes a noun or gerund; \"reducing\" is the right -ing form after the preposition to.\n\nMeaning (promise of action) and form travel together here. The \"to\" in this phrase is a preposition rather than an infinitive marker, which is why \"committed to reduce\" would be the error learners usually make.\n\nCompare \"look forward to\" and \"object to,\" which behave the same way. The pairing stands: committed to + gerund is the expected collocation.",
+        "**D) \"The policy remains confined in a small number of pilot regions.\"**\n\nLimits on scope use \"confined to,\" not \"confined in,\" when naming the set of places or cases.\n\n\"In\" suggests physical enclosure rather than the abstract restriction intended. The passage uses the correct pattern itself when it describes a trend \"confined to a narrow set of white-collar industries.\"\n\nThink of \"confined to\" as drawing a boundary around scope, while \"confined in\" would put something inside a container. The collocation fails; repair to \"The policy remains confined to a small number of pilot regions.\"",
+        "**E) \"Analysts warn that the trend could erode over the coming decade.\"**\n\n\"Erode over\" + time span is a natural way to say gradual weakening across years.\n\nThe adverbial \"over the coming decade\" supplies exactly that span. This mirrors the passage's own \"could erode over time,\" with a specific period replacing the general one.\n\nThe modal \"could\" also suits a forecast, keeping the prediction appropriately tentative. The pairing stands: erode over a period is idiomatic and clear."
       ]
     },
     {
-      "caseId": "ENG T.3.09",
-      "chapter": "Vocabulary · t.3",
+      "caseId": "ENG T.8.09",
+      "chapter": "Vocabulary · t.8",
       "title": "Task 9",
-      "context": "Each sentence is newly written, using a word or phrase echoing the passage's actual vocabulary. Decide if the word/phrase is used correctly according to its meaning as established in the text.",
+      "context": "Each sentence is newly written, using a word or phrase echoing the passage's vocabulary. Decide if the word/phrase is used correctly according to its established meaning.",
       "statements": [
-        "\"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"",
-        "\"Analysts describe Britain's 1925 return to gold as vindicated by subsequent economic difficulties.\"",
-        "\"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"",
-        "\"The interwar arrangement was considerably more fragile than its prewar predecessor, collapsing rapidly under stress.\"",
-        "\"The pound's decline was confined to a single trading session, lasting only a few hours in total.\""
+        "\"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"",
+        "\"Prevailing wind patterns refers to the specific winds that occur only once, on a single unrepeated occasion.\"",
+        "\"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"",
+        "\"Olfactory cues refers to information gathered through an animal's sense of smell.\"",
+        "\"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\""
       ],
       "answerKey": [
+        true,
         false,
         true,
         true,
-        true,
-        false
+        true
       ],
       "explanations": [
-        "**A) \"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"**\n\nIn paragraph (2), the self-correcting price-specie flow restores balance \"without any deliberate policy intervention.\" Pairing \"self-correcting\" with \"constant deliberate government intervention\" contradicts the passage sense of the term. The automatic deficit → gold outflow → price → export loop is precisely what makes intervention unnecessary in the model. Any paraphrase that reintroduces constant government action is an antonym of the text's collocation.\n\n**Trap:** Self-correcting sounds technical enough to hide an antonym paraphrase.\n\nSelf-correcting means no deliberate intervention, so the sentence's meaning is **false** against the text.",
-        "**B) \"Analysts describe Britain's 1925 return to gold as vindicated by subsequent economic difficulties.\"**\n\nParagraph (5) says many historians regard Keynes's prediction as \"substantially vindicated\" by Britain's subdued growth and elevated unemployment after the overvalued 1925 return. Here \"vindicated\" keeps that confirmed-by-later-outcomes sense tied to those difficulties. The verb does not mean the policy was wise; it means later evidence supported the critical forecast. Subdued growth and elevated unemployment in the remainder of the 1920s are the passage's own confirming outcomes.\n\n**Tip:** Vindicated = later evidence bore the claim out — not \"justified as wise policy.\"\n\nThe passage-backed use of vindicated fits, so the wording is **true**.",
-        "**C) \"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"**\n\nParagraph (3) says the Witwatersrand-driven production surge was \"easing what might otherwise have been a persistently deflationary bias in a system reliant on a fixed physical commodity.\" The sentence restates that easing role with the same collocates. \"Eased\" / \"persistently deflationary bias\" are the passage's own pairing, not a new causal claim. The discoveries matter because a fixed gold stock would otherwise have kept money tight as economies grew.\n\nThe eased / persistently deflationary bias wording matches the passage, so the claim is **true**.",
-        "**D) \"The interwar arrangement was considerably more fragile than its prewar predecessor, collapsing rapidly under stress.\"**\n\nParagraph (6) opens by saying the interwar gold exchange standard \"proved considerably more fragile than its prewar predecessor,\" and later paragraphs show that fragility under 1930s stress. \"Considerably more fragile\" is the passage's own comparison. Multi-currency reserve layering — sterling and dollars alongside gold — is the structural reason the text gives for that extra fragility. \"Collapsing rapidly under stress\" summarizes the early-1930s cascade without inventing a new date.\n\nThe fragility contrast is passage-true, so the statement is **true**.",
-        "**E) \"The pound's decline was confined to a single trading session, lasting only a few hours in total.\"**\n\nParagraph (7) places the ~25% fall \"within a matter of months,\" not inside one session of a few hours. The sentence invents an ultra-short collapse the text never describes. Months is the only duration the passage attaches to that decline; hours or a single session have no support. Do not borrow \"dramatic fashion\" from the same paragraph as a license to shrink the timeline.\n\n**Trap:** Months → hours shrinks the timeline without any supporting span.\n\nThe passage times the decline in months, so the few-hours version is **false**."
+        "**A) \"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"**\n\nThat matches how the passage’s 2010 tags work: tiny devices that let movements be “tracked in detail.” Location-logging over time is the established sense, not a navigational compass itself. Weight under two grams is a passage detail about these devices, not a required part of the dictionary definition.\n\nThe definition fits standard scientific use (and ¶2’s trackers), so the wording is sound. Device + location over time is enough; do not demand every passage adjective appear in the gloss.",
+        "**B) \"Prevailing wind patterns refers to the specific winds that occur only once, on a single unrepeated occasion.\"**\n\nPrevailing means dominant or usual over a period — the opposite of a one-off gust. Paragraph 3’s “favourable prevailing wind patterns” are habitual routes, not single-event winds. A one-time breeze cannot be “prevailing” in ordinary or scientific English.\n\n**Trap:** Sounding like “the winds that prevail today” can be twisted into “once only”; the adjective means typically dominant.\n\nOnce-only winds invert prevailing’s meaning, so this use fails. If the gloss erases the habitual / dominant sense, reject it even when wind vocabulary from the passage is present.",
+        "**C) \"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"**\n\nThat is the standard migratory sense, and paragraph 5’s Greenland pause to “replenish fat reserves” is exactly that kind of site. Rest-and-refuel, not permanent residence. The definition’s “energy reserves” maps cleanly onto the passage’s “fat reserves.”\n\nStopover as a refueling pause matches established migratory usage, so the definition stands. Keep temporary pause + refuel in the gloss; breeding-colony permanence would be the wrong category.",
+        "**D) \"Olfactory cues refers to information gathered through an animal's sense of smell.\"**\n\nOlfactory = smell-related; cues are sensory signals. Paragraph 6 lists “possibly olfactory cues” beside visual landmarks as candidate navigation inputs — smell-based information, not taste or sound. The “possibly” in the passage hedges certainty of use, not the meaning of the term.\n\nSmell-based information is the right sense of olfactory cues, so the wording stands. Word-family knowledge (olfactory → smell) is enough even before you reread ¶6.",
+        "**E) \"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\"**\n\nThat is the ordinary biology sense; paragraph 7’s “Breeding colonies” that dive-bomb intruders are communal nesting groups, not solitary nests. Collective defence in ¶7 presupposes that communal grouping.\n\nCommunal breed-and-nest group matches breeding colony, so the definition is sound. Shared place + reproduction/nesting is the core; aggression is a behaviour of some colonies, not part of the definition itself."
+      ]
+    },
+    {
+      "caseId": "ENG G.3.12",
+      "chapter": "Practice · g.3",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "A number of regional coaches is attending the training weekend.",
+        "Neither the host nor the guests was willing to extend the stay.",
+        "There is only one schedule left to finalise before the show.",
+        "Every volunteer on the stall have signed the rota sheet.",
+        "The data in the appendix contradict the spoken summary."
+      ],
+      "answerKey": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "explanations": [
+        "**A) A number of regional coaches is attending the training weekend.**\n\n\"A number of regional coaches\" needs a plural verb. Replace with \"several coaches\" to hear the plurality. Training-weekend content does not affect number.\n\n**Trap:** Singular \"is attending\" after \"a number of\" is the classic article-flip error.\n\n\"A number of coaches\" means several people, so singular \"is\" is **false** — \"A number of regional coaches are attending the training weekend.\"",
+        "**B) Neither the host nor the guests was willing to extend the stay.**\n\nNearer plural \"guests\" needs a plural verb after neither…nor. Do not let singular \"host\" pull the verb. Extending the stay is irrelevant to agreement.\n\n**Trap:** Singular host at the front routinely hijacks the verb choice after nor.\n\nNearer plural \"guests\" should control the verb, so the wording is **false**; the **true** version is \"Neither the host nor the guests were willing to extend the stay.\"",
+        "**C) There is only one schedule left to finalise before the show.**\n\nSingular \"one schedule\" correctly takes \"there is.\" \"Only one\" is a reliable singular signal after there. Finalising before the show does not change the head.\n\n\"Only one schedule\" after there is singular, so \"there is\" fits and the line is **true**.",
+        "**D) Every volunteer on the stall have signed the rota sheet.**\n\n\"Every volunteer\" needs singular \"has signed,\" not \"have signed.\" \"On the stall\" is only a locator phrase. Rota-sheet detail does not pluralise every.\n\n\"Every volunteer\" locks in a singular verb, so \"have signed\" is **false**: \"Every volunteer on the stall has signed the rota sheet.\"",
+        "**E) The data in the appendix contradict the spoken summary.**\n\nFormal plural data correctly takes \"contradict.\" Plural verbs with data are expected in formal register. Appendix location does not singularise the noun.\n\n**Tip:** Formal data → plural.\n\nFormal plural \"data\" pairs with \"contradict,\" so the wording is **true**."
+      ]
+    },
+    {
+      "caseId": "ENG G.12.12",
+      "chapter": "Practice · g.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Owing to roadworks on the ring road, the coach arrived forty minutes late.",
+        "Owing roadworks on the ring road, the coach arrived forty minutes late.",
+        "Despite roadworks slowing traffic, several passengers still made their connections.",
+        "Although roadworks slowing traffic, several passengers still made their connections.",
+        "Whereas the outbound coach was late, the return journey ran on time."
+      ],
+      "answerKey": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "explanations": [
+        "**A) Owing to roadworks on the ring road, the coach arrived forty minutes late.**\n\nOwing to + \"roadworks on the ring road\" correctly explains the late arrival. Travel notices often open with owing to + cause. Keep to attached to owing in this pattern.\n\nOwing to + roadworks on the ring road correctly explains the late coach, so the wording is **true**.",
+        "**B) Owing roadworks on the ring road, the coach arrived forty minutes late.**\n\nTo is missing — \"Owing roadworks\" → \"owing to roadworks.\" End- or start-of-sentence owing still needs its full linker. An orphan owing is an instant fail even when the cause noun is clear.\n\n**Trap:** Dropping to from owing to is a short, high-yield exam trap.\n\nOwing without to is incomplete, so this is **false** — \"Owing to roadworks on the ring road, the coach arrived forty minutes late.\"",
+        "**C) Despite roadworks slowing traffic, several passengers still made their connections.**\n\nDespite + the -ing phrase \"roadworks slowing traffic\" is grammatical. Despite + noun/-ing lines up with although + clause for the same concessive idea. Several passengers still making connections is the main clause that follows.\n\nDespite + \"roadworks slowing traffic\" hosts a grammatical -ing concession, so the sentence is **true**.",
+        "**D) Although roadworks slowing traffic, several passengers still made their connections.**\n\nAlthough needs a finite verb: \"Although roadworks slowing traffic\" → \"Although roadworks slowed traffic…\" Bare -ing after although is a common transfer error from the despite pattern. Add a tensed verb or switch linker.\n\n**Trap:** Although + -ing transplants the legal despite line and looks nearly grammatical.\n\nAlthough needs a tensed verb, so the line is **false**; write \"Although roadworks slowed traffic, several passengers still made their connections.\"",
+        "**E) Whereas the outbound coach was late, the return journey ran on time.**\n\nWhereas contrasts two complete clauses about the outbound coach versus the return journey. Whereas likes balanced clause pairs, not noun fragments. Both halves here have real verbs, so the contrast lands cleanly.\n\nWhereas contrasts outbound lateness with an on-time return as two finite clauses, so this pairing is **true**."
       ]
     }
   ]
