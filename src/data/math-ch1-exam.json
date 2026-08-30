@@ -175,7 +175,7 @@
         "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$, so the statement is False.",
         "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$|\\mathcal P(S)|=2^5=32$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets, so the statement is False.",
         "**D.** → False\n\nEvaluating both sides reveals that the proposed placement of the intersection is not distributive.\n\n$$B\\cap C=\\emptyset\\Longrightarrow A\\cup(B\\cap C)=\\{1\\}$$\n\n$$A\\cup B=\\{1,2\\}$$\n\n$$(A\\cup B)\\cap C=\\emptyset\\ne\\{1\\}$$\n\nThe two sides are different, so the statement is False.",
-        "**E.** → False\n\nA counterexample isolates the missing factor of $p\u000bee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$p\\vee(q\\wedge r)=T\\vee(F\\wedge F)=T$$\n\n$$(p\\vee q)\\wedge r=(T\\vee F)\\wedge F=F$$\n\nThe formulas are not equivalent, so the statement is False."
+        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$p\\vee(q\\wedge r)=T\\vee(F\\wedge F)=T$$\n\n$$(p\\vee q)\\wedge r=(T\\vee F)\\wedge F=F$$\n\nThe formulas are not equivalent, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 115,
