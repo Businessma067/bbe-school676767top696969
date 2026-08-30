@@ -272,12 +272,40 @@ export function EnglishTasksPage({ tier }: Props) {
 
   const textsWorkspace = isTextsCase && !!activeCase && !isLocked(tier, activeIdx);
 
+  // Lock document scroll on desktop Texts so only the passage/questions panes move.
+  useEffect(() => {
+    if (!textsWorkspace) return;
+    const root = document.documentElement;
+    const body = document.body;
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const apply = () => {
+      if (mq.matches) {
+        root.style.overflow = "hidden";
+        body.style.overflow = "hidden";
+        root.style.overscrollBehavior = "none";
+      } else {
+        root.style.overflow = "";
+        body.style.overflow = "";
+        root.style.overscrollBehavior = "";
+      }
+    };
+    apply();
+    mq.addEventListener("change", apply);
+    return () => {
+      mq.removeEventListener("change", apply);
+      root.style.overflow = "";
+      body.style.overflow = "";
+      root.style.overscrollBehavior = "";
+    };
+  }, [textsWorkspace]);
+
   return (
     <PracticeCalcProvider>
       <div
         className={cn(
           PRACTICE_PAGE,
-          textsWorkspace && "lg:flex lg:h-dvh lg:flex-col lg:overflow-hidden",
+          textsWorkspace &&
+            "lg:flex lg:h-dvh lg:max-h-dvh lg:flex-col lg:overflow-hidden lg:overscroll-none",
         )}
       >
         <SiteHeader maxWidthClassName="max-w-none" compact />
@@ -287,12 +315,14 @@ export function EnglishTasksPage({ tier }: Props) {
             PRACTICE_BODY_STACK,
             "lg:flex lg:items-start lg:transition-[gap] lg:duration-300 lg:[transition-timing-function:cubic-bezier(0.22,1,0.36,1)]",
             sidebarCollapsed ? "lg:gap-0" : "lg:gap-6",
-            textsWorkspace && "lg:min-h-0 lg:flex-1 lg:items-stretch lg:overflow-hidden lg:py-3",
+            textsWorkspace &&
+              "lg:min-h-0 lg:flex-1 lg:items-stretch lg:gap-4 lg:overflow-hidden lg:!py-2",
           )}
         >
           <aside
             className={cn(
-              "mb-6 w-full shrink-0 transition-[width,opacity,transform] duration-300 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] lg:sticky lg:top-20 lg:mb-0 lg:block lg:h-[calc(100vh-6rem)] lg:overflow-hidden lg:will-change-[width,transform]",
+              "mb-6 w-full shrink-0 transition-[width,opacity,transform] duration-300 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] lg:sticky lg:top-20 lg:mb-0 lg:block lg:overflow-hidden lg:will-change-[width,transform]",
+              textsWorkspace ? "lg:static lg:h-auto lg:max-h-full lg:self-stretch" : "lg:h-[calc(100vh-6rem)]",
               sidebarCollapsed
                 ? "hidden lg:pointer-events-none lg:block lg:w-0 lg:-translate-x-4 lg:opacity-0"
                 : "lg:w-80 lg:translate-x-0 lg:opacity-100 2xl:w-96",
@@ -619,7 +649,10 @@ export function EnglishTasksPage({ tier }: Props) {
             </aside>
 
           <main
-            className={cn("min-w-0 flex-1", textsWorkspace && "lg:flex lg:min-h-0 lg:flex-col")}
+            className={cn(
+              "min-w-0 flex-1",
+              textsWorkspace && "lg:flex lg:min-h-0 lg:flex-col lg:overflow-hidden",
+            )}
             data-practice-surface
           >
             {sidebarCollapsed && !textsWorkspace && (
@@ -649,7 +682,7 @@ export function EnglishTasksPage({ tier }: Props) {
               <div
                 className={cn(
                   "flex flex-wrap items-center justify-between gap-2",
-                  textsWorkspace ? "mb-2 shrink-0" : "mb-5 items-start gap-3",
+                  textsWorkspace ? "mb-1.5 shrink-0" : "mb-5 items-start gap-3",
                 )}
               >
                 <div className="flex min-w-0 flex-wrap items-center gap-2 sm:gap-3">
@@ -657,7 +690,7 @@ export function EnglishTasksPage({ tier }: Props) {
                     <button
                       type="button"
                       onClick={() => setSidebarCollapsed(false)}
-                      className="hidden items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1.5 text-[11px] font-semibold text-foreground hover:bg-secondary lg:inline-flex"
+                      className="hidden items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary lg:inline-flex"
                     >
                       <PanelLeftOpen className="h-3.5 w-3.5" /> Chapters
                     </button>
@@ -677,7 +710,7 @@ export function EnglishTasksPage({ tier }: Props) {
                       className={cn(
                         "font-display font-bold tracking-tight",
                         textsWorkspace
-                          ? "text-lg leading-tight sm:text-xl"
+                          ? "text-base leading-tight sm:text-lg"
                           : "text-2xl sm:text-3xl",
                       )}
                     >
@@ -699,7 +732,7 @@ export function EnglishTasksPage({ tier }: Props) {
             {activeCase && !isLocked(tier, activeIdx) && (
               <TimedModeBar
                 session={timed}
-                className={textsWorkspace ? "mb-2 shrink-0 p-2" : undefined}
+                className={textsWorkspace ? "mb-1.5 shrink-0 p-1.5" : undefined}
               />
             )}
 
@@ -724,17 +757,18 @@ export function EnglishTasksPage({ tier }: Props) {
             ) : textsWorkspace && activeCase ? (
               <div
                 key={activeCase.id}
-                className="practice-fade-in flex min-h-0 flex-1 flex-col gap-4 lg:flex-row lg:gap-6"
+                className="practice-fade-in flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:gap-5"
               >
-                <div className="min-h-[20rem] min-w-0 flex-1 lg:min-h-0">
+                <div className="min-h-[20rem] min-w-0 flex-1 lg:min-h-0 lg:overflow-hidden">
                   <ReadingPanel
                     passage={activePassage}
                     storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
                     explanation={explanation}
                     onClose={() => setExplanation(null)}
+                    lockPageScroll
                   />
                 </div>
-                <div className="flex min-h-0 w-full flex-col lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]">
+                <div className="flex min-h-0 w-full flex-col overflow-hidden lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]">
                   <div className="practice-scroll flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain pr-1">
                     <CaseCard
                       key={activeCase.id}
@@ -1467,11 +1501,14 @@ function ReadingPanel({
   storageKey,
   explanation,
   onClose,
+  lockPageScroll = false,
 }: {
   passage: string;
   storageKey: string;
   explanation: ExplanationState | null;
   onClose: () => void;
+  /** When true, passage scrolls only inside its pane (no window scroll chaining). */
+  lockPageScroll?: boolean;
 }) {
   const [reveal, setReveal] = useState(false);
   const highlightRef = useRef<HTMLSpanElement | null>(null);
@@ -1489,7 +1526,7 @@ function ReadingPanel({
     const el = highlightRef.current;
     const done = () => el.classList.add("done");
     el.addEventListener("animationend", done, { once: true });
-    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    el.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
     return () => el.removeEventListener("animationend", done);
   }, [reveal]);
 
@@ -1502,7 +1539,7 @@ function ReadingPanel({
   }
 
   return (
-    <div ref={panelRef} className="flex h-full flex-col gap-2">
+    <div ref={panelRef} className="flex h-full min-h-0 flex-col gap-2 overflow-hidden">
       {explanation && (
         <>
           <div className="flex shrink-0 items-center justify-between rounded-xl border border-primary/30 bg-primary/5 px-3 py-1.5">
@@ -1548,7 +1585,7 @@ function ReadingPanel({
             aiHighlight={explanation?.highlight ?? ""}
             reveal={reveal && !!explanation}
             aiHighlightRef={highlightRef}
-            pageScrollUntilVisibleRef={panelRef}
+            pageScrollUntilVisibleRef={lockPageScroll ? undefined : panelRef}
             className="h-full"
           />
         </div>
