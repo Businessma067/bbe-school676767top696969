@@ -172,7 +172,7 @@ async def panel_point(page):
     )
 
 
-async def read_scroll(page, total=1600, step=34, delay=26, pause=700, chunks=4):
+async def read_scroll(page, total=1600, step=14, delay=90, pause=900, chunks=5):
     """Slow, wheel-driven reading pass over the panel under the cursor."""
     pt = await panel_point(page)
     if pt:
@@ -230,7 +230,7 @@ async def answer_statements(page, indices):
     n = await boxes.count()
     for i in indices:
         if i < n:
-            await soft_click(page, boxes.nth(i), 700)
+            await soft_click(page, boxes.nth(i), 520)
 
 
 async def task_open(page):
@@ -373,7 +373,7 @@ async def demo_math(page):
     await page.wait_for_timeout(700)
     await show_features(page)
     await answer_statements(page, [0, 1, 3])
-    await show_explanation(page, total=2200)
+    await show_explanation(page, total=2400)
     await page.wait_for_timeout(1600)
 
 
@@ -386,7 +386,7 @@ async def demo_economics(page):
     await page.wait_for_timeout(700)
     await show_features(page)
     await answer_statements(page, [0, 2, 3])
-    await show_explanation(page, total=1800)
+    await show_explanation(page, total=2200)
     # AI double-panel explanation
     await maybe(page, page.locator("button").filter(has_text="AI").first, 2200)
     await read_scroll(page, total=900, chunks=3)
@@ -416,7 +416,7 @@ async def demo_english(page):
     await read_scroll(page, total=620, chunks=3)
     await show_features(page)
     await answer_statements(page, [0, 2, 4])
-    await show_explanation(page, total=2000)
+    await show_explanation(page, total=2200)
     await page.wait_for_timeout(1600)
 
 
